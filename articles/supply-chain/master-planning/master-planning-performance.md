@@ -20,11 +20,11 @@ ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 ms.openlocfilehash: fa8426c3a1f19f8607f45e9ac4d57300abddb161
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323645"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428921"
 ---
 # <a name="improve-master-planning-performance"></a>Leistungsverbesserungen der Produktprogrammplanung
 
@@ -114,7 +114,7 @@ Das System kann zusätzliche Informationen zu den Aufgaben sammeln, die während
 Zur Überprüfung der Produktprogrammplanungläufe Ihres Systems führen Sie einen dieser Schritte aus.
 
 - Wählen Sie im Arbeitsbereich **Produktprogrammplanung** einen Produktprogrammplan im Feld Drop-Down-Feld aus und wählen Sie dann auf der Kachel **Produktprogrammplanung** die Option **Verlauf** aus. Wählen Sie eine Stelle aus, wählen Sie auf dem Inforegister **Abfragen** aus, und wählen Sie dann **Prozessaufgabendauer** aus.
-- Wählen Sie auf der Seite **Produktprogrammpläne**im linken Bereich einen Plan aus, und wählen Sie dann auf dem Inforegister **Verlauf** aus. Wählen Sie eine Stelle aus, wählen Sie auf dem Inforegister **Abfragen** aus, und wählen Sie dann **Prozessaufgabendauer** aus.
+- Wählen Sie auf der Seite **Produktprogrammpläne** im linken Bereich einen Plan aus, und wählen Sie dann auf dem Inforegister **Verlauf** aus. Wählen Sie eine Stelle aus, wählen Sie auf dem Inforegister **Abfragen** aus, und wählen Sie dann **Prozessaufgabendauer** aus.
 
 Wenn Sie das Sitzungsprotokoll prüfen, beachten Sie die folgenden Punkte:
 

@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2156b5de6abc3751cae1822b3825acbbd0b9a712
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017084"
+ms.locfileid: "4429020"
 ---
 # <a name="manage-warehouse-workers"></a>Verwalten der Lagerortarbeitskräfte
 
@@ -33,7 +33,7 @@ In diesem Artikel wird beschrieben, wie Sie die Warehouse-App verwenden können,
 
 Wenn Sie die Funktionen in der Lagerortverwaltung verwenden, werden alle Arbeitsgänge der Lagerarbeiter als *Arbeit* bezeichnet. Arbeit, wie die Entnahme, das Umlagern und das Zählen des verfügbaren Lagerbestands wird mithilfe von mobilen Geräten erfasst. Bevor ein Lagerarbeiter Arbeit ausführen kann, muss er einer Arbeitskraft in der Personalverwaltung zugeordnet werden. Jedes **Arbeitskraftkonto** kann mehrere Lagerortarbeitsbenutzer haben, die ihm zugeordnet sind. Diese Arbeitsbenutzer können in verschiedenen Lagerorten arbeiten und verschiedene Zugriffsebenen auf unterschiedliche Menüs des mobilen Geräts haben. Sie können die Lagerortarbeitsbenutzer als mehrere Anmeldungen für die ausgewählte Arbeitskraft betrachten. Jeder Arbeitsbenutzer hat einen Standardlagerort, und bestimmte Workflows werden durch die Menüartikel, die diesem Arbeitsbenutzer verfügbar sind, offengelegt. 
 
-Um einen neuen Arbeitsbenutzer zu erstellen, klicken Sie auf der Seite **Arbeitskräfte** , auf der Registerkarte **Allgemeines** im Abschnitt **Lagerorte** auf **Arbeitskraft**. Sie müssen eine Benutzerkennung, einen Benutzernamen, einen Standardlagerort und einen Menünamen angeben. Dieses Menü wird geladen, wenn sich der Benutzer beim Portal für mobile Geräte für den Lagerort anmeldet. Dort können Sie definieren, auf welche Menüelemente der Benutzer Zugriff hat. 
+Um einen neuen Arbeitsbenutzer zu erstellen, klicken Sie auf der Seite **Arbeitskräfte**, auf der Registerkarte **Allgemeines** im Abschnitt **Lagerorte** auf **Arbeitskraft**. Sie müssen eine Benutzerkennung, einen Benutzernamen, einen Standardlagerort und einen Menünamen angeben. Dieses Menü wird geladen, wenn sich der Benutzer beim Portal für mobile Geräte für den Lagerort anmeldet. Dort können Sie definieren, auf welche Menüelemente der Benutzer Zugriff hat. 
 
 Als Teil der Einrichtung für jeden Arbeitsbenutzer können Sie auch spezielle Prozessworkflows definieren. Sie können beispielsweise das Feld **Ist ein Supervisor der permanenten Inventur** verwenden, um anzugeben, ob der Benutzer Anpassungen an Zykluszählungsabweichungen während eines Zählvorgangs vornehmen kann oder ob diese Anpassungen zuerst von einer anderen Person geprüft werden müssen.
 

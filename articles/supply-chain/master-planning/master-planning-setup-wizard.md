@@ -20,11 +20,11 @@ ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 ms.openlocfilehash: b38009cbfdd5444c6643c5c0159a1aa475aaa3ac
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213583"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428833"
 ---
 # <a name="master-planning-setup-wizard"></a>Produktprogrammplanungs-Setup-Assistent
 
@@ -82,12 +82,12 @@ Für die Absatzplanfunktion fragt der Assistent „Möchten Sie einen Absatzplan
 Die folgenden Optionen sind verfügbar:
 
 - **Nein** – Bestellvorschläge schlägt Produktprogrammplanung nicht vor, eine Planung zu erfüllen. Auf der Registerkarte **Planungszeiträume** auf der Seite **Produktprogrammpläne** (**Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne**), legt der Assistent die Option **Absatzplan Planungszeitraum ()** auf **Ja** fest und setzt die Anzahl von Tagen auf **0** (null). Diese Einstellung setzt den Planungszeitraum außer Kraft, der in der Dispositionssteuerungsgruppe angegeben wurde. Da die Anzahl der Tage auf **0** (Null)  festgelegt ist, wird die Funktion nicht verwendet.
-- **Ja, wie in diesem definierten Produktprogrammplan definiert** – Ein Feld ist verfügbar, wo Sie die Anzahl von Tagen eingeben können, die die Produktprogrammplanung vorschlägt, um den geplanten Bedarf zu decken. Der Assistent legt die Option **Produktprogrammpläne (Produktprogrammplanung)** auf **Ja** fest und definiert die Anzahl Tage für die Anzahl der Tage, die im Feld **Absatzplanung** auf der Registerkarte **Planungszeitraum**auf der Seite **Produktprogrammpläne** eingegeben werden. Diese Einstellungen werden die Werte angegeben, die in Dispositionssteuerungsgruppen festgelegt werden.
+- **Ja, wie in diesem definierten Produktprogrammplan definiert** – Ein Feld ist verfügbar, wo Sie die Anzahl von Tagen eingeben können, die die Produktprogrammplanung vorschlägt, um den geplanten Bedarf zu decken. Der Assistent legt die Option **Produktprogrammpläne (Produktprogrammplanung)** auf **Ja** fest und definiert die Anzahl Tage für die Anzahl der Tage, die im Feld **Absatzplanung** auf der Registerkarte **Planungszeitraum** auf der Seite **Produktprogrammpläne** eingegeben werden. Diese Einstellungen werden die Werte angegeben, die in Dispositionssteuerungsgruppen festgelegt werden.
 - **Ja, wie in der Disposition festgelegt** – Der Assistent legt die Option **Absatzplan (Planungszeitraum)** auf **Nein** fest. Die Planungszeiträume, die in der Dispositionssteuerungsgruppe angegeben werden, werden verwendet, um anzugeben, wie lange Sie für die Planung brauchen.
 
 Die verbleibenden Fragen zu dieser Seite und ihre Antworten folgen dem gleichen Schema:
 
-- **Nein** – Die Option**Absatzplan (Planungszeitraum)** wird auf **Ja** festgelegt, und die Anzahl von Tagen wird auf **0** (null) festgelegt.
+- **Nein** – Die Option **Absatzplan (Planungszeitraum)** wird auf **Ja** festgelegt, und die Anzahl von Tagen wird auf **0** (null) festgelegt.
 - **Ja, wie in diesem Produktprogrammplan festgelegt** – Der Assistent legt die Option **Absatzplan (Planungszeitraum)** auf **Nein** fest. Die Anzahl von Tagen, die Sie eingeben, wird verwendet und setzt die Werte außer Kraft, die in der Dispositionssteuerungsgruppen festgelegt werden.
 - **Ja, wie in der Dispositionssteuergruppe festgelegt** – Der Assistent legt die Option **Absatzplan (Planungszeitraum)** auf **Nein** fest.
 

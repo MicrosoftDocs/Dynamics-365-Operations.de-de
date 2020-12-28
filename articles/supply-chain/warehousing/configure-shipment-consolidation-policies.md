@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 ms.openlocfilehash: adb88bbd29a89a1d18d7fd4781c2541ffb4e721f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016216"
+ms.locfileid: "4429047"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Richtlinien zur Lieferungskonsolidierung konfigurieren
 
@@ -59,7 +59,7 @@ Wenn Sie diesen Vorgang starten, sollte die Funktion *Richtlinien zur Lieferungs
 Befolgen Sie diese Schritte, um Standardrichtlinien für die Lieferungskonsolidierung in einer Umgebung einzurichten, in der Lager bereits für die auftragsübergreifende Konsolidierung konfiguriert wurden.
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerort \> Lagerorte**.
-1. Suchen und öffnen Sie in der Liste den gewünschten Lagerdatensatz (z. B. Lager *24* in den **USMF** -Demodaten).
+1. Suchen und öffnen Sie in der Liste den gewünschten Lagerdatensatz (z. B. Lager *24* in den **USMF**-Demodaten).
 1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
 1. Legen Sie auf dem Inforegister **Lagerort** die Option **Lieferung bei Freigabe an Lagerort konsolidieren** auf *Ja* fest.
 1. Wiederholen Sie die Schritte 2 bis 4 für alle anderen Lager, in denen eine Konsolidierung erforderlich ist.
@@ -68,16 +68,16 @@ Befolgen Sie diese Schritte, um Standardrichtlinien für die Lieferungskonsolidi
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Für Lagerort freigeben \> Richtlinien zur Lieferungskonsolidierung**. Möglicherweise müssen Sie Ihren Browser aktualisieren, um den neuen Menüpunkt **Richtlinien zur Lieferungskonsolidierung** nach dem Einschalten der Funktion zu sehen.
 1. Wählen Sie im Aktionsbereich **Standardeinstellungen erstellen** aus, um die folgenden Richtlinien zu erstellen:
 
-    - Eine **CrossOrder** -Richtlinie für den Richtlinientyp *Aufträge* (vorausgesetzt, Sie haben mindestens einen Lagerort, der für die Verwendung der früheren Konsolidierungsfunktion eingerichtet ist)
-    - Eine **Standard** -Richtlinie für den Richtlinientyp *Aufträge*
-    - Eine **Standard** -Richtlinie für den Richtlinientyp *Umlagerungsabgang*
-    - Eine **CrossOrder** -Richtlinie für den Richtlinientyp *Umlagerungsabgang* (vorausgesetzt, Sie haben mindestens einen Lagerort, der für die Verwendung der früheren Konsolidierungsfunktion eingerichtet ist)
+    - Eine **CrossOrder**-Richtlinie für den Richtlinientyp *Aufträge* (vorausgesetzt, Sie haben mindestens einen Lagerort, der für die Verwendung der früheren Konsolidierungsfunktion eingerichtet ist)
+    - Eine **Standard**-Richtlinie für den Richtlinientyp *Aufträge*
+    - Eine **Standard**-Richtlinie für den Richtlinientyp *Umlagerungsabgang*
+    - Eine **CrossOrder**-Richtlinie für den Richtlinientyp *Umlagerungsabgang* (vorausgesetzt, Sie haben mindestens einen Lagerort, der für die Verwendung der früheren Konsolidierungsfunktion eingerichtet ist)
 
     > [!NOTE]
-    > - Beide **CrossOrder** -Richtlinien berücksichtigen denselben Satz von Feldern wie die frühere Logik, mit Ausnahme des Felds für die Bestellnummer. (In diesem Feld werden Linien zu Lieferungen zusammengefasst, basierend auf Faktoren wie Lager, Transportart und Adresse.)
-    > - Beide **Standard** -Richtlinien berücksichtigen denselben Satz von Feldern wie die frühere Logik, einschließlich des Felds für die Bestellnummer. (In diesem Feld werden Linien zu Lieferungen zusammengefasst, basierend auf Faktoren wie Auftragsnummer, Lager, Transportart und Adresse.)
+    > - Beide **CrossOrder**-Richtlinien berücksichtigen denselben Satz von Feldern wie die frühere Logik, mit Ausnahme des Felds für die Bestellnummer. (In diesem Feld werden Linien zu Lieferungen zusammengefasst, basierend auf Faktoren wie Lager, Transportart und Adresse.)
+    > - Beide **Standard**-Richtlinien berücksichtigen denselben Satz von Feldern wie die frühere Logik, einschließlich des Felds für die Bestellnummer. (In diesem Feld werden Linien zu Lieferungen zusammengefasst, basierend auf Faktoren wie Auftragsnummer, Lager, Transportart und Adresse.)
 
-1. Wählen Sie die **CrossOrder** -Richtlinie für den Richtlinientyp *Aufträge* , und wählen Sie dann im Aktionsbereich **Abfrage bearbeiten** aus.
+1. Wählen Sie die **CrossOrder**-Richtlinie für den Richtlinientyp *Aufträge*, und wählen Sie dann im Aktionsbereich **Abfrage bearbeiten** aus.
 1. Beachten Sie im Dialogfeld des Abfrage-Editors, dass Lager, bei denen die Option **Lieferung bei Freigabe an Lagerort konsolidieren** auf *Ja* gesetzt ist, aufgelistet sind. Daher sind sie in der Abfrage enthalten.
 
 ### <a name="create-default-policies-for-a-new-environment"></a>Erstellen Sie Standardrichtlinien für eine neue Umgebung
@@ -88,11 +88,11 @@ Befolgen Sie diese Schritte, um Standardrichtlinien für die Lieferungskonsolidi
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Für Lagerort freigeben \> Richtlinien zur Lieferungskonsolidierung**.
 1. Wählen Sie im Aktionsbereich **Standardeinstellungen erstellen** aus, um die folgenden Richtlinien zu erstellen:
 
-    - Eine **Standard** -Richtlinie für den Richtlinientyp *Aufträge*
-    - Eine **Standard** -Richtlinie für den Richtlinientyp *Umlagerungsabgang*
+    - Eine **Standard**-Richtlinie für den Richtlinientyp *Aufträge*
+    - Eine **Standard**-Richtlinie für den Richtlinientyp *Umlagerungsabgang*
 
     > [!NOTE]
-    > Beide **Standard** -Richtlinien berücksichtigen denselben Satz von Feldern wie die frühere Logik, einschließlich des Felds für die Bestellnummer. (In diesem Feld werden Linien zu Lieferungen zusammengefasst, basierend auf Faktoren wie Auftragsnummer, Lager, Transportart und Adresse.)
+    > Beide **Standard**-Richtlinien berücksichtigen denselben Satz von Feldern wie die frühere Logik, einschließlich des Felds für die Bestellnummer. (In diesem Feld werden Linien zu Lieferungen zusammengefasst, basierend auf Faktoren wie Auftragsnummer, Lager, Transportart und Adresse.)
 
 ## <a name="scenario-2-configure-custom-shipment-consolidation-policies"></a>Szenario 2: Benutzerdefinierte Richtlinien zur Lieferungskonsolidierung konfigurieren
 
@@ -121,10 +121,10 @@ Verwenden Sie die Funktionsverwaltung, um die Funktion zu aktivieren, falls Sie 
         - **Filtertitel:** *Code 4*
 
 1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**.
-1. Öffnen Sie das Produkt mit Artikelnummer *M9200*. (Das von Ihnen ausgewählte Produkt muss für erweiterte \[WMS\]-Lagerortprozesse aktiviert sein, und dieses Produkt ist für WMS-Prozesse in den **USMF** -Demodaten voraktiviert.)
+1. Öffnen Sie das Produkt mit Artikelnummer *M9200*. (Das von Ihnen ausgewählte Produkt muss für erweiterte \[WMS\]-Lagerortprozesse aktiviert sein, und dieses Produkt ist für WMS-Prozesse in den **USMF**-Demodaten voraktiviert.)
 1. Auf dem Inforegister **Lagerort** legen Sie das Feld **Code 4** auf *Brennbar* fest.
 1. Schließen Sie die Seite.
-1. Öffnen Sie das Produkt mit Artikelnummer *M9201*. (Dieses Produkt ist auch für WMS-Prozesse in den **USMF** -Demodaten voraktiviert.)
+1. Öffnen Sie das Produkt mit Artikelnummer *M9201*. (Dieses Produkt ist auch für WMS-Prozesse in den **USMF**-Demodaten voraktiviert.)
 1. Auf dem Inforegister **Lagerort** legen Sie das Feld **Code 4** auf *Explosiv* fest.
 1. Schließen Sie die Seite.
 
@@ -164,9 +164,9 @@ Verwenden Sie die Funktionsverwaltung, um die Funktion zu aktivieren, falls Sie 
 
 ### <a name="create-example-policy-1"></a>Beispielrichtlinie 1 erstellen
 
-In diesem Beispiel erstellen Sie eine *Kunde+Modus* -Richtlinie, die für den folgenden Geschäftsfall verwendet werden kann:
+In diesem Beispiel erstellen Sie eine *Kunde+Modus*-Richtlinie, die für den folgenden Geschäftsfall verwendet werden kann:
 
-- Die Richtlinie fragt ein bestimmtes Kundenkonto ( *US-001* ) und eine bestimmte Lieferart ( *Airwa-Air* ) ab.
+- Die Richtlinie fragt ein bestimmtes Kundenkonto (*US-001*) und eine bestimmte Lieferart (*Airwa-Air*) ab.
 - Die Konsolidierung mit offenen Lieferungen ist deaktiviert.
 - Die Konsolidierung erfolgt pro Auftrags-ID. (Mit anderen Worten, es werden separate Lieferungen pro Bestellung, Lager usw. gesendet.)
 
@@ -179,7 +179,7 @@ Führen Sie die folgenden Schritte aus, um die Versandkonsolidierungsrichtlinie 
     - **Richtlinienname:** *CustomerMode*
     - **Richtlinienbeschreibung:** *Kundenkonto und Lieferart*
 
-1. Lassen Sie die **Konsolidierung mit offenen Lieferungen** -Option auf *Nein* gesetzt.
+1. Lassen Sie die **Konsolidierung mit offenen Lieferungen**-Option auf *Nein* gesetzt.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 1. Wählen Sie auf dem Inforegister **Konsolidierungsfelder** in der Liste **Verbleibende Felder** die Zeile aus, in der das Feld **Feldname** auf *Lieferart* gesetzt ist.
 1. Schaltfläche **Hinzufügen** auswählen ![Pfeil nach rechts](media/forward-button.png), um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
@@ -192,16 +192,16 @@ Führen Sie die folgenden Schritte aus, um die Versandkonsolidierungsrichtlinie 
     - **Feld:** *Lieferart*
     - **Kriterien:** *Airwa-Air*
 
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
 > [!NOTE]
-> Für diesen Business Case sind Bestellpositionen für den Kunden *US-001* , die die Lieferart *Airwa-Air* verwenden, nicht über Bestellungen hinweg konsolidiert. Diese Richtlinie soll zuerst in einer Sequenz verwendet werden, wenn Lieferungen für alle anderen Lieferarten für diesen Kunden konsolidiert werden.
+> Für diesen Business Case sind Bestellpositionen für den Kunden *US-001*, die die Lieferart *Airwa-Air* verwenden, nicht über Bestellungen hinweg konsolidiert. Diese Richtlinie soll zuerst in einer Sequenz verwendet werden, wenn Lieferungen für alle anderen Lieferarten für diesen Kunden konsolidiert werden.
 
 ### <a name="create-example-policy-2"></a>Beispielrichtlinie 2 erstellen
 
-In diesem Beispiel erstellen Sie eine *Gefahrengut* -Richtlinie, die für den folgenden Geschäftsfall verwendet werden kann:
+In diesem Beispiel erstellen Sie eine *Gefahrengut*-Richtlinie, die für den folgenden Geschäftsfall verwendet werden kann:
 
-- Die Richtlinie fragt einen bestimmten Filtercode ( *Gefahrengut* ) und eine bestimmte Lieferart ( *Airwa-Air* ) ab.
+- Die Richtlinie fragt einen bestimmten Filtercode (*Gefahrengut*) und eine bestimmte Lieferart (*Airwa-Air*) ab.
 - Die Konsolidierung mit offenen Lieferungen ist aktiviert.
 - Die Konsolidierung erfolgt auftragsübergreifend. (Mit anderen Worten: es werden separate Lieferungen pro Konto, Lager usw. ausgeführt, jedoch nur innerhalb der in der Abfrage angegebenen Artikelgruppe.)
 
@@ -214,12 +214,12 @@ Führen Sie die folgenden Schritte aus, um die Versandkonsolidierungsrichtlinie 
     - **Richtlinienname:** *Artikeltyp*
     - **Richtlinienbeschreibung:** *Konsolidieren Sie den gleichen Artikeltyp über Bestellungen hinweg*
 
-1. Legen Sie die **Konsolidierung mit offenen Lieferungen** -Option auf *Ja* fest.
+1. Legen Sie die **Konsolidierung mit offenen Lieferungen**-Option auf *Ja* fest.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 1. Wählen Sie auf dem Inforegister **Konsolidierungsfelder** in der Liste **Verbleibende Felder** die Zeile aus, in der das Feld **Feldname** auf *Lieferart* gesetzt ist.
 1. Schaltfläche **Hinzufügen** auswählen ![Pfeil nach rechts](media/forward-button.png), um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
 1. Wählen Sie im Aktionsbereich **Abfrage bearbeiten** aus.
-1. Erweitern Sie im Abfrageeditor-Dialogfeld auf der **Verknüpfungen** -Registerkarte in der Baumstruktur **Tabellen \> Ladungsdetails**.
+1. Erweitern Sie im Abfrageeditor-Dialogfeld auf der **Verknüpfungen**-Registerkarte in der Baumstruktur **Tabellen \> Ladungsdetails**.
 1. **Tabellen-Join hinzufügen** auswählen.
 1. Suchen Sie im angezeigten Beziehungsraster die Zeile, in der das Feld **Beziehung** auf *Lagerartikelnummer (Artikelnummer)* gesetzt ist und wählen Sie dann **Auswählen** aus. 
 1. Wählen Sie auf der Registerkarte **Bereich** **Hinzufügen** aus, um eine Zeile mit den folgenden Einstellungen zum Raster hinzuzufügen:
@@ -229,14 +229,14 @@ Führen Sie die folgenden Schritte aus, um die Versandkonsolidierungsrichtlinie 
     - **Feld:** *Code 4*
     - **Kriterien:** *Brennbar*
 
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
 > [!NOTE]
-> Für diesen Geschäftsfall werden alle Auftragspositionen, in denen Artikel einen bestimmten Filtercode haben (d. h., den Filtercode, in dem das **Code 4** -Feld auf *Brennbar* gesetzt ist), über Aufträge hinweg mit anderen Artikeln des gleichen Typs konsolidiert. Wenn für dasselbe Konto, dasselbe Lager und dieselbe Artikelgruppe eine offene Lieferung vorhanden ist, werden die neuen Zeilen daran angehängt.
+> Für diesen Geschäftsfall werden alle Auftragspositionen, in denen Artikel einen bestimmten Filtercode haben (d. h., den Filtercode, in dem das **Code 4**-Feld auf *Brennbar* gesetzt ist), über Aufträge hinweg mit anderen Artikeln des gleichen Typs konsolidiert. Wenn für dasselbe Konto, dasselbe Lager und dieselbe Artikelgruppe eine offene Lieferung vorhanden ist, werden die neuen Zeilen daran angehängt.
 
 ### <a name="create-example-policy-3"></a>Beispielrichtlinie 3 erstellen
 
-In diesem Beispiel erstellen Sie eine *Kundenanforderungen* -Richtlinie, die für den folgenden Geschäftsfall verwendet werden kann:
+In diesem Beispiel erstellen Sie eine *Kundenanforderungen*-Richtlinie, die für den folgenden Geschäftsfall verwendet werden kann:
 
 - Die Richtlinie fragt nach einem bestimmten Kundenkonto.
 - Die Konsolidierung mit offenen Lieferungen ist aktiviert.
@@ -251,7 +251,7 @@ Führen Sie die folgenden Schritte aus, um die Versandkonsolidierungsrichtlinie 
     - **Richtlinienname:** *CustomerOrderNo*
     - **Richtlinienbeschreibung:** *Konsolidieren Sie die Positionen basierend auf der Kundenbestellung*
 
-1. Legen Sie die **Konsolidierung mit offenen Lieferungen** -Option auf *Ja* fest.
+1. Legen Sie die **Konsolidierung mit offenen Lieferungen**-Option auf *Ja* fest.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 1. Wählen Sie auf dem Inforegister **Konsolidierungsfelder** in der Liste **Verbleibende Felder** die Zeile aus, in der das Feld **Feldname** auf *Debitorenmaterialanforderung* gesetzt ist.
 1. Schaltfläche **Hinzufügen** auswählen ![Pfeil nach rechts](media/forward-button.png), um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
@@ -259,14 +259,14 @@ Führen Sie die folgenden Schritte aus, um die Versandkonsolidierungsrichtlinie 
 1. Schaltfläche **Hinzufügen** auswählen ![Pfeil nach rechts](media/forward-button.png), um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
 1. Wählen Sie im Aktionsbereich **Abfrage bearbeiten** aus.
 1. Suchen Sie im Abfrageeditor-Dialogfeld auf der Registerkarte **Bereich** die Zeile, in der das Feld **Feld** auf *Kundenkonto* gesetzt ist, und stellen Sie das Feld **Kriterien** für diese Zeile auf *US-001* ein.
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
 > [!NOTE]
 > In diesem Geschäftsfall werden alle Auftragspositionen, in denen Kundenaufträge dieselbe Kundenanforderungsnummer haben, unabhängig von der Kundenauftragsnummer zu einer Lieferung zusammengefasst. (Die Kundenanforderungsnummer wird als Bestellungsnummer, \[PO\]-Nummer, des Kunden verwendet.) Wenn für dasselbe Konto, dasselbe Lager und dieselbe Kundenanforderung eine offene Lieferung vorhanden ist, werden die neuen Zeilen daran angehängt. Diese Richtlinie kann verwendet werden, wenn der Kunde mehrmals am Tag zusätzliche Bestellpositionen mit derselben Bestellnummer sendet und möchte, dass alle Positionen in einer Lieferung zusammengefasst werden. (Mit anderen Worten, es gibt einen Frachtbrief und einen Packzettel.)
 
 ### <a name="create-example-policy-4"></a>Beispielrichtlinie 4 erstellen
 
-In diesem Beispiel erstellen Sie eine *Kunden, die Konsolidierung zulassen* -Richtlinie, die für den folgenden Geschäftsfall verwendet werden kann:
+In diesem Beispiel erstellen Sie eine *Kunden, die Konsolidierung zulassen*-Richtlinie, die für den folgenden Geschäftsfall verwendet werden kann:
 
 - Die Richtlinie fragt nach einem bestimmten Auftragspool, um Kunden zu identifizieren, die konsolidierte Lieferungen annehmen.
 - Die Konsolidierung mit offenen Lieferungen ist deaktiviert.
@@ -283,7 +283,7 @@ Führen Sie die folgenden Schritte aus, um die Versandkonsolidierungsrichtlinie 
     - **Richtlinienname:** *Auftragspool*
     - **Richtlinienbeschreibung:** *Konsolidierung über Aufträge hinweg basierend auf dem Auftragspool*
 
-1. Lassen Sie die **Konsolidierung mit offenen Lieferungen** -Option auf *Nein* gesetzt.
+1. Lassen Sie die **Konsolidierung mit offenen Lieferungen**-Option auf *Nein* gesetzt.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 1. Wählen Sie auf dem Inforegister **Konsolidierungsfelder** in der Liste **Verbleibende Felder** die Zeile aus, in der das Feld **Feldname** auf *Lieferart* gesetzt ist.
 1. Schaltfläche **Hinzufügen** auswählen ![Pfeil nach rechts](media/forward-button.png), um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
@@ -295,14 +295,14 @@ Führen Sie die folgenden Schritte aus, um die Versandkonsolidierungsrichtlinie 
     - **Feld:** *Pool*
     - **Kriterien:** *ShipCons*
 
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
 > [!NOTE]
 > In diesem Geschäftsfall werden alle Auftragspositionen, in denen Kundenaufträge zum selben Auftragspool gehören, zu einer Lieferung über Kundenaufträge hinweg für dasselbe Konto, dasselbe Lager und dieselbe Transportart zusammengefasst. Anstelle des Auftragspools können Sie ein beliebiges anderes Feld verwenden, um eine Kundengruppe zu unterscheiden und standardmäßig den Kundenauftragskopf zu verwenden. Sie können diesen Ansatz verwenden, wenn der Kunde und nicht das Lager den Konsolidierungsbedarf erhöht. (In der früheren Konsolidierungslogik hat das Lager den Konsolidierungsbedarf erhöht.)
 
 ### <a name="create-example-policy-5"></a>Beispielrichtlinie 5 erstellen
 
-In diesem Beispiel erstellen Sie eine *Lagerorte, die Konsolidierung zulassen* -Richtlinie, die für den folgenden Geschäftsfall verwendet werden kann:
+In diesem Beispiel erstellen Sie eine *Lagerorte, die Konsolidierung zulassen*-Richtlinie, die für den folgenden Geschäftsfall verwendet werden kann:
 
 - Die Richtlinie fragt nach einem bestimmten Auftragspool, um Lagerorte zu identifizieren, die Lieferungen konsolidieren.
 - Die Konsolidierung mit offenen Lieferungen ist deaktiviert.
@@ -317,13 +317,13 @@ In der Regel kann dieser Geschäftsfall mithilfe der von Ihnen erstellten Standa
     - **Richtlinienname:** *Auftragsübergreifend*
     - **Richtlinienbeschreibung:** *Auftragsübergreifende Konsolidierung für bestimmte Lagerorte*
 
-1. Lassen Sie die **Konsolidierung mit offenen Lieferungen** -Option auf *Nein* gesetzt.
+1. Lassen Sie die **Konsolidierung mit offenen Lieferungen**-Option auf *Nein* gesetzt.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 1. Wählen Sie auf dem Inforegister **Konsolidierungsfelder** im Feld **Verbleibende Felder** die Zeile aus, in der das Feld **Feldname** auf *Lieferart* gesetzt ist.
 1. Schaltfläche **Hinzufügen** auswählen ![Pfeil nach rechts](media/forward-button.png), um das Feld in die Liste **Ausgewählte Felder** zu verschieben.
 1. Wählen Sie im Aktionsbereich **Abfrage bearbeiten** aus.
 1. Suchen Sie im Abfrageeditor-Dialogfeld auf der Registerkarte **Bereich** die Zeile, in der das Feld **Feld** auf *Lagerorte* gesetzt ist, und stellen Sie das Feld **Kriterien** für diese Zeile auf *61, 63* ein.
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
 ### <a name="set-the-order"></a>Legen Sie die Reihenfolge fest
 
@@ -331,7 +331,7 @@ Nachdem Sie alle Ihre Richtlinien erstellt haben, müssen Sie die Reihenfolge fe
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Für Lagerort freigeben \> Richtlinien zur Lieferungskonsolidierung**.
 1. Stellen Sie das Feld **Richtlinientyp** auf *Aufträge* ein.
-1. Wählen Sie jede Richtlinie aus, die in der linken Spalte aufgeführt ist, und verwenden Sie dann die **Nach oben** - und **Nach unten** -Schaltflächen im Aktionsbereich, um die Richtlinien in der folgenden Reihenfolge anzuordnen:
+1. Wählen Sie jede Richtlinie aus, die in der linken Spalte aufgeführt ist, und verwenden Sie dann die **Nach oben**- und **Nach unten**-Schaltflächen im Aktionsbereich, um die Richtlinien in der folgenden Reihenfolge anzuordnen:
 
     1. CustomerMode
     1. Artikeltyp

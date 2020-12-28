@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ad0659a86e75dc4a5a204ebc05405f62abf2ca1e
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017459"
+ms.locfileid: "4429082"
 ---
 # <a name="warehouse-management-overview"></a>Lagerortverwaltung – Übersicht
 
@@ -32,7 +32,7 @@ Mit dem Lagerortverwaltungsmodul können Sie Lagerortprozesse für Produktions-,
 ## <a name="get-started"></a>Erste Schritte
 Um das Arbeiten mit der Lagerortverwaltung zu beginnen, müssen Sie die Einrichtung der allgemeinen Lagerortparameter abschließen, um die Geschäftsprozesse Ihres Unternehmens zu unterstützen.
 
-- Wechseln Sie zur Seite **Lagerort-Verwaltungsparameter** unter **Lagerortverwaltung** > **Setup** , um allgemeine Lagerortparameter einzurichten.
+- Wechseln Sie zur Seite **Lagerort-Verwaltungsparameter** unter **Lagerortverwaltung** > **Setup**, um allgemeine Lagerortparameter einzurichten.
 
 Sie müssen Komponenten für ein- und ausgehende Lagerortprozess-Workflows entsprechend den Geschäftsanforderungen konfigurieren. Die wichtigsten Komponenten, die Sie konfigurieren müssen, sind Wellenvorlagen, Arbeitsvorlagen, Arbeitspools und Lagerplatzrichtlinien.
 

@@ -18,11 +18,11 @@ ms.author: mkirknel
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
 ms.openlocfilehash: 525f21d076027f1bf339e59fd0e346706044839c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216504"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428531"
 ---
 # <a name="asset-management-mobile-workspace"></a>Mobiler Arbeitsbereich für Anlagenverwaltung
 
@@ -216,7 +216,7 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
 2. Wählen Sie **Alle Wartungsanfragen** aus.
 
-3. Wählen Sie am unteren Bildschirmrand**Aktivitäten** und dann **Wartungsanfrage erstellen** aus.
+3. Wählen Sie am unteren Bildschirmrand **Aktivitäten** und dann **Wartungsanfrage erstellen** aus.
 
 4. Wenn für Wartungsanfragen in **Anlagenverwaltung** Nummernkreis aktiviert ist, wird das Feld **Wartungsanfrage** ausgeblendet, da es automatisch aufgefüllt wird. Wenn das Feld **Wartungsanfrage** angezeigt wird, geben Sie eine Wartungsanfragenkennung ein.
 

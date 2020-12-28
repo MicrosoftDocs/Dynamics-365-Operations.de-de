@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: daa8f0d19de75e6c126fe7a5fe312bca24c89bdc
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016239"
+ms.locfileid: "4429065"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>Stornieren von Lagerortarbeit für Ausnahmebehandlung
 
@@ -40,7 +40,7 @@ Im Gegensatz zur regulären Stornieren-Funktion, auf die Sie zugreifen können, 
 > [!NOTE]
 > Für Arbeit, die aus betrieblichen Ursachen storniert werden muss, müssen Lagerortbenutzer weiterhin die reguläre Stornieren-Funktion auf der Arbeitsseite verwenden.
 
-Nur Arbeit vom Typ **Vertrieb** , **Umlagerungsprobleme** , **Rohmaterialentnahme** oder **Wiederbeschaffung** kann mit Hilfe der Funktion zum Stornieren von Arbeit storniert werden. Die Stornierungslogik wird nicht für gesperrte Rohmaterialentnahmearbeit oder Arbeit ausgeführt, die mit Hilfe der Funktion zum Stornieren von Arbeit storniert werden kann (siehe den vorhergehenden Hinweis).
+Nur Arbeit vom Typ **Vertrieb**, **Umlagerungsprobleme**, **Rohmaterialentnahme** oder **Wiederbeschaffung** kann mit Hilfe der Funktion zum Stornieren von Arbeit storniert werden. Die Stornierungslogik wird nicht für gesperrte Rohmaterialentnahmearbeit oder Arbeit ausgeführt, die mit Hilfe der Funktion zum Stornieren von Arbeit storniert werden kann (siehe den vorhergehenden Hinweis).
 
 Um die Sperrung der Arbeit aufzuheben, storniert das System alle verbleibenden Arbeitspositionen und korrigiert die Lagerortdaten, die der Arbeitskennung zugeordnet sind, die der Benutzer angegeben hat. Alle regulären Lagerortverarbeitungsvorgänge, die die betroffene Artikelmenge umfassen, können dann fortgesetzt werden.
 

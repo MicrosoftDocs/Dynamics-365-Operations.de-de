@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 54eba378548e1bef8ae9c3f4e7b202cf06aeff2d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984776"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428378"
 ---
 # <a name="set-up-service-intervals"></a>Einrichten von Serviceintervallen  
 
@@ -47,7 +47,7 @@ Sie möchten ein Serviceintervall von 10 Tagen erstellen.
 1. Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Servicevereinbarungen** \> **Serviceintervalle**.
 2. Erstellen Sie ein neues Serviceintervall.
 3. Geben Sie die Kennung und eine Beschreibung des Serviceintervalls ein.
-4. Wählen Sie im Feld **Bereich** den Bereich **Täglich**aus.
+4. Wählen Sie im Feld **Bereich** den Bereich **Täglich** aus.
 5. Geben Sie im Feld **Häufigkeit** Typ 10 ein.
 6. Drücken Sie **Alt+S**, um das Serviceintervall zu speichern.
 

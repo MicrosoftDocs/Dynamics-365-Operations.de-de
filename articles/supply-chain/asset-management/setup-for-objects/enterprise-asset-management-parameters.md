@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2505f5f334c3f86959023812880e956f0ebaac09
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889840"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428810"
 ---
 # <a name="asset-management-parameters"></a>Anlagenverwaltungsparameter
 
@@ -52,7 +52,7 @@ Link **Arbeitsaufträge**
 
 - **Standardarbeitsauftragstyp** definiert Standardeinstellungen, wenn ein Arbeitsauftrag erstellt wird.  
 - **Vorbeugender Arbeitsauftragstyp** definiert den Arbeitsauftragstyp, wenn Arbeitsaufträge von den Wartungsplänen verwendet werden. Wenn dieses Feld leer bleibt, wird der Arbeitsauftrag in dem Feld **Standardarbeitsauftragstyp** verwendet.  
-- Im Feld **Verwandte Arbeitsauftragsmaske** definieren die maximale Anzahl von Arbeitsaufträgen, die einem Arbeitsauftrag zugeordnet werden können. Mit ## können Sie zum Beispiel bis zu 99 Arbeitsaufträge miteinander in Beziehung setzen. Wenn Sie eine Maske wie hier beschrieben definieren, werden zugehörige Arbeitsaufträge [Arbeitsauftrag-Kennung des Arbeitsauftrags, auf die sich ein Arbeitsauftrag bezieht] nummeriert mit -01, -02, -03, usw. Wenn Sie keinerlei Maske in diesem Feld definieren, wird ein zugehöriger Arbeitsauftrag die darauf folgende Auftragsnummer die Arbeitsauftrags-Kennung.  
+- Im Feld **Verwandte Arbeitsauftragsmaske** definieren die maximale Anzahl von Arbeitsaufträgen, die einem Arbeitsauftrag zugeordnet werden können. Mit ## können Sie zum Beispiel bis zu 99 Arbeitsaufträge miteinander in Beziehung setzen. Wenn Sie eine Maske wie hier beschrieben definieren, werden zusammenhängende Arbeitsaufträge mit [Arbeitsauftrags-ID des Arbeitsauftrags, mit dem ein Arbeitsauftrag zusammenhängt] -01, -02, -03, usw. nummeriert. Wenn Sie keinerlei Maske in diesem Feld definieren, wird ein zugehöriger Arbeitsauftrag die darauf folgende Auftragsnummer die Arbeitsauftrags-Kennung.  
 - Wählen Sie **Ja** für **Fehler kopieren**, wenn Sie die auf den Arbeitsaufträgen registrierten Fehler automatisch in die zugehörigen Wartungsanforderungen kopieren möchten. 
 - Im Feld **Ebene** definieren Sie die funktionale Lagerplatzebene, die automatisch für einen Arbeitsauftrag eingefügt wird, wenn alle zugehörigen Arbeitsauftragseinzelvorgänge auf den funktionalen gleichen Speicherort verweisen. Wenn nicht alle Arbeitsauftragseinzelvorgänge derselben funktionalen Position auf der definierten Ebene zugeordnet werden, wird das Feld  **Funktionaler Lagerplatz** auf dem Arbeitsauftrag leer gelassen. Wenn Sie z.B. die Zahl „1“ in dieses Feld einfügen, ist das die oberste Ebene in einer funktionalen Standortstruktur. Wenn Sie die Nummer „0“ in diesem Feld einfügen, haben Sie keine bestimmte funktionale Lagerplatzebene definiert, nur dass alle Arbeitsauftragsstellen eines Arbeitsauftrags dem gleichen Standort zugeordnet sein müssen, damit der Lagerplatz dem Arbeitsauftrag funktionale hinzugefügt werden kann.  
 - Die Erfassungen, die verwendet werden, wenn der Verbrauch in einem Arbeitsauftrag gebucht wird, kann auf dem Inforegister **Allgemein** in den Feldern **Stunde**, **Artikel** und **Ausgaben** ausgewählt werden.  
@@ -97,7 +97,7 @@ Die in der folgenden Liste beschriebenen Felder beziehen sich alle auf errechnet
 
 **Beginndatum des Mitarbeiters** - Eine Bewertungspunktzahl, die zusammen mit **Verantwortlicher Mitarbeiter**, **Bevorzugter Mitarbeiter**, **Bevorzugte Mitarbeitergruppe**, **Asset Location** und **Beginndatum** Bewertungspunktzahlen berechnet wird. Dieses Feld gibt die tägliche Bewertung als negativen Wert an und wird mit dem Feld **Erwarteter Anfang** auf einen Arbeitsauftrag verglichen. Wenn der Wert „10,00“ auf diesem Feld eingefügt wird und das voraussichtliche Startdatum eines Arbeitsauftrags am nächsten Tag ist, ist das Bewertungsergebnis minus 10,00.
 
-  - Angenommen, dass keine zuständige Arbeitskraft und zuständige Arbeitskraftgruppe für einen Arbeitsauftrag eingeplant wird, fügen Sie die Bewertungsnotenwerte in den Beispielen hinzu und ziehen es ab in den Beispielen mit den Felder **Bevorzugte Arbeitskraft**, **Bevorzugte Arbeitskraftgruppe**, **Anlagenstandort** und**Startdatum** und Sie erhalten insgesamt 3.010,00. Das bedeutet eine hohe Bewertung für die Arbeitskraft, die bereits als bevorzugte Arbeitskraft aktiviert ist sowie in der bevorzugten Arbeitskraftgruppe im Feld Arbeitsauftrag einbezogen ist, und die Arbeitskraft sitzt auch am selben Standort wie die Anlage, für die ein Einzelvorgang geplant werden muss. Dies bedeutet, dass eine gute Chance besteht, dass der betreffende Mitarbeiter bei der Arbeitsauftragsplanung für die Ausführung des Auftrags ausgewählt wird.  
+  - Angenommen, dass keine zuständige Arbeitskraft und zuständige Arbeitskraftgruppe für einen Arbeitsauftrag eingeplant wird, fügen Sie die Bewertungsnotenwerte in den Beispielen hinzu und ziehen es ab in den Beispielen mit den Felder **Bevorzugte Arbeitskraft**, **Bevorzugte Arbeitskraftgruppe**, **Anlagenstandort** und **Startdatum** und Sie erhalten insgesamt 3.010,00. Das bedeutet eine hohe Bewertung für die Arbeitskraft, die bereits als bevorzugte Arbeitskraft aktiviert ist sowie in der bevorzugten Arbeitskraftgruppe im Feld Arbeitsauftrag einbezogen ist, und die Arbeitskraft sitzt auch am selben Standort wie die Anlage, für die ein Einzelvorgang geplant werden muss. Dies bedeutet, dass eine gute Chance besteht, dass der betreffende Mitarbeiter bei der Arbeitsauftragsplanung für die Ausführung des Auftrags ausgewählt wird.  
   - Wenn der Wert „0,00“ in einem der acht Felder eingefügt wird, wird diese Bewertungsnote nicht innerhalb der Arbeitsauftragsplanung verwendet.  
 
 **Dokumenttypen** Link

@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 31cb26479ccb74dfb58fd5590cd60d7b7c64c292
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018513"
+ms.locfileid: "4429118"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Aufträge als Direktlieferungen versenden
 
@@ -44,7 +44,7 @@ Dieses Thema zeigt, wie eine Direktauslieferung für einen Auftrag erstellt wird
 10. Wählen Sie im Aktivitätsbereich **Allgemein** aus.
 11. Wählen Sie **Zugeordnete Aufträge** aus.
 12. Wählen Sie den Link im Feld **Bestellung** aus.
-13. Erweitern Sie den Bereich **Positionsdetails** , und wählen Sie die Registerkarte **Adresse** aus.
+13. Erweitern Sie den Bereich **Positionsdetails**, und wählen Sie die Registerkarte **Adresse** aus.
     - Die Lieferadresse für diese Bestellposition ist die Lieferadresse des Debitors und nicht die Adresse des Unternehmens.  
     - Wenn Sie die Lieferadresse entweder in der Bestellposition oder der ursprünglichen Auftragsposition ändern, wird die Adresse in der entsprechenden Auftragsposition automatisch aktualisiert.  
 14. Wählen Sie die Registerkarte **Lieferung** aus.
@@ -72,7 +72,7 @@ Dieses Thema zeigt, wie eine Direktauslieferung für einen Auftrag erstellt wird
 2. Wählen Sie **Neu** aus.
 3. Geben Sie im Feld **Debitorenkonto** einen Wert ein, oder wählen Sie einen Wert aus, und wählen Sie dann **OK**.
 4. Geben Sie in den Feldern **Artikelnummer** und **Standort** einen Wert ein, oder wählen Sie einen Wert aus.
-5. Erweitern Sie den Abschnitt **Positionsdetails** , und wählen Sie dann die Registerkarte **Lieferung** aus. Anstatt eine Direktlieferung wie im vorherigen Verfahren als Teil der Auftragsverarbeitung zu erstellen, können Sie diese Aufgabe einem Einkäufer übergeben. Um die Auftragsposition in den Direktlieferungshandlungsprozess einzubeziehen, müssen Sie die Position für die Direktlieferung markieren.  
+5. Erweitern Sie den Abschnitt **Positionsdetails**, und wählen Sie dann die Registerkarte **Lieferung** aus. Anstatt eine Direktlieferung wie im vorherigen Verfahren als Teil der Auftragsverarbeitung zu erstellen, können Sie diese Aufgabe einem Einkäufer übergeben. Um die Auftragsposition in den Direktlieferungshandlungsprozess einzubeziehen, müssen Sie die Position für die Direktlieferung markieren.  
 6. Wählen Sie **Ja** im Feld **Direktlieferung** aus.
     - Wenn der Artikel bereits für Direktlieferung standardmäßig eingerichtet wurde, wird das Feld automatisch auf "Ja" bei der Auftragspositionserfassung festgelegt. Sie können einen Artikel für Direktlieferung im Master des "Freigegebenen Produkt" einrichten, indem Sie die Option "Direktlieferung" mit "Ja" festlegen sowie einen standardmäßigen Direktlieferungslagerort auswählen.  
     - Da die Bestellung noch nicht erstellt wurde, wird der Direktlieferungsstatus auf „Direkt zu liefern“ festgelegt.   

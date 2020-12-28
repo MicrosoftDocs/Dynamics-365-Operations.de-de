@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 54c129d93e13e032cc5526a91c73d3363ed183db
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889024"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428650"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>BestellungErstellen von Anlagen basierend auf den Bestellungen
 
@@ -33,7 +33,7 @@ ms.locfileid: "3889024"
 
 In diesem Thema wird erläutert, wie Sie eine Liste von Anlageposten erstellen können, die als Grundlage für die Erstellung von Anlagen für Wartungsaufträge im Asset-Management verwendet werden können. Basierend auf Anlageartikeln können Sie eine Liste der Bestellungen anzeigen, die für diesen Artikel erstellt wurden. Der Zweck dieser Funktion ist es, einfach eine Anlage im Asset-Management basierend auf einer Bestellung zu erstellen.
 
-Zuerst richten Sie Artikel ein, die für das Erstellen von Anlagen für eine Bestellung in **Anlageartikel** verwendet werden kann. Nachdem Sie einer Bestellposition erstellt haben, erstellen Sie die Anlage unter**Pendente Anlagen**. Es ist möglihc zu entscheid, in welcher Phase der Bestellung die Anlage erstellt werden sollte.
+Zuerst richten Sie Artikel ein, die für das Erstellen von Anlagen für eine Bestellung in **Anlageartikel** verwendet werden kann. Nachdem Sie einer Bestellposition erstellt haben, erstellen Sie die Anlage unter **Pendente Anlagen**. Es ist möglihc zu entscheid, in welcher Phase der Bestellung die Anlage erstellt werden sollte.
 
 
 ## <a name="select-asset-items"></a>Anlageartikel auswählen

@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7a1a47761869a4190eac6dc9e069a6b520bf7a1d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985141"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428893"
 ---
 # <a name="create-service-agreements"></a>Erstellen von Servicevereinbarungen
 
@@ -44,7 +44,7 @@ In diesem Thema wird beschrieben, wie mithilfe der Funktionen in den Modulen Ser
 
 ## <a name="create-service-agreement-lines-manually"></a>Manuelles Erstellen von Servicevertragspositionen
 
-1. Fügen Sie im Formular **Servicevereinbarungen**eine Servicevertragsposition im Raster  hinzu. 
+1. Fügen Sie im Formular **Servicevereinbarungen** eine Servicevertragsposition im Raster  hinzu. 
 2. Geben Sie die für die Servicevereinbarungsposition erforderlichen Informationen ein. 
 3. Drücken Sie **STRG+S**, um die Position zu speichern, und schließen Sie anschließend das Formular.
 

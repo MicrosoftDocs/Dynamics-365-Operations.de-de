@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9c4e8dca93fdf9ee605ffeb63f259389b58a4b36
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018235"
+ms.locfileid: "4429100"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Eine Bestellung mit einem Lieferzeitplan erstellen
 
@@ -72,5 +72,5 @@ Die Bestellung muss bestätigt werden, bevor der Produktzugang verarbeitet werde
 5. Erweitern Sie den Abschnitt **Positionen**.
 - Beachten Sie, wie der Produktzugang für die zwei Lieferpositionen und nicht die ursprüngliche Auftragsposition erstellt wird. Wenn der Zugang am Lagerort erfasst worden wäre, wäre er auch in den Lieferzeitplanpositionen erfasst worden.  
 6. Reduzieren Sie den Abschnitt **Positionen**.
-7. Klicken Sie auf **OK** , um den Zugang zu buchen.
+7. Klicken Sie auf **OK**, um den Zugang zu buchen.
 

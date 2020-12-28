@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e98203f03f10b3a7c530cb91211df2af025710dc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978989"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428799"
 ---
 # <a name="credit-limits-for-customers"></a>Kreditlimits für Debitoren
 
@@ -126,7 +126,7 @@ Verwenden Sie das Formular **Kunden**, um den Betrag für das Kreditlimit für e
 
 3.  Geben Sie den Habenbetrag im Feld **Kreditlimite** ein. Dieser Wert muss größer als Null (0) sein und wird als Betrag für das Kreditlimit verwendet.
 
-4.  Falls erforderlich, geben Sie eine Führerscheinnummer oder sonstige behördliche Identifikation im Feld R**Regierungskennung** ein.
+4.  Falls erforderlich, geben Sie eine Führerscheinnummer oder sonstige behördliche Identifikation im Feld R **Regierungskennung** ein.
 
 > [!NOTE]
 > Weitere Informationen finden Sie unter **Debitorenparametern**, in der Regel wird ein Kreditlimittyp gewählt. Wenn jedoch der Kreditlimit-Typ zu **Nein** festgelegt ist, müssen Sie das Kontrollkästchen **Zwingende Kreditlimite** im Formular **Kunden** auch auswählen, um das Kreditlimit des Debitors mit dem Saldo des Debitors zu überprüfen. Weitere Informationen zu Kreditlimittypen finden Sie unter, "Für welche Dokumente und Prozesse kann ich Kreditlimits überprüfen?" in diesem Thema.  in diesem Thema. 

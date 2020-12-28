@@ -20,11 +20,11 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fc01e2d28758008d2e147a92c498da7ccb14b173
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826309"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428633"
 ---
 # <a name="resource-capabilities"></a>Ressourcenfähigkeiten
 
@@ -35,7 +35,7 @@ ms.locfileid: "3826309"
 Eine Funktion ist die Fähigkeit einer betrieblichen Ressource, eine bestimmte Aktivität auszuführen. Einer betrieblichen Ressource kann mehr als eine Fähigkeit zugewiesen werden, und eine Fähigkeit kann mehr als einer Ressource zugewiesen werden. Funktionen können Ressourcen auch temporär zugewiesen werden, indem ein Startdatum und Enddatum für die Funktionszuweisung definiert wird. Wenn die Funktionen für eine Ressource abläuft, kann die Ressource nicht für ein Projekt oder eine Produktion eingeplant werden, die diese Funktion erfordert. Eine Funktion, die abgelaufen ist, kann wieder erneuert werden. Sie können Funktionen löschen, sofern diese nicht in einer Arbeitsplanzuordnung enthalten oder Teil eines Produktionsarbeitsplans eines aktiven Produktionsauftrags sind. Gehen Sie beim Löschen von Funktionen also immer mit Bedacht vor. Sie können stattdessen erwägen, das Ablaufdatum der Ressourcen anzupassen, die über die jeweilige Funktion verfügen. Funktionen können allen Typen von Ressourcen zugewiesen werden: Tool, Händler, Maschine, Lagerplatz oder Personal.
 
 ## <a name="level"></a>Ebene
-Mehrere Ressourcen verfügen oft über die gleiche funktionale Funktion jedoch auf unterschiedlichen Ebenen der Fertigkeiten (beispielsweise Stärke, Verarbeitungsgeschwindigkeit oder Genauigkeit). Wenn Sie eine also eine Fähigkeit einer Ressource zuweisen, können Sie einen **Ebenen**wert angeben. Die Ebene ist ein einfacher numerischer Wert. Wenn Sie angeben, dass eine Funktion eine Ressourcenanforderung für einen Produktionsarbeitsplan ist, kann ein Wert für die **Mindestanforderung** für diese Funktion angeben werden. Das Planungsmodul wählt dann nur Ressourcen aus, die die erforderliche Fähigkeit auf einer Ebene haben, die der Ebene entsprechen oder die minimale Ebene überschreitet, die für die Ressourcenanforderung angegeben ist.
+Mehrere Ressourcen verfügen oft über die gleiche funktionale Funktion jedoch auf unterschiedlichen Ebenen der Fertigkeiten (beispielsweise Stärke, Verarbeitungsgeschwindigkeit oder Genauigkeit). Wenn Sie eine also eine Fähigkeit einer Ressource zuweisen, können Sie einen **Ebenen** wert angeben. Die Ebene ist ein einfacher numerischer Wert. Wenn Sie angeben, dass eine Funktion eine Ressourcenanforderung für einen Produktionsarbeitsplan ist, kann ein Wert für die **Mindestanforderung** für diese Funktion angeben werden. Das Planungsmodul wählt dann nur Ressourcen aus, die die erforderliche Fähigkeit auf einer Ebene haben, die der Ebene entsprechen oder die minimale Ebene überschreitet, die für die Ressourcenanforderung angegeben ist.
 
 ## <a name="priority"></a>Priorität
 Betriebliche Ressourcen, die die gleichen Funktionen haben, können einer Priorität zugewiesen werden. Wenn dann mehrere Ressourcen Funktionen aufweisen, die den Planungsbedarf auf der erforderlichen Ebene erfüllen und freie Kapazität aufweisen, kann das Planungsmodul unter diesen Ressourcen auswählen. Wenn **Priorität** im Feld auf der **Primäre Ressourcen-Auswahl** auf der **Planungsparameter** Seite aktiviert ist, wird die Ressource, die die höchste Priorität hat (dem niedrigsten numerischen Wert im Feld **Priorität**) bei der Planung zuerst ausgewählt.

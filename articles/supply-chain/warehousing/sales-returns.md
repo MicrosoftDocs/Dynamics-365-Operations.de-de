@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fd194042303797fe41507065d0d7e4df28309cfb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987413"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428495"
 ---
 # <a name="sales-returns"></a>Retouren
 
@@ -87,7 +87,7 @@ Nachdem Sie den Rückgabekopf erstellt haben, können Sie Rücksendepositionen e
 -   Geben Sie manuell die Artikeldetails, die Menge und andere Informationen für jede Rückgabeposition ein.
 -   Erstellen Sie einer Rückgabeposition, indem Sie die **Auftrag suchen** Funktion nutzen. Es wird empfohlen, diese Funktion zu verwenden, wenn Sie einer Rücklieferung erstellen. Die **Auftrag suchen** Funktion erstellt eine Referenz aus der Rückgabeposition für die fakturierte Auftragsposition und ruft Positionsdetails wie Artikelnummer, Menge, Preis, Rabatt und Kostenwerte aus der Auftragsposition ab. Die Referenz stellt sicher, dass, wenn das Produkt an das Unternehmen zurückgegeben ist, sein Wert dieselben Einheitenkosten hat, mit dem es verkauft wurde. Die Referenz geprüft außerdem, dass Rücklieferungen nicht für eine Menge erstellt werden, für die die Menge überschreitet, die in der Rechnung verkauft wurde.
 
->[Hinweis!] Rückgabepositionen, die eine Referenz zu einem Auftrag haben, werden als Korrekturen oder Rückbuchungen des Verkaufs behandelt. Weitere Informationen finden Sie im Abschnitt "Sachkonto buchen" weiter unten in diesem Thema.
+>[Hinweis!] Rücklieferungszeilen, die einen Bezug zu einem Verkaufsauftrag haben, werden als Korrekturen bzw. Stornierungen des Verkaufs behandelt. Weitere Informationen finden Sie im Abschnitt "Sachkonto buchen" weiter unten in diesem Thema.
 
 ### <a name="charges"></a>Belastungen
 
@@ -193,7 +193,7 @@ Während des Eingangsprozesses werden Rücklieferungen mit dem allgemeinen Proze
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Identifizieren von Produkte in der Wareneingangsübersichtliste
 
 Die **Wareneingangsübersicht** Seite zeigt alle geplanten eingehenden Wareneingängen an. 
->[Hinweis!] Anzeigen der Rücklieferungen müssen separat verarbeitet werden als anderen Typen von Eingangsbuchungen. Nachdem ein eingehendes Paket für die **Wareneingangsübersicht** Seite, (beispielsweise mit Rücksendungsdokument) identifiziert wurde, klicken Sie im Aktivitätsbereich auf **Wareneingang starten**, um eine Wareneingangserfassung zu erstellen und zu initialisieren, die mit dem Zugang übereinstimmt.
+>[Hinweis!] Eingänge aus Rücklieferungen müssen getrennt von anderen Arten von Eingangstransaktionen verarbeitet werden. Nachdem ein eingehendes Paket für die **Wareneingangsübersicht** Seite, (beispielsweise mit Rücksendungsdokument) identifiziert wurde, klicken Sie im Aktivitätsbereich auf **Wareneingang starten**, um eine Wareneingangserfassung zu erstellen und zu initialisieren, die mit dem Zugang übereinstimmt.
 
 ### <a name="edit-the-arrival-journal"></a>Bearbeiten der Eingangserfassung.
 
@@ -235,7 +235,7 @@ Wenn Sie einen Ersatzartikel an den Debitor versenden, und die **Ersetzen und ve
 
 Der Ersetzungsartikel wird geliefert, indem ein unabhängiger Auftrag verwendet wird (der Ersetzungsauftrag). Dieser Auftrag wird erstellt, wenn der Lieferschein für die Rücklieferung generiert wird. Der Auftragskopf verwendet Informationen des Debitors, auf den der Rücklieferungskopf verweist. Die Positionsinformationen werden aus den Informationen gesammelt, die auf die Seite **Ersetzungsartikel** eingegeben werden. Die **Ersetzungsartikel** Seite muss für Positionen gefüllt sein, die Dispositionsaktivitäten haben, die mit dem Begriff "Ersetzen" beginnen. Allerdings wird weder die Menge noch die Identität des Wiederbeschaffungsartikel geprüft oder beschränkt. Dieses Verhalten ermöglicht Fälle, in denen der Debitor den gleichen Artikel in einer anderen Konfiguration oder Größe wünscht, und auch Anfragen, in denen Debitoren einen vollständig anderen Artikel wünscht. Standardmäßig wird ein identischer Artikel auf die Seite **Ersetzungsartikel** eingegeben. Sie können jedoch einen anderen Artikel auswählen, vorausgesetzt, dass die Funktion eingerichtet wurde. 
 
->[Hinweis!] Der Ersetzungsauftrag kann bearbeitet und gelöscht werden, wenn er erstellt wurde.
+>[Hinweis!] Sie können den Ersatzverkaufsauftrag bearbeiten und löschen, nachdem er erstellt wurde.
 
 ## <a name="generate-a-packing-slip"></a>Lieferschein generieren
 Bevor zurückgelieferte Artikel im Lager entgegengenommen werden können, muss der Lieferschein für den zugehörigen Auftrag aktualisiert werden. So wie die Rechnungsaktualisierung die Aktualisierung für die Finanzbuchung darstellt, ist die Lieferscheinaktualisierung die physische Aktualisierung des Lagerdatensatzes. Das bedeutet, dieser Prozess übernimmt die Änderungen in das Lager. Bei Retouren werden die der Dispositionsaktivität zugeordneten Schritte bei der Lieferscheinaktualisierung implementiert. Wenn Sie den Lieferschein generieren, treten folgende Ereignisse auf:
@@ -257,7 +257,7 @@ Obwohl die **Rücklieferung** Seite die Informationen und Aktivitäten enthält,
 ### <a name="credit-correction"></a>Habenkorrektur
 
 Als Teil des Rechnungsstellungsprozesses überprüften Sie, ob sonstige Zuschläge korrekt sind. Sollen die Sachkontobuchungen zu Korrekturen (Storno) werden, sollten Sie die Option **Kreditkorrektur** auf der Registerkarte **Andere** der Seite **Buchungsrechnung**  verwenden wenn Sie die Rechnung/eine Gutschrift buchen. 
->[Hinweis!] Standardmäßig ist die **Habenkorrektur** Option aktiviert, wenn die **Gutschrift als Korrektur** Option auf der Seite **Debitorenparameter** aktiviert wurde. Es wird jedoch empfohlen, dass Sie Rücklieferungen nicht mit Storno buchen.
+>[Hinweis!] Standardmäßig ist die Option **Gutschriftkorrektur** aktiviert, wenn die Option **Gutschrift als Korrektur** auf der Seite **Debitorenparameter** aktiviert wurde. Es wird jedoch empfohlen, dass Sie Rücklieferungen nicht mit Storno buchen.
 
 ## <a name="create-intercompany-return-orders"></a>Intercompany-Rücklieferung erstellen
 Rücklieferungen können zwischen zwei Unternehmen innerhalb Ihrer Organisation abgeschlossen werden. Folgende Szenarios werden unterstützt:
@@ -311,7 +311,7 @@ Die Rückgabe verweist auf keine Debitorenrechnung. Der zurückgelieferten Artik
 
 ![Die Rückgabe verweist auf keine Debitorenrechnung](./media/SalesReturn09.png)  
 
->[Hinweis!] Der Artikelmaster-Preis wird als Standardwert für den **Rücklieferungseinstandspreis** Parameter verwendet. Der Standardpreis unterscheidet sich von dem Einstandspreis zum Zeitpunkt des Lagerabgangs. Daher ist die Auswirkungen, dass ein Verlust von 3 verursacht wurde. Darüber hinaus enthält die Rücklieferung nicht den Rabatt, dem Debitor im Auftrag der angegeben wurde. Daher tritt ein übermäßiges Haben auf.
+>[Hinweis!] Der Artikelstammpreis wird als Standardwert für den Parameter **Rückgabe Einstandspreis** verwendet. Der Standardpreis unterscheidet sich von dem Einstandspreis zum Zeitpunkt des Lagerabgangs. Daher ist die Auswirkungen, dass ein Verlust von 3 verursacht wurde. Darüber hinaus enthält die Rücklieferung nicht den Rabatt, dem Debitor im Auftrag der angegeben wurde. Daher tritt ein übermäßiges Haben auf.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Beispiel 2: Habenkorrektur ist für die Rücklieferung ausgewählt
 
@@ -319,7 +319,7 @@ Beispiel 2 entspricht Beispiel 1, aber der **Habenkorrektur** Parameter ist akti
 
 ![Habenkorrektur ist für die Rücklieferung ausgewählt ](./media/SalesReturn10.png)  
 
->[Hinweis!] Die Sachkontobuchungen werden als negative Korrekturen eingegeben.
+>[Hinweis!] Die Ledger-Buchungen werden als negative Korrekturen eingegeben.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Beispiel 3: Die Rücklieferungsposition wird erstellt, indem die Auftrag suchen-Funktion verwendet wird
 
@@ -327,7 +327,7 @@ In diesem Beispiel wird die Rücklieferungsposition erstellt, indem die **Auftra
 
 ![Die Rücklieferungsposition wird erstellt, indem die Auftrag suchen-Funktion verwendet wird ](./media/SalesReturn11.png)  
 
->[Hinweis!] **Rabatt** und **Rücklieferungseinstandspreis** werden ordnungsgemäß festgelegt. Aus diesem Grund tritt eine genaue Stornierung der Debitorenrechnung auf.
+>[Hinweis!] **Rabatt** und **Rückgabe-Einstandspreis** sind korrekt festgelegt. Aus diesem Grund tritt eine genaue Stornierung der Debitorenrechnung auf.
 
 
 

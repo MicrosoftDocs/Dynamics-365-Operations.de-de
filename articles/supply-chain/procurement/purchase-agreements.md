@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ce6b76d92526b9a353bda2524bdfd0f7f4a5f68e
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018835"
+ms.locfileid: "4429021"
 ---
 # <a name="purchase-agreements"></a>Rahmenbestellungen
 
@@ -70,7 +70,7 @@ Die Preisgestaltungsbedingungen können je nach Typ der Zusage variieren. Die Pr
 ## <a name="policies-for-purchase-agreements"></a>Richtlinien für Kaufverträge
 Die folgenden Richtlinien wirken sich auf die Verknüpfung zwischen einer Kaufvertragszusage und den entsprechenden Bestellposition aus:
 
--   **Maximum wird erzwungen** : Die Gesamtmenge oder der Betrag für alle Auftragspositionen darf die Menge oder Summe nicht überschreiten, der auf der zugehörigen Zusage angegeben ist.
+-   **Maximum wird erzwungen**: Die Gesamtmenge oder der Betrag für alle Auftragspositionen darf die Menge oder Summe nicht überschreiten, der auf der zugehörigen Zusage angegeben ist.
 -   **Festpreis und ‑rabatt** – Der Preis in einer Auftragsposition und der Preis auf der entsprechenden Zusage müssen gleich sein. Wenn der Preis in der Auftragsposition geändert wird, ist die Verknüpfung mit der Zusage aufgehoben. Wenn die Verknüpfung aufgehoben ist, trägt die Auftragsposition nicht zur Erfüllung der Zusage bei.
 -   **Mindestfreigabebetrag und Höchstfreigabebetrag** – Wenn ein Betrag angegeben ist, erhalten Sie eine Meldung, wenn Sie Änderungen an einer Auftragsposition vornehmen, die bewirken, dass sich die Auftragsposition von der zugehörigen Zusage unterscheidet.
 

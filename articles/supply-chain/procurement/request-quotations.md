@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cd0ee376da52dc3b36ec32859283a410e5b71854
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018398"
+ms.locfileid: "4429117"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Übersicht über Angebotsanfragen (RFQs)
 
@@ -44,7 +44,7 @@ Die folgende Abbildung zeigt eine Übersicht über den Angebotsanforderungsproze
 
 Sie können eine Angebotsanforderung aus geplanten Aufträgen, einer Bestellanforderung oder durch einen manuellen Eintrag erstellen. Die Angebotsanforderung ist das Basisdokument, dass Sie verwenden, um eine Angebotsanforderung für jeden Lieferanten auszugeben.
 
-Nachdem Sie die Angebotsanforderungsanfrage vorbereitet und Kreditoren hinzugefügt haben, wählen Sie **Senden** ( **Senden und Veröffentlichen** für den öffentlichen Sektor) in der  Angebotsanforderungsanfrage. Eine Angebotsanforderungserfassung wird für jeden Kreditor generiert, an den Sie eine Angebotsanforderung senden. Sie können die Druckverwaltungseinstellung für die Sendeaktivität so konfigurieren, dass entweder ein Bericht für jeden Kreditor in ein Archiv ausgedruckt wird oder ein Bericht an die E-Mail-Adresse jedes Kreditors gesendet wird. Außerdem können Sie die Angebotsanforderungserfassung für jeden Kreditor verwenden, um einen Bericht zu generieren, den Sie später an den Kreditor senden oder erneut senden können. Sie können die Aktivität „Senden” auch so konfigurieren, dass ein Antwortbogen generiert wird, den der Kreditor ausfüllen kann.
+Nachdem Sie die Angebotsanforderungsanfrage vorbereitet und Kreditoren hinzugefügt haben, wählen Sie **Senden** (**Senden und Veröffentlichen** für den öffentlichen Sektor) in der  Angebotsanforderungsanfrage. Eine Angebotsanforderungserfassung wird für jeden Kreditor generiert, an den Sie eine Angebotsanforderung senden. Sie können die Druckverwaltungseinstellung für die Sendeaktivität so konfigurieren, dass entweder ein Bericht für jeden Kreditor in ein Archiv ausgedruckt wird oder ein Bericht an die E-Mail-Adresse jedes Kreditors gesendet wird. Außerdem können Sie die Angebotsanforderungserfassung für jeden Kreditor verwenden, um einen Bericht zu generieren, den Sie später an den Kreditor senden oder erneut senden können. Sie können die Aktivität „Senden” auch so konfigurieren, dass ein Antwortbogen generiert wird, den der Kreditor ausfüllen kann.
 
 Dieses Thema behandelt den Prozess der Handhabung von Angebotsanforderungen, wenn die Kreditorenzusammenarbeit nicht verwendet wird. Wenn Ihr System für Kreditorenzusammenarbeit eingerichtet ist, können Kreditoren Angebote direkt in Supply Chain Management eingeben. Weitere Informationen über die Kreditorenzusammenarbeit finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) und [Kreditorenzusammenarbeit mit Kunden](vendor-collaboration-work-external-vendors.md).
 
@@ -54,7 +54,7 @@ Wenn Sie Angebote per E-Mail erhalten, müssen Sie diese Angebote auf der Seite 
 
 Wenn eine zweite Iteration von einer Antwort für einen bestimmten Kreditor erforderlich ist, klicken Sie auf **Zurück** auf der Seite **Antwort auf Angebotsanforderung**. Die Aktion „Zurück” generiert eine neue Erfassung und einen Bericht, der gemäß den Druckverwaltungseinstellungen gedruckt, archiviert und gesendet werden.
 
-Wenn Sie Bewertungskriterien zu Ihrer Angebotsanforderungsanfrage hinzugefügt haben, hat die Antwort auf die Angebotsanforderung einen Bewertungsbereich, in dem Sie die Punktzahlen eingeben können. Die Gesamtbewertungen werden in der Angebotsanforderung angezeigt, wenn Sie die Antworten auf der Seite **Antworten vergleichen** vergleichen. Auf dieser Seite können Sie auch **Antwortdaten vergleichen** , wie beispielsweise den Positionspreis, das Lieferdatum und den Gesamtpreis.
+Wenn Sie Bewertungskriterien zu Ihrer Angebotsanforderungsanfrage hinzugefügt haben, hat die Antwort auf die Angebotsanforderung einen Bewertungsbereich, in dem Sie die Punktzahlen eingeben können. Die Gesamtbewertungen werden in der Angebotsanforderung angezeigt, wenn Sie die Antworten auf der Seite **Antworten vergleichen** vergleichen. Auf dieser Seite können Sie auch **Antwortdaten vergleichen**, wie beispielsweise den Positionspreis, das Lieferdatum und den Gesamtpreis.
 
 Nachdem Sie ein Angebot oder mehrere Positionen in einem Angebot ausgewählt haben, können Sie einige oder alle Positionen übernehmen und die restliche ablehnen. Annahmeerfassungen, Ablehnungserfassungen und entsprechende Berichte werden generiert und  gemäß den Druckverwaltungseinstellungen gedruckt, archiviert und gesendet werden. Wenn Sie ein Angebot oder bestimmte Positionen in einem Angebot annehmen, wird entweder ein Kaufvertrag oder eine Bestellung generiert, oder eine Bestellanforderung wird aktualisiert, je nach Bestelltyp der Angebotsanforderung. Sie können eine Handelsvereinbarung erstellen, die Sie später für jede der Antworten verwenden können, unabhängig davon, ob Sie diese akzeptiert oder zurückgewiesen haben.
 
@@ -97,7 +97,7 @@ Wenn Sie eine Angebotsanforderung löschen möchten, nachdem sie versendet wurde
 - %Name der Angebotsanforderungsanfrage%
 - %Datum%
 
-Das Token %Grund für Stornierung% wird von Text ersetzt, den der Prokurist im **Stornierungs** -Assistenten eingeben kann. Das Token %Datum% wird durch das aktuelle Datum ersetzt.
+Das Token %Grund für Stornierung% wird von Text ersetzt, den der Prokurist im **Stornierungs**-Assistenten eingeben kann. Das Token %Datum% wird durch das aktuelle Datum ersetzt.
 
 Wenn Sie Ursachencodes für eine Angebotsanforderungsantwort verwenden möchten, um anzugeben, warum ein Angebot angenommen oder abgelehnt wurde, müssen Sie Ursachencodes auf der Seite **Ursachen für Kreditorenbuchungen** einrichten.
 
@@ -174,13 +174,13 @@ Wenn Sie weitere Kreditoren dazu einladen möchten, Angebote zu unterbreiten, un
 
 ## <a name="receiving-and-registering-rfq-replies"></a>Erhalten und Erfassen von Antworten auf Angebotsanforderungen
 
-Wenn Sie eine Angebotsanforderung senden, wird automatisch ein Antwortblatt generiert. Da Sie Angebote auf eine Angebotsanforderung erhalten, müssen Sie diese über die Seite **Angebotsanforderung** eingegeben, indem Sie auf **Antwort auf Angebotsanforderung bearbeiten** klicken. Dies ermöglicht es Ihnen, eine Anngebotsinformationen in ein dediziertes Angebotsformular einzugeben. Zuerst ist der **Antwortfortschritt** auf **Nicht gestartet** festgelegt. Wenn Sie **Bearbeiten Antwort auf Angebotsanforderung,** klicken, wird der Status **Einkäufer aktualisiert** das Angebot gesendet wird. Klicken Sie auf **Übermitteln** , wenn Sie die Angebotsinformationen eingegeben haben. Der Antwortfortschrittsstatus wechselt zu **Versendet von Käufer.** Und auch wenn die Zusammenarbeit aktiviert ist, aktualisiert sich der  **Antwortfortschritt** , während der Kreditor mit dem Angebot interagiert. Der Status ändert sich dann von **Kreditor aktualisiert** zu **Versendet durch Kreditor**. Wenn das Angebot gesendet wird, wird eine Erfassung als **Eingegangen** erstellt. Die Antwort "(Angebot) muss übermittelt werden, damit sie als eingegangen erfasst werden, und nur dann kann sie weiter als angenommen oder abgelehnt erfasst werden.
+Wenn Sie eine Angebotsanforderung senden, wird automatisch ein Antwortblatt generiert. Da Sie Angebote auf eine Angebotsanforderung erhalten, müssen Sie diese über die Seite **Angebotsanforderung** eingegeben, indem Sie auf **Antwort auf Angebotsanforderung bearbeiten** klicken. Dies ermöglicht es Ihnen, eine Anngebotsinformationen in ein dediziertes Angebotsformular einzugeben. Zuerst ist der **Antwortfortschritt** auf **Nicht gestartet** festgelegt. Wenn Sie **Bearbeiten Antwort auf Angebotsanforderung,** klicken, wird der Status **Einkäufer aktualisiert** das Angebot gesendet wird. Klicken Sie auf **Übermitteln**, wenn Sie die Angebotsinformationen eingegeben haben. Der Antwortfortschrittsstatus wechselt zu **Versendet von Käufer.** Und auch wenn die Zusammenarbeit aktiviert ist, aktualisiert sich der  **Antwortfortschritt**, während der Kreditor mit dem Angebot interagiert. Der Status ändert sich dann von **Kreditor aktualisiert** zu **Versendet durch Kreditor**. Wenn das Angebot gesendet wird, wird eine Erfassung als **Eingegangen** erstellt. Die Antwort "(Angebot) muss übermittelt werden, damit sie als eingegangen erfasst werden, und nur dann kann sie weiter als angenommen oder abgelehnt erfasst werden.
 
 Wenn Sie das Angebot aktualisieren müssen, können Sie den gleichen Prozess durchlaufen wie oben und  erneut übermitteln.
 
 Beachten Sie, dass das Bearbeiten des Formulars **Angebotsanforderung** nur zu Informationszwecken erlaubt ist, die sich auf das Verarbeiten des Angebots bezieht, und nicht für die Eingabe des Angebots zulässig ist. Um die Antwort einzugeben oder zu ändern klicken Sie auf **Angebotsanforderung bearbeiten.**
 
-Wenn Sie die Angebotsinformationen eingeben, und wenn die Angebotsanforderungsanfrage alternative Positionen zulässt, können Sie alternative Positionen für Positionen hinzufügen, die nur eine Beschaffungskategorie keinen Katalogartikel ha en, die angegeben werden. Klicken Sie auf **Fügen Sie Alternative hinzu** , um alternative Positionen hinzuzufügen.
+Wenn Sie die Angebotsinformationen eingeben, und wenn die Angebotsanforderungsanfrage alternative Positionen zulässt, können Sie alternative Positionen für Positionen hinzufügen, die nur eine Beschaffungskategorie keinen Katalogartikel ha en, die angegeben werden. Klicken Sie auf **Fügen Sie Alternative hinzu**, um alternative Positionen hinzuzufügen.
 
 Wenn Sie eine Antwort eingegeben, aber ein neues Angebot vom Kreditor angefordert haben, können Sie die Angebotsanforderung erneut senden. Eine neue Erfassung und ein Bericht werden erstellt, die an den Kreditor übermittelt werden können.
 

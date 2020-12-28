@@ -16,11 +16,11 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012476"
+ms.locfileid: "4429013"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
@@ -41,7 +41,7 @@ In den verbleibenden Abschnitten dieses Themas wird beschrieben, wie Arbeitskrä
 
 ## <a name="all-jobs-tab"></a>Registerkarte alle Einzelvorgänge
 
-Die Registerkarte **Alle Einzelvorgänge** enthält eine Einzelauftragsliste, in der alle Produktionsjobs mit dem Status angezeigt werden *Nicht angefangen* , *Gestoppt* , oder *Gestartet*.
+Die Registerkarte **Alle Einzelvorgänge** enthält eine Einzelauftragsliste, in der alle Produktionsjobs mit dem Status angezeigt werden *Nicht angefangen*, *Gestoppt*, oder *Gestartet*.
 
 ![Registerkarte alle Einzelvorgänge](media/pfei-all-jobs-tab.png "Registerkarte alle Einzelvorgänge")
 
@@ -79,25 +79,25 @@ Arbeiter starten einen Produktions-Einzelvorgang, indem sie einen Einzelvorgang 
 
 ![Dialogfeld Einzelvorgang starten](media/pfei-start-job-dialog.png "Dialogfeld Einzelvorgang starten")
 
-Arbeitskräfte benutzen das Dialogfeld **Einzelvorgang starten** , um die Produktionsmenge zu bestätigen und dann den Einzelvorgang zu starten. Arbeitskräfte können die Menge anpassen, indem sie das Feld **Menge** auswählen und dann die numerische Tastatur verwenden, die angezeigt wird. Arbeitskräfte wählen **Start** , um mit dem Einzelvorgang zu beginnen. Das Dialogfeld **Einzelvorgang starten** wird geschlossen und der Einzelvorgang zur Registerkarte **Aktive Einzelvorgänge** hinzugefügt.
+Arbeitskräfte benutzen das Dialogfeld **Einzelvorgang starten**, um die Produktionsmenge zu bestätigen und dann den Einzelvorgang zu starten. Arbeitskräfte können die Menge anpassen, indem sie das Feld **Menge** auswählen und dann die numerische Tastatur verwenden, die angezeigt wird. Arbeitskräfte wählen **Start**, um mit dem Einzelvorgang zu beginnen. Das Dialogfeld **Einzelvorgang starten** wird geschlossen und der Einzelvorgang zur Registerkarte **Aktive Einzelvorgänge** hinzugefügt.
 
-Arbeitskräfte können einen Einzelvorgang starten, der sich in einem beliebigen Status befindet. Wenn ein Mitarbeiter einen Einzelvorgang mit dem Status beginnt *Nicht angefangen* , zeigt das Feld **Menge** im Dialogfeld **Einzelvorgang starten** zunächst die volle Menge an. Wenn eine Arbeitskraft einen Einzelvorgang mit dem Status beginnt *Gestartet* oder *Gestoppt* zeigt das Feld **Menge** zunächst die verbleibende Menge an.
+Arbeitskräfte können einen Einzelvorgang starten, der sich in einem beliebigen Status befindet. Wenn ein Mitarbeiter einen Einzelvorgang mit dem Status beginnt *Nicht angefangen*, zeigt das Feld **Menge** im Dialogfeld **Einzelvorgang starten** zunächst die volle Menge an. Wenn eine Arbeitskraft einen Einzelvorgang mit dem Status beginnt *Gestartet* oder *Gestoppt* zeigt das Feld **Menge** zunächst die verbleibende Menge an.
 
 ## <a name="reporting-good-quantities"></a>Gute Mengen melden
 
-Wenn ein Mitarbeiter einen Einzelvorgang abschließt oder teilweise abschließt, kann er gute Mengen melden, die durch Auswahl eines Einzelauftrages auf der Registerkarte **Aktive Einzelvorgänge** ausgewählt werden und dann **Fortschritt melden** auswählen. Im Dialogfeld **Fortschritt melden** gibt die Arbeitskraft dann die gute Menge über die Zifferntastatur ein. Die Menge ist standardmäßig leer. Nachdem eine Menge eingegeben wurde, kann die Arbeitskraft den Status des Einzelvorgangs auf *In Bearbeitung* , *Gestoppt* , oder *Abgeschlossen* aktualisieren.
+Wenn ein Mitarbeiter einen Einzelvorgang abschließt oder teilweise abschließt, kann er gute Mengen melden, die durch Auswahl eines Einzelauftrages auf der Registerkarte **Aktive Einzelvorgänge** ausgewählt werden und dann **Fortschritt melden** auswählen. Im Dialogfeld **Fortschritt melden** gibt die Arbeitskraft dann die gute Menge über die Zifferntastatur ein. Die Menge ist standardmäßig leer. Nachdem eine Menge eingegeben wurde, kann die Arbeitskraft den Status des Einzelvorgangs auf *In Bearbeitung*, *Gestoppt*, oder *Abgeschlossen* aktualisieren.
 
 ![Dialogfeld Fortschritt melden](media/pfei-report-progress-dialog.png "Dialogfeld Fortschritt melden")
 
 ## <a name="reporting-scrap"></a>Schrott melden
 
-Wenn ein Mitarbeiter einen Einzelvorgang abschließt oder teilweise abschließt, kann er Schrott melden, indem er den Einzelvorgang auf der Registerkarte **Aktive Einzelvorgänge** auswählt und dann **Schrott melden** auswählt. Im Dialogfeld **Schrott melden** gibt die Arbeitskraft dann die Schrottmengen über die Zifferntastatur ein. Die Arbeitskraft wählt auch einen Grund aus ( *Keiner* , *Maschine* , *Operator* , oder *Material* ).
+Wenn ein Mitarbeiter einen Einzelvorgang abschließt oder teilweise abschließt, kann er Schrott melden, indem er den Einzelvorgang auf der Registerkarte **Aktive Einzelvorgänge** auswählt und dann **Schrott melden** auswählt. Im Dialogfeld **Schrott melden** gibt die Arbeitskraft dann die Schrottmengen über die Zifferntastatur ein. Die Arbeitskraft wählt auch einen Grund aus (*Keiner*, *Maschine*, *Operator*, oder *Material*).
 
 ![Dialogfeld Schrott melden](media/pfei-report-scrap-dialog.png "Dialogfeld Schrott melden")
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Einen Einzelvorgang abschließen und einen neuen Einzelvorgang beginnen
 
-Normalerweise schließen Arbeitskräfte einen Einzelvorgang ab, indem sie einen oder mehrere aktuelle Einzelvorgänge auf der Registerkarte **Aktive Einzelvorgänge** auswählen und dann **Fortschritt melden** wählen. Sie geben dann die produzierte Menge (die gute Menge) ein und setzen den Status auf *Komplett*. Wenn mehr als ein Einzelvorgang ausgewählt wurde, verwendet ein Mitarbeiter die Schaltflächen **Zurück** und **Weiter** , um zwischen ihnen zu navigieren. Um einen neuen Einzelvorgang zu starten, wählt die Arbeitskraft auf der Registerkarte **Alle Einzelvorgänge** und wählt dann **Einzelvorgang starten**.
+Normalerweise schließen Arbeitskräfte einen Einzelvorgang ab, indem sie einen oder mehrere aktuelle Einzelvorgänge auf der Registerkarte **Aktive Einzelvorgänge** auswählen und dann **Fortschritt melden** wählen. Sie geben dann die produzierte Menge (die gute Menge) ein und setzen den Status auf *Komplett*. Wenn mehr als ein Einzelvorgang ausgewählt wurde, verwendet ein Mitarbeiter die Schaltflächen **Zurück** und **Weiter**, um zwischen ihnen zu navigieren. Um einen neuen Einzelvorgang zu starten, wählt die Arbeitskraft auf der Registerkarte **Alle Einzelvorgänge** und wählt dann **Einzelvorgang starten**.
 
 Eine Arbeitskraft kann auch einen neuen Einzelvorgang beginnen, während sein vorheriger Einzelvorgang noch offen ist. Um einen neuen Einzelvorgang zu starten, wählt die Arbeitskraft auf der Registerkarte erneut **Alle Einzelvorgänge** und wählt dann **Einzelvorgang starten**. In diesem Fall informiert das Dialogfeld **Einzelvorgang starten** die Arbeitskraft darüber, dass sie gerade an einem Einzelvorgang arbeitet und dass sie diesen Einzelvorgang daher entweder beenden oder abschließen muss, bevor sie den neuen Einzelvorgang startet.
 
@@ -139,7 +139,7 @@ Arbeitskräfte können ein Dokument öffnen, das an einen Einzelvorgang angehän
 [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) kann dazu beitragen, die Arbeitskräfte zu befähigen, indem praktisches Lernen unter Verwendung von Mixed Reality angeboten wird. Sie können standardisierte Prozesse mit schrittweisen Anweisungen definieren, die Ihre Arbeitskräfte zu den benötigten Werkzeugen und Teilen führen und den Arbeitskräften zeigen, wie sie diese Werkzeuge in realen Arbeitssituationen einsetzen können. Hier ein Überblick über den Prozess.
 
 1. Immer, wenn eine Arbeitskraft eine Einzelvorgangsliste auf der Produktionsausführungsoberfläche öffnet, zeigt die Schnittstelle alle relevanten Anleitungen für die angezeigten Einzelvorgänge an.
-1. Die Arbeitskraft wählt **Anleitungen** , um die Liste der Anleitungen anzuzeigen.
+1. Die Arbeitskraft wählt **Anleitungen**, um die Liste der Anleitungen anzuzeigen.
 1. Die Arbeitskraft wählt einen relevanten Leitfaden in der Liste aus.
 1. Die Produktionsausführungsoberfläche zeigt einen QR-Code für die ausgewählte Anleitung an.
 1. Die Arbeitskraft nimmt eine HoloLens und wirft einen Blick auf den QR-Code, um die Anleitung zu starten.

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c7fb37483412fdd09fe3734ddb148b050ec02951
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986973"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428637"
 ---
 # <a name="formulas-and-formula-versions"></a>Formeln und Formelversionen
 
@@ -70,4 +70,4 @@ Sie können mehr Steuerungsdimensionen le hinzufügen, indem Sie die Funktion f�
 Die Funktion Skalierbar ist nur verfügbar, wenn nur alle Artikelkomponenten in der Formel auf **Variabler Verbrauch** werden. Die Funktion ist nicht verfügbar, wenn Artikelkomponenten auf **Fester Verbrauch** oder **Verbrauch pro Schritt** festgelegt werden. Wenn die Funktion Skalierbar verwendet wird, wenn Sie eine Substanz in einer Formel ändern, wird die Menge der anderen Substanz, die Sie ausgewählt haben, angepasst. Die Größe der Formel wird auch angepasst. Ebenso wenn Sie die Formelgröße ändern, wird die Menge aller skalierbare Substanzen geändert. Diese Funktion dient speziell für die Formelerstellung und Verwaltung. Sie gibt nicht an, ob die Menge des Inhaltsstoffs nach oben oder unten in einem Chargenauftrag skaliert wird.
 
 ## <a name="use-step-consumption"></a>Verbrauch pro Serie
-Schrittverbrauch beseitigt die Menge auf der **Formelposition**,den Sie für eine Substanz eingeben müssen. Stattdessen wird der  Schrittverbrauch konfiguriert, sodass dieser den **Von Serie**Wert und eine **Menge** besitzt. Auf Basis der Chargenauftragsmenge werden die Informationen aus dem Schritt pro Serie, der die Menge befriedigt, ausgewählt Schrittverbrauch ist hilfreich, wenn der Verbrauchssatz nicht linear in Bezug auf die Chargenauftraggröße ist und die Anforderung nur erhöht, wenn ein bestimmter Mengenschwellenwert erfüllt wird. Um diese Funktion für eine neue Formel, unter der Gruppe **Verbrauchsberechnung** zu aktivieren,ändern Sie die Formeleinstellung für den betreffenden Inhaltsstoff von **Standard** auf **Schritt** Sie können dieser Verbrauchsmethode auf der Registerkarte**Einstellungen** auf der Seite **Formelposition** anzeigen.
+Schrittverbrauch beseitigt die Menge auf der **Formelposition**,den Sie für eine Substanz eingeben müssen. Stattdessen wird der  Schrittverbrauch konfiguriert, sodass dieser den **Von Serie** Wert und eine **Menge** besitzt. Auf Basis der Chargenauftragsmenge werden die Informationen aus dem Schritt pro Serie, der die Menge befriedigt, ausgewählt Schrittverbrauch ist hilfreich, wenn der Verbrauchssatz nicht linear in Bezug auf die Chargenauftraggröße ist und die Anforderung nur erhöht, wenn ein bestimmter Mengenschwellenwert erfüllt wird. Um diese Funktion für eine neue Formel, unter der Gruppe **Verbrauchsberechnung** zu aktivieren,ändern Sie die Formeleinstellung für den betreffenden Inhaltsstoff von **Standard** auf **Schritt** Sie können dieser Verbrauchsmethode auf der Registerkarte **Einstellungen** auf der Seite **Formelposition** anzeigen.

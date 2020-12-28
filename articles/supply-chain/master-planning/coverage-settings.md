@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b1134f734f1025151a56b2a72266a6baa5763ba4
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982719"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428949"
 ---
 # <a name="coverage-settings"></a>Deckungseinstellungen
 
@@ -40,7 +40,7 @@ Sie können Deckungseinstellungen auf verschiedene Arten angeben:
 
 - Angeben der Dispositionseinstellungen für ein Produkt.
 
-    Sie haben die Möglichkeit zum Erstellen von Deckungseinstellungen für ein bestimmtes Produkt. Wechseln Sie zu **Produktinformationsverwaltung &gt; Produkte &gt;Freigegebene Produkte**. Wählen Sie das Produkt und dann im Aktivitätenbereich in der Registerkarte **Plan** in der Gruppe**Abdeckung** und wählen Sie **Artikelabdeckung**, um die Seite **Artikelabdeckung** zu öffnen. Ist das Produkt bereits mit einer Dispositionsgruppe verknüpft, können die Einstellungen der Deckungsgruppe mithilfe des Felds **Überschreiben** überschrieben werden. Die Dispositionseinstellungen auf der Seite **Artikeldeckung** haben Vorrang vor den Einstellungen auf der Seite **Dispositionssteuerungsgruppe**.
+    Sie haben die Möglichkeit zum Erstellen von Deckungseinstellungen für ein bestimmtes Produkt. Wechseln Sie zu **Produktinformationsverwaltung &gt; Produkte &gt;Freigegebene Produkte**. Wählen Sie das Produkt und dann im Aktivitätenbereich in der Registerkarte **Plan** in der Gruppe **Abdeckung** und wählen Sie **Artikelabdeckung**, um die Seite **Artikelabdeckung** zu öffnen. Ist das Produkt bereits mit einer Dispositionsgruppe verknüpft, können die Einstellungen der Deckungsgruppe mithilfe des Felds **Überschreiben** überschrieben werden. Die Dispositionseinstellungen auf der Seite **Artikeldeckung** haben Vorrang vor den Einstellungen auf der Seite **Dispositionssteuerungsgruppe**.
 
 - Angeben der Deckungseinstellungen für ein Produkt mithilfe eines Assistenten.
 

@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7a71ea3983018b136d4fe3b22eadc0c332d2a698
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016446"
+ms.locfileid: "4429073"
 ---
 # <a name="set-up-shipping-carriers"></a>Spediteure einrichten
 
@@ -42,7 +42,7 @@ In diesem Thema erfahren Sie, wie Sie einen Spediteur einrichten und Details wie
 1. Schaltet die Erweiterung des Abschnitts **Übersicht** um.
 2. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Spediteur aktivieren**.
 3. Wählen Sie im Feld **Lieferantenkonto** eine Option aus dem Dropdown-Menü. Wählen Sie das Kreditorenkonto aus, das dem Spediteur zugeordnet werden soll.  
-4. Wählen Sie im Feld **Transportausschreibungstyp** eine Option aus. Wählen Sie **Manuell** , um die Seite Transportausschreibung zu verwenden, oder wählen Sie **EDI** , um die Ausschreibung über Electronic Data Interchange (EDI) zu aktualisieren.  
+4. Wählen Sie im Feld **Transportausschreibungstyp** eine Option aus. Wählen Sie **Manuell**, um die Seite Transportausschreibung zu verwenden, oder wählen Sie **EDI**, um die Ausschreibung über Electronic Data Interchange (EDI) zu aktualisieren.  
 5. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Spediteur-Rating aktivieren**.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Erstellen Sie die erforderlichen Dienstleistungen für den Spediteur

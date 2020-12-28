@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5dc6a38b1a9eebdee64762671bb501e5e1294399
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018258"
+ms.locfileid: "4429080"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Externen Katalog für PunchOut-E-Procurement einrichten
 
@@ -45,7 +45,7 @@ Der externe Katalog sollte einem Mitarbeiter, der eine Bestellanforderung eingib
 2. Registrieren von Kreditoren in Supply Chain Management. Bevor Sie Konfigurationen für den Zugriff auf einen externen Lieferantenkatalog einrichten können, müssen Sie zuerst den Lieferanten und den Lieferantenkontakt in Microsoft Dynamics 365 einrichten. Der externe Lieferantenkatalog muss auch der ausgewählten Beschaffungskategorie zugeordnet werden. Weitere Informationen zum Registrieren von Kreditoren finden Sie unter Benutzer [für Kreditorenzusammenarbeit verwalten](manage-vendor-collaboration-users.md). Informationen zum Einrichten einer Beschaffungskategoriehierarchie und zum Zuordnen der Warencodes zu einer Beschaffungskategorie finden Sie unter [Lieferanten bestimmten Beschaffungskategorien zuweisen](tasks/approve-vendors-specific-procurement-categories.md).
 3. Stellen Sie sicher, dass die Maßeinheiten und die Währung, die vom Lieferanten verwendet werden, eingerichtet werden. Informationen zum Anlegen einer Mengeneinheit finden Sie unter [Mengeneinheit verwalten](../pim/tasks/manage-unit-measure.md).
 4. Konfigurieren Sie den externen Lieferantenkatalog anhand der Anforderungen an die externe Katalogwebsite des Lieferanten. Genauere Informationen zu dieser Aufgabe finden Sie unter [Konfigurieren des externen Lieferantenkataloge](#configure-the-external-vendor-catalog).
-5. Testen Sie die Konfigurationen des externen Lieferantenkatalogs. Überprüfen Sie dabei, ob die Einstellungen funktionieren und Sie auf den Katalog zugreifen können. Verwenden Sie die Aktion **Einstellungen überprüfen** , um die angeforderte Nachricht aufzusetzen. Diese Nachricht soll Kreditorendie auf die externe Katalogwebsite leiten, die in einem Browserfenster geöffnet wird. Während der Prüfungs können Sie keine Artikel und Dienstleistungen beim Lieferanten bestellen. Zum Bestellen von Artikeln oder Dienstleistungen müssen Sie auf die Bestellanforderung des Lieferanten zugreifen.
+5. Testen Sie die Konfigurationen des externen Lieferantenkatalogs. Überprüfen Sie dabei, ob die Einstellungen funktionieren und Sie auf den Katalog zugreifen können. Verwenden Sie die Aktion **Einstellungen überprüfen**, um die angeforderte Nachricht aufzusetzen. Diese Nachricht soll Kreditorendie auf die externe Katalogwebsite leiten, die in einem Browserfenster geöffnet wird. Während der Prüfungs können Sie keine Artikel und Dienstleistungen beim Lieferanten bestellen. Zum Bestellen von Artikeln oder Dienstleistungen müssen Sie auf die Bestellanforderung des Lieferanten zugreifen.
 6. Aktivieren Sie den externen Katalog, indem Sie die Schaltfläche **Katalog aktivieren** auf der Seite **Externe Kataloge** verwenden. Der externe Katalog muss aktiviert werden, bevor ihn Mitarbeiter verwenden können. Sie können jederzeit den externen Katalog deaktivieren.
 
 
@@ -58,7 +58,7 @@ Dieser Abschnitt spezifiziert Informationen zur Aufgabe 4 im vorherigen Abschnit
 3. Wählen Sie aus, ob auf der Website die externe Katalogwebsite des Lieferanten im selben Browserfenster erscheinen soll, in dem der Mitarbeiter die Anforderung erstellt hat oder ob sie in einem neuen Fenster geöffnet wird.
 4. Wählen Sie den Lieferant für den Katalog aus. In der Liste **Juristische Personen** gibt es eine Zeile für jede juristische Person, in der der Kreditor eingerichtet wurde. Um Benutzer zu erlauben, Produkte direkt aus dem Lieferantenkatalog von gewissen juristischen Personen zu bestellen aber nicht von allen, können Sie die Schaltfläche **Zugriff sperren** oder **Zugriff ermöglichen** für jede juristische Person verwenden, für den der Katalog verfügbar oder nicht verfügbar sein soll.
 5. Geben Sie im Feld **Standardvervall (Tage)** ein, wie viele Tage ein Angebot gültig ist und beim externen Kreditor erworben werden kann. Wird ein Angebot erstellt und von der externen Katalogwebsite des Lieferanten abgerufen, gilt das Angebot ab dem aktuellen Systemdatum und bleibt für die in diesem Feld eingegebene Anzahl an Tagen gültig.
-6. Klicken Sie auf die Schaltfläche **Hinzufügen** , um die Zuordnung der Beschaffungskategorien dem externen Katalog zu starten. Wählen Sie anschließend aus der Kategorieliste eine Kategorie aus. Die Liste der Kategorien ist eine Obermenge der Beschaffungskategorien, die dem Lieferant in allen juristischen Personen zugeordnet wurde, die für den Kreditor eingerichtet werden.
+6. Klicken Sie auf die Schaltfläche **Hinzufügen**, um die Zuordnung der Beschaffungskategorien dem externen Katalog zu starten. Wählen Sie anschließend aus der Kategorieliste eine Kategorie aus. Die Liste der Kategorien ist eine Obermenge der Beschaffungskategorien, die dem Lieferant in allen juristischen Personen zugeordnet wurde, die für den Kreditor eingerichtet werden.
 
     > [!NOTE]
     > Beschaffungspolitische Richtlinien werden verwendet, um den Zugriff zu den Kategorien für die kaufende juristische Person oder Empfangsorganisationseinheit zuzulassen oder einzuschränken. Punchout auf einem externen Katalog setzt voraus, dass der Zugriff mit mindestens einer Beschaffungskategorien zulässig ist, die dem Katalog zugeordnet ist.

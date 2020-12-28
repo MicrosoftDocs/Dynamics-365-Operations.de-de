@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 9332e45f7213ed815e4417969b617256778598db
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017804"
+ms.locfileid: "4429112"
 ---
 # <a name="wave-step-codes"></a>Wellenschrittcodes
 
@@ -40,7 +40,7 @@ Wellenschrittcodes für einen bestimmten Wellenschritttyp werden auf einer separ
 
 ## <a name="setup-demo"></a>Demo einrichten 
 
-Für diese Vorführung müssen Demodaten eingerichtet werden, und Sie müssen das **USMF** -Demodatunternehmen verwenden.
+Für diese Vorführung müssen Demodaten eingerichtet werden, und Sie müssen das **USMF**-Demodatunternehmen verwenden.
 
 ### <a name="enable-wave-step-codes"></a>Wellenschrittcodes aktivieren
 
@@ -59,7 +59,7 @@ Während der Aktivierung werden Überprüfungen während der Datenaktualisierung
 
 Nachdem Sie alle Konflikte behoben haben, die während der Überprüfung aufgetreten sind, können Sie erneut versuchen, die Funktion zu aktivieren.
 
-Wenn die Funktion aktiviert wurde, wird die Seite **Wellenschrittcodes** ( **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenschrittcodes** ) verfügbar. Auf dieser Seite werden die Wellenschrittcodes aufgelistet, die aktualisiert wurden, als die Funktion „Organisationsweiter Wellenschrittcode“ aktiviert wurde.
+Wenn die Funktion aktiviert wurde, wird die Seite **Wellenschrittcodes** (**Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenschrittcodes**) verfügbar. Auf dieser Seite werden die Wellenschrittcodes aufgelistet, die aktualisiert wurden, als die Funktion „Organisationsweiter Wellenschrittcode“ aktiviert wurde.
 
 ### <a name="create-new-wave-step-codes"></a>Erstellen neuer Wellenschrittcodes
 
@@ -85,10 +85,10 @@ Die Vorlagen in dieser Liste werden angewendet, wenn auf sie aus einer Wellenpro
 
 Die folgenden Prozedurhilfen stellen sicher, dass die Wiederbeschaffungsvorlage, die Sie erstellt haben, auf die Wellenvorlage angewendet wird.
 
-1. Navigieren Sie zu **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenschrittcodes** , und erstellen Sie einen Wellenschrittcode für den Typ **Wiederbeschaffung**.
-2. Navigieren Sie zu **Lagerortverwaltung \> Einstellungen \> Wiederbeschaffung \> Wiederbeschaffungsvorlagen** , und erstellen Sie eine Wiederbeschaffungsvorlage.
+1. Navigieren Sie zu **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenschrittcodes**, und erstellen Sie einen Wellenschrittcode für den Typ **Wiederbeschaffung**.
+2. Navigieren Sie zu **Lagerortverwaltung \> Einstellungen \> Wiederbeschaffung \> Wiederbeschaffungsvorlagen**, und erstellen Sie eine Wiederbeschaffungsvorlage.
 3. In der Wiederbeschaffungsvorlage wählen Sie den Wellenschrittcode aus, den Sie für die Art haben **Wiederbeschaffung**
-4. Navigieren Sie zu **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenvorlagen** , und wählen Sie die Wellenvorlage aus, die Sie verwenden möchten.
+4. Navigieren Sie zu **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenvorlagen**, und wählen Sie die Wellenvorlage aus, die Sie verwenden möchten.
 5. In der Vorlage auf dem Inforegister **Methoden** wählen Sie die Methode **Wiederbeschaffung**.
 6. Im Feld **Wellenschrittcode** wählen Sie den Wellenschrittcode aus, den Sie für die Wiederbeschaffungsvorlage ausgewählt haben.
 

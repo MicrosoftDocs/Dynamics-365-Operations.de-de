@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017160"
+ms.locfileid: "4429026"
 ---
 # <a name="location-product-dimension-mixing"></a>Lagerplatz-Produktdimensionsmischung
 
@@ -79,7 +79,7 @@ Jedem Standort im Lagerort muss ein Lagerplatzprofil zugeordnet sein, das die Ei
 ### <a name="release-products-to-the-usmf-company"></a>Produkte für USMF-Unternehmen freigeben
 
 1. Wählen Sie im Aktivitätsbereich **Produkte freigeben** aus.
-1. Bestätigen Sie auf der Seite **Produkte zum Freigeben auswählen** , dass die Produktnummer *B0001* in der Liste ist, und wählen Sie dann **Weiter** aus.
+1. Bestätigen Sie auf der Seite **Produkte zum Freigeben auswählen**, dass die Produktnummer *B0001* in der Liste ist, und wählen Sie dann **Weiter** aus.
 1. Wählen Sie **Weiter** aus, um die freizugebenden Produktvarianten zu bestätigen.
 1. Wählen Sie auf der Seite **Unternehmen für die Freigabe auswählen** die Option *USMF* und dann **Weiter** aus, um die Auswahl zu bestätigen.
 1. Wählen Sie auf der Seite **Auswahl bestätigen** die Option **Fertig** aus, um die Veröffentlichung abzuschließen.
@@ -88,8 +88,8 @@ Jedem Standort im Lagerort muss ein Lagerplatzprofil zugeordnet sein, das die Ei
 
 ### <a name="update-a-released-product-in-the-usmf-company"></a>Freigegebenes Produkt in USMF-Unternehmen aktualisieren
 
-1. Stellen Sie sicher, dass Sie beim **USMF** -Unternehmen angemeldet sind.
-1. Gehen Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte** , um die Erstellung des freigegebenen Produkts abzuschließen.
+1. Stellen Sie sicher, dass Sie beim **USMF**-Unternehmen angemeldet sind.
+1. Gehen Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**, um die Erstellung des freigegebenen Produkts abzuschließen.
 1. Suchen und wählen Sie die Artikelnummer *B0001* aus, um die Seite **Details für freigegebene Produkte** zu öffnen.
 1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
 1. Stellen Sie im Inforegister **Allgemein** sicher, dass das Feld **Artikelmodellgruppe** auf *FIFO* festgelegt ist.
@@ -173,11 +173,11 @@ Jedem Standort im Lagerort muss ein Lagerplatzprofil zugeordnet sein, das die Ei
 
 Dieses Demoszenario zeigt, wie zwei verschiedene Produktvarianten an denselben Lagerplatz platziert werden können, wenn das Lagerplatzprofil keine gemischten Artikel zulässt, aber die Funktion *Lagerplatz-Produktdimensionsmischung* aktiviert ist. In diesem Fall verwenden Sie die Variante **Größe** als Kriterium.
 
-Bevor Sie beginnen, stellen Sie sicher, dass sich im Lagerort *24* leere Lagerplätze befinden, die das *BULK* -Lagerplatzprofil verwenden.
+Bevor Sie beginnen, stellen Sie sicher, dass sich im Lagerort *24* leere Lagerplätze befinden, die das *BULK*-Lagerplatzprofil verwenden.
 
 ### <a name="create-a-purchase-order"></a>Eine Bestellung erstellen
 
-Sie erstellen eine Bestellung mit drei Positionen: zwei Positionen für dieselbe Produktnummer, jedoch unterschiedliche **Größe** -Varianten und eine dritte Position für ein anderes Produkt ohne Varianten.
+Sie erstellen eine Bestellung mit drei Positionen: zwei Positionen für dieselbe Produktnummer, jedoch unterschiedliche **Größe**-Varianten und eine dritte Position für ein anderes Produkt ohne Varianten.
 
 1. Wechseln Sie zu **Kreditorenkonten \> Bestellungen \> Alle Bestellungen**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
@@ -212,11 +212,11 @@ Sie erstellen eine Bestellung mit drei Positionen: zwei Positionen für dieselbe
 1. Melden Sie sich bei der Warehouse-App als Benutzer an, der für den Lagerort *24* aktiviert ist.
 1. Wählen Sie das Menü **Eingehend**.
 1. Wählen Sie **PO-Positionsempfang**.
-1. Wählen Sie das Feld **PONUM** , und geben Sie dann die Bestellnummer ein.
+1. Wählen Sie das Feld **PONUM**, und geben Sie dann die Bestellnummer ein.
 1. Bestätigen Sie Ihre Eingabe, indem Sie auf die Schaltfläche zum Bestätigen (✔) unten auf der Seite klicken.
-1. Geben Sie die Positionsnummer aus der Bestellung ein, die eingeht. Wählen Sie das Feld **LINENUM** , und verwenden Sie dann das Nummernpad, um *1* einzugeben.
+1. Geben Sie die Positionsnummer aus der Bestellung ein, die eingeht. Wählen Sie das Feld **LINENUM**, und verwenden Sie dann das Nummernpad, um *1* einzugeben.
 1. Bestätigen Sie Ihre Eingabe.
-1. Geben Sie die zu empfangende Menge ein. Wählen Sie zweimal das Pluszeichen ( **+** ) aus, um den Wert im Feld **Menge** auf *2* zu erhöhen.
+1. Geben Sie die zu empfangende Menge ein. Wählen Sie zweimal das Pluszeichen (**+**) aus, um den Wert im Feld **Menge** auf *2* zu erhöhen.
 1. Registrieren Sie Ihren Eintrag, indem Sie auf die Schaltfläche (✔) unten auf der Seite klicken, und bestätigen Sie Ihre Eingabe, indem Sie erneut auf die Schaltfläche (✔) klicken.
 1. Zeigen Sie die Informationen auf der Seite **Bestellungen: Einlagern** an. Diese Seite zeigt die Arbeit, die für die Einlagerung erstellt wurde (Arbeit 1).
 
@@ -229,7 +229,7 @@ Sie erstellen eine Bestellung mit drei Positionen: zwei Positionen für dieselbe
 
 1. Wiederholen Sie erneut die Schritte 4 bis 11 für die Bestellposition 2. Geben Sie in Schritt 8 die verbleibende Menge von *1* an.
 
-    Neue Einlagerungsarbeiten (Arbeit 3) werden an demselben Lagerplatz wie Arbeit 1 und Arbeit 2 erstellt. Dieses Verhalten tritt auf, weil die Lagerplatzrichtlinienstrategie *Konsolidieren* verwendet wird, und die Einrichtung im Inforegister **Produktdimensionsmischung zulässig** in den **Lagerplatzprofilen** *Bulk* ermöglicht die **Größe** -Variante, die an einem Lagerplatzprofil gemischt werden soll.
+    Neue Einlagerungsarbeiten (Arbeit 3) werden an demselben Lagerplatz wie Arbeit 1 und Arbeit 2 erstellt. Dieses Verhalten tritt auf, weil die Lagerplatzrichtlinienstrategie *Konsolidieren* verwendet wird, und die Einrichtung im Inforegister **Produktdimensionsmischung zulässig** in den **Lagerplatzprofilen** *Bulk* ermöglicht die **Größe**-Variante, die an einem Lagerplatzprofil gemischt werden soll.
 
 1. Wiederholen Sie die Schritte 4 bis 11 für die Bestellposition 3. Geben Sie in Schritt 8 eine Menge von *1* für Artikelnummer *A0001* an.
 

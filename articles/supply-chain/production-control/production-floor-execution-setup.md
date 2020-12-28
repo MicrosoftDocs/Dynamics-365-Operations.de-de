@@ -16,11 +16,11 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 57f09bf907407e19ae0e693de64510f7f4efbf0b
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012478"
+ms.locfileid: "4429012"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Gerät zum Ausführen der Produktionsausführungsoberfläche einrichten
 
@@ -45,8 +45,8 @@ Um die Konfigurations- und Auftragsfilter für ein Gerät festzulegen, melden Si
 1. Wählen Sie einen oder mehrere Filter aus, die auf das aktuelle Gerät angewendet werden sollen. Diese Filter stellen sicher, dass nur relevante Jobs auf dem Gerät angezeigt werden. Um einen Filter festzulegen, wählen Sie den Filtertyp aus, um eine Liste von Werten zu öffnen, und wählen Sie dann den Wert aus, nach dem gefiltert werden soll. Folgende Filter sind verfügbar:
 
     - **Produktionseinheit** – Dieser Filter ist der Filter der höchsten Ebene. Er bezieht sich normalerweise auf einen großen Arbeitsbereich, der mehrere Ressourcengruppen und einzelne Ressourcen enthält.
-    - **Ressourcengruppe** – Dieser Filter ist ein Filter mittlerer Stufe. Es bezieht sich normalerweise auf eine Sammlung verwandter Ressourcen in einem begrenzten Bereich des Arbeitsbereichs. Wenn Sie zuerst einen **Produktionseinheit** -Filter auswählen, zeigt die Liste der Ressourcengruppen nur Gruppen von dieser Einheit. Andernfalls werden alle verfügbaren Ressourcengruppen angezeigt.
-    - **Ressource** – Dieser Filter ist der spezifischste Filter. Er bezieht sich normalerweise auf eine bestimmte Maschine oder eine andere einzelne Ressource. Wenn Sie zuerst einen **Ressourcengruppen** und/oder einen **Produktionseinheits** -Filter auswählen, zeigt die Liste der Ressourcen nur Ressourcen aus dieser Gruppe und/oder Einheit. Sonst werden alle verfügbaren Ressourcen angezeigt.
+    - **Ressourcengruppe** – Dieser Filter ist ein Filter mittlerer Stufe. Es bezieht sich normalerweise auf eine Sammlung verwandter Ressourcen in einem begrenzten Bereich des Arbeitsbereichs. Wenn Sie zuerst einen **Produktionseinheit**-Filter auswählen, zeigt die Liste der Ressourcengruppen nur Gruppen von dieser Einheit. Andernfalls werden alle verfügbaren Ressourcengruppen angezeigt.
+    - **Ressource** – Dieser Filter ist der spezifischste Filter. Er bezieht sich normalerweise auf eine bestimmte Maschine oder eine andere einzelne Ressource. Wenn Sie zuerst einen **Ressourcengruppen** und/oder einen **Produktionseinheits**-Filter auswählen, zeigt die Liste der Ressourcen nur Ressourcen aus dieser Gruppe und/oder Einheit. Sonst werden alle verfügbaren Ressourcen angezeigt.
 
 1. Wählen Sie **OK**.
 1. Die Anmeldeseite wird angezeigt und Ihr Gerät ist betriebsbereit.

@@ -4,7 +4,7 @@ description: Dieses Thema bietet einen Überblick über die Funktionen, die Numm
 author: GarmMSFT
 manager: tfehr
 ms.date: 06/10/2020
-ms.topic: configure-number-sequence-extensions
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: cee5047a8c80aa850d9dd1bb872188a822ba8328
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016124"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4429145"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Nummernkreise für Lagerflows konfigurieren
 
@@ -64,7 +64,7 @@ Führen Sie die folgenden Schritte aus, um Nummernfolgenerweiterungen in Ihrem S
     Weitere Informationen zum Anpassen dieser Standardnummernkreise und/oder zum Hinzufügen neuer Nummernkreise finden Sie im nächsten Abschnitt. Sie können jede dieser Sequenzen auch entfernen, wenn Sie sie nicht benötigen.
 
 1. Kehren Sie zurück zu **Lagerortverwaltung \> Setup \> Lagerort-Verwaltungsparameter**.
-1. Auf der Registerkarte **Nummernkreise** wählen Sie eine relevante Nummernkreiserweiterung aus, um damit Nummern für Ihre Kennzeichen-IDs, Wellenetikett-IDs, Container-IDs (in diesem Fall wählen Sie den entsprechenden **SSCC-18-Nummern** -Kreis aus) und/oder Frachtbrief-IDs (in diesem Fall wählen Sie den **Frachtbrief** -Nummernkreis aus) zu generieren. Standardmäßig werden Nummernkreisweiterungen nur für diese vier ID-Typen unterstützt.
+1. Auf der Registerkarte **Nummernkreise** wählen Sie eine relevante Nummernkreiserweiterung aus, um damit Nummern für Ihre Kennzeichen-IDs, Wellenetikett-IDs, Container-IDs (in diesem Fall wählen Sie den entsprechenden **SSCC-18-Nummern**-Kreis aus) und/oder Frachtbrief-IDs (in diesem Fall wählen Sie den **Frachtbrief**-Nummernkreis aus) zu generieren. Standardmäßig werden Nummernkreisweiterungen nur für diese vier ID-Typen unterstützt.
 
 Wenn das nächste Mal eine neue Nummer für eine dieser Nummernkreise generiert wird, wird die neue Logik verwendet.
 
@@ -85,10 +85,10 @@ Führen Sie die folgenden Schritte aus, um Nummernkreise zu erstellen und zu bea
     | Segmenttyp | Beschreibung |
     |---|---|
     | Konstante | Dieser Segmenttyp fügt für jede generierte Zahl im Nummernkreis denselben konstanten Text hinzu. Geben Sie den Text im Feld **Wert** den erforderlichen Text ein. Das Feld **Länge** wird automatisch auf die Länge des Textes aktualisiert, den Sie in das Feld **Wert** eingegeben haben. |
-    | Nummernkreis | Geben Sie im Feld **Wert** ein Nummernzeichen ( *\#* ) für jedes Zeichen ein, das im generierten Nummernkreis angezeigt werden soll. Der Nummernkreis selbst generiert möglicherweise längere Zahlen, es werden jedoch nur die Zeichen ganz rechts angezeigt. Das Feld **Länge** wird automatisch auf die Zahl der Nummernzeichen aktualisiert, die Sie in das Feld **Wert** eingegeben haben.<p>Stellen Sie sicher, dass die Länge dieses Segments 16 minus der Länge Ihres GS1-Präfixes beträgt, um die GS1-Anforderungen für SSCC-18-Nummern zu erfüllen.</p> |
+    | Nummernkreis | Geben Sie im Feld **Wert** ein Nummernzeichen (*\#*) für jedes Zeichen ein, das im generierten Nummernkreis angezeigt werden soll. Der Nummernkreis selbst generiert möglicherweise längere Zahlen, es werden jedoch nur die Zeichen ganz rechts angezeigt. Das Feld **Länge** wird automatisch auf die Zahl der Nummernzeichen aktualisiert, die Sie in das Feld **Wert** eingegeben haben.<p>Stellen Sie sicher, dass die Länge dieses Segments 16 minus der Länge Ihres GS1-Präfixes beträgt, um die GS1-Anforderungen für SSCC-18-Nummern zu erfüllen.</p> |
     | GS1-Präfix | Dieser Segmenttyp fügt den Wert hinzu, der im Feld **GS1-Unternehmenspräfix** auf der Seite **Lagerort-Verwaltungsparameter** festgelegt ist. Das Feld **Wert** zeigt den Wert an, der auf der Seite **Lagerort-Verwaltungsparameter** festgelegt ist und das Feld **Länge** zeigt die Anzahl der Zeichen im Wert an. Sowohl das Feld **Wert** als auch das Feld **Länge** sind schreibgeschützt. |
     | Anwendungskennung | Im Feld **Wert** geben Sie einen Anwendungsbezeichner ein, der durch die relevante GS1-Richtlinie für diesen Typ von Nummernkreis angegeben ist. Geben Sie zum Beispiel *00* für SSCC oder *420* für Frachtbrief ein. Das Feld **Länge** wird automatisch auf die Länge des Bezeichners aktualisiert, den Sie in das Feld **Wert** eingegeben haben. |
-    | Verpackungstyp | Für Elemente, die eindeutig identifiziert werden können, fügt dieser Segmenttyp einen Feldwert aus der entsprechenden Einheitsnummernkreisgruppe (von der Seite **Einheitsnummernkreisgruppen** ) hinzu. (Dieses Verhalten entspricht der vorhandenen Logik für Kennzeichen-IDs.) Bei Kennzeichen, die mehrere Lagermengeneinheiten (SKUs) enthalten, fügt dieser Segmenttyp *0* (Null) standardmäßig hinzu. Für diesen Segmenttyp wird das Feld **Wert** immer auf *P* festgelegt, und das Feld **Länge** wird immer auf *1* festgelegt.|
-    | Prüfziffer | Dieser Segmenttyp fügt eine Prüfziffer hinzu, bei der es sich um eine Modulo 10-Berechnung handelt. (Dieses Verhalten entspricht der vorhandenen Logik für Kennzeichen-IDs.) Für diesen Segmenttyp wird das Feld **Wert** immer auf ein Caretzeichen festgelegt ( *^* ), und das Feld **Länge** wird immer auf *1* festgelegt. |
+    | Verpackungstyp | Für Elemente, die eindeutig identifiziert werden können, fügt dieser Segmenttyp einen Feldwert aus der entsprechenden Einheitsnummernkreisgruppe (von der Seite **Einheitsnummernkreisgruppen**) hinzu. (Dieses Verhalten entspricht der vorhandenen Logik für Kennzeichen-IDs.) Bei Kennzeichen, die mehrere Lagermengeneinheiten (SKUs) enthalten, fügt dieser Segmenttyp *0* (Null) standardmäßig hinzu. Für diesen Segmenttyp wird das Feld **Wert** immer auf *P* festgelegt, und das Feld **Länge** wird immer auf *1* festgelegt.|
+    | Prüfziffer | Dieser Segmenttyp fügt eine Prüfziffer hinzu, bei der es sich um eine Modulo 10-Berechnung handelt. (Dieses Verhalten entspricht der vorhandenen Logik für Kennzeichen-IDs.) Für diesen Segmenttyp wird das Feld **Wert** immer auf ein Caretzeichen festgelegt (*^*), und das Feld **Länge** wird immer auf *1* festgelegt. |
 
 1. Um ein Beispiel für Ihr endgültiges Zahlenformat anzuzeigen, überprüfen Sie das Feld **Format** am unteren Rand des Inforegisters **Segmente**.

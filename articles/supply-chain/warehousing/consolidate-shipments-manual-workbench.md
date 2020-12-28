@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 1eec1a8e3a9a2a0f95302e1d6ea68eb90b9a3b93
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016815"
+ms.locfileid: "4429045"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Lieferungen mithilfe der Workbench zur Lieferungskonsolidierung konsolidieren
 
@@ -44,13 +44,13 @@ Bevor Sie die Funktion *Manuelle Lieferungskonsolidierung* verwenden können, m�
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Manuelle Lieferungskonsolidierung*
 
-Wie unter [Richtlinien zur Lieferungskonsolidierung konfigurieren](configure-shipment-consolidation-policies.md) erwähnt, müssen Sie auch die *Lieferung konsolidieren* -Funktion einschalten, bevor Sie Richtlinien erstellen können. Sie sollten diesen Schritt jedoch bereits abgeschlossen haben.
+Wie unter [Richtlinien zur Lieferungskonsolidierung konfigurieren](configure-shipment-consolidation-policies.md) erwähnt, müssen Sie auch die *Lieferung konsolidieren*-Funktion einschalten, bevor Sie Richtlinien erstellen können. Sie sollten diesen Schritt jedoch bereits abgeschlossen haben.
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Erstellen Sie die Kundenaufträge für dieses Szenario
 
 Erstellen Sie zunächst eine Sammlung von Kundenaufträgen, mit denen Sie arbeiten können. Sie müssen mit einem Lagerort arbeiten, der für WMS-Prozesse (Advanced Warehouse) aktiviert ist. Sofern nicht ausdrücklich ein anderes Lager erwähnt wird, muss dasselbe Lager für jeden der folgenden Auftragssätze verwendet werden.
 
-Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstellen Sie eine Sammlung von Kundenaufträgen mit den Einstellungen, die in den folgenden Unterabschnitten beschrieben werden.
+Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge**, und erstellen Sie eine Sammlung von Kundenaufträgen mit den Einstellungen, die in den folgenden Unterabschnitten beschrieben werden.
 
 ### <a name="create-order-set-1"></a>Auftragssatz 1 erstellen
 
@@ -63,7 +63,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 1. Wählen Sie **Lager \> Reservierung** und dann im Aktionsbereich die Option **Los reservieren** aus, um die Bestellposition zu reservieren.
@@ -77,13 +77,13 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 1. Wählen Sie **Lager \> Reservierung** und dann im Aktionsbereich die Option **Los reservieren** aus, um die Bestellposition zu reservieren.
 1. Fügen Sie eine zweite Auftragsposition mit den folgenden Einstellungen hinzu:
 
-    - **Artikelnummer:** *A0002* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0002* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
     - **Lieferart:** *Airwa-Air*
 
@@ -100,13 +100,13 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *M9200* (ein Artikel, bei dem der **Code 4** -Filter auf *Brennbar* eingestellt ist)
+    - **Artikelnummer:** *M9200* (ein Artikel, bei dem der **Code 4**-Filter auf *Brennbar* eingestellt ist)
     - **Menge** *1.00*
 
 1. Wählen Sie **Lager \> Reservierung** und dann im Aktionsbereich die Option **Los reservieren** aus, um die Bestellposition zu reservieren.
 1. Fügen Sie eine zweite Auftragsposition mit den folgenden Einstellungen hinzu:
 
-    - **Artikelnummer:** *M9201* (ein Artikel, bei dem der **Code 4** -Filter auf *Explosiv* eingestellt ist)
+    - **Artikelnummer:** *M9201* (ein Artikel, bei dem der **Code 4**-Filter auf *Explosiv* eingestellt ist)
     - **Menge** *1.00*
     - **Lieferart:** *Airwa-Air*
 
@@ -123,7 +123,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 1. Wählen Sie **Lager \> Reservierung** und dann im Aktionsbereich die Option **Los reservieren** aus, um die Bestellposition zu reservieren.
@@ -137,7 +137,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 1. Wählen Sie **Lager \> Reservierung** und dann im Aktionsbereich die Option **Los reservieren** aus, um die Bestellposition zu reservieren.
@@ -152,7 +152,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 1. Wählen Sie **Lager \> Reservierung** und dann im Aktionsbereich die Option **Los reservieren** aus, um die Bestellposition zu reservieren.
@@ -165,7 +165,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 1. Wählen Sie **Lager \> Reservierung** und dann im Aktionsbereich die Option **Los reservieren** aus, um die Bestellposition zu reservieren.
@@ -181,7 +181,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 1. Wählen Sie **Lager \> Reservierung** und dann im Aktionsbereich die Option **Los reservieren** aus, um die Bestellposition zu reservieren.
@@ -197,7 +197,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 1. Wählen Sie **Lager \> Reservierung** und dann im Aktionsbereich die Option **Los reservieren** aus, um die Bestellposition zu reservieren.
@@ -208,7 +208,7 @@ Führen Sie die folgenden Schritte aus, um jeden Auftrag, den Sie für dieses Sz
 
 1. Wechseln Sie zu **Debitoren \> Aufträge \> Alle Aufträge**.
 1. Suchen und wählen Sie den freizugebenden Auftrag aus.
-1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** , in der Gruppe **Aktivitäten \> Für Lagerort freigeben** , um die ausgewählten Aufträge freizugeben.
+1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort**, in der Gruppe **Aktivitäten \> Für Lagerort freigeben**, um die ausgewählten Aufträge freizugeben.
 1. Wiederholen Sie diesen Vorgang für alle anderen Aufträge, die Sie für dieses Szenario erstellt haben.
 
 ## <a name="consolidate-the-shipments-by-using-the-shipment-consolidation-workbench"></a>Lieferungen mithilfe der Workbench zur Lieferungskonsolidierung konsolidieren
@@ -237,31 +237,31 @@ Mit dem folgenden Verfahren können Sie die Lieferungen überprüfen, die als Er
 
 Es sollten zwei Lieferungen erstellt worden sein:
 
-- Die erste Lieferung enthält drei Zeilen und wurde mit der *CustomerMode* -Lieferungskonsolidierungsrichtlinie erstellt.
-- Die zweite Lieferung, die nicht *Airways* als Transportart der Lieferung verwendet, wurde unter Verwendung der *CustomerOrderNo* -Lieferungskonsolidierungsrichtlinie erstellt.
+- Die erste Lieferung enthält drei Zeilen und wurde mit der *CustomerMode*-Lieferungskonsolidierungsrichtlinie erstellt.
+- Die zweite Lieferung, die nicht *Airways* als Transportart der Lieferung verwendet, wurde unter Verwendung der *CustomerOrderNo*-Lieferungskonsolidierungsrichtlinie erstellt.
 
 ### <a name="related-shipments-for-order-set-2"></a>Verwandte Lieferungen für Auftragssatz 2
 
 Es sollten drei Lieferungen erstellt worden sein:
 
-- Die erste Lieferung enthält die *Brennbar* -Artikel.
-- Jede der beiden anderen Lieferungen enthält eine Position mit dem *Explosiv* -Artikel.
+- Die erste Lieferung enthält die *Brennbar*-Artikel.
+- Jede der beiden anderen Lieferungen enthält eine Position mit dem *Explosiv*-Artikel.
 
 ### <a name="related-shipments-for-order-set-3"></a>Verwandte Lieferungen für Auftragssatz 3
 
 Es sollten zwei Lieferungen erstellt worden sein:
 
-- Die erste Lieferung enthält Bestellpositionen aus dem Auftrag, in dem das **Debitorenanforderung** -Feld auf *1* gesetzt ist.
-- Die zweite Lieferung enthält Bestellpositionen aus dem Auftrag, in dem das **Debitorenanforderung** -Feld auf *2* gesetzt ist.
+- Die erste Lieferung enthält Bestellpositionen aus dem Auftrag, in dem das **Debitorenanforderung**-Feld auf *1* gesetzt ist.
+- Die zweite Lieferung enthält Bestellpositionen aus dem Auftrag, in dem das **Debitorenanforderung**-Feld auf *2* gesetzt ist.
 
 ### <a name="related-shipments-for-order-set-4"></a>Verwandte Lieferungen für Auftragssatz 4
 
 Es sollten vier Lieferungen erstellt worden sein:
 
-- Positionen aus zwei Bestellungen für Debitor *US-003* wurden unter Verwendung der *Auftragspool* -Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
-- Positionen aus zwei Bestellungen für Debitor *US-004* wurden unter Verwendung der *Auftragspool* -Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
-- Positionen aus aus den Aufträgen 4-5 und 4-6 für Debitor *US-007* wurden unter Verwendung der *Auftragspool* -Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
-- Positionen aus aus den Aufträgen 4-7 und 4-8 für Debitor *US-007* wurden unter Verwendung der *CrossOrder* -Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
+- Positionen aus zwei Bestellungen für Debitor *US-003* wurden unter Verwendung der *Auftragspool*-Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
+- Positionen aus zwei Bestellungen für Debitor *US-004* wurden unter Verwendung der *Auftragspool*-Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
+- Positionen aus aus den Aufträgen 4-5 und 4-6 für Debitor *US-007* wurden unter Verwendung der *Auftragspool*-Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
+- Positionen aus aus den Aufträgen 4-7 und 4-8 für Debitor *US-007* wurden unter Verwendung der *CrossOrder*-Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

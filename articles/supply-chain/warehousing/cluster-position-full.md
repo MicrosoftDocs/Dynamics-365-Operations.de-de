@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016170"
+ms.locfileid: "4429063"
 ---
 # <a name="cluster-position-full"></a>Clusterposition voll
 
@@ -29,7 +29,7 @@ ms.locfileid: "4016170"
 
 Die Funktion *Clusterposition voll* bietet eine Alternative zur strengeren Durchsetzung von Arbeitsunterbrechungsregeln, wenn die Clusterkommissionierung verwendet wird, da sie eine größere Fehlerquote bei den volumetrischen Einschränkungen von Containern oder Behältern ermöglicht. In einem allgemeinen Szenario passen nicht alle Elemente eines Arbeitsauftrags in einen ausgewählten Container. Lagerarbeiter, die Cluster auswählen, haben in diesem Szenario nur wenige Optionen: Sie müssen entweder zu einem größeren Container wechseln oder mit ihrem Vorgesetzten zusammenarbeiten, um eine andere Lösung zu finden.
 
-Diese Funktion bietet die Möglichkeit, die Schaltfläche **Voll** auf einer der Arbeitseinheiten in einem Cluster auszuführen. In älteren Versionen war diese Option nur für die reguläre Kommissionierung verfügbar, nicht für die Clusterkommissionierung. Diese Funktion unterscheidet sich jedoch von der Standard **Voll** -Schaltfläche, da die verbleibende Arbeit abgebrochen wird. Es wird nicht vorgeschlagen, dass der Benutzer dem gleichen Cluster ein weiteres Lagerfach hinzufügt, und es wird nicht automatisch eine neue Arbeit erstellt.
+Diese Funktion bietet die Möglichkeit, die Schaltfläche **Voll** auf einer der Arbeitseinheiten in einem Cluster auszuführen. In älteren Versionen war diese Option nur für die reguläre Kommissionierung verfügbar, nicht für die Clusterkommissionierung. Diese Funktion unterscheidet sich jedoch von der Standard **Voll**-Schaltfläche, da die verbleibende Arbeit abgebrochen wird. Es wird nicht vorgeschlagen, dass der Benutzer dem gleichen Cluster ein weiteres Lagerfach hinzufügt, und es wird nicht automatisch eine neue Arbeit erstellt.
 
 ## <a name="turn-on-the-cluster-position-full-feature"></a>Aktivieren der Funktion Clusterposition voll
 
@@ -40,7 +40,7 @@ Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert wer
 
 ## <a name="setup"></a>Setup
 
-Dieser Abschnitt enthält Richtlinien und ein Beispiel, das zeigt, wie Sie die *Clusterposition voll* -Funktion einrichten und verwenden.
+Dieser Abschnitt enthält Richtlinien und ein Beispiel, das zeigt, wie Sie die *Clusterposition voll*-Funktion einrichten und verwenden.
 
 ### <a name="make-sample-data-available"></a>Beispieldaten zur Verfügung stellen
 
@@ -63,7 +63,7 @@ Sie müssen angeben, ob Cluster-IDs automatisch generiert werden, wie viele Posi
     - **Cluster unterbrechen bei:** *Einlagern*
     - **Sortierbestätigungstyp:** *Positionsscan*
 
-1. In dem **Clustersortierung** -Inforegister. Das Raster sollte leer sein (d.h. es sollte keine Positionen enthalten).
+1. In dem **Clustersortierung**-Inforegister. Das Raster sollte leer sein (d.h. es sollte keine Positionen enthalten).
 
 ### <a name="work-templates"></a>Arbeitsvorlagen
 
@@ -89,7 +89,7 @@ Sie müssen angeben, woher die Artikel kommissioniert wurden und wo sie platzier
 
 ### <a name="mobile-device-menu-items"></a>Menüelemente des mobilen Geräts
 
-Sie müssen eine Menüoption des Mobilgeräts konfigurieren, um vorhandene Arbeit zu verwenden, die durch Clusterkommissionierung geleitet wird. Im Menüpunkt des Mobilgeräts für die Clusterkommissionierung muss der **Arbeitsteilung zulassen** -Parameter eingeschaltet sein, und die Arbeiterklasse *SO Kommissionierung* muss hinzugefügt werden.
+Sie müssen eine Menüoption des Mobilgeräts konfigurieren, um vorhandene Arbeit zu verwenden, die durch Clusterkommissionierung geleitet wird. Im Menüpunkt des Mobilgeräts für die Clusterkommissionierung muss der **Arbeitsteilung zulassen**-Parameter eingeschaltet sein, und die Arbeiterklasse *SO Kommissionierung* muss hinzugefügt werden.
 
 1. Gehen Sie zu **Lagerortverwaltung \> Einstellungen \> Mobiles Gerät \> Menüoptionen für mobiles Gerät**.
 1. Wählen Sie im Listenbereich den Datensatz **Clusterkommissionierung erstellen** aus.
@@ -198,12 +198,12 @@ Bevor Sie mit der Clusterkommissionierung beginnen können, müssen Sie ausgehen
 Es sollten zwei Arbeits-IDs erstellt worden sein, von denen jede zwei Kommissionierungspositionen hat. Befolgen Sie diese Schritte, um die Arbeits-IDs und Kennzeichenzuordnungen zu finden.
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Arbeit \> Arbeitsdetails**.
-1. Suchen Sie in dem **Übersicht** -Raster die **Bestellnummer** -Spalte für die beiden Aufträge, die Sie gerade erstellt haben. Notieren Sie sich für jeden Auftrag die entsprechende Arbeits-ID.
-1. Wählen Sie die Zeile für jeden Auftrag aus, um relevante Informationen in **Positionen** -Raster anzuzeigen. Notieren Sie sich den Ort, an dem jeder Artikel ausgewählt wird.
+1. Suchen Sie in dem **Übersicht**-Raster die **Bestellnummer**-Spalte für die beiden Aufträge, die Sie gerade erstellt haben. Notieren Sie sich für jeden Auftrag die entsprechende Arbeits-ID.
+1. Wählen Sie die Zeile für jeden Auftrag aus, um relevante Informationen in **Positionen**-Raster anzuzeigen. Notieren Sie sich den Ort, an dem jeder Artikel ausgewählt wird.
 1. Wechseln Sie zu **Bestandsverwaltung \> Anfragen und Berichte \> Bestandsliste**.
 1. Wählen Sie im Aktivitätsbereich **Dimensionen** aus, um das Dialogfeld **Dimensionsanzeige** zu öffnen.
-1. Stellen Sie sicher, dass die Kontrollkästchen **Kennzeichen** , **Warenhaus** , und **Artikelnummer** aktiviert sind und wählen Sie anschließend **OK** aus.
-1. Legen Sie im **Filter** -Bereich folgende Filter fest:
+1. Stellen Sie sicher, dass die Kontrollkästchen **Kennzeichen**, **Warenhaus**, und **Artikelnummer** aktiviert sind und wählen Sie anschließend **OK** aus.
+1. Legen Sie im **Filter**-Bereich folgende Filter fest:
 
     - **Artikelnummer** – **ist eine von** – *L0101* und *T100*
     - **Warenhaus** – **beginnt mit** – *61*
@@ -217,34 +217,34 @@ Es sollten zwei Arbeits-IDs erstellt worden sein, von denen jede zwei Kommission
 1. Melden Sie sich bei der Warehouse-App als ein Benutzer im Lagerort *61* an.
 1. Wechseln Sie zu **Ausgehend \> Clusterkommissionierung erstellen**.
 
-    Die **AUFGABE: Arbeit dem Cluster zuweisen** -Seite erscheint.
+    Die **AUFGABE: Arbeit dem Cluster zuweisen**-Seite erscheint.
 
 1. Geben Sie die Arbeits-ID für Auftrag 1 ein, um sie der Clusterposition 1 zuzuweisen.
 1. Wählen Sie **OK** (Häkchensymbol).
 1. Geben Sie die Arbeits-ID für Auftrag 2 ein, um sie der Clusterposition 2 zuzuweisen.
 1. Wählen Sie **OK** (Häkchensymbol).
 
-    Die **AUFGABE: Clusterkommissionierung erstellen: Kommissionieren** -Seite erscheint und zeigt *Artikel L0101 2 PL*.
+    Die **AUFGABE: Clusterkommissionierung erstellen: Kommissionieren**-Seite erscheint und zeigt *Artikel L0101 2 PL*.
 
 Da das Clusterprofil die Anzahl der Positionen auf 2 festgelegt hat, leitet das System Sie automatisch zur ersten konsolidierten Auswahl weiter: zwei Paletten (PL) des Artikels *L0101*.
 
-Während der folgenden Schritte können Sie jederzeit die **Details** -Registerkarte auswählen, um zusätzliche Informationen zur Aufgabe anzuzeigen, z. B. den Kommissionierungsort.
+Während der folgenden Schritte können Sie jederzeit die **Details**-Registerkarte auswählen, um zusätzliche Informationen zur Aufgabe anzuzeigen, z. B. den Kommissionierungsort.
 
 1. Legen Sie das Feld **ARTIKEL** auf *L0101* fest. Dies bestätigt die Artikelnummer, die für diesen Menüpunkt erforderlich ist (Sie haben dies zuvor durch Auswahl von **Einrichtung der Arbeitsbestätigung** auf der Seite **Mobilgerät-Menüpunkt** konfiguriert, als Sie diesen Menüpunkt erstellt haben).
 1. Geben Sie die Kennzeichennummer ein, die dem Artikel an dem Lagerplatz zugeordnet ist, an dem es ausgewählt wird. Sie werden zwei Paletten kommissionieren.
-1. Stellen Sie das **LP** -Feld auf *LP\_PICK\_01*.
+1. Stellen Sie das **LP**-Feld auf *LP\_PICK\_01*.
 1. Wählen Sie **OK** (Häkchensymbol).
 
-    Die **AUFGABE: Sortieren: Clusterkommissionierung erstellen** -Seite erscheint. Hier sortieren Sie die beiden kommissionierten Paletten in eine Kommissionierposition. Diese Position kann ein Behälter oder ein Container sein, mit dem der kommissionierte Bestand nach Auftrag getrennt wird.
+    Die **AUFGABE: Sortieren: Clusterkommissionierung erstellen**-Seite erscheint. Hier sortieren Sie die beiden kommissionierten Paletten in eine Kommissionierposition. Diese Position kann ein Behälter oder ein Container sein, mit dem der kommissionierte Bestand nach Auftrag getrennt wird.
 
-1. Zeigen Sie die Details an, die für den Artikel ( *L0101* ) und die Menge ( *20* ea), die in Position 1 sortiert wird (für Auftrag 1), angezeigt werden.
-1. Stellen Sie das **POSITION NA** -Feld auf *1*.
+1. Zeigen Sie die Details an, die für den Artikel (*L0101*) und die Menge (*20* ea), die in Position 1 sortiert wird (für Auftrag 1), angezeigt werden.
+1. Stellen Sie das **POSITION NA**-Feld auf *1*.
 1. Wählen Sie **OK** (Häkchensymbol).
-1. Zeigen Sie die Details an, die für den Artikel ( *L0101* ) und die Menge ( *20* ea), die in Position 2 sortiert wird (für Auftrag 2), angezeigt werden.
-1. Stellen Sie das **POSITION NA** -Feld auf *2*.
+1. Zeigen Sie die Details an, die für den Artikel (*L0101*) und die Menge (*20* ea), die in Position 2 sortiert wird (für Auftrag 2), angezeigt werden.
+1. Stellen Sie das **POSITION NA**-Feld auf *2*.
 1. Wählen Sie **OK** (Häkchensymbol).
 
-    Die **AUFGABE: Clusterkommissionierung erstellen: Kommissionieren** -Seite erscheint und zeigt *Artikel T0100 7 ea*.
+    Die **AUFGABE: Clusterkommissionierung erstellen: Kommissionieren**-Seite erscheint und zeigt *Artikel T0100 7 ea*.
 
 In diesem Szenario kann Position 1 nicht die gesamte Menge der Artikel akzeptieren, die zur Erfüllung des Auftrags 1 kommissioniert werden müssen. Eine Position muss als voll markiert sein. In diesem Szenario kommissionieren Sie den zweiten Artikel teilweise. Der zweite Artikel wird für Position 1 teilweise kommissioniert, und es wird neue Arbeit erstellt, um die verbleibende Menge zu kommissionieren, um die Bestellung zu erfüllen.
 
@@ -257,16 +257,16 @@ In diesem Szenario kann Position 1 nicht die gesamte Menge der Artikel akzeptier
 1. Bestätigen Sie die Artikelnummer, um die Auswahl des verbleibenden Artikels in Position 2 abzuschließen.
 1. Legen Sie das Feld **ARTIKEL** auf *T0100* fest.
 1. Wählen Sie **OK** (Häkchensymbol).
-1. Geben Sie das Kennzeichen ein, von dem der Artikel kommissioniert wird, indem Sie das **LP** -Feld auf *LPREPL04* festlegen.
+1. Geben Sie das Kennzeichen ein, von dem der Artikel kommissioniert wird, indem Sie das **LP**-Feld auf *LPREPL04* festlegen.
 1. Wählen Sie **OK** (Häkchensymbol).
-1. Zeigen Sie die Details an, die für den Artikel ( *T0100* ) und die Menge ( *2* ea), die in Position 2 sortiert wird (für Auftrag 2), angezeigt werden.
-1. Stellen Sie das **POSITION NA** -Feld auf *2*.
+1. Zeigen Sie die Details an, die für den Artikel (*T0100*) und die Menge (*2* ea), die in Position 2 sortiert wird (für Auftrag 2), angezeigt werden.
+1. Stellen Sie das **POSITION NA**-Feld auf *2*.
 1. Wählen Sie **OK** (Häkchensymbol).
-1. Zeigen Sie die Details an, die für den Artikel ( *T0100* ) und die Menge ( *2* ea), die in Position 1 sortiert wird (für Auftrag 1), angezeigt werden.
-1. Stellen Sie das **POSITION NA** -Feld auf *1*.
+1. Zeigen Sie die Details an, die für den Artikel (*T0100*) und die Menge (*2* ea), die in Position 1 sortiert wird (für Auftrag 1), angezeigt werden.
+1. Stellen Sie das **POSITION NA**-Feld auf *1*.
 1. Wählen Sie **OK** (Häkchensymbol).
 
-    Die **AUFGABE: Clusterkommissionierung: Einlagern** -Seite erscheint.
+    Die **AUFGABE: Clusterkommissionierung: Einlagern**-Seite erscheint.
 
 In diesem Szenario wurde die Clusterkommissionierung abgeschlossen, und der Benutzer wird angewiesen, die ausgewählten Elemente von Position 1 und Position 2 an den Staging-Lagerplatz zu verschieben *STAGE01*.
 
@@ -275,4 +275,4 @@ In diesem Szenario wurde die Clusterkommissionierung abgeschlossen, und der Benu
 
     Sie erhalten die Nachricht „Cluster abgeschlossen“.
 
-Sie können jetzt den **Verkaufsauswahl** -Menüpunkt verwenden, um die verbleibende Menge auszuwählen. Sie können dann das **Verkaufsverladung** -Menüelement verwenden, um Artikel vom Staging-Lagerplatz zum Verladedock zu verschieben.
+Sie können jetzt den **Verkaufsauswahl**-Menüpunkt verwenden, um die verbleibende Menge auszuwählen. Sie können dann das **Verkaufsverladung**-Menüelement verwenden, um Artikel vom Staging-Lagerplatz zum Verladedock zu verschieben.

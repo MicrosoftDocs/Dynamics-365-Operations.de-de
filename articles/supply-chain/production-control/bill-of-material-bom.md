@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b226dd61c758cf17c8e4784ec22d2628145c1836
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985608"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428771"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Stücklisten und Formeln
 
@@ -108,7 +108,7 @@ Beachten Sie, dass Phantome in der Regel verwendet werden, um den Verfahrensproz
 
 ### <a name="pegged-supply"></a>Lieferung mit Bedarfsverursachung
 
-Wählen Sie den**Lieferung mit Bedarfsverursachung** Positionstyp aus, wenn Sie eine Unterproduktion, einen Stücklistenpositions-Ereignis-Kanban oder eine direkte Bestellung für jede Produktvariante erstellen möchten auf die die Stücklistenposition verweist. Die Unterproduktion, der Ereignis-Kanban oder die Bestellung wird erstellt, wenn der Produktionsauftrag vorkalkuliert wurde. Die erforderlichen Artikelmengen werden automatisch für den Auftrag der Verbrauchsproduktion reserviert.
+Wählen Sie den **Lieferung mit Bedarfsverursachung** Positionstyp aus, wenn Sie eine Unterproduktion, einen Stücklistenpositions-Ereignis-Kanban oder eine direkte Bestellung für jede Produktvariante erstellen möchten auf die die Stücklistenposition verweist. Die Unterproduktion, der Ereignis-Kanban oder die Bestellung wird erstellt, wenn der Produktionsauftrag vorkalkuliert wurde. Die erforderlichen Artikelmengen werden automatisch für den Auftrag der Verbrauchsproduktion reserviert.
 
 ### <a name="vendor"></a>Händler
 

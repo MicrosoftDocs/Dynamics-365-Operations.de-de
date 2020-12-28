@@ -16,17 +16,17 @@ ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 3feccc9facb33e3dee18f04e202f7b20785df0a8
+ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "3998875"
+ms.locfileid: "4429003"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatische Zuteilung von Gebühren
 
 [!include [banner](../includes/banner.md)]
 
-Abhängig vom Kunden, mit dem Sie arbeiten, oder dem Artikel, den Sie verkaufen, möchten Sie möglicherweise bestimmte zusätzliche Gebühren erheben. Die *Gebühren* -Funktion in Microsoft Dynamics 365 Supply Chain Management hilft Ihnen dabei, Bestellungen oder Aufträgen automatisch Gebühren zuzuweisen.
+Abhängig vom Kunden, mit dem Sie arbeiten, oder dem Artikel, den Sie verkaufen, möchten Sie möglicherweise bestimmte zusätzliche Gebühren erheben. Die *Gebühren*-Funktion in Microsoft Dynamics 365 Supply Chain Management hilft Ihnen dabei, Bestellungen oder Aufträgen automatisch Gebühren zuzuweisen.
 
 Automatische Belastungen werden automatisch angewendet, wenn Sie einen Auftrag oder eine Bestellung erstellen. Sie können automatische Zuschläge für bestimmte Kreditoren, Debitoren oder Artikel oder für Gruppen von Kreditoren, Debitoren oder Artikel definieren. Sie können auch automatische Zuschläge festlegen, die für alle Kreditoren, Debitoren oder Artikel gültig sind.
 
@@ -45,7 +45,7 @@ Um Gebühren zuzuweisen, müssen Sie zuerst Gebührencodes definieren.
     - **Gebührencode** – Geben Sie einen Code für die Gebühren ein.
     - **Beschreibung** - Geben Sie eine Beschreibung für die Gebühren ein.
     - **Artikel Umsatzsteuergruppe** – Wählen Sie gegebenenfalls eine Artikelumsatzsteuergruppe aus.
-    - **Anteilige Verrechnung** – Setzen Sie diese Option auf *Ja* , wenn Sie Ihre Gebühren anteilig aufteilen möchten. Diese Option ist nur für Aufträge verfügbar.
+    - **Anteilige Verrechnung** – Setzen Sie diese Option auf *Ja*, wenn Sie Ihre Gebühren anteilig aufteilen möchten. Diese Option ist nur für Aufträge verfügbar.
     - **Maximaler Betrag** - Geben Sie den maximalen Abschreibungsbetrag ein, der für den Gebührencodes zulässig ist. Dieses Feld wird verwendet, um Belastungen für Kreditorenrechnungen zu überprüfen. Es ist nur für Bestellungen verfügbar.
 
         > [!NOTE]
@@ -53,8 +53,8 @@ Um Gebühren zuzuweisen, müssen Sie zuerst Gebührencodes definieren.
 
 1. Das Inforegiser **Erfassung** enthält die Abschnitte **astschrift** und **Gutschrift**. Legen Sie die folgenden Felder fest, abhängig vom Hauptbuch, in das Sie die Gebühren buchen möchten:
 
-    - **Art** – Wählen Sie den Kontotyp aus, auf den Sie buchen ( *Sachbuch* , *Kunde* , oder *Artikel* ).
-    - **Buchung** – Wählen Sie die Art der zu erstellenden Buchungen aus (z.B. *Brokergebühr* oder *Kundenabrechnung* ).
+    - **Art** – Wählen Sie den Kontotyp aus, auf den Sie buchen (*Sachbuch*, *Kunde*, oder *Artikel*).
+    - **Buchung** – Wählen Sie die Art der zu erstellenden Buchungen aus (z.B. *Brokergebühr* oder *Kundenabrechnung*).
     - **Konto** – Wählen Sie das Konto aus, für das die Gebühr gebucht werden soll.
 
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
@@ -105,7 +105,7 @@ Führen Sie nach dem Einrichten Ihrer Gebührencodes die folgenden Schritte aus,
     - *Haupttabelle* – Übernimmt Zuschläge in den Auftragskopf.
     - *Zeile* – Übernimmt Zuschläge in die Auftragspositionen.
 
-1. Wählen Sie eine vorhandene automatische Aufladung aus, um sie zu bearbeiten, oder wählen Sie **Neu** , um eine neue automatische Aufladung zu definieren.
+1. Wählen Sie eine vorhandene automatische Aufladung aus, um sie zu bearbeiten, oder wählen Sie **Neu**, um eine neue automatische Aufladung zu definieren.
 1. In der Liste **Konto Code** wählen Sie in der Liste einen der folgenden Werte aus, um den Umfang der betroffenen Konten anzugeben:
 
     - *Tabelle* – Weist einem bestimmten Debitor oder Kreditor Zuschläge zu.
@@ -176,4 +176,4 @@ Das folgende Verfahren zeigt, wie einer Zeile Gebühren auf Kopfebene zugewiesen
         > [!IMPORTANT]
         > Wenn Sie mit dem Raster **Wählen Sie Zeilen aus, die von der Zuordnung ausgeschlossen werden sollen** arbeiten, lassen Sie das Raster offen, bis Sie **Zuweisen** auswählen. Wenn Sie das Raster schließen, bevor Sie **Zuweisen** auswählen, gehen Ihre Einstellungen im Raster verloren. Daher werden Gebühren basierend auf den zuvor definierten Kriterien zugewiesen.
 
-1. Wählen Sie **Zuordnen** , um Ihre Einstellungen zu übernehmen und das Abfragedialogfeld zu schließen.
+1. Wählen Sie **Zuordnen**, um Ihre Einstellungen zu übernehmen und das Abfragedialogfeld zu schließen.

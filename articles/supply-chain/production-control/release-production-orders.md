@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bc6d53fc87bac2e23c0d1e67954be02749042004
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211237"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428981"
 ---
 # <a name="release-production-orders"></a>Freigeben von Produktionsaufträgen
 
@@ -52,7 +52,7 @@ Eine Arbeitsplanliste bietet einen Überblick über die Informationen aus den Ei
 Ein Arbeitsplan führt alle Einzelvorgänge eines Arbeitsgangs detailliert auf und enthält Rüstzeit, Bearbeitungszeit, Wartezeit und Transportzeiten. Ein Arbeitsgang, wie etwa ein Anstrich, erfordert möglicherweise bestimmte Einzelvorgänge, wie Einrichtungszeit, Ausführungszeit für den Anstrichprozess und Wartezeit für das Trocknen.
 
 ## <a name="job-cards"></a>Einzelvorgangslisten
-In einer Einzelvorgangsliste werden die jeweiligen Einzelvorgangsnummern eines bestimmten Arbeitsgangs aufgeführt. Ein Einzelvorgang wird auf jeder Seite dargestellt. Die in einer Einzelvorgangsliste enthaltenen Einzelvorgänge sowie deren geschätzte Zeiten stammen aus den Einstellungen für den Arbeitsplan sowie aus den Einstellungen für den Arbeitsgang. Von einer Einzelvorgangsliste können Sie die **Produktionserfassungspositionen**, Seite **Einzelvorgangslisten**öffnen. Für die Ausführung betrieblicher Ressourcen zuständige Personen haben die Möglichkeit zum Eingeben von Rückmeldungen bezüglich des Produktionsprozesses. Zu diesem Zweck stehen Felder für Verbrauchsstatistiken sowie für Informationen wie Ausschussmengen zur Verfügung.
+In einer Einzelvorgangsliste werden die jeweiligen Einzelvorgangsnummern eines bestimmten Arbeitsgangs aufgeführt. Ein Einzelvorgang wird auf jeder Seite dargestellt. Die in einer Einzelvorgangsliste enthaltenen Einzelvorgänge sowie deren geschätzte Zeiten stammen aus den Einstellungen für den Arbeitsplan sowie aus den Einstellungen für den Arbeitsgang. Von einer Einzelvorgangsliste können Sie die **Produktionserfassungspositionen**, Seite **Einzelvorgangslisten** öffnen. Für die Ausführung betrieblicher Ressourcen zuständige Personen haben die Möglichkeit zum Eingeben von Rückmeldungen bezüglich des Produktionsprozesses. Zu diesem Zweck stehen Felder für Verbrauchsstatistiken sowie für Informationen wie Ausschussmengen zur Verfügung.
 
 ## <a name="warehouse-work-for-raw-material-picking"></a>Lagerortarbeit für Rohmaterialentnahme
 Arbeit für Rohmaterialentnahme wird während der Freigabe generiert. Vorgang wird nur für die Menge von Materialien generiert, die physisch für den Produktionsauftrag reserviert war, bevor der Auftrag verwendet wurde. Die folgende Einrichtung muss, um Lagerortarbeit für Rohmaterialentnahme zu generieren:

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cc5229918c89657f3108e1c2314dff8251eae93d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018074"
+ms.locfileid: "4429079"
 ---
 # <a name="set-up-vendor-accounts"></a>Einrichten von Kreditorenkonten
 
@@ -93,7 +93,7 @@ Sie können einen Kreditor für verschiedene Buchungsarten sperren. Die folgende
 
 Wenn Sie einen Kreditor sperren, können Sie auch einen Grund und ein Datum angeben, wann die Sperrung aufgehoben wird. Wenn Sie kein Enddatum eingeben, bleibt die Sperre des Kreditors auf unbestimmte Zeit bestehen.
 
-Sie können eine Massenaktualisierung des Sperrstatus auf **Alle** für Kreditoren durchführen, basierend auf den ausgewählten Kriterien auf der Seite **Kreditorendeaktivierung** , und einen Grund zuweisen, warum der Kreditor gesperrt ist.
+Sie können eine Massenaktualisierung des Sperrstatus auf **Alle** für Kreditoren durchführen, basierend auf den ausgewählten Kriterien auf der Seite **Kreditorendeaktivierung**, und einen Grund zuweisen, warum der Kreditor gesperrt ist.
 
 Die folgenden Kriterien werden verwendet, um Kreditoren einzuschließen, die in einer Periode inaktiv gewesen sind, um Kreditoren einzuschließen oder auszuschließen, die Mitarbeiter sind, und um Kreditoren auszuschließen, die sich in einer Karenzzeit bis zur nächsten Sperrung befinden.
 

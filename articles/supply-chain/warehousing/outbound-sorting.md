@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: 84c4ec83ed16762e6c3c1a22425cf60e5b3ae8da
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017689"
+ms.locfileid: "4429123"
 ---
 # <a name="outbound-sorting"></a>Ausgangssortierung
 
@@ -40,7 +40,7 @@ Bevor Sie die Funktion nutzen können, muss sie auf Ihrem System aktiviert werde
 
 ## <a name="setup"></a>Einstellung
 
-Für dieses Szenario müssen Sie standardmäßige **USMF** -Demodaten und Lager *62* verwenden. Sie müssen auch die in den folgenden Unterabschnitten beschriebenen Einstellungen durchführen.
+Für dieses Szenario müssen Sie standardmäßige **USMF**-Demodaten und Lager *62* verwenden. Sie müssen auch die in den folgenden Unterabschnitten beschriebenen Einstellungen durchführen.
 
 ### <a name="set-up-a-wave-template"></a>Richten Sie eine Wellenvorlage ein
 
@@ -176,7 +176,7 @@ In diesem Szenario erstellen Sie eine Vorlage für die Ausgangssortierung, um Pa
     - **Name des Referenzfelds:** *Spediteur*
     - **Gruppieren nach Feld:** Aktivieren Sie dieses Kontrollkästchen, um Sendungen nach Spedition zu gruppieren.
 
-1. Wählen Sie **OK** , um Ihre Einstellungen zu speichern und das Dialogfeld zu schließen.
+1. Wählen Sie **OK**, um Ihre Einstellungen zu speichern und das Dialogfeld zu schließen.
 
 ### <a name="set-up-container-packing-policies"></a>Einrichten von Containerverpackungsrichtlinien
 
@@ -209,7 +209,7 @@ Erstellen Sie ein neues Verpackungsprofil, das zusammen mit der Sortierfunktion 
     - **Containerverpackungsrichtlinien:** *Sortieren*
     - **Containerkennungsmodus:** *Auto*
     - **Containertyp:** *Box-Groß*
-    - **Container beim Schließen des Containers automatisch erstellen:** Gelöscht (= *Nein* )
+    - **Container beim Schließen des Containers automatisch erstellen:** Gelöscht (= *Nein*)
 
 1. Wählen Sie **Speichern** aus.
 
@@ -402,7 +402,7 @@ Dieses Szenario simuliert eine Situation, in der verpackte Container je nach Spe
     - **Debitorenkonto:** *US-005*
     - **Lagerort:** *62*
 
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
     Der neue Auftrag wird geöffnet.
 
@@ -413,7 +413,7 @@ Dieses Szenario simuliert eine Situation, in der verpackte Container je nach Spe
     - **Spediteur:** *Air*
 
 1. Wechseln Sie zur Ansicht **Positionen**.
-1. Auf dem Inforegister **Kundenauftragspositionen** wählen Sie **Zeile hinzufügen** , wenn eine neue Zeile nicht automatisch zum Raster hinzugefügt wird, geben Sie Folgendes ein:
+1. Auf dem Inforegister **Kundenauftragspositionen** wählen Sie **Zeile hinzufügen**, wenn eine neue Zeile nicht automatisch zum Raster hinzugefügt wird, geben Sie Folgendes ein:
 1. Stellen Sie die folgenden Werte für die neue Bestellposition ein:
 
     - **Artikelnummer** *A001*
@@ -421,8 +421,8 @@ Dieses Szenario simuliert eine Situation, in der verpackte Container je nach Spe
 
 1. Während die neue Auftragsposition weiterhin im Inforegister **Auftragspositionen** ausgewählt ist, wählen Sie im Menü **Bestand** über dem Raster **Reservierung** aus.
 1. Wählen Sie auf der Seite **Reservierung** die Option **Los reservieren** aus, um die volle Menge der ausgewählten Position im Lagerort zu reservieren.
-1. Schließen Sie die Seite **Reservierung** , um zum Auftrag zurückzukehren.
-1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** , in der Gruppe **Aktivitäten** , **Für Lagerort freigeben** aus.
+1. Schließen Sie die Seite **Reservierung**, um zum Auftrag zurückzukehren.
+1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort**, in der Gruppe **Aktivitäten**, **Für Lagerort freigeben** aus.
 1. Sie erhalten eine Informationsnachricht, die die Lieferung und die Welle für diese Bestellung anzeigt. Notieren Sie sich die Wellen-ID- und Lieferungs-ID-Nummern.
 
 #### <a name="sales-order-2"></a>Auftrag 2
@@ -434,7 +434,7 @@ Dieses Szenario simuliert eine Situation, in der verpackte Container je nach Spe
     - **Debitorenkonto:** *US-006*
     - **Lagerort:** *62*
 
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 1. Der neue Auftrag wird geöffnet. Es sollte eine neue, leere Position im Raster auf dem Inforegister **Auftragspositionen** enthalten. Stellen Sie die folgenden Werte für diese Bestellposition ein:
 
     - **Artikel:** *A0001*
@@ -449,11 +449,11 @@ Dieses Szenario simuliert eine Situation, in der verpackte Container je nach Spe
 1. Im Inforegister **Zeilendetails** auf der Registerkarte **Lieferung** ändern Sie den Wert des Felds **Lieferart** auf *Air C-Air* fest.
 1. Wählen Sie im Inforegister **Auftragspositionen** die erste Auftragsposition aus. Wählen Siedann im Menü **Lagerbestand** über dem Raster die Option **Reservierung** aus.
 1. Wählen Sie auf der Seite **Reservierung** die Option **Los reservieren** aus, um die volle Menge der ausgewählten Position im Lagerort zu reservieren.
-1. Schließen Sie die Seite **Reservierung** , um zum Auftrag zurückzukehren.
+1. Schließen Sie die Seite **Reservierung**, um zum Auftrag zurückzukehren.
 1. Wählen Sie im Inforegister **Auftragspositionen** die zweite Auftragsposition aus. Wählen Siedann im Menü **Lagerbestand** über dem Raster die Option **Reservierung** aus.
 1. Wählen Sie auf der Seite **Reservierung** die Option **Los reservieren** aus, um die volle Menge der ausgewählten Position im Lagerort zu reservieren.
-1. Schließen Sie die Seite **Reservierung** , um zum Auftrag zurückzukehren.
-1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** , in der Gruppe **Aktivitäten** , **Für Lagerort freigeben** aus.
+1. Schließen Sie die Seite **Reservierung**, um zum Auftrag zurückzukehren.
+1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort**, in der Gruppe **Aktivitäten**, **Für Lagerort freigeben** aus.
 1. Sie erhalten eine Informationsnachricht, die die Lieferung und die Welle für diese Bestellung anzeigt. Beachten Sie, dass zwei Wellen-ID-Nummern und zwei Lieferungs-ID-Nummern erstellt wurden, eine für jede Lieferart für die Auftragspositionen.
 
 #### <a name="get-the-work-ids-from-the-work-details"></a>Arbeits-IDs aus den Arbeitsdetails abrufen
@@ -470,7 +470,7 @@ Schließen Sie die erstellte Arbeit ab, indem Sie die Artikel mit dem mobilen Ge
 1. Auf dem Menü **Ausgehend** wählen Sie **Verkaufsauswahl**.
 1. Geben Sie im Feld **ID** die Arbeits-ID ein, die für den Auftrag 1 erstellt wurde.
 1. Wählen Sie **OK**.
-1. Geben Sie auf dieser Seite **Aufträge – Entnehmen** eine Ziel-LP ein, die für Auftrag 1 erstellt wurde. Beachten Sie, dass Entnahmeort ( *Bulk-001* ), Artikel ( *A0001* ) und Menge ( *2 Stk* ) gezeigt werden.
+1. Geben Sie auf dieser Seite **Aufträge – Entnehmen** eine Ziel-LP ein, die für Auftrag 1 erstellt wurde. Beachten Sie, dass Entnahmeort (*Bulk-001*), Artikel (*A0001*) und Menge (*2 Stk*) gezeigt werden.
 1. Wählen Sie **OK**.
 1. Prüfen Sie die Informationen auf der Seite **Aufträge – Einlagern**. Das Feld **Loc** sollte anzeigen, dass die ausgewählten Artikel an den Ort *Verpackung* gehen.
 1. Wählen Sie **OK**.
@@ -481,7 +481,7 @@ Schließen Sie die erstellte Arbeit ab, indem Sie die Artikel mit dem mobilen Ge
 
 1. Geben Sie im Feld **ID** die Arbeits-ID ein, die für den Auftrag 2 erstellt wurde, bei der Position 1 den Artikel *A0001* aufweist.
 1. Wählen Sie **OK**.
-1. Geben Sie auf der Seite **Aufträge – Entnehmen** eine Ziel-LP ein. Beachten Sie, dass Entnahmeort ( *Bulk-001* ), Artikel ( *A0001* ) und Menge ( *1 Stk* ) gezeigt werden.
+1. Geben Sie auf der Seite **Aufträge – Entnehmen** eine Ziel-LP ein. Beachten Sie, dass Entnahmeort (*Bulk-001*), Artikel (*A0001*) und Menge (*1 Stk*) gezeigt werden.
 1. Wählen Sie **OK**.
 1. Prüfen Sie die Informationen auf der Seite **Aufträge – Einlagern**. Das Feld **Loc** sollte anzeigen, dass die ausgewählten Artikel an den Ort *Verpackung* gehen.
 1. Wählen Sie **OK**.
@@ -490,7 +490,7 @@ Schließen Sie die erstellte Arbeit ab, indem Sie die Artikel mit dem mobilen Ge
 
 1. Geben Sie im Feld **ID** die Arbeits-ID ein, die für den Auftrag 2 erstellt wurde, bei der Position 2 den Artikel *A0002* aufweist.
 1. Wählen Sie **OK**.
-1. Geben Sie auf der Seite **Aufträge – Entnehmen** eine Ziel-LP ein. Beachten Sie, dass Entnahmeort ( *Bulk-002* ), Artikel ( *A0001* ) und Menge ( *1 Stk* ) gezeigt werden.
+1. Geben Sie auf der Seite **Aufträge – Entnehmen** eine Ziel-LP ein. Beachten Sie, dass Entnahmeort (*Bulk-002*), Artikel (*A0001*) und Menge (*1 Stk*) gezeigt werden.
 1. Wählen Sie **OK**.
 1. Prüfen Sie die Informationen auf der Seite **Aufträge – Einlagern**. Das Feld **Loc** sollte anzeigen, dass die ausgewählten Artikel an den Ort *Verpackung* gehen.
 1. Wählen Sie **OK**.
@@ -512,7 +512,7 @@ Schließen Sie die erstellte Arbeit ab, indem Sie die Artikel mit dem mobilen Ge
     - **Lagerplatz:** *Verpackung*
     - **Verpackungsprofilkennung:** *Sortieren*
 
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 1. Geben Sie auf der Seite **Verpackung** im Feld **Kennzeichen oder Lieferung** die Ziel-LP für Auftrag 1 ein. Drücken Sie dann die Taste **Tab** oder **Eingabe** auf Ihrer Tastatur, um das Feld zu verlassen.
 1. Wählen Sie im Aktivitätsbereich **Neuer Container** aus.
 1. Übernehmen Sie alle Standardeinstellungen und wählen Sie **OK**. Notieren Sie die Container-ID.
@@ -522,7 +522,7 @@ Schließen Sie die erstellte Arbeit ab, indem Sie die Artikel mit dem mobilen Ge
     - **Bezeichner:** Artikel *A0001*
 
 1. Wählen Sie im Aktivitätsbereich **Container schließen** aus.
-1. Wählen Sie im Dialogfeld **Container schließen** die Option **Systemgewicht abrufen** , damit das System das Feld **Bruttogewicht** aktualisiert.
+1. Wählen Sie im Dialogfeld **Container schließen** die Option **Systemgewicht abrufen**, damit das System das Feld **Bruttogewicht** aktualisiert.
 1. Wählen Sie **OK**. Der Container wird zum Lagerplatz *SORT* verschoben und ist bereit zum Sortieren.
 1. Erstellen Sie einen zweiten Container, um den zweiten Artikel aus der LP für Auftrag 1 einem neuen Container hinzuzufügen.
 1. Wählen Sie im Aktivitätsbereich **Neuer Container** aus.
@@ -533,7 +533,7 @@ Schließen Sie die erstellte Arbeit ab, indem Sie die Artikel mit dem mobilen Ge
     - **Bezeichner:** Artikel *A0001*
 
 1. Wählen Sie im Aktivitätsbereich **Container schließen** aus.
-1. Wählen Sie im Dialogfeld **Container schließen** die Option **Systemgewicht abrufen** , damit das System das Feld **Bruttogewicht** aktualisiert.
+1. Wählen Sie im Dialogfeld **Container schließen** die Option **Systemgewicht abrufen**, damit das System das Feld **Bruttogewicht** aktualisiert.
 1. Wählen Sie **OK**. Der Container wird zum Lagerplatz *SORT* verschoben und ist bereit zum Sortieren.
 
 #### <a name="pack-sales-order-2-into-containers"></a>Auftrag 2 in Container verpacken
@@ -547,7 +547,7 @@ Schließen Sie die erstellte Arbeit ab, indem Sie die Artikel mit dem mobilen Ge
     - **Bezeichner:** Artikel *A0001*
 
 1. Wählen Sie im Aktivitätsbereich **Container schließen** aus.
-1. Wählen Sie im Dialogfeld **Container schließen** die Option **Systemgewicht abrufen** , damit das System das Feld **Bruttogewicht** aktualisiert.
+1. Wählen Sie im Dialogfeld **Container schließen** die Option **Systemgewicht abrufen**, damit das System das Feld **Bruttogewicht** aktualisiert.
 1. Wählen Sie **OK**. Der Container wird zum Lagerplatz *SORT* verschoben und ist bereit zum Sortieren.
 1. Geben Sie im Feld **Kennzeichen oder Lieferung** die Ziel-LP für Position 2 von Auftrag 2 ein. Drücken Sie dann die Taste **Tab** oder **Eingabe** auf Ihrer Tastatur, um das Feld zu verlassen.
 1. Wählen Sie im Aktivitätsbereich **Neuer Container** aus.
@@ -558,7 +558,7 @@ Schließen Sie die erstellte Arbeit ab, indem Sie die Artikel mit dem mobilen Ge
     - **Bezeichnerfeld:** Artikel *A0002*
 
 1. Wählen Sie im Aktivitätsbereich **Container schließen** aus.
-1. Wählen Sie im Dialogfeld **Container schließen** die Option **Systemgewicht abrufen** , damit das System das Feld **Bruttogewicht** aktualisiert.
+1. Wählen Sie im Dialogfeld **Container schließen** die Option **Systemgewicht abrufen**, damit das System das Feld **Bruttogewicht** aktualisiert.
 1. Wählen Sie **OK**. Der Container wird zum Lagerplatz *SORT* verschoben und ist bereit zum Sortieren.
 
 Um die Containerdetails anzuzeigen, gehen Sie zu **Lagerortverwaltung \> Verpackung und Containerisierung \> Container** und suchen Sie nach den Container-IDs, die beim Packen erstellt wurden.
@@ -650,18 +650,18 @@ Sie müssen die sortierte Bestandsauswahl durchführen. Wenn es fertig ist, wird
 1. Wählen Sie im Menü **Ausgehend** **Aus Sortierung laden**.
 1. Geben Sie die Ziel-LP-ID von der ersten Sortierposition *SP01* aus ein. Legen Sie das Feld **ID** auf *PLP01* fest.
 1. Wählen Sie **OK**.
-1. Die Seite **Sortierte Bestandentnahme: Entnehmen** zeigt die Entnahmearbeit, die ausgeführt werden müssen. Wählen Sie aus dem Lagerplatz *SORT* und Ziel-LP *PLP01* , die mehrere Artikel und eine Menge von *3* hat.
+1. Die Seite **Sortierte Bestandentnahme: Entnehmen** zeigt die Entnahmearbeit, die ausgeführt werden müssen. Wählen Sie aus dem Lagerplatz *SORT* und Ziel-LP *PLP01*, die mehrere Artikel und eine Menge von *3* hat.
 1. Wählen Sie **OK**.
-1. Die Seite **Sortierte Bestandentnahme: Einlagern** zeigt die Einlagerunsarbeit, die ausgeführt werden müssen. Lagern Sie im Lagerplatz *Frachttür* und Ziel-LP *PLP01* , die mehrere Artikel und eine Menge von *3* hat.
+1. Die Seite **Sortierte Bestandentnahme: Einlagern** zeigt die Einlagerunsarbeit, die ausgeführt werden müssen. Lagern Sie im Lagerplatz *Frachttür* und Ziel-LP *PLP01*, die mehrere Artikel und eine Menge von *3* hat.
 1. Wählen Sie **OK**.
 
     Die Arbeit ist abgeschlossen.
 
 1. Geben Sie das Zielkennzeichen von der zweiten Sortierposition *SP02* aus ein. Legen Sie das Feld **ID** auf *PLP02* fest.
 1. Wählen Sie **OK**.
-1. Die Seite **Sortierte Bestandentnahme: Entnehmen** zeigt die Entnahmearbeit, die ausgeführt werden müssen. Wählen Sie aus dem Lagerplatz *SORT* und Ziel-LP *PLP02* , die mehrere Artikel und eine Menge von *1* hat.
+1. Die Seite **Sortierte Bestandentnahme: Entnehmen** zeigt die Entnahmearbeit, die ausgeführt werden müssen. Wählen Sie aus dem Lagerplatz *SORT* und Ziel-LP *PLP02*, die mehrere Artikel und eine Menge von *1* hat.
 1. Wählen Sie **OK**.
-1. Die Seite **Sortierte Bestandentnahme: Einlagern** zeigt die Einlagerunsarbeit, die ausgeführt werden müssen. Lagern Sie im Lagerplatz *Frachttür* und Ziel-LP *PLP02* , die mehrere Artikel und eine Menge von *1* hat.
+1. Die Seite **Sortierte Bestandentnahme: Einlagern** zeigt die Einlagerunsarbeit, die ausgeführt werden müssen. Lagern Sie im Lagerplatz *Frachttür* und Ziel-LP *PLP02*, die mehrere Artikel und eine Menge von *1* hat.
 1. Wählen Sie **OK**.
 
     Die Arbeit ist abgeschlossen.

@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: e703c6d505f1e2e77f454732301de7a6c130c58a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986502"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428718"
 ---
 # <a name="add-a-calculation-to-a-product-configuration-model"></a>Berechnung zu einem Produktkonfigurationsmodell hinzufügen
 
@@ -34,7 +34,7 @@ Im folgenden Verfahren sehen Sie, wie Sie einen neuen Berechnung zu einem Produk
 
 ## <a name="create-calculation-expression"></a>Berechnungsausdruck erstellen
 1. Klicken Sie auf "Ausdruck bearbeiten".
-2. Geben Sie im Feld "ConstraintBody" "If[CabinetFinish== "White", 10, 15]" ein.
+2. Geben Sie in das Feld ConstraintBody 'If[CabinetFinish=="White", 10, 15]' ein.
 3. Klicken Sie auf "Überprüfen".
 4. Klicken Sie auf "Schließen".
 5. Klicken Sie auf "OK".

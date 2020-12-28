@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e451b419da59817ccf397fbb231a1cd112fd45ca
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018444"
+ms.locfileid: "4429135"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals
 
@@ -70,7 +70,7 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 
 Um die Versionen der Bestellung anzuzeigen, die an den Kreditor gesendet wurden, sowie die Antworten des Kreditors, klicken Sie auf **Erfassungen** &gt; **Bestätigungsanforderungen**  der Bestätigungsanforderung  
 
-Bestellungen, die dem Kreditor für eine Antwort zugesendet wurden und den Status **Externe Prüfung** “ haben, werden entweder in der Liste **Bestellungen wurden an das Kreditorenportal gesendet, Warten auf Antwort** oder **Bestellungen wurden an das Kreditorenportal gesendet, Antwort erfordert Aktivität** ausgewählt. Wenn Sie eine Bestellung, die an den Kreditor gesendet wurde, ändern, sodass der Status zurück zu **Genehmigt** wechselt, wird die Bestellung nicht mehr in diesen Listen angezeigt. Um sehen, ob es zuvor eine Antwort für den Auftrag vom Kreditor gab, klicken Sie auf **Erfassung** &gt; **Bestätigungsanforderungen**.  
+Bestellungen, die dem Kreditor für eine Antwort zugesendet wurden und den Status **Externe Prüfung**“ haben, werden entweder in der Liste **Bestellungen wurden an das Kreditorenportal gesendet, Warten auf Antwort** oder **Bestellungen wurden an das Kreditorenportal gesendet, Antwort erfordert Aktivität** ausgewählt. Wenn Sie eine Bestellung, die an den Kreditor gesendet wurde, ändern, sodass der Status zurück zu **Genehmigt** wechselt, wird die Bestellung nicht mehr in diesen Listen angezeigt. Um sehen, ob es zuvor eine Antwort für den Auftrag vom Kreditor gab, klicken Sie auf **Erfassung** &gt; **Bestätigungsanforderungen**.  
 
 Kreditoren müssen die Bestellung im Kreditorenportal nicht bestätigen. Sie können auch eine E-Mail-Nachricht senden oder ihrer Zustimmung zu einer Bestellung über andere Kanäle vermitteln. Sie können den Auftrag dann manuell in Dynamics AX bestätigen. In diesem Fall erhalten Sie eine Warnung, dass der Auftrag bestätigt wird, obwohl keine Antwort vom Kreditor vorhanden ist. Die Bestellung wird dann in der Bestätigungshistorie im Kreditorenportal als offener, bestätigter Auftrag ohne Antworten aufgeführt. Der Kreditor hat zusätzlich nicht mehr die Möglichkeit, die Bestellung zu bestätigen oder abzulehnen.  
 

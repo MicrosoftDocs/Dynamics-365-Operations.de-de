@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 42ca1d4d2d9b45d79cf479833f83e498e3b73540
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975631"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428446"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>Erfassen des Empfangs zurückgelieferter Artikel 
 
@@ -92,7 +92,7 @@ Alternativ zur **Verwendung des Formulars** können Sie das Formular **Erfassung
 
 1.  Klicken auf **Vertrieb und Marketing** \> **Gemeinsam** \> **Rücklieferungen** \> **Alle Rücklieferungen**. Erstellen Sie eine neue Rücklieferung, oder öffnen Sie die Rücklieferung in der Liste. Wählen Sie auf der Inforegister **Positionen** die Rücklieferungsposition aus. Klicken Sie auf **Position aktualisieren** und dann auf **Registrierung**.
 
-2.  Weisen Sie im Feld **Dispositionscode** einen Dispositionscode zu, und klicken Sie anschließend auf **O**K.
+2.  Weisen Sie im Feld **Dispositionscode** einen Dispositionscode zu, und klicken Sie anschließend auf **O** K.
     
 
     > [!NOTE]

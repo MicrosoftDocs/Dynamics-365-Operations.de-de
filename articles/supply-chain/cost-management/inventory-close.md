@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a4cad461c6ff4ef6badeeba868eef45165cf5d33
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980657"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428679"
 ---
 # <a name="inventory-close"></a>Lagerabschluss
 
@@ -52,7 +52,7 @@ Wenn Sie eine Bestellung aus einem Auftrag erstellen, werden die für den urspr�
 Nach Abschluss der Aktualisierung kann der erstellte Sachkontobeleg überprüft werden, der aufgrund einer dieser Aufgaben gebucht wurde.
 
 1.  Wählen Sie auf der Seite **Abschluss und Regulierung** der Registerkarte **Überblick** die Aktualisierung aus, die überprüft werden soll.
-2.  Klicken Sie auf **Details**und wählen Sie dann **Beleg**aus.
+2.  Klicken Sie auf **Details** und wählen Sie dann **Beleg** aus.
 
 ## <a name="effects-of-the-inventory-close-process-on-the-general-ledger"></a>Auswirkungen des Lagerabschlusses auf das Hauptbuch
 Viele der Aufgaben, die Sie auf der Seite **Abschluss und Regulierung** ausführen können, führen zu einer Aktualisierung des Hauptbuchs. Das Hauptbuch wird beispielsweise aktualisiert, wenn Sie Regulierungen des vorhandenen Bestands, Regulierungen bei Lagerbuchungen, Lagerneuberechnungen sowie Lagerabschlüsse durchführen. 

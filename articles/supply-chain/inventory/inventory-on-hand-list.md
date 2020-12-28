@@ -17,11 +17,11 @@ ms.author: chuzheng
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: Release 10.0.12
 ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017390"
+ms.locfileid: "4429119"
 ---
 # <a name="inventory-on-hand-list"></a>Bestandslisten
 
@@ -39,7 +39,7 @@ Verwenden Sie die folgenden Tools, um die gesuchten Produkte zu finden:
 
 - Wählen Sie im Aktionsbereich [**Dimensionen**](#dimensions) aus, um ein Dialogfeld zu öffnen, wo Sie Spalten hinzufügen oder entfernen können, die im Raster **Verfügbar** angezeigt werden.
 - Im [Bereich **Filter**](#filters-pane) geben Sie Werte für bestimmte Felder ein, um nur Datensätze anzeigen zu lassen, die diesen Werten entsprechen. Beachten Sie, dass Filter, die Sie hier festlegen, für Quelltabellen gelten, die möglicherweise später gemäß den von Ihnen ausgewählten Dimensionen aggregiert werden. Informationen darüber, wie sich dieses Verhalten auf Ihre Ergebnisse auswirken kann, finden Sie weiter unten unter [Beispiele](#examples).
-- Im Bereich **Filter** wählen Sie **Anwenden** , um die Liste der passenden Lagerbestände im Raster **Verfügbar** zu generieren.
+- Im Bereich **Filter** wählen Sie **Anwenden**, um die Liste der passenden Lagerbestände im Raster **Verfügbar** zu generieren.
 - Im Raster **Verfügbar** wählen Sie eine beliebige Spaltenüberschrift aus, die nach den Werten in dieser Spalte sortiert oder gefiltert werden soll. Ein QuickFilter am oberen Rand des Rasters enthält zusätzliche Filteroptionen. Diese Filter gelten für die Ergebnisse, nicht für die Quelltabellen. Informationen darüber, wie sich dieses Verhalten auf Ihre Ergebnisse auswirken kann, finden Sie weiter unten unter [Beispiele](#examples).
 
 Für jeden passenden Artikel enthält das Raster **Verfügbar** die folgenden Spalten mit Bestandsinformationen.
@@ -48,7 +48,7 @@ Für jeden passenden Artikel enthält das Raster **Verfügbar** die folgenden Sp
 |---|---|
 | Physischer Bestand | Physische Menge, die in dem Bestand verfügbar ist. |
 | Physisch reserviert | Die gesamte physisch reservierte Menge. |
-| Physisch verfügbar | Die verfügbare (nicht reservierte) Menge, die im physischen Bestand verfügbar ist.<p>**Physisch verfügbar** ist ein berechnetes Feld. Der Wert entspricht dem Wert des **physischen Bestands** minus dem **Physisch reserviert** -Wert.</p> |
+| Physisch verfügbar | Die verfügbare (nicht reservierte) Menge, die im physischen Bestand verfügbar ist.<p>**Physisch verfügbar** ist ein berechnetes Feld. Der Wert entspricht dem Wert des **physischen Bestands** minus dem **Physisch reserviert**-Wert.</p> |
 | Bei zusätzlichen Dimensionen physisch verfügbar | Die verfügbare physische Menge für alle Dimensionen, die im Raster angezeigt werden. |
 | Insgesamt bestellt | Die Gesamtmenge, die in eingehenden Aufträgen enthalten ist oder die in verschiedenen Bestandserfassungen eine positive Menge aufweist. |
 | In Auftrag | Die Gesamtmenge, die in ausgehenden Aufträgen enthalten ist oder die in verschiedenen Bestandserfassungen eine negative Menge aufweist. |
@@ -58,10 +58,10 @@ Für jeden passenden Artikel enthält das Raster **Verfügbar** die folgenden Sp
 
 ## <a name="apply-filters-to-find-the-records-that-youre-looking-for"></a><a name="filters-pane"></a>Mit Filtern die Datensätze finden, nach denen Sie suchen
 
-Verwenden Sie den Bereich **Filter** , um die Bestandsliste zu filtern, sodass nur Datensätze enthalten sind, deren Feldwerte den Filterkriterien entsprechen. Legen Sie einen Filter wie folgt fest:
+Verwenden Sie den Bereich **Filter**, um die Bestandsliste zu filtern, sodass nur Datensätze enthalten sind, deren Feldwerte den Filterkriterien entsprechen. Legen Sie einen Filter wie folgt fest:
 
 1. Suchen Sie im Bereich **Filter** das Feld, nach dem Sie filtern möchten.
-2. Wählen Sie im Feld unter dem Namen des Zielfelds einen logischen Operator aus (z. B. *beginnt mit* , *gleich* oder *größer als* ).
+2. Wählen Sie im Feld unter dem Namen des Zielfelds einen logischen Operator aus (z. B. *beginnt mit*, *gleich* oder *größer als*).
 3. Geben Sie den Wert ein, nach dem Sie suchen.
 
 > [!IMPORTANT]
@@ -73,8 +73,8 @@ Verwenden Sie den Bereich **Filter** , um die Bestandsliste zu filtern, sodass n
 
 Sie können die im Bereich **Filter** verfügbaren Filter wie folgt ändern:
 
-- Um einen Filter aus dem Bereich zu entfernen, wählen Sie dessen **Schließen** -Schaltfläche ( **X** ).
-- Um einen Filter hinzuzufügen, wählen Sie **Hinzufügen** oben im Bereich **Filter**. Das Dialogfeld **Filterfelder hinzufügen** enthält eine Liste der verfügbaren Felder. Außerdem werden Informationen über den Datentyp und die Tabelle für jedes Feld angezeigt. Verwenden Sie die Spaltenüberschriften, um die Liste nach Bedarf zu filtern und zu sortieren, und aktivieren Sie dann das Kontrollkästchen für jedes Feld, das Sie dem Bereich **Filter** hinzufügen möchten. Wenn Sie fertig sind, wählen Sie **Einfügen** , um Ihre Änderungen zu übernehmen.
+- Um einen Filter aus dem Bereich zu entfernen, wählen Sie dessen **Schließen**-Schaltfläche (**X**).
+- Um einen Filter hinzuzufügen, wählen Sie **Hinzufügen** oben im Bereich **Filter**. Das Dialogfeld **Filterfelder hinzufügen** enthält eine Liste der verfügbaren Felder. Außerdem werden Informationen über den Datentyp und die Tabelle für jedes Feld angezeigt. Verwenden Sie die Spaltenüberschriften, um die Liste nach Bedarf zu filtern und zu sortieren, und aktivieren Sie dann das Kontrollkästchen für jedes Feld, das Sie dem Bereich **Filter** hinzufügen möchten. Wenn Sie fertig sind, wählen Sie **Einfügen**, um Ihre Änderungen zu übernehmen.
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Anzuzeigende Dimensionen auswählen
 

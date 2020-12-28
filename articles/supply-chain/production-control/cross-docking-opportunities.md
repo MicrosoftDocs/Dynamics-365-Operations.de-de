@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016838"
+ms.locfileid: "4429051"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Crossdocking von Produktionsaufträgen zu Ausgangsrampen
 
@@ -96,11 +96,11 @@ In der Crossdocking-Richtlinie können Sie ein Kriterium einrichten, um anzuford
 
 Nachdem ein Produkt an der Fertigungsstraße als fertig gemeldet wird, wird es zum Frachttürlagerplatz umgelagert. Dort wird es auf einen LKW geladen und an ein Verteilzentrum umgelagert. Verwenden Sie Unternehmens-USMF.
 
-1.  Aktivieren Sie einen neuen Nummernkreis für das Crossdocking. Wechseln Sie zur Seite **Nummernkreise** , und wählen Sie die Schaltfläche **Generieren** aus. Der Assistent führt Sie durch den Prozess.
+1.  Aktivieren Sie einen neuen Nummernkreis für das Crossdocking. Wechseln Sie zur Seite **Nummernkreise**, und wählen Sie die Schaltfläche **Generieren** aus. Der Assistent führt Sie durch den Prozess.
 2.  Erstellen Sie eine Crossdockingrichtlinie. Wechseln Sie zur Seite **Crossdocking-Richtlinie** und erstellen Sie eine neue Richtlinie namens **Crossdocking zum Umlagerungsauftrag**. Beachten Sie, dass Sie nur den Arbeitsauftragstyp **Umlagerungsabgang** auswählen können und dass die einzige verfügbare Crossdockingstrategie **Datum und Uhrzeit** ist.
 3.  Erstellen Sie eine Arbeitsrichtlinie. Wechseln Sie zur Seite **Arbeitsrichtlinien** und erstellen Sie eine neue Arbeitsrichtlinie namens **Cross Dock L0101**.
 4.  Richten Sie Auslastungen ein, sodass diese für Umlagerungsaufträge automatisch erstellt werden. Legen Sie in den Lagerortparametern Auslastungen fest, damit diese automatisch erstellt werden, wenn Umlagerungsaufträge erstellt werden. Eine Auslastung ist eine Voraussetzung, damit ein Umlagerungsauftrag für das Crossdocking freigegeben wird.
-5.  Richten Sie Artikelladungszuordnung ein. Wechseln Sie zur Seite **Artikelauslastungszuordnung** , und richten Sie eine Standardauslastungsvorlage für die Artikelgruppe **CarAudio** ein. Diese Zuordnung wird die Auslastungsvorlage für die Auslastung automatisch einfügen, wenn der Umlagerungsauftrag erstellt wird.
+5.  Richten Sie Artikelladungszuordnung ein. Wechseln Sie zur Seite **Artikelauslastungszuordnung**, und richten Sie eine Standardauslastungsvorlage für die Artikelgruppe **CarAudio** ein. Diese Zuordnung wird die Auslastungsvorlage für die Auslastung automatisch einfügen, wenn der Umlagerungsauftrag erstellt wird.
 6.  Erstellen Sie einen Umlagerungsauftrag. Erstellen Sie den Umlagerungsauftrag für Artikelnummer L0101. Menge = 20.
 7.  Geben Sie den Umlagerungsauftrag aus der Ladungsplanungsworkbench frei. Auf der Registerkarte **Versenden** wählen Sie die Menüoption für die Ladungsplanungsworkbench und im Menü **Freigabe** der Ladungsposition wählen Sie **Für Lagerort freigeben** aus. Eine offene Serienposition des Typs **Umlagerungsabgang** ist jetzt für den Umlagerungsauftrag vorhanden.
 8.  Erstellen Sie einen Produktionsauftrag. Wechseln Sie zur Listenseite **Produktionsauftrag** und erstellen Sie einen Produktionsauftrag für Produkt L0101. Menge = 20. Schätzen und starten Sie den Produktionsauftrag. Beachten Sie, dass das Felde **Kommissionierliste jetzt buchen** auf **Nein** festgelegt bleibt.
@@ -115,9 +115,9 @@ Nachdem ein Produkt an der Fertigungsstraße als fertig gemeldet wird, wird es a
 1.  Ändern Sie die Crossdockingrichtlinie. Ändern Sie die Crossdockingrichtlinie, die Sie in Szenario 1 erstellt haben, indem Sie das Kontrollkästchen **Crossdockingbedarf erfordert Lagerplatz** aktivieren.
 2.  Erstellen Sie einen neuen Umlagerungsauftrag.
 3.  Öffnen Sie die **Ladungsplanungsworkbench**.
-4.  Wechseln Sie aus der Ladungsplanungsworkbench zum Abschnitt **Auslastung** , und wählen Sie **Terminplanung** im Menü **Transport** aus, um eine neue Terminplanung zu erstellen. Beachten Sie, dass die Terminplanung eine Referenz zu dem Umlagerungsauftrag im Feld **Auftragsnummer** hat. Im Feld **Geplantes Startdatum/-uhrzeit am Lagerplatz** können Sie das Datum und die Uhrzeit für den Termin festlegen. Dieses Datum und die Uhrzeit werden verwendet, wenn Crossdockingbedarf während des Crossdockingprozesses priorisiert wird. Die Angaben zu Datum und Uhrzeit, die Sie in diesem Feld festlegen, aktualisieren das Feld **Geplantes Datum und Uhrzeit des Versands der Ladung** bei der entsprechende Auslastung. Der Lagerplatz auf dem Inforegister **Versanddetails** bestimmt den Lagerplatz, an den der Umlagerungsauftrag versendet wurde.
+4.  Wechseln Sie aus der Ladungsplanungsworkbench zum Abschnitt **Auslastung**, und wählen Sie **Terminplanung** im Menü **Transport** aus, um eine neue Terminplanung zu erstellen. Beachten Sie, dass die Terminplanung eine Referenz zu dem Umlagerungsauftrag im Feld **Auftragsnummer** hat. Im Feld **Geplantes Startdatum/-uhrzeit am Lagerplatz** können Sie das Datum und die Uhrzeit für den Termin festlegen. Dieses Datum und die Uhrzeit werden verwendet, wenn Crossdockingbedarf während des Crossdockingprozesses priorisiert wird. Die Angaben zu Datum und Uhrzeit, die Sie in diesem Feld festlegen, aktualisieren das Feld **Geplantes Datum und Uhrzeit des Versands der Ladung** bei der entsprechende Auslastung. Der Lagerplatz auf dem Inforegister **Versanddetails** bestimmt den Lagerplatz, an den der Umlagerungsauftrag versendet wurde.
 5.  Geben Sie im **Ladungsplanungsworkbench** an den Lagerort frei.
-6.  Erstellen Sie einen Produktionsauftrag für Artikelnummer **L0101** , und legen Sie den Status mit einer Menge von 20 auf **Gestartet** fest.
+6.  Erstellen Sie einen Produktionsauftrag für Artikelnummer **L0101**, und legen Sie den Status mit einer Menge von 20 auf **Gestartet** fest.
 7.  Vom mobilen Gerät als beendet melden.
 8.  Wechseln Sie zum Portal für das mobile Gerät und wählen Sie die Menüoption **Fertig melden und einlagern** aus.
 9.  Melden Sie Artikelnummer **L0101** Handgerät als fertig. Beachten Sie, dass der Einlieferungslagerplatz jetzt **BAYDOOR 2** ist. Diese Option ist vom Terminplanung anstelle von **Umlagerungseingang** Lagerplatzdirektive gefunden.

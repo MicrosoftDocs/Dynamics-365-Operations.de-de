@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8ebd53d66eb81bbee9d3e67d05102c8df413d2a3
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214091"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428664"
 ---
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Standardkosten für einen neuen produzierten Artikel aktualisieren
 
@@ -37,7 +37,7 @@ Für die folgenden Richtlinien wird die Verwendung des Zwei-Versionen-Ansatzes f
 -   Weisen Sie den Nachkalkulationstyp **Standardkosten** zu.
 -   Weisen Sie eine aussagekräftige Kennung zu, die Aufschluss über den Zweck der Nachkalkulationsversion gibt, wie z. B. **2016-AKTUALISIERUNGEN**.
 -   Überprüfen Sie, ob in der Feldgruppe **Preistyp zulassen** der **Einstandspreis** auf **Ja** festgelegt ist.
--   Kostendatensätze müssen für jeden Standort eingegeben werden können (lassen Sie daher das Feld **Standort**leer). Durch Angabe eines Standorts können Kostendatensätze nur für diesen Standort eingegeben werden.
+-   Kostendatensätze müssen für jeden Standort eingegeben werden können (lassen Sie daher das Feld **Standort** leer). Durch Angabe eines Standorts können Kostendatensätze nur für diesen Standort eingegeben werden.
 -   Verwenden Sie das Fallback-Prinzip **Aktiv**.
 
 Führen Sie die folgenden Schritte aus, um innerhalb der unveränderlichen Periode neue produzierte Artikel hinzuzufügen.

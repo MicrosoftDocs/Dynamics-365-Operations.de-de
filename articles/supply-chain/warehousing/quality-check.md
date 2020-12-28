@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016630"
+ms.locfileid: "4429101"
 ---
 # <a name="quality-check"></a>Qualitätsprüfung
 
@@ -77,8 +77,8 @@ Die Qualitätsprüfungsvorlage legt die Regeln für die schnelle Stichprobenprü
 
         Wählen Sie die Richtlinie aus, die verwendet werden soll, wenn die Bestandsqualität abgelehnt wurde. Die folgenden Optionen stehen zur Verfügung:
 
-        - *Nur Arbeit erstellen* : Erstellen Sie nur die Arbeit, um die Bestandsumlagerung zu ermöglichen.
-        - *Qualitätsprüfungsauftrag erstellen* : Erstellen Sie einen Qualitätsprüfungsauftrag, um Qualitätstests zu ermöglichen.
+        - *Nur Arbeit erstellen*: Erstellen Sie nur die Arbeit, um die Bestandsumlagerung zu ermöglichen.
+        - *Qualitätsprüfungsauftrag erstellen*: Erstellen Sie einen Qualitätsprüfungsauftrag, um Qualitätstests zu ermöglichen.
 
     - **Testgruppe:** *Anlage*
 
@@ -132,14 +132,14 @@ Mithilfe von Arbeitsvorlagen können Sie die Arbeitsvorgänge definieren, die am
 
         Wählen Sie die eindeutige Kennung für die Arbeitsklasse aus. Sie verwenden diesen Wert, um die Menüoptionen im mobilen Gerät und die Typen der Arbeit, die diese Menüoptionen verarbeiten können, zu konfigurieren.
 
-1. Wählen Sie im Aktionsbereich **Speichern** , um Ihre bisherige Arbeit zu speichern.
+1. Wählen Sie im Aktionsbereich **Speichern**, um Ihre bisherige Arbeit zu speichern.
 
     Sie erhalten eine Informationsmeldung mit dem Titel „Ungültig – Qualitätsprüfung muss direkt nach einer Entnahme erfolgen“. Daher müssen Sie die **Positionsnummer** für die gerade hinzugefügte Position ändern.
 
 1. Ändern Sie den Wert der **Positionsnummer** für die neue Position wie folgt:
 
     1. Im Bereich **Arbeitsvorlagendetails** wählen sie die Position aus, in der das Feld **Arbeitstyp** auf *Qualitätsprüfung* gesetzt ist.
-    2. Nutzen Sie die Schaltfläche **Nach oben** oder **Nach unten** , um die Position *Qualitätsprüfung* hinter die Position *Entnahme* zu verschieben.
+    2. Nutzen Sie die Schaltfläche **Nach oben** oder **Nach unten**, um die Position *Qualitätsprüfung* hinter die Position *Entnahme* zu verschieben.
 
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 
@@ -158,7 +158,7 @@ Erstellen Sie als Nächstes eine Arbeitsvorlage für die Qualitätsprüfung.
     - **Arbeitsvorlagenbeschreibung:** *51 Qualitätsprüfung*
 
 1. Wählen Sie im Aktionsbereich **Speichern** aus, um den Abschnitt **Arbeitsvorlagendetails** verfügbar zu machen.
-1. Während die neue Vorlage noch im Abschnitt **Übersicht** ausgewählt ist, wählen Sie **Neu** im Abschnitt **Arbeitsvorlagendetails** , um dort eine Zeile zum Raster hinzuzufügen.
+1. Während die neue Vorlage noch im Abschnitt **Übersicht** ausgewählt ist, wählen Sie **Neu** im Abschnitt **Arbeitsvorlagendetails**, um dort eine Zeile zum Raster hinzuzufügen.
 1. Legen Sie in der neuen Zeile die folgenden Werte fest:
 
     - **Arbeitstyp:** *Entnahme*
@@ -166,7 +166,7 @@ Erstellen Sie als Nächstes eine Arbeitsvorlage für die Qualitätsprüfung.
 
         Wählen Sie den Namen der [Arbeiterklasse](#work-class) aus, die Sie zuvor für die Qualitätskontrolle erstellt haben.
 
-1. In dem Abschnitt **Arbeitsvorlagendetails** wählen Sie wieder **Neu** , um eine weitere Zeile hinzuzufügen.
+1. In dem Abschnitt **Arbeitsvorlagendetails** wählen Sie wieder **Neu**, um eine weitere Zeile hinzuzufügen.
 1. Legen Sie in der neuen Zeile die folgenden Werte fest:
 
     - **Arbeitstyp:** *Einlagern*
@@ -183,7 +183,7 @@ Weitere Informationen zu Arbeitsvorlagen, finden Sie unter [Steuern von Lagerarb
 Lagerplatzrichtlinien sind Regeln, die dabei helfen, Entnahme- und Einlagerungslagerorte für die Lagerumlagerung zu identifizieren. In einer Auftragsbuchung bestimmt eine Lagerplatzrichtlinie z. B., wo die Artikel entnommen und wo die entnommenen Artikel eingelagert werden. Sie müssen eine Lagerplatzrichtlinienregel konfigurieren, um zu definieren, wie fehlgeschlagene Qualitätsprüfungen behandelt werden.
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerplatzrichtlinien**.
-1. Stellen Sie im linken Bereich das Feld **Arbeitsauftragstyp** auf *Bestellungen* , um mit Lagerplatzrichtlinien dieses Typs zu arbeiten.
+1. Stellen Sie im linken Bereich das Feld **Arbeitsauftragstyp** auf *Bestellungen*, um mit Lagerplatzrichtlinien dieses Typs zu arbeiten.
 1. Wählen Sie im Aktivitätsbereich die Option **Neu** aus, um eine Lagerplatzrichtlinie für Qualitätsprüfungen zu erstellen.
 1. Legen Sie im Header die folgenden Werte fest:
 
@@ -204,10 +204,10 @@ Lagerplatzrichtlinien sind Regeln, die dabei helfen, Entnahme- und Einlagerungsl
     - **Bis Menge:** *1000000*
 
 1. Wählen Sie im Aktionsbereich **Speichern** aus, um die neue Position zu speichern und das Inforegister **Lagerplatzrichtlinienaktivitäten** verfügbar zu machen.
-1. Während die neue Position noch im Inforegister **Positionen** ausgewählt ist, gehen Sie auf **Neu** im Inforegister **Lagerplatzrichtlinienaktivitäten** , um dort eine Zeile zum Raster hinzuzufügen, damit Sie eine Aktion für die Position festlegen können.
+1. Während die neue Position noch im Inforegister **Positionen** ausgewählt ist, gehen Sie auf **Neu** im Inforegister **Lagerplatzrichtlinienaktivitäten**, um dort eine Zeile zum Raster hinzuzufügen, damit Sie eine Aktion für die Position festlegen können.
 1. Stellen Sie in der neuen Zeile das Feld **Name** auf *Qualität*. Übernehmen Sie für alle verbleibenden Felder die Standardwerte.
 1. Wählen Sie im Aktionsbereich **Speichern** aus, um die Schaltfläche **Abfrage bearbeiten** im Inforegister **Lagerplatzrichtlinienaktivitäten** verfügbar zu machen.
-1. Während die gerade hinzugefügte Position im Inforegister **Lagerplatzrichtlinienaktivitäten** noch ausgewählt ist, gehen Sie auf **Abfrage bearbeiten** , um ein Dialogfeld zu öffnen, in dem Sie die Abfrage für die Aktion bearbeiten können.
+1. Während die gerade hinzugefügte Position im Inforegister **Lagerplatzrichtlinienaktivitäten** noch ausgewählt ist, gehen Sie auf **Abfrage bearbeiten**, um ein Dialogfeld zu öffnen, in dem Sie die Abfrage für die Aktion bearbeiten können.
 1. Wählen Sie auf der Registerkarte **Bereich** die Option **Hinzufügen** aus, um dem Raster eine Abfrage hinzuzufügen.
 1. Legen Sie in der neuen Zeile die folgenden Werte fest:
 
@@ -216,9 +216,9 @@ Lagerplatzrichtlinien sind Regeln, die dabei helfen, Entnahme- und Einlagerungsl
     - **Feld:** *Lagerplatz*
     - **Kriterien:** *QMS*
 
-    Der *QMS* -Lagerplatz ist ein Lagerort für die Qualität.
+    Der *QMS*-Lagerplatz ist ein Lagerort für die Qualität.
 
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 1. Jetzt müssen Sie die Reihenfolge der vorhandenen Bestellungs-Lagerplatzrichtlinien für Lagerort *51* ändern. Speichern Sie die neue Lagerplatzrichtlinie *51 zu Qualität* aus, aktualisieren Sie die Seite und wählen Sie die Lagerplatzrichtlinie in der Liste aus. Benutzen Sie dann die Schaltflächen **Nach oben** und **Nach unten** im Aktionsbereich, um die Lagerplatzrichtlinie für Lagerort *51* in der folgenden Reihenfolge festzulegen. (Bevor Sie **Nach oben** oder **Nach unten** wählen, müssen Sie eine Lagerplatzrichtlinie in der Liste auswählen.)
 
     1. 51 zu Qualität
@@ -308,16 +308,16 @@ Nachdem die Bestellung erstellt wurde, kann sie über das Menüelement **PO-Posi
 1. Bestätigen Sie die Bestellnummer.
 1. Geben Sie im Feld **POSNUM** die Zahl der eingegangenen Bestellposition ein. Da die Bestellung in diesem Szenario nur eine Position enthält, geben Sie *1* im Feld **POSNUM** bei jedem Eingangsschritt ein.
 1. Bestätigen Sie die Positionsnummer.
-1. Geben Sie im Feld **MENGE** die eingehende Menge ein. Weil die Bestellung in diesem Szenario drei Paletten ( *PL* ) umfasst und es drei Eingangsschritte gibt, geben Sie für jeden Schritt *1* im Feld **MENGE** ein.
+1. Geben Sie im Feld **MENGE** die eingehende Menge ein. Weil die Bestellung in diesem Szenario drei Paletten (*PL*) umfasst und es drei Eingangsschritte gibt, geben Sie für jeden Schritt *1* im Feld **MENGE** ein.
 1. Bestätigen Sie die Menge.
 
-    Eine Seite **Qualitätsprüfung** öffnet sich, die aber keine Eingagefelder enthält. Sie hat nur die Bestätigungstaste (Häkchen) unten und die Menütaste ( **≡** ) oben. (Die Menütaste wird manchmal als Hamburger- oder Hamburgerschaltfläche bezeichnet.) Um den Qualitätsprüfungsprozess zu beschleunigen, bestätigt der Benutzer nur die Seite **Qualitätsprüfung** , wenn die Palette die Qualitätsprüfung passiert.
+    Eine Seite **Qualitätsprüfung** öffnet sich, die aber keine Eingagefelder enthält. Sie hat nur die Bestätigungstaste (Häkchen) unten und die Menütaste (**≡**) oben. (Die Menütaste wird manchmal als Hamburger- oder Hamburgerschaltfläche bezeichnet.) Um den Qualitätsprüfungsprozess zu beschleunigen, bestätigt der Benutzer nur die Seite **Qualitätsprüfung**, wenn die Palette die Qualitätsprüfung passiert.
 
     ![Qualitätsprüfungsseite](media/quality-check.png "Qualitätsprüfungsseite")
 
 1. Wählen Sie die Bestätigungsschaltfläche, um die Qualitätsprüfung für Palette 1 aus Position 1 als bestanden zu kennzeichnen.
 
-    Die Seite **Bestellungen: Einlagern** , die sich öffnet, enthält die Details der Einlagerungsarbeit:
+    Die Seite **Bestellungen: Einlagern**, die sich öffnet, enthält die Details der Einlagerungsarbeit:
 
     - **LOC:** Das System hat den Lagerplatz ermittelt
 
@@ -342,10 +342,10 @@ In diesem Szenario wird Palette 2 abgelehnt.
 
     Die Seite **Qualitätsprüfung** wird angezeigt. Für diesen Wareneingang wird die Palette aus Qualitätsgründen abgelehnt und am Qualitätslagerplatz *QMS* eingelagert.
 
-1. Wählen Sie die Menütaste ( **≡** ) oben auf der Seite und wählen Sie dann im Menü die Option **Ablehnen**.
-1. Auf der Seite **Aufgabe** , die angezeigt wird, geben Sie **QMS** als Lagerplatz für das *Einlagern* ein, um die Palette zur weiteren Überprüfung zu senden.
+1. Wählen Sie die Menütaste (**≡**) oben auf der Seite und wählen Sie dann im Menü die Option **Ablehnen**.
+1. Auf der Seite **Aufgabe**, die angezeigt wird, geben Sie **QMS** als Lagerplatz für das *Einlagern* ein, um die Palette zur weiteren Überprüfung zu senden.
 
-    Die Seite **Qualität in der Qualitätsprüfung: Einlagern** , die sich öffnet, enthält die Details der Einlagerungsarbeit:
+    Die Seite **Qualität in der Qualitätsprüfung: Einlagern**, die sich öffnet, enthält die Details der Einlagerungsarbeit:
 
     - **LOC:** *QMS*
 
@@ -378,7 +378,7 @@ In diesem Szenario wird Palette 3 angenommen.
 
 1. Wählen Sie die Bestätigungsschaltfläche, um die Qualitätsprüfung als bestanden zu kennzeichnen.
 
-    Die Seite **Bestellungen: Einlagern** , die sich öffnet, enthält die Details der Einlagerungsarbeit:
+    Die Seite **Bestellungen: Einlagern**, die sich öffnet, enthält die Details der Einlagerungsarbeit:
 
     - **LOC:** Das System hat den Lagerplatz ermittelt
 
@@ -394,6 +394,6 @@ In diesem Szenario wird Palette 3 angenommen.
 
     Auf der Seite **Aufgabe** der eingehenden Bestellposition erhalten Sie die Meldung „Arbeit abgeschlossen“. Das Feld **POSNUM** ist verfügbar, damit Sie mit dem Eingang der nächsten Palette beginnen können.
 
-1. Wählen Sie die Menütaste ( **≡** ) oben auf der Seite und wählen Sie dann im Menü die Option **Abbrechen** , um zum Menü zurückzukehren.
+1. Wählen Sie die Menütaste (**≡**) oben auf der Seite und wählen Sie dann im Menü die Option **Abbrechen**, um zum Menü zurückzukehren.
 
 Sie können jetzt die mobile App schließen.

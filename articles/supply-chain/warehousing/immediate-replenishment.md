@@ -19,11 +19,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: c69a9c9fd595280ba4f05a11409a3e672e4b1691
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017505"
+ms.locfileid: "4429095"
 ---
 # <a name="immediate-replenishment"></a>Sofortige Wiederbeschaffung
 
@@ -47,7 +47,7 @@ Sofortige Wiederbeschaffung wird während der Wellenausführung verwendet, wenn 
 
 ## <a name="set-up-immediate-replenishment"></a>Sofortige Wiederbeschaffung einrichten
 
-- Wechseln Sie zu **Lagerortverwaltung** \> **Setup** \> **Lagerplatzdirektiven** , und wählen Sie dann auf der Registerkarte **Positionen** in der Liste **Sofortige Wiederbeschaffungsvorlage** eine Wiederbeschaffungsvorlage für Wellenbedarf aus.
+- Wechseln Sie zu **Lagerortverwaltung** \> **Setup** \> **Lagerplatzdirektiven**, und wählen Sie dann auf der Registerkarte **Positionen** in der Liste **Sofortige Wiederbeschaffungsvorlage** eine Wiederbeschaffungsvorlage für Wellenbedarf aus.
 
 Die Wiederbeschaffungsvorlage wird angewendet, wenn die Lagerplatzdirektivenposition keine dedizierte Maßeinheit zuteilen kann.
 

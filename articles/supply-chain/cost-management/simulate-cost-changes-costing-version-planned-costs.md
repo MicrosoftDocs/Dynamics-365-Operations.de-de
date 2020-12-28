@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f6e1d52f48a6b7675fb16ccc5ecd9ba7cd25ac8b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214457"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428785"
 ---
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulieren von Kostenänderungen mithilfe einer Nachkalkulationsversion für geplante Kosten
 
@@ -45,7 +45,7 @@ Gehen Sie zum Definieren der Nachkalkulationsversion für die Simulation gemäß
 -   Sperren Sie die Aktivierung ausstehender Kosten. Für Kostendatensätze in der Nachkalkulationsversion vom Typ "Simulation" müssen lediglich ausstehende Kosten eingegeben werden.
 -   Geben Sie kein Anfangsdatum an. Für jede Herstellkostenkalkulation mit der Nachkalkulationsversion vom Typ "Simulation" wird ein Berechnungsdatum eingegeben.
 -   Geben Sie ein Fallback-Prinzip vom Typ **Zurzeit aktiv** ein. Das Fallback-Prinzip ermöglicht die Eingabe stufenweiser Kostenänderungen zu Simulationszwecken bei gleichzeitiger Verwendung der zurzeit aktiven Kosten als Quelle für alle anderen Kostendatensätze. Dabei wird davon ausgegangen, dass alle zurzeit aktiven Kosten auch für alle anderen Kostendatensätze vorhanden sind.
--   Geben Sie ein Einstandspreismodell vom Typ **Einstandspreis der Version**an, legen Sie jedoch keine Einschränkungen für die Berechnung fest. Beispielsweise kann die Simulation das **Herstellkostenkalkulationsgruppe** Einstandspreismodell verwenden, um die Quelle der Kostenbeitragsdaten für eingekaufte Artikel anzugeben.
+-   Geben Sie ein Einstandspreismodell vom Typ **Einstandspreis der Version** an, legen Sie jedoch keine Einschränkungen für die Berechnung fest. Beispielsweise kann die Simulation das **Herstellkostenkalkulationsgruppe** Einstandspreismodell verwenden, um die Quelle der Kostenbeitragsdaten für eingekaufte Artikel anzugeben.
 -   Geben Sie einen Stücklistenauflösungsmodus vom Typ **Mehrere Ebene** an, legen Sie jedoch keine Einschränkungen für die Berechnung fest. Die Simulationen kann dann auch andere Stücklistenauflösungsmodi verwendet werden.
 
 ## <a name="costing-versions"></a>Nachkalkulationsversionen

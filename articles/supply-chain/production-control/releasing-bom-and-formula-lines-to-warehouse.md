@@ -18,11 +18,11 @@ ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: bf2beef30ba1cf6877325e686b76de5dc8d3ba55
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017229"
+ms.locfileid: "4429048"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Stücklisten- und Formelpositionen für den Lagerort freigeben
 
@@ -46,7 +46,7 @@ Für eine rasche Vorführung zur Freigabe von Stücklisten und Formelzeilen für
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Freigabe der Stücklisten- und Formelpositionen mithilfe eines Bachauftrags
 
-Der Batchauftrag **Automatische Freigabe von Stücklisten- und Formelpositionen** durchläuft die ausgewählten Stücklisten- und Formelpositionen, bei denen eine Restmenge freigegeben werden muss. Der Einzelvorgang berücksichtigt nur Aufträge, die einen Status **Freigegeben** , **Gestartet** oder **Als fertig gemeldet** besitzen. Wenn eine Stücklisten- oder Formelposition eine freizugebende Restmenge hat, wird durch den Einzelvorgang bis zur Menge freigegeben, die von der Menge abgedeckt werden kann, die bereits physisch reserviert wurde und die Menge, die physisch verfügbar ist.
+Der Batchauftrag **Automatische Freigabe von Stücklisten- und Formelpositionen** durchläuft die ausgewählten Stücklisten- und Formelpositionen, bei denen eine Restmenge freigegeben werden muss. Der Einzelvorgang berücksichtigt nur Aufträge, die einen Status **Freigegeben**, **Gestartet** oder **Als fertig gemeldet** besitzen. Wenn eine Stücklisten- oder Formelposition eine freizugebende Restmenge hat, wird durch den Einzelvorgang bis zur Menge freigegeben, die von der Menge abgedeckt werden kann, die bereits physisch reserviert wurde und die Menge, die physisch verfügbar ist.
 
 ### <a name="example-of-a-batch-job-release"></a>Beispiel einer Batchauftragsfreigabe
 
@@ -60,7 +60,7 @@ Der Batchauftrag **Automatische Freigabe von Stücklisten- und Formelpositionen*
 
 ### <a name="batch-job-setup"></a>Batchauftragssetup
 
-In der Abfrage für den Batchauftrag **Automatische Freigabe der Stücklisten- und Formelpositionen** können Sie ein Filterkriterium einrichten, um anzugeben, wie viele Tage im Voraus der Einzelvorgang nach Positionen suchen soll, die nicht freigegebene Mengen haben. In der Abfrage für den Einzelvorgang, im Feld **Rohmaterialdatum** , verwenden Sie die Funktion **(LessThanDate())** als Filterkriterium.
+In der Abfrage für den Batchauftrag **Automatische Freigabe der Stücklisten- und Formelpositionen** können Sie ein Filterkriterium einrichten, um anzugeben, wie viele Tage im Voraus der Einzelvorgang nach Positionen suchen soll, die nicht freigegebene Mengen haben. In der Abfrage für den Einzelvorgang, im Feld **Rohmaterialdatum**, verwenden Sie die Funktion **(LessThanDate())** als Filterkriterium.
 
 Die folgende Abbildung zeigt einen Produktionsauftrag, der zwei Einzelvorgänge hat, 10 und 20, die die Zusammenstellung und Verpackung für den Produktionsauftrag abdecken. Jeder Einzelvorgang ist so eingerichtet, dass er eine Menge von Material verbraucht. In dieser Abbildung entspricht der Freigabezeitraum, der durch den grünen Pfeil unter der Zeitposition angezeigt wird der Anzahl der Tage, die im Kriterium **(LessThanDate())** festgelegt wurde. Beispielsweise gibt **(LessThanDate (2))** an, dass der Einzelvorgang nur innerhalb eines Zeitraums von zwei Tagen nach nicht freigegebenen Mengen suchen soll.
 
@@ -77,7 +77,7 @@ Wenn Sie Materialien mithilfe der Parametereinstellung **Bei Freigabe des Produk
 
 Um die Arbeitsgänge zu steuern, zu denen Material freigegeben werden soll, verwenden Sie die Seite **Für Lagerort freigeben**.
 
-- Wählen Sie **Produktionssteuerung** \> **Produktionsaufträge** \> **Alle Produktionsaufträge** aus, wählen Sie einen Produktionsauftrag aus, und klicken Sie auf der Registerkarte **Lagerort** dann auf **Für Lagerort freigeben**. Verwenden Sie dann die Felder **Von Arbeitsgang-Nr.** und **Bis Arbeitsgang-Nr.** , um den Bereich der Arbeitsgangnummern anzugeben.
+- Wählen Sie **Produktionssteuerung** \> **Produktionsaufträge** \> **Alle Produktionsaufträge** aus, wählen Sie einen Produktionsauftrag aus, und klicken Sie auf der Registerkarte **Lagerort** dann auf **Für Lagerort freigeben**. Verwenden Sie dann die Felder **Von Arbeitsgang-Nr.** und **Bis Arbeitsgang-Nr.**, um den Bereich der Arbeitsgangnummern anzugeben.
 
 Die folgende Abbildung zeigt einen Produktionsauftrag, der zwei Arbeitsgänge hat, 10 und 20. Wenn Sie in diesem Beispiel die Freigabe auf Arbeitsgang 10 einschränken, wird nur Material M9203 freigegeben.
 

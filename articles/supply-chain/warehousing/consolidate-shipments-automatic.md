@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 ms.openlocfilehash: ac3ab25dc1355ee15e1209950ff0f3b3933b7095
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016861"
+ms.locfileid: "4429046"
 ---
 # <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Lieferungen mithilfe der automatischen Auftragsfreigabe konsolidieren, wenn sie im Lager freigegeben werden
 
@@ -43,7 +43,7 @@ In dem hier beschriebenen Szenario wird davon ausgegangen, dass Sie die Funktion
 
 Erstellen Sie zunächst eine Sammlung von Kundenaufträgen, mit denen Sie arbeiten können. Sie müssen mit einem Lagerort arbeiten, der für WMS-Prozesse (Advanced Warehouse) aktiviert ist. Sofern nicht ausdrücklich ein anderes Lager erwähnt wird, muss dasselbe Lager für jeden der folgenden Auftragssätze verwendet werden.
 
-Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstellen Sie eine Sammlung von Kundenaufträgen mit den Einstellungen, die in den folgenden Unterabschnitten beschrieben werden.
+Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge**, und erstellen Sie eine Sammlung von Kundenaufträgen mit den Einstellungen, die in den folgenden Unterabschnitten beschrieben werden.
 
 ### <a name="create-order-set-1"></a>Auftragssatz 1 erstellen
 
@@ -56,7 +56,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 #### <a name="sales-order-1-2"></a>Auftrag 1-2
@@ -68,7 +68,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 #### <a name="sales-order-1-3"></a>Auftrag 1-3
@@ -80,12 +80,12 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 1. Fügen Sie eine zweite Auftragsposition mit den folgenden Einstellungen hinzu:
 
-    - **Artikelnummer:** *A0002* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0002* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
     - **Lieferart:** *Airwa-Air*
 
@@ -99,12 +99,12 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *M9200* (ein Artikel, bei dem der **Code 4** -Filter auf *Brennbar* eingestellt ist)
+    - **Artikelnummer:** *M9200* (ein Artikel, bei dem der **Code 4**-Filter auf *Brennbar* eingestellt ist)
     - **Menge** *1.00*
 
 1. Fügen Sie eine zweite Auftragsposition mit den folgenden Einstellungen hinzu:
 
-    - **Artikelnummer:** *M9201* (ein Artikel, bei dem der **Code 4** -Filter auf *Explosiv* eingestellt ist)
+    - **Artikelnummer:** *M9201* (ein Artikel, bei dem der **Code 4**-Filter auf *Explosiv* eingestellt ist)
     - **Menge** *1.00*
     - **Lieferart:** *Airwa-Air*
 
@@ -118,12 +118,12 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *M9200* (ein Artikel, bei dem der **Code 4** -Filter auf *Brennbar* eingestellt ist)
+    - **Artikelnummer:** *M9200* (ein Artikel, bei dem der **Code 4**-Filter auf *Brennbar* eingestellt ist)
     - **Menge** *1.00*
 
 1. Fügen Sie eine zweite Auftragsposition mit den folgenden Einstellungen hinzu:
 
-    - **Artikelnummer:** *M9201* (ein Artikel, bei dem der **Code 4** -Filter auf *Explosiv* eingestellt ist)
+    - **Artikelnummer:** *M9201* (ein Artikel, bei dem der **Code 4**-Filter auf *Explosiv* eingestellt ist)
     - **Menge** *1.00*
     - **Lieferart:** *Airwa-Air*
 
@@ -141,7 +141,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 ### <a name="create-order-set-5"></a>Auftragssatz 5 erstellen
@@ -155,7 +155,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 #### <a name="sales-order-5-3"></a>Auftrag 5-3
@@ -167,7 +167,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 ### <a name="create-order-set-6"></a>Auftragssatz 6 erstellen
@@ -181,7 +181,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 #### <a name="sales-orders-6-3-and-6-4"></a>Aufträge 6-3 und 6-4
@@ -193,7 +193,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 #### <a name="sales-orders-6-5-and-6-6"></a>Aufträge 6-5 und 6-6
@@ -207,7 +207,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 #### <a name="sales-orders-6-7-and-6-8"></a>Aufträge 6-7 und 6-8
@@ -221,7 +221,7 @@ Wechseln Sie zu **Debitoren \> Aufträge \> Alle Kundenaufträge** , und erstell
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
     - **Menge** *1.00*
 
 ## <a name="automatic-release-of-sales-orders-to-the-warehouse"></a>Automatische Freigabe von Aufträgen für den Lagerort
@@ -236,7 +236,7 @@ Für jeden Satz von Kundenaufträgen, den Sie zuvor erstellt haben, führen Sie 
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenvorlagen**.
 1. Stellen Sie das Feld **Wellenvorlagentyp** auf *Versand* ein.
-1. Suchen Sie die Wellenvorlage, die dem Lager zugeordnet ist, das Sie in den Auftragssätzen verwendet haben, die Sie für dieses Szenario erstellt haben, und wählen Sie sie aus. Zum Beispiel, wenn Sie ein Lager *24* verwendet haben, wählen Sie **Standard-24-Lieferung** -Wellenvorlage. Wenn Sie ein Lager *61* verwendet haben, wählen Sie die **61-Lieferung** -Wellenvorlage.
+1. Suchen Sie die Wellenvorlage, die dem Lager zugeordnet ist, das Sie in den Auftragssätzen verwendet haben, die Sie für dieses Szenario erstellt haben, und wählen Sie sie aus. Zum Beispiel, wenn Sie ein Lager *24* verwendet haben, wählen Sie **Standard-24-Lieferung**-Wellenvorlage. Wenn Sie ein Lager *61* verwendet haben, wählen Sie die **61-Lieferung**-Wellenvorlage.
 1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
 1. Legen Sie die Option **Welle bei Freigabe für Lagerort verarbeiten** auf *Nein* fest.
 
@@ -267,8 +267,8 @@ Folgen Sie dem [Grundlegenden Verfahren für die Freigabe an das Lager](#release
 
 Wenn Sie fertig sind, sollten Sie sehen, dass zwei Lieferungen erstellt wurden:
 
-- Die erste Lieferung enthält drei Zeilen und wurde mit der *CustomerMode* -Lieferungskonsolidierungsrichtlinie erstellt.
-- Die zweite Lieferung, die nicht *Airways* als Transportart der Lieferung verwendet, wurde unter Verwendung der *CustomerOrderNo* -Lieferungskonsolidierungsrichtlinie erstellt.
+- Die erste Lieferung enthält drei Zeilen und wurde mit der *CustomerMode*-Lieferungskonsolidierungsrichtlinie erstellt.
+- Die zweite Lieferung, die nicht *Airways* als Transportart der Lieferung verwendet, wurde unter Verwendung der *CustomerOrderNo*-Lieferungskonsolidierungsrichtlinie erstellt.
 
 ### <a name="release-sales-orders-from-order-set-2"></a>Kundenaufträge aus Auftragssatz 2 freigeben
 
@@ -276,8 +276,8 @@ Folgen Sie dem [Grundlegenden Verfahren für die Freigabe an das Lager](#release
 
 Wenn Sie fertig sind, sollten Sie sehen, dass drei Lieferungen erstellt wurden:
 
-- Die erste Lieferung enthält die *Brennbar* -Artikel.
-- Jede der beiden anderen Lieferungen enthält eine Position mit dem *Explosiv* -Artikel.
+- Die erste Lieferung enthält die *Brennbar*-Artikel.
+- Jede der beiden anderen Lieferungen enthält eine Position mit dem *Explosiv*-Artikel.
 
 ### <a name="release-sales-orders-from-order-set-3"></a>Kundenaufträge aus Auftragssatz 3 freigeben
 
@@ -285,14 +285,14 @@ Folgen Sie dem [Grundlegenden Verfahren für die Freigabe an das Lager](#release
 
 Wenn Sie fertig sind, sollten Sie sehen, dass die folgenden Aktionen ausgeführt wurden:
 
-- Eine vorhandene Lieferung (die Lieferung, die erstellt wurde, als Auftragssatz 2 für das Lager freigegeben wurde) wurde aktualisiert. Eine Zeile mit dem *Brennbar* -Artikel wurde hinzugefügt.
-- Es wurde eine neue Lieferung erstellt, die die *Explosiv* -Artikel enthält.
+- Eine vorhandene Lieferung (die Lieferung, die erstellt wurde, als Auftragssatz 2 für das Lager freigegeben wurde) wurde aktualisiert. Eine Zeile mit dem *Brennbar*-Artikel wurde hinzugefügt.
+- Es wurde eine neue Lieferung erstellt, die die *Explosiv*-Artikel enthält.
 
 ### <a name="release-sales-orders-from-order-set-4"></a>Kundenaufträge aus Auftragssatz 4 freigeben
 
 Folgen Sie dem [Grundlegenden Verfahren für die Freigabe an das Lager](#release-procedure), um die Kundenaufträge aus dem Auftragssatz 4 freizugeben.
 
-Wenn Sie fertig sind, sollten Sie sehen, dass eine vorhandene Lieferung (wo das **Debitorenanforderung** -Feld auf *1* gesetzt ist) aktualisiert wurde. Eine neue Zeile wurde hinzugefügt.
+Wenn Sie fertig sind, sollten Sie sehen, dass eine vorhandene Lieferung (wo das **Debitorenanforderung**-Feld auf *1* gesetzt ist) aktualisiert wurde. Eine neue Zeile wurde hinzugefügt.
 
 ### <a name="release-sales-orders-from-order-set-5"></a>Kundenaufträge aus Auftragssatz 5 freigeben
 
@@ -300,7 +300,7 @@ Folgen Sie dem [Grundlegenden Verfahren für die Freigabe an das Lager](#release
 
 Wenn Sie fertig sind, sollten Sie sehen, dass die folgenden Aktionen ausgeführt wurden:
 
-- Eine vorhandene Lieferung (wo das **Debitorenanforderung** -Feld auf *1* gesetzt ist) wurde aktualisiert. Eine Zeile aus Kundenauftrag 5-3 (wo das **Kundenanforderung** -Feld auf *1* gesetzt ist) wurde hinzugefügt.
+- Eine vorhandene Lieferung (wo das **Debitorenanforderung**-Feld auf *1* gesetzt ist) wurde aktualisiert. Eine Zeile aus Kundenauftrag 5-3 (wo das **Kundenanforderung**-Feld auf *1* gesetzt ist) wurde hinzugefügt.
 - Eine neue Lieferung wurde erstellt, in der die Zeilen aus den Kundenaufträgen 5-1 und 5-2 zu einer Lieferung zusammengefasst sind.
 
 ### <a name="release-sales-orders-from-order-set-6"></a>Kundenaufträge aus Auftragssatz 6 freigeben
@@ -309,10 +309,10 @@ Folgen Sie dem [Grundlegenden Verfahren für die Freigabe an das Lager](#release
 
 Wenn Sie fertig sind, sollten Sie sehen, dass vier Lieferungen erstellt wurden:
 
-- Positionen aus zwei Bestellungen für Debitor *US-003* wurden unter Verwendung der *Auftragspool* -Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
-- Positionen aus zwei Bestellungen für Debitor *US-004* wurden unter Verwendung der *Auftragspool* -Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
-- Positionen aus aus den Aufträgen 6-5 und 6-6 für Debitor *US-007* wurden unter Verwendung der *Auftragspool* -Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
-- Positionen aus aus den Aufträgen 6-7 und 6-8 für Debitor *US-007* wurden unter Verwendung der *CrossOrder* -Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
+- Positionen aus zwei Bestellungen für Debitor *US-003* wurden unter Verwendung der *Auftragspool*-Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
+- Positionen aus zwei Bestellungen für Debitor *US-004* wurden unter Verwendung der *Auftragspool*-Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
+- Positionen aus aus den Aufträgen 6-5 und 6-6 für Debitor *US-007* wurden unter Verwendung der *Auftragspool*-Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
+- Positionen aus aus den Aufträgen 6-7 und 6-8 für Debitor *US-007* wurden unter Verwendung der *CrossOrder*-Lieferungskonsolidierungsrichtlinie zu einer Lieferung zusammengefasst.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

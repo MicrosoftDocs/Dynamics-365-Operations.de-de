@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cead310eaa86d755399e512f99d6782bfa551211
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018858"
+ms.locfileid: "4429027"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Produkteingang für Bestellungen
 
@@ -37,7 +37,7 @@ Der Produktzugang ist der Vorgang des Festhaltens des Zugangs von bestellten Pro
 Lieferanten können Informationen zu den zu liefernden Produkten weitergeben. In diesem Fall können Sie die Produkte vorregistrieren, um diese Informationen aufzuzeichnen, bevor die Produkte empfangen werden. Durch die Vorregistrierung von Produkten verringern Sie den Umfang der Arbeit, die bei der Artikelregistrierung und beim Zugang erforderlich ist. Lieferanten können Produktinformationen elektronisch über eine ASN (Advance Shipment Notice) bereitstellen. Diese wird automatisch im System erfasst. Die Informationen in der ASN umfassen die Menge der Produkte die geliefert werden sollen und wann diese geliefert werden. Die ASN kann auch Informationen wie Chargen- oder Seriennummern umfassen. Die Registrierung der ASN findet im Modul **Transportverwaltung** statt.
 
 ## <a name="registration"></a>Umsatzsteuernummer
-Eine Produkteingangsregistrierung tritt häufig an Entladerampen in einem Lagerort auf. Sie wird über Handgeräte oder über Wareneingangserfassungen durchgeführt. Alternativ können Sie den Produktzugang manuell registrieren, indem Sie die Aktion **Registrierung** auf der **Bestellung** -Seite nutzen. In beiden Fällen werden die Produkte als **Registriert** markiert. Beachten Sie, dass die Produkte noch nicht als **Empfangen** markiert werden.  
+Eine Produkteingangsregistrierung tritt häufig an Entladerampen in einem Lagerort auf. Sie wird über Handgeräte oder über Wareneingangserfassungen durchgeführt. Alternativ können Sie den Produktzugang manuell registrieren, indem Sie die Aktion **Registrierung** auf der **Bestellung**-Seite nutzen. In beiden Fällen werden die Produkte als **Registriert** markiert. Beachten Sie, dass die Produkte noch nicht als **Empfangen** markiert werden.  
 
 Produkte, die am Lagerort eingehen, können Qualitätskontrollen durchlaufen, bevor sie im Lager eingelagert werden. Qualitätsprüfungsaufträge oder Quarantäneaufträge können zur Qualitätskontrolle genutzt werden. Wenn Qualitätsprüfungsaufträge verwendet werden, können Sie den Prozess für die vorübergehend Blockierung der Produkte während der Prüfung konfigurieren. Wenn Quarantäneaufträge verwendet werden, werden Produkte zur Überprüfung an einen anderen Lagerplatz verschoben. Dieser Lagerort wird als Quarantänelagerort bezeichnet. Bei beiden Überprüfungsprozessen werden möglicherweise einige Waren verschrottet. Entweder, weil Sie die Qualitätsvorgaben nicht erfüllen, oder, weil die Qualitätskontrolle Zerstörungstests für eine Probe des Produkts umfasst.
 

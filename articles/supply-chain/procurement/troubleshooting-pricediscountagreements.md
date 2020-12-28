@@ -20,11 +20,11 @@ ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: b4349eeba285492202b5df8481b277a06708a4c8
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018212"
+ms.locfileid: "4429127"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>Problembehandlung bei Preisen, Ermäßigungen, Vereinbarungen und Rabatten
 
@@ -48,7 +48,7 @@ Die Nachricht ist die Eingabeaufforderung zur Bewertung des Handelsabkommens (TA
 
 Das folgende Verfahren veranschaulicht eine Möglichkeit, das Problem zu reproduzieren.
 
-1. Stellen Sie auf der **Beschaffungs- und Ursprungsparameter** -Seite auf der Registerkarte **Lieferung** sicher, dass die **Auf Produktbeleg Gebühren generieren** -Option auf *Ja* festgelegt ist.
+1. Stellen Sie auf der **Beschaffungs- und Ursprungsparameter**-Seite auf der Registerkarte **Lieferung** sicher, dass die **Auf Produktbeleg Gebühren generieren**-Option auf *Ja* festgelegt ist.
 1. Erstellen einer Bestellung, die Gebühren enthält.
 1. Bestätigen Sie die Bestellung.
 1. Erhalten Sie die Bestellung.
@@ -109,7 +109,7 @@ Mit der Funktion *Allgemeine Währung* können Sie Preise und Rabatte in nur ein
 
 ## <a name="when-i-open-the-purchase-agreement-page-in-a-line-view-mode-i-cant-personalize-the-page-by-adding-the-price-unit-field-in-the-overview-of-the-line"></a>Wenn ich die Seite „Kaufvertrag“ in einem Positionsansichtsmodus öffne, kann ich die Seite nicht personalisieren, indem ich das Feld „Preiseinheit“ in der Übersicht der Position hinzufüge.
 
-Einige gemeinsam genutzte Felder im Vereinbarungsframework können nicht in Personalisierungen einbezogen werden. Diese Einschränkung tritt aufgrund des implementierten Datenmodells auf. Daher können Sie das **Preiseinheit** -Feld nicht personalisieren.
+Einige gemeinsam genutzte Felder im Vereinbarungsframework können nicht in Personalisierungen einbezogen werden. Diese Einschränkung tritt aufgrund des implementierten Datenmodells auf. Daher können Sie das **Preiseinheit**-Feld nicht personalisieren.
 
 ## <a name="the-maximum-limit-from-a-purchase-agreement-isnt-effective-on-a-purchase-requisition"></a>Das maximale Limit aus einem Kaufvertrag gilt nicht für eine Bestellanforderung.
 

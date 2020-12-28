@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5e64a4bd9e65b62bb782785a363aa2eee5264e3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987021"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428678"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negative und dynamisch negative Tage
 
@@ -74,7 +74,7 @@ Um die MRP-Leistung zu verbessern, können Sie die negativen Tage auf einen Wert
 
 ### <a name="case-c-automatically-correlate-the-items-lead-time-to-the-negative-days-time-fence"></a>Fall C: Die Lieferzeiten des Artikels automatisch mit dem negativen Tagplanungszeitraum korrelieren
 
-Um automatisch die Lieferzeit des Artikels mit dem negativen Tagplanungszeitraum zu korrelieren, verwenden Sie dynamische negative Tage. Um dynamische negative Tage zu verwenden, gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Produktprogrammplanungsparrameter**und legen Sie dann auf der Registerkarte **Allgemein** im Abschnitt **Abdeckung** die Option **Dynamische negative Tage verwenden** die Option auf **Ja** fest. MRP sucht dann nach Zugängen im dynamischen negativen Tagplanungszeitraums. Dieser neue Planungszeitraum wird mithilfe der folgenden Formel berechnet.
+Um automatisch die Lieferzeit des Artikels mit dem negativen Tagplanungszeitraum zu korrelieren, verwenden Sie dynamische negative Tage. Um dynamische negative Tage zu verwenden, gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Produktprogrammplanungsparrameter** und legen Sie dann auf der Registerkarte **Allgemein** im Abschnitt **Abdeckung** die Option **Dynamische negative Tage verwenden** die Option auf **Ja** fest. MRP sucht dann nach Zugängen im dynamischen negativen Tagplanungszeitraums. Dieser neue Planungszeitraum wird mithilfe der folgenden Formel berechnet.
 
 Dynamischer negativer Tagplanungszeitraum = neue Lieferzeit + negativer Tagplanungszeitraum + (aktuelles Datum - Bedarfsdatum)
 

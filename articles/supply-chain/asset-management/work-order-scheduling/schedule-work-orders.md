@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 095ff2697a7cc8486afc6e77fd7d06f761e74e75
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888904"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428806"
 ---
 # <a name="schedule-work-orders"></a>Arbeitsaufträge terminieren
 
@@ -61,7 +61,7 @@ Es können nur Arbeitsaufträge mit einem Arbeitsauftragslebenszyklusstatus term
 
 ![Abbildung 1](media/03-work-order-scheduling.png)
 
-Die auf Arbeitsaufträge bezogene Arbeitsauftragsart kann die Terminierung für einen Wartungsmitarbeiter einrichten (**Anlagenmanagement** > **Einrichtung** > **Aufträge** > **Auftragsarten** > **Ein Wartungsmitarbeiter** Umschalttaste auf „Ja“ eingestellt). Das bedeutet, dass, wenn die Auftragsart auf einem Arbeitsauftrag verwendet wird, die Umschalttaste **Ein Wartungsarbeiter** automatisch auf „Ja“ auf der Seite **Alle Arbeitsaufträge** Detailseite > **Kopf** Ansicht > **Terminplan** FastTab gesetzt wird. Bei der Arbeitsauftragsplanung werden alle auf dem Arbeitsauftrag erstellten Arbeitsaufträge anschließend auf den gleichen Instandhalter eingeplant. Bei Bedarf können Sie die Auswahl über die Schaltfläche **Ein Wartungsarbeiter**Umschalten in **Alle Arbeitsaufträge** bearbeiten, um die Planung mehrerer Mitarbeiter oder eines Mitarbeiters auf den Arbeitsaufträgen zu ermöglichen.
+Die auf Arbeitsaufträge bezogene Arbeitsauftragsart kann die Terminierung für einen Wartungsmitarbeiter einrichten (**Anlagenmanagement** > **Einrichtung** > **Aufträge** > **Auftragsarten** > **Ein Wartungsmitarbeiter** Umschalttaste auf „Ja“ eingestellt). Das bedeutet, dass, wenn die Auftragsart auf einem Arbeitsauftrag verwendet wird, die Umschalttaste **Ein Wartungsarbeiter** automatisch auf „Ja“ auf der Seite **Alle Arbeitsaufträge** Detailseite > **Kopf** Ansicht > **Terminplan** FastTab gesetzt wird. Bei der Arbeitsauftragsplanung werden alle auf dem Arbeitsauftrag erstellten Arbeitsaufträge anschließend auf den gleichen Instandhalter eingeplant. Bei Bedarf können Sie die Auswahl über die Schaltfläche **Ein Wartungsarbeiter** Umschalten in **Alle Arbeitsaufträge** bearbeiten, um die Planung mehrerer Mitarbeiter oder eines Mitarbeiters auf den Arbeitsaufträgen zu ermöglichen.
 
 Der Terminierungsprozess im Anlagenmanagement berücksichtigt mehrere Faktoren in der Terminberechnung:
 
@@ -88,7 +88,7 @@ In den folgenden Beispielen ist der kritische Wert „2“ und die Service Level
 | WO-00010817   | In zwei Tagen   | 2                      | 20              | (-2 \* 10) + (2 \* 2) + 5 / 20     | \- 15.75   |
 | WO-00010818   | In zwei Tagen   | 3                      | 5               | (-2 \* 10) + (2 \* 3) + 5 / 5      | \- 13      |
 
-Die Arbeitsaufträge werden in der folgenden Reihenfolge eingeplant: WO-000108**16**, WO-000108**18**, WO-000108**17**.
+Die Arbeitsaufträge werden in der folgenden Reihenfolge eingeplant: WO-000108 **16**, WO-000108 **18**, WO-000108 **17**.
 
 **Beispiel 2:**
 
@@ -98,7 +98,7 @@ Die Arbeitsaufträge werden in der folgenden Reihenfolge eingeplant: WO-000108**
 | WO-00010817   | In zwei Tagen   | 2                      | 20                  | (-2 \* 10) + (2 \* 2) + 100 / 20 | \- 11    |
 | WO-00010818   | In zwei Tagen   | 3                      | 5                   | (-2 \* 10) + (2 \* 3) + 100 / 5  | 6        |
 
-Wenn der Service Level Wert auf'100' statt '5' erhöht wird, wird der Terminierungsauftrag erstellt: WO-000108**18**, WO-000108**16**, WO-000108**17**.
+Wenn der Service Level Wert auf'100' statt '5' erhöht wird, wird der Terminierungsauftrag erstellt: WO-000108 **18**, WO-000108 **16**, WO-000108 **17**.
 
 Die Bewertungspunkte für die Berechnung, welche Wartungsmitarbeiter an den Arbeitsaufträgen arbeiten sollen, sind alle als Zahlen festgelegt, die bei der Arbeitsauftragsplanung zu jeder Kalkulation des Wartungsmitarbeiters hinzugefügt werden. Der Wartungsarbeiter mit der höchsten Punktzahl wird im Arbeitsauftrag ausgewählt. Hier ist eine kurze Beschreibung der Ergebnisse der Wartungsarbeiten:
 

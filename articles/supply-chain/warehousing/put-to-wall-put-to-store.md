@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017827"
+ms.locfileid: "4429038"
 ---
 # <a name="put-to-wall---put-to-store"></a>Put-to-Wall - Put-to-Store
 
@@ -210,7 +210,7 @@ Die Sortiervorlage steuert, ob Sortierpositionen erstellt werden, welche Kriteri
     Die Schaltfläche **Vorlagenunterbrechungen für Ausgangssortierung** im Aktivitätsbereich wird verfügbar.
 
 1. Wählen Sie im Aktivitätsbereich **Vorlagenunterbrechungen für Ausgangssortierung**.
-1. Aktivieren Sie das Kontrollkästchen **Gruppieren nach Feld** , um nach Lieferungs-ID zu gruppieren.
+1. Aktivieren Sie das Kontrollkästchen **Gruppieren nach Feld**, um nach Lieferungs-ID zu gruppieren.
 
     Diese Einstellung erstellt eine Sortierposition pro Sendung, die ein Container in der Welle ist.
 
@@ -309,7 +309,7 @@ Sie müssen Standortanweisungen erstellen, um die Arbeit zu steuern, die nach Ab
 1. Wählen Sie **Speichern** aus, um die Schaltfläche **Abfrage bearbeiten** im Inforegister **Lagerplatzrichtlinienaktivitäten** verfügbar zu machen.
 1. Wählen Sie im Inforegister **Lagerplatzrichtlinienaktivitäten** **Abfrage bearbeiten** aus.
 1. Suchen Sie im Abfragedialogfeld auf der Registerkarte **Bereich** die Zeile, in der das Feld **Feld** auf *Lagerplatz* festgelegt ist. Legen Sie das Feld **Kriterien** für diese Zeile auf *Baydoor* fest.
-1. Wählen Sie **OK** , um die Bearbeitung zu bestätigen.
+1. Wählen Sie **OK**, um die Bearbeitung zu bestätigen.
 
 ### <a name="work-classes"></a>Arbeitsklassen
 
@@ -343,13 +343,13 @@ Sie müssen Standortanweisungen erstellen, um die Arbeit zu steuern, die nach Ab
 1. Im Abschnitt **Arbeitsvorlagendetails** erstellen Sie zwei Zeilen. Wählen Sie **Neu** aus, und legen Sie dann die folgenden Werte für Position 1 fest:
 
     - **Arbeitstyp:** *Entnahme*
-    - **Obligatorisch:** Ausgewählt (= *Ja* )
+    - **Obligatorisch:** Ausgewählt (= *Ja*)
     - **Arbeitsklassen-ID:** *Sortieren*
 
 1. Wählen Sie erneut **Neu** aus, und legen Sie dann die folgenden Werte für Position 2 fest:
 
     - **Arbeitstyp:** *Einlagern*
-    - **Obligatorisch:** Ausgewählt (= *Ja* )
+    - **Obligatorisch:** Ausgewählt (= *Ja*)
     - **Arbeitsklassen-ID:** *Sortieren*
 
 1. Wählen Sie **Speichern** aus.
@@ -449,7 +449,7 @@ Führen Sie die folgenden Schritte aus, um jeden Kundenauftrag an das Lager frei
 
     Während der Wellenverarbeitung verwendet die Sortiermethode die Sortiervorlage, um den Bestand den Sortierpositionen zuzuweisen. Nach Abschluss der Wellenverarbeitung erhalten Sie eine Informationsmeldung, die angibt, dass die Welle gebucht und Arbeit erstellt wurde.
 
-1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Welle** in der Gruppe **Zugehörige Informationen** auf **Arbeit** , um die Arbeit anzuzeigen, die für diese Welle erstellt wurde. Notieren Sie die Arbeits-ID.
+1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Welle** in der Gruppe **Zugehörige Informationen** auf **Arbeit**, um die Arbeit anzuzeigen, die für diese Welle erstellt wurde. Notieren Sie die Arbeits-ID.
 1. Gehen Sie zu **Lagerortverwaltung \> Verpackung und Containerisierung \> Zuweisungen von Ausgangssortierpositionen**.
 1. In der linken Spalte können Sie die ausgehende Sortierposition anzeigen, die für jede Sendung erstellt wurde.
 1. Im Inforegister **Sortierpositionskriterien** können Sie die Lieferungs-ID für diese Position anzeigen.
@@ -472,7 +472,7 @@ Es wurde eine Arbeits-ID erstellt, um Bestand von den Kommissionierorten zum Sor
 
 1. Bestätigen Sie Ihre Eingabe.
 
-    Die mobile App präsentiert nun eine Reihe von **Entnehmen** -Seiten, die Sie auf den Kommissionierort sowie auf den Artikel und die Menge verweisen, die kommissioniert werden müssen. Nachdem der kommissionierte Artikel dem Kennzeichen hinzugefügt wurde, bestätigen Sie die Kommissionierarbeiten. Die letzte Seite ist die Arbeit, um die ausgewählten Artikel an den Sortierort zu bringen.
+    Die mobile App präsentiert nun eine Reihe von **Entnehmen**-Seiten, die Sie auf den Kommissionierort sowie auf den Artikel und die Menge verweisen, die kommissioniert werden müssen. Nachdem der kommissionierte Artikel dem Kennzeichen hinzugefügt wurde, bestätigen Sie die Kommissionierarbeiten. Die letzte Seite ist die Arbeit, um die ausgewählten Artikel an den Sortierort zu bringen.
 
 1. Bestätigen Sie die erste Entnahmearbeit.
 1. Die nächste Entnahmearbeit wird angezeigt. Bestätigen Sie die Entnahme.
@@ -509,9 +509,9 @@ Nachdem der gesamte Bestand an den Sortierort gebracht wurde, muss es an der ric
     > [!NOTE]
     > Wenn die automatische Sortierung aktiviert ist, ist kein manuelles Überschreiben verfügbar.
 
-1. Wenn Sie fertig sind, öffnen Sie in Microsoft Dynamics 365 Supply Chain Management die Seite **Ausgehende Sortierungspositionszuweisungen** , um den Status der Positionen zu überprüfen.
+1. Wenn Sie fertig sind, öffnen Sie in Microsoft Dynamics 365 Supply Chain Management die Seite **Ausgehende Sortierungspositionszuweisungen**, um den Status der Positionen zu überprüfen.
 
-    - Wenn Positionen automatisch geschlossen werden, wählen Sie **Geschlossene anzeigen** , um die geschlossenen Positionen anzuzeigen.
+    - Wenn Positionen automatisch geschlossen werden, wählen Sie **Geschlossene anzeigen**, um die geschlossenen Positionen anzuzeigen.
     - Beachten Sie, dass Sortierpositionstransaktionen angezeigt werden. Der Artikel und die Menge, die über die Position verarbeitet wurden, werden angezeigt.
 
     Wenn Sie die ausgehende Sortiervorlage einrichten, legen Sie die Option **Sortierposition automatisch schließen** auf *Ja* fest. Daher wird die Position automatisch geschlossen, nachdem der letzte erwartete Bestand darauf gelegt wurde. Die Sortierpositionen sind im Status **Geschlossen** und Arbeit wurde erstellt, um den sortierten Bestand zum Lagerplatz *Frachttür* zu verschieben.
@@ -530,7 +530,7 @@ Wenn Sortierpositionen manuell geschlossen werden sollen, muss die Option **Sort
     - Der Benutzer kann einen der Artikel scannen, die sich bereits an der Position befinden, und dann **Schließen** auswählen, um die Position zu schließen.
     - Wenn der Benutzer einen Container sortiert, der bereits sortiert wurde, wird eine Fehlermeldung angezeigt. Der Benutzer kann die Position jedoch weiterhin schließen.
 
-- Über die Seite Microsoft Dynamics 365 Supply Chain Management **Ausgehende Sortierungspositionszuweisungen** :
+- Über die Seite Microsoft Dynamics 365 Supply Chain Management **Ausgehende Sortierungspositionszuweisungen**:
 
     - Der Benutzer kann den ausgehenden Sortierpositionsdatensatz auswählen und dann im Aktionsbereich **Position schließen** auswählen.
 

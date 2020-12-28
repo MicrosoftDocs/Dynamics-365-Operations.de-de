@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: dd6d730528522f4074b6e2a3ce6059cc12ff5a0f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984752"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428472"
 ---
 # <a name="reuse-product-configurations"></a>Produktkonfigurationen wiederverwenden
 
@@ -37,7 +37,7 @@ Sie können angeben, dass Sie eine Variante für ein Produkt automatisch recycel
 
 Damit Konfigurationen wieder verwendet werden können, müssen Sie die folgenden Informationen für die Komponenten und Attribute auf der Seite **Produktkonfigurationsmodelldetails** angeben:
 
--   **Komponenten und Unterkomponenten** – Wählen Sie im Inforegister**Allgemein** im Feld **Konfiguration wiederverwenden** **Ja**.
+-   **Komponenten und Unterkomponenten** – Wählen Sie im Inforegister **Allgemein** im Feld **Konfiguration wiederverwenden** **Ja**.
 -   **Attribute** – Auf dem Inforegister **Attribute** wählen Sie die Option **In Wiederverwendung einbeziehen** aus. Diese Option wird nur angezeigt, wenn die zugehörige Komponente zur Wiederverwendung aktiviert ist. Wenn Sie keine Attribute zur Wiederverwendung auswählen, wird die Konfiguration immer recycelt, unabhängig von der Auswahl des Benutzers für eine Konfigurationssitzung. Die Attributwerte in der vorhandenen Konfiguration müssen der Auswahl des Benutzers entsprechen. Wenn der Benutzer zum Beispiel die Farbe **Blau** für eine Farbe während der Konfigurationssitzung auswählt, prüft das System, ob eine Variante der Komponente ein Attribut für die Farbe Blau hat.
 
 ## <a name="resetting-configuration-reuse"></a>Wiederverwendung der Konfiguration zurücksetzen

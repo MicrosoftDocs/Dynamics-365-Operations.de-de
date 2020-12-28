@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: df5bcd57c611ed5f77a417a28f28fca84057d734
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205988"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428816"
 ---
 # <a name="schedule-maintenance-plans"></a>Wartungspläne terminieren
 
@@ -43,11 +43,11 @@ Die vorbeugende Wartungsplanung erzeugt Kalendereinträge auf Anlagen, basierend
 3. Wählen Sie „Ja“ auf der Seite **Auto anlegen, wenn in der Zeile** Umschalttaste angegeben, wenn Arbeitsaufträge automatisch gemäß der Wartungsplanzeile erstellt werden sollen.
 
 >[!NOTE]
->Wenn diese Umschalttaste auf „Ja“ gesetzt ist, ist das Kontrollkästchen *und* **Automatisch anlegen** auch in Wartungsplanzeilen in **Wartungspläne** aktiviert, Arbeitsaufträge werden auf der Grundlage der Wartungsplaneinteilungen angelegt und Wartungseinteilungen mit dem Status „Arbeitsauftrag angelegt“ werden ebenfalls angelegt. Wenn nur eine Option ausgewählt ist (**Auto anlegen, wenn in diesem Dialog in der Zeile**Umschaltfläche angegeben oder **Automatisch anlegen** im Formular **Wartungspläne**), werden nur Wartungseinteilungen mit dem Status „angelegt“ angelegt. In diesem Fall werden keine Arbeitsaufträge erstellt.
+>Wenn diese Umschalttaste auf „Ja“ gesetzt ist, ist das Kontrollkästchen *und* **Automatisch anlegen** auch in Wartungsplanzeilen in **Wartungspläne** aktiviert, Arbeitsaufträge werden auf der Grundlage der Wartungsplaneinteilungen angelegt und Wartungseinteilungen mit dem Status „Arbeitsauftrag angelegt“ werden ebenfalls angelegt. Wenn nur eine Option ausgewählt ist (**Auto anlegen, wenn in diesem Dialog in der Zeile** Umschaltfläche angegeben oder **Automatisch anlegen** im Formular **Wartungspläne**), werden nur Wartungseinteilungen mit dem Status „angelegt“ angelegt. In diesem Fall werden keine Arbeitsaufträge erstellt.
 
 4. Es ist möglich, Kalendereinträge auf der Grundlage von Wartungsplänen (Uhrzeit oder Zähler), Anlagen, Anlagentypen, Anlagentypen, Technischen Standorte und Technischen Standortarten zu erzeugen. Klicken Sie auf die Schaltfläche **Filter** und treffen Sie bei Bedarf Ihre Auswahl.
 
-- Bezüglich der Terminierung von Wartungsplänen auf Technischen Standorten: Wenn Sie die Einrichtung von Anlagenarten, Herstellern und Modellen zu Wartungsplänen in **Alle Technischen Standorte** > **Wartungspläne**FastTab aktualisieren, nachdem Sie Wartungspläne terminiert haben, werden bestehende Wartungsplaneinträge zu diesem Technischen Standort automatisch gelöscht. Um neue Kalendereinträge anzulegen, die dem aktualisierten Wartungsplan auf dem Technischen Standort entsprechen, müssen Sie einen neuen Wartungsplanplan für diesen Technischen Standort erstellen. Weitere Informationen zur Einrichtung von Anlagentypen, Herstellern und Modellen auf Technischen Standorte finden Sie unter [Technische Standorte anlegen](../functional-locations/create-functional-locations.md).
+- Bezüglich der Terminierung von Wartungsplänen auf Technischen Standorten: Wenn Sie die Einrichtung von Anlagenarten, Herstellern und Modellen zu Wartungsplänen in **Alle Technischen Standorte** > **Wartungspläne** FastTab aktualisieren, nachdem Sie Wartungspläne terminiert haben, werden bestehende Wartungsplaneinträge zu diesem Technischen Standort automatisch gelöscht. Um neue Kalendereinträge anzulegen, die dem aktualisierten Wartungsplan auf dem Technischen Standort entsprechen, müssen Sie einen neuen Wartungsplanplan für diesen Technischen Standort erstellen. Weitere Informationen zur Einrichtung von Anlagentypen, Herstellern und Modellen auf Technischen Standorte finden Sie unter [Technische Standorte anlegen](../functional-locations/create-functional-locations.md).
 
 >*Beispiel:* Sie möchten einen Wartungsplan für einen bestimmten Technischen Standort anlegen, d.h. alle Anlagen, die auf diesem Technischen Standort zu einem bestimmten Zeitpunkt angelegt wurden, werden bei der Terminierung des Wartungsplans berücksichtigt. In diesem Fall legen Sie einen Wartungsplan an und wählen den jeweiligen Technischen Standort aus, fügen aber keine Anlagen in den Wartungsplan ein. Das Ergebnis ist, dass bei der Terminierung dieses Wartungsplans Wartungseinteilungen für alle Anlagen angelegt werden, die zu diesem Zeitpunkt mit dem Technischen Standort zusammenhängen.
 

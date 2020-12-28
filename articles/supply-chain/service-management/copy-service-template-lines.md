@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a8b26924641b8b0d26fa6834623b482be7fb7d6d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976975"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428490"
 ---
 # <a name="copy-service-templates-lines"></a>Kopieren von Servicevorlagenpositionen 
 
@@ -34,9 +34,9 @@ Vorlageninformationen können entweder in eine Servicevereinbarung oder in einen
 ## <a name="copy-service-template-lines-into-a-service-agreement"></a>Kopieren von Servicevorlagenpositionen in eine Servicevereinbarung
 
 1. **Servicevereinbarungen** anklicken.
-2. Doppelklicken Sie auf eine Servicevereinbarung, um das Detailformular **Servicevereinbarung**zu öffnen.
+2. Doppelklicken Sie auf eine Servicevereinbarung, um das Detailformular **Servicevereinbarung** zu öffnen.
 3. Klicken Sie auf **Vorlagenpositionen**, um die Seite **Servicevorlagenpositionen kopieren** zu öffnen.
-4. Erweitern Sie auf der Registerkarte  **Baumstruktur**die Struktur, suchen Sie die Vorlage mit den Positionen, die in die Servicevereinbarung kopiert werden sollen, und wählen Sie die Servicevorlage aus.
+4. Erweitern Sie auf der Registerkarte  **Baumstruktur** die Struktur, suchen Sie die Vorlage mit den Positionen, die in die Servicevereinbarung kopiert werden sollen, und wählen Sie die Servicevorlage aus.
 5. Aktivieren Sie auf der Registerkarte **Zeile** und **wählen** Sie das Kontrollkästchen  für die zu kopierenden Servicevorlagenpositionen.
 6. Klicken Sie auf **OK**.
 7. Schließen Sie die Seiten, um Ihre Änderungen zu speichern.
@@ -46,9 +46,9 @@ Die Servicevorlagenpositionen werden zusammen mit den zugeordneten Serviceobjekt
 ## <a name="copy-service-template-lines-into-a-service-order"></a>Kopieren von Servicevorlagenpositionen in einen Serviceauftrag
 
 1. **Serviceaufträge** anklicken.
-2. Doppelklicken Sie auf eine Servicevereinbarung, um das Detailformular **Servicevereinbarung**zu öffnen.
+2. Doppelklicken Sie auf eine Servicevereinbarung, um das Detailformular **Servicevereinbarung** zu öffnen.
 3. Klicken Sie auf Vorlagenpositionen \> kopieren, um die Seite **Servicevorlagenpositionen kopieren** zu öffnen.
-4. Erweitern Sie auf der Registerkarte  **Baumstruktur**die Struktur, suchen Sie die Vorlage mit den Positionen, die in die Servicevereinbarung kopiert werden sollen, und wählen Sie die Servicevorlage aus.
+4. Erweitern Sie auf der Registerkarte  **Baumstruktur** die Struktur, suchen Sie die Vorlage mit den Positionen, die in die Servicevereinbarung kopiert werden sollen, und wählen Sie die Servicevorlage aus.
 5. Aktivieren Sie auf der Registerkarte **Zeile** und **wählen** Sie das Kontrollkästchen  für die zu kopierenden Servicevorlagenpositionen.
 6. Klicken Sie auf **OK**.
 7. Schließen Sie die Seiten, um Ihre Änderungen zu speichern.

@@ -20,11 +20,11 @@ ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.openlocfilehash: 30859292f8ec481f018fe0c5a5ca4ca11c246d4c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212916"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428777"
 ---
 # <a name="arrival-overview"></a>Wareneingangsübersicht
 
@@ -42,7 +42,7 @@ Beachten Sie das folgende Szenario im Eingangsprozess.
 Thomas, ein empfangender Arbeiter, möchte wissen, was am aktuellen Tag erwartet wird. Auf der Seite **Wareneingangsübersicht** kann Thomas eine Übersicht der aktuellen Aufgaben, eine grobe Schätzung von Mengen, Volumen, Gewicht, unterschiedliche Auftragstypen usw. abrufen. Später kommt eine Lieferung an einer Eingangsrampen und Thomas erhält eine Liste der Lieferung. Auf der Seite **Eingangsübersicht** kann Thomas folgende Aufgaben ausführen:
 
 -   Geben Sie den entsprechenden Zugangsauftrag, und erfassen Sie den Zugang als **In Bearbeitung** Die Positionen, für die eine Erfassung erforderlich sind, werden automatisch erstellt und der Empfang kann überwacht werden, obwohl die Transaktionen noch nicht als **Erfasst** gebucht wurden.
--   Greifen Sie auf die entsprechende Wareneingangserfassungsreferenz zu (das heißt, die Erfassung **Wareneingang** oder die Erfassung **Produktionseingang** und kennzeichnen Sie die Erfassungen, die für eine Produktzugangsaktualisierung bereit sind.
+-   Greifen Sie auf die entsprechende Wareneingangserfassungsreferenz zu (das heißt, die Erfassung **Wareneingang** oder die Erfassung **Produktionseingang**) und kennzeichnen Sie die Erfassungen, die für eine Produktzugangsaktualisierung bereit sind.
 
 ## <a name="arrival-overview-page"></a>Wareneingangsübersicht anzeigen
 Um die Seite **Wareneingangsübersicht** zu öffnen, klicken Sie auf **Lagerverwaltung** &gt; **Eingehende Aufträge** &gt; **Wareneingangsübersicht**. Sie können eine Liste der Aufträge anzeigen, die voraussichtlich empfangen werden. Der Überblick ist in eine Überschrift und in Positionen aufgeteilt. Die Überschriftsinformationen werden nach Bestellungstyp, erwartetes Datum und Lieferort gruppiert. Wenn eine Überschrift für den Zugang aktiviert ist, werden alle Positionen, die der Zugangsreferenz zugeordnet sind, für den Eingang im Positionsdetailteil der Seite ausgewählt. Wenn alle diesbezüglichen Erfassungspositionen gebucht wurden, werden diese Informationen nicht angezeigt.

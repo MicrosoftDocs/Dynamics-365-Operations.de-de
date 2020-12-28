@@ -1,6 +1,6 @@
 ---
 title: Bezeichnung der Produktvariantennummern und Namen
-description: In diesem Thema wird beschrieben, wie Sie eine Produktnummernbezeichnung einrichten können, um das feste Format [Produktmasternummer – Konfiguration – Größe – Farbe – Stil] zu ersetzen.
+description: Dieses Thema beschreibt, wie Sie eine Produktnummern-Nomenklatur festlegen können, um das feste Format [Produktstammnummer - Konfiguration - Größe - Farbe - Stil] zu ersetzen.
 author: roxanadiaconu
 manager: tfehr
 ms.date: 11/03/2017
@@ -20,17 +20,17 @@ ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 90c01e4281246d890ef888c56ca137f83e83741c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980482"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428473"
 ---
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Bezeichnung der Produktvariantennummern und Namen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie eine Produktnummernbezeichnung einrichten können, um das feste Format [Produktmasternummer – Konfiguration – Größe – Farbe – Stil] zu ersetzen. Die neue Bezeichnung hat ein gezieltes Format, das die Produktmasternummer, aktive Produktdimensionen und Texttrennzeichen Ihrer Wahl umfasst. Darüber hinaus können Sie auch eine Bezeichnung für Produktnamen erstellen. Sie können schließlich auch eine Bezeichnung erstellen, um Konfigurationen zu identifizieren, die vom einschränkungsbasierten Produktkonfigurator erstellt werden. Diese Bezeichnungen können Attribute Ihrer Wahl enthalten.
+Dieses Thema beschreibt, wie Sie eine Produktnummern-Nomenklatur festlegen können, um das feste Format [Produktstammnummer - Konfiguration - Größe - Farbe - Stil] zu ersetzen. Die neue Bezeichnung hat ein gezieltes Format, das die Produktmasternummer, aktive Produktdimensionen und Texttrennzeichen Ihrer Wahl umfasst. Darüber hinaus können Sie auch eine Bezeichnung für Produktnamen erstellen. Sie können schließlich auch eine Bezeichnung erstellen, um Konfigurationen zu identifizieren, die vom einschränkungsbasierten Produktkonfigurator erstellt werden. Diese Bezeichnungen können Attribute Ihrer Wahl enthalten.
 
 Die neuen Bezeichnungen für Produktvariantennummern und Produktvariantennamen ermöglichen es Ihnen, Segmente in die Bezeichner für Produktvarianten einzubeziehen. Diese Segmente können die Produktmasternummer und den Produktmasternamen, die Produktdimensionskennungen und -namen, die Nummernkreise, Textkonstanten und Attribute umfassen. Mit dieser Funktionalität können Sie schnell eine bestimmte Produktvariante suchen, wenn einen Auftrag oder eine Bestellung erstellen. Sie erstellen Bezeichnungen sowohl für Produktvariantennummern als auch Produktvariantennamen mithilfe der Seite **Produktbezeichnung**. Um diese Seite zu öffnen, klicken Sie auf **Produktinformationsverwaltung** &gt; **Setup**.
 
