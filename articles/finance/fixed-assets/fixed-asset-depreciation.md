@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1056dadab4294072cc064670f5cfcda239e22e19
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177895"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443557"
 ---
 # <a name="fixed-asset-depreciation"></a>Anlagenabschreibung
 
@@ -51,7 +51,7 @@ Die Sonderabschreibung wird entweder als Prozentsatz oder als fester Wert eingeg
 ## <a name="depreciation-calendars"></a>Abschreibungskalender
 Jedes Abschreibungsbuch hat einen Kalender, der verwendet wird, wenn Sie Anlagen abschreiben. Das Buch verwendet standardmäßig den Sachkontosteuerkalender, wenn Sie keinen Kalender angeben. Sie müssen einen Steuerkalender für ein Buch auswählen, wenn das entsprechende Abschreibungsprofil des Buchs ein steuerlich relevantes Abschreibungsjahr verwendet. 
 
-Sie können freigegebene Kalender mithilfe der Seite **Steuerkalender**im Hauptbuch erstellen.
+Sie können freigegebene Kalender mithilfe der Seite **Steuerkalender** im Hauptbuch erstellen.
 
 Weitere Informationen finden Sie untere [Abschreibungsmethoden und - konventionen](depreciation-methods-conventions.md). 
 

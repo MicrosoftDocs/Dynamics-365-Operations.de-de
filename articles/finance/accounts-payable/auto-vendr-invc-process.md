@@ -3,7 +3,7 @@ title: Überblick über automatisierte Kreditorenabrechnungsprozesse
 description: In diesem Thema werden die Funktionen zur Automatisierung der Verarbeitung Ihrer Kreditorenrechnungen und die Vorteile der Verwendung eines automatisierten Prozesses beschrieben.
 author: abruer
 manager: AnnBe
-ms.date: 10/16/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ec3598ebd158cc23ac7c02d7e33557141d5901bc
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.openlocfilehash: 677760ec15630a11bf691be4cd8af9cf5549ddf9
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022495"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665321"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Überblick über automatisierte Kreditorenabrechnungsprozesse
 
@@ -39,8 +39,9 @@ Die Automatisierungsprozesse können verwendet werden, um folgende Aufgaben ausz
 - Senden Sie importierte Rechnungen automatisch an das Workflowsystem.
 - Gleichen Sie Produktzugänge mit ausstehenden Kreditorenrechnungspositionen ab.
 - Simulieren Sie die Buchung, bevor eine Kreditorenrechnung gebucht wird.
-- Zeigen Sie schnell und effizient die Workflowhistorie an.
+- Zeigen Sie schnell und effizient den Workflow- und Automationsverlauf an.
 - Zeigen Sie die Ergebnisse der Automatisierung der Verarbeitung von Kreditorenrechnungen an und analysieren Sie sie.
+- Setzen Sie die automatisierte Verarbeitung für mehrere Rechnungen fort.
 
 ## <a name="vendor-invoice-automation--submit-imported-vendor-invoices-to-the-workflow-system"></a>Automatisierung von Kreditorenrechnungen – Senden von importierten Kreditorenrechnungen an das Workflowsystem
 
@@ -58,10 +59,13 @@ Das System kann gebuchte Produktzugänge automatisch mit Rechnungspositionen abg
 
 Die Buchungssimulation schließt die Prüfungsschritte ab, die während des Buchungsprozesses für Kreditorenrechnungen ausgeführt werden. Dabei werden jedoch keine Konten aktualisiert. Um den Prozess auszuführen, können Sie auf der Seite **Ausstehende Kreditorenrechnungen** entweder eine einzelne Rechnung oder mehrere Rechnungen auswählen.
 
-## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-historical-information-for-vendor-invoices"></a>Kreditorenrechnungsautomatisierung – verbesserte Erfahrung beim Anzeigen von Informationen aus der Workflowhistorie für Kreditorenrechnungen
+## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>Kreditorenrechnungsautomatisierung – verbesserte Erfahrung beim Anzeigen von Informationen aus des Workflow- und Automationsverlauf für Kreditorenrechnungen
 
-Es wird eine übersichtliche Ansicht der Workflowhistorie der Kreditorenrechnung bereitgestellt. Auf die Ansicht der Workflowhistorie kann direkt über die Kreditorenrechnung zugegriffen werden. Daher sind weniger Mausklicks erforderlich, um diese Informationen zu finden.
+Es wird eine übersichtliche Ansicht der Workflowhistorie der Kreditorenrechnung bereitgestellt. Auf die Ansicht der Workflowhistorie kann direkt über die Kreditorenrechnung zugegriffen werden. Daher sind weniger Mausklicks erforderlich, um diese Informationen zu finden. Wenn Ihre Organisation die Möglichkeit aktiviert hat, importierte Kreditorenrechnungen automatisch an den Workflow zu senden, wird der Automationsverlauf für die importierten Rechnungen bereitgestellt. Mithilfe des Automationsverlaufs können Sie den aktuellen Prozessschritt sowie die bereits abgeschlossenen Schritte identifizieren. Wenn ein Schritt nicht erfolgreich ist, bietet das System detaillierte Informationen, damit Sie den Grund für den Fehler besser verstehen.
 
 ## <a name="vendor-invoice-automation--analytics-and-metrics"></a>Kreditorenrechnungsautomatisierung – Analysen und Metriken
 
 Der Arbeitsbereich **Kreditorenrechnungseintrag** ermöglicht die Fokussierung auf Kreditorenrechnungen, die den automatisierten Prozess nicht durchlaufen haben. Kacheln im Arbeitsbereich enthalten Informationen zu Kreditorenrechnungen, die nicht erfolgreich an das Workflowsystem gesendet, importiert oder mit Produktzugängen abgeglichen wurden. Darüber hinaus werden Microsoft Power BI-Metriken bereitgestellt, um den Mangern von Kreditorenkonten einen Einblick in die Effizienz der Automatisierung von Kreditorenrechnungen zu geben.
+
+## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automation von Kreditorenrechnungen – Setzen Sie die Automationsverarbeitung für mehrere Rechnungen fort
+Wenn eine importierte Rechnung während des automatisierten Prozesses nicht erfolgreich an den Workflow gesendet wird, wird sie vom System aus der weiteren automatisierten Verarbeitung entfernt. Ein Kreditorenbuchhalter kann die Rechnung überprüfen und bearbeiten, bevor der automatisierte Prozess sie erneut an den Workflow übermittelt. Wenn ein Fehlergrund durch dieselbe Behebung für mehrere Rechnungen behoben werden kann, können Sie den automatisierten Prozess auf der Seite **Automatisierte Rechnungsverarbeitung fortsetzen** neu starten. 

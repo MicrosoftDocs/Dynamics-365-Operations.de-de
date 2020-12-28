@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6322001ea8ccbd2e06e15dc6bc8c273608de895b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 429283865c66ca5f03608e4a02c3aba5bb5ea7e3
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771775"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645576"
 ---
 # <a name="income-statement-financial-report"></a>Finanzbericht für die Einkommensaufstellung
 
@@ -67,7 +67,7 @@ Die Spaltendefinitionen enthalten verschieden Spaltentypen, um verschiedene Stuf
 
 [Finanzberichte anzeigen](view-financial-reports.md)
 
-[Dynamics Financial Reporting-Blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting-Blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
 
 
 

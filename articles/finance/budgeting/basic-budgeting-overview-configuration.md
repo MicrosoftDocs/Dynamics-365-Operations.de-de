@@ -1,6 +1,6 @@
 ---
 title: Budgetierungsüberblick
-description: Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 Finance verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindstkonfiguration sein muss, um Budgets in Microsoft Dynamics 365 for Finance and Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen.
+description: Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 Finance verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindestkonfiguration sein muss, um Budgets in Finance and Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
@@ -19,22 +19,22 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
-ms.sourcegitcommit: 1eaa3451275fe4223d4d25b37aaa1cd2b183e803
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2667459"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443586"
 ---
-# <a name="budgeting-overview"></a>Budgetierungsüberblick 
+# <a name="budgeting-overview"></a>Budgetierungsüberblick
 
 [!include [banner](../includes/banner.md)]
 
-Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 Finance verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindstkonfiguration sein muss, um Budgets in Microsoft Dynamics 365 for Finance and Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen.
+Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 Finance verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindestkonfiguration sein muss, um Budgets in Finance and Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen.
 
-<a name="overview"></a>Überblick
+<a name="overview"></a>Übersicht
 --------
 
-Das genehmigte Budget für eine juristische Person wird in einem Dokument verwaltet, das als *Budgetregistereintrag* bekannt ist. Die Positionen in einem Budgetregistereintragsdokument wird als *Budgetkonto*bezeichnet und enthält Finanzdimensionsinformationen, Datumsangaben und Beträge der genehmigten Budgets. Das Budgetregistereintragsdokument wird mit grundlegenden Finanzberichten und Abfragenseiten ergänzt, in dem die tatsächlichen Beträge des Sachkontos mit den Budgetbeträgen verglichen werden. 
+Das genehmigte Budget für eine juristische Person wird in einem Dokument verwaltet, das als *Budgetregistereintrag* bekannt ist. Die Positionen in einem Budgetregistereintragsdokument wird als *Budgetkonto* bezeichnet und enthält Finanzdimensionsinformationen, Datumsangaben und Beträge der genehmigten Budgets. Das Budgetregistereintragsdokument wird mit grundlegenden Finanzberichten und Abfragenseiten ergänzt, in dem die tatsächlichen Beträge des Sachkontos mit den Budgetbeträgen verglichen werden. 
 
 Es gibt mehrere Möglichkeiten zum Erstellen von Budgetregistereinträgen:
 

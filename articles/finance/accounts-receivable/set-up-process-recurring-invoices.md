@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4b443630d1612b5095fefa74b5ed6d057be534b7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188946"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443473"
 ---
 # <a name="set-up-and-process-recurring-invoices"></a>Einrichten und Verarbeiten von Serienrechnungen
 
@@ -53,12 +53,12 @@ Nachdem die Vorlage erstellt wurde, müssen Sie die Vorlage den Debitoren zuordn
 Für einen Debitor können mehrere Vorlagen mit unterschiedlichen Zahlungshäufigkeiten erstellt werden.
 
 ## <a name="generate-the-recurring-invoices"></a>Generieren der Serienrechnungen
-Auf der Seite **Serienrechnungen**gibt es eine Aufgabe zum Verarbeiten von Serienrechnungsvorlagen. Sie geben das Rechnungsdatum und die Vorlage zum Generieren der Rechnungen an. Die Rechnungen werden generiert, und jeder Gruppe von verarbeiteten Rechnungen wird eine individuelle Serienkennung zugewiesen.
+Auf der Seite **Serienrechnungen** gibt es eine Aufgabe zum Verarbeiten von Serienrechnungsvorlagen. Sie geben das Rechnungsdatum und die Vorlage zum Generieren der Rechnungen an. Die Rechnungen werden generiert, und jeder Gruppe von verarbeiteten Rechnungen wird eine individuelle Serienkennung zugewiesen.
 
 <a name="post-recurring-free-text-invoices"></a>Buchen von Freitext-Serienrechnungen
 ---------------------------------
 
-Nachdem Serienrechnungen generiert wurden, werden die Serienkennungen in einer Buchungsaufgabe auf der Seite **Serienrechnungen**angezeigt. Sie können alle Rechnungen für eine Serienkennung anzeigen, indem Sie auf den Link klicken. Beim Überprüfen der Rechnungen für eine Serienkennung können Sie einzelne Rechnungen löschen. Die Wiederholungseinstellungen für den Debitor werden für diese Vorlage zurückgesetzt und können später neu generiert werden. Sie können eine, mehrere oder alle Rechnungen für eine Serienkennung buchen. Wenn Workflows aktiviert sind, müssen Sie auf **Senden** klicken, bevor Sie die Rechnungen buchen können.
+Nachdem Serienrechnungen generiert wurden, werden die Serienkennungen in einer Buchungsaufgabe auf der Seite **Serienrechnungen** angezeigt. Sie können alle Rechnungen für eine Serienkennung anzeigen, indem Sie auf den Link klicken. Beim Überprüfen der Rechnungen für eine Serienkennung können Sie einzelne Rechnungen löschen. Die Wiederholungseinstellungen für den Debitor werden für diese Vorlage zurückgesetzt und können später neu generiert werden. Sie können eine, mehrere oder alle Rechnungen für eine Serienkennung buchen. Wenn Workflows aktiviert sind, müssen Sie auf **Senden** klicken, bevor Sie die Rechnungen buchen können.
 
 <a name="print-recurring-free-text-invoices"></a>Drucken von Freitext-Serienrechnungen
 ----------------------------------

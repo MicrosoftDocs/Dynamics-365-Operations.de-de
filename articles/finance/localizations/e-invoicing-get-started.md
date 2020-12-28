@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: 7b2a3aae43d42060c7fcd9e1ea3db814fc5d8f22
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039845"
+ms.locfileid: "4443757"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung
 
@@ -121,7 +121,7 @@ Während der RCS-Einrichtung führen Sie folgende Aufgaben aus:
     ![Auswählen der Key Vault-Parameter](media/e-invoicing-services-get-started-select-key-vault-parameters.png)
 
 5. Wählen Sie im Aktivitätsbereich **Neu** aus, um einen Schlüsseltresor hinzuzufügen.
-6. Geben Sie im Feld **Key Vault URI** den Wert des **DNS-Name** -Attributs der Schlüsseltresorressource ein, die Sie in Azure konfiguriert haben. Informationen dazu, wo Sie den Wert **DNS-Name** finden, sind unter [Erstellen eines Azure-Speicherkontos und eines Schlüsseltresors](e-invoicing-create-azure-storage-account-key-vault.md) zu finden.
+6. Geben Sie im Feld **Key Vault URI** den Wert des **DNS-Name**-Attributs der Schlüsseltresorressource ein, die Sie in Azure konfiguriert haben. Informationen dazu, wo Sie den Wert **DNS-Name** finden, sind unter [Erstellen eines Azure-Speicherkontos und eines Schlüsseltresors](e-invoicing-create-azure-storage-account-key-vault.md) zu finden.
 
     ![Feld „Key Vault URI“](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
@@ -135,7 +135,7 @@ Während der RCS-Einrichtung führen Sie folgende Aufgaben aus:
 
 1. Wählen Sie im Arbeitsbereich **Globalisierungsfunktionen** im Abschnitt **Zugehörige Einstellungen** den Link **Elektronische Berichterstellungsparameter** aus.
 2. Wählen Sie **Hier klicken, um eine Verbindung zu Lifecycle Service herzustellen** aus. Wenn Sie keine Verbindung zu LCS herstellen möchten, wählen Sie **Abbrechen** aus.
-3. Geben Sie auf der **E-Invoicing-Dienst** -Registerkarte im Feld **Dienstendpunkt-URI** den Wert entsprechend den verfügbaren Regionen ein: `https://businessdocumentsubmission.us.operations365.dynamics.com/` oder `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
+3. Geben Sie auf der **E-Invoicing-Dienst**-Registerkarte im Feld **Dienstendpunkt-URI** den Wert entsprechend den verfügbaren Regionen ein: `https://businessdocumentsubmission.us.operations365.dynamics.com/` oder `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
 4. Überprüfen Sie, ob im Feld **Anwendungs-ID** die ID **0cdb527f-a8d1-4bf8-9436-b352c68682b2** angezeigt wird. Dieser Wert ist ein fester Wert.
 5. Geben Sie in das Feld **LCS-Umgebungs-ID** die ID Ihres LCS-Abonnementkontos ein.
 
@@ -231,7 +231,7 @@ Wenn für das übermittelte Rechnungsdokument nach der Antwort auf die Übermitt
 1. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** im Abschnitt **Konfigurationsanbieter** die Kachel **Microsoft** aus.
 2. Wählen Sie **Repositorys** aus.
 3. Wählen Sie **Globale Ressource** und dann **Öffnen** aus.
-4. Importieren Sie **Antwortnachrichtenmodell** , **Importformat für Antwortnachrichten** , **Zuordnung des Antwortnachrichtenmodells zu Ziel** und **Importformat für Dateiinhalte**.
+4. Importieren Sie **Antwortnachrichtenmodell**, **Importformat für Antwortnachrichten**, **Zuordnung des Antwortnachrichtenmodells zu Ziel** und **Importformat für Dateiinhalte**.
 5. Navigieren Sie zu **Organisationsverwaltung \> Einrichtung \> Parameter elektronischer Dokumente**.
 6. Wählen Sie auf der Registerkarte **Elektronisches Dokument** die Option **Hinzufügen** aus, um den Namen der Tabelle einzugeben, die sich auf Ihr landes-/regionsspezifisches Rechnungsdokument bezieht. Informationen zu den Tabellennamen, die Sie auswählen sollten, finden Sie im landes-/regionsspezifischen Thema „Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung“.
 7. Wählen Sie **Antworttypen** aus, um die Antworttypen zu konfigurieren. Informationen zu den Tabellennamen, die Sie auswählen sollten, finden Sie im landes-/regionsspezifischen Thema „Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung“.
@@ -283,7 +283,7 @@ Sie können Geschäftsdokumente entweder manuell oder basierend auf Ihren Zeitpl
 
 ### <a name="filter-query"></a>Filterabfrage
 
-1. Geben Sie im Dialogfeld **Anfrage** auf der Registerkarte **Bereich** Filterkriterien an, indem Sie die Felder **Tabelle** , **Abgeleitete Tabelle** , **Feld** und **Kriterien** verwenden.
+1. Geben Sie im Dialogfeld **Anfrage** auf der Registerkarte **Bereich** Filterkriterien an, indem Sie die Felder **Tabelle**, **Abgeleitete Tabelle**, **Feld** und **Kriterien** verwenden.
 2. Wählen Sie **Hinzufügen** aus, um so viele zusätzliche Kriterien hinzuzufügen, wie Sie zur Auswahl der Geschäftsdokumente benötigen.
 
     ![Einrichten von Filterkriterien für Übermittlungen](media/e-invoicing-services-get-started-set-up-submission-filter-criteria.png)
@@ -333,9 +333,9 @@ Anstatt Dokumente manuell zu übermitteln, können Sie den Übermittlungsprozess
 
 Die im Übermittlungsprotokoll angezeigten Ergebnisse hängen davon ab, wie die Funktion für die elektronische Rechnungserstellung in RCS eingerichtet wurde. Unabhängig von der Einrichtung enthält das Übermittlungsprotokoll jedoch immer drei Inforegister:
 
-- **Verarbeitungsaktivitäten**  – Dieses Inforegister zeigt das Ausführungsprotokoll für die Aktionen an, die in der in RCS eingerichteten Funktionsversion konfiguriert sind. Die Spalte **Status** zeigt an, ob die Aktion erfolgreich ausgeführt wurde.
-- **Aktionsdateien**  – Dieses Inforegister zeigt die Zwischendateien an, die während der Ausführung der Aktionen generiert wurden. Sie können **Anzeigen** auswählen, um die Datei herunterzuladen und ihren Inhalt anzuzeigen.
-- **Aktivitätsprotokoll verarbeiten**  – Dieses Inforegister zeigt die Ergebnisse der Kommunikation zwischen dem Add-On für die elektronische Rechnungsstellung und dem Ziel-Webdienst an. Außerdem wird angezeigt, was von der Verarbeitung durch den Webdienst zurückgegeben wurde.
+- **Verarbeitungsaktivitäten** – Dieses Inforegister zeigt das Ausführungsprotokoll für die Aktionen an, die in der in RCS eingerichteten Funktionsversion konfiguriert sind. Die Spalte **Status** zeigt an, ob die Aktion erfolgreich ausgeführt wurde.
+- **Aktionsdateien** – Dieses Inforegister zeigt die Zwischendateien an, die während der Ausführung der Aktionen generiert wurden. Sie können **Anzeigen** auswählen, um die Datei herunterzuladen und ihren Inhalt anzuzeigen.
+- **Aktivitätsprotokoll verarbeiten** – Dieses Inforegister zeigt die Ergebnisse der Kommunikation zwischen dem Add-On für die elektronische Rechnungsstellung und dem Ziel-Webdienst an. Außerdem wird angezeigt, was von der Verarbeitung durch den Webdienst zurückgegeben wurde.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

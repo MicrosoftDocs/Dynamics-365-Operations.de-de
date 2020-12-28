@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 923ab0305ac75c1156984c7a6d051f036479a16d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177976"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443419"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Eine teilweise Kreditorenzahlung, bei der Rechnungsrabatte auf Kreditorengutschriften vorhanden sind, ausgleichen
 
@@ -58,7 +58,7 @@ April klickt auf **Buchen**. Sie prüft dann den abgeschlossenen Ausgleich. Apri
 | Ausgewählt und hervorgehoben | Normal            | Inv-10070 | 3050    | 6/29/2015 | 7/29/2015 | 10070    | -1.000,00                      | USD      | -200.00          |
 | Ausgewählt                 | Normal            | CR-10070  | 3050    | 7/2/2015  | 7/29/2015 | CR-10070 | 200,00                         | USD      | 198,00           |
 
-April kann die Kreditorenbuchungen auf der Seite **Kreditorenbuchungen** überprüfen, indem sie einen Kreditor auf der Seite **Alle Kreditoren**auswählt und dann im Aktivitätsbereich auf **Buchungen** klickt. Auf dieser Seite sieht April, dass die Rechnung ein Saldo von –800,00 hat. Sie sieht auch eine Gutschrift für 198,00 und einen Rabatt von 2,00.
+April kann die Kreditorenbuchungen auf der Seite **Kreditorenbuchungen** überprüfen, indem sie einen Kreditor auf der Seite **Alle Kreditoren** auswählt und dann im Aktivitätsbereich auf **Buchungen** klickt. Auf dieser Seite sieht April, dass die Rechnung ein Saldo von –800,00 hat. Sie sieht auch eine Gutschrift für 198,00 und einen Rabatt von 2,00.
 
 | Beleg    | Transaktionstyp | Datum      | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag | Währung |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

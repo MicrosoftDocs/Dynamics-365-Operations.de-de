@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5277081d9f7adcc43c30d30208d13c7e39d76118
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f9f2cbe0c9d1609aa3713776f81bafa396fff301
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140374"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645280"
 ---
 # <a name="record-a-vendor-invoice-in-the-invoice-journal"></a>Eine Kreditorenrechnung in der Rechnungserfassung erfassen
 
@@ -43,7 +43,9 @@ Diese Aufgabenanleitung zeigt, wie Kreditorenrechnungen erfasst werden, die kein
     * Die **Mehrwertsteuergruppe** bezieht sich standardmäßig auf das Kreditorenkonto.  
     * Die **Artikel-Mehrwertsteuergruppe** bezieht sich standardmäßig auf das Hauptkonto, das im Feld **Gegenkonto** angegeben ist.  
     * Das **Fälligkeitsdatum** wird anhand der Zahlungsbedingungen berechnet.  
-    * Der **Skonto** wird standardmäßig aus dem Kreditorenkonto ermittelt.  
+    * Der **Skonto** wird standardmäßig aus dem Kreditorenkonto ermittelt.
+12. Wenn Sie den Workflow für die Kreditorenrechnungserfassung aktiviert haben, klicken Sie auf **Workflow > Senden**.
+    * Wenn Ihre Übermittlung genehmigt wurde, wird das Datum auf den ersten Tag des nächsten offenen Zeitraums vorverlegt, wenn das Datum der Transaktionsbuchung in einen Zeitraum fällt, der für die Buchung im Hauptbuch gesperrt oder geschlossen ist.
 12. Klicken Sie auf **Buchen**.
 13. Schließen Sie die Seite.
 

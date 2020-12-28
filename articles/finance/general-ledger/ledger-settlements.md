@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
 ms.openlocfilehash: d41a69bed3d1340736cc7df35aa3ded032d4d79d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977118"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443487"
 ---
 # <a name="ledger-settlements"></a>Sachkontoausgleiche
 
@@ -58,7 +58,7 @@ Um Sachkontobuchungen auszugleichen, folgen Sie diesen Schritten.
 Die Seite **Sachkontoausgleiche** enthält Funktionen, die es einfacher machen, die Transaktionen zu sehen, die Sie für den Ausgleich benötigen.
 
 - Die Schaltfläche **Ausgewählte abwählen** deaktiviert das Feld **Markiert** für alle Positionen, die ausgewählt sind.
-- Mit dem Filter**Markiert** können Sie Transaktionen auf der Grundlage filtern, ob das Feld für **Markiert** aktiviert oder deaktiviert ist.
+- Mit dem Filter **Markiert** können Sie Transaktionen auf der Grundlage filtern, ob das Feld für **Markiert** aktiviert oder deaktiviert ist.
 - Mit dem **Status** Filter können Sie Buchungen auf Grundlage filtern, ob Status **Ausgeglichen** oder **Nicht ausgeglichen** ist.
 - Mit der Schaltfläche **Sortieren nach absolutem Betrag** können Sie die Beträge nach absolutem Wert sortieren, sodass Sie Soll- und Habenbeträge gruppieren können, die den gleichen Betrag haben.
 

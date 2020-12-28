@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6f4d5178aeb3294fd3b40815bb294a7f2ff08b71
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188923"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443471"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträume hat
 
@@ -42,14 +42,14 @@ Am 25. Juni gibt Arnie eine Rechnung für 1.000,00 für den Debitor 4031 ein und
 | 7/9/2015           | 10,00                | 990,00                         |
 | 7/25/2015          | 0,00                 | 1.000,00                       |
 
-Auf der Seite**Debitorenbuchungen** kann Arnie diese Transaktion anzeigen.
+Auf der Seite **Debitorenbuchungen** kann Arnie diese Transaktion anzeigen.
 
 | Beleg   | Transaktionstyp | Datum      | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag  | Währung |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
 | FTI-10030 | Rechnung          | 6/25/2015 | 10030   | 1.000,00                             |                                       | 1.000,00 | USD      |
 
 ## <a name="partial-payment-before-the-cash-discount-date"></a>Teilzahlung vor dem Skontodatum
-Am 28. Juni leistet Debitor 4031 eine Teilzahlung von 294,00. Da der 28. Juni im ersten Skontoabzinsungszeitraum liegt, nutzt der Debitor einen Rabatt von 6,00. Auf der Seite **Bankbuchungen** ist der Wert**Skontobetrag** 20,00, und der Wert **Zu verwendender Skontobetrag** ist 6,00.
+Am 28. Juni leistet Debitor 4031 eine Teilzahlung von 294,00. Da der 28. Juni im ersten Skontoabzinsungszeitraum liegt, nutzt der Debitor einen Rabatt von 6,00. Auf der Seite **Bankbuchungen** ist der Wert **Skontobetrag** 20,00, und der Wert **Zu verwendender Skontobetrag** ist 6,00.
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|

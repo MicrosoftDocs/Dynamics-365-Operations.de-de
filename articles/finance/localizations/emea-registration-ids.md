@@ -18,11 +18,11 @@ ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 7a0b978228e26ec70457a4bcb1c064070953909b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175428"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443725"
 ---
 # <a name="registration-ids"></a>Registrierungskennungen
 
@@ -48,13 +48,13 @@ Bevor Sie Registrierungsnummern-IDs einrichten können, müssen Sie die Registri
 | Primär für Land | Wenn eine Partei Ländern mit einer oder mehreren Lieferverarbeitungs-Adressen zugeordnet ist und die Erfassungskennung für alle Adressen gültig ist, müssen Sie eine Hauptadresse für das Land auswählen. Sie können nur eine Kennung als primär erfassen. Definiert, wenn die Registrierungsnummer nur promär für Landadresse eingegeben werden kann. |
 
 ## <a name="assign-a-registration-type-to-a-registration-category"></a>Zuweisen eines Typs für eine Kategoriehierarchie.
-Erfassungskategorie ist die Land/Regionskennung, die für Länder/Regionen für Steuer, Zoll und insbesondere anderen Zwecken verwendet wird. Diese Kategorie definiert Validierungsregeln bestimmter Erfassungskennung (einschließlich Prüfzifferenvusw.) und unter Einbeziehung der Erfassungskennung in den unterschiedlichen Berichten. Verwenden Sie die Seite **Organisationsverwaltung** &gt; **Globales Adressbuch** &gt; **Erfassungstypen** &gt; **Erfassungskategorien**, Erfassungstypen des bestimmtes Land zuzuweisen, um die Erfassungskategorie zu unterstützen..
+Erfassungskategorie ist die Land/Regionskennung, die für Länder/Regionen für Steuer, Zoll und insbesondere anderen Zwecken verwendet wird. Diese Kategorie definiert Validierungsregeln bestimmter Erfassungskennung (einschließlich Prüfzifferenvusw.) und unter Einbeziehung der Erfassungskennung in den unterschiedlichen Berichten. Verwenden Sie die Seite **Organisationsverwaltung** &gt; **Globales Adressbuch** &gt; **Erfassungstypen** &gt; **Erfassungskategorien**, Erfassungstypen des bestimmtes Land zuzuweisen, um die Erfassungskategorie zu unterstützen.
 
 | Feld            | Beschreibung|
 |-----------------------|----------------|
 | Registrierungstyp     | Das Land/Region des Erfassungstyps|
 | Beschränkt auf         | Der Typ der Einschränkung, die auf den Steuererfassungstyp gilt: Keine, Organisation, Person.|
-| Registrierungskategorie | …Die eindeutige Erfassungskennung genehmigt für die Verwendung im Land. Die vollständige Liste der unterstützten Kategorien wird später in diesem Thema angezeigt. |
+| Registrierungskategorie | Die eindeutige Erfassungskennung genehmigt für die Verwendung im Land. Die vollständige Liste der unterstützten Kategorien wird später in diesem Thema angezeigt. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Geben die Erfassung-ID für globale Adressbuchdatensätze ein
 
@@ -86,7 +86,7 @@ In der folgenden Tabelle werden die unterstützten Registrierungstypen aufgefüh
 | MwSt.-Kennung                                                        | Alle Länder der Europäischen Union (EU)|  Umsatzsteuernummer (Gesetzgebungstyp STEUER-ID in AX 2012 R3)|
 | Enterprise-ID (COID)                                          | Belgien, Tschechische Republik, Estland, Ungarn, Lettland, Litauen, Polen, Schweiz | Unternehmensnummer (EnterpriseNumber) Registrierungsnummer (RegNum\_W) Registrierungsnummer (RegNum\_W) Registrierungsnummer (RegNum\_W) Registrierungsnummer (RegNum\_W) Unternehmenscode (EnterpriseCode) Registrierungsnummer (RegNum\_W) UID (Gesetzgebungstyp UID in AX 2012 R3) |
 | Zweigstellenkennung                                                     | Belgien            | Zweigstellennummer (BranchNumber)|
-| (Spisová-značka Registrierungsnummer, ausgebende Behörde, Abschnitt) | Tschechische Republik     | Einsatznummer (CommercialRegisterInsetNumber). Im Handelsregister CommercialRegister) Abschnitt des Handelsregisters (CommercialRegisterSection )|
+| (Spisová-značka Registrierungsnummer, ausgebende Behörde, Abschnitt) | Tschechische Republik     | Einsatznummer (CommercialRegisterInsetNumber). Im Handelsregister (CommercialRegister) Abschnitt des Handelsregisters (CommercialRegisterSection )|
 | Zolldebitorkennung                                           | Finnland | Zolldebitorennummer (CustomsCustomerNumber\_FI)|
 | INN                                                           | Russische Föderation| INN (Gesetzgebungstyp INN in AX 2012 R3)|
 | RRC                                                           | Russische Föderation| RRC (Gesetzgebungstyp RRC in AX 2012 R3)|

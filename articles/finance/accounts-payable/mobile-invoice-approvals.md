@@ -18,11 +18,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 88ba96b1d9d2f722528a4a920eabe4ab64304a7a
-ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3059427"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443528"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobile Rechnungsgenehmigungen
 
@@ -324,7 +324,7 @@ Um Workflow-Aktionen hinzuzufügen, verwenden Sie die Seite **VendMobileInvoiceH
 
 3. Wählen Sie die Seite <strong>Rechnungsdetails **aus, die Sie zuvor erstellt haben, und klicken Sie dann auf** Bearbeiten</strong>.
 
-4. Legen Sie die **Dokumentverwaltung** Option **Ja** wie weiter unten) fest. **Hinweis:** Wenn keine Anforderungen gibt, Zuordnungen im mobilen Gerät angezeigt werden, können Sie diese Option **Nein**, mit der die Standardeinstellung ist.
+4. Legen Sie die **Dokumentverwaltung** Option **Ja** wie weiter unten fest. **Hinweis:** Wenn keine Anforderungen gibt, Zuordnungen im mobilen Gerät angezeigt werden, können Sie diese Option **Nein**, mit der die Standardeinstellung ist.
    
    ![Dokumentverwaltung](./media/docmanagement-216x300.png)
 

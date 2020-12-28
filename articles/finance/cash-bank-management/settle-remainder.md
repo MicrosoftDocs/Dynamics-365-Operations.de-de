@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
 ms.openlocfilehash: 52b0b456a6d9879c480ac3f076a32e382426a89c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977790"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443565"
 ---
 # <a name="settle-remainder"></a>Rest ausgleichen
 
@@ -65,7 +65,7 @@ Um den Rest auszugleichen, führen Sie die folgenden Schritte aus:
 2)  **Rest ausgleichen** anklicken.
 3)  Ein Dialogfeld wird zum Anzeigen geöffent und der Betrag wird angezeigt, der mit einem Sachkonto ausgegelichen wird, das Datum, das verwendet wird, um den Rest auszugleichen, den Standardursachencode von den Parametern und das Standardkonto von den Parametern. 
 4)  Wählen Sie einen neuen Ausgleichsgrund aus, wenn Sie den Standardgrund ändern möchten. Das Verrechnungskonto wird geändert, das dem Ursachencode zugeordnet ist.
-5)  Bearbeiten Sie das V**errechnungskonto**, wenn Sie es ändern möchten.
+5)  Bearbeiten Sie das V **errechnungskonto**, wenn Sie es ändern möchten.
 6)  Wenn Sie Debitorenbuchungen ausgleichen und der Rest auf einen anderen Debitor verschoben werden soll, wählen Sie einen Debitor aus **Ausgleichen Rest anhand Debitorenkonto** aus. Wenn Sie Lieferantenbuchungen ausgleichen und der Rest auf einen anderen Lieferanten verschoben werden soll, wählen Sie einen Lieferanten aus **Ausgleichen Rest anhand Lieferantenkonto** aus.
 7)  Sie können auch eine Zahlungserfassung mit dem Ausgleichsrest auswählen oder ihn nur buchen ohne eine Erfassung zu erstellen. Wählen Sie **Ja** für **Bearbeiten in der Erfassung**, um eine Zahlungserfassung zu erstellen. Sie können die Zahlungserfassung weiter bearbeiten, die Sie erstellen.
 8)  **Rest ausgleichen** anklicken. Wenn Sie sich entscheiden, eine Erfassung zu erstellen, wird die Schaltfläche zu **Erfassung erstellen** geändert. **Erfassung erstellen** anklicken.

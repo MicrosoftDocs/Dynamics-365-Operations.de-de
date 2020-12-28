@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: fb3ec2d60875d7a0747d64b397aafaa0a3d26348
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039868"
+ms.locfileid: "4443756"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-brazil"></a>Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Brasilien 
 
@@ -93,7 +93,7 @@ Während der RCS-Einrichtung führen Sie folgende Aufgaben aus:
 
     ![Öffnen der Seite „Formatdesigner“](media/e-Invoicing-services-get-started-BRA-Configuration-ER-fomat-designer.png)
 
-3. Verwenden Sie die Seite **Formatdesigner** , um die EB-Formatkonfigurationen für Dateien zu bearbeiten oder anzuzeigen. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
+3. Verwenden Sie die Seite **Formatdesigner**, um die EB-Formatkonfigurationen für Dateien zu bearbeiten oder anzuzeigen. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
 
     ![Formatdesignerseite](media/e-Invoicing-services-get-started-BRA-ER-Format-designer.png)
 
@@ -135,9 +135,9 @@ Um die NF-e-Stornierung zu übermitteln, ist die Funktionseinrichtung **Stornier
 
 #### <a name="set-up-the-url-for-sefaz-web-services"></a>Einrichten der URL für SEFAZ-Webdienste 
 
-1. Wählen Sie auf der Seite **Einrichtung der Funktionsversion** auf der Registerkarte **Aktionen** auf dem Inforegister **Aktionen** die Option **Aufrufen des brasilianischen SEFAZ-Dienstes** (Aktions-ID **3** ) aus.
+1. Wählen Sie auf der Seite **Einrichtung der Funktionsversion** auf der Registerkarte **Aktionen** auf dem Inforegister **Aktionen** die Option **Aufrufen des brasilianischen SEFAZ-Dienstes** (Aktions-ID **3**) aus.
 2. Geben Sie auf dem Inforegister **Parameter** in das Feld **Parameter der URL-Adresse** die URL des SEFAZ-Webdienstes für die NF-e-Übermittlung ein.
-3. Wählen Sie auf dem Inforegister **Aktionen** die Option **Aufrufen des brasilianischen SEFAZ-Dienstes** aus (Aktions-ID **7** ).
+3. Wählen Sie auf dem Inforegister **Aktionen** die Option **Aufrufen des brasilianischen SEFAZ-Dienstes** aus (Aktions-ID **7**).
 4. Geben Sie auf dem Inforegister **Parameter** in das Feld **Parameter der URL-Adresse** die URL des SEFAZ-Webdienstes für die NF-e-Übermittlung ein.
 
 #### <a name="configure-the-cancellation-feature-setup"></a>Konfigurieren der Funktionseinrichtung „Stornierung“
@@ -156,7 +156,7 @@ Um die NF-e-Stornierung zu übermitteln, ist die Funktionseinrichtung **Stornier
 
 #### <a name="set-up-the-url-for-sefaz-web-services"></a>Einrichten der URL für SEFAZ-Webdienste
 
-1. Wählen Sie auf der Seite **Einrichtung der Funktionsversion** auf der Registerkarte **Aktionen** auf dem Inforegister **Aktionen** die Option **Aufrufen des brasilianischen SEFAZ-Dienstes** (Aktions-ID **3** ) aus.
+1. Wählen Sie auf der Seite **Einrichtung der Funktionsversion** auf der Registerkarte **Aktionen** auf dem Inforegister **Aktionen** die Option **Aufrufen des brasilianischen SEFAZ-Dienstes** (Aktions-ID **3**) aus.
 2. Geben Sie auf dem Inforegister **Parameter** in das Feld **Parameter der URL-Adresse** die URL des SEFAZ-Webdienstes für die Stornierung einer genehmigten NF-e ein.
 
 ### <a name="make-an-e-invoicing-environment-available-and-assign-a-draft-version"></a>Bereitstellen einer Umgebung für die elektronische Rechnungsstellung und Zuweisen einer Entwurfsversion
@@ -206,7 +206,7 @@ Während dem Einrichten führen Sie folgende Aufgaben aus:
 1. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** im Abschnitt **Konfigurationsanbieter** die Kachel **Microsoft** aus.
 2. Wählen Sie **Repositorys** aus.
 3. Wählen Sie **Globale Ressource \> Öffnen** aus.
-4. Importieren Sie **Import des NFe-Fehlerprotokolls (BR)** , **Importformat für NF-e-Antwortdaten (BR)** und **Import von NF-e-Antwortnachrichten (BR)**.
+4. Importieren Sie **Import des NFe-Fehlerprotokolls (BR)**, **Importformat für NF-e-Antwortdaten (BR)** und **Import von NF-e-Antwortnachrichten (BR)**.
 5. Navigieren Sie zu **Organisationsverwaltung \> Einrichtung \> Parameter elektronischer Dokumente**.
 6. Wählen Sie auf der Registerkarte **Elektronisches Dokument** die Option **Hinzufügen** aus.
 6. Wählen Sie im Feld **Tabellenname** die Option **Steuerdokumentkopf** aus.
@@ -231,7 +231,7 @@ Während der Verarbeitung in Finance führen Sie folgende Aufgaben aus:
 
 ### <a name="submit-nf-e-fiscal-documents-for-sefaz-authorization"></a>Übermitteln von NF-e-Steuerdokumenten zur Autorisierung durch die SEFAZ 
 
-Nachdem Sie die Funktion **Integration des konfigurierbaren Add-Ons für die elektronische Rechnungsstellung** aktiviert haben, kann der alte Prozess zum Übermitteln von NF-e-Steuerdokumenten zur Autorisierung ( **Exportieren/Importieren des NF-e-Prozesses** ) nicht mehr verwendet werden. Er wird durch einen neuen Prozess mit dem Namen **Elektronische Dokumente übermitteln** ersetzt.
+Nachdem Sie die Funktion **Integration des konfigurierbaren Add-Ons für die elektronische Rechnungsstellung** aktiviert haben, kann der alte Prozess zum Übermitteln von NF-e-Steuerdokumenten zur Autorisierung (**Exportieren/Importieren des NF-e-Prozesses**) nicht mehr verwendet werden. Er wird durch einen neuen Prozess mit dem Namen **Elektronische Dokumente übermitteln** ersetzt.
 
 > [!NOTE]
 > Stellen Sie vor dem Fortfahren sicher, dass Sie über ein oder mehrere Kundensteuerdokumente Modell 55 verfügen, die von der Steuerbehörde des Kunden ausgestellt wurden. Die Richtung für diese Steuerdokumente muss auf **Ausgehend** festgelegt werden und der Status muss **Erstellt** lauten. Weitere Informationen finden Sie unter [Steuerdokumente für Debitoren ausstellen (Brasilien)](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/br-00038-issuing-customer-fiscal-document).

@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 57e8ce38241933b16252f1c918b0f763a8f1be08
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177985"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443552"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Kreditorenzahlungen unter Verwendung eines Zahlungsvorschlags erstellen
 
@@ -119,7 +119,7 @@ Mit der Dimensionssteuerung können Steuergruppierung von generierten Positionen
 
 #### <a name="bank-account-selection"></a>Bankkontoauswahl
 
-Sie können ein Zahlungsstandardkonto pro Zahlungsmethode definieren, unbeachtet den Landkontext. Dies wird in Zahlungspositionen festgelegt, die durch einen Vorschlag generiert werden. Mit der Bankkontofunktion können Sie mehrere Bankkonten definieren, die nach Dimension und Währung oder einer Kombination dieser verwaltet wird, um verschiedene belastende Bankkonten zu nutzen, abhängig von der Kombination. Sie können diese Kombinationen auf der Seite **Zahlungsmethoden** einrichten, indem Sie die Schaltfläche **Bankkonten** verwenden, die für jede Zahlungsmethode mit **Buchungskontotyp** = **Bank** verfügbar ist.
+Sie können ein Zahlungsstandardkonto pro Zahlungsmethode definieren, unbeachtet den Landkontext. Dies wird in Zahlungspositionen festgelegt, die durch einen Vorschlag generiert werden. Mit der Bankkontofunktion können Sie mehrere Bankkonten definieren, die nach Dimension und Währung oder einer Kombination dieser verwaltet wird, um verschiedene belastende Bankkonten zu nutzen, abhängig von der Kombination. Sie können diese Kombinationen auf der Seite **Zahlungsmethoden** einrichten, indem Sie die Schaltfläche  **Bankkonten** verwenden, die für jede Zahlungsmethode mit **Buchungskontotyp** = **Bank** verfügbar ist.
 
 
 

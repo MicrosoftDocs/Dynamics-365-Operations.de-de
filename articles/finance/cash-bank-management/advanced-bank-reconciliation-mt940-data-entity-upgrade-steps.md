@@ -18,11 +18,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 65970cdac114b72363d2fbbc08766c99ace00b88
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899372"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443515"
 ---
 # <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Erweiterte Bankabstimmung MT940 Import – Zusammengesetzter Datenentitäts-Upgrade
 
@@ -55,7 +55,7 @@ Gehen Sie folgendermaßen vor, um die Bankauszugs-Importentität hinzuzufügen, 
             3.  Laden Sie die Datendatei hoch = neue Version „SampleBankCompositeEntity.xml”.
             4.  Klicken Sie auf **Ja**, um die vorhandene Datei zu überschreiben.
             5.  Klicken Sie auf **Ja**, um eine neue Zuordnung zu generieren.
-            6.  Überprüfen Sie, ob S**equenceNumber** zugeordnet ist.
+            6.  Überprüfen Sie, ob S **equenceNumber** zugeordnet ist.
                 -   Klicken Sie auf **Zuordnung anzeigen** auf der Auszugsentität.
                 -   Überprüfen Sie, dass **SequenceNumber** von der Quelle zum Bereitstellen zugeordnet ist.
 

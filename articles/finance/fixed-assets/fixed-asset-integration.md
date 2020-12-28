@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1fb1348a3a3c47e5fd7df46d9ce4af3725d8896b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177894"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443558"
 ---
 # <a name="fixed-assets-integration"></a>Integration von Anlagevermögen
 
@@ -36,7 +36,7 @@ Anlagen können in die Module "Hauptbuch", "Bestandsverwaltung", "Debitoren" und
 
 Im Hauptbuch wird der Wert des Anlagevermögens normalerweise in mehreren Hauptkonten zusammengefasst, die für Finanzberichte erforderlich sind. Auf der Seite **Analgen** können Sie jedoch viele Anlagendatensätze erstellen. Diese Datensätze können Informationen wie den Anschaffungspreis, die Abschreibung und die Bewertung enthalten. Jedes Mal, wenn Sie einen Posten für eine Anlage buchen, werden die entsprechenden Hauptkonten aktualisiert. In den Hauptkonten für Anlagen wird immer der aktualisierte Wert der Anlagen aufgeführt.
 
-Auf der Seite**Anlagenbuchungsprofile** definieren Sie die Hauptkonten, in denen Wertmodellbuchungen für Anlagen gebucht werden. Darüber hinaus geben Sie die Arten von Anlagenbuchungen an, die in jedem Hauptkonto gebucht werden. Sie können unterschiedliche Kombinationen aus Anlagenhauptkonten erstellen, je nach der Detailebene, die für Anlagen im Hauptbuch gewünscht wird. Hauptkonten können auf Buchungsarten, Büchern und anderen Hauptkonten basieren.
+Auf der Seite **Anlagenbuchungsprofile** definieren Sie die Hauptkonten, in denen Wertmodellbuchungen für Anlagen gebucht werden. Darüber hinaus geben Sie die Arten von Anlagenbuchungen an, die in jedem Hauptkonto gebucht werden. Sie können unterschiedliche Kombinationen aus Anlagenhauptkonten erstellen, je nach der Detailebene, die für Anlagen im Hauptbuch gewünscht wird. Hauptkonten können auf Buchungsarten, Büchern und anderen Hauptkonten basieren.
 
 ## <a name="inventory-management"></a>Lagerverwaltung
 In der Lagererfassung für Anlagen können Sie die Anschaffung von Anlagen eingeben, die die juristische Person für sich erstellt oder erzeugt hat. Sie können dann Lagerartikel entweder als Anschaffung oder als Teil einer Anschaffung an Anlagen übertragen. 
@@ -83,7 +83,7 @@ Die Integration wird auf der Registerkarte **Anlagen** lagen im Inforegister **P
 ## <a name="project-management-and-accounting"></a>Projektverwaltung und -verrechnung
 Sie können ein Projekt einer Anlage zuordnen, die durch das Projekt betroffen ist. Zudem kann jede Phase, jede Aufgabe oder jedes Unterprojekt einer anderen Anlage zugeordnet werden. Jedem Projektdatensatz kann eine Anlage zugeordnet werden. Sie erstellen die Zuordnung, wenn Sie eine Anlagennummer im Nummernfeld **Anlagen** auf der Seite **Projekte** eingeben. Der Projekttyp muss entweder **Intern** oder **Kostenprojekt** sein. 
 
-Sie können auch mithilfe der Seite**Projekte** Details zu Anlagen anzeigen, die Projekten zugeordnet sind. Klicken Sie zum Anzeigen des Anlagendatensatzes auf den Anlagenlink im Inforegister **Einstellungen**, um die Seite **Anlagen** zu öffnen. Klicken Sie anschließend auf **Projekt** &gt; **Alle Projekte**, um die Projekte anzuzeigen, die der Anlage zugeordnet sind. 
+Sie können auch mithilfe der Seite **Projekte** Details zu Anlagen anzeigen, die Projekten zugeordnet sind. Klicken Sie zum Anzeigen des Anlagendatensatzes auf den Anlagenlink im Inforegister **Einstellungen**, um die Seite **Anlagen** zu öffnen. Klicken Sie anschließend auf **Projekt** &gt; **Alle Projekte**, um die Projekte anzuzeigen, die der Anlage zugeordnet sind. 
 
 Eine Zuordnung von Anlagen zu Projekten wird üblicherweise dann vorgenommen, wenn die Projekte mit Arbeiten an der Anlage, mit der Wartung der Anlage oder mit Verbesserungen an der Anlage zusammenhängen. Nach Abschluss des Projekts erfolgt nicht automatisch eine Höherbewertung der Anlage. Diese muss ggf. manuell ausgeführt werden, wenn eine Höherbewertung erforderlich ist. 
 

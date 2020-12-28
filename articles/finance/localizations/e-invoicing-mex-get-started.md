@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a30f5a9b585c826222108563ea10ac4194ee441c
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.openlocfilehash: 6d15a79a359b3c708b2b33893d700377a57c3eb7
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039821"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512233"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Mexiko
 
@@ -89,13 +89,13 @@ Sie können eine neue Version erstellen, wenn beispielsweise URLs aktualisiert w
 
     ![Öffnen der Seite „Formatdesigner“](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
-3. Verwenden Sie die Seite **Formatdesigner** , um die EB-Formatkonfigurationen für Dateien zu bearbeiten und anzuzeigen. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](../../dev-itpro/analytics/electronic-reporting-configuration.md).
+3. Verwenden Sie die Seite **Formatdesigner**, um die EB-Formatkonfigurationen für Dateien zu bearbeiten und anzuzeigen. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](../../dev-itpro/analytics/electronic-reporting-configuration.md).
 
     ![Formatdesignerseite](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Verwalten der Einrichtungen der Funktion für die elektronische Rechnungsstellung
 
-- Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Einrichtungen** entweder **Hinzufügen** , **Löschen** oder **Bearbeiten** aus, um die Einrichtungen der Funktion für die elektronische Rechnungsstellung zu verwalten.
+- Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Einrichtungen** entweder **Hinzufügen**, **Löschen** oder **Bearbeiten** aus, um die Einrichtungen der Funktion für die elektronische Rechnungsstellung zu verwalten.
 
 ![Verwalten der Einrichtungen der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
 
@@ -167,7 +167,7 @@ Um das Add-On für die elektronische Rechnungsstellung in Finance einzurichten, 
 2. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** im Abschnitt **Konfigurationsanbieter** die Kachel **Microsoft** aus. Stellen Sie sicher, dass dieser Konfigurationsanbieter auf **Aktiv** festgelegt ist. Weitere Informationen zum Festlegen eines Anbieters auf **Aktiv** finden Sie unter [Erstellen von Konfigurationsanbietern und Markieren als aktiv](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
 3. Wählen Sie **Repositorys** aus.
 4. Wählen Sie **Globale Ressource \> Öffnen** aus.
-5. Importieren Sie **Rechnungsmodell** , **Rechnungsmodellzuordnung** , **CFDI-Rechnungsformat (MX)** , **Format CFDI-Rechnungsstornierungsanforderung (MX)** und **Format CFDI-Rechnungsabbruch (MX)**.
+5. Importieren Sie **Rechnungsmodell**, **Rechnungsmodellzuordnung**, **CFDI-Rechnungsformat (MX)**, **Format CFDI-Rechnungsstornierungsanforderung (MX)** und **Format CFDI-Rechnungsabbruch (MX)**.
 
 ### <a name="turn-on-the-feature-for-processing-cfdi-invoices"></a>Aktivieren der Funktion zur Verarbeitung von CDFI-Rechnungen
 
@@ -183,7 +183,7 @@ Um das Add-On für die elektronische Rechnungsstellung in Finance einzurichten, 
 1. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** im Abschnitt **Konfigurationsanbieter** die Kachel **Microsoft** aus.
 3. Wählen Sie **Repositorys** aus.
 4. Wählen Sie **Globale Ressource \> Öffnen** aus.
-5. Importieren Sie **Antwortnachrichtenmodell** , **Import des CFDI-Fehlerprotokolls (MX)** , **Import des CFDI-Fehlerprotokolls (MX)** und **Import der CFDI-Antwortnachricht (MX)**.
+5. Importieren von **Antwortnachrichtenmodell**, **Import des CFDI-Fehlerprotokolls (MX)** und **Import der CFDI-Antwortnachricht (MX)**.
 
 #### <a name="set-up-the-response-types"></a>Einrichten der Antworttypen
 
@@ -215,7 +215,7 @@ Während der Verarbeitung von CFDI-Rechnungen in Finance über das Add-On für d
 
 ### <a name="submit-cfdi-invoices"></a>Übermitteln von CFDI-Rechnungen
 
-Nachdem Sie die Funktion **Integration des konfigurierbaren Add-Ons für die elektronische Rechnungsstellung** aktiviert haben, kann der Prozess **Elektronischen Rechnungsprozess exportieren/importieren** ( **Debitoren \> Rechnungen \> Elektronische Rechnungen** ) zur Übermittlung von CFDI-Rechnungen nicht mehr verwendet werden. Er wird durch einen neuen Prozess mit dem Namen **Elektronische Dokumente übermitteln** ersetzt.
+Nachdem Sie die Funktion **Integration des konfigurierbaren Add-Ons für die elektronische Rechnungsstellung** aktiviert haben, kann der Prozess **Elektronischen Rechnungsprozess exportieren/importieren** (**Debitoren \> Rechnungen \> Elektronische Rechnungen**) zur Übermittlung von CFDI-Rechnungen nicht mehr verwendet werden. Er wird durch einen neuen Prozess mit dem Namen **Elektronische Dokumente übermitteln** ersetzt.
 
 > [!NOTE]
 > Bevor Sie den neuen Prozess **Elektronische Dokumente übermitteln** verwenden, vergewissern Sie sich, dass die für elektronische Rechnungen in Mexiko erforderliche Einrichtung abgeschlossen ist. Weitere Hinweise zur Umrechnung finden Sie unter [Layoutversion 3.3 für CFDI](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
@@ -248,9 +248,9 @@ Nach dem Aktivieren der Funktion **Integration des konfigurierbaren Add-Ons für
 
 Die Informationen in den Übermittlungsprotokollen sind auf drei Inforegister aufgeteilt:
 
-- **Verarbeitungsaktivitäten**  – Dieses Inforegister zeigt das Ausführungsprotokoll für die Aktionen an, die in der in RCS eingerichteten Funktionsversion konfiguriert sind. Die Spalte **Status** zeigt an, ob die Aktion erfolgreich ausgeführt wurde.
-- **Aktionsdateien**  – Dieses Inforegister zeigt die Zwischendateien an, die während der Ausführung der Aktionen generiert wurden. Sie können **Anzeigen** auswählen, um die Datei herunterzuladen und anzuzeigen.
-- **Aktivitätsprotokoll verarbeiten**  – Dieses Inforegister zeigt die Ergebnisse der Kommunikation zwischen dem Add-On für die elektronische Rechnungsstellung und dem Ziel-Webdienst an. Außerdem zeigt es an, was von der Verarbeitung durch den Webdienst zurückgegeben wurde. Die Spalte **Fehlercode** zeigt den Rückgabecode an, der vom Autorisierungs-Webdienst zurückgegeben wurde.
+- **Verarbeitungsaktivitäten** – Dieses Inforegister zeigt das Ausführungsprotokoll für die Aktionen an, die in der in RCS eingerichteten Funktionsversion konfiguriert sind. Die Spalte **Status** zeigt an, ob die Aktion erfolgreich ausgeführt wurde.
+- **Aktionsdateien** – Dieses Inforegister zeigt die Zwischendateien an, die während der Ausführung der Aktionen generiert wurden. Sie können **Anzeigen** auswählen, um die Datei herunterzuladen und anzuzeigen.
+- **Aktivitätsprotokoll verarbeiten** – Dieses Inforegister zeigt die Ergebnisse der Kommunikation zwischen dem Add-On für die elektronische Rechnungsstellung und dem Ziel-Webdienst an. Außerdem zeigt es an, was von der Verarbeitung durch den Webdienst zurückgegeben wurde. Die Spalte **Fehlercode** zeigt den Rückgabecode an, der vom Autorisierungs-Webdienst zurückgegeben wurde.
 
 Wenn die übermittelte CFDI-Rechnung autorisiert ist, wird ihr Status auf **Genehmigt** aktualisiert.
 

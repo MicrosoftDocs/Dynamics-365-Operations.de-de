@@ -1,7 +1,7 @@
 ---
 title: Buchen von Anlagenbuchungen auf Buchungsebenen
 description: Dieser Artikel gibt eine Übersicht über das Buchen von Ebenenfunktionen für Anlagenbuchungen.
-author: ShylaThompson
+author: moaamer
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 3001
 ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc8c4f4f41ed39447ae441dd8e01cfcf80c939b5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a80e4d1a081b5bd8c58238b0f154f8fbdc660ccb
+ms.sourcegitcommit: f80819c67c0a7475315fc68ce1cb568831e2c0e7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770711"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4493671"
 ---
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Buchen von Anlagenbuchungen auf Buchungsebenen
 
@@ -39,8 +39,11 @@ Anlagenerfassungen definieren sich durch die Nutzung der Seite  Journalnamen unt
 
 Sie können Sachkonten für Anlagenbuchungen auf der Seite Anlagenbuchungsprofile festlegen. Sie müssen für jedes Buchungsprofil die relevante Buchungsart und das Buch auswählen und können dann die Sachkonten angeben. Einrichten eines Buchungsprofildatensatz für jedes Buch, das im Hauptbuch gebucht wird.
 
+Die Anlage kann in Dokumente eingetragen werden, die nur die **Aktuell**-Buchungsebene unterstützen, z. B. **Bestellung**, **Ausstehende Kreditorenrechnung**, **Auftrag** oder **Freitextrechnung**. Bei der Auswahl einer Anlagen-ID in einem dieser Dokumente wird das Anlagenbuch in das Buch mit der **Aktuell**-Buchungsebene gefiltert und während der Buchung automatisch ausgefüllt, wenn das System überprüft, ob die Buchungsebene für Anlagen handelt **Aktuell** ist. Wenn diese Validierung nicht abgeschlossen werden kann, wird der Buchungsvorgang gestoppt. 
+
 > [!NOTE] 
-> Bei Verwendung von abgeleiteten Büchern können Buchungen gleichzeitig auf unterschiedlichen Buchungsebenen durchgeführt werden. Sie erstellen die Buchungen des primären Buchs in einem Journal mit der Buchungsebene, die der Buchungsebene des Wertmodells entspricht. Beim Buchen werden die Buchungen der abgeleiteten Buchtransaktionen dann auf den entsprechenden Buchungsebenen gebucht.
+> Bei Verwendung von abgeleiteten Büchern können Buchungen gleichzeitig auf unterschiedlichen Buchungsebenen durchgeführt werden. Die Transaktionen dieses primären Buchs werden in einer Erfassung oder einem Quelldokument erstellt, in dem die Buchungsebene der Buchungsebene des Buchs entspricht. Beim Buchen werden die Buchungen der abgeleiteten Buchtransaktionen dann auf den entsprechenden Buchungsebenen gebucht. 
+
 
 Weitere Informationen finden Sie unter [Abgeleitete Bücher](derived-books.md) und [Post mit abgeleiteten Büchern](post-derived-value-models.md).
 

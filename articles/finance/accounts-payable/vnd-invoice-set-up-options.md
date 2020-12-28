@@ -4,7 +4,7 @@ description: In diesem Thema werden die Optionen beschrieben, die zum Einrichten
 author: abruer
 manager: AnnBe
 ms.date: 10/16/2020
-ms.topic: articl
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c3ee1112a409f87fdb433d5d43442a858dbd1798
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.openlocfilehash: ebab41d8b7697f20095d6d4654718b88c8b08a82
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022589"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665197"
 ---
 # <a name="setup-options-for-vendor-invoice-automation"></a>Einrichtungsoptionen zur Automatisierung von Kreditorenrechnungen
 
@@ -31,11 +31,11 @@ ms.locfileid: "4022589"
 In diesem Thema werden die Optionen beschrieben, die zum Einrichten und Konfigurieren der Automatisierung von Lieferantenrechnungen verfügbar sind. Die Funktionen zur Rechnungsautomatisierung verwenden die folgenden Arten von Einrichtungsparametern:
 
 - Parameter zum Übermitteln importierter Lieferantenrechnungen an das Workflow-System und Abgleichen der gebuchten Produktzugangspositionen mit ausstehenden Lieferantenrechnungspositionen.
-- Parameter für Hintergrundaufgaben der Prozessautomatisierung. Das Prozessautomatisierungsframework wird verwendet, um importierte Lieferantenrechnungen an das Workflow-System zu übermitteln. Es wird auch verwendet, um gebuchte Produktzugangspositionen automatisch mit ausstehenden Lieferantenrechnungspositionen abzugleichen. Verschiedene Geschäftsprozesse verwenden dieses Framework, um zu definieren, wie oft der ausgewählte Prozess ausgeführt wird. Die verfügbaren Frequenzen für die Hintergrundprozesse **Produktzugangspositionen mit Rechnungspositionen abgleichen** und **Kreditorenrechnungen an Workflow einreichen** umfassen **Stunde** und **Täglich**.
+- Parameter für die Verarbeitung der Automatisierung von Hintergrundaufgaben. Das Prozessautomatisierungsframework wird verwendet, um importierte Lieferantenrechnungen an das Workflow-System zu übermitteln. Dies wird auch dazu verwendet, um gebuchte Produktbelegzeilen automatisch mit ausstehenden Kreditorenrechnungszeilen abzugleichen und eine Validierung der Rechnungsübereinstimmung für manuelle Rechnungen durchzuführen, die automatisch mit Produktbelegzeilen abgeglichen wurden. Verschiedene Geschäftsprozesse verwenden dieses Framework, um zu definieren, wie oft der ausgewählte Prozess ausgeführt wird. Die verfügbaren Frequenzen für die Hintergrundprozesse **Produktzugangspositionen mit Rechnungspositionen abgleichen** und **Kreditorenrechnungen an Workflow einreichen** umfassen **Stunde** und **Täglich**.
 
 Um Informationen zu einer Hintergrundaufgabe einzurichten oder anzuzeigen, gehen Sie zu **Systemadministration \> Setup \> Prozessautomatisierungen** und wählen Sie die Registerkarte **Hintergrundaufgabe**.
 
-Um eine berührungslose Automatisierung des Importprozesses durch Buchung von Kreditorenrechnungen zu erreichen, müssen Sie einen Kreditorenrechnungsworkflow einrichten. Um einen Workflow einzurichten gehen Sie zu **Kreditorenkonten > Setup > Kreditorenkontenworkflows**. Um sicherzustellen, dass die Rechnung ohne manuellen Eingriff von Anfang bis Ende verarbeitet werden kann, müssen Sie eine automatisierte Buchungsaufgabe in Ihre Workflow-Konfiguration aufnehmen. .
+Um eine berührungslose Automatisierung des Importprozesses durch Buchung von Kreditorenrechnungen zu erreichen, müssen Sie einen Kreditorenrechnungsworkflow einrichten. Um einen Workflow einzurichten gehen Sie zu **Kreditorenkonten > Setup > Kreditorenkontenworkflows**. Um sicherzustellen, dass die Rechnung ohne manuellen Eingriff von Anfang bis Ende verarbeitet werden kann, müssen Sie eine automatisierte Buchungsaufgabe in Ihre Workflow-Konfiguration aufnehmen.
 
 ## <a name="parameters-for-submitting-imported-vendor-invoices-to-the-workflow-system"></a>Parameter zum Senden importierter Kreditorenrechnungen an das Workflow-System
 
@@ -62,4 +62,4 @@ Folgende Parameter sind verfügbar:
     Wenn Sie die Option **Abgleich von Produktzugängen mit Rechnungspositionen vor dem automatischen Abgleich** auf **Ja** setzen, kann diese Option nicht auf **Nein** gesetzt werden. Um diese Option auf **Nein** zu setzen, müssen Sie zuerst die Option **Produktzugänge vor dem automatischen Abgleich den Rechnungspositionen zuordnen** auf **Nein** setzen.
 
 - **Anzahl der versuchten automatischen Abgleiche** – Wählen Sie aus, wie oft das System versuchen soll, Produktzugänge mit einer Rechnungsposition abzugleichen, bevor es zu dem Schluss kommt, dass der Prozess fehlgeschlagen ist. Wenn die angegebene Anzahl von Versuchen erreicht ist, wird die Rechnung aus der Automatisierungsverarbeitung entfernt.
-- **Nur prüfen, wenn die abgeglichene Produktzugangsmenge gleich der Rechnungsmenge ist** – Wenn Sie diese Option auswählen, wird der Rechnungsabgleich automatisch nur dann geprüft, wenn die abgeglichene Produktzugangsmenge der Rechnungsposition gleich der Rechnungsmenge der Rechnungszeile ist. Wenn diese Option deaktiviert ist, wird der Rechnungsabgleich jedes Mal überprüft, wenn das System eine Produktzugangsposition automatisch einer Rechnungsposition zuordnet.
+

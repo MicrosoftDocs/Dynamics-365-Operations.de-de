@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 731d0a1ad0af47d98455ba2e609a48e092a67d3f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189567"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443420"
 ---
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Eine teilweise Kreditorenzahlung vor dem Skontodatum mit einer vollständigen Zahlung nach dem Skontodatum abgleichen
 
@@ -66,7 +66,7 @@ April bucht anschließend die Zahlung. Die Rechnung hat nun einem Saldo von 700,
 | DISC-10020 | Skonto    | 1. Juli 2015  |         | 3,00                                 |                                       | 0,00    | USD      |
 
 ## <a name="remaining-payment-on-july-15-use-cash-discount--normal"></a>Verbleibende Zahlung am 15. Juli, Skonto verwenden = Normal
-April zahlt den Rest der Rechnung am 15. Juli, also nach der Rabattperiode. Auf der **Offene Buchungen ausgleichen** Seite wird kein Rabattbetrag im **Vorkalkuliertes Skonto**Feld angezeigt, und der Wert im Feld **Skontobetrag** beträgt **0,00**. Wenn April die verbleibenden 700,00 bezahlt, wird kein zusätzlicher Rabatt genommen.
+April zahlt den Rest der Rechnung am 15. Juli, also nach der Rabattperiode. Auf der **Offene Buchungen ausgleichen** Seite wird kein Rabattbetrag im **Vorkalkuliertes Skonto** Feld angezeigt, und der Wert im Feld **Skontobetrag** beträgt **0,00**. Wenn April die verbleibenden 700,00 bezahlt, wird kein zusätzlicher Rabatt genommen.
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|

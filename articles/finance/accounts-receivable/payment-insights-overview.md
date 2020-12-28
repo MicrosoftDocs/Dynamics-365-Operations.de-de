@@ -1,6 +1,6 @@
 ---
 title: Debitorenzahlungseinblicke (Vorschau)
-description: Dieses Thema beschreibt die Fähigkeit zur Zahlungseinsicht, die dazu beiträgt, das Verständnis für die typischen Zahlungspraktiken einzelner Kunden zu verbessern und Umstände zu identifizieren, die es rechtfertigen, Inkassoprozesse früher einzuleiten, als Sie es sonst getan haben.
+description: In diesem Thema werden die Funktionen für Zahlungsinformationen beschrieben, mit denen Sie die typischen Zahlungsmethoden einzelner Debitoren besser verstehen können. Mit dieser Funktion können Sie Umstände identifizieren, die es rechtfertigen, Erfassungsprozesse früher als sonst einzuleiten.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 11/06/2019
@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f9f1e4ae4270380c88069723e768fd44ecf8c113
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f151942555ac503338f0fd44aa8779e3c2970fb1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773962"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644632"
 ---
 # <a name="customer-payment-insights-preview"></a>Debitorenzahlungseinblicke (Vorschau)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dieses Thema beschreibt die Fähigkeit zur Zahlungseinsicht, die dazu beiträgt, das Verständnis für die typischen Zahlungspraktiken einzelner Kunden zu verbessern und Umstände zu identifizieren, die es rechtfertigen, Inkassoprozesse früher einzuleiten, als Sie es sonst hätten tun können. 
+In diesem Thema werden die Funktionen für Zahlungsinformationen beschrieben, mit denen Sie die typischen Zahlungsmethoden einzelner Debitoren besser verstehen können. Mit dieser Funktion können Sie Umstände identifizieren, die es rechtfertigen, Erfassungsprozesse früher als sonst einzuleiten. 
 
 ## <a name="overview"></a>Übersicht
 
-Unternehmen finden es oft schwierig, vorherzusagen, wann Kunden ihre Rechnungen bezahlen werden. Dieser Mangel an Erkenntnissen führt zu weniger genauen Cashflow-Prognosen, zu zu spät einsetzenden Inkassoprozessen und zu Aufträgen, die an Kunden freigegeben werden, die möglicherweise mit ihrer Zahlung in Verzug geraten. Debitorenzahlungseinblicke (Vorschau) helfen Unternehmen bei der Vorhersage, wann eine Kundenrechnung bezahlt wird, und helfen Unternehmen bei der Erstellung von Inkassostrategien, die die Wahrscheinlichkeit erhöhen, rechtzeitig bezahlt zu werden. 
+Es kann schwierig sein, vorherzusagen, wann Kunden ihre Rechnungen bezahlen werden. Dieser Mangel an Erkenntnissen führt zu weniger genauen Cashflow-Prognosen, zu zu spät einsetzenden Inkassoprozessen und zu Aufträgen, die an Kunden freigegeben werden, die möglicherweise mit ihrer Zahlung in Verzug geraten. Debitorenzahlungseinblicke (Vorschau) hilft Organisationen vorherzusagen, wann ein Debitor eine Rechnung bezahlt. Mithilfe dieser Informationen können Unternehmen Mahnstrategien erstellen, die die Wahrscheinlichkeit einer pünktlichen Zahlung erhöhen. 
 
 ## <a name="predictions"></a>Vorhersagen
 
@@ -42,13 +42,13 @@ Zahlungsvorhersagen werden es Unternehmen ermöglichen, ihre Geschäftsprozesse 
 
 Mithilfe eines maschinellen Lernmodells, das historische Rechnungen, Zahlungen und Kundendaten nutzt, prognostiziert der Debitorenzahlungseinblicke (Vorschau) genauer, wann ein Kunde eine ausstehende Rechnung bezahlen wird.
 
-Für jede offene Rechnung prognostiziert Debitorenzahlungseinblicke (Vorschau) drei Zahlungswahrscheinlichkeiten:
+Für jede offene Rechnung kann Debitorenzahlungseinblicke (Vorschau) drei Zahlungswahrscheinlichkeiten prognostizieren:
 
 -   Wahrscheinlichkeit, dass die Zahlung pünktlich erfolgt. 
 -   Wahrscheinlichkeit, dass die Zahlung verspätet erfolgt.
 -   Wahrscheinlichkeit, dass die Zahlung sehr spät erfolgt.
 
-Um Unternehmen dabei zu helfen, den gesamten Zahlungsbetrag zu verstehen, den sie von einem Kunden in einem der drei Bereiche On time, late und Very late erwarten können, bietet Debitorenzahlungseinblicke (Vorschau) auch eine aggregierte Ansicht der erwarteten Zahlungen.
+Debuitorenzahlungseinblocke (Vorschau) bietet zudem eine aggregierten Ansicht der erwarteten Zahlungen. Dies kann Organisationen dabei helfen, den gesamten Zahlungsbetrag zu verstehen, den sie von einem Kunden in einem der drei Bereiche Pünktlich, Verspätet und sehr spät erwarten können.
 
 [![Aggregierte Ansicht der Zahlungsvorhersagen](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
@@ -66,7 +66,7 @@ Die Entwicklung und Bereitstellung einer KI-Lösung ist schwierig. Ein Team von 
 
 ## <a name="how-to-get-customer-payment-insights-preview"></a>So erhalten Sie Debitorenzahlungseinblicke (Vorschau)
 
-Bitte senden Sie eine E-Mail an [Debitorenzahlungseinblicke (Vorschau)](mailto:fiap@microsoft.com), wenn Sie daran interessiert sind, die Debitorenzahlungseinblicke (Vorschau) auszuprobieren.
+Senden Sie eine E-Mail an [Debitorenzahlungseinblicke (Vorschau)](mailto:fiap@microsoft.com), wenn Sie daran interessiert sind, die Debitorenzahlungseinblicke (Vorschau) auszuprobieren.
 
 ## <a name="privacy-notice"></a>Datenschutzhinweis
 

@@ -19,11 +19,11 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 471c719a8e6de0ebe6fcdad0ae222453db841c87
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772098"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443701"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budgetplanungsvorlagen für Excel
 
@@ -67,7 +67,7 @@ Klicken Sie in der Registerkarte **Design** auf Felder **hinzufügen** und wähl
 
 Gehen Sie mit dem Cursor auf den gewünschten Ort in der Excel-Datei. Klicken Sie auf  **Beschriftung hinzufügen**, um die Feldbezeichnung dem ausgewählten Ort hinzuzufügen. Wählen Sie **Wert hinzufügen**, um die Wertefelder am ausgewählten Ort hinzuzufügen. Klicken Sie anschließend auf **Fertig**, um den Designer zu beenden.
 
-## <a name="select-add-valuemediabpt7pngmediabpt7png"></a>[![„Wert hinzufügen“ auswählen](./media/bpt7.png)](./media/bpt7.png)
+## <a name="select-add-valuemediabpt7png"></a>[![„Wert hinzufügen“ auswählen](./media/bpt7.png)](./media/bpt7.png)
 
 <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Der Budgetplandokumentvorlagentabelle eine berechnete Spalte hinzufügen
 --------------------------------------------------------------
@@ -83,7 +83,7 @@ Die ausgewählte Feldgruppe zeigt die Spalten an, die in der Vorlage verfügbar 
 [![Spalte hinzufügen und einfügen](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Um die Formel zu definieren, erstellen Sie die Formel im Arbeitsblatt und kopieren sie dann in das Fenster **Design**. Eine an Finance and Operations gebundene Tabelle ist in der Regel eine "AXTable1". Um beispielsweise die Anforderung Q1 zusammenfassen: Fordern Sie die Spalten Q4 in der Tabelle an, die Formel  = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
+> Um die Formel zu definieren, erstellen Sie die Formel im Arbeitsblatt und kopieren sie dann in das Fenster **Design**. Eine gebundene Finance and Operations-Tabelle wird normalerweise „AXTable1“ genannt. Um beispielsweise die Anforderung Q1 zusammenfassen: Fordern Sie die Spalten Q4 in der Tabelle an, die Formel  = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
 
 Wiederholen Sie diese Schritte, um die Spalte **Regulierung** hinzuzufügen. Mithilfe der Formel = AxTable1\[Total request\]\*$I$1 für diese Spalte. Dadurch wird der Wert in Zelle I1 multipliziert und die Werte in der Spalte **Anforderung gesamt**, um die Regulierungsbeträge zu berechnen.
 
@@ -120,7 +120,7 @@ Es wird empfohlen, die Vorlage zu sperren, um Benutzer am Schließen zu hindern.
 
 Klicken auf den Pfeil für ein weiteres Menü. Wählen Sie **Sperren**.
 
-### <a name="select-lockmediabpt16-1024x614pngmediabpt16png"></a>[![Sperre auswählen](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### <a name="select-lockmediabpt16png"></a>[![Sperre auswählen](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
 ### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Kann ich andere Excel-Funktionen, wie Zellenformatierung, Farben, bedingte Formatierung und Diagramme mit Budgetplanvorlagen verwenden?
 

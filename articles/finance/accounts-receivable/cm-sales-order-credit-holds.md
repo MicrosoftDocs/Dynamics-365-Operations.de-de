@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 102ea4285407a4f4985cc8dd46ebc1ad21fc6f67
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977910"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443447"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kreditsperren für Aufträge verwalten
 [!include [banner](../includes/banner.md)]
@@ -162,7 +162,7 @@ Sie können die Ausführung der Kreditkontrollregeln erzwingen, wenn Ausgleichsr
 
 Sie können die Rangfolge der Zahlungsbedingungen auf der Seite **Kreditmanagement > Setup > Kreditmanagementsetup > Rangausgleichsrabatte** einrichten.
 
-1. Wählen Sie das **Skonto**, das Sie sortieren möchten. Die **Beschreibung**des Abrechnungsrabattes wird angezeigt.
+1. Wählen Sie das **Skonto**, das Sie sortieren möchten. Die **Beschreibung** des Abrechnungsrabattes wird angezeigt.
 2. Wählen Sie den Wert **Rang** aus. Die Werte sind alle relativ zueinander, sodass Sie 1,2,3 oder 10,20,30 verwenden können. Sie können für die meisten Ausgleichsrabatte auch denselben Wert verwenden, sodass nur ein oder zwei Ausgleichsrabatte die Bonitätsprüfung auslösen.
 
 ## <a name="sequence-the-application-of-rules"></a>Reihenfolge der Anwendung von Regeln
@@ -185,7 +185,7 @@ Das Verhalten der Regel **Kreditlimit verwendet** ändert sich basierend auf den
 Aufträge können auch dann vom Kreditmanagement ausgeschlossen werden, wenn Regeln vorhanden sind. 
 
 - Wenn Sie die Einstellungen **Kunde vom Kreditmanagement ausschließen** in **Alle Kunden > Kunde auswählen > Kredit und Inkasso** auf **Ja** ändern, dann werden keine Aufträge für diesen Kunden bearbeitet
-- Wenn Sie den Wert **Vom Kreditmanagement ausschließen** im **Auftragskopf**in der **Inforegister für die Kreditverwaltung** zu **Ja** ändern, werden die Kreditverwaltungsregeln nicht verarbeitet. Diese Einstellung kann nur vom Kreditkaufmann oder Kreditmanager vorgenommen werden.
+- Wenn Sie den Wert **Vom Kreditmanagement ausschließen** im **Auftragskopf** in der **Inforegister für die Kreditverwaltung** zu **Ja** ändern, werden die Kreditverwaltungsregeln nicht verarbeitet. Diese Einstellung kann nur vom Kreditkaufmann oder Kreditmanager vorgenommen werden.
 
 ## <a name="processing-orders-on-hold-using-the-credit-management-hold-list"></a>Bearbeitung von gesperrten Aufträgen über die Kreditmanagement-Sperrliste
 

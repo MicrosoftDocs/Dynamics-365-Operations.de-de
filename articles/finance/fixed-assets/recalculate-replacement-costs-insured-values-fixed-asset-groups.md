@@ -18,11 +18,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a9dd04072b4845fe5df2a918b64ba1835ea584dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187106"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443633"
 ---
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Neuberechnung von Wiederbeschaffungskosten und versicherten Werten für Anlagengruppen
 
@@ -39,7 +39,7 @@ Geben Sie zur Neuberechnung von Wiederbeschaffungskosten und versicherten Werten
 
 Wenn Sie die Seite **Wiederbeschaffungskosten und versicherte Werte aktualisieren** verwenden, um die Wiederbeschaffungskosten und den versicherten Wert für die Anlagen neu zu berechnen, werden die folgenden Formeln verwendet:
 
--   \[Wiederbeschaffungskostenfaktor der Anlagengruppe / 100) + 1\] \* vorhandene Wiederbeschaffungskosten der Anlage
+-   \[(Wiederbeschaffungskostenfaktor der Anlagengruppe / 100) + 1\] \* vorhandene Wiederbeschaffungskosten der Anlage
 -   \[(Versicherter Wert der Anlagengruppe / 100) + 1\] \* vorhandener versicherter Wert der Anlage
 
 > [!NOTE] 

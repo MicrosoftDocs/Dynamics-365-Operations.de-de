@@ -19,11 +19,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f0fc01508bd206f750a4101521cd9dff7b647656
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177979"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443524"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Überblick zur SEPA-Kreditübertragung
 
@@ -48,7 +48,7 @@ Der EPC besteht aus europäischen Banken und entwickelt das Handels- und das tec
 -   Karten
 
 ## <a name="what-is-a-sepa-credit-transfer"></a>Was ist eine SEPA-Überweisung?
-Eine SEPA-Überweisung ist eine Zahlung von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Zahlungen müssen in Euro durchgeführt werden und sie müssen die internationale Bankkontonummer (IBAN) und Bank Identifier Code (BIC) für beide Parteien enthalten. (Die BIC ist auch als Society for Worldwide Interbank Financial Telecommunication \[SWIFT\] Code bekannt. Darüber hinaus müssen Buchungskosten zwischen beiden Parteien freigegeben werden. Banküberweisungen zwischen Parteien sollten XML-Dateien verwenden, die den ISO 20022-Standards zu Zahlungsverarbeitung entsprechen und das durch das EPC festgelegt XML-Format verwenden.
+Eine SEPA-Überweisung ist eine Zahlung von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Zahlungen müssen in Euro durchgeführt werden und sie müssen die internationale Bankkontonummer (IBAN) und Bank Identifier Code (BIC) für beide Parteien enthalten. (Die BIC ist auch als Society for Worldwide Interbank Financial Telecommunication \[SWIFT\] Code bekannt.) Darüber hinaus müssen Buchungskosten zwischen beiden Parteien freigegeben werden. Banküberweisungen zwischen Parteien sollten XML-Dateien verwenden, die den ISO 20022-Standards zu Zahlungsverarbeitung entsprechen und das durch das EPC festgelegt XML-Format verwenden.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Wie wird eine Überweisung implementiert?
 Das SEPA-Überweisungsformat wird über die generische elektronische Berichterstellung und die Methoden von Zahlungsfunktionen in Microsoft Dynamics 365 Finance implementiert. Einige Banküberweisungsformate, die in anderen Regionen noch verwendet werden, verwenden Sie das vorhandene Zahlungsframework. Unter vielen anderen Formaten gibt es zwölf ISO 20022-Banküberweisungsdateiformate, die verfügbar sind. Diese Exportformate entsprechen dem XML-Standard SEPA ISO 20022. Sie werden verwendet, um Nicht-Euro-Zahlungsüberweisungen für Land/Region zu generieren, in denen sie Eurozahlungen und verwendet werden, z.B. in der Version 8,2 der SEPA-Kredit-Übertragungssystem-Regelung der EPC. Bevor Sie die Überweisungen implementieren können, müssen Sie von Ihrer Bank die Software erhalten, die erforderlich ist, um elektronisch Bankdateien hochzuladen. Sie verwenden diese Software, um XML-Dateien zu übertragen, die Zahlungen an die Bank enthalten.

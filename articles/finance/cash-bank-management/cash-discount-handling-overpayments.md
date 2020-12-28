@@ -19,11 +19,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3f0714eab80f43695b2b93f77a70f31c360277f9
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899516"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443718"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Skonti für Überzahlungen
 
@@ -38,7 +38,7 @@ Eine Rechnung gilt als zu viel bezahlt, wenn der Zahlungsbetrag höher als der R
 | 105,00        | 10,50                   | 94,50                                               | 95,00                             |
 
 ## <a name="cash-discount-administration--specific"></a>Skontoverwaltungsoption = Spezifisch
-Wenn **Spezifisch** im Feld **Skontoverwaltung** der Seite **Konten für automatische Buchungen** ausgewählt ist, wird das vollständige Skonto übernommen. Der Überzahlungsbetrag wird entweder zu einem Sachkonto für den Skontounterschied gebucht oder bleibt als Kontensaldo auf dem Debitorenkonto. Das genaue Verhalten hängt davon ab, ob der Überzahlungsbetrag zwischen 0,00 und dem Betrag liegt, der im Feld**Maximale Über- bzw. Unterzahlung** eingegeben wurde, oder ob der Überzahlungsbetrag größer als der Betrag in **Maximale Über- bzw. Unterzahlung** ist.
+Wenn **Spezifisch** im Feld **Skontoverwaltung** der Seite **Konten für automatische Buchungen** ausgewählt ist, wird das vollständige Skonto übernommen. Der Überzahlungsbetrag wird entweder zu einem Sachkonto für den Skontounterschied gebucht oder bleibt als Kontensaldo auf dem Debitorenkonto. Das genaue Verhalten hängt davon ab, ob der Überzahlungsbetrag zwischen 0,00 und dem Betrag liegt, der im Feld **Maximale Über- bzw. Unterzahlung** eingegeben wurde, oder ob der Überzahlungsbetrag größer als der Betrag in **Maximale Über- bzw. Unterzahlung** ist.
 
 ### <a name="scenario-1"></a>Szenario 1
 
@@ -99,7 +99,7 @@ Der Überzahlungsbetrag von 0,50 verbleibt als offener Saldo auf der Zahlung und
 
 | Konto                                                                                          | Sollbetrag | Habenbetrag |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Skonto (das Feld **Hauptkonto für Debitorenrabatte** auf der Seite**Skonti**) | 10,50        |               |
+| Skonto (das Feld **Hauptkonto für Debitorenrabatte** auf der Seite **Skonti**) | 10,50        |               |
 | Debitoren                                                                              |              | 10,50         |
 
 ## <a name="cash-discount-administration--unspecific"></a>Skontoverwaltungsoption = Unspezifisch

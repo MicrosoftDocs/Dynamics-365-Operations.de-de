@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: d55a7c5e24213f70a1b71f89691f0e5be8c36f10
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976570"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443542"
 ---
 # <a name="credit-limit-adjustments"></a>Kreditlimitanpassungen 
 
@@ -67,7 +67,7 @@ Um temporäre Kreditlimitanpassungen manuell hinzuzufügen, befolgen Sie diese S
     Wenn bereits ein aktives oder zukünftiges temporäres Kreditlimit vorhanden ist, werden für jedes temporäre Kreditlimit das aktuelle temporäre Kreditlimit und der aktuelle Zeitraum angezeigt. Der Name wird automatisch angezeigt.
 
 3. Geben Sie das neue Kreditlimit ein, das das aktuelle Kreditlimit ersetzen soll.
-4. In den Feldern **Neu ab Datum**und **Neu bis Datum** definieren Sie den Zeitraum, in dem das erweiterte Kreditlimit gültig ist. Sie müssen die Ablaufdaten für das Kreditlimit eingeben, wenn Sie ein Journal für die Kreditlimitanpassung erstellen.
+4. In den Feldern **Neu ab Datum** und **Neu bis Datum** definieren Sie den Zeitraum, in dem das erweiterte Kreditlimit gültig ist. Sie müssen die Ablaufdaten für das Kreditlimit eingeben, wenn Sie ein Journal für die Kreditlimitanpassung erstellen.
 
 Das Feld **Genehmigungsstatus** gibt den Workflow-Status der Erfassungsposition an.
 
@@ -81,7 +81,7 @@ Sie können Kreditlimits auch automatisch anpassen lassen. Wählen Sie im Aktivi
 
 ### <a name="from-existing-customer"></a>Von einem vorhandenen Debitor
 
-Sie können Erfassungspositionen von vorhandenen Debitoren erstellen. Wenn Sie **Generieren \> Von einem vorhandenen Debitor**auswählen, wird ein Dialogfeld angezeigt, in dem Sie Kriterien zur Auswahl von Debitoren und zur Berechnung der neuen Grenzwerte angeben können.
+Sie können Erfassungspositionen von vorhandenen Debitoren erstellen. Wenn Sie **Generieren \> Von einem vorhandenen Debitor** auswählen, wird ein Dialogfeld angezeigt, in dem Sie Kriterien zur Auswahl von Debitoren und zur Berechnung der neuen Grenzwerte angeben können.
 
 1. Geben Sie einen Anpassungswert ein, um einen Betrag zum Kreditlimit hinzuzufügen oder von diesem abzuziehen. Geben Sie einen negativen Wert ein, um das aktuelle Kreditlimit zu verringern, oder einen positiven Wert, um es zu erhöhen.
 2. Wählen Sie im Feld **Werttyp** aus, wie der in Schritt 1 eingegebene Wert zur Berechnung des neuen Kreditlimits verwendet werden soll:

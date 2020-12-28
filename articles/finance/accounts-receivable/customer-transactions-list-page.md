@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 28669014b4998de6ae13ec7dbc4c704a14aff6e2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 948f83d56e560cc21205294c15de4b2097d2ad2e
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975339"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4443794"
 ---
 # <a name="customer-transactions-list-page"></a>Seite mit Kundenbuchungsliste
 
@@ -57,7 +57,7 @@ Die Menüs auf der Listenseite **Kundentransaktionen** variieren, je nach der ju
 Wenn Sie auf die Funktion zugreifen wollen, führen sie die folgenden Schritte aus.
 
 1. **Debitoren\> Alle Kunden** wählen.
-2. Wählen Sie einen Kunden und klicken Sie dann im Aktivitätsbereich, auf der Registerkarte**Kunde** unter **Transaktionen** auf Gruppe und wählen Sie **Globale Transaktionen**.
+2. Wählen Sie einen Kunden und klicken Sie dann im Aktivitätsbereich, auf der Registerkarte **Kunde** unter **Transaktionen** auf Gruppe und wählen Sie **Globale Transaktionen**.
 
 ## <a name="more-transaction-filters"></a>Weitere Transaktionsfilter 
 
@@ -72,7 +72,7 @@ Aktivieren Sie das Kontrollkästchen **Währungsneubewertungen ausblenden**, um 
 
 ## <a name="modify-due-dates-and-discount-dates"></a>Ändern von Fälligkeitsdatum und Skontodatum
 
-Sie können Fälligkeitsdatum und Skontodatum für offene Debitorbuchungen aktualisieren. In der Freigabe 8.1 können Sie nun Fälligkeitsdaten der Listenseite **Debitorentransaktionen** hinzufügen. Wenn Sie auf dem Fälligkeitsdatum in der Listenseite auf**Kundenbuchungen** klicken, können Sie Zahlungsbedingungen, Fälligkeitsdatum, Skontodatum und Skontobedingungen im Dialogfeld **Fälligkeitsdatum und Skontodatumsangaben aktualisieren** auch ändern.
+Sie können Fälligkeitsdatum und Skontodatum für offene Debitorbuchungen aktualisieren. In der Freigabe 8.1 können Sie nun Fälligkeitsdaten der Listenseite **Debitorentransaktionen** hinzufügen. Wenn Sie auf dem Fälligkeitsdatum in der Listenseite auf **Kundenbuchungen** klicken, können Sie Zahlungsbedingungen, Fälligkeitsdatum, Skontodatum und Skontobedingungen im Dialogfeld **Fälligkeitsdatum und Skontodatumsangaben aktualisieren** auch ändern.
 
 ### <a name="activate-the-feature"></a>Aktivieren der Funktion
 

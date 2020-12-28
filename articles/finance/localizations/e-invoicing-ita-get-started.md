@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: c513141f820c95fe3842478361693701f1e3641b
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039791"
+ms.locfileid: "4443753"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Italien
 
@@ -90,13 +90,13 @@ Wenn Sie die Funtion **Elektronische Rechnungen exportieren (IT)** aus dem globa
 
     ![Öffnen der Seite „Formatdesigner“](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
 
-5. Verwenden Sie die Seite **Formatdesigner** , um die EB-Formatkonfigurationen für Dateien zu bearbeiten und anzuzeigen.
+5. Verwenden Sie die Seite **Formatdesigner**, um die EB-Formatkonfigurationen für Dateien zu bearbeiten und anzuzeigen.
 
     ![Formatdesignerseite](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Verwalten der Einrichtungen der Funktion für die elektronische Rechnungsstellung
 
-- Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Einrichtungen** entweder **Hinzufügen** , **Löschen** oder **Bearbeiten** aus, um die Einrichtungen der Funktion für die elektronische Rechnungsstellung zu verwalten.
+- Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Einrichtungen** entweder **Hinzufügen**, **Löschen** oder **Bearbeiten** aus, um die Einrichtungen der Funktion für die elektronische Rechnungsstellung zu verwalten.
 
 ![Verwalten der Einrichtungen der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
@@ -163,10 +163,10 @@ Während der Einrichtung von Finance führen Sie folgende Aufgaben aus:
 
 ### <a name="import-the-er-data-model-data-model-mapping-and-formats"></a>Importieren des EB-Datenmodells, der Datenmodellzuordnung und der Formate
 
-1. Überprüfen Sie im Arbeitsbereich **Elektronische Berichterstellung** , ob der Konfigurationsanbieter **Geschäftsdokumentservice** auf **Aktiv** festgelegt ist.
+1. Überprüfen Sie im Arbeitsbereich **Elektronische Berichterstellung**, ob der Konfigurationsanbieter **Geschäftsdokumentservice** auf **Aktiv** festgelegt ist.
 2. Wählen Sie **Repositorys** aus.
 3. Wählen Sie **Globale Ressource \> Öffnen** aus.
-4. Importieren Sie **Rechnungsmodell** , **Rechnungsmodellzuordnung** und **Kontextmodell Debitorenrechnung**.
+4. Importieren Sie **Rechnungsmodell**, **Rechnungsmodellzuordnung** und **Kontextmodell Debitorenrechnung**.
 
 #### <a name="turn-on-the-feature-for-exporting-customer-electronic-invoices-for-italy"></a>Aktivieren der Funktion zum Exportieren von elektronischen Kundenrechnungen für Italien
 
@@ -221,7 +221,7 @@ Sie können die Dokumente manuell übermitteln, basierend auf Ihrer Nachfrage na
 2. Wählen Sie **OK** aus, um das Dialogfeld **Anfrage** zu schließen.
 3. Wählen Sie **OK** aus, um die ausgewählten Dokumente zu übermitteln.
 
-> ! [HINWEIS] Bei Ihrem ersten Versuch, ein Dokument über den Service zu übermitteln, werden Sie aufgefordert, die Verbindung mit dem Add-On für die elektronische Rechnungsstellung zu bestätigen. Wählen Sie **Hier klicken, um eine Verbindung mit dem Electronic Document Submission Service herzustellen** aus.
+> ![HINWEIS] Bei Ihrem ersten Versuch, ein Dokument über den Service zu übermitteln, werden Sie aufgefordert, die Verbindung mit dem Add-On für die elektronische Rechnungsstellung zu bestätigen. Wählen Sie **Hier klicken, um eine Verbindung mit dem Electronic Document Submission Service herzustellen** aus.
 
 #### <a name="view-submission-logs"></a>Anzeigen von Übermittlungsprotokollen
 

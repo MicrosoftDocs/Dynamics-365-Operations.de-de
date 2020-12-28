@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: db9208c8e76d963d5b8f6bee6b7c73268af68734
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177980"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443525"
 ---
 # <a name="reverse-a-vendor-payment"></a>Kreditorenzahlung stornieren
 
@@ -45,10 +45,10 @@ Um ermitteln, welche Methode Ihre Organisation verwendet, sehen Sie sich die Sei
 | Feste Dimensionen werden nicht auf Rückbuchungen angewendet, um sicherzustellen, dass die gleichen Sachkonten rückgebucht werden.                                                                                      | Feste Dimensionen werden auf die Erfassung für Scheckrückbuchungen während der Buchung angewendet. Der Finanzdimensionswert ist möglicherweise nicht im Buchhaltungseintrag für den Origionalscheck enthalten, je nachdem, wann die feste Dimension definiert wurde.                                                                                                                                                                                                     |
 
 ## <a name="reverse-posted-checks-without-reviewing-them"></a>Gebuchte Schecks rückbuchen, ohne sie zu prüfen
-Wenn Ihre Organisation Scheckrückbuchungen sofort buchen möchte, wenn Sie auf **Zahlungsrückbuchung** auf der Seite **Schecks** klicken. Legen Sie auf der Seite **Bargeld- und Bankverwaltungsparameter** die Option **Überprüfungsprozess für Zahlungsrückbuchungen verwenden** auf **Nein** fest. Auf der Seite **Schecks** können Sie den Scheck zur Rückbuchung auswählen und **Zahlungsrückbuchung**wählen. Geben Sie dann das Datum ein, und wählen Sie einen Grund für die Rückbuchung aus.
+Wenn Ihre Organisation Scheckrückbuchungen sofort buchen möchte, wenn Sie auf **Zahlungsrückbuchung** auf der Seite **Schecks** klicken. Legen Sie auf der Seite **Bargeld- und Bankverwaltungsparameter** die Option **Überprüfungsprozess für Zahlungsrückbuchungen verwenden** auf **Nein** fest. Auf der Seite **Schecks** können Sie den Scheck zur Rückbuchung auswählen und **Zahlungsrückbuchung** wählen. Geben Sie dann das Datum ein, und wählen Sie einen Grund für die Rückbuchung aus.
 
 ## <a name="reverse-posted-checks-after-they-are-reviewed-in-the-check-reversal-journal"></a>Gebuchte Schecks nach Überprüfung in der Scheckrückbuchungserfassung rückbuchen
-Wenn Ihre Organisation Scheckrückbuchungen prüfen möchte, bevor sie gebucht werden, erstellen Sie eine Scheckrückbuchungserfassung zur Prüfung und legen Sie auf der Seite **Bargeld- und Bankverwaltungsparameter** die Option **Überprüfungsprozess für Zahlungsrückbuchungen verwenden** auf **Ja** fest. Auf der Seite **Schecks** können Sie den Scheck zur Rückbuchung auswählen und **Zahlungsrückbuchung**wählen. Geben Sie dann das Datum ein, und wählen Sie einen Grund für die Rückbuchung aus. Der Finanzgrund muss sowohl für den Bank- als auch für den Kreditorentyp eingerichtet sein. Sie müssen auch einen Erfassungsnamen auswählen, um eine Erfassung in der Scheckrückbuchungserfassung zu erstellen.
+Wenn Ihre Organisation Scheckrückbuchungen prüfen möchte, bevor sie gebucht werden, erstellen Sie eine Scheckrückbuchungserfassung zur Prüfung und legen Sie auf der Seite **Bargeld- und Bankverwaltungsparameter** die Option **Überprüfungsprozess für Zahlungsrückbuchungen verwenden** auf **Ja** fest. Auf der Seite **Schecks** können Sie den Scheck zur Rückbuchung auswählen und **Zahlungsrückbuchung** wählen. Geben Sie dann das Datum ein, und wählen Sie einen Grund für die Rückbuchung aus. Der Finanzgrund muss sowohl für den Bank- als auch für den Kreditorentyp eingerichtet sein. Sie müssen auch einen Erfassungsnamen auswählen, um eine Erfassung in der Scheckrückbuchungserfassung zu erstellen.
 
 ### <a name="review-a-reversal"></a>Überprüfen einer Rückbuchung
 

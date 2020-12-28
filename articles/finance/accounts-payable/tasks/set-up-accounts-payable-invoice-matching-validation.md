@@ -17,11 +17,11 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: a101edd9e25fba1aa2325cb2193c6ea56282c9d1
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143787"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443516"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Einrichten der Kreditorenkonten-Rechnungsabgleichprüfung
 
@@ -39,7 +39,7 @@ Vier unterschiedliche Arten von entsprechenden Prüfungen sind verfügbar.
 
 ## <a name="set-up-parameters-to-enable-invoice-matching-validation"></a>Parameter für die Aktivierung des Rechnungsabgleichs einrichten
 1. Wechseln Sie zu **Kreditorenkonten > Einrichtung > Kreditorenkontenparameter**
-2. Wählen Sie die Registerkarte**Rechnungsprüfung**.
+2. Wählen Sie die Registerkarte **Rechnungsprüfung**.
 3. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen **Rechnungsabgleichvalidierung**.
     * Wählen Sie aus, ob zum Buchen einer Rechnung mit Abweichungen beim Rechnungsabgleich eine Genehmigung erforderlich sein soll. Wenn dazu **Mit Warnung zulassen** festgelegt ist, wird ein visueller Hinweis angezeigt, wenn eine Abweichung beim Rechnungsabgleich die Toleranz übersteigt. Sie sind jedoch dazu in der Lage, die Rechnung zu buchen. Um Workflows zusammen mit der Rechnungsabgleichsüberprüfung zu verwenden, stellen Sie sicher, dass das Feld **Rechnung mit Abweichungen buchen** auf **Mit Warnung zulassen** festgelegt ist, um zu vermeiden, dass Sie mehrmals genehmigen müssen.  
     * Wählen Sie im Feld **Rechnungskopf-Abgleichstatus automatisch aktualisieren** aus, ob der Abgleich während der Rechnungsdateneingabe automatisch vom System ausgeführt wird. Die empfohlene Einstellung ist **Ja**, es sei denn, Sie haben Probleme bei der Dateneingabeleistung. Das Deaktivieren der automatischen Aktualisierungen ermöglicht möglicherweise eine schnellere Systemleistung, da die Rechnungsabgleichüberprüfung während der Dateneingabe umgangen wird. Der Dateneingabesekretär muss den Abgleichungsstatus der Rechnung manuell aktualisieren, um die Rechnungsabgleich-Überprüfergebnisse anzuzeigen, wenn dieser auf **Nein** festgelegt ist.  

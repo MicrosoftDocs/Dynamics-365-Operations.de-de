@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ms.openlocfilehash: 28abef376e8462c9a69dbd8e5033ea799b6a4b3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977814"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443591"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Verwalten Sie die Kontoprüfung (IBAN) der internationalen Bankkontonummer
 
@@ -39,7 +39,7 @@ Informationen zur Struktur der IBAN werden in Microsoft Dynamics 365 Finance ges
 
 ## <a name="validate-the-iban-structure-in-a-bank-account"></a>Überprüfen Sie die IBAN-Struktur auf einem Bankkonto
 
-1. Gehen Sie zu**Bargeld- und Bankverwaltung \> Bankkonten \> Bankkonten**.
+1. Gehen Sie zu **Bargeld- und Bankverwaltung \> Bankkonten \> Bankkonten**.
 2. Bankkonto erstellen.
 3. Auf dem Inforegister **Zusätzliche Informationen** können Sie eine IBAN-Nummer eingeben.
 

@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ms.openlocfilehash: 1ac06e7d702ffe3a8cdb6bd2823f2ffdc055c722
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976522"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443442"
 ---
 # <a name="create-a-free-text-invoice"></a>Freitextrechnung erstellen
 
@@ -82,6 +82,6 @@ Um die Positionen auf der Freitextrechnung zu kopieren, wählen Sie eine oder me
 Anschließend können Sie die Informationen nach Bedarf bearbeiten.
 
 ## <a name="create-a-free-text-invoice-from-a-template"></a>Erstellen einer Vorlage für Freitext-Serienrechnungen
-Sie können eine Freitext-Rechnung von einer Vorlage erstellen. Wenn Sie **Neu von Vorlage** aus der **Rechnungs**registerkarte auswählen, können Sie einen Vorlagennamen gür die neue Freitextrechnung auswählen. Sie können die Standardwerte wie die Zahlungsbedingungen und die Zahlungsmethode der Zahlung auch auswählen oder die Werte verwenden, , die mit der Vorlage gespeichert wurden.
+Sie können eine Freitext-Rechnung von einer Vorlage erstellen. Wenn Sie **Neu von Vorlage** aus der **Rechnungs** registerkarte auswählen, können Sie einen Vorlagennamen gür die neue Freitextrechnung auswählen. Sie können die Standardwerte wie die Zahlungsbedingungen und die Zahlungsmethode der Zahlung auch auswählen oder die Werte verwenden, , die mit der Vorlage gespeichert wurden.
 
 Eine neue Freitextrechnung wird erstellt und Sie können die Werte in dieser Rechnung bearbeiten.

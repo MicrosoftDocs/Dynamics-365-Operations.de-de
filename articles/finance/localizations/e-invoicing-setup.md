@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: 7e631f1bf64b47b5f3e85d4f98c6edafe67d627a
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039891"
+ms.locfileid: "4443754"
 ---
 # <a name="set-up-the-electronic-invoicing-add-on"></a>Einrichten des Add-Ons für die elektronische Rechnungsstellung
 
@@ -78,7 +78,7 @@ Befolgen Sie diese Schritte, um der Add-On-Funktion für die elektronische Rechn
     > [!NOTE]
     > Während Sie das Format bearbeiten, wird der Status der Konfigurationsversion auf **Entwurf** festgelegt.
 
-3. Verwenden Sie die Seite **Formatdesigner** , um die Dateiformatkonfiguration zu bearbeiten. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
+3. Verwenden Sie die Seite **Formatdesigner**, um die Dateiformatkonfiguration zu bearbeiten. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
 
     ![Formatdesignerseite](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
@@ -194,7 +194,7 @@ Die verfügbaren Parameter variieren je nach der Aktion, die auf dem Inforegiste
 |-----------------------------|-------------|
 | Webdienst-URL             | Die URL, an die Anforderungen gesendet werden sollen. |
 | Lautzeitüberschreitung der Webanforderung         | Die maximale Zeit (in Millisekunden), die auf eine Antwort des Webdienstes gewartet wird. |
-| Vorgangstyp anfordern      | Der Typ der HTTP-Anforderungsoperation (z. B. **GET** , **POST** oder **DELETE** ). |
+| Vorgangstyp anfordern      | Der Typ der HTTP-Anforderungsoperation (z. B. **GET**, **POST** oder **DELETE**). |
 | Zertifikatnamen           | Die Zertifikatnamen. |
 | Codierung des Antwortkörpers      | Die erwartete Codierung des HTTP-Antwortkörpers, damit dieser korrekt decodiert werden kann. |
 | Inhaltstyp der HTTP-Anforderung   | Die Header-Eingabe zum Inhaltstyp für HTTP-Anforderungen. |
