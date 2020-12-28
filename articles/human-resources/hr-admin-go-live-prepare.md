@@ -19,11 +19,11 @@ ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011417"
+ms.locfileid: "4418751"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Liveschaltung für Human Resources vorbereiten
 
@@ -57,7 +57,7 @@ Ein wichtiger Meilenstein in jedem Implementierungsprojekt ist die Umstellung au
 
 Um sicherzustellen, dass die Produktionsumgebung für Live-Vorgänge verwendet wird, stellt Microsoft die Produktionsinstanz nur bereit, wenn sich die Implementierung der Phase **Betrieb** nähert, nachdem die erforderlichen Aktivitäten in der LCS-Methodik abgeschlossen sind. Weitere Informationen zu den Umgebungen in Ihrem Abonnement finden Sie unter [Dynamics 365-Lizenzierungshandbuch](https://go.microsoft.com/fwlink/?LinkId=866544). 
 
-Kunden müssen die Phasen **Analyse** , **Entwerfen und entwickeln** , und **Prüfung** in der LCS-Methodik abschließen, bevor die Schaltfläche **Konfigurieren** zum  Anfordern der Produktionsumgebung verfügbar wird. Um eine Phase in LCS abzuschließen, müssen Sie zuerst jeden erforderlichen Schritt in dieser Phase ausführen. Wenn alle Schritte in einer Phase abgeschlossen sind, können Sie die gesamte Phase abschließen. Sie können eine Phase später jederzeit wieder öffnen, wenn Sie Änderungen vornehmen müssen. Weitere Informationen finden Sie unter [Lifecycle Services (LCS) für Finance and Operations Apps Kunden](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
+Kunden müssen die Phasen **Analyse**, **Entwerfen und entwickeln**, und **Prüfung** in der LCS-Methodik abschließen, bevor die Schaltfläche **Konfigurieren** zum  Anfordern der Produktionsumgebung verfügbar wird. Um eine Phase in LCS abzuschließen, müssen Sie zuerst jeden erforderlichen Schritt in dieser Phase ausführen. Wenn alle Schritte in einer Phase abgeschlossen sind, können Sie die gesamte Phase abschließen. Sie können eine Phase später jederzeit wieder öffnen, wenn Sie Änderungen vornehmen müssen. Weitere Informationen finden Sie unter [Lifecycle Services (LCS) für Finance and Operations Apps Kunden](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
 
 Der Vorgang zum Ausführen eines Schritts besteht aus zwei Teilen: 
 

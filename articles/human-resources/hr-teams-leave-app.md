@@ -3,7 +3,7 @@ title: Urlaubsanträge in Teams verwalten
 description: In diesem Thema wird beschrieben, wie Sie arbeitsfreie Zeit in der Dynamics 365 Human Resources-App in Microsoft Teams beantragen.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/30/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6856e417ee47f8f582f797c5bcedcff23a1432f
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
+ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3929992"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4418762"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Urlaubsanträge in Teams verwalten
 
 [!include [banner](includes/preview-feature.md)]
 
-Mit der Microsoft Dynamics 365 Human Resources-App in Microsoft Teams können Sie schnell arbeitsfreie Zeit beantragen und Informationen zu Salden arbeitsfreier Zeiten in Microsoft Teams anzeigen. Sie können mit einem Bot interagieren, um Informationen anzufordern und eine Urlaubsanfrage zu starten. Die Registerkarte **Arbeitsfreie Zeit** enthält detailliertere Informationen. Darüber hinaus können Sie Personen Informationen über Ihre bevorstehende arbeitsfreie Zeit in Teams und Chats außerhalb der Human Resources-App senden.
+Mit der Microsoft Dynamics 365 Human Resources-App in Microsoft Teams können Sie schnell arbeitsfreie Zeit beantragen und Informationen zu Salden arbeitsfreier Zeiten in Microsoft Teams anzeigen. Sie können mit einem Bot interagieren, um Informationen anzufordern und eine Urlaubsanfrage zu starten. Die Registerkarte **Arbeitsfreie Zeit** enthält detailliertere Informationen. Sie können Personen Informationen auch über Ihre bevorstehende arbeitsfreie Zeit in Teams und Chats außerhalb der Human Resources-App senden.
 
 ## <a name="install-the-app"></a>App installieren
 
@@ -182,11 +182,25 @@ Wenn Sie sich nicht bei der App anmelden können, ist es möglich, dass das Kont
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Fehler beim Genehmigen von Urlaubsanträgen in der Human Resources-App in Teams
 
-Wenn Sie beim Versuch, Urlaubsanforderungen in der Teams-App zu genehmigen, eine Fehlermeldung erhalten, führen Sie die folgenden Schritte zur Problembehandlung aus:
+Wenn Sie beim Versuch, Urlaubsanträge in der Teams-App zu genehmigen, eine Fehlermeldung erhalten, versuchen Sie es mit der folgenden Problembehandlung:
 
 1. Stellen Sie sicher, dass das Konto, mit dem Sie sich bei Microsoft Teams anmelden, dasselbe ist, mit dem Sie auf Dynamics 365 Human Resources zugreifen.
 
 2. Stellen Sie sicher, dass Sie ein gültiger Genehmiger für die Anforderung sind, indem Sie die Workflow-Einstellungen auf Urlaubsgenehmigung überprüfen. Weitere Informationen zu Workflows für Urlaubsanträge finden Sie unter [Erstellen eines Workflows für Urlaubsanträge](hr-leave-and-absence-workflow.md).
+
+## <a name="known-accessibility-issues"></a>Bekannte Probleme mit den Eingabehilfen
+
+In der Human Resources-App in Teams gibt es die folgenden Probleme mit den Eingabehilfen, an deren Behebung wir in zukünftigen Versionen arbeiten.
+
+| Abgang | Problemumgehung oder Erklärung |
+| --- | --- |
+| Bei Zoomen auf 400 % auf dem Desktop werden einige der Aktionsschaltflächen ausgeblendet. | Sie sollten eine Bildschirmlupe verwenden, bis wir diese Zoomstufe unterstützen können. |
+| Auf der Registerkarte **Arbeitsfreie Zeit** gibt das Voiceover eine Schaltfläche „Aktion“ an, wenn die Kopfzeile für das Raster für arbeitsfreie Zeit vorliest. | Die Kopfzeile und die Elemente im Raster sind nach Jahr gruppiert und können ausgeblendet werden. Das Voiceover interpretiert dies als umsetzbares Element, obwohl dies nicht der Fall ist. |
+| Wenn Sie wischen, während ein Popup oder Menü geöffnet ist, liest das Voiceover das Popup oder den Menüinhalt nicht vor. | Erkunden Sie den Inhalt mithilfe des Fingerscannens. |
+| In der Registerkarte **Arbeitsfreie Zeit** gibt es eine zusätzliche Wischgeste, wenn Sie zum **Ursachencode** in einem neuen Antrag navigieren. | Es gibt kein verstecktes Steuerelement, zu dem die Wischnavigation gelangen möchte. |
+| Wenn Sie in der Registerkarte **Arbeitsfreie Zeit** wischen, während der Kalender geöffnet ist, befinden Sie sich außerhalb des Steuerelements, anstatt in einem neuen Antrag oder beim Bearbeiten eines Antrags ganz oben. | Wenn Sie **Zu heute gehen** erreichen, betrachten Sie dies als Ende des Steuerelements und wischen Sie in die entgegengesetzte Richtung, um wieder nach oben zu gelangen. |
+| Das Voiceover liest die Beschriftung für Daten nicht vor. | Die paarweise angetroffenen Daten sind immer ein **Startdatum** und ein **Enddatum**. |
+| In der Registerkarte **Chat** springt der Fokus wieder nach oben, wenn Sie ein Datum eingeben, während Sie das Hilfsmittel oder die Tastaturnavigation verwenden. | Tippen Sie, bis Sie Ihren Eingabebereich wieder erreichen. |
 
 ## <a name="privacy-notice"></a>Datenschutzhinweis
 

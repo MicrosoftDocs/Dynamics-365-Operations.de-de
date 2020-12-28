@@ -20,11 +20,11 @@ ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
 ms.openlocfilehash: 2d463bf01659aeb6599023ce46da0c604f8eeff0
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107374"
+ms.locfileid: "4412715"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Erweiterte automatische Omni-Channel-Belastungen
 
@@ -38,7 +38,7 @@ In Versionen vor Retail-Version 10.0 sind die Konfigurationen [Automatische Bela
 
 Bei der Verwendung von Versionen vor Version 10.0 wird ein POS-Benutzer bei der Erstellung einer "Alles versenden"- oder "Auswahl versenden"-POS-Transaktion aufgefordert, manuell eine Versandgebühr einzugeben. Während die verschiedenen Belastungsfunktionen der Anwendung in Bezug darauf genutzt werden, wie die Belastungen in den Auftrag geschrieben werden, wird keine systematische Berechnung bereitgestellt – die Berechnung basiert auf der Eingabe des Benutzers, um den Wert der Belastungen zu bestimmen. Die Gebühren können nur als ein einziger "Versand"-bezogener Gebührencode hinzugefügt werden und können nach der Erstellung am POS nicht mehr einfach bearbeitet oder geändert werden.
 
-Die Verwendung von manuellen Aufforderungen zum Hinzufügen von Versandkosten ist in den Versionen 10.0 und höher weiterhin verfügbar. Wenn eine Organisation nicht den **Erweiterte Auto-Belastungen** -Parameter aktiviert, bleiben die POS-Aufforderungen für die manuelle Eingabe von Belastungen identisch.
+Die Verwendung von manuellen Aufforderungen zum Hinzufügen von Versandkosten ist in den Versionen 10.0 und höher weiterhin verfügbar. Wenn eine Organisation nicht den **Erweiterte Auto-Belastungen**-Parameter aktiviert, bleiben die POS-Aufforderungen für die manuelle Eingabe von Belastungen identisch.
 
 Bei der erweiterten automatische Belastungen-Funktion können POS-Benutzer systematisch alle definierten Zusatzkosten auf der Grundlage von automatische Belastungen-Einrichtungstabellen berechnen lassen. Darüber hinaus haben die Benutzer die Möglichkeit, jeder POS-Verkaufstransaktion auf Kopf- oder Positionsebene (für einen Cash-and-Carry- oder Kundenauftrag) eine unbegrenzte Anzahl von zusätzlichen Zuschlägen und Gebühren hinzuzufügen oder zu bearbeiten.
 
@@ -199,9 +199,9 @@ Belastungen werden nicht systematisch an **Rücklieferungen** erstattet, die in 
 
 Die folgenden Bon-Elemente wurden der Zugangsposition und -fußzeile hinzugefügt, um die erweiterte automatischen Belastungsfunktionalität zu unterstützen.
 
-- **Versandgebühren – Position** – Dieses Positionselement kann verwendet werden, um bestimmte Belastungscodes, die auf die Verkaufsposition angewendet wurden, wieder zusammenzufassen. Es werden nur Codes für Belastungen angezeigt, die auf der Seite **Codes für Belastungen** als **Versand** -Belastungen gekennzeichnet sind.
+- **Versandgebühren – Position** – Dieses Positionselement kann verwendet werden, um bestimmte Belastungscodes, die auf die Verkaufsposition angewendet wurden, wieder zusammenzufassen. Es werden nur Codes für Belastungen angezeigt, die auf der Seite **Codes für Belastungen** als **Versand**-Belastungen gekennzeichnet sind.
 - **Andere Belastungen – Position** – Dieses Positionselement kann verwendet werden, um alle nicht versandbezogenen Belastungscodes, die auf die Verkaufsposition angewendet wurden, wieder zusammenzufassen. Dies sind Belastungscodes, bei denen das Kennzeichen **Versand** auf der Seite **Belastungscode** nicht aktiviert wurde.
-- **Details zu Versandgebühren – Auftrag** – Dieses Element auf der Fußzeile zeigt die Beschreibungen der für die Bestellung angewandten Belastungscodes an, die als **Versand** -Gebühren auf der Einrichtungsseite **Belastungscode** gekennzeichnet wurden.
+- **Details zu Versandgebühren – Auftrag** – Dieses Element auf der Fußzeile zeigt die Beschreibungen der für die Bestellung angewandten Belastungscodes an, die als **Versand**-Gebühren auf der Einrichtungsseite **Belastungscode** gekennzeichnet wurden.
 - **Versandgebühren – Auftrag** – Dieses Element auf Fußzeilenebene zeigt den Dollarwert der versandbezogenen Belastungen an.
 - **Details zu anderen Belastungen – Auftrag** – Dieses Element auf der Fußzeile zeigt die Beschreibung der für die Bestellung angewandten Belastungscodes an, die nicht als versandbezogene Belastungen gekennzeichnet sind.
 - **Andere Kosten – Auftrag** – Dieses Element auf Fußzeilenebene zeigt den Dollarwert der nicht versandbezogenen Belastungen an.

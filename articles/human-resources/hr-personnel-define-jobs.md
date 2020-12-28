@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428661"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418695"
 ---
 # <a name="define-new-jobs"></a>Neue Einzelvorgänge definieren
 
@@ -57,7 +57,7 @@ Diese Aufgabe konzentriert sich auf die Erstellung einer neuen Stelle. Sie wird 
 21. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 22. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 23. Schalten Sie die Erweiterung des Abschnitts "Qualifikationen" ein/aus.
-    * Beachten Sie, dass die Felder in den Inforegistern "Qualifikationen", "Ausbildung" und "Bescheinigungen" leer sind. Nachdem die Informationen aus einer Stellenvorlage kopiert wurden, werden die Informationen in diesen Feldern in einem Einzelschritt eingegeben.   
+    * Beachten Sie, dass die Felder in den Inforegistern "Qualifikationen", "Ausbildung" und "Bescheinigungen" leer sind. Nachdem die Informationen aus einer Stellenvorlage kopiert wurden, werden die Informationen in diesen Feldern in einem Einzelschritt eingegeben.   
 24. Klicken Sie auf "Speichern".
 25. Klicken Sie auf "Kopieren aus".
 26. Klicken Sie auf "Aus Vorlage kopieren".

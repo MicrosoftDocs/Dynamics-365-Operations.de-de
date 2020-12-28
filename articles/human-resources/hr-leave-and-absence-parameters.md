@@ -2,8 +2,8 @@
 title: Beurlaubungs- und Abwesenheitsparameter konfigurieren
 description: Definieren Sie Personalparameter für Urlaub und Abwesenheit in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/20/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 196c3901b5bc19f73b882bac7d3361e5bcc37e07
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712375"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4418765"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Beurlaubungs- und Abwesenheitsparameter konfigurieren
 
@@ -47,6 +47,19 @@ Bevor Sie Urlaubs- und Abwesenheitspläne einrichten in Dynamics 365 Human Resou
 5. Auf der Registerkarte **Mitarbeiter-Selbstservice** geben Sie an, ob Manager Urlaubs- und Abwesenheitsanträge für ihre Mitarbeiter eingeben können.
 
 7. Wählen Sie **Speichern** aus.
+
+>[!IMPORTANT]
+>Urlaub und Abwesenheit wird in verschiedenen Unternehmen derzeit in der Vorschau angezeigt. Um die Urlaubs- und Abwesenheitsoption anzuzeigen, müssen Sie sie in Ihrer **Sandbox**-Umgebung aktivieren. Weitere Informationen zum Aktivieren der Vorschaufunktionen finden Sie unter [Funktonen verwalten](hr-admin-manage-features.md).
+
+## <a name="view-and-change-human-resources-shared-parameters"></a>Freigegebenen Human Resources-Parameter anzeigen und ändern
+
+1. Wählen Sie auf der Seite **Personalverwaltung** die Registerkarte **Links** aus.
+
+2. Unter **Einrichtung** wählen Sie **Freigegebene Human Resources-Parameter** aus.
+
+3. Wählen Sie in der Registerkarte **Vorabzugang** **Ja** bei **Unternehmensübergreifende Urlaubsansicht aktivieren**, damit der Urlaub unternehmensweit angezeigt werden kann.
+
+4. Wählen Sie **Speichern** aus.
 
 ## <a name="view-and-change-leave-and-absence-parameters"></a>Urlaub- und Abwesenheitsparameter anzeigen und ändern
 

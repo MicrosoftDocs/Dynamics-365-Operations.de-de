@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009104"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418716"
 ---
 # <a name="create-a-recurring-data-export-app"></a>App für wiederkehrenden Datenexport erstellen
 
@@ -68,7 +68,7 @@ Die fertige Logic App ähnelt der folgenden Abbildung.
 
 ### <a name="step-1-create-a-data-export-project-in-human-resources"></a>Schritt 1: Erstellen eines Datenexportprojekts in Human Resources
 
-Erstellen Sie in Human Resources ein Datenexportprojekt, das Arbeitskräfte exportiert. Nennen Sie das Projekt **Export Workers**und stellen Sie sicher, dass die Option **Datenpaket generieren** auf **Ja** gesetzt ist. Fügen Sie eine einzelne Entität (**Arbeitskraft**) zum Projekt hinzu und wählen Sie das Format aus, in das exportiert werden soll. (Microsoft Excel-Format wird in diesem Tutorial verwendet.)
+Erstellen Sie in Human Resources ein Datenexportprojekt, das Arbeitskräfte exportiert. Nennen Sie das Projekt **Export Workers** und stellen Sie sicher, dass die Option **Datenpaket generieren** auf **Ja** gesetzt ist. Fügen Sie eine einzelne Entität (**Arbeitskraft**) zum Projekt hinzu und wählen Sie das Format aus, in das exportiert werden soll. (Microsoft Excel-Format wird in diesem Tutorial verwendet.)
 
 ![Export Workers-Datenprojekt](media/integration-logic-app-export-workers-project.png)
 

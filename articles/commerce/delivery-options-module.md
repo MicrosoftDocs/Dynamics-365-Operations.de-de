@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39e597b88afcca69623b1a23acc95e4da3873082
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: f9e8df576efd1e58fde235828823f31e87ed58bf
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818298"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4412731"
 ---
 # <a name="delivery-options-module"></a>Lieferoptionsmodul
 
@@ -68,7 +68,9 @@ Ein Lieferoptionsmodul kann nur zu einem Auschecken-Modul hinzugefügt werden. W
 
 [Zahlungsmodul](payment-module.md)
 
-[Versandadressmodul](ship-address-module.md)
+[Versandadressenmodul](ship-address-module.md)
+
+[Abholinformationsmodul](pickup-info-module.md)
 
 [Auftragsdetailmodul](order-confirmation-module.md)
 

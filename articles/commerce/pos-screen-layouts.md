@@ -20,11 +20,11 @@ ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022470"
+ms.locfileid: "4412697"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Visuelle Konfigurationen der POS-Benutzeroberfläche
 
@@ -57,12 +57,12 @@ Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die 
 - **Tastatur** – Sie können zwischen **Standardmäßiger Betriebssystemtastatur** und **Nummernblock anzeigen** auswählen, um die Standardtastatur anzugeben, die für die Eingabe auf dem Anmeldebildschirm verwendet wird. Der Nummernblock ist eine virtuelle Tastatur, die hauptsächlich für berührungsbasierte Geräte verwendet wird. Die Standardauswahl ist **Standardmäßige Betriebssystemtastatur**.
 - **Logo Bild** – Sie können ein Logo-Bild angeben, das auf dem Anmeldebildschirm angezeigt wird. Wir empfehlen, ein Bild mit transparentem Hintergrund zu verwenden. Die Dateigröße von Hintergrundbildern sollte so gering wie möglich gehalten werden, da das Speichern und Hochladen großer Dateien Auswirkungen auf das Anwendungsverhalten und die Leistung haben könnte.
 - **Anmeldungs-Hintergrund** – Sie können ein Hintergrundbild für die Bildschirm-Anmeldung angeben. Für das Hintergrundbild sollte die Bilddateigröße so gering wie möglich gehalten werden.
-- **Hintergrund** - Sie können einen Hintergrund in der gesamten Anwendung anstelle der ausgefüllten Themenfarbe definieren. Bei Hintergrundbildern für den Anmeldebildschirm sollte die Dateigröße so klein wie möglich gehalten werden.
+- **Hintergrund**- Sie können einen Hintergrund in der gesamten Anwendung anstelle der ausgefüllten Themenfarbe definieren. Bei Hintergrundbildern für den Anmeldebildschirm sollte die Dateigröße so klein wie möglich gehalten werden.
 
 > [!NOTE]
 > Das Layout **Rechts** und die Datums-/Uhrzeitanzeige gelten nicht für den Anmeldebildschirm in kompakter Ansicht.
 
-Sie müssen den Verteilungsplanauftrag **1090** ( **Register** ) ausführen, um die neuesten visuellen Profilkonfigurationen mit der Kanaldatenbank zu synchronisieren.
+Sie müssen den Verteilungsplanauftrag **1090** (**Register**) ausführen, um die neuesten visuellen Profilkonfigurationen mit der Kanaldatenbank zu synchronisieren.
 
 ## <a name="screen-layouts"></a>Bildschirmlayouts
 
@@ -70,7 +70,7 @@ Bildschirmlayoutkonfiguration bestimmt die Aktivitäten, Inhalte und die Platzie
 
 ![POS-Bildschirmlayout anzeigen](../commerce/media/POS-Screen-Layout-View.png)
 
-- **Begrüßungsbildschirm** - In den meisten Fällen ist der Begrüßungsbildschirm die Seite, die den Benutzern angezeigt wird, wenn sie sich in POS anmelden. Der Begrüßungsbildschirm kann aus einem Brandingbild und Schaltflächenrastern bestehen, die Zugriff auf POS-Arbeitsgänge bilden. In der Regel werden Arbeitsgänge, die nicht für die aktuelle Buchung bestimmt sind, hier platziert.
+- **Begrüßungsbildschirm**- In den meisten Fällen ist der Begrüßungsbildschirm die Seite, die den Benutzern angezeigt wird, wenn sie sich in POS anmelden. Der Begrüßungsbildschirm kann aus einem Brandingbild und Schaltflächenrastern bestehen, die Zugriff auf POS-Arbeitsgänge bilden. In der Regel werden Arbeitsgänge, die nicht für die aktuelle Buchung bestimmt sind, hier platziert.
 
     ![POS-Willkommensbildschirm](../commerce/media/POS-Welcome-Screen.png)
 
@@ -84,7 +84,7 @@ Bildschirmlayoutkonfiguration bestimmt die Aktivitäten, Inhalte und die Platzie
 
 Bildschirmlayouts können Unternehmen, Kassen oder Benutzern zugeweisen werden. Die Benutzer-Zuweisung setzt die Kassen- und Shopzuweisung außer Kraft, und die Kassen-Zuweisung setzt die Shopzuweisung außer Kraft. In einem einfachen Szenario, wo alle Benutzer das gleiche Layout unabhängig von der Kasse oder Rolle verwenden, kann das Bildschirmlayout nur für den Shop festgelegt werden. In Fällen, in denen bestimmte Kassen oder Benutzer spezielle Layouts erfordern, können sie ihnen zugeordnet werden.
 
-Abhängig davon, welcher Ebene die Bildschirmlayouts zugewiesen sind, müssen Sie die Verteilungsplanaufträge **1070** ( **Kanalkonfiguration** ), **1090** ( **Register** ) und/oder **1060** ( **Mitarbeiter** ) ausführen, um die neuesten Bildschirmlayoutkonfigurationen mit der Kanaldatenbank zu synchronisieren.
+Abhängig davon, welcher Ebene die Bildschirmlayouts zugewiesen sind, müssen Sie die Verteilungsplanaufträge **1070** (**Kanalkonfiguration**), **1090** ( **Register**) und/oder **1060** ( **Mitarbeiter**) ausführen, um die neuesten Bildschirmlayoutkonfigurationen mit der Kanaldatenbank zu synchronisieren.
 
 ### <a name="layout-sizes"></a>Layoutgrößen
 
@@ -146,12 +146,12 @@ Mit dem vollständigen Layoutbereich können Benutzer Benutzeroberflächen-Kontr
 
     ![POS-Steuerelemente](../commerce/media/POS-UI-Controls.png)
 
-    - **Nummerpad** - Das Nummerpad ist die Hauptbenutzereingabe im POS- **Buchungs** -Bildschirm. Sie können das Steuerelement konfigurieren, sodass das gesamte Nummernpad angezeigt wird. Diese Option ist für Touchscreengeräte ideal. Alternativ können Sie sie konfigurieren, sodass nur das Eingabefeld angezeigt wird. In diesem Fall wird eine physische Tastatur zur Eingabe verwendet. Die Nummerpadeinstellungen sind nur im vollständigen Layout verfügbar. Für kompakte Layouts wird das vollständige Nummernpad immer auf dem Bildschirm **Buchung** angezeigt.
+    - **Nummerpad** - Das Nummerpad ist die Hauptbenutzereingabe im POS-**Buchungs**-Bildschirm. Sie können das Steuerelement konfigurieren, sodass das gesamte Nummernpad angezeigt wird. Diese Option ist für Touchscreengeräte ideal. Alternativ können Sie sie konfigurieren, sodass nur das Eingabefeld angezeigt wird. In diesem Fall wird eine physische Tastatur zur Eingabe verwendet. Die Nummerpadeinstellungen sind nur im vollständigen Layout verfügbar. Für kompakte Layouts wird das vollständige Nummernpad immer auf dem Bildschirm **Buchung** angezeigt.
     - **Gesamtbereich** - Der Gesamtbereich kann anschließend in einer oder zwei Spalten so konfiguriert werden, dass Zeilenzähl-Felder wie Rabattbetrag, Gebühren, Steuern Zwischensumme angezeigt werden. Kompakte Layouts unterstützen nur eine einzelne Spalte.
     - **Empfangsbereich** - Der Empfangsbereich enthält die Verkaufspositionen, die Zahlungspositionen und die Lieferinformationen für die Produkte und Dienste, die am POS verarbeitet werden. Sie können Spalten, Breite und Position angeben. In den kompakten Layouts können Sie zusätzliche Informationen konfigurieren, die in der Zeile unter der Hauptlinie angezeigt werden.
     - **Kundenkarte** - Die Kundenkarte zeigt Informationen bezüglich des Kunden an, der momentan der Buchung zugeordnet ist. Die Kundenkarte kann so konfiguriert werden, dass zusätzliche Informationen angezeigt oder ausgeblendet werden.
     - **Registerkartensteuerelement** - Das Registerkartensteuerelement kann einem Bildschirmlayout hinzugefügt werden, um dann andere Steuerelemente wie Nummernpad, Kundenkarte oder Schaltflächenraster innerhalb der Registerkarte zu platzieren. Das Registerkartensteuerelement ist ein Container, der Ihnen hilft, mehr Inhalte im Bildschirm einzupassen. Das Registerkartensteuerelement ist für vollständige Layouts verfügbar.
-    - **Bild** - Die Bildsteuerung kann verwendet werden, um das Shoplogo oder andere Brandingbilder im **Buchungs** bildschirm anzuzeigen. Das Bildsteuerelement ist nur für vollständige Layouts verfügbar.
+    - **Bild**- Die Bildsteuerung kann verwendet werden, um das Shoplogo oder andere Brandingbilder im **Buchungs** bildschirm anzuzeigen. Das Bildsteuerelement ist nur für vollständige Layouts verfügbar.
     - **Empfohlene Produkte** - Sofern für die Umgebung konfiguriert, wird das Produktsteuerelement empfohlene Produktvorschläge auf Grundlage von Machine-Learning-Daten angezeigt.
     - **Benuterdefiniertes Steuerelement** - Das benutzerdefinierte Steuerlelement dient als Platzhalter innerhalb des Bildschirmlayouts das die Platzierung von benutzerdefinierten Inhalten zulässt. Das benutzerdefinierte Steuerelement ist hur für volle Layouts verfügbar.
 

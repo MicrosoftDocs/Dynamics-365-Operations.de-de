@@ -18,11 +18,11 @@ ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: a83affb5b383b50317ddf53de4d3bf565f0d9439
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973955"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412674"
 ---
 # <a name="work-with-publish-groups"></a>Arbeiten mit Veröffentlichungsgruppen
 
@@ -72,7 +72,7 @@ In Commerce ist der Standard-Authoring-Kontext der Live-Site-Kontext. Der Live-S
 Um in einer Veröffentlichungsgruppe zu arbeiten, müssen Sie dazu in den Veröffentlichungsgruppen-Erstellungskontext wechseln. Führen Sie einen dieser Schritte aus, um den Veröffentlichungsgruppenkontext festzulegen.
 
 - Wählen Sie im linken Navigationsbereich direkt unter **Veröffentlichungsgruppen** die Kontextsteuerung aus, und dann den Namen der Veröffentlichungsgruppe in der Liste der angezeigten Optionen. Die Kontextsteuerung wird umbenannt und zeigt den Namen der Veröffentlichungsgruppe an.
-- Wählen Sie im linken Navigationsbereich **Veröffentlichungsgruppen**und dann unter **Veröffentlichungsgruppen** den Namen der Veröffentlichungsgruppe aus. Die Kontextsteuerung wird umbenannt und zeigt den Namen der Veröffentlichungsgruppe an.
+- Wählen Sie im linken Navigationsbereich **Veröffentlichungsgruppen** und dann unter **Veröffentlichungsgruppen** den Namen der Veröffentlichungsgruppe aus. Die Kontextsteuerung wird umbenannt und zeigt den Namen der Veröffentlichungsgruppe an.
 
 Nachdem Sie den Autorenkontext für Veröffentlichungsgruppen festgelegt haben, arbeiten Sie in diesem Veröffentlichungsgruppenkontext, wenn Sie eine Vorschau des Websiteinhalts anzeigen und ihn bearbeiten.
 

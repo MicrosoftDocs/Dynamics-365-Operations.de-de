@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269957"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412511"
 ---
 # <a name="add-a-new-site-page"></a>Neue Seite hinzufügen
 
@@ -62,9 +62,9 @@ Um eine neue Seite Ihrer Site hinzufügen, führen Sie die folgenden Schritte au
 1. Wählen Sie **OK**. Der Seiteneditor wird angezeigt. Beachten Sie, dass eine Kopf- und eine Fußzeile automatisch der Seite hinzugefügt werden, basierend auf der Vorlage, die Sie ausgewählt haben.
 1. Auf dem Seitenüberblick wählen Sie den Slot (**Haupt**) und wählen die Ellipsen-Schaltfläche **...** und wählen Sie **Modul hinzufügen**.
 1. Wählen Sie **Container** und dann **OK** aus
-1. Wählen Sie **Fluid Container**und wählen Sie dann die Ellipsen-Schaltfläche und wählen **Modul hinzufügen**.
+1. Wählen Sie **Fluid Container** und wählen Sie dann die Ellipsen-Schaltfläche und wählen **Modul hinzufügen**.
 1. Wählen Sie **Umfangreicher Inhaltsblock** und wählen Sie **OK** aus.
-1. Wählen Sie **Umfangreicher Inhaltsblock**und wählen Sie dann die Ellipsen-Schaltfläche und wählen dann **Modul hinzufügen**.
+1. Wählen Sie **Umfangreicher Inhaltsblock** und wählen Sie dann die Ellipsen-Schaltfläche und wählen dann **Modul hinzufügen**.
 1. Wählen Sie **Umfangreiches Inhaltsblockelement** und wählen Sie **OK** aus.
 1. Im Eigenschaftenbereich auf der rechten Seite, wählen Sie, **Absatz** und dann geben Sie im Feld **Mein Prüftext** ein.
 1. Wählen Sie **Speichern** und dann **Bearbeiten beenden** aus.

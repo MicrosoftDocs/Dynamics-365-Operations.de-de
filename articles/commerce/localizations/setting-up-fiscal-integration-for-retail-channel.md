@@ -18,11 +18,11 @@ ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
 ms.openlocfilehash: b221bfede5d1db8d7970e1efede85e8dba7fe017
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124381"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412445"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Steuerintegration für Commerce-Kanäle einrichten
 
@@ -224,5 +224,5 @@ Um die manuelle Ausführung einer aufgeschobenen steuerlichen Erfassung zu aktiv
 - Folgen Sie auf der Seite **Schaltflächenraster** den Anweisungen unter [POS-Operationen zu POS-Layouts hinzufügen, indem Sie den Button Grid Designer](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) verwenden, um den Designer zu installieren und ein POS-Layout zu aktualisieren.
 
     1. Wählen Sie das zu aktualisierende Layout aus.
-    2. Fügen Sie eine neue Schaltfläche hinzu und legen Sie die Eigenschaft der Schaltfläche  auf**Steuererlicher Registrierungsprozess abschliessen**
+    2. Fügen Sie eine neue Schaltfläche hinzu und legen Sie die Eigenschaft der Schaltfläche  auf **Steuererlicher Registrierungsprozess abschliessen**
     3. Führen Sie auf der Seite **Distributionszeitplan** den Auftrag **1090** aus, um Ihre Änderungen in die Kanaldatenbank zu übertragen.

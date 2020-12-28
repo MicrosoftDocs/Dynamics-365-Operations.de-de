@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107229"
+ms.locfileid: "4412716"
 ---
 # <a name="set-up-an-online-channel"></a>Onlinechannel einrichten
 
@@ -76,7 +76,7 @@ Aus dem Abschnitt **Zahlungskonto** können Sie einen Drittanbieter für Zahlung
 
 Zusätzliche Aufgaben, die für das Einrichten des Onlinechannel erforderlich sind, umfassen das Einrichten von Zahlungsmethoden, die Lieferarten und die Erfüllungsgruppenzuweisungen.
 
-Das folgende Bild zeigt die Einrichtungsoptionen **Lieferarten** , **Zahlungsmethoden** und **Zuordnung der Erfüllungsgruppen** auf der Registerkarte **Installieren**.
+Das folgende Bild zeigt die Einrichtungsoptionen **Lieferarten**, **Zahlungsmethoden** und **Zuordnung der Erfüllungsgruppen** auf der Registerkarte **Installieren**.
 
 ![Zusätzliche Aktionen zum Einrichten von Onlinechannels](media/channel-setup-online-3.png)
 
