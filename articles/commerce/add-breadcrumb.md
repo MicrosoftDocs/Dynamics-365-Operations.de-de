@@ -1,0 +1,97 @@
+---
+title: Breadcrumb-Modul
+description: Dieses Thema enthält Breadcrumb-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+author: anupamar-ms
+manager: annbe
+ms.date: 10/20/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application User
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.search.industry: ''
+ms.author: anupamar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517159"
+---
+# <a name="breadcrumb-module"></a><span data-ttu-id="7077b-103">Breadcrumb-Modul</span><span class="sxs-lookup"><span data-stu-id="7077b-103">Breadcrumb module</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="7077b-104">Dieses Thema enthält Breadcrumb-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="7077b-104">This topic covers breadcrumb modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.</span></span>
+
+## <a name="overview"></a><span data-ttu-id="7077b-105">Übersicht</span><span class="sxs-lookup"><span data-stu-id="7077b-105">Overview</span></span>
+
+<span data-ttu-id="7077b-106">Breadcrumb-Module werden verwendet, um eine sekundäre Navigation auf Websiteseiten bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="7077b-106">Breadcrumb modules are used to provide secondary navigation on site pages.</span></span> <span data-ttu-id="7077b-107">Sie werden normalerweise oben auf einer Seite unterhalb der Kopfzeile angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7077b-107">They are typically shown at the top of a page, below the header.</span></span> <span data-ttu-id="7077b-108">Obwohl Breadcrumb-Module zu jeder Seite hinzugefügt werden können, werden sie am häufigsten auf Produktdetailseiten (PDPs) verwendet, um die Produktkategoriehierarchie anzuzeigen und eine schnelle Möglichkeit zum Bewegen auf einer Site bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="7077b-108">Although breadcrumb modules can be added to any page, they are most often used on product details pages (PDPs), to show the product category hierarchy and provide a quick way to move around a site.</span></span> <span data-ttu-id="7077b-109">Ein Breadcrumb-Modul kann auch verwendet werden, um einen Link Zurück zu Ergebnissen anzuzeigen, wenn Benutzer einen PDP über eine Such- oder Listenseite öffnen.</span><span class="sxs-lookup"><span data-stu-id="7077b-109">A breadcrumb module can also be used to show a "Back to results" link when users open a PDP from a search or list page.</span></span> <span data-ttu-id="7077b-110">Auf diese Weise können Benutzer schnell zu ihrer gefilterten Listenseite zurückkehren, um mit dem Einkaufen fortzufahren.</span><span class="sxs-lookup"><span data-stu-id="7077b-110">In this way, users can quickly return to their filtered list page to continue shopping.</span></span>
+
+<span data-ttu-id="7077b-111">Auf Seiten mit Produktkategoriekontext, wie z. B. PDPs und Kategorieseiten, zeigen Breadcrumb-Module die Kategoriehierarchie.</span><span class="sxs-lookup"><span data-stu-id="7077b-111">On pages that have product category context, such as PDPs and category pages, breadcrumb modules show the category hierarchy.</span></span> <span data-ttu-id="7077b-112">Auf Seiten ohne Kategoriekontext werden Breadcrumb-Module standardmäßig **&lt;Site-Root&gt; / &lt;Aktuelle Seite&gt;** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7077b-112">On pages that don't have category context, breadcrumb modules show **&lt;Site root&gt; / &lt;Current page&gt;** by default.</span></span> <span data-ttu-id="7077b-113">Breadcrumb-Module können auch manuell auf anderen Arten von Websiteseiten konfiguriert werden, um Links zu bestimmten Seiten auf der Website anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="7077b-113">Breadcrumb modules can also be manually configured on other types of site pages to show links to specific pages on the site.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="7077b-114">Das Breadcrumb-Modul ist in Dynamics 365 Commerce 10.0.12 verfügbar.</span><span class="sxs-lookup"><span data-stu-id="7077b-114">The breadcrumb module is available in the Dynamics 365 Commerce 10.0.12 release.</span></span>
+
+<span data-ttu-id="7077b-115">Das folgende Bild zeigt ein Beispiel eines Breadcrumb-Moduls, das die Kategoriehierarchie auf einem PDP zeigt.</span><span class="sxs-lookup"><span data-stu-id="7077b-115">The following image shows an example of a breadcrumb module that shows the category hierarchy on a PDP.</span></span>
+
+![Beispiel eines Breadcrumb-Moduls](./media/ecommerce-breadcrumb.PNG)
+
+## <a name="breadcrumb-module-settings"></a><span data-ttu-id="7077b-117">Einstellungen des Breadcrumb-Moduls</span><span class="sxs-lookup"><span data-stu-id="7077b-117">Breadcrumb module settings</span></span>
+
+<span data-ttu-id="7077b-118">Das Breadcrumb-Modul basiert auf der **Breadcrumb-Anzeigetyp auf PDP** Einstellung, die unter **Seiteneinstellungen \> Erweiterungen** im Site Builder definiert wird.</span><span class="sxs-lookup"><span data-stu-id="7077b-118">The breadcrumb module relies on the **Breadcrumb display type on PDP** setting, which is defined at **Site Settings \> Extensions** in site builder.</span></span> <span data-ttu-id="7077b-119">Diese Einstellung hat drei mögliche Werte:</span><span class="sxs-lookup"><span data-stu-id="7077b-119">This setting has three possible values:</span></span>
+
+- <span data-ttu-id="7077b-120">**Kategoriehierarchie anzeigen** – Wenn dieser Wert ausgewählt ist, zeigt das Breadcrumb-Modul die vollständige Kategoriehierarchie des Produkts an, das auf dem PDP angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="7077b-120">**Show category hierarchy** – When this value is selected, the breadcrumb module will show the full category hierarchy of the product that is viewed on the PDP.</span></span>
+- <span data-ttu-id="7077b-121">**Zeigen Sie zurück zu den Ergebnissen** – Wenn dieser Wert ausgewählt ist, zeigt das Breadcrumb-Modul einen Link Zurück zu Ergebnissen auf einem PDP an, wenn der Benutzer den PDP über ein Modul geöffnet hat, das einen Link Zurück zu Ergebnissen ermöglicht.</span><span class="sxs-lookup"><span data-stu-id="7077b-121">**Show back to results** – When this value is selected, the breadcrumb module will show a "Back to results" link on a PDP if the user opened the PDP from a module that allows for a "Back to results" link.</span></span> <span data-ttu-id="7077b-122">Diese Funktion ist verfügbar, wenn Benutzer von Seiten mit Kategorien, Such-, Listen- und Empfehlungslisten navigieren.</span><span class="sxs-lookup"><span data-stu-id="7077b-122">This functionality is available when users navigate from category, search, list, and recommendation lists pages.</span></span> <span data-ttu-id="7077b-123">Um diese Funktionalität zu unterstützen, verfügen die Module für Produktsammlung und Suchergebnisse über eine Eigenschaft mit dem Namen **Lassen Sie die Ergebnisse auf PDP zurück**.</span><span class="sxs-lookup"><span data-stu-id="7077b-123">To support this functionality, product collection and search results modules have a property that is named **Allow back to results on PDP**.</span></span> <span data-ttu-id="7077b-124">Mit dieser Eigenschaft können Sie flexibel definieren, welche Module die Linkfunktionalität Zurück zu den Ergebnissen auf dem PDP unterstützen sollen.</span><span class="sxs-lookup"><span data-stu-id="7077b-124">This property gives you the flexibility to define which modules should support the "Back to results" link functionality on the PDP.</span></span> <span data-ttu-id="7077b-125">Zum Beispiel wenn **Zeigen Sie zurück zu den Ergebnissen** für den **Breadcrumb-Anzeigetyp auf PDP** Einstellung des Breadcrumb-Moduls ausgewählt ist und **Lassen Sie die Ergebnisse auf PDP zurück** ausgewählt ist für das Suchergebnismodul der Suchseite, wird ein Link Zurück zu den Ergebnissen angezeigt, wenn Benutzer von der Suchseite zu einem PDP navigieren.</span><span class="sxs-lookup"><span data-stu-id="7077b-125">For example, when **Show back to results** is selected for the **Breadcrumb display type on PDP** setting of the breadcrumb module, and **Allow back to results on PDP** is selected for the search page search results module, a "Back to results" link will be shown when users navigate from the search page to a PDP.</span></span>
+- <span data-ttu-id="7077b-126">**Kategoriehierarchie anzeigen und zurück zu den Ergebnissen** – Dieser Wert ist eine Kombination der beiden vorherigen.</span><span class="sxs-lookup"><span data-stu-id="7077b-126">**Show category hierarchy and back to results** – This value is a combination of the previous two.</span></span> <span data-ttu-id="7077b-127">Wenn dieser Wert ausgewählt ist, zeigt das Breadcrumb-Modul sowohl die vollständige Kategoriehierarchie als auch einen Link Zurück zu den Ergebnissen (falls konfiguriert) auf einem PDP an.</span><span class="sxs-lookup"><span data-stu-id="7077b-127">When this value is selected, the breadcrumb module will show both the full category hierarchy and a "Back to results" link (if it's configured) on a PDP.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="7077b-128">Diese Einstellungen sind in Dynamics 365 Commerce 10.0.12 verfügbar.</span><span class="sxs-lookup"><span data-stu-id="7077b-128">These settings are available in the Dynamics 365 Commerce 10.0.12 release.</span></span> <span data-ttu-id="7077b-129">Wenn Sie eine Aktualisierung von einer älteren Version von Dynamics 365 Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="7077b-129">If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file.</span></span> <span data-ttu-id="7077b-130">Anweisungen zum Aktualisieren der Datei appsettings.json finden Sie unter [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).</span><span class="sxs-lookup"><span data-stu-id="7077b-130">For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).</span></span>
+
+## <a name="breadcrumb-module-properties"></a><span data-ttu-id="7077b-131">Eigenschaften des Breadcrumb-Moduls</span><span class="sxs-lookup"><span data-stu-id="7077b-131">Breadcrumb module properties</span></span>
+
+| <span data-ttu-id="7077b-132">Eigenschaftenname</span><span class="sxs-lookup"><span data-stu-id="7077b-132">Property name</span></span> | <span data-ttu-id="7077b-133">Werte</span><span class="sxs-lookup"><span data-stu-id="7077b-133">Values</span></span> | <span data-ttu-id="7077b-134">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7077b-134">Description</span></span> |
+|---------------|--------|-------------|
+| <span data-ttu-id="7077b-135">Stamm</span><span class="sxs-lookup"><span data-stu-id="7077b-135">Root</span></span> | <span data-ttu-id="7077b-136">Text oder Verknüpfung</span><span class="sxs-lookup"><span data-stu-id="7077b-136">Text or link</span></span>| <span data-ttu-id="7077b-137">Diese optionale Eigenschaft gibt den Linktext und ein Linkziel für das Breadcrumb-Site-Stammverzeichnis an.</span><span class="sxs-lookup"><span data-stu-id="7077b-137">This optional property specifies link text and a link target for the breadcrumb site root.</span></span> <span data-ttu-id="7077b-138">Wenn diese Eigenschaft nicht konfiguriert ist, wird kein Stamm definiert.</span><span class="sxs-lookup"><span data-stu-id="7077b-138">If this property isn't configured, no root will be defined.</span></span> |
+| <span data-ttu-id="7077b-139">Breadcrumb-Verknüpfung</span><span class="sxs-lookup"><span data-stu-id="7077b-139">Breadcrumb link</span></span> | <span data-ttu-id="7077b-140">Verknüpfen</span><span class="sxs-lookup"><span data-stu-id="7077b-140">Link</span></span> | <span data-ttu-id="7077b-141">Diese optionale Eigenschaft gibt Verknüpfungen für einen manuell konfigurierten Breadcrumb an, wenn diese Verknüpfungen erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="7077b-141">This optional property specifies links for a manually configured breadcrumb, if these links are required.</span></span> <span data-ttu-id="7077b-142">Links werden in der Reihenfolge angezeigt, in der sie aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="7077b-142">Links appear in the order that they are listed in.</span></span> |
+
+## <a name="add-a-breadcrumb-module-to-a-new-page"></a><span data-ttu-id="7077b-143">Ein Breadcrumb-Modul einer neuen Seite hinzufügen</span><span class="sxs-lookup"><span data-stu-id="7077b-143">Add a breadcrumb module to a new page</span></span>
+
+<span data-ttu-id="7077b-144">Um ein Breadcrumb-Modul einem PDP hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="7077b-144">To add a breadcrumb module to a PDP and set the required properties, follow these steps.</span></span>
+
+1. <span data-ttu-id="7077b-145">Gehen Sie zu **Website-Einstellungen \> Erweiterungen** und wählen dann für die Einstellung **Breadcrumb-Anzeigetyp auf PDP** die Option **Kategoriehierarchie anzeigen** aus.</span><span class="sxs-lookup"><span data-stu-id="7077b-145">Go to **Site Settings \> Extensions**, and then, for the **Breadcrumb display type on PDP** setting, select **Show category hierarchy**.</span></span>
+1. <span data-ttu-id="7077b-146">Gehen Sie zu **Vorlagen** und wählen Sie die PDP-Vorlage aus.</span><span class="sxs-lookup"><span data-stu-id="7077b-146">Go to **Templates**, and select the PDP template.</span></span>
+1. <span data-ttu-id="7077b-147">Im Slot **Container**, der das Kauffeldmodul enthält, wählen Sie die Ellipsen (**...**) und wählen **Modul hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="7077b-147">In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add Module**.</span></span>
+1. <span data-ttu-id="7077b-148">Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Breadcrumb** und dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="7077b-148">In the **Add Module** dialog box, select the **Breadcrumb** module, and then select **OK**.</span></span>
+1. <span data-ttu-id="7077b-149">Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="7077b-149">Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.</span></span>
+1. <span data-ttu-id="7077b-150">Gehe Sie zu **Seiten** und öffnen Sie einen PDP, der die PDP-Vorlage verwendet.</span><span class="sxs-lookup"><span data-stu-id="7077b-150">Go to **Pages**, and open a PDP that uses the PDP template.</span></span> <span data-ttu-id="7077b-151">Wenn noch kein PDP vorhanden ist, erstellen Sie einen.</span><span class="sxs-lookup"><span data-stu-id="7077b-151">If a PDP doesn't yet exist, create one.</span></span>
+1. <span data-ttu-id="7077b-152">Im Slot **Container**, der das Kauffeldmodul enthält, wählen Sie die Ellipsen (**...**) und wählen **Modul hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="7077b-152">In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add Module**.</span></span>
+1. <span data-ttu-id="7077b-153">Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Breadcrumb** und dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="7077b-153">In the **Add Module** dialog box, select the **Breadcrumb** module, and then select **OK**.</span></span>
+1. <span data-ttu-id="7077b-154">Im Eigenschaftenbereich des Slots **Breadcrumb** wählen Sie unter **Root** den **Link Text**.</span><span class="sxs-lookup"><span data-stu-id="7077b-154">In the properties pane of the **Breadcrumb** slot, under **Root**, select **Link text**.</span></span>
+1. <span data-ttu-id="7077b-155">In dem **Link Text** Dialogfeld geben Sie **Startseite** ein und wählen dann unter **Linkziel** **Fügen Sie einen Link hinzu**.</span><span class="sxs-lookup"><span data-stu-id="7077b-155">In the **Link text** dialog box, enter **Home**, and then, under **Link target**, select **Add a link**.</span></span>
+1. <span data-ttu-id="7077b-156">Im Dialogfeld **Fügen Sie einen Link hinzu** wählen Sie den Link für die Breadcrumb-Ursprung und wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="7077b-156">In the **Add a link** dialog box, select a link for the breadcrumb root, and then select **OK**.</span></span>
+1. <span data-ttu-id="7077b-157">Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="7077b-157">Select **Save**, and then select **Preview** to preview the page.</span></span>
+1. <span data-ttu-id="7077b-158">Wählen **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="7077b-158">Select **Finish editing** to check in the template, and then select **Publish** to publish it.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="7077b-159">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="7077b-159">Additional resources</span></span>
+
+[<span data-ttu-id="7077b-160">Informationen zur Modulbibliothek</span><span class="sxs-lookup"><span data-stu-id="7077b-160">Module library overview</span></span>](starter-kit-overview.md)
+
+[<span data-ttu-id="7077b-161">Navigationsmenümodul</span><span class="sxs-lookup"><span data-stu-id="7077b-161">Navigation menu module</span></span>](nav-menu-module.md)
+
+[<span data-ttu-id="7077b-162">Siteauswahlmodul</span><span class="sxs-lookup"><span data-stu-id="7077b-162">Site selector module</span></span>](site-selector.md)
+
+[<span data-ttu-id="7077b-163">Übersicht der Standard-Kategorie-Landingpage und Suchergebnisseite</span><span class="sxs-lookup"><span data-stu-id="7077b-163">Overview of default category landing page and search results page</span></span>](category-search-page-overview.md)
+
+[<span data-ttu-id="7077b-164">Produktsammelmodule</span><span class="sxs-lookup"><span data-stu-id="7077b-164">Product collection modules</span></span>](product-collection-module-overview.md)
+
+[<span data-ttu-id="7077b-165">Kauffeldmodul</span><span class="sxs-lookup"><span data-stu-id="7077b-165">Buy box module</span></span>](add-buy-box.md)
+
+[<span data-ttu-id="7077b-166">SDK- und Modulbibliothekupdates</span><span class="sxs-lookup"><span data-stu-id="7077b-166">SDK and module library updates</span></span>](e-commerce-extensibility/sdk-updates.md)
