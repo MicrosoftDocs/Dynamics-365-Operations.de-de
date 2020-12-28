@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 64a85840be328702a06779390fe383fd1896fd04
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.openlocfilehash: cbf00f7428c9b1852a5bf54fd7e30a3bddc1a31e
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011418"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668944"
 ---
 # <a name="go-live-faq"></a>FAQ live schalten 
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In diesem Thema werden häufig gestellte Fragen zur Liveschaltung mit einem Dynamics 365 Human Resources Implementierungsprojekt behandelt. 
 
@@ -76,7 +78,7 @@ Datenbanken werden durch automatische Sicherungen mit den folgenden Frequenzen g
 | Differenzielle Datenbanksicherung | Alle 12-24 Stunden |
 | Transaktionsprotokollsicherung | Alle 5 bis 10 Minuten |
 
-Microsoft verfügt über ausreichende Sicherungen, um die Wiederherstellung nach dem Zeitpunkt (PITR) innerhalb der letzten sieben Tage zu ermöglichen. 
+Microsoft verfügt über ausreichende Sicherungen, um die Point-in-Time-Wiederherstellung (PITR) innerhalb der letzten 14 Tage zu ermöglichen. 
 
 Weitere Informationen über Sicherungen finden Sie unter  [Informationen zu automatischen SQL-Datenbanksicherungen](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 

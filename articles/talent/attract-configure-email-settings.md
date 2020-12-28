@@ -20,11 +20,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
 ms.openlocfilehash: e641e3f0d1873d91be1a1dc9bc22eb734a2b21d5
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124726"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461251"
 ---
 # <a name="configure-email-settings-in-attract"></a>Konfigurieren von E-Mail-Einstellungen in Attract
 
@@ -34,7 +34,7 @@ Ihre Marke etabliert die Vertrauen und hilft Ihnen eine Beziehung mit Kandidaten
 
 Mit Attract können Sie diese Aktivitäten ausführen:
 
-- Konfigurieren Sie E-Mail-Einstellungen, so dass das Microsoft Exchange-E-Mail-Service-Konto Ihres Unternehmens verwendet wird. Hierdurch wissen Kandidaten, dass die E-Mails aus Ihrem Unternehmen stammen. So können Sie die Einstellungen beispielsweise so konfigurieren, dass Kandidaten E-Mails von `recruiting@contoso.com` statt von `contoso@microsoft.com`erhalten.
+- Konfigurieren Sie E-Mail-Einstellungen so, dass das Microsoft Exchange-E-Mail-Service-Konto Ihres Unternehmens verwendet wird. Hierdurch wissen Kandidaten, dass die E-Mails aus Ihrem Unternehmen stammen. So können Sie die Einstellungen beispielsweise so konfigurieren, dass Kandidaten E-Mails von `recruiting@contoso.com` statt von `contoso@microsoft.com`erhalten.
 - Erstellen Sie ein konsistentes Branding für Ihre gesamte E-Mail-Kommunikation indem Sie erst eine globale Kopf- und Fußzeile für alle E-Mail-Vorlagen festlegen. 
 
 > [!NOTE]

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ad677d1c36ac5159111afdcb5c31aed215d7b0a1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 9887d22a513e820c35c51b6c702e2d9d34ab1214
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897740"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529755"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-december-14-2018"></a>Neuerungen oder Änderungen in Dynamics 365 Talent – Core HR (14. Dezember 2018)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Build 8.1.2085**
 
@@ -88,7 +90,7 @@ Wenn die Änderungen vorgenommen wurden, können Mitarbeiter Freizeit planen und
 
 Der verfügbare angezeigte Saldo ist der Betrag der verfügbaren Freizeit einschließlich Abgrenzungen von heute und alle genehmigten Urlaubanforderungen zur Endzeit. 
 
-Wenn die Möglichkeit zur Planung freigegeben wird, ändert sich der angezeigte Saldo, um den aktuellen Saldo der Freizeit einschließlich Abgrenzungen von heute und Anforderungen darzustellen. Mitarbeiter und Manager finden diese aktualisierten Salden im Mitarbeiter- und Manager-Self-Service im Fenster **Freizeit** und **Freizeitsalden**. Leiter der Personalabteilung finden diese aktualisierten Salden in **Personen** und unter**Zugeordneten Urlaubpläne** des Mitarbeiters.
+Wenn die Möglichkeit zur Planung freigegeben wird, ändert sich der angezeigte Saldo, um den aktuellen Saldo der Freizeit einschließlich Abgrenzungen von heute und Anforderungen darzustellen. Mitarbeiter und Manager finden diese aktualisierten Salden im Mitarbeiter- und Manager-Self-Service im Fenster **Freizeit** und **Freizeitsalden**. Leiter der Personalabteilung finden diese aktualisierten Salden in **Personen** und unter **Zugeordneten Urlaubpläne** des Mitarbeiters.
 
 ## <a name="known-issue"></a>Bekannte Probleme
 
@@ -135,12 +137,12 @@ Die Arbeiter zu Arbeiteraufgaben benötigt die folgenden aktualisierte Zuordnung
 | cdm_emailaddress1 (E-Mail Adresse 1)   | cdm_primaryemailaddress (Primäre E-Mail-Adresse |
 | cdm_telephone1 (Telefon 1)          | cdm_primarytelephone (Primäres Telefon)       |
 
-Das Geschlechtsfeld muss auch aktualisiert werden. Wählen Sie den Zuordnungstyp **F-N**(Funktion) für Geschlecht aus und aktualisieren Sie die folgenden Wertzuordnungen.
+Das Geschlechtsfeld muss auch aktualisiert werden. Wählen Sie den Zuordnungstyp **F-N** (Funktion) für Geschlecht aus und aktualisieren Sie die folgenden Wertzuordnungen.
 
-| Common Data Service Wert                   | Finance and Operations Wert                     |
+| Common Data Service-Wert                   | Finance and Operations-Wert                     |
 | ----------------------------|--------------------------------------------------|
-| 75440000                    | Männl.                                             |
-| 75440001                    | Weibl.                                           |
+| 75440000                    | Männlich                                             |
+| 75440001                    | Weiblich                                           |
 | 75440002                    | Keines                                             | 
 | 75440003                    | Nicht spezifisch                                      |
 

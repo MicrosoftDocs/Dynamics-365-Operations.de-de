@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1f92b31e870cbb4d3cc04870273693bed1378c5e
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: c54a3e9471fdeb56f27fe7c567c7cd7f0b7fd218
+ms.sourcegitcommit: 2ef23dcd4e42362186b9951e675010d97d55c6bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817705"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4556428"
 ---
 # <a name="select-a-site-theme"></a>Auswählen eines Sitedesigns
 
@@ -32,7 +32,7 @@ In diesem Thema wird beschrieben, wie Sie das Design Ihrer Site in Microsoft Dyn
 
 ## <a name="overview"></a>Übersicht
 
-Das Layout und der Stil einer Site (z. B. Schriftarten, Größen und Farben) werden durch das Design definiert, das Sie auswählen und auf die Site anwenden. Ein Design wird von einem Entwickler in Ihrem Unternehmen erstellt und bereitgestellt. Eine Überblick über die Designs erhalten Sie in [Designüberblick](http://). Weitere Informationen zum Erstellen und Bereitstellen von Designs finden Sie unter [Neues Design erstellen](http://).
+Das Layout und der Stil einer Site (z. B. Schriftarten, Größen und Farben) werden durch das Design definiert, das Sie auswählen und auf die Site anwenden. Ein Design wird von einem Entwickler in Ihrem Unternehmen erstellt und bereitgestellt. Eine Überblick über die Designs erhalten Sie in [Designüberblick](e-commerce-extensibility/theming.md). Weitere Informationen zum Erstellen und Bereitstellen von Designs finden Sie unter [Neues Design erstellen](e-commerce-extensibility/create-theme.md).
 
 Wenn Sie eine Site zum ersten Mal erstellen, wird standardmäßig ein Design mit der Bezeichnung **Fabrikam** verwendet. Dieses Standarddesign wird als Teil der Commerce-Modulbibliothek bereitgestellt. Nachdem Sie zusätzliche Designs für Ihre Site bereitgestellt haben, können Sie die Site so konfigurieren, dass stattdessen eines davon verwendet wird.
 
@@ -63,3 +63,8 @@ Gehen Sie folgendermaßen vor, um das Design auszuwählen, das auf Ihre Site ang
 [Hinzufügen von Sprachen zu Ihrer Website](add-languages-to-site.md)
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
+
+[Designüberblick](e-commerce-extensibility/theming.md)
+
+[Neues Design erstellen](e-commerce-extensibility/create-theme.md)
+

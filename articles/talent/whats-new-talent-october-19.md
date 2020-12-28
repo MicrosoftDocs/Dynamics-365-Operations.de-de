@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2018-10-22
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: d5f2aea5fcc81d0b4c1d8a392a3e56c888440a94
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897395"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461254"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-october-16-2018"></a>Neuerungen oder Änderungen in Dynamics 365 Talent – Core HR (16. Oktober 2018)
 
@@ -48,7 +48,7 @@ Folgende Aktualisierungen sind in dieser Version erfolgt:
 - Änderungen an Arbeitseinstellungsaktivitäten, sodass sie nicht mehr im Status **Workflow abgeschlossen** sind.
 - Beschäftigungszahl kann nun ohne Beschäftigung erstellt werden.
 - Das Registrierungsdatum für Dynamics 365 Talent für einen Kurs, der im Mitarbeiter-Self-Service angezeigt wird, wendet nun den Zeitzonenunterschied im Datum an.
-- Excel-Dateien können mehrmals ohne gefundene Fehler mithilfe von  **Mitarbeiter-Entität** importiert werden.
+- Excel-Dateien können mehrmals ohne gefundene Fehler mithilfe von **Mitarbeiter-Entität** importiert werden.
 
 ## <a name="known-issue"></a>Bekannte Probleme
 

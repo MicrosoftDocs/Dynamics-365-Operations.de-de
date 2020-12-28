@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 58446289c9a53af30d4d6d331a1a609ae0d2a0ad
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818197"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665395"
 ---
 # <a name="iframe-module"></a>IFrame-Modul
 
@@ -35,7 +35,7 @@ Dieses Thema behandelt das iFrame-Modul und beschreibt, wie es Webseiten in Micr
 
 Ein iFrame-Modul stellt einen iFrame (Inlineframe) bereit, der externe Inhalte auf einer Website hostet. Zum Beispiel kann es verwendet werden, um auf einer Webseite ein YouTube-Video oder einen PDF-Datei-Viewer zu hosten. 
 
-Ein iFrame-Modul benötigt eine Ziel-URL. Anschließend wird der Inhalt der Zielseite in einem HTML-**iFrame**-Element gehostet. Externe URLs müssen auf der Zulassungsliste (der sogenannten „Whitelist“) gemäß der Inhaltssicherheitsrichtlinie (CPS) der Website stehen. Für iFrame-Inhalte sollten URLs mithilfe der **frame-ancester**-Richtlinie zugelassen werden. Weitere Informationen finden Sie unter [Inhaltssicherheitsrichtlinie (CSP) verwalten](manage-csp.md).
+Ein iFrame-Modul benötigt eine Ziel-URL. Anschließend wird der Inhalt der Zielseite in einem HTML-**iFrame**-Element gehostet. Externe URLs müssen auf der Zulassungsliste gemäß der Inhaltssicherheitsrichtlinie (CPS) der Website stehen. Für iFrame-Inhalte sollten URLs mithilfe der **frame-ancester**-Richtlinie zugelassen werden. Weitere Informationen finden Sie unter [Inhaltssicherheitsrichtlinie (CSP) verwalten](manage-csp.md).
 
 > [!NOTE]
 > Das iFrame-Modul ist in der Dynamics 365 Commerce-Version 10.0.13 verfügbar.

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 05e8614f53db2593ade92fdb42dc0dfe869e9407
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055403"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517159"
 ---
 # <a name="breadcrumb-module"></a>Breadcrumb-Modul
 
@@ -66,19 +66,19 @@ Das Breadcrumb-Modul basiert auf der **Breadcrumb-Anzeigetyp auf PDP** Einstellu
 
 Um ein Breadcrumb-Modul einem PDP hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.
 
-1. Gehen Sie zu **Site-Einstellungen /> Erweiterungen** und wählen dann für die Einstellung **Breadcrumb-Anzeigetyp auf PDP** **Kategoriehierarchie anzeigen** aus.
+1. Gehen Sie zu **Website-Einstellungen \> Erweiterungen** und wählen dann für die Einstellung **Breadcrumb-Anzeigetyp auf PDP** die Option **Kategoriehierarchie anzeigen** aus.
 1. Gehen Sie zu **Vorlagen** und wählen Sie die PDP-Vorlage aus.
-1. Im Slot **Container** , der das Kauffeldmodul enthält, wählen Sie die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
+1. Im Slot **Container**, der das Kauffeldmodul enthält, wählen Sie die Ellipsen (**...**) und wählen **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Breadcrumb** und dann **OK** aus.
-1. Wählen Sie **Speichern** , wählen Sie **Bearbeiten beenden** , um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen** , um es zu veröffentlichen.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Gehe Sie zu **Seiten** und öffnen Sie einen PDP, der die PDP-Vorlage verwendet. Wenn noch kein PDP vorhanden ist, erstellen Sie einen.
-1. Im Slot **Container** , der das Kauffeldmodul enthält, wählen Sie die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
+1. Im Slot **Container**, der das Kauffeldmodul enthält, wählen Sie die Ellipsen (**...**) und wählen **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Breadcrumb** und dann **OK** aus.
 1. Im Eigenschaftenbereich des Slots **Breadcrumb** wählen Sie unter **Root** den **Link Text**.
 1. In dem **Link Text** Dialogfeld geben Sie **Startseite** ein und wählen dann unter **Linkziel** **Fügen Sie einen Link hinzu**.
 1. Im Dialogfeld **Fügen Sie einen Link hinzu** wählen Sie den Link für die Breadcrumb-Ursprung und wählen Sie **OK**.
 1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen.
-1. Wählen **Bearbeiten beenden** , um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen** , um sie zu veröffentlichen.
+1. Wählen **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

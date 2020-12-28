@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1f7a779d69bf49d3416de3e92d4414cfabf358eb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ad87594b9c20d0c2b53e8d4e7c1170a78babe74b
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983622"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517451"
 ---
 # <a name="manage-robotstxt-files"></a>Verwalten von robots.txt-Dateien
 
@@ -88,17 +88,17 @@ Gehen Sie folgendermaßen vor, um eine robots.txt-Datei in Commerce zu löschen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Domänennamen konfigurieren](configure-your-domain-name.md)
 
-[Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
+[Neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md)
 
-[E-Commerce-Site erstellen](create-ecommerce-site.md)
+[E-Commerce-Website erstellen](create-ecommerce-site.md)
 
-[Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
+[Zuordnen einer Dynamics 365 Commerce-Website zu einem Onlinekanal](associate-site-online-store.md)
 
-[URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+[URL-Umleitungen in Massen hochladen](upload-bulk-redirects.md)
 
-[Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
+[B2C-Mandanten in Commerce einrichten](set-up-B2C-tenant.md)
 
 [Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a9cd6fda0e6e0405163184327f954b66eb8c7612
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 17eae6c2aa2a1305b1d6f403c595c022f71da48f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897556"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529089"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (26. März 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent neu oder geändert wurden.
 
@@ -73,7 +75,7 @@ In dieser Aktualisierung werden feste Vergütungspläne nun angezeigt, wenn Benu
 Mit dieser Version können Sie nun Stellendatensätze entfernen, indem Sie die Option **In Excel öffnen** in Talent verwenden.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade auf Common Data Service
-Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Melden Sie sich im Power Apps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Melden Sie sich im Power Apps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter [Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Vorschau
 
@@ -83,7 +85,7 @@ Informationen zum Aktivieren von Vorschaufunktionen finden Sie unter [Zugriff au
 Organisationen brauchen möglicherweise zusätzliche Informationen zu den betreffenden Freizeitanforderungen. Um diese Informationen zu erhalten, müssen die Mitarbeiter die Ursachencode für ihre Freizeitanforderungen einbeziehen. Mit dieser Aktualisierung können Sie nun die Ursachencodes für Sonderurlaubstypen definieren und Mitarbeiter aktivieren, damit sie einen Ursachencode für ihre Freizeitanforderungen auszuwählen können.
 
 ### <a name="configure-reason-codes-to-be-required-when-submitting-time-off-for-certain-leave-types"></a>Konfigurieren der erforderlichen Ursachencodes, wenn Sie Freizeit für bestimmte Urlaubstypen eingeben
-Organisationen brauchen ggf. bestimmte Ursachencodes für Sonderurlaubstypen, wenn Mitarbeiter Freizeit einreichen. Dies ist möglicherweise auf Grundlage einer gesetzlichen Bestimmung in ihrem Land / ihrer Region oder einer Unternehmensrichtlinie erforderlich. Diese Version enthält die Möglichkeit bereit, für die Personalverwaltung anzugegeben, welche Freizeitanforderungen einen Ursachencode benötigen. Dies wird erzwungen, wenn Mitarbeiter Freizeitanforderungen senden, bei denen ein Ursachencode angegeben werden muss.
+Organisationen brauchen ggf. bestimmte Ursachencodes für Sonderurlaubstypen, wenn Mitarbeiter Freizeit einreichen. Dies ist möglicherweise auf Grundlage einer gesetzlichen Bestimmung in ihrem Land/ihrer Region oder einer Unternehmensrichtlinie erforderlich. Diese Version enthält die Möglichkeit bereit, für die Personalverwaltung anzugegeben, welche Freizeitanforderungen einen Ursachencode benötigen. Dies wird erzwungen, wenn Mitarbeiter Freizeitanforderungen senden, bei denen ein Ursachencode angegeben werden muss.
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
@@ -91,7 +93,7 @@ Organisationen brauchen ggf. bestimmte Ursachencodes für Sonderurlaubstypen, we
 In vielen Organisationen hat der Kompensations- und Vergütungsmanager nur Zugriff auf bestimmte Kompensationsdatensätze. Diese Datensätze sind möglicherweise für Führungskräfte oder regionale Mitarbeiter. Mit dieser Änderung kann HR Kompensationspläne für verschiedene Mitarbeitergruppen in der Organisation verwalten. Sie können Sicherheitsrollen festen und variablen Plänen zuordnen, die den Zugriff auf die Pläne und die Mitarbeiterdaten in Verbindung mit den Plänen bestimmen, wie Gehalts- oder Zulagedatensätze. Nur die Rollen mit Zugriff sind in der Lage, Kompensationen für solche Mitarbeiter zu verarbeiten.
 
 ###  <a name="email-support-for-alerts"></a>E-Mail-Support für Warnungen
-Durch Platform update 25 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird. 
+Mit dem Plattformupdate 25 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte ausgegeben werden, wenn dies von einem Ereignis ausgelöst wird. 
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>Duplizierte Mitarbeiter suchen: Schnittstellenänderungen
 Mit dieser Änderung werden Duplikate erkannt, während Sie Namenfelder eingeben, und ein Status zeigt, wie viele Duplikate gefunden wurden. Sie können die zur Verfügung gestellte Verknüpfung aktivieren, um eine neue Seite zu öffnen, um zu prüfen, ob die gefundene Übereinstimmung verwendet werden soll. Das Duplikatsformular wird nicht automatisch geöffnet, damit die Dateneingabe nicht unterbrochen wird.

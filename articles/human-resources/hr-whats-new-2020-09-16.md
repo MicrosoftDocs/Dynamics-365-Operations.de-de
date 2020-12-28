@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ad8513477c7f9243fa3ee5d99569c048ffada97d
-ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
+ms.openlocfilehash: a3bb6b809560688a7849b60c15a01fd89038e843
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3823721"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527433"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (16. September 2020)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden. Änderungen gelten für Build-Nummer 8.1.3557. Die Zahlen in Klammern neben einigen Funktionen beziehen sich zur Referenz auf die Supportnummern in Lifecycle Services (LCS).
 
@@ -37,7 +39,7 @@ In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Res
 
 - Wenn Sie **Den Zugriff auf Worker-Informationen beschränken** in **Erweiterter Zugriff** im **Gemeinsame Parameter für die Personalabteilung** auf Ja einstellen, werden in Leistungsformularen nur noch die entsprechenden Worker angezeigt (393384).
 
-- Neue Optionen für die Kalendererstellung in der **WorkCalendar**-Entität (477055):<br>- Standardendzeit<br>- Standardstartzeit<br>- Ist Freitag Arbeitstag<br>- Ist Montag Arbeitstag<br>- Ist Samstag Arbeitstag<br>- Ist Sonntag Arbeitstag<br>- Ist Donnerstag Arbeitstag<br>- Ist Dienstag Arbeitstag<br>- Ist Mittwoch Arbeitstag<br>- Arbeitskalenderurlaubs-ID
+- Neue Kalenderoptionen für die Kalendererstellung in der **WorkCalendar**-Entität (477055):<br>- Standardendzeit<br>- Standardstartzeit<br>- Ist Freitag Arbeitstag<br>- Ist Montag Arbeitstag<br>- Ist Samstag Arbeitstag<br>- Ist Sonntag Arbeitstag<br>- Ist Donnerstag Arbeitstag<br>- Ist Dienstag Arbeitstag<br>- Ist Mittwoch Arbeitstag<br>- Arbeitskalenderurlaubs-ID
 
 - Die **LeaveBankTransactionV1**-Entität enthält jetzt den Ursachencode (477823).
 

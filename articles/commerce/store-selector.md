@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 5400a2e743a78124dca4bf9be3ccaf7870ea8b7d
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818249"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665271"
 ---
 # <a name="store-selector-module"></a>Shopauswahlmodul
 
@@ -47,7 +47,7 @@ Mit dem Filialauswahlmodul können Benutzer einen Ort (Stadt, Bundesland, Adress
 
 Das Filialauswahlmodul ist in die [Bing Maps REST-Anwendungsprogrammierschnittstellen (APIs)](https://docs.microsoft.com/bingmaps/rest-services/) integriert, um die Geocodierungs- und Vorschlagssuchfunktionen von Bing zu verwenden. Ein Bing Maps-API-Schlüssel ist erforderlich und muss auf der Seite „Freigegebene Parameter“ in Commerce Headquarters hinzugefügt werden. Die Geocodierungs-API wird verwendet, um einen Standort in Breiten- und Längengrade umzuwandeln. Die Integration in die Vorschlagssuche-API wird verwendet, um Suchvorschläge anzuzeigen, wenn Benutzer Standorte in das Suchfeld eingeben.
 
-Für die Vorschlagssuche-REST-API müssen Sie sicherstellen, dass die folgenden URLs gemäß der Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) Ihrer Website zulässig sind (auch als Whitelist bezeichnet). Diese Einstellung erfolgt im Commerce Site Builder, indem zulässige URLs zu verschiedenen Inhaltssicherheitsrichtlinien der Website hinzugefügt werden (z. B. **img-src**). Weitere Informationen finden Sie unter [Inhaltssicherheitsrichtlinie](manage-csp.md). 
+Für die Vorschlagssuche-REST-API müssen Sie sicherstellen, dass die folgenden URLs gemäß der Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) Ihrer Website zulässig sind (Content Security Policy, CSP). Diese Einstellung erfolgt im Commerce Site Builder, indem zulässige URLs zu verschiedenen Inhaltssicherheitsrichtlinien der Website hinzugefügt werden (z. B. **img-src**). Weitere Informationen finden Sie unter [Inhaltssicherheitsrichtlinie](manage-csp.md). 
 
 - Fügen Sie der **connect-src**-Richtlinie **&#42;.bing.com** hinzu.
 - Fügen Sie der **img-src**-Richtlinie **&#42;.virtualearth.net** hinzu.
@@ -65,6 +65,9 @@ Damit dieses Szenario funktioniert, sollten Produkte so konfiguriert werden, das
 Das folgende Bild zeigt ein Beispiel eines Speicherauswahlmoduls, das auf einem PDP verwendet wird.
 
 ![Beispiel eines in einem PDP verwendeten Shopauswahlmoduls](./media/BOPIS.PNG)
+
+> [!NOTE]
+> In Version 10.0.16 und höher kann eine neue Funktion aktiviert werden, mit der eine Organisation mehrere Optionen für Abhollieferarten für Kunden definieren kann.  Wenn diese Funktion aktiviert ist, werden die Ladenauswahl und andere Module von E-Commerce erweitert, um es den Einkäufern zu ermöglichen, aus möglicherweise mehreren Abhollieferoptionen auszuwählen, sofern diese konfiguriert sind.  Weitere Informationen zu dieser Funktion finden Sie in [dieser Dokumentation](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
 
 ## <a name="find-stores-mode"></a>Modus „Geschäfte suchen“
 

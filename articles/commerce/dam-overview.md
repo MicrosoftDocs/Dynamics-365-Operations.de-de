@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fd2ec16ec441174485a9cc70f41a83337264f53b
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 69cbaafb9cc28d4e363d0ef028460235cded54dc
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3097020"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594355"
 ---
 # <a name="digital-asset-management-overview"></a>Überblick über die Verwaltung digitaler Bestände
 
@@ -58,3 +58,5 @@ Digitale Assets und Verwaltungsfunktionen befinden sich im Site-Builder unter **
 [Bilder zuschneiden](dam-crop-images.md)
 
 [Bildfokuspunkte anpassen](dam-custom-focal-point.md)
+
+[Statische Dateien hochladen und bedienen](upload-serve-static-files.md)

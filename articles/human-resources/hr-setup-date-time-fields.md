@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: be1e28d0b842184ce3c4f7bd9748f5e76ac67489
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 027e46d53fd9704f5483e90409be53c1510e8cd4
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430094"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529851"
 ---
 # <a name="understand-date-and-time-fields"></a>Datums- und Zeitfelder verstehen
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Datum und Uhrzeit** Felder sind ein grundlegendes Konzept in Dynamics 365 Human Resources. Es ist wichtig, zu verstehen, wie **Datum und Uhrzeit** Daten in einem Dynamics 365 Human Resources Formular, Common Data Service und externen Quellen arbeiten.
 

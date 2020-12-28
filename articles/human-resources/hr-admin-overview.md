@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 981a66706c07bb350dd08307213f654e56b232ac
-ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
+ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443417"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527860"
 ---
 # <a name="overview"></a>Übersicht
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung und Problembehandlung von Dynamics 365 Human Resources.
 
@@ -46,14 +48,14 @@ Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung un
   - In Office integrieren
     - [Lernprogramm zur Office-Integration](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Entitätsdaten in Excel aktualisieren](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [„In Excel öffnen“-Erfahrungen verschaffen](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Möglichkeit „In Excel öffnen“ schaffen](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Problembehandlung bei der Office-Integration](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Funktionen verwalten](hr-admin-manage-features.md)
 
 - [Datenbankprotokollierung konfigurieren und verwalten](hr-admin-database-logging.md)
 
-- Die Benutzeroberfläche erkunden
+- Benutzeroberfläche kennenlernen
   - [Benutzeroberflächenelemente](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
   - [Eingabehilfefunktionen](../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json)
   - [Funktionsverwaltung – Übersicht](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json)
@@ -70,7 +72,7 @@ Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung un
   - [Erstellen von und Arbeiten mit benutzerdefinierten Feldern](../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json)
   - [Microsoft Power Apps einbetten](../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json)
   - [Informationen per Suchen finden](../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json)
-  - [Ändern des Datums für eine Sitzung](../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json)
+  - [Datum für eine Sitzung ändern](../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json)
   - [Die bevorzugte Zeitzone eines Benutzers festlegen](../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json)
   - [Grundlagen zu Lifecycle Services](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json)
 

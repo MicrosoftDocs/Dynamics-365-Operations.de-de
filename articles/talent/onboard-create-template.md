@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 5c322a0dd9a3c61a2d333fdc716acde88a2165f0
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898224"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461292"
 ---
 # <a name="create-an-onboarding-template"></a>Erstellen einer Onboarding-Vorlage
 
@@ -36,7 +36,7 @@ Microsoft Dynamics 365 Talent: Onboard enthält Vorlagen, die Ihnen helfen, eine
 3. Führen Sie einen dieser Schritte aus:
 
     - Wenn die Vorlage aus dem Katalog ist, wählen Sie **Sichern Sie als meine Vorlage** aus, geben Sie einen neuen Namen für die Vorlage ein, und wählen Sie **Speichern** aus.
-    - Wenn die Vorlage aus dem Katalog **Meine Vorlagen**ist, wählen Sie **Sichern als meine Vorlage** aus, geben Sie einen neuen Namen für die Vorlage ein, und wählen Sie **Speichern** aus.
+    - Wenn die Vorlage aus dem Katalog **Meine Vorlagen** ist, wählen Sie **Sichern als meine Vorlage** aus, geben Sie einen neuen Namen für die Vorlage ein, und wählen Sie **Speichern** aus.
 
     [![Erstellen Sie eine Vorlage aus einer vorhandenen Vorlage](./media/onboard-save-template.png)](./media/onboard-save-template.png)
 

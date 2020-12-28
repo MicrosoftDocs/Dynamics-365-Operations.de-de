@@ -19,11 +19,11 @@ ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.openlocfilehash: ce8c0bd74a41b9857538b37d0875583d06e8c11d
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124772"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461312"
 ---
 # <a name="add-activities-to-a-hiring-process"></a>Aktivitäten einem Einstellungsprozess hinzufügen
 
@@ -53,7 +53,7 @@ Diese Aktivität besitzt drei Teile: Kandidatenverfügbarkeitsanforderung, Zeitp
 
 Die Power Apps-Aktivität ermöglicht es Ihnen, eine Microsoft Power Apps-App in Ihren Einstellungsprozess einzubetten. Die App kann für alle Bewerber, nur interne Bewerber, nur externe Bewerber oder keine Bewerber erforderlich gemacht werden. Wenn die App als erforderlich markiert wird, muss sie abgeschlossen werden, bevor die Phase gewechselt werden kann. Um als abgeschlossen zu gelten, muss das Feld **JobApplicationStatus** auf **Abgeschlossen** festgelegt sein. Dieses Feld befindet sich in der JobApplicationActivity-Entität, also muss die Power Apps-App dieses Feld aktualisieren, bevor die Phase erweitert werden kann. Wenn die App nicht als erforderlich markiert ist, ist die Aktivität ein optionaler Schritt und die Phase kann gewechselt werden, auch wenn die App nicht abgeschlossen ist.
 
-Um die Power Apps-Aktivität für den Einstellungsprozess zu speichern, müssen Sie eine Power Apps-ID eingeben. Um die Power Apps-ID zu suchen, wechseln Sie zu [Power Apps](https://web.powerapps.com), wählen**Apps** und dann **Details** aus.
+Um die Power Apps-Aktivität für den Einstellungsprozess zu speichern, müssen Sie eine Power Apps-ID eingeben. Um die Power Apps-ID zu suchen, wechseln Sie zu [Power Apps](https://web.powerapps.com), wählen **Apps** und dann **Details** aus.
 
 Standardmäßig steht die Power Apps-Aktivität dem zukünftigen Vorgesetzten, Personalbeschaffungsmitarbeiter und deren zugehörigen Stellvertretern zur Verfügung. Wenn Sie die Option **Hinzufügen von Teilnehmern für diese Aktivität zulassen** auswählen, können zusätzliche Teilnehmer aus dem Einstellungsteam für eine Anwendung hinzugefügt werden, die die Power Apps-Aktivität verwendet. Zum Beispiel hat eine Organisation eine Power Apps-App mit einer Bibliothek voller Gesprächsfragen für technische Rollen erstellt. Die Organisation sucht nun einen neuen Softwareentwickler und hat dem Einstellungsprozess die Power Apps-Aktivität für die Softwareentwicklerrolle hinzugefügt. Wenn die Option **Das Hinzufügen von Teilnehmern für diese Aktivität zulassen** ausgewählt ist, kann ein Personalbeschaffungsmitarbeiter oder ein zukünftiger Vorgesetzter, der sich einen Bewerber für die Softwareentwicklerrolle ansieht, der Power Apps-Aktivität Gesprächsleiter hinzufügen. Diese Personen können die App mit den Gesprächsfragen anzeigen.
 

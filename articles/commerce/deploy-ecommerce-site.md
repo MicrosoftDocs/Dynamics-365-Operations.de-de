@@ -1,6 +1,6 @@
 ---
-title: Bereitstellen eines neuen E-Commerce-Mandanten
-description: In diesem Thema wird beschrieben, wie Sie einen neuen E-Commerce-Mandanten bereitstellen, indem Microsoft Dynamics Lifecycle Services (LCS) verwenden.
+title: Neuen E-Commerce-Mandanten bereitstellen
+description: In diesem Thema wird beschrieben, wie Sie eine neue Dynamics 365 Commerce-E-Commerce-Website bereitstellen, indem Sie Microsoft Dynamics Lifecycle Services (LCS) verwenden.
 author: psimolin
 manager: annbe
 ms.date: 07/02/2020
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 00f35b516dbf6ab4d4d9171c84a16b89f6afe832
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 157dc8225e5bbf9338a1b5a79a2880e8a8c4bf10
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533274"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517281"
 ---
-# <a name="deploy-a-new-e-commerce-tenant"></a>Bereitstellen eines neuen E-Commerce-Mandanten
+# <a name="deploy-a-new-e-commerce-tenant"></a>Neuen E-Commerce-Mandanten bereitstellen
 
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie eine neue E-Commerce-Site bereitstellen, indem Sie Microsoft Dynamics Lifecycle Services (LCS) verwenden.
+In diesem Thema wird beschrieben, wie Sie eine neue Dynamics 365 Commerce-E-Commerce-Website bereitstellen, indem Sie Microsoft Dynamics Lifecycle Services (LCS) verwenden.
 
 ## <a name="overview"></a>Übersicht
 
@@ -39,7 +39,7 @@ Weitere Informationen zu LCS finden Sie unter [Lifecycle Services Benutzerhandbu
     
 ## <a name="get-started"></a>Erste Schritte
 
-Bevor Sie E-Commerce initialisieren können, müssen Sie ein Projekt, eine Umgebung und ein Retail Cloud Scale Unit (RCSU) initialisieren. Um die Initialisierung in LCS zu bewerkstelligen, müssen Sie über Berechtigungen entweder als Projekt-Inhaber oder Umgebungsmanager haben. Die Produktion und Sandboxumgebungstopologien werden unterstützt.
+Bevor Sie E-Commerce initialisieren können, müssen Sie ein Projekt, eine Umgebung und eine Retail Cloud Scale Unit (RCSU) initialisieren. Um die Initialisierung in LCS zu bewerkstelligen, müssen Sie über Berechtigungen entweder als Projekt-Inhaber oder Umgebungsmanager haben. Die Produktion und Sandboxumgebungstopologien werden unterstützt.
 
 Weitere Informationen über Umgebungen finden Sie unter [Umgebungsplanung](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning). Weitere Informationen zur RCSU-Compliance finden Sie unter [Retail Cloud Scale Unit initialisieren](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
 
@@ -50,7 +50,7 @@ Verwenden Sie diese Prozedur, um die E-Commerce-Funktion in einer vorhandenen Um
 Bevor Sie beginnen, stellen Sie sicher, dass Sie folgende Informationen enthalten:
 
 - Die RCSU,die verwendet wird.
-- Die Microsoft Azure Active Directory Sicherheitsgruppe, die für E-Commerce-Systemadministratoren verwendet wird.
+- Die Microsoft Azure Active Directory-Sicherheitsgruppe, die für E-Commerce-Systemadministratoren verwendet wird.
 - Die Microsoft Azure Active Directory Sicherheitsgruppe, die für Bewertungen verwendet wird und Moderatoren überprüft.
 - Die Domänen, die der Umgebung zugeordnet werden.
 
@@ -72,7 +72,7 @@ Zudem können Sie folgende optionale Informationen erfassen:
 Nachdem Sie die erforderlichen Informationen gesammelt haben, folgen Sie diesen Schritten, um E-Commerce zu initialisieren.
 
 1. Melden Sie sich bei [LCS](https://lcs.dynamics.com) an.
-1. Öffnet das Projekt, das die Umgebung enthält, in der Sie E-Commerce initialisieren möchten.
+1. Öffnen Sie das Projekt, das die Umgebung enthält, in der Sie E-Commerce initialisieren möchten.
 1. Im Abschnitt **Umgebung** wählen Sie die Umgebung.
 1. Wählen Sie unter **Umgebungsfunktionen** den Link **Einzelhandel verwalten** aus.
 1. Auf der Registerkarte **E-Commerce** wählen Sie **Einstellungen** aus. Ein Dialogfeld wird angezeigt, in dem Sie die Informationen eingeben müssen, die für die Bereitstellung erforderlich ist.
@@ -80,28 +80,28 @@ Nachdem Sie die erforderlichen Informationen gesammelt haben, folgen Sie diesen 
 1. Auf der nächsten Seite geben Sie die erforderlichen Informationen ein und übermitteln das Formular. Sie werden zur Registerkarte **E-Commerce** zurückgeführt, wo Sie die Initialisierung sehen sollten, die begonnen wurde.
 1. Um den Initialisierungsstatus später anzuzeigen, **Aktualisieren** Sie oder kehren später zur Registerkarte **E-Commerce** zurück.
     
-Wenn E-Commerce von LCS initialisiert wird, erstellt das System mehrere Komponenten, die für E-Commerce erforderlich sind bereit und ordnet sie der Umgebung zu. Nachdem das Bereitstellen abgeschlossen ist, wird die Registerkarte **E-Commerce** auf der Seite **Retailverwaltung** aktualisiert, um der Bereitstellung zu entsprechen. Die Seite zeigt die aktuellsten Anpassungsbereitstellungen und den aktuellen Status aller anderen Bereitstellungen an. Sie schließt auch Links zur E-Commerce-Site und dem E-Commerce-Site-Builder ein, in dem Sites erstellt werden.
+Wenn E-Commerce von LCS aus initialisiert wird, stellt das System mehrere Komponenten bereit, die für E-Commerce erforderlich sind, und ordnet sie der Umgebung zu. Nachdem das Bereitstellen abgeschlossen ist, wird die Registerkarte **E-Commerce** auf der Seite **Retailverwaltung** aktualisiert, um der Bereitstellung zu entsprechen. Die Seite zeigt die aktuellsten Anpassungsbereitstellungen und den aktuellen Status aller anderen Bereitstellungen an. Sie schließt auch Links zur E-Commerce-Website und dem E-Commerce-Website-Generator ein, in dem Websites erstellt werden.
 
-## <a name="access-site-builder"></a>Site Builder aufrufen
+## <a name="access-commerce-site-builder"></a>Auf Commerce-Website-Generator zugreifen
 
-Um auf den Site Builder zuzugreifen, gehen Sie zur Registerkarte **E-Commerce** auf der Seite **Retail-Verwaltung** in LCS und wählen Sie den Link **E-Commerce-Site-Management-Tool**. Auf der Zielseite des Site Builders wird eine Ansicht auf Mandantenebene angezeigt. Auf dieser Seite können Sie folgende Aktivitäten durchführen:
+Um auf den Commerce-Website-Generator zuzugreifen, gehen Sie zur Registerkarte **E-Commerce** auf der Seite **Retail-Verwaltung** in LCS und wählen Sie den Link **E-Commerce-Websiteverwaltungs-Tool** aus. Auf der Zielseite des Site Builders wird eine Ansicht auf Mandantenebene angezeigt. Auf dieser Seite können Sie folgende Aktivitäten durchführen:
 
 - Die Einstellungen auf Mandantenebene ändern.
 - Zu einer von Ihnen erstellten Site navigieren und die Berechtigung zum Anzeigen haben. 
 - Auf Überprüfungsfunktionen wie Moderation und Berichterstattung zugreifen.
-- Erstellen einer neuer Site. Weitere Informationen zum Erstellen einer neuen Site finden Sie unter [E-Commerce-Site erstellen](create-ecommerce-site.md). 
+- Erstellen einer neuer Site. Weitere Informationen zum Erstellen einer neuen Website finden Sie unter [Eine E-Commerce-Website erstellen](create-ecommerce-site.md). 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Domänennamen konfigurieren](configure-your-domain-name.md)
 
-[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+[E-Commerce-Website erstellen](create-ecommerce-site.md)
 
-[Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
+[Zuordnen einer Dynamics 365 Commerce-Website zu einem Onlinekanal](associate-site-online-store.md)
 
-[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+[Robots.txt-Dateien verwalten](manage-robots-txt-files.md)
 
-[URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+[URL-Umleitungen in Massen hochladen](upload-bulk-redirects.md)
 
 [Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
 

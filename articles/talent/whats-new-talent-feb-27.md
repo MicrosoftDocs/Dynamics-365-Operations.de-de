@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d0fdc9f056ea494cf52e8483b901070dae0bcd29
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: afa1044c8adc9566149e20ade57e771b50d9c53f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897671"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529137"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (27. Februar 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 
@@ -75,9 +77,9 @@ Es gibt weitere kleinere Fehlerkorrekturen in dieser Version.
 
 In vielen Organisationen hat der Vergütungs- und Vorteilsmanager nur Zugriff auf bestimmte Kompensationsdatensätze. Diese Datensätze sind möglicherweise für Führungskräfte oder regionale Mitarbeiter. Mit dieser Änderung können Personalverwaltungsmitarbeiter Vergütungspläne für verschiedene Mitarbeitergruppen in der Organisation verwalten. Sicherheitsrollen, die festen und variablen Plänen zugewiesen werden können, legen den Zugriff auf die Pläne und die Mitarbeiterdaten in Verbindung mit den Plänen fest (wie z. B. Gehalts- oder Bonusdatensätze). Nur die Rollen mit festgelegtem Zugriff sind in der Lage, Vergütungen für solche Mitarbeiter zu verarbeiten.
 
-### <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 für Finance and Operations
+### <a name="platform-update-24-for-finance-and-operations"></a>Plattformupdate 24 für Finance and Operations
 
-Weitere Informationen über Platform update 24 für Microsoft Dynamics 365 Finance and Operations (März 2019) finden Sie unter [Vorschaufunktionen in Finance and Operations, platform update 24 (März 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Weitere Informationen über Plattformupdate 24 für Microsoft Dynamics 365 Finance and Operations (März 2019) finden Sie unter [Vorschaufunktionen in Finance and Operations-Plattformupdate 24 (März 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Feste Mitarbeitervergütung für zukünftige Positionszuweisungen verfügbar machen
 
@@ -98,19 +100,19 @@ Um Ihre vorhandene Vorlage zu aktualisieren, führen Sie die folgenden Schritte 
 
     - **Stellenpositionen zu Positionen:** Entfernen Sie diese Zuordnung.
     - **Stellenpositionen zu übergeordneten Arbeitsaufgaben** Entfernen Sie diese Zuordnung.
-    - **Stellenpositionen zur Basisposition:** Neue Zuordnung aus der **Stellenpositionen** Common Data Service für die Entität zur **Basisposition** Finance and Operations Entität hinzufügen. Verschieben zu Position 7 im Nummernkreis.
+    - **Stellenpositionen zur Basisposition:** Neue Zuordnung aus der **Stellenpositionen** für die Common Data Service-Entität zur **Basisposition** der Finance and Operations-Entität hinzufügen. Verschieben zu Position 7 im Nummernkreis.
 
         [![Stellenpositionen zur Basispositionszuordnung](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Stellenpositionen zu Positionsdetails:** Neue Zuordnung aus der **Stellenpositionen** Common Data Service Entität zu den **Positionsdetails** Finance and Operations Entität hinzufügen. Verschieben zu Position 8 im Nummernkreis.
+    - **Stellenpositionen zu Positionsdetails:** Neue Zuordnung aus der **Stellenpositionen** für die Common Data Service-Entität zu **Positionsdetails** der Finance and Operations-Entität hinzufügen. Verschieben zu Position 8 im Nummernkreis.
 
         [![Stellenpositionen zur Positionsdetailszuordnung](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **Stellenpositionen zu Dauerangaben für Positionen:** Neue Zuordnung aus der **Stellenpositionen** Common Data Service  Entität zur **Dauerangaben für Positionen** Finance and Operations Entität hinzufügen.
+    - **Stellenpositionen zu Positionsdauern:** Neue Zuordnung aus der **Stellenpositionen** für die Common Data Service-Entität zu **Positionsdauern** der Finance and Operations-Entität hinzufügen.
 
         [![Stellenpositionen zur Positionsdauerzuordnung](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Stellenpositionen zu Positionshierarchien:** Neue Zuordnung aus der **Stellenpositionen** Common Data Service  Entität zur **Positionshierarchien** Finance and Operations Entität hinzufügen. Wählen Sie **Erweiterte Abfrage** aus, um eine erweiterte Abfrage für Ihr Projekt durchzuführen.
+    - **Stellenpositionen zu Positionshierarchien:** Neue Zuordnung aus der **Stellenpositionen** für die Common Data Service-Entität zu **Positionshierarchien** der Finance and Operations-Entität hinzufügen. Wählen Sie **Erweiterte Abfrage** aus, um eine erweiterte Abfrage für Ihr Projekt durchzuführen.
 
        [![Schaltfläche „Erweiterte Abfrage“](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
@@ -131,7 +133,7 @@ Um Ihre vorhandene Vorlage zu aktualisieren, führen Sie die folgenden Schritte 
         [![Befehl „Bedingte Spalte hinzufügen“](./media/Add-column.png)](./media/Add-column.png)
 
     6. Geben Sie im Dialogfeld **Bedingte Spalte hinzufügen** als Namen der neuen Spalte **HIERARCHYTYPENAME** ein.
-    7. Wählen Sie im **Falls**-Teil der Bedingung ein beliebiges Feld aus, verwenden Sie **Ist gleich** als Beziehung aus, und geben Sie einen beliebigen Wert ein. Geben Sie in den **Dann**- und **Andernfalls**-Teilen der Bedingung an, was der Standardwert sein soll. Geben Sie in diesem Fall **Position** für beide Teile ein.
+    7. Wählen Sie im **Falls**-Teil der Bedingung ein beliebiges Feld aus, verwenden Sie **Ist gleich** als Beziehung aus, und geben Sie einen beliebigen Wert ein. Geben Sie in den *_Dann_*- und **Andernfalls**-Teilen der Bedingung an, was der Standardwert sein soll. Geben Sie in diesem Fall **Position** für beide Teile ein.
 
         [![Dialogfeld „Bedingte Spalte hinzufügen“](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 

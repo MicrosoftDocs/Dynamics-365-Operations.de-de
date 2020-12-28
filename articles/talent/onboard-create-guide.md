@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898247"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461258"
 ---
 # <a name="create-and-send-an-onboarding-guide"></a>Erstellen und versenden eines Onboarding-Leitfadens
 
@@ -103,7 +103,7 @@ Sie müssen nicht immer Anleitungen aus einer Vorlage erstellen. Wenn Sie es bev
 Sie können eine Onboarding Anleitung als Vorlage speichern. Dadurch können Sie Zeit sparen, wenn Sie weitere Onboarding Anleitungen später erstellen müssen.
 
 1. Wählen Sie im linken Menü **Anleitungen** aus.
-2. Wählen Sie die Schaltfläche**Weiter** aus (die Auslassungspunkte \[**...**\]) für die Anleitung, von er Sie die Vorlage erstellen möchten und wählen Sie dann die aktuelle Vorlage **Als Vorlage speichern** aus.
+2. Wählen Sie die Schaltfläche **Weiter** aus (die Auslassungspunkte \[**...**\]) für die Anleitung, von er Sie die Vorlage erstellen möchten und wählen Sie dann die aktuelle Vorlage **Als Vorlage speichern** aus.
 
     ![[Speichern des Onboarding-Leitfadens als Vorlage speichern](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
 

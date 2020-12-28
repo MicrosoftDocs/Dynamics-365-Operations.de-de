@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 071aa79ea75e9a94187dd74dabab940e2cce0f92
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551955"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461328"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-talent---onboard"></a>Onboarding Anleitungen aktualisieren in Dynamics 365 Talent - Onboard
+# <a name="update-onboarding-guides"></a>Onboarding Anleitungen aktualisieren
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ Wenn Sie Änderungen an Onboarding Anleitungen vornehmen in Microsoft Dynamics 3
 2. Wählen Sie die Anleitung, die Sie bearbeiten möchten.
 3. Nehmen Sie alle gewünschten Änderungen vor, und wählen Sie dann **Speichern** aus (das Diskettensymbol).
 
-    ![[Änderungen an einem Onboarding Handbuch ](. /media/onboard-save.png)](./media/onboard-save.png)
+    ![[Änderung an einer Onboarding-Anleitung speichern](./media/onboard-save.png)](./media/onboard-save.png)
 
 Onboard wird automatisch den neuen Mitarbeiters eine E-Mail senden, die angibt, welche Änderungen vorgenommen wurden. Zur einfacheren Kennung erscheint eine rote Markierung **Neu** neben jeder Änderung.
 
@@ -49,6 +49,6 @@ Onboard wird automatisch den neuen Mitarbeiters eine E-Mail senden, die angibt, 
 3. Nehmen Sie alle gewünschten Änderungen vor, und wählen Sie dann **Speichern** aus (das Diskettensymbol).
 4. Damit Ihre Änderungen an allen Anleitungen erfolgen, die auf der Vorlage basieren, wählen Sie **Änderungen per Push übertragen** aus.
 
-    ![[Aktualisieren Sie die Änderungen per Push auf allen Onboarding Anleitungen, die daraus erstellt wurden](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
+    ![[Die Änderungen per Push auf allen Onboarding Anleitungen, die daraus erstellt wurden, speichern](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 Die Änderungen werden den neuen Mitarbeitern angezeigt, die die Onboarding Anleitungen öffnen. Allerdings sendet Onboard keine E-Mail-Warnungen an neue Mitarbeiter, um sie zu informieren, dass ihr Onboarding Handbuch geändert hat. Zur einfacheren Kennung erscheint eine rote Markierung **Neu** neben jeder Änderung. 

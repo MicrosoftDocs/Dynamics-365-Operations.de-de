@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-11-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 48de07178acfaccf11e0a02b2848bf24e6ccc117
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: c4068cf81782d2f9559179b91da31e049c006059
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896772"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527119"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-november-5-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (5. November 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent neu oder geändert wurden.
 
@@ -69,7 +71,7 @@ Diese Freigabe behebt ein Problem bei der Beantragung von Vergütungsänderungen
 
 mit dieser Änderung werden Differenzcodes mit mehr als 30 Zeichen in Common Data Service aktualisiert. Änderungen in Common Data Service werden auch in Talent berücksichtigt.
 
-### <a name="address-integration-from-talent-to-finance-and-operations-351961"></a>Adressintegration von Talent zu Finance and Operations (351961)
+### <a name="address-integration-from-talent-to-finance-and-operations-351961"></a>Adressintegration von Talent nach Finance and Operations (351961)
 
 Diese Version behebt ein Problem, bei dem in Talent aktualisierte Adressen nicht in Finance and Operations aktualisiert wurden. Änderungen an Adressblöcken werden nun aktualisiert.
 

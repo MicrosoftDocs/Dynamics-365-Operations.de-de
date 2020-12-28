@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 0a4d4de6cf28e24d1265395d6440df85edf71a0d
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897855"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461336"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-9-2019"></a>Neuigkeiten oder Änderungen in Dynamics 365 Talent (9. April, 2019)
 
@@ -41,7 +41,7 @@ In den Talentpools können Sie nun die gesamte Kandidatendatenbank nach bestimmt
 Attract kann dabei unerstützen, die Suche für eine Stelle sofort zu starten, sobald Sie sie aktivieren, indem es intelligente Kandidatenempfehlungen aus der Kandidatendatenbank Ihrer Organisation vornimmt. Die Empfehlungen umfassen die identifizierten Qualifikationen und Ausbildungsinformationen beim Suchen nach relevanten Interessenten. Die Empfehlungen werden auf der Registerkarte **Interessenten** unter einer Stelle angezeigt, wenn sie diese für einen Stellenrekrutierungsprozess aktivieren. Weitere Informationen finden Sie unter [Interessenten-Empfehlungen](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
 
 ### <a name="interviewer-availability-statuses"></a>Status über die Verfügbarkeit der Befragungspersonen
-Gesprächsplaner können bald  den Status**Abwesend, Arbeit an einem anderen Standort** sehen, um Zeiten zu planen, die für die Befragungspersonen möglicherweise besser passen.
+Gesprächsplaner können bald  den Status **Abwesend, Arbeit an einem anderen Standort** sehen, um Zeiten zu planen, die für die Befragungspersonen möglicherweise besser passen.
 
 ### <a name="candidate-interview-experience-save-calendar-invites"></a>Kandidatengesprächserfahrung: Kalendereinladungen speichern
 Kandidaten können nun ihre Gesprächsereignisse herunterladen und in ihren persönlichen Kalendern mithilfe einer .ics-Datei speichern, die nun der E-Mail-Zusammenfassung angehängt ist, die an den Kandidaten gesendet wird.
@@ -89,4 +89,4 @@ Nachverfolgung von Mitarbeiterfreizeit und Verständnis dafür, wie Freizeit ber
 Mit dieser Änderung werden Duplikate erkannt, während Sie Namenfelder eingeben, und ein Status zeigt, wie viele Duplikate gefunden wurden. Sie können die zur Verfügung gestellte Verknüpfung aktivieren, um eine neue Seite zu öffnen, um zu prüfen, ob die gefundene Übereinstimmung verwendet werden soll. Das Duplikatsformular wird nicht automatisch geöffnet, damit die Dateneingabe nicht unterbrochen wird.
 
 ###  <a name="email-support-for-alerts"></a>E-Mail-Support für Warnungen
-Durch Platform update 25 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird. 
+Mit der Plattformaktualisierung 25 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird. 

@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 41944fb7819b5527f6bc023a60acd9450d9e43c2
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 42b11ff16757d633b868dfdf248341193a44378f
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974837"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665297"
 ---
 # <a name="recall-order-operation-in-pos"></a>Auftragsrückrufe in POS
 
 [!include [banner](includes/banner.md)]
 
-Der Vorgang zum Rückruf von Aufträgen in Commerce-POS (Point of Sale) bietet aktualisierte Funktionen zum Suchen und Filtern von Aufträgen sowie auftragsspezifische Informationen. Diese Funktion ist in Commerce Version 10.0.15 und höher verfügbar.
+Der Vorgang **Auftrag zurückrufen** in der Commerce-Verkaufsstelle (POS) bietet aktualisierte Funktionen zum Suchen und Filtern von Aufträgen sowie auftragsspezifische Informationen. Diese Funktion ist in Commerce Version 10.0.15 und höher verfügbar.
 
 Um diese Funktionalität zu aktivieren, schalten Sie die Funktion **Verbesserter Auftragsrückruf in POS** im **Funktionsverwaltung**-Arbeitsbereich in der Commerce-Zentrale ein. Nachdem Sie die Funktion aktiviert haben, sollten Sie Ihre [Bildschirmlayouts](pos-screen-layouts.md) in POS aktualisieren, um einige der geänderten Funktionen zu nutzen.
 

@@ -15,20 +15,22 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e3ab79bc9203309c0cfa1ff18f75580297ae1001
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413968"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527362"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Das Debitorenportal anpassen und verwenden
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In diesem Thema werden die verschiedenen Seiten beschrieben, die im Kundenportal sofort verfügbar sind. Es wird erklärt, was die Seiten tun und wie Sie sie anpassen können.
 
 Das Kundenportal bietet einige vordefinierte Websiten und Aktionen. Die folgende Sitemap bietet einen Überblick über diese Webseiten und Aktionen sowie die Rollen, die die Aktionen ausführen können.
 
-![![Kundenportal-Sitemap](media/customer-portal-site-map.png "Kundenportal-Sitemap")](media/customer-portal-site-map.png "Customer portal site map")
+![Kundenportal-Sitemap](media/customer-portal-site-map.png "Kundenportal-Sitemap")
 
 ## <a name="typical-customizations"></a>Typische Anpassungen
 
@@ -62,12 +64,12 @@ Hier sind die Standardschritte zum Absenden eines Auftrags über das Kundenporta
     - **Anforderungsnummer** – Geben Sie die Bestellnummer der Bestellung ein. Dieses Feld ist nicht erforderlich.
     - **Versand nach Land/Region** – Geben Sie das Land oder die Region ein, in die die Artikel geliefert werden sollen. Dieses Feld wird automatisch für Benutzer ohne Administratorrechte festgelegt.
 
-    ![![Auftragsinformationsseite](media/customer-portal-order-information.png "Auftragsinformationsseite")](media/customer-portal-order-information.png "Order Information page")
+    ![Auftragsinformationsseite](media/customer-portal-order-information.png "Auftragsinformationsseite")
 
 1. Wählen Sie **Weiter**.
 1. Wählen Sie auf der Seite **Artiekl** **Artikel hinzufügen** aus.
 
-    ![![Artikelseite](media/customer-portal-items.png "Artikelseite")](media/customer-portal-items.png "Items page")
+    ![Artikelseite](media/customer-portal-items.png "Artikelseite")
 
 1. Im angezeigten Dialogfeld **Artikelinformation** legen Sie die folgenden Felder fest:
 
@@ -76,14 +78,14 @@ Hier sind die Standardschritte zum Absenden eines Auftrags über das Kundenporta
     - **Einheit** – Geben Sie die Maßeinheit an (z. B. **ea.**, **kg**, oder **Schachtel**).
     - **Geschätzter Nettobetrag** – Der Wert wird berechnet als der geschätzte Preis des Artikels × die Menge für die ausgewählte Einheit.
 
-    ![![Dialogfeld Artikelinformation](media/customer-portal-item-information.png "Dialogfeld Artikelinformation")](media/customer-portal-item-information.png "Item Information dialog box")
+    ![Dialogfeld Artikelinformation](media/customer-portal-item-information.png "Dialogfeld Artikelinformation")
 
 1. Wählen Sie **Übermitteln**, um dem Auftrag den Artikel hinzuzufügen.
 1. Wiederholen Sie die Schritte 4 bis 6, bis Sie alle Artikel hinzugefügt haben, die Sie bestellen möchten.
 1. Wenn Sie alle Elemente hinzugefügt haben, wählen Sie **Weiter** auf der Seite **Artikel**.
 1. Die Seite **Bestellinformationen** zeigt eine Zusammenfassung der Bestellung. Überprüfen Sie den Bestellinhalt und die Lieferdetails. Wenn alles richtig aussieht, wählen Sie **übermitteln**, um die Bestellung abzuschicken.
 
-    ![![Auftragsinformationsseite](media/customer-portal-order-submit.png "Auftragsinformationsseite")](media/customer-portal-order-submit.png "Order Information page")
+    ![Auftragsinformationsseite](media/customer-portal-order-submit.png "Auftragsinformationsseite")
 
 ### <a name="standard-data-setup"></a>Standarddaten einrichten
 
@@ -148,19 +150,19 @@ Alle Steuerelemente im Kundenportal sind integrierte Power Apps Portal Steuerele
 
 Das einzige benutzerdefinierte Steuerelement, das in der Kundenportalvorlage enthalten ist, wird zum Erstellen der Kacheln auf der Startseite verwendet.
 
-![![Kacheln auf der Startseite](media/customer-portal-home-page-tiles.png "Kacheln auf der Startseite")](media/customer-portal-home-page-tiles.png "Tiles on the home page")
+![Kacheln auf der Startseite](media/customer-portal-home-page-tiles.png "Kacheln auf der Startseite")
 
 Um die Kacheln auszuführen, führen Sie folgende Schritte aus.
 
 1. Öffnen Sie die [Portal Management App](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal).
 1. Wählen Sie im linken Navigationsbereich **Seitenvorlage** aus.
 
-    ![![Navigationsbereich der Portalverwaltung](media/customer-portal-nav.png "Navigationsbereich der Portalverwaltung")](media/customer-portal-nav.png "Portal Management navigation pane")
+    ![Navigationsbereich der Portalverwaltung](media/customer-portal-nav.png "Navigationsbereich der Portalverwaltung")
 
 1. Wählen Sie die benannte Seitenvorlage aus **Startseite**.
 1. Im Feld **Webvorlage** wählen Sie den Link **Startseite** aus, um den Quellcode für diese Seite zu öffnen.
 
-    ![![Webvorlagenfeld](media/customer-portal-web-template.png "Webvorlagenfeld")](media/customer-portal-web-template.png "Web Template field")
+    ![Webvorlagenfeld](media/customer-portal-web-template.png "Webvorlagenfeld")
 
 1. Sie sollten jetzt den gesamten Quellcode für die Homepage sehen und können ihn nach Bedarf ändern.
 

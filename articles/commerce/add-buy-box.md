@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: beb705852be99ce817997d7017c41a0159f75419
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fa9d42c20540f2ee2240cc4f2b180140c3f9a628
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022028"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517087"
 ---
 # <a name="buy-box-module"></a>Kauffeldmodul
 
@@ -72,10 +72,10 @@ Die folgenden Kaufelementmoduleigenschaften können unter **Site-Einstellungen \
 
 - **Warenkorbartikel-Höchstmenge** – Diese Eigenschaft dient zur Angabe der maximalen Anzahl jedes Artikels, die dem Einkaufskorb hinzugefügt werden kann. Beispielsweise kann ein Einzelhändler festlegen, dass nur 10 eines Produkts als einzelne Transaktion verkauft werden können.
 - **Bestand** – Informationen zum Anwenden von Bestandeinstellungen finden Sie unter [Wenden Sie Bestandeinstellungen an](inventory-settings.md).
-- **In den Warenkorb legen** – Mit dieser Eigenschaft wird das Verhalten angegeben, nachdem ein Artikel zum Warenkorb hinzugefügt wurde. Die möglichen Werte sind **Zum Warenkorb navigieren** , **Navigieren Sie nicht zum Warenkorb** , und **Zeige Benachrichtigungen**. Wenn der Wert auf **Zum Warenkorb navigieren** eigestellt ist, werden Benutzer nach dem Hinzufügen eines Artikels zur Warenkorbseite weitergeleitet. Wenn der Wert auf **Nicht zum Warenkorb navigieren** eingestellt ist, werden Benutzer nach dem Hinzufügen eines Artikels nicht zur Warenkorbseite weitergeleitet. Wenn der Wert auf **Zeige Benachrichtigungen** festgelegt ist, wird Benutzern eine Bestätigungsbenachrichtigung angezeigt, und sie können weiterhin auf der Seite mit den Produktdetails surfen. 
+- **Produkt in den Warenkorb legen** – Mit dieser Eigenschaft wird das Verhalten angegeben, nachdem ein Artikel zum Warenkorb hinzugefügt wurde. Die möglichen Werte sind **Zur Warenkorbseite navigieren**, **Nicht zur Warenkorbseite navigieren** und **Benachrichtigung anzeigen**. Wenn der Wert auf **Zur Warenkorbseite navigieren** festgelegt ist, werden Benutzer Warenkorbseite weitergeleitet, nachdem Sie einen Artikel hinzugefügt haben. Wenn der Wert auf **Nicht zur Warenkorbseite navigieren** festgelegt ist, werden Benutzer nach dem Hinzufügen eines Artikels nicht zur Warenkorbseite weitergeleitet. Wenn der Wert auf **Benachrichtigung anzeigen** festgelegt ist, wird Benutzern eine Bestätigungsbenachrichtigung angezeigt, und sie können weiter die Seite mit den Produktdetails durchsuchen. 
 
 > [!IMPORTANT]
-> Die Site-Einstellungen **In den Einkaufskorb** sind in Dynamics 365 Commerce 10.0.11 verfügbar. Wenn Sie eine Aktualisierung von einer älteren Version von Dynamics 365 Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen zum Aktualisieren der Datei appsettings.json finden Sie unter [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> Die Website-Einstellungen **Produkt in den Warenkorb legen** sind im Release Dynamics 365 Commerce 10.0.11 verfügbar. Wenn Sie eine Aktualisierung von einer älteren Version von Dynamics 365 Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen zum Aktualisieren der Datei appsettings.json finden Sie unter [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
 Das folgende Bild zeigt ein Beispiel einer Benachrichtigung Zum Warenkorb hinzugefügt auf der Fabrikam-Site.
 
@@ -92,24 +92,24 @@ Um ein Kauffeldmodul einer neuen Seite hinzuzufügen und die erforderlichen Eige
 1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus, um ein neues Fragment zu erstellen.
 1. Wählen Sie im Dialogfeld **Neues Fragment** das Modul **Kauffeld** aus.
 1. Geben Sie unter **Name des Fragments** den Namen **Kauffeldfragment** ein und wählen Sie **OK** aus.
-1. Im Slot **Mediengallerie** , der das Kauffeldmodul enthält, wählen Sie die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
+1. Im Slot **Mediengallerie**, der das Kauffeldmodul enthält, wählen Sie die Ellipsen (**...**) und wählen **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Mediengallerie** und dann **OK** aus.
-1. Im Slot **Auswahl speichern** , der das Kauffeldmodul enthält, wählen Sie die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
+1. Im Slot **Auswahl speichern**, der das Kauffeldmodul enthält, wählen Sie die Ellipsen (**...**) und wählen **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Auswahl speichern** und dann **OK** aus.
-1. Wählen Sie **Speichern** , wählen Sie **Bearbeiten beenden** , um das Fragment einzuchecken, und wählen Sie dann **Veröffentlichen** , um es zu veröffentlichen.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um das Fragment einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Wechseln Sie zu **Vorlagen** und wählen Sie **Neu** aus, um eine neue Vorlage zu erstellen.
 1. Im Dialogfeld **Neue Vorlage** unter **Vorlagenname** geben Sie **PDP Vorlage** ein und wählen **OK**.
-1. Wählen Sie im Slot **Körper** die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Slot **Körper** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Standardseite** und dann **OK** aus.
-1. Auf dem Seitenüberblick wählen Sie den Slot **Haupt** und wählen die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Fragment hinzufügen**.
+1. Auf dem Seitenüberblick wählen Sie den Slot **Haupt** und wählen die Ellipsen-Schaltfläche (**...**) und wählen Sie **Fragment hinzufügen**.
 1. Wählen Sie im Dialogfeld **Fragment auswählen** das Fragment **Kauffeldfragment** aus, das Sie zuvor erstellt haben, und wählen Sie dann **OK** aus.
-1. Wählen Sie **Speichern** , wählen Sie **Bearbeiten beenden** , um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen** , um es zu veröffentlichen.
-1. Wechseln Sie zu **Seiten** , und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
+1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
 1. In dem Dialogfeld **Wählen Sie eine Vorlage** wählen Sie die Vorlage **PDP-Vorlage** aus. Unter **Seitenname** geben Sie **PDP-Seite** ein und wählen dann **OK** aus.
-1. Im Slot **Hauptseite** der neuen Seite wählen Sie die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Fragment hinzufügen**.
+1. Im Slot **Hauptseite** der neuen Seite wählen Sie die Ellipsen-Schaltfläche (**...**) und wählen Sie **Fragment hinzufügen**.
 1. Wählen Sie im Dialogfeld **Fragment auswählen** das Fragment **Kauffeldfragment** aus, das Sie zuvor erstellt haben, und wählen Sie dann **OK** aus.
-1. Seite speichern und Vorschau anzeigen. Fügen Sie die **? productid=&lt;Produktkennung&gt;** -Abfragezeichenfolgenparameter der URL der Vorschauseite hinzu. So wird der Produktkontext verwendet, um die Vorschauseite zu stellen und zu rendern.
-1. Wählen Sie **Speichern** , wählen Sie **Bearbeiten beenden** , um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen** , um es zu veröffentlichen. Ein Kauffeld sollte auf der Produktdetailseite angezeigt werden.
+1. Seite speichern und Vorschau anzeigen. Fügen Sie die **? productid=&lt;Produktkennung&gt;**-Abfragezeichenfolgenparameter der URL der Vorschauseite hinzu. So wird der Produktkontext verwendet, um die Vorschauseite zu stellen und zu rendern.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen. Ein Kauffeld sollte auf der Produktdetailseite angezeigt werden.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

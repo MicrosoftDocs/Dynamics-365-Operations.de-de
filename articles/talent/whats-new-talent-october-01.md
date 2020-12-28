@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: f872b0907e0f48e0b734c87f0b8fb1a4cfe20cb0
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896680"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461228"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-october-1-2018"></a>Neuerungen oder Änderungen in Dynamics 365 Talent: Core HR (1. Oktober 2018)
 
@@ -55,4 +55,4 @@ Organisationsprämienfreizeit unterschiedlich auf der Basis, wenn Mitarbeiter da
 
 ## <a name="known-issue"></a>Bekannte Probleme
 
--   **Problem:** Wenn einer Arbeitskraft ein neuer Anhang hinzugefügt wird, werden die Schaltflächen **Neu** und **Bearbeiten** abgeblendet. **Problemumgehung:**, Bevor die Anhangsseite geöffnet wird, überprüfen Sie, dass die Infoboxen **Arbeitskraft** geschlossen werden. Wenn die Infoboxen geschlossen werden, wenn die **Arbeitskraft**-Seite geladen wird, werden die **Anhang**schaltflächen aktiviert. (Dieses Problem wird in der folgenden Plattformaktualisierung korrigiert.)
+-   **Problem:** Wenn einer Arbeitskraft ein neuer Anhang hinzugefügt wird, werden die Schaltflächen **Neu** und **Bearbeiten** abgeblendet. **Problemumgehung:**, Bevor die Anhangsseite geöffnet wird, überprüfen Sie, dass die Infoboxen **Arbeitskraft** geschlossen werden. Wenn die Infoboxen geschlossen werden, wenn die **Arbeitskraft**-Seite geladen wird, werden die **Anhang** schaltflächen aktiviert. (Dieses Problem wird in der folgenden Plattformaktualisierung korrigiert.)

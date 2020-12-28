@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
-ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
+ms.openlocfilehash: 7dc9f85bf90e6ddf9badf656eb136e28a71b036f
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081338"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594112"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 
@@ -197,6 +197,8 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 500 | Buchung stornieren | Aktuellen Buchung leeren. | Ja | Ja | Nr. | Ja | Nr. |
 | 916 | Windows Workflow Foundation | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nr. |
 | 924 | X-Bericht für Bankkarten | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Ja |
+| 311 | Systemrabatte von Transaktionen entfernen | Entfernen Sie alle vom System angewendeten Rabatte, einschließlich Coupon-basierter Rabatte, aus der Transaktion. Manuelle Rabatte werden dadurch nicht entfernt. | Ja | Ja | Ja | Ja | Nr. |
+| 312 | Systemrabatte erneut anwenden | Wenden Sie Systemrabatte erneut auf die Transaktion an, wenn diese mithilfe des Vorgangs **Systemrabatte von Transaktion entfernen** entfernt wurden. | Ja | Ja | Ja | Ja | Nr. |
 
 \* Der Arbeitsgang ist nur im Offlinemodus verfügbar, wenn ein Kundenauftrag oder Verkaufsangebot erstellt wird, und nur bei Erstellung offline Debitorenbestellungen sowie von Verkaufsangeboten im POS-Funktionsprofil konfiguriert wird. Der Vorgang kann nicht ausgeführt werden, wenn Aufträge erstellt werden, indem Echtzeit-Service verwendet wird, wenn Aufträge erneut aufgerufen oder bearbeitet werden.
 

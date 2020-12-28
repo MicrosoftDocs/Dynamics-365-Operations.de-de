@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b52b696d323df6bafead2418ae322d1a9cdf64a
-ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
+ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3706227"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527836"
 ---
 # <a name="copy-an-instance"></a>Instanz kopieren
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Sie können mit Microsoft Dynamics Lifecycle Services (LCS) eine Microsoft Dynamics 365 Human Resources-Datenbank in eine Sandkastenumgebung kopieren. Wenn Sie eine andere Sandbox-Umgebung haben, können Sie die Datenbank auch aus dieser Umgebung in eine bestimmte Sandbox-Umgebung kopieren.
 

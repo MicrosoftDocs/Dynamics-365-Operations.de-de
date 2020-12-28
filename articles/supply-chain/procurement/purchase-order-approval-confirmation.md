@@ -20,11 +20,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e3879079e233a881ea0adc1f5e2ba39ab70b372d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018812"
+ms.locfileid: "4429023"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Bestellungen genehmigen und bestätigen
 
@@ -35,11 +35,11 @@ Dieser Artikel beschreibt die Statuswerte einer Bestellung (PO) nach der Erstell
 Nachdem eine Bestellung (PO) erstellt wurde, muss diese möglicherweise einen Genehmigungsprozess durchlaufen. Nachdem der Kreditor der Bestellung zugestimmt hat, erhält die Bestellung den Status **Bestätigt**.
 
 ## <a name="approval-of-purchase-orders"></a>Genehmigung von Bestellungen
-PO ohne Änderungsmanagement haben den Status **Genehmigt** , sobald sie erstellt wurden. POs mit Änderungsmanagement haben den Status **Entwurf** , wenn sie erstellt werden. Eine Bestellungen, die durch Umwandeln von geplanten Bestellungen aus dem Produktprogrammplan erstellt wurden, haben, unabhängig von den Einstellungen der Änderungsverwaltung, den Status **Genehmigt**. Eine Bestellung erstellt Lagertransaktionen nur bei Erreichen des Status **Genehmigt**. Daher wird der Bestand nicht als verfügbar für Reservierung angezeigt oder markiert, bis die Bestellung akzeptiert wird.
+PO ohne Änderungsmanagement haben den Status **Genehmigt**, sobald sie erstellt wurden. POs mit Änderungsmanagement haben den Status **Entwurf**, wenn sie erstellt werden. Eine Bestellungen, die durch Umwandeln von geplanten Bestellungen aus dem Produktprogrammplan erstellt wurden, haben, unabhängig von den Einstellungen der Änderungsverwaltung, den Status **Genehmigt**. Eine Bestellung erstellt Lagertransaktionen nur bei Erreichen des Status **Genehmigt**. Daher wird der Bestand nicht als verfügbar für Reservierung angezeigt oder markiert, bis die Bestellung akzeptiert wird.
 
 Sie aktivieren das Änderungsmanagement für POs über die Option **Änderungsmanagement aktivieren** auf der Seite **Beschaffungsparameter**. Wenn das Änderungsmanagement aktiviert ist, müssen POs einen Genehmigungsworkflow durchlaufen, nachdem sie abgeschlossen wurden. Supply Chain Management hat einen Workflow-Prozess-Editor, über den Sie einen Workflow für den Genehmigungsprozess definieren können. Dieser Workflow kann Regeln für automatische die Genehmigung, Regeln für die Zuweisung der Genehmigung von bestimmten POs und Regeln zur Eskalation eines Workflows mit länger ausstehender Genehmigung enthalten. Sie können den Änderungsmanagementprozess für alle Kreditoren oder für bestimmte Kreditoren aktivieren. Sie können den Prozess auch so einrichten, dass er für einzelne POs überschrieben werden kann.
 
-Bei aktiviertem Änderungsmanagement durchlaufen POs sechs Genehmigungsstatuswerte (von **Entwurf** bis **Abgeschlossen** ). Nachdem eine Bestellung genehmigt wurde, müssen Benutzer zur Bearbeitung die **Änderung anfordern** -Aktion nutzen.
+Bei aktiviertem Änderungsmanagement durchlaufen POs sechs Genehmigungsstatuswerte (von **Entwurf** bis **Abgeschlossen**). Nachdem eine Bestellung genehmigt wurde, müssen Benutzer zur Bearbeitung die **Änderung anfordern**-Aktion nutzen.
 
 | Genehmigungsstatus | Beschreibung                                                                      | Änderung anfordern aktiviert |
 |-----------------|----------------------------------------------------------------------------------|---------------------------|
@@ -51,7 +51,7 @@ Bei aktiviertem Änderungsmanagement durchlaufen POs sechs Genehmigungsstatuswer
 | Zum Abschluss gebracht       | Die Bestellung wurde endgültig festgelegt. Sie ist nun wertmäßig abgeschlossen und kann nicht mehr geändert werden. | Nein                        |
 
 ## <a name="confirming-purchase-orders"></a>Bestellungen bestätigen
-POs mit dem Genehmigungsstatus **Genehmigt** können vor der Bestätigung weitere Schritte durchlaufen. Sie können beispielsweise eine Bestellungsanfrage an den Kreditor zu Preisen, Rabatten und Lieferdaten senden. In diesem Fall legen Sie die Bestellung mithilfe der **Einkaufsabfrage** -Aktion auf den Status **In externer Prüfung** fest.
+POs mit dem Genehmigungsstatus **Genehmigt** können vor der Bestätigung weitere Schritte durchlaufen. Sie können beispielsweise eine Bestellungsanfrage an den Kreditor zu Preisen, Rabatten und Lieferdaten senden. In diesem Fall legen Sie die Bestellung mithilfe der **Einkaufsabfrage**-Aktion auf den Status **In externer Prüfung** fest.
 
 Kreditoren, die für die Verwendung des Kreditorenportal eingerichtet sind, können Aufträge im Portal überprüfen und genehmigen oder ablehnen. Während dieser Überprüfung hat die Bestellung den Status **In externer Prüfung**. Der Kreditorenportal kann so konfiguriert werden, dass eine Bestätigung vom Kreditor automatisch den Auftrag in Supply Chain Management bestätigt. Alternativ können Sie eine Bestellung nach Bestätigung des Kreditors manuell bestätigen. Wenn ein Kreditor eine Bestellung ablehnt, wird die Ablehnung zusammen mit dem Grund für die Ablehnung sowie Vorschlägen zu Änderungen empfangen. In diesem Fall bleibt der Status der Bestellung auf **In externer Prüfung**.
 
@@ -62,12 +62,12 @@ Nachdem der Kreditor der Bestellung zugestimmt hat, ist der nächste Schritt die
 -   Es wird eine Erfassung zur Speicherung einer Kopie der Bestätigung im System erstellt. Manchmal müssen Bestellungen geändert werden und zusätzliche Erfassungen werden nach der Bestätigung der aktualisierten Bestellung erstellt. In diesen Erfassungen können Sie den Verlauf der verschiedenen Versionen der bestätigten Bestellung anzeigen.
 -   Wenn diese Funktionalität aktiviert wurde, werden Buchhaltungsverteilungen erstellt und Bestell- und Budgetprüfungen durchgeführt. Wenn eine Prüfung fehlschlägt, erhalten Sie eine Fehlermeldung, die besagt, dass die Bestellung geändert werden muss, bevor sie erneut bestätigt werden kann.
 
-Ein Kreditor kann eine Sicherheit für die Zahlung für eine Bestellung anfordern. Es gibt verschiedene Methoden zum Bereitstellen dieser Garantie im Rahmen der Kreditorenprozesse. Angenommen, die **Vorauszahlung** -Aktion reserviert Mittel für die PO und diese Vorauszahlung wird für die Bestellung festgehalten.
+Ein Kreditor kann eine Sicherheit für die Zahlung für eine Bestellung anfordern. Es gibt verschiedene Methoden zum Bereitstellen dieser Garantie im Rahmen der Kreditorenprozesse. Angenommen, die **Vorauszahlung**-Aktion reserviert Mittel für die PO und diese Vorauszahlung wird für die Bestellung festgehalten.
 
 ## <a name="changing-purchase-orders"></a>Ändern von Bestellungen
 In einigen Situationen müssen Sie möglicherweise eine Bestellung ändern nachdem der Genehmigungsstatus **Genehmigt** oder **Bestätigt** erreicht wurde.
 
-Wenn die Bestellung über einen Änderungsmanagementprozess erstellt wurde, können Sie Änderungen über das erneute Aufrufen der Bestellung oder (wenn sie bereits genehmigt ist) über die Aktion **Änderung anfordern** durchführen. In diesem Fall wird der Genehmigungsstatus wieder auf **Entwurf** geändert, und Sie können die Bestellung ändern. Nachdem Sie die Änderungen abgeschlossen haben, müssen Sie die Bestellung möglicherweise zur erneuten Genehmigung senden. Sie können die Änderungen konfigurieren, die eine erneute Genehmigung erfordern. Nutzen Sie hierzu eine **Regel für die erneute Genehmigung von Bestellungen** -Richtlinienregel auf der **Einkaufsrichtlinien** -Seite.
+Wenn die Bestellung über einen Änderungsmanagementprozess erstellt wurde, können Sie Änderungen über das erneute Aufrufen der Bestellung oder (wenn sie bereits genehmigt ist) über die Aktion **Änderung anfordern** durchführen. In diesem Fall wird der Genehmigungsstatus wieder auf **Entwurf** geändert, und Sie können die Bestellung ändern. Nachdem Sie die Änderungen abgeschlossen haben, müssen Sie die Bestellung möglicherweise zur erneuten Genehmigung senden. Sie können die Änderungen konfigurieren, die eine erneute Genehmigung erfordern. Nutzen Sie hierzu eine **Regel für die erneute Genehmigung von Bestellungen**-Richtlinienregel auf der **Einkaufsrichtlinien**-Seite.
 
 Wenn ein Teil der bestellten Menge für eine Bestellposition geliefert wurde, können Sie die bestellte Menge nicht ändern, wenn die Bestellung im Zustand **Entwurf** ist. Sie können jedoch die Menge **Rest liefern** in der Zeile für die Bestellung ändern, die im Status **Entwurf** ist.
 
@@ -80,7 +80,7 @@ Eine Bestellung kann storniert werden, indem die Aktivität **Abbrechen** im Kop
 
 Wenn die Menge teilweise erfasst oder fakturiert wurde oder eingegangen ist, können Sie nur die Restmenge stornieren, die nicht erfasst oder fakturiert wurde oder eingegangen ist. Die Auftragsmenge wird dann entsprechend reduziert. Wenn die Menge in der Position aktualisiert wird, wird der Positionsstatus ebenfalls aktualisiert. Beispielsweise ist die ursprüngliche Menge in der Position 5 und die Menge 3 geht ein. In diesem Fall kann nur eine Menge von zwei storniert werden. Die Position wird dann mit dem Status **Eingegangen** aktualisiert.
 
-Wenn eine Restliefermenge der Auftragsposition hinzugefügt wird und sie die Menge in der Auftragsposition übersteigt, storniert die Aktivität **Abbrechen** nicht die Überschussmenge. Stattdessen verbleibt die Position im Status **Offener Auftrag** , da sie eine Restmenge hat. Beispielsweise ist die ursprüngliche Menge in der Position 5 und die verbleibende Liefermenge ist 7. Wenn der Auftrag storniert wird, wird eine Menge von fünf storniert und eine Menge von 2 verbleibt, wie Sie in den Lagerbuchungen sehen können.
+Wenn eine Restliefermenge der Auftragsposition hinzugefügt wird und sie die Menge in der Auftragsposition übersteigt, storniert die Aktivität **Abbrechen** nicht die Überschussmenge. Stattdessen verbleibt die Position im Status **Offener Auftrag**, da sie eine Restmenge hat. Beispielsweise ist die ursprüngliche Menge in der Position 5 und die verbleibende Liefermenge ist 7. Wenn der Auftrag storniert wird, wird eine Menge von fünf storniert und eine Menge von 2 verbleibt, wie Sie in den Lagerbuchungen sehen können.
 
 Um die gesamte Menge einer Bestellposition zu stornieren, sollten Sie die verbleibende Liefermenge in der Position stornieren. Die Position wird dann mit dem Status **Storniert** aktualisiert.
 

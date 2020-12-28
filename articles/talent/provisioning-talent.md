@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: d7c4a8174007384370ae320b3874e104c04b71a5
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 5bcdb50475fb341a538211cb122eb7c13067d86a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124703"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527217"
 ---
 # <a name="provision-talent"></a>Talent bereitstellen
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dieses Thema führt Sie durch den Prozess des Bereitstellens einer neuen Produktionsumgebung für Microsoft Dynamics 365 Talent. Für dieses Thema wird vorausgesetzt, dass Sie Talent durch einen Cloud-Lösungs-Anbieter (CSP) oder Unternehmensarchitektur (EA)- Vereinbarung besitzen. Wenn Sie eine vorhandene Microsoft Dynamics 365 Lizenz haben, die den Talent-Service-Plan bereits beinhaltet, und Sie die Schritte in diesem Thema nicht ausführen können, kontaktieren Sie den Support.
 
@@ -96,7 +98,7 @@ Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche Power Apps-U
    
     - **Testumgebung** Diese Umgebungen werden mit einem Ablaufdatm erstellt und verfallen nach dieser Zeit. Ihre Umgebung und alle Talent-Instanzen darin werden automatisch entfernt.
    
-    - **Nicht unterstützte Regionen** Talent wird derzeit nur in folgenden Regionen unterstützt: USA, Europa, Großbritannien, Australien, Kanada und Asien.
+    - **Nicht unterstützte Regionen** Talent wird derzeit nur in folgenden Regionen unterstützt: USA, Europa, Vereinigtes Königreich, Australien, Kanada und Asien.
   
 6. Nachdem Sie die korrekte Umgebung bestimmt haben, die verwendet werden soll, können Sie mit dem Bereitstellungsprozess fortfahren. 
  

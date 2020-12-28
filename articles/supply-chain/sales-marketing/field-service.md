@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 041044cf6b5a5de2091a4b61d98b7d07445e43ef
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 18eef310470cafd9d59bb1c848bbaeb8bf5b9fa1
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209121"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528898"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Übersicht über die Integration in Microsoft Dynamics 365 Field Service
 
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Supply Chain Management ermöglicht die Synchronisierung von Geschäftsprozessen zwischen Dynamics 365 Supply Chain Management und Dynamics 365 Field Service. Die Integrationsszenarien werden mithilfe erweiterbarer Datenintegratorvorlagen und Common Data Service konfiguriert, um die Synchronisierung von Geschäftsprozessen zu ermöglichen.
 Standardvorlagen können verwendet werden, um benutzerdefinierte Integrationsprojekte zu erstellen, in denen zusätzliche standardmäßige und benutzerdefinierte Felder sowie auch Entitäten zugeordnet werden können, um die Integration anzupassen und bestimmte Geschäftsanforderungen zu erfüllen. 
@@ -62,12 +64,12 @@ Die zusätzlichen Funktionen in der zweiten Phase geben Feldtechnikern Einblicke
 ![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Die zweitee Phase der Integration zwischen Field Service und Supply Chain Management ermöglicht die Synchronisierung der folgenden Vorlagen:
-- Lagerorte (Supply Chain Management zu Field Service) - Lagerorte aus Supply Chain Management zu Field Service [Erweiterte Abfrage] 
-- Produktbestand (Supply Chain Management zu Field Service) - Bestandebeneninformationen aus Supply Chain Management zu Field Service [Erweiterte Abfrage] 
-- Bestandanpassung (Field Service zu Supply Chain Management) - Bestandanpassungen von Field Service zu Supply Chain Management [Erweiterte Abfrage] 
-- Bestandsumbuchungen (Field Service zu Supply Chain Management) - Bestandsübertragungen von Field Service zu Supply Chain Management [Erweiterte Abfrage] 
+- Lagerorte (Supply Chain Management zu Field Service) - Lagerorte von Supply Chain Management zu Field Service [Erweiterte Abfrage] 
+- Produktbestand (Supply Chain Management zu Field Service) - Informationen zum Bestand aus Supply Chain Management an Field Service [Erweiterte Abfrage] 
+- Bestandsanpassung (Field Service zu Supply Chain Management) - Bestandsanpassungen vom Field Service an Supply Chain Management [Erweiterte Abfrage] 
+- Bestandsübertragungen (Field Service zu Supply Chain Management) - Bestandsübertragungen vom Field Service an Supply Chain Management [Erweiterte Abfrage] 
 - Projekte (Supply Chain Management zu Field Service) - Projektliste aus Supply Chain Management zu Field Service 
-- Arbeitsaufträge mit Projekt (Field Serivce zu Supply Chain Management) - Arbeitsaufträge in Field Service zu Verkaufsaufträgen im Bereich Supply Chain Management mit Unterstützung für Projekt [Erweiterte Abfrage] 
+- Arbeitsaufträge mit Projekt (Field Service zu Supply Chain Management) - Arbeitsaufträge im Field Service an Verkaufsaufträge in Supply Chain Management, mit Unterstützung für Project [Erweiterte Abfrage] 
 - Field Service Produkte mit Bestandeinheit (Supply Chain Management zu Sales) - Supply Chain Management 'zu verkaufende freigegebene Produkte zu Verkaufsprodukten' für Field Service einschließlich Lagereinheit 
 
 ## <a name="system-requirements"></a>Systemanforderungen

@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9d12a4d48aa369884804c2a0bce9834534b1bec6
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: ddc6593431585ed79cc15f7ede5daf856f11b959
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832860"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527241"
 ---
 # <a name="extensibility-in-attract"></a>Erweiterbarkeit in Attract
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Microsoft Dynamics 365 Talent ist über Common Data Service gebaut und kann auf verschiedene Weise erweitert werden, indem die Microsoft Power Platform und Funktionen verwendet werden, die Common Data Service anbietet. Daher können Sie das System mit Microsoft Power Apps und Microsoft Power Automate konfigurieren und personalisieren. Sie können auch eine zusätzliche Personen-Analyse erhalten, indem Sie Microsoft Power BI verwenden. Der Einstellungsprozess wird darüber hinaus durch neue benutzerdefinierte Aktivitäten, wie die Power Apps- und Webinhalt-Aktivitäten, noch flexibler als bisher. Wenn Sie diese Aktivitäten verwenden, können Sie den Einstellungsprozess auf Ihre Geschäftsanforderungen und -Prozesse anpassen und sicherstellen, dass das Einstellungsteam und die Kandidaten eine nahtlose angepasste Erfahrung haben.
 

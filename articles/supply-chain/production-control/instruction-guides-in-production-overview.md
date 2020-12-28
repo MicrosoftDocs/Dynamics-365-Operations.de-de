@@ -3,7 +3,7 @@ title: Bereitstellung von Anleitungen mit gemischter Realität für Arbeiter in 
 description: In diesem Thema wird erläutert, wie Sie das Produktionsverwaltungsmodul in Microsoft Dynamics 365 Supply Chain Management mit Dynamics 365 Guides integrieren.
 author: cabeln
 manager: tfehr
-ms.date: 09/29/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 14645f592275d07a6b633146bb6da35b89c1bf77
-ms.sourcegitcommit: 6d2fc497c8a7f49c48e7662995e27b5f8cc10296
+ms.openlocfilehash: 727a3bc50ea55259c7260a9d060dac59473ee3c1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000977"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645143"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Bereitstellung von Anleitungen mit gemischter Realität für Arbeiter in der Produktion
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Mitarbeiter in Produktionsprozessen profitieren von relevanten Anweisungen, die zum richtigen Zeitpunkt im Rahmen ihrer Arbeit bereitgestellt werden. *Anleitungen* gelten in verschiedenen Arbeitsbereichen, einschließlich: Montage, Service, Betrieb, Zertifizierung und Sicherheit. In all diesen Kerngeschäftsfunktionen können fortlaufende Schulungsanweisungen dazu beitragen, dass die Mitarbeiter mehr erreichen und besser arbeiten können.
 
@@ -124,10 +126,9 @@ Um zu konfigurieren, wie Guides in der Werkstatt angezeigt werden, gehen Sie zu 
 
 Stellen Sie die folgenden Felder ein:
 
-- **Common Data Service Subdomäne** – Dieses Feld sollte bereits einen Wert anzeigen. Dieses Feld enthält die Subdomain für die Common Data Service-Umgebung, in der Sie Ihre Guides erstellen. Die Subdomain ist der erste Teil der URL und wird normalerweise nach Ihrer Organisation benannt. Zum Beispiel, wenn Ihre Common Data Service-URL „contoso.crm4.dynamics.com“ lautet, sollten Sie hier *contoso* eingeben. Dieser Wert wird zum Erstellen von Adressen für Ihre Guides verwendet und in die QR-Codes codiert.
+- **Microsoft Dataverse URL** - Geben Sie die URL für die Microsoft Dataverse Umgebung an, in der Sie Ihre Guides erstellen. Das Format ist „contoso.crm4.dynamics.com“, wobei der erste Teil der URL typischerweise nach Ihrer Organisation benannt ist (z. B. „contoso.“), der zweite Teil ist spezifisch für die Datenregion Ihrer Umgebung (z. B. „crm4.“) und der letzte Teil ist die Domäne (z. B. „dynamics.com“). Eine Möglichkeit, die richtige URL zu finden, ist, zu [home.dynamics.com](https://home.dynamics.com/) zu gehen und dann Ihre App Guides zu öffnen. Wenn Guides geöffnet wird, sehen Sie die URL in der Adressleiste Ihres Browsers (nehmen Sie nur die Basis-URL, die dem vorherigen Beispiel ähneln sollte). Dieser Wert wird verwendet, um Adressen für Ihre Anleitungen zusammenzustellen und wird in die QR-Codes kodiert.“
 - **QR-Code-Größe** – Stellen Sie die Größe des gerenderten QR-Codes ein. Wir empfehlen, eine Größe zu wählen, die den größten Teil Ihres Bildschirms ausfüllt, jedoch nicht mehr. In der Regel ist *15* ist ein guter Wert.
 - **QR-Code-Fehlerkorrekturstufe** – Stellen Sie die Granularität des QR-Codes ein. Eine höhere Granularität kann dazu beitragen, die Zuverlässigkeit des Codes zu erhöhen; Ihre **QR-Code-Größe** muss jedoch groß genug sein, um den Detaillierungsgrad zu unterstützen, der für die von Ihnen ausgewählte Korrekturstufe erforderlich ist.
-
 
 > [!TIP]
 > - Das Rendern von QR-Codes, die für Ihr Display zu groß sind, dauert etwas länger und wird dann verkleinert, um sie an Ihr Display anzupassen. Diese bieten keinen Vorteil.
@@ -136,7 +137,7 @@ Stellen Sie die folgenden Felder ein:
 
 ## <a name="get-an-overview-of-all-guide-assignments"></a>Verschaffen Sie sich einen Überblick über alle Aufgaben des Guides
 
-Verwenden Sie die Seite **Alle Guides** , um eine Liste aller verfügbaren Guides in Ihrer Organisation sowie alle Zuordnungen zu Ihren Produktionsprozessen und Ressourcen zu sehen.. Zum Öffnen der Liste gehen Sie zu **Mixed Reality \> Guides \> Alle Guides**. Die Liste oben zeigt alle verfügbaren Guides. Sie können das Feld hier verwenden, um die Liste zu filtern. Die Liste unten zeigt alle Guide-Zuweisungen und bietet eine Symbolleiste für deren Verwaltung.
+Verwenden Sie die Seite **Alle Guides**, um eine Liste aller verfügbaren Guides in Ihrer Organisation sowie alle Zuordnungen zu Ihren Produktionsprozessen und Ressourcen zu sehen.. Zum Öffnen der Liste gehen Sie zu **Mixed Reality \> Guides \> Alle Guides**. Die Liste oben zeigt alle verfügbaren Guides. Sie können das Feld hier verwenden, um die Liste zu filtern. Die Liste unten zeigt alle Guide-Zuweisungen und bietet eine Symbolleiste für deren Verwaltung.
 
 ![Guides verwalten](media/instruction-guides-allguides.png "Guides verwalten")
 
@@ -158,7 +159,7 @@ So fügen Sie einen Guide einer Ressource hinzu:
 1. Wählen Sie im Listenbereich die Ressource aus, der Sie einen Guide zuweisen möchten.
 1. Erweitern Sie das Inforegister **Zugehörige Guides**.
 1. Wählen Sie **Hinzufügen** von der Symbolleiste **Zugehörige Guides**. Dem Raster wird eine neue Zeile hinzugefügt.
-1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name** , um den Guide auszuwählen, den Sie zuweisen möchten. Wenn Sie eine große Anzahl von Guides haben, können Sie die Liste filtern, um den gesuchten zu finden.
+1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten. Wenn Sie eine große Anzahl von Guides haben, können Sie die Liste filtern, um den gesuchten zu finden.
     ![Guides verwalten](media/instruction-guides-allguides.png "Guides verwalten")
 
 ## <a name="associate-a-guide-to-a-resource-group"></a><a name="resource-groups"></a>Verknüpfen Sie einen Guide mit einer Ressourcengruppe
@@ -179,7 +180,7 @@ So fügen Sie einen Guide einer Ressourcengruppe hinzu:
 1. Wählen Sie im Listenbereich die Ressourcengruppe aus, der Sie einen Guide zuweisen möchten.
 1. Erweitern Sie das Inforegister **Zugehörige Guides**.
 1. Wählen Sie **Hinzufügen** von der Symbolleiste **Zugehörige Guides**. Dem Raster wird eine neue Zeile hinzugefügt.
-1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name** , um den Guide auszuwählen, den Sie zuweisen möchten. Wenn Sie eine große Anzahl von Guides haben, können Sie die Liste filtern, um den gesuchten zu finden.
+1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten. Wenn Sie eine große Anzahl von Guides haben, können Sie die Liste filtern, um den gesuchten zu finden.
     ![Hinzufügen eines Guide zu einer Ressourcengruppe](media/instruction-guides-resourcegroup.png "Hinzufügen eines Guide zu einer Ressourcengruppe")
 
 ## <a name="associate-a-guide-to-a-released-product"></a><a name="released-products"></a>Verknüpfen eines Guide mit einem freigegebenen Produkt
@@ -199,7 +200,7 @@ So fügen Sie einen Guide einem freigegebenen Produkt hinzu:
 1. Öffnen Sie im Aktionsbereich die Registerkarte **Entwickler** und wählen Sie aus der Gruppe **Anzeige** **Zugehörige Guides** aus.
 1. Die Seite **Zugehörige Guides** wird für Ihr ausgewähltes Produkt geöffnet.
 1. Wählen Sie im Aktivitätsbereich **Hinzufügen** aus, um eine neue Position zum Raster hinzuzufügen. 
-1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name** , um den Guide auszuwählen, den Sie zuweisen möchten.
+1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
     ![Hinzufügen eines Guides zu einem freigegebenen Produkt](media/instruction-guides-ReleasedProduct-AddGuides.png "Hinzufügen eines Guides zu einem freigegebenen Produkt")
 
 ## <a name="associate-a-guide-to-a-formula"></a><a name="formulas"></a>Verknüpfen eines Guides mit einer Formel
@@ -224,7 +225,7 @@ So fügen Sie einen Guide einer Formel hinzu:
 1. Öffnen Sie die Registerkarte **Überschrift** über dem oberen Inforegister.
 1. Erweitern Sie das Inforegister **Zugehörige Guides**.
 1. Wählen Sie **Hinzufügen** von der Symbolleiste **Zugehörige Guides**. Dem Raster wird eine neue Zeile hinzugefügt.
-1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name** , um den Guide auszuwählen, den Sie zuweisen möchten.
+1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
     ![Hinzufügen eines Guides zu einer Formel](media/instruction-guides-Formula.png "Hinzufügen eines Guides zu einer Formel")
 
 ## <a name="associate-a-guide-to-a-formula-version"></a><a name="formula-versions"></a>Verknüpfen eines Guides mit einer Formelversion
@@ -253,7 +254,7 @@ So fügen Sie einen Guide einer Formelversion hinzu:
     ![Öffnen Sie die Guides, die einer ausgewählten Formelversion zugeordnet sind](media/instruction-guides-FormulaVersion.png "Öffnen Sie die Guides, die einer ausgewählten Formelversion zugeordnet sind")
 1. Die Seite **Zugehörige Guides** wird für Ihre Formelversion geöffnet.
 1. Wählen Sie im Aktivitätsbereich **Hinzufügen** aus, um eine neue Position zum Raster hinzuzufügen. 
-1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name** , um den Guide auszuwählen, den Sie zuweisen möchten.
+1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
     ![Hinzufügen eines Guides zu einer Formelversion](media/instruction-guides-FormulaVersionAddGuide.png "Hinzufügen eines Guides zu einer Formelversion")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials"></a><a name="bom"></a>Verknüpfen eines Guides mit einer Stückliste
@@ -276,7 +277,7 @@ So fügen Sie einen Guide einer Stückliste hinzu:
 1. Öffnen Sie die Registerkarte **Überschrift** über dem oberen Inforegister.
 1. Erweitern Sie das Inforegister **Zugehörige Guides**.
 1. Wählen Sie **Hinzufügen** von der Symbolleiste **Zugehörige Guides**. Dem Raster wird eine neue Zeile hinzugefügt.
-1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name** , um den Guide auszuwählen, den Sie zuweisen möchten.
+1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
     ![Hinzufügen eines Guides zu einer Stückliste](media/instruction-guides-BOM.png "Hinzufügen eines Guides zu einer Stückliste")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials-version"></a><a name="bom-versions"></a>Verknüpfen eines Guides mit einer Stücklistenversion
@@ -302,7 +303,7 @@ So fügen Sie einen Guide einer Stücklistenversion hinzu:
     ![Öffnen Sie die Guides, die einer ausgewählten Stücklistenversion zugeordnet sind](media/instruction-guides-BOMVersion.png "Öffnen Sie die Guides, die einer ausgewählten Stücklistenversion zugeordnet sind")
 1. Die Seite **Zugehörige Guides** wird für Ihre Stücklistenversion geöffnet.
 1. Wählen Sie im Aktivitätsbereich **Hinzufügen** aus, um eine neue Position zum Raster hinzuzufügen.
-1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name** , um den Guide auszuwählen, den Sie zuweisen möchten.
+1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
     ![Hinzufügen eines Guides zu einer Stücklistenversion](media/instruction-guides-BOMVersionAddGuide.png "Hinzufügen eines Guides zu einer Stücklistenversion")
 
 ## <a name="associate-a-guide-to-a-route"></a><a name="routes"></a>Verknüpfen eines Guides mit einem Arbeitsplan
@@ -323,7 +324,7 @@ So fügen Sie einen Guide einem Arbeitsplan hinzu:
 1. Öffnen Sie den Arbeitsplan, dem Sie einen Guide zuweisen möchten.
 1. Erweitern Sie das Inforegister **Zugehörige Guides**.
 1. Wählen Sie **Hinzufügen** von der Symbolleiste **Zugehörige Guides**. Dem Raster wird eine neue Zeile hinzugefügt.
-1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name** , um den Guide auszuwählen, den Sie zuweisen möchten.
+1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
     ![Hinzufügen eines Guides zu einem Arbeitsplan](media/instruction-guides-Route.png "Hinzufügen eines Guides zu einem Arbeitsplan")
 
 ## <a name="associate-a-guide-to-a-route-version"></a><a name="route-versions"></a>Verknüpfen eines Guides mit einer Arbeitsplanversion
@@ -345,7 +346,7 @@ So fügen Sie einen Guide einer Arbeitsplanversion hinzu:
     ![Öffnen Sie die Guides, die einer ausgewählten Arbeitsplanversion zugeordnet sind](media/instruction-guides-RouteVersion.png "Öffnen Sie die Guides, die einer ausgewählten Arbeitsplanversion zugeordnet sind")
 1. Die Seite **Zugehörige Guides** wird für Ihre Stücklistenversion geöffnet.
 1. Wählen Sie im Aktivitätsbereich **Hinzufügen** aus, um eine neue Position zum Raster hinzuzufügen.
-1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name** , um den Guide auszuwählen, den Sie zuweisen möchten.
+1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
     ![Hinzufügen eines Guides zu einer Arbeitsplanversion](media/instruction-guides-RouteVersionAddGuide.png "Hinzufügen eines Guides zu einer Arbeitsplanversion")
 
 ## <a name="associate-a-guide-to-a-route-operation-relation"></a><a name="route-operation-relations"></a>Verknüpfen eines Guides mit einer Arbeitsplanvorgangsbeziehung
@@ -368,18 +369,18 @@ So fügen Sie einen Guide zu einer Arbeitsplanvorgangsbeziehung hinzu:
 1. Öffnen Sie im Aktionsbereich die Registerkarte **Arbeitsplan** und wählen Sie aus der Gruppe **Verwalten** **Arbeitsplandetails** aus.
 1. Die Seite **Arbeitsplandetails** wird für Ihren ausgewählten Arbeitsplan geöffnet.
 1. Wählen Sie im oberen Raster den Vorgang aus, für den Sie eine Anleitung bereitstellen möchten.
-1. Wählen Sie im unteren Raster eine bestimmte Beziehung (oder die generische Beziehung **Alle** ) aus.
+1. Wählen Sie im unteren Raster eine bestimmte Beziehung (oder die generische Beziehung **Alle**) aus.
     ![Wählen Sie einen Vorgang und dann eine Beziehung aus](media/instruction-guides-RouteOperationRelation.png "Wählen Sie einen Vorgang und dann eine Beziehung aus")
 1. Öffnen Sie über dem unteren Raster die Registerkarte **Zugehörige Guides** aus.  ![Die Registerkarte Zugehörige Guides](media/instruction-guides-RouteOperationRelation-AddGuide.png "Die Registerkarte Zugehörige Guides")
 1. Wählen Sie **Hinzufügen** in der Symbolleiste oben im unteren Raster aus, um dem Raster eine neue Position hinzuzufügen.
-1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name** , um den Guide auszuwählen, den Sie zuweisen möchten. Aktivieren Sie im Rest der Zeile das Kontrollkästchen für jeden Kontext, in dem der ausgewählte Guide verfügbar sein soll.
+1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten. Aktivieren Sie im Rest der Zeile das Kontrollkästchen für jeden Kontext, in dem der ausgewählte Guide verfügbar sein soll.
 
 > [!NOTE]
 > Sie können für jede Phase jedes Vorgangs eine oder mehrere Guides hinzufügen.
 
 ## <a name="select-guides-from-the-shop-floor-execution-interface"></a>Wählen Sie Guides aus der Fertigungsausführungsoberfläche aus
 
-Wenn ein Mitarbeiter eine Einzelvorgangsliste auf der Fertigungsausführungsoberfläche öffnet, findet Supply Chain Management die relevanten Guides für die angezeigten Einzelvorgänge. Verwenden Sie die **Anleitungen** -Schaltfläche, um die entsprechenden Anleitungen anzuzeigen.
+Wenn ein Mitarbeiter eine Einzelvorgangsliste auf der Fertigungsausführungsoberfläche öffnet, findet Supply Chain Management die relevanten Guides für die angezeigten Einzelvorgänge. Verwenden Sie die **Anleitungen**-Schaltfläche, um die entsprechenden Anleitungen anzuzeigen.
 
 ![Schaltfläche Guides auf der Fertigungsausführungsoberfläche](media/instruction-guides-Shopfloor1.png "Schaltfläche Guides auf der Fertigungsausführungsoberfläche")
 

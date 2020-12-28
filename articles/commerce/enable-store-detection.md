@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4d3a423bf64900e547a23f2e5eeb90aa679ec5d1
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: f87d29a8cffb70e4dea211cea7538e5e4c85295c
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533389"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517305"
 ---
 # <a name="enable-location-based-store-detection"></a>Standortbasierte Shop-Erkennung aktivieren
 
@@ -50,17 +50,17 @@ Um ortsbasierte Shoperkennung im Handel zu aktivieren, gehen Sie folgendermaßen
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Domänennamen konfigurieren](configure-your-domain-name.md)
 
-[Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
+[Neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md)
 
-[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+[E-Commerce-Website erstellen](create-ecommerce-site.md)
 
-[Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
+[Zuordnen einer Dynamics 365 Commerce-Website zu einem Onlinekanal](associate-site-online-store.md)
 
-[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+[Robots.txt-Dateien verwalten](manage-robots-txt-files.md)
 
-[URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+[URL-Umleitungen in Massen hochladen](upload-bulk-redirects.md)
 
 [Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
 

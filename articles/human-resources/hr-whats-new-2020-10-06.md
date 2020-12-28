@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ca2fbbf3ffbcc7c9c32490f3733b8a94731170e
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fe01a2b82b72bf38bb537ed7b2bf5560235817d9
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022214"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529827"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (6. Oktober 2020)
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamic 365 Human Resources neu oder geändert wurden oder demnächst verfügbar sind. Weitere Informationen zu unserem Aktualisierungsprozess und zum Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden oder demnächst verfügbar sind. Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
 Weitere Informationen zu neuen Funktionen und den voraussichtlichen allgemeinen Verfügbarkeitsterminen finden Sie unter [Überblick Dynamics 365 Human Resources 2020 Veröffentlichungszyklus 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
 
@@ -77,11 +79,11 @@ Die folgenden neuen Funktionen stehen in der Vorschau zur Verfügung. Weitere In
 
 Die folgende neuen Funktionen sind für eine zukünftige Version geplant:
 
-- **Prüflistenentitäten in Common Data Service** : Prüflistenentitäten für Onboarding, Offboarding, Übergänge und Geschäftsprozesse werden in Kürze in Common Data Service verfügbar sein.
+- **Prüflistenentitäten in Common Data Service**: Prüflistenentitäten für Onboarding, Offboarding, Übergänge und Geschäftsprozesse werden in Kürze in Common Data Service verfügbar sein.
 
-- **Leistungsverwaltungs-Ursachencodes** : Ursachencodes für die Leistungsverwaltung werden in Kürze mit vorhandenen Ursachencodes in Human Resources kombiniert. Wenn Sie in der Vergütungsverwaltung Ursachencodes mit mehr als 15 Zeichen erstellt haben, müssen Sie den Namen des Ursachencodes im Vergütungsverwaltungsformular **Ursachencodes** auf maximal 15 Zeichen ändern. Nachdem Sie den Namen aktualisiert haben, wird der Ursachencode unter dem vorhandenen Ursachencodeformular in der Personalverwaltung angezeigt. Diese Änderung wird in Zukunft verfügbar sein und sich nicht auf vorhandene Funktionen auswirken.
+- **Leistungsverwaltungs-Ursachencodes**: Ursachencodes für die Leistungsverwaltung werden in Kürze mit vorhandenen Ursachencodes in Human Resources kombiniert. Wenn Sie in der Vergütungsverwaltung Ursachencodes mit mehr als 15 Zeichen erstellt haben, müssen Sie den Namen des Ursachencodes im Vergütungsverwaltungsformular **Ursachencodes** auf maximal 15 Zeichen ändern. Nachdem Sie den Namen aktualisiert haben, wird der Ursachencode unter dem vorhandenen Ursachencodeformular in der Personalverwaltung angezeigt. Diese Änderung wird in Zukunft verfügbar sein und sich nicht auf vorhandene Funktionen auswirken.
 
-- **Benutzerdefinierte Links im Manager-Self-Service** : Um Manager zu unterstützen, erweitern wir die Funktionen im Manager-Self-Service. Wir fügen die Möglichkeit hinzu, benutzerdefinierte Links zur Registerkarte **Mein Team** hinzuzufügen. Diese Funktion ähnelt der Funktion für benutzerdefinierte Links auf der **Registerkarte Meine Informationen** im Mitarbeiter-Self-Service. Weitere Informationen finden Sie unter [Benutzerdefinierte Links im Manager-Self-Service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
+- **Benutzerdefinierte Links im Manager-Self-Service**: Um Manager zu unterstützen, erweitern wir die Funktionen im Manager-Self-Service. Wir fügen die Möglichkeit hinzu, benutzerdefinierte Links zur Registerkarte **Mein Team** hinzuzufügen. Diese Funktion ähnelt der Funktion für benutzerdefinierte Links auf der **Registerkarte Meine Informationen** im Mitarbeiter-Self-Service. Weitere Informationen finden Sie unter [Benutzerdefinierte Links im Manager-Self-Service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
 
 Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen finden Sie unter [Überblick über Dynamics 365 Human Resources 2019 Veröffentlichungszyklus 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 

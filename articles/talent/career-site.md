@@ -19,11 +19,11 @@ ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.openlocfilehash: d4a1e7c19ccec6ae32e46ec7d58604b162418953
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832953"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461245"
 ---
 # <a name="set-up-your-career-site-in-attract"></a>Website mit Stellenangeboten einrichten
 
@@ -131,7 +131,7 @@ Sie können es für Kandidaten einfach machen, sich auf Ihre Positionen zu bewer
 1. Bei Attract als Administrator anmelden.
 2. Wählen Sie die Schaltfläche **Einstellungen** (das Rad-Symbol) in der rechten oberen Ecke der Seite aus, und wählen Sie dann **Administratorcenter**.
 3. Wählen Sie die Registerkarte **LinkedIn-Integration** aus und verbinden Sie sich mit einem LinkedIn Recruiter-Konto.
-4. Im Abschnitt **LinkedIn Recruiter System ConnectIntegration** wählen Sie **Aktiviert** für die Einstellung **Mit LinkedIn bewerben** aus.
+4. Im Abschnitt **LinkedIn Recruiter System Connect Integration** wählen Sie **Aktiviert** für die Einstellung **Mit LinkedIn bewerben** aus.
 
 Nachdem Sie die Einstellung aktiviert haben, können Kandidaten sich unter Verwendung ihrer vorhandenen LinkedIn-Profildaten bewerben. Wenn Kandidaten sich bewerben, indem sie die Schaltfläche **Mit LinkedIn bewerben** auswählen, werden sie dazu aufgefordert, sich bei LinkedIn zu authentifizieren, wenn sie nicht bereits angemeldet sind. Nachdem sie sich authentifiziert haben, ersetzt ihr LinkedIn-Profil alle vorhandenen Profildaten, die auf der Bewerbungsseite angezeigt werden. Kandidaten können die Informationen bei Bedarf bearbeiten und die Bewerbung dann senden. Wenn ein Kandidat von der Seite weg navigiert, ohne sich für die Stelle zu bewerben, werden dessen Profildaten in Attact nicht aktualisiert.
 

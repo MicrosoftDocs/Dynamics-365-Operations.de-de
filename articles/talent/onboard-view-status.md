@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2039c09372381ef2c078e1f4d4ed8a25c22de5c7
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814719"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461327"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Anzeigen des Status des Onboarding von Mitarbeitern und Ihrer Aufgaben
 
@@ -33,12 +33,12 @@ Microsoft Dynamics 365 Talent: Onboard lässt Sie den Status anzeigen, den Ihre 
 
 1. Wählen Sie im linken Menü **Anleitungen** aus. Sie sehen einen Überblick über den Fortschritt aller Onboarding Anleitungen, die Sie gesendet haben.
 
-    ![[Der Status der Onboarding Anleitungen] (. /media/onboard-guide-status.png)](./media/onboard-guide-status.png)
+    ![[Den Status von Onboarding-Anleitungen anzeigen](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
 
 2. Um zu blättern, wählen Sie die Anleitung, die Sie anzeigen möchten.
 3. Wählen Sie die Registerkarte **Aktivitäten** aus, um zu ermitteln, welche Aktivitäten der neuen Mitarbeiters beendet ist.
 
-    ![[Betrachtungsaktivitäten, die der neue Mitarbeiter abgeschlossen hat](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
+    ![[Aktivitäten, die der neue Mitarbeiter abgeschlossen hat, anzeigen](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
 
 ## <a name="view-onboarding-tasks-that-are-assigned-to-you"></a>Anzeigen der Onboarding-Aufgaben, die Ihnen zugewiesen sind
 

@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d0b14e0c662af74464768b66c1c86d03d2944014
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: da27e3ed0a0e50126590609d09575befe17a7aa2
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976015"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517121"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Mehrere B2C-Mandanten in einer Commerce-Umgebung konfigurieren
 
@@ -112,17 +112,17 @@ Ihr neuer Azure AD B2C-Mandanten sollte nun in der Liste unter **B2C-Anwendungen
 > Wenn Sie die dem Channel zugeordnete B2C-Anwendung ändern, entfernen Sie die aktuellen Referenzen, die für alle Benutzer, die sich bereits in der Umgebung angemeldet haben, eingerichtet wurden. In diesem Fall sind alle Referenzen, die mit der aktuell zugeordneten B2C-Anwendung verbunden sind, für die Benutzer nicht verfügbar. Ändern Sie daher eine Azure AD B2C-Konfiguration des Channels nur dann, wenn Sie den Channel zum ersten Mal einrichten und sich noch keine Benutzer anmelden konnten. Andernfalls müssen sich die Benutzer möglicherweise erneut anmelden, um einen Datensatz im neuen Azure AD B2C-Mandanten zu erstellen.
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Ihren Domänennamen konfigurieren](configure-your-domain-name.md)
+[Domänennamen konfigurieren](configure-your-domain-name.md)
 
-[Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
+[Neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md)
 
-[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+[E-Commerce-Website erstellen](create-ecommerce-site.md)
 
-[Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
+[Zuordnen einer Dynamics 365 Commerce-Website zu einem Onlinekanal](associate-site-online-store.md)
 
-[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+[Robots.txt-Dateien verwalten](manage-robots-txt-files.md)
 
-[URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+[URL-Umleitungen in Massen hochladen](upload-bulk-redirects.md)
 
 [Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
 

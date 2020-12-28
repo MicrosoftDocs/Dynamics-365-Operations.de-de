@@ -1,5 +1,5 @@
 ---
-title: Vorschau von Dynamics 365 Supply Chain Management 10.0.15 (Januar 2021)
+title: Was ist neu oder geändert in Dynamics 365 Supply Chain Management 10.0.15 (Januar 2021)
 description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Supply Chain Management 10.0.15 neu oder geändert wurden.
 author: kamaybac
 manager: tfehr
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0b8e69261563f61de022a626dd12d15d81535392
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.openlocfilehash: 02f343c5351168375eca38893b9d8eef4549dc5a
+ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012274"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4700956"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10015-january-2021"></a>Vorschau von Dynamics 365 Supply Chain Management 10.0.15 (Januar 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management 10.0.15 (Januar 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-In diesem Thema werden die Funktionen aufgeführt, die in der Microsoft Dynamics 365 Supply Chain Management Vorschauversion 10.0.15 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.644 und ist wie folgt verfügbar:
+Dieses Thema listet Funktionen auf, die in Microsoft Dynamics 365 Supply Chain Management-Version 10.0.15 entweder neu sind oder geändert wurden. Diese Version hat die Build-Nummer 10.0.644 und ist wie folgt verfügbar:
 
 - **Vorschau auf Release:** Oktober 2020
 - **Allgemeine Verfügbarkeit von Release (manuelles Update):** November 2020
@@ -39,19 +38,23 @@ In diesem Thema werden die Funktionen aufgeführt, die in der Microsoft Dynamics
 
 Die folgenden Funktionen sind in diesem Release enthalten. Einige der aufgelisteten Funktionen befinden sich noch in der Vorschau, während andere möglicherweise bereits allgemein verfügbar sind. Folgen Sie den Links zu [Release-Plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features), um die offiziellen Veröffentlichungstermine für jede Funktion anzuzeigen.
 
-- Verwaltung von Cloud- und Edge-Scale-Einheiten mit Arbeitsauslastungen für Fertigung und Lagerausführung<!-- <br> - For more information, see [Cloud and edge scale units for manufacturing and warehouse management workloads](../cloud-edge/cloud-edge-landing-page.md).-->
+- Verwaltung von Cloud- und Edge-Scale-Einheiten mit Arbeitsauslastungen für Fertigung und Lagerausführung<br> - Weitere Informationen finden Sie unter [Cloud- und Edge-Scale-Einheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung](../cloud-edge/cloud-edge-landing-page.md).
 
 - [Umlagerungsaufträge aus der Lagerort-App erstellen und verarbeiten](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Weitere Informationen finden Sie unter [Erstellen von Umlagerungsaufträgen aus der Lager-App](../warehousing/create-transfer-order-from-warehouse-app.md).
 
 - [Standard-Angebotsanforderung-Antwortfelder für Lieferantenangebote](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - Weitere Informationen finden Sie unter [Übersicht der Angebotsanforderungen (RFQs)](../procurement/request-quotations.md).
 
-- [Änderungsmanagement-Add-In für Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<!-- <br> - For more information, see [Engineering change management overview](../engineering-change-management/product-engineering-overview.md).-->
+- [Änderungsmanagement-Add-In für Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - Weitere Informationen finden Sie unter [Übersicht über die Verwaltung für technische Änderungen](../engineering-change-management/product-engineering-overview.md).
 
 - [Mixed Reality-Guides für die Fertigung](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - Weitere Informationen finden Sie unter [Bereitstellung von Mixed Reality-Guides für Arbeiter in der Produktion](../production-control/instruction-guides-in-production-overview.md).
 
 - [Neue Benutzererfahrung für die Ausführung in der Produktion](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Weitere Informationen finden Sie unter [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md).
 
 - [Lagerort-App-Ereignisse verarbeiten](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Weitere Informationen finden Sie unter [Verarbeitung von Warehouse-App-Ereignissen](../warehousing/warehouse-app-events.md).
+
+- [Gespeicherte Ansichten für die Seite „Freigegebene Produkte“](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - Weitere Informationen finden Sie unter [Gespeicherte Ansichten](../../fin-ops-core/fin-ops/get-started/saved-views.md).
+
+- USMCA-Zertifizierung des Ursprungsdokuments<br> - Weitere Informationen finden Sie unter [USMCA-Ursprungszertifizierung](../transportation/usmca-certification-of-origin.md).
 
 Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können.
 

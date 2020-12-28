@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: e412ccbc7c44d41e0a70ef8b5436901e01c671e6
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 61e9e6aa660bc0828645c6bf1f2655539804831a
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383687"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594525"
 ---
-# <a name="auto-firming-with-planning-optimization"></a>Automatische Umwandlung mit Planungsoptimierung
+# <a name="autofirming-with-planning-optimization"></a>Automatische Umwandlung mit Planungsoptimierung
 
 [!include [banner](../../includes/banner.md)]
 
@@ -35,9 +35,9 @@ Mit der automatischen Fixierung können Sie Planaufträge im Rahmen des Masterpl
 > [!NOTE]
 > Die automatische Bestätigung einer geplanten Bestellung kann nur erfolgen, wenn die Position einem Lieferanten zugeordnet ist.
 
-## <a name="turn-on-auto-firming"></a>Einschalten der automatischen Bestätigung
+## <a name="turn-on-autofirming"></a>Automatische Umwandlung
 
-Um die automatische Bestätigung einzuschalten, führen Sie diese Schritte aus.
+Um die automatische Bestätigung einzuschalten, gehen Sie wie folgt vor.
 
 1. Wählen Sie im Arbeitsbereich **Feature-Management** auf der Registerkarte **Neu** **Automatische Umwandlung zur Planungsoptimierung** in der Liste. Wenn die Funktion nicht auf der Registerkarte **Neu** erscheint, schauen Sie auf die Registerkarten **Nicht aktiviert** und **Alle**.
 1. Wählen Sie **Jetzt aktivieren**. Alternativ können Sie auch **Terminplanung** wählen und dann die Zeit auswählen, zu der die Funktion eingeschaltet werden soll.
@@ -48,22 +48,22 @@ Der Fixierungszeitrahmen wird aus dem Laufdatum der Masterplanung vorwärts bere
 
 - Um den voreingestellten Fixierungszeitrahmen für eine Deckungsgruppe zu definieren, gehen Sie zu **Masterplanung** \> **Einrichtung** \> **Deckung** \> **Deckungsgruppen** und wählen eine Deckungsgruppe aus. Geben Sie dann auf der Registerkarte **Anderes** Inforegister im Feld **Automatischer Fixierungszeitrahmen (Tage)** die Anzahl der Tage ein.
 - Um den Fixierungszeitrahmen zu überschreiben, der für die Deckungsgruppe eines bestimmten Artikels definiert ist, gehen Sie zu **Produktinformationsmanagement** \> **Freigegebene Produkte**, wählen Sie dann aus dem Aktionsbereich **Plan** und wählen Sie dann **Artikelabdeckung**. Wählen Sie dann auf der Registerkarte **Allgemein** **Überschreibungszeitraum** und geben Sie im Feld **Automatischer Fixierungszeitrahmen (Tage)** die Anzahl der Tage ein.
-- Um den Fixierungszeitrahmen zu überschreiben, der für die Deckungsgruppe und die Artikelabdeckung für einen bestimmten Produktionsplan definiert ist, gehen Sie zu **Masterplanung** \> **Setup** \> **Masterpläne** und wählen Sie einen Produktionsplan. Stellen Sie dann am **Zeitrahmen in Tagen** Inforegister **Fixieren** auf **Ja** und geben Sie die Anzahl der Tage ein.
+- Um den Fixierungszeitrahmen zu überschreiben, der für die Deckungsgruppe und die Artikelabdeckung für einen bestimmten Produktionsplan definiert ist, gehen Sie zu **Masterplanung** \> **Setup** \> **Masterpläne** und wählen Sie einen Produktionsplan. Legen Sie dann auf dem Inforegister **Zeitfenster in Tagen** **Bestätigen** auf **Ja** fest und geben Sie die Anzahl der Tage ein.
 
-Wenn die automatische Bestätigung für einen Masterplanungslauf mit Planungsoptimierung eingeschaltet ist, wird der automatische Bestätigungsprozess entsprechend dem Setup der automatischen Bestätigung durchgeführt. Wenn die automatische Bestätigung nicht eingeschaltet ist oder wenn die Planung von der Seite **Nettobedarf** aus gestartet wird, wird der automatische Bestätigungsprozess übersprungen.
+Wenn die Automatische Umwandlung für eine Produktprogrammplanung, die die Planungsoptimierung verwendet, eingeschaltet ist, wird der Automatische Umwandlung-Prozess gemäß dem Automatische-Umwandlung-Setup durchgeführt. Wenn Automatische Umwandlung nicht eingeschaltet ist oder wenn die Planung von der Seite **Netzanforderungen** aus gestartet wird, wird der Automatische Umwandlung-Vorgang übersprungen.
 
 ## <a name="planning-optimization-vs-the-built-in-supply-chain-management-planning-engine"></a>Planungsoptimierung im Vergleich zur integrierten Supply Chain Management Planungs-Engine
 
-Sowohl die Planungsoptimierung als auch die in Microsoft Dynamics 365 Supply Chain Management integrierte Planungs-Engine können zur automatischen Fixierung von Planaufträgen verwendet werden. Jedoch gibt es mehrere wichtige Unterschiede. Während die Planungsoptimierung beispielsweise anhand des Auftragsdatums (d.h. des Startdatums) ermittelt, welche Planaufträge zu fixieren sind, verwendet die integrierte Supply Chain Management Planungs-Engine das Bedarfsdatum (d.h. das Enddatum). Hier ist eine Zusammenfassung der Unterschiede.
+Sowohl die Planungsoptimierung als auch die in Microsoft Dynamics 365 Supply Chain Management eingebaute Planungs-Engine können zur automatischen Bestätigung von Planaufträgen verwendet werden. Jedoch gibt es mehrere wichtige Unterschiede. Während die Planungsoptimierung beispielsweise anhand des Auftragsdatums (d.h. des Startdatums) ermittelt, welche Planaufträge zu fixieren sind, verwendet die integrierte Supply Chain Management Planungs-Engine das Bedarfsdatum (d.h. das Enddatum). Hier ist eine Zusammenfassung der Unterschiede.
 
 **Planungsoptimierung**
 
-- Die automatische Bestätigung basiert auf dem Bestelldatum (Startdatum).
+- Die automatische Bestätigung basiert auf dem Auftragsdatum (Startdatum).
 - Da das Auftragsdatum (Startdatum) die Fixierung auslöst, müssen Sie die Durchlaufzeit nicht als Teil des Fixierungszeitfensters betrachten.
 - Wenn Sie alle Aufträge fixieren wollen, die in der aktuellen Woche beginnen müssen, muss der Fixierungszeitrahmen eine Woche betragen.
 
 **Integrierte Supply Chain Management Planungs-Engine**
 
-- Die automatische Bestätigung basiert auf dem Bedarfstermin (Enddatum).
+- Die automatische Bestätigung basiert auf dem Bedarfsdatum (Enddatum).
 - Um eine rechtzeitige Auftragsfeststellung zu gewährleisten, muss der Fixierungszeitrahmen länger als die Vorlaufzeit sein.
 - Wenn Sie alle Aufträge fixieren wollen, die in der aktuellen Woche beginnen müssen, muss der Fixierungszeitrahmen die Durchlaufzeit plus eine Woche sein.

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7348fb9d3457da23fc4e250a1fd3f6cac82bdb5e
-ms.sourcegitcommit: 8493593e1405cde8cde23a3d9eb90385136088e1
+ms.openlocfilehash: 583e29d9b0bae34ffc2f519bb775b9e099682fe0
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115998"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529553"
 ---
 # <a name="custom-fields"></a>Benutzerdefinierte Felder
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Sie können zu Seiten in Dynamics 365 Human Resources benutzerdefinierte Elemente hinzufügen. Weitere Informationen zum Erstellen benutzerdefinierter Felder finden Sie unter [Erstellen und arbeiten mit benutzerdefinierten Feldern](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 

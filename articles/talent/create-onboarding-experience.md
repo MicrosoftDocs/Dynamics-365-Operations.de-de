@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
 ms.openlocfilehash: 8c11186ff3f95a7f1e00f9e42d7b78f5a68957b0
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813936"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461244"
 ---
 # <a name="get-started-with-onboard"></a>Erste Schritte mit Onboard
 
@@ -47,5 +47,5 @@ Informationen zum Zuweisen der Onboard-App, finden Sie in den folgenden Themen:
 
 - [Testen oder kaufen Sie die Onbaord-App](https://dynamics.microsoft.com/talent/onboard/)
 - [Was ist neu oder geändert in Dynamics 365 Talent](./whats-new.md)
-- [Freigabepläne](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release-Pläne](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Sie erhalten Unterstützung für Microsoft Dynamics 365 Talent](./talent-support.md)

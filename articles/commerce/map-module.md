@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: d2cbc67a186a76647a4f7ddc7942b15d3e469ece
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: af6aedb6c0112822155c6d855909578a927d1c2c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817205"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665419"
 ---
 # <a name="map-module"></a>Kartenmodul
 
@@ -58,7 +58,7 @@ Das folgende Bild zeigt ein Beispiel eines Kartenmoduls, das auf einer Ladenstan
 
 ## <a name="add-allowed-mapping-urls-to-a-sites-content-security-policy-directives"></a>Zulässige Kartierungs-URLs zu den Inhaltssicherheitsrichtlinien einer Website hinzufügen
 
-Damit das Kartenmodul mit Bing Karten interagieren kann, müssen Sie sicherstellen, dass die folgenden Kartierungs-URLs gemäß der Inhaltssicherheitsrichtlinie Ihrer Website zulässig sind (also auf der „Whitelist“ stehen). Diese Einstellung erfolgt im Commerce Site Builder, indem zulässige URLs zu verschiedenen Inhaltssicherheitsrichtlinie der Website hinzugefügt werden (z. B. **img-src**). Weitere Informationen finden Sie unter [Inhaltssicherheitsrichtlinie](manage-csp.md). 
+Damit das Kartenmodul mit Bing Karten interagieren kann, müssen Sie sicherstellen, dass die folgenden Zuordnungs-URLs gemäß der Inhaltssicherheitsrichtlinie (CSP) Ihrer Website zulässig sind. Diese Einstellung erfolgt im Commerce Site Builder, indem zulässige URLs zu verschiedenen Inhaltssicherheitsrichtlinie der Website hinzugefügt werden (z. B. **img-src**). Weitere Informationen finden Sie unter [Inhaltssicherheitsrichtlinie](manage-csp.md). 
 
 - Fügen Sie der **connect-src**-Richtlinie **&#42;.bing.com** hinzu.
 - Fügen Sie der **img-src**-Richtlinie **&#42;.virtualearth.net** hinzu.

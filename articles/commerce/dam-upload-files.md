@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fc0490e3532dcbb9c1e91101009b2d4605315416
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 4acd3bec32cdfe627f6eb33dd5dc652f7cff74a8
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3097018"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594211"
 ---
 # <a name="upload-files-other-than-images-and-videos"></a>Hochladen von anderen Dateien als Bildern und Videos
 
@@ -96,3 +96,5 @@ Um eine Datei in den Commerce Site Builder hochzuladen, folgen Sie diesen Schrit
 [Bilder zuschneiden](dam-crop-images.md)
 
 [Bildfokuspunkte anpassen](dam-custom-focal-point.md)
+
+[Statische Dateien hochladen und bedienen](upload-serve-static-files.md)

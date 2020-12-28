@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer E-Commerce-Webseite
-description: In diesem Thema werden die Schritte und Informationen beschrieben, die zum Erstellen einer neuen E-Commerce-Site in Dynamics 365 Commerce Site Builder erforderlich sind.
+title: E-Commerce-Website erstellen
+description: In diesem Thema werden die Schritte und Informationen beschrieben, die zum Erstellen einer neuen E-Commerce-Website im Dynamics 365 Commerce-Website-Generator erforderlich sind.
 author: bicyclingfool
 manager: AnnBe
 ms.date: 07/02/2020
@@ -19,20 +19,20 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ea3517a4f2b84db8a87a97d2f644bb4436f8693f
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 7d552f29fd8f52b512a7c21b36b0a814cac50646
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533435"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517183"
 ---
-# <a name="create-an-e-commerce-site"></a>Erstellen einer E-Commerce-Webseite
+# <a name="create-an-e-commerce-site"></a>E-Commerce-Website erstellen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Schritte und Informationen beschrieben, die zum Erstellen einer neuen E-Commerce-Site in Dynamics 365 Commerce Site Builder erforderlich sind.
+In diesem Thema werden die Schritte und Informationen beschrieben, die zum Erstellen einer neuen E-Commerce-Website im Dynamics 365 Commerce-Website-Generator erforderlich sind.
 
-Wenn Sie die E-Commerce-Funktionen lizenzieren, wird Site Builder eine Starter-Site bereitgestellt, die Sie als Grundlage für Ihre eigene Site verwenden können. Wenn Sie jedoch von Grund auf neu beginnen oder eine zweite Site einrichten möchten, müssen Sie eine neue Site in der Site-Erstellungsumgebung einrichten. 
+Wenn Sie die Dynamics 365 Commerce-Funktionen lizenzieren, wird der Website-Generator mit einer Starter Site bereitgestellt, die Sie als Grundlage für Ihre eigene Website verwenden können. Wenn Sie jedoch von Grund auf neu beginnen oder eine zweite Site einrichten möchten, müssen Sie eine neue Site in der Site-Erstellungsumgebung einrichten. 
 
 ## <a name="set-up-your-site"></a>Site einrichten
 
@@ -46,7 +46,7 @@ Um Ihre Site einzurichten, gehen Sie folgendermaßen vor.
 |-------------------------------------|-------------|
 | Sitename                           | Geben Sie den angezeigten Namen ein, der für Ihre Site in der Siteerstellungsumgebung verwendet werden soll. Dieser Name ist nur in der Erstellungsumgebung sichtbar und wird nicht Debitoren angezeigt werden. |
 | Site-Administrator-Sicherheitsgruppe | Geben Sie die Microsoft Azure Active Directory (Azure AD) Sicherheitsgruppe ein, die Benutzer verwaltet, die die Siteadministratorrolle für diese Site haben. |
-| Standardkanal (Nummer der Organisationseinheit) | Wählen Sie den Onlineshop aus, aus, für den diese Site als Internet-Schaufenster dient. Wenn Sie möchten, dass Ihre E-Commerce-Webseite mehrere Onlineshops unterstützen soll, müssen Sie die Shops Ihren Webseiten zuordnen unter **Site-Einstellungen**, nachdem die Site eingerichtet wurde. |
+| Standardkanal (Nummer der Organisationseinheit) | Wählen Sie den Onlineshop aus, aus, für den diese Site als Internet-Schaufenster dient. Wenn Sie möchten, dass Ihre E-Commerce-Webseite mehrere Onlineshops unterstützen soll, müssen Sie die Shops Ihrer Website in **Website-Einstellungen** zuordnen, nachdem die Website eingerichtet wurde. |
 | Standardsprache                            | Geben Sie die Standardsprache für diesen Onlineshop und Markt an. Ein Onlineshop kann mehrere Sprachen unterstützen. Wenn Sie mehrere Sprachen für diesen Onlineshop oder einen anderen Onlineshop unterstützen möchten, können Sie diesen so konfigurieren unter **Siteeinstellungen**, nachdem die Site eingerichtet wurde.  |
 | Domäne                              | Wählen Sie den Domänennamen, der als Domäne für diesen Onlineshop dienen soll. Wenn Sie keine Domänen in LCS konfiguriert haben, können Sie dieses Feld leer lassen. Nachdem die Domäne in LCS konfiguriert ist, müssen Sie sie in Ihrem Onlineshop unter **Siteeinstellungen** hinzufügen.  |
 | Pfad                              | Wenn Ihr Site mehr als eine Sprache für einen angegebenen Domänennamen unterstützt, verwenden Sie das Pfadfeld, um eine eindeutige Standort URL für diese Domäne und Sprachenkombination zu erstellen. Sollte die gewünschte Sprache, die Sie im Feld **Standardsprache** angegeben haben, die einzige Sprache sein, die Sie für diese Domäne unterstützen oder die Standardsprache nach der Lokalisierung der Site in weitere Sprachen sein wird, wird empfohlen, dass Sie das Feld leer gelassen. |
@@ -56,15 +56,15 @@ Nachdem Ihre Site erstellt wurde, können Sie prüfen, dass sie Ihrem Onlineshop
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Domänennamen konfigurieren](configure-your-domain-name.md)
 
-[Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
+[Neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md)
 
-[Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
+[Zuordnen einer Dynamics 365 Commerce-Website zu einem Onlinekanal](associate-site-online-store.md)
 
 [Robots.txt-Dateien verwalten](manage-robots-txt-files.md)
 
-[URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+[URL-Umleitungen in Massen hochladen](upload-bulk-redirects.md)
 
 [Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
 
