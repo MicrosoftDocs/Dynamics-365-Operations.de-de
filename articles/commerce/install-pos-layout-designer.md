@@ -20,11 +20,11 @@ ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: f9882ae895de926e0da3579ab65a988f2b97f7be
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022717"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412554"
 ---
 # <a name="install-the-pos-layout-designer"></a>POS-Layoutdesigner installieren
 
@@ -58,7 +58,7 @@ Der grafische Entwurf der Schnittstelle für MPOS oder Cloud-POS wird durch das 
 
     **Lösung:** Fügen Sie in Internet Explorer die Commerce-URL zu den vertrauenswürdigen Sites hinzu. Klicken Sie auf **Einstellungen** &gt; **Optionen** &gt; **Sicherheit** &gt; **Vertrauenswürdige Standorte** &gt; **Standorte** &gt; **Hinzufügen**..
 
-**Bekanntes Problem:** Der Designer funktioniert nicht ordnungsgemäß in Google Chrome und Mozilla Firefox-Browsern. Wir sind daran, dieses Problem zu beheben.
+**Bekanntes Problem:** Der Designer funktioniert nicht ordnungsgemäß in Google Chrome- und Mozilla Firefox-Browsern. Wir sind daran, dieses Problem zu beheben.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

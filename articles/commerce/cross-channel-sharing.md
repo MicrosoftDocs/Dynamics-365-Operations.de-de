@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019517"
+ms.locfileid: "4412694"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Die kanalübergreifende Freigabe aktivieren und verwenden
 
@@ -59,7 +59,7 @@ Nachdem Sie die kanalübergreifende Freigabe aktiviert haben, werden kanalüberg
 
 ![Kanalinformationen, die nach der aktivierten kanalübergreifenden Freigabe sichtbar sind](./media/channels-cross-channel.png)
 
-Nachdem Sie die kanalübergreifende Freigabe aktiviert haben, enthält das Feld **Kanal** oben rechts im Commerce Site Builder eine Option **Kanalübergreifender Onlineshop** , mit der Sie kanalübergreifende Inhalte verwalten können, wie in der folgenden Abbildung dargestellt.
+Nachdem Sie die kanalübergreifende Freigabe aktiviert haben, enthält das Feld **Kanal** oben rechts im Commerce Site Builder eine Option **Kanalübergreifender Onlineshop**, mit der Sie kanalübergreifende Inhalte verwalten können, wie in der folgenden Abbildung dargestellt.
 
 ![Option „Kanalübergreifender Onlineshop“ im Feld „Kanäle“, nachdem die kanalübergreifende Freigabe aktiviert wurde](./media/cross-channel-dropdown.png)
 
@@ -72,27 +72,27 @@ Sie können kanalübergreifende Inhalte auf verschiedene Arten erstellen und ver
 Führen Sie die folgenden Schritte aus, um kanalübergreifende Fragmente im Commerce Site Builder zu erstellen.
 
 1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus, um ein neues Fragment zu erstellen.
-1. Wählen Sie im Dialogfeld **Neues Seitenfragment** das Modul **Werbebanner** aus, und geben Sie dann unter **Name des Seitenfragments** einen Namen ein (z. B. **Kanalübergreifendes Banner** ). Wählen Sie dann **OK** aus.
-1. Im Eigenschaftenbereich des **Werbebanner** -Moduls wählen Sie **Nachricht hinzufügen** und dann **Nachricht** aus.
-1. In dem **Nachricht** -Dialogfeld unter **Text** geben Sie **Kanalübergreifend** ein und wählen **OK** aus. 
-1. Wählen Sie **Speichern** , wählen Sie **Bearbeiten beenden** , um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen** , um es zu veröffentlichen.
+1. Wählen Sie im Dialogfeld **Neues Seitenfragment** das Modul **Werbebanner** aus, und geben Sie dann unter **Name des Seitenfragments** einen Namen ein (z. B. **Kanalübergreifendes Banner**). Wählen Sie dann **OK** aus.
+1. Im Eigenschaftenbereich des **Werbebanner**-Moduls wählen Sie **Nachricht hinzufügen** und dann **Nachricht** aus.
+1. In dem **Nachricht**-Dialogfeld unter **Text** geben Sie **Kanalübergreifend** ein und wählen **OK** aus. 
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 
 Dieses kanalübergreifende Fragment kann auf kanalübergreifenden oder kanalspezifischen Seiten verwendet werden, die auf einem beliebigen Site-Kanal erstellt werden.
 
 ### <a name="create-a-cross-channel-page-that-uses-cross-channel-content"></a>Erstellen einer kanalübergreifenden Seite, die kanalübergreifenden Inhalt verwendet
 
-Kanalübergreifende Seiten können auf jedem Kanal Ihrer Website verwendet werden. Daher können Sie eine Seite mit freigegebenen Inhalten einmal erstellen und alle nachfolgenden Aktualisierungen an einem einzigen Ort vornehmen. Zum Beispiel kann eine kanalübergreifende Seite **Geschäftsbedingungen** mit der URL `/toc` von allen Kanälen einer Site gemeinsam genutzt werden. Wenn die Basis-URLs für die Site-Kanäle `www.fabrikam.com/brand1` und `www.fabrikam.com/brand2` sind, ist die gleiche kanalübergreifende gemeinsam genutzte **Geschäftsbedingungen** -Seite unter beiden URLs des Site-Kanals `www.fabrikam.com/brand1/toc` bzw. `www.fabrikam.com/brand2/toc`, verfügbar. Wenn die **Geschäftsbedingungen** -Seite später aktualisiert werden muss, müssen Sie nur die einzelne, freigegebene Seite aktualisieren.
+Kanalübergreifende Seiten können auf jedem Kanal Ihrer Website verwendet werden. Daher können Sie eine Seite mit freigegebenen Inhalten einmal erstellen und alle nachfolgenden Aktualisierungen an einem einzigen Ort vornehmen. Zum Beispiel kann eine kanalübergreifende Seite **Geschäftsbedingungen** mit der URL `/toc` von allen Kanälen einer Site gemeinsam genutzt werden. Wenn die Basis-URLs für die Site-Kanäle `www.fabrikam.com/brand1` und `www.fabrikam.com/brand2` sind, ist die gleiche kanalübergreifende gemeinsam genutzte **Geschäftsbedingungen**-Seite unter beiden URLs des Site-Kanals `www.fabrikam.com/brand1/toc` bzw. `www.fabrikam.com/brand2/toc`, verfügbar. Wenn die **Geschäftsbedingungen**-Seite später aktualisiert werden muss, müssen Sie nur die einzelne, freigegebene Seite aktualisieren.
 
 Führen Sie die folgenden Schritte aus, um im Commerce Site Builder eine kanalübergreifende Seite zu erstellen, die kanalübergreifenden Inhalt verwendet.
 
-1. Wechseln Sie zu **Seiten** , und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
+1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
 1. In dem Dialogfeld **Wählen Sie eine Vorlage** wählen Sie eine Vorlage z. B. **Marketing** aus.
-1. Geben Sie unter **Seitenname** einen Namen für die Seite ein (z. B. **Kanalübergreifende Seite** ).
-1. Unter **Seiten-URL** geben Sie eine Seiten-URL ein (z. B. **Beispielseite** ), und wählen Sie dann **OK** aus.
-1. Im Slot **Hauptseite** der neuen Seite wählen Sie die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Fragment hinzufügen**.
+1. Geben Sie unter **Seitenname** einen Namen für die Seite ein (z. B. **Kanalübergreifende Seite**).
+1. Unter **Seiten-URL** geben Sie eine Seiten-URL ein (z. B. **Beispielseite**), und wählen Sie dann **OK** aus.
+1. Im Slot **Hauptseite** der neuen Seite wählen Sie die Ellipsen-Schaltfläche (**...**) und wählen Sie **Fragment hinzufügen**.
 1. Im Dialogfeld **Fragment hinzufügen** wählen Sie das zuvor erstellte kanalübergreifende Fragment mit einem Werbebanner aus und wählen dann **OK**.
 1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen. Sie sollten das Werbebanner mit der Aufschrift „Kanalübergreifend“ sehen.
-1. Wählen **Bearbeiten beenden** , um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen** , um sie zu veröffentlichen.
+1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
 
 ### <a name="create-a-channel-specific-page-that-uses-cross-channel-content"></a>Erstellen einer kanalspezifischen Seite, die kanalübergreifenden Inhalt verwendet
 
@@ -100,14 +100,14 @@ Durch die Verwendung kanalübergreifender Inhalte auf kanalspezifischen Seiten k
 
 Führen Sie die folgenden Schritte aus, um im Commerce Site Builder eine kanalspezifische Seite zu erstellen, die kanalübergreifenden Inhalt verwendet.
 
-1. Innerhalb eines bestimmten Kanals, wie z. B. **Fabrikam erweiterter Onlineshop** , gehen Sie zu **Seiten** und wählen dann **Neu** aus, um eine neue Seite zu erstellen.
+1. Innerhalb eines bestimmten Kanals, wie z. B. **Fabrikam erweiterter Onlineshop**, gehen Sie zu **Seiten** und wählen dann **Neu** aus, um eine neue Seite zu erstellen.
 1. In dem Dialogfeld **Wählen Sie eine Vorlage** wählen Sie eine Vorlage z. B. **Marketing** aus.
-1. Geben Sie unter **Seitenname** einen Namen für die Seite ein (z. B. **Kanalspezifische Seite** ).
-1. Unter **Seiten-URL** geben Sie eine Seiten-URL ein (z. B. **kanalspezifischeseite** ), und wählen Sie dann **OK** aus.
-1. Im Slot **Hauptseite** der neuen Seite wählen Sie die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Fragment hinzufügen**.
+1. Geben Sie unter **Seitenname** einen Namen für die Seite ein (z. B. **Kanalspezifische Seite**).
+1. Unter **Seiten-URL** geben Sie eine Seiten-URL ein (z. B. **kanalspezifischeseite**), und wählen Sie dann **OK** aus.
+1. Im Slot **Hauptseite** der neuen Seite wählen Sie die Ellipsen-Schaltfläche (**...**) und wählen Sie **Fragment hinzufügen**.
 1. In dem Dialogfeld **Fragment hinzufügen** unter **Kanal** wählen Sie **Kanalübergreifender Online-Shop** aus. Das zuvor erstellte kanalübergreifende Fragment sollte in der Liste angezeigt werden. Wählen Sie es und dann **OK** aus.
 1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen. Sie sollten das Werbebanner mit der Aufschrift „Kanalübergreifend“ sehen.
-1. Wählen **Bearbeiten beenden** , um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen** , um sie zu veröffentlichen.
+1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
 
 ### <a name="create-a-channel-specific-version-of-a-cross-channel-page"></a>Erstellen einer kanalspezifischen Version einer kanalübergreifenden Seite
 
@@ -119,12 +119,12 @@ Führen Sie die folgenden Schritte aus, um im Commerce Site Builder eine kanalsp
 1. Öffnen Sie die zuvor erstellte kanalübergreifende Seite.
 1. Wählen Sie im Feld **Kanal** oben rechts den Kanal aus, der einen bestimmten Inhalt haben soll. Der Seiteneditor zeigt eine Meldung an, in der Sie aufgefordert werden, eine neue Seitenvariante zu erstellen.
 1. Wählen Sie **Seitenvariante erstellen** aus.
-1. Im **Haupt** -Slot der Seitenvariante wählen Sie die Ellipse ( **...** ) und dann **Modul hinzufügen** aus.
+1. Im **Haupt**-Slot der Seitenvariante wählen Sie die Ellipse (**...**) und dann **Modul hinzufügen** aus.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Werbebanner** und dann **OK** aus.
-1. Im Eigenschaftenbereich des **Werbebanner** -Moduls wählen Sie **Nachricht hinzufügen** und dann **Nachricht** aus.
-1. In dem **Nachricht** -Dialogfeld unter **Text** geben Sie **Kanalspezifisch** ein und wählen **OK** aus.
+1. Im Eigenschaftenbereich des **Werbebanner**-Moduls wählen Sie **Nachricht hinzufügen** und dann **Nachricht** aus.
+1. In dem **Nachricht**-Dialogfeld unter **Text** geben Sie **Kanalspezifisch** ein und wählen **OK** aus.
 1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen. Sie sollten das Werbebanner mit der Aufschrift „Kanalspezifisch“ sehen.
-1. Wählen **Bearbeiten beenden** , um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen** , um sie zu veröffentlichen.
+1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
 
 Wenn Sie nun die Basis-URL des Kanals verwenden und zur URL der kanalübergreifenden Seite auf dieser Site wechseln, wird der kanalspezifische Inhalt anstelle des kanalübergreifenden Inhalts angezeigt.
 

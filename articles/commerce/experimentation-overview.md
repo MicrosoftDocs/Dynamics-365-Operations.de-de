@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097138"
+ms.locfileid: "4412704"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Experimentieren in Dynamics 365 Commerce
 Verwenden Sie Experimente in Dynamics 365 Commerce, um Hypothesen über die Effektivität Ihrer E-Commerce-Seiten zu validieren und Entscheidungen mit datengesteuertem Vertrauen zu treffen. Commerce unterstützt A/B-Tests auf Seiten, in Modulen und Fragmenten und ermöglicht es Ihnen, die Auswirkungen vorgeschlagener Änderungen an Ihrer Website zu messen.
@@ -34,10 +34,10 @@ Sie können Seiten- und Inhaltsbehandlungen erstellen, bearbeiten und verwalten,
 1. **Holen Sie sich die richtige Version von Commerce** – Aktualisieren Sie Ihre Modulbibliothek, das Online-Kanalerweiterungs-Softwareentwicklungskit (SDK) und Commerce Scale Unit auf Commerce Version 10.0.13 oder höher.
 1. **Richten Sie einen Experimentier-Connector ein** – Über einen Experimentier-Connector kann Commerce eine Verbindung zu Diensten von Drittanbietern herstellen, um die Liste der Experimente abzurufen und zu bestimmen, wann einem Benutzer ein Experiment angezeigt werden soll. Sie können einen Connector eines Drittanbieters unter [AppSource](https://appsource.microsoft.com) erwerben. Befolgen Sie die Einrichtungsanweisungen des Herausgebers. Alternativ können Sie den Beispieltest-Connector von Commerce verwenden, um den Experimentierworkflow zu testen, ohne einen externen Dienst konfigurieren zu müssen. Weitere Informationen finden Sie unter [Connectors konfigurieren und aktivieren](e-commerce-extensibility/connectors.md). 
 1. **Aktivieren Sie die Experimentierfunktionsflags in Commerce** – Sie können das Experimentieren auf Mandantenebene aktivieren, indem Sie zu **Mandanteneinstellungen > Funktionen** gehen oder auf Site-Ebene bei **Site-Einstellungen > Funktionen**.
-    - Aktivieren Sie das **Experimentieren** -Flag, um Experimentvarianten von Modulen innerhalb einer Seite zu erstellen, ohne andere Inhalte zu beeinflussen oder zu kopieren, die nicht Teil des Experiments sind. Dadurch wird sichergestellt, dass laufende Inhaltsaktualisierungen außerhalb des Experiments während des Experimentlebenszyklus synchron bleiben. Durch Deaktivieren dieses Flags wird verhindert, dass alle Experimente den Benutzern angezeigt werden, und alle Bearbeitungsfunktionen im Site Builder werden entfernt.
+    - Aktivieren Sie das **Experimentieren**-Flag, um Experimentvarianten von Modulen innerhalb einer Seite zu erstellen, ohne andere Inhalte zu beeinflussen oder zu kopieren, die nicht Teil des Experiments sind. Dadurch wird sichergestellt, dass laufende Inhaltsaktualisierungen außerhalb des Experiments während des Experimentlebenszyklus synchron bleiben. Durch Deaktivieren dieses Flags wird verhindert, dass alle Experimente den Benutzern angezeigt werden, und alle Bearbeitungsfunktionen im Site Builder werden entfernt.
     - Aktivieren Sie das Flag zum **Experimentieren an Seiten oder Fragmenten** zum Ausführen von Experimenten an einer Seite oder einem Fragment. Dadurch wird eine vollständige Instanzkopie der gesamten Seite oder des gesamten Fragments für alle Module innerhalb der Seite oder des Fragments erstellt. Verwenden Sie diesen Modus, wenn Sie umfassende Inhaltsänderungen testen möchten oder wenn das Synchronisieren laufender Inhaltsänderungen über Instanzen hinweg kein Problem darstellt. Das Deaktivieren dieses Flags verhindert das Erstellen und Bearbeiten neuer Experimente auf Seiten und Fragmenten.
     > [!NOTE]
-    > Das **Experimentieren** -Flag muss auch für die Funktion zum **Experimentieren an Seiten oder Fragmenten** aktiviert sein, um zu funktionieren.
+    > Das **Experimentieren**-Flag muss auch für die Funktion zum **Experimentieren an Seiten oder Fragmenten** aktiviert sein, um zu funktionieren.
     
 ## <a name="experimentation-lifecycle"></a>Experimentierlebenszyklus
 Das Einrichten eines Experiments, das Erstellen von Variationen und das Ausführen eines Experiments ist ein iterativer Prozess. Das folgende Diagramm zeigt den Experimentierlebenszyklus in Commerce und dem Drittanbieterdienst. 

@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107183"
+ms.locfileid: "4412717"
 ---
 # <a name="set-up-a-call-center-channel"></a>Einen Callcenterkanal einrichten
 
@@ -94,7 +94,7 @@ Um eine dem Call-Center-Kanal zuzuordnende Zustellungsart zu ändern oder hinzuz
 
 1. Wählen Sie im Call-Center-Zustellungsmodi-Formular **Zustellungsmodi verwalten**.
 1. Wählen Sie im Aktionsbereich **Neu** aus, um eine neue Lieferart zu erstellen oder wählen Sie einen vorhandenen Modus aus.
-1. Klicken Sie in der Sektion **Einzelhandelskanäle** auf **Zeile hinzufügen** , um den Call-Center-Kanal hinzuzufügen. Durch das Hinzufügen von Kanälen mithilfe von Organisationsknoten, anstatt jeden Kanal einzeln hinzuzufügen, kann das Hinzufügen von Kanälen rationalisiert werden.
+1. Klicken Sie in der Sektion **Einzelhandelskanäle** auf **Zeile hinzufügen**, um den Call-Center-Kanal hinzuzufügen. Durch das Hinzufügen von Kanälen mithilfe von Organisationsknoten, anstatt jeden Kanal einzeln hinzuzufügen, kann das Hinzufügen von Kanälen rationalisiert werden.
 1. Vergewissern Sie sich, dass der Zustellungsmodus mit Daten über **Produkte** und **Adressen** konfiguriert wurde. Wenn keine Produkte oder Lieferadressen für die Lieferart gültig sind, führt die Auswahl der Lieferart bei der Auftragserfassung zu Fehlern.
 1. Nachdem Änderungen an den Call-Center-Lieferartenkonfigurationen vorgenommen wurden, muss der Job **Lieferarten bearbeiten** ausgeführt werden, um die Änderungsmatrix aufzulösen. Diesen Job finden Sie, indem Sie zu **Retail and Commerce \> Retail and Commerce IT \> Prozesslieferungsarten** navigieren.
 
@@ -108,7 +108,7 @@ Um einen Kundenauftrag anzulegen, der mit dem Call-Center-Kanal vpm Commerce Hea
 
 1. Wählen Sie im Aktionsbereich die Registerkarte **Kanal** und dann **Benutzer des Kanals**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
-1. Wählen Sie aus der Dropdown-Auswahlliste eine vorhandene **Benutzer-ID** , um diesen Benutzer mit dem Callcenter-Kanal zu verknüpfen.
+1. Wählen Sie aus der Dropdown-Auswahlliste eine vorhandene **Benutzer-ID**, um diesen Benutzer mit dem Callcenter-Kanal zu verknüpfen.
 
 Nachdem die Einrichtung des Kanalbenutzers abgeschlossen ist und der Benutzer einen neuen Kundenauftrag in der Handelszentrale erstellt hat, wird der Kundenauftrag mit dem zugehörigen Callcenter-Kanal verknüpft. Alle Konfigurationen für diesen Kanal werden systematisch auf den Kundenauftrag angewendet. Ein Benutzer kann bestätigen, mit welchem Callcenter-Kanal der Kundenauftrag verknüpft ist, indem er die Referenz des Kanalnamens im Auftragskopf anzeigt.
 
@@ -119,7 +119,7 @@ Preisgruppen sind optional, können aber, wenn sie verwendet werden, steuern, we
 
 Um eine Preisgruppe einzurichten, gehen Sie wie folgt vor.
 
-1. Klicken Sie im Aktionsbereich auf die Registerkarte **Kanal** , und wählen Sie dann **Preisgruppen**.
+1. Klicken Sie im Aktionsbereich auf die Registerkarte **Kanal**, und wählen Sie dann **Preisgruppen**.
 1. Klicken Sie im Aktivitätsbereich auf **Neu**.
 1. Wählen Sie aus der Dropdown-Auswahlliste eine **Einzelhandelspreisgruppe**.
 

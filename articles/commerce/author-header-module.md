@@ -18,11 +18,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055449"
+ms.locfileid: "4412700"
 ---
 # <a name="header-module"></a>Kopfzeilenmodul
 
@@ -42,7 +42,7 @@ Das folgende Bild zeigt ein Beispiel eines Kopfzeilenmoduls, das auf einer Start
 
 ## <a name="properties-of-a-header-module"></a>Eigenschaften eines Kopfmoduls
 
-Ein Kopfmodul unterstützt die Eigenschaften **Logo-Bild** , **Logo-Link** und **Meine Kontolinks**. 
+Ein Kopfmodul unterstützt die Eigenschaften **Logo-Bild**, **Logo-Link** und **Meine Kontolinks**. 
 
 Die Eigenschaften **Logo-Bild** und **Logo-Link** werden verwendet, um ein Logo auf der Seite zu definieren. Weitere Informationen finden Sie in [Hinzufügen eines Logos](add-logo.md). 
 
@@ -73,32 +73,32 @@ Um ein neues Kopfzeilenfragment zu erstellen, befolgen Sie diese Schritte.
 
 1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus, um ein neues Fragment zu erstellen.
 1. Wählen Sie im Dialogfeld **Neues Fragment** das Modul **Container** aus, geben Sie einen Namen für das Fragment ein und wählen Sie dann **OK** aus.
-1. Wählen Sie den **Standardcontainer** -Slot aus und wählen Sie im Eigenschaftenfenster rechts die Eigenschaft **Breite** auf **Bildschirm ausfüllen**.
-1. Wählen Sie im Slot **Standard-Container** die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Modul hinzufügen**.
-1. Im Dialogfeld **Modul hinzufügen** wählen Sie die Module **Cookie-Zustimmung** , **Kopfzeile** und **Werbebanner** und dann **OK** aus.
-1. Im Eigenschaftenbereich des **Werbebanner** -Moduls wählen Sie **Nachricht hinzufügen** und dann **Nachricht** aus.
+1. Wählen Sie den **Standardcontainer**-Slot aus und wählen Sie im Eigenschaftenfenster rechts die Eigenschaft **Breite** auf **Bildschirm ausfüllen**.
+1. Wählen Sie im Slot **Standard-Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Im Dialogfeld **Modul hinzufügen** wählen Sie die Module **Cookie-Zustimmung**, **Kopfzeile** und **Werbebanner** und dann **OK** aus.
+1. Im Eigenschaftenbereich des **Werbebanner**-Moduls wählen Sie **Nachricht hinzufügen** und dann **Nachricht** aus.
 1. Fügen Sie im Dialogfeld **Nachricht** dem Werbeinhalt Text und Links hinzu und wählen anschließend **OK** aus.
-1. Im Eigenschaftenbereich des **Cookie-Zustimmung** -Moduls fügen Sie der Datenschutzseite der Website Text und einen Link hinzu und konfigurieren diese.
-1. Im Slot **Navigationsmenü** wählen Sie das Kopfzeilenmodul, wählen die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
+1. Im Eigenschaftenbereich des **Cookie-Zustimmung**-Moduls fügen Sie der Datenschutzseite der Website Text und einen Link hinzu und konfigurieren diese.
+1. Im Slot **Navigationsmenü** wählen Sie das Kopfzeilenmodul, wählen die Ellipsen (**...**) und wählen **Modul hinzufügen**.
 1. Im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Navigationsmenü** und wählen Sie dann **OK**.
 1. Im Eigenschaftenbereich für das Navigationsmenümodul wählen Sie unter **Quelle für das Navigationsmenü** **Retail Server** aus.
 1. Im Eigenschaftenbereich für das Navigationsmenümodul wählen Sie unter **Statische Menüpunkte** **Menüpunkt hinzufügen** und dann **Menüpunkt** aus. 
-1. In dem **Menüpunkt** -Dialogfeld geben Sie unter **Menüelementtext** „Kontakt“ ein.
-1. In dem **Menüpunkt** -Dialogfeld wählen Sie unter **Ziel des Menüelement-Links** **Link hinzufügen** aus.
+1. In dem **Menüpunkt**-Dialogfeld geben Sie unter **Menüelementtext** „Kontakt“ ein.
+1. In dem **Menüpunkt**-Dialogfeld wählen Sie unter **Ziel des Menüelement-Links** **Link hinzufügen** aus.
 1. Im Dialogfeld **Link hinzufügen** wählen Sie die URL für die „Kontakt“-Seite der Webite und dann **OK** aus.  
 1. Wählen Sie im Dialogfeld **Menüelement** die Option **OK** aus.
-1. Im Slot **Suchen** wählen Sie das Kopfzeilenmodul, wählen die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
+1. Im Slot **Suchen** wählen Sie das Kopfzeilenmodul, wählen die Ellipsen (**...**) und wählen **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Suchen** und dann **OK** aus.
 1. Konfigurieren Sie im Eigenschaftenbereich für das Suchmodul die Eigenschaften des Navigationsmenümoduls nach Bedarf.
-1. Im Slot **Einkaufswagensymbol** wählen Sie das Kopfzeilenmodul, wählen die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Einkaufswagen** -Modul und dann **OK** aus.
+1. Im Slot **Einkaufswagensymbol** wählen Sie das Kopfzeilenmodul, wählen die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Einkaufswagen**-Modul und dann **OK** aus.
 1. Konfigurieren Sie im Eigenschaftenbereich für das Warenkorbsymbol-Modult die Eigenschaften nach Bedarf. Wenn das Warenkorbsymbol eine Warenkorbübersicht (auch als Minikorb bezeichnet) anzeigen soll, wenn Benutzer den Mauszeiger darüber halten, wählen Sie **Mini-Wagen anzeigen**.
-1. Wählen Sie **Speichern** , wählen Sie **Bearbeiten beenden** , um das Fragment einzuchecken, und wählen Sie dann **Veröffentlichen** , um es zu veröffentlichen.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um das Fragment einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 
 Um Sicherzustellen, dass eine Kopfzeile auf jeder Seite angezeigt wird, führen Sie die folgenden Schritte für jede Seitenvorlage aus, die für die Site erstellt wird.
 
 1. Im Slot **Kopfzeile** wählen Sie das Modul **Standardseite** und fügen das Fußzeilenfragment hinzu, das Sie erstellt haben.
-1. Wählen Sie **Speichern** , wählen Sie **Bearbeiten beenden** , um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen** , um es zu veröffentlichen.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

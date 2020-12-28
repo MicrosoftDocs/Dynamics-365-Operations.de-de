@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: a9291dddf7d4dc080b6eb1ec60702de32a761f45
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113827"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412527"
 ---
 # <a name="set-up-a-retail-channel"></a>Einen Retail Channel einrichten
 
@@ -64,9 +64,9 @@ Das folgende Bild zeigt ein Beispiel für einen Retail Channel.
 
 ## <a name="other-settings"></a>Andere Einstellungen
 
-Es gibt zahlreiche andere optionale Einstellungen, die in den Abschnitten **Auszug/Abschluss**und **Sonstiges** basierend auf den Bedürfnissen des Einzelhandelsgeschäfts eingestellt werden können.
+Es gibt zahlreiche andere optionale Einstellungen, die in den Abschnitten **Auszug/Abschluss** und **Sonstiges** basierend auf den Bedürfnissen des Einzelhandelsgeschäfts eingestellt werden können.
 
-Darüber hinaus siehe [Bildschirmlayouts für den Point of Sale (POS) ](pos-screen-layouts.md)für Informationen zum Einrichten des Standard-Bildschirmlayouts im Abschnitt **Bildschirmlayout** und [konfigurieren und installieren Sie die Retail Hardware station](retail-hardware-station-configuration-installation.md) für Informationen zum Einrichten über den Abschnitt **Hardwarestationen**.
+Darüber hinaus siehe [Bildschirmlayouts für den Point of Sale (POS)](pos-screen-layouts.md)für Informationen zum Einrichten des Standard-Bildschirmlayouts im Abschnitt **Bildschirmlayout** und [konfigurieren und installieren Sie die Retail Hardware station](retail-hardware-station-configuration-installation.md) für Informationen zum Einrichten über den Abschnitt **Hardwarestationen**.
 
 Das folgende Bild zeigt ein Beispiel für einen Retail Channel-Einrichtungskonfiguration.
 
@@ -146,7 +146,7 @@ Gehen Sie zum Einrichten von Abschnitten folgendermaßen vor:
 1. Geben Sie unter **Abschnittsnummer** eine Abschnittsnummer ein.
 1. Geben Sie unter **Beschreibung** eine Beschreibung ein.
 1. Geben Sie unter **Abschnittsgröße** eine Abschnittsgröße ein.
-1. Konfigurieren Sie zusätzliche Einstellungen für **Allgemeines**und **Verkaufsstatistik**.
+1. Konfigurieren Sie zusätzliche Einstellungen für **Allgemeines** und **Verkaufsstatistik**.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Eine Erfüllungsgruppenzuweisung einrichten

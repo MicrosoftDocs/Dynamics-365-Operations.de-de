@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 29d4b686cbb66715196fca06e4642fbb8a337ace
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113850"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412526"
 ---
 # <a name="set-up-organization-hierarchies"></a>Organisationshierarchien einrichten
 
@@ -69,7 +69,7 @@ Gehen Sie folgendermaßen vor, um Organisationen zu einer Hierarchie hinzuzufüg
 1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Wählen Sie Ihre Hierarchie aus.
 1. Wählen Sie im Aktionsbereich **Anzeigen** aus.
 1. Fügen Sie Organisationen nach Bedarf hinzu.
-1. Um eine Organisation hinzuzufügen, wählen Sie **Bearbeiten**und dann **Einfügen** aus. Wenn Sie mit den Änderungen fertig sind, können Sie einen Entwurf speichern und die Änderungen veröffentlichen.
+1. Um eine Organisation hinzuzufügen, wählen Sie **Bearbeiten** und dann **Einfügen** aus. Wenn Sie mit den Änderungen fertig sind, können Sie einen Entwurf speichern und die Änderungen veröffentlichen.
 
 Die folgende Abbildung zeigt eine juristische Person, die im Hierarchie-Stammverzeichnis hinzugefügt wurde. Für die Kanäle „Mall“, „Outlet“, „Online“ und „Callcenter“ wurden vier Kostenstellen hinzugefügt. Anschließend können jeweils verschiedene Einzelhandels-, Callcenter- und Online-Kanäle hinzugefügt werden.
 

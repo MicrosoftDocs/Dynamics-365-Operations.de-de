@@ -18,11 +18,11 @@ ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019563"
+ms.locfileid: "4412693"
 ---
 # <a name="work-with-fragments"></a>Arbeiten mit Fragmenten 
 
@@ -62,7 +62,7 @@ Gehen Sie folgendermaßen vor, um ein zuvor konfiguriertes Modul in ein wiederve
 
 1. Öffnen Sie eine Seite oder Vorlage, die das Modul enthält, das Sie in ein Fragment konvertieren möchten.
 1. Wählen Sie im Gliederungsbereich links oder direkt in Visual Page Builder das zuvor konfigurierte Modul aus.
-1. Wählen Sie die Auslassungspunkte ( **...** ) neben dem Namen des Moduls im Gliederungsbereich oder in der Symbolleiste des ausgewählten Moduls im Visual Page Builder aus. 
+1. Wählen Sie die Auslassungspunkte (**...**) neben dem Namen des Moduls im Gliederungsbereich oder in der Symbolleiste des ausgewählten Moduls im Visual Page Builder aus. 
 1. Wählen Sie **Als Fragment teilen**. 
 1. Geben Sie im Dialogfeld **Als Fragment speichern** einen Namen für das Fragment ein.
 1. Wählen Sie **OK** aus, um die Modulkonfiguration als Fragment zu speichern, das anderen Seiten hinzugefügt werden kann.
@@ -91,7 +91,7 @@ Die folgenden Prozeduren beschreiben das Hinzufügen, Entfernen und Bearbeiten v
 Führen Sie die folgenden Schritte aus, um ein Fragmente im Commerce Site Builder zu erstellen.
 
 1. Wählen Sie im Gliederungsbereich links oder direkt im Visual Page Builder einen Container oder Slot aus, zu dem untergeordnete Module hinzugefügt werden können.
-1. Wählen Sie die Auslassungspunkte ( **...** ) neben dem Namen des Containers oder Slots aus.  Wenn Sie alternativ Visual Page Builder verwenden, wählen Sie das Pluszeichen ( **+** ) aus.  
+1. Wählen Sie die Auslassungspunkte (**...**) neben dem Namen des Containers oder Slots aus.  Wenn Sie alternativ Visual Page Builder verwenden, wählen Sie das Pluszeichen (**+**) aus.  
 1. Wählen Sie **Fragment hinzufügen**.
     <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
@@ -109,7 +109,7 @@ Führen Sie die folgenden Schritte aus, um ein Fragmente im Commerce Site Builde
 
 Führen Sie die folgenden Schritte aus, um ein Fragment aus einem Slot oder Container auf einer Seite im Commerce Site Builder zu entfernen.
 
-1. Wählen Sie links im Gliederungsbereich die Auslassungspunkte ( **...** ) neben dem Namen des zu entfernenden Fragments und anschließend das Papierkorbsymbol aus.  Alternativ können Sie das Fragment in Visual Page Builder und das Papierkorbsymbol in der Symbolleiste des Fragments auswählen.
+1. Wählen Sie links im Gliederungsbereich die Auslassungspunkte (**...**) neben dem Namen des zu entfernenden Fragments und anschließend das Papierkorbsymbol aus.  Alternativ können Sie das Fragment in Visual Page Builder und das Papierkorbsymbol in der Symbolleiste des Fragments auswählen.
 1. Wenn Sie aufgefordert werden, das Entfernen des Fragments zu bestätigen, wählen Sie **OK** aus.
 
 > [!NOTE]

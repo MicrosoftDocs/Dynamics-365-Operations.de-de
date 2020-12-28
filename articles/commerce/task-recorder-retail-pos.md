@@ -20,11 +20,11 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 0ab8456d81fbe2dca495b65b932395572242a25c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022661"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412626"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Aufgabenaufzeichnung und Hilfe für Retail Modern POS (MPOS) und Cloud POS
 
@@ -63,7 +63,7 @@ Gehen Sie folgendermaßen vor, um eine neue Erfassung mithilfe der Aufgabenaufze
 3. Geben Sie einen Namen und eine Beschreibung für die Aufzeichnung ein, und klicken Sie dann auf **Starten**. Die Aufzeichnungssitzung beginnt, sobald Sie auf **Starten** klicken.
 
     > [!NOTE]
-    > Hinweis: Wenn Sie auf die Schaltfläche **Schließen**n (**X**) in der oberen rechten Ecke klicken, während sich die Aufzeichnung in Bearbeitung befindet, wird der Bereich **Aufgabenaufzeichnung** geschlossen, aber die Aufzeichnungssitzung ist noch nicht beendet. Um den Aufgabenaufzeichnungsbereich erneut zu öffnen, klicken Sie auf die Schaltfläche **Hilfe** (Fragezeichen) am oberen Rand des Bildschirms.
+    > Hinweis: Wenn Sie auf die Schaltfläche **Schließen** n (**X**) in der oberen rechten Ecke klicken, während sich die Aufzeichnung in Bearbeitung befindet, wird der Bereich **Aufgabenaufzeichnung** geschlossen, aber die Aufzeichnungssitzung ist noch nicht beendet. Um den Aufgabenaufzeichnungsbereich erneut zu öffnen, klicken Sie auf die Schaltfläche **Hilfe** (Fragezeichen) am oberen Rand des Bildschirms.
     >
     > [![Fragezeichen](./media/help.jpg)](./media/help.jpg)
 

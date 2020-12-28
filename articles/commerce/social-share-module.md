@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022075"
+ms.locfileid: "4412695"
 ---
 # <a name="social-share-module"></a>Social-Share-Modul
 
@@ -53,7 +53,7 @@ Die folgende Abbildung zeigt ein Beispiel für ein Social-Share-Modul, das auf e
 ## <a name="social-share-item-module-properties"></a>Social-Share-Artikelmoduleigenschaften
 | Eigenschaftenname             | Wert                 | Beschreibung |
 |---------------------------|-----------------------|-------------|
-| Soziale Medien              | **Facebook** , **Twitter** , **Pinterest** , **LinkedIn** , **E-Mail** | Ein Dropdown-Menü mit einer Liste von Social-Media-Plattformen. |
+| Soziale Medien              | **Facebook**, **Twitter**, **Pinterest**, **LinkedIn**, **E-Mail** | Ein Dropdown-Menü mit einer Liste von Social-Media-Plattformen. |
 | Symbol |Bild    | Dies ist das Bild, das für die jeweiligen sozialen Medien angezeigt wird. Als eine bewährte Methode, finden Sie das empfohlene Bild für jede Plattform im SDK der Social-Media-Plattform. |
 
 ## <a name="add-a-social-share-module-to-a-buy-box-module"></a>Hinzufügen eines Social-Share-Moduls zu einem Kauffeldmodul
@@ -61,19 +61,19 @@ Die folgende Abbildung zeigt ein Beispiel für ein Social-Share-Modul, das auf e
 Um ein Social-Share-Modul einem Kauffeldmodul hinzuzufügen, befolgen Sie diese Schritte.
 
 1. Wählen Sie auf der Fabrikam-Website **Seiten** und dann die Seite **DefaultPDP** aus, um die Produktdetailseite zu öffnen. 
-1. Wählen Sie im Slot **Kauffeld (erforderlich)** die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Slot **Kauffeld (erforderlich)** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Social-Share** und dann **OK** aus.
-1. Wählen Sie im Slot **Social-Share** die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Slot **Social-Share** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **SocialShare** und dann **OK** aus.
 1. Wählen Sie im Eigenschaftenbereich des Moduls **SocialShare** unter **Ausrichtung** **Horizontal**. Fügen Sie nach Bedarf eine Beschriftung hinzu.
-1. Wählen Sie im Slot **SocialShare** die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Slot **SocialShare** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **SocialShareItem** und dann **OK** aus.
 1. Wählen Sie im Eigenschaftenbereich des Moduls **SocialShareItem** unter **Soziale Medien** **Facebook**.
 1. Wählen Sie im Eigenschaftenbereich des Moduls **SocialShareItem** unter **Symbol** **+ Ein Bild hinzufügen**.
 1. Wählen Sie im Dialogfeld **Medienauswahl** das Facebook-Logobild und dann **OK** aus. Wenn kein Facebook-Logobild vorhanden ist, wählen Sie **Neues Medienelement hochladen** aus, um eins hochladen.
-1. Fügen Sie nach Bedarf zusätzliche **SocialShareItem** -Module hinzu und konfigurieren Sie diese.
+1. Fügen Sie nach Bedarf zusätzliche **SocialShareItem**-Module hinzu und konfigurieren Sie diese.
 1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen. Auf der Seite wird das Social-Share-Modul angezeigt.
-1. Wählen **Bearbeiten beenden** , um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen** , um sie zu veröffentlichen.
+1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

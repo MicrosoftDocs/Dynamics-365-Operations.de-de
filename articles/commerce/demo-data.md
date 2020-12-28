@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: d3701046487e1c2004cea57aa3fe244133634854
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
+ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014885"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4412721"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Bildschirmlayouts für Demodaten in Modern POS (MPOS) und Cloud POS
 
@@ -64,6 +64,7 @@ Bildschirmlayout-IDs können maximal 10 Zeichen haben. Die Kennung ist eine Zeic
 |----------------|--------------------------------------------------------------------------------------------|
 | 3              | Die Basisversion, die mehrere Bildschirmgrößen für verschiedene Geräte und Seitenverhältnisse unterstützt |
 | 3.1            | Die Basisversion, die zusätzlichen Support für den Bereich **Empfohlene Produkte** hat        |
+| 4              | Die erweiterte Version für das erweiterte für Fabrikam aktualisierte Layout                                  |
 
 ### <a name="persona"></a>Person
 
@@ -75,9 +76,9 @@ Bildschirmlayout-IDs können maximal 10 Zeichen haben. Die Kennung ist eine Zeic
 
 ### <a name="example-layout"></a>Beispielslayout
 
-Das folgende Beispiel einer Bildschirmlayout-Kennung und Verlustrechnung für die Layoutversion, 3 und die Shopleiterperson:
+Das folgende Beispiel einer Bildschirmlayout-Kennung und Verlustrechnung für die Layoutversion, 4 und die Shopleiterperson:
 
-F3MGR
+F4MGR
 
 In der folgenden Abbildung wird ein Beispiel des Begrüßungsbildschirms für einen Fabrikam-Shopleiter angezeigt.
 
@@ -102,7 +103,8 @@ In der folgenden Tabelle werden die Layoutgrößen angezeigt, die aus für typis
 | Voll        | 1024 × 768 | 4:3          | Tablets                 |
 | Voll\*      | 1280 × 720 | 16:9         | Tablets                 |
 | Voll        | 1366 × 768 | 16:9         | Tablets, größere Bildschirme |
-| Voll        | 1440 × 960 | 3:2          | Tablets, größere Bildschirme |
+| Vollständig        | 1440 × 960 | 3:2          | Tablets, größere Bildschirme |
+| Vollständig\*      | 1536 × 864 | 16:9         | Tablets, größere Bildschirme |
 
 \* Diese zusätzliche Layoutgrößen sind nur in Adventure Works- und Fabrikam-Layouts verfügbar.
 
@@ -120,7 +122,7 @@ Jedes fiktive Unternehmen zielt auf eine andere Retail-Zielgruppe und enthält P
 | Unternehmen         | Ziel | Segment        | Akzent | Thema |
 |-----------------|----------|----------------|--------|-------|
 | Adventure Works | Seattle  | Sport-Waren | Blau   | Dunkel  |
-| Fabrikam        | Houston  | Mode        | Green  | Hell |
+| Fabrikam        | San Francisco  | Mode        | Green  | Hell |
 | Contoso         | Boston   | Elektrogeräte    | Red    | Dunkel  |
 
 > [!NOTE]
@@ -153,7 +155,7 @@ Benutzer wurden für die verschiedenen Bildschirmlayouts bereitgestellt. Mit der
 | Adventure Works | A3MGR            | Shopleiter | 000154, 000137, 000073 |
 | Adventure Works | A3CSH            | Kassierer       | 000150, 000175, 000165 |
 | Adventure Works | A3STK            | Lagerangestellter   | 000155, 000181, 000152 |
-| Fabrikam        | F3MGR            | Shopleiter | 000160, 000168, 000163 |
+| Fabrikam        | F4MGR            | Shopleiter | 000160, 000713         |
 | Fabrikam        | F3CSH            | Kassierer       | 000161, 000113, 000114 |
 | Fabrikam        | F3STK            | Lagerangestellter   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Shopleiter | 000100, 000111         |

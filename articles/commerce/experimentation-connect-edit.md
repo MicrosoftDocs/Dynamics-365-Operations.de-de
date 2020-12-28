@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4096966"
+ms.locfileid: "4412705"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Ein Experiment verbinden und Variationen bearbeiten
 
@@ -41,8 +41,8 @@ Bevor Sie Ihr Experiment in Commerce verbinden, müssen Sie einige Entscheidunge
 
 ### <a name="determine-the-scope-of-your-experiment"></a>Den Umfang Ihres Experiments bestimmen
 Wenn Sie ein Experiment verbinden, werden Sie aufgefordert, den Umfang des Experiments zu definieren. Experimente sind definiert als **teilweiser** Umfang oder **ganzer** Umfang.
-- Wählen Sie **teilweise** , wenn Sie ein Experiment für einen bestimmten Teil einer Seite durchführen möchten. Wenn Sie diese Option auswählen, müssen Sie angeben, welche Module im Experiment enthalten sind. Änderungen, die an Teilen der Standardseite oder des Standardfragments vorgenommen werden, die nicht mit dem Experiment zusammenhängen, werden automatisch über Variationen hinweg synchronisiert.
-- Wählen Sie **ganz** , wenn Sie ein Experiment für eine ganze Seite oder ein Fragment durchführen möchten. Es werden separate Kopien der Standardseite oder des Standardfragments erstellt. Sie müssen nicht auswählen, welche Module im Experiment enthalten sind, da die gesamte Bearbeitungsfläche geändert werden kann. Sie können Module nach Bedarf hinzufügen, löschen oder neu anordnen. Wenn jedoch Änderungen an der Standardseite oder dem Standardfragment vorgenommen werden, mit denen das Experiment verknüpft ist, müssen diese Änderungen über alle Variationen hinweg manuell synchronisiert werden.
+- Wählen Sie **teilweise**, wenn Sie ein Experiment für einen bestimmten Teil einer Seite durchführen möchten. Wenn Sie diese Option auswählen, müssen Sie angeben, welche Module im Experiment enthalten sind. Änderungen, die an Teilen der Standardseite oder des Standardfragments vorgenommen werden, die nicht mit dem Experiment zusammenhängen, werden automatisch über Variationen hinweg synchronisiert.
+- Wählen Sie **ganz**, wenn Sie ein Experiment für eine ganze Seite oder ein Fragment durchführen möchten. Es werden separate Kopien der Standardseite oder des Standardfragments erstellt. Sie müssen nicht auswählen, welche Module im Experiment enthalten sind, da die gesamte Bearbeitungsfläche geändert werden kann. Sie können Module nach Bedarf hinzufügen, löschen oder neu anordnen. Wenn jedoch Änderungen an der Standardseite oder dem Standardfragment vorgenommen werden, mit denen das Experiment verknüpft ist, müssen diese Änderungen über alle Variationen hinweg manuell synchronisiert werden.
 
 <!-- not to editors, we're adding an image here to illustrate the difference. it will help.) -->
 

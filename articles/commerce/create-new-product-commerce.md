@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: eb2dd36c6149f2aa40305cd57eac060b232b09e5
-ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138560"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412523"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Ein neues Produkt in Commerce erstellen
 
@@ -39,7 +39,7 @@ Ein Produkt wird hauptsächlich durch eine Produktnummer, einen Namen und eine B
 
 1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Produkte und Kategorien \> Freigegebene Produkte nach Kategorie**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
-1. Wählen Sie in der Dropdownliste **Produktart** entweder **Artikel**oder **Dienstleistung** aus.
+1. Wählen Sie in der Dropdownliste **Produktart** entweder **Artikel** oder **Dienstleistung** aus.
 1. Wählen Sie in der Dropdownliste **Produktuntertyp** entweder **Produkt** (wenn das Produkt keine Varianten hat) oder **Produktmaster** (wenn das Produktvarianten haben wird) aus.
 1. Geben Sie in das Feld **Produktnummer** eine Produktnummer ein, falls diese noch nicht vorbelegt ist.
 1. Geben Sie in das Feld **Produktname** einen Produktnamen ein.
