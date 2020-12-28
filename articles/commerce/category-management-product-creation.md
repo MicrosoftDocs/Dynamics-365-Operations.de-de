@@ -1,0 +1,59 @@
+---
+title: Verwalten von Produktkategorien und ‑produkten
+description: In diesem Thema wird beschrieben, wie Verkaufmanager Produktkategorien verwenden können, um Beziehungen zwischen der Produkthierarchie (Commerce) und freigegebenen Produktdetails zu verwalten.
+author: ashishmsft
+manager: AnnBe
+ms.date: 10/23/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+ms.search.form: EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResProductCategory, EcoResCategoryAddProduct, EcoResAttributeValue
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.custom: ''
+ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: asharchw
+ms.search.validFrom: 2017-09-01
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 9d47a866703b830e84e3f2e37a02d9d58f73987b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412532"
+---
+# <a name="manage-product-categories-and-products"></a><span data-ttu-id="391b2-103">Verwalten von Produktkategorien und ‑produkten</span><span class="sxs-lookup"><span data-stu-id="391b2-103">Manage product categories and products</span></span>
+
+[!include [banner](./includes/banner.md)]
+
+<span data-ttu-id="391b2-104">Dieses Thema beschreibt eine erweiterte Art, Produktkategorien und Produkte in Dynamics 365 Commerce zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="391b2-104">This topic describes an enhanced way to manage product categories and products in Dynamics 365 Commerce.</span></span> <span data-ttu-id="391b2-105">Mit diesen Erweiterungen können Verkaufsmanager eine Struktur von Produkteigenschaften anzeigen, die von der Produkthierarchie und freigegebenen Produktdetails geteilt werden.</span><span class="sxs-lookup"><span data-stu-id="391b2-105">The enhancements let merchandising managers view a structure of product properties that is shared between the product hierarchy and released product details.</span></span>
+
+<span data-ttu-id="391b2-106">Um mehr darüber zu erfahren, wie Produktkategorien im Arbeitsbereich **Kategorie und Produktverwaltung** verwaltet werden, wählen Sie die Kachel **Produkthierarchie (Commerce)** aus.</span><span class="sxs-lookup"><span data-stu-id="391b2-106">To learn more about how to manage product categories, in the **Category and product management** workspace, select the **Commerce product hierarchy** tile.</span></span>
+
+<span data-ttu-id="391b2-107">Beachten Sie die erweiterte Struktur auf der Seite **Produkthierarchie (Commerce)**, die angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="391b2-107">Notice the enhanced structure of the **Commerce product hierarchy** page that appears.</span></span> <span data-ttu-id="391b2-108">In älteren Versionen der App wurden Produkteigenschaften in *Produktgrundeigenschaften* und *Produkteigenschaften (Retail)*, basierend auf dem Umfang ihrer Anwendbarkeit aufgeteilt.</span><span class="sxs-lookup"><span data-stu-id="391b2-108">In previous versions of the app, product properties were divided into *basic product properties* and *Retail product properties*, based on the scope of their applicability.</span></span> <span data-ttu-id="391b2-109">Produkteigenschaften (Retail) sind *global* in ihrem Umfang der Anwendbarkeit.</span><span class="sxs-lookup"><span data-stu-id="391b2-109">Retail product properties are *global* in their scope of applicability.</span></span> <span data-ttu-id="391b2-110">Das bedeutet, dass für eine gegebene Produkteigenschaft derselbe Wert für alle juristischen Personen verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="391b2-110">In other words, for a given product property, the same value is shared across all legal entities.</span></span> <span data-ttu-id="391b2-111">Produktgrundeigenschaften sind jedoch jeweils *für juristische Personen spezifisch*.</span><span class="sxs-lookup"><span data-stu-id="391b2-111">By contrast, basic product properties are *legal entity–specific*.</span></span> <span data-ttu-id="391b2-112">Das bedeutet, dass für eine gegebene Produktgrundeigenschaft der Wert je nach juristischer Person verschieden sein kann, basierend auf den einzelne geschäftlichen Anforderungen jeder juristischen Person.</span><span class="sxs-lookup"><span data-stu-id="391b2-112">In other words, for a given basic product property, the value can differ across legal entities, depending on the individual business requirements of each legal entity.</span></span>
+
+<span data-ttu-id="391b2-113">In der erweiterten Produktkategoriestruktur werden Produkteigenschaften logisch getrennt, basierend auf ihrer Anwendbarkeit in einer Gruppe, um die Struktur der Formularstruktur für freigegebene Produktdetails widerzuspiegeln.</span><span class="sxs-lookup"><span data-stu-id="391b2-113">In the enhanced product category structure, product properties are logically separated based on their applicability in a group, to reflect the structure of the released product details form structure.</span></span>
+
+![Felder, die auf Grundlage des Umfangs der Anwendbarkeit der Eigenschaften gruppiert sind](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
+
+<span data-ttu-id="391b2-115">Sie können zwischen dem Verwalten von Eigenschaften, die für juristische Personen spezifisch sind, über alle juristischen Personen hinweg und dem Verwalten davon für eine bestimmte juristische Person wechseln.</span><span class="sxs-lookup"><span data-stu-id="391b2-115">You can switch between managing legal entity–specific properties across all legal entities and managing them for a specific legal entity.</span></span>
+
+<span data-ttu-id="391b2-116">Um Eigenschaften für alle juristischen Personen zu verwaltet, wählen Sie **Ansicht für alle juristischen Personen** (oder **Bearbeiten für alle juristischen Personen**) aus.</span><span class="sxs-lookup"><span data-stu-id="391b2-116">To manage properties across all legal entities, select **View for all legal entities** (or **Edit for all legal entities**).</span></span>
+
+![Anzeigen/Bearbeiten für alle juristische Personen](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+
+<span data-ttu-id="391b2-118">Um Eigenschaften für eine bestimmte juristische Person zu verwalten, wählen Sie **Ansicht für eine bestimmte juristische Person** (oder **Bearbeiten für eine bestimmte juristische Person**) aus.</span><span class="sxs-lookup"><span data-stu-id="391b2-118">To manage properties for a specific legal entity, select **View for a specific legal entity** (or **Edit for a specific legal entity**).</span></span>
+
+![Anzeigen/Bearbeiten für eine bestimmte juristische Person](media/ToggleToEditForAllLegalEntities.PNG)
+
+<span data-ttu-id="391b2-120">In der erweiterten Produktkategoriestruktur kann darüber hinaus ein Verkaufsmanager jetzt Standardwerte für einen zusätzlichen Satz Produktattribute auf der Ebene einer einzelnen Kategorie definieren.</span><span class="sxs-lookup"><span data-stu-id="391b2-120">Additionally, in the enhanced product category structure, a merchandising manager can now define default values for an additional set of product properties at the level of the individual category.</span></span> <span data-ttu-id="391b2-121">Wenn dann die Produkte erstellt werden, erben sie die Standardwerte für ihre Produkteigenschaften basierend auf der Zuordnung dieser Eigenschaften mit einer einzelnen Kategorie in der Produkthierarchie.</span><span class="sxs-lookup"><span data-stu-id="391b2-121">Then, when products are created, they inherit default values for their product properties, based on the association of those properties with an individual category in the product hierarchy.</span></span> <span data-ttu-id="391b2-122">Diese geerbten Produkteigenschaften können auch für jedes Produkt geändert werden, um einzelnen geschäftlichen Bedarf abzudecken.</span><span class="sxs-lookup"><span data-stu-id="391b2-122">These inherited product properties can also be modified for each product to meet individual business requirements.</span></span>
+
+## <a name="selecting-properties-to-update-products-on-the-commerce-product-hierarchy-page"></a><span data-ttu-id="391b2-123">Auswählen von Eigenschaften zum Aktualisieren von Produkten auf der Seite „Produkthierarchie (Commerce)“</span><span class="sxs-lookup"><span data-stu-id="391b2-123">Selecting properties to update products on the Commerce product hierarchy page</span></span>
+
+<span data-ttu-id="391b2-124">Sie können die neue erweiterte Struktur für Produkteigenschaften verwenden, um aktualisierte Produkteigenschaften auszuwählen, die an die zugeordneten Produkte mit Push übertragen werden müssen.</span><span class="sxs-lookup"><span data-stu-id="391b2-124">You can use the new enhanced structure for product properties to select updated product properties that must be pushed to the associated products.</span></span> <span data-ttu-id="391b2-125">Wählen Sie auf der Seite **Produkthierarchie (Commerce)** im Aktivitätsbereich die Option **Kategorie** aus, und wählen Sie dann **Produkte aktualisieren**, um das Dialogfeld **Produkte aktualisieren** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="391b2-125">On the **Commerce product hierarchy** page, on the Action Pane, select **Category**, and then select **Update products** to open the **Update products** dialog box.</span></span>
+
+![Das Produktedialogfeld aktualisieren](media/NewUpdateProductsEnhancedView.PNG)
