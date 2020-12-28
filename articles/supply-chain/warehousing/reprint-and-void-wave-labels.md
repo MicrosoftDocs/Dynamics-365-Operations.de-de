@@ -4,7 +4,7 @@ description: In diesem Thema wird erläutert, wie vorhandene Serienetiketten sto
 author: GarmMSFT
 manager: PJacobse
 ms.date: 07/09/2020
-ms.topic: reprint-and-void-wave-labels
+ms.topic: article
 ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: af92334af28824b3fcebde5f046bd7c6da459885
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 0efa9400a3bf29e4e0dd56d9138cf8c3825556c7
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016653"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4429146"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Serienetiketten neu drucken und stornieren
 
@@ -63,7 +63,7 @@ Führen Sie die folgenden Schritte aus, um ein Serienetikett vom Web-Client erne
     > [!NOTE]
     > Jedes Mal, wenn ein Serienetikett gedruckt oder neu gedruckt wird, werden seine Daten durch das entsprechende Serienetikett-Layout konvertiert und alle Platzhalter durch tatsächliche Werte ersetzt. Die resultierende Zeichenfolge wird als Datensatz im Serienetikettenverlauf gespeichert. Wenn das Kontrollkästchen **Serienetikettendetails aktualisieren** deaktiviert ist, werden die gespeicherten ZPL-Daten (Zebra Programming Language) verwendet, wenn ein Etikett erneut gedruckt wird. Wenn das Kontrollkästchen **Serienetikettendetails aktualisieren** aktiviert ist, wird eine neue Zeichenfolge generiert. Die vorhandenen Serienetiketten werden ebenfalls neu berechnet, und alle überschüssigen Etiketten (z. B. wenn die zugehörigen Arbeitspositionen gelöscht oder geändert wurden) werden als **Storniert** markiert und werden nicht nachgedruckt.
 
-1. Wählen Sie **OK** , um Ihre Auswahl zu bestätigen.
+1. Wählen Sie **OK**, um Ihre Auswahl zu bestätigen.
 
 ## <a name="scenario-2-reprint-labels-from-the-warehousing-app"></a>Szenario 2: Etiketten aus der Lagerort-App erneut drucken
 
@@ -118,7 +118,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Sammlung von Menüelementen
     - **Systemgruppierungsetikett:** *Lieferungs-ID*
     - **Druckmodus:** *Enumeration*
 
-1. Wählen Sie im Aktivitätsbereich **Feldliste** aus, und verwenden Sie dann die Dropdownlisten, um die Felder auszuwählen, die angezeigt werden, damit die Mitarbeiter die richtige Etikettenrolle identifizieren können (z. B. *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* , und *NumberOfLabels* ).
+1. Wählen Sie im Aktivitätsbereich **Feldliste** aus, und verwenden Sie dann die Dropdownlisten, um die Felder auszuwählen, die angezeigt werden, damit die Mitarbeiter die richtige Etikettenrolle identifizieren können (z. B. *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId*, und *NumberOfLabels*).
 1. Schließen Sie die Seite.
 1. Erstellen Sie ein viertes Menüelement und legen Sie die folgenden Werte dafür fest:
 
@@ -131,7 +131,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Sammlung von Menüelementen
     - **Systemgruppierungsetikett:** *Lieferungs-ID*
     - **Druckmodus:** *Letzte gute Serienetiketten-ID*
 
-1. Wählen Sie im Aktivitätsbereich **Feldliste** aus, und verwenden Sie dann die Dropdownlisten, um die Felder auszuwählen, die angezeigt werden, damit die Mitarbeiter die richtige Etikettenrolle identifizieren können (z. B. *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* , und *NumberOfLabels* ).
+1. Wählen Sie im Aktivitätsbereich **Feldliste** aus, und verwenden Sie dann die Dropdownlisten, um die Felder auszuwählen, die angezeigt werden, damit die Mitarbeiter die richtige Etikettenrolle identifizieren können (z. B. *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId*, und *NumberOfLabels*).
 1. Schließen Sie die Seite.
 
 #### <a name="set-up-the-mobile-device-menu"></a>Menü für mobiles Gerät einrichten
@@ -158,7 +158,7 @@ Bevor Sie diese Anwendungsfälle bearbeiten, müssen die folgenden Voraussetzung
 1. Gehen Sie zu **Ausgehend \> Einzelnes Serienetikett neu drucken**.
 1. Geben Sie die Serienetiketten-ID ein oder scannen Sie sie.
 1. Wählen Sie den Drucker aus, auf dem erneut gedruckt werden soll.
-1. Wählen Sie **OK** , um die Aktivität zu bestätigen.
+1. Wählen Sie **OK**, um die Aktivität zu bestätigen.
 
 #### <a name="use-case-22-several-labels-for-boxes-of-the-same-item-were-damaged-and-must-be-reprinted-each-label-has-a-product-bar-code-but-no-enumeration-or-sscc-number"></a>Anwendungsfall 2.2: Mehrere Etiketten für Kartons desselben Artikels wurden beschädigt und müssen erneut gedruckt werden. Jedes Etikett hat einen Produktbarcode, aber keine Aufzählung oder SSCC-Nummer.
 
@@ -169,7 +169,7 @@ Bevor Sie diese Anwendungsfälle bearbeiten, müssen die folgenden Voraussetzung
 1. Scannen Sie den Produktbarcode von einem vorhandenen Etikett, um zu bestätigen, dass die richtige Zeile ausgewählt wurde.
 1. Geben Sie die Anzahl der Etiketten ein, die erneut gedruckt werden sollen.
 1. Wählen Sie den Drucker aus, auf dem erneut gedruckt werden soll.
-1. Wählen Sie **OK** , um die Aktivität zu bestätigen.
+1. Wählen Sie **OK**, um die Aktivität zu bestätigen.
 
 #### <a name="use-case-23-several-labels-for-boxes-werent-printed-because-of-a-printer-jam-because-the-labels-have-enumeration-you-can-define-the-carton-range-to-reprint"></a>Anwendungsfall 2.3: Mehrere Etiketten für Kartons wurden aufgrund eines Druckerstaus nicht gedruckt. Da die Etiketten eine Aufzählung aufweisen, können Sie den Kartonbereich definieren, der erneut gedruckt werden soll.
 
@@ -180,7 +180,7 @@ Bevor Sie diese Anwendungsfälle bearbeiten, müssen die folgenden Voraussetzung
 1. Geben Sie den ersten Karton ein, für den ein Etikett nachgedruckt werden soll.
 1. Geben Sie den letzten Karton ein, für den ein Etikett nachgedruckt werden soll. Alternativ können Sie dieses Feld leer lassen, um Etiketten für alle Kartons nach dem angegebenen ersten Karton erneut zu drucken.
 1. Wählen Sie den Drucker aus, auf dem erneut gedruckt werden soll.
-1. Wählen Sie **OK** , um die Aktivität zu bestätigen.
+1. Wählen Sie **OK**, um die Aktivität zu bestätigen.
 
 #### <a name="use-case-24-several-labels-for-boxes-werent-printed-because-of-a-printer-jam-the-last-good-label-has-a-wave-label-id-that-is-printed-as-a-bar-code"></a>Anwendungsfall 2.4: Mehrere Etiketten für Kartons wurden aufgrund eines Druckerstaus nicht gedruckt. Das letzte gute Etikett hat eine Serienetiketten-ID, die als Barcode gedruckt wird.
 
@@ -191,7 +191,7 @@ Bevor Sie diese Anwendungsfälle bearbeiten, müssen die folgenden Voraussetzung
 1. Geben Sie die Serienetiketten-ID des letzten guten Serienetiketts ein oder scannen Sie sie. Die App identifiziert das nächste Etikett in der Sequenz als den ersten Karton, für den ein Etikett nachgedruckt wird.
 1. Geben Sie den letzten Karton ein, für den ein Etikett nachgedruckt werden soll. Alternativ können Sie dieses Feld leer lassen, um Etiketten für alle Kartons nach dem angegebenen ersten Karton erneut zu drucken.
 1. Wählen Sie den Drucker aus, auf dem erneut gedruckt werden soll.
-1. Wählen Sie **OK** , um die Aktivität zu bestätigen.
+1. Wählen Sie **OK**, um die Aktivität zu bestätigen.
 
 ## <a name="scenario-3-short-pick-and-reprint"></a>Szenario 3: Kurze Entnahme und Nachdruck
 

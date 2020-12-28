@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d36f60a13fbee91100e406150e7f5ca890320436
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982256"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428518"
 ---
 # <a name="weighted-average-date"></a>Gewichteter Durchschnitt (Datum)
 
@@ -38,7 +38,7 @@ Wenn sich an oder vor dem Datum nur ein Zugang ereignet hat, müssen Sie den Dur
 
 Die folgende Formel wird verwendet, um den gewichteten Durchschnitts nach folgender Formel zu berechnen: 
 
-Gewichteter Durchschnitt = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
+Gewichteter Durchschnitt = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n*) 
 
 Während des Lagerabschlusses wird die Berechnung innerhalb der Abschlussperiode täglich ausgeführt (siehe folgende Grafik). 
 

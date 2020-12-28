@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: cc217f21a5fa70feb9ef9161f3ef2e2b6a333f35
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017758"
+ms.locfileid: "4429103"
 ---
 # <a name="planned-cross-docking"></a>Geplantes Crossdocking
 
@@ -281,7 +281,7 @@ Die zweite Arbeits-ID, die erstellt wird, hat einen **Arbeitsauftragstyp** im We
 1. Wählen Sie **OK**.
 1. Legen Sie auf der nächsten Seite im Feld **Artikel** *A0001* fest.
 1. Wählen Sie **OK**.
-1. Bestätigen Sie auf der nächsten Seite die Werte **PONum** , **Artikel** und **Menge** , indem Sie **OK** auswählen.
+1. Bestätigen Sie auf der nächsten Seite die Werte **PONum**, **Artikel** und **Menge**, indem Sie **OK** auswählen.
 
     Sie erhalten die Nachricht „Arbeit abgeschlossen“.
 
@@ -291,10 +291,10 @@ Die zweite Arbeits-ID, die erstellt wird, hat einen **Arbeitsauftragstyp** im We
 
 Derzeit haben beide Arbeits-IDs das gleiche Zielkennzeichen. Um die nächsten Schritte ausführen zu können, müssen Sie die Arbeits-ID und die Zielkennzeichen-ID erhalten. Sie können diese Informationen aus den Arbeitsdetails für die Bestellposition und die Auftragsposition abrufen. Alternativ können Sie zu **Lagerortverwaltung \> Arbeit \> Arbeitsdetails** gehen und nach Arbeit filtern, wo der Wert von **Lagerort** *51* ist.
 
-1. Gehen Sie auf dem mobilen Gerät zu **Eingehend \> Kaufeinlagerung** , und geben Sie das Zielkennzeichen von der Arbeit ein.
+1. Gehen Sie auf dem mobilen Gerät zu **Eingehend \> Kaufeinlagerung**, und geben Sie das Zielkennzeichen von der Arbeit ein.
 1. Geben Sie im Feld **ID** die Zielkennzeichen-ID aus den Arbeitsdetails ein.
 
-    Die Crossdocking-Auswahlseite zeigt den Kommissionierort ( *RECV* ), das Zielkennzeichen ( *Kennzeichen* ), den Artikel ( *A0001* ) und die Menge ( *3* ).
+    Die Crossdocking-Auswahlseite zeigt den Kommissionierort (*RECV*), das Zielkennzeichen (*Kennzeichen*), den Artikel (*A0001*) und die Menge (*3*).
 
 1. Wählen Sie **OK**.
 1. Geben Sie im Feld **Ziel-LP** ein Zielkennzeichen für die Kennzeichen-ID ein, die am Versandort eingelagert (Crossdocking) werden soll. Sie können eine beliebige Kennzeichen-ID Ihrer Wahl auswählen.
@@ -306,8 +306,8 @@ Derzeit haben beide Arbeits-IDs das gleiche Zielkennzeichen. Um die nächsten Sc
 
     Die mobile App zeigt Ihnen den Lagerplatz und das Kennzeichen an, an dem Sie den Artikel ablegen möchten.
 
-1. Bestätigen Sie den Bulk-Lagerplatz **Einlagern** , indem Sie **OK** auswählen.
-1. Bestätigen Sie auf der nächsten Seite das Crossdocking **Einlagern** , indem Sie **OK** auswählen.
+1. Bestätigen Sie den Bulk-Lagerplatz **Einlagern**, indem Sie **OK** auswählen.
+1. Bestätigen Sie auf der nächsten Seite das Crossdocking **Einlagern**, indem Sie **OK** auswählen.
 
     Sie erhalten die Nachricht „Arbeit abgeschlossen“.
 

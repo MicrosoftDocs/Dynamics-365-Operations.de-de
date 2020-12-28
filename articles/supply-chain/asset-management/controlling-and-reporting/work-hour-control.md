@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 0d2f4e86b5dec84d4a24db6a4f9f9f16f6a765bd
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889193"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428597"
 ---
 # <a name="work-hour-control"></a>Arbeitszeitsteuerung
 
@@ -45,7 +45,7 @@ Die Berechnungen für Anlagen, Technische Standorte und Arbeitsaufträge sind na
 
 4. Wählen Sie bei Bedarf ein **Finanzdimensionssatz**, das in die Berechnung einbezogen werden soll.
 
-5. Wählen Sie „Ja“ auf der Schaltfläche **Null überspringen**Umschalten, wenn Sie keine Ergebnisse mit Nullstunden anzeigen möchten.
+5. Wählen Sie „Ja“ auf der Schaltfläche **Null überspringen** Umschalten, wenn Sie keine Ergebnisse mit Nullstunden anzeigen möchten.
 
 6. Im Feld **Stufe** können Sie angeben, wie detailliert die Stundenkontrollzeilen zu Technischen Standorten sein sollen. 
 

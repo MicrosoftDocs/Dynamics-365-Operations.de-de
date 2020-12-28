@@ -1,6 +1,6 @@
 ---
 title: Die Suche nach Produkten und Produktvarianten bei der Auftragserfassung
-description: Verwenden Sie das Feld **Artikelnummer** , um nach Produkten und Produktvarianten zu suchen, wenn Sie manuell eine Auftragsposition oder eine Bestellposition erstellen. Dadurch können Sie schnell Produktvarianten suchen, wenn Ihnen nur die Konfigurationszeichenfolge oder eine der Produktdimensionen zur Verfügung steht.
+description: Verwenden Sie das Feld **Artikelnummer**, um nach Produkten und Produktvarianten zu suchen, wenn Sie manuell eine Auftragsposition oder eine Bestellposition erstellen. Dadurch können Sie schnell Produktvarianten suchen, wenn Ihnen nur die Konfigurationszeichenfolge oder eine der Produktdimensionen zur Verfügung steht.
 author: cvocph
 manager: tfehr
 ms.date: 06/20/2017
@@ -20,17 +20,17 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 532f437bee490743847cf5617579c579f9202b71
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018329"
+ms.locfileid: "4429108"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Die Suche nach Produkten und Produktvarianten bei der Auftragserfassung
 
 [!include [banner](../includes/banner.md)]
 
-Verwenden Sie das Feld **Artikelnummer** , um nach Produkten und Produktvarianten zu suchen, wenn Sie manuell eine Auftragsposition oder eine Bestellposition erstellen.  Dadurch können Sie schnell Produktvarianten suchen, wenn Ihnen nur die Konfigurationszeichenfolge oder eine der Produktdimensionen zur Verfügung steht.
+Verwenden Sie das Feld **Artikelnummer**, um nach Produkten und Produktvarianten zu suchen, wenn Sie manuell eine Auftragsposition oder eine Bestellposition erstellen.  Dadurch können Sie schnell Produktvarianten suchen, wenn Ihnen nur die Konfigurationszeichenfolge oder eine der Produktdimensionen zur Verfügung steht.
 
 Manchmal ist die Lage nicht optimal, wenn zu viel von einer Sache vorhanden ist. Das gilt insbesondere, wenn Sie eine Anzahl ähnlicher Produkte verkaufen und versuchen, sich die Artikelnummern oder Produktsuchbegriffe zu merken, um das richtige Produkt zu finden, das einem Auftrag hinzugefügt werden soll.Sie können das Feld **Artikelnummer** in einer Auftragsposition oder einer Bestellposition als Suchfeld verwenden. Sie können einen beliebigen Teil eines Produktnamens, einer Zahl oder Dimension eingeben und eine Auswahlliste erhalten, bei der alle Artikel angezeigt werden, die mit dem Suchbegriff übereinstimmen.
 
@@ -44,7 +44,7 @@ Wenn Sie nach Produkten oder Produktvarianten suchen, ist es wichtig zu verste
 
 ### <a name="examples"></a>Beispiele
 
-In den folgenden Beispielen werden Produkte und Produktvarianten verwendet, um zu zeigen, wie die Suche in unterschiedlichen Szenarien gehandhabt wird. **Voraussetzung:** Unter **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparameter &gt; Suchtyp**  wählen Sie die Option **Vollständige Übereinstimmung** aus.
+In den folgenden Beispielen werden Produkte und Produktvarianten verwendet, um zu zeigen, wie die Suche in unterschiedlichen Szenarien gehandhabt wird. **Voraussetzung:** Unter **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparameter &gt; Suchtyp** wählen Sie die Option **Vollständige Übereinstimmung** aus.
 
 | Produkttyp     | Produktname    | Produktnummer anzeigen | Artikelnummer | Variante |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -65,7 +65,7 @@ Bevor Sie die Produkt- und Produktvarianten-Suchfunktion verwenden können, folg
 
 ### <a name="step-1include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Schritt 1: Schließen Sie alle relevanten Produkt- und Produktvariantenbezeichner und -dimensionen in die Suchkriterien ein
 
-Beispiele für Produkt- und Produktvariantenbezeichner und -dimensionen, anhand derer Sie suchen können, sind  **Produktname, Artikelnummer** , **Anzeigeproduktnummer, Konfiguration, Farbe, Größe, Stil, Suchbegriff usw.**  
+Beispiele für Produkt- und Produktvariantenbezeichner und -dimensionen, anhand derer Sie suchen können, sind  **Produktname, Artikelnummer**, **Anzeigeproduktnummer, Konfiguration, Farbe, Größe, Stil, Suchbegriff usw.**  
 
 Wechseln Sie zur Seite **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchkriterien**. Auf der Seite **Suchkriterien** können Sie Kriterien für Kunden, Interessenten und die Produktsuche definieren. Stellen Sie sicher, dass Sie die Seite mithilfe von Produktsuchkriterien filtern. Dies können Sie, indem Sie auf **Produkt** im Menü der Seite wechseln.  
 
@@ -83,7 +83,7 @@ Die Tabelle muss nur aufgefüllt werden, wenn die Suchkriterien geändert werden
 
 Sie können diese Funktionalität aktivieren, indem Sie zu **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparameter** wechseln und die Option **Auswahlliste für Suche aktivieren** auf **Ja** in der Registerkarte **Allgemein** festlegen.  
 
-Bei einem Auftragspositionseintrag besteht das Standardverhalten darin, die Seite **Produktsuche** zu öffnen, wenn Sie damit beginnen, Eingaben im Feld **Artikelnummer** vorzunehmen und dann auf die **TAB** -Taste zu drücken. Die Seite **Produktsuche** ändert den Kontext während der Auftragspositionserstellung und wird möglicherweise als unnötig aufdringlich betrachtet. Wenn Sie es bevorzugen, die Suchergebnisse in einer Auswahlliste zu erhalten und nicht den Kontext während des Auftragspositionseintrags zu verlieren, können Sie stattdessen die Suchauswahlliste verwenden. Wenn Sie nach einem Produkt oder einer Produktvariante suchen, aber Sie nichts in der Auswahlliste auswählen und die Taste **Registerkarte** drücken, wird die Seite **Produktsuche** angezeigt.
+Bei einem Auftragspositionseintrag besteht das Standardverhalten darin, die Seite **Produktsuche** zu öffnen, wenn Sie damit beginnen, Eingaben im Feld **Artikelnummer** vorzunehmen und dann auf die **TAB**-Taste zu drücken. Die Seite **Produktsuche** ändert den Kontext während der Auftragspositionserstellung und wird möglicherweise als unnötig aufdringlich betrachtet. Wenn Sie es bevorzugen, die Suchergebnisse in einer Auswahlliste zu erhalten und nicht den Kontext während des Auftragspositionseintrags zu verlieren, können Sie stattdessen die Suchauswahlliste verwenden. Wenn Sie nach einem Produkt oder einer Produktvariante suchen, aber Sie nichts in der Auswahlliste auswählen und die Taste **Registerkarte** drücken, wird die Seite **Produktsuche** angezeigt.
 
 
 

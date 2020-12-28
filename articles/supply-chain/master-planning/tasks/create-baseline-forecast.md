@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a1d8fd665ec40efede0a3db8b0c59ac89751a64
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 47e26a48cdde3a6996f4c0a4ca85222c402f44e2
+ms.sourcegitcommit: 436731d8b3889bebfe6f17922b0a31b1994f6796
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987189"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "4429143"
 ---
 # <a name="create-a-baseline-forecast"></a>Grundplanung erstellen
 
@@ -43,7 +43,7 @@ Ein Produktionsplaner kann eine Grundplanung erstellen, indem er entweder Zeitse
 7. Schließen Sie die Seite.
 8. Schließen Sie die Seite.
 
-## <a name="set-up-the-demand-forecasting-paramters"></a>Bedarfsplanungsparameter einrichten
+## <a name="set-up-the-demand-forecasting-parameters"></a>Parameter für die Bedarfsplanung festlegen
 1. Wechseln Sie zu "Masterplan" > "Einrichten" > "Bedarfsplanung" > "Bedarfsplanungsparameter".
 2. Erweitern Sie den Planungsalgorithmusparameter-Abschnitt.
 3. Wählen Sie im Feld "Planungsgenerierungsstrategie" "Über historischen Bedarf kopieren" aus.

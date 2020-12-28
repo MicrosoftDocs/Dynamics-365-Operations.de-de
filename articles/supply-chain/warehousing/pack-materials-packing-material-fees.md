@@ -20,11 +20,11 @@ ms.author: mafoge
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1061f336701461df7a2cf78661788e4c6100c84d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215699"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428587"
 ---
 # <a name="packing-materials-and-fees"></a>Verpackungsmaterialien und Gebühren
 
@@ -111,4 +111,4 @@ Um einen Bericht zu erstellen, der alle Verpackungsmaterialgebühren anzeigt, di
 Sie können das Gewicht des Verpackungsmaterials auf einer Rechnung ausdrucken und angeben, wer die entsprechenden Gebühren bezahlt. Das Gewicht wird nach Verpackungscode zusammengefasst.
 
 1. Gehen Sie zu **Debitoren \> Einrichtung \> Debitorenparameter**.
-1. Auf der Registerkarte **Aktualisierungen**, auf der Registerkarte **Rechnung**FastTab, setzen Sie die Option **Verpackungsmaterialgewicht drucken** auf **Ja**.
+1. Auf der Registerkarte **Aktualisierungen**, auf der Registerkarte **Rechnung** FastTab, setzen Sie die Option **Verpackungsmaterialgewicht drucken** auf **Ja**.

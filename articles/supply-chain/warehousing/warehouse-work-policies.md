@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
 ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017666"
+ms.locfileid: "4429114"
 ---
 # <a name="work-policies"></a>Arbeitsrichtlinien
 
@@ -79,7 +79,7 @@ Sie können einen Lagerortplatz verwenden, der einem Lagerplatzprofil zugewiesen
 Stellen Sie auf der Registerkarte **Produkte** das Feld **Produktauswahl** so ein, um zu steuern, für welche Produkte die Richtlinie gelten soll:
 
 - **Alle** – Die Richtlinie soll für alle Produkte gelten.
-- **Ausgewählt** – Die Richtlinie soll nur für Produkte gelten, die im Raster aufgeführt sind. Verwenden Sie die Symbolleiste auf dem Inforegister **Produkte** , um Produkte zum Raster hinzuzufügen oder aus dem Raster zu entfernen.
+- **Ausgewählt** – Die Richtlinie soll nur für Produkte gelten, die im Raster aufgeführt sind. Verwenden Sie die Symbolleiste auf dem Inforegister **Produkte**, um Produkte zum Raster hinzuzufügen oder aus dem Raster zu entfernen.
 
 ## <a name="default-and-custom-to-locations"></a>Standard- und benutzerdefinierte „Nach“-Lagerplätze
 
@@ -113,7 +113,7 @@ Führen Sie die folgenden Schritte aus, um einen Menüpunkt für mobile Geräte 
 
 ## <a name="example-scenario-warehouse-receiving"></a>Beispielszenario: Lagerortempfang
 
-Alle Produkte, die vom Prozess *Bestellungsartikelempfang (und -einlagerung)* erhalten wurden, müssen am Lagerplatz *FL-001* registriert werden und im Lagerort *24* verfügbar sein. Arbeit sollte jedoch nicht erstellt werden. Produkte, die von einem anderen Prozess empfangen werden (d. h. mithilfe anderer Menüpunkte für mobile Geräte), sollten am Standardempfangslagerplatz für den Lagerort ( *RECV* ) registriert werden, und die Arbeit sollte wie gewohnt erstellt werden. (In diesem Szenario wird nicht die Standardempfangseinrichtung angezeigt.)
+Alle Produkte, die vom Prozess *Bestellungsartikelempfang (und -einlagerung)* erhalten wurden, müssen am Lagerplatz *FL-001* registriert werden und im Lagerort *24* verfügbar sein. Arbeit sollte jedoch nicht erstellt werden. Produkte, die von einem anderen Prozess empfangen werden (d. h. mithilfe anderer Menüpunkte für mobile Geräte), sollten am Standardempfangslagerplatz für den Lagerort (*RECV*) registriert werden, und die Arbeit sollte wie gewohnt erstellt werden. (In diesem Szenario wird nicht die Standardempfangseinrichtung angezeigt.)
 
 Dieses Szenario erfordert die folgenden Elemente:
 
@@ -286,10 +286,10 @@ Lagerortprozesse enthalten nicht immer Lagerortarbeit. Wenn Sie eine Arbeitsrich
 1. Lesen Sie im Dialogfeld **Kalkulieren** die Schätzung, und wählen Sie dann **OK** aus, um das Dialogfeld zu schließen.
 1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Produktionsauftrag** in der Gruppe **Prozess** auf **Starten**.
 1. Stellen Sie im Dialogfeld **Starten** auf der Registerkarte **Allgemein** das Feld **Automatischer Stücklistenverbrauch** auf *Nie* ein.
-1. Wählen Sie **OK** , um Ihre Einstellung zu speichern und das Dialogfeld zu schließen.
+1. Wählen Sie **OK**, um Ihre Einstellung zu speichern und das Dialogfeld zu schließen.
 1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Produktionsauftrag** in der Gruppe **Prozess** auf **Als erledigt melden**.
 1. Legen Sie im Dialogfeld **Als erledigt melden** auf der Registerkarte **Allgemein** die Option **Fehler akzeptieren** auf *Ja* fest.
-1. Wählen Sie **OK** , um Ihre Einstellung zu speichern und das Dialogfeld zu schließen.
+1. Wählen Sie **OK**, um Ihre Einstellung zu speichern und das Dialogfeld zu schließen.
 1. Wählen Sie im Aktivitätsbereich, auf der Registerkarte **Lagerort** in der Gruppe **Allgemein** die Option **Arbeitsdetails** aus.
 
 Wenn der Produktionsauftrag als fertig gemeldet ist, wird keine Arbeit für die Einlagerung generiert. Dieses Verhalten tritt auf, weil eine Arbeitsrichtlinie definiert ist, die verhindert, dass Arbeit generiert wird, wenn Produkt *L0101* an Lagerplatz *001* als fertig gestellt gemeldet wird.

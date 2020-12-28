@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: b6e96f2f6b324ffe44e8684d9bd2a42fb52d0aed
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889264"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428758"
 ---
 # <a name="work-order-lifecycle-states"></a>Lebenszykluszustände von Arbeitsaufträgen
 
@@ -80,7 +80,7 @@ Die folgende Tabelle beschreibt die Optionen in den Abschnitten **Arbeitsauftrag
     > Um die Nummer der Projektaktivität zu finden, die sich auf einen Arbeitsauftrag bezieht, wählen Sie **Anlagenmanagement** \> **Allgemein** \> **Aufträge** \> **Alle Arbeitsaufträge**, **Aktive Arbeitsaufträge**, oder **Meine aktiven Arbeitsaufträge**. Öffnen Sie den Arbeitsauftrag und wählen Sie dann den Arbeitsauftrag aus. Die Aktivitätsnummer wird im Feld **Aktivitätsnummer** im Abschnitt **Projekt** auf der Registerkarte **Allgemein** der Registerkarte **Zeilendetails** FastTab angezeigt.
 
 11. Stellen Sie im Abschnitt **Prognose** die Option **Stundenprognose kopieren**, **Artikelprognose kopieren**, und/oder **Aufwandsprognose kopieren** auf **Ja** ein, wenn Projektauftragsprognosen automatisch in Arbeitsauftragserfassungen kopiert werden sollen, wenn sich der Arbeitsauftrag in diesem Lebenszykluszustand befindet.
-12. Setzen Sie im Abschnitt **Terminplanung** eine der Optionen auf **Ja**, wenn der Zeitplanstatus für Arbeitsaufträge aktualisiert werden soll, wenn sich der Arbeitsauftrag in diesem Lebenszykluszustand befindet. Die Beschreibungen der Optionen **Bereit**, **Start**, **Ende** und **Einteilungen**löschen finden Sie in der Tabelle oben in diesem Thema.
+12. Setzen Sie im Abschnitt **Terminplanung** eine der Optionen auf **Ja**, wenn der Zeitplanstatus für Arbeitsaufträge aktualisiert werden soll, wenn sich der Arbeitsauftrag in diesem Lebenszykluszustand befindet. Die Beschreibungen der Optionen **Bereit**, **Start**, **Ende** und **Einteilungen** löschen finden Sie in der Tabelle oben in diesem Thema.
 
     > [!NOTE]
     > Um Einteilungen anzuzeigen, die sich auf Arbeitsaufträge beziehen, wählen Sie **Anlagenmanagement** \> **Allgemein** \> **Arbeitsaufträge** \> **Alle Arbeitsaufträge**, **Aktive Arbeitsaufträge**, oder **Meine aktiven Arbeitsaufträge**. Öffnen Sie den Arbeitsauftrag, wählen Sie den Arbeitsauftrag auf der Seite **Arbeitsaufträge** FastTab und sehen Sie sich die zugehörigen Informationen auf der Seite **Zeilendetails** FastTab an. Das Feld **Status** auf der Registerkarte **Terminplan** zeigt den Status des Arbeitsauftrags an. Das Feld **Status** kann auf die folgenden Werte gesetzt werden: **Planung**, **Bereit**, **Start**, **Stop**, und **Ende**.
@@ -93,7 +93,7 @@ Die folgende Tabelle beschreibt die Optionen in den Abschnitten **Arbeitsauftrag
     - Die **Wartungsstillstandszeit**, **Wartungs-Checkliste**, **Fehlersymptom**, **Fehlerursache**, und **Fehlerbehebung** Optionen beziehen sich auf die Optionen im Abschnitt **Pflicht** auf der Seite **Auftragsarten** (**Anlagenmanagement** \> **Einrichtung** \> **Aufträge** \> **Auftragsarten**). Um diese Validierungen zu aktivieren, müssen die entsprechenden Optionen auch auf **Ja** für den Arbeitsauftragstyp eingestellt sein, der für den Arbeitsauftrag verwendet wird.
     - Wenn die Option **Wartungs-Checkliste** auf **Ja** für den Lebenszykluszustand gesetzt ist, in dem ein Arbeitsauftrag aktualisiert wird, wird eine Validierung durchgeführt, um sicherzustellen, dass Wartungs-Checklistenzeilen, die als **Pflicht** markiert sind, entweder als **Checked** oder **Nicht anwendbar** registriert wurden. Wenn keine dieser Registrierungen auf den Pflichtpositionen vorgenommen wurde, wird eine Informations-, Fehler- oder Warnmeldung angezeigt, wenn der Arbeitsauftrag in diesen Lebenszykluszustand aktualisiert wird.
     - Wenn die Option **Verpflichtete Kosten** auf **Ja** für den Lebenszykluszustand gesetzt ist, auf den ein Arbeitsauftrag aktualisiert wird, wird der Gesamtbetrag der verbuchten Kosten (d.h. der Gesamtbetrag der Ausgaben, zu deren Zahlung sich die juristische Person verpflichtet hat) für jeden Arbeitsauftrag berechnet. Eine Meldung wird angezeigt, wenn der zugesagte Kostenbetrag größer als 0 (Null) ist. Sie wählen die Arten der **Kostenverpflichtung**, die auf der Registerkarte **Kostenkontrolle** auf der Seite **Projektmanagement- und Abrechnungsparameter** enthalten sind (**Projektmanagement- und Abrechnungsparameter** \> **Einrichtung** \> **Projektmanagement- und Abrechnungsparameter**).
-    - Wenn die Option **Wartung Ausfallzeit** auf **Ja** für den Lebenszykluszustand gesetzt ist, in den ein Arbeitsauftrag aktualisiert wird, wird die Validierung der Wartungsstillstandszeit für die Anlage durchgeführt, die mit dem Arbeitsauftrag verknüpft ist. Wenn eine Wartungsstillstandsregistrierung durchgeführt wurde, es aber keine **Beendet**Registrierung gibt, wird eine Meldung angezeigt, wenn der Arbeitsauftrag in diesen Lebenszykluszustand aktualisiert wird.
+    - Wenn die Option **Wartung Ausfallzeit** auf **Ja** für den Lebenszykluszustand gesetzt ist, in den ein Arbeitsauftrag aktualisiert wird, wird die Validierung der Wartungsstillstandszeit für die Anlage durchgeführt, die mit dem Arbeitsauftrag verknüpft ist. Wenn eine Wartungsstillstandsregistrierung durchgeführt wurde, es aber keine **Beendet** Registrierung gibt, wird eine Meldung angezeigt, wenn der Arbeitsauftrag in diesen Lebenszykluszustand aktualisiert wird.
     - Wenn die Standardprojektierung nicht alle Phasen umfasst, die Sie für Ihre Anlageverwaltungseinrichtung benötigen, können Sie benutzerdefinierte Projektphasen auf der Registerkarte **Projektphase** der Seite **Projektmanagement- und Abrechnungsparameter** einrichten. Die folgende Abbildung zeigt die Registerkarte **Projektphase** auf der Seite **Projektmanagement- und Abrechnungsparameter**.
 
     ![Seite „Projektphasen für verschiedene Projekttypen einrichten“](media/10-setup-for-work-orders.png)
@@ -101,7 +101,7 @@ Die folgende Tabelle beschreibt die Optionen in den Abschnitten **Arbeitsauftrag
 > [!NOTE]
 > Wenn der Lebenszykluszustand, in dem Sie einen Arbeitsauftrag aktualisieren, inaktiv ist, werden Journale, die sich auf den Arbeitsauftrag beziehen, aber noch nicht gebucht wurden, automatisch gelöscht. Dieses Verhalten trägt dazu bei, die automatische Bereinigung unbenutzter Daten zu gewährleisten. (Ein Lebenszykluszustand ist inaktiv, wenn die Option **Aktiv** dafür auf **Nein** auf der Seite **Allgemein** FastTab des Lebenszykluszustand **Arbeitsauftrag** gesetzt ist.)
 >
-> Wenn Sie einen Arbeitsauftrag jedoch manuell so einstellen, dass er inaktiv ist, werden Journale, die sich auf den Arbeitsauftrag beziehen, aber noch nicht gebucht wurden, automatisch gelöscht **nicht**. (Um einen Arbeitsauftrag manuell zu deaktivieren, wählen Sie **Anlagenmanagement** \> **Allgemein** \> **Aufträge** \> **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**. Öffnen Sie den Arbeitsauftrag und wechseln Sie in die Ansicht **Kopf**. Wählen Sie auf der **Allgemein**FastTab **Bearbeiten**, und setzen Sie dann die Option **Aktiv** auf **Nein**.)
+> Wenn Sie einen Arbeitsauftrag jedoch manuell so einstellen, dass er inaktiv ist, werden Journale, die sich auf den Arbeitsauftrag beziehen, aber noch nicht gebucht wurden, automatisch gelöscht **nicht**. (Um einen Arbeitsauftrag manuell zu deaktivieren, wählen Sie **Anlagenmanagement** \> **Allgemein** \> **Aufträge** \> **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**. Öffnen Sie den Arbeitsauftrag und wechseln Sie in die Ansicht **Kopf**. Wählen Sie auf der **Allgemein** FastTab **Bearbeiten**, und setzen Sie dann die Option **Aktiv** auf **Nein**.)
 
 ## <a name="relations-among-work-order-lifecycle-models-work-order-types-and-work-order-lifecycle-states"></a>Beziehungen zwischen Arbeitsauftrags-Lebenszyklusmodellen, Arbeitsauftragsarten und Arbeitsauftrags-Lebenszykluszuständen
 

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 37da9d59e4e9cf84238f6798a1aa7de72ff91f02
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888829"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428596"
 ---
 # <a name="create-functional-locations"></a>Funktionale Standorte erstellen
 
@@ -91,7 +91,7 @@ Hier können Sie Wartungspläne und Wartungsdurchgänge den funktionalen Standor
 
 ## <a name="address"></a>Anschrift
 
-Fügen Sie die funktionale Standortadresse auf dem Inforegister**Adresse** hinzu. Die Adressen der funktionalen Standorte werden übernommen, was bedeutet, dass wenn ein Unterstandort keine definierte Adresse hat, die Adresse des übergeordneten Standorts verwendet wird.
+Fügen Sie die funktionale Standortadresse auf dem Inforegister **Adresse** hinzu. Die Adressen der funktionalen Standorte werden übernommen, was bedeutet, dass wenn ein Unterstandort keine definierte Adresse hat, die Adresse des übergeordneten Standorts verwendet wird.
 
 ## <a name="workers"></a>Arbeitskräfte
 

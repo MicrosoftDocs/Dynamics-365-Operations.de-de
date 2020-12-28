@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1027a6a1ddb1057ba039382d394522d6f9538a90
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979135"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428791"
 ---
 # <a name="service-intervals"></a>Serviceintervalle
 
@@ -33,7 +33,7 @@ Durch das Servicevereinbarungsintervall wird die Häufigkeit angegeben, mit der 
 
 Bei der automatischen Erstellung von Serviceaufträgen werden Serviceauftragspositionen ab dem Startdatum der Vereinbarungsposition gemäß dem Intervall erstellt, das für die Servicevereinbarungsposition festgelegt wurde.
 
-Ist im Formular **Intervall**das Feld  einer Servicevereinbarungsposition auf der Seite **Servicevereinbarung**leer, handelt es sich bei der Position um ein einmaliges Ereignis, und die Position wird nicht zur wiederholten Erstellung von Serviceaufträgen verwendet.
+Ist im Formular **Intervall** das Feld  einer Servicevereinbarungsposition auf der Seite **Servicevereinbarung** leer, handelt es sich bei der Position um ein einmaliges Ereignis, und die Position wird nicht zur wiederholten Erstellung von Serviceaufträgen verwendet.
 
 ## <a name="example"></a>Beispiel
 
@@ -84,7 +84,7 @@ Sie können nun geplante Serviceaufträge und Serviceauftragspositionen für den
 3. Setzen Sie den Schieberegler **Stunde** auf **Ja** fest. 
 4. Klicken Sie auf **OK**.
 
-Da für den Serviceauftrag keine Gruppierung vorhanden ist (definiert unter Option**Nach Servicevereinbarung** im Feld **Serviceaufträge kombinieren**), wird pro Serviceauftrag jeweils eine Serviceauftragsposition erstellt.
+Da für den Serviceauftrag keine Gruppierung vorhanden ist (definiert unter Option **Nach Servicevereinbarung** im Feld **Serviceaufträge kombinieren**), wird pro Serviceauftrag jeweils eine Serviceauftragsposition erstellt.
 
 ### <a name="service-orders-created"></a>Erstellte Serviceaufträge
 

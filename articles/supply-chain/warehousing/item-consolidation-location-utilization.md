@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017183"
+ms.locfileid: "4429028"
 ---
 # <a name="item-consolidation---location-utilization"></a>Artikelkonsolidierung – Auslastung von Lagerplatz
 
@@ -94,11 +94,11 @@ In diesem Abschnitt wird beschrieben, wie Sie Ihr System auf die Verwendung der 
 1. Wählen Sie **OK**.
 
     > [!TIP]
-    > Sie erhalten eine Benachrichtigung, wenn die Konsistenzprüfung abgeschlossen ist. Öffnen Sie das [Aktionszentrum](../../fin-ops-core/fin-ops/get-started/user-interface-elements.md#notifications), um die Nachricht anzuzeigen. Wählen Sie **Meldungsdetails** , um die Details anzuzeigen.
+    > Sie erhalten eine Benachrichtigung, wenn die Konsistenzprüfung abgeschlossen ist. Öffnen Sie das [Aktionszentrum](../../fin-ops-core/fin-ops/get-started/user-interface-elements.md#notifications), um die Nachricht anzuzeigen. Wählen Sie **Meldungsdetails**, um die Details anzuzeigen.
     >
     > Wenn die Meldung für die Konsistenzprüfung „Falsche Standortstatusinformationen für Standort XXXX in Lagerort XX gefunden“ lautet, müssen Sie die Konsistenzprüfung erneut ausführen. Stellen Sie diesmal das Feld **Überprüfen/Beheben** auf *Fehler beheben* ein. Zeigen Sie die Nachrichten an, um sicherzustellen, dass keine Fehler gefunden wurden.
 
-1. Sie müssen nun die Einrichtung des Lagerplatzprofils abschließen. Gehen Sie zurück zu **Lagerortverwaltung \> Einstellungen \> Lagerort \> Lagerplatzprofile** , wählen Sie das Lagerplatzprofil **BODEN-05** und dann im Aktionsbereich die Option **Bearbeiten** aus.
+1. Sie müssen nun die Einrichtung des Lagerplatzprofils abschließen. Gehen Sie zurück zu **Lagerortverwaltung \> Einstellungen \> Lagerort \> Lagerplatzprofile**, wählen Sie das Lagerplatzprofil **BODEN-05** und dann im Aktionsbereich die Option **Bearbeiten** aus.
 1. Legen Sie im Inforegister **Dimensionen** die folgenden Werte fest:
 
     - **Volumennutzung in Prozent:** *100*

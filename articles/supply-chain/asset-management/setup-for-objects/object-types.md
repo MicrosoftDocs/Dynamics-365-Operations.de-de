@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 5a5db915c94cf9a454dc39e9174b3282a3f6bb75
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889480"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428610"
 ---
 # <a name="asset-types"></a>Anlagentypen
 
@@ -56,7 +56,7 @@ Zuerst richten Sie die erforderlichen Anlagentypen ein. Anschließend erstellen 
 10. Sie können auch die Attributtypen auswählen, die dem Anlagentyp zugeordnet werden sollen. Auf dem Inforegister **Attributtypen** aktivieren Sie Ihre Auswahl, indem Sie die Methoden für Wartungsauftragstypen anwenden, die in Schritt 8 beschrieben werden. Um dann die bevorzugten Reihenfolge der Attributtypen zu erstellen, wählen Sie im Feld **Attributtypen ausgewählt** den Attributtyp aus, und verwenden Sie die NACH-OBEN-TASTE und die NACH-UNTEN-TASTE, um sie zu verschieben. Die Sequenz der Attributtypen wird auf Anlagen angezeigt, die diesen Anlagentyp verwenden. Weitere Informationen zu Anlagenattributen finden Sie unter [Attributtypen verwalten](../setup-for-functional-locations/specification-types.md).
 
     > [!NOTE]
-    > Wenn Sie neue Attributtypen dem Inforegister**Attributtypen** hinzufügen, werden bestehende Anlagen automatisch mit diesen Informationen aktualisiert.
+    > Wenn Sie neue Attributtypen dem Inforegister **Attributtypen** hinzufügen, werden bestehende Anlagen automatisch mit diesen Informationen aktualisiert.
 
 11. Sie können auch die Bedingungsbewertungsvorlagen auswählen, die dem Anlagentyp zugeordnet werden sollen. Auf dem Inforegister **Bedingungsbewertung** aktivieren Sie Ihre Auswahl, indem Sie die Methoden für Wartungsauftragstypen anwenden, die in Schritt 8 beschrieben werden. Weitere Informationen zu Bedingungsbewertungsvorlagen und - erfassungen, finden Sie unter [Bedingungsbewertung](../setup-for-objects/condition-assessment.md)
 12. Das Inforegister **Anlagenmodell** zeigt alle Kombinationen von Anlagenherstellern und die Modelle an, die im ausgewählten Anlagentyp eingerichtet werden. Um die Kombinationen anzuzeigen, die gemäß dem Hersteller aufgeteilt sind, wählen Sie **Anlagenmodell**, um die Seite **Anlagenmodell** zu öffnen.
@@ -91,9 +91,9 @@ Normalerweise werden Arbeitsaufträge, die manuell erstellt werden, der Fehlerwa
 
 ## <a name="spare-parts-on-the-asset-type-setup"></a>Ersatzteilen für die Anlagentypeinstellung
 
-Wie im Abschnitt „Anlagentypeinstellungs-Position erstellen“ beschrieben, werden Ersatzteile auf Anlagenmodellen auf der Seite **Anlagentypeinstellung** installiert. Wenn Sie die Seite **Anlagentypeinstellung** öffnen, sehen Sie nur die Ersatzteile, die der ausgewählten Kombination eines Anlagentyps, Anlagenherstellers und Anlagenmodells zugeordnet werden. Um eine Liste aller Ersatzteildatensätze anzuzeigen, öffnen Sie die Seite**Ersatzteile** (**Anlagenverwaltung** \> **Abfragen** \> **Ersatzteile**).
+Wie im Abschnitt „Anlagentypeinstellungs-Position erstellen“ beschrieben, werden Ersatzteile auf Anlagenmodellen auf der Seite **Anlagentypeinstellung** installiert. Wenn Sie die Seite **Anlagentypeinstellung** öffnen, sehen Sie nur die Ersatzteile, die der ausgewählten Kombination eines Anlagentyps, Anlagenherstellers und Anlagenmodells zugeordnet werden. Um eine Liste aller Ersatzteildatensätze anzuzeigen, öffnen Sie die Seite **Ersatzteile** (**Anlagenverwaltung** \> **Abfragen** \> **Ersatzteile**).
 
-Auf der Seite **Ersatzteile** können Sie neue Ersatzteile für vorhandene Kombinationen eines Anlagentyps, Anlagenherstellers und Anlagenmodells erstellen. Sie können entscheiden, ob Sie lieber Ersatzteildatensätze auf der Seite **Anlagentypeinstellung** oder der Seite **Ersatzteilen** erstellen. Die Seite **Anlagentypeinstellung** enthält eine Übersicht von Daten für die ausgewählte Kombination eines Anlagentyps, Anlagenherstellers und Anlagenmodells, während die Seite**Ersatzteile** eine vollständige Übersicht über alle Anlagentyppositionen enthält. Wenn die Seite **Ersatzteile** viele Datensätze enthält, könnte die Seite **Anlagentypeinstellung** Ihnen einen besseren Überblick geben.
+Auf der Seite **Ersatzteile** können Sie neue Ersatzteile für vorhandene Kombinationen eines Anlagentyps, Anlagenherstellers und Anlagenmodells erstellen. Sie können entscheiden, ob Sie lieber Ersatzteildatensätze auf der Seite **Anlagentypeinstellung** oder der Seite **Ersatzteilen** erstellen. Die Seite **Anlagentypeinstellung** enthält eine Übersicht von Daten für die ausgewählte Kombination eines Anlagentyps, Anlagenherstellers und Anlagenmodells, während die Seite **Ersatzteile** eine vollständige Übersicht über alle Anlagentyppositionen enthält. Wenn die Seite **Ersatzteile** viele Datensätze enthält, könnte die Seite **Anlagentypeinstellung** Ihnen einen besseren Überblick geben.
 
 Um zu sehen, ob ein Ersatzteil auf der ausgewählten Position an anderer Stelle in der Anlagenverwaltung verwendet wird (beispielsweise in Verbindung mit Anlagen und Arbeitsaufträge), wählen Sie die Ersatzteilposition, und wählen Sie dann **Artikel, die verwendet wurden**, um die Seite **Artikel, die verwendet wurden** zu öffnen. 
 

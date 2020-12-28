@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d9b5ba58703e636308d83a94ecc2e27e44812c49
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981534"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428755"
 ---
 # <a name="set-up-products-that-can-be-produced-or-procured"></a>Einrichten von Produkten, die produziert werden oder beschafft werden
 
@@ -32,7 +32,7 @@ ms.locfileid: "3981534"
 
 Produkte können auf unterschiedliche Arten bezogen werden: Sie können produziert (hergestellt) oder beschafft (eingekauft) werden. In diesem Artikel werden einige typische Punkte beschrieben, die Sie berücksichtigen müssen, wenn Sie Produkte zur Inanspruchnahme mehrerer Quellen konfigurieren. 
 
-Die Inanspruchnahme mehrerer Quellen wird in der Regel für einen gekauften Artikel verwendet, die gelegentlich produziert werden, oder wenn ein Artikel, der in erster Linie ein produzierter Artikel war, geändert wird, sodass dieser nun in erster Linie ein eingekaufter Artikel ist. Der Artikel wird zunächst als produzierter Artikel festgelegt, um die Stückliste und die Arbeitsplaninformationen zu definieren und die Produktionsaufträge für den Artikel zu unterstützen. Der Produktionstyp soll auf **Stückliste** festgelegt werden (oder, für die Fertigungsverarbeitung**Formel** oder **Kuppelprodukt**).
+Die Inanspruchnahme mehrerer Quellen wird in der Regel für einen gekauften Artikel verwendet, die gelegentlich produziert werden, oder wenn ein Artikel, der in erster Linie ein produzierter Artikel war, geändert wird, sodass dieser nun in erster Linie ein eingekaufter Artikel ist. Der Artikel wird zunächst als produzierter Artikel festgelegt, um die Stückliste und die Arbeitsplaninformationen zu definieren und die Produktionsaufträge für den Artikel zu unterstützen. Der Produktionstyp soll auf **Stückliste** festgelegt werden (oder, für die Fertigungsverarbeitung **Formel** oder **Kuppelprodukt**).
 
 Wenn Sie Standardkosten verwenden, kann der Artikelkostendatensatz für den produzierten Artikel verwendet werden. Der Artikelkostendatensatz entspricht möglicherweise nicht den Standardkosten, die für Kaufzwecke vorgesehen sind. Die gewünschten Standardkosten müssen in diesem Fall manuell eingegeben und für den Artikelkostendatensatz aktiviert werden. Für die Kostenberechnung, sollten Sie eine spezielle Stückliste und einen Arbeitsplan verwenden, die die Zubehörmischung des Produkts im Laufe eines Finanzzeitraums darstellen, um die Abweichungen im Zeitverlauf zu minimieren. Außerdem kann ein produzierter Artikel, der sich an einem bestimmten Standort befindet, an einen anderen Standort umgelagert werden. Daher müssen die Kosten des Artikels für den Standort, an den der Artikel umgelagert wird, manuell eingegeben und aktiviert werden. Bei Verwendung des produzierten Artikels als Komponente in höher eingestuften Produkten sollten die Kosten der Komponente als gekaufte Artikel behandelt werden. Diese Richtlinie ist gültig – egal, ob die Kosten der Komponente berechnet oder manuell eingegeben wurden. Dies bedeutet, dass bei einer Stücklistenkalkulation die Kosten des Artikels als gekaufte Komponente behandelt werden sollten, anstatt die Stückliste und die Arbeitsplaninformationen des Artikel zur Kostenberechnung zu verwenden. 
 

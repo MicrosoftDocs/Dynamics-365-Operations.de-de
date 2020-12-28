@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fb0472a0d2ac9b552cd16e4d6bf516a876ea4a0e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981510"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428544"
 ---
 # <a name="moving-average"></a>Flexibler Durchschnitt
 
@@ -141,7 +141,7 @@ Wenn die neue verfügbare Menge nach der Transaktion positiv ist, wird die Trans
 
 ## <a name="inventory-value-report"></a>Lagerwertbericht
 
-In diesem Beispiel für flexiblen Durchschnitt wird der Lagerwertbericht gedruckt, um die aktuelle Berechnung des flexiblen Durchschnitts für ein Produkt zu unterstützen. Der Bericht "Lagerwert" kann die Buchungen sowie die Kosten in chronologischer Reihenfolge drucken, um die Berechnung der gleitenden Durchschnittskosten eines Produkts zu unterstützen. Im Bericht werden die flexiblen Durchschnittskosten für das Produkt angezeigt. Im Dialgofeld **Lagerwertberichte** ermöglicht Ihnen ein „Datumsintervall“, die **Transaktionsuhrzeit** oder das **Buchungsdatum** auszuwählen, nach denen der Bericht zu sortieren ist. Die Option **Buchungsdatum** legt fest, wie der Bericht üblicherweise gedruckt wird. Die Option **Transaktionsuhrzeit** ist das tatsächliche Datum, an dem die Buchung gemeldet ist und die gleitenden Durchschnittskosten für das Produkt aktualisiert werden. Sie können den Bericht "Lagerwert" drucken, indem Sie die Option**Transaktionsuhrzeit-Sortierung** verwenden, wenn die Berechnung der gleitenden Durchschnittskosten im Laufe der Zeit angezeigt werden sollen. In der folgenden Tabelle werden die Transaktionen für das Produkt angezeigt, für das der Bericht gedruckt wird, wenn die Option **Transaktionsuhrzeit-Sortierung** verwendet wird.
+In diesem Beispiel für flexiblen Durchschnitt wird der Lagerwertbericht gedruckt, um die aktuelle Berechnung des flexiblen Durchschnitts für ein Produkt zu unterstützen. Der Bericht "Lagerwert" kann die Buchungen sowie die Kosten in chronologischer Reihenfolge drucken, um die Berechnung der gleitenden Durchschnittskosten eines Produkts zu unterstützen. Im Bericht werden die flexiblen Durchschnittskosten für das Produkt angezeigt. Im Dialgofeld **Lagerwertberichte** ermöglicht Ihnen ein „Datumsintervall“, die **Transaktionsuhrzeit** oder das **Buchungsdatum** auszuwählen, nach denen der Bericht zu sortieren ist. Die Option **Buchungsdatum** legt fest, wie der Bericht üblicherweise gedruckt wird. Die Option **Transaktionsuhrzeit** ist das tatsächliche Datum, an dem die Buchung gemeldet ist und die gleitenden Durchschnittskosten für das Produkt aktualisiert werden. Sie können den Bericht "Lagerwert" drucken, indem Sie die Option **Transaktionsuhrzeit-Sortierung** verwenden, wenn die Berechnung der gleitenden Durchschnittskosten im Laufe der Zeit angezeigt werden sollen. In der folgenden Tabelle werden die Transaktionen für das Produkt angezeigt, für das der Bericht gedruckt wird, wenn die Option **Transaktionsuhrzeit-Sortierung** verwendet wird.
 
 | Transaktionsuhrzeit | Datum         | Transaktionstyp           | Menge | Betrag | Durchschnittliche Einheitenkosten |
 |------------------|--------------|----------------------------|----------|--------|-------------------|

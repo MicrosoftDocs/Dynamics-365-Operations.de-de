@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018651"
+ms.locfileid: "4429104"
 ---
 # <a name="onboard-vendors"></a>Kreditoren aufnehmen
 
@@ -98,7 +98,7 @@ Weitere Informationen zur Kreditorenanforderungskonfiguration finden Sie unter 
 
 | Seite                       | Beschreibung |
 |----------------------------|-------------|
-| Land/Region             | Das Land bzw. die Region bestimmt die Kreditorenanforderungskonfiguration, die auf die verbleibenden Assistentenseiten angewendet wird. Es bestimmt auch Werte in der **Steuerstatus** -Suche. |
+| Land/Region             | Das Land bzw. die Region bestimmt die Kreditorenanforderungskonfiguration, die auf die verbleibenden Assistentenseiten angewendet wird. Es bestimmt auch Werte in der **Steuerstatus**-Suche. |
 | Geschäftsbedingungen       | Diese Seite kann möglicherweise verfügbar sein, abhängig von der Kreditorenanforderungskonfiguration. Wenn sie verfügbar ist, muss der Benutzer die Bedingungen bestätigen, um den Vorgang fortzusetzen. |
 | Kreditoreninformationen         | Diese Seite enthält den Kreditorennamen, der automatisch anhand der ursprünglichen Registrierungsanforderung des künftigen Kreditors eingegeben wird. Außerdem enthält sie die Unternehmensnummer, die Telefonnummer, Faxnummer und E-Mail-Adresse des Kreditors sowie Adressen des Kreditors für verschiedene Zwecke. |
 | Informationen zur Kontaktperson | Diese Seite enthält den Namen der Kontaktperson, der automatisch anhand der ursprünglichen Registrierungsanforderung des künftigen Kreditors eingegeben wird. Außerdem enthält sie die Telefonnummer und E-Mail-Adresse der Kontaktperson sowie die Adressen der Kontaktperson für verschiedene Zwecke. |
@@ -112,7 +112,7 @@ Wenn der künftige Kreditorenbenutzer den Kreditorenerfassungs-Assistenten absch
 
 Eine Kreditorenanforderung kann als Entwurf erstellt werden und manuell an ein Workflow übermittelt werden. Alternativ kann die Kreditorenanforderung automatisch an einen Workflow übermittelt werden, wenn der Kreditorenregistrierungs-Assistent abgeschlossen ist. Eine Anforderung kann manuell übermittelt werden, wenn zum Beispiel ein Prokurist beurteilen möchte, ob die Anforderung durch einen Genehmigungsprozess weitergeleitet werden soll, bevor sie an den Workflow übermittelt wird.
 
-- Wählen Sie **Beschaffungsparameter** &gt; **Kreditorenzusammenarbeit** aus, und wählen Sie dann **Registrierung des künftigen Kreditors automatisch an den Workflow übermitteln** , um die Kreditorenanforderung zu konfigurieren, sodass sie automatisch an einen Workflow übermittelt wird, wenn der Kreditorregistrierungs-Assistent abgeschlossen ist.
+- Wählen Sie **Beschaffungsparameter** &gt; **Kreditorenzusammenarbeit** aus, und wählen Sie dann **Registrierung des künftigen Kreditors automatisch an den Workflow übermitteln**, um die Kreditorenanforderung zu konfigurieren, sodass sie automatisch an einen Workflow übermittelt wird, wenn der Kreditorregistrierungs-Assistent abgeschlossen ist.
 
 ## <a name="vendor-requests"></a>Kreditorenanforderungen
 

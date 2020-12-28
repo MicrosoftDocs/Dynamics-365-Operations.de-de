@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: f636a1f3d598a069c3922160eedbe05b68bc91eb
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017436"
+ms.locfileid: "4429059"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen
 
@@ -53,7 +53,7 @@ Sie können diese Anleitung im Demodatenunternehmen USMF ausführen. Diese Proze
 
 ## <a name="add-the-menu-item-to-a-mobile-device-menu"></a>Hinzufügen der Menüoption zu einem mobilen Gerät
 1. Gehen Sie im Navigationsbereich zu **Module > Lagerverwaltung > Einrichtung > Mobiles Gerät > Menü Mobiles Gerät**.
-2. Verwenden Sie den **Schnellfilter** , um nach dem Feld **Name** mit dem Wert `inbound` zu filtern.
+2. Verwenden Sie den **Schnellfilter**, um nach dem Feld **Name** mit dem Wert `inbound` zu filtern.
 3. Wählen Sie **Bearbeiten** aus.
 4. Wählen Sie im Baum Verfügbare Menüs und Elemente den Menüpunkt aus, den Sie zuvor erstellt haben.
 5. Wählen Sie den Pfeil, der nach rechts zeigt.

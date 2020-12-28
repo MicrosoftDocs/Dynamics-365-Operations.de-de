@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bc310f1d5e1f99a320b803f68395d0926d39780b
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826742"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428905"
 ---
 # <a name="common-sources-of-production-variances"></a>Allgemeine Ursachen für Produktionsabweichungen
 
@@ -32,7 +32,7 @@ ms.locfileid: "3826742"
 
 In diesem Artikel werden verschiedene typische Quellen jedes Typs einer Produktionsabweichung beschrieben. 
 
-Nachfolgend sind einige typische Quellen einer **Losgrößen**abweichung:
+Nachfolgend sind einige typische Quellen einer **Losgrößen** abweichung:
 
 -   Die Gutmenge eines Produktionsauftrags unterscheidet sich von der Berechnungsmenge, die für die Standardkostenberechnung verwendet wird. Die Menge bildet die Grundlage für die Amortisierung konstanter Kosten.
 -   Der Wert der konstanten Kosten im Produktionsauftrag unterscheidet sich von den konstanten Kosten in der Standardkostenberechnung. Die Abweichung der konstanten Kosten im Produktionsauftrag kann unterschiedliche Ursachen haben. Beispielsweise beinhalteten die konstanten Kosten möglicherweise die folgenden Faktoren:
@@ -40,18 +40,18 @@ Nachfolgend sind einige typische Quellen einer **Losgrößen**abweichung:
     -   Auswahl einer anderen Stücklisten- oder Arbeitplanversion beim Erstellen des Produktionsauftrags
     -   Geplante Änderungen an der dem Artikel zugewiesenen Stücklisten- oder Arbeitsplanversion
 
-Nachfolgend sind einige typische Quellen einer **Produktionpreis**abweichung:
+Nachfolgend sind einige typische Quellen einer **Produktionpreis** abweichung:
 
 -   Die Kostenkategorie (und der entsprechende Kostenkategoriepreis) für den gemeldeten Verbrauch eines Arbeitsplan-Arbeitsgangs unterscheidet sich von der Kostenkategorie, die in der Standardkostenberechnung verwendet wird.
 -   Die aktiven Kosten für den Kostenkategoriepreis unterscheiden sich vom Kostenkategoriepreis, der in der Standardkostenberechnung verwendet wird.
 
-Nachfolgend sind einige typische Quellen einer **Produktionsmengen**abweichung:
+Nachfolgend sind einige typische Quellen einer **Produktionsmengen** abweichung:
 
 -   Zu hoher oder zu geringer Abgang einer Materialkomponente.
 -   Über- oder unterbewerteter Bericht der Zeit für einen Routing-Arbeitsgang.
 -   Über- oder Unterempfang der Warenmenge des übergeordneten Artikels, relativ zur Auftragsmenge. Sie melden aber Komponenten und Meldungen zu Arbeitsgängen als abgeschlossen, basierend auf der Menge für den Produktionsauftrag.
 
-Nachfolgend sind einige typische Quellen einer **Produktionsersatz**abweichung:
+Nachfolgend sind einige typische Quellen einer **Produktionsersatz** abweichung:
 
 -   Abgang einer Materialkomponente, die sich nicht in der Produktionsstückliste befindet.
 -   Manuelles Hinzufügen einer Komponente zur Produktionsstückliste und Melden der Komponente als verbraucht.

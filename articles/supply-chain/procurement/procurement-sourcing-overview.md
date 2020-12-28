@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a7de9430ddcc2499627bacfa01b4dc7fd5546a4d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018881"
+ms.locfileid: "4429030"
 ---
 # <a name="procurement-and-sourcing-overview"></a>Beschaffungsübersicht
 
@@ -35,7 +35,7 @@ Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung f
 
 ## <a name="identifying-a-need-for-product-and-services"></a>Identifizieren einer Anforderung für Produkte und Dienste
 
-Der Bedarf für Produkte oder Dienste entsteht möglicherweise aus *Anforderungen* , beispielsweise wenn ein Mitarbeiter ein Produkt benötigt. *Produktkataloge* können so eingerichtet werden, dass die Auswahl der verfügbaren Produkte, aus denen Sie auswählen, geführt wird, oder dass Produkte angefodert werden können, die noch nicht in einem Katalog bereitgestellt werden, wodurch die Einkaufsabteilung entscheiden kann, wie das Produkt beschafft werden kann.  
+Der Bedarf für Produkte oder Dienste entsteht möglicherweise aus *Anforderungen*, beispielsweise wenn ein Mitarbeiter ein Produkt benötigt. *Produktkataloge* können so eingerichtet werden, dass die Auswahl der verfügbaren Produkte, aus denen Sie auswählen, geführt wird, oder dass Produkte angefodert werden können, die noch nicht in einem Katalog bereitgestellt werden, wodurch die Einkaufsabteilung entscheiden kann, wie das Produkt beschafft werden kann.  
 
 *Ausgabenlimits* können verwendet werden, um die Ausgaben für Materialanforderungen einzuschränken, und der *Einkaufsworkflow* fügt die Option des Benötigens einer Genehmigung hinzu, bevor Sie bestellen. Es ist auch möglich, Budgetmittelzuteilung anzugeben, falls erforderlich.  
 
@@ -56,7 +56,7 @@ Bestellungen beinhalten eine Option zum Senden einer *Einkaufsabfrage* an den Kr
 
 Bestellungen, die mit *Einkaufgenehmigungsworkflows* konfiguriert werden, müssen genehmigt werden, bevor sie als genehmigt registriert werden. Dies ist erforderlich, bevor der Auftrag weiter verarbeitet werden kann.
 
-Bestellungen sind *bestätigt* , um darzustellen, dass eine Vereinbarung mit dem Kreditor ausgehandelt wurde. Die Bestellung durchläuft dann verschiedene Status, bis sie schließlich in Rechnung gestellt oder storniert wird.  
+Bestellungen sind *bestätigt*, um darzustellen, dass eine Vereinbarung mit dem Kreditor ausgehandelt wurde. Die Bestellung durchläuft dann verschiedene Status, bis sie schließlich in Rechnung gestellt oder storniert wird.  
 
 Wenn Sie eine Bestellung erstellen, werden viele der Felder mit Werten voraufgefüllt, die standardmäßig aus den Informationen stammen, die über den Kreditor auf der Seite **Kreditoren** gespeichert sind. Das bedeutet, dass es eine begrenzte Anzahl an Feldern gibt, die Sie in der Bestellung ausfüllen müssen, obwohl Sie entscheiden können, die Standardwerte zu überschreiben.
 
@@ -92,4 +92,4 @@ Fakturierte Bestellungen erfassen die Verbindlichkeiten im Kreditorenkonto inner
 
 ## <a name="vendor-performance"></a>Kreditorleistung
 
-Leistung und Überprüfung des Einkaufs wird unterstützt durch *Beschaffungs- und Kreditorenberichte* , die eine Ausgabenanalyse und Kreditorenleistungsanalyse enthalten.
+Leistung und Überprüfung des Einkaufs wird unterstützt durch *Beschaffungs- und Kreditorenberichte*, die eine Ausgabenanalyse und Kreditorenleistungsanalyse enthalten.

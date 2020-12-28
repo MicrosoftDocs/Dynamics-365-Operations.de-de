@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 617fca55226e216197c385c88a9d7a8e3de03b03
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889984"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428735"
 ---
 # <a name="maintenance-downtime-activities"></a>Wartungsausfallaktivitäten
 
@@ -60,7 +60,7 @@ Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Wartungsausfallzeiten*
 
 6. Klicken Sie auf **Speichern**, wenn alle Objekte hinzugefügt wurden. Die folgende Abbildung zeigt das Beispiel einer Wartungsausfallaktivität mit zugehörigen Anlagen und Wartungsaufträge angezeigt.
 
-7. Die Wartungsaufträge und offenen Wartungseinteilungen, die sich auf die ausgewählten Anlagen beziehen, werden auf den Zeilen **Ergebnis der Wartungsaufträge** und **Wartungseinteilungen** FastTabs angezeigt. Im Feld **Allgemein**FastTab > **Arbeitsaufträge**Gruppe > **Wartungsprognose Stunden**Feld und **Allgemein**FastTab > **Wartungsplan**Gruppe > **Wartungsprognose Stunden** sehen Sie die Gesamtzahl der prognostizierten Stunden für Wartungsaufträge und Wartungseinteilungen.
+7. Die Wartungsaufträge und offenen Wartungseinteilungen, die sich auf die ausgewählten Anlagen beziehen, werden auf den Zeilen **Ergebnis der Wartungsaufträge** und **Wartungseinteilungen** FastTabs angezeigt. Im Feld **Allgemein** FastTab > **Arbeitsaufträge** Gruppe > **Wartungsprognose Stunden** Feld und **Allgemein** FastTab > **Wartungsplan** Gruppe > **Wartungsprognose Stunden** sehen Sie die Gesamtzahl der prognostizierten Stunden für Wartungsaufträge und Wartungseinteilungen.
 
 Die folgende Abbildung zeigt ein Beispiel der Detailansicht **Wartungsausfallaktivitäten**.
 

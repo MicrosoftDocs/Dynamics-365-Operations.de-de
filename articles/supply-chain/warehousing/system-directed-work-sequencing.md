@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 86d396b069a354b8fa7e15793372a8293273d238
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017024"
+ms.locfileid: "4429092"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemgeleitete Arbeitsabfolgen
 
@@ -52,7 +52,7 @@ Um das Szenario mithilfe der in diesem Thema dargestellten Werte zu bearbeiten, 
 > [!IMPORTANT]
 > Bevor Sie die Aufträge für den Lagerort freigeben, stellen Sie sicher, dass die Kommissionierstellen über genügend Lagerbestand für alle Artikel in den Aufträgen verfügen.
 >
-> Standard-USMF-Daten sollten dieses Szenario unterstützen. Wenn Sie keine Demodaten verwenden, überprüfen Sie die Einstellung **Lagerplatzrichtlinie** , um zu erfahren, welche Kommissionierorte für die Auftragskommissionierung verwendet werden. Wenn Sie den Lagerbestand anpassen müssen, können Sie manuelle Bewegungen erstellen, Wiederbeschaffung verwenden oder einen anderen Flow verwenden.
+> Standard-USMF-Daten sollten dieses Szenario unterstützen. Wenn Sie keine Demodaten verwenden, überprüfen Sie die Einstellung **Lagerplatzrichtlinie**, um zu erfahren, welche Kommissionierorte für die Auftragskommissionierung verwendet werden. Wenn Sie den Lagerbestand anpassen müssen, können Sie manuelle Bewegungen erstellen, Wiederbeschaffung verwenden oder einen anderen Flow verwenden.
 
 ### <a name="set-up-a-mobile-device-menu-item"></a>Menüpunkt für mobiles Gerät einrichten
 
@@ -130,7 +130,7 @@ Um das Szenario mithilfe der in diesem Thema dargestellten Werte zu bearbeiten, 
     - **Kriterien:** *!STAGE*
 
         > [!IMPORTANT]
-        > Stellen Sie sicher, dass das Ausrufezeichen ( *!* ) vor *STAGE* steht.
+        > Stellen Sie sicher, dass das Ausrufezeichen (*!*) vor *STAGE* steht.
 
 1. Wählen Sie **OK** aus, um die Abfrage zu speichern und zu schließen.
 1. Wählen Sie **Speichern** aus.
@@ -174,7 +174,7 @@ Anschließend geben Sie jeden Auftrag für den Lagerort frei, um die ausgehende 
     - Legen Sie im Abschnitt **Kunde** das Feld **Kundenkonto** auf *US-004* fest.
     - Legen Sie im Abschnitt **Allgemein** das Feld **Lagerort** auf *51* fest.
 
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen. Notieren Sie sich die Auftragsnummer.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen. Notieren Sie sich die Auftragsnummer.
 1. Fügen Sie dem neuen Auftrag eine Position hinzu, und legen Sie die folgenden Werte fest:
 
     - **Artikelnummer:** *M9200*
@@ -183,7 +183,7 @@ Anschließend geben Sie jeden Auftrag für den Lagerort frei, um die ausgehende 
 1. Wählen Sie im Menü **Lagerbestand** über dem Raster die Option **Reservierung** aus.
 1. Wählen Sie auf der Seite **Reservierung** die Option **Los reservieren** aus, um den Bestand zu reservieren.
 1. Schließen Sie die Seite **Reservierung**.
-1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** auf **Lagerortfreigabe** , um Arbeit für den Lagerort zu erstellen.
+1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** auf **Lagerortfreigabe**, um Arbeit für den Lagerort zu erstellen.
 
     Sie erhalten Informationsnachrichten mit der Wellen-ID und den Lieferungs-IDs, die für den Auftrag erstellt wurden.
 
@@ -195,7 +195,7 @@ Anschließend geben Sie jeden Auftrag für den Lagerort frei, um die ausgehende 
     - **Debitorenkonto:** *US-007*
     - **Lagerort:** *51*
 
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen. Notieren Sie sich die Auftragsnummer.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen. Notieren Sie sich die Auftragsnummer.
 1. Fügen Sie dem neuen Auftrag eine Position hinzu, und legen Sie die folgenden Werte fest:
 
     - **Artikelnummer:** *M9200*
@@ -217,7 +217,7 @@ Anschließend geben Sie jeden Auftrag für den Lagerort frei, um die ausgehende 
     - **Debitorenkonto:** *US-009*
     - **Lagerort:** *51*
 
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen. Notieren Sie sich die Auftragsnummer.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen. Notieren Sie sich die Auftragsnummer.
 1. Fügen Sie dem neuen Auftrag eine Position hinzu, und legen Sie die folgenden Werte fest:
 
     - **Artikelnummer:** *M9200*
@@ -239,7 +239,7 @@ Anschließend geben Sie jeden Auftrag für den Lagerort frei, um die ausgehende 
     - **Debitorenkonto:** *US-010*
     - **Lagerort:** *51*
 
-1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen. Notieren Sie sich die Auftragsnummer.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen. Notieren Sie sich die Auftragsnummer.
 1. Fügen Sie dem neuen Auftrag eine Position hinzu, und legen Sie die folgenden Werte fest:
 
     - **Artikelnummer:** *M9200*
@@ -256,7 +256,7 @@ Anschließend geben Sie jeden Auftrag für den Lagerort frei, um die ausgehende 
 ### <a name="get-work-ids-for-the-work-that-was-created"></a>Arbeits-IDs für die erstellte Arbeit abrufen
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Arbeit \> Arbeitsdetails**.
-1. Filtern Sie das Feld **Lagerort** , sodass nur Arbeit für den Lagerort *51* gezeigt wird.
+1. Filtern Sie das Feld **Lagerort**, sodass nur Arbeit für den Lagerort *51* gezeigt wird.
 1. Es sollten vier Arbeits-IDs erstellt worden sein. Notieren Sie sich die Arbeits-ID für jeden Auftrag.
 
     | Auftragskennung | Arbeitskennung | Arbeitsmenge |
@@ -269,7 +269,7 @@ Anschließend geben Sie jeden Auftrag für den Lagerort frei, um die ausgehende 
 Stellen Sie vor dem Ausführen des Flows auf dem mobilen Gerät sicher, dass sich nur die gerade erstellte Arbeit im Status *Öffnen* für Lagerort *51* und den Arbeitsauftragstyp *Auftrag* befindet. Andernfalls können die Testergebnisse variieren, da die systemgeleitete Kommissionierung alle berechtigten Arbeiten umfasst.
 
 1. Gehen Sie zu **Lagerortverwaltung \> Arbeit \> Ausgehend \> Offene Verkaufsarbeit**.
-1. Filtern Sie im Raster **Offene Verkaufsarbeit** das Feld **Lagerort** , sodass nur Arbeit für den Lagerort *51* gezeigt wird.
+1. Filtern Sie im Raster **Offene Verkaufsarbeit** das Feld **Lagerort**, sodass nur Arbeit für den Lagerort *51* gezeigt wird.
 1. Stellen Sie sicher, dass nur die vier zuvor erstellten Arbeits-IDs angezeigt werden.
 1. Schließen Sie die Seite **Arbeit**.
 
@@ -300,7 +300,7 @@ Denken Sie daran, dass dieses Setup alle Arbeiten mit mindestens einer Position 
 
 ## <a name="tips"></a>Tipps
 
-Die systemgeleiteten Arbeitsabfolgeabfragen sind *inklusive*. Es ist wichtig, dass Sie sich bei einigen Setups an diese Tatsache erinnern. Sie möchten beispielsweise, dass ein bestimmter Menüpunkt Arbeit nur dort verarbeitet, wo sich die Arbeitseinheit *EA* befindet, und Sie geben diese Einschränkung auf der Registerkarte **Bereich** der Abfrage an. In diesem Fall werden alle Arbeiten, bei denen für mindestens eine Arbeitsposition die Arbeitseinheit auf *EA* festgelegt ist, dem Arbeiter zugeführt. Daher kann diese Arbeit auch Arbeiten umfassen, bei denen Arbeitspositionen eine andere Arbeitseinheit als *EA* haben (wie *Kiste* oder *Palette* ). Die Abfrage schließt nur Arbeiten aus, bei denen für keine Arbeitsposition die Arbeitseinheit auf *EA* festgelegt ist.
+Die systemgeleiteten Arbeitsabfolgeabfragen sind *inklusive*. Es ist wichtig, dass Sie sich bei einigen Setups an diese Tatsache erinnern. Sie möchten beispielsweise, dass ein bestimmter Menüpunkt Arbeit nur dort verarbeitet, wo sich die Arbeitseinheit *EA* befindet, und Sie geben diese Einschränkung auf der Registerkarte **Bereich** der Abfrage an. In diesem Fall werden alle Arbeiten, bei denen für mindestens eine Arbeitsposition die Arbeitseinheit auf *EA* festgelegt ist, dem Arbeiter zugeführt. Daher kann diese Arbeit auch Arbeiten umfassen, bei denen Arbeitspositionen eine andere Arbeitseinheit als *EA* haben (wie *Kiste* oder *Palette*). Die Abfrage schließt nur Arbeiten aus, bei denen für keine Arbeitsposition die Arbeitseinheit auf *EA* festgelegt ist.
 
 Daher wurde im Beispiel aus diesem Szenario die Arbeits-ID *4* auch von der Abfrage erfasst. Bei der Erstellung wurden zwei Positionen hinzugefügt: eine für 25 EA und eine für 10 EA. Die Arbeit wurde dem Benutzer weiterhin präsentiert, da mindestens eine Arbeitsposition eine Menge von weniger als 20 EA aufweist.
 

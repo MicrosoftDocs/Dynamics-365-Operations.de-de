@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017115"
+ms.locfileid: "4429025"
 ---
 # <a name="location-license-plate-positioning"></a>Standortkennzeichenpositionierung
 
@@ -84,8 +84,8 @@ Die Funktion muss im Lagerplatzprofil für jeden Lagerplatz aktiviert sein, an d
 
 1. Wählen Sie **Abfrage bearbeiten** über dem Gitter aus, während die neue Position noch ausgewählt ist.
 1. Wählen Sie im Abfrageeditor die Registerkarte **Verknüpfungen** aus.
-1. Erweitern Sie die Tabellenverknüpfung **Lagerplätze** , um die Verknüpfung zur Tabelle **Lagerungsdimensionen** anzuzeigen.
-1. Erweitern Sie die Tabellenverknüpfung **Lagerungsdimensionen** , um die Verknüpfung zur Tabelle **Verfügbarer Lagerbestand** anzuzeigen.
+1. Erweitern Sie die Tabellenverknüpfung **Lagerplätze**, um die Verknüpfung zur Tabelle **Lagerungsdimensionen** anzuzeigen.
+1. Erweitern Sie die Tabellenverknüpfung **Lagerungsdimensionen**, um die Verknüpfung zur Tabelle **Verfügbarer Lagerbestand** anzuzeigen.
 1. Wählen Sie **Lagerungsdimensionen** und dann **Tabellenverknüpfung hinzufügen** aus.
 1. Wählen Sie in der Liste der angezeigten Tabellen in der Spalte **Beziehung** die Option **Kennzeichen (Kennzeichen)** aus. Wählen Sie dann **Auswählen** aus, um **Kennzeichen** zur Tabellenverknüpfung **Lagerungsdimensionen** hinzuzufügen.
 1. Während **Kennzeichen** noch ausgewählt ist, wählen Sie **Tabellenverknüpfung hinzufügen** aus.
@@ -195,7 +195,7 @@ Die Arbeit ist jetzt abgeschlossen.
 1. Wählen Sie im Raster die erste Arbeits-ID für den Arbeitsauftragstyp *Zykluszählung* aus.
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Arbeit** in der Gruppe **Arbeit** die Option **Zykluszählung** aus.
 
-    Es werden zwei Positionen angezeigt, eine für jeden Artikel und jedes Kennzeichen. Die Werte in den Feldern **Gezählte Menge** , **Lagerplatz** , **Kennzeichen** und **Artikel** sollten mit den Zähleinträgen übereinstimmen, die Sie auf dem mobilen Gerät erstellt haben. Wenn eines dieser Felder nicht sichtbar ist, wählen Sie im Aktivitätsbereich **Dimensionen anzeigen** aus, um sie dem Raster hinzuzufügen.
+    Es werden zwei Positionen angezeigt, eine für jeden Artikel und jedes Kennzeichen. Die Werte in den Feldern **Gezählte Menge**, **Lagerplatz**, **Kennzeichen** und **Artikel** sollten mit den Zähleinträgen übereinstimmen, die Sie auf dem mobilen Gerät erstellt haben. Wenn eines dieser Felder nicht sichtbar ist, wählen Sie im Aktivitätsbereich **Dimensionen anzeigen** aus, um sie dem Raster hinzuzufügen.
 
 1. Wählen Sie beide Positionen aus.
 1. Klicken Sie im Aktivitätsbereich auf **Zählung akzeptieren**.
@@ -213,7 +213,7 @@ Die Arbeit ist jetzt abgeschlossen.
 1. Wählen Sie auf der Registerkarte **Übersicht** die zweite Arbeits-ID für den Arbeitsauftragstyp *Zykluszählung* aus.
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Arbeit** in der Gruppe **Arbeit** die Option **Zykluszählung** aus.
 
-    Für den Artikel und das Kennzeichen wird eine Position angezeigt. Die Werte in den Feldern **Gezählte Menge** , **Lagerplatz** , **Kennzeichen** und **Artikel** sollten mit den Zähleinträgen übereinstimmen, die Sie auf dem mobilen Gerät erstellt haben.
+    Für den Artikel und das Kennzeichen wird eine Position angezeigt. Die Werte in den Feldern **Gezählte Menge**, **Lagerplatz**, **Kennzeichen** und **Artikel** sollten mit den Zähleinträgen übereinstimmen, die Sie auf dem mobilen Gerät erstellt haben.
 
 1. Wählen Sie die Position aus.
 1. Klicken Sie im Aktivitätsbereich auf **Zählung akzeptieren**.
@@ -237,12 +237,12 @@ Die Arbeit ist jetzt abgeschlossen.
 
 1. Beachten Sie, dass der Lagerplatz *01A01R1S1B* zwei Kennzeichen hat:
 
-    - **A0001** , bei dem das Feld **LP-Position** auf *1* festgelegt ist
-    - **A0002** , bei dem das Feld **LP-Position** auf *2* festgelegt ist
+    - **A0001**, bei dem das Feld **LP-Position** auf *1* festgelegt ist
+    - **A0002**, bei dem das Feld **LP-Position** auf *2* festgelegt ist
 
 1. Beachten Sie, dass der Lagerplatz *01A01R1S2B* ein Kennzeichen hat:
 
-    - **A0002** , bei dem das Feld **LP-Position** auf *1* festgelegt ist
+    - **A0002**, bei dem das Feld **LP-Position** auf *1* festgelegt ist
 
 ### <a name="sales-order-scenario"></a>Szenario für Aufträge
 
@@ -264,7 +264,7 @@ Nun, da die Funktion *Standortkennzeichenpositionierung* eingerichtet und der La
 1. Wählen Sie im Menü **Lagerbestand** über dem Raster die Option **Reservierung** aus.
 1. Wählen Sie auf der Seite **Reservierung** im Aktivitätsbereich die Option **Los reservieren** aus, um Lagerbestand für die Auftragsposition zu reservieren.
 1. Schließen Sie die Seite **Reservierung**.
-1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** , in der Gruppe **Aktivitäten** , **Für Lagerort freigeben** aus.
+1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort**, in der Gruppe **Aktivitäten**, **Für Lagerort freigeben** aus.
 
     Sie erhalten eine Informationsnachricht mit der Wellen-ID und der Lieferungs-ID, die für den Auftrag erstellt wurden.
 

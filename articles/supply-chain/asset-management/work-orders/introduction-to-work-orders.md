@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 7997b4b9521b43e1e00cfa22f9df12a29582455a
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889744"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428524"
 ---
 # <a name="introduction-to-work-orders"></a>Einführung in Arbeitsaufträge
 
@@ -101,7 +101,7 @@ Die Schaltflächen im Aktivitätsbereich sind auf Registerkarten zusammengefasst
 | Projektbuchungen            | Zeigen Sie alle gebuchten Transaktionen an, die sich auf Arbeitsaufträge beziehen, die für die Anlage angelegt wurden.                                                                                                                                                                                             |
 | Arbeitsauftragsstatus aktualisieren           | Aktualisieren Sie den Lebenszyklusstatus von Arbeitsaufträgen.                                                                                                                                                                                                                                                |
 | Lebenszyklusstatusprotokoll                      | Hiermit wird ein Protokoll angezeigt, das den Lebenszyklusstatus des ausgewählten Arbeitsauftrags enthält.                                                                                                                                                                                                                   |
-| Anlagendokumente                | Dient dem Anzeigen einer Liste der Dokumente, die Anlagen zugeordnet sind, die sich auf einen Arbeitsauftrag beziehen. Diese Dokumente werden unter **Anlagenverwaltung** > **Einstellungen** > **Anlagendokumente**eingerichtet.                                                                                                 |
+| Anlagendokumente                | Dient dem Anzeigen einer Liste der Dokumente, die Anlagen zugeordnet sind, die sich auf einen Arbeitsauftrag beziehen. Diese Dokumente werden unter **Anlagenverwaltung** > **Einstellungen** > **Anlagendokumente** eingerichtet.                                                                                                 |
 | Planung                        | Planen Sie den ausgewählten Arbeitsauftrag.                                                                                                                                                                                                                                      |
 | Disponieren            | Planen Sie den ausgewählten Arbeitsauftrag für eine Arbeitskraft.                                                                                                                                                                                                                        |
 | Zeitplan löschen                 | Löschen Sie die Planung für den ausgewählten Arbeitsauftrag.                                                                                                                                                                                                                          |

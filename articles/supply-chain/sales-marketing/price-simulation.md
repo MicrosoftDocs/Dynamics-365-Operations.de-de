@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 18214ae3801b5fb0f927020041e997b7ea4f0df4
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006258"
+ms.locfileid: "4429005"
 ---
 # <a name="price-simulation"></a>Preissimulation
 
@@ -35,7 +35,7 @@ In einer Preissimulation für ein Angebot wird ein neuer Gesamtbetrag auf Basis 
 
 Der Preis im Angebot wird durch eine Preissimulation nicht geändert. Wenn die Preissimulation für ein gesamtes Angebot gilt, wird sie als Sonderrabatt auf den Angebotskopf angewendet. Wenn die Preissimulation für bestimmte Artikel gilt, wird sie als Sonderrabatt auf die Angebotspositionen angewendet. Der Verkaufspreis pro Einheit in einer erstellten Angebotsposition wird bei Anwendung einer Preissimulation nicht geändert. Stattdessen wird ein Rabattprozentsatz angewendet, der der Preisverringerung für die Angebotsposition entspricht. Durch Anwenden einer Preissimulation werden der Verkaufspreis pro Einheit sowie der Rabattprozentsatz in die Angebotsposition oder in den Angebotskopf übertragen.  
 
->[Hinweis!] Bei Ausführung einer Preissimulation wird für die Simulationserstellung ausschließlich die aktuelle Verkaufswährung verwendet. Beim Anzeigen der Angebotssummen wird dann allerdings eine Kombination aus Unternehmenswährung und Verkaufswährung angezeigt.  
+>[Hinweis!] Wenn Sie eine Preissimulation durchführen, wird nur die aktuelle Verkaufswährung verwendet, um die Simulation zu erstellen. Beim Anzeigen der Angebotssummen wird dann allerdings eine Kombination aus Unternehmenswährung und Verkaufswährung angezeigt.  
 
 Zusätzliche zu den Positionen eines Angebots hinzugefügte Artikel können die Anwendung von Positionsrabatten oder Sammelrabatten zur Folge haben. Sie können auch zur Aktivierung von Rechnungsrabatten führen, durch die sich Gewinnspanne und Deckungsbeitrag der Angebotspositionen sowie des gesamten Rabatts ändern.  
 

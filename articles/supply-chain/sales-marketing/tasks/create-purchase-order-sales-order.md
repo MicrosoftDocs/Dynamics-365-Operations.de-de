@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4576e442c2f270932e20472a6c340dcac6d45246
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018697"
+ms.locfileid: "4429102"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Erstellen einer Bestellung auf Grundlage eines Auftrags
 
@@ -63,7 +63,7 @@ Diese Prozedur zeigt, wie Sie eine Bestellung erstellen, die auf einem Auftrag b
 ## <a name="review-purchase-orders-created-from-sales-orders"></a>Überprüfen Sie die Bestellungen, die aus den Aufträgen erstellt wurden.
 1. Klicken Sie im **Aktivitätsbereich** auf **Allgemein**.
 2. Klicken Sie auf **Zugeordnete Aufträge**. Die Seite **Zugeordnete Aufträge** führt alle Aufträge auf, die aus dem Auftrag erstellt wurden. In diesem Beispiel gibt es zwei Bestellungen, die für zwei verschiedene Kreditoren generiert werden. 
-3. Klicken Sie, um dem Link im Feld **Bestellung** zu folgen. Jede Bestellposition wird der Auftragsposition zugeordnet, die zum betreffenden Einkauf geführt hat. Die Beziehung zu dem Auftrag wird auf der Registerkarte **Produkt** im Inforegister **Positionsdetails** , im **Referenztyp** , der **Referenznummer** und den Feldern **Los-Referenz** angegeben.  
+3. Klicken Sie, um dem Link im Feld **Bestellung** zu folgen. Jede Bestellposition wird der Auftragsposition zugeordnet, die zum betreffenden Einkauf geführt hat. Die Beziehung zu dem Auftrag wird auf der Registerkarte **Produkt** im Inforegister **Positionsdetails**, im **Referenztyp**, der **Referenznummer** und den Feldern **Los-Referenz** angegeben.  
 4. Erweitern oder reduzieren Sie den Abschnitt **Positionsdetails**.
 5. Klicken Sie auf die Registerkarte **Produkt**.
     - Die **Los-Referenz** gewährleistet, dass die Kosten des aktuellen Einkaufs dem Auftrag zugeordnet werden.  

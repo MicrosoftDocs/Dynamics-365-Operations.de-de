@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017136"
+ms.locfileid: "4429024"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme
 
@@ -69,7 +69,7 @@ Die Demodaten erfordern Einstellungs- und Bestandsapassungen, um die Szenarien z
 1. Wählen Sie **Speichern** aus.
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerplatzrichtlinien**.
 1. Wählen Sie in der Liste der Lagerplatzrichtlinien **63 Verpacken in Container entnehmen** aus.
-1. Klicken Sie auf **Bearbeiten** , um die Seite in den Bearbeitungsmodus zu versetzen.
+1. Klicken Sie auf **Bearbeiten**, um die Seite in den Bearbeitungsmodus zu versetzen.
 1. Suchen Sie im Inforegister **Lagerplatzrichtlinienaktivitäten** die Zeile, in der das Feld **Sequenznummer** auf *1* gesetzt ist und befolgen Sie einen dieser Schritte:
 
     - Wenn Sie ein FIFO-Szenario einrichten, ändern Sie den Wert des Felds **Strategie** zu *Lagerplatzfälligkeit FIFO*.
@@ -83,7 +83,7 @@ Die Demodaten erfordern Einstellungs- und Bestandsapassungen, um die Szenarien z
     - **Feld:** *Zonen-ID*
     - **Kriterien:** *Boden*
 
-1. Wählen Sie **OK** , um Ihre Einstellungen zu übernehmen und das Abfragedialogfeld zu schließen.
+1. Wählen Sie **OK**, um Ihre Einstellungen zu übernehmen und das Abfragedialogfeld zu schließen.
 1. Wählen Sie **Speichern** aus, um Ihre Änderungen an der Lagerplatzrichtlinie zu speichern.
 1. Führen Sie auf einem mobilen Gerät oder in der App *Dynamics 365 for Finance and Operations – Lagerung* die folgenden Schritte aus, um vorhandenen Bestand aus dem Lagerort zu entfernen und die Szenarien zu unterstützen:
 
@@ -92,7 +92,7 @@ Die Demodaten erfordern Einstellungs- und Bestandsapassungen, um die Szenarien z
     1. Im Menü **Qualitätsmanagement** wählen Sie **Ausschuss**.
     1. Auf der Seite **Ausschuss** wählen Sie das Feld **LOC/LP** und geben dann *63\_1* ein.
     1. Wählen Sie **Eingeben** oder **OK** aus.
-    1. Bestätigen Sie die Details **Ausschuss** für **Anpassung aus** , indem Sie **Eingeben** oder **OK** auswählen.
+    1. Bestätigen Sie die Details **Ausschuss** für **Anpassung aus**, indem Sie **Eingeben** oder **OK** auswählen.
 
     Wenn der Kennzeichenbestand angepasst wird, erhalten Sie die Meldung „Arbeit abgeschlossen“.
 
@@ -117,7 +117,7 @@ Die FIFO-Strategie ermittelt den Lagerplatz, der das älteste Fälligkeitsdatum 
 1. Wählen Sie im Menü **Lagerbestand** über dem Raster die Option **Reservierung** aus.
 1. Wählen Sie auf der Seite **Reservierung** die Option **Los reservieren** aus, um die bestellte Menge dieses Artikels aus dem Bestand im Lagerort zu reservieren.
 1. Schließen Sie die Seite **Reservierung**.
-1. Klicken Sie auf der Seite **Auftrag** im Aktivitätsbereich auf der Registerkarte **Lagerort** , in der Gruppe **Aktivitäten** **Für Lagerort freigeben**. Es werden Informationsnachrichten angezeigt. Das System erstellt eine Sendung, fügt sie einer neuen Ladung hinzu und erstellt die erforderliche Arbeit.
+1. Klicken Sie auf der Seite **Auftrag** im Aktivitätsbereich auf der Registerkarte **Lagerort**, in der Gruppe **Aktivitäten** **Für Lagerort freigeben**. Es werden Informationsnachrichten angezeigt. Das System erstellt eine Sendung, fügt sie einer neuen Ladung hinzu und erstellt die erforderliche Arbeit.
 1. Wählen Sie im Inforegister **Auftragspositionen** im Menü **Lagerort** die Option **Arbeitsdetails** aus, um die Arbeit zu öffnen, die für diesen Auftrag erstellt wurde. Beachten Sie, dass die Position, in der der Wert **Arbeitstyp** *Entnehmen* lautet, für **Lagerplatz** den Wert *FL-002* anzeigt. Dieser Lagerplatz enthält das Kennzeichen mit dem ältesten Fälligkeitsdatum (FIFO).
 1. Wählen Sie **Lagerort \> Lieferdetails**.
 1. Notieren Sie sich im Inforegister **Allgemein** die Wellen-ID, damit Sie sie in Szenario 2 verwenden können.
@@ -127,15 +127,15 @@ Die FIFO-Strategie ermittelt den Lagerplatz, der das älteste Fälligkeitsdatum 
 Die LIFO-Strategie ermittelt den Lagerplatz, der das neueste Fälligkeitsdatum enthält, und weist die Kommissionierung basierend auf diesem Fälligkeitsdatum zu. In Szenario 2 bearbeiten Sie die Einstellungen für Szenario 1 (FIFO) und verwenden den Kundenauftrag und die Welle, die in diesem Szenario erstellt wurden, erneut.
 
 1. Bevor Sie dieses Szenario starten, richten Sie das vollständige FIFO-Szenario ein und schließen Sie es ab, wie im [vorherigen Abschnitt](#fifo-demo) beschrieben. In diesem Szenario werden Sie die Welle und den größten Teil der für dieses Szenario erstellten Einstellungen wiederverwenden.
-1. Bearbeiten Sie die Lagerplatzrichtlinie **63 Verpacken in Container entnehmen** , damit die Strategie *Lagerplatzfälligkeit LIFO* verwendet wird, wie im ersten Teil des Verfahrens [Szenarien einrichten](#demo-set-up) beschrieben.
+1. Bearbeiten Sie die Lagerplatzrichtlinie **63 Verpacken in Container entnehmen**, damit die Strategie *Lagerplatzfälligkeit LIFO* verwendet wird, wie im ersten Teil des Verfahrens [Szenarien einrichten](#demo-set-up) beschrieben.
 
     Als Nächstes ändern Sie die Welle, die in Szenario 1 für den Auftrag erstellt wurde, sodass die Strategie *Lagerplatzfälligkeit LIFO* verwendet wird.
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Ausgehende Wellen \> Lieferungswellen \> Alle Wellen**.
 1. Wählen Sie die Welle aus und öffnen Sie sie, die die Reihenfolge enthält, die Sie für das FIFO-Szenario erstellt haben.
-1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Arbeit** die Option **Abbrechen** , um die Arbeit abzubrechen, die Sie für das FIFO-Szenario erstellt haben.
+1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Arbeit** die Option **Abbrechen**, um die Arbeit abzubrechen, die Sie für das FIFO-Szenario erstellt haben.
 1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Welle** in der Gruppe **Welle** auf **Verarbeiten**.
-1. Wenn die Verarbeitung abgeschlossen ist, klicken Sie im Aktivitätsbereich auf der Registerkarte **Welle** in der Gruppe **Zugehörige Informationen** auf **Arbeit** , um die Arbeit zu öffnen, die für diese Welle erstellt wurde.
+1. Wenn die Verarbeitung abgeschlossen ist, klicken Sie im Aktivitätsbereich auf der Registerkarte **Welle** in der Gruppe **Zugehörige Informationen** auf **Arbeit**, um die Arbeit zu öffnen, die für diese Welle erstellt wurde.
 1. Auf der Seite **Arbeit** auf der Registerkarte **Übersicht** sollte es zwei Positionen geben. Wählen Sie die Position aus, in der das Feld **Arbeitsstatus** auf *Offen* festgelegt ist.
 1. Beachten Sie, dass die Position, in der der Wert **Arbeitstyp** *Entnehmen* lautet, für **Lagerplatz** den Wert *FL-001* anzeigt. Dieser Lagerplatz enthält das Kennzeichen mit dem neuesten Fälligkeitsdatum (LIFO).
 

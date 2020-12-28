@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 0127cc64688bc7878623b08ef143dfd040484ce0
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018375"
+ms.locfileid: "4429056"
 ---
 # <a name="set-up-consignment"></a>Sendung einrichten
 
@@ -40,7 +40,7 @@ In diesem Beispielszenario hat Unternehmen USMF eine Lieferungsvereinbarung mit 
 2.  Der Kreditor wird über die erwartete Lieferung informiert. Dies kann auf eine von drei Arten erfolgen:
     -   Jemand, der bei USMF arbeitet, sendet die Auftragsinformationen an den Kreditor.
     -   Der Kreditor kann den voraussichtlichen verfügbaren Lagerbestand mithilfe der Kreditoren-Zusammenarbeitschnittstelle überwachen.
-    -   Jemand, der bei USMF arbeitet, filtert die Daten auf der Seite **Verfügbarer Lagerbestand** , sodass lediglich Datensätze für Kreditor US-104 angezeigt werden, bei denen der Empfangsstatus **Bestellt** ist, und er sendet dann diese Informationen zum Kreditor.
+    -   Jemand, der bei USMF arbeitet, filtert die Daten auf der Seite **Verfügbarer Lagerbestand**, sodass lediglich Datensätze für Kreditor US-104 angezeigt werden, bei denen der Empfangsstatus **Bestellt** ist, und er sendet dann diese Informationen zum Kreditor.
 3.  Der Bestand wird von US-104 an USMF geliefert.
 4.  Wenn das Material bei USMF ankommt, wird der Lieferungswiederbeschafftungs-Auftrag mit einem Produktzugang aktualisiert. Nur die physischen Mengen des Bestands, der im Besitz des Kreditors ist, werden erfasst. Es werden keine Hauptbuchtransaktionen erstellt, da der Bestand immer im Besitz des Kreditor ist.
 5.  Der Kreditor überwacht Aktualisierungen des physische verfügbaren Lagerbestands mithilfe der Seite **Verfügbarer Lieferungsbestand**.
@@ -60,7 +60,7 @@ Der Kreditor, US-104, kann die Aktualisierungen mithilfe der Seite **Verfügbare
 ## <a name="consignment-replenishment-orders"></a>Unterlieferungs-Wiederbeschaffungsaufträge
 Ein Lieferungswiederbeschaffungsauftrag ist ein Dokument, das verwendet wird, um Bestandsmengen von Produkten anzufordern und nachzuverfolgen, die ein Kreditor innerhalb eines bestimmten Datumsintervalls zu liefern beabsichtigt, und zwar mithilfe des Erstellens bestellter Bestandstransaktionen. In der Regel basiert dies auf der Planung und dem tatsächlichen Bedarf der spezifischen Produkte. Der Bestand, der für den Lieferungswiederbeschaffungsauftrag eingeht, bleibt im Besitz des Kreditors. Nur der Besitz der Produkte, der mit der Aktualisierung des physischen Zugangs verknüpft ist, wird aufgezeichnet, und deshalb erfolgen keine Aktualisierungen der Hauptbuchtransaktion. 
 
-Die Dimension **Besitzer** wird verwendet, um Informationen darüber zu trennen, welcher Bestand sich im Besitz des Kreditors und welcher sich im Besitz der empfangenden juristischen Person befindet. Lieferungswiederbeschaffungsauftragspositionen haben einen **Offenen Auftrag** -Status, sofern die gesamte Menge der Positionen nicht eingegangenen oder storniert wurde. Wenn die gesamte Menge eingegangenen oder abgebrochen wurde, wird der Status in **Abgeschlossen** geändert. Der physische verfügbare Lagerbestand, der einem Lieferungswiederbeschaffungsauftrag zugeordnet ist, kann mithilfe eines Anmeldeprozesses sowie eines Produktzugangsaktualisierungsprozesses erfasst werden. Die Registrierung kann als Teil des Artikeleingangsprozesses erfolgen oder durch die manuelle Aktualisierung der Auftragspositionen. Wenn der Produktzugangs-Aktualisierungsprozess verwendet wird, wird ein Beleg in der Produktzugangserfassung erstellt, der zur Bestätigung des Zugangs von Waren an die Kreditoren verwendet werden kann.
+Die Dimension **Besitzer** wird verwendet, um Informationen darüber zu trennen, welcher Bestand sich im Besitz des Kreditors und welcher sich im Besitz der empfangenden juristischen Person befindet. Lieferungswiederbeschaffungsauftragspositionen haben einen **Offenen Auftrag**-Status, sofern die gesamte Menge der Positionen nicht eingegangenen oder storniert wurde. Wenn die gesamte Menge eingegangenen oder abgebrochen wurde, wird der Status in **Abgeschlossen** geändert. Der physische verfügbare Lagerbestand, der einem Lieferungswiederbeschaffungsauftrag zugeordnet ist, kann mithilfe eines Anmeldeprozesses sowie eines Produktzugangsaktualisierungsprozesses erfasst werden. Die Registrierung kann als Teil des Artikeleingangsprozesses erfolgen oder durch die manuelle Aktualisierung der Auftragspositionen. Wenn der Produktzugangs-Aktualisierungsprozess verwendet wird, wird ein Beleg in der Produktzugangserfassung erstellt, der zur Bestätigung des Zugangs von Waren an die Kreditoren verwendet werden kann.
 
 [![Unterlieferungs-Wiederbeschaffungsauftrag](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
@@ -77,7 +77,7 @@ Es ist nicht möglich, die Menge auf Lieferungsbestellpositionen zu aktualisiere
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Kreditorenzusammenarbeit in den Lieferungsprozessen
 Die Kreditorenzusammenarbeitschnittstelle hat drei Seiten, die dem Prozess der eingehenden Lieferung zugeordnet sind:
 
--   **Bestellungen,** , **die Lieferungsbestand verbrauchen**  – Zeigt detaillierte Bestellungsinformationen zur Besitzänderung vom Lieferungsprozess an.
+-   **Bestellungen,**, **die Lieferungsbestand verbrauchen**  – Zeigt detaillierte Bestellungsinformationen zur Besitzänderung vom Lieferungsprozess an.
 -   **Produkte, die aus dem Lieferungsbestand empfangen werden** – Zeigt Informationen zu Artikeln und Mengen an, bei denen die Produktzugänge während des Besitzänderungsprozesses aktualisiert werden.
 -   **Verfügbarer Lieferungsbestand** – Zeigt Informationen zu den Lieferungsartikeln an, die sie erwartungsgemäß liefern sollen, sowie zu den Artikeln, die am Debitorenstandort bereits physisch verfügbar sind.
 

@@ -18,11 +18,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 3119b6e93bc1f09c068fa599ec5ea2d0b23906a1
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016723"
+ms.locfileid: "4429033"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Einen Min-Max-Auffüllungsprozess einrichten
 
@@ -68,10 +68,10 @@ Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wi
 3. Klicken Sie im **Aktivitätsbereich** auf **Neu**.
 4. Geben Sie in das Feld **Arbeitsvorlage** einen Wert ein.
 5. Klicken Sie auf **Speichern**.
-6. Im Abschnitt **Arbeitsvorlagendetails** klicken Sie auf **Neu** :
+6. Im Abschnitt **Arbeitsvorlagendetails** klicken Sie auf **Neu**:
 7. Wählen Sie im Feld **Arbeitstyp** die Option „Entnahme“ aus.
 8. Geben Sie im Feld **Arbeitsklassenkennung** einen Wert ein, oder wählen Sie einen Wert aus. Diese sollte eine Arbeitsklasse sein, die der Auffüllung zugeordnet ist. Wenn Sie USMF erwenden, wählen Sie „Auffüllen“ aus.  
-9. Im Abschnitt **Arbeitsvorlagendetails** klicken Sie auf **Neu** :
+9. Im Abschnitt **Arbeitsvorlagendetails** klicken Sie auf **Neu**:
 10. Markieren Sie in der Liste die ausgewählte Zeile.
 11. Wählen Sie im Feld **Arbeitstyp** die Option 'Einlagern'.
 12. Geben Sie im Feld **Arbeitsklassenkennung** einen Wert ein, oder wählen Sie einen Wert aus.

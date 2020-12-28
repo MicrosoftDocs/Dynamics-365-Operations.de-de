@@ -16,11 +16,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: acc2cdb9b74cccaefe565b0e2ae8ec4c5f2401c4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204722"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428571"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Anforderung für Verbrauch erstellen
 
@@ -50,7 +50,7 @@ In diesem Thema wird der Prozess zum Erstellen einer Anforderung beschrieben. Es
 
 ## <a name="add-more-products-to-the-requisition"></a>Produkte zu einer Bestellanforderung hinzufügen
 1. Wählen Sie **Produkte hinzufügen** aus. Dies ist die Option, in der Sie für Produkte im Produktkatalog suchen können.    
-2. Geben Sie im Feld **Beschaffungskategorieknoten suchen** den ersten Teil des Namens der Kategorie ein, nach der Sie suchen, und klicken Sie dann auf die**EINGABETASTE**. Geben Sie beispielsweise `comput` ein.  
+2. Geben Sie im Feld **Beschaffungskategorieknoten suchen** den ersten Teil des Namens der Kategorie ein, nach der Sie suchen, und klicken Sie dann auf die **EINGABETASTE**. Geben Sie beispielsweise `comput` ein.  
 3. Verwenden Sie die Verknüpfung **InvokeDefaultButton**.
 4. Verwenden Sie den **Filter**, um die Liste der Produkte in der ausgewählten Kategorie zu filtern.
 5. Wählen Sie hier die Produkte aus, die Sie der Bestellanforderung hinzufügen möchten.

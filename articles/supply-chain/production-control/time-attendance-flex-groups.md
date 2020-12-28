@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: c71ebab0788b6c5d7466a5d71e3c72a7e86e41db
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826502"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428747"
 ---
 # <a name="flex-groups"></a>Gleitzeitgruppen
 
@@ -130,7 +130,7 @@ Das Szenario nutzt das folgende Flex-Profil für den Arbeitstag.
 | Ausstempeln     | 04:00 (nachmittags) | 04:00 (nachmittags) |
 | Gleitzeit+         | 04:00 (nachmittags) | 12:00 (vormittags) |
 
-In diesem Fall sollten Sie in der Lage sein, den Gleitzeitsaldo basierend auf den Lohnarten der Arbeitskraft zu verwalten. Daher müssen Sie die Option **Basierend auf Lohnarten** auf**Ja** setzen in der Gleitzeitgruppe der Arbeitskraft.
+In diesem Fall sollten Sie in der Lage sein, den Gleitzeitsaldo basierend auf den Lohnarten der Arbeitskraft zu verwalten. Daher müssen Sie die Option **Basierend auf Lohnarten** auf **Ja** setzen in der Gleitzeitgruppe der Arbeitskraft.
 
 Um die Gleitzeit zu berücksichtigen, müssen Sie auch eine Lohnart definieren. Für dieses Szenario wird die Lohnart **FlexCnt** lauten.
 

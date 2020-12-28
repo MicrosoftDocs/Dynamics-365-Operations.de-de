@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
 ms.openlocfilehash: 0838405bcb5ee0d8e582093fbbd69553228cb2b6
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016032"
+ms.locfileid: "4429094"
 ---
 # <a name="system-directed-cluster-picking"></a>Systemgeleitete Clusterkommissionierung
 
@@ -95,7 +95,7 @@ Gehen Sie folgendermaßen vor, um ein neues Menüelement für mobile Geräte fü
 
 1. Geben Sie auf dem Inforegister **Allgemein** die folgenden Informationen ein:
     - **Geleitet von** - Systemgeleitete Clusterkommissionierung
-    - **Kennzeichen generieren** : - Ja
+    - **Kennzeichen generieren**: - Ja
     - **Clusterprofil-ID** -  Wählen Sie 2 Position aus
 
 1. Richten Sie im Inforegister **Arbeitsklassen** die gültige Arbeitsklasse für diesen Menüpunkt für mobile Geräte ein, indem Sie die folgenden Felder festlegen:
@@ -109,12 +109,12 @@ Gehen Sie folgendermaßen vor, um ein neues Menüelement für mobile Geräte fü
 
 1. Wählen Sie im Aktionsbereich **Abfrage bearbeiten** aus
 1. Wählen Sie die Registerkarte **Sortierung**
-1. Wählen Sie **Hinzufügen** , um eine neue Zeile hinzuzufügen, geben Sie dann Folgendes ein:
+1. Wählen Sie **Hinzufügen**, um eine neue Zeile hinzuzufügen, geben Sie dann Folgendes ein:
     - **Tabelle** – Arbeit
     - **Abgeleitete Tabelle** - Arbeit
     - **Feld** - Arbeitspriorität
     - **Suchrichtigung** - Aufsteigend
-1. Wählen Sie **Hinzufügen** , um eine zweite Zeile hinzuzufügen, geben Sie dann Folgendes ein:
+1. Wählen Sie **Hinzufügen**, um eine zweite Zeile hinzuzufügen, geben Sie dann Folgendes ein:
     - **Tabelle** – Arbeit
     - **Abgeleitete Tabelle** - Arbeit
     - **Feld** - Arbeits-ID
@@ -131,7 +131,7 @@ Gehen Sie folgendermaßen vor, um ein neues Menüelement für mobile Geräte fü
 1. Scrollen Sie, bis Sie den **SD-Cluster** finden.
 1. Wählen Sie **SD-Cluster** der Pfeil, der auf die **Menüstruktur** zeigt, wird aktiviert.
 1. Wählen Sie die Schaltfläche **Pfeil** zum Verschieben der Menüpunkte **SD-Cluster** im Menü **Ausgehend**.
-1. Wählen Sie **SD-Cluster** von der Liste **Menüstruktur** , wählen Sie dann die Pfeile **NACH OBEN** oder **NACH UNTEN** , um den Menüpunkt an die gewünschte Position im Menü des Mobilgeräts zu verschieben.
+1. Wählen Sie **SD-Cluster** von der Liste **Menüstruktur**, wählen Sie dann die Pfeile **NACH OBEN** oder **NACH UNTEN**, um den Menüpunkt an die gewünschte Position im Menü des Mobilgeräts zu verschieben.
 
 ## <a name="scenario"></a>Szenario
 
@@ -145,7 +145,7 @@ Bevor Sie die systemgesteuerte Cluster-Auswahl einrichten können, müssen Sie g
         - Im Inforegister **Kunde** geben Sie **Kundenkonto** - **US-004** ein.
         - Auf dem Inforegister **Allgemeines** geben Sie ein **Lagerort** - **62** ein.
         - Wählen Sie **OK** aus, um das Menü zu schließen und die Bestellung zu erstellen.
-    - Auf dem Inforegister **Kundenauftragspositionen** wählen Sie **Zeile hinzufügen** , wenn eine neue Zeile nicht automatisch hinzugefügt wird, geben Sie Folgendes ein:
+    - Auf dem Inforegister **Kundenauftragspositionen** wählen Sie **Zeile hinzufügen**, wenn eine neue Zeile nicht automatisch hinzugefügt wird, geben Sie Folgendes ein:
         - **Artikelnummer** - A0001
         - **Menge** - 1
         - Wählen Sie **Position hinzufügen** aus, um eine zweite Position hinzuzufügen.
@@ -162,7 +162,7 @@ Bevor Sie die systemgesteuerte Cluster-Auswahl einrichten können, müssen Sie g
         - Im Inforegister **Kunde** geben Sie **Kundenkonto** - **US-005** ein.
         - Auf dem Inforegister **Allgemeines** geben Sie ein **Lagerort** - **62** ein.
         - Wählen Sie **OK** aus, um das Menü zu schließen und die Bestellung zu erstellen
-    - Auf dem Inforegister **Kundenauftragspositionen** wählen Sie **Zeile hinzufügen** , wenn eine neue Zeile nicht automatisch hinzugefügt wird, geben Sie folgende Informationen ein:
+    - Auf dem Inforegister **Kundenauftragspositionen** wählen Sie **Zeile hinzufügen**, wenn eine neue Zeile nicht automatisch hinzugefügt wird, geben Sie folgende Informationen ein:
         - **Artikelnummer** - A0001
         - **Menge** - 4
         - Wählen Sie **Position hinzufügen** aus, um eine zweite Position hinzuzufügen.
@@ -177,16 +177,16 @@ Bevor Sie die systemgesteuerte Cluster-Auswahl einrichten können, müssen Sie g
     - Schließen Sie die Verkaufsaufträge und kehren Sie zur Seite mit der Liste **Alle Verkaufsaufträge** zurück.
 1. Suchen Sie die beiden soeben erstellten Kundenaufträge (möglicherweise müssen Sie die Seite aktualisieren). Wählen Sie in der Tabelle beide Kundenaufträge mit dem Häkchen aus.
     - In dem Aktionsbereich **Alle Kundenaufträge** wählen Sie im Aktionsbereich die Option **Lagerort** aus.
-    - In der Gruppe **Aktionen** wählen Sie **Freigabe für Lager** , um beide Verkaufsaufträge an das Lager freizugeben.
+    - In der Gruppe **Aktionen** wählen Sie **Freigabe für Lager**, um beide Verkaufsaufträge an das Lager freizugeben.
 1. Wenn die Freigabe für den Lagerprozess abgeschlossen ist, wird eine Informationsmeldung angezeigt.
     - Für jeden Kundenauftrag werden Sendungen erstellt.
     - Eine Welle wird erstellt und beide Sendungen werden der Welle zugewiesen. Notieren Sie die **Wellen-ID**.
 1. Wechseln Sie zu **Lagerortverwaltung > Ausgehende Wellen > Lieferungswellen > Alle Wellen**.
-    - In der Liste **Alle Wellen** finden und wählen Sie die **Wellen-ID** , die Sie im vorherigen Schritt erstellt haben.
-    - Aktivieren Sie im Aktivitätsbereich die Registerkarte **Welle** ,
-    - In der Gruppe **Welle** wählen Sie **Verarbeiten** , um die Welle zu verarbeiten und die **Arbeit** zu erstellen.
+    - In der Liste **Alle Wellen** finden und wählen Sie die **Wellen-ID**, die Sie im vorherigen Schritt erstellt haben.
+    - Aktivieren Sie im Aktivitätsbereich die Registerkarte **Welle**,
+    - In der Gruppe **Welle** wählen Sie **Verarbeiten**, um die Welle zu verarbeiten und die **Arbeit** zu erstellen.
     - Nach Abschluss der Verarbeitung werden Informationsnachrichten generiert, die darauf hinweisen, dass die Arbeit erstellt und die Welle gebucht wurde.
-1. **Optional** : Gehen Sie zu **Lagerverwaltung > Arbeit > Arbeitsdetails** , um die erstellte Arbeit anzuzeigen. Es werden zwei verschiedene Arbeitskennungen erstellt. Jede Arbeitskennung hat zwei Auswahlzeilen.
+1. **Optional**: Gehen Sie zu **Lagerverwaltung > Arbeit > Arbeitsdetails**, um die erstellte Arbeit anzuzeigen. Es werden zwei verschiedene Arbeitskennungen erstellt. Jede Arbeitskennung hat zwei Auswahlzeilen.
 
 ### <a name="run-the-mobile-device-flow"></a>Den Ablauf für mobile Geräte ausführen
 

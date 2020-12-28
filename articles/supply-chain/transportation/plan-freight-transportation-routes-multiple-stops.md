@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 04346363070fff4dc3110a620c3d9bc9b1016d1e
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017850"
+ms.locfileid: "4429098"
 ---
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Frachtverkehrsrouten mit mehreren Zwischenstopps planen
 
@@ -43,7 +43,7 @@ Ein Routenplan enthält Routenabschnitte, die Informationen über die in der Rou
 Jede Routenplan muss einer Routenführung zugeordnet sein.
 
 ## <a name="route-guides"></a>Arbeitsplananleitungen
-Eine Routenführung definiert die Kriterien für eine Zuordnung einer Ladung zu einem bestimmten Routenplan. Beispielsweise können Sie einen Ursprungs-Hub und einen Ziel-Hub, Beschränkungen für das Containervolumen oder Gewicht und einen Spediteur, eine Dienstleistung oder eine Gruppe festlegen. Routenführungen finden Sie auf der **Routen-Workbench-Satz** -Seite. Dort können Ladungen manuell oder automatisch zu Routen zugeordnet werden. Wenn die Routenführung für eine geplante Route gedacht ist, steht sie auch auf die **Ladungserstellungsworkbench** -Seite zur Verfügung.
+Eine Routenführung definiert die Kriterien für eine Zuordnung einer Ladung zu einem bestimmten Routenplan. Beispielsweise können Sie einen Ursprungs-Hub und einen Ziel-Hub, Beschränkungen für das Containervolumen oder Gewicht und einen Spediteur, eine Dienstleistung oder eine Gruppe festlegen. Routenführungen finden Sie auf der **Routen-Workbench-Satz**-Seite. Dort können Ladungen manuell oder automatisch zu Routen zugeordnet werden. Wenn die Routenführung für eine geplante Route gedacht ist, steht sie auch auf die **Ladungserstellungsworkbench**-Seite zur Verfügung.
 
 ## <a name="scheduled-routes"></a>Arbeitspläne
 Eine geplante Route ist ein vordefinierter Routenplan, der über einen Zeitplan für die Versanddaten verfügt. Geplante Routen und nicht geplanten Routen unterscheiden sich durch die ihnen zugewiesenen Ladungen. Wenn Sie eine nicht geplante Route über den Routen-Workbench-Satz zuweisen, werden nur die Ladung und die Routenführung überprüft. Wenn Sie eine geplante Route zuweisen, werden auch die Daten und Adressen aus den Aufträgen und die Hubs, die Daten auf dem Routenplan berücksichtigt. Sie müssen die Seite "Routen-Workbench-Satz" nicht zur manuellen Zuweisung von Ladungen an eine geplante Route nutzen. Stattdessen können Sie die Seite "Ladungserstellungsworkbench" nutzen, um Ladungen auf Basis der Kundenadressen und Lieferdaten aus den Aufträgen für eine bestimmte geplante Router vorschlagen zu lassen. Für geplante Routen hat der Routenplan einen feste Start- und Ziel-Hubs. Normalerweise sind Spediteur und Dienstleistung für alle Segmente gleich. Sie können sich jedoch auch unterscheiden. Die Ziel-Hubs werden über die Postleitzahlen der im Rahmen der Route besuchten Kunden erstellt. Sie können für einen Routenplan mehrere Routen Zeitpläne definieren. Der Routenplan muss einer Routenführung zugeordnet sein. Für geplante Routen kann der Plan jedoch nur einer Routenführung zugeordnet werden. Der Routenplan wird nur zur Erstellung der tatsächlichen Routen auf der Seite **Routenzeitplan** genutzt. Sie können die Standard-Ladungsvorlage für Vorschläge zu Ladungen auf der Seite Ladungserstellungsworkbench verwenden.

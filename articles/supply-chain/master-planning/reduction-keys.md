@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981425"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428575"
 ---
 # <a name="forecast-reduction-keys"></a>Planzahlenverrechnungsschlüssel vorhersagen
 
@@ -212,7 +212,7 @@ Ein Planungsverrechnungsschlüssel wird in den Formularen **Transaktionen - Plan
 Ein Planzahlenverrechnungsschlüssel muss der Deckungsgruppe des Artikels zugewiesen werden. Gehen Sie folgendermaßen vor, um einen Planzahlenverrechnungsschlüssels eines Artikels der Dispositionssteuerungsgruppe zuzuweisen.
 
 1. Gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Planungshorizont \> Dispositionssteuerungsgruppen**
-2. Wählen Sie im Feld **Planzahlenverrechnungsschlüssel** auf der Registerkarte **Andere**den Planzahlenverrechnungsschlüssel aus, der der Deckungsgruppe zugewiesen werden soll. Der Planzahlenverrechnungsschlüssel gilt dann für die Artikel, die zur Deckungsgruppe gehören.
+2. Wählen Sie im Feld **Planzahlenverrechnungsschlüssel** auf der Registerkarte **Andere** den Planzahlenverrechnungsschlüssel aus, der der Deckungsgruppe zugewiesen werden soll. Der Planzahlenverrechnungsschlüssel gilt dann für die Artikel, die zur Deckungsgruppe gehören.
 3. Wenn der Planzahlenverrechnungsschlüsse eine Reduktion während der Produktprogrammplanung verwendet werden soll, müssen Sie diese Einstellungen in der Absatzplanung oder in den Einstellungen der Produktprogrammplanung definieren. Gehen Sie zu den folgenden Standorten:
 
     - Produktprogrammpläne \>Einstellungen \>Pläne \> Absatzplanungen

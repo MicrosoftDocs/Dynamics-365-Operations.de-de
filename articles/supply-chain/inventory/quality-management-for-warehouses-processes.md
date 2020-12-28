@@ -16,11 +16,11 @@ ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
 ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
-ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763478"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428979"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Qualitätsmanagement für Lagerortprozesse
 
@@ -369,7 +369,7 @@ Sie müssen jetzt eine Grundeinrichtung vorbereiten, die es Ihrem System ermögl
 
 1. Wählen Sie **OK** aus, um die Abfrage und die neue Lagerplatzrichtlinie zu speichern.
 
-Als Nächstes müssen Sie die Reihenfolge der vorhandenen Bestellungs-Lagerplatzrichtlinien für Lagerort 51 ändern. Die Demodaten enthalten zwei Lagerplatzrichtlinien mit einem Wert **Arbeitsauftragstyp** von _Kauf_ : Der eine trägt den Namen _51 QMS_und der andere den Namen _51 Bestellung direkt_. Um sicherzustellen, dass die Funktion *Qualitätsmanagement für Lagerortprozesse* für Lagerort 51 angewendet wird, müssen Sie sicherstellen, dass die Lagerplatzrichtlinie _51 QMS_ nicht angewendet wird. Anstatt diese Lagerplatzrichtlinie jedoch zu löschen (weil Sie sie möglicherweise zu einem späteren Zeitpunkt verwenden möchten), können Sie einfach die Reihenfolge ändern.
+Als Nächstes müssen Sie die Reihenfolge der vorhandenen Bestellungs-Lagerplatzrichtlinien für Lagerort 51 ändern. Die Demodaten enthalten zwei Lagerplatzrichtlinien mit einem Wert **Arbeitsauftragstyp** von _Kauf_ : Der eine trägt den Namen _51 QMS_ und der andere den Namen _51 Bestellung direkt_. Um sicherzustellen, dass die Funktion *Qualitätsmanagement für Lagerortprozesse* für Lagerort 51 angewendet wird, müssen Sie sicherstellen, dass die Lagerplatzrichtlinie _51 QMS_ nicht angewendet wird. Anstatt diese Lagerplatzrichtlinie jedoch zu löschen (weil Sie sie möglicherweise zu einem späteren Zeitpunkt verwenden möchten), können Sie einfach die Reihenfolge ändern.
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerplatzrichtlinien**.
 1. Wählen Sie für das Feld **Arbeitsauftragstyp** die Option _Bestellung_ aus.

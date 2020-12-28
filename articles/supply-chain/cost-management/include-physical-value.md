@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c6e70a40b15bf08d88958cbf3ee3e82ed63e7a48
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201731"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4428682"
 ---
 # <a name="include-physical-value"></a>Physischen Wert einbeziehen
 
@@ -45,7 +45,7 @@ Die Verwendung des Kontrollkästchens hat je nach genutztem Lagermodell etwas an
 -   Wird das Kontrollkästchen **Physischen Wert einbeziehen** bei Verwendung dieser Lagermodelle nicht aktiviert, werden beim Lagerabschluss lediglich Ausgleichsvorgänge für wertmäßig aktualisierte Buchungen vorgenommen.
 -   Bei Verwendung des Lagermodells mit gewichtetem Durchschnitt oder Datum für gewichteten Durchschnitt werden beim Lagerabschluss lediglich wertmäßig aktualisierte Buchungen ausgeglichen. Der Status des Kontrollkästchens **Physischen Wert einbeziehen** spielt in diesem Fall keine Rolle.
 
-**Beispiel 1** Bei aktiviertem Kontrollkästchen**Physischen Wert einbeziehen** gehen die folgenden Bestellungen ein:
+**Beispiel 1** Bei aktiviertem Kontrollkästchen **Physischen Wert einbeziehen** gehen die folgenden Bestellungen ein:
 
 -   Eine Bestellung über eine Menge von 2 und einen Einkaufspreis von 10,00 USD, die nach der Aktualisierung des Verpackungspakets aktualisiert wurde.
 -   Eine Bestellung über eine Menge von 3 und einen Einkaufspreis von 12,00 USD, die rechnungsaktualisiert wurde.

@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
 ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017482"
+ms.locfileid: "4429085"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Einrichten von Lagerorten für Umlagerungsaufträge 
 
@@ -33,7 +33,7 @@ Mithilfe von Lagerortebenen kann eine Hierarchie erstellt werden, die Umlagerung
 
 2.  Wählen Sie den Lagerort aus, der aufgefüllt werden soll.
 
-3.  Aktivieren Sie auf der **Masterplanungs** -FastTab das Kontrollkästchen **Nachfüllen**.
+3.  Aktivieren Sie auf der **Masterplanungs**-FastTab das Kontrollkästchen **Nachfüllen**.
 
 4.  Wählen Sie im Feld **Hauptlager** das Lager aus, das Sie als Nachfülllager zuordnen möchten. Die Produktprogrammplanung berechnet eine Umlagerungsanforderung für den ausgewählten Lagerort und generiert einen geplanten Umlagerungsauftrag vom zugewiesenen **Hauptlager**.
    
@@ -51,5 +51,5 @@ Mithilfe von Lagerortebenen kann eine Hierarchie erstellt werden, die Umlagerung
 Außerdem müssen Sie die Transportvorlaufzeit zwischen den Lagern auf der Seite **Transporttage** einstellen. 
 1. Gehen Sie zu **Bestandsverwaltung > Einrichtung > Verteilung > Transporttage**.
 2. Wählen Sie im Feld **Empfangsstelle** die Option **Lager**.
-3. Wählen Sie das **Versandlager** , das **Eingangslager** und die **Transporttage** aus. 
+3. Wählen Sie das **Versandlager**, das **Eingangslager** und die **Transporttage** aus. 
 4. (Optional) Sie können die Transportzeit je nach Lieferart auch unter der Registerkarte **Transporttage pro Lieferart** einstellen.
