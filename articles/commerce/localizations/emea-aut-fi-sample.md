@@ -18,11 +18,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
 ms.openlocfilehash: 586447ba324252ca0684e80471eb3aeb6c72a906
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979343"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407749"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Integrationsbeispiel für Steuererfassungsdienst für Österreich
 

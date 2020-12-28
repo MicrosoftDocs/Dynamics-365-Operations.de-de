@@ -18,11 +18,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f020c2b9a92a032f4c339de811d8c7bb11b30f58
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175715"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407755"
 ---
 # <a name="additional-acquisition-depreciation"></a>Zusätzliche Anschaffungsabschreibung
 

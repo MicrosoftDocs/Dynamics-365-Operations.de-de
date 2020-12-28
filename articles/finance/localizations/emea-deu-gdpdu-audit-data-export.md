@@ -18,11 +18,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 26a5f1762d5ab4be011e2cf1ae5118b795b3fd75
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006273"
+ms.locfileid: "4407773"
 ---
 # <a name="german-audit-file-gdpdugobd-overview"></a>Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht
 
@@ -122,7 +122,7 @@ In den folgenden Tabellen werden die allgemeinen Steuerdatenstrukturdefinitionen
 |-----|------------------------|-----------|---------------------------------------------|--------------------------------------|
 | 1   | STEUERART              | Zeichen   | Beschreibung der Steuerart                  | $TaxTrans/taxName()                                      |
 | 2   | STEUERBUCHUNGSREFERENZ | Numerisch | Gibt es hierzu eine MWST-Buchung? - lfd Nr. | $TaxTrans/$TaxTransGeneralJournalAccountEntry/$GeneralJournalAccountEntryRecId                                          |
-| 3   | CODE\_ MWST             | Zeichen   | MWST Bezeichung                             | $TaxTrans/TaxCode                                        |
+| 3   | MWST\_CODE             | Zeichen   | MWST Bezeichung                             | $TaxTrans/TaxCode                                        |
 | 4   | WERTSTELLUNG           | Datum     | Datum der Wertstellung der Buchung          | $TaxTrans/TransDate                                      |
 | 5   | BELEGNUMMER            | Zeichen   | Interne Nummer des Buchungsbelegs           | $TaxTrans/Voucher                                        |
 | 6   | BUCHUNGSWAHRUNG        | Zeichen   | Währung der Buchung                         | $TaxTrans/CurrencyCode                                   |

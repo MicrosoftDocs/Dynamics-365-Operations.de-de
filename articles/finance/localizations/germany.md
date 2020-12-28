@@ -15,12 +15,12 @@ ms.search.region: Germany
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c1aa18444f2b6cefb1b1cbe73cea7bd6e0164f4b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 8d23b60695513e3e45d87ffd4dde28b1b2494a56
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983013"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512271"
 ---
 # <a name="germany-overview"></a>Deutschland – Übersicht
 
@@ -43,10 +43,13 @@ Dieses Thema enthält Informationen und Verknüpfungen zu den Ressourcen, die f�
 - [Elster Testmerker (PDF-Download)](https://msdnshared.blob.core.windows.net/media/2018/04/Dyn365_ElsterTestmerker.pdf)
 - [Umsatzsteuererklärung für Deutschland](emea-de-vat-declaration.md)
 
+## <a name="electronic-invoices-in-germany"></a>Elektronische Rechnungen in Deutschland
+- [Elektronische Rechnungen für Kunden exportieren](emea-deu-e-invoices.md)
+
 ## <a name="credit-memos-originating-from-sales"></a>Gutschriften aus Verkäufen
 In diesem Artikel wird beschrieben, wie die Beschriftung definiert wird, die auf Gutschriften erscheinen, die vom Vertrieb stammen.
 
-Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrektur auf Verkaufsgutschrift drucken** auf der Registerkarte **Außenhandel und Logistik**verwenden, um die Beschriftung anzugeben, die in Gutschriften angezeigt wird, die vom Vertrieb stammen (Aufträge, Nichtartikelvertrieb und Projektvertrieb).
+Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrektur auf Verkaufsgutschrift drucken** auf der Registerkarte **Außenhandel und Logistik** verwenden, um die Beschriftung anzugeben, die in Gutschriften angezeigt wird, die vom Vertrieb stammen (Aufträge, Nichtartikelvertrieb und Projektvertrieb).
 
 -   Wenn die Option **Rechnungskorrektur auf Verkaufsgutschrift drucken** auf **Nein** festgelegt ist, wird die Beschriftung "Gutschrift" auf alle Gutschriften gedruckt.
 -   Wenn die Option **Rechnungskorrektur auf Verkaufsgutschrift drucken** auf **Ja** festgelegt ist, wird die Beschriftung "Rechnungskorrektur" auf Gutschriften für Aufträge, Freitextrechnungen und Projektrechnungen gedruckt.

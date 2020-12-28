@@ -18,11 +18,11 @@ ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 65ea2f40171a470cab0550aecff07567be4aaa78
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983069"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407732"
 ---
 # <a name="vat-reporting-for-europe"></a>MwSt-Berichterstattung für Europa
 
@@ -65,7 +65,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 
 ### <a name="sales-tax-codes-for-vat-reporting"></a>Mehrwertsteuercodes für MwSt-Berichterstattung
 
-<!---For general information about setting up sales tax codes, see [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md).-->  Grundbeträge und Steuerbeträge von Mehrwertsteuerbuchungen können auf Erklärungscodes im MwSt.-Bericht (XML-Markierungen oder Meldungsfelder) zusammengefasst werden. Sie können dieses einrichten, indem Sie Mehrwertsteuer-Erklärungscodes für verschiedene Buchungsarten für Mehrwertsteuercodes auf der Seite  <strong>Mehrwertsteuercodes</strong> zuordnen. Die folgende Tabelle beschreibt die Buchungsarten im Bericht, der für Mehrwertsteuercodes eingerichtet ist. Die Berechnung umfasst Buchungen für alle Quellenarten außer Mehrwertsteuer.
+<!---For general information about setting up sales tax codes, see [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md).--> Grundbeträge und Steuerbeträge von Mehrwertsteuerbuchungen können auf Erklärungscodes im MwSt.-Bericht (XML-Markierungen oder Meldungsfelder) zusammengefasst werden. Sie können dieses einrichten, indem Sie Mehrwertsteuer-Erklärungscodes für verschiedene Buchungsarten für Mehrwertsteuercodes auf der Seite <strong>Mehrwertsteuercodes</strong> zuordnen. Die folgende Tabelle beschreibt die Buchungsarten im Bericht, der für Mehrwertsteuercodes eingerichtet ist. Die Berechnung umfasst Buchungen für alle Quellenarten außer Mehrwertsteuer.
 
 <table>
 <colgroup>

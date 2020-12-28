@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183555"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407742"
 ---
 # <a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
 
@@ -87,7 +87,7 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 </tr>
 <tr class="even">
 <td><strong>Einstellungen:</strong> Steuerregistrierung von Gegenparteien</td>
-<td>Richten Sie Steuerregistrierungsinformationen für Ihre Gegenparteien entweder auf der Seite <strong>Alle Debitoren</strong> (klicken Sie auf <strong>Vertrieb und Marketing</strong> &gt; <strong> Debitoren</strong> &gt; <strong>Alle Debitoren</strong>, wählen Sie einen Debitorendatensatz aus, und klicken Sie dann auf <strong>Optionen</strong> &gt; <strong>Ansicht wechseln</strong> &gt; <strong>Detailansicht)</strong> oder der Seite <strong>Kreditoren</strong> (klicken Sie auf <strong>Beschaffung</strong> &gt; <strong>Kreditoren</strong> &gt; <strong>Kreditoren,</strong> wählen Sie einen Kreditorendatensatz aus, und klicken Sie dann auf <strong>Optionen</strong> &gt; <strong> Ansicht wechseln</strong> &gt; <strong>Detailansicht</strong>) ein. Wählen Sie im <strong>Rechnung und Lieferung</strong>-Inforegister im Feld <strong>Umsatzsteuernummer</strong> die USt-IdNr. aus.</td>
+<td>Richten Sie Steuerregistrierungsinformationen für Ihre Gegenparteien entweder auf der Seite <strong>Alle Debitoren</strong> (klicken Sie auf <strong>Vertrieb und Marketing</strong> &gt; <strong>Debitoren</strong> &gt; <strong>Alle Debitoren</strong>, wählen Sie einen Debitorendatensatz aus, und klicken Sie dann auf <strong>Optionen</strong> &gt; <strong>Ansicht wechseln</strong> &gt; <strong>Detailansicht</strong>) oder der Seite <strong>Kreditoren</strong> (klicken Sie auf <strong>Beschaffung</strong> &gt; <strong>Kreditoren</strong> &gt; <strong>Kreditoren,</strong> wählen Sie einen Kreditorendatensatz aus, und klicken Sie dann auf <strong>Optionen</strong> &gt; <strong>Ansicht wechseln</strong> &gt; <strong>Detailansicht</strong>) ein. Wählen Sie im <strong>Rechnung und Lieferung</strong>-Inforegister im Feld <strong>Umsatzsteuernummer</strong> die USt-IdNr. aus.</td>
 </tr>
 <tr class="odd">
 <td><strong>Einrichten:</strong> Mehrwertsteuer</td>
@@ -116,7 +116,7 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 <li><strong>Rundungsregel</strong> – Geben Sie eine reelle Zahl für das Runden an. ESL-Beträge werden auf das Vielfache dieser Zahl gerundet.</li>
 <li><strong>Rundungsmethode</strong> – Wählen Sie die Rundenmethode aus, die verwendet werden soll, wenn ESL-Beträge gerundet werden (<strong>Normal</strong>, <strong>Abrunden</strong> oder <strong>Aufrunden</strong>).</li>
 <li><strong>Mindestwert verwenden</strong> – Aktivieren Sie dieses Kontrollkästchen, wenn Beträge, die kleiner sind als die <strong>Rundungsregel</strong>-Zahl, auf die <strong>Rundungsregel</strong>-Zahl gerundet werden sollen.</li>
-<li><strong>Dezimalstellen</strong> – Geben Sie die Anzahl der Dezimalstellen an, die in ESL-Beträgen angezeigt werden sollen (in elektronischen Dateien und im <strong>ESL-Vorschau</strong>-Bericht.</li>
+<li><strong>Dezimalstellen</strong> – Geben Sie die Anzahl der Dezimalstellen an, die in ESL-Beträgen angezeigt werden sollen (in elektronischen Dateien und im <strong>ESL-Vorschau</strong>-Bericht).</li>
 </ul></li>
 <li><strong>Länder-/Regionsparameter</strong>-Registerkarte: Identifizieren Sie EU-Mitgliedsstaaten. Erstellen Sie für jeden EU-Mitgliedstaat einen Datensatz auf der Seite, und geben Sie die folgenden Informationen an:
 <ul>

@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: cbbfa25252074cd371b271be2f0f03ad2a687944
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175712"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407743"
 ---
 # <a name="payment-slip-report-for-europe"></a>Zahlungsbelegbericht für Europa
 
@@ -35,7 +35,7 @@ Die Funktionen für Zahlungsbelegberichte sind für die juristische Personen ver
 ## <a name="set-up-a-creditor-id-number-denmark-only"></a>Einrichten einer Kreditorenkennung (Nur Dänemark)
 Gehen Sie folgendermaßen vor, um Gläubigerkennung (ID)- Nummer des Unternehmens eingeben. Ihr Finanzinstitut stellt diese Nummer bereit. Diese Nummer wird als Referenz verwendet, wenn Debitorenzahlungen über Finanzinstitutionen empfangen werden.
 
-1.  Klicken Sie auf **Organisationsverwaltung** &gt; **Einrichten**&gt; **Organisationen** &gt; **Juristische Personen**.
+1.  Klicken Sie auf **Organisationsverwaltung** &gt; **Einrichten** &gt; **Organisationen** &gt; **Juristische Personen**.
 2.  Im Inforegister **Bankkontoinformationen** Wählen Sie das Feld **FI-Gläubiger-Kennung** und geben Sie die eindeutige achtstellige Kreditorenkennung ein.
 3.  Schließen Sie das Formular, um Ihre Änderungen zu speichern.
 
@@ -43,13 +43,13 @@ Gehen Sie folgendermaßen vor, um Gläubigerkennung (ID)- Nummer des Unternehmen
 Folgen Sie diesen Schritten und richten Sie ein Format für einen Zahlungsbeleg ein, der Verkaufsrechnungen, Freitextrechnungen, Zinsrechnungen, Mahnschreiben und Kontoauszügen beigelegt werden soll.
 
 1.  Klicken Sie auf **Debitoren** &gt; **Einstellungen** &gt; **Formulare** &gt; **Formularnotizen**.
-2.  In der Registerkarte **Rechnung** wählen Sie das Feld **Zugeordnetr Zahlungsanhang für  Debitorenrechnung** und wählen Sie das Zahlungsbelegformat aus.
+2.  In der Registerkarte **Rechnung** wählen Sie das Feld **Zugeordneter Zahlungsanhang für Debitorenrechnung** und wählen Sie das Zahlungsbelegformat aus.
 3.  In den Registerkarten **Freitextrechnung,**, **Zinsrechnung**, **Mahnschreiben** und **Bankauszug** wählen Sie ein Format für einen Zahlungsbeleg, der für den Dokumenttyp verwendet werden soll.
 4.  Schließen Sie das Formular, um Ihre Änderungen zu speichern.
 
 Folgen Sie diesen Schritten und richten Sie ein Format für einen Zahlungsbeleg ein, der Projektrechnungen beigelegt werden soll.
 
-1.  Klicken Sie auf **Projektverwaltung und -buchhaltung**&gt; **Einrichten** &gt; **Formular** &gt; **Formulareinstellungen**.
+1.  Klicken Sie auf **Projektverwaltung und -buchhaltung** &gt; **Einrichten** &gt; **Formular** &gt; **Formulareinstellungen**.
 2.  Klicken Sie auf die Registerkarte **Zugeordnete Zahlungsbeilagen** und wählen Sie im Feld das Format für den Zahlungsbeleg aus.
 
 ## <a name="assign-a-payment-slip-attachment-format-to-a-customer-account"></a>Zuweisen einer Zahlungsbelegsbeilage zu einem Debitorenkonto

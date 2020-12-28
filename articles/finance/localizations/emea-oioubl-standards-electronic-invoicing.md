@@ -3,7 +3,7 @@ title: Unterstützte Standards für die elektronische Rechnungsstellung in Europ
 description: Dieses Thema beschreibt die Abdeckung für eine elektronische Rechnungsstellung für Europa.
 author: mrolecki
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c86cc90e5f441641bc14d20898e65325d7c7d716
-ms.sourcegitcommit: 1ca48d95fbff2555307cc1e5e5e23feea79a8bc1
+ms.openlocfilehash: 3ed98c268af841b1625f547c79f271f3e3a81b74
+ms.sourcegitcommit: 3d16522c00ba2d30aa43befbf1b7b3eaad377325
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763683"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4592466"
 ---
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Unterstützte Standards für die elektronische Rechnungsstellung in Europa
 
@@ -45,9 +45,24 @@ Die folgenden länderspezifischen Formate elektronischer Rechnungen stehen zur V
 -   xRechnung v.1.2 für Deutschland
 -   PEPPOL BIS Billing v.3.0 für die Europäische Union öffnen
 -   Estnisches spezifisches Format, Version 1.2
--   Finvoice 3.0 für Finnland
+-   Finvoice 3.0 für Finnland
 
-Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserstellung (EB)](../../dev-itpro/analytics/general-electronic-reporting.md). Ein **Rechnungsmodell**-Datenmodell, Rechnungsmodellzuordnung sowie verschiedene länder-/regionsspezifische EB-Formatkonfigurationen für Österreich (AT), Dänemark (DK), Italien (IT), Norwegen (NO), Spanien (ES), Frankreich (FR), Belgien (BE), die Niederlande (NL), Deutschland (DE), Estland (EE), Finnland (FI) und die Europäische Union (EU).
+Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserstellung (EB)](../../dev-itpro/analytics/general-electronic-reporting.md). Für die folgenden Länder/Regionen wurde ein **Rechnungsmodell**, Datenmodell, Rechnungsmodell-Mapping und verschiedene länder-/regionenspezifische EB-Formatkonfigurationen erstellt: 
+
+- Österreich (AT)
+- Dänemark (DK)
+- Italien (IT)
+- Norwegen (NO)
+- Spanien (ES)
+- Frankreich (FR)
+- Belgien (BE)
+- Niederlande (NL)
+- Deutschland (DE)
+- Estland (EE)
+- Finnland (FI)
+- Europäische Union (EU)
+
+Das **Rechnungsmodell**, Datenmodell, Rechnungsmodell-Mapping und die länder-/regionenspezifische EB-Formatkonfigurationen umfassen:
 
 -   OIOUBL Vertriebsrechnung – für AT, DK und NO
 -   OIOUBL Vertriebsgutschrift – für AT, DK und NO
@@ -80,7 +95,17 @@ Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserst
 -   Vertriebsrechnung (FI)
 -   Projektrechnung (FI)
 
-Die von Ihnen erstellten elektronischen Rechnungen und Gutschriften enthalten die erforderlichen Informationen, wie beispielsweise die EAN-Nummer (European Article Numbering), den Ansprechpartner, die Kontonummer sowie Adressinformationen für den Kunden. Bei der Erstellung von Rechnungen werden Auswertungsregeln angewendet, Sie können also überprüfen, ob die richtigen Informationen eingetragen wurden. Welche Informationen gefordert werden, unterscheidet sich für die einzelnen Länder. Die Anforderungen und die unterstützten Länder und Formate verändern sich in unregelmäßigen Abständen, Sie sollten also immer die Bibliothek der freigegebenen Anlagen in Microsoft Dynamics Lifecycle Services (LCS) besuchen und die aktuellste Liste der verfügbaren Dateien mit dem Anlagentyp der **GER-Konfiguration** abfragen.
+Die von Ihnen erstellten elektronischen Rechnungen und Gutschriften enthalten die erforderlichen Informationen, wie beispielsweise die EAN-Nummer (European Article Numbering), den Ansprechpartner, die Kontonummer sowie Adressinformationen für den Kunden. Bei der Erstellung von Rechnungen werden Auswertungsregeln angewendet, Sie können also überprüfen, ob die richtigen Informationen eingetragen wurden. Welche Informationen gefordert werden, unterscheidet sich für die einzelnen Länder. Die Anforderungen und die unterstützten Länder und Formate verändern sich in unregelmäßigen Abständen, Sie sollten also immer zur Bibliothek der freigegebenen Anlagen in Microsoft Dynamics Lifecycle Services (LCS) gehen und die aktuellste Liste der verfügbaren Dateien mit dem Anlagentyp der **GER-Konfiguration** abfragen.
+
+## <a name="electronic-invoice-configuration"></a>Elektronische Rechnungskonfiguration
+Die Einrichtung und Besonderheiten elektronischer Rechnungen hängen von dem Land/der Region ab, für das/die sie implementiert sind. Weitere Informationen zum Einrichten und Verwenden elektronischer Kundenrechnungen finden Sie in den entsprechenden länderspezifischen Themen:
+
+- [Italien](emea-ita-e-invoices.md)
+- [Norwegen](emea-nor-e-invoices.md)
+- [Deutschland](emea-deu-e-invoices.md)
+- [Finnland](https://support.microsoft.com/help/4559937)
+- [Estland](https://support.microsoft.com/help/4552679)
+- [PEPPOL](https://support.microsoft.com/help/4490320)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 Weitere Informationen über die Einrichtung elektronischer Rechnungen finden Sie in den folgenden [Aufgabenleitfäden](../../fin-and-ops/get-started/help-overview.md#task-guides) im Feld Hilfe:
@@ -90,4 +115,4 @@ Weitere Informationen über die Einrichtung elektronischer Rechnungen finden Sie
  - Einrichten von Debitorenkonten für die elektronische Fakturierung per OIOXML
 
 > [!NOTE] 
-> Diese Aufgabenleitfäden wurden für das für Dänemark spezifische Format elektronischer Rechnungen erstellt, *OIOUBL*, sie gelten jedoch mit geringen Abweichungen auch für andere unterstütze Länder.
+> Diese Aufgabenleitfäden wurden für das für Dänemark spezifische Format elektronischer Rechnungen erstellt, *OIOUBL*, sie gelten jedoch mit geringen Abweichungen auch für andere unterstütze Länder/Regionen.

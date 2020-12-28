@@ -17,11 +17,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 006a3eb2aae6c414ffd087fe67ca48b648a0f865
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141542"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407766"
 ---
 # <a name="de-00002-depreciation-adjustments-for-additional-acquisitions-in-the-second-year"></a>DE-00002 Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr
 

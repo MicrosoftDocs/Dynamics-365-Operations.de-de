@@ -17,11 +17,11 @@ ms.author: v-lenest
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.0
 ms.openlocfilehash: 089178474c44ce4efa3c74a4183e2a80b68d9303
-ms.sourcegitcommit: baab88d037ebf26e6c8822d96056e5ee475877aa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3369575"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407756"
 ---
 # <a name="vat-declaration-for-germany"></a>Umsatzsteuererklärung für Deutschland
 
@@ -56,7 +56,7 @@ Richten Sie die Codes für die Mehrwertsteuererklärung ein, indem Sie die Anwei
 <tbody>
 <tr>
 <td colspan="4" width="614">
-<p><strong>Steuerfreier Verkauf mit Vorsteuerabzug für innergemeinschaftliche Lieferungen (&sect;4, Nr. 1b des UStG [Umsatzsteuergesetz</strong><strong> oder </strong><strong>Mehrwertsteuergesetz])</strong></p>
+<p><strong>Steuerfreier Verkauf mit Vorsteuerabzug für innergemeinschaftliche Lieferungen (&sect; 4, Nr. 1b des UStG [Umsatzsteuergesetz</strong><strong></strong><strong>])</strong></p>
 </td>
 </tr>
 <tr>

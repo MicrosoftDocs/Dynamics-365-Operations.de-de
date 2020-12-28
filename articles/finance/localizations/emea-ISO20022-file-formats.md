@@ -17,11 +17,11 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773430"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407738"
 ---
 # <a name="import-iso20022-files"></a>ISO20022-Dateien importieren
 
@@ -107,7 +107,7 @@ Die importierten Informationen können auf der Seite **Zahlungstransfers** angez
 
 ## <a name="additional-details"></a>Zusätzliche Details
 
-Wenn Sie eine Formatkonfiguration in LCS importieren, importieren Sie die gesamte Konfigurationsstruktur, was bedeutet, dass Varianten«» der Modell- und Modellzuordnung enthalten sind. Im Zahlungsmodell ab Version 8 werden die Zuordnungen in separaten ER-Konfigurationen in der Lösungsstruktur (Zahlungsmodellzuordnung 1611, Zahlungsmodell zum Ziel ISO20022, usw.). Es gibt viele verschiedene Zahlungsformate unter einem Modell (Zahlungsmodell) und getrennte  Zuordnungshandhabung ist zentral für eine einfache Lösungsverwaltung. Hierzu nehmen Sie beispielsweise dieses Szenarios: Sie nutzen ISO20022 Zahlungen, um Banküberweisungsdateien zu generieren und dann importieren Sie die Rückgabemeldungen von der Bank. In diesem Szenario sollten Sie die folgenden Einstellungen nutzen:
+Wenn Sie eine Formatkonfiguration in LCS importieren, importieren Sie die gesamte Konfigurationsstruktur, was bedeutet, dass Varianten«» der Modell- und Modellzuordnung enthalten sind. Im Zahlungsmodell ab Version 8 werden die Zuordnungen in separaten ER-Konfigurationen in der Lösungsstruktur (Zahlungsmodellzuordnung 1611, Zahlungsmodell zum Ziel ISO20022, usw.). Es gibt viele verschiedene Zahlungsformate unter einem Modell (Zahlungsmodell) und getrennte Zuordnungshandhabung ist zentral für eine einfache Lösungsverwaltung. Hierzu nehmen Sie beispielsweise dieses Szenarios: Sie nutzen ISO20022 Zahlungen, um Banküberweisungsdateien zu generieren und dann importieren Sie die Rückgabemeldungen von der Bank. In diesem Szenario sollten Sie die folgenden Einstellungen nutzen:
 
  - **Zahlungsmodell**
  - **Zahlungsmodellzuordnung 1611** – Diese Zuordnung wird verwendet, um die Exportdatei zu generieren
@@ -117,7 +117,7 @@ Wenn Sie eine Formatkonfiguration in LCS importieren, importieren Sie die gesamt
  - **Pain.002** – Dieses Format wird zusammen mit dem Zahlungsmodell verwendet, das sich auf das ISO20022 Ziel bezieht, um die Datei pain.002 in Kreditorenzahlungsübergangserfassung zu importieren
  - **Camo.054** – Dieses Format wird zusammen mit dem Zahlungsmodell verwendet, das sich auf das ISO20022 Ziel bezieht, um die Datei camt.054 in Kreditorenzahlungsübergangserfassung zu importieren Dieselbe Formatkonfiguration wird in den Debitorenzahlungsimportfunktionen verwendet, aber unterschiedliche Zuordnung wird im Zahlungsmodell verwendet, das zur Konfiguration des Ziels ISO20022 bezieht.
 
-Weitere Informationen über die elektronische Berichterstattung finden Sie unter[Elektronischer Berichterstellungsüberblick](../../dev-itpro/analytics/general-electronic-reporting.md).
+Weitere Informationen über die elektronische Berichterstattung finden Sie unter [Elektronischer Berichterstellungsüberblick](../../dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Kreditorenzahlungen mithilfe eines ISO20022-Zahlungsformats erstellen und exportieren](./tasks/create-export-vendor-payments-iso20022-payment-format.md)

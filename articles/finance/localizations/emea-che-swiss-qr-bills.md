@@ -17,11 +17,11 @@ ms.author: v-lenest
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 1c58aa35dacb719eeef3a9b8d5f4904beefc73a0
-ms.sourcegitcommit: f19fe09cbf956da4d4b8c12a8d8792cadec6fc09
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225336"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407758"
 ---
 # <a name="swiss-qr-bills"></a>Schweizer QR-Rechnungen
 
@@ -83,7 +83,7 @@ Die Zahlungsmethode sollte auf den Kundenkonten eingerichtet werden, die QR-Rech
 
 Die Standardzahlungsmethode muss ausgewählt und der Zahlungs-ID-Typ muss ausgefüllt werden, wenn er nicht bereits in der Standardeinstellung für Kundengruppen auf der Seite **Debitorenparameter** angegeben ist.
 
-In der Feldgruppe  **Zugehöriger Zahlungsanhang** wird der neue Typ, **QR-Rechnung** hinzugefügt. Wenn diese Option ausgewählt ist, wird die QR-Rechnung gedruckt, wenn das Dokument des entsprechenden Typs gedruckt wird.
+In der Feldgruppe **Zugehöriger Zahlungsanhang** wird der neue Typ, **QR-Rechnung** hinzugefügt. Wenn diese Option ausgewählt ist, wird die QR-Rechnung gedruckt, wenn das Dokument des entsprechenden Typs gedruckt wird.
 
 ### <a name="giro-report-processing-group"></a>Berichtsverarbeitungsgruppe für Girokonto
 

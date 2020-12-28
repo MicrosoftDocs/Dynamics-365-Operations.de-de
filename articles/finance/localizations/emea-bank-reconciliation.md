@@ -18,11 +18,11 @@ ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 3fbdefce85fbd7aee228cdcb58f29007478c1485
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772874"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407734"
 ---
 # <a name="bank-statement-and-payment-reconciliation-for-the-eu"></a>Bankauszug und Zahlungsabstimmung für die EU
 
@@ -47,7 +47,7 @@ Neben einem Bankauszug können Banken bestimmte Meldungen bereitstellen, die Inf
 ### <a name="import-formats"></a>Importformat
 
 -   [ISO 20022 camt.054](emea-ISO20022-file-formats.md)-Bankbenachrichtigungsmitteilung
--   [Netzwerkimportformat ](emea-nor-nets-import-format.md)
+-   [Netzwerkimportformat](emea-nor-nets-import-format.md) – komplexe Funktion für norwegische Zahlungsformate
 -   [ESR-Debitorenzahlungen für Importe](emea-che-esr-customer-payments-import.md) 
 -   Importieren Sie Zahlungsformate für Schweden - BankGirot-Maximum und BankGirot OCR-Formate
 

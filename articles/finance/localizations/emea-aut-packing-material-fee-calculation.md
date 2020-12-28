@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 0957e50a310da076352f9f5140ae7b6c6109f56e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175719"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407736"
 ---
 # <a name="packing-material-fee-calculation-for-austria"></a>Bericht "Berechnung der Verpackungsmaterialgebühren" für Österreich
 
@@ -30,7 +30,7 @@ ms.locfileid: "2175719"
 
 Dieses Thema enthält Informationen zu Verpackungsmaterialsätze und Gebühren in Österreich.
 
-In Europa gibt es Verpackungsmüll-Bestimmungen. Diese Bestimmungen arbeiten mit dem Prinzip "Kollektiherstellerzuständigkeit. " Das bedeutet, sie erzwingen die Anforderung, für die der Verkäufer oder Hersteller von Verpackungen für die  Umwelteinwirkung dieser Zuständigkeit für die Verpackung Verantwortung übernehmen. Entsprechend den Bestimmungen sind Hersteller dazu verpflichtet, einen Teil der Kosten und des Wiederverwendens der Beitreibung der Verpackung zu bezahlen. Diese Zahlung ist als Verpackungsmaterialgebühr bekannt<em>,</em> und wird periodisch dem Recyclingunternehmen bezahlt. Ein Unternehmen muss das Gewicht jeder Typ Verpackungsmaterial Papier (, Plastik, Metall, usw.) berechnen das während eines Verkaufs oder eines Einkaufs verwendet wurde, und das Gewicht nach dem Satz des Pakets multiplizieren. Die Regierungsbehörde stellt den Verpackungsmaterialsatz für jeden Paketmaterialtyp bereit. In Österreich wird eine komplexere Formel für Verpackungsmaterialgebühren verwendet. Verpackungsmaterialien werden in verschiedene Kategorien gruppieren (beispielsweise, Haushalt und Werbung" dividiert, und stellt für die Behörde von Verpackungsmaterialien in den einzelnen Kategorien verfügbar. Die Kategorie, in die das Verpackungsmaterial gehört, hängt von der Größe und den Produkten ab, die für die Verpackung verwendet wurde. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind.
+In Europa gibt es Verpackungsmüll-Bestimmungen. Diese Bestimmungen arbeiten mit dem Prinzip "Kollektiherstellerzuständigkeit. " Das bedeutet, sie erzwingen die Anforderung, für die der Verkäufer oder Hersteller von Verpackungen für die Umwelteinwirkung dieser Zuständigkeit für die Verpackung Verantwortung übernehmen. Entsprechend den Bestimmungen sind Hersteller dazu verpflichtet, einen Teil der Kosten und des Wiederverwendens der Beitreibung der Verpackung zu bezahlen. Diese Zahlung ist als Verpackungsmaterialgebühr bekannt<em>,</em> und wird periodisch dem Recyclingunternehmen bezahlt. Ein Unternehmen muss das Gewicht jeder Typ Verpackungsmaterial Papier (, Plastik, Metall, usw.) berechnen das während eines Verkaufs oder eines Einkaufs verwendet wurde, und das Gewicht nach dem Satz des Pakets multiplizieren. Die Regierungsbehörde stellt den Verpackungsmaterialsatz für jeden Paketmaterialtyp bereit. In Österreich wird eine komplexere Formel für Verpackungsmaterialgebühren verwendet. Verpackungsmaterialien werden in verschiedene Kategorien gruppieren (beispielsweise, Haushalt und Werbung) dividiert, und stellt für die Behörde von Verpackungsmaterialien in den einzelnen Kategorien verfügbar. Die Kategorie, in die das Verpackungsmaterial gehört, hängt von der Größe und den Produkten ab, die für die Verpackung verwendet wurde. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 <table>
@@ -49,8 +49,8 @@ In Europa gibt es Verpackungsmüll-Bestimmungen. Diese Bestimmungen arbeiten mit
 <td>Kategoriehierarchien</td>
 <td>Sie müssen Kategoriehierarchien für Produkte erstellen. Für jede Kategoriehierarchie erstellen Sie Knoten, die als Produktgruppen für die Berechnung der Verpackungsmaterialgebühren verwendet werden. Sie müssen einen Kategoriehierarchietyp für Verpackungsmaterialien erstellen und die Kategoriehierarchie auf setzen. <strong>Verpackung</strong> <strong></strong> <strong>Hinweis:</strong> Sie können eine Verpackungskategoriehierarchie für nur einen Kategoriehierarchietyp einrichten. Nachdem Sie Kategoriehierarchien erstellt haben, führen Sie die folgenden Schritte aus, um ein Produkt in einer Kategoriehierarchie zuzuordnen.
 <ol>
-<li>Doppelklicken Sie auf der Listenseite  auf ein<strong>Produkts</strong>  in der Liste.</li>
-<li>Klicken Sie auf der Schaltfläche <strong>Produkte</strong>auf <strong>Produktakategorien</strong>.</li>
+<li>Doppelklicken Sie auf der Listenseite auf ein <strong>Produkts</strong> in der Liste.</li>
+<li>Klicken Sie auf der Schaltfläche <strong>Produkte</strong> auf <strong>Produktakategorien</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -99,7 +99,7 @@ Gewicht und Gebühren des Verpackungsmaterials werden sowohl für Bestell- als a
 ## <a name="calculate-packing-material-fees"></a>Verpackungsmaterialgebühren berechnen
 Verwenden Sie die Verpackungsmaterialberechnungserfassung, um Gebühren für das Verpackungsmaterial zu berechnen und den **Verpackungsmaterialgebühren** Bericht zu drucken.
 
-1.  Klicken Sie auf  **Neu** und geben Sie die folgenden Feldinformationen ein:
+1.  Klicken Sie auf **Neu** und geben Sie die folgenden Feldinformationen ein:
     -   **Datum ab**– Geben Sie das Startdatum des Journals an.
     -   **Datum bis**– Geben Sie das Enddatum des Journals an.
     -   **Speicherdetails** – Aktivieren Sie dieses Kontrollkästchen, wenn Sie Berechnungsdetails prüfen möchten.
@@ -108,7 +108,7 @@ Verwenden Sie die Verpackungsmaterialberechnungserfassung, um Gebühren für das
 3.  Klicken Sie auf **Berechnungsdetails**, um die **Berechnungsdetails**-Seite zu öffnen, in der alle Daten zu allen Buchungen für die Erfassungsperiode zu verschiedenen Tarifkategorien zugewiesen werden.
 
 ## <a name="print-the-packing-materials-fee-calculation-report"></a>Bericht "Berechnung der Verpackungsmaterialgebühren" drucken
-Der Bericht **Berechnung der Verpackungsmaterialgebühren** enthält Daten zu Verpackungsmaterialgebühren, die berechnet wurden, indem österreichische Regeln eingerichtet werden. Um diesen Bericht zu drucken, wählen Sie auf der Seite **Verpackungsmaterialberechnungserfassung**die berechnete Erfassung aus und klicken dann **Bericht drucken**.
+Der Bericht **Berechnung der Verpackungsmaterialgebühren** enthält Daten zu Verpackungsmaterialgebühren, die berechnet wurden, indem österreichische Regeln eingerichtet werden. Um diesen Bericht zu drucken, wählen Sie auf der Seite **Verpackungsmaterialberechnungserfassung** die berechnete Erfassung aus und klicken dann **Bericht drucken**.
 
 
 

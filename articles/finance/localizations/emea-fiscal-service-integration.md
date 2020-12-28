@@ -17,11 +17,11 @@ ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: d47016732dfb31b810f4e3bd3b1d534baee63a23
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773475"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407741"
 ---
 # <a name="fiscal-service-esr-integration"></a>Integration von steuerlichem Dienst (ESR)
 

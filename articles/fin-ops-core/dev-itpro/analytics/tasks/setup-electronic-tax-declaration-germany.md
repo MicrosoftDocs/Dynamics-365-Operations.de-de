@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxElectronicHTTPServer
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Germany
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3a125d0e138824b74388a27d0011c3e23f6b092a
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 215daa0597d8e61bfed0b65b4e8864b09c850e03
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143143"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684077"
 ---
 # <a name="set-up-electronic-tax-declaration-for-germany"></a>Einrichtung der elektronischen Steuererklärung für Deutschland
 

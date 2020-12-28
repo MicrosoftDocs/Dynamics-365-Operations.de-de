@@ -18,11 +18,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 46a4180163adea72e7d8712ed5ce6a3306e477c5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175713"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407752"
 ---
 # <a name="eu-entry-certificates"></a>EU-Gelangensbestätigungen
 
@@ -76,7 +76,7 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 </table>
 
 ## <a name="creating-registering-and-uploading-an-eu-entry-certificate"></a>Erstellen, Erfassen und Hochladen einer EU-Gelangensbestätigung
-Sie können eine EU-Gelangensbestätigung automatisch oder manuell erstellen. Eine EU-Eingangssbestätigung wird automatisch erstellt und gedruckt, wenn Sie einen Lieferschein oder eine Rechnung für einen Debitor über die Seite **Lieferschein buchen** oder **Rechnung buchen**. Um eine EU-Eingangsbestätigung für eine Kundenrechnung manuell zu erstellen oder neu zu drucken, verwenden Sie die Seite**Rechnungserfassung**-. Darüber hinaus können Sie mithilfe der Seite **Gelangensbestätigungsjournal** Details zu einer EU-Gelangensbestätigung eingeben, die von einem Dritten ausgestellt wurde.
+Sie können eine EU-Gelangensbestätigung automatisch oder manuell erstellen. Eine EU-Eingangssbestätigung wird automatisch erstellt und gedruckt, wenn Sie einen Lieferschein oder eine Rechnung für einen Debitor über die Seite **Lieferschein buchen** oder **Rechnung buchen**. Um eine EU-Eingangsbestätigung für eine Kundenrechnung manuell zu erstellen oder neu zu drucken, verwenden Sie die Seite **Rechnungserfassung**. Darüber hinaus können Sie mithilfe der Seite **Gelangensbestätigungsjournal** Details zu einer EU-Gelangensbestätigung eingeben, die von einem Dritten ausgestellt wurde.
 
 ### <a name="creating-an-eu-entry-certificate-automatically-or-manually"></a>Eine EU-Gelangensbestätigung automatisch oder manuell erstellen
 

@@ -17,11 +17,11 @@ ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9c47412c8ae68b396de41f04731b841f592dcba9
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830143"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407733"
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a>Buchungen an Intrastat übertragen
 
@@ -51,7 +51,7 @@ Diese Prozedur zeigt Ihnen Schritt für Schritt, wie Sie Intrastat-Parameter ein
 1. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise nach dem Feld **Name** mit dem Wert **Vertrieb**.
 2. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 3. Erweitern Sie **einen Kategorieknoten** in der Struktur. Erweitern Sie beispielsweise **Vertriebshierarchie\Audiogeräte für Zuhause**.  
-4. Wählen Sie in der Struktur **die Kategorie aus, die dem Warencode zugewiesen werden soll**. Wählen Sie beispielsweise „Vertriebshierarchie\Audiogeräte für Zuhause\Lautsprecher“ aus.  
+4. Wählen Sie in der Struktur **die Kategorie aus, die dem Warencode zugewiesen werden soll**. Wählen Sie beispielsweise **Vertriebshierarchie\Audiogeräte für Zuhause\Lautsprecher** aus.  
 5. Erweitern Sie das Inforegister **Warencodes**.
 6. Klicken Sie auf **Hinzufügen**.
 7. Wählen Sie im Feld **Hierarchie auswählen** die Option **Intrastat** aus.

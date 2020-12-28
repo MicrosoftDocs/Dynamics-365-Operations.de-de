@@ -18,11 +18,11 @@ ms.author: v-kikozl
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: 10.0.12
 ms.openlocfilehash: 84f48ebfa20755d6a37271d8a14f287f3e86539f
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973995"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407739"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Integrationsbeispiel für Steuererfassungsdienst für Deutschland
 
@@ -118,9 +118,9 @@ Der Vorgang **Nichtverkaufstransaktionen** werden im Steuerregistrierungsdienst 
 Alle Transaktionen müssen von einem TSE signiert werden, um ihre Integrität, Authentizität und Vollständigkeit sicherzustellen und um die Manipulation aufgezeichneter Daten zu verhindern.
 
 > [!WARNING]
-> Es kann nur ein zertifizierter TSE verwendet werden. Informationen zu den Typen und Modellen von TSEs, die von der EFR-Lösung unterstützt werden, finden Sie im EFR-Handbuch \[DE \] Dokument, das auf der Website [EFSTA-Dokumentation](https://public.efsta.net/efr/) veröffentlicht wird. Informationen zur Auswahl und zum Erhalt eines TSE erhalten Sie von [EFSTA](https://www.efsta.eu/at/kontakt).
+> Es kann nur ein zertifizierter TSE verwendet werden. Informationen zu den Typen und Modellen von TSEs, die von der EFR-Lösung unterstützt werden, finden Sie im EFR-Handbuch \[DE\] Dokument, das auf der Website [EFSTA-Dokumentation](https://public.efsta.net/efr/) veröffentlicht wird. Informationen zur Auswahl und zum Erhalt eines TSE erhalten Sie von [EFSTA](https://www.efsta.eu/at/kontakt).
 
-Vorschriften in Deutschland erfordern Unterstützung für den DSFinV-K-Export. Der DSFinV-K-Export kann in der EFR-Lösung ausgelöst werden. Weitere Informationen zum DSFinV-K-Export finden Sie im EFR-Handbuch \[DE \] Dokument, das auf der Website [EFSTA-Dokumentation](https://public.efsta.net/efr/) veröffentlicht wird.
+Vorschriften in Deutschland erfordern Unterstützung für den DSFinV-K-Export. Der DSFinV-K-Export kann in der EFR-Lösung ausgelöst werden. Weitere Informationen zum DSFinV-K-Export finden Sie im EFR-Handbuch \[DE\] Dokument, das auf der Website [EFSTA-Dokumentation](https://public.efsta.net/efr/) veröffentlicht wird.
 
 ### <a name="default-data-mapping"></a>Standarddatenzuordnung
 
