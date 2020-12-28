@@ -18,17 +18,17 @@ ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: 6d52e7e5203a4c311afb56259e9e1800ee0e5161
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428919"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418667"
 ---
 # <a name="personnel-actions-faq"></a>FAQs zu Personalaktivitäten
 
 Dieser Artikel enthält Antworten auf Fragen, die Sie möglicherweise haben, wenn Ihre Organisation Mitarbeiteraktivitäten verwendet. Mitarbeiteraktivitäten sind zusätzliche Schritte, die Sie ausführen müssen, wenn Sie bestimmte mitarbeiterbezogene Aufgaben ausführen. Beispiele für Aufgaben, die möglicherweise Mitarbeiteraktivitäten erforderten, sind, wenn Sie neue Positionen erstellen, vorhandene Positionswerte ändern, neue Arbeitskräfte einstellen, Arbeitskräfte übertragen, Arbeitskraftvergütung ändern, Positionszuordnungen ändern oder Arbeitskräfte beenden.
 
-**Hinweis**Personalaktivitäten sind nur aktiviert, wenn **Arbeitskraftaktionen aktivieren** und **Positionsaktionen aktivieren** auf **Ja** gesetzt sind in der Registerkarte **Personalaktivitäten** auf der Seite **Freigegebene Parameter für Personalverwaltung**. 
+**Hinweis** Personalaktivitäten sind nur aktiviert, wenn **Arbeitskraftaktionen aktivieren** und **Positionsaktionen aktivieren** auf **Ja** gesetzt sind in der Registerkarte **Personalaktivitäten** auf der Seite **Freigegebene Parameter für Personalverwaltung**. 
 
 ## <a name="how-can-i-tell-if-my-organization-requires-personnel-actions"></a>Wie kann ich wissen, ob meine Organisation Mitarbeiteraktivitäten benötigt?
 Mitarbeiteraktivitäten werden von der Organisation vorgegeben, wenn Sie aufgefordert werden, eine Mitarbeiteraktivität auszuwählen, wenn Sie neue Positionen erstellen, vorhandene Positionen ändern, neue Arbeitskräfte einstellen, Arbeitskräfte übertragen, Arbeitskraftvergütung ändern, Positionszuordnungen ändern, Arbeitskräfte beendenoder Urlaub für Arbeitskräfte eingeben. 

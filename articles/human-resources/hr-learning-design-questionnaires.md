@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429565"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418739"
 ---
 # <a name="design-questionnaires"></a>Entwerfen von Fragebögen
 
@@ -91,7 +91,7 @@ Nummernkreiscodes werden verwendet, um Fragen und Antworten zu organisieren. Bas
 Alle Parameter sollten definiert worden sein, bevor Sie mit der Datenerstellung beginnen. Sie können die Fragebogenparametereinstellungen jederzeit ändern.
 
 ## <a name="questionnaire-components"></a>Fragebogen-Komponenten
-Fragebögen enthalten drei wichtigste Elemente: Antwortgruppen, die für die Antworten Auswahlfragen, Fragen und Fragebogen selbst enthalten.Sie können die Fragen für einen Fragebogen optional in Ergebnisgruppen gruppieren. Mithilfe von Ergebnisgruppen können Sie Fragen kategorisieren und für weitere Analysen auf dem Fragebogen bereitstellen. 
+Fragebögen enthalten drei wichtigste Elemente: Antwortgruppen, die für die Antworten Auswahlfragen, Fragen und Fragebogen selbst enthalten. Sie können die Fragen für einen Fragebogen optional in Ergebnisgruppen gruppieren. Mithilfe von Ergebnisgruppen können Sie Fragen kategorisieren und für weitere Analysen auf dem Fragebogen bereitstellen. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 

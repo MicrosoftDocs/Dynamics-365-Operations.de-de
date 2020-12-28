@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 0158bd4ee74e24006e338c0477ee0ac4210b1bf5
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429358"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418602"
 ---
 # <a name="edit-personal-information"></a>Persönliche Daten bearbeiten
 
@@ -56,7 +56,7 @@ Die im globalen Adressbuch festgelegten Parameter bestimmen die Rollen, in denen
 
     - Wählen Sie zum Hinzufügen einer neuen Kontaktinformation **Hinzufügen** aus. Bearbeiten Sie die Felder wie gewünscht.
     - Um eine vorhandene Kontaktinformation zu bearbeiten, wählen Sie das Element aus und wählen Sie dann **Bearbeiten**. Bearbeiten Sie die Felder wie gewünscht.
-    - Um ein Kontaktdetail als privat festzulegen, wählen Sie das Element aus und wählen Sie **Erweitert**und stellen Sie dann die Option **Privat** auf **Ja** um. Wählen Sie **OK**.
+    - Um ein Kontaktdetail als privat festzulegen, wählen Sie das Element aus und wählen Sie **Erweitert** und stellen Sie dann die Option **Privat** auf **Ja** um. Wählen Sie **OK**.
   
 5. Um Ihre persönlichen Kontakte zu ändern, wählen Sie die Registerkarte **Persönliche Kontakte** aus. Sie können Notfallkontakte, Begünstigte und abhängige Personen festlegen. Ein Kontakt kann eine Person oder eine Organisation sein. Die Funktion **Vorteilsverwaltung** verwendet persönliche Kontaktinformationen. Weitere Informationen finden Sie unter [Berechtigungsoptionen für persönliche Kontakte konfigurieren](hr-benefits-setup-contact-eligibility-options.md).
 
@@ -67,7 +67,7 @@ Die im globalen Adressbuch festgelegten Parameter bestimmen die Rollen, in denen
 
 7. Um die Methoden zu ändern, mit denen Sie bezahlt werden, wählen Sie die Regiserkarte **Meine Zahlungsinformationen** aus. Diese Registerkarte ist nur verfügbar, wenn Zahlungsmethoden im Formular **Personalparameter** aktiviert sind. HR kann **Bankwechsel**, **Bargeld**, **Scheck**, **Elektronische Zahlung**, oder **Sonstige** aktivieren. HR kann auch die elektronische Zahlungsvalidierung (die für die US-Lohn- und Gehaltsabrechnung verwendet wird) sowie die Validierung von Bankkonten und Bankleitzahlen deaktivieren.
 
-8. Um das Bild zu ändern, das in der Personalabteilung für Ihr Profil angezeigt wird, wählen Sie die Registerkarte**Bild** aus. Abhängig von den Einstellungen Ihres Unternehmens werden Bilder möglicherweise zur Genehmigung weitergeleitet.
+8. Um das Bild zu ändern, das in der Personalabteilung für Ihr Profil angezeigt wird, wählen Sie die Registerkarte **Bild** aus. Abhängig von den Einstellungen Ihres Unternehmens werden Bilder möglicherweise zur Genehmigung weitergeleitet.
 
     - Um ein Bild hochzuladen, wählen Sie **Neues Bild hochladen**.
     - Um ein Bild zu entfernen, wählen Sie das Bild aus und wählen Sie dann **Entfernen**.
