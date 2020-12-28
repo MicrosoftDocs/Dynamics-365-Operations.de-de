@@ -18,11 +18,11 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 39a9ba54ba26db5904c2cd519be9f83bbc68c037
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022518"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "4443747"
 ---
 # <a name="vendor-payments-workspace"></a>Arbeitsbereich für Kreditorenzahlungen
 
@@ -33,11 +33,11 @@ Im Arbeitsbereich für **Kreditorenzahlungen** werden Informationen angezeigt, d
 ## <a name="setup-needed-to-view-power-bi-content"></a>Einrichtung erforderlich, um Power BI-Inhalt anzuzeigen
 
 Die folgende Einrichtung muss abgeschlossen werden, damit Daten in grafischen Elementen **Lieferantenzahlungen** Power BI angezeigt werden.
-1. Wechseln Sie zu **Systemverwaltung > Einrichtung > Systemparameter** , um **Systemwährung** und **Systemwechselkurs** festzulegen.
-2. Wechseln Sie zu **Hauptbuch > Kalender > Steuerkalender** , um Steuerkalenderdaten zu überprüfen, die der aktiven Zeitperiode zugewiesen sind.
-3. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto** , um **Buchhaltungswährung** und **Wechselkurstyp** festzulegen. 
+1. Wechseln Sie zu **Systemverwaltung > Einrichtung > Systemparameter**, um **Systemwährung** und **Systemwechselkurs** festzulegen.
+2. Wechseln Sie zu **Hauptbuch > Kalender > Steuerkalender**, um Steuerkalenderdaten zu überprüfen, die der aktiven Zeitperiode zugewiesen sind.
+3. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto**, um **Buchhaltungswährung** und **Wechselkurstyp** festzulegen. 
 4. Definieren Sie Wechselkurse zwischen Buchungswährungen und Buchhaltungswährung und Buchhaltungswährung und Systemwährung. Wechseln Sie dazu zu **Hauptbuch > Währungen > Währungswechselkurse**.
-5. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher** , um die **VendPaymentBIMeasureV2** Aggregatmessung zu aktualisieren.
+5. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **VendPaymentBIMeasureV2** Aggregatmessung zu aktualisieren.
 
 ## <a name="my-work-view"></a>Ansicht "Meine Arbeit"
 

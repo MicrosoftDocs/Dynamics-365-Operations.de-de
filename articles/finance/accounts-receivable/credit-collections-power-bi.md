@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.sourcegitcommit: 219aa992b1f4c913f26243eeb7e40a383fa1ca67
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040052"
+ms.locfileid: "4443758"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-Inhalt zur Kredit- und Inkassoverwaltung
 
@@ -46,11 +46,11 @@ Standardmäßig wird die Kredit- und Inkassodaten für das aktuelle Unternehmen 
 
 Die folgende Einrichtung muss abgeschlossen werden, damit Daten in grafischen Elementen **Debitorenkredit und Inkassos** Power BI angezeigt werden.
 
-1. Wechseln Sie zu **Systemverwaltung > Einrichtung > Systemparameter** , um **Systemwährung** und **Systemwechselkurs** festzulegen.
-2. Wechseln Sie zu **Hauptbuch > Kalender > Steuerkalender** , um Steuerkalenderdaten zu überprüfen, die der aktiven Zeitperiode zugewiesen sind.
+1. Wechseln Sie zu **Systemverwaltung > Einrichtung > Systemparameter**, um **Systemwährung** und **Systemwechselkurs** festzulegen.
+2. Wechseln Sie zu **Hauptbuch > Kalender > Steuerkalender**, um Steuerkalenderdaten zu überprüfen, die der aktiven Zeitperiode zugewiesen sind.
 3. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto** und legen Sie **Buchhaltungswährung** und **Wechselkurstyp** fest.
 4. Definieren Sie Wechselkurse zwischen Buchungswährungen und Buchhaltungswährung, Buchhaltungswährung und Systemwährung. Wechseln Sie dazu zu **Hauptbuch > Währungen > Währungswechselkurse**.
-5. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher** , um die **CustCollectionsBIMeasurementsV2** -Aggregatmessung zu aktualisieren.
+5. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **CustCollectionsBIMeasurementsV2**-Aggregatmessung zu aktualisieren.
 
 >[!NOTE] 
 > Altersperiodendefinitionen müssen in **Debitorenparameter > Sammlungen > Sammlungen Standardeinstellungen** eingerichtet werden, um Alterungsdaten im Power BI Inhalt zu ermöglichen.

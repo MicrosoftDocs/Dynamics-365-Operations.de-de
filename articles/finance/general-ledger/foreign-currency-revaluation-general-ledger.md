@@ -19,11 +19,11 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006212"
+ms.locfileid: "4443741"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Neubewertung der Fremdwährung für das Sachkonto
 
@@ -41,16 +41,16 @@ Wird der Neubewertungsprozess ausgeführt, wird der Saldo für jedes Hauptkonto,
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Vorbereitungen, um die Neubewertung der Fremdwährung auszuführen
 Bevor Sie den Neubewertungsprozess ausführen können, sind folgende Einstellungen erforderlich.
 
--   Auf der Seite **Hauptkonto** :
+-   Auf der Seite **Hauptkonto**:
 -   Wenn das Hauptkonto im Hauptbuch neu bewertet werden soll, wählen Sie **Neubewertung der Fremdwährung** aus. Wenn das Hauptkonto nicht neu bewertet wird (zum Beispiel für Debitor und Kreditor, wenn Sie in untergeordneten Sachkonten neu bewertet werden) deaktivieren Sie die Option.
 -   Wenn das Hauptkonto für eine Neubewertung markiert wird, geben Sie **Wechselkurstyp** ein. Dieser Wechselkurstyp wird für die Neubewertung des Hauptkontos verwendet. Ein separates Feld **Rechnungslegungswechselkurstyp** ist für die Finanzberichterstellung verfügbar. Die zwei Felder werden nicht als synchron betrachtet und lassen es zu, dass verschiedene Wechselkurstypen für die Neubewertung und Finanzberichte verwendet werden.
 
--   Auf der Seite **Sachkonto** :
+-   Auf der Seite **Sachkonto**:
 -   Geben Sie den **Wechselkurstyp** an. Wenn der Wechselkurstyp nicht im Hauptkonto definiert ist, wird dieser Wechselkurstyp für die Neubewertung der Fremdwährung verwendet.
 -   Definieren Sie die Konten für realisierten Gewinn, realisierten Verlust, nicht realisierten Gewinn und den nicht realisierten Verlust für die Neubewertung der Währung an. Konten für realisierte Gewinne und Verluste werden verwendet, wenn Debitoren- und Kreditoren-Ausgleichstransaktionen und realisierte Gewinne und Verluste für die Neubewertung offener Transaktionen und Hauptbuch-Hauptkonten verwendet werden.
 
--   Auf der Seite **Währungsneubewertungskonten** :
--   Wählen Sie unterschiedliche Währungsneubewertungskonten für jede Währung und jedes Unternehmen aus. Wenn keine Konten definiert werden, werden die Konten der **Sachkonto** -Seite verwendet.
+-   Auf der Seite **Währungsneubewertungskonten**:
+-   Wählen Sie unterschiedliche Währungsneubewertungskonten für jede Währung und jedes Unternehmen aus. Wenn keine Konten definiert werden, werden die Konten der **Sachkonto**-Seite verwendet.
 
 ## <a name="process-foreign-currency-revaluation"></a>Eine Neubewertung der Fremdwährung verarbeiten
 Nachdem die Einstellung abgeschlossen ist, können Sie die Seite **Neubewertung der Fremdwährung** verwenden, um die Transaktionen und Salden der Hauptkonten neu zu bewerten. Sie können den Prozess in die Echtzeit ausführen oder ihn planen, damit er als Stapel ausgeführt wird. 

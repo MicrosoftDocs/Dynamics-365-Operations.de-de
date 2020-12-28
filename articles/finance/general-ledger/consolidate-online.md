@@ -17,11 +17,11 @@ ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
 ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770734"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443569"
 ---
 # <a name="online-financial-consolidations"></a>Online Finanzkonsolidierungen
 
@@ -65,7 +65,7 @@ Hier ist eine Erläuterung der Konfiguration in dieser Registerlarte:
 Unabhängig von der Reihenfolge, die Sie definieren, ist immer **Hauptkonto** das erste Segment.
 
 ## <a name="legal-entities"></a>Juristische Personen
-Auf der Registerkarte **Juristische Personen** definieren Sie die Dimensionen, die im Konsolidierungsunternehmen einbezogen werden sollen. Sie können auch den Besitzprozentsatz dieser Unternehmen definieren. Wenn Sie einem Besitz von weniger als 100 Prozent angeben, wird der angegebene Prozentsatz auf das Konsolidierungsunternehmen zusammengefasst. Für alle Übersetzungsdifferenzen wird das Feld **Kontenart für Konvertierungsdifferenzen** verwendet, um das Hauptkonto aus der Einstellung auf der Seite**Konten für automatische Buchungen** auszuwählen.
+Auf der Registerkarte **Juristische Personen** definieren Sie die Dimensionen, die im Konsolidierungsunternehmen einbezogen werden sollen. Sie können auch den Besitzprozentsatz dieser Unternehmen definieren. Wenn Sie einem Besitz von weniger als 100 Prozent angeben, wird der angegebene Prozentsatz auf das Konsolidierungsunternehmen zusammengefasst. Für alle Übersetzungsdifferenzen wird das Feld **Kontenart für Konvertierungsdifferenzen** verwendet, um das Hauptkonto aus der Einstellung auf der Seite **Konten für automatische Buchungen** auszuwählen.
 
 ![Registerkarte „Juristischen Personen“](./media/legal-entities-cons.png "Registerkarte „Juristische Personen“")
 

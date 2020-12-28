@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40703622bc8c7a21451d31e7606596c5edbe90f7
-ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
+ms.openlocfilehash: da2dd4889a5f4722ff60a76a4a023c63fb59ad55
+ms.sourcegitcommit: 9f32389715b226c11e74c53547527e0a8b51e300
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4000292"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "4514325"
 ---
 # <a name="split-a-fixed-asset"></a>Anlage teilen
 
@@ -39,7 +39,7 @@ In diesem Abschnitt wird erläutert, wie Sie einen Prozentsatz eines Anlagenbuch
 
 ## <a name="split-a-fixed-asset"></a>Anlage teilen
 
-Bevor ein vollständig abgeschriebener Vermögenswert aufgeteilt wird, sollte der Status des Anlagenbuchs manuell von **Geschlossen** auf **Öffnen** geändert werden. Dieser Schritt ist erforderlich, da der Buchstatus **offen** sein muss, wenn Sie Transaktionen für den Vermögenswert buchen müssen (z. B. für einen Veräußerungsverkauf). Führen Sie die folgenden Schritte aus, um die Anlage zu teilen, nachdem der Status des Anlage-Buches geändert wurde.
+Bevor ein vollständig abgeschriebener Vermögenswert aufgeteilt wird, sollte der Status des Anlagenbuchs manuell von **Geschlossen** auf **Öffnen** geändert werden. Dieser Schritt ist erforderlich, da der Buchstatus **offen** sein muss, wenn Sie Transaktionen für den Vermögenswert buchen müssen (z. B. für einen Veräußerungsverkauf). Sie müssen auch die **Mehrere Transaktionen innerhalb eines Belegs erlauben**-Parameter auf der **Allgemeines**-Registerkarte der **Hauptbuchparameter**-Seite aktivieren. Führen Sie die folgenden Schritte aus, um die Anlage zu teilen, nachdem der Status des Anlagenbuches geändert wurde und mehrere Transaktionen innerhalb eines Belegs zulässig waren.
 
 1. Suchen und wählen Sie in der Liste die Verknüpfung der zu teilenden Anlage.
 2. Wählen Sie **Bücher**. Wählen Sie das Buch aus, um die neue Anlage aufzuteilen.

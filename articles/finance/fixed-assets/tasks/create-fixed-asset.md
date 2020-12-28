@@ -1,7 +1,7 @@
 ---
 title: Anlage erstellen
 description: In diesem Thema wird erläutert, wie Sie auf der Seite Liste der Anlagen einen neuen Anlagendatensatz erstellen.
-author: saraschi2
+author: moaamer
 manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b7d65a047251fa036242fb456725bc8cba957b9
-ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
+ms.openlocfilehash: 481bdb55b813dad5366f382ae35d8345b0e67d9f
+ms.sourcegitcommit: a9efbd69f2670fd6ba0ad0babf304fc206d01249
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4000242"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4443803"
 ---
 # <a name="create-a-fixed-asset"></a>Anlage erstellen
 
@@ -49,3 +49,9 @@ Führen Sie die folgenden Schritte aus, um einen Anlage-Datensatz manuell zu ers
 Sie können Anlagen auch mithilfe des Excel-Add-Ins oder durch Ausführen eines Importauftrags aus dem Arbeitsbereich **Datenmanagement** importieren. Geben Sie vor dem Ausführen des Imports die Werte für die erforderlichen Felder in die Vorlage ein.
 
 Wenn Sie die Anlagennummer nicht in der Vorlage des Excel-Add-Ins oder in der Datenverwaltung definiert haben, erstellt das System für jede importierte Anlage eine Anlagennummer und erhöht automatisch die Nummernfolge für jede Anlage. Wenn Sie jedoch Anlagens importieren und Anlagen-Nummern in der Vorlage definieren, erhöht das System **nicht** automatisch die Nummernfolge. In diesem Fall muss ein Administrator möglicherweise die Nummernfolge manuell aktualisieren. Wenn Sie die Anlagenummer in der Vorlage des Excel-Add-Ins definiert haben, verwendet das System die definierte Anlagenummer und erhöht die Nummernfolge.
+
+> [!NOTE]                                                                                                         
+> Nach Buchung der Abschreibung werden die **Inbetriebnahme** und **Abschreibungslaufdatum**-Felder auf der **Buch** Seite gesperrt. Außerdem werden beide Felder von der Datenentität nicht aktualisiert.
+
+> [!WARNING]
+> Der Anlagebestand wird nicht gelöscht, wenn Transaktionen in das zugehörige Buch gebucht wurden oder wenn die neu erstellte Anlage in einer Erfassungszeile erfasst, aber nicht gebucht wurde. 

@@ -17,11 +17,11 @@ ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
 ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
-ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3823454"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443692"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Finanzielle Konsolidierungen und Währungsumrechnung – Übersicht
 
@@ -117,7 +117,7 @@ Um Intercompany-Transaktionen zu löschen, können Sie eine Löschungsregel defi
 ### <a name="set-up-elimination-rules"></a>Sie können Löschungsregeln einrichten.
 Wenn wir Löschungsregeln in Finance einrichten, empfehlen wir, dass Sie eine Finanzdimension speziell für Löschungszwecke erstellen. Die meisten Debitoren nennen diese Finanzdefinion **Handelspartner** oder ähnlich. Wenn Sie sich entscheiden, eine Finanzdimension nicht zu verwenden, müssen Sie darauf achten, dass Sie Hauptkonten anzeigen, die nur für Intercompany-Buchungen bestimmt sind.
 
-Die Einstellung für die Löschungen wird im Bereich **Einrichten** im **Konsolidierungs**moduls gefunden. Nachdem Sie eine Beschreibung für die Regel eingeben haben, müssen Sie das Unternehmen wählen, zu dem die Löschungserfassung gebucht wird. Dies sollte ein Unternehmen sein, das **Für finanziellen Löschungsprozess verwenden** in den Einstellungen für die juristische Person ausgewählt wurde.
+Die Einstellung für die Löschungen wird im Bereich **Einrichten** im **Konsolidierungs** moduls gefunden. Nachdem Sie eine Beschreibung für die Regel eingeben haben, müssen Sie das Unternehmen wählen, zu dem die Löschungserfassung gebucht wird. Dies sollte ein Unternehmen sein, das **Für finanziellen Löschungsprozess verwenden** in den Einstellungen für die juristische Person ausgewählt wurde.
 
 Sie können das Datum festlegen, ab dem die Löschungsregel gültig ist und das Datum, an dem sie abläuft, entsprechend Ihren Anforderungen. Sie müssen **Aktiv** auf **Ja** setzen,  wenn Sie  möchten, dass sie im Löschungsvorschlagsprozess verfügbar sein sollen. Wählen Sie ein Journal aus, das einen Typ **Löschung**  hat.
 
@@ -136,7 +136,7 @@ Das Feld **Dimensionsspezifikation** arbeitet wie das Feld **Kontospezifikation*
 ### <a name="process-elimination-transactions"></a>Löschungsbuchung verarbeiten
 Es gibt zwei Möglichkeiten, Löschungsbuchungen zu verarbeiten. Der Transaktionsprozess kann während des Online-Konsolidierungsprozesses verarbeitet werden oder Sie können ein Löschungsjournals erstellen und den Löschungsvorschlagsprozesses ausführen. Dieser Bereich bezieht sich auf die zweite Option.
 
-In einem Unternehmen, das als Unternehmen mit Löschungseinträgen definiert wird, wählen Sie im **Konsolidierungs**modul **Löschungserfassung** aus. Klicken Sie nach Auswahl des Erfassungsnamen auf **Positionen**. Um den Vorschlag auszuführen, aktivieren Sie **Vorschläge** \> **Löschungsvorschlag**
+In einem Unternehmen, das als Unternehmen mit Löschungseinträgen definiert wird, wählen Sie im **Konsolidierungs** modul **Löschungserfassung** aus. Klicken Sie nach Auswahl des Erfassungsnamen auf **Positionen**. Um den Vorschlag auszuführen, aktivieren Sie **Vorschläge** \> **Löschungsvorschlag**
 
 Wählen Sie das Unternehmen, das die Quelle der konsolidierten Daten ist, und wählen Sie dann die Regel aus, die Sie bearbeiten möchten. Geben Sie Start- und Enddatum ein, um den Datumsbereich zu definieren, der für Löschungsbeträge gefunden wird. Geben Sie im Feld **Datum für Sachkontobuchung** das Datum ein, an dem die Löschungserfassung im Hauptbuch gebucht werden soll. Klicken Sie auf **OK**, und Sie können die Beträge anzeigen und die Erfassung buchen.
 

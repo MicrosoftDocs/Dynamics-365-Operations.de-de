@@ -18,11 +18,11 @@ ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
-ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
+ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000794"
+ms.locfileid: "4443734"
 ---
 # <a name="vendor-invoice-entry-workspace"></a>Arbeitsbereich für die Eingabe der Kreditorenrechnung
 
@@ -72,7 +72,7 @@ Die Kacheln im Abschnitt **Zusammenfassung ausstehender Rechnungen** in der Ansi
 
 Um die Kachel **Lieferantenrechnungen wiederherstellen** zu verwenden, muss die Funktion in den Kreditorenparametern aktiviert sein. Gehen Sie zu **Kreditorenkonten \> Kreditorenkontenparameter** und legen dann auf der Registerkarte **Rechnung** die Option **Zulassen der Wiederherstellung von Lieferantenrechnungen** auf **Ja** fest.
 
-Wenn die Funktion aktiviert ist, werden auch drei Kacheln im Arbeitsbereich namens **Erfassungen** zusammengefasst. Die Kacheln sind betitelt mit **Erfassungen** , **Erfassungen – Mir zugewiesen** , und **Rechnungspool**. 
+Wenn die Funktion aktiviert ist, werden auch drei Kacheln im Arbeitsbereich namens **Erfassungen** zusammengefasst. Die Kacheln sind betitelt mit **Erfassungen**, **Erfassungen – Mir zugewiesen**, und **Rechnungspool**. 
 
 Die Informationen im Abschnitt **Zusammenfassung ausstehender Rechnungen** bezieht sich auf die Firma, die als Standardfirma für Ihre Anmeldung festgelegt ist.
 
@@ -102,7 +102,7 @@ Auf dem Raster **Bestellung finden** können Sie das Feld **Suche** verwenden, u
 
 ### <a name="related-information"></a>Zugehörige Informationen
 
-Sie können Informationen zu gebuchten Rechnungen anzeigen, indem Sie die Links auf der rechten Seite des Arbeitsbereichs verwenden. Diese Links enthalten **Öffnen Sie Lieferantenrechnungen** , **Rechnungserfassung** , und **Rechnungsverlauf und übereinstimmende Details**. In dem Abschnitt **Anbieter** können Sie auf eine gefilterte Liste zugreifen, in der alle Anbieter angezeigt werden, die sich in der Warteschleife befinden, oder Sie können die Verknüpfung **Alle Anbieter** verwenden. **Alle Bestellungen** und **Offene Vorauszahlungen** Links sind ebenfalls verfügbar.
+Sie können Informationen zu gebuchten Rechnungen anzeigen, indem Sie die Links auf der rechten Seite des Arbeitsbereichs verwenden. Diese Links enthalten **Öffnen Sie Lieferantenrechnungen**, **Rechnungserfassung**, und **Rechnungsverlauf und übereinstimmende Details**. In dem Abschnitt **Anbieter** können Sie auf eine gefilterte Liste zugreifen, in der alle Anbieter angezeigt werden, die sich in der Warteschleife befinden, oder Sie können die Verknüpfung **Alle Anbieter** verwenden. **Alle Bestellungen** und **Offene Vorauszahlungen** Links sind ebenfalls verfügbar.
 
 ### <a name="analytics--all-companies-page"></a>Analyse – Seite alle Unternehmen
 

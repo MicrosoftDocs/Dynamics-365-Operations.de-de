@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976668"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443527"
 ---
 # <a name="project-invoicing"></a>Projektrechnungsstellung
 
@@ -75,7 +75,7 @@ Wenn es für Ihre Organisation erforderlich ist, dass Rechnungsvorschläge vor d
 
 ### <a name="view-grant-information-on-project-invoice-list-pages"></a>Zuschussinformationen in den Seiten mit den Projektrechnungslisten anzeigen
 
-Benutzer des öffentlichen Sektors können die **Zuschuss-ID** und den **Zuschussnamen** den **Projektrechnungsvorschlägen** und den Seiten mit den **Projektrechnung**slisten hinzufügen. Diese Spalten werden mit der Funktion **Zuschussinformationen in den Seiten mit den Projektrechnungslisten hinzufügen** aktiviert. Diese Funktion ist standardmäßig deaktiviert und kann in **Arbeitsbereiche > Funktionsverwaltung** aktiviert werden. Bitten Sie Ihren Systemadministrator um Unterstützung, um diese Funktion zu aktivieren.
+Benutzer des öffentlichen Sektors können die **Zuschuss-ID** und den **Zuschussnamen** den **Projektrechnungsvorschlägen** und den Seiten mit den **Projektrechnung** slisten hinzufügen. Diese Spalten werden mit der Funktion **Zuschussinformationen in den Seiten mit den Projektrechnungslisten hinzufügen** aktiviert. Diese Funktion ist standardmäßig deaktiviert und kann in **Arbeitsbereiche > Funktionsverwaltung** aktiviert werden. Bitten Sie Ihren Systemadministrator um Unterstützung, um diese Funktion zu aktivieren.
 
 ## <a name="on-account-invoicing"></a>Akonto-Rechnungsstellung
 Der Betrag, den Sie für ein Projekt in eine Akontorechnung eingeben, basiert auf dem Zeitpunkt, dem Vollendungsgrad in Prozent und anderen Bedingungen, die im zugehörigen Projektvertrag angegeben wurden. Der Betrag wird nicht auf Basis der Stunden, der Artikel, Ausgaben oder Gebühren berechnet, die in einem Projekt gebucht werden. 
