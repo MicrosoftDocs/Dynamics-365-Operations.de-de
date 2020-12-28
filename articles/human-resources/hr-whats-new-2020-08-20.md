@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 11a1f166080b96760cb10f4d0cdc627979c2709e
-ms.sourcegitcommit: e0bf7a81ead351f5b109061c401589295058f808
+ms.openlocfilehash: 46dadb8834195c5dd06cd1c56d79324def7d9f2d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "3726306"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527480"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-20-2020"></a>Neuerungen und Änderungen in Dynamics 365 Human Resources (20. August 2020)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden. Änderungen gelten für Build-Nummer 8.1.3478. Die Zahlen in Klammern in einigen Überschriften beziehen sich zur Referenz auf die Supportnummern in Lifecycle Services (LCS).
 

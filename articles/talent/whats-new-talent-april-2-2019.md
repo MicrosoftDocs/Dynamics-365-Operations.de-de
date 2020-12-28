@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68dc73b7316a3ceb7129c9ea46bc60669ed2be95
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 04b5a006d4580fe419d81986a90851bc8d611722
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896927"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528218"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Neuigkeiten oder Änderungen in Dynamics 365 Talent (2. April, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent neu oder geändert wurden.
 
@@ -54,14 +56,14 @@ In Attract und Onboard erstellen Probleme, die von den Endbenutzer mithilfe der 
 ## <a name="changes-in-core-hr"></a>Core HR-Änderungen
 Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.2216.
 
-### <a name="platform-update-25-for-finance-and-operations"></a>Platform update 25 für Finance and Operations
-Zusätzliche Informationen zu Platform update 25 für Finance and Operations finden Sie unter [Vorschaufunktionen in Dynamics 365 for Finance and Operations Plattformaktualisierung 25 (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+### <a name="platform-update-25-for-finance-and-operations"></a>Plattformupdate 25 für Finance and Operations
+Weitere Informationen zum Plattformupdate 25 für Finance and Operations finden Sie unter [Vorschaufunktionen im Dynamics 365 for Finance and Operations-Plattformupdate 25 (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Erweiterte Vergütungssicherheit (feste oder variable)
 In vielen Organisationen hat der Kompensations- und Vergütungsmanager nur Zugriff auf bestimmte Kompensationsdatensätze. Diese Datensätze enthalten möglicherweise Datensätze für Führungskräfte oder regionale Mitarbeiter. Diese Änderung gibt HR die Möglichkeit, Vergütungspläne für verschiedene Mitarbeitergruppen in der Organisation zu verwalten. Sie können den festen und variablen Vergütungsplänen Sicherheitsrollen zuweisen. Diese Sicherheitsrollen bestimmen den Zugriff auf Plänen und die zugehörigen Mitarbeiterdaten wie Gehalts- oder Bonusdatensätze, damit nur jene Rollen die Kompensation für Mitarbeitergruppen bearbeiten können.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade auf Common Data Service
-Die Fristen für das Upgrade auf Common Data Service kommen sehr schnell näher. Melden Sie sich im Microsoft Power Apps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Die Fristen für das Upgrade auf Common Data Service kommen sehr schnell näher. Melden Sie sich im Microsoft Power Apps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter [Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Vorschau
 
@@ -77,4 +79,4 @@ Organisationen brauchen ggf. bestimmte Ursachencodes für Sonderurlaubstypen, we
 Mit dieser Änderung werden Duplikate erkannt, während Sie Namenfelder eingeben, und ein Status zeigt, wie viele Duplikate gefunden wurden. Sie können die zur Verfügung gestellte Verknüpfung aktivieren, um eine neue Seite zu öffnen, um zu prüfen, ob die gefundene Übereinstimmung verwendet werden soll. Das Duplikatsformular wird nicht automatisch geöffnet, damit die Dateneingabe nicht unterbrochen wird.
 
 ###  <a name="email-support-for-alerts"></a>E-Mail-Support für Warnungen
-Durch Platform update 25 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird. 
+Mit der Plattformaktualisierung 25 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird. 

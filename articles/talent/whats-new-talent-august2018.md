@@ -1,7 +1,7 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Talent – Core HR (August 2018)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent – Core HR entweder neu oder geändert sind.
-author: Darinkramer
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent – Core HR neu sind oder geändert wurden.
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
-ms.openlocfilehash: 4f6d0a32807397d5f2c0892061e54c2fed24610b
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 30646de08bd5ea4b2da05bfc38da7edc320a3331
+ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897763"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4690099"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-august-2018"></a>Neuerungen oder Änderungen in Dynamics 365 Talent – Core HR (August 2018)
 
@@ -31,9 +31,9 @@ ms.locfileid: "2897763"
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent: Core HR neu oder geändert wurden.
 
-## <a name="view-expiring-records-in-manager-self-service"></a>Bereich ablaufender Datensätze in Tagen für Manager-Self-Service anzeigen
+## <a name="view-expiring-records-in-manager-self-service"></a>Ablaufende Datensätze in Manager-Self-Service anzeigen
 
-Jetzt Bereich ablaufender Datensätze in Tagen für Manager-Self-Service anzeigen Neue Optionen ermöglichen es Ihnen zu konfigurieren, welche Informationen verfügbar sind, die allen Managern angezeigt werden. Dazu gehören:
+Jetzt Bereich ablaufender Datensätze in Tagen für Manager-Self-Service anzeigen Mit neuen Optionen können Sie konfigurieren, welche Informationen sich alle Manager anzeigen lassen können. Zu diesen Optionen gehören:
 
 -   Bescheinigungen
 
@@ -49,9 +49,9 @@ Diese Funktion bietet Ihnen die Möglichkeit, auch den Zeitraum anzugeben, in de
 
 ## <a name="configurable-transfer-actions"></a>Konfigurierbare Übergangsaktivitäten
 
-Sie können Rolle über die Optionen konfigurieren, die während der Erfassung einer Transportanforderung verfügbar sind. Diese Funktion bietet zusätzliche Flexibilität zu Rollen in einer Organisation.
+Sie können Rolle über die Optionen konfigurieren, die während der Erfassung einer Übertragungsanforderung verfügbar sind. Diese Funktion bietet zusätzliche Flexibilität zu Rollen in einer Organisation.
 
-Beispielsweise haben möglicherweise die Manager, die Mitarbeiter-Übertragungen anfordern, nicht den Zugriff, Kompensationsbeträge vorzuschlagen oder einzugeben oder aus der Aufgabenliste auszuwählen, die der Transportanforderung zugeordnet werden. In diesem Fall können Manager Transportanforderungen erstellen und übermitteln, sind aber nicht berechtigt, Kompensations- oder Aufgabenlisten-Zuweisungen einzugeben. In derselben Variante ist Personalverwaltung in der Lage, die neuen Kompensationswerte zuzuweisen sowie zusätzliche Checklisten zuzuweisen, die abgeschlossen werden müssen.
+Beispielsweise haben möglicherweise die Manager, die Mitarbeiter-Übertragungen anfordern, nicht den Zugriff, Kompensationsbeträge vorzuschlagen oder einzugeben oder aus der Aufgabenliste auszuwählen, die der Übertragungsanforderung zugeordnet werden. Manager können Übertragungsanforderungen erstellen und übermitteln, können aber eine Kompensations- oder Aufgabenlisten-Zuweisungen eingeben. In derselben Konfiguration kann die Personalverwaltung wegen des Abschlusses der Übertragung die neuen Kompensationswerte und zusätzliche Checklisten zuweisen.
 
 Standardmäßig werden die neuen Konfigurationsoptionen so festgelegt, dass die Fähigkeiten vor dieser Aktualisierung auf nicht ändern festgelegt wurden.
 
@@ -59,7 +59,7 @@ Standardmäßig werden die neuen Konfigurationsoptionen so festgelegt, dass die 
 
 Es gibt zusätzlich nun die Datumsfelder, die unter Urlaub und Abwesenheit im Formular verfügbar sind.
 
-Mithilfe dieser Funktion können Sie die Abgrenzungsperiodengrundlage auf der Planebene auf bestimmte Mitarbeiterdatumsangaben festlegen. Dies ermöglicht andere Daten als das  nicht das während dem Urlaubabgrenzungsprozesses zu verwenden. Optionen für mitarbeiterspezifischen Daten verfügen über die folgenden Werte:
+Mithilfe dieser Funktion können Sie die Abgrenzungsperiodengrundlage auf der Planebene auf bestimmte Mitarbeiterdatumsangaben festlegen. Andere Daten als das geplante Startdatum können während dem Urlaubabgrenzungsprozess nicht verwendet werden. Optionen für mitarbeiterspezifische Daten verfügen über die folgenden Werte:
 
 -   Benutzerdefiniert (verfügbar vor dieser Aktualisierung)
 
@@ -73,7 +73,7 @@ Mithilfe dieser Funktion können Sie die Abgrenzungsperiodengrundlage auf der Pl
 
 -   Startdatum der Arbeitskraft
 
-Wenn die Nutzung einer mitarbeiterspezifischen Datumsangaben konfiguriert wurde, nutzt der Einschreibeprozess das angegebene Datum, um die Abgrenzungsperioden zu berechnen. Die Abgrenzungsperiodegrundlage wird auch auf der Planregistrierung des Mitarbeiters angezeigt, um Sie zu unterstützen und zu verstehen, was während des Abgrenzungsprozesses verwendet wird.
+Wenn die Nutzung einer mitarbeiterspezifischen Datumsangabe konfiguriert wurde, nutzt der Registrierungsprozess das angegebene Datum, um die Abgrenzungsperioden zu berechnen. Die Abgrenzungsperiodegrundlage wird auch auf der Planregistrierung des Mitarbeiters angezeigt, um Sie zu unterstützen und zu verstehen, was während des Abgrenzungsprozesses verwendet wird.
 
 ## <a name="microsoft-word-integration"></a>Microsoft Word-Integration
 

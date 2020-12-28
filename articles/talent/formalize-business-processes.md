@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 ms.openlocfilehash: 0f4d2b8e5f78c5815c5ad7e5eae0d13ad7d15c12
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898688"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461237"
 ---
 # <a name="formalize-business-processes"></a>Geschäftsprozesse formalisieren
 
@@ -31,7 +31,7 @@ Die Geschäftsprozessfunktion ermöglicht es Ihnen, eine Geschäftsprozessvorlag
 
 Vorlagen können für wiederkehrende Prozesse wiederverwendet werden. Sie können als Ausgangspunkt ebenfalls kopiert werden und werden verwendet, um neuen Vorlagen zu erstellen.
 
-Nachdem eine Vorlage erstellt wurde, kann ein Prozess im **Geschäftsprozess**arbeitsbereich gestartet werden und nachverfolgt werden. Wenn ein Geschäftsprozess gestartet wird, werden die Aufgaben den entsprechenden Personen zugewiesen und Sie enthalten ein Fälligkeitsdatum.
+Nachdem eine Vorlage erstellt wurde, kann ein Prozess im **Geschäftsprozess** arbeitsbereich gestartet werden und nachverfolgt werden. Wenn ein Geschäftsprozess gestartet wird, werden die Aufgaben den entsprechenden Personen zugewiesen und Sie enthalten ein Fälligkeitsdatum.
 
 ## <a name="business-process-templates"></a>Geschäftsprozessvorlage
 Eine Geschäftsprozessvorlagen führt die Gruppe von Aufgaben auf, aus denen ein Geschäftsprozess besteht. Personalleiter und Assistenten können standardmäßig Geschäftsprozesse erstellen. Allerdings können Sie die Rollen ändern, die Geschäftsprozesse erstellen können, indem die Abgabe der Sicherheitskonfiguration in **Verwalten Sie generische Geschäftsprozesse** geändert wird.

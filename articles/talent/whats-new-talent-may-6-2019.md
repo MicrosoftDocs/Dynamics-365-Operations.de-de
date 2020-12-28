@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f06d989ea4e927111729dfbd4bb7700745a16a54
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: c04af27bcc446b516f14125e71fb707bfd1d7708
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897510"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529707"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-may-6-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (6. Mai 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent neu oder geändert wurden.
 
@@ -43,9 +45,9 @@ Diese Version enthält kleinere Fehlerkorrekturen für Dynamics 365 Talent: Onbo
 
 Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.2282. Die Zahlen in Klammern in einigen Überschriften beziehen sich auf Supportnummern in Microsoft Dynamics Lifecycle Services (LCS).
 
-### <a name="platform-update-26-for-finance-and-operations"></a>Platform update 26 für Finance and Operations
+### <a name="platform-update-26-for-finance-and-operations"></a>Plattformupdate 26 für Finance and Operations
 
-Zusätzliche Details zu Platform update 26 für Finance and Operations finden Sie unter [Vorschaufunktionen in Dynamics 365 Finance and Operations Plattformaktualisierung 26 (Mai 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+Zusätzliche Details zum Plattformupdate 26 für Finance and Operations finden Sie unter [Vorschaufunktionen im Plattformupdate 26 für Dynamics 365 Finance and Operations (Mai 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Common Data Service-Entitätssupport für benutzerdefinierte Felder
 

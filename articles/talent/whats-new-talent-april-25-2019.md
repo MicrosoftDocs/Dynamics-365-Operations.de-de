@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: cbafea9063844dd3f19e5828ab37632e04591f18
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 53faf972759c8f770017fcd3a87920410988e626
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897892"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527181"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-23-2019"></a>Neuigkeiten oder Änderungen in Dynamics 365 Talent (23. April, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent neu oder geändert wurden.
 
@@ -77,4 +79,4 @@ Mit dieser Änderung werden Duplikate erkannt, während Sie Namenfelder eingeben
 ## <a name="known-issues"></a>Bekannte Probleme
 
 ### <a name="email-support-for-alerts"></a>E-Mail-Support für Warnungen
-Durch Platform update 26 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird.
+Mit der Plattformaktualisierung 26 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird.

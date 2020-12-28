@@ -3,7 +3,7 @@ title: Kandidaten mithilfe von LinkedIn Recruiter in Attract anwerben
 description: 'Verwenden Sie die LinkedIn-Integration, die von Microsoft Dynamics 365 Talent: Attract bereitgestellt wird, um Stellenbewerber über LinkedIn Recruiter zu suchen.'
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e05b902d745c26c08d1bac133991f51fd58c3e93
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 96e4660c4958bf5f2a0910bfad770e1e713f800f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833045"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528268"
 ---
 # <a name="source-candidates-with-linkedin-recruiter-in-attract"></a>Kandidaten mithilfe von LinkedIn Recruiter in Attract anwerben
 
@@ -34,6 +34,9 @@ LinkedIn ist das größten Online-Berufsnetzwerk und ermöglicht Zugriff auf die
 
 Wenn Sie diese Funktion nicht besitzen, wenden Sie sich an den Administrator. Bevor Sie die Vorteile von LinkedIn Recruiter aus Attract nutzen können, muss Ihr Administrator die [Einstellungsintegration mit LinkedIn](./attract-admin-linkedin.md) einrichten. Sie können Ihre Verbindung mit LinkedIn Recruiter einrichten und dann das Suchen von Kandidaten starten.
 
+>[!IMPORTANT]
+>Ab dem 1. Juli 2020 unterstützt LinkedIn Internet Explorer 11 nicht mehr. Benutzer können weiterhin mit Internet Explorer 11 auf LinkedIn zugreifen, werden jedoch aufgefordert, ein Upgrade durchzuführen oder einen anderen Browser zu verwenden. Weitere Informationen finden Sie unter [Unterstützte Internetbrowser für LinkedIn](https://www.linkedin.com/help/linkedin/answer/4135/supported-internet-browsers-for-linkedin).
+
 ## <a name="set-up-your-connection-with-linkedin-recruiter"></a>Richten Sie Ihre Verbindung mit LinkedIn Recruiter ein
 
 Bevor Sie mit LinkedIn Recruiter über Attract arbeiten können, müssen Sie eine neue Verbindung mit LinkedIn Recruiter einrichten. Für diesen Schritt müssen Sie Ihre Anmeldeinformationen von LinkedIn Recruiter bereithalten.
@@ -42,22 +45,38 @@ Bevor Sie mit LinkedIn Recruiter über Attract arbeiten können, müssen Sie ein
 2. Wählen Sie **Benutzer-Einstellungen**.
 3. Auf der Registerkarte **Verbindungen** wählen Sie **Verbinden** neben **LinkedIn** aus. Befolgen Sie die Anweisungen, die von LinkedIn bereitgestellt werden.
 
-    ![[Verbindung mit LinkedIn Recruiter von Attract herstellen](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
+    ![[Verbindung von Attract zu LinkedIn Recruiter herstellen](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
 
 ## <a name="view-linkedin-candidates-in-attract"></a>LinkedIn Kandidaten in Attract anzeigen
 
 Nachdem Sie sich mit LinkedIn Recruiterverbunden haben, können Sie die LinkedIn-Profile der Kandidaten anzeigen in Attract.
 
+>[!NOTE]
+>Wenn Ihnen ein Recruiter-Arbeitsplatz zugewiesen wurde, können Sie sich die vollständigen Informationen der Kandidaten anzeigen lassen.<br><br>
+>Wenn Ihnen ein Arbeitsplatz als zukünftiger Vorgesetzter oder kein Arbeitsplatz zugewiesen wurde, müssen Sie sich bei LinkedIn oder LinkedIn Recruiter abmelden, bevor Sie in Attract zur Registerkarte LinkedIn für einen Kandidaten gehen. Sie können die grundlegenden öffentlichen Profildaten des Kandidaten anzeigen, z. B. seinen Vor- und Nachnamen.
+
 1. In Attract wählen Sie **Stellen** oder **Talentschmieden** auf der linken Seite aus, und wählen Sie dann einen Bewerber aus.
 
-    ![[LinkedIn-Kandidaten in Attract anzeigen](./media/attract-view-linkedin-candidates.png)](./media/attract-view-linkedin-candidates.png)
+    ![[LinkedIn Kandidaten in Attract anzeigen](./media/attract-view-linkedin-candidates.png)](./media/attract-view-linkedin-candidates.png)
 
-2. Im Profil des Kandidaten wählen Sie die Registerkarte **LinkedIn** aus. Sie können das Profil des Kandidaten zusammen mit dem Verlauf InMail und LinkedIn-Hinweisverlauf anzeigen.
+2. Im Profil des Kandidaten wählen Sie die Registerkarte **LinkedIn** aus. Sie können das Profil des Kandidaten und den Verlauf InMail anzeigen.
 
-Hier können Sie den Kandidaten zu einem LinkedIn Recruiter Projekt speichern, InMail senden oder Update Me nutzen, um eine Warnung festzulegen in LinkedIn Recruiter.
+   ![LinkedIn-Informationen eines Kandidaten anzeigen](./media/attract-candidate-linkedin-tab.png)
+
+Von hier aus können Sie folgende Aktivitäten ausführen:
+
+- Wählen Sie zum Anzeigen die Registerkarte **Rekrutierungsaktivitäten** aus:
+   
+   - Recruiter-Notizen (sowohl öffentlich als auch privat). Notizen sind standardmäßig privat und nur für den Besitzer der Notizen sichtbar.
+   - InMail-Aktivität (aber nicht der InMail-Inhalt). Scrollen Sie zum Ende der Seite, um den InMail-Austausch mit Ihrem Interessenten und andere Benutzer in Ihrer Organisation anzuzeigen, die mit Ihrem Interessenten interagieren.
+   - Ablehnungsaktivität des Kandidaten
+
+- Wählen Sie **InMail senden**, um InMail zu senden, ohne Attract verlassen zu müssen.
+
+- Wählen Sie **In einer Stelle speichern**, um die Stelle zu speichern, ohne Attract zu verlassen.
 
 > [!NOTE]
-> Das LinkedIn-Profil eines Kandidaten wird in Attract angezeigt, wenn die Attract Informationen des Kandidaten mit den LinkedIn-Informationen übereinstimmen. Hier sind die Übereinstimmungsregeln, die verwendet werden:
+> Das LinkedIn-Profil eines Kandidaten wird in Attract angezeigt, wenn die Attract-Informationen des Kandidaten mit den LinkedIn-Informationen übereinstimmen. Hier sind die Übereinstimmungsregeln, die verwendet werden:
 > 
 > 1. Wenn die E-Mail-Adresse und die LinkedIn-Kennung in Attract und LinkedIn übereinstimmen, wir das Profil des Kandidaten angezeigt. Kandidaten haben weiterhin die Option, Ihr LinkedIn-Profil von Attract zu verknüpfen oder zu lösen.
 > 2. Wenn die E-Mail-Adresse oder die LinkedIn-Mitglieder-Kennung nicht übereinstimmt, finden Sie eine Liste möglicher Kandidaten. Sie können dann einen Kandidaten in der Liste wählen und mit dem Profil verknüpfen.
@@ -80,14 +99,14 @@ Stellen Sie außerdem sicher, dass die Stelle eine Interessentenphase hat. Weite
 Sie können nachverfolgen, ob sich ein Kandidat auf anderen Stellen in Ihrem Unternehmen beworben hat, nachsehen, in welcher Phase der Bewerbung er sich befindet und die Rückmeldung und Kommentare von Attract in LinkedIn Recruiter anzeigen.
 
 1. Öffnen Sie LinkedIn Recruiterund wählen Sie ein Kandidatenprofil aus.
-2. Fahren Sie mit der Maus über**In ATS**.
+2. Fahren Sie mit der Maus über **In ATS**.
 3. Wählen Sie eine beliebige der folgenden Optionen, um die Kandidateninformationen anzuzeigen, in Attract gespeichert sind:
 
     - **Stellen und Status** – Stellen anzeigen, zu denen der Kandidat gehört, den Status anzeigen und wie der Kandidat in jeder Stelle vorankommt.
     - **Feedback zum Gespräch** - Feedback zum Gespräch anzeigen, das der Gesprächsleiter in Attract übermittelt hat.
     - **Hinweise** – Hier finden Sie alle Hinweise, die für diesen Kandidaten in Attract eingegeben wurden.
 
-    ![[Attract Informationen anzeigen aus LinkedIn Recruiter](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
+    ![[Attract Informationen aus LinkedIn Recruiter anzeigen](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
 
 > [!NOTE]
 > Kandidaten- und Anwendungsdaten werden nicht mit LinkedIn Recruiter synchronisiert, wenn der Kandidat nicht die Interessentenphase überschritten hat.

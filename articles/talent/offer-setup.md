@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bc91a83afd5ce1627376685bcf612d6998ddbc02
-ms.sourcegitcommit: 5022d63a81c3715c9a3dcf2a68217bb6b17c7805
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890554"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461271"
 ---
 # <a name="set-up-offer-management-in-attract"></a>Angebotsmanagement in Attract einrichten
 
@@ -80,7 +80,7 @@ Um die Datenregeln für die CSV-Datei zu erstellen, gehen Sie folgendermaßen vo
 
 1.  Geben Sie Spalten 1 und 2 als **Arbeitsort** und **Ebene** an.
 
-1.  Um einen Bereichswert hochzuladen, machen Sie Spalten 3 und 4 für **Jährliches Gehalt**. Um einen bestimmten Wert anstelle eines Bereichs hochladen, lassen Sie nur Spalte 3**Jährliches Gehalt**.
+1.  Um einen Bereichswert hochzuladen, machen Sie Spalten 3 und 4 für **Jährliches Gehalt**. Um einen bestimmten Wert anstelle eines Bereichs hochladen, lassen Sie nur Spalte 3 **Jährliches Gehalt**.
 
 1.  Füllen Sie die Microsoft Excel-Dateien auf Grundlage der notwendigen Rollen auf.
 

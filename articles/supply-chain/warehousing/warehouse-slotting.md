@@ -3,7 +3,7 @@ title: Zuteilung von Zeitfenstern für Lagerort
 description: Dieser Artikel enthält Informationen zur Zuteilung von Zeitfenstern für den Lagerort. Mit der Zuteilung von Zeitfenstern für den Lagerort können Sie die Nachfrage nach Artikeln und Maßeinheiten aus Bestellungen mit dem Status „Bestellt“, „Reserviert“ oder „Freigegeben“ konsolidieren. Es hilft Lagerverwaltern, Entnahmeorte intelligent zu planen, bevor sie Aufträge für den Lagerort freigeben und Kommissionierarbeiten erstellen.
 author: mirzaab
 manager: tfehr
-ms.date: 07/01/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,48 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: ed9e6eae2ecc8de8d5eeef4699678e93dd74f193
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 31b86837735ca16610a1d304eab611b12a6aceeb
+ms.sourcegitcommit: be4b9d557511bbb43e71a93f2c3b23b5f1a4669d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017413"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "4627748"
 ---
 # <a name="warehouse-slotting"></a>Zuteilung von Zeitfenstern für Lagerort
 
 [!include [banner](../includes/banner.md)]
 
-Mit der Zuteilung von Zeitfenstern für den Lagerort können Sie die Nachfrage nach Artikeln und Maßeinheiten aus Bestellungen mit dem Status *Bestellt* , *Reserviert* oder *Freigegeben* konsolidieren. Der generierte Bedarf kann dann auf Lagerplätze angewendet werden, die für die Kommissionierung verwendet werden, basierend auf Menge, Einheit, physischen Dimensionen, festen Lagerplätzen und mehr. Nachdem der Plan für die Zuteilung von Zeitfenstern erstellt wurde, können Wiederbeschaffungsarbeiten erstellt werden, um die entsprechende Menge an Bestand an jeden Lagerplatz zu bringen.
+Es stehen mehrere Funktionen für Lagerorte zur Verfügung, um Lagerleiter bei der intelligenten Planung von Lagerplätzen zu unterstützen, bevor sie Aufträge an das Lager freigeben und Entnahmearbeiten erstellen.
 
-Diese Funktion hilft Lagerverwaltern, Entnahmeorte intelligent zu planen, bevor sie Aufträge für den Lagerort freigeben und Kommissionierarbeiten erstellen.
+Mit der Funktion *Lagerorteinteilung* können Sie die Nachfrage nach Elementen und Maßeinheiten von Aufträgen konsolidieren, die den Status *Bestellt*, *Reserviert* oder *Freigegeben* haben. Der generierte Bedarf kann dann auf Lagerplätze angewendet werden, die für die Kommissionierung verwendet werden, basierend auf Menge, Einheit, physischen Dimensionen, festen Lagerplätzen und mehr. Nachdem der Plan für die Zuteilung von Zeitfenstern erstellt wurde, können Wiederbeschaffungsarbeiten erstellt werden, um die entsprechende Menge an Bestand an jeden Lagerplatz zu bringen.
 
-## <a name="turn-on-the-warehouse-slotting-feature"></a>Funktion für Zuteilung von Zeitfenstern für den Lagerort aktivieren
+Mit der Funktion *Lagerplätze für Transportaufträge* können Lagerort-Verwalter Wiederbeschaffung betreiben, basierend auf der Nachfrage von Transportaufträgen, die noch nicht für das Lager freigegeben sind. Sie stellt sicher, dass die Lagerorte alle Elemente enthalten, die für die Transportaufträge benötigt werden, nachdem sie für das Lager freigegeben wurden. Diese Funktion setzt voraus, dass Sie auch die Funktion *Lagerorte einlagern* einschalten.
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Die Funktion *Erweiterung der Lagerort-Zuweisung* fügt eine Option für die Vorlagenzeilen hinzu, die von der Funktion *Lagerort-Zuweisung* verwendet werden. Die Option ermöglicht es dem System, den vorhandenen Bestand an einem Lagerplatz zu berücksichtigen. Daher werden möglicherweise weniger Wiederbeschaffungen für die Platzierung erzeugt. Die Funktion *Erweiterung der Lagerort-Zuweisung* erfordert, dass Sie auch die Funktion *Lagerort-Zuweisung* einschalten. Sie kann optional zusammen mit der Funktion *Lagerort-Zuteilung für Transportaufträge* verwendet werden.
 
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Funktion für Zuteilung von Zeitfenstern für den Lagerort*
+## <a name="turn-on-the-warehouse-slotting-features"></a>Einschalten der Funktionen für den Lagerort
+
+Bevor Sie diese Funktionen verwenden können, müssen sie in Ihrem System eingeschaltet werden. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktionen überprüfen und sie gegebenenfalls aktivieren. Schalten Sie die folgenden Funktionen je nach Bedarf ein:
+
+- Lagerortzeitrahmen-Funktion
+- Lagerort Einlagerung für Transportaufträge
+
+    > [!IMPORTANT]
+    > Die Funktion *Lagerort-Zuteilung* muss vor dieser Funktion eingeschaltet werden.
+
+- Erweiterungen für die Lagerort-Zuweisung (Zuteilung von Zeitfenstern )
+
+    > [!IMPORTANT]
+    > Die Funktion *Lagerort-Zuteilung* muss vor dieser Funktion eingeschaltet werden.
 
 ## <a name="set-up-warehouse-slotting"></a>Zuteilung von Zeitfenstern für den Lagerort einrichten
 
-Um die Zuteilung von Zeitfenstern für den Lagerort zu verwenden, müssen Sie die folgenden Elemente in Ihrem System einrichten.
+Um die Lagerort-Zuteilung zu verwenden, müssen Sie die folgenden Elemente in Ihrem System festlegen:
+
+- Maßeinheitsebenen für die Zuteilung von Zeitfenstern
+- Richtliniencodes
+- Vorlagen für die Zuteilung von Zeitfenstern
+- Lagerplatzrichtlinien
 
 ### <a name="create-unit-of-measure-tiers-for-slotting"></a><a name="unit-tiers"></a>Maßeinheitsstufen für Zuteilung von Zeitfenstern erstellen
 
@@ -93,9 +110,9 @@ Jede Vorlage für die Zuteilung von Zeitfenstern steuert, wie der Bestand den La
 1. Gehen Sie zu **Lagerortverwaltung \> Setup \> Wiederbeschaffung \> Vorlagen für Zuteilung von Zeitfenstern**.
 1. Wählen Sie **Neu** aus, um eine Vorlage zu erstellen.
 
-Als Nächstes müssen Sie den Vorlagenkopf, die Spezifikationen für die Zuteilung von Zeitfenstern und die Lagerplatzrichtlinien einrichten, wie in den folgenden Unterabschnitten erläutert.
+Als Nächstes müssen Sie den Vorlagenkopf, die Spezifikationen für die Zuteilung von Zeitfenstern und die Lagerplatzrichtlinien einrichten, wie in den folgenden Unterabschnitten erläutert. Das Einrichten der Lageraufteilung für Transportaufträge ähnelt dem Einrichten der Lageraufteilung für Verkaufsaufträge, aber das Feld **Auftragsart** ist auf *Transportaufträge* anstelle von *Verkaufsauftrag* festgelegt.
 
-#### <a name="set-up-a-slotting-template-header"></a>Vorlagenkopf für Zuteilung von Zeitfenstern einrichten
+#### <a name="set-up-the-header-for-a-sales-order-slotting-template"></a>Festlegen der Kopfzeile für eine Vorlage für die Zuteilung von Zeitfenstern von Verkaufsaufträgen
 
 1. Legen Sie in der Kopfzeile der Vorlage die folgenden Werte fest:
 
@@ -103,7 +120,8 @@ Als Nächstes müssen Sie den Vorlagenkopf, die Spezifikationen für die Zuteilu
     - **Beschreibung:** _61_
     - **Bedarfstyp:** *Auftrag*
 
-        Derzeit wird nur der Bedarfstyp *Auftrag* unterstützt.
+        > [!NOTE]
+        > Derzeit sind *Verkaufsaufträge* und *Transferaufträge* die einzigen Bedarfsarten, die unterstützt werden. Sie können *Transportaufträge* nur auswählen, wenn die Funktion *Lagerort Zuteilung von Zeitfenstern für Transportaufträge* eingeschaltet ist.
 
     - **Bedarfsstrategie:** _Bestellt_
 
@@ -111,6 +129,7 @@ Als Nächstes müssen Sie den Vorlagenkopf, die Spezifikationen für die Zuteilu
 
         - **Bestellt** – Die volle Bestellmenge auf dem Auftrag sollte als Bedarf betrachtet werden.
         - **Reserviert** – Nur die reservierten (physischen und bestellten) Auftragspositionsmengen sollten als Bedarf betrachtet werden.
+        - **Freigegeben** - Die freigegebene Menge soll als Bedarf betrachtet werden.
 
     - **Lagerort:** _61_
     - **Wellenbedarf die Nutzung nicht reservierter Mengen gestatten:** _Ja_
@@ -119,7 +138,7 @@ Sie können auch eine Abfrage angeben, um den Umfang des ausgewerteten Bedarfs e
 
 #### <a name="set-up-slotting-specifications-for-each-template"></a>Spezifikationen für Zuteilung von Zeitfenstern für jede Vorlage einrichten
 
-Befolgen Sie diese Schritte für jede Vorlage, die Sie erstellen, um eine Position für jede Spezifikation für die Zuteilung von Zeitfenstern hinzuzufügen.
+Führen Sie für jede Verkaufsauftragsvorlage, die Sie erstellen, die folgenden Schritte aus, um eine Zeile für jede Zuteilung von Zeitfenstern-Spezifikation hinzuzufügen.
 
 1. Wählen Sie im Inforegister **Vorlagendetails für Zuteilung von Zeitfenstern** die Option **Neu** aus, um eine Vorlagenposition zu erstellen.
 1. Legen Sie die folgenden Werte für die neue Position fest:
@@ -148,6 +167,7 @@ Befolgen Sie diese Schritte für jede Vorlage, die Sie erstellen, um eine Positi
 
         - **Angenommen leer** – Dieses System sollte davon ausgehen, dass alle Lagerplätze im Kommissionierbereich leer sind, und diese Lagerplätze nicht auf Bestand prüfen.
         - **Menge betrachten** – Das System sollte die Lagerplätze im Kommissionierbereich auf Bestand überprüfen und alle Lagerplätze überspringen, die nicht leer sind.
+        - **Bestandsmäßig berücksichtigen** - Das System sollte prüfen, ob irgendein Ziellagerplatz nicht reservierte Mengen für das Element in der Bedarfszeile enthält. Wenn die Menge groß genug ist, um mindestens eine Einheit der Bedarfszeile zu befriedigen, wird der generierte Zuteilung von Zeitfenstern-Plan-Datensatz um die verfügbare Menge reduziert. Wenn der Bedarf z. B. 10 Kisten beträgt und eine Kiste vorrätig ist, beträgt der lokalisierte Bedarf neun Kisten. Wenn der Bedarf 10 Fälle beträgt und jeweils ein Fall vorhanden ist, beträgt der geortete Bedarf 10 Fälle. Dieser Wert ist nur verfügbar, wenn die Funktion *Erweiterungen für die Lagerort-Zuweisung* eingeschaltet ist.
 
     - **Richtliniencode:** _Zuteilung von Zeitfenstern_
 
@@ -168,6 +188,9 @@ Befolgen Sie diese Schritte für jede Vorlage, die Sie erstellen, um eine Positi
         - **Feste und nicht feste Lagerplätze** – Das System sollte nicht darauf beschränkt sein, nur feste Lagerplätze zu verwenden.
         - **Nur feste Lagerplätze für das Produkt** – Das System sollte nur an Lagerplätze eingesetzt werden, die feste Lagerplätze für das Produkt sind.
         - **Nur feste Lagerplätze für die Produktvariante** – Das System sollte nur an Lagerplätze eingesetzt werden, die feste Lagerplätze für die Produktvariante sind.
+
+> [!NOTE]
+> Wenn die Slot-Vorlage mindestens eine Zeile enthält, in der das Feld **Slot-Zuordnungskriterien** auf *Vorhandenes berücksichtigen* festgelegt ist, sind für keine Zeile in der Vorlage mehr Aufschläge erlaubt.
 
 1. Wählen Sie **Speichern** aus.
 1. Wählen Sie **Neu** aus, um eine zweite Vorlagenposition zu erstellen.
@@ -207,6 +230,7 @@ Es muss mindestens eine Lagerplatzrichtlinie eingerichtet werden, um die Zuteilu
 1. Wählen Sie im linken Bereich im Feld **Arbeitsauftragstyp** *Wiederbeschaffung* aus.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie in der Kopfzeile für die neue Lagerplatzrichtlinie im Feld **Name** *61 Zuteilung von Zeitfenstern für Entnahmen* ein.
+1. Übernehmen Sie im Feld **Sequenznummer** den Standardwert.
 
 ##### <a name="configure-the-location-directives-fasttab"></a>Inforegister „Lagerplatzrichtlinien“ konfigurieren
 
@@ -221,12 +245,13 @@ Es muss mindestens eine Lagerplatzrichtlinie eingerichtet werden, um die Zuteilu
 
 ##### <a name="configure-the-lines-fasttab"></a>Inforegister „Positionen“ konfigurieren
 
-1. Klicken Sie im Inforegister **Positionen** auf **Neu** , um eine Position zu erstellen.
-1. Legen Sie die folgenden Werte für die neue Position fest. Akzeptieren Sie die Standardwerte für alle anderen Felder.
+1. Klicken Sie im Inforegister **Positionen** auf **Neu**, um eine Position zu erstellen.
+1. Legen Sie die folgenden Werte für die neue Position fest.
 
     - **Von Menge:** _0_
     - **Bis Menge:** _1000000_
 
+1. Übernehmen Sie für alle verbleibenden Felder die Standardwerte.
 1. Wählen Sie **Speichern** aus, um das Inforegister **Lagerplatzrichtlinienaktivitäten** verfügbar zu machen.
 
 ##### <a name="configure-the-location-directive-actions-fasttab"></a>Inforegister „Lagerplatzrichtlinienaktivitäten“ konfigurieren
@@ -234,9 +259,11 @@ Es muss mindestens eine Lagerplatzrichtlinie eingerichtet werden, um die Zuteilu
 1. Wählen Sie im Inforegister **Lagerplatzrichtlinienaktivitäten** die Option **Neu** aus, um eine Position zu erstellen.
 1. Legen Sie die folgenden Werte für die neue Position fest. Akzeptieren Sie die Standardwerte für alle anderen Felder.
 
+    - **Sequenznummer:** Akzeptieren Sie den Standardwert.
     - **Name:** _Bulk_
     - **Strategie:** _Keine_
 
+1. Übernehmen Sie für alle verbleibenden Felder die Standardwerte.
 1. Wählen Sie **Speichern** aus, um die Schaltfläche **Abfrage bearbeiten** verfügbar zu machen.
 
 ##### <a name="edit-the-query"></a>Abfrage bearbeiten
@@ -298,7 +325,7 @@ Nachdem alle erforderlichen Elemente vorhanden sind, wie im vorherigen Abschnitt
 
 #### <a name="generate-demand"></a>Bedarf generieren
 
-1. Navigieren Sie zu **Lagerortverwaltung \> Setup \> Wiederbeschaffung \> Vorlagen für Zuteilung von Zeitfenstern** , und wählen Sie die Vorlage für die Zuteilung von Zeitfenstern aus, die Sie zuvor erstellt haben.
+1. Navigieren Sie zu **Lagerortverwaltung \> Setup \> Wiederbeschaffung \> Vorlagen für Zuteilung von Zeitfenstern**, und wählen Sie die Vorlage für die Zuteilung von Zeitfenstern aus, die Sie zuvor erstellt haben.
 1. Wählen Sie im Aktivitätsbereich **Bedarf generieren** aus. Dieser Befehl wertet den gesamten Bedarf aus, der sich im System befindet und mit der Vorlagenabfrage für die Zuteilung von Zeitfenstern übereinstimmt. Der Gesamtbedarf aller Bestellungen wird dann in einer Position pro Menge/Maßeinheit zusammengefasst. Nach Abschluss des Vorgangs wird eine Informationsmeldung angezeigt.
 
 #### <a name="slotting-demand"></a>Bedarf an der Zuteilung von Zeitfenstern
@@ -318,9 +345,16 @@ Nachdem der Bedarf generiert wurde, müssen Sie den Befehl **Bedarf ermitteln** 
 
 #### <a name="slotting-plan"></a>Plan für die Zuteilung von Zeitfenstern
 
-Der Plan für die Zuteilung von Zeitfenstern zeigt den Lagerplatz, dem jeder Artikel/jede Menge zugewiesen wurde, ob ein Überlauf verwendet wurde, ob Pausenarbeiten erstellt wurden und welche Vorlagenposition verwendet wurde. **Jeder Bedarf, für den keine Zuteilung von Zeitfenstern möglich ist, wird rot hervorgehoben.**
+Der Plan für die Zuteilung von Zeitfenstern zeigt den Lagerplatz, dem jeder Artikel/jede Menge zugewiesen wurde, ob ein Überlauf verwendet wurde, ob Pausenarbeiten erstellt wurden und welche Vorlagenposition verwendet wurde. *Jeder Bedarf, für den keine Zuteilung von Zeitfenstern möglich ist, wird rot hervorgehoben.*
 
 - Wählen Sie im Aktivitätsbereich **Plan für die Zuteilung von Zeitfenstern** aus, um die Ergebnisse anzuzeigen.
+
+> [!NOTE]
+> - Die Prozesse **Bedarf generieren**, **Bedarf lokalisieren** und **Wiederbeschaffung ausführen** werden jetzt in einer Sandbox ausgeführt. (Diese Prozesse sind im Aktivitätsbereich auf der Seite **Nachschubvorlagen** verfügbar).
+> - Die Prozesse **Bedarf generieren**, **Bedarf lokalisieren** und **Nachschub ausführen** haben eine Sperre, um sicherzustellen, dass sie nicht gleichzeitig ausgelöst werden können. Andernfalls könnten die verwendeten Daten gelöscht werden.
+> - Die Prozesse **Nachschub generieren** und **Nachschub lokalisieren** zeigen eine Warnung an, wenn der Lauf keine Datensätze generiert hat oder wenn in den Datensätzen Informationen fehlen.
+> - Wenn Sie **Bedarfsplan** wählen, hat die Seite keine Schaltflächen **Neu**, **Bearbeiten** oder **Löschen** im Aktivitätsbereich, weil die Datenquelle nicht bearbeitet werden kann.
+> - Wenn Sie **Wiederbeschaffung ausführen** wählen, validiert das System die ausgewählte Slot-Vorlage und die Prozesse.
 
 #### <a name="create-replenishment"></a>Wiederbeschaffung erstellen
 

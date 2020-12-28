@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 855eafaca88d180997cf5a68c7f0fe975c177f88
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 115d7cd3d71eaddce2434cb1939c503d36bccdf8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898918"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527289"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (5. März 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In diesem Thema werden die Funktionen beschrieben, die in Talent entweder neu oder geändert sind.
 
@@ -69,12 +71,12 @@ Mit dieser Änderung werden die Lohnfelder bei Änderungsanfragen an den vorhand
 Es gibt weitere kleinere Fehlerkorrekturen in dieser Version.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade auf Common Data Service
-Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Melden Sie sich im Power Apps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Melden Sie sich im Power Apps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter [Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Erweiterte Vergütungssicherheit (feste oder variable)
 In vielen Organisationen können Vergütungs- und Vorteilsmanager nur auf bestimmte Vergütungsdatensätze zugreifen, wie z. B. für Führungskräfte oder regional-basierte Mitarbeiter. Mit dieser Änderung können Sie die Vergütungspläne für verschiedene Mitarbeitergruppen in der Organisation verwalten. Den festen und variablen Plänen können Sicherheitsrollen zugewiesen werden, die den Zugriff auf die Pläne und die Mitarbeiterdaten in Verbindung mit den Plänen bestimmen, wie Gehalts- oder Zulagedatensätze. Nur die Rollen mit Zugriff sind in der Lage, Vergütungen für solche Mitarbeiter zu verarbeiten.
 
-###  <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 für Finance and Operations
-Weitere Details zu Platform update 24 für Finance and Operations finden Sie unter [Neues oder Änderungen in Finance and Operations platform update 24 (März 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+###  <a name="platform-update-24-for-finance-and-operations"></a>Plattformupdate 24 für Finance and Operations
+Weitere Details zum Plattformupdate 24 für Finance and Operations finden Sie unter [Neues oder Änderungen im Plattformupdate 24 für Finance and Operations (März 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

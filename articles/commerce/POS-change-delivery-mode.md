@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 1e9f8d202fa81546a9f84af62824e6d8f620cf35
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: eaffe7821b60dd787a7d8b7533c1b8599033ba68
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975096"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594136"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Lieferart in POS ändern
 
@@ -40,4 +40,10 @@ Nachdem diese Funktion in POS konfiguriert wurde, wenn Sie **Lieferart ändern**
 
 Nachdem Sie die Zeilen ausgewählt haben, die Sie ändern möchten, klicken Sie auf **Lieferart ändern**, um aufgefordert zu werden, die Optionen für den Zustellmodus auszuwählen. Wenn Sie mehrere zu ändernde Zeilen ausgewählt haben, zeigt POS nur Zustellungsmodi an, die für alle ausgewählten Produkte als zulässig konfiguriert wurden. Liefermodi können so konfiguriert werden, dass sie bestimmte Produkte und Lieferadressen unterstützen. Wenn es eine Versandart gibt, die für eine Produkt- und Adresskombination akzeptabel ist, für eine andere ausgewählte Produkt- und Adresskombination jedoch nicht akzeptabel ist, ist die Versandart nicht verfügbar. Möglicherweise müssen Sie die Zeilen einzeln auswählen und den Versandmodus für jede Zeile separat ändern, wenn Sie einen Versandmodus für ein Produkt auswählen möchten, das von einem anderen Produkt nicht unterstützt wird.  
 
-Nachdem Sie den neuen Zustellungsmodus ausgewählt haben, wird die Transaktionsseite angezeigt. Wählen Sie die Option aus, um die Auswahl Ihres neuen Zustellmodus zu überprüfen. Wählen Sie die Registerkarte **Lieferung** in der Transaktionsliste.   
+Nachdem Sie den neuen Zustellungsmodus ausgewählt haben, wird die Transaktionsseite angezeigt. Wählen Sie die Option aus, um die Auswahl Ihres neuen Zustellmodus zu überprüfen. Wählen Sie die Registerkarte **Lieferung** in der Transaktionsliste.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Callcenteraufträge erstellen](tasks/create-call-center-orders.md)
+
+[Transaktions-E-Mails nach Lieferart anpassen](customize-email-delivery-mode.md)

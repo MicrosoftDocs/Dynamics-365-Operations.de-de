@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 4851c62a19bb562c7f5f578aecbae99cfcdb982f
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897372"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461295"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-october-31-2018"></a>Neuerungen oder Änderungen in Dynamics 365 Talent – Core HR (31. Oktober 2018)
 
@@ -39,7 +39,7 @@ Feldkontext wird künftig hinzugefügt, um die direkte Navigation zu den entspre
 
 ### <a name="configure-target-systems"></a>Zielsystem konfigurieren
 
-In Talent können Systemadministratoren Links definieren, die durch den Systemverwaltungsarbeitsbereich überzogen werden. Teil der Konfiguration ist die Finance-Umgebung, zu der Sie als „Ziel“ des Links wechseln möchten. Dazu geben Sie dem Zielsystem einen Namen und geben die URL der Finance-Umgebung an. Das folgende Beispiel einer Finance-URL, die Sie bereitstellen würden:https://devax00124aos.cloud.test.dynamics.com/. Nachdem Sie Ihre Zielsysteme konfiguriert haben, können Sie die Links definieren.
+In Talent können Systemadministratoren Links definieren, die durch den Systemverwaltungsarbeitsbereich überzogen werden. Teil der Konfiguration ist die Finance-Umgebung, zu der Sie als „Ziel“ des Links wechseln möchten. Dazu geben Sie dem Zielsystem einen Namen und geben die URL der Finance-Umgebung an. Das folgende Beispiel einer Finance-URL, die Sie bereitstellen würden: https://devax00124aos.cloud.test.dynamics.com/. Nachdem Sie Ihre Zielsysteme konfiguriert haben, können Sie die Links definieren.
 
 ### <a name="configure-links"></a>Links konfigurieren
 
@@ -59,7 +59,7 @@ Jeder Link, der erstellt wird, besitzt die folgenden definierten Informationen.
 
 - Wählen Sie **Ja** wenn Sie den aktuellen Unternehmenskontext des Benutzers verwenden möchten, wenn Sie zu Finance navigieren. Wenn **Nein** aktiviert ist, können Sie das Unternehmen auswählen, das verwendet werden soll.
 
-- Zielmenüoption - Geben Sie die Menüoption von Finance ein, für die der Link zur Navigation verwendet werden soll. Menüpunkte, zu denen Sie direkt navigieren können, sind verfügbar. Um die notwendige Menüoption zu finden, öffnen Sie Finance und öffnen Sie die Seite, die das Ziel der Navigation ist. Kopieren Sie die Menüoption aus der URL. Wenn Sie möchten, dass Sie mit dem Link zur Mitarbeiterliste in Finance and Operations gelangen, geben Sie den Wert ein, der nach " &mi " in der URL angezeigt wird. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. Die Menüoption, um zur Mitarbeiterlistenseite in diesem Beispiel zu navigieren ist: HcmWorkerListPage_Employees.
+- Zielmenüoption - Geben Sie die Menüoption von Finance ein, für die der Link zur Navigation verwendet werden soll. Menüpunkte, zu denen Sie direkt navigieren können, sind verfügbar. Um die notwendige Menüoption zu finden, öffnen Sie Finance und öffnen Sie die Seite, die das Ziel der Navigation ist. Kopieren Sie die Menüoption aus der URL. Wenn Sie möchten, dass Sie mit dem Link zur Mitarbeiterliste in Finance and Operations gelangen, geben Sie den Wert ein, der nach „&mi“ in der URL angezeigt wird. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. Die Menüoption, um zur Mitarbeiterlistenseite in diesem Beispiel zu navigieren ist: HcmWorkerListPage_Employees.
 
 - Link der Datenquelle - Wählen Sie die Quelle aus, auf die die Verknüpfung verweist. Die häufigsten Gründe sind wie **Arbeitskraft** und **Position** sind verfügbar
 
@@ -76,7 +76,7 @@ Benutzer können Sicherheitsrechte innerhalb von Finance haben, um auf die Seite
 
 ### <a name="positions-with-a-future-start-date-cannot-be-assigned-to-a-new-employee"></a>Positionen mit einem zukünftigen Startdatum können nicht zugeordnet werden für einen neuen Mitarbeiter
 
-Änderungen wurden gemacht, um Mitarbeiter-Zuweisungen für künftige terminierte Positionen zu ermöglichen. Positionen, deren Startdatum in der Zukunft liegt, können ausgewählt werden und die Mitarbeiter-Zuweisungen werden nach der Speicherung oder Beendigung des Workflows  gemacht (wenn der Workflow aktiviert ist).
+Änderungen wurden gemacht, um Mitarbeiter-Zuweisungen für künftige terminierte Positionen zu ermöglichen. Positionen, deren Startdatum in der Zukunft liegt, können ausgewählt werden und die Mitarbeiter-Zuweisungen werden nach der Speicherung oder Beendigung des Workflows gemacht (wenn der Workflow aktiviert ist).
 
 ### <a name="new-employee-cannot-be-assigned-existing-position"></a>Neuer Mitarbeiter kann vorhandener Position nicht zugewiesen werden
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 5d9f2febc912b35897b063019146d219cadea1fa
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817305"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517231"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Angepasste Seiten für die Benutzeranmeldung einrichten
 
@@ -195,17 +195,17 @@ Nachdem Sie die Datei global.json aktualisiert und die Änderungen veröffentlic
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Domänennamen konfigurieren](configure-your-domain-name.md)
 
-[Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
+[Neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md)
 
-[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+[E-Commerce-Website erstellen](create-ecommerce-site.md)
 
-[Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
+[Zuordnen einer Dynamics 365 Commerce-Website zu einem Onlinekanal](associate-site-online-store.md)
 
-[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+[Robots.txt-Dateien verwalten](manage-robots-txt-files.md)
 
-[URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+[URL-Umleitungen in Massen hochladen](upload-bulk-redirects.md)
 
 [Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
 

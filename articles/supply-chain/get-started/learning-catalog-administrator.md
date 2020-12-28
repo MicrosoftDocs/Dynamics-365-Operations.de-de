@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4b0c8a265971c4a3f0b83ac1d6404b7d4aa82660
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: ba93bdcb64237af627c5a6d5adb834583f08f768
+ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793802"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4516618"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Lernkatalog für Administratoren für Dynamics 365 Supply Chain Management
 
@@ -46,7 +46,7 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 | [Implementierungsprojekt für Finance and Operations verwalten](https://docs.microsoft.com/learn/paths/implement-finance-operations/) | Lernen Sie die wichtigsten Elemente und Best Practices kennen, um erfolgreich ein Finance and Operations-Implementierungsprojekt zu verwalten. Vom ersten Schritt, in dem Sie Ihre Projektmethodik planen und entwerfen, über die Verwendung von FastTrack-Diensten, die Entwicklungsstrategie, das Datenmanagement und vieles mehr bis hin zu den besten Möglichkeiten zur Wartung und Überwachung Ihres Betriebs nach dem Go-Live. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 11.5 Stunden |
 | [Startseite der Systemverwaltung](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Dieses Thema weist auf Inhalte für Systemadministratoren von Microsoft Dynamics 365 for Finance and Operations. Dieser Inhalt hilft Ihnen bei der Systemkonfiguration, damit es für Ihre Organisation reibungslos und effektiv funktioniert. | Dokumentation | |
 | [Finance and Operations: Onboarding in Dynamics 365 (DYN542PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | FastTrack bietet einen Onboarding-Service für jedes Dynamics 365 for Finance and Operations-Projekt. In diesem Technologie-Gespräch erklären wir den Onboarding-Prozess, gehen den Inhalt der Onboarding-Sitzung mit Ihnen durch und stellen vor, wie wir das Onboarding in naher Zukunft effizienter und bequemer vornehmen. Diese Sitzung ist besonders für alle relevant, die mit Kunden in den Anfangsstadien eines Projekts, zwischen dem Anschluss des Lizenzauftrags und dem Start des Implementierungsprojekts arbeiten. | Kostenlose Aufnahme einer Webkonferenz | 62 Minuten |
-| [Lokale (lokale Geschäftsdaten)-Bereitstellung (DYN382PAL2)](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Nehmen Sie an diesem Technologiegespräch teil, um eine Übersicht über die lokalen Bereitstellungsoption für Dynamics 365 for Finance and Operations, Enterprise Edition zu erhalten. In dieser Sitzung sehen wir uns, die Lösungsarchitektur einer lokalen Bereitstellung, ALM-Aspekte, Systemanforderungen, und die Bereitstellung des Life Cycle Services-Projekts an. | Kostenlose Aufnahme einer Webkonferenz | 48 Minuten |
+| [Lokale (lokale Geschäftsdaten)-Bereitstellung (DYN382PAL2)](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Bitte nehmen Sie an diesem Tech-Talk teil, um einen Überblick über die Option des lokalen Bereitstellens von Dynamics 365 for Finance and Operations, Enterprise Edition, zu erhalten. In dieser Sitzung werden wir uns die Lösungsarchitektur einer lokalen Bereitstellung, ALM-Aspekte, Systemanforderungen und die Bereitstellung des Life Cycle Services-Projekts ansehen. | Kostenlose Aufnahme einer Webkonferenz | 48 Minuten |
 | [In juristische Person kopieren (DYN383PAL)](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | In dieser Sitzung besprechen wir eine neue Funktion im Datenverwaltungsframework: Kopieren in juristischen Person. Zuerst werden kurz die neuen Funktionen geprüft, die dem Datenverwaltungsframework in Plattform 8 für den Arbeitsbereich, die Vorlagen und die Datenprojekte hinzugefügt wurden und dann werden die zusätzlichen Funktionen besprochen, die für Kopieren in juristische Person hinzugefügt wurden. | Kostenlose Aufnahme einer Webkonferenz | 54 Minuten |
 
 ## <a name="core-development"></a>Grundlegende Entwicklung<a name="core-development"></a>

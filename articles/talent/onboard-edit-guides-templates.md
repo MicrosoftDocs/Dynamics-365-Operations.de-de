@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 291f7aefac61c26dfab81cfff28c1c6580d46de5
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897119"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461298"
 ---
 # <a name="edit-onboarding-guides-and-templates"></a>Bearbeiten von Onboarding Anleitungen und Vorlagen
 
@@ -173,7 +173,7 @@ Sie können nützliche Dateien, Zuordnungen und Links im Abschnitt **Ressourcen*
 
 3. Wählen Sie **Speichern** aus, um die Arbeit zu speichern.
 
-Um eine Ressource zu löschen, wählen Sie die Schaltfläche **Löschen** Abfalleimersymbol), das rechts neben der Ressource ist.
+Um eine Ressource zu löschen, wählen Sie die Schaltfläche **Löschen** (Abfalleimersymbol), das rechts neben der Ressource ist.
 
 Um einen Kontakt zu bearbeiten, wählen Sie die Schaltfläche **Bearbeiten** (Stiftsymbol), das rechts neben der Ressource ist.
 

@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 84becee12363ca38951ff13073d87d1b1f14b616
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3765000"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517354"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domänen in Dynamics 365 Commerce
 
@@ -34,12 +34,12 @@ Domänen sind Webadressen, mit denen in einem Webbrowser zu Dynamics 365 Commerc
 
 ## <a name="provisioning-and-supported-host-names"></a>Bereitstellung und unterstützte Hostnamen
 
-Bei der Bereitstellung einer E-Commerce-Umgebung in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), wird das Feld **Unterstützte Hostnamen** auf dem Bildschirm für die E-Commerce-Bereitstellung dazu verwendet, Domänen einzugeben, die der bereitgestellten Commerce-Umgebung zugeordnet werden. Bei diesen Domänen handelt es sich um DNS-Namen (Domänennamenserver), auf denen E-Commerce-Websites gehostet werden. Wenn Sie zu diesem Zeitpunkt eine Domäne eingeben, wird der Datenverkehr für die Domäne nicht zu Dynamics 365 Commerce umgeleitet. Der Datenverkehr für eine Domäne wird nur an den Commerce-Endpunkt weitergeleitet, wenn der DNS-CNAME-Eintrag aktualisiert wird, um den Commerce-Endpunkt mit der Domäne zu verwenden.
+Bei der Bereitstellung einer E-Commerce-Umgebung in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) wird das Feld **Unterstützte Hostnamen** auf dem Bildschirm für die E-Commerce-Bereitstellung dazu verwendet, Domänen einzugeben, die der bereitgestellten Commerce-Umgebung zugeordnet werden. Bei diesen Domänen handelt es sich um DNS-Namen (Domänennamenserver), auf denen E-Commerce-Websites gehostet werden. Wenn Sie zu diesem Zeitpunkt eine Domäne eingeben, wird der Datenverkehr für die Domäne nicht zu Dynamics 365 Commerce umgeleitet. Der Datenverkehr für eine Domäne wird nur an den Commerce-Endpunkt weitergeleitet, wenn der DNS-CNAME-Eintrag aktualisiert wird, um den Commerce-Endpunkt mit der Domäne zu verwenden.
 
 > [!NOTE]
 > Es können mehrere Domänen in das Feld **Unterstützte Hostnamen** eingegeben werden, indem sie mit Semikolons getrennt werden.
 
-Die folgende Abbildung zeigt den LCS E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**. 
+Die folgende Abbildung zeigt den LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**. 
 
 ![LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**](./media/Domains_ProvisioningeCommerceScreen.png)
 
@@ -47,13 +47,13 @@ Sie können eine Serviceanforderung erstellen, um einer Umgebung zusätzliche Do
 
 ## <a name="commerce-generated-urls"></a>Von Commerce generierte URLs
 
-Bei der Bereitstellung einer E-Commerce-Umgebung generiert Commerce eine URL, die die Arbeitsadresse für die Umgebung darstellt. Auf diese URL wird in dem in LCS angezeigten E-Commerce-Site-Link verwiesen, nachdem die Umgebung bereitgestellt wurde. Eine von Commerce generierte URL hat das Format `https://<e-Commerce tenant name>.commerce.dynamics.com`, wobei der Name des E-Commerce-Mandanten der in LCS für die Commerce-Umgebung eingegebene Name ist.
+Bei der Bereitstellung einer Dynamics 365 Commerce-E-Commerce-Umgebung generiert Commerce eine URL, die die Arbeitsadresse für die Umgebung darstellt. Auf diese URL wird in dem in LCS angezeigten E-Commerce-Website-Link verwiesen, nachdem die Umgebung bereitgestellt wurde. Eine von Commerce generierte URL hat das Format `https://<e-commerce tenant name>.commerce.dynamics.com`, wobei der Name des E-Commerce-Mandanten der in LCS für die Commerce-Umgebung eingegebene Name ist.
 
 Sie können Hostnamen für Produktionsstandorte auch in einer Sandbox-Umgebung verwenden. Diese Option ist ideal, wenn Sie eine Website aus einer Sandbox-Umgebung in die Produktion kopieren.
 
 ## <a name="site-setup"></a>Site-Einstellungen
 
-Nachdem Ihre E-Commerce-Umgebung bereitgestellt wurde, müssen Sie Ihre Website im Commerce Site Builder einrichten, um Ihre Website der Arbeits-URL zuzuordnen.
+Nachdem Ihre E-Commerce-Umgebung bereitgestellt wurde, müssen Sie Ihre Website im Commerce-Website-Generator einrichten, um Ihre Website der Arbeits-URL zuzuordnen.
 
 Wenn Sie zum ersten Mal eine Website im Site Builder einrichten, wird das **Ihre Site einrichten**-Dialogfeld angezeigt.
 
@@ -68,7 +68,7 @@ Das Feld **Pfad** kann leer gelassen werden, oder es kann eine zusätzliche Pfad
 > [!NOTE]
 > Der Pfad ist auch als **Abgleichspfad** bekannt, wenn ein Kanal im **Seiteneinstellungen \> Kanäle**-Konfigurationsabschnitt vom Site Builder hinzugefügt wird.
 
-Wenn Sie im Site Builder beispielsweise eine Website mit dem Namen „fabrikam“ in einem E-Commerce-Mandanten mit dem Namen „xyz“ haben und die Website mit einem leeren Pfad einrichten, greifen Sie in einem Webbrowser auf den veröffentlichten Website-Inhalt zu, indem Sie direkt zu der von Commerce generierten Basis-URL gehen:
+Wenn Sie im Website-Generator beispielsweise eine Website mit dem Namen „fabrikam“ in einem E-Commerce-Mandanten mit dem Namen „xyz“ haben und die Website mit einem leeren Pfad einrichten, greifen Sie in einem Webbrowser auf den veröffentlichten Website-Inhalt zu, indem Sie direkt zu der von Commerce generierten Basis-URL gehen:
 
 `https://xyz.commerce.dynamics.com`
 
@@ -102,9 +102,9 @@ Wenn in einer Umgebung mit mehreren bereitgestellten Domänen keine Domänenabfr
 
 ## <a name="traffic-forwarding-in-production"></a>Datenverkehrsweiterleitung in der Produktion
 
-Sie können mehrere Domänen mithilfe von Domänenabfragezeichenfolgenparametern auf dem Endpunkt commerce.dynamics.com selbst simulieren. Wenn Sie jedoch in der Produktion live gehen möchten, müssen Sie den Datenverkehr für Ihre benutzerdefinierte Domäne an den `<e-Commerce tenant name>.commerce.dynamics.com`-Endpunkt weiterleiten.
+Sie können mehrere Domänen mithilfe von Domänenabfragezeichenfolgenparametern auf dem Endpunkt commerce.dynamics.com selbst simulieren. Wenn Sie jedoch in der Produktion live gehen möchten, müssen Sie den Datenverkehr für Ihre benutzerdefinierte Domäne an den `<e-commerce tenant name>.commerce.dynamics.com`-Endpunkt weiterleiten.
 
-Der `<e-Commerce tenant name>.commerce.dynamics.com`-Endpunkt unterstützt keine SSLs (Secure Sockets Layers) für benutzerdefinierte Domänen. Daher müssen Sie benutzerdefinierte Domänen mithilfe eines Front-Door-Dienstes oder eines Content Delivery Network (CDN) einrichten. 
+Der `<e-commerce tenant name>.commerce.dynamics.com`-Endpunkt unterstützt keine SSLs (Secure Sockets Layers) für benutzerdefinierte Domänen. Daher müssen Sie benutzerdefinierte Domänen mithilfe eines Front-Door-Dienstes oder eines Content Delivery Network (CDN) einrichten. 
 
 Um benutzerdefinierte Domänen mithilfe eines Front-Door-Dienstes oder eines CDN einzurichten, haben Sie zwei Möglichkeiten:
 
@@ -152,17 +152,17 @@ Die von Commerce bereitgestellte Azure Front Door-Instanz unterstützt keine Ape
 
   ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-  [Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
+  [Neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md)
 
   [Onlineshopkanal einrichten](online-stores.md)
 
-  [E-Commerce-Site erstellen](create-ecommerce-site.md)
+  [E-Commerce-Website erstellen](create-ecommerce-site.md)
 
-  [Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
+  [Zuordnen einer Dynamics 365 Commerce-Website zu einem Onlinekanal](associate-site-online-store.md)
 
-  [Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+  [Robots.txt-Dateien verwalten](manage-robots-txt-files.md)
 
-  [URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+  [URL-Umleitungen in Massen hochladen](upload-bulk-redirects.md)
 
   [Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
 

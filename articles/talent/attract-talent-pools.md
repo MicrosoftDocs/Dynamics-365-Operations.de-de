@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e00a54db50f1360096bb5329eef660927cecde3d
-ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
+ms.openlocfilehash: 97385da9d258cc169a9976be7c7798faa41661c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078042"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527692"
 ---
 # <a name="source-candidates-with-talent-pools-in-attract"></a>Kandidaten mithilfe von Talentpools in Attract anwerben
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Personalbeschaffungsmitarbeiter und Einstellungsmanager können ihre Kandidaten mit der Talentpool-Funktion in Attract organisieren. Talentpools können Ihnen helfen, alle Kandidaten zu verfolgen und in Kontakt mit ihnen zu treten, die sich auf Stellen in Ihrem Unternehmen bewerben.
 
@@ -113,7 +115,7 @@ Alle Benutzer verfügen über eine allgemeine Ansicht der Kandidatenprofile. Die
 
 - Die Registerkarte **Dokumente** zeigt sämtliche Dokumente, die vom Kandidaten von seinem Profil oder bei Bewerbungen hinzugefügt hat. Mit dieser Registerkarte können Sie die Lebensläufe, Anschreiben, Portfolioarbeit usw. eines Kandidaten verwalten. Mithilfe dieser Registerkarte können Sie auch Dokumente hinzufügen.
 
-    Zum Anzeigen eines Dokuments wählen Sie den Dokumentnamen aus der Dokumentenliste aus. Sie können Microsoft Word-Dokumente der Bewerbung anzeigen, indem Sie Microsoft Office 365 verwenden. Sie können die Dokumente auch auf Ihren lokalen Computer herunterladen, indem Sie die Option **Herunterladen** für jedes Dokument verwenden.
+    Zum Anzeigen eines Dokuments wählen Sie den Dokumentnamen aus der Dokumentenliste aus. Sie können Microsoft Word-Dokumente mithilfe von Microsoft 365 in der Anwendung anzeigen. Sie können die Dokumente auch auf Ihren lokalen Computer herunterladen, indem Sie die Option **Herunterladen** für jedes Dokument verwenden.
 
 - Die Registerkarte **LinkedIn** enthält die LinkedIn-Informationen des Kandidaten. Um diese Registerkarte zu verwenden, müssen Sie Ihr LinkedIn-Konto in den Benutzereinstellungen verbinden, und die LinkedIn Recruiter-Verbindung muss hergestellt werden. Weitere Informationen finden Sie unter [Kandidaten mithilfe von LinkedIn Recruiter in Microsoft Dynamics 365 Talent - Attract anwerben](./attract-linkedin-recruiter.md).
 

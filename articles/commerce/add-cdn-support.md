@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646038"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517207"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Unterstützung für ein Content Delivery Network (CDN) hinzufügen
 
@@ -33,9 +33,9 @@ In diesem Thema wird beschrieben, wie ein Content Delivery Network (CDN) Ihrer M
 
 ## <a name="overview"></a>Übersicht
 
-Wenn Sie eine E-Commerce-Umgebung in Dynamics 365 Commerce einrichten, können Sie diese so konfigurieren, dass sie mit dem CDN-Service arbeitet. 
+Wenn Sie eine E-Commerce-Umgebung in Dynamics 365 Commerce einrichten, können Sie diese so konfigurieren, dass sie mit Ihrem CDN-Dienst arbeitet. 
 
-Ihre benutzerdefinierte Domäne kann während des Bereitstellungsprozesses für die E-Commerce-Umgebung aktiviert werden. Alternativ können Sie eine Serviceanforderung verwenden, um diese einzurichten, nachdem der Bereitstellungsprozess abgeschlossen ist. Der Bereitstellungsprozess für die E-Commerce-Umgebung generiert einen Hostnamen, der der Umgebung zugeordnet ist. Dieser Hostname hat das folgende Format, wobei \<*e-commerce-tenant-name*\> der Name Ihrer Umgebung ist:
+Ihre benutzerdefinierte Domäne kann während des Bereitstellungsprozesses für Ihre E-Commerce-Umgebung aktiviert werden. Alternativ können Sie eine Serviceanforderung verwenden, um diese einzurichten, nachdem der Bereitstellungsprozess abgeschlossen ist. Der Bereitstellungsprozess für die E-Commerce-Umgebung generiert einen Hostnamen, der der Umgebung zugeordnet ist. Dieser Hostname hat das folgende Format, wobei \<*e-commerce-tenant-name*\> der Name Ihrer Umgebung ist:
 
 &lt;e-commerce-tenant-name&gt;.commerce.dynamics.com
 
@@ -97,7 +97,7 @@ Um eine Routingregel im Azure Front Door Service einzurichten, führen Sie die f
 1. Geben Sie im Feld **Name** **Standard** ein.
 1. Wählen Sie im Feld **Angenommenes Protokoll** **HTTP und HTTPS** aus.
 1. Im Feld **Frontend-Hosts** geben Sie den Text **dynamics-ecom-tenant-name.azurefd.net** ein.
-1. Unter **Muster der Übereinstimmung** im oberen Feld, geben Sie **/\*** ein.
+1. Unter **Muster zur Übereinstimmung** im oberen Feld geben Sie **/\** _ ein.
 1. Unter **Arbeitsplandetails** legen Sie die Option **Arbeitsplantyp** auf **Vorwärts** fest.
 1. Wählen Sie im Feld **Backend-Pool** **ecom-backend**.
 1. In der Feldgruppe **Weiterleitungsprotokoll** wählen Sie die Option **Abgleichungsanforderung** aus. 
@@ -110,7 +110,7 @@ Um eine Routingregel im Azure Front Door Service zwischenzuspeichern, führen Si
 1. Geben Sie im Feld **Name** **Statik** ein.
 1. Wählen Sie im Feld **Angenommenes Protokoll** **HTTP und HTTPS** aus.
 1. Im Feld **Frontend-Hosts** geben Sie den Text **dynamics-ecom-tenant-name.azurefd.net** ein.
-1. Unter **Muster zur Übereinstimmung** im oberen Feld **/\_msdyn365/\_scnr/\***.
+1. Unter **Muster zur Übereinstimmung** im oberen Feld **/\_msdyn365/\_scnr/\** _.
 1. Unter **Arbeitsplandetails** legen Sie die Option **Arbeitsplantyp** auf **Vorwärts** fest.
 1. Wählen Sie im Feld **Backend-Pool** **ecom-backend**.
 1. In der Feldgruppe **Weiterleitungsprotokoll** wählen Sie die Option **Abgleichungsanforderung** aus.
@@ -144,17 +144,17 @@ Ihr CDN sollte jetzt ordnungsgemäß konfiguriert werden, so dass sie mit der Co
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Domänennamen konfigurieren](configure-your-domain-name.md)
 
-[Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
+[Neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md)
 
-[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+[E-Commerce-Website erstellen](create-ecommerce-site.md)
 
-[Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
+[Zuordnen einer Dynamics 365 Commerce-Website zu einem Onlinekanal](associate-site-online-store.md)
 
-[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+[Robots.txt-Dateien verwalten](manage-robots-txt-files.md)
 
-[URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+[URL-Umleitungen in Massen hochladen](upload-bulk-redirects.md)
 
 [Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
 

@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c9ff3d0c7eabe2670c4818173d88c3ab5da7ff0
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015128"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527385"
 ---
 # <a name="product-information-overview"></a>Produktinformationsübersicht
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dieses Thema enthält Informationen zur Produktinformationsverwaltung. Die Produktinformationsverwaltung funktioniert mit einer freigegebenen Produktdefinition, Kategorisierung und Kennungen für alle juristischen Personen und auch bestimmte Konfigurationen eines Produkts, um Geschäftsprozessen gerecht zu werden. 
 
@@ -89,7 +91,7 @@ Die Produkte, die für eine bestimmte juristische Person freigegeben werden, wer
 
 Sie können den Arbeitsbereich **Freigegebene Produktverwaltung** über die Menüoption **Eigenen Arbeitsbereich konfigurieren** konfigurieren. Wählen Sie eine Kategoriehierarchie und eine Kategorie aus, nach der der Arbeitsbereich gefiltert wird. Um die relevanten Produktdaten im Arbeitsbereich anzupassen, können Sie, in Tagen, auch die Planungszeiträume für **Zuletzt freigegebene Produkte** und **Gestoppte, freigegebene Produkte** definieren.
 
-Der Arbeitsbereich enthält eine Zusammenfassung von Kacheln und zweier Listen. Die Liste **Offene Anfragen** zeigt Produktänderungsanfragen für Produkte in der ausgewählten Produktkategoriehierarchie, die nicht abgeschlossen und geschlossen sind. Die Liste **Vor kurzem freigegeben** enthält Produkte, die innerhalb des Planungszeitraums freigegeben wurden, der in der Arbeitsbereichkonfiguration festgelegt ist. Für jeden Artikel der Liste wird eine Validierung ausgeführt und der Validierungsstatus angezeigt. Dieser Status könnte angeben, dass die für die juristische Person erforderlichen Konfigurationen noch nicht abgeschlossen sind. Über die Liste können Sie direkt auf die Seiten **Details für freigegebene Produkte** , **Produktattributverwaltung** , **Produktkategorieverwaltung** , **Standardauftragseinstellungen** und **Textübersetzungen** zugreifen, um die erforderliche Konfiguration für das Produkt abzuschließen.
+Der Arbeitsbereich enthält eine Zusammenfassung von Kacheln und zweier Listen. Die Liste **Offene Anfragen** zeigt Produktänderungsanfragen für Produkte in der ausgewählten Produktkategoriehierarchie, die nicht abgeschlossen und geschlossen sind. Die Liste **Vor kurzem freigegeben** enthält Produkte, die innerhalb des Planungszeitraums freigegeben wurden, der in der Arbeitsbereichkonfiguration festgelegt ist. Für jeden Artikel der Liste wird eine Validierung ausgeführt und der Validierungsstatus angezeigt. Dieser Status könnte angeben, dass die für die juristische Person erforderlichen Konfigurationen noch nicht abgeschlossen sind. Über die Liste können Sie direkt auf die Seiten **Details für freigegebene Produkte**, **Produktattributverwaltung**, **Produktkategorieverwaltung**, **Standardauftragseinstellungen** und **Textübersetzungen** zugreifen, um die erforderliche Konfiguration für das Produkt abzuschließen.
 
 ### <a name="manually-creating-a-new-released-product"></a>Ein neues freigegebenes Produkt manuell erstellen
 

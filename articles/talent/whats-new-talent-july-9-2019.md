@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 99a7e6130d45229011a185087d4872fe34b8224a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: feb39966d98fa7bde9a6bfad26b07fbd224da59b
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897625"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528031"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>Neuerungen und Änderungen in Dynamics 365 Talent (9. Juli 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent neu oder geändert wurden.
 
@@ -47,9 +49,9 @@ Diese Version enthält kleinere Fehlerkorrekturen für Dynamics 365 Talent: Onbo
 
 Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.2374.
 
-### <a name="platform-update-28-for-finance-and-operations"></a>Platform update 28 für Finance and Operations
+### <a name="platform-update-28-for-finance-and-operations"></a>Plattformupdate 28 für Finance and Operations
 
-Zusätzliche Details zu Platform update 28 für Finance and Operations finden Sie unter [Vorschaufunktionen in Dynamics 365 Finance and Operations Plattformaktualisierung 28 (Juli 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+Zusätzliche Details zum Plattformupdate 28 für Finance and Operations finden Sie unter [Vorschaufunktionen im Plattformupdate 28 für Dynamics 365 Finance and Operations (Juli 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Entitätssupport für benutzerdefinierte Felder in Common Data Service 
 

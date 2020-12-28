@@ -15,11 +15,11 @@ ms.search.scope: Talent, Core
 ms.search.region: Global
 ms.author: shielas
 ms.openlocfilehash: 33eba9796ca997fde4be9a46050207d313551bde
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832744"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461310"
 ---
 # <a name="schedule-interviews-in-attract"></a>Planen von Interviews in Attract
 
@@ -29,7 +29,7 @@ ms.locfileid: "2832744"
 
 Die Planungsaktivität ist optional und enthält zwei Komponenten: Kandidatenverfügbarkeitsanforderung und Zeitplan. Mit der Kandidatenverfügbarkeitskomponente können Sie E-Mail verwenden, um die Verfügbarkeit des Kandidaten anzufordern. Die Zeitplankomponente bietet die Möglichkeit, Gespräche mit dem Kandidaten und dem Einstellungsteam zu planen.
 
-Um die Planungsaktivität so einzurichten, dass Sie die Kandidaten einbeziehen oder einschränken können, wählen Sie einen Wert im Feld**Planung** aus. Die verfügbaren Optionen sind **Alle Kandidaten**, **Externe Kandidaten** und **Interne Kandidaten**. Wenn Sie zum Beispiel interne Kandidaten in der ersten Planungsrunde auslassen möchten, können Sie die Zeitplanaktivität nur externen Kandidaten zuweisen, indem Sie das Feld **Planung** auf  **Externe Kandidaten** festlegen.
+Um die Planungsaktivität so einzurichten, dass Sie die Kandidaten einbeziehen oder einschränken können, wählen Sie einen Wert im Feld **Planung** aus. Die verfügbaren Optionen sind **Alle Kandidaten**, **Externe Kandidaten** und **Interne Kandidaten**. Wenn Sie zum Beispiel interne Kandidaten in der ersten Planungsrunde auslassen möchten, können Sie die Zeitplanaktivität nur externen Kandidaten zuweisen, indem Sie das Feld **Planung** auf  **Externe Kandidaten** festlegen.
 
 ### <a name="candidate-availability-request"></a>Kandidatenverfügbarkeitsanforderung
 
@@ -93,7 +93,7 @@ Kandidaten erhalten eine E-Mail, die das Interview zusammenfasst. Die E-Mails en
 
 Die Rückmeldungsaktivität einer Stellenvorlage ist optional. Diese Aktivität ermöglicht es Gesprächsteilnehmern, Empfehlungen oder Feedback-Kommentare für einen Bewerber einzugeben. 
 
-Um die Kandidaten zum Abgeben von Feedback einzubeziehen oder einzuschränken, wählen Sie einen Wert im Feld **Wer sollte der Befragungspersonen Rückmeldung geben** aus.  Die verfügbaren Optionen sind **Alle Kandidaten**, **Externe Kandidaten** und **Interne Kandidaten**. Wenn Sie zum Beispiel interne Kandidaten in der ersten Runde der Planung überspringen möchten, legen Sie das Feld auf**Wer sollte der Befragungspersonen Rückmeldung geben** auf **Externe Kandidaten** fest.
+Um die Kandidaten zum Abgeben von Feedback einzubeziehen oder einzuschränken, wählen Sie einen Wert im Feld **Wer sollte der Befragungspersonen Rückmeldung geben** aus.  Die verfügbaren Optionen sind **Alle Kandidaten**, **Externe Kandidaten** und **Interne Kandidaten**. Wenn Sie zum Beispiel interne Kandidaten in der ersten Runde der Planung überspringen möchten, legen Sie das Feld auf **Wer sollte der Befragungspersonen Rückmeldung geben** auf **Externe Kandidaten** fest.
 
 Wenn Sie das Feld **Feedbackteilnehmer von Einstellungsteam erben** ausgewählt habent, werden der Personalbeschaffer, der zukünftige Vorgesetzte und die Gesprächsleiter automatisch in der Rückmeldungs-Aktivität eingegeben. Organisationen können Gesprächsleitern erlauben, Feedback anderer Personen anzuzeigen, bevor sie ihr eigenes Feedback senden. Organisationen können Gesprächsleitern auch erlauben, ihr Feedback nach dem Senden zu bearbeiten. Gesprächsleiter werden daran erinnert, Rückmeldungen für die Gespräche zu senden, die sie vor kurzem auf Basis der Voreinstellungskonfiguration als Teil der Stellenvorlage geführt haben. Der zukünftige Vorgesetzte oder ein Personalbeschaffer für die Stelle kann einen Gesprächsleiter auch manuell daran erinnern, Feedback zu senden.
 
@@ -101,4 +101,4 @@ Wenn Sie das Feld **Feedbackteilnehmer von Einstellungsteam erben** ausgewählt 
 
 Die Gesprächsaktivität ist eine optionale Aktivität mit drei Komponenten: **Kandidatenverfügbarkeitsanforderung**,**Zeitplan** und **Rückmeldung**. Verwenden Sie die Gesprächsaktivität in der Stellenvorlage, wenn Sie die gesamte Kandidatenverfügbarkeitsanforderung, den Zeitplan und die Rückmeldung als Teil des Prozesses einbeziehen möchten, anstatt sie einzeln als Teil des Einrichtungsprozesses zu verwenden.
 
-Um Kandidaten einzubeziehen oder zu beschränken, die befragt werden sollen, wählen Sie einen Wert im Feld **Wen befragen Sie** aus. Die verfügbaren Optionen sind **Alle Kandidaten**, **Externe Kandidaten** und **Interne Kandidaten**. Wenn Sie zum Beispiel interne Kandidaten in der ersten Runde der Befragung überspringen möchten, legen Sie das Feld auf**Wen befragen Sie** auf **Externe Kandidaten** fest.
+Um Kandidaten einzubeziehen oder zu beschränken, die befragt werden sollen, wählen Sie einen Wert im Feld **Wen befragen Sie** aus. Die verfügbaren Optionen sind **Alle Kandidaten**, **Externe Kandidaten** und **Interne Kandidaten**. Wenn Sie zum Beispiel interne Kandidaten in der ersten Runde der Befragung überspringen möchten, legen Sie das Feld auf **Wen befragen Sie** auf **Externe Kandidaten** fest.

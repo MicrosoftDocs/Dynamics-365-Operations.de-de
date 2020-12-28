@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable
+ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e13b5fd895fca7f8fe77809348d63ed8867dea9e
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 6f4ddd03ec16ac43b007b904eb688563735e0941
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017321"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654171"
 ---
 # <a name="zone-threshold-replenishment"></a>Schwellenwert für Zonenwiederbeschaffung
 
@@ -86,7 +86,7 @@ Dieses Beispiel zeigt, wie eine Wiederbeschaffungsvorlage vorbereitet wird. Wenn
 
 1. Wählen Sie **USMF** juristische Person aus, um mit den Demodaten zu arbeiten.
 1. Wechseln Sie zu **Lagerortverwaltung \> Setup \> Wiederbeschaffung \> Wiederbeschaffungsvorlagen**.
-1. Klicken Sie auf **Bearbeiten** , um die Seite in den Bearbeitungsmodus zu versetzen.
+1. Klicken Sie auf **Bearbeiten**, um die Seite in den Bearbeitungsmodus zu versetzen.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster **Übersicht** eine Zeile hinzuzufügen.
 1. Legen Sie in der neuen Zeile die folgenden Werte fest. Akzeptieren Sie die Standardwerte für alle anderen Felder.
 
@@ -102,7 +102,7 @@ Dieses Beispiel zeigt, wie eine Wiederbeschaffungsvorlage vorbereitet wird. Wenn
     - **Beschreibung:** Geben Sie _Entnahmezonenwiederbeschaffung_ ein.
     - **Wiederbeschaffungseinheit:** Wählen Sie _EA_ aus.
     - **Anforderungstyp:** Lassen Sie dieses Feld leer.
-    - **Richtliniencode:** Dieses Feld verknüpft die Wiederbeschaffungsvorlage mit einer Lagerplatzrichtlinie. Wählen Sie den zuvor erstellten Demodaten-Richtliniencode ( _Zonenwiederb._ ) aus.
+    - **Richtliniencode:** Dieses Feld verknüpft die Wiederbeschaffungsvorlage mit einer Lagerplatzrichtlinie. Wählen Sie den zuvor erstellten Demodaten-Richtliniencode (_Zonenwiederb._) aus.
     - **Arbeitsvorlage:** Lassen Sie dieses Feld leer.
     - **Mindestmenge:** In diesem Feld wird die Menge festgelegt, bei der die Wiederbeschaffung ausgelöst wird. Geben Sie _50_ ein.
     - **Höchstmenge:** In diesem Feld wird die maximale Menge eines Artikels festgelegt, die in einer Zone vorhanden sein kann. Durch generierte Wiederbeschaffungsarbeiten wird der Lagerbestand auf diese Menge erhöht. Geben Sie _150_ ein.
@@ -275,15 +275,15 @@ Nachdem Sie die **USMF** juristische Person ausgewählt haben, fügen Sie die zu
 
 Befolgen Sie diese Schritte, um sicherzustellen, dass Ihr System genügend Bestand enthält, um das Beispielszenario zu unterstützen.
 
-1. Stellen Sie sicher, dass Bestand für den Artikel *A0001* an zwei verschiedenen Lagerplätzen in der Kommissionierzone ( *BODEN* ) vorhanden ist, wie in der Wiederbeschaffungsvorlage angegeben ist. Der Gesamtbestand sollte jedoch unter der erforderlichen Mindestmenge liegen ( *50* ), wie in der Wiederbeschaffungsvorlage angegeben ist. Auf diese Weise können Sie simulieren, wie die Berechnung für die gesamte Zone und nicht nur für einen einzelnen Lagerplatz erfolgt. **Verwenden Sie einen der Lagerortprozesse, um den Lagerbestand nach Bedarf anzupassen.**
-1. Stellen Sie sicher, dass genügend Bestand für den Artikel *A0001* an einem Bulk-Lagerplatz vorhanden ist, der in der Zonenentnahmelagerplatzrichtlinie angegeben ist, an dem die Wiederbeschaffungsarbeiten die Artikel aus der Zonen-ID *BULK* entnehmen sollen. Der Gesamtbestand muss über der erforderlichen Höchstmenge liegen ( *150* ), wie in der Wiederbeschaffungsvorlage angegeben ist.
+1. Stellen Sie sicher, dass Bestand für den Artikel *A0001* an zwei verschiedenen Lagerplätzen in der Kommissionierzone (*BODEN*) vorhanden ist, wie in der Wiederbeschaffungsvorlage angegeben ist. Der Gesamtbestand sollte jedoch unter der erforderlichen Mindestmenge liegen (*50*), wie in der Wiederbeschaffungsvorlage angegeben ist. Auf diese Weise können Sie simulieren, wie die Berechnung für die gesamte Zone und nicht nur für einen einzelnen Lagerplatz erfolgt. **Verwenden Sie einen der Lagerortprozesse, um den Lagerbestand nach Bedarf anzupassen.**
+1. Stellen Sie sicher, dass genügend Bestand für den Artikel *A0001* an einem Bulk-Lagerplatz vorhanden ist, der in der Zonenentnahmelagerplatzrichtlinie angegeben ist, an dem die Wiederbeschaffungsarbeiten die Artikel aus der Zonen-ID *BULK* entnehmen sollen. Der Gesamtbestand muss über der erforderlichen Höchstmenge liegen (*150*), wie in der Wiederbeschaffungsvorlage angegeben ist.
 1. Optional, aber empfohlen: Führen Sie die folgenden Schritte aus, um eine Bestandsanpassungserfassung zu erstellen:
 
     1. Wechseln Sie zu **Bestandsverwaltung \> Erfassungseinträge \> Artikel \> Bestandsanpassung**.
     1. Wählen Sie **Neu** aus.
     1. Wählen Sie im Dialogfeld **Bestandserfassung erstellen** im Feld **Lagerort** *61* aus.
     1. Wählen Sie **OK**.
-    1. Verwenden Sie im Inforegister **Erfassungspositionen** die Schaltfläche **Neu** , um dem Raster drei Positionen hinzuzufügen, und legen Sie die folgenden Werte fest. Nachdem Sie jede Position eingerichtet haben, wählen Sie **Speichern** aus.
+    1. Verwenden Sie im Inforegister **Erfassungspositionen** die Schaltfläche **Neu**, um dem Raster drei Positionen hinzuzufügen, und legen Sie die folgenden Werte fest. Nachdem Sie jede Position eingerichtet haben, wählen Sie **Speichern** aus.
 
         - **Position 1:**
 
@@ -331,7 +331,7 @@ Nachdem alle erforderlichen Beispieldaten vorhanden sind, können Sie die Wieder
 1. Wählen Sie **OK** aus, um die Abfrage zu speichern und zurück zum Dialogfeld **Wiederbeschaffung** zu gelangen.
 1. Wählen Sie **OK** aus, um die Wiederbeschaffungsvorlage auszuführen.
 
-Wiederbeschaffungsarbeiten werden jetzt erstellt, um Bestand aus der *BULK* -Zone zu entnehmen und ihn in die *BODEN* -Zone aufzufüllen.
+Wiederbeschaffungsarbeiten werden jetzt erstellt, um Bestand aus der *BULK*-Zone zu entnehmen und ihn in die *BODEN*-Zone aufzufüllen.
 
 ## <a name="notes-and-tips"></a>Hinweise und Tipps
 

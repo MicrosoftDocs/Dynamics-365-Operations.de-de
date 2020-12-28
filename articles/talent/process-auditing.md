@@ -16,11 +16,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
 ms.openlocfilehash: c009f82e69bff0e4ea540514de8f9e60eca1e466
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006352"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461323"
 ---
 # <a name="track-changes-in-recruiting-data"></a>Verfolgen von Änderungen in Rekrutierungsdaten
 
@@ -37,7 +37,7 @@ Um die Nachverfolgung von Änderungen an Rekrutierungsdaten einzurichten, führe
 
 2. Wählen Sie **Einstellungen** (das Zahnradsymbol) aus, wählen Sie **Erweiterte Anpassungen** und anschließend **Ressourcen** unter **Entwicklerressourcen** aus. 
 
-3. Auf der Seite **Entwicklerressourcen**kopieren Sie den Wert im Feld **Wert der Instanz-API**. Der Wert könnte z. B. so aussehen: https://yourorgname.api.crm.dynamics.com/api/data/v9.1/.
+3. Auf der Seite **Entwicklerressourcen** kopieren Sie den Wert im Feld **Wert der Instanz-API**. Der Wert könnte z. B. so aussehen: https://yourorgname.api.crm.dynamics.com/api/data/v9.1/.
 
 4. Sie können dann die Daten einer der folgenden Entitäten abfragen:
   - Verlauf offener Stellen (msdyn_jobopeninghistories)

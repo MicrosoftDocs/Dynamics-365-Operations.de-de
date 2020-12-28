@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1910563865a21dab3345a82711ead9b9e57b92fa
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: af2ec75328b6377c5d92656d011d21576417a63f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980963"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517379"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Einen B2C Mandanten in Commerce einrichten
 
@@ -343,21 +343,21 @@ Ein optionales sekundäres Administratorkonto kann im Abschnitt **Benutzer** Ihr
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Ihren Domänennamen konfigurieren](configure-your-domain-name.md)
+[Domänennamen konfigurieren](configure-your-domain-name.md)
 
-[Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
+[Neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md)
 
-[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+[E-Commerce-Website erstellen](create-ecommerce-site.md)
 
-[Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
+[Zuordnen einer Dynamics 365 Commerce-Website zu einem Onlinekanal](associate-site-online-store.md)
 
-[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+[Robots.txt-Dateien verwalten](manage-robots-txt-files.md)
 
-[URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+[Upload-URL bewirkt Massenumleitung](upload-bulk-redirects.md)Eine Dynamics 365 Commerce-Website einem Online-Kanal zuordnen
 
 [Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
 
-[Konfigurieren Sie mehrere B2C-Mandanten in einer Commerce-Umgebung](configure-multi-B2C-tenants.md)
+[Mehrere B2C-Mandanten in einer Commerce-Umgebung konfigurieren](configure-multi-B2C-tenants.md)
 
 [Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)](add-cdn-support.md)
 

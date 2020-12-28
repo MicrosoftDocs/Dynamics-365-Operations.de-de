@@ -3,7 +3,7 @@ title: Preisregulierungen und Rabatte
 description: Dieser Artikel enthält Informationen über Preisanpassungen und Rabatte in Dynamics 365 Commerce.
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dfaacfa7681258e3b2273083017c0c398d566651
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
+ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022698"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4584314"
 ---
 # <a name="price-adjustments-and-discounts"></a>Preisregulierungen und Rabatte
 
@@ -41,11 +41,13 @@ Preisregulierungen und Rabatte können auf Produkte, Varianten oder Kategorien a
 
 ## <a name="types-of-discounts"></a>Rabatttypen
 
-Es gibt vier verschiedene Arten von Einzelhandelsrabatten:
+Es gibt viele verschiedene Arten von Rabatten:
 
 - **Einfacher Rabatt** - ein einzelner Prozentsatz oder ein Betrag.
 - **Mengenrabatt** – Ein Rabatt, der bei Kauf von zwei oder mehr Produkten angewendet wird.
 - **Rabatt für Angebots-Sortiment** – Ein Rabatt, der beim Kauf einer bestimmten Kombination von Produkten angewendet wird.
 - **Schwellenwertrabatt** – Ein Rabatt, der angewendet wird, wenn die Summe der Buchung höher als ein angegebener Betrag ist.
+- **Zahlungsmittelbasierter Rabatt** – Ein Rabatt, der angewendet wird, wenn der Transaktionsbetrag einen angegebenen Betrag überschreitet und eine bestimmte Zahlungsart (z. B. Bargeld, Kredit- oder Debitkarte) zur Zahlung verwendet wird.
+- **Lieferrabatt** – Ein Rabatt, der angewendet wird, wenn der Gesamtbetrag der Transaktion einen angegebenen Betrag übersteigt und eine bestimmte Lieferart (z. B. Lieferung in zwei Tagen oder Lieferung über Nacht) beim Auftrag verwendet wird.
 
 Sowohl Preisregulierungen als auch Rabatte können mit Preisgruppen verknüpft werden. Preisgruppen können anschließend Kanälen, Katalogen, Zuordnungen und Treueprogrammen zugeordnet werden.

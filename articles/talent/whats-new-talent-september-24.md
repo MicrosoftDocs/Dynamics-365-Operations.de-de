@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: e0c1a3bf7613db4887e0943a70ad6262a70997f0
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898965"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461272"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-september-24-2018"></a>Neuerungen oder Änderungen in Dynamics 365 Talent – Core HR (24. September 2018)
 
@@ -37,7 +37,7 @@ Vorteilspläne wurden aktualisiert, um die Währung des Vorteils einzubeziehen. 
 
 ## <a name="update-proration-process--leave-and-absence"></a>Antizipierungen für Urlaub und Abwesenheit aktualisieren
 
-Organisationsprämienfreizeit unterschiedlich auf der Basis, wenn Mitarbeiter das Unternehmen wechseln‌ das Unternehmen eintreten. Für Mitarbeiter, die die Organisation verlassen, müssen möglicherweise einige die Prämie im Feld Kündigungsdatum beendet werden, während andere erst am letzten Arbeitstag den,  Abgrenzungsprozess beenden. Diese Änderungen gibt Organisationen die Möglichkeit, auszuwählen, wann die Registrierung für den Kündigungsprozesses beendet wird. Diese neue Optionen sind Teil der Rechte, um einer Arbeitskraft zu kündigen und eine Arbeitskraft  vom Manager-Self-Service zu kündigen. 
+Organisationsprämienfreizeit unterschiedlich auf der Basis, wenn Mitarbeiter das Unternehmen wechseln‌ das Unternehmen eintreten. Für Mitarbeiter, die die Organisation verlassen, müssen möglicherweise einige die Prämie im Feld Kündigungsdatum beendet werden, während andere erst am letzten Arbeitstag den, Abgrenzungsprozess beenden. Diese Änderungen gibt Organisationen die Möglichkeit, auszuwählen, wann die Registrierung für den Kündigungsprozesses beendet wird. Diese neue Optionen sind Teil der Rechte, um einer Arbeitskraft zu kündigen und eine Arbeitskraft vom Manager-Self-Service zu kündigen. 
 
 ## <a name="other-changes"></a>Andere Änderungen
 

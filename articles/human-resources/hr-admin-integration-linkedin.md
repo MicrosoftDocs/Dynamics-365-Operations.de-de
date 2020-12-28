@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e82b79858060f31a6310cc5abdb2faf87db2d6c2
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4056096"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527884"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>In LinkedIn Talent Hub integrieren
 
 [!include [banner](includes/preview-feature.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) ist eine Bewerber-Nachverfolgungssystemplattform (ATS). Sie können damit Mitarbeiter an einem Ort suchen, verwalten und einstellen. Durch die Integration von Microsoft Dynamics 365 Human Resources mit LinkedIn Talent Hub können Sie auf einfache Weise Mitarbeiterdatensätze in der Personalabteilung für Bewerber erstellen, die für eine Position eingestellt wurden.
 
@@ -56,7 +58,7 @@ Ein Systemadministrator muss Einrichtungs-Aufgaben ausführen, um die Integratio
 
 1. Öffnen Sie das [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
-2. In der **Umgebungen** -Liste wählen Sie die Umgebung aus, die der Personalumgebung zugeordnet ist, mit der Sie Ihre Instanz von LinkedIn Talent Hub verknüpfen möchten.
+2. In der **Umgebungen**-Liste wählen Sie die Umgebung aus, die der Personalumgebung zugeordnet ist, mit der Sie Ihre Instanz von LinkedIn Talent Hub verknüpfen möchten.
 
 3. Wählen Sie **Einstellungen**.
 
@@ -66,7 +68,7 @@ Ein Systemadministrator muss Einrichtungs-Aufgaben ausführen, um die Integratio
 
 6. Auf der Registerkarte **Einzelheiten** geben Sie auf der Registerkarte einen Namen für die Rolle ein, z.B. **LinkedIn Talent Hub HRIS-Integration**.
 
-7. Auf der Registerkarte **Anpassung** wählen Sie auf der Registerkarte Organisationsebene **Lesen** -Berechtigung für die folgenden Entitäten aus:
+7. Auf der Registerkarte **Anpassung** wählen Sie auf der Registerkarte Organisationsebene **Lesen**-Berechtigung für die folgenden Entitäten aus:
 
     - Entität
     - Feld
@@ -80,7 +82,7 @@ Für den LinkedIn Talent Hub-Adapter muss ein Anwendungsbenutzer erstellt werden
 
 1. Öffnen Sie das [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
-2. In der **Umgebungen** -Liste wählen Sie die Umgebung aus, die der Personalumgebung zugeordnet ist, mit der Sie Ihre Instanz von LinkedIn Talent Hub verknüpfen möchten.
+2. In der **Umgebungen**-Liste wählen Sie die Umgebung aus, die der Personalumgebung zugeordnet ist, mit der Sie Ihre Instanz von LinkedIn Talent Hub verknüpfen möchten.
 
 3. Wählen Sie **Einstellungen**.
 
@@ -96,10 +98,10 @@ Für den LinkedIn Talent Hub-Adapter muss ein Anwendungsbenutzer erstellt werden
 
 8. Gehen Sie auf der Seite **neuer Benutzer** folgendermaßen vor:
 
-    1. Ändern Sie den Wert des **Benutzertyp** -Felds auf **Anwendungsbenutzer**.
+    1. Ändern Sie den Wert des **Benutzertyp**-Felds auf **Anwendungsbenutzer**.
     2. Stellen Sie das Feld **Benutzername** auf **Dynamics365 HR LinkedIn HRIS-Integration**.
     3. Legen Sie das Feld **Anwendungs-ID** auf **3a225c96-d62a-44ce-b3ec-bd4e8e9befef** fest.
-    4. Geben Sie einen beliebigen Wert in die Felder **Vorname** , **Nachname** , und **Erste E-Mail** ein.
+    4. Geben Sie einen beliebigen Wert in die Felder **Vorname**, **Nachname**, und **Erste E-Mail** ein.
     5. Wählen Sie auf der Symbolleiste **Speichern \& Schließen** aus.
 
 ### <a name="assign-a-security-role-to-the-new-user"></a>Zuweisen einer Sicherheitsrolle zu einem neuen Benutzer
@@ -121,9 +123,9 @@ Nachdem Sie den neuen Anwendungsbenutzer im vorherigen Abschnitt gespeichert und
 1. In Dynamics 365 Human Resources öffnen Sie die **Azure Active Directory Anwendungen** Seite.
 2. Fügen Sie einen neuen Datensatz der Liste hinzu und wählen Sie die folgenden Felder:
 
-    - **Kundenkennung** : Geben Sie **3a225c96-d62a-44ce-b3ec-bd4e8e9befef** ein.
-    - **Name** : Geben Sie den Namen der Power Apps Sicherheitsrolle ein, die Sie zuvor erstellt haben, z.B. **LinkedIn Talent Hub HRIS-Integration**.
-    - **Benutzer-ID** : Wählen Sie einen Benutzer aus, der zum Schreiben von Daten in der Personalverwaltung berechtigt ist.
+    - **Kundenkennung**: Geben Sie **3a225c96-d62a-44ce-b3ec-bd4e8e9befef** ein.
+    - **Name**: Geben Sie den Namen der Power Apps Sicherheitsrolle ein, die Sie zuvor erstellt haben, z.B. **LinkedIn Talent Hub HRIS-Integration**.
+    - **Benutzer-ID**: Wählen Sie einen Benutzer aus, der zum Schreiben von Daten in der Personalverwaltung berechtigt ist.
 
 ### <a name="create-the-entity-in-common-data-service"></a>Erstellen Sie die Entität in Common Data Service
 
@@ -152,7 +154,7 @@ Nachdem ein Kandidat den Rekrutierungsprozess durchlaufen hat und eingestellt wu
 
 3. Wählen Sie **Status ändern** und dann **Eingestellt**.
 
-4. Im Auslassungsmenü ( **...** ) für den Kandidaten wählen Sie **Export nach HRIS**.
+4. Im Auslassungsmenü (**...**) für den Kandidaten wählen Sie **Export nach HRIS**.
 
 5. In dem Bereich **Export nach HRIS** geben Sie die Informationen ein, die exportiert werden müssen:
 

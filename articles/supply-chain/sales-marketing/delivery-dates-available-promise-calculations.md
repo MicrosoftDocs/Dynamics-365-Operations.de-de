@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e969a4bc4346d05abd99022868dae3a1d78fe50
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ae3192bcf5128c09279017e3d5e8be8f42ec6975
+ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979426"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666769"
 ---
 # <a name="order-promising"></a>Lieferterminzusage
 
@@ -37,6 +37,12 @@ Die Lieferterminzusage berechnet die früheste Versand- und Eingangsdaten und ba
 -   **VfZ (verfügbar auf Zusage)** – VfZ ist die Menge eines Artikels, der verfügbar ist und einem Debitor für ein bestimmtes Datum zugesichert werden kann. Bei der VfZ-Berechnung werden nicht zugesicherter Bestand, Lieferzeiten und geplante Zu- und Abgänge berücksichtigt.
 -   **VfZ + Sicherheitszuschlag für Warenabgang**– Das Versanddatum entspricht dem VfZ-Datum (Verfügbar für Zusage) plus dem Sicherheitszuschlag für den Artikel. Der Sicherheitszuschlag für Warenabgang ist die zur Vorbereitung der Artikel für die Lieferung erforderliche Zeit.
 -   **CTP (Verfügbarkeitszusage)**– Die Verfügbarkeit wird eine durch eine Auflösung berechnet.
+
+> [!NOTE]
+> Bei der Aktualisierung eines Verkaufsauftrags werden die Auftragszusage-Informationen nur dann aktualisiert, wenn das vorhandene Lieferterminzusagedatum nicht erfüllt werden kann, wie in den folgenden Beispielen dargestellt:
+> 
+> - **Beispiel 1**: Das aktuelle Lieferterminzusagedatum ist der 20. Juli, aber aufgrund einer erhöhten Menge können Sie erst am 25. Juli liefern. Da das aktuelle Datum nicht mehr eingehalten werden kann, wird die Lieferterminzusage ausgelöst.
+> -  **Beispiel 2**: Das aktuelle Lieferterminzusagedatum ist der 20. Juli, aber aufgrund der verringerten Menge ist es nun möglich, am 15. Juli zu liefern. Da das aktuelle Datum jedoch noch erfüllt werden kann, wird die Lieferterminzusage nicht ausgelöst, und der 20. Juli bleibt die Lieferterminzusage.
 
 ## <a name="atp-calculations"></a>VfZ-Berechnungen
 Die VfZ-Menge wird mithilfe der Methode "kumulierte VfZ mit Vorausplanung" berechnet. Der wichtigste Vorteil für diese VfZ-Berechnung ist, dass sie Instanzen behandeln kann, wenn die Summe der Abgänge zwischen Zugängen größer ist als der letzte Zugang, beispielsweise, wenn es erforderlich ist, eine Menge von einem früheren Zugang zu verwenden, um eine Bedingung zu erfüllen. Der "kumuliertes VfZ mit Berechnungsmethode nach vorne" umfasst alle Ausgaben, bis die kumulierte, zu empfangende Menge die auszugebende Menge überschreitet. Daher wertet diese VfZ-Berechnungsmethode aus, ob einige der Mengen einer früheren Periode in einer späteren Periode verwendet werden können..  

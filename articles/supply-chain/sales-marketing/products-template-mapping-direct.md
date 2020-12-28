@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 85ea6d37079c965ac5ddfdc4cdd20f2f3d184e4f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6ffd55585ff43f993876de6c669eb61e74a9fd79
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216088"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527313"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Produkte direkt von Supply Chain Management mit Produkten in Sales synchronisieren
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
 > Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) vertraut sein.
@@ -78,7 +80,7 @@ Extern verwaltete Produkte werden automatisch der ersten gültigen Preisliste mi
 
 > [!NOTE]
 > - Produktsynchronisierung ist nicht erfolgreich, es sei denn, es gibt eine Liste mit Preisen, die eine entsprechende Währung haben.
-> - Sie können auch die verwendete Preisliste mit der Integration steuern, indem Sie den pricelevelid.name [Standard-Preisliste (Name)] im Daten-Integrationsprojekt zuordnen. Die Eingabe muss in Kleinbuchstaben sein. Beispielsweise kann der Standardwert für eine Liste mit Preisen auf Verkäufen mit dem Namen "Standard" wie folgt sein: Empfangsfeld: pricelevelid.name [Standard-Preisliste (Name)] und Zuordnungstyp: [ { "transformType" "Standard", "defaultValue": "Standard" } ].
+> - Sie können die verwendete Preisliste mit der Integration steuern, indem Sie die pricelevelid.name [Standardpreisliste (Name)] im Datenintegrationsprojekt zuordnen. Die Eingabe muss in Kleinbuchstaben sein. Die Vorgabe für eine Preisliste in Sales mit dem Namen „Standard“ wäre zum Beispiel: Zielfeld: pricelevelid.name [Standardpreisliste (Name)] und Zuordnungstyp: [ { „transformType“: „Standard“, „defaultValue“: „Standard“ } ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Voraussetzungen und Einrichtung der Zuordnung
 

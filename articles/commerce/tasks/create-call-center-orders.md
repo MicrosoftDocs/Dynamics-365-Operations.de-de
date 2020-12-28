@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dce2fdd9d91c2bd867f0455573733aefb0796fa7
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: c875eaa85d9da997b75b296ad9ace99ae1e91798
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107351"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594235"
 ---
 # <a name="create-call-center-orders"></a> Callcenteraufträge erstellen
 
@@ -45,7 +45,7 @@ Diese Prozedur führt Sie Schritt für Schritt durch die Suche nach einem Debito
 9. Wählen Sie das Produkt aus, das zum Auftrag hinzugefügt wird.
 10. Geben Sie die Verkaufsmenge ein.
 11. Wählen Sie **Erstellen** aus.
-12. Wählen Sie **Abschließen** , um die Debitorenzahlung aufzuzeichnen.
+12. Wählen Sie **Abschließen**, um die Debitorenzahlung aufzuzeichnen.
 13. Wählen Sie **Hinzufügen** aus.
     * Der Hinzufügen-Llink  ist die Registerkarte Zahlungen. Erweitern Sie die Registerkarte wenn sie verringert ist.  
 14. Wählen Sie die Zahlungsmethode aus.
@@ -55,4 +55,10 @@ Diese Prozedur führt Sie Schritt für Schritt durch die Suche nach einem Debito
     * Für diese Prozedur geben Sie einen Betrag gleich dem Auftragssaldo ein, der in der Auftrags-Übersichtsseite auf der linken Seite des Betrag-Felds angezeigt werden kann. Dies Aktion ermöglicht Ihnen, den Auftrag als vollständig bezahlt abzuschließen.  
 17. Wählen Sie **OK**.
 18. Wählen Sie **Senden**.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Transaktions-E-Mails nach Lieferart anpassen](../customize-email-delivery-mode.md)
+
+[Lieferart in POS ändern](../pos-change-delivery-mode.md)
 

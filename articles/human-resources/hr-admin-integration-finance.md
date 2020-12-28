@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f542bb12910e3a4884c38a2fb24831c42a545908
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 3b4d6369ab567879e23e1f132265aaff45c8ce47
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431267"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527913"
 ---
 # <a name="configure-integration-with-finance"></a>Integration mit Finance konfigurieren
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Um Dynamics 365 Human Resources in Dynamics 365 Finance zu integrieren, können Sie die Vorlage „Human Resources to Finance“ in [Datenintegrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) verwenden. Die Vorlage „Human Resources to Finance“ ermöglicht den Datenfluss für Jobs, Positionen und Mitarbeiter. Die Vorlage ermöglicht den Datenfluss von der Personalabteilung in die Finanzabteilung, jedoch nicht den Datenfluss von der Finanzabteilung in die Personalabteilung.
 
@@ -51,7 +53,7 @@ So greifen Sie auf die Vorlage Human Resources to Finance zu.
 
 1. Öffnen Sie das [Power Apps Admin Center](https://admin.powerapps.com/). 
 
-2. Wählen Sie **Projekte**und dann **Neues Projekt** in der oberen rechten Ecke aus. Erstellen Sie für jede juristische Person, die Sie in Finance integrieren möchten, ein neues Projekt.
+2. Wählen Sie **Projekte** und dann **Neues Projekt** in der oberen rechten Ecke aus. Erstellen Sie für jede juristische Person, die Sie in Finance integrieren möchten, ein neues Projekt.
 
 3. Wählen Sie **Personalverwaltung (Human Resources Common Data Service to Finance)**, um Datensätze von Human Resources nach Finance zu synchronisieren.
 
