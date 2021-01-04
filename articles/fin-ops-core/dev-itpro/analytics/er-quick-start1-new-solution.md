@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ede88bc1767304a86a86ec27365db9403c5a951d
-ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
+ms.openlocfilehash: 7cd0d8e7aa9595e705416798772f52956ef609da
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678247"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680241"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Entwerfen einer neuen EB-Lösung zum Drucken eines benutzerdefinierten Berichts
 
@@ -142,10 +141,10 @@ Als Benutzer mit der Rolle "Entwickler für elektronische Berichterstellung" mü
 
 ### <a name="configure-er-parameters"></a><a name="ConfigureParameters"></a>Parameter der elektronischen Berichterstellung konfigurieren
 
-1. Wählen Sie **Organisationsverwaltung** \> **Arbeitsbereich** \> **Elektronische Berichterstellung** aus.
-2. Klicken Sie im Arbeitsbereich **Elektronische Berichterstellung**  auf **Elektronische Berichterstellungsparameter**.
-3. Setzen Sie auf der Seite **Elektronische Berichterstellungsparameter**  auf der Registerkarte **Allgemein**  die Option **Entwurfmodus aktivieren** auf **Ja**.
-4. Legen Sie auf der Registerkarte **Anhänge**  die folgenden Parameter fest:
+1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
+2. Klicken Sie im Arbeitsbereich **Elektronische Berichterstellung** auf den Link **Parameter der elektronischen Berichterstellung**.
+3. Auf der Seite **Parameter für elektronische Berichterstellung** legen Sie auf der Registerkarte **Allgemein** die Option **Entwurfsmodus aktivieren** auf **Ja** fest.
+4. Legen Sie auf der Registerkarte **Anhänge** die folgenden Parameter fest:
 
     - Setzen Sie das Feld **Konfigurationen** für das Unternehmen **USMF** auf **Datei**.
     - Wählen Sie in den Feldern **Einzelvorgangsarchiv**, **Temporär**, **Grundlage** und **Andere** den **Dateityp** aus.
@@ -161,28 +160,28 @@ Jede hinzugefügte EB-Konfiguration wird als Eigentum eines EB-Konfigurationsanb
 
 #### <a name="review-the-list-of-er-configuration-providers"></a><a name="ReviewProvidersList"></a>Überprüfen der Liste der EB-Konfigurationsanbieter
 
-1. Wählen Sie **Organisationsverwaltung** \> **Arbeitsbereich** \> **Elektronische Berichterstellung** aus.
+1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 2. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** im Abschnitt **Zugehörige Links** die Option **Konfigurationsanbieter** aus.
 3. Auf der Seite **Konfigurationsanbietertabelle** hat jeder Konfigurationsanbieterdatensatz einen eindeutigen Namen und eine eindeutige URL. Überprüfen Sie den Inhalt dieser Seite. Wenn bereits ein Datensatz für **Litware, Inc.** (`https://www.litware.com`) vorhanden ist, überspringen Sie die nächste Prozedur [Hinzufügen eines neuen EB-Konfigurationsanbieters](#ActivateProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a name="AddProvider"></a>Hinzufügen eines neuen EB-Konfigurationsanbieters
 
 1. Wählen Sie auf der Seite **Konfigurationsanbieter** die Option **Neu** aus.
-2. Geben Sie im Feld **Name** **Litware, Inc.** ein.
-3. Geben Sie im Feld **Internetadresse**  `https://www.litware.com` ein.
-4. Wählen Sie  **Speichern** aus.
+2. Geben Sie im Feld **Name** **Litware, Inc.** ein.
+3. Geben Sie im Feld **Internetadresse** `https://www.litware.com` ein.
+4. Wählen Sie **Speichern** aus.
 
 #### <a name="activate-an-er-configuration-provider"></a><a name="ActivateAddedProvider"></a>Aktivieren eines EB-Konfigurationsanbieters
 
-1. Wählen Sie **Organisationsverwaltung** \> **Arbeitsbereich** \> **Elektronische Berichterstellung** aus.
+1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 2. Wählen Sie im Arbeitsbereich **Elektronische Berichterstattung** **Litware, Inc.** für Ihren Konfigurationsanbieter aus.
-3. Wählen Sie  **Als aktiv festlegen** aus.
+3. Wählen Sie **Als aktiv festlegen**.
 
 Weitere Informationen zu EB-Konfigurationsanbietern finden Sie unter [Erstellen von Konfigurationsanbietern und Markieren als aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Entwerfen eines domänenspezifischen Datenmodells
 
-Sie müssen eine neue EB-Konfiguration erstellen, die eine Komponente [Datenmodell](general-electronic-reporting.md#data-model-and-model-mapping-components) für den Geschäftsbereich **Fragebogen** enthält. Dieses Datenmodell wird später als Datenquelle verwendet, wenn Sie ein EB-Format zum Generieren des Berichts **Fragebogen** entwerfen.
+Sie müssen eine neue EB-Konfiguration erstellen, die eine [Datenmodell](general-electronic-reporting.md#data-model-and-model-mapping-components)-Komponente für den Geschäftsbereich **Fragebogen** enthält. Dieses Datenmodell wird später als Datenquelle verwendet, wenn Sie ein EB-Format zum Generieren des Berichts **Fragebogen** entwerfen.
 
 Durch Ausführen der Schritte im Abschnitt [Importieren einer neuen Datenmodellkonfiguration](#ImportDataModel) können Sie das erforderliche Datenmodell aus der bereitgestellten XML-Datei importieren. Alternativ können Sie mit den Schritten im Abschnitt [Erstellen einer neuen Datenmodellkonfiguration](#DesignDataModel) dieses Datennmodell neu entwerfen.
 
@@ -612,7 +611,7 @@ Durch Ausführen der Schritte im Abschnitt [Importieren einer entworfenen Format
 4. Führen Sie im Dialogfeld die folgenden Schritte aus:
 
     1. Wählen Sie **Vorlage hinzufügen** aus.
-    2. Suchen und wählen Sie die lokal gespeicherte Datei **Questionnaires report template.xslx**und dann **Öffnen** aus.
+    2. Suchen und wählen Sie die lokal gespeicherte Datei **Questionnaires report template.xslx** und dann **Öffnen** aus.
     3. Wählen Sie **OK** aus, um die Vorlage zu importieren.
 
     ![Importieren einer Berichtvorlage](./media/er-quick-start1-template-import.png)
@@ -811,7 +810,7 @@ Der Status von Version 1.1 dieser Konfiguration wird von **Entwurf** zu **Abgesc
 
 Als Benutzer in der Rolle "Systemadministrator" müssen Sie eine neue Logik entwickeln, damit das konfigurierte EB-Format über die Benutzeroberfläche der Anwendung aufgerufen werden kann, um Ihren benutzerdefinierten Bericht zu generieren. Derzeit bietet EB keine Möglichkeit zum Konfigurieren dieser Art von Logik. Daher sind einige technische Arbeiten erforderlich. 
 
-Zum Entwickeln der neuen Logik müssen Sie eine Topologie bereitstellen, die einen fortlaufenden Build unterstützt . Weitere Informationen finden Sie unter  [Bereitstellen von Topologien, die fortlaufenden Build und Testautomatisierung unterstützen](../perf-test/continuous-build-test-automation.md) Sie unter. Sie müssen zudem Zugriff auf die Entwicklungsumgebung für diese Topologie haben. Weitere Informationen zur verfügbaren ER API finden Sie unter [EB-Framework-API](er-apis-app73.md).
+Zum Entwickeln der neuen Logik müssen Sie eine Topologie bereitstellen, die einen fortlaufenden Build unterstützt . Weitere Informationen finden Sie unter [Bereitstellen von Topologien, die fortlaufenden Build und Testautomatisierung unterstützen](../perf-test/continuous-build-test-automation.md) Sie unter. Sie müssen zudem Zugriff auf die Entwicklungsumgebung für diese Topologie haben. Weitere Informationen zur verfügbaren ER API finden Sie unter [EB-Framework-API](er-apis-app73.md).
 
 ### <a name="modify-source-code"></a><a name="ModifySourceCode"></a>Quellcode ändern
 
@@ -1060,7 +1059,7 @@ Erstellen Sie Ihr Projekt, um Benutzern eine neue Menüoption zur Verfügung zu 
 5. Wählen Sie **OK**, um die Filteroptionen zu bestätigen.
 6. Wählen Sie zum Ausführen des Berichts **OK** aus.
 
-    ![Festlegen der Auswahlkriterien im Dialogfeld "Elektronischer Bericht"](./media/er-quick-start1-report-run-dialog-page.png)
+    ![Festlegen der Auswahlkriterien im Dialogfeld „Elektronischer Bericht“](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. Prüfen Sie den generierten Bericht.
 
@@ -1079,7 +1078,7 @@ Sie können die konfigurierte EB-Lösung so ändern, dass sie die von Ihnen entw
 5. Wählen Sie auf der Seite **Modellzuordnungsdesigner** im Bereich **Datenquellentypen** den Eintrag **Dynamics 365 for Operations\\Objekt** aus.
 6. Wählen Sie **Stamm hinzufügen** im Bereich **Datenquellen** aus.
 7. Geben Sie im Dialogfeld im Feld **Name** den Eintrag **[RunTimeParameters](#DataContractDSName)** ein, wie im Quellcode der Klasse **QuestionnairesErReportService** festgelegt.
-8. Geben Sie im Feld **Klasse** den Eintrag **[QuestionnairesErReportContract ](#DataContractClass)** ein, der bereits codiert wurde.
+8. Geben Sie im Feld **Klasse** den Eintrag **[QuestionnairesErReportContract](#DataContractClass)** ein, der bereits codiert wurde.
 9. Wählen Sie **OK**.
 10. Erweitern Sie **RunTimeParameters**.
 
@@ -1175,11 +1174,11 @@ Der Status der Version 1.2 dieser Konfiguration wird von **Entwurf** zu **Abgesc
 4. Konfigurieren Sie im Dialogfeld **EB-Parameter** im Inforegister **Einzuschließende Datensätze** die Filteroptionen, sodass nur der Fragebogen **SBCCrsExam** inhalten ist.
 5. Wählen Sie **OK**, um die Filteroptionen zu bestätigen.
 6. Wählen Sie zum Ausführen des Berichts **OK** aus.
-7. Überprüfen Sie die generierte Datei im Excel-Format.
+7. Überprüfen Sie den generierten Bericht im Excel-Format.
 
 Beachten Sie, dass die Fußzeile des generierten Berichts den Namen des EB-Formats enthält, mit dem er generiert wurde.
 
-![Generierter Bericht im Excel-Format.](./media/er-quick-start1-report4.png)
+![Generierter Bericht im Excel-Format](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>Verwenden eines Formats von EB aus
 

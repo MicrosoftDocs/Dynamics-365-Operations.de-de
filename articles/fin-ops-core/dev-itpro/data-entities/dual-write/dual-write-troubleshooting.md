@@ -1,6 +1,6 @@
 ---
 title: Allgemeine Problembehandlung
-description: Dieses Thema enthält allgemeine Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Common Data Service.
+description: Dieses Thema enthält allgemeine Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Dataverse.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,20 +18,22 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c3352afd93dfc7c37a8af9dabaf85b7a1debad30
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 6356ec6850667f32f9e9e4133686c40f0b6d76d7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997253"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688258"
 ---
 # <a name="general-troubleshooting"></a>Allgemeine Problembehandlung
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Dieses Thema enthält allgemeine Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Common Data Service.
+
+Dieses Thema enthält allgemeine Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Dataverse.
 
 > [!IMPORTANT]
 > Einige der in diesem Thema behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD) Anmeldeinformationen des Mandantenadministrators. Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.
@@ -51,11 +53,11 @@ Installieren Sie nach der Installation des Package Deployer Tools das Lösungspa
     ![Inhalt des Ordners Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438](media/extract_package.png)
 
 3. Fügen Sie alle kopierten Dateien in den Ordner **Werkzeuge** im Package Deployer hinzu. 
-4. Führen Sie **PackageDeployer.exe** aus, um die Common Data Service Umgebung auszuwählen und installieren Sie die Lösungen.
+4. Führen Sie **PackageDeployer.exe** aus, um die Dataverse Umgebung auszuwählen und installieren Sie die Lösungen.
 
     ![Inhalt des Tools-Ordners](media/paste_copied_files.png)
 
-## <a name="enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details"></a>Aktivieren und Anzeigen der Plug-In-Ablaufverfolgungsanmeldung Common Data Service, um Fehlerdetails anzuzeigen
+## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Aktivieren und Anzeigen des Plug-In-Überwachungsprotokolls in Dataverse, um Fehlerdetails anzuzeigen
 
 **Erforderliche Rolle zum Aktivieren des Ablaufverfolgungsprotokolls und zum Anzeigen von Fehlern:** System Administrator
 
@@ -63,7 +65,7 @@ Um die Nachverfolgung einzuschalten, führen Sie diese Schritte aus.
 
 1. Melden Sie sich bei der modellgesteuerten App in Dynamics 365 an, öffnen Sie die Seite **Einstellungen** und dann unter **System** wählen Sie **Verwaltung** aus.
 2. Wählen Sie auf der Seite **Verwaltung** die Option **Systemeinstellungen** aus.
-3. Auf der Registerkarte **Anpassung** wählen Sie **Plug-In und benutzerdefinierte Workflow-Aktivitätsverfolgung** und **Alle** , um das Plug-Trace-Protokoll zu aktivieren. Wenn Sie Ablaufverfolgungsprotokolle nur protokollieren möchten, wenn Ausnahmen auftreten, können Sie stattdessen **Ausnahme** auswählen.
+3. Auf der Registerkarte **Anpassung** wählen Sie **Plug-In und benutzerdefinierte Workflow-Aktivitätsverfolgung** und **Alle**, um das Plug-Trace-Protokoll zu aktivieren. Wenn Sie Ablaufverfolgungsprotokolle nur protokollieren möchten, wenn Ausnahmen auftreten, können Sie stattdessen **Ausnahme** auswählen.
 
 
 Um die Nachverfolgung anzuzeigen, führen Sie diese Schritte aus.
@@ -74,7 +76,7 @@ Um die Nachverfolgung anzuzeigen, führen Sie diese Schritte aus.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivieren Sie den Debug-Modus, um Probleme mit der Live-Synchronisierung in Finance and Operations Apps zu beheben
 
-**Erforderliche Rolle zum Anzeigen der Fehler:** Systemadministrator – duale Schreibfehler, die ihren Ursprung im Common Data Service haben, können in der Finance and Operations-App auftreten. In einigen Fällen ist der vollständige Text der Fehlermeldung nicht verfügbar, da die Nachricht zu lang ist oder personenbezogene Daten (PII) enthält. Sie können die ausführliche Protokollierung für Fehler aktivieren, indem Sie die folgenden Schritte ausführen.
+**Erforderliche Rolle zum Anzeigen der Fehler:** Systemadministrator – duale Schreibfehler, die ihren Ursprung im Dataverse haben, können in der Finance and Operations-App auftreten. In einigen Fällen ist der vollständige Text der Fehlermeldung nicht verfügbar, da die Nachricht zu lang ist oder personenbezogene Daten (PII) enthält. Sie können die ausführliche Protokollierung für Fehler aktivieren, indem Sie die folgenden Schritte ausführen.
 
 1. Alle Projektkonfigurationen in Finance and Operations Apps haben eine **IsDebugMode** Eigenschaft in der **DualWriteProjectConfiguration** Entität. Entität in **DualWriteProjectConfiguration** mithilfe des Excel-Add-Ins öffnen.
 
@@ -83,9 +85,9 @@ Um die Nachverfolgung anzuzeigen, führen Sie diese Schritte aus.
 
 2. Stellen Sie die **IsDebugMode** Eigenschaft auf **Ja** für das Projekt.
 3. Führen Sie das Szenario aus, das Fehler generiert.
-4. Die ausführlichen Protokolle sind in der Tabelle DualWriteErrorLog verfügbar. Verwenden Sie die folgende URL, um Daten im Tabellenbrowser nachzuschlagen ( **XXX** wie erforderlich ersetzen):
+4. Die ausführlichen Protokolle sind in der Tabelle DualWriteErrorLog verfügbar. Verwenden Sie die folgende URL, um Daten im Tabellenbrowser nachzuschlagen (**XXX** wie erforderlich ersetzen):
 
-    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
+    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
 
 ## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Überprüfen Sie die Synchronisierungsfehler auf der virtuellen Maschine auf der Finance and Operations App
 
@@ -99,9 +101,9 @@ Um die Nachverfolgung anzuzeigen, führen Sie diese Schritte aus.
 6. Wählen Sie **Anwendungs- und Dienstprotokolle \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operativ**.
 7. Überprüfen Sie die Liste der letzten Fehler.
 
-## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Verknüpfung aufheben und eine andere Common Data Service Umgebung aus einer Finance and Operations App verknüpfen
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Verknüpfung aufheben und eine andere Dataverse Umgebung aus einer Finance and Operations App verknüpfen
 
-**Erforderliche Rolle zum Aufheben der Umgebungsverknüpfung:** Systemadministrator für die Finance and Operations-App oder Common Data Service.
+**Erforderliche Rolle zum Aufheben der Umgebungsverknüpfung:** Systemadministrator für die Finance and Operations-App oder Dataverse.
 
 1. Bei der Finance and Operations App anmelden.
 2. Gehe zu **Arbeitsbereiche \>Datenmanagement** und wählen Sie die Kachel **Duales Schreiben**.
@@ -113,10 +115,10 @@ Sie können jetzt eine neue Umgebung verknüpfen.
 
 ## <a name="unable-to-view-the-sales-order-line-information-form"></a>Das Formular für die Auftragspositionsinformationen können nicht angezeigt werden. 
 
-Wenn Sie in Dynamics 365 Sales einen Kundenauftrag erstellen, können Sie durch das Klicken auf **+ Produkte hinzufügen** möglicherweise zum Bestellformular für Dynamics 365 Project Operations weitergeleitet werden. Von diesem Formular aus gibt es keine Möglichkeit, das Formular **Information** der Kundenauftragsposition anzuzeigen. Die Option für **Information** wird in der Dropdownliste unter **Neue Auftragsposition** nicht angezeigt. Dies liegt daran, dass Project Operations in Ihrer Umgebung installiert wurde.
+Wenn Sie in Dynamics 365 Sales einen Autrag erstellen, können Sie durch das Klicken auf **+ Produkte hinzufügen** möglicherweise zum Bestellformular für Dynamics 365 Project Operations weitergeleitet werden. Von diesem Formular aus gibt es keine Möglichkeit, das Formular **Information** der Kundenauftragsposition anzuzeigen. Die Option für **Information** wird in der Dropdownliste unter **Neue Auftragsposition** nicht angezeigt. Dies liegt daran, dass Project Operations in Ihrer Umgebung installiert wurde.
 
 Um die Formularoption **Information** wieder zu aktivieren, führen Sie die folgenden Schritte aus:
-1. Navigieren Sie zur **Auftragsposition** -Entität.
-2. Suchen Sie das **Information** -Formular unter dem Formularknoten. 
+1. Navigieren Sie zur **Auftragsposition**-Entität.
+2. Suchen Sie das **Information**-Formular unter dem Formularknoten. 
 3. Wählen Sie das Formular **Information** und klicken Sie auf **Sicherheitsrollen aktivieren**. 
 4. Ändern Sie die Sicherheitseinstellung in **Anzeige für alle**.

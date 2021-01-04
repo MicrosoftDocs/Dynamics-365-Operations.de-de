@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 89d36c305bc9210f7906cd4288e33e5028baecdb
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f15b78d3ed5b4df47540f9f89cc69c0b535a7241
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771259"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680193"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Bereiten Sie anwendungsspezifische Metadaten für RCS und ER vor
 
@@ -129,7 +128,7 @@ Bevor Sie diese Prozedur abschließen können, müssen Sie zunächst die folgend
  
     8. Wählen Sie **Neu** aus, um das Ablagedialogfeld zu öffnen.
 
-        1. Geben Sie im Feld **Name** **Warencode**ein.
+        1. Geben Sie im Feld **Name** **Warencode** ein.
         2. Wählen Sie im Feld **Artikeltyp** **Zeichenfolge** aus.
         3. Wählen Sie **Hinzufügen** aus.
 
@@ -221,7 +220,7 @@ Wenn Sie die Schritte in der Prozedur [Zugriff auf Anwendungs-Metadaten über ei
 
 1. Wechseln Sie zu **Alle Arbeitsbereiche \> Elektronische Berichterstellung**.
 2. Wählen Sie **Verbundene Anwendung** aus.
-3. Überprüfen Sie, ob die konfigurierte Anwendung auf Microsoft Azure basiert und dass RCS-Benutzer im Allgemeinen darauf zugreifen können. Der aktuelle RCS-Benutzer muss Zugriff auf die konfigurierte Anwendung haben und als Benutzer dieser Anwendung in einer Rolle registriert sein, die ihm oder ihr die Rechte für den Zugriff auf die die Metadaten der Anwendung gibt.
+3. Überprüfen Sie, ob die konfigurierte Anwendung auf Microsoft Azure basiert und dass RCS-Benutzer im Allgemeinen darauf zugreifen können. Der aktuelle RCS-Benutzer muss Zugriff auf die konfigurierte Anwendung haben und als Benutzer dieser Anwendung in einer Rolle registriert sein, die dem Benutzer die Rechte für den Zugriff auf die Metadaten der Anwendung gibt.
 4. Wählen Sie **Neu** aus.
 5. Wählen Sie im Feld **Name** **MyConnectedApp** als den Namen der verbundenen Anwendung ein.
 6. Geben Sie im Feld **Anwendung** die URL der Anwendung an.

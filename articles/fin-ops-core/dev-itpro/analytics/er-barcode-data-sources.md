@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: c549a476f854ffcf962ffb62e430b459d3445734
-ms.sourcegitcommit: cc78f9bf585082ce65c2ab0b011ff62620fa883d
+ms.openlocfilehash: 3fb754267de1120bc3c086d49cb7c63028183bda
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4088196"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681423"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Verwenden Sie Barcode-Datenquellen, um Barcode-Bilder zu generieren
 
@@ -106,7 +105,7 @@ Dieses Beispiel zeigt, wie ein Benutzer in der Rolle **Systemadministrator** ode
 
 In diesem Beispiel verwenden Sie die bereitgestellte EB-Lösung, die zum Generieren von Zahlungsschecks konfiguriert wurde. Diese Lösung generiert Zahlungsschecks, bei denen der zu zahlende Betrag sowohl als Zahl als auch als Text geschrieben wird. Sie werden diese EB-Lösung so ändern, dass der Scheck auch einen generierten Barcode enthält, in dem der zu zahlende Betrag verschlüsselt ist und mit einem Barcode-Scanner gelesen werden kann.
 
-Diese Schritte können im **USMF** -Unternehmen in Microsoft Dynamics 365 Finance abgeschlossen werden.
+Diese Schritte können im **USMF**-Unternehmen in Microsoft Dynamics 365 Finance abgeschlossen werden.
 
 ### <a name="complete-the-prerequisites"></a><a name="ExamplePrerequisites"></a>Vervollständigen Sie die Voraussetzungen
 
@@ -131,7 +130,7 @@ Laden Sie außerdem die folgende Excel-Datei herunter, die die geänderte Vorlag
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Aktivieren eines Konfigurationsanbieters
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
-2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationsanbieter** , ob der [Konfigurationsanbieter](general-electronic-reporting.md#Provider) für das Beispielunternehmen **Litware, Inc.** aufgeführt und als Aktiv markiert ist. Wenn dieser Konfigurationsanbieter nicht aufgeführt oder nicht als Aktiv markiert ist, befolgen Sie die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationsanbieter**, ob der [Konfigurationsanbieter](general-electronic-reporting.md#Provider) für das Beispielunternehmen **Litware, Inc.** aufgeführt und als Aktiv markiert ist. Wenn dieser Konfigurationsanbieter nicht aufgeführt oder nicht als Aktiv markiert ist, befolgen Sie die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ![Einstellungen der Beispielfirma auf aktiv setzen auf der Seite „Lokalisierungskonfigurationen“](./media/er-barcode-data-source-active-provider.png)
 
@@ -159,7 +158,7 @@ Laden Sie außerdem die folgende Excel-Datei herunter, die die geänderte Vorlag
 3. Auf der Seite Bankkontodetails im Aktivitätsbereich auf der Registerkarte **Einrichten** in der Gruppe **Layout** wählen Sie **Scheck**.
 4. Wählen Sie auf der Seite **Scheck-Layout** **Bearbeiten** aus.
 5. Legen Sie im Inforegister **Allgemein** die Option **Generisches elektronisches Exportformat** auf **Ja** fest.
-6. In dem Feld **Formatkonfiguration exportieren** wählen Sie das EB-Format **Überprüft das Druckformat** , das Sie zuvor importiert haben.
+6. In dem Feld **Formatkonfiguration exportieren** wählen Sie das EB-Format **Überprüft das Druckformat**, das Sie zuvor importiert haben.
 7. Klicken Sie im Aktivitätsbereich auf **Drucktest**.
 8. Stellen Sie im Dialogfeld die Option **Verhandelbares Scheckformat** auf **Ja** und wählen dann **OK**.
 
@@ -192,10 +191,10 @@ Sie müssen jetzt die EB-Lösung ändern und dann die geänderte Vorlage [erneut
     ![Binden von Zellenformatelementen an Datenquellen im EB Vorgangs-Designer](./media/er-barcode-data-source-cells-bound.png)
 
 7. Wählen Sie die Registerkarte **Format** auf der rechten Seite.
-8. Wählen Sie im Aktionsbereich die Auslassungspunkte aus ( **...** ) und wählen Sie dann **Importieren**.
+8. Wählen Sie im Aktionsbereich die Auslassungspunkte aus (**...**) und wählen Sie dann **Importieren**.
 9. In der Gruppe **Importieren** wählen Sie **Aus Excel aktualisieren** und dann **Vorlage aktualisieren**.
 10. Navigieren Sie im Dialogfeld zu **Überprüfen Sie die Vorlage Excel.xlsx** Datei, die auf Ihrem Computer gespeichert ist, wählen Sie sie aus und wählen Sie dann **OK** um zu bestätigen, dass die ausgewählte Vorlage angewendet werden soll.
-11. Wählen Sie im EB Vorgangs-Designer die Registerkarte **Zuordnung** , wählen Sie die Registerkarte auf der rechten Seite der Seite aus, und wählen Sie dann im Formatbaumbereich auf der linken Seite die Option **Aufklappen/reduzieren**.
+11. Wählen Sie im EB Vorgangs-Designer die Registerkarte **Zuordnung**, wählen Sie die Registerkarte auf der rechten Seite der Seite aus, und wählen Sie dann im Formatbaumbereich auf der linken Seite die Option **Aufklappen/reduzieren**.
 12. Beachten Sie, dass das **AmountBarcode** Zellenelement dem Format hinzugefügt wurde. Dieses Element ist dem Element **AmountBarcode** zugeordnet, das der geänderten Excel-Vorlage als Platzhalter für ein Barcode-Bild hinzugefügt wurde.
 
     ![AmountBarcode-Zellenelement, das dem Format im EB Vorgangs-Designer hinzugefügt wurde](./media/er-barcode-data-source-cell-added.png)
@@ -227,7 +226,7 @@ Als Nächstes müssen Sie das neue Formatelement an die gerade hinzugefügte Dat
 
     ![Details zur Barcode-Datenquelle im EB Vorgangs-Designer](./media/er-barcode-data-source-bind1.png)
 
-5. Wählen Sie **Formel bearbeiten** , um die Bindung anzupassen.
+5. Wählen Sie **Formel bearbeiten**, um die Bindung anzupassen.
 
     Sie möchten nicht, dass der Name des Zellenelements zurückgegeben wird. Daher müssen Sie einen Ausdruck konfigurieren, der Text zurückgibt, der den zu zahlenden Betrag des aktuellen Schecks enthält. Weil der übergeordnete Bereich **ChequeLines** an die Datenquelle **model.cheques** gebunden ist, ist der zu zahlende Betrag des aktuellen Schecks im Feld **model.cheques.attributes.amount** des Datentyps **Echt** verfügbar.
 
@@ -241,7 +240,7 @@ Als Nächstes müssen Sie das neue Formatelement an die gerade hinzugefügte Dat
 
 #### <a name="make-the-modified-version-available-for-test-runs"></a><a name="ExampleModifyFormatMakeVersionAvailable"></a>Stellen Sie die geänderte Version für Testläufe zur Verfügung
 
-Standardmäßig sind dies die einzigen Versionen mit dem Status **Abgeschlossen** und **Geteilt** , die verwendet werden, wenn Sie ein EB-Format ausführen.
+Standardmäßig sind dies die einzigen Versionen mit dem Status **Abgeschlossen** und **Geteilt**, die verwendet werden, wenn Sie ein EB-Format ausführen.
 
 Wenn Sie Ihre Änderungen abgeschlossen haben, können Sie Ihre Arbeit mit der aktuellen Entwurfsversion abschließen und Ihre Änderungen zur Verwendung bereitstellen. Anweisungen finden Sie im Abschnitt [Vervollständigen Sie die geänderte Formatversion](#CompleteToRun).
 
@@ -252,7 +251,7 @@ Wenn Sie weiterhin mit der aktuellen Entwurfsversion arbeiten möchten, diese je
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 2. Auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationen** wählen Sie die Kachel **Berichterstellungskonfigurationen**.
 3. Auf der Seite **Konfigurationen** im Konfigurationsbaum erweitern Sie **Modell für Scheck** und wählen **Überprüft das Druckformat**.
-4. Wählen Sie im Inforegister **Versionen** , wählen Sie den Datensatz mit dem Status **Entwurf** aus.
+4. Wählen Sie im Inforegister **Versionen**, wählen Sie den Datensatz mit dem Status **Entwurf** aus.
 5. Wählen Sie **Status ändern** und dann **Abgeschlossen**.
 6. Klicken Sie im Dialogfeld auf **OK**.
 

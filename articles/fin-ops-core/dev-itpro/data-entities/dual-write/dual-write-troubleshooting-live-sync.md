@@ -18,33 +18,35 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 82bdcc71196c22689cc65601f98187aaa9e5e9d6
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: ca12759096bd1bafda0a5eee18287a694083db69
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997301"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685562"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Live-Synchronisierungsprobleme behandeln
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Common Data Service. Dieses Thema enthält speziell Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der Live-Synchronisierung zusammenhängen.
+
+Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Dataverse. Dieses Thema enthält speziell Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der Live-Synchronisierung zusammenhängen.
 
 > [!IMPORTANT]
 > Einige der in diesem Thema behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD) Anmeldeinformationen des Mandantenadministrators. Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.
 
-## <a name="live-synchronization-throws-a-403-forbidden-error-when-you-create-a-record-in-a-finance-and-operations-app"></a>Bei der Live-Synchronisierung wird ein 403 Forbidden-Fehler ausgegeben, wenn Sie einen Datensatz in einer Finance and Operations App erstelllen
+## <a name="live-synchronization-throws-a-403-forbidden-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Bei der Live-Synchronisierung wird ein 403 Forbidden-Fehler ausgegeben, wenn Sie eine Zeile in einer Finance and Operations-App erstelllen.
 
-Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie einen Datensatz in einer Finance and Operations App erstellen:
+Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie eine Zeile in einer Finance and Operations-App erstellen:
 
 *\[{\\„Fehler\\“:{\\„Code\\“:\\„0x80072560\\“,\\„Botschaft\\“:\\„Der Benutzer ist kein Mitglied der Organisation.\\“}}\], Der Remote-Server hat einen Fehler zurückgegeben: (403) Verboten. „}}“.*
 
-Befolgen Sie die Schritte, um das Problem zu beheben unter [Systemanforderungen und -voraussetzungen](requirements-and-prerequisites.md). Um diese Schritte auszuführen, müssen die Benutzer der Dual-Write-Anwendung, die in Common Data Service erstellt wurde, die Systemadministratorrolle haben. Das Standard-Besitzerteam muss auch die Systemadministratorrolle haben.
+Befolgen Sie die Schritte, um das Problem zu beheben unter [Systemanforderungen und -voraussetzungen](requirements-and-prerequisites.md). Um diese Schritte auszuführen, müssen die Benutzer der Dual-Write-Anwendung, die in Dataverse erstellt wurde, die Systemadministratorrolle haben. Das Standard-Besitzerteam muss auch die Systemadministratorrolle haben.
 
-## <a name="live-synchronization-for-any-entity-consistently-throws-a-similar-error-when-you-create-a-record-in-a-finance-and-operations-app"></a>Bei der Live-Synchronisierung für eine Entität wird immer der gleiche Fehler ausgegeben, wenn Sie einen Datensatz in einer Finance and Operations App erstelllen
+## <a name="live-synchronization-for-any-entity-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Bei der Live-Synchronisierung für eine Entität wird immer der gleiche Fehler ausgegeben, wenn Sie eine Zeile in einer Finance and Operations-App erstelllen.
 
 **Erforderliche Rolle zum Beheben der Fehler:** System Administrator
 
@@ -52,12 +54,12 @@ Möglicherweise erhalten Sie jedes Mal eine Fehlermeldung wie die folgende, wenn
 
 *Die Änderungen können nicht in der Datenbank gespeichert werden. Arbeitseinheit kann keine Transaktion festschreiben. Daten können nicht in Entitäts-Uoms geschrieben werden. Das Schreiben in UnitOfMeasureEntity ist mit der Fehlermeldung fehlgeschlagen. Synchronisierung mit Entitäts-Uoms nicht möglich.*
 
-Um das Problem zu beheben, müssen Sie sicherstellen, dass die erforderlichen Referenzdaten in beiden Finance and Operations App und Common Data Service vorhanden sind. Zum Beispiel, wenn der Kunde, wenn Sie sich in der Finance and Operations App befinden, zu einer bestimmten Kundengruppe gehört, stellen Sie sicher, dass die Kundengruppe in Common Data Service vorhanden ist.
+Um das Problem zu beheben, müssen Sie sicherstellen, dass die erforderlichen Referenzdaten in beiden Finance and Operations App und Dataverse vorhanden sind. Zum Beispiel, wenn der Kunde, wenn Sie sich in der Finance and Operations App befinden, zu einer bestimmten Kundengruppe gehört, stellen Sie sicher, dass die Kundengruppe in Dataverse vorhanden ist.
 
 Wenn auf beiden Seiten Daten vorhanden sind und Sie bestätigt haben, dass das Problem nicht datenbezogen ist, führen Sie die folgenden Schritte aus.
 
 1. Stoppen Sie die zugehörige Entität.
-2. Melden Sie sich bei Finance and Operations an. Stellen Sie sicher, dass Datensätze für die fehlerhafte Entität in den Tabellen DualWriteProjectConfiguration und DualWriteProjectFieldConfiguration vorhanden sind. Beispielsweise sieht die Abfrage so aus, wenn die **Kundenentität** fehlschlägt.
+2. Melden Sie sich bei der Finance and Operations-App an. Stellen Sie sicher, dass Zeilen für die fehlerhafte Entität in den Tabellen DualWriteProjectConfiguration und DualWriteProjectFieldConfiguration vorhanden sind. Beispielsweise sieht die Abfrage so aus, wenn die **Kundenentität** fehlschlägt.
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -66,8 +68,8 @@ Wenn auf beiden Seiten Daten vorhanden sind und Sie bestätigt haben, dass das P
         EXTERNALENTITYNAME = 'accounts' 
     ```
 
-3. Wenn es Datensätze für die fehlerhafte Entität gibt, auch nachdem Sie die Entitätszuordnung gestoppt haben, löschen Sie die Datensätze, die sich auf die fehlerhafte Entität beziehen. Notieren Sie sich die Spalte **Projektname** in der DualWriteProjectConfiguration-Tabelle und rufen Sie den Datensatz in der DualWriteProjectFieldConfiguration-Tabelle ab, indem Sie den Datensatz mithilfe des Projektnamens löschen.
-4. Starten Sie die Entitätszuordnung. Überprüfen Sie, ob die Daten ohne Probleme synchronisiert werden.
+3. Wenn es Zeilen für die fehlerhafte Entität gibt, auch nachdem Sie die Tabellenzuordnung gestoppt haben, löschen Sie die Zeilen, die sich auf die fehlerhafte Entität beziehen. Notieren Sie sich die Spalte **projectname** in der Tabelle DualWriteProjectConfiguration und rufen Sie den Datensatz in der Tabelle DualWriteProjectFieldConfiguration ab, indem Sie die Zeile mithilfe des Projektnamens löschen.
+4. Starten Sie die Tabellenzuordnung. Überprüfen Sie, ob die Daten ohne Probleme synchronisiert werden.
 
 ## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Behandeln Sie Lese- oder Schreibberechtigungsfehler, wenn Sie Daten in einer Finance and Operations App erstellen
 
@@ -85,29 +87,29 @@ Um das Problem zu beheben, müssen Sie dem Team der zugeordneten Geschäftseinhe
 
     ![Team des zugeordneten Geschäftsbereichs](media/setting_security_page.png)
 
-3. Öffnen Sie die Seite für das Team zur Bearbeitung und wählen Sie dann **Rollen verwalten** , um das Dialogfeld **Teamrollen verwalten** zu öffnen.
+3. Öffnen Sie die Seite für das Team zur Bearbeitung und wählen Sie dann **Rollen verwalten**, um das Dialogfeld **Teamrollen verwalten** zu öffnen.
 
     ![Schaltfläche Rollen verwalten](media/manage_team_roles.png)
 
-4. Weisen Sie die Rolle zu, die über die Lese-/Schreibberechtigung für die relevanten Entitäten verfügt, und wählen Sie dann aus **OK** aus.
+4. Weisen Sie die Rolle zu, die über die Lese-/Schreibberechtigung für die relevanten Tabellen verfügt, und wählen Sie dann **OK** aus.
 
-## <a name="fix-synchronization-issues-in-an-environment-that-has-a-recently-changed-common-data-service-environment"></a>Beheben Sie Synchronisierungsprobleme in einer Umgebung, die eine kürzlich geändert Common Data Service Umgebung hat
+## <a name="fix-synchronization-issues-in-an-environment-that-has-a-recently-changed-dataverse-environment"></a>Beheben Sie Synchronisierungsprobleme in einer Umgebung, die eine kürzlich geändert Dataverse Umgebung hat
 
 **Erforderliche Rolle zum Beheben der Fehler:** System Administrator
 
 Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie Daten in einer Finance and Operations App erstellen:
 
-*{„entityName“:„CustCustomerV3Entity“,„executeStatus“:2,„fieldResponses“:\[\],„recordResponses“:\[{„Fehlermeldung“:„ **Nutzdaten für die Entität CustCustomerV3Entity können nicht generiert werden** “,„logDateTime“:„2019-08-27T18:51:52.5843124Z“,„verboseError“:„Die Erstellung der Nutzdaten ist mit dem Fehler fehlgeschlagen. Ungültiger URI: URI ist leer.“}\],„isErrorCountUpdated“: true}*
+*{„entityName“:„CustCustomerV3Entity“,„executeStatus“:2,„fieldResponses“:\[\],„recordResponses“:\[{„Fehlermeldung“:„**Nutzdaten für die Entität CustCustomerV3Entity können nicht generiert werden**“,„logDateTime“:„2019-08-27T18:51:52.5843124Z“,„verboseError“:„Die Erstellung der Nutzdaten ist mit dem Fehler fehlgeschlagen. Ungültiger URI: URI ist leer.“}\],„isErrorCountUpdated“: true}*
 
 So sieht der Fehler in der modellgesteuerten App in Dynamics 365 aus:
 
 *Ein unerwarteter Fehler ist im ISV-Code aufgetreten. (ErrorType = ClientError) Unerwartete Ausnahme vom Plug-In (Ausführen): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: Entitätskonto konnte nicht verarbeitet werden – (Ein Verbindungsversuch ist fehlgeschlagen, da die verbundene Partei nach a nicht ordnungsgemäß geantwortet hat Zeitraum oder Verbindungsaufbau fehlgeschlagen hat, da der verbundene Host nicht reagiert hat*
 
-Dieser Fehler tritt auf, wenn die Common Data Service Umgebung fälschlicherweise zurückgesetzt wird, während Sie versuchen, Daten in der Finance and Operations App zu erstellen.
+Dieser Fehler tritt auf, wenn die Dataverse Umgebung fälschlicherweise zurückgesetzt wird, während Sie versuchen, Daten in der Finance and Operations App zu erstellen.
 
 Führen Sie folgende Schritte aus, um das Problem zu beheben.
 
-1. Melden Sie sich bei der Finance and Operations virtuellen Maschine (VM) an, öffnen Sie SQL Server Management Studio (SSMS) und suchen Sie in der Tabelle DUALWRITEPROJECTCONFIGURATIONENTITY nach Datensätzen **Internalitätsname** gleich **Kunden V3** und **externalentityname** gleich **Konten**. So sieht die Abfrage aus.
+1. Melden Sie sich bei der virtuellen Maschine (VM) für Finance and Operations an, öffnen Sie SQL Server Management Studio (SSMS) und suchen Sie in der Tabelle DUALWRITEPROJECTCONFIGURATIONENTITY nach Zeilen, für die **internalentityname** gleich **Kunden V3** und **externalentityname** gleich **Konten** ist. So sieht die Abfrage aus.
 
     ```sql
     select projectname, externalenvironmentURL ,\* 
@@ -123,5 +125,5 @@ Führen Sie folgende Schritte aus, um das Problem zu beheben.
     where projectname = <project name from previous query>
     ```
 
-3. Stellen Sie sicher, dass die **externalenvironmentURL** Spalte die richtige Common Data Service oder App-URL hat. Löschen Sie doppelte Datensätze, die auf die falsche Common Data Service URL verweisen. Löschen Sie die entsprechenden Datensätze in den Tabellen DUALWRITEPROJECTFIELDCONFIGURATION und DUALWRITEPROJECTCONFIGURATION.
-4. Stoppen Sie die Entitätszuordnung und starten Sie sie neu
+3. Stellen Sie sicher, dass die **externalenvironmentURL** Spalte die richtige Dataverse oder App-URL hat. Löschen Sie doppelte Zeilen, die auf die falsche Dataverse-URL verweisen. Löschen Sie die entsprechenden Zeilen in den Tabellen DUALWRITEPROJECTFIELDCONFIGURATION und DUALWRITEPROJECTCONFIGURATION.
+4. Stoppen Sie die Tabellenzuordnung und starten Sie sie neu.

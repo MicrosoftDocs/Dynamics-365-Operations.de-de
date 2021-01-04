@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 58381f491cda199d77e555e5d3da04714b6a5f8f
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: 6dce3768c886403f789063d516e0e696fc829f81
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138922"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680709"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Verzögern der Ausführung von XML-Elementen in ER-Formaten
 
@@ -77,17 +76,17 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
 2. Wählen Sie **Berichterstellungskonfigurationen** aus.
 3. Wenn auf der Seite **Konfigurationen** die Konfiguration für **Model zum Erlernen verzögerter Elemente** nicht im Konfigurationsbaum verfügbar ist, importieren Sie die ER-Datenmodellkonfiguration.
 
-    1. Wählen Sie **Austausch**und dann **Aus XML-Datei laden** aus.
+    1. Wählen Sie **Austausch** und dann **Aus XML-Datei laden** aus.
     2. Wählen Sie **Durchsuchen** aus, um die Datei **Model to learn deferred elements.1.xml** zu finden und auszuwählen und klicken Sie dann auf **OK**.
 
 4. Wenn die Konfiguration für **Zuordnung zum Verstehen verzögerter Elemente** nicht im Konfigurationsbaum verfügbar ist, importieren Sie die ER-Modellzuordnungskonfiguration:
 
-    1. Wählen Sie **Austausch**und dann **Aus XML-Datei laden** aus.
+    1. Wählen Sie **Austausch** und dann **Aus XML-Datei laden** aus.
     2. Wählen Sie **Durchsuchen** aus, um die Datei **Mapping to learn deferred elements.1.1.xml** zu finden und auszuwählen und klicken Sie dann auf **OK**.
 
 5. Import der ER-Formatkonfiguration:
 
-    1. Wählen Sie **Austausch**und dann **Aus XML-Datei laden** aus.
+    1. Wählen Sie **Austausch** und dann **Aus XML-Datei laden** aus.
     2. Wählen Sie **Durchsuchen** aus, um die Datei **Format to learn deferred XML elements.1.1.xml** zu finden und auszuwählen und klicken Sie dann auf **OK**.
 
 6. Erweitern Sie in der Konfigurationsstruktur **Modell zum Erlernen verzögerter Elemente**.

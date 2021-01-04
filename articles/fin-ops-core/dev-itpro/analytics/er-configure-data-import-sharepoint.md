@@ -3,26 +3,25 @@ title: Datenimport aus SharePoint konfigurieren
 description: In diesem Thema wird erläutert, wie Sie Daten aus Microsoft SharePoint importieren.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/29/2018
+ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: c11123c0d53fcf4ba67e83fe64d2d6e692d5b6f1
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 1f7754a3e69238ab1760b3f7eb8f5e2c792b451b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771351"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680901"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Datenimport aus SharePoint konfigurieren
 
@@ -56,7 +55,7 @@ Geben Sie die Aufgabenleitfäden **Daten aus einer Microsoft Excel-Datei mit EB 
 
 - Excel-Datei **1099import-data.xlsx** mit Kreditorenbuchungen, die importiert werden sollen.
 
-![Microsoft Excel-Beispieldatei zum Importieren aus SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
+![Excel-Beispieldatei zum Importieren aus SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
     
 > [!NOTE]
 > Das Format für den Import von Kreditorenbuchungen wird als Standardmodellzuordnung ausgewählt. Wenn Sie also eine Modellzuordnung des Typs **US 1099-Steuerzahlungsmodell** ausführen und diese Modellzuordnung vom Typ **Bis Ziel** ist, führt die Modellzuordnung dieses Format aus, um Daten aus externen Dateien zu importieren. Diese Daten werden dann zur Aktualisierung der Anwendungstabellen verwendet.
@@ -80,7 +79,7 @@ Um elektronische Berichtdateien an einem SharePoint-Speicherort zu speichern, m�
     - Dateifehlerordner - Dieser Ordner steht für fehlgeschlagenr importierte Dateien.
 
 4. Wechseln Sie zu **Organisationsverwaltungs > Dokumentenverwaltung > Dokumentarten**.
-5. Erstellen Sie die folgenden Dokumenttypen, die verwendet werden, um auf die SharePoint-Ordner zuzugreifen, die Sie soeben erstellt haben. Weitere Informationen unter [Konfigurieren Sie Dokumenttypen](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
+5. Erstellen Sie die folgenden Dokumenttypen, die verwendet werden, um auf die SharePoint-Ordner zuzugreifen, die Sie erstellt haben. Weitere Informationen unter [Konfigurieren Sie Dokumenttypen](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
 
 |Dokumenttyp       | Gruppieren              | Ziel      | SharePoint-Ordner      |
 |--------------------|--------------------|---------------|------------------------|
@@ -96,7 +95,7 @@ Um elektronische Berichtdateien an einem SharePoint-Speicherort zu speichern, m�
 1. Klicken Sie auf **Organisationsverwaltung**\>**Elektronische Berichterstellung**\>**Elektronische Berichtsquelle**.
 2. Auf der Seite **Elektronische Berichtsquelle** konfigurieren Sie die Quelldateien für den Datenimport in dem konfigurierten ER-Format.
 3. Definieren Sie eine Dateinamenmaske, sodass nur Dateien mit der .xlsx-Erweiterung importiert werden. Die Dateinamenmaske ist optional und wird nur verwendet, wenn sie definiert wurde. Sie können für jedes ER-Format nur eine Maske definieren.
-4. Ändern Sie **Sortierungsdateien vor dem Importieren** **Sortieren Sie nicht**, wenn viele Dateien für Import sind und der Importauftrag unerheblich ist
+4. Ändern Sie **Dateien vor dem Importieren sortieren** zu **Nicht sortieren**, wenn mehrere Dateien importiert werden sollen und der Importauftrag nicht wichtig ist.
 5. Wählen Sie alle SharePoint-Ordner aus, die Sie zuvor erstellt haben.
 
     [![ER-Dateien Quelleneinstellung](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
@@ -119,7 +118,7 @@ Sie können auch die Seite **Dateistatus für die Quellen** öffnen, indem Sie *
 
     [![SharePoint-Inhalt – Microsoft Excel-Datei zum Importieren](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
-2. Wählen Sie auf der Seite **Dateistatus für die Quellen** **Aktualisieren**, um die Seite zu aktualisieren. Beachten Sie, dass die Excel-Datei, die in SharePoint hochgeladen wurde, auf dieser Seite mit dem Status **Bereit** angezeigt wurde. Die folgenden Status werden derzeit unterstützt:
+2. Wählen Sie auf der Seite **Dateistatus für die Quellen** **Aktualisieren**, um die Seite zu aktualisieren. Die Excel-Datei, die in SharePoint hochgeladen wurde, wurde auf dieser Seite mit dem Status **Bereit** angezeigt. Die folgenden Status werden derzeit unterstützt:
 
     - **Bereit** – Wird automatisch für jede neue Datei in einem SharePoint-Ordner zugewiesen. Dieser Status bedeutet, dass die Datei für den Import bereit ist.
     - **Importieren** - Wird automatisch von einem ER-Bericht zugewiesen, wenn die Datei durch den Importprozess gesperrt wird, um ihre Verwendung durch andere Prozesse zu verhindern (wenn viele von ihnen gleichzeitig laufen).
@@ -127,21 +126,21 @@ Sie können auch die Seite **Dateistatus für die Quellen** öffnen, indem Sie *
     - **Fehlgeschlagen** - Wird automatisch von einem ER-Report zugewiesen, wenn der Dateiimport mit Fehlern oder Ausnahmen abgeschlossen wurde.
     - **Gesperrt** - Wird vom Benutzer auf dieser Seite manuell vergeben. Dieser Status bedeutet, dass die Datei vorerst nicht importiert wird. Dieser Status kann verwendet werden, um das Importieren einiger Dateien zu verschieben.
 
-    [![ER-Datei-Statusseite für die ausgewählten Quellen](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
+    [![Aktualisierte EB-Datei-Statusseite für die ausgewählten Quellen](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
 ## <a name="import-data-from-sharepoint-files"></a>Importieren von Daten aus SharePoint-Dateien
 1. Öffnen Sie den ER-Konfigurationsstruktur, wählen Sie das **US 1099-Steuerzahlungsmodell** und erweitern Sie die Liste der ER-Modellkomponenten.
 2. Wählen Sie den Namen der Modellzuordnung, um die Liste der Modellzuordnungen der ausgewählten ER-Modellkonfiguration zu öffnen.
 
-    [![ER-Datei-Statusseite für die ausgewählten Quellen](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
+    [![Konfigurationsseite](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
 
 3. Wählen Sie **Ausführen** aus, um die ausgewählte Modellzuordnung auszuführen. Da Sie die Dateiquellen für das ER-Format konfiguriert haben, können Sie die Einstellung der Option **Dateiquelle** beliebig ändern. Wenn Sie die Einstellung dieser Option beibehalten, werden die XSLX-Dateien aus den konfigurierten Quellen (in diesem Beispiel die SharePoint-Ordner) importiert.
 
     In diesem Beispiel importieren Sie nur eine Datei. Wenn jedoch mehrere Dateien vorhanden sind, werden sie in der Reihenfolge, in der sie dem SharePoint-Ordner hinzugefügt wurden, für den Import ausgewählt. Jede Ausführung eines ER-Formats importiert eine einzelne ausgewählte Datei.
 
-    [![ER-Modellzuordnung ausführen](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
+    [![Importieren aus SharePoint und ausführen der EB-Modellzuordnung](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
-4. Die Modellzuordnung kann unbeaufsichtigt im Stapelverarbeitungsmodus ausgeführt werden. In diesem Fall wird jedes Mal, wenn eine Stapelverarbeitung dieses ER-Format ausführt, eine einzelne Datei aus den konfigurierten Dateiquellen importiert.
+4. Die Modellzuordnung kann [unbeaufsichtigt](#limitations) im Stapelverarbeitungsmodus ausgeführt werden. In diesem Fall wird jedes Mal, wenn eine Stapelverarbeitung dieses ER-Format ausführt, eine einzelne Datei aus den konfigurierten Dateiquellen importiert.
 
     Wenn eine Datei vom SharePoint-Ordner erfolgreich importiert wird, wird diese aus diesem Ordner gelöscht und wechselt in den Ordner für erfolgreich importierte Dateien oder den Ordner zu importierten Dateien mit Warnungen. Andernfalls hat diese zu dem Ordner für fehlgeschlagene Dateien oder bewegt verbleibt in diesem Ordner, wenn den Ordnern für fehlgeschlagene Dateien nicht installiert ist. 
 
@@ -151,7 +150,7 @@ Sie können auch die Seite **Dateistatus für die Quellen** öffnen, indem Sie *
 
 6. Wählen Sie auf der Seite **Dateistatus für die Quellen** **Aktualisieren**, um die Seite zu aktualisieren.
 
-    [![ER-Datei-Statusseite für die ausgewählten Quellen](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
+    [![EB-Dateistatus für die Quellenseite](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
 
 7. Überprüfen Sie im Abschnitt **Dateien** die Liste der Dateien. Der Abschnitt **Quellenprotokoll für das Importformat** liefert den Verlauf des Excel-Dateiimports. Da diese Datei erfolgreich importiert wurde, wird sie im SharePoint-Ordner als **Gelöscht** markiert.
 8. Überprüfen Sie den SharePoint-Ordner **Datei-Importquelle (primär)**. Die erfolgreich importierten Excel-Dateien wurden aus diesem Ordner gelöscht.
@@ -179,9 +178,9 @@ Sie können auch die Seite **Dateistatus für die Quellen** öffnen, indem Sie *
 8. Wählen Sie **Ausführen** aus, um die geänderte Modellzuordnung auszuführen.
 9. Geben Sie die Belegkennung, z. B. **V-00002** ein, und wählen Sie dann **OK** aus.
 
-    Beachten Sie, dass das Infolog die Benachrichtigung enthält, dass sich in der SharePoint-Ordnerdatei ein falsches Kreditorenkonto befindet und nicht importiert werden kann.
+    Das Infolog enthält die Benachrichtigung, dass sich im SharePoint-Ordner eine Datei befindet, die ein falsches Lieferantenkonto enthält und nicht importiert werden kann.
 
-    [![ER-Modellzuordnung ausführen](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
+    [![Ausführung der EB-Modellzuordnung abgeschlossen](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
 
 10. Auf der Seite **Dateistatus für die Quellen** wählen Sie **Aktualisieren** und überprüfen Sie dann im Abschnitt **Dateien** die Liste der Dateien.
 
@@ -192,3 +191,18 @@ Sie können auch die Seite **Dateistatus für die Quellen** öffnen, indem Sie *
 11. Wählen Sie **Kreditorenkonten** \> **Periodische Aufgaben** \> **Steuererklärung (US 1099)** \> **Kreditorenausgleich für Steuerformulare (US 1099)** aus, geben Sie die entsprechenden Werte in die Felder **Startdatum** und **Enddatum** ein, und wählen Sie dann **Manuelle US 1099-Buchungen** aus.
 
     Nur Transaktionen für Beleg V-00001 sind verfügbar. Es sind keine Transaktionen für den Beleg V-00002 verfügbar, obwohl der Fehler für die zuletzt importierte Transaktion in der Excel-Datei gefunden wurde.
+
+## <a name=""></a><a name="limitations">Einschränkungen</a>
+
+Das EB-Framework bietet nicht die Möglichkeit, einen neuen Batch-Auftrag zu initiieren, der im unbeaufsichtigten Modus eine Modellzuordnung für den Datenimport ausführt. Dazu müssen Sie eine neue Logik entwickeln, damit die konfigurierte EB-Modellzuordnung über die Benutzeroberfläche der Anwendung aufgerufen werden kann, um Daten aus eingehenden Dateien zu importieren. Daher sind einige technische Arbeiten erforderlich. 
+
+Weitere Informationen zur relevanten EB-API finden Sie im Abschnitt [Code zum Ausführen einer Formatzuordnung für den Datenimport](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) im Thema [Änderungen an der Framework-API für elektronische Berichterstellung für Application Update 7.3](er-apis-app73.md).
+
+Überprüfen Sie den Code in der Klasse `BankImport_RU` des Modells `Application Suite`, um zu sehen, wie Ihre benutzerdefinierte Logik implementiert werden kann. Diese Klasse erweitert die Klasse `RunBaseBatch`. Überprüfen Sie insbesondere die Methode `runER()`, bei der das Objekt `ERIModelMappingDestinationRun` zur Ausführung einer EB-Modellzuordnung erstellt wird.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
+
+[Änderungen an der Framework-API für elektronische Berichterstellung für Application Update 7.3](er-apis-app73.md)
+

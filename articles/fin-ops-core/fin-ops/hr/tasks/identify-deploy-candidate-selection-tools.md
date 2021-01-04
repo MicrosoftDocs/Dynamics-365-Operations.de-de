@@ -3,7 +3,7 @@ title: Hilfsmittel zur Kandidatenauswahl ermitteln und bereitstellen
 description: Einen qualifizierten Pool von Kandidaten zu finden, um freie Stellen zu füllen, kann schwierig sein, insbesondere wenn eine Position einzigartige Qualifikationen erfordert.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 11/20/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d8a05ad7f100e6c54ccf1ecf7b76509cf44dbb8
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f4e7ed6feaa1b5b27fcfc0ec99a2d75415fe7d6a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143948"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693063"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Hilfsmittel zur Kandidatenauswahl ermitteln und bereitstellen
 
@@ -39,22 +38,22 @@ Einen qualifizierten Pool von Kandidaten zu finden, um freie Stellen zu füllen,
 7. Klicken Sie auf "Stelle".
 8. Geben Sie im Feld "Stelle" einen Wert ein, oder wählen Sie einen Wert aus.
 9. Klicken Sie auf "OK".
-10. Erweitern Sie das Bereichsinforegister, und fügen Sie alle weiteren Informationen, wie Abteilung, hinzu.
-11. Erweitern Sie das Bescheinigungen-Inforegister, um die Bescheinigungen anzuzeigen oder zu bearbeiten.
-12. Erweitern Sie das Inforegister "Qualifikationen", um die Qualifikationen anzuzeigen oder zu bearbeiten.
-13. Erweitern Sie das Inforegister "Bildung", um die Bildungskriterien anzuzeigen oder zu bearbeiten.
+10. Erweitern Sie das das Inforegister „Bereich“ und fügen Sie alle weiteren Informationen hinzu, wie beispielsweise die Abteilung.
+11. Erweitern Sie das Inforegister „Zertifikate“, um die Bescheinigungen anzuzeigen oder zu bearbeiten.
+12. Erweitern Sie das Inforegister „Qualifikationen“, um die Qualifikationen anzuzeigen oder zu bearbeiten.
+13. Erweitern Sie das Inforegister „Bildung“, um die Bildungskriterien anzuzeigen oder zu bearbeiten.
 14. Klicken Sie auf "Ausführen".
 15. Klicken Sie auf "OK".
 16. Klicken Sie auf "Ergebnis".
 17. Klicken Sie auf "Ergebnis".
 18. Klicken Sie auf Fortsetzen.
 19. Klicken Sie auf "Bescheinigungen".
-    * Sie können dann weitere Details zu jeder aufgeführten Person abrufen und Details zu ihrer Bildung, ihren Qualifikationen, ihrer beruflichen Erfahrung, usw. anzeigen.  
+    * Sie können dann weitere Details zu jeder aufgeführten Person abrufen und Details zu ihrer Bildung, ihren Qualifikationen und ihrer beruflichen Erfahrung anzeigen.  
 20. Schließen Sie die Seite.
 21. Schließen Sie die Seite.
 22. Wählen Sie das Ergebnis erneut aus.
 23. Klicken Sie auf "Bericht".
-    * Der Bericht führt die besten Übereinstimmungen oben im Bericht auf.  Sie können sehen, dass dort ein Lückenelement aufgeführt ist.  Dies ist die Differenz zwischen der Ebene, die auf der Qualifikationszuordnung aufgeführt war und der Ebene der Qualifikation, die der Person zugewiesen ist.  
+    * Der Bericht führt die besten Übereinstimmungen oben im Bericht auf.  Sie können sehen, dass ein Lückenelement aufgeführt ist.  Dies ist die Differenz zwischen der Ebene, die auf der Qualifikationszuordnung aufgeführt war und der Ebene der Qualifikation, die der Person zugewiesen ist.  
 24. Schließen Sie die Seite.
 25. Klicken Sie auf "Speichern".
 

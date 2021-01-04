@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0dc71f819f132b91fe153f83089eab24fa33173a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 661617ea7e51ac5cacdd5a08ee52f6a6e43b44be
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772487"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686685"
 ---
 # <a name="production-performance-power-bi-content"></a>Power BI-Inhalt – Produktionsleistung
 
@@ -94,11 +93,11 @@ Die folgende Tabelle zeigt, wie die zentralen aggregierten Messungen verwendet w
 | Termingerecht                  | COUNTROWS(FILTER('Geplanter Produktionsauftrag', 'Geplanter Produktionsauftrag'\[Geplantes Enddatum\]  'Geplanter Produktionsauftrag'\[Anforderungsdatum\])) |
 | Termingerecht %                | IF ("geplanter Produktionsauftrag"\[Einschaltzeit\] \<\> 0, "Einschaltzeit geplanter Produktionsauftrag"\[Einschaltzeit\], IF ("geplanter Produktionsauftrag"\[alle Bestellvorschläge\] \<\> 0, 0, LEER())) / "geplanter Produktionsauftrag"\[alle Bestellvorschläge\] |
 | Abgeschl.                | COUNTROWS(FILTER("Produktionsauftrag", "Produktionsauftrag"\[ist RAF'ed\] = TRUE)) |
-| Fehlerhafter Satz (PPM)     | IF ("Produktionsauftrag" \[Gesamtmenge\] = 0, BLANK(), (SUMME(Produktionsauftrag\[Ausschussmenge\]) / Produktionsauftrag\[Gesamtmenge\]\*  1000000) |
+| Fehlerhafter Satz (PPM)     | IF ("Produktionsauftrag" \[Gesamtmenge\] = 0, BLANK(), (SUMME(Produktionsauftrag\[Ausschussmenge\]) / Produktionsauftrag\[Gesamtmenge\])\*  1000000) |
 | Verzögerte Produktionsrate  | "Produktionsauftrag \[Spät \#\]/Produktionsauftrag abgeschlossen \[Abgeschlossen\] |
 | Vorzeitig und vollständig          | COUNTROWS(FILTER('Produktionsauftrag', 'Produktionsauftrag'\[Vollständig\] = TRUE && 'Produktionsauftrag\[Vorzeitig\] = TRUE)) |
 | Vorzeitig \#                 | COUNTROWS (FILTER ("Produktionsauftrag", "Produktionsauftrag" \[ist vorzeitig\] = TRUE)) |
-| Vorzeitig in %                  | IFERROR( IF('Produktionsauftrag'\[Vorzeitig \#\]\>\<  0, 'Produktiosnauftrag'\[Vorzeitig \#\], IF('Produktionsauftrag'\[Gesamtauftrag\] = 0, BLANK(), 0)) / 'Produktionsauftrag'\[Gesamtauftrag\], BLANK()) |
+| Vorzeitig in %                  | IFERROR( IF('Produktionsauftrag'Vorzeitig   0, 'Produktiosnauftrag'Vorzeitig , IF('Produktionsauftrag'Gesamtauftrag = 0, BLANK(), 0)) / 'Produktionsauftrag'Gesamtauftrag, BLANK()) |
 | Unvollständig               | COUNTROWS(FILTER('Produktionsauftrag', 'Produktionsauftrag'\[Vollständig\] = FALSE && 'Produktionsauftrag'\[Is RAF'ed\] = TRUE)) |
 | Unvollständig in %             | IFERROR( IF('Produktionsauftrag'\[Unvollständig\] \<\> 0, 'Produktionsauftrag'\[Unvollständig\], IF('Produktionsauftrag'\[Gesamtauftrag\] = 0, BLANK(), 0)) / 'Produktionsauftrag'\[Gesamtauftrag\] BLANK()) |
 | verzögert               | 'Produktionsauftrag'\[Is RAF'ed\] = TRUE && 'Produktionsauftrag'\[Verzögerter Wert\] = 1 |

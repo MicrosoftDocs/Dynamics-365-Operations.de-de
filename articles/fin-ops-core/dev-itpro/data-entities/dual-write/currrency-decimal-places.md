@@ -18,33 +18,35 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 7e1f70d95f29dc154044f09c6020300a8e4f8987
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 6a0f114bce6bdb7813c93e9441744d67cd043c30
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997477"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683730"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migration vom Währungsdatentyp für duales Schreiben
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Sie können die Anzahl der Dezimalstellen, die für Währungswerte unterstützt werden, auf maximal 10 erhöhen. Die Standardgrenze liegt bei vier Dezimalstellen. Indem Sie die Anzahl der Dezimalstellen erhöhen, können Sie Datenverluste vermeiden, wenn Sie zum Synchronisieren von dualem Schreiben verwenden. Die Erhöhung der Anzahl der Dezimalstellen ist eine Opt-In-Änderung. Um es zu implementieren, müssen Sie Unterstützung von Microsoft anfordern.
 
 Das Ändern der Anzahl der Dezimalstellen erfolgt in zwei Schritten:
 
 1. Fordern Sie die Migration von Microsoft an.
-2. Ändern Sie die Anzahl der Dezimalstellen in Common Data Service.
+2. Ändern Sie die Anzahl der Dezimalstellen in Dataverse.
 
-Die Finance and Operations App und Common Data Service muss die gleiche Anzahl von Dezimalstellen in Währungswerten unterstützen. Andernfalls kann es zu Datenverlust kommen, wenn diese Informationen zwischen Apps synchronisiert werden. Der Migrationsprozess konfiguriert die Art und Weise neu, in der Währungs- und Wechselkurswerte gespeichert werden, ändert jedoch keine Daten. Nach Abschluss der Migration kann die Anzahl der Dezimalstellen für Währungscodes und Preise erhöht werden, und die Daten, die Benutzer eingeben und anzeigen, können dezimaler sein.
+Die Finance and Operations App und Dataverse muss die gleiche Anzahl von Dezimalstellen in Währungswerten unterstützen. Andernfalls kann es zu Datenverlust kommen, wenn diese Informationen zwischen Apps synchronisiert werden. Der Migrationsprozess konfiguriert die Art und Weise neu, in der Währungs- und Wechselkurswerte gespeichert werden, ändert jedoch keine Daten. Nach Abschluss der Migration kann die Anzahl der Dezimalstellen für Währungscodes und Preise erhöht werden, und die Daten, die Benutzer eingeben und anzeigen, können dezimaler sein.
 
 Die Migration ist optional. Wenn Sie möglicherweise mehr Dezimalstellen unterstützen, empfehlen wir Ihnen, die Migration in Betracht zu ziehen. Organisationen, die keine Werte mit mehr als vier Dezimalstellen benötigen, müssen nicht migrieren.
 
 ## <a name="requesting-migration-from-microsoft"></a>Fordern Sie die Migration von Microsoft an
 
-Speicherung für vorhandene Währungsfelder in Common Data Service kann nicht mehr als vier Dezimalstellen unterstützen. Daher werden während des Migrationsprozesses Währungswerte in neue interne Felder in der Datenbank kopiert. Dieser Vorgang wird kontinuierlich ausgeführt, bis alle Daten migriert wurden. Intern ersetzen am Ende der Migration die neuen Speichertypen die alten Speichertypen, die Datenwerte bleiben jedoch unverändert. Die Währungsfelder können dann bis zu 10 Dezimalstellen unterstützen. Während des Migrationsprozesses kann Common Data Service ohne Unterbrechung weiter verwendet werden.
+Speicherung für vorhandene Währungsfelder in Dataverse kann nicht mehr als vier Dezimalstellen unterstützen. Daher werden während des Migrationsprozesses Währungswerte in neue interne Felder in der Datenbank kopiert. Dieser Vorgang wird kontinuierlich ausgeführt, bis alle Daten migriert wurden. Intern ersetzen am Ende der Migration die neuen Speichertypen die alten Speichertypen, die Datenwerte bleiben jedoch unverändert. Die Währungsfelder können dann bis zu 10 Dezimalstellen unterstützen. Während des Migrationsprozesses kann Dataverse ohne Unterbrechung weiter verwendet werden.
 
-Gleichzeitig werden die Wechselkurse so geändert, dass sie bis zu 12 Dezimalstellen anstelle der aktuellen Grenze von 10 unterstützen. Diese Änderung ist erforderlich, damit die Anzahl der Dezimalstellen in der Finance and Operations App und Common Data Service gleich ist.
+Gleichzeitig werden die Wechselkurse so geändert, dass sie bis zu 12 Dezimalstellen anstelle der aktuellen Grenze von 10 unterstützen. Diese Änderung ist erforderlich, damit die Anzahl der Dezimalstellen in der Finance and Operations App und Dataverse gleich ist.
 
 Die Migration ändert keine Daten. Nach der Konvertierung der Währungs- und Wechselkursfelder können Administratoren das System so konfigurieren, dass bis zu 10 Dezimalstellen für Währungsfelder verwendet werden, indem die Anzahl der Dezimalstellen für jede Transaktionswährung und die Preisgestaltung angegeben werden.
 
@@ -61,12 +63,12 @@ Wenn Sie eine Migration anfordern, sollten Sie die folgenden Details kennen und 
 
 + Die für die Migration der Daten erforderliche Zeit hängt von der Datenmenge im System ab. Die Migration großer Datenbanken kann mehrere Tage dauern.
 + Die Größe der Datenbank nimmt vorübergehend zu, während die Migration ausgeführt wird, da für Indizes zusätzlicher Speicherplatz benötigt wird. Der größte Teil des zusätzlichen Speicherplatzes wird freigegeben, wenn die Migration abgeschlossen ist.
-+ Wenn während des Migrationsprozesses Fehler auftreten, die den Abschluss der Migration verhindern, gibt das System Warnungen an den Microsoft-Support aus, damit die Support-Mitarbeiter eingreifen können. Selbst wenn während der Migration Fehler auftreten, bleibt Common Data Service für den regelmäßigen Gebrauch voll verfügbar.
++ Wenn während des Migrationsprozesses Fehler auftreten, die den Abschluss der Migration verhindern, gibt das System Warnungen an den Microsoft-Support aus, damit die Support-Mitarbeiter eingreifen können. Selbst wenn während der Migration Fehler auftreten, bleibt Dataverse für den regelmäßigen Gebrauch voll verfügbar.
 + Der Migrationsprozess ist nicht umkehrbar.
 
 ## <a name="changing-the-number-of-decimal-places"></a>Ändern Sie die Anzahl der Dezimalstellen
 
-Nachdem die Migration abgeschlossen ist, kann Common Data Service Zahlen mit mehr Dezimalstellen speichern. Administratoren können auswählen, wie viele Dezimalstellen für bestimmte Währungscodes und für die Preisgestaltung verwendet werden. Benutzer von Microsoft Power Apps, Power BI und Power Automate können dann Zahlen mit mehr Dezimalstellen anzeigen und verwenden.
+Nachdem die Migration abgeschlossen ist, kann Dataverse Zahlen mit mehr Dezimalstellen speichern. Administratoren können auswählen, wie viele Dezimalstellen für bestimmte Währungscodes und für die Preisgestaltung verwendet werden. Benutzer von Microsoft Power Apps, Power BI und Power Automate können dann Zahlen mit mehr Dezimalstellen anzeigen und verwenden.
 
 Um diese Änderung vorzunehmen, müssen Sie die folgenden Einstellungen in Power Apps aktualisieren:
 
@@ -86,10 +88,10 @@ Nach Abschluss der Migration können Administratoren die Währungsgenauigkeit fe
 
 ### <a name="business-management-currencies"></a>Geschäftsdokumentverwaltung: Währungen
 
-Wenn Sie verlangen, dass die Währungsgenauigkeit für eine bestimmte Währung von der Währungsgenauigkeit abweicht, die für die Preisgestaltung verwendet wird, können Sie sie ändern. Gehen Sie zu **Einstellungen \> Geschäftsführung** , wählen **Währungen** und wählen die zu ändernde Währung aus. Dann stellen Sie das Feld **Währungspräzision** auf die Anzahl der gewünschten Dezimalstellen, wie in der folgenden Abbildung gezeigt.
+Wenn Sie verlangen, dass die Währungsgenauigkeit für eine bestimmte Währung von der Währungsgenauigkeit abweicht, die für die Preisgestaltung verwendet wird, können Sie sie ändern. Gehen Sie zu **Einstellungen \> Geschäftsführung**, wählen **Währungen** und wählen die zu ändernde Währung aus. Dann stellen Sie das Feld **Währungspräzision** auf die Anzahl der gewünschten Dezimalstellen, wie in der folgenden Abbildung gezeigt.
 
 ![Währungseinstellungen für ein bestimmtes Gebietsschema](media/specific-currency.png)
 
-### <a name="entities-currency-field"></a>Entitäten: Währungsfeld
+### <a name="tables-currency-field"></a>Tabellen: Währungsfeld
 
 Die Anzahl der Dezimalstellen, die für bestimmte Währungsfelder konfiguriert werden können, ist auf vier begrenzt.

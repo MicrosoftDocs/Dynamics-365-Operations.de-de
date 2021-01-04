@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b21d468d672277be14877b93e291e9833659c54a
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997399"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683646"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospect-to-cash in Dual-write
 
@@ -56,17 +56,17 @@ Im Supply Chain Management sind die Felder **Site** und **Lager** für Angebots-
 
 Die Nummernkreise für Supply Chain Management und Sales sind nicht miteinander verbunden, wenn Angebote und Aufträge im Sales und Supply Chain Management erstellt und synchronisiert werden. Wenn ein Kundenauftrag, der in Sales angelegt wird, mit dem Supply Chain Management synchronisiert wird, hat er dieselbe Kundenauftragsnummer im Supply Chain Management. Um sicherzustellen, dass die Kundenauftragsnummer nicht doppelt vorhanden ist, müssen Sie in den beiden Anwendungen unterschiedliche Nummernfolgesysteme verwenden.
 
-Zum Beispiel ist der Nummernkreis im Supply Chain Management **1, 2, 3, 4, 5, ...** , und der Nummernkreis in Sales ist **100, 99, 98, ...**. Wenn Sie 100 Kundenaufträge in Sales anlegen, wird letztendlich eine Auftragsnummer generiert, die bereits im Supply Chain Management existiert. Mit anderen Worten, die beiden Nummernkreise werden sich letztendlich überschneiden, wenn Kundenaufträge im Supply Chain Management und in Sales angelegt werden. Stattdessen können Sie im Supply Chain Management eine Zahlenfolge wie **F1, F2, F3, ...** und in Sales eine Zahlenfolge wie **C1, C2, C3, ...** verwenden. Diese Nummernkreise führen niemals zu doppelten Kundenauftragsnummern.
+Zum Beispiel ist der Nummernkreis im Supply Chain Management **1, 2, 3, 4, 5, ...**, und der Nummernkreis in Sales ist **100, 99, 98, ...**. Wenn Sie 100 Kundenaufträge in Sales anlegen, wird letztendlich eine Auftragsnummer generiert, die bereits im Supply Chain Management existiert. Mit anderen Worten, die beiden Nummernkreise werden sich letztendlich überschneiden, wenn Kundenaufträge im Supply Chain Management und in Sales angelegt werden. Stattdessen können Sie im Supply Chain Management eine Zahlenfolge wie **F1, F2, F3, ...** und in Sales eine Zahlenfolge wie **C1, C2, C3, ...** verwenden. Diese Nummernkreise führen niemals zu doppelten Kundenauftragsnummern.
 
 ## <a name="sales-quotations"></a>Verkaufsangebote
 
 Angebote können entweder im Vertrieb oder im Supply Chain Management erstellt werden. Wenn Sie ein Angebot in Sales erstellen, wird es in Echtzeit mit dem Supply Chain Management synchronisiert. Wenn Sie ein Angebot im Supply Chain Management erstellen, wird es in Echtzeit mit Sales synchronisiert. Beachten Sie die folgenden Punkte:
 
-+ Sie können dem Produkt einen Rabatt auf das Angebot hinzufügen. In diesem Fall wird der Rabatt mit dem Supply Chain Management synchronisiert. Die Felder **Rabatt** , **Belastungen** und **Steuer** in der Kopfzeile werden durch komplizierte Einstellungen in Supply Chain Management gesteuert. Diese Einrichtung unterstützt kein Integrations-Mapping. Stattdessen werden die Felder **Preis** , **Rabatt** , **Gebühr** und **Steuer** im Supply Chain Management gepflegt und behandelt.
-+ Die Felder **Rabatt %** , **Rabatt** und **Frachtbetrag** im Angebotskopf sind schreibgeschützte Felder.
-+ Die Felder **Frachtbedingungen** , **Lieferbedingungen** , **Versandmethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Felder abzubilden, müssen Sie ein Werte-Mapping einrichten, das für die Daten in den Organisationen, zwischen denen die Entität synchronisiert wird, spezifisch ist.
++ Sie können dem Produkt einen Rabatt auf das Angebot hinzufügen. In diesem Fall wird der Rabatt mit dem Supply Chain Management synchronisiert. Die Felder **Rabatt**, **Belastungen** und **Steuer** in der Kopfzeile werden durch komplizierte Einstellungen in Supply Chain Management gesteuert. Diese Einrichtung unterstützt kein Integrations-Mapping. Stattdessen werden die Felder **Preis**, **Rabatt**, **Gebühr** und **Steuer** im Supply Chain Management gepflegt und behandelt.
++ Die Felder **Rabatt %**, **Rabatt** und **Frachtbetrag** im Angebotskopf sind schreibgeschützte Felder.
++ Die Felder **Frachtbedingungen**, **Lieferbedingungen**, **Versandmethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Felder abzubilden, müssen Sie ein Werte-Mapping einrichten, das für die Daten in den Organisationen, zwischen denen die Entität synchronisiert wird, spezifisch ist.
 
-Wenn Sie auch die Field Service-Lösung verwenden, müssen Sie den **Angebotsanforderungspositions-Erstellungs** -Parameter erneut aktivieren. Durch erneutes Aktivieren des Parameters können Sie mit der Schnellerstellungsfunktion weiterhin Angebote erstellen.
+Wenn Sie auch die Field Service-Lösung verwenden, müssen Sie den **Angebotsanforderungspositions-Erstellungs**-Parameter erneut aktivieren. Durch erneutes Aktivieren des Parameters können Sie mit der Schnellerstellungsfunktion weiterhin Angebote erstellen.
 1. Navigieren Sie zu Ihrer Dynamics 365 Sales-Anwendung.
 2. Wählen Sie das Einstellungssymbol in der oberen Navigationsleiste.
 3. Wählen Sie **Erweiterte Einstellungen**.
@@ -98,10 +98,10 @@ Wenn Sie die Synchronisation vom Supply Chain Management zu Sales durchführen, 
 
 ## <a name="dual-write-solution-for-sales"></a>Dual-Write-Lösung für Sales
 
-Neue Felder wurden der Entität **Bestellung** hinzugefügt und erscheinen auf der Seite. Die meisten dieser Felder erscheinen auf der Registerkarte **Integration** in Sales. Weitere Informationen zur Zuordnung der Statusfelder finden Sie im Dokumentationsthema [Einrichten eines Mappings für die Auftragsstatusfelder](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map?branch=robin-dw-status-map).
+Neue Felder wurden der Entität **Bestellung** hinzugefügt und erscheinen auf der Seite. Die meisten dieser Felder erscheinen auf der Registerkarte **Integration** in Sales. Weitere Informationen zur Zuordnung der Statusfelder finden Sie unter [Einrichten eines Mappings für die Auftragsstatusfelder](sales-status-map.md).
 
 + Die Schaltflächen **Rechnung erstellen** und **Bestellung stornieren** auf der Seite **Verkaufsauftrag** sind in Sales ausgeblendet.
-+ Der Wert **Auftragsstatus** bleibt **Aktiv** , um sicherzustellen, dass Änderungen aus dem Supply Chain Management in den Kundenauftrag in Sales fließen können. Um dieses Verhalten zu steuern, setzen Sie den Standardwert **Statecode \[Status\]** auf **Aktiv**.
++ Der Wert **Auftragsstatus** bleibt **Aktiv**, um sicherzustellen, dass Änderungen aus dem Supply Chain Management in den Kundenauftrag in Sales fließen können. Um dieses Verhalten zu steuern, setzen Sie den Standardwert **Statecode \[Status\]** auf **Aktiv**.
 
 ## <a name="invoices"></a>Rechnungen
 
@@ -110,11 +110,11 @@ Verkaufsrechnungen werden im Supply Chain Management erstellt und mit Sales sync
 + Ein Feld **Rechnungsnummer** wurde zur Entität **Rechnung** hinzugefügt und wird auf der Seite angezeigt.
 + Die Schaltfläche **Rechnung erstellen** auf der Seite **Verkaufsauftrag** ist ausgeblendet, da die Rechnungen im Supply Chain Management erstellt und mit Sales synchronisiert werden. Die Seite **Rechnung** kann nicht bearbeitet werden, da die Rechnungen aus dem Supply Chain Management synchronisiert werden.
 + Der Wert **Verkaufsauftragsstatus** wird automatisch in **Rechnungen** geändert, wenn die zugehörige Rechnung aus dem Supply Chain Management mit Sales synchronisiert wurde. Darüber hinaus wird der Eigentümer des Auftrags, aufgrund dessen die Rechnung erstellt wurde, als Eigentümer der Rechnung zugewiesen. Daher kann der Besitzer des Auftrags die Rechnung anzeigen.
-+ Die Felder **Frachtbedingungen** , **Lieferbedingungen** und **Liefermodus** sind nicht in den Standardzuordnungen enthalten. Um diese Felder abzubilden, müssen Sie ein Werte-Mapping einrichten, das für die Daten in den Organisationen, zwischen denen die Entität synchronisiert wird, spezifisch ist.
++ Die Felder **Frachtbedingungen**, **Lieferbedingungen** und **Liefermodus** sind nicht in den Standardzuordnungen enthalten. Um diese Felder abzubilden, müssen Sie ein Werte-Mapping einrichten, das für die Daten in den Organisationen, zwischen denen die Entität synchronisiert wird, spezifisch ist.
 
 ## <a name="templates"></a>Vorlagen
 
-Prospect-to-Cash umfasst eine Sammlung von Kernentitätszuordnungen, die während der Dateninteraktion zusammenwirken, wie in der folgenden Tabelle dargestellt.
+Prospect-to-Cash umfasst eine Sammlung von Kerntabellenzuordnungen, die während der Dateninteraktion zusammenwirken, wie in der folgenden Tabelle dargestellt.
 
 | Finance and Operations Apps | Modellgesteuerte Anwendungen in Dynamics 365 | Beschreibung |
 |-----------------------------|-----------------------------------|-------------|
@@ -126,7 +126,7 @@ Prospect-to-Cash umfasst eine Sammlung von Kernentitätszuordnungen, die währen
 | CDS-Verkaufsangebotskopf  | Angebote                            |             |
 | CDS-Verkaufsangebotspositionen   | quotedetails                      |             |
 
-Hier sind die zugehörigen Kernentitätszuordnungen für Prospect-to-Cash:
+Hier sind die zugehörigen Kerntabellenzuordnungen für Prospect-to-Cash:
 
 + [Debitoren V3 zu Konten](customer-mapping.md#customers-v3-to-accounts)
 + [CDS-Kontakte V2 zu Kontakten](customer-mapping.md#cds-contacts-v2-to-contacts)

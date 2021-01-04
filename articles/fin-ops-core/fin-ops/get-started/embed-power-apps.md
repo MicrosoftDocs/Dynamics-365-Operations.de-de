@@ -3,7 +3,7 @@ title: Einbetten von Canvas-Apps aus Power Apps
 description: In diesem Thema wird erläutert, wie Canvas-Apps aus Microsoft Power Apps in den Client eingebettet werden, um die Funktionalität des Produkts zu erhöhen.
 author: jasongre
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: e57e4567a80aa9f9ba5ac434b0d71204460e164f
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: ba3b736aeae8540349309ddd82bd431720b9701c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893106"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693482"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Einbetten von Canvas-Apps aus Power Apps
 
@@ -57,7 +56,7 @@ Die folgende Prozedur zeigt, wie eine Canvas-App über Power Apps in den Webclie
 3. Die eingebettete App konfigurieren:
 
     - Das Feld **Name** gibt den Text an, der für die Schaltfläche oder Registerkarte angezeigt wird, der die eingebettete App enthält. Oftmals können Sie ggf. den Namen der App in diesem Feld wiederholen.
-    - Das Feld **App-ID** gibt den Globally Unique Identifier (GUID) für die Canvas-App an, die Sie einbetten möchten. Um diesen Wert abzurufen, suchen Sie die App auf [web.powerapps.com](https://web.powerapps.com) und entnehmen Sie den Wert dem Feld **App-ID** unter **Details**.
+    - Das Feld **App-ID** gibt den Globally Unique Identifier (GUID) für die Canvas-App an, die Sie einbetten möchten. Um diesen Wert abzurufen, suchen Sie die App auf [make.powerapps.com](https://make.powerapps.com) und entnehmen Sie den Wert dem Feld **App-ID** unter **Details**.
     - Für die **Eingabekontext für die App** können Sie optional das Feld auswählen, das die Daten enthält, die an die App weitergegeben werden sollen. Siehe den Abschnitt weiter unten in diesem Thema mit dem Titel [Erstellung einer Anwendung, die von Finance and Operations Anwendungen](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) gesendete Daten nutzt, für Einzelheiten darüber, wie die Anwendung auf die von Finance and Operations Anwendungen gesendeten Daten zugreifen kann.
     - Wählen Sie die **Anwendungsgröße** die zum Typ der App passt, die Sie einbetten. Wählen Sie **Schmal** für Apps aus, die für mobile Geräte erstellt wurden, und **Breit** für Apps aus, die für Tablets erstellt wurden. Dadurch wird sichergestellt, dass für die eingebettete App ausreichend Platz zugeteilt wird.
     - Das Inforegister **Juristische Personen** bietet die Möglichkeit, auszuwählen, für welche juristischen Personen die App verfügbar ist. Standardmäßig wird die App in allen juristischen Personen verfügbar gemacht. Diese Option ist nur verfügbar, wenn die Funktion [Gespeicherte Ansichten](saved-views.md) deaktiviert ist. 
@@ -116,7 +115,7 @@ Nachdem eine App auf einer Seite eingebettet wurde, gibt es zwei Möglichkeiten,
 
 ## <a name="appendix"></a>Anhang
 
-### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Entwickler] Festlegen, wo eine App eingebettet werden kann
+### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Developer] Festlegen, wo eine App eingebettet werden kann
 
 Standardmäßig können Benutzer Apps auf einer beliebigen Seite, entweder unter der Power Apps-Menüschaltfläche oder direkt auf der Seite als Registerkarte, Inforegister, Blatt oder als neuen Abschnitt in einen Arbeitsbereich einbetten. Entwickler können jedoch nach Bedarf diese Funktion konfigurieren, um nur die Einbettung von Apps für bestimmte Seiten zu ermöglichen, indem die folgenden Methoden implementiert werden:
 

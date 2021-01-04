@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 6c4b18a3cf2ba313756d5f761ef1beb2c3015516
-ms.sourcegitcommit: 56add4c49c35c65a75fa2ca5234927e7f7cd66ef
+ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781144"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680875"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Länderkontextabhängige ER-Modellzuordnungen konfigurieren
 
@@ -150,7 +149,7 @@ Wie Sie gesehen haben, funktioniert die Auswahl einer Modellzuordnung für die A
 Die folgende Tabelle gibt Auskunft über die Ergebnisse der Modellzuordnungsauswahl für alle möglichen Fälle von Modellzuordnungseinstellungen:
 
 - Spalte 1 zeigt an, ob die erste Modellzuordnung, die keine Kontextbeschränkungen für Länder/Regionen aufweist (z.B. die gemeinsame Zuordnung **Zuordnung (Allgemein)**) dargestellt wird und, wenn ja, ob die Option **Standard für Modellzuordnung** auf **Ja** gesetzt ist.
-- Spalte 2 zeigt an, ob die zweite Modellabbildung, die keine Kontextbeschränkungen für Länder/Regionen aufweist (z.B. die gemeinsame **Zuordnung (allgemein) benutzerdefiniert**Zuordnung), dargestellt wird und, wenn ja, ob die Option **Standard für Zuordnung** auf **Ja** für sie gesetzt ist.
+- Spalte 2 zeigt an, ob die zweite Modellabbildung, die keine Kontextbeschränkungen für Länder/Regionen aufweist (z.B. die gemeinsame **Zuordnung (allgemein) benutzerdefiniert** Zuordnung), dargestellt wird und, wenn ja, ob die Option **Standard für Zuordnung** auf **Ja** für sie gesetzt ist.
 - Spalte 3 zeigt an, ob die erste Modellzuordnung mit Kontextbeschränkungen für Land/Region A (z.B. das Frankreich-spezifische **Zuordnung (FR)** Zuordnung) dargestellt wird und, wenn ja, ob die Option **Standard für Modellzuordnung** auf **Ja** gesetzt ist.
 - Spalte 4 zeigt an, ob die zweite Modellzuordnung mit Kontextbeschränkungen für Land/Region A dargestellt wird und, wenn ja, ob die Option **Standard für Modellzuordnung** auf **Ja** für sie gesetzt ist.
 - Spalte 5 zeigt das Ergebnis einer Modellzuordnungsauswahl für die Ausführung eines ER-Formats unter der Kontrolle eines Unternehmens, das einen Kontext zwischen Land und Region A hat.
@@ -202,7 +201,7 @@ In der Tabelle zeigt ein Pluszeichen (+) das Vorhandensein einer Modellzuordnung
 
 Beachten Sie, dass dem ER-Debug-Protokoll für das ausgeführte ER-Format ein neuer Datensatz hinzugefügt wurde. Da das Feld **Level** dieses Datensatzes auf **Info** gesetzt ist, ist der Datensatz informativ. Da das Feld Formatkomponente auf **Zuordnugnskonfiguration** gesetzt ist, informiert Sie der Datensatz über ein Model-Zuordnung, das während der Ausführung des **Formats zum Erlernen von Zuordnungen** ER-Format verwendet wurde (ausgewählt im Feld **Konfigurationsname**). Der Inhalt des Feldes **Generierter Text** informiert Sie darüber, dass die Zuordnungs-Komponente **Zuordnung (FR)**, die sich in der Konfiguration **Zuordnung (FR)** befindet, zur Ausführung dieses Berichts verwendet wurde.
 
-## <a name="appendix1"></a> Anhang 1
+## <a name="appendix-1"></a><a name="appendix1"></a> Anhang 1
 
 ### <a name="configure-a-sample-data-model"></a>Konfigurieren eines Beispieldatenmodells
 
@@ -343,7 +342,7 @@ Beachten Sie, dass der Entwurf der Version 1 dieser ER-Konfiguration zur Bearbei
 4.  Wählen Sie **Speichern**.
 5.  Schließen Sie die Seite.
 
-## <a name="appendix2"></a> Anhang 2
+## <a name="appendix-2"></a><a name="appendix2"></a> Anhang 2
 
 ### <a name="configure-a-sample-model-mapping-for-general-customization"></a>Konfigurieren einer exemplarischen Modellzuordnung für allgemeine Anpassungen
 
@@ -403,7 +402,7 @@ Beachten Sie, dass der Entwurf der Version 1 dieser ER-Konfiguration zur Bearbei
 
 Beachten Sie, dass die erstellte Konfiguration als fertige Version 1 gespeichert wird.
 
-## <a name="appendix3"></a> Anhang 3
+## <a name="appendix-3"></a><a name="appendix3"></a> Anhang 3
 
 ### <a name="configure-a-sample-model-mapping-for-countryregion-specific-customization"></a>Konfigurieren Sie eine Mustermodellzuordnung für länder- und regionalspezifische Anpassungen.
 

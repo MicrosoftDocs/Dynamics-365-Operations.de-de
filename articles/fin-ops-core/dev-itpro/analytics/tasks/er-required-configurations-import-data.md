@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143314"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684281"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Erforderliche Konfigurationen zum Import von Daten aus einer externen Datei estellen
 
@@ -98,11 +97,11 @@ Die Schritte in dieser Unteraufgabe zeigen Ihnen, wie eine neue Formatkonfigurat
 
     Beachten Sie, dass das entworfene Format hier als eine Datenquellenkomponente dargestellt wird.  
 
-6. Erweitern Sie in der Struktur „format: Beleg\*settlement: XML Element 1..1 (settlement): Record”.
-7. Erweitern Sie in der Struktur „format: Beleg\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list”.
-8. Erweitern Sie in der Struktur „format: Beleg\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Datesatzliste\*vendor: XML Element 1..1 (vendor): Record”.
-9. Erweitern Sie in der Struktur „format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record”.
-10. Erweitern Sie in der Struktur „format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Datesatzliste\*vendor: XML Element 1..1 (vendor): Record”.
+6. Erweitern Sie in der Struktur `format: Record\*settlement: XML Element 1..1 (settlement): Record`.
+7. Erweitern Sie in der Struktur `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list`.
+8. Erweitern Sie in der Struktur `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record`.
+9. Erweitern Sie in der Struktur `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record`.
+10. Wählen Sie in der Struktur `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record` aus.
 
     Beachten Sie, dass die Präsentation von erforderlichen und optionalen Formatelementen in der vordefinierten Datenquellenkomponente „Format“ anders ist.  
 11. Erweitern Sie in der Struktur „Transactions: Record list= format.settlement.'$enumerated”.
@@ -237,7 +236,7 @@ Führen Sie diese Formatzuordnung für Testzwecke aus. Verwenden Sie die Datei 1
 19. Schließen Sie die Seite.
 20. Klicken Sie auf Bearbeiten.
 
-    Wenn Sie den Hotfix „KB 4012871 Unterstützung von GER-Modellzuordnungen in getrennten Konfigurationen mit der Fähigkeit, verschiedene Arten von Voraussetzungen zur Bereitstellung in verschiedenen Versionen von Dynamics 365 Finance“ (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871) installiert haben, führen Sie den nächsten Schritt „Kennung „Standard für Modellzuordnung“ einschalten“ für die eingegebene Formatkonfiguration aus. Überspringen Sie anderenfalls den nächsten Schritt.  
+    Wenn Sie den Hotfix „KB 4012871 Unterstützung von GER-Modellzuordnungen in getrennten Konfigurationen mit der Fähigkeit, verschiedene Arten von Voraussetzungen zur Bereitstellung in verschiedenen Versionen von Dynamics 365 Finance festzulegen“ ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)) installiert haben, führen Sie den nächsten Schritt „Kennung „Standard für Modellzuordnung“ einschalten“ für die eingegebene Formatkonfiguration aus. Überspringen Sie anderenfalls den nächsten Schritt.  
 
 21. Wählen Sie die Option „Ja” im Feld „Standard für Modellzuordnung” aus.
 22. Wählen Sie in der Struktur „US 1099-Steuerzahlungsmodell” aus.
@@ -245,9 +244,9 @@ Führen Sie diese Formatzuordnung für Testzwecke aus. Verwenden Sie die Datei 1
 24. Klicken Sie auf "Modell der Datenquelle zuordnen".
 25. Klicken Sie auf "Ausführen".
 
-    Wenn Sie den Hotfix „KB 4012871 Unterstützung von GER-Modellzuordnungen in getrennten Konfigurationen mit der Fähigkeit, verschiedene Arten von Voraussetzungen zur Bereitstellung in verschiedenen Versionen (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871) installiert haben, wählen Sie die bevorzugte Modellzuordnung im Suchfeld aus. Wenn Sie den Hotfix noch nicht installiert haben, überspringen Sie diesen Schritt und gehen Sie zum nächsten Schritt, da durch die Definition der Standardformatkonfiguration die Zuordnung bereits ausgewählt wurde.  
+    Wenn Sie den Hotfix „KB 4012871 Unterstützung von GER-Modellzuordnungen in getrennten Konfigurationen mit der Fähigkeit, verschiedene Arten von Voraussetzungen zur Bereitstellung in verschiedenen Versionen festzulegen“ ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)) installiert haben, wählen Sie die bevorzugte Modellzuordnung im Suchfeld aus. Wenn Sie den Hotfix noch nicht installiert haben, überspringen Sie diesen Schritt und gehen Sie zum nächsten Schritt, da durch die Definition der Standardformatkonfiguration die Zuordnung bereits ausgewählt wurde.  
     
-    Wenn Sie den Hotfix nicht installiert haben, KB 4012871, beachten Sie, dass das Dialogfeld eine zusätzliche Modellzuordnungsfrage enthält, die verwendet wird, um die Datei, die Sie importieren, zu analysieren. Die Daten werden dann aus dem Dialogfeld zum Datenmodell übertragen. Aktuell können Sie auswählen, welche Formatzuordnung verwendet werden muss, abhängig vom Dateityp, den Sie importieren möchten.  
+    Wenn Sie den Hotfix, KB 4012871, nicht installiert haben, beachten Sie, dass das Dialogfeld eine zusätzliche Modellzuordnungsfrage enthält, die verwendet wird, um die importierte Datei zu analysieren. Die Daten werden dann aus dem Dialogfeld zum Datenmodell übertragen. Aktuell können Sie auswählen, welche Formatzuordnung verwendet werden muss, abhängig vom Dateityp, den Sie importieren möchten.  
     
     Wenn Sie planen, diese Modellzuordnung von einem Punkt in der Anwendung aus aufzurufen, der speziell für diese Aktivität entworfen wurde, müssen das ER-Ziel und die Formatzuordnung als Teil der Integration markiert sein.  
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 27a6745be62185b23a7e81c9aed78879e36b3a9d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 97468be0bdea679ca7a52c5cef9c1e10950736e8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181725"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682720"
 ---
 # <a name="financial-report-components"></a>Finanzberichtkomponenten
 
@@ -58,7 +57,7 @@ Verwenden Sie Ordner, um die Bausteine im Berichts-Designer zu organisieren. All
 3. Wenn der neue Ordner angezeigt wird, geben Sie den Namen des neuen Ordners ein und drücken die Eingabetaste.
 
 ## <a name="lock-a-building-block"></a> Einen Baustein sperren
-Sie können ein Kennwort erstellen, um einen Baustein zu schützen und zu sperren. Auf diese Wiese wird einer Berichtskomponente eine Sicherheitsstufe hinzugefügt, ohne das gesamte System zu sichern. Ein Passwort kann Bausteininformationen schützen, die für Ihren Berichterstellungsprozess am Monatsende von Bedeutung sind. Ein Benutzer in einer beliebigen Rolle kann einen Baustein sperren. Andere Benutzer haben jedoch lediglich Lese-Zugriff auf eine gesperrte Komponente. Benutzer können die gesperrte Komponente öffnen, ändern und unter neuem Namen speichern. Ein Benutzer, der die Rolle "Administrator" hat, hat immer Zugriff und kann einen gesperrten Baustein ändern.
+Sie können ein Kennwort erstellen, um einen Baustein zu schützen und zu sperren. Auf diese Wiese wird einer Berichtskomponente eine Sicherheitsstufe hinzugefügt, ohne das gesamte System zu sichern. Ein Passwort kann Bausteininformationen schützen, die für Ihren Berichterstellungsprozess am Monatsende von Bedeutung sind. Ein Benutzer in einer beliebigen Rolle kann einen Baustein sperren. Für andere Benutzer ist der Zugriff auf eine gesperrte Komponente jedoch immer schreibgeschützt. Benutzer können die gesperrte Komponente öffnen, ändern und unter neuem Namen speichern. Ein Benutzer, der die Rolle "Administrator" hat, hat immer Zugriff und kann einen gesperrten Baustein ändern.
 
 1. Öffnen Sie im Berichts-Designer die zu schützende Berichtskomponente, wie eine Zeilendefinition, eine Spaltendefinition, eine Berichtsdefinition oder eine Berichtstruktur-Definition.
 2. Klicken Sie im Menü **Extras** auf **Schützen/Schutz aufheben**. Sie können auch in der Symbolleiste auf **Schützen/Schutz aufheben** (das Schlosssymbol) klicken.
@@ -81,7 +80,7 @@ Sie können alle Bausteine anzeigen, die einer Bausteingruppe zugewiesen sind. S
 
 ### <a name="export-a-building-block-group"></a>Exportieren einer Bausteingruppe
 
-Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer Bausteingruppe exportieren.Sie können die exportierte Bausteingruppe als Sicherung verwenden. Sie können auch die exportierten Daten zwischen Installationen kopieren.Der Berichtsdesigner umfasst die referenzierten Schriftschnitte und Dimensionssätze mit der Bausteingruppe.
+Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer Bausteingruppe exportieren. Sie können die exportierte Bausteingruppe als Sicherung verwenden. Sie können auch die exportierten Daten zwischen Installationen kopieren. Der Berichtsdesigner umfasst die referenzierten Schriftschnitte und Dimensionssätze zusammen mit der Bausteingruppe.
 
 1. Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Bausteingruppen**.
 2. Wählen Sie im Dialogfeld **Bausteingruppen** die Bausteingruppe aus, die exportiert werden soll, und klicken Sie dann auf **Exportieren**.
@@ -114,7 +113,7 @@ Sie können eine Bausteingruppe in eine vorhandene Bausteingruppe importieren. A
 
 ### <a name="undo-a-checkout-of-a-building-block"></a>Das Auschecken eines Bausteins rückgängig machen
 
-Wenn Sie einen Baustein öffnen, können andere Benutzer auf diesen Baustein nur im schreibgeschützten Modus zugreifen. Manchmal vergisst ein Benutzer, einen Baustein zu schließen oder schaltet das System ab, ohne den Baustein zu schließen. Dadurch bleibt der Baustein ausgecheckt und kein anderer Benutzer kann ihn öffnen. In diesen Fällen kann ein Finanzbericht-Administrator das Dialogfeld **Ausgecheckte Elemente** verwenden, um Bausteine einzuchecken, die ein Benutzer in einem ausgecheckten Zustand zurückgelassen hat.
+Wenn Sie einen Baustein öffnen, können andere Benutzer auf diesen Baustein nur im schreibgeschützten Modus zugreifen. Manchmal vergisst ein Benutzer, einen Baustein zu schließen oder schaltet das System ab, ohne den Baustein zu schließen. Dadurch bleibt der Baustein ausgecheckt und kein anderer Benutzer kann ihn öffnen. In diesen Fällen kann ein Administrator von Financial Reporting das Dialogfeld **Ausgecheckte Elemente** verwenden, um Bausteine einzuchecken, die ein Benutzer in einem ausgecheckten Zustand zurückgelassen hat.
 
 > [!NOTE]
 > Sie müssen die Rolle eines Administrators aufweisen, um Bausteine aus dem Dialogfeld **Ausgecheckte Elemente** einzuchecken.

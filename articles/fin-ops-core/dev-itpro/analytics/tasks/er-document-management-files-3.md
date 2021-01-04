@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4324ed62c56abea6d90d83d950429b6ddf7a84b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: bfcc03fa7470d4f2fa45ef012e30acef0712bf99
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142022"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681852"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a>ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 3: Format erstellen)
 
@@ -98,7 +97,7 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 1. Wählen Sie in der Strukturdarstellung "Rechnung\SalesOrder" aus.
 2. Klicken Sie auf die Registerkarte Zuordnung.
 3. Erweitern Sie in der -Struktur den Knoten 'Modell'.
-4. Wählen Sie in der Strukturdarstellung "Modell\Auftragsnummer(SalesId)") aus.
+4. Wählen Sie in der Strukturdarstellung "Modell\Auftragsnummer(SalesId)" aus.
 5. Klicken Sie auf Binden.
 6. Wählen Sie in der Strukturdarstellung "Rechnung\InvoiceNumber" aus.
 7. Erweitern Sie in der Strukturdarstellung "Modell\Basisrechnung(InvoiceBase)".

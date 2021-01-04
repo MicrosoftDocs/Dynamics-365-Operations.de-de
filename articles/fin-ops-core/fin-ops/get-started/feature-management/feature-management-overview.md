@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 46095e4ec21aac7cbf98dc1265ea7c8de27148ab
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015042"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4692965"
 ---
 # <a name="feature-management-overview"></a>Funktionsverwaltung – Übersicht
 
@@ -43,7 +42,7 @@ Die Funktionsliste für Positionsdetails enthält die folgenden Informationen:
 - **Funktion hinzugefügt** – Das Datum, an dem die Funktion für Ihre Umgebung hinzugefügt wurde. Dieses Datum wird automatisch eingegeben, wenn Sie Ihre Umgebung beim monatlichen Versionszyklus aktualisieren.
 - **Modul** – Das Modul, das von der neuen Funktion betroffen ist.
 
-Wenn Sie eine Funktion auswählen, werden zusätzliche Informationen im Detailbereich rechts neben der Funktionsliste angezeigt. Oben im Bereich finden Sie den Funktionsnamen, das Datum, an dem die Funktion hinzugefügt wurde, das Modul, das von der Funktion betroffen ist, und einen **Mehr erfahren** -Link. Wählen Sie diesen Link aus, um die Dokumentation für die Funktion anzuzeigen. Wenn keine Dokumentation verfügbar ist, gelangen Sie zu einer temporären Seite. Der Detailbereich beinhaltet auch ein **Kommentare** -Feld, in dem Sie Ihre eigenen Kommentare zur Funktion hinzufügen können.
+Wenn Sie eine Funktion auswählen, werden zusätzliche Informationen im Detailbereich rechts neben der Funktionsliste angezeigt. Oben im Bereich finden Sie den Funktionsnamen, das Datum, an dem die Funktion hinzugefügt wurde, das Modul, das von der Funktion betroffen ist, und einen **Mehr erfahren**-Link. Wählen Sie diesen Link aus, um die Dokumentation für die Funktion anzuzeigen. Wenn keine Dokumentation verfügbar ist, gelangen Sie zu einer temporären Seite. Der Detailbereich beinhaltet auch ein **Kommentare**-Feld, in dem Sie Ihre eigenen Kommentare zur Funktion hinzufügen können.
 
 Der Arbeitsbereich **Funktionsverwaltung** enthält auch einige Registerkarten, die jede die Funktionen auflistet.
 
@@ -54,7 +53,7 @@ Der Arbeitsbereich **Funktionsverwaltung** enthält auch einige Registerkarten, 
 
 ## <a name="turn-on-a-feature"></a>Eine Funktion aktivieren
 
-Wenn eine Funktion nicht aktiviert wurde, wird eine **Jetzt Aktivieren** -Schaltfläche im Detailbereich angezeigt. Sie können diese Schaltfläche verwenden, um die Funktion zu aktivieren.
+Wenn eine Funktion nicht aktiviert wurde, wird eine **Jetzt Aktivieren**-Schaltfläche im Detailbereich angezeigt. Sie können diese Schaltfläche verwenden, um die Funktion zu aktivieren.
 
 - Wählen Sie die Funktion aus, die Sie aktivieren möchten, und wählen Sie dann im Detailbereich **Jetzt Aktivieren** aus. Die Funktion ist aktiviert.
 
@@ -74,11 +73,11 @@ Wenn eine Funktion zur Aktivierung in der Zukunft geplant ist, wird eine Schaltf
 
 1. Wählen Sie die geplante Funktion aus, die Sie neu planen möchten, und wählen Sie dann im Detailbereich **Zeitplan** aus.
 2. Im Dialogfeld, das im Feld **Aktivierungsdatum** angezeigt wird, geben Sie das neue Datum ein, an dem die Funktion aktiviert werden soll.
-3. Wählen Sie **Aktivieren** aus, um die Funktion neu zu planen oder **Deaktivieren** , um die Planung abzubrechen.
+3. Wählen Sie **Aktivieren** aus, um die Funktion neu zu planen oder **Deaktivieren**, um die Planung abzubrechen.
 
 ## <a name="turn-off-a-feature"></a>Eine Funktion deaktivieren
 
-Wenn eine Funktion bereits aktiviert ist, wird eine **Deaktivieren** -Schaltfläche im Detailbereich angezeigt. Sie können diese Schaltfläche verwenden, um die Funktion zu deaktivieren. Die Schaltfläche **Deaktivieren** ist nicht verfügbar, wenn die Funktion nicht mehr deaktiviert werden kann, nachdem sie aktiviert wurde.
+Wenn eine Funktion bereits aktiviert ist, wird eine **Deaktivieren**-Schaltfläche im Detailbereich angezeigt. Sie können diese Schaltfläche verwenden, um die Funktion zu deaktivieren. Die Schaltfläche **Deaktivieren** ist nicht verfügbar, wenn die Funktion nicht mehr deaktiviert werden kann, nachdem sie aktiviert wurde.
 
 - Wählen Sie die Funktion aus, die Sie deaktivieren möchten, und wählen Sie dann im Detailbereich **Deaktivieren** aus. Die Funktion wird deaktiviert, und das Feld **Aktivierungsdatum** wird deaktiviert.
 
@@ -181,7 +180,7 @@ Funktionen-Flights sind Echtzeit-Ein/Aus-Schalter, die Microsoft steuert. Sie si
 Ja, wenn eine Funktion die Funktionsweise einer Umgebung beeinträchtigt, die keine funktionalen Auswirkungen hat, können sie standardmäßig aktiviert werden.
 
 ### <a name="how-can-feature-enablement-be-checked-in-code"></a>Wie kann die Funktionsaktivierung im Code überprüft werden?
-Verwenden Sie die **isFeatureEnabled** -Methode auf der **FeatureStateProvider** -Klasse, wobei eine Instanz der Funktionsklasse übergeben wird. Beispiel: 
+Verwenden Sie die **isFeatureEnabled**-Methode auf der **FeatureStateProvider**-Klasse, wobei eine Instanz der Funktionsklasse übergeben wird. Beispiel: 
 
 ```xpp
 if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26a912aa2002f1d60dd650248bd3c68e45e68596
-ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
+ms.openlocfilehash: 7934f36877247460ec843201a08d4670456889f9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3810666"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679701"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Entwerfen Sie mehrsprachige Berichte in der elektronischen Berichterstellung
 
@@ -78,15 +77,15 @@ Wenn Sie ein ER-Datenmodell konfigurieren, können Sie ER-Beschriftungen hinzuf�
 
 Wenn ein ER-Datenmodell auf diese Weise konfiguriert wird, wird sein Inhalt den Benutzern des ER-Datenmodelldesigners in der von jedem Benutzer bevorzugten Sprache angezeigt. Daher wird die Modellwartung vereinfacht. Die folgenden Abbildungen zeigen, wie diese Funktionalität für Benutzer funktioniert, für die DE-AT und JA als bevorzugte Sprache festgelegt sind.
 
-![Layout des ER-Datenmodelldesigners für einen Benutzer, für den DE-AT als bevorzugte Sprache festgelegt wurde](./media/er-multilingual-labels-refer-de.png)
+![Layout des EB-Datenmodelldesigners für einen Benutzer, für den DE-AT als bevorzugte Sprache festgelegt wurde](./media/er-multilingual-labels-refer-de.png)
 
-![Layout des ER-Datenmodelldesigners für einen Benutzer, für den JA als bevorzugte Sprache festgelegt wurde](./media/er-multilingual-labels-refer-ja.png)
+![Layout des EB-Datenmodelldesigners für einen Benutzer, für den JA als bevorzugte Sprache festgelegt wurde](./media/er-multilingual-labels-refer-ja.png)
 
 ### <a name="model-mapping-component"></a>Modellzuordnungskomponente
 
 Da die ER-Modellzuordnung auf einem ER-Datenmodell basiert, werden die Beschriftungen der Datenmodellelemente, auf die verwiesen wird, in der vom Benutzer bevorzugten Sprache im Modellzuordnungsdesigner angezeigt. Die folgende Abbildung zeigt, wie die Bedeutung des Felds **Bestellung** in der bearbeitbaren Modellzuordnung anhand der Bezeichnung des Attributs **Beschreibung** erläutert wird, das dem konfigurierten Datenmodell hinzugefügt wurde. Beachten Sie, dass diese Beschriftung in der vom Benutzer bevorzugten Sprache angezeigt wird (in diesem Beispiel DE-AT).
 
-![Layout des ER-Datenmodellzuordnungsdesigner für einen Benutzer, für den DE-AT als bevorzugte Sprache festgelegt wurde](./media/er-multilingual-labels-show-mapping.png)
+![Layout des EB-Modellzuordnungsdesigners für einen Benutzer, für den DE-AT als bevorzugte Sprache festgelegt wurde](./media/er-multilingual-labels-show-mapping.png)
 
 Wenn das Attribut **Beschriftung** der **Benutzereingabeparameter** Datenquelle so konfiguriert ist, dass sie mit einer ER-Beschriftung verknüpft ist, wird das Parameterfeld für diese Datenquelle den Benutzern zur Laufzeit im Benutzerdialogfeld in ihrer bevorzugten Sprache angezeigt.
 
@@ -158,7 +157,7 @@ EB unterstützt verschiedene Möglichkeiten, eine Sprache für einen generierten
 
     ![Geben Sie im EB Vorgangs-Designer eine Entwurfszeit in der vom Unternehmen bevorzugte Sprache als Sprache für einen generierten Bericht an](./media/er-multilingual-labels-language-context-fixed.png)
 
-- **Definiert zu Runtime** – Generieren Sie einen Bericht in einer Sprache, die zur Runtime angegeben wurde. Wenn Sie diesen Wert auswählen, konfigurieren Sie einen EB-Ausdruck im Feld **Sprache**, der den Sprachcode für die Sprache zurückgibt, z. B. die Sprache des entsprechenden Kunden.
+- **Definiert zu Runtime** – Generieren Sie einen Bericht in einer Sprache, die zur Runtime angegeben wurde. Wenn Sie diesen Wert auswählen, konfigurieren Sie einen EB-Ausdruck im Feld **Sprache**, der den Sprachcode für die Sprache zurückgibt, z. B. die Sprache des entsprechenden Kunden.
 
     ![Geben Sie im EB Vorgangs-Designer eine Runtime definierte Sprache als Sprache für einen generierten Bericht an](./media/er-multilingual-labels-language-context-runtime.png)
 

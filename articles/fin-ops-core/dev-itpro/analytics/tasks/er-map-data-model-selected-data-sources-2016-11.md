@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cf19d69c498da32594e17e16fb83ed25e6747982
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d2d09370b0e08897799d40c41c20c21b58e885dc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142988"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684306"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>Er-Datenmodell zu den ausgewählten Datenquellen zuordnen
 
@@ -110,14 +109,14 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
 65. In der Struktur ausgewählte "Bank Account(BankAccount)\SWIFT code(SWIFTNo)".
 66. Klicken Sie auf Binden.
 67. Wählen Sie 'Payments= Transactions\Debtor\Account\Name' in der Struktur aus.
-68. Wählen Sie in der Strukturdarstellung "Unternehmensdaten "Unternehmen") aus.
+68. Wählen Sie in der Strukturdarstellung "Unternehmensdaten (Unternehmen") aus.
 69. Erweitern Sie in der Strukturdarstellung "Unternehmensdaten (Unternehmen)".
 70. Wählen Sie in der Strukturdarstellung "Unternehmensdaten (Unternehmen)\Name" aus.
 71. Klicken Sie auf Binden.
 72. Wählen Sie 'Payments= Transactions\Description' in der Struktur aus.
 73. Wählen Sie 'Transactions\Description(Txt)' in der Struktur aus.
 74. Klicken Sie auf Binden.
-75. In der Struktur ausgewählte "Payments= Transactions\End to end identification code(End2EndID".
+75. In der Struktur ausgewählte "Payments= Transactions\End to end identification code(End2EndID)".
 76. Wählen Sie in der Struktur\$TransactionsEndToEndID' aus.
 77. Klicken Sie auf Binden.
 78. In der Struktur wählen Sie "Payments=-Buchungen \ Betrag (InstructedAmount)" aus.

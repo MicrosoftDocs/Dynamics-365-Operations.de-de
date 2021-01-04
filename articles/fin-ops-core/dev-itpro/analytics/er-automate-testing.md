@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTable, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be641e1b2f90f4d19f7ed15e47413c0aa43d5073
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 0a2586afd56eef0f953454ad246ff3647a5b09d1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771443"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681447"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisiertes Testen mit elektronischen Berichten
 
@@ -48,7 +47,7 @@ Funktionale Poweruser können Benutzerakzeptanz- und Integrationstests erstellen
 - Gruppieren von Testfällen für erforderliche Testszenarien. Weitere Informationen finden Sie unter [Benutzerakzeptanztests erstellen und automatisieren](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
     - Verwenden Sie Geschäftsprozessmodellierer (BPM) in LCS , um Bibliotheken für Benutzerakzeptanztests zu erstellen.
-    - Verwenden Sie BPM-Testbibliotheken, um einen Testplan zu erstellen und Suiten in Microsoft Azure DevOps Services (Azure DevOps) zu erstellen.
+    - Verwenden Sie BPM-Testbibliotheken, um in Microsoft Azure DevOps Services (Azure DevOps) einen Testplan und Testsuiten zu erstellen.
 
 Funktionale Powernutzer können Benutzerakzeptanz- und Integrationstests durchführen.
 
@@ -60,7 +59,7 @@ Funktionale Powernutzer können Benutzerakzeptanz- und Integrationstests durchf�
 Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgenden Voraussetzungen abgeschlossen werden:
 
 - Stellen Sie eine Topologie bereit, die Testautomatisierung unterstützt. Sie müssen Zugriff auf die Instanz dieser Topologie für die **Systemadministrator**-Rolle haben. Diese Topologie muss die Demodaten enthalten, die in diesem Beispiel verwendet werden. Weitere Informationen finden Sie unter [Bereitstellen und Verwenden von Umgebungen, die fortlaufende und Build- und Testautomatisierung unterstützen](../perf-test/continuous-build-test-automation.md).
-- Um Benutzerakzeptanz- und Integrationstests automatisch zu erstellen, müssen Sie RSAT in der Topologie installieren, die Sie verwenden und in der entsprechenden Art konfigurieren. Informationen darüber, wie Sie RSAT installieren und konfigurieren, damit es mit Finance and Operations-Apps und Azure DevOps funktioniert, finden Sie unter [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Beachten Sie die Voraussetzungen für die Verwendung des Tools. Die folgende Abbildung zeigt ein Beispiel der RSAT-Einstellungen. Das blaue Rechteck schließt die Parameter ein, die den Zugriff auf Azure DevOps angeben. Das grüne Rechteck schließt die Parameter ein, die den Zugriff auf die Instanz angeben.
+- Um Benutzerakzeptanz- und Integrationstests automatisch zu erstellen, müssen Sie RSAT in der Topologie installieren, die Sie verwenden und in der entsprechenden Art konfigurieren. Informationen darüber, wie Sie RSAT installieren und so konfigurieren, dass es mit den Finance and Operations-Apps und Azure DevOps funktioniert, finden Sie unter [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Beachten Sie die Voraussetzungen für die Verwendung des Tools. Die folgende Abbildung zeigt ein Beispiel der RSAT-Einstellungen. Das blaue Rechteck schließt die Parameter ein, die den Zugriff auf Azure DevOps angeben. Das grüne Rechteck schließt die Parameter ein, die den Zugriff auf die Instanz angeben.
 
     ![RSAT-Einstellungen](media/GER-Configure.png "Screenshot des Dialogfelds „RSAT-Einstellungen“")
 
@@ -264,7 +263,7 @@ Diese Aufgabenaufzeichnung führt die folgenden Aktivitäten aus:
 
     ![Einträge auf der Seite für Elektronische Berichterstellungsausführungsprotokolle](media/GER-ERDebugLog.png "Screenshot der Einträge auf der Seite für Elektronische Berichterstellungsausführungsprotokolle")
 
-4. Der Vergleich der aktuellen Ausgabe zu den Ausgangswerten wird aufgezeichnet, indem Sie die Aufgabenaufzeichnungsoption **Überprüfen**verwenden und **Aktueller Wert** auswählen.
+4. Der Vergleich der aktuellen Ausgabe zu den Ausgangswerten wird aufgezeichnet, indem Sie die Aufgabenaufzeichnungsoption **Überprüfen** verwenden und **Aktueller Wert** auswählen.
 
     ![Verwendung der Option „Überprüfen“ für den Vergleich mit dem aktuellen Wert](media/GER-TRRecordValidation.png "Screenshot der Verwendung der Option „Überprüfen“ für den Vergleich mit dem aktuellen Wert")
 
@@ -284,7 +283,7 @@ Diese Aufgabenaufzeichnung führt die folgenden Aktivitäten aus:
 
 5. Neuen Testfall für den ausgewählten Testplan erstellen:
 
-    1. Geben Sie dem Testfall den Namen**Testen der Verarbeitung von Kreditorenzahlungen unter Verwendung des ER-Format BACS (UK)**.
+    1. Geben Sie dem Testfall den Namen **Testen der Verarbeitung von Kreditorenzahlungen unter Verwendung des ER-Format BACS (UK)**.
     2. Fügen Sie die Datei **Recording.xml** aus dem Ordner **Verarbeiten** an, den Sie zuvor heruntergeladen haben.
 
     ![Neuen Testfälle für den ausgewählten Testplan](media/GER-RSAT-DevOps-Tests-Passed.png "Screenshot der neuen Testfälle für den ausgewählten Testplan")

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14539ed6c00915b7d59a5a3c4870ab6d1a96ad95
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d96fe041fd0ffb292909c1e724068efebe0184b9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002519"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682648"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner in der elektronischen Berichterstellung (EB)
 
@@ -51,7 +50,7 @@ Sie können die Seite **Formeldesigner** öffnen, wenn Sie irgendeine der folgen
 - Definition der Bedingungen für Prozesssteuerprüfungen.
 - Definition der Nachrichtentextes für Prozesssteuerprüfungen.
 
-## <a name="Binding"></a>Datenbindung
+## <a name="data-binding"></a><a name="Binding"></a>Datenbindung
 
 Der EB-Formeldesigner kann verwendet werden, um einen Ausdruck zu definieren, der Daten transformiert, die von Datenquellen empfangen werden, sodass die Daten beim Datenkonsument in folgender Art zur Laufzeit eingegeben werden können:
 
@@ -69,7 +68,7 @@ Die folgende Abbildung zeigt, wie ein Ausdruck dieses Typs verwendet werden kann
 
 Zur Laufzeit rundet die entworfene Formel `ROUND (Intrastat.AmountMST, 2)` den Wert des Felds **AmountMST** für jeden Datensatz in der Intrastat-Tabelle auf zwei Dezimalstellen. Sie gibt dann den gerundeten Wert in der Komponente **Transaction.InvoicedAmount** des Datenmodells **Steuererklärung** ein.
 
-## <a name="Transformation"></a>Datenformatierung
+## <a name="data-formatting"></a><a name="Transformation"></a>Datenformatierung
 
 Der ER-Formeldesigner kann verwendet werden, um einen Ausdruck zu definieren, der Daten umwandelt, die von den Datenquellen empfangen werden, sodass die Daten als Teil zum Erstellen eines elektronischen Dokuments gesendet werden können. Möglicherweise haben Sie Formatierung, die als eine typische Regel angewendet werden muss, die für ein Format erneut verwendet werden muss. In diesem Fall können Sie diese Formatierung einmal in der Formatkonfiguration einführen, als benannte Transformation, die einen Formatierungsausdruck hat. Diese benannte Transformation kann dann mit vielen Formatkomponenten verknüpft werden, wobei die Ausgabe gemäß dem Formatierungsausdruck formatiert werden muss, den Sie erstellt haben.
 
@@ -87,7 +86,7 @@ Wenn Sie eine Formatierung haben, die einzeln angewendet werden muss, kann sie a
 
 [![Anwenden der Formatierung auf eine einzelne Komponente](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-## <a name="Validation"></a>Prozessflusssteuerung
+## <a name="process-flow-control"></a><a name="Validation"></a>Prozessflusssteuerung
 
 Der EB-Formeldesigner kann verwendet werden, um Ausdrücke zu definieren, die den Prozessfluss zum Generieren elektronischer Dokumenten steuern. Die folgenden Aufgaben können ausgeführt werden:
 
@@ -112,7 +111,7 @@ Der EB-Formeldesigner wird auch verwendet, um einen Dateinamen für ein generier
 
 [![Prozessflusssteuerung](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-## <a name="Enabled"></a>Inhaltskontrolle von Dokumenten
+## <a name="document-content-control"></a><a name="Enabled"></a>Inhaltskontrolle von Dokumenten
 
 Der EB-Formeldesigner kann verwendet werden, um Ausdrücke zu konfigurieren, die steuern, welche Daten zur Laufzeit in generierten elektronischen Dokumenten platziert werden. Die Ausdrücke können die Ausgabe bestimmter Elemente des Formats aktivieren oder deaktivieren, je nach Verarbeitungsdaten und konfigurierter Logik. Diese Ausdrücke können für ein einzelnes Formatelement im Feld **Aktiviert** auf der Registerkarte **Zuordnung** auf der Seite **Arbeitsgangdesigner** als logische Bedingung eingegeben werden, die den Booleschen Wert zurückgibt: Sie können die Ausdrücke als logische Bedingung eingeben, die einen *booleschen* Wert zurückgibt:
 
@@ -139,7 +138,7 @@ Die folgende Abbildung zeigt Ausdrücke dieses Typs. (Version 11.12.11 der Forma
 > 
 > Basierend auf dieser Einstellung, die für jede Debitorenzahlung generiert wird, enthält das **Ustrd** XML-Element entweder den Text von Verwendungszwecken oder, wenn dieser Text leer ist, eine durch Kommata getrennte Liste mit Rechnungsnummern, die zur Begleichung dieser Zahlung verwendet werden.
 
-## <a name="TestFormula"></a>Validierung von konfigurierten Formeln
+## <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Validierung von konfigurierten Formeln
 
 Wählen Sie auf der Seite **Formel-Designer** die Option **Test** aus, um zu überprüfen, wie die konfigurierte Formel funktioniert.
 

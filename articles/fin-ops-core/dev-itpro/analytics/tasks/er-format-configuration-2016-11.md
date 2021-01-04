@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: af2899da843967bfaaa8f3c66906fc8e3765b573
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: e4cd3960594ab37ca867792c655cfd28dc332fa9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142500"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684762"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER Erstellen eine Formatkonfiguration (November 2016)
 
@@ -41,7 +40,7 @@ In diesem Thema wird erläutert, wie ein Benutzer, der der Systemadministratorro
  
 5. Im **neuen** Feld geben Sie **Format auf Grundlage Datenmodell PaymentModel** ein.
 6. Geben Sie im Feld **Name** **BACS (Großbritannien fiktiv)** ein.
-7. Geben Sie im Feld **Beschreibung** den Typ **BACS-Kreditorenzahlungsformat (Großbritannien fiktiv**en Namens)" ein.
+7. Geben Sie im Feld **Beschreibung** den Typ **BACS-Kreditorenzahlungsformat (Großbritannien fiktiv** en Namens)" ein.
     * Der aktive Konfigurationsanbieter wird automatisch hier eingegeben. Dieser Anbieter ist in der Lage, diese Konfiguration verwalten. Andere Anbieter können diese Konfiguration verwenden, werden jedoch nicht in der Lage sein, sie zu verwalten.  
     * Ein spezielles Format elektronischer Dokumente kann definiert werden. Lassen Sie das Feld leer, wenn Sie ein Format zur Laufzeit auswählen möchten.  
 8. Geben Sie im Feld **Datenmodelldefinition** einen Wert ein, oder wählen Sie einen Wert aus.

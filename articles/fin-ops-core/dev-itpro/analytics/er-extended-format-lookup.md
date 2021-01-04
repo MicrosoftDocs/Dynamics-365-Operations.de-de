@@ -11,31 +11,30 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 28bdd02c25db27536a489f9e8ab2a91a5ca0f09c
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: f7c6cb99a6c5cc6fb92ce52041296af2d0c6722e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138859"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679485"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Benutzern ermöglichen, eine ER-Formatreferenz einzurichten, die ein Format aus dem globalen Repository abfragt
 
 [!include [banner](../includes/banner.md)]
 
-Sie können das [Elektronische Berichterstattung](general-electronic-reporting.md) (ER)-Framework zum Konfigurieren von [Formaten](general-electronic-reporting.md#FormatComponentOutbound) für ausgehende Dokumente gemäß den rechtlichen Anforderungen für verschiedene Länder/Regionen verwenden. Sie können das ER-Framework auch zum Konfigurieren von [Formaten](general-electronic-reporting.md#FormatComponentInbound) für die Analyse eingehender Dokumente verwenden und die Informationen aus diesen Dokumenten nutzen, um Anwendungsdaten anzuhängen oder zu aktualisieren. Jedes dieser Formate kann in Ihrer Dynamics 365 Finance-Instanz für die Bearbeitung eingehender oder ausgehender Geschäftsdokumente im Rahmen eines bestimmten Geschäftsprozesses verwendet werden. 
+Sie können das [Elektronische Berichterstattung](general-electronic-reporting.md) (ER)-Framework zum Konfigurieren von [Formaten](general-electronic-reporting.md#FormatComponentOutbound) für ausgehende Dokumente gemäß den rechtlichen Anforderungen für verschiedene Länder/Regionen verwenden. Sie können das ER-Framework auch zum Konfigurieren von [Formaten](general-electronic-reporting.md#FormatComponentInbound) für die Analyse eingehender Dokumente verwenden und die Informationen aus diesen Dokumenten nutzen, um Anwendungsdaten anzuhängen oder zu aktualisieren. Jedes dieser Formate kann in Ihrer Dynamics 365 Finance-Instanz für die Bearbeitung eingehender oder ausgehender Geschäftsdokumente im Rahmen eines bestimmten Geschäftsprozesses verwendet werden.
 
 In der Regel müssen Sie angeben, welches ER-Format in einem bestimmten Geschäftsprozess verwendet werden muss. Wählen Sie dazu ein einzelnes ER-Format in einem Suchfeld aus, das als Teil von Geschäftsprozess-spezifischen Parametern konfiguriert ist. Diese Suchfelder werden normalerweise mithilfe der entsprechenden API des ER-Frameworks implementiert. Weitere Informationen finden Sie unter [ER-Framework-API – Code zum Anzeigen einer Formatzuordnungssuche](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
 Beispiel: Wenn Sie [Außenhandelsparameter](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters) konfigurieren, müssen Sie die Verweise auf einzelne Formate einrichten, die zum Generieren der Intrastat-Meldung und des Intrastat-Meldungskontrollberichts verwendet werden. Die folgenden Screenshots zeigen, wie das Suchfeld für die ER-Formate auf der Seite **Außenhandelsparameter** aussieht.
 
-Wenn die aktuelle Finance-Instanz keine auf den Intrastat-Geschäftsprozess bezogenen ER-Formate enthält, ist dieses Suchfeld leer.
+Wenn die aktuelle Finance-Instanz keine auf den Intrastat-Geschäftsprozess bezogenen EB-Formate enthält, ist dieses Suchfeld leer.
 
 [![Außenhandelsparameter-Seite](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
@@ -45,7 +44,7 @@ Wenn die aktuelle Finance-Instanz auf den Intrastat-Geschäftsprozess bezogenen 
 
 Diese Suche bietet nur die ER-Formate an, die bereits in die aktuelle Finance-Instanz importiert wurden. Zum [Importieren](./tasks/er-import-configuration-lifecycle-services.md) von ER-Lösungen in die aktuelle Finance-Instanz benötigen Sie Berechtigungen, um die entsprechende Funktion des ER-Frameworks auszuführen, die den [Lebenszyklus](general-electronic-reporting-manage-configuration-lifecycle.md) von ER-Lösungen unterstützt, die ER-Formate enthalten.
 
-Ab Finance-Version 10.0.9 (Release April 2020) wurde die Benutzeroberfläche der Suche im ER-Format, die mithilfe der ER-Framework-API implementiert wird, erweitert. Sie können weiterhin die vorhandenen ER-Formate auswählen, die auf dem Inforegister für **Formatkonfiguration auswählen** vorhanden sind. Darüber hinaus bietet die erweiterte Suche die neue Option, das globale Repository (GR) nach bestimmten ER-Formaten zu durchsuchen. Alle ER-Formate des GR werden auf dem Inforegister für **Aus globalem Repository importieren** angeboten.
+Ab Finance-Version 10.0.9 (Release April 2020) wurde die Benutzeroberfläche der Suche im ER-Format, die mithilfe der ER-Framework-API implementiert wird, erweitert. Sie können weiterhin die vorhandenen ER-Formate auswählen, die auf dem Inforegister für **Formatkonfiguration auswählen** vorhanden sind. Darüber hinaus bietet die erweiterte Suche die neue Option, das globale Repository (GR) nach bestimmten EB-Formaten zu durchsuchen. Alle ER-Formate des GR werden auf dem Inforegister für **Aus globalem Repository importieren** angeboten.
 
 [![Außenhandelsparameter-Seite](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
@@ -55,13 +54,13 @@ Wenn Sie ein ER-Format auf dem Inforegister für **Aus globalem Repository impor
 
 [![Außenhandelsparameter-Seite](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
-Wenn der Import erfolgreich abgeschlossen wurde, wird der Verweis auf das importierte ER-Format in diesem Suchfeld gespeichert. Beachten Sie, dass Sie beim erstmaligen Zugriff auf den GR dem angegebenen Link folgen müssen, um sich für den [Regulatory Configuration Service](https://aka.ms/rcs) (RCS) anzumelden, mit dem der Zugriff auf den GR-Speicher verwaltet wird.
+Wenn der Import erfolgreich abgeschlossen wurde, wird der Verweis auf das importierte ER-Format in diesem Suchfeld gespeichert. Beim erstmaligen Zugriff auf das GR müssen Sie dem angegebenen Link folgen, um sich für den [Regulatory Configuration Service](https://aka.ms/rcs) (RCS) anzumelden, mit dem der Zugriff auf den GR-Speicher verwaltet wird.
 
 [![Außenhandelsparameter-Seite](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Standardmäßig zeigt das Inforegister für **Aus globalem Repository importieren** die Liste der ER-Formate aus dem temporären Speicher an, die basierend auf dem GR-Inhalt zur Leistungsverbesserung automatisch erstellt wird. Dies passiert, wenn das Inforegister für **Aus globalem Repository importieren** zum ersten Mal geöffnet wird, was einige Sekunden dauern kann.
 
-Wenn Sie das erforderliche ER-Format auf dem Inforegister **Aus globalem Repository importieren** nicht sehen, aber sicher sind, dass es im GR gespeichert ist, wählen Sie die Option **Synchronisieren** aus. Dadurch wird der temporäre Speicher mit dem aktuellen Inhalt des GR synchronisiert.
+Wenn Sie das erforderliche ER-Format auf dem Inforegister **Aus globalem Repository importieren** nicht sehen, aber sicher sind, dass es im GR gespeichert ist, wählen Sie die Option **Synchronisieren** aus. Durch diese Option wird der temporäre Speicher mit dem aktuellen Inhalt des GR synchronisiert.
 
 ## <a name="feature-activation"></a>Funktionsaktivierung
 
@@ -73,7 +72,7 @@ Die Verfügbarkeit dieser Funktionalität wird von der Funktion für die **Erwei
 
 Das Recht **Verwalten von Konfigurations-Repositorys** (**ERMaintainSolutionRepositories**) steuert den Zugriff auf den GR für einen Benutzer, der die ER-Formatsuche mit aktiviertem Inforegister für **Aus globalem Repository importieren** öffnet. Um Benutzern den Zugriff auf den GR-Inhalt über die ER-Formatsuche zu ermöglichen, müssen Sie die Sicherheitseinstellungen ändern, indem Sie Benutzern das Recht **ERMaintainSolutionRepositories** gewähren, entweder direkt oder unter Verwendung bereits zugewiesener Rollen und Aufgaben.
 
-Der folgende Screenshot zeigt, wie dieses Recht Benutzern gewährt werden kann, die der **Buchhalter**-Rolle zugewiesen sind. Diese Rolle ermöglicht es Benutzern, Außenhandelsparameter zu konfigurieren und Verweise auf die ER-Formate in den Feldern **Dateiformatzuordnung** und **Berichtformatzuordnung** auf der Seite **Außenhandelsparameter** einzurichten.
+Der folgende Screenshot zeigt, wie dieses Recht Benutzern gewährt werden kann, die der **Buchhalter**-Rolle zugewiesen sind. Diese Rolle ermöglicht es Benutzern, Außenhandelsparameter zu konfigurieren und Verweise auf die EB-Formate in den Feldern **Dateiformatzuordnung** und **Berichtformatzuordnung** auf der Seite **Außenhandelsparameter** einzurichten.
 
 [![Sicherheitskonfiguration-Seite](./media/ER-ExtLookup-SecuritySetting.png)](./media/ER-ExtLookup-SecuritySetting.png)
 

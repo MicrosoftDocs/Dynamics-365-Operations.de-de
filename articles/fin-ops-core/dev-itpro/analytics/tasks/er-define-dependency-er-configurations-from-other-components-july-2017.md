@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e06fdda7d2d73c3fe4a4b9ee5bd44e6ef857b8d5
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 77783d629afc9abf30cdc48534fbb26eba5f8811
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142240"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681972"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Die Abhängigkeit der EB-Konfigurationen bei anderen Komponenten definieren
 
@@ -47,8 +46,8 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 5. Klicken Sie auf "Neu".
 6. Wählen Sie Produktvoraussetzungskomponente aus.
 7. Microsoft Dynamics 365 for Operations (1611) auswählen.
-8. Geben Sie im Feld Version Typ '(7.1.1541.3036,8)' ein.
-    * (7.1.1541.3036,8)  
+8. Geben Sie im Versionsfeld '[7.1.1541.3036,8)' ein.
+    * [7.1.1541.3036,8)  
     * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus der RCS-Repository Variantenversion heruntergeladen, wenn Version 1 der Beispieldatmodell- Konfiguration entweder bereits an der richtigen Stelle ist oder im Voraus heruntergeladen wurde. Wenn sie vorab heruntergeladen wird, muss sie in Finance and Operations Version 7.1.1541.3036 oder höher abgeschlossen werden, darf aber Hauptversion 8 nicht überschreiten.   
 9. Klicken Sie auf "Speichern".
 10. Schließen Sie die Seite.
@@ -60,8 +59,8 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 16. Klicken Sie auf "Neu".
 17. Wählen Sie Produktvoraussetzungskomponente aus.
 18. Wählen Sie Microsoft Dynamics AX 7.0 RTW aus.
-19. Geben Sie im Feld Version Typ '(7.0.1265.3015,7.1)' ein.
-    * (7.0.1265.3015,7.1)  
+19. Geben Sie im Versionsfeld '[7.0.1265.3015,7.1)' ein.
+    * [7.0.1265.3015,7.1)  
     * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus der RCS-Repository Variantenversion heruntergeladen, wenn Version 1 der Beispieldatmodell- Konfiguration entweder bereits an der richtigen Stelle ist oder im Voraus heruntergeladen wurde. Wenn sie im Voraus heruntergeladen wird, muss sie in Microsoft Dynamics 365 for Finance and Operations Enterprise Edition abgeschlossen werden, wobei die Version 7.0.1265.3015 oder höher sein muss, aber die Nebenversion 1 nicht überschreiten darf.   
 20. Klicken Sie auf "Speichern".
 21. Schließen Sie die Seite.

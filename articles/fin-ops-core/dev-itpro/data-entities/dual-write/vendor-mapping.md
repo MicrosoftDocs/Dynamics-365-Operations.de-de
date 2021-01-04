@@ -1,6 +1,6 @@
 ---
 title: Integrierte Masterdaten von Kreditoren
-description: In diesem Thema wird die Integration von Lieferantendaten zwischen Finance and Operations Apps und Common Data Service beschrieben.
+description: In diesem Thema wird die Integration von Lieferantendaten zwischen Finance and Operations Apps und Dataverse beschrieben.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 07/15/2019
@@ -18,16 +18,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5c4cc92fd7809f4016d8421c98f41a85fcfedc7b
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 636bc57b5ef09d605744f4857fd5fbefceac4875
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997647"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685484"
 ---
 # <a name="integrated-vendor-master"></a>Integrierte Masterdaten von Kreditoren
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -37,7 +39,7 @@ In beiden Ansätzen werden die Lieferantendaten zwischen Dynamics 365 Supply Cha
 
 ## <a name="vendor-data-flow"></a>Kreditorendatenfluss
 
-Wenn Sie Daten nicht in der Entität **Konto/Kontakt** in Common Data Service speichern möchten, können Sie das neue Lieferantendesign verwenden.
+Wenn Sie Daten nicht in der Entität **Konto/Kontakt** in Dataverse speichern möchten, können Sie das neue Lieferantendesign verwenden.
 
 ![Kreditorendatenfluss](media/dual-write-vendor-data-flow.png)
 
@@ -50,12 +52,12 @@ Wenn Sie Daten weiterhin in der Entität **Konto/Kontakt** speichern möchten, k
 
 ## <a name="templates"></a>Vorlagen
 
-Kreditorendaten enthalten alle Informationen über den Kreditor, z. B. die Kreditorengruppe, Adressen, Kontaktinformationen, das Zahlungsprofil und das Rechnungsprofil. Eine Sammlung von Entitätszuordnungen arbeitet während der Interaktion der Kreditorendaten zusammen, wie in der folgenden Tabelle dargestellt.
+Kreditorendaten enthalten alle Informationen über den Kreditor, z. B. die Kreditorengruppe, Adressen, Kontaktinformationen, das Zahlungsprofil und das Rechnungsprofil. Eine Sammlung von Tabellenzuordnungen arbeitet während der Interaktion der Kreditorendaten zusammen, wie in der folgenden Tabelle dargestellt.
 
 Finance and Operations Apps | Sonstige Dynamics 365-Apps     | Beschreibung
 ----------------------------|-----------------------------|------------
 Kreditor V2                   | Konto                     | Unternehmen, die die Kontoentität verwenden, um Kreditorendaten speichern, können diese weiterhin auf die gleiche Weise verwenden. Sie können auch die explizite Lieferantenfunktion nutzen, die dank der Integration von Finance and Operations Apps zur Verfügung stehen.
-Kreditor V2                   | Msdyn\_vendors              | Unternehmen, die eine benutzerdefinierte Lösung für Lieferanten verwenden, können das vordefinierte Lieferantenkonzept nutzen, das in Common Data Service durch die Integration von Finance and Operations Apps eingeführt wird. 
+Kreditor V2                   | Msdyn\_vendors              | Unternehmen, die eine benutzerdefinierte Lösung für Lieferanten verwenden, können das vordefinierte Lieferantenkonzept nutzen, das in Dataverse durch die Integration von Finance and Operations Apps eingeführt wird. 
 Kreditorengruppen               | msdyn\_vendorgroups         | Diese Vorlage synchronisiert Lieferantengruppeninformationen.
 Kreditorzahlungsmethode       | msdyn\_vendorpaymentmethods | Diese Vorlage synchronisiert Informationen zu den Zahlungsmethoden für Lieferanten.
 CDS-Kontakte V2             | Kontakte                    | Die Vorlage [Kontakte](customer-mapping.md#cds-contacts-v2-to-contacts) synchronisiert alle primären, sekundären und tertiären Kontaktinformationen für Kunden und Lieferanten.

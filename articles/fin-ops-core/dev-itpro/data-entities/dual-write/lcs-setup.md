@@ -1,6 +1,6 @@
 ---
 title: Dual-Schreiben von Lifecycle Services einrichten
-description: In diesem Thema wird erläutert, wie Sie eine Dual-Schreib-Verbindung zwischen einer neuen Finance and Operations Umgebung und einer neuen Common Data Service Umgebung aus Microsoft Dynamics Lifecycle Services (LCS) einrichten.
+description: In diesem Thema wird erläutert, wie Sie eine Dual-Schreib-Verbindung zwischen einer neuen Finance and Operations Umgebung und einer neuen Dataverse Umgebung aus Microsoft Dynamics Lifecycle Services (LCS) einrichten.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/06/2020
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: f49eba1748861af6ee3353a6c58005ee84ccae23
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 25db9c58c3d09e44dcf11b48cae1a9eda4241c35
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3998107"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683523"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Dual-Schreiben von Lifecycle Services einrichten
 
@@ -31,52 +31,54 @@ ms.locfileid: "3998107"
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-In diesem Thema wird erläutert, wie Sie eine Dual-Schreib-Verbindung zwischen einer neuen Finance and Operations Umgebung und einer neuen Common Data Service Umgebung aus Microsoft Dynamics Lifecycle Services (LCS) einrichten.
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+In diesem Thema wird erläutert, wie Sie eine Dual-Schreib-Verbindung zwischen einer neuen Finance and Operations Umgebung und einer neuen Dataverse Umgebung aus Microsoft Dynamics Lifecycle Services (LCS) einrichten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Sie müssen ein Administrator sein, um eine Dual-Schreib-Verbindung einzurichten.
 
 + Sie müssen Zugriff auf den Mandant besitzen.
-+ Sie müssen in beiden Bereichen Administrator sein, in Finance and Operations Umgebungen und Common Data Service Umgebungen.
++ Sie müssen in beiden Bereichen Administrator sein, in Finance and Operations Umgebungen und Dataverse Umgebungen.
 
 ## <a name="set-up-a-dual-write-connection"></a>Richten Sie eine Dual-Schreib-Verbindung ein
 
 Folgen Sie diesen Schritten, um eine Dual-Schreib-Verbindung einzurichten.
 
 1. In LCS gehen Sie zu Ihrem Projekt.
-2. Wählen Sie **Konfigurieren** , um eine neue Umgebung bereitzustellen.
+2. Wählen Sie **Konfigurieren**, um eine neue Umgebung bereitzustellen.
 3. Wählen Sie die Version. 
 4. Wählen Sie die Topologie aus. Wenn nur eine Topologie verfügbar ist, wird diese automatisch ausgewählt.
 5. Führen Sie die ersten Schritte im Assistent **Bereitstellungseinstellungen** aus.
-6. Folgen Sie einem dieser Schritte auf der Registerkarte **Common Data Service** :
+6. Folgen Sie einem dieser Schritte auf der Registerkarte **Dataverse**:
 
-    - Wenn eine Common Data Service Umgebung bereits für Ihren Mandanten bereitgestellt ist, können sie sie auswählen.
+    - Wenn eine Dataverse Umgebung bereits für Ihren Mandanten bereitgestellt ist, können sie sie auswählen.
 
-        1. Legen Sie die Option **Common Data Service Konfigurieren** auf **Ja** fest.
+        1. Legen Sie die Option **Dataverse Konfigurieren** auf **Ja** fest.
         2. In dem Feld **Verfügbare Umgebungen** wählen Sie im Feld die Umgebung aus, die in Ihre Finance and Operations Daten integriert werden soll. Die Liste enthält alle Umgebungen, in denen Sie über Administratorrechte verfügen.
-        3. Wähle Sie das Kontrollkästchen **Zustimmen** , um anzuzeigen, dass Sie den Nutzungsbedingungen zustimmen.
+        3. Wähle Sie das Kontrollkästchen **Zustimmen**, um anzuzeigen, dass Sie den Nutzungsbedingungen zustimmen.
 
-        ![Common Data Service Registerkarte, wenn eine Common Data Service Umgebung bereits für Ihren Mandanten bereitgestellt ist](../dual-write/media/lcs_setup_1.png)
+        ![Dataverse Registerkarte, wenn eine Dataverse Umgebung bereits für Ihren Mandanten bereitgestellt ist](../dual-write/media/lcs_setup_1.png)
 
-    - Wenn Ihr Mandant noch keine Common Data Service Umgebung hat, wird eine neue Umgebung bereitgestellt.
+    - Wenn Ihr Mandant noch keine Dataverse Umgebung hat, wird eine neue Umgebung bereitgestellt.
 
-        1. Legen Sie die Option **Common Data Service Konfigurieren** auf **Ja** fest.
-        2. Einen Namen für die Common Data Service Umgebung eingeben.
+        1. Legen Sie die Option **Dataverse Konfigurieren** auf **Ja** fest.
+        2. Einen Namen für die Dataverse Umgebung eingeben.
         3. Wählen Sie die Region aus, in der die Umgebung bereitgestellt werden soll.
         4. Wählen Sie die Standardsprache und -währung für die Umgebung aus.
 
             > [!NOTE]
             > Sie können die Sprache und Währung später nicht mehr ändern.
 
-        5. Wähle Sie das Kontrollkästchen **Zustimmen** , um anzuzeigen, dass Sie den Nutzungsbedingungen zustimmen.
+        5. Wähle Sie das Kontrollkästchen **Zustimmen**, um anzuzeigen, dass Sie den Nutzungsbedingungen zustimmen.
 
-        ![Common Data Service Registerkarte, wenn Ihr Mandant noch keine Common Data Service Umgebung hat](../dual-write/media/lcs_setup_2.png)
+        ![Dataverse Registerkarte, wenn Ihr Mandant noch keine Dataverse Umgebung hat](../dual-write/media/lcs_setup_2.png)
 
 7. Führen Sie die verbleibenden Schritte im Assistent **Bereitstellungseinstellungen** aus.
-8. Nachdem die Umgebung den Status **Bereitgestellt** hat, öffnen Sie die Seite mit den Umgebungsdetails. Der Abschnitt **Common Data Service Umgebungsinformationen** zeigt die Namen der Finance and Operations Umgebung und die Common Data Service Umgebung, die verknüpft sind.
+8. Nachdem die Umgebung den Status **Bereitgestellt** hat, öffnen Sie die Seite mit den Umgebungsdetails. Der Abschnitt **Dataverse Umgebungsinformationen** zeigt die Namen der Finance and Operations Umgebung und die Dataverse Umgebung, die verknüpft sind.
 
-    ![Common Data Service Abschnitt mit Umgebungsinformationen](../dual-write/media/lcs_setup_3.png)
+    ![Dataverse Abschnitt mit Umgebungsinformationen](../dual-write/media/lcs_setup_3.png)
 
 9. Ein Administrator der Finance and Operations Umgebung muss sich bei LCS anmelden und **Verknüpfung zu CDS für Apps** auswählen, um den Link vervollständigen. Auf der Seite mit den Umgebungsdetails werden die Kontaktinformationen des Administrators angezeigt.
 
@@ -84,7 +86,7 @@ Folgen Sie diesen Schritten, um eine Dual-Schreib-Verbindung einzurichten.
 
 10. Zum Öffnen des **Datenintegration** Arbeitsbereichs in der Finance and Operations wählen Sie die Umgebung aus und steuern Sie die verfügbaren Vorlagen und wählen Sie **Link zu CDS für Apps**.
 
-    ![Link zur Schaltfläche CDS für Apps im Abschnitt Common Data Service Umgebungsinformationen](../dual-write/media/lcs_setup_4.png)
+    ![Link zur Schaltfläche CDS für Apps im Abschnitt Dataverse Umgebungsinformationen](../dual-write/media/lcs_setup_4.png)
 
 > [!NOTE]
 > Sie können die Verknüpfung von Umgebungen mit LCS nicht aufheben. Um die Verknüpfung einer Umgebung aufzuheben, öffnen Sie den **Datenintegration** Arbeitsbereich in der Finance and Operations Umgebung und wählen Sie dann **Verknüpfung aufheben**.

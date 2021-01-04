@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4a4733dc4da7a8713ac7ddec5c96ae18c91edc18
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 58525da35eb9e9376cb5793ad6c6fa45b9de42e6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185289"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685810"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisieren von Berichtskomponenten im Berichtsdesigner
 
@@ -50,7 +49,7 @@ Sie können Berichtsdefinitionen gruppieren, um mehrere Berichte gleichzeitig zu
 ### <a name="create-a-report-group"></a>Erstellen einer Berichtsgruppe
 
 1. Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
-2. Klicken Sie im Menü **Datei** auf **Neu** &gt; **Berichtsgruppe**, um eine neue Berichtsgruppe im Viewer-Fenster öffnen. Klicken Sie alternativ auf die **Berichtsgruppe** -Schaltfläche ![Berichtsgruppe](media/report-group.gif "Berichtsgruppe") auf der Symbolleiste.
+2. Klicken Sie im Menü **Datei** auf **Neu** &gt; **Berichtsgruppe**, um eine neue Berichtsgruppe im Viewer-Fenster öffnen. Klicken Sie alternativ auf die Schaltläche **Berichtsgruppe** ![Berichtsgruppe](media/report-group.gif "Berichtsgruppe") auf der Symbolleiste.
 3. Klicken Sie auf die Registerkarte **Gruppen-Bericht**. Um die Informationen zu den einzelnen Berichtsdefinitionen für die Generierung dieses Berichts zu überschreiben, aktivieren Sie das Kontrollkästchen **Überschreiben von Unternehmen**, Details und Datumseinstellungen von einzelnen Berichtsdefinitionen. Die Felder Unternehmensname, Detailebene, vorläufige Einstellungen und Datumsinformationen werden automatisch ausgefüllt, aber Sie können Aktualisierungen vornehmen.
 4. Um mehrere Berichte zu generieren, die die Berichtswährung anzeigen, aktivieren Sie das Kontrollkästchen **Alle Berichtswährungen einschließen**. Es sind mehrere Ansichten verfügbar, wenn Sie den Bericht anzeigen und auf die Schaltfläche **Währung** im Web-Viewer klicken.
 5. Klicken Sie im Feld **Berichte in Gruppe** auf **Hinzufügen**, um die Berichte zu wählen, die in die Berichtsgruppe einbezogen werden sollen. Um mehrere Berichte im Dialogfeld **Hinzufügen** auszuwählen, halten Sie STRG-Taste gedrückt, während Sie Berichte auswählen. Wenn Sie die Berichtsauswahl abgeschlossen haben, klicken Sie auf **OK**.
@@ -61,15 +60,15 @@ Sie können Berichtsdefinitionen gruppieren, um mehrere Berichte gleichzeitig zu
 1. Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
 2. Doppelklicken Sie auf die zu ändernde Berichtsgruppe.
 3. Nehmen Sie auf der Registerkarte **Berichtsgruppe** die gewünschten Änderungen vor.
-4. Klicken Sie im Menü **Datei** auf **Speichern**, um die geänderte Berichtsgruppe zu speichern. Alternativ klicken Sie auf die **Speichern**-Schaltfläche ![Speichern](media/save.gif "Speichern") in der Symbolleiste.
+4. Klicken Sie im Menü **Datei** auf **Speichern**, um die geänderte Berichtsgruppe zu speichern. Alternativ klicken Sie auf die Schaltläche **Speichern** ![Speichern](media/save.gif "Speichern") in der Symbolleiste.
 
-> [Hinweis] Wenn Sie geplant haben, Berichte in Zeitabständen zu erstellen, können Sie diese Einstellungen überschreiben und einen Bericht sofort generieren.
+> [HINWEIS] Wenn Sie geplant haben, Berichte in Zeitabständen zu erstellen, können Sie diese Einstellungen überschreiben und einen Bericht sofort generieren.
 
 ### <a name="generate-a-report-group-report"></a>Generieren eines Berichtsgruppenberichts
 
 1. Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
 2. Öffnen Sie die zu generierende Berichtsgruppe.
-3. Klicken Sie auf die **Bericht generieren** -Schaltfläche ![Bericht generieren](media/generate-report.gif "Bericht generieren") zum Generieren von Berichten.
+3. Klicken Sie auf die Schaltläche **Bericht generieren** ![Bericht generieren](media/generate-report.gif "Bericht generieren"), um Berichte zu generieren.
 
 ### <a name="delete-a-report-group"></a>Löschen einer Berichtsgruppe
 

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8ff3b419caafec626497c65ea18ca24ca95cb5d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143052"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684426"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>EB-Modellzuordnung in getrennten EB-Konfigurationen verwalten
 
@@ -59,16 +58,16 @@ Da ER-Konfigurationen unter Unternehmen freigegeben werden, können Sie diese Au
 18. Klicken Sie auf "Abgeschlossen".
 19. Klicken Sie auf "OK".
 
-## <a name="add-a-new-er-model-mapping-configuration"></a>Neue ER-Daten-Modellkonfigurationszuordnung hinzufügen
+## <a name="add-a-new-er-model-mapping-configuration"></a>Neue EB-Modellzuordnungskonfiguration hinzufügen
 1. Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.
 2. Geben Sie im Feld "Neu" 'Modellzuordnung basierend auf Datenmodell-Beispielsdatenmodell ein.
 3. Geben Sie im Feld "Typ" Musterzuordnung ein.
     * Musterzuordnung  
 4. Klicken Sie auf Konfiguration erstellen.
 5. Erweitern des Abschnitts Voraussetzungen.
-    * Beachten Sie, dass die Implementierungs-Voraussetzungsgruppe automatisch hinzugefügt wurde. Diese Gruppe beinhaltet die erforderliche Komponente, die die Datenmodellkonfiguration bezieht und die Implementierungsmarkierung hat, die aktiviert ist. Diese Markierung gibt an, dass die Zuordnungskonfiguration als "Beispielzuordnungs" für die Implementierung des " Beispieldatmodell" Datenmodells gilt. Diese Komponente zwingt ER, die Beispielzuordnungs-Zuordnungskonfiguration von einem ER-Repository herunterzuladen, sobald die Beispieldatmodell-Modellkonfiguration heruntergeladen wird.   
+    * Die Implementierungs-Voraussetzungsgruppe wurde automatisch hinzugefügt. Diese Gruppe beinhaltet die erforderliche Komponente, die die Datenmodellkonfiguration bezieht und die Implementierungsmarkierung hat, die aktiviert ist. Diese Markierung gibt an, dass diese Modellzuordnungskonfiguration als „Beispielzuordnung“ zur Implementierung des „Beispieldatenmodells“ gilt. Diese Komponente zwingt die EB, die Modellzuordnungskonfiguration für die Beispielzuordnung von einem EB-Repository herunterzuladen, sobald die Modellkonfiguration für das Beispieldatenmodell heruntergeladen wird.   
 6. Klicken Sie auf Designer.
-    * Beachten Sie, dass die vorbildliche erstellte Zuordnungskonfiguration eine neue leere Zuordnung mit demselben Namen wie die erstellte Konfiguration enthält. Beachten Sie, dass, wenn eine ausgewählte Elternteilmodellkonfiguration vorbildliche Zuordnungen, enthält sie in eine Zuordnungskonfiguration des neuen Modells kopiert werden.   
+    * Die erstellte Modellzuordnungskonfiguration enthält eine neue leere Zuordnung mit demselben Namen wie die erstellte Konfiguration. Wenn eine ausgewählte übergeordnete Modellkonfiguration Modellzuordnungen enthält, werden diese in eine neue Modellzuordnungskonfiguration kopiert.   
 7. Klicken Sie auf Designer.
 8. Wählen Sie in der Struktur 'Dynamics 365 for Operations\Tabelle' aus.
 9. Klicken Sie auf "Stamm hinzufügen".
@@ -112,9 +111,9 @@ Da ER-Konfigurationen unter Unternehmen freigegeben werden, können Sie diese Au
 16. Klicken Sie auf "Ausführen".
     * Wählen Sie in der Version Inforegister ausführen.  
 17. Klicken Sie auf "OK".
-    * Wiederholen Sie die Ausgabe, die den Namen des Unternehmens enthält, in dem der Benutzer, der ausgeführt wird, diese Formatkonfiguration angemeldet ist. Beachten Sie, dass die vorbildliche erstellte Zuordnungskonfiguration von dieser Formatkonfiguration verwendet wird, da es nur eine verfügbare Variante gibt, die erforderliche vorbildliche Zuordnungen enthält.   
+    * Wiederholen Sie die Ausgabe, die den Namen des Unternehmens enthält, in dem der Benutzer, der ausgeführt wird, diese Formatkonfiguration angemeldet ist. Die erstellte Modellzuordnungskonfiguration wird von dieser Formatkonfiguration verwendet, da es nur eine verfügbare Konfiguration gibt, die erforderliche Modellzuordnungen enthält.   
 
-## <a name="add-alternative-er-model-mapping-configuration"></a>Fügen Sie alternaitve ER-Modellzuordnungskonfiguration hinzu
+## <a name="add-alternative-er-model-mapping-configuration"></a>Alternative EB-Modellzuordnungskonfiguration hinzufügen
 1. Wählen Sie in der Struktur 'Muster Datenmodell'.
 2. Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.
 3. Geben Sie im Feld "Neu" 'Modellzuordnung basierend auf Datenmodell-Beispielsdatenmodell ein.
@@ -150,15 +149,15 @@ Da ER-Konfigurationen unter Unternehmen freigegeben werden, können Sie diese Au
 28. Schließen Sie die Seite.
 29. Wählen Sie "Ja" im Feld "Testentwurf".
 
-## <a name="use-an-existing-er-model-mapping-configuration"></a>Verwenden Sie eine vorhandene ER-Modellzuordnungskonfiguration
+## <a name="use-an-existing-er-model-mapping-configuration"></a>Eine vorhandene EB-Modellzuordnungskonfiguration verwenden
 1. Wählen Sie in der Struktur 'Muster\Datenmodell'.
-2. Klicken Sie auf "Ausführen".
-    * Beachten Sie, dass die ausgewählte ER-Formatkonfiguration der Entwurfsversion nicht ausgeführt werden, weil es mehr als eine vorbildliche Zuordnungskonfiguration gibt, die für das definierten Datenmodell nicht verfügbar ist, das als Datenquelle des Ausführungsbeginns ER-Formats ausgewählt wurde.   
-    * Definieren Sie als Nächstes die Zuordnungskonfiguration des alternativen Modells da, die von der als vorbildliche Zuordnungen Datenquellen für die Ausführung von ER-Format verwendet werden.   
+2. Klicken Sie auf Ausführen.
+    * Die ausgewählte Entwurfsversion der EB-Formatkonfiguration kann nicht ausgeführt werden, weil es mehr als eine Modellzuordnungskonfiguration gibt, die für das nicht definierte Datenmodell verfügbar ist, das als Datenquelle für das ausgeführte EB-Format ausgewählt wurde.   
+    * Definieren Sie als Nächstes die alternative Modellzuordnungskonfiguration als diejenige Konfiguration, aus der Modellzuordnungen als Datenquellen für das ausgeführte EB-Format verwendet werden.   
 3. Wählen Sie in der Struktur Musterdatenmodell\Musterzuordnung (alternativ).
 4. Wählen Sie die Option „Ja” im Feld „Standard für Modellzuordnung” aus.
 5. Wählen Sie in der Struktur 'Muster\Datenmodell'.
-6. Klicken Sie auf "Ausführen".
+6. Klicken Sie auf Ausführen.
 7. Klicken Sie auf "OK".
-    * Beachten Sie, dass die Standardmodellzuordnungskonfiguration von dieser Formatkonfiguration für die Generierung elektronischer Dokumente verwendet wird (die erstellten Ausgaben enthält den Unternehmenscode).  
+    * Die Standardkonfiguration der Modellzuordnung wird von dieser Formatkonfiguration zur Generierung elektronischer Dokumente verwendet (die erstellte Ausgabe enthält den Buchungskreis).  
 

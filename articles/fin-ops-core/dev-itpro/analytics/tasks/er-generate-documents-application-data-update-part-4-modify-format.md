@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6132d48f276b27797e86fbcde11746b7e4da7d3b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142454"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684546"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Formate zum Generieren von Dokumenten verändern, die Anwendungsdaten haben
 
@@ -80,8 +79,8 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
 38. Klicken Sie auf "OK".
 39. Wählen Sie in der Struktur Erklärung\Daten\Elemente'.
 40. Klicken Sie auf Artikel hinzufügen.
-41. Geben Sie im Feld Typ Waren Rec ID ein.
-    * Warendatensatz-ID  
+41. Geben Sie in das Feld „Name“ den Text „Waren Rec ID“ ein.
+    * Waren Rec ID  
 42. Wählen Sie im Feld Datentyp Int64 aus.
 43. Klicken Sie auf "OK".
 44. Klicken Sie auf die Registerkarte Zuordnung.
@@ -89,22 +88,23 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
 46. Klicken Sie auf Binden.
 47. Erweitern Sie in der -Struktur den Knoten 'Modell'.
 48. Erweitern Sie in der Struktur 'Modell\Transaktionen.
-49. Wählen Sie in der Strukturdarstellung Daten\Erklärung\Daten\Element = \ModelltransaktionenCommodity rec id.
-50. Wählen Sie in der Strukturdarstellung Modell\Transaktionen\Commodity rec id.
+49. Wählen Sie in der Struktur „Datei\Erklärung\Daten\Element = model.Transactions\Waren Rec ID“ aus.
+50. Wählen Sie in der Struktur „Modell\Transaktionen\Waren Rec ID“ aus.
 51. Klicken Sie auf Binden.
-52. Klicken Sie auf "Speichern".
+52. Klicken Sie auf Speichern.
 
 ## <a name="modify-format-to-memorize-details-of-reporting"></a>Ändern Sie das Format, um Details zur Berichterstellung zu speichern
+
 1. Klicken Sie auf „Format zu Modell zuordnen”.
 2. Klicken Sie auf Neu.
 3. Wählen Sie im Definitionsfeld den Wert Für Anwendungsdatenaktualisierung Wurzelelement aus oder geben Sie diesen ein.
-    * Aktualisierung der Anwendungsdaten  
+    * Aktualisierung der Anwendungsdaten
 4. Geben Sie im Feld Typ Zuordnung zu Aktualisierungstaten.
     * Zuordnung, um die Daten zu aktualisieren  
 5. Klicken Sie auf "Speichern".
-    * Diese Zuordnung definiert, wie die Details des Intrastat-Berichts gesammelt und im Datenmodell erfasst werden, deren Struktur beim ausgewählten Stammartikel „Für Anwendungsdatenaktualisierungen“ angegeben wird. Diese Details, die Modellzuordnung mit demselben Stammartikel „Für Anwendungsdatenaktualisierungen“ und die Richtung „Zum Ziel“ werden für die Datenaktualisierung verwendet. Die Anwendungsdatenaktualiserung beginnt direkt nachdem der ausgehenden Intrastat-Bericht generiert wurde. Beachten Sie, dass die Anwendungsdatenenaktualisierung zur Laufzeit übersprungen werden kann, aber dass das Datenmodell leer sein muss (mit leeren Datensatzbeleglist).   
+    * Diese Zuordnung definiert, wie die Details des Intrastat-Berichts gesammelt und im Datenmodell erfasst werden, deren Struktur beim ausgewählten Stammartikel „Für Anwendungsdatenaktualisierungen“ angegeben wird. Diese Details, die Modellzuordnung mit demselben Stammartikel „Für Anwendungsdatenaktualisierungen“ und die Richtung „Zum Ziel“ werden für die Datenaktualisierung verwendet. Die Anwendungsdatenaktualiserung beginnt direkt nachdem der ausgehenden Intrastat-Bericht generiert wurde. Die Anwendungsdatenenaktualisierung kann zur Laufzeit übersprungen werden, aber das Datenmodell muss leer sein (leere Datensatzliste).
 6. Klicken Sie auf Designer.
-    * Beachten Sie, dass das ausgehende Intrastat-Berichts-Format standardmäßig als Datenquelle für diese Modellzuordnung hinzugefügt wird.  
+    * Das ausgehende Intrastat-Berichtsformat wird standardmäßig als Datenquelle für diese Modellzuordnung hinzugefügt.  
     * Binden Sie die Elemente des Berichts (stellt Datenquelle dar) an die Elemente des Datenmodells, das auf Basis des ausgewählten Stammartikel des Modells gefiltert wird.  
 7. Wählen Sie in der Struktur Archivkopfzeile erweitern.
 8. Wählen Sie in der Struktur Archivkopfzeile\Archivzeilen erweitern.
@@ -120,8 +120,8 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
 18. Klicken Sie auf Funktion hinzufügen.
 19. Erweitern Sie in der Struktur Format.
 20. In der Struktur erweitern Sie Format\Erklärung: XML Element (Erklärung).
-21. Wählen Sie in der Strukturdarstellung Format\Erklärung: XML-Element (Erklärung)\Daten: XML Element 1..*(Daten).
-22. Wählen Sie in der Strukturdarstellung Format\Erklärung: XML-Element (Erklärung)\Daten: XML Element 1..*(Daten)\Element: XML Element 0..* (Element).
+21. Erweitern Sie in der Struktur `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)`.
+22. Wählen Sie in der Struktur `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)` aus.
 23. Klicken Sie auf Datenquelle hinzufügen.
 24. Auf Formelfeld bestimmt geben Sie " ANZAHL (format.Declaration.Data.Item)" ein.
     * ANZAHL (format.Declaration.Data.Item)  
@@ -130,23 +130,22 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
 27. Wählen Sie in der Struktur Archivkopfzeile\Dateiname aus.
 28. Wählen Sie in der Strukturdarstellung Format\Erklärung: XML-Element (Erklärung)\Daten: XML Element 1..*(Daten)\Dateiname: Element:Zeichenfolge(Dateiname).
 29. Klicken Sie auf Binden.
-30. Wählen Sie in der Strukturdarstellung Format\Erklärung: XML-Element (Erklärung)\Daten: XML Element 1..*(Daten)\Artikel: XML. Element 0.. * (Artikel)\Dim4: XML Element 1..1 (Element)\Anzahl: Zeichenfolge(Anzahl).
+30. Wählen Sie in der Struktur `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)` aus.
 31. Wählen Sie in der Struktur Archivkopfzeile\Archivzeilen\Elementzahl aus.
 32. Klicken Sie auf Binden.
-33. Wählen Sie in der Strukturdarstellung Format\Erklärung: XML-Element (Erklärung)\Daten:\XML Element 1..*(Daten)\Artikel: XML. Element 0..* (Artikel)\Dim3: XML Element 1..1 (Betrag)\Wert: Numerisch (Wert).
+33. Wählen Sie in der Struktur `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)` aus.
 34. Wählen Sie in der Struktur Archivkopfzeile\Archivzeilen\Betrag aus.
 35. Klicken Sie auf Binden.
-36. Wählen Sie in der Strukturdarstellung Format\Erklärung: XML Element (Erklärung)\Daten: XML-Element 1..* (Daten)\Element: XML Element 0...* (Artikel)\Waren Rec. ID. Element Int64(Waren rec-ID).
-37. Wählen Sie in der Struktur Archivkopfzeile\Archivzeilen\Waren rec id aus.
+36. Wählen Sie in der Struktur `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec ID: Item Int64(Commodity rec ID)` aus.
+37. Wählen Sie in der Struktur „Archivkopfzeile\Archivzeilen\Waren Rec ID“ aus.
 38. Klicken Sie auf Binden.
 39. Wählen Sie in der Struktur Archivkopfzeile\Archivzeilen aus.
-40. Wählen Sie in der Strukturdarstellung Format\Erklärung: XML-Element (Erklärung)\Daten: XML Element 1..*(Daten)\Element: XML Element 0..* (Element).
+40. Wählen Sie in der Struktur `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)` aus.
 41. Klicken Sie auf Binden.
 42. Wählen Sie in der Struktur Archivkopfzeile.
-43. Wählen Sie in der Strukturdarstellung formatErklärung: XML-Element (Erklärung)\Daten: XML Element 1..*(Daten).
+43. Wählen Sie in der Struktur `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)` aus.
 44. Klicken Sie auf Binden.
-45. Klicken Sie auf "Speichern".
+45. Klicken Sie auf Speichern.
 46. Schließen Sie die Seite.
 47. Schließen Sie die Seite.
 48. Schließen Sie die Seite.
-

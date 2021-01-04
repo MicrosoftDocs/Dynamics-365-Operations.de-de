@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 27621
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2e399290153c2c63ac1c02f0f9cdb956ff5031e5
-ms.sourcegitcommit: 5de75c61c33e57c813944f1ab6100aceb020d432
+ms.openlocfilehash: 136a81e661590d7af879e816c1142de85fb72e06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3321665"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681399"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sicherungsspeicher von ER-Vorlagen
 
@@ -59,7 +58,7 @@ Wenn für die Erstellung ausgehender Dokumente die Vorlage eines ER-Formats erfo
     - Wenn dieser Parameter auf **Aus** festgelegt ist, empfiehlt die Meldung, die Stapelverarbeitung zu starten, damit ähnliche Probleme für andere ER-Formatkonfigurationsvorlagen automatisch behoben werden. Die Meldung enthält einen Link, über den Sie die Stapelverarbeitung starten können.
     - Wenn dieser Parameter auf **Aktiviert** festgelegt ist, erhalten Sie eine Benachrichtigung, dass das Problem einer fehlenden Vorlage erkannt wurde und der neue Stapelverarbeitungsprozess **Fehlerhafte Vorlagen aus interner Datenbanksicherung wiederherstellen** automatisch geplant wurde. Dieser Stapelverarbeitungsvorgang behebt automatisch ähnliche Probleme für andere Vorlagen.
 
-Um den Parameter **Prozedur zur Wiederherstellung der fehlerhaften Vorlagen automatisch im Stapelverarbeitungsmodus ausführen** einzurichten, führen Sie die folgenden Schritte aus.
+Um den Parameter **Prozedur zur Wiederherstellung der fehlerhaften Vorlagen automatisch im Stapelverarbeitungsmodus ausführen** einzurichten, führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie in Finance and Operations, die **Organisationsverwaltung \> Elektronische Berichterstellung \> Konfigurationenseite**.
 2. Auf der Seite **Konfigurationen** im Aktivitätsbereich, auf der Registerkarte **Konfigurationen** in der Gruppe **Erweiterte Einstellungen** wählen Sie **Benutzerparameter** aus.

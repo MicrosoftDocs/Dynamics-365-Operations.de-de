@@ -10,23 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1d14003ff7595ceaa78b42f69cf1927fbd8157d
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040121"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679955"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>In früheren Versionen entfernte oder veraltete Funktionen
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
 > Dieses Thema wird nicht mehr aktualisiert. Um eine aktuelle Liste von Funktionen zu sehen, die aus Finance and Operations Anwendungen entfernt oder veraltet sind, suchen Sie nach **„Entfernte oder veraltete Funktionen“** Inhalt, der sich auf die von Ihnen verwendete Anwendung bezieht.
@@ -79,7 +80,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Wir deaktivieren die Methode **setUtcString()** , da eine bessere Ersatzmethode verfügbar ist. |
+| **Grund für veralteten Zustand/Entfernung** | Wir deaktivieren die Methode **setUtcString()**, da eine bessere Ersatzmethode verfügbar ist. |
 | **Ersetzt durch eine andere Funktion?**   | Ja |
 | **Betroffene Produktbereiche**         | Plattform |
 | **Bereitstellungsoption**              | Alle |
@@ -185,7 +186,7 @@ Unterstützung für das Erstellen von projektbasierten Aufträgen, bei denen der
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Diese Funktionalität wird immer aktiviert sein, nachdem der Parameter entfernt wurde. |
 | **Ersetzt durch eine andere Funktion?**   | Nr. Die Funktionalität, um projektbasierte Aufträge mit mehreren Finanzierungsquellen zu unterstützen, wird immer aktiviert sein.   |
-| **Betroffene Produktbereiche**         |Der Parameter **Aufträge für Projekte mit mehreren Finanzierungsquellen zulassen** wird entfernt. Die folgenden Methoden werden geändert, wenn der Parameter entfernt wird: Methode **ctrlSalesOrderTable** in Klasse **ProjStatusType** , Methode **validate** für Feld **ProjId** und Methode **run** im Formular **SalescreateOrder**. Folgende Methoden sind veraltet, wenn der Parameter entfernt wird: **IsSalesOrderAllowedForMultipleFundingSources** in der Tabellendatei **ProjTable** , Methode **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** in der Tabellendatei **ProjTable** , Datenfeld **AllowSalesOrdersForMultipleFundingSources** im Formular **ProjParameters** und Dateien **ProjParameterEntity** , private Methode **IsAssociatedToMultipleFundingSourcesContract** in Tabellendatei **ProjTable**. |
+| **Betroffene Produktbereiche**         |Der Parameter **Aufträge für Projekte mit mehreren Finanzierungsquellen zulassen** wird entfernt. Die folgenden Methoden werden geändert, wenn der Parameter entfernt wird: Methode **ctrlSalesOrderTable** in Klasse **ProjStatusType**, Methode **validate** für Feld **ProjId** und Methode **run** im Formular **SalescreateOrder**. Folgende Methoden sind veraltet, wenn der Parameter entfernt wird: **IsSalesOrderAllowedForMultipleFundingSources** in der Tabellendatei **ProjTable**, Methode **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** in der Tabellendatei **ProjTable**, Datenfeld **AllowSalesOrdersForMultipleFundingSources** im Formular **ProjParameters** und Dateien **ProjParameterEntity**, private Methode **IsAssociatedToMultipleFundingSourcesContract** in Tabellendatei **ProjTable**. |
 | **Bereitstellungsoption**              | Alle  |
 | **Status**                         | Veraltung ist für die Versionswelle von April 2020 geplant. |
 
@@ -374,12 +375,12 @@ Diese beiden Berichte werden in Finance and Operations nicht mehr unterstützt. 
 | **Status**                       | Veraltet: Die Menüoptionen für die beiden Berichte sind in Version 7.3 entfernt worden. Allerdings bleibt der Code für die Berichte im Produkt bestehen. Es ist geplant, den Code in einer zukünftigen Version zu entfernen. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-Inhaltspakete verfügbar für AppSource
-Die Inhaltspakete **Kostenverwaltung** , **Finanzleistung** und **Retail Channel Performance** , die auf der [Microsoft AppSource](https://appsource.microsoft.com)-Site verfügbar sind, sind infolge von Produktupdates in Microsoft Power BI veraltet. Systemadministrationsformen, die zur Bereitstellung dieser Inhaltspakete auf PowerBI.com verwendet werden, werden ebenfalls in Finance and Operations veraltet.
+Die Inhaltspakete **Kostenverwaltung**, **Finanzleistung** und **Retail Channel Performance**, die auf der [Microsoft AppSource](https://appsource.microsoft.com)-Site verfügbar sind, sind infolge von Produktupdates in Microsoft Power BI veraltet. Systemadministrationsformen, die zur Bereitstellung dieser Inhaltspakete auf PowerBI.com verwendet werden, werden ebenfalls in Finance and Operations veraltet.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Produktupdates in Microsoft Power BI. |
-| **Ersetzt durch eine andere Funktion?**   | Die Inhaltspakete **Kostenverwaltung** , **Finanzleistung** und **Retail Channel Performance** , die auf der [AppSource](https://appsource.microsoft.com)-Site zur Verfügung stehen, werden durch Analyseanwendungen ersetzt, die Lösungsintegrationen auf der Datenbankebene zulassen. Weitere Informationen zu Analyseanwendungen finden Sie unter [Eingebettetes Power BI in Arbeitsbereichen](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Ersetzt durch eine andere Funktion?**   | Die Inhaltspakete **Kostenverwaltung**, **Finanzleistung** und **Retail Channel Performance**, die auf der [AppSource](https://appsource.microsoft.com)-Site zur Verfügung stehen, werden durch Analyseanwendungen ersetzt, die Lösungsintegrationen auf der Datenbankebene zulassen. Weitere Informationen zu Analyseanwendungen finden Sie unter [Eingebettetes Power BI in Arbeitsbereichen](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Betroffene Produktbereiche**         | Kostenverwaltung, Finanzen und Einzelhandel                                                                                               |
 | **Bereitstellungsoption**              | Nur Cloud (Integration mit PowerBI.com wird in lokalen Bereitstellungen nicht unterstützt.)                                                                                                            |
 | **Status**                         | Veraltet: Zielzeitrahmen für die Funktionalitätsentfernung ist das zweite Quartal 2018.    |
@@ -712,7 +713,7 @@ Personalverwaltung-Lohndaten
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Diese Funktion wurde durch zentrale Lohn- und Personalverwaltungsseiten ersetzt.  |
-| **Ersetzt durch eine andere Funktion?**   | **Vergütungen** , **Einnahmen** und zugehörige Seiten, die zuvor in US-Lohn waren, sind umkonfiguriert worden und sind jetzt Teil der zentralen Personalverwaltungskonfiguration, um die externe Lohnverarbeitung besser zu unterstützen.. Diese Funktionen steht über den Konfigurationsschlüssel **Personalverwaltung 1** \> **Lohnabrechnung** bereit. |
+| **Ersetzt durch eine andere Funktion?**   | **Vergütungen**, **Einnahmen** und zugehörige Seiten, die zuvor in US-Lohn waren, sind umkonfiguriert worden und sind jetzt Teil der zentralen Personalverwaltungskonfiguration, um die externe Lohnverarbeitung besser zu unterstützen.. Diese Funktionen steht über den Konfigurationsschlüssel **Personalverwaltung 1** \> **Lohnabrechnung** bereit. |
 | **Betroffene Produktbereiche**         | Personalverwaltung, Lohnabrechnung   |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations Version 1611.    |
 
@@ -806,8 +807,8 @@ Zwei Formate für den Export von Zahlungen werden für Finnland verfügbar. LM02
 
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die Lösung Lagerortverwaltung II (WMS II), die im Modul **Lagerverwaltung** verfügbar war, dupliziert Funktionen im Modul **Lagerortverwaltung** , das in Dynamics AX 2012 R3 veröffentlicht wurde.                                                                         |
-| **Ersetzt durch eine andere Funktion?**   | Das Modul **Lagerortverwaltung** , das in AX 2012 R3, Dynamics AX 2012 R3 CU8 und Dynamics AX 2012 R3 CU9 veröffentlicht wurde, ersetzt die Funktionen der Lagerortverwaltung II. Das neue Modul hat fortschrittlichere Funktionen sowie flexiblere Lagerortverwaltungsprozesse als jene, die in den Funktionen der Lagerortverwaltung II angeboten werden. |
+| **Grund für veralteten Zustand/Entfernung** | Die Lösung Lagerortverwaltung II (WMS II), die im Modul **Lagerverwaltung** verfügbar war, dupliziert Funktionen im Modul **Lagerortverwaltung**, das in Dynamics AX 2012 R3 veröffentlicht wurde.                                                                         |
+| **Ersetzt durch eine andere Funktion?**   | Das Modul **Lagerortverwaltung**, das in AX 2012 R3, Dynamics AX 2012 R3 CU8 und Dynamics AX 2012 R3 CU9 veröffentlicht wurde, ersetzt die Funktionen der Lagerortverwaltung II. Das neue Modul hat fortschrittlichere Funktionen sowie flexiblere Lagerortverwaltungsprozesse als jene, die in den Funktionen der Lagerortverwaltung II angeboten werden. |
 | **Betroffene Produktbereiche**         | Bestandsverwaltung, Verkauf und Marketing, Beschaffung   |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations Version 1611.    |
 
@@ -869,7 +870,7 @@ Abrechnungsskripts wurden verwendet, um Abrechnungsraten für Abrechnungscodes z
 
 ### <a name="boms-without-bom-versions"></a>Stücklisten ohne Stücklistenversionen
 
-Wurde der **Stücklistenversionen** -Konfigurationsschlüssel deaktiviert, so wurden Stücklisteversionen in allen Formularen ausgeblendet, und das System erzwang eine 1:1-Beziehung zwischen freigegebenen Produkten und Stücklisten. Der **Stücklistenversionen** -Konfigurationsschlüssel kann in der aktuellen Version von Dynamics AX nicht deaktiviert werden.
+Wurde der **Stücklistenversionen**-Konfigurationsschlüssel deaktiviert, so wurden Stücklisteversionen in allen Formularen ausgeblendet, und das System erzwang eine 1:1-Beziehung zwischen freigegebenen Produkten und Stücklisten. Der **Stücklistenversionen**-Konfigurationsschlüssel kann in der aktuellen Version von Dynamics AX nicht deaktiviert werden.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1157,7 +1158,7 @@ Testtransaktionsgenerierung kann nicht mithilfe einer Charge verwendet werden. S
 
 ### <a name="gl-ssrs-reports"></a>GL SSRS Berichte
 
-Berichte mit den folgenden Menüoptionen wurden entfernt: **Zusammengefasste Zwischenbilanz** , **Ausführliche Zwischenbilanz** , **Kontenplan** , **Audit-Trail** , **Saldenliste** und **Summen- und Saldenliste**.
+Berichte mit den folgenden Menüoptionen wurden entfernt: **Zusammengefasste Zwischenbilanz**, **Ausführliche Zwischenbilanz**, **Kontenplan**, **Audit-Trail**, **Saldenliste** und **Summen- und Saldenliste**.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1359,7 +1360,7 @@ Die bereitgestellte Funktionen der Windows 8-Tablet-App für Speseneintrag und G
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Geringe Verwendung |
-| **Ersetzt durch eine andere Funktion?**   | Nein, aber die Seite **Profilbeziehung** , die von der Seite **Profilgruppen** geöffnet wird, unterstützt das gleiche Geschäftsszenario wie die veraltete Seite **Arbeitsplanung**. |
+| **Ersetzt durch eine andere Funktion?**   | Nein, aber die Seite **Profilbeziehung**, die von der Seite **Profilgruppen** geöffnet wird, unterstützt das gleiche Geschäftsszenario wie die veraltete Seite **Arbeitsplanung**. |
 | **Betroffene Produktbereiche**         | Zeit und Anwesenheit     |
 | **Status**                         | Der Code wurde nicht entfernt. Allerdings wurde das Formular „JmgWorkPlanner” nicht migriert.    |
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 791038981e88d0f52026bfb17d2d1fa381f28c46
-ms.sourcegitcommit: 41e165482b9bff4175c0e3b224dbeead13461956
+ms.openlocfilehash: 2333cfc21a16a5905acadd590982020fdf878330
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3688006"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682266"
 ---
 # <a name="listdistinct-er-function"></a>LISTDISTINCT EB-Funktion
 
@@ -71,7 +70,7 @@ Die Struktur der erstellten Liste entspricht der Struktur der angegebenen Liste.
 
 Der gleiche Auswahlwert kann für mehrere Datensätze in der angegebenen Liste berechnet werden. In diesem Fall entsprechen die Feldwerte des entsprechenden Datensatzes in der erstellten Liste den Werten des ersten Datensatzes aus der angegebenen Liste, für die der Auswahlwert berechnet wird.
 
-Die Ausführung dieser Funktion erfolgt auf jedem [Elektronische Berichterstattung (EB) ](general-electronic-reporting.md) Datenquelle des Typs *Datensatzliste*, der im Speicher vorhanden ist.
+Die Ausführung dieser Funktion erfolgt auf jedem [Elektronische Berichterstattung (EB)](general-electronic-reporting.md) Datenquelle des Typs *Datensatzliste*, der im Speicher vorhanden ist.
 
 Die Datenquelle **GROUPBY** kann auch verwendet werden, um die Liste der Datensätze zu generieren, für die der Selektor mit unterschiedlichen Werten berechnet wird. Aus Sicht der Leistung und des Speicherverbrauchs ist es jedoch besser, die Funktion `LISTDISTINCT` zu verwenden als die Datenquelle **GROUPBY**, da die Ausführung der Funktion im Speicher erfolgt.
 

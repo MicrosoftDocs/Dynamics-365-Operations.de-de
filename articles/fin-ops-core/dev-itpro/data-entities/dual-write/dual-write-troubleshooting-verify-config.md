@@ -1,6 +1,6 @@
 ---
-title: Überprüfen, ob duales Schreiben in Finance and Operations-Apps und Common Data Service konfiguriert ist
-description: In diesem Thema wird erläutert, wie Sie feststellen können, ob duales Schreiben in Finance and Operations Apps und in Common Data Service konfiguriert ist.
+title: Überprüfen, ob duales Schreiben in Finance and Operations-Apps und Dataverse konfiguriert ist
+description: In diesem Thema wird erläutert, wie Sie feststellen können, ob duales Schreiben in Finance and Operations Apps und in Dataverse konfiguriert ist.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,41 +18,43 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2ddac76871a3ac574a1edcb5446be6c64e5e4682
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: f389bcf133cc7e6a086167d5e26c1b8795d0fa30
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997229"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685538"
 ---
-# <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-common-data-service"></a>Überprüfen, ob duales Schreiben in Finance and Operations-Apps und Common Data Service konfiguriert ist
+# <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-dataverse"></a>Überprüfen, ob duales Schreiben in Finance and Operations-Apps und Dataverse konfiguriert ist
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Common Data Service. In diesem Thema wird speziell erläutert, wie Sie feststellen können, ob Dual-Write in Finance and Operations Apps und in Common Data Service konfiguriert ist.
+
+Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Dataverse. In diesem Thema wird speziell erläutert, wie Sie feststellen können, ob Dual-Write in Finance and Operations Apps und in Dataverse konfiguriert ist.
 
 ## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Überprüfen, ob duales Schreiben in Finance and Operations Apps konfiguriert ist
 
-Um festzustellen, ob die Fehler, die beim Speichern von Datensätzen für die Aktualisierung angezeigt werden, auf Dual-Write zurückzuführen sind, überprüfen Sie zunächst, ob Dual-Write konfiguriert ist.
+Um festzustellen, ob die Fehler, die beim Speichern von Zeilen für die Aktualisierung angezeigt werden, auf Dual-Write zurückzuführen sind, überprüfen Sie zunächst, ob Dual-Write konfiguriert ist.
 
-+ Wenn Sie Administratorrechte in der Finance and Operations App haben, gehen Sie zu **Arbeitsbereiche \> Datenmanagement** und wählen Sie die Kachel **Duales Schreiben**. Wenn die Details der verknüpften Umgebungen und die Liste der ausgeführten Entitätszuordnungen angezeigt werden, ist Dual-Write konfiguriert.
++ Wenn Sie Administratorrechte in der Finance and Operations App haben, gehen Sie zu **Arbeitsbereiche \> Datenmanagement** und wählen Sie die Kachel **Duales Schreiben**. Wenn die Details der verknüpften Umgebungen und die Liste der ausgeführten Tabellenzuordnungen angezeigt werden, ist Dual-Write konfiguriert.
 
     ![Überprüfen der Finance and Operations App-Verbindung, wenn Sie über Administratorrechte verfügen](media/verify_fin_ops_1.png)
 
-+ Wenn Sie keine Administratorrechte haben, erhalten Sie eine Fehlermeldung: *Daten können nicht in die Entität geschrieben werden \<entity name\>*. Im Beispiel in der folgenden Abbildung können Sie keinen Kundendatensatz in der Finance and Operations App erstellen, da Dual-Write konfiguriert ist, die Referenzdaten für Kundengruppe und Zahlungsbedingungen jedoch nicht vorhanden sind in Common Data Service.
++ Wenn Sie keine Administratorrechte haben, erhalten Sie eine Fehlermeldung: *Daten können nicht in die Entität geschrieben werden \<entity name\>*. Im Beispiel in der folgenden Abbildung können Sie keine Kundenzeile in der Finance and Operations-App erstellen, da Dual-Write konfiguriert ist, die Referenzdaten für die Kundengruppe und die Zahlungsbedingungen in Dataverse jedoch nicht vorhanden sind.
 
     ![Überprüfen der Finance and Operations App-Verbindung, wenn Sie über keine Administratorrechte verfügen](media/verify_fin_ops_2.png)
 
 Informationen zum Beheben von Problemen beim Erstellen von Daten in Finance and Operations Apps, siehe [Beheben Sie Probleme mit der Live-Synchronisierung](dual-write-troubleshooting-live-sync.md).
 
-## <a name="verify-that-dual-write-is-configured-in-common-data-service"></a>Überprüfen, ob duales Schreiben in Common Data Service Apps konfiguriert ist
+## <a name="verify-that-dual-write-is-configured-in-dataverse"></a>Überprüfen, ob duales Schreiben in Dataverse Apps konfiguriert ist
 
-Wenn Sie Daten erstellen, sehen Sie das Feld **Unternehmen** auf Seiten in Common Data Service. Dual-Write ist konfiguriert.
+Wenn Sie Daten erstellen, sehen Sie das Feld **Unternehmen** auf Seiten in Dataverse. Dual-Write ist konfiguriert.
 
-![Überprüfen der Common Data Service Verbindung](media/verify_cds.png)
+![Überprüfen der Dataverse Verbindung](media/verify_cds.png)
 
-Informationen zum Beheben von Problemen beim Erstellen von Daten in Common Data Service Apps, siehe [Beheben Sie Probleme mit der Live-Synchronisierung](dual-write-troubleshooting-live-sync.md).
+Informationen zum Beheben von Problemen beim Erstellen von Daten in Dataverse Apps, siehe [Beheben Sie Probleme mit der Live-Synchronisierung](dual-write-troubleshooting-live-sync.md).
 
-Informationen zum Anzeigen von Fehlerdetails, wenn beim Erstellen von Daten Fehler auftreten Common Data Service, gehen Sie zu [Aktivieren und Anzeigen der Plug-In-Ablaufverfolgungsanmeldung Common Data Service, um Fehlerdetails anzuzeigen](dual-write-troubleshooting.md#enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details).
+Informationen zum Anzeigen von Fehlerdetails, wenn beim Erstellen von Daten Fehler auftreten Dataverse, gehen Sie zu [Aktivieren und Anzeigen der Plug-In-Ablaufverfolgungsanmeldung Dataverse, um Fehlerdetails anzuzeigen](dual-write-troubleshooting.md#enable-view-trace).

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 596a067611ac4477f4469dbbc370c971e0f7a35d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 67f6d567c7e8d4cc6332c2d661abb04d1b28d2e9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181771"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682770"
 ---
 # <a name="financial-insights"></a>Finanzinformationen
 
@@ -81,14 +80,14 @@ Sie können definieren, dass eine sich wiederholende Charge regelmäßig die Dat
 ## <a name="security"></a>Sicherheit
 Aktuell können die Daten in eingebetteten Power BI-Berichten nicht auf juristische Personen beschränkt werden, auf die der Benutzer Zugriff hat. Daher werden die eingebetteten Power BI-Berichte durch Berechtigungen in den Sicherheitseinstellungen gesteuert. Die Berechtigungen, die definiert werden, lassen Zugriff auf Daten entweder für alle juristischen Personen oder nur das aktive Unternehmen zu. In der folgenden Tabelle werden die Berechtigungen angezeigt, die vorhanden sind und die Rollen, denen sie zugewiesen sind. Die Berechtigungen können von verschiedenen Rollen entfernt oder ihnen zugewiesen werden, basierend auf den Anforderungen Ihrer Organisation.
 
-| Berechtigungen                                    | Rollen | Beschreibung |
+| Abgabe                                    | Rollen | Beschreibung |
 |-----------------------------------------|-------|------------|
 | Arbeitsbereich der Übersicht (Leiter der Finanzabteilung) anzeigen             | Leiter Finanzabteilung | Diese Berechtigungen bieten Zugriff auf Arbeitsbereich CFO-Überblick. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können jedoch alle juristischen Personen hinzufügen, unabhängig davon, ob der Benutzer Zugriff auf die anderen juristischen Personen hat. |
 | Finanzeinblicke des derzeitigen Unternehmens anzeigen | <ul><li>Sachbearbeiter Buchhaltung</li><li>Leiter Buchhaltung</li><li>Supervisor Buchhaltung</li><li>Wirtschaftsprüfer</li><li>Budget-Manager</li><li>Leitender Geschäftsführer</li><li>Leiter Finanzabteilung</li><li>Financial Controller</li></ul> | Diese Berechtigungen bieten Zugriff auf Finanzinformationen. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können nicht andere juristische Personen hinzufügen. |
 | Finanzeinblicke unternehmensübergreifend anzeigen   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, sind diese Berechtigungen keiner Rolle zugewiesen. In der nächsten Version werden diese Berechtigungen der Rolle „Leiter Finanzabteilung” zugewiesen werden. | Diese Berechtigungen bieten Zugriff auf das Menüelement für den Arbeitsbereich CFO-Überblick. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können jedoch alle juristischen Personen hinzufügen, unabhängig davon, ob der Benutzer Zugriff auf die anderen juristischen Personen hat. |
 
 
-## <a name="financial-reporting-vs-finanical-insights"></a>Financial reporting vs. Finanical insights
+## <a name="financial-reporting-vs-financial-insights"></a>Financial Reporting vs. Finanical Insights
 Obwohl **Financial insights** Finanzaufstellungen enthält, ist es kein Ersatz für die Finanzberichterstattung in der Anwendung. Die Standardfinanzaufstellungen in **Financial insights** sind im Umfang begrenzt und umfassen nicht alle Typen von Finanzaufstellungen. Finanzberichterstattung ist immer noch das primäre Tool zum Entwerfen, Erstellen und Generieren von gesetzlich vorgeschriebenen Finanzaufstellungen.
 
 Das folgende Vergleichsdiagramm hilft, die zwei Optionen zu unterscheiden:
@@ -103,7 +102,7 @@ Das folgende Vergleichsdiagramm hilft, die zwei Optionen zu unterscheiden:
 | **Berichterstellungshierarchie unterstützen/Organisationshierarchie**   | Ja                                                               | Nr. |
 | **Bericht zu Daten von untergeordneten Sachkonten**                             | Ja, beschränkt auf nur einen Kreditor, Debitor                              | Ja, Kreditor, Debitor, Kreditoren-/Debitorengruppen, Kreditoren-/Debitorenadressen, usw. |
 | **Berichtswährung**                                   | Ja, Buchhaltungswährung und in Berichtswährung übersetzen       | Nein, nur Buchhaltungswährung |
-| **Sicherheit**                                             | Ja, erfüllt Financ-Berichterstellungsstruktur-Sicherheit | „Begrenzte Anzeige”-Berichte für alle Unternehmen (ungeachtet der Finance and Operations-Sicherheit) oder nur aktives Unternehmen |
+| **Sicherheit**                                             | Ja, erfüllt Financ-Berichterstellungsstruktur-Sicherheit | „Begrenzte Anzeige“-Berichte für alle Unternehmen (ungeachtet der Finance and Operations-Sicherheit) oder nur aktives Unternehmen |
 | **Unterschiedlichen Kontenplan und Geschäftsjahre unterstützen** | Ja                                                               | Nr. |
 | **Bericht zu externen Daten**                              | Nr.                                                                | Nr. |
 | **Konsolidierungen unterstützen**                               | Ja                                                               | Begrenzter Möglichkeitenbericht zu mehreren Unternehmen, aber nur Verwendung der Buchhaltungswährung |
@@ -131,9 +130,9 @@ Benutzer können den Bericht filtern, indem sie den Bereich **Filter** links ver
 - **Filter auf der visuellen Ebene** – Diese Filter werden nur auf das ausgewählte visuelle Element angewendet. Diese Filter werden zusätzlich zu den Filtern auf Seitenebene angewendet.
 - **Drillthroughfilter** – Durch diesen Filter wird aus einem visuellen „Quell”-Element gefiltert, das auf das aktuelle visuelle Element angewendet wird, wenn Sie ein Drillthrough vom visuellen Quellelement bis zum aktuellen visuellen Element durchführen.
 
-![Filter](./media/filter.png)
+![Filteroptionen](./media/filter.png)
 
-Um einen bestimmte Filterwert zu entfernen, wählen Sie das daneben angezeigte Radierersymbol aus. Entfernen Sie keinen Filter, indem Sie das X auswählen. Wenn Sie das X auswählen, wird das Feld, in dem Sie derzeit Filtern, als Filteroption entfernt. Wenn Sie aus Versehen ein Feld aus einem Filter entfernen, schließen Sie den Arbeitsbereich, und öffnen Sie ihn dann erneut. Die Standardfiltereinstellungen werden erneut angewendet.
+Um einen bestimmte Filterwert zu entfernen, wählen Sie das daneben angezeigte Radierersymbol aus. Entfernen Sie keinen Filter, indem Sie das X auswählen. Wenn Sie das X auswählen, wird das Feld, in dem Sie derzeit Filtern, als Filteroption entfernt. Wenn Sie aus Versehen ein Feld aus einem Filter entfernen, schließen Sie den Arbeitsbereich und öffnen Sie ihn dann erneut. Die Standardfiltereinstellungen werden erneut angewendet.
 
 Standardmäßig wenn Sie erstmals Arbeitsbereiche öffnen, wird die aktive juristische Person als der Filter auf Berichtsebene verwendet. Je nach ihrer Sicherheit können Benutzer in der Lage sein, andere juristische Personen hinzufügen oder die standardmäßige juristische Person ändern, zu die im Filter ausgewählt ist.
 
@@ -176,25 +175,25 @@ Verschiedene Ebenen von Drillvorgängen sind über Power BI verfügbar. Jede Ebe
 
 In der folgenden Abbildung ist die Aufstellung **Zwischenbilanz** auf die oberste Ebene der Zeilenhierarchie reduziert, nämlich dem Hauptkontotyp.
 
-![Zwischenbilanz](./media/trial-balance.png)
+![Aufstellung „Zwischenbilanz“](./media/trial-balance.png)
 
 Um die nächste Ebene der Hierarchie anzuzeigen, nämlich die Hauptkontokategorien, können Sie das Feld **Drillvorgang für** auf **Zeilen** festlegen und dann die Schaltfläche **Erweitern** auswählen (die dritte Schaltfläche nach dem Feld „Drillvorgang für”). Jetzt sehen Sie alle Hauptkontokategorien erweitert. Aktuell können Sie mit Power BI nicht ausschließlich eine Zeile oder Spalte erweitern, aber immer noch alle anderen Zeilen oder Spalten sehen.
 
-![Zwischenbilanz](./media/trial-balance2.png)
+![Drilldown der Zwischenbilanz für Reihen ausführen](./media/trial-balance2.png)
 
 Um die Hauptkonten für alle Zeilen zu erweitern, können Sie erneut die Schaltfläche **Erweitern** verwenden. Um allerdings einen Drilldown zu den Hauptkonten für nur eine Zeile durchzuführen, wählen Sie zuerst die Schaltfläche **Detailinformationen anzeigen** aus (der einzelne nach unten gerichtete Pfeil auf der rechten Seite des Fensters), und wählen Sie dann die Zeile aus, zu der der Drilldown ausgeführt werden soll. Die folgende Abbildung zeigt die Ergebnisse, wenn die Zeile **Verkäufe** ausgewählt ist, nachdem die Schaltfläche **Detailinformationen anzeigen** ausgewählt ist.
 
-![Zwischenbilanz](./media/trial-balance3.png)
+![Schaltfläche zum Erweitern der Zwischenbilanz](./media/trial-balance3.png)
 
 Nachdem Sie ein Drilldown auf eine einzelne Zeile ausführen, werden mehrere Klicks benötigt, um zur vollständigen Zwischenbilanz zurückzukehren. Die Schaltfläche **Drillup** (die erste Schaltfläche nach dem Feld **Drillvorgang für**) führt nur einen Drillup im Kontext der Kategorie **Verkäufe** durch, wie in der folgenden Abbildung gezeigt.
 
-![Zwischenbilanz](./media/trial-balance4.png)
+![Schaltfläche zum Drillup für Zwischenbilanz](./media/trial-balance4.png)
 
 Sie können weiterhin die Schaltfläche **Drillup** verwenden, um zur obersten Zusammenfassungsebene für die Zeilen zurückzukehren.
 
 Power BI hat auch eine Schaltfläche, mit der Sie zur nächsten Ebene in der Hierarchie wechseln können (die zweite Schaltfläche nach dem Feld **Drillvorgang für**). Die Auswirkung dieser Schaltfläche unterscheidet sich von der Auswirkung der Schaltfläche **Erweitern** (die dritte Schaltfläche nach dem Feld **Drillvorgang für**), die verwendet wird, um die Hierarchie zu erweitern. Wenn Sie die Hierarchie erweitern wird die Hierarchie im Bericht verwaltet. Wie beispielsweise zuvor gezeigt wurde, wenn Sie den Hauptkontotyp erweitern, sehen Sie immer noch den Hauptkontotyp im Bericht. Wenn Sie jedoch zur nächsten Ebene in der Hierarchie wechseln, zeigt der Bericht nicht mehr das übergeordnete Element in der Hierarchie an, wie in der folgenden Abbildung dargestellt.
 
-![Zwischenbilanz](./media/trial-balance5.png)
+![Schaltfläche für Drillvorgang zurück für Zwischenbilanz](./media/trial-balance5.png)
 
 Um die Transaktionsdetails hinter den zusammengefassten Salden anzuzeigen, können Sie einige Beträge auswählen, um einen Drillvorgang zu Financial and Operations auszuführen.
 
@@ -245,6 +244,6 @@ Power BI bietet keine Option, leere Zeilen auszublenden und anzuzeigen. Wenn ein
 
 Die Informationen in den folgenden Ressourcen sind nicht erforderlich, um die eingebetteten Berichte für den Arbeitsbereich **CFO-Überblick** oder **Finanzinformationen** in einer Produktionsumgebung zu aktivieren. Stattdessen sind sie für Entwicklerfelder hilfreich und wenn Sie Ihre eigenen Power BI-Berichte einbetten möchten.
 
-- <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
+- [Zugriff auf analytische Arbeitsbereiche und Berichte in einer Umgebungen mit einem Feld](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
-- <https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
+- [Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)

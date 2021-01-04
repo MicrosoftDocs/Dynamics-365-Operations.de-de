@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
-ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
+ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564166"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682672"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Berichtsstruktur-Definitionen in Finanzberichten
 
@@ -76,7 +75,7 @@ Um eine Berichtstruktur-Definition zu erstellen, führen Sie die folgenden Schri
     | Einschließen/Zeichenposition       | Dieser Abschnitt listet die Dimensionen auf, die in den Finanzdaten definiert werden und gibt die Anzahl der Zeichen im längsten Wert an, der für jede Dimension definiert wurde. Wählen Sie ein Kontrollkästchen für eine Dimension aus, um diese Dimension in die Berichtstruktur-Hierarchie einzuschließen. |
     | Segmenthierarchie und -bereiche     | Dieser Abschnitt zeigt die Dimensionshierarchie. Sie können die Dimensionen in der Liste verschieben, um die Reihenfolge ihre Berichterstellung zu ändern. In den Feldern **Ausgangsdimension** und **Zieldimension** können Sie den Wertebereich jeder Dimension angeben. Wenn Sie keinen Bereich angeben, werden alle Dimensionswerte in die Berichtsstruktur eingefügt.<blockquote>[!NOTE] Falls Sie mehr als eine Dimension verwenden, werden nur Dimensionskombinationen, in denen Buchungen vorgenommen wurden, in den Ergebnissen zurückgegeben.</blockquote> |
 
-    Einen Screenshot, der ein Beispiel für das Dialogfenster **Berichtseinheiten aus Dimensionen einfügen** zeigt, finden Sie im Abschnitt "Beispiel für das Dialogfenster 'Berichtseinheiten aus Dimensionen einfügen'" weiter unten in diesem Artikel.
+    Einen Screenshot, der ein Beispiel für das Dialogfenster **Berichtseinheiten aus Dimensionen einfügen** zeigt, finden Sie im Abschnitt „Beispiel für das Dialogfenster „Berichtseinheiten aus Dimensionen einfügen““ weiter unten in diesem Artikel.
 
 5. Um zusätzliche Segmente zu erstellen (z. B. durch das Teilen eines Segments in zwei kürzere Segmente), klicken Sie auf die richtige Position in einem **Zeichenposition**-Feld, und klicken Sie auf **Segmente teilen**.
 6. Um zwei Segmente in einem Segment zusammenführen, klicken Sie in jedes der Segmentfelder, die zusammengeführt werden sollen, und klicken Sie anschließend auf **Segmente kombinieren**.
@@ -86,7 +85,7 @@ Um eine Berichtstruktur-Definition zu erstellen, führen Sie die folgenden Schri
     1. Geben Sie im Feld **Ausgangsdimension** für diese Dimension den ersten Wert des Bereichs ein.
     2. Geben Sie im Feld **Zieldimension** für diese Dimension den letzten Wert des Bereichs ein.
 
-9. Wiederholen Sie Schritt sieben und acht für jede Dimension im Bereich **Segmenthierarchie und -bereiche**.
+9. Wiederholen Sie die Schritte 7 und 8 für jede Dimension im Bereich **Segmenthierarchie und -bereiche**.
 10. Nachdem Sie definiert haben, wie Ihre Berichtseinheiten in die neue Berichtstruktur integriert werden, klicken Sie auf **OK**.
 11. Klicken Sie auf **Datei** &gt; **Speichern**, um die Berichtstruktur zu speichern. Geben Sie im Formular einen eindeutigen Namen und eine Beschreibung für die Berichterstattungsstruktur ein, und klicken Sie dann auf **OK**.
 
@@ -106,7 +105,7 @@ Unter Verwendung einer Berichtstruktur können Sie Beträge aus untergeordneten 
     > Wenn Sie Dimensionen für untergeordnete Einheiten und übergeordnete Einheiten angeben, könnten Daten im Bericht dupliziert werden.
 
 - Berichtseinheiten, die Dimensionen in der Berichtsbaumstruktur enthalten, entsprechen den Dimensionen, die in den Zeilen- und in den Spaltendefinitionen verwendet werden. Die Kombination der Dimensionen bestimmt die Beträge, die für diese Einheit zurückgegeben werden. So geben in Beispiel 2 weiter unten in diesem Artikel die Positionen 6 und 7 jeweils nur die Werte für Abteilung 00 und 01 zurück.
-- Die Beträge für übergeordnete Berichtseinheiten, die keine Dimensionen in der Berichtstruktur enthalten, werden vom untergeordneten Einheitsbericht bestimmt und führen einen Rollup des Betrags auf der angegebenen übergeordneten Einheit durch. Wenn z. B. die übergeordnete Einheit (siehe Contoso-USA in Beispiel 2 des Daten-Rollup-Beispiels) zwei untergeordnete Einheiten (022 und 023) aufweist und keine Dimensionen enthält, wird ein Bericht für jedes untergeordnete und das übergeordnete Element generiert. Die übergeordnete Summe ist die Summe der zwei untergeordneten Beträge.
+- Die Beträge für übergeordnete Berichtseinheiten, die keine Dimensionen in der Berichtstruktur enthalten, werden vom untergeordneten Einheitsbericht bestimmt und führen einen Rollup des Betrags auf der angegebenen übergeordneten Einheit durch. Wenn z. B. die übergeordnete Einheit (siehe Contoso-USA in Beispiel 2 des Daten-Rollup-Beispiels) zwei untergeordnete Einheiten (022 und 023) aufweist und keine Dimensionen enthält, wird ein Bericht für jedes untergeordnete und das übergeordnete Element generiert. Die übergeordnete Summe ist die Summe der zwei untergeordneten Beträge.
 
 ### <a name="manage-reporting-units"></a>Verwalten von Berichtseinheiten
 
@@ -165,9 +164,9 @@ Sie können den Zugriff bestimmter Benutzer und Gruppen auf einer Berichtseinhei
 3. Wählen Sie im Dialogfeld **Einheitssicherheit** einen Namen aus, und klicken Sie dann auf **Entfernen**.
 4. Klicken Sie auf **OK**.
 
-### <a name="link-toreports"></a>Berichtverknüpfung
+### <a name="link-to-reports"></a>Berichtverknüpfung
 
-Nachdem Sie in der Zeilendefinition eine **Bericht**-Spalte erstellt und den Bericht angegeben haben, der in den Bericht einbezogen werden soll, müssen Sie die Berichtsbaumstruktur mit der verknüpften Spalte und der Berichtsinformation aktualisieren. Ein Bericht kann in jede Einheit in der Berichtstruktur importiert werden.
+Nachdem Sie in der Zeilendefinition eine Spalte **Bericht** erstellt und den Bericht angegeben haben, der in den Bericht einbezogen werden soll, müssen Sie die Berichtstruktur mit der verknüpften Spalte und der Berichtsinformation aktualisieren. Ein Bericht kann in jede Einheit in der Berichtstruktur importiert werden.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Identifizieren des Berichts in einer Berichtstruktur
 

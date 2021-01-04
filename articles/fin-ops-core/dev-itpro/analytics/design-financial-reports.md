@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReportingSetup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 079439d95597056919d5a8c73b829d79a3b02211
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 97895081293d9ee5a82a718e0644bebdaa0f2777
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002542"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686244"
 ---
 # <a name="view-and-design-financial-reports"></a>Finanzberichte entwerfen und verwalten
 
@@ -164,7 +163,7 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden eine 
 14. Schließen Sie **Konsolidierte Bilanz und Einkommensaufstellung parallel**.
 15. Schließen Sie den **Berichts-Designer**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Übung 5: Einen parallelen Abteilungsbericht erstellen
+## <a name="exercise-5-create-a-side-by-side-departmental-report"></a>Übung 5: Einen parallelen Abteilungsbericht erstellen
 In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine parallele Einkommensaufstellung der Abteilungen. Sie verwenden eine vorhandene Zeilendefinition, erstellen aber eine neue Berichtsdefinition und eine neue Spaltendefinition, die Dimensionsfilter verwenden. Wir beginnen mit der Finanzberichtsliste.
 
 1. Wechseln Sie zu **Finanzberichte** unter "Abfragen und Berichte" im Hauptbuch.
@@ -197,4 +196,4 @@ In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine paralle
 
 [Finanzberichte anzeigen](../../../finance/general-ledger/view-financial-reports.md)
 
-[Dynamics Financial Reporting-Blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics 365 Finance-Blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)

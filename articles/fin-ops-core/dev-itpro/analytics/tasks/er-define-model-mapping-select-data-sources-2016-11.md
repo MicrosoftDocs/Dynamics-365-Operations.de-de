@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a6287fa95b7ce7341e99d1b1a6b972db68a30398
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7d57c191761b8e2367ff8806c1cd98d6d83559e3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142165"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682116"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>EB-Modellzuordnungen definieren und Datenquellen für sie auswählen
 
@@ -78,14 +77,14 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 17. Wählen Sie in der Struktur 'Transactions\Voucher' aus.
 18. Klicken Sie auf Datenquelle hinzufügen.
 19. Im Feld „Formel” geben Sie „CONCATENATE(Transactions.Voucher, „-", „ ein.
-    * Geben Sie [ , „-“, ] am Ende der Formel ein.  
+    * Geben Sie am Ende der Fomel [ , "-", ] ein.  
 20. Wählen Sie in der Struktur den Knoten 'String\TEXT'.
 21. Klicken Sie auf Funktion hinzufügen.
 22. Wählen Sie in der Strukturdarstellung "Transactions\Record-ID (RecId)" aus.
 23. Klicken Sie auf Datenquelle hinzufügen.
 24. Im Feld „Formel” geben Sie „CONCATENATE(Transactions.Voucher, „-", TEXT(Transactions.RecId))” ein.
-    * Geben Sie [))] am Ende der Formel ein.  
-25. Klicken Sie auf "Speichern".
+    * Geben Sie am Ende der Fomel [))] ein.  
+25. Klicken Sie auf Speichern.
     * Stellen Sie sicher, dass keine Fehler für die erstellte Formel ermittelt worden sind. Sehen Sie sich die Registerkarte FEHLER unter dem Formeleditorsteuerelement an.  
 26. Schließen Sie die Seite.
 27. Klicken Sie auf "OK".
@@ -99,7 +98,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 32. Wählen Sie in der Strukturdarstellung "Transactions\Debit(AmountCurDebit)" aus.
 33. Klicken Sie auf Datenquelle hinzufügen.
 34. Im Feld „Formel” geben Sie „Transactions.AmountCurDebit - „ ein.
-    * Geben Sie [ - ] am Ende der Formel ein.  
+    * Geben Sie am Ende der Fomel [ - ] ein.  
 35. Wählen Sie in der Strukturdarstellung "Transactions\Credit(AmountCurCredit)" aus.
 36. Klicken Sie auf Datenquelle hinzufügen.
 37. Klicken Sie auf "Speichern".

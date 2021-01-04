@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c682ed96e47c718d3a9af1eb10aada75c59d3156
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e8b688cb1e4589eb076015d01dc4f0f0db14787e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181840"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688316"
 ---
 # <a name="generate-financial-reports"></a>Finanzberichte generieren
 
@@ -45,11 +44,11 @@ Wenn Sie einen Bericht generieren, werden die Optionen verwendet, die Sie auf de
 Um einen Finanzbericht mit zu generieren, gehen Sie zu **Hauptbuch** \> **Abfragen und Berichte** \> **Finanzberichte**.
 
 - Wählen Sie einen Bericht, um den Bericht zu erstellen und klicken Sie auf **Erstellen**.
-- Fügen Sie das Feld**Daten berichten**und klicken sie auf **OK**.
+- Fügen Sie das Feld **Daten berichten** und klicken sie auf **OK**.
 
 Nachdem der Bericht generiert wurde, ist der Bericht verfügbar zum Anzeigen im Abschnitt **Berichte** anzuzeigen.
 
-Sie können den Bericht**anzeigen** oder **löschen**.
+Sie können den Bericht **anzeigen** oder **löschen**.
 
 Um einen Bericht zu generieren, öffnen Sie **Berichtsdesigner**, und klicken Sie anschließend auf die Schaltfläche Generieren in der Symbolleiste. Das Fenster Berichtswarteschlangenstatus wird geöffnet und gibt den Ort des Berichts in der Warteschlange an. Standardmäßig wird der generierte Bericht in Web Viewer geöffnet.
 
@@ -98,7 +97,7 @@ Um einen Berichtszeitplan zu löschen, müssen Sie der Besitzer des Berichtszeit
 
 Wenn Sie keine Anmeldeinformationen eingeben, die für alle Unternehmen erforderlich sind, die in den Berichten enthalten sind, erhalten Sie eine Meldung mit etwa folgendem Inhalt: „Sie müssen Ihre Anmeldeinformationen für die Unternehmen eingeben, die im Berichtszeitplan enthalten sind. Klicken Sie auf die Schaltfläche Berechtigungen, um Ihre Anmeldeinformationen einzugeben.“
 
-Beispiel: Phyllis meldet sich mit Ihren Anmeldeinformationen und Ihrem Kennwort am Unternehmen A an. Sie erstellt einen Zeitplan für einen Bericht, der eine Berichtsbaumstruktur-Definition verwendet, um Daten aus mehreren Unternehmen zu erfassen. Beim Speichern dieses Berichtszeitplans wird Phyllis aufgefordert, die Anmeldeinformationen für die anderen Unternehmen einzugeben, die in der Berichtsbaumstruktur-Definition angegeben sind. Wenn Ihre Anmeldeinformationen ablaufen, werden die betroffenen Berichte im Berichtszeitplan nicht generiert, bis die Anmeldeinformationen aktualisiert wurden. Eine Meldung wird in der Berichtswarteschlange angezeigt, die angibt, dass die Berechtigungen aktualisiert werden müssen. Der Berichtszeitplan schlägt fehl, wenn eines der folgenden Szenarios auftritt (da sie Anmeldeinformationen erfordern):
+Beispiel: Ein Benutzer meldet sich mit Anmeldeinformationen und Kennwort am Unternehmen A an. Der Benutzer erstellt einen Zeitplan für einen Bericht, der eine Berichtsbaumstruktur-Definition verwendet, um Daten aus mehreren Unternehmen zu erfassen. Beim Speichern dieses Berichtszeitplans wird der Benutzer aufgefordert, die Anmeldeinformationen für die anderen Unternehmen einzugeben, die in der Berichtsbaumstruktur-Definition angegeben sind. Wenn Ihre Anmeldeinformationen ablaufen, werden die betroffenen Berichte im Berichtszeitplan nicht generiert, bis die Anmeldeinformationen aktualisiert wurden. Eine Meldung wird in der Berichtswarteschlange angezeigt, die angibt, dass die Berechtigungen aktualisiert werden müssen. Der Berichtszeitplan schlägt fehl, wenn eines der folgenden Szenarios auftritt (da sie Anmeldeinformationen erfordern):
 
 - Ein neues Unternehmen wurde einer Berichtsstruktur für einen einzelnen Bericht hinzugefügt.
 - Ein Bericht in einer Berichtsgruppe wurde geändert.

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2cae815bede98df7e5b937f6ffda99fa4ffed937
-ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
+ms.openlocfilehash: 109c047a35154f6d4c0ebcd71e1c72990d0f4971
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "3698218"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693377"
 ---
 # <a name="configure-manual-tasks-in-a-workflow"></a>Manuelle Aufgaben in einem Workflow konfigurieren
 
@@ -354,7 +353,7 @@ Sie können Benachrichtigungen an Personen senden, wenn eine manuelle Aufgabe de
 Gehen Sie folgendermaßen vor, wenn die manuelle Aufgabe in einer bestimmten Zeit abgeschlossen werden muss.
 
 > [!NOTE]
-> Die hier ausgewählten Optionen setzen die Optionen außer Kraft, die Sie in den Bereichen **Zuweisung**und **Eskalation** der Seite auswählen.
+> Die hier ausgewählten Optionen setzen die Optionen außer Kraft, die Sie in den Bereichen **Zuweisung** und **Eskalation** der Seite auswählen.
 
 1. Klicken Sie im linken Bereich auf **Erweiterte Einstellungen**.
 2. Aktivieren Sie das Kontrollkästchen **Zeitgrenze für das Workflowelement festlegen**.

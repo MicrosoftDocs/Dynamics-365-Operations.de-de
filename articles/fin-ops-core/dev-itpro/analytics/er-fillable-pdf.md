@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 96426ce54ec1b37c6751d990503d95960c2913df
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de31469e79addfb82b3b57e647ff82e4d254881a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771305"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688124"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>ER-Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
 
@@ -76,7 +75,7 @@ Schließlich müssen Sie die folgenden Dateien herunterladen von[CustomerSource]
 
 ### <a name="get-the-model-configurations-provided-by-microsoft"></a>Modell-Konfigurationen von Microsoft erhalten
 
-1. Auf der linken Seite des **Konfigurationsrepositorys** der Seite wählen Sie die Schaltfläche**Filter anzeigen** aus (Trichtersymbol).
+1. Auf der linken Seite des **Konfigurationsrepositorys** der Seite wählen Sie die Schaltfläche **Filter anzeigen** aus (Trichtersymbol).
 2. Hier können Sie einen Filter für einen Wert von **Kreditbriefen** im Feld **Typ** hinzufügen und den Operator **beginnen mit** verwenden.
 3. Wählen Sie **Anwenden** aus.
 4. Wählen Sie **Öffnen**.
@@ -91,7 +90,7 @@ Schließlich müssen Sie die folgenden Dateien herunterladen von[CustomerSource]
 
 ### <a name="create-a-new-format-configuration"></a>Dient zum Erstellen einer neuen Format-Konfiguration.
 
-1. Im Arbeitsbereich**Elektronische Berichterstellung** wählen Sie die Kachel **Berichterstellungskonfigurationen** aus.
+1. Im Arbeitsbereich **Elektronische Berichterstellung** wählen Sie die Kachel **Berichterstellungskonfigurationen** aus.
 2. In der Struktur wählen Sie **Intrasrat-Modell** aus.
 3. Wählen Sie **Konfiguration erstellen**.
 
@@ -105,7 +104,7 @@ Schließlich müssen Sie die folgenden Dateien herunterladen von[CustomerSource]
     > [!NOTE]
     > Der aktive Konfigurationsanbieter wird automatisch eingegeben. Dieser Anbieter ist in der Lage, diese Konfiguration verwalten. Obwohl andere Anbieter diese Konfiguration verwenden können, werden sie nicht in der Lage sein, sie zu verwalten.
 
-7. Optional: Im Feld **Formattyp** können Sie ein spezifisches Format von einem elektronischen Dokument auswählen. Wenn Sie **PDF** auswählen zur Entwurfszeit bietet der EB-Arbeitsgangsdesigner derzeit die Formatelemente an, die nur Dokumenten zugeordnet sind, die im PDF-Format generiert werden (**\ PDF Datei**, **PDF\ PDF-Merge-Programm**, usw.). Wenn Sie dieses Feld leer lassen, wird ein Format elektronischer Dokumente zur Entwurfszeit im EB-Arbeitsgangsdesigner angegeben, wenn ein erstes Formatelement hinzugefügt wird. Wenn Sie beispielsweise**Excel\Datei** hinzufügen, da das erste Formatelement, der EB-Arbeitsgangsdesigner Ihnen derzeit die Formatelemente anbietet, die nur Dokumenten zugeordnet sind, die im Excel-Format generiert werden (**Excel\Zelle**, **Excel\Bereich**, usw.). Formatieren.
+7. Optional: Im Feld **Formattyp** können Sie ein spezifisches Format von einem elektronischen Dokument auswählen. Wenn Sie **PDF** auswählen zur Entwurfszeit bietet der EB-Arbeitsgangsdesigner derzeit die Formatelemente an, die nur Dokumenten zugeordnet sind, die im PDF-Format generiert werden (**\ PDF Datei**, **PDF\ PDF-Merge-Programm**, usw.). Wenn Sie dieses Feld leer lassen, wird ein Format elektronischer Dokumente zur Entwurfszeit im EB-Arbeitsgangsdesigner angegeben, wenn ein erstes Formatelement hinzugefügt wird. Wenn Sie beispielsweise **Excel\Datei** hinzufügen, da das erste Formatelement, der EB-Arbeitsgangsdesigner Ihnen derzeit die Formatelemente anbietet, die nur Dokumenten zugeordnet sind, die im Excel-Format generiert werden (**Excel\Zelle**, **Excel\Bereich**, usw.). Formatieren.
 8. Wählen Sie **Konfiguration erstellen**.
 
 Eine neue ER-formatkonfiguration wird erstellt. Sie können die Entwurfsversion dieser Konfiguration verwenden, um die ER-Formatkomponente zu speichern, die entworfen wurde, um die elektronischen Dokumente im PDF-Format zu generieren.
@@ -224,7 +223,7 @@ Danach importieren Sie das Beispiel-ER-Format, das Sie zuvor heruntergeladen hab
 
     - Das Formatelement  **Ausgabe \> Seite 1** des Tpys **PDF-Datei** ist nicht an eine Datenquelle gebunden und der  **Aktiviert** Ausdruck des Formatelements ist leer. Daher wird zur Bearbeitungszeit die PDF-Vorlage **IntrastatReportTemplate1** nur einmal angezeigt, wenn ein einzelnes PDF- Dokument generiert wird.
     - Das Formularelement **Ausgabe \> Seite N** des Typs **PDF-Datei** ist an die Datenquelle **Paging.PageN** des Typs **Rekordliste** gebunden und der Ausdruck **Aktiviert** von diesem Formatelement ist leer. Daher wird zur Bearbeitungszeit die PDF-Vorlage **IntrastatReportTemplate2** für jeden Datensatz der gebundenen Datensatzliste angezeigt, wenn ein einzelnes PDF-Dokument generiert wird.
-    - Da die Formatelemente**Seite 1: PDF-Datei** und **Seite N: PDF-Datei** untergeordnete Elemente des Formatelements**Ausgabe: PDF-Merge-Programms** sind, werden alle PDF-Dokumente, die übernommen werden, in ein einzelnes PDF-Dokument zusammengeführt.
+    - Da die Formatelemente **Seite 1: PDF-Datei** und **Seite N: PDF-Datei** untergeordnete Elemente des Formatelements **Ausgabe: PDF-Merge-Programms** sind, werden alle PDF-Dokumente, die übernommen werden, in ein einzelnes PDF-Dokument zusammengeführt.
     - Die Felder **Paging.Page1** und **Paging.PageN** Datenquellen werden als Filter der Datensätzen aus der Datenquelle **Paging.Pages** konfiguriert. Diese Datenquelle wird konfiguriert, um die gesamten Außenhandelstransaktionen in Chargen aufzuteilen. Jede Charge enthält bis zu 42 Datensätze. Der folgende ER-Ausdruck wird verwendet, um die Transaktiionen in Chargen aufzuteilen:
 
         SPLITLIST (Totals.CommodityRecord, 42)
@@ -251,8 +250,8 @@ Beachten Sie, dass das Formatelement **Feld** verwendet wird, um ein einzelnes F
 Da beide Eigenschaften für ein **Feld** Formatelement optional sind, werden die folgenden Regeln angewendet, um das Ziel-PDF-Feld zu definieren:
 
 - Wenn das Attribut **Name** leer ist und der Ausdruck **Name** eine leere Zeichenfolge zur Laufzeit zurückgibt, wird eine Ausnahme zur Laufzeit ausgegeben, um den Benutzer zu informieren, dass ein PDF-Feld nicht in der PDF-Vorlage gefunden werden kann, die verwendet wird, um das PDF-Dokument auszufüllen.
-- Wenn das Attribut **Name**definiert ist und der Ausdruck **Name** leer ist, wird das PDF-Feld, das den gleichen Namen hat, wie das Attribut **Name** des Formatelements ausgefüllt.
-- Wenn das Attribut **Name**definiert ist und der Ausdruck **Name** konfiguriert ist, wird das PDF-Feld, das den gleichen Namen hat, wie der Wert, der vom Ausdruck **Name** des Formatelements zurückgegeben wird, ausgefüllt.
+- Wenn das Attribut **Name** definiert ist und der Ausdruck **Name** leer ist, wird das PDF-Feld, das den gleichen Namen hat, wie das Attribut **Name** des Formatelements ausgefüllt.
+- Wenn das Attribut **Name** definiert ist und der Ausdruck **Name** konfiguriert ist, wird das PDF-Feld, das den gleichen Namen hat, wie der Wert, der vom Ausdruck **Name** des Formatelements zurückgegeben wird, ausgefüllt.
 
 > [!NOTE]
 > Ein PDF-Kontrollkästchen kann als ausgefüllt folgendermaßen aktiviert werden:
@@ -274,7 +273,7 @@ Danach laden Sie das **Intrastat (Import aus Excel)** Beispiel-ER-Format. Dieses
 6. Hier können Sie die Option **Standard für Modellzuordnung** auf **Ja** festlegen.
 
     > [!NOTE]
-    > Wenn Sie zuvor die Option **Standard für Modellzuordnung** auf **Ja** für die **Intrastat-Modell** Konfiguration oder eine andere Konfiguration festlegen, die unter der**Intrastat-Modell** Konfiguration geschachtelt ist, legen Sie diese Option auf **Nein** fest.
+    > Wenn Sie zuvor die Option **Standard für Modellzuordnung** auf **Ja** für die **Intrastat-Modell** Konfiguration oder eine andere Konfiguration festlegen, die unter der **Intrastat-Modell** Konfiguration geschachtelt ist, legen Sie diese Option auf **Nein** fest.
 
     Wenn die Option **Standard für Modellzuordnung** auf **Ja** festgelegt wurde, gilt das importierte ER-Format **Intrastat (Import aus Excel)** als die Standarddatenquelle für die Formatkonfiguration **Intrastat-Bericht (PDF)**. Wenn die **Intrastat-Bericht (PDF)** Formatkonfiguration ausgeführt wird, wird der Inhalt der Excel-Arbeitsmappe, die vom EB-Format **Intrastat (Import- aus Excel)** analysiert wird, die Außenhandelstransaktionen simulieren, die gemeldet werden müssen. Die folgende Abbildung zeigt das Beispiel eines Excel-Arbeitsbuches.
 

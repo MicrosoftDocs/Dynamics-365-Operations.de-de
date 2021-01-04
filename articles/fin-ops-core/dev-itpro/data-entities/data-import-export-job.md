@@ -3,24 +3,23 @@ title: Einzelvorgänge für Datenimport und ‑export – Übersicht
 description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278897"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684059"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
@@ -130,7 +129,7 @@ Einer Stelle kann durch Rollen, Benutzer und juristischen Person gleichzeitig ge
 Sie können einen Einzelvorgang gleichzeitig aktivieren, indem Sie **Importieren** **Exportieren** auswählen, nachdem Sie den Einzelvorgang definiert haben. Um einen sich wiederholenden Auftrag einzurichten, wählen Sie **Erstellen eines sich wiederholenden Dateneneinzelvorgangs** aus.
 
 > [!NOTE]
-> Ein Import- oder Exportvorgang kann asynchron ausgeführt werden, indem Sie die Schalfläche **Importieren** oder **Exportieren** auswählen. Bei einer asynchronen Ausführung wird das asynchrone Framework verwendet, das sich vom Chargenframework unterscheidet. Wie auch das Stapelverarbeitungsframework kann das asynchrone Framework allerdings auch eine Drosselung erfahren, wodurch der Einzelvorgang nicht sofort ausgeführt wird. Die Einzelvorgänge können durch Auswahl von **Jetzt importieren** oder **Jetzt exportieren** synchron ausgeführt werden. Dadurch wird der Einzelvorgang sofort gestartet. Das ist hilfreich, wenn die asynchrone oder Stapelverarbeitung aufgrund von Drosselung nicht sartet. Die Einzelvorgänge können auch in einem Stapel ausgeführt werden, indem Sie die Option **In Stapel ausführen** auswählen. Stapelressoucen sind von Drosselung betroffen. Der Einzelvorgang zur Stapelverarbeitung startet also möglicherweise nicht sofort. Die asynchrone Option ist hilfreich, um die Stapelzeitplaung zu verstehen, wenn Benutzer direkt mit der Benutzeroberfläche interagieren und es sich nicht um Power-Nutzer handelt. Die Verwendung einer Charge ist eine Option, wenn große Mengen exportiert oder importiert werden müssen. Chargensaufträge können geplant wurden, sodass sie in einer bestimmte Chargengruppe ausgeführt werden. Dies bietet von einer Lastenausgleichsperspektive aus betrachtet eine bessere Steuerung. Wenn asynchrone und Chargen beide augrund von hoher Ressourcennutzung auf dem System gedrosselt werden, kann das Problem durch Verwendung der synchronen Version von Import/Export sofort umgangen werden. Die synchrone Option beginnt sofort und sperrt die Benutzeroberfläche, da sie synchron ausgeführt wird. Das Browserfenster muss offen bleiben, wenn die synchone Operation ausgeführt wird.
+> Ein Import- oder Exportvorgang kann ausgeführt werden, indem Sie die Schalfläche **Importieren** bzw. **Exportieren** auswählen. Dadurch wird ein Batchauftrag so geplant, dass er nur einmal ausgeführt wird. Der Einzelvorgang wird möglicherweise nicht sofort ausgeführt, wenn der Batchservice aufgrund der Belastung des Batchservice gedrosselt wird. Die Einzelvorgänge können durch Auswahl von **Jetzt importieren** oder **Jetzt exportieren** synchron ausgeführt werden. Dadurch wird der Einzelvorgang sofort gestartet. Das ist hilfreich, wenn der Batchauftrag aufgrund einer Drosselung nicht startet. Die Einzelvorgänge können auch so geplant werden, dass sie zu einem späteren Zeitpunkt ausgeführt werden. Dies kann durch Auswahl der Option **Im Batch ausführen** erfolgen. Stapelressoucen sind von Drosselung betroffen. Der Einzelvorgang zur Stapelverarbeitung startet also möglicherweise nicht sofort. Die Verwendung einer Stapelverarbeitung wird empfohlen, da dies auch bei großen Datenmengen hilfreich ist, die importiert oder exportiert werden müssen. Chargensaufträge können geplant wurden, sodass sie in einer bestimmte Chargengruppe ausgeführt werden. Dies bietet von einer Lastenausgleichsperspektive aus betrachtet eine bessere Steuerung.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Überprüfen Sie, ob der Einzelvorgang wie erwartet ausgeführt wurde
 Die Einzelvorgangshistorie ist zur Problembehebung und Untersuchung auf Import- und Exporteinzelvorgängen verfügbar. Historische Einzelvorgangsausführungen werden nach Perioden sortiert.
@@ -195,7 +194,7 @@ Die Funktion zur Bereinigung des Auftragsverlaufs in der Datenverwaltung muss ve
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-Die Funktionen müssen in der Funktionsverwaltung aktiviert werden und sind über **Datenverwaltung \> Bereinigung des Auftragsverlaufs** zugänglich.
+Die Funktionen **Bereinigung des Ausführungsverlaufs** müssen in der Funktionsverwaltung aktiviert werden und sind über **Datenverwaltung \> Bereinigung des Einzelvorgangsverlaufs** verfügbar.
 
 ### <a name="scheduling-parameters"></a>Planungsparameter
 
@@ -211,3 +210,36 @@ Wenn Sie den Bereinigungsprozess planen, müssen die folgenden Parameter angegeb
 
 > [!NOTE]
 > Wenn Sätze in den Staging-Tabellen nicht vollständig bereinigt werden, stellen Sie sicher, dass der Bereinigungsjob für die Ausführung in Wiederholung eingeplant wird. Wie oben erläutert, wird der Job bei jeder Bereinigungsausführung nur so viele Ausführungs-IDs bereinigen, wie innerhalb der vorgegebenen maximalen Stunden möglich sind. Um mit der Bereinigung der verbleibenden Staging-Datensätze fortzufahren, muss der Job für eine periodische Ausführung eingeplant werden.
+
+## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Bereinigen und Archivieren des Einzelvorgangsverlaufs (verfügbar zur Vorschau in Plattformupdate 39 oder Version 10.0.15)
+Die Funktionen zum Bereinigen und Archivieren des Einzelvorgangsverlaufs ersetzen die vorherigen Versionen der Bereinigungsfunktion. In diesem Abschnitt werden diese neuen Funktionen erläutert.
+
+Eine der wichtigsten Änderungen an der Bereinigungsfunktion ist die Verwendung eines System-Batchauftrags zum Bereinigen des Verlaufs. Die Verwendung von System-Batchaufträgen ermöglicht Finance and Operations-Apps die automatische Planung und Ausführung des Batchauftrags zur Bereinigung, sobald das System bereit ist. Es ist nicht mehr erforderlich, den Batchauftrag manuell zu planen. In diesem Standardausführungsmodus wird der Batchauftrag ab Mitternacht jede Stunde ausgeführt und der Ausführungsverlauf für die letzten 7 Tage beibehalten. Der gelöschte Verlauf wird für den zukünftigen Abruf archiviert.
+
+> [!NOTE]
+> Da sich diese Funktion in der Vorschau befindet, löscht der System-Batchauftrag keinen Ausführungsverlauf, bevor er nicht über den Flight DMFEnableExecutionHistoryCleanupSystemJob aktiviert wird. Sobald die Funktion in einer zukünftigen Version allgemein verfügbar sein wird, wird dieser Flight nicht mehr erforderlich sein und der System-Batchauftrag wird, wie oben beschrieben, basierend auf dem definierten Zeitplan mit der Bereinigung und der Archivierung beginnen, wenn das System bereit ist. 
+
+> [!NOTE]
+> In einer zukünftigen Version werden die vorherigen Versionen der Bereinigungsfunktion aus den Finance and Operations-Apps entfernt.
+
+Die zweite Änderung am Bereinigungsprozess ist die Archivierung des gelöschten Ausführungsverlaufs. Der Bereinigungsauftrag archiviert die gelöschten Datensätze im Blob Storage, den DIXF für regelmäßige Integrationen verwendet. Die archivierte Datei liegt im DIXF-Paketformat vor und ist 7 Tage lang im Blob verfügbar. Während dieser Zeit kann sie heruntergeladen werden. Die Standardlebensdauer von 7 Tagen für die archivierte Datei kann in den Parametern auf maximal 90 Tage geändert werden.
+
+### <a name="changing-the-default-settings"></a>Standardeinstellungen ändern
+Diese Funktion ist derzeit in der Vorschau verfügbar und muss explizit aktiviert werden, indem der Flight DMFEnableExecutionHistoryCleanupSystemJob aktiviert wird. Die Funktion zur Stagingbereinigung muss auch in der Funktionsverwaltung aktiviert sein.
+
+Um die Standardeinstellung für die Langlebigkeit der archivierten Datei zu ändern, wechseln Sie zum Datenverwaltungsarbeitsbereich und wählen Sie **Bereinigung des Auftragsverlaufs** aus. Legen Sie **Tage zur Beibehaltung des Pakets im Blob** auf einen Wert zwischen 7 und 90 (inklusive) fest. Dies tritt für die Archive in Kraft, die nach dieser Änderung erstellt werden.
+
+### <a name="downloading-the-archived-package"></a>Archiviertes Paket herunterladen
+Diese Funktion ist derzeit in der Vorschau verfügbar und muss explizit aktiviert werden, indem der Flight DMFEnableExecutionHistoryCleanupSystemJob aktiviert wird. Die Funktion zur Stagingbereinigung muss auch in der Funktionsverwaltung aktiviert sein.
+
+Um den archivierten Ausführungsverlauf herunterzuladen, wechseln Sie zum Datenverwaltungsarbeitsbereich und wählen Sie **Bereinigung des Auftragsverlaufs** aus. Wählen Sie **Verlauf Paketsicherung** aus, um das Verlaufsformular zu öffnen. Dieses Formular zeigt die Liste aller archivierten Pakete an. Ein Archiv kann durch Auswahl von **Paket herunterladen** ausgewählt und heruntergeladen werden. Das heruntergeladene Paket liegt im DIXF-Paketformat vor und enthält die folgenden Dateien:
+
+-   Die Stagingtabellendatei der Entität
+-   DMFDEFINITIONGROUPEXECUTION
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+-   DMFEXECUTION
+-   DMFSTAGINGEXECUTIONERRORS
+-   DMFSTAGINGLOG
+-   DMFSTAGINGLOGDETAILS
+-   DMFSTAGINGVALIDATIONLOG
+

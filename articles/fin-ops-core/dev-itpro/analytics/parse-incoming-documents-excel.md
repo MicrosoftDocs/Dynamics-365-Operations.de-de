@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 3f83271327df186d407516ff1a197800ffc8c78c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6e27806d3b94eb485705cec539a4849b81fbba91
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249355"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685786"
 ---
 # <a name="parse-incoming-documents-in-excel-format"></a>Analysieren eingehender Dokumente im Excel-Format
 
@@ -42,7 +41,7 @@ Laden Sie die folgenden Dateien herunter, um die oben genannten Aufgabenleitfäd
 | Eingehende Datei im .XLSX-Format - Vorlage    | [1099import-template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266) |
 | Eingehende Datei im .XLSX-Format - Beispieldaten | [1099import-data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
 
-Wenn Sie den Aufgabenleitfaden [ER Erstellen der erforderlichen Konfigurationen, um Daten aus einer externen Datei zu importieren](./tasks/er-required-configurations-import-data.md) in der aktuellen Finance and Operations-Anwendung noch nicht abgespielt haben, laden Sie die folgende Datei herunter.
+Wenn Sie den Aufgabenleitfaden [EB – Erstellen der erforderlichen Konfigurationen, um Daten aus einer externen Datei zu importieren](./tasks/er-required-configurations-import-data.md) in der aktuellen Finance and Operations-Anwendung noch nicht abgespielt haben, laden Sie die folgende Datei herunter.
 
 | Inhaltsbeschreibung    | Datei                                                            |
 |------------------------|-----------------------------------------------------------------|

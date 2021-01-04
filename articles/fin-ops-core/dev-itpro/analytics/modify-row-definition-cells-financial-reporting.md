@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182990"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685858"
 ---
 # <a name="modify-row-definition-cells"></a>Ändern von Zeilendefinitionszellen
 
@@ -107,7 +106,7 @@ Die Zelle **Formatcode** bietet eine Auswahl von vorformatierten Auswahlmöglich
     |-------------------------------|-----------------------------------|--------|
     | (Keine)                        |                                   | Löscht die **Formatcode**-Zelle. |
     | TOT                           | Summe                             | Kennzeichnet eine Zeile, die mathematische Operatoren in der Spalte **Verwandte Formeln/Zeilen/Einheiten** verwendet. Summen enthalten einfache Operatoren, wie **+** oder **-**. |
-    | CAL                           | Herstellkostenkalkulation                       | Kennzeichnet eine Zeile, die mathematische Operatoren in der Spalte **Verwandte Formeln/Zeilen/Einheiten** verwendet. Berechnungen enthalten komplexe Operatoren, wie  **+**, **-**, **\***, **/** und **IF/THEN/ELSE** Anweisungen. |
+    | CAL                           | Herstellkostenkalkulation                       | Kennzeichnet eine Zeile, die mathematische Operatoren in der Spalte **Verwandte Formeln/Zeilen/Einheiten** verwendet. Berechnungen enthalten komplexe Operatoren, wie **+**, **-**, **\**_, _*/** sowie die Anweisungen **IF/THEN/ELSE**. |
     | DES                           | Beschreibung                       | Kennzeichnet eine Überschriftposition oder eine leere Position in einem Bericht. |
     | LKS RCHTS ZEN                   | Links Rechts Zentriert                 | Richtet den Zeilenbeschreibungstext auf der Berichtsseite aus, unabhängig von seiner Position in der Spaltendefinition. |
     | ÄBZ                           | Änderungsbasiszeile                   | Gibt eine Zeile an, die die Basiszeile für Spaltenberechnungen festlegt. |
@@ -175,7 +174,7 @@ In der Spalte **Formatcode** in einer Zeilendefinition wird Formatierung mit den
 
 ### <a name="example-of-preventing-printing-of-rows"></a>Beispiel für Unterdrücken des Druckens der Zeilen
 
-Im folgenden Beispiel möchte Phyllis die Überschrift und die Unterstriche in der Zeile **Bargeld gesamt** ihres Berichts nicht drucken, da es in keiner der Kassenkonten Aktivitäten gab. Daher gibt Sie in Zeile 220 (die, wie der **---** Formatcode angibt, eine Formatierungszeile ist) in der Zelle **Verwandte Formeln/Zeilen/Einheiten** den Wert **250** ein. Dies ist der Zeilencode der Betragszeile, die sie unterdrücken möchte.
+Im folgenden Beispiel möchte ein Benutzer die Überschrift und die Unterstriche in der Zeile **Bargeld gesamt** des Berichts nicht drucken, da es in keiner der Kassenkonten Aktivitäten gab. Daher gibt der Benutzer in Zeile 220 (die, wie der Formatcode **---** angibt, eine Formatierungszeile ist) in der Zelle **Verwandte Formeln/Zeilen/Einheiten** den Wert **250** ein. Dies ist der Zeilencode der Betragszeile, die der Benutzer unterdrücken möchte.
 
 [![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
@@ -402,7 +401,7 @@ Die Zelle **Mit Finanzdimensionen verknüpfen** enthält Verknüpfungen zu den F
 2. Doppelklicken Sie auf eine Zelle in der Spalte **Verknüpfen mit Finanzdimensionen**.
 3. Doppelklicken Sie im Dialogfeld **Dimensionen** auf eine Zelle unter dem Dimensionsnamen.
 4. Wählen Sie im Dialogfeld für die Dimension **Einzelwert oder Bereich** aus.
-5. Geben Sie im Feld **Von** die erste Dimension ein, oder klicken Sie auf ![Durchsuchen](media/browse.gif "Durchsuchen"), um nach verfügbaren Dimensionen zu suchen. Um einen Bereich von Dimensionen eingeben, geben Sie die Enddimension im Feld **Bis** ein.
+5. Geben Sie im Feld **Von** die erste Dimension ein oder klicken Sie auf ![Durchsuchen](media/browse.gif "Durchsuchen"), um nach verfügbaren Dimensionen zu suchen. Um einen Bereich von Dimensionen eingeben, geben Sie die Enddimension im Feld **Bis** ein.
 6. Klicken Sie auf **OK**, um das Dialogfeld für die Dimension zu schließen. Im Dialogfeld **Dimensionen** wird die aktualisierte Dimension oder der Bereich angezeigt.
 7. Klicken Sie auf **OK**, um das Dialogfelds **Dimensionen** zu schließen.
 
@@ -416,7 +415,7 @@ Standardmäßig druckt der Berichtsdesigner keine Zeile aus, die nicht ein entsp
 3. Klicken Sie im Menü **Datei** auf **Speichern**, um Ihre Änderungen zu speichern.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Platzhalterzeichen und Bereiche in einer Zeilendefinition verwenden
-Wenn Sie einen natürlichen Segmentwert im Dialogfeld **Dimensionen** eingeben, können Sie an jeder Position eines Segments ein Platzhalterzeichen (? oder \*) in jeder Position eines Segments einsetzen. Report Designer extrahiert alle Werte für die definierten Positionen, ohne die Platzhalterzeichen zu berücksichtigen. Zum Beispiel beinhaltet die Zeilendefinition nur natürliche Segmentwerte, und natürliche Segmente haben vier Zeichen. Durch Eingabe von **6???** in einer Zeilendefinition weisen des Berichts-Designers angezeigt, alle Konten einzuschließen, die einen natürlichen Segmentwert haben, die mit 6 beginnt. Wenn Sie **6\*** eingeben, sind die gleichen Ergebnisse zurückgegeben, doch die Ergebnisse auch Variable-Breitenwerte enthalten, z.B. **60** und **600000**. Der Berichtsdesigner ersetzt jedes Platzhalterzeichen (?) durch den kompletten Bereich möglicher Werte, die Buchstaben und Sonderzeichen enthalten. Zum Beispiel im Bereich von **12? 0** bis **12? 4** wird das Platzhalterzeichen **12? 0** durch den niedrigsten Wert im Zeichensatz ersetzt, und das Platzhalterzeichen in **12? 4** wird durch den höchsten Wert für im Zeichensatz ersetzt.
+Wenn Sie einen natürlichen Segmentwert im Dialogfeld **Dimensionen** eingeben, können Sie an jeder Position eines Segments ein Platzhalterzeichen (? oder \*) in jeder Position eines Segments einsetzen. Report Designer extrahiert alle Werte für die definierten Positionen, ohne die Platzhalterzeichen zu berücksichtigen. Zum Beispiel beinhaltet die Zeilendefinition nur natürliche Segmentwerte, und natürliche Segmente haben vier Zeichen. Durch Eingabe von **6???** in einer Zeilendefinition weisen des Berichts-Designers angezeigt, alle Konten einzuschließen, die einen natürlichen Segmentwert haben, die mit 6 beginnt. Wenn Sie **6\**_ eingeben, werden die gleichen Ergebnisse zurückgegeben, wobei die Ergebnisse auch Werte mit variabler Breite enthalten, z. B. _* 60** und **600000**. Der Berichtsdesigner ersetzt jedes Platzhalterzeichen (?) durch den kompletten Bereich möglicher Werte, die Buchstaben und Sonderzeichen enthalten. Zum Beispiel im Bereich von **12? 0** bis **12? 4** wird das Platzhalterzeichen **12? 0** durch den niedrigsten Wert im Zeichensatz ersetzt, und das Platzhalterzeichen in **12? 4** wird durch den höchsten Wert für im Zeichensatz ersetzt.
 
 > [!NOTE]
 > Sie sollten Platzhalterzeichen für die Start- und Endkonten von Bereichen vermeiden. Wenn Sie im Start- oder Endkonto Platzhalterzeichen verwenden, werden möglicherweise unerwartete Ergebnisse zurückgegeben.
@@ -443,7 +442,7 @@ Um die Geldbeträge in einem Konto zu den Geldbeträgen in einem anderen Konto z
 | Addieren Sie zwei vollständig qualifizierte Konten.                                                       | +Division=\[000\], Konto=\[1205\], Abteilung=\[00\]+Division=\[100\], Konto=\[1205\], Abteilung=\[00\] |
 | Addieren Sie zwei Segmentwerte.                                                                 | +Konto=\[1205\]+Konto=\[1210\]                                                                           |
 | Addieren Sie Segmentwerte, die Platzhalterzeichen enthalten.                                    | +Konto=\[120?+Konto=\[11??\]                                                                             |
-| Addieren Sie einen Bereich von zwei vollständig qualifizierte Konten.                                                | +Division=\[000:100\]], Konto=\[[1205\]], Abteilung=\[00\]                                                   |
+| Addieren Sie einen Bereich von zwei vollständig qualifizierte Konten.                                                | +Division=\[000:100\], Konto=\[1205\], Abteilung=\[00\]                                                   |
 | Addieren Sie einen Bereich von Segmentwerten.                                                          | +Konto=\[1200:1205\]                                                                                       |
 | Addieren Sie einen Bereich von Segmentwerten, die Platzhalterzeichen enthalten.                         | +Konto=\[120?:130?\]                                                                                       |
 | Subtrahieren Sie ein vollqualifiziertes Konto von einem anderen vollqualifizierten Konto.              | +Division=\[000\], Konto=\[1205\], Abteilung=\[00\]-Division=\[100\], Konto=\[1205\], Abteilung=\[00\] |
@@ -479,7 +478,7 @@ In der folgenden Tabelle werden die Felder im Dialogfeld **Dimensionen** beschri
 
 | Element                | Beschreibung |
 |---------------------|-------------|
-| Einzeln oder Bereich | Geben Sie im Feld **Von** den Namen eines Kontos ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** ![Durchsuchen](media/browse.gif "Durchsuchen"), um das Konto zu suchen. Um einen Bereich auswählen, geben Sie einen Wert in das Feld **Bis** ein, oder wählen Sie einen Wert aus. |
+| Einzeln oder Bereich | Geben Sie im Feld **Von** den Namen eines Kontos ein oder klicken Sie auf die Schaltfläche **Durchsuchen** ![Durchsuchen](media/browse.gif "Durchsuchen"), um das Konto zu suchen. Um einen Bereich auswählen, geben Sie einen Wert in das Feld **Bis** ein, oder wählen Sie einen Wert aus. |
 | Dimensionswertsatz | Geben Sie im Feld **Name** den Namen eines Dimensionswertsatzes ein. Um einen Satz, zu erstellen, zu ändern, zu kopieren oder zu löschen, klicken Sie auf **Dimensionswertsätze verwalten**. Das **Formel**-Feld wird mit der Formel aus der Zelle **Mit Finanzdimensionen verknüpfen** für diesen Dimensionswertsatz aufgefüllt, der in der Zeilendefinition festgelegt ist. |
 | Summe Konten   | Geben Sie im Feld **Name** eine Dimension der Summenkonten ein oder suchen Sie danach. Das **Formel**-Feld wird mit der Formel in der Zelle **Mit Finanzdimensionen verknüpfen** für diesen Summenkonto aufgefüllt, das in der Berichtsdefinition festgelegt ist. |
 

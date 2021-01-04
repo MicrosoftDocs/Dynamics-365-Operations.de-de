@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
 ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 5ba9b8a041f9eef8142cb56d7c764a5faf6071f6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1c62771170212039112c777e55d45a0d88d2f49d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191499"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680997"
 ---
 # <a name="upgrade-budget-planning"></a>Budgetplanung aktualisieren
 
@@ -50,7 +49,7 @@ Spalten sind ein neues Konzept, das Teile der Excel-Vorlagen und auch Matrixfeld
 
 ### <a name="layouts"></a>Layouts
 
-Layouts sind ein neues Konzept, die Excel-Vorlagen ersetzen. Layouts enthalten die Spalten, die definieren, welche Budget- oder Actual-Daten und Perioden angezeigt werden sollten. Layouts werden auch zwischen Client und dem Excel-Add-In freigegeben. Somit ist die Benutzerfreundlichkeit, wenn Sie Daten im Finance and Operations Clients eingeben oder anzeigen besser als die Benutzerfreundlichkeit in AX 2012. Um Daten im Finance-Client einzugeben, sind Sie nicht mehr zum Anzeigen und Eingeben eines einzelnen Szenarios in einer Buchungsansicht beschränkt. Stattdessen können Sie in einer Vergleichsansicht Beträge für mehrere Perioden sowie Konten gleichzeitig anzeigen und eingeben. Layouts können auch so definiert werden, dass Sie Währungen, Kommentare sowie andere optionale Daten eingeben und anzeigen können. In Layouts können Sie auch definieren, welche Sachkontodimensionen und Dimensionsbeschreibungen angezeigt werden sollen. Layouts enthalten auch Szenarioeinschränkungen, um festzulegen, welche Spalten in einer Vorlage geändert werden können und welche Spalten in Excel verfügbar sein sollen. Nachdem Sie ein Layout festlegen, wird ein Original für Sie generiert. Diese Vorlage erstellt wiederum die entsprechende Excel-Vorlage. Sie können die Excel-Vorlagee dann bearbeiten, um mehr Formeln und Formatierungen einzubeziehen und laden sie dann erneut nach oben. Layouts werden dann zu jeder Phasenregel auf der Seite **Budgetplanungsprozess** zugewiesen. Daher ersetzen die Layouts Vorlagen, die auf ähnliche Weise zugeordnet und in ähnlicher Weise angewendet wurden.
+Layouts sind ein neues Konzept, die Excel-Vorlagen ersetzen. Layouts enthalten die Spalten, die definieren, welche Budget- oder Actual-Daten und Perioden angezeigt werden sollten. Layouts werden auch zwischen Client und dem Excel-Add-In freigegeben. Somit ist die Benutzerfreundlichkeit, wenn Sie Daten im Finance and Operations-Client eingeben oder anzeigen besser als die Benutzerfreundlichkeit in AX 2012. Um Daten im Finance-Client einzugeben, sind Sie nicht mehr zum Anzeigen und Eingeben eines einzelnen Szenarios in einer Buchungsansicht beschränkt. Stattdessen können Sie in einer Vergleichsansicht Beträge für mehrere Perioden sowie Konten gleichzeitig anzeigen und eingeben. Layouts können auch so definiert werden, dass Sie Währungen, Kommentare sowie andere optionale Daten eingeben und anzeigen können. In Layouts können Sie auch definieren, welche Sachkontodimensionen und Dimensionsbeschreibungen angezeigt werden sollen. Layouts enthalten auch Szenarioeinschränkungen, um festzulegen, welche Spalten in einer Vorlage geändert werden können und welche Spalten in Excel verfügbar sein sollen. Nachdem Sie ein Layout festlegen, wird ein Original für Sie generiert. Diese Vorlage erstellt wiederum die entsprechende Excel-Vorlage. Sie können die Excel-Vorlagee dann bearbeiten, um mehr Formeln und Formatierungen einzubeziehen und laden sie dann erneut nach oben. Layouts werden dann zu jeder Phasenregel auf der Seite **Budgetplanungsprozess** zugewiesen. Daher ersetzen die Layouts Vorlagen, die auf ähnliche Weise zugeordnet und in ähnlicher Weise angewendet wurden.
 
 ### <a name="budget-planning-processes"></a>Budgetplanungsprozesse
 
@@ -72,7 +71,7 @@ Um einfach zu bestimmen, wie die Aktualisierung für das System konfiguriert wer
    -   Budgetplanszenarien: Wirklichkeiten, Basiszeitraum, Budget-Anforderung, Budget genehmigt
    -   Budgetplanpositionen für alle Szenarien im Jahre 2017 und 2017 und 2016 Actuals
 
-   Die folgenden Spalten sind in Finance and Operations erstellt:
+   Die folgenden Spalten werden in Finance and Operations erstellt:
 
    | Spaltenname    | Budgetplanszenario | Zeitperiode der Spalte | Jahresausgleich |
    |----------------|----------------------|--------------------|-------------|
