@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6324b244195e9626e259e42eef9512e64cde86
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143098"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684378"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Berichte im Office-Format generieren, die eingebettete Bilder haben
 
@@ -40,14 +39,14 @@ In diesem Beispiel erstellen Sie eine ER-Konfigurationen für das Beispieluntern
     * Führen Sie das Format für Testzwecke aus.  
 6. Wählen Sie die Option Ja im Feld Verhandelbares Scheckformatgebiet aus.
 7. Klicken Sie auf "OK".
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, dass das Firmenlogo im Bericht sowie die autorisierten Unterschrift der Person angezeigt wird. Das Unterzeichnungsbild wird im Feld „Container“ des Datentyps des Schecklayoutdatensatzes übernommen, der dem ausgewählten Bankkonto zugeordnet ist.  
+    * Prüfen Sie das generierte Ergebnis. Das Unternehmenslogo wird ebenso im Bericht angezeigt wie die Signatur der autorisierten Person. Das Bild der Signatur stammt aus dem Feld vom Datentyp „Container“ des Schecklayoutdatensatzes, der dem ausgewählten Bankkonto zugeordnet ist.  
 8. Erweitern Sie den Abschnitt Kopien.
 9. Klicken Sie auf "Bearbeiten".
 10. Im Wasserzeichengebiet geben Sie "Wasserzeichen als Nichtig drucken".
     * Ändern Sie die Wasserzeichenlayouteinstellung, um den Wasserzeichentext anzuzeigen, wenn Sie in einem Dokument Excel-Formelement generieren.  
 11. Drucktest anklicken.
 12. Klicken Sie auf "OK".
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, dass das Wasserzeichen im erstellten Bericht in der Übereinstimmung der Auswahloption angezeigt wird.  
+    * Prüfen Sie das generierte Ergebnis. Das Wasserzeichen wird im erstellten Bericht in Übereinstimmung mit der Auswahloption angezeigt.  
 13. Schließen Sie die Seite.
 14. Klicken Sie im Aktivitätsbereich auf Zahlungen verwalten.
 15. Klicken Sie auf Schecks.
@@ -56,7 +55,7 @@ In diesem Beispiel erstellen Sie eine ER-Konfigurationen für das Beispieluntern
 18. Schalten Sie in der Liste 'Alle Zeilen markieren' ein/aus.
 19. Scheckkopie drucken anklicken.
     * Führen Sie das Format aus, um die ausgewählten Schecks erneut zu drucken.  
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, dass die ausgewählten Schecks erneut gedruckt wurden. Das Firmenlogo und die Bezeichnungen werden nicht ausgedruckt, wie sie auf dem Vordruck dargestellt werden.  
+    * Prüfen Sie das generierte Ergebnis. Die ausgewählten Schecks wurden erneut gedruckt. Das Firmenlogo und die Bezeichnungen werden nicht ausgedruckt, wie sie auf dem Vordruck dargestellt werden.  
 
 ## <a name="modify-the-mapping-of-the-imported-data-model"></a>Überprüfe Sie die Struktur des importierten Datenmodells.
 1. Schließen Sie die Seite.
@@ -66,8 +65,8 @@ In diesem Beispiel erstellen Sie eine ER-Konfigurationen für das Beispieluntern
 5. Klicken Sie auf Designer.
 6. Klicken Sie auf "Modell der Datenquelle zuordnen".
 7. Klicken Sie auf Designer.
-    * Wir ändern die Bindung des Unterzeichnungsartikels des Datenmodells, um das Unterzeichnungsbild der Datei zu erhalten, die auf den Schecklayoutdatensatz zugeordnet wurde, der dem ausgewählten Bankkonto zugeordnet ist.  
-8. Anzeigedetails aktivieren.
+    * Wir ändern die Bindung des Signaturartikels des Datenmodells, um das Signaturbild aus der Datei zu erhalten, die dem Schecklayoutdatensatz zugeordnet wurde, der dem ausgewählten Bankkonto zugeordnet ist.  
+8. Deaktivieren Sie „Details anzeigen“.
 9. Erweitern Sie in der Struktur Layout.
 10. Erweitern oder reduzieren Sie Layout\Unterschrift.
 11. Wählen Sie in der Strukturdarstellung Layout\Unterschrift\Bild= chequesaccount<Beziehungen. BankChequeLayout.Signature1Bmp.
@@ -91,7 +90,7 @@ In diesem Beispiel erstellen Sie eine ER-Konfigurationen für das Beispieluntern
 4. Klicken Sie auf "Prüfen".
 5. Drucktest anklicken.
 6. Klicken Sie auf "OK".
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, ob das Bild aus dem Dokumentverwaltungsanhang als Unterschrifte eine autorisierte Person darstellt.  
+    * Prüfen Sie das generierte Ergebnis. Das Bild aus dem Dokumentverwaltungsanhang stellt die Signatur einer autorisierten Person dar.  
 
 ## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Verwenden Sie das MS Word-Dokument als Vorlage im importierten Format
 1. Schließen Sie die Seite.
@@ -118,5 +117,5 @@ In diesem Beispiel erstellen Sie eine ER-Konfigurationen für das Beispieluntern
 21. Klicken Sie auf "Prüfen".
 22. Drucktest anklicken.
 23. Klicken Sie auf "OK".
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, dass die MS Word-Dokument Ausgabe mit den eingebetteten Zeichen generiert wurde, die das Firmenlogo, die Unterschrift einer autorisierten Person und den markierten Text des Wasserzeichens darstellt.  
+    * Prüfen Sie das generierte Ergebnis. Die Ausgabe wurde als ein Word-Dokument mit eingebetteten Bildern generiert, die das Unternehmenslogo, die Signatur einer autorisierten Person und den markierten Text des Wasserzeichens darstellen.  
 

@@ -3,25 +3,24 @@ title: Vor dem Kauf
 description: Schrittweise Anleitungen, die Sie anwenden sollten, wenn Sie überlegen, Dynamics 365 Finance, Dynamics 365 Supply Chain Management oder Dynamics 365 Commerce zu kaufen.
 author: ShellyBakke
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 4619a359a352d702526c576d97b666439d71ed96
-ms.sourcegitcommit: 6aceca43c53c4dde46954c0b6b855d488eb44ed2
+ms.openlocfilehash: adbc9d0bc4632c661b40001a54685192b9ae2d23
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027723"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694135"
 ---
 # <a name="before-you-buy"></a>Vor dem Kauf
 
@@ -41,7 +40,7 @@ Folgende Überlegungen müssen vorgenommen werden, wenn Sie lokal als Bereitstel
 
 - Gesetzliche Anforderungen und Konformitätsanforderungen, die in den Cloudzertifizierungen nicht verfügbar sind.
 - Nicht verbundener Geschäftsprozess mit erforderlicher zeitweiliger Internetkonnektivität, um auf Microsoft Dynamics Lifecycle Services (LCS) für die Anwendungslebenszyklus-Verwaltung zuzugreifen.
-- [Nicht in lokale Bereitstellungen implementierte Funktionen](features-not-implemented-on-prem.md).
+- [Vergleich von Cloud- und On-Premises-Funktionen](cloud-prem-comparison.md).
 - [Systemanforderungen für lokale Bereitstellungen](system-requirements-on-prem.md).
 
 > [!IMPORTANT]

@@ -11,18 +11,17 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 21761, NotInToc
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f5670f6a580249491ad16ae46470160545bb8f91
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 4757d506239e309dcbc3e181469b17e3286cc111
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248712"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695114"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool-Tutorial einrichten und installieren
 Dieses Thema ist ein Tutorial, mit dem Sie RSAT sowie die Tools einrichten und verwenden können, die der Verwendung von RSAT zugeordnet werden. 
@@ -151,7 +150,7 @@ Wenn Sie zuvor ein neues Azure DevOps-Projekt erstellt haben, konfigurieren Sie 
     ![Schritt 1 in „Einrichten von Visual Studio Team Services“](./media/setup_rsa_tool_13.png)
 
 5. Wählen Sie **Fortsetzen** aus.
-6. Wählen Sie im Feld **Visual Studio Team Services-Projekt** das VSTS-Projekt auf der ausgewählten Website aus, die mit dem LCS-Projekt verknüpft werden soll. Das Feld**Vorlage verarbeiten** wird standardmäßig auf **Agile** festgelegt. Für eine benutzerdefinierte Vorlage überprüfen Sie den Leitfaden zu bewährten Methoden im Abschnitt [Neues Azure DevOps-Projekt erstellen ](#create-a-new-azure-devops-project). Wählen Sie dann **Fortsetzen** aus.
+6. Wählen Sie im Feld **Visual Studio Team Services-Projekt** das VSTS-Projekt auf der ausgewählten Website aus, die mit dem LCS-Projekt verknüpft werden soll. Das Feld **Vorlage verarbeiten** wird standardmäßig auf **Agile** festgelegt. Für eine benutzerdefinierte Vorlage überprüfen Sie den Leitfaden zu bewährten Methoden im Abschnitt [Neues Azure DevOps-Projekt erstellen ](#create-a-new-azure-devops-project). Wählen Sie dann **Fortsetzen** aus.
 
     ![Schritt 2 in „Einrichten von Visual Studio Team Services“](./media/setup_rsa_tool_14.png)
 
@@ -387,7 +386,7 @@ Um die Authentifizierung zu aktivieren, müssen Sie ein Zertifikat auf dem gleic
 
     ![AOSService in der Website-Liste](./media/setup_rsa_tool_49.png)
 
-3. Klicken Sie mit der rechten Maustaste auf **Erkunden**, um **\<Laufwerk\>: \\AosService\\Webroot**-Ordners zu öffnen. Suchen Sie die Datei **wif.config**.
+3. Klicken Sie mit der rechten Maustaste auf **Erkunden**, um den Ordner **\<Drive\>: \\AosService\\Webroot** zu öffnen. Suchen Sie die Datei **wif.config**.
 
     ![Wif.config-Datei im Webroot-Ordner](./media/setup_rsa_tool_50.png)
 
@@ -407,7 +406,7 @@ Um die Authentifizierung zu aktivieren, müssen Sie ein Zertifikat auf dem gleic
     ```
 
     > [!NOTE]
-    > Wenn mehrere Benutzer dieselbe Anwendung verwenden, muss jeder Benutzer separate Fingerabdrücke generieren, und jeder dieser Fingerabdrücke muss dem Abschnitt **\<Schlüssel\>** hinzugefügt werden.
+    > Wenn mehrere Benutzer dieselbe Anwendung verwenden, muss jeder Benutzer separate Fingerabdrücke generieren und jeder dieser Fingerabdrücke muss dem Abschnitt **\<keys\>** hinzugefügt werden.
 
 5. Sind es mehrere AOS-Computer gibt, wiederholen Sie die Schritte 3 bis 4 für jeden weiteren Computer.
 
@@ -501,7 +500,7 @@ In den Vorgängerversionen von RSAT mussten Sie Selenium- und Browsertreiber ein
     - **Zugriffstoken** – Geben Sie das Zugriffstoken ein, mit dem das Tool eine Verbindung mit Azure DevOps herstellen kann. Verwenden Sie das persönliche Zugriffstoken, Sie zuvor in diesem Lernprogramm erstellt haben. Weitere Informationen finden Sie unter [Authentifizieren des Zugriffs mit persönlichen Zugriffstoken](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate).
     - **Projektname** – Wählen Sie den Namen Ihres Azure DevOps-Projekts aus.
     - **Testplan** – Wählen Sie den Azure DevOps-Testplan aus, der die Testfälle enthält. Weitere Informationen finden Sie unter [Erstellen von Testplänen und Testsuiten](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan). Nachdem Sie einen Testplan ausgewählt haben, wählen Sie **Verbindung testen** aus, um die Verbindung mit Azure DevOps zu testen.
-    - **Hostname** – Geben Sie den Hostnamen der Testumgebung ein, z. B. **\<myaos\>.cloudax.dynamics.com** Schließen Sie kein **https://** oder **http://** Präfix ein.
+    - **Hostname** – Geben Sie den Hostnamen der Testumgebung ein, z. B. **\<myaos\>.cloudax.dynamics.com**. Schließen Sie kein **https://** oder **http://** Präfix ein.
     - **SOAP Hostname** – Geben Sie den SOAP-Hostnamen der Testumgebung ein. Normalerweise entspricht der SOAP-Hostname dem Hostnamen, hat aber ein **soap**-Suffix. Es folgt ein Beispiel: **\<myaos\>soap.cloudax.dynamics.com**. Schließen Sie kein **https://** oder **http://** Präfix ein.
 
         > [!NOTE]
@@ -563,7 +562,7 @@ In den Vorgängerversionen von RSAT mussten Sie Selenium- und Browsertreiber ein
 
     ![Desktopauflösung auf 100 % eingestellt](./media/setup_rsa_tool_68.png)
 
-6. Wenn die Browsertreiber nicht im System installiert sind, erhalten Sie folgende Warnmeldung: „Dieser Vorgang erfordert den Treiber \<Browsername\>. Möchten Sie ihn jetzt automatisch herunterladen und installieren?“ Wählen Sie **Ja** aus.
+6. Wenn die Browsertreiber nicht im System installiert sind, erhalten Sie folgende Warnmeldung: „Dieser Vorgang erfordert den Treiber für \<browser name\>. Möchten Sie ihn jetzt automatisch herunterladen und installieren?“ Wählen Sie **Ja** aus.
 
     ![Warnmeldung für Internet Explorer](./media/setup_rsa_tool_69.png)
 

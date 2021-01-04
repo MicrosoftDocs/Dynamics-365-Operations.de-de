@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 94b68138066867fad641c70a1674c9292920ec6a
-ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
+ms.openlocfilehash: 4fe97ca8e1eecdc064ad4d21d5acdeade9f33d9c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3970678"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694494"
 ---
 # <a name="create-alert-rules"></a>Erstellen von Warnregeln
 
@@ -74,7 +73,7 @@ Klicken Sie auf dem Inforegister **Warnen mit** des Dialogfelds **Warnregel erst
 
 ## <a name="user-id"></a>Benutzer-ID
 
-Auf der Registerkarte **Warnung durch**im Dialogfeld **Warnungsregel erstellen** können Sie definieren, welcher Benutzer die Warnmeldungen erhalten soll. Standardmäßig wird Ihre Benutzerkennung ausgewählt. Die Möglichkeit, den Benutzer, der die Warnung erhält, zu ändern, ist auf Administratoren der Organisation beschränkt.
+Auf der Registerkarte **Warnung durch** im Dialogfeld **Warnungsregel erstellen** können Sie definieren, welcher Benutzer die Warnmeldungen erhalten soll. Standardmäßig wird Ihre Benutzerkennung ausgewählt. Die Möglichkeit, den Benutzer, der die Warnung erhält, zu ändern, ist auf Administratoren der Organisation beschränkt.
 
 ## <a name="alerts-as-business-events"></a>Warnungen als Geschäftsereignisse
 
@@ -85,7 +84,7 @@ Warnungen können über das Event-Framework extern gesendet werden. Setzen Sie b
 0. Stellen Sie sicher, dass die Warnungen-Batch-Jobs ausgeführt werden (siehe oben).
 1. Öffnen Sie das Formular, das die zu überwachenden Daten enthält.
 2. Klicken Sie alternativ im Aktivitätsbereich auf der Registerkarte **Optionen** in der Gruppe **Freigeben** auf **Benutzerdefinierte Warnungsregek** erstellen.
-3. Aktivieren Sie im Formular **Warnregel erstellen** in der Liste **Feld**das Feld, das überwacht werden soll.
+3. Aktivieren Sie im Formular **Warnregel erstellen** in der Liste **Feld** das Feld, das überwacht werden soll.
 4. Wählen Sie im Feld **Ereignis** den Typ des Berechtigungsereignisses aus.
 5. Wählen Sie auf der Registerkarte **Warnen für** die gewünschte Option. Wenn Sie die Warnung als Geschäftsereignis senden möchten, stellen Sie sicher, dass **Organisationsweit** auf **Nein** gesetzt ist.
 6. Wenn die Warnregel an einem bestimmten Datum deaktiviert werden soll, wählen Sie im Abschnitt **Warnung bis** ein Enddatum aus.

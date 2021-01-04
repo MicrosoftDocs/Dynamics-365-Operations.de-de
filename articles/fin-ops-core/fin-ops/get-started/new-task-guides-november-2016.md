@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 270894
 ms.assetid: 1b90768d-8bf7-4e35-90c0-65962fea5d26
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40317cdef777ca6524feb66caf66ddec3d855d32
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 56545e56201180bf73420bf73f9a9f6e7a426b33
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811600"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695036"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Neue oder aktualisierte Aufgabenleitfäden (November 2016)
 
@@ -30,7 +29,7 @@ ms.locfileid: "2811600"
 
 Dieses Thema führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (November 2016 – alle Sprachen) für Microsoft Dynamics 365 for Operations auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht.
 
-Die APQC Unified-Bibliothek (November 2016 – alle Sprachen) enthält Aufgabenleitfäden zur Hilfe bei Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations – Plattformupdate 3, Microsoft Dynamics AX – Plattformupdate 2, Dynamics AX-Update vom Mai 2016 und Microsoft Dynamics AX-Version vom Februar 2016. Weitere Informationen zu diesen Releases finden Sie unter [Was ist neu oder geändert auf der Homepage von Finance and Operations](whats-new-changed.md). Lokalisierte Versionen der Aufgabenleitfäden sind in dieser Bibliothek verfügbar. Weitere Informationen zum Verbinden des Hilfesystems mit einer Aufgabenleitfadenbibliothek finden Sie unter [Hilfesystem](help-overview.md).
+Die APQC Unified-Bibliothek (November 2016 – alle Sprachen) enthält Aufgabenleitfäden zur Hilfe bei Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations – Plattformupdate 3, Microsoft Dynamics AX – Plattformupdate 2, Dynamics AX-Update vom Mai 2016 und Microsoft Dynamics AX-Version vom Februar 2016. Weitere Informationen zu diesen Versionen, finden Sie unter [Seite zu Neuerungen oder Änderungen in Finance and Operations](whats-new-changed.md). Lokalisierte Versionen der Aufgabenleitfäden sind in dieser Bibliothek verfügbar. Weitere Informationen zum Verbinden des Hilfesystems mit einer Aufgabenleitfadenbibliothek finden Sie unter [Hilfesystem](help-overview.md).
 
 > [!NOTE]
 > :Das Sternchen (\*) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass der Aufgabenleitfaden für diesen Geschäftsprozess für das Dynamics 365 for Operations-Update vom November 2016 erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.

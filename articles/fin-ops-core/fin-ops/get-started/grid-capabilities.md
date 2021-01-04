@@ -3,7 +3,7 @@ title: Rasterfunktionen
 description: In diesem Thema werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Die neue Rasterfunktion muss aktiviert sein, damit auf diese Fähigkeiten zugegriffen werden kann.
 author: jasongre
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835085"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693773"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Die neue Rastersteuerung bietet eine Reihe nützlicher und leistungsfähiger Funktionen, mit denen die Benutzerproduktivität gesteigert, interessantere Ansichten Ihrer Daten erstellt und Sie aussagekräftige Einblicke in Ihre Daten gewinnen können. Dieser Artikel deckt die folgenden Funktionen ab: 
 
@@ -95,21 +95,23 @@ Als Produktivitätssteigerung können Benutzer mathematische Formeln in numerisc
 Damit das System einen Wert als Ausdruck erkennt, müssen Sie vor dem Wert ein Gleichheitszeichen (**=**) angeben. Mehr Informationen zu den unterstützten Operatoren und zur Syntax finden Sie unter [Unterstützte mathematische Symbole](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppieren von Tabellendaten
-[!include [preview banner](../includes/preview-banner.md)]
+Geschäftsanwender müssen häufig Ad-hoc-Datenanalysen durchführen. Während dies durch das Exportieren von Daten nach Microsoft Excel und die Nutzung von Pivot-Tabellen geschehen kann, ermöglicht die Funktion **Gruppierung in Rastern**, die im Allgemeinen in Version 10.0.16/Plattform-Update 40 erhältlich ist und die von der neuen Rastersteuerungsfunktion abhängt, Benutzern auf effektive Weise die Organisation ihrer Tabellendaten in Finance and Operations-Apps. Da diese Funktion die **Summen**-Funktion erweitert, ermöglicht die Funktion **Gruppieren** wichtige Einblicke in die Daten zu gewinnen, indem Zwischensummen auf Gruppenebene bereitgestellt werden.
 
-Geschäftsanwender müssen häufig Ad-hoc-Datenanalysen durchführen. Während dies durch das Exportieren von Daten nach Microsoft Excel und der Nutzung von Pivot-Tabellen geschehen kann, ermöglicht die Funktion **(Vorschau) Gruppierung in Rastern**, die von der neuen Rastersteuerungsfunktion abhängt, Benutzern, ihre Tabellendaten auf effektive Weise in Finance and Operations-Apps zu organisieren. Da diese Funktion die **Summen**-Funktion erweitert, ermöglicht die Funktion **Gruppieren** wichtige Einblicke in die Daten zu gewinnen, indem Zwischensummen auf Gruppenebene bereitgestellt werden.
-
-Um diese Funktion zu verwenden, klicken Sie mit der rechten Maustaste auf die Spalte, nach der Sie gruppieren möchten, und wählen die Option für **Nach dieser Spalte gruppieren** aus. Diese Aktion sortiert die Daten nach der ausgewählten Spalte, fügt eine neue **Gruppe nach Spalte** am Anfang des Rasters hinzu und fügt „Kopfzeilen“ am Anfang jeder Gruppe ein. Diese Kopfzeilen enthalten die folgenden Informationen zu jeder Gruppe: 
+Um diese Funktion zu verwenden, klicken Sie mit der rechten Maustaste auf die Spalte, nach der Sie gruppieren möchten, und wählen die Option für **Nach dieser Spalte gruppieren** aus. Diese Aktion sortiert die Daten nach der ausgewählten Spalte, fügt eine neue Spalte **Gruppieren nach** am Anfang des Rasters hinzu und fügt „Kopfzeilen“ am Anfang jeder Gruppe ein. Diese Kopfzeilen enthalten die folgenden Informationen zu jeder Gruppe: 
 -  Datenwert für die Gruppe 
--  Spaltenname (Diese Information ist besonders nützlich, wenn mehrere Gruppierungsebenen unterstützt werden).  
+-  Spaltenname (Diese Information ist besonders nützlich, wenn mehrere Gruppierungsebenen unterstützt werden.)  
 -  Anzahl der Datenzeilen in dieser Gruppe
 -  Zwischensummen für jede Spalte, die zur Anzeige von Gesamtsummen konfiguriert ist
 
 Wenn [Gespeicherte Ansichten](saved-views.md) aktiviert ist, kann diese Gruppierung im Rahmen der Personalisierung als Teil einer Ansicht gespeichert werden, damit Sie beim nächsten Besuch der Seite schnell darauf zugreifen können.  
 
-Wenn Sie **Gruppe nach dieser Spalte** für eine andere Spalte wählen, wird die ursprüngliche Gruppierung ersetzt, da seit Version 10.0.9/Plattform-Update 33 nur eine Gruppierungsebene unterstützt wird.
+### <a name="multiple-levels-of-grouping"></a>Mehrere Gruppierungsebenen
+Nachdem Sie Daten nach einer einzelnen Spalte gruppiert haben, können Sie die Daten durch Auswahl von **Nach dieser Spalte gruppieren** für die gewünschte Spalte nach einer anderen Spalte gruppieren. Dieser Prozess kann wiederholt werden, bis Sie 5 verschachtelte Gruppierungsebenen haben. Dies ist die maximal unterstützte Tiefe. Ab diesem Zeitpunkt können Sie nicht mehr nach zusätzlichen Spalten gruppieren.  
 
-Um die Gruppierung in einem Raster rückgängig zu machen, klicken Sie mit der rechten Maustaste auf die Gruppierungsspalte und wählen Sie **Gruppierung aufheben** aus.  
+Sie können die Gruppierung für jede Spalte jederzeit entfernen, indem Sie mit der rechten Maustaste auf diese Spalte klicken und **Gruppierung aufheben** auswählen. Sie können die Gruppierung auch für alle Spalten entfernen, indem Sie **Rasteroptionen** und dann **Gruppierung für alle aufheben** auswählen.   
+
+Beachten Sie, dass vor Version 10.0.16/Plattform-Update 40 nur eine Gruppierungsebene unterstützt wird. In diesen Versionen wird die ursprüngliche Gruppierung ersetzt, wenn die Daten gruppiert sind und Sie **Nach dieser Spalte gruppieren** für eine andere Spalte auswählen.  
+
 
 ### <a name="expanding-and-collapsing-groups"></a>Gruppen erweitern und reduzieren
 Bei der anfänglichen Gruppierung von Daten werden alle Gruppen erweitert. Sie können zusammengefasste Ansichten der Daten erstellen, indem Sie einzelne Gruppen reduzieren, oder Sie können das Erweitern und Reduzieren von Gruppen verwenden, um die Navigation durch die Daten zu erleichtern. Um eine Gruppe zu erweitern oder zu reduzieren, wählen Sie die Schaltfläche Chevron (>) in der entsprechenden Gruppenkopfzeile. Beachten Sie: Der Status zum Erweitern/Reduzieren einzelner Gruppen lautet: **nicht** in der Personalisierung gespeichert.
@@ -165,24 +167,41 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteue
     -  Auf der Seite gibt es eine gruppierte Kartenliste.
     -  Eine Rasterspalte mit einem nicht reagierenden erweiterbaren Steuerelement.
 
-    Tritt diese Situation zum ersten Mal auf, wird eine Meldung zum Aktualisieren der Seite angezeigt. Nachdem diese Meldung angezeigt wird, verwendet die Seite das vorhandene Raster für alle Benutzer bis zur nächsten Aktualisierung der Produktversion weiter. Für ein zukünftiges Update wird an einem besseren Umgang mit diesen Szenarien gearbeitet, damit das neue Raster genutzt werden kann.     
+    Tritt diese Situation zum ersten Mal auf, wird eine Meldung zum Aktualisieren der Seite angezeigt. Nachdem diese Meldung angezeigt wird, verwendet die Seite das vorhandene Raster für alle Benutzer bis zur nächsten Aktualisierung der Produktversion weiter. Für ein zukünftiges Update wird an einem besseren Umgang mit diesen Szenarien gearbeitet, damit das neue Raster genutzt werden kann.    
+    
+-  [KB 4582758] Datensätze sind verschwommen, wenn Sie den Zoom von 100 auf einen anderen Prozentsatz ändern
+    
+### <a name="fixed-as-part-of-10015"></a>Als Teil von 10.0.15 behoben    
+
+-  [KB 4582723] Anzeigeoptionen werden nicht angezeigt, wenn sie später im Formularlebenszyklus ausgeführt werden
+
+### <a name="fixed-as-part-of-10014"></a>Als Teil von 10.0.14 behoben
+
+-  (Qualitätsaktualisierung) [KB 4584752] Unerwarteter Clientfehler auf der Seite mit den Projektrechnungsvorschlägen
 
 ### <a name="fixed-as-part-of-10013"></a>Als Teil von 10.0.13 behoben
 
+-  (Qualitätsaktualisierung) [KB 4583880] Tests in Regression Suite Automation Tool (RSAT) schlagen bei OpenLookup-Aktion mit „Nicht definierte Eigenschaft RowIndex kann nicht gelesen werden“ fehl.
+-  (Qualitätsaktualisierung) [KB 4583847] Unerwarteter Clientfehler beim Navigieren durch Suchvorgänge 
+-  (Qualitätsaktualisierung) [Bug 471777] Felder in einem Raster können nicht zum Bearbeiten oder Erstellen einer mobilen App ausgewählt werden
+-  [Bug 474851] Hyperlinks in Referenzgruppen-Steuerelementen funktionieren nicht 
+-  [Bug 474848] Erweiterte Vorschauen mit Rastern werden nicht angezeigt
+-  [KB 4582726] Die Eigenschat RotateSign wird nicht berücksichtigt  
 -  [Bug 470173] Kontrollkästchen in inaktiven Zeilen werden umgeschaltet, wenn auf das Leerzeichen in der Zelle geklickt wird
 -  [Bug 474848] Erweiterte Vorschauen mit Rastern werden nicht angezeigt
--  [Bug 474851] Hyperlinks in Referenzgruppensteuerelementen funktionieren nicht 
+-  [Bug 474851] Hyperlinks in Referenzgruppen-Steuerelementen funktionieren nicht 
 -  [Bug 471777] Felder in einem Raster können nicht zum Bearbeiten oder Erstellen einer mobilen App ausgewählt werden
 -  [KB 4569441] Probleme beim Rendern mehrspaltiger Kartenlisten, QuickInfos für Bilder und Anzeigeoptionen für einige Felder
 -  [KB 4575279] Nicht alle markierten Zeilen werden aus der allgemeinen Erfassung gelöscht
 -  [KB 4575233] Anzeigeoptionen werden nach dem Verschieben in eine andere Zeile nicht wiederhergestellt
+-  [Bug 477884] Suchvorgänge geben einen falschen Wert/Datensatz zurück, wenn die neue Rastersteuerung aktiviert ist
 -  [KB 4571095] Die Buchung des Produktzugangs erfolgt, wenn versehentlich die Eingabetaste gedrückt wird (korrekte Behandlung der Standardaktivität einer Seite)
 -  [KB 4575437] Suchvorgänge mit bearbeitbaren Steuerelementen werden unerwartet geschlossen
 -  [KB 4569418] Doppelte Zeile im Lieferzeitplan erstellt
 -  [KB 4575435] Die verbesserte Vorschau bleibt manchmal bestehen, auch wenn sich der Mauszeiger nicht in der Nähe des Felds befindet
 -  [KB 4575434] Die Suche filtert nicht, wenn das Feld geändert wurde
 -  [KB 4575430] Werte in Kennwortfeldern werden im Raster nicht maskiert
--  [KB 4569438] Nach dem Markieren von Zeilen beim Abwickeln von Lieferantentransaktionen wird „Die Verarbeitung wurde aufgrund eines Validierungsproblems gestoppt“ angezeigt
+-  [KB 4569438] Nach dem Markieren von Zeilen beim Abwickeln von Lieferantentransaktionen wird „Die Verarbeitung wurde aufgrund eines Prüfungsproblems gestoppt“ angezeigt
 -  [KB 4569434] Das Aktualisieren des Formulars für juristische Personen führt zu weniger Datensätzen
 -  [KB 4575297] Der Fokus bewegt sich beim Bearbeiten und Durchblättern eines Rasters immer wieder zur Aufgabenaufzeichnung
 -  [KB 4566773] Korrekturtransaktionen werden bei der Belegbuchungsanfrage nicht als negativ angezeigt 
@@ -196,7 +215,7 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteue
 - [KB 4558545] Tabellensteuerelemente aktualisieren den Inhalt der angezeigten Elemente nicht.
 - [KB 4558570] Elemente werden nach dem Löschen des Datensatzes weiterhin auf der Seite angezeigt.
 - [KB 4558572] Stilelemente, die dem Listenfenster **ExtendedStyle** zugeordnet sind, werden nicht angewendet.
-- [KB 4558573] Validierungsfehler können nicht behoben werden, wenn sich die erforderliche Änderung außerhalb des Rasters befindet.
+- [KB 4558573] Prüfungsfehler können nicht behoben werden, wenn sich die erforderliche Änderung außerhalb des Rasters befindet.
 - [KB 4558584] Negative Zahlen werden nicht korrekt gerendert.
 - [KB 4560726] Ein unerwarteter Clientfehler tritt auf, nachdem der Austausch zwischen Listen mithilfe eines Listenansicht-Steuerelements erfolgt ist.
 - [KB 4562141] Rasterindizes sind deaktiviert, nachdem ein neuer Datensatz hinzugefügt wurde.
@@ -205,9 +224,9 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteue
 - [KB 4562646] Sie können zeitweise nicht außerhalb des Rasters klicken, nachdem Sie einige Zeilen mehrfach ausgewählt haben.
 - [KB 4562647] Fokus wird auf das erste Steuerelement im Dialogfeld **Veröffentlichen** zurückgesetzt, nachdem eine neue Zeile im Sicherheitsrollenraster hinzugefügt wurde.
 - [KB 4563310] Die erweiterte Vorschau wird nach dem Ändern einer Zeile nicht geschlossen.
-- [KB 4563313] Ein unerwarteter Clientfehler tritt im Internet Explorer auf, wenn ein Wert in einer Suche ausgewählt wird.
-- [KB 4564557] Suchvorgänge und Drop-down-Menüs werden nicht im Internet Explorer geöffnet
-- [KB 4563324] Navigation funktioniert nachdem der **Personalmanagement** Arbeitsbereich geöffnet wurde.
+- [KB 4563313] Ein unerwarteter Clientfehler tritt in Internet Explorer auf, wenn ein Wert in einer Suche ausgewählt wird.
+- [KB 4564557] Suchvorgänge und Drop-down-Menüs werden in Internet Explorer nicht geöffnet
+- [KB 4563324] Navigation funktioniert nachdem der Arbeitsbereich **Personalmanagement** geöffnet wurde.
 
 ### <a name="fixed-as-part-of-10011"></a>Als Teil von 10.0.11 behoben
 
@@ -216,16 +235,16 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteue
 - [KB 4558374] Datensätze, für die ein polymorphes Auswahldialogfeld erforderlich ist, können nicht erstellt werden.
 - [KB 4558375] Hilfetext wird in den Spalten des neuen Rasters nicht angezeigt.
 - [KB 4558376] Listenbedienfeldraster werden in Internet Explorer nicht in der richtigen Höhe gerendert.
-- [KB 4558377] Kombinationsfeldspalten mit **SizeToAvailable**-Breite werden auf einigen Seiten nicht gerendert.
+- [KB 4558377] Kombinationsfeldspalten mit der Breite **SizeToAvailable** werden auf einigen Seiten nicht gerendert.
 - [KB 4558378] Drillthrough öffnet manchmal den falschen Datensatz.
 - [KB 4558379] Ein Fehler tritt auf, wenn Suchvorgänge geöffnet werden, wenn **ReplaceOnLookup**=**Nein** ist.
 - [KB 4558380] Der verfügbare Platz im Raster wird nicht sofort nach dem Reduzieren eines Teils der Seite gefüllt.
-- [KB 4558381] Negative Zahlen werden nicht korrekt gerendert/Benutzer bleiben manchmal hängen, nachdem Validierungsprobleme aufgetreten sind.
+- [KB 4558381] Negative Zahlen werden nicht korrekt gerendert/Benutzer bleiben manchmal hängen, nachdem Prüfungsprobleme aufgetreten sind.
 - [KB 4558382] Unerwartete Clientfehler treten auf.
 - [KB 4558383] Steuerelemente außerhalb des Rasters werden nicht aktualisiert, nachdem der letzte Datensatz gelöscht wurde.
 - [KB 4558587] Referenzgruppen mit Kombinationsfeldern für Ersatzfelder zeigen keine Werte an.
 - [KB 4562143] Felder werden nach einem Zeilenwechsel nicht aktualisiert/die Rasterverarbeitung bleibt nach dem Löschen der Zeilen hängen.
-- [KB 4562645] Eine Ausnahme tritt auf, wenn eine Suche geöffnet wird, während Remote Server Administration Tools ausgeführt werden.
+- [KB 4562645] Eine Ausnahme tritt auf, wenn eine Suche geöffnet wird, während Tests in Regression Suite Automation Tool (RSAT) ausgeführt werden.
 
 ### <a name="fixed-as-part-of-10010"></a>Als Teil von 10.0.10 behoben
 
