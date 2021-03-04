@@ -1,5 +1,5 @@
 ---
-title: Erkennen verzögerter Umsatzerlöse
+title: Verzögerte Umsatzerlöse erkennen
 description: Dieses Thema enthält Informationen zum Erkennen von Umsatzerlösen mithilfe der Umsatzerkennungsfunktion.
 author: kweekley
 manager: aolson
@@ -11,24 +11,23 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e70f2e6b3694002a11a831ac14039ccbee273a51
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459090"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115919"
 ---
-# <a name="recognize-deferred-revenue"></a>Erkennen verzögerter Umsatzerlöse
+# <a name="recognize-deferred-revenue"></a>Verzögerte Umsatzerlöse erkennen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Die Umsatzerkennungsfunktion kann nicht über die Funktionsverwaltung aktiviert werden. Sie müssen derzeit Konfigurationsschlüssel verwenden, um sie zu aktivieren.
+> Die Funktion zur Umsatzerkennung kann nicht mithilfe der Funktionsverwaltung aktiviert werden. Derzeit erfolgt die Aktivierung mit Konfigurationsschlüsseln.
 
 In diesem Thema wird die Erkennung von Umsatzerlösen im Umsatzerkennungszeitplan beschrieben. Nachdem eine Rechnung für einen Auftrag gebucht wurde, wird ein Umsatzerkennungszeitplan für jede Auftragsposition erstellt, die einen Umsatzerlöszeitplan hat. Der Umsatzerlöszeitplan in einer Position wird verwendet, um zu bestimmen, ob der Umsatz der Position verzögert werden soll.
 
@@ -37,11 +36,11 @@ In diesem Thema wird die Erkennung von Umsatzerlösen im Umsatzerkennungszeitpla
 Es gibt zwei Möglichkeiten, auf die Details des Umsatzerkennungszeitplans zuzugreifen.
 
 - Sie können den Umsatzerkennungszeitplan direkt über einen fakturierten Auftrag öffnen. In diesem Fall werden die Informationen im Umsatzerlöszeitplan gefiltert, sodass nur die Details für den ausgewählten Auftrag angezeigt werden. Dieser Ansatz ist hilfreich, wenn Sie die Zeitplandetails für einen Auftrag prüfen.
-- Sie können den Umsatzerkennungszeitplan über die Seite **Umsatzerkennung \> Periodische Aufgaben** öffnen. Dieser Ansatz wird häufig verwendet, wenn der Umsatzerlös am Ende einer Periode erfasst wird. Beim ersten Öffnen der Seite werden keine Informationen angezeigt. Verwenden Sie die Filter über dem Raster, um die anzuzeigenden Kriterien für die Zeitplandetails zu definieren. Sie können die Rechnungsdaten filtern, indem Sie einen Datumsbereich, einen Auftrag, einen Debitor, eine Projektkennung oder einen Status eingeben.
+- Sie können den Umsatzerkennungszeitplan über die Seite **Umsatzerkennung \> Periodische Aufgaben** öffnen. Dieser Ansatz wird häufig verwendet, wenn der Umsatzerlös am Ende einer Periode erfasst wird. Beim ersten Öffnen der Seite werden keine Informationen angezeigt. Verwenden Sie die Filter über dem Raster, um die anzuzeigenden Kriterien für die Zeitplandetails zu definieren. Sie können die Rechnungsdaten filtern, indem Sie einen Zeitraum, einen Auftrag, einen Debitor, eine Projektkennung oder einen Status eingeben.
 
-[![Seite „Umsatzerlöszeitpläne“](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+[![Abbildung der Seite „Umsatzerlöszeitpläne“](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
 
-Im Inforegister **Finanzdimension** unter dem Raster werden die Finanzdimensionen der Auftragsposition angezeigt. Diese Dimensionen wurden während der Buchung in den verzögerten Umsatzerlösen berücksichtigt. Sie werden auch bei der Erfassung der Umsatzerlöse einbezogen. Welche Dimensionswerte verwendet werden, hängt von der Kontostruktur ab, die den Hauptkonten für den Umsatzerlös und den verzögerten Umsatzerlös zugewiesen wurde.
+Die Finanzdimensionen der Auftragsposition werden unter dem Raster im Inforegister **Finanzdimension** angezeigt. Diese Dimensionen wurden während der Buchung in den verzögerten Umsatzerlösen berücksichtigt. Sie werden auch bei der Erfassung der Umsatzerlöse einbezogen. Welche Dimensionswerte verwendet werden, hängt von der Kontostruktur ab, die den Hauptkonten für den Umsatzerlös und den verzögerten Umsatzerlös zugewiesen wurde.
 
 ## <a name="recognize-revenue"></a>Erkennen von Umsatzerlösen
 

@@ -1,5 +1,5 @@
 ---
-title: Umsatzerkennung für Aufträge
+title: Umsatzerkennung bei Aufträgen
 description: In diesem Thema werden die grundlegenden Funktionen für die Erkennung von Umsatzerlösen für Aufträge und Rechnungen beschrieben. Umsatzerkennung ist für den Auftrag und für die entsprechende Rechnung verfügbar, die aus dem Auftrag erstellt wird.
 author: kweekley
 manager: aolson
@@ -11,24 +11,23 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 6e2eafc6785aaf9bc7421bc80c90fa4a7f98a2d4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6212ecbf1883405d7ca8cb1dba752b778e4d901c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459063"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995541"
 ---
-# <a name="revenue-recognition-on-sales-orders"></a>Umsatzerkennung für Aufträge
+# <a name="revenue-recognition-on-sales-orders"></a>Umsatzerkennung bei Aufträgen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Die Umsatzerkennungsfunktion kann nicht über die Funktionsverwaltung aktiviert werden. Sie müssen derzeit Konfigurationsschlüssel verwenden, um sie zu aktivieren.
+> Die Funktion zur Umsatzerkennung kann nicht mithilfe der Funktionsverwaltung aktiviert werden. Derzeit erfolgt die Aktivierung mit Konfigurationsschlüsseln.
 
 In diesem Thema werden die grundlegenden Funktionen für die Erkennung von Umsatzerlösen für Aufträge und Rechnungen beschrieben. Umsatzerkennung ist für den Auftrag und für die entsprechende Rechnung verfügbar, die aus dem Auftrag erstellt wird. Der Auftrag kann auch in einem Aufwandsprojekt erstellt werden.
 
