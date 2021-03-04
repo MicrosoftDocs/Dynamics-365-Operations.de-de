@@ -39,3 +39,5 @@ Manager können Abwesenheitsanträge über den Arbeitsbereich **Mitarbeiter Selb
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
 - [Einen Urlaubs- und Abwesenheitsplan erstellen](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Nach dem Einrichten des Zahlungsbelegformats für Verkaufsrechnungen, Freitextre
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

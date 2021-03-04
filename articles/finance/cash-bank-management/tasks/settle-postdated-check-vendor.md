@@ -52,3 +52,6 @@ Die Rolle dieser Prozedur ist "Finanzverwalter". Für diese Prozedur wird das De
 10. Klicken Sie auf Beleg.
 11. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

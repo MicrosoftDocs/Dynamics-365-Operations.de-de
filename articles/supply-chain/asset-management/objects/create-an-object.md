@@ -116,3 +116,6 @@ Auf diesem Inforegister können Sie die Wartungsdurchgänge hinzufügen oder ent
 ## <a name="financial-dimensions"></a>Finanzdimensionen
 
 Sie können die Finanzdimensionen für die Anlagen auswählen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

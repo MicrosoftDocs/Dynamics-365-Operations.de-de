@@ -74,3 +74,6 @@ Ziel dieser Prozedur ist es, eine notwendige Einstellung für eine feste Fertigu
     * Dieses erstellt 5 Kanbans.  
     * Beachten Sie, dass 5 Kanbans mit jeweils 10 für diese Kanban-Produktionsregel erstellt wurden. Dies ist der letzte Schritt in diesem Verfahren.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

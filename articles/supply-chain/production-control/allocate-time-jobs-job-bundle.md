@@ -111,3 +111,6 @@ Die korrigierten Kosten pro Stunde und die Einzelvorgangszeit werden in einer Pr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

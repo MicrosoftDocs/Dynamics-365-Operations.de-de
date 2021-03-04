@@ -36,3 +36,6 @@ Produktionsrückmeldung gibt Arbeitskräften Feedback zu Produktionseinzelvorgä
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

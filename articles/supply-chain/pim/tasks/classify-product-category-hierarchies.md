@@ -43,3 +43,6 @@ In diesem Thema wird beschrieben, wie mithilfe von Kategoriehierarchien ein Prod
 11. Geben Sie im Feld **Kategorie** einen Wert ein, oder wählen Sie einen Wert aus.
 12. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen G
 9. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 10. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

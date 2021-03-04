@@ -97,3 +97,6 @@ Auf der Seite **Ersatzteile** können Sie neue Ersatzteile für vorhandene Kombi
 
 Um zu sehen, ob ein Ersatzteil auf der ausgewählten Position an anderer Stelle in der Anlagenverwaltung verwendet wird (beispielsweise in Verbindung mit Anlagen und Arbeitsaufträge), wählen Sie die Ersatzteilposition, und wählen Sie dann **Artikel, die verwendet wurden**, um die Seite **Artikel, die verwendet wurden** zu öffnen. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

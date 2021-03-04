@@ -81,3 +81,6 @@ Der Auftrag wird erneut in Zusammenhang mit dem ergänzten Artikel in Rechnung g
 [![Seite „Belegbuchungen“ mit dem zu buchenden Buchhaltungseintrag](./media/36_rev-rec-scenarios.png)](./media/36_rev-rec-scenarios.png)
 
 Weil die Summe aus Umsatzerlös und Mehrwertsteuer mehr als 319,50 US-Dollar beträgt, wird eine Differenz von 14,48 US-Dollar gebucht. Dieser Betrag gleicht den Saldo des Verrechnungskontos für Teilrechnungserlöse aus. Dieser Saldo wurde im neuen Buchhaltungseintrag aktualisiert, der nach der Neuzuteilung gebucht wurde.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

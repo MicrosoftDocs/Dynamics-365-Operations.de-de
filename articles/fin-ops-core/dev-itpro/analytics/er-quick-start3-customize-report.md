@@ -671,3 +671,6 @@ Der Status von Version 32.6.7.2 wird von **Entwurf** zu **Abgeschlossen** geän
 - [Herunterladen von EB-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes](er-download-configurations-global-repo.md)
 - [Freitextrechnung erstellen](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
 - [Benutzerdefinierte Felder erstellen und damit arbeiten](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

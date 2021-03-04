@@ -90,3 +90,6 @@ Dieses Verfahren zeigt Ihnen, wie einen Kaufvertrag über die Zuordnung von Auft
 23. Klicken Sie auf "Zugeordneter Kaufvertrag".
 24. Klicken Sie auf die Registerkarte "Erfüllung".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

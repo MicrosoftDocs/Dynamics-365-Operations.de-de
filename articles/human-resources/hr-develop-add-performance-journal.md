@@ -54,3 +54,6 @@ Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele er
 20. Geben Sie im Textfeld "Danke für die Hilfe bei der Konferenz" ein.
 21. Klicken Sie auf Senden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

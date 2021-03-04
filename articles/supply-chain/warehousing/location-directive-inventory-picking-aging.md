@@ -140,3 +140,6 @@ Die LIFO-Strategie ermittelt den Lagerplatz, der das neueste Fälligkeitsdatum e
 1. Beachten Sie, dass die Position, in der der Wert **Arbeitstyp** *Entnehmen* lautet, für **Lagerplatz** den Wert *FL-001* anzeigt. Dieser Lagerplatz enthält das Kennzeichen mit dem neuesten Fälligkeitsdatum (LIFO).
 
 In diesen Szenarien haben Sie gesehen, wie die Lagerortfälligkeitsstrategie die Arbeit an den Lagerort-Standort lenkt, der je nach ausgewählter Strategie entweder den ältesten oder neuesten Bestand enthält.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

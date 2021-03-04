@@ -45,3 +45,6 @@ Ein Produktionsauftrag kann in den folgenden Szenarien erstellt werden:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

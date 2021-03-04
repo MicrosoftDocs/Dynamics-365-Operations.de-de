@@ -439,3 +439,6 @@ In der folgenden Tabelle werden die verschiedenen Arbeitstypen beschrieben, bei 
 [Bestandsstatus](../inventory/inventory-statuses.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

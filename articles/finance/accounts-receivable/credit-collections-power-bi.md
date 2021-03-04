@@ -77,3 +77,6 @@ Der Power BI-Inhalt zu **CustCollectionsBICrossCompany** umfasst einen Bericht, 
 | Mahnschreiben         | <ul><li>Sammlungscodebeträge</li><li>Details zu Sammlungscodebeträgen</li><li>Mahnschreibenbetrag pro Unternehmen</li><li>Mahnschreibenbetrag pro Debitorengruppe</li><li>Mahnschreibenbetrag nach Region</li></ul> |
 
 Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Sie können auch die Funktionen zum Export zugrunde liegender Daten verwenden, um die zugrunde liegenden Daten zu exportieren, die in einer Visualisierung zusammengefasst sind.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

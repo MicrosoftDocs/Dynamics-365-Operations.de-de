@@ -78,3 +78,6 @@ Führen Sie die folgenden Schritte aus, um eine Excel-Arbeitsmappe zu erstellen 
 [Finanzdimensionen für Einzelhandelstransaktionen bearbeiten](edit-financial-dim.md)
 
 [Einer Excel-Arbeitsmappe zum Bearbeiten von Einzelhandelstransaktionen Felder hinzufügen](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

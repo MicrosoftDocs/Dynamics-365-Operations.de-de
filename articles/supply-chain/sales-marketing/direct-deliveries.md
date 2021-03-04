@@ -53,3 +53,6 @@ Beim Erstellen einer Direktlieferung kommen die Artikel, die Sie verkaufen, niem
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

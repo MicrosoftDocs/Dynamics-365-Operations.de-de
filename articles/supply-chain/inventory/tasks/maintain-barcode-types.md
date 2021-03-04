@@ -46,3 +46,6 @@ Dieses Verfahren zeigt Ihnen, wie eine neue Strichcodedefinition eingerichtet wi
 12. Klicken Sie auf "Speichern".
 13. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

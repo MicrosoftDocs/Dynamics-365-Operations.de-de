@@ -43,3 +43,6 @@ In diesem Thema wird erläutert, wie Sie Konflikte bei der Aufgabentrennung ermi
 1. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Sicherheit > Aufgabentrennung > Aufgabentrennungsregeln**. Wählen Sie eine Rolle aus.  
 2. Wählen Sie **Aufgaben und Rollen überprüfen** aus. Werden irgendwelche verstoßen vorhandene Rollen die ausgewählte Regel, wird eine Meldung angezeigt, die den Namen der Rolle und die Namen der Konflikte verursachenden Aufgaben enthält. Der Administrator muss entweder den Ausgleich für das Sicherheitsrisiko angeben oder Rolle ändern, sodass sie nicht die Regeln für Aufgabentrennung verstößt. Wenn keine Rollen die ausgewählte Regel verstoßen, wird eine Meldung mit, dass alle Rollen in der Kompatibilität sind.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

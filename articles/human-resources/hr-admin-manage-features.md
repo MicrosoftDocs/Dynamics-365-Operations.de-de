@@ -94,3 +94,5 @@ Bitte geben Sie keine persönlichen Daten (Informationen, die Sie identifizieren
 
 - [Neuerungen in Human Resources](hr-admin-whats-new.md)
 - [Dynamics 365 und Power Platform-Versionsveröffentlichungsplan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

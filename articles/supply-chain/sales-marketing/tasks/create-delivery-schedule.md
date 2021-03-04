@@ -65,3 +65,6 @@ Diese Prozedur zeigt, wie ein Lieferzeitplan für einen Auftrag erstellt wird. E
 22. Klicken Sie auf "OK".
 23. Klicken Sie auf "Ja".
 24. Schließen Sie die Seite.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

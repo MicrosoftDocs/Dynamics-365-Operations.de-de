@@ -60,3 +60,6 @@ Dies ist die zweite von sechs Aufgaben, die das Verfahren für Debitorenzahlunge
     * Beispiel: Wählen Sie das "DEMF-OPER" Bankkonto aus.  
 6. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -115,3 +115,6 @@ Die folgende Tabelle enthält weitere Informationen über die zusätzlichen Akti
 | Verfügbarkeit         | Zeigen Sie die VfZ-Informationen für die ausgewählte Variantenkombination für den ausgewählten Lagerplatz an. |
 | Alle Lagerplätze anzeigen   | Wechseln Sie zur standardmäßigen Lagersuchansicht und heben Sie Bestandsverfügbarkeitsinformationen für die Artikelvariante für alle Filialen in der Filiallokatorgruppe und auch in Verteilungszentren des Typs **Standard/Standard** hervor. |
 | Produktdetails anzeigen | Leiten Sie den Benutzer zur Seite **Produktdetails** des zugeordneten Produktmasters um. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

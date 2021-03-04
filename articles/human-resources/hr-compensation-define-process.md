@@ -100,3 +100,6 @@ Vergütungsprozesse werden verwendet, um neue Vergütungsbeträge und Prämien f
 10. Klicken Sie auf "Genehmigt".
     * Nachdem der Datensatz genehmigt wurde, kann er in den offiziellen Vergütungsdatensatz des Mitarbeiters geladen werden. Die neue Vergütung ist ab dem Buchungsdatum wirksam, das im Vergütungsprozess festgelegt ist.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

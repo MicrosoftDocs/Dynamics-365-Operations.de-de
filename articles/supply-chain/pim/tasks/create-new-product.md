@@ -43,3 +43,6 @@ In diesem Thema wird beschrieben, wie Sie ein neues freigegebenes Produkt erstel
 3. Geben Sie im Feld **Rückverfolgungsgruppe** einen Wert ein, oder wählen Sie einen Wert aus. Die Rückverfolgungsangabengruppe bestimmt, welche Rückverfolgungsangaben Sie für jede Transaktion für das Produkt eingeben müssen und wie es im Bestand behandelt wird.  
 4. Wählen Sie **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

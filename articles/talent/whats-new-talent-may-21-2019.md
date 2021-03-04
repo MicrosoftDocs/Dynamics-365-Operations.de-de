@@ -63,3 +63,6 @@ Organisationen brauchen ggf. bestimmte Ursachencodes für Sonderurlaubstypen, we
 ### <a name="provide-a-leave-and-absence-transaction-list-for-hr"></a>Erstellen Sie eine Urlaub- und Abwesenheitsbuchungsliste für die Personalverwaltung
 
 Die Möglichkeit zum Nachverfolgen von Mitarbeiterfreizeit und ein Verständnis dafür, wie Freizeit berechnet wird, hilft nicht nur der Personalverwaltung, Fragen von Mitarbeitern zu beantworten sondern stellt auch sicher, dass die Freizeit für Mitarbeiter korrekt ist. Personalverwaltung besitzt nun eine neue Anzeige für die Transaktionen (Zuschüsse, Abgrenzungen, Regulierungen und Anforderungen), sodass die Mitarbeiter der Personalverwaltung die Gründe hinter den Abwesenheitssalden anzeigen können.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

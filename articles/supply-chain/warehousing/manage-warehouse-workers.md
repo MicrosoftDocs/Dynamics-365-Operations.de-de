@@ -57,3 +57,6 @@ Eine Analyse der Zeit, die benötigt wird, um Arbeitsaufgaben zu verarbeiten, ka
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

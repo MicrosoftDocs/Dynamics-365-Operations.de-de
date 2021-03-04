@@ -123,3 +123,6 @@ Mit dieser Aufgabenanleitung werden "Anlagenbuchungsprofile" eingerichtet.  Dabe
 88. Geben Sie im Feld **Hauptkonto** die gewünschten Werte an.
 89. Geben Sie im Feld **Gegenkonto** die gewünschten Werte an.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

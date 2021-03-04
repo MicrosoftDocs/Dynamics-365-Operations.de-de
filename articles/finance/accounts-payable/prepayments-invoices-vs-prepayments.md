@@ -66,3 +66,6 @@ Vorauszahlungsrechnungen sind eine allgemeine Geschäftspraktik. Ein Kreditor g
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

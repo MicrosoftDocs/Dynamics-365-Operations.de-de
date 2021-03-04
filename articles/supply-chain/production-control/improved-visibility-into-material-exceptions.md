@@ -67,3 +67,6 @@ Wenn die Kachel ausgewählt ist, wird die Seite **Alle Produktionswellen** geöf
 Die Kachel **Lagerortarbeit öffnen, die Aufmerksamkeit benötigt** zeigt die Anzahl von Stücklisten- und Formelpositionen an, die für den Lagerort freigegeben wurden, die nicht verarbeitete Arbeit haben und ein Rohmaterialdatum haben, das vor dem Arbeitsbereichsdatum liegt oder mit diesem übereinstimmt. Die Positionen müssen auch durch eine Vorgangsressource verbraucht werden, die für den Filter des Arbeitsbereichs gilt.
 
 Wenn die Kachel ausgewählt ist, wird die Seite **Alle Arbeit** geöffnet. Diese Seite wird durch die Anzahl offener Arbeitskopfzeilen gefiltert, die Arbeitspositionen freigegebener Stücklisten- und Formelpositionen enthalten, die die Kriterien für die Kachel erfüllen. Über die Seite **Alle Arbeit** können Sie manuell die Arbeit verarbeiten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

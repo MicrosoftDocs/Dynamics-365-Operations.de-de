@@ -51,3 +51,6 @@ Wenn Sie Ausreißer ausschließen, können Sie die Prognosegenauigkeit verbesser
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

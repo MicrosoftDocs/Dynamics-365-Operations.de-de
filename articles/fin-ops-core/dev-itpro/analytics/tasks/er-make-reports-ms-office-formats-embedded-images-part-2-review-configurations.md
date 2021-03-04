@@ -91,3 +91,6 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
     * Einige Beschriftungen, die auf dem vorgedruckten Scheckformular produziert werden, werden in den Bericht einbezogen, falls sie für Testzwecke erstellt wurden. Allerdings werden die nicht während des tatsächlichen Drucks gedruckt, da das vorgedruckte Formular diese ie bereits beinhaltet.  
 15. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

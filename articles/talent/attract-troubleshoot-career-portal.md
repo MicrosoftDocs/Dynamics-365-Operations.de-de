@@ -72,3 +72,5 @@ Weisen Sie dem Talent Relationship Team die Talent-Benutzerrolle zu.
 
    1. Melden Sie sich über ein neues Browserfenster im Karriereportal an.
    2. Bewerben Sie sich über das Karriereportal auf die Stelle. 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

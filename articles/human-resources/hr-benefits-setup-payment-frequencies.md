@@ -56,3 +56,6 @@ Die Felder für die Umrechnungsfaktoren identifizieren den Umrechnungsfaktor von
    | **Stündlicher Umrechnungsfaktor** | Der jährliche Umrechnungsfaktor für die Zahlungshäufigkeit. Zum Beispiel lautet der jährliche Umrechnungsfaktor für die monatliche Lohnzahlungshäufigkeit: </br></br>(12 monatliche Zahlungen/2080 Stunden) = 0,005769
 
 4. Wählen Sie **Speichern**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

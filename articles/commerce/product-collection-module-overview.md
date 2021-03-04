@@ -109,3 +109,6 @@ In der folgenden Tabelle sind die Listentypen aufgeführt, die im Dialogfeld **P
 [Kauffeldmodul](add-buy-box.md)
 
 [Überblick über Produktempfehlungen](product-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

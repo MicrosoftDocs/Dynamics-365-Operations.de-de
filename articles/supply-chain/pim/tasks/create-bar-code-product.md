@@ -43,3 +43,6 @@ In diesem Thema wird beschrieben, wie Sie manuell einen Strichcode mithilfe der 
 12. Wählen Sie **Speichern**.
 13. Schließen Sie die Seite. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

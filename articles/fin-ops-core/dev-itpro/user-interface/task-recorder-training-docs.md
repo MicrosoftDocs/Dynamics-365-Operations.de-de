@@ -123,3 +123,6 @@ Sie können die Microsoft Aufgabenaufzeichnungen herunterladen und bearbeiten, u
 [Aufgabenaufzeichnung](task-recorder.md)
 
 [Erstellen von umfangreicher Hilfethemen mit der Aufgabenaufzeichnung (externer Link)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

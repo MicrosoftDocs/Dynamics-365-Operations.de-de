@@ -92,3 +92,6 @@ Beispiele:
 - Das Gültigkeitsdatum einer Aktivität **Eine Arbeitskraft einstellen** ist das Datum, das Sie im Feld **Datum des Beschäftigungsbeginns** eingegeben haben.
 - Das Gültigkeitsdatum einer Aktivität **Arbeitskraft versetzen** ist das Datum, das Sie im Feld **Anfangsdatum der Zuordnung** für die Arbeitskraft eingegeben haben.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

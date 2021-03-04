@@ -96,3 +96,6 @@ Die folgende Tabelle zeigt, welche Kundenaufträge die Benutzer in jeder Webroll
 
 > [!NOTE]
 > Obwohl sowohl Sam als auch Jane Kontakte sind, die für Kunde X arbeiten, können sie nur die Bestellungen sehen, die sie selbst aufgegeben haben, und sonst nichts. Obwohl May eine Bestellung im System hat, kann sie diese Bestellung nicht im Kundenportal sehen, da sie eine nicht autorisierte Benutzerin ist. (Außerdem muss sie die Bestellung über einen anderen Kanal als das Kundenportal aufgegeben haben.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

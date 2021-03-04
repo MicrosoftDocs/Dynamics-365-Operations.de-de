@@ -44,3 +44,6 @@ Die folgende Tabelle enthält Links zu Informationen über die Kernaufgaben von 
 | [Entwerfen eines Fragebogens](hr-learning-design-questionnaires.md) | Dieser Artikel enthält die Verfahrensweise zum Entwerfen von Fragebogenparametern. Der Designprozess umfasst die Einrichtung von Voraussetzungen, Fragen und Antworten und die Kombination dieser Element in einen Fragebogen. |
 | [Verteilen und Planen von Fragebögen](hr-learning-distribute-questionnaires.md) | Dieser Artikel bietet Informationen zur Verteilung eines Fragebogens an die Befragungsteilnehmern und zum Abschließen von Fragebögen. |
 | [Betrachten und bewerten Sie die Ergebnisse des Fragebogens](hr-learning-evaluate-questionnaire-results.md) | Dieser Artikel enthält Informationen darüber, wie die Ergebnisse ausgefüllter Fragebögen angezeigt und ausgewertet werden. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

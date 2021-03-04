@@ -73,3 +73,6 @@ In diesem Thema erfahren Sie, wie Sie einen Spediteur einrichten und Details wie
 9. Wählen Sie im Feld **Transitzeit-Engine** eine Option aus dem Dropdown-Menü.
 10. Wählen Sie **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

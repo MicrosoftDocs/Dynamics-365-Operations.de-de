@@ -77,3 +77,6 @@ Für die Kultur **EN-US** gibt `NUMBERFORMAT (0.45, "p")` **"45.00 %"** und `NUM
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Textfunktionen](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

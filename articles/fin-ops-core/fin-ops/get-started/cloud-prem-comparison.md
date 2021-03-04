@@ -175,3 +175,6 @@ Eine Liste der Funktionen, die in lokalen Implementierungen verfügbar sind, fin
 
 \* In lokalen Umgebungen zeigt PerfTimer nur Ergebnisse für den Client an.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

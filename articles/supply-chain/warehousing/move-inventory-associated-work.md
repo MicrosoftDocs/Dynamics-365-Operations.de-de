@@ -59,3 +59,6 @@ Für die Arbeitskraft, die autorisiert werden soll, Bestand zu verschieben, akti
 Diese Funktion wurde auch in Microsoft Dynamics AX 2012 R3 zurückportiert und wird als Teil von CU12 zur Verfügung gestellt.
 Sie kann auch einzeln über KB 3192548 heruntergeladen werden. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -152,3 +152,6 @@ Sie können die Anzahl der Sachkontobuchungen bestimmen, die beim Buchen des abg
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

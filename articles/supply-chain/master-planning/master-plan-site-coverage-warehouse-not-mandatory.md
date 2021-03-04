@@ -63,3 +63,6 @@ In der folgenden Grafik wird der Ablauf der Produktprogrammplanung veranschaulic
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

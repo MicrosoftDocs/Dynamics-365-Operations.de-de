@@ -60,3 +60,6 @@ Liegt mindestens eine vorgeschlagene Änderung vor, werden im Aktivitätsbereich
     Der Status auf der Seite ändert sich in **Änderungen mit ausstehender Genehmigung**.
 
 Der Workflow folgt dem Standardworkflowablauf in der Anwendung. Die genehmigende Person wird an die Seite **Debitor** weitergeleitet. Dort können die Änderungen auf der Seite **Vorgeschlagene Änderungen** geprüft und der Workflow anschließend über **Workflow \> Genehmigen** genehmigt werden. Sind alle Genehmigungen bearbeitet, werden die Felder mit den vorgeschlagenen Werten aktualisiert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

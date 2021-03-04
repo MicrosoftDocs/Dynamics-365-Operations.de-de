@@ -113,3 +113,6 @@ Alternativ zur **Verwendung des Formulars** können Sie das Formular **Erfassung
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

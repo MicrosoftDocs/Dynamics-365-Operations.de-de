@@ -46,3 +46,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung von Sonderur
     * Beispiel: Sonderurlaub zur Annahme  
 12. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

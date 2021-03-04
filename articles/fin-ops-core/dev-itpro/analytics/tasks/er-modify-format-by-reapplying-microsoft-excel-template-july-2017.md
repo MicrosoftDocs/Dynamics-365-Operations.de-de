@@ -83,3 +83,6 @@ Dieses Verfahren zeigt, wie eine Konfiguration für das Format der elektronische
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Nutzen Sie die geänderte Entwurfsversion des ER-Formats für die Verwendung bei Zahlungserfassungsverarbeitungen
 
 Wiederholen Sie das erstellte Arbeitsblatt, einschließlich neue Details der Zahlungszeilen - Zahlungsdatum.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

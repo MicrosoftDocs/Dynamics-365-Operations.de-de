@@ -128,3 +128,6 @@ Die folgenden wichtigen Dimensionen im Verkaufscube werden als Filter verwendet,
 | Entitäten                  | Benutzerkennung und Name                                                   |
 | Ressourcen                 | Ressourcen-ID, Ressourcenname, Ressourcentyp und Ressourcengruppe |
 | Produkte                  | Produktnummer, Produktname, Artikelgruppenname und Artikel-ID         |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

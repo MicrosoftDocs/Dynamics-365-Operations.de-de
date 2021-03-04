@@ -67,3 +67,6 @@ Als Teil des Quarantäneauftragsprozesses ist es möglich, Bestand als Ausschuss
 --------
 
 [Sperrung von Lagerbestand](inventory-blocking.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

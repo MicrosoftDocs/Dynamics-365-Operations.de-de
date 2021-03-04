@@ -51,3 +51,6 @@ In dieser Aufgabe gehen Sie Schritt für Schritt durch das Erstellen einer Bankf
 18. Klicken Sie auf "Erweitern".
 19. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

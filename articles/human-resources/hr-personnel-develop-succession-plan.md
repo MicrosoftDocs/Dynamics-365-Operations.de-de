@@ -60,3 +60,6 @@ Während Ihre Organisation wächst und Sie die Nachfolgeplanung erwägen, möcht
 28. Klicken Sie auf "Bericht".
     * Der Bericht führt die besten Übereinstimmungen oben im Bericht auf.  Sie können sehen, dass dort ein Lückenelement aufgeführt ist.  Dies ist die Differenz zwischen der Ebene, die auf der Qualifikationszuordnung aufgeführt war und der Ebene der Qualifikation, die der Person zugewiesen ist.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

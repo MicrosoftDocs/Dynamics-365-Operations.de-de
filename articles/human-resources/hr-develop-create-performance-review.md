@@ -78,3 +78,6 @@ Dieses Thema erklärt, wie eine Leistungsüberprüfung erstellt wird, und es bes
 34. Wählen Sie die Registerkarte **Überprüfung** aus. Während die Überprüfung die Statuswerte durchläuft, können der Mitarbeiter und Manager Kommentare für jedes Ziel oder jede Kompetenz hinzufügen.  
 35. Wählen Sie die Registerkarte **Abzeichnungen** aus. Die Arbeitskraft und der Manager können die Prüfung abzeichnen. Wenn alle erforderlichen Abzeichnungen abgeschlossen sind, wird der Status zu **Abgeschlossen** und keine weiteren Änderungen können vorgenommen werden.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Sie können Zeitfenster verwenden, um die Planung von Serviceauftragspositionen 
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Zeitfenster](time-windows.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

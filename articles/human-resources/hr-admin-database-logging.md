@@ -87,3 +87,6 @@ Gehen Sie zum Einrichten der Datenbankprotokoll-Bereinigung folgendermaßen vor:
    - Erstellungsdatum und -uhrzeit
 
 3. Verwenden Sie die **Bereinigung des Datenbankprotokolls** Registerkarte, um festzulegen, wann die Protokollbereinigungsaufgabe ausgeführt werden soll. Standardmäßig sind Datenbankprotokolle 30 Tage lang verfügbar.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

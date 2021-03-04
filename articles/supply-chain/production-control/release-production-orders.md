@@ -64,3 +64,6 @@ Arbeit für Rohmaterialentnahme wird während der Freigabe generiert. Vorgang wi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

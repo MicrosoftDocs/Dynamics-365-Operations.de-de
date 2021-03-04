@@ -107,3 +107,6 @@ Das folgende Bild zeigt einen Beispielknoten mit hinzugefügten Produktattributg
 [Sortimente einrichten](set-up-assortments.md)
 
 [Attribute und Attributgruppen verwalten](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

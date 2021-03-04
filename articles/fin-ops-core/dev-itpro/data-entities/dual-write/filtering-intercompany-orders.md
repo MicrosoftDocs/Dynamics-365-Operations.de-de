@@ -65,3 +65,6 @@ Jede der Common Data Service-Standardentitäten wird mit Verweisen auf das Feld 
 7. Nachdem Sie die Entität **Zitate** erweitert haben, wenden Sie einen Filter mit `CUSTGROUP !=  "<company>"` als Abfragezeichenfolge an.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Verkaufsangebotskopfzeile, Abfrage bearbeiten":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

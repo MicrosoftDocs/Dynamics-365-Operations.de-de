@@ -39,3 +39,6 @@ Der folgende Screenshot zeigt ein Beispiel für einen Instandhalter, der mit ein
 
 Die Kalendereinrichtung für Werkzeuge und Anlagen ist im Zusammenhang mit der Arbeitsauftragsplanung nicht erforderlich. Es wird davon ausgegangen, dass Werkzeuge und Anlagen 24 Stunden am Tag für die Wartung zur Verfügung stehen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

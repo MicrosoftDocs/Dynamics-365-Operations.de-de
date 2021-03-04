@@ -47,3 +47,6 @@ Der Stapelverarbeitungsjob schließt geschlossene Bücher aus. Beispielsweise we
 Die Begrenzung der Anzahl der Bücher wird angewendet, wenn in derselben Erfassung keine doppelten Anlagen-IDs vorhanden sind. Wenn die Anlagen-ID jedoch mit der Buch-ID übereinstimmt, kann die Anzahl der Bücher pro Erfassung überschritten werden, um die Anlagen-ID in derselben Erfassung zu belassen.
 
 Beispielsweise gibt es 5.001 Anlagen-IDs, jeder Anlagen-ID sind drei Bücher zugeordnet, und jedes Anlagenbuch wird auf derselben Buchungsebene gebucht. Sie führen drei aufeinanderfolgende Monate lang eine Abschreibung ohne Zusammenfassung durch. Die Abschreibungserfassung wird über einen Batch-Auftrag erstellt, und das System erstellt sieben Erfassungen mit 667 Anlagen-IDs und drei Büchern für jede Anlagen-ID. Das Ergebnis werden 2.001 Bücher sein. Daher werden in drei Monaten 6.003 Erfassungszeilen vorhanden sein, um dieselben Anlagen-IDs in derselben Erfassung zu verwalten. Das System erstellt außerdem eine Erfassung mit 332 Anlagen-IDs und drei Büchern für jede Anlage-ID. In drei Monaten wird es 2.988 Zeilen geben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

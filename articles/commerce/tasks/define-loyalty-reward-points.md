@@ -46,3 +46,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Definieren von Treuebel
 10. Wählen Sie im Feld "Einheit für Ablaufzeit" eine Option aus.
 11. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

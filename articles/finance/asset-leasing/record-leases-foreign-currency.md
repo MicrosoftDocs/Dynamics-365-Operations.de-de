@@ -53,3 +53,6 @@ Wenn Sie die Journaleinträge für Abschreibungskosten für einen Mietvertrag er
 Der endgültige Abschreibungsaufwand kann unter Verwendung eines geringfügig anderen Wechselkurses berechnet werden, sodass das Nutzungsrecht am Leasingobjekt sowohl in der Rechnungswährung als auch in der Berichtswährung vollständig abgeschrieben wird.
 
 Wenn der Mietvertrag als **Zurückgestellter Mietaufwand** umgegliedert wurde, löscht das System automatisch die Wechselkurse der Buchhaltungs- und Berichtswährungen, sofern diese bereits definiert wurden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

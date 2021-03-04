@@ -103,3 +103,6 @@ In diesem Beispiel wählen Sie die gewünschte Version der EB-Konfiguration und 
     Wählen Sie für dieses Beispiel die Version der Konfiguration aus, die den Status **Freigegeben** hat.
 
     Beachten Sie, dass die freigegebene Version 1 der ausgewählten Datenmodellkonfiguration ebenfalls verfügbar ist.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

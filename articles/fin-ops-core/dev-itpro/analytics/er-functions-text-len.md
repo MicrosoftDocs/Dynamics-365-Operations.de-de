@@ -55,3 +55,6 @@ Der resultierende numerische Wert.
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Textfunktionen](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

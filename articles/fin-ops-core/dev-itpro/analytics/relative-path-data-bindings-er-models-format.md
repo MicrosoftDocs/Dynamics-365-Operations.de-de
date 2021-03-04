@@ -57,3 +57,6 @@ Diese Funktion bricht die Abwärtskompatibilität des ER-Frameworks nicht. Alle 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [EB-Formelsprache](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

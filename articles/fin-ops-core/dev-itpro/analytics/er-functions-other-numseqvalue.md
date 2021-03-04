@@ -105,3 +105,6 @@ Wenn die Datenquelle **NumSeq** aufgerufen wird, wird er dem generierten neuen W
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Andere (geschäftsdomänenspezifische) Funktionen](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

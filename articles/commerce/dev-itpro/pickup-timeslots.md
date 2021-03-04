@@ -123,3 +123,6 @@ Die folgende Abbildung zeigt ein Beispiel für einen E-Commerce-Auftrag, bei dem
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Abholinformationsmodul](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

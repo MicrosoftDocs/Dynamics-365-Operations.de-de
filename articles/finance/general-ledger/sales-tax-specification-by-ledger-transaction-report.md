@@ -58,3 +58,6 @@ Wenn dieser Bericht generiert wird, werden die folgenden Felder verfügbar. Sie 
 Um nur Nicht-Steuerkonten im Bericht anzuzeigen, richten Sie eine Filterbedingung ein, wie z. B. Sternchen (\*), wie in der folgenden Abbildung dargestellt.
 
 ![Bericht mit Nicht-Steuerkonten](media/taxspecperledgertrans.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

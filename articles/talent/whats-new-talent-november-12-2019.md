@@ -60,3 +60,6 @@ Alle neuen Funktionen bleiben mindestens 30 Tage und in der Regel 30-60 Tage in 
 Manchmal ist ein integrales Feature standardmäßig eingeschaltet und kann nicht deaktiviert werden (z.B. das **Feature-Management** Arbeitsbereich).
  
 Sobald eine Funktion allgemein verfügbar ist, kann sie in Produktionsumgebungen ein- und ausgeschaltet werden. Der Arbeitsbereich **Feature-Management** zeigt an, wann eine Vorschaufunktion obligatorisch wird. Dieses Datum ist in der Regel der 1. Oktober oder 1. April, um mit den halbjährlichen Release-Plänen übereinzustimmen. Sie können obligatorische Funktionen nicht deaktivieren. Bis es obligatorisch wird, können Sie eine Funktion in allen Umgebungen ein- und ausschalten.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

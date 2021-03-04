@@ -277,3 +277,6 @@ Zum Anzeigen des Inhaltes einer Lieferantenbestätigung oder einer Fehlerantwort
 
 - [Externen Katalog für PunchOut-E-Procurement einrichten](set-up-external-catalog-for-punchout.md)
 - [Externe Kataloge für PunchOut-E-Procurement verwenden](use-external-catalogs-for-punchout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

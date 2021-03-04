@@ -53,3 +53,6 @@ In diesem Thema wird erläutert, wie Sie einen Genehmigungs-Workflow einrichten,
 14. Wählen Sie auf der Seite **Workflow erstellen** die Option **Erstellen** aus.
 14. Wählen Sie den neuen Workflow aus und wählen Sie dann **Versionen**. Wählen Sie dann **Aktivieren**, um sicherzustellen, dass der Workflow aktiv ist.
 15. Wählen Sie **Schließen** aus. Die neue aktive Version wird angezeigt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

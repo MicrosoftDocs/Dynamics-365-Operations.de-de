@@ -65,3 +65,6 @@ Separate Berichte enthalten Informationen zu den einzelnen Buchungstypen. Diese 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

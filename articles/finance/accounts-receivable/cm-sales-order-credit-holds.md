@@ -265,3 +265,6 @@ Kundenaufträge mit einem Grund für erzwungenes Halten können nicht automatisc
 Das Kreditmanagement kann derzeit nur für Aufträge verwendet werden. Freitext-Rechnungen, Point-of-Sales-Aufträge und Call-Center-Aufträge verwenden die temporären Kreditlimits und Versicherungen/Garantien, die Sie zur Anpassung des Kreditlimits hinzufügen. Sie verwenden die Sperrregeln nicht und werden nicht in die Sperrliste aufgenommen, wenn ein Problem mit dem Kreditlimit vorliegt.
 
 Projektrechnungen werden im Kreditmanagement nicht unterstützt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -224,3 +224,6 @@ Der Ausdruck **Emailing.TxtToUse.Body** des Beispielformats wird für die folgen
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 [Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

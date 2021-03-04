@@ -78,3 +78,6 @@ Wenn Sie jedoch ein Element verwenden, das eine Reservierungshierarchie „Charg
 Dieses Verhalten ist beabsichtigt. Wenn Sie in der Reservierungshierarchie eine Dimension oberhalb der **Ort**-Dimension einlagern, muss diese vor der Freigabe zum Lagerort angegeben werden. Microsoft hat dieses Problem untersucht und festgestellt, dass es sich um eine Einschränkung der Funktion bei Freigaben an das Lagerort aus der Ladeplanungs-Workbench handelt. Teilmengen können nicht freigegeben werden, wenn eine oder mehrere Dimensionen über **Lagerplatz** nicht angegeben sind.
 
 Weitere Informationen finden Sie unter [Flexible Richtlinie für die Reservierung von Dimensionen auf Lagerebene](flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -115,3 +115,6 @@ Die Ergebnisse unterscheiden sich aufgrund der Informationen, die beim Erstellen
 [![Beispiel 2](media/ReplenTemp_example_2.png "Beispiel 2")](media/ReplenTemp_example_2_large.png)
 
 Um die maximale Menge an den aufgefüllten Lagerplätzen zu erhalten, sollten Sie daher in den Lagerplatzrichtlinien für die Wiederbeschaffung die Option **Aufteilung zulassen** auf *Ja* festlegen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Dieser Aufgabenleitfaden führt durch verschiedene Methoden zum Eingeben von Deb
 21. Geben Sie im Feld **Zahlungsreferenz** eine Zahlungsreferenz ein. Die Zahlungsreferenz ist nur erforderlich, wenn Sie angegeben haben, dass die Zahlung auf einem Einzahlungsbeleg enthalten sein soll.  
 22. Klicken Sie im **Aktionsbereich** auf **Buchen**, um die Debitorenzahlungen zu buchen. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

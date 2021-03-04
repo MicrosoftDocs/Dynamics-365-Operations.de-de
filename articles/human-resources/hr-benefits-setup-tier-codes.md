@@ -41,3 +41,6 @@ Dynamics 365 Human Resources verwendet Stufencodes mit Vergütungssätzen, die v
    | **Beschreibung** | Eine Beschreibung des Vorteilsstufencodes. |
 
 4. Wählen Sie **Speichern**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

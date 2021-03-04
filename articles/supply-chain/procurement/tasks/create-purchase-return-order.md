@@ -68,3 +68,6 @@ Diese Prozedur zeigt Ihnen, wie eine Reklamation erstellt wird, indem die Aktivi
 4. Geben Sie im Feld **Produktzugang** einen Wert ein. Dieses Feld wird benutzt, um einen Verweis einzugeben, der als Beleg für die Produktzugangserfassung verwendet wird.  
 5. Klicken Sie auf **OK**. Die Waren sind jetzt auf der Reklamation als versendet erfasst worden und eine Produktzugangserfassung ist erstellt worden. Sie können die Aktivität "Produktzugang" verwenden, um die Erfassungen zu überprüfen, die mit der Bestellung erstellt wurden und um zu sehen, was wann empfangen oder zurückgesendet wurde.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

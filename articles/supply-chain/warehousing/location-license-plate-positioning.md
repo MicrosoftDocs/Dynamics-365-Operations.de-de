@@ -281,3 +281,6 @@ Nun, da die Funktion *Standortkennzeichenpositionierung* eingerichtet und der La
     ![Lagerplatz Position 1](media/LocationLicensePlatePositioning.png "Lagerplatz Position 1")
 
 1. Geben Sie die Kennzeichen-ID ein, die Sie für den Lagerplatz erstellt haben, und befolgen Sie die Anweisungen, um den Auftrag auszuwählen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Die **Details anzeigen**-Option ist auf mehrere Arten verfügbar:
 
 - Wenn ein Steuerelemente die Funktionen **Details anzeigen** hat, und wenn das Steuerelement einen Wert enthält, dann wird der Wert als Link angezeigt. Sie können auf die Verknüpfung klicken, um die Seite zu öffnen, die zusätzliche Details enthält.
 - **Details anzeigen** ist außerdem eine Option in den Kontextmenüs. Weitere Informationen zur Anzeige von Kontextmenüs, die beim Rechtsklick angezeigt werden, finden Sie im vorherigen Abschnitt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

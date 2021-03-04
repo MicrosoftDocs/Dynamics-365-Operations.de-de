@@ -167,3 +167,6 @@ Die folgenden Felder ändern das Verhalten des Buchungsprozesses.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

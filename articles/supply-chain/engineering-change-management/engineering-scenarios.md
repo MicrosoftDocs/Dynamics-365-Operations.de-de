@@ -411,3 +411,6 @@ Das Produkt kann nun wieder für die *USMF*-Firma freigegeben und anschließend 
 1. Wählen Sie jede Firma aus, für die Sie Produkte freigeben möchten.
 1. Wählen Sie **OK**, um das Dialogfeld **Freigaben** zu schließen und zum Änderungsauftrag zurückzukehren.
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Änderungsauftrag** in der Gruppe **Produktfreigaben** die Option **Bearbeiten**, um die betroffenen Produkte für die ausgewählten Firmen freizugeben. Wählen Sie alternativ **Produktstruktur freigeben**, um den Freigabeprozess zu starten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

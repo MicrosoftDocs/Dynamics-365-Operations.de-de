@@ -137,3 +137,6 @@ Das Formular 1096 mit der jährlichen Zusammenfassung und Übermittlung von US-
 Es wurde eine neue Funktion mit der Bezeichnung **1099-Informationen anhand von Hauptkonto aktualisieren** ergänzt, die Sie im Arbeitsbereich **Funktionsverwaltung** aktivieren können. Damit können die 1099-Werte zu einem Kreditor anhand des Hauptkontos in der Buchhaltungsverteilung und nicht anhand des Standardkontos im Kreditorendatensatz verknüpft werden.
 
 Weitere Informationen finden Sie unter [Kreditoren für Steuererklärung (US 1099) einrichten](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

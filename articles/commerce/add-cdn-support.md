@@ -163,3 +163,6 @@ Ihr CDN sollte jetzt ordnungsgemäß konfiguriert werden, so dass sie mit der Co
 [Konfigurieren Sie mehrere B2C-Mandanten in einer Commerce-Umgebung](configure-multi-B2C-tenants.md)
 
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -256,3 +256,6 @@ Nachfolgend sind einige Hinweise aufgeführt, die Sie bei der Verwendung der DOM
 - Momentan berücksichtigt DOM nur Aufträge, die von den Handelskanälen erstellt werden. Aufträge werden als Aufträge angegeben, wenn die Option **Handelsauftrag** auf **Ja** festgelegt ist.
 - Microsoft hat DOM nicht mit den erweiterten Funktionen für die Lagerortverwaltung getestet. Kunden und Partner müssen mit Sorgfalt festlegen, ob DOM mit den erweiterten Funktionen und Prozessen für die Lagerortverwaltung kompatibel ist, die für sie relevant sind.
 - DOM ist nur in der Cloudversion von Commerce verfügbar. Es wird nicht für Vor-Ort-Bereitstellungen unterstützt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

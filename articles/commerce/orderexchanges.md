@@ -50,3 +50,6 @@ Zur besseren Übersicht über die unterschiedlichen Mengen für den Einkaufskorb
 - **Einzahlung angewendet** – Der Einzahlungsbetrag, der in einer Transaktion verwendet wird, wenn der Benutzer einen Kundenauftrag auswählt. Wenn die Einzahlung nicht überschrieben wird und eine Einzahlung von 10 Prozent konfiguriert wurde, beläuft sich der Betrag in diesem Feld auf 90 Prozent des Gesamtbetrags des Kundenauftrags.
 - **Betrag ausführen** – Der Gesamtbetrag für Positionen, in denen die Lieferart bei der Erstellung oder Bearbeitung des Kundenauftrags oder bei einem Umtausch eines Kundenauftrags auf **Ausführen** festgelegt wurde. Der Betrag in diesem Feld enthält die Steuern und Belastungen.
 - **Rückgabebetrag** – Der Gesamtbetrag für Positionen, die negative Mengen für den Kundenauftragsumtausch haben. Der Betrag in diesem Feld enthält die Steuern und Belastungen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

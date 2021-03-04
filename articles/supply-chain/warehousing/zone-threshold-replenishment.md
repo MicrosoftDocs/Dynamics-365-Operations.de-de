@@ -344,3 +344,6 @@ Hier sind einige Hinweise und Tipps zum Arbeiten mit der Funktion:
 
 - Wenn Sie dynamische Lagerplätze verwenden, werden Wiederbeschaffungsarbeiten entweder für den ersten verfügbaren Lagerplatz oder für einen Lagerplatz erstellt, der bereits Bestand enthält, wenn die Lagerplatzrichtlinienaktivität für die Verwendung der Strategie **Konsolidieren** eingerichtet ist.
 - Wenn Sie feste Lagerplätze anstelle von Zonen verwenden, sollten Sie die [Min./Max.-Standardwiederbeschaffung](tasks/set-up-min-max-replenishment-process.md) verwenden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

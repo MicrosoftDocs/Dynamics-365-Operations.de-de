@@ -85,3 +85,6 @@ Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen 
 [Überblick Dynamics 365 Human Resources 2020 Veröffentlichungszyklus 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)
 [Funktionen verwalten](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

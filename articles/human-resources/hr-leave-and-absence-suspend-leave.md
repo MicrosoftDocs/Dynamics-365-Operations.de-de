@@ -49,3 +49,6 @@ Wenn Rückstellungen bearbeitet werden, während der Urlaub des Mitarbeiters aus
 - [Urlaubs- und Abwesenheitstypen konfigurieren](hr-leave-and-absence-types.md)
 - [Urlaubs- und Abwesenheitspläne antizipieren](hr-leave-and-absence-accrue.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

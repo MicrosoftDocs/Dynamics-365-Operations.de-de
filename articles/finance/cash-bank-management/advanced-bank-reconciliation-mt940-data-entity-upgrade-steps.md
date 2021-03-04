@@ -64,3 +64,6 @@ Gehen Sie folgendermaßen vor, um die Bankauszugs-Importentität hinzuzufügen, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

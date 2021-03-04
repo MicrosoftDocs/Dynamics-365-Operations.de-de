@@ -70,3 +70,6 @@ Um eine bestimmte [Seitenausrichtung](electronic-reporting-destinations.md#Selec
 
 - [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 - [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

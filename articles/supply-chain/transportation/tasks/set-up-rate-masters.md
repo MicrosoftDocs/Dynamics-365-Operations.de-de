@@ -97,3 +97,6 @@ Dieses Verfahren zeigt Ihnen an, wie ein Satzmaster eingerichtet wird. Der Logis
     * Geben Sie an, für welche Postleitzahl diese Satzbasiszuweisung gültig sein soll aus.
 10. Geben Sie in das Feld **Land Region** „USA“ ein.
 11. Wählen Sie **Speichern** aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Wenn Sie einen Arbeitsauftrag anlegen, möchten Sie möglicherweise die Service 
 2. Wählen Sie **Neu** aus.
 3. Geben Sie im Feld **Beschreibung** die Beschreibung ein.
 4. Wählen Sie **Speichern**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

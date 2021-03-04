@@ -50,3 +50,6 @@ Wenn die gleiche Person Zugriff auf das Kreditorenportal für mehrere Kreditoren
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

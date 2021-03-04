@@ -66,3 +66,6 @@ Nachdem Sie eine Bedingungsbewertungserfassung für eine Anlage vorgenommen habe
 
 >[!NOTE]
 >Sie können Bedingungsbewertungen auch in einem Arbeitsauftrag erfassen (**Anlagenverwaltung** > **Allgemeines** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** > **Bedingungsbewertung**).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Diese Prozedur zeigt, wie ein Produktionsauftrag erstellt wird. Das Demodatenunt
 6. Klicken Sie auf "Speichern".
 7. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

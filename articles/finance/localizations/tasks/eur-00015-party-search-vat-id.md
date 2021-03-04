@@ -42,3 +42,6 @@ Diese Prozedur gilt für alle europäischen Länder/Regionen. Diese Prozedur wur
 7. Klicken Sie auf "Suchen".
     * Alle Parteien mit dieser Erfassungskennung werden angezeigt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Nachdem Sie die Voraussetzungen abgeschlossen haben, können Sie ein Sortiment e
 2. Wählen Sie die Kanäle oder die übergeordneten Gruppen von Kanälen aus, für die das Sortiment gilt.
 3. Fügen Sie Produktkategorien, Einzelprodukte oder Produktvarianten dem Sortiment hinzu. Sie können alle Produkte in einer bestimmten Kategorie einschließen oder Sie können bestimmte Produkte aus einer Kategorie ausschließen, die im Sortiment enthalten ist.
 4. Veröffentlichen Sie das Sortiment. Wenn Sie ein Sortiment veröffentlichen, wird der Sortimentplaner automatisch ausgeführt. Dieser Vorgang generiert die Liste der Produkte. Wenn dieser Prozess abgeschlossen ist, werden die Produkte für die Kanäle verfügbar gemacht, denen das Produktsortiment zugeordnet ist. Wenn Änderungen an einem Sortiment vorgenommen werden, das veröffentlicht wurde, oder an den Kanälen, denen das Sortiment zugeordnet ist, muss das Sortiment aktualisiert werden. Um das Sortiment zu aktualisieren wenn Änderungen vorgenommen wurden, können Sie den Sortimentplaner als Batchauftrag ausführen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

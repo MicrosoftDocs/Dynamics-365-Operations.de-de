@@ -106,3 +106,6 @@ Führen Sie die folgenden Prozeduren in [Geschäftsdokumentverwaltung – Über
 [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 
 [Geschäftsdokumentverwaltung – Übersicht](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

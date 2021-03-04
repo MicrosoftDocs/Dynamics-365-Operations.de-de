@@ -59,3 +59,6 @@ Die Bewertungs- und Überprüfungslösung bietet auch eine BI-Vorlage (Business 
 [Konfigurieren von Bewertungen und Prüfungen](configure-ratings-reviews.md)
 
 [Synchronisieren von Produktbewertungen in Dynamics 365 Commerce](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

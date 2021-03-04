@@ -69,3 +69,6 @@ Die folgende Abbildung zeigt die Logik, die verwendet wird, wenn die Steuerung d
 Die folgende Abbildung zeigt die Logik, die verwendet wird, wenn die Steuerung der Rabattgleichzeitigkeit auf **Bester Preis nur innerhalb der Priorität, immer über die Prioritäten hinweg zusammengesetzt** gesetzt wird.
 
 ![Logik für Bestpreis nur innerhalb der Priorität, immer über die Priorität zusammengesetzt](./media/Model_2.png "Logik für den besten Preis nur innerhalb der Priorität, immer zusammengesetzt über die Priorität").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

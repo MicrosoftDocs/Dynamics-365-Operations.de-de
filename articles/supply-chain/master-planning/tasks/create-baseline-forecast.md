@@ -82,3 +82,6 @@ Ein Produktionsplaner kann eine Grundplanung erstellen, indem er entweder Zeitse
 5. Klicken Sie auf "Details für Planungspositionen".
     * Auf dieser Seite können Sie die Genauigkeitswerte, den historischen Bedarf und die Planung finden. Sie können auch Änderungen an der Planung vornehmen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

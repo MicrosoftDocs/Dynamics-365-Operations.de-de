@@ -46,3 +46,6 @@ Diese Version enthält eine Reihe zusätzlicher Fehlerkorrekturen.
 ## <a name="known-issue"></a>Bekannte Probleme
 
 -   **Abgang:**, Wenn einer Arbeitskraft ein neuer Anhang hinzugefügt wird, werden die Schaltflächen **Neu** und **Bearbeiten** abgeblendet. **Problemumgehung:**, Bevor die Anhangsseite geöffnet wird, überprüfen Sie, dass die Infoboxen **Arbeitskraft** geschlossen werden. Wenn die Infoboxen geschlossen werden, wenn die **Arbeitskraft**-Seite geladen wird, werden die Anhangschaltflächen aktiviert. (Dieses Problem wird in der folgenden Plattformaktualisierung korrigiert.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ In diesem Thema wird erläutert, wie ein Lagerplatzprofil in Dynamics 365 Supply
 10. Wählen Sie **Ja** im Feld **Permanente Inventur zulassen** aus.
 11. Wählen Sie **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

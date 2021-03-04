@@ -170,3 +170,6 @@ Wenn die Option **Kundenauftrag in asynchronem Modus** auf **Ja** festgelegt wur
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Hybriddebitorenaufträge](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

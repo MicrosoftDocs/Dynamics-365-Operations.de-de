@@ -147,3 +147,6 @@ Das folgende Bild zeigt Details für einen konfigurierten Lagerort.
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

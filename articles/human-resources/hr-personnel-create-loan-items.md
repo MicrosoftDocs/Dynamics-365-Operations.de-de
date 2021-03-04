@@ -59,3 +59,6 @@ Ausleihartikel sind Datensätze, die Ihnen helfen, physische Artikel, wie Telefo
 14. Klicken Sie auf "OK".
 15. Aktualisieren Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

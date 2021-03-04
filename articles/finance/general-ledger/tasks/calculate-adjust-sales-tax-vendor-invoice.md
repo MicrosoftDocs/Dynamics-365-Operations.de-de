@@ -44,3 +44,6 @@ In diesem Thema wird erläutert, wie Sie die Mehrwertsteuer für eine Kreditoren
 13. Wählen Sie **OK**.
 14. Wählen Sie **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

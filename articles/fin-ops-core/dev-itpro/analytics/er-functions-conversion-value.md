@@ -63,3 +63,6 @@ Kommas und Punktzeichen (.) gelten als Dezimaltrennzeichen und es wird ein führ
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Funktionen zur Typenumrechnung](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

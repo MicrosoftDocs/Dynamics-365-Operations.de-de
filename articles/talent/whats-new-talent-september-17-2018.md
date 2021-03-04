@@ -54,3 +54,6 @@ Plattformupdate 18 für Finance and Operations ist nun Teil der Talentfreigabe.
 ## <a name="bug-fixes"></a>Fehlerkorrekturen
 
 Diese Version enthält eine Reihe zusätzlicher Fehlerkorrekturen, einschließlich Verweis auf ACA, ADA und I9 wird nur in den US-Unternehmen aktiviert.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

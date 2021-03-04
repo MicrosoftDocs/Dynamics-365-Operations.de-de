@@ -56,3 +56,6 @@ Sie können einen Ursachencode und einen Kommentar einfügen, wenn Sie das Abwes
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
 - [Urlaubs- und Abwesenheitsanforderungen verwalten](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

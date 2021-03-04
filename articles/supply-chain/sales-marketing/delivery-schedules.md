@@ -57,3 +57,6 @@ Beim Bestätigen eines Verkaufsangebots zeigt der Auftrag den gesamte Lieferzeit
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

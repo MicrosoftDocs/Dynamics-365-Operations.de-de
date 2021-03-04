@@ -124,3 +124,6 @@ Zu Textwecken führen Sie die Formatzuordnung mithilfe der Datei 1099entriescsv.
     * Überprüfen Sie die Ausgabe im XML-Format, das die Daten darstellt, die aus der ausgewählten Datei importiert wurden und in das Datenmodell übertragen wurden. Beachten Sie, dass alle 7 Positionen der importierten CSV-Datei verarbeitet wurden. Die Position 1 der Titel der enthaltenen Felder wurden übersprungen, 4 Transaktionen wurden richtig analysiert und 2 Transaktionen wurden als ungültig erkannt.
 3. Schließen Sie die Seite.
 4. Schließen Sie die Seite.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

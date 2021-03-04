@@ -43,3 +43,6 @@ Das **Status**-Feld hilft Ihnen dabei, Ihren Fortschritt anhand der folgenden We
 - **Genehmigt:** Wenn Sie Änderungen beibehalten möchten oder eine geplante Bestellung festlegen möchten, ändern Sie den Status in *Genehmigt*. Planaufträge mit dem Status *Genehmigt* gelten als festgelegt und erwarten eine Lieferung von der Produktprogrammplanung, so dass sie bei einer späteren Ausführung der Produktprogrammplanung nicht geändert oder gelöscht werden. Um dies zu erreichen, kopiert die Planungslogik während der Produktplanung die *genehmigten* Planaufträge aus der alten Planversion in die neue Planversion. Beachten Sie, dass *Genehmigte* Planaufträge nur als Lieferung innerhalb der jeweiligen Produktprogrammplanung gelten.
 
 Sie können Bestellvorschläge aus dem Arbeitsbereich **Produktprogrammplanung**, aus der Liste **Bestellvorschlag**, oder aus den Listen **Geplante Produktionsaufträge**, **Geplante Einkaufsbestellungen** und **Geplante Umlagerung** verwalten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

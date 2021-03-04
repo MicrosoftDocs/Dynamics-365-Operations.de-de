@@ -90,3 +90,6 @@ Bei der automatischen Erstellung von Serviceaufträgen können Serviceaufgaben a
 2. Auf der Registerkarte **Einstellungen** wählen Sie **Nach Serviceaufgabe** im Feld **Serviceaufträge kombinieren** aus.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

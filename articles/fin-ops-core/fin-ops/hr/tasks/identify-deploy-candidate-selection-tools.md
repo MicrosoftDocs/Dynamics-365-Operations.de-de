@@ -57,3 +57,6 @@ Einen qualifizierten Pool von Kandidaten zu finden, um freie Stellen zu füllen,
 24. Schließen Sie die Seite.
 25. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

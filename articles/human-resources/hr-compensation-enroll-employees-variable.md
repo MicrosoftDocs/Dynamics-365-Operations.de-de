@@ -41,3 +41,6 @@ Der Leiter für Vergütungen/Bezüge kann Mitarbeiter in einem Plan für variabl
 8. Schalten Sie die Erweiterung des Abschnitts "Überschreibungen in Organisation" ein/aus.
     * Wenn die Leistung des Mitarbeiters, die Leistung unterschiedlicher Abteilungen oder einer anderen als die der Position des Mitarbeiters zugewiesene Abteilung berücksichtigt werden soll, kann die Abteilung überschrieben werden. Die Spalte "Prozent" sollte sich auf 100 summieren.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

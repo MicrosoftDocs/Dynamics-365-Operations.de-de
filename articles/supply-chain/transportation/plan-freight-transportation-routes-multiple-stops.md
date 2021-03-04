@@ -53,3 +53,6 @@ Die Seite Ladungserstellungsworkbench verwendet die Adressen und Lieferdaten aus
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Auf der Seite **Bewertungsprofile** können Sie alle verfügbaren Bewertungsprof
 
 > [!NOTE]
 > Profile, die auf der Seite **Spediteure** erstellt werden, werden auch auf der Seite **Bewertungsprofile** angezeigt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

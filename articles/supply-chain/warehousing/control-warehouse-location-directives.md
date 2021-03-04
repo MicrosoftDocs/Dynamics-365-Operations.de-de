@@ -77,3 +77,6 @@ Lagerplatzrichtlinien bestimmen, *wo* Elemente entnommen und *wo* sie eingelager
 
 - Video: [Tiefe Einblicke in die Konfiguration der Lagerortverwaltung](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hilfe-Thema: [Erstellen von Lagerplatzrichtlinien](create-location-directive.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

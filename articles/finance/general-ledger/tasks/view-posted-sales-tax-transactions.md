@@ -49,3 +49,6 @@ In diesem Thema werden einige Möglichkeiten beschrieben, gebuchte Umsatzsteuert
 2. Wählen Sie im Aktionsbereich **Verkaufssteuerkennzeichen**.
 3. Wählen Sie **gebuchte Umsatzsteuer**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

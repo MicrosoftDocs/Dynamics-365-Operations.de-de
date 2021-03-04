@@ -68,3 +68,6 @@ Sie können auch *verantwortliche* Instandhaltungsmitarbeiter einrichten, die be
 
 Bei der Arbeitsauftragsplanung werden verschiedene Werten berechnet, um festzustellen, welche Mitarbeiter die mit einem Arbeitsauftrag zusammenhängenden Aufgaben erledigen sollen (diese Noten werden in **Anlagenmanagementparameter** > **Auftragsplanung** Link eingerichtet). Wenn zwei oder mehr bevorzugte Wartungsmitarbeiter oder verantwortliche Wartungsmitarbeiter bei der Arbeitsauftragsplanung die gleiche Punktzahl erhalten, wird ein Mitarbeiter zufällig ausgewählt. Andernfalls ist es immer der Mitarbeiter mit der höchsten Punktzahl, der für die Erledigung eines Arbeitsauftrags vorgesehen ist.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

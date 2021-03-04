@@ -53,3 +53,6 @@ Diese Änderung fügt eine Löschoption im Formular **Arbeitskräfte ohne Besch�
 5. Stellen Sie die Erlaubnis zum **Löschen** auf Erteilen.
 6. Wählen Sie die Registerkarte **Unveröffentlichte Objekte** aus.
 7. Wählen Sie **Alle veröffentlichen** aus.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

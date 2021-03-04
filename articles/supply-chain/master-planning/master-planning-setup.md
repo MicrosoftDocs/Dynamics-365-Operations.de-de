@@ -227,3 +227,6 @@ Lieferzeit + Negative Tage + Aktuelles Datum - Fälligkeitsdatum des Bedarfs
 Das System verwendet nur die geplanten Lieferaufträge, die innerhalb dieses Planungszeitraums sind, und er erstellt einen neuen Bestellvorschlag außerhalb. dieser Zeit. Der Vorteil von dynamischen negativen Tagen ist, dass sie die Einzelproduktlieferzeit enthalten, vorhandene Aufträge wieder verwenden, und das Erstellen neuer Bestellvorschläge vermeiden, die zusammen an einem späteren Datum aufgrund von Verzögerungen in der Lieferzeit enden. 
 
 Weitere Informationen finden Sie unter [Negative Tage und dynamische negative Tagen](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

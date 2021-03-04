@@ -208,3 +208,6 @@ Im folgenden Szenario wird die Lagerort-App auf einem mobilen Gerät verwendet, 
 
     > [!NOTE]
    > Das System erstellt eine Arbeits-ID für jede Bewegung, die abgeschlossen werden muss. Wenn Sie einen Lagerplatz angeben, der bereits Bestand enthält, wird nur eine Arbeits-ID erstellt. Wenn Sie einen neuen Lagerplatz angeben, werden zwei Arbeits-IDs erstellt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

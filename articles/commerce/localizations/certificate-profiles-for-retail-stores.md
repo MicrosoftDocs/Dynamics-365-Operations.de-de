@@ -122,3 +122,6 @@ Wenn eine neue Version des Zertifikats eingeführt wird, diese jedoch nicht in a
 
 > [!NOTE]
 > In Commerce Runtime wird die neue Version des Zertifikats zuerst aufgerufen. Wenn das Zertifikat in einem bestimmten Geschäft oder auf einem bestimmten Terminal noch nicht aktualisiert wurde, wird die vorherige Version aufgerufen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

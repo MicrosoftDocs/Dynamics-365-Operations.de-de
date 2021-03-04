@@ -49,3 +49,6 @@ Ressourcenfunktionen beschreiben, was betriebliche Ressourcen ausführen können
 5. Geben Sie im Feld "Ebene" eine Zahl ein.
     * Wenn Sie angeben, dass ein Einzelvorgang oder ein Arbeitsgang eine bestimmte Funktion erfordert, können Sie auch die Mindestanforderung angeben, die erforderlich ist. Verwenden Sie die Funktionsebene, um Ressourcen zu unterscheiden, die den gleichen Einzelvorgang ausführen können, aber mit verschiedenen Geschwindigkeiten, Stärken, Größen, usw.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

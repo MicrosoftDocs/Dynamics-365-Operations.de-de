@@ -69,3 +69,6 @@ Anwendungsdaten werden für die Berichte im „Mitarbeiterkompetenz und Entwickl
 | Workforce\_WorkerName             | Vorname, Nachname, vollständiger Name                                                                       | |
 | Workforce\_WorkerTitle            | Titel- und Dienstalter                                                                                   | |
 | Workorce\_WorkerTrend             | Arbeitskräfte im Zeitverlauf, Mitarbeiterzahl, Unternehmen und Position                                                        | Workforce\_Company, Workforce\_Compensation, Workforce\_GeographicLocation, Workforce\_Performance, Workforce\_WorkerName, Workforce\_ReportsToWorkerName, Workforce\_CalendarOffset, Workforces\_Date, Workforce\_WorkerTitle, Workforce\_Demographics, Workforce\_Employment, Workforce\_Job |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Mit dieser Änderung wurden die Felder **Probezeit** und **Kalender** auf der Se
 
 ### <a name="platform-update-23-for-finance-and-operations"></a>Plattformupdate 23 für Finance and Operations
 Kleinere Fehler wurden in das Plattformupdate 23 für Finance and Operations aufgenommen. Weitere Informationen finden Sie unter [Was ist neu oder geändert in Dynamics 365 Finance and Operations Plattform-Update 23 (Januar 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

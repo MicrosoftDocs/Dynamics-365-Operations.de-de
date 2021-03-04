@@ -55,3 +55,6 @@ Der Ausdruck `FIRST( LISTOFFIRSTITEM ( SPLIT ("ABC",1))).Value` gibt den Textwer
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Listenfunktionen](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

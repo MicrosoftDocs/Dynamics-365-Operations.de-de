@@ -83,3 +83,6 @@ Die Struktur dieser Liste besteht aus einem einzelnen Feld **Betrag** des Typs `
 [Listenfunktionen](er-functions-category-list.md)
 
 [Debuggen Sie Datenquellen eines ausgeführten EB-Formats, um den Datenfluss und die Transformation zu analysieren](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

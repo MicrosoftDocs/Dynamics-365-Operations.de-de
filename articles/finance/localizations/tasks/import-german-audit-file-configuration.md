@@ -42,3 +42,6 @@ Im folgenden Verfahren zeigt, wie das Berichterstellungsdatenmodell "Deutsche Pr
 10. Klicken Sie auf Import.
 11. Klicken Sie auf "Ja".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Diese Aufgabe zeigt Ihnen, wie Vorteilselemente erstellt werden, die verwendet w
 6. Geben Sie im Feld "Gültigkeit" ein Datum und eine Uhrzeit ein.
 7. Klicken Sie auf "Vorteil erstellen".
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

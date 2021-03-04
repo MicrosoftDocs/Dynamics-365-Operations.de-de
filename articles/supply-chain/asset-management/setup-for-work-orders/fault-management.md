@@ -133,3 +133,6 @@ Gehen Sie folgendermaßen vor, um eine Liste von Lösungs- und Reparaturvorschl�
 
 > [!NOTE]
 > Sie können die Namen der Fehlersymptome, -bereiche, -typen, -ursachen und -lösungen nach Bedarf ändern. Die Namenänderungen werden automatisch in den betreffenden Fehlererfassungen angezeigt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

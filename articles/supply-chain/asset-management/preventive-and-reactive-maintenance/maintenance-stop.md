@@ -97,3 +97,6 @@ Die folgende Abbildung zeigt ein Beispiel der Detailansicht **Wartungsausfallakt
 - Sie können Anlagen von einer Wartungsausfallaktivität in eine andere kopieren. Wählen Sie unter **Alle Wartungsausfallaktivitäten** die Schaltfläche **Wartungsausfallzeiten kopieren** und treffen Sie Ihre Auswahl in den Feldern **Wartungsausfallzeiten** und **Wartungsausfallzeiten**, und klicken Sie auf **OK**.
 - Klicken Sie unter **Alle Wartungsausfallzeiten** auf die Schaltfläche **Wartungseinteilungen** oder die Schaltfläche **Aktive Arbeitsaufträge**, um die zugehörigen Listen zu öffnen und die Zeilen anzuzeigen, die sich auf die ausgewählte IWartungsausfallzeitaktivität beziehen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

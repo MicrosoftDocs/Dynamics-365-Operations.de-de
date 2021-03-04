@@ -98,3 +98,6 @@ Diese Version enthält eine Reihe zusätzlicher Fehlerkorrekturen:
 - Wenn ein Auftragnehmer angestellt wird, soll die Registerkarte **Kompensation** nicht auf der Anforderungs-/Aktionsseite verfügbar sein.
 - Während der Anforderungskündigungsprozesses können Sie nicht fortfahren, bis alle erforderlichen Felder Daten enthalten.
 - Sortierreihenfolgen und Datumsanzeigenprobleme auf der Personalführungsanalyse sind nicht behoben worden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

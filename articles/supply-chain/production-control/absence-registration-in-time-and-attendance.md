@@ -109,3 +109,6 @@ Beispielsweise stempelt eine Arbeitskraft um 10 ein und wählt einen Abwesenheit
 ### <a name="calculate-and-approve-absence"></a>Berechnen und Genehmigen von Abwesenheit
 
 - Wählen Sie **Zeitanwesenheit** &gt; **Prüfen und Genehmigen** &gt; **Genehmigen oder Berechnen Sie** aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

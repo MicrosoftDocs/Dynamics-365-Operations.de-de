@@ -67,3 +67,6 @@ Bevor sich eine Tabelleneinschränkung auf ein Produktkonfigurationsmodell auswi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

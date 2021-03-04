@@ -60,3 +60,6 @@ Dieses Verfahren zeigt Ihnen, wie der verfügbare Lagerbestand manuell mithilfe 
 25. Schließen Sie die Seite.
 26. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

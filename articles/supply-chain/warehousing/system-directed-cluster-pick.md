@@ -207,3 +207,6 @@ Bevor Sie die systemgesteuerte Cluster-Auswahl einrichten können, müssen Sie g
 1. Der letzte Schritt auf dem Mobilgerät besteht darin, den Cluster an den endgültigen Speicherort zu **verschieben**. Wählen Sie **OK**
     - Wenn dieser Einlagerungsvorgang bestätigt wird, wird das Cluster basierend auf dem Wert, den Sie für das Feld **Cluster aufteilen bei** festgelegt haben, geschlossen und aufgeteilt. Arbeitsausweise sind ebenfalls geschlossen.
 1. Auf dem Mobilgerät wird die Meldung „Cluster abgeschlossen“ angezeigt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

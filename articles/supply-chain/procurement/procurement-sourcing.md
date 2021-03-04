@@ -104,3 +104,6 @@ Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

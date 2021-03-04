@@ -49,3 +49,6 @@ Sie definieren den Umfang der Regel innerhalb der Richtlinie. Wenn Sie beispiels
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

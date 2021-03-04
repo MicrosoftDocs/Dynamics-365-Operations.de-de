@@ -39,3 +39,6 @@ Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, is
 7. Geben Sie in das Feld "Von Datum" ein Datum ein.
 8. Geben Sie in das Feld "Bis Datum" ein Datum ein.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

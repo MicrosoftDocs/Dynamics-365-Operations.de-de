@@ -599,3 +599,6 @@ Sie können den Betrag in einer Spalte durch eine angegebene Anzahl von Zeiträu
 [Zeilendefinitionen im Finanzberichtdesigner](row-definitions-financial-reporting.md)
 
 [Erweiterte Formatierungsoptionen in der Finanzberichterstellung](advanced-formatting-options-financial-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

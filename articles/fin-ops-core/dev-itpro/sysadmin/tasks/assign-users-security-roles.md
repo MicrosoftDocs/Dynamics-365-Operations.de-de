@@ -57,3 +57,6 @@ Benutzer, die manuell Sicherheitsrollen zugewiesen werden, müssen auch manuell 
 2. In der Struktur wählen Sie eine Rolle aus, und im Menü **Der Rolle zugewiesene Benutzer** wählen Sie **Benutzer manuell zuweisen/ausschließen** aus.
 4. Im **Benutzer der Rolle zuweisen oder von der Rolle ausschließen** werden Benutzer, denen die Rolle nicht zugewiesen ist, mit dem **Zuweisungsmodus** auf **Keiner** festgelegt aufgelistet. Wählen Sie einen oder mehrere Benutzer aus, denen die Rolle zugewiesen werden soll.
 5. Wählen Sie im **Aktionsbereich** die Option **Der Rolle zuweisen** aus. Der **Zuweisungsmodus** wird aktualisiert auf **Manuell** und den Benutzern wurde jetzt eine neue Rolle zugewiesen.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

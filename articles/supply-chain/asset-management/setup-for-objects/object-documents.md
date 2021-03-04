@@ -50,3 +50,6 @@ In Asset Management können Sie Dokumente beispielsweise so einrichten, dass die
 
 4. Wählen Sie **Anhänge** aus. Die Standardseite **Handhabung von Dokumenten** wird angezeigt.
 5. Hier können Sie die Dokumente oder Hinweise einrichten, die dem Anlagendokumentdatensatz zugeordnet werden sollen. Nachdem Sie Dokumente zugeordnet haben, wird im Feld **Anhänge** die Anzahl der Dokumente angezeigt, die dem Datensatz zugeordnet sind.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

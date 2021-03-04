@@ -144,3 +144,6 @@ Bei so vielen verschiedenen verfügbaren Integrationstechnologien kann es schwie
 <sup>2</sup>Microsoft investiert stark in die Erhöhung der Datenabdeckung für Common Data Service Entitäten. Wir empfehlen die Verwendung von Common Data Service, wenn Deckung verfügbar ist. Zurzeit ist die Common Data Service Datenabdeckung im Vergleich zu DMF und OData-fähigen Entitäten gering.
 
 <sup>3</sup>Auf die SQL-Datenbank kann programmgesteuert zugegriffen werden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

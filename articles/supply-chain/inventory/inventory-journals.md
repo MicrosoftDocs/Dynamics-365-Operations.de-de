@@ -117,3 +117,6 @@ Diese beiden Lagererfassungen unterstützen nur das Szenario *Bestand initialisi
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Datenentitäten](../../dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

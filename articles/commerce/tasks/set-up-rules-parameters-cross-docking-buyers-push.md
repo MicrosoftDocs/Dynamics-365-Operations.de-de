@@ -48,3 +48,6 @@ Diese Prozedur zeigt die Schritte, um Auffüllungsregeln zu erstellen. Auffüllu
 14. Geben Sie im Feld "Gewicht" eine Zahl ein.
 15. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

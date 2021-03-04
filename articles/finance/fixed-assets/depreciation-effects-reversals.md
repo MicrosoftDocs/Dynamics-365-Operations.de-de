@@ -96,3 +96,6 @@ Die Abschreibung ist um 16,95 (983,62 - 966,67) zu niedrig bewertet.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

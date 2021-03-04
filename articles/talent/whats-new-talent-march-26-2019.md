@@ -97,3 +97,6 @@ Mit dem Plattformupdate 25 für Finance and Operations können Benutzer Warnreg
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>Duplizierte Mitarbeiter suchen: Schnittstellenänderungen
 Mit dieser Änderung werden Duplikate erkannt, während Sie Namenfelder eingeben, und ein Status zeigt, wie viele Duplikate gefunden wurden. Sie können die zur Verfügung gestellte Verknüpfung aktivieren, um eine neue Seite zu öffnen, um zu prüfen, ob die gefundene Übereinstimmung verwendet werden soll. Das Duplikatsformular wird nicht automatisch geöffnet, damit die Dateneingabe nicht unterbrochen wird.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

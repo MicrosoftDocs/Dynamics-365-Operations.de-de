@@ -39,3 +39,6 @@ Im folgenden Verfahren sehen Sie, wie Sie Kosteneinträge für einen Kostenträg
 7. Verwenden Sie den Schnellfilter, um im Feld "Nummer" nach dem Wert "p000031" zu filtern.
     * Wenn Kosteneinträge leer sind, richten Sie das Von-Datum auf den 31. Januar 2012 und das Bis-Datum auf den 31. Dezember 2012 ein.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

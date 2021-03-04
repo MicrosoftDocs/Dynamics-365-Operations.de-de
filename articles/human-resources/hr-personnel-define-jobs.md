@@ -71,3 +71,6 @@ Diese Aufgabe konzentriert sich auf die Erstellung einer neuen Stelle. Sie wird 
 33. Schalten Sie die Erweiterung des Abschnitts "Ausbildung" ein/aus.
 34. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

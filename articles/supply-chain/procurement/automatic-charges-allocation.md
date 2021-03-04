@@ -177,3 +177,6 @@ Das folgende Verfahren zeigt, wie einer Zeile Gebühren auf Kopfebene zugewiesen
         > Wenn Sie mit dem Raster **Wählen Sie Zeilen aus, die von der Zuordnung ausgeschlossen werden sollen** arbeiten, lassen Sie das Raster offen, bis Sie **Zuweisen** auswählen. Wenn Sie das Raster schließen, bevor Sie **Zuweisen** auswählen, gehen Ihre Einstellungen im Raster verloren. Daher werden Gebühren basierend auf den zuvor definierten Kriterien zugewiesen.
 
 1. Wählen Sie **Zuordnen**, um Ihre Einstellungen zu übernehmen und das Abfragedialogfeld zu schließen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

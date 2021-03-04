@@ -163,3 +163,5 @@ Leistungserfassungs-Quelltypen beschreiben, woher die Leistungserfassungen stamm
 ### <a name="review-types"></a>Überprüfungstypen
 
 Typen der Leistungsbeurteilung helfen, das Verhalten einer Leistungsbeurteilung zu steuern. Sie können den Workflow für eine Beurteilung aktivieren oder deaktivieren. Wenn die Beurteilung keinem Workflow unterliegt, können Sie den Standardstatus definieren, der beim Erstellen der Beurteilung verwendet wird. Sie können außerdem festlegen, ob der Mitarbeiter, der Vorgesetzte oder beide die Beurteilung abzeichnen müssen.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

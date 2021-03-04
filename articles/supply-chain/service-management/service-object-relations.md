@@ -78,3 +78,6 @@ Aufrufen des Stücklisten-Designers mithilfe einer Serviceobjektbeziehung
 
 Werden Serviceaufträge für eine Servicevereinbarung automatisch erstellt, werden die Serviceobjektbeziehungen aus der Vereinbarung auch in den Serviceaufträgen erstellt.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

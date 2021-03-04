@@ -183,3 +183,6 @@ Ein Genehmigungsprozess besteht aus Genehmigungsschritten. Führen Sie die folge
 1. Doppelklicken Sie im Workflow-Editor auf den Genehmigungsprozess. Im Workflow-Editor werden die Schritte des Genehmigungsprozesses angezeigt.
 2. Ziehen Sie zum Hinzufügen eines Genehmigungsschritts den Schritt aus dem Bereich **Workflow-Elemente** auf die Canvas.
 3. Informationen zum Konfigurieren eines Genehmigungsschritts finden Sie unter [Genehmigungsschritte in einem Workflow konfigurieren](configure-approval-step-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

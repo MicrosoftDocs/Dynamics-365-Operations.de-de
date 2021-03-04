@@ -111,3 +111,6 @@ Einrichten der Integration zwischen dem Kostenrechnungsdienst und Dynamics 365 S
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 
 [Startseite für den Kostenrechnungsdienst](cost-accounting-service-home.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

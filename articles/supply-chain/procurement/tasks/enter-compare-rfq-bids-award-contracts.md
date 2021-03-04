@@ -107,3 +107,6 @@ Sie können das Angebot entweder als Lieferant oder als Beschaffungsspezialist e
 ## <a name="view-the-purchase-order-that-is-generated"></a>Zeigen Sie die Bestellung an, die dazu erstellt wurde
 
 Klicken Sie im Aktivitätsbereich auf die Registerkarte **Allgemein**, und wählen Sie **Bestellung** aus. Die Seite, die angezeigt wird, zeigt die Bestellung an, die generiert wurde, als Sie das Angebot angenommen haben.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

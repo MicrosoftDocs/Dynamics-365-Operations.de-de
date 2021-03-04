@@ -52,3 +52,6 @@ Wenn Sie vorbeugende Wartungsaufträge geplant haben, ist der nächste Schritt, 
 
 5. Klicken Sie auf **OK**. Einer oder mehrere Arbeitsaufträge werden erstellt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

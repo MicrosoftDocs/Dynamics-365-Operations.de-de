@@ -46,3 +46,6 @@ Der Schwerpunkt dieser Prozedur liegt auf dem Entfernen eines geplanten Kanban-B
 4. Klicken Sie auf "OK".
     * Dadurch wird der aktuelle Status von "Geplant" zu "Nicht geplant" geändert und aus der Prozessübersicht entfernt.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

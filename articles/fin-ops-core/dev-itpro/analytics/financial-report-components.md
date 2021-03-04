@@ -126,3 +126,6 @@ Wenn Sie einen Baustein öffnen, können andere Benutzer auf diesen Baustein nur
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Diese Aufgabe erstellt eine Bankfazilitätsvereinbarung, einen Garantiebrief zu 
 5. Klicken Sie auf "Speichern".
 6. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

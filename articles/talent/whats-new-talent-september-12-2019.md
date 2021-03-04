@@ -104,3 +104,6 @@ Diese Version enthält nun die Möglichkeit, Checklisten für Mitarbeiter anzuwe
 Diese Funktionalität ist in der Sandboxumgebung verfügbar. Um diese Funktion zu aktivieren, navigieren Sie zu **> Systemverwaltung > Verknüpfung > Einstellungen > Systemparameter- > Vorschaufunktionen**. Wählen Sie **Verbessertes Arbeitskraftformular und Navigation** aus. Dies aktiviert diese Änderungen für alle Benutzer. Sie können diese Option jederzeit deaktivieren.
 
 Weitere Informationen finden Sie unter [Fortschrittlicher Mitarbeitereintrag und -Navigation](./streamlined-employee-entry.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

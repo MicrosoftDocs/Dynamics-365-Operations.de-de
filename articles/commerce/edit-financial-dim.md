@@ -53,3 +53,6 @@ Führen Sie die folgenden Schritte aus, um Finanzdimensionen für Einzelhandelst
 [Excel-Arbeitsmappe zum Bearbeiten von Einzelhandelstransaktionen erstellen](create-excel-edit.md)
 
 [Einer Excel-Arbeitsmappe zum Bearbeiten von Einzelhandelstransaktionen Felder hinzufügen](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Positionen ist ein wichtiges Element der untergeordneten Ebene einer Organisatio
 30. Geben Sie im Feld "Abteilung" einen Wert ein, oder wählen Sie einen Wert aus.
 31. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

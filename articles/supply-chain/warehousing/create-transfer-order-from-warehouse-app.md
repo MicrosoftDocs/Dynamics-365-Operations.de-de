@@ -334,3 +334,6 @@ Die Umlagerungsaufträge werden ohne Verwendung der Funktion **Lieferdatumskontr
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Kann ich ein Kennzeichen mit einem negativen physischen Bestand verwenden?
 
 Die Funktion unterstützt nur positive physische verfügbare Mengen. Stellen Sie sicher, dass auf Lagerort- und Bestandsstatusebene positive physische Bestände vorhanden sind, bevor Sie einem Umlagerungsauftrag Kennzeichen zuweisen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

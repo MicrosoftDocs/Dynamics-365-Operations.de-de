@@ -49,3 +49,6 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 ![ER-Konfigurationsseite](../media/er-financial-dimensions-guides-run3.png)
     * Prüfen Sie das generierte Ergebnis. Für jede Buchung der ausgewählten Charge werden die Finanzdimensionen aus den entsprechenden Dimensionssatz dargestellt. Führen Sie diesen Bericht aus und wählen Sie unterschiedliche Dimensionen aus, um zu sehen, dass der Bericht nicht von der Anzahl der ausgewählten Dimensionen oder aus der Anzahl der Dimensionen abhängt, die für diese Instanz konfiguriert werden.  
 ![ER-Konfigurationsseite](../media/er-financial-dimensions-guides-run4.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

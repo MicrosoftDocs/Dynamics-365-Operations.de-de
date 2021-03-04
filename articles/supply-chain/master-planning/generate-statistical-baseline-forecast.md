@@ -78,3 +78,6 @@ Wenn die Planung nicht für einen großen Satz Artikel generiert wird, sondern b
 - [Manuelle Anpassungen an der Grundplanung](manual-adjustments-baseline-forecast.md)
 
 - [Eine angepasste Planung autorisieren](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

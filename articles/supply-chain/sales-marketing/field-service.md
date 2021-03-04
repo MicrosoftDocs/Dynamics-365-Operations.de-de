@@ -85,3 +85,6 @@ Um die Field Service-Integrationslösung zu nutzen, müssen Sie Folgendes instal
 - Field Service (Version 8.2.0.286) oder eine höhere Version auf Dynamics 365 9.1.x – veröffentlicht im November 2018
 - Interessent zu Bargeld (P2C)-Lösung für Dynamics 365, Version 1.15.0.1 oder eine spätere Version. Die Lösung ist aus [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3) zum Download verfügbar.
 - 'Field Service-Integration, Projekt- und Bestandlösung für Dynamics 365, Version 2.0.0.0 oder eine spätere Version. Die Lösung ist aus [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2) zum Download verfügbar.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

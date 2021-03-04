@@ -128,3 +128,6 @@ Die Stilwerte der Voreinstellung werden auf Ihrer öffentlich zugänglichen Webs
 [Hinzufügen von Sprachen zu Ihrer Website](add-languages-to-site.md)
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

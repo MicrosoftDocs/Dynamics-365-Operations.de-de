@@ -529,3 +529,6 @@ Ein Dimensionswertsatz ist eine benannte Gruppe von Dimensionswerten. Ein Dimens
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

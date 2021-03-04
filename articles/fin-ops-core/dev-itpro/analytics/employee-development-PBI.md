@@ -68,3 +68,6 @@ Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und a
 | Mitarbeiterfähigkeitsanalyse  | Zertifiziert, Ebene, Datumsebene und Qualifikation                                                                    | Name des Mitarbeiters, Fähigkeit |
 | Leistung              | Bewertung, Beschreibung und Bewertungsmodell                                                                      | Aktueller Mitarbeiter, aktuelle Position, Mitarbeitertrend, bevorzugte Stellenfähigkeiten, vergangene Positionszuweisung, Positionstrend, ausgeschiedener Mitarbeiter |
 | Qualifikation                    | Qualifikation, Fähigkeitstyp und Bewertung                                                                              | Mitarbeiterfähigkeitsanalyse, bevorzugte Stellenfähigkeit |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

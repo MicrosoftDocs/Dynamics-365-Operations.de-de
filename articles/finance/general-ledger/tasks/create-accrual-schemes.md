@@ -41,3 +41,6 @@ In diesem Thema wird erläutert, wie Sie ein Abgrenzungsschema erstellen. Für d
 10. Geben Sie im Feld **Anzahl der Vorkommen nach Periode** eine Zahl ein.
 11. Wählen Sie im Feld **Transaktionen buchen** aus, wann die Buchungen gebucht werden sollen (z. B. **Monatlich**).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

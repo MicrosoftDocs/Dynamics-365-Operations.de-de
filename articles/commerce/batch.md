@@ -45,3 +45,6 @@ Um die Standardchargenkennung für die Berechnung von Aufträgen im Zuge der Aus
 
 > [!NOTE]
 > Die Unterstützung für eine verbesserte Handhabung von per Stapel nachverfolgten Artikeln bei der Aufstellungsbuchung einfacher Lagerverwaltungsszenarien wurde in Retail-Version 10.0.5 eingeführt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

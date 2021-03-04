@@ -43,3 +43,6 @@ Die folgende Abbildung zeigt ein Beispiel für die Listenseite **Aktive Wartungs
 
 Eine Kurzbeschreibung der Schaltflächen für die Listenseite **Aktive Wartungsaufträge für Arbeitsaufträge**, finden Sie unter [Einführung in Arbeitsaufträge](../work-orders/introduction-to-work-orders.md), wo identische Schaltflächen beschrieben werden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

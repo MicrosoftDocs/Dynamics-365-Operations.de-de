@@ -89,3 +89,6 @@ Klicken Sie **Anlagenverwaltung** > **Abfragen** > **Wartungsausfallzeit**, um e
 >[!NOTE]
 >Alle Kalender, die im Modul **Anlagenverwaltung** verwendet werden, werden in **Organisationsverwaltung** > **Einstellungen** > **Kalender** > **Kalender** eingerichtet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

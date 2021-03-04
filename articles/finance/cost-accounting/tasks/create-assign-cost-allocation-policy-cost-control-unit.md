@@ -67,3 +67,6 @@ Gehen Sie folgendermaßen vor, um eine Kostenzuweisungsrichtlinie und die entspr
 5. Geben Sie im Feld "Kostenkontrolleinheit" einen Wert ein oder wählen Sie einen Wert aus.
 6. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

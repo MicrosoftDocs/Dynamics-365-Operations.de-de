@@ -145,3 +145,6 @@ In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen
     Die von Ihnen hochgeladene EB-Konfiguration sollte aufgelistet sein.
 
     Beachten Sie, dass die hochgeladene LCS-Konfiguration zu einer anderen Instance werden kann, wenn Anbieter Zugriff auf dieses LCS-Projekt haben.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

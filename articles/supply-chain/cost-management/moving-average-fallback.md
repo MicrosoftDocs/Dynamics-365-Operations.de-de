@@ -46,3 +46,6 @@ Führen Sie die folgenden Schritte aus, um die Fallback-Kostenfolge für Berechn
     - **Aktive Kosten – Artikelpreis** – Organisationen können Leistungsprobleme haben, wenn sie Geschäftsprozesse verwenden, bei denen der Lagerbestand regelmäßig negativ wird und gleichzeitig das Transaktionsvolumen hoch ist. Diese Einstellung kann dazu beitragen, diese Leistungsprobleme zu verringern.
 
 ![Bestandsbuchhaltungsparameter](media/inventory-accounting-parameters.png "Bestandsbuchhaltungsparameter")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

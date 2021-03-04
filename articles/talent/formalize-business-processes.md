@@ -73,3 +73,6 @@ Um eine Geschäftsprozessvorlage zu erstellen oder zu kopieren, navigieren Sie z
 
 Um aktive Prozesse und zugehörige Aufgaben anzuzeigen, navigieren Sie zum Arbeitsbereich **Geschäftsprozesse**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Trainings zu Funktionen, die es sich mit anderen Finance and Operations-Apps tei
 | Inhalt | Beschreibung  | Formate   | Länge    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Konfigurieren und arbeiten Sie mit E-Commerce in Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/) | Die Online-Kanäle und die E-Commerce-Website von Dynamics 365 Commerce erlaubt Einzelhändlern, eine Online-Präsenz ihrer Marke aufzubauen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 4 Stunden   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

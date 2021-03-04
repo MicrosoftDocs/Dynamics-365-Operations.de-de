@@ -73,3 +73,6 @@ Dieser Aufgabenleitfaden unterstützt Sie beim Erstellen einer Kreditorenrechnun
 19. Klicken Sie auf **Buchen**.
 20. Schließt das Formular. Beachten Sie, dass die Bestellung nicht mehr als "Empfangen", sondern als "Nicht fakturiert" aufgeführt ist.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

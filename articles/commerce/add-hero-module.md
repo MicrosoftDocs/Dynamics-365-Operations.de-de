@@ -107,3 +107,6 @@ Um ein Heromodul einer neuen Seite hinzuzufügen und die erforderlichen Eigensch
 [Textblockmodul](add-content-rich-block.md)
 
 [Video-Player-Modul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Gehen Sie folgendermaßen vor, um eine Serviceobjektbeziehung für einen Service
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

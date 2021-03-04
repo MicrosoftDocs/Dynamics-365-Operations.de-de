@@ -42,3 +42,6 @@ Diese Berechnung kann durch Auswählen der Kennzeichnung **Stücklistenauflösun
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Die Abschreibung ohne Rundung beträgt 2.444,44. Wie die folgende Tabelle zeigt,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

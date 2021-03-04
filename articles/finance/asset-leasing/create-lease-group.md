@@ -50,3 +50,6 @@ Nachdem Sie Leasinggruppen erstellt haben, können Sie jeder Gruppe Bücher zuwe
 1. Wechseln Sie zu **Anlagenleasing \> Einrichtung \> Leasinggruppe**.
 2. Wählen Sie eine Leasinggruppe aus und wählen Sie dann **Bücher**.
 3. Wählen Sie **Neu** und dann im Feld **Buchart** das Buch aus, das der Leasinggruppe zugewiesen werden soll. Sie können einer Leasinggruppe mehrere Bücher zuweisen, wenn ein Mietvertrag auf unterschiedliche Weise bilanziert werden muss.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

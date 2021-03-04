@@ -130,3 +130,6 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
     -   Durch physischen Bestand (Ansicht stellt den Gesamtbetrag dar).
     -   Durch physischen Reservierungen (Ansicht stellt den reservierten Betrag dar).
     -   Durch verfügbare physische Menge (Ansicht stellt den verfügbare Betrag dar, der keine Reservierungen hat).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

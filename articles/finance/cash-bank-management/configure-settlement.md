@@ -67,3 +67,6 @@ Um zusätzliche Buchhaltungseinträge, Soll und Haben in dem selben Sachkonto zu
 
 -   Organisationen verwenden oft feste Dimensionen, um eine Finanzdimension, die nicht benötigt wird, mit Null zu füllen. Dies ist in der Regel der Fall bei Bilanzkonten, wie z.B. Debitoren/Kreditorenkonten. Kontostrukturen können verwendet werden, um Finanzdimension nicht zu verfolgen, die typischerweise mit Null gefüllt sind.  Sie können die Finanzdimensionen für die Bilanzkonten entfernen, so dass Sie keine festen Dimensionen verwenden müssen.
 -   Wenn Ihr Unternehmen auf dem Debitoren-/Kreditorenhauptkonto feste Dimensionen benötigt, finden Sie eine Möglichkeit, die feste Dimension auf die Zahlung vorzuschlagen, so dass der Wert der festen Dimension auf der Kreditorenbuchung für die Zahlung gespeichert wird. Dadurch kann das System das Debitoren-/Kreditorenhauptkonto unter Berücksichtigung der festen Dimensionswerte rekonstruieren. Der Wert der festen Dimension kann entweder als Standard für den Kreditor oder den Erfassungsnamen für die Zahlungserfassung definiert werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

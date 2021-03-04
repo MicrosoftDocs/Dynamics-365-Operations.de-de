@@ -85,3 +85,6 @@ In diesem Thema wird die Konfiguration von grundlegenden Lagerinventurprozessen 
 5. Wählen Sie im Dropdownmenü des Feldes **Inventurgruppe** eine Inventurgruppe aus. Sie können eine bestimmte Inventurgruppe auswählen, die auf den Artikel am bestimmten Lagerort angewendet werden soll, den Sie ausgewählt haben. Wenn eine Inventur in diesem Lagerort ausgeführt wird, überschreibt diese Inventurrichtlinie die allgemeine Inventurrichtlinie für den Artikel.  
 6. Wählen Sie **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

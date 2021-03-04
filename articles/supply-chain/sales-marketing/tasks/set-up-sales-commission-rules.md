@@ -96,3 +96,6 @@ Dieses Verfahren zeigt Ihnen, wie Vertriebsprovisionsberechnung und die Nachverf
 17. Wählen Sie in der Liste die Provisionsgruppe aus, die Sie erstellt haben.
 18. Wählen Sie **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

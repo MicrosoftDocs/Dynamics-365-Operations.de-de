@@ -667,3 +667,6 @@ Sie müssen die sortierte Bestandsauswahl durchführen. Wenn es fertig ist, wird
     Die Arbeit ist abgeschlossen.
 
 Ab diesem Zeitpunkt gelten alle anderen Lagerprozesse.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Anweisungen zum Hinzufügen eines Geschenkkartenmoduls zu einer Checkout-Seite u
 [Unterstützung für externe Geschenkgutscheine](./dev-itpro/gift-card.md)
 
 [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

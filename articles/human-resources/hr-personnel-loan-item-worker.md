@@ -44,3 +44,6 @@ Im folgenden Verfahren wird dargestellt, wie einer Arbeitskraft ein Artikel geli
 2. Klicken Sie auf "Bearbeiten".
 3. Geben Sie im Feld "Tatsächliche Rückgabe" ein Datum ein.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

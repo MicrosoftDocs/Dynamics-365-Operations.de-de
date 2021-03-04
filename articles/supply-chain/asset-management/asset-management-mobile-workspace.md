@@ -253,3 +253,6 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
 ![Abbildung 10](media/am-mobile-10.png)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

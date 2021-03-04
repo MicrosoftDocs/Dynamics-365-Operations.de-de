@@ -79,3 +79,6 @@ Der Wert im Feld **Faktor** ist gleich **50**. In diesem Fall ist die Abschreibu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

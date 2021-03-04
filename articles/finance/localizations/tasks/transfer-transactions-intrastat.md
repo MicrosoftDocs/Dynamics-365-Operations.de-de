@@ -153,3 +153,6 @@ Diese Prozedur zeigt Ihnen Schritt für Schritt, wie Sie Intrastat-Parameter ein
     
 Überprüfen Sie die übertragenen Daten, einschließlich Land/Region des Ziels/der Lieferung, Ursprungsland, Gewicht, Menge, die Menge in zusätzlichen Einheiten, die Ware, der Transaktionscode, die Rechnungsbeträge und die statistischen Beträge. Sie können die Daten im Bedarfsfall ändern.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

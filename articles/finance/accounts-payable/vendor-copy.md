@@ -64,3 +64,6 @@ Sie können Kreditoren auch kopieren, indem Sie die Suchfunktion der Umsatzsteue
 
 1. Die Option **Kreditor kopieren** wird angezeigt. Standardmäßig ist diese Option auf **Nein** festgelegt. Um den Kreditor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf **Ja** fest.
 2. Wählen Sie **Auswählen**. Der neue Kreditor wird erstellt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

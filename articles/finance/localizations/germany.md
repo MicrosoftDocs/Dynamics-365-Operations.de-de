@@ -67,3 +67,6 @@ Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrekt
 - [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Lokalisierung und rechtliche Funktionen](../../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
 - [Erstellen Sie eine Umsatzsteuervoranmeldung im XML-Format, ohne Daten für ELSTER (Whitepaper)](https://www.microsoft.com/download/details.aspx?id=101929)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

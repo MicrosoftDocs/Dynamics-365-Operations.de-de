@@ -55,3 +55,6 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadmin
 5. Wählen Sie **Schließen** aus. 
 6. Wählen Sie die gewünschte Version der EB-Konfiguration aus und wählen Sie dann **Importieren** aus, um sie in die aktuelle Instanz einzubringen.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

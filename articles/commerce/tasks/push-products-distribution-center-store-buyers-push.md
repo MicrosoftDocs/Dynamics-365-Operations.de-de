@@ -53,3 +53,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung und Verarbei
 19. Klicken Sie auf "Auftrag erstellen".
 20. Klicken Sie auf "Ja".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

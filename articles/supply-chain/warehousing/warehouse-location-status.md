@@ -169,3 +169,6 @@ Für das Beispielszenario müssen Sie zwei Lagerplatzprofile vorbereiten.
 
 > [!NOTE]
 > Die Lagerplatzfelder werden nur durch Lagertransaktionen aktualisiert. Wenn Sie Bestand mithilfe einer Erfassung oder anderer Nicht-WHS-Prozesse verschieben, werden die Felder nicht aktualisiert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -111,3 +111,6 @@ Die folgenden aggregierten Messungen werden als Grundlage des Inhaltspakets verw
 | Versandleistung        | Versand nach Produkt                       | CustPackingSlipOnTimeStatus           | Früh, rechtzeitig und verspätet erhalten (siehe Beschreibungen oben in dieser Tabelle). |
 | Versandleistung        | Geliefert an Debitoren                      | CustPackingSlipOnTimeStatus           | Früh, rechtzeitig und verspätet erhalten (siehe Beschreibungen oben in dieser Tabelle). |
 | Versandleistung        | Nach Standort/Lagerort Versendet              | CustPackingSlipOnTimeStatus           | Früh, rechtzeitig und verspätet erhalten (siehe Beschreibungen oben in dieser Tabelle). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

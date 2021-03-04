@@ -70,3 +70,6 @@ Anstatt einen gesamten Auftrag zu kopieren, ist es üblicher, eine neue Bestellu
 4. Wählen Sie die Position für die gewünschte Bestellung aus. Beachten Sie, dass die einzelne Auftragsposition, die auf dieser Bestellung ist, ebenfalls ausgewählt ist.  
 5. Wählen Sie **OK**. Die zusätzliche Auftragsposition ist Ihrer Bestellung hinzugefügt worden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

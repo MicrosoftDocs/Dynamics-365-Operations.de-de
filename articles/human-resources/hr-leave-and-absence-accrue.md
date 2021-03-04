@@ -111,3 +111,6 @@ Löschen Sie Abgrenzungssätze für einen bestimmten Plan und Zeitraum. Abgrenzu
 
 [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)</br>
 [Einen Urlaubs- und Abwesenheitsplan erstellen](hr-leave-and-absence-plans.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

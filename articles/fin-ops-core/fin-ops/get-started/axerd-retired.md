@@ -35,3 +35,6 @@ Die HTML-Seiten sind im Repository unter [https://github.com/Microsoft/ax-2012-d
 Eine Beschreibung darüber, wie Sie Ihre eigenen Entitätsbezieungsdiagramme (ERDs) erstellen unter [https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm](https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm)
 
 Die Lösung befindet sich im Stamm des AxErd-Ordners [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

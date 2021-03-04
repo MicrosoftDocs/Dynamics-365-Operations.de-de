@@ -107,3 +107,6 @@ Informationen über die verschiedenen Methoden zum Suchen von Seiten finden Sie 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Anpassen von Feldbeschreibungen](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

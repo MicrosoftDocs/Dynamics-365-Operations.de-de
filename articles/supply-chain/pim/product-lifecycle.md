@@ -109,3 +109,6 @@ Verwenden Sie die folgenden Kriterien, um die freigegebenen Produkte und Produkt
 - [Einem veröffentlichten Produkt einen Produktlebenszyklus-Status zuweisen](tasks/product-lifecycle-state-released-product.md)
 - [Finden Sie veraltete Produktvarianten und weisen Sie einen Produktlebenszyklusstatus zu](tasks/obsolete-product-variants.md)
 - [Ein Produktlebenszyklusstatus erstellen, um Produkte vom Produktprogrammplan auszuschließen](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

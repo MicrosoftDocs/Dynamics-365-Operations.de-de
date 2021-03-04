@@ -102,3 +102,6 @@ Um negative Auswirkungen auf die Benutzeroberfläche (UI) zu vermeiden, bearbeit
 - **Sonstige**
 
 Stattdessen können Sie die Option **TalentSource** Aufzählungswerte erweitern, um andere Quelltypen hinzuzufügen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

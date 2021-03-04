@@ -276,3 +276,6 @@ Wenn ein Benutzer ein Dokument nicht innerhalb der vorgesehenen Zeit bearbeitet,
 
 5. Wiederholen Sie die Schritte 3 bis 4 für alle Benutzer, die dem Eskalationspfad hinzugefügt werden sollen. Sie können die Reihenfolge der Benutzer ändern.
 6. Wenn die Benutzer im Eskalationspfad nicht innerhalb der vorgesehenen Zeit antworten, wird das Dokument automatisch bearbeitet. Um die vom System auszuführende Aktivität anzugeben, wählen Sie die Zeile **Aktivität** aus, klicken Sie dann auf die Registerkarte **Aktivität bei Beendigung** und wählen eine Aktivität aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

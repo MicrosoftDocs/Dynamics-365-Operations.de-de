@@ -233,3 +233,6 @@ Um unerwünschte Probleme bei zukünftigen Ausgleichen für diese Buchung zu ver
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

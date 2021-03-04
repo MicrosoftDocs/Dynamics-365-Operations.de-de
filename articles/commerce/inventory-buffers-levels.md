@@ -149,3 +149,6 @@ Führen Sie die folgenden Schritte aus, um die Antwort der Produktverfügbarkeit
 [Wenden Sie Inventareinstellungen an](inventory-settings.md)
 
 [Lagerverfügbarkeit für Retail Channels berechnen](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

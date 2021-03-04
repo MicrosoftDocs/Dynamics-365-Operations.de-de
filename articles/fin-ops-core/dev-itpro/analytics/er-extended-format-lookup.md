@@ -91,3 +91,6 @@ Wenn Sie die Funktion für **Erweiterte Suche nach ER-Formatkonfigurationen mit 
 - [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 - [ER-Framework-API](er-apis-app73.md)
 - [Den Lebenszyklus der Konfiguration der elektronischen Berichterstellung verwalten](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

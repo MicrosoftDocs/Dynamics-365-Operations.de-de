@@ -37,3 +37,6 @@ Finanz- und Steuerdaten werden durch die folgenden Zuordnungen integriert:
 
 + [Integriertes Sachkonto](ledger-mapping.md)
 + [Integrierter Steuermaster](tax-mapping.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

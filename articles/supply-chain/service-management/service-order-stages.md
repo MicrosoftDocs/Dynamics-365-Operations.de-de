@@ -47,3 +47,6 @@ Wenn Sie eine Servicephase einrichten, können Sie mehrere Optionen oder Verzwei
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Der Benutzer muss der Umgebungsersteller-Rolle für die Umgebung in Microsoft Po
     ![Schaltfläche „Synchronisieren”](media/get-more.png)
 
     Nachdem die Synchronisierung abgeschlossen ist, wird Human Resources auf der Startseite angezeigt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

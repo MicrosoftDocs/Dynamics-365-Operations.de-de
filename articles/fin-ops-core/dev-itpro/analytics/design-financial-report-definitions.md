@@ -84,3 +84,6 @@ In der folgenden Tabelle werden die Registerkarten in einer Berichtsdefinition u
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

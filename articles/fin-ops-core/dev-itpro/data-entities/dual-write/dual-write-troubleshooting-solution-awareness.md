@@ -45,3 +45,6 @@ Auf der Seite **Duales Schreiben** wird möglicherweise eine Fehlermeldung angez
 *Die Entität mit dem Namen 'msdyn\_dualwriteentitymap 'mit namemapping =' Logical 'wurde im MetadataCache nicht gefunden.*
 
 Stellen Sie zur Behebung des Problems sicher, dass die Dual-Write-Core-Lösung in Dataverse instaliert ist. Die Dual-Write-Core-Lösung ist eine Voraussetzung für das Lösungsbewusstsein.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

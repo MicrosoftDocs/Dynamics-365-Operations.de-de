@@ -59,3 +59,6 @@ Schalten Sie als nächstes den Konfigurationsschlüssel **Verwaltung für techni
 1. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**.
 1. Erweitern Sie den Knoten **Handel**, und aktivieren Sie das Kontrollkästchen **Verwaltung für technische Änderungen**.
 1. Schalten Sie den Wartungsmodus aus, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

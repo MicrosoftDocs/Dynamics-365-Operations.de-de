@@ -62,3 +62,6 @@ Diese Prozedur zeigt Ihnen an, wie Sie Händler für bestimmte Produkte genehmig
 31. Schließen Sie die Seite.
 32. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

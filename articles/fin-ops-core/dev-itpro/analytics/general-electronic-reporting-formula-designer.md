@@ -164,3 +164,6 @@ Einige Formeln können zur Entwurfszeit nicht getestet werden. Beispielsweise ka
 
 - [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
 - [Formelsprache in der elektronischen Berichterstellung](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

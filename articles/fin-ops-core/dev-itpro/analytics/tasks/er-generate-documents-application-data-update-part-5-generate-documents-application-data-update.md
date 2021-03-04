@@ -78,3 +78,6 @@ Erstellte XML Datei überprüfen.
 6. Schließen Sie die Seite.
 7. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

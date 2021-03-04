@@ -74,3 +74,6 @@ Die Bestellung muss bestätigt werden, bevor der Produktzugang verarbeitet werde
 6. Reduzieren Sie den Abschnitt **Positionen**.
 7. Klicken Sie auf **OK**, um den Zugang zu buchen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

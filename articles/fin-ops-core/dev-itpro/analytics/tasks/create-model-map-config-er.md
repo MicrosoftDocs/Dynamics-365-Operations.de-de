@@ -65,3 +65,6 @@ Diese Schritte können mithilfe eines beliebigen Dataset abgeschlossen werden. U
     * Intrastat-Beispielzuordnung  
 5. Klicken Sie auf Konfiguration erstellen.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

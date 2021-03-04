@@ -63,3 +63,6 @@ Gehen Sie folgendermaßen vor, um einen Aufgabenleitfaden von LCS wiederzugeben.
 2. Wählen Sie **Von LCS aus öffnen** aus.
 3. Wählen Sie die Bibliothek und den BPM-Knoten aus, die den gespeicherten Aufgabenleitfaden haben.
 4. Öffnen Sie den Aufgabenleitfaden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ Die Eigenschaft **Zweck der Serverauthentifizierung** aus dem Zertifikat V5 wird
 Dieses Update ermöglicht eine alternative Lösung für die Zertifikatvalidierung, sodass eine sichere Kommunikation hergestellt werden kann.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

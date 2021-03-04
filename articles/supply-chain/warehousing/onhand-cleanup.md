@@ -58,3 +58,6 @@ Standardmäßig ist die Einstellung **Maximale Ausführungszeit** nicht verfügb
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Maximale Ausführungszeit für den Bereinigungsvorgang für Lagereinträge*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

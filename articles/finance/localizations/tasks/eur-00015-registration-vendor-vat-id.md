@@ -64,3 +64,6 @@ Vor der Ausführung dieses Schritts müssen Sie MwSt.-IDs einrichten. Diese Proz
 25. Geben Sie im Feld "Umsatzsteuernummer" einen Wert ein oder wählen Sie einen Wert aus.
 26. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

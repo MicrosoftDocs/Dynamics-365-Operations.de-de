@@ -75,3 +75,6 @@ Wenn Sie die Vorschau für Urlaubs- und Abwesenheitskorrekturen für Feiertage a
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
 - [Urlaubs- und Abwesenheitstypen konfigurieren](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

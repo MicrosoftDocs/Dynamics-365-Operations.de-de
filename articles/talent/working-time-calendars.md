@@ -56,3 +56,6 @@ Um einen Kalender einzurichten, gehen Sie folgendermaßen vor:
 10. Um einen Kalender Mitarbeitern zuzuweisen, wählen Sie **Mitarbeiter zuweisen** im Aktivitätsbereich aus. Wählen Sie die Mitarbeiter, die Sie diesem Kalender zuweisen möchten, und klicken Sie dann auf **Zuweisen**.
 
 Mitarbeiter müssen keine zugewiesenen Kalender haben. Wenn es einen definierten Arbeitszeitkalenders gibt, werden Freitage automatisch aus der Anforderung ausgeschlossen. Der Betrag, in Stunden oder Tagen, entspricht standardmäßig den Arbeitszeiten, die im Kalender definiert sind. Wenn ein Mitarbeiter keinen zugeordneten Kalender hat, sind alle Tage für Freizeit verfügbar und die Dauer der Freizeit ist kein Standardwert für die Anforderung. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

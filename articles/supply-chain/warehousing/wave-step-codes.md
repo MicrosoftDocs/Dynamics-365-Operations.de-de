@@ -93,3 +93,6 @@ Die folgenden Prozedurhilfen stellen sicher, dass die Wiederbeschaffungsvorlage,
 6. Im Feld **Wellenschrittcode** wählen Sie den Wellenschrittcode aus, den Sie für die Wiederbeschaffungsvorlage ausgewählt haben.
 
 Sie führen diese Schritte für jede juristische Person aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

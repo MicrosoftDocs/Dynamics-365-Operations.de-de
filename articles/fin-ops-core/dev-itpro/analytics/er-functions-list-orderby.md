@@ -67,3 +67,6 @@ Wenn **Kreditor** als Datenquelle der elektronischen Berichterstellung (EB) konf
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Listenfunktionen](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -211,3 +211,6 @@ Wenn Sie Zeilen mit Werten in der Lieferantenentität in den Feldern **ContactPe
     Die anfängliche Synchronisierung der Zeilen ist nun abgeschlossen.
 
 8. Aktivieren Sie die Änderungsnachverfolgung für Finance and Operations auf der Entität **Debitor V3**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Um eine Umleitung für die Statuscodefehlerantwortseite zu erstellen, führen Si
 [Neue Seite hinzufügen](add-new-page.md)
 
 [Erstellen einer Seiten-URL](create-page-url.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Dieses Thema zeigt, wie eine Datensatzvorlage erstellt wird, sodass Feldwerte, d
 13. Wählen Sie **OK**.
 14. Wählen Sie **Schließen** aus.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

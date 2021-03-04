@@ -40,3 +40,6 @@ Sie können Regeln einrichten, Aufgaben abzugrenzen, die von unterschiedlichen B
 12. Geben Sie im Feld **Sicherheitsbehandlung** einen Wert ein. Geben Sie eine Beschreibung der Aktivitäten ein, die Sie nehmen, um das Sicherheitsrisiko zu minimieren. So können Sie das Risiko minimieren, indem Sie detailliertere Überprüfung des Prozesses durchführen, indem Sie einen Monatsverwaltungsreview tätigen oder indem Sie Ressourcen mit anderen Abteilungen freigeben.     
 13. Klicken Sie auf **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

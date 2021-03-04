@@ -39,3 +39,6 @@ Im folgenden Verfahren sehen Sie, wie Sie einen neuen Berechnung zu einem Produk
 4. Klicken Sie auf "Schließen".
 5. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

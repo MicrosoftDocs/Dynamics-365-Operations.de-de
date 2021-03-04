@@ -56,3 +56,6 @@ Führen Sie die folgenden Schritte aus, um eine stornierte Transaktion zu widerr
 Wenn Sie **Rückverfolgung** auswählen wird ein Dialogfeld angezeigt, in dem sowohl die ursprünglichen als auch die stornierten Transaktionen zusammen mit einer verknüpften Tracenummer angezeigt werden.
 
 Sie können Widerrufe auch mithilfe der entsprechenden **Zeitpläne**-Seite verfolgen. Das **Wiederrufen**-Feld wird gelöscht, während das **Erfassung gebucht**-Feld ausgewählt wird. Darüber hinaus wird das **Neueste Erfassungsnummer** Feld mit der Erfassungsnummer der Widerrufstransaktion aktualisiert und das Feld **Erfassungsnummer** wird mit der Erfassungsnummer des Wiederrufs aktualisiert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

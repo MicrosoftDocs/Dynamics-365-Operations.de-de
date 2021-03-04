@@ -142,3 +142,6 @@ Sie können die Fehlermenge eines Produktionsauftrags nicht melden, wenn Sie nic
 ## <a name="can-i-trace-the-serial-numbers-of-finished-goods-against-the-serial-numbers-of-consumed-goods"></a>Kann ich die Seriennummern der fertigen Ware gegen die Seriennummern der verbrauchten Ware verfolgen?
 
 Sie können die Seriennummern von fertiger Ware nicht gegen die Seriennummern von Material abgleichen, das ein Produktionsauftrag verbraucht, um diese fertige Ware herzustellen. Dieses Szenario wird derzeit nicht unterstützt. Die Abhilfe besteht darin, Produktionsaufträge für eine Menge von 1 zu erstellen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Dieser Aufgabenleitfaden führt Sie durch die Erstellung einer Kontostruktur. Be
 29. Klicken Sie im **Aktivitätsbereich** auf **Aktivieren**.
 30. Klicken Sie auf **Aktivieren**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

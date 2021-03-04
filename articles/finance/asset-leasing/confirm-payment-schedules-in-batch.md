@@ -42,3 +42,6 @@ Führen Sie die folgenden Schritte aus, um mehrere Zahlungspläne zu bestätigen
     - Um alle Bücher zu bestätigen, aktivieren Sie den **Für alle Bücher**-Parameter.
 
 Informationen zu den neu bestätigten Büchern finden Sie auf der **Bestätigte Bücher**-Seite. Nachdem die Zahlungspläne bestätigt wurden, können die Journaleinträge der erstmaligen Erfassung für die Mietverträge gebucht werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

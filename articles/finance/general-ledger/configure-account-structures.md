@@ -107,3 +107,6 @@ Bei der Einrichtung Ihrer Kontostruktur gibt es einige bewährte Methoden, die S
 Wenn Sie mit Ihrer neuen Einrichtung oder einer Änderung der Kontostruktur zufrieden sind, müssen Sie diese aktivieren. Wenn eine Kontostruktur einem Sachkonto zugeordnet ist, kann diese Aktivierung ein langwieriger Prozess sein, da alle nicht gebuchten Vorgänge im System mit der neuen Struktur synchronisiert werden müssen. Gebuchte Transaktionen werden nicht durch Kontostrukturänderungen beeinflusst.
 
 Weitere Informationen finden Sie unter [Ihren Kontenplan planen](plan-chart-of-accounts.md), [Finanzdimensionen](financial-dimensions.md), [Eingeben von Konto- und Dimensionskombinationen (segmentierte Eintragssteuerung)](enter-account-dimension-combinations-segmented-entry-control.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

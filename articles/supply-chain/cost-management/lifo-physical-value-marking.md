@@ -151,3 +151,6 @@ Die folgende Abbildung gibt Aufschluss über die Auswirkungen des LIFO-Lagermode
 - Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung *Lagerabschluss* gekennzeichnet.
 - Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch rote diagonale gestrichelte Pfeile dargestellt, die von einem Zugang zu einem Abgang verlaufen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

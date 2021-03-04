@@ -58,3 +58,6 @@ Diese Verfahren zeigt, wie einzelne Arbeitskräfte für einen oder mehrere Vorte
 14. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 15. Auf dieser Seite können Sie anzeigen, welche Mitarbeiter für die Leistung registriert wurden, sowie alle Mitarbeiter, die nicht registriert wurden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

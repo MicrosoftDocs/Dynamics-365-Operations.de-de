@@ -62,3 +62,6 @@ Das Feld **Nebenproduktkostenzuweisung** auf der Seite **Kuppelprodukte** ist ei
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

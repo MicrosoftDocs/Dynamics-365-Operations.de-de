@@ -69,3 +69,6 @@ Das Demodatenunternehmen, das verwendet wird, um diese Aufzeichnung zu erstellen
 10. Klicken Sie auf "Speichern".
 11. Schließt das Formular.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

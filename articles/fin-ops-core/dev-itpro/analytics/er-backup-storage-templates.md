@@ -102,3 +102,6 @@ In Finance and Operations Version 10.0.5 ist die Sicherungsspeicherung der EB-Vo
 [Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)
 
 [Konfigurieren Sie das Electronic Reporting (ER) Framework](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

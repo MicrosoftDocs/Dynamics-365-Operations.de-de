@@ -69,3 +69,6 @@ Um ortsbasierte Shoperkennung im Handel zu aktivieren, gehen Sie folgendermaßen
 [Konfigurieren Sie mehrere B2C-Mandanten in einer Commerce-Umgebung](configure-multi-B2C-tenants.md)
 
 [Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)](add-cdn-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

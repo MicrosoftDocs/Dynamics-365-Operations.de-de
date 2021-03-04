@@ -59,3 +59,6 @@ In diesem Thema wird erläutert, wie Sie eine erweiterte Regelstruktur erstellen
 17. Schließen Sie die Seite.
 18. Wählen Sie **Aktivieren** aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

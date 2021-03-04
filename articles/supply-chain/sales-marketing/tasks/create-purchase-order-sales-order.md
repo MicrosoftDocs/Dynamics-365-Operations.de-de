@@ -69,3 +69,6 @@ Diese Prozedur zeigt, wie Sie eine Bestellung erstellen, die auf einem Auftrag b
     - Die **Los-Referenz** gewährleistet, dass die Kosten des aktuellen Einkaufs dem Auftrag zugeordnet werden.  
     - Sie können zu dem ursprünglichen Auftrag navigieren, indem Sie den Link im Feld **Referenznummer** öffnen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

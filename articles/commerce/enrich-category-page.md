@@ -65,3 +65,6 @@ Um eine Kategorieseite anzureichern, gehen Sie folgendermaßen vor.
 [Erweitern einer Produktseite](enrich-product-page.md)
 
 [Überprüfen der Zugänglichkeit des Seiteninhalts](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

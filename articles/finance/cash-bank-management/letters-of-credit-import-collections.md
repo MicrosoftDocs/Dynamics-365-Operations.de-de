@@ -54,3 +54,6 @@ Einem Importinkasso hilft, die Zahlung für den Verkäufer sicherzustellen, wenn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

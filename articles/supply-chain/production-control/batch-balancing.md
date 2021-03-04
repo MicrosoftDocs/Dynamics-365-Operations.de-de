@@ -193,3 +193,6 @@ Es gibt eine Ausnahme zur Regel, dass Chargenausgleiche in den Chargenaufträgen
 Falls eine Formel eine Wirksubstanz für ein Produkt enthält, das für die Lagerortverwaltungsprozesse aktiviert ist, jedoch die Chargennummer unterhalb der Position in der Reservierungshierarchie ist, ist der Chargenauftrag für Chargenausgleich nicht verfügbar.
 
 Ein Chargenauftrag, der nicht für Chargenausgleich anwendbar ist, durchläuft den normalen Prozesszyklus für Chargenaufträge.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Die folgenden PowerBI.com-Lösungen sind auf [Microsoft AppSource](https://appso
 - Kostenverwaltung
 - [Finanzleistung](financial-performance-power-bi-content-pack.md)
 - [Retail Channel-Leistung ](retail-channel-performance-dashboard-power-bi-data.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

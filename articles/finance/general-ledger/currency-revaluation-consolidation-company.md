@@ -89,3 +89,6 @@ Sie finden zusätzliche Buchungen für die Berichtswährungsbeträge.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

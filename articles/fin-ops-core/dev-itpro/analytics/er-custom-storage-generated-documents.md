@@ -175,3 +175,6 @@ Das Ereignis **AttachingFile()** wird ausgelöst, wenn die folgenden ER-Ziele ve
 
 - [Ziele für elektronische Berichterstellung (EB)](electronic-reporting-destinations.md)
 - [Startseite für Erweiterbarkeit](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

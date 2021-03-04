@@ -128,3 +128,6 @@ Um Übersetzungen für Werte in einer Dimensionswertgruppe zu verwalten, führen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Sie können Standardbeschreibungen für Intercompany-Ausgleichsbelege definieren
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

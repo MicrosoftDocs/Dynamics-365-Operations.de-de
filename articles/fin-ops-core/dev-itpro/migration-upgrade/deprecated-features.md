@@ -1373,3 +1373,6 @@ Die bereitgestellte Funktionen der Windows 8-Tablet-App für Speseneintrag und G
 |     <strong>Betroffene Produktbereiche</strong>     |                                              Hauptbuch                                              |
 |             <strong>Status</strong>             |                                      Entfernt ab Dynamics AX 2012                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

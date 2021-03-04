@@ -331,3 +331,6 @@ In diesem Beispiel wird die Rücklieferungsposition erstellt, indem die **Auftra
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Benutzer außerhalb des Mandanten, in dem die Umgebung bereitgestellt wurde, mü
 4. Wählen Sie **Benutzer importieren** aus.
 5. Wählen Sie **Schließen** aus.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

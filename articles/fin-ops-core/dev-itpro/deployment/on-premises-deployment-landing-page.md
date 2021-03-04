@@ -72,3 +72,6 @@ Sie können Dynamics 365 Finance und Operations (on-premises) bereitstellen. Wen
 - [Entferntes oder veraltetes Merkmal für Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Software-Lebenszyklusrichtlinie und lokale Freigaben](../migration-upgrade/on-prem-version-update-policy.md)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -128,3 +128,6 @@ Wenn Sie die Kachel **Adressänderungen** auswählen, werden auf einer neuen Sei
 > Wenn Sie eine Warnung oder E-Mail über diese Adressänderungen erhalten möchten, können Sie eine neue Warnregel auf der Registerkarte **Optionen** im Aktionsbereich erstellen. Weitere Informationen zum Erstellen von Warnregeln finden Sie unter [Warnregeln erstellen](/fin-ops-core/fin-ops/get-started/create-alert-rules.md).<br><br>
 
 > Wenn Sie einen Workflow für die Adressänderungen konfigurieren möchten, können Sie die auswählen Option **Extern senden** für Ihre Warnregel auswählen und dann Power Automate verwenden, um das Geschäftsereignis auszulösen und einen Workflow zu konfigurieren. Weitere Informationen finden Sie unter [Warnungen als Geschäftsereignisse](/fin-ops-core/dev-itpro/business-events/alerts-business-events.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

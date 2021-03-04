@@ -51,3 +51,6 @@ Zinscodes können eingerichtet werden, um verschiedene Zinsbeträge auf Grundlag
 21. Geben Sie den Zinssatz pro Monat in Prozent ein, der verwendet wird, um die Zinsen im Monat 7 zu berechnen. In unserem Beispiel ist das 2,5.
 22. Klicken Sie auf "Schließen", um die Einrichtung abzuschließen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

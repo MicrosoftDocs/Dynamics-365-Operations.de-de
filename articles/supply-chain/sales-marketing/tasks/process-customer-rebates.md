@@ -82,3 +82,6 @@ Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgener
     - Die Rückvergütungs-Abgrenzungserfassung wurde gutgeschrieben, um die zukünftigen Verbindlichkeiten für den Debitor darzustellen.
     - Das ist Rückvergütungsausgabenkonto wurde belastet, um die Kosten darzustellen, die in Verbindung mit dem Verkauf angefallen sind.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

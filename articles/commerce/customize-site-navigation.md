@@ -110,3 +110,6 @@ Um benutzerdefinierte Navigationsoptionen Ihrem Navigationsmenü hinzuzufügen, 
 [Erstellen einer Seiten-URL](create-page-url.md)
 
 [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

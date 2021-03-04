@@ -129,3 +129,6 @@ Diese Aufgaben richten sich an Systemadministratoren.
 8. Geben Sie im Feld "Land/Region" "PRT" ein.
 9. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

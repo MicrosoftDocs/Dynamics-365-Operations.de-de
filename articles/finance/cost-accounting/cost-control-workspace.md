@@ -158,3 +158,6 @@ Zusätzliche Ressourcen
 [Zugriffsrechte für Kostenobjekt-Controller definieren](access-rights-cost-object-controller.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

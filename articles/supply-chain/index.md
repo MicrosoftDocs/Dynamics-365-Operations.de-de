@@ -106,3 +106,6 @@ Im [Blog des Teams für F&E in der Fertigung von Dynamics AX](https://blogs.msdn
 ## <a name="elearning-courses"></a>E-Learning-Schulungen
 
 Informationen zu Onlinetrainings und Schulungen finden Sie bei [Microsoft Learn unter Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

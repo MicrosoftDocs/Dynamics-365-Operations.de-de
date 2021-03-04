@@ -140,3 +140,6 @@ Sie können die Bestandserfassung für die Chargenzusammenführung auf der Liste
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Warum kann ich, nachdem ich einen Artikelgewichtsartikel zusammengeführt habe, die Artikelgewichtsinformationen in der Lagererfassung nicht anzeigen?
 Sie können Chargen von Artikelgewichtsartikeln ebenso wie alle anderen Artikel zusammenführen. Allerdings werden die Artikelgewichtsinformationen nicht in der Lagererfassung angezeigt. Es wird empfohlen, die Artikelgewichtsinformationen zu prüfen, bevor Sie die Chargenzusammenführung in die Bestandserfassung übertragen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

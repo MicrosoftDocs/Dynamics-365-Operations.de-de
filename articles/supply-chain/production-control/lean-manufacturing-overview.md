@@ -83,3 +83,6 @@ Darüber hinaus unterstützt Lean Manufacturing die Einkaufs- und Rechnungsstell
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Gehen Sie folgendermaßen vor, um das Design auszuwählen, das auf Ihre Site ang
 
 [Neues Design erstellen](e-commerce-extensibility/create-theme.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

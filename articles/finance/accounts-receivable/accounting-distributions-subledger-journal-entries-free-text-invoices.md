@@ -136,3 +136,6 @@ Bevor Sie eine Freitextrechnung buchen, können Sie den vollständigen Buchhaltu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

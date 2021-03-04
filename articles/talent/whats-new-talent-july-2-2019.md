@@ -55,3 +55,6 @@ Diese Version enthält kleinere Fehlerkorrekturen für Dynamics 365 Talent: Onbo
 ## <a name="changes-in-core-hr"></a>Core HR-Änderungen
 
 Diese Version enthält kleinere Fehlerkorrekturen für Dynamics 365 Talent: Core HR.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

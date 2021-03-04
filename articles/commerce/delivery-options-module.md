@@ -83,3 +83,6 @@ Ein Lieferoptionsmodul kann nur zu einem Auschecken-Modul hinzugefügt werden. W
 [Kopfbelastungen abgeglichen mit Verkaufspositionen aufteilen](pro-rate-charges-matching-lines.md)
 
 [Lieferarten einrichten](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Um eine Sequenz mit einem Spediteur zu verknüpfen, gehen Sie wie folgt vor:
 1. Wählen Sie **Bearbeiten** aus.
 1. Wählen Sie auf der Inforegister-Registerkarte **Übersicht** eine Option im Feld **Pro Nummernfolge**.
 1. Schließen Sie die Seite.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

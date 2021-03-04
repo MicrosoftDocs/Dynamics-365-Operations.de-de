@@ -59,3 +59,6 @@ Der Standardfeldwert für das Feld **Anzahl der Workflow-Items pro Batch** auf d
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Was ist die Workflow Enhanced Error-Funktion?
 Die Funktion Workflow Enhanced Error in Version 10.0.13 fügt Fehlercodes hinzu, um verschiedene Klassen von Workflowfehlern zu unterscheiden. Die gemeldeten Fehlermeldungen ähneln sich größtenteils mit geringfügigen Unterschieden, um sie zu verdeutlichen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

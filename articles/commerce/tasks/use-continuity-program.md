@@ -62,3 +62,6 @@ Diese Verfahren zeigt den Verkauf eines Kontinuitätsprogramms und die Verarbeit
     * Geben Sie die Auftragsnummer ein, die Sie weiter oben in der Prozedur notiert haben. So bleibt die Verarbeitungszeit für dieses Verfahren minimal. Das Auftragsfeld ist optional. Sie können alle Aufträge für ein beliebiges Programm verarbeiten.  
 21. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

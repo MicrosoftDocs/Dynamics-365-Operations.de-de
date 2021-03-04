@@ -122,3 +122,6 @@ Sie können NSF-Zahlungen verarbeiten, indem Sie auf der Seite **Inkassi** auf *
 [Kreditsperren für Aufträge](./cm-sales-order-credit-holds.md)
 
 [Periodische Aufgaben des Kundenkreditmanagements](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

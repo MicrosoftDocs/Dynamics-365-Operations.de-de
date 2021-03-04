@@ -100,3 +100,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen K
 65. Klicken Sie auf "Speichern".
 66. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -166,3 +166,6 @@ In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Arbeitsauftrag er
 >[!NOTE]
 >Wenn Arbeitsaufträge automatisch erstellt werden sollen, können Sie Wartungsplanjobs planen oder festlegen, dass [Wartungspläne](../preventive-and-reactive-maintenance/maintenance-plans.md) oder [Wartungsrunden](../preventive-and-reactive-maintenance/maintenance-rounds.md) auf einer Anlage automatisch erstellt werden. Arbeitsaufträge, die aus Wartungsanfragen auf der Listenseite **Alle Wartungszeitpläne** erstellt wurden, weisen die in den Wartungsanfragen ausgewählten Wartungsauftragsarten auf.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

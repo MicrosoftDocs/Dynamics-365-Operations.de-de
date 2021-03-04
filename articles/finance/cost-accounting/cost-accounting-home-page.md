@@ -53,3 +53,6 @@ Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

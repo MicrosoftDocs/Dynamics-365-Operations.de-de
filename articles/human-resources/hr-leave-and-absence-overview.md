@@ -54,3 +54,6 @@ Ihre Mitarbeiter können Freizeitanträge einreichen und Sie können sie im Arbe
 [Arbeitsfreie Zeit anfordern](hr-employee-self-service-request-time-off.md)
 [Urlaubs- und Abwesenheitsanforderungen verwalten](hr-employee-self-service-manage-requests.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

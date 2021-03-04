@@ -75,3 +75,6 @@ Die Konfiguration wird für die externe Organisation freigegeben und steht diese
 ![Freigegebene Konfiguration für eine externe Organisation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
 
 6. Um die Freigabe einer Konfiguration aufzuheben, die zuvor für eine externe Organisation freigegeben wurde, wählen Sie die Konfiguration aus und klicken Sie auf **Freigabe aufheben** und dann **OK**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

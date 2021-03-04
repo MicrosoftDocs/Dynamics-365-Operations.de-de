@@ -83,3 +83,6 @@ Wenn Sie das Mietvertragsimport-Framework zum Aktualisieren von Mietverträgen v
 
 1. Gehen Sie zu **Anlagenleasing \> Mietvertragsimport Framework \> Installieren \> Feldauswahl aktualisieren**.
 2. Wählen Sie auf der angezeigten Seite die zu aktualisierenden Felder aus und klicken Sie dann auf den grünen Pfeil, um sie in die Liste **Ausgewählte Felder** zu verschieben. Nur Felder in der Liste **Ausgewählte Felder** können mithilfe der Mietvertragsimport-Suite aktualisiert werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

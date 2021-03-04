@@ -83,3 +83,6 @@ Im folgenden Verfahren wird gezeigt, wie ein Produktkonfigurationsmodell erstell
 17. Geben Sie im Feld "Pro Serie" eine Zahl ein.
 18. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

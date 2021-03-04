@@ -64,3 +64,6 @@ Ziel dieser Prozedur ist es, eine neue Produktionsflussversion zu erstellen. Fü
     * Geben Sie die Anzahl von Tagen der Periode für tatsächliche Zykluszeit an. Die Periode für tatsächliche Zykluszeit ist die Anzahl der Tage, in denen Einzelvorgänge ab der tatsächlichen Minute rückwärts erfasst werden, um die tatsächliche Zykluszeit zu berechnen. Der Wert kann jederzeit geändert werden und wird nur für die Berechnung der tatsächlichen Zykluszeiten verwendet.  
 13. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

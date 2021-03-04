@@ -67,3 +67,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen O
 3. Führen Sie den Verteilungszeitplan 1070 aus, um Änderungen an der Kanaldatenbank zu synchronisieren. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

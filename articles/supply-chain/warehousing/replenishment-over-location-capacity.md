@@ -408,3 +408,6 @@ Sie können nun Auftrag 2 kommissionieren. Er wurde entsperrt, als die mit dem 
 - Sie können die Verfügbarkeit der Wiederbeschaffungsarbeit für jede Arbeitskopfzeile aus der Seite **Arbeitsdetails** manuell überschreiben, wenn Sie wollen.
 - Wenn das System die Verfügbarkeit der Wiederbeschaffungsarbeiten festlegt, berücksichtigt es alle Bestände, die sich bereits am Lagerplatz befinden, bevor Arbeiten abgeschlossen werden.
 - Jeder Teil der Auftragsarbeit ist mit einer bestimmten Wiederbeschaffungsarbeit verknüpft. Es gibt keine entsprechende Verfügbarkeitsfunktion für Verkaufsarbeiten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -227,3 +227,6 @@ Die Berichtsdesigner-Symbolleiste bietet Schnellzugriff auf Befehle für das Nav
 [Finanzberichterstellung](financial-reporting-intro.md)
 
 [Finanzberichte generieren](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

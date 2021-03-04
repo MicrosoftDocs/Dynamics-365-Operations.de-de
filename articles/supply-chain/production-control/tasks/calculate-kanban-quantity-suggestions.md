@@ -85,3 +85,6 @@ Der Schwerpunkt dieser Prozedur liegt auf dem Optimieren der Kanban-Größe und 
     * Beachten Sie, dass dies die feste Kanban-Menge von 4 aus der Kanban-Mengenberechnung ist.  
 5. Klicken Sie auf die Registerkarte "ListPanel".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

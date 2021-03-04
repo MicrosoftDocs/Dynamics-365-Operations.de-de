@@ -42,3 +42,6 @@ Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, is
     * Weitere Informationen zur Identifikation der Charge.  
     * So fügen Sie ein gescanntes Bild der EU-Eintragsbescheinigung der Erfassung pflegen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

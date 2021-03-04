@@ -114,3 +114,6 @@ Weitere Informationen zum Empfangen von personalisierten Empfehlungen finden Sie
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

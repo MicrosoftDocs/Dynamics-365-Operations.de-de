@@ -241,3 +241,6 @@ Berücksichtigen Sie die folgenden optimalen Verfahren bei der Implementierung e
 - Verwenden Sie vor dem Entwerfen von umfassenden Neustrukturierungsszenarien die Gültigkeitsdaten der Hierarchie, um eine Auswirkungsanalyse und einen Validierungstest durchzuführen.
 - Verwenden Sie zum Ändern einer Hierarchie den Entwurfsmodus, bevor Sie eine neue Version in einer Produktionsumgebung veröffentlichen.
 - Begrenzen Sie die Anzahl der Personen, die zum Hinzufügen oder Entfernen von Organisationen von einer Hierarchie in einer Produktionsumgebung berechtigt sind. Durch eine kleinere Anzahl verringert sich die Wahrscheinlichkeit für kostspielige Fehler und Korrekturen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

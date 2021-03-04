@@ -83,3 +83,6 @@ Führen Sie zum Speichern und Aktivieren des Workflows die folgenden Schritte au
 
     - Klicken Sie zum Aktivieren dieser Version des Workflows auf **Neue Version aktivieren**. Wenn ein Workflow aktiv ist, können Benutzer Dokumente zwecks Verarbeitung übermitteln.
     - Wenn diese Version nicht aktiviert werden soll, klicken Sie **Neue Version nicht aktivieren** an. Der Workflow kann auch später aktiviert werden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

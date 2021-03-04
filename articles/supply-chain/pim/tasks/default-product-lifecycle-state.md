@@ -62,3 +62,6 @@ Diese Prozedur zeigt, wie ein standardmäßiger Produktlebenszyklus-Status erste
 > [!NOTE]
 > Angenommen, Sie haben einen aktiven Status eingerichtet, dann können Sie jetzt den aktiven Status auswählen, um zuzulassen, dass das Produkt im Produktprogrammplan und der Stücklistenberechnung verwendet wird. Offensichtlich ist dies nur sinnvoll, wenn alle Produktdetails, die für eine konsistente Planung erforderlich sind, angegeben sind.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Ziel dieser Prozedur ist das Zurücksetzen eines falschen Kanban-Einzelvorgangss
     * Wählen Sie den gleichen Einzelvorgang aus.  
     * Beachten Sie, dass der Einzelvorgangsstatus für den Kanban-Einzelvorgang auf "Geplant" zurückgesetzt wurde und von einem leeren Kanbansymbol angegeben wird.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

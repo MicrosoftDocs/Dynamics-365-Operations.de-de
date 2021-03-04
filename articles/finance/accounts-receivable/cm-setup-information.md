@@ -153,3 +153,6 @@ Führen Sie die folgenden Schritte aus, um Zeilen hinzuzufügen, die das Kreditl
 2. Wählen Sie den Vergleichsoperator aus, der definiert, wie die Bewertungsgruppeninformationen ausgewertet werden sollen.
 3. Geben Sie den Wert ein, der mit dem für die Bewertungsgruppe angegebenen Wert verglichen werden soll.
 4. Geben Sie das Kreditlimit ein, das zugewiesen werden soll, wenn die Debitorinformationen mit dem für die Bewertungsgruppe angegebenen Wert übereinstimmen. Beispielsweise erstellen Sie ein automatisches Kreditlimit für die Bewertungsgruppe **Niedrig**. Wenn die Geschäftsjahre zu den Bewertungsgruppen gehören, können Sie eine Zeile definieren, die ein Kreditlimit von 100.000 zuweist, wenn der Debitor fünf Jahre im Geschäft war, und eine andere Zeile, die ein Kreditlimit von 200.000 zuweist, wenn der Debitor zehn Jahre im Geschäft war Jahre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

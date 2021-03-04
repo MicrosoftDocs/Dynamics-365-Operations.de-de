@@ -65,3 +65,6 @@ Eine neue Common Data Service Lösung wird in Kürze mit den folgenden Änderung
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

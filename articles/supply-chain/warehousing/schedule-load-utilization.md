@@ -72,3 +72,6 @@ Sie können die Platznutzung projizieren, indem Sie den Bericht **Lagerort-Ausla
 
 4. Geben Sie im Feld **Auslastungstyp** **Volumen** oder **Gewicht** an, um die Lagerortorganisationseinheit anzugeben, für die Platz projiziert werden soll.
 5. Wählen Sie im Feld **Platzauslastungseinstellungen** die Einstellungen für die Platznutzung aus, auf denen die Projektion basiert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

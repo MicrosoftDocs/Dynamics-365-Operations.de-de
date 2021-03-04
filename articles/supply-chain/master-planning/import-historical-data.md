@@ -59,3 +59,6 @@ Nachdem Sie die historischen Bedarfsdaten importiert haben, können Sie eine Bed
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Eine statistische Grundplanung generieren](generate-statistical-baseline-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

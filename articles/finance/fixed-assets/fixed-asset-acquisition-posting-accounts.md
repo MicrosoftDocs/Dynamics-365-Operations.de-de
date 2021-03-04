@@ -45,3 +45,6 @@ Weitere Informationen finden Sie unter[Anlagen über Beschaffung erhalten](acqui
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

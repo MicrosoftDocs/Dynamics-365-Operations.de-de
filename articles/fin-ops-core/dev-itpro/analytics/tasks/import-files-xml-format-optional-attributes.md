@@ -123,3 +123,6 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 
 > [!NOTE]
 > Dieselbe Datei wurde importiert, da das Formatdesign nun das „ID“-Attribut für das Element „Dokument“ als optional betrachtet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

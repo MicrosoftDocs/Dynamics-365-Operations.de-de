@@ -68,3 +68,6 @@ Die Zahlungsplanzeilen auf der Seite mit den Mietvertragsdetails werden automati
 Sie können den neu generierten Zahlungsplan anzeigen, der am Neubewertungsdatum beginnt, und den gesamten aktualisierten Zahlungsbetrag anzeigen. Ein neuer Tilgungsplan für Mietverbindlichkeiten und ein Abschreibungsplan für Vermögenswerte wurden ebenfalls erstellt, um den angepassten Zahlungsplan widerzuspiegeln.
 
 Der Journaleintrag hat den Regulierungsjournaleintrag automatisch auf das Konto für die Änderung der Mietzahlungen gebucht, die mit der Indexneubewertung zusammenhängen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

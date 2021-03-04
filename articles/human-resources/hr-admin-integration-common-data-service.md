@@ -118,3 +118,6 @@ So führen Sie eine vollständige Synchronisierung für eine Entität zwischen H
 [![Ausführen einer vollständigen Synchronisierung](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

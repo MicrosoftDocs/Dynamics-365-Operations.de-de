@@ -157,3 +157,6 @@ Kandidaten sind Personen, die einer Talentschmiede hinzugefügt wurden, werden j
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profile - Kandidatendetails | Erstellen, lesen, aktualisieren und löschen | Erstellen, lesen, aktualisieren und löschen | Kein Zugriff   |
 | Dokumente                   | Erstellen, lesen, aktualisieren und löschen | Erstellen, lesen, aktualisieren und löschen | Kein Zugriff   |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Dieses Thema führt die mobilen Arbeitsbereiche auf, die vor kurzem für die mob
 | [Aufträge](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Sie sind jederzeit auf dem neuesten Stand hinsichtlich Ihrer Aufträge, jederzeit und überall.                                                                                                                          |  2017. Januar                  |
 | [Kreditor-Kooperation](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Ermöglicht Ihren Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen. |2017. Januar    |
 | [Anlagenverwaltung](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | Mit dem Arbeitsbereich können Benutzer Wartungsanforderungen und Arbeitsaufträge anzeigen und erstellen. Benutzer können auch die zugeordneten Arbeitsauftragseinzelvorgänge in einer Listenansicht anzeigen. Anlagen und funktionale Standorte können auch angezeigt und gesucht werden. |2019. Oktober    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

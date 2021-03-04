@@ -90,3 +90,6 @@ In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporti
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -243,3 +243,6 @@ Die Grundlegende wird für das Format **Format zum Erlernen von ER-Grundlagen** 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Konfigurieren Sie das Electronic Reporting (ER) Framework](electronic-reporting-er-configure-parameters.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

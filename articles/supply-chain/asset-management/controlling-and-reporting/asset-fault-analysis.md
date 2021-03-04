@@ -109,3 +109,6 @@ Im Screenshot unten wurde **Typ** hinzugefügt, und in diesem Beispiel wird die 
 >[!NOTE]
 >Einen Überblick über alle erstellten Fehlererfassungen für Arbeitsaufträgen und Wartungsanfragen erhalten Sie, indem Sie auf **Anlagenverwaltung** > **Abfragen** > **Anlagenfehler** > **Anlagenfehler** klicken. Wählen Sie auf der Seite **Anlagenfehler** eine Anlagenfehlererfassung aus, und erweitern Sie den Bereich **Zugehörige Informationen**, um Informationen zum zugehörigen Arbeitsauftrag oder zur zugehörigen Wartungsanforderung anzuzeigen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

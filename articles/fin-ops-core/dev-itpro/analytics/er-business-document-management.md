@@ -423,3 +423,6 @@ Höchstwahrscheinlich haben Sie sich bei der aktuellen Instanz der App der Azure
 
 [Konfigurieren Sie die elektronische Berichterstattung (ER), um Daten in Power BI zu ziehen.](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

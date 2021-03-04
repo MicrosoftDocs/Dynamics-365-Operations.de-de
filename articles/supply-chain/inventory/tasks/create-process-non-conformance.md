@@ -67,3 +67,6 @@ Dieses Thema erklärt, wie Sie die Qualitätsmangelverwaltung auf Basis eines vo
 2. Wählen Sie **Qualitätsmangel schließen** aus.
 3. Wählen Sie **Ja** aus.
 4. Schließen Sie die Seiten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

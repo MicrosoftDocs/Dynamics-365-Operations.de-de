@@ -153,3 +153,6 @@ Ein Angebot kann von einem Kandidaten jederzeit aus verschiedenen Gründen zurü
 ## <a name="closing-an-offer"></a>Angebotsabschluss 
 
 Wenn ein Angebot angenommen, abgelehnt oder zurückgezogen wurde, ohne dass weitere Aktionen erforderlich sind, können Sie das Angebot schließen, damit keine weitere Änderungen an diesem Angebotspaket vorgenommen werden können.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

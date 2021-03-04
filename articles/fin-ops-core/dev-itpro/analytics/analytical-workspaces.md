@@ -45,3 +45,6 @@ ms.locfileid: "4683137"
 - [Arbeitsbereich für Kreditorenzahlungen](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [Power BI-Inhalt zur Lagerortleistung](warehouse-power-bi-content.md)
 - [Power BI-Inhalt zu Arbeitskraftkennzahlen](workforce-analysis-power-bi-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

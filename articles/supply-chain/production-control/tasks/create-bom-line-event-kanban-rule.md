@@ -83,3 +83,6 @@ Diese Aufgabe konzentriert sich auf die Einstellungen, die zum Erstellen einer E
     * Beachten Sie das Kanban, das erstellt wird, um M0001 für den vorkalkulierten Produktionsauftrag zu liefern.  
     * Dies ist der letzte Schritt!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

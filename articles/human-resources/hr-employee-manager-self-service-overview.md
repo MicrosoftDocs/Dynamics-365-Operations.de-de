@@ -214,3 +214,5 @@ Manager können alle Ziele für ihr Team über die Kachel **Teamleistungsziele**
 Die Registerkarte **Bewertungen** fasst die Bewertungen des Mitarbeiters in den einzelnen Bundesstaaten zusammen: **In Bearbeitung**, **Bereit zur Überprüfung**, und **Abschließende Prüfung**. Um auf die Bewertung eines Mitarbeiters zuzugreifen, wählen Sie die Schaltfläche **Details** und wählen Sie dann die Bewertungen aus, an denen Sie zusammenarbeiten möchten. Anhand der Position einer Überprüfung im Workflow-Prozess können Sie feststellen, ob die Überprüfung zur Aktualisierung verfügbar ist. 
 
 Sie können alle Bewertungen für ihr Team über die Kachel **Teamleistungsüberprüfung** im Abschnitt **Zusammenfassung** von **Mein Team** sehen.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

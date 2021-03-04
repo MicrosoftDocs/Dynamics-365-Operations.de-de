@@ -145,3 +145,6 @@ Weitere Informationen finden Sie in folgenden Themen:
 - [Doppelte Währung](dual-currency.md)
 - [Mehrwertsteuerübersicht](indirect-taxes-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

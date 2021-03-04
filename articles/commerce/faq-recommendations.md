@@ -100,3 +100,6 @@ Nachdem Sie Produktempfehlungen aktiviert haben, müssen Sie den Empfehlungsbere
 [Manuell kuratierte Empfehlungen erstellen](create-editorial-recommendation-lists.md)
 
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

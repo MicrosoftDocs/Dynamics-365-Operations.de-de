@@ -183,3 +183,6 @@ Beispielsweise hat ein Artikel eine Vorlaufzeit von einem Tag und einen Sicherhe
 [Erste Schritte mit der Planungsoptimierung](get-started.md)
 
 [Passanalyse zu Planungsoptimierung](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Bei dieser Prozedur wird eine Transporteinschränkung eingerichtet, um zu verhin
 10. Klicken Sie auf "Speichern".
 11. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

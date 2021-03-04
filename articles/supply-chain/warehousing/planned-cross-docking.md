@@ -316,3 +316,6 @@ Derzeit haben beide Arbeits-IDs das gleiche Zielkennzeichen. Um die nächsten Sc
 Die folgende Abbildung zeigt, wie die abgeschlossene Crossdocking-Arbeit in Microsoft Dynamics 365 Supply Chain Management aussehen könnte.
 
 ![Crossdocking-Arbeit abgeschlossen](media/PlannedCrossDockingWork.png "Crossdocking-Arbeit abgeschlossen")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

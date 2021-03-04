@@ -91,3 +91,6 @@ Die folgenden Abschreibungsmethoden stehen zur Auswahl.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

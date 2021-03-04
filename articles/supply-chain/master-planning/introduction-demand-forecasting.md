@@ -100,3 +100,6 @@ Beachten Sie, dass die Bedarfsplanungsmaßeinheit keine spezifische Bedeutung ha
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

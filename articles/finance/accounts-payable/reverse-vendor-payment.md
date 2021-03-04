@@ -83,3 +83,6 @@ Wurde der rückgeholte Scheck für eine Debitorenrückerstattung ausgestellt, gi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

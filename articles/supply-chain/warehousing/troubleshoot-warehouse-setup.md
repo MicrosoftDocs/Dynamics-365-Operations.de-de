@@ -40,3 +40,6 @@ Sie können keine andere Rolle als die des Administrators verwenden, um auf den 
 ### <a name="issue-resolution"></a>Problemlösung
 
 Der App-Emulator für mobile Geräte ist so festgelegt, dass er nur mit dem Administratorkonto funktioniert. Für alle Test- und Live-Prozesszwecke empfehlen wir, die Lagerort App selbst zu verwenden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

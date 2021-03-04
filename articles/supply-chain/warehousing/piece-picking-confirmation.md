@@ -51,3 +51,6 @@ Die folgenden Optionen sind zur Auswahl verfügbar, wenn der Arbeitstyp Entnahme
 | Stückentnahmebestätigung | Verfügbar für Entnahme- und Inventurarbeitstypen. Produktbestätigung wird automatisch ausgewählt. Ermöglicht Ihnen, jeden Inventurartikel über das mobile Gerät zu bestätigen. |
 |  Maximale Anzahl von Stücken  |                   Verfügbar für Entnahmearbeit, wenn Stückentnahmebestätigung aktiviert ist. Beschränkt die Anzahl der Teile, die Sie bestätigen müssen.                   |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

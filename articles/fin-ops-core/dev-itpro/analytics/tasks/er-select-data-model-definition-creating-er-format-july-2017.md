@@ -98,3 +98,6 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
     * Beachten Sie, dass ein Stammartikel nun verfügbar ist, um diesen den Bewerbungsdatenquellen zuzuordnen. Wenn mindestens eine vorbildliche Zuordnung eingegeben wird, werden nur die Stammartikel des Modells, die den Bewerbungsdatenquellen zugeordnet werden, als vorbildliche Definition ausgewählt werden können, für die das ER-Format hinzugefügt wird.   
 5. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

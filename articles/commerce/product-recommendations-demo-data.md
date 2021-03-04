@@ -90,3 +90,6 @@ Die Erweiterung enthält die Datendatei „RecoMockDataset.csv“, mit der Sie d
 [Manuell kuratierte Empfehlungen erstellen](create-editorial-recommendation-lists.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

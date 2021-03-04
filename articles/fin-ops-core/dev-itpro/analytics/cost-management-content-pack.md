@@ -207,3 +207,6 @@ Die folgenden wesentlichen Dimensionen werden als Filter verwendet, um die aggre
 | Juristische Personen                                          | Name der juristischen Person                              |
 | Steuerkalender                                        | Steuerkalender, Jahr, Quartal, Periode, Monat   |
 | Standort                                                    | ID, Name, Adresse, Bundesland, Land               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

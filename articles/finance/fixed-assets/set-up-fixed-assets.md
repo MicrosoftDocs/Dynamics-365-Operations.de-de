@@ -84,3 +84,6 @@ Sie können Ursachencodes konfigurieren, damit sie für Änderungen an einer Anl
 Schließlich definieren Sie auf der Registerkarte **Nummernkreise** die Nummernkreise für Anlagen. Der Nummernkreis der **Anlagen** kann vom Nummernkreis der **Anlagengruppe** überschrieben werden, wenn er angegeben wurde.
 
 Weitere Informationen finden Sie unter [Anlage erstellen](tasks/create-fixed-asset.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

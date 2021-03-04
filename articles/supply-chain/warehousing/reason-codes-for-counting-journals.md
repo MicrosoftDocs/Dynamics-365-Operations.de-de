@@ -144,3 +144,6 @@ Die folgenden Felder werden der Menüoption des mobilen Geräts hinzugefügt, we
 - Standardursachencode für Zählungen
 - Ursachencode für Zählungen anzeigen
 - Ursachencode für Zählungen bearbeiten
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -120,3 +120,6 @@ Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wi
 11. Klicken Sie auf **OK**.
 12. Klicken Sie auf **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

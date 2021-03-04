@@ -100,3 +100,6 @@ Führen Sie folgende Schritte aus, um eine URL zu veröffentlichen.
 [Füllen einer Kategorie-Landingpage](enrich-category-page.md)
 
 [Überprüfen der Zugänglichkeit des Seiteninhalts](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

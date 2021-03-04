@@ -50,3 +50,6 @@ Die Erfassung **Bestandsbesitzänderung** wird verwendet, um die Übertragung de
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Kreditorenzusammenarbeit in den Lieferungsprozessen
 Wenn Ihre Kreditoren die Kreditorenzusammenarbeitschnittstelle verwenden, können sie diese verwenden, um den Verbrauch des Bestands an Ihrem Standort zu überwachen. Weitere Informationen zur Einrichtung von Kreditoren zur Verwendung der Kreditorenzusammenarbeit finden Sie unter [Benutzersicherheit für Kreditorenportal](../procurement/configure-security-vendor-portal-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

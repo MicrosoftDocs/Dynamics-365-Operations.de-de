@@ -36,3 +36,6 @@ Wenn Sie Positionen in der markierungsbasierte **Zählvorgang** Seite erstellen,
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Zykluszählung](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

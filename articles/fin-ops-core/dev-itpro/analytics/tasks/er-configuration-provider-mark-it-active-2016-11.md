@@ -44,3 +44,6 @@ In diesem Thema wird erläutert, wie ein Benutzer, der der Systemadministratorro
 2. Wählen Sie **Als aktiv festlegen**.
 
 ![Elektronische Berichterstellung – Seite „Arbeitsbereich“](../media/GER-Task-ActiveProvider-1.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

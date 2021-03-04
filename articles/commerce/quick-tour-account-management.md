@@ -96,3 +96,6 @@ Weitere Informationen zu Kontoverwaltungsmodulen und zu deren Erstellung finden 
 
 [Übersicht der Einkaufswagen- und Auschecken-Seiten](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

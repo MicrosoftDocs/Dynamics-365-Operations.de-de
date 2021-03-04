@@ -73,3 +73,6 @@ Senden Sie eine E-Mail an [Debitorenzahlungseinblicke (Vorschau)](mailto:fiap@mi
 Vorschauen (1) können weniger Datenschutz- und Sicherheitsmaßnahmen anwenden als der Dynamics 365 Finance and Operations-Dienst, (2) sind nicht in der Service Level Agreement für diesen Dienst enthalten, (3) sollten nicht zur Verarbeitung personenbezogener Daten oder anderer Daten verwendet werden, die gesetzlichen oder behördlichen Compliance-Anforderungen unterliegen, und (4) hat begrenzten Support.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -108,3 +108,6 @@ Nachdem ein Abschlusskonto-Zeitplan abgeschlossen ist, w√§hlen Sie die Option f√
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

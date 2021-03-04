@@ -49,3 +49,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung und Verarbei
 15. Wählen Sie in der Liste einen Lagerort aus, der die Produkte empfangen hat.
 16. Klicken Sie auf "Auftrag", um die Aufträge anzuzeigen, die für den ausgewählten Lagerort erstellt wurden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

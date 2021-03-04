@@ -41,3 +41,6 @@ Weitere Informationen zu Beschaffungskategorien finden Sie unter [Einrichten von
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

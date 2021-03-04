@@ -71,3 +71,6 @@ Durch den Upgradeprozess werden Ihre vorhandenen Einstellungen und alle Ihre vor
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

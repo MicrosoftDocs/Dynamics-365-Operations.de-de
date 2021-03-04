@@ -76,3 +76,6 @@ Laden Sie die folgenden Dateien herunter, um den Aufgabenleitfaden ausführen:
 
 - [ER-Datenmodellkonfiguration - CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [ER-Formatkonfiguration - CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

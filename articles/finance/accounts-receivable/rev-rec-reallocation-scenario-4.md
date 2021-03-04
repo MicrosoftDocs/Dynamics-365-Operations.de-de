@@ -77,3 +77,6 @@ Bei Auswahl von **Beleg** wird der ursprüngliche Buchhaltungseintrag in der Rec
 Öffnen Sie als Nächstes die Seite **Alle Debitoren** (**Debitorenkonten \> Debitoren \> Alle Debitoren**), wählen Sie den Debitor **UNS\_SI\_0003** und danach **Transaktionen** aus. Die Originalrechnung (000008) zusammen mit dem Originalbuchhaltungseintrag steht auf der Seite **Debitorenbuchungen**. Weil die Option **Rechnungskorrekturen auf Debitorenkonten buchen** auf der Seite **Hauptbuchparameter** auf **Nein** gesetzt ist, wird nur das Hauptbuch aktualisiert. Dies ist der Grund, warum die stornierten und aktualisierten Buchhaltungseinträge nicht angezeigt werden. Beachten Sie, dass die in [Szenario 3](rev-rec-reallocation-scenario-3.md) erstellten Transaktionen zur Umsatzanpassung angezeigt werden.
 
 [![Ursprünglicher Buchhaltungseintrag auf der Seite „Debitorenbuchungen“](./media/47_rev-rec-scenarios.png)](./media/47_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

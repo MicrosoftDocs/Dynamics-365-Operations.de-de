@@ -193,3 +193,6 @@ Vollständig versandte Transportaufträge werden auf die Registerkarte **Vollst�
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Eingangsbestandsvorgang in POS](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

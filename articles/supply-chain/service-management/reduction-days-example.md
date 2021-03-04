@@ -121,3 +121,6 @@ Bei der Fakturierung der Buchungen für März 2011 wird der Verkaufspreis von E
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -122,3 +122,6 @@ Um die Formularoption **Information** wieder zu aktivieren, führen Sie die folg
 2. Suchen Sie das **Information**-Formular unter dem Formularknoten. 
 3. Wählen Sie das Formular **Information** und klicken Sie auf **Sicherheitsrollen aktivieren**. 
 4. Ändern Sie die Sicherheitseinstellung in **Anzeige für alle**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -79,3 +79,6 @@ Anstatt den Bedarf am Ende eines Zuteilungsprozesses zu bestimmen und die Wieder
 |   Lagerplatzrichtlinien   |                                                       Lagerplatzrichtlinien sind erforderlich, um die Arbeit zu den Lagerplätzen zu leiten, an denen eine Wiederbeschaffung benötigt wird und zu Lagerplätzen, aus denen der Bestand stammt.                                                        |
 |     Arbeitsvorlagen      |                                                   Arbeitsvorlagen des Typs <strong>Wiederbeschaffung</strong> sind erforderlich, um Wiederbeschaffungsarbeit zu erstellen, damit der Bestand an die gewünschten Lagerplätze verschoben werden kann.                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

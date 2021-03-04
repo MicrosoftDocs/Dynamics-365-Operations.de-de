@@ -134,3 +134,6 @@ Um den Zugriff auf die Human Resources-App in Microsoft Teams für Ihre Organisa
 [Microsoft Teams-Hilfecenter](https://support.office.com/teams)</br>
 [Urlaubsanträge in Teams verwalten](hr-teams-leave-app.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

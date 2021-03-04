@@ -98,3 +98,6 @@ Sie können nun einen Mitarbeiter zu einem Plan für feste Vergütung zuweisen. 
 
 Das System überprüft, ob der Vergütungsbetrag, der für einen Vergütungsplan dieser Klasse oder dieses Bereichs angegeben ist, innerhalb der Mindestwert- und Höchstwert-Referenzpunkte für die gegebene Vergütungsstufe bezüglich der Stelle des Mitarbeiters liegt. Wenn der Vergütungsbetrag außerhalb des zulässigen Bereichs liegt, wird eine Warn- oder eine Fehlermeldung angezeigt, abhängig von der Toleranzstufe, die für den Plan für feste Vergütung festgelegt wurde.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

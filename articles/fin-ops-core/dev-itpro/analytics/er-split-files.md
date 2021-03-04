@@ -47,3 +47,6 @@ Um mehr über diese Funktion zu erfahren, spielen Sie den Aufgabenleitfaden **ER
 [Ziele für elektronische Berichterstellung (EB)](electronic-reporting-destinations.md)
 
 [Formeldesigner in der elektronischen Berichterstellung (EB)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

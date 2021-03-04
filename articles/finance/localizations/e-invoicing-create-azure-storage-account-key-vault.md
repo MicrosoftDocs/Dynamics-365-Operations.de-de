@@ -91,3 +91,6 @@ In diesem Thema führen Sie zwei Hauptschritte aus:
 9. Wählen Sie im Dialogfeld **Prinzipal** den Prinzipal aus, indem Sie das **Add-On für die elektronische Rechnungsstellung** hinzufügen.
 10. Wählen Sie **Hinzufügen** aus und wählen Sie dann **Änderungen am Schlüsseltresor speichern** aus.
 11. Kopieren Sie auf der Seite **Übersicht** den Wert von **DNS-Name** für den Schlüsseltresor. Dieser Wert wird während der Einrichtung des Service in RCS verwendet und als *Schlüsseltresor-URI* bezeichnet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

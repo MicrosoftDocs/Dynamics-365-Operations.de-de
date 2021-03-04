@@ -57,3 +57,6 @@ Führen Sie die folgenden Schritte aus, um Probleme mit EB-Vorlagen zu beheben, 
 Ein ähnliches Problem kann auftreten, wenn Sie Ihre Anwendungsinstanz an einen anderen Speicherort migrieren, der mehrmals als Migrationsziel verwendet wurde und für den der Blob-Speicher bereits EB-Vorlagendateien enthält.
 
 Dieser Vorgang kann zeitaufwändig sein, da Sie über mehrere EB-Formatkonfigurationen verfügen können. Daher ist die Verwendung der Funktion [Sicherungsspeicher von EB-Vorlagen](er-backup-storage-templates.md) zu bevorzugen, um Vorlagen mit fehlerhaften Verweisen automatisch wiederherzustellen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

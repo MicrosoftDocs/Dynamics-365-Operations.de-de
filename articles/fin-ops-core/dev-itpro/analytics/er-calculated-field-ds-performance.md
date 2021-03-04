@@ -300,3 +300,6 @@ Weitere Informationen zu EB-Konfigurationsanbietern finden Sie unter [Erstellen 
 - [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
 - [Überwachen der Ausführung von ER-Formaten zur Behebung von Leistungsproblemen](trace-execution-er-troubleshoot-perf.md)
 - [Unterstützen parametrisierter Aufrufe von ER-Datenquellen des Typs „Berechnetes Feld“](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Dieses Verfahren zeigt, wie ein Verkaufspreisauswahlkriterium für attributbasie
 4. Wählen Sie im Feld "Kriterien" "Debitorengruppe 10" aus. 
 5. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

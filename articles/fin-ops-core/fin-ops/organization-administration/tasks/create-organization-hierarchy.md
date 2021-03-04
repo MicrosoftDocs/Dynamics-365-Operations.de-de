@@ -48,3 +48,6 @@ Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, is
     - Fügen Sie Organisationen nach Bedarf hinzu.  
     - Um eine Organisation hinzuzufügen, klicken Sie auf **Bearbeiten** und dann **Einfügen**, um die Organisation hinzufügen. Wenn Sie mit den Änderungen fertig sind, können Sie einen Entwurf **Speichern** und/oder die Änderungen **veröffentlichen**.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

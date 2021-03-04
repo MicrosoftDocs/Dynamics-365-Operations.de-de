@@ -59,3 +59,6 @@ Auf der Seite **Bestellvorschlag** unter der Registerkarte **Verzögerungen** is
 --------
 
 [Deckungseinstellungen](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

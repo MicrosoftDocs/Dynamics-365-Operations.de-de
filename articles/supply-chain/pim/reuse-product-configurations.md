@@ -45,3 +45,6 @@ Wenn Sie die Konfigurationswiederverwendung zurücksetzen, werden zuvor erstellt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

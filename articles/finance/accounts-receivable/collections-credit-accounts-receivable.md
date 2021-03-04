@@ -111,3 +111,6 @@ Sie können NSF-Zahlungen verarbeiten, indem Sie auf der Seite "Inkassi" auf "NS
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

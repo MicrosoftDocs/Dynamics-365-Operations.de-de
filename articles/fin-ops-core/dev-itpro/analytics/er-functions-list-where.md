@@ -69,3 +69,6 @@ Wenn Sie die Datenquelle **DS** des Typs *Berechnetes Feld* eingeben und sie den
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Listenfunktionen](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

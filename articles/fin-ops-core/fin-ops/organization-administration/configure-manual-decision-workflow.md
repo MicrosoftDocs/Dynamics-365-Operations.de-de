@@ -350,3 +350,6 @@ Gehen Sie folgendermaßen vor, wenn die Entscheidung in einer bestimmten Zeit ge
     - **Jahre** – Wählen Sie den Tag, die Woche und den Monat aus, bis zu dem die Entscheidung getroffen werden muss. Sie können z. B. angeben, dass die Entscheidung bis Freitag der dritten Woche im Dezember getroffen werden soll.
 
 4. Wenn die Zeitgrenze überschritten wird, wird die Entscheidung automatisch getroffen. Wählen Sie in der Liste **Aktivität** die Option aus, die automatisch vom System ausgewählt werden soll.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

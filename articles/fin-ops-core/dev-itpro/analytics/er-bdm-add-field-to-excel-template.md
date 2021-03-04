@@ -169,3 +169,6 @@ Die geänderte Vorlage wird verwendet, um den Freitextrechnungsbericht für den 
 [Geschäftsdokumentverwaltung – Übersicht](er-business-document-management.md)
 
 [Entwerfen einer Konfiguration für das Erstellen von Berichten im OPENXML-Format](tasks/er-design-reports-openxml-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

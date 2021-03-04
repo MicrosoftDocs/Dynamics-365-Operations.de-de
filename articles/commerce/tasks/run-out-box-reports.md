@@ -64,3 +64,6 @@ Das Demodatenunternehmen, das verwendet wird, um diese Aufzeichnung zu erstellen
 5. Klicken Sie auf "Export".
 6. Klicken Sie auf "PDF".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

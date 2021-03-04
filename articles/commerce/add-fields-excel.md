@@ -55,3 +55,6 @@ Das neue Feld und die Daten dafür sollten jetzt zur Bearbeitung in Excel verfü
 [Finanzdimensionen für Einzelhandelstransaktionen bearbeiten](edit-financial-dim.md)
 
 [Excel-Arbeitsmappe zum Bearbeiten von Einzelhandelstransaktionen erstellen](create-excel-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

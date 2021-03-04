@@ -54,3 +54,6 @@ Zusätzliche Ressourcen
 
 [Direkteinzugsmandat für einen Debitor erstellen](tasks/create-direct-debit-mandate-customer.md) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

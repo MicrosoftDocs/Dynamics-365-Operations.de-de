@@ -103,3 +103,6 @@ Wenn Ihre Kreditoren die Kreditorenzusammenarbeitschnittstelle verwenden, könne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

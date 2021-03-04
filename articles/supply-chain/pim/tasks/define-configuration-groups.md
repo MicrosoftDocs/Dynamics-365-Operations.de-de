@@ -40,3 +40,6 @@ Im folgenden Verfahren, wie Produktkonfigurationsgruppen durch Erstellen zweier 
 7. Geben Sie im Feld "Name" einen Wert ein.
 8. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

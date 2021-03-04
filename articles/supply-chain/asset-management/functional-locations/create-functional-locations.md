@@ -132,3 +132,6 @@ Ein funktionaler Standort mit zugehörigen Unterstandorten kann gelöscht werden
 
 >[!NOTE]
 >Wenn Sie einen funktionalen Standort nicht löschen können, können Sie die Löschung vornehmen, indem Sie einen funktionalen Standortlebenszyklusstatus zu diesem Zweck einrichten. So können beispielsweise „ausrangierte“oder „gelöschte“ Phase, die über keine aktive Phase werden sollen, im Formular **Funktionale Standortlebenszyklusstatus** einrichten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

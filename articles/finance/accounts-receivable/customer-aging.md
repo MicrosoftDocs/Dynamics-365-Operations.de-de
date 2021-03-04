@@ -145,3 +145,6 @@ Wenn dieser Bericht generiert wird, werden die folgenden Standardparameter angez
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

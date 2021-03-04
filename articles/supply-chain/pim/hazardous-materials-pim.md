@@ -61,3 +61,6 @@ Um mit der Konfiguration dieser Informationen zu beginnen, erstellen Sie eine Re
 ## <a name="warehouse-management"></a>Lagerortverwaltung
 
 Wenn eine Lieferung vorbereitet ist, können mehrere neue Berichte gedruckt werden. Für diese Berichte werden die Informationen verwendet, die Sie in der Produktinformationsverwaltung eingerichtet haben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

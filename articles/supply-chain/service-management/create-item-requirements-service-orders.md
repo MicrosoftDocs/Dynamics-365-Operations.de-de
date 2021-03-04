@@ -72,3 +72,6 @@ Artikelbedarf für Serviceaufträge wird im Rahmen eines Projekts verarbeitet. Z
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

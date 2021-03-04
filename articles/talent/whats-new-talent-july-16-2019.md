@@ -142,3 +142,6 @@ Organisationen können Mitarbeitern viele unterschiedliche Arten von Sonderurlau
 ### <a name="view-performance-information-for-direct-and-extended-reports-in-manager-self-service"></a>Anzeigen von Leistungsinformationen für direkte und erweiterten Berichte im Manager Self-Service
 
 Mit einer neuen Option können Manager die Leistung von ihren direkten Mitarbeitern und den erweiterten Mitarbeitern anzeigen. Aktuell können Linienmanager Leistungsziele zuweisen und aktualisieren und neue Überprüfungen ausstellen. Darüber hinaus können Vorgesetzte und ihre Mitarbeiter Leistungserfassungen verwalten und aktualisieren, um sicherzustellen, dass der Leistungsprüfungsprozess problemlos verläuft. Wenn diese Änderung implementiert ist, sind Manager in der Lage, leistungsbezogene Informationen neben jenen für die direkt unterstellten Mitarbeitern auch jene für ihre erweiterten Mitarbeiter anzuzeigen und zu verwalten.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

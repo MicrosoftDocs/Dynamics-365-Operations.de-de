@@ -84,3 +84,6 @@ Das folgende Bild zeigt, wie Kanalaktualisierungen veröffentlicht werden.
 [Eine Kanalnavigationshierarchie erstellen](create-channel-hierarchy.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -117,3 +117,6 @@ Die folgende Tabelle enthält die Visualisierungen, die für jede Berichtsseite 
 | Rechnungen, die nicht importiert werden konnten | <ul><li>Rechnungen, die nicht importiert werden konnten</li><li>Rechnungen, die nicht importiert werden konnten nach Unternehmen</li></ul> |
 | Gründe für einen Automatisierungsfehler | <ul><li>Rechnungen fehlgeschlagen</li><li>Rechnungen von Unternehmen fehlgeschlagen</li><li>Rechnungen nach Lieferantengruppe fehlgeschlagen</li></ul> |
 | Workflowstatus                | <ul><li>Rechnungen im Workflow</li><li>Kreditorenrechnungsworkflowinstanzen</li><li>Zuordnung pro Genehmiger</li><li>Workflow der Lieferantenrechnung pro Unternehmen</li><li>Durchschnittliche Tage im Arbeitsplan nach Genehmiger</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

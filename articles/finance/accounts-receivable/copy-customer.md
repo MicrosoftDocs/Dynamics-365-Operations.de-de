@@ -64,3 +64,6 @@ Sie können Debitoren auch kopieren, indem Sie die Umsatzsteuernummer-Suchfunkti
 
 1. Die Option **Debitor kopieren** wird angezeigt. Standardmäßig ist diese Option auf **Nein** festgelegt. Um den Debitor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf **Ja** fest. 
 2. Wählen Sie **Auswählen**. Der neue Debitor wird erstellt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

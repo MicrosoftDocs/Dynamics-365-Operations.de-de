@@ -209,3 +209,6 @@ Es gibt verschiedene Teile des Angeboterstellungsprozesses, der von einem Attrac
 
 
 Weitere Informationen zum Prozess der Angebotserstellung finden Sie unter [Angebote erstellen, genehmigen und unterzeichnen](./creating-offers.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

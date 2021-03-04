@@ -142,3 +142,6 @@ Nachdem sich Kandidaten auf mindestens eine Stelle beworben haben, können Sie i
 ## <a name="internal-jobs"></a>Interne Stellen
 
 Derzeit werden Stellen, die als intern markiert und auf der Attract-Website mit Stellenangeboten veröffentlicht werden, dort nicht angezeigt. Sie sind nur direkt über die **Bewerben**-URL verfügbar, die aus der Attract-Anwendung kopiert werden kann.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

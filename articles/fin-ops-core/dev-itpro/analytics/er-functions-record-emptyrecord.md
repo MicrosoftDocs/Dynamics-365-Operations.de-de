@@ -60,3 +60,6 @@ Der resultierende Datensatzwert.
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Datensatzfunktionen](er-functions-category-record.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

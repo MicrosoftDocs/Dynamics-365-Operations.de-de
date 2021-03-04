@@ -54,3 +54,6 @@ Eine Kostengruppe kann zur weiteren Segmentierung mit einem Kostengruppentyp sow
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

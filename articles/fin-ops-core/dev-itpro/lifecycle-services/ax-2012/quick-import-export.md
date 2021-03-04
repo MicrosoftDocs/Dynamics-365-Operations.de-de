@@ -40,3 +40,6 @@ Wir haben eine Funktion für den Direktimport/-export hinzugefügt, um den Benut
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

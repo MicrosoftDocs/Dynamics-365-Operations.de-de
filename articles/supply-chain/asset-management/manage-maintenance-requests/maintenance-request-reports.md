@@ -58,3 +58,6 @@ Der Bericht **Wartungsanfragenliste** zeigt eine Liste aller Wartungsanfragen mi
 Die folgende Abbildung zeigt ein Beispiel für den Bericht **Wartungsanfragenliste** für alle aktiven Wartungsanfragen.
 
 ![Wartungsanfrage-Listenbericht](media/10-manage-maintenance-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

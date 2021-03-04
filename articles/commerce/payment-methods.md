@@ -49,3 +49,6 @@ Zum Einrichten von Zahlungsmethoden müssen Sie die folgenden Aufgaben abschlie�
 2. Einrichten von organisationsweiten Kartentypen und Kartennummern Wenn Kredit- oder Debitkarten akzeptiert werden, müssen Sie eine Zahlungsmethode für Karten und anschließend die organisationsweiten Kartentypen und Kartennummern erstellen.
 3. Einrichten von Shopzahlungsmethoden Ordnen Sie die Zahlungsmethoden den einzelnen Shops zu, und geben Sie dann für jede Zahlungsmethode shopspezifische Einstellungen ein.
 4. Einrichten von Kartenzahlungsmethoden für Shops Schließen Sie für alle Zahlungsmittel vom Typ "Karte", die im Shop akzeptiert werden, die Karteneinrichtung ab.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

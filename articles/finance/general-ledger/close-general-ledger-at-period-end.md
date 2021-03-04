@@ -55,3 +55,6 @@ Weitere Informationen zu Workflows finden Sie unter den folgenden Themen:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

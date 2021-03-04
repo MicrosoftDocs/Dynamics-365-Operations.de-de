@@ -43,3 +43,6 @@ Servicevereinbarungsgruppen sind hilfreich beim Sortieren und Filtern von Servic
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Servicevereinbarung – Übersicht](service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

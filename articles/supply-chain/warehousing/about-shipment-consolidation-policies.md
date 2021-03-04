@@ -135,3 +135,6 @@ In der folgenden Tabelle wird zusammengefasst, wie die Lieferungskonsolidierung 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Richtlinien zur Lieferungskonsolidierung konfigurieren](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

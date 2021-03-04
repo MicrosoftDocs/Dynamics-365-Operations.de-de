@@ -77,3 +77,6 @@ Die `TRANSLATE` Funktion ersetzt jeweils ein Zeichen. Die Funktion ersetzt das e
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Textfunktionen](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

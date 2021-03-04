@@ -55,3 +55,6 @@ Eine Garantievereinbarung kann mehrere Vertragszeilen umfassen, um die Garantie 
     4. Geben Sie im Feld **Prozent** den Deckungsprozentsatz für die Garantiezeile ein. Der Prozentsatz gibt an, wie viel von Ihrem Unternehmen abgedeckt wird.
 
 ![Garantieseite](media/01-warranty.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

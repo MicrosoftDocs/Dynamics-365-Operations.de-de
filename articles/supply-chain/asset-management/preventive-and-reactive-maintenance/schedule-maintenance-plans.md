@@ -76,3 +76,6 @@ Die hier beschriebenen Beispiele zeigen, dass alle Zählerregistrierungen an ein
 
 ![Abbildung 4](media/12-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

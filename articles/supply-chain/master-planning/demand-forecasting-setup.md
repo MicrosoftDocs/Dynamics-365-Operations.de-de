@@ -102,3 +102,6 @@ Auf der Registerkarte **Verteilungsschlüssel** können Sie den **Planungsalgori
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

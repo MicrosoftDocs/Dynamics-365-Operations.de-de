@@ -46,3 +46,6 @@ Dieses Verfahren zeigt, wie das Ein- und Ausschecken eines Fahrers erfasst wird.
 1. Klicken Sie auf "Auschecken durch Fahrer".
 2. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

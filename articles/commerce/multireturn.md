@@ -54,3 +54,6 @@ Wenn die Aufträge ausgewählt werden, wird eine Liste aller retournierbaren Pro
 
 Wenn der Auftrag vollständig zurückgesandt wird, entspricht der an den Kunden zurückgegebene Steuerbetrag dem ursprünglich berechneten Steuerbetrag.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

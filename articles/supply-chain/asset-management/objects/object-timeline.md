@@ -49,3 +49,6 @@ Die Zeitachse wird immer dann aktualisiert, wenn die Seite geöffnet wird. Sie e
 - Arbeitsaufträge, einschließlich gebuchter Artikel und Hinweise
 - Fehler
 - Zustandsbewertungen
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

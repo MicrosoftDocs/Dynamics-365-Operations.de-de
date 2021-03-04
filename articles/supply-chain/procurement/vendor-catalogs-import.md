@@ -70,3 +70,6 @@ Bei der Katalogimport-Dateivorlage handelt es sich um eine XSD-Datei, mit der ei
 3. Wählen Sie im Dialogfeld **Speichern unter** den Ort aus, an dem die Katalogdateivorlage gespeichert werden soll, und speichern Sie sie.
 
 Weitere Informationen und Beispiele finden Sie in diesem Blogbeitrag: [Kreditorenkataloge in Dynamics AX.](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

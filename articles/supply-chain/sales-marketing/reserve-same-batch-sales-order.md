@@ -45,3 +45,6 @@ Beim Reservieren von Bestand für ein Produkt in einer Auftragsposition, die fü
 - Die verbleibende Haltbarkeitsdauer der Charge ist unzureichend (dabei werden das Ablauf- bzw. Mindesthaltbarkeitsdatum sowie alle Verkaufstage für Debitoren berücksichtigt).
 
 Für Elemente, die einer Speicherdimensionsgruppe zugeordnet sind, bei der **Benutzerfehlerprotokoll für Lagerortverwaltungsprozesse verwenden** aktiviert ist, können Sie bestimmte Chargennummern mithilfe einer Reservierungshierarchie reservieren, wobei die Chargennummern-Inventardimension über der Standortdimension definiert ist. Auf der Seite **Chargenreservierung** für Verkaufs- und Transportauftragspositionen können Sie auch mehrere Positionen basierend auf den verfügbaren Chargennummern auswählen und reservieren. Weitere Informationen dazu, was zu tun ist, wenn Sie eine Reservierungshierarchie verwenden, deren Chargennummer unter dem Speicherort liegt, finden Sie unter [Flexible Reservierungsrichtlinie für Dimensionen auf Lagerebene](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

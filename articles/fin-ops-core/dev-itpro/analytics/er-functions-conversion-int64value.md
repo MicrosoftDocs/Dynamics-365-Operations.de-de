@@ -73,3 +73,6 @@ Sämtliche Dezimalstellen werden abgeschnitten.
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Funktionen zur Typenumrechnung](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

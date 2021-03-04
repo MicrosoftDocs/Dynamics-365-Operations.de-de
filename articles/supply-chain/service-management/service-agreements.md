@@ -79,3 +79,6 @@ In jeder Servicevertragsposition wird der Inhalt der erforderlichen Servicearbei
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Erstellen von Servicevereinbarungen](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

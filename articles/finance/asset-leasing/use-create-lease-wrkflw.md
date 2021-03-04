@@ -45,3 +45,6 @@ Stellen Sie vor Verwendung dieses Verfahrens sicher, dass mindestens ein Workflo
 
 8. Um einen Workflow zu stoppen, klicken Sie auf der **Workflow-Verlauf**-Seite auf **Zurückrufen**. Wählen Sie im Dialogfeld, das angezeigt wird, einen Kommentar ein wählen Sie dann **OK**.
 9. Um die Aktivierung eines Workflows aufzuheben oder einen zuvor erstellten Workflow zu aktivieren, gehen Sie zu **Anlagenleasing \> Einrichtung \> Leasing-Workflow**. Dann auf der **Leasing-Workflow**-Seite wählen Sie **Workflow \> Versionen** aus. Um einen aktuellen Workflow inaktiv zu machen, wählen Sie den aktiven Mietvertrag im Dialogfeld Mietvertragsversion aus und wählen Sie dann **Inaktiv machen** aus. Um einen vorhandenen Workflow zu aktivieren, wählen Sie den Workflow aus und wählen Sie dann **Aktivieren**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

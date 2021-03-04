@@ -39,3 +39,6 @@ Informieren Sie, wie nach Kreditoren anhand bestimmter Kriterien sucht. In diese
 6. Geben Sie im Feld "Land/Region" einen Wert ein.
 7. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

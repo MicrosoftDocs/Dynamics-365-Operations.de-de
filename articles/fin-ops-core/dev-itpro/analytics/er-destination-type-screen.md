@@ -38,3 +38,6 @@ Wenn Sie **Aktiviert** auf **Ja** setzen, wird eine Vorschau der Ausgabe erstell
 
 - [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 - [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

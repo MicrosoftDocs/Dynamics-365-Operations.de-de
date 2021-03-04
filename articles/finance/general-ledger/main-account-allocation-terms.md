@@ -70,3 +70,6 @@ Im Inforegister **Zielsachkonto** ist das Hauptkonto das gleiche Betriebskostenk
 > Sie können optional die Schaltfläche **Kopieren** verwenden, um die ausgewählte Zuweisung zu duplizieren.
 
 Wenn eine Zuweisungsbedingung für ein Hauptkonto erstellt wird, bucht das System automatisch einen neuen Gutschein, wenn ein Gutschein gebucht wird, der den ursprünglichen Finanzdimensionen der Zuweisungsbedingung entspricht.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

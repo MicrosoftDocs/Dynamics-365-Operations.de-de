@@ -151,3 +151,6 @@ Darüber hinaus können Einzelhändler die maximalen Treuepunkte pro Treuekarte 
 
     > [!NOTE]
     > Im Gegensatz zu anderen periodischen Rabatten wie Mengen-, Einfach-, Angebots-Sortiment- und Schwellenrabatten erzeugt der Versandrabatt keine Rabattpositionen, sondern ändert die Versandkosten direkt und fügt den Namen des Rabatts zur Belastungsbeschreibung hinzu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

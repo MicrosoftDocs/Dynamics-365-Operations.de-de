@@ -77,3 +77,6 @@ Beschreibungen dieser Konzepte finden Sie unter [Schlüsselkonzepte für die Sam
 [Kreditsperren für Aufträge](./cm-sales-order-credit-holds.md)
 
 [Periodische Aufgaben des Kundenkreditmanagements](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

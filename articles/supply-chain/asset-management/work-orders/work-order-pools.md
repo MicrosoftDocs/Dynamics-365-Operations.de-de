@@ -109,3 +109,6 @@ Wie im vorherigen Abschnitt beschrieben, können Sie beim Anlegen des Pools Arbe
 
 Wenn Sie einen Arbeitsauftrag aus einem Arbeitsauftragspool entfernen möchten, wiederholen Sie diese Schritte, aber wählen in Schritt 3 **Entfernen**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

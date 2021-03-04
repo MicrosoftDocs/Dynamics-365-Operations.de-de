@@ -48,3 +48,6 @@ Sie können einen Produktionsauftrag auf **Fertigmeldung** setzen, über die sta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

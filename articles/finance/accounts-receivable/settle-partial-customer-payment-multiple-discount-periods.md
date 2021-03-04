@@ -98,3 +98,6 @@ Der Rechnungssaldo ist jetzt 0,00. Auf der Seite **Debitorenbuchungen** zeigt Ar
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

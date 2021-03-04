@@ -63,3 +63,6 @@ Der Schwerpunkt dieser Prozedur liegt auf dem Erstellen einer Richtlinie zur Kan
 8. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
     * Wählen Sie die Speaker2016-Richtlinie aus, die Sie in der vorherigen Unteraufgabe erstellt haben.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

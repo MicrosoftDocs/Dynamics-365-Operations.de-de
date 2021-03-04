@@ -85,3 +85,6 @@ Anschließend können Sie die Informationen nach Bedarf bearbeiten.
 Sie können eine Freitext-Rechnung von einer Vorlage erstellen. Wenn Sie **Neu von Vorlage** aus der **Rechnungs** registerkarte auswählen, können Sie einen Vorlagennamen gür die neue Freitextrechnung auswählen. Sie können die Standardwerte wie die Zahlungsbedingungen und die Zahlungsmethode der Zahlung auch auswählen oder die Werte verwenden, , die mit der Vorlage gespeichert wurden.
 
 Eine neue Freitextrechnung wird erstellt und Sie können die Werte in dieser Rechnung bearbeiten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

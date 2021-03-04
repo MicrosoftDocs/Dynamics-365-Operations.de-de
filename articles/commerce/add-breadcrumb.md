@@ -95,3 +95,6 @@ Um ein Breadcrumb-Modul einem PDP hinzuzufügen und die erforderlichen Eigenscha
 [Kauffeldmodul](add-buy-box.md)
 
 [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

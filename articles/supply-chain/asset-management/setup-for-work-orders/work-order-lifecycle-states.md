@@ -139,3 +139,6 @@ Nachdem Sie die für Ihre Arbeitsaufträge erforderlichen Lebenszykluszustände 
 9. Speichern Sie das Arbeitsauftrags-Lebenszyklusmodell.
 
 ![Seite „Arbeitsauftrags-Phasenmodelle“](media/15-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

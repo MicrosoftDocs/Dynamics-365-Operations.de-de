@@ -63,3 +63,6 @@ Mit dieser Prozedur können Sie Schritt für Schritt dabei vorgehen, wie Sie die
 29. Klicken Sie auf "Veröffentlichen".
 30. Klicken Sie auf "Schließen".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -318,3 +318,6 @@ Wenn Sie fertig sind, sollten Sie sehen, dass vier Lieferungen erstellt wurden:
 
 - [Lieferungskonsolidierungsrichtlinien](about-shipment-consolidation-policies.md)
 - [Richtlinien zur Lieferungskonsolidierung konfigurieren](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

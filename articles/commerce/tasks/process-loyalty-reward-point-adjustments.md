@@ -50,3 +50,6 @@ Dieses Verfahren zeigt, wie Sie Treuekarteinformationen einsehen und die Treuebe
 15. Klicken Sie "Kartenbuchungen".
 16. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

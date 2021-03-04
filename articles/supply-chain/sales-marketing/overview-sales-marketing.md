@@ -125,3 +125,6 @@ Bei einer Proforma-Rechnung handelt es sich um eine Rechnung, die vor dem Buchen
 #### <a name="blogs"></a>Blogs
 
 Einen Überblick über einen Verkaufsprozess finden Sie im Beitrag [Vertriebsarbeit in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

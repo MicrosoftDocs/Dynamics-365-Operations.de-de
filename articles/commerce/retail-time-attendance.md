@@ -139,3 +139,6 @@ Ein Commerce-Benutzer folgt dem Workflow, um Zeiterfassungen zu berechnen, zu ge
 - Erfassen der Abwesenheit
 
 Weitere Informationen dazu, wie Anwesenheitserfassungen in den Erfassungen verarbeitet werden, finden [Anwesenheitserfassungen und Prozesszeit](https://technet.microsoft.com/library/aa573180.aspx).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

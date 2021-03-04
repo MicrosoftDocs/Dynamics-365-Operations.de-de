@@ -95,3 +95,6 @@ Gehen Sie folgendermaßen vor, um eine Berichtshierarchie für Organisationsberi
     * Wählen Sie das Dimensionsmitglied aus, das dem Knoten entspricht.  
 59. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

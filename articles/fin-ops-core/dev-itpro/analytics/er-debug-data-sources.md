@@ -281,3 +281,6 @@ Wenn irgendeine der zuvor aufgelisteten Konfigurationen in der Konfigurationsstr
 6. Wählen Sie im Feld **Bankkonto** die Option **DEMF OPER** aus.
 7. Wählen Sie im Dialogfeld **Zahlungen generieren** die Option **OK** aus.
 8. Wählen Sie im Dialogfeld **Elektronische Berichtsparameter** die Option **OK** aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

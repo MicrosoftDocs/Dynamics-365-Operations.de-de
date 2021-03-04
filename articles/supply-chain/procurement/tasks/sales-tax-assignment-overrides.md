@@ -57,3 +57,6 @@ Diese Prozedur zeigt, wie Sie Handelskanälen Mehrwertsteuergruppen zuweisen. Si
 21. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 22. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

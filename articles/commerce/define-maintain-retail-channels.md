@@ -89,3 +89,6 @@ Commerce verwendet Organisationshierarchien, um Kanäle zu strukturieren. Organi
 > [!NOTE]
 > Um die Commerce-Verkaufsfunktionalität zu nutzen, muss der Konfigurationsschlüssel für **Mehrfache Wareneingänge** aktiviert werden. Diesen Konfigurationsschlüssel finden Sie in den Konfigurationsschlüsseln **Handel** unter **Systemverwaltung**\> **Einstellungen** \> **Lizenzkonfiguration**. Dies ist aufgrund verschiedener Validierungen auf der Grundlage der auf der Ebene der Kundenauftragszeile konfigurierten Lieferadresse erforderlich.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

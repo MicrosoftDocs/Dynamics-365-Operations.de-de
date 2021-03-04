@@ -60,3 +60,6 @@ Die Servicevorlagenpositionen werden zusammen mit den zugeordneten Serviceobjekt
 [Servicevorlagen](service-template.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

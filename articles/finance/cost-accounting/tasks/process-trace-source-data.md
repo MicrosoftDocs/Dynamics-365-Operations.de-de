@@ -45,3 +45,6 @@ Die Datenverarbeitung wird über Einzelvorgänge ausgeführt. Für jeden Einzelv
     * In vorliegenden Beispiel wählen Sie Steuer 2017 Periode 9 aus.  
 14. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

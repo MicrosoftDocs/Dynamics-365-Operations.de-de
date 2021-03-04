@@ -90,3 +90,6 @@ Weitere Informationen finden Sie unter [Umsatzsätze auf Basis der Marginalbasis
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

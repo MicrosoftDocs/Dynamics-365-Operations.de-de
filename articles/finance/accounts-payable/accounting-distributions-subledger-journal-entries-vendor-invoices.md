@@ -250,3 +250,6 @@ Wenn der Erfassungseintrag im untergeordneten Sachkonto falsch ist, wenn Sie ihn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

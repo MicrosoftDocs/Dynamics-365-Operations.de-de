@@ -48,3 +48,6 @@ In der folgenden Illustration ist der Ablauf der Bedarfsauflösung für die Prod
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

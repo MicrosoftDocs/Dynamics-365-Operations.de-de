@@ -55,3 +55,6 @@ Nachdem Sie Wartungsanforderungen erstellt haben, können Sie sie ohne Weiteres 
 
     ![Neuen Arbeitsauftrag öffnen](media/05-manage-maintenance-requests.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

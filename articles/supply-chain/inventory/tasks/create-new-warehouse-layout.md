@@ -63,3 +63,6 @@ In diesem Thema wird beschrieben, wie Informationen zu Lagerplätzen in einem La
 7. Schließen Sie die Seite.
 8. Aktualisieren Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

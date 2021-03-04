@@ -63,3 +63,6 @@ Folgende Parameter sind verfügbar:
 
 - **Anzahl der versuchten automatischen Abgleiche** – Wählen Sie aus, wie oft das System versuchen soll, Produktzugänge mit einer Rechnungsposition abzugleichen, bevor es zu dem Schluss kommt, dass der Prozess fehlgeschlagen ist. Wenn die angegebene Anzahl von Versuchen erreicht ist, wird die Rechnung aus der Automatisierungsverarbeitung entfernt.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

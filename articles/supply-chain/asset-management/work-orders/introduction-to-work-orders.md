@@ -119,3 +119,6 @@ Die Schaltflächen in der Gruppe **Projekt** auf der Registerkarte **Arbeitsauft
 >[!NOTE]
 >Prognosen, die auf einem Arbeitsauftrag erstellt wurden, können bei der Ausführung des Produktprogrammplanungslaufs mit Hilfe des auf der Seite **Anlagenverwaltungsparameter** ausgewählten Prognosemodells berücksichtigt werden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

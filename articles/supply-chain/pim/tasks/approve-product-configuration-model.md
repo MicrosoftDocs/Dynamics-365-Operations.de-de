@@ -49,3 +49,6 @@ Die Ausführung dieser Prozedur erfordert mindestens ein vorhandenes Produktkonf
     * Aktivieren Sie die Produktmodellversion. Sie können nur ein Produkt gleichzeitig haben, das für ein Produktmodell aktiv ist.  
 13. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

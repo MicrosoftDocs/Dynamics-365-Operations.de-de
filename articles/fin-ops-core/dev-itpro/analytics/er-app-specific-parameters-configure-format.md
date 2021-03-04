@@ -309,3 +309,6 @@ Um mehr darüber zu erfahren, wie Sie das konfigurierte EB-Format **Format zum E
 [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)
 
 [Einrichten von Parametern eines EB-Formats pro juristischer Person](er-app-specific-parameters-set-up.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

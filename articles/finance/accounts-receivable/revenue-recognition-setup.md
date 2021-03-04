@@ -193,3 +193,6 @@ Die Umsatzerkennung kann auch für Aufträge verwendet werden, die durch ein Auf
 
 - **Verzögerter Rechnungsumsatz** (unter **Umsatzerlöskonten**) – Geben Sie das Hauptkonto für den Umsatzerlöspreis ein, der für den verzögerten Umsatzerlös (anstelle des Umsatzerlöses) gebucht wird. Der Umsatzerlöspreis wird verzögert, wenn die Auftragsposition einen Umsatzerlöszeitplan hat.
 - **Verzögerte Kosten** (unter **Kostenkonten**) – Geben Sie das Hauptkonto für den Wareneinsatzbetrag ein, der für den verzögerten Wareneinsatz gebucht wird, wenn der Umsatzerlös auch verzögert wird.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

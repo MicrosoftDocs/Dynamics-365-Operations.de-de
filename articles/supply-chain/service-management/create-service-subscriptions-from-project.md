@@ -55,3 +55,6 @@ Für den Dauerauftrag können nun Dauerauftragsbuchungen erstellt werden.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

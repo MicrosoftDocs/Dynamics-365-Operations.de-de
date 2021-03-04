@@ -78,3 +78,6 @@ Wenn ein Überprüfungsfehler gefunden wird, können Sie ihn nur beheben, indem 
 
 > [!NOTE]
 > In zukünftigen Versionen werden zudem zusätzliche Validierungsregeln zur Unterstützung weiterer Szenarien hinzugefügt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

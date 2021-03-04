@@ -116,3 +116,6 @@ Sehen Sie in den Videos nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Periodische Erfassungen werden mitunter als wiederkehrende Erfassungen bezeichne
 27. Geben Sie im Feld **Periodische Erfassungsnummer** einen Wert ein, oder wählen Sie einen Wert aus.
 28. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 29. Klicken Sie auf **OK**. Die periodischen Erfassung kann je nach Bedarf und Einstellung jetzt überprüft, genehmigt oder gebucht werden.   
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

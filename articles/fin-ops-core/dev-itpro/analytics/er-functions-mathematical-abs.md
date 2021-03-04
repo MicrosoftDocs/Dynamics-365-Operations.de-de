@@ -55,3 +55,6 @@ Der resultierende numerische Wert.
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Rechenoperationen](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

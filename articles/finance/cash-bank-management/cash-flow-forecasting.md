@@ -150,3 +150,6 @@ Darüber hinaus können Sie Cashflowplanungsdaten für bestimmte Konten, Aufträ
 - **Beschaffungsplanung**: Wählen Sie **Cashflow-Planungen** aus, um die künftigen Cashflows anzuzeigen, die der ausgewählten Artikelbeschaffungsplanung zugeordnet werden.
 - **Bedarfsplanung**: Wählen Sie **Cashflow-Planungen** aus, um die künftigen Cashflows anzuzeigen, die der ausgewählten Artikelbedarfsplanung zugeordnet werden.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

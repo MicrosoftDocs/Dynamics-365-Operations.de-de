@@ -84,3 +84,6 @@ Sie können Artikelpositionen für Anlagen manuell erstellen.
 5. Wenn der Artikel ablaufen soll, geben Sie im Feld **Ablauf** ein Enddatum ein.
 6. Wählen Sie im Feld **Artikelnummer** den Artikel aus. Der Name wird automatisch in das Feld **Produktname** eingetragen.
 7. Geben Sie im Feld **Menge** die verwendete Menge ein. Das Feld **Einheit** wird automatisch aktualisiert.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Abteilungen sind Organisationseinheiten, die einen Funktionsbereich eines Untern
 16. Geben Sie im Feld "Änderungen beschreiben" einen Wert ein.
 17. Klicken Sie auf "Veröffentlichen".
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

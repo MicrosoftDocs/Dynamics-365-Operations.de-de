@@ -200,3 +200,6 @@ Um einen analytischeren Überblick über die verschiedenen Leistungskennzahlen f
 
 Um einen analytischeren Überblick über die verschiedenen Leistungskennzahlen für die Aktion abzurufen, können Sie die Analyseansicht verwenden. Um zur Analyseansicht zu wechseln, klicken Sie auf **Vertrieb und Marketing** \> **Händlervergütungen** \> **Handelsvergütungsverträge** Klicken Sie im Aktivitätsbereich auf **Analyse**. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

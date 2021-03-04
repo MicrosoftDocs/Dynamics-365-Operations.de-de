@@ -87,3 +87,6 @@ Um einen Finanzbericht zu exportieren, klicken Sie im Aktivitätsbereich auf **E
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -35,3 +35,6 @@ Die Warehouse-App für Dynamics 365 Supply Chain Management wurde mit einer Ausw
 
 Ihnen als Kunden wird empfohlen, die mobile Strichcode-Scan-App auf ausgewählter Hardware zu testen, bevor Sie entscheiden, welche Hardware Sie kaufen möchten.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

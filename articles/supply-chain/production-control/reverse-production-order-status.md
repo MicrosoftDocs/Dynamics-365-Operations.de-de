@@ -53,3 +53,6 @@ Wenn Sie den Status eines Produktionsauftrags von **Gestartet** auf **Freigegebe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

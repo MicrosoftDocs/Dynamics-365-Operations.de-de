@@ -48,3 +48,6 @@ Zahlen Sie Debitorenzahlungen ein. Für diese Aufgabe wird das Demo-Unternehmen 
 17. Wählen Sie **OK**. Die erste Seite wird verwendet, um den Einzahlungsbeleg zu erstellen.  
 18. Wählen Sie **OK**. Der zweite Schritt ist, den Einzahlungsbeleg zu drucken, aber dieser Schritt ist nicht erforderlich.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

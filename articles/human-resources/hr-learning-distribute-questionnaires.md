@@ -131,3 +131,6 @@ Nachdem Sie einen Fragebogen entworfen und verteilt haben, kann der Fragebogen v
 Fragebögen können entweder allen Personen im Netzwerk oder lediglich bestimmten Benutzern oder Benutzergruppen zur Verfügung gestellt werden.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

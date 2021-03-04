@@ -49,3 +49,6 @@ Wertströme sind Organisationseinheiten, die einen oder mehrere Produktionsflüs
 2. Schließen Sie die Seite.
 3. Aktualisieren Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Schließen Sie die Neuzuweisung mit **Verarbeiten** ab. Sie werden aufgefordert,
 > Um zu erklären, warum diese zusätzlichen Artikel angezeigt werden, können Sie das Raster mit weiteren Spalten ergänzen, wie z. B. **Neuzuweisungs-ID** und **Auftrag**.
 > 
 > [![Zusätzliche Spalten auf der Seite „Umsatzerlöspreiszuteilung“](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -176,3 +176,6 @@ Die Sprache, die Sie hinzugefügt haben, ist nun verfügbar und Sie können Ihre
 [Hinzufügen eines Urheberrechtshinweises](add-copyright-notice.md)
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

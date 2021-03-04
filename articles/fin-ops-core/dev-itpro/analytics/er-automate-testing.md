@@ -380,3 +380,6 @@ Daher kann die Funktion eines beliebigen ER-Formats, wie Sie gesehen haben, auto
 - [Nachverfolgung erstellter Berichtsergebnisse und Vergleich mit Ausgangswerten](er-trace-reports-compare-baseline.md)
 - [ER – Aktualisieren Sie Ihr Format durch Verwendung einer neuen Basisversion dieses Formats](tasks/er-upgrade-format.md)
 - [ER Import einer Konfiguration von Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

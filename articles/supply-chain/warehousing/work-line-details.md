@@ -128,3 +128,6 @@ Befolgen Sie diese Schritte, um einige Kommissionierarbeiten zu erstellen.
 
 > [!IMPORTANT]
 > Wenn Sie nur einen Teil der Menge für eine Arbeitsposition stornieren, müssen Sie auch die veraltete Menge aus der Ladungsposition entfernen. Andernfalls kann die Ladungsposition nicht per Schiff bestätigt werden, es sei denn, die Unterlieferung ist korrekt eingerichtet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

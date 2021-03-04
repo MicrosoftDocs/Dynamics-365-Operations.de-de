@@ -58,3 +58,6 @@ Es gibt mehrere Möglichkeiten, Kostenfaktoren in der Kostenrechnung zu erstelle
 1. Klicken Sie auf "Dimensionsmitglieder anzeigen".
     * Zeigen Sie die importierten Sachkonten als Kostenfaktoren in Ihrem Unternehmen an, in dass Kosten fließen können.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

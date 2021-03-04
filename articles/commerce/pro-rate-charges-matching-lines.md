@@ -175,3 +175,6 @@ Wenn diese Berechnungsmethode in einem teilweisen Rückerstattungsszenario verwe
 [Erweiterte automatische Omni-Channel-Belastungen](omni-auto-charges.md)
 
 [Automatische Belastungen nach Kanal aktivieren und konfigurieren](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

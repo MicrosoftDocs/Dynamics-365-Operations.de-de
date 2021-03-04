@@ -33,3 +33,6 @@ Um Rabatte für die Transportverwaltung festzulegen, gehen Sie zu **Transportver
 Sie können wählen, ob Sie den Rabatt an Ihren Kunden weitergeben (indem Sie den Rabatttyp auf Kunde festlegen) oder ihn im Unternehmen behalten wollen (indem Sie den Rabatttyp auf Versender festlegen). Auf diese Weise können Sie eine Einrichtung definieren, bei der Sie eine Marge auf die berechneten Frachtkosten verdienen.
 
 Sie können mehrere Qualifikatoren für jeden Rabatt festlegen, z. B. Spediteur, Spediteur-Service, Lieferbedingungen, Kunde, Zielort und mehr.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

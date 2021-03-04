@@ -86,3 +86,6 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 7.  Wählen Sie die Ansicht **Anhänge** aus, um alle Hinweise oder Dateien anzuzeigen, die der Rechnung zugeordnet sind.
 8.  Wählen Sie auf der Seite **Rechnungsdetails** eine geeignete Workflowaktivität aus, um den Prüfprozess abzuschließen.
 9.  Wählen Sie **Fertig**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

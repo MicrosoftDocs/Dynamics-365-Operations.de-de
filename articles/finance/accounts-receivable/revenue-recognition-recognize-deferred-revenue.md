@@ -108,3 +108,6 @@ Die Vertragsänderungen haben folgende Auswirkungen auf die Umsatzerlöszeitplan
 - Wenn der Umsatzerlös für das Produkt erfasst wurde, wurde ein Teil des Umsatzerlöses falsch erfasst, da die Erkennung auf dem falschen Umsatzerlöszeitplan basiert. Diese Positionen müssen storniert und auf Grundlage des neuen Zeitplans neu erkannt werden. In diesem Szenario werden neue Umsatzerlöszeitplanpositionen erstellt, die am ursprünglichen Erkennungsdatum über negative Beträge verfügen. Es werden anschließend neue Positionen erstellt, um die Beträge auf Grundlage des neuen Umsatzerlöszeitplans zu erkennen. Am 8. August 2019 wurde beispielsweise ein Umsatzerlös von 10,53 US-Dollar erkannt. Am 8. September 2019 wurde ein Umsatzerlös von 13,16 US-Dollar erkannt. Daher werden zwei neue Positionen am gleichen Datum erstellt. Eine Position ist für -10,53 US-Dollar und die andere Position für -13,16 US-Dollar. Es werden anschließend 24 neue Positionen erstellt, und der gesamte verzögerte Umsatzerlös von 160,61 US-Dollar wird auf den Positionen verteilt. Sie können Rückbuchungspositionen buchen, indem Sie den Prozess **Erfassung erstellen** ausführen.
 
 [![Umsatzerkennungszeitplan](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

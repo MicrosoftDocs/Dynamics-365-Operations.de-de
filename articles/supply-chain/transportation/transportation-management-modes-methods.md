@@ -47,3 +47,6 @@ Um eine Transportmethode zu erstellen, gehen Sie wie folgt vor:
 1. Wählen Sie **Neu**, um eine neue Transportmethode zu erstellen.
 1. Geben Sie eine eindeutige ID und einen beschreibenden Namen für die Transportmethode ein.
 1. Schließen Sie die Seite.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

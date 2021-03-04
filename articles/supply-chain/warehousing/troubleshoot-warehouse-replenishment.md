@@ -40,3 +40,6 @@ Die Entnahmearbeiten sind wegen abhängiger Wiederbeschaffung blockiert.
 ### <a name="issue-resolution"></a>Problemlösung
 
 Wenn Sie die Nachschubwelle verwenden und ein Lagerplatz wiederbeschafft werden muss, um den Bedarf des Quellauftrags zu erfüllen, erstellt das System sowohl die Wiederbeschaffungsarbeit als auch die Entnahmearbeiten. Es blockiert jedoch die Entnahmearbeiten, bis die Wiederbeschaffung abgeschlossen ist. Dieses Verhalten ist beabsichtigt, da der Lagerplatz nicht über genügend Bestand verfügt, solange die Wiederbeschaffung nicht abgeschlossen ist. Schließen Sie die Wiederbeschaffung ab, und verarbeiten Sie dann die Entnahmearbeiten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

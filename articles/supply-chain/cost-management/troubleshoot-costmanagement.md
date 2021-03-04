@@ -62,3 +62,6 @@ Bitte denken Sie daran, einen Bestandsabschluss zum Datum %3 (31.01.2019) passen
 ## <a name="inventory-aging-report-discrepancies"></a>Diskrepanzen im Bestandsalterungsbericht
 
 Der **Bestandsalterungsbericht** zeigt unterschiedliche Werte an, wenn er in verschiedenen Dimensionen der Lagerung (z.B. Standort oder Lagerort) betrachtet wird. Weitere Informationen über die Berichtslogik finden Sie unter [Beispiele und Logik des Berichts zur Bestandsalterung](inventory-aging-report.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

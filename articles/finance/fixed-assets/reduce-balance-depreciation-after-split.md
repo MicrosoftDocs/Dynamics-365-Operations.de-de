@@ -45,3 +45,6 @@ Beispielsweise gelten die folgenden Bedingungen:
 Der für die ursprüngliche Anlage abzuschreibende Betrag beträgt 1.822,25 USD. Dieser Betrag entspricht dem NBV vor der Buchung der Aufteilungstransaktion (9.111,25 USD) zuzüglich der Anschaffungsregulierung, die während der Buchung der Aufteilungstransaktion generiert wird (-8.000 USD), zuzüglich der Abschreibungsregulierung, die während der Aufteilungstransaktion generiert wird (711 USD). Daher beträgt die Abschreibung für das zweite Jahr (1.822,25 × 18 Prozent) ÷ 12 = 27,33 USD.
 
 Der Abschreibungsbetrag für die neue Anlage im ersten Jahr beträgt (8.000 × 18 Prozent) ÷ 12 = $120.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

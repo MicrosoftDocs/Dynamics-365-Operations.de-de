@@ -60,3 +60,6 @@ Das Format, das in diesem Beispiel verwendet wird, ist "ISO20022 Kreditübertrag
 21. Geben Sie im Feld "Betreff" einen Wert ein.
 22. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

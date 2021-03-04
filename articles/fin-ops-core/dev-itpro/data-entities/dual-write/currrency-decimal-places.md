@@ -95,3 +95,6 @@ Wenn Sie verlangen, dass die Währungsgenauigkeit für eine bestimmte Währung v
 ### <a name="tables-currency-field"></a>Tabellen: Währungsfeld
 
 Die Anzahl der Dezimalstellen, die für bestimmte Währungsfelder konfiguriert werden können, ist auf vier begrenzt.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Diese Prozedur führt Sie durch den Prozess der Einrichtung eines Masseneinstell
     * Wählen Sie optional die Abteilung für die neuen Positionen aus.  
 13. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

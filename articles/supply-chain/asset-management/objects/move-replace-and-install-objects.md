@@ -91,3 +91,6 @@ Verwenden Sie die Funktion **Anlage installieren**, um eine Anlagenstruktur an e
 4. Wählen Sie im Feld **Funktionaler Standort** den neuen Standort aus.
 5. Standardmäßig wird das Feld **Gültig** auf das aktuelle Datum und die Uhrzeit festgelegt. Sie können jedoch ein anderes Datum und eine andere Uhrzeit auswählen, wann die Installation in der Anlagenstruktur gültig sein soll.
 6. Wählen Sie **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Dieses Handbuch unterstützt Sie dabei, eine Zahlungsfristdefinition sowie Dauer
 2. Wählen Sie einen Debitor mit einem Saldo aus.
 3. Erweitern Sie den Infoboxbereich **Fälligkeit**, um den Saldenrückblick anzuzeigen. Die Zahlungsfristdefinition für die Infobox ist der standardmäßigen Zahlungsfristdefinition entnommen, die in den Parametern angegeben ist. Sie können sie mithilfe des Menüs "Mahnen" ändern.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Aktualisierungen können neue Artikel, Kostenkategorien oder Berechnungsformeln 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

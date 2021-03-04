@@ -109,3 +109,6 @@ Gehen Sie folgendermaßen vor, um einen Genehmiger festzulegen.
 1. Klicken Sie auf der Seite **Optionen**, auf der Registerkarte **Konten** auf **Genehmigende Person festlegen**.
 2. Wählen Sie im Feld **Benutzerkennung für genehmigende Person** die Kennung des Benutzers aus, der die Änderungen eines anderen Benutzers abzeichnen muss.
 3. Wählen Sie im Feld **Signatur für Benutzer (Kennung)** die Kennung des Benutzers aus, dessen Änderungen abgezeichnet werden müssen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

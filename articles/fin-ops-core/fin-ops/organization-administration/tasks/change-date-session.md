@@ -32,3 +32,6 @@ In diesem Thema wird erläutert, wie das Datum für eine Sitzung geändert wird.
 2. Geben Sie ein Datum in das Feld **Datum** ein.
 3. Wählen Sie **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

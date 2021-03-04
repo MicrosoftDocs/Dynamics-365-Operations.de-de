@@ -62,3 +62,6 @@ Dieses Entwicklerhandbuch enthält eine API- und eine Referenz für benutzerdefi
 - [Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)
 - [Administratorhandbuch](hr-admin-overview.md)
 - [Benutzerhandbuch](hr-hrpro-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

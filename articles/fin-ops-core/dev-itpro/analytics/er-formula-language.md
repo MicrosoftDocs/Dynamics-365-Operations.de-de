@@ -174,3 +174,6 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)
 
 [Die Liste der elektronischen Berichterstellungsfunktionen erweitern](general-electronic-reporting-formulas-list-extension.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

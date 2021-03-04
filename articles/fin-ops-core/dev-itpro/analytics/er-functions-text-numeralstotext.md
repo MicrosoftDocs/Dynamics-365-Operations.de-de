@@ -88,3 +88,6 @@ Der Währungscode ist optional. Wenn er als leere Zeichenfolge definiert ist, wi
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Textfunktionen](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

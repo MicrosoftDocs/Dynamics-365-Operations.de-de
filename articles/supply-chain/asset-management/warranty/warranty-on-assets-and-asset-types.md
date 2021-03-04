@@ -54,3 +54,6 @@ In diesem Abschnitt wird erläutert, wie Sie im Anlagenmanagement Garantien auf 
 
 > [!NOTE]
 > Wenn Sie einen Arbeitsauftrag für eine Anlage anlegen, die unter eine Lieferantengarantie fällt, erhalten Sie eine Benachrichtigung über die Garantievereinbarung, wenn der Arbeitsauftrag ein voraussichtliches Startdatum innerhalb der Garantiezeit hat. Anschließend können Sie den Arbeitsauftrag nach Bedarf stornieren.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

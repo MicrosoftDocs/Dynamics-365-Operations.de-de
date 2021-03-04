@@ -146,3 +146,6 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
 5. Wählen Sie die abgeschlossene Version der aktuellen Konfiguration aus.
     * Beachten Sie, dass die erstellte Konfiguration als abgeschlossene Version 1 gespeichert wird.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

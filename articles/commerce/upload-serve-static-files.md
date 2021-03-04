@@ -107,3 +107,6 @@ Folgen Sie diesen Schritte, um den URL-Pfad zu ändern.
 [Bilder zuschneiden](dam-crop-images.md)
 
 [Bildfokuspunkte anpassen](dam-custom-focal-point.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

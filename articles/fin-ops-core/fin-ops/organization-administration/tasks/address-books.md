@@ -41,3 +41,6 @@ Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist
 7. Klicken Sie auf den Pfeil, um die ausgewählten verfügbaren Teams dem Adressbuch hinzuzufügen.
 8. Klicken Sie auf **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

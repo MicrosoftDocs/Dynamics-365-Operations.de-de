@@ -58,3 +58,6 @@ Gehen Sie folgendermaßen vor, um eine Aktivität einer anderen Arbeitskraft neu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

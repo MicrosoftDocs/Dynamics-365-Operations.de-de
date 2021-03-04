@@ -65,3 +65,6 @@ In den Argumenten logischer Funktionen können Sie Datenquellenverweise, numeris
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Logische Funktionen](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

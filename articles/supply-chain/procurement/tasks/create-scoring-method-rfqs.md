@@ -47,3 +47,6 @@ Diese Prozedur zeigt Ihnen, wie eine Bewertungsmethode erstellt wird. Eine Bewer
 14. Geben Sie im Feld "Bereich ab" eine Zahl ein.
 15. Geben Sie im Feld "Bereich bis" eine Zahl ein.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

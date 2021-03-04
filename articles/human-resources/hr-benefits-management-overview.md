@@ -97,3 +97,6 @@ Sie müssen einige Ihrer Änderungen verarbeiten, um sie zu aktivieren.
 - [Lebensereignisberechtigung verarbeiten](hr-benefits-process-life-event-eligibility.md)
 - [Satzänderungen verarbeiten](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

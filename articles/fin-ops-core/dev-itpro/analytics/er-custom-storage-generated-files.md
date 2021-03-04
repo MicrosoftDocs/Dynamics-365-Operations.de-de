@@ -341,3 +341,6 @@ class AssetRollForwardService extends SysOperationServiceBase
 
 - [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
 - [Startseite für Erweiterbarkeit](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

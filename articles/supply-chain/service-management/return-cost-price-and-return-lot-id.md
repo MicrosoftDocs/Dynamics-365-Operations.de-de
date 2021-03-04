@@ -112,3 +112,6 @@ Wenn Sie das Feld **Rücklieferungsloskennung** in einer Rücklieferungsposition
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

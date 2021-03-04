@@ -60,3 +60,6 @@ Mehrwertsteuer zu Dokumenten wird berechnet, indem eine "Mehrwertsteuergruppe" u
 29. Klicken Sie auf "Mehrwertsteuer".
 30. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

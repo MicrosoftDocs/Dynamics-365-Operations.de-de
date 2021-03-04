@@ -205,3 +205,6 @@ Die folgende Abbildung zeigt, wie der Logic Apps Designer aussieht, wenn alle Sc
 In diesem Tutorial haben Sie gelernt, wie Sie mit einer Logic App Daten aus Human Resources exportieren und die exportierten Daten in einem OneDrive for Business-Ordner speichern. Sie können die Schritte dieses Tutorials nach Bedarf an Ihre geschäftlichen Anforderungen anpassen.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

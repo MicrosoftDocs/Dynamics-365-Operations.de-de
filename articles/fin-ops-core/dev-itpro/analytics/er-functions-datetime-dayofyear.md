@@ -59,3 +59,6 @@ Der resultierende numerische Wert.
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Datums- und Zeitfunktionen](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

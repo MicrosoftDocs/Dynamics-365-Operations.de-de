@@ -62,3 +62,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Anzeigen der Liste der 
 24. Klicken Sie auf das Kontrollkästchen "Standardmäßige Verarbeitungsstelle für neue Kreditkarten".
 25. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

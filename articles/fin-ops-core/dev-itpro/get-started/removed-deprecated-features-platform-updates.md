@@ -192,3 +192,6 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Frühere Ankündigungen über entfernte oder veraltete Funktionen
 Um mehr über Funktionen zu erfahren, die in früheren Versionen entfernt oder veraltet sind, siehe [Entfernte oder veraltete Funktionen in früheren Versionen](../migration-upgrade/deprecated-features.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

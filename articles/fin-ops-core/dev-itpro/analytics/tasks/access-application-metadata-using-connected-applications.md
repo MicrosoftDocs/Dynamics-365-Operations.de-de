@@ -113,3 +113,6 @@ In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Ser
 11. Schließen Sie die Seite. 
 
 Wenn Sie diese Modellzuordnung überprüfen müssen, indem Sie Metadaten einer anderen Versionsanwendung verwenden, registrieren Sie eine andere verbundene Anwendung, weisen Sie sie dieser Modellzuordnung zu und prüfen Sie sie anhand der neuen Metadaten.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Erstellen Sie mit diesem Verfahren eine Bestellung, die auf einem verfügbaren B
 4. Klicken Sie auf Fehler oder Warnungen der Budgetprüfung anzeigen.
 5. Klicken Sie auf "Schließen".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

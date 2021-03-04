@@ -72,3 +72,6 @@ Ausführliche Informationen zum Hinzufügen eines Navigationsmenümoduls zu eine
 [Cookie-Compliance](cookie-compliance.md)
 
 [Kopfzeilenmodul](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

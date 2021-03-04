@@ -70,3 +70,6 @@ Die folgende Abbildung zeigt ein Beispiel für eine E-Commerce-Auftragsabschluss
 [Auftragsbestätigungsmodul](order-confirmation-module.md)
 
 [Auftragsdetailmodul](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

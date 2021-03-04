@@ -243,3 +243,6 @@ Um den archivierten Ausführungsverlauf herunterzuladen, wechseln Sie zum Datenv
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -31,3 +31,6 @@ Wie alle anderen Gebühren müssen auch die vom Transport erzeugten Gebühren mi
 Gehen Sie zu **Transportverwaltung > Einrichten > Bewertung > Diverse Gebühren**, um die Qualifizierungskriterien zu definieren, die bestimmen, wann ein bestimmter **Gebührencode** auf eine Gebühr angewendet wird.
 
 Sie sollten mindestens eine Einrichtung für jede relevante **Gebührenmodul**-Einstellung (*Kunde* und *Lieferant*) haben, bei der die **Gebührenart Sonstiges** auf *Keine* festgelegt ist. Fehlt diese Angabe, wird die Zusatzgebühr *nicht* zur Bestellung hinzugefügt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

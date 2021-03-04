@@ -139,3 +139,6 @@ Wir werden erstellte Konfigurationen löschen und laden sie erneut vom LCS-Repos
 26. Wählen Sie in der Struktur 'Muster Datenmodell' erweitern.
     * Beachten Sie, dass die vorbildliche Beispielzuordnung Zuordnungskonfiguration zusammen mit der gewählten Datenmodellkonfiguration heruntergeladen wurde. Die zwei Dateien werden zusammen heruntergeladen, da die „Beispielzuordnung“ als Implementierung des ausgewählten Datenmodells definiert wurde und weil sie für die Anwendung anwendbar ist. Die Variante Beispielzuordnung (Alternative) ist nicht heruntergeladen worden, da die Bedingung für die erforderliche Anwendungsversion nicht erfüllt ist.   
     * Wenn Sie sich bei Finance and Operations anmelden, registrieren Sie den gleichen Anbieter, greifen auf das gleiche LCS-Projekt zu und laden die gleiche Datenmodellkonfiguration, die Beispielzuordnung (Alternative) herunter, während die Beispielzuordnung-Konfiguration übersprungen wird.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Führen Sie diese Schritte aus, um den gedruckten Kassenbelegen Geschäftszeiten
 Die Bons enthalten nun auch die Geschäftszeiten. Wenn in der Vorlage Feiertage enthalten waren, werden diese auf dem Beleg angezeigt.
 
 ![Belegbeispiel](../dev-itpro/media/Storehours3.png "Belegbeispiel")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

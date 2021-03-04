@@ -107,3 +107,6 @@ Wählen Sie die Dokumenttypen aus, die beim Drucken von Anhängen verfügbar sei
 **Nummernkreise** Link
 
 Dient zum Auswählen der erforderlichen Nummernkreise in diesem Bereich. Es gibt zwei Nummernkreise für Anlagen: einen für manuell erstellte Anlagen und einen für Anlagen, die durch ausstehende Anlagen erstellt wurden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

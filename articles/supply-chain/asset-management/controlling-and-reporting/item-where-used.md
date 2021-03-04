@@ -71,3 +71,6 @@ Im nachfolgenden Screenshot finden Sie ein Beispiel für eine Artikelverwendungs
 
 ![Beispiel einer Artikelverwendungsort-Berechnung](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ Wenden Sie Filter mit der erweiterten Abfrage und Filterung an, um zu steuern, d
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Produktbestand (Supply Chain Management zu Field Service): Produktbestand
 
 [![Vorlagenzuordnung in Datenintegration](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

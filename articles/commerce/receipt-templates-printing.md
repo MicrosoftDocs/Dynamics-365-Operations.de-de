@@ -82,3 +82,6 @@ Bonprofile werden durch das Hardwareprofil direkt zu den Druckern zugewiesen.
 
 > [!NOTE]
 > Wenn zwei Drucker verwendet werden, kann ein Drucker verwendet werden, um standardmäßige Thermobons mit 40 Spalten zu drucken. Der zweite Drucker wird in der Regel verwendet, um ganzseitige Bontypen zu drucken, die weitere Informationen enthalten. Zu diesen Bontypen gehören Bons für Debitorenaufträge und Debitorenrechnungen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

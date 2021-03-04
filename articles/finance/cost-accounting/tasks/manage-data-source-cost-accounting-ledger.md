@@ -48,3 +48,6 @@ Verwenden Sie diese Prozedur, um die Hauptbuchdatenquelle für ein Kostenrechnun
 14. Wählen Sie im Feld Buchungsebene Aktuell aus.
 15. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

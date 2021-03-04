@@ -89,3 +89,6 @@ Eine *parallele Aktivität* ist ein Workflowelement, das zwei oder mehr Workflow
 ### <a name="subworkflow"></a>Untergeordneter Workflow
 
 Ein *untergeordneter Workflow* ist ein Workflow, der im Kontext eines anderen Workflows ausgeführt wird.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

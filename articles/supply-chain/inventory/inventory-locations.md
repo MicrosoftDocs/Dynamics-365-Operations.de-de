@@ -66,3 +66,6 @@ Es ist möglich, Lagerplätze von einem Lagerort an einen anderen zu kopieren un
 --------
 
 [Ein neues Lagerortlayout erstellen](tasks/create-new-warehouse-layout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

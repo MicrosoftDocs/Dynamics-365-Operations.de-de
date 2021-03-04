@@ -147,3 +147,6 @@ Die Informationen, auf die zugegriffen werden kann, sind der Name des Kreditors,
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Benutzer für Kreditorenzusammenarbeit verwalten](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

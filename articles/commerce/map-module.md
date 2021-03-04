@@ -82,3 +82,6 @@ Ausführliche Informationen zum Konfigurieren eines Kartenmoduls auf einer Seite
 [Bing Karten für Ihr Unternehmen verwalten](./dev-itpro/manage-bing-maps.md)
 
 [Bing Maps V8 Web Control](https://docs.microsoft.com/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

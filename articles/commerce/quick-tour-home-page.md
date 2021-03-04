@@ -73,3 +73,6 @@ Im Hauptbereich der Startseite können Produkte, Kategorien oder Werbeaktionen m
 [Übersicht der Einkaufswagen- und Auschecken-Seiten](quick-tour-cart-checkout.md)
 
 [Übersicht der Kontenverwaltungsseiten](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

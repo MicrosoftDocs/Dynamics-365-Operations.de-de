@@ -49,3 +49,6 @@ Der Benutzer kann die eingebetteten Microsoft Power BI-Berichte nicht anpassen.
 **Langfristige Lösung**
 
 Zusätzliche Power BI-Optionen werden verfügbar sein und mehr Daten und Entitäten werden Teil von Common Data Service  sein.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

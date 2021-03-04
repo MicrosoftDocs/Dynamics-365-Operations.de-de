@@ -37,3 +37,6 @@ Diese Prozedur zeigt, wie ein Produktlebenszyklus-Status einem freigegebenen Pro
 5. Geben Sie im Feld „Produktlebenszyklus-Status” einen Wert ein, oder wählen Sie einen Wert aus.
 6. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

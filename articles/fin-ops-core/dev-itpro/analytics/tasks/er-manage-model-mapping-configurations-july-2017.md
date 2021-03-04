@@ -161,3 +161,6 @@ Da ER-Konfigurationen unter Unternehmen freigegeben werden, können Sie diese Au
 7. Klicken Sie auf "OK".
     * Die Standardkonfiguration der Modellzuordnung wird von dieser Formatkonfiguration zur Generierung elektronischer Dokumente verwendet (die erstellte Ausgabe enthält den Buchungskreis).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

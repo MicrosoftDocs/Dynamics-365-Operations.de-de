@@ -56,3 +56,6 @@ Die Änderungen dieser Woche beheben ein Problem, bei dem keine Kalendertage gen
 ### <a name="current-balance-report-in-leave-pbi-doubles-employee-balance-385581"></a>Aktueller Saldobericht in Urlaubsgeldern verdoppelt Mitarbeiterbilanz (385581)
 
 Diese Änderung korrigiert den aktuellen Saldobericht in diesem Szenario.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

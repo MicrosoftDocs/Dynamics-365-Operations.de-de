@@ -46,3 +46,6 @@ Gehen Sie folgendermaßen vor, um eine Anlage neu zu klassifizieren:
 5. Geben Sie im Feld **Neuklassifizierungsdatum** ein Datum ein.
 6. Geben Sie im Feld **Belegserie** einen Wert ein, oder wählen Sie einen Wert aus.
 7. Klicken Sie auf **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

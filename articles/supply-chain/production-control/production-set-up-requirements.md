@@ -81,3 +81,6 @@ Bei Verwendung von Arbeitsplänen müssen Arbeitsgänge für jeden einzelnen ein
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

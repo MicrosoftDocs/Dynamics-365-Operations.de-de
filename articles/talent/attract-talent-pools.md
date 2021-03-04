@@ -149,3 +149,6 @@ Häufig werden mehrere gute Kandidaten nicht für eine Stelle ausgewählt, aber 
 1. Auf der Bewerbungsseite wählen Sie **Zu Talentpool hinzufügen** aus. Eine Liste der Talentpools, auf die Sie Zugriff haben, wird angezeigt.
 
 1. Wählen Sie den Talentpool aus oder suchen Sie danach und wählen Sie dann **Hinzufügen** aus, um den Kandidaten dieser Talentschmiede hinzuzufügen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

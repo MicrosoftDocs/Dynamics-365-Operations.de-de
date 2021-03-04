@@ -75,3 +75,6 @@ Auf der Seite **Wartungsbudgetlinien** können Sie manuell eine neue Budgetposit
 
 - Sie wissen, dass sich die Renovierung einiger Anlagen derzeit in der Planungsphase befindet, aber damit verbundene Arbeitsplätze im Asset Management noch nicht geschaffen wurden. Sie möchten jedoch, dass die Budgetkosten für diese Stellen in das Wartungsbudget aufgenommen werden.
 - Neue Anlagen oder Anlagenarten wurden seit der Erstellung des Wartungsbudgets angelegt, aber für diese Anlagen oder Anlagenarten wurden noch keine Wartungspläne eingerichtet. Sie möchten jedoch, dass die Budgetkosten für diese Anlagenarten in das Wartungsbudget aufgenommen werden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

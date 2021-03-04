@@ -100,3 +100,6 @@ Die folgende Abbildung zeigt ein Beispiel der Seite **Bestellung** mit Fokus auf
 
 Um die Aktivitätsnummer einzugeben oder anzuzeigen, die zu der Bestellposition eines Arbeitsauftrags gehört, wählen Sie auf der Listenseite **Arbeitsauftragsbestellanforderung** den Bestellanforderungsdatensatz und dann in der Spalte **Bestellanforderung** den Link für die Bestellanforderung aus. Sie können das Feld **Aktivitätsnummer** auf der Registerkarte **Projekt** im Inforegister **Positionsdetails** finden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsp
     * Der Status "Gestartet" bedeutet, dass das Projekt bereit ist, Bewerbungen zu erhalten.  
 33. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

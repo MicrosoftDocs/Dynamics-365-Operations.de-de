@@ -112,3 +112,6 @@ Wenn die Planungsoptimierung eingeschaltet ist, wird die Produktprogrammplanung 
 [Filter auf einen Plan anwenden](plan-filters.md)
 
 [Abbrechen eines Planungsauftrags](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ In diesem Thema wird erläutert, wie der CFO-Arbeitsbereich Finanzdimensionen hi
 16. Stellen Sie das Projekt zusammen und öffnen Sie dann die Anwendung, um die Ergebnisse anzeigen.
 
     [![Arbeitsabereich abgeschlossen](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

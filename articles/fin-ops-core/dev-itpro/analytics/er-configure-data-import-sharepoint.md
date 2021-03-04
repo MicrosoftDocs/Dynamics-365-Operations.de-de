@@ -206,3 +206,6 @@ Weitere Informationen zur relevanten EB-API finden Sie im Abschnitt [Code zum Au
 
 [Änderungen an der Framework-API für elektronische Berichterstellung für Application Update 7.3](er-apis-app73.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Werden Serviceaufträge manuell oder automatisch anhand der Servicevertragsposit
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Für diese Erfassung wird das Demo-Unternehmen DEMF verwendet.
 6. Geben Sie im Feld **Kurzbeschreibung** eine Beschreibung für interne Zwecke ein.
 7. Klicken Sie auf **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

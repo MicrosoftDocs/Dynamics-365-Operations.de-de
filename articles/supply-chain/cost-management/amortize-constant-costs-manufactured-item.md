@@ -47,3 +47,6 @@ Der berechnete Betrag der amortisierten konstanten Kosten eines produzierten Art
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

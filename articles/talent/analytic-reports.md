@@ -88,3 +88,6 @@ Eine der tollen Funktionen von Power BI ist die Art, wie alle Grafiken auf einer
 ## <a name="export-to-excel"></a>Nach Excel exportieren
 
 Um Berichtsdaten in Excel anzuzeigen, können Sie auf das Optionsmenü (drei Punkte) in einer Grafik klicken und **Zugrunde liegende Daten exportieren** auswählen. Exportierte Daten werden als gefiltert exportiert und berücksichtigen die Benutzerberechtigungen in Attract. Weitere Informationen finden Sie unter [Exportieren von Daten aus Visualisierungen](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

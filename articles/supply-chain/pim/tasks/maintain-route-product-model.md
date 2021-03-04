@@ -67,3 +67,6 @@ Die Ausführung dieser Prozedur erfordert ein vorhandenes Produktkonfigurationsm
 15. Geben Sie im Feld 'Anforderung' einen Wert ein, oder wählen Sie einen Wert aus.
 16. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

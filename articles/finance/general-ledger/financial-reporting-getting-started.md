@@ -173,3 +173,6 @@ Problem 3: Sie können über die Anmeldeseite von ClickOnce-Berichts-Designer fo
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Finanzberichte anzeigen](view-financial-reports.md)
 - [Definitionen für Berichtsbaumstrukturen in Finanzberichten](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

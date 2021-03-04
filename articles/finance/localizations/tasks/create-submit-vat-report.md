@@ -35,3 +35,6 @@ Diese Prozedur führt Sie durch das Erstellen und Übermitteln der Mehrwertsteue
 5. Wählen Sie "Ja" im Feld "Elektronisches Steuerdokument erstellen" aus.
 6. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

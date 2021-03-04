@@ -44,3 +44,6 @@ Führen Sie die folgenden Schritte aus, um Benutzer den Rollen zuzuweisen, die b
 1. Wechseln Sie zu **Systemverwaltung \> Sicherheit \> Benutzer zu Rollen zuweisen**.
 2. Wählen Sie **Mietvertrag verwalten**, **Mietvertragsbearbeiter** oder die **Mietvertrag anzeigen**-Rolle und dann **Benutzer manuell zuweisen/ausschließen**.
 3. Wählen Sie den Benutzer aus, der der Rolle zugewiesen werden soll, und wählen Sie dann **Rolle zuweisen**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen von kanalspez
 38. Klicken Sie im Aktivitätsbereich auf **Verkaufen**.
 39. Klicken Sie auf **Verkaufspreis**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

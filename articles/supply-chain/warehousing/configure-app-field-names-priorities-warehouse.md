@@ -144,3 +144,6 @@ Die verbleibenden Metadaten beispielsweise Lagerplatz, werden nicht auf der Aufg
 --------
 
 [Übersicht zum Installieren und Konfigurieren der Warehouse-App](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

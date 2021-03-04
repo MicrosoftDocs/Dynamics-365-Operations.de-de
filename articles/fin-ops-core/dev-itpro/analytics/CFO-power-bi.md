@@ -43,3 +43,6 @@ Die folgende Tabelle enthält den Power BI-Inhalt, von dem die Berichte kopiert 
 | [Umsatz- und Rentabilität](sales-profitability-performance-content-pack.md) | <ul><li>Umsatzerlös nach Regionen</li><li>Beste 10 Debitoren nach Umsatz</li><li>Beste 10 Produkte nach Umsatz</li></ul> |
 | [Kredit- und Inkassoverwaltung](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Überfälliger Kunde</li><li>Debitoren über Kreditlimit</li><li>Saldenrückblick</li></ul> |
 | [Einkaufs- und Ausgabenanalyse](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Einkäufe nach Monat/Tag</li><li>Die 10 wichtigsten Kreditoren nach Einkäufen</li><li>Die 10 wichtigste Produkte nach Einkäufen</li></ul> |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

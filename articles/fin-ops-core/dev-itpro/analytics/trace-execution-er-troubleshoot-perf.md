@@ -376,3 +376,6 @@ Beachten Sie, dass der Webbrowser eine ZIP-Datei zum Herunterladen anbietet. Die
 
 - [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
 - [Verbessern Sie die Leistung von EB-Lösungen, indem Sie parametrisierte CALCULATED FIELD-Datenquellen hinzufügen](er-calculated-field-ds-performance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

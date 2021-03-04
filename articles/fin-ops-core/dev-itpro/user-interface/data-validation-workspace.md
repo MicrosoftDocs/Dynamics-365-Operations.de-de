@@ -57,3 +57,6 @@ Bevor Sie den Arbeitsbereich **Prüfliste für Datenprüfung** verwenden können
 Sie verwenden Aufgabenbereiche, um Datenprüfungsaufgaben in logische Bereiche der Eigentümerschaft innerhalb der Organisation zu gruppieren. Beispielsweise können Kreditoren, Debitoren oder das Hauptbuch als Aufgabenbereiche verwendet werden.
 
 Die Menüoption **Menüelementname** wird dem Aufgabenarbeitseinsatz zugeordnet und kann verwendet werden, um in direktem Bezug zur zugeordneten Seite über den Aufgabenlink im Arbeitsbereich zu wechseln. Beispielsweise kann eine Datenprüfungsaufgabe zur Ausführung des Berichts **Kreditorenkontenfälligkeit** mit der Seite **Kreditorenkontenfälligkeitsbericht** verknüpft werden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

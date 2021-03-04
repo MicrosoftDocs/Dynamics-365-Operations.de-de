@@ -37,3 +37,6 @@ Diese Verfahren zeigt, wie Sie eine Menüoption des mobilen Geräts für Ladungs
 5. Wählen Sie im Feld "Modus" "Indirekt"aus.
 6. Wählen Sie im Feld "Aktivitätscode" "Kennzeichen konsolidieren" aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

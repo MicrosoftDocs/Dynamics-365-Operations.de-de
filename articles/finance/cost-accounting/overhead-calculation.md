@@ -1415,3 +1415,6 @@ In der Finanzrechnung werden Kosten von 10.000,00 für Elektrizität einer blind
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

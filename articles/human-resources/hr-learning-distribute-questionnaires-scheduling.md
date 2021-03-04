@@ -129,3 +129,6 @@ Die Fragebogenplanung ermöglicht es Ihnen, Fragebögen für mehrere Befragungst
 2. Klicken Sie auf "Beenden".
 3. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

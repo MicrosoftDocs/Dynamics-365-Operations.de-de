@@ -111,3 +111,6 @@ Arnie ändert der Wert im Feld **Skonto verwenden** wieder zu **Normal**, da er 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

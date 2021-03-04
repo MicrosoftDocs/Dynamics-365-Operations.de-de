@@ -115,3 +115,6 @@ Das folgende Bild zeigt eine Beispielkonfiguration für ein freigegebenes Produk
 [Erstellen juristischer Personen](channels-legal-entities.md)
 
 [Eine Variantengruppe erstellen](create-variant-group.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

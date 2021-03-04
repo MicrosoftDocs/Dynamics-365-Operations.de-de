@@ -837,3 +837,6 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
 [Peripheriesimulator für den Handel](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Dieses Verfahren zeigt, wie Sie den Eigentümer des Lieferungsbestandes vom Kred
 2. Klicken Sie auf "OK".
 3. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

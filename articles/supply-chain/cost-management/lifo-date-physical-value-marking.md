@@ -157,3 +157,6 @@ Die folgende Abbildung gibt Aufschluss über die Auswirkungen der Auswahl des LI
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

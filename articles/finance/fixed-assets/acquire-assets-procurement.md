@@ -109,3 +109,6 @@ Weitere Informationen finden Sie unter [Anlage-Integration](fixed-asset-integrat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

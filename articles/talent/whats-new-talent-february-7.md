@@ -58,3 +58,6 @@ Wenn Sie die Stelle einer Position ändern, wird die **Stellenfamilie** jetzt au
 
 ### <a name="performance-improvements-when-rendering-workspaces"></a>Leistungsverbesserungen beim Rendern von Arbeitsbereichen
 Die Analyseregisterkarten in Arbeitsbereichen werden jetzt nur geladen, wenn Sie auf die Webseiten zugreifen. Ein Indikator wird während des ersten Renderings der Seite in der oberen linken Ecke der Seite angezeigt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

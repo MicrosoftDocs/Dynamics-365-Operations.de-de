@@ -131,3 +131,6 @@ Weitere Informationen finden Sie in folgenden Themen:
 - [Rundungsfunktion](https://msdn.microsoft.com/library/aa850656.aspx)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

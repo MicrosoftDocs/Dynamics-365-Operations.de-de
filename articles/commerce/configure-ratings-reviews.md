@@ -95,3 +95,6 @@ Informationen zur Konfiguration von Bewertungen und Rezensionsmodulen auf den Pr
 [Konfigurieren Sie die Bewertungen und Rezensionsmodule auf den Produktdetailseiten](ratings-reviews-modules.md)
 
 [Synchronisieren von Produktbewertungen in Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

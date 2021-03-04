@@ -70,3 +70,6 @@ Wenn die Anzahl der Belegpositionen 100 oder weniger beträgt, wird der Umkehr-P
 
 Buchungen können nur storniert werden, wenn sie die Geschäftsregeln für das Zurücksetzen sie gelten. Kreditorenzahlungen können nicht mithilfe der Funktion storniert werden, die in diesem Thema beschrieben wird. Kreditorenzahlungen müssen storniert werden, indem die Schritte unter [Stornieren einer Kreditorenzahlung](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment) ausgeführt werden.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

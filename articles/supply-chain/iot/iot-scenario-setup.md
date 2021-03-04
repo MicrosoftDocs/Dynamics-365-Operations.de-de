@@ -143,3 +143,6 @@ Um ein Szenario zu deaktivieren, führen Sie folgende Schritte aus.
 2. Wählen Sie auf der Kachel für das Szenario **Konfigurieren** aus.
 3. Wählen Sie **Weiter**, um zur letzten Assistentenseite zu wechseln.
 4. Legen Sie die Option fest, um das Szenario zu deaktivieren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

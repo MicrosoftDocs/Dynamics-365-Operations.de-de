@@ -140,3 +140,6 @@ Geben Sie die folgenden Werte an, um das Buchungsprofil einzurichten:
 
 Weitere Informationen finden Sie unter [Überfällige Debitorenzahlungen](../cash-bank-management/tasks/customer-payment-overview.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

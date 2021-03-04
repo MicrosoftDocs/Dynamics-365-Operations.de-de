@@ -854,3 +854,6 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
     - Transportaufträge und Rohmaterialentnahme
 
 - Die Containerkonsolidierungsregel für das Verpacken nach Richtlinieneinheit hat Einschränkungen. Für auftragsgebundene Reservierungen empfehlen wir, keine Container-Build-Vorlagen zu verwenden, bei denen das Feld **Nach Richtlinieneinheit verpacken** aktiviert ist. Beim aktuellen Design werden keine Lagerplatzrichtlinien verwendet, wenn Lagerarbeit erstellt wird. Daher wird nur die niedrigste Einheit in der Nummernkreisgruppe (der Lagereinheit) während des Containerisierungswellenschritts angewendet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

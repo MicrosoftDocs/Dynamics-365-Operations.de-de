@@ -64,3 +64,6 @@ Die folgende Tabelle enthält eine Zusammenfassung der Begriffe, die Sie kennen 
 [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md)
 
 [Anpassen der Sitenavigation](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

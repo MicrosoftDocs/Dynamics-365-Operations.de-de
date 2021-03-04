@@ -250,3 +250,6 @@ Dieses Szenario zeigt, wie sich die zuvor in diesem Thema beschriebenen Einstell
 1. Wählen Sie im soeben erstellten Auftrag auf dem Inforegister **Auftragspositionen** die Option **Position hinzufügen** aus, um eine weitere Position hinzuzufügen.
 1. Legen Sie für die neue Position das Feld **Artikelnummer** auf *M9200* und das Feld **Menge** auf *1* fest.
 1. Wiederholen Sie die Positionen 6 bis 9, um die Position zu reservieren und für den Lagerort freizugeben. Wie zuvor erstellt das System eine **neue** Lieferung für die Position, die Sie hinzugefügt haben. Da der Artikel jedoch zur Artikelgruppe **CarAudio** gehört, können **die Einschränkungen, die Sie für die Ladungsmischgruppe eingerichtet haben, nicht weitergegeben werden**. Daher wird der Artikel **einer neuen Ladung hinzugefügt**. Wenn Sie in der Ladungserstellungsvorlage keine Ladungsmischgruppe angegeben hätten, wäre diese Lieferung zur ersten Ladung hinzugefügt worden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

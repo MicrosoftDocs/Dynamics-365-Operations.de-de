@@ -535,3 +535,6 @@ Die folgenden Abweichungen für Szenario 1, basierend auf den Anforderungen für
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

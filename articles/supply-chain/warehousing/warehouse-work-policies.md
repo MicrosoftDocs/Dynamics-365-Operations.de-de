@@ -301,3 +301,6 @@ Weitere Informationen zu Menüelementen für Mobilgeräte finden Sie unter [Rich
 Weitere Informationen zum Kennzeichenempfang und Arbeitsrichtlinien finden Sie unter [Kennzeichenempfang über die Warehouse-App](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Weitere Informationen über eingehende Auslastungverwaltung finden Sie unter [Lagerortverwaltung von eingehender Auslastung für Bestellungen](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Anlagenabschreibung kann über juristische Personen hinweg in einem Einzelschrit
 5. Klicken Sie auf "Erfassung erstellen".
 6. Wechseln Sie zu "Anlagen" > "Journaleinträge" > "Anlagenerfassung".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

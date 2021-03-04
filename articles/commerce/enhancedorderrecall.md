@@ -64,3 +64,6 @@ In der AppBar kann ein Benutzer einen Vorgang auswählen. Abhängig vom Auftrags
 - **Bearbeiten** – Ermöglicht Benutzern das Vornehmen von Änderungen am ausgewählten Kundenauftrag.
 
 - **Abholen** – Startet den Abholungs-Flow, mit dem der Benutzer die abzuholenden Produkte auswählen kann, und erstellt die Warenabholungstransaktion.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

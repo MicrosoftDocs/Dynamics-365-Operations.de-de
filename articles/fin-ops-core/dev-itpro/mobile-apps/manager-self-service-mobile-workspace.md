@@ -97,3 +97,6 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 1.  Wählen Sie **Lob versenden**. 
 1. Geben Sie den Text des Lobs ein, das Sie übermitteln möchten. 
 1. Wählen Sie **Fertig**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

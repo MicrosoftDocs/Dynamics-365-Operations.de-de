@@ -536,3 +536,6 @@ Sie können jetzt den Nachrichtenstatus entweder löschen oder aktualisieren. Um
 ![Den Nachrichtenstatus aktualisieren](media/update-status.png)
 
 Der Nachrichtenstatus wird auf **Vorbereitet** aktualisiert, und Sie können jetzt den Bericht generieren, indem Sie **Bericht generieren** auswählen. Der Bericht wird generiert, und der Nachrichtenstatus sowie das Aktivitätsprotokoll werden aktualisiert. Um den generierten Bericht anzuzeigen, wählen Sie die Schaltfläche **Anhang** (das Büroklammersymbol) in der rechten oberen Ecke der Seite aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -38,3 +38,6 @@ Mit einem Periodencode wird die Dauer der Periode für die Dauerauftragsgebühr 
 Der Periodencode wird in der Service-Dauerauftragsgruppe definiert. Er ist für alle Daueraufträge innerhalb der Gruppe festgelegt. Neu erstellte Dauerauftragsgebühren besitzen ein vorgeschlagenes Startdatum. Dabei handelt es sich entweder um das Startdatum der Periode (bei Erstellung der ersten Periode) oder um das Enddatum der vorherigen Periode (bei Erstellung einer weiteren Periode) handelt.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Gehen Sie folgendermaßen vor, um die Elemente eines Parallelzweigs zu entwerfen
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Erstellen von Workflows – Übersicht](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ In diesem Thema werden die Erfassungstypen beschrieben, die Sie für Finanzerfas
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

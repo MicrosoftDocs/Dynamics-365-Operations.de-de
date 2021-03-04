@@ -50,3 +50,6 @@ Sie können die Details eines vordatierten Schecks erfassen, den Sie von einem D
 15. Klicken Sie auf "Buchen".
 16. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

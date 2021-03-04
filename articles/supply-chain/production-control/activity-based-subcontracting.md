@@ -106,3 +106,6 @@ Supply Chain Management unterstützt jetzt BOM-Berechnungen, die Transportdienst
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

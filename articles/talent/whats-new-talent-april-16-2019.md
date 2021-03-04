@@ -94,3 +94,6 @@ Mit dieser Änderung werden Duplikate erkannt, während Sie Namenfelder eingeben
 Mit der Plattformaktualisierung 25 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

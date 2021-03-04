@@ -82,3 +82,6 @@ Um schnell und einfach eine unterbrochene Buchung aufzurufen, scannen Sie den St
 ### <a name="void-a-suspended-transaction"></a>Ausgesetzte Buchung stornieren
 
 Sie können unterbrochene Buchungen stornieren, indem Sie die Buchung zuerst erneut aufrufen und dann **Transaktion stornieren** ausführen oder die Buchung in der Liste **Transaktion zurückrufen** auswählen und **Storniert** auf der App-Leiste auswählen. Alternativ kann der Shop konfiguriert werden, damit Benutzer aufgefordert werden, unterbrochene Transaktionen zu stornieren, wenn sie ihre Schicht schließen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

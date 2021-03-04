@@ -68,3 +68,6 @@ Dieser Artikel beschreibt, wie Vorteilselemente erstellt werden, die verwendet w
 16. Wählen Sie im Feld "Basis" eine Option aus.
 17. Geben Sie im Feld "Betrag oder Satz" eine Zahl ein.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

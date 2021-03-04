@@ -89,3 +89,6 @@ Alle Journaleinträge, die im Anlagenleasing erstellt werden, sind in der Erfass
 
 > [!NOTE]
 > Die Erfassung für das Anlagenleasing kann nicht manuell erstellt werden. Es wird automatisch erstellt, wenn Mietpläne erstellt werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

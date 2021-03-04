@@ -83,3 +83,6 @@ Nachdem die Einstellungsdaten verfügbar sind, sind Sie bereit, eine Anlage zu e
 1. Stellen Sie auf der Seite **Alle funktionalen Standorte** sicher, dass der funktionale Standort, an dem die Anlage automatisch erstellt werden soll, den funktionalen Standorttypen verwendet, den Sie für diesen Zweck erstellt haben.
 2. Wählen Sie den funktionalen Standort aus der Liste aus.
 3. Wählen Sie **Status des funktionalen Standorts aktualisieren** aus und anschließend den Lebenszyklusstatus, der für diesen Zweck erstellt wurde. Eine Anlage wird nun automatisch am funktionalen Standort installiert. Die Anlage hat denselben Namen wie der funktionale Standort.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Konfigurieren und Ausf�
 11. Klicken Sie auf "OK".
 12. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

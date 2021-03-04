@@ -78,3 +78,6 @@ Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 10. Klicken Sie auf Speichern.
 11. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

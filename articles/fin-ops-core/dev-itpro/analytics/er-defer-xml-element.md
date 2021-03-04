@@ -243,3 +243,6 @@ Wenn Sie beispielsweise die Summe der Steuerwerte in der Kopfzeile Ihres Bericht
 - [Konfigurieren des Formats für Inventuren und Summierungen](./tasks/er-format-counting-summing-1.md)
 - [Ausführung des EB-Formats nachverfolgen, um Leistungsprobleme zu behandeln](trace-execution-er-troubleshoot-perf.md)
 - [Verzögern der Ausführung von Sequenz-Elementen in ER-Formaten](er-defer-sequence-element.md#Example)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

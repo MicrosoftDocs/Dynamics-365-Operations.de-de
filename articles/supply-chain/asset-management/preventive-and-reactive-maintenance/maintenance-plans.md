@@ -194,3 +194,6 @@ Die folgende Abbildung zeigt das Beispiel eines Wartungsplans, der auf einer Anl
 
 ![Abbildung 7](media/08-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

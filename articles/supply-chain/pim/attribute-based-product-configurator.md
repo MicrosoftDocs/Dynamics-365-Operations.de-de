@@ -141,3 +141,6 @@ Der letzte Schritt besteht darin, attributbasierte Verkaufspreise für die Produ
 1. Öffnen Sie im Aktivitätsbereich die Registerkarte **Modell** und wählen Sie aus der Gruppe **Produktmodelldetails** die Option **Versionen** aus.
 1. Die Seite **Versionen** wird angezeigt. Stellen Sie sicher, dass **Preis** auf **Attributbasiert** festgelegt ist.
     ![Festlegen des Preises auf attributbasiert](media/prod-config-versions.png "Festlegen des Preises auf attributbasiert")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

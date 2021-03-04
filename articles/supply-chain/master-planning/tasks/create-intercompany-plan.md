@@ -54,3 +54,6 @@ Dieses Verfahren zeigt, wie ein Intercompany-Plan erstellt wird. Das Demodatenun
 2. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile. Klicken Sie auf den Link für StaticPlan. Sie müssen im Unternehmen USMF sein.  
 3. Klicken Sie auf **Bestellvorschläge**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

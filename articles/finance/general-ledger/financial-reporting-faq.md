@@ -88,3 +88,6 @@ Wenn ein Bericht in D365 nicht den Erwartungen entspricht, können Sie Konten un
 2.  Bericht in Excel exportieren
 
 Sie sollten nun in der Lage sein, die Daten aus dem Excel-Bericht in der Finanzberichterstellung in den D365-Zwischenbilanzbericht zu kopieren und die Spalten mit der Abschlussbilanz zu vergleichen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

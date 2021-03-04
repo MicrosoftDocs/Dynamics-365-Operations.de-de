@@ -138,3 +138,6 @@ Befolgen Sie diese Schritte, um den Bericht **Organisationsverkäufe** zu erstel
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Startseite für Commerce](../retail/index.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

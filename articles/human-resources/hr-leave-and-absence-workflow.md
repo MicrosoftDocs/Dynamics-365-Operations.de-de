@@ -81,3 +81,6 @@ Diese Beispiele zeigen, wie Sie mithilfe dieser Datenelemente verschiedene Typen
 ## <a name="see-also"></a>Siehe auch
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

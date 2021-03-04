@@ -38,3 +38,6 @@ Diese Prozedur zeigt, wie eine RIF-Aufstellung auf einem Produktionsauftrag ange
 6. Legen Sie das Datum "01-12-2012" im Feld "Von Datum" fest.
 7. Legen Sie das Datum "31-12-2012" im Feld "Bis Datum" fest.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

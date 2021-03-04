@@ -71,3 +71,6 @@ April kann die Kreditorenbuchungen auf der Seite **Kreditorenbuchungen** überpr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

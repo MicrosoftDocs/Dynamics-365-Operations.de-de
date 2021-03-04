@@ -90,3 +90,6 @@ Diese Aufgabenanleitung veranschaulicht, wie eine Einzugsermächtigung erstellt 
 3. Wählen Sie den Debitor aus, dem Sie die Vollmacht hinzugefügt haben.
 4. Geben Sie im Feld **Direkteinzugsmandats-ID** einen Wert ein, oder wählen Sie einen Wert aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

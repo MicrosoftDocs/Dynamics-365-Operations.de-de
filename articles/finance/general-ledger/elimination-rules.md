@@ -155,3 +155,6 @@ W√§hlen Sie das Unternehmen, das die Quelle der konsolidierten Daten ist, und w√
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

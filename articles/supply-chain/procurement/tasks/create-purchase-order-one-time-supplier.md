@@ -39,3 +39,6 @@ Diese Prozedur zeigt Ihnen, wie Sie eine Bestellung für einen einmaligen Liefer
 5. Klicken Sie auf "OK".
     * Die Bestellung kann jetzt wie jeder andere Auftrag abgeschlossen und verarbeitet werden. Es gibt keine speziellen Eigenschaften, in Bezug darauf, wie dies erfolgen soll. Die Rechnung berücksichtigt eine fällige Transaktion zum Kreditorenkonto, das mit dem Auftrag erstellt wurde, und die Zahlung wird dann verarbeitet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

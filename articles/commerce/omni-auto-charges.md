@@ -222,3 +222,6 @@ Wenn Benutzer die berechneten Belastungen manuell überschreiben oder der Transa
 
 [Kopfbelastungen auf übereinstimmende Verkaufspositionen aufteilen](pro-rate-charges-matching-lines.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

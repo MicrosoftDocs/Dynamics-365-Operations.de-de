@@ -42,3 +42,6 @@ Dieses Thema zeigt, wie Finanzdimensions-Standardvorlagen eingerichtet werden. D
 11. Geben Sie die Finanzdimensionswerte ein, die dem eingegebenen Prozent entsprechen.
 12. Wählen Sie **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

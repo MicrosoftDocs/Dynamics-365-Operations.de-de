@@ -179,3 +179,6 @@ Beachten Sie, dass die folgenden Ereignisse auftreten:
 - Die Freigabe für einen Lagerort wird für den verknüpften Auftrag ausgelöst.
 - Auf Grundlage der Freigabe wird die Lieferungs- und Crossdockingarbeit erstellt. Diese Arbeit weist den Lagerortoperator an, die Mengen zu entnehmen, die erforderlich sind, um die Auftragsposition zu erfüllen, und im ausgehenden Lagerplatz einzulagern, der in den Crossdockinglagerplatzrichtlinien angegeben ist.
 - Wenn die Produktionsauftragsmenge mehr ist als die Menge, die für den Auftrag erforderlich ist, wird reguläre Einlagerungsarbeit erstellt. Diese Arbeit weist den Lagerortoperator an, die Menge von Fertigerzeugnissen zu entnehmen, die nach dem Crossdocking verbleibt, und zum regulären Lagerplatz zu bewegen, gemäß den Lagerplatzrichtlinie.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

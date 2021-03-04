@@ -87,3 +87,6 @@ Die Behebung dieses Fehlers hängt von der Fehlerursache ab:
 
 + Wenn die Zuordnung abhängige Zuordnungen enthält, müssen Sie die abhängigen Zuordnungen dieser Tabellenzuordnung aktivieren.
 + In der Zuordnung fehlen möglicherweise Quell- oder Zielfelder. Wenn ein Feld in der Finance and Operations-App fehlt, dann befolgen Sie die Schritte im Abschnitt [Fehlende Entitätsfelder treten auf Zuordnungen auf](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Wenn ein Feld in Dataverse fehlt, klicken Sie in der Zuordnung auf die Schaltfläche **Tabellen aktualisieren**, damit die Felder automatisch wieder in die Zuordnung eingefügt werden.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

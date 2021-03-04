@@ -49,3 +49,6 @@ Sie können Vorteilspläne für Arbeitskräfte in Microsoft Dynamics 365 Human R
    | Planwechsel | Das Inforegister „Pläne“ enthält die Pläne, die den von Ihnen angegebenen Filterkriterien entsprechen. Die relevanten Konfigurationsoptionen, die von HR-Mitarbeitern festgelegt wurden, und die von Mitarbeitern ausgewählten Registrierungsanmeldungen sind in jeder Zeile enthalten. Das Feld „Qualifiziert“ gibt an, ob ein Validierungskonflikt mit der Planauswahl vorliegt. |
 
 4. Wählen Sie **Speichern**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

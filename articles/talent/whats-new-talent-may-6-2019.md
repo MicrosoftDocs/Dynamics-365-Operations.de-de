@@ -93,3 +93,6 @@ Die Möglichkeit zum Nachverfolgen von Mitarbeiterfreizeit und ein Verständnis 
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Geben Sie den Instanztyp an, wenn Sie Talent bereitstellen
 
 Wenn Sie eine neue Talent-Instanz bereitstellen, können Sie angeben, ob der Instanztyp **Produktion** oder **Sandkasten** lautet. Dies ermöglicht frühes Testen neuer Funktionen. Alle vorhandenen Talent-Instanzen werden zum Produktionsinstanztyp aktualisiert. Wenn eine der vorhandenen Instanzen auf den Sandboxinstanztyp aktualisiert werden soll, wenden Sie sich an den Support, um die Änderungsanforderung zu initiieren.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

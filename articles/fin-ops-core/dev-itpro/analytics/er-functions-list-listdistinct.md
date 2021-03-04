@@ -97,3 +97,6 @@ Das folgende Beispiel zeigt, wie Sie die Liste der eindeutigen Kundenkontonummer
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Listenfunktionen](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

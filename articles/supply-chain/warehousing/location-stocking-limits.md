@@ -104,3 +104,6 @@ Um diesen offensichtlichen Fehler zu erklären, müssen Sie die Auswahlkriterien
 
 > [!NOTE]
 > Sie können Lagerplatz-Bestandsgrenzen nicht verwenden, um z. B. die Wiederbeschaffung von Elementen zu steuern, die am selben Lagerplatz unterschiedliche Mengen haben. Verwenden Sie in diesem Fall eine *Wiederbeschaffung-Vorlage*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

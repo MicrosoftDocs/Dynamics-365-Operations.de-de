@@ -175,3 +175,6 @@ Indem Sie die Aktivität **Löschen** in der Registrierungsanforderung des zukü
 |         Genehmigt         |                                                                               Die Kreditorenanforderung ist genehmigt.                                                                               |                                                                                                   Eine Registrierungsanforderung des künftigen Kreditors, die in den Kreditorenregistrierungs-Assistenten eingegebenen Daten sowie die Kreditorenanforderung werden gelöscht.                                                                                                    |
 |         Verweigert         |                                                                               Die Kreditorenanforderung wird abgelehnt.                                                                               |                                                                                                   Eine Registrierungsanforderung des künftigen Kreditors, die in den Kreditorenregistrierungs-Assistenten eingegebenen Daten sowie die Kreditorenanforderung werden gelöscht.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -113,3 +113,5 @@ Der Download ist eine .zip-Datei, die Folgendes enthält:
 ## <a name="see-also"></a>Siehe auch
 
 [Einstellen von Dynamics 365 Talent: Attract und Dynamics 365 Talent: Onboard Apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -153,3 +153,6 @@ Diese Registerkarte zeigt die Auswirkungen auf die ausgewählte Lieferungsaltern
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Möglicherweise müssen Sie den Abschluss einer Bestellung verzögern. Beispiels
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

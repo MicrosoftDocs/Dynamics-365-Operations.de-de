@@ -205,3 +205,6 @@ Aufstellungen sind Ansichten für die Manager, die für die Kostensteuerung vera
 Versionen werden verwendet, um verschiedene Ergebnisse zu simulieren, anzuzeigen und zu vergleichen. Standardmäßig werden alle Istkosten in einer Basisversion angezeigt, die als *Tatsächlich* bekannt ist. Für Budgets und Berechnungen können Sie mit so vielen Versionen arbeiten, wie Sie benötigen. Beispielsweise können Sie Budgetdaten in eine ursprüngliche Version importieren und dann das Budget in einer überarbeiteten Version überarbeiten. Für Berechnungen können Sie mehrere Versionen erstellen. In diesen verschiedenen Versionen können Sie dann Berechnungen erstellen, indem Sie unterschiedliche Berechnungsregeln verwenden, die für die Kostenzuteilung angewendet werden.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Der Basispreis oder Index des Dauerauftrags wird mit dem angegebenen Wert aktual
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Bedingte Fragen bieten die Möglichkeit, basierend auf der vorhergehenden Antwor
 10. Wählen Sie in der Struktur "Fragen\Ich werde angemessen für meine Arbeit bezahlt" aus.
     * Beachten Sie, dass die Fragenstruktur aktualisiert wird, sodass die Abhängigkeit angezeigt wird.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

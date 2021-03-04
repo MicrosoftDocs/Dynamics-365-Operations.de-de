@@ -226,3 +226,6 @@ Um die manuelle Ausführung einer aufgeschobenen steuerlichen Erfassung zu aktiv
     1. Wählen Sie das zu aktualisierende Layout aus.
     2. Fügen Sie eine neue Schaltfläche hinzu und legen Sie die Eigenschaft der Schaltfläche  auf **Steuererlicher Registrierungsprozess abschliessen**
     3. Führen Sie auf der Seite **Distributionszeitplan** den Auftrag **1090** aus, um Ihre Änderungen in die Kanaldatenbank zu übertragen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Bei einem Batchauftrag handelt es sich um eine Gruppe von Aufgaben, die zur auto
     - **Zurückhalten**: Legen Sie für den Batchauftrag **Zurückhalten** fest, damit er vom Planungsprogramm für Batchaufträge zurückgehalten wird. Entspricht *Stopp*.
     - **Im Wartezustand**: Legen Sie für den Batchauftrag **Im Wartezustand** fest, damit er darauf wartet, vom Planungsprogramm fpr Batchaufträge aufgenommen zu werden. Entspricht *Los*.
 5. Klicken Sie auf **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

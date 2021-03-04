@@ -41,3 +41,6 @@ Führen Sie die folgenden Schritte aus, um den Journaleintrag für die kurzfrist
 4. Aktivieren Sie den **Buchen**-Parameter. Wenn der Eintrag erstellt, aber nicht gebucht werden soll, lassen Sie diesen Parameter alternativ deaktiviert.
 5. Aktivieren Sie den **Vorschau vor dem Buchen**-Parameter, um den Eintrag anzuzeigen, bevor er gebucht wird.
 6. Wählen Sie **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

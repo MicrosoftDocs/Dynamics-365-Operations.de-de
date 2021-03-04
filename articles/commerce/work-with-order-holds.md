@@ -103,3 +103,6 @@ Wenn Benutzer einen Sperre verrechnen aber zusätzliche Änderungen am Auftrag v
 ## <a name="reporting-options"></a>Sonstige Berichtsoptionen
 
 Gehen Sie zu **Retail und Commerce** \> **Abfragen und Berichte** \> **Callcenterberichte** \> **Auftragssperrenbericht**, um einen Bericht zu Auftragssperren nach Datumsbereich, Sperrcode oder zugehörigen Kriterien auszuführen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

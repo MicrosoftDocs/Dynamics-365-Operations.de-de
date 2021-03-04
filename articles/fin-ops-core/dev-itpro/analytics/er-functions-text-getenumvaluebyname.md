@@ -117,3 +117,6 @@ Wenn Sie diesen Ansatz für eine große Menge von Transaktionsdaten verwenden m�
 [FIRSTORNULL EB-Funktion](er-functions-list-firstornull.md)
 
 [WHERE EB-Funktion](er-functions-list-where.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

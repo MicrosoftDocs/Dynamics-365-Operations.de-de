@@ -67,3 +67,6 @@ Der Anmeldedienst kann erweitert werden, um zusätzliche Geräte für die erweit
 ## <a name="using-extended-logon"></a>Verwenden der erweiterten Anmeldung
 
 Wenn die erweiterte Anmeldung konfiguriert ist und einer Arbeitskraft ein Strichcode oder ein Magnetstreifen zugewiesen wurde, muss die Arbeitskraft seine Karte nur Karte durch ein Lesegerät ziehen, wenn die POS-Anmeldeseite angezeigt wird. Wenn auch ein Kennwort erforderlich ist, damit die Anmeldung durchgeführt werden kann, wird die Arbeitskraft aufgefordert, das Kennwort einzugeben.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

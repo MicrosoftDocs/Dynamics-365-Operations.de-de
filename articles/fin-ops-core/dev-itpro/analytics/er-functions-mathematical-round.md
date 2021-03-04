@@ -75,3 +75,6 @@ Wenn der Wert des Arguments `decimals` kleiner als 0 (null) ist, wir die angegeb
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Mathematische Funktionen](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

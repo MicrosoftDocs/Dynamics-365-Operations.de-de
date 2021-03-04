@@ -121,3 +121,6 @@ Klicken Sie auf **Einstellungen**, um die Informationen anzupassen, die in der F
 |     Stückliste     | Verwenden Sie die Kontrollkästchen, um die Kriterien auszuwählen, die in der Strukturansicht angezeigt werden sollen. Im Formeldesigner werden die ausgewählten Kriterien am unteren Rand der beiden Registerkarten angezeigt. |
 |    Arbeitsplan    |                                           Verwenden Sie die Kontrollkästchen, um die Kriterien auszuwählen, die für die Arbeitspläne angezeigt werden sollen.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

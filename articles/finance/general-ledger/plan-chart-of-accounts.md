@@ -60,3 +60,6 @@ Weitere Informationen finden Sie in folgenden Themen:
 
 - [Finanzdimensionen](financial-dimensions.md)
 - [Strukturen für erweiterte Regeln erstellen und zuweisen](tasks/create-assign-advanced-rule-structures.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

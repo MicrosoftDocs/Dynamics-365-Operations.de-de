@@ -40,3 +40,6 @@ Diese Verfahren zeigt, wie gebuchte Journaleinträge journalisiert werden. Für 
 9. Klicken Sie zum Schließen der Filterseite auf **OK**.
 10. Klicken Sie zum Starten des Journalisierungsprozesses auf **OK**. Ein Bericht wird generiert, nachdem der Vorgang abgeschlossen ist.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

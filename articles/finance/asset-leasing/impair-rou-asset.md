@@ -102,3 +102,6 @@ Die folgenden Tabellen zeigen die Werte, die auf den Registerkarten **Allgemeine
 7. Um den Nettoeffekt der Wertminderung anzuzeigen, gehen Sie zu den Tabellen für Verbindlichkeiten und Anlagentransaktionen. Beachten Sie, dass der Wertminderungsaufwand das Nutzungsrecht am Leasingobjekt verringert hat, der Buchwert der Leasingverbindlichkeit sich jedoch nicht geändert hat.
 
 Die Wertminderung hat einen weiteren Effekt, den Sie berücksichtigen sollten. Da der Betrag des Nutzungsrechts am Leasingobjekt jetzt viel geringer ist als die Leasingverbindlichkeit, muss der Betrag anders als zuvor abgeschrieben werden. Insbesondere wird die Anlage jetzt während der verbleibenden 84 Monate des Mietvertrags ab dem Transaktionsdatum linear abgeschrieben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

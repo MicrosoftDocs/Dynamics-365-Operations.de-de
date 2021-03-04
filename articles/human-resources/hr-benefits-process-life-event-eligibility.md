@@ -48,3 +48,6 @@ Dieser Artikel beschreibt, wie Sie den Prozess für Lebensereignisberechtigung a
    4. Wählen Sie **OK**. Der Prozess wird mit den von Ihnen festgelegten Parametern ausgeführt.
 
 4. Wählen Sie **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

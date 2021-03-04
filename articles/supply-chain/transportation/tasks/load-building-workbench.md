@@ -67,3 +67,6 @@ Sie können die Ladungserstellungsstrategie nun einer Ladungserstellungsvorlage 
 1. Überprüfen Sie die vorgeschlagenen Ladungen und die vorgeschlagenen Zeilen.
 1. Wählen Sie im Aktivitätsbereich **Ladungen erstellen**, um Ladungen zu erstellen, die auf den Zeilen des Quelldokuments im Inforegister **Vorgeschlagene Ladungszeilen** basieren.
 1. Schließen Sie die Seite **Ladungserstellungsworkbench**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Nachdem Sie die Lebenszyklusstatus erstellt haben, die für die Wartungsanfragen
 Die folgende Abbildung zeigt ein Beispiel der Seite **Wartungsanfrage-Lebenszyklusmodelle**.
 
 ![Seite „Wartungsanfrage-Lebenszyklusmodelle“](media/06-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

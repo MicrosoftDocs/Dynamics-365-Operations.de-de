@@ -150,3 +150,6 @@ Um das **isIntegrationUser**-Attribut zu aktivieren, führen Sie die folgenden S
     ![Ändern des Werts des Integrationsbenutzermodus-Felds](media/sales-map-user-mode-yes.png)
 
 Ihre Aufträge sind jetzt zugeordnet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

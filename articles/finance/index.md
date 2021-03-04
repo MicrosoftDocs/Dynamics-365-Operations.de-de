@@ -73,3 +73,6 @@ Bestimmungen zu Land/Region wirken sich auf die Steuereinstellungen und andere B
 
 Die Supply-Chain-Management-Funktionalität deckt Teile des Procure-to-Pay-Prozesses ab, der das Anfordern, Bestellen, Empfangen, Fakturieren und Bezahlen der Waren und Dienstleistungen umfasst, die Ihre Organisation kauft. Auf der [Supply Chain Management-Startseite](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) finden Sie Informationen über die Möglichkeiten zur Verwaltung von Einkäufen, der Lagerhaltung und der Fertigung. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

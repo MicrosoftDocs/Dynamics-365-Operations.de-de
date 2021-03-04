@@ -95,3 +95,6 @@ Werden alle Positionen in einem Serviceauftrag als **Gebucht** markiert, lautet 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

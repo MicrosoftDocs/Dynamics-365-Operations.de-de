@@ -46,3 +46,6 @@ In diesem Thema werden die Schritte beschrieben, um den Status eines Dokuments a
     - Durch die Schaltfläche **Neu zuweisen** wird ein Dialogfeld geöffnet, in dem Sie eine Arbeitsaufgabe einem anderen Benutzer neu zuordnen können.  
     - Überprüfen Sie, ob der Bereich **Verfolgungsdetails** erweitert ist. In diesem Abschnitt können Sie die Workflowhistorie des ausgewählten Dokuments angezeigt.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ In der folgenden Tabelle werden die Felder beschrieben, die im Bericht zur Verf�
 |           Abgänge: Verschrottungswert            |                                                                                               Der Verschrottungswert für das Anlagenbuch mit einem Abgang – Verschrottungstransaktion.                                                                                               |
 |           Abgänge: Gewinn/Verlust            |                                                                                 Der Gewinn- oder Verlustwert, der als Teil der Abgangstransaktion für das Anlagenbuch berechnet wird.                                                                                 |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

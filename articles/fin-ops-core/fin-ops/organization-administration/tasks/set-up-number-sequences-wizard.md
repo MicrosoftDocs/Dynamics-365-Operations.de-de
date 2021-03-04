@@ -38,3 +38,6 @@ Nummernkreise dienen zum Generieren von lesbaren, eindeutigen Kennungen für Mas
 4. Wählen Sie **Weiter**.
 5. Wählen Sie **Fertig stellen** aus.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

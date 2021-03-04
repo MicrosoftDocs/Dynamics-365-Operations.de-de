@@ -51,3 +51,6 @@ Dieses Verfahren zeigt, wie Kostenobjekte erstellt werden, indem die Kostenstell
 ## <a name="view-the-imported-cost-centers"></a>Importierte Kostenstellen anzeigen
 1. Klicken Sie auf "Dimensionsmitglieder anzeigen".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -137,3 +137,6 @@ Wenn Sie nun die Basis-URL des Kanals verwenden und zur URL der kanalübergreife
 [Dokumentstatus und -Lebenszyklus](document-states-overview.md)
 
 [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

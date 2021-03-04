@@ -40,3 +40,6 @@ Bevor Sie Produkte für den Verkauf in Ihren Commerce-Kanälen anbieten können,
 4. **Fügen Sie Produkte Sortimenten hinzu.** Ein Sortiment stellt eine Sammlung von Produkten dar, die Sie in Ihren Kanälen anbieten. Sie können ein oder mehrere Sortimente definieren, und jedes Produkt kann einem oder mehreren Sortimenten zugewiesen werden. Um Produkte den Kanälen zuzuweisen, weisen Sie die Sortimente diesen Kanälen zu. Wenn Sie ein Sortiment erstellen, können Sie Produkte hinzufügen, die noch nicht für eine juristische Person freigegeben wurden. Sie müssen die Produkte jedoch für eine juristische Person freigeben, bevor diese Produkte in den Kanälen verfügbar gemacht werden können.
 5. **Hinzufügen von Produkten Navigationshierarchien hinzu.** Bevor Produkte online oder in Verkaufsstellen durchsucht werden können, müssen sie in einer Commerce-Navigationshierarchie kategorisiert werden.
 6. **Produkte zum Katalog hinzufügen** Obwohl dieser Schritt für Verkaufsstellen optional ist, erfordern Onlineshops, dass Produkte in mindestens einem Katalog enthalten sind.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

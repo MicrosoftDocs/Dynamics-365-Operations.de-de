@@ -102,3 +102,6 @@ Wenn Sie Probleme haben, eine Stelle in Broadbean zu veröffentlichen, versuchen
 [Erstellen, Genehmigen und Buchen von Aufträgen in Attract](./creating-jobs-attract.md)
 
 [Broadbean Integration in Microsoft Dynamics 365 Talent - Attract aktivieren](./attract-admin-job-board-settings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -102,3 +102,5 @@ Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung un
 - [Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)
 - [Entwicklerhandbuch](hr-developer-overview.md)
 - [Benutzerhandbuch](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

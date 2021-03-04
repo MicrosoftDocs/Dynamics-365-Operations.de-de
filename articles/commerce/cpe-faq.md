@@ -71,3 +71,6 @@ Die Verlängerung der Frist ist eine Ausnahme von der Norm und wird von Fall zu 
 [BOPIS in einer Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](cpe-bopis.md)
 
 [Optionale Funktionen für eine Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](cpe-optional-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

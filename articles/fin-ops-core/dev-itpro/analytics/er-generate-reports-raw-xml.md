@@ -37,3 +37,6 @@ Mit dem neuen Formatelement **RAW XML** können Sie Elektronische Berichterstell
 > Beachten Sie, dass das Framework nicht kontrolliert, ob der XML-Inhalt, der mit Hilfe des Formatelements **RAW XML** in das generierte Dokument eingefügt wird, korrekt ist.
 
 Um mehr über diese Funktion zu erfahren, spielen Sie die Aufgabenleitfäden **ER XML-Rohdaten verwenden, um XML-Berichte zu generieren (Teil 1: Entwerfen eines Datenmodells)** und **ER XML-Rohdaten verwenden, um XML-Berichte zu generieren (Teil 2: Bericht entwerfen und ausführen)** ab, die Teil des **7.5.4.3 Acquire/Develop IT-Service/Lösungskomponenten (10677)** Geschäftsprozesses sind und im [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) heruntergeladen werden können. Diese Aufgabenleitfäden führen Sie durch den Prozess der Konfiguration eines ER-Formats zum Einfügen von XML-Rohdaten in generierte Dateien.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

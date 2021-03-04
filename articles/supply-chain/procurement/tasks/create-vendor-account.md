@@ -59,3 +59,6 @@ Im folgenden Verfahren, wie ein Kreditorenkonto erstellt und eine Adresse und Ko
 7. Schließen Sie die Seite.
 8. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

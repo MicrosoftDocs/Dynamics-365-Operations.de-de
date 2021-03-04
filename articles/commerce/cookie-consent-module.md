@@ -62,3 +62,6 @@ Weitere Informationen zu Header-Fragmenten und Modulen finden Sie unter [Header-
 [Kopfzeilenmodul](author-header-module.md) 
 
 [Cookie-Compliance](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

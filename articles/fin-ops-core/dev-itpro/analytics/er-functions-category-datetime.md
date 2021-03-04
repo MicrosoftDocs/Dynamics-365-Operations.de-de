@@ -56,3 +56,6 @@ Datums- und Zeitfunktionen für die elektronische Berichterstellung (EB) können
 [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)
 
 [Formelsprache in der elektronischen Berichterstellung](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

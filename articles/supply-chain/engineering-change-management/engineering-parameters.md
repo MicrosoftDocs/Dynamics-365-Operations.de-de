@@ -57,3 +57,6 @@ Die folgende Tabelle beschreibt die Felder, die auf der Registerkarte **Verwaltu
 | Schweregradregel | Wählen Sie aus, wie der Schweregrad einer Änderungsanforderung festgelegt werden soll. Wählen Sie *Manuell*, wenn der Benutzer einen Wert in das Feld **Schweregrad** eingeben soll. Wählen Sie *Berechnen*, wenn das System den Wert des Felds **Schweregrad** berechnen soll, wenn Sie **Schweregrad berechnen** im Aktivitätsbereich des Änderungsauftrags wählen. In diesem Fall verwendet das System die Schweregradregeln, die auf der Seite **Schweregrad-Regelsatz** festgelegt sind. Wählen Sie *Automatisch berechnen*, damit der Wert des Feldes **Schweregrad** automatisch berechnet und entsprechend der festgelegten Schweregrad-Regeln ausgefüllt wird. |
 | Betroffene Produkte erneut freigeben | Dieses Feld ist anwendbar, wenn Sie Produkte über einen Änderungsauftrag neu freigeben. Im Dialogfeld **Wiederfreigaben** können Sie wählen, ob alle Produkte oder nur die betroffenen Produkte vorgeschlagen werden sollen. |
 | Freizugebende Stücklistenebenen | Die Tiefe der Stücklistenebene, die freigegeben werden soll. Wenn die Stückliste mehr Ebenen hat (d.h. tiefer ist) als der hier angegebene Wert, werden nur die Ebenen bis zum angegebenen Wert freigegeben. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

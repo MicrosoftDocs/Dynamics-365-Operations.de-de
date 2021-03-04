@@ -196,3 +196,6 @@ Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertm√§√
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

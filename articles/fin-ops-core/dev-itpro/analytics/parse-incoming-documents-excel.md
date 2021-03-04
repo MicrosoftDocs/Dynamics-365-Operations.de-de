@@ -46,3 +46,6 @@ Wenn Sie den Aufgabenleitfaden [EB – Erstellen der erforderlichen Konfigurati
 | Inhaltsbeschreibung    | Datei                                                            |
 |------------------------|-----------------------------------------------------------------|
 | ER Modellkonfiguration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

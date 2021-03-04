@@ -98,3 +98,6 @@ In diesem Thema wird erläutert, wie Sie aktualisierte Versionen von EB-Konfigur
 
 - [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 - [Laden Sie ER-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes herunter](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

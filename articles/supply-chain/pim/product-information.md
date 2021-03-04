@@ -96,3 +96,6 @@ Der Arbeitsbereich enthält eine Zusammenfassung von Kacheln und zweier Listen. 
 ### <a name="manually-creating-a-new-released-product"></a>Ein neues freigegebenes Produkt manuell erstellen
 
 Sie können ein freigegebenes Produkt manuell in einer einzigen Ausführung erstellen, je nach Geschäftsprozessen der Organisation und Regeln darüber, ob diese Funktion genutzt werden sollte. Diese Funktion erstellt ein neues Produkt und gibt es automatisch für die aktuelle juristische Person frei. Zum Erstellen eines neuen Produkts klicken Sie auf **Freigegebene Produkte** im Arbeitsbereich **Freigegebene Produktverwaltung** oder auf der Listenseite **Freigegebenes Produkt**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

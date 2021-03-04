@@ -65,3 +65,6 @@ Die Spracheinstellung des POS-Benutzers wird unter **Alle Arbeitskräfte** auf d
 | **Unternehmen** | Standard                    | Standard                                                       |
 | **Shop**   | Überschreibt Unternehmen          | Überschreibt Unternehmen                                             |
 | **Benutzer**    | Überschreibt Shop oder Unternehmen | Nie                                                         |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Um einen Menüpunkt für mobile Geräte einzurichten, um eine Übersicht über d
     - Verwenden Sie die restlichen **Anzeigefeld**-Felder, um je nach Bedarf bis zu sieben zusätzliche Anzeigefelder hinzuzufügen. Wählen Sie in jedem **Anzeigefeld**-Feld den Namen eines Arbeitszeilenfelds aus. In jeder Position wird dann ein Wert für dieses Feld angezeigt. Die Werte werden in der Reihenfolge angezeigt, die Sie hier auswählen. Sie können einige der **Anzeigefeld**-Felder leer lassen, wenn Sie nicht alle sieben Werte benötigen.
 
 1. Wählen Sie im Aktionsbereich **Speichern** aus und schließen Sie die Seite **Feldliste**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

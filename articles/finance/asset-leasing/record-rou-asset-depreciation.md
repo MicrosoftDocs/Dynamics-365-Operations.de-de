@@ -86,3 +86,6 @@ Gemäß dem International Financial Reporting Standard 16 (IFRS 16) und ASC 842 
 | 1                                    | 22.889,87 ÷ 24 = 953,74                 |
 | 2                                    | 22.889,87 ÷ 24 = 953,74                 |
 | 3                                    | 22.889,87 ÷ 24 = 953,74                 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

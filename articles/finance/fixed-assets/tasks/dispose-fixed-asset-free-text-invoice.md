@@ -41,3 +41,6 @@ Dieses Thema erklärt, wie eine Anlage über Freitextrechnung veräußert wird.
 10. Geben Sie im Feld **Anlage** einen Wert ein oder wählen Sie einen Wert aus.
 11. Wählen Sie **Buchen** aus. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ Die Schaltfläche **Umsatzerlöspreiszuteilung** ist weiterhin verfügbar, sodas
 Der erwartete Umsatzerkennungszeitplan wird entfernt und durch den endgültigen Umsatzerkennungszeitplan ersetzt. Die Umsatzerlöszeitplandetails werden für jede Auftragsposition verwaltet und verwendet, um den verzögerten Umsatzerlös für den tatsächlichen Umsatzerlös freizugeben, während die vertraglichen Verpflichtungen eingehalten werden.
 
 [![Endgültiger Umsatzerkennungszeitplan](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

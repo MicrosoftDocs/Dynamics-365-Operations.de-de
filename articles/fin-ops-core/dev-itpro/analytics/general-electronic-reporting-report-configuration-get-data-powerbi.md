@@ -196,3 +196,6 @@ Einrichten der Integration in Power BI. Weitere Informationen finden Sie unter [
 [Ziele für elektronische Berichterstellung (EB)](electronic-reporting-destinations.md)
 
 [Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -136,3 +136,6 @@ Um ein Kauffeldmodul einer neuen Seite hinzuzufügen und die erforderlichen Eige
 [Lagerverfügbarkeit für Retail Channels berechnen](calculated-inventory-retail-channels.md)
 
 [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

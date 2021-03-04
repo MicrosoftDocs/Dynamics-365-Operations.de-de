@@ -60,3 +60,6 @@ Bei der Buchung eines Auftrags wird der Einstandspreis mit EUR 10,00 gebucht, da
 
 > [!NOTE]
 > Wenn Sie zum Vergleich für diese Position das Kontrollkästchen **Physischen Wert** einbeziehen aktivieren, beträgt der gebuchte Kostenbetrag bei der Buchung eines Kundenauftrags USD 12,00.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

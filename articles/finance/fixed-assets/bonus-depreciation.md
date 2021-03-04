@@ -65,3 +65,6 @@ Die vorzeitige Abschreibung wird als Prozentsatz oder als fester Wert eingegeben
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

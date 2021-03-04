@@ -99,3 +99,6 @@ Aktuell wird das Excel-Dokument als Vorlage verwendet, um die Ausgabe im OPENXML
 16. Klicken Sie auf **OK**.
 17. Klicken Sie auf **OK**. Analysieren Sie das generierte Ergebnis. Beachten Sie, dass die erstellte Ausgabe im Word-Format dargestellt wird und die Details der verarbeiteten Zahlungen enthält.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Um Unterstützung für die eigenständige Onboard-App zu erhalten, verwenden Sie
 | Melden Sie ein Problem. | Wählen Sie die Schaltfläche **Hilfe** (**?**) rechts oben auf der Seite aus, und wählen Sie dann **Ein Problem melden** aus. Geben Sie die Beschreibung eines Problem ein, und fügen Sie eine E-Mail-Adresse hinzu, wenn Sie das gemeldete Problem nachverfolgen möchten. |
 | Erhalten Sie Hilfe bei Fragen zu Talentlizenzierung. | Kontaktieren Sie Ihren Partner oder Ihren Microsoft Vertreter. |
 | Fordern Sie neue Funktionen und Funktionalitäten in Onboard an. | Wählen Sie die Schaltfläche **Hilfe** (**?**) aus, und wählen Sie dann **Ideen** aus. Sie können auch [Dynamics 365 Talent: Onboard: Ideen](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard) besuchen, nach vorhandenen Ideen suchen oder dafür abstimmen oder neue Ideen hinzuzufügen. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

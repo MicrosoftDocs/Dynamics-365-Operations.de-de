@@ -71,3 +71,6 @@ Diese Prozedur zeigt an, wie Sie Produktionsaufträge für die Produktion starte
 7. Klicken Sie auf "Buchen".
 8. Klicken Sie auf "OK".
     * In der Arbeitsplanlisten-Erfassung wird die Zeit, die für die Dauer der einzelnen Arbeitsgänge aufgewendet wird, erfasst. Gut- und Ausschussmengen können auch gemeldet werden.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

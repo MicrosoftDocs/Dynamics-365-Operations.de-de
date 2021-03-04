@@ -50,3 +50,6 @@ Der Nachkalkulationsbogen wird als Teil der Seite **Artikelkosten berechnen** an
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

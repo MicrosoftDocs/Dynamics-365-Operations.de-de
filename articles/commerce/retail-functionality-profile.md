@@ -64,3 +64,6 @@ Die folgende Abbildung zeigt ein Beispiel für ein Funktionsprofil.
 [Bildschirmlayout – Übersicht](pos-screen-layouts.md)       
 
 [Eine Retail Hardware Station konfigurieren und installieren](retail-hardware-station-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

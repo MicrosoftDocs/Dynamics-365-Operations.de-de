@@ -35,3 +35,6 @@ Diese Prozedur zeigt, wie ein neuer Produktlebenszyklus-Status erstellt wird. Ei
 3. Geben Sie im Feld „Status” einen Wert ein.
 4. Geben Sie im Feld "Beschreibung" einen Wert ein.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

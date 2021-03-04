@@ -209,3 +209,6 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 § Wenn der POS offline ist, können nur Buchungen in der aktuellen offline Datenbank für Rückgabe erneut aufgerufen werden.
 
 \*\* Wenn der POS offline ist, werden nur Buchungen in der aktuellen offline Kanal-Datenbank in der Erfassung angezeigt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -140,3 +140,6 @@ Führen Sie die Prozedur "Einrichten der Bankfazilitäten und Buchungsprofile" u
 3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
     * Überprüfen Sie, ob Lieferstatus = empfangene Zahlung und Saldobetrag = 0.00.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

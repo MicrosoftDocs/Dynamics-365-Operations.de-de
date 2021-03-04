@@ -88,3 +88,6 @@ Für dieses Beispiel wird eine geplante Einkaufsbestellung in der USMF-Firma ers
 Die folgende Abbildung zeigt, wie dieses Beispiel auf der Seite **Multilevel Bedarfsverursacher** für den geplanten Produktionsauftrag erscheinen könnte.
 
 ![Intercompany-Beispiel, an dem drei Firmen beteiligt sind](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

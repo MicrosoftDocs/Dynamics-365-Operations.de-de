@@ -51,3 +51,6 @@ Erstellen Sie eine Momentaufnahme, um die Bargeldposition zu speichern und zu be
 
 #### <a name="privacy-notice"></a>Datenschutzhinweis
 Vorschauen (1) wenden möglicherweise weniger Datenschutz- und Sicherheitsmaßnahmen an als der Dynamics 365 Finance and Operations-Dienst, (2) sind nicht in der Service Level Agreement (SLA) für diesen Dienst enthalten, (3) sollten nicht zur Verarbeitung personenbezogener Daten oder anderer Daten verwendet werden, die gesetzlichen oder behördlichen Compliance-Anforderungen unterliegen, und (4) hat begrenzten Support.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

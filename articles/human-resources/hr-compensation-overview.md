@@ -132,3 +132,6 @@ Nachdem Sie ein Prozessereignis ausgeführt haben, können Sie Anpassungen an Lo
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

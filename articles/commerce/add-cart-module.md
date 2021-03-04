@@ -117,3 +117,6 @@ Um ein Einkaufswagenmodul einer neuen Seite hinzuzufügen und die erforderlichen
 [Lagerverfügbarkeit für Retail Channels berechnen](calculated-inventory-retail-channels.md)
 
 [Ein Onlinefunktionsprofil erstellen](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

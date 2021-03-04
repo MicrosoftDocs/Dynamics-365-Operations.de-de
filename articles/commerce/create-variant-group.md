@@ -73,3 +73,6 @@ Die folgende Abbildung zeigt ein Beispiel für die Größengruppe für „lässi
 [Einzelhandelsprodukte einrichten](set-up-retail-products.md)
 
 [Produktdimensionen](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Nachdem die Bestellung angezeigt wurde, die Ihnen zugewiesen wurde und Sie die W
 5. Wählen Sie die entsprechende Aktivität aus.
 6. Auf der Seite **Aufgabe beenden** geben Sie einen Kommentar ein. Beachten Sie, dass, wenn Sie die Aktivität **Delegieren** auswählen, müssen Sie einen Benutzer auswählen, an die Aufgabe delegiert werden soll.
 7. Wählen Sie **Fertig**. Nachdem Sie den Arbeitsbereich aktualisiert haben, ist die Bestellung nicht mehr in der Liste. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

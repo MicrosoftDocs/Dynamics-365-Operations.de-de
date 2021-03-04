@@ -66,3 +66,6 @@ Eine Rechnung in Höhe von 1.000 US-Dollar mit den Skontobedingungen von 20D2% w
 > [!NOTE]
 > Wenn die Option "Skonti für Teilzahlungen berechnen" auf der Debitorenparameter- oder Kreditorenparameterseite aktiviert ist, wird der Wechselkurs, der am Tag der jeweiligen Teilzahlung gültig ist, verwendet. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

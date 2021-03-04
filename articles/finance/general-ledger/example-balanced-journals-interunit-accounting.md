@@ -55,3 +55,6 @@ Die folgenden Buchhaltungseinträge werden daher automatisch erstellt, damit die
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

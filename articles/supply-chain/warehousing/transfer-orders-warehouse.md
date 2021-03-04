@@ -53,3 +53,6 @@ Außerdem müssen Sie die Transportvorlaufzeit zwischen den Lagern auf der Seite
 2. Wählen Sie im Feld **Empfangsstelle** die Option **Lager**.
 3. Wählen Sie das **Versandlager**, das **Eingangslager** und die **Transporttage** aus. 
 4. (Optional) Sie können die Transportzeit je nach Lieferart auch unter der Registerkarte **Transporttage pro Lieferart** einstellen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Im Formular **Dispositionssteuerungsgruppen** können Sie die Aktivitätsmeldung
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

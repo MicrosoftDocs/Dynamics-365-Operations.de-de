@@ -46,3 +46,6 @@ Ein konsolidierter Chargenauftrag kann eine beliebige Kombination der folgenden 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

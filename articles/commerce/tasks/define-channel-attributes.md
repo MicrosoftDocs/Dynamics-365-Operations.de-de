@@ -72,3 +72,6 @@ Erweitern Sie den Kanal, indem Sie Kanal- und Produktattribute hinzufügen. Sie 
 33. Klicken Sie auf "OK".
 34. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

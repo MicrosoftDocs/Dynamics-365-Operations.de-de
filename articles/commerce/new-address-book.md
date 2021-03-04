@@ -57,3 +57,6 @@ Das folgende Bild zeigt die Erstellung eines Mitarbeiteradressbuchs für ein Ein
 [Bildschirmlayout – Übersicht](pos-screen-layouts.md)       
 
 [Retail Hardware Station konfigurieren und installieren](retail-hardware-station-configuration-installation.md)  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

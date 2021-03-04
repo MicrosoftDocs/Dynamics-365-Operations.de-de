@@ -58,3 +58,6 @@ Die Art, wie Sie die Hierarchie der funktionalen Standorte erstellen, hängt von
 Die folgende Abbildung zeigt ein Beispiel für funktionale Standorte, die auf Kunden basieren.
 
 ![Diagramm, das die funktionalen Standorte auf Grundlage der Kunden anzeigt](media/04-overview-image.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

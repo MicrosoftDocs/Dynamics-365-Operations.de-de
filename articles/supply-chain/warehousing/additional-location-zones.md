@@ -58,3 +58,6 @@ Bevor Sie die Funktion *Zusätzliche Lagerplatzzone* verwenden können, muss sie
 7. Wählen Sie **Erstellen** aus.
 8. Sie erhalten Nachrichten, dass neue Lagerplätze hinzugefügt wurden. Wählen Sie die Schaltfläche **Nachrichten anzeigen** aus, um die Nachrichten anzuzeigen.
 9. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerort \> Lagerplätze**. Die neuen Lagerplätze werden in der Liste angezeigt und alle Zonenfelder sind verfügbar (d. h. das vorhandene Zonenfeld und die neuen zusätzlichen Zonenfelder).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

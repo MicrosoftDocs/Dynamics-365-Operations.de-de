@@ -80,3 +80,6 @@ Verwenden Sie dieses Thema, um Prozesse für das Nichtkonformitätsmanagement zu
 4. Geben Sie im Feld **Beschreibung** einen Wert ein.
 5. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

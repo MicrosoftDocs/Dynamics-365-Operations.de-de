@@ -62,3 +62,6 @@ Arbeitskräfte können bei der Fertigungssteuerung verschiedene Arten von Erfass
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

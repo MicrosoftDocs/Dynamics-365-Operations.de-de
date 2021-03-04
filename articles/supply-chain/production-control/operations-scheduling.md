@@ -84,3 +84,6 @@ Wenn Sie mit begrenztem Material arbeiten, h√§ngt die Planung auch von der Verf√
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

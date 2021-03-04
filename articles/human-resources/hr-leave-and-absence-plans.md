@@ -383,3 +383,6 @@ Geplanter Saldo (30) = Antizipierter Betrag (10 × 1) + Aktueller Saldo (40) –
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
 - [Urlaubs- und Abwesenheitstypen konfigurieren](hr-leave-and-absence-types.md)
 - [Urlaubs- und Abwesenheitspläne antizipieren](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

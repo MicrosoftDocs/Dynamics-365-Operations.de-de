@@ -86,3 +86,6 @@ In diesem Thema wird erläutert, wie Sie eine einfache Standortanweisung einrich
 4. Geben Sie im Feld **Kriterien** einen Wert ein.
 5. Wählen Sie **OK**. Sie können fortfahren, um richtungweisende Positionen und richtungweisende Aktivitäten hinzuzufügen, bis Sie alle möglichen Szenarien am Lagerort abgedeckt haben.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

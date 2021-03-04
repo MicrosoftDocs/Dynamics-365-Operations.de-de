@@ -37,3 +37,6 @@ Bei der Einzelvorgangsprozedur zum Abrechnen und Buchen der Mehrwertsteuer werde
 5. Geben Sie im Feld **Transaktionsdatum** ein Datum ein.
 6. Klicken Sie auf **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

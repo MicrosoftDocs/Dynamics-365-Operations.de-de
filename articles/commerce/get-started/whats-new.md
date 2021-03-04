@@ -45,3 +45,6 @@ Diese Seite weist auf Ressourcen hin, die Ihnen dabei helfen, alles über die ne
 | Dynamics 365 for Retail - 7.3.2.5 | 7.3.21971.64091 | 2018. Juni | [KB 4342134 Microsoft Dynamics 365 for Retail: Version 7.3.2.5 - BugFix-Paket 1\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&bugId=225730&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
 
 \* Der Link verweist auf einen Knowledge Base (KB)-Artikel. Sie müssen sich bei Lifecycle Services (LCS) anmelden, um den KB-Artikel anzuzeigen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

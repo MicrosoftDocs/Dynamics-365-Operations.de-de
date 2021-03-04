@@ -94,3 +94,6 @@ Bevor Sie die Prozeduren in diesem Thema abschließen können, müssen die folge
 [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
 
 [Ausführung von XML-Elementen in ER-Formaten verzögern](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

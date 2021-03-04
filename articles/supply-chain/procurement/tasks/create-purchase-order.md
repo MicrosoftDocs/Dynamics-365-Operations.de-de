@@ -74,3 +74,6 @@ Dieses Thema zeigt Ihnen, wie Sie eine Bestellung manuell erstellen. Es ist aber
 
 2. Wählen Sie **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

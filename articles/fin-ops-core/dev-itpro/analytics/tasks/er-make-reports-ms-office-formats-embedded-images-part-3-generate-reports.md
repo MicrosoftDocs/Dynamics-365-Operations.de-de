@@ -119,3 +119,6 @@ In diesem Beispiel erstellen Sie eine ER-Konfigurationen für das Beispieluntern
 23. Klicken Sie auf "OK".
     * Prüfen Sie das generierte Ergebnis. Die Ausgabe wurde als ein Word-Dokument mit eingebetteten Bildern generiert, die das Unternehmenslogo, die Signatur einer autorisierten Person und den markierten Text des Wasserzeichens darstellen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

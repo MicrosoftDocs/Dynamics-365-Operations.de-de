@@ -49,3 +49,6 @@ Ziel dieser Prozedur ist es, die verwendete Kanban-Regel für einen angegebenen 
 7. Klicken Sie auf Fertig stellen.
     * Jetzt verwendet der Kanban-Einzelvorgang eine andere Kanban-Regel. Dies kann hilfreich sein, um Arbeitsgruppen auf eine Ebene zu laden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

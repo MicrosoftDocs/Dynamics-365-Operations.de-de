@@ -1233,3 +1233,6 @@ Beachten Sie, dass die Fußzeile des generierten Berichts nicht den Namen des EB
 - [IF-Funktion](er-functions-logical-if.md)
 - [ORDERBY-Funktion](er-functions-list-orderby.md)
 - [SESSIONNOW-Funktion](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

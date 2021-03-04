@@ -68,3 +68,6 @@ In diesem Thema wird beschrieben, wie Sie Hilfe bei Finance and Operations Apps 
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

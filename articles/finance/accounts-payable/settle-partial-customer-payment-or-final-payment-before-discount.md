@@ -149,3 +149,6 @@ Arnie bucht diese Erfassung und prüft die Debitorentransaktionen auf der Seite 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

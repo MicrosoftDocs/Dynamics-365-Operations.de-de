@@ -344,3 +344,6 @@ Die im Übermittlungsprotokoll angezeigten Ergebnisse hängen davon ab, wie die 
 - [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Mexiko](e-invoicing-mex-get-started.md)
 - [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Italien](e-invoicing-ita-get-started.md)
 - [Einrichten des Add-Ons für die elektronische Rechnungsstellung](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -239,3 +239,6 @@ Eine Garantie ist eine Dienstleistung, die für ein bestimmtes, einzigartiges Pr
 [Sortimente einrichten](set-up-assortments.md)
 
 [Nummernkreise – Übersicht](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

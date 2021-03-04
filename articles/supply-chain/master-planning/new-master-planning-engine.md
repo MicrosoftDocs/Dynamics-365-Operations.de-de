@@ -116,3 +116,6 @@ Ich verwende Version 10.0.16 oder höher und erhalte die folgende Fehlermeldung,
 > Bitte füllen Sie dazu den folgenden Fragebogen aus und beantragen Sie ggf. eine Ausnahme von der Migration zur Planungsoptimierung.
 
 **Antwort:** Nein, die Produktprogrammplanung ist nicht blockiert. Ihre Produktprogrammplanung wurde erfolgreich abgeschlossen, und Sie können das Ergebnis wie gewohnt verwenden. Um jedoch zu vermeiden, dass Sie diese Fehlermeldung bei zukünftigen Läufen der Produktprogrammplanung erhalten, müssen Sie entweder sofort zur Planungsoptimierung migrieren oder eine Ausnahme über den Link in der Fehlermeldung anfordern.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

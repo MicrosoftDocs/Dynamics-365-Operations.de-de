@@ -58,3 +58,6 @@ Dieses Thema erklärt, wie eine Produktnummernbezeichnung für vordefinierte Pro
 5. Geben Sie im Feld **Produktvariantennummerbezeichnung** einen Wert ein oder wählen Sie einen Wert aus.
 6. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

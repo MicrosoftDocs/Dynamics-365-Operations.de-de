@@ -58,3 +58,6 @@ Eine Ressourcengruppe ist ein Satz betriebliche Ressourcen, die üblicherweise d
 6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

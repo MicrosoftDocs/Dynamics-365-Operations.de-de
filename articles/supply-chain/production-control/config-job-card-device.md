@@ -95,3 +95,6 @@ Wie bereits erwähnt, wenn Sie eine Gerätekonfiguration mit der Option **Einzel
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Vom Einzelvorgangskartengerät als erledigt melden](report-finished-job-device.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

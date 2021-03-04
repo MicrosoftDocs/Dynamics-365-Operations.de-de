@@ -81,3 +81,6 @@ In diesem Thema wird beschrieben, wie Containerisierung von Ladungen in der Lage
 11. Geben Sie im Feld **Feldauswahl** einen Wert ein, oder wählen Sie einen Wert aus.
 12. Wählen Sie **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

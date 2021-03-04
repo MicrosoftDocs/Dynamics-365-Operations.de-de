@@ -47,3 +47,6 @@ Um die automatische Abstimmung zu verwenden, müssen Sie den Zeitplan für die A
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Dieses Verfahren zeigt Ihnen an, wie Artikel mithilfe der Wareneingangserfassung
 2. Klicken Sie auf "Produktzugang".
 3. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

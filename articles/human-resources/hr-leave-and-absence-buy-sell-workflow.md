@@ -81,3 +81,6 @@ Diese Beispiele zeigen, wie Sie mithilfe dieser Datenelemente verschiedene Typen
 [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)<br>
 [Kauf- und Verkaufsurlaubsrichtlinien verwalten](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

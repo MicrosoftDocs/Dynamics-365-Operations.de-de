@@ -65,3 +65,6 @@ Diese Prozedur fokussiert sich auf das Erstellen einer Formel, die die gleichen 
 5. Klicken Sie auf Auswählen.
 6. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

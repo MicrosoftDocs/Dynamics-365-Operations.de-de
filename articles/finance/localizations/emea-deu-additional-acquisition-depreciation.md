@@ -47,3 +47,6 @@ Im Jahre 2015 erwarb Ihre Organisation eine Anlage für 60.000. Ihre Organisatio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

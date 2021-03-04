@@ -105,3 +105,6 @@ Die Möglichkeit, eine Erfassung in einem Workflow mit dem Status „Nicht Wiede
 
 ## <a name="delete-journal-lines"></a>Erfassungspositionen löschen
 Die Möglichkeit, schnell alle Erfassungspositionen zu löschen, wird in einer Erfassung unter **Funktionen** > **Erfassungspositionen löschen** aktiviert. Um diese Funktion zu aktivieren, wählen Sie in der **Funktionsverwaltung** die Option **Erfassungsleistungsoptimierungen löschen** aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

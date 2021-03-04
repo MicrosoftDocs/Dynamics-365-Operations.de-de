@@ -289,3 +289,6 @@ Wenn die konfigurierte Datenquelle ausgeführt wird, während die EB-Ausführung
 [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)
 
 [Ausführung des EB-Formats nachverfolgen, um Leistungsprobleme zu behandeln](trace-execution-er-troubleshoot-perf.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

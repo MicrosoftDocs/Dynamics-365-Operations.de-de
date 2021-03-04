@@ -79,3 +79,6 @@ Im folgenden Verfahren sehen Sie, wie ein Treueprogramm mit zwei Treuestufen ein
 39. Schließen Sie die Seite.
 40. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

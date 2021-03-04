@@ -397,3 +397,6 @@ In diesem Szenario wird Palette 3 angenommen.
 1. Wählen Sie die Menütaste (**≡**) oben auf der Seite und wählen Sie dann im Menü die Option **Abbrechen**, um zum Menü zurückzukehren.
 
 Sie können jetzt die mobile App schließen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Bedenken Sie ausserdem, dass der maximale Versatz des physischen Lagerwerts durc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Gebuchte Erfassungsbelege können als Belegvorlagen gespeichert und in einem neu
 29. Geben Sie im Feld **Betrag** den Betrag ein, der auf den Beleg angewendet wird. Das Feld **Betrag** wird nur angezeigt, wenn die Belegvorlage vom Typ „Prozent“ ist.  
 30. Klicken Sie auf **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Sie können Strichcodes manuell oder automatisch erstellen. Um Strichcodes zu er
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Strichcodemasken einrichten](set-up-bar-code-masks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

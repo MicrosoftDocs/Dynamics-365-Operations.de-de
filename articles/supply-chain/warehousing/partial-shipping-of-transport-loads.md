@@ -66,3 +66,6 @@ Mit dieser Einstellung können Sie bestätigen, dass eine Transportladung, die e
 
 1. Wählen Sie **Lagerortverwaltung** \> **Ladungen** \> **Transportladungen** aus.
 2. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Liefern und empfangen** in der Gruppe **Bestätigen** die Option **Transport** aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

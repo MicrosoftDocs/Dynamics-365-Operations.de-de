@@ -40,3 +40,6 @@ Wenn Sie versuchen, eine Verkaufsmenge (**SalesQty**-Feld) für einen Artikel vo
 
 Sie können keine Verkaufsmenge für Produkte festlegen, bei denen es sich um Serviceartikel handelt. Wenn Sie beispielsweise einen Service zum Installieren eines Artikels anbieten, ist es nicht sinnvoll, eine Menge zu erfassen, da kein physischer Artikel vorhanden ist. Es gibt nur einen Service.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

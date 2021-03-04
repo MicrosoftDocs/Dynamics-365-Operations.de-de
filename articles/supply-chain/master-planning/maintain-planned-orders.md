@@ -68,3 +68,6 @@ Wenn Sie viele Aufträge gleichzeitig umwandeln möchten, kann das Parallelisier
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

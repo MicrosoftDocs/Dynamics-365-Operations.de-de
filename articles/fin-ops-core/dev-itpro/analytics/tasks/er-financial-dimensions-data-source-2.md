@@ -147,3 +147,6 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 4. Klicken Sie auf "Abgeschlossen".
 5. Klicken Sie auf "OK".
 ![ER-Modellzuordnungsdesigner – Seite](../media/er-financial-dimensions-guides-model-mapping5.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

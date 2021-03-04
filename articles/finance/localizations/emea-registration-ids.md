@@ -112,3 +112,6 @@ Weitere Informationen zum Zuordnen von Erfaassungskennungen einschließlich erfo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

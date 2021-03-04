@@ -42,3 +42,6 @@ In diesem Thema wird erläutert, wie Sie unter die Hauptkontokategorien einricht
 3. Wählen oder deaktivieren Sie die Option **Verknüpft**, um die Hauptkonten auszuwählen.
 4. Wählen Sie **OK**.
 5. Wählen Sie **Ja** aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

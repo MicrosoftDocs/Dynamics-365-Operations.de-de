@@ -69,3 +69,6 @@ Das Kundenportal wird als Power Apps Portal Vorlage bereitgestellt. Es hängt vo
 ![Kundenportalabhängigkeiten](media/customer-portal-elements.png "Kundenportalabhängigkeiten")
 
 Das Kundenportal dient als Ausgangspunkt für Organisationen, die Power Apps Portal zum Erstellen einer nach außen gerichteten Website verwenden möchten, die Daten aus ihrer Supply Chain Management-Installation verwendet. Es hilft Unternehmen dabei, duales Schreibe, Supply Chain Management und Power Apps Portal zu organisieren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

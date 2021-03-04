@@ -40,3 +40,5 @@ Stellen Sie sicher, dass alle erstellten benutzerdefinierten Felder aktiviert si
 [Common Data Service Entitäten](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
 [Erstellen von und Arbeiten mit benutzerdefinierten Feldern](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
 [Benutzerdefinierte Felder in Datenentitäten verfügbar machen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

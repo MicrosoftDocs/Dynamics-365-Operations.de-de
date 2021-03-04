@@ -50,3 +50,6 @@ Sie müssen neue Datenentitäten verwenden, um Produktdaten zu importieren und e
 
 > [!NOTE]
 > Sie können die Datenentität **Freigegebene Produkte V2** verwenden, um Produkte nur dann in das System zu importieren, wenn das freigegebene Produkt bereits erstellt wurde. Andernfalls müssen Sie zum Importieren von Produkten in das System die Datenentität **Produkterstellung** verwenden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Diese Prozedur zeigt, wie Berichtsbeziehungen für einen Mitarbeiter geändert w
 12. Geben Sie im Feld "Position" einen Wert ein, oder wählen Sie einen Wert aus.  Beispiel: 000437
 13. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

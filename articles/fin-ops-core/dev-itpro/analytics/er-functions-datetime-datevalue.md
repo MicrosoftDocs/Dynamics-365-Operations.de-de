@@ -79,3 +79,6 @@ Allerdings löst `DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")` eine Ausnah
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Datums- und Zeitfunktionen](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

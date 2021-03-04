@@ -55,3 +55,6 @@ Diese Prozedur zeigt, wie man ein neues Produktsortiment erstellt und veröffent
 1. Klicken Sie auf "Veröffentlichen".
 2. Klicken Sie auf "Ja".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

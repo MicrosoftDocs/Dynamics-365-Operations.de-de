@@ -55,3 +55,6 @@ Wenn Sie die Anlagennummer nicht in der Vorlage des Excel-Add-Ins oder in der Da
 
 > [!WARNING]
 > Der Anlagebestand wird nicht gelöscht, wenn Transaktionen in das zugehörige Buch gebucht wurden oder wenn die neu erstellte Anlage in einer Erfassungszeile erfasst, aber nicht gebucht wurde. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

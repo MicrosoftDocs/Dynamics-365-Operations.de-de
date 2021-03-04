@@ -44,3 +44,6 @@ Ein Kostencontroller kann diesen Schritt verwenden, um eine Kostenfaktordimensio
     * Wählen Sie für dieses Beispiel die Option Dimensionsmitglied 6001004 Telefono aus.  
 11. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

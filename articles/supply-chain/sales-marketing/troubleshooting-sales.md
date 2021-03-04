@@ -111,3 +111,6 @@ Supply Chain Management unterstützt derzeit die Berechnung von Provisionen für
 Der Bündelartikel ist für die Bestellung nicht verfügbar, da Sie bei Prüfung der Auftragspositionen für den Bündelartikel feststellen, dass die Menge *0* (Null) und der Status *Storniert* ist. Dieses Verhalten ist beabsichtigt. Der Auftrag kauft nur die Komponenten des Bündelartikels. Der Bündelartikel selbst wird nicht gekauft.
 
 Wenn Sie ein Bündel kaufen müssen, prüfen Sie, ob Sie ihn als Bündelartikel markieren müssen, da diese Funktionalität tatsächlich für Szenarien zur Umsatzrealisierung konzipiert ist. Weitere Informationen zu Bündelartikeln finden Sie unter [Bündel](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

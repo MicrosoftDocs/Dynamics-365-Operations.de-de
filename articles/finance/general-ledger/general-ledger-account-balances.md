@@ -51,3 +51,6 @@ Weitere Informationen hierzu finden Sie unter [Finanzberichte anzeigen](view-fin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

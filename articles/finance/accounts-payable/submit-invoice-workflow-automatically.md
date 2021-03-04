@@ -54,3 +54,6 @@ Eine Rechnungsposition wird von der automatisierten Verarbeitung ausgeschlossen,
 - Der Wert **Status des automatisierten Zugangsabgleichs** der Rechnungsposition ist **Fehlgeschlagen**.
 - Die Rechnung wird verwendet.
 - Die Rechnung befindet sich im Workflow-System.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -195,3 +195,6 @@ Für Kunden, die die Funktion [Gespeicherte Ansichten](saved-views.md) noch nich
 Wenn Sie die Einstellungen der Lagerungsdimensionen auf einer Seite personalisieren, beachten Sie die Einstellungen, die erstellt wurden, indem Sie die Option **Anzeigendimension** nutzen. So verwenden Sie die Personalisierung, um eine Spalte für die Chargennummerenlagerungsdimension auszublenden, doch die Spalte erscheint das nächste Mal, wenn die Seite geöffnet wird. Dieses Verhalten tritt auf, da die Einstellungen die Lagerungsdimensionsspalten **Dimensionenanzeige** steuern, die angezeigt werden. Die **Dimensionsanzeigeeinstellungen** gelten für alle Seiten und diese Einstellungen setzen alle personalisierten Lagerdimensionsfelder einer individuellen Seite außer Kraft.
 
 Wenn Sie wie im vorhergehenden Beispiel nicht möchten, dass die Spalte für die Chargennummerlagerungsdimension auf einer Seite erscheint, müssen Sie die Dimension als Teil der Option **Dimensionen anzeigen** für diese Seite deaktivieren.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

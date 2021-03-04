@@ -155,3 +155,6 @@ Wenn Sie versuchen, mit der Lagerort App Entnahmearbeiten gegen eine Arbeits-ID 
 ## <a name="other-blocked-operations"></a>Andere gesperrte Operationen
 
 Alle Operationen, die Arbeitszeilen, Arbeitsbestands-Transaktionen oder Wiederbeschaffungs-Verknüpfungen ändern, die sich auf Arbeit beziehen, die gerade geteilt wird, schlagen fehl, und die folgende Fehlermeldung wird angezeigt: „Die Arbeit mit der ID \#\#\#\# wird gerade geteilt.“
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

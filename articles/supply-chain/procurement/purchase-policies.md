@@ -151,3 +151,6 @@ Die Richtlinie definiert Richtlinienregeln, die beim Generieren einer Bestellung
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

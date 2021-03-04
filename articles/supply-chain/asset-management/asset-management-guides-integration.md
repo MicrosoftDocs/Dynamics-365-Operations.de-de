@@ -114,3 +114,6 @@ Um eine Anleitung einer Wartungsprüflistenvorlage zuzuordnen, folgen Sie diesen
 
 - [Duales Schreiben – Übersicht](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Überblick über die Anlagenverwaltung](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

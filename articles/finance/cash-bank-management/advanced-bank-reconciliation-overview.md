@@ -51,3 +51,6 @@ Mit der erweiterten Bankabstimmungsfunktion können Sie Bankauszüge importieren
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

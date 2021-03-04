@@ -138,3 +138,6 @@ Manchmal können Sie das Kreditlimit eines Debitors manuell prüfen. Beispielswe
 1.  Klicken auf Bereichsseitenknoten: **Vertrieb und Marketing** \> **Gemeinsam** \> **Aufträge** \> **Alle Aufträge**. Doppelklicken Sie auf einen Auftrag.
 
 2.  Klicken Sie im Aktivitätsbereich auf der Registerkarte **Verkaufsauftrag** in der Gruppe **Verwalten** auf **Kreditlimite überprüfen**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

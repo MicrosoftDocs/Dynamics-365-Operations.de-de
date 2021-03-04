@@ -48,3 +48,6 @@ In diesem Thema wird beschrieben, wie Abschreibungschargenvorschläge arbeiten u
 3. Wählen Sie **Positionen** aus.
 4. Wählen Sie **Buchen** aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Gehen Sie folgendermaßen vor, um ein anderes Layout für eine vorhandene Seite 
 
 [Überprüfen der Zugänglichkeit des Seiteninhalts](verify-accessibility.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

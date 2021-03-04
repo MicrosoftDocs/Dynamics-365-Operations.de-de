@@ -115,3 +115,6 @@ Sofern nicht vorgeschrieben ist, fortlaufende Nummernkreise zu verwenden, wird e
 Bei einem Stromausfall, Anwendungsfehler oder einem anderen unerwarteten Problem kann das System die Nummern für fortlaufende Nummernkreise nicht automatisch recyceln. Sie können den Bereinigungsprozess manuell oder automatisch ausführen, um die verloren gegangenen Nummern wiederherzustellen.
 
 Berücksichtigen Sie aber die Serverauslastung, wenn Sie den Bereinigungsprozess planen. Es wird empfohlen, die Bereinigung außerhalb der Spitzenzeiten als Stapelverarbeitungslauf auszuführen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

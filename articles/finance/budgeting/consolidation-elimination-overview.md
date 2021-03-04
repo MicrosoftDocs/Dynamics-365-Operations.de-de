@@ -90,3 +90,6 @@ Wenn Sie die Option **Unternehmenssalden exportieren** verwenden, um von einer I
 Weitere Informationen finden Sie unter [Neubewertung der Währung in einem Konsolidierungsunternehmen](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

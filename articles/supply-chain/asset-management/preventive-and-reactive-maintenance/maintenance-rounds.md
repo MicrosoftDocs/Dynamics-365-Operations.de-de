@@ -117,3 +117,6 @@ Die zwei folgenden Abbildungen zeigen einen Zeitplaneinzelvorgang im Dialog **Wa
 - Sie können einen Batchauftrag auf dem Inforegister **Im Hintergrund ausführen** einrichten, um Durchgänge in regelmäßigen Abständen einzuplanen.  
 - Wenn ein Durchgang in mehreren Arbeitsauftragspools enthalten ist (siehe [Arbeitsauftragspools](../work-orders/work-order-pools.md)), wird für jeden Pool ein Datensatz in **Wartungszeitplanpools öffnen** angezeigt. Dies erfolgt, um die Filtermöglichkeiten für Arbeitsauftragspools zu optimieren.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

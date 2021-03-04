@@ -41,3 +41,6 @@ Dynamics 365 Human Resources erläutert anhand von Ursachencodes, warum sich die
    | **Beschreibung** | Eine Beschreibung des Ursachencodes. |
 
 4. Wählen Sie **Speichern**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

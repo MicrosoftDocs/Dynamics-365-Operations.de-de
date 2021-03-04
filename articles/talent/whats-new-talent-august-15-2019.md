@@ -61,3 +61,6 @@ Zusätzliche Details zur Plattformaktualisierung 29 für Finance and Operations
 Änderungen an die Mitarbeiterdatensätze treten selten sofort in Kraft. Sie müssen auch die Daten ab dem Startdatum des Mitarbeiters aktualisieren, das häufig in der Zukunft ist, und Sie müssen auch in der Vergangenheit Informationen aktualisieren. Mit diesem fortschrittlichen Navigationsmodell sind Sie in der Lage, Vergangenheitsdaten und künftige Daten zu aktualisieren, und die Navigation in mehreren Formularen oder den Datumskontext zu ändern. Diese Änderung auch dynamisch und zeigen die wichtigsten Informationen im oberen Bannerbereich des Mitarbeiterdatenstzes an.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ In diesem Thema wird beschrieben, wie eine Anlage mithilfe des Anschaffungsvorsc
 - Nur Anlagen mit dem Anschaffungsdatum und dem Anschaffungspreis, die im Buch festgelegt sind, werden in den Anschaffungsvorschlag einbezogen.  
 11. Wählen Sie auf der Seite die Registerkarte **Bücher** aus.
 12. Wählen Sie **Buchen** aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

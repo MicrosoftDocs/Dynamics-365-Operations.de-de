@@ -82,3 +82,6 @@ Um ein Social-Share-Modul einem Kauffeldmodul hinzuzufügen, befolgen Sie diese 
 [Kauffeldmodul](add-buy-box.md)
 
 [Cookie-Compliance](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

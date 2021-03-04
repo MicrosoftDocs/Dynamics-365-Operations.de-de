@@ -55,3 +55,6 @@ Bei diesem Verfahren wird ein neues Abschreibungsbuch erstellt und einer Anlageg
 6. Geben Sie im Feld "Nutzungsdauer" eine Zahl ein.
     * Beachten Sie, dass der Feldwert "Abschreibungszeiträume" nach der Festlegung der "Nutzungsdauer" berechnet wird.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

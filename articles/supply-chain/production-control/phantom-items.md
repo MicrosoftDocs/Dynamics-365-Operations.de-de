@@ -73,3 +73,6 @@ Phantomstücklisten können für eine Stückliste verwendet werden, die auch ein
 In der folgenden Abbildung ist (a) die Stückliste für Produkt G und Teile F und (b) ist der Arbeitsplan für Produkte G und Teil F.
 
 ![Produkt G und Teil F mit Begleitkarten](media/product-G-part-F-with-route-sheet.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

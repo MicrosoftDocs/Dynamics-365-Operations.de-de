@@ -77,3 +77,6 @@ Gehen Sie wie folgt vor, um einer Seite ein iFrame-Modul hinzuzufügen und ein e
 [Übersicht über die Modulbibliothek](starter-kit-overview.md)
 
 [Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) verwalten](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

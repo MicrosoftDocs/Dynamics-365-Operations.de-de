@@ -89,3 +89,6 @@ Um dem Treueprogramm beizutreten, kann eine Marketingseite mit Modulen für die 
 [Kopfzeilenmodul](author-header-module.md)
 
 [Fußzeilenmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

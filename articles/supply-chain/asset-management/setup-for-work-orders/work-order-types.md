@@ -52,3 +52,6 @@ Weitere Informationen über den Lebenszyklus von Arbeitsaufträgen und Projektph
 8. Wählen Sie **Speichern**.
 
 ![Arbeitsauftragstypen](media/16-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

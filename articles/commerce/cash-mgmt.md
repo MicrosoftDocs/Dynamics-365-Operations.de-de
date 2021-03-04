@@ -62,3 +62,6 @@ In Retail, Version 10.0.3 und höher, werden die folgenden Funktionen ebenfalls 
 - Während der Abstimmung, wenn die ausgewählte Transaktion nicht ausgeglichen werden kann, muss der Benutzer eine Beschreibung des Grunds eingeben, warum die Abstimmung keinen Saldo ergibt. Benutzer können eine einzelne Transaktion auswählen und sie mit der relevanten Ursachenbeschreibung abstimmen, wie diese benötigt wird.
 - Benutzer können fortfahren, Transaktionen abzustimmen oder deren Abstimmung aufzuheben, bis die Schicht geschlossen ist. Nachdem eine Schicht abgeschlossen ist, kann die Abstimmung für die Transaktionen nicht aufgehoben werden.
 - Wenn ein Benutzer beschließt, eine Schicht zu schließen, überprüft Commerce, dass es keine nicht abgestimmten Bargeldverwaltungstransaktionen in der Schicht gibt. Sind nicht abgestimmte Transaktionen vorhanden, können Benutzer eine Schicht nicht schließen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

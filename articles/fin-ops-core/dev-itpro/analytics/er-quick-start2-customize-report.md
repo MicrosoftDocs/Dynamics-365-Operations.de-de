@@ -514,3 +514,6 @@ Um die neuen Funktionen von Version 3.3 des Formats **BACS (UK)** in Ihrer Anpa
 - [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
 - [Herunterladen elektronischer Berichterstellungskonfigurationen von Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Herunterladen von EB-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

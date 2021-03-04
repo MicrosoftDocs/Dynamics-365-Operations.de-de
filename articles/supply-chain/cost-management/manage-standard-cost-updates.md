@@ -49,3 +49,6 @@ In diesem Beispiel wurde eine zusätzliche Nachkalkulationsversion zum Verwalten
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Um einen POS-Vorgang so zu konfigurieren, dass er mit einer Aufgabe verknüpft w
 [Arbeitspläne den Filialen oder Mitarbeitern zuweisen](task-mgmt-assign-lists.md)
 
 [Aufgabenverwaltung in POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

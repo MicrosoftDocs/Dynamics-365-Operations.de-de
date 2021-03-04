@@ -53,3 +53,6 @@ Die folgende Abbildung zeigt die konzeptionelle Architektur der Aufgabenverwaltu
 [Arbeitspläne den Filialen oder Mitarbeitern zuweisen](task-mgmt-assign-lists.md)
 
 [Aufgabenverwaltung in POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

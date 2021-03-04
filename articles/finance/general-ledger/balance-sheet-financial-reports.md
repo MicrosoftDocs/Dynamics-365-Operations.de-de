@@ -82,3 +82,6 @@ Die Spaltendefinitionen enthalten verschieden Spaltentypen, um verschiedene Stuf
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

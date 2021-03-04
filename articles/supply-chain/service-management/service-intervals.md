@@ -94,3 +94,6 @@ Drei Serviceauftragspositionen wurden in dem Zeitrahmen erstellt, den Sie im Dia
 
 [Einrichten von Serviceintervallen](set-up-service-intervals.md)  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

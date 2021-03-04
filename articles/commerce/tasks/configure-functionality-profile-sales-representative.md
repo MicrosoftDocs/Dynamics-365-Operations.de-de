@@ -37,3 +37,6 @@ Dieses Verfahren zeigt, wie Funktionsprofileinstellungen eines Shops konfigurier
 4. Wählen Sie im Feld "Nachfrage nach Verkäufer" eine Option aus.
 5. Wählen Sie "Ja" im Feld "Verkäufer erforderlich" aus.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

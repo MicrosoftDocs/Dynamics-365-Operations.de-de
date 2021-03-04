@@ -65,3 +65,6 @@ Wenn Sie **Vend** als Datenquelle des Datentyps *Datensatzliste* eingeben, der a
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Listenfunktionen](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

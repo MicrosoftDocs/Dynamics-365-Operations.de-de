@@ -54,3 +54,6 @@ Diese Prozedur zeigt, wie der Leistungberechtigungsprozess arbeitet. Wenn der Pr
 25. Öffnen Sie den Spaltenfilter "Status".
 26. Von A nach Z sortieren
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

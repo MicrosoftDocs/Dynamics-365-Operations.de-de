@@ -148,3 +148,6 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
     * Überprüfen Sie die gebuchten Erfassungseinträge.  
 16. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

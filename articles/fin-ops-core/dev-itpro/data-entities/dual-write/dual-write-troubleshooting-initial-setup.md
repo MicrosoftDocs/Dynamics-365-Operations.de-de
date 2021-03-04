@@ -88,3 +88,6 @@ Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie versuchen, d
 *Dualer Schreibfehler – Plugin-Registrierung fehlgeschlagen: \[(Partitionszuordnung für Projekt DWM kann nicht abgerufen werden-1ae35e60-4bc2-4905-88ea-69efd3b29260–7f12cb89-1550-42e2-858e-4761fc1443ea . Fehler überschreitet die maximal zulässigen Partitionen für die Zuordnung von DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260–7f12cb89-1550-42e2-858e-4761fc1443ea)\]Ein oder mehrere Fehler sind aufgetreten.*
 
 Die aktuelle Limite beim Verknüpfen der Umgebungen beträgt ungefähr 40 juristische Tabellen. Dieser Fehler tritt auf, wenn Sie versuchen, Karten zu aktivieren, und mehr als 40 juristische Tabellen zwischen den Umgebungen verknüpft sind.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

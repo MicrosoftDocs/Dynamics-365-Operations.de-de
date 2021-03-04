@@ -56,3 +56,6 @@ Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

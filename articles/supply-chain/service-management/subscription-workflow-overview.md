@@ -57,3 +57,6 @@ Am Monatsende kann der Monatsumsatz des Dauerauftrags des Debitors für das GuV-
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

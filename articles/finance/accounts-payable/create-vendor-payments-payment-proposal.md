@@ -123,3 +123,6 @@ Sie können ein Zahlungsstandardkonto pro Zahlungsmethode definieren, unbeachtet
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

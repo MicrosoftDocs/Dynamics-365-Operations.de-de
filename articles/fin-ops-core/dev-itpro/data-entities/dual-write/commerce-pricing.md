@@ -53,3 +53,6 @@ Wenn Benutzer ein Angebot in Sales initiieren, kopiert das Framework für duales
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Prospect-to-cash in Dual-Write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

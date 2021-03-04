@@ -61,3 +61,6 @@ In diesem Thema wird beschrieben, wie Aktivitäten in einem Serviceauftrag angez
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -361,3 +361,6 @@ Befolgen Sie diese Schritte, um den Lebenszyklus der Add-On-Funktion für die el
 
     > [!NOTE]
     > Wenn Sie **Ja** auswählen, wird der Status von Konfigurationsversionen automatisch von **Abgeschlossen** zu **Freigegeben** geändert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

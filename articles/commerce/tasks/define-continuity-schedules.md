@@ -64,3 +64,6 @@ In diesem Thema lernen Sie das Einrichten eines Anschlussprogramms kennen (auch 
     * Wenn dieser Artikel in einem Callcenter verkauft wird, wird über das ausgewählte Anschlussprogramm eine zusätzliche Geschäftslogik angewendet.  
 7. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

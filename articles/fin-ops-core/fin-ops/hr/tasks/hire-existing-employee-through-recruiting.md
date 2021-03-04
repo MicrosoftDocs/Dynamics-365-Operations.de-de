@@ -40,3 +40,6 @@ Manchmal können offene Stellen von den Kandidaten ausgefüllt werden, die berei
 9. Klicken Sie auf "Position ändern".
     * Sie werden zu diesem Zeitpunkt möglicherweise auch die Vergütung ändern. Wenn Sie die Vergütung jetzt nicht zuweisen, können Sie sie ändern, indem Sie zum Arbeitskraftformular zurückkehren, die Registerkarte "Vergütung" auswählen und "Fester Plan" auswählen. Nachdem Sie "Position ändern" auswählen, wird der Status in der Anwendung auf "Eingestellt" aktualisiert.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

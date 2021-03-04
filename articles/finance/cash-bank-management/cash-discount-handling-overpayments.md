@@ -139,3 +139,6 @@ Der Skontobetrag wird von 10,50 auf 10,00 verringert. Die Zahlung und die Rechnu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

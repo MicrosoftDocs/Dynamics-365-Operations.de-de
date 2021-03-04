@@ -145,3 +145,6 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 
 
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

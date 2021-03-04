@@ -171,3 +171,6 @@ Für diese Kombination müssen die folgenden Felder eingerichtet werden:
 
 > [!IMPORTANT]
 > Damit diese Kosten bei der DOM berücksichtigt werden, muss der Kostenfaktor im jeweiligen Erfüllungsprofil ergänzt werden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

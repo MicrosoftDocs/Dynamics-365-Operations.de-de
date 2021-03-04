@@ -54,3 +54,6 @@ Einen Dispositionscode zuweisen, wenn ein Artikel eingegangen ist oder während 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

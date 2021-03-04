@@ -72,3 +72,6 @@ Die folgende Tabelle enthält Informationen zum Zusammenhang dieses Konfiguratio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

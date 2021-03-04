@@ -74,3 +74,6 @@ Im folgenden Diagramm werden die Grundkomponenten gezeigt, die Netzwerkdruckvorg
 ![[Service-Komponenten für Netzwerkdrucker\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Beachten Sie, dass ein einzelner Drucker mit mehreren Dokument-Routing-Agenten erfasst werden kann. Um die Druckereinstellungen aufzulösen, verwendet die gehostete Dienstleistung den Netzwerkpfad, der jeden Netzwerkdrucker eindeutig identifiziert. Selbst wenn ein Drucker mehrere Kunden erfasst, erscheint dieser als einzelne Auswahl in der Liste der Drucker, die in den Anwendungen verfügbar sind.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

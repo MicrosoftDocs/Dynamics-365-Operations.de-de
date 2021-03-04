@@ -622,3 +622,6 @@ Sie haben die Arbeits- und Ortsdaten für Lagerort 51 eingerichtet, um sicherzus
 
 > [!NOTE]
 > Ziehen Sie es in Betracht, den Eintrag für den Qualitätsausgang zu einem Menüpunkt für mobile Geräte hinzuzufügen, für den der Aktivitätscode *Offene Arbeitsliste anzeigen* lautet. Ein Beispiel stellt der Menüpunkt für mobile Geräte mit dem Namen **Arbeitsliste** in den Demodaten dar. Fügen Sie zuerst die Arbeitsklasse *Qualitätsprüfungsauftrag* zu einem benutzergesteuerten Menüpunkt hinzu, da diese Arbeitsklasse erforderlich ist, damit die Arbeit in der Arbeitsliste angezeigt wird. Fügen Sie die Arbeitsklasse *Qualitätsprüfungsauftrag* anschließend dem Menüpunkt **Arbeitsliste** hinzu. Benutzer, die Zugriff auf die Arbeitsliste haben, können dann die Arbeit auswählen und verarbeiten, die durch die Prüfung des Qualitätsprüfungsauftrags automatisch generiert wird.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

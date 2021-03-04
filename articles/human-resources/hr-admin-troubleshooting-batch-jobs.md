@@ -65,3 +65,6 @@ Die folgenden Batch-Jobs sollten nachts oder nach Geschäftsschluss ausgeführt 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Leistung mit automatischen Bereinigungsaufgaben optimieren](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

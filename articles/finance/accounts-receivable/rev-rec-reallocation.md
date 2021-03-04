@@ -114,3 +114,6 @@ Im folgenden werden diverse Fälle von Umsatzerkennung aufgezeigt:
 - [Neuzuweisung der Umsatzerkennung – Szenario 2](rev-rec-reallocation-scenario-2.md) –Zwei Aufträge werden eingegeben. Nachdem der erste Auftrag in Rechnung gestellt wurde, ergänzt der Kunde den Vertrag mit einem Artikel.
 - [Neuzuweisung der Umsatzerkennung – Szenario 3](rev-rec-reallocation-scenario-3.md) – Einem bestehenden und in Rechnung gestellten Auftrag wird eine neue Position hinzugefügt.
 - [Neuzuweisung der Umsatzerkennung – Szenario 4](rev-rec-reallocation-scenario-4.md) – Aus einem bestehenden und teilweise in Rechnung gestellten Auftrag wird eine Position gelöscht.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

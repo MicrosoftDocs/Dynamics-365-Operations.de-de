@@ -54,3 +54,6 @@ Mit der in Retail-Version 10.0.5 eingeführten Auftragserstellung per Einzelzul
 > Die Menüpunkte **Retail und Commerce > Retail und Commerce IT > POS-Buchung > Aufstellungen stapelweise berechnen** und **Retail und Commerce > Retail und Commerce IT > POS-Buchung > Aufstellungen stapelweise buchen** werden mit dieser neuen Funktion entfernt.
 
 Alternativ können Transaktions- und Finanzaufstellungen manuell angelegt werden. Wechseln Sie zu **Retail und Commerce > Kanäle > Shops**, und klicken Sie auf **Aufstellungen**. Klicken Sie auf **Neu**, und wählen Sie dann den Typ der Aufstellung aus, die Sie erstellen möchten. Felder auf der Seite **Aufstellungen** und Aktionen unter der Gruppe **Aufstellung** auf der Seite zeigen relevante Daten und Aktionen basierend auf dem ausgewählten Aufstellungstyp an.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

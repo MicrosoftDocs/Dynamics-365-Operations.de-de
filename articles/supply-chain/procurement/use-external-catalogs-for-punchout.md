@@ -55,3 +55,5 @@ Wenn die Bestellanforderung bereit ist, verwenden Sie die Aktivität **Workflow*
 
 - [Externen Katalog für PunchOut-E-Procurement einrichten](set-up-external-catalog-for-punchout.md)
 - [cXML-Einkaufserweiterungen](purchasing-cxml-enhancements.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

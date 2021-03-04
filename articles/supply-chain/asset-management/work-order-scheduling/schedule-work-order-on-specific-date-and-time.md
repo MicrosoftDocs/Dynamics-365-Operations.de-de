@@ -56,3 +56,6 @@ Wenn ein Arbeitsauftrag zu einem bestimmten Datum *und* Uhrzeit terminiert werde
 >[!NOTE]
 >Um einen Instandhalter für den Arbeitsauftrag zu planen, muss dieser zum erwarteten Starttermin verfügbar sein. Die Verfügbarkeit der Mitarbeiter wird im [Arbeiterkalender](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md) eingestellt. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

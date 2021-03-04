@@ -94,3 +94,6 @@ Mithilfe der Konfigurationsschlüsselmetadaten, die während der Entitätsaktual
 Immer wenn Sie Konfigurationsschlüssel auf der Entitäts-, Tabellen- oder Feldebene aktualisieren, muss die Entitätsliste im Datenverwaltungsframework aktualisiert werden. Durch diesen Prozess wird sichergestellt, dass der Framework die aktuellsten Konfigurationsschlüsseleinstellungen auswählt. Bis die Entitätsliste aktualisiert ist, wird die folgende Warnung in der Entitätslistenseite angezeigt. Die aktualisierten Konfigurationsschlüsseländerungen treten sofort in Kraft, nachdem die Entitätsliste aktualisiert ist. Es wird empfohlen, dass Sie die vorhandenen Datenprojekte und Einzelvorgänge überprüfen, um sicherzustellen, dass sie erwartungsgemäß funktionieren, nachdem die Konfigurationsschlüsseländerungen wirksam werden.
 
 ![Zielfelder](./media/Target_fields_3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

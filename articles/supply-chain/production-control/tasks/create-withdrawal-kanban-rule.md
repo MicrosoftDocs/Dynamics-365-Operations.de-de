@@ -64,3 +64,6 @@ Diese Prozedur zeigt die Einstellungen, die benötigt werden, um eine Kanban-Ent
     * Dadurch werden zwei Kanbans erstellt.  
     * Beachten Sie, dass 2 Kanbans für jeweils 5 für diese Kanban-Entnahmeregel erstellt wurden.  Dies ist der letzte Schritt in diesem Verfahren.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

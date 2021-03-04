@@ -83,3 +83,6 @@ Wenn keine benutzerdefinierte Ausgleichspriorität vorhanden ist, werden Buchung
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

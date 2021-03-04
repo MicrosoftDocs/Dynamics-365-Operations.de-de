@@ -108,3 +108,6 @@ Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Vereinbarungsrechnungen (Field Service an Supply Chain Management): Rechnungspositionen
 
 [![Vorlagenzuordnung in Datenintegration](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

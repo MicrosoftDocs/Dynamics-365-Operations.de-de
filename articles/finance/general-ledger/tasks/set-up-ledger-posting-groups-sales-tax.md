@@ -42,3 +42,6 @@ Die Mehrwertsteuer wird zu den Hauptkonten berechnet und gebucht, die in den „
 11. Wählen Sie im Feld **Kundenfallrabatt** das Hauptkonto zum Buchen von Skonto für **Verkaufssteuerkennzeichen**, das dieser **Sachkonto-Buchungsgruppe** zugeordnet ist. Dies ist optional und wenn kein Konto eingegeben wird, wird das Hauptkonto auf den **Skontoabzugscodes** verwendet. Es kann sinnvoll sein, unterschiedliche Konten pro **Sachkonto-Buchungsgruppe** zu verwenden, wenn Sie die Option Umsatzsteuer auf Skonto auf **Verkaufssteuergruppen** verwenden.  
 12. Klicken Sie auf **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

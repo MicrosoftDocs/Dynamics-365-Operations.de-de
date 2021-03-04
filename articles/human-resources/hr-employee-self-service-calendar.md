@@ -72,3 +72,6 @@ Sie können Kalender auch nach Manager oder Abteilung filtern. Die primäre Posi
 
 Informationen zu Kalendereinstellungen finden Sie unter [Konfigurieren Sie die Kalenderparameter](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

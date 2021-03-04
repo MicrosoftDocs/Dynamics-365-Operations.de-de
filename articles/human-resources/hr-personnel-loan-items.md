@@ -55,3 +55,6 @@ Wenn ein Artikel beschädigt oder verlegt wurde, geben Sie einen fiktive Rückga
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

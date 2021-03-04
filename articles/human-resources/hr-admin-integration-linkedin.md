@@ -190,3 +190,6 @@ Die folgenden Details werden importiert und in den neuen Mitarbeiterdatensatz au
 
 [Konfigurieren von Common Data Service virtuellen Entitäten](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Was ist Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

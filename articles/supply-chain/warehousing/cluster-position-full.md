@@ -276,3 +276,6 @@ In diesem Szenario wurde die Clusterkommissionierung abgeschlossen, und der Benu
     Sie erhalten die Nachricht „Cluster abgeschlossen“.
 
 Sie können jetzt den **Verkaufsauswahl**-Menüpunkt verwenden, um die verbleibende Menge auszuwählen. Sie können dann das **Verkaufsverladung**-Menüelement verwenden, um Artikel vom Staging-Lagerplatz zum Verladedock zu verschieben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

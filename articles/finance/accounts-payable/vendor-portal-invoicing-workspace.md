@@ -62,3 +62,6 @@ Weitere Informationen finden Sie unter [Lieferantenzusammenarbeiten mit externen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

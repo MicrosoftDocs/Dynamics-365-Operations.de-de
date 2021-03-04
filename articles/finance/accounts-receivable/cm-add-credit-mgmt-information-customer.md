@@ -102,3 +102,6 @@ Sie können Versicherungspolicen und Garantien auf der Seite **Alle Debitoren** 
     In diesem Fall beträgt das effektive Kreditlimit 125.000 (= A + \[B × C \]).
     
     Wenn Sie jedoch das Kontrollkästchen **In Risiko enthalten** aktivieren, wird der Wert **Kreditlimit aktualisieren** von 50.000 (= 50,00 Prozent von 100.000) entfernt, und der Risikowert beträgt 75.000 (= A + \[B × C \] – B).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

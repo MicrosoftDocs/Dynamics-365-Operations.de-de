@@ -64,3 +64,6 @@ Diese Prozedur führt Sie durch den einzelnen Schritte der Erstellung und des Bu
 2. Klicken Sie auf "Transaktionen".
     * Hier können Sie die Transaktionen anzeigen, die erstellt wurden, als Sie Ihre Erfassung gebucht haben.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

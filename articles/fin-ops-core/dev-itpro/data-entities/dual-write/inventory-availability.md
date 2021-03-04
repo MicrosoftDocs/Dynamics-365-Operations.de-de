@@ -57,3 +57,6 @@ Das Dialogfeld gibt die ATP-Informationen aus dem Supply Chain Management zurüc
 - Zugangsmenge
 - Abgangsmenge
 - Verfügbare Menge
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

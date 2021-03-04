@@ -68,3 +68,6 @@ Bevor Sie Vorteilspläne in Microsoft Dynamics 365 Human Resources einrichten k�
 3. Wählen Sie **Speichern**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

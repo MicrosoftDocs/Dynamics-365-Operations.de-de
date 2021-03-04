@@ -260,3 +260,6 @@ Im vorherigen Beispiel haben Sie auf anwendungsspezifische Parameter eines EB-Fo
 [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)
 
 [Konfigurieren von ER-Formaten zur Verwendung von Parametern, die pro juristischer Person angegeben werden](er-app-specific-parameters-configure-format.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

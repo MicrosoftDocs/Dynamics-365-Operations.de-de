@@ -79,3 +79,6 @@ Nachdem Sie alle benötigten Registerkarten entworfen haben, können Sie diese m
 1. Fahren Sie fort, weitere Registerkarten nach Bedarf hinzuzufügen.
 
 1. Verwenden Sie die Schaltflächen **Aufwärts bewegen** und **Abwärts bewegen** in der Symbolleiste, um die Registerkarten nach Bedarf anzuordnen. Die Registerkarten werden von links nach rechts in der im obigen Screenshot gezeigten Reihenfolge angezeigt (die oberste Registerkarte wird links angezeigt).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -107,3 +107,6 @@ Um Einheitenumrechnungen nach Excel zu exportieren, klicken Sie auf der Seite **
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Maßeinheit verwalten](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

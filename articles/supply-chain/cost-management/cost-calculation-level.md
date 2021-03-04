@@ -57,3 +57,6 @@ Anschließend wird ein Fertigungsauftrag für Produkt C erstellt und Produkt A z
     - **Produkt C:** 2
 
 Dieses Verhalten stellt sicher, dass Änderungen an Fertigungsauftragsstücklisten keine Auswirkungen auf nachfolgende Kostenberechnungen haben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

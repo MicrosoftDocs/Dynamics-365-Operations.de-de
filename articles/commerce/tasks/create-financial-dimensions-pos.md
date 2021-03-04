@@ -48,3 +48,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen von Finanzdim
 17. Wählen Sie in der Liste den Dimensionswert für das Register aus, das aktualisiert wird.
 18. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

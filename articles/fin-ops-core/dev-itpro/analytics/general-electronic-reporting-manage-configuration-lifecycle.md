@@ -87,3 +87,6 @@ ER-Konfigurationen, die in der Testumgebung entworfene wurden, können in die Te
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Der Schwerpunkt dieser Prozedur liegt auf dem Verschieben von geplanten Kanban-B
 2. Klicken Sie auf **Vorwärts**. Beachten Sie, dass der Einzelvorgang um eine Position in der Liste nach unten verschoben wird. 
 
 3. Klicken Sie auf **Rückwärts**. Beachten Sie, dass der Einzelvorgang um eine Position in der Liste nach oben verschoben wird.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

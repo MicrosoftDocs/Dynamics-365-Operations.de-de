@@ -43,3 +43,6 @@ Kalender beschreiben die Kapazität und die Arbeitszeiten von betrieblichen Ress
 12. Wählen Sie **OK**.
 13. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

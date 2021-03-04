@@ -38,3 +38,6 @@ Der Bericht **Deutsches Journal** enthält eine Liste mit Buchungen, die produzi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

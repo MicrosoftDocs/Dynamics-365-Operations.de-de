@@ -31,3 +31,6 @@ Der Inhalt von Microsoft Dynamics AX 4.0 in TechNet und MSDN wurde zurückgezoge
 
 - [Microsoft Lifecycle-Richtlinie](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Dynamics%20AX%204.0)
 - [Unterstützte Upgradepfade auf Dynamics AX 2012](https://technet.microsoft.com/library/dd362093.aspx)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

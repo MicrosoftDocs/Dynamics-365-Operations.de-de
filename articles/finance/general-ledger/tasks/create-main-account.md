@@ -52,3 +52,6 @@ Diese Aufgabenleitfaden führt Sie durch das Hinzufügen eines Hauptkontos zu ei
 21. Wählen Sie im Feld **Währungsumrechnungstyp** die Methode für die Berechnung der Wechselkurse für das Konto aus.
 22. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

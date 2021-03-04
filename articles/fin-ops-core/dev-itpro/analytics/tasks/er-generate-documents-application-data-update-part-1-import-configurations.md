@@ -75,3 +75,6 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
     * Wiederholen Sie die Struktur des Formats, das verwendet wird, um den Intrastat-Bericht zu generieren. Beachten Sie, dass er entwickelt wurde, um damti eine XML-Datei zu generieren, indem Daten vom Datenmodell aufgefüllt, die auf der Basis des Stammartikel „für ausgehendes Dokument“ basiert.. Stellen Sie sicher, dass der Name für die enerierte Datei im Benutzerdialogfeldformular definiert wurde („FN“ Datenquelle wird dafür verwendet).   
 30. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Mit Qualifikationszuordnungsprofilen finden Sie Mitarbeiter oder Kandidaten mit 
 Sie können eine Qualifikationsprofilanalyse erstellen, um eine Liste der Kompetenzen für eine Arbeitskraft, einen Bewerber oder eine Kontaktperson zu einem bestimmten Datum anzuzeigen. Sie können eine Qualifikationsdefizitanalyse erstellen, um die Qualifikationen einer Person zu vergleichen und die Qualifikationen, die für eine spezifische Stelle erforderlich sind.  
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

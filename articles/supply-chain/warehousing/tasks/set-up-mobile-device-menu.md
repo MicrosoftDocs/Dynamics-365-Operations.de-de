@@ -69,3 +69,6 @@ In diesem Thema wird gezeigt, wie Sie einen Menüpunkt für mobile Endgeräte ei
 5. Wählen Sie den Pfeil, der nach rechts zeigt.
 6. Wählen Sie **Speichern**.
 7. Schließen Sie die Seite.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

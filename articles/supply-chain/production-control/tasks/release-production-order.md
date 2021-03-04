@@ -41,3 +41,6 @@ Diese Prozedur zeigt an, wie ein Produktionsauftrag freigegeben wird. Das Demoda
 6. Klicken Sie auf "OK".
 7. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Dieser Artikel wurde mit dem FIFO-Lagermodell (First In, First Out) eingerichtet
 -   5. Februar: Menge "1" mit einem Einstandspreis von EUR 13,00
 
 Verwenden Sie die Option für die Regulierung des verfügbaren Bestands, um die Kosten dieser beiden Artikel auf EUR 15,00 festzulegen, und regulieren Sie die offenen verfügbaren Bestandsmengen zum Datum der letzten Lagerabschlussperiode. **Hinweis:** Als Buchungsdatum für die Regulierung des verfügbaren Bestands wird das Datum des letzten Lagerabschlusses verwendet. Dieses Datum kann nicht geändert werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

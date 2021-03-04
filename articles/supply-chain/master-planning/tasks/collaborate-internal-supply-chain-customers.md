@@ -43,3 +43,6 @@ Dieses Verfahren zeigt, wie Sie alle Bestellvorschläge anzeigen, die von einem 
 8. Erweitern Sie den Abschnitt "Bedarfsdetails hochstreamen".
     * In diesem Abschnitt finden Sie Details zur Erfüllung des Bedarfs. Möglicherweise müssen Sie auf die im Lieferungsunternehmen auszuführende Produktprogrammplanung warten, bevor Sie hier zusätzliche Informationen sehen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

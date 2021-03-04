@@ -41,3 +41,6 @@ In Versionen vor 10.0.13 erhalten Sie beim Bestandsabschluss die folgende fehler
 > Sie sind dabei, einen Bestandsabschluss mit einem Datum %1 auszuführen. Es wurde keine Ausführung einer Nachkalkulation mit einem Datum %1 registriert, das dem Periodenende entspricht. Bitte denken Sie daran, eine Nachkalkulation mit einem Datum %1 auszuführen, das dem Periodenende entspricht. Die Bewertung der Bestände, der Selbstkosten und der Abweichungen ist möglicherweise im Nebenbuch oder im Hauptbuch nicht korrekt, bis dies ausgeführt wurde.
 
 Dieses Problem wurde in Version 10.0.13 und später behoben. Weitere Informationen finden Sie in [KB 4582468](https://fix.lcs.dynamics.com/Issue/Details?kb=4582468&bugId=468844&dbType=3&qc=fcd64080446a27382cfde3e4c3bdcfb714279185932259cd11ceb0d500617296).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

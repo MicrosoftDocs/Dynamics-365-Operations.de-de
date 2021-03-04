@@ -81,3 +81,6 @@ Wenn das Einstellungsteam eine E-Mail sendet, kann es die vom Administrator erst
 
 > [!NOTE] 
 > Für E-Mails, die automatisch gesendet werden, können mehrerer Vorlagen erstellt werden. Allerdings kann nur einer Vorlage als die aktive Vorlage festgelegt werden. Da dieser Prozess durch Ereignisse ausgelöst wird, kann nur der Administrator festlegen, welche Vorlage anhand der Kombination der Kennkarten **Standard** und **Automatisch übermittelt** in der Vorlagenbibliothek verwendet werden soll.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

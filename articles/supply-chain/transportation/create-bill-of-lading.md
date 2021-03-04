@@ -43,3 +43,6 @@ Wenn mehr als eine Lieferung in einer Ladung enthalten ist, können Sie einen Ha
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

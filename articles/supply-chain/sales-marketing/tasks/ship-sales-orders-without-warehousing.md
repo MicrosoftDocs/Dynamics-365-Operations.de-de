@@ -56,3 +56,6 @@ In diesem Thema wird erläutert, wie Sie einen Kundenauftrag aktualisieren, wenn
 19. Wählen Sie im Aktionsbereich **Auswahl und packen Sie**.
 20. Wählen Sie **Packzettel**. Die Seite **Packzetteljournal** enthält alle Packzettel-Dokumente, die für Ihre Bestellung generiert wurden. Sie können Details jedes Dokuments zu prüfen und drucken, wenn Sie wünschen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

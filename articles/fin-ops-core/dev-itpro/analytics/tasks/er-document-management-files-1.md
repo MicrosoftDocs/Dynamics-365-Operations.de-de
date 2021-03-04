@@ -74,3 +74,6 @@ Sie erstellen eine eigene Konfiguration des Debitorenrechnungmodells, die von de
 3. Geben Sie im Feld "Name" "Debitorenrechnungsmodell (benutzerdefiniert)" ein.
 4. Klicken Sie auf Konfiguration erstellen.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Um Arbeit für Lean Manufacturing zu modellieren, müssen Sie eine Fertigungszel
 24. Klicken Sie im Feld "Einheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
 25. "Auflösen" verändert die Einheit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

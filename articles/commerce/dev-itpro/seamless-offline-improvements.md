@@ -56,3 +56,6 @@ Commerce-Prameter werden normalerweise im Cache gespeichert. Daher kann es nach 
 
 - [Offline-Verkaufsstellen (POS) Funktionalität](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
 - [Online- und Offlineverkaufsstellen-(POS)-Vorgänge](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

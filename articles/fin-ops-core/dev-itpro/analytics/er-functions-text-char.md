@@ -59,3 +59,6 @@ Die Zeichenfolge, die diese Funktion zurückgibt, hängt von der Codierung ab, d
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Textfunktionen](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

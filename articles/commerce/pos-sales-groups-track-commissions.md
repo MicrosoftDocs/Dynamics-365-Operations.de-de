@@ -88,3 +88,6 @@ POS ermöglicht Benutzern Schaltflächenraster zu konfigurieren, die in den Bild
 ## <a name="calculating-commissions"></a>Berechnen von Provisionen
 
 Provision werden für die Arbeitskräfte in den angegebenen Verkaufsgruppen zum Zeitpunkt der Buchung oder der Auftragsbuchung berechnet.Der Provisionsbetrag wird basierend auf den Provisionsfreigabe der Arbeitskraft bestimmt, die im Formular und Verkaufsgruppe in den zugehörigen Provisionsberechnungseinstellungen für den Debitor und/oder die Produkte für die Buchung definiert.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

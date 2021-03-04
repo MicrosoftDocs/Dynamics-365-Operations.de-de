@@ -384,3 +384,6 @@ Nachdem alle erforderlichen Elemente vorhanden sind, können Sie die Zuteilung v
 1. Stellen Sie die Serie so ein, dass sie automatisch ausgeführt wird, wenn Sie möchten.
 
 Richten Sie für die Übungen im Szenario **nicht** die automatische Zuteilung von Zeitfenstern ein.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

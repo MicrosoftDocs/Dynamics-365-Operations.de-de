@@ -96,3 +96,6 @@ Bevor Sie E-Mails senden können, müssen Sie Ihren Postausgangsdienst konfiguri
 [Kanaleinstellungen – Voraussetzungen](channels-prerequisites.md)
 
 [Organisationen und Organisationshierarchien – Übersicht](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

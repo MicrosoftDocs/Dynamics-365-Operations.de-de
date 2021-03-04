@@ -57,3 +57,6 @@ Wenn die sofortige Wiederbeschaffung für eine Lagerplatzdirektivenposition ausg
 
 - Stellen Sie sicher, dass die Bedarfswiederbeschaffungsvorlage, die angewendet wird, für die Verwendung der korrekten Lagerplatzvorlagen und Arbeitsvorlagen des Typs **Wiederbeschaffung** eingerichtet ist.
 - Stellen Sie sicher, dass es genügend verfügbaren Lagerbestand an den Lagerplätzen gibt, in denen die Bedarfswiederbeschaffungsvorlage nach verfügbarem Lagerbestand für die Wiederbeschaffung sucht.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

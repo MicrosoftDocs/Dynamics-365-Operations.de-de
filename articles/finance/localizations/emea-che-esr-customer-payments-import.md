@@ -54,3 +54,6 @@ Nachdem Sie die Zahlungsdatei importieren haben, werden die Zahlungserfassungspo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

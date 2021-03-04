@@ -65,3 +65,6 @@ Weitere Informationen finden Sie in folgenden Themen:
 [Bankfazilitäten und Buchungsprofile für Bankgarantie einrichten](tasks/set-up-bank-facilities-posting-profiles.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

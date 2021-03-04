@@ -496,3 +496,6 @@ Stellen Sie sicher, dass die Konfiguration der gemeinsamen Modellzuordnung nicht
 - Mindestens eine Version der ER-Modellzuordnungskonfiguration hat entweder den Status **Abgeschlossen** oder **Gemeinsam**. In diesem Fall wird die Version mit der höchsten Versionsnummer für die Ausführung des ER-Formats verwendet.
 - Die Option **Entwurf ausführen** für die Konfiguration der ER-Modellzuordnung ist aktiviert. In diesem Fall wird die Version mit dem Status **Entwurf** für die Ausführung des ER-Formats verwendet.
 > Die Option **Entwurf ausführen** wird auf der Seite **Konfigurationen** für jede ER-Modellzuordnungskonfiguration verfügbar, wenn der Benutzerparameter **Einstellung ausführen** ER eingeschaltet ist.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

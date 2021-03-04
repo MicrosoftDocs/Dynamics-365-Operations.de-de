@@ -57,3 +57,6 @@ Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtssei
 | Sachkonten                   | Sachkonten, die verwendet werden können, um den Bericht nach dem aktuellen Sachkonto zu filtern              |
 | Budgetcodes              | Budgetcodes, nach denen Berichte gefiltert werden können                                                |
 | Juristische Personen            | Juristische Personen, die verwendet werden können, um nach der aktuellen juristischen Person zu filtern. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

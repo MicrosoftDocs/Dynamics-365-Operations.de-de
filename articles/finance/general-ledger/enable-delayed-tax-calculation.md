@@ -65,3 +65,6 @@ Das System gibt der Einrichtung für den Erfassungskopf Vorrang. Standardmäßig
 4. Legen Sie auf der Registerkarte **Einstellungen** die Option **Verzögerte Steuerberechnung** auf **Ja** fest.
 
 ![Allgemeine Erfassung – Seitenbild](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

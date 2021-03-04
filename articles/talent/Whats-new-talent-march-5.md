@@ -80,3 +80,6 @@ In vielen Organisationen können Vergütungs- und Vorteilsmanager nur auf bestim
 
 ###  <a name="platform-update-24-for-finance-and-operations"></a>Plattformupdate 24 für Finance and Operations
 Weitere Details zum Plattformupdate 24 für Finance and Operations finden Sie unter [Neues oder Änderungen im Plattformupdate 24 für Finance and Operations (März 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

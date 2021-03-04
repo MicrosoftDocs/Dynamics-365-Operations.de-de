@@ -76,3 +76,6 @@ Die folgenden Felder sind für jeden Prozess verfügbar, der auf der Registerkar
 | Richtlinie | Wählen Sie einen der folgenden Werte, um zu steuern, ob und wie der aktuelle Prozess für Produkte zugelassen wird, die sich in diesem Lebenszyklus-Status befinden:<ul><li>**Aktiviert** - Der Geschäftsprozess ist erlaubt.</li><li>**Blockiert** - Der Prozess ist nicht erlaubt. Wenn ein Benutzer versucht, den Prozess für ein Produkt zu verwenden, das sich in diesem Status befindet, wird das System den Versuch blockieren und stattdessen einen Fehler anzeigen. So können Sie z. B. verhindern, dass Produkte mit abgelaufenem Lebenszyklus gekauft werden.</li><li>**Aktiviert mit Warnung** - Der Prozess ist erlaubt, aber es wird eine Warnung angezeigt. Sie könnten z.B. ein Prototyp-Produkt auf einen Produktionsauftrag einlagern, der von der Forschungs- und Entwicklungsabteilung erstellt wird. Andere Abteilungen sollten jedoch wissen, dass sie das Produkt noch nicht produzieren sollen.</li></ul> |
 
 Wenn Sie weitere Regeln für den Status des Lebenszyklus als Anpassung hinzufügen, können Sie diese Regeln in der Benutzeroberfläche (UI) anzeigen, indem Sie **Prozesse aktualisieren** im oberen Fensterbereich auswählen. Die Schaltfläche **Prozesse aktualisieren** ist nur für Administratoren verfügbar.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

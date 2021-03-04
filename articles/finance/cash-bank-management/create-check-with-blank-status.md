@@ -38,3 +38,6 @@ Auf der Seite **Schecks** führen Sie Verwaltungsaufgaben für Schecks aus. Sie 
 Um die Seite **Schecks** zu öffnen, navigieren Sie zu **Bargeld- und Bankverwaltung \> Bankkonten \> Bankkonten** und wählen dann im Aktivitätsbereich auf der Registerkarte **Zahlungen verwalten** in der Gruppe **Zugehörige Informationen** die Option **Schecks** aus. Alternativ können Sie auch **Bargeld- und Bankverwaltung \> Abfragen und Berichte \> Schecks** verwenden.
 
 Um anschließend Schecks mit dem Status **Leer** zu erstellen, wählen Sie im Aktivitätsbereich **Blankoschecks erstellen** aus. Während das System Blankoschecks erstellt, wird das zugehörige Bankkonto vorübergehend deaktiviert. Dieses Verhalten verringert das Risiko, dass gleichzeitig Zahlungen und Blankoschecks erstellt werden. Wenn die Verarbeitung abgeschlossen ist, wird das zugehörige Bankkonto wieder aktiviert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

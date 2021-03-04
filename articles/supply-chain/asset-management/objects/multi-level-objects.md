@@ -62,3 +62,6 @@ Wenn eine Anlage über untergeordnete Anlagen verfügt, können Sie die Anlage n
 
 > [!NOTE]
 > Wenn Sie eine Anlage nicht auf diese Weise löschen können, können Sie auch einen Anlagenlebenszyklusstatus für diesen Zweck einrichten. Sie können beispielsweise einen Lebenszyklusstatus **Verschrottet** oder **Gelöscht** auf der Seite **Anlagenlebenszyklusstatus** einrichten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

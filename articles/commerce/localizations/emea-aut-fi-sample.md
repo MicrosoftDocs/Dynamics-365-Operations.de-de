@@ -487,3 +487,6 @@ Die Konfigurationsdatei befindet sich im Ordner **Konfiguration** des Erweiterun
 
 - **Endpunktadresse** – Die URL des Steuererfassungsdiensts.
 - **Zeitlimit** – Die Zeitdauer in Millisekunden, die der Treiber auf eine Antwort vom Steuererfassungsdienst wartet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Wenn für einen Kanal mehrere Abhollieferarten verfügbar sind, wird Kunden eine
 ## <a name="considerations-for-distributed-order-management"></a>Berücksichtigungen bei der verteilten Auftragsverwaltung
 
 Die [verteilte Auftragsverwaltung (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom)-Funktionen in Commerce ignorieren jegliche Verkaufspositionen, die für die Abholung im Geschäft markiert sind. Diese Funktionen wurden aktualisiert, um sicherzustellen, dass Verkaufspositionen, die mit konfigurierten Abhollieferarten verknüpft sind, die DOM-Logik umgehen und nicht einem neuen Erfüllungslagerort neu zugeordnet werden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

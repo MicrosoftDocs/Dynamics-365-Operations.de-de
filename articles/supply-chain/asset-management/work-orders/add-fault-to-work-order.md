@@ -80,3 +80,6 @@ Auf der Listenseite **Alle Anlagen** können Sie einen Anlagenfehlerbericht druc
 >[!NOTE]
 >Sie können auch einen Fehlerbericht für mehrere Anlagen oder Anlagentypen drucken, indem Sie **Anlagenverwaltung** > **Berichte** > **Anlagen** > **Anlagenfehler** auswählen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

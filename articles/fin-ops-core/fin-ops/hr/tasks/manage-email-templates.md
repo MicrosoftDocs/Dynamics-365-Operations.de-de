@@ -47,3 +47,6 @@ Sie können Informationen aus der Datenbank Ihrer Organisation in die Lesezeiche
 8. Setzen Sie die Eingabe der E-Mail-Nachricht fort, und fügen Sie die Lesezeichenfelder an den gewünschten Positionen ein.
 9. Wählen Sie **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

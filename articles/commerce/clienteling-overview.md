@@ -124,3 +124,6 @@ Führen Sie die folgenden Schritte aus, um die Integration einzurichten.
     4. Sie können über mehrere Umgebungen in Customer Insights verfügen, z. B. Test- und Produktionsumgebungen. Geben Sie im Feld **Umgebungsinstanzkennung** die entsprechenden Umgebung ein.
     5. Geben Sie im Feld **Alternative Debitorkennung** die Eigenschaft in Customer Insights ein, die der Debitorenkontonummer zugeordnet ist. (In Commerce entspricht die Debitorenkontonummer der Debitorenkennung.)
     6. Die drei verbleibenden Eigenschaften sind die Kennzahlen, die auf der Debitorenkarte im Kundenbuch angezeigt werden. Sie können bis zu drei Kennzahlen auswählen, die auf der Debitorenkarte angezeigt werden sollen. (Sie müssen jedoch keine Kennzahlen auswählen.) Wie oben angegeben, zeigt das System zuerst diese Werte und dann die Werte für Kundenbuchattributgruppe an.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Die Themen, die in der folgenden Tabelle aufgeführt sind, helfen Ihnen bei der 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

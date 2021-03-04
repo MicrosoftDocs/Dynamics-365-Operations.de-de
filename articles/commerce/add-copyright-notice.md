@@ -75,3 +75,6 @@ Die Fußzeile, die den Urheberrechtshinweis automatisch enthält, wird im untere
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

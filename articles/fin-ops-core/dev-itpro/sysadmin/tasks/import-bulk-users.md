@@ -58,3 +58,6 @@ Nach Abschluss des Imports müssen den Benutzern Rollen zugewiesen werden.
 ## <a name="run-in-a-sandbox-environment"></a>Eine Sandkastenumgebung ausführen
 1. Wählen Sie **Stapelimport** aus.
 2. Wählen Sie **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

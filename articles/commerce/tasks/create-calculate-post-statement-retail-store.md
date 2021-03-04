@@ -48,3 +48,6 @@ Dieses Thema führt Sie Schritt für Schritt durch manuelle Verfahren zum Erstel
 12. Wählen Sie auf der Startseite **Shopfinanzdaten**.
 13. Wählen Sie die Registerkarte **Gebuchte Auszüge** aus.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

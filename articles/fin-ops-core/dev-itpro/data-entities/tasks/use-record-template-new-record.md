@@ -35,3 +35,6 @@ Für diese Prozedur wird das Unternehmen USMF verwendet.
 3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 4. Klicken Sie auf **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

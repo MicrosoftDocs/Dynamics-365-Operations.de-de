@@ -150,3 +150,6 @@ Führen Sie einen der folgenden Schritte aus, um die Vorlage auf Ihrer Live-Site
 [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md)
 
 [Arbeiten mit Voreinstellungslayouts](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

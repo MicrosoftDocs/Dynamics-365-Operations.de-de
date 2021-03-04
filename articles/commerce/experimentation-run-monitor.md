@@ -53,3 +53,6 @@ Wenn Sie aus irgendeinem Grund Ihre Variationen ändern müssen, führen Sie die
 
 ## <a name="next-step"></a>Nächster Schritt
 [Eine Variation höher stufen und ein Experiment abschließen](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

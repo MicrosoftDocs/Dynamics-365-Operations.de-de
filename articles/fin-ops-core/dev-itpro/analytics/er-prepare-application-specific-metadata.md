@@ -280,3 +280,6 @@ Wenn Sie diese Modellzuordnung überprüfen müssen, indem Sie die Metadaten ein
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 Alternativ können Sie den Aufgabenleitfaden **Anwendungsmetadaten vorbereiten, die in RCS verwendet werden können** in der Anwendung sowie die Aufgabenleitfäden **Zugriff auf Anwendungsmetadaten über eine ER-Konfiguration** und **Zugriff auf Anwendungsmetadaten mithilfe verbundener Bewerbungen** in RCS wiedergeben. Diese Aufgabenleitfäden können von der Seite [Aufgabenleitfäden für elektronische Berichterstellung für Dynamics 365 for Finance and Operations 8,1](https://go.microsoft.com/fwlink/?linkid=2082739) heruntergeladen werden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -156,3 +156,6 @@ Wenn Sie eine Analyse für fehlende Konten ausführen, sind die folgenden Tasten
 [Finanzberichterstellung](financial-reporting-intro.md)
 
 [Schnittstelle „Berichts-Designer“](report-designer-interface.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

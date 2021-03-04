@@ -47,3 +47,6 @@ Nachdem Sie den neuen Zustellungsmodus ausgewählt haben, wird die Transaktionss
 [Callcenteraufträge erstellen](tasks/create-call-center-orders.md)
 
 [Transaktions-E-Mails nach Lieferart anpassen](customize-email-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

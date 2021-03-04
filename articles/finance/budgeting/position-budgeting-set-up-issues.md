@@ -64,3 +64,6 @@ Die Datumsangaben in der Kostenelementposition der Planungsposition müssen inne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

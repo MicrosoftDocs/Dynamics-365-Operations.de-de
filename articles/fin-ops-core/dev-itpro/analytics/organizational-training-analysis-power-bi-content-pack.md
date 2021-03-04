@@ -57,3 +57,6 @@ Anwendungsdaten werden für die Berichte des Inhaltspakets für das organisatori
 | Training\_Position        | Position, Titel und FTE                  | Training\_CourseAgenda Training\_CourseAttendees |
 | Training\_WorkerName      | Vorname, Nachname, vollständiger Name                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Titel- und Dienstalter                                         | Training\_CourseAttendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

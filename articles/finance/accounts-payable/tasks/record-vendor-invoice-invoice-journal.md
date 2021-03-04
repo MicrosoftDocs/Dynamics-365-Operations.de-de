@@ -49,3 +49,6 @@ Diese Aufgabenanleitung zeigt, wie Kreditorenrechnungen erfasst werden, die kein
 12. Klicken Sie auf **Buchen**.
 13. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Verwenden Sie dieses Verfahren, um Regeln zum Bestellen von Produkten in einer K
 6. Wählen Sie im Feld **Kreditorenauswahl** eine Option aus. Wählen Sie eine Regel aus, um zu steuern, welche Art von Kreditoren für die Kategorie ausgewählt werden können, wenn Anforderungen erstellt werden.  
 7. Klicken Sie auf **Schließen**. Die Richtlinienregeln, die Sie definiert haben, sind für die Anforderungen des Typs "Verbrauch" gewesen. Sollten Sie Richtlinien für Anforderungen des Typs „Wiederbeschaffung“ definieren wollen, würden Sie eine Regel für den Richtlinienregeltyp mit der Bezeichnung „Wiederbeschaffungskategorie-Zugriffsrichtlinienregel“ erstellen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

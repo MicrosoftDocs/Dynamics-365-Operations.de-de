@@ -91,3 +91,6 @@ Um eine neue Seite Ihrer Site hinzufügen, führen Sie die folgenden Schritte au
 [Füllen einer Kategorie-Landingpage](enrich-category-page.md)
 
 [Überprüfen der Zugänglichkeit des Seiteninhalts](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

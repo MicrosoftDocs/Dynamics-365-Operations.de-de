@@ -118,3 +118,6 @@ Diese Funktion befindet sich derzeit in der Vorschau. Bevor Sie die folgenden Sc
 [Erstellen, Genehmigen und Buchen von Aufträgen in Attract](./creating-jobs-attract.md)
 
 [Problembehandlungsintegration mit LinkedIn und Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

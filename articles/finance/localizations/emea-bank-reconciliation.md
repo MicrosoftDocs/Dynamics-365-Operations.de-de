@@ -59,3 +59,6 @@ Neben einem Bankauszug können Banken bestimmte Meldungen bereitstellen, die Inf
 -   (SWE) BankGirot-Rücklieferung – Kreditorenzahlungen geben das Format zurück, das dem Bankgirot-Exportformat entspricht
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

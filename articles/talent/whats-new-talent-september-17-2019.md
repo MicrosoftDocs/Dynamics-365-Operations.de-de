@@ -59,3 +59,6 @@ In dieser Version wurde das Feld „Stellenfamilie“ zur Seite **Änderungen ve
 Diese Funktionalität ist in der Sandboxumgebung verfügbar. Um diese Funktion zu aktivieren, navigieren Sie zu **> Systemverwaltung > Verknüpfung > Einstellungen > Systemparameter- > Vorschaufunktionen**. Wählen Sie **Verbessertes Arbeitskraftformular und Navigation** aus. Dies aktiviert diese Änderungen für alle Benutzer. Sie können diese Option jederzeit deaktivieren.
 
 Weitere Informationen finden Sie unter [Fortschrittlicher Mitarbeitereintrag und -Navigation](./streamlined-employee-entry.md). Um ein Video dieser Änderungen anzusehen, rufen Sie die Übersicht zu [Dynamics 365 for Talent 2019 Versionswelle 2](https://aka.ms/ROGT19RW2ROV) auf.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

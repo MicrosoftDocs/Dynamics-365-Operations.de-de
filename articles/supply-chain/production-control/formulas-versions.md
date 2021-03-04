@@ -71,3 +71,6 @@ Die Funktion Skalierbar ist nur verfügbar, wenn nur alle Artikelkomponenten in 
 
 ## <a name="use-step-consumption"></a>Verbrauch pro Serie
 Schrittverbrauch beseitigt die Menge auf der **Formelposition**,den Sie für eine Substanz eingeben müssen. Stattdessen wird der  Schrittverbrauch konfiguriert, sodass dieser den **Von Serie** Wert und eine **Menge** besitzt. Auf Basis der Chargenauftragsmenge werden die Informationen aus dem Schritt pro Serie, der die Menge befriedigt, ausgewählt Schrittverbrauch ist hilfreich, wenn der Verbrauchssatz nicht linear in Bezug auf die Chargenauftraggröße ist und die Anforderung nur erhöht, wenn ein bestimmter Mengenschwellenwert erfüllt wird. Um diese Funktion für eine neue Formel, unter der Gruppe **Verbrauchsberechnung** zu aktivieren,ändern Sie die Formeleinstellung für den betreffenden Inhaltsstoff von **Standard** auf **Schritt** Sie können dieser Verbrauchsmethode auf der Registerkarte **Einstellungen** auf der Seite **Formelposition** anzeigen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

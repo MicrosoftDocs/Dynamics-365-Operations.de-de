@@ -45,3 +45,6 @@ In diesem Artikel erfahren Sie, wie Sie Typen für persönliche Kontakte für di
    | **Alter** | Das maximale Alter eines berechtigten persönlichen Kontakts für den Vorteilsplan. Dieses Feld ist nur aktiv, wenn Sie eine Beziehung auswählen. Dieses Alter wird mit dem berechneten Alter des persönlichen Kontakts verglichen. Das berechnete Alter ist: (Dispositionsdatum – Geburtsdatum des persönlichen Kontakts / 365). Diese Zahl ist immer eine ganze Zahl. |
 
 4. Wählen Sie **Speichern**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

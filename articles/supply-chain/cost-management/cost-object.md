@@ -82,3 +82,6 @@ In der folgenden Tabelle zeigt, was ein Kostenobjekte ist und was ein Bestandsob
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

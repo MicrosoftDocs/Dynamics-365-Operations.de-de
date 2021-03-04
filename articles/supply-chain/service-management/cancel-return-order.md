@@ -49,3 +49,6 @@ Sie können eine Rückgabe stornieren, wenn Sie einen Datensatz der geplanten R�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

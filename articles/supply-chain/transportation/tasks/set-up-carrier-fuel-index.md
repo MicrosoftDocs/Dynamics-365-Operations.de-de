@@ -67,3 +67,6 @@ Dieses Handbuch zeigt, wie eine Kraftstoffindex-Region, ein Kraftstoffindex und 
 12. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 13. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

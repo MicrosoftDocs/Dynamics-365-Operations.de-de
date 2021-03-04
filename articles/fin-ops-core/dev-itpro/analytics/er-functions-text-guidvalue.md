@@ -64,3 +64,6 @@ Sie können dann einen Ausdruck wie `FILTER (Users, Users.objectId = myID)` verw
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Textfunktionen](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

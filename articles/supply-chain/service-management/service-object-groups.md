@@ -66,3 +66,6 @@ Sie können Serviceobjekte der Gruppe zuordnen, indem Sie das Formular **Service
 [Erstellen von Serviceobjekten](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

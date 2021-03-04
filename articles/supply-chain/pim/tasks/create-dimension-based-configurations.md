@@ -53,3 +53,6 @@ In der folgenden Prozedur wird gezeigt, wie eine Konfiguration für ein dimensio
     * Geben Sie eine Beschreibung für die Konfiguration ein, um zu erläutern, was sie enthält.  
 11. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

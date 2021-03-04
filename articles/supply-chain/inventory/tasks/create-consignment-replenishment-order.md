@@ -62,3 +62,6 @@ Dieses Thema erklärt, wie ein Unterlieferungs-Wiederbeschaffungsauftrag erstell
 3. Wählen Sie **Überblick** aus. Die Artikel, die als verfügbarer Lieferungsbestand eingegangen sind, der dem Kreditor gehört, sind der verfügbare Bestand. Die Restmenge für den Unterlieferungs-Wiederbeschaffungsauftrag wird im Feld **Insgesamt bestellt** angezeigt.  
 4. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

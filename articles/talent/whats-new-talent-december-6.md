@@ -143,3 +143,6 @@ Die aktualisierten Zuordnungen sollten wie folgt aussehen.
 
 ![Geschlechtsfeld-Umwandlung](./media/WorkerTransform.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Mit Serienrechnungen wird Debitoren regelmäßig ein stets identischer Betrag in
 6. Klicken Sie auf "Buchen".
     * Bucht die ausgewählten Rechnungen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Dieser Aufgabenleitfaden erfordert eine Dynamics AX-Plattform 7.1 oder höher.
 27. Aktualisieren Sie die Seite.
 28. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Für diese Bewertung können Sie den vordefinierten **Bericht über Top-Produkte
 - **Shopverwaltung**-Arbeitsbereich &gt; **Retail and Commerce** &gt; **Kanäle** &gt; **Shopverwaltung** &gt; **Berichte** &gt; **Bericht „Wichtigste Produkte”**
 - **Kategorie- und Produktverwaltung**-Arbeitsbereich &gt; **Retail und Commerce** &gt; **Produkte und Kategorien** &gt; **Shopverwaltung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**
 - **Abfragen und Berichte**-Abschnitt &gt; **Retail und Commerce** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht über Top-Produkte**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

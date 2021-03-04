@@ -108,3 +108,6 @@ Die folgende Tabelle zeigt Beispiele der technischen Layoutdefinitionen für erw
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

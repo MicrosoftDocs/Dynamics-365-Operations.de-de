@@ -115,3 +115,6 @@ Weitere Informationen finden Sie in folgenden Themen:
 
  - [Inkassoinformationen überprüfen](tasks/review-collections-information.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

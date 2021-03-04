@@ -124,3 +124,6 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung im Dat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

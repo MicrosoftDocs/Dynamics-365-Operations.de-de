@@ -72,3 +72,6 @@ In diesem Artikel wird erläutert, wie die Berechtigung der Prozessergebnisse an
    | **Ergebnisstatus** | Dies ist berechtigt oder nicht berechtigt. Der Ergebnisstatus ist nicht berechtigt, wenn der Arbeitnehmer die Kriterien für die Berechtigungsregel nicht erfüllt, wenn dem Arbeitnehmer die erforderlichen Informationen wie eine Gehaltshäufigkeit oder eine feste Vergütung fehlen oder wenn im Leistungsplan Informationen fehlen, die die Einschreibung von Arbeitnehmern verhindern. |
    | **Ergebnismeldung** | Gibt an, warum ein Arbeitnehmer keinen Anspruch auf einen Leistungsplan hat oder ob die Anspruchsregel erfüllt wurde. |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

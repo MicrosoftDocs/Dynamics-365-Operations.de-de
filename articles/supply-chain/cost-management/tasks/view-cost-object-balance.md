@@ -40,3 +40,6 @@ Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, is
 8. Deaktivieren Sie das Kontrollkästchen "Lagerplatz".
 9. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

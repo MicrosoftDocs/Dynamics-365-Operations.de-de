@@ -367,3 +367,6 @@ ER ermöglicht die automatische Übernahme von Änderungen der neuesten Version 
 
 - [Erstellen von Konfigurationen für elektronische Meldungen (ER) ](electronic-reporting-configuration.md)
 - [Den Konfigurationslebenszyklus der elektronischen Berichterstellung (EB) verwalten](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

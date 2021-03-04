@@ -92,3 +92,6 @@ In diesem Thema wird der Prozess zum Erstellen einer Anforderung beschrieben. Es
 6. Schließen Sie die Seite.
 7. Aktualisieren Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

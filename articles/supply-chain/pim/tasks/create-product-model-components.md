@@ -38,3 +38,6 @@ Einschränkungs-basierte Produktkonfigurationsmodelle verwenden Komponenten wie 
 7. Geben Sie im Feld "Beschreibung" einen Wert ein.
 8. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

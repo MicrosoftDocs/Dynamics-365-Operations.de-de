@@ -36,3 +36,6 @@ Eine Gutschrift listet die Produkte, Mengen und vereinbarten Preise für Produkt
 
 -   Statt "Rechnung" wird auf der Gutschrift "Gutschrift" als Dokumentenname angezeigt.
 -   Die Gutschrift enthält die Felder **Hauptrechnungsnr.** und **Grund für Berichtigung**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

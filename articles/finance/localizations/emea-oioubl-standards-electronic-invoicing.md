@@ -116,3 +116,6 @@ Weitere Informationen über die Einrichtung elektronischer Rechnungen finden Sie
 
 > [!NOTE] 
 > Diese Aufgabenleitfäden wurden für das für Dänemark spezifische Format elektronischer Rechnungen erstellt, *OIOUBL*, sie gelten jedoch mit geringen Abweichungen auch für andere unterstütze Länder/Regionen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

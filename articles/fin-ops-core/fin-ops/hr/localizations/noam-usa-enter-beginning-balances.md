@@ -166,3 +166,6 @@ Es ist möglich, Buchungen zu stornieren und erneut eingeben. Um die Buchung zu 
 2. Klicken Sie auf **Ja**, wenn die Nachricht „Wenn Sie diese Zahlungsaufstellung zurücksetzen, wird eine Rückbuchungszahlungsaufstellung zum Ausgleichen dieser Zahlungsaufstellung erstellt. Keine der Zahlungsaufstellungen kann bearbeitet werden. Möchten Sie diese Zahlungsaufstellung zurücksetzen?“ angezeigt wird. 
 
 Nachdem Sie die Zahlungsaufstellung rückgängig gemacht haben, können Sie eine neue Zahlungsaufstellung für den Mitarbeiter aus der zuvor erstellten Lohnabrechnung erstellen. Achten Sie darauf, dass alle fehlerhaften Positionen der Zahlungsaufstellung korrigiert werden, bevor Sie die neue Zahlungsaufstellung erzeugen, und erzeugen Sie dann die neuen Zahlungsaufstellungen mit den richtigen Beträgen. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

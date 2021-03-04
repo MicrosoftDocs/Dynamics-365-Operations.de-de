@@ -47,3 +47,6 @@ Jedes Vorkommen kann geändert werden, ohne dass dies Auswirkungen auf andere Vo
 ## <a name="developer-documentation"></a>Entwicklerdokumentation
 
 Mit dem Prozessautomatisierungs-Framework können Entwickler das Prozessautomatisierungs-Framework erweitern. Die Dokumentation [Prozessautomatisierungs-Framework](../process-automation/process-automation-framework.md) enthält Informationen darüber, wie Sie benutzerdefinierte Prozesse erstellen können, die von dem mit dem Prozessautomatisierungsassistenten geplanten Batch-Server ausgeführt werden müssen und automatisch in der Kalenderansicht angezeigt werden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

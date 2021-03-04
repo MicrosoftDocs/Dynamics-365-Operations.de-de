@@ -162,3 +162,6 @@ Bevor der Deckungsschritt beginnt, gibt es einen Vorerfassungsschritt, in dem El
 - **Eine wichtige Routine gleichzeitig** – Keine Produktprogrammplanung zusammen mit einer anderen wichtigen Routine ausführen.
 - **Sitzungsprotokoll überprüfen.**
 - **Filtern von Artikeln** – Verwenden Sie den Lebenszykluszustand, um Artikel aus dem Produktprogrammplanungslauf auszuschließen. (Nicht die Artikelnummern verwenden).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

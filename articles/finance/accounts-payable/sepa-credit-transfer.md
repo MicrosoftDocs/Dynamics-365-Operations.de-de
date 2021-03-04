@@ -126,3 +126,6 @@ Wenn Sie Zahlungen generieren, wird die Zahlungsdatei generiert, und Sie werden 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

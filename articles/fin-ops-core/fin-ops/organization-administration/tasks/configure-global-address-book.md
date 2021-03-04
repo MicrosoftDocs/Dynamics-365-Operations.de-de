@@ -45,3 +45,6 @@ Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist
 13. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Halten Sie die UMSCHALTTASTE gedrückt, um mehrere Rollen auszuwählen und diese dem Bereich **Ausgewählte Rollen** hinzuzufügen. Klicken Sie dann auf den Pfeil, um die ausgewählten Rollen hinzuzufügen.  
 14. Klicken Sie auf **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

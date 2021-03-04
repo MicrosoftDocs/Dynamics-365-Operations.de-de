@@ -210,3 +210,6 @@ Wie weiter oben in diesem Thema beschrieben, können die Attribute **Beschriftun
 
 - [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
 - [Elektronische Berichterstellungsfunktion erweitern](er-formula-language.md#functions)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

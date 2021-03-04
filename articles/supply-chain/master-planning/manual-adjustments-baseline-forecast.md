@@ -85,3 +85,6 @@ Sie können manuelle Anpassungen an der Planung auf der Seite **Bedarfsplanungsd
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

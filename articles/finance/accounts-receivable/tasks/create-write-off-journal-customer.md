@@ -84,3 +84,6 @@ In diesem Aufgabenhandbuch wird dargestellt, wie Sie die Parameter für Abschrei
 5. Klicken Sie auf **OK**.
 6. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

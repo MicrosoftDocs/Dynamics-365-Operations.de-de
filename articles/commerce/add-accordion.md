@@ -87,3 +87,6 @@ Um ein Akkordeonmodul einer FAQ-Seite hinzuzufügen und die erforderlichen Eigen
 [Registerkartenmodul](add-tab.md)
 
 [Textblockmodul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

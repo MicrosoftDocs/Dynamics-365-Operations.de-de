@@ -37,3 +37,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Herunterladen einer vor
 5. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 6. Klicken Sie auf "Herunterladen".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

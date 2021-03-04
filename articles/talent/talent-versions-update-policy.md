@@ -66,3 +66,6 @@ Sie können eine PDF-Datei der Länder, Regionen der und der von Talent unterst�
 
 Wenn Sie Entwickler sind, der an dem Erstellen länder- oder regionsspezifischer Anpassungen interessiert ist, oder an der Erstellung einer Lösung für ein Land oder eine Region, die derzeit nicht von Microsoft unterstützt wird, finden weitere Informationen unter [Globalisierung](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

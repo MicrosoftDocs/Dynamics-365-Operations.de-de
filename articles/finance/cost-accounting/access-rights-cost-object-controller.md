@@ -106,3 +106,6 @@ Zusätzliche Ressourcen
 - [Kostensteuerungs-Arbeitsbereich](cost-control-workspace.md)
 - [Dimensionshierarchie](dimension-hierarchy.md)
 - [Sicherheit für Kostensteuerungs-Inhaltspack einrichten](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

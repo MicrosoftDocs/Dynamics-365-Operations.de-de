@@ -50,3 +50,6 @@ In dieser Aufgabe wird dargestellt, wie Sie eine Freitextrechnungsvorlage zu ein
     + Jährlich – Wählen Sie diese Option aus, und geben Sie im Feld "Pro" die Anzahl von Jahren ein. Beispiel: Wenn Sie 2 eingeben, wird für diesen Debitor alle zwei Jahre eine Rechnung generiert.  
 14. Geben Sie im Feld **Pro** eine Zahl ein.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

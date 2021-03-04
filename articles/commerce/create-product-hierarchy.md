@@ -80,3 +80,6 @@ Bei Bedarf können jeder Gruppe auch Kategorieattributgruppen zugewiesen werden.
 [Produktkategorien und Produkte verwalten ](category-management-product-creation.md)
 
 [Sortierreihenfolge für Verkaufsentitäten ändern](custom-order-categories-nav-retail-prod-hierarchy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

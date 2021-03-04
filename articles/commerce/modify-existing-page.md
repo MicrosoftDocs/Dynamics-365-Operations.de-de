@@ -87,3 +87,6 @@ Das folgende Beispiel zeigt, wie Sie die Startseite ändern, indem Sie das im Vi
 [Füllen einer Kategorie-Landingpage](enrich-category-page.md)
 
 [Überprüfen der Zugänglichkeit des Seiteninhalts](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

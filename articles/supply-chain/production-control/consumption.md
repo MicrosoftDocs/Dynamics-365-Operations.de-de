@@ -82,3 +82,6 @@ Die Stücklistenmenge (BOM) ist 1 und die Produktionsmenge ist 110. Die Formel f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

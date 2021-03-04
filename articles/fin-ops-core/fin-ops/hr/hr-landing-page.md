@@ -93,3 +93,6 @@ Sie können Fragebögen entwerfen und verwalten, um Informationen für die versc
 - [Entwerfen von Fragebögen](../../../talent/design-questionnaires.md)
 - [Verteilen und Planen von Fragebögen](../../../talent/distribute-questionnaires.md)
 - [Anzeigen und Auswerten der Ergebnisse eines Fragebögen](../../../talent/evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

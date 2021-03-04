@@ -55,3 +55,6 @@ Ist dagegen der Wert im Feld **Von Datum** für die Verringerungsperiode auf den
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

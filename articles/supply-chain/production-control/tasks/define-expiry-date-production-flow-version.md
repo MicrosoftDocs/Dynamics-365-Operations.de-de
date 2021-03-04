@@ -41,3 +41,6 @@ Um die Gültigkeitsdauer und die Verarbeitung einer Produktionsflussversion an e
 6. Geben Sie im Feld "Ablaufdatum" ein Datum und eine Uhrzeit ein.
     * Zum Ablaufdatum wird keine neue Version gestartet oder aktiviert. Es ist nicht mehr möglich, Einzelvorgänge für den Produktionsfluss zu erstellen oder zu starten. Können Sie gestartete Einzelvorgänge nach Ablaufdatum noch ausführen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

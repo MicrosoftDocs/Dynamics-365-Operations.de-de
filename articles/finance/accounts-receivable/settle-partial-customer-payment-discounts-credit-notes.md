@@ -61,3 +61,6 @@ Der Ausgleich ist 100,00 und umfasst eine Zahlung von 99,00 und einen Rabatt von
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

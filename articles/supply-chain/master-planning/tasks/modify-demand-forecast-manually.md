@@ -43,3 +43,6 @@ Im folgenden Verfahren wird gezeigt, wie Sie die Planung für einen Artikel änd
 1. Klicken Sie auf **Öffnen** in Microsoft Office.
 2. Klicken Sie auf **Bearbeiten der Bedarfsprognose** in Excel. In Excel können Sie Bedarfsplanungspositionen hinzufügen, löschen und bearbeiten. Wenn die Daten in Excel nicht angezeigt werden können, müssen Sie sich mit aktivierter Option „Angemeldet bleiben“ anmelden und der Datenverbindungs-App vertrauen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

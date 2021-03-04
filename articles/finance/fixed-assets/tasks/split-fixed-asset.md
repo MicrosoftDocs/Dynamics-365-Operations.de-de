@@ -63,3 +63,6 @@ Bevor ein vollständig abgeschriebener Vermögenswert aufgeteilt wird, sollte de
     - Eine "Anschaffungstransaktion" wird für die neue Anlage für denselben Betrag erstellt.
 
 4. Wählen Sie **Buchen** aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

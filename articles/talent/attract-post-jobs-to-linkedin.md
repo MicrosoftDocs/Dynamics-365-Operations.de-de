@@ -80,3 +80,6 @@ Wenn Sie Schwierigkeiten haben, Stellenausschreibungen auf LinkedIn zu veröffen
 [Kandidaten suchen mithilfe von LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 
 [Probleme mit der Integration mit LinkedIn](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

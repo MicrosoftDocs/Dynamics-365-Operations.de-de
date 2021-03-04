@@ -81,3 +81,6 @@ Um diese Schritte abzuschließen, müssen Sie zunächst die Schritte in der Proz
 25. Klicken Sie auf "OK".
     * Analysieren Sie die erstellte Zahlungsdatei im XML-Format. Vergleichen Sie diese mit dem entworfenen Dokumentlayout und den definierten Zahlungstransaktionsattributen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

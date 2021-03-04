@@ -101,3 +101,6 @@ Wenn derselbe Bericht für den Kunden **Litware Retail** am 17. Dezember 2015 in
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Textfunktionen](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

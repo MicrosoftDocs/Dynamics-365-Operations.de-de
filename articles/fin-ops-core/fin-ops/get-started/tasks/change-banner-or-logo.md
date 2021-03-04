@@ -39,3 +39,6 @@ Im Folgenden werden die Schritte aufgeführt, die Systemadministratoren verwende
 6. Wechseln Sie zu **Navigationsbereich > Module > Allgemein > Allgemein > Standarddashboard**. Sie sollten das neue Banner- oder Logobild im Dashboard finden.  
     
     Möglicher Weise müssen Sie Ihr Unternehmen mithilfe der Unternehmens-Auswahl in das Unternehmen ändern, für das Sie das Banner für hochgeladen haben.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

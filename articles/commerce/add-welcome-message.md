@@ -68,3 +68,6 @@ Die Begrüßungsmeldung wird nun oben auf jeder Standortsseite angezeigt, das da
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

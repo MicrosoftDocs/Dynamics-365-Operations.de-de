@@ -176,3 +176,6 @@ Weitere Informationen zum Einrichten und Anpassen des Kundenportals finden Sie i
 - [Aktualisieren Sie ein Portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Portalkonfiguration migrieren](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Solution Lifecycle Management: Dynamics 365 for Customer Engagement Apps](https://www.microsoft.com/download/details.aspx?id=57777)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

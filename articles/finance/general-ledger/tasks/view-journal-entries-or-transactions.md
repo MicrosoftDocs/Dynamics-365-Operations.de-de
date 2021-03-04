@@ -43,3 +43,6 @@ Dieses Verfahren führt Sie durch die Verwendung der "Belegtransaktionsabfrage",
 12. Klicken Sie im Aktionsbereich auf **Originaldokument**.
 13. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

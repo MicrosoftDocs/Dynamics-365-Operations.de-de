@@ -48,3 +48,6 @@ Kennung des funktionalen Standorts/Kennung des funktionalen Standorts (falls es 
 Wenn Sie eine Anlage in der Baumstruktur ausgewählt haben, können Sie **Aktive Anfragen** oder **Aktive Arbeitsaufträge** auswählen, um die Wartungsanfragen oder die Arbeitsaufträge anzuzeigen, die der Anlage zugeordnet sind. Sie können auch **Öffnen** \> **Funktionaler Standort**, **Anlage** oder **Anlagenstückliste** auswählen, um die zugehörige Ansicht zu öffnen.
 
 Die Option **Funktionale Standorte der Anlage**, die Sie im Feld **Ansicht** auswählen können, ist ebenfalls bei jeder Anlagensuche verfügbar, in der Sie eine Anlage auswählen können. Die Strukturansicht wird auf einer Registerkarte **Anlagenansicht** angezeigt, auf der Sie beispielsweise [eine Anlage erstellen](../objects/create-an-object.md), eine Wartungsanfrage erstellen oder einen Arbeitsauftrag erstellen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

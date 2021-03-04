@@ -138,3 +138,6 @@ So zeigen Sie das Gantt-Diagramm an und arbeiten damit:
     - Um einen angezeigten Arbeitsauftrag neu zu planen, wählen Sie ihn aus und ziehen Sie ihn auf das entsprechende neue Datum und die entsprechende neue Uhrzeit.
 
 1. Wenn Sie Änderungen vorgenommen haben, wählen Sie im Aktivitätsbereich **Speichern** aus, um sie zu speichern.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

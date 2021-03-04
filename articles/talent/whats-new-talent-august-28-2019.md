@@ -90,3 +90,6 @@ Weitere Informationen finden Sie unter [Fortschrittlicher Mitarbeitereintrag und
 ### <a name="platform-update-29"></a>Plattformupdate 29
 
 Zusätzliche Details zur Plattformaktualisierung 29 finden Sie unter [Vorschaufunktionen in Dynamics 365 for Finance and Operations Plattformaktualisierung 29 (Oktober 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

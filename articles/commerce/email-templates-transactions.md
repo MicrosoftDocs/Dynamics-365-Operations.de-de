@@ -203,3 +203,6 @@ Weitere Informationen über die Konfiguration von E-Mails in Dynamics 365 Commer
 [Einrichten von E-Mail-Bons](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [E-Mail-Zugänge von Modern POS senden](email-receipts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

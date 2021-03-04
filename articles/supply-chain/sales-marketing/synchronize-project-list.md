@@ -67,3 +67,6 @@ Die Entität **Externes Projekt** ruft alle Projekte aus Supply Chain Management
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projekte (Supply Chain Management zu Field Service): Projekt
 
 [![Vorlagenzuordnung in Datenintegration](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

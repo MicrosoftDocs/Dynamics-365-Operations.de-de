@@ -57,3 +57,6 @@ Diese Prozedur konzentriert sich auf das Ausführen von Kanban-Bearbeitungs-Einz
 6. Geben Sie im Feld "Gutmenge" eine Zahl ein.
 7. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

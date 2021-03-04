@@ -131,3 +131,6 @@ Bevor Sie die Gruppierung von Kommissionierpositionen einrichten können, müsse
 >    - Arbeitspositionen, für die noch Wiederbeschaffungsarbeiten durchgeführt werden müssen.
 >    - Zu hohe Entnahme.
 >    - Artikelneuzuordnung für Entnahme mit unzureichender Menge
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

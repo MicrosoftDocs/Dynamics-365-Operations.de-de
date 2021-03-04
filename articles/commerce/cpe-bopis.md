@@ -164,3 +164,6 @@ Bei allen allgemeinen Problemen sollten Sie als ersten Schritt immer die Ereigni
 [Online-Zahlungsmittel mit dem Adyen Connector speichern](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
 [Überblick über Omni-Channel-Zahlungen](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

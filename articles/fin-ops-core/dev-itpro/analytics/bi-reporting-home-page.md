@@ -89,3 +89,6 @@ Die folgenden Berichte enthalten Referenzinformationen zu den Objekten:
 - [Bericht zu Lizenzcodes und Konfigurationsschlüsseln](../sysadmin/license-codes-configuration-keys-report.md)
 - [Verfügbare SQL Server Reporting Services-Berichte (SSRS)](SSRS-report.md)
 - [Bericht zu Workflowtypen](../../fin-ops/organization-administration/workflow-types-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Gehen Sie nach den Schritten in diesem Thema vor, um SQL Server Reporting Servic
 13. Klicken Sie auf **Beenden**, um den **Reporting Services-Konfigurations-Manager** zu schließen.
 
     [![Reporting Services-Konfigurations-Manager schließen](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

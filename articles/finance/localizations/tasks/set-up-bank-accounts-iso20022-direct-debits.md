@@ -69,3 +69,6 @@ Dies ist der vierte von sechs Aufgaben, die das Verfahren für Debitorenzahlunge
 8. Klicken Sie auf "OK".
 9. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

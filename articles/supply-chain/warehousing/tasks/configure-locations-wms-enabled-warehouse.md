@@ -175,3 +175,6 @@ Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen W
 6. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 7. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

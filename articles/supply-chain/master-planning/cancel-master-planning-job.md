@@ -53,3 +53,6 @@ Diese sollten nur dann verwendet werden, wenn der Abbruch des Generalplanungsjob
 4. Wählen Sie in **Batchaufgaben** die zu beendenden Aufgaben aus.
 5. Klicken Sie auf **Status ändern**, wählen Sie **Abbrechen**, und klicken Sie auf **OK**.
 6. Klicken Sie auf dem Inforegister **Batchaufgaben** auf **Abbrechen**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

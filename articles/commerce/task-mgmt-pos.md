@@ -64,3 +64,6 @@ Die folgende Abbildung zeigt die Registerkarte **Aufgabenlisten**.
 [Aufgabenlisten erstellen und Aufgaben hinzufügen](task-mgmt-create-lists.md)
 
 [Arbeitspläne den Filialen oder Mitarbeitern zuweisen](task-mgmt-assign-lists.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

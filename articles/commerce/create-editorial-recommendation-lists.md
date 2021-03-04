@@ -75,3 +75,6 @@ Um eine kuratierte Produktempfehlungsliste zu erstellen, folgen Sie diesen Schri
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

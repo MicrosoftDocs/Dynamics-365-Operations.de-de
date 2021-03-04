@@ -50,3 +50,6 @@ Eine Beziehung gegenseitige kann für die **Intercompany-Verrechnung** Seite ein
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

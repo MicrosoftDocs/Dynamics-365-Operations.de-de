@@ -45,3 +45,6 @@ In Microsoft Dynamics 365 Human Resources legen Wartezeiten einen Meilenstein zu
    | **Wartetag** | Wählen Sie einen Wartetag zum Berechnen des Wartedatums aus. |
 
 4. Wählen Sie **Speichern**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -136,3 +136,5 @@ Diese Prozedur zeigt Ihnen an, wie ein Qualitätsmanagementprozess aktiviert wir
 
 > [!NOTE]
 > Die Funktion *Qualitätsmanagement für Lagerortprozesse* steuert bietet zusätzliche Einstellungsoptionen für Qualitätszuordnungen. Sie fügt eine neue Bedingung (**Zutreffender Lagerorttyp**) hinzu sowie eine neue Einstellung (**Qualitätsverarbeitungsrichtlinie**). Wenn Sie diese Funktion aktiviert haben, finden Sie unter [Qualitätsmanagement für Lagerortprozesse](../quality-management-for-warehouses-processes.md) weitere Details.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Der Dienst sendet E-Mail-Benachrichtigungen, indem er vordefinierte E-Mail-Vorla
 Das folgende Bild zeigt die Warnbenachrichtigungen, wenn sie per E-Mail eingehen.
 
 [![Auf Vorlagen basierende Warnbenachrichtigungen für Datensatzerstellungen, Feldänderungen und Vorlagenlöschvorgänge](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ Zu Textwecken führen Sie die Formatzuordnung mithilfe der Datei SampleIncomingM
 2. Klicken Sie auf "OK".
     * Überprüfen Sie die Ausgabe im XML-Format, das die Daten darstellt, die aus der ausgewählten Datei importiert wurden und in das Datenmodell übertragen wurden. Beachten Sie, dass nur 3 Positionen der importierten TXT-Datei verarbeitet wurden. Der IBAN-Code in Position 4, der ungültig ist, wurde übersprungen, und eine Fehlermeldung wird im Infolog bereitgestellt.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

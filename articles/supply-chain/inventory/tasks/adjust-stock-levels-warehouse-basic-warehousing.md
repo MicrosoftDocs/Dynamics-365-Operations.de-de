@@ -60,3 +60,6 @@ Diese Prozedur führt Sie durch die einzelnen Schritte der Erstellung und des Bu
 5. Schließt das Formular.
 6. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

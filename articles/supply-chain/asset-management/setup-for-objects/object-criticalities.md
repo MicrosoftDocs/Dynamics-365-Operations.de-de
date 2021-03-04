@@ -62,3 +62,6 @@ Um kritische Anlagenzustände einzurichten, erstellen Sie zunächst die Typen de
 - Die Kritikalität eines Arbeitsauftrags wird jedes Mal neu berechnet, wenn eine Arbeitsauftragsposition zum Arbeitsauftrag hinzugefügt oder daraus gelöscht wird.
 - Wenn ein Arbeitsauftrag mehrere Arbeitsauftragseinzelvorgänge enthält, wird die höchste Kritikalität, gemäß dem Feld **Faktor** auf der Seite **Typen kritischer Werte**, immer für den Arbeitsauftrag verwendet.
 - Im Allgemeinen kann sich die Anlagenkritikalität mit der Zeit ändern. Kritikalität kann durch den Einkauf von neuer Ausrüstung, Wiederaufbereitungen usw. beeinflusst werden. Sie sollten die kritischen Anlagenzustände regelmäßig erneut bewerten (beispielsweise einmal pro Jahr), um sicherzustellen, dass die Kritikalitätsdefinitionen mit den Einstellungen der aktuellen Produktion übereinstimmen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

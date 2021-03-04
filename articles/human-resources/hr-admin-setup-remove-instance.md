@@ -85,3 +85,6 @@ So stellen Sie die Umgebung wieder her:
 
 > [!Warning]
 > Power Apps Umgebungen werden nach dem Löschen nur sieben Tage lang gespeichert. Sie müssen die Umgebung innerhalb dieser sieben Tage wiederherstellen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

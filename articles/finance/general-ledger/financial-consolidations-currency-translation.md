@@ -182,3 +182,6 @@ Nachfolgend sind einige der Konsolidierungsszenarien, die Finanzberichterstattun
 
 ## <a name="generating-consolidated-financial-statements"></a>Konsolidierte Finanzaufstellungen erstellen
 Informationen zum Szenarien, in denen Sie möglicherweise Finanzaufstellungen generieren können, finden Sie unter [Konsolidierte Finanzaufstellungen erstellen](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

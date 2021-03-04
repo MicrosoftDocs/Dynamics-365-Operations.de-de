@@ -41,3 +41,6 @@ Eine Organisationseinheit ist eine Organisation, die dazu dient, die Kontrolle �
     + Geben Sie Informationen zu den Kommunikationsmethoden ein, beispielsweise E-Mail-Adressen, URLs und Telefonnummern. Klicken Sie auf Neu, um einen neuen Kommunikationsdatensatz einzugeben. Klicken Sie auf **Weitere Optionen > Erweitert**, um einen vorhandenen Kommunikationsdatensatz zu ändern.   
 6. Optional ändern Sie die **Nummer der Organisationseinheit**, sofern erforderlich. Beachten Sie, dass diese Nummer ein eindeutiger Bezeichner für den entsprechenden Datensatz **Partei** ist und nicht das Gleiche wie eine andere Organisationseinheit sein kann.
 7. Wählen Sie **Speichern**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Diese Liste soll Ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

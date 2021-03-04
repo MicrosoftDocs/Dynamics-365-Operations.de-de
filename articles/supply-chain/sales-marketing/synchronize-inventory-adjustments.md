@@ -79,3 +79,6 @@ Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Lagerumlagerung (Field Service zu Supply Chain Management): Lagerumlagerung
 
 [![Vorlagenzuordnung in Datenintegration](./media/FSTrans1.png)](./media/FSTrans1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

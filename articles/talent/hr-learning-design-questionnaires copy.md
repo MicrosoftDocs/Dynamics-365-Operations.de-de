@@ -246,3 +246,6 @@ Alternativ können Sie einen Fragebogen z. B. so einrichten, dass Frage 2 die n�
 
 [Anzeigen und Auswerten der Ergebnisse eines Fragebögen](evaluate-questionnaire-results.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

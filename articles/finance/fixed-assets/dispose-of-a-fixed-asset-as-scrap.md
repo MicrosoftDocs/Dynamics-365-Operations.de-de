@@ -82,3 +82,6 @@ Die folgende Abbildung zeigt das Anlagensaldo.
 Die folgende Abbildung zeigt den Beleg, der gebucht wird.
 
 [![Nettobuchwert](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

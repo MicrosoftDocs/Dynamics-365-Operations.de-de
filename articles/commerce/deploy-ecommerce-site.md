@@ -112,3 +112,6 @@ Um auf den Commerce-Website-Generator zuzugreifen, gehen Sie zur Registerkarte *
 [Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)](add-cdn-support.md)
 
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

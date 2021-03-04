@@ -65,3 +65,6 @@ Die folgende Vorgehensweise beschreibt die Beziehung zwischen Anlagen, Arbeitsau
 
 7. Um einen Überblick der Projekte anzuzeigen, die einer Anlage zugeordnet sind, wählen Sie **Anlagen** > **Anlagen** > **Anlagen** und dann im Feld **Anlagennummer** den Link für die Anlage aus, um die Detailansicht zu öffnen. Erweitern Sie den Bereich **Zugehörige Informationen** auf der rechten Seite der Seite, und wählen Sie das Inforegister **Zugeordnete Projekte** aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -128,3 +128,6 @@ Durch die Auswahl von **Transaktionsoptionen \> Gebühren \> Gebühren verwalten
 [Erweiterte automatische Omni-Channel-Belastungen](omni-auto-charges.md)
 
 [Kopfbelastungen auf übereinstimmende Verkaufspositionen aufteilen](pro-rate-charges-matching-lines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

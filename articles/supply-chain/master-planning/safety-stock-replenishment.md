@@ -116,3 +116,6 @@ Die Priorität zur Erfüllung der Sicherheitsbestandsanforderungs-Transaktion wi
 Während der Deckungsphase der Produktprogrammplanung wird die Priorität für die Wiederbeschaffung von Sicherheitslagerbestand nicht mehr aufgehoben. Verfügbarer Lagerbestand kann vor irgendwelchen anderen Bedarfstypen verwendet werden. Während der Verzögerungsberechnung wird neue Logik hinzugefügt, um die verzögerten Verkaufspositionen, Stücklistenpositionsbedarf und alle anderen Bedarfstypen durchzugehen, um zu bestimmen, ob sie rechtzeitig geliefert werden können, vorausgesetzt, dass der Sicherheitslagerbestand verwendet wird. Wenn das System identifiziert, dass es Verzögerungen durch die Verwendung des Sicherheitsbestands minimieren kann, dann werden Verkaufspositionen und Stücklistenpositionen ihre anfängliche Deckung durch Sicherheitsbestand ersetzen, und das System löst stattdessen die Wiederbeschaffung für den Sicherheitsbestand aus.
 
 Wenn der Plan oder der Artikel nicht für verzögerte Berechnung eingerichtet ist, dann hat die Sicherheitsbestandseinschränkung dieselbe Priorität, wie beliebige andere Bedarfstypen. Das bedeutet, dass es eine Reserve von griffbereitem und anderem verfügbarem Bestand vor anderen Bedarfstypen gibt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

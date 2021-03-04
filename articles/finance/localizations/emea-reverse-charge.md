@@ -137,3 +137,6 @@ Die folgenden Seiten und Menüelemente, die mit der Funktionseinstellung zusamme
  - **Außenhandelsparameter** (**USt.** > **Einrichten** > **Mehrwertsteuer** > **Außenhandel** > **Außenhandelsparameter**). Siehe [Länder-/Regionseigenschaften einrichten](#Set-up-Country/region-properties)
 
 Das Kontrollkästchen **Verlagerung der Steuerschuld** ist auf den Seiten **Mehrwertsteuergruppe** und **Gebuchte Mehrwertsteuer** verfügbar. Weitere Informationen finden Sie in den Abschnitten [Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen einrichten](#sales-tax-item-sales-tax-groups), [Verlagerung der Steuerschuld für eine Verkaufsrechnung](#reverse-charge-sale) und [Verlagerung der Steuerschuld für eine Einkaufsrechnung](#reverse-charge-purchase).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

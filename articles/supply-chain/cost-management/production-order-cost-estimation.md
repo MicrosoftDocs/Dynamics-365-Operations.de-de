@@ -65,3 +65,6 @@ Eine Vorkalkulation stellt auch die folgenden Informationen bereit:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

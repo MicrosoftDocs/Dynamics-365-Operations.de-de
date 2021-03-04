@@ -110,3 +110,6 @@ Sie können Benachrichtigungen an Personen senden, wenn eine automatisierte Aufg
     </table>
 
 8. Wiederholen Sie die Schritte 3 bis 7 für jedes in Schritt 2 ausgewählte Ereignis.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

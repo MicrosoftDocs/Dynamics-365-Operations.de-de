@@ -53,3 +53,6 @@ Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, is
 3. Wählen Sie **OK**.
 4. Wählen Sie **Bestellvorschläge** aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

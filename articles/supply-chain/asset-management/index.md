@@ -38,3 +38,6 @@ Das folgende Bild ist eine Darstellung der Schnittstellen zu anderen Modulen in 
 ![Übersicht über die Integration von Asset Management](media/overview-integrate2.jpg)
 
 Asset Management ermöglicht Ihnen, Aufgaben in Bezug auf die Verwaltung und Wartung zahlreicher Ausrüstungen in Ihrem Unternehmen, z. B. Maschinen, Produktionsanlagen und Fahrzeuge, effizient zu verwalten und auszuführen. Asset Management unterstützt Lösungen über zahlreiche Branchen hinweg.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

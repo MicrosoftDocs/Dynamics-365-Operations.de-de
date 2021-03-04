@@ -63,3 +63,6 @@ Ein Plantyp kann Abdeckungsoptionen definieren. Die Abdeckungsoptionen werden im
    | **Berichtsfenster** | Gibt das Berichtsfenster (in Tagen) des Lebensereignisses an. **Hinweis**: Wenn Sie keinen Betrag eingeben, geht das System davon aus, dass das Berichtsfenster null ist und verarbeitet das Lebensereignis nicht. |
 
 5. Wählen Sie **Speichern**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Wenn der erste Wert und der zweite Wert Werte des Datentyps *Container (Datensat
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Logische Funktionen](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Um die Verwaltung von Qualitätsmängeln zu aktivieren, führen Sie die folgende
 [Qualitätsmanagementprozesse](quality-management-processes.md)
 
 [Richten Sie Voraussetzungen für die Qualitätsmangelverwaltung ein](tasks/set-up-prerequisites-nonconformance-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

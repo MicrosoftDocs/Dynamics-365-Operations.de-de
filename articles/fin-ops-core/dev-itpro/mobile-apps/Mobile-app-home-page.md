@@ -151,3 +151,6 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 
 ## <a name="troubleshooting"></a>Problembehandlung
 [Mobile Plattformressourcen](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 1.  Wählen Sie in der mobilen App den Arbeitsbereich **Unternehmensverzeichnis** aus.
 2.  Geben Sie im Feld **Suchen** den Vornamen, den Nachnamen, den Titel oder die Abteilung des Mitarbeiters ein, um die Suche zu starten.
 3.  Wählen Sie einen Mitarbeiter aus. Die Seite **Mitarbeiterprofil** wird angezeigt. Die Informationen auf dieser Seite umfassen den Vornamen, Nachnamen, Titel und die Abteilung des Mitarbeiters.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

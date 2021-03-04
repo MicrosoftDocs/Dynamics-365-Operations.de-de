@@ -60,3 +60,6 @@ Der Status des Einzelvorgangs lautet **Wird storniert**, bis der Planungsoptimie
 [Planhistorie und Planungsprotokolle anzeigen](plan-history-logs.md)
 
 [Filter auf einen Plan anwenden](plan-filters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Die Belastungen für einen produzierten Artikel werden zum Zwecke der Standardko
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -192,3 +192,6 @@ Der Status des ausgewählten Einzelvorgangs und der Status sämtlicher angeschlo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

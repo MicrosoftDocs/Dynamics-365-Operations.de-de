@@ -60,3 +60,6 @@ Die folgende Abbildung zeigt ein Beispiel der Versandmöglichkeiten im Dialogfel
 [!NOTE]
 Wenn Sie die Planung für einen Arbeitsauftrag löschen möchten, wählen Sie den Arbeitsauftrag in **Alle Arbeitsaufträge** aus und klicken Sie auf **Zeitplan löschen** in der Registerkarte **Allgemein**. Denken Sie daran, den Arbeitsauftragslebenszyklusstatus manuell zu aktualisieren, wenn Sie den Zeitplan löschen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

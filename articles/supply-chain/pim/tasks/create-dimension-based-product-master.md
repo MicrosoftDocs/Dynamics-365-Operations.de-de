@@ -42,3 +42,6 @@ Im folgenden Verfahren, wie einen neuen Produktmaster mit Technologie der dimens
     * Wählen Sie die Technologie der dimensionsbasierten Konfiguration aus.  
 9. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

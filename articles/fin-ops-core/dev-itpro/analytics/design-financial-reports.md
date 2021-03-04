@@ -197,3 +197,6 @@ In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine paralle
 [Finanzberichte anzeigen](../../../finance/general-ledger/view-financial-reports.md)
 
 [Dynamics 365 Finance-Blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

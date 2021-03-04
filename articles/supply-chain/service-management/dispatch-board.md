@@ -54,3 +54,6 @@ Informationen dar√ºber, wie bestimmte Aufgaben in einer Einsatzplanung durchgef√
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

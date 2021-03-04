@@ -49,3 +49,6 @@ Mithilfe dieser Aufgabe wird die Abschreibungskonvention für eine angegebene An
 15. Klicken Sie auf "OK".
     *  Ergebnisse des Prozesses werden im "Massenaktualisierungsbericht" angezeigt.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

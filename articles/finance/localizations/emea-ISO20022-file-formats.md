@@ -129,3 +129,6 @@ Weitere Informationen über die elektronische Berichterstattung finden Sie unter
 - [Zahlungsmethode für ISO20022-Kreditübertragung einrichten](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Zahlungsmethode für ISO20022-Direktbelastungen einrichten](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Kreditoren und Kreditorenbankkonten für ISO20022-Überweisungen einrichten](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

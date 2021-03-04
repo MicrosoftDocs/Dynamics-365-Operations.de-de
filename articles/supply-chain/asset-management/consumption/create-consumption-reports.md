@@ -78,3 +78,6 @@ Wenn Sie den Verbrauch für Arbeitsaufträge gebucht haben, können Sie einen Ar
 >[!NOTE]
 >Sie können auch einen [Arbeitsauftragsbericht](../work-orders/work-order-report.md) generieren, der zusätzliche Arbeitsauftragseinzelheiten enthält.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

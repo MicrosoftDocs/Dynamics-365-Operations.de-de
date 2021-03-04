@@ -56,3 +56,6 @@ In diesem Thema geht es um die Terminierung eines Fertigungsauftrags mit Arbeits
 6. Wählen Sie im Aktionsbereich **Produktionsauftrag**.
 7. Wählen Sie **Alle Aufträge**. Beachten Sie, dass (basieren auf der aktiven Route) 5 neue Einzelaufträge mit Feinterminierung erstellt werden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

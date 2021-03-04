@@ -49,3 +49,6 @@ Wenn die Kontrollkästchen **Bestimmte Regeln zur halbjährlichen Abschreibung a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

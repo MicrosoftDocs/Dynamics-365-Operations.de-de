@@ -110,3 +110,6 @@ Das Rechnungsjournal, das nach dem Buchen erstellt wird, enthält nicht den übe
 Es ist wichtig, dass das Rechnungsjournal nicht den übergeordneten Bündelartikel enthält, weil alle Vorgänge, die nach Buchung der Rechnung erfolgen, auf dem Rechnungsjournal beruhen. Wenn Sie beispielsweise im Aktionsbereich auf der Registerkarte **Verkaufen** eine Gutschrift erstellen, enthält diese die Komponentenartikel, nicht aber den übergeordneten Artikel.
 
 [![Gutschrift mit Komponentenartikeln, aber ohne übergeordneten Artikel](./media/bundle-09.png)](./media/bundle-09.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

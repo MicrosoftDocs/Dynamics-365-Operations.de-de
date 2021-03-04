@@ -240,3 +240,6 @@ Verwenden Sie die **Außenhandelsparameter** Seite, um die Parameter in der folg
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

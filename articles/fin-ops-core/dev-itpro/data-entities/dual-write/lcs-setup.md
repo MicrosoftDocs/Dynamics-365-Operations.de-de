@@ -90,3 +90,6 @@ Folgen Sie diesen Schritten, um eine Dual-Schreib-Verbindung einzurichten.
 
 > [!NOTE]
 > Sie können die Verknüpfung von Umgebungen mit LCS nicht aufheben. Um die Verknüpfung einer Umgebung aufzuheben, öffnen Sie den **Datenintegration** Arbeitsbereich in der Finance and Operations Umgebung und wählen Sie dann **Verknüpfung aufheben**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

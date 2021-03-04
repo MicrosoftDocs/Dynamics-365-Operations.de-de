@@ -44,3 +44,6 @@ Microsoft Dynamics 365 Finance enthält außerdem ein Beispielformat (mit dem Sc
 - Wenn Sie Zahlungen für das konfigurierte Bankkonto in der Zahlungserfassung generieren, werden die Schecks gedruckt, indem das angegebene Format verwendet wird.
 
 Weitere Informationen finden Sie unter [Ein elektronisches Berichterstellungsformat ändern](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

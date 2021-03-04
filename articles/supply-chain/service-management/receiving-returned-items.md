@@ -45,3 +45,6 @@ Je nach Unternehmensrichtlinie können die Artikel in der Rücklieferung in Quar
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

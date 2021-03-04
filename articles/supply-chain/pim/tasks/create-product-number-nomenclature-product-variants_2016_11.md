@@ -102,3 +102,6 @@ Diese Verfahren zeigt, wie eine Produktnummerenbezeichnung für konfigurierte Pr
 43. Schließen Sie die Seite.
 44. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

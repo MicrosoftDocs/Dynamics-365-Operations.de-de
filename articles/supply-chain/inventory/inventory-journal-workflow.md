@@ -112,3 +112,6 @@ So überprüfen Sie die Workflowhistorie für eine Erfassung:
 1. Erweitern Sie im Navigationsbereich **Bestandsverwaltung \> Erfassungseinträge \> Artikel** und wählen Sie dann einen Bestandserfassungstyp aus.
 1. Öffnen Sie die relevante Erfassung.
 1. Wählen Sie die Schaltfläche **Workflow** im Aktionsbereich, um ein Drop-down-Dialogfeld zu öffnen. Wählen Sie **Workflowhistorie**. Weitere Informationen finden Sie unter [Workflowhistorie anzeigen](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Erstellen Sie mithilfe dieser Aufgabenanleitung eine Mahnschreibensequenz. Für 
 26. Erweitern Sie das Inforegister **Hinweis**.
 27. Geben Sie den Text ein, der im Mahnschreiben für den ausgewählten Mahnschreibencode angezeigt werden soll. Sie können diesen Text in mehrere Sprachen mithilfe des Menüs "Übersetzungen" über dem Hinweisfeld übersetzen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

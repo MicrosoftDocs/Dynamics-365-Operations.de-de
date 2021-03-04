@@ -108,3 +108,5 @@ Im Rahmen des Aufrufs der Übermittlungs-API führt die Personalverwaltung vor d
 
 - [MyLeaveRequests-Überblick](hr-developer-api-myleaverequests-overview.md)
 - [Authentifizierung](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

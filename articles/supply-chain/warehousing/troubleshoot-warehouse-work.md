@@ -50,3 +50,6 @@ Die Dimension **Besitzer** für die Nachverfolgung fehlt, wenn die Lagerort App 
 ### <a name="issue-resolution"></a>Problemlösung
 
 Microsoft hat dieses Problem untersucht und festgestellt, dass es sich um eine Einschränkung der Funktion handelt. Derzeit unterstützen die Prozesse der Lagerortverwaltung nur Bestände, die im Besitz der juristischen Entität sind.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Die folgenden Daten werden verwendet, um die Berichte im Power BI-Inhalt zur **W
 | Position         | Position, Titel und FTE                  | Kursagenda, Kursteilnehmer |
 | Mitarbeitername    | Vorname, Nachname, vollständiger Name                             | Kursteilnehmer |
 | Mitarbeitertitel   | Titel- und Dienstalter                                         | Kursteilnehmer |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

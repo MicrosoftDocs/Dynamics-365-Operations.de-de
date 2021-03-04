@@ -59,3 +59,6 @@ Wenn das Servergebietsschema der Microsoft Dynamics 365 Finance-Instanz als **EN
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Textfunktionen](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

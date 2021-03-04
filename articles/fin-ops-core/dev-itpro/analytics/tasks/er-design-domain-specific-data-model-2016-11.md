@@ -187,3 +187,6 @@ Sie erstellen ein neues Datenmodell für die ausgewählte Konfiguration. Diese K
 65. Klicken Sie auf "Speichern".
 66. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

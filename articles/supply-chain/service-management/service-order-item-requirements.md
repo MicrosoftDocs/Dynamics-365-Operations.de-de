@@ -70,3 +70,6 @@ Wurde für einen Serviceauftrag ein Artikelbedarf erstellt, kann der Serviceauft
 
 [Formular "Artikelbedarf"](https://technet.microsoft.com/library/aa552021\(v=ax.60\))
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

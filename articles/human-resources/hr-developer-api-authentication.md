@@ -185,3 +185,6 @@ namespace TalentODataPoC
 ```
 
 Nachdem Sie ein Zugriffstoken abgerufen haben, übergeben Sie das Token im Autorisierungsheader wie oben beschrieben bei jeder an die Daten-API gesendeten Anforderung als Bearer-Token.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

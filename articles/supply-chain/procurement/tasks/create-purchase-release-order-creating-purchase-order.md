@@ -64,3 +64,6 @@ Im folgenden Verfahren, wie ein Kaufvertrag verwendet, wenn Sie eine Bestellung 
 3. Schließen Sie die Seite.
 4. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

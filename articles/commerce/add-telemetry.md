@@ -122,3 +122,6 @@ Führen Sie die folgenden Schritte aus, um ein externes Skript direkt zu einer V
 [Hinzufügen eines Urheberrechtshinweises](add-copyright-notice.md)
 
 [Hinzufügen von Sprachen zu Ihrer Website](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

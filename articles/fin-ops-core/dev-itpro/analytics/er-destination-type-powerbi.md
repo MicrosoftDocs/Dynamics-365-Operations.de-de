@@ -38,3 +38,6 @@ Setzen Sie **Aktiviert** auf **Ja**, um Ihre ER-Konfiguration zu verwenden, um d
 
 - [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 - [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Diese Verfahren zeigt, wie ein Verkaufsangebot erstellt und aktualisiert wird. S
 13. Klicken Sie auf **Aufträge**
 14. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

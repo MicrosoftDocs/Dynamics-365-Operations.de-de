@@ -130,3 +130,6 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 3. Klicken Sie auf **Durchsuchen** und wählen Sie die Datei **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml** aus.
 4. Klicken Sie auf **OK**.
 5. Erstellte XML Datei überprüfen. Beachten Sie, dass dieselbe Datei importiert wurde, da das Formatdesign nun das  ID-Attribut für das Element Dokument als optional betrachtet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

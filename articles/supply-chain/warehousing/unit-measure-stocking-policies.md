@@ -50,3 +50,6 @@ Als Teil der Erstellung von freigegebenen Produkten müssen Sie Standardeinheite
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Sie können Ziele erstellen, Aktivitäten hinzufügen, Messungen nachverfolgen u
     * Es gibt oftmals merhere Ziele, die für alle Teammitglieder oder Mitarbeiter gleich oder ähnlich sind.     Ihr Personalverwaltungsadministrator oder Manager können Zielgruppen erstellen, die eine oder mehrere Zielvorlagen enthalten. Sie können Ziele aus einer Vorlagengruppe hinzufügen und diese anschließend ändern, um die Zeitachsen abzugleichen.  
     * Beim Erstellen einer Überprüfung können Sie dieser Überprüfung Ziele hinzufügen. Lesen Sie den Aufgabenleitfaden für Überprüfungen, um zu sehen, inwiefern Sie Ziele den Überprüfungen hinzufügen können.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

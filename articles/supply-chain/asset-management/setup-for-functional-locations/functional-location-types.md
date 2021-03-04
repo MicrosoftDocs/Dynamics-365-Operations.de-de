@@ -67,3 +67,6 @@ Jetzt wurde der standardmäßige funktionale Standorttyp erstellt, der nur für 
 
 >[!NOTE] 
 >Im Inforegister **Allgemein** erhalten Sie eine Übersicht über die Anzahl der Anlagentypen, der Wartungspläne, der Anlagenattributanforderungen, der zulässigen Typen, der Attribute und der funktionalen Standorte, die für den funktionalen Standorttypen eingerichtet sind. Das Feld **Funktionale Standorte** gibt die Anzahl der funktionalen Standorte an, die den funktionalen Standorttypen verwenden. Sie können die Schaltfläche **Kopieren** verwenden, um Einstellungen eines funktionalen Standorttyps in den ausgewählten funktionalen Standorttypen zu kopieren.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

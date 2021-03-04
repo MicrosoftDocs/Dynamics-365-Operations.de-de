@@ -202,3 +202,6 @@ Um genehmigte Bestellanforderungspositionen zu konsolidieren, führen Sie folgen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

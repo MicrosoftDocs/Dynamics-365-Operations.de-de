@@ -73,3 +73,6 @@ Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
 ### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Field Service-Produkte (Supply Chain Management nach Field Service): Produkte - Produkte
 
 [![Vorlagenzuordnung in Datenintegration](./media/FSProduct.png)](./media/FSProduct.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

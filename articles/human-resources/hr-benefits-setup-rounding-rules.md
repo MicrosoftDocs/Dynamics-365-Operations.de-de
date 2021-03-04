@@ -36,3 +36,6 @@ Sie können Rundungsregeln in Dynamics 365 Human Resources einrichten, die zu de
 3. Geben Sie Werte für **Auf den nächsten runden**, **Szenario** und **Rundungsart** an.
 
 4. Wählen Sie **Speichern**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

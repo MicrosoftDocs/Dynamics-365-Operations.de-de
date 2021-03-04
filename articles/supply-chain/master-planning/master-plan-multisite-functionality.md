@@ -52,3 +52,6 @@ In den folgenden Themen wird die Funktionsweise des Planungsmoduls bei Definitio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

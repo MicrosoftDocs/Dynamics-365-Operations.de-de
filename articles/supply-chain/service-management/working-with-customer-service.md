@@ -49,3 +49,6 @@ Die Themen in diesem Abschnitt bieten eine Übersicht über den Geschäftsprozes
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

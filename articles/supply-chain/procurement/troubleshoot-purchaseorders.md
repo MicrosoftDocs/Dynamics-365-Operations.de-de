@@ -145,3 +145,6 @@ Dieses Verhalten ist beabsichtigt. Die ausgewählte Adresse muss als Lieferadres
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Kann ich den Benutzer finden, der eine Bestellung storniert hat?
 
 Diese Information wird nur verfolgt, wenn die Bestellung der Änderungsverwaltung unterliegt. Wenn Sie die Änderungsverwaltung verwenden, können Sie sehen, wer die Änderung (die Stornierung) eingereicht hat und wer sie genehmigt hat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

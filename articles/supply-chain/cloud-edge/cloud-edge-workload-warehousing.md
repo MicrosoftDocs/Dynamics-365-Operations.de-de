@@ -245,3 +245,6 @@ Bei der Arbeitsauslastung in Scale-Units können Sie die folgenden zwei Batch-Jo
 
 - Verarbeiten von Wellentabellen-Sätzen
 - Übertragungsereignisse für die Zyklusausführungssteuerung verarbeiten
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Zusätzlich müssen Sie die erforderlichen Konfigurationen erstellen, um [Daten 
 | Titel                  | Dateiname |
 |------------------------|-----------|
 | ER Modellkonfiguration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=874111) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

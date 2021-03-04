@@ -198,3 +198,6 @@ Während eines Schritts im Konfigurationsprozess schlägt das System einen Konfi
 
 [Erstellen einer Produktnummerenbezeichnung für konfigurierte Produktvarianten](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

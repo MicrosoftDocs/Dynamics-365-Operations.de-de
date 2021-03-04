@@ -113,3 +113,6 @@ Sie führen die erstellte Modellzuordnung für Testzwecke durch um zu sehen, wie
     * Wählen Sie „Durchsuchen“ aus und wählen Sie dann die Datei Response4.xml aus.
 16. Wählen Sie OK.
     * Prüfen Sie das generierte Ergebnis. Der Antworttyp wurde nun ordnungsgemäß als gleich für die Datei Response1.xml-Datei erkannt.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -136,3 +136,6 @@ Um eine Preisgruppe einzurichten, gehen Sie wie folgt vor.
 [Einrichten und Verwenden von Betrugswarnungen](set-up-fraud-alerts.md)
 
 [Einrichten von Anschlussprogrammen für Callcenter](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

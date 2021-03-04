@@ -69,3 +69,6 @@ Wenn die Felder in Sales ausgefüllt sind, gelten folgende Einschränkungen:
 + Das Einrichten von Gebühren und Gebührenzuordnungen im Supply Chain Management wird in Sales nicht repliziert.
 + Bei der Preisgestaltung werden keine speziellen Einzelhandelspreise berücksichtigt, die im Feld **Retail Channel** auf der Seite „Auftragsposition“ in Supply Chain Management angegeben sind.
 + Rabatte, die im Abschnitt **Handelsvergütungsverwaltung** des Supply Chain Management definiert sind, werden nicht berücksichtigt.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

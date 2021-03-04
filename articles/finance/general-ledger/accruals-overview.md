@@ -46,3 +46,6 @@ Wenn Sie eine Erfassung eingeben, können Sie im Menü **Funktionen** auf **Sach
 
 
 Weitere Informationen finden Sie unter [Erstellen von Abgrenzungsschemata](tasks/create-accrual-schemes.md) [Erstellen von Sachkonto-Abgrenzungsbuchungen](tasks/create-ledger-accrual-transactions.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

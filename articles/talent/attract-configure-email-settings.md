@@ -89,3 +89,6 @@ Sie können ein Bild des Logos Ihres Unternehmens und andere Informationen als B
     ![Hinzufügen von Links zur Datenschutzrichtlinie und den Nutzungsbedingungen des Unternehmens für die E-Mail-Fußzeile](./media/attract-admin-email-footer.png)
 
 4. Wählen Sie **Speichern** aus, um Ihre E-Mail-Vorlageneinstellungen zu speichern.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

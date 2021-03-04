@@ -91,3 +91,6 @@ Die Registerkarte **Positionen** auf der Hauptarbeitskraftseite enthält eine Vo
 
 [![Positionen](./media/Worker-position-history.png)](./media/Worker-position-history.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

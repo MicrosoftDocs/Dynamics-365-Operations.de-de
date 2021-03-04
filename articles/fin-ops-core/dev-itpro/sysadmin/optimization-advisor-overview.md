@@ -94,3 +94,6 @@ Um die Bewertung bestimmter Regeln zu deaktivieren, wählen Sie die Verkaufschan
 [Regeln für Optimierungsratgeber erstellen](./create-rules-optimization-advisor.md)
 
 [Optimierungsratgeber in Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

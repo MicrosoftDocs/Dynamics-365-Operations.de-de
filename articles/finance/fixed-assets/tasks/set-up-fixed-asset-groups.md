@@ -39,3 +39,6 @@ In diesem Abschnitt erfahren Sie, wie Sie eine neue Anlagengruppe anlegen. Dabei
 8. Wählen Sie im Feld **Abschreibungskonvention** eine Option aus.
 9. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -154,3 +154,6 @@ Filialmitarbeiter werden aufgefordert, eine Hardwarestation nur einmal pro Trans
 - [POS Hybrid-App unter Android und iOS einrichten](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
 - [Zahlungskonnektor von Dynamics 365 für Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Übersicht über die Unterstützung von Netzwerkperipheriegeräten](https://go.microsoft.com/fwlink/?linkid=2129965)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

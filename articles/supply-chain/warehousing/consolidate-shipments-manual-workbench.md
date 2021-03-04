@@ -267,3 +267,6 @@ Es sollten vier Lieferungen erstellt worden sein:
 
 - [Lieferungskonsolidierungsrichtlinien](about-shipment-consolidation-policies.md)
 - [Richtlinien zur Lieferungskonsolidierung konfigurieren](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

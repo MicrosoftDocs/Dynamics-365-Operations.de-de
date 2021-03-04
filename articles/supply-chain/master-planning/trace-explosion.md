@@ -48,3 +48,6 @@ Sie können Details zu Verfügbarkeit und Aktivitäten für einen ausgewählten 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

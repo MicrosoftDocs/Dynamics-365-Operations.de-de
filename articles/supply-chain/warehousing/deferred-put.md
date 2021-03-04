@@ -110,3 +110,6 @@ Der Arbeitsbereich **Überwachung ausgehender Arbeit** hat zwei Kacheln, die Ihn
 ## <a name="deleting-completed-tasks"></a>Löschen abgeschlossener Aufgaben
 
 Sie können verzögerte Einlagerungsverarbeitungsaufgaben löschen, die abgeschlossen wurden, indem Sie sie auswählen und sie auf der Seite löschen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

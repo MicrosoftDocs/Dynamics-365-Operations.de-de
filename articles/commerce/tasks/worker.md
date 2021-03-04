@@ -57,3 +57,6 @@ Diese Prozedur zeigt, wie eine Arbeitskraft als Verkäufer konfiguriert wird, de
 6. Geben Sie im Feld "Standardgruppe" einen Wert ein oder wählen Sie einen Wert aus.
 7. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Wenn Sie Verbrauchserfassungen durchführen, werden die Registrierungen in einer
 >[!NOTE]
 >Für alle drei Registrierungsarten wird die Kombination der finanziellen Dimension validiert und ungültige Kombinationen werden ausgeblendet. Dies ist Standard-Setup mit anderen Finance and Operations Apps.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

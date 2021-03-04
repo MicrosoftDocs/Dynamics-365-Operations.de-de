@@ -71,3 +71,6 @@ Die Serviceverwaltung kann in die folgenden Module in  integriert werden:
 
   
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

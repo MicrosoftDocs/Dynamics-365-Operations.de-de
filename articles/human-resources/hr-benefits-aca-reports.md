@@ -68,3 +68,6 @@ Sie können Mitarbeiterlisten exportieren, die mithilfe einer der Filteroptionen
 Wenn Sie abgedeckte Personen angegeben müssen, da Sie als Arbeitgeber eigenversicherte Disposition bereitstellen, können Sie auch alle Unterhaltsberechtigten anzeigen, die unter Vorteilsplänen gedeckt werden, die als **ACA meldepflichtig** markiert wurden. Wählen Sie dazu die Aktion "Abdeckung für Unterhaltsberechtigte anzeigen" auf der Aktivitätsbereichsleiste aus.
 
 **Hinweis:** Nur Leistungen, deren Plan als **ACA meldepflichtig** markiert wurde, werden im Abfragefenster angezeigt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Um den integrierten [Microsoft Accessibility Insights](https://accessibilityinsi
 [Erweitern einer Produktseite](enrich-product-page.md)
 
 [Füllen einer Kategorie-Landingpage](enrich-category-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

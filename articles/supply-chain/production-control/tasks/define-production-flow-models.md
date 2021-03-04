@@ -46,3 +46,6 @@ Produktionsflussmodelle beschreiben, wie die Kapazität von Lean Manufacturing-A
 8. Wählen Sie im Feld "Reaktion auf Kapazitätsmangel" eine Option aus.
     * Die Optionen umfassen: "Termin verschieben" - Verschieben des vollständigen Bedarfs des Planungsereignisses auf den nächsten verfügbaren Produktionstag mit verfügbarem Durchsatz. Abbrechen - Beenden der automatischen Planung für das Planungsereignis und belassen der zugehörigen Einzelvorgänge als ungeplant.   Zum angeforderten Tag hinzufügen - Planen der angeforderten Einzelvorgänge für die gewünschte Periode. Dieses überlädt die Zelle für diesen Tag und erfordert vom Planer eine Überprüfung und eine manuelle Interaktion.   Verteilen verfügbarer Perioden - Verteilt die verschiedenen Einzelvorgänge des Planungsereignisses von verfügbaren Produktionstagen ab dem ersten verfügbaren Tag. Die Mindestverteilungsmenge ist die Menge des Kanban-Einzelvorgangs. Die Verteilung weist die minimale Planungsmenge (Kanban-Menge) zu jedem Tag mit genügendem verfügbaren Durchsatz zu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Weitere Informationen zu den von Microsoft verwendeten Grundprinzipien finden Si
 [Hinzufügen einer Datenschutzrichtlinienseite](add-privacy-page.md)
 
 [Benutzer-IDs ersetzen, die nachverfolgten Inhalten zugeordnet sind](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

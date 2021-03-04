@@ -48,3 +48,6 @@ In diesem Thema wird erläutert, wie Sie eine POS-Berechtigungsgruppe erstellen.
 16. Geben Sie im Feld "POS-Berechtigungsgruppe" einen Wert ein oder wählen Sie einen Wert aus. Alle Arbeitskräfte in Positionen für diesen Einzelvorgang werden die Einstellungen dieser POS-Berechtigungsgruppe verwenden, es sei denn, die POS-Berechtigungen für diese Arbeitskräfte wurden in ihrer Positionsebene überschrieben.  
 17. Wählen Sie **Speichern**. Nachdem die Änderungen gespeichert sind, müssen Sie den Mitarbeiterverteilungszeitplan ausführen, um die Änderungen an Kanälen zu übertragen.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

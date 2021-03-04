@@ -62,3 +62,6 @@ Die Liste von Suchergebnissen ist auf 10 Artikeln beschränkt. Wenn Sie nicht ge
 ## <a name="development"></a>Entwicklung
 
 Aus der Entwicklungsperspektive sind die Navigationssuchenfunktionen sehr einfach zu nutzen, da es virtuell keine Verzögerung zwischen der Bereitstellung von Menüelementen und deren Anzeige in den Suchergebnissen gibt. Solange die Menüelemente entweder mit dem Navigationsbereich oder dem Dashboard verknüpft sind, werden diese automatisch durchsuchbar.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

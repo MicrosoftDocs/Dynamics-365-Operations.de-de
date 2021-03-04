@@ -46,3 +46,6 @@ Informationen dazu finden Sie im Abschnitt „Zugriff auf die Umgebung gewähren
 **Langfristige Lösung**
 
 Microsoft erwägt, die entsprechenden Rechte automatisch an Onboard oder Attact zuzuweisen, wenn ein Benutzer zu Personalverwaltung hinzugefügt wurde.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

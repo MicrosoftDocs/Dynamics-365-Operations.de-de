@@ -88,3 +88,6 @@ Ein Unternehmen, das Budgetplanungsfunktionen verwendet, kann im Arbeitsbereich 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

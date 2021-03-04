@@ -88,3 +88,6 @@ Die folgende Abbildung zeigt eine juristische Person, die im Hierarchie-Stammver
 [Kanalübersicht](channels-overview.md)
 
 [Voraussetzungen der Kanaleinrichtung](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

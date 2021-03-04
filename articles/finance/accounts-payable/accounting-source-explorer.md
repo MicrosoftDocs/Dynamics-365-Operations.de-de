@@ -51,3 +51,6 @@ Für diese Dokumente können Sie vom Buchhaltungsquellen-Explorer aus auch zum u
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

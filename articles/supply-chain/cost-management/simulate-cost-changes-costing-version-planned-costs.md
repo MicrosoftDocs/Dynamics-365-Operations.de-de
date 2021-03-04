@@ -59,3 +59,6 @@ Berechnen Sie nach Eingabe der simulierten Kostenänderungen die Kosten für pro
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

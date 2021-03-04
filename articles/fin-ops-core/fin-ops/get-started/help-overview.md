@@ -164,3 +164,6 @@ In der folgenden Tabelle werden unsere Websites aufgeführt. Für Sites, die ein
 | [Dynamics-Community](https://community.dynamics.com/) | Diese Website hostet Blogs, Foren und Videos. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Diese Website stellt Auswertungen und Verkaufsinformationen bereit. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Diese Website hostet Trainingsressourcen für Berichte zum Herunterladen und für Whitepapers und ist die primäre Supportwebsite für Inhaber von Dienstleistungsplänen. Für den Zugriff auf einige Ressourcen dieser Website ist möglicherweise ein Dienstleistungsplan erforderlich. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

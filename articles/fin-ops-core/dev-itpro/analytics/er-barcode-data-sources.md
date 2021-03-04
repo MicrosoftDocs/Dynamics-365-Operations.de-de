@@ -303,3 +303,6 @@ Wenn Sie jedoch die Datenquelle **Barcode** verwenden, um Barcodes zu erstellen,
 - [Zielorte für die elektronische Berichterstellung](electronic-reporting-destinations.md)
 - [Formelsprache in der elektronischen Berichterstellung](er-formula-language.md)
 - [NUMBERFORMAT Funktion](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

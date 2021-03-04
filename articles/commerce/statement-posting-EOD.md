@@ -174,3 +174,6 @@ Weitere Backend-Verbesserungen, die der Benutzer sehen kann, wurden an der Auszu
 
     - Gehen Sie zu **Retail and Commerce** \> **Heaquaters einrichten** \> **Parameter** \> **Commerce-Parameter**. Stellen Sie anschließend auf der Registerkarte **Buchung**, auf dem Inforegister **Lageraktualisierung**, auf dem Feld **Detailebene**, wählen Sie **Zusammenfassung** aus.
     - Gehen Sie zu **Retail and Commerce** \> **Heaquaters einrichten** \> **Parameter** \> **Commerce-Parameter**. Stellen Sie anschließend auf der Registerkarte **Buchung**, auf dem Inforegister **Aggregation**, Satz **Belegbuchungen** die Option **Ja**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

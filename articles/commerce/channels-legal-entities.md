@@ -86,3 +86,6 @@ Das folgende Bild zeigt die Details eines Beispiels für eine juristische Person
 [Kanalübersicht](channels-overview.md)
 
 [Voraussetzungen der Kanaleinrichtung](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

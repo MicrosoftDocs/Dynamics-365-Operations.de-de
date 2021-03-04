@@ -82,3 +82,6 @@ Abwesenheitstypen in Dynamics 365 Human Resources definieren die verschiedenen A
 - [Einen Arbeitszeitkalender erstellen](hr-leave-and-absence-working-time-calendar.md)
 - [Urlaub aussetzen](hr-leave-and-absence-suspend-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

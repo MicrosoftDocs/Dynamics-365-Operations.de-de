@@ -52,3 +52,6 @@ Onboard wird automatisch den neuen Mitarbeiters eine E-Mail senden, die angibt, 
     ![[Die Änderungen per Push auf allen Onboarding Anleitungen, die daraus erstellt wurden, speichern](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 Die Änderungen werden den neuen Mitarbeitern angezeigt, die die Onboarding Anleitungen öffnen. Allerdings sendet Onboard keine E-Mail-Warnungen an neue Mitarbeiter, um sie zu informieren, dass ihr Onboarding Handbuch geändert hat. Zur einfacheren Kennung erscheint eine rote Markierung **Neu** neben jeder Änderung. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

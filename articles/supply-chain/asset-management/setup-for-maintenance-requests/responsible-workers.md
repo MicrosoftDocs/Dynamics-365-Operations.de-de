@@ -54,3 +54,6 @@ Bevor Sie zuständige Wartungsarbeiter einrichten können, müssen Sie die Arbei
 Die folgende Abbildung zeigt ein Beispiel der Seite **Zuständige Wartungsarbeiter**.
 
 ![Seite „Zuständige Wartungsarbeiter“](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ Gelegentlich muss ein bereits abgeschlossener Lagerabschluss storniert werden, u
 > [!NOTE] 
 > Es kann jeweils nur die letzte abgeschlossene Lagerbuchungsperiode erneut geöffnet werden. Um einen älteren Lagerabschluss zu stornieren, müssen Sie jeden nachfolgenden Lagerabschluss, beginnend dem letzten Abschluss einzeln stornieren.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

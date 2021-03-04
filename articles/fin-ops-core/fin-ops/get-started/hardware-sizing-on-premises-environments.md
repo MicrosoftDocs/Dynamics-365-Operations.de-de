@@ -141,3 +141,6 @@ Der Orchestrator-Service verwaltet Ihre Bereitstellung und die entsprechende Kom
 ## <a name="virtualization-and-oversubscription"></a>Virtualisierung und Überabonnement
 
 Aufgabenkritische Services wie AOS sollten auf virtuellen Hosts mit speziell dafür vorgesehenen Ressourcen untergebracht werden, wie beispielsweise Kerne, Speicher und Festplatten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

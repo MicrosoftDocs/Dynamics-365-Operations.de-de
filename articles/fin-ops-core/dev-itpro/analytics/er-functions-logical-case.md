@@ -83,3 +83,6 @@ Wenn der erste Ergebniswert und der zweite Ergebniswert *N*. des Datentyps *Cont
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Logische Funktionen](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

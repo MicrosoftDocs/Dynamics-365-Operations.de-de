@@ -114,3 +114,6 @@ Gehen Sie zum Einstellen des Attributs **Mindestalter** für ein Video-Asset fol
 [Hinzufügen einer Datenschutzrichtlinienseite](add-privacy-page.md)
 
 [Benutzer-IDs ersetzen, die nachverfolgten Inhalten zugeordnet sind](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

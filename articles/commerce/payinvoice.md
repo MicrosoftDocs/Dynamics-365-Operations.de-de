@@ -45,3 +45,6 @@ Um diese Szenarien zu aktivieren, muss das Funktionsprofil für Geschäfte wie u
 
 > [!NOTE]
 > Zahlung oder Ausgleich in Teilbeträgen wird noch nicht unterstützt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

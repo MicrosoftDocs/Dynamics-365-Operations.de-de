@@ -103,3 +103,6 @@ In der Regel werden der Ausgangslagerort und der Speicherort einer von Ressource
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

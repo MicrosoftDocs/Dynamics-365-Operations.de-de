@@ -50,3 +50,6 @@ Die Verwendung von Ursachencodes ist optional. Sie können entscheiden, ob ein U
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

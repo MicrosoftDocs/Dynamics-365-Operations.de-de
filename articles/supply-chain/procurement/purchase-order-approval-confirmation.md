@@ -99,3 +99,6 @@ Wenn eine Bestellung im Änderungsmanagement ist, muss jede Änderung, z. B. ein
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -121,3 +121,6 @@ Klicken Sie auf **Einstellungen**, um die Informationen anzupassen, die in der S
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

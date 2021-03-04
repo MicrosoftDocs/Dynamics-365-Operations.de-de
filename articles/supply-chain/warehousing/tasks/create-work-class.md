@@ -40,3 +40,6 @@ Dieses Verfahren zeigt Ihnen an, wie ein Arbeitsklasse eingerichtet wird. Arbeit
     * Wenn Sie einen Lagerplatztyp auswählen, wird eine Einschränkung festgelegt, wohin die Artikel eingelagert werden können, nachdem sie entnommen wurden. Diese Einstellung wird verwendet, wenn Lagerplatzdirektive versuchen, den Lagerplatz aufzulösen, oder ob ein Lagerarbeiter manuell den Speicherort für die Menüoption des mobilen Geräts bereitstellt.  
 8. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

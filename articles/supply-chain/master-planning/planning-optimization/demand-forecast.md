@@ -274,3 +274,6 @@ Ein Planzahlenverrechnungsschlüssel muss der Deckungsgruppe des Artikels zugewi
 ### <a name="reduce-a-forecast-by-transactions"></a>Reduzieren einer Planung durch Transaktionen
 
 Wenn Sie **Transaktionen - Planzahlenverrechnungsschlüssel** oder **Transaktioen - dynamische Periode** als Methode für das Reduzieren von Planungsbedarfen aktivieren, können Sie angeben, welche Transaktionen die Planung verringert. Wählen Sie auf der Seite **Dispositionssteuerungsgruppe** im Inforegister **Sonstiges** für das Feld **Planungswert verringern um** die Option **Alle Transaktionen** aus, wenn alle Transaktionen die Planung reduzieren sollen, oder die Option **Aufträge**, wenn nur Aufträge die Planung reduzieren sollen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

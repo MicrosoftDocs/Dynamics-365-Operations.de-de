@@ -64,3 +64,6 @@ Das Demodatenunternehmen USMF wurde verwendet, um diese Prozedur zu erstellen.
 6. Wählen Sie in der Liste eine **Benutzer-ID** aus. Beispiel: 24.
 7. Erweitern Sie das Inforegister **Arbeit**.
 8. Wählen Sie **Ja** im Feld **Manuelle Artikelneuzuordnung zulassen** aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

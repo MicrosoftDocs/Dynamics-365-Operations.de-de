@@ -41,3 +41,6 @@ Dieses Verfahren zeigt, wie Kostenkontrollesteuereinheiten im Kostenrechnungssac
 10. Geben Sie im Feld Dimension einen Wert ein, oder wählen Sie einen Wert aus.
 11. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

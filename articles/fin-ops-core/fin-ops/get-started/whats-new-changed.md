@@ -50,3 +50,6 @@ Um zu sehen, was bei den Lifecycle Services neu oder geändert wurde, lesen Sie 
 - [Was ist neu oder geändert in den Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Auf der Registerkarte **Währungsumrechnung** definieren Sie die juristische Per
 Weitere Informationen zur Konsolidierung und Währungsumrechnung finden Sie im übergeordneten Thema dieses Themas, [Finanzkonsolidierungen und Übersicht zur Währungsumrechnung](./financial-consolidations-currency-translation.md).
 
 Informationen zum Szenarien, in denen Sie möglicherweise Finanzaufstellungen generieren können, finden Sie unter [Konsolidierte Finanzaufstellungen erstellen](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

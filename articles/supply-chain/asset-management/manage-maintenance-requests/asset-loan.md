@@ -58,3 +58,6 @@ Auf der Seite **Aktive Anlagendarlehen** können Sie eine Liste aller Anlagendar
 3. Geben Sie im Feld **Zurückgegeben** das Datum und die Uhrzeit ein.
 4. Wählen Sie **OK**.
 5. Aktualisieren Sie die Listenseite **Aktive Anlagendarlehen**. Sie sehen, dass das Anlagendarlehen nicht mehr in der Liste angezeigt wird.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

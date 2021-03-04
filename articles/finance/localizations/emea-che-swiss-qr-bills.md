@@ -166,3 +166,6 @@ Erstellen Sie Lieferantenzahlungsjournalzeilen mithilfe der Zahlungsvorschlagsfu
 Für Zahlungen, die sich auf QR-Rechnungen beziehen, wird die Überweisungsdatei basierend auf dem Zahlungs-ID-Wert generiert. Dieser Wert wird aus dem QR-Code abgerufen.
 
 Sie können die Dateien pain.002 und camt.054 aus der Seite **Zahlungsüberweisungen** importieren. Weitere Informationen finden Sie unter [Importieren von ISO20022 Dateien](emea-iso20022-file-formats.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

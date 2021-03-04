@@ -91,3 +91,6 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 26. Klicken Sie auf "Abgeschlossen".
 27. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

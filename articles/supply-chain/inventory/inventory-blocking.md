@@ -70,3 +70,6 @@ Sie können angeben, welche Lagerstatus Sperrenstatus sind, indem Sie den Parame
 [Qualitätsmanagementprozesse](quality-management-processes.md)
 
 [Überprüfen Sie die Qualität von Waren](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

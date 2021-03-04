@@ -80,3 +80,6 @@ Nachdem Sie Bestellungen storniert haben, die im *Bestätigt*-Zustand waren, ers
 
 Dieses Problem tritt nur bei Bestellungen auf, die dem Änderungsmanagement unterliegen. Dies liegt daran, dass die Stornierung als eine Änderung angesehen wird, die genehmigt werden muss. Die Genehmigung kann automatisch vom System erfolgen. Daher besteht der Prozess darin, die stornierte Bestellung an den Genehmigungsworkflow zu senden, damit sie in einen *Genehmigt*-Zustand wechseln kann. Ab diesem Zeitpunkt erscheint die Bestellung nicht mehr im **Bestellvorbereitung**-Arbeitsbereich in der Liste der Bestellentwürfe.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
