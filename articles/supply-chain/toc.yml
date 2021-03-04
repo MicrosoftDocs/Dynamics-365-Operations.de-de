@@ -72,12 +72,12 @@
                   items:
                     - name: Neuerungen oder Änderungen auf der Startseite von Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: "Supply Chain Management\_10.0.17 (April\_2021)"
+                      href: get-started/whats-new-scm-10-0-17.md
                     - name: "Supply Chain Management\_10.0.16 (Februar 2021)"
                       href: get-started/whats-new-scm-10-0-16.md
                     - name: "Supply Chain Management\_10.0.15 (Januar\_2021)"
                       href: get-started/whats-new-scm-10-0-15.md
-                    - name: Supply Chain Management 10.0.14 (November 2020)
-                      href: get-started/whats-new-scm-10-0-14.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
@@ -154,6 +154,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Gespeicherte Ansichten
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Gespeicherte Standardansichten im Supply Chain Management
+                  href: get-started/saved-views-scm.md
                 - name: Rasterfunktionen
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Benutzerdefinierte Felder erstellen und damit arbeiten
@@ -174,8 +176,8 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Architektur für Finance and Operations-Apps
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Microsoft FastTrack for Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: "Microsoft\_FastTrack"
+                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
                 - name: Implementierungsprojekt aufnehmen
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Umgebungsplanung
@@ -224,6 +226,8 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: Lageraufträge bei Cloud- und Edge-Skalierungseinheiten
+              href: cloud-edge/cloud-edge-warehouse-order.md
         - name: Anlagenverwaltung
           items:
             - name: Überblick über die Anlagenverwaltung
@@ -363,6 +367,8 @@
               items:
                 - name: 'Planungen, Arbeitsaufträge und Projekte'
                   href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+                - name: Rechnung für die Wartung kundeneigener Anlagen
+                  href: asset-management/integration-to-project-management-and-accounting/customer-billing.md
             - name: Anlagenverwaltung in Anlagen integrieren
               href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
             - name: Vorbeugende und reaktive Wartung
@@ -439,17 +445,21 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: Wartungsstatus
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Anlagenverwaltung mit der mobilen App
+              items:
+                - name: Mobilen Arbeitsbereich für die Anlagenverwaltung einrichten
+                  href: asset-management/set-up-asset-management-mobile.md
+                - name: Mobilen Arbeitsbereich für die Anlagenverwaltung nutzen
+                  href: asset-management/asset-management-mobile-workspace.md
             - name: Anlagenverwaltung in Dynamics 365 Guides integrieren
               href: asset-management/asset-management-guides-integration.md
-            - name: Mobiler Arbeitsbereich für Anlagenverwaltung
-              href: asset-management/asset-management-mobile-workspace.md
         - name: Datenverwaltung
           items:
             - name: Zielentitäten
               href: asset-management/data-management/target-entities.md
         - name: Kostenrechnung
           items:
-            - name: Startseite für die Kostenrechnung
+            - name: Startseite zur Kostenrechnung
               href: ../finance/cost-accounting/cost-accounting-home-page.md?toc=/dynamics365/supply-chain/toc.json
             - name: Kostenrechnungsterminologie
               href: ../finance/cost-accounting/terms-cost-accounting.md?toc=/dynamics365/supply-chain/toc.json
@@ -1319,11 +1329,13 @@
                   href: sales-marketing/register-serial-numbers-sales-process.md
                 - name: Mobiler Arbeitsbereich für Lagerbestand
                   href: inventory/inventory-on-hand-mobile-workspace.md
+                - name: Problembehandlung bei Bestandsvorgängen
+                  href: inventory/troubleshoot-inventory-operations.md
             - name: Ausgangsprozess
               items:
-                - name: Ausgangsprozess – Übersicht
+                - name: Übersicht über den Ausgangsprozess
                   href: inventory/outbound-process.md
-                - name: Reservieren von Bestandsmengen
+                - name: Bestandsmengen reservieren
                   href: inventory/reserve-inventory-quantities.md
                 - name: Reservieren derselben Charge für einen Auftrag
                   href: sales-marketing/reserve-same-batch-sales-order.md
@@ -1373,16 +1385,22 @@
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Produktprogrammplanung mit Bedarfsplanung
                   href: master-planning/planning-optimization/demand-forecast.md
-                - name: Produktprogrammplanung mit Kaufhandelsvereinbarungen
+                - name: Produktprogrammplanung mit Handelsvereinbarungen für den Einkauf
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Sicherheitszuschläge
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Bestellanforderungen
+                  href: master-planning/planning-optimization/purchase-requisitions.md
+                - name: Produktionsplanung
+                  href: master-planning/planning-optimization/production-planning.md
                 - name: Lagermarkierung mit Planungsoptimierung
                   href: master-planning/planning-optimization/marking.md
                 - name: Intercompany-Planung
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Produkte mit bestimmten Produktlebenszyklusstatus ausschließen
                   href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: Planungszeiträume
+                  href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: Bestellvorschläge genehmigen
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatische Umwandlung mit Planungsoptimierung
@@ -1651,7 +1669,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Warnregeln erstellen
                   href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Stapelverarbeitung von Warnungen
+                - name: Batchverarbeitung von Warnungen
                   href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Client-Warnungsbenachrichtigungen per E-Mail
                   href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/supply-chain/toc.json
@@ -1665,7 +1683,7 @@
               items:
                 - name: Überblick über die Anfragenverwaltung
                   href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Planen von Anfragensicherheit, ‑prozessen und ‑kategorien'
+                - name: 'Anfragensicherheit, Prozesse und Kategorien planen'
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/supply-chain/toc.json
             - name: Datensatzvorlagen
               items:
@@ -1905,10 +1923,12 @@
                   href: production-control/default-order-settings.md
                 - name: Stücklisten und Formeln
                   href: production-control/bill-of-material-bom.md
-                - name: Den Stücklistendesigner verwenden
+                - name: Stücklistendesigner verwenden
                   href: production-control/bom-designer-functionality.md
-                - name: Den Formeldesigner verwenden
+                - name: Formeldesigner verwenden
                   href: production-control/formula-designer.md
+                - name: Standardreservierungsprinzip bei Materialien in Produktion überschreiben
+                  href: production-control/override-default-reservation-principle.md
                 - name: Verschiedene Produkte zu Bestellungen unter Verwendung der verschiedenen Gewichte hinzufügen
                   href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
                 - name: Auftrag für ein konfigurierbares Produkt erstellen
@@ -2027,6 +2047,8 @@
                       href: production-control/bill-of-material-bom.md
                     - name: Funktionen des Stücklistendesigners
                       href: production-control/bom-designer-functionality.md
+                    - name: Standardreservierungsprinzip bei Materialien in Produktion überschreiben
+                      href: production-control/override-default-reservation-principle.md
                     - name: Phantomartikel
                       href: production-control/phantom-items.md
                     - name: Stücklistenkostenkalkulationen
@@ -2757,6 +2779,8 @@
                       href: warehousing/cluster-position-full.md
                     - name: Systemgeleitete Clusterkommissionierung
                       href: warehousing/system-directed-cluster-pick.md
+                    - name: Unterschiedliche Dimensionen für Verpackung und Lagerung festlegen
+                      href: warehousing/packing-vs-storage-dimensions.md
                     - name: Verpacken in Container einrichten
                       href: warehousing/tasks/set-up-containerization.md
                     - name: Chargen- und Kennzeichenbestätigung
@@ -2817,17 +2841,19 @@
                       href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
                     - name: Erweiterte Ladungserstellung während einer Welle
                       href: warehousing/advanced-load-building-during-wave.md
-                    - name: Freigabe an Lagerregel
+                    - name: Regel für Freigabe an Lager
                       href: warehousing/release-to-warehouse-rule.md
                     - name: Wellenvorlagengruppierung
                       href: warehousing/wave-template-grouping.md
                     - name: Serienetiketten neu drucken und stornieren
                       href: warehousing/reprint-and-void-wave-labels.md
+                    - name: Päckchenversand
+                      href: warehousing/small-parcel-shipping.md
                     - name: Problembehandlung bei Ladungserstellung und Versand
                       href: warehousing/troubleshoot-warehouse-loads-shipments.md
-                - name: Lieferungskonsolidierungsrichtlinien
+                - name: Richtlinien zur Lieferungskonsolidierung
                   items:
-                    - name: Lieferungskonsolidierungsrichtlinien
+                    - name: Richtlinien zur Lieferungskonsolidierung
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Richtlinien zur Lieferungskonsolidierung konfigurieren
                       href: warehousing/configure-shipment-consolidation-policies.md
@@ -2915,15 +2941,19 @@
                       href: warehousing/control-warehouse-location-directives.md
                     - name: Mit Lagerplatzrichtlinien arbeiten
                       href: warehousing/create-location-directive.md
+                    - name: Produktfilter für Lagertransaktionen konfigurieren
+                      href: warehousing/filters-and-filter-codes.md
                     - name: Lagerplatzbeschränkungen
                       href: warehousing/location-stocking-limits.md
                     - name: Wellenschrittcodes
                       href: warehousing/wave-step-codes.md
                     - name: Wellenverarbeitung konfigurieren
                       href: warehousing/tasks/configure-wave-processing.md
+                    - name: Arbeitserstellung während Welle planen
+                      href: warehousing/configure-wave-schedule-work-creation.md
                     - name: Wellenbeschriftungsdruck einrichten und verwenden
                       href: warehousing/configure-wave-label-printing.md
-                    - name: Automatisches Aktualisieren von Lieferungen
+                    - name: Lieferungen automatisch aktualisieren
                       href: warehousing/auto-update-shipment.md
                     - name: Lagerplatzprofil erstellen
                       href: warehousing/tasks/create-location-profile.md
@@ -2955,6 +2985,8 @@
                       href: warehousing/troubleshoot-warehouse-configuration.md
                 - name: Lagerort-App installieren und konfigurieren
                   items:
+                    - name: Mobile Lagerort-App installieren und Verbindung herstellen
+                      href: warehousing/install-configure-warehouse-management-app.md
                     - name: Lagerort-App installieren und Verbindung herstellen
                       href: warehousing/install-configure-warehousing-app.md
                     - name: Strichcodes mithilfe einer Kamera in der Lagerort-App scannen

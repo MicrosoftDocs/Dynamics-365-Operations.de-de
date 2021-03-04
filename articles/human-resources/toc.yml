@@ -5,6 +5,10 @@
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: "28.\_Januar\_2021"
+          href: hr-whats-new-2021-01-28.md
+        - name: "21.\_Januar\_2021"
+          href: hr-whats-new-2021-01-21.md
         - name: "2.\_Dezember\_2020"
           href: hr-whats-new-2020-12-02.md
         - name: 22. Oktober 2020
@@ -79,12 +83,16 @@
           items:
             - name: Eine Datenintegrationstechnologie auswählen
               href: hr-admin-integration-choose-technology.md
-            - name: Common Data Service-Integration konfigurieren
+            - name: Häufig gestellte Fragen zur Drosselung
+              href: hr-admin-integration-throttling-faq.md
+            - name: Dataverse-Integration konfigurieren
               href: hr-admin-integration-common-data-service.md
-            - name: Common Data Service-Entitäten
+            - name: Dataverse-Tabellen
               href: hr-developer-entities.md
-            - name: Virtuelle Common Data Service-Entitäten konfigurieren
+            - name: Virtuelle Dataverse-Entitäten konfigurieren
               href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Häufig gestellte Fragen zu virtuellen Entitäten in Human Resources
+              href: hr-admin-virtual-entity-faq.md
             - name: Integration mit Finance konfigurieren
               href: hr-admin-integration-finance.md
             - name: Integration mit Dayforce konfigurieren
@@ -135,9 +143,9 @@
                   href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurationsdatenpakete
                   href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
-            - name: Einzelvorgänge für Datenimport und ‑export
+            - name: Datenimportaufträge und Datenexportaufträge
               items:
-                - name: Einzelvorgänge für Datenimport und ‑export – Übersicht
+                - name: Übersicht zu Datenimportaufträgen und Datenexportaufträgen
                   href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
                 - name: Bewährte Vorgehensweisen beim Import von Belegen mithilfe der Entität der allgemeinen Erfassung
                   href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
@@ -271,7 +279,7 @@
               href: hr-admin-troubleshooting-not-in-apps.md
             - name: Berichtsoptionen
               href: hr-admin-troubleshooting-reporting.md
-            - name: FAQ zur Integration
+            - name: Häufig gestellte Fragen zur Integration
               href: hr-admin-troubleshooting-integration.md
     - name: Entwicklerhandbuch
       items:
@@ -279,7 +287,7 @@
           href: hr-developer-overview.md
         - name: Mit Power Apps und Power Automate erweitern
           href: hr-developer-power-apps.md
-        - name: Common Data Service-Entitäten
+        - name: Dataverse-Tabellen
           href: hr-developer-entities.md
         - name: Benutzerdefinierte Felder
           href: hr-developer-custom-fields.md
@@ -287,7 +295,7 @@
           items:
             - name: Eine Datenintegrationstechnologie auswählen
               href: hr-admin-integration-choose-technology.md
-            - name: Common Data Service-Integration konfigurieren
+            - name: Dataverse-Integration konfigurieren
               href: hr-admin-integration-common-data-service.md
             - name: Integration mit Finance konfigurieren
               href: hr-admin-integration-finance.md
@@ -313,17 +321,103 @@
               items:
                 - name: MyLeaveRequests
                   items:
-                    - name: MyLeaveRequests-Überblick
+                    - name: Überblick über MyLeaveRequests
                       href: hr-developer-api-myleaverequests-overview.md
-                    - name: Urlaubsanforderung an Workflow übermitteln
+                    - name: Urlaubsantrag an Workflow übermitteln
                       href: hr-developer-api-myleaverequests-submit.md
+        - name: API zur ATS-Integration
+          items:
+            - name: Einführung
+              href: hr-admin-integration-ats-api-introduction.md
+            - name: Personalbeschaffungsantrag und verwandte Entitäten
+              items:
+                - name: Personalbeschaffungsantrag
+                  href: hr-admin-integration-ats-api-recruiting-request.md
+                - name: "Personalbeschaffungsantrag\_– Ausbildung"
+                  href: hr-admin-integration-ats-api-recruiting-request-education.md
+                - name: "Personalbeschaffungsantrag\_–Standort"
+                  href: hr-admin-integration-ats-api-recruiting-request-location.md
+                - name: "Personalbeschaffungsantrag\_–Position"
+                  href: hr-admin-integration-ats-api-recruiting-request-position.md
+                - name: "Personalbeschaffungsantrag\_– Qualifikation"
+                  href: hr-admin-integration-ats-api-recruiting-request-skill.md
+                - name: Beispielabfrage für Personalbeschaffungsantrag
+                  href: hr-admin-integration-ats-api-recruiting-request-example-query.md
+            - name: Optionssätze für Personalbeschaffungsantrag
+              items:
+                - name: Status der Stellenbefreiung
+                  href: hr-admin-integration-ats-api-job-exempt-status.md
+                - name: Positionsstatus des Personalbeschaffungsantrags
+                  href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+                - name: Status des Personalbeschaffungsantrags
+                  href: hr-admin-integration-ats-api-recruiting-request-status.md
+                - name: Kategorie für Behördenstellen
+                  href: hr-admin-integration-ats-api-regulatory-job-category.md
+            - name: Einzustellender Kandidat und verwandte Entitäten
+              items:
+                - name: Einzustellender Kandidat
+                  href: hr-admin-integration-ats-api-candidate-to-hire.md
+                - name: Art der Bescheinigung
+                  href: hr-admin-integration-ats-api-certificate-type.md
+                - name: Kontakt der Partei
+                  href: hr-admin-integration-ats-api-party-contact.md
+                - name: Person
+                  href: hr-admin-integration-ats-api-person.md
+                - name: Adresse der Person
+                  href: hr-admin-integration-ats-api-person-address.md
+                - name: Bescheinigung der Person
+                  href: hr-admin-integration-ats-api-person-certificate.md
+                - name: Ausbildung der Personen
+                  href: hr-admin-integration-ats-api-person-education.md
+                - name: ID-Nummer der Person
+                  href: hr-admin-integration-ats-api-person-identification-number.md
+                - name: Berufserfahrung der Person
+                  href: hr-admin-integration-ats-api-person-professional-experience.md
+                - name: Prüfung der Person
+                  href: hr-admin-integration-ats-api-person-screening.md
+                - name: Qualifikation der Person
+                  href: hr-admin-integration-ats-api-person-skill.md
+                - name: Bewertungsebene
+                  href: hr-admin-integration-ats-api-rating-level.md
+                - name: Prüfungstypen
+                  href: hr-admin-integration-ats-api-screening-types.md
+                - name: Beispielabfrage für einzustellende Kandidaten
+                  href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
+            - name: Optionssätze für Kandidaten
+              items:
+                - name: Ergebnis der Bewerberintegration
+                  href: hr-admin-integration-ats-api-applicant-integration-result.md
+                - name: Leer Ja Nein
+                  href: hr-admin-integration-ats-api-blank-yes-no.md
+                - name: Status der Fertigstellung
+                  href: hr-admin-integration-ats-api-completion-status.md
+                - name: Art des Kontakts
+                  href: hr-admin-integration-ats-api-contact-type.md
+                - name: Ausbildungsgrundlage
+                  href: hr-admin-integration-ats-api-education-credit-basis.md
+                - name: Geschlecht
+                  href: hr-admin-integration-ats-api-gender.md
+                - name: Familienstand
+                  href: hr-admin-integration-ats-api-marital-status.md
+                - name: Monate des Jahres
+                  href: hr-admin-integration-ats-api-months-of-year.md
+                - name: Nein Ja
+                  href: hr-admin-integration-ats-api-no-yes.md
+                - name: Periodeneinheit
+                  href: hr-admin-integration-ats-api-period-unit.md
+                - name: Prüffrequenz
+                  href: hr-admin-integration-ats-api-screening-frequency.md
+                - name: Prüffrequenz erzeugen aus
+                  href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+                - name: Art der Qualifikationsstufe
+                  href: hr-admin-integration-ats-api-skill-level-type.md
     - name: Benutzerhandbuch
       items:
         - name: Übersicht
           href: hr-hrpro-overview.md
         - name: Human Resources einrichten
           items:
-            - name: Human Resources-Parameter konfigurieren
+            - name: Parameter in Human Resources konfigurieren
               href: hr-setup-parameters.md
             - name: Freigegebene Human Resources-Parameter konfigurieren
               href: hr-setup-shared-parameters.md
@@ -435,21 +529,15 @@
                   href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/human-resources/toc.json
                 - name: Warnregeln erstellen
                   href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/human-resources/toc.json
-                - name: Stapelverarbeitung von Warnungen
+                - name: Batchverarbeitung von Warnungen
                   href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
                 - name: Client-Warnungsbenachrichtigungen per E-Mail
                   href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-            - name: Elektronische Signaturen
-              items:
-                - name: Elektronische Signatur – Übersicht
-                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: Einrichten elektronischer Signaturen
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
             - name: Anfragenverwaltung
               items:
                 - name: Überblick über die Anfragenverwaltung
                   href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/human-resources/toc.json
-                - name: 'Planen von Anfragensicherheit, ‑prozessen und ‑kategorien'
+                - name: 'Anfragensicherheit, Prozesse und Kategorien planen'
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/human-resources/toc.json
             - name: Datensatzvorlagen
               items:
@@ -591,7 +679,9 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Satzänderungen verarbeiten
                       href: hr-benefits-process-rate-changes.md
-            - name: Vorteilsprogramm definieren und verwalten
+                - name: ACA-Berichterstellung
+                  href: hr-benefits-management-aca-reports.md
+            - name: Vergütungsprogramm festlegen und verwalten
               href: hr-benefits-manage-program.md
             - name: Richtlinien zur Vorteilsberechtigung
               href: hr-benefits-eligibility-policies.md
