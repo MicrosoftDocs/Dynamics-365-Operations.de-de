@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cbdb69202ebec19f4442041cfb1f99857da36d2e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 481a8750b2333d5dd5de2c05e175569804a6046f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412573"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985835"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Abonnieren zum Verwenden von Bewertungen und Prüfungen
 
@@ -64,6 +63,3 @@ Führen Sie die folgenden Schritte aus, um die Verwendung von Bewertungen und Pr
 [Synchronisieren von Produktbewertungen in Dynamics 365 Commerce](sync-product-ratings.md)
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

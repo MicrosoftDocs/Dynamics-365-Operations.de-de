@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3eb5b5c4304b393008ecc5f5ff5a663295ed0d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: c15dcd0adfcf9b9022a919bd516dcf5117ea5041
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429150"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987478"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Engineering-Versionen und Engineering-Produktkategorien
 
@@ -162,6 +161,3 @@ Stücklisten und Arbeitspläne werden von der jeweiligen Arbeitsplanversion aus 
 Für Produkte, bei denen Sie die Produktdimension *Version* verwenden (zusammen mit logistischen Auswirkungen auf die Transaktionen), wird die Version auch zu den Stücklisten und Arbeitsplänen hinzugefügt. Dieses Verhalten hilft bei der Unterscheidung der Stücklisten und Arbeitspläne von aufeinanderfolgenden Versionen, unabhängig von der Einstellung **Wirkung erzwingen**.
 
 Für Produkte, bei denen Sie die Produktdimension *Version* nicht verwenden (ohne logistische Auswirkungen auf die Transaktionen), wird die Version nicht zu den Stücklisten oder Arbeitsplänen hinzugefügt. Daher gibt es keinen Unterschied zwischen den Stücklisten und Arbeitsplänen von aufeinanderfolgenden Versionen. In diesem Fall empfehlen wir dringend, die Option **Wirkung erzwingen** auf *Ja* festzulegen. Auf diese Weise verhindern Sie zum einen, dass sich Engineering-Versionen überschneiden, zum anderen können Sie die Stückliste und den Arbeitsplan einer neueren Version aktivieren, ohne vorher die Stückliste und den Arbeitsplan der Vorgängerversion inaktivieren zu müssen. Wenn Sie in diesem Fall die Option **Wirksamkeit erzwingen** auf *Ja* festlegen, müssen Sie die Stücklisten und Arbeitspläne älterer Versionen manuell inaktivieren, bevor Sie die neuere Version aktivieren können.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

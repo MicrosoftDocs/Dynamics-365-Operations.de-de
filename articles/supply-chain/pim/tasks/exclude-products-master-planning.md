@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5f9573fd220cd8b6a58f81e4d17ca65234f41beb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6bb18f876e7d279624f60f01c5fbf4e449e9ab27
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428562"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986878"
 ---
 # <a name="create-a-product-lifecycle-state-to-exclude-products-from-master-planning"></a>Ein Produktlebenszyklusstatus erstellen, um Produkte vom Produktprogrammplan auszuschließen
 
@@ -44,6 +43,3 @@ In dieser Prozedur wird gezeigt, wie ein neuer Produktlebenszyklus-Status erstel
 5. Markieren Sie in der Liste die ausgewählte Zeile.
 6. Geben Sie im Feld „Produktlebenszyklus-Status” einen Wert ein, oder wählen Sie einen Wert aus.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

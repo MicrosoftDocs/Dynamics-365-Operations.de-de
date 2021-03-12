@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: bc6a793061a3e644599f0882ff163f5f57b2162d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: aab1b22b844ad14a94e1143f49b69f525d93f5b0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412650"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985910"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Anpassen von KI-ML-basierten Produktempfehlungsergebnissen
 
@@ -62,7 +61,7 @@ Die Bestseller-Produktliste besitzt einen Parameter, der geändert werden kann:
 
 ### <a name="for-new-trending-or-best-selling-lists"></a>Für Neu-, Beliebt- oder Bestseller-Listen
 
-1.  Gehen Sie zu **Retail und Commerce** > **Produktempfehlungen** > **Empfehlungsparameter**.
+1.  Gehen Sie zu **Einzelhandel und Handel** > **Produktempfehlungen** > **Empfehlungsparameter**.
 1.  In der Liste der freigegebenen Parameter wählen Sie **Empfehlungs-Listen**.
 1.  Wählen Sie die Liste aus, über die Sie Produkte hinzufügen oder entfernen.
 1.  Um der Tabelle Produkte hinzuzufügen, wählen Sie **Zeile hinzufügen** aus. 
@@ -121,6 +120,3 @@ Befolgen Sie diese Schritte, um manuell Ergebnisse für ein Startprodukt hinzuzu
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

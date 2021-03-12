@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 119046ee2b783e6a4b868fff2b1d7a1b59966e7b
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 085071cb7aa314dd8a8c19b8ef2ac926a6ab4103
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4412690"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985810"
 ---
 # <a name="loyalty-overview"></a>Überblick über die Loyalität
 
@@ -145,12 +144,9 @@ Darüber hinaus können Einzelhändler die maximalen Treuepunkte pro Treuekarte 
     > Derzeit zwingt das System die Benutzer, einen Nummernkreis für "andere Aktivitätstypen" einzurichten, aber dies wird in zukünftigen Versionen kein notwendiger Schritt sein. Um einen Nummernkreis einzurichten, gehen Sie zu **Freigegebene Commerce-Parameter** \> **Nummernkreise**, und wählen Sie einen Nummernkreis für **Andere Aktivitätstyp-ID für Treue** aus.
 
 - Um einen guten Kundenservice zu bieten und Kundenanfragen effektiv zu beantworten, ist es wichtig, dass die Kassierer Zugang zu einem vollständigen Kundenprofil haben. Mit der Version 10.0 können Kassierer Details zur Loyalitätshistorie sowie das zugehörige Treueprogramm und Stufeninformationen am POS einsehen.
-- Kostenloser Versand oder vergünstigter Versand ist einer der erwiesenen Motivationsfaktoren, damit Kunden online kaufen. Um den Einzelhändlern die Einrichtung von Versandförderaktionen zu ermöglichen, haben wir mit der Version 10.0 eine neue Art von Aktion namens „Versandschwellenrabatt“ eingeführt, bei der der Einzelhändler die Schwellenwerte definieren kann, die nach Erreichen der Schwellenwerte die Kunden für den vergünstigten oder kostenlosen Versand qualifizieren. Geben Sie z.B. 35 Euro für kostenlosen "Zweitageversand" oder kostenlosen "Zweitageversand" für alle treuen Kunden aus. Diese Funktion nutzt die neuen erweiterten automatischen Zuschlagsfunktionen. Lesen Sie die [Dokumentation zu erweiterten automatischen Belastungen](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Diese erweiterten Auto-Belastungen müssen zum Versenden von Promotionartikeln aktiviert werden. Sie können sie auf der Registerkarte **Kundenaufträge** auf der Seite **Commerce-Parameter** aktivieren und die Konfiguration „Erweiterte Auto-Belastungen verwenden“ aktivieren. Da ein Einzelhändler mehrere Arten von Belastungen, wie z.B. Bearbeitung oder Installationen, einrichten kann, muss der Einzelhändler zudem angeben, welche Belastung als Versandkosten angesehen wird. Diese Versandrabatte gelten nur für die Versandkosten. Um eine Belastung als Versandgebühr festzulegen, navigieren Sie zum Formular **Belastungscodes** unter **Retail und Commerce** \> **Retail und Commerce-IT** \> **Kanaleinrichtung** \> **Belastungen** und aktivieren Sie das Kontrollkästchen „Versandgebühr“ für die gewünschten Belastungen. Jetzt können Sie zum Formular **Versandrabatt-Schwellenwert** navigieren und den Rabatt einrichten.
+- Kostenloser Versand oder vergünstigter Versand ist einer der erwiesenen Motivationsfaktoren, damit Kunden online kaufen. Um den Einzelhändlern die Einrichtung von Versandförderaktionen zu ermöglichen, haben wir mit der Version 10.0 eine neue Art von Aktion namens „Versandschwellenrabatt“ eingeführt, bei der der Einzelhändler die Schwellenwerte definieren kann, die nach Erreichen der Schwellenwerte die Kunden für den vergünstigten oder kostenlosen Versand qualifizieren. Geben Sie z.B. 35 Euro für kostenlosen "Zweitageversand" oder kostenlosen "Zweitageversand" für alle treuen Kunden aus. Diese Funktion nutzt die neuen erweiterten automatischen Zuschlagsfunktionen. Lesen Sie die [Dokumentation zu erweiterten automatischen Belastungen](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Diese erweiterten Auto-Belastungen müssen zum Versenden von Promotionartikeln aktiviert werden. Sie können sie auf der Registerkarte **Kundenaufträge** auf der Seite **Commerce-Parameter** aktivieren und die Konfiguration „Erweiterte Auto-Belastungen verwenden“ aktivieren. Da ein Einzelhändler mehrere Arten von Belastungen, wie z.B. Bearbeitung oder Installationen, einrichten kann, muss der Einzelhändler zudem angeben, welche Belastung als Versandkosten angesehen wird. Diese Versandrabatte gelten nur für die Versandkosten. Um eine Belastung als Versandgebühr festzulegen, navigieren Sie zum Formular **Belastungscodes** unter **Einzelhandel und Handel** \> **Einzelhandel und Handel-IT** \> **Kanaleinrichtung** \> **Belastungen** und aktivieren Sie das Kontrollkästchen „Versandgebühr“ für die gewünschten Belastungen. Jetzt können Sie zum Formular **Versandrabatt-Schwellenwert** navigieren und den Rabatt einrichten.
 
     Wie bei Produktrabatten berücksichtigt dieser Rabatt alle vorhandenen Standardrabattfunktionen, wie z. B. die Möglichkeit, dass der Einzelhändler Rabatte mit Coupons beschränken kann, so dass nur die Kunden mit Coupons diese Rabatte erhalten können. Diese Rabatte nutzen die Preisgruppenfunktion, um die Berechtigung solcher Rabatte zu bestimmen. Beispielsweise kann der Einzelhändler wählen, ob er diese Aktionen nur in den Online-Kanälen und/oder kanalübergreifend für bestimmte Kundengruppen wie z.B. Treuekunden durchführen möchte. Nachdem die Auftragspositionen mit der angegebenen Lieferart den definierten Schwellenwert erreicht haben, wird der Versandrabatt angewendet und reduziert die Versandkosten basierend auf dem eingerichteten Rabatt. 
 
     > [!NOTE]
     > Im Gegensatz zu anderen periodischen Rabatten wie Mengen-, Einfach-, Angebots-Sortiment- und Schwellenrabatten erzeugt der Versandrabatt keine Rabattpositionen, sondern ändert die Versandkosten direkt und fügt den Namen des Rabatts zur Belastungsbeschreibung hinzu.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

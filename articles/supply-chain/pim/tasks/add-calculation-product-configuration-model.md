@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCConstraintEditor, PCRuntimeConfiguratorValidate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e703c6d505f1e2e77f454732301de7a6c130c58a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 49d09a3544631960e3f6b292dbdd8927dd499f07
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428718"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987053"
 ---
 # <a name="add-a-calculation-to-a-product-configuration-model"></a>Berechnung zu einem Produktkonfigurationsmodell hinzufügen
 
@@ -34,11 +33,8 @@ Im folgenden Verfahren sehen Sie, wie Sie einen neuen Berechnung zu einem Produk
 
 ## <a name="create-calculation-expression"></a>Berechnungsausdruck erstellen
 1. Klicken Sie auf "Ausdruck bearbeiten".
-2. Geben Sie in das Feld ConstraintBody 'If[CabinetFinish=="White", 10, 15]' ein.
+2. Geben Sie im Feld "ConstraintBody" "If[CabinetFinish== "White", 10, 15]" ein.
 3. Klicken Sie auf "Überprüfen".
 4. Klicken Sie auf "Schließen".
 5. Klicken Sie auf "OK".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

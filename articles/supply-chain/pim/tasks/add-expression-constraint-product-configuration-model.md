@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, SysClientPolymorphicCreateSelector, PCConstraintEditor, PCRuntimeConfiguratorValidate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c43d7f768069c5ef201a2823a9aa626b38220073
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 411e20bd8631b70df981c5785f502693d5ba3705
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428717"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987128"
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a>Einem Produktkonfigurationsmodell eine Ausdruckseinschränkung hinzufügen
 
@@ -44,13 +43,10 @@ Im folgenden Verfahren sehen Sie, wie Sie einen neuen Einschränkungsausdruck ei
 ## <a name="enter-expression"></a>Ausdruck eingeben
 1. Klicken Sie auf "Ausdruck bearbeiten".
     * Wenn Sie die Benutzeroberfläche in der Aufgabe "Aufzeichung" in dieser Phase entsperren, können Sie IntelliSense und die Liste der Symbole verwenden, um die "Ausdruckseinschränkung" zu erstellen.  
-2. Geben Sie in das Feld ConstraintBody 'Implies[FrontGrill=="Metal", CornerProtection]' ein.
+2. Geben Sie im Feld "ConstraintBody" "Implies[FrontGrill=="Metal", CornerProtection] " ein.
     * Dieser logische Ausdruck besagt: Wenn der vordere Grill aus Metall ist, muss die Option "Eckschutz" ausgewählt werden.  
 3. Klicken Sie auf "Überprüfen".
     * Die Validierungsfunktion wird durch den Einschränkungsausdruck und Überprüfungen auf Syntaxfehler ausgeführt.  
 4. Klicken Sie auf "Schließen".
 5. Klicken Sie auf "OK".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

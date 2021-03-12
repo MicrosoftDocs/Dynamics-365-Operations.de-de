@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, PurchTablePart, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 248534
 ms.assetid: 99dd5ce1-0029-4f06-90e7-865e6d46d86e
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 532f437bee490743847cf5617579c579f9202b71
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 6ff95b9e16d1a56dee13f67d0a3355f09cfc60b9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429108"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987178"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Die Suche nach Produkten und Produktvarianten bei der Auftragserfassung
 
@@ -32,10 +31,10 @@ ms.locfileid: "4429108"
 
 Verwenden Sie das Feld **Artikelnummer**, um nach Produkten und Produktvarianten zu suchen, wenn Sie manuell eine Auftragsposition oder eine Bestellposition erstellen.  Dadurch können Sie schnell Produktvarianten suchen, wenn Ihnen nur die Konfigurationszeichenfolge oder eine der Produktdimensionen zur Verfügung steht.
 
-Manchmal ist die Lage nicht optimal, wenn zu viel von einer Sache vorhanden ist. Das gilt insbesondere, wenn Sie eine Anzahl ähnlicher Produkte verkaufen und versuchen, sich die Artikelnummern oder Produktsuchbegriffe zu merken, um das richtige Produkt zu finden, das einem Auftrag hinzugefügt werden soll.Sie können das Feld **Artikelnummer** in einer Auftragsposition oder einer Bestellposition als Suchfeld verwenden. Sie können einen beliebigen Teil eines Produktnamens, einer Zahl oder Dimension eingeben und eine Auswahlliste erhalten, bei der alle Artikel angezeigt werden, die mit dem Suchbegriff übereinstimmen.
+Manchmal ist die Lage nicht optimal, wenn zu viel von einer Sache vorhanden ist. Das gilt insbesondere, wenn Sie eine Anzahl ähnlicher Produkte verkaufen und versuchen, sich die Artikelnummern oder Produktsuchbegriffe zu merken, um das richtige Produkt zu finden, das einem Auftrag hinzugefügt werden soll. Sie können das Feld **Artikelnummer** in einer Auftragsposition oder einer Bestellposition als Suchfeld verwenden. Sie können einen beliebigen Teil eines Produktnamens, einer Zahl oder Dimension eingeben und eine Auswahlliste erhalten, bei der alle Artikel angezeigt werden, die mit dem Suchbegriff übereinstimmen.
 
-## <a name="how-searchworks"></a>Funktionsweise der Suche
-Wenn Sie nach Produkten oder Produktvarianten suchen, ist es wichtig zu verstehen, wie mit der Suchfunktion die Produkte gefunden werden, die mit dem Text, den Sie eingeben, übereinstimmen. Dies sind die wichtigsten Suchregeln, um Suchergebnisse zu erhalten:
+## <a name="how-search-works"></a>Funktionsweise der Suche
+Bei der Suche nach Produkten oder Produktvarianten sollte man verstehen, wie mit der Suchfunktion die Produkte gefunden werden, die mit dem Text, den Sie eingeben, übereinstimmen. Dies sind die wichtigsten Suchregeln, um Suchergebnisse zu erhalten:
 
 -   Die Suchergebnisse geben jeden beliebigen übereinstimmenden Datensatz zurück. Das Feld, in das der Suchtext eingegeben wird, bleibt dabei unberücksichtigt.
 -   Der Suchtext muss im übereinstimmenden Datensatz in seiner vollen Länge vorhanden sein.
@@ -44,7 +43,7 @@ Wenn Sie nach Produkten oder Produktvarianten suchen, ist es wichtig zu verste
 
 ### <a name="examples"></a>Beispiele
 
-In den folgenden Beispielen werden Produkte und Produktvarianten verwendet, um zu zeigen, wie die Suche in unterschiedlichen Szenarien gehandhabt wird. **Voraussetzung:** Unter **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparameter &gt; Suchtyp** wählen Sie die Option **Vollständige Übereinstimmung** aus.
+In den folgenden Beispielen werden Produkte und Produktvarianten verwendet, um zu zeigen, wie die Suche in unterschiedlichen Szenarien gehandhabt wird. **Voraussetzung**: Wählen Sie unter **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparameter &gt; Suchtyp** die Option **Vollständige Übereinstimmung** aus.
 
 | Produkttyp     | Produktname    | Produktnummer anzeigen | Artikelnummer | Variante |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -52,28 +51,28 @@ In den folgenden Beispielen werden Produkte und Produktvarianten verwendet, um z
 | Produktvariante  | Aktiver Lautsprecher  | D0010:::Schwarz:         | D0010       | 000005        |
 | Produktvariante  | Aktiver Lautsprecher  | D0010:::Weiß:         | D0010       | Weiß         |
 
-Wenn Sie im Feld **Artikelnummer** "sprech" eingeben, erhalten Sie alle oben genannten Produkte als Ergebnis in der Auswahlliste. Wenn Sie im Feld **Artikelnummer** "schwarz" eingeben, erhalten Sie das zweite Produkt als Ergebnis, da es den Text "schwarz" in der Anzeigeproduktnummer hat. Diese beiden Beispiele veranschaulichen, dass die Suche nicht nur am Anfang des Felds erfolgt. Eine Übereinstimmung tritt sogar auf, wenn der Suchtext in der Mitte einer Textzeichenfolge im übereinstimmenden Datensatz gefunden wird.  
+Wenn Sie im Feld **Artikelnummer** „sprech“ eingeben, erhalten Sie alle oben genannten Produkte als Ergebnis in der Auswahlliste. Wenn Sie im Feld **Artikelnummer** "schwarz" eingeben, erhalten Sie das zweite Produkt als Ergebnis, da es den Text "schwarz" in der Anzeigeproduktnummer hat. Diese beiden Beispiele veranschaulichen, dass die Suche nicht nur am Anfang des Felds erfolgt. Eine Übereinstimmung tritt sogar dann auf, wenn der Suchtext in der Mitte einer Textzeichenfolge im übereinstimmenden Datensatz gefunden wird.  
 
-Wenn Sie "05 "eingeben, erhalten Sie nur die zweite Produktvariante als Ergebnis, da sie "05" in der Konfiguration hat. Dies zeigt an, dass die Suche über alle aktivierten Felder auf der Seite **Suchkriterien** hinweg erfolgt.  
+Wenn Sie "05 "eingeben, erhalten Sie nur die zweite Produktvariante als Ergebnis, da sie "05" in der Konfiguration hat. Dies zeigt an, dass die Suche über alle aktivierten Felder auf der Seite **Suchkriterien** hinweg erfolgt.  
 
-Wenn Sie "sprech 05" eingeben, erhalten Sie keine Ergebnisse. Das liegt daran, weil die Suche nach dem vollständigen Text sucht, der eingegeben wird. Die Suche versucht nicht, "sprech" zu finden und dann die Ergebnisse auf diejenigen einzuengen, die "05" enthalten.  
+Wenn Sie "sprech 05" eingeben, erhalten Sie keine Ergebnisse. Das liegt daran, dass nach dem vollständigen Text gesucht wird, den Sie eingeben. Die Suche versucht nicht, "sprech" zu finden und dann die Ergebnisse auf diejenigen einzuengen, die "05" enthalten.  
 
-Sie können die Anzahl von Suchergebnissen eingrenzen, indem Sie das Feld **Anzahl von Ergebnissen** auf der Seite **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparameter** verwenden. Wenn Sie dieses Feld auf 0 festlegen, werden alle Suchergebnisse zurückgegeben. Wenn Sie es beispielsweise auf 10 festlegen, wird es maximal 10 Suchergebnisse zurückgeben.
+Sie können die Anzahl der Suchergebnisse eingrenzen, indem Sie das Feld **Anzahl von Ergebnissen** auf der Seite **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparamter** verwenden. Wenn Sie dieses Feld auf 0 festlegen, werden alle Suchergebnisse zurückgegeben. Wenn Sie es beispielsweise auf 10 festlegen, wird es maximal 10 Suchergebnisse zurückgeben.
 
-## <a name="configure-the-productsearch"></a>Die Produktsuche konfigurieren
-Bevor Sie die Produkt- und Produktvarianten-Suchfunktion verwenden können, folgen Sie diesen Schritten, um die Produktsuche zu konfigurieren. [![3 Schritte, um die Produktsuche\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png) zu konfigurieren
+## <a name="configure-the-product-search"></a>Konfigurieren der Produktsuche
+Bevor Sie die Suchfunktion für Produkte und Produktvarianten verwenden können, befolgen Sie diese Schritte, um die Produktsuche zu konfigurieren. [![3 Schritte, um die Produktsuche\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png) zu konfigurieren
 
-### <a name="step-1include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Schritt 1: Schließen Sie alle relevanten Produkt- und Produktvariantenbezeichner und -dimensionen in die Suchkriterien ein
+### <a name="step-1-include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Schritt 1: Schließen Sie alle relevanten Bezeichner und Dimensionen für Produkte und Produktvarianten in die Suchkriterien ein.
 
-Beispiele für Produkt- und Produktvariantenbezeichner und -dimensionen, anhand derer Sie suchen können, sind  **Produktname, Artikelnummer**, **Anzeigeproduktnummer, Konfiguration, Farbe, Größe, Stil, Suchbegriff usw.**  
+Beispiele für Bezeichner und Dimensionen für Produkte und Produktvarianten, anhand derer Sie suchen können, sind **Produktname, Artikelnummer**, **Anzeigeproduktnummer, Konfiguration, Farbe, Größe, Stil, Suchbegriff usw.**  
 
-Wechseln Sie zur Seite **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchkriterien**. Auf der Seite **Suchkriterien** können Sie Kriterien für Kunden, Interessenten und die Produktsuche definieren. Stellen Sie sicher, dass Sie die Seite mithilfe von Produktsuchkriterien filtern. Dies können Sie, indem Sie auf **Produkt** im Menü der Seite wechseln.  
+Wechseln Sie zur Seite **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchkriterien**. Auf der Seite **Suchkriterien** können Sie Kriterien für Kunden, Interessenten und die Produktsuche definieren. Stellen Sie sicher, dass Sie die Seite mithilfe von Produktsuchkriterien filtern. Wechseln Sie hierfür im Menü der Seite auf **Produkt**.  
 
 Um der Anzeigenproduktnummer die Suchkriterien hinzufügen möchten, klicken Sie **Neu** im Menü der Seite. Hierdurch wird einem neuen Datensatzes im **Suchkriterien** Raster hinzu. Öffnen Sie die Spalten-Auswahlliste **Feldname** und wählen Sie **DisplayProductNumber** aus. Um die Konfiguration des Produkts den Suchkriterien hinzuzufügen, erstellen Sie einen neuen Datensatz im Raster **Suchkriterien** und wählen Sie **configId** in der Spalte **Feldname** aus. Auf die gleiche Weise erstellen Sie einen Datensatz mit **Feldname** **InventColorId** für die Farbdimension, **InventSizeId** für die Größendimension und **InventStyleId** für die Stildimension.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Schritt 2: Füllen Sie die Datenbanktabelle auf, die für die Produktsuche verwendet wird
 
-Auf der Seite **Suchkriterien** klicken Sie auf die Schaltfläche **Suchdaten aktualisieren**. Stellen Sie im Dialogfeld **Suchdaten aktualisieren** sicher, dass  **Quelle** auf **Produkt** festgelegt ist, und klicken Sie dann auf **OK**. Das System zusammengefasst in einer Tabelle alle ausgewählten Suchkriterien, die in Schritt 1 angegeben werden. Wenn Sie viele Produkte und Produktvarianten haben, kann dieser Vorgang recht langwierig sein und Sie können eine Warnung erhalten. Wir empfehlen, dass Sie die Suchtabellenauffüllung auf dem Stapelverarbeitungsserver für einen Zeitpunkt planen, an dem der Server nicht zu sehr beschäftigt ist.  
+Auf der Seite **Suchkriterien** klicken Sie auf die Schaltfläche **Suchdaten aktualisieren**. Stellen Sie im Dialogfeld **Suchdaten aktualisieren** sicher, dass **Quelle** auf **Produkt** festgelegt ist, und klicken Sie dann auf **OK**. Das System zusammengefasst in einer Tabelle alle ausgewählten Suchkriterien, die in Schritt 1 angegeben werden. Bei einer großen Anzahl von Produkten und Produktvarianten kann dieser Vorgang recht langwierig sein und es wird eventuell eine Warnung angezeigt. Wir empfehlen, dass Sie die Suchtabellenauffüllung auf dem Stapelverarbeitungsserver für einen Zeitpunkt planen, an dem der Server nicht zu sehr beschäftigt ist.  
 
 Bis die Tabelle aufgefüllt ist, stellt die Produktsuche keine korrekten Ergebnisse bereit. Wenn Sie keine Suchergebnisse erhalten, stellen Sie sicher, dass diese Tabelle aufgefüllt ist.  
 
@@ -81,12 +80,9 @@ Die Tabelle muss nur aufgefüllt werden, wenn die Suchkriterien geändert werden
 
 ### <a name="step-3-enable-the-lookup-for-product-search-on-sales-and-purchase-order-lines"></a>Schritt 3: Aktivieren Sie die Auswahlliste für die Produktsuche bei Vertrieb und Bestellpositionen
 
-Sie können diese Funktionalität aktivieren, indem Sie zu **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparameter** wechseln und die Option **Auswahlliste für Suche aktivieren** auf **Ja** in der Registerkarte **Allgemein** festlegen.  
+Sie können diese Funktion aktivieren, indem Sie zu **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparameter** wechseln und die Option **Auswahlliste für Suche aktivieren** auf **Ja** in der Registerkarte **Allgemein** festlegen.  
 
-Bei einem Auftragspositionseintrag besteht das Standardverhalten darin, die Seite **Produktsuche** zu öffnen, wenn Sie damit beginnen, Eingaben im Feld **Artikelnummer** vorzunehmen und dann auf die **TAB**-Taste zu drücken. Die Seite **Produktsuche** ändert den Kontext während der Auftragspositionserstellung und wird möglicherweise als unnötig aufdringlich betrachtet. Wenn Sie es bevorzugen, die Suchergebnisse in einer Auswahlliste zu erhalten und nicht den Kontext während des Auftragspositionseintrags zu verlieren, können Sie stattdessen die Suchauswahlliste verwenden. Wenn Sie nach einem Produkt oder einer Produktvariante suchen, aber Sie nichts in der Auswahlliste auswählen und die Taste **Registerkarte** drücken, wird die Seite **Produktsuche** angezeigt.
-
-
+Bei einem Auftragspositionseintrag wird standardmäßig die Seite **Produktsuche** geöffnet, wenn Sie mit einer Eingabe in das Feld **Artikelnummer** beginnen und dann die **Tabulatortaste** drücken. Die Seite **Produktsuche** ändert den Kontext während der Auftragspositionserstellung und wird möglicherweise als unnötig aufdringlich betrachtet. Wenn Sie es bevorzugen, die Suchergebnisse in einer Auswahlliste zu erhalten und nicht den Kontext während des Auftragspositionseintrags zu verlieren, können Sie stattdessen die Suchauswahlliste verwenden. Wenn Sie nach einem Produkt oder einer Produktvariante suchen, in der Auswahlliste jedoch keine Auswahl vornehmen und dann die **Tabulatortaste** drücken, wird die Seite **Produktsuche** angezeigt.
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

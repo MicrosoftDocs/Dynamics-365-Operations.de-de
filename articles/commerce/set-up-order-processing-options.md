@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 78973
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
 ms.search.region: global
@@ -19,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 28954eab857a06da3978ca362081dfc3c525354d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fde831bb08f45623f24805625f76c0a43460562a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412641"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985735"
 ---
 # <a name="set-up-call-center-channels"></a>Einrichten von Callcenterkanälen
 
 [!include [banner](includes/banner.md)]
 
-Ein Unternehmen kann Callcenter-Kanäle in Dynamics 365 Commercedefinieren. Callcenterkanäle werden bei **Retail und Commerce** \> **Kanäle** \> **Callcenter** \> **Alle Callcenter** konfiguriert, und sie sind für eine juristische Person bestimmt.
+Ein Unternehmen kann Callcenter-Kanäle in Dynamics 365 Commercedefinieren. Callcenterkanäle werden bei **Einzelhandel und Handel** \> **Kanäle** \> **Callcenter** \> **Alle Callcenter** konfiguriert, und sie sind für eine juristische Person bestimmt.
 
 Wenn ein neuer Callcenterkanal erstellt wird, wird er systematisch einer Organisationseinheitsnummer zugewiesen. Da Callcenter als Organisationseinheiten erstellt werden, können Benutzer den Callcenterkanal mit verschiedenen Commerce-Funktionen, z. B. Sortimente, Kataloge und bestimmte Lieferarten, verknüpfen.
 
@@ -79,11 +78,8 @@ Standardmäßig wird die Markierung **Verkauf** im Auftragskopf für alle Auftr�
 
 Benutzer, die nicht mit einem Callcenterkanal verknüpft sind, verwenden die Standardauftragserfassungsfunktionen von Microsoft Dynamics 365 Finance. Aufträge, die diese Benutzer durch das Auftragserfassungsformular eingeben, werden nicht systematisch als Commerce-Aufträge identifiziert. Darüber hinaus sind diese Aufträge, die von diesen Benutzern eingegeben werden, nicht Auftragsabschlussregeln, Preislogik oder anderen Auftragsprüfungen unterworfen, die in der Callcenterkanalkonfiguration oder im Systemparameter des Callcenters definiert werden können.
 
-Nachdem Sie die Konfiguration des Callcenters abgeschlossen und Kanalbenutzer definiert haben, um das gewünschte Systemverhalten sicherzustellen, überprüfen Sie, ob alle erforderlichen Callcenter-Parameter bei **Retail und Commerce** \> **Kanaleinrichtung** \> **Callcenter-Einrichtung** \> **Callcenter-Parameter** definiert sind. Überprüfen Sie, ob auch zugehörige Nummernkreise definiert sind.
+Nachdem Sie die Konfiguration des Callcenters abgeschlossen und Kanalbenutzer definiert haben, um das gewünschte Systemverhalten sicherzustellen, überprüfen Sie, ob alle erforderlichen Callcenter-Parameter bei **Einzelhandel und Handel** \> **Kanaleinrichtung** \> **Callcenter-Einrichtung** \> **Callcenter-Parameter** definiert sind. Überprüfen Sie, ob auch zugehörige Nummernkreise definiert sind.
 
 > [!NOTE]
 > Um die Funktionen des Callcenters nutzen zu können, muss der Konfigurationsschlüssel für **Mehrere Lieferadressen** aktiviert sein. Diesen Konfigurationsschlüssel finden Sie in den Konfigurationsschlüsseln **Handel** unter **Systemverwaltung**\> **Einstellungen** \> **Lizenzkonfiguration**. Dies ist aufgrund der Call Center-Funktionalität erforderlich, die verschiedene Überprüfungen basierend auf der Lieferadresse durchführt, die auf der Ebene der Auftragspositionen konfiguriert wurde. 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
