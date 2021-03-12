@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 321c716c10b136769ea3a48a3b60a8a717798338
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 1977dac4a3ab66cca2248dc0124d3a06d6963f40
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646228"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978763"
 ---
 # <a name="enable-cash-flow-forecasting-preview"></a>Cashflow-Planung aktivieren (Vorschau)
 
@@ -67,6 +66,3 @@ Weitere Informationen dazu, wie die Cashflow-Planungsfunktion eingerichtet wird,
 ## <a name="privacy-notice"></a>Datenschutzhinweis
 
 Vorschauen (1) wenden möglicherweise weniger Datenschutz- und Sicherheitsmaßnahmen an als der Dynamics 365 Finance and Operations-Dienst, (2) sind nicht in der Service Level Agreement (SLA) für diesen Dienst enthalten, (3) sollten nicht zur Verarbeitung personenbezogener Daten oder anderer Daten verwendet werden, die gesetzlichen oder behördlichen Compliance-Anforderungen unterliegen, und (4) hat begrenzten Support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

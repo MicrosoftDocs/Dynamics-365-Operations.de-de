@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 8aa03f94e0fb89a6d34ce014dbb6004a1a666327
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0499f604049240a226b4002710817034598b1e66
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529209"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977712"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Konten direkt von Sales mit Konten in Supply Chain Management synchronisieren
 
@@ -33,7 +32,7 @@ ms.locfileid: "4529209"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) vertraut sein.
+> Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Microsoft Dataverse for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) vertraut sein.
 
 Dieses Thema beschreibt die Vorlagen und die zugrunde liegende Aufgaben, die verwendet werden, um Konten direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management zu synchronisieren.
 
@@ -66,11 +65,11 @@ Konten werden in Sales verwaltet und mit Supply Chain Management als Kunden sync
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Prospect to Cash-Lösung für Sales
 
-Das Feld **Kontonummer** steht auf der Seite **Konto** zur Verfügung. Es wurde zu einem natürlichen und eindeutigen Schlüssel für die Unterstützung der Integration gemacht. Die natürliche Schlüsselfunktion der Customer Relationship Management (CRM)-Lösung wirkt sich möglicherweise auf Kunden aus, die das Feld **Kontonummer** bereits verwenden, aber keine eindeutigen **Kontonummer**-Werte pro Konto verwenden. Derzeit unterstützt die Integrationslösung diesen Fall nicht.
+Die Spalte **Kontonummer** steht auf der Seite **Konto** zur Verfügung. Es wurde zu einem natürlichen und eindeutigen Schlüssel für die Unterstützung der Integration gemacht. Die natürliche Schlüsselfunktion der Customer Relationship Management (CRM)-Lösung wirkt sich möglicherweise auf Kunden aus, die die Spalte **Kontonummer** bereits verwenden, aber keine eindeutigen **Kontonummer**-Werte pro Konto verwenden. Derzeit unterstützt die Integrationslösung diesen Fall nicht.
 
 Wenn ein neues Konto angelegt wird und noch kein **Kontonummer**-Wert vorhanden ist, wird es automatisch unter Verwendung einer fortlaufenden Nummerierung erstellt. Der Wert besteht aus **ACC**, gefolgt von einer aufsteigenden fortlaufenden Nummerierung und einem Suffix aus sechs Zeichen. Beispiel: **ACC-01000-BVRCPS**
 
-Wenn die Integrationslösung für Sales angewendet wird, füllt ein Upgrade-Skript das Feld **Kontonummer** für in Sales vorhandene Konten aus. Wenn es keine **Kontonummer**-Werte gibt, wird die zuvor beschriebene laufende Nummerierung verwendet.
+Wenn die Integrationslösung für Sales angewendet wird, füllt ein Upgrade-Skript die Spalte **Kontonummer** für in Sales vorhandene Konten aus. Wenn es keine **Kontonummer**-Werte gibt, wird die zuvor beschriebene laufende Nummerierung verwendet.
 
 ## <a name="preconditions-and-mapping-setup"></a>Voraussetzungen und Einrichtung der Zuordnung
 
@@ -95,12 +94,12 @@ Wenn die Integrationslösung für Sales angewendet wird, füllt ein Upgrade-Skri
 ## <a name="template-mapping-in-data-integration"></a>Vorlagenzuordnung in Datenintegration
 
 > [!NOTE]
-> Die Felder **Zahlungsbedingungen**, **Frachtbedingungen**, **Lieferbedingungen**, **Liefermethode** und **Bereitstellungsmodus** sind nicht in den Standardzuordnungen enthalten. Um diese Feldern zuzuordnen, müssen Sie eine Wertzuordnung einrichten, die spezifisch für die Daten in den Organisationen ist, zwischen denen die Entität synchronisiert wird.
+> Die Spalten **Zahlungsbedingungen**, **Frachtkonditionen**, **Lieferbedingungen**, **Liefermethode** und **Bereitstellungsmodus** sind nicht in den Standardzuordnungen enthalten. Um diese Spalten zuzuordnen, müssen Sie eine Wertzuordnung einrichten, die für die Daten in den Organisationen, zwischen denen die Tabelle synchronisiert wird, spezifisch ist.
 
 Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Datenintegration. 
 
 > [!NOTE]
-> Die Zuordnung zeigt, welche Feldinformationen von Sales zu Supply Chain Management synchronisiert werden.
+> Die Zuordnung zeigt, welche Spalteninformationen von Sales zu Supply Chain Management synchronisiert werden.
 
 ![Vorlagenzuordnung in Datenintegration](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
@@ -117,6 +116,3 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Dat
 
 [Rechnungskopfzeilen und ‑positionen direkt von Supply Chain Management zu Sales synchronisieren](sales-invoice-template-mapping-direct.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

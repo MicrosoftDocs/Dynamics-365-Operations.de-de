@@ -3,7 +3,7 @@ title: Doppelte Währungsunterstützung für Steuern
 description: In diesem Thema wird erklärt, wie die Doppelwährungs-Buchhaltungsfunktion im Steuerbereich erweitert werden kann und welche Auswirkungen dies auf die Steuerberechnung und -buchung hat.
 author: EricWang
 manager: Ann Beebe
-ms.date: 12/16/2019
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 9e5db8e4bbd14aa30196e3be617cdfcb72c091fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e3e7ff93ca3c6a2266ba0f33c8eac7ceade0d4d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443532"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978598"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Unterstützung der Umsatzsteuer in zwei Währungen
 [!include [banner](../includes/banner.md)]
@@ -44,8 +43,7 @@ Weitere Informationen über Doppelwährung finden Sie unter [Duale Währung](dua
 
 Als Folge der Unterstützung von Doppelwährungen sind zwei neue Funktionen in der Funktionsverwaltung verfügbar: 
 
-- Umsatzsteuer-Umstellung (Release in Version 10.0.9)
-- Steuerabrechnungs-Autosaldo in Berichtswährung (Release in Version 10.0.11)
+- Umsatzsteuerumrechnung (neu in Version 10.0.13)
 
 Die Doppelwährungsunterstützung für die Umsatzsteuer stellt sicher, dass die Steuern genau in der Steuerwährung berechnet werden und dass der Umsatzsteuerabrechnungssaldo sowohl in der Buchhaltungs- als auch in der Berichtswährung genau berechnet wird. 
 
@@ -54,7 +52,7 @@ Die Doppelwährungsunterstützung für die Umsatzsteuer stellt sicher, dass die 
 Der Parameter **Umsatzsteuerumrechnung** bietet zwei Optionen zur Umrechnung des Steuerbetrags von der Transaktionswährung in die Steuerwährung. 
 
 - Buchführungswährung: Der Pfad lautet „Betrag in Transaktionswährung > Betrag in Buchhaltungswährung > Betrag in Steuerwährung“. Für die Währungsumrechnung wird der Wechselkurs-Typ der Buchhaltungswährung (konfiguriert in der Einrichtung des Ledgers) verwendet.
-- Berichtswährung: Der Pfad lautet „Betrag in Transaktionswährung > Betrag in Berichtswährung > Betrag in Steuerwährung“. Der (im Ledger-Setup konfigurierte) Berichtswährungsumrechnungskurstyp wird für die Währungsumrechnung verwendet.
+- Berichtswährung: Der Pfad lautet „Betrag in Transaktionswährung > Betrag in Berichtswährung > Betrag in Steuerwährung“. Der (im Ledger-Setup konfigurierte) Berichtswährungswechselkurstyp wird für die Währungsumrechnung verwendet.
 
 ### <a name="example"></a>Beispiel
 
@@ -145,6 +143,3 @@ Weitere Informationen finden Sie in folgenden Themen:
 - [Doppelte Währung](dual-currency.md)
 - [Mehrwertsteuerübersicht](indirect-taxes-overview.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

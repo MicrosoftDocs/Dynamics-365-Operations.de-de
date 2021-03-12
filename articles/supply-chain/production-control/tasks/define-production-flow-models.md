@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 511c466d6019cb182c9ada0b02172b8eeb3725e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 22aabf2d0cecf272ac25ba3adde8cc650b069af9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428404"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977862"
 ---
 # <a name="define-production-flow-models"></a>Produktionsflussmodelle definieren
 
@@ -46,6 +45,3 @@ Produktionsflussmodelle beschreiben, wie die Kapazität von Lean Manufacturing-A
 8. Wählen Sie im Feld "Reaktion auf Kapazitätsmangel" eine Option aus.
     * Die Optionen umfassen: "Termin verschieben" - Verschieben des vollständigen Bedarfs des Planungsereignisses auf den nächsten verfügbaren Produktionstag mit verfügbarem Durchsatz. Abbrechen - Beenden der automatischen Planung für das Planungsereignis und belassen der zugehörigen Einzelvorgänge als ungeplant.   Zum angeforderten Tag hinzufügen - Planen der angeforderten Einzelvorgänge für die gewünschte Periode. Dieses überlädt die Zelle für diesen Tag und erfordert vom Planer eine Überprüfung und eine manuelle Interaktion.   Verteilen verfügbarer Perioden - Verteilt die verschiedenen Einzelvorgänge des Planungsereignisses von verfügbaren Produktionstagen ab dem ersten verfügbaren Tag. Die Mindestverteilungsmenge ist die Menge des Kanban-Einzelvorgangs. Die Verteilung weist die minimale Planungsmenge (Kanban-Menge) zu jedem Tag mit genügendem verfügbaren Durchsatz zu.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

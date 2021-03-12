@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c07d3fe1969f3baea484991e74f668eade813d78
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 93b30cbe660d224f0a92f4e412d2b1ba33af3f9b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428403"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977837"
 ---
 # <a name="define-resource-capabilities"></a>Ressourcenfähigkeiten definieren
 
@@ -49,6 +48,3 @@ Ressourcenfunktionen beschreiben, was betriebliche Ressourcen ausführen können
 5. Geben Sie im Feld "Ebene" eine Zahl ein.
     * Wenn Sie angeben, dass ein Einzelvorgang oder ein Arbeitsgang eine bestimmte Funktion erfordert, können Sie auch die Mindestanforderung angeben, die erforderlich ist. Verwenden Sie die Funktionsebene, um Ressourcen zu unterscheiden, die den gleichen Einzelvorgang ausführen können, aber mit verschiedenen Geschwindigkeiten, Stärken, Größen, usw.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

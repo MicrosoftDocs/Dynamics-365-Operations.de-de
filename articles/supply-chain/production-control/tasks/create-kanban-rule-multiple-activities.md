@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, KanbanFlowSelection, InventItemIdLookupSimple, KanbanCreateScheduled, Kanban
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 68cac0f581e786cdb3801e03fb60db7bc05ffb2f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3c25d47a78d1cc91ee2625ef628d7b9ba345b097
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428422"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977912"
 ---
 # <a name="create-a-kanban-rule-for-multiple-activities"></a>Eine Kanban-Regel für mehrere Aktivitäten erstellen
 
@@ -59,6 +58,3 @@ Diese Prozedur zeigt an, wie man eine Kanban-Regel erstellt, die mehrere Aktivit
     * Beachten Sie, dass das Kanban zwei Prozesseinzelvorgänge vom Produktionsfluss hat. Das erste ist "SpeakerAssemblyAndPolish" und das zweite ist "SpeakerTestAndPackaging".  
     * Dies ist der letzte Schritt!  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

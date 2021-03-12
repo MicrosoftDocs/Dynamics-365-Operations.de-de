@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aa193f6d62613893f9d5da4351d43a810dbf1596
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e22816b33739141fbcd188d631a07313db415959
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429091"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977287"
 ---
 # <a name="configure-wave-processing"></a>Wellenverarbeitung konfigurieren
 
@@ -61,6 +60,3 @@ In diesem Leitfaden wird beschrieben, wie die Kriterien eingerichtet werden, die
 Bei Aufträgen und Kanbanaufträgen muss Lagerbestand reserviert werden, bevor der Auftrag an den Lagerort freigegeben wird. Andernfalls können die Artikel oder der Verteilungspositionen nicht in einer Welle verarbeitet werden. Bei Produktionsaufträgen haben Sie auch die Option, "Teilweise Reservierung zulassen" auszuwählen. Beispielsweise ist dies hilfreich, wenn Sie die Materialien haben, die Sie zum Starten der Produktion benötigen, und dann warten können, bis die zusätzlicher Materialien verfügbar werden, um den Prozess abzuschließen. Wenn Sie diese Option auswählen, müssen Sie den Prozess der Freigabe für den Lagerort manuell wiederholen, wenn die zusätzlichen Materialien verfügbar werden.  
 25. Schließen Sie die Seite.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

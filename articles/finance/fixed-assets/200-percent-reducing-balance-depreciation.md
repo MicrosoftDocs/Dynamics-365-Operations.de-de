@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0474a8cecccaf1e23874458c27e0bea991140b6c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f012f934015e334aea468b5b62741749103d7790
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443621"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978738"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>Degressiven Abschreibung von 200 Prozent
 
@@ -77,19 +76,16 @@ Wenn **Steuerlich** als Abschreibungsjahr ausgewählt wird, stehen im Feld **Per
 | Nutzungsdauer (Jahre)             | 5      |
 | Jährlicher Abschreibungsprozentsatz | 40 %    |
 
-Bei der Abschreibungsmethode "200 % degressiv" werden 200 Prozent durch die Anzahl der Jahre der Nutzungsdauer dividiert. Der sich ergebende Prozentsatz wird mit dem Nettobuchwert der Anlage multipliziert, um den Abschreibungsbetrag für das Jahr zu ermitteln.
+Bei der Abschreibungsmethode „200 % degressiv“ werden 200 Prozent durch die Anzahl der Jahre der Nutzungsdauer dividiert. Der sich ergebende Prozentsatz wird mit dem Nettobuchwert der Anlage multipliziert, um den Abschreibungsbetrag für das Jahr zu ermitteln.
 
 | Zeitraum | Berechnung des jährlichen Abschreibungsbetrags | Buchwert             | Nettobuchwert am Ende des Jahres |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
-| Jahr 1 | (11.000 – 1.000) × 40% = 4.000                | 11.000 – 4.000 = 7.000 | 11.000 – 1.000 – 4.000 = 6.000        |
-| Jahr 2 | 6.000 × 40% = 2.400                           | 7.000 – 2.400 = 4.600  | 6.000 – 2.400 = 3.600                 |
-| Jahr 3 | 3.600 × 40% = 1.440                           | 4.600 – 1.440 = 3.160  | 3.600 – 1.440 = 2.160                 |
+| Jahr 1 | (11.000 – 1.000) × 40 % = 4.000                | 11.000 – 4.000 = 7.000 | 11.000 – 1.000 – 4.000 = 6.000        |
+| Jahr 2 | 6.000 × 40 % = 2.400                           | 7.000 – 2.400 = 4.600  | 6.000 – 2.400 = 3.600                 |
+| Jahr 3 | 3.600 × 40 % = 1.440                           | 4.600 – 1.440 = 3.160  | 3.600 – 1.440 = 2.160                 |
 
 > [!NOTE] 
-> Hinweis: Wenn der Betrag, der mithilfe der Abschreibungsmethode "200 % degressiv" berechnet wird, geringer ausfällt als der Betrag, der mithilfe der Methode "Linear" berechnet würde, gibt es eine Umrechnung zur linearen Methode für die verbleibende Nutzungsdauer.
+> Hinweis: Wenn der Betrag, der mithilfe der Abschreibungsmethode "200% degressiv" berechnet wird, geringer ausfällt, als der Betrag, der mithilfe der Methode "Linear" berechnet würde, gibt es eine Umrechnung zur linearen Methode für die verbleibende Nutzungsdauer.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: JmgPayTable, JmgPayRate, JmgPayAgreementTable, JmgPayAgreementLine, HcmWorker
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5805cc31bf9c7c2231defab63dc9a1e67f82622a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c855f388e8afbd12559cd633cfcdebc7740bce6a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428669"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977787"
 ---
 # <a name="enable-the-payroll-process-for-time-and-attendance"></a>Lohnprozess für Zeit und Anwesenheit aktivieren
 
@@ -70,6 +69,3 @@ Diese Prozedur zeigt, wie der Lohnprozess für Zeit und Anwesenheit aktiviert wi
 7. Klicken Sie auf "Bearbeiten".
 8. Geben Sie im Feld "Lohnvereinbarung" einen Wert ein, oder wählen Sie einen Wert aus.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

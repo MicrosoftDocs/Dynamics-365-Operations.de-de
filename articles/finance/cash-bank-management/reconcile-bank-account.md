@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c77d08d5877ab27f9b6549a5b2a666150938fc08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1abc86aa5c3863eba34f726b543792408a542383
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443648"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976365"
 ---
 # <a name="reconcile-a-bank-account"></a>Abstimmen eines Bankkontos
 
@@ -71,6 +70,3 @@ Die Funktion „Bankauszugsabstimmung stornieren“ ermöglicht es Ihnen, den Vo
 Bankauszugsabstimmungen können nur in der chronologischen Reihenfolge storniert werden, in der sie eingegeben wurden. Wenn eine Bankauszugsabstimmung storniert wird, werden neue Buchungen und Korrekturen storniert und alle weiteren Buchungen werden als nicht abgestimmt markiert.
  
 Um die Bankauszugsabstimmung stornieren, wählen Sie den Bankauszug aus, und wählen Sie **Bankauszug > Abstimmung stornieren**. Geben Sie auf der Seite **Abstimmung stornieren** den **Ursachencode**, einen **Kommentar zur Ursache** und das **Stornierungsdatum** an. Wählen Sie **OK**, um die Stornierung zu starten. Beachten Sie, dass das Datum der Bankauszugsstornierung am oder nach dem Bankauszugsdatum liegen muss. Nachdem die Bankauszugsabstimmung storniert wurde, wird das Feld **Stornierungsdatum** für den Bankauszug mit dem angegebenen **Stornierungsdatum** aktualisiert. Wählen Sie die Schaltfläche **Buchungen** aus, um die Buchungen anzuzeigen, für die die Abstimmung storniert wurde.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
