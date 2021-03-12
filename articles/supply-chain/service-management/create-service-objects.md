@@ -11,35 +11,34 @@ ms.technology: ''
 ms.search.form: SMAServiceObjectTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 778aec1dc5a819a2f5903aa48d12670c0d0b6694
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9d9410e0f617b0cbadc3010380280caad7c8480e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428529"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996600"
 ---
-# <a name="create-service-objects"></a><span data-ttu-id="55d8c-103">Erstellen von Serviceobjekten</span><span class="sxs-lookup"><span data-stu-id="55d8c-103">Create service objects</span></span>  
+# <a name="create-service-objects"></a><span data-ttu-id="f6aba-103">Erstellen von Serviceobjekten</span><span class="sxs-lookup"><span data-stu-id="f6aba-103">Create service objects</span></span>  
 
 [!include [banner](../includes/banner.md)]
    
-<span data-ttu-id="55d8c-104">Serviceobjekte sind die Anlagen und Produkte eines Debitors, für die Sie eine Dienstleistung durchführen können.</span><span class="sxs-lookup"><span data-stu-id="55d8c-104">Service objects are a customer’s assets and products for which you can perform a service.</span></span> 
+<span data-ttu-id="f6aba-104">Serviceobjekte sind die Anlagen und Produkte eines Debitors, für die Sie eine Dienstleistung durchführen können.</span><span class="sxs-lookup"><span data-stu-id="f6aba-104">Service objects are a customer’s assets and products for which you can perform a service.</span></span> 
 
-1. <span data-ttu-id="55d8c-105">Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Serviceobjekte**.</span><span class="sxs-lookup"><span data-stu-id="55d8c-105">Click **Service management** \> **Setup** \> **Service objects** \> **Service objects**.</span></span>
-2. <span data-ttu-id="55d8c-106">Klicken Sie auf der Symbolleiste auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="55d8c-106">On the toolbar, click **New**.</span></span>
-3. <span data-ttu-id="55d8c-107">Geben Sie im Feld **Beschreibung** eine Beschreibung des Serviceobjekets ein.</span><span class="sxs-lookup"><span data-stu-id="55d8c-107">In the **Description** field, enter a description of the object.</span></span>
-4. <span data-ttu-id="55d8c-108">Wählen Sie im Feld **Serviceobjektgruppe** die Gruppe aus, zu der das Objekt gehört.</span><span class="sxs-lookup"><span data-stu-id="55d8c-108">In the **Service object group** field, select the group that the object belongs to.</span></span> 
-5. <span data-ttu-id="55d8c-109">Optional: Wählen Sie einen Artikel für die Serviceobjektposition aus, oder wählen Sie eine Vorlagenstückliste (BOM) aus.</span><span class="sxs-lookup"><span data-stu-id="55d8c-109">Optional: Select an item for the service object line, or select a template bill of materials (BOM).</span></span>
+1. <span data-ttu-id="f6aba-105">Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Serviceobjekte**.</span><span class="sxs-lookup"><span data-stu-id="f6aba-105">Click **Service management** \> **Setup** \> **Service objects** \> **Service objects**.</span></span>
+2. <span data-ttu-id="f6aba-106">Klicken Sie auf der Symbolleiste auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="f6aba-106">On the toolbar, click **New**.</span></span>
+3. <span data-ttu-id="f6aba-107">Geben Sie im Feld **Beschreibung** eine Beschreibung des Serviceobjekets ein.</span><span class="sxs-lookup"><span data-stu-id="f6aba-107">In the **Description** field, enter a description of the object.</span></span>
+4. <span data-ttu-id="f6aba-108">Wählen Sie im Feld **Serviceobjektgruppe** die Gruppe aus, zu der das Objekt gehört.</span><span class="sxs-lookup"><span data-stu-id="f6aba-108">In the **Service object group** field, select the group that the object belongs to.</span></span> 
+5. <span data-ttu-id="f6aba-109">Optional: Wählen Sie einen Artikel für die Serviceobjektposition aus, oder wählen Sie eine Vorlagenstückliste (BOM) aus.</span><span class="sxs-lookup"><span data-stu-id="f6aba-109">Optional: Select an item for the service object line, or select a template bill of materials (BOM).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="55d8c-110">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="55d8c-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f6aba-110">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="f6aba-110">Related topics</span></span>
 
-[<span data-ttu-id="55d8c-111">Serviceobjekte – Übersicht</span><span class="sxs-lookup"><span data-stu-id="55d8c-111">Service objects overview</span></span>](service-objects.md)
+[<span data-ttu-id="f6aba-111">Serviceobjekte – Übersicht</span><span class="sxs-lookup"><span data-stu-id="f6aba-111">Service objects overview</span></span>](service-objects.md)
 
 
 
