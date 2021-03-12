@@ -11,27 +11,26 @@ ms.technology: ''
 ms.search.form: BarcodeSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0612833391cf7690343b7180f11d49ba1ad92d24
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc12275f924cab02aef11c28b96e73ba3ff8d84e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428668"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973709"
 ---
-# <a name="mobile-barcode-support"></a><span data-ttu-id="0a1ce-103">Strichcodeunterstützung für Mobilgeräte</span><span class="sxs-lookup"><span data-stu-id="0a1ce-103">Mobile barcode support</span></span>
+# <a name="mobile-barcode-support"></a><span data-ttu-id="d8712-103">Strichcodeunterstützung für Mobilgeräte</span><span class="sxs-lookup"><span data-stu-id="d8712-103">Mobile barcode support</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0a1ce-104">Da Android ein Open Source-Projekt ist, kann jeder Hersteller von Hardware für Lager-Strichcode-Scanner ein Gerät erstellen, um das Android-Betriebssystem auszuführen.</span><span class="sxs-lookup"><span data-stu-id="0a1ce-104">Because Android is an open source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system.</span></span> <span data-ttu-id="0a1ce-105">Ein Gerät ist nur Android-kompatibel, wenn es Apps ausführen kann, die für die Android-Ausführungsumgebung geschrieben wurden.</span><span class="sxs-lookup"><span data-stu-id="0a1ce-105">A device is only Android-compatible if it can run apps that are written for the Android execution environment.</span></span>
-<span data-ttu-id="0a1ce-106">Allerdings kann ein Hardwareanbieter Overlays für die Android-Version ändern und erstellen, die auf der Hardware ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="0a1ce-106">However, a hardware vendor can modify and create overlays for the Android version that runs on their hardware.</span></span> <span data-ttu-id="0a1ce-107">Microsoft kann keine Verantwortung übernehmen, um sicherzustellen, dass eine mobile Strichcodescan-App für Android mit der Strichcode-Scan-Hardware des Herstellers und der Android-Version kompatibel ist, die auf dieser ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="0a1ce-107">Microsoft cannot take any responsibility to ensure that a mobile bar code scanning app for Android is compatible with a manufacturer’s bar code scanning hardware and the Android version that runs on it.</span></span> 
+<span data-ttu-id="d8712-104">Da Android ein Open Source-Projekt ist, kann jeder Hersteller von Hardware für Lager-Strichcode-Scanner ein Gerät erstellen, um das Android-Betriebssystem auszuführen.</span><span class="sxs-lookup"><span data-stu-id="d8712-104">Because Android is an open source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system.</span></span> <span data-ttu-id="d8712-105">Ein Gerät ist nur Android-kompatibel, wenn es Apps ausführen kann, die für die Android-Ausführungsumgebung geschrieben wurden.</span><span class="sxs-lookup"><span data-stu-id="d8712-105">A device is only Android-compatible if it can run apps that are written for the Android execution environment.</span></span>
+<span data-ttu-id="d8712-106">Allerdings kann ein Hardwareanbieter Overlays für die Android-Version ändern und erstellen, die auf der Hardware ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="d8712-106">However, a hardware vendor can modify and create overlays for the Android version that runs on their hardware.</span></span> <span data-ttu-id="d8712-107">Microsoft kann keine Verantwortung übernehmen, um sicherzustellen, dass eine mobile Strichcodescan-App für Android mit der Strichcode-Scan-Hardware des Herstellers und der Android-Version kompatibel ist, die auf dieser ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="d8712-107">Microsoft cannot take any responsibility to ensure that a mobile bar code scanning app for Android is compatible with a manufacturer’s bar code scanning hardware and the Android version that runs on it.</span></span> 
 
-<span data-ttu-id="0a1ce-108">Die Warehouse-App für Dynamics 365 Supply Chain Management wurde mit einer Auswahl von Android-aktivierten Geräten für das Scannen von Strichcodes getestet.</span><span class="sxs-lookup"><span data-stu-id="0a1ce-108">The Dynamics 365 Supply Chain Management - warehouse app has been tested with a selection of Android powered devices for bar code scanning.</span></span> <span data-ttu-id="0a1ce-109">Diese Tests decken nur eine Auswahl der Geräte ab, die auf dem Markt verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="0a1ce-109">These tests only cover a sample of the devices that are available on the market.</span></span>
+<span data-ttu-id="d8712-108">Die Warehouse-App für Dynamics 365 Supply Chain Management wurde mit einer Auswahl von Android-aktivierten Geräten für das Scannen von Strichcodes getestet.</span><span class="sxs-lookup"><span data-stu-id="d8712-108">The Dynamics 365 Supply Chain Management - warehouse app has been tested with a selection of Android powered devices for bar code scanning.</span></span> <span data-ttu-id="d8712-109">Diese Tests decken nur eine Auswahl der Geräte ab, die auf dem Markt verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="d8712-109">These tests only cover a sample of the devices that are available on the market.</span></span>
 
-<span data-ttu-id="0a1ce-110">Ihnen als Kunden wird empfohlen, die mobile Strichcode-Scan-App auf ausgewählter Hardware zu testen, bevor Sie entscheiden, welche Hardware Sie kaufen möchten.</span><span class="sxs-lookup"><span data-stu-id="0a1ce-110">As a customer, we recommend that you test the Warehouse mobile scanning app on selected hardware before you decide on the hardware that you want to buy.</span></span>
+<span data-ttu-id="d8712-110">Ihnen als Kunden wird empfohlen, die mobile Strichcode-Scan-App auf ausgewählter Hardware zu testen, bevor Sie entscheiden, welche Hardware Sie kaufen möchten.</span><span class="sxs-lookup"><span data-stu-id="d8712-110">As a customer, we recommend that you test the Warehouse mobile scanning app on selected hardware before you decide on the hardware that you want to buy.</span></span>
 
