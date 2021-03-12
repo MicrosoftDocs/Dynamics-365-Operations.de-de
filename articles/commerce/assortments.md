@@ -10,17 +10,16 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 981d1c604a7ed461f207e78c8c7f073aff03be9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412491"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979997"
 ---
 # <a name="assortment-management"></a>Sortimentsverwaltung
 
@@ -107,6 +106,3 @@ Berücksichtigen Sie die folgenden Implementierungsanforderungen, wie Sie Sortim
 - **Vertrieb und externe Sortimente der Rücklieferungen** – Diese Funktion hilft Einzelhändlern, die Sortimente verwalten, indem sie die Anzahl der verfügbaren Produkte in den Produkten einschränken können, die der Kerngesamtproduktion für den Shop angehören. Diese Funktion ermöglicht auch Einzelhändlern, Situationen zu ermöglichen, in der ein Produkt irrtümlich von einem Sortiment ausgelassen wurde, oder in ein Produkt außerhalb des Gültigkeitsdatums für das Sortiment zurückgegeben wurde.
 
 Wenn Produktdaten nicht in der Kanaldatenbank vorhanden sind, können POS Anrufe in Echtzeit zu den Hauptsitzen machen, um die erforderlichen Informationen abzurufen, damit das Produkt verkauft, angezeigt oder zurückgegebenen oder einem Kundenauftrag hinzugefüt werden kann. Produktinformationen, die auf diese Weise abgerufen werden, gelten nur während des Bereichs dieser Buchung. Das Produkt wird nicht der Sortimentsdefinition hinzugefügt. Daher werden folgende Echtzeitanrufe bei Bedarf ausgeführt.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

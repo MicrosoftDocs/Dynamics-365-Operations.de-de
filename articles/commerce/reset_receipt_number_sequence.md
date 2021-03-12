@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f7242ed830d09a29a4b01e20ce5070c3aaeca62b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412497"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979713"
 ---
 # <a name="reset-receipt-numbers"></a>Bonnummern zurücksetzen 
 
@@ -52,7 +51,7 @@ Sie können die fortlaufende Nummerierung des Belegs an einem bestimmten Datum z
 
 Um das Zurücksetzen zu aktivieren, folgen Sie diesen Schritten.
 
-1. Gehen Sie zu **Retail und Commerce \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Funktionsprofile**.
+1. Gehen Sie zu **Einzelhandel und Handel \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Funktionsprofile**.
 1. Wählen Sie auf dem Inforegister **Belegnummerierung** die Option **Belegnummer-Rücksetzdatum zurücksetzen** aus.
 1. Wählen Sie im Dropdown-Dialogfeld im Feld **Rücksetzdatum** ein zukünftiges Datum aus, an dem das Zurücksetzen erfolgen soll.
 1. Wählen Sie im Feld **Belegtyp zurücksetzen** die Option **Nur einmal** oder **Jährlich** aus.
@@ -68,6 +67,3 @@ Sie können die Funktion **Rücksetzdatum löschen** verwenden, um zukünftige R
 
 > [!NOTE]
 > Abhängig vom ausgewählten Rücksetzdatum und dem Belegformat haben Sie möglicherweise doppelte Belegnummern. Obwohl das POS-System (Point of Sale) diese Situationen bewältigen kann, erhöhen sie den Zeitaufwand für die Bearbeitung von Rücklieferungen, da Vertriebsmitarbeiter unter den doppelten Belegen auswählen müssen. Andere Komplikationen im Zusammenhang mit der Datenbereinigung können auftreten, wenn die doppelten Belege keine geplante Folge waren. Aus diesem Grund empfehlen wir die Verwendung dynamischer Datumszeichen (zum Beispiel **ddd**, **MM**, **DD** und **YY**), um doppelte Belegnummern nach einem Rücksetzvorgang zu vermeiden.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

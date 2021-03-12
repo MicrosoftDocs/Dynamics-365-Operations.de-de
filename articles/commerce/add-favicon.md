@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f249348fac526fc7814045b1b1b71c898430c0f2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412499"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980430"
 ---
 # <a name="add-a-favicon"></a>Hinzufügen eines Favicons
 
@@ -66,7 +65,7 @@ Um ein Fragment zu erstellen, das ein Metatag für Ihr Favicon enthält, folgen 
 1. Wählen Sie im Dialogfeld **Neues Fragment** die Option **Metatags** als das Modul aus, auf dem das Fragment basiert.
 1. Geben Sie einen Namen für das Fragment ein, und wählen Sie dann **OK** aus.
 1. Wählen Sie in der Fragmenthierarchiestruktur das untergeordnete Element **Standard-Metatags** aus.
-1. Im rechten Bereich unter **Metatags** wählen Sie **Hinzufügen** aus, und geben Sie dann die HTML-Zeichenfolge ein, die Sie zuvor für das Favicon erstellt haben. 
+1. Im rechten Bereich unter **Metatags** wählen Sie **Hinzufügen** aus, und geben Sie dann die HTML-Zeichenfolge ein, die Sie zuvor für das Favicon erstellt haben. 
 1. Wählen Sie **Bearbeiten beenden** aus, und wählen Sie dann **Veröffentlichen** aus, um das Fragment zu veröffentlichen.
 
 ## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Fügen Sie das Metatag-Fragment zum HTML-Kopfbereich Ihrer Seiten hinzu
@@ -99,6 +98,3 @@ Wenn Sie Seiten in der Vorschau anzeigen, die auf der Vorlage basieren, der Sie 
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResCategoryAttribute, EcoResProductEntityAttributeTableFieldAssociation, EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResAttributeType, EcoResAttributeValue, EcoResCategoryAttributeGroup, EcoResCategoryFriendlyName
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b5d0e92196f98fb707b1c424a6ae237f4dc9545c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 70e2b52dd140660fe98c6ff07248a033ba4bd635
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412546"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979972"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Attribute und Attributgruppen verwalten
 
@@ -177,15 +176,15 @@ Gehen Sie folgendermaßen vor, um Attributgruppen zu den Kategorien in der Produ
 > [!NOTE]
 > Diese Prozedur kann auch verwendet werden, um in Attributgruppen zu kategorisieren in der Kanalnavigationskategoriehierarchie und in der Hierarchie ergänzende Produktkategorie. In Schritt 2 verwenden Sie die folgenden Navigationspfade:
 >
-> - Retail und Commerce &gt; Kategorie und Produktverwaltung &gt; Kanalnavigationskategorien
-> - Retail und Commerce &gt; Kategorie und Produktverwaltung &gt; Ergänzende Produktkategorien
+> - Einzelhandel und Handel &gt; Kategorie und Produktverwaltung &gt; Kanalnavigationskategorien
+> - Einzelhandel und Handel &gt; Kategorie und Produktverwaltung &gt; Ergänzende Produktkategorien
 
 ### <a name="assign-attribute-groups-to-stores"></a>Zuweisen von Attributgruppen zu Geschäften
 
 Eine oder mehrere Attributgruppen kann zu einem oder mehreren Geschäften in der Geschäftshierarchie zugeordnet werden. Wenn Produkte für bestimmte Geschäfte erweitert wurden, erben sie die Attribute, die in den Attributgruppen enthalten sind.
 
 1. Melden Sie sich beim Backoffice Client als Einzelverkaufsmanager an.
-2. Wählen Sie **Retail und Commerce** &gt; **Kanaleinstellung** &gt; **Kanalkategorien und Produktattribute**.
+2. Wählen Sie **Einzelhandel und Handel** &gt; **Kanaleinstellung** &gt; **Kanalkategorien und Produktattribute**.
 3. Weisen Sie dem Houston-Kanal Attributgruppen zu:
 
     1. Wählen Sie den **Houston** Kanal aus.
@@ -212,7 +211,7 @@ Die Standardwerte von Attributen können auf der Produktebene überschrieben wer
 ### <a name="override-the-attribute-values-of-an-individual-product"></a>Überschreiben Sie die Attributwerte eines Einzelprodukts
 
 1. Melden Sie sich beim Backoffice Client als Einzelverkaufsmanager an.
-2. Gehen Sie zu **Retail und Commerce** &gt; **Kategorie und Produktverwaltung** &gt; **Freigegebene Produkte nach Produkthierarchie**.
+2. Gehen Sie zu **Einzelhandel und Handel** &gt; **Kategorie und Produktverwaltung** &gt; **Freigegebene Produkte nach Produkthierarchie**.
 3. Wählen Sie den Kategorieknoten &gt; **Mode** &gt; **Mode-Accessoires** **Mode-Sonnenbrille** aus.
 4. Wählen Sie das erforderliche Produkt im Raster aus. Klicken Sie anschließend im Aktivitätsbereich auf der Registerkarte **Produkt** in der Gruppe **Verwalten** auf **Produktattribut**.
 5. Wählen Sie ein Attribut im linken Bereich aus, und aktualisieren Sie anschließend den Wert im rechten Bereich.
@@ -222,7 +221,7 @@ Die Standardwerte von Attributen können auf der Produktebene überschrieben wer
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Überschreiben Sie die Attributwerte eines Einzelprodukts in einem Katalog
 
 1. Melden Sie sich beim Backoffice Client als Einzelverkaufsmanager an.
-2. Gehen Sie zu **Retail und Commerce** &gt; **Katalogverwaltung** &gt; **Alle Kataloge**.
+2. Gehen Sie zu **Einzelhandel und Handel** &gt; **Katalogverwaltung** &gt; **Alle Kataloge**.
 3. Wählen Sie **Fabrikam-Basiskatalog**.
 4. Wählen Sie den Kategorieknoten &gt; **Mode** &gt; **Mode-Accessoires** **Mode-Sonnenbrille** aus.
 5. Auf dem Inforegister **Produkte** aktivieren Sie das erforderliche Produkt aus, und wählen Sie anschließend **Attribute** über dem Produktraster aus.
@@ -241,7 +240,7 @@ Die Standardwerte von Attributen können auf der Produktebene überschrieben wer
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Überschreiben Sie die Attributwerte eines Einzelprodukts in einem Kanal
 
 1. Melden Sie sich beim Backoffice Client als Einzelverkaufsmanager an.
-2. Wählen Sie **Retail und Commerce** &gt; **Kanaleinstellung** &gt; **Kanalkategorien und Produktattribute**.
+2. Wählen Sie **Einzelhandel und Handel** &gt; **Kanaleinstellung** &gt; **Kanalkategorien und Produktattribute**.
 3. Wählen Sie den **Houston** Kanal aus.
 4. Auf dem Inforegister **Produkte** aktivieren Sie das erforderliche Produkt aus, und wählen Sie anschließend **Attribute** über dem Produktraster aus.
 
@@ -257,6 +256,3 @@ Die Standardwerte von Attributen können auf der Produktebene überschrieben wer
 
     > [!NOTE]
     > Wenn Produktmedien freigegebene und freigegebene Produktattribute erstellt werden, gelten sie für alle Produkte.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

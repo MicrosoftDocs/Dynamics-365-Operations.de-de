@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ab6b01d6833850af8c04167d94b0a60c7312075c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a66590f18df04d2be0500b7fb1ab183cf64718e8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412669"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979752"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Bonformate einrichten und entwerfen
 
@@ -37,7 +36,7 @@ Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um
 
 ## <a name="set-up-a-receipt-format"></a>Einrichten eines Bonformats
 
-1. Klicken Sie auf **Retail und Commerce** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS** &gt; **Bonlayouts**.
+1. Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS** &gt; **Bonlayouts**.
 2. Klicken Sie auf der Seite **Bonlayout** auf **Neu**, um ein neues Formularlayout zu erstellen oder ein vorhandenes Formularlayout auszuwählen.
 3. Geben Sie im Feld **Bonlayout** eine Kennung für das Formularlayout ein, und wählen Sie anschließend den Bontyp aus, für den dieses Layout verwendet wird. Sie können auch eine Beschreibung und einen Kurznamen für den Bon in das Feld **Titel** eingeben.
 4. Wählen Sie auf dem Inforegister **Allgemein** eine Option aus, um das Druckverhalten zu definieren:
@@ -47,11 +46,15 @@ Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um
     - **Bedienerführung für Benutzer** - Der Benutzer wird aufgefordert, den Bon zu drucken.
     - **Nach Bedarf** - Diese Option wird nur für Geschenkbons verwendet. Wenn diese Option aktiviert ist, kann der Benutzer einen Geschenkbon auf der Seite **Änderung** drucken, wenn ein Geschenkbon erforderlich ist.
 
+## <a name="print-images"></a>Bilder drucken
+
+Der Belegdesigner enthält eine **Logo**-Variable, mit der Bilder angegeben werden können, die auf der Quittung gedruckt werden sollen. Bilder, die in Quittungen enthalten sind und die **Logo**-Variable nutzen, sollten ein monochromer Bitmap-Dateityp (.bmp) sein. Wenn im Belegdesigner ein BMP-Bild angegeben ist, das jedoch beim Senden an den Drucker nicht gedruckt wird, ist die Dateigröße möglicherweise zu groß oder die Pixelabmessungen auf dem Bild sind nicht mit dem Drucker kompatibel. Versuchen Sie in diesem Fall, die Auflösung der Bilddatei zu verringern.   
+
 ## <a name="design-a-receipt-format"></a>Entwerfen eines Bonformats
 
 Mit dem Designer für Formularlayout können Sie das Layout des Formulardokuments grafisch erstellen. Die Seite **Designer für Bonformat** hat drei Abschnitte: **Kopfzeile**, **Positionen** und **Fußzeile**. Bei einigen Formularlayouttypen werden Elemente aus allen drei Abschnitten werden, bei anderen nur Elemente aus einem oder zwei der Abschnitte. Klicken Sie zum Anzeigen der verfügbaren Elemente für jeden Abschnitt auf die entsprechende Schaltfläche im Navigationsbereich links auf der Seite.
 
-1. Klicken Sie auf **Retail und Commerce** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS** &gt; **Bonlayouts**.
+1. Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS** &gt; **Bonlayouts**.
 2. Wählen Sie auf der Seite **Bonlayout** ein Formularlayout aus, und klicken Sie anschließend auf **Designer**.
 3. Klicken Sie auf **Ausführen**, um mit der Installation des Commerce-Designer-Hosts zu beginnen.
 4. Klicken Sie auf der Benachrichtigungsleiste, die unten im Internet Explorer-Fenster angezeigt wird, auf **Öffnen**, um den Ein-Klick-Designer zu starten. (Die Benachrichtigungsleiste wird möglicherweise an einem anderen Speicherort in anderen Browsern.) Anhand der Statusleiste wird der Fortschritt des Installationsvorgangs angezeigt.
@@ -77,11 +80,8 @@ Mit dem Designer für Formularlayout können Sie das Layout des Formulardokument
 
 Bonprofile werden durch das Hardwareprofil direkt zu den Druckern zugewiesen.
 
-1. Öffnen Sie das Hardwareprofil, indem Sie auf **Retail und Commerce** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS-Profile** &gt; **Hardwareprofil** klicken.
+1. Öffnen Sie das Hardwareprofil, indem Sie auf **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS-Profile** &gt; **Hardwareprofil** klicken.
 2. Wählen Sie den Drucker aus, und weisen Sie dann im Feld **Bonprofil** das Bonprofil zu, das im Register verwendet werden soll.
 
 > [!NOTE]
 > Wenn zwei Drucker verwendet werden, kann ein Drucker verwendet werden, um standardmäßige Thermobons mit 40 Spalten zu drucken. Der zweite Drucker wird in der Regel verwendet, um ganzseitige Bontypen zu drucken, die weitere Informationen enthalten. Zu diesen Bontypen gehören Bons für Debitorenaufträge und Debitorenrechnungen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

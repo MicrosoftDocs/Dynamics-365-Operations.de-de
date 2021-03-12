@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9cca5ea3a4c33c7f36acd18a8af7034466b3b580
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9bc147ec517b8141b4764f67d21b4c4a2e4d6e6e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428665"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981155"
 ---
 # <a name="revert-kanban-job-status"></a>Kanban-Einzelvorgangsstatus zurücksetzen
 
@@ -48,13 +47,10 @@ Ziel dieser Prozedur ist das Zurücksetzen eines falschen Kanban-Einzelvorgangss
     * Wählen Sie den ersten Einzelvorgang aus, den Sie bereits vorbereitet wurde.  
 2. Klicken Sie im Aktivitätsbereich auf "Fertigung".
 3. Klicken Sie auf "Status wiederherstellen".
-    * Sie können eine alternative Kanban-Regel verwenden, wenn die folgenden Bedingungen erfüllt sind: - Die Wiederbeschaffungsstrategie ist die gleiche für beide Regeln.  - Die Version des Produktionsflusses ist die gleiche für beide Regeln.  - Das Produkt, das beschafft wird, ist das gleiche für beide Regeln.  - Alle Downstream-Aktivitäten, die für die letzte Aktivität der Kanban-Regeln konfiguriert werden, müssen die gleichen für beide Regeln sein.  - Die gleichen angegebene Lagerungsdimensionen müssen für beide Regeln konfiguriert werden.  - Der Status der Handhabungseinheit muss "Nicht zugewiesen" sein.  - Die Konfiguration für Ereignis-Kanbans muss die gleiche sein.  
+    * Sie können eine alternative Kanban-Regel verwenden, wenn die folgenden Bedingungen erfüllt sind: - Die Wiederbeschaffungsstrategie ist die gleiche für beide Regeln.  - Die Version des Produktionsflusses ist die gleiche für beide Regeln.  - Das Produkt, das beschafft wird, ist das gleiche für beide Regeln.  - Alle Downstream-Aktivitäten, die für die letzte Aktivität der Kanban-Regeln konfiguriert werden, müssen die gleichen für beide Regeln sein.  - Die gleichen angegebene Lagerungsdimensionen müssen für beide Regeln konfiguriert werden.  - Der Status der Handhabungseinheit muss auf „Nicht zugewiesen“ festgelegt sein.  - Die Konfiguration für Ereignis-Kanbans muss die gleiche sein.  
     * Stellen Sie sicher, dass der neue Status "Geplant" lautet.  
 4. Klicken Sie auf "OK".
 5. Heben Sie in der Liste die Markierung der ausgewählten Zeile auf.
     * Wählen Sie den gleichen Einzelvorgang aus.  
     * Beachten Sie, dass der Einzelvorgangsstatus für den Kanban-Einzelvorgang auf "Geplant" zurückgesetzt wurde und von einem leeren Kanbansymbol angegeben wird.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1e491100bc24718b8e5bc0f62de241835787f7ea
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527362"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980855"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Das Debitorenportal anpassen und verwenden
 
@@ -40,9 +39,9 @@ Die folgenden Themen helfen Ihnen beim Erlernen der Grundlagen von Power Apps Po
 - [Portalinhalte verwalten](https://docs.microsoft.com/dynamics365/portals/manage-portal-content) – In diesem Thema wird erläutert, wie Sie den Inhalt verwalten und anpassen können, den Sie in Ihrem Portal anzeigen.
 - [Bearbeiten von CSS](https://docs.microsoft.com/powerapps/maker/portals/edit-css) – Mit diesem Thema können Sie komplexere Anpassungen an der Benutzeroberfläche Ihres Portals vornehmen.
 - [Erstellen Sie ein Thema für Ihr Portal](https://docs.microsoft.com/dynamics365/portals/create-theme) – Mit diesem Thema können Sie ein UI-Thema für Ihr Portal erstellen.
-- [Erstellen und Anzeigen von Portalinhalten auf einfache Weise](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – In diesem Thema können Sie die zugrunde liegenden Daten und Entitäten verwalten, die Sie für Ihr Portal verwenden.
+- [Erstellen und Anzeigen von Portalinhalten auf einfache Weise](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – In diesem Thema können Sie die zugrunde liegenden Daten und Tabellen verwalten, die Sie für Ihr Portal verwenden.
 - [Konfigurieren Sie einen Kontakt für die Verwendung in einem Portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) – In diesem Thema wird erläutert, wie Benutzerrollen erstellt und angepasst werden und wie Sicherheit und Authentifizierung in Power Apps Portalen funktionieren.
-- [Konfigurieren Sie Notizen für Entitätsformulare und Webformulare auf Portalen](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – In diesem Thema wird erläutert, wie Sie Ihrem Portal Dokumente und zusätzlichen Speicher hinzufügen.
+- [Konfigurieren Sie Notizen fürTabellenformulare und Webformulare auf Portalen](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – In diesem Thema wird erläutert, wie Sie Ihrem Portal Dokumente und zusätzlichen Speicher hinzufügen.
 - [Fehlerbehandlung für Portal-Website](https://docs.microsoft.com/powerapps/maker/portals/admin/view-portal-error-log) – In diesem Thema wird erläutert, wie Sie Portalfehlerprotokolle anzeigen und in I Microsoft Azure Blob-Speicherkonto speichern.
 
 ## <a name="customize-the-order-creation-process"></a>Passen Sie den Prozess der Auftragserstellung an
@@ -91,7 +90,7 @@ Hier sind die Standardschritte zum Absenden eines Auftrags über das Kundenporta
 
 Um eine reibungslose Benutzererfahrung zu gewährleisten, füllt das Kundenportal automatisch Werte für mehrere erforderliche Felder aus. Diese Werte basieren auf Informationen im Kontaktdatensatz des Kunden, der die Bestellung abgibt.
 
-Für jeden [Kontaktdatensatz](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts), der zu einem Kunden gehört, der das Kundenportal zum Absenden von Bestellungen verwendet, muss für die folgenden erforderlichen Felder Werte angegeben werden. Andernfalls treten Fehler auf.
+Für jede [Kontaktzeile](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts), die zu einem Kunden gehört, der das Kundenportal zum Absenden von Bestellungen verwendet, müssen für die folgenden erforderlichen Felder Werte angegeben werden. Andernfalls treten Fehler auf.
 
 - **Unternehmen** – Die juristische Person, zu der der Auftrag gehört
 - **Möglicher Kunde** – Das dem ausgewählten Auftrag zugeordnete Debitorenkonto
@@ -99,7 +98,7 @@ Für jeden [Kontaktdatensatz](https://docs.microsoft.com/powerapps/maker/portals
 - **Währung** – Die Währung des Preises
 - **Versand nach Land/Region** – Das Land oder die Region eingeben, in die die Artikel geliefert werden sollen
 
-Die folgenden Felder werden automatisch für die Kundenauftragseinheit festgelegt:
+Die folgenden Felder werden automatisch für die Auftragstabelle festgelegt:
 
 - **Sprache** – Die Sprache der Bestellung (standardmäßig wird der Wert aus dem Kontaktdatensatz übernommen.)
 - **Versand nach Land/Region** – Das Land oder die Region, in die die Artikel geliefert werden (standardmäßig wird der Wert aus dem Kontaktdatensatz übernommen.)
@@ -116,7 +115,7 @@ Die folgenden Felder werden automatisch für die Kundenauftragseinheit festgeleg
 
 Sie können das Erscheinungsbild und die Benutzeroberfläche des Kundenportals frei ändern, wenn Sie den grundlegenden Prozess zur Auftragserstellung nicht ändern. Wenn Sie den Prozess der Auftragserstellung ändern möchten, müssen Sie einige Punkte beachten.
 
-Entfernen Sie die folgenden Felder nicht aus der Kundenauftragsentität in Common Data Service, weil sie einen Kundenauftrag in dualem Schreiben erstellen müssen:
+Entfernen Sie die folgenden Spalten nicht aus der Auftragstabelle in Microsoft Dataverse, weil sie einen Auftrag in dualem Schreiben erstellen müssen:
 
 - **Unternehmen** – Die juristische Person, zu der der Auftrag gehört
 - **Name** –Der Name des konsolidierten Verkaufsauftrags
@@ -127,7 +126,7 @@ Entfernen Sie die folgenden Felder nicht aus der Kundenauftragsentität in Commo
 - **Sprache** – Die Sprache der Bestellung (In der Regel ist diese Sprache die Sprache des potenziellen Kunden.)
 - **Beschreibung der Lieferadresse** – Die Lieferadresse des Kundenauftrags
 
-Für Artikel sind folgende Felder erforderlich:
+Für Artikel sind folgende Spalten erforderlich:
 
 - **Produkt** – Das zu bestellende Produkt
 - **Menge** – Die Menge des ausgewählten Produkts
@@ -135,11 +134,11 @@ Für Artikel sind folgende Felder erforderlich:
 - **Versand nach Land/Region** – Das Land oder die Region der Lieferung
 - **Beschreibung der Lieferadresse** – Die Lieferadresse des Kundenauftrags
 
-Sie müssen sicherstellen, dass Ihr Kundenportal irgendwie Werte für alle diese Felder übermittelt.
+Sie müssen sicherstellen, dass Ihr Kundenportal irgendwie Werte für alle diese Spalten übermittelt.
 
-Wenn Sie der Seite Felder hinzufügen oder Felder entfernen möchten, lesen Sie [Erstellen oder bearbeiten Sie schnell erstellte Formulare für eine optimierte Dateneingabe](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
+Wenn Sie der Seite Spalten hinzufügen oder Spalten entfernen möchten, lesen Sie [Erstellen oder Bearbeiten von Schnellerstellungsformularen für eine optimierte Dateneingabeerfahrung](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
 
-Wenn Sie ändern möchten, wie Felder voreingestellt sind und wie Werte beim Speichern der Seite festgelegt werden, lesen Sie die folgenden Informationen in der Dokumentation Power Apps Portal:
+Wenn Sie ändern möchten, wie Spalten voreingestellt sind und wie Werte beim Speichern der Seite festgelegt werden, lesen Sie die folgenden Informationen in der Dokumentation Power Apps Portal:
 
 - [Feld vorausfüllen](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
 - [Wert beim Speichern festlegen](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
@@ -176,6 +175,3 @@ Weitere Informationen zum Einrichten und Anpassen des Kundenportals finden Sie i
 - [Aktualisieren Sie ein Portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Portalkonfiguration migrieren](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Solution Lifecycle Management: Dynamics 365 for Customer Engagement Apps](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

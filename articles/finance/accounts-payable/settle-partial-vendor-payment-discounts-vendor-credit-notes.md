@@ -1,5 +1,5 @@
 ---
-title: Eine teilweise Kreditorenzahlung, bei der Rechnungsrabatte auf Kreditorengutschriften vorhanden sind, ausgleichen
+title: Eine teilweise Kreditorenzahlung ausgleichen, bei der es Rabatte auf Kreditorengutschriften gibt
 description: Dieser Artikel führt Sie durch ein Szenario, in dem eine Gutschrift mit einer Rechnung ausgeglichen wird.
 author: abruer
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14222
 ms.assetid: 2b19f7fd-9ff9-4ee4-bddf-f582946d008e
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 923ab0305ac75c1156984c7a6d051f036479a16d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 701376cd080a5dda4c985aced1b08c7cb2147c27
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443419"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979437"
 ---
-# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Eine teilweise Kreditorenzahlung, bei der Rechnungsrabatte auf Kreditorengutschriften vorhanden sind, ausgleichen
+# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-credit-notes"></a>Eine teilweise Kreditorenzahlung ausgleichen, bei der es Rabatte auf Kreditorengutschriften gibt
 
 [!include [banner](../includes/banner.md)]
 
@@ -71,6 +70,3 @@ April kann die Kreditorenbuchungen auf der Seite **Kreditorenbuchungen** überpr
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

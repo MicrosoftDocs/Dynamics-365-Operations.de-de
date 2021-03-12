@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c8d72f3a613deef80685955c21708e32a770539a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412504"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980331"
 ---
 # <a name="add-languages-to-your-site"></a>Hinzufügen von Sprachen zu Ihrer Website
 
@@ -40,7 +39,7 @@ Sie können Ihre Website in eine beliebige Sprache lokalisieren, die Commerce un
 Um eine Sprache einem Online-Shop hinzuzufügen, folgen Sie diesen Schritten.
 
 1. Öffnen Sie die Dynamics 365 Commerce Umgebung für Ihren Standort.
-1. Wechseln Sie zu **Retail und Commerce \> Kanäle \> Onlineshops**, um auf die von Liste Onlineshops zuzugreifen, die für Ihre Umgebung konfiguriert werden. Alternativ können Sie **Onlineshops** als Suchbegriff eingeben.
+1. Wechseln Sie zu **Einzelhandel und Handel \> Kanäle \> Onlineshops**, um auf die von Liste Onlineshops zuzugreifen, die für Ihre Umgebung konfiguriert werden. Alternativ können Sie **Onlineshops** als Suchbegriff eingeben.
 1. Wählen Sie den Onlineshop, für den Sie eine Sprache  hinzufügen möchten.
 1. Auf dem Inforegister **Sprachen** wählen Sie **Hinzufügen** aus.
 1. Im Feld **Sprache** wählen Sie die Sprache aus, die Sie hinzufügen möchten.
@@ -176,6 +175,3 @@ Die Sprache, die Sie hinzugefügt haben, ist nun verfügbar und Sie können Ihre
 [Hinzufügen eines Urheberrechtshinweises](add-copyright-notice.md)
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
