@@ -11,55 +11,54 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransVoucherTemplate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 360df29e6349fd4d42d6d14af646e929b73943bd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 234cfb98cc07f6c8c81821584e4e1d509d033477
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443649"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988573"
 ---
-# <a name="create-a-journal-entry-using-template"></a><span data-ttu-id="8879e-103">Erstellen von Journaleinträgen mithilfe einer Vorlage</span><span class="sxs-lookup"><span data-stu-id="8879e-103">Create a journal entry using template</span></span>
+# <a name="create-a-journal-entry-using-template"></a><span data-ttu-id="3c3f5-103">Erstellen von Journaleinträgen mithilfe einer Vorlage</span><span class="sxs-lookup"><span data-stu-id="3c3f5-103">Create a journal entry using template</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="8879e-104">Gebuchte Erfassungsbelege können als Belegvorlagen gespeichert und in einem neuen Erfassungsbeleg angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="8879e-104">Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher.</span></span> <span data-ttu-id="8879e-105">Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="8879e-105">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="3c3f5-104">Gebuchte Erfassungsbelege können als Belegvorlagen gespeichert und in einem neuen Erfassungsbeleg angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-104">Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher.</span></span> <span data-ttu-id="3c3f5-105">Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-105">This procedure uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="8879e-106">Gehen Sie zu **Navigationsbereich > Module > Hauptbuch > Journaleinträge > Allgemeine Erfassungen**.</span><span class="sxs-lookup"><span data-stu-id="8879e-106">Go to **Navigation pane > Modules > General ledger > Journal entries > General journals**.</span></span>
-2. <span data-ttu-id="8879e-107">Klicken Sie im **Aktivitätsbereich** auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="8879e-107">On the **Action pane**, click **New**.</span></span> <span data-ttu-id="8879e-108">Diese Prozedur beginnt, indem Sie einen Erfassungsbeleg erstellen und buchen, aber jeder bereits gebuchte Erfassungsbeleg kann als Vorlage gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="8879e-108">This procedure starts by creating and posting a journal voucher, but any previously posted journal voucher can be saved as a template.</span></span>  
-3. <span data-ttu-id="8879e-109">Klicken Sie im Feld **Name** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="8879e-109">In the **Name** field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="8879e-110">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="8879e-110">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="8879e-111">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="8879e-111">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="8879e-112">Klicken Sie auf **Positionen**.</span><span class="sxs-lookup"><span data-stu-id="8879e-112">Click **Lines**.</span></span>
-7. <span data-ttu-id="8879e-113">Geben Sie im Feld **Kontenart** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8879e-113">In the **Account type** field, type a value.</span></span>
-8. <span data-ttu-id="8879e-114">Geben Sie im Feld **Beschreibung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8879e-114">In the **Description** field, type a value.</span></span>
-9. <span data-ttu-id="8879e-115">Geben Sie im Feld **Soll** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8879e-115">In the **Debit** field, type a value.</span></span>
-10. <span data-ttu-id="8879e-116">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="8879e-116">Click **New**.</span></span>
-11. <span data-ttu-id="8879e-117">Geben Sie im Feld **Kontenart** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8879e-117">In the **Account type** field, type a value.</span></span>
-12. <span data-ttu-id="8879e-118">Geben Sie im Feld **Beschreibung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8879e-118">In the **Description** field, type a value.</span></span>
-13. <span data-ttu-id="8879e-119">Geben Sie im Feld **Soll** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8879e-119">In the **Debit** field, type a value.</span></span>
-14. <span data-ttu-id="8879e-120">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="8879e-120">Click **New**.</span></span>
-14. <span data-ttu-id="8879e-121">Geben Sie im Feld **Konto** die gewünschten Werte an.</span><span class="sxs-lookup"><span data-stu-id="8879e-121">In the **Account** field, specify the desired values.</span></span>
-15. <span data-ttu-id="8879e-122">Geben Sie im Feld **Beschreibung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8879e-122">In the **Description** field, type a value.</span></span>
-16. <span data-ttu-id="8879e-123">Geben Sie im Feld **Gutschrift** einen Wert ein, um den Beleg auszugleichen.</span><span class="sxs-lookup"><span data-stu-id="8879e-123">In the **Credit** field, type a value to balance the voucher.</span></span>
-17. <span data-ttu-id="8879e-124">Klicken Sie im **Aktivitätsbereich** auf **Buchen**.</span><span class="sxs-lookup"><span data-stu-id="8879e-124">On the **Action pane**, click **Post**.</span></span>
-18. <span data-ttu-id="8879e-125">Klicken Sie auf **Funktionen**.</span><span class="sxs-lookup"><span data-stu-id="8879e-125">Click **Functions**.</span></span>
-19. <span data-ttu-id="8879e-126">Klicken Sie auf **Belegvorlage speichern**.</span><span class="sxs-lookup"><span data-stu-id="8879e-126">Click **Save voucher** template.</span></span>
-20. <span data-ttu-id="8879e-127">Bei dieser Prozedur wird ein Typ **Prozentvorlage** angenommen.</span><span class="sxs-lookup"><span data-stu-id="8879e-127">This procedure assumes a **Percent Template** type.</span></span> <span data-ttu-id="8879e-128">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="8879e-128">Click OK.</span></span>
-    - <span data-ttu-id="8879e-129">Prozent: Die Beträge im Beleg werden in Prozentsatzfaktoren konvertiert, wodurch jeder Betrag angewendet werden kann, wenn die Vorlage „Beleg“ ausgewählt ist.</span><span class="sxs-lookup"><span data-stu-id="8879e-129">Percent: The amounts in the voucher are converted into percentage factors, which allows any amount to be applied when the Voucher template is selected.</span></span>
-    - <span data-ttu-id="8879e-130">Betrag: Die tatsächlichen Beträge werden gespeichert und angewendet.</span><span class="sxs-lookup"><span data-stu-id="8879e-130">Amount: The actual amounts will be stored and applied.</span></span>  
-21. <span data-ttu-id="8879e-131">Klicken Sie auf **Allgemeine Erfassungen**.</span><span class="sxs-lookup"><span data-stu-id="8879e-131">Click **General journals**.</span></span>
-22. <span data-ttu-id="8879e-132">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="8879e-132">Click **New**.</span></span>
-23. <span data-ttu-id="8879e-133">Klicken Sie im Feld **Name** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="8879e-133">In the **Name** field, click the drop-down button to open the lookup.</span></span>
-24. <span data-ttu-id="8879e-134">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="8879e-134">In the list, click the link in the selected row.</span></span>
-25. <span data-ttu-id="8879e-135">Klicken Sie auf **Positionen**.</span><span class="sxs-lookup"><span data-stu-id="8879e-135">Click **Lines**.</span></span>
-26. <span data-ttu-id="8879e-136">Klicken Sie auf **Funktionen**.</span><span class="sxs-lookup"><span data-stu-id="8879e-136">Click **Functions**.</span></span>
-27. <span data-ttu-id="8879e-137">Klicken Sie auf **Belegvorlage auswählen**.</span><span class="sxs-lookup"><span data-stu-id="8879e-137">Click **Select voucher template**.</span></span>
-28. <span data-ttu-id="8879e-138">Suchen Sie die Vorlage, die Sie zuvor erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="8879e-138">Find the template that you created earlier.</span></span> <span data-ttu-id="8879e-139">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="8879e-139">Click **OK**.</span></span> <span data-ttu-id="8879e-140">Sie müssen möglicherweise auf **Vorheriger Schritt** klicken und dann die richtige Vorlage auswählen, wenn andere Vorlagen vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="8879e-140">You may need to click **Previous step** and then select the correct template if other templates exist.</span></span>  
-29. <span data-ttu-id="8879e-141">Geben Sie im Feld **Betrag** den Betrag ein, der auf den Beleg angewendet wird.</span><span class="sxs-lookup"><span data-stu-id="8879e-141">In the **Amount** field, enter the amount to be applied to the voucher.</span></span> <span data-ttu-id="8879e-142">Das Feld **Betrag** wird nur angezeigt, wenn die Belegvorlage vom Typ „Prozent“ ist.</span><span class="sxs-lookup"><span data-stu-id="8879e-142">The **Amount** field is only displayed if the voucher template is of type Percent.</span></span>  
-30. <span data-ttu-id="8879e-143">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="8879e-143">Click **OK**.</span></span>
+1. <span data-ttu-id="3c3f5-106">Gehen Sie zu **Navigationsbereich > Module > Hauptbuch > Journaleinträge > Allgemeine Erfassungen**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-106">Go to **Navigation pane > Modules > General ledger > Journal entries > General journals**.</span></span>
+2. <span data-ttu-id="3c3f5-107">Klicken Sie im **Aktivitätsbereich** auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-107">On the **Action pane**, click **New**.</span></span> <span data-ttu-id="3c3f5-108">Diese Prozedur beginnt, indem Sie einen Erfassungsbeleg erstellen und buchen, aber jeder bereits gebuchte Erfassungsbeleg kann als Vorlage gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-108">This procedure starts by creating and posting a journal voucher, but any previously posted journal voucher can be saved as a template.</span></span>  
+3. <span data-ttu-id="3c3f5-109">Klicken Sie im Feld **Name** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-109">In the **Name** field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="3c3f5-110">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-110">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="3c3f5-111">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-111">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="3c3f5-112">Klicken Sie auf **Positionen**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-112">Click **Lines**.</span></span>
+7. <span data-ttu-id="3c3f5-113">Geben Sie im Feld **Kontenart** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-113">In the **Account type** field, type a value.</span></span>
+8. <span data-ttu-id="3c3f5-114">Geben Sie im Feld **Beschreibung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-114">In the **Description** field, type a value.</span></span>
+9. <span data-ttu-id="3c3f5-115">Geben Sie im Feld **Soll** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-115">In the **Debit** field, type a value.</span></span>
+10. <span data-ttu-id="3c3f5-116">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-116">Click **New**.</span></span>
+11. <span data-ttu-id="3c3f5-117">Geben Sie im Feld **Kontenart** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-117">In the **Account type** field, type a value.</span></span>
+12. <span data-ttu-id="3c3f5-118">Geben Sie im Feld **Beschreibung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-118">In the **Description** field, type a value.</span></span>
+13. <span data-ttu-id="3c3f5-119">Geben Sie im Feld **Soll** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-119">In the **Debit** field, type a value.</span></span>
+14. <span data-ttu-id="3c3f5-120">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-120">Click **New**.</span></span>
+14. <span data-ttu-id="3c3f5-121">Geben Sie im Feld **Konto** die gewünschten Werte an.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-121">In the **Account** field, specify the desired values.</span></span>
+15. <span data-ttu-id="3c3f5-122">Geben Sie im Feld **Beschreibung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-122">In the **Description** field, type a value.</span></span>
+16. <span data-ttu-id="3c3f5-123">Geben Sie im Feld **Gutschrift** einen Wert ein, um den Beleg auszugleichen.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-123">In the **Credit** field, type a value to balance the voucher.</span></span>
+17. <span data-ttu-id="3c3f5-124">Klicken Sie im **Aktivitätsbereich** auf **Buchen**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-124">On the **Action pane**, click **Post**.</span></span>
+18. <span data-ttu-id="3c3f5-125">Klicken Sie auf **Funktionen**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-125">Click **Functions**.</span></span>
+19. <span data-ttu-id="3c3f5-126">Klicken Sie auf **Belegvorlage speichern**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-126">Click **Save voucher** template.</span></span>
+20. <span data-ttu-id="3c3f5-127">Bei dieser Prozedur wird ein Typ **Prozentvorlage** angenommen.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-127">This procedure assumes a **Percent Template** type.</span></span> <span data-ttu-id="3c3f5-128">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="3c3f5-128">Click OK.</span></span>
+    - <span data-ttu-id="3c3f5-129">Prozent: Die Beträge im Beleg werden in Prozentsatzfaktoren konvertiert, wodurch jeder Betrag angewendet werden kann, wenn die Vorlage „Beleg“ ausgewählt ist.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-129">Percent: The amounts in the voucher are converted into percentage factors, which allows any amount to be applied when the Voucher template is selected.</span></span>
+    - <span data-ttu-id="3c3f5-130">Betrag: Die tatsächlichen Beträge werden gespeichert und angewendet.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-130">Amount: The actual amounts will be stored and applied.</span></span>  
+21. <span data-ttu-id="3c3f5-131">Klicken Sie auf **Allgemeine Erfassungen**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-131">Click **General journals**.</span></span>
+22. <span data-ttu-id="3c3f5-132">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-132">Click **New**.</span></span>
+23. <span data-ttu-id="3c3f5-133">Klicken Sie im Feld **Name** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-133">In the **Name** field, click the drop-down button to open the lookup.</span></span>
+24. <span data-ttu-id="3c3f5-134">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-134">In the list, click the link in the selected row.</span></span>
+25. <span data-ttu-id="3c3f5-135">Klicken Sie auf **Positionen**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-135">Click **Lines**.</span></span>
+26. <span data-ttu-id="3c3f5-136">Klicken Sie auf **Funktionen**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-136">Click **Functions**.</span></span>
+27. <span data-ttu-id="3c3f5-137">Klicken Sie auf **Belegvorlage auswählen**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-137">Click **Select voucher template**.</span></span>
+28. <span data-ttu-id="3c3f5-138">Suchen Sie die Vorlage, die Sie zuvor erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-138">Find the template that you created earlier.</span></span> <span data-ttu-id="3c3f5-139">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-139">Click **OK**.</span></span> <span data-ttu-id="3c3f5-140">Sie müssen möglicherweise auf **Vorheriger Schritt** klicken und dann die richtige Vorlage auswählen, wenn andere Vorlagen vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-140">You may need to click **Previous step** and then select the correct template if other templates exist.</span></span>  
+29. <span data-ttu-id="3c3f5-141">Geben Sie im Feld **Betrag** den Betrag ein, der auf den Beleg angewendet wird.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-141">In the **Amount** field, enter the amount to be applied to the voucher.</span></span> <span data-ttu-id="3c3f5-142">Das Feld **Betrag** wird nur angezeigt, wenn die Belegvorlage vom Typ „Prozent“ ist.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-142">The **Amount** field is only displayed if the voucher template is of type Percent.</span></span>  
+30. <span data-ttu-id="3c3f5-143">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="3c3f5-143">Click **OK**.</span></span>
 

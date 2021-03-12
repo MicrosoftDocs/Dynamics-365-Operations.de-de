@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: JMGParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -19,123 +18,123 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cca5e3232450e75f931a621b278c134129fc745c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e28df09ecb592ae7df360d1b2d0bf06339c1410d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412683"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989376"
 ---
-# <a name="time-and-attendance-management-in-retail"></a><span data-ttu-id="82c76-103">Zeit- und Anwesenheitsverwaltung in Retail</span><span class="sxs-lookup"><span data-stu-id="82c76-103">Time and attendance management in Retail</span></span>
+# <a name="time-and-attendance-management-in-retail"></a><span data-ttu-id="db240-103">Zeit- und Anwesenheitsverwaltung in Retail</span><span class="sxs-lookup"><span data-stu-id="db240-103">Time and attendance management in Retail</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="82c76-104">Dieses Thema beschreibt Szenarien, die für die Verwaltung von Zeit und Anwesenheit in Dynamics 365 Commerce unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="82c76-104">This topic describes the scenarios that are supported for time and attendance management in Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="db240-104">Dieses Thema beschreibt Szenarien, die für die Verwaltung von Zeit und Anwesenheit in Dynamics 365 Commerce unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="db240-104">This topic describes the scenarios that are supported for time and attendance management in Dynamics 365 Commerce.</span></span>
 
-## <a name="manage-worker-setup-and-scheduling"></a><span data-ttu-id="82c76-105">Verwalten Sie Arbeitskrafteinstellung und Feinterminierung</span><span class="sxs-lookup"><span data-stu-id="82c76-105">Manage worker setup and scheduling</span></span>
+## <a name="manage-worker-setup-and-scheduling"></a><span data-ttu-id="db240-105">Verwalten Sie Arbeitskrafteinstellung und Feinterminierung</span><span class="sxs-lookup"><span data-stu-id="db240-105">Manage worker setup and scheduling</span></span>
 
-### <a name="initial-configuration"></a><span data-ttu-id="82c76-106">Ausgangskonfiguration</span><span class="sxs-lookup"><span data-stu-id="82c76-106">Initial configuration</span></span>
+### <a name="initial-configuration"></a><span data-ttu-id="db240-106">Ausgangskonfiguration</span><span class="sxs-lookup"><span data-stu-id="db240-106">Initial configuration</span></span>
 
-- <span data-ttu-id="82c76-107">Führen Sie den Konfigurationsassistenten aus.</span><span class="sxs-lookup"><span data-stu-id="82c76-107">Run the configuration wizard.</span></span>
-- <span data-ttu-id="82c76-108">Registrieren Sie Arbeitskräfte als Zeiterfassungsarbeitskräfte.</span><span class="sxs-lookup"><span data-stu-id="82c76-108">Register workers as time registration workers.</span></span>
+- <span data-ttu-id="db240-107">Führen Sie den Konfigurationsassistenten aus.</span><span class="sxs-lookup"><span data-stu-id="db240-107">Run the configuration wizard.</span></span>
+- <span data-ttu-id="db240-108">Registrieren Sie Arbeitskräfte als Zeiterfassungsarbeitskräfte.</span><span class="sxs-lookup"><span data-stu-id="db240-108">Register workers as time registration workers.</span></span>
 
-### <a name="plan-worker-schedules"></a><span data-ttu-id="82c76-109">Planen von Arbeitskraftzeitplänen</span><span class="sxs-lookup"><span data-stu-id="82c76-109">Plan worker schedules</span></span>
+### <a name="plan-worker-schedules"></a><span data-ttu-id="db240-109">Planen von Arbeitskraftzeitplänen</span><span class="sxs-lookup"><span data-stu-id="db240-109">Plan worker schedules</span></span>
 
-- <span data-ttu-id="82c76-110">Wenden Sie Profile durch Verwendung der Arbeitsplanung an.</span><span class="sxs-lookup"><span data-stu-id="82c76-110">Apply profiles by using the work planner.</span></span> <span data-ttu-id="82c76-111">Weitere Informationen zu [Arbeitszeitprofilen finden Sie unter](https://technet.microsoft.com/library/aa551234.aspx)</span><span class="sxs-lookup"><span data-stu-id="82c76-111">For more information, see [Apply profiles using work planner](https://technet.microsoft.com/library/aa551234.aspx).</span></span>
+- <span data-ttu-id="db240-110">Wenden Sie Profile durch Verwendung der Arbeitsplanung an.</span><span class="sxs-lookup"><span data-stu-id="db240-110">Apply profiles by using the work planner.</span></span> <span data-ttu-id="db240-111">Weitere Informationen zu [Arbeitszeitprofilen finden Sie unter](https://technet.microsoft.com/library/aa551234.aspx)</span><span class="sxs-lookup"><span data-stu-id="db240-111">For more information, see [Apply profiles using work planner](https://technet.microsoft.com/library/aa551234.aspx).</span></span>
 
-<span data-ttu-id="82c76-112">Informationen über die Konfigurationsschritte, finden [Zeit und Anwesenheit](https://technet.microsoft.com/library/aa496971.aspx) Sie unter.</span><span class="sxs-lookup"><span data-stu-id="82c76-112">For information about the configuration steps, see [Setting up time and attendance](https://technet.microsoft.com/library/aa496971.aspx).</span></span>
+<span data-ttu-id="db240-112">Informationen über die Konfigurationsschritte, finden [Zeit und Anwesenheit](https://technet.microsoft.com/library/aa496971.aspx) Sie unter.</span><span class="sxs-lookup"><span data-stu-id="db240-112">For information about the configuration steps, see [Setting up time and attendance](https://technet.microsoft.com/library/aa496971.aspx).</span></span>
 
-### <a name="commerce-specific-configuration"></a><span data-ttu-id="82c76-113">Commerce-spezifische Konfiguration</span><span class="sxs-lookup"><span data-stu-id="82c76-113">Commerce-specific configuration</span></span>
+### <a name="commerce-specific-configuration"></a><span data-ttu-id="db240-113">Commerce-spezifische Konfiguration</span><span class="sxs-lookup"><span data-stu-id="db240-113">Commerce-specific configuration</span></span>
 
-- <span data-ttu-id="82c76-114">Aktivieren Sie ein Funktionsprofil für die Zeiterfassung für Arbeitskräfte, für die Sie Zeiterfassungen aktivieren möchten.</span><span class="sxs-lookup"><span data-stu-id="82c76-114">Enable a functionality profile for Time Clock, for workers that you want to enable time registrations for.</span></span> <span data-ttu-id="82c76-115">Klicken Sie auf **POS-Funktionensprofile** &gt; **Funktionen** &gt; **POS-Zeiterfassungen** &gt; **Zeiterfassungen aktivieren.**</span><span class="sxs-lookup"><span data-stu-id="82c76-115">Click **POS functionality profiles** &gt; **Functions** &gt; **POS time registrations** &gt; **Enable time registrations**.</span></span>
-- <span data-ttu-id="82c76-116">Konfigurieren Sie Point-of-Sale-Berechtigungsgruppen (POS), um die Berechtigung zum Anzeigen von Zeiterfassungseinträgen zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="82c76-116">Configure point of sale (POS) permissions groups to enable the View timeclock entries permission.</span></span> <span data-ttu-id="82c76-117">Diese Berechtigung ermöglicht einem Benutzer die Anzeige der Zeiterfassungen anderer Arbeitskräfte im Shop (und von jedem anderen Shops, dem der Benutzer zugeordnet ist, über das Adressbuch).</span><span class="sxs-lookup"><span data-stu-id="82c76-117">This permission lets a user view the time clock registrations of other workers in the store (and from any other store that the user is associated with, via the address book).</span></span> <span data-ttu-id="82c76-118">Sie sollten diese Berechtigung für eine Managerrolle aber nicht für eine Kassiererrolle aktivieren.</span><span class="sxs-lookup"><span data-stu-id="82c76-118">You might want to enable this permission for a manager role but not for a cashier role.</span></span> <span data-ttu-id="82c76-119">Klicken Sie auf **POS-Berechtigungsgruppen** &gt; **Zeiterfassungseinträge anzeigen.**</span><span class="sxs-lookup"><span data-stu-id="82c76-119">Click **POS permission groups** &gt; **View time clock entries**.</span></span>
+- <span data-ttu-id="db240-114">Aktivieren Sie ein Funktionsprofil für die Zeiterfassung für Arbeitskräfte, für die Sie Zeiterfassungen aktivieren möchten.</span><span class="sxs-lookup"><span data-stu-id="db240-114">Enable a functionality profile for Time Clock, for workers that you want to enable time registrations for.</span></span> <span data-ttu-id="db240-115">Klicken Sie auf **POS-Funktionensprofile** &gt; **Funktionen** &gt; **POS-Zeiterfassungen** &gt; **Zeiterfassungen aktivieren.**</span><span class="sxs-lookup"><span data-stu-id="db240-115">Click **POS functionality profiles** &gt; **Functions** &gt; **POS time registrations** &gt; **Enable time registrations**.</span></span>
+- <span data-ttu-id="db240-116">Konfigurieren Sie Point-of-Sale-Berechtigungsgruppen (POS), um die Berechtigung zum Anzeigen von Zeiterfassungseinträgen zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="db240-116">Configure point of sale (POS) permissions groups to enable the View timeclock entries permission.</span></span> <span data-ttu-id="db240-117">Diese Berechtigung ermöglicht einem Benutzer die Anzeige der Zeiterfassungen anderer Arbeitskräfte im Shop (und von jedem anderen Shops, dem der Benutzer zugeordnet ist, über das Adressbuch).</span><span class="sxs-lookup"><span data-stu-id="db240-117">This permission lets a user view the time clock registrations of other workers in the store (and from any other store that the user is associated with, via the address book).</span></span> <span data-ttu-id="db240-118">Sie sollten diese Berechtigung für eine Managerrolle aber nicht für eine Kassiererrolle aktivieren.</span><span class="sxs-lookup"><span data-stu-id="db240-118">You might want to enable this permission for a manager role but not for a cashier role.</span></span> <span data-ttu-id="db240-119">Klicken Sie auf **POS-Berechtigungsgruppen** &gt; **Zeiterfassungseinträge anzeigen.**</span><span class="sxs-lookup"><span data-stu-id="db240-119">Click **POS permission groups** &gt; **View time clock entries**.</span></span>
 
-## <a name="register-time"></a><span data-ttu-id="82c76-120">Kassenzeit</span><span class="sxs-lookup"><span data-stu-id="82c76-120">Register time</span></span>
+## <a name="register-time"></a><span data-ttu-id="db240-120">Kassenzeit</span><span class="sxs-lookup"><span data-stu-id="db240-120">Register time</span></span>
 
-### <a name="cashier-and-non-cashier-time-registrations"></a><span data-ttu-id="82c76-121">Kassierer- und Nichtkassiererzeiterfassungen</span><span class="sxs-lookup"><span data-stu-id="82c76-121">Cashier and non-cashier time registrations</span></span>
+### <a name="cashier-and-non-cashier-time-registrations"></a><span data-ttu-id="db240-121">Kassierer- und Nichtkassiererzeiterfassungen</span><span class="sxs-lookup"><span data-stu-id="db240-121">Cashier and non-cashier time registrations</span></span>
 
-- <span data-ttu-id="82c76-122">Im POS:</span><span class="sxs-lookup"><span data-stu-id="82c76-122">On POS:</span></span>
+- <span data-ttu-id="db240-122">Im POS:</span><span class="sxs-lookup"><span data-stu-id="db240-122">On POS:</span></span>
 
-    - <span data-ttu-id="82c76-123">Einstempel-Vorgänge:</span><span class="sxs-lookup"><span data-stu-id="82c76-123">Clock-in operations:</span></span>
+    - <span data-ttu-id="db240-123">Einstempel-Vorgänge:</span><span class="sxs-lookup"><span data-stu-id="db240-123">Clock-in operations:</span></span>
 
-        - <span data-ttu-id="82c76-124">Melden Sie sich mit einem Vorgäng ohne Kassenlade oder mit einer neuen Schicht an.</span><span class="sxs-lookup"><span data-stu-id="82c76-124">Log on with a non-drawer operation or New shift.</span></span>
-        - <span data-ttu-id="82c76-125">Wählen Sie einen Zeituhrarbeitsgang aus.</span><span class="sxs-lookup"><span data-stu-id="82c76-125">Select a Time Clock operation.</span></span>
-        - <span data-ttu-id="82c76-126">Wählen Sie einen gewünschten Vorgang aus:</span><span class="sxs-lookup"><span data-stu-id="82c76-126">Select a desired operation:</span></span>
+        - <span data-ttu-id="db240-124">Melden Sie sich mit einem Vorgäng ohne Kassenlade oder mit einer neuen Schicht an.</span><span class="sxs-lookup"><span data-stu-id="db240-124">Log on with a non-drawer operation or New shift.</span></span>
+        - <span data-ttu-id="db240-125">Wählen Sie einen Zeituhrarbeitsgang aus.</span><span class="sxs-lookup"><span data-stu-id="db240-125">Select a Time Clock operation.</span></span>
+        - <span data-ttu-id="db240-126">Wählen Sie einen gewünschten Vorgang aus:</span><span class="sxs-lookup"><span data-stu-id="db240-126">Select a desired operation:</span></span>
 
-            - <span data-ttu-id="82c76-127">Einstempeln</span><span class="sxs-lookup"><span data-stu-id="82c76-127">Clock-in</span></span>
-            - <span data-ttu-id="82c76-128">Pause für Arbeit</span><span class="sxs-lookup"><span data-stu-id="82c76-128">Break for Work</span></span>
-            - <span data-ttu-id="82c76-129">Mittagspause</span><span class="sxs-lookup"><span data-stu-id="82c76-129">Break for Lunch</span></span>
-            - <span data-ttu-id="82c76-130">Ausstempeln</span><span class="sxs-lookup"><span data-stu-id="82c76-130">Clock-out</span></span>
+            - <span data-ttu-id="db240-127">Einstempeln</span><span class="sxs-lookup"><span data-stu-id="db240-127">Clock-in</span></span>
+            - <span data-ttu-id="db240-128">Pause für Arbeit</span><span class="sxs-lookup"><span data-stu-id="db240-128">Break for Work</span></span>
+            - <span data-ttu-id="db240-129">Mittagspause</span><span class="sxs-lookup"><span data-stu-id="db240-129">Break for Lunch</span></span>
+            - <span data-ttu-id="db240-130">Ausstempeln</span><span class="sxs-lookup"><span data-stu-id="db240-130">Clock-out</span></span>
 
         <table>
         <thead>
         <tr>
-        <th><span data-ttu-id="82c76-131">Aktueller Status:</span><span class="sxs-lookup"><span data-stu-id="82c76-131">Current state</span></span></th>
-        <th><span data-ttu-id="82c76-132">Verfügbare Vorgänge</span><span class="sxs-lookup"><span data-stu-id="82c76-132">Available operations</span></span></th>
+        <th><span data-ttu-id="db240-131">Aktueller Status:</span><span class="sxs-lookup"><span data-stu-id="db240-131">Current state</span></span></th>
+        <th><span data-ttu-id="db240-132">Verfügbare Vorgänge</span><span class="sxs-lookup"><span data-stu-id="db240-132">Available operations</span></span></th>
         </tr>
         </thead>
         <tbody>
         <tr>
-        <td><span data-ttu-id="82c76-133">Einstempeln</span><span class="sxs-lookup"><span data-stu-id="82c76-133">Clock-in</span></span></td>
+        <td><span data-ttu-id="db240-133">Einstempeln</span><span class="sxs-lookup"><span data-stu-id="db240-133">Clock-in</span></span></td>
         <td>
         <ul>
-        <li><span data-ttu-id="82c76-134">Pause für Arbeit</span><span class="sxs-lookup"><span data-stu-id="82c76-134">Break for Work</span></span></li>
-        <li><span data-ttu-id="82c76-135">Mittagspause</span><span class="sxs-lookup"><span data-stu-id="82c76-135">Break for Lunch</span></span></li>
-        <li><span data-ttu-id="82c76-136">Ausstempeln</span><span class="sxs-lookup"><span data-stu-id="82c76-136">Clock-out</span></span></li>
+        <li><span data-ttu-id="db240-134">Pause für Arbeit</span><span class="sxs-lookup"><span data-stu-id="db240-134">Break for Work</span></span></li>
+        <li><span data-ttu-id="db240-135">Mittagspause</span><span class="sxs-lookup"><span data-stu-id="db240-135">Break for Lunch</span></span></li>
+        <li><span data-ttu-id="db240-136">Ausstempeln</span><span class="sxs-lookup"><span data-stu-id="db240-136">Clock-out</span></span></li>
         </ul>
         </td>
         </tr>
         <tr>
-        <td><span data-ttu-id="82c76-137">Pause für Arbeit</span><span class="sxs-lookup"><span data-stu-id="82c76-137">Break for Work</span></span></td>
-        <td><span data-ttu-id="82c76-138">Einstempeln</span><span class="sxs-lookup"><span data-stu-id="82c76-138">Clock-in</span></span></td>
+        <td><span data-ttu-id="db240-137">Pause für Arbeit</span><span class="sxs-lookup"><span data-stu-id="db240-137">Break for Work</span></span></td>
+        <td><span data-ttu-id="db240-138">Einstempeln</span><span class="sxs-lookup"><span data-stu-id="db240-138">Clock-in</span></span></td>
         </tr>
         <tr>
-        <td><span data-ttu-id="82c76-139">Mittagspause</span><span class="sxs-lookup"><span data-stu-id="82c76-139">Break for Lunch</span></span></td>
-        <td><span data-ttu-id="82c76-140">Einstempeln</span><span class="sxs-lookup"><span data-stu-id="82c76-140">Clock-in</span></span></td>
+        <td><span data-ttu-id="db240-139">Mittagspause</span><span class="sxs-lookup"><span data-stu-id="db240-139">Break for Lunch</span></span></td>
+        <td><span data-ttu-id="db240-140">Einstempeln</span><span class="sxs-lookup"><span data-stu-id="db240-140">Clock-in</span></span></td>
         </tr>
         <tr>
-        <td><span data-ttu-id="82c76-141">Ausstempeln</span><span class="sxs-lookup"><span data-stu-id="82c76-141">Clock-out</span></span></td>
-        <td><span data-ttu-id="82c76-142">Einstempeln</span><span class="sxs-lookup"><span data-stu-id="82c76-142">Clock-in</span></span></td>
+        <td><span data-ttu-id="db240-141">Ausstempeln</span><span class="sxs-lookup"><span data-stu-id="db240-141">Clock-out</span></span></td>
+        <td><span data-ttu-id="db240-142">Einstempeln</span><span class="sxs-lookup"><span data-stu-id="db240-142">Clock-in</span></span></td>
         </tr>
         </tbody>
         </table>
 
-        <span data-ttu-id="82c76-143">[![Status der Zeituhr](./media/timeclockstates.png)](./media/timeclockstates.png)</span><span class="sxs-lookup"><span data-stu-id="82c76-143">[![Time Clock States](./media/timeclockstates.png)](./media/timeclockstates.png)</span></span>
+        <span data-ttu-id="db240-143">[![Status der Zeituhr](./media/timeclockstates.png)](./media/timeclockstates.png)</span><span class="sxs-lookup"><span data-stu-id="db240-143">[![Time Clock States](./media/timeclockstates.png)](./media/timeclockstates.png)</span></span>
 
-- <span data-ttu-id="82c76-144">Sehen Sie die Bestätigungsmeldung an, und überprüfen Sie, ob die Uhrzeit der aktuellen Aktivität korrekt ist.</span><span class="sxs-lookup"><span data-stu-id="82c76-144">View the confirmation message, and validate that the current activity time is correct.</span></span>
-- <span data-ttu-id="82c76-145">Arbeitsprotokoll:</span><span class="sxs-lookup"><span data-stu-id="82c76-145">Logbook:</span></span>
+- <span data-ttu-id="db240-144">Sehen Sie die Bestätigungsmeldung an, und überprüfen Sie, ob die Uhrzeit der aktuellen Aktivität korrekt ist.</span><span class="sxs-lookup"><span data-stu-id="db240-144">View the confirmation message, and validate that the current activity time is correct.</span></span>
+- <span data-ttu-id="db240-145">Arbeitsprotokoll:</span><span class="sxs-lookup"><span data-stu-id="db240-145">Logbook:</span></span>
 
-    - <span data-ttu-id="82c76-146">Klicken Sie auf **Arbeitsprotokoll**, um die Zeituhraktivität anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="82c76-146">Click **Logbook** to view time clock activity.</span></span>
-    - <span data-ttu-id="82c76-147">Verwenden Sei Zeitfilter, um unterschiedliche Zeitfenster auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="82c76-147">Use time filters to select different time windows.</span></span>
-    - <span data-ttu-id="82c76-148">Wenn Sie an mehreren Filialstandorten arbeiten, Sie Ihre Zeiterfassungen von allen Shops, in denen Sie Zeit erfasst haben.</span><span class="sxs-lookup"><span data-stu-id="82c76-148">If you work at multiple store locations, you see your time registrations from all the stores where you recorded time.</span></span> <span data-ttu-id="82c76-149">Sie können den Shopfilter verwenden, um Zeiterfassungen von einem ausgewählten Shop anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="82c76-149">You can use the store filter to view time registrations from a selected store.</span></span>
+    - <span data-ttu-id="db240-146">Klicken Sie auf **Arbeitsprotokoll**, um die Zeituhraktivität anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="db240-146">Click **Logbook** to view time clock activity.</span></span>
+    - <span data-ttu-id="db240-147">Verwenden Sei Zeitfilter, um unterschiedliche Zeitfenster auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="db240-147">Use time filters to select different time windows.</span></span>
+    - <span data-ttu-id="db240-148">Wenn Sie an mehreren Filialstandorten arbeiten, Sie Ihre Zeiterfassungen von allen Shops, in denen Sie Zeit erfasst haben.</span><span class="sxs-lookup"><span data-stu-id="db240-148">If you work at multiple store locations, you see your time registrations from all the stores where you recorded time.</span></span> <span data-ttu-id="db240-149">Sie können den Shopfilter verwenden, um Zeiterfassungen von einem ausgewählten Shop anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="db240-149">You can use the store filter to view time registrations from a selected store.</span></span>
 
-- <span data-ttu-id="82c76-150">Unterschiedliche Zeitzonen:</span><span class="sxs-lookup"><span data-stu-id="82c76-150">Different time zones:</span></span>
+- <span data-ttu-id="db240-150">Unterschiedliche Zeitzonen:</span><span class="sxs-lookup"><span data-stu-id="db240-150">Different time zones:</span></span>
 
-    - <span data-ttu-id="82c76-151">Wenn Sie Zeit von einem anderen Standort (für das Kassiererarbeitsprotokoll oder mithilfe von **Zeiterfassungseinträge anzeigen** für ein Managerszenario) anzeigen und dieser Standort in einer anderen Zeitzone ist, werden die Zeiterfassungen, die Sie sehen, in Ihre lokale Zeitzone umgewandelt.</span><span class="sxs-lookup"><span data-stu-id="82c76-151">If you view time from a different location (for the cashier logbook, or by using **View timeclock entries** for a manager scenario), and that location is in a different time zone, the time records that you see are converted to your local time zone.</span></span> <span data-ttu-id="82c76-152">Beispielsweise sind Sie ein Manager für zwei Shops, eine in Arizona und der andere im Nevada.</span><span class="sxs-lookup"><span data-stu-id="82c76-152">For example, you are a manager for two stores, one in Arizona and the other in Nevada.</span></span> <span data-ttu-id="82c76-153">Ein Kassierer Einstempeln erfasst ein an 9:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="82c76-153">A cashier registers a clock-in at 9:00 A.M.</span></span> <span data-ttu-id="82c76-154">in Arizona.</span><span class="sxs-lookup"><span data-stu-id="82c76-154">in Arizona.</span></span> <span data-ttu-id="82c76-155">In diesem Moment ist es in Nevada 8:00 Uhr.</span><span class="sxs-lookup"><span data-stu-id="82c76-155">At that moment, the time in Nevada is 8:00 A.M.</span></span> <span data-ttu-id="82c76-156">Wenn Sie also im Shop in Nevada sind und Zeiterfassungen anzeigen, wird die Zeiterfassung als 8 Uhr angegeben.</span><span class="sxs-lookup"><span data-stu-id="82c76-156">Therefore, if you are in the Nevada store and look at time registration records, the time registration is marked as 8 A.M.</span></span>
+    - <span data-ttu-id="db240-151">Wenn Sie Zeit von einem anderen Standort (für das Kassiererarbeitsprotokoll oder mithilfe von **Zeiterfassungseinträge anzeigen** für ein Managerszenario) anzeigen und dieser Standort in einer anderen Zeitzone ist, werden die Zeiterfassungen, die Sie sehen, in Ihre lokale Zeitzone umgewandelt.</span><span class="sxs-lookup"><span data-stu-id="db240-151">If you view time from a different location (for the cashier logbook, or by using **View timeclock entries** for a manager scenario), and that location is in a different time zone, the time records that you see are converted to your local time zone.</span></span> <span data-ttu-id="db240-152">Beispielsweise sind Sie ein Manager für zwei Shops, eine in Arizona und der andere im Nevada.</span><span class="sxs-lookup"><span data-stu-id="db240-152">For example, you are a manager for two stores, one in Arizona and the other in Nevada.</span></span> <span data-ttu-id="db240-153">Ein Kassierer Einstempeln erfasst ein an 9:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="db240-153">A cashier registers a clock-in at 9:00 A.M.</span></span> <span data-ttu-id="db240-154">in Arizona.</span><span class="sxs-lookup"><span data-stu-id="db240-154">in Arizona.</span></span> <span data-ttu-id="db240-155">In diesem Moment ist es in Nevada 8:00 Uhr.</span><span class="sxs-lookup"><span data-stu-id="db240-155">At that moment, the time in Nevada is 8:00 A.M.</span></span> <span data-ttu-id="db240-156">Wenn Sie also im Shop in Nevada sind und Zeiterfassungen anzeigen, wird die Zeiterfassung als 8 Uhr angegeben.</span><span class="sxs-lookup"><span data-stu-id="db240-156">Therefore, if you are in the Nevada store and look at time registration records, the time registration is marked as 8 A.M.</span></span>
 
-## <a name="view-worker-time-registrations"></a><span data-ttu-id="82c76-157">Zeiterfassungsarbeitskräfte anzeigen</span><span class="sxs-lookup"><span data-stu-id="82c76-157">View worker time registrations</span></span>
+## <a name="view-worker-time-registrations"></a><span data-ttu-id="db240-157">Zeiterfassungsarbeitskräfte anzeigen</span><span class="sxs-lookup"><span data-stu-id="db240-157">View worker time registrations</span></span>
 
-### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a><span data-ttu-id="82c76-158">Anzeigen von Arbeitskraftzeiterfassungen und Filtern nach Shop oder Aktivitätstyp</span><span class="sxs-lookup"><span data-stu-id="82c76-158">View worker time registrations, and filter by store or activity type</span></span>
+### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a><span data-ttu-id="db240-158">Anzeigen von Arbeitskraftzeiterfassungen und Filtern nach Shop oder Aktivitätstyp</span><span class="sxs-lookup"><span data-stu-id="db240-158">View worker time registrations, and filter by store or activity type</span></span>
 
-<span data-ttu-id="82c76-159">Im POS:</span><span class="sxs-lookup"><span data-stu-id="82c76-159">On POS:</span></span>
+<span data-ttu-id="db240-159">Im POS:</span><span class="sxs-lookup"><span data-stu-id="db240-159">On POS:</span></span>
 
-- <span data-ttu-id="82c76-160">Wählen Sie **Zeiterfassungseinträge anzeigen** aus.</span><span class="sxs-lookup"><span data-stu-id="82c76-160">Select **View timeclock entries**.</span></span>
-- <span data-ttu-id="82c76-161">Sie sehen Zeituhrerfassungsaktivitäten von allen Arbeitskräften, die den gleichen Filialen zugewiesen sind, denen Sie zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="82c76-161">You see time clock registration activities from all workers that are assigned to the same stores that you're assigned to.</span></span>
-- <span data-ttu-id="82c76-162">Sie können den Aktivitätstyp und Shopfilter verwenden, um Zeiterfassungen zu filtern.</span><span class="sxs-lookup"><span data-stu-id="82c76-162">You can use the activity type and store filters to filter on time registrations.</span></span>
+- <span data-ttu-id="db240-160">Wählen Sie **Zeiterfassungseinträge anzeigen** aus.</span><span class="sxs-lookup"><span data-stu-id="db240-160">Select **View timeclock entries**.</span></span>
+- <span data-ttu-id="db240-161">Sie sehen Zeituhrerfassungsaktivitäten von allen Arbeitskräften, die den gleichen Filialen zugewiesen sind, denen Sie zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="db240-161">You see time clock registration activities from all workers that are assigned to the same stores that you're assigned to.</span></span>
+- <span data-ttu-id="db240-162">Sie können den Aktivitätstyp und Shopfilter verwenden, um Zeiterfassungen zu filtern.</span><span class="sxs-lookup"><span data-stu-id="db240-162">You can use the activity type and store filters to filter on time registrations.</span></span>
 
-## <a name="process-and-manage-time-registrations"></a><span data-ttu-id="82c76-163">Verarbeiten und Verwalten von Zeit- und Anwesenheitserfassungen</span><span class="sxs-lookup"><span data-stu-id="82c76-163">Process and manage time registrations</span></span>
+## <a name="process-and-manage-time-registrations"></a><span data-ttu-id="db240-163">Verarbeiten und Verwalten von Zeit- und Anwesenheitserfassungen</span><span class="sxs-lookup"><span data-stu-id="db240-163">Process and manage time registrations</span></span>
 
-<span data-ttu-id="82c76-164">Ein Commerce-Benutzer folgt dem Workflow, um Zeiterfassungen zu berechnen, zu genehmigen und in die Lohnabrechnung zu übertragen.</span><span class="sxs-lookup"><span data-stu-id="82c76-164">A Commerce user follows the workflow to calculate, approve, and transfer time registrations to payroll.</span></span>
+<span data-ttu-id="db240-164">Ein Commerce-Benutzer folgt dem Workflow, um Zeiterfassungen zu berechnen, zu genehmigen und in die Lohnabrechnung zu übertragen.</span><span class="sxs-lookup"><span data-stu-id="db240-164">A Commerce user follows the workflow to calculate, approve, and transfer time registrations to payroll.</span></span>
 
-### <a name="primary-operations"></a><span data-ttu-id="82c76-165">Primäre Vorgänge</span><span class="sxs-lookup"><span data-stu-id="82c76-165">Primary operations</span></span>
+### <a name="primary-operations"></a><span data-ttu-id="db240-165">Primäre Vorgänge</span><span class="sxs-lookup"><span data-stu-id="db240-165">Primary operations</span></span>
 
-- <span data-ttu-id="82c76-166">Berechnen</span><span class="sxs-lookup"><span data-stu-id="82c76-166">Calculate</span></span>
-- <span data-ttu-id="82c76-167">Genehmigen</span><span class="sxs-lookup"><span data-stu-id="82c76-167">Approve</span></span>
-- <span data-ttu-id="82c76-168">An Lohnabrechnung übertragen</span><span class="sxs-lookup"><span data-stu-id="82c76-168">Submit to payroll</span></span>
+- <span data-ttu-id="db240-166">Berechnen</span><span class="sxs-lookup"><span data-stu-id="db240-166">Calculate</span></span>
+- <span data-ttu-id="db240-167">Genehmigen</span><span class="sxs-lookup"><span data-stu-id="db240-167">Approve</span></span>
+- <span data-ttu-id="db240-168">An Lohnabrechnung übertragen</span><span class="sxs-lookup"><span data-stu-id="db240-168">Submit to payroll</span></span>
 
-### <a name="other-common-operations"></a><span data-ttu-id="82c76-169">Andere allgemeine Vorgänge</span><span class="sxs-lookup"><span data-stu-id="82c76-169">Other common operations</span></span>
+### <a name="other-common-operations"></a><span data-ttu-id="db240-169">Andere allgemeine Vorgänge</span><span class="sxs-lookup"><span data-stu-id="db240-169">Other common operations</span></span>
 
-- <span data-ttu-id="82c76-170">Massenausstempeln</span><span class="sxs-lookup"><span data-stu-id="82c76-170">Bulk Clock-out</span></span>
-- <span data-ttu-id="82c76-171">Erfassen der Abwesenheit</span><span class="sxs-lookup"><span data-stu-id="82c76-171">Register Absence</span></span>
+- <span data-ttu-id="db240-170">Massenausstempeln</span><span class="sxs-lookup"><span data-stu-id="db240-170">Bulk Clock-out</span></span>
+- <span data-ttu-id="db240-171">Erfassen der Abwesenheit</span><span class="sxs-lookup"><span data-stu-id="db240-171">Register Absence</span></span>
 
-<span data-ttu-id="82c76-172">Weitere Informationen dazu, wie Anwesenheitserfassungen in den Erfassungen verarbeitet werden, finden [Anwesenheitserfassungen und Prozesszeit](https://technet.microsoft.com/library/aa573180.aspx).</span><span class="sxs-lookup"><span data-stu-id="82c76-172">For more information about how to process time and attendance registrations, see [Process time and attendance registrations](https://technet.microsoft.com/library/aa573180.aspx).</span></span>
+<span data-ttu-id="db240-172">Weitere Informationen dazu, wie Anwesenheitserfassungen in den Erfassungen verarbeitet werden, finden [Anwesenheitserfassungen und Prozesszeit](https://technet.microsoft.com/library/aa573180.aspx).</span><span class="sxs-lookup"><span data-stu-id="db240-172">For more information about how to process time and attendance registrations, see [Process time and attendance registrations](https://technet.microsoft.com/library/aa573180.aspx).</span></span>
