@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: db1a6887e7742700dd3451c9a877b948b5ab691b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 27596bf260c069af4a7457c0eb8d02c45e5202b9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428731"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000233"
 ---
 # <a name="outbound-process-overview"></a>Übersicht der Ausgangsprozesse
 
@@ -85,6 +84,3 @@ Der Lagerbestand, der noch nicht reserviert wurde, wird für die Generierung von
 Nachdem alle Entnahmepositionen **Entnahmelistenregistrierung** auf der Seite entnommen wurden, wird die zugehörige Lieferung abgeschlossen. Der Prozess für Auftragslieferscheine kann dann basierend auf dem entnommenen Bestand initialisiert werden.
 
 [![Ausgehende Lieferungen aktualisieren](./media/outbound-shipments.png)](./media/outbound-shipments.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

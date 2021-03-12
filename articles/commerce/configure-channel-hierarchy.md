@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 7b5041d35d310125c314ab2cb77d3cc40cdb7113
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3dcba743e6557b1bd366ac79ecb49ead831dceb4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412469"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001024"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Einen Kanal zur Verwendung einer Kanalnavigationshierarchie konfigurieren
 
@@ -39,7 +38,7 @@ Kanalnavigationshierarchien organisieren Produkte in Kategorien, sodass die Prod
 
 Gehen Sie folgendermaßen vor, um einen Kanal für die Verwendung einer Kanalnavigationshierarchie zu konfigurieren.
 
-1. Wechseln Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinstellungen \> Kanalkategorien und Produktattribute**.
+1. Wechseln Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinstellungen \> Kanalkategorien und Produktattribute**.
 1. Wählen Sie den zu konfigurierenden Kanal aus.
 1. Wählen Sie im Aktivitätsbereich **Attributmetadaten festlegen**.
 1. Wählen Sie in der Dropdownliste **Kategoriehierarchie** die entsprechende Kanalnavigationshierarchie aus.
@@ -84,6 +83,3 @@ Das folgende Bild zeigt, wie Kanalaktualisierungen veröffentlicht werden.
 [Eine Kanalnavigationshierarchie erstellen](create-channel-hierarchy.md)
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

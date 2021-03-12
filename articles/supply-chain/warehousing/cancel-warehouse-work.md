@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: daa8f0d19de75e6c126fe7a5fe312bca24c89bdc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: ae4062401cd5be2371c45642b78bf3708b04f664
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429065"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001197"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>Stornieren von Lagerortarbeit für Ausnahmebehandlung
 
@@ -45,6 +44,3 @@ Nur Arbeit vom Typ **Vertrieb**, **Umlagerungsprobleme**, **Rohmaterialentnahme*
 Um die Sperrung der Arbeit aufzuheben, storniert das System alle verbleibenden Arbeitspositionen und korrigiert die Lagerortdaten, die der Arbeitskennung zugeordnet sind, die der Benutzer angegeben hat. Alle regulären Lagerortverarbeitungsvorgänge, die die betroffene Artikelmenge umfassen, können dann fortgesetzt werden.
 
 Um den betroffenen Artikel in einen bestimmten Lagerplatz einzulagern, nachdem die Arbeit storniert wurde, muss der Benutzer einen Bestandsumlagerungs- oder Mengenanpassungseinstellvorgang auf einem mobilen Gerät verwenden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

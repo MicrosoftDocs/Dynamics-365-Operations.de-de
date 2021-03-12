@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResProductCreate, UnitOfMeasureLookup, DimensionLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 90924c853793a3d70f2f2d46d8a154a19bd7d6bb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 79d5252d950cd83dfd1307ffb661948405102593
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428696"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999680"
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>Ein freigegebenes Produkt für ein einzelnes Unternehmen erstellen
 
@@ -103,6 +102,3 @@ In dieser Prozedur wird erläutert, wie ein einzelnes freigegebenes Produkt im R
 12. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 13. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

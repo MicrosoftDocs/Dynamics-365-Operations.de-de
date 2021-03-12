@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: cdedc45b8f057310801f134104156a732fb58d86
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e8274890c581fffc7330538430c9b2ba060041bc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429129"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999102"
 ---
 # <a name="troubleshoot-procurement-and-sourcing-workflows"></a>Fehlerbehebung bei Beschaffungsworkflows
 
@@ -80,6 +79,3 @@ Nachdem Sie Bestellungen storniert haben, die im *Bestätigt*-Zustand waren, ers
 
 Dieses Problem tritt nur bei Bestellungen auf, die dem Änderungsmanagement unterliegen. Dies liegt daran, dass die Stornierung als eine Änderung angesehen wird, die genehmigt werden muss. Die Genehmigung kann automatisch vom System erfolgen. Daher besteht der Prozess darin, die stornierte Bestellung an den Genehmigungsworkflow zu senden, damit sie in einen *Genehmigt*-Zustand wechseln kann. Ab diesem Zeitpunkt erscheint die Bestellung nicht mehr im **Bestellvorbereitung**-Arbeitsbereich in der Liste der Bestellentwürfe.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

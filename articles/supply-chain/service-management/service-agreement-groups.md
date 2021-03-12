@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAAgreementGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51b51640a09f78ed613994e2ade755c8ad831ea9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6e2995d81a6660d51a7cf8ca02a6a7db91935e4e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428793"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001298"
 ---
 # <a name="service-agreements-overview"></a>Übersicht Servicevereinbarungen
 
@@ -42,6 +41,3 @@ Im Feld **Servicevereinbarungsgruppe** auf der Seite **Serviceverwaltungsparamet
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Erstellen von Servicevereinbarungsgruppen](create-service-agreement-groups.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

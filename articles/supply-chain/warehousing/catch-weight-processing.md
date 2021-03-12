@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 6ecadb06adce5a0cbf1614c7da8fc65cb801e249
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429064"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001173"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
@@ -210,6 +209,3 @@ Zusätzlich zu den Einschränkungen, die derzeit für Artikelgewichtsprodukte ge
 
 > [!NOTE]
 > Die vorstehenden Informationen zu Artikelgewichtstags sind nur gültig, wenn das Artikelgewichtsprodukt über eine Methode zur Verfolgung der Dimension von Artikelgewichtstags verfügt, die vollständig verfolgt wird (d. h. der Parameter der **Dimensionsrückverfolgungsmethode des Artikelgewichtstags** in der Richtlinie zur Handhabung von Gegenständen mit Artikelgewicht ist auf **Produktdimensionen, Rückverfolgungsangaben und alle Lagerdimensionen** gesetzt). Wenn der Gegenstand mit dem Artikelgewicht nur teilweise mit Tags verfolgt wird (d. h. wenn der Parameter **Dimensionsrückverfolgungsmethode des Artikelgewichtstags** in der Richtlinie zur Handhabung von Gegenständen mit Artikelgewicht auf **Produktdimensionen, Rückverfolgungsangaben und Inventarstatus** gesetzt ist) gelten zusätzliche Einschränkungen. Da in diesem Fall die Sichtbarkeit zwischen Tag und Inventar verloren geht, werden einige zusätzliche Szenarien nicht unterstützt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 94888a0ad10371a9aa449d1c7706f85cf5d9d5e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0b3019b06651b2c96df7c971a563865c9c140429
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428438"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998811"
 ---
 # <a name="activate-a-production-flow-version"></a>Eine Produktionsflussversion aktivieren
 
@@ -41,6 +40,3 @@ Bevor Kanban-Einzelvorgänge erstellt werden können und Aktivitäten für eine 
 5. Klicken Sie auf Aktivieren.
 6. Klicken Sie auf "OK".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
