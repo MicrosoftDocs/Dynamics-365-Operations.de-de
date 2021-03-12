@@ -11,50 +11,49 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCBOMLineDetails, InventItemIdLookupSimple
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fcdf4b735587b76b7f761f59c56da1ca358a2e37
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 267ac5447d36f63094fdb57c0d450e4d79cf138b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428561"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966854"
 ---
-# <a name="maintain-bom-for-a-product-configuration-model"></a><span data-ttu-id="675ac-103">Stückliste für ein Produktkonfigurationsmodell verwalten</span><span class="sxs-lookup"><span data-stu-id="675ac-103">Maintain BOM for a product configuration model</span></span>
+# <a name="maintain-bom-for-a-product-configuration-model"></a><span data-ttu-id="260da-103">Stückliste für ein Produktkonfigurationsmodell verwalten</span><span class="sxs-lookup"><span data-stu-id="260da-103">Maintain BOM for a product configuration model</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="675ac-104">Die Ausführung dieser Prozedur erfordert ein vorhandenes Produktkonfigurationsmodell.</span><span class="sxs-lookup"><span data-stu-id="675ac-104">Running this procedure requires an existing product configuration model.</span></span> <span data-ttu-id="675ac-105">Das Spitzenlautsprechermodell im Vorführungsunternehmen USMF wird verwendet, um diese Prozedur zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="675ac-105">The High end speaker model in the demo company USMF is used to create this procedure.</span></span>
+<span data-ttu-id="260da-104">Die Ausführung dieser Prozedur erfordert ein vorhandenes Produktkonfigurationsmodell.</span><span class="sxs-lookup"><span data-stu-id="260da-104">Running this procedure requires an existing product configuration model.</span></span> <span data-ttu-id="260da-105">Das Spitzenlautsprechermodell im Vorführungsunternehmen USMF wird verwendet, um diese Prozedur zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="260da-105">The High end speaker model in the demo company USMF is used to create this procedure.</span></span>
 
 
-## <a name="add-a-bom-line"></a><span data-ttu-id="675ac-106">Hinzufügen einer Stücklistenposition</span><span class="sxs-lookup"><span data-stu-id="675ac-106">Add a BOM line</span></span>
-1. <span data-ttu-id="675ac-107">Klicken Sie auf "Produktvariantenmodell-Definition".</span><span class="sxs-lookup"><span data-stu-id="675ac-107">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="675ac-108">Klicken Sie auf "Produktkonfigurationsmodelle".</span><span class="sxs-lookup"><span data-stu-id="675ac-108">Click Product configuration models.</span></span>
-3. <span data-ttu-id="675ac-109">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="675ac-109">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="675ac-110">Wählen Sie den Spitzenlautsprecher für diese Prozedur aus.</span><span class="sxs-lookup"><span data-stu-id="675ac-110">Select the High end speaker for this procedure.</span></span>  
-4. <span data-ttu-id="675ac-111">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="675ac-111">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="675ac-112">Erweitern Sie den Abschnitt "Stücklistenpositionen".</span><span class="sxs-lookup"><span data-stu-id="675ac-112">Expand the BOM lines section.</span></span>
-6. <span data-ttu-id="675ac-113">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="675ac-113">Click Add.</span></span>
-7. <span data-ttu-id="675ac-114">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="675ac-114">In the Name field, type a value.</span></span>
-8. <span data-ttu-id="675ac-115">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="675ac-115">In the Description field, type a value.</span></span>
-9. <span data-ttu-id="675ac-116">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="675ac-116">Click Save.</span></span>
+## <a name="add-a-bom-line"></a><span data-ttu-id="260da-106">Hinzufügen einer Stücklistenposition</span><span class="sxs-lookup"><span data-stu-id="260da-106">Add a BOM line</span></span>
+1. <span data-ttu-id="260da-107">Klicken Sie auf "Produktvariantenmodell-Definition".</span><span class="sxs-lookup"><span data-stu-id="260da-107">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="260da-108">Klicken Sie auf "Produktkonfigurationsmodelle".</span><span class="sxs-lookup"><span data-stu-id="260da-108">Click Product configuration models.</span></span>
+3. <span data-ttu-id="260da-109">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="260da-109">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="260da-110">Wählen Sie den Spitzenlautsprecher für diese Prozedur aus.</span><span class="sxs-lookup"><span data-stu-id="260da-110">Select the High end speaker for this procedure.</span></span>  
+4. <span data-ttu-id="260da-111">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="260da-111">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="260da-112">Erweitern Sie den Abschnitt "Stücklistenpositionen".</span><span class="sxs-lookup"><span data-stu-id="260da-112">Expand the BOM lines section.</span></span>
+6. <span data-ttu-id="260da-113">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="260da-113">Click Add.</span></span>
+7. <span data-ttu-id="260da-114">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="260da-114">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="260da-115">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="260da-115">In the Description field, type a value.</span></span>
+9. <span data-ttu-id="260da-116">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="260da-116">Click Save.</span></span>
 
-## <a name="add-bom-line-details"></a><span data-ttu-id="675ac-117">Hinzufügen von Stücklistenpositionsdetails</span><span class="sxs-lookup"><span data-stu-id="675ac-117">Add BOM line details</span></span>
-1. <span data-ttu-id="675ac-118">Klicken Sie auf "Stücklistenpositionsdetails".</span><span class="sxs-lookup"><span data-stu-id="675ac-118">Click BOM line details.</span></span>
-2. <span data-ttu-id="675ac-119">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="675ac-119">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="675ac-120">Sie können beispielsweise Artikel "M0055" auswählen.</span><span class="sxs-lookup"><span data-stu-id="675ac-120">For example, you can select the item M0055.</span></span>  
-    * <span data-ttu-id="675ac-121">Für jede Stücklistenpositionseigenschaft können Sie festlegen, ob ein fester Wert oder ein Attribut zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="675ac-121">For each BOM line property, you can select if it takes a fixed value or is mapped to an attribute.</span></span>  
-3. <span data-ttu-id="675ac-122">Wählen Sie das Kontrollkästchen "Festlegen" aus.</span><span class="sxs-lookup"><span data-stu-id="675ac-122">Select the Set check box.</span></span>
-4. <span data-ttu-id="675ac-123">Wählen Sie "Ja" im Feld "Berechnung" aus.</span><span class="sxs-lookup"><span data-stu-id="675ac-123">Select Yes in the Calculation field.</span></span>
-    * <span data-ttu-id="675ac-124">Das Festlegen der Berechnungseigenschaft auf "Ja" gewährleistet, dass die Stücklistenposition in die Kostenberechnungen einbezogen ist.</span><span class="sxs-lookup"><span data-stu-id="675ac-124">Setting the Calculation property to Yes ensures that the BOM line is included in cost calculations.</span></span>  
-5. <span data-ttu-id="675ac-125">Klicken Sie auf die Registerkarte "Einstellungen".</span><span class="sxs-lookup"><span data-stu-id="675ac-125">Click the Setup tab.</span></span>
-6. <span data-ttu-id="675ac-126">Wählen Sie das Kontrollkästchen "Festlegen" aus.</span><span class="sxs-lookup"><span data-stu-id="675ac-126">Select the Set check box.</span></span>
-7. <span data-ttu-id="675ac-127">Geben Sie im Feld "Menge" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="675ac-127">In the Quantity field, enter a number.</span></span>
-    * <span data-ttu-id="675ac-128">Das Feld "Menge" bestimmt die Menge des Artikels, der in der Stückliste enthalten ist.</span><span class="sxs-lookup"><span data-stu-id="675ac-128">The quantity field determines how much of the item that will be included in the BOM.</span></span> <span data-ttu-id="675ac-129">Dieser könnte ein offensichtlicher Kandidat für eine Attributzuordnung sein.</span><span class="sxs-lookup"><span data-stu-id="675ac-129">This could be an obvious candidate for an attribute mapping.</span></span>  
-8. <span data-ttu-id="675ac-130">Klicken Sie auf die Registerkarte 'Dimensionen'.</span><span class="sxs-lookup"><span data-stu-id="675ac-130">Click the Dimension tab.</span></span>
-    * <span data-ttu-id="675ac-131">Überprüfen Sie, ob vorhandene Produktdimensionen aktiv sind und daher ein Wert oder ein Attribut zugewiesen sein muss..</span><span class="sxs-lookup"><span data-stu-id="675ac-131">Verify if any of the product dimensions are active,  and therefore must have a value or attribute assigned.</span></span>  
-9. <span data-ttu-id="675ac-132">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="675ac-132">Click OK.</span></span>
+## <a name="add-bom-line-details"></a><span data-ttu-id="260da-117">Hinzufügen von Stücklistenpositionsdetails</span><span class="sxs-lookup"><span data-stu-id="260da-117">Add BOM line details</span></span>
+1. <span data-ttu-id="260da-118">Klicken Sie auf "Stücklistenpositionsdetails".</span><span class="sxs-lookup"><span data-stu-id="260da-118">Click BOM line details.</span></span>
+2. <span data-ttu-id="260da-119">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="260da-119">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="260da-120">Sie können beispielsweise Artikel "M0055" auswählen.</span><span class="sxs-lookup"><span data-stu-id="260da-120">For example, you can select the item M0055.</span></span>  
+    * <span data-ttu-id="260da-121">Für jede Stücklistenpositionseigenschaft können Sie festlegen, ob ein fester Wert oder ein Attribut zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="260da-121">For each BOM line property, you can select if it takes a fixed value or is mapped to an attribute.</span></span>  
+3. <span data-ttu-id="260da-122">Wählen Sie das Kontrollkästchen "Festlegen" aus.</span><span class="sxs-lookup"><span data-stu-id="260da-122">Select the Set check box.</span></span>
+4. <span data-ttu-id="260da-123">Wählen Sie "Ja" im Feld "Berechnung" aus.</span><span class="sxs-lookup"><span data-stu-id="260da-123">Select Yes in the Calculation field.</span></span>
+    * <span data-ttu-id="260da-124">Das Festlegen der Berechnungseigenschaft auf "Ja" gewährleistet, dass die Stücklistenposition in die Kostenberechnungen einbezogen ist.</span><span class="sxs-lookup"><span data-stu-id="260da-124">Setting the Calculation property to Yes ensures that the BOM line is included in cost calculations.</span></span>  
+5. <span data-ttu-id="260da-125">Klicken Sie auf die Registerkarte "Einstellungen".</span><span class="sxs-lookup"><span data-stu-id="260da-125">Click the Setup tab.</span></span>
+6. <span data-ttu-id="260da-126">Wählen Sie das Kontrollkästchen "Festlegen" aus.</span><span class="sxs-lookup"><span data-stu-id="260da-126">Select the Set check box.</span></span>
+7. <span data-ttu-id="260da-127">Geben Sie im Feld "Menge" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="260da-127">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="260da-128">Das Feld "Menge" bestimmt die Menge des Artikels, der in der Stückliste enthalten ist.</span><span class="sxs-lookup"><span data-stu-id="260da-128">The quantity field determines how much of the item that will be included in the BOM.</span></span> <span data-ttu-id="260da-129">Dieser könnte ein offensichtlicher Kandidat für eine Attributzuordnung sein.</span><span class="sxs-lookup"><span data-stu-id="260da-129">This could be an obvious candidate for an attribute mapping.</span></span>  
+8. <span data-ttu-id="260da-130">Klicken Sie auf die Registerkarte 'Dimensionen'.</span><span class="sxs-lookup"><span data-stu-id="260da-130">Click the Dimension tab.</span></span>
+    * <span data-ttu-id="260da-131">Überprüfen Sie, ob vorhandene Produktdimensionen aktiv sind und daher ein Wert oder ein Attribut zugewiesen sein muss..</span><span class="sxs-lookup"><span data-stu-id="260da-131">Verify if any of the product dimensions are active,  and therefore must have a value or attribute assigned.</span></span>  
+9. <span data-ttu-id="260da-132">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="260da-132">Click OK.</span></span>
 
