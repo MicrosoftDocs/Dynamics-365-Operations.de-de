@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e89a430f90374733b23fadaf53f5bab598d67d62
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 33323a8aed44cf19db6c2c937abcb09f7e05b6c1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645947"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993947"
 ---
 # <a name="troubleshoot-partial-releases-and-partial-shipments"></a>Fehlerbehebung bei Teilfreigaben und Teillieferungen
 
@@ -42,6 +41,3 @@ Ein Verkaufsauftrag hat z. B. zwei Elemente: eines zur Lieferung und eines zur A
 ### <a name="issue-resolution"></a>Problemlösung
 
 Der Freigabestatus gilt nur für Auftragszeilen, bei denen die Elemente für die Lagerortverwaltung freigegeben sind. Daher bleibt der Freigabestatus in diesem Szenario *Teilweise freigegeben*. Microsoft hat dieses Problem untersucht und festgestellt, dass es sich um eine Einschränkung der Funktion handelt. Im Rahmen des Lieferschein- und Fakturierungsprozesses könnte eine Erweiterung hinzugefügt werden, um den Freigabestatus zu aktualisieren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

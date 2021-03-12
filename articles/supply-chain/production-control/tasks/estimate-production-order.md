@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bbb541a09809c1f1bfada42094d840a2f6e7764
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6fb001d51fcaff2307845d918eddee8256c2ab8a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428401"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994203"
 ---
 # <a name="estimate-a-production-order"></a>Produktionsauftrag vorkalkulieren
 
@@ -42,6 +41,3 @@ Sie können dieses Verfahren ausführen, indem Sie das USMF-Demodatunternehmen o
 1. Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".
 2. Klicken Sie auf Berechnungsdetails anzeigen
     * Auf dieser Seite wird die Kostenaufschlüsselung angezeigt. So können Sie beispielsweise den gesamten Einstandspreis pro Einheit für das Fertigprodukt in der ersten Zeile anzeigen. Die folgenden Zeilen enthalten Kosten gemäß der Stückliste, den Produktionsarbeitsplan und die indirekten Kosten.  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

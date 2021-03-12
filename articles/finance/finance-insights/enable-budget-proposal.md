@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d8443c4e3e6f3d3a90acedc7c05b2846d6b68369
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 59cf40e8bf69734c5f3645997ff0b07c29d4f40e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646204"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995139"
 ---
 # <a name="enable-budget-proposals-preview"></a>Budgetvorschläge aktivieren (Vorschau)
 
@@ -48,6 +47,3 @@ In diesem Thema wird erläutert, wie Sie die Funktion „Budgetvorschlag“ in F
 
 #### <a name="privacy-notice"></a>Datenschutzhinweis
 Vorschauen (1) wenden möglicherweise weniger Datenschutz- und Sicherheitsmaßnahmen an als der Dynamics 365 Finance and Operations-Dienst, (2) sind nicht in der Service Level Agreement (SLA) für diesen Dienst enthalten, (3) sollten nicht zur Verarbeitung personenbezogener Daten oder anderer Daten verwendet werden, die gesetzlichen oder behördlichen Compliance-Anforderungen unterliegen, und (4) hat begrenzten Support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

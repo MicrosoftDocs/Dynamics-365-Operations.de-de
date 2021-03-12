@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: a252c3ecb12cb6a4dc429f35c8aeab6bd3914d03
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 8cbc2909c3f4533b4ea68e522f0874873989f3ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528948"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994044"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Kontakte direkt von Sales mit Kontakten oder Debitoren in Supply Chain Management synchronisieren
 
@@ -33,9 +32,9 @@ ms.locfileid: "4528948"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) vertraut sein.
+> Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Microsoft Dataverse for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) vertraut sein.
 
-Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Entitäten „Kontakt (Kontakte)“ und „Kontakt (Debitoren)“ direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management zu synchronisieren.
+Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Tabellen „Kontakt (Kontakte)“ und „Kontakt (Debitoren)“ direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management zu synchronisieren.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Datenfluss in Interessent nach Bargeld
 
@@ -47,7 +46,7 @@ Die Lösung Interessent nach Bargeld verwendet die Datenenintegrationsfunktion, 
 
 Um auf die verfügbaren Vorlagen zuzugreifen, öffnen Sie [PowerApps-Administrator-Center](https://preview.admin.powerapps.com/dataintegration). Wählen Sie **Projekte**, und dann auf, in der oberen rechten Ecke, wählen Sie **Neues Projekt**, um öffentliche Vorlagen auszuwählen.
 
-Die folgenden Vorlagen und grundlegenden Aufgaben werden für die Synchronisierung von Kontakt (Kontakte) aus Sales für Kontakt (Kunden) in Supply Chain Management verwendet:
+Die folgenden Vorlagen und grundlegenden Aufgaben werden für die Synchronisierung der Tabellen Kontakt (Kontakte) aus Sales mit den Tabellen Kontakt (Kunden) in Supply Chain Management verwendet:
 
 - **Namen der Vorlagen in der Datenintegration**
 
@@ -65,7 +64,7 @@ Vor der Kontaktsynchronisierung kann die folgende Kontaktsynchronisierung auftre
 
 | Verk.    | Lieferkettenverwaltung |
 |----------|------------------------|
-| Kontakte | CDS-Kontakte           |
+| Kontakte | Dataverse-Kontakte           |
 | Kontakte | Debitoren V2           |
 
 ## <a name="entity-flow"></a>Entitätsfluss
@@ -79,13 +78,13 @@ Ein Kontakt in Sales kann zu einem Kontakt oder Kunden in Supply Chain Managemen
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Prospect to Cash-Lösung für Sales
 
-Dem Kontakt wurde ein neues **Ist aktiver Kunde**-Feld hinzugefügt. Das Feld wird genutzt, um Kontakte mit Vertriebsaktivität von Kontakten ohne Vertriebsaktivität zu unterscheiden. **Ist aktiver Kunde** wird nur für Kontakte auf **Ja** gesetzt, für die es Angebote, Bestellungen oder Rechnungen gibt. Nur diese Kontakte werden in Supply Chain Management als Kunden synchronisiert.
+Dem Kontakt wurde eine neue Spalte **Ist aktiver Kunde** hinzugefügt. Die Spalte wird genutzt, um Kontakte mit Vertriebsaktivität von Kontakten ohne Vertriebsaktivität zu unterscheiden. **Ist aktiver Kunde** wird nur für Kontakte auf **Ja** gesetzt, für die es Angebote, Bestellungen oder Rechnungen gibt. Nur diese Kontakte werden in Supply Chain Management als Kunden synchronisiert.
 
-Dem Kontakt wurde ein neues **IsCompanyAnAccount**-Feld hinzugefügt. Dieses Feld wird verwendet, um anzuzeigen, ob ein Kontakt mit einem Unternehmen (übergeordnetes Konto/übergeordneter Kontakt) des **Konto**-Typs verknüpft ist. Diese Information wird verwendet, um Kontakte zu identifizieren, die mit Supply Chain Management als Kontakte synchronisiert werden sollen.
+Dem Kontakt wurde eine neue Spalte **IsCompanyAnAccount** hinzugefügt. Diese Spalte wird verwendet, um anzuzeigen, ob ein Kontakt mit einem Unternehmen (übergeordnetes Konto/übergeordneter Kontakt) des **Konto**-Typs verknüpft ist. Diese Information wird verwendet, um Kontakte zu identifizieren, die mit Supply Chain Management als Kontakte synchronisiert werden sollen.
 
-Dem Kontakt wurde ein neues **Kontaktnummer**-Feld hinzugefügt, um sicherzustellen, dass ein natürlicher und eindeutiger Schlüssel für die Integration bereitsteht. Wenn ein neuer Kontakt angelegt wird, wird automatisch ein **Kontaktnummer**-Wert unter Verwendung einer fortlaufenden Nummerierung erstellt. Der Wert besteht aus **CON**, gefolgt von einer aufsteigenden fortlaufenden Nummerierung und einem Suffix aus sechs Zeichen. Beispiel: **CON-01000-BVRCPS**
+Dem Kontakt wurde eine neue Spalte **Kontaktnummer** hinzugefügt, um sicherzustellen, dass ein natürlicher und eindeutiger Schlüssel für die Integration bereitsteht. Wenn ein neuer Kontakt angelegt wird, wird automatisch ein **Kontaktnummer**-Wert unter Verwendung einer fortlaufenden Nummerierung erstellt. Der Wert besteht aus **CON**, gefolgt von einer aufsteigenden fortlaufenden Nummerierung und einem Suffix aus sechs Zeichen. Beispiel: **CON-01000-BVRCPS**
 
-Wenn Sales die Integrationslösung für Sales angewendet wird, füllt ein Upgrade-Skript das Feld **Kontaktnummer** für vorhandene Kontakte unter Verwendung der oben genannten fortlaufenden Nummerierung aus. Außerdem setzt das Upgrade-Skript das Feld **Ist aktiver Kunde** für alle Kontakte mit Vertriebsaktivität auf **Ja**.
+Wenn Sales die Integrationslösung für Sales angewendet wird, füllt ein Upgrade-Skript die Spalte **Kontaktnummer** für vorhandene Kontakte unter Verwendung der oben genannten fortlaufenden Nummerierung aus. Außerdem setzt das Upgrade-Skript die Spalte **Ist aktiver Kunde** für alle Kontakte mit Vertriebsaktivität auf **Ja**.
 
 ## <a name="in-supply-chain-management"></a>In Supply Chain Management
 
@@ -95,7 +94,7 @@ Kontakte werden mit der Eigenschaft **IsContactPersonExternallyMaintained** geke
 
 ### <a name="contact-to-customer"></a>Kontakt zu Kunde
 
-- **CustomerGroup** ist in Supply Chain Management erforderlich. Um Synchronisierungsfehler zu vermeiden, können Sie in der Zuordnung einen Standardwert vorgeben. Der Standardwert wird verwendet, wenn das Feld in Sales leer geblieben ist.
+- **CustomerGroup** ist in Supply Chain Management erforderlich. Um Synchronisierungsfehler zu vermeiden, können Sie in der Zuordnung einen Standardwert vorgeben. Der Standardwert wird verwendet, wenn die Spalte in Sales leer geblieben ist.
 
     Der Standardvorlagenwert ist **10**.
 
@@ -118,7 +117,7 @@ Kontakte werden mit der Eigenschaft **IsContactPersonExternallyMaintained** geke
 Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Datenintegration. 
 
 > [!NOTE]
-> Die Zuordnung zeigt, welche Feldinformationen von Sales zu Supply Chain Management synchronisiert werden.
+> Die Zuordnung zeigt, welche Spalteninformationen von Sales zu Supply Chain Management synchronisiert werden.
 
 ### <a name="contact-to-contact"></a>Kontakt zu Kontakt
 
@@ -142,6 +141,3 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Dat
 [Rechnungskopfzeilen und ‑positionen direkt von Supply Chain Management zu Sales synchronisieren](sales-invoice-template-mapping-direct.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

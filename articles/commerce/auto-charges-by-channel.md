@@ -10,17 +10,16 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 1be07c754e563298d82f6ca54f09ae3aa9118602
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d37b2b785dd29850dcd02d0905e5872445384990
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412543"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993727"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Automatische Belastungen nach Kanal aktivieren und konfigurieren
 
@@ -77,7 +76,7 @@ Nachdem Sie die Funktion **Aktivieren Sie die automatische Filterladung nach Kan
 
 Führen Sie die folgenden Schritte aus, um automatische Gebühren nach Kanal in Commerce zu definieren.
 
-1. Gehen Sie zu  **Debitoren \> Belastungen einrichten \> Auto-Belastungen**.
+1. Wechseln Sie zu **Debitoren \> Belastungen einrichten \> Auto-Belastungen**.
 1. Im linken Bereich im Feld **Ebene** wählen Sie entweder **Kopf** oder **Linie** aus, abhängig von Ihren Geschäftsanforderungen.
 1. In dem Feld **Retail Channel-Code** wählen Sie im Feld den entsprechenden Kanalcode aus (z. B. **Tabelle** oder **Gruppe**). Wenn die Standardeinstellung, **Alle** verwendet wird, werden Gebührenregeln auf alle Kanäle angewendet.
 
@@ -128,6 +127,3 @@ Durch die Auswahl von **Transaktionsoptionen \> Gebühren \> Gebühren verwalten
 [Erweiterte automatische Omni-Channel-Belastungen](omni-auto-charges.md)
 
 [Kopfbelastungen auf übereinstimmende Verkaufspositionen aufteilen](pro-rate-charges-matching-lines.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

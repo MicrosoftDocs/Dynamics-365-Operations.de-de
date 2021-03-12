@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 67c0bb169bee8a7ea90edb4db7233111a8ee6e34
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412557"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993652"
 ---
 # <a name="warehouse-set-up"></a>Lagerort einrichten
 
@@ -41,7 +40,7 @@ Vor dem Einrichten eines Lagerorts müssen Sie den Standort eines Lagerorts konf
 
 Gehen Sie folgendermaßen vor, um den Standort eines Lagerorts zu konfigurieren.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinrichtung \> Standorte**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinrichtung \> Standorte**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie im Feld **Standort** einen Wert ein.
 1. Geben Sie im Feld **Name** einen Wert ein.
@@ -57,7 +56,7 @@ Das folgende Bild zeigt ein Beispiel für den Standort eines Lagerorts.
 
 Um einen Lagerort einzurichten, gehen Sie folgendermaßen vor:
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinrichtung \> Lagerorte**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinrichtung \> Lagerorte**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie im Feld **Lagerort** einen Wert ein.  Wenn es sich um eine 1:1-Zuordnung zu einem Geschäft handelt, sollten Sie den Namen des Geschäfts oder den Namen eines regionalen Vertriebszentrums verwenden.
 1. Geben Sie im Feld **Name** einen Wert ein.
@@ -71,7 +70,7 @@ Um einen Lagerort einzurichten, gehen Sie folgendermaßen vor:
 
 Gehen Sie zum Einrichten von Lagergängen folgendermaßen vor:
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinrichtung \> Standorteinrichtung \> Lagergänge**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinrichtung \> Standorteinrichtung \> Lagergänge**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. In der Dropdown-Liste **Lagerort** wählen Sie den zuvor erstellten Lagerort aus.
 1. Geben Sie im Feld **Gang** einen Namen ein (beispielsweise „Def”).
@@ -82,7 +81,7 @@ Gehen Sie zum Einrichten von Lagergängen folgendermaßen vor:
 
 Führen Sie die folgenden Schritte aus, um Lagerorte für Standard-, beschädigte und zurückgegebene Bestände einzurichten.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinrichtung \> Lagerorte**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinrichtung \> Lagerorte**.
 1. Wählen Sie den Lagerort aus, den Sie zuvor erstellt haben.
 1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
 1. Wählen Sie im Aktionsbereich **Lagerort** und dann **Standort des Lagerorts** aus.
@@ -110,7 +109,7 @@ Die folgende Abbildung zeigt eine Einrichtung eines Lagerort-Standorts in San Fr
 
 Führen Sie zum Abschließen der Einrichtung eines Lagerorts die folgenden Schritte aus.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinrichtung \> Lagerorte**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Kanaleinrichtung \> Lagerorte**.
 1. Wählen Sie den Lagerort aus, den Sie zuvor erstellt haben.
 1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
 1. Unter **Bestands- und Lagerortverwaltung**:
@@ -147,6 +146,3 @@ Das folgende Bild zeigt Details für einen konfigurierten Lagerort.
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

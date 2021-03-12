@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerParameters, LedgerFiscalCloseGroup, LedgerFiscalCloseAddLedger, SysLookupMultiSelectGrid, LedgerFiscalCloseRunGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 593ab5b45cc0c2e1a8b876aa89de014fd9df1a13
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b82cc7e4077a1bd50eab30f234c2f63c79e81d84
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443654"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994689"
 ---
 # <a name="close-the-fiscal-year"></a>Geschäftsjahr abschließen
 
@@ -83,6 +82,3 @@ Dieses Verfahren führt Sie durch den Jahresabschlussprozess, der Salden in ein 
 23. Die Standardwerte für den als Stapelverarbeitung auszuführenden Jahresabschluss. Es ist eine bewährte Verfahrensweise für Prozesse mit langer Laufzeit, diese im Stapelverarbeitungsmodus auszuführen. Dies ist in der Regel einer dieser Prozesse. Daher wird er standardmäßig im Stapelbearbeitungsmodus ausgeführt.  
 24. Klicken Sie auf **OK**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

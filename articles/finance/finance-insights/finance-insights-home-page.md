@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d7d167c4a8035231ea3c5630001d3aeccbcd7988
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 9920d24ea92196331ea318cab2f67501801937bd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644920"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995089"
 ---
 # <a name="finance-insights-home-page-preview"></a>Homepage zu Finance Insights (Vorschau)
 
@@ -67,7 +66,7 @@ Beispieldaten sind für Demosysteme verfügbar, die über den Contoso-Demo-Daten
 - Der Active Directory-Mandantenadministrator muss die AI Builder-Anwendung für den Zugriff auf den Data Lake autorisieren.
 - Die Funktion wird in Dynamics 365 aktiviert.
 
-Vertrautheit mit dem Erstellen und Verwalten von Ressourcen in Azure, Common Data Service und LCS sind hilfreich, wenn Sie diesen Vorgang abschließen.
+Vertrautheit mit dem Erstellen und Verwalten von Ressourcen in Azure, Microsoft Dataverse und LCS sind hilfreich, wenn Sie diesen Vorgang abschließen.
 
 ## <a name="configure-finance-insights"></a>Konfigurieren von Finance Insights
 
@@ -130,6 +129,3 @@ Bitte senden Sie eine E-Mail an [Debitorenzahlungseinblicke (Vorschau)](mailto:f
 ## <a name="privacy-notice"></a>Datenschutzhinweis
 
 Vorschauen (1) wenden möglicherweise weniger Datenschutz- und Sicherheitsmaßnahmen an als der Dynamics 365 Finance and Operations-Dienst, (2) sind nicht in der Service Level Agreement (SLA) für diesen Dienst enthalten, (3) sollten nicht zur Verarbeitung personenbezogener Daten oder anderer Daten verwendet werden, die gesetzlichen oder behördlichen Compliance-Anforderungen unterliegen, und (4) hat begrenzten Support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
