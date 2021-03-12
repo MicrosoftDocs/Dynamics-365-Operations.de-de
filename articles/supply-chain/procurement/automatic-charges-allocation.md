@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
+ms.openlocfilehash: 8067285237127bd43e8ff24166a15506cc0426f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429003"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983166"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatische Zuteilung von Gebühren
 
@@ -177,6 +176,3 @@ Das folgende Verfahren zeigt, wie einer Zeile Gebühren auf Kopfebene zugewiesen
         > Wenn Sie mit dem Raster **Wählen Sie Zeilen aus, die von der Zuordnung ausgeschlossen werden sollen** arbeiten, lassen Sie das Raster offen, bis Sie **Zuweisen** auswählen. Wenn Sie das Raster schließen, bevor Sie **Zuweisen** auswählen, gehen Ihre Einstellungen im Raster verloren. Daher werden Gebühren basierend auf den zuvor definierten Kriterien zugewiesen.
 
 1. Wählen Sie **Zuordnen**, um Ihre Einstellungen zu übernehmen und das Abfragedialogfeld zu schließen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

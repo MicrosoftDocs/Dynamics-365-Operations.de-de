@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: ac60bef797d8e0bbe0d20f1585d5c3c0163f8788
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0e580253de0d787b721c2f729ecc96db56b91af0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428469"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983014"
 ---
 # <a name="consolidate-shipments-manually-by-using-the-consolidate-shipments-page"></a>Lieferungen manuell auf der Seite zur Lieferungskonsolidierung konsolidieren
 
@@ -98,5 +97,3 @@ Führen Sie die folgenden Schritte aus, um jeden Auftrag, den Sie für dieses Sz
 
 - [Lieferungskonsolidierungsrichtlinien](about-shipment-consolidation-policies.md)
 - [Richtlinien zur Lieferungskonsolidierung konfigurieren](configure-shipment-consolidation-policies.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

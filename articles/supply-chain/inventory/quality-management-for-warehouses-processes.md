@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fd6b4b0c30a8a4cb36955e9b131c937c4db80772
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428979"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983724"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Qualitätsmanagement für Lagerortprozesse
 
@@ -622,6 +621,3 @@ Sie haben die Arbeits- und Ortsdaten für Lagerort 51 eingerichtet, um sicherzus
 
 > [!NOTE]
 > Ziehen Sie es in Betracht, den Eintrag für den Qualitätsausgang zu einem Menüpunkt für mobile Geräte hinzuzufügen, für den der Aktivitätscode *Offene Arbeitsliste anzeigen* lautet. Ein Beispiel stellt der Menüpunkt für mobile Geräte mit dem Namen **Arbeitsliste** in den Demodaten dar. Fügen Sie zuerst die Arbeitsklasse *Qualitätsprüfungsauftrag* zu einem benutzergesteuerten Menüpunkt hinzu, da diese Arbeitsklasse erforderlich ist, damit die Arbeit in der Arbeitsliste angezeigt wird. Fügen Sie die Arbeitsklasse *Qualitätsprüfungsauftrag* anschließend dem Menüpunkt **Arbeitsliste** hinzu. Benutzer, die Zugriff auf die Arbeitsliste haben, können dann die Arbeit auswählen und verarbeiten, die durch die Prüfung des Qualitätsprüfungsauftrags automatisch generiert wird.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

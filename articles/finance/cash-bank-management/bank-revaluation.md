@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f99a5ed82fd4d74a5d20620dbe19b4f18e332432
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5b7d2e33c1edb36227a76453d1981aec5babbf75
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443671"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985361"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank – Neubewertung der Fremdwährung
 
@@ -88,6 +87,3 @@ Die Buchung zur Neubewertung der Fremdwährung wird ebenfalls über die Dimensio
 Wenn Sie die Neubewertungsbuchung rückbuchen müssen, wählen Sie die Schaltfläche **Buchung stornieren** im Aktivitätsbereich auf der Seite **Neubewertung der Fremdwährung** aus. Es wird eine neue Neubewertung der Fremdwährung des historischen Datensatzes erstellt, um den historischen Audit-Trail zum Zeitpunkt der Ausführung oder Rückbuchung der Neubewertung zu erhalten.
 
 Um mehrere Neubewertungen rückzubuchen, müssen Sie die neueste Neubewertung zuerst zurückbuchen. Fahren Sie dann fort, um ältere Neubewertungen in Datumsreihenfolge umzukehren. Sie können dann neue Neubewertungen für die von Ihnen rückgebuchten Zeiträume verarbeiten.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

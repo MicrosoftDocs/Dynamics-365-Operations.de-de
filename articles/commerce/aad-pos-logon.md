@@ -10,17 +10,16 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 6946cb5f8bc8aa451f72d1eebcd324f408ad5f7a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6073a04814adf8237b4caa952b31b011f4b34bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412487"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982739"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Aktivieren Sie die Azure Active Directory-Authentifizierung für die POS-Anmeldung
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ Um Azure AD als Authentifizierungsmethode für die POS-Anmeldung für eine Filia
 
 Führen Sie die folgenden Schritte aus, um ein Funktionsprofil zu konfigurieren.
 
-1. Gehen Sie zu **Retail und Commerce** \> **Kanaleinrichtung** \> **POS-Einrichtung** \> **POS-Profile** \> **Funktionsprofile**.
+1. Gehen Sie zu **Einzelhandel und Handel** \> **Kanaleinrichtung** \> **POS-Einrichtung** \> **POS-Profile** \> **Funktionsprofile**.
 1. Wählen Sie das zu ändernde Funktionalitätsprofil aus.
 1. Ändern Sie auf der Registerkarte **Funktionen** im Abschnitt **POS-Personalanmeldung** den Wert des Feldes **Anmeldeauthentifizierungsmethode** von **Personal-ID und Passwort** auf **Azure Active Directory**.
 
@@ -74,6 +73,3 @@ Die Felder **Alias**, **UPN** und **Externer Sub-Identifikator** auf der Registe
 [Ein Einzelhandelsfunktionsprofil erstellen](retail-functionality-profile.md)
 
 [Eine Arbeitskraft konfigurieren](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

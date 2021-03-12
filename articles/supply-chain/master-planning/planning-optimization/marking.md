@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 99a52c03e519384955d68d7101a7b73b7e9a7af6
-ms.sourcegitcommit: fe21a3a98dcf6fe4eb9351941493f2c0443d8696
+ms.openlocfilehash: 236e1955dd80564e748aab1c595b017cb78e9418
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4672187"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983490"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Bestandskennzeichnung mit Planungsoptimierung
 
@@ -49,6 +48,3 @@ Wenn Sie einen Planauftrag umwandeln, bietet die Dialogbox **Umwandlung** ein Fe
 - **Nein** - Es wird keine Bestandsmarkierung angewendet.
 - **Standard** - Die Bestandsmarkierung wird entsprechend dem Bedarfsverursacher aktualisiert. Ein Bedarfsauftrag (Nachfrage) wird gegen einen Erfüllungsauftrag (Lieferung) markiert. Wenn eine bestimmte Menge auf dem Erfüllungsauftrag verbleibt, wird sie nicht markiert und die Referenzinformationen bleiben leer. Wenn z. B. ein Verkaufsauftrag über 100 ea gegen eine Einkaufsbestellung über 150 ea verrechnet wird, werden die Referenzinformationen nur dem Verkaufsauftrag zugewiesen.
 - **Erweitert** - Sowohl der Bedarfsauftrag (Nachfrage) als auch der Erfüllungsauftrag (Lieferung) werden markiert, unabhängig von der Menge, die auf dem Erfüllungsauftrag verbleibt. Wenn z. B. ein Verkaufsauftrag über 100 ea mit einer Einkaufsbestellung über 150 ea verrechnet wird, werden die Referenzinformationen sowohl dem Verkaufsauftrag als auch der Einkaufsbestellung zugewiesen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

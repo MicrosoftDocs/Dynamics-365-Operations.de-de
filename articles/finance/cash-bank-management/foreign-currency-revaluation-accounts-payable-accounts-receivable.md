@@ -1,5 +1,5 @@
 ---
-title: Neubewertung der Fremdwährung für Kreditoren und Debitoren
+title: Währungsneubewertung für Kreditoren- und Debitorenkonten
 description: Schwankungen in den Wechselkursen sorgen langfristig für Veränderungen im theoretischen Wert (Buchwert) offener Buchungen in Fremdwährungen. Dieser Artikel gibt Informationen zum Prozess der Neubewertung der Fremdwährung, der ausgeführt wird, um den Wert offener Buchungen in "Kreditoren" und "Debitoren" zu aktualisieren.
 author: kweekley
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14211
 ms.assetid: defb1ea5-1f3e-4859-87d8-3f9954d3f388
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb7a101fa9ef84ec3873bcd8054b8198db8d58c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec17572612da7152ca0737cbd9f327d29dc54f8c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443713"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985236"
 ---
-# <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Neubewertung der Fremdwährung für Kreditoren und Debitoren
+# <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Währungsneubewertung für Kreditoren- und Debitorenkonten
 
 [!include [banner](../includes/banner.md)]
 
@@ -66,6 +65,3 @@ Jedes Mal, wenn Sie eine Neubewertung der Fremdwährung ausführen, wird ein Dat
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

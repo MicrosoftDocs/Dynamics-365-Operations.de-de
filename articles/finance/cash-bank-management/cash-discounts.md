@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CashDisc
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3741
 ms.assetid: c25f9d85-2702-46aa-8e61-0b4886e069b3
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 139fb4fdb7d4f8034bff5e9668dc794f29fb327e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9d4f6d5bdf4f2fdc4529d9f51515ed2ac4b5b3b5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443717"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985311"
 ---
 # <a name="cash-discounts"></a>Skonti
 
@@ -64,8 +63,5 @@ Die Buchhaltungswährung der juristischen Person ist EUR, und für US-Dollar sin
 Eine Rechnung in Höhe von 1.000 US-Dollar mit den Skontobedingungen von 20D2% wird am 15. Februar gebucht. Der Rechnungsbetrag in der Buchhaltungswährung beträgt 1.100 EUR. Eine Zahlung in Höhe von 980 US-Dollar wird mit der Rechnung vom 1. März ausgeglichen. Der Skontobetrag ist 20 US-Dollar. Der Zahlungsbetrag in der Buchhaltungswährung ist 784 EUR. Der Buchhaltungswährungsbetrag des Skontos wird mit dem Wechselkurs am 1. März berechnet: 20 \* 80 / 100 = 16 EUR.
 
 > [!NOTE]
-> Wenn die Option "Skonti für Teilzahlungen berechnen" auf der Debitorenparameter- oder Kreditorenparameterseite aktiviert ist, wird der Wechselkurs, der am Tag der jeweiligen Teilzahlung gültig ist, verwendet. 
+> Wenn die Option „Skonti für Teilzahlungen berechnen“ auf der Debitorenparameter- oder Kreditorenparameterseite aktiviert ist, wird der Wechselkurs, der am Tag der jeweiligen Teilzahlung gültig ist, verwendet. 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
