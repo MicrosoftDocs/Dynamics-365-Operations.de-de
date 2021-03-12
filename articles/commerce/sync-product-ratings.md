@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dec87b548f3a218e1f833b752305f373e893b14c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a7318d53535a93352425f811ec90572e65aeb696
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412632"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006284"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronisieren von Produktbewertungen in Dynamics 365 Commerce
 
@@ -50,14 +49,14 @@ In diesem Thema werden folgende Aufgaben beschrieben:
 
 Um den Commerce-Planer zu initialisieren, führen Sie die folgenden Schritte aus:
 
-1. Gehen Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Commerce-Planer \> Commerce-Planer initialisieren**. Suchen Sie alternativ nach „Commerce-Planer initialisieren“.
+1. Gehen Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Commerce-Planer \> Commerce-Planer initialisieren**. Suchen Sie alternativ nach „Commerce-Planer initialisieren“.
 1. Stellen Sie im Dialogfeld **Commerce-Planer initialisieren** sicher, dass die Option **Vorhandene Konfiguration löschen** auf **Nein** gesetzt ist, und wählen Sie dann **OK** aus.
 
 ### <a name="verify-the-retailproductrating-subjob"></a>Den Unterauftrag RetailProductRating prüfen
 
 Um sicherzustellen, dass der Unterauftrag **RetailProductRating** vorhanden ist, befolgen Sie diese Schritte.
 
-1. Gehen Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Commerce-Planer \> Planer-Unteraufträge**. Suchen Sie alternativ nach „Steuerprogrammunteraufträge“.
+1. Gehen Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Commerce-Planer \> Planer-Unteraufträge**. Suchen Sie alternativ nach „Steuerprogrammunteraufträge“.
 1. Finden oder suchen Sie in der Unterauftragsliste den Unterauftrag **RetailProductRating**.
 
 Die folgende Abbildung zeigt ein Beispiel der Seite Unterauftragsdetails in Commerce.
@@ -67,7 +66,7 @@ Die folgende Abbildung zeigt ein Beispiel der Seite Unterauftragsdetails in Comm
 > [!NOTE]
 > Wenn Sie den Unterauftrag **RetailProductRating** nicht finden, haben Sie vielleicht den Auftrag **Synchronisieren von Produktbewertungen** und den Auftrag **1040 CDX** ausgeführt, bevor Sie den Commerce-Planer initialisiert haben. Befolgen Sie in diesem Fall die Schritte, um den Auftrag **Vollständige Datensynchronisierung** auszuführen.
 
-> 1. Gehen Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Commerce-Planer \> Kanaldatenbank**. Suchen Sie alternativ nach „Kanaldatenbank“.
+> 1. Gehen Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Commerce-Planer \> Kanaldatenbank**. Suchen Sie alternativ nach „Kanaldatenbank“.
 > 1. Wählen Sie die zu synchronisierende Kanaldatenbank aus.
 > 1. Wählen Sie **Vollständige Datensynchronisierung** im Aktivitätsbereich aus.
 > 1. Wählen Sie im Dropdown-Dialogfeld **Vertriebsplan auswählen** die Option **1040 - Produkte** und dann **OK** aus.
@@ -77,7 +76,7 @@ Die folgende Abbildung zeigt ein Beispiel der Seite Unterauftragsdetails in Comm
 
 Führen Sie die folgenden Schritte aus, um Produktbewertungen aus dem Bewertungs- und Überprüfungsdienst in Commerce zu importieren.
 
-1. Navigieren Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Commerce-Planer \> Produktbewertungsauftrag synchronisieren**. Suchen Sie alternativ nach „Produktbewertungsauftrag synchronisieren“.
+1. Navigieren Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Commerce-Planer \> Produktbewertungsauftrag synchronisieren**. Suchen Sie alternativ nach „Produktbewertungsauftrag synchronisieren“.
 1. Wählen Sie im Dialogfeld **Produktbewertungen** auf dem Inforegister **Im Hintergrund ausführen** die Option **Wiederholung** aus.
 1. Legen Sie im Dialogfeld **Wiederholung definieren** ein Wiederholungsmuster fest. (Der empfohlene Wert beträgt zwei Stunden.) Planen Sie keine Wiederholung, die kürzer als eine Stunde ist.
 1. Wählen Sie **OK**.
@@ -92,7 +91,7 @@ Die folgende Abbildung zeigt ein Beispiel der Batchauftragskonfiguration in Comm
 
 Um sicherzustellen, dass der Batchauftrag **Produktbewertungen synchronisieren** erfolgreich war, befolgen Sie diese Schritte.
 
-1. Navigieren Sie zu **Retail und Commerce \> Systemadministrator \> Abfragen \> Batchaufträge** oder bei Verwendung einer Commerce-Lagermengeneinheit stattdessen zu **Retail und Commerce \> Abfragen und Berichte \> Batchaufträge**. Suchen Sie alternativ nach „Batchaufträge“.
+1. Navigieren Sie zu **Einzelhandel und Handel \> Systemadministrator \> Abfragen \> Batchaufträge** oder bei Verwendung einer Commerce-Lagermengeneinheit stattdessen zu **Einzelhandel und Handel \> Abfragen und Berichte \> Batchaufträge**. Suchen Sie alternativ nach „Batchaufträge“.
 1. Um die Details des Batchauftrags in der Batchauftragsliste anzuzeigen, suchen Sie in der Spalte **Auftragsbeschreibung** nach einer Beschreibung mit „Produktbewertungen abrufen“.
 1. Wählen Sie die Auftrags-ID aus, um die Details des Batchauftrags anzuzeigen, z. B. das geplante Startdatum/die geplante Startzeit und den Wiederholungstext.
 
@@ -106,11 +105,11 @@ Die Bewertungs- und Prüfungslösung in Dynamics 365 Commerce ist eine Mehrkanal
 
 Gehen Sie folgendermaßen vor, um Produktbewertungen am POS zu aktivieren.
 
-1. Gehen Sie zu **Retail und Commerce \> Commerce-Einrichtung \> Parameter \> Commerce-Parameter**. Suchen Sie alternativ nach „Commerce-Parametern“.
+1. Gehen Sie zu **Einzelhandel und Handel \> Commerce-Einrichtung \> Parameter \> Commerce-Parameter**. Suchen Sie alternativ nach „Commerce-Parametern“.
 1. Wählen Sie auf der Registerkarte **Konfigurationsparameter** die Option **Neu** aus.
 1. Geben Sie einen Namen, wie **RatingsAndReviews.EnableProductRatingsForRetailStores**, ein, und setzen Sie den Wert auf **true**.
 1. Wählen Sie **Speichern**.
-1. Gehen Sie zu **Retail und Commerce \> Retail und Commerce IT \> Vertriebsplan**. Suchen Sie alternativ nach „Vertriebsplan“.
+1. Gehen Sie zu **Einzelhandel und Handel \> Einzelhandel und Handel IT \> Vertriebsplan**. Suchen Sie alternativ nach „Vertriebsplan“.
 1. Wählen Sie in der Auftragsliste **1110** (**globale Konfiguration**) und dann **Jetzt ausführen** aus.
 1. Überprüfen Sie nach erfolgreicher Ausführung des Auftrags, ob die Produktbewertungen jetzt am POS angezeigt werden.
 
@@ -135,6 +134,3 @@ Die folgende Abbildung zeigt ein Beispiel für Produktbewertungen in Callcenter-
 [Verwalten von Bewertungen und Prüfungen](manage-reviews.md)
 
 [Konfigurieren von Bewertungen und Prüfungen](configure-ratings-reviews.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

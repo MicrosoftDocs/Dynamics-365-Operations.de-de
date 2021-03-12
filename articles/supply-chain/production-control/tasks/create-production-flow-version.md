@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d513e6898827de9a3fb1ed59006b817fb9006019
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 115463c57b28e681d4c6bdc227e35272861779aa
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428419"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006915"
 ---
 # <a name="create-a-production-flow-version"></a>Eine Produktionsflussversion erstellen
 
@@ -64,6 +63,3 @@ Ziel dieser Prozedur ist es, eine neue Produktionsflussversion zu erstellen. Fü
     * Geben Sie die Anzahl von Tagen der Periode für tatsächliche Zykluszeit an. Die Periode für tatsächliche Zykluszeit ist die Anzahl der Tage, in denen Einzelvorgänge ab der tatsächlichen Minute rückwärts erfasst werden, um die tatsächliche Zykluszeit zu berechnen. Der Wert kann jederzeit geändert werden und wird nur für die Berechnung der tatsächlichen Zykluszeiten verwendet.  
 13. Klicken Sie auf "Speichern".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

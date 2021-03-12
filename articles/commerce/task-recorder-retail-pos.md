@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ab8456d81fbe2dca495b65b932395572242a25c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b0a5ca1e116e931ba992eab51a06dae9fdf92756
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412626"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006134"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Aufgabenaufzeichnung und Hilfe für Retail Modern POS (MPOS) und Cloud POS
 
@@ -34,7 +33,7 @@ In diesem Thema wird beschrieben, wie Aufgabenaufzeichnung in Retail Modern POS 
 
 ## <a name="overview"></a>Übersicht
 
-Aufgabenaufzeichnung in Retail Modern POS oder Cloud POS ist eine neue Lösung, die mit einem Fokus auf hoher Reaktionsfähigkeit erstellt wurde. Sie bietet eine flexible Anwendungsprogrammierschnittstelle (API) zur Erweiterbarkeit und nahtlosen Integration mit Debitoren von Geschäftsprozessaufzeichnungen. Darüber hinaus ist die Integration der Aufgabenaufzeichnung im Tool Geschäftsprozessmodellierer (BPM) in Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) vorverlegt worden. Daher können Benutzer weiterhin erweiterte Geschäftsprozessdiagramm aus Aufzeichnungen erstellen, um ihre Anwendungen zu analysieren und zu entwerfen.
+Die Aufgabenaufzeichnung in Retail Modern POS oder Cloud POS ist eine neue Lösung, die mit einem Fokus auf hoher Reaktionsfähigkeit erstellt wurde. Sie bietet eine flexible Anwendungsprogrammierschnittstelle (API) zur Erweiterbarkeit und nahtlosen Integration mit Debitoren von Geschäftsprozessaufzeichnungen. Darüber hinaus ist die Integration der Aufgabenaufzeichnung im Tool Geschäftsprozessmodellierer (BPM) in Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) vorverlegt worden. Daher können Benutzer weiterhin erweiterte Geschäftsprozessdiagramm aus Aufzeichnungen erstellen, um ihre Anwendungen zu analysieren und zu entwerfen.
 
 ## <a name="architecture"></a>Architektur
 
@@ -44,7 +43,7 @@ Aufgabenaufzeichnung kann Benutzeraktionen im Client mit exakter Genauigkeit erf
 
 Um die Aufgabenaufzeichnung in POS zu aktivieren, folgen Sie diesen Schritten.
 
-1. Klicken Sie auf **Retail und Commerce** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **Register**.
+1. Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **Register**.
 2. Klicken Sie auf das Register, damit dafür die Aufgabenaufzeichnung aktiviert wird.
 3. Legen Sie auf der Registerkarte **Erfassen** im Inforegister **Allgemein** die Option **Aufgabenaufzeichnung aktivieren** auf **Ja** fest.
 4. Klicken Sie auf **Speichern**.
@@ -56,7 +55,7 @@ Um die Aufgabenaufzeichnung in POS zu aktivieren, folgen Sie diesen Schritten.
 Gehen Sie folgendermaßen vor, um eine neue Erfassung mithilfe der Aufgabenaufzeichnung zu erstellen.
 
 1. Starten Sie Retail Modern POS oder Cloud POS, und melden Sie sich an.
-2. Auf der Seite **Einstellungen** im Abschnitt **Aufgabenaufzeichnung** klicken Sie auf **Aufgabenaufzeichnung öffnen**. Der Bereich **Aufgabenaufzeichnung** wird angezeigt. Sie können auf die Schaltfläche **Schließen** (**X**) in der oberen rechten Ecke klicken, um den Bereich **Aufgabenaufzeichnung** zu schließen, bevor Sie eine neue Aufzeichnung beginnen. Um den Bereich erneut zu öffnen, wiederholen Sie Schritt 2.
+2. Auf der Seite **Einstellungen** im Abschnitt **Aufgabenaufzeichnung** klicken Sie auf **Aufgabenaufzeichnung öffnen**. Der Bereich **Aufgabenaufzeichnung** wird angezeigt. Sie können auf die Schaltfläche **Schließen** (**X**) in der oberen rechten Ecke klicken, um den Bereich **Aufgabenaufzeichnung** zu schließen, bevor Sie eine neue Aufzeichnung beginnen. Wiederholen Sie Schritt 2, um den Bereich erneut zu öffnen.
 
     [![Aufgabenaufzeichnungsbereich](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
@@ -146,6 +145,3 @@ Wenn Sie auf einen Aufgabenleitfaden in den Suchergebnissen klicken, können Sie
 
 > [!NOTE]
 > Hilfe in modernem Retail Modern POS und Cloud POS zeigt Aufgabenleitfäden nicht entsprechend der Form oder dem Arbeitsgang an, bei dem Sie sich befinden. Sie müssen den Prozeßnamen im Suchfeld eingeben und dann **Suchen** klicken.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

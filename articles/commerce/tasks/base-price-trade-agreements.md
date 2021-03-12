@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: PriceDiscGroup, RetailStoreTable, RetailChannelPriceGroup, EcoResProductDetailsExtended, PriceDiscAdmTable, PriceDiscAdm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: db3a91807c0cfb51426c03eeaf7785168e6ad0de
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412625"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006057"
 ---
 # <a name="base-price-and-trade-agreements"></a> Basispreis und Handelsvereinbarungen
 
@@ -30,13 +29,13 @@ ms.locfileid: "4412625"
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen von kanalspezifischen Verkaufspreis-Handelsvereinbarungen. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 
-1. Gehen Sie im **Navigationsbereich** Sie zu **Module > Retail und Commerce > Verwaltung von Preisen und Rabatten > Preisgruppen > Alle Preisgruppen**. Preisgruppen zeigen an, wie Handelsvereinbarungen bestimmten Kanälen zugewiesen sind. Das Verwenden von Preisgruppen, um Handelsvereinbarungen zu einem Kanal zuzuweisen, aktiviert die kanalspezifische Preisgestaltung.  
+1. Gehen Sie im **Navigationsbereich** Sie zu **Module > Einzelhandel und Handel > Verwaltung von Preisen und Rabatten > Preisgruppen > Alle Preisgruppen**. Preisgruppen zeigen an, wie Handelsvereinbarungen bestimmten Kanälen zugewiesen sind. Das Verwenden von Preisgruppen, um Handelsvereinbarungen zu einem Kanal zuzuweisen, aktiviert die kanalspezifische Preisgestaltung.  
 2. Klicken Sie auf **Neu**.
 3. Geben Sie im Feld **Preisgruppen** einen Wert ein.
 4. Geben Sie im Feld **Name** einen Wert ein.
 5. Klicken Sie auf **Speichern**.
 6. Schließen Sie die Seite.
-7. Gehen Sie im **Navigationsbereich** zu **Module > Retail und Commerce > Kanäle > Geschäfte > Alle Geschäfte**.
+7. Gehen Sie im **Navigationsbereich** zu **Module > Einzelhandel und Handel > Kanäle > Geschäfte > Alle Geschäfte**.
 8. Wählen Sie in der Liste "New York" aus
 9. Klicken Sie im Aktivitätsbereich auf **Shop**.
 10. Klicken Sie auf **Preisgruppen**.
@@ -46,7 +45,7 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen von kanalspez
 14. Klicken Sie auf **Speichern**.
 15. Schließen Sie die Seite.
 16. Schließen Sie die Seite.
-17. Gehen Sie im **Navigationsbereich** zu **Module > Retail und Commerce > Produkte und Kategorien > Freigegebene Produkte nach Kategorie**.
+17. Gehen Sie im **Navigationsbereich** zu **Module > Einzelhandel und Handel > Produkte und Kategorien > Freigegebene Produkte nach Kategorie**.
 18. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 19. Klicken Sie auf **Bearbeiten**.
 20. Erweitern Sie das Inforegister **Verkaufen**.
@@ -70,6 +69,3 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen von kanalspez
 38. Klicken Sie im Aktivitätsbereich auf **Verkaufen**.
 39. Klicken Sie auf **Verkaufspreis**.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

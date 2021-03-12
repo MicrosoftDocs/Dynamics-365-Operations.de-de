@@ -10,18 +10,17 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: cc685fcd584fe2ab5cd9282e8fbefbd284d5b2a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 889cc90b534de33ccd0e2bea367b2da42b5d72e0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412627"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006184"
 ---
 # <a name="task-management-in-pos"></a>Aufgabenverwaltung in POS
 
@@ -64,6 +63,3 @@ Die folgende Abbildung zeigt die Registerkarte **Aufgabenlisten**.
 [Aufgabenlisten erstellen und Aufgaben hinzufügen](task-mgmt-create-lists.md)
 
 [Arbeitspläne den Filialen oder Mitarbeitern zuweisen](task-mgmt-assign-lists.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
