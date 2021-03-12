@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals
 audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9aa353ad771844abc0860f06d9bc22b9f4adce92
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8bb4c7a542106161f8bc1b8db0976c24faebf907
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428507"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974809"
 ---
 # <a name="create-sales-orders"></a>Aufträge erstellen
 
@@ -39,7 +38,7 @@ Diese Prozedur zeigt Ihnen, wie ein Auftrag erstellt wird. Sie können diese Pro
 
 ## <a name="enter-sales-order-line-details"></a>Auftragspositionsdetails eingeben
     
-Die Produkte, die von Ihrer Organisation verkauft werden, sind möglicherweise in verschiedenen Varianten nach Dimensionen, wie Konfiguration, Farbe, Größe und Stil, erhältlich. Zudem können Produkte so eingerichtet werden, dass sie Lagerdimensionen, wie Standort, Lagerort und Palette sowie Regallagerdimensionen, wie Charge und Seriennummern, verwenden. Wenn diese Dimensionen zugeordnet werden, müssen Sie die Werte für diese Dimensionen in der Auftragsposition auswählen. Um die Effizienz bei der Auftragserfassung zu verbessern, sollten Sie die jeweiligen Dimensionsfelder dem Auftragsraster hinzufügen.
+Die Produkte, die von Ihrer Organisation verkauft werden, sind möglicherweise in verschiedenen Varianten nach Dimensionen, wie Konfiguration, Farbe, Größe und Stil, erhältlich. Zudem können Produkte so eingerichtet werden, dass sie Lagerdimensionen, wie Standort, Lagerort und Palette sowie Rückverfolgungsangaben, wie Charge und Seriennummern, verwenden. Wenn diese Dimensionen zugeordnet werden, müssen Sie die Werte für diese Dimensionen in der Auftragsposition auswählen. Um die Effizienz bei der Auftragserfassung zu verbessern, sollten Sie die jeweiligen Dimensionsfelder dem Auftragsraster hinzufügen.
     
 1. Unter dem Abschnitt **Auftragspositionen** wählen Sie die **Auftragspositionszeile** aus.
 2. Wählen Sie **Dimensionen** aus.
@@ -68,6 +67,3 @@ Die Produkte, die von Ihrer Organisation verkauft werden, sind möglicherweise i
     Die Seite **Summen** zeigt Details zum gesamten Auftrag an. Dazu zählt der Zwischensummenbetrag, der eine Summe aller Positionsnettobeträge ist, angepasst um spätere Positionsrabatte, den Gesamtrechnungsbetrag, der ein um spätere Rabatte auf Auftragsebene angepasster Zwischensummenbetrag ist, Belastungen und Mehrwertsteuer, die Debitorenkreditlimitsituation, usw. Der Rechnungsbetrag ist der Betrag, der auf dem Rechnungsdokument des Debitors angezeigt wird.  
     
 3. Wählen Sie **OK**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Ledger
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 929ab7ae66a217de836ce49373faed76325c4d3a
-ms.sourcegitcommit: ac0a676c91e3053ad7f9432d576c9af3ff98a99a
+ms.openlocfilehash: 5a7fcda435fd957edbbe09d796685c0c742dc6a8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "4443792"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975815"
 ---
 # <a name="configure-ledgers"></a>Sachkonten konfigurieren
 
@@ -82,6 +81,3 @@ Wenn Sie zwei Währungen oder eine einzige Währung verwenden, Transaktionen jed
 Realisierte Gewinne und Verluste sind Gewinne und Verluste aus abgeschlossenen Transaktionen. Sie werden in der Gewinn- und Verlustrechnung erfasst. Nicht realisierte Gewinne und Verluste sind Gewinne und Verluste, die eingetreten sind, aber die Transaktion ist noch nicht abgeschlossen. Mit anderen Worten, Sie haben beispielsweise eine Rechnung gebucht, aber die Rechnung ist noch nicht beglichen und bezahlt. Nicht realisierte Gewinne und Verluste werden in der Bilanz erfasst.
 
 Weitere Informationen darüber, wie Sie zwei Währungen verwenden, finden Sie unter [Duale Währung](dual-currency.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

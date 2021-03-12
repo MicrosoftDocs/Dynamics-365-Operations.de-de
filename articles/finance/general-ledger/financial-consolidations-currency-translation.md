@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c4561a1193971b131ab2b6c8d64f848d8155c1fc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443692"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975763"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Finanzielle Konsolidierungen und Währungsumrechnung – Übersicht
 
@@ -125,7 +124,7 @@ Sie können das Datum festlegen, ab dem die Löschungsregel gültig ist und das 
 
 Nachdem Sie die Grundlagen definiert haben, können Sie die tatsächlichen Verarbeitungsregeln definieren, indem Sie **Positionen** anklicken. Es gibt zwei Optionen für Löschungen, nämlich den Nettoveränderungsbetrag eliminieren oder einen festen Betrag definieren.
 
-Wählen Sie das Quellkonto aus. Sie können Platzhalterzeichen wie Sternchen (\*) verwenden. Beispielsweise wählt **1\*** alle Konten aus, die mit **1** als Quelle für die Zuordnung der Daten beginnen.
+Wählen Sie das Quellkonto aus. Sie können Platzhalterzeichen wie Sternchen (\*) verwenden. Beispielsweise wählt **1\**_alle Konten aus, die mit einer_* 1** als Quelle für die Zuordnung der Daten beginnen.
 
 Nachdem Sie Ihre Quellkonten ausgewählt haben, bestimmen die **Kontospezifikation** das Konto vom Zielunternehmen, das verwendet wird. Wählen Sie **Quelle** aus, wenn Sie dasselbe Hauptkonto verwendet werden soll, das im Konto Quelle definiert ist. Wenn Sie **Benutzerdefiniert** auswählen, dann müssen Sie ein Zielkonto angeben.
 
@@ -182,6 +181,3 @@ Nachfolgend sind einige der Konsolidierungsszenarien, die Finanzberichterstattun
 
 ## <a name="generating-consolidated-financial-statements"></a>Konsolidierte Finanzaufstellungen erstellen
 Informationen zum Szenarien, in denen Sie möglicherweise Finanzaufstellungen generieren können, finden Sie unter [Konsolidierte Finanzaufstellungen erstellen](./generating-consolidated-financial-statements.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

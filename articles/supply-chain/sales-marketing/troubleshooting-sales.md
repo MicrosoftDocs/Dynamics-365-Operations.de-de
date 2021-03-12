@@ -8,10 +8,9 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SalesTable, SalesTableListPage
+ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 6e51723915892f465ce09d09ee9ed622bab9451e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c9a5b7a5e8cac7f8816233dd2d7ff1a7f84ea480
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428660"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974784"
 ---
 # <a name="troubleshoot-sales-orders"></a>Fehlerbehebung bei Aufträgen
 
@@ -59,6 +58,8 @@ Sie können einer Bestellung auf Grundlage eines Auftrags erstellen. Weitere Inf
 Sie können nur Aufträge und Rücklieferungsaufträge stornieren, die sich im *Erstellt*-Zustand befinden. Weitere Informationen finden Sie unter [Stornieren einer Rücklieferung](../service-management/cancel-return-order.md).
 
 ## <a name="when-i-try-to-cancel-a-sales-order-i-receive-a-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations-error"></a>Wenn ich versuche, einen Auftrag zu stornieren, wird der Fehler „Reservierungen können nicht entfernt werden, da Arbeiten erstellt wurden, die auf den Reservierungen beruhen“ angezeigt.
+
+Fehlercode: WAX4661
 
 Wenn einem Auftrag eine Arbeit zugeordnet ist, können Sie den Auftrag erst stornieren, wenn die Arbeit storniert und entfernt wurde. Diese Anforderung gilt auch dann, wenn die mit dem Auftrag verbundene Arbeit abgeschlossen ist.
 
@@ -108,9 +109,6 @@ Supply Chain Management unterstützt derzeit die Berechnung von Provisionen für
 
 ## <a name="a-bundle-item-isnt-supported-in-an-intercompany-process"></a>Ein Bündelartikel wird in einem Intercompany-Prozess nicht unterstützt.
 
-Der Bündelartikel ist für die Bestellung nicht verfügbar, da Sie bei Prüfung der Auftragspositionen für den Bündelartikel feststellen, dass die Menge *0* (Null) und der Status *Storniert* ist. Dieses Verhalten ist beabsichtigt. Der Auftrag kauft nur die Komponenten des Bündelartikels. Der Bündelartikel selbst wird nicht gekauft.
+Der Bündelartikel ist für die Bestellung nicht verfügbar, da Sie bei Prüfung der Auftragspositionen für den Bündelartikel feststellen werden, dass die Menge *0* (Null) und der Status *Storniert* ist. Dieses Verhalten ist beabsichtigt. Der Auftrag kauft nur die Komponenten des Bündelartikels. Der Bündelartikel selbst wird nicht gekauft.
 
-Wenn Sie ein Bündel kaufen müssen, prüfen Sie, ob Sie ihn als Bündelartikel markieren müssen, da diese Funktionalität tatsächlich für Szenarien zur Umsatzrealisierung konzipiert ist. Weitere Informationen zu Bündelartikeln finden Sie unter [Bündel](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Wenn Sie ein Bündel kaufen müssen, prüfen Sie, ob Sie es als Bündelartikel markieren müssen, da diese Funktion für Szenarien zur Umsatzrealisierung konzipiert ist. Weitere Informationen zu Bündelartikeln finden Sie unter [Bündel](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,16 +18,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3eaa25f0befcff448250ba2cce8e568fa4a4c707
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ddc6159480d1ff9fb823dbd95465c991ae51f9c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428897"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974984"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synchronisieren von Aufträgen direkt zwischen Sales und Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Synchronisierung von Auträgen direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management auszuführen.
 
@@ -64,8 +65,8 @@ Die folgenden Synchronisierungsaufgaben sind erforderlich, bevor die Synchronisi
 
 | Lieferkettenverwaltung  | Verk.             |
 |-------------------------|-------------------|
-| Auftragskopfzeilen CDS | SalesOrders       |
-| CDS-Auftragspositionen   | SalesOrderDetails |
+| Dataverse-Auftragskopfzeilen | SalesOrders       |
+| Dataverse-Auftragspositionen   | SalesOrderDetails |
 
 ## <a name="entity-flow"></a>Entitätsfluss
 
@@ -75,7 +76,7 @@ Sie müssen keine Aufträge in Sales erstellen. Sie können neue Aufträge im Be
 
 In Supply Chain Management helfen Filter in der Vorlage, sicherzustellen, dass nur relevante Aufträge in die Synchronisierung einfließen:
 
-- Sowohl der Bestellungskunde als auch der Rechnungsdebitor auf dem Auftrag, der aus Sales stammt, werden in die Synchronisierung einbezogen. In Supply Chain Management werden die Felder **OrderingCustomerIsExternallyMaintained** und **InvoiceCustomerIsExternallyMaintained** verwendet, um Aufträge aus den Datenentitäten zu filtern.
+- Sowohl der Bestellungskunde als auch der Rechnungsdebitor auf dem Auftrag, der aus Sales stammt, werden in die Synchronisierung einbezogen. In Supply Chain Management werden die Spalten **OrderingCustomerIsExternallyMaintained** und **InvoiceCustomerIsExternallyMaintained** verwendet, um Aufträge aus den Datenspalten zu filtern.
 - Der Auftrag in Supply Chain Management muss bestätigt werden. Nur bestätigte Aufträge oder Aufträge mit fortgeschrittenem Verarbeitungsstatus (beispielsweise **Versendet** oder **Fakturiert**) werden mit Sales synchronisiert.
 - Nach dem Erstellen oder Ändern eines Auftrags, muss der Stapelverarbeitungsauftrag **Verkaufssummen berechnen** aus Supply Chain Management ausgeführt werden. Nur Aufträge, bei denen Auftragssummen berechnet wurden, werden mit Sales synchronisiert.
 
@@ -103,10 +104,10 @@ Wenn eine Auftragsposition von Sales zu Supply Chain Management synchronisiert w
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Prospect to Cash-Lösung für Sales
 
-Neue Felder wurden der Entität **Auftrag** hinzugefügt und auf der Seite angezeigt:
+Neue Spalten wurden der Tabelle **Auftrag** hinzugefügt und werden auf der Seite angezeigt:
 
 - **Wird extern verwaltet** – Auf **Ja** setzen, wenn der Auftrag aus Supply Chain Management stammt.
-- **Verarbeitungsstatus** – Wird verwendet, um den Verarbeitungsstatus des Auftrags in Supply Chain Management anzuzeigen. Folgende Werte sind verfügbar:
+- **Verarbeitungsstatus** – Diese Spalte zeigt den Verarbeitungsstatus des Auftrags in Supply Chain Management an. Folgende Werte sind verfügbar:
 
     - **Entwurf** – Der anfängliche Status, wenn der erstmals Auftrag in Sales erstellt wird. In Sales können nur Aufträge mit diesem Bearbeitungsstatus bearbeitet werden.
     - **Aktiv** – Der Status wird nach dem Auftrag in Sales mithilfe der Schaltfläche **Aktivieren** in Sales aktiviert.
@@ -141,7 +142,7 @@ Vor dem Synchronisieren von Aufträgen müssen die Systeme mit den folgenden Ein
 - Gehen Sie zu &gt; Sie **Einstellungen** **Verwaltung** &gt; **Systemeinstellungen** &gt; **Sales** zu öffnen, und überprüfen Sie, ob die folgenden Einstellungen verwendet werden:
 
     - Die Option **Systempreisberechnungssystem verwenden** wird auf **Ja** festgelegt.
-    - Das Feld **Rabattberechnungsmethode** wird auf **Positionsartikel** festgelegt.
+    - Die Spalte **Rabattberechnungsmethode** wird auf **Positionsartikel** festgelegt.
 
 ### <a name="setup-in-supply-chain-management"></a>Einrichtung in Supply Chain Management
 
@@ -151,11 +152,11 @@ Wenn Sie auch Arbeitsauftragsintegration verwenden, müssen Sie die Auftragsgrun
 
 1. Wechseln Sie zu **Vertrieb und Marketing** \> **Setup** \> **Aufträge** \> **Auftragsgrundlage**.
 2. Wählen Sie **Neu** aus, um einen neuen Auftragsgrundlage zu erstellen.
-3. Geben Sie im Feld **Auftragsgrundlage** einen Namen für den Auftragsgrundlage ein, wie beispielsweise **SalesOrder**.
-4. Geben Sie im Feld **Beschreibung** eine Beschreibung ein, wie beispielsweise **Auftrag aus Verkauf**.
+3. Geben Sie in die Spalte **Auftragsgrundlage** einen Namen für den Auftragsursprung ein, z. B. **SalesOrder**.
+4. Geben Sie in die Spalte **Beschreibung** eine Beschreibung ein, z. B. **Auftrag aus Sales**.
 5. Aktivieren Sie das Kontrollkästchen **Ursprungstypzuweisung**.
-6. Legen Sie das Feld **Auftragsgrundlagentyp** auf **Auftragsintegration** fest.
-7. Wählen Sie **Speichern**.
+6. Legen Sie die Spalte **Auftragsursprungstyp** auf **Auftragsintegration** fest.
+7. Wählen Sie **Speichern** aus.
 
 ### <a name="setup-in-the-sales-orders-sales-to-supply-chain-management---direct-data-integration-project"></a>Einstellungen in Aufträgen (Sales zu Supply Chain Management) - direktes Datenenintegrationsprojekt
 
@@ -181,12 +182,12 @@ Wenn Sie auch Arbeitsauftragsintegration verwenden, müssen Sie die Auftragsgrun
 ## <a name="template-mapping-in-data-integration"></a>Vorlagenzuordnung in Datenintegration
 
 > [!NOTE]
-> Die Felder **Zahlungsbedingungen**, **Frachtkonditionen**, **Lieferbedingungen**, **Liefermethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Feldern zuzuordnen, müssen Sie eine Wertzuordnung einrichten, die spezifisch für die Daten in den Organisationen ist, zwischen denen die Entität synchronisiert wird.
+> Die Spalten **Zahlungsbedingungen**, **Frachtkonditionen**, **Lieferbedingungen**, **Versandmethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Spalten zuzuordnen, müssen Sie eine Wertzuordnung einrichten, die für die Daten in den Organisationen, zwischen denen die Tabelle synchronisiert wird, spezifisch ist.
 
 Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Datenintegration.
 
 > [!NOTE]
-> Die Zuordnung zeigt, welche Feldinformationen von Sales zu Supply Chain Management synchronisiert werden oder von Supply Chain Management zu Sales.
+> Die Zuordnung zeigt, welche Spalteninformationen von Sales zu Supply Chain Management synchronisiert werden oder von Supply Chain Management zu Sales.
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Aufträge (Supply Chain Management zu Sales) – Direkt: OrderHeader
 
@@ -207,6 +208,3 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Dat
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Interessent zu Bargeld](prospect-to-cash.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
