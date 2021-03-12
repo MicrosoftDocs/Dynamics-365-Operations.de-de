@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ae589f81811c1586e0e24de94eaf5f467f19debb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d68087afd1a0c9b675e4ac1ef2118e6aab5213d9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428417"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998652"
 ---
 # <a name="create-a-replacement-kanban-rule"></a>Ersatz-Kanban-Regel erstellen
 
@@ -56,6 +55,3 @@ Diese Prozedur konzentriert sich auf das Ersetzen einer vorhandenen Kanban-Regel
 1. Legen Sie "Höchstmenge" auf "100" fest.
     * Erweitern Sie das Inforegister "Mengen", um das Feld "Höchstmenge" anzuzeigen. Das Ändern der Höchstmenge auf 100 ermöglicht es, dass bis zu 100 Kanbans verarbeitet werden können.    Dies ist der letzte Schritt in dieser Aufgabe.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

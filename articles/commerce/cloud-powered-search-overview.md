@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a9cb82053640b7abdba420e087d0707208979de
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412442"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997649"
 ---
 # <a name="cloud-powered-search-overview"></a>Übersicht über die Cloud-basierte Suche
 
@@ -82,6 +81,3 @@ Verbessertes Sortieren in Dynamics 365 Commerce ermöglicht Kunden, Suchergebnis
 [Standard-Kategorie-Landingpage und Suchergebnisseite – Übersicht](category-search-page-overview.md)
 
 [Verwalten von SEO-Metadaten](manage-seo-metadata.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ccfbe30e9d4a0fc4580c7036d222bfca9203a21
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428470"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996325"
 ---
 # <a name="confirm-and-transfer"></a>Bestätigen und übertragen
 
@@ -230,6 +229,3 @@ Sie können auch bestätigen, dass die Transaktionsbeziehungen wie folgt aktuali
 - Die Option **Menge auf neue Ladung aufteilen** funktioniert auch, wenn einige der verbleibenden Arbeitskopfzeilen den Status *In Bearbeitung* aufweisen. Daher können Sie die Funktion selbst dann verwenden, wenn die Arbeitskräfte bereits die Entnahmeaufträge ausführen.
 - Wenn Sie **Unerfüllte Menge stornieren** auswählen, während es noch verbleibende Arbeit mit dem Status *Offen* oder *In Bearbeitung* gibt, wird die folgende Fehlermeldung angezeigt: „Verbleibende Menge für Ladung kann nicht storniert werden. Für die Ladung ist Arbeit vorhanden.“
 - Wenn Sie **Unerfüllte Menge stornieren** auswählen, wenn keine verbleibende Arbeit vorhanden ist, sich jedoch nicht freigegebene Ladungspositionen auf der Ladung befinden, wird die folgende Fehlermeldung angezeigt: „Die Lieferung für die Ladung konnte nicht bestätigt werden, da die Menge für den Artikel den Prozentsatz überschreitet, der für eine zu kleine Lieferung definiert ist.“ Um den Fehler zu vermeiden, können Sie den Prozentsatz für **Zu kleine Lieferung** für die nicht freigegebene Ladungsposition auf 100 Prozent festlegen. Nicht freigegebene Positionen werden nicht auf eine neue Ladung verschoben, aber die aktuelle Ladung wird mit einer zu kleinen Lieferung bestätigt. In diesem Fall können Sie den ursprünglichen Auftrag nicht erneut freigeben. Daher müssen Sie hierfür eine andere Lösung finden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

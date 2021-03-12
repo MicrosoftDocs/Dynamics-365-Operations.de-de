@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2d463bf01659aeb6599023ce46da0c604f8eeff0
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 4c0eebedd31a04dc23b396600315206d70fe8876
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4412715"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997571"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Erweiterte automatische Omni-Channel-Belastungen
 
@@ -44,7 +43,7 @@ Bei der erweiterten automatische Belastungen-Funktion können POS-Benutzer syste
 
 ## <a name="enabling-advanced-auto-charges"></a>Erweiterte automatische Belastungen aktivieren
 
-Auf der Seite **Retail und Commerce\> Zentralverwaltungseinrichtung \>-Parameter \> Commerce-Parameter** wechseln Sie zur Registerkarte **Debitorenaufträge**. Legen Sie im Inforegister **Belastungen** die Option **Erweiterte automatische Belastungen verwenden** auf **Ja** fest.
+Auf der Seite **Einzelhandel und Handel\> Zentralverwaltungseinrichtung \>-Parameter \> Commerce-Parameter** wechseln Sie zur Registerkarte **Debitorenaufträge**. Legen Sie im Inforegister **Belastungen** die Option **Erweiterte automatische Belastungen verwenden** auf **Ja** fest.
 
 ![Erweiterte automatische Belastungen-Parameter](media/advancedchargesparameter.png)
 
@@ -185,7 +184,7 @@ Auf der Seite **Belastungen verwalten** am POS kann der Benutzer sowohl Kopf- al
 
 Wenn der **Belastungsüberschreibungscode** auf der Einrichtungsseite **Commerce Parameter** konfiguriert wurde, wird der Benutzer aufgefordert, einen Ursachencode anzugeben, wenn die Belastungen in der POS-Anwendung geändert wurden.
 
-Wenn Ursachencodes für überschriebene Belastungen erfasst wurden, steht auch ein neuer Bericht zur Verfügung, um diese Überschreibungen zu überprüfen und zu überwachen. Der Bericht kann in **Retail und Commerce \> Abfragen und Berichte \> Verlauf für Belastungsüberschreibung** gefunden werden.
+Wenn Ursachencodes für überschriebene Belastungen erfasst wurden, steht auch ein neuer Bericht zur Verfügung, um diese Überschreibungen zu überprüfen und zu überwachen. Der Bericht kann in **Einzelhandel und Handel \> Abfragen und Berichte \> Verlauf für Belastungsüberschreibung** gefunden werden.
 
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Rückerstattung der Belastungen bei einer POS-Retourenbuchung
 
@@ -214,7 +213,7 @@ Einige Unternehmen ziehen es möglicherweise vor, zu warten, bis der Benutzer al
 
 ### <a name="charges-override-reports"></a>Belastungen setzen Berichte außer Kraft
 
-Wenn Benutzer die berechneten Belastungen manuell überschreiben oder der Transaktion manuell eine Belastung hinzufügen, sind diese Daten zur Überprüfung im Bericht **Historie für Belastungsüberschreibung** verfügbar. Der Bericht kann in **Retail und Commerce \> Abfragen und Berichte \> Verlauf für Belastungsüberschreibung** angezeigt werden. Beachten Sie unbedingt, dass die für diesen Bericht erforderlichen Daten durch die "P"-Verteilungs-Zeitplaneinzelvorgänge aus der Kanaldatenbank in die Hauptniederlassung importiert werden. Daher sind Informationen zu Überschreibungen, die soeben im POS ausgeführt wurden, möglicherweise nicht sofort in diesem Bericht verfügbar, bis dieser Einzelvorgang die Transaktionsdaten des Stores zur Hauptniederlassung hochgeladen hat.
+Wenn Benutzer die berechneten Belastungen manuell überschreiben oder der Transaktion manuell eine Belastung hinzufügen, sind diese Daten zur Überprüfung im Bericht **Historie für Belastungsüberschreibung** verfügbar. Der Bericht kann in **Einzelhandel und Handel \> Abfragen und Berichte \> Verlauf für Belastungsüberschreibung** angezeigt werden. Beachten Sie unbedingt, dass die für diesen Bericht erforderlichen Daten durch die "P"-Verteilungs-Zeitplaneinzelvorgänge aus der Kanaldatenbank in die Hauptniederlassung importiert werden. Daher sind Informationen zu Überschreibungen, die soeben im POS ausgeführt wurden, möglicherweise nicht sofort in diesem Bericht verfügbar, bis dieser Einzelvorgang die Transaktionsdaten des Stores zur Hauptniederlassung hochgeladen hat.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
@@ -222,6 +221,3 @@ Wenn Benutzer die berechneten Belastungen manuell überschreiben oder der Transa
 
 [Kopfbelastungen auf übereinstimmende Verkaufspositionen aufteilen](pro-rate-charges-matching-lines.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

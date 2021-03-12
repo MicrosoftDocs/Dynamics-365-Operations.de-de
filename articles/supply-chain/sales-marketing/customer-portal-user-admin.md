@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0fd390e5e0054ff301c18c2507c600f954e6ce89
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528292"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996775"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Erstellen und Verwalten von Kundenportalbenutzern
 
@@ -39,11 +38,11 @@ Das Video [Kunden zur Nutzung Ihres Kundenportals auffordern](https://youtu.be/d
 
 ## <a name="prerequisite-setup"></a>Voraussetzungen für die Einrichtung
 
-Kontakte in Power Apps Portal werden als Datensätze in der Entität **Kontakte** in Common Data Service gespeichert. Duales Schreiben synchronisiert diese Datensätze dann mit Microsoft Dynamics 365 Supply Chain Management wie erforderlich.
+Kontakte in Power Apps Portal werden als Datensätze in der Tabelle **Kontakte** in Microsoft Dataverse gespeichert. Duales Schreiben synchronisiert diese Datensätze dann mit Microsoft Dynamics 365 Supply Chain Management wie erforderlich.
 
 ![Systemdiagramm für Kundenportal-Kontakte](media/customer-portal-contacts.png "Systemdiagramm für Kundenportal-Kontakte")
 
-Stellen Sie vor dem Einladen neuer Kunden sicher, dass Sie die Option **Kontakt** Entität zuordnen in dualem Schreiben aktiviert haben.
+Stellen Sie vor dem Einladen neuer Kunden sicher, dass Sie die Tabellenzuordnung **Kontakt** in dualem Schreiben aktiviert haben.
 
 ## <a name="the-invitation-process"></a>Der Einladungsprozess
 
@@ -58,15 +57,15 @@ Nachdem ein Kontakt erstellt wurde, sollte er im Supply Chain Management angezei
 
 Weitere Informationen finden Sie unter [Konfigurieren Sie einen Kontakt für die Verwendung in einem Portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) in der Power Apps Portaldokumentation.
 
-## <a name="out-of-box-web-roles-and-entity-permissions"></a>Out-of-Box-Webrollen und Entitätsberechtigungen
+## <a name="out-of-box-web-roles-and-table-permissions"></a>Out-of-Box-Webrollen und Tabellenberechtigungen
 
-Benutzerrollen in Power Apps Portalen sind definiert durch [Webrollen](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) und [Entitätsberechtigungen](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Für das Kundenportal sind sofort einige Rollen definiert. Sie können neue Rollen erstellen und vorhandene Rollen ändern oder entfernen.
+Benutzerrollen in Power Apps Portalen sind definiert durch [Webrollen](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) und [Tabellenberechtigungen](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Für das Kundenportal sind sofort einige Rollen definiert. Sie können neue Rollen erstellen und vorhandene Rollen ändern oder entfernen.
 
 ### <a name="out-of-box-web-roles"></a>Out-of-Box-Webrollen
 
 In diesem Abschnitt werden die Webrollen beschrieben, die mit dem Kundenportal bereitgestellt werden.
 
-Weitere Informationen zum Ändern der Standardbenutzerrollen finden Sie unter [Erstellen Sie Webrollen für Portale](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) und [Fügen Sie datensatzbasierte Sicherheit hinzu, indem Sie Entitätsberechtigungen für Portale verwenden](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) in der Power Apps Portaldokumentation.
+Weitere Informationen zum Ändern der Standardbenutzerrollen finden Sie unter [Erstellen Sie Webrollen für Portale](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) und [Fügen Sie datensatzbasierte Sicherheit hinzu, indem Sie Tabellenberechtigungen für Portale verwenden](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) in der Power Apps Portaldokumentation.
 
 #### <a name="administrator"></a>Administrator
 
@@ -96,6 +95,3 @@ Die folgende Tabelle zeigt, welche Kundenaufträge die Benutzer in jeder Webroll
 
 > [!NOTE]
 > Obwohl sowohl Sam als auch Jane Kontakte sind, die für Kunde X arbeiten, können sie nur die Bestellungen sehen, die sie selbst aufgegeben haben, und sonst nichts. Obwohl May eine Bestellung im System hat, kann sie diese Bestellung nicht im Kundenportal sehen, da sie eine nicht autorisierte Benutzerin ist. (Außerdem muss sie die Bestellung über einen anderen Kanal als das Kundenportal aufgegeben haben.)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
