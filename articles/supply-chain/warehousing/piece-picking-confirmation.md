@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSRFAutoConfirm, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed63245066799d7d8f14362ab6c9193c0cda7c4a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66903d142ecb7228e4fdec56dbd45472acbdeb69
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428582"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989642"
 ---
 # <a name="piece-picking-confirmation"></a>Stückentnahmebestätigung
 
@@ -51,6 +50,3 @@ Die folgenden Optionen sind zur Auswahl verfügbar, wenn der Arbeitstyp Entnahme
 | Stückentnahmebestätigung | Verfügbar für Entnahme- und Inventurarbeitstypen. Produktbestätigung wird automatisch ausgewählt. Ermöglicht Ihnen, jeden Inventurartikel über das mobile Gerät zu bestätigen. |
 |  Maximale Anzahl von Stücken  |                   Verfügbar für Entnahmearbeit, wenn Stückentnahmebestätigung aktiviert ist. Beschränkt die Anzahl der Teile, die Sie bestätigen müssen.                   |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

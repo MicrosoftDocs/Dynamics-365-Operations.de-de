@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: AssetBook, AssetDepreciationProfile, AssetParameters
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 272663
 ms.search.region: Austria
 ms.author: sndray
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: da3d7b9fa1c85a987746f0ea2aa6520b410c44b8
-ms.sourcegitcommit: 0297fd1f594c59a39014a592231ce5999b173848
+ms.openlocfilehash: cbfdb8bf47ed2d1067ab85d1a041179794a1a103
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4663311"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988342"
 ---
 # <a name="half-year-depreciation-on-additional-acquisitions-for-austria"></a>Halbjährliche Abschreibung auf sonstige Anschaffungen für Österreich
 
@@ -49,6 +48,3 @@ Wenn die Kontrollkästchen **Bestimmte Regeln zur halbjährlichen Abschreibung a
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

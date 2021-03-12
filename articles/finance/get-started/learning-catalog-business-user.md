@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d99233831ee4f838c0230e92db0750d94b2b55b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3ec0e21ccecd5bf90e9b31b5aade33e585108c62
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443615"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990238"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Lernkatalog für Benutzer von Dynamics 365 Finance
 
@@ -54,12 +53,10 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 | [Konfigurieren und Verwenden von Budgetierung in Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-use-budgeting-dyn365-finance/)   | Jede Organisation, ob private oder öffentlich, legt durch das Erstellen von Budgets finanzielle und betriebliche Ziele fest. Mit der kooperativen und ablaufgesteuerten Natur der Budgetplanung können Sie den Budgetprozess optimieren. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 3.5 Stunden |
 | [Konfigurieren und Verwalten von Anlagen in Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-manage-fixed-assets-dyn365-finance/) | Für Anlagen können Anschaffungsinformationen eingerichtet und eingegeben werden. Anschließend können diese Anlagen verwaltet werden, indem sie abgeschrieben werden und ein Aktivierungsschwellenwert festgelegt wird. Die Art und Weise, wie Anlagen verwaltet werden, muss sowohl internationalen Buchführungsstandards auch den Buchführungsgesetzen des jeweiligen Landes/der jeweiligen Region entsprechen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 4.5 Stunden |
 | [Erste Schritte mit der Kostenrechnung für Lieferketten in Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/get-started-cost-accounting-supply-chains-dyn365-finance/) | Mit der Kostenrechnung können Sie Daten aus verschiedenen Quellen erfassen, wie beispielsweise das Hauptbuch, untergeordnete Sachkonten, Budgets und statistische Informationen. Sie können anschließend Kostendaten analysieren, zusammenfassen und auswerten, sodass die Verwaltung die bestmöglichen Entscheidungen bei Preisaktualisierungen, Budgets, Kostenkontrolle usw. treffen kann.  | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 1 Stunde  |
+| [Arbeiten mit der Ausgabenverwaltung in Dynamics 365 Project Operations](https://docs.microsoft.com/learn/paths/work-expense-management/) | Maximieren Sie die Rentabilität und minimieren Sie die Kosten mit den präzisen Funktionen der Ausgabenverwaltung in Dynamics 365 Project Operations. Erfahren Sie, wie Sie das System konfigurieren und Spesenabrechnungen erstellen und genehmigen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 5.5 Stunden  |
 
 ## <a name="exam"></a>Prüfung<a name="exam"></a>
 
 | Inhalt | Beschreibung  | Formate  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Dynamics 365-Grundlagen](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl)    | Beweisen Sie, dass Sie Microsoft Dynamics 365 verstehen: Power Platform; Cloudkonzepte; Lizenzierungsoptionen und Bereitstellung sowie Freigabenoptionen | Prüfung; Kosten variieren nach Regionen |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

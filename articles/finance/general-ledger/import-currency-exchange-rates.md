@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 74acfab28d45fc75c4ecd595aeba1fb1e13bbcff
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a5dbe0d822f7bdb1a62a99c43ef9f7170c889676
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443657"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988876"
 ---
 # <a name="import-currency-exchange-rates"></a>Importieren von Währungswechselkursen
 
@@ -56,6 +55,3 @@ Sie können Wechselkurse der Wechselkursanbieterquelle importieren und sie in de
 | **Vorhandene Wechselkurse überschreiben**   | Dieses Kontrollkästchen verwaltet die Aktualisierung des vorhandenen Wechselkurs für ein Währungspaar, wenn der Wechselkurs für ein bestimmtes Datum bereits vorhanden ist. Wenn Sie dieses Kontrollkästchen nicht aktivieren, wird der Wechselkurs für das spezifische Datum nicht importiert, wenn ein anderer Wechselkurs bereits vorhanden ist.                                                                                       |
 | **Import an Feiertagen verhindern** | Dieses Kontrollkästchen verwaltet den Import des Wechselkurses für ein Datum, das ein Feiertag ist. Wenn Sie z.B. dieses Kontrollkästchen aktivieren und die Zentralbank europäische als der Wechselkursanbieter verwenden, das Feld nicht den Wechselkurs an einem gesetzlichen Feiertag, der der aktuellen juristischen Person zugeordnet ist. Diese Option kann möglicherweise nicht für mehrere Anbieter verfügbar. |
 | **Kurs vom vorherigen Tag** | Dieses Kontrollkästchen ist verfügbar, wenn Sie die Funktion **EZB-Import zum aktuellen oder vorherigen Datum** auf der Seite **Funktionsverwaltung** aktivieren. Dieses Kontrollkästchen ist nur für den Anbieter verfügbar. *Europäische Zentralbank*. Aktivieren Sie dieses Kontrollkästchen, um den Währungswechselkurs zu importieren, der von der Europäischen Zentral Bank am vorangegangenen Arbeitstag um ca. 16:00 Uhr MEZ veröffentlicht wurde. Das Kontrollkästchen ist standardmäßig aktiviert. Deaktivieren Sie dieses Kontrollkästchen, um den am selben Arbeitstag veröffentlichten Wechselkurs zu importieren.  |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

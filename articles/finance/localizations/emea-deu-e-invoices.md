@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Germany
 ms.author: ilyako
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 798c81693d394da7e8094d2896faf315ccbf724a
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: 7ea4eb36d8e63351f7140aec2a7d197dd95d241c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512434"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988324"
 ---
 # <a name="customer-electronic-invoices-in-germany-de-00022"></a>Elektronische Rechnungen für Kunden in Deutschland (DE-00022)
 
@@ -43,6 +42,3 @@ Weitere Informationen zum Einrichten und Verwenden elektronischer Rechnungen fü
 
 - [Dynamics 365 Finance](https://support.microsoft.com/help/4490705)
 - [Dynamics AX 2012 R3](https://fix.lcs.dynamics.com/Issue/Details?kb=4494484&bugId=3979521)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

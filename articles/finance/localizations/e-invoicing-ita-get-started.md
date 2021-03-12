@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c513141f820c95fe3842478361693701f1e3641b
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 08d41244d3ec785127db8f69e37dd522a463c388
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4443753"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988539"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Italien
 
@@ -221,7 +220,7 @@ Sie können die Dokumente manuell übermitteln, basierend auf Ihrer Nachfrage na
 2. Wählen Sie **OK** aus, um das Dialogfeld **Anfrage** zu schließen.
 3. Wählen Sie **OK** aus, um die ausgewählten Dokumente zu übermitteln.
 
-> ![HINWEIS] Bei Ihrem ersten Versuch, ein Dokument über den Service zu übermitteln, werden Sie aufgefordert, die Verbindung mit dem Add-On für die elektronische Rechnungsstellung zu bestätigen. Wählen Sie **Hier klicken, um eine Verbindung mit dem Electronic Document Submission Service herzustellen** aus.
+> ! [HINWEIS] Bei Ihrem ersten Versuch, ein Dokument über den Service zu übermitteln, werden Sie aufgefordert, die Verbindung mit dem Add-On für die elektronische Rechnungsstellung zu bestätigen. Wählen Sie **Hier klicken, um eine Verbindung mit dem Electronic Document Submission Service herzustellen** aus.
 
 #### <a name="view-submission-logs"></a>Anzeigen von Übermittlungsprotokollen
 
@@ -246,6 +245,3 @@ Sie können die Übermittlungsprotokolle für alle übermittelten Dokumente anze
 - [Übersicht über das Add-On für die elektronische Rechnungsstellung](e-invoicing-service-overview.md)
 - [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung](e-invoicing-get-started.md)
 - [Einrichten des Add-Ons für die elektronische Rechnungsstellung](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, IntrastatParameters, IntrastatCommodityLookup, IntrastatCompressParameters, Intrastat, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e2aba5caaaf0fbee511e1a293b09fa8301bb6831
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 581a837049f239cb9b9fa41eb978304751cb3b54
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407764"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989980"
 ---
 # <a name="eur-00002-generate-an-eu-intrastat-declaration"></a>EUR-00002 Generieren Sie eine EU-Intrastat-Meldung
 
@@ -58,7 +57,7 @@ Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.
     * Geben Sie Rundungsgenauigkeit ein, beispielsweise "0.01".  
 7. Geben Sie im Feld "Anzahl von Dezimalen für Betrag" eine Zahl ein.
     * Geben Sie beispielsweise "2" ein.  
-8. Wählen Sie im Feld "Rundung unter 1 kg" eine Option aus.
+8. Wählen Sie im Feld „Rundung unter 1 kg“ eine Option aus.
     * Beispielsweise wählen Sie "Aufrunden auf 1 kg" aus.  
 9. Geben Sie im Feld "Rundungsregel" eine Zahl ein.
     * Geben Sie beispielsweise "1 "für das Runden des Gewichts auf die ganze Zahl ein.  
@@ -114,6 +113,3 @@ Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.
     * Wählen Sie z. B. "Versand" aus.  
 27. Klicken Sie auf "OK".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
