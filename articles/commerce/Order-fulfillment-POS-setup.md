@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 118517fe0d7208113bd361a0295ff00cacd14f3d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8d6cfa0d1eba4ccb0b24839b7cc632835b17107e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412471"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965313"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Auftragserfüllung für Filialen einrichten
 
@@ -54,7 +53,7 @@ Standardmäßig werden Auftragspositionen, die einer Filiale zugewiesen sind, al
 
 Auftragspositionen für die Filialabholung werden als **Ausstehend** markiert und unterliegen nicht der Annahme.
 
-Um manuelle Annahme für Auftragspositionen zu aktivieren, navigieren Sie zu **Retail und Commerce** \> **Kanäle** \> **Einzelhandelsgeschäft** \> **Alle Einzelhandelsgeschäfte**. Wählen Sie die Filiale aus, und klicken Sie auf die Filialkennung, um die Details der Filiale anzuzeigen. Klicken Sie auf **Bearbeiten**. Suchen Sie im Inforegister **Allgemein** die Unterüberschrift **Auftragserfüllung**, und ändern Sie **Manuelles Annehmen** von **Nein** auf **Ja**.
+Um manuelle Annahme für Auftragspositionen zu aktivieren, navigieren Sie zu **Einzelhandel und Handel** \> **Kanäle** \> **Einzelhandelsgeschäft** \> **Alle Einzelhandelsgeschäfte**. Wählen Sie die Filiale aus, und klicken Sie auf die Filialkennung, um die Details der Filiale anzuzeigen. Klicken Sie auf **Bearbeiten**. Suchen Sie im Inforegister **Allgemein** die Unterüberschrift **Auftragserfüllung**, und ändern Sie **Manuelles Annehmen** von **Nein** auf **Ja**.
 
 ### <a name="enable-reject-order-line-capability"></a>Auftragsablehnungsfunktion aktivieren
 
@@ -131,6 +130,3 @@ Auftragserfüllung in der Verkaufsstelle umfasst Filterung, sodass der Benutzer 
 - Erstellungsdatum
 - Lieferdatum
 - Wareneingangsdatum
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

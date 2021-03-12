@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSRFAutoConfirm, WHSLicensePlate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc87da5fefde33832fc0be1cfef3aa44b155c0d0
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 6c4dcafa5d997bce21d37d02f87fbf604568c24e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429018"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965636"
 ---
 # <a name="mixed-license-plate-receiving"></a>Gemischtes Kennzeichen – Empfang
 
@@ -49,6 +48,3 @@ Sie müssen eine neue Menüoption mit Modusarbeit erstellen, die keine vorhanden
 - Empfang und Einlagerung gemischter Kennzeichen
 
 Die Optionen zum Identifizieren der Quelldokumentpositionen sind Bestellungsartikel, Bestellpositionen, Rücklieferungen, Umlagerungsaufträge und Umlagerungsauftragspositionen. Diese Optionen können den eingehenden Auftrag für einen einzelnen Ladungsträger ändern. Die letzte Option ist per Ladungsartikel. Sie können mehrere Artikel zu einem Ladungsträger hinzufügen, können aber nicht zwischen Ladungen wechseln.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

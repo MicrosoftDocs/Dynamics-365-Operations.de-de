@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: cbfb395c9103ff31979bfd57333f689e38915652
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2515a71297df7213f93a4c619f7eebf1c2411b39
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645431"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965551"
 ---
 # <a name="outbound-workload-visualization"></a>Ausgehende Workloadvisualisierung
 
@@ -98,6 +97,3 @@ Die folgende Abbildung zeigt ein Beispiel für das resultierende Diagramm.
 ![Visualisierung von Zone vs. Arbeitsstatus](media/work-viz-chart.png "Visualisierung von Zone vs. Arbeitsstatus")
 
 Dieses Diagramm zeigt zwei Zonen mit den Namen **FLOOR** und **BULK**, sowie eine Zone mit dem Namen **Blank**. Die Zone **Leer** repräsentiert alle Arbeitszeilen, die nicht Mitglied einer Zone sind. Das Diagramm zeigt immer alle nicht zugehörigen gefilterten Daten als **Leerzeichen** an, um eine möglichst gute Sichtbarkeit zu gewährleisten. In der Zone **FLOOR** zeigt das Diagramm drei geschlossene Zeilen und vier offene Zeilen. In der Zone **BULK** zeigt das Diagramm vier geschlossene Linien, eine offene Linie und 24 gelöschte Linien. Schließlich zeigt das Diagramm acht geschlossene Zeilen, die zu keiner Zone gehören und daher als **Leer** aufgeführt sind.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: eb2dd36c6149f2aa40305cd57eac060b232b09e5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3b578c1bdfe1c6b4bf66cc85cc09ed906fb812a8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412523"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965310"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Ein neues Produkt in Commerce erstellen
 
@@ -37,7 +36,7 @@ Ein Produkt wird hauptsächlich durch eine Produktnummer, einen Namen und eine B
 
 ## <a name="create-a-new-product"></a>Neues Produkt erstellen
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Produkte und Kategorien \> Freigegebene Produkte nach Kategorie**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Produkte und Kategorien \> Freigegebene Produkte nach Kategorie**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Wählen Sie in der Dropdownliste **Produktart** entweder **Artikel** oder **Dienstleistung** aus.
 1. Wählen Sie in der Dropdownliste **Produktuntertyp** entweder **Produkt** (wenn das Produkt keine Varianten hat) oder **Produktmaster** (wenn das Produktvarianten haben wird) aus.
@@ -99,7 +98,7 @@ Um ein Produkt zu verkaufen, muss es zunächst an eine juristische Person freige
 
 Sobald ein Produkt freigegeben ist, ist eine weitere Konfiguration erforderlich, die das Hinzufügen eines Preises zum Produkt umfasst.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Produkte und Kategorien \> Freigegebene Produkte nach Kategorie**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Produkte und Kategorien \> Freigegebene Produkte nach Kategorie**.
 1. Wählen Sie den Produktkategorieknoten für das freigegebene Produkt aus und wählen Sie das Produkt aus der Produktliste aus.
 1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
 1. Konfigurieren Sie im Abschnitt **Kauf** alle erforderlichen Eigenschaften, einschließlich **Einheit**, **Preis** und **Menge**.
@@ -115,6 +114,3 @@ Das folgende Bild zeigt eine Beispielkonfiguration für ein freigegebenes Produk
 [Erstellen juristischer Personen](channels-legal-entities.md)
 
 [Eine Variantengruppe erstellen](create-variant-group.md) 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 68f091cca9c3c2baa03813553127ee41abe6d522
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429158"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967230"
 ---
 # <a name="release-product-structures"></a>Produktstrukturen freigeben
 
@@ -160,6 +159,3 @@ Dieses Verhalten gilt nur, wenn ein Produkt direkt zur Freigabe ausgewählt wird
 Beispiel: Produkt X ist der Eigentümergruppe *Designschränke* zugewiesen. Produkt X ist auch Teil der Stückliste von Produkt Y, das der Produktbesitzer-Gruppe *Design-Lautsprecher* zugeordnet ist. Wenn ein Benutzer aus der Produktbesitzer-Gruppe *Design-Lautsprecher* das Produkt Y und dessen Stückliste freigibt, wird das Produkt X zusammen mit dem Produkt Y freigegeben.
 
 Weitere Informationen finden Sie unter [Produktbesitzer](product-owner.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

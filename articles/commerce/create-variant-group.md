@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: RetailSizeGroupTable, ConfigGroupIdLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5d9279e1076796bb455429e5ff004c89ec5829e7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e19d9a2549fa9957126592f3db7e468147997261
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412563"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965150"
 ---
 # <a name="create-a-variant-group"></a>Eine Variantengruppe erstellen
 
@@ -42,7 +41,7 @@ In diesem Thema wird eine Größengruppe erstellt und konfiguriert. Ähnliche Ve
 
 Gehen Sie folgendermaßen vor, um eine Größengruppe zu erstellen.
  
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Produkte und Kategorien \> Variantengruppen \>. Größengruppen**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Produkte und Kategorien \> Variantengruppen \>. Größengruppen**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie im Feld **Größengruppe** einen Namen für die Größengruppe ein.
 1. Geben Sie im Feld **Beschreibung** eine entsprechende Beschreibung ein.
@@ -52,7 +51,7 @@ Gehen Sie folgendermaßen vor, um eine Größengruppe zu erstellen.
 
 Um Attribute zu einer Größengruppe hinzuzufügen, führen Sie die folgenden Schritte aus.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Produkte und Kategorien \> Variantengruppen \> Größengruppen**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Produkte und Kategorien \> Variantengruppen \> Größengruppen**.
 1. Wählen Sie im Navigationsbereich eine Größengruppe aus.
 1. Wählen Sie unter **Größengruppenlinien** die Option **Hinzufügen**.
 1. Geben Sie im Feld **Größe** eine Zeichenfolge für die Größe ein (zum Beispiel „XL”).
@@ -73,6 +72,3 @@ Die folgende Abbildung zeigt ein Beispiel für die Größengruppe für „lässi
 [Einzelhandelsprodukte einrichten](set-up-retail-products.md)
 
 [Produktdimensionen](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

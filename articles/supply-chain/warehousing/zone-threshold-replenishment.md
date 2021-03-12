@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6f4ddd03ec16ac43b007b904eb688563735e0941
-ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
+ms.openlocfilehash: 2e83d6885bf7400916d633a49d3b19b8843b0269
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654171"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965501"
 ---
 # <a name="zone-threshold-replenishment"></a>Schwellenwert für Zonenwiederbeschaffung
 
@@ -344,6 +343,3 @@ Hier sind einige Hinweise und Tipps zum Arbeiten mit der Funktion:
 
 - Wenn Sie dynamische Lagerplätze verwenden, werden Wiederbeschaffungsarbeiten entweder für den ersten verfügbaren Lagerplatz oder für einen Lagerplatz erstellt, der bereits Bestand enthält, wenn die Lagerplatzrichtlinienaktivität für die Verwendung der Strategie **Konsolidieren** eingerichtet ist.
 - Wenn Sie feste Lagerplätze anstelle von Zonen verwenden, sollten Sie die [Min./Max.-Standardwiederbeschaffung](tasks/set-up-min-max-replenishment-process.md) verwenden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

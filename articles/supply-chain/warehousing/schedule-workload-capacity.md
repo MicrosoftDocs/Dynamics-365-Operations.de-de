@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WMSWorkloadCapacity
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd4225d9e7ad65939c57cb770ba521377c87dea3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8db243949b2aeee0a8263276234d439652905449
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428493"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965576"
 ---
 # <a name="schedule-workload-capacity"></a>Arbeitsauslastungskapazität planen
 
@@ -80,6 +79,3 @@ Wenn diese Informationen nicht korrekt angegeben sind, erhalten Sie eine Meldung
 3. Wählen Sie im Feld **Auftragsart** die Option **Geplant und bestätigt**, **Geplant** oder **Bestätigt**, um die Art der zu projizierenden Aufträge auf dem Bericht anzugeben.
 4. Wählen Sie im Feld **Auslastungstyp** eine Auslastungstyp aus, um festzulegen, ob die Auslastungskapazität für Volumen oder Gewicht hochgerechnet werden soll.
 5. Wählen Sie im Feld **Arbeitslastkapazität** eine Auslastungskapazitätseinstellung aus.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

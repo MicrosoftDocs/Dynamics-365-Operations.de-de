@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 58b5a35800ab464f25868c6756b16f25d14d8d78
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 8321a0d8516a6c2c085ce9c1236f70af1cca98da
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429159"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967257"
 ---
 # <a name="product-readiness"></a>Produktbereitschaft
 
@@ -148,6 +147,3 @@ Legen Sie für jede Zeile, die Sie hinzufügen, die folgenden Felder fest.
 | Fragebogen | Wählen Sie den Fragebogen aus, der für die Checkliste verwendet werden soll. Die Checkliste ist eine lokale Checkliste in dem Unternehmen, in dem die Bereitschaftsprüfung durchgeführt wird. Das System muss in der Lage sein, auszuwerten, ob die Checkliste korrekt beantwortet wird. Daher muss die Checkliste so festgelegt werden, dass eine Auswertung auf Basis der richtigen Antworten erfolgt. Weitere Informationen zum Erstellen von Fragebögen finden Sie unter [Verwenden von Fragebögen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) und den zugehörigen Themen. |
 | Automatische Genehmigung | Bereitschaftsprüfungsdatensätze enthalten ein Kontrollkästchen **Genehmigt**, das den Genehmigungsstatus anzeigt. Aktivieren Sie das Kontrollkästchen **Automatische Genehmigung** für Prüfungen, die sofort auf genehmigt festgelegt werden sollen, nachdem der zugewiesene Benutzer sie abgeschlossen hat. Deaktivieren Sie dieses Kontrollkästchen, um eine explizite Genehmigung als zusätzlichen Schritt zu verlangen. |
 | Obligatorisch | Aktivieren Sie dieses Kontrollkästchen für Checks, die vom zugewiesenen Benutzer abgeschlossen werden müssen. Obligatorische Prüfungen können nicht übersprungen werden. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 141393
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 10c843670a280c86790185c8a39cb2943e2838f9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1de8373471ff8187bd476305c9ed0b26beaa52d5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412488"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965277"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 
@@ -118,6 +117,3 @@ In einer bevorstehenden Veröffentlichung von Commerce sind Einzelhändler in de
 
 Um unerwartete Leistungsabgänge zu verhindern, ist diese nach Konfiguration hinter einer Flight-Markierung verborgen, die lautet **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** Um die Einstellungen **Standarddebitoren-Suchenmodus** der Benutzerschnittstelle anzuzeigen, sollte der Einzelhändler ein Supportticket für die Benutzerakzeptanztests (UAT) und die Produktumgebung erstellen. Nachdem das Ticket empfangen wurde, arbeitet das Technikteam bei dem Einzelhändler, um sicherzustellen, dass der Einzelhändler Tests in der Nicht-Produktionsumgebung durchführt, um die Leistung zu ermitteln und alle Optimierungen zu implementieren, die erforderlich sind.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

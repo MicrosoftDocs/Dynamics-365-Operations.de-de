@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 724ec2e5af7837d574298d662911cd9c6ee9e9f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c7d0c792a8590be474b05dea262ae11d15e0ada3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412490"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965208"
 ---
 # <a name="create-a-new-product-hierarchy"></a>Neue Produkthierarchie erstellen
 
@@ -41,7 +40,7 @@ Es wird eine Commerce-Produkthierarchie verwendet, um die Gesamtprodukthierarchi
 
 Um eine Commerce-Produkthierarchie zu erstellen und zu konfigurieren, führen Sie die folgenden Schritte aus.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Produkte und Kategorien \> Commerce-Produkthierarchie**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Einzelhandel und Handel \> Produkte und Kategorien \> Commerce-Produkthierarchie**.
 1. Wenn noch keine Hierarchie existiert, wählen Sie unter **Aktionsbereich** die Option **Neu**, um die Wurzel der Hierarchie zu erstellen.
 1. Unter **Allgemeines**:
     1. Geben Sie im Kästchen **Name** einen Namen ein.
@@ -80,6 +79,3 @@ Bei Bedarf können jeder Gruppe auch Kategorieattributgruppen zugewiesen werden.
 [Produktkategorien und Produkte verwalten ](category-management-product-creation.md)
 
 [Sortierreihenfolge für Verkaufsentitäten ändern](custom-order-categories-nav-retail-prod-hierarchy.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

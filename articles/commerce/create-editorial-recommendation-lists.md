@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9826785700dcc1a35e6199b7aeff4e06b6d9da39
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e9ce8887f3cd7da0e250d3b0ffe96b222953de44
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412567"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965352"
 ---
 # <a name="manually-create-curated-recommendations"></a>Manuelle Erstellung kuratierter Empfehlungen
 
@@ -38,7 +37,7 @@ Kuratierte Listen sind Sammlungen von individuellen Inhalten, die von Personen e
 
 Um eine kuratierte Produktempfehlungsliste zu erstellen, folgen Sie diesen Schritten.
 
-1. Gehen Sie zu **Retail und Commerce &gt; Produktempfehlungen &gt; Empfehlungslisten**.
+1. Gehen Sie zu **Einzelhandel und Handel &gt; Produktempfehlungen &gt; Empfehlungslisten**.
 1. Wählen Sie **Neu** aus.
 1. Geben Sie im Feld **Listen-ID** einen Wert ein.
 1. Geben Sie im Feld **Listennamen** einen Wert ein.
@@ -75,6 +74,3 @@ Um eine kuratierte Produktempfehlungsliste zu erstellen, folgen Sie diesen Schri
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

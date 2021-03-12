@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgProductOwner
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 4308020d66995d857e547be47216cb82caacf035
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 90f5596f9b5fc45e78cc49a3309c45864e07e70b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429152"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967332"
 ---
 # <a name="product-owners"></a>Produkteigentümer
 
@@ -61,6 +60,3 @@ Beispiel: Produkt X ist der Eigentümergruppe *Designschränke* zugewiesen. Prod
 ## <a name="product-owners-and-approvals"></a>Produktbesitzer und Freigaben
 
 Da die Besitzer der Produkte wissen, ob bestimmte technische Änderungen für ihre Produkte von Vorteil sind, ist es oft sinnvoll, sie als Teil des Genehmigungsprozesses in die Verwaltung für technische Änderungen einzubeziehen. Sie können diesen Ansatz implementieren, indem Sie die Besitzer der Produkte als Teilnehmer in den Workflows festlegen, die für die Verwaltung für technische Änderungen verwendet werden. Das System weist dann Genehmigungsaufgaben in den Workflows zu, basierend auf den Produkten, die in Änderungsanträgen und Änderungsaufträgen enthalten sind. Weitere Informationen finden Sie unter [Verwalten von Änderungen an Engineering-Produkten](engineering-change-management.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
