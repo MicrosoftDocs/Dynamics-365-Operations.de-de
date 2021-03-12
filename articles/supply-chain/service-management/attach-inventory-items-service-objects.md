@@ -11,42 +11,41 @@ ms.technology: ''
 ms.search.form: SMAServiceObjectTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c606d784b52b09578e09243c3ecc07ca05f16755
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 41df8e540f36ee6e2fbc5727fb86fff14fc51067
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428883"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974734"
 ---
-# <a name="attach-inventory-items-to-service-objects"></a><span data-ttu-id="a6fee-103">Zuordnen von Lagerartikeln zu Serviceobjekten</span><span class="sxs-lookup"><span data-stu-id="a6fee-103">Attach inventory items to service objects</span></span>    
+# <a name="attach-inventory-items-to-service-objects"></a><span data-ttu-id="db939-103">Zuordnen von Lagerartikeln zu Serviceobjekten</span><span class="sxs-lookup"><span data-stu-id="db939-103">Attach inventory items to service objects</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="a6fee-104">In diesem Thema wird erläutert, wie Sie einen Lagerartikel an ein Serviceobjekt anhängen.</span><span class="sxs-lookup"><span data-stu-id="a6fee-104">This topic explains how to attach an inventory item to a service object.</span></span> <span data-ttu-id="a6fee-105">Wenn Sie einen Artikel an ein Serviceobjekt anhängen, können Sie die Serviceaktivitäten steuern und melden, die für den Artikel ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="a6fee-105">When you attach an item to a service object, you can control and report the service activities that are performed for the item.</span></span>
+<span data-ttu-id="db939-104">In diesem Thema wird erläutert, wie Sie einen Lagerartikel an ein Serviceobjekt anhängen.</span><span class="sxs-lookup"><span data-stu-id="db939-104">This topic explains how to attach an inventory item to a service object.</span></span> <span data-ttu-id="db939-105">Wenn Sie einen Artikel an ein Serviceobjekt anhängen, können Sie die Serviceaktivitäten steuern und melden, die für den Artikel ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="db939-105">When you attach an item to a service object, you can control and report the service activities that are performed for the item.</span></span>
 
-<span data-ttu-id="a6fee-106">Damit Serviceobjekten Artikel zugeordnet werden können, müssen die Artikel zunächst im Formular **Details für freigegebene Produkte** erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="a6fee-106">Before you can attach items to service objects, you must create the items in the **Released product details** form.</span></span> 
+<span data-ttu-id="db939-106">Damit Serviceobjekten Artikel zugeordnet werden können, müssen die Artikel zunächst im Formular **Details für freigegebene Produkte** erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="db939-106">Before you can attach items to service objects, you must create the items in the **Released product details** form.</span></span> 
 
-<span data-ttu-id="a6fee-107">Verwenden Sie die folgenden Schritte, um einen Lagerartikel an ein Serviceobjekt anzuhängen:</span><span class="sxs-lookup"><span data-stu-id="a6fee-107">Use the following steps to attach an inventory item to a service object:</span></span>
+<span data-ttu-id="db939-107">Verwenden Sie die folgenden Schritte, um einen Lagerartikel an ein Serviceobjekt anzuhängen:</span><span class="sxs-lookup"><span data-stu-id="db939-107">Use the following steps to attach an inventory item to a service object:</span></span>
 
-1.  <span data-ttu-id="a6fee-108">Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Serviceobjekte**.</span><span class="sxs-lookup"><span data-stu-id="a6fee-108">Click **Service management** \> **Setup** \> **Service objects** \> **Service objects**.</span></span>
+1.  <span data-ttu-id="db939-108">Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Serviceobjekte**.</span><span class="sxs-lookup"><span data-stu-id="db939-108">Click **Service management** \> **Setup** \> **Service objects** \> **Service objects**.</span></span>
 
-2.  <span data-ttu-id="a6fee-109">Wählen Sie im Feld **Artikelnummer** den Artikel aus, den Sie dem Serviceobjekt hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="a6fee-109">In the **Item number** field, select the item to attach to the service object.</span></span>
+2.  <span data-ttu-id="db939-109">Wählen Sie im Feld **Artikelnummer** den Artikel aus, den Sie dem Serviceobjekt hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="db939-109">In the **Item number** field, select the item to attach to the service object.</span></span>
 
-3.  <span data-ttu-id="a6fee-110">Speichern Sie das Serviceobjekt.</span><span class="sxs-lookup"><span data-stu-id="a6fee-110">Save the service object.</span></span>
+3.  <span data-ttu-id="db939-110">Speichern Sie das Serviceobjekt.</span><span class="sxs-lookup"><span data-stu-id="db939-110">Save the service object.</span></span>
 
-<span data-ttu-id="a6fee-111">Der Artikel ist nun dem Serviceobjekt zugeordnet. Jede für den Artikel angegebene Lagerungsdimension wird auch auf das Serviceobjekt übertragen.</span><span class="sxs-lookup"><span data-stu-id="a6fee-111">The item is now attached to the service object, and any inventory dimensions specified for the item are also copied to the service object.</span></span>
+<span data-ttu-id="db939-111">Der Artikel ist nun dem Serviceobjekt zugeordnet. Jede für den Artikel angegebene Lagerungsdimension wird auch auf das Serviceobjekt übertragen.</span><span class="sxs-lookup"><span data-stu-id="db939-111">The item is now attached to the service object, and any inventory dimensions specified for the item are also copied to the service object.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a6fee-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a6fee-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="db939-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="db939-112">See also</span></span>
 
-[<span data-ttu-id="a6fee-113">Serviceobjekte – Übersicht</span><span class="sxs-lookup"><span data-stu-id="a6fee-113">Service objects overview</span></span>](service-objects.md)
+[<span data-ttu-id="db939-113">Serviceobjekte – Übersicht</span><span class="sxs-lookup"><span data-stu-id="db939-113">Service objects overview</span></span>](service-objects.md)
 
   
 
