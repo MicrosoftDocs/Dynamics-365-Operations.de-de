@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 61c286391d83d70036dbed7eae6755cdefce5f2e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 73c66d189035f7bdc302480038c44645eccb50f9
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693666"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798069"
 ---
 # <a name="change-the-banner-or-logo"></a>Das Banner oder das Logo ändern
 
@@ -39,6 +39,3 @@ Im Folgenden werden die Schritte aufgeführt, die Systemadministratoren verwende
 6. Wechseln Sie zu **Navigationsbereich > Module > Allgemein > Allgemein > Standarddashboard**. Sie sollten das neue Banner- oder Logobild im Dashboard finden.  
     
     Möglicher Weise müssen Sie Ihr Unternehmen mithilfe der Unternehmens-Auswahl in das Unternehmen ändern, für das Sie das Banner für hochgeladen haben.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

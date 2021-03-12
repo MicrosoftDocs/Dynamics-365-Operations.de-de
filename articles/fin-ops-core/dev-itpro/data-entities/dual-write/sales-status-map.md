@@ -1,6 +1,6 @@
 ---
-title: Einrichten eines Mappings für die Auftragsstatusfelder
-description: In diesem Thema wird erläutert, wie Sie die Auftragsstatusfelder für duales Schreiben einrichten.
+title: Zuordnung für die Kundenauftragsstatusspalten einrichten
+description: In diesem Thema wird erläutert, wie Sie die Auftragsstatusspalten für duales Schreiben einrichten.
 author: dasani-madipalli
 manager: tonyafehr
 ms.date: 06/25/2020
@@ -18,22 +18,22 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc70501d231390ea15104d508a36300a1b2cd44c
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4452961"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744298"
 ---
-# <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Einrichten eines Mappings für die Auftragsstatusfelder
+# <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Zuordnung für die Kundenauftragsstatusspalten einrichten
 
 [!include [banner](../../includes/banner.md)]
 
-Die Felder, die den Auftragsstatus angeben, haben in Microsoft Dynamics 365 Supply Chain Management und Dynamics 365 Sales unterschiedliche Aufzählungswerte. Zusätzliche Einstellungen sind erforderlich, um diese Felder in dualem Schreiben abzubilden.
+Die Spalten, die den Auftragsstatus angeben, haben in Microsoft Dynamics 365 Supply Chain Management und Dynamics 365 Sales unterschiedliche Aufzählungswerte. Zusätzliche Einstellungen sind erforderlich, um diese Spalten in Dual-Write abzubilden.
 
-## <a name="fields-in-supply-chain-management"></a>Felder in Supply Chain Management
+## <a name="columns-in-supply-chain-management"></a>Spalten in Supply Chain Management
 
-In Supply Chain Management spiegeln zwei Felder den Status des Auftrags wider. Die Felder, die Sie zuordnen müssen, sind **Status** und **Dokumentstatus**.
+In Supply Chain Management spiegeln zwei Spalten den Status des Auftrags wider. Die Spalten, die Sie zuordnen müssen, sind **Status** und **Dokumentstatus**.
 
 Die **Status**-Aufzählung gibt den Gesamtstatus der Bestellung an. Dieser Status wird im Auftragskopf angezeigt.
 
@@ -53,9 +53,9 @@ Die **Dokumentstatus**-Aufzählung hat die folgenden Werte:
 - Lieferschein
 - Rechnung
 
-## <a name="fields-in-sales"></a>Felder im Sales
+## <a name="columns-in-sales"></a>Spalten in Sales
 
-In Sales spiegeln geben zwei Felder den Status der Bestellung an. Die Felder, die Sie zuordnen müssen, sind **Status** und **Verarbeitungsstatus**.
+In Sales geben zwei Felder den Status der Bestellung an. Die Spalten, die Sie zuordnen müssen, sind **Status** und **Verarbeitungsstatus**.
 
 Die **Status**-Aufzählung gibt den Gesamtstatus der Bestellung an. Es weist die folgenden Werte auf:
 
@@ -93,9 +93,9 @@ Die folgende Tabelle zeigt die Zuordnung von **Verarbeitungsstatus** zwischen Sa
 | Fakturiert            | Fakturiert        | Fakturiert                          |
 | Storniert           | Storniert       | Storniert                         |
 
-## <a name="setup"></a>Setup
+## <a name="setup"></a>Einstellung
 
-Um die Zuordnung für die Auftragsstatusfelder einzurichten, müssen Sie die **IsSOPIntegrationEnabled** und **isIntegrationUser**-Attribute aktivieren.
+Um die Zuordnung für die Auftragsstatusspalten einzurichten, müssen Sie die Attribute **IsSOPIntegrationEnabled** und **isIntegrationUser** aktivieren.
 
 Um das **IsSOPIntegrationEnabled**-Attribut zu aktivieren, führen Sie die folgenden Schritte aus.
 
@@ -110,14 +110,14 @@ Um das **IsSOPIntegrationEnabled**-Attribut zu aktivieren, führen Sie die folge
     Xrm.WebApi.updateRecord("organization",
     "d9a7c5f7-acbf-4aa9-86e8-a891c43f748c", {"issopintegrationenabled" :
     true}).then(
-        function success(result) {
-            console.log("Account updated");
-            // perform operations on record update
-        },
-        function (error) {
-            console.log(error.message);
-            // handle error conditions
-        }
+        function success(result) {
+            console.log("Account updated");
+            // perform operations on row update
+        },
+        function (error) {
+            console.log(error.message);
+            // handle error conditions
+        }
     );
     ```
 
@@ -129,13 +129,13 @@ Um das **IsSOPIntegrationEnabled**-Attribut zu aktivieren, führen Sie die folge
 
 Um das **isIntegrationUser**-Attribut zu aktivieren, führen Sie die folgenden Schritte aus.
 
-1. Gehen Sie in Sales zu **Einstellung \> Anpassung \> System anpassen**, wählen Sie **Benutzerentität** aus und öffnen Sie dann **Formular \> Benutzer**.
+1. Wechseln Sie in Sales zu **Einstellung \> Anpassung \> System anpassen**, wählen Sie **Benutzertabelle** aus und öffnen Sie dann **Formular \> Benutzer**.
 
     ![Öffnen des Benutzerformulars](media/sales-map-user.png)
 
 2. Suchen Sie im Feld-Explorer **Integrationsbenutzermodus** und klicken Sie zweimal darauf, um es dem Formular hinzuzufügen. Speichern Sie die Änderung.
 
-    ![Hinzufügen des Felds „Integrationsbenutzermodus“ zum Formular](media/sales-map-field-explorer.png)
+    ![Hinzufügen der Spalte „Integrationsbenutzermodus“ zum Formular](media/sales-map-field-explorer.png)
 
 3. Gehen Sie in Sales zu **Einstellung \> Sicherheit \> Benutzer** und ändern Sie die Ansicht von **Aktivierte Benutzer** zu **Anwendungsbenutzer**.
 
@@ -145,11 +145,8 @@ Um das **isIntegrationUser**-Attribut zu aktivieren, führen Sie die folgenden S
 
     ![Liste der Anwendungsbenutzer](media/sales-map-user-mode.png)
 
-5. Ändern Sie den Wert des **Integrationsbenutzermodus**-Felds auf **Ja**.
+5. Ändern Sie den Wert der Spalte **Integrationsbenutzermodus** in **Ja**.
 
-    ![Ändern des Werts des Integrationsbenutzermodus-Felds](media/sales-map-user-mode-yes.png)
+    ![Ändern des Werts der Spalte „Integrationsbenutzermodus“](media/sales-map-user-mode-yes.png)
 
 Ihre Aufträge sind jetzt zugeordnet.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

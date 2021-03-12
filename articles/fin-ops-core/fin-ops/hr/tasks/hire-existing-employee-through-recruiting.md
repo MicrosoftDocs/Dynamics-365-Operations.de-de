@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5df30e403c4b1c7d3abc88ae98c73d797bceef02
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 42a6fbdad19db3c85509078c9f7549a6397f93fc
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693111"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797258"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Vorhandene Mitarbeiter mittels Personalbeschaffung einstellen
 
@@ -40,6 +40,3 @@ Manchmal können offene Stellen von den Kandidaten ausgefüllt werden, die berei
 9. Klicken Sie auf "Position ändern".
     * Sie werden zu diesem Zeitpunkt möglicherweise auch die Vergütung ändern. Wenn Sie die Vergütung jetzt nicht zuweisen, können Sie sie ändern, indem Sie zum Arbeitskraftformular zurückkehren, die Registerkarte "Vergütung" auswählen und "Fester Plan" auswählen. Nachdem Sie "Position ändern" auswählen, wird der Status in der Anwendung auf "Eingestellt" aktualisiert.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

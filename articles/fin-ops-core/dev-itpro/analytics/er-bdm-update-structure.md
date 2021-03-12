@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd279b28c43e22bec6bf814845fe97828bc96d81
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
+ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681327"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "4728088"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Struktur einer Geschäftsdokumentvorlage aktualisieren 
 
@@ -56,7 +56,7 @@ Führen Sie die folgenden Prozeduren in [Geschäftsdokumentverwaltung – Über
 5. Wählen Sie **OK** aus, um die neue Vorlage zu erstellen.
 
     > [!NOTE]
-    > Wenn Sie sich noch nicht bei Office Online angemeldet haben, werden Sie [zur Anmeldeseite von Office 365 weitergeleitet](er-business-document-management.md#i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page). Um zu Ihrer Finance-Umgebung zurückzukehren, wählen Sie die Schaltfläche **Zurück** in Ihrem Browser aus.
+    > Wenn Sie sich noch nicht bei Office Online angemeldet haben, werden Sie [zur Anmeldeseite von Office 365 weitergeleitet](er-business-document-management.md#frequently-asked-questions). Um zu Ihrer Finance-Umgebung zurückzukehren, wählen Sie die Schaltfläche **Zurück** in Ihrem Browser aus.
 
     Die neue Vorlage wird zur Bearbeitung in der eingebetteten Excel Online-Steuerung auf der Seite des Vorlagen-Editors geöffnet.
 
@@ -106,6 +106,3 @@ Führen Sie die folgenden Prozeduren in [Geschäftsdokumentverwaltung – Über
 [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 
 [Geschäftsdokumentverwaltung – Übersicht](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

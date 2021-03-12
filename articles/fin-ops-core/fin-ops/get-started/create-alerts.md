@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4fe97ca8e1eecdc064ad4d21d5acdeade9f33d9c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3721416ce720167a6f78e26583de84af9c8d086b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694494"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798426"
 ---
 # <a name="create-alert-rules"></a>Erstellen von Warnregeln
 
@@ -40,7 +40,7 @@ Die Batch-Jobs für Datenänderungs- und Fälligkeitswarnungen müssen ausgefüh
 
 Das Ereignis, das eine Warnregel auslöst, kann ein eintretendes Datum oder eine bestimmte Änderung sein, die eintritt. Auslöser für Ereignisse werden auf dem Inforegister **" Warnen wenn** des Dialogfelds **Warnregel erstellen** definiert. Welche Ereignisse für ein bestimmtes Feld verfügbar sind, hängt vom ausgewählten Auslöser ab.
 
-Wenn Sie beispielsweise eine Warnregel für das Feld **Startdatum** einrichten möchten, sind Fälligkeitsereignisse geeignet. Daher ist der Ereignistyp **ist fällig in** für dieses Feld verfügbar. Für ein Feld wie **Kostenstelle** ist ein Fälligkeitsdatum dieses Ereignisses nicht angebracht. Daher ist der Ereignistyp **ist fällig in** für dieses Feld nicht verfügbar. Stattdessen ist der Ereignistyp **wurde geändert** verfügbar.
+Wenn Sie beispielsweise eine Warnregel für das Feld **Startdatum** einrichten möchten, sind Fälligkeitsereignisse geeignet. Daher ist der Ereignistyp `is due in` für dieses Feld verfügbar. Für ein Feld wie **Kostenstelle** ist ein Fälligkeitsdatum dieses Ereignisses nicht angebracht. Daher ist der Ereignistyp `is due in` für dieses Feld nicht verfügbar. Allerdings ist der Ereignistyp `has changed` verfügbar.
 
 ## <a name="event-types"></a>Ereignistypen
 
@@ -86,7 +86,7 @@ Warnungen können über das Event-Framework extern gesendet werden. Setzen Sie b
 2. Klicken Sie alternativ im Aktivitätsbereich auf der Registerkarte **Optionen** in der Gruppe **Freigeben** auf **Benutzerdefinierte Warnungsregek** erstellen.
 3. Aktivieren Sie im Formular **Warnregel erstellen** in der Liste **Feld** das Feld, das überwacht werden soll.
 4. Wählen Sie im Feld **Ereignis** den Typ des Berechtigungsereignisses aus.
-5. Wählen Sie auf der Registerkarte **Warnen für** die gewünschte Option. Wenn Sie die Warnung als Geschäftsereignis senden möchten, stellen Sie sicher, dass **Organisationsweit** auf **Nein** gesetzt ist.
+5. Wählen Sie auf der Registerkarte **Warnen für** die gewünschte Option. Wenn Sie die Warnung als Geschäftsereignis senden möchten, setzen Sie den Wert **Organisationsweit** auf **Nein**.
 6. Wenn die Warnregel an einem bestimmten Datum deaktiviert werden soll, wählen Sie im Abschnitt **Warnung bis** ein Enddatum aus.
 7. Auf der Registerkarte **Warnung mit** im Feld **Betreff** akzeptieren Sieie Standardbetreffzeile für die E-Mail-Nachricht, oder geben Sie einen neuen Betreff ein. Der Text wird als Betreffzeile für die E-Mail-Nachricht verwendet, die Sie empfangen, wenn eine Warnung ausgegeben wird. Wenn Sie die Warnung als Veranstaltung senden möchten, setzen Sie **Externes Senden** auf **Ja**.
 8. Geben Sie im Feld **Nachricht** einen optionalen Meldungstext ein. Der Text wird als die Meldung verwendet, die Sie bei Auslösung einer Warnung erhalten.
@@ -102,6 +102,3 @@ Für einige sekundäre Datenquellen in Formularen können keine Warnungen erstel
     ```
 2. Erstellen Sie eine Warnung aus dem SysTableBrowser-Formular.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

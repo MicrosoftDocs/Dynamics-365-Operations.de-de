@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6356ec6850667f32f9e9e4133686c40f0b6d76d7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b01ef3da908739d17f2a03398ae56f35191e8db6
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688258"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744540"
 ---
 # <a name="general-troubleshooting"></a>Allgemeine Problembehandlung
 
@@ -65,23 +65,23 @@ Um die Nachverfolgung einzuschalten, führen Sie diese Schritte aus.
 
 1. Melden Sie sich bei der modellgesteuerten App in Dynamics 365 an, öffnen Sie die Seite **Einstellungen** und dann unter **System** wählen Sie **Verwaltung** aus.
 2. Wählen Sie auf der Seite **Verwaltung** die Option **Systemeinstellungen** aus.
-3. Auf der Registerkarte **Anpassung** wählen Sie **Plug-In und benutzerdefinierte Workflow-Aktivitätsverfolgung** und **Alle**, um das Plug-Trace-Protokoll zu aktivieren. Wenn Sie Ablaufverfolgungsprotokolle nur protokollieren möchten, wenn Ausnahmen auftreten, können Sie stattdessen **Ausnahme** auswählen.
+3. Auf der Registerkarte **Anpassung** wählen Sie in der Spalte **Plug-In und benutzerdefinierte Workflow-Aktivitätsverfolgung** **Alle** aus, um das Plug-Trace-Protokoll zu aktivieren. Wenn Sie Ablaufverfolgungsprotokolle nur protokollieren möchten, wenn Ausnahmen auftreten, können Sie stattdessen **Ausnahme** auswählen.
 
 
 Um die Nachverfolgung anzuzeigen, führen Sie diese Schritte aus.
 
 1. Melden Sie sich bei der modellgesteuerten App in Dynamics 365 an, öffnen Sie die Seite **Einstellungen** und dann unter **Anpassung** wählen Sie **Plug-In-Nachverfolgungsprotokoll** aus.
-2. Suchen Sie die Ablaufverfolgungsprotokolle, in denen das Feld **Modellname** auf **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin** festgelegt ist.
+2. Suchen Sie die Ablaufverfolgungsprotokolle, in denen die Spalte **Typname** auf **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin** festgelegt ist.
 3. Doppelklicken Sie auf ein Element, um das vollständige Protokoll anzuzeigen, und klicken Sie dann auf das Inforegister **Ausführung** und üerrprüfen Sie den Text **Nachrichtenblock**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivieren Sie den Debug-Modus, um Probleme mit der Live-Synchronisierung in Finance and Operations Apps zu beheben
 
 **Erforderliche Rolle zum Anzeigen der Fehler:** Systemadministrator – duale Schreibfehler, die ihren Ursprung im Dataverse haben, können in der Finance and Operations-App auftreten. In einigen Fällen ist der vollständige Text der Fehlermeldung nicht verfügbar, da die Nachricht zu lang ist oder personenbezogene Daten (PII) enthält. Sie können die ausführliche Protokollierung für Fehler aktivieren, indem Sie die folgenden Schritte ausführen.
 
-1. Alle Projektkonfigurationen in Finance and Operations Apps haben eine **IsDebugMode** Eigenschaft in der **DualWriteProjectConfiguration** Entität. Entität in **DualWriteProjectConfiguration** mithilfe des Excel-Add-Ins öffnen.
+1. Alle Projektkonfigurationen in Finance and Operations-Apps haben eine **IsDebugMode**-Eigenschaft in der Tabelle **DualWriteProjectConfiguration**. Öffnen Sie die Tabelle **DualWriteProjectConfiguration** mithilfe des Excel-Add-Ins.
 
     > [!TIP]
-    > Eine einfache Möglichkeit, die Entität zu öffnen, ist das Einschalten des Modus **Design** im Excel-Add-In und dann das Hinzufügen von **DualWriteProjectConfigurationEntity** zum Arbeitsblatt. Weitere Informationen finden Sie unter [Entitätsdaten in Excel öffnen und sie mithilfe des Excel-Add-Ins aktualisieren](../../office-integration/use-excel-add-in.md).
+    > Eine einfache Möglichkeit, die Tabelle zu öffnen, ist das Einschalten des Modus **Entwurf** im Excel-Add-In und dann das Hinzufügen von **DualWriteProjectConfigurationEntity** zum Arbeitsblatt. Weitere Informationen finden Sie unter [Tabellendaten in Excel öffnen und sie mithilfe des Excel-Add-Ins aktualisieren](../../office-integration/use-excel-add-in.md).
 
 2. Stellen Sie die **IsDebugMode** Eigenschaft auf **Ja** für das Projekt.
 3. Führen Sie das Szenario aus, das Fehler generiert.
@@ -118,10 +118,7 @@ Sie können jetzt eine neue Umgebung verknüpfen.
 Wenn Sie in Dynamics 365 Sales einen Autrag erstellen, können Sie durch das Klicken auf **+ Produkte hinzufügen** möglicherweise zum Bestellformular für Dynamics 365 Project Operations weitergeleitet werden. Von diesem Formular aus gibt es keine Möglichkeit, das Formular **Information** der Kundenauftragsposition anzuzeigen. Die Option für **Information** wird in der Dropdownliste unter **Neue Auftragsposition** nicht angezeigt. Dies liegt daran, dass Project Operations in Ihrer Umgebung installiert wurde.
 
 Um die Formularoption **Information** wieder zu aktivieren, führen Sie die folgenden Schritte aus:
-1. Navigieren Sie zur **Auftragsposition**-Entität.
+1. Navigieren Sie zur Tabelle **Auftragsposition**.
 2. Suchen Sie das **Information**-Formular unter dem Formularknoten. 
 3. Wählen Sie das Formular **Information** und klicken Sie auf **Sicherheitsrollen aktivieren**. 
 4. Ändern Sie die Sicherheitseinstellung in **Anzeige für alle**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72db7660c07b2f57f8609ab6c14964193e842d75
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ba696fb7a8d9083d11cc29953cf1340a581afcf
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688566"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797340"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 
@@ -101,7 +100,7 @@ Die folgende Tabelle enthält eine Übersicht der Inspektionen, die die EB biete
 <td>Fehler</td>
 <td>
 <p>Ausdruck vom Typ &lt;Typ&gt; kann nicht zu Feld vom Typ &lt;Typ&gt; konvertiert werden.</p>
-<p><b>Laufzeitfehler:</b> Ausnahme vom Typ</p>
+<p><b>Laufzeitfehler:</b> Ausnahme fü Typ</p>
 </td>
 </tr>
 <tr>
@@ -220,7 +219,7 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
     ![Das Feld „X“ und der Datentyp „Integer“ wurden dem Datenmodusbaum auf der Seite „Datenmodell“ hinzugefügt.](./media/er-components-inspections-01.png)
 
-3. Im Bereich „Datenquellen“ der Modellzuweisung fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu.
+3. Im Bereich „Datenquellen“ der Modellzuordnung fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu.
 4. Nennen Sie die neue Datenquelle **Y** und konfigurieren Sie sie so, dass sie den Ausdruck `INTVALUE(100)` enthält.
 5. Binden Sie **X** an **Y**.
 6. Ändern Sie im Datenmodelldesigner den Datentyp des Felds **X** von **Integer** zu **Int64**.
@@ -295,7 +294,7 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
     ![Datenmodellbaum mit Feld „X“ und Datentyp „Integer“ auf der Seite „Datenmodell“](./media/er-components-inspections-01.png)
 
-3. Im Bereich „Datenquellen“ der Modellzuweisung fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu.
+3. Im Bereich „Datenquellen“ der Modellzuordnung fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu.
 4. Nennen Sie die neue Datenquelle **Y** und konfigurieren Sie sie so, dass sie den Ausdruck `INTVALUE(100)` enthält.
 5. Binden Sie **X** an **Y**.
 6. Löschen Sie im Modellzuordnungsdesigner im Bereich „Datenquellen“ die Datenquelle **Y**.
@@ -330,10 +329,10 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 3. Nennen Sie die neue Datenquelle **Lieferant**. Wählen Sie im Feld **Tabelle** die Option **VendTable** aus, um anzugeben, dass diese Datenquelle die VendTable-Tabelle anfordert.
 4. Fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu.
 5. Nennen Sie die neue Datenquelle **FilteredVendor** und konfigurieren Sie sie so, dass sie den Ausdruck `FILTER(Vendor, Vendor.AccountNum="US-101")` enthält.
-6. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen. Vergewissern Sie sich dann, ob der Ausdruck `FILTER(Vendor, Vendor.AccountNum="US-101")` in der Datenquelle **Liefernant** abgefragt werden kann.
+6. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen. Vergewissern Sie sich dann, ob der Ausdruck `FILTER(Vendor, Vendor.AccountNum="US-101")` in der Datenquelle **Lieferant** abgefragt werden kann.
 7. Ändern Sie die Datenquelle **Lieferant**, indem sie ein verschachteltes Feld vom Typ **Berechnetes Feld** hinzufügen, um die gekürzte Lieferantenkontonummer abzurufen.
 8. Nennen Sie die das verschachtelte Feld **$AccNumber** und konfigurieren Sie es so, dass es den Ausdruck `TRIM(Vendor.AccountNum)` enthält.
-9. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen. Vergewissern Sie sich dann, ob der Ausdruck `FILTER(Vendor, Vendor.AccountNum="US-101")` in der Datenquelle **Liefernant** abgefragt werden kann.
+9. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen. Vergewissern Sie sich dann, ob der Ausdruck `FILTER(Vendor, Vendor.AccountNum="US-101")` in der Datenquelle **Lieferant** abgefragt werden kann.
 
     ![Überprüfen, ob der Ausdruck auf der Seite „Modellzuordnungsdesigner“ abgefragt werden kann](./media/er-components-inspections-04.gif)
 
@@ -430,7 +429,7 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 11. Ändern Sie den Ausdruck der Datenquelle **Vendor.FilteredTrans** von `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` zu `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)`.
 12. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen. Vergewissern Sie sich dann, ob die konfigurierte Datenquelle **JoinedList** abgefragt werden kann.
 
-    ![Überprüfen Sie die bearbeitbare Modellzuordnungskomponente und vergewissern Sie sich dann, ob die konfigurierte Datenquelle „JoinedList“ auf der Seite „Modellzuordnungsdesigner“ abgefragt werden kann.](./media/er-components-inspections-06b.png)
+    ![Überprüfen Sie die bearbeitbare Modellzuordnungskomponente, und vergewissern Sie sich dann, ob die konfigurierte Datenquelle „JoinedList“ auf der Seite „Modellzuordnungsdesigner“ abgefragt werden kann.](./media/er-components-inspections-06b.png)
 
 13. Beachten Sie, dass ein Prüfungsfehler auftritt, da der Ausdruck der Datenquelle **Vendor.FilteredTrans** nicht in den direkten SQL-Aufruf übersetzt werden kann. Darüber hinaus erlaubt der direkte SQL-Aufruf nicht den Aufruf der Datenquelle **JoinedList**, die in die direkte SQL-Anweisung übersetzt werden soll.
 
@@ -489,11 +488,11 @@ Alternativ können Sie die Zeile für eine einzelne Warnung im Raster auswählen
 
 ### <a name="manual-resolution"></a>Manuelle Lösung
 
-Sie können die Ausdrücke aller im Prüfungsraster genannten Datenquellen manuell anpassen, indem Sie die **WHERE**-Funktion durch die **FILTER**-Funktion ersetzen.
+Sie können die Ausdrücke aller Datenquellen im Prüfungsraster manuell anpassen, indem Sie die **WHERE**-Funktion durch die **FILTER**-Funktion ersetzen.
 
 ## <a name="preferability-of-allitemsquery-vs-allitems-function"></a><a id="i8"></a>Bevorzugung der ALLITEMSQUERY- gegenüber der ALLITEMS-Funktion
 
-Die integrierten EB-Funktionen [ALLITEMS](er-functions-list-allitems.md) und [ALLITEMSQUERY](er-functions-list-allitemsquery.md) werden verwendet, um einen vereinfachten Wert von **Datensatzliste** zu erhalten, der aus einer Liste von Datensätzen besteht, die alle Elemente darstellen, die dem angegebenen Pfad entsprechen. Die EB prüft, ob ein direkter SQL-Aufruf an eine Datenquelle gerichtet werden kann, auf die in der **ALLITEMS**-Funktion verwiesen wird. Wenn kein direkter Aufruf möglich ist, tritt im EB-Modellzuordnungsdesigner eine Prüfungswarnung auf. Die Nachricht, die Sie erhalten, empfiehlt, die **ALLITEMSQUERY**-Funktion anstelle der **ALLITEMS**-Funktion zur Verbesserung der Effizienz zu verwenden.
+Die integrierten EB-Funktionen [ALLITEMS](er-functions-list-allitems.md) und [ALLITEMSQUERY](er-functions-list-allitemsquery.md) geben einen vereinfachten Wert von **Datensatzliste** zurück, der aus einer Liste von Datensätzen besteht, die alle Elemente darstellen, die dem angegebenen Pfad entsprechen. Die EB prüft, ob ein direkter SQL-Aufruf an eine Datenquelle gerichtet werden kann, auf die in der **ALLITEMS**-Funktion verwiesen wird. Wenn kein direkter Aufruf möglich ist, tritt im EB-Modellzuordnungsdesigner eine Prüfungswarnung auf. Die Nachricht, die Sie erhalten, empfiehlt, die **ALLITEMSQUERY**-Funktion anstelle der **ALLITEMS**-Funktion zur Verbesserung der Effizienz zu verwenden.
 
 Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
@@ -573,11 +572,11 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
     ![Überprüfen der Formatelemente, die Sie an Datenquellen auf der Seite „Formatdesigner“ gebunden haben](./media/er-components-inspections-09c.png)
 
-16. Beachten Sie, dass ein Prüfungsfehler auftritt. Die Nachricht besagt, dass zur Laufzeit möglicherweise ein Fehler für die konfigurierten Formatkomponenten **Anweisung\\Partei\\Name** und **Anweisung\\Partei\\AccountNum** auftritt, wenn die Liste **model.Vendor** leer ist.
+16. Beachten Sie, dass ein Prüfungsfehler auftritt. Die Nachricht besagt, dass zur Laufzeit möglicherweise ein Fehler für die konfigurierten Formatkomponenten **Anweisung\\Partei\\Name** und **Anweisung\\Partei\\AccountNum** auftritt, wenn die Liste `model.Vendor` leer ist.
 
     ![Prüfungsfehler, der über einen möglichen Fehler für die konfigurierten Formatkomponenten informiert](./media/er-components-inspections-09d.png)
 
-Die folgende Abbildung zeigt den Laufzeitfehler, der auftritt, wenn Sie die Warnung ignorieren, für das Format **Ausführen** auswählen und die Kontonummer eines nicht existierenden Lieferanten auswählen. Da der angeforderte Lieferant nicht existiert, wird die Liste **model.Vendor** leer sein (d. h., sie enthält keine Datensätze).
+Die folgende Abbildung zeigt den Laufzeitfehler, der auftritt, wenn Sie die Warnung ignorieren, für das Format **Ausführen** auswählen und die Kontonummer eines nicht existierenden Lieferanten auswählen. Da der angeforderte Kreditor nicht existiert, wird die Liste `model.Vendor` leer sein (d. h., sie enthält keine Datensätze).
 
 ![Laufzeitfehler, die während der Ausführung der Formatzuordnung aufgetreten sind](./media/er-components-inspections-09e.png)
 
@@ -589,15 +588,15 @@ Für die ausgewählte Zeile im Raster auf der Registerkarte **Warnungen** könne
 
 #### <a name="option-1"></a>Option 1
 
-Sie können das Formatelement **Anweisung\\Partei\\Name** an das Datenquellenfeld **model.Vendor.Name** binden. Zur Laufzeit ruft diese Bindung zuerst die Datenquelle **model.Vendor** auf. Wenn **model.Vendor** eine leere Datensatzliste zurückgibt, werden die verschachtelten Formatelemente nicht ausgeführt. Daher treten für diese Formatkonfiguration keine Prüfungswarnungen auf.
+Sie können das Formatelement **Anweisung\\Partei\\Name** an das Datenquellenelement `model.Vendor` binden. Zur Laufzeit ruft diese Bindung zuerst die Datenquelle `model.Vendor` auf. Wenn `model.Vendor` eine leere Datensatzliste zurückgibt, werden die verschachtelten Formatelemente nicht ausgeführt. Daher treten für diese Formatkonfiguration keine Prüfungswarnungen auf.
 
 ![Binden des Formatelements an das Datenquellenelement auf der Seite „Formatdesigner“](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>Option 2
 
-Ändern Sie die Bindung des Formatelements **Anweisung\\Partei\\Name** von `model.Vendor.Name` zu `FIRSTORNULL(model.Vendor).Name`. Die aktualisierte Bindung konvertiert bedingt den ersten Datensatz der Datenquelle **model.Vendor** vom Typ **Datensatzliste** an eine neue Datenquelle vom Typ **Datensatz**. Diese neue Datenquelle enthält denselben Satz von Feldern.
+Ändern Sie die Bindung des Formatelements **Anweisung\\Partei\\Name** von `model.Vendor.Name` zu `FIRSTORNULL(model.Vendor).Name`. Die aktualisierte Bindung konvertiert bedingt den ersten Datensatz der Datenquelle `model.Vendor` vom Typ **Datensatzliste** an eine neue Datenquelle vom Typ **Datensatz**. Diese neue Datenquelle enthält denselben Satz von Feldern.
 
-- Wenn mindestens ein Datensatz in der Datenquelle **model.Vendor** verfügbar ist, werden die Felder dieses Datensatzes mit den Werten der Felder des ersten Datensatzes der Datenquelle **model.Vendor** gefüllt. In diesem Fall gibt die aktualisierte Bindung den Lieferantennamen zurück.
+- Wenn mindestens ein Datensatz in der Datenquelle `model.Vendor` verfügbar ist, werden die Felder dieses Datensatzes mit den Werten der Felder des ersten Datensatzes der Datenquelle `model.Vendor` gefüllt. In diesem Fall gibt die aktualisierte Bindung den Lieferantennamen zurück.
 - Andernfalls wird jedes Feld des erstellten Datensatzes mit dem Standardwert für den Datentyp dieses Felds gefüllt. In diesem Fall wird die leere Zeichenfolge als Standardwert für den Datentyp **Zeichenfolge** zurückgegeben.
 
 Daher treten für das Formatelement **Anweisung\\Partei\\Name** keine Prüfungswarnungen auf, wenn es an den Ausdruck `FIRSTORNULL(model.Vendor).Name` gebunden ist.
@@ -606,13 +605,13 @@ Daher treten für das Formatelement **Anweisung\\Partei\\Name** keine Prüfungsw
 
 #### <a name="option-3"></a>Option 3
 
-Wenn Sie die Daten, die in ein generiertes Dokument eingegeben werden, explizit angeben möchten, wenn die Datenquelle **model.Vendor** vom Typ **Datensatzliste** keine Datensätze zurückgibt (in diesem Beispiel den Text **Nicht verfügbar**), ändern Sie die Bindung des Formatelements **Anweisung\\Partei\\Name** von `model.Vendor.Name` zu `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. Sie können auch den Ausdruck `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")` verwenden.
+Wenn Sie die Daten, die in ein generiertes Dokument eingegeben werden, explizit angeben möchten, wenn die Datenquelle `model.Vendor` vom Typ **Datensatzliste** keine Datensätze zurückgibt (in diesem Beispiel den Text **Nicht verfügbar**), ändern Sie die Bindung des Formatelements **Anweisung\\Partei\\Name** von `model.Vendor.Name` in `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. Sie können auch den Ausdruck `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")` verwenden.
 
 ### <a name="additional-consideration"></a><a id="i9a"></a>Zusätzliche Überlegung
 
-Die Inspektion warnt Sie auch vor einem anderen potenziellen Problem. Wenn Sie die Formatelemente **Anweisung\\Partei\\Name** und **Anweisung\\Partei\\AccountNum** an die entsprechenden Felder der Datenquelle **model.Vendor** vom Typ **Datensatzliste** binden, werden diese Bindungen standardmäßig ausgeführt und verwenden die Werte aus den entsprechenden Feldern des ersten Datensatzes aus der Datenquelle **model.Vendor**, falls diese Liste nicht leer ist.
+Die Inspektion warnt Sie auch vor einem anderen potenziellen Problem. Wenn Sie die Formatelemente **Anweisung\\Partei\\Name** und **Anweisung\\Partei\\AccountNum** an die entsprechenden Felder der Datenquelle `model.Vendor` vom Typ **Datensatzliste** binden, werden diese Bindungen standardmäßig ausgeführt und verwenden die Werte aus den entsprechenden Feldern des ersten Datensatzes aus der Datenquelle `model.Vendor`, falls diese Liste nicht leer ist.
 
-Da Sie das Formatelement **Anweisung\\Partei** nicht an die Datenquelle **model.Vendor** gebunden haben, wird das Element **Anweisung\\Partei** während der Formatausführung nicht für jeden Datensatz der Datenquelle **model.Vendor** wiederholt. Stattdessen wird ein generiertes Dokument nur mit Informationen aus dem ersten Datensatz der Datensatzliste gefüllt, wenn diese Liste mehrere Datensätze enthält. Daher kann ein Problem auftreten, wenn das Format ein generiertes Dokument mit Informationen zu allen Lieferanten aus der Datenquelle **model.Vendor** füllen soll. Um dieses Problem zu beheben, binden Sie das Element **Anweisung\\Parteii** an die Datenquelle **model.Vendor**.
+Da Sie das Formatelement **Anweisung\\Partei** nicht an die Datenquelle `model.Vendor` gebunden haben, wird das Element **Anweisung\\Partei** während der Formatausführung nicht für jeden Datensatz der Datenquelle `model.Vendor` wiederholt. Stattdessen wird ein generiertes Dokument nur mit Informationen aus dem ersten Datensatz der Datensatzliste gefüllt, wenn diese Liste mehrere Datensätze enthält. Daher kann ein Problem auftreten, wenn das Format ein generiertes Dokument mit Informationen zu allen Lieferanten aus der Datenquelle `model.Vendor` füllen soll. Um dieses Problem zu beheben, binden Sie das Element **Anweisung\\Partei** an die Datenquelle `model.Vendor`.
 
 ## <a name="executability-of-an-expression-with-filter-function-caching"></a><a id="i10"></a>Ausführbarkeit eines Ausdrucks mit FILTER-Funktion (Zwischenspeicherung)
 
@@ -699,7 +698,7 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
 14. Binden Sie die Formatelemente auf die folgende Weise an bereitgestellte Datenquellen:
 
-    - Binden Sie das Formatelement **Anweisung\\Partei** an das Datenquellenelement **model.Vendor** binden.
+    - Binden Sie das Formatelement **Anweisung\\Partei** an das Datenquellenelement `model.Vendor`.
     - Binden Sie das Formatelement **Anweisung\\Partei\\Name** an das Datenquellenfeld **model.Vendor.Name**.
     - Binden Sie das Formatelement **Anweisung\\Partei\\AccountNum** an das Datenquellenfeld **model.Vendor.AccountNumber**.
 
@@ -813,6 +812,3 @@ Informationen dazu, wie die Formatstruktur mit einer EB-Vorlage im Vorlagenedito
 [Überwachen der Ausführung von ER-Formaten zur Behebung von Leistungsproblemen](trace-execution-er-troubleshoot-perf.md)
 
 [Geschäftsdokumentverwaltung – Übersicht](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

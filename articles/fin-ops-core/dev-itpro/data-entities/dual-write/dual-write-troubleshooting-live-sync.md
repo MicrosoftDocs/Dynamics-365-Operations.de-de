@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: ca12759096bd1bafda0a5eee18287a694083db69
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 59c8bd80b167cdfaa7a65e469f4dc7ebf8f50844
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685562"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744612"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Live-Synchronisierungsprobleme behandeln
 
@@ -46,11 +46,11 @@ Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie eine Zeile i
 
 Befolgen Sie die Schritte, um das Problem zu beheben unter [Systemanforderungen und -voraussetzungen](requirements-and-prerequisites.md). Um diese Schritte auszuführen, müssen die Benutzer der Dual-Write-Anwendung, die in Dataverse erstellt wurde, die Systemadministratorrolle haben. Das Standard-Besitzerteam muss auch die Systemadministratorrolle haben.
 
-## <a name="live-synchronization-for-any-entity-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Bei der Live-Synchronisierung für eine Entität wird immer der gleiche Fehler ausgegeben, wenn Sie eine Zeile in einer Finance and Operations-App erstelllen.
+## <a name="live-synchronization-for-any-table-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Bei der Live-Synchronisierung für eine Tabelle wird immer der gleiche Fehler ausgegeben, wenn Sie eine Zeile in einer Finance and Operations-App erstellen.
 
 **Erforderliche Rolle zum Beheben der Fehler:** System Administrator
 
-Möglicherweise erhalten Sie jedes Mal eine Fehlermeldung wie die folgende, wenn Sie versuchen, Entitätsdaten in einer Finance and Operations App zu speichern:
+Möglicherweise erhalten Sie jedes Mal eine Fehlermeldung wie die folgende, wenn Sie versuchen, Tabellendaten in einer Finance and Operations-App zu speichern:
 
 *Die Änderungen können nicht in der Datenbank gespeichert werden. Arbeitseinheit kann keine Transaktion festschreiben. Daten können nicht in Entitäts-Uoms geschrieben werden. Das Schreiben in UnitOfMeasureEntity ist mit der Fehlermeldung fehlgeschlagen. Synchronisierung mit Entitäts-Uoms nicht möglich.*
 
@@ -58,8 +58,8 @@ Um das Problem zu beheben, müssen Sie sicherstellen, dass die erforderlichen Re
 
 Wenn auf beiden Seiten Daten vorhanden sind und Sie bestätigt haben, dass das Problem nicht datenbezogen ist, führen Sie die folgenden Schritte aus.
 
-1. Stoppen Sie die zugehörige Entität.
-2. Melden Sie sich bei der Finance and Operations-App an. Stellen Sie sicher, dass Zeilen für die fehlerhafte Entität in den Tabellen DualWriteProjectConfiguration und DualWriteProjectFieldConfiguration vorhanden sind. Beispielsweise sieht die Abfrage so aus, wenn die **Kundenentität** fehlschlägt.
+1. Stoppen Sie die zugehörige Tabelle.
+2. Melden Sie sich bei der Finance and Operations-App an. Stellen Sie sicher, dass Zeilen für die fehlerhafte Tabelle in den Tabellen DualWriteProjectConfiguration und DualWriteProjectFieldConfiguration vorhanden sind. Beispielsweise sieht die Abfrage so aus, wenn die Tabelle **Debitoren** fehlschlägt.
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -68,7 +68,7 @@ Wenn auf beiden Seiten Daten vorhanden sind und Sie bestätigt haben, dass das P
         EXTERNALENTITYNAME = 'accounts' 
     ```
 
-3. Wenn es Zeilen für die fehlerhafte Entität gibt, auch nachdem Sie die Tabellenzuordnung gestoppt haben, löschen Sie die Zeilen, die sich auf die fehlerhafte Entität beziehen. Notieren Sie sich die Spalte **projectname** in der Tabelle DualWriteProjectConfiguration und rufen Sie den Datensatz in der Tabelle DualWriteProjectFieldConfiguration ab, indem Sie die Zeile mithilfe des Projektnamens löschen.
+3. Wenn es Zeilen für die fehlerhafte Tabelle gibt, auch nachdem Sie die Tabellenzuordnung gestoppt haben, löschen Sie die Zeilen, die sich auf die fehlerhafte Tabelle beziehen. Notieren Sie sich die Spalte **projectname** in der Tabelle DualWriteProjectConfiguration, und rufen Sie die Zeile in der Tabelle DualWriteProjectFieldConfiguration ab, indem Sie die Zeile mithilfe des Projektnamens löschen.
 4. Starten Sie die Tabellenzuordnung. Überprüfen Sie, ob die Daten ohne Probleme synchronisiert werden.
 
 ## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Behandeln Sie Lese- oder Schreibberechtigungsfehler, wenn Sie Daten in einer Finance and Operations App erstellen
@@ -127,6 +127,3 @@ Führen Sie folgende Schritte aus, um das Problem zu beheben.
 
 3. Stellen Sie sicher, dass die **externalenvironmentURL** Spalte die richtige Dataverse oder App-URL hat. Löschen Sie doppelte Zeilen, die auf die falsche Dataverse-URL verweisen. Löschen Sie die entsprechenden Zeilen in den Tabellen DUALWRITEPROJECTFIELDCONFIGURATION und DUALWRITEPROJECTCONFIGURATION.
 4. Stoppen Sie die Tabellenzuordnung und starten Sie sie neu.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 6a0f114bce6bdb7813c93e9441744d67cd043c30
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683730"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744374"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migration vom Währungsdatentyp für duales Schreiben
 
@@ -44,11 +44,11 @@ Die Migration ist optional. Wenn Sie möglicherweise mehr Dezimalstellen unterst
 
 ## <a name="requesting-migration-from-microsoft"></a>Fordern Sie die Migration von Microsoft an
 
-Speicherung für vorhandene Währungsfelder in Dataverse kann nicht mehr als vier Dezimalstellen unterstützen. Daher werden während des Migrationsprozesses Währungswerte in neue interne Felder in der Datenbank kopiert. Dieser Vorgang wird kontinuierlich ausgeführt, bis alle Daten migriert wurden. Intern ersetzen am Ende der Migration die neuen Speichertypen die alten Speichertypen, die Datenwerte bleiben jedoch unverändert. Die Währungsfelder können dann bis zu 10 Dezimalstellen unterstützen. Während des Migrationsprozesses kann Dataverse ohne Unterbrechung weiter verwendet werden.
+Speicherung für vorhandene Währungsspalten in Dataverse kann nicht mehr als vier Dezimalstellen unterstützen. Daher werden während des Migrationsprozesses Währungswerte in neue interne Spalten in der Datenbank kopiert. Dieser Vorgang wird kontinuierlich ausgeführt, bis alle Daten migriert wurden. Intern ersetzen am Ende der Migration die neuen Speichertypen die alten Speichertypen, die Datenwerte bleiben jedoch unverändert. Die Währungsspalten können dann bis zu 10 Dezimalstellen unterstützen. Während des Migrationsprozesses kann Dataverse ohne Unterbrechung weiter verwendet werden.
 
 Gleichzeitig werden die Wechselkurse so geändert, dass sie bis zu 12 Dezimalstellen anstelle der aktuellen Grenze von 10 unterstützen. Diese Änderung ist erforderlich, damit die Anzahl der Dezimalstellen in der Finance and Operations App und Dataverse gleich ist.
 
-Die Migration ändert keine Daten. Nach der Konvertierung der Währungs- und Wechselkursfelder können Administratoren das System so konfigurieren, dass bis zu 10 Dezimalstellen für Währungsfelder verwendet werden, indem die Anzahl der Dezimalstellen für jede Transaktionswährung und die Preisgestaltung angegeben werden.
+Die Migration ändert keine Daten. Nach der Konvertierung der Währungs- und Wechselkursspalten können Administratoren das System so konfigurieren, dass bis zu 10 Dezimalstellen für Währungsspalten verwendet werden, indem die Anzahl der Dezimalstellen für jede Transaktionswährung und die Preisgestaltung angegeben werden.
 
 ### <a name="request-a-migration"></a>Fordern Sie eine Migration an
 
@@ -72,29 +72,26 @@ Nachdem die Migration abgeschlossen ist, kann Dataverse Zahlen mit mehr Dezimals
 
 Um diese Änderung vorzunehmen, müssen Sie die folgenden Einstellungen in Power Apps aktualisieren:
 
-+ **Systemeinstellungen: Währungsgenauigkeit für die Preisgestaltung** – Das Feld **Legen Sie die Währungsgenauigkeit fest, die für die Preisgestaltung im gesamten System verwendet wird** definiert, wie sich die Währung für die Organisation verhält, wenn **Preisgenauigkeit** ausgewählt ist.
-+ **Geschäftsführung: Währungen** – Im Feld **Währungspräzision** können Sie eine benutzerdefinierte Anzahl von Dezimalstellen für eine bestimmte Währung angeben. Es gibt einen Fallback für die organisationsweite Einstellung.
++ **Systemeinstellungen: Währungsgenauigkeit für die Preisgestaltung** – Die Spalte **Legen Sie die Währungsgenauigkeit fest, die für die Preisgestaltung im gesamten System verwendet wird** definiert, wie sich die Währung für die Organisation verhält, wenn **Preisgenauigkeit** ausgewählt ist.
++ **Geschäftsführung: Währungen** – In der Spalte **Währungspräzision** können Sie eine benutzerdefinierte Anzahl von Dezimalstellen für eine bestimmte Währung angeben. Es gibt einen Fallback für die organisationsweite Einstellung.
 
 Im Folgenden finden Sie einige Beschränkungen:
 
-+ Sie können das Währungsfeld für eine Entität nicht konfigurieren.
++ Sie können die Währungsspalte in einer Tabelle nicht konfigurieren.
 + Sie können mehr als vier Dezimalstellen auf den Ebenen **Preisgestaltung** und **Transaktionswährung** angeben.
 
 ### <a name="system-settings-currency-precision-for-pricing"></a>Systemeinstellungen: Währungsgenauigkeit für die Preisgestaltung
 
-Nach Abschluss der Migration können Administratoren die Währungsgenauigkeit festlegen. Gehen Sie zu **Einstellungen \> Verwaltung** und wählen Sie **Systemeinstellungen**. Dann auf der Registerkarte **Allgemein** ändern Sie den Wert vom Feld **Legen Sie die Währungsgenauigkeit fest, die für die Preisgestaltung im gesamten System verwendet wird** wie in der folgenden Abbildung gezeigt.
+Nach Abschluss der Migration können Administratoren die Währungsgenauigkeit festlegen. Gehen Sie zu **Einstellungen \> Verwaltung** und wählen Sie **Systemeinstellungen**. Dann auf der Registerkarte **Allgemein** ändern Sie den Wert der Spalte **Legen Sie die Währungsgenauigkeit fest, die für die Preisgestaltung im gesamten System verwendet wird** wie in der folgenden Abbildung gezeigt.
 
 ![Systemeinstellungen für Währung](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Geschäftsdokumentverwaltung: Währungen
 
-Wenn Sie verlangen, dass die Währungsgenauigkeit für eine bestimmte Währung von der Währungsgenauigkeit abweicht, die für die Preisgestaltung verwendet wird, können Sie sie ändern. Gehen Sie zu **Einstellungen \> Geschäftsführung**, wählen **Währungen** und wählen die zu ändernde Währung aus. Dann stellen Sie das Feld **Währungspräzision** auf die Anzahl der gewünschten Dezimalstellen, wie in der folgenden Abbildung gezeigt.
+Wenn Sie verlangen, dass die Währungsgenauigkeit für eine bestimmte Währung von der Währungsgenauigkeit abweicht, die für die Preisgestaltung verwendet wird, können Sie sie ändern. Gehen Sie zu **Einstellungen \> Geschäftsführung**, wählen **Währungen** und wählen die zu ändernde Währung aus. Dann stellen Sie die Spalte **Währungspräzision** auf die Anzahl der gewünschten Dezimalstellen ein, wie in der folgenden Abbildung gezeigt.
 
 ![Währungseinstellungen für ein bestimmtes Gebietsschema](media/specific-currency.png)
 
-### <a name="tables-currency-field"></a>Tabellen: Währungsfeld
+### <a name="tables-currency-column"></a>Tabellen: Währungsspalte
 
-Die Anzahl der Dezimalstellen, die für bestimmte Währungsfelder konfiguriert werden können, ist auf vier begrenzt.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+Die Anzahl der Dezimalstellen, die für bestimmte Währungsspalten konfiguriert werden können, ist auf vier begrenzt.

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 2f0e3950f2b35dd8b8dbf50601b7d6b6d624863e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bbe634b87b3cb30ed993f9b3afeb4321d70f07e6
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683674"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744878"
 ---
 # <a name="company-concept-in-dataverse"></a>Unternehmenskonzept in Dataverse
 
@@ -36,7 +36,7 @@ In Finance and Operations ist das Konzept *Unternehmen* sowohl ein juristisches 
 
 Dataverse hat kein entsprechendes Konzept. Das nächste Konzept ist *Unternehmenseinheit*, das in erster Linie eine Sicherheits- und Sichtbarkeitsgrenze für Benutzerdaten ist. Dieses Konzept besitzt nicht die gleichen rechten oder geschäftlichen Auswirkungen wie das Unternehmenskonzept.
 
-Da Unternehmenseinheit und Unternehmen keine entsprechenden Konzepte sind, ist es nicht möglich, eine 1:1-Zuordnung zum Zwecke der Dataverse-Integration zu erzwingen. Da Benutzer aber standardmäßig in der Lage sein müssen, dieselben Zeilen in der Anwendung und in Dataverse anzuzeigen, hat Microsoft eine neue Entität in Dataverse mit dem Namen „cdm\_Company“ eingeführt. Diese Entität entspricht der Unternehmensentität in der Anwendung. Um sicherzustellen, dass die Sichtbarkeit von Zeilen in der Anwendung und in Dataverse standardmäßig äquivalent ist, empfehlen wir die folgende Einstellung für Daten in Dataverse:
+Da Unternehmenseinheit und Unternehmen keine entsprechenden Konzepte sind, ist es nicht möglich, eine 1:1-Zuordnung zum Zwecke der Dataverse-Integration zu erzwingen. Da Benutzer aber standardmäßig in der Lage sein müssen, dieselben Zeilen in der Anwendung und in Dataverse anzuzeigen, hat Microsoft eine neue Tabelle in Dataverse mit dem Namen „cdm\_Company“ eingeführt. Diese Tabelle entspricht der Unternehmenstabelle in der Anwendung. Um sicherzustellen, dass die Sichtbarkeit von Zeilen in der Anwendung und in Dataverse standardmäßig äquivalent ist, empfehlen wir die folgende Einstellung für Daten in Dataverse:
 
 + Für jede Unternehmensdatenszeile in Finance and Operations, für die duales Schreiben aktiviert ist, wird eine zugehörige cdm\_Company-Zeile erstellt.
 + Wenn eine cdm\_Company-Zeile erstellt und für duales Schreiben aktiviert wird, wird eine Standardunternehmenseinheit mit demselben Namen erstellt. Es wird zwar automatisch ein Standardteam für diese Geschäftseinheit erstellt, die Geschäftseinheit wird aber nicht verwendet.
@@ -52,23 +52,23 @@ Aufgrund dieser Konfiguration ist jede Zeile, due mit dem USMF-Unternehmen verkn
 + Die Rolle „Vertriebsmanager“ ist Mitgliedern des Teams „USMF-Vertrieb“ zugewiesen.
 + Benutzer mit der Rolle „Vertriebsmanager“ können auf beliebige Kontozeilen zugreifen, die Mitglieder derselben Unternehmenseinheit wie sie sind.
 + Das Team „USMF-Vertrieb“ wird mit der zuvor erwähnten USMF-Geschäftseinheit verknüpft.
-+ Daher können Mitglieder des Teams „USMF-Vertrieb“ ein beliebiges Konto sehen, das im Besitz des Benutzers „USMF DW“ ist, der von der USMF-Unternehmenseinheit in Finance and Operations stammt.
++ Daher können Mitglieder des Teams „USMF-Vertrieb“ ein beliebiges Konto sehen, das im Besitz des Benutzers „USMF DW“ ist, der aus der Tabelle des USMF-Unternehmens in Finance and Operations stammt.
 
 ![Wie Teams verwendet werden können](media/dual-write-company-2.png)
 
 Wie in der vorherigen Abbildung dargestellt, ist diese 1:1-Zuordnung zwischen Geschäftseinheit, Unternehmen und Team nur ein Anfangspunkt. In diesem Beispiel wird eine neue Geschäftseinheit „Europa“ manuell in Dataverse als übergeordnetes Element für DEMF und ESMF erstellt. Diese neue Stammgeschäftseinheit ist nicht mit dem dualen Schreiben verknüpft. Sie kann allerdings verwendet werden, um Mitgliedern des Teams „EUR-Vertrieb“ Zugriff auf Kontodaten sowohl in DEMF als auch in ESMF zu gewähren, indem die Datensichtbarkeit in der zugehörigen Sicherheitsrolle auf **Übergeordnete/untergeordnete Geschäftseinheit** festgelegt wird.
 
-Ein abschließendes Thema ist, wie durch das duale Schreiben bestimmt wird, welchem Eigentümerteam Zeilen zugewiesen werden sollen. Dieses Verhalten wird vom Feld **Standardeigentümerteam** in der Zeile cdm\_Company gesteuert. Wenn eine cdm\_Company-Zeile für duales Schreiben aktiviert ist, erstellt ein Plug-In automatisch die zugewiesene Unternehmenseinheit sowie das Eigentümerteam (wenn nicht bereits vorhanden) und legt das Feld **Standardeigentümerteam** fest. Der Administrator kann das Feld in einen anderen Wert ändern. Allerdings kann der Administrator das Feld nicht deaktivieren, sofern die Entität für duales Schreiben aktiviert ist.
+Ein abschließendes Thema ist, wie durch das duale Schreiben bestimmt wird, welchem Eigentümerteam Zeilen zugewiesen werden sollen. Dieses Verhalten wird von der Spalte **Standardeigentümerteam** in der Zeile cdm\_Company gesteuert. Wenn eine cdm\_Company-Zeile für duales Schreiben aktiviert ist, erstellt ein Plug-In automatisch die zugewiesene Unternehmenseinheit sowie das Eigentümerteam (wenn nicht bereits vorhanden) und legt die Spalte **Standardeigentümerteam** fest. Der Administrator kann die Spalte in einen anderen Wert ändern. Allerdings kann der Administrator die Spalte nicht deaktivieren, sofern die Tabelle für duales Schreiben aktiviert ist.
 
 > [!div class="mx-imgBorder"]
-![Feld „Standardeigentümerteam“](media/dual-write-default-owning-team.jpg)
+![Spalte „Standardeigentümerteam“](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Unternehmensstriping und Bootstrapping
 
-Die Dataverse-Integration bringt Unternehmensparität durch Verwendung eines Unternehmensbezeichners zum Kennzeichen von Daten. Wie in der folgenden Abbildung dargestellt, werden alle unternehmensspezifischen Tabellen so erweitert, dass sie eine Viele-zu-Eins-Beziehung (N:1) mit der cdm\_Company-Entität haben.
+Die Dataverse-Integration bringt Unternehmensparität durch Verwendung eines Unternehmensbezeichners zum Kennzeichen von Daten. Wie in der folgenden Abbildung dargestellt, werden alle unternehmensspezifischen Tabellen so erweitert, dass sie eine Viele-zu-Eins-Beziehung (N:1) mit der cdm\_Company-Tabelle haben.
 
 > [!div class="mx-imgBorder"]
-![N:1-Beziehung zwischen einer unternehmensspezifischen Entität und der cdm_Company-Entität](media/dual-write-bootstrapping.png)
+![N:1-Beziehung zwischen einer unternehmensspezifischen Tabelle und der cdm_Company-Tabelle](media/dual-write-bootstrapping.png)
 
 + Für Zeilen wird der Wert schreibgeschützt, nachdem ein Unternehmen hinzugefügt und gespeichert wird. Daher sollten Benutzer sicherstellen, dass Sie das korrekte Unternehmen auswählen.
 + Nur Zeilen mit Unternehmensdaten kommen für duales Schreiben zwischen der Anwendung und Dataverse infrage.
@@ -83,7 +83,7 @@ Es gibt verschiedene Möglichkeiten, den Unternehmensnamen in Kundenbindungs-App
 
     :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Legen Sie im Abschnitt Organisationsinformationen das Standardunternehmen fest.":::
 
-+ Wenn Sie **Schreib**-Zugriff auf die Entität **SystemUser** für die Ebene **Unternehmenseinheit** haben, können Sie das Standardunternehmen auf jedem beliebigen Formular ändern, indem Sie ein Unternehmen aus dem Dropdownmenü **Unternehmen** auswählen.
++ Wenn Sie **Schreib**-Zugriff auf die Tabelle **SystemUser** für die Ebene **Unternehmenseinheit** haben, können Sie das Standardunternehmen auf jedem beliebigen Formular ändern, indem Sie ein Unternehmen aus dem Dropdownmenü **Unternehmen** auswählen.
 
     :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Ändern des Unternehmensnamens bei einem neuen Konto.":::
 
@@ -93,15 +93,12 @@ Es gibt verschiedene Möglichkeiten, den Unternehmensnamen in Kundenbindungs-App
 
 + Wenn Sie ein Systemkonfigurator oder -Administrator sind und Unternehmensdaten automatisch in ein benutzerdefiniertes Formular einfügen möchten, können Sie [Formularereignisse](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) verwenden. Fügen Sie einen JavaScript-Verweis auf **msdyn_/DefaultCompany.js** hinzu, und verwenden Sie die folgenden Ereignisse. Sie können jedes sofort einsatzbereite Formular verwenden, z. B. das **Konto**-Formular.
 
-    + **OnLoad**-Ereignis für das Formular: Legen Sie das Feld **defaultCompany** fest.
-    + **OnChange**-Ereignis für das Feld **Unternehmen**: Legen Sie das Feld **updateDefaultCompany** fest.
+    + **OnLoad**-Ereignis für das Formular: Legen Sie die Spalte **defaultCompany** fest.
+    + **OnChange**-Ereignis für die Spalte **Unternehmen**: Legen Sie die Spalte **updateDefaultCompany** fest.
 
 ## <a name="apply-filtering-based-on-the-company-context"></a>Wenden Sie die Filterung basierend auf dem Unternehmenskontext an
 
-Um die Filterung in Ihren benutzerdefinierten Formularen oder in benutzerdefinierten Suchfeldern, die den Standardformularen hinzugefügt wurden, basierend auf dem Unternehmenskontext anzuwenden, öffnen Sie das Formular, und verwenden Sie den Abschnitt **Filterung zugehöriger Datensätze**, um den Unternehmensfilter anzuwenden. Sie müssen dies für jedes Suchfeld festlegen, das die Filterung basierend auf dem zugrunde liegenden Unternehmen für eine bestimmte Zeile erfordert. Die Einstellung wird für **Konto** in der folgenden Abbildung angezeigt.
+Um die Filterung in Ihren benutzerdefinierten Formularen oder in benutzerdefinierten Suchspalten, die den Standardformularen hinzugefügt wurden, basierend auf dem Unternehmenskontext anzuwenden, öffnen Sie das Formular, und verwenden Sie den Abschnitt **Filterung zugehöriger Datensätze**, um den Unternehmensfilter anzuwenden. Sie müssen dies für jede Suchspalte festlegen, die die Filterung basierend auf dem zugrunde liegenden Unternehmen für eine bestimmte Zeile erfordert. Die Einstellung wird für **Konto** in der folgenden Abbildung angezeigt.
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Unternehmenskontext anwenden":::
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

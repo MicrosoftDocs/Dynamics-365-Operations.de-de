@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7070748a7712d257318aff559e7b115da15b67f0
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 10f7e790fdab3866958af1fa131d25735f69a58c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694518"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798449"
 ---
 # <a name="configure-and-filter-workspaces"></a>Arbeitsbereiche konfigurieren und Filtern
 
@@ -63,6 +63,3 @@ Wenn einzelne Bereiche des Arbeitsbereichs Filter haben, können Sie jeden Absch
 [![Arbeitsbereich-Abschnitts-Filter](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Wie bei einem Arbeitsbereich-weiten Filter wählen Sie den gewünschten Filterwert aus oder geben ihn ein, um die angezeigten Inhalte des Bereichs einzugrenzen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

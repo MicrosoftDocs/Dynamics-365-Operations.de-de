@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 24d89e061cc3dfc4ef0d350730525ac5ab7af775
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 4dcee425fc1225dcfcf8ba4282f4176acfeaa268
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694664"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796801"
 ---
 # <a name="configure-the-global-address-book"></a>Konfigurieren des globalen Adressbuchs
 
@@ -45,6 +45,3 @@ Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist
 13. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Halten Sie die UMSCHALTTASTE gedrückt, um mehrere Rollen auszuwählen und diese dem Bereich **Ausgewählte Rollen** hinzuzufügen. Klicken Sie dann auf den Pfeil, um die ausgewählten Rollen hinzuzufügen.  
 14. Klicken Sie auf **Speichern**.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

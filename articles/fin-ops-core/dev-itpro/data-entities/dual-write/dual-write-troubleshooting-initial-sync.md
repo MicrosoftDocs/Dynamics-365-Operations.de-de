@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a7ba4fa4771324b4bcb8464649bd8ce8f32024c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683557"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744636"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Probleme bei der anfänglichen Synchronisierung behandeln
 
@@ -98,7 +98,7 @@ Möglicherweise wird eine Fehlernachricht angezeigt, die dem folgenden Beispiel 
 
 ## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-table-mapping"></a><a id="error-vendor-map"></a>Fehler in der Tabellenzuordnung von Lieferanten V2 zu msdyn_vendors beheben
 
-Möglicherweise treten auf dem Computer die folgenden anfänglichen Synchronisierungsfehler für die Zuordnung **Lieferanten V2** zu **msdyn\_vendors** auf, wenn die Tabellen vorhandene Zeilen mit Werten in den Feldern **PrimaryContactPersonId** und **InvoiceVendorAccountNumber** haben. Diese Fehler passieren, weil **InvoiceVendorAccountNumber** ein selbstreferenzierendes Feld ist und **PrimaryContactPersonId** eine Zirkelreferenz in der Lieferantenzuordnung ist.
+Möglicherweise treten auf dem Computer die folgenden anfänglichen Synchronisierungsfehler für die Zuordnung **Kreditoren V2** zu **msdyn\_vendors** auf, wenn die Tabellen vorhandene Zeilen mit Werten in den Spalten **PrimaryContactPersonId** und **InvoiceVendorAccountNumber** haben. Diese Fehler passieren, weil **InvoiceVendorAccountNumber** eine selbstreferenzierende Spalte ist und **PrimaryContactPersonId** eine Zirkelreferenz in der Kreditorenzuordnung ist.
 
 Die Fehlermeldungen, die Sie erhalten, haben das folgende Formular.
 
@@ -109,26 +109,26 @@ Im Folgenden finden Sie einige Beispiele hierfür:
 - *Die Anleitung für das Feld konnte nicht aufgelöst werden: msdy\_vendorprimarycontactperson.msdyn\_contactpersonid. Die Suche wurde nicht gefunden: 000056. Versuchen Sie diese URLs, um zu überprüfen, ob die Referenzdaten vorhanden sind: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Die Anleitung für das Feld konnte nicht aufgelöst werden: msdyn\_.invoicevendoraccountnumber.msdyn\_vendoraccountnumber. Die Suche wurde nicht gefunden: V24-1. Testen Sie diese URL(s), um zu prüfen, ob die Referenzdaten vorhanden sind: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-Wenn Sie Zeilen mit Werten in der Lieferantenentität in den Feldern **PrimaryContactPersonID** und **InvoiceVendorAccountNumber** haben, führen Sie die Schritte im folgenden Abschnitt aus, um die erste Synchronisierung erfolgreich abzuschließen.
+Wenn Sie Zeilen mit Werten in der Kreditorentabelle in den Spalten **PrimaryContactPersonID** und **InvoiceVendorAccountNumber** haben, führen Sie die Schritte im folgenden Abschnitt aus, um die erste Synchronisierung erfolgreich abzuschließen.
 
-1. In der Finance and Operations App löschen Sie die **PrimaryContactPersonId** und **InvoiceVendorAccountNumber** Felder aus der Zuordnung und speichern Sie die Änderungen.
+1. In der Finance and Operations-App löschen Sie die Spalten **PrimaryContactPersonId** und **InvoiceVendorAccountNumber** aus der Zuordnung, und speichern Sie die Änderungen.
 
     1. Wählen Sie auf der Zuordnungsseite für duales Schreiben für **Lieferant V2 (msdyn\_vendors)** auf der Registerkarte **Tabellenzuordnungen** im linken Filter **Finance and Operations apps.Vendors V2** aus. Wählen Sie im rechten Filter **Sales.Vendor**.
-    2. Suchen Sie nach **Hauptkontaktperson**, um das Quellfeld zu finden **PrimaryContactPersonId**.
+    2. Suchen Sie nach **primarycontactperson**, um das Quellfeld **PrimaryContactPersonId** zu finden.
     3. Wählen Sie **Aktionen** und dann **Löschen**.
 
-        ![Löschen des Felds PrimaryContactPersonId](media/vend_selfref3.png)
+        ![Löschen der Spalte „PrimaryContactPersonId“](media/vend_selfref3.png)
 
-    4. Wiederholen Sie diese Schritte, um das Feld **InvoiceVendorAccountNumber** zu löschen.
+    4. Wiederholen Sie diese Schritte, um die Spalte **InvoiceVendorAccountNumber** zu löschen.
 
-        ![Löschen Sie das Feld InvoiceVendorAccountNumber](media/vend-selfref4.png)
+        ![Löschen des Feldes „InvoiceVendorAccountNumber“](media/vend-selfref4.png)
 
     5. Speichern Sie Ihre Änderungen am Mapping.
 
-2. Deaktivieren Sie die Änderungsverfolgung für **Anbieter V2** Entität.
+2. Deaktivieren Sie die Änderungsverfolgung für die Tabelle **Kreditoren V2**.
 
     1. Im Arbeitsbereich **Datenmanagement** wählen Sie die Kachel **Datentabellen** aus.
-    2. Wählen Sie die Entität **Anbieter V2** aus.
+    2. Wählen Sie die Tabelle **Kreditoren V2** aus.
     3. Wählen Sie im Aktionsbereich **Optionen** und wählen Sie dann **Änderungsnachverfolgung**.
 
         ![Auswahl der Option Änderungsnachverfolgung ändern](media/selfref_options.png)
@@ -138,14 +138,14 @@ Wenn Sie Zeilen mit Werten in der Lieferantenentität in den Feldern **PrimaryCo
         ![Wählen Sie Änderungsverfolgung deaktivieren](media/selfref_tracking.png)
 
 3. Führen Sie die erste Synchronisierung erneut für die **Anbieter V2** (msdyn\_vendors) Zuordnung aus. Die erstmalige Synchronisierung sollte ohne Fehler erfolgreich ausgeführt werden.
-4. Führen Sie die erste Synchronisierung für **CDS-Kontakte V2 (Kontakte)** Zuordnung aus. Sie müssen diese Zuordnung synchronisieren, wenn Sie das primäre Kontaktfeld auf der Entität des Lieferanten synchronisieren möchten, da die Kontaktzeilen zunächst synchronisiert werden müssen.
-5. Fügen Sie die Felder **PrimaryContactPersonId** und **InvoiceVendorAccountNumber** wieder der **Anbieter V2 (msdyn\_vendors)** Zuordnung hinzu und speichern Sie die Zuordnung.
+4. Führen Sie die erste Synchronisierung für **CDS-Kontakte V2 (Kontakte)** Zuordnung aus. Sie müssen diese Zuordnung synchronisieren, wenn Sie die Spalte des primären Kontakts in der Tabelle der Kreditoren synchronisieren möchten, da die Kontaktzeilen zunächst synchronisiert werden müssen.
+5. Fügen Sie die Spalten **PrimaryContactPersonId** und **InvoiceVendorAccountNumber** wieder der **Kreditor V2 (msdyn\_vendors)** Zuordnung hinzu, und speichern Sie die Zuordnung.
 6. Führen Sie die erste Synchronisierung noch einmal für die **Anbieter V2** (msdyn\_vendors) Zuordnung aus. Weil die Änderungsnachverfolgung deaktiviert ist, werden alle Zeilen synchronisiert.
-7. Aktivieren Sie die Änderungsverfolgung für die **Anbieter V2** Entität.
+7. Aktivieren Sie die Änderungsnachverfolgung für die Tabelle **Kreditor V2**.
 
 ## <a name="resolve-errors-in-the-customers-v3toaccounts-table-mapping"></a><a id="error-customer-map"></a>Beheben von Fehlern in der Tabellenzuordnung von Kunden V3 zu Konten
 
-Möglicherweise treten auf dem Computer die folgenden anfänglichen Synchronisierungsfehler von **Kunden V3** zu **Konten** auf, wenn die Tabellen vorhandene Zeilen mit Werten in den Feldern **ContactPersonID** und **InvoiceAccount** haben. Diese Fehler passieren, weil **InvoiceAccount** ein selbstreferenzierendes Feld ist und **ContactPersonId** eine Zirkelreferenz in der Lieferantenzuordnung ist.
+Möglicherweise treten auf dem Computer die folgenden anfänglichen Synchronisierungsfehler von **Debitoren V3** zu **Konten** auf, wenn die Tabellen vorhandene Zeilen mit Werten in den Spalten **ContactPersonID** und **InvoiceAccount** haben. Diese Fehler passieren, weil **InvoiceAccount** eine selbstreferenzierende Spalte ist und **ContactPersonId** eine Zirkelreferenz in der Kreditorenzuordnung ist.
 
 Die Fehlermeldungen, die Sie erhalten, haben das folgende Formular.
 
@@ -156,26 +156,26 @@ Im Folgenden finden Sie einige Beispiele hierfür:
 - *Die Anleitung für das Feld konnte nicht aufgelöst werden: primarycontactid.msdyn\_contactpersonid. Die Suche wurde nicht gefunden: 000056. Versuchen Sie diese URLs, um zu überprüfen, ob die Referenzdaten vorhanden sind: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Die Anleitung für das Feld konnte nicht aufgelöst werden: msdyn\_billingaccount.accountnumber. Die Suche wurde nicht gefunden: 1206-1. Versuchen Sie diese URLs, um zu überprüfen, ob die Referenzdaten vorhanden sind: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-Wenn Sie Zeilen mit Werten in der Lieferantenentität in den Feldern **ContactPersonID** und **InvoiceAccount** haben, führen Sie die Schritte im folgenden Abschnitt aus, um die erste Synchronisierung erfolgreich abzuschließen. Sie können diesen Ansatz für alle sofort einsatzbereiten Tabellen wie **Konten** und **Kontakte** verwenden.
+Wenn Sie Zeilen mit Werten in der Debitorentabelle in den Spalten **ContactPersonID** und **InvoiceAccount** haben, führen Sie die Schritte im folgenden Abschnitt aus, um die erste Synchronisierung erfolgreich abzuschließen. Sie können diesen Ansatz für alle sofort einsatzbereiten Tabellen wie **Konten** und **Kontakte** verwenden.
 
-1. In der Finance and Operations App löschen Sie Felder **ContactPersonID** und **InvoiceAccount** aus der Zuordnung **Kunden V3 (Konten)** und speichern Sie dann die Zuordnung.
+1. In der Finance and Operations-App löschen Sie Spalten **ContactPersonID** und **InvoiceAccount** aus der Zuordnung **Debitoren V3 (Konten)**, und speichern Sie dann die Zuordnung.
 
     1. Wählen Sie auf der Zuordnungsseite für duales Schreiben für **Kunden V3 (Konten)** auf der Registerkarte **Tabellenzuordnungen** im linken Filter **Finance and Operations app.Customers V3** aus. Wählen Sie im rechten Filter **Dataverse Konto**.
-    2. Suchen Sie nach **contactperson**, um das Quellfeld **ContactPersonID** zu finden.
+    2. Suchen Sie nach **contactperson**, um die Quellspalte **ContactPersonID** zu finden.
     3. Wählen Sie **Aktionen** und dann **Löschen**.
 
-        ![Löschen des Felds ContactPersonId](media/cust_selfref3.png)
+        ![Löschen der Spalte „ContactPersonID“](media/cust_selfref3.png)
 
-    4. Wiederholen Sie diese Schritte, um das Feld **InvoiceAccount** zu löschen.
+    4. Wiederholen Sie diese Schritte, um die Spalte **InvoiceAccount** zu löschen.
 
-        ![Löschen des Felds InvoiceAccount](media/cust_selfref4.png)
+        ![Löschen der Spalte „InvoiceAccount“](media/cust_selfref4.png)
 
     5. Speichern Sie Ihre Änderungen am Mapping.
 
-2. Deaktivieren Sie die Änderungsverfolgung für **Debitor V3** Entität.
+2. Deaktivieren Sie die Änderungsverfolgung für die Tabelle **Debitoren V3**.
 
     1. Im Arbeitsbereich **Datenmanagement** wählen Sie die Kachel **Datentabellen** aus.
-    2. Wählen Sie die Entität **Customers V3** aus.
+    2. Wählen Sie die Tabelle **Debitoren V3** aus.
     3. Wählen Sie im Aktionsbereich **Optionen** und wählen Sie dann **Änderungsnachverfolgung**.
 
         ![Auswahl der Option Änderungsnachverfolgung ändern](media/selfref_options.png)
@@ -190,7 +190,7 @@ Wenn Sie Zeilen mit Werten in der Lieferantenentität in den Feldern **ContactPe
     > [!NOTE]
     > Es gibt zwei Karten mit demselben Namen. Stellen Sie sicher, dass Sie jene Zuordnung mit der folgenden Beschreibung auf der Registerkarte **Details** auswählen: Duales Schreiben für die Synchronisierung zwischen FO.CDS-Kontakten V2 und CDS.Contacts.  Benötigt neues Paket \[**Dynamics365SupplyChainExtended\].**
 
-5. In der  App fügen Sie die Felder **InvoiceAccount** und **ContactPersonID** wieder der **Kunden V3 (Konten)** Zuordnung hinzu und speichern Sie dann die Zuordnung. Jetzt sind das Feld **Rechnungskonto** und das Feld **ContactPersonID** wieder Teil des Live-Synchronisationsmodus. Im nächsten Schritt machen Sie die anfängliche Synchronisierung für diese Felder.
+5. Fügen Sie die Spalten **InvoiceAccount** und **ContactPersonID** wieder der Zuordnung **Debitoren V3 (Konten)** hinzu, und speichern Sie dann die Zuordnung. Jetzt sind die Spalte **InvoiceAccount** und die Spalte **ContactPersonID** wieder Teil des Live-Synchronisationsmodus. Im nächsten Schritt machen Sie die anfängliche Synchronisierung für diese Spalten.
 6. Führen Sie die erste Synchronisierung noch einmal für die **Debitoren V3 (Konten)** Zuordnung aus. Da die Änderungsverfolgung deaktiviert ist, werden die Daten für **InvoiceAccount** und **ContactPersonId** von der Finance and Operations App zu Dataverse synchronisiert.
 7. Um die Daten für **Rechnungskonto** und **ContactPersonId** von Dataverse zu Finance and Operations zu synchronisieren, müssen Sie ein Datenintegrationsprojekt verwenden.
 
@@ -202,7 +202,7 @@ Wenn Sie Zeilen mit Werten in der Lieferantenentität in den Feldern **ContactPe
 
     2. Fügen Sie die Firmenkriterien im Filter auf der Seite von Dataverse ein, da nur die Zeilen, die den Filterkriterien entsprechen, in der Finance and Operations-App aktualisiert werden. Wählen Sie zum Hinzufügen die Schaltfläche Filter. In dem Dialog **Abfrage bearbeiten** können Sie eine Filterabfrage hinzufügen wie **\_msdyn\__company\_value eq\<guid\>**. 
 
-        > [HINWEIS] Wenn die Schaltfläche „Filter“ nicht vorhanden ist, erstellen Sie ein Supportticket, um das Datenintegrationsteam zu bitten, die Filterfunktion für Ihren Mandanten zu aktivieren.
+        > [HINWEIS] Wenn die Schaltfläche Filter nicht vorhanden ist, erstellen Sie ein Support-Ticket, um das Datenintegrationsteam zu bitten, die Filterfunktion für Ihren Mandanten zu aktivieren.
 
         Wenn Sie keine Filterabfrage für **\_msdyn\_company\_value** eingeben, werden alle Zeilen synchronisiert.
 
@@ -210,7 +210,4 @@ Wenn Sie Zeilen mit Werten in der Lieferantenentität in den Feldern **ContactPe
 
     Die anfängliche Synchronisierung der Zeilen ist nun abgeschlossen.
 
-8. Aktivieren Sie die Änderungsnachverfolgung für Finance and Operations auf der Entität **Debitor V3**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+8. Aktivieren Sie die Änderungsnachverfolgung in Finance and Operations für die Tabelle **Debitoren V3**.

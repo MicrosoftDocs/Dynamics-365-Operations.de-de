@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d160c02403bf067ed523fbd634e65c622b522b97
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: eb2d4ab3434a563e907f6540809888cd3f671c1a
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686074"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740807"
 ---
 # <a name="list-of-er-functions-in-the-type-conversion-category"></a>Liste der EB-Funktionen in der Typenumrechnungskategorie
 
@@ -38,6 +38,14 @@ Konvertierungsfunktionen für EB-Typen (elektronische Berichterstellung) können
 | [IntValue](er-functions-conversion-intvalue.md)       | Diese Funktion gibt den Wert *Int* zurück, der die angegebene Zeichenfolge darstellt. |
 | [NumberValue](er-functions-conversion-numbervalue.md) | Diese Funktion gibt den Wert *Real* zurück, der über den angegebenen Wert *String* konvertiert wird. Bei der Konvertierung werden die angegebenen Trennzeichen für Dezimal- und Zifferngruppierungen berücksichtigt. |
 | [Wert](er-functions-conversion-value.md)             | Diese Funktion gibt den Wert *Real* zurück, der über den angegebenen Wert *String* konvertiert wird. |
+
+## <a name="type-conversion-functions-in-the-container-category"></a>Typenumrechnungsfunktionen in der Containerkategorie
+
+Die folgende Tabelle beschreibt die Typenumrechnungsfunktionen in der [Container](er-functions-category-container.md)-Kategorie.
+
+| Funktion | Beschreibung |
+|----------|-------------|
+| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | Diese Funktion konvertiert die angegebene Eingabe des Datentyps *String* in ein Datenelement des Typs *Container*. |
 
 ## <a name="type-conversion-functions-in-the-date-and-time-category"></a>Typenumrechnungsfunktionen in der Kategorie „Datum und Uhrzeit“
 
@@ -79,6 +87,3 @@ Die folgende Tabelle beschreibt die Typenumrechnungsfunktionen in der [Textkateg
 [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)
 
 [Formelsprache in der elektronischen Berichterstellung](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

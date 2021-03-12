@@ -14,43 +14,43 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4e34685731a09131d2ab49a0e04479c9c20f4da8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d57586cb18c581e4a462d93a64a88310e251a7af
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693797"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798587"
 ---
 # <a name="batch-processing-of-alerts"></a>Stapelverarbeitung von Warnungen
 
 [!include [banner](../includes/banner.md)]
 
-Warnungen werden mit der Stapelverarbeitungsvorgangsfunktion verarbeitet. Sie müssen die Stapelverarbeitung einrichten, bevor Warnungen übermittelt werden können.
+Warnungen werden mit der Stapelverarbeitungsvorgangsfunktion verarbeitet. Sie müssen die Stapelverarbeitung vor der Verarbeitung und Übermittlung von Warnungen einrichten.
 
-Es werden zwei Ereignisarten unterstützt:
+Die Stapelverarbeitungsfunktion unterstützt zwei Arten von Ereignissen:
 
 - Ereignisse, die durch änderungsbasierte Ereignisse ausgelöst werden. Diese Ereignisse werden auch als Erstellungs-/Lösch- und Aktualisierungsereignisse bezeichnet.
-- Ereignisse, die durch Fälligkeitsdaten ausgelöst werden.
+- Durch Fälligkeitstermine ausgelöste Ereignisse.
 
 Sie können für beide Ereignistypen Stapelverarbeitungsvorgänge einrichten.
-        
+
 ## <a name="batch-processing-for-change-based-events"></a>Chargenverarbeitungen für änderungsbasierte Ereignisse
 
 Das System liest alle änderungsbasierten Ereignisse, die aufgetreten sind, seit die Stapelverarbeitung zuletzt ausgeführt wurde. änderungsbasierte Ereignisse umfassen Aktualisierungen von Feldern, das Löschen von Datensätzen und die Erstellung von Datensätzen. Diese Ereignisse werden mit den Bedingungen verglichen, die in Warnregeln eingerichtet wurden. Wenn ein Ereignis den Regelbedingungen entspricht, erzeugt die Stapelverarbeitung eine Warnung.
 
 ### <a name="frequency-for-change-based-events"></a>Einrichten der Stapelverarbeitungshäufigkeit für änderungsbasierte Ereignisse
 
-Für änderungsbasierte Ereignisse können Sie eine Stapelverarbeitung einrichten, die die Verarbeitung eines Ereignisses auslöst, kurz nachdem das System das Ereignis protokolliert hat. Wenn Sie den Stapelverarbeitungsauftrag so einrichten, dass er häufiger ausgeführt wird, erhalten Benutzer Warnungen eher, nachdem eine Änderung eintritt. Eine häufige Stapelverarbeitung kann sich jedoch nachteilig auf die Leistung des Systems auswirken.
+Für änderungsbasierte Ereignisse können Sie eine Stapelverarbeitung einrichten, die die Verarbeitung eines Ereignisses auslöst, kurz nachdem das System das Ereignis protokolliert. Wenn Sie den Stapelverarbeitungsauftrag so einrichten, dass er häufiger ausgeführt wird, erhalten Benutzer Warnungen eher, nachdem eine Änderung eintritt. Eine häufige Stapelverarbeitung kann sich jedoch nachteilig auf die Leistung des Systems auswirken.
 
 Umgekehrt kann eine weniger häufig ausgeführte Stapelverarbeitung, die für Zeiten geplant ist, wenn die Systemlast gering ist, dazu beitragen, die Systemleistung zu verbessern. Eine geringere Häufigkeit der Stapelverarbeitung erfüllt jedoch möglicherweise nicht die Anforderungen der Benutzer für fristgerechte Warnungen.
 
-Daher müssen Sie für die Einstellung der Stapelverarbeitungshäufigkeit von änderungsbasierten Ereignissen einen Kompromiss zwischen dem zeitgerechten Senden von Warnungen und der Leistung des Gesamtsystem finden. Diese Überlegungen werden umso wichtiger, je mehr Benutzer es gibt, die Warnregeln erstellen. Die Häufigkeit wirkt sich nicht auf die Anzahl der Ereignisse aus, die verarbeitet werden müssen. Wenn jedoch mehr Benutzer Regeln erstellen, müssen mehrere Prüfungen ausgeführt werden. Diese Art des Datenverkehrs kann sich auf die Systemleistung auswirken.
+Daher müssen Sie für die Einstellung der Stapelverarbeitungshäufigkeit von änderungsbasierten Ereignissen einen Kompromiss zwischen dem zeitgerechten Senden von Warnungen und der Leistung des Gesamtsystem finden. Diese Überlegungen werden umso wichtiger, je mehr Benutzer es gibt, die Warnregeln erstellen. Die Häufigkeit wirkt sich nicht auf die Anzahl der Ereignisse aus, die das System verarbeitet. Wenn jedoch mehr Benutzer Regeln erstellen, führt der Prozess mehrere Prüfungen aus. Diese Art des Datenverkehrs kann sich auf die Systemleistung auswirken.
 
 #### <a name="the-risks-of-low-batch-frequency"></a>Die Risiken einer niedrigen Chargenfrequenz
 
-Wenn Sie die Stapelverarbeitung für änderungsbasierte Ereignisse auf eine niedrige Häufigkeit festlegen, kann es vorkommen, dass Warnungen verloren gehen, weil sich Daten, die für die Warnregelbedingungen entscheidend sind, geändert haben, bevor die Stapelverarbeitung ausgeführt wurde. Daher verlieren Sie möglicherweise Warnungen.
+Wenn Sie die Stapelverarbeitung für änderungsbasierte Ereignisse auf eine niedrige Häufigkeit festlegen, kann es vorkommen, dass sich Daten, die für die Warnregelbedingungen entscheidend sind, geändert haben, bevor die Verarbeitung ausgeführt wird. Daher verlieren Sie möglicherweise Warnungen.
 
-Beispielsweise ist eine Warnregel so eingerichtet, dass sie eine Warnung auslöst, falls das Ereignis **Debitorenkontakt ändert sich** ist und die Bedingung **Debitor = BB** ist. Wenn sich also der Debitorenkontakt für Debitor BB ändert, wird das Ereignis protokolliert. Allerdings ist das Stapelverarbeitungssystem so eingerichtet, dass die Stapelverarbeitung weniger häufig als die Dateneingabe auftritt. Wenn der Debitorennamen sich von **BB** zu **AA** ändert, bevor das Ereignis verarbeitet wird, entsprechen die Daten in der Datenbank nicht mehr die Bedingung in der Regel **Debitor = BB** ab. Wenn das Ereignis schließlich verarbeitet wird, wird daher keine Warnung generiert.
+Beispielsweise erstellen Sie eine Warnung, die ausgelöst wird, wenn das Ereignis **Debitorenkontakt ändert sich** ist und die Bedingung **Debitor = BB** ist. Wenn sich also der Debitorenkontakt für Debitor BB ändert, protokolliert der Prozess das Ereignis. Allerdings ist das Stapelverarbeitungssystem so eingerichtet, dass die Stapelverarbeitung weniger häufig als die Dateneingabe auftritt. Wenn der Debitorenname sich von **BB** in **AA** ändert, bevor das Ereignis verarbeitet wird, entsprechen die Daten in der Datenbank nicht mehr der Bedingung in der Regel **Debitor = BB**. Wenn das Ereignis schließlich verarbeitet wird, wird daher keine Warnung generiert.
 
 ### <a name="set-up-processing-for-change-based-alerts"></a>Einrichten der Verarbeitung von änderungsbasierten Warnungen
 
@@ -63,7 +63,7 @@ Das System erfasst alle Ereignisse, die durch Fälligkeitstermine ausgelöst wer
 
 ### <a name="frequency-for-due-date-events"></a>Festlegen der Häufigkeit für Ereignisse vom Typ "Fälligkeitsdatum"
 
-Für Ereignisse vom Typ "Fälligkeitsdatum" bietet es sich an, Stapelverarbeitungen einzurichten, die nachts oder zu bestimmten Tageszeiten ausgeführt werden, um die Systemlast zu verteilen. Es wird empfohlen, dass Sie den Batchauftrag so einrichten, dass er mindestens einmal pro Tag ausgeführt wird. Sollen Warnungen so früh wie möglich gesendet werden, sollte die Stapelverarbeitung ausgeführt werden, sobald sich das Systemdatum geändert hat. Wenn Sie Warnungen für Ereignisse vom Typ "Fälligkeitsdatum" erzeugen möchten, die auftreten, nachdem eine Stapelverarbeitung bereits Warnungen verarbeitet hat, können Sie die Stapelverarbeitung am selben Tag erneut ausführen.
+Für Ereignisse vom Typ "Fälligkeitsdatum" bietet es sich an, Stapelverarbeitungen einzurichten, die nachts oder zu bestimmten Tageszeiten ausgeführt werden, um die Systemlast zu verteilen. Es wird empfohlen, dass Sie den Batchauftrag so einrichten, dass er mindestens einmal pro Tag ausgeführt wird. Sollen Warnungen so früh wie möglich gesendet werden, sollte die Stapelverarbeitung ausgeführt werden, sobald sich das Systemdatum ändert. Wenn Sie Warnungen für Ereignisse vom Typ "Fälligkeitsdatum" erzeugen möchten, die auftreten, nachdem eine Stapelverarbeitung bereits Warnungen verarbeitet hat, können Sie die Stapelverarbeitung am selben Tag erneut ausführen.
 
 Beispielsweise wurde ein Stapelverarbeitungsauftrag an einem bestimmten Tag ausgeführt. Dann erstellen Sie eine Bestellung mit einem Fälligkeitsdatum, das eine Warnung für denselben Tag auslösen soll. Um die Warnung an diesem Tag zu erhalten, müssen Sie den Batchauftrag erneut ausführen, nachdem die Bestellung erstellt wurde. Wenn Sie die Stapelverarbeitung an diesem Tag nicht erneut ausführen, erfasst die Stapelverarbeitung am nächsten Tag alle nicht verarbeiteten Ereignisse des Typs "Fälligkeitsdatum", die nicht am Vortag verarbeitet wurden.
 
@@ -76,12 +76,9 @@ Die Verarbeitung von Warnregeln in einem Unternehmen kann aus unterschiedlichen 
 
 Um zu verhindern, dass Fälligkeitswarnungen veralten, da der Batchauftrag während einiger Tage nicht ausgeführt wurde, können Sie ein Stapelverarbeitungsfenster einrichten. Ein Stapelverarbeitungsfenster ermöglicht es, dass eine Stapelverarbeitung für eine bestimmte Anzahl von Tagen nicht ausgeführt wird.
 
-Wenn ein Stapelverarbeitungsfenster eingerichtet wurde, wird eine Warnung gesendet, wenn die Warnregel verarbeitet wird, auch wenn die Warnung das Zeitlimit überschreitet, das in den Fälligkeitskriterien definierte wurde. Eine Warnung wird weiterhin gesendet, solange die Periode, die durch dieses Zeitlimit plus das Stapelverarbeitungsfenster definiert ist, nicht überschritten wird. Wenn die Periode, die durch das Zeitlimit plus Stapelverarbeitungsfenster definiert ist, überschritten wird, wird keine Warnung mehr übermittelt.
+Wenn ein Stapelverarbeitungsfenster eingerichtet wurde, wird eine Warnung gesendet, wenn die Warnregel verarbeitet wird, auch wenn die Warnung das Zeitlimit überschreitet, das in den Fälligkeitskriterien definierte wurde. Eine Warnung wird weiterhin gesendet, solange die Periode, die durch dieses Zeitlimit plus das Stapelverarbeitungsfenster definiert ist, nicht überschritten wird. Wenn die Periode den Wert überschreitet, der durch das Zeitlimit plus Stapelverarbeitungsfenster definiert ist, wird keine Warnung mehr übermittelt.
 
 ### <a name="set-up-processing-for-due-date-alerts"></a>Einrichten der Verarbeitung von Fälligkeitswarnungen
 
 1. Gehen Sie zu **Systemverwaltung** &gt; **Periodische Aufgaben** &gt; **Warnungen** &gt; **Änderungsbasierte Warnungen**.
 2. Im Dialogfeld **Warnung Fälligkeitsdatum** geben Sie die entsprechenden Informationen ein.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

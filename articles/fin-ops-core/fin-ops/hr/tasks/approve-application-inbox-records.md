@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd54361f4397de75fbd578bc965cd90db963b2f8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: c980ca44028c4257078e5493e69499db87ffa30d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693458"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798018"
 ---
 # <a name="approve-application-inbox-records"></a>Bewerbungseingangs-Datensätze genehmigen
 
@@ -48,6 +48,3 @@ Im folgenden Verfahren wird gezeigt, wie Sie Bewerbungen prüfen, die über die 
 2. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 3. Erweitern Sie den Abschnitt "Anhänge".
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
