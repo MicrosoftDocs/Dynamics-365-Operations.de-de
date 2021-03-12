@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, HcmWorker
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd437f549ffc1f8879ce3814ace1193040b280e1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 73c200f7f6ff0aa5672e50c539bfaa5e30213185
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412654"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003602"
 ---
 # <a name="configure-a-worker"></a> Eine Arbeitskraft konfigurieren
 
@@ -48,7 +47,7 @@ Diese Prozedur zeigt, wie eine Arbeitskraft als Verkäufer konfiguriert wird, de
 12. Schließen Sie die Seite.
 
 ## <a name="assign-the-workers-default-sales-group"></a>Standardverkaufsgruppe der Arbeitskraft zuweisen
-1. Navigieren Sie zu Retail und Commerce > Mitarbeiter > Arbeitskräfte.
+1. Navigieren Sie zu Einzelhandel und Handel > Mitarbeiter > Arbeitskräfte.
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 4. Klicken Sie auf die Registerkarte Commerce.
@@ -57,6 +56,3 @@ Diese Prozedur zeigt, wie eine Arbeitskraft als Verkäufer konfiguriert wird, de
 6. Geben Sie im Feld "Standardgruppe" einen Wert ein oder wählen Sie einen Wert aus.
 7. Klicken Sie auf "Speichern".
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

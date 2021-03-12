@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 9de46acd8e568be08518d9bf93067748e0541023
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429019"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004468"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Wiederbeschaffung mit Entnahme-Kanbans
 
@@ -87,6 +86,3 @@ Im folgenden Szenario wird die Umlagerungsaktivität des Entnahme-Kanban für di
 
 Wenn ein Kanban am Lagerplatz für Produktions-Wareneingang verbraucht ist, wird der Kanban als leer erfasst und eine neuer Kanban wird zum Fluss hinzugefügt. Wenn der Kanban erstellt wird, wird eine Wellenposition zu einer Kanbanwelle hinzugefügt. Wenn die Kanbanwelle verarbeitet wird, wird Lagerortarbeit für die Kanban-Entnahme erstellt. Der Lagerarbeiter verarbeitet die Arbeit für die Kanban-Entnahme und wird angewiesen, das Material für den Kanban von einem Lagerort-Lagerplatz zu entnehmen. Wenn der Lagerarbeiter die Entnahme bestätigt hat, wird der Kanban automatisch abgeschlossen, und der Lagerarbeiter wird angewiesen, das Material im Lagerplatz für Produktions-Wareneingang einzulagern.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

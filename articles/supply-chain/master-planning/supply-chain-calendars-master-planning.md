@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bbbd60ddfd46904374a2cf3ad4a09f96805bd2bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428726"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001798"
 ---
 # <a name="calendars-and-master-planning"></a>Kalender und Produktprogrammplanung
 
@@ -143,6 +142,3 @@ Bezüglich des Deckungsgruppenkalenders ist zu beachten, dass dieses in der Mast
 
 ### <a name="updating-scm-related-calendars"></a>Aktualisierung von SCM-bezogenen Kalendern
 Es ist zwar wichtig, dass alle relevanten Kalender an ihrem jeweiligen Ort (Lieferant, Kunde, Lager, Lieferart oder Deckungsgruppe) zugeordnet sind, aber die Aktualisierung ist ebenso wichtig, damit sie die Änderungen berücksichtigen. Das System definiert die Produktions-, Transfer-, Einkaufs- und Kundenauftragsdaten abhängig von der Kombination der zugeordneten Kalender. Es ist eine bewährte Vorgehensweise, um zu klären, wer für die Zuordnung und Aktualisierung der Kalender in den entsprechenden Bereichen verantwortlich ist. Im Falle einer Panne oder einer anderen ungewöhnlichen Änderung der Arbeitstage ist es unerlässlich, die Kalender entsprechend zu aktualisieren. Alle kalenderabhängigen Aufgaben, wie z.B. die Masterplanung und Produktionsplanung, müssen bei der Aktualisierung von Kalendern erneut ausgeführt werden. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

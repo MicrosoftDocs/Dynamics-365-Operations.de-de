@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgEcoResProductLifecycleStateChange
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 69ee39479424c1b629388c18e8bfefd023036d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 989cfd3846e4921d24f5dcf809f1735d2cf62dbb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429155"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005326"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Zustände und Transaktionen im Produktlebenszyklus
 
@@ -76,6 +75,3 @@ Die folgenden Felder sind für jeden Prozess verfügbar, der auf der Registerkar
 | Richtlinie | Wählen Sie einen der folgenden Werte, um zu steuern, ob und wie der aktuelle Prozess für Produkte zugelassen wird, die sich in diesem Lebenszyklus-Status befinden:<ul><li>**Aktiviert** - Der Geschäftsprozess ist erlaubt.</li><li>**Blockiert** - Der Prozess ist nicht erlaubt. Wenn ein Benutzer versucht, den Prozess für ein Produkt zu verwenden, das sich in diesem Status befindet, wird das System den Versuch blockieren und stattdessen einen Fehler anzeigen. So können Sie z. B. verhindern, dass Produkte mit abgelaufenem Lebenszyklus gekauft werden.</li><li>**Aktiviert mit Warnung** - Der Prozess ist erlaubt, aber es wird eine Warnung angezeigt. Sie könnten z.B. ein Prototyp-Produkt auf einen Produktionsauftrag einlagern, der von der Forschungs- und Entwicklungsabteilung erstellt wird. Andere Abteilungen sollten jedoch wissen, dass sie das Produkt noch nicht produzieren sollen.</li></ul> |
 
 Wenn Sie weitere Regeln für den Status des Lebenszyklus als Anpassung hinzufügen, können Sie diese Regeln in der Benutzeroberfläche (UI) anzeigen, indem Sie **Prozesse aktualisieren** im oberen Fensterbereich auswählen. Die Schaltfläche **Prozesse aktualisieren** ist nur für Administratoren verfügbar.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

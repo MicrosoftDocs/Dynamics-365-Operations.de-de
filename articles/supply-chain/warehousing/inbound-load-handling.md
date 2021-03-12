@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 991da4a1056bec933698d043fe45fe4e280f555a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429029"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004826"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerabwicklung eingehender Ladungen für Bestellungen
 
@@ -478,6 +477,3 @@ In diesem Szenario registriert der empfangende Sachbearbeiter eine Menge, die di
     - **Menge** – Geben Sie _7_ ein. Dies ist die verbleibende Menge, zu deren Lieferung der Verkäufer berechtigt ist, als Teil der gesamten Bestellmenge von 12 (wobei 10 die ursprüngliche Bestellmenge und 2 die zulässige Mehrmenge von 20 Prozent ist). Denken Sie daran, dass bereits 5 Stück für die erste Ladung registriert wurden.
 
 Die zweite Ladung wurde jetzt mit der Menge 7 aktualisiert und kann basierend auf dieser Menge als Produktbeleg aktualisiert werden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

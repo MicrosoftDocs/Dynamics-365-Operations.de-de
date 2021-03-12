@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailCategoryAndProductWorkspace, RetailOrgHierarchyTreeLookup, SrsReportViewerForm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d148fa36a116860af8c44043d90759b8a2d76fb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9e11bca1e6850f401f52c2ccbea1089a4e71591c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412596"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003703"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Generieren und Ausführung von Fertigberichten
 
@@ -33,7 +32,7 @@ Führen Sie mithilfe dieses Aufgabenhandbuchs Fertigberichte in der Hauptniederl
 Das Demodatenunternehmen, das verwendet wird, um diese Aufzeichnung zu erstellen, ist USRT. Diese Aufzeichnung ist für die Systemadministratorrolle vorgesehen.
 
 ## <a name="launch-reports-from-workspaces"></a>Starten von Berichten aus den Arbeitsbereichen
-1. Gehen Sie zu Retail und Commerce > Produkte und Kategorien > Kategorie- und Produktverwaltung.
+1. Gehen Sie zu Einzelhandel und Handel > Produkte und Kategorien > Kategorie- und Produktverwaltung.
 2. Klicken Sie zum Erweitern oder Reduzieren des Abschnitts ''Berichte" auf den Pfeil.
 3. Klicken Sie auf "Bericht über Top-Produkte".
 4. Geben Sie in das Feld "Von Datum" ein Datum ein.
@@ -47,7 +46,7 @@ Das Demodatenunternehmen, das verwendet wird, um diese Aufzeichnung zu erstellen
 11. Klicken Sie auf "OK".
 
 ## <a name="launch-reports-from-the-inquiries-and-sales-reports"></a>Starten von Berichten aus Abfrage- und Verkaufsberichten
-1. Gehen Sie zu Retail und Commerce > Abfragen und Berichte > Verkaufsberichte > Kategorieverkaufsbericht.
+1. Gehen Sie zu Einzelhandel und Handel > Abfragen und Berichte > Verkaufsberichte > Kategorieverkaufsbericht.
 2. Geben Sie in das Feld "Von Datum" ein Datum ein.
 3. Geben Sie in das Feld "Bis Datum" ein Datum ein.
 4. Klicken Sie im Feld "Kanal" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
@@ -57,13 +56,10 @@ Das Demodatenunternehmen, das verwendet wird, um diese Aufzeichnung zu erstellen
 7. Klicken Sie auf "OK".
 
 ## <a name="export-an-hq-reports"></a>Exportieren von HQ-Berichten
-1. Gehen Sie zu Retail und Commerce > Abfragen und Berichte > Verkaufsberichte > Organisationsverkaufsbericht.
+1. Gehen Sie zu Einzelhandel und Handel > Abfragen und Berichte > Verkaufsberichte > Organisationsverkaufsbericht.
 2. Geben Sie in das Feld "Von Datum" ein Datum ein.
 3. Geben Sie in das Feld "Bis Datum" ein Datum ein.
 4. Klicken Sie auf "OK".
 5. Klicken Sie auf "Export".
 6. Klicken Sie auf "PDF".
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

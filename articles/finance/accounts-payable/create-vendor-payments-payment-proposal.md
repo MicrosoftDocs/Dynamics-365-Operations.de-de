@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57e8ce38241933b16252f1c918b0f763a8f1be08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b047a1abaa6b19096740f589281c837643d796b9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443552"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003527"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Kreditorenzahlungen unter Verwendung eines Zahlungsvorschlags erstellen
 
@@ -69,19 +68,19 @@ Am 1. Juli zahlt April Kreditoren aus. Sie verwendet einen Zahlungsvorschlag, um
 
 ### <a name="option-1-by-cash-discount"></a>Option 1:Nach Skonto
 
-April wählt **Skonto** als Vorschlagstyp aus. Sie gibt einen Datumsbereich vom 26. Juni bis zum 10. Juli ein. Die nachfolgenden Rechnungen werden in den Vorschlag einbezogen:
+April wählt **Skonto** als Vorschlagstyp aus. Sie gibt einen Datumsbereich vom 26. Juni bis zum 10. Juli ein. Die nachfolgenden Rechnungen werden in den Vorschlag einbezogen:
 
 -   1002, da das Skontodatum vom 4. Juni im Bereich der Zahlungsdaten ist.
 -   1004, da das Skontodatum vom 1. Juni im Bereich der Zahlungsdaten ist.
 
 Die nachfolgenden Rechnungen werden nicht in den Vorschlag einbezogen:
 
--   1001, da das Rabattdatum vom 29. Juni bereits abgelaufen ist, ist diese Rechnung daher nicht mehr für das Skonto freigegeben.
+-   1001, da das Rabattdatum 29. Juni bereits abgelaufen und diese Rechnung nicht mehr für den Skonto freigegeben ist.
 -   1003, da diese Rechnung kein Rabattdatum hat.
 
 ### <a name="option-2-by-due-date"></a>Option 2: Nach Fälligkeitsdatum
 
-April wählt **Nach Fälligkeitsdatum** als Vorschlagstyp aus. Sie gibt einen Datumsbereich vom 26. Juni bis zum 10. Juli ein. Die nachfolgenden Rechnungen werden in den Vorschlag einbezogen:
+April wählt **Nach Fälligkeitsdatum** als Vorschlagstyp aus. Sie gibt einen Datumsbereich vom 26. Juni bis zum 10. Juli ein. Die nachfolgenden Rechnungen werden in den Vorschlag einbezogen:
 
 -   1003, da das Fälligkeitsdatum vom 29. Juni im Bereich der Zahlungsdaten ist.
 
@@ -93,7 +92,7 @@ Die nachfolgenden Rechnungen werden nicht in den Vorschlag einbezogen:
 
 ### <a name="option-3-by-due-date-and-cash-discount"></a>Option 3: Nach Fälligkeitsdatum und Skonto
 
-April wählt **Fälligkeitsdatum und Skonto** als Vorschlagstyp aus. Sie gibt einen Datumsbereich vom 26. Juni bis zum 10. Juli ein. Die nachfolgenden Rechnungen werden in den Vorschlag einbezogen:
+April wählt **Fälligkeitsdatum und Skonto** als Vorschlagstyp aus. Sie gibt einen Datumsbereich vom 26. Juni bis zum 10. Juli ein. Die nachfolgenden Rechnungen werden in den Vorschlag einbezogen:
 
 -   1003, da das Fälligkeitsdatum vom 29. Juni im Bereich der Zahlungsdaten ist.
 -   1002, da das Skontodatum vom 4. Juni im Bereich der Zahlungsdaten ist.
@@ -101,28 +100,25 @@ April wählt **Fälligkeitsdatum und Skonto** als Vorschlagstyp aus. Sie gibt ei
 
 Die nachfolgenden Rechnungen werden nicht in den Vorschlag einbezogen:
 
--   1001, da das Rabattdatum vom 29. Juni bereits abgelaufen ist, ist daher diese Rechnung nicht mehr für den Skonto freigegeben, und das Fälligkeitsdatum vom 15. Juli ist auch außerhalb des Datumsbereichs.
+-   1001, da das Rabattdatum 29. Juni bereits abgelaufen und diese Rechnung nicht mehr für den Skonto freigegeben ist. Zudem befindet sich das Fälligkeitsdatum 15. Juli außerhalb des Datumsbereichs.
 
 ## <a name="country-specific-considerations"></a>Landesspezifische Betrachtungen
 ### <a name="norway"></a>Norwegen
 
 #### <a name="dimension-control"></a>Dimensionskontrolle
 
-Mit der Dimensionssteuerung können Steuergruppierung von generierten Positionen durch Zahlungsvorschlags- und Satzstandarddimensionen auf Grundlage der Finanzdimensionen für die angewendeten Rechnungen verwenden. Unter norwegischem Landkontext besteht für jede Zahlungsmethode eine Registerkarte "Finanzdimensionen", in der Sie die Dimensionskontrolle sowie Gruppierungen für jede Dimension aktivieren können. Mögliche Optionen sind:
+Mit der Dimensionssteuerung können Steuergruppierung von generierten Positionen durch Zahlungsvorschlags- und Satzstandarddimensionen auf Grundlage der Finanzdimensionen für die angewendeten Rechnungen verwenden. Unter norwegischem Landkontext besteht für jede Zahlungsmethode eine Registerkarte „Finanzdimensionen“, in der Sie die Dimensionskontrolle sowie Gruppierungen für jede Dimension aktivieren können. Mögliche Optionen sind:
 
 -   Das Feld **Dimensionskontrolle** wird deaktiviert. Der Zahlungsvorschlag verhält sich wie für jedes andere Land.
 -   Das Feld **Dimensionskontrolle** ist ohne weitere Definition der Dimensionen aktiviert. Der Zahlungsvorschlag wird erstellt, ohne Dimensionen des Artikeleingangs zu berücksichtigen. Die erstellte Buchung übernimmt keine Dimensionen auf dem angewendeten Eintrag.
--   Das Feld **Dimensionskontrolle** ist und die weiteren Dimensionen sind aktiviert. Jetzt können Sie definieren, wie die Dimensionen in das Journal kopiert werden. Beispiel: • Wählen Sie das **BusinessUnit** Kontrollkästchen, um einen Zahlungsvorschlag pro Unternehmenseinheit für die Zahlungsmethode zu erstellen, • Wählen Sie das **CostCenter**, um für die Zahlungsmethode einen Zahlungsvorschlag pro Kostenstelle zu erstellen
+-   Sowohl das Feld **Dimensionskontrolle** als auch die weiteren Dimensionen sind aktiviert. Jetzt können Sie definieren, wie die Dimensionen in das Journal kopiert werden. Beispiel: • Wählen Sie das **BusinessUnit** Kontrollkästchen, um einen Zahlungsvorschlag pro Unternehmenseinheit für die Zahlungsmethode zu erstellen, • Wählen Sie das **CostCenter**, um für die Zahlungsmethode einen Zahlungsvorschlag pro Kostenstelle zu erstellen
 
 > [[!NOTE]
 > Bei Auswahl mehrerer Dimensionen wird eine dritte Option, ein Zahlungsvorschlag für die ausgewählte Kombination aus Dimensionen erstellt.
 
 #### <a name="bank-account-selection"></a>Bankkontoauswahl
 
-Sie können ein Zahlungsstandardkonto pro Zahlungsmethode definieren, unbeachtet den Landkontext. Dies wird in Zahlungspositionen festgelegt, die durch einen Vorschlag generiert werden. Mit der Bankkontofunktion können Sie mehrere Bankkonten definieren, die nach Dimension und Währung oder einer Kombination dieser verwaltet wird, um verschiedene belastende Bankkonten zu nutzen, abhängig von der Kombination. Sie können diese Kombinationen auf der Seite **Zahlungsmethoden** einrichten, indem Sie die Schaltfläche  **Bankkonten** verwenden, die für jede Zahlungsmethode mit **Buchungskontotyp** = **Bank** verfügbar ist.
+Sie können ein Zahlungsstandardkonto pro Zahlungsmethode definieren, unbeachtet den Landkontext. Dies wird in Zahlungspositionen festgelegt, die durch einen Vorschlag generiert werden. Mit der Bankkontofunktion können Sie mehrere Bankkonten definieren, die nach Dimension und Währung oder einer Kombination dieser verwaltet wird, um verschiedene belastende Bankkonten zu nutzen, abhängig von der Kombination. Sie können diese Kombinationen auf der Seite **Zahlungsmethoden** einrichten, indem Sie die Schaltfläche **Bankkonten** verwenden, die für jede Zahlungsmethode mit **Buchungskontotyp** = **Bank** verfügbar ist.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
