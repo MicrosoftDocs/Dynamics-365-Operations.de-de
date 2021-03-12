@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca05f6174541a6e97ec94db209a99424a87550eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9861d6bc83d3f1d62091154a36436627eeccad4a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443723"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969352"
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>Kostensteuerungs-Arbeitsbereichsparameter konfigurieren
 
@@ -59,6 +58,3 @@ Verwenden Sie das folgende Verfahren, um den Kostenkontrollearbeitsbereich zu ko
 27. Geben Sie im Feld "Kostenobjektdimensionshierarchieknoten" einen Wert ein oder wählen Sie einen Wert aus.
     * Nachdem Sie eine Kostenträgerdimensionshierarchie ausgewählt haben, erweitern Sie die Kostenfaktordimensionshierarchie, um die gewünschten Kostenwerte anzuzeigen. So können Sie die Hierarchie zu den Produktionsgeschäftskosten erweitern, um den Wert zu finden.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

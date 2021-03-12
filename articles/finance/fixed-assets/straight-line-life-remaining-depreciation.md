@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13851
 ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c12ca59203d6cad7f5699bc930f2af27427ca41b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d2414ea97fefbec1e975498e171496e33057541c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443691"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969003"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Abschreibungsmethode "Verbleibende lineare Nutzungsdauer"
 
@@ -38,7 +37,7 @@ Sie können entweder **Kalender** oder **Steuerlich** im Feld **Abschreibungsjah
 
 ### <a name="calendar"></a>Kalender
 
-Bei Auswahl der Option **Kalender** im Feld ***Abschreibungsjahr*** wird von einem Jahr mit Beginn 1. Januar und Ende 31. Dezember ausgegangen. Dies gilt auch, wenn der Steuerkalender anders definiert wurde. Die **Kalender** Option aktualisiert die Abschreibungsbasis am 1. Januar jedes Jahres. Normalerweise ist die Abschreibungsbasis der Nettobuchwert abzüglich des Restwerts. Im Beispiel weiter unten in diesem Thema ist der Zähler im ersten Ausdruck in Berechnungen in der Spalte "Berechnung" die Abschreibungsbasis. Wenn als Abschreibungsjahr **Kalender** ausgewählt wird, stehen im Feld **Periodenhäufigkeit** die folgenden Optionen zur Verfügung:
+Wenn Sie **Kalender** im Feld **_Abschreibungsjahr_*_auswählen, wird von einem Jahr vom 1. Januar bis 31. Dezember ausgegangen, auch wenn Sie den Finanzkalender anders definiert haben. Die Option_* Kalender** aktualisiert die Abschreibungsbasis am 1. Januar eines jeden Jahres. Normalerweise ist die Abschreibungsbasis der Nettobuchwert abzüglich des Restwerts. Im Beispiel weiter unten in diesem Thema ist der Zähler im ersten Ausdruck in Berechnungen in der Spalte "Berechnung" die Abschreibungsbasis. Wenn als Abschreibungsjahr **Kalender** ausgewählt wird, stehen im Feld **Periodenhäufigkeit** die folgenden Optionen zur Verfügung:
 
 -   Bei Auswahl von **Jährlich** wird ein Betrag am 31. Dezember gebucht.
 -   Bei Auswahl von **Monatlich** wird ein monatlicher Betrag am Ende eines jeden Kalendermonats gebucht.
@@ -80,6 +79,3 @@ Der Abschreibungsbetrag ist derselbe jedes Jahr: (Anschaffungskosten – Restwer
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

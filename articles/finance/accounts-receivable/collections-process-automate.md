@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db59bad2ed3caf38f22bd4d6059e57747d1d983f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443445"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969700"
 ---
 # <a name="collections-process-automation"></a>Automatisierung des Inkasso-Prozesses
 
@@ -118,6 +117,3 @@ In den folgenden Tabellen sind die Seiten und Felder aufgeführt, über die auf 
 |     Debitorenkontenparameter> Automatisierung von Inkassoprozessen     |     Mahnschreiben automatisch buchen           |     Aktionstypen für Mahnschreiben werden den Brief während der Automatisierung buchen.                                      |
 |     Debitorenkontenparameter> Automatisierung von Inkassoprozessen     |     Erstellen von Aktivitäten für Automatisierung                |     Erstellen und schließen Sie Aktivitäten für Aktionstypen ohne Aktivität, um alle automatisierten Schritte anzuzeigen, die für ein Konto ausgeführt wurden.        |
 |     Debitorenkontenparameter> Automatisierung von Inkassoprozessen     |     Inkassoprozessautomatisierung für aufzubewahrende Tage     |     Definiert die Anzahl der Tage, an denen der Inkassoverlauf gespeichert wird.                                                       |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

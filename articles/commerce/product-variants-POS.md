@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 1d6133d80d7674a1d896bc19a743a6bd4d0fb40f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f08906c14f80b07368d88d820acae83cf1157e6c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412676"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969950"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Lagersuche in der Verkaufsstelle (POS)
 
@@ -115,6 +114,3 @@ Die folgende Tabelle enthält weitere Informationen über die zusätzlichen Akti
 | Verfügbarkeit         | Zeigen Sie die VfZ-Informationen für die ausgewählte Variantenkombination für den ausgewählten Lagerplatz an. |
 | Alle Lagerplätze anzeigen   | Wechseln Sie zur standardmäßigen Lagersuchansicht und heben Sie Bestandsverfügbarkeitsinformationen für die Artikelvariante für alle Filialen in der Filiallokatorgruppe und auch in Verteilungszentren des Typs **Standard/Standard** hervor. |
 | Produktdetails anzeigen | Leiten Sie den Benutzer zur Seite **Produktdetails** des zugeordneten Produktmasters um. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

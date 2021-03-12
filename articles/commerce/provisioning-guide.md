@@ -3,14 +3,13 @@ title: Eine Dynamics 365 Commerce-Evaluierungsumgebung bereitstellen
 description: In diesem Thema wird erläutert, wie eine Evaluierungsumgebung in Microsoft Dynamics 365 Commerce bereitgestellt wird.
 author: psimolin
 manager: annbe
-ms.date: 11/05/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
-ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
+ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "4412720"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969900"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Eine Dynamics 365 Commerce-Evaluierungsumgebung bereitstellen
 
@@ -117,7 +116,7 @@ Gehen Sie folgendermaßen vor, um die Umgebung bereitzustellen.
 
 ### <a name="initialize-the-commerce-scale-unit-cloud"></a>Initialisieren der Commerce Scale Unit (Cloud)
 
-Führen Sie folgende Schritte aus, um eine CSU zu initialisieren.
+Führen Sie folgende Schritte aus, um die CSU zu initialisieren.
 
 1. Wählen Sie in der Ansicht **In der Cloud gehostete Umgebungen** Ihre Umgebung in der Liste aus.
 1. Wählen Sie in der Umgebungsansicht rechts die Option **Vollständige Details** aus. Die Ansicht zu Umgebungsdetails wird angezeigt.
@@ -130,6 +129,22 @@ Führen Sie folgende Schritte aus, um eine CSU zu initialisieren.
 1. Stellen Sie vor dem Fortfahren sicher, dass Ihr CSU-Status **Erfolgreich** lautet. Die Initialisierung dauert ungefähr zwei bis fünf Stunden.
 
 Wenn Sie den Link **Verwalten** in der Ansicht „Umgebungsdetails“ nicht finden können, wenden Sie sich an Ihren Microsoft-Kontakt, um Unterstützung zu erhalten.
+
+Während des Bereitstellungsprozesses wird möglicherweise die folgende Fehlermeldung angezeigt:
+
+> Auswertungsumgebungen (Demo/Test) müssen die Anwendung \<application ID\> für den Konnektor der Skalierungseinheit in der Zentralverwaltung registrieren.
+
+Wenn die CSU-Initialisierung fehlschlägt und Sie diese Fehlermeldung erhalten, notieren Sie sich die Anwendungs-ID, bei der es sich um einen global eindeutigen Bezeichner (GUID) handelt, und befolgen Sie die Schritte im nächsten Abschnitt, um die CSU-Bereitstellungsanwendung in der Commerce-Zentralverwaltung zu registrieren.
+
+### <a name="register-the-csu-deployment-application-in-commerce-headquarters-if-required"></a>Registrieren Sie die CSU-Bereitstellungsanwendung in der Commerce-Zentrale (falls erforderlich)
+
+Führen Sie folgende Schritte aus, um die CSU-Bereitstellungsanwendung in der Commerce-Zentralverwaltung zu registrieren (falls erforderlich).
+
+1. Wechseln Sie in Commerce-Zentralverwaltung zu **Systemverwaltung \> Einrichtung \> Azure Active Directory-Anwendungen**.
+1. Geben Sie in der Spalte **Kunden-ID** die Anwendungs-ID aus der CSU-Initialisierungsfehlermeldung ein, die Sie erhalten haben.
+1. Geben Sie in der Spalte **Name** einen beliebigen beschreibenden Text ein (z. B. **CSU Eval**).
+1. Geben Sie in der Spalte **Benutzer-UD** **RetailServiceAccount** ein.
+1. Wiederholen Sie die CSU-Initialisierung und -Bereitstellung über LCS.
 
 ### <a name="initialize-e-commerce"></a>E-Commerce initialisieren
 
@@ -176,6 +191,3 @@ Um den Prozess zum Bereitstellen und Konfigurieren Ihrer Commerce-Evaluierungsum
 [Microsoft Azure-Portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

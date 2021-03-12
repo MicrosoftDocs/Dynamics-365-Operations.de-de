@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ec49a621e24b6373532497b499e8b9d45c9bed14
-ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
+ms.openlocfilehash: baa2f1f55dfb9bb93b4f27c45db563e39850dd37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "4443746"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969725"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>Ergebnisse der Automatisierung von Kreditorenrechnungen anzeigen
 
@@ -38,6 +37,3 @@ Wenn eine importierte Rechnung dem Workflow-Prozess unterworfen ist, können Sie
 - **Pausiert** – Die automatisierten Prozesse, die auf der Seite **Kreditorenkontoparameter** definiert sind, wurden ausgeführt, aber mindestens ein Schritt in diesem Prozess ist fehlgeschlagen. Der Status **Pausiert** wird auch angewendet, wenn das Feld **In die automatisierte Verarbeitung einbeziehen** auf **Nein** gesetzt ist. Sie können die Fehler anzeigen, indem Sie die Schaltfläche **Letzte Ergebnisse anzeigen** wählen.
 - **Im Workflow** – Die importierte Rechnung wurde entweder automatisch oder manuell an das Workflow-System übermittelt.
 - **Workflow abgeschlossen** – Der Workflow-Prozess für die importierte Rechnung wurde abgeschlossen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

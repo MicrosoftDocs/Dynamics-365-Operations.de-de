@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 508fda28d8f815f030e7b163709393f70904a5fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 330646da075e3fc8c0c3f7fe54b790ed42615395
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412473"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970102"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Zwischen Modern POS (MPOS) und Cloud POS wählen
 
@@ -105,6 +104,3 @@ Berücksichtigen Sie die folgenden Informationen, wie Sie die POS-Implementierun
 - **Hardwaregeräte/Peripheriegeräte** – Ein wichtiger Aspekt eines Retail POS-Systems ist die Möglichkeit, Drucker, Geldladen und Zahlungsterminals zu verwenden. Obwohl alle verfügbaren POS-Optionen Peripheriegeräte verwenden, können nur MPOS für Windows diese direkt unterstützen. Bei allen anderen Anwendungen ist eine oder mehrere Hardwarestationen erforderlich. Obwohl dieser Ansatz Flexibilität hinzufügt, müssen zusätzliche Komponenten bereitgestellt, konfiguriert und verwaltet werden.
 - **Systemanforderungen** – Die Systemanforderungen für die POS-Anwendung unterscheiden sich. Stellen Sie sicher, die neuesten Informationen zu überprüfen, bevor Sie Ihre Auswahl treffen. Weil CPOS beispielsweise in einen Browser ausgeführt wird, unterstützt sie einen breiteren Bereich von Betriebssystemen. Weitere Informationen zu den Systemanforderungen finden Sie unter [Systemanforderungen für Cloud-Bereitstellung](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Bereitstellung und Verwalten** – Die Komplexität der Bereitstellung und Wartungsanforderungen kann unterschiedlich sein, abhängig von der Anwendungen und der Bereitstellungs-Auswahlen. Beispiel für eine Cloud-gehostete CPOS-Bereitstellung ist, dass Sie nicht jedes Gerät installieren und aktualisieren müssen. Daher verringert dieser Ansatz Komplexität und Kosten. Wenn Sie jedoch MPOS für jedes Register bereitstellen und den Offline-Modus aktivieren, und Sie auch geteilte Hardware-Stationen bereitstellen, erhöhen Sie die Anzahl von Endpunkten, die verwaltet werden müssen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

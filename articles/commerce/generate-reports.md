@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ae7b73c7a51ffa606876072d607fc219f5f6a2ba
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 58342f07233e3c6a6e6a1af87ab23513ad63caf5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412590"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970041"
 ---
 # <a name="generate-online-channel-reports"></a>Generieren von Onlinekanalberichten
 
@@ -46,7 +45,7 @@ Der Bericht **Kanalzusammenfassung** zeigt eine Zusammenfassung der folgenden Tr
 
 Befolgen Sie diese Schritte, um den Bericht **Kanalzusammenfassung** zu generieren.
 
-1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Kanalzusammenfassung'**.
+1. Navigieren Sie zu **Einzelhandel und Handel \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Kanalzusammenfassung'**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -58,7 +57,7 @@ Der Bericht **Kanal Umsatz nach Jahr** zeigt einen Vergleich der Verkäufe im Ja
 
 Befolgen Sie diese Schritte, um den Bericht **Kanal Umsatz nach Jahr** zu generieren.
 
-1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Kanal Umsatz nach Jahr'**.
+1. Navigieren Sie zu **Einzelhandel und Handel \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Kanal Umsatz nach Jahr'**.
 1. Geben Sie im Feld **Von Kalenderjahr** ein Jahr ein.
 1. Geben Sie im Feld **Bis Kalenderjahr** ein Jahr ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -70,7 +69,7 @@ Der Bericht **Kanal Umsatz nach Stunde** zeigt die Verkaufskennzahlen pro Stunde
 
 Befolgen Sie diese Schritte, um den Bericht **Kanal Umsatz nach Stunde** zu generieren.
 
-1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Kanal Umsatz nach Stunde'**.
+1. Navigieren Sie zu **Einzelhandel und Handel \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Kanal Umsatz nach Stunde'**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -82,7 +81,7 @@ Der Bericht **Wichtigste Debitoren** zeigt die Verkaufsmetriken für die wichtig
 
 Befolgen Sie diese Schritte, um den Bericht **Wichtigste Debitoren** zu erstellen.
 
-1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Wichtigste Debitoren'**.
+1. Navigieren Sie zu **Einzelhandel und Handel \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Wichtigste Debitoren'**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -94,7 +93,7 @@ Der Bericht **Höchste Rabatte** zeigt die Verkaufsmetriken für die wichtigsten
 
 Befolgen Sie diese Schritte, um den Bericht **Höchste Rabatte** zu erstellen.
 
-1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht über höchste Rabatte'**.
+1. Navigieren Sie zu **Einzelhandel und Handel \> Abfragen und Berichte \> Umsatzberichte \> Bericht über höchste Rabatte'**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -106,7 +105,7 @@ Der Bericht **Top-Produkte** zeigt die Verkaufsmetriken für die wichtigsten *N*
 
 Befolgen Sie diese Schritte, um den Bericht **Top-Produkte** zu erstellen.
 
-1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht über Top-Produkte**.
+1. Navigieren Sie zu **Einzelhandel und Handel \> Abfragen und Berichte \> Umsatzberichte \> Bericht über Top-Produkte**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -118,7 +117,7 @@ Der Bericht **Kategorie Verkäufe** zeigt Verkaufsmetriken für einen ausgewähl
 
 Befolgen Sie diese Schritte, um den Bericht **Kategorie Verkäufe** zu erstellen.
 
-1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Kategorie Verkäufe'**.
+1. Navigieren Sie zu **Einzelhandel und Handel \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Kategorie Verkäufe'**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -130,7 +129,7 @@ Der Bericht **Organisationsverkäufe** zeigt die Leistung Ihrer Geschäfte nach 
 
 Befolgen Sie diese Schritte, um den Bericht **Organisationsverkäufe** zu erstellen.
 
-1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Organisationsverkäufe'**.
+1. Navigieren Sie zu **Einzelhandel und Handel \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Organisationsverkäufe'**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie **OK**.
@@ -138,6 +137,3 @@ Befolgen Sie diese Schritte, um den Bericht **Organisationsverkäufe** zu erstel
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Startseite für Commerce](../retail/index.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb0472a0d2ac9b552cd16e4d6bf516a876ea4a0e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0957fee111ec1fd5bb66951126869cf46d88b36e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428544"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967482"
 ---
 # <a name="moving-average"></a>Flexibler Durchschnitt
 
@@ -141,7 +140,7 @@ Wenn die neue verfügbare Menge nach der Transaktion positiv ist, wird die Trans
 
 ## <a name="inventory-value-report"></a>Lagerwertbericht
 
-In diesem Beispiel für flexiblen Durchschnitt wird der Lagerwertbericht gedruckt, um die aktuelle Berechnung des flexiblen Durchschnitts für ein Produkt zu unterstützen. Der Bericht "Lagerwert" kann die Buchungen sowie die Kosten in chronologischer Reihenfolge drucken, um die Berechnung der gleitenden Durchschnittskosten eines Produkts zu unterstützen. Im Bericht werden die flexiblen Durchschnittskosten für das Produkt angezeigt. Im Dialgofeld **Lagerwertberichte** ermöglicht Ihnen ein „Datumsintervall“, die **Transaktionsuhrzeit** oder das **Buchungsdatum** auszuwählen, nach denen der Bericht zu sortieren ist. Die Option **Buchungsdatum** legt fest, wie der Bericht üblicherweise gedruckt wird. Die Option **Transaktionsuhrzeit** ist das tatsächliche Datum, an dem die Buchung gemeldet ist und die gleitenden Durchschnittskosten für das Produkt aktualisiert werden. Sie können den Bericht "Lagerwert" drucken, indem Sie die Option **Transaktionsuhrzeit-Sortierung** verwenden, wenn die Berechnung der gleitenden Durchschnittskosten im Laufe der Zeit angezeigt werden sollen. In der folgenden Tabelle werden die Transaktionen für das Produkt angezeigt, für das der Bericht gedruckt wird, wenn die Option **Transaktionsuhrzeit-Sortierung** verwendet wird.
+In diesem Beispiel für flexiblen Durchschnitt wird der Lagerwertbericht gedruckt, um die aktuelle Berechnung des flexiblen Durchschnitts für ein Produkt zu unterstützen. Der Bericht "Lagerwert" kann die Buchungen sowie die Kosten in chronologischer Reihenfolge drucken, um die Berechnung der gleitenden Durchschnittskosten eines Produkts zu unterstützen. Im Bericht werden die flexiblen Durchschnittskosten für das Produkt angezeigt. Im Dialgofeld **Bestandswertberichte** ermöglicht Ihnen ein Datumsintervall, die **Transaktionsuhrzeit** oder das **Buchungsdatum** auszuwählen, nach der bzw. dem der Bericht zu sortieren ist. Die Option **Buchungsdatum** legt fest, wie der Bericht üblicherweise gedruckt wird. Die Option **Transaktionsuhrzeit** ist das tatsächliche Datum, an dem die Buchung gemeldet ist und die gleitenden Durchschnittskosten für das Produkt aktualisiert werden. Sie können den Bericht "Lagerwert" drucken, indem Sie die Option **Transaktionsuhrzeit-Sortierung** verwenden, wenn die Berechnung der gleitenden Durchschnittskosten im Laufe der Zeit angezeigt werden sollen. In der folgenden Tabelle werden die Transaktionen für das Produkt angezeigt, für das der Bericht gedruckt wird, wenn die Option **Transaktionsuhrzeit-Sortierung** verwendet wird.
 
 | Transaktionsuhrzeit | Datum         | Transaktionstyp           | Menge | Betrag | Durchschnittliche Einheitenkosten |
 |------------------|--------------|----------------------------|----------|--------|-------------------|
@@ -155,6 +154,3 @@ In diesem Beispiel für flexiblen Durchschnitt wird der Lagerwertbericht gedruck
 
 > [!NOTE]
 > Sie können das Hauptbuch nicht mit dem Bestand abstimmen, indem Sie die Option **Transaktionsuhrzeit-Sortierung** verwenden. Der Bericht muss gedruckt werden, indem die Option **Buchungsdatum** verwendet wird.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

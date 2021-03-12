@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransPeriodic, LedgerJournalTransDaily
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7f721a05c8b74f1cfcf43177b73129751483650e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 99d157e82f8451e2c8f0bc7946ba30ca48e99add
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443601"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968503"
 ---
 # <a name="post-periodic-journals"></a>Periodische Erfassungen veröffentlichen
 
@@ -58,6 +57,3 @@ Periodische Erfassungen werden mitunter als wiederkehrende Erfassungen bezeichne
 27. Geben Sie im Feld **Periodische Erfassungsnummer** einen Wert ein, oder wählen Sie einen Wert aus.
 28. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 29. Klicken Sie auf **OK**. Die periodischen Erfassung kann je nach Bedarf und Einstellung jetzt überprüft, genehmigt oder gebucht werden.   
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
