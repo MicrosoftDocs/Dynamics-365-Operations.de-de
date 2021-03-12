@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a00ae517ff583e4231099d8e9f5d5b5a696cf7f7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 3015ec777953cedb5a5d8eea873ed1043cac04cb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645792"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970233"
 ---
 # <a name="troubleshoot-warehouse-work"></a>Fehlerbehebung bei der Lagerortarbeit
 
@@ -50,6 +49,3 @@ Die Dimension **Besitzer** für die Nachverfolgung fehlt, wenn die Lagerort App 
 ### <a name="issue-resolution"></a>Problemlösung
 
 Microsoft hat dieses Problem untersucht und festgestellt, dass es sich um eine Einschränkung der Funktion handelt. Derzeit unterstützen die Prozesse der Lagerortverwaltung nur Bestände, die im Besitz der juristischen Entität sind.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

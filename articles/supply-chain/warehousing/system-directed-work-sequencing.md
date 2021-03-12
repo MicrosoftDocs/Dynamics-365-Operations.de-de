@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 86d396b069a354b8fa7e15793372a8293273d238
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3811486a31d079cac7f7c27ea6323f16de4478d5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429092"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970205"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemgeleitete Arbeitsabfolgen
 
@@ -305,6 +304,3 @@ Die systemgeleiteten Arbeitsabfolgeabfragen sind *inklusive*. Es ist wichtig, da
 Daher wurde im Beispiel aus diesem Szenario die Arbeits-ID *4* auch von der Abfrage erfasst. Bei der Erstellung wurden zwei Positionen hinzugefügt: eine für 25 EA und eine für 10 EA. Die Arbeit wurde dem Benutzer weiterhin präsentiert, da mindestens eine Arbeitsposition eine Menge von weniger als 20 EA aufweist.
 
 Je nach Szenario können Sie dieses Verhalten mithilfe von Arbeitspausen verhindern.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

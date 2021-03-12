@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9558013236a728e0fb9691f4edd719fe58d5457
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec62af4ec62de0d63b590c79db6a8164d59e72c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443704"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971277"
 ---
 # <a name="budget-planning"></a>Budgetplanung
 
@@ -106,7 +105,7 @@ Budgetplanung verwendet spezielle Sicherheitsrichtlinien, um den Zugriff auf die
 
 2.5. Wählen Sie "Zugriff individuell auf spezifische Organisationen erteilen" aus. Wählen Sie die im ersten Schritt erstellte Organisationshierarchie aus. Wählen Sie „Finanzknoten“ aus, und klicken Sie auf die Schaltfläche „Zugriff erteilen (inkl. untergeordnete Elemente)“. 
 
-***Wichtig!*** *Stellen Sie sicher, dass Sie sich im Kontext DEMF Juristische Person befinden, wenn Sie diese Aufgabe ausführen, da die Organisationssicherheit pro juristische Person angewendet wird.* 
+**_Wichtig!_* _ _Stellen Sie sicher, dass Sie sich im Kontext „juristische DEMF-Person“ befinden, wenn Sie diese Aufgabe ausführen, da Organisationssicherheit pro juristische Person* angewendet wird 
 
 ### <a name="task-3-create-scenarios"></a>Abgabe 3: Szenarien erstellen
 3.1. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanung konfigurieren. Beachten Sie auf der Szenarioseite die Szenarien, die wir später in dieser Übungseinheit verwenden werden: Vorjahres-Istwerte und Budgetiert. 
@@ -247,6 +246,3 @@ C. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budget
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

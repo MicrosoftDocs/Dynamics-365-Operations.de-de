@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2bec8653c05d7684202c0e63d049ddb517e12834
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb1afb0ebce742fa2f6accd65e553df6607107a4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412606"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972279"
 ---
 # <a name="define-loyalty-schemes"></a> Definieren von Treueschemas
 
@@ -29,7 +28,7 @@ ms.locfileid: "4412606"
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Definieren eines Treueschemas. Treueschemas sind Belohnungserwerbs- und -einlöseregeln für ein Treueprogramm. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 
-1. Navigieren Sie zu Retail und Commerce > Debitoren > Treue > Treueschemas.
+1. Navigieren Sie zu Einzelhandel und Handel > Debitoren > Treue > Treueschemas.
 2. Klicken Sie auf Neu.
 3. Geben Sie im Feld "Schemakennung" einen Wert ein.
 4. Geben Sie im Feld "Beschreibung" einen Wert ein.
@@ -70,6 +69,3 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Definieren eines Treues
 27. Klicken Sie auf "Speichern".
     * Immer wenn Sie die Kanäle für ein Treueschema ändern, müssen Sie Prozesstreueschemas ausführen. Auf diese Weise werden für die Kanäle aktualisierte Treueschemas abgerufen.  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

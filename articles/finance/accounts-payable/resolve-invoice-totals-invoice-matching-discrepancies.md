@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: VendTotalPriceTolerance
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 63413
 ms.assetid: 9ac42457-95b2-4191-ad06-c7e323704466
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0cf5a48a0f6beafad3c9a657c44079b290a7ebd5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8517e2725bab69d33cfd22b77575a6aa110dde44
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443526"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972055"
 ---
 # <a name="resolve-discrepancies-during-invoice-totals-matching-overview"></a>Behebung von Diskrepanzen bei der Übersicht über den Abgleich von Rechnungsbeträgen
 
@@ -44,6 +43,3 @@ Sollten Sie nach Erkennung der Abweichung der Meinung sein, die Abweichung sei a
 Weitere Informationen finden Sie unter [Untersuchung/Auflösung von Ausnahmen](tasks/research-resolve-exceptions.md).
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

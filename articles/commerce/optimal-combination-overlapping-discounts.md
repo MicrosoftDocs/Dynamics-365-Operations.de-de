@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 89643
 ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 565722da65cbb711acedb5acf7de4edfbd615314
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 747c67812b0a357c35778c82531e9db7e99e510b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412577"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972706"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Ermittelt die optimale Kombination von überlappenden Rabatten
 
@@ -84,6 +83,3 @@ Um den Abgang einer exponential zunehmenden Anzahl von Kombinationen die Behebun
 ![Formel für die Berechnung des Schwellenwerts](./media/overlapping-discount-combo-06.jpg)
 
 Nachdem der Schwellenwert eines jeden Rabatts auf einem freigegebenen Produktsatz berechnet wurde, werden die Rabatte auf die freigegebenen Produkten angewendet, und zwar in der Reihenfolge vom höchsten Schwellenwert bis zu niedrigsten Schwellenwert. Bei dieser Methode werden alle restlichen Rabattmöglichkeiten nicht jedes Mal verglichen, nachdem eine einzelne AOS-Instanz einen Rabatt angewendet wurde. Stattdessen werden einmal verglichen überlappenden die Rabatte angewendet und dann im Auftrag. Keine weiteren Vergleiche durchgeführt werden. Sie können den Schwellenwert konfigurieren, die der auf der Schwellenwertmethode **Rabatt** Registerkarte der **Commerce Parameter** Seite zu wechseln. Die akzeptierte Zeit, den Rechnungsrabatt zu berechnen variiert zu Einzelhandel. Allerdings liegt diese Zeit im Allgemeinen im Bereich der zehnten Millisekunden auf einer Sekunde.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
