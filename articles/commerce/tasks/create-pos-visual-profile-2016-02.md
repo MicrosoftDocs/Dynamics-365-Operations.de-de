@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b265a94c6d8f9e2534e1509e4f33c6f8a05eded0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3e1604c12a52e85a73060c6c25e71026fe9ccc18
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412612"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964719"
 ---
 # <a name="create-point-of-sale-pos-visual-profiles"></a>Visuelle Profile für Verkaufsstellen (POS) erstellen
 
@@ -29,7 +28,7 @@ ms.locfileid: "4412612"
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen visuellen Verkaufsstellen (POS)-Profils. Ein visuelles Profil beinhaltet grundlegende Informationen zur Darstellung der POS-Register. Sie können mehrere visuelle Profile erstellen und bestimmte Profile zuweisen, die auf bestimmten Registern ausgeführt werden sollen. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 
-1. Navigieren Sie zu Retail und Commerce > Kanaleinstellungen > POS-Einstellungen > POS-Profile > Visuelle Profile.
+1. Navigieren Sie zu Einzelhandel und Handel > Kanaleinstellungen > POS-Einstellungen > POS-Profile > Visuelle Profile.
 2. Klicken Sie auf "Neu".
 3. Geben Sie im Feld "Profil" einen Wert ein.
 4. Geben Sie im Feld "Beschreibung" einen Wert ein.
@@ -48,6 +47,3 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen v
 17. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 18. Klicken Sie auf "Speichern".
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

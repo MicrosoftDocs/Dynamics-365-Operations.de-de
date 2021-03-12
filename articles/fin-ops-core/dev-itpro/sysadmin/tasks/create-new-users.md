@@ -3,7 +3,7 @@ title: Erstellen neuer Benutzer
 description: Benutzer sind interne Mitarbeiter der Organisation oder externe Debitoren und Kreditoren, die Zugriff auf Microsoft Dynamics AX anfordern, ihre Einzelvorgänge auszuführen.
 author: peakerbl
 manager: AnnBe
-ms.date: 06/08/2020
+ms.date: 01/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,46 +15,69 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6f861b7493d039b332358be7df7d0198cbadcb7a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ca062ddd49f1c206c503fb6160ed436fe2d6f7e9
+ms.sourcegitcommit: 9e27a097b7eb3c8f2df66011ccc597ad18bc5445
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679839"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "4878656"
 ---
-# <a name="create-new-users"></a>Erstellen neuer Benutzer
+# <a name="create-new-users"></a>Neue Benutzer erstellen
 
 [!include [banner](../../includes/banner.md)]
 
-Benutzer sind interne Mitarbeiter der Organisation oder externe Debitoren und Kreditoren, die Zugriff auf das System anfordern, um ihre Einzelvorgänge auszuführen.
+Bevor Sie auf Finance and Operations-Apps zugreifen können, müssen Sie der Seite **Benutzer** (**Systemverwaltung \> Benutzer \> Benutzer**) hinzugefügt werden. Zu den Benutzern gehören interne Mitarbeiter Ihres Unternehmens oder externe Kunden und Lieferanten. Benutzer können manuell importiert oder hinzugefügt werden. Alle Benutzer müssen für die konforme Verwendung ordnungsgemäß lizenziert sein.
 
-## <a name="associate-a-user-with-a-license-new-license-types-only"></a>Zuordnen eines Benutzers zu einer Lizenz (nur neue Lizenztypen)
-Für Debitoren mit einem der neuen Lizenztypen, die im Oktober 2019 hinzugefügt wurden, müssen Benutzern eine Lizenz zugeordnet werden. Benutzer, die einer Lizenz zugeordnet sind, werden automatisch als Systembenutzer hinzugefügt, die bei der ersten Anmeldung keine Rollen haben.
+Informationen zum Kauf und zur Lizenzierung für Finance and Operations-Apps siehe [Microsoft Dynamics 365-Lizenzierungshandbuch](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
+## <a name="assign-a-license-to-a-user"></a>Zuweisen einer Lizenz zu einem Benutzer
 Systemadministratoren können [Benutzern Lizenzen zuordnen](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) – im [Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
-## <a name="associate-an-external-user-with-a-license-new-license-types-only"></a>Zuordnen eines externen Benutzers zu einer Lizenz (nur neue Lizenztypen)
-Benutzer außerhalb des Mandanten, in dem die Umgebung bereitgestellt wurde, müssen im Host-Mandantenverzeichnis vertreten sein ( Azure Active Directory ( Azure AD)), damit ihnen Lizenzen zugewiesen werden können. Diese externen Benutzer sollten dem Mandanten in Azure AD als Gastbenutzer hinzugefügt werden und dann sollten ihnen die entsprechenden Lizenzen zugewiesen werden. Weitere Informationen finden Sie unter [Azure Active Directory Benutzer der B2B-Zusammenarbeit im Azure-Portal hinzufügen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Einen externen Benutzer in Azure AD hinzufügen und eine Lizenz zuweisen 
+Externe Benutzer müssen in Ihrem Mandantenverzeichnis vertreten sein (Azure Active Directory (Azure AD)) damit ihnen Lizenzen zugewiesen werden können. Diese externen Benutzer sollten dem Mandanten in Azure AD als Gastbenutzer hinzugefügt werden und dann sollten ihnen die entsprechenden Lizenzen zugewiesen werden. Eine Voraussetzung für Finance and Operations-Apps ist, dass die Firma des Gastbenutzers Azure AD verwenden muss. Weitere Informationen finden Sie unter [Azure Active Directory Benutzer der B2B-Zusammenarbeit im Azure-Portal hinzufügen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
-## <a name="add-a-new-user"></a>Hinzufügen eines neuen Benutzers
-1. Wechseln Sie zu **Systemverwaltung \> Benutzer \> Benutzer**.
-2. Wählen Sie im Aktivitätsbereich **Neu** aus.
-3. Geben Sie im Feld **Benutzerkennung** eine eindeutige Kennung für den Benutzer ein. Geben Sie ein Kennwort ein.  
-4. Geben Sie im Feld **Benutzername** den Namen des Benutzers ein.  
-5. Geben Sie im Feld **Domain** die Domäne des Benutzers ein.  
-6. Geben Sie im Feld **Alias** den Alias des Benutzers ein.  
-7. Wählen Sie im Feld **Unternehmen** das gewünschte Unternehmen aus. 
-8. Wählen Sie im Inforegister **Benutzerrollen** die Option **Rollen zuweisen** aus, um Sicherheitsrollen zuzuweisen. Ausführlichere Informationen finden Sie unter [Zuweisen von Benutzern zu Sicherheitsrollen](assign-users-security-roles.md).
-9. Wählen Sie **OK**.
-10. Wählen Sie **Speichern** aus.
-
-## <a name="import-users"></a>Benutzer importieren
-1. Wechseln Sie zu **Systemverwaltung \> Benutzer \> Benutzer**.
+## <a name="import-new-users-from-azure-ad"></a>Neue Benutzer aus Azure AD importieren 
+1. Wechseln Sie zu **Systemverwaltung** \> **Benutzer** \> **Benutzer**.
 2. Wählen Sie im Aktivitätsbereich **Benutzer importieren** aus.
-3. Markieren Sie in der Liste die ausgewählte Zeile.
+3. Wählen Sie die Benutzer aus, die importiert werden sollen. Die Liste enthält Azure AD-Benutzer, die derzeit keine Benutzer in dieser Umgebung sind.
 4. Wählen Sie **Benutzer importieren** aus.
 5. Wählen Sie **Schließen** aus.
 
+> [!NOTE]
+> Der Wert für das Feld **Unternehmen** wird basierend auf dem aktuellen Sitzungsunternehmen für den Administrator festgelegt. Nach dem Import müssen Sie gegebenenfalls Rollen und Organisationen zuweisen. Ausführlichere Informationen finden Sie unter [Zuweisen von Benutzern zu Sicherheitsrollen](assign-users-security-roles.md). Bedingt kann es auch erforderlich sein, den Benutzer mit einer **Person** zu verknüpfen und Benutzeroptionen wie Sprache zu aktualisieren.
 
+## <a name="manually-add-a-new-user"></a>Manuelles Hinzufügen eines neuen Benutzers
+1. Wechseln Sie zu **Systemverwaltung** \> **Benutzer** \> **Benutzer**.
+2. Wählen Sie im Aktivitätsbereich **Neu** aus.
+3. Geben Sie im Feld **Benutzerkennung** eine eindeutige Kennung für den Benutzer ein.   
+4. Geben Sie im Feld **Benutzername** den Namen des Benutzers ein.  
+5. Im Feld **Anbieter**:
+ - Verwenden Sie für interne Benutzer den Standardwert. Zum Beispiel Ihren Azure AD-Mandanten mit dem Präfix https://sts.windows.net/.  
+ - Für Nicht-Azure AD-Benutzer, z. B. Service-2-Service-Konten, geben Sie einen grundlegenden Textwert ein. Beispielsweise NA. Dieser Wert hilft, falsche Authentifizierungsaufrufe zu vermeiden, die zu Fehlern führen können, wenn ein gültiger Identitätsanbieterwert verwendet wird.  
+ - Fügen Sie für externe Benutzer oder Gastbenutzer deren Azure AD-Mandantennamen nach https://sts.windows.net/ hinzu.
+6. Geben Sie im Feld **E-Mail** die vollständige E-Mail-Adresse/den Benutzerprinzipalnamen des Benutzers ein.  
+7. Wählen Sie im Feld **Unternehmen** das Standardstartunternehmen für den Benutzer aus. 
+8. Wählen Sie **Speichern** aus.
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+Die Werte für Identitätsanbieter und Telemetrie-ID werden basierend auf einem [Microsoft Graph](https://docs.microsoft.com/graph/overview)-Aufruf aktualisiert, wenn der Benutzerdatensatz gespeichert wird. Die Telemetrie-ID basiert auf der Objekt-ID/Sicherheitskennung (SID) des Benutzers in Azure AD.
+
+> [!NOTE]
+> Nachdem Sie einen Benutzer hinzugefügt haben, müssen Sie gegebenenfalls Rollen und Organisationen zuweisen. Ausführlichere Informationen finden Sie unter [Zuweisen von Benutzern zu Sicherheitsrollen](assign-users-security-roles.md). Bedingt kann es auch erforderlich sein, den Benutzer mit einer **Person** zu verknüpfen und **Benutzeroptionen** wie Sprache zu aktualisieren.
+
+## <a name="change-a-user-id"></a>Ändern einer Benutzer-ID
+Um eine Benutzer-ID zu ändern, müssen Sie den Schlüssel in der Datenbank umbenennen. Wenn Sie eine Benutzer-ID mithilfe dieses Verfahrens ändern, werden alle zugehörigen Benutzereinstellungen geändert, um die neue Benutzer-ID zu verwenden. Die Nutzungsinformationen in der Tabelle **SysLastValue** werden z. B. aktualisiert, um auf die neue Benutzer-ID zu verweisen.
+
+> [!NOTE]
+> Die Benutzer-ID ist der Primärschlüssel der Benutzerinformationstabelle. Das Umbenennen des Primärschlüssels kann für vorhandene Benutzer einige Zeit in Anspruch nehmen, da alle Verweise auf den Schlüssel auch in der Datenbank aktualisiert werden. 
+
+1. Wechseln Sie zu **Systemverwaltung \> Benutzer \> Benutzer**.
+2. Wählen Sie einen Benutzer in der Liste aus, und wählen Sie **Optionen \> Datensatzinfo**.
+3. Wählen Sie **Umbenennen** aus.
+4. Geben Sie einen neuen und eindeutigen Wert für die Benutzer-ID ein, und wählen Sie **OK** aus. 
+5. Wählen Sie **Ja** aus, um bestätigen.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+Weitere Optionen zum Implementieren von B2B-Benutzern finden Sie unter [B2B-Benutzer in Azure AD exportieren](../implement-b2b.md).
+
+Informationen zu vorkonfigurierten Systemkonten finden Sie unter [Vorkonfigurierte Systemkonten](../pre-configured-system-accounts.md)

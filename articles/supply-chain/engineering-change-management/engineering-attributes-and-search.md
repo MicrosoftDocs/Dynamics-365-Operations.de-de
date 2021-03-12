@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 5a4f31af3f76c1af6a0f5546955e810bd1cca375
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 32cd2c6d0915df1e48973a22a7d391eb8d62a072
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429161"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963687"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Technische Attribute und Suche nach technischen Attributen
 
@@ -94,6 +93,3 @@ Sie müssen die Engineering-Kategorie angeben, zu der das Produkt gehört. Die K
 Sie können die Engineering-Attribut-Suche verwenden, um Produkte zu finden, indem Sie nach ihren Engineering-Attribut-Werten suchen. So können Sie auf einfache Weise Engineering-Produkte anhand ihrer Eigenschaften finden. Sie können in den Produkten suchen, die zu einer Engineering-Produktkategorie gehören, oder Sie können über alle Engineering-Produkte suchen.
 
 Die Suche ist auf Produktstammdaten-Seiten und von transaktionalen Elementen im System aus verfügbar, z. B. von Aufträgen aus. Bei einem transaktionalen Element können Sie die Seite **Attributsuche Engineering** verwenden, um nach einem Produkt zu suchen. Sie können dann die Schaltfläche **Als neue Zeile hinzufügen** verwenden, um das Produkt zu den Zeilen des Verkaufsauftrags hinzuzufügen. Produkte aus den Suchergebnissen können auch direkt zum Auftrag hinzugefügt werden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailSPOnlineStoreDetailPage, SysLookupMultiSelectGrid, DimensionLookup, OMHierarchyManager, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f15b035c01801041d637a2d315d8a3ddcc9d6540
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8e92e28c721692ed92fa931ed899c48678622349
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412618"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964793"
 ---
 # <a name="create-online-channel-and-define-channel-attributes"></a>Erstellen Sie Onlinekanal und definieren Sie Kanalattribute
 
@@ -32,7 +31,7 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen O
 
 
 ## <a name="create-a-new-online-channel"></a>Neuen Onlinechannel erstellen
-1. Navigieren Sie zu Retail und Commerce > Kanäle > Onlineshops.
+1. Navigieren Sie zu Einzelhandel und Handel > Kanäle > Onlineshops.
 2. Klicken Sie auf Neu.
 3. Geben Sie im Feld "Name" einen Wert ein.
 4. Geben Sie im Feld 'Lagerort' einen Wert ein, oder wählen Sie einen Wert aus.
@@ -62,11 +61,8 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen O
 11. Klicken Sie auf "Veröffentlichen".
 
 ## <a name="configure-orders-for-near-real-time-notification"></a>Konfigurieren von Aufträgen für die Benachrichtigung beinahe in Echtzeit
-1. Gehen Sie zu Retail und Commerce > Zentralverwaltungseinrichtung > Parameter > Commerce-Parameter.
+1. Gehen Sie zu Einzelhandel und Handel > Zentralverwaltungseinrichtung > Parameter > Commerce-Parameter.
 2. Legen Sie „Echtzeitdienst für eCommerce-Auftragserstellung verwenden“ auf „Ja“ fest.
 3. Führen Sie den Verteilungszeitplan 1070 aus, um Änderungen an der Kanaldatenbank zu synchronisieren. 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetParameters, AssetDepreciationProfile
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 006a3eb2aae6c414ffd087fe67ca48b648a0f865
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9479f5935b7eda81408986fc1aa2d31e107aba2b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407766"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964503"
 ---
 # <a name="de-00002-depreciation-adjustments-for-additional-acquisitions-in-the-second-year"></a>DE-00002 Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr
 
@@ -45,6 +44,3 @@ Dieses Handbuch veranschaulicht, wie die Berechnung der Abschreibung für zusät
 7. Ganzjährliche Abschreibung sonstiger Anschaffungen
 8. Klicken Sie auf "Speichern".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

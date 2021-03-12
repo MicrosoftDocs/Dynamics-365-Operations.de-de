@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 73662929f116ce6128c57a71037298f208c3c16b
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: 5585ad96ec689b55c00e123fc465684436028823
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516668"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963609"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-supply-chain-management"></a>Lernkatalog für Implementierungs-Projektmanager, die mit Dynamics 365 Supply Chain Management arbeiten
 
@@ -107,6 +106,3 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 | [Prüfung MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Diese Prüfung ermittelt Ihre Fähigkeit, die folgenden technischen Aufgaben zu erfüllen: allgemeine Funktions- und Implementierungstools verwenden; Sicherheit, Prozesse und Optionen konfigurieren, Datenmigration ausführen und die Lösung validieren und unterstützen. | Prüfung; Kosten variieren nach Regionen |
 | [Prüfung MB-320: Microsoft Dynamics 365 for Finance and Operations, Fertigung](https://docs.microsoft.com/learn/certifications/exams/mb-320?wt.mc_id=learningredirect_certs-web-wwl) | Diese Prüfung ermittelt Ihre Fähigkeit, die folgenden technischen Aufgaben zu erfüllen: Einrichten und Konfigurieren der Fertigung; Erstellen und Verwalten der Produktion und der Lean-Aufträge; und Erstellen, Verarbeiten und Verwalten von Produktionschargenaufträgen. | Prüfung; Kosten variieren nach Regionen |
 | [Prüfung MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](https://docs.microsoft.com/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | Diese Prüfung ermittelt Ihre Fähigkeit, die folgenden technischen Aufgaben zu erfüllen: Implementieren der Produktinformationsverwaltung; Implementieren der Bestandverwaltung; Implementieren und Verwalten von Lieferkettenprozessen; und Implementieren von Lagerortverwaltung und Transportverwaltung und Durchführen von Geschäftsprozessen. | Prüfung; Kosten variieren nach Regionen |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 601977cc5b8aa992b8576d30eb1412fb4e119154
-ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
+ms.openlocfilehash: 3bd028e7d61fd57ed434a8a598bf24329a54ac1c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4666793"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963634"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Lernkatalog für funktionale Dynamics 365 Supply Chain Management-Berater
 
@@ -114,6 +113,3 @@ Für funktionale Berater zeigt unsere Arbeitsaufgabenanalysestudie, dass jeder d
 | [Prüfung MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Diese Prüfung ermittelt Ihre Fähigkeit, die folgenden technischen Aufgaben zu erfüllen: allgemeine Funktions- und Implementierungstools verwenden; Sicherheit, Prozesse und Optionen konfigurieren, Datenmigration ausführen und die Lösung validieren und unterstützen. | Prüfung; Kosten variieren nach Regionen |
 | [Prüfung MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](https://docs.microsoft.com/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | Diese Prüfung ermittelt Ihre Fähigkeit, die folgenden technischen Aufgaben zu erfüllen: Implementieren der Produktinformationsverwaltung; Implementieren der Bestandverwaltung; Implementieren und Verwalten von Lieferkettenprozessen; und Implementieren von Lagerortverwaltung und Transportverwaltung und Durchführen von Geschäftsprozessen. | Prüfung; Kosten variieren nach Regionen |
 | [Prüfung MB-320: Microsoft Dynamics 365 for Finance and Operations, Fertigung](https://www.microsoft.com/learning/exam-MB-320.aspx) | Diese Prüfung ermittelt Ihre Fähigkeit, die folgenden technischen Aufgaben zu erfüllen: Einrichten und Konfigurieren der Fertigung; Erstellen und Verwalten der Produktion und der Lean-Aufträge; und Erstellen, Verarbeiten und Verwalten von Produktionschargenaufträgen. | Prüfung; Kosten variieren nach Regionen |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

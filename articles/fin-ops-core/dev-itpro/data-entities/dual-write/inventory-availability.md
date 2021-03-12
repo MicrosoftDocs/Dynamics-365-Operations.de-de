@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: riluan
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 4d1022eec633bf0a9edb4d5b26982853cec836d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a7bfe998d2d787203a507a831c171fc43b03fedc
+ms.sourcegitcommit: cc9921295f26804259cc9ec5137788ec9f2a4c6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4452999"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "4839548"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Inventarverfügbarkeit in dualem Schreiben
 
@@ -58,5 +58,63 @@ Das Dialogfeld gibt die ATP-Informationen aus dem Supply Chain Management zurüc
 - Abgangsmenge
 - Verfügbare Menge
 
+## <a name="how-it-works"></a>Funktionsweise
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+Wenn Sie die Schaltfläche **Verfügbarer Bestand** auf der Seite **Angebote**, **Aufträge** oder **Rechnungen** auswählen, wird ein Live-Aufruf zum dualen Schreiben an die API **Verfügbarer Lagerbestand** durchgeführt. Die API berechnet den verfügbaren Lagerbestand für das jeweilige Produkt. Das Ergebnis wird in den Tabellen **InventCDSInventoryOnHandRequestEntity** und **InventCDSInventoryOnHandEntryEntity** gespeichert und dann mit dualem Schreiben in Dataverse geschrieben. Um diese Funktionalität nutzen zu können, müssen Sie die folgenden Zuordnungen für duales Schreiben ausführen. Überspringen Sie die anfängliche Synchronisierung, wenn Sie die Zuordnungen ausführen.
+
+- Einträge zu verfügbarem CDS-Lagerbestand (msdyn_inventoryonhandentries)
+- Anforderungen zu verfügbarem CDS-Lagerbestand (msdyn_inventoryonhandrequests)
+
+## <a name="templates"></a>Vorlagen
+Die folgenden Vorlagen stehen zur Verfügung, um die Daten zu vorhandenen Lagerbestand verfügbar zu machen.
+
+Finance and Operations Apps | Customer Engagement-App | Beschreibung 
+---|---|---
+[Einträge für verfügbaren CDS-Bestand](#145) | msdyn_inventoryonhandentries |
+[Anfragen für verfügbaren CDS-Bestand](#147) | msdyn_inventoryonhandrequests |
+
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+###  <a name="cds-inventory-on-hand-entries-msdyn_inventoryonhandentries"></a><a name="145"></a>Einträge zu verfügbarem CDS-Lagerbestand (msdyn_inventoryonhandentries)
+
+Diese Vorlage synchronisiert Daten zwischen Finance and Operations-Apps und Dataverse.
+
+Finance and Operations-Feld | Zuordnungstyp | Customer Engagement-Feld | Standardwert
+---|---|---|---
+`REQUESTID` | = | `msdyn_request.msdyn_requestid` |
+`INVENTORYSITEID` | = | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | = | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`AVAILABLEONHANDQUANTITY` | > | `msdyn_availableonhandquantity` |
+`AVAILABLEORDEREDQUANTITY` | > | `msdyn_availableorderedquantity` |
+`ONHANDQUANTITY` | > | `msdyn_onhandquantity` |
+`ONORDERQUANTITY` | > | `msdyn_onorderquantity` |
+`ORDEREDQUANTITY` | > | `msdyn_orderedquantity` |
+`RESERVEDONHANDQUANTITY` | > | `msdyn_reservedonhandquantity` |
+`RESERVEDORDEREDQUANTITY` | > | `msdyn_reservedorderedquantity` |
+`TOTALAVAILABLEQUANTITY` | > | `msdyn_totalavailablequantity` |
+`ATPDATE` | = | `msdyn_atpdate` |
+`ATPQUANTITY` | > | `msdyn_atpquantity` |
+`PROJECTEDISSUEQUANTITY` | > | `msdyn_projectedissuequantity` |
+`PROJECTEDONHANDQUANTITY` | > | `msdyn_projectedonhandquantity` |
+`PROJECTEDRECEIPTQUANTITY` | > | `msdyn_projectedreceiptquantity` |
+`ORDERQUANTITY` | > | `msdyn_orderquantity` |
+`UNAVAILABLEONHANDQUANTITY` | > | `msdyn_unavailableonhandquantity` |
+
+###  <a name="cds-inventory-on-hand-requests-msdyn_inventoryonhandrequests"></a><a name="147"></a>Anforderungen zu verfügbarem CDS-Lagerbestand (msdyn_inventoryonhandrequests)
+
+Diese Vorlage synchronisiert Daten zwischen Finance and Operations-Apps und Dataverse.
+
+Finance and Operations-Feld | Zuordnungstyp | Customer Engagement-Feld | Standardwert
+---|---|---|---
+`REQUESTID` | = | `msdyn_requestid` |
+`PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |
+`ISATPCALCULATION` | << | `msdyn_isatpcalculation` |
+`ORDERQUANTITY` | < | `msdyn_orderquantity` |
+`INVENTORYSITEID` | < | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | < | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`REFERENCENUMBER` | < | `msdyn_referencenumber` |
+`LINECREATIONSEQUENCENUMBER` | < | `msdyn_linecreationsequencenumber` |
+
+
+
+

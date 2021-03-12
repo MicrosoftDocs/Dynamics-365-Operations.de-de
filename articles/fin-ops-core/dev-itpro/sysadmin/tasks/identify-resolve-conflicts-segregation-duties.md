@@ -3,7 +3,7 @@ title: Identifizieren und Beheben von Konflikten bei der Aufgabentrennung
 description: In diesem Thema wird erläutert, wie Sie Konflikte bei der Aufgabentrennung ermitteln und lösen.
 author: peakerbl
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,34 +15,47 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b7e25a568b86ce3161e2c52045ff2361c0bc4a0e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: deff97c7728db91089d3ea834d15de738da500fa
+ms.sourcegitcommit: 316200579dd5b04ad76f276a2ed6b0f55fa8c812
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681593"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "4826367"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identifizieren und Beheben von Konflikten bei der Aufgabentrennung
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Konflikte bei der Aufgabentrennung ermitteln und lösen. Sie können Regeln einrichten, Aufgaben abzugrenzen, die von unterschiedlichen Benutzern ausgeführt werden müssen. Dieses Konzept wird Aufgabentrennung benannt. Wenn die Definierung einer Sicherheitsrolle oder die Rollenzuweisungen eines Benutzers die Regeln verletzt, wird der Konflikt protokolliert. Alle Konflikte müssen vom Administrator aufgelöst werden. Führen Sie die folgende Prozedur aus, um Konflikte zu erkennen und beheben. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
+In diesem Thema wird erläutert, wie Sie Konflikte bei der Aufgabentrennung ermitteln und lösen. Sie können Regeln einrichten, um Aufgaben abzugrenzen, die von unterschiedlichen Benutzern ausgeführt werden müssen. Dieses Konzept wird Aufgabentrennung benannt. Wenn die Definierung einer Sicherheitsrolle oder die Rollenzuweisungen eines Benutzers die Regeln verletzt, wird der Konflikt protokolliert. Alle Konflikte müssen vom Administrator aufgelöst werden. Führen Sie die folgende Prozedur aus, um Konflikte zu erkennen und beheben.
 
+Überprüfen Sie nach dem Hinzufügen einer Regel, ob alle vorhandenen Rollen kompatibel sind. 
 
-## <a name="verify-whether-user-role-assignments-comply-with-new-rules-for-segregation-of-duties"></a>Überprüfen, ob Benutzerrollenzuweisungen mit den neuen Aufgabentrennungsregel übereinstimmen
-1. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Sicherheit > Aufgabentrennung > Konformität mit Benutzerrollenzuweisungen überprüfen**.
-2. Wählen Sie **OK**. In einer Benachrichtigung werden die Ergebnisse der Überprüfung angezeigt. Falls ein Konflikt vorliegt, können Sie die **Benutzerseite** öffnen und die Rollenzuweisungen für den Benutzer ändern. Konflikte werden auch auf der Konflikt-Seite **Aufgabentrennung** angezeigt. Um den Prüfprozess als Stapelverarbeitungsauftrag auszuführen, wählen Sie **Stapelverarbeitung** aus, und legen Sie dann die anderen Stapelverarbeitungsparameter fest. Nachdem der Stapelverarbeitungsauftrag ausgeführt wurde, können Sie die Konflikte auf der Seite **Konflikte bei der Aufgabentrennung** prüfen.  
+## <a name="verify-that-existing-roles-and-duties-comply-with-new-rules-for-segregation-of-duties"></a>Überprüfen, ob existierende Rollen und Aufgaben mit neuen Aufgabentrennungsregeln übereinstimmen
+1. Wechseln Sie zu **Systemverwaltung** > **Sicherheit** > **Aufgabentrennung** > **Aufgabentrennungsregeln**.
+3. Wählen Sie **Aufgaben und Rollen überprüfen** aus. Werden irgendwelche vorhandene Rollen gegen die Regeln verstoßen, wird eine Meldung angezeigt, die den Namen der Regel, die Rolle und die Namen der Konflikte verursachenden Aufgaben enthält. Widersprüchliche Rollen müssen mit der **Sicherheitskonfiguration** geändert werden und dürfen keine widersprüchliche Aufgaben enthalten. Wenn keine Rollen gegen die ausgewählte Regel verstoßen, wird eine Meldung angezeigt, dass alle Rollen in der Kompatibilität sind.   
+
+> [!NOTE]
+> Die Validierung wird nur für die ausgewählte Regel durchgeführt. Es ist wichtig, die Konformität für jede Regel zu überprüfen.   
+
+Wenn Sie eine Rolle erstellen oder ändern, werden die Regeln für die Aufgabentrennung automatisch durchgesetzt. Sie können einer Rolle keine widersprüchlichen Aufgaben zuweisen.
+
+Stellen Sie als Nächstes sicher, dass alle vorhandenen Rollenzuweisungen kompatibel sind.
+
+## <a name="verify-that-user-role-assignments-comply-with-new-rules-for-segregation-of-duties"></a>Überprüfen, ob Benutzerrollenzuweisungen mit den neuen Aufgabentrennungsregeln übereinstimmen
+1. Wechseln Sie zu **Systemverwaltung > Sicherheit > Aufgabentrennung > Übereinstimmung mit Benutzerrollenzuweisungen überprüfen**.
+2. Wählen Sie **OK**. In einer Benachrichtigung werden die Ergebnisse der Überprüfung angezeigt. Konflikte werden auf der Seite **Aufgabentrennung - nicht behobene Konflikte** angezeigt.   
+
+Wenn Sie Benutzern Rollen zuweisen, werden die Regeln für die Aufgabentrennung automatisch durchgesetzt. Wenn Sie versuchen, einen Benutzer Rollen zuzuweisen, die widersprüchliche Aufgaben enthalten, wird eine Fehlermeldung angezeigt. Sie müssen den Konflikt dann lösen, indem Sie die zusätzliche Rollenzuweisung verweigern oder zulassen. Die zusätzliche Rolle wird zugewiesen, nachdem die Zuweisung zugelassen wird. 
+
+> [!NOTE]
+> Konflikte werden derzeit nicht für Benutzer überprüft, denen Rollen basierend auf den Active Directory-Domänengruppen zugewiesen wurden.
 
 ## <a name="view-and-resolve-conflicting-user-role-assignments"></a>Zuweisung Ansichts- und des Beschlusses Konflikt verursachende Benutzerrolle
-1. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Sicherheit > Aufgabentrennung > Konflikte bei der Aufgabentrennung**. Wählen Sie einen Konflikt aus, und klicken Sie anschließend auf eine der folgenden Schaltflächen: **Zuweisung verweigern – verweigern Sie die Zuweisung des Benutzers zur zusätzlichen Sicherheitsrolle**. Wenn Sie eine automatische Rollenzuweisung verweigern, wird der Benutzer als von der Rolle ausgeschlossen markiert. Dem ausgeschlossenen Benutzer wird kein der Rolle zugeordneter Zugriff gewährt, und er kann der Rolle erst zugewiesen werden, wenn der Administrator den Ausschluss aufhebt (bzw. entfernt). Zuweisung erlauben – **Überschreiben** Sie den Konflikt, und lassen Sie zu, dass der Benutzer beiden Sicherheitsrollen zugewiesen wird. Wenn Sie einen Konflikt außer Kraft setzen, müssen Sie im Feld **Grund für die Außerkraftsetzung** einen Grund angeben.  
-2. Schließen Sie die Seite.
-3. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Sicherheit > Aufgabentrennung > Aufgabentrennung - nicht behobene Konflikte**. Wählen Sie einen Konflikt aus, und klicken Sie anschließend auf eine der folgenden Schaltflächen: **Zuweisung verweigern – verweigern Sie die Zuweisung des Benutzers zur zusätzlichen Sicherheitsrolle**. Wenn Sie eine automatische Rollenzuweisung verweigern, wird der Benutzer als von der Rolle ausgeschlossen markiert. Dem ausgeschlossenen Benutzer wird kein der Rolle zugeordneter Zugriff gewährt, und er kann der Rolle erst zugewiesen werden, wenn der Administrator den Ausschluss aufhebt (bzw. entfernt). Zuweisung erlauben – **Überschreiben** Sie den Konflikt, und lassen Sie zu, dass der Benutzer beiden Sicherheitsrollen zugewiesen wird. Wenn Sie einen Konflikt außer Kraft setzen, müssen Sie im Feld **Grund für die Außerkraftsetzung** einen Grund angeben.    
-4. Schließen Sie die Seite.
+1. Wechseln Sie zu **Systemverwaltung** > **Sicherheit** > **Aufgabentrennung** > **Aufgabentrennung - nicht behobene Konflikte**. 
+2. Wählen Sie einen Konflikt aus, und wählen Sie dann eine der folgenden Aktionen aus: 
 
-## <a name="verify-whether-existing-roles-comply-with-new-rules-for-segregation-of-duties"></a>Überprüfen, ob existierende Rollen mit neuen Aufgabentrennungsregeln übereinstimmen
-1. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Sicherheit > Aufgabentrennung > Aufgabentrennungsregeln**. Wählen Sie eine Rolle aus.  
-2. Wählen Sie **Aufgaben und Rollen überprüfen** aus. Werden irgendwelche verstoßen vorhandene Rollen die ausgewählte Regel, wird eine Meldung angezeigt, die den Namen der Rolle und die Namen der Konflikte verursachenden Aufgaben enthält. Der Administrator muss entweder den Ausgleich für das Sicherheitsrisiko angeben oder Rolle ändern, sodass sie nicht die Regeln für Aufgabentrennung verstößt. Wenn keine Rollen die ausgewählte Regel verstoßen, wird eine Meldung mit, dass alle Rollen in der Kompatibilität sind.  
+  - **Zuweisung verweigern**: Dadurch wird die Zuordnung des Benutzers zur zusätzlichen Sicherheitsrolle verweigert. Wenn Sie eine automatische Rollenzuweisung verweigern, wird der Benutzer als von der Rolle ausgeschlossen markiert. Dem ausgeschlossenen Benutzer wird kein der Rolle zugeordneter Zugriff gewährt, und er kann der Rolle erst zugewiesen werden, wenn der Administrator den Ausschluss aufhebt (bzw. entfernt). 
+-  **Zuweisung erlauben**: Dies überschreibt den Konflikt und ermöglicht, dass dem Benutzer die zusätzliche Sicherheitsrolle zugewiesen wird. Wenn Sie einen Konflikt außer Kraft setzen, müssen Sie im Feld **Grund für die Außerkraftsetzung** einen Grund angeben. Alle überschriebenen Rollenzuweisungen können auf der Seite **Konflikte bei der Aufgabentrennung** angezeigt werden.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+> [!NOTE]
+> Wenn mehrere Konflikte für denselben Benutzer aufgelistet sind, wählen Sie den Benutzerdatensatz aus, und bewerten Sie die zugewiesenen Rollen auf der Seite **Benutzer**. Um diesen Konflikt zu vermeiden, überprüfen Sie jede Regel, nachdem sie hinzugefügt oder geändert wurde.

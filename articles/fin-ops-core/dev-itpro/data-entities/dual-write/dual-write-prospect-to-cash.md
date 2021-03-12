@@ -3,7 +3,7 @@ title: Prospect-to-cash in Dual-Write
 description: Dieses Thema bietet Informationen über die Prospect-to-Cash iDual-Write.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 01/27/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3f88d7249af515670c0a3e73a5ef890f04133d19
+ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683646"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "4959600"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospect-to-cash in Dual-write
 
@@ -37,6 +37,11 @@ In den App-Schnittstellen können Sie in Echtzeit auf die Verarbeitungsstatus un
 
 ![Dual-Write-Flow in Prospect-to-Cash](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
+Informationen zur Kunden- und Kontaktintegration finden Sie unter [Integrierte Masterdaten von Debitoren](customer-mapping.md). Informationen zur Produktintegration finden Sie unter [Einheitliche Produktumgebung](product-mapping.md).
+
+> [!NOTE]
+> In Dynamics 365 Sales beziehen sich sowohl Interessent als auch Kunde auf einen Datensatz in der Tabelle **Konto**, in der die Spalte **RelationshipType** entweder **Interessent** oder **Kunde** ist. Wenn Ihre Geschäftslogik einen **Konto**-Qualifizierungsprozess enthält, bei dem der Datensatz **Konto** erstellt und zuerst als Interessent und dann als Kunde qualifiziert wird, wird dieser Datensatz nur mit der Finance and Operations-App synchronisiert, wenn es ein Kunde ist (`RelationshipType=Customer`). Wenn Sie möchten, dass die Zeile **Konto** als Interessent synchronisiert wird, benötigen Sie eine benutzerdefinierte Zuordnung, um die Interessentendaten zu integrieren.
+
 ## <a name="prerequisites-and-mapping-setup"></a>Voraussetzungen und Zuordnungseinrichtung
 
 Bevor Sie Angebote synchronisieren können, müssen Sie die folgenden Einstellungen aktualisieren.
@@ -46,11 +51,11 @@ Bevor Sie Angebote synchronisieren können, müssen Sie die folgenden Einstellun
 Gehen Sie in Sales zu **Einstellungen \> Verwaltung \> Systemeinstellungen \> Vertrieb** und stellen Sie sicher, dass die folgenden Einstellungen verwendet werden:
 
 - Die Einstellung **Systempreisberechnung verwenden** ist auf **Ja** gesetzt.
-- Das Feld **Rabattberechnungsmethode** wird auf **Positionsartikel** festgelegt.
+- Die Spalte **Rabattberechnungsmethode** wird auf **Positionsartikel** festgelegt.
 
 ### <a name="sites-and-warehouses"></a>Standorte und Lagerhäuser
 
-Im Supply Chain Management sind die Felder **Site** und **Lager** für Angebots- und Auftragszeilen erforderlich. Wenn Sie den Standort und das Lager in den Standardauftragseinstellungen festlegen, werden diese Felder automatisch gesetzt, wenn Sie ein Produkt zu einer Angebots- oder Auftragszeile hinzufügen. 
+Im Supply Chain Management sind die Spalten **Standort** und **Lager** für Angebots- und Auftragspositionen erforderlich. Wenn Sie den Standort und das Lager in den Standardauftragseinstellungen festlegen, werden diese Spalten automatisch gesetzt, wenn Sie ein Produkt zu einer Angebots- oder Auftragsposition hinzufügen. 
 
 ### <a name="number-sequences-for-quotations-and-orders"></a>Nummernkreise für Angebote und Aufträge
 
@@ -62,11 +67,11 @@ Zum Beispiel ist der Nummernkreis im Supply Chain Management **1, 2, 3, 4, 5, ..
 
 Angebote können entweder im Vertrieb oder im Supply Chain Management erstellt werden. Wenn Sie ein Angebot in Sales erstellen, wird es in Echtzeit mit dem Supply Chain Management synchronisiert. Wenn Sie ein Angebot im Supply Chain Management erstellen, wird es in Echtzeit mit Sales synchronisiert. Beachten Sie die folgenden Punkte:
 
-+ Sie können dem Produkt einen Rabatt auf das Angebot hinzufügen. In diesem Fall wird der Rabatt mit dem Supply Chain Management synchronisiert. Die Felder **Rabatt**, **Belastungen** und **Steuer** in der Kopfzeile werden durch komplizierte Einstellungen in Supply Chain Management gesteuert. Diese Einrichtung unterstützt kein Integrations-Mapping. Stattdessen werden die Felder **Preis**, **Rabatt**, **Gebühr** und **Steuer** im Supply Chain Management gepflegt und behandelt.
-+ Die Felder **Rabatt %**, **Rabatt** und **Frachtbetrag** im Angebotskopf sind schreibgeschützte Felder.
-+ Die Felder **Frachtbedingungen**, **Lieferbedingungen**, **Versandmethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Felder abzubilden, müssen Sie ein Werte-Mapping einrichten, das für die Daten in den Organisationen, zwischen denen die Entität synchronisiert wird, spezifisch ist.
++ Sie können dem Produkt einen Rabatt auf das Angebot hinzufügen. In diesem Fall wird der Rabatt mit dem Supply Chain Management synchronisiert. Die Spalten **Rabatt**, **Belastungen** und **Steuer** in der Kopfzeile werden durch komplizierte Einstellungen in Supply Chain Management gesteuert. Diese Einrichtung unterstützt kein Integrations-Mapping. Stattdessen werden die Spalten **Preis**, **Rabatt**, **Gebühr** und **Steuer** in Supply Chain Management verwaltet.
++ Die Spalten **Rabatt %**, **Rabatt** und **Frachtbetrag** im Angebotskopf sind schreibgeschützte Spalten.
++ Die Spalten **Frachtkonditionen**, **Lieferbedingungen**, **Versandmethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Spalten zuzuordnen, müssen Sie eine Wertzuordnung, die für die Daten in den Organisationen, zwischen denen die Tabelle synchronisiert wird, spezifisch ist.
 
-Wenn Sie auch die Field Service-Lösung verwenden, müssen Sie den **Angebotsanforderungspositions-Erstellungs**-Parameter erneut aktivieren. Durch erneutes Aktivieren des Parameters können Sie mit der Schnellerstellungsfunktion weiterhin Angebote erstellen.
+Wenn Sie auch die Field Service-Lösung verwenden, müssen Sie den **Angebotsanforderungspositions-Erstellungs**-Parameter erneut aktivieren. Durch erneutes Aktivieren des Parameters können Sie mit der Schnellerstellungsfunktion weiterhin Angebotspositionen erstellen.
 1. Navigieren Sie zu Ihrer Dynamics 365 Sales-Anwendung.
 2. Wählen Sie das Einstellungssymbol in der oberen Navigationsleiste.
 3. Wählen Sie **Erweiterte Einstellungen**.
@@ -82,7 +87,7 @@ Kundenaufträge können entweder im Vertrieb oder im Supply Chain Management ang
 + Rabattberechnung und Rundung:
 
     - Das Rabattberechnungsmodell in Sales unterscheidet sich insofern vom Modell im Bereich Supply Chain Management. In Supply Chain Management kann der endgültige Rabattbetrag in einer Sales-Position die Ergebnisse einer Kombination von Rabattbeträgen und von Rabattprozentsätzen sein. Bei der abschließenden Rabattbetrag durch die Menge für die Position geteilt wird, kann möglicherweise das Runden auftreten. Diese Rundung wird jedoch nicht berücksichtigt, wenn ein gerundeter Rabattbetrag pro Einheit mit dem Vertrieb synchronisiert wird. Um sicherzustellen, dass der volle Rabattbetrag einer Verkaufszeile im Supply Chain Management korrekt mit Sales synchronisiert wird, muss der volle Betrag synchronisiert werden, ohne durch die Zeilenmenge geteilt zu werden. Daher müssen Sie die Rabattberechnungsmethode als **Zeilenposition** im Verkauf definieren.
-    - Wenn eine Kundenauftragszeile aus Sales in das Supply Chain Management synchronisiert wird, wird der volle Zeilenrabattbetrag verwendet. Da Supply Chain Management kein Feld hat, das den Rabattbetrag für vollständigen eine Position speichern kann, wird der Betrag durch die Menge dividiert und gespeichert im Feld **Positionsrabatt**. Jede Rundung, die während dieser Sparte auftritt, wird im Feld **Verkaufsgebühren** in der Verkaufszeile gespeichert.
+    - Wenn eine Kundenauftragszeile aus Sales in das Supply Chain Management synchronisiert wird, wird der volle Zeilenrabattbetrag verwendet. Da Supply Chain Management keine Spalte hat, die den vollständigen Rabattbetrag für eine Position speichern kann, wird der Betrag durch die Menge dividiert und in der Spalte **Positionsrabatt** gespeichert. Jede Rundung, die während dieser Division auftritt, wird in der Spalte **Verkaufsgebühren** in der Verkaufsposition gespeichert.
 
 ### <a name="example-synchronization-from-sales-to-supply-chain-management"></a>Beispiel: Synchronisierung von Sales und Supply Chain Management
 
@@ -98,7 +103,7 @@ Wenn Sie die Synchronisation vom Supply Chain Management zu Sales durchführen, 
 
 ## <a name="dual-write-solution-for-sales"></a>Dual-Write-Lösung für Sales
 
-Neue Felder wurden der Entität **Bestellung** hinzugefügt und erscheinen auf der Seite. Die meisten dieser Felder erscheinen auf der Registerkarte **Integration** in Sales. Weitere Informationen zur Zuordnung der Statusfelder finden Sie unter [Einrichten eines Mappings für die Auftragsstatusfelder](sales-status-map.md).
+Neue Spalten wurden der Tabelle **Bestellung** hinzugefügt und erscheinen auf der Seite. Die meisten dieser Spalten erscheinen auf der Registerkarte **Integration** in Sales. Weitere Informationen zur Zuordnung der Statusspalten finden Sie unter [Zuordnung für die Kundenauftragsstatusspalten einrichten](sales-status-map.md).
 
 + Die Schaltflächen **Rechnung erstellen** und **Bestellung stornieren** auf der Seite **Verkaufsauftrag** sind in Sales ausgeblendet.
 + Der Wert **Auftragsstatus** bleibt **Aktiv**, um sicherzustellen, dass Änderungen aus dem Supply Chain Management in den Kundenauftrag in Sales fließen können. Um dieses Verhalten zu steuern, setzen Sie den Standardwert **Statecode \[Status\]** auf **Aktiv**.
@@ -107,18 +112,18 @@ Neue Felder wurden der Entität **Bestellung** hinzugefügt und erscheinen auf d
 
 Verkaufsrechnungen werden im Supply Chain Management erstellt und mit Sales synchronisiert. Beachten Sie die folgenden Punkte:
 
-+ Ein Feld **Rechnungsnummer** wurde zur Entität **Rechnung** hinzugefügt und wird auf der Seite angezeigt.
++ Eine Spalte **Rechnungsnummer** wurde zur Tabelle **Rechnung** hinzugefügt und wird auf der Seite angezeigt.
 + Die Schaltfläche **Rechnung erstellen** auf der Seite **Verkaufsauftrag** ist ausgeblendet, da die Rechnungen im Supply Chain Management erstellt und mit Sales synchronisiert werden. Die Seite **Rechnung** kann nicht bearbeitet werden, da die Rechnungen aus dem Supply Chain Management synchronisiert werden.
 + Der Wert **Verkaufsauftragsstatus** wird automatisch in **Rechnungen** geändert, wenn die zugehörige Rechnung aus dem Supply Chain Management mit Sales synchronisiert wurde. Darüber hinaus wird der Eigentümer des Auftrags, aufgrund dessen die Rechnung erstellt wurde, als Eigentümer der Rechnung zugewiesen. Daher kann der Besitzer des Auftrags die Rechnung anzeigen.
-+ Die Felder **Frachtbedingungen**, **Lieferbedingungen** und **Liefermodus** sind nicht in den Standardzuordnungen enthalten. Um diese Felder abzubilden, müssen Sie ein Werte-Mapping einrichten, das für die Daten in den Organisationen, zwischen denen die Entität synchronisiert wird, spezifisch ist.
++ Die Spalten **Frachtkonditionen**, **Lieferbedingungen** und **Liefermodus** sind nicht in den Standardzuordnungen enthalten. Um diese Spalten zuzuordnen, müssen Sie eine Wertzuordnung, die für die Daten in den Organisationen, zwischen denen die Tabelle synchronisiert wird, spezifisch ist.
 
 ## <a name="templates"></a>Vorlagen
 
 Prospect-to-Cash umfasst eine Sammlung von Kerntabellenzuordnungen, die während der Dateninteraktion zusammenwirken, wie in der folgenden Tabelle dargestellt.
 
-| Finance and Operations Apps | Modellgesteuerte Anwendungen in Dynamics 365 | Beschreibung |
+| Finance and Operations Apps | Customer Engagement-Apps | Beschreibung |
 |-----------------------------|-----------------------------------|-------------|
-| Verkaufsrechnungskopfzeilen V2    | Rechnungen                          |             |
+| Verkaufsrechnungskopfzeilen V2    | Rechnungen                          | Die Tabelle „Verkaufsrechnungskopfzeilen V2“ in der Finance and Operations-App enthält Rechnungen für Aufträge und Freitextrechnungen. Ein Filter wird in Dataverse für duales Schreiben angewendet, der alle Freitext-Rechnungsdokumente herausfiltert. |
 | Verkaufsrechnungspositionen V2      | Rechnungsdetails                    |             |
 | Auftragskopfzeilen CDS     | salesorders                       |             |
 | CDS-Auftragspositionen       | salesorderdetails                 |             |
@@ -135,6 +140,11 @@ Hier sind die zugehörigen Kerntabellenzuordnungen für Prospect-to-Cash:
 + [Alle Produkte zu msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
 + [Preisliste](product-mapping.md)
 
+## <a name="limitations"></a>Einschränkungen
+- Rücklieferungen werden nicht unterstützt.
+- Gutschriften werden nicht unterstützt.
+- Für die Stammdaten müssen Finanzdimensionen festgelegt werden, z. B. Debitor und Kreditor. Wenn ein Kunde zu einem Angebot oder Auftrag hinzugefügt wird, fließen die mit dem Kundendatensatz verknüpften Finanzdimensionen automatisch in den Auftrag ein. Derzeit enthält duales Schreiben keine Daten zu Finanzdimensionen für Stammdaten. 
+
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
 [!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
@@ -150,6 +160,3 @@ Hier sind die zugehörigen Kerntabellenzuordnungen für Prospect-to-Cash:
 [!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
 
 [!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

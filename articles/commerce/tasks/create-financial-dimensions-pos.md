@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7be50eba098b7b28594c8e18c721579f4bb2e879
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c51c77f4b9f411ae45fb955032aa40cb34738e9a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412617"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964769"
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a> Finanzdimensionen für POS-Register erstellen und in Registern konfigurieren
 
@@ -40,7 +39,7 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen von Finanzdim
 9. Schließen Sie die Seite.
 10. Klicken Sie auf Speichern.
 11. Schließen Sie die Seite.
-12. Wechseln Sie zu Retail und Commerce > Kanaleinstellungen > POS-Einstellungen > Register.
+12. Wechseln Sie zu Einzelhandel und Handel > Kanaleinstellungen > POS-Einstellungen > Register.
 13. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 14. Schalten Sie die Erweiterung des Abschnitts "Finanzdimensionen" ein/aus.
 15. Klicken Sie auf Bearbeiten.
@@ -48,6 +47,3 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen von Finanzdim
 17. Wählen Sie in der Liste den Dimensionswert für das Register aus, das aktualisiert wird.
 18. Klicken Sie auf "Speichern".
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

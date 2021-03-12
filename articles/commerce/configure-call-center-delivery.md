@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412470"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963109"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurieren von Callcenter-Lieferarten und -Belastungen
 
@@ -95,6 +94,3 @@ Sie können optional einen Eillieferungscode mit jeder von Ihnen konfigurierten 
 Bei Bestellungen, die beispielsweise am nächsten Tag per Luftfracht verschickt werden, muss die Kommissionierung täglich bis 13 Uhr im Lager erfolgen. In diesem Fall kann ein Eillieferungscode erstellt werden, der mit jeder im System konfigurierten Lieferart für den nächsten Tag verknüpft werden kann. Wenn das Lager seine Entnahmeserie erzeugt, kann der entsprechende Eillieferungscode im Feld **Eillieferung** als Filter verwendet werden, so dass die Entnahme nur für Aufträge durchgeführt wird, die Lieferarten haben, die mit diesem Code verknüpft sind.
 
 Zusätzlich kann bei der Eingabe eines Callcenterauftrags ein Eillieferungscode entweder manuell auf den Auftragskopf oder auf eine einzelne Auftragspositionen angewendet werden. Auch hier kann der Code für Sortier- oder Berichtszwecke verwendet werden. Manchmal muss ein Auftrag wegen eines Kundenserviceproblems sorgfältig behandelt werden. In diesem Fall kann ein spezieller Eillieferungscode auf den Auftragskopf oder die Auftragszeilen angewendet werden, um den Auftrag während des Ausführungsprozesses zu identifizieren und zu priorisieren.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

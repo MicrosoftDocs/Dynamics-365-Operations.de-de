@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d7118e85ff56f8c935c24a91dc84c6cc09641e0
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 325478ed89b9c650899001dd08d1c98550fce520
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694310"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798979"
 ---
 # <a name="view-workflow-history"></a>Anzeigen der Workflowhistorie
 
@@ -46,6 +46,3 @@ In diesem Thema werden die Schritte beschrieben, um den Status eines Dokuments a
     - Durch die Schaltfläche **Neu zuweisen** wird ein Dialogfeld geöffnet, in dem Sie eine Arbeitsaufgabe einem anderen Benutzer neu zuordnen können.  
     - Überprüfen Sie, ob der Bereich **Verfolgungsdetails** erweitert ist. In diesem Abschnitt können Sie die Workflowhistorie des ausgewählten Dokuments angezeigt.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

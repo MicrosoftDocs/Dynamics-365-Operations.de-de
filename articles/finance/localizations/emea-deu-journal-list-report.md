@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LedgerJournalizeReport
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 28831
 ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6234aa0dd5ede871a8f83e2c4d7c4e6705f182b9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8cf7b18463c9d4630cd7e263818ef42cce31bd10
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407754"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962816"
 ---
 # <a name="german-journal-list-report"></a>Bericht "Deutsches Journal"
 
@@ -38,6 +37,3 @@ Der Bericht **Deutsches Journal** enthält eine Liste mit Buchungen, die produzi
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

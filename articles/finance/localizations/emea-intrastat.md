@@ -3,7 +3,7 @@ title: Intrastat – Übersicht
 description: Dieses Thema enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU). Er gibt einen Überblick über Berichterstellungsprozesses und beschreibt die erforderlichen Einstellungen und die Voraussetzungen.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 28581
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a70108696d6187126c23eca1779553210cd4a9d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9396637c27707f1732d06ec704c7e609aa6c170b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407763"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962725"
 ---
 # <a name="intrastat-overview"></a>Intrastat – Übersicht
 
@@ -197,7 +196,7 @@ Verwenden Sie die **Außenhandelsparameter** Seite, um die Parameter in der folg
 <td><ul>
 <li><strong>Allgemein</strong> – Geben Sie die folgenden Informationen ein:
 <ul>
-<li>Die Standardtransaktionscodes für Aufträge, Bestellungen, Gutschriften und Umlagerungsaufträge. Der Buchungscode, der für Gutschriften eingerichtet wurde, wird auch als Code für die Rückgabe physischer Waren und zur Ermittlung der Abweichung von physischer Rückgaben gegenüber Korrekturgutschriften verwendet.</li>
+<li>Die Standardtransaktionscodes für Aufträge, Bestellungen, Gutschriften und Umlagerungsaufträge. Der Buchungscode, der für Gutschriften eingerichtet wurde, wird auch als Code für die Rückgabe physischer Waren und zur Ermittlung der Abweichung von physischer Rückgaben gegenüber Korrekturgutschriften verwendet. Retouren physischer Waren werden in der Intrastat-Umlagerung mit einer anderen Richtung gemeldet. Die Rückgabe des Zugangs wird als Versand und die Rückgabe des Versands als Zugang gemeldet.</li>
 <li>Der Mitarbeiter, der für die Vorbereitung von Intrastat-Berichten zuständig ist.</li>
 </ul></li>
 <li><strong>Untergrenze</strong> - Geben Sie die Einstellungen für die Aktualisierung von Buchungen an, die unter dem Schwellenwert sind:
@@ -240,6 +239,3 @@ Verwenden Sie die **Außenhandelsparameter** Seite, um die Parameter in der folg
 </tbody>
 </table>
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

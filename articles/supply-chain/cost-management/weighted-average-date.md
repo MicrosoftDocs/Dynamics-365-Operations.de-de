@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d36f60a13fbee91100e406150e7f5ca890320436
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5df497a8590c6d60a5f0bc39469cf048c3448572
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428518"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963737"
 ---
 # <a name="weighted-average-date"></a>Gewichteter Durchschnitt (Datum)
 
@@ -32,7 +31,7 @@ ms.locfileid: "4428518"
 
 Datum des gewichteten Durchschnitts ist ein Lagermodell, das auf dem Prinzip des gewichteten Durchschnitts basiert. Für das Prinzip des gewichteten Durchschnitts werden Abgänge aus dem Lagerbestand zum Durchschnittswert der Artikel bewertet, die im Lager für jeden Tag während der Lagerabschlussperiode eingehen. 
 
-Beim Ausführen eines Lagerabschlusses mithilfe des Datums des gewichteten Durchschnitts werden alle täglichen Zugänge anhand eines virtuellen Abgangs ausgeglichen. Dieser virtuelle Abgang enthält die Gesamtmenge und Gesamtwert der Zugänge für den jeweiligen Tag. Der virtuelle Abgang hat auch einen entsprechenden virtuellen Zugang, gegenüber dem die Abgänge ausgeglichen werden. Daher erhalten alle Abgänge die gleichen Durchschnittskosten. Der virtuelle Abgang sowie der virtuelle Zugang können als virtueller Übertrag betrachtet werden. Dieser ist als *Gewichteter Durchschnitt des Lagerabschlussübertrags* bekannt. 
+Beim Ausführen eines Lagerabschlusses mithilfe des Datums des gewichteten Durchschnitts werden alle täglichen Zugänge anhand eines virtuellen Abgangs ausgeglichen. Dieser virtuelle Abgang enthält die Gesamtmenge und den Gesamtwert der Zugänge für den jeweiligen Tag. Der virtuelle Abgang hat auch einen entsprechenden virtuellen Zugang, gegenüber dem die Abgänge ausgeglichen werden. Daher erhalten alle Abgänge die gleichen Durchschnittskosten. Der virtuelle Abgang sowie der virtuelle Zugang können als virtueller Übertrag betrachtet werden. Dieser wird als *Gewichteter Durchschnitt des Lagerabschlussübertrags* bezeichnet. 
 
 Wenn sich an oder vor dem Datum nur ein Zugang ereignet hat, müssen Sie den Durchschnitt nicht bewerten. Alle Abgänge werden nämlich anhand dieses Zugangs ausgeglichen, der virtuelle Übertrag wird nicht erstellt. Gleiches gilt, wenn an diesem Datum nur Abgänge zu verzeichnen sind. In diesem Fall sind keine Zugänge als Grundlage für eine Durchschnittsbewertung vorhanden, und der virtuelle Übertrag wird nicht erstellt. Bei Verwendung des gewichteten Durchschnitts können Lagerbuchungen markiert werden, damit ein bestimmter Artikelzugang mit einem bestimmten Abgang ausgeglichen wird. In diesem Fall verwenden Sie die Regel für das Datum des gewichteten Durchschnitts nicht. Wenn Sie das Lagermodell für das Datum des gewichteten Durchschnitts verwenden, empfiehlt es sich, einen monatlichen Lagerabschluss durchzuführen. 
 
@@ -51,7 +50,7 @@ Lagerbuchungen für Lagerabgänge – einschließlich Aufträge, Lagererfassunge
 
 Bei einem Ausgleich handelt es sich um Lagerabschlussbuchungen zur Anpassung der Abgänge an den korrekten gewichteten Durchschnitt des Abschlussdatums. 
 
-**Hinweis**: Weitere Informationen zum Ausgleichen finden Sie im Artikel zum Lagerabschluss. In den folgenden Beispielen werden die Auswirkungen der Verwendung des gewichteten Durchschnitts anhand von fünf Konfigurationen veranschaulicht:
+**Hinweis:** Weitere Informationen zum Ausgleichen finden Sie im Artikel zum Lagerabschluss. In den folgenden Beispielen werden die Auswirkungen der Verwendung des gewichteten Durchschnitts anhand von fünf Konfigurationen veranschaulicht:
 
 -   Direkter Ausgleich für das Datum des gewichteten Durchschnitts, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird
 -   Zusammengefasster Ausgleich für das Datum des gewichteten Durchschnitts, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird
@@ -127,7 +126,7 @@ Lagerabschluss wird vorgenommen. Da mehrere Zugänge vorhanden sind, die sich ü
 
 Das System generiert und bucht die zusammengefasste Umlagerungsbuchung. Darüber hinaus gleicht das System alle Zugänge des Tages sowie den verfügbaren Bestand vorangegangener Tage gegenüber der zusammengefassten Umlagerungsabgangsbuchung aus. Alle Abgänge des Tages werden mit der zusammengefassten Umlagerungszugangsbuchung ausgeglichen. Als gewichteter Durchschnittseinstandspreis werden EUR 16,00 berechnet. Für den Abgang erfolgt eine Anpassung an den gewichteten Durchschnittseinstandspreis in Höhe von EUR 1,00. Der neue laufende Durchschnittseinstandspreis beträgt EUR 16,00. 
 
-Die folgende Abbildung zeigt eine Reihe von Transaktionen und die Auswirkungen der Verwendung des Lagermodells mit gewichtetem Durchschnitt und des Prinzips des zusammengefassten Ausgleichs, aber ohne die Option **Physischen Wert einbeziehen** zu verwenden. 
+Die folgende Abbildung zeigt eine Reihe von Transaktionen und die Auswirkungen der Verwendung des Lagermodells mit gewichtetem Durchschnitt und des Prinzips des zusammengefassten Ausgleichs, aber ohne Verwendung der Option **Physischen Wert einbeziehen**. 
 
 ![Zusammengefasster Ausgleich mit Datum für den gewichteten Durchschnitt und ohne die Option "Physischen Wert einbeziehen"](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
@@ -196,6 +195,3 @@ Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmä�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

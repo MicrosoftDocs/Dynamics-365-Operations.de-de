@@ -3,7 +3,7 @@ title: Zeitfenster für die Kundenabholung erstellen und aktualisieren
 description: In diesem Thema wird beschrieben, wie Sie Zeitfenster für die Kundenabholung in der Commerce-Zentralverwaltung konfigurieren und aktualisieren.
 author: anupamar-ms
 manager: AnnBe
-ms.date: 11/06/2020
+ms.date: 01/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: f86eb47ec64dff230223ed0ecbe792373aca649f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 125696e8f32c2452a572a2316f512779f399f5c4
+ms.sourcegitcommit: 8b4cb7b6ad4aab37566bcc91e426bd56db771416
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681541"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "4828210"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Zeitfenster für die Kundenabholung erstellen und aktualisieren
 
@@ -49,17 +49,15 @@ Ein Zeitfenster wird mithilfe der folgenden Eigenschaften definiert:
 
     Die Eigenschaft **Mindestanzahl von Tagen** stellt sicher, dass es genug Zeit für den Einzelhändler gibt, um den Auftrag zu verarbeiten, bevor er für die Abholung bereit ist. Die Eigenschaft **Höchstanzahl von Tagen** stellt sicher, dass der Benutzer kein Datum auswählen kann, das zu weit in der Zukunft liegt. Zum Beispiel, wenn der Mindestwert auf **1** festgelegt ist und ein Auftrag am 20. September erteilt wird, ist der früheste Tag, an dem der Auftrag zur Abholung verfügbar ist, der nächste in Frage kommende Tag (21. September). In ähnlicher Weise können Sie durch Festlegen eines Maximalwerts die maximale Anzahl von Tagen definieren, innerhalb derer ein Auftrag abgeholt werden kann. Wenn Mindest- und Höchstwerte definiert werden, können Websitebenutzer während ihrer Auftragsabschlusserfahrung nur eine bestimmte Reihe von Tagen anzeigen und auswählen.
 
-    Sie können den Mindestwert auf einen Dezimalwert festlegen, der kleiner als 1 ist. Wenn die Abholung beispielsweise vier Stunden nach Auftragserteilung verfügbar ist, legen Sie den Mindestwert auf **0,17** fest (= 4 ÷ 24, auf zwei Dezimalstellen aufgerundet). Wenn Sie den Mindestwert jedoch auf einen Dezimalwert von mehr als 1 festlegen, wird er immer auf die nächste ganze Zahl (nach oben oder unten) gerundet.
-
-    Wenn Sie den Höchstwert auf einen Dezimalwert festlegen, wird er immer aufgerundet. Zum Beispiel wird ein Wert von **1,2** auf **2** aufgerundet.
+    Sie können den Mindestwert auf einen Dezimalwert festlegen, der kleiner als 1 ist. Wenn die Abholung beispielsweise vier Stunden nach Auftragserteilung verfügbar ist, legen Sie den Mindestwert auf **0,17** fest (= 4 ÷ 24, auf zwei Dezimalstellen aufgerundet). Wenn Sie den Mindestwert jedoch auf einen Dezimalwert von mehr als 1 festlegen, wird er immer auf die nächste ganze Zahl hoch gerundet. Zum Beispiel wird ein Wert von **1,2** auf **2** aufgerundet. Ebenso, wenn Sie den Maximalwert auf einen Dezimalwert festlegen, wird er immer auf die nächste ganze Zahl hoch gerundet. 
 
 - **Anfangsdatum** und **Endtermin** – Geben Sie das Start- und Enddatum des Zeitfensters an. Jeder Zeitfenstereintrag hat ein Start- und ein Enddatum. Daher haben Sie die Flexibilität, das ganze Jahr über verschiedene Zeitfenster hinzuzufügen (z. B. Abholungen während Ferienzeiten). Wenn das Start- und Enddatum eines Zeitfenster geändert wird, nachdem ein Auftrag erteilt wurde, werden die Änderungen für diesen Auftrag nicht übernommen. Wenn Sie Start- und Enddatum definieren, müssen Sie die Datumsangaben der Tage berücksichtigen, an denen das Geschäft geschlossen ist (z. B. 1. Weihnachtsfeiertag) und sicher stellen, dass keine Zeitfenster für diese Tage definiert werden.
-- **Aktive Lieferzeiten** – Geben Sie den Zeitraum an, an dem die Abholung zulässig ist. Beispielsweise können die Abholzeiten täglich zwischen 14:00 Uhr und 17:00 Uhr liegen. Diese Eigenschaft ermöglicht es, dass Abholzeiten unabhängig von Geschäftsöffnungszeiten sind. Daher kann der Einzelhändler Abholzeiten konfigurieren, die seinen spezifischen Geschäftsanforderungen entsprechen. Wenn Sie die aktiven Abholzeiten definieren müssen Sie Geschäftsöffnungszeiten berücksichtigen und sicherstellen, dass keine Abholzeiten für Zeiten definiert werden, zu denen das Geschäft geschlossen ist.
+- **Aktive Abholzeiten** – Geben Sie den Zeitraum an, an dem die Abholung zulässig ist. Beispielsweise können die Abholzeiten täglich zwischen 14:00 Uhr und 17:00 Uhr liegen. Diese Eigenschaft ermöglicht es, dass Abholzeiten unabhängig von Geschäftsöffnungszeiten sind. Daher kann der Einzelhändler Abholzeiten konfigurieren, die seinen spezifischen Geschäftsanforderungen entsprechen. Wenn Sie die aktiven Abholzeiten definieren müssen Sie Geschäftsöffnungszeiten berücksichtigen und sicherstellen, dass keine Abholzeiten für Zeiten definiert werden, zu denen das Geschäft geschlossen ist.
 
     > [!NOTE]
     > Die Stunden für die Abholung im Geschäft müssen in der Zeitzone des entsprechenden Geschäfts definiert werden.
 
-- **Zeitfensterintervall** – Geben Sie die Dauer an, die jedem Zeitfenster zugewiesen werden kann. Beispielsweise kann die Dauer jedes Zeitfensters in Schritten von 15 Minuten, 30 Minuten oder einer Stunde bestimmt werden.
+- **Zeitfensterintervall** – Geben Sie die Dauer an, die jedem Zeitfenster zugewiesen werden kann. Beispielsweise kann die Dauer jedes Zeitfensters in Schritten von 15 Minuten, 30 Minuten oder einer Stunde bestimmt werden. Wenn der Zeitfensterwert 0 ist, ist das Zeitfenster für die gesamte Dauer zwischen Start- und Endzeit verfügbar.
 - **Zeitfenster pro Intervall** – Geben Sie die Anzahl der Kunden oder Aufträge an, die in jedem Zeitfensterintervall zur Abholung bedient werden können. Geben Sie zum Beispiel **1**, **2**, **3** oder irgendeine andere ganze Zahl ein.
 - **Aktive Tage** – Geben Sie die Wochentage an, an denen die Abholzeitfenster aktiv sind. Mit dieser Eigenschaft kann der Einzelhändler die Tage definieren, an denen er Abholaufträge unterstützen möchte.
 - **Retail Channels** – Geben Sie die Retail Channels an. Jedes Zeitfenster kann einem oder mehreren Einzelhandelsgeschäften zugeordnet werden. Abhängig von den Öffnungszeiten der einzelnen Geschäfte können ein oder mehrere Zeitfenstereinträge erstellt und einem Kanal zugeordnet werden. 
@@ -84,7 +82,7 @@ Um die Zeitfensterfunktion in der Commerce-Zentralverwaltung zu konfigurieren, f
 1. Im Inforegister **Auftragsabholung - Zeiteinstellungen** wählen Sie **Hinzufügen** aus.
 1. Im Dialogfeld **Auftragsabholung - Zeiteinstellungen** definieren Sie den Datumsbereich, die Lieferart, aktive Lieferstunden, aktive Tage, Zeitfensterintervall, Zeitfenster pro Intervall und andere Einstellungen.
 
-    Wenn die Zeitfenster auf absehbare Zeit statisch sind, lassen Sie das Feld **Enddatum** leer.
+    Wenn die Zeitfenster auf absehbare Zeit statisch sind, setzen Sie das Feld **Enddatum** auf **Nie**.
 
     > [!NOTE]
     > Sie können mehrere Vorlagen erstellen, aber nur eine Vorlage kann einem einzelnen Kanal oder Geschäft zugeordnet werden.
@@ -120,9 +118,12 @@ Die folgende Abbildung zeigt ein Beispiel für einen E-Commerce-Auftrag, bei dem
 
 ![Beispiel für einen E-Commerce-Auftrag, bei dem ein Abholzeitfenster ausgewählt wurde](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
+## <a name="time-slot-selection-for-call-center-orders"></a>Zeitfensterauswahl für Callcenter-Aufträge
+
+In der Callcenter-App können Callcenter-Agenten das Abholgeschäft oder den Abholort sowie einen Datums- und Zeitfenster auswählen, wie in der folgenden Abbildung hervorgehoben.
+
+![Beispiel für einen Callcenter-Auftrag, bei dem ein Abholzeitfenster ausgewählt wurde](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Abholinformationsmodul](../pickup-info-module.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

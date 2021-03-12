@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6f4f6a3fdf07ae267f92eedd312c6c721f18429
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a7dc365bc2a317b67235f1ad01a4157089e0079d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692891"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798928"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>Genehmigungsprozesse in einem Workflow konfigurieren
 
@@ -183,6 +183,3 @@ Ein Genehmigungsprozess besteht aus Genehmigungsschritten. Führen Sie die folge
 1. Doppelklicken Sie im Workflow-Editor auf den Genehmigungsprozess. Im Workflow-Editor werden die Schritte des Genehmigungsprozesses angezeigt.
 2. Ziehen Sie zum Hinzufügen eines Genehmigungsschritts den Schritt aus dem Bereich **Workflow-Elemente** auf die Canvas.
 3. Informationen zum Konfigurieren eines Genehmigungsschritts finden Sie unter [Genehmigungsschritte in einem Workflow konfigurieren](configure-approval-step-workflow.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
