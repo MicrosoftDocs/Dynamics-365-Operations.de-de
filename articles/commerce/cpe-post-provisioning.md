@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fa92a581a96de6bed26b4a0c6601ebd9d5088347
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412458"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993424"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurieren einer Dynamics 365 Commerce-Auswertungsumgebung
 
@@ -53,7 +52,7 @@ Stellen Sie bei Aktivitäten nach der Bereitstellung in der Commerce-Zentralverw
 
 Gehen Sie in der Commerce-Zentralverwaltung folgendermaßen vor, um einen Mitarbeiter Ihrer Identität zuzuordnen.
 
-1. Verwenden Sie das Menü auf der linken Seite, um zu **Module \> Retail und Commerce \> Mitarbeiter \> Arbeitskräfte** zu gehen.
+1. Verwenden Sie das Menü auf der linken Seite, um zu **Module \> Einzelhandel und Handel \> Mitarbeiter \> Arbeitskräfte** zu gehen.
 1. Suchen Sie in der Liste den folgenden Datensatz, und wählen Sie ihn aus: **000713 - Andrew Collette**.
 1. Wählen Sie im Aktionsbereich **Commerce** aus.
 1. Wählen Sie **Vorhandene Identität zuordnen** aus.
@@ -164,6 +163,3 @@ Informationen zum Konfigurieren optionaler Funktionen für Ihre Commerce-Auswert
 [Microsoft Azure-Portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

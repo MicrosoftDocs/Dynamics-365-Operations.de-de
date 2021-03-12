@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec1c556a70ed92a40d3cb2bf45fb6156b7dbf7fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412462"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993474"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>BOPIS in einer Dynamics 365 Commerce-Auswertungsumgebung konfigurieren
 
@@ -42,7 +41,7 @@ Nachdem Ihre Commerce-Umgebung komplett bereitgestellt und konfiguriert wurde, k
 
 Für BOPIS-Szenarien mit Kreditkartenzahlung ist eine Hardwarestation erforderlich. Die Hardwarestation ist in die Modern POS-Programme für Windows- und Android-Clients integriert. Wenn Sie Cloud POS oder Modern POS für iOS verwenden, muss der POS-Client (Point of Sale) mit einer gemeinsam genutzten Hardwarestation gekoppelt sein. In diesem Thema wird erläutert, wie Sie BOPIS für Windows- und Android-Clients konfigurieren. Weitere Informationen zur Installation einer geteilten Hardware-Station finden Sie unter [Konfiguration und Installation der Retail-Hardware-Station](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
 
-1. Wechseln Sie zu **Retail und Commerce \> Kanaleinstellungen \> POS-Einstellungen \> Kassen**.
+1. Wechseln Sie zu **Einzelhandel und Handel \> Kanaleinstellungen \> POS-Einstellungen \> Kassen**.
 2. Wählen Sie Kasse **SANFRAN-5** und dann **Bearbeiten** aus.
 3. Ändern Sie den Wert im Feld **Hardwareprofil** von **HW002** in **HW001** und wählen dann **Speichern** aus.
 4. Um die Änderungen z synchronisieren, wechseln Sie zu **Retail and Commerce \> Retail and Commerce IT \> Vertriebsplan**.
@@ -51,7 +50,7 @@ Für BOPIS-Szenarien mit Kreditkartenzahlung ist eine Hardwarestation erforderli
 
 ### <a name="install-modern-pos"></a>Modern POS installieren
 
-1. Wechseln Sie zu **Retail und Commerce \> Kanaleinstellungen \> POS-Einstellungen \> Geräte**.
+1. Wechseln Sie zu **Einzelhandel und Handel \> Kanaleinstellungen \> POS-Einstellungen \> Geräte**.
 2. Wählen Sie Gerät **SANFRANCIS-5**.
 3. Wählen Sie im Aktionsbereich **Herunterladen** aus, und wählen Sie dann **Konfigurationsdatei** aus.
 4. Wählen Sie zunächst **Herunterladen** und dann **Retail Modern POS** aus. 
@@ -164,6 +163,3 @@ Bei allen allgemeinen Problemen sollten Sie als ersten Schritt immer die Ereigni
 [Online-Zahlungsmittel mit dem Adyen Connector speichern](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
 [Überblick über Omni-Channel-Zahlungen](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

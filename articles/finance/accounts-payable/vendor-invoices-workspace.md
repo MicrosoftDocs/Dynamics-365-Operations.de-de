@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
-ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.openlocfilehash: 04aca717c3f255799699d63fb74ee0b543f8c8ba
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4443734"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993262"
 ---
 # <a name="vendor-invoice-entry-workspace"></a>Arbeitsbereich für die Eingabe der Kreditorenrechnung
 
@@ -117,6 +116,3 @@ Die folgende Tabelle enthält die Visualisierungen, die für jede Berichtsseite 
 | Rechnungen, die nicht importiert werden konnten | <ul><li>Rechnungen, die nicht importiert werden konnten</li><li>Rechnungen, die nicht importiert werden konnten nach Unternehmen</li></ul> |
 | Gründe für einen Automatisierungsfehler | <ul><li>Rechnungen fehlgeschlagen</li><li>Rechnungen von Unternehmen fehlgeschlagen</li><li>Rechnungen nach Lieferantengruppe fehlgeschlagen</li></ul> |
 | Workflowstatus                | <ul><li>Rechnungen im Workflow</li><li>Kreditorenrechnungsworkflowinstanzen</li><li>Zuordnung pro Genehmiger</li><li>Workflow der Lieferantenrechnung pro Unternehmen</li><li>Durchschnittliche Tage im Arbeitsplan nach Genehmiger</li></ul> |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

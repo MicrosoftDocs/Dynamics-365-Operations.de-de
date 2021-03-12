@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1d33dbbd37daaa75f4b64359194a2328728b27f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2aa1980ebc1fa8412fc388e7837bc40b6902bc0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443446"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991244"
 ---
 # <a name="credit-management-setup"></a>Kreditverwaltungseinstellungen 
 
@@ -153,6 +152,3 @@ Führen Sie die folgenden Schritte aus, um Zeilen hinzuzufügen, die das Kreditl
 2. Wählen Sie den Vergleichsoperator aus, der definiert, wie die Bewertungsgruppeninformationen ausgewertet werden sollen.
 3. Geben Sie den Wert ein, der mit dem für die Bewertungsgruppe angegebenen Wert verglichen werden soll.
 4. Geben Sie das Kreditlimit ein, das zugewiesen werden soll, wenn die Debitorinformationen mit dem für die Bewertungsgruppe angegebenen Wert übereinstimmen. Beispielsweise erstellen Sie ein automatisches Kreditlimit für die Bewertungsgruppe **Niedrig**. Wenn die Geschäftsjahre zu den Bewertungsgruppen gehören, können Sie eine Zeile definieren, die ein Kreditlimit von 100.000 zuweist, wenn der Debitor fünf Jahre im Geschäft war, und eine andere Zeile, die ein Kreditlimit von 200.000 zuweist, wenn der Debitor zehn Jahre im Geschäft war Jahre.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

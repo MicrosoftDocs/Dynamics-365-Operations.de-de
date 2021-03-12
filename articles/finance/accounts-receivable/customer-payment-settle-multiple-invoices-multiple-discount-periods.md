@@ -1,5 +1,5 @@
 ---
-title: Verwenden einer Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattzeiträume enthalten
+title: Eine Zahlung zum Ausgleichen von Rechnungen verwenden, die sich über mehrere Rabattperioden erstrecken
 description: Dieser Artikel zeigt, wie mehrere Rechnungen bezahlt werden, wenn jede einzelne Rechnung zum Abzug eines Skontos berechtigt ist. Die Szenarien in diesem Artikel zeigen auf, wie Skonti je nach Zeitpunkt der Zahlung variieren.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14511
 ms.assetid: 3e42ccb5-b9d7-4a70-8db9-4206d10fd433
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ae0bdc8245db1391103ca0f214fb3120f93f5b
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 5e45004c9f93963fb886039165f16ccc6a3f98f5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4443799"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991290"
 ---
-# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Verwenden einer Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattzeiträume enthalten
+# <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Eine Zahlung zum Ausgleichen von Rechnungen verwenden, die sich über mehrere Rabattperioden erstrecken
 
 [!include [banner](../includes/banner.md)]
 
@@ -101,6 +100,3 @@ Auf der Seite **Debitorenbuchungen** zeigt Arnie diese Transaktion an.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

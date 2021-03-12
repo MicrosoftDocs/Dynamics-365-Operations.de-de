@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c7d4cacbf56243830633f4d0fd3c57071b08ab56
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 19c7de1436b2fe4a859ac20d3db1fefa445a115f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527337"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991864"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Verkaufsangebotskopfzeilen und ‑positionen direkt von Sales zu Supply Chain Management synchronisieren
 
@@ -35,7 +34,7 @@ ms.locfileid: "4527337"
 Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Verkaufsangebotskopfzeilen und -positionen direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management zu synchronisieren.
 
 > [!NOTE]
-> Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) vertraut sein.
+> Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Microsoft Dataverse for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) vertraut sein.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Datenfluss in Interessent nach Bargeld
 
@@ -61,10 +60,10 @@ Die folgenden Synchronisierungsaufgaben sind erforderlich, bevor die Synchronisi
 
 ## <a name="entity-set"></a>Entitätssatz
 
-| Umsatz        | Lieferkettenverwaltung     |
+| Verk.        | Lieferkettenverwaltung     |
 |--------------|----------------------------|
-| Angebote       | CDS-Verkaufsangebotskopf |
-| QuoteDetails | CDS-Verkaufsangebotspositionen  |
+| Angebote       | Dataverse-Verkaufsangebotskopf |
+| QuoteDetails | Dataverse-Verkaufsangebotspositionen  |
 
 ## <a name="entity-flow"></a>Entitätsfluss
 
@@ -143,6 +142,3 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung im Dat
 
 [Interessent zu Bargeld](prospect-to-cash.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

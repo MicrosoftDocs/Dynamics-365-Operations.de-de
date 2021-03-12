@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6639de250557ce9a25fc2cde3807abf64b0ddc18
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412460"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993449"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Optionale Funktionen für eine Dynamics 365 Commerce-Auswertungsumgebung konfigurieren
 
@@ -75,7 +74,7 @@ Wenn Sie die Transaktions-E-Mail-Funktionen bewerten möchten, müssen die folge
 > Der SMTP-Server oder E-Mail-Dienst, den Sie hier eingeben, muss über das Azure-Abonnement zugänglich sein muss, das Sie für die Umgebung verwenden.
 
 1. Melden Sie sich bei der Commerce-Zentralverwaltung an.
-1. Verwenden Sie das Menü links, um zu **Module \> Retail und Commerce \> Zentralverwaltungs-Setup \> Parameter \> E-Mail-Parameter** zu wechseln.
+1. Verwenden Sie das Menü links, um zu **Module \> Einzelhandel und Handel \> Zentralverwaltungs-Setup \> Parameter \> E-Mail-Parameter** zu wechseln.
 1. Geben Sie auf der Registerkarte **SMTP-Einstellungen** im Feld **Name des SMTP-Servers** den vollständig qualifizierten Namen (FQDN) oder die IP-Adresse Ihres SMTP-Servers oder E-Mail-Dienstes an.
 1. Geben Sie im Feld **SMTP-Portnummer** die Portnummer ein. (Wenn Sie Secure Sockets Layer \[SSL\] nicht verwenden, lautet die Standardportnummer **25**.)
 1. Wenn eine Authentifizierung erforderlich ist, geben Sie Werte in das Feld **Benutzername** und **Kennwort** ein.
@@ -90,7 +89,7 @@ Wenn Sie die Transaktions-E-Mail-Funktionen bewerten möchten, müssen die folge
 Für jedes Transaktionsereignis, für das Sie E-Mails senden möchten, müssen Sie die E-Mail-Vorlage mit einer gültigen Absender-E-Mail-Adresse aktualisieren.
 
 1. Melden Sie sich bei der Commerce-Zentralverwaltung an.
-1. Verwenden Sie das Menü links, um zu **Module \> Retail und Commerce \> Zentralverwaltungs-Setup \> Parameter \> Organisations-E-Mail-Vorlagen** zu wechseln.
+1. Verwenden Sie das Menü links, um zu **Module \> Einzelhandel und Handel \> Zentralverwaltungs-Setup \> Parameter \> Organisations-E-Mail-Vorlagen** zu wechseln.
 1. Wählen Sie **Liste anzeigen** aus.
 1. Führen Sie für jede Vorlage in der Liste die folgenden Schritte aus:
 
@@ -187,6 +186,3 @@ Die folgenden Token werden durch Werte für jedes Produkt im Auftrag ersetzt.
 [Microsoft Azure-Portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

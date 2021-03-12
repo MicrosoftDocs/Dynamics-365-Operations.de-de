@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1805e1f87ee70a1f35d9105b8f7ad6c95861efcc
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 1086231c65a726df5162d3593419a129d6ae5655
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4443789"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992757"
 ---
 # <a name="use-lease-approval-workflows"></a>Leasinggenehmigungs-Workflows verwenden
 
@@ -45,6 +44,3 @@ Stellen Sie vor Verwendung dieses Verfahrens sicher, dass mindestens ein Workflo
 
 8. Um einen Workflow zu stoppen, klicken Sie auf der **Workflow-Verlauf**-Seite auf **Zurückrufen**. Wählen Sie im Dialogfeld, das angezeigt wird, einen Kommentar ein wählen Sie dann **OK**.
 9. Um die Aktivierung eines Workflows aufzuheben oder einen zuvor erstellten Workflow zu aktivieren, gehen Sie zu **Anlagenleasing \> Einrichtung \> Leasing-Workflow**. Dann auf der **Leasing-Workflow**-Seite wählen Sie **Workflow \> Versionen** aus. Um einen aktuellen Workflow inaktiv zu machen, wählen Sie den aktiven Mietvertrag im Dialogfeld Mietvertragsversion aus und wählen Sie dann **Inaktiv machen** aus. Um einen vorhandenen Workflow zu aktivieren, wählen Sie den Workflow aus und wählen Sie dann **Aktivieren**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

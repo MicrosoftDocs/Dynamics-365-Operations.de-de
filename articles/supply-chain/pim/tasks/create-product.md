@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResProductDetails, EcoResProductCreate, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e3dab319348367e58dba0c404e0cd43917e12542
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4f5a8ddf546a5c7c3f041b044b5d75f93c5675df
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428697"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992268"
 ---
 # <a name="create-a-product"></a>Ein Produkt erstellen
 
@@ -39,6 +38,3 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen P
 8. Geben Sie im Feld "Produktnummer" einen Wert ein.
 9. Klicken Sie auf "OK".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b302c5ace34a11a53a98c733b59633a11a463bfa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e060f20b65153a7bbe70996e6ff4c3930468348a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428481"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992244"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Produktprogrammplanung mit Kaufverträgen
 
@@ -74,22 +73,19 @@ Nachdem Sie Ihr System wie im vorherigen Abschnitt beschrieben vorbereitet haben
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Beispiele dafür, wie die Planungsoptimierung Lieferanten- und Vorlaufzeiten ermittelt
 
-Die folgende Tabelle enthält Beispiele, die zeigen, wie sich verschiedene Einstellungen für ein freigegebenes Produkt und die damit verbundenen Kaufverträge auf die Werte auswirken, die für die resultierende geplante Auftrag gefunden werden. Der Wert **Fett gedruckt** in den beiden Spalten ganz rechts sind die Werte, die von der Planungsoptimierung ausgewählt werden. Die Werte ***fett und kursiv*** in den anderen Spalten sind die Einstellungen, die die resultierenden Werte für jede Zeile erzeugt haben.
+Die folgende Tabelle enthält Beispiele, die zeigen, wie sich verschiedene Einstellungen für ein freigegebenes Produkt und die damit verbundenen Kaufverträge auf die Werte auswirken, die für die resultierende geplante Auftrag gefunden werden. Der Wert **Fett gedruckt** in den beiden Spalten ganz rechts sind die Werte, die von der Planungsoptimierung ausgewählt werden. Die **_fett und kursiv_* _ gedruckten Werte in den anderen Spalten sind die Einstellungen, die die resultierenden Werte für jede Zeile erzeugt haben.
 
 | Freigegebenes Produkt: Lieferant | Standardmäßige Auftragseinstellung: Vorlaufzeit | Artikelabdeckung: Lieferant überschreiben | Artikelabdeckung: Vorlaufzeit überschreiben | Kaufvertrag: Lieferant | Kaufvertrag: Lieferzeit | Kaufvertrag: Vorlaufzeit ignorieren | Resultierender Anbieter | Resultierende Vorlaufzeit |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001*** | ***1*** | Nr. | Nr. | US003 | 3 | Nr. | **US001** | **1** |
-| US001 | 1 | ***JA: US002*** | ***Ja: 2*** | US003 | 3 | Nr. | **US002** | **2** |
-| *(Leer)* | 1 | Nr. | Nr. | ***US003*** | ***3*** | Nr. | **US003** | **3** |
-| *(Leer)* | ***1*** | Nr. | Nr. | ***US003*** | 3 | Ja | **US003** | **1** |
-| *(Leer)* | ***1*** | ***JA: US002*** | Nr. | US003 | 3 | Nr. | **US002** | **1** |
-| *(Leer)* | ***1*** | ***JA: US002*** | Nr. | US003 | 3 | Nr. | **US002** | **1** |
-| *(Leer)* | 1 | Nr. | Ja: 2 | ***US003*** | ***3*** | Nr. | **US003** | **3** |
-| *(Leer)* | 1 | Nr. | ***Ja: 2*** | ***US003*** | 3 | Ja | **US003** | **2** |
+| _*_US001_*_ | _*_1_*_ | Nr. | Nr. | US003 | 3 | Nr. | _ *US001** | **1** |
+| US001 | 1 | **_Ja: US002_* _ | _*_Ja: 2_*_ | US003 | 3 | Nr. | _ *US002** | **2** |
+| *(Leer)* | 1 | Nr. | Nr. | ***US003** _ | _*_3_*_ | Nr. | _ *US003** | **3** |
+| *(Leer)* | ***1** _ | Nr. | Nr. | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
+| *(Leer)* | ***1** _ | _*_Ja: US002_*_ | Nr. | US003 | 3 | Nr. | _ *US002** | **1** |
+| *(Leer)* | ***1** _ | _*_Ja: US002_*_ | Nr. | US003 | 3 | Nr. | _ *US002** | **1** |
+| *(Leer)* | 1 | Nr. | Ja: 2 | ***US003** _ | _*_3_*_ | Nr. | _ *US003** | **3** |
+| *(Leer)* | 1 | Nr. | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Rahmenbestellungen](../../procurement/purchase-agreements.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[Kaufverträge](../../procurement/purchase-agreements.md)

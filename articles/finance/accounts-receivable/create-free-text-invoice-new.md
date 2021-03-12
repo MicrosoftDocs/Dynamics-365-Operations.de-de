@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1ac06e7d702ffe3a8cdb6bd2823f2ffdc055c722
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 726d4979059417871a00626c55da32fa4286cb53
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443442"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991116"
 ---
 # <a name="create-a-free-text-invoice"></a>Freitextrechnung erstellen
 
@@ -30,7 +29,7 @@ In diesem Thema wird erläutert, wie Freitextrechnungen erstellt werden. Für di
 
 ## <a name="create-a-free-text-invoice"></a>Freitextrechnung erstellen
 
-1. Wechseln Sie zu **Debitoren \> Rechnungen \> Alle Freitextrechnungen**.
+1. Rufen Sie **Debitoren (oder Verkaufssachkonto) \> Rechnungen \> Alle Freitextrechnungen** auf.
 2. Wählen Sie **Neu** aus.
 3. Wählen Sie im Feld **Debitorenkonto** einen Wert aus.
 
@@ -85,6 +84,3 @@ Anschließend können Sie die Informationen nach Bedarf bearbeiten.
 Sie können eine Freitext-Rechnung von einer Vorlage erstellen. Wenn Sie **Neu von Vorlage** aus der **Rechnungs** registerkarte auswählen, können Sie einen Vorlagennamen gür die neue Freitextrechnung auswählen. Sie können die Standardwerte wie die Zahlungsbedingungen und die Zahlungsmethode der Zahlung auch auswählen oder die Werte verwenden, , die mit der Vorlage gespeichert wurden.
 
 Eine neue Freitextrechnung wird erstellt und Sie können die Werte in dieser Rechnung bearbeiten.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

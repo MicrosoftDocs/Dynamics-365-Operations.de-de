@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 92177d4f808bfec88dabe9277c3d584ed02e401e
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 7f70442450cc1c814ae23e41a1feb3a63f2aade8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4443769"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992888"
 ---
 # <a name="record-leases-in-foreign-currencies"></a>Leasingobjekte in Fremdwährungen erfassen
 
@@ -53,6 +52,3 @@ Wenn Sie die Journaleinträge für Abschreibungskosten für einen Mietvertrag er
 Der endgültige Abschreibungsaufwand kann unter Verwendung eines geringfügig anderen Wechselkurses berechnet werden, sodass das Nutzungsrecht am Leasingobjekt sowohl in der Rechnungswährung als auch in der Berichtswährung vollständig abgeschrieben wird.
 
 Wenn der Mietvertrag als **Zurückgestellter Mietaufwand** umgegliedert wurde, löscht das System automatisch die Wechselkurse der Buchhaltungs- und Berichtswährungen, sofern diese bereits definiert wurden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
