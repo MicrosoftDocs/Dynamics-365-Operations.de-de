@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetStandardSparePartsItemGroup, EntAssetObjectBOM
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f42646ae865cd530203c997fd10c8ccd59e7fa2b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: baaf516eb386c3cf63d72bf31800b8731121fe26
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428840"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019519"
 ---
 # <a name="asset-boms"></a>Anlagenstücklisten
 
@@ -84,6 +83,3 @@ Sie können Artikelpositionen für Anlagen manuell erstellen.
 5. Wenn der Artikel ablaufen soll, geben Sie im Feld **Ablauf** ein Enddatum ein.
 6. Wählen Sie im Feld **Artikelnummer** den Artikel aus. Der Name wird automatisch in das Feld **Produktname** eingetragen.
 7. Geben Sie im Feld **Menge** die verwendete Menge ein. Das Feld **Einheit** wird automatisch aktualisiert.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

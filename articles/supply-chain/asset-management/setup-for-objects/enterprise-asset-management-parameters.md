@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2505f5f334c3f86959023812880e956f0ebaac09
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428810"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020652"
 ---
 # <a name="asset-management-parameters"></a>Anlagenverwaltungsparameter
 
@@ -34,25 +33,24 @@ In der Anlageverwaltung müssen allgemeine Parameter in Bezug auf Arbeitsaufträ
 > [!NOTE]
 > Wenn Sie ein System einrichten möchten, das Demodaten zum Testen von Anlagenverwaltung-Funktionen enthält, finden Sie unter [Demoumgebung bereitstellen](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) Anweisungen.
 
-Link **Anlagen**
+## <a name="the-assets-tab"></a>Die Registerkarte „Anlagen“
+
+Die Registerkarte **Anlagen** enthält die folgenden Einstellungen:
 
 - **Funktionaler Lagerplatz Standard** ist der funktionale Lagerplatz Standard, der automatisch auf Anlagen ausgewählt wird, wenn Sie neue Anlagen erstellen.  
 - Wählen Sie im Feld **Standardkalender** einen Kalender aus, der für die Berechnung der Anlagen-KPIs verwendet werden soll, wenn keine Ressource auf einer Anlage ausgewählt ist.  
 - Wählen Sie im Feld **Ansicht** die Standardansicht, die angezeigt wird, wenn Sie **Anlagenansicht** öffnen (**Anlagenverwaltung** > **Gemeinsam** > **Anlagen** > **Anlagenansicht**).
 - **Standardanforderungstyp** ist der Standardwartungsanfragetyp, der automatisch aktiviert wird, wenn Sie einen neuen Einrichtungsantrag erstellen.  
-- Wenn Sie Projekte erstellen möchten, die sich auf Anlagen beziehen, werden Projektrelationen bei Auswahl von **Hauptprojekt**, **Projekthierarchie** und die Option **Projekte automatisch erstellen** in **Anlageverwaltungsparameter** eingerichtet.  
-- Im Feld **Arbeitsauftragsprojektmaske** können Sie die Anzahl der Unterprojekte definieren die für Arbeitsaufträge und Subventionsanlagen zulässig sind. Eine Arbeitsauftragsmaske wird verwendet, um festzulegen, wie viele Arbeitsaufträge auf einer Anlage erstellt werden und für das zugehörigen Arbeitsauftragseinzelvorgangsprojekt verwendet werden können. Die Arbeitsauftragsmaske wird im Feld **Verwandte Arbeitsauftragsmaske** **Anlageverwaltungsparameter** (**Anlageverwaltung** > **Einstellungen** > **Anlageverwaltungsparameter** > **Arbeitsaufträge**) eingerichtet.  
-    >[!NOTE]
-    >Das Format für eine zugehörige Arbeitsauftragsmaske ist eine Reihe von Hashvorzeichen (# ), abhängig von der maximalen Anzahl von Arbeitsaufträgen, die Sie für die Anlage erstellen werden. Beispiel: ## ermöglicht es, bis zu 99 Unterprojekte zu erstellen.  
 - Planungen auf Einzelvorgangstypen werden auf das Projekt gespeichert, das im Feld **Planungsprojekt** ausgewählt wird. Für jeden Einzelvorgangstyp wird eine neue Aktivität automatisch im Feld Planungsprojekt erstellt. Planungen bezüglich des Stellentyps werden dann im Planungsprojekt gespeichert.  
-- Im Feld **Modell** wählen Sie das Planzahlenmodell aus, das auf Einzelvorgangstyp- und Arbeitsauftragsplanungen verwendet wird.  
+- Im Feld **Modell** wählen Sie das Planzahlenmodell aus, das auf Einzelvorgangstyp- und Arbeitsauftragsplanungen verwendet wird.
 
+## <a name="the-work-orders-tab"></a>Die Registerkarte „Arbeitsaufträge“
 
-Link **Arbeitsaufträge**
+Die Registerkarte **Arbeitsaufträge** enthält die folgenden Einstellungen:
 
 - **Standardarbeitsauftragstyp** definiert Standardeinstellungen, wenn ein Arbeitsauftrag erstellt wird.  
 - **Vorbeugender Arbeitsauftragstyp** definiert den Arbeitsauftragstyp, wenn Arbeitsaufträge von den Wartungsplänen verwendet werden. Wenn dieses Feld leer bleibt, wird der Arbeitsauftrag in dem Feld **Standardarbeitsauftragstyp** verwendet.  
-- Im Feld **Verwandte Arbeitsauftragsmaske** definieren die maximale Anzahl von Arbeitsaufträgen, die einem Arbeitsauftrag zugeordnet werden können. Mit ## können Sie zum Beispiel bis zu 99 Arbeitsaufträge miteinander in Beziehung setzen. Wenn Sie eine Maske wie hier beschrieben definieren, werden zusammenhängende Arbeitsaufträge mit [Arbeitsauftrags-ID des Arbeitsauftrags, mit dem ein Arbeitsauftrag zusammenhängt] -01, -02, -03, usw. nummeriert. Wenn Sie keinerlei Maske in diesem Feld definieren, wird ein zugehöriger Arbeitsauftrag die darauf folgende Auftragsnummer die Arbeitsauftrags-Kennung.  
+- Im Feld **Verwandte Arbeitsauftragsmaske** definieren die maximale Anzahl von Arbeitsaufträgen, die einem Arbeitsauftrag zugeordnet werden können. Mit ## können Sie zum Beispiel bis zu 99 Arbeitsaufträge miteinander in Beziehung setzen. Wenn Sie eine Maske wie hier beschrieben definieren, werden zugehörige Arbeitsaufträge [Arbeitsauftrag-Kennung des Arbeitsauftrags, auf die sich ein Arbeitsauftrag bezieht] nummeriert mit -01, -02, -03, usw. Wenn Sie keinerlei Maske in diesem Feld definieren, wird ein zugehöriger Arbeitsauftrag die darauf folgende Auftragsnummer die Arbeitsauftrags-Kennung.  
 - Wählen Sie **Ja** für **Fehler kopieren**, wenn Sie die auf den Arbeitsaufträgen registrierten Fehler automatisch in die zugehörigen Wartungsanforderungen kopieren möchten. 
 - Im Feld **Ebene** definieren Sie die funktionale Lagerplatzebene, die automatisch für einen Arbeitsauftrag eingefügt wird, wenn alle zugehörigen Arbeitsauftragseinzelvorgänge auf den funktionalen gleichen Speicherort verweisen. Wenn nicht alle Arbeitsauftragseinzelvorgänge derselben funktionalen Position auf der definierten Ebene zugeordnet werden, wird das Feld  **Funktionaler Lagerplatz** auf dem Arbeitsauftrag leer gelassen. Wenn Sie z.B. die Zahl „1“ in dieses Feld einfügen, ist das die oberste Ebene in einer funktionalen Standortstruktur. Wenn Sie die Nummer „0“ in diesem Feld einfügen, haben Sie keine bestimmte funktionale Lagerplatzebene definiert, nur dass alle Arbeitsauftragsstellen eines Arbeitsauftrags dem gleichen Standort zugeordnet sein müssen, damit der Lagerplatz dem Arbeitsauftrag funktionale hinzugefügt werden kann.  
 - Die Erfassungen, die verwendet werden, wenn der Verbrauch in einem Arbeitsauftrag gebucht wird, kann auf dem Inforegister **Allgemein** in den Feldern **Stunde**, **Artikel** und **Ausgaben** ausgewählt werden.  
@@ -67,8 +65,9 @@ Link **Arbeitsaufträge**
     - Einrichtung der Wartungsrunden  
 - Auf dem Inforegister **Kategorie** können Standardkategorien in Bezug auf den Verbrauch in Arbeitsaufträgen definiert werden.  
 
+## <a name="the-work-order-scheduling-tab"></a>Die Registerkarte „Arbeitsauftrag und Planung“
 
-**Arbeitsauftragsterminierung** Link
+Die Registerkarte **Arbeitsauftrag und Planung** bietet die folgenden Einstellungen auf dem Inforegister **Allgemein**:
 
 - **Planungszeitraum planen** definiert den Zeitraum in Tagen, berechnet, nach dem erwarteten Startdatum des Arbeitsauftrags, während dem Arbeitsauftragsvorgänge geplant werden.  
 - **Produktprogrammplan** bezeieht sich auf die Ressourcen im Modul **Organisationsverwaltung**. Wenn Sie einen Produktprogrammplan in diesem Feld ausgewählt haben, sind Sie in der Lage, die Kapazitätsreservierungen zu sehen, die den Arbeitsaufträgen **Kapazitätsreservierungen** zugeordnet werden (**Organisationsverwaltung** > **Ressourcen** > **Ressourcen** > Ressource wählen > Registerkarte **Ressource** > Schaltfläche **Kapazitätsreservierungen**). Wenn Sie dieses Feld leer lassen, sehen Sie die Kapazitätsauslastung, die dem Arbeitsauftrag zugeordnet ist unter **Kapazitätsauslastung** (**Organisationsverwaltung** \>**Ressourcen** \> **Ressourcen** \> Ressource auswählen \> Registerkarte **Ressource** \> Schaltfläche **Kapazitätsauslastung**).  
@@ -100,13 +99,10 @@ Die in der folgenden Liste beschriebenen Felder beziehen sich alle auf errechnet
   - Angenommen, dass keine zuständige Arbeitskraft und zuständige Arbeitskraftgruppe für einen Arbeitsauftrag eingeplant wird, fügen Sie die Bewertungsnotenwerte in den Beispielen hinzu und ziehen es ab in den Beispielen mit den Felder **Bevorzugte Arbeitskraft**, **Bevorzugte Arbeitskraftgruppe**, **Anlagenstandort** und **Startdatum** und Sie erhalten insgesamt 3.010,00. Das bedeutet eine hohe Bewertung für die Arbeitskraft, die bereits als bevorzugte Arbeitskraft aktiviert ist sowie in der bevorzugten Arbeitskraftgruppe im Feld Arbeitsauftrag einbezogen ist, und die Arbeitskraft sitzt auch am selben Standort wie die Anlage, für die ein Einzelvorgang geplant werden muss. Dies bedeutet, dass eine gute Chance besteht, dass der betreffende Mitarbeiter bei der Arbeitsauftragsplanung für die Ausführung des Auftrags ausgewählt wird.  
   - Wenn der Wert „0,00“ in einem der acht Felder eingefügt wird, wird diese Bewertungsnote nicht innerhalb der Arbeitsauftragsplanung verwendet.  
 
-**Dokumenttypen** Link
+## <a name="the-document-types-tab"></a>Die Registerkarte „Dokumenttypen“
 
 Wählen Sie die Dokumenttypen aus, die beim Drucken von Anhängen verfügbar sein sollen, die einem Arbeitsauftragsbericht zugeordnet werden. Dies geschieht durch Auswahl eines Dokumenttyps im Abschnitt **Verfügbar** und Auswahl von ![Vorwärtspfeil](media/15-setup-for-objects.png). Wenn Sie einen ausgewählten Dokumenttyp entfernen möchten, wählen Sie den Dokumenttyp im Abschnitt **Ausgewählt** und wählen Sie ![Pfeil nach hinten](media/16-setup-for-objects.png).
 
-**Nummernkreise** Link
+## <a name="the-number-sequences-tab"></a>Die Registerkarte „Nummernkreise“
 
 Dient zum Auswählen der erforderlichen Nummernkreise in diesem Bereich. Es gibt zwei Nummernkreise für Anlagen: einen für manuell erstellte Anlagen und einen für Anlagen, die durch ausstehende Anlagen erstellt wurden.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

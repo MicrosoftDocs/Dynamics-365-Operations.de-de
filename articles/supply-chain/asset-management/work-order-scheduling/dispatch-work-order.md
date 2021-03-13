@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetScheduledExecution
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d46beb04923d06aa8ccec05355731aa1b3f27c5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6b4b05dfe351bb61dc47c9c2bfe30831ab7b0a16
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428527"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016855"
 ---
 # <a name="dispatch-work-order"></a>Arbeitsauftrag disponieren
 
@@ -60,6 +59,3 @@ Die folgende Abbildung zeigt ein Beispiel der Versandmöglichkeiten im Dialogfel
 [!NOTE]
 Wenn Sie die Planung für einen Arbeitsauftrag löschen möchten, wählen Sie den Arbeitsauftrag in **Alle Arbeitsaufträge** aus und klicken Sie auf **Zeitplan löschen** in der Registerkarte **Allgemein**. Denken Sie daran, den Arbeitsauftragslebenszyklusstatus manuell zu aktualisieren, wenn Sie den Zeitplan löschen.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

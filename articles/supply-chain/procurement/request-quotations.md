@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Angebotsanfragen (RFQs)
 description: Dieses Thema bietet eine Übersicht über Angebotsanforderungen. Organisationen stellen eine Angebotsanforderung aus, um von mehreren Kreditoren Angebote für die Artikel oder Dienstleistungen, die sie kaufen müssen, zwecks Vergleich anzufordern.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2154
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd0ee376da52dc3b36ec32859283a410e5b71854
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429117"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016930"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Übersicht über Angebotsanfragen (RFQs)
 
@@ -247,6 +246,3 @@ Im Beispiel unten sehen Sie den niedrigsten und höchsten Status in der Angebots
 | Nehmen Sie eines derAngebote an. (oder mindestens eine Position ist erforderlich) |                          Eingegangen                           |                           Angenommen                           |                    Eingegangen                    |                    Angenommen                     |                   Eingegangen                   |                   Angenommen                    |
 |           Lehnen Sie alle anderen Angebote ab.           |                          Verweigert                           |                           Angenommen                           |                    Verweigert                    |                    Angenommen                     |                   Verweigert                   |                   Akzeptiert                    |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

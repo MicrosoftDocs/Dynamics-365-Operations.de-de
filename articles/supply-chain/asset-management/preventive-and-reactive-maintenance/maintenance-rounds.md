@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetRoundTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 63cb2614b2037fac1129c7d2f82a26dac41a3490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a3a64593a2155d35e78b0d854c7367fa65d1c5c8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428737"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018545"
 ---
 # <a name="maintenance-rounds"></a>Wartungsdurchgänge
 
@@ -117,6 +116,3 @@ Die zwei folgenden Abbildungen zeigen einen Zeitplaneinzelvorgang im Dialog **Wa
 - Sie können einen Batchauftrag auf dem Inforegister **Im Hintergrund ausführen** einrichten, um Durchgänge in regelmäßigen Abständen einzuplanen.  
 - Wenn ein Durchgang in mehreren Arbeitsauftragspools enthalten ist (siehe [Arbeitsauftragspools](../work-orders/work-order-pools.md)), wird für jeden Pool ein Datensatz in **Wartungszeitplanpools öffnen** angezeigt. Dies erfolgt, um die Filtermöglichkeiten für Arbeitsauftragspools zu optimieren.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

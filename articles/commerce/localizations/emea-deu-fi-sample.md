@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Retail
 ms.search.region: Germany
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 84f48ebfa20755d6a37271d8a14f287f3e86539f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8fc7f2aa60992fe14c3759e99fabb7c5e4c86ce9
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407739"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018883"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Integrationsbeispiel für Steuererfassungsdienst für Deutschland
 
@@ -373,24 +372,24 @@ Die Hardware station-Erweiterungskomponenten sind in den Hardware station-Beispi
 
 Um den Erfassungsprozess zu aktivieren, führen Sie diese Schritte aus, um die Commerce Zentralverwaltung einzurichten. Weitere Einzelheiten finden Sie unter [Steuerliche Integration für Commerce-Kanäle einrichten](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Gehen Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Gemeinsame Commerce-Parameter**. Auf der Registerkarte **Allgemein** legen Sie die Option **Steuerintegration aktivieren** auf **Ja** fest.
-2. Gehen Sie zu **Retail und Commerce \> Kanaleinrichtung \> Steuerintegration \> Steuerkonnektoren**, und laden Sie die Konnektorkonfiguration. Der Dateispeicherort ist **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
+1. Gehen Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Parameter \> Gemeinsame Commerce-Parameter**. Auf der Registerkarte **Allgemein** legen Sie die Option **Steuerintegration aktivieren** auf **Ja** fest.
+2. Gehen Sie zu **Einzelhandel und Handel \> Kanaleinrichtung \> Steuerintegration \> Steuerkonnektoren**, und laden Sie die Konnektorkonfiguration. Der Dateispeicherort ist **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
 3. Wechseln Sie zu **Retail and Commerce \> Kanaleinrichtung \> Steuerintegration \> Steuerdokumentanbieter**, und laden Sie die Dokumentanbieterkonfigurationen. Die Konfigurationsdateien befinden sich unter **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleGermany.xml**.
-4. Wechseln Sie zu **Retail und Commerce \> Kanaleinrichtung \> Steuerintegration \> Konnektorfunktionsprofile**. Erstellen Sie ein neues funktionales Konnektorprofil, und wählen Sie den Dokumentanbieter und den Konnektor aus, den Sie vorher geladen haben. Aktualisieren Sie die Datenzuordnungseinstellungen nach Bedarf.
+4. Wechseln Sie zu **Einzelhandel und Handel \> Kanaleinrichtung \> Steuerintegration \> Konnektorfunktionsprofile**. Erstellen Sie ein neues funktionales Konnektorprofil, und wählen Sie den Dokumentanbieter und den Konnektor aus, den Sie vorher geladen haben. Aktualisieren Sie die Datenzuordnungseinstellungen nach Bedarf.
 
     > [!NOTE]
     > Standardmäßig ist die **Kundendaten einschließen** Option auf **Ja** festgelegt. Wenn Sie nicht möchten, dass Kundeninformationen wie Namen und Adressen an den Steuerregistrierungsdienst gesendet werden, können Sie die Einstellung auf **Nein** ändern.
 
-5. Wechseln Sie zu **Retail und Commerce \> Kanaleinrichtung \> Steuerintegration \> Technische Profile des Connectors**. Erstellen Sie ein neues technisches Konnektorprofil, und wählen Sie den Konnektor aus, den Sie vorher geladen haben. Aktualisieren Sie die Verbindungseinstellungen nach Bedarf.
+5. Wechseln Sie zu **Einzelhandel und Handel \> Kanaleinrichtung \> Steuerintegration \> Technische Profile des Connectors**. Erstellen Sie ein neues technisches Konnektorprofil, und wählen Sie den Konnektor aus, den Sie vorher geladen haben. Aktualisieren Sie die Verbindungseinstellungen nach Bedarf.
 
     > [!WARNING]
     > Standardmäßig ist der **Steuerregistrierungsbenachrichtigungen anzeigen** Parameter eingeschaltet. Wir empfehlen, dass Sie es aktiviert lassen, da der Steuerregistrierungsdienst Benachrichtigungen über bestimmte Fehler sendet, die bei der Steuerregistrierung auftreten können (z. B. wurde eine Transaktion zum Zeitpunkt der Registrierung nicht signiert).
 
-6. Wechseln Sie zu **Retail und Commerce \> Kanaleinrichtung \> Steuerintegration \> Steuerkonnektorgruppen**. Erstellen Sie eine neue Steuerkonnektorgruppen für das funktionale Konnektorfunktionsprofil, das Sie vorher erstellt haben.
-7. Wechseln Sie zu **Retail und Commerce \> Kanaleinrichtung \> Steuerintegration \> Steuererfassungsprozesse**. Erstellen Sie einen neuen Steuererfassungsprozess, zwei Steuererfassungsprozess-Schritte, und wählen Sie die Steuerkonnektorgruppe aus, die Sie vorher erstellt haben.
-8. Gehen Sie zu **Retail und Commerce \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Funktionsprofile**. Wählen Sie ein Funktionsprofil aus, das mit dem Einzelhandelsgeschäft verbunden ist, wo der Erfassungsprozess aktiviert werden soll. Im Inforegister **Steuererfassungsprozess** aktivieren Sie den Steuererfassungsprozess, den Sie vorher erstellt haben.
-9. Wechseln Sie zu **Retail und Commerce \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Hardwareprofile**. Wählen Sie ein Hardwareprofil aus, das mit der Hardware station verknüpft ist, mit der der Belegdrucker verbunden wird. Im Inforegister **Peripheriegeräte für die Steuerverwaltung** aktivieren Sie das technische Konnektorprofil, das Sie vorher erstellt haben.
-10. Gehen Sie zu **Retail und Commerce \> Retail und Commerce IT \> Vertriebsplan**, und wählen Sie Jobs **1070** und **1090** ausführen, um Daten zur Kanaldatenbank zu übertragen.
+6. Wechseln Sie zu **Einzelhandel und Handel \> Kanaleinrichtung \> Steuerintegration \> Steuerkonnektorgruppen**. Erstellen Sie eine neue Steuerkonnektorgruppen für das funktionale Konnektorfunktionsprofil, das Sie vorher erstellt haben.
+7. Wechseln Sie zu **Einzelhandel und Handel \> Kanaleinrichtung \> Steuerintegration \> Steuererfassungsprozesse**. Erstellen Sie einen neuen Steuererfassungsprozess, zwei Steuererfassungsprozess-Schritte, und wählen Sie die Steuerkonnektorgruppe aus, die Sie vorher erstellt haben.
+8. Gehen Sie zu **Einzelhandel und Handel \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Funktionsprofile**. Wählen Sie ein Funktionsprofil aus, das mit dem Einzelhandelsgeschäft verbunden ist, wo der Erfassungsprozess aktiviert werden soll. Im Inforegister **Steuererfassungsprozess** aktivieren Sie den Steuererfassungsprozess, den Sie vorher erstellt haben.
+9. Wechseln Sie zu **Einzelhandel und Handel \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Hardwareprofile**. Wählen Sie ein Hardwareprofil aus, das mit der Hardware station verknüpft ist, mit der der Belegdrucker verbunden wird. Im Inforegister **Peripheriegeräte für die Steuerverwaltung** aktivieren Sie das technische Konnektorprofil, das Sie vorher erstellt haben.
+10. Gehen Sie zu **Einzelhandel und Handel \> Einzelhandel und Handel IT \> Vertriebsplan**, und wählen Sie Jobs **1070** und **1090** ausführen, um Daten zur Kanaldatenbank zu übertragen.
 
 ### <a name="production-environment"></a>Produktionsumgebung
 
@@ -487,6 +486,3 @@ Die folgenden Einstellungen werden hinzugefügt:
 - **Endpunktadresse** – Die URL des Steuererfassungsdiensts.
 - **Zeitlimit** – Die Zeitdauer in Millisekunden (ms), die der Treiber auf eine Antwort vom Steuererfassungsdienst wartet.
 - **Steuerregistrierungsbenachrichtigungen anzeigen** – Wenn dieser Parameter aktiviert ist, werden Benachrichtigungen vom Finanzdienst als Benutzermeldungen am POS angezeigt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

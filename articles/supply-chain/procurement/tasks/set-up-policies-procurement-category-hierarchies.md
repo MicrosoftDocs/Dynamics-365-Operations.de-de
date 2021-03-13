@@ -1,7 +1,7 @@
 ---
 title: Richtlinien für Beschaffungskategoriehierarchien einrichten
 description: Verwenden Sie dieses Verfahren, um Regeln zum Bestellen von Produkten in einer Kategorie einzurichten.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/22/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, ProcCategoryPolicyRule, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d113181b5c78c0f35292b5f14cedd12bacdc7364
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3fc01793ee83444e5c7097021c19aeda80a132e6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428642"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017092"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Richtlinien für Beschaffungskategoriehierarchien einrichten
 
@@ -52,6 +51,3 @@ Verwenden Sie dieses Verfahren, um Regeln zum Bestellen von Produkten in einer K
 6. Wählen Sie im Feld **Kreditorenauswahl** eine Option aus. Wählen Sie eine Regel aus, um zu steuern, welche Art von Kreditoren für die Kategorie ausgewählt werden können, wenn Anforderungen erstellt werden.  
 7. Klicken Sie auf **Schließen**. Die Richtlinienregeln, die Sie definiert haben, sind für die Anforderungen des Typs "Verbrauch" gewesen. Sollten Sie Richtlinien für Anforderungen des Typs „Wiederbeschaffung“ definieren wollen, würden Sie eine Regel für den Richtlinienregeltyp mit der Bezeichnung „Wiederbeschaffungskategorie-Zugriffsrichtlinienregel“ erstellen.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

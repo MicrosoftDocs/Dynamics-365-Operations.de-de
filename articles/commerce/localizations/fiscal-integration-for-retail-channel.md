@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d2455f775fcf41bbcb1388b2e8053ede8512335d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2f1abf29058e773f1645301fcd7a960df488d92b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412659"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017466"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Übersicht über die Steuerintegration für Commerce-Kanäle
 
@@ -150,6 +149,3 @@ Die folgenden Steuerintegrationsfunktionen sind ebenfalls im Retail SDK verfügb
 Die folgenden älteren Funktionen für die steuerliche Integration, die im Retail SDK verfügbar sind, verwenden nicht das Framework für die steuerliche Integration und werden in späteren Updates nicht mehr unterstützt:
 
 - [Beispiel zur Integration der Kontrolleinheit für Schweden (veraltet)](./retail-sdk-control-unit-sample.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
