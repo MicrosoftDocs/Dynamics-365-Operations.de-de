@@ -11,48 +11,47 @@ ms.technology: ''
 ms.search.form: ProdTableListPage, ProdSchedule, ProdRouteJob
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9059080fcd77a5317ce4226de6aad38b0066500
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 442826d6611ea4aaedee2e9bae5649ada1cc846d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428722"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007890"
 ---
-# <a name="create-a-schedule-for-a-site"></a><span data-ttu-id="9b02c-103">Einen Zeitplan für einen Standort erstellen</span><span class="sxs-lookup"><span data-stu-id="9b02c-103">Create a schedule for a site</span></span>
+# <a name="create-a-schedule-for-a-site"></a><span data-ttu-id="3cf9f-103">Einen Zeitplan für einen Standort erstellen</span><span class="sxs-lookup"><span data-stu-id="3cf9f-103">Create a schedule for a site</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="9b02c-104">Diese Prozedur zeigt, wie Produktionsaufträge geplant werden sollen, die noch nicht für einen Standort gestartet wurden.</span><span class="sxs-lookup"><span data-stu-id="9b02c-104">This procedure shows how to schedule production orders that are not yet started for a site.</span></span>  <span data-ttu-id="9b02c-105">Das Demodatenunternehmen USMF wird verwendet, um diese Prozedur abzuschließen.</span><span class="sxs-lookup"><span data-stu-id="9b02c-105">The demo data company USMF is used to complete this procedure.</span></span>
+<span data-ttu-id="3cf9f-104">Diese Prozedur zeigt, wie Produktionsaufträge geplant werden sollen, die noch nicht für einen Standort gestartet wurden.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-104">This procedure shows how to schedule production orders that are not yet started for a site.</span></span>  <span data-ttu-id="3cf9f-105">Das Demodatenunternehmen USMF wird verwendet, um diese Prozedur abzuschließen.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-105">The demo data company USMF is used to complete this procedure.</span></span>
 
 
-## <a name="identify-production-orders-that-are-not-started"></a><span data-ttu-id="9b02c-106">Identifizieren Sie Produktionsaufträge, die noch nicht gestartet wurden.</span><span class="sxs-lookup"><span data-stu-id="9b02c-106">Identify production orders that are not started</span></span>
-1. <span data-ttu-id="9b02c-107">Wechseln Sie zu "Produktionssteuerung" > "Produktionsaufträge" > "Alle Produktionsaufträge".</span><span class="sxs-lookup"><span data-stu-id="9b02c-107">Go to Production control > Production orders > All production orders.</span></span>
-2. <span data-ttu-id="9b02c-108">Verwenden Sie den Schnellfilter, um Datensätze zu suchen.</span><span class="sxs-lookup"><span data-stu-id="9b02c-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="9b02c-109">Filtern Sie beispielsweise zum Feld "Standort" mit einem Wert von "1".</span><span class="sxs-lookup"><span data-stu-id="9b02c-109">For example, filter on the Site field with a value of '1'.</span></span>
-    * <span data-ttu-id="9b02c-110">1 stellt einen Standort in USMF dar.</span><span class="sxs-lookup"><span data-stu-id="9b02c-110">1 represents a site in USMF.</span></span> <span data-ttu-id="9b02c-111">Wenn Sie nicht USMF verwenden, wählen Sie eine Standort von Ihrem eigenen Unternehmen aus.</span><span class="sxs-lookup"><span data-stu-id="9b02c-111">If you are not using USMF, select a site from your own company.</span></span>  
-3. <span data-ttu-id="9b02c-112">Öffnen Sie den Spaltenfilter "Status".</span><span class="sxs-lookup"><span data-stu-id="9b02c-112">Open the Status column filter.</span></span>
-4. <span data-ttu-id="9b02c-113">Wenden Sie einen Filter für das Feld "Status" an, mit einem Wert "Eingeplant", mithilfe des Filteroperators "ist genau".</span><span class="sxs-lookup"><span data-stu-id="9b02c-113">Apply a filter on the "Status" field, with a value of "Scheduled", using the "is exactly" filter operator.</span></span>
+## <a name="identify-production-orders-that-are-not-started"></a><span data-ttu-id="3cf9f-106">Identifizieren Sie Produktionsaufträge, die noch nicht gestartet wurden.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-106">Identify production orders that are not started</span></span>
+1. <span data-ttu-id="3cf9f-107">Wechseln Sie zu "Produktionssteuerung" > "Produktionsaufträge" > "Alle Produktionsaufträge".</span><span class="sxs-lookup"><span data-stu-id="3cf9f-107">Go to Production control > Production orders > All production orders.</span></span>
+2. <span data-ttu-id="3cf9f-108">Verwenden Sie den Schnellfilter, um Datensätze zu suchen.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="3cf9f-109">Filtern Sie beispielsweise zum Feld "Standort" mit einem Wert von "1".</span><span class="sxs-lookup"><span data-stu-id="3cf9f-109">For example, filter on the Site field with a value of '1'.</span></span>
+    * <span data-ttu-id="3cf9f-110">1 stellt einen Standort in USMF dar.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-110">1 represents a site in USMF.</span></span> <span data-ttu-id="3cf9f-111">Wenn Sie nicht USMF verwenden, wählen Sie eine Standort von Ihrem eigenen Unternehmen aus.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-111">If you are not using USMF, select a site from your own company.</span></span>  
+3. <span data-ttu-id="3cf9f-112">Öffnen Sie den Spaltenfilter "Status".</span><span class="sxs-lookup"><span data-stu-id="3cf9f-112">Open the Status column filter.</span></span>
+4. <span data-ttu-id="3cf9f-113">Wenden Sie einen Filter für das Feld "Status" an, mit einem Wert "Eingeplant", mithilfe des Filteroperators "ist genau".</span><span class="sxs-lookup"><span data-stu-id="3cf9f-113">Apply a filter on the "Status" field, with a value of "Scheduled", using the "is exactly" filter operator.</span></span>
 
-## <a name="create-a-schedule"></a><span data-ttu-id="9b02c-114">Erstellen Sie einen Zeitplan</span><span class="sxs-lookup"><span data-stu-id="9b02c-114">Create a schedule</span></span>
-1. <span data-ttu-id="9b02c-115">Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.</span><span class="sxs-lookup"><span data-stu-id="9b02c-115">In the list, mark or unmark all rows.</span></span>
-2. <span data-ttu-id="9b02c-116">Klicken Sie im Aktivitätsbereich auf "Zeitplan".</span><span class="sxs-lookup"><span data-stu-id="9b02c-116">On the Action Pane, click Schedule.</span></span>
-3. <span data-ttu-id="9b02c-117">Klicken Sie auf "Einzelvorgänge planen".</span><span class="sxs-lookup"><span data-stu-id="9b02c-117">Click Schedule jobs.</span></span>
-4. <span data-ttu-id="9b02c-118">Wählen Sie im Feld Planungsrichtung "Rückwärts ab Lieferdatum" aus.</span><span class="sxs-lookup"><span data-stu-id="9b02c-118">In the Scheduling direction field, select 'Backward from delivery date'.</span></span>
-5. <span data-ttu-id="9b02c-119">Wählen Sie "Nein" im Feld "Begrenzte Kapazität" aus.</span><span class="sxs-lookup"><span data-stu-id="9b02c-119">Select No in the Finite capacity field.</span></span>
-6. <span data-ttu-id="9b02c-120">Wählen Sie "Nein" im Feld "Begrenztes Material" aus.</span><span class="sxs-lookup"><span data-stu-id="9b02c-120">Select No in the Finite material field.</span></span>
-7. <span data-ttu-id="9b02c-121">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="9b02c-121">Click OK.</span></span>
-    * <span data-ttu-id="9b02c-122">Dies kann einige Zeit in Anspruch nehmen.</span><span class="sxs-lookup"><span data-stu-id="9b02c-122">This may take a while.</span></span>  
+## <a name="create-a-schedule"></a><span data-ttu-id="3cf9f-114">Erstellen Sie einen Zeitplan</span><span class="sxs-lookup"><span data-stu-id="3cf9f-114">Create a schedule</span></span>
+1. <span data-ttu-id="3cf9f-115">Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-115">In the list, mark or unmark all rows.</span></span>
+2. <span data-ttu-id="3cf9f-116">Klicken Sie im Aktivitätsbereich auf "Zeitplan".</span><span class="sxs-lookup"><span data-stu-id="3cf9f-116">On the Action Pane, click Schedule.</span></span>
+3. <span data-ttu-id="3cf9f-117">Klicken Sie auf "Einzelvorgänge planen".</span><span class="sxs-lookup"><span data-stu-id="3cf9f-117">Click Schedule jobs.</span></span>
+4. <span data-ttu-id="3cf9f-118">Wählen Sie im Feld Planungsrichtung "Rückwärts ab Lieferdatum" aus.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-118">In the Scheduling direction field, select 'Backward from delivery date'.</span></span>
+5. <span data-ttu-id="3cf9f-119">Wählen Sie "Nein" im Feld "Begrenzte Kapazität" aus.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-119">Select No in the Finite capacity field.</span></span>
+6. <span data-ttu-id="3cf9f-120">Wählen Sie "Nein" im Feld "Begrenztes Material" aus.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-120">Select No in the Finite material field.</span></span>
+7. <span data-ttu-id="3cf9f-121">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="3cf9f-121">Click OK.</span></span>
+    * <span data-ttu-id="3cf9f-122">Dies kann einige Zeit in Anspruch nehmen.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-122">This may take a while.</span></span>  
 
-## <a name="view-the-result-of-scheduled-production-orders"></a><span data-ttu-id="9b02c-123">Zeigen Sie das Ergebnis geplanter Produktionsaufträge an.</span><span class="sxs-lookup"><span data-stu-id="9b02c-123">View the result of scheduled production orders</span></span>
-1. <span data-ttu-id="9b02c-124">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="9b02c-124">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="9b02c-125">Sie können jede beliebige Zeile markieren.</span><span class="sxs-lookup"><span data-stu-id="9b02c-125">You can mark any row.</span></span>  
-2. <span data-ttu-id="9b02c-126">Klicken Sie im Aktivitätsbereich auf "Produktionsauftrag".</span><span class="sxs-lookup"><span data-stu-id="9b02c-126">On the Action Pane, click Production order.</span></span>
-3. <span data-ttu-id="9b02c-127">Klicken Sie auf "Alle Einzelvorgänge".</span><span class="sxs-lookup"><span data-stu-id="9b02c-127">Click All jobs.</span></span>
-    * <span data-ttu-id="9b02c-128">Auf dieser Seite können Sie die Liste der Einzelvorgänge anzeigen.</span><span class="sxs-lookup"><span data-stu-id="9b02c-128">On this page, you can see the list of jobs.</span></span> <span data-ttu-id="9b02c-129">Auf der Registerkarte "Planung" können Sie das Start- und Enddatum für einen Einzelvorgang anzeigen.</span><span class="sxs-lookup"><span data-stu-id="9b02c-129">On the Scheduling tab, you can see the Start date and End date for a job.</span></span>  
-4. <span data-ttu-id="9b02c-130">Klicken Sie auf "Material".</span><span class="sxs-lookup"><span data-stu-id="9b02c-130">Click Materials.</span></span>
-    * <span data-ttu-id="9b02c-131">Auf dieser Seite können Sie die vorkalkulierte Materialentnahme für die Arbeitsgänge im Produktionsauftrag und den aktuellen verfügbaren Bestand anzeigen.</span><span class="sxs-lookup"><span data-stu-id="9b02c-131">On this page, you can see the estimated material consumption for the operations on the production order and the current available inventory.</span></span>  
+## <a name="view-the-result-of-scheduled-production-orders"></a><span data-ttu-id="3cf9f-123">Zeigen Sie das Ergebnis geplanter Produktionsaufträge an.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-123">View the result of scheduled production orders</span></span>
+1. <span data-ttu-id="3cf9f-124">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-124">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="3cf9f-125">Sie können jede beliebige Zeile markieren.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-125">You can mark any row.</span></span>  
+2. <span data-ttu-id="3cf9f-126">Klicken Sie im Aktivitätsbereich auf "Produktionsauftrag".</span><span class="sxs-lookup"><span data-stu-id="3cf9f-126">On the Action Pane, click Production order.</span></span>
+3. <span data-ttu-id="3cf9f-127">Klicken Sie auf "Alle Einzelvorgänge".</span><span class="sxs-lookup"><span data-stu-id="3cf9f-127">Click All jobs.</span></span>
+    * <span data-ttu-id="3cf9f-128">Auf dieser Seite können Sie die Liste der Einzelvorgänge anzeigen.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-128">On this page, you can see the list of jobs.</span></span> <span data-ttu-id="3cf9f-129">Auf der Registerkarte "Planung" können Sie das Start- und Enddatum für einen Einzelvorgang anzeigen.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-129">On the Scheduling tab, you can see the Start date and End date for a job.</span></span>  
+4. <span data-ttu-id="3cf9f-130">Klicken Sie auf "Material".</span><span class="sxs-lookup"><span data-stu-id="3cf9f-130">Click Materials.</span></span>
+    * <span data-ttu-id="3cf9f-131">Auf dieser Seite können Sie die vorkalkulierte Materialentnahme für die Arbeitsgänge im Produktionsauftrag und den aktuellen verfügbaren Bestand anzeigen.</span><span class="sxs-lookup"><span data-stu-id="3cf9f-131">On this page, you can see the estimated material consumption for the operations on the production order and the current available inventory.</span></span>  
 
