@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 623c628f3359efc1f76e1d06387905f981deca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9f57d35adac0820d0635ab97a4cb4cefc1d504c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428461"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011671"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Workflows für die Genehmigung von Bestandserfassungen
 
@@ -31,6 +30,13 @@ In diesem Thema wird beschrieben, wie Sie Workflows für die Genehmigung von Bes
 
 > [!NOTE]
 > Workflows für die Genehmigung von Bestandserfassungen gelten nur für Buchungen, die mit dem Modul Bestandsverwaltung erfasst wurden. Sie funktionieren nicht mit Bestandserfassungen, die vom Modul Lagerortverwaltung ausgelöst werden.
+
+## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Funktion für Workflows zur Genehmigung von Lagererfassungen aktivieren
+
+Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+
+- **Modul:** *Bestands- und Lagerortverwaltung*
+- **Funktionsname:** *Workflow für die Genehmigung von Bestandserfassungen*
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Workflows für die Genehmigung von Bestandserfassungen anlegen
 
@@ -112,6 +118,3 @@ So überprüfen Sie die Workflowhistorie für eine Erfassung:
 1. Erweitern Sie im Navigationsbereich **Bestandsverwaltung \> Erfassungseinträge \> Artikel** und wählen Sie dann einen Bestandserfassungstyp aus.
 1. Öffnen Sie die relevante Erfassung.
 1. Wählen Sie die Schaltfläche **Workflow** im Aktionsbereich, um ein Drop-down-Dialogfeld zu öffnen. Wählen Sie **Workflowhistorie**. Weitere Informationen finden Sie unter [Workflowhistorie anzeigen](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

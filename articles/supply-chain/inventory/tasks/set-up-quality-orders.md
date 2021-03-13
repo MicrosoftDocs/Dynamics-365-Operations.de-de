@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventParameters, InventTestReportSetup, InventTestTable, DefaultDashboard, InventTestVariable, InventTestVariableOutcome, InventItemSampling, InventTestQualityGroup, InventTestItemQualityGroupAdd, SysQueryForm, InventTestItemQualityGroup, InventTestGroup, InventTestAssociationTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4577b8b189403b3d71eb634e159d51d2fa53ce12
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 875d79e33fbd1d3d811d93dea98fa9d490716744
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428958"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011471"
 ---
 # <a name="set-up-quality-orders"></a>Qualitätsprüfungsaufträge einrichten
 
@@ -136,5 +135,3 @@ Diese Prozedur zeigt Ihnen an, wie ein Qualitätsmanagementprozess aktiviert wir
 
 > [!NOTE]
 > Die Funktion *Qualitätsmanagement für Lagerortprozesse* steuert bietet zusätzliche Einstellungsoptionen für Qualitätszuordnungen. Sie fügt eine neue Bedingung (**Zutreffender Lagerorttyp**) hinzu sowie eine neue Einstellung (**Qualitätsverarbeitungsrichtlinie**). Wenn Sie diese Funktion aktiviert haben, finden Sie unter [Qualitätsmanagement für Lagerortprozesse](../quality-management-for-warehouses-processes.md) weitere Details.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

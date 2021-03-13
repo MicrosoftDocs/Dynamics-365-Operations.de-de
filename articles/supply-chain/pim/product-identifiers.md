@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f28193f9671bcae1345d5c1085ea3f2446e6e088
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529185"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011366"
 ---
 # <a name="product-identifiers"></a>Produktbezeichner
 
@@ -44,7 +43,7 @@ In vielen Fällen wird die Produktnummer ursprünglich nicht in Dynamics 365 Sup
 
 Wenn Sie Supply Chain Management implementieren, sollten Sie Ihrer Strategie für Produktnummern besondere Aufmerksamkeit widmen. Ein Zahlensystem gutes verbessert Logistikflüsse und hilft verhindern Fehler. Eine gute Produktkennung ist maximal 15 Zeichen lang. Idealerweise hat diese weniger als 10 Zeichen und schließt nicht mehr als klassifizierende fünf Zeichen ein. Sie können auch Suchnamen verwenden, um Schnellsuchen zu ermöglichen. Ein Suchbegriff ist ein zusätzlicher Name, der die Klassifizierungen eines Produkts darstellt.
 
-Wenn Sie Common Data Service verwenden, ist die Produktnummer in Supply Chain Management auch die Produktnummer in Common Data Service. Produktvarianten werden zu den Common Data Service als eindeutig identifizierbare Produkte synchronisiert.
+Wenn Sie Microsoft Dataverse verwenden, ist die Produktnummer in Supply Chain Management auch die Produktnummer in Microsoft Dataverse. Produktvarianten werden mit Dataverse als eindeutig identifizierbare Produkte synchronisiert.
 
 ## <a name="item-number-and-product-dimensions"></a>Artikel- und Produktdimensionen
 
@@ -167,7 +166,7 @@ Die folgende Tabelle bietet eine Übersicht über die Ergebnisse des Imports und
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Produktentitätskennung (Export aller Produktkennungen)
 
-Das Produktentitätsbezeichner-Modell wurde erstellt, damit für Version 1.0 des CDS alle Bezeichner bereitgestellt werden können, die verwendet werden, um auf ein Produkt zu verweisen. Um diese Aufgabe zu vereinfachen, werden alle Bezeichner in einer globalen Bezeichnertabelle zusammengefasst, damit sie als ein Modell exportiert werden können. Beachten Sie, dass diese Version der CDS nicht das Produktkennungsmodell verwendet. Deshalb haben die Entität **Common Data Service-Bezeichnerentität der Produktentität** und dieser Prozess begrenzten praktischen Nutzen, und es ist wahrscheinlich, dass daran in Zukunft Änderungen vorgenommen werden.
+Das Produktentitätsbezeichner-Modell wurde erstellt, damit für Version 1.0 von Dataverse alle Bezeichner bereitgestellt werden können, die verwendet werden, um auf ein Produkt zu verweisen. Um diese Aufgabe zu vereinfachen, werden alle Bezeichner in einer globalen Bezeichnertabelle zusammengefasst, damit sie als ein Modell exportiert werden können. Beachten Sie, dass diese Version von Dataverse nicht das Produktbezeichnermodell verwendet. Deshalb haben die Entität **Common Data Service-Bezeichnerentität der Produktentität** und dieser Prozess begrenzten praktischen Nutzen, und es ist wahrscheinlich, dass daran in Zukunft Änderungen vorgenommen werden.
 
 Die Produktbezeichnertabelle ist eine globale Tabelle, die aus allen Bezugstabellen in der juristischen Hauptperson durch einen periodischen Batchauftrag aufgefüllt wird. Sie müssen eine juristische Person und eine Produktkategoriehierarchie als die Definition des globalen Produktmasterumfangs auswählen. Die Generierung der globalen Produktkennungstabelle wird auf Produkten beschränkt, die der ausgewählten juristischen Person und Produkten freigegeben werden, die Mitglieder der Produkthierarchie sind, die für die Rolle **Allgemeine Datendienst** der Hierarchie von Produktkategorie aktiviert ist.
 
@@ -175,7 +174,7 @@ Bei diesem Prozess wird vorausgesetzt, dass Produktmasterdaten in erster Linie i
 
 Gehen Sie folgendermaßen vor, um die Umgebung zu konfigurieren:
 
-1. Wählen Sie die Kategoriehierarchie für den CDS aus. Wählen Sie auf der Seite **Kategoriehierarchierolle Zuordnung** wenn keine Hierarchie der Rolle zugeordnet ist, **Allgemeiner Datendienst** aus. Sie müssen eine neue Zuordnung erstellen. Wählen Sie die Rolle **Common Data Service** aus, und ordnen Sie dann die Kategoriehierarchie zu, die die Produktpalette darstellt, die mit dem CDS synchronisiert werden soll.
+1. Wählen Sie die Kategoriehierarchie für Dataverse aus. Wählen Sie auf der Seite **Kategoriehierarchierolle Zuordnung** wenn keine Hierarchie der Rolle zugeordnet ist, **Allgemeiner Datendienst** aus. Sie müssen eine neue Zuordnung erstellen. Wählen Sie die Rolle **Common Data Service** aus und ordnen Sie dann die Kategoriehierarchie zu, die die Produktpalette darstellt, die mit Dataverse synchronisiert werden soll.
 2. Wählen Sie die juristische Person für globale Produktmasterdaten aus. Auf der Seite **Parameter für Verwaltung von Produktinformationen** auf der Registerkarte **Produktattribute**, wählen Sie das Vorlagenunternehmen aus, in dem die Produkt- und hauptsächlich Artikelkennungen nicht verwaltet werden.
 3. Definieren Sie die Kennungscodetypen und - codes, die exportiert werden sollen. Gehen Sie zu **Produktinformationsverwaltung** &gt; **Einstellungen** &gt; **Produktkennungscodes**. Um die Bezeichnercodetypen zu generieren, wählen Sie **Codes generieren** aus. Ein Codetypeintrag wird für jeden Typ zu Identifikationszwecken generiert, die in der ausgewählten juristischen Person befindet.
 
@@ -190,6 +189,3 @@ Sie können jetzt die Datenentitäten **Common Data Service-Bezeichnerentität d
 ## <a name="related-topic"></a>Verwandtes Thema
 
 [Nach Produkten und Produktvarianten bei der Auftragserfassung suchen](search-products-product-variants.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

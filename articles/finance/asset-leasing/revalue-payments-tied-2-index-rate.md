@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 83684afbd5e11b890a59bc1469ddefffd1777c4e
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 2cbe54ad92aff2f8a85e47301635fe4b6819e9a7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4443766"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012060"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>An eine Indexrate gebundene Mietzahlungen neu bewerten
 
@@ -68,6 +67,3 @@ Die Zahlungsplanzeilen auf der Seite mit den Mietvertragsdetails werden automati
 Sie können den neu generierten Zahlungsplan anzeigen, der am Neubewertungsdatum beginnt, und den gesamten aktualisierten Zahlungsbetrag anzeigen. Ein neuer Tilgungsplan für Mietverbindlichkeiten und ein Abschreibungsplan für Vermögenswerte wurden ebenfalls erstellt, um den angepassten Zahlungsplan widerzuspiegeln.
 
 Der Journaleintrag hat den Regulierungsjournaleintrag automatisch auf das Konto für die Änderung der Mietzahlungen gebucht, die mit der Indexneubewertung zusammenhängen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

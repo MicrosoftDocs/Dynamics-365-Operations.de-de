@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2cfdbda55c2f83ee2b470cab8a5e4f9ce728b852
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9bd85d9cd2d7273ad6e05d794a96e4d6a8d7c526
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428504"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010771"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Anwendbare Preise und Rabatte nachschlagen
 
@@ -60,6 +59,3 @@ Stellen Sie sicher, dass das Feld "Debitorenkonto" Debitornummer US-001 enthält
     * Es gibt zwei Positionsrabattvereinbarungen für Produkt T0012 und gibt einen 5-Prozent-Rabatt für eine Auftragspositionsmenge von 1 bis 10 und ein 7-Prozent-Rabatt für Bestellmengen zu 10. geliefert. Beachten Sie, dass die Rabatte zu einer Gruppe Produkten, in diesem Beispiel, Gruppencode 01 angewendet werden, des Produkts T0012 angehört.  
 4. Schließen Sie die Seite.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

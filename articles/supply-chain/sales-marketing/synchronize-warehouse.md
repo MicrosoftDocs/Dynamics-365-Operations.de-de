@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 28445592d7a2a8964b1642ae52cff08be6feabbe
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0c0c1bafb5b36bb9ddc00061e0040a199c8c033d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529505"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010846"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Lagerorte von Supply Chain Management zu Field Service synchronisieren
 
@@ -45,20 +44,20 @@ Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um La
 **Aufgaben im Datenintegrationsprojekt**
 - Lagerort
 
-## <a name="entity-set"></a>Entitätssatz
+## <a name="table-set"></a>Tabellensatz
 | Field Service    | Lieferkettenverwaltung                 |
 |------------------|----------------------------------------|
 | msdyn_warehouses | Lagerorte                             |
 
-## <a name="entity-flow"></a>Entitätsfluss
-Rechnungen, die aus einer Vereinbarung in Field Service erstellt werden, können mit Supply Chain Management über ein Common Data Service (CDS)-Datenintegrationsprojekt synchronisiert werden. Die gewünschten Lagerorte, die mit Field Service synchronisieren, können mit der Abfrage und der erweiterten Filterung im Projekt gesteuert werden. Lagerorte, die von Supply Chain Management synchronisieren, werden im Field Service **mit dem Feld erstellt und extern auf** **Ja** festgelegt und der Datensatz wird als schreibgeschützt erstellt.
+## <a name="table-flow"></a>Tabellenfluss
+Lagerorte, die in Supply Chain Management erstellt und verwaltet werden, können über ein Microsoft Dataverse-Datenintegrationsprojekt nach Field Service synchronisiert werden. Die gewünschten Lagerorte, die mit Field Service synchronisieren, können mit der Abfrage und der erweiterten Filterung im Projekt gesteuert werden. Von Supply Chain Management synchronisierte Lagerorte werden in Field Service erstellt, wobei die Spalte **Wird extern verwaltet** auf **Ja** festgelegt wird und der Datensatz schreibgeschützt ist.
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM-Lösung
-Um die Integration zwischen Field Service und Supply Chain Management zu unterstützen, sind zusätzliche Funktionen aus der Field Service CRM-Lösung erforderlich. In der Lösung wurde das Feld **Is Maintained Externally** zur Entität **Warehouse (msdyn_warehouses)** hinzugefügt. Dieses Feld dient zur Identifizierung, ob das Lager aus Supply Chain Management gehandhabt wird oder ob es nur in Field Service existiert. Zu den Einstellungen für dieses Feld gehören:
+Um die Integration zwischen Field Service und Supply Chain Management zu unterstützen, sind zusätzliche Funktionen aus der Field Service CRM-Lösung erforderlich. In der Lösung wurde die Spalte **Wird extern verwaltet** zur Tabelle **Lagerort (msdyn_warehouses)** hinzugefügt. Mit dieser Spalte kann ermittelt werden, ob der Lagerort über Supply Chain Management gehandhabt wird oder ob er nur in Field Service existiert. Zu den Einstellungen für diese Spalte gehören:
 - **Ja** – Das Lager stammt aus Supply Chain Management und wird nicht in Sales bearbeitet.
 - **Nein** - Der Lagerort wurde direkt in Field Service eingegeben und wird hier verwaltet.
 
-Das Feld wird **Extern verwaltet** hilft, die Synchronisierung von Bestandebenen, Regulierunmgen, Überträgen und der Verwendung von Arbeitsaufträgen zu synchronisieren. Nur Lagerorte mit **Werden exern verwaltet** = **Ja** können verwendet werden, um direkt den gleichen Lagerort im anderen System zu synchronisieren. 
+Die Spalte **Wird extern verwaltet** hilft, die Synchronisierung von Bestandsebenen, Regulierungen, Überträgen und der Verwendung von Arbeitsaufträgen zu steuern. Nur Lagerorte mit **Werden exern verwaltet** = **Ja** können verwendet werden, um direkt den gleichen Lagerort im anderen System zu synchronisieren. 
 
 > [!NOTE]
 > Es ist möglich, mehrere Lagerorte in Field Service zu erstellen (mit **wird extern verwaltet** = Nein) und diese zu einem bestimmten Lagerort mit den erweiterten Abfragen und Filterfunktionen zuzuordnen. Dies wird in Fällen verwendet, in denen Sie Field Service verwenden, um die detaillierte Bestandebene zu steuern und Supply Chain Management zu aktualisieren. In diesem Fall erhält Field Service keine Bestandebenenaktualisierung von Supply Chain Management. Siehe zusätzliche Informationen unter Synchronisierung von Bestandanpassungen von Field Service zu [Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) und [Synchronisieren von Arbeitsaufträge in Field Service zu Arbeitsaufträgen, die mit Projekten in Finance and Operations verknüpft sind](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
@@ -81,6 +80,3 @@ Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Lagerorte (Supply Chain Management zu Field Service): Lagerort
 
 [![Vorlagenzuordnung in Datenintegration](./media/Warehouse1.png)](./media/Warehouse1.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

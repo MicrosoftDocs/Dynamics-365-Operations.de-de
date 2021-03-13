@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429088"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014482"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
 
@@ -50,7 +49,12 @@ Wenn der Einzelauftrag ausgeführt wird, hat er eine Festschreibungsgröße von 
 
 ## <a name="possible-user-impact"></a>Mögliche Auswirkungen auf den Benutzer
 
-Benutzer sind möglicherweise betroffen, wenn der Bereinigungsjob für vorhandene Einträge alle Datensätze für eine bestimmte Ebene (z. B. die Kennzeichenebene) löscht. In diesem Fall funktioniert die Funktionalität zum Anzeigen, dass das Inventar zuvor auf einer Kennzeichnung verfügbar war, möglicherweise nicht wie erwartet arbeitet, da die entsprechenden verfügbaren Einträge nicht mehr verfügbar sind. (Diese Funktion überprüft die Bedingung **Menge \<\> 0** in dem die **Dimensionsanzeige** Einstellungen, wenn Benutzer vorhandene Informationen anzeigen.) Die Leistungsverbesserung, die der Bereinigungsvorgang bietet, sollte diesen kleinen Funktionsverlust jedoch ausgleichen.
+Benutzer sind möglicherweise betroffen, wenn der Bereinigungsjob für vorhandene Einträge alle Datensätze für eine bestimmte Ebene (z. B. die Kennzeichenebene) löscht. In diesem Fall funktioniert die Funktionalität zum Anzeigen, dass bei einer Kennzeichnung zuvor Bestand verfügbar war, möglicherweise nicht wie erwartet, da die entsprechenden verfügbaren Einträge nicht mehr verfügbar sind. Dies kann beispielsweise in den folgenden Situationen auftreten:
+
+- Für die **Bestandsliste**, wenn der Benutzer die Bedingung **Menge \<\> 0** abwählt oder die Bedingung **Abgeschlossene Transaktionen** in den Einstellungen für **Dimensionsanzeige** auswählt.
+- In einem Bericht **Physischer Bestand pro Bestandsdimension** für vergangene Perioden, wenn der Benutzer den Parameter **Ab** festlegt.
+
+Die Leistungsverbesserung, die der Einzelvorgang zur Bereinigung bietet, sollte diese geringfügigen Funktionsverluste jedoch ausgleichen.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Stellen Sie die Einstellung maximale Ausführungszeit zur Verfügung
 
@@ -58,6 +62,3 @@ Standardmäßig ist die Einstellung **Maximale Ausführungszeit** nicht verfügb
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Maximale Ausführungszeit für den Bereinigungsvorgang für Lagereinträge*
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
