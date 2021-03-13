@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjectSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a51837275203dc2d4f31dc4dec9bf970a7ebeba7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 031e61549474745360ac00f9a66bef7a9dbaaf96
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428528"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021553"
 ---
 # <a name="work-order-project-setup"></a>Arbeitsauftrags-Projekteinstellungen
 
@@ -86,6 +85,3 @@ Das Setup ermöglicht eine vollständige Integration mit dem Modul **Projektmana
 > Jedes Mal, wenn eine Arbeitsauftragszeile erstellt wird, sucht das Asset Management nach einer Projektgruppe, die mit dem Arbeitsauftragsprojekt verknüpft sein soll. Die Suche basiert auf dem Setup, das in diesem Thema beschrieben wird. Jede Projektgruppe hat einen zugehörigen Projekttyp. Projektgruppen mit der Projektart **Zeit und Material** oder **Festpreis** sind nur für Anlagen gültig, die sich auf ein Kundenkonto beziehen.
 >
 > Wenn das System bei übergeordneten Projekten und Projektgruppen das verfügbare Arbeitsauftragsprojekt oder die Projektgruppe auswählt, basiert die Auswahl auf den Datensätzen, die Sie mit der vorherigen Vorgehensweise angelegt haben. Das Anlagenmanagement durchläuft Datensätze, die sich auf das Arbeitsauftragsprojekt beziehen, um nach einer möglichen Übereinstimmung zu suchen. Die spezifischste Kombination wird immer zuerst geprüft. Mit anderen Worten, für das übergeordnete Projekt des Arbeitsauftrags prüft das Anlagenmanagement zunächst, ob eine mögliche Übereinstimmung für das Feld **Anlage** vorliegt. Wenn keine Übereinstimmung gefunden wird, wird nach einer Übereinstimmung für das Feld **Anlagentyp** gesucht. Wenn keine Übereinstimmung gefunden wird, wird nach einer Übereinstimmung für das Feld **Technischer Standort** gesucht usw. Wie Sie im Layout der Seite **Arbeitsauftrag Projekteinrichtung** sehen können, bedeutet dieses Verhalten, dass das Anlagenmanagement jeden Datensatz von rechts nach links auf eine Übereinstimmung überprüft, um die spezifischste Kombination zu finden. Wenn keine Übereinstimmung gefunden wird, wird der Standarddatensatz verwendet, bei dem nur eine Projekt-ID ausgewählt wird. Der Prozess zum Auffinden der zugehörigen Projektgruppe ist ähnlich. Das Anlagenmanagement sucht zunächst nach einer möglichen Übereinstimmung für das Feld **Asset**, dann für das Feld **Asset type** und dann für das Feld **Arbeitsauftragstyp**. Wenn keine Übereinstimmung gefunden wird, wird der Standarddatensatz verwendet, bei dem nur eine Projektgruppe ausgewählt wird.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
