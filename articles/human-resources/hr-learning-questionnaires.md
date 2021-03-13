@@ -2,7 +2,7 @@
 title: Fragebögen
 description: Dieser Artikel enthält allgemeine Informationen zu Fragebögen und Links zu detaillierteren Informationen. Ein Fragebogen ist ein Satz von Fragen, mit dem Informationen für verschiedene Zwecke erfasst werden. Sie können Fragebögen entwerfen, erstellen, verteilen und ausfüllen. Anschließend können Sie die Ergebnisse analysieren.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,36 +11,36 @@ ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c96be3a46de6ed841331f36114132ca59c236ba2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 17183c3af289fd65f2cbd8e2d635d74d2b73ad29
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418736"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115437"
 ---
-# <a name="questionnaires"></a><span data-ttu-id="2aa9d-105">Fragebögen</span><span class="sxs-lookup"><span data-stu-id="2aa9d-105">Questionnaires</span></span>
+# <a name="questionnaires"></a><span data-ttu-id="8146e-105">Fragebögen</span><span class="sxs-lookup"><span data-stu-id="8146e-105">Questionnaires</span></span>
 
-<span data-ttu-id="2aa9d-106">Dieser Artikel enthält allgemeine Informationen zu Fragebögen und Links zu detaillierteren Informationen.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-106">This article provides general information about questionnaires, and links to more detailed information.</span></span> <span data-ttu-id="2aa9d-107">Ein Fragebogen ist ein Satz von Fragen, mit dem Informationen für verschiedene Zwecke erfasst werden.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-107">A questionnaire is a set of questions that is used to collect information for various purposes.</span></span> <span data-ttu-id="2aa9d-108">Sie können Fragebögen entwerfen, erstellen, verteilen und ausfüllen. Anschließend können Sie die Ergebnisse analysieren.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-108">You can design, create, distribute, and complete questionnaires, and then analyze the results.</span></span> 
+<span data-ttu-id="8146e-106">Dieser Artikel enthält allgemeine Informationen zu Fragebögen und Links zu detaillierteren Informationen.</span><span class="sxs-lookup"><span data-stu-id="8146e-106">This article provides general information about questionnaires, and links to more detailed information.</span></span> <span data-ttu-id="8146e-107">Ein Fragebogen ist ein Satz von Fragen, mit dem Informationen für verschiedene Zwecke erfasst werden.</span><span class="sxs-lookup"><span data-stu-id="8146e-107">A questionnaire is a set of questions that is used to collect information for various purposes.</span></span> <span data-ttu-id="8146e-108">Sie können Fragebögen entwerfen, erstellen, verteilen und ausfüllen. Anschließend können Sie die Ergebnisse analysieren.</span><span class="sxs-lookup"><span data-stu-id="8146e-108">You can design, create, distribute, and complete questionnaires, and then analyze the results.</span></span> 
 
-<span data-ttu-id="2aa9d-109">Sie können einen Fragebogen den spezifischen Anforderungen anpassen, indem Sie eine Kombination der verschiedenen Funktionen verwenden, die in Microsoft Dynamics 365 Finance verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-109">You can customize a questionnaire to fit your specific requirements by using various features that are available in Microsoft Dynamics 365 Finance.</span></span> <span data-ttu-id="2aa9d-110">Nachfolgend finden Sie einige Beispiele dazu, wie Sie Fragebögen verwenden können:</span><span class="sxs-lookup"><span data-stu-id="2aa9d-110">Here are some examples of how questionnaires can be used:</span></span>
+<span data-ttu-id="8146e-109">Sie können einen Fragebogen den spezifischen Anforderungen anpassen, indem Sie eine Kombination der verschiedenen Funktionen verwenden, die in Microsoft Dynamics 365 Finance verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="8146e-109">You can customize a questionnaire to fit your specific requirements by using various features that are available in Microsoft Dynamics 365 Finance.</span></span> <span data-ttu-id="8146e-110">Nachfolgend finden Sie einige Beispiele dazu, wie Sie Fragebögen verwenden können:</span><span class="sxs-lookup"><span data-stu-id="8146e-110">Here are some examples of how questionnaires can be used:</span></span>
 
--   <span data-ttu-id="2aa9d-111">Testen der beruflichen Fähigkeiten von Mitarbeitern und Bewerbern.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-111">Test the professional skills of employees and applicants.</span></span>
--   <span data-ttu-id="2aa9d-112">Auswerten, ob Kursteilnehmer das Kursmaterial erlernt haben.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-112">Evaluate whether course participants learned the course material.</span></span>
--   <span data-ttu-id="2aa9d-113">Auswerten eines Kurses (z. B. Einrichtungen, Inhalt und Kursleiter).</span><span class="sxs-lookup"><span data-stu-id="2aa9d-113">Evaluate a course (for example, the facilities, content, and instructor).</span></span>
--   <span data-ttu-id="2aa9d-114">Durchführen von Umfragen zur Zufriedenheit von Kunden und Mitarbeitern.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-114">Survey employee and customer satisfaction.</span></span>
--   <span data-ttu-id="2aa9d-115">Bewerten der Mitarbeiterarbeitsleistung</span><span class="sxs-lookup"><span data-stu-id="2aa9d-115">Evaluate employee job performance.</span></span>
+-   <span data-ttu-id="8146e-111">Testen der beruflichen Fähigkeiten von Mitarbeitern und Bewerbern.</span><span class="sxs-lookup"><span data-stu-id="8146e-111">Test the professional skills of employees and applicants.</span></span>
+-   <span data-ttu-id="8146e-112">Auswerten, ob Kursteilnehmer das Kursmaterial erlernt haben.</span><span class="sxs-lookup"><span data-stu-id="8146e-112">Evaluate whether course participants learned the course material.</span></span>
+-   <span data-ttu-id="8146e-113">Auswerten eines Kurses (z. B. Einrichtungen, Inhalt und Kursleiter).</span><span class="sxs-lookup"><span data-stu-id="8146e-113">Evaluate a course (for example, the facilities, content, and instructor).</span></span>
+-   <span data-ttu-id="8146e-114">Durchführen von Umfragen zur Zufriedenheit von Kunden und Mitarbeitern.</span><span class="sxs-lookup"><span data-stu-id="8146e-114">Survey employee and customer satisfaction.</span></span>
+-   <span data-ttu-id="8146e-115">Bewerten der Mitarbeiterarbeitsleistung</span><span class="sxs-lookup"><span data-stu-id="8146e-115">Evaluate employee job performance.</span></span>
 
-<span data-ttu-id="2aa9d-116">Die folgende Tabelle enthält Links zu Informationen über die Kernaufgaben von Fragebögen.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-116">The following table provides links to information about the core questionnaire tasks.</span></span> <span data-ttu-id="2aa9d-117">Klicken Sie für weitere Informationen auf die Links.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-117">Click the links for more information.</span></span>
+<span data-ttu-id="8146e-116">Die folgende Tabelle enthält Links zu Informationen über die Kernaufgaben von Fragebögen.</span><span class="sxs-lookup"><span data-stu-id="8146e-116">The following table provides links to information about the core questionnaire tasks.</span></span> <span data-ttu-id="8146e-117">Klicken Sie für weitere Informationen auf die Links.</span><span class="sxs-lookup"><span data-stu-id="8146e-117">Click the links for more information.</span></span>
 
-| <span data-ttu-id="2aa9d-118">Thema</span><span class="sxs-lookup"><span data-stu-id="2aa9d-118">Topic</span></span>| <span data-ttu-id="2aa9d-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2aa9d-119">Description</span></span>|
+| <span data-ttu-id="8146e-118">Thema</span><span class="sxs-lookup"><span data-stu-id="8146e-118">Topic</span></span>| <span data-ttu-id="8146e-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8146e-119">Description</span></span>|
 |------|------------|
-| [<span data-ttu-id="2aa9d-120">Entwerfen eines Fragebogens</span><span class="sxs-lookup"><span data-stu-id="2aa9d-120">Design a questionnaire</span></span>](hr-learning-design-questionnaires.md) | <span data-ttu-id="2aa9d-121">Dieser Artikel enthält die Verfahrensweise zum Entwerfen von Fragebogenparametern.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-121">This article provides information about how to design a questionnaire.</span></span> <span data-ttu-id="2aa9d-122">Der Designprozess umfasst die Einrichtung von Voraussetzungen, Fragen und Antworten und die Kombination dieser Element in einen Fragebogen.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-122">The design process involves setting up prerequisites, answers, and questions, and then combining them into a questionnaire.</span></span> |
-| [<span data-ttu-id="2aa9d-123">Verteilen und Planen von Fragebögen</span><span class="sxs-lookup"><span data-stu-id="2aa9d-123">Distribute and schedule questionnaires</span></span>](hr-learning-distribute-questionnaires.md) | <span data-ttu-id="2aa9d-124">Dieser Artikel bietet Informationen zur Verteilung eines Fragebogens an die Befragungsteilnehmern und zum Abschließen von Fragebögen.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-124">This article provides information about how to distribute a questionnaire to respondents and how to complete questionnaires.</span></span> |
-| [<span data-ttu-id="2aa9d-125">Betrachten und bewerten Sie die Ergebnisse des Fragebogens</span><span class="sxs-lookup"><span data-stu-id="2aa9d-125">View and evaluate the results of questionnaire</span></span>](hr-learning-evaluate-questionnaire-results.md) | <span data-ttu-id="2aa9d-126">Dieser Artikel enthält Informationen darüber, wie die Ergebnisse ausgefüllter Fragebögen angezeigt und ausgewertet werden.</span><span class="sxs-lookup"><span data-stu-id="2aa9d-126">This article provides information about how to view and evaluate the results from completed questionnaires.</span></span> |
+| [<span data-ttu-id="8146e-120">Entwerfen eines Fragebogens</span><span class="sxs-lookup"><span data-stu-id="8146e-120">Design a questionnaire</span></span>](hr-learning-design-questionnaires.md) | <span data-ttu-id="8146e-121">Dieser Artikel enthält die Verfahrensweise zum Entwerfen von Fragebogenparametern.</span><span class="sxs-lookup"><span data-stu-id="8146e-121">This article provides information about how to design a questionnaire.</span></span> <span data-ttu-id="8146e-122">Der Designprozess umfasst die Einrichtung von Voraussetzungen, Fragen und Antworten und die Kombination dieser Element in einen Fragebogen.</span><span class="sxs-lookup"><span data-stu-id="8146e-122">The design process involves setting up prerequisites, answers, and questions, and then combining them into a questionnaire.</span></span> |
+| [<span data-ttu-id="8146e-123">Verteilen und Planen von Fragebögen</span><span class="sxs-lookup"><span data-stu-id="8146e-123">Distribute and schedule questionnaires</span></span>](hr-learning-distribute-questionnaires.md) | <span data-ttu-id="8146e-124">Dieser Artikel bietet Informationen zur Verteilung eines Fragebogens an die Befragungsteilnehmern und zum Abschließen von Fragebögen.</span><span class="sxs-lookup"><span data-stu-id="8146e-124">This article provides information about how to distribute a questionnaire to respondents and how to complete questionnaires.</span></span> |
+| [<span data-ttu-id="8146e-125">Betrachten und bewerten Sie die Ergebnisse des Fragebogens</span><span class="sxs-lookup"><span data-stu-id="8146e-125">View and evaluate the results of questionnaire</span></span>](hr-learning-evaluate-questionnaire-results.md) | <span data-ttu-id="8146e-126">Dieser Artikel enthält Informationen darüber, wie die Ergebnisse ausgefüllter Fragebögen angezeigt und ausgewertet werden.</span><span class="sxs-lookup"><span data-stu-id="8146e-126">This article provides information about how to view and evaluate the results from completed questionnaires.</span></span> |
