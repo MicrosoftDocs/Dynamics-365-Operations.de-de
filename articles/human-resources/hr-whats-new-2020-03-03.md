@@ -1,8 +1,8 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources (3. März 2020)
 description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 03. März 2020 neu sind oder geändert wurden.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d6f6f4a32e4bf85908f51eb1eed858b704c814dc
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: e4007daa51d661a2a6b67c323cfaf05c22543371
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526841"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128040"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-3-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (3. März 2020)
 
@@ -31,9 +31,9 @@ ms.locfileid: "4526841"
 
 Dieser Artikel beschreibt Funktionen, die entweder neu oder geändert in Dynamics 365 Human Resources sind. Änderungen gelten für Build-Nummer 8.1.2955. Die Zahlen in Klammern in einigen Überschriften beziehen sich zur Referenz auf die LCS-Supportnummern.
 
-## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service Lösung ist jetzt mit den folgenden Änderungen verfügbar:
+## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse Lösung ist jetzt mit den folgenden Änderungen verfügbar:
 
-Eine neue Common Data Service Lösung wird in Kürze mit den folgenden Änderungen verfügbar sein:
+Eine neue Dataverse Lösung wird in Kürze mit den folgenden Änderungen verfügbar sein:
 
 | Beschreibung | Änderung |
 | ----------------------------------------- | --- |
@@ -44,9 +44,9 @@ Eine neue Common Data Service Lösung wird in Kürze mit den folgenden Änderung
 | Neue variable Vergütung-Einrichtungsentitäten | **Plantyp für variable Vergütung**</br>**Plan für variable Vergütung**</br>**Übertragungsregeln**</br>**Variable Planstufe zur Vergütung** |
 | Neue **Arbeitskraftkalender-Beschäftigung** Entität | **Arbeitkraftkalender-Entität** hinzugefügt |
 | Neue **Lohnpositionsdetail** Entität | **Lohnpositionsdetail** hinzugefügt |
-| Neue **Titel** Entität | **Titel** hinzugefügt. Die neue Einheit **Titel** wird in den Synchronisationsprozess zwischen Human Resources und Common Data Service einbezogen. Sie wird nicht zunächst von **Job-Position** oder **Job** Entitäten referenziert. |
+| Neue **Titel** Entität | **Titel** hinzugefügt. Die neue Einheit **Titel** wird in den Synchronisationsprozess zwischen Human Resources und Dataverse einbezogen. Sie wird nicht zunächst von **Job-Position** oder **Job** Entitäten referenziert. |
 
-In den nächsten Wochen werden diese Entitätsänderungen in allen Umgebungen verfügbar sein. So installieren Sie die neueste Common Data Service Lösung für Human Resources manuell:
+In den nächsten Wochen werden diese Entitätsänderungen in allen Umgebungen verfügbar sein. So installieren Sie die neueste Dataverse Lösung für Human Resources manuell:
 
 1.  Gehen Sie zum [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
@@ -96,5 +96,3 @@ Die folgenden Vorschaufunktionen wird am 3. Februar 2020 verfügbar:
 [Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

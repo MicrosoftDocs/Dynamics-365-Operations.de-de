@@ -1,8 +1,8 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources (28. Mai 2020)
 description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 28. Mai 2020 neu sind oder geändert wurden.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 00a5881ea88749c8553e4c810fb57070f217b01c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 662b34994231727b0d693cac148547b404475346
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418721"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127824"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-28-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (28. Mai 2020)
 
@@ -110,5 +110,3 @@ Eine DMF-Entität ist jetzt verfügbar für Ansammlungsaussetzungen.
 [Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

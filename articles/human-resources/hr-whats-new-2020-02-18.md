@@ -1,8 +1,8 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources (18. Februar 2020)
 description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 18. Februar 2020 neu sind oder geändert wurden.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 002b1b8b86c4fb40f46c239669cd5dfead251bfe
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: e087095807f587536f2dad7e65fbc8beaa88878e
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526977"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128064"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (18. Februar 2020)
 
@@ -43,17 +43,17 @@ Das neue Formular **Mitarbeiter** merkt sich jetzt Suchwerte, wenn Sie die Ansic
 
 Die Kacheln für die Verwaltung der festen und variablen Vergütung zeigen jetzt die richtigen Datensätze im neuen Formular **Arbeiter** an. Gilt nur für die rationalisierte Vorschaufunktion für Mitarbeiterformulare. Sie können diese Vorschaufunktion unter **Funktionsverwaltung** aktivieren. Weitere Informationen finden Sie unter [Funktionsverwaltung](hr-admin-manage-features.md).
 
-## <a name="empty-status-field-for-some-leave-request-records-in-common-data-service-414915"></a>Leeres Statusfeld für einige Abwesenheitsantragssätze in Common Data Service (414915)
+## <a name="empty-status-field-for-some-leave-request-records-in-dataverse-414915"></a>Leeres Statusfeld für einige Abwesenheitsantragssätze in Dataverse (414915)
 
-Diese Änderung korrigiert ein Problem in Common Data Service, wenn das Feld **Status** in einem Urlaubsantrag auf **Überprüfung** gesetzt ist. Die Common Data Service spiegelt nun den Status wider.
+Diese Änderung korrigiert ein Problem in Dataverse, wenn das Feld **Status** in einem Urlaubsantrag auf **Überprüfung** gesetzt ist. Die Dataverse spiegelt nun den Status wider.
 
 ## <a name="skill-gap-analysis-only-possible-for-assigned-job-411390"></a>Qualifikationslückenanalyse nur für zugeordnete Stelle möglich (411390)
 
 Sie können jetzt eine Analyse der Qualifikationslücke für jede in der Personalabteilung definierte Stelle durchführen.
 
-## <a name="system-currency-doesnt-sync-from-common-data-service-to-human-resources-in-new-environments-418011"></a>Die Systemwährung wird in neuen Umgebungen nicht von Common Data Service mit der Personalabteilung synchronisiert (418011)
+## <a name="system-currency-doesnt-sync-from-dataverse-to-human-resources-in-new-environments-418011"></a>Die Systemwährung wird in neuen Umgebungen nicht von Dataverse mit der Personalabteilung synchronisiert (418011)
 
-Die Systemwährung in Common Data Service kann nun mit der Personalabteilung synchronisiert werden.
+Die Systemwährung in Dataverse kann nun mit der Personalabteilung synchronisiert werden.
 
 ## <a name="in-preview"></a>Vorschau
 
@@ -63,9 +63,9 @@ Die Systemwährung in Common Data Service kann nun mit der Personalabteilung syn
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
-### <a name="updated-common-data-service-solution"></a>Aktualisierte Common Data Service-Lösung
+### <a name="updated-dataverse-solution"></a>Aktualisierte Dataverse-Lösung
 
-Eine neue Common Data Service Lösung wird in Kürze mit den folgenden Änderungen verfügbar sein:
+Eine neue Dataverse Lösung wird in Kürze mit den folgenden Änderungen verfügbar sein:
 
 | Beschreibung | Änderung |
 | ----------------------------------------- | --- |
@@ -76,7 +76,7 @@ Eine neue Common Data Service Lösung wird in Kürze mit den folgenden Änderung
 | Neue variable Vergütung-Einrichtungsentitäten | **Plantyp für variable Vergütung**</br>**Plan für variable Vergütung**</br>**Übertragungsregeln**</br>**Variable Planstufe zur Vergütung** |
 | Neue **Arbeitskraftkalender-Beschäftigung** Entität | **Arbeitkraftkalender-Entität** hinzugefügt |
 | Neue **Lohnpositionsdetail** Entität | **Lohnpositionsdetail** hinzugefügt |
-| Neue **Titel** Entität | **Titel** hinzugefügt. Die neue Einheit **Titel** wird in den Synchronisationsprozess zwischen Human Resources und Common Data Service einbezogen. Sie wird nicht zunächst von **Job-Position** oder **Job** Entitäten referenziert. |
+| Neue **Titel** Entität | **Titel** hinzugefügt. Die neue Einheit **Titel** wird in den Synchronisationsprozess zwischen Human Resources und Dataverse einbezogen. Sie wird nicht zunächst von **Job-Position** oder **Job** Entitäten referenziert. |
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -84,5 +84,3 @@ Eine neue Common Data Service Lösung wird in Kürze mit den folgenden Änderung
 [Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

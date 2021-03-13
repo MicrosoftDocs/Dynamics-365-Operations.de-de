@@ -1,8 +1,8 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources (25. Februar 2020)
 description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 25. Februar 2020 neu sind oder geändert wurden.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/25/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1302686aeba52de484ad520efe292fafefc39ebf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 4faecb83518f3ef8af825872abc2a6ffb94162fc
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526809"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128021"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-25-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (25. Februar 2020)
 
@@ -55,15 +55,15 @@ Bei dieser Änderung wird eine Warnung angezeigt, wenn Sie versuchen, eine Posit
 
 Diese Änderung behebt ein Problem, bei dem zusätzliche Abmeldeteilnehmer zur Leistungsüberprüfung hinzugefügt werden.
 
-## <a name="worker-position-assignment-not-created-in-common-data-service-when-selected-on-the-new-worker-dialog-413479"></a>Arbeitskraftposition-Zuordnung nicht erstellt in Common Data Service, wenn im Dialogfeld Neuer Mitarbeiter (413479) ausgewählt
+## <a name="worker-position-assignment-not-created-in-dataverse-when-selected-on-the-new-worker-dialog-413479"></a>Arbeitskraftposition-Zuordnung nicht erstellt in Dataverse, wenn im Dialogfeld Neuer Mitarbeiter (413479) ausgewählt
 
-Diese Änderung behebt ein Problem, wenn ein neuer Mitarbeiter eingestellt und die neue Einstellung einer Position über den Dialog **Neue Arbeitskraft** zugewiesen wird. Jetzt spiegelt sich die Positionszuweisung in Common Data Service wider.
+Diese Änderung behebt ein Problem, wenn ein neuer Mitarbeiter eingestellt und die neue Einstellung einer Position über den Dialog **Neue Arbeitskraft** zugewiesen wird. Jetzt spiegelt sich die Positionszuweisung in Dataverse wider.
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
-### <a name="updated-common-data-service-solution"></a>Aktualisierte Common Data Service-Lösung
+### <a name="updated-dataverse-solution"></a>Aktualisierte Dataverse-Lösung
 
-Eine neue Common Data Service Lösung wird in Kürze mit den folgenden Änderungen verfügbar sein:
+Eine neue Dataverse Lösung wird in Kürze mit den folgenden Änderungen verfügbar sein:
 
 | Beschreibung | Änderung |
 | ----------------------------------------- | --- |
@@ -74,9 +74,9 @@ Eine neue Common Data Service Lösung wird in Kürze mit den folgenden Änderung
 | Neue variable Vergütung-Einrichtungsentitäten | **Plantyp für variable Vergütung**</br>**Plan für variable Vergütung**</br>**Übertragungsregeln**</br>**Variable Planstufe zur Vergütung** |
 | Neue **Arbeitskraftkalender-Beschäftigung** Entität | **Arbeitkraftkalender-Entität** hinzugefügt |
 | Neue **Lohnpositionsdetail** Entität | **Lohnpositionsdetail** hinzugefügt |
-| Neue **Titel** Entität | **Titel** hinzugefügt. Die neue Einheit **Titel** wird in den Synchronisationsprozess zwischen Human Resources und Common Data Service einbezogen. Sie wird nicht zunächst von **Job-Position** oder **Job** Entitäten referenziert. |
+| Neue **Titel** Entität | **Titel** hinzugefügt. Die neue Einheit **Titel** wird in den Synchronisationsprozess zwischen Human Resources und Dataverse einbezogen. Sie wird nicht zunächst von **Job-Position** oder **Job** Entitäten referenziert. |
 
-In den nächsten Wochen werden diese Entitätsänderungen in allen Umgebungen verfügbar sein. So installieren Sie die neueste Common Data Service Lösung für Human Resources manuell:
+In den nächsten Wochen werden diese Entitätsänderungen in allen Umgebungen verfügbar sein. So installieren Sie die neueste Dataverse Lösung für Human Resources manuell:
 
 1.  Gehen Sie zum [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
@@ -106,5 +106,3 @@ Die folgenden Vorschaufunktionen wird am 3. Februar 2020 verfügbar:
 [Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

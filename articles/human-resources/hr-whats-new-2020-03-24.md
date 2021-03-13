@@ -1,8 +1,8 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources (24. März 2020)
 description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 24. März 2020 neu sind oder geändert wurden.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-03-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 87b7ea660d94c6d564a8f09d4133b098e0ecedf9
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: d3f9595bd19026e0dad0a2a2ad3708bd4f8ca1ba
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526912"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127944"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-24-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (24. März 2020)
 
@@ -59,7 +59,7 @@ Die folgenden Vorschaufunktionen wird am 3. Februar 2020 verfügbar:
 
 - **Vorschaufunktion für das Leistungsmanagement** – Weitere Informationen, einschließlich bekannter Probleme, finden Sie unter [Übersicht über das Leistungsmanagement](hr-benefits-management-overview.md).
 
-## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service Lösung ist jetzt mit den folgenden Änderungen verfügbar:
+## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse Lösung ist jetzt mit den folgenden Änderungen verfügbar:
 
 | Beschreibung | Rückgeld |
 | --- | --- |
@@ -71,12 +71,12 @@ Die folgenden Vorschaufunktionen wird am 3. Februar 2020 verfügbar:
 | Neue variable Vergütung-Einrichtungsentitäten | <ul><li>**Plantyp für variable Vergütung**</li><li>**Plan für variable Vergütung**</li><li>**Übertragungsregeln**</li><li>**Variable Planstufe zur Vergütung**</li></ul> |
 | Neue **Arbeitskraftkalender-Beschäftigung** Entität | <ul><li>**Arbeitkraftkalender-Entität** hinzugefügt</li></ul> |
 | Neue **Lohnpositionsdetail** Entität | <ul><li>**Lohnpositionsdetail** hinzugefügt</li></ul> |
-| Neue **Titel** Entität | <ul><li>**Titel** hinzugefügt</li></ul>Die neue Entität **Titel** ist enthalten in Common Data Service wird aber aktuell nicht aus den Entitäten **Berufliche Stellung** oder **Job** referenziert. |
+| Neue **Titel** Entität | <ul><li>**Titel** hinzugefügt</li></ul>Die neue Entität **Titel** ist enthalten in Dataverse wird aber aktuell nicht aus den Entitäten **Berufliche Stellung** oder **Job** referenziert. |
 
 > [!NOTE]
-> Finanzielle Dimensionen für Positionen und Beschäftigung bieten eine Integration in eine Richtung für Aktualisierungen von der Personalabteilung bis Common Data Service. Aktualisierungen der Finanzdimensionen werden derzeit nicht synchronisiert von Common Data Service zu Human Resources.
+> Finanzielle Dimensionen für Positionen und Beschäftigung bieten eine Integration in eine Richtung für Aktualisierungen von der Personalabteilung bis Dataverse. Aktualisierungen der Finanzdimensionen werden derzeit nicht synchronisiert von Dataverse zu Human Resources.
 
-In den nächsten Wochen werden diese Entitätsänderungen in allen Umgebungen verfügbar sein. So installieren Sie die neueste Common Data Service Lösung für Human Resources manuell:
+In den nächsten Wochen werden diese Entitätsänderungen in allen Umgebungen verfügbar sein. So installieren Sie die neueste Dataverse Lösung für Human Resources manuell:
 
 1.  Gehen Sie zum [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
@@ -122,5 +122,3 @@ Die Entität **Beschäftigungsdetail** wurde mit den folgenden Feldern aktualisi
 [Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

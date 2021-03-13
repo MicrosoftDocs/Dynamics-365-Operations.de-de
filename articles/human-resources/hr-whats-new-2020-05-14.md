@@ -1,8 +1,8 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources (14. Mai 2020)
 description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 14. Mai 2020 neu sind oder geändert wurden.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 76ca497cc7fabf737c8a0ee71363f22fd4201ea8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b8d65236d316035722451a871afabedc6ab73f7a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528496"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127848"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (14. Mai 2020)
 
@@ -35,9 +35,9 @@ In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Res
 
 Plattformänderungen sind in der Version dieser Woche enthalten. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.10 von Finance and Operations Apps (Mai 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Diese Version enthält Fehlerkorrekturen und Änderungen an gespeicherten Ansichten.
  
-## <a name="ensure-common-data-service-picklists-are-consistent-with-leave-enums-436343"></a>Sicherstellen, dass Common Data Service-Auswahllisten mit den Urlaubsaufzählungen (436343) übereinstimmen
+## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Sicherstellen, dass Dataverse-Auswahllisten mit den Urlaubsaufzählungen (436343) übereinstimmen
 
-Common Data Service-Auswahllisten sind nun mit den Urlaubsaufzählungen konsistent.
+Dataverse-Auswahllisten sind nun mit den Urlaubsaufzählungen konsistent.
 
 ## <a name="allow-users-to-configure-leave-request-workflow-based-on-the-request-amount-300044"></a>Benutzern das Konfigurieren des Urlaubsanforderungsworkflows basierend auf dem Anforderungsbetrag erlauben (300044)
 
@@ -75,7 +75,7 @@ Mit dieser Änderung wird eine Fehlermeldung korrigiert, wenn ein Urlaubsplan zw
 
 Mit dieser Änderung wird das Banner „Erste Schritte“ für Benutzer ausgeblendet, die keine Systemadministratoren oder Datenverwaltungsadministratoren sind. 
 
-## <a name="the-common-data-service-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Die Entität „Arbeitskraftadresse“ von Common Data Service funktioniert in Bezug auf Gültigkeitsdatumswerte für Datum/Uhrzeit in Human Resources unterschiedlich (425071)
+## <a name="the-dataverse-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Die Entität „Arbeitskraftadresse“ von Dataverse funktioniert in Bezug auf Gültigkeitsdatumswerte für Datum/Uhrzeit in Human Resources unterschiedlich (425071)
 
 Durch diese Änderung bleiben die Adressinformationen in bestimmten Szenarien basierend auf den Datumsangaben der Adresse ausgerichtet.
 
@@ -119,5 +119,3 @@ Sie können einen Vortragsabwesenheitstyp für Vortragssalden angeben, bei denen
 [Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

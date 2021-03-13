@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerConsolidate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13151
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 566b1ecef3f9e540c651fe214accadcf32f4fbed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ee029e6cf1f271c5839e8d0dc1b1e4b7f91fb9a2
+ms.sourcegitcommit: f51ef395f0c0cb2203ce26b4091bbf0296e7916e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443695"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5120478"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Konsolidierungs- und Löschungsüberblick
 
@@ -60,6 +59,7 @@ Die Option **Finanzberichterstellung** hat unbegrenzte Berichtswährungen. Die D
 Die Option **Finanzberichterstellung** ist die Lösung, da Detail auf Transaktionsebene für so viele Unternehmen angezeigt werden kann, wie in der Berichtsbaumstruktur-Definition enthalten sind.
 
 4.  Wir verwenden Budgetplanung oder Budgetsteuerung, und sie muss konsolidiert werden.
+
 Die Option **Finanzberichterstellung** ist die Lösung, um alle Budgetplanungs- oder Budgetsteuerungsdaten zu konsolidieren.
 
 5.  Wir haben Tochtergesellschaften weltweit, und wir haben mehrere Kontenpläne. Was ist die beste Methode für das Konsolidieren unserer Daten?
@@ -86,10 +86,10 @@ Die Option **Finanzberichterstellung** ist die Lösung. Organisationshierarchien
 
 Wenn Sie die Option **Unternehmenssalden exportieren** verwenden, um von einer Instanz zu exportieren, und anschließend die Option **Mit Import konsolidieren** auf der anderen Instanz verwenden, können Sie die Daten konsolidieren.
 
+11. Kann ich im **ENTWURF**-Status mit meinem Budget eine Konsolidierung durchführen? 
+            
+Es ist nicht möglich, Ihre Budgets im Konsolidierungsunternehmen zu verarbeiten oder abzuschließen. Wir empfehlen die Verwendung von Financial Reporting zur Konsolidierung von Budgetentwürfen.
 
 Weitere Informationen finden Sie unter [Neubewertung der Währung in einem Konsolidierungsunternehmen](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

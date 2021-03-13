@@ -2,7 +2,7 @@
 title: Urlaubsanträge in Teams verwalten
 description: In diesem Thema wird beschrieben, wie Sie arbeitsfreie Zeit in der Dynamics 365 Human Resources-App in Microsoft Teams beantragen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
-ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
+ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4418762"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128160"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Urlaubsanträge in Teams verwalten
 
@@ -196,7 +196,6 @@ In der Human Resources-App in Teams gibt es die folgenden Probleme mit den Einga
 | --- | --- |
 | Bei Zoomen auf 400 % auf dem Desktop werden einige der Aktionsschaltflächen ausgeblendet. | Sie sollten eine Bildschirmlupe verwenden, bis wir diese Zoomstufe unterstützen können. |
 | Auf der Registerkarte **Arbeitsfreie Zeit** gibt das Voiceover eine Schaltfläche „Aktion“ an, wenn die Kopfzeile für das Raster für arbeitsfreie Zeit vorliest. | Die Kopfzeile und die Elemente im Raster sind nach Jahr gruppiert und können ausgeblendet werden. Das Voiceover interpretiert dies als umsetzbares Element, obwohl dies nicht der Fall ist. |
-| Wenn Sie wischen, während ein Popup oder Menü geöffnet ist, liest das Voiceover das Popup oder den Menüinhalt nicht vor. | Erkunden Sie den Inhalt mithilfe des Fingerscannens. |
 | In der Registerkarte **Arbeitsfreie Zeit** gibt es eine zusätzliche Wischgeste, wenn Sie zum **Ursachencode** in einem neuen Antrag navigieren. | Es gibt kein verstecktes Steuerelement, zu dem die Wischnavigation gelangen möchte. |
 | Wenn Sie in der Registerkarte **Arbeitsfreie Zeit** wischen, während der Kalender geöffnet ist, befinden Sie sich außerhalb des Steuerelements, anstatt in einem neuen Antrag oder beim Bearbeiten eines Antrags ganz oben. | Wenn Sie **Zu heute gehen** erreichen, betrachten Sie dies als Ende des Steuerelements und wischen Sie in die entgegengesetzte Richtung, um wieder nach oben zu gelangen. |
 | Das Voiceover liest die Beschriftung für Daten nicht vor. | Die paarweise angetroffenen Daten sind immer ein **Startdatum** und ein **Enddatum**. |
@@ -229,6 +228,3 @@ Um den Zugriff auf die Human Resources-App in Microsoft Teams für Ihre Organisa
 [Microsoft Teams herunterladen und installieren](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Microsoft Teams-Hilfecenter](https://support.office.com/teams)</br>
 [Human Resources-App in Teams](hr-admin-teams-leave-app.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

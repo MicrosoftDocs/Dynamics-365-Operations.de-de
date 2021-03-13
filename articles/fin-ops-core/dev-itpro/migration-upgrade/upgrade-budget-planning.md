@@ -1,7 +1,7 @@
 ---
 title: Budgetplanung aktualisieren
-description: Zwischen Microsoft Dynamics AX 2012 und Dynamics 365 Finance gibt es erhebliche Unterschiede in der Budgetplanung. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.
-author: ryansandness
+description: In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.
+author: panolte
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 1c62771170212039112c777e55d45a0d88d2f49d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1b1ac233feb124fea261f65f16656fea1ac2ae37
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680997"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127178"
 ---
 # <a name="upgrade-budget-planning"></a>Budgetplanung aktualisieren
 
@@ -162,6 +162,3 @@ Einige Datenentitäten wurden hinzugefügt, um eine rasche Implementierung der B
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

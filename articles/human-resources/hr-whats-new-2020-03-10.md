@@ -1,8 +1,8 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources (10. März 2020)
 description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 10. März 2020 neu sind oder geändert wurden.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 944481727f3222a10f128ac3078c117f5ae7d193
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b1819ddb996d83b03151eb228ec740f603f98409
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526913"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127992"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-10-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (10. März 2020)
 
@@ -45,7 +45,7 @@ Das Wartungsformular für Arbeitsaufgaben listet alle Aufgaben für einen Mitarb
 
 Beispiel: Benjamin Martin ist ein Leistungsadministrator. Während des Onboarding von Mitarbeitern werden Aufgaben für Benjamin erstellt, um die Leistungsauswahl des neuen Mitarbeiters zu überprüfen. Benjamin hat vergangene Aufgaben, die er erledigt hat, und zukünftige Aufgaben, die er erledigen muss. Benjamin beschließt, das Unternehmen zu verlassen, daher müssen seine Aufgaben entweder neu zugewiesen oder entfernt werden. Das Formular zur Aufgabenpflege (im Aktionsbereich des Formulars **Arbeitskraft**) ermöglicht es, alle Aufgaben von Benjamin einer anderen Arbeitskraft zuzuweisen oder zu entfernen.  
 
-## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service Lösung ist jetzt mit den folgenden Änderungen verfügbar:
+## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse Lösung ist jetzt mit den folgenden Änderungen verfügbar:
 
 | Beschreibung | Rückgeld |
 | --- | --- |
@@ -57,18 +57,18 @@ Beispiel: Benjamin Martin ist ein Leistungsadministrator. Während des Onboardin
 | Neue variable Vergütung-Einrichtungsentitäten | <ul><li>**Plantyp für variable Vergütung**</li><li>**Plan für variable Vergütung**</li><li>**Übertragungsregeln**</li><li>**Variable Planstufe zur Vergütung**</li></ul> |
 | Neue **Arbeitskraftkalender-Beschäftigung** Entität | <ul><li>**Arbeitkraftkalender-Entität** hinzugefügt</li></ul> |
 | Neue **Lohnpositionsdetail** Entität | <ul><li>**Lohnpositionsdetail** hinzugefügt</li></ul> |
-| Neue **Titel** Entität | <ul><li>**Titel** hinzugefügt</li></ul> Die neue Entität **Titel** ist enthalten in Common Data Service wird aber aktuell nicht aus den Entitäten **Berufliche Stellung** oder **Job** referenziert. |
+| Neue **Titel** Entität | <ul><li>**Titel** hinzugefügt</li></ul> Die neue Entität **Titel** ist enthalten in Dataverse wird aber aktuell nicht aus den Entitäten **Berufliche Stellung** oder **Job** referenziert. |
 
 > [!NOTE]
-> Finanzielle Dimensionen für Positionen und Beschäftigung bieten eine Integration in eine Richtung für Aktualisierungen von der Personalabteilung bis Common Data Service. Aktualisierungen der Finanzdimensionen werden derzeit nicht synchronisiert von Common Data Service zu Human Resources.
+> Finanzielle Dimensionen für Positionen und Beschäftigung bieten eine Integration in eine Richtung für Aktualisierungen von der Personalabteilung bis Dataverse. Aktualisierungen der Finanzdimensionen werden derzeit nicht synchronisiert von Dataverse zu Human Resources.
 
-In den nächsten Wochen werden diese Entitätsänderungen in allen Umgebungen verfügbar sein. So installieren Sie die neueste Common Data Service Lösung für Human Resources manuell:
+In den nächsten Wochen werden diese Entitätsänderungen in allen Umgebungen verfügbar sein. So installieren Sie die neueste Dataverse Lösung für Human Resources manuell:
 
 1.  Gehen Sie zum [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
 2.  Wählen Sie **Umgebungen** aus.
 
-3.  Suchen Sie die Umgebung, die Sie aktualisieren möchten. Die Umgebung sollte dem **Umgebungsname** im Abschnitt **Common Data Service Information** im Formular **Über** in Human Resources entsprechen.
+3.  Suchen Sie die Umgebung, die Sie aktualisieren möchten. Die Umgebung sollte dem **Umgebungsname** im Abschnitt **Dataverse Information** im Formular **Über** in Human Resources entsprechen.
 
 4.  Wählen Sie die Umgebung aus, um die Umgebungsdetails anzuzeigen.
 
@@ -106,5 +106,3 @@ Die folgenden Vorschaufunktionen sind am 3. Februar 2020 verfügbar:
 [Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
