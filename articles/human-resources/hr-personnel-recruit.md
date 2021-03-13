@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9a35abcb8a2f6aa8031c8d84a44c2a8ad93883ac
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: f615584785ba48a140e4e97991a4594047fea8ee
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669169"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112593"
 ---
 # <a name="recruit-job-candidates"></a>Kandidaten für Stellen anwerben
 
@@ -38,7 +38,7 @@ Dynamics 365 Human Resources hilft Ihnen bei der Verwaltung von Personalbeschaff
 Wenn Sie keine separate Personalbeschaffungsanwendung verwenden, können Sie Kandidaten in der Personalverwaltung auch manuell verwalten.
 
 >[!NOTE]
->Wenn Sie Administrator oder Entwickler sind und Human Resources mit der Personalbeschaffungsanwendung eines Drittanbieters integrieren möchten, lesen Sie [Common Data Service-Integration konfigurieren](hr-admin-integration-common-data-service.md) und [Virtuelle Common Data Service-Entitäten konfigurieren](hr-admin-integration-common-data-service-virtual-entities.md)
+>Wenn Sie Administrator oder Entwickler sind und Human Resources mit der Personalbeschaffungsanwendung eines Drittanbieters integrieren möchten, lesen Sie [Dataverse-Integration konfigurieren](hr-admin-integration-common-data-service.md) und [Virtuelle Dataverse-Tabellen konfigurieren](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > Sie finden Personalbeschaffungsintegrations-Apps auch auf [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
@@ -46,15 +46,13 @@ Wenn Sie keine separate Personalbeschaffungsanwendung verwenden, können Sie Kan
 
 ## <a name="enable-recruiting-requests"></a>Personalbeschaffungsanträge aktivieren
 
-Wenn Sie Personalbeschaffungsanträge in Human Resources einreichen möchten, müssen Sie die Funktionalität erst in **Human Resources-Parameter** aktivieren.
+Wenn Sie Personalbeschaffungsanträge in Human Resources einreichen möchten, müssen Sie die Funktionalität erst in **Gemeinsame Human Resources-Parameter** aktivieren.
 
 1. Wählen Sie im Arbeitsbereich **Personalverwaltung** die Registerkarte **Links** aus.
 
-2. Unter **Einrichtung** wählen Sie **Personalverwaltungsparameter einrichten**.
+2. Unter **Einrichtung** wählen Sie **Freigegebene Human Resources-Parameter** aus.
 
-3. Setzen Sie in der Registerkarte **Allgemein** unter **PERSONALBESCHAFFUNG** **Personalbeschaffungsanträge aktivieren** auf **Ja**.
-
-   ![Personalbeschaffungsanträge aktivieren](./media/hr-recruit-0-enable-requests.png)
+3. Setzen Sie in der Registerkarte **Personalbeschaffung** unter **PERSONALBESCHAFFUNG** **Personalbeschaffungsanträge aktivieren** auf **Ja**.
 
 ## <a name="add-a-recruiting-request-location"></a>Einen Standort für den Personalbeschaffungsantrag hinzufügen
 
@@ -224,8 +222,6 @@ Bei Bedarf können Sie einen Kandidaten nach der Einstellung wieder entlassen. E
 
 ## <a name="see-also"></a>Siehe auch
 
-[Konfigurieren von Common Data Service virtuellen Entitäten](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Virtuelle Dataverse-Tabellen konfigurieren](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Belegschaft organisieren](hr-personnel-departments-jobs-positions.md)<br>
 [Komponenten eines Einzelvorgangs einrichten](hr-personnel-jobs.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

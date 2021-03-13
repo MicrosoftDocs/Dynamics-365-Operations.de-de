@@ -1,8 +1,8 @@
 ---
-title: Übersicht
+title: Verwaltungsüberblick
 description: Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung und Problembehandlung von Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 38a8845ec4ae4c61ea969efdee60a12cfb644a3b
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527860"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112728"
 ---
-# <a name="overview"></a>Übersicht
+# <a name="administration-overview"></a>Verwaltungsüberblick
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -41,7 +41,7 @@ Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung un
 
 - Datenintegration einrichten
   - [Datenintegrationstechnologie auswählen](hr-admin-integration-choose-technology.md)
-  - [Common Data Service-Integration konfigurieren](hr-admin-integration-common-data-service.md)
+  - [Dataverse-Integration konfigurieren](hr-admin-integration-common-data-service.md)
   - [Integration mit Finance konfigurieren](hr-admin-integration-finance.md)
   - [Integration mit Dayforce konfigurieren](hr-admin-integration-dayforce.md)
   - [Eine wiederkehrende Datenexport-App erstellen](hr-admin-integration-recurring-data-export.md)
@@ -102,5 +102,3 @@ Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung un
 - [Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)
 - [Entwicklerhandbuch](hr-developer-overview.md)
 - [Benutzerhandbuch](hr-hrpro-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

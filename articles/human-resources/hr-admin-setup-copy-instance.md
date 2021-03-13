@@ -2,7 +2,7 @@
 title: Instanz kopieren
 description: Sie können mit Microsoft Dynamics Lifecycle Services (LCS) eine Microsoft Dynamics 365 Human Resources-Datenbank in eine Sandkastenumgebung kopieren.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: a62cee979fc8d986102c3b774cd937a24bdd7439
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527836"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112659"
 ---
 # <a name="copy-an-instance"></a>Instanz kopieren
 
@@ -41,7 +41,7 @@ Beachten Sie beim Kopieren einer Instanz die folgenden Hinweise:
 
 - Wenn Sie die Human Resources-Datenbank kopieren, kopieren Sie nicht die Elemente (Apps oder Daten), die in einer Microsoft Power Apps-Umgebung enthalten sind. Informationen zum Kopieren von Elementen in einer Power Apps-Umgebung finden Sie in [Umgebung kopieren](https://docs.microsoft.com/power-platform/admin/copy-environment). Die Power Apps-Umgebung, die Sie überschreiben möchten, muss eine Sandkastenumgebung sein. Sie müssen ein globaler Mandantenadministrator sein, um eine Power Apps-Produktionsumgebung zu einer Sandkastenumgebung umzuwandeln. Weitere Informationen zum Ändern einer Power Apps-Umgebung finden Sie in [Instanz wechseln](https://docs.microsoft.com/dynamics365/admin/switch-instance).
 
-- Wenn Sie eine Instanz in Ihre Sandbox-Umgebung kopieren und Ihre Sandbox-Umgebung in Common Data Service integrieren möchten, müssen Sie benutzerdefinierte Felder erneut auf Common Data Service-Entitäten anwenden. Sehen Sie [Anwenden benutzerdefinierter Felder auf Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
+- Wenn Sie eine Instanz in Ihre Sandbox-Umgebung kopieren und Ihre Sandbox-Umgebung in Dataverse integrieren möchten, müssen Sie benutzerdefinierte Felder erneut auf Dataverse-Tabellen anwenden. Sehen Sie [Anwenden benutzerdefinierter Felder auf Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Auswirkungen des Kopierens einer Human Resources-Datenbank
 
@@ -80,7 +80,7 @@ Um diese Aufgabe abzuschließen, kopieren Sie zuerst eine Instanz und melden sic
 
 6. Wählen Sie die zu kopierende Power Apps-Umgebung aus und wählen Sie dann **Kopieren**.
 
-7. Wenn der Kopiervorgang abgeschlossen ist, melden Sie sich bei der Zielinstanz an und aktivieren Sie die Common Data Service-Integration. Weitere Informationen und Anleitungen finden Sie unter [Common Data Service-Integration konfigurieren](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
+7. Wenn der Kopiervorgang abgeschlossen ist, melden Sie sich bei der Zielinstanz an und aktivieren Sie die Dataverse-Integration. Weitere Informationen und Anleitungen finden Sie unter [Dataverse-Integration konfigurieren](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
 ## <a name="data-elements-and-statuses"></a>Datenelemente und ‑status
 
@@ -122,11 +122,11 @@ Alle Benutzer in der Ziel-Sandkastenumgebung, einschließlich Administratoren, w
 
 Alle Nicht-Administrator-Benutzer in der Ziel-Sandkastenumgebung sind deaktiviert, um unerwünschte Anmeldungen in der Sandkastenumgebung zu verhindern. Administratoren können Benutzer bei Bedarf erneut aktivieren.
 
-## <a name="apply-custom-fields-to-common-data-service"></a>Benutzerdefinierte Felder auf Common Data Service anwenden
+## <a name="apply-custom-fields-to-dataverse"></a>Benutzerdefinierte Felder auf Dataverse anwenden
 
-Wenn Sie eine Instanz in Ihre Sandbox-Umgebung kopieren und Ihre Sandbox-Umgebung in Common Data Service integrieren möchten, müssen Sie benutzerdefinierte Felder erneut auf Common Data Service-Entitäten anwenden.
+Wenn Sie eine Instanz in Ihre Sandbox-Umgebung kopieren und Ihre Sandbox-Umgebung in Dataverse integrieren möchten, müssen Sie benutzerdefinierte Felder erneut auf Dataverse-Tabellen anwenden.
 
-Für jedes benutzerdefinierte Feld, das in Common Data Service-Entitäten angezeigt wird, führen Sie die folgenden Schritte aus:
+Für jedes benutzerdefinierte Feld, das in Dataverse-Tabellen angezeigt wird, führen Sie die folgenden Schritte aus:
 
 1. Gehen Sie zum benutzerdefinierten Feld und wählen Sie **Bearbeiten** aus.
 
@@ -140,7 +140,7 @@ Für jedes benutzerdefinierte Feld, das in Common Data Service-Entitäten angeze
 
 6. Wählen Sie erneut **Änderungen übernehmen** aus.
 
-Beim Aufheben der Auswahl, dem Anwenden von Änderungen, dem erneuten Auswählen und erneuten Anwenden von Änderungen wird das Schema zur Aktualisierung in Common Data Service aufgefordert, die benutzerdefinierten Felder einzuschließen.
+Beim Aufheben der Auswahl, dem Anwenden von Änderungen, dem erneuten Auswählen und erneuten Anwenden von Änderungen wird das Schema zur Aktualisierung in Dataverse aufgefordert, die benutzerdefinierten Felder einzuschließen.
 
 Weitere Informationen über benutzerdefinierte Felder finden Sie unter [Erstellen und Arbeiten mit benutzerdefinierten Feldern](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
 
@@ -150,6 +150,3 @@ Weitere Informationen über benutzerdefinierte Felder finden Sie unter [Erstelle
 [Eine Instanz entfernen](hr-admin-setup-remove-instance.md)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

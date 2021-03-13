@@ -1,9 +1,9 @@
 ---
-title: Common Data Service-Integration konfigurieren
-description: Sie können die Integration zwischen Common Data Service und Dynamics 365 Human Resources aktivieren und deaktivieren. Sie können auch die Synchronisierungsdetails anzeigen, Nachverfolgungsdaten löschen und eine Entität erneut synchronisieren, um Datenprobleme zwischen den beiden Umgebungen zu beheben.
+title: Dataverse-Integration konfigurieren
+description: Sie können die Integration zwischen Microsoft Dataverse und Dynamics 365 Human Resources aktivieren und deaktivieren. Sie können auch die Synchronisierungsdetails anzeigen, Nachverfolgungsdaten löschen und eine Tabelle erneut synchronisieren, um Datenprobleme zwischen den beiden Umgebungen zu beheben.
 author: andreabichsel
-manager: AnnBe
-ms.date: 07/27/2020
+manager: tfehr
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,35 +18,36 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d9ee4715526e18b33ae4b7e90b081ed5868bb19c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 38c42469e62bf5457d0281540325a6c56a5f930f
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527922"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112714"
 ---
-# <a name="configure-common-data-service-integration"></a>Common Data Service-Integration konfigurieren
+# <a name="configure-dataverse-integration"></a>Dataverse-Integration konfigurieren
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+Sie können die Integration zwischen Microsoft Dataverse und Dynamics 365 Human Resources aktivieren und deaktivieren. Sie können auch die Synchronisierungsdetails anzeigen, Nachverfolgungsdaten löschen und eine Tabelle erneut synchronisieren, um Datenprobleme zwischen den beiden Umgebungen zu beheben.
 
-Sie können die Integration zwischen Common Data Service und Dynamics 365 Human Resources aktivieren und deaktivieren. Sie können auch die Synchronisierungsdetails anzeigen, Nachverfolgungsdaten löschen und eine Entität erneut synchronisieren, um Datenprobleme zwischen den beiden Umgebungen zu beheben.
+> [!NOTE]
+> Weitere Informationen zu Dataverse (früher Common Data Service) und Terminologie-Updates finden Sie unter [Was ist Microsoft Dataverse ?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
 
-Wenn Sie die Integration deaktivieren, können Benutzer Änderungen in Human Resources oder Common Data Service vornehmen, diese Änderungen werden jedoch nicht zwischen den beiden Umgebungen synchronisiert.
+Wenn Sie die Integration deaktivieren, können Benutzer Änderungen in Human Resources oder Dataverse vornehmen, diese Änderungen werden jedoch nicht zwischen den beiden Umgebungen synchronisiert.
 
-Standardmäßig ist die Integration zwischen Human Resources und Common Data Service deaktiviert.
+Standardmäßig ist die Integration zwischen Human Resources und Dataverse deaktiviert.
 
 Möglicherweise möchten Sie die Integration in den folgenden Situationen deaktivieren:
 
 - Sie geben Daten über das Data Management Framework ein und müssen die Daten mehrmals importieren, um sie in einen korrekten Zustand zu versetzen.
 
-- Es gibt Probleme mit Daten in Human Resources oder Common Data Service. Wenn Sie die Integration deaktivieren, können Sie einen Datensatz in einer Umgebung löschen, ohne ihn in der anderen zu löschen. Wenn Sie die Integration wieder aktivieren, wird der Datensatz in der Umgebung, in der er nicht gelöscht wurde, wieder mit der Umgebung synchronisiert, in der er gelöscht worden ist. Die Synchronisierung beginnt erneut, wenn die **Common Data Service-Integration angeforderte Ausführungen von Batchaufträgen verpasst hat**.
+- Es gibt Probleme mit Daten in Human Resources oder Dataverse. Wenn Sie die Integration deaktivieren, können Sie einen Datensatz in einer Umgebung löschen, ohne ihn in der anderen zu löschen. Wenn Sie die Integration wieder aktivieren, wird der Datensatz in der Umgebung, in der er nicht gelöscht wurde, wieder mit der Umgebung synchronisiert, in der er gelöscht worden ist. Die Synchronisierung beginnt erneut, wenn die **Dataverse-Integration angeforderte Ausführungen von Batchaufträgen verpasst hat**.
 
 > [!WARNING]
 > Stellen Sie beim Deaktivieren der Datenintegration sicher, dass Sie nicht denselben Datensatz in beiden Umgebungen bearbeiten. Wenn Sie die Integration wieder aktivieren, wird der zuletzt bearbeitete Datensatz synchronisiert. Wenn Sie in beiden Umgebungen nicht dieselben Änderungen am Datensatz vorgenommen haben, kann dies zu Datenverlusten führen.
 
-## <a name="access-the-common-data-service-integration-page"></a>Zugreifen auf die Common Data Service-Integrationsseite
+## <a name="access-the-dataverse-integration-page"></a>Zugreifen auf die Dataverse-Integrationsseite
 
-1. In der Human Resources-Instanz, in der Sie Einstellungen für die Integration mit Common Data Service anzeigen oder konfigurieren möchten, wählen Sie die Kachel **Systemverwaltung** aus.
+1. In der Human Resources-Instanz, in der Sie Einstellungen für die Integration mit Dataverse anzeigen oder konfigurieren möchten, wählen Sie die Kachel **Systemverwaltung** aus.
 
     [![Systemverwaltung-Kachel](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
@@ -54,70 +55,74 @@ Möglicherweise möchten Sie die Integration in den folgenden Situationen deakti
 
     [![Registerkarte „Links“](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
-3. Wählen Sie unter **Integrationen** **Common Data Service-Konfiguration** aus.
+3. Wählen Sie unter **Integrationen** **Dataverse-Konfiguration** aus.
 
-    [![Common Data Service-Konfigurationslink](./media/hr-select-common-data-service-configuration.png)](./media/hr-select-common-data-service-configuration.png)
+    [![Dataverse-Konfigurationslink](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
-## <a name="turn-data-integration-between-human-resources-and-common-data-service-on-or-off"></a>Aktivieren oder Deaktivieren der Integration zwischen Human Resources und Common Data Service
+## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Aktivieren oder Deaktivieren der Integration zwischen Human Resources und Dataverse
 
-- Um die Integration zu aktivieren, setzen Sie die Option für **Aktivieren der Integration in Common Data Service** auf **Ja**.
+- Um die Integration zu aktivieren, setzen Sie die Option **Dataverse aktivieren** auf der Seite **Microsoft Dataverse-Integration** auf **Ja**.
 
     > [!NOTE]
-    > Wenn Sie die Integration aktivieren, werden die Daten das nächsten Mal synchronisiert, wenn die **Common Data Service-Integration angeforderte Ausführungen von Batchaufträgen verpasst hat**. Alle Daten sollten nach Abschluss des Batchauftrags verfügbar sein.
+    > Wenn Sie die Integration aktivieren, werden die Daten das nächsten Mal synchronisiert, wenn die **Dataverse-Integration angeforderte Ausführungen von Batchaufträgen verpasst hat**. Alle Daten sollten nach Abschluss des Batchauftrags verfügbar sein.
 
 - Um die Integration zu deaktivieren, setzen Sie die Option auf **Nein**.
 
-[![Aktivieren/Deaktivieren der Common Data Service-Integration](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+[![Aktivieren/Deaktivieren der Dataverse-Integration](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
-> Wir empfehlen dringend, die Common Data Service Integration während Datenmigrationsaufgaben auszuschalten. Das Hochladen großer Datenmengen kann die Leistung erheblich beeinträchtigen. Das Hochladen von 2.000 Mitarbeitern kann beispielsweise mehrere Stunden dauern, wenn die Integration aktiviert ist, aber weniger als eine Stunde, wenn sie deaktiviert ist. Die in diesem Beispiel angegebenen Zahlen dienen nur zu Demonstrationszwecken. Die genaue Zeit, die zum Importieren von Datensätzen benötigt wird, kann aufgrund vieler Faktoren stark variieren.
+> Wir empfehlen dringend, die Dataverse Integration während Datenmigrationsaufgaben auszuschalten. Das Hochladen großer Datenmengen kann die Leistung erheblich beeinträchtigen. Das Hochladen von 2.000 Mitarbeitern kann beispielsweise mehrere Stunden dauern, wenn die Integration aktiviert ist, aber weniger als eine Stunde, wenn sie deaktiviert ist. Die in diesem Beispiel angegebenen Zahlen dienen nur zu Demonstrationszwecken. Die genaue Zeit, die zum Importieren von Datensätzen benötigt wird, kann aufgrund vieler Faktoren stark variieren.
 
 ## <a name="view-data-integration-details"></a>Datenintegrationsdetails anzeigen
 
-Auf dem Inforegister **Verwaltung** der Seite **Common Data Service-Integration** können Sie sehen, wie Datensätze zwischen Human Resources und Common Data Service verknüpft sind.
+Auf dem Inforegister **Verwaltung** der Seite **Microsoft Dataverse-Integration** können Sie sehen, wie Zeilen zwischen Human Resources und Dataverse verknüpft sind.
 
-- Um die Datensätze für eine Entität anzuzeigen, wählen Sie die Entität im Feld **CDS-Entitätsname** aus. Das Raster zeigt alle Datensätze an, die mit der ausgewählten Entität verknüpft sind.
-
-[![Anzeigen der Datensätze für eine Entität](./media/hr-common-data-service-configuration-view-entity.png)](./media/hr-common-data-service-configuration-view-entity.png)
+- Um die Zeilen für eine Tabelle anzuzeigen, wählen Sie die Tabelle im Feld **Dataverse-Tabelle**. Das Raster zeigt alle Zeilen an, die mit der ausgewählten Tabelle verknüpft sind.
 
 > [!NOTE]
-> Nicht alle Common Data Service-Unternehmen sind derzeit aufgelistet. Im Raster werden nur Entitäten angezeigt, die die Verwendung benutzerdefinierter Felder unterstützen. Durch fortlaufende Releases von Human Resources werden neue Entitäten verfügbar.
+> Nicht alle Dataverse-Tabellen sind derzeit aufgelistet. Im Raster werden nur Tabellen angezeigt, die die Verwendung benutzerdefinierter Felder unterstützen. Durch fortlaufende Releases von Human Resources werden neue Tabellen verfügbar.
 
 Das Raster enthält die folgenden Felder:
 
-- **CDS-Entitätsname** – Der Name der Entität in Common Data Service.
-- **CDS-Entitätsreferenz** – Die Kennung, die Common Data Service verwendet, um einen Datensatz zu identifizieren. Dieser Wert entspricht einem **RecId**-Wert von Human Resources. Die Kennung finden Sie beim Öffnen der Common Data Service-Einheit in Microsoft Excel.
-- **Name der Human Resources-Entität** – Die Entität, die zuletzt Daten mit dem Common Data Service synchronisiert hat. Die Entität kann entweder das Common Data Service-Präfix oder ein anderes Präfix haben.
+- **Dataverse-Tabelle** – Der Name der Tabelle in Dataverse.
+- **Dataverse-Tabellenreferenz** – Der Bezeichner, den Dataverse verwendet, um einen Datensatz zu identifizieren. Dieser Wert entspricht einem **RecId**-Wert von Human Resources. Den Bezeichner finden Sie beim Öffnen der Dataverse-Tabelle in Microsoft Excel.
+- **Name der Human Resources-Entität** – Die Human Resources-Entität, die zuletzt Daten mit dem Dataverse synchronisiert hat. Die Entität kann entweder das Dataverse-Präfix oder ein anderes Präfix haben.
 - **Human Resources-Referenz** – Der **RecId**-Wert, der mit dem Datensatz in Human Resources verknüpft wird.
-- **Wurde aus CDS gelöscht** – Ein Wert, der angibt, ob der Datensatz aus Common Data Service gelöscht wurde.
+- **Aus Dataverse gelöscht** – Ein Wert, der angibt, ob die Zeile aus Dataverse gelöscht wurde.
 
-## <a name="remove-the-association-of-a-record-in-human-resources-from-common-data-service"></a>Entfernen der Zuordnung eines Datensatzes in Human Resources aus Common Data Service
+> [!NOTE]
+> Datensätze in der Human Resources entsprechen den Zeilen in Dataverse.
 
-Wenn bei der Datensynchronisierung zwischen Human Resources und Common Data Service Probleme auftreten, können Sie diese möglicherweise beheben, indem Sie die Nachverfolgung löschen und die Nachverfolgungstabelle erneut synchronisieren. Wenn Sie die Zuordnung entfernen und dann einen Datensatz in Common Data Service ändern oder löschen, werden die Änderungen nicht mit Human Resources synchronisiert. Wenn Sie Änderungen in Human Resources vornehmen, wird ein neuer Nachverfolgungsdatensatz erstellt und der Datensatz in Common Data Service aktualisiert.
+## <a name="remove-the-association-of-a-human-resources-record-from-a-dataverse-row"></a>Entfernen der Zuordnung eines Human Resources-Datensatzes aus einer Dataverse-Zeile
 
-- Zum Entfernen der Zuordnung eines Datensatzes zwischen Human Resources und Common Data Service wählen Sie die Entität im Feld **CDS-Entitätsname** aus und klicken dann auf die Option für **Nachverfolgungsinformationen löschen**.
+Wenn bei der Datensynchronisierung zwischen Human Resources und Dataverse Probleme auftreten, können Sie diese möglicherweise beheben, indem Sie die Nachverfolgung löschen und die Nachverfolgungstabelle erneut synchronisieren. Wenn Sie die Zuordnung entfernen und dann eine Zeile in Dataverse ändern oder löschen, werden die Änderungen nicht mit Human Resources synchronisiert. Wenn Sie Änderungen in Human Resources vornehmen, wird ein neuer Nachverfolgungsdatensatz erstellt und die Zeile in Dataverse aktualisiert.
 
-[![Nachverfolgungsinformationen löschen](./media/hr-common-data-service-configuration-clear-tracking.png)](./media/hr-common-data-service-configuration-clear-tracking.png)
+- Zum Entfernen der Zuordnung eines Human Resources-Datensatzes und einer Dataverse-Zeile wählen Sie die Tabelle im **Dataverse-Tabelle**-Feld aus und klicken dann auf die Option **Nachverfolgungsinformationen löschen**.
 
-Informationen zum Ausführen einer vollständigen Synchronisierung für die Entität nach dem Löschen der Nachverfolgung finden Sie in der nächsten beschriebenen Prozedur.
+[![Nachverfolgungsinformationen löschen](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
-## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Synchronisieren einer Entität zwischen Human Resources und Common Data Service
+Informationen zum Ausführen einer vollständigen Synchronisierung für die Tabelle nach dem Löschen der Nachverfolgung finden Sie in der nächsten beschriebenen Prozedur.
+
+## <a name="sync-a-table-between-human-resources-and-dataverse"></a>Synchronisieren einer Tabelle zwischen Human Resources und Dataverse
 
 Verwenden Sie dieses Verfahren, wenn:
 
-- Änderungen von Common Data Service dauern zu lange, um in der Personalabteilung zu erscheinen.
+- Änderungen von Dataverse dauern zu lange, um in der Personalabteilung zu erscheinen.
 
 - Sie müssen die Tracking-Tabelle aktualisieren, nachdem Sie das Tracking gelöscht haben.
 
-So führen Sie eine vollständige Synchronisierung für eine Entität zwischen Human Resources und Common Data Service ::
+So führen Sie eine vollständige Synchronisierung für eine Tabelle zwischen Human Resources und Dataverse ::
 
-1. Wählen Sie die Entität im Feld **CDS Entitätsname** aus.
+1. Wählen Sie im **Dataverse-Tabelle**-Feld die Tabelle aus.
 
 2. Wählen **Jetzt synchronisieren**.
 
-[![Ausführen einer vollständigen Synchronisierung](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
+[![Ausführen einer vollständigen Synchronisierung](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
 
+## <a name="see-also"></a>Siehe auch
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Dataverse-Tabellen](hr-developer-entities.md)<br>
+[Virtuelle Dataverse-Tabellen konfigurieren](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[FAQ zu virtuellen Tabellen für Human Resources](hr-admin-virtual-entity-faq.md)<br>
+[Was ist Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminologie-Updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)

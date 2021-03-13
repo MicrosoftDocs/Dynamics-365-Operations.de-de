@@ -2,7 +2,7 @@
 title: Problembehandlung bei analytischen Berichten
 description: In diesem Artikel wird erläutert, was zu tun ist, wenn die Datenänderungen eines Kunden in keinem der Arbeitsbereiche des Kunden angezeigt werden.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 99d9eb3a16e6470820a2eb0a19c1d50e89bd3d36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c5e1a1d7044567a07acedf71e65ed244275acfd9
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418707"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112672"
 ---
 # <a name="troubleshoot-analytic-reports"></a>Problembehandlung bei analytischen Berichten
 
@@ -43,6 +43,3 @@ Dieses Problem ist möglicherweise nur eine Frage der Zeitmessung. Gehen Sie fol
 1. Wählen Sie **Bearbeiten** am oberen Seitenrand aus, und legen Sie das geplante Startdatum/Uhrzeit auf einen Wert fest, durch den die Analyse näher an der aktuellen Uhrzeit aktualisiert wird.
 
 ![Batchaufträge](media/batch-jobs.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

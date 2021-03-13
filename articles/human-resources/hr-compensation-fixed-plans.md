@@ -2,7 +2,7 @@
 title: Erstellen von Plänen für feste Vergütung
 description: Feste Vergütung bezieht sich auf das reguläre Bruttogehalt oder den Lohn eines Mitarbeiters. In diesem Artikel wird beschrieben die Komponenten, die müssen eingerichtet werden, bevor Sie einen festen Vergütungsplan erstellen und Mitarbeiter registrieren können.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 06f4a335adfc1e6f438589613efec02f92bfd756
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: aa370ad5b873d707aba865b7f90e22acfc4825ee
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418692"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112605"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Feste Vergütungspläne erstellen
 
@@ -98,6 +98,3 @@ Sie können nun einen Mitarbeiter zu einem Plan für feste Vergütung zuweisen. 
 
 Das System überprüft, ob der Vergütungsbetrag, der für einen Vergütungsplan dieser Klasse oder dieses Bereichs angegeben ist, innerhalb der Mindestwert- und Höchstwert-Referenzpunkte für die gegebene Vergütungsstufe bezüglich der Stelle des Mitarbeiters liegt. Wenn der Vergütungsbetrag außerhalb des zulässigen Bereichs liegt, wird eine Warn- oder eine Fehlermeldung angezeigt, abhängig von der Toleranzstufe, die für den Plan für feste Vergütung festgelegt wurde.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

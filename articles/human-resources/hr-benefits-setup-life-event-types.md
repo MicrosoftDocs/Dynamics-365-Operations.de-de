@@ -2,7 +2,7 @@
 title: Lebensereignistypen konfigurieren
 description: Microsoft Dynamics 365 Human Resources verwendet Lebensereignistypen, um Ereignisse zu definieren, bei denen eine Vorteilsregistrierung von Mitarbeitern aktualisiert werden muss.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418662"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112694"
 ---
 # <a name="configure-life-event-types"></a>Lebensereignistypen konfigurieren
 
@@ -88,6 +88,3 @@ Sie können beim Erstellen eines Lebensereignistyps aus den folgenden Lebenserei
 | **Ablauf der Berechtigungsregelüberschreibung (nicht US-spezifisch)** | Erweiterte Personalverwaltung > Vorteile > Pläne > Vorteile > Berechtigungsregelüberschreibung | Verarbeitung von Lebensereignisänderungen verwenden. Wenn Sie beispielsweise das Ablaufdatum für die Berechtigungsregelüberschreibung eines Plans auf heute um 17:00 Uhr setzen, wird nach 17:00 Uhr des heutigen oder an allen folgenden Tagen bei der Verarbeitung von Lebensereignisänderungen eine Meldung mit dem Hinweis angezeigt, dass die Berechtigungsregelüberschreibung nun abgelaufen ist. |
 | **Neuer Vorteilsplan (nicht US-spezifisch)** | Erweiterte Personalverwaltung > Vorteile > Pläne > Neu | <ul><li>Berechtigungsoptionen werden zu einem aktuellen Plan hinzugefügt</li><li>Ein neuer Plan mit Berechtigungsoptionen wurde hinzugefügt</li></ul></br></br>HR-Mitarbeiter sollten in diesem Fall die Verarbeitung der Lebensereignisberechtigung ausführen. |
 | **Änderung der Berechtigungsregel (nicht US-spezifisch)** | Erweiterte Personalverwaltung > Vorteile > Regeln/Optionen > Berechtigungsregeln | Verarbeitung von Lebensereignisberechtigungen verwenden. Wird protokolliert, wenn bei den **EhrBenefitEligibilityRule**-Datensätzen die folgenden Werte geändert werden: **UseEmplCategory**, **UseEmplStatus** oder **UseEmplType**. Aktualisiert nur Lebensereignistransaktionen, die bereits für eine geänderte Regel oder ein geändertes Berechtigungskriterium vorhanden sind. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

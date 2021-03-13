@@ -2,7 +2,7 @@
 title: Berechtigungsregeln und -optionen konfigurieren
 description: Legen Sie die Berechtigungsregeln und ‑optionen in der Vorteilsverwaltung von Microsoft Dynamics 365 Human Resources fest.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70054acafc3aec35fd985c0ca81e928519ddd0a3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2920a03eaec226b306d03ebf8b899113128c410e
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418628"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112655"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Berechtigungsregeln und -optionen konfigurieren
 
@@ -176,6 +176,3 @@ Bei Programmen handelt es sich um eine Reihe von Vorteilsplänen, für die gemei
    | **Berechtigungsregeln** | Wählen Sie die Berechtigungsregeln aus, die für das Vorteilsprogramm gelten sollen. Sie definieren die Berechtigungsregeln auf der Registerkarte **Berechtigungsregeln** auf dieser Seite. |
    
 4. Wählen Sie **Speichern**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

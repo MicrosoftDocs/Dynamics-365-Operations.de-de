@@ -2,7 +2,7 @@
 title: Lebensereignisse verarbeiten
 description: Während des Mitarbeiterlebenszyklus in Microsoft Dynamics 365 Human Resources kann es bei jedem Mitarbeiter zu verschiedenen Änderungen von Lebensereignissen kommen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ada986888a22afe83885985a694cd00ff94c9217
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 42b7e2606bca4bb5eda1c9bfc7940f9067c4b943
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418625"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112633"
 ---
 # <a name="process-life-events"></a>Lebensereignisse verarbeiten
 
@@ -57,6 +57,3 @@ Wenn beispielsweise heute der 1. Februar ist und die Arbeitskraft Joe Smith am 
    4. Wählen Sie **OK**. Der Prozess wird mit den von Ihnen festgelegten Parametern ausgeführt.
 
 4. Wählen Sie **OK**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

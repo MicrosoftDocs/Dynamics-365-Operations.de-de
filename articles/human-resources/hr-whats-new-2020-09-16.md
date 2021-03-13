@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a3bb6b809560688a7849b60c15a01fd89038e843
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 74a87ddb4ed14042dd4e716ad64bc844a800a0a0
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527433"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112729"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (16. September 2020)
 
@@ -110,9 +110,9 @@ Diese Version enthält zusätzliche Kalenderoptionen für Urlaubs- und Abwesenhe
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
-### <a name="checklist-entities-included-in-common-data-service"></a>In Common Data Service enthaltene Prüflistenentitäten
+### <a name="checklist-entities-included-in-dataverse"></a>In Dataverse enthaltene Prüflistenentitäten
 
-Prüflistenentitäten für Onboarding, Offboarding, Übergänge und Geschäftsprozesse werden in Kürze in Common Data Service verfügbar sein.
+Prüflistenentitäten für Onboarding, Offboarding, Übergänge und Geschäftsprozesse werden in Kürze in Dataverse verfügbar sein.
 
 ### <a name="benefits-management-reason-codes"></a>Ursachencodes für die Vergütungsverwaltung
 
@@ -124,6 +124,3 @@ Ursachencodes für das Vergütungsverwaltung werden in Kürze mit vorhandenen Ur
 [Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

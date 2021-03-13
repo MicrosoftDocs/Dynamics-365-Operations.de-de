@@ -2,7 +2,7 @@
 title: Rundungsregeln einrichten
 description: Sie können Rundungsregeln in Dynamics 365 Human Resources einrichten, die zu den Anforderungen Ihrer Organisation passen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a9b0c33d2e0c47b351463b4b3630a91c6bd9999
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a603c31e3a36072b6456bea212ad176009c8b48
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418706"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112648"
 ---
 # <a name="set-up-rounding-rules"></a>Rundungsregeln einrichten
 
@@ -36,6 +36,3 @@ Sie können Rundungsregeln in Dynamics 365 Human Resources einrichten, die zu de
 3. Geben Sie Werte für **Auf den nächsten runden**, **Szenario** und **Rundungsart** an.
 
 4. Wählen Sie **Speichern**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

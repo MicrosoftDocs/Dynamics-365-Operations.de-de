@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: b4196532be8ad40bacb8d614c6b0c86215b00bdb
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4418751"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112625"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Liveschaltung für Human Resources vorbereiten
 
@@ -53,28 +53,36 @@ In der folgenden Tabelle sind alle Schritte des Prozesses, die erwartete Dauer u
 
 ## <a name="completing-the-lcs-methodology"></a>Vervollständigung der LCS-Methodik
 
-Ein wichtiger Meilenstein in jedem Implementierungsprojekt ist die Umstellung auf die Produktionsumgebung. 
-
-Um sicherzustellen, dass die Produktionsumgebung für Live-Vorgänge verwendet wird, stellt Microsoft die Produktionsinstanz nur bereit, wenn sich die Implementierung der Phase **Betrieb** nähert, nachdem die erforderlichen Aktivitäten in der LCS-Methodik abgeschlossen sind. Weitere Informationen zu den Umgebungen in Ihrem Abonnement finden Sie unter [Dynamics 365-Lizenzierungshandbuch](https://go.microsoft.com/fwlink/?LinkId=866544). 
-
-Kunden müssen die Phasen **Analyse**, **Entwerfen und entwickeln**, und **Prüfung** in der LCS-Methodik abschließen, bevor die Schaltfläche **Konfigurieren** zum  Anfordern der Produktionsumgebung verfügbar wird. Um eine Phase in LCS abzuschließen, müssen Sie zuerst jeden erforderlichen Schritt in dieser Phase ausführen. Wenn alle Schritte in einer Phase abgeschlossen sind, können Sie die gesamte Phase abschließen. Sie können eine Phase später jederzeit wieder öffnen, wenn Sie Änderungen vornehmen müssen. Weitere Informationen finden Sie unter [Lifecycle Services (LCS) für Finance and Operations Apps Kunden](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
-
-Der Vorgang zum Ausführen eines Schritts besteht aus zwei Teilen: 
+Ein wichtiger Meilenstein in jedem Implementierungsprojekt ist die Umstellung auf die Produktionsumgebung. Der Vorgang zum Ausführen eines Schritts besteht aus zwei Teilen: 
 
 - Führen Sie die eigentliche Arbeit aus, z. B. eine Anpassungs-Lückenanalyse oder einen Benutzerakzeptanztest (UAT). 
 - Markieren Sie den entsprechenden Schritt in der LCS-Methodik als abgeschlossen. 
 
-Es ist eine gute Praxis, die Schritte in der Methodik abzuschließen, während Sie Fortschritte bei der Implementierung machen. Warten Sie nicht bis zur letzten Minute. Klicken Sie nicht einfach alle Schritte durch, um eine Produktionsumgebung zu erhalten. Es liegt im Interesse des Kunden, eine solide Implementierung zu haben. 
+Es ist eine gute Praxis, die Schritte in der Methodik abzuschließen, während Sie Fortschritte bei der Implementierung machen. Warten Sie nicht bis zur letzten Minute. Es liegt im Interesse des Kunden, eine solide Implementierung zu haben. 
 
 ## <a name="uat-for-your-solution"></a>UAT für Ihre Lösung
 
 Während der UAT-Phase müssen Sie alle von Ihnen implementierten Geschäftsprozesse und vorgenommenen Anpassungen in einer Sandbox-Umgebung im Implementierungsprojekt testen. Um eine erfolgreiche Inbetriebnahme sicherzustellen, sollten Sie beim Abschluss der UAT-Phase Folgendes berücksichtigen: 
 
+- Wir empfehlen, dass Ihr UAT-Prozess mit einer sauberen und frischen Umgebung beginnt, in der die Daten aus Ihrer GOLD-Konfiguration vor dem Start des UAT-Prozesses in die Umgebung kopiert werden. Wir empfehlen, dass Sie die Produktionsumgebung bis zur Inbetriebnahme als GOLD-Umgebung verwenden. Ab diesem Zeitpunkt wird die Umgebung zur Produktion.
 - Testfälle decken den gesamten Anforderungsumfang ab. 
 - Testen Sie mit migrierten Daten. Diese Daten sollten Stammdaten wie Arbeitnehmer, Jobs und Positionen enthalten. Schließen Sie auch Eröffnungssalden wie Urlaubs- und Abwesenheitsrückstellungen ein. Schließen Sie schließlich offene Transaktionen ein, z. B. aktuelle Leistungsregistrierungen. Schließen Sie die Tests mit allen Datentypen ab, auch wenn der Datensatz noch nicht abgeschlossen ist. 
 - Testen Sie mit den richtigen Sicherheitsrollen (Standardrollen und benutzerdefinierte Rollen), die Benutzern zugewiesen sind. 
 - Stellen Sie sicher, dass die Lösung allen unternehmens- und branchenspezifischen gesetzlichen Anforderungen entspricht. 
 - Dokumentieren Sie alle Funktionen und lassen Sie sich vom Kunden genehmigen und abmelden. 
+
+## <a name="mock-go-live"></a>Pseudo-Inbetriebnahme
+
+Vor Ihrer Inbetriebnahme müssen Sie eine Pseudo-Inbetriebnahme durchführen, um die Schritte zu testen, die für die Umstellung von Ihren Altsystemen auf das neue System erforderlich sind. Sie sollten Ihr Pseudo-Inbetriebnahme in einer Sandboxumgebung durchführen und alle Schritte in Ihren Umstellungsplan aufnehmen.
+
+- Wir empfehlen, dass Sie die Produktionsumgebung bis zur Inbetriebnahme als GOLD-Konfigurationsumgebung verwenden.
+- Stellen Sie sicher, dass Sie über einen starken Governance-Prozess verfügen, um die Produktionsumgebung vor der Inbetriebnahme vor versehentlichen Transaktionen oder Aktualisierungen zu schützen.
+- Wenn Sie bereit sind, UAT oder die Pseudo-Inbetriebnahme durchzuführen, aktualisieren Sie die Sandboxumgebung aus der Produktionsumgebung. Weitere Informationen finden Sie unter [Kopieren einer Instanz](hr-admin-setup-copy-instance.md).
+- Testen Sie jeden Schritt Ihres Umstellungsplans in der Sandboxumgebung und validieren Sie dann die Sandboxumgebung, indem Sie Stichproben oder Tests mit Ihren UAT-Skripten in der Umgebung durchführen.
+  - Die Tests sollten alle Datenmigrationen umfassen, einschließlich der für die Inbetriebnahme erforderlichen Transformationen.
+  - Der Prozess sollte eine Unterbrechung der Praxis aller Legacy-Systeme beinhalten.
+  - Stellen Sie sicher, dass alle Schritte der Integrationsumstellung oder externen Systemschritte in Ihrer Pseudo-Umstellung enthalten sind.
+- Wenn Sie während der Pseudo-Umstellung Probleme feststellen, ist möglicherweise eine zweite Pseudo-Umstellung erforderlich. Aus diesem Grund empfehlen wir, dass Sie in Ihrem Projektplan zwei Pseudo-Umstellungen einplanen.
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack Liveschaltungs-Bewertung
 
@@ -91,5 +99,3 @@ Nachdem Sie die Checkliste eingereicht haben, überprüft Ihr FastTrack Lösungs
 ## <a name="see-also"></a>Siehe auch
 
 [FAQ live schalten](hr-admin-go-live-faq.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

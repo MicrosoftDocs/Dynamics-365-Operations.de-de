@@ -2,7 +2,7 @@
 title: Integration mit Dayforce konfigurieren
 description: Die Integration zwischen Microsoft Dynamics 365 Human Resources und Ceridian Dayforce erfordert mehrere Konfigurationsschritte, die in diesem Artikel beschrieben sind. Sie müssen die Integration sowohl in Human Resources als auch in Dayforce konfigurieren, bevor Sie einen Zahlungslauf verarbeiten können.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c66ec772ea66732e042f50081f04a6569852f211
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 044a2d2f632b2c98ce94b6d61c2582a861640b68
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418599"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112660"
 ---
 # <a name="configure-integration-with-dayforce"></a>Integration mit Dayforce konfigurieren
 
@@ -676,6 +676,3 @@ Mitarbeiter können Ausweisinformationen melden. Diese Informationen haben den K
 
 Mitarbeiter können mehrere Kennungsnummern des Kennungstyps **Ausweis** melden. Jedoch wird nur der aktuell aktive Ausweiseintrag in Dayforce integriert. Wenn alle Ausweiseinträge abgelaufen sind, ist der Ausweis, der zuletzt ausgestellt wurde, in Dayforce integriert.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Abzüge konfigurieren
 description: Verwenden Sie Abzüge in Microsoft Dynamics 365 Human Resources, um zu bestimmen, wie viel ggf. für jeden Vorteil vom Lohnscheck eines Mitarbeiters abzuziehen ist.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c59fa09e83ca91e0ad866e5875ff06370b7491d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c84e44e784e18c82098d63909f198049ae5f995c
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418593"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112667"
 ---
 # <a name="configure-deductions"></a>Abzüge konfigurieren
 
@@ -52,6 +52,3 @@ Verwenden Sie Abzüge in Microsoft Dynamics 365 Human Resources, um zu bestimmen
 4. Um Änderungen an der Vorteilssatzeinstellung zu verfolgen und beizubehalten, wählen Sie **Aktionen** und dann **Versionen verwalten** aus.
 
 5. Wählen Sie **Speichern**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: App für wiederkehrenden Datenexport erstellen
 description: Dieser Artikel zeigt das Erstellen einer Microsoft Azure Logic App, die regelmäßig nach einem Zeitplan Daten aus Microsoft Dynamics 365 Human Resources exportiert.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 97972d2179c42e9d2d672cbebb75643ef0a02a62
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418716"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112644"
 ---
 # <a name="create-a-recurring-data-export-app"></a>App für wiederkehrenden Datenexport erstellen
 
@@ -205,6 +205,3 @@ Die folgende Abbildung zeigt, wie der Logic Apps Designer aussieht, wenn alle Sc
 In diesem Tutorial haben Sie gelernt, wie Sie mit einer Logic App Daten aus Human Resources exportieren und die exportierten Daten in einem OneDrive for Business-Ordner speichern. Sie können die Schritte dieses Tutorials nach Bedarf an Ihre geschäftlichen Anforderungen anpassen.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

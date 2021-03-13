@@ -2,7 +2,7 @@
 title: Sätze konfigurieren
 description: Sätze in Microsoft Dynamics 365 Human Resources definieren, wie viel Arbeitgeber und Mitarbeiter für einen Vorteil beitragen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e397e20b6b6307349020c8dfd238b4b59eeca527
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0f5c2ce14f6a0ff830ce2645496a35fb98d6a6ab
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418700"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112650"
 ---
 # <a name="configure-rates"></a>Sätze konfigurieren
 
@@ -93,6 +93,3 @@ Sie können auch doppelte Stufen verwenden. Wenn Sie **Zweifache Stufe** für de
    | **Rauchersatz für Flexguthaben** | Die Höhe des Flexguthabens, den der Vorteil kostet, basierend auf der Berechnung, die für die Stufenebene für Raucher definiert wurde. |
 
 5. Wählen Sie **Speichern**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

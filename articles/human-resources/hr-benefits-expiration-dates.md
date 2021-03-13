@@ -2,7 +2,7 @@
 title: Leistungsablaufdaten verwalten
 description: Im folgenden Verfahren wird dargestellt, wie Sie einen Vorteil ablaufen lassen oder verlängern können und wie Sie die Registrierungsdaten der Arbeitskräfte verwalten, die im Vorteil registriert sind.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationResults, HcmWorker, HcmWorkerEnrollment, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 7332a95e1cd558336dc19bcb269ef89ce3721aa9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6e4eb882f564e2b74ae15cd54fcda6e5370b07d4
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418600"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112657"
 ---
 # <a name="manage-benefit-expiration-dates"></a>Leistungsablaufdaten verwalten
 
@@ -46,6 +46,3 @@ Im folgenden Verfahren wird dargestellt, wie Sie einen Vorteil ablaufen lassen o
 15. Klicken Sie auf "Vorteile".
 16. Suchen Sie in der Liste den Vorteil, und wählen Sie ihn aus. Notieren Sie das neue Dispositionsenddatum.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
