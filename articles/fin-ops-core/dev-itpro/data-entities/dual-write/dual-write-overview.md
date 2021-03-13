@@ -1,6 +1,6 @@
 ---
-title: Überblick über die Dual-Write-Funktion
-description: Dieses Thema bietet einen Überblick über Dual-Write. Dual-Write ist eine Infrastruktur, die eine Interaktion zwischen Microsoft Dynamics 365 modellgesteuerten Anwendungen und Finance and Operations Anwendungen nahezu in Echtzeit ermöglicht.
+title: Duales Schreiben – Übersicht
+description: Dieses Thema bietet eine Übersicht über duales Schreiben, was eine Interaktion zwischen Kundenbindungs-Apps und Finance and Operations-Apps in Quasi-Echtzeit ermöglicht.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 02/06/2020
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 85530cf644c7b7ffe922a6fb3288f4e05c5df91c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3937850a9df716113591e49b25373beb48e3acdd
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685612"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130004"
 ---
-# <a name="dual-write-overview"></a>Dual-Write-Übersicht
+# <a name="dual-write-overview"></a>Duales Schreiben – Übersicht
 
 [!include [banner](../../includes/banner.md)]
 
@@ -53,7 +53,7 @@ Die Dual-Write-Infrastruktur ist erweiterbar und zuverlässig und umfasst die fo
 + Kombinierte Ansicht der Aktivitäts- und Fehlerprotokolle für Datenadministratoren
 + Möglichkeit, benutzerdefinierte Benachrichtigungen und Schwellenwerte zu konfigurieren und Benachrichtigungen zu abonnieren
 + Intuitive Benutzeroberfläche (UI) für Filterung und Transformationen
-+ Fähigkeit, Abhängigkeiten und Beziehungen zwischen den Entitäten festzulegen und anzuzeigen
++ Fähigkeit, Abhängigkeiten und Beziehungen zwischen den Tabellen festzulegen und anzuzeigen
 + Erweiterbarkeit sowohl für Standard- als auch für benutzerdefinierte Tabellen und Karten
 + Zuverlässige Verwaltung des Lebenszyklus von Anwendungen
 + Out-of-Box-Einrichtungserfahrung für neue Kunden
@@ -93,7 +93,7 @@ Dual-Write bietet Datenintegration über Microsoft Dynamics 365 Apps hinweg. Die
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Was bedeutet duales Schreiben für Entwickler und Architekten von Customer Engagement-Apps?
 
-Duales Schreiben automatisiert den Datenfluss zwischen Finance and Operations-Apps und Customer Engagement-Apps. Duales Schreiben besteht aus zwei AppSource-Lösungen, die auf Dataverse installiert sind. Die Lösungen erweitern das Entitätsschema, die Plugins und die Workflows in Dataverse, damit sie auf ERP-Größe skaliert werden können. Für eine erfolgreiche Implementierung müssen Entwickler und Architekten von Customer Engagement-Apps diese Änderungen verstehen und mit ihren Kollegen bei Finance and Operations-Apps zusammenarbeiten.
+Duales Schreiben automatisiert den Datenfluss zwischen Finance and Operations-Apps und Customer Engagement-Apps. Duales Schreiben besteht aus zwei AppSource-Lösungen, die auf Dataverse installiert sind. Die Lösungen erweitern das Tabellenschema, die Plugins und die Workflows in Dataverse, damit sie auf ERP-Größe skaliert werden können. Für eine erfolgreiche Implementierung müssen Entwickler und Architekten von Customer Engagement-Apps diese Änderungen verstehen und mit ihren Kollegen bei Finance and Operations-Apps zusammenarbeiten.
 
 Um mit Finance and Operations-Anwendungen Parität zu schaffen, nimmt duales Schreiben einige entscheidende Änderungen am Dataverse-Schema vor. Wenn Sie den Plan verstehen, können Sie in Zukunft einige Entwurfs- und Entwicklungsarbeiten vermeiden.
 
@@ -103,12 +103,9 @@ Um mit Finance and Operations-Anwendungen Parität zu schaffen, nimmt duales Sch
 
 + Um Datenverlust während der Währungsübertragung zwischen Finance and Operations-Apps und dem Dataverse zu verhindern, können Sie die Anzahl der Dezimalstellen im Währungsdatentyp der Customers Engagement-Apps erweitern. Die Funktion übersetzt automatisch vorhandene Zeilen auf der Metadatenebene in den neuen erweiterten Status. Während dieses Vorgangs wird der Währungswert in Dezimaldaten und nicht in Gelddaten umgerechnet, und der Währungswert unterstützt 10 Dezimalstellen. Diese Funktion ist aktiviert, und Unternehmen, die nicht mehr als 4 Dezimalstellen benötigen, müssen dies nicht aktivieren. Weitere Informationen finden Sie unter [Migration vom Währungsdatentyp für duales Schreiben](currrency-decimal-places.md).
 
-+ [Datumsgültigkeit](../../dev-tools/date-effectivity.md) wird Dataverse hinzugefügt. Sie wird vergangene, gegenwärtige und zukünftige Daten in der gleichen Entität unterstützen.
++ [Datumsgültigkeit](../../dev-tools/date-effectivity.md) wird Dataverse hinzugefügt. Sie wird vergangene, gegenwärtige und zukünftige Daten in der gleichen Tabelle unterstützen.
 
 + Produkt-[Einheitenumrechnungen](../../../../supply-chain/pim/tasks/manage-unit-measure.md) werden für Produkte, Angebote, Bestellungen und Rechnungen unterstützt.
 
 Weitere Informationen zu bevorstehenden Änderungen finden Sie unter [Neuerungen oder Änderungen beim dualen Schreiben](whats-new-dual-write.md).
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

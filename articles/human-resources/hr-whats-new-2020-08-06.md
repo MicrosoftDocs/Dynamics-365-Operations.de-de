@@ -1,9 +1,9 @@
 ---
 title: Neuerungen und Änderungen in Dynamics 365 Human Resources (06. August 2020)
 description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 06. August 2020 neu sind oder geändert wurden.
-author: darinkramer
-manager: AnnBe
-ms.date: 8/06/2020
+author: andreabichsel
+manager: tfehr
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 94ec9b44e21715363116427839badacd14a3d6f8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 5f4a4de6cbed0a3ecb3e85782fac65d399731cf2
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528424"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129826"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Neuerungen und Änderungen in Dynamics 365 Human Resources (06. August 2020)
 
@@ -142,9 +142,9 @@ Eine DMF-Entität ist jetzt verfügbar für Ansammlungsaussetzungen.
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
-## <a name="checklist-entities-included-in-common-data-service"></a>In Common Data Service enthaltene Prüflistenentitäten
+## <a name="checklist-entities-included-in-dataverse"></a>In Dataverse enthaltene Prüflistenentitäten
 
-Prüflistenentitäten für Onboarding, Offboarding, Übergänge und Geschäftsprozesse werden in Kürze in Common Data Service verfügbar sein.
+Prüflistenentitäten für Onboarding, Offboarding, Übergänge und Geschäftsprozesse werden in Kürze in Dataverse verfügbar sein.
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
@@ -175,6 +175,3 @@ Im Arbeitsbereich **Funktionsverwaltung** werden möglicherweise Funktionen ange
 [Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

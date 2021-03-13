@@ -2,7 +2,7 @@
 title: Adressänderungen anzeigen und verwalten
 description: In diesem Thema wird erläutert, wie Sie Adressänderungen in Dynamics 365 Human Resources anzeigen und verwalten können.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a69d723b45e834b022491c8eaf2a7fb580e54f1d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8746f449f2b30b2e2119446c1912842c420acbfc
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418620"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152052"
 ---
 # <a name="view-and-manage-address-changes"></a>Adressänderungen anzeigen und verwalten
 
@@ -125,9 +125,6 @@ HR-Mitarbeiter können Adressänderungen über den Arbeitsbereich **Personalverw
 Wenn Sie die Kachel **Adressänderungen** auswählen, werden auf einer neuen Seite die Details aller Adressänderungen angezeigt. Sie können optional **Zukünftige Adressänderungen einschließen** in der oberen rechten Ecke auswählen, um Adressänderungen mit einem Datum in der Zukunft anzuzeigen.
 
 > [!NOTE]
-> Wenn Sie eine Warnung oder E-Mail über diese Adressänderungen erhalten möchten, können Sie eine neue Warnregel auf der Registerkarte **Optionen** im Aktionsbereich erstellen. Weitere Informationen zum Erstellen von Warnregeln finden Sie unter [Warnregeln erstellen](/fin-ops-core/fin-ops/get-started/create-alert-rules.md).<br><br>
+> Wenn Sie eine Warnung oder E-Mail über diese Adressänderungen erhalten möchten, können Sie eine neue Warnregel auf der Registerkarte **Optionen** im Aktionsbereich erstellen. Weitere Informationen zum Erstellen von Warnregeln finden Sie unter [Warnregeln erstellen](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
 
-> Wenn Sie einen Workflow für die Adressänderungen konfigurieren möchten, können Sie die auswählen Option **Extern senden** für Ihre Warnregel auswählen und dann Power Automate verwenden, um das Geschäftsereignis auszulösen und einen Workflow zu konfigurieren. Weitere Informationen finden Sie unter [Warnungen als Geschäftsereignisse](/fin-ops-core/dev-itpro/business-events/alerts-business-events.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+> Wenn Sie einen Workflow für die Adressänderungen konfigurieren möchten, können Sie die auswählen Option **Extern senden** für Ihre Warnregel auswählen und dann Power Automate verwenden, um das Geschäftsereignis auszulösen und einen Workflow zu konfigurieren. Weitere Informationen finden Sie unter [Warnungen als Geschäftsereignisse](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).

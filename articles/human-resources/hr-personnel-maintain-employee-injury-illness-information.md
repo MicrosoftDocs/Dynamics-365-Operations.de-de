@@ -2,7 +2,7 @@
 title: Mitarbeiterverletzungs- und Krankheitsinformationen verwalten
 description: Es wird empfohlen, das "Einstellungsverletzungs- und -krankheits" Aufgabenhandbuch zuerst abzuschließen, da einige der Einrichtungsinformationen hier verwendet werden.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 367834e7e02d2061732f46d8e697044e7c49b884
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2ae5a14879a9e182f6f4604204f1cd6dd12576a3
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418641"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130108"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Mitarbeiterverletzungs- und Krankheitsinformationen verwalten
 
@@ -93,6 +93,3 @@ Diese Aufgabenerfassung enthält die grundlegenden Schritte zum Erstellen eines 
 36. Klicken Sie auf "Speichern".
     * Der Anfragestatus kann jederzeit aktualisiert werden.  Setzen Sie die Anfrage auf "In Bearbeitung", wenn der Prozess der Verletzung oder Krankheit gerade bearbeitet wird.  Wenn der Vorfall erst geschlossen ist, können Sie nur Kosten, Behandlungen oder Archivierungen, die mit dem Vorfall in Zusammenhang stehen, hinzufügen oder entfernen.  Wenn Sie andere Informationen ändern wollen, öffnen Sie die Anfrage erneut.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

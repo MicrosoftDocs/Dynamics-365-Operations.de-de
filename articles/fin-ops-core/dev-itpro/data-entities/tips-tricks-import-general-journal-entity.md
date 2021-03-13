@@ -1,5 +1,5 @@
 ---
-title: Best Practices zum Importieren von Belegen mithilfe der Entität der allgemeinen Erfassung
+title: Importieren von Belegen mithilfe der Entität der allgemeinen Erfassung
 description: Dieser Thema enthält Tipps zum Importieren von Daten in die allgemeine Erfassung über die Entität der allgemeinen Erfassung.
 author: rcarlson
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5b36e11bd9ef338334f7ac1b6412edb7754010f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8ccb479cf7bcf86c01ed274a7a39856d538f220f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687642"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129598"
 ---
-# <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Best Practices zum Importieren von Belegen mithilfe der Entität der allgemeinen Erfassung
+# <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Importieren von Belegen mithilfe der Entität der allgemeinen Erfassung
 
 [!include [banner](../includes/banner.md)]
 
@@ -65,6 +65,3 @@ In den folgenden Abschnitten werden die Auswirkungen dieser Einstellungen beschr
 - Wenn das Feld **Belegnummer** auf **Automatisch generieren** festgelegt ist, schlägt der Import fehl. Die Einstellung **Automatisch generieren** wird für die das Feld **Belegnummer** nicht unterstützt.
 
 Standardmäßig nutzt die Entität der allgemeinen Erfassung die satzbasierte Verarbeitung. Nach dem Auswerten der Geschäftserfordernissen für Ihre Organisation können Sie die **Satzbasierte Verarbeitung**-Einstellung festlegen, indem Sie auf **Datenentitäten** im **Verwaltung**-Arbeitsbereich klicken. Die satzbasierte Verarbeitung wird verwendet, um den Importvorgang zu beschleunigen. Wenn Sie die satzbasierte Verarbeitung nicht verwenden, ist der Import von der Entität der allgemeinen Erfassung langsamer.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

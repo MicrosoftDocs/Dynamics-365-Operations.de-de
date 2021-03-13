@@ -1,5 +1,5 @@
 ---
-title: Importieren von Daten aus Excel-Datenentitätsvorlagen, die mehrere Arbeitsblätter haben
+title: Datenvorlagen mit mehreren Arbeitsblättern
 description: In diesem Thema wird beschrieben, wie Daten mithilfe der Excel-Datenentitätsvorlagen in Finance and Operations importiert werden.
 author: Sunil-Garg
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 618b62364353f409f6971ddd9adc7d55297d09cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fb505f33e497cf16cd6cdeddee1f88d01797f3ef
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688078"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130580"
 ---
-# <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Importieren von Daten aus Excel-Datenentitätsvorlagen, die mehrere Arbeitsblätter haben
+# <a name="data-templates-with-multiple-worksheets"></a>Datenvorlagen mit mehreren Arbeitsblättern
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,6 +49,3 @@ In Fällen, in denen eine neue Version derselben Datei oder eine völlig neue Da
 ## <a name="upload-a-file-using-run-project"></a>Eine Datei mithilfe von „Projekt ausführen” hochladen
 
 Sie können eine Excel-Datei hochladen, während Sie die Option **Projekt ausführen** verwenden, um ein Importprojekt auszuführen. Sie müssen darauf achten, dass Sie nur Dateien hochladen, die dieselben Arbeitsblätter wie die vorhandenen Zuordnungen zu den Datenentitäten im Datenprojekt haben. Wenn ein Arbeitsblatt in der neu hochgeladenen Datei nicht gefunden wird, zeigt das System eine Fehlermeldung an und der Importvorgang wird beendet. Wenn die Zuordnung zum Arbeitsblatt für eine Entität geändert werden muss, dann müssen die Zuordnungen im Datenprojekt zuerst vom Datenprojekt selbst aus aktualisiert werden, bevor die Datei in der Benutzeroberfläche **Projekt ausführen** verwendet wird.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

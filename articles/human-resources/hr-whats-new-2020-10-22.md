@@ -1,6 +1,6 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources 22. Oktober 2020
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Human Resources entweder neu oder geändert sind.
+description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 22. Oktober 2020 neu sind oder geändert wurden.
 author: jcart1106
 manager: tfehr
 ms.date: 10/22/2020
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 513fc3b35f0b6a7f5d9703d2b5eb4109289a189a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 41b4e92720c6a9f830d940900c3c6e5b0a173de0
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529981"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130830"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 22. Oktober 2020
 
@@ -76,7 +75,7 @@ Die folgenden neuen Funktionen stehen in der Vorschau zur Verfügung. Weitere In
 | --- | --- | --- |
 | Human Resources-App in Microsoft Teams | [Mitarbeiterurlaub und Abwesenheitserfahrung in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-App in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Urlaubsanträge in Teams verwalten](hr-teams-leave-app.md) |
 | Erweiterte Workflow-Anforderungen und Genehmigungen | [Organisations- und Personalmanagement-Workflow wird verbessert](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurationsoption zum Positionieren der Liste der mir zugewiesenen Arbeitselemente](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| Virtuelle Entitäten in Common Data Service für die Personalabteilung | [Erweitern der Dynamics 365 Human Resources Kerndaten in Common Data Service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Konfigurieren von Common Data Service virtuellen Entitäten](hr-admin-integration-common-data-service-virtual-entities.md) |
+| Virtuelle Entitäten in Dataverse für die Personalabteilung | [Erweitern der Dynamics 365 Human Resources Kerndaten in Dataverse](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Konfigurieren von Dataverse virtuellen Entitäten](hr-admin-integration-common-data-service-virtual-entities.md) |
 | Integration mit LinkedIn Talent Hub | [Integration mit LinkedIn Talent Hub](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [In LinkedIn Talent Hub integrieren](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-linkedin) |
 | Benutzerdefinierte Links im Manager-Self-Service | [Benutzerdefinierte Links im Manager-Self-Service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service) | [Benutzerdefinierte Links im Manager-Self-Service](https://aka.ms/MSSCustomLinks) |
 
@@ -91,6 +90,3 @@ Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen 
 [Übersicht zu Dynamics 365 Human Resources 2020 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

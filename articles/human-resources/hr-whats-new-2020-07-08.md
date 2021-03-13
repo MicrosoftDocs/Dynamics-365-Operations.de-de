@@ -1,8 +1,8 @@
 ---
 title: Neuerungen und Änderungen in Dynamics 365 Human Resources (08. Juli 2020)
 description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 8. Juli 2020 neu sind oder geändert wurden.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba0bb54b44f66aa73056667a93a3f8e6f7f618ee
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 14dfd925009cb2a9d40044e27f28521ff4d331b7
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528472"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130396"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-8-2020"></a>Neuerungen und Änderungen in Dynamics 365 Human Resources (8. Juli 2020)
 
@@ -71,9 +71,9 @@ Erstellte und geänderte Systemfelder sind jetzt in der Tabelle **WorkCalendarEm
 
 Dieses Release korrigiert einen Fehler (Nullreferenz) in der optimierten Mitarbeitereingabe, wenn Sie einen Mitarbeiter mit der Option zum **Einstellen und Details hinzufügen** einstellen.
 
-## <a name="changes-made-in-the-common-data-service-worker-entity-dont-reflect-in-human-resources-455652"></a>Änderungen in der Common Data Service-Arbeitskraftentität spiegeln sich nicht in der Personalverwaltung wider (455652)
+## <a name="changes-made-in-the-dataverse-worker-entity-dont-reflect-in-human-resources-455652"></a>Änderungen in der Dataverse-Arbeitskraftentität spiegeln sich nicht in der Personalverwaltung wider (455652)
 
-Änderungen an den folgenden Feldern in der Entität **Arbeitskraft** in Common Data Service werden jetzt in der Personalverwaltung angezeigt:
+Änderungen an den folgenden Feldern in der Entität **Arbeitskraft** in Dataverse werden jetzt in der Personalverwaltung angezeigt:
 
 - **Arbeitet von zu Hause aus**
 - **Dienstalterdatum**
@@ -131,9 +131,9 @@ Eine DMF-Entität ist jetzt verfügbar für Ansammlungsaussetzungen.
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
-## <a name="checklist-entities-included-in-common-data-service"></a>In Common Data Service enthaltene Prüflistenentitäten
+## <a name="checklist-entities-included-in-dataverse"></a>In Dataverse enthaltene Prüflistenentitäten
 
-Prüflistenentitäten für Onboarding, Offboarding, Übergänge und Geschäftsprozesse werden in Kürze in Common Data Service verfügbar sein.
+Prüflistenentitäten für Onboarding, Offboarding, Übergänge und Geschäftsprozesse werden in Kürze in Dataverse verfügbar sein.
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -141,6 +141,3 @@ Prüflistenentitäten für Onboarding, Offboarding, Übergänge und Geschäftspr
 [Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

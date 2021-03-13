@@ -1,5 +1,5 @@
 ---
-title: Überprüfen, ob duales Schreiben in Finance and Operations-Apps und Dataverse konfiguriert ist
+title: Überprüfen der Konfiguration von dualem Schreiben in Finance and Operations-Apps und Dataverse
 description: In diesem Thema wird erläutert, wie Sie feststellen können, ob duales Schreiben in Finance and Operations Apps und in Dataverse konfiguriert ist.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f389bcf133cc7e6a086167d5e26c1b8795d0fa30
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 361d6555b60e02832c337b6f416b2b3627b6d365
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685538"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129306"
 ---
-# <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-dataverse"></a>Überprüfen, ob duales Schreiben in Finance and Operations-Apps und Dataverse konfiguriert ist
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Überprüfen der Konfiguration von dualem Schreiben in Finance and Operations-Apps und Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
@@ -51,13 +51,10 @@ Informationen zum Beheben von Problemen beim Erstellen von Daten in Finance and 
 
 ## <a name="verify-that-dual-write-is-configured-in-dataverse"></a>Überprüfen, ob duales Schreiben in Dataverse Apps konfiguriert ist
 
-Wenn Sie Daten erstellen, sehen Sie das Feld **Unternehmen** auf Seiten in Dataverse. Dual-Write ist konfiguriert.
+Wenn Sie Daten erstellen, sehen Sie die Spalte **Unternehmen** auf Seiten in Dataverse. Duales Schreiben ist konfiguriert.
 
 ![Überprüfen der Dataverse Verbindung](media/verify_cds.png)
 
 Informationen zum Beheben von Problemen beim Erstellen von Daten in Dataverse Apps, siehe [Beheben Sie Probleme mit der Live-Synchronisierung](dual-write-troubleshooting-live-sync.md).
 
 Informationen zum Anzeigen von Fehlerdetails, wenn beim Erstellen von Daten Fehler auftreten Dataverse, gehen Sie zu [Aktivieren und Anzeigen der Plug-In-Ablaufverfolgungsanmeldung Dataverse, um Fehlerdetails anzuzeigen](dual-write-troubleshooting.md#enable-view-trace).
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

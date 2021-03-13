@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 66b48723bbff7f176ef192924e8ea2b96641ba56
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: c21b7a55ff611a5d3ab745f3af5e2e855240531b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4443781"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128954"
 ---
 # <a name="assign-number-sequences"></a>Nummernkreise zuweisen
 
@@ -36,6 +35,4 @@ In diesem Thema wird erläutert, wie Sie Zahlenfolgen für Leasing-IDs erstellen
 3. Wählen Sie **Nummernkreise** im Seitenregister.
 4. Wählen Sie den Nummernkreis für die **Leasing-ID**-Referenz. Dieser Nummernkreis wird verwendet, um den eindeutigen Bezeichner für jeden Mietvertrag zu generieren.
 5. Wählen Sie den Nummernkreis für die **Prozess-ID**-Referenz. Dieser Nummernkreis wird verwendet, um den eindeutigen Bezeichner für jeden Prozess zur Indexneubewertung zu generieren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+6. Wählen Sie den Nummernkreis für die **Kündigungsvorschlagskennung**-Referenz. Dieser Nummernkreis wird verwendet, um den eindeutigen Bezeichner für jeden Kündigungsvorschlag zu generieren.

@@ -1,8 +1,8 @@
 ---
 title: Datums- und Zeitfelder verstehen
-description: Verstehen, was zu erwarten ist, wenn Sie Datums- und Zeitfelder in Microsoft Dynamics 365 Human Resources verwenden. Erhalten Sie Klarheit, was Sie erwartet, wenn Sie mit Datums- und Zeitdaten in einem Formular in Human Resources, als externe Quelle, oder in Common Data Service interagieren.
-author: Darinkramer
-manager: AnnBe
+description: Verstehen, was zu erwarten ist, wenn Sie Datums- und Zeitfelder in Microsoft Dynamics 365 Human Resources verwenden.
+author: andreabichsel
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -15,21 +15,21 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 027e46d53fd9704f5483e90409be53c1510e8cd4
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: d843eb8cefcd0f2f45c8956cd451f88ca6336efb
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529851"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130446"
 ---
 # <a name="understand-date-and-time-fields"></a>Datums- und Zeitfelder verstehen
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-**Datum und Uhrzeit** Felder sind ein grundlegendes Konzept in Dynamics 365 Human Resources. Es ist wichtig, zu verstehen, wie **Datum und Uhrzeit** Daten in einem Dynamics 365 Human Resources Formular, Common Data Service und externen Quellen arbeiten.
+**Datum und Uhrzeit** Felder sind ein grundlegendes Konzept in Dynamics 365 Human Resources. Es ist wichtig, zu verstehen, wie Sie mit **Datum und Uhrzeit**-Daten in Formularen, Dataverse und externen Quellen arbeiten.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>Differenz zwischen Datum sowie Datums- und Zeitfeld Datentypen verstehen
 
@@ -41,39 +41,39 @@ Wenn Daten in einem Feld **Datum und Uhrzeit** angezeigt werden, wird Human Reso
 
 ## <a name="understanding-date-and-time-fields-in-forms"></a>Datums- und Zeitfelder in Formularen verstehen 
 
-Wenn sie Daten in einem Feld **Datum und Uhrzeit** eingeben, sind die Daten, die auf dem Bildschirm angezeigt werden, nicht die gleichen wie die Daten, die in der Datenbank gespeichert werden, wenn die Zeitzone des Benutzers nicht in der koordinierten Weltzeit (UTC) festgelegt wird. Daten in **Datum und Uhrzeit** Felder werden immer als UTC gespeichert.
+**Datum und Uhrzeit**-Daten, die auf dem Bildschirm angezeigt werden, sind nicht die gleichen wie die Daten, die in der Datenbank gespeichert werden, wenn die Zeitzone des Benutzers nicht in der koordinierten Weltzeit (UTC) festgelegt wird. Daten in **Datum und Uhrzeit** Felder werden immer als UTC gespeichert.
 
-[![Formular Arbeitskraft](./media/worker-form.png)](./media/worker-form.png)
+[![Arbeitskraftformular UTC](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>Datums- und Zeitfelder in Formularen verstehen 
 
 Wenn Human Resources **Datum und Uhrzeit** Wert in die Datenbank schreibt, werden die Daten in UTC gespeichert. Dies ermöglicht es Benutzern, alle **Datum und Uhrzeit** Daten in der Zeitzone anzuzeigen, die in ihren Benutzeroptionen definiert wird.
  
-Im Beispiel oben ist die Startzeit ein Zeitpunkt, kein bestimmtes Datum. Durch das Ändern der Zeitzone des angemeldeten Benutzers für +12 GMT: 00 zu GMT UTC, wird dieselbe Anzeige erstellt die  04/30/2019 12:00: 00 statt 05/01/2019 12:00: 00 anzeigt.
+Im Beispiel oben ist die Startzeit ein Zeitpunkt, kein bestimmtes Datum. Durch das Ändern der Zeitzone des angemeldeten Benutzers für +12 GMT: 00 zu GMT UTC, zeigt derselbe Datensatz 04/30/2019 12:00: 00 statt 05/01/2019 12:00: 00.
   
 Im Beispiel weiter unten wird das Beschäftigungsverhältnis des Mitarbeiters 000724 aktiv, unabhängig von der Zeitzone. Der Mitarbeiter wird auf 04/30/2019 in der GMT-Zeitzone aktiv, die gleich ist wie 05/01/2019 in GMT+12:00 Zeitzone. Beide beziehen sich auf den gleichen Zeitpunkt und nicht auf ein bestimmtes Datum. 
 
-[![Formular Arbeitskraft](./media/worker-form2.png)](./media/worker-form2.png)
+[![Arbeitskraftformular GMT](./media/worker-form2.png)](./media/worker-form2.png)
 
-## <a name="date-and-time-data-in-data-management-framework-excel-common-data-service-and-power-bi"></a>Datums- und Uhrzeitdaten im Datenverwaltungsframework, Excel, Common Data Service und Power BI 
+## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>Datums- und Uhrzeitdaten im Datenverwaltungsframework, Excel, Dataverse und Power BI 
 
-Datenverwaltungs-Framework, Excel-Add-In, Common Data Service, und Power BI sind Berichte sind alle dazu entworfen, um mit Daten direkt in der Datenbankebene zu interagieren. Da es keinen Clients auftritt, **Datum und Uhrzeit** Daten auf der Zeitzone des Benutzers angepasst, sind alle **Datum und Uhrzeit**-Werte in UTC, das auf mehrere falsche Annahmen führen kann, wenn Daten ein oder anzeigt.  
+Datenverwaltungs-Framework, Excel-Add-In, Dataverse, und Power BI sind Berichte sind alle dazu entworfen, um mit Daten direkt in der Datenbankebene zu interagieren. Da es keinen Clients auftritt, **Datum und Uhrzeit** Daten auf der Zeitzone des Benutzers angepasst, sind alle **Datum und Uhrzeit**-Werte in UTC, das auf mehrere falsche Annahmen führen kann, wenn Daten ein oder anzeigt.  
  
-**Datum und Uhrzeit** Daten, die zu DMF, Excel oder Common Data Service übermittelt werden, werden wohl auch in UTC von der Datenbank verwendet. Dies kann einige Unklarheiten verursachen, wenn der **Datum und Uhrzeit** Wert nicht wie erwartete angezeigt wird, weil der Benutzer, der die Daten anzeigt, nicht die Zeitzone des Benutzers anzeigt, die in UTC festgelegt ist. 
+**Datum und Uhrzeit** Daten, die zu DMF, Excel oder Dataverse übermittelt werden, werden wohl auch in UTC von der Datenbank verwendet. Dies kann einige Unklarheiten verursachen, wenn der **Datum und Uhrzeit** Wert nicht wie erwartete angezeigt wird, weil der Benutzer, der die Daten anzeigt, nicht die Zeitzone des Benutzers anzeigt, die in UTC festgelegt ist. 
  
 Dasselbe kann umgekehrt auftreten, wenn Daten exportiert werden. Die **Datum und Uhrzeit** Daten in der exportierten DMF-Entität können sich davon unterscheiden, was im Dynamics-Client angezeigt wird. 
  
-Wenn externe Quellen wie DMF verwendet werden, um Daten anzuzeigen oder zu erstellen, ist es wichtig, daran zu denken, dass **Datum und Uhrzeit**-Werte standardmäßig in UTC berücksichtigt werden, unabhängig von der Zeitzone des Computers des Benutzers oder der aktuellen Benutzerzeitzoneneinstellung. 
+Wenn externe Quellen wie DMF verwendet werden, um Daten anzuzeigen oder zu erstellen, müssen Sie daran zu denken, dass **Datum und Uhrzeit**-Werte standardmäßig in UTC berücksichtigt werden, unabhängig von der Zeitzone des Computers des Benutzers oder der aktuellen Benutzerzeitzoneneinstellung. 
 
 ## <a name="examples-of-the-same-record-being-displayed-in-different-product-areas"></a>Beispiele desselben Datensatzes, der in verschiedenen Produktbereichen angezeigt wird 
 
 **Human Resources mit Benutzerzeitzone ist auf UTC festgelegt**
 
-[![Formular Arbeitskraft](./media/worker-form3.png)](./media/worker-form3.png)
+[![Auf UTC festgelegtes Arbeiterformular](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Human Resources mit Benutzerzeitzone ist auf GMT + 12.00 festgelegt** 
 
-[![Formular Arbeitskraft](./media/worker-form4.png)](./media/worker-form4.png)
+[![Auf GMT festgelegtes Arbeiterformular](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel über ODaten**
 
@@ -85,16 +85,13 @@ Wenn externe Quellen wie DMF verwendet werden, um Daten anzuzeigen oder zu erste
 
 **DMF Export**
 
-[![DMF Staging:-](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF-Export](./media/DMFexport.png)](./media/DMFexport.png)
 
-**Excel zu Common Data Service**
+**Excel zu Dataverse**
 
-[![Excel zu Common Data Service](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel zu Dataverse](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## <a name="see-also"></a>Siehe auch
 
 [Datum und Uhrzeit](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
 [Bevorzugte Zeitzone des Benutzers](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

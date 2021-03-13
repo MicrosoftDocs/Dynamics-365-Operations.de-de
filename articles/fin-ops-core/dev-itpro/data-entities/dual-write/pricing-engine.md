@@ -1,5 +1,5 @@
 ---
-title: Mit dem Dynamics 365 Supply Chain Management-Preisgestaltungsmodul on demand synchronisieren
+title: On-Demand-Synchronisierung mit dem Preisgestaltungsmodul von Supply Chain Management
 description: In diesem Thema wird die Verwendung des Preisgestaltungsmoduls in Microsoft Dynamics 365 Supply Chain Management über Dynamics 365 Sales beschrieben.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: 740ae20704abd9c59f64c2c7622fa96d65dccb1d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 45a9de18a3ff9c50eba8b316171b492605d683d4
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4453027"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130652"
 ---
-# <a name="sync-with-the-dynamics-365-supply-chain-management-pricing-engine-on-demand"></a>Mit dem Dynamics 365 Supply Chain Management-Preisgestaltungsmodul on demand synchronisieren
+# <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>On-Demand-Synchronisierung mit dem Preisgestaltungsmodul von Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
 
@@ -40,7 +40,7 @@ Microsoft Dynamics 365 Supply Chain Management enthält ein Preisgestaltungsmodu
 3. Fügen Sie eine neue Auftragsposition hinzu.
 4. Wenn Sie eine neue Bestellung erstellen, wählen Sie Aktionsbereich **Preis für Auftrag** aus. Wenn Sie einen bestehenden Auftrag aktualisieren, wählen Sie Aktionsbereich **Neu berechnen** aus.
 
-    Die folgenden Felder werden automatisch ausgefüllt:
+    Die folgenden Spalten werden automatisch ausgefüllt:
 
     + Detailbetrag
     + Rabatt %
@@ -58,17 +58,14 @@ Microsoft Dynamics 365 Supply Chain Management enthält ein Preisgestaltungsmodu
 
 ## <a name="how-it-works"></a>Funktionsweise
 
-Wenn Sie in Sales **Preis für Auftrag** auswählen, wird die Funktion **Summen** in der Registerkarte **Auftrag \> Anzeigen** in Supply Chain Management für den zugehörigen Kundenauftrag aufgerufen. Die Werte in der Auftragssumme in Sales werden verwendet, um die entsprechenden Felder im Supply Chain Management auszufüllen.
+Wenn Sie in Sales **Preis für Auftrag** auswählen, wird die Funktion **Summen** in der Registerkarte **Auftrag \> Anzeigen** in Supply Chain Management für den zugehörigen Kundenauftrag aufgerufen. Die Werte in der Auftragssumme in Sales werden verwendet, um die entsprechenden Spalten in Supply Chain Management auszufüllen.
 
 Wenn die Kundenauftragssumme im Supply Chain Management berechnet wird, wertet die Berechnung die vorhandenen Handelsvereinbarungen und Verkaufsvereinbarungen für den Kunden und die im Kundenauftrag aufgeführten Produkte aus. Diese Daten werden zum Berechnen der Summen verwendet. Wenn die Option **Preis für Auftrag** ausgewählt ist, spiegelt Sales automatisch alle Einstellungen wider, die im Supply Chain Management vorgenommen wurden.
 
 ## <a name="limitations"></a>Einschränkungen
 
-Wenn die Felder in Sales ausgefüllt sind, gelten folgende Einschränkungen:
+Wenn die Spalten in Sales ausgefüllt sind, gelten folgende Einschränkungen:
 
 + Das Einrichten von Gebühren und Gebührenzuordnungen im Supply Chain Management wird in Sales nicht repliziert.
-+ Bei der Preisgestaltung werden keine speziellen Einzelhandelspreise berücksichtigt, die im Feld **Retail Channel** auf der Seite „Auftragsposition“ in Supply Chain Management angegeben sind.
++ Bei der Preisgestaltung werden keine speziellen Einzelhandelspreise berücksichtigt, die in der Spalte **Retail Channel** auf der Seite „Auftragsposition“ in Supply Chain Management angegeben sind.
 + Rabatte, die im Abschnitt **Handelsvergütungsverwaltung** des Supply Chain Management definiert sind, werden nicht berücksichtigt.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

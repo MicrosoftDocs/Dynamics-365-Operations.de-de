@@ -1,6 +1,6 @@
 ---
 title: Formate zum Generieren von Dokumenten verändern, die Anwendungsdaten haben
-description: Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, "ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 3 - Ändern von Modell und Zuordnung)".
+description: Dieses Thema zeigt, wie Sie Berichtskonfigurationen entwerfen, um ein elektronisches Dokument zu generieren und Anwendungsdaten zu aktualisieren.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e820e909bcd80b4747c06ccaaeb05c03f52b6963
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684546"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129396"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Formate zum Generieren von Dokumenten verändern, die Anwendungsdaten haben
 
@@ -149,6 +149,3 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
 46. Schließen Sie die Seite.
 47. Schließen Sie die Seite.
 48. Schließen Sie die Seite.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

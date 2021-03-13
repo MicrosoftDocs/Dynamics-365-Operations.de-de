@@ -1,6 +1,6 @@
 ---
 title: Probleme bei der anfänglichen Einrichtung behandeln
-description: Dieses Thema enthält Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die bei der Ersteinrichtung der Dual-Write-Integration zwischen Finance and Operations Apps und Dataverse auftreten können.
+description: Dieses Thema enthält Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der initialen Einrichtung der Integration vom dualen Schreiben zusammenhängen.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ac6ec5003794fb5875fed6a2c4403c1444ab8b2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cfbc1ab3ef6d47f6ec2d8ca4ca4b8940784e6e49
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685585"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129980"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Probleme bei der anfänglichen Einrichtung behandeln
 
@@ -71,13 +71,13 @@ Führen Sie die folgenden Schritte aus, um die App-Zustimmung zu erteilen.
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Stellen Sie sicher, dass Unternehmensdaten und Teams Duales Schreiben während der Verknüpfung korrekt eingerichtet sind
 
-Um sicherzustellen, dass Duales Schreiben ordnungsgemäß funktioniert, werden die Unternehmen, die Sie während der Konfiguration auswählen, in der Liste Dataverse Umgebung erstellt. Standardmäßig sind diese Unternehmen schreibgeschützt und die **IsDualWriteEnable** Eigenschaft ist auf **Wahr** festgelegt. Darüber hinaus werden der Eigentümer und das Team der Geschäftseinheit mit Standardbesitz erstellt und enthalten den Firmennamen. Stellen Sie vor dem Aktivieren der Karten sicher, dass der Standardteambesitzer angegeben ist. Um **Unternehmen (CDM\_Unternehmen)** Entität zu finden, folgen Sie diesen Schritten.
+Um sicherzustellen, dass Duales Schreiben ordnungsgemäß funktioniert, werden die Unternehmen, die Sie während der Konfiguration auswählen, in der Liste Dataverse Umgebung erstellt. Standardmäßig sind diese Unternehmen schreibgeschützt und die **IsDualWriteEnable** Eigenschaft ist auf **Wahr** festgelegt. Darüber hinaus werden der Eigentümer und das Team der Geschäftseinheit mit Standardbesitz erstellt und enthalten den Firmennamen. Stellen Sie vor dem Aktivieren der Karten sicher, dass der Standardteambesitzer angegeben ist. Um die Tabelle **Unternehmen (CDM\_Unternehmen)** zu finden, folgen Sie diesen Schritten.
 
 1. Wählen Sie in der modellgesteuerten App in Dynamics 365 den Filter in der oberen rechten Ecke aus.
 2. Wählen Sie in der Dropdownliste **Unternehmen** aus.
 3. Wählen **Ausführen**, um die Ergebnisse zu sehen.
 4. Wählen Sie die Firma aus, die bei der Konfiguration von Dualem Schreiben verknüpft war.
-5. Stellen Sie sicher, dass das Feld **Standardbesitzerteam** einen Wert hat. In der folgenden Abbildung ist das Feld **Standardbesitzerteam** auf **USMF – Duales Schreiben** festgelegt.
+5. Stellen Sie sicher, dass die Spalte **Standardbesitzerteam** einen Wert hat. In der folgenden Abbildung ist die Spalte **Standardbesitzerteam** auf **USMF – Duales Schreiben** festgelegt.
 
     ![Überprüfen des Standardbesitzerteams](media/default_owning_team.png)
 
@@ -88,6 +88,3 @@ Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie versuchen, d
 *Dualer Schreibfehler – Plugin-Registrierung fehlgeschlagen: \[(Partitionszuordnung für Projekt DWM kann nicht abgerufen werden-1ae35e60-4bc2-4905-88ea-69efd3b29260–7f12cb89-1550-42e2-858e-4761fc1443ea . Fehler überschreitet die maximal zulässigen Partitionen für die Zuordnung von DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260–7f12cb89-1550-42e2-858e-4761fc1443ea)\]Ein oder mehrere Fehler sind aufgetreten.*
 
 Die aktuelle Limite beim Verknüpfen der Umgebungen beträgt ungefähr 40 juristische Tabellen. Dieser Fehler tritt auf, wenn Sie versuchen, Karten zu aktivieren, und mehr als 40 juristische Tabellen zwischen den Umgebungen verknüpft sind.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

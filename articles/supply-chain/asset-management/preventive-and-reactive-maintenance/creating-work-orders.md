@@ -1,9 +1,9 @@
 ---
 title: Erstellen von Arbeitsaufträgen
 description: In diesem Thema wird erläutert, wie Sie Arbeitsaufträge in der Anlagenverwaltung erstellen.
-author: josaw1
+author: johanhoffmann
 manager: tfehr
-ms.date: 08/27/2019
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,47 +11,87 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
-ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f94f8bc20753e38ce1cb6eccdfbc85c2e491ffad
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.17
+ms.openlocfilehash: 876aef9f3f470490bb385e1861c837dcfa82db69
+ms.sourcegitcommit: 1e615288db245f83c5d5e0cd45315400f8946beb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "5131792"
 ---
 # <a name="creating-work-orders"></a>Erstellen von Arbeitsaufträgen
 
 [!include [banner](../../includes/banner.md)]
 
- 
+Nachdem Sie vorbeugende Wartungsaufträge geplant haben, ist der nächste Schritt, Arbeitsaufträge für diese zu erstellen. Sie können diesen Schritt mithilfe eines der Wartungszeitpläne ausführen. Die geplanten Einzelvorgänge in einem Wartungszeitplan können verschiedene Referenztypen haben, wie in der folgenden Tabelle beschrieben.
 
-Wenn Sie vorbeugende Wartungsaufträge geplant haben, ist der nächste Schritt, Arbeitsaufträge für die Einzelvorgänge zu erstellen. Dies erfolgt in einem der Wartungszeitpläne. Die geplanten Einzelvorgänge in einem Wartungszeitplan können verschiedene Referenztypen haben:
+| Referenztyp | Beschreibung |
+|---|---|
+| Wartungspläne | Vorbeugende Wartungsaufträge auf Grundlage der Wartungsplantypen *Zeit* oder *Zähler*. |
+| Wartungsdurchgänge | Vorbeugende Wartungsaufträge, die mehrere Anlagen enthalten, die einen ähnlichen Wartungstyp erfordern. |
+| Wartungsanfrage | Eine manuell erstellte Anforderung zur Wartung oder Reparatur einer Anlage. Diese Anforderung kann in einen Arbeitsauftrag konvertiert werden. |
 
-| Referenztyp | Beschreibung                    |
-|-----------------------|------------------------------------------------------------------------------------------------------------|
-| Wartungspläne     | Vorbeugende Wartungsaufträge auf Grundlage der Wartungsplantypen „Zeit“ oder „Zähler“.                       |
-| Wartungsdurchgänge    | Vorbeugende Wartungsaufträge, die mehrere Anlagen enthalten, die einen ähnlichen Wartungstyp erfordern.           |
-| Wartungsanfrage   | Manuell erstellte Anforderung für die Wartung oder Reparatur einer Anlage, die in einen Arbeitsauftrag konvertiert werden kann. |
+## <a name="create-work-orders-based-on-your-maintenance-schedule"></a>Erstellen von Arbeitsaufträgen basierend auf Ihrem Wartungsplan
 
+Führen Sie die folgenden Schritte aus, um Arbeitsaufträge zu erstellen, die auf Ihrem Wartungsplan basieren.
 
-1. Klicken Sie auf **Anlagenverwaltung** > **Allgemein** > **Alle Wartungspläne** oder **Wartungszeitplanpositionen öffnen** oder **Wartungszeitplanpools öffnen**.
+1. Öffnen Sie eine der folgenden Seiten, je nachdem, wie Sie Zeitplanelemente für Ihre Arbeitsaufträge auswählen möchten:
 
-2. Wählen Sie die geplanten Wartungsaufträge aus, für die Sie einen Arbeitsauftrag erstellen möchten, und klicken Sie auf **Arbeitsauftrag**. Im Dialog **Arbeitsaufträge erstellen** wird die Gesamtanzahl von Planungsstunden für die ausgewählten Positionen im Feld **Wartungsprognosestunden** angezeigt.
+    - Alle Wartungszeitpläne (**Anlagenerwaltung \> Verwaltungszeitplan \> Alle Wartungszeitpläne**)
+    - Offene Wartungszeitplanpositionen (**Anlagenerwaltung \> Verwaltungszeitplan \> Offene Wartungszeitplanpositionen**)
+    - Offene Wartungszeitplanpools (**Anlagenerwaltung \> Verwaltungszeitplan \> Offene Wartungszeitplanpools**)
 
-3. Im Abschnitt **Parameter** wählen Sie aus, wie viele Arbeitsaufträge erstellt werden sollen. Sie können einen Arbeitsauftrag pro Wartungszeitplanposition oder mehrere Arbeitsaufträge basierend auf Ihrer Auswahl im Abschnitt **Ein Arbeitsauftrag pro** erstellen.
+1. Aktivieren Sie im Raster das Kontrollkästchen für jeden geplanten Wartungsauftrag, für den Sie einen Arbeitsauftrag erstellen möchten. Wählen Sie im Aktionsbereich **Arbeitsauftrag**.
 
-4. Wählen Sie einen **Arbeitsauftragstyp** aus, der für alle Arbeitsaufträge verwendet wird, die Sie erstellen. In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Arbeitsaufträge erstellen** angezeigt.
+    Das Dialogfeld **Arbeitsaufträge erstellen** wird angezeigt. Die Gesamtanzahl von Planungsstunden für die ausgewählten Positionen wird im Feld **Wartungsprognosestunden** angezeigt.
 
-![Abbildung 1](media/18-preventive-maintenance.png)
+    ![Das Dialogfeld „Arbeitsaufträge erstellen“](media/18-preventive-maintenance.png)
 
-5. Klicken Sie auf **OK**. Einer oder mehrere Arbeitsaufträge werden erstellt.
+1. Im Abschnitt **Parameter** geben Sie die Anzahl der Arbeitsaufträge an, die erstellt werden sollen. Folgende Optionen stehen zur Auswahl:
 
+    - **Ein Arbeitsauftrag pro Position** – Erstellen Sie einen Arbeitsauftrag pro Wartungszeitplanposition.
+    - **Ein Arbeitsauftrag pro** – Erstellen Sie Arbeitsaufträge, die gemäß den Einstellungen der anderen Optionen gruppiert sind, die verfügbar werden, wenn Sie diese Option auswählen.
 
+1. In dem Feld **Arbeitsauftragstyp** wählen Sie den Arbeitsauftragstyp aus, der für alle von Ihnen erstellten Arbeitsaufträge verwendet werden soll.
+1. Wählen Sie **OK** aus, um die Arbeitsaufträge gemäß Ihren Einstellungen zu erstellen.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Gruppieren Sie Arbeitsauftragspositionen, die automatisch erstellt werden, während ein Wartungszeitplan ausgeführt wird.
+
+> [!IMPORTANT]
+> Die in diesem Abschnitt beschriebenen Funktionen stehen im Rahmen einer Vorschauversion zur Verfügung. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschauversionen finden Sie in den [FAQ zu Dienstupdates für One Version](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+Mit dieser Funktion können Sie Regeln für die Gruppierung von Arbeitsauftragspositionen unter einem einzelnen Arbeitsauftrag definieren, wenn das System so eingerichtet ist, dass Arbeitsaufträge basierend auf einem Wartungszeitplan automatisch generiert werden. Bisher konnten automatisch generierte Arbeitsaufträge nur eine Position enthalten. Sie können Arbeitsaufträge jetzt jedoch beispielsweise nach Anlage, Anlagentyp oder funktionalem Standort gruppieren. (Manuell erstellte Arbeitsaufträge können bereits auf diese Weise gruppiert werden, wie im vorherigen Abschnitt dieses Themas beschrieben.)
+
+### <a name="enable-grouping-for-automatically-generated-work-orders"></a>Aktivieren der Gruppierung für automatisch generierte Arbeitsaufträge
+
+Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+
+- **Modul:** *Anlagenverwaltung*
+- **Funktionsname:** *Regeln zum Gruppieren von Arbeitsaufträgen während der Ausführung eines Wartungsplans anwenden*
+
+### <a name="set-up-grouping-for-automatically-generated-work-orders"></a>Einrichten der Gruppierung für automatisch generierte Arbeitsaufträge
+
+Um die Gruppierung für automatisch generierte Arbeitsaufträge einzurichten, führen Sie diese Schritte aus.
+
+1. Wechseln Sie zu **Anlagenverwaltung \> Einrichtung \> Vorbeugende Wartung \> Wartungszeitpläne**.
+1. Führen Sie für jeden Plan, in dem Sie gruppierte Arbeitsaufträge generieren möchten, die folgenden Schritte aus:
+
+    1. Wählen Sie im Listenbereich den Plan aus.
+    1. Auf dem Inforegister **Positionen** stellen Sie sicher, dass das Kontrollkästchen **Automatisch einrichten** in jeder Position aktiviert ist.
+
+1. Wechseln Sie zu **Anlagenverwaltung \> Periodisch \> Vorbeugende Wartung \> Wartungspläne terminieren**.
+1. In dem Dialogfeld **Wartungspläne terminieren** im Abschnitt **Periode** geben Sie den Zeithorizont für den Plan an (wie weit Sie nach vorne schauen müssen, wenn Sie geplante Wartungszeitpläne finden, für die Arbeit generiert werden soll).
+1. Stellen Sie Option **Arbeitsauftrag automatisch aus Zeitplan erstellen** auf *Ja*.
+1. Wählen Sie im Abschnitt **Arbeitsauftrag** eine der folgenden Optionen aus:
+
+    - **Ein Arbeitsauftrag pro Position** – Erstellen Sie einen Arbeitsauftrag pro Wartungszeitplanposition. (Diese Option bietet die gleiche Funktionalität, die verfügbar ist, wenn die Funktion *Regeln zum Gruppieren von Arbeitsaufträgen während der Ausführung eines Wartungsplans anwenden* ausgeschaltet ist.)
+    - **Ein Arbeitsauftrag pro** – Erstellen Sie Arbeitsaufträge, die gemäß den Einstellungen der anderen Optionen gruppiert sind, die verfügbar werden, wenn Sie diese Option auswählen.
+
+1. Wenn Sie möchten, dass die Optionen angewendet werden, wenn Sie nur einige Ihrer Wartungspläne ausführen, klicken Sie auf das Inforegister **Einzuschließende Datensätze**, fügen Sie Filter nach Bedarf hinzu, genau wie bei anderen Stapelverarbeitungsaufträgen in Microsoft Dynamics 365 Supply Chain Management.
+1. Richten Sie auf dem Inforegister **Im Hintergrund ausführen** Stapel- und Planungsoptionen nach Bedarf ein, genau wie bei anderen Stapelverarbeitungsaufträgen in Supply Chain Management.
+1. Wählen **OK**, um die ausgewählten Wartungszeitpläne auszuführen und/oder zu planen.

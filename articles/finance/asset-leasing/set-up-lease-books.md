@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 28518341544327f1983e563b719b0f455b6e1c43
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 948860bb064dde1085fef4a74da2d9a600892294
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4443773"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131004"
 ---
 # <a name="set-up-lease-books"></a>Leasingbücher einrichten
 
@@ -53,6 +52,4 @@ Gehen Sie folgendermaßen vor, um einen Mietvertrag zu erstellen.
     | Kurzfristiger Schwellenwert                     | Geben Sie die Anzahl der Monate ein, die als Schwellenwert für kurzfristige Mietverträge verwendet werden sollen. Wenn die Laufzeit des Mietvertrags kleiner oder gleich der Anzahl der Monate ist, die Sie hier eingeben, klassifiziert das System den Mietvertrag als kurzfristigen Mietvertrag, und die Behandlung der zurückgestellten Miete wird angewendet. |
     | Schwellenwert für geringen Wert                      | Geben Sie einen Betrag ein, der als Schwellenwert für Leasingobjekte mit geringem Wert verwendet werden soll. Wenn der Zeitwert der Anlage kleiner oder gleich des hier eingegebenen Werts ist, klassifiziert das System den Mietvertrag als Leasingobjekt von geringem Wert, und die Behandlung der zurückgestellten Miete wird angewendet. |
     | An Kreditor bezahlen                            | Setzen Sie diese Option auf **Ja**, damit Mietzahlungen als Rechnung auf das in jedem Mietvertrag angegebene Kreditorenkonto gebucht werden können. Wenn eine Mietzahlung gebucht wird, wird das Kreditorenkonto gutgeschrieben. Wenn diese Option auf **Nein** gesetzt ist, wird stattdessen das Konto gutgeschrieben, das für die **Mietzahlung**-Buchungsart auf der **Leasingbuchungsparameter**-Seite angegeben ist. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+    | Leasingkonvention                       | Wählen Sie die Konvention für den Beginn des Mietvertrags aus:<ul><li><b>Keine</b> – Verwenden Sie das Startdatum des Mietvertrags als Anfangsdatum.</li><li><b>Voller Monat</b> – Verwenden Sie den ersten Tag des Monats, in den das Startdatum des Mietvertrags als Anfangsdatum fällt.</li></ul><p>Wenn Sie <b>Keine</b> auswählen, besteht das Risiko, dass die Zeitpläne für die Amortisierung von Verbindlichkeiten und die Abschreibung des Leasingobjekts in der Mitte des Monats und nicht am Monatsende anfallen und Ausgaben gebucht werden. Durch die Auswahl <b>Voller Monat</b> stellen Sie sicher, dass das System am ersten Tag des Monats mit der Buchung des Mietvertrags beginnt und dass die gesamten Ausgaben des Monats am letzten Tag des Monats anfallen und gebucht werden.</p><p><strong>Hinweis:</strong> Die Funktion für Leasingkonventionen muss über die Funktionsverwaltung aktiviert werden. Suchen und wählen Sie im Arbeitsbereich <b>Funktionsverwaltung</b> die Funktion namens <b>Leasingkonvention für das Anlagenleasing</b> aus. Wählen Sie anschließend <b>Jetzt aktivieren</b> aus.</p> |

@@ -1,5 +1,5 @@
 ---
-title: Probleme mit dem Modul für duales Schreiben in Finance and Operations-Apps behandeln
+title: Probleme mit dem dualen Scheiben in Finance and Operations-Apps behandeln
 description: Dieses Thema enthält Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit dem Modul Duales Schreiben in der Finance and Operations App zusammenhängen.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3ffeb2de0acc1761bccf62a1a124852c504e2a3a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683622"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131244"
 ---
-# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Probleme mit dem Modul für duales Schreiben in Finance and Operations-Apps behandeln
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Probleme mit dem dualen Scheiben in Finance and Operations-Apps behandeln
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,7 +44,7 @@ Wenn Sie die Seite **Duales Schreiben** nicht öffnen können durch Auswahl der 
 
 **Erforderliche Anmeldeinformationen zur Behebung des Problems:** Derselbe Benutzer, der duales Schreiben eingerichtet hat.
 
-Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie versuchen, eine neue Entität für Duales Schreiben zu konfigurieren. Der einzige Benutzer, der eine Karte erstellen kann, ist der Benutzer, der die duale Schreibverbindung eingerichtet hat.
+Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie versuchen, eine neue Tabelle für Duales Schreiben zu konfigurieren. Der einzige Benutzer, der eine Karte erstellen kann, ist der Benutzer, der die duale Schreibverbindung eingerichtet hat.
 
 *Der Antwortstatuscode zeigt keinen Erfolg an: 401 (Nicht erlaubt)*
 
@@ -77,7 +77,7 @@ Dieser Fehler tritt auf, wenn die verknüpfte Dataverse Umgebung nicht verfügba
 
 Erstellen Sie ein Ticket für das Datenintegrationsteam, um das Problem zu beheben. Fügen Sie die Netzwerkablaufverfolgung hinzu, damit das Datenintegrationsteam die Zuordnung als **wird nicht ausgeführt** im hinteren Ende markieren kann.
 
-## <a name="error-while-trying-to-start-an-table-mapping"></a>Fehler beim Versuch, eine Tabellenzuordnung zu starten
+## <a name="error-while-trying-to-start-a-table-mapping"></a>Fehler beim Versuch, eine Tabellenzuordnung zu starten
 
 Möglicherweise wird eine Fehlermeldung wie die folgende angezeigt, wenn Sie versuchen, den Status einer Zuordnung auf **Laufend** festzulegen:
 
@@ -86,7 +86,4 @@ Möglicherweise wird eine Fehlermeldung wie die folgende angezeigt, wenn Sie ver
 Die Behebung dieses Fehlers hängt von der Fehlerursache ab:
 
 + Wenn die Zuordnung abhängige Zuordnungen enthält, müssen Sie die abhängigen Zuordnungen dieser Tabellenzuordnung aktivieren.
-+ In der Zuordnung fehlen möglicherweise Quell- oder Zielfelder. Wenn ein Feld in der Finance and Operations-App fehlt, dann befolgen Sie die Schritte im Abschnitt [Fehlende Entitätsfelder treten auf Zuordnungen auf](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Wenn ein Feld in Dataverse fehlt, klicken Sie in der Zuordnung auf die Schaltfläche **Tabellen aktualisieren**, damit die Felder automatisch wieder in die Zuordnung eingefügt werden.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
++ In der Zuordnung fehlen möglicherweise Quell- oder Zielspalten. Wenn eine Spalte in der Finance and Operations-App fehlt, dann befolgen Sie die Schritte im Abschnitt [Fehlende Tabellenspalten treten in Zuordnungen auf](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Wenn eine Spalte in Dataverse fehlt, klicken Sie in der Zuordnung auf die Schaltfläche **Tabellen aktualisieren**, damit die Spalten automatisch wieder in die Zuordnung eingefügt werden.
