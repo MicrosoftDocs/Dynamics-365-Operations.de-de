@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderLineNote, EntAssetWorkOrderTable, EntAssetWorkOrderActive, EntAssetWorkOrderHoursInfoPart, EntAssetWorkOrderLineListPage, EntAssetWorkOrderAddObjectBOMItem, EntAssetWorkOrderTablePoolAdd, EntAssetWorkOrderPurchReqListPagePreviewPane, EntAssetWorkOrderPoolReferenceAdd, EntAssetWorkOrderWorkspace, EntAssetWorkOrderTableAdjust, EntAssetWorkOrderGantt, EntAssetWorkOrderNotes, EntAssetWorkOrderActivePart, EntAssetWorkOrderTableInfoPart, EntAssetWorkOrderLineListPagePreviewPane, EntAssetWorkOrderTool, EntAssetMobileWorkOrderLineDetails, EntAssetMobileWorkOrderLineList, EntAssetMobileWorkOrderDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7997b4b9521b43e1e00cfa22f9df12a29582455a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 378fc6d55deada95e94f91ed3f73f2518efbeb1f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428524"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021879"
 ---
 # <a name="introduction-to-work-orders"></a>Einführung in Arbeitsaufträge
 
@@ -119,6 +118,3 @@ Die Schaltflächen in der Gruppe **Projekt** auf der Registerkarte **Arbeitsauft
 >[!NOTE]
 >Prognosen, die auf einem Arbeitsauftrag erstellt wurden, können bei der Ausführung des Produktprogrammplanungslaufs mit Hilfe des auf der Seite **Anlagenverwaltungsparameter** ausgewählten Prognosemodells berücksichtigt werden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
