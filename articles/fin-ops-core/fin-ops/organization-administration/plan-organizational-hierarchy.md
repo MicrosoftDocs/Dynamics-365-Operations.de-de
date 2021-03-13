@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 4c779b5948370444b0b474568bb63b347c4a0831
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694688"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154408"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planen Ihrer Organisationshierarchie
 
@@ -166,7 +166,7 @@ Organisationseinheiten verwenden den Landeskontext der übergeordneten juristisc
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Wenn die Organisation als juristische Person modelliert wird
 
-Bei Ländern/Regionen, die unterstützt werden, können die meisten Offenlegungsberichte erstellt werden. Informationen darüber, welche Berichte für jedes Land/Region verfügbar sind, finden Sie im [Microsoft Dynamics-Lokalisierungs-Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (Eine CustomerSource -Anmeldung ist erforderlich.)
+Bei Ländern/Regionen, die unterstützt werden, können die meisten Offenlegungsberichte erstellt werden. Informationen darüber, welche Berichte für jedes Land/Region verfügbar sind, finden Sie im [Microsoft Dynamics-Lokalisierungs-Portal](https://docs.microsoft.com/dynamics/s-e/). (Eine CustomerSource -Anmeldung ist erforderlich.)
 
 > [!NOTE]
 > Ein Buchungsebene im Hauptbuch ermöglicht Anpassungseingaben an einer Muttergesellschaft vorzunehmen, die einen anderen Rechnungslegungsstandard als das untergeordnete Unternehmen verwendet. Beispielsweise können Sie für ein Unternehmen, das in Großbritannien allgemein anerkannte Buchhaltungsverfahren (UK GAAP) verwendet, Anpassungseingaben auf der Buchungsebene vornehmen. Diese Einträge können in ein übergeordnetes Unternehmen konsolidiert werden, das in den USA allgemein anerkannte Rechnungslegungsgrundsätze (GAAP) verwendet. Die Anpassungseingaben haben keinen Einfluss auf die UK GAAP-Berichterstellung.
@@ -241,6 +241,3 @@ Berücksichtigen Sie die folgenden optimalen Verfahren bei der Implementierung e
 - Verwenden Sie vor dem Entwerfen von umfassenden Neustrukturierungsszenarien die Gültigkeitsdaten der Hierarchie, um eine Auswirkungsanalyse und einen Validierungstest durchzuführen.
 - Verwenden Sie zum Ändern einer Hierarchie den Entwurfsmodus, bevor Sie eine neue Version in einer Produktionsumgebung veröffentlichen.
 - Begrenzen Sie die Anzahl der Personen, die zum Hinzufügen oder Entfernen von Organisationen von einer Hierarchie in einer Produktionsumgebung berechtigt sind. Durch eine kleinere Anzahl verringert sich die Wahrscheinlichkeit für kostspielige Fehler und Korrekturen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

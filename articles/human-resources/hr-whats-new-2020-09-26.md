@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ac72489c3b2dacfde280606a83221e8514793701
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527409"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152196"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 26. September 2020
 
@@ -31,7 +30,7 @@ ms.locfileid: "4527409"
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden oder demnächst verfügbar sind. Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
-Weitere Informationen zu neuen Funktionen und den voraussichtlichen allgemeinen Verfügbarkeitsterminen finden Sie unter [Überblick Dynamics 365 Human Resources 2020 Veröffentlichungszyklus 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
+Weitere Informationen zu neuen Funktionen und den voraussichtlichen allgemeinen Verfügbarkeitsterminen finden Sie unter [Überblick Dynamics 365 Human Resources 2020 Veröffentlichungszyklus 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>In dieser Version
 
@@ -58,7 +57,7 @@ Die folgenden Fehlerkorrekturen sind in diesem Release enthalten.
 | 481401 | Die Abgrenzungsverarbeitung hängt ab, wenn die Basis für das Abgrenzungsdatum nach dem Abgrenzungsstartdatum und am Monatsende liegt | Die Abgrenzungsverarbeitung wird aktualisiert, um keine Verzögerung zu haben, wenn die Abgrenzungsdatenbasis nach dem Abgrenzungsstartdatum und am Monatsende liegt. |
 | 447167 | Ablaufende Datensatzlisten enthalten inaktive Mitarbeiter | Die Registerkarte **Ablaufende Datensätze** in **Personalmanagement** schließt inaktive Arbeitnehmer ein. Jetzt sind nur noch aktive Arbeitnehmer eingeschlossen. |
 | 486840 | Falscher Urlaubsantrag öffnet ab **Mir zugewiesene Arbeitselemente** | Auswahl eines Urlaubsantrags aus **Mir zugewiesene Arbeitselemente** öffnet nicht mehr die letzte Abwesenheitsanfrage, die dem aktuellen Benutzer zugewiesen wurde. |
-| 506868 | Common Data Service **Titel** Feld nicht gesetzt für Entität **Berufliche Stellung** | Das Feld **Titel** in den Entitäten **Beruf** und **Berufliche Stellung** werden als nicht angegeben angezeigt. Das **Titel** Feld wird jetzt angezeigt. |
+| 506868 | Dataverse **Titel** Feld nicht gesetzt für Entität **Berufliche Stellung** | Das Feld **Titel** in den Entitäten **Beruf** und **Berufliche Stellung** werden als nicht angegeben angezeigt. Das **Titel** Feld wird jetzt angezeigt. |
 | 430359 | Zugriff auf Offboarding-Checklistenaufgaben mit zugewiesenen Manager- und Mitarbeiterrollen ist nicht möglich | Mitarbeiter mit einem zukünftigen Kündigungsdatum könnten nicht auf ihre Checklistenaufgaben zugreifen, wenn sie nur eine Mitarbeiter- oder Managerrolle hätten. Jetzt können Benutzer mit nur einer Mitarbeiter- oder Manager-Rolle mit einem zukünftigen Kündigungsdatum auf Offboarding-Aufgaben zugreifen. |
 | 458102 | Neuer Mitarbeiter erscheint nicht auf der **Informationen zur Arbeitnehmerabrechnung** Entität beim Erstellen | Neue Mitarbeiter werden in die Entität der Mitarbeiterabrechnungsinformationen aufgenommen, ohne dass die Abrechnungsinformationen für den Mitarbeiter vor dem Exportieren der Entität geöffnet werden müssen. |
 
@@ -85,6 +84,3 @@ Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen 
 [Überblick Dynamics 365 Human Resources 2020 Veröffentlichungszyklus 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
