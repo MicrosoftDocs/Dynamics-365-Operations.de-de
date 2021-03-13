@@ -2,7 +2,7 @@
 title: Leistungserfassung hinzufügen und Lob an eine Person senden
 description: Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele erreichen oder wie Ihre Leistung für einen bestimmten Zeitraum aussieht.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2a90a5f746e49e1a5df9910867e8cd35feb1147
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 574925f0e278ad7bd3c654432fd0f862fd3c3259
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418616"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115871"
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Leistungserfassung hinzufügen und Lob an eine Person senden
 
@@ -54,6 +54,3 @@ Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele er
 20. Geben Sie im Textfeld "Danke für die Hilfe bei der Konferenz" ein.
 21. Klicken Sie auf Senden.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

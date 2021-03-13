@@ -2,7 +2,7 @@
 title: Urlaubs- und Abwesenheitstypen konfigurieren
 description: Einrichten von Abwesenheitstypen, die Mitarbeiter in Anspruch nehmen können in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6e6ca7d04b86232ba48474fcbe288a18995661ae
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6b21d4d631bcdf603b38212f5f76bb78937d3d3c
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418649"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115075"
 ---
 # <a name="configure-leave-and-absence-types"></a>Urlaubs- und Abwesenheitstypen konfigurieren
 
@@ -82,6 +82,3 @@ Abwesenheitstypen in Dynamics 365 Human Resources definieren die verschiedenen A
 - [Einen Arbeitszeitkalender erstellen](hr-leave-and-absence-working-time-calendar.md)
 - [Urlaub aussetzen](hr-leave-and-absence-suspend-leave.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

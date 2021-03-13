@@ -2,7 +2,7 @@
 title: Verwalten von Urlaub und Abwesenheitsanfragen
 description: Urlaubs- und Abwesenheitsanträge anzeigen und genehmigen in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 365d933a2d33b7e1929f9f68e02050b624e30839
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a47065a28f116cde5ce2983acada2f735f8c5edf
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418748"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115293"
 ---
-# <a name="manage-leave-and-absence-requests"></a>Verwalten von Urlaub und Abwesenheitsanfragen
+# <a name="manage-leave-and-absence-requests"></a>Urlaubs- und Abwesenheitsanforderungen verwalten
 
-Manager können Abwesenheitsanträge über den Arbeitsbereich **Mitarbeiter Selbstservice** in Dynamics 365 Human Resources verwalten. Anforderungen können Einzel-Tag-Anforderungen oder Mehrfachtag-Anforderungen sein, die mehrere Absenzen und Urlaubse enthalten. Wenn ein Workflow nicht aktiviert ist, werden die Anforderungen automatisch genehmigt. Wenn ein Workflow aktiviert ist, kann die Genehmigung automatisch erfolgen oder sie kann Freigabe benötigben, je nachdem wie die Workflowkonfiguration aussieht.
+Verwalten Sie Abwesenheitsanträge über den Arbeitsbereich **Mitarbeiter-Self-Service** in Dynamics 365 Human Resources verwalten. Anforderungen könnten Einzel-Tag-Anforderungen oder Mehrfachtag-Anforderungen sein, die mehrere Absenzen und Urlaubse enthalten. Wenn ein Workflow nicht aktiviert ist, werden die Anforderungen automatisch genehmigt. Wenn ein Workflow aktiviert ist, kann die Genehmigung automatisch erfolgen oder eine Freigabe benötigen, je nachdem wie die Workflowkonfiguration aussieht.
 
 1. Wählen Sie auf der Startseite **Mitarbeiter-Self-Service** **Mein Team** aus.
 
@@ -39,5 +39,3 @@ Manager können Abwesenheitsanträge über den Arbeitsbereich **Mitarbeiter Selb
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
 - [Einen Urlaubs- und Abwesenheitsplan erstellen](hr-leave-and-absence-plans.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 46f2f846f1259d433630a69f17f7b8db9514e6fa
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 20203a342b2bead4eb211597f4b73bbf35477a03
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680047"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115679"
 ---
 # <a name="unified-product-experience"></a>Einheitliche Produktumgebung
 
@@ -53,8 +53,8 @@ Produktinformationen enthält alle Informationen, die mit dem Produkt und seiner
 
 Finance and Operations Apps | Sonstige Dynamics 365-Apps | Beschreibung
 -----------------------|--------------------------------|---
-Freigegebene Produkte V2 | msdyn\_sharedproductdetails | Die Entität **msdyn\_sharedproductdetails** enthält die Felder aus Finance and Operations-Apps, die das Produkt definieren, und die die Finanz- und Verwaltungsinformationen des Produkts enthalten. 
-Von Dataverse freigegebene eindeutig identifizierbare Produkte | Produkt | Die Entität **Produkt** enthält die Felder, die das Produkt definieren. Sie enthält Einzelprodukte (Produkte mit Untertypprodukt) und die Produktvarianten. Die Zuordnungen werden in der folgenden Tabelle veranschaulicht.
+Freigegebene Produkte V2 | msdyn\_sharedproductdetails | Die Tabelle **msdyn\_sharedproductdetails** enthält die Spalten aus Finance and Operations-Apps, die das Produkt definieren und die die Finanz- und Verwaltungsinformationen des Produkts enthalten. 
+Von Dataverse freigegebene eindeutig identifizierbare Produkte | Produkt | Die Tabelle **Produkt** enthält die Spalten, die das Produkt definieren. Sie enthält Einzelprodukte (Produkte mit Untertypprodukt) und die Produktvarianten. Die Zuordnungen werden in der folgenden Tabelle veranschaulicht.
 Durch Produktnummer identifizierter Strichcode | msdyn\_productbarcodes | Produktstrichcodes werden verwendet, um Produkte eindeutig zu kennzeichnen.
 Standardauftragseinstellungen | msdyn\_productdefaultordersettings
 Produktspezifische Standardauftragseinstellungen | msdyn_productdefaultordersettings
@@ -65,36 +65,38 @@ Farben | msdyn\_productcolors
 Größen | msdyn\_productsizes
 Formatvorlagen | msdyn\_productsytles
 Konfigurationen | msdyn\_productconfigurations
-Produktmasterfarben | msdyn_sharedproductcolors | Die Entität **Freigegebene Produktfarbe** gibt die Farben an, die ein bestimmter Produktmaster haben kann. Dieses Konzept wird zu Dataverse migriert, um Daten einheitlich zu halten.
-Produktmastergrößen | msdyn_sharedproductsizes | Die Entität **Freigegebene Produktgröße** gibt die Größen an, die ein bestimmter Produktmaster haben kann. Dieses Konzept wird zu Dataverse migriert, um Daten einheitlich zu halten.
-Produktmasterstile | msdyn_sharedproductstyles | Die Entität **Freigegebener Produktstil** gibt die Stile an, die ein bestimmter Produktmaster haben kann. Dieses Konzept wird zu Dataverse migriert, um Daten einheitlich zu halten.
-Produktmasterkonfigurationen | msdyn_sharedproductconfigurations | Die Entität **Freigegebener Produktkonfiguration** gibt die Konfigurationen an, die ein bestimmter Produktmaster haben kann. Dieses Konzept wird zu Dataverse migriert, um Daten einheitlich zu halten.
-Alle Produkte | msdyn_globalproducts | Die Entität „Alle Produkte“ enthält alle in Finance and Operations-Apps verfügbaren Produkte, sowohl die freigegebenen Produkte als auch die nicht freigegebenen Produkte.
+Produktmasterfarben | msdyn_sharedproductcolors | Die Tabelle **Freigegebene Produktfarbe** gibt die Farben an, die ein bestimmter Produktmaster haben kann. Dieses Konzept wird zu Dataverse migriert, um Daten einheitlich zu halten.
+Produktmastergrößen | msdyn_sharedproductsizes | Die Tabelle **Freigegebene Produktgröße** gibt die Größen an, die ein bestimmter Produktmaster haben kann. Dieses Konzept wird zu Dataverse migriert, um Daten einheitlich zu halten.
+Produktmasterstile | msdyn_sharedproductstyles | Die Tabelle **Freigegebener Produktstil** gibt die Stile an, die ein bestimmter Produktmaster haben kann. Dieses Konzept wird zu Dataverse migriert, um Daten einheitlich zu halten.
+Produktmasterkonfigurationen | msdyn_sharedproductconfigurations | Die Tabelle **Freigegebener Produktkonfiguration** gibt die Konfigurationen an, die ein bestimmter Produktmaster haben kann. Dieses Konzept wird zu Dataverse migriert, um Daten einheitlich zu halten.
+Alle Produkte | msdyn_globalproducts | Die Tabelle „Alle Produkte“ enthält alle in Finance and Operations-Apps verfügbaren Produkte, sowohl die freigegebenen als auch die nicht freigegebenen.
 Einheit | uoms
 Einheitenumrechnungen | msdyn_ unitofmeasureconversions
 Produktspezifische Maßeinheit-Umrechnung | msdyn_productspecificunitofmeasureconversion
-Produktkategorien | msdyn_productcategories | Jede der Produktkategorien und -informationen über die Struktur und Eigenschaften ist in der Produktkategorieentität enthalten. 
-Produktkategoriehierarchien | msdyn_productcategoryhierarhies | Sie verwenden Produkthierarchien, um Produkte zu kategorisieren oder zu gruppieren. Die Kategoriehierarchien sind in Dataverse über die Entität „Produktkategoriehierarchie“ verfügbar. 
-Produktkategoriehierarchie-Rollen | msdyn_productcategoryhierarchies | Produkthierarchien können für verschiedene Rollen in D365 Finance and Operations verwendet werden. Sie legen fest, welche Kategorie in jeder Rolle verwendet wird, wird die Entität „Produktkategorierolle“ verwendet. 
-Produktkategoriezuweisungen | msdyn_productcategoryassignments | Zum Zuweisen eines Produkts zu einer Kategorie kann die Entität „Produktkategoriezuweisungen“ verwendet werden.
+Produktkategorien | msdyn_productcategories | Jede der Produktkategorien und -informationen über die Struktur und Eigenschaften ist in der Produktkategorietabelle enthalten. 
+Produktkategoriehierarchien | msdyn_productcategoryhierarhies | Sie verwenden Produkthierarchien, um Produkte zu kategorisieren oder zu gruppieren. Die Kategoriehierarchien sind in Dataverse über die Tabelle „Produktkategoriehierarchie“ verfügbar. 
+Produktkategoriehierarchie-Rollen | msdyn_productcategoryhierarchies | Produkthierarchien können für verschiedene Rollen in D365 Finance and Operations verwendet werden. Sie legen fest, welche Kategorie in jeder Rolle verwendet wird, in der die Tabelle „Produktkategorierolle“ verwendet wird. 
+Produktkategoriezuweisungen | msdyn_productcategoryassignments | Zum Zuweisen eines Produkts zu einer Kategorie kann die Tabelle „Produktkategoriezuweisungen“ verwendet werden.
 
 ## <a name="integration-of-products"></a>Integration von Produkten
 
-In diesem Modell wird das Produkt durch die Kombination aus beiden Tabellen in Dataverse dargestellt: **Produkt** und **msdyn\_sharedproductdetails**. Während die erste Entität die Definition eines Produkts (den eindeutige Bezeichner für das Produkt, den Produktname und die Beschreibung) beinhaltet, enthält die zweite Entität die Felder, die auf der Produktebene gespeichert werden. Die Kombination aus diesen beiden Tabellen wird verwendet, um das Produkt entsprechend des Konzepts der Lagermengeneinheit (SKU) zu definieren. Jedes freigegebene Produkt hat seine Informationen in den genannten Tabellen (Produkt und freigegebene Produktdetails). Um sämtliche Produkte zu verfolgen (freigegeben und nicht freigegeben), wird die Entität **Globale Produkte** verwendet. 
+In diesem Modell wird das Produkt durch die Kombination aus beiden Tabellen in Dataverse dargestellt: **Produkt** und **msdyn\_sharedproductdetails**. Während in der ersten Tabelle die Definition eines Produkts (den eindeutige Bezeichner für das Produkt, den Produktnamen und die Beschreibung) enthalten ist, enthält die zweite Tabelle die Spalten, die auf der Produktebene gespeichert werden. Die Kombination aus diesen beiden Tabellen wird verwendet, um das Produkt entsprechend des Konzepts der Lagermengeneinheit (SKU) zu definieren. Jedes freigegebene Produkt hat seine Informationen in den genannten Tabellen (Produkt und freigegebene Produktdetails). Um sämtliche Produkte zu verfolgen (freigegebene und nicht freigegebene), wird die Tabelle **Globale Produkte** verwendet. 
 
 Da das Produkt als SKU dargestellt wird, können die Konzepte von eindeutig identifizierbaren Produkten, Produktmastern und Produktvarianten in Dataverse folgendermaßen erfasst werden:
 
-- **Produkte mit Untertypprodukt** sind Produkte, die auch durch sie selbst definiert werden. Es müssen keine Dimensionen festgelegt werden. Ein Beispiel ist ein bestimmtes Buch. Für diese Produkte wird ein Datensatz in der Entität **Produkt** erstellt, und ein Datensatz wird in der Entität **msdyn\_sharedproductdetails** erstellt. Es wird kein Produktfamiliendatensatz erstellt.
-- **Produktmaster** werden als generische Produkte verwendet, die die Definition und die Regeln verwenden, mit denen das Verhalten in Geschäftsprozessen bestimmt wird. Auf Grundlage dieser Definitionen können eindeutig identifizierbare Produkte, bekannt als Produktvarianten, generiert werden. Beispielsweise ist das T-Shirt der Produktmaster, und es kann Farbe und Größe als Dimensionen haben. Varianten können freigegeben werden, die unterschiedliche Kombinationen dieser Dimensionen aufweisen, z. B. ein kleines blaues T-Shirt oder ein mittelgroßes grünes T-Shirt. In der Integration wird ein Datensatz pro Variante in der Produkttabelle erstellt. Dieser Datensatz enthält die variantenspezifischen Informationen, wie beispielsweise die verschiedenen Dimensionen. Die allgemeinen Informationen für das Produkt werden in der Entität **msdyn\_sharedproductdetails** gespeichert. (Diese allgemeinen Informationen werden im Produktmaster gespeichert.) Die Produktmasterinformationen werden mit Dataverse synchronisiert, sobald der freigegebene Produktmaster erstellt wird (aber bevor die Varianten freigegeben werden).
+- **Produkte mit Untertypprodukt** sind Produkte, die auch durch sie selbst definiert werden. Es müssen keine Dimensionen festgelegt werden. Ein Beispiel ist ein bestimmtes Buch. Für diese Produkte wird eine Zeile in der Tabelle **Produkt** und eine Zeile in der Tabelle **msdyn\_sharedproductdetails** erstellt. Es wird keine Produktfamilienzeile erstellt.
+- **Produktmaster** werden als generische Produkte verwendet, die die Definition und die Regeln verwenden, mit denen das Verhalten in Geschäftsprozessen bestimmt wird. Auf Grundlage dieser Definitionen können eindeutig identifizierbare Produkte, bekannt als Produktvarianten, generiert werden. Beispielsweise ist das T-Shirt der Produktmaster, und es kann Farbe und Größe als Dimensionen haben. Varianten können freigegeben werden, die unterschiedliche Kombinationen dieser Dimensionen aufweisen, z. B. ein kleines blaues T-Shirt oder ein mittelgroßes grünes T-Shirt. In der Integration wird eine Zeile pro Variante in der Produkttabelle erstellt. Diese Zeile enthält die variantenspezifischen Informationen, wie beispielsweise die verschiedenen Dimensionen. Die allgemeinen Informationen für das Produkt werden in der Tabelle **msdyn\_sharedproductdetails** gespeichert. (Diese allgemeinen Informationen werden im Produktmaster gespeichert.) Die Produktmasterinformationen werden mit Dataverse synchronisiert, sobald der freigegebene Produktmaster erstellt wird (aber bevor die Varianten freigegeben werden).
 - **Eindeutig identifizierbare Produkte** verweisen auf alle Produktuntertypprodukte und alle Produktvarianten an. 
 
 ![Datenmodell für Produkte](media/dual-write-product.png)
 
-Wenn die Dual-Write-Funktionalität aktiviert ist, werden die Produkte aus Finance and Operations in anderen Dynamics 365-Produkten im Zustand **Entwurf** synchronisiert. Sie werden der ersten Preisliste mit derselben Währung hinzugefügt. Das bedeutet, sie werden der ersten Preisliste in einer Dynamics 365-App hinzugefügt, die mit der Währung Ihrer juristischen Person übereinstimmt, in der das Produkt in einer Finance and Operations-App freigegeben wird. 
+Wenn die Dual-Write-Funktionalität aktiviert ist, werden die Produkte aus Finance and Operations in anderen Dynamics 365-Produkten im Zustand **Entwurf** synchronisiert. Sie werden der ersten Preisliste mit derselben Währung hinzugefügt. Das bedeutet, sie werden der ersten Preisliste in einer Dynamics 365-App hinzugefügt, die mit der Währung Ihrer juristischen Tabelle übereinstimmt, in der das Produkt in einer Finance and Operations-App freigegeben wird. Wenn für die angegebene Währung keine Preisliste vorhanden ist, wird automatisch eine Preisliste erstellt und das Produkt dieser zugewiesen. 
 
 Produkte aus Finance and Operations-Apps werden standardmäßig mit anderen Dynamics 365-Apps im Status **Entwurf** synchronisiert. Um das Produkt mit dem Status **Aktiv** zu synchronisieren, können Sie es direkt in Auftragsangeboten verwenden, beispielsweise muss die folgende Einstellung ausgewählt werden. Wechseln Sie dazu zur Registerkarte **System > Verwaltung > Systemverwaltung > Systemeinstellungen > Verkauf**, und wählen Sie **Produkte im Status „Aktiv“ erstellen = ja** aus. 
 
-Beachten Sie, dass die Synchronisierung der Produkte aus Finance and Operations-Apps nach Dataverse erfolgt. Dies bedeutet, dass die Werte der Produktentitätsfelder in Dataverse zwar geändert werden können, die Werte beim Auslösen der Synchronisierung in Dataverse jedoch überschrieben werden (wenn ein Produktfeld in einer Finance and Operations-App geändert wird). 
+Wenn Produkte synchronisiert werden, müssen Sie einen Wert in das Feld **Verkaufseinheit** in der Finance and Operations-App eingeben, weil es in Sales ein Pflichtfeld ist.
+
+Die Synchronisierung der Produkte erfolgt von den Finance and Operations-Apps nach Dataverse. Das bedeutet, dass die Werte in den Spalten der Produkttabelle in Dataverse zwar geändert werden können, die Werte beim Auslösen der Synchronisierung (durch Ändern einer Produktspalte in einer Finance and Operations-App) in Dataverse jedoch überschrieben werden. 
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
@@ -142,7 +144,7 @@ Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Arti
 
 ## <a name="unit-of-measure-and-unit-of-measure-conversions"></a>Maßeinheit und Maßeinheitsumrechnungen
 
-Die Maßeinheiten und die jeweilige Umrechung sind in Dataverse entsprechend des Datenmodells im Diagramm verfügbar.
+Die Maßeinheiten und die jeweilige Umrechung sind in Dataverse entsprechend dem im Diagramm angezeigten Datenmodell verfügbar.
 
 ![Datenmodell für Maßeinheit](media/dual-write-product-three.png)
 
@@ -166,7 +168,7 @@ Zunächst ist es wichtig zu beachten, dass der Integrationsschlüssel für die E
 
 Für Einheiten, die in Finance and Operations- und anderen Dynamics 365-Apps übereinstimmen/überlappen:
 
-+ **Die Einheit gehört zu einer Einheitengruppe in anderen Dynamics 365-Apps, die der zugeordneten Einheitenklasse in Finance and Operations-Apps entspricht**. In diesem Fall muss das Feld „msdyn_symbol“ in anderen Dynamics 365-Apps mit dem Einheitensymbol aus Finance and Operations-Apps ausgefüllt werden. Daher wird in anderen Dynamics 365-Apps der Zeitpunkt für den Abgleich der Daten und die Einheitengruppe als „Extern gepflegt“ festgelegt.
++ **Die Einheit gehört zu einer Einheitengruppe in anderen Dynamics 365-Apps, die der zugeordneten Einheitenklasse in Finance and Operations-Apps entspricht**. In diesem Fall muss die Spalte „msdyn_symbol“ in anderen Dynamics 365-Apps mit dem Einheitensymbol aus Finance and Operations-Apps ausgefüllt werden. Daher wird in anderen Dynamics 365-Apps der Zeitpunkt für den Abgleich der Daten und die Einheitengruppe als „Extern gepflegt“ festgelegt.
 + **Die Einheit gehört zu einer Einheitengruppe in anderen Dynamics 365-Apps, die nicht der zugeordneten Einheitenklasse in Finance and Operations-Apps entspricht (keine vorhandene Einheitenklasse in Finance and Operations-Apps für die Einheitenklasse in anderen Dynamics 365-Apps).** In diesem Fall muss das msdyn_symbol mit einer zufälligen Zeichenfolge ausgefüllt werden. Beachten Sie, dass dieser Wert in anderen Dynamics 365-Apps eindeutig sein muss.
 
 Für Einheiten und Einheitenklassen in Finance and Operations, die nicht in anderen Dynamics 365-Apps vorhanden sind:
@@ -175,7 +177,7 @@ Im Rahmen des dualen Schreibens werden die Einheitengruppen aus Finance and Oper
 
 Für Einheiten in anderen Dynamics 365-Apps, die nicht in Finance and Operations-Apps vorhanden sind:
 
-Dem Feld „msdyn_symbol“ muss für alle Einheiten ausgefüllt werden. Die Einheiten können immer in Finance and Operations-Apps in der entsprechenden Einheitenklasse, sofern vorhanden, erstellt werden. Wenn die Einheitsklasse nicht existiert, muss zuerst die Einheitsklasse erstellt werden (beachten Sie, dass Sie keine Einheitsklasse in Finance and Operations-Apps erstellen können, außer durch Erweiterung, wenn Sie die Aufzählung erweitern), die zu der anderen Einheitsgruppe der Dynamics 365-Apps passt. Dann können Sie die Einheit erstellen. Beachten Sie, dass das Einheitensymbol in Finance and Operations-Apps „msdyn_symbol“ lauten muss, das zuvor in anderen Dynamics 365-Apps für die Einheit angegeben wurde.
+Die Spalte „msdyn_symbol“ muss für alle Einheiten ausgefüllt werden. Die Einheiten können immer in Finance and Operations-Apps in der entsprechenden Einheitenklasse, sofern vorhanden, erstellt werden. Wenn die Einheitsklasse nicht existiert, muss zuerst die Einheitsklasse erstellt werden (beachten Sie, dass Sie keine Einheitsklasse in Finance and Operations-Apps erstellen können, außer durch Erweiterung, wenn Sie die Aufzählung erweitern), die zu der anderen Einheitsgruppe der Dynamics 365-Apps passt. Dann können Sie die Einheit erstellen. Beachten Sie, dass das Einheitensymbol in Finance and Operations-Apps „msdyn_symbol“ lauten muss, das zuvor in anderen Dynamics 365-Apps für die Einheit angegeben wurde.
 
 ## <a name="product-policies-dimension-tracking-and-storage-groups"></a>Produktrichtlinien: Dimension, Nachverfolgung und Lagergruppen
 
@@ -202,7 +204,7 @@ Bei den Produktrichtlinien handelt es sich um Gruppen von Richtlinien, die für 
 
 Integrationsschlüssel werden verwendet, um Produkte zwischen Dynamics 365 for Finance and Operations und Produkte in Dataverse eindeutig zu identifizieren. Für Produkte ist **(productnumber)** der eindeutige Schlüssel, der ein Produkt in Dataverse identifiziert. Sie wird durch die Verkettung von zusammengesetzt: **(Firma, msdyn_productnumber)**. Das **Unternehmen** gibt die juristische Person in Finance and Operations und **msdyn_productnumber** gibt die Produktnummer für das jeweilige Produkt in Finance and Operations an. 
 
-Für Benutzer von Dynamics 365-Apps wird das Produkt in der Benutzeroberfläche mit **msdyn_productnumber** gekennzeichnet (beachten Sie, dass die Feldbeschriftung **Produktnummer** lautet). Im Produktformular werden das Unternehmen und das Feld „msydn_productnumber“ angezeigt. Das Feld (productnumber), bei dem es sich um den eindeutigen Schlüssel für ein Produkt handelt, wird jedoch nicht angezeigt. 
+Für Benutzer anderer Dynamics 365-Apps wird das Produkt in der Benutzeroberfläche mit **msdyn_productnumber** gekennzeichnet (beachten Sie, dass die Spaltenbeschriftung **Produktnummer** lautet). Im Produktformular werden das Unternehmen und das Feld „msydn_productnumber“ angezeigt. Die Spalte (productnumber), bei der es sich um den eindeutigen Schlüssel für ein Produkt handelt, wird jedoch nicht angezeigt. 
 
 Wenn Sie Apps auf Dataverse aufbauen, sollten Sie darauf achten, dass Sie den Integrationsschlüssel **Produktnummer** (die eindeutige Produkt-ID) verwenden. Verwenden Sie nicht **msdyn_productnumber**, da sie nicht eindeutig ist. 
 
@@ -210,12 +212,12 @@ Wenn Sie Apps auf Dataverse aufbauen, sollten Sie darauf achten, dass Sie den In
 
 ### <a name="initial-synchronization-of-products"></a>Erstsynchronisierung von Produkten 
 
-Wenn Dual-Write aktiviert ist, werden Produkte von Finance and Operations-Anwendungen mit Dataverse und anderen modellgesteuerten Anwendungen in Dynamics 365 synchronisiert. Produkte, die in Dataverse und anderen Dynamics 365-Anwendungen vor der Freigabe von Dual-Write erstellt wurden, werden nicht aktualisiert oder mit den Produktdaten von Finance and Operations Anwendungen abgeglichen.
+Wenn Dual-Write aktiviert ist, werden Produkte aus Finance and Operations-Apps nach Dataverse und Customer Engagement-Apps synchronisiert. Produkte, die in Dataverse und anderen Dynamics 365-Anwendungen vor der Freigabe von Dual-Write erstellt wurden, werden nicht aktualisiert oder mit den Produktdaten von Finance and Operations Anwendungen abgeglichen.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Abgleich von Produktdaten aus Finance and Operations- und anderen Dynamics 365-Apps
 
-Wenn identische Produkte (überlappend/übereinstimmend) in Finance and Operations- sowie in Dataverse- und anderen Dynamics 365-Apps beibehalten werden, findet beim Aktivieren des dualen Schreibens eine Synchronisierung der Produkte aus Finance and Operations statt. In Dataverse werden für dasselbe Produkt doppelte Datensätze angezeigt.
-Um die vorherige Situation zu vermeiden, wenn andere Dynamics 365-Apps mit Finance and Operations überlappende/übereinstimmende Produkte aufweisen, muss der Administrator, der duales Schreiben aktiviert, ein Bootstrap für die Felder **Unternehmen** (Beispiel: „USMF“) und **msdyn_productnumber** (Beispiel: „1234:Black:S“) ausführen, bevor die Produkte synchronisiert werden. Das bedeutet, dass diese beiden Felder des Produkts in Dataverse mit dem jeweiligen Unternehmen, mit dem das Produkt abgeglichen werden muss, und mit seiner Produktnummer in Finance and Operations ausgefüllt werden müssen. 
+Wenn identische Produkte (überlappend/übereinstimmend) in Finance and Operations-Apps sowie in Dataverse und anderen Dynamics 365-Apps beibehalten werden, findet bei Aktivierung von Dual-Write eine Synchronisierung der Produkte von Finance and Operations statt und in Dataverse werden für dasselbe Produkt doppelte Zeilen angezeigt.
+Um die vorherige Situation zu vermeiden, wenn andere Dynamics 365-Apps mit Finance and Operations überlappende/übereinstimmende Produkte aufweisen, muss der Administrator, der Dual-Write aktiviert, ein Bootstrap für die Spalten **Unternehmen** (Beispiel: „USMF“) und **msdyn_productnumber** (Beispiel: „1234:Black:S“) ausführen, bevor die Produkte synchronisiert werden. Das bedeutet, dass diese beiden Spalten des Produkts in Dataverse mit dem jeweiligen Unternehmen, mit dem das Produkt abgeglichen werden muss, und mit seiner Produktnummer in Finance and Operations ausgefüllt werden müssen. 
 
 Wenn die Synchronisierung aktiviert und ausgeführt wird, werden die Produkte aus Finance and Operations anschließend mit den abgeglichenen Produkten in Dataverse- und anderen Dynamics 365-Apps synchronisiert. Dies gilt für eindeutig identifizierbare Produkte und für Produktvarianten. 
 
@@ -223,6 +225,3 @@ Wenn die Synchronisierung aktiviert und ausgeführt wird, werden die Produkte au
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Migration von Produktdaten aus anderen Dynamics 365-Apps zu Finance and Operations
 
 Wenn andere Dynamics 365-Apps Produkte haben, die nicht in Finance and Operations vorhanden sind, kann der Administrator zunächst die **EcoResReleasedProductCreationV2Entity** für den Import dieser Produkte in Finance and Operations verwenden. Und anschließend kann er die Produktdaten aus Finance and Operations- und anderen Dynamics 365-Apps abgleichen, wie oben beschrieben. 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Inventory Visibility Add-In
 description: In diesem Thema wird beschrieben, wie Sie das Inventory Visibility Add-in für Dynamics 365 Supply Chain Management installieren und konfigurieren.
-author: chuzheng
+author: sherry-zheng
 manager: tfehr
 ms.date: 10/26/2020
 ms.topic: article
@@ -10,28 +10,28 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 2976153a6a7e4b4130e8f7673ed128945aeabf65
-ms.sourcegitcommit: 03c2e1717b31e4c17ee7bb9004d2ba8cf379a036
+ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4625064"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114669"
 ---
 # <a name="inventory-visibility-add-in"></a>Inventory Visibility Add-in
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 Das Inventory Visibility Add-in ist ein unabhängiger und hoch skalierbarer Microservice, der die Verfolgung von Beständen in Echtzeit ermöglicht und so eine globale Sicht auf den Bestand bietet.
 
 Alle Informationen, die sich auf den Bestand beziehen, werden durch Low-Level-SQL-Integration nahezu in Echtzeit an den Dienst exportiert. Externe Systeme greifen über RESTful APIs auf den Dienst zu, um Bestandsinformationen über festgelegte Dimensionen abzufragen und so eine Liste der verfügbaren Bestandspositionen zu erhalten.
 
-Inventory Visibility ist ein Microservice, der auf der Common Data Service aufbaut, d.h. Sie können ihn mit der Power Apps erweitern und mit der Power BI kundenspezifische Funktionen bereitstellen, um Ihre Geschäftsanforderungen zu erfüllen. Es ist auch möglich, den Index zu erweitern, um Bestandsabfragen durchzuführen.
+Inventory Visibility ist ein Microservice, der auf der Microsoft Dataverse aufbaut, d. h. Sie können ihn mit der Power Apps erweitern und mit der Power BI kundenspezifische Funktionen bereitstellen, um Ihre Geschäftsanforderungen zu erfüllen. Es ist auch möglich, den Index zu erweitern, um Bestandsabfragen durchzuführen.
 
 Inventory Visibility bietet Konfigurationsoptionen, mit denen es sich in mehrere Drittsysteme integrieren lässt. Es unterstützt die standardisierte Dimension des Bestands, benutzerdefinierte Erweiterbarkeit und standardisierte, konfigurierbare berechnete Mengen.
 
@@ -80,28 +80,55 @@ Um das Inventory Visibility Add-In zu installieren, gehen Sie wie folgt vor:
 
 Um ein Sicherheitsdienst-Token zu erhalten, gehen Sie wie folgt vor:
 
-1. Holen Sie sich Ihre `aadToken` und rufen Sie den Endpunkt: https://securityservice.operations365.dynamics.com/token auf.
-1. Ersetzen Sie die `client_assertion` im Body durch Ihre `aadToken`.
-1. Ersetzen Sie den Kontext im Body durch die Umgebung, in der Sie das Add-In bereitstellen wollen.
-1. Ersetzen Sie den Bereich im Body durch den folgenden:
+1. Melden Sie sich beim Azure Portal an, und verwenden Sie es, um die `clientId` und das `clientSecret` für Ihre Supply Chain Management-Anwendung zu finden.
+1. Rufen Sie ein Azure Active Directory-Token (`aadToken`) durch Senden einer HTTP-Anfrage mit den folgenden Eigenschaften ab:
+    - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+    - **Methode** - `GET`
+    - **Textinhalt (Formulardaten)**:
 
-    - Bereich für MCK - „https://inventoryservice.operations365.dynamics.cn/.default“  
-    (Die Anwendungs-ID Azure Active Directory und die Mandant-ID für MCK finden Sie in `appsettings.mck.json`.)
-    - Geltungsbereich für PROD - „https://inventoryservice.operations365.dynamics.com/.default“  
-    (Die Azure Active Directory Anwendungs-ID und Mandanten-ID für PROD finden Sie in `appsettings.prod.json`.)
+        | Schlüssel | Wert |
+        | --- | --- |
+        | client_id | ${aadAppId} |
+        | client_secret | ${aadAppSecret} |
+        | grant_type | client_credentials |
+        | resource | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+1. Sie sollten ein `aadToken` als Antwort erhalten, die dem folgenden Beispiel ähnelt.
 
-    Das Ergebnis sollte dem folgenden Beispiel ähneln.
+    ```json
+    {
+    "token_type": "Bearer",
+    "expires_in": "3599",
+    "ext_expires_in": "3599",
+    "expires_on": "1610466645",
+    "not_before": "1610462745",
+    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+    "access_token": "eyJ0eX...8WQ"
+    }
+    ```
+
+1. Formulieren Sie eine JSON-Anforderung, die der folgenden ähnelt:
 
     ```json
     {
         "grant_type": "client_credentials",
         "client_assertion_type":"aad_app",
-        "client_assertion": "{**Your_AADToken**}",
-        "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
-        "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
+        "client_assertion": "{Your_AADToken}",
+        "scope":"https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
         "context_type": "finops-env"
     }
     ```
+
+    Wobei:
+    - Der Wert von `client_assertion` muss das `aadToken`, das Sie im vorherigen Schritt erhalten haben.
+    - Der Wert von `context` muss die Umgebungs-ID sein, unter der Sie das Add-In bereitstellen möchten.
+    - Stellen Sie alle anderen Werte wie im Beispiel gezeigt ein.
+
+1. Senden Sie eine HTTP-Anforderung mit den folgenden Eigenschaften:
+    - **URL** - `https://securityservice.operations365.dynamics.com/token`
+    - **Methode** - `POST`
+    - **HTTP-Header** – Fügen Sie die API-Version hinzu (Schlüssel ist `Api-Version`, und Wert ist `1.0`).
+    - **Körperinhalt** – Fügen Sie die JSON-Anforderung ein, die Sie im vorherigen Schritt erstellt haben.
 
 1. Sie werden eine `access_token` als Antwort erhalten. Diese benötigen Sie als Inhaber-Token, um die Inventory Visibility API aufzurufen. Hier ist ein Beispiel.
 
@@ -500,6 +527,3 @@ Die in den vorherigen Beispielen gezeigten Abfragen könnten ein Ergebnis wie di
 ```
 
 Beachten Sie, dass die Mengen-Felder als ein Wörterbuch von Kennzahlen und ihren zugehörigen Werten strukturiert sind.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

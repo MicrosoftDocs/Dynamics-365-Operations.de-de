@@ -1,8 +1,8 @@
 ---
-title: Übersicht
+title: Entwicklungsüberblick
 description: Dieses Entwicklerhandbuch enthält eine API- und eine Referenz für benutzerdefinierte Felder. Es enthält außerdem Informationen zur Integration in andere Apps.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 010920cc84897dc5d2cfc008aa04544db6b08a73
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 517febd7967350956a28dfd9d11e4042456c7da0
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528316"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115389"
 ---
-# <a name="overview"></a>Übersicht
+# <a name="development-overview"></a>Entwicklungsüberblick
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -35,13 +35,13 @@ Dieses Entwicklerhandbuch enthält eine API- und eine Referenz für benutzerdefi
 
 - [Mit Power Apps und Power Automate erweitern](hr-developer-power-apps.md)
 
-- [Datenentitäten: Personalverwaltung in Common Data Service](hr-developer-entities.md)
+- [Datenentitäten: Personalverwaltung in Dataverse](hr-developer-entities.md)
 
 - [Benutzerdefinierte Felder](hr-developer-custom-fields.md)
 
 - Datenintegration einrichten
   - [Datenintegrationstechnologie auswählen](hr-admin-integration-choose-technology.md)
-  - [Common Data Service-Integration konfigurieren](hr-admin-integration-common-data-service.md)
+  - [Dataverse-Integration konfigurieren](hr-admin-integration-common-data-service.md)
   - [Integration mit Finance konfigurieren](hr-admin-integration-finance.md)
   - [Integration mit Dayforce konfigurieren](hr-admin-integration-dayforce.md)
   - [Eine wiederkehrende Datenexport-App erstellen](hr-admin-integration-recurring-data-export.md)
@@ -62,6 +62,3 @@ Dieses Entwicklerhandbuch enthält eine API- und eine Referenz für benutzerdefi
 - [Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)
 - [Administratorhandbuch](hr-admin-overview.md)
 - [Benutzerhandbuch](hr-hrpro-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

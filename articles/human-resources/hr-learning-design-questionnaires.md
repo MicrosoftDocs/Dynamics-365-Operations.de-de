@@ -1,8 +1,8 @@
 ---
-title: Entwerfen von Fragebögen
+title: Fragebögen erstellen
 description: In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben. Der erste Schritt ist das Entwerfen des Fragebogens. Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3f7f7d68caf12c33059d2f871fe3f4a036c89f35
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418739"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115125"
 ---
-# <a name="design-questionnaires"></a>Entwerfen von Fragebögen
+# <a name="create-questionnaires"></a>Fragebögen erstellen
 
 In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben. Der erste Schritt ist das Entwerfen des Fragebogens. Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren. 
 
@@ -91,7 +91,7 @@ Nummernkreiscodes werden verwendet, um Fragen und Antworten zu organisieren. Bas
 Alle Parameter sollten definiert worden sein, bevor Sie mit der Datenerstellung beginnen. Sie können die Fragebogenparametereinstellungen jederzeit ändern.
 
 ## <a name="questionnaire-components"></a>Fragebogen-Komponenten
-Fragebögen enthalten drei wichtigste Elemente: Antwortgruppen, die für die Antworten Auswahlfragen, Fragen und Fragebogen selbst enthalten. Sie können die Fragen für einen Fragebogen optional in Ergebnisgruppen gruppieren. Mithilfe von Ergebnisgruppen können Sie Fragen kategorisieren und für weitere Analysen auf dem Fragebogen bereitstellen. 
+Fragebögen enthalten drei wichtigste Elemente: Antwortgruppen, die für die Antworten Auswahlfragen, Fragen und Fragebogen selbst enthalten. Sie können die Fragen für einen Fragebogen optional in Ergebnisgruppen gruppieren. Mithilfe von Ergebnisgruppen können Sie Fragen kategorisieren und für weitere Analysen auf dem Fragebogen bereitstellen. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -109,7 +109,7 @@ Antwortgruppen und Antworten sind Komponenten der Informationen, aus denen Frage
 Eine Antwortgruppe kann für mehrere Fragen im gleichen Fragebogen oder in mehreren Fragebögen verwendet werden. 
 
 > [!NOTE]
-> Wenn Sie Antworttexte in den Antwortgruppen ändern, die bereits in ausgefüllten Fragebögen verwendet wurden, kann es schwierig werden, die Daten zu überprüfen und Fragebogenergebnisse sind möglicherweise nicht mehr gültig. Wenn Sie eine Antwortgruppe ändern müssen, sollten Sie erwägen, eine neue Antwortgruppe zu erstellen, anstatt eine vorhandene zu ändern. Antwortgruppen, die einer Frage oder Antwort zugeordnet sind oder bereits beantwortet wurden, können nicht gelöscht werden.
+> Wenn Sie Antworttexte in den Antwortgruppen ändern, die bereits in ausgefüllten Fragebögen verwendet wurden, kann es schwierig werden, die Daten zu überprüfen und Fragebogenergebnisse sind möglicherweise nicht mehr gültig. Wenn Sie eine Antwortgruppe ändern müssen, sollten Sie erwägen, eine neue Antwortgruppe zu erstellen, anstatt eine vorhandene zu ändern. Antwortgruppen, die einer Frage oder Antwort zugeordnet sind oder bereits beantwortet wurden, können nicht gelöscht werden.
 
 ### <a name="questions"></a>Fragen
 
@@ -233,8 +233,6 @@ Um mithilfe bedingter Fragen eine Fragenhierarchie in einem Fragebogen zu erstel
 
 #### <a name="examples"></a>Beispiele
 
-Eine juristische Person bietet seinen Kunden sowohl Artikel als auch Dienstleistungen an. Typischer Weise kaufen einige Kunden nur Artikel oder nur Dienstleistungen und manche beides. Wenn die juristische Person eine Umfrage zur Kundenzufriedenheit verteilt, kann mithilfe einer bedingten Struktur des Fragebogens verhindert werden, sodass Kunden, die nur Dienstleistungen kaufen, Fragen zu Artikeln beantworten müssen. 
+Eine juristische Person bietet seinen Kunden sowohl Artikel als auch Dienstleistungen an. Typischer Weise kaufen einige Kunden nur Artikel oder nur Dienstleistungen und manche beides. Wenn die juristische Person eine Umfrage zur Kundenzufriedenheit verteilt, kann mithilfe einer bedingten Struktur des Fragebogens verhindert werden, sodass Kunden, die nur Dienstleistungen kaufen, Fragen zu Artikeln beantworten müssen. 
 
 Alternativ können Sie einen Fragebogen z. B. so einrichten, dass Frage 2 die nächste Frage in der Folge ist, wenn ein Befragter die Antwort A für Frage 1 auswählt. Wenn der Befragte Antwort B für Frage 1 auswählt, dann könnte Frage 5 als nächstes folgen.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

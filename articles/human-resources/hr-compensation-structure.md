@@ -2,7 +2,7 @@
 title: Entwicklung einer Vergütungsstruktur
 description: Dieser Artikel führt Sie durch die Erstellung eines festen Vergütungsplans und die Anmeldung von Mitarbeitern in den Plan durch die Regeln für die Anspruchsberechtigung.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/10/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 124d0f7f83feebabf622f00732c25bfa0f6eccdd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a5e7ef2021e41c13b82523f2dc6a1b09bd1ba9f
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418704"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115895"
 ---
 # <a name="develop-a-compensation-structure"></a>Entwicklung einer Vergütungsstruktur
 
@@ -113,6 +113,3 @@ Sie können einem Mitarbeiter erst dann einen festen Vergütungsplan zuordnen, w
 
 8. Schließen Sie die Seite.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

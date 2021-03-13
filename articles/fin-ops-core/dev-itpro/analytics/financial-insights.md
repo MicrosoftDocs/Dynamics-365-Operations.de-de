@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 67f6d567c7e8d4cc6332c2d661abb04d1b28d2e9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9aaf24147900c890a14c60ab969da7124c538911
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682770"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115727"
 ---
 # <a name="financial-insights"></a>Finanzinformationen
 
@@ -66,9 +66,10 @@ Die Daten für **Finanzinformationen** werden aus dem Entitätsspeicher entnomme
 
 Sie müssen die folgenden Entitäten aktualisieren, um Daten in den Arbeitsbereichen **Finanzinformationen** und **CFO-Überblick** anzuzeigen:
 
-- Finanzberichterstellungs-Buchungsdaten, Version 2 (**Hinweis:** Dies ist neu mit Version 10.0.1 und ersetzt die vorherige Entität.)
-- Finanzberichterstattungs-Buchungsdaten
+- BudgetActivityMeasure
+- Finanzberichterstattungs-Buchungsdaten – Version 3 
 - CustCollectionsBIMeasurements
+- LedgerActivityMeasure
 - LedgerCovLiquidityMeasurement
 - Einkaufscube
 - Verkaufscube
@@ -247,6 +248,3 @@ Die Informationen in den folgenden Ressourcen sind nicht erforderlich, um die ei
 - [Zugriff auf analytische Arbeitsbereiche und Berichte in einer Umgebungen mit einem Feld](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
 - [Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Angleichen der Belegschaftsqualifikationen mit der Geschäftstätigkeit
 description: Sie können auch die Qualifikationen nachverfolgen, die Arbeitskräfte, Bewerber oder Kontaktpersonen haben oder haben sollen um ihre Rollen effektiv auszuführen. Sie können auch die Qualifikationen angeben, die für eine bestimmte Stelle erforderlich sind.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, HcmEmployeeDevelopmentWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7abaa99bdec5fcf20a63bfeb716ebb63dd3712df
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 26493306a8bd810f936b15160b07263ca41f87ae
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418684"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115583"
 ---
 # <a name="align-workforce-skills-with-business-needs"></a>Angleichen der Belegschaftsqualifikationen mit der Geschäftstätigkeit
 
@@ -62,6 +62,3 @@ Mit Qualifikationszuordnungsprofilen finden Sie Mitarbeiter oder Kandidaten mit 
 Sie können eine Qualifikationsprofilanalyse erstellen, um eine Liste der Kompetenzen für eine Arbeitskraft, einen Bewerber oder eine Kontaktperson zu einem bestimmten Datum anzuzeigen. Sie können eine Qualifikationsdefizitanalyse erstellen, um die Qualifikationen einer Person zu vergleichen und die Qualifikationen, die für eine spezifische Stelle erforderlich sind.  
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

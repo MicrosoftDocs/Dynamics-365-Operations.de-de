@@ -2,7 +2,7 @@
 title: Benutzerdefinierte Felder
 description: Sie können zu Seiten in Dynamics 365 Human Resources benutzerdefinierte Elemente hinzufügen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 583e29d9b0bae34ffc2f519bb775b9e099682fe0
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: eb27808d72728e2e2ac98fdfb8fa0643ad8f3219
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529553"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115487"
 ---
 # <a name="custom-fields"></a>Benutzerdefinierte Felder
 
@@ -31,14 +31,12 @@ ms.locfileid: "4529553"
 
 Sie können zu Seiten in Dynamics 365 Human Resources benutzerdefinierte Elemente hinzufügen. Weitere Informationen zum Erstellen benutzerdefinierter Felder finden Sie unter [Erstellen und arbeiten mit benutzerdefinierten Feldern](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
-Die meisten Common Data Service Entitäten unterstützen benutzerdefinierte Felder. Für eine vollständige Liste von Common Data Service Entitäten gehen Sie zu [Common Data Service Entitäten](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
+Die meisten Dataverse-Tabellen unterstützen benutzerdefinierte Felder. Für eine vollständige Liste der Dataverse-Tabellen finden Sie unter [Dataverse-Tabellen](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
 
-Stellen Sie sicher, dass alle erstellten benutzerdefinierten Felder aktiviert sind, damit Sie sie in Common Data Service verwenden können. Weitere Informationen finden Sie unter [Benutzerdefinierte Felder in Datenentitäten verfügbar machen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
+Stellen Sie sicher, dass alle erstellten benutzerdefinierten Felder aktiviert sind, damit Sie sie in Dataverse verwenden können. Weitere Informationen finden Sie unter [Benutzerdefinierte Felder in Datenentitäten verfügbar machen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
 
 ## <a name="see-also"></a>Siehe auch
 
-[Common Data Service Entitäten](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
-[Erstellen von und Arbeiten mit benutzerdefinierten Feldern](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
+[Dataverse-Tabellen](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
+[Benutzerdefinierte Felder erstellen und damit arbeiten](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
 [Benutzerdefinierte Felder in Datenentitäten verfügbar machen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

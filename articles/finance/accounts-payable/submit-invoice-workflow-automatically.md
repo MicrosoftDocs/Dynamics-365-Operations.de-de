@@ -1,5 +1,5 @@
 ---
-title: Rechnungen an das Workflow-System senden und Produktzugangspositionen abgleichen (Vorschau)
+title: Rechnungen beim Workflowsystem einreichen und Produktzugangspositionen abgleichen
 description: In diesem Thema wird erläutert, wie Lieferantenrechnungen an das Workflow-System gesendet und gebuchte Produktzugangspositionen automatisch mit Lieferantenrechnungen abgeglichen werden.
 author: abruer
 manager: AnnBe
@@ -11,23 +11,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cde164ee89b542d769d81d8d483049fb7ca001c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 03c9f6752a0bb9641f67d65580aca18276e43e9a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443417"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115655"
 ---
-# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines-preview"></a>Rechnungen an das Workflow-System senden und Produktzugangspositionen abgleichen (Vorschau)
+# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Rechnungen beim Workflowsystem einreichen und Produktzugangspositionen abgleichen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie Lieferantenrechnungen an das Workflow-System gesendet und gebuchte Produktzugangspositionen automatisch mit Lieferantenrechnungen abgeglichen werden.
 
@@ -47,13 +45,10 @@ Der Prozess wird ausgeführt, bis die abgeglichene Produktzugangsmenge der Rechn
 
 Rechnungsposten mit einer dreiseitige Abgleichsrichtlinie, bei der die abgeglichene Zugangsmenge geringer als die Rechnungsmenge ist, werden in den automatisierten Abgleich von Produkt zum Produktzugang einbezogen.
 
-Zum Anzeigen des Status **Letzter Abgleich** für Rechnungen, die nicht Teil des automatisierten Submit-to-Workflow-Prozesses sind, öffnen Sie die Rechnung über die Seite **Kreditorenrechnungen**. Wenn Sie die Rechnung anzeigen, werden die abgeglichenen Validierungsinformationen aktualisiert.
+Zum Anzeigen des Status **Letzter Abgleich** für Rechnungen, die nicht Teil des automatisierten Submit-to-Workflow-Prozesses sind, öffnen Sie die Rechnung über die Seite **Kreditorenrechnungen**. Wenn Sie die Rechnung anzeigen, werden die abgeglichenen Validierungsinformationen aktualisiert. Der Status **Letzter Abgleich** kann mithilfe der Hintergrundanwendung **Rechnungsabgleich überprüfen** automatisch aktualisiert werden. Sie können den automatischen Aktualisierungsprozess des Status **Letzter Abgleich** auf der Registerkarte **Hintergrundprozesse** der Seite **Prozessautomatisierung** konfigurieren (**Systemadministration\> Einrichtung\> Prozessautomatisierung**).
 
 Eine Rechnungsposition wird von der automatisierten Verarbeitung ausgeschlossen, wenn eine der folgenden Bedingungen erfüllt ist:
 
 - Der Wert **Status des automatisierten Zugangsabgleichs** der Rechnungsposition ist **Fehlgeschlagen**.
 - Die Rechnung wird verwendet.
 - Die Rechnung befindet sich im Workflow-System.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
