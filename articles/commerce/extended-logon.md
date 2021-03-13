@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 79878e2ffbf219f77f378997c277ced8bb41598c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 16835d9e7402c42f852b058150ba8da2b4da3d8b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412521"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009848"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Einrichten der erweiterten Anmeldungsfunktionen für MPOS und Cloud POS
 
@@ -34,7 +33,7 @@ Dieses Thema behandelt die Optionen für die Einrichtung der erweiterten Anmeldu
 
 ## <a name="setting-up-extended-logon"></a>Einrichten der erweiterten Anmeldung
 
-Sie finden Sie Einstellungen für Strichcodemasken unter **Retail und Commerce** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Funktionsprofile**. Das Inforegister **Funktionen** umfasst folgende Optionen, die der erweiterten Anmeldung zugeordnet sind.
+Sie finden Sie Einstellungen für Strichcodemasken unter **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Funktionsprofile**. Das Inforegister **Funktionen** umfasst folgende Optionen, die der erweiterten Anmeldung zugeordnet sind.
 
 ### <a name="staff-bar-code-logon"></a>Personal-Strichcodeanmeldung
 
@@ -67,6 +66,3 @@ Der Anmeldedienst kann erweitert werden, um zusätzliche Geräte für die erweit
 ## <a name="using-extended-logon"></a>Verwenden der erweiterten Anmeldung
 
 Wenn die erweiterte Anmeldung konfiguriert ist und einer Arbeitskraft ein Strichcode oder ein Magnetstreifen zugewiesen wurde, muss die Arbeitskraft seine Karte nur Karte durch ein Lesegerät ziehen, wenn die POS-Anmeldeseite angezeigt wird. Wenn auch ein Kennwort erforderlich ist, damit die Anmeldung durchgeführt werden kann, wird die Arbeitskraft aufgefordert, das Kennwort einzugeben.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

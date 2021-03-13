@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7fb37483412fdd09fe3734ddb148b050ec02951
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e5ff5916366f968cbf8dc9a5614466ef89faa92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428637"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007157"
 ---
 # <a name="formulas-and-formula-versions"></a>Formeln und Formelversionen
 
@@ -71,6 +70,3 @@ Die Funktion Skalierbar ist nur verfügbar, wenn nur alle Artikelkomponenten in 
 
 ## <a name="use-step-consumption"></a>Verbrauch pro Serie
 Schrittverbrauch beseitigt die Menge auf der **Formelposition**,den Sie für eine Substanz eingeben müssen. Stattdessen wird der  Schrittverbrauch konfiguriert, sodass dieser den **Von Serie** Wert und eine **Menge** besitzt. Auf Basis der Chargenauftragsmenge werden die Informationen aus dem Schritt pro Serie, der die Menge befriedigt, ausgewählt Schrittverbrauch ist hilfreich, wenn der Verbrauchssatz nicht linear in Bezug auf die Chargenauftraggröße ist und die Anforderung nur erhöht, wenn ein bestimmter Mengenschwellenwert erfüllt wird. Um diese Funktion für eine neue Formel, unter der Gruppe **Verbrauchsberechnung** zu aktivieren,ändern Sie die Formeleinstellung für den betreffenden Inhaltsstoff von **Standard** auf **Schritt** Sie können dieser Verbrauchsmethode auf der Registerkarte **Einstellungen** auf der Seite **Formelposition** anzeigen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

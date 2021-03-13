@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-11-04
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 87b04998889b86a79fd8dabde422147c5494b003
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: 4c505ccfd1998acd40dbae715c7fa572e315af2e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516793"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007515"
 ---
 # <a name="troubleshoot-product-information"></a>Fehlersuche bei Produktinformationen
 
@@ -152,6 +151,3 @@ Wenn eine Produktvariante bereits in einer Firma A freigegeben wurde und Sie ver
 Die Schaltfläche **Neu** auf der Seite **Freigegebene Produktvarianten** erstellt die Variante und gibt sie im Firmenkontext frei. Wenn die Variante bereits erstellt wurde, können Sie die **Neu**-Schaltfläche nicht verwenden, um sie in einer anderen Firma freizugeben.
 
 Um das Problem zu beheben, öffnen Sie die Seite **Produktstamm** und wählen Sie **Produkt freigeben**, um die vorhandene Variante in der gewünschten Firma freizugeben.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

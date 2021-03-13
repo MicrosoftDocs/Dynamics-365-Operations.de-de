@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7b65c23fc7ac04fc30c0001bee9541a475026018
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429126"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007490"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Fehlerbehebung bei Bestellungen
 
@@ -132,7 +131,7 @@ Sie können nur den Zeitraum verlängern, für den der Lieferant zugelassen ist.
 
 Für das in der Problembeschreibung beschriebene Beispielszenario, in dem ein Datensatz das Datum des Inkrafttretens von *01/11/2018* hat und ein Ablaufdatum von *Niemals*, können Sie einen neuen Datensatz mit dem Datum des Inkrafttretens von *01/10/2018* und ein Ablaufdatum von *Niemals* importieren. Sie können den Zeitraum jedoch nicht verkürzen, sodass das Datum des Inkrafttretens über die Datenverwaltung auf *01/12/2018* aktualisiert wird. Sie müssen diese Änderung über die Benutzeroberfläche vornehmen.
 
-## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>Nachdem ich die Lieferadresse in einem Bestellkopf geändert habe, wird der Lieferungsname nicht synchronisiert.
+## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-name-isnt-synced"></a>Nachdem ich die Lieferadresse in einem Bestellkopf geändert habe, wird der Lieferungsname nicht synchronisiert.
 
 ### <a name="issue-description"></a>Problembeschreibung
 
@@ -145,6 +144,3 @@ Dieses Verhalten ist beabsichtigt. Die ausgewählte Adresse muss als Lieferadres
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Kann ich den Benutzer finden, der eine Bestellung storniert hat?
 
 Diese Information wird nur verfolgt, wenn die Bestellung der Änderungsverwaltung unterliegt. Wenn Sie die Änderungsverwaltung verwenden, können Sie sehen, wer die Änderung (die Stornierung) eingereicht hat und wer sie genehmigt hat.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

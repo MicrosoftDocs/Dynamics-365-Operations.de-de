@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 23c9062dcc13951792306c955b54cae6f656fec5
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2bcdea4a2a8f4386b274077cd1e95398fb6fac37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646078"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009367"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Vorhersagemodell verbessern (Vorschau)
 
@@ -42,19 +41,19 @@ Wenn Ihre Organisation nur zwei Ergebnisse benötigt, ändern Sie die **Verspät
 
 ## <a name="select-fields"></a>Felder auswählen
 
-Beachten Sie bei der Auswahl von Feldern, die in das Modell aufgenommen werden sollen, dass die Liste alle verfügbaren Felder in der Common Data Service-Entität enthält, die den Daten im Azure-Data Lake zugeordnet ist. Einige dieser Felder sollten **nicht** ausgewählt werden. Die Felder, die nicht ausgewählt werden sollten, fallen in eine von drei Kategorien:
+Beachten Sie bei der Auswahl von Feldern, die in das Modell aufgenommen werden sollen, dass die Liste alle verfügbaren Felder in der Microsoft Dataverse-Tabelle enthält, die den Daten im Azure-Data Lake zugeordnet ist. Einige dieser Felder sollten **nicht** ausgewählt werden. Die Felder, die nicht ausgewählt werden sollten, fallen in eine von drei Kategorien:
 
-- Das Feld wird für die Common Data Service-Entität benötigt, aber es gibt keine Sicherungsdaten dafür im Data Lake.
+- Das Feld wird für die Dataverse-Tabelle benötigt, aber es gibt keine Sicherungsdaten dafür im Data Lake.
 - Das Feld ist eine ID und daher für eine Machine-Learning-Funktion nicht sinnvoll.
 - Das Feld stellt Informationen dar, die während der Vorhersage nicht verfügbar sind.
 
 In den folgenden Abschnitten werden die Felder angezeigt, die für die Rechnungs- und Kundenentitäten verfügbar sind, und es werden die Felder aufgelistet, die werden **nicht** für das Training ausgewählt werden sollen. Die Kategorie, die für jedes dieser Felder angegeben ist, bezieht sich auf die Kategorien in der vorhergehenden Liste.
  
-### <a name="invoice-common-data-model-entity"></a>Common Data Model-Rechnungsentität
+### <a name="invoice-dataverse-table"></a>Rechnungs-Dataverse-Tabelle
 
-Die folgende Abbildung zeigt die Felder an, die für die Rechnungsentität verfügbar sind.
+Die folgende Abbildung zeigt die Felder an, die für die Rechnungstabelle verfügbar sind.
 
-[![Verfügbare Felder für die Rechnungsentität](./media/available-fields.png)](./media/available-fields.png)
+[![Verfügbare Felder für die Rechnungstabelle](./media/available-fields.png)](./media/available-fields.png)
 
 Die folgenden Felder sollten nicht für das Training ausgewählt werden:
 
@@ -65,11 +64,11 @@ Die folgenden Felder sollten nicht für das Training ausgewählt werden:
 - **Quelldatensatz** (Kategorie 2)
 - **Quelltabelle** (Kategorie 2)
 
-### <a name="customer-common-data-model-entity"></a>Common Data Model-Debitorenentität
+### <a name="customer-dataverse-table"></a>Debitoren-Dataverse-Tabelle
 
-Die folgende Abbildung zeigt die Felder an, die für die Debitorenentität verfügbar sind.
+Die folgende Abbildung zeigt die Felder an, die für die Debitorentabelle verfügbar sind.
 
-[![Verfügbare Felder für die Debitorenentität](./media/related-entities.png)](./media/related-entities.png)
+[![Verfügbare Felder für die Debitorentabelle](./media/related-entities.png)](./media/related-entities.png)
 
 Das folgende Feld sollte nicht für das Training ausgewählt werden:
 
@@ -83,6 +82,3 @@ Die Filter unterstützen derzeit das Szenario des Debitorenzahlungsprädiktors n
 
 #### <a name="privacy-notice"></a>Datenschutzhinweis
 Vorschauen (1) wenden möglicherweise weniger Datenschutz- und Sicherheitsmaßnahmen an als der Dynamics 365 Finance and Operations-Dienst, (2) sind nicht in der Service Level Agreement (SLA) für diesen Dienst enthalten, (3) sollten nicht zur Verarbeitung personenbezogener Daten oder anderer Daten verwendet werden, die gesetzlichen oder behördlichen Compliance-Anforderungen unterliegen, und (4) hat begrenzten Support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

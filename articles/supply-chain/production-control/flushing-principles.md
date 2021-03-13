@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f7546b70ddef30d88a79b00fe31d4e82d9bfb9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 84be2a4646cfc18cd1f25a4ec969acdb62cb2856
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428638"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007240"
 ---
 # <a name="flushing-principles"></a>Bezugsprinzipien
 
@@ -63,6 +62,3 @@ Das Bezugsprinzip Fertigstellung zeigt an, dass Material automatisch verbraucht 
 
 ### <a name="available-at-location"></a>Am Lagerplatz verfügbar
 Das Bezugsprinzip Am Lagerplatz verfügbar zeigt an, dass das Material automatisch verbraucht wird, wenn es als für die Produktion entnommen registriert wird. Das Material wird als vom Standort entnommen registriert, wenn die Arbeit für die Rohmaterialentnahme abgeschlossen ist, oder wenn das Material am Produktionseingangsstandort zur Verfügung steht und die Materialposition für das Lager freigegeben wird. Die Entnahmeliste, die während des Prozesses erzeugt wird, wird in einem Chargenauftrag gebucht. Dieses Prinzip ist beispielsweise relevant, wenn Sie sehr viele Entnahmeaktivitäten für einen Produktionsauftrag haben. In diesem Fall müssen Sie die Entnahmeliste nicht manuell aktualisieren, und Sie können eine aktuelle Ansicht des RIF-Saldos erhalten.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

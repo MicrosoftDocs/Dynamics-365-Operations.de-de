@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a132a8d6e5eaf0dad54133fc9d0c12dcf5866c7c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc7fa705681c3f1fde96cabc430dad1dd0045b4d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443551"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009317"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>Degressiven Abschreibung von 150 Prozent
 
@@ -75,7 +74,7 @@ Wenn als Abschreibungsjahr **Steuerlich** ausgewählt wird, stehen im Feld **Per
 | Nutzungsdauer (Jahre)             | 5      |
 | Jährlicher Abschreibungsprozentsatz | 30 %    |
 
-Bei der Abschreibungsmethode "150 % degressiv" werden 150 Prozent durch die Anzahl der Jahre der Nutzungsdauer dividiert. Der sich ergebende Prozentsatz wird mit dem Nettobuchwert der Anlage multipliziert, um den Abschreibungsbetrag für das Jahr zu ermitteln.
+Bei der Abschreibungsmethode „150 % degressiv“ werden 150 Prozent durch die Anzahl der Jahre der Nutzungsdauer dividiert. Der sich ergebende Prozentsatz wird mit dem Nettobuchwert der Anlage multipliziert, um den Abschreibungsbetrag für das Jahr zu ermitteln.
 
 | Zeitraum | Berechnung des jährlichen Abschreibungsbetrags | Buchwert             | Nettobuchwert am Ende des Jahres |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
@@ -84,10 +83,7 @@ Bei der Abschreibungsmethode "150 % degressiv" werden 150 Prozent durch die An
 | Jahr 3 | 4.900 × 30 % = 1.470                           | 5.900 – 1.470 = 4.430  | 4.900 – 1.470 = 3.430                 |
 
 > [!NOTE]
-> Hinweis: Wenn der Betrag, der mithilfe der Abschreibungsmethode "150 % degressiv" berechnet wird, geringer ausfällt als der Betrag, der mithilfe der Methode "Linear" berechnet würde, gibt es eine Umrechnung zur linearen Methode für die verbleibende Nutzungsdauer.
+> Hinweis: Wenn der Betrag, der mithilfe der Abschreibungsmethode "150% degressiv" berechnet wird, geringer ausfällt, als der Betrag, der mithilfe der Methode "Linear" berechnet würde, gibt es eine Umrechnung zur linearen Methode für die verbleibende Nutzungsdauer.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

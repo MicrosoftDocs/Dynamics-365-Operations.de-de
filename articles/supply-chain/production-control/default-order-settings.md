@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2202b6b50d4b4b675759275379023a182b01af17
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428996"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007265"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardmäßige Auftragseinstellungen für Dimensionen und Produktvarianten
 
@@ -204,6 +203,3 @@ Um die Überprüfungsoption festzulegen:
 1. Auf der Registerkarte **Allgemeines** legen Sie unter **Überprüfung von Standardbestellmengen** einen der folgenden Werte fest:
     - **Strikt** – Wählen Sie diese Option, um sicherzustellen, dass alle Werte der **Standardbestellmenge** ein Mehrfaches des Werts **Mehrfach** des jeweiligen Inforegisters (**Bestellung**, **Bestand** und **Auftrag**) sind.
     - **Standard** – Wählen Sie diese Option aus, um die Standardüberprüfung zu verwenden (dies funktioniert genauso, wenn diese Funktion nicht aktiviert ist).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

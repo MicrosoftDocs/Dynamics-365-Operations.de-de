@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Austria
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5c9b261ca1e71bc705b3b11def199a6a6b4b3311
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0b3d30f9115c6e784d58647e65f00666b7367671
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407740"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009109"
 ---
 # <a name="austria-overview"></a>Österreich – Übersicht
 
@@ -65,6 +64,3 @@ Weitere Informationen zu den Einstellungen des MwSt. -Auszugs finden Sie unter [
 - [Microsoft Dynamics-Lokalisierungs-Portal: Österreich-Bericht](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Austria.html)
 - [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

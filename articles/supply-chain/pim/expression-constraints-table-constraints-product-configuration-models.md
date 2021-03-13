@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc07d5b915e0b878cc7b2ef1d5f3253de8776608
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428901"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007702"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Ausdruckseinschränkungen und Tabelleneinschränkungen in Produktkonfigurationsmodellen
 
@@ -121,16 +120,16 @@ In den folgenden Tabellen werden die Operatoren und Infixschreibweise aufgeliste
 <td>Dies gilt nur, wenn alle Bedingungen erfüllt sind. Wenn die Anzahl der Bedingungen 0 (Null) ist, ergibt dies <strong>Wahr</strong>.</td>
 <td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>Operator:</strong> And[x == 2, y &lt;= 2]</li>
+<li><strong>Operator:</strong> Und[x == 2, y &lt;= 2]</li>
 <li><strong>Infixschreibweise:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Oder</td>
 <td>Dies trifft zu, wenn jede Bedingung wahr ist. Wenn die Anzahl der Bedingungen 0 (Null) ist, ergibt dies <strong>Falsch</strong>.</td>
-<td>Or[args], infix: a | b | ... | z</td>
+<td>Oder[args], infix: a | b | ... | z</td>
 <td><ul>
-<li><strong>Operator:</strong> Or[x == 2, y &lt;= 2]</li>
+<li><strong>Operator:</strong> Oder[x == 2, y &lt;= 2]</li>
 <li><strong>Infixschreibweise:</strong> x == 2 | y &lt;= 2</li>
 </ul></td>
 </tr>
@@ -146,7 +145,7 @@ In den folgenden Tabellen werden die Operatoren und Infixschreibweise aufgeliste
 <tr class="odd">
 <td>Minus</td>
 <td>Dies negiert das Argument. Dies muss genau eine Bedingung haben.</td>
-<td>Minus[expr], infix: -expr</td>
+<td>Minus[expr], Infix: -expr</td>
 <td><ul>
 <li><strong>Operator:</strong> Minus[x] == y</li>
 <li><strong>Infixschreibweise:</strong> -x == y</li>
@@ -169,7 +168,7 @@ In den folgenden Tabellen werden die Operatoren und Infixschreibweise aufgeliste
 </tr>
 <tr class="even">
 <td>Antriebskraft</td>
-<td>Dies nimmt einen exponentiellen Wert. Dies wendet die Exponenten von rechts nach links an. (Mit anderen Worten, &#39;ist rechts-assoziativ.) Daher ist <strong>Power[a, b, c]</strong> äquivalent zu <strong>Power[a, Power[b, c]]</strong>. <strong>Power</strong> kann nur mit einer positiven Konstante als Exponent verwendet werden.</td>
+<td>Dies nimmt einen exponentiellen Wert. Dies wendet die Exponenten von rechts nach links an. (Das bedeutet, dass dies rechtsverknüpfend ist.) Deshalb ist <strong>Power[a, b, c]</strong> gleich <strong>Power[a, Power[b, c]]</strong>. <strong>Power</strong> kann nur mit einer positiven Konstante als Exponent verwendet werden.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operator:</strong> Power[x, 2] == y</li>
@@ -191,7 +190,7 @@ In den folgenden Tabellen werden die Operatoren und Infixschreibweise aufgeliste
 <tr class="odd">
 <td>Nicht</td>
 <td>Dies produziert die logische Umkehrung der Bedingung. Dies muss genau eine Bedingung haben.</td>
-<td>Not[expr], infix: !expr</td>
+<td>Not[expr], Infix: !expr</td>
 <td><ul>
 <li><strong>Operator:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>Infixschreibweise:</strong> !x!(y == 3)</li>
@@ -222,7 +221,7 @@ Die Beispiele in der nächsten Tabellen zeigen, wie eine Infixnotation geschrieb
 |        (x)        |                           Klammern setzten die standardmäßige Rangfolge außer Kraft.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Warum werden meine Ausdruckseinschränkungen nicht ordnungsgemäß validiert?
-Sie können reservierte Schlüsselwörter nicht als Wandlernamen für Attribute, Komponenten oder Unterkomponenten in einem Produktkonfigurationsmodell verwenden.Die folgende Tabelle enthält eine Liste der reservierten Schlüsselwörter, die Sie nicht verwenden dürfen.
+Sie können reservierte Schlüsselwörter nicht als Wandlernamen für Attribute, Komponenten oder Unterkomponenten in einem Produktkonfigurationsmodell verwenden. Die folgende Tabelle enthält eine Liste der reservierten Schlüsselwörter, die Sie nicht verwenden dürfen:
 
 -   Decke
 -   Element
@@ -254,6 +253,3 @@ Sie können reservierte Schlüsselwörter nicht als Wandlernamen für Attribute,
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c408c0b0c32292c074bcabf3822a50a24bbdd301
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429051"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007290"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Crossdocking von Produktionsaufträgen zu Ausgangsrampen
 
@@ -38,7 +37,7 @@ Crossdocking aus der Produktion an einen ausgehenden Lagerplatz ist für Herstel
 
 Falls kein unmittelbarer Bedarf für ein Produkt besteht, muss es bei Lagerortlagerplätzen am Produktionsstandort eingelagert werden. Dieser Vorgang ist auch als *opportunistisches Crossdocking* bekannt. Dies gibt an, dass die Verkaufschance bei Bedarf zum Versand des Produkts genutzt werden soll, anstatt das Produkt für interne Lagerung zu halten.
 
-Im folgenden Beispiel werden drei Variationen eines Flusses dargestellt, der am Ende der Produktionsposition (2) beginnt.
+Im folgenden Beispiel werden drei Variationen eines Flows dargestellt, der am Ende der Produktionsposition (2) beginnt.
 
 Ein Produkt wird dem Warenausgangslagerplatz (3) als fertig gemeldet und ein Gabelstaplerfahrer holt die Palette an diesem Lagerplatz (3) ab.
 
@@ -127,6 +126,3 @@ Nachdem ein Produkt an der Fertigungsstraße als fertig gemeldet wird, wird es a
 -   Das Crossdockingszenario wird für Chargen- und seriengesteuerte Artikel unterstützt. Die Chargen- und Seriennummerdimensionen über und unter dem Lagerplatz in der Reservierungshierarchie sind definiert. 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
