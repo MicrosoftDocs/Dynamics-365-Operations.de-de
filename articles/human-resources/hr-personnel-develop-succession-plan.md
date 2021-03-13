@@ -1,8 +1,8 @@
 ---
 title: Nachfolgeplan entwickeln
-description: Während Ihre Organisation wächst und Sie die Nachfolgeplanung erwägen, möchten Sie vielleicht jemand finden, der ähnliche Qualifikationen wie eine andere Person hat.
+description: Wenn Ihre Organisation wächst, müssen Sie mit der Nachfolgeplanung beginnen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,52 +11,48 @@ ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e9334bb8a594d19aa82167cfa11a9522bbba4bea
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 203dbc5463bfcc4249e9ed73802a9a1fc153f260
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418611"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130204"
 ---
-# <a name="develop-succession-plan"></a><span data-ttu-id="24541-103">Nachfolgeplan entwickeln</span><span class="sxs-lookup"><span data-stu-id="24541-103">Develop succession plan</span></span>
+# <a name="develop-a-succession-plan"></a><span data-ttu-id="d23e4-103">Nachfolgeplan entwickeln</span><span class="sxs-lookup"><span data-stu-id="d23e4-103">Develop a succession plan</span></span>
 
+<span data-ttu-id="d23e4-104">Wenn Ihre Organisation wächst, müssen Sie mit der Nachfolgeplanung beginnen.</span><span class="sxs-lookup"><span data-stu-id="d23e4-104">As your organization grows, you must begin succession planning.</span></span> <span data-ttu-id="d23e4-105">Während der Nachfolgeplanung möchten Sie möglicherweise jemanden finden, der ähnliche Fähigkeiten wie eine andere Person hat.</span><span class="sxs-lookup"><span data-stu-id="d23e4-105">During succession planning, you might want to find someone who has similar skills to another person.</span></span> <span data-ttu-id="d23e4-106">Die Qualifikationszuordnung ermöglicht es Ihnen, Ihre vorhandenen Mitarbeiter und Bewerber zu analysieren, um festzustellen, ob ihre Fertigkeiten denen eines wertgeschätzten Mitarbeiters übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="d23e4-106">Skill mapping allows you to analyze your existing employees and applicants to see if they match the skill set of a valued employee.</span></span> <span data-ttu-id="d23e4-107">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="d23e4-107">The demo data company used to create this procedure is USMF.</span></span>
 
-
-<span data-ttu-id="24541-104">Während Ihre Organisation wächst und Sie die Nachfolgeplanung erwägen, möchten Sie vielleicht jemand finden, der ähnliche Qualifikationen wie eine andere Person hat.</span><span class="sxs-lookup"><span data-stu-id="24541-104">As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person.</span></span>  <span data-ttu-id="24541-105">Die Qualifikationszuordnung ermöglicht es Ihnen, Ihre vorhandenen Mitarbeiter und Bewerber zu analysieren, um festzustellen, ob ihre Fertigkeiten denen eines wertgeschätzten Mitarbeiters übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="24541-105">Skill mapping allows you to analyse your existing employees and applicants to see if they match the skill set of a valued employee.</span></span> <span data-ttu-id="24541-106">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="24541-106">The demo data company used to create this procedure is USMF.</span></span>
-
-1. <span data-ttu-id="24541-107">Wechseln Sie zu "Personalverwaltung" > "Kompetenzen" > "Qualifikationsanalyse" > "Qualifikationszuordnungsprofile".</span><span class="sxs-lookup"><span data-stu-id="24541-107">Go to Human resources > Competencies > Skill analysis > Skill mapping profiles.</span></span>
-2. <span data-ttu-id="24541-108">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="24541-108">Click New.</span></span>
-3. <span data-ttu-id="24541-109">Geben Sie im Feld "Qualifikationszuordnung" einen Namen für Ihre Qualifikationszuordnung ein.</span><span class="sxs-lookup"><span data-stu-id="24541-109">In the Skill mapping field, In the Skill mapping field, enter a name for your skill mapping.</span></span>  <span data-ttu-id="24541-110">Beispiel: Mitarbeiter.</span><span class="sxs-lookup"><span data-stu-id="24541-110">Example: Employee.</span></span>
-4. <span data-ttu-id="24541-111">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="24541-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="24541-112">Geben Sie ein Datum in das Feld "Datum" ein.</span><span class="sxs-lookup"><span data-stu-id="24541-112">In the Date field, enter a date.</span></span>
-6. <span data-ttu-id="24541-113">Klicken Sie auf "Profil abrufen".</span><span class="sxs-lookup"><span data-stu-id="24541-113">Click Retrieve profile.</span></span>
-7. <span data-ttu-id="24541-114">Klicken Sie auf "Person".</span><span class="sxs-lookup"><span data-stu-id="24541-114">Click Person.</span></span>
-8. <span data-ttu-id="24541-115">Geben Sie im Feld "Person" einen Namen ein oder wählen Sie das Dropdownmenü aus.</span><span class="sxs-lookup"><span data-stu-id="24541-115">In the Person field, type in a name, or select the drop down.</span></span>  <span data-ttu-id="24541-116">Beispiel: Katja Provinzler.</span><span class="sxs-lookup"><span data-stu-id="24541-116">Example: Cassie Hicks.</span></span>
-9. <span data-ttu-id="24541-117">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="24541-117">Click OK.</span></span>
-10. <span data-ttu-id="24541-118">Erweitern Sie das Zertifikats-Inforegister, um die Zertifikate anzuzeigen oder zu bearbeiten, einschließlich der Qualifikationszuordnung.</span><span class="sxs-lookup"><span data-stu-id="24541-118">Expand the certificates fast tab to view or edit the certificates included in the skill mapping.</span></span>
-11. <span data-ttu-id="24541-119">Erweitern Sie das Inforegister "Qualifikationen", um die Qualifikationen anzuzeigen oder zu bearbeiten, die eingefügt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="24541-119">Expand the Skills fast tab to view or edit the skills to be included.</span></span>
-12. <span data-ttu-id="24541-120">Markieren Sie in der Liste die erste Zeile.</span><span class="sxs-lookup"><span data-stu-id="24541-120">In the list, mark the first row.</span></span>  <span data-ttu-id="24541-121">Beispiel: Buchhaltung</span><span class="sxs-lookup"><span data-stu-id="24541-121">Example:  Accounting</span></span>
-13. <span data-ttu-id="24541-122">Klicken Sie auf das Kontrollkästchen "Optional".</span><span class="sxs-lookup"><span data-stu-id="24541-122">Click the Optional checkbox.</span></span>
-14. <span data-ttu-id="24541-123">Wählen Sie im Feld "Wichtigkeit" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="24541-123">In the Importance field, select an option.</span></span>
-    * <span data-ttu-id="24541-124">Wenn Sie eine Qualifikation als optional markieren, müssen Sie die Wichtigkeitsstufe der Qualifikation auswählen.</span><span class="sxs-lookup"><span data-stu-id="24541-124">When you mark a skill as optional, you are required to select the importance level of the skill.</span></span>  
-15. <span data-ttu-id="24541-125">Wählen Sie in der Liste die Zeile "2" aus.</span><span class="sxs-lookup"><span data-stu-id="24541-125">In the list, select row 2.</span></span>
-16. <span data-ttu-id="24541-126">Klicken Sie auf das Kontrollkästchen "Optional".</span><span class="sxs-lookup"><span data-stu-id="24541-126">Click the Optional checkbox.</span></span>
-17. <span data-ttu-id="24541-127">Wählen Sie im Feld "Wichtigkeit" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="24541-127">In the Importance field, select an option.</span></span>
-18. <span data-ttu-id="24541-128">Wählen Sie in der Liste die Zeile "3" aus.</span><span class="sxs-lookup"><span data-stu-id="24541-128">In the list, select row 3.</span></span>
-19. <span data-ttu-id="24541-129">Klicken Sie auf das Kontrollkästchen "Optional".</span><span class="sxs-lookup"><span data-stu-id="24541-129">Click the Optional checkbox.</span></span>
-20. <span data-ttu-id="24541-130">Wählen Sie im Feld "Wichtigkeit" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="24541-130">In the Importance field, select an option.</span></span>
-21. <span data-ttu-id="24541-131">Wählen Sie in der Liste die Zeile "4" aus.</span><span class="sxs-lookup"><span data-stu-id="24541-131">In the list, select row 4.</span></span>
-22. <span data-ttu-id="24541-132">Klicken Sie auf das Kontrollkästchen "Optional".</span><span class="sxs-lookup"><span data-stu-id="24541-132">Click the Optional checkbox.</span></span>
-23. <span data-ttu-id="24541-133">Wählen Sie im Feld "Wichtigkeit" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="24541-133">In the Importance field, select an option.</span></span>
-24. <span data-ttu-id="24541-134">Erweitern Sie die Schnellregisterkarte "Ausbildung", um die Ausbildungskompetenzen anzuzeigen oder zu bearbeiten, die in die Qualifikationszuordnung aufgenommen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="24541-134">Expand the Education fast tab to view or edit the education competencies to be included in the skill mapping.</span></span>
-25. <span data-ttu-id="24541-135">Klicken Sie auf "Ausführen".</span><span class="sxs-lookup"><span data-stu-id="24541-135">Click Execute.</span></span>
-26. <span data-ttu-id="24541-136">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="24541-136">Click OK.</span></span>
-27. <span data-ttu-id="24541-137">Klicken Sie auf "Ergebnis".</span><span class="sxs-lookup"><span data-stu-id="24541-137">Click Result.</span></span>
-28. <span data-ttu-id="24541-138">Klicken Sie auf "Bericht".</span><span class="sxs-lookup"><span data-stu-id="24541-138">Click Report.</span></span>
-    * <span data-ttu-id="24541-139">Der Bericht führt die besten Übereinstimmungen oben im Bericht auf.</span><span class="sxs-lookup"><span data-stu-id="24541-139">The report will list the best matches at the top of the report.</span></span>  <span data-ttu-id="24541-140">Sie können sehen, dass dort ein Lückenelement aufgeführt ist.</span><span class="sxs-lookup"><span data-stu-id="24541-140">You can see that there is a gap element listed.</span></span>  <span data-ttu-id="24541-141">Dies ist die Differenz zwischen der Ebene, die auf der Qualifikationszuordnung aufgeführt war und der Ebene der Qualifikation, die der Person zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="24541-141">This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.</span></span>  
+1. <span data-ttu-id="d23e4-108">Wechseln Sie zu **Personalverwaltung > Kompetenzen > Qualifikationsanalyse > Qualifikationszuordnungsprofile**.</span><span class="sxs-lookup"><span data-stu-id="d23e4-108">Go to **Human resources > Competencies > Skill analysis > Skill mapping profiles**.</span></span>
+2. <span data-ttu-id="d23e4-109">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="d23e4-109">Select **New**.</span></span>
+3. <span data-ttu-id="d23e4-110">Geben Sie im Feld **Qualifikationszuordnung** einen Namen für Ihre Qualifikationszuordnung ein.</span><span class="sxs-lookup"><span data-stu-id="d23e4-110">In the **Skill mapping** field, enter a name for your skill mapping.</span></span> <span data-ttu-id="d23e4-111">Beispiel: Mitarbeiter.</span><span class="sxs-lookup"><span data-stu-id="d23e4-111">Example: Employee.</span></span>
+4. <span data-ttu-id="d23e4-112">Geben Sie im Feld **Beschreibung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d23e4-112">In the **Description** field, type a value.</span></span>
+5. <span data-ttu-id="d23e4-113">Geben Sie ein Datum in das Feld **Datum** ein.</span><span class="sxs-lookup"><span data-stu-id="d23e4-113">In the **Date** field, enter a date.</span></span>
+6. <span data-ttu-id="d23e4-114">Wählen Sie **Profil abrufen**.</span><span class="sxs-lookup"><span data-stu-id="d23e4-114">Select **Retrieve profile**.</span></span>
+7. <span data-ttu-id="d23e4-115">Wählen Sie **Person**.</span><span class="sxs-lookup"><span data-stu-id="d23e4-115">Select **Person**.</span></span>
+8. <span data-ttu-id="d23e4-116">Geben Sie im Feld **Person** einen Namen ein oder wählen Sie das Dropdownmenü aus.</span><span class="sxs-lookup"><span data-stu-id="d23e4-116">In the **Person** field, type in a name, or select the drop-down.</span></span>
+9. <span data-ttu-id="d23e4-117">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="d23e4-117">Select **OK**.</span></span>
+10. <span data-ttu-id="d23e4-118">Erweitern Sie das **Zertifikate**-Inforegister, um die Zertifikate anzuzeigen oder zu bearbeiten, einschließlich der Qualifikationszuordnung.</span><span class="sxs-lookup"><span data-stu-id="d23e4-118">Expand the **Certificates** fast tab to view or edit the certificates included in the skill mapping.</span></span>
+11. <span data-ttu-id="d23e4-119">Erweitern Sie das Inforegister **Qualifikationen**, um die Qualifikationen anzuzeigen oder zu bearbeiten, die eingefügt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="d23e4-119">Expand the **Skills** fast tab to view or edit the skills to be included.</span></span>
+12. <span data-ttu-id="d23e4-120">Markieren Sie in der Liste die erste Zeile.</span><span class="sxs-lookup"><span data-stu-id="d23e4-120">In the list, mark the first row.</span></span> <span data-ttu-id="d23e4-121">Beispiel: Buchhaltung.</span><span class="sxs-lookup"><span data-stu-id="d23e4-121">Example:  Accounting.</span></span>
+13. <span data-ttu-id="d23e4-122">Aktivieren Sie das **Optional**-Kontrollkästchen.</span><span class="sxs-lookup"><span data-stu-id="d23e4-122">Select the **Optional** checkbox.</span></span>
+14. <span data-ttu-id="d23e4-123">Wählen Sie im Feld **Wichtigkeit** eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="d23e4-123">In the **Importance** field, select an option.</span></span> <span data-ttu-id="d23e4-124">Wenn Sie eine Qualifikation als optional markieren, müssen Sie die Wichtigkeitsstufe der Qualifikation auswählen.</span><span class="sxs-lookup"><span data-stu-id="d23e4-124">When you mark a skill as optional, you must select the importance level of the skill.</span></span>  
+15. <span data-ttu-id="d23e4-125">Wählen Sie in der Liste die Zeile "2" aus.</span><span class="sxs-lookup"><span data-stu-id="d23e4-125">In the list, select row 2.</span></span>
+16. <span data-ttu-id="d23e4-126">Aktivieren Sie das **Optional**-Kontrollkästchen.</span><span class="sxs-lookup"><span data-stu-id="d23e4-126">Select the **Optional** checkbox.</span></span>
+17. <span data-ttu-id="d23e4-127">Wählen Sie im Feld **Wichtigkeit** eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="d23e4-127">In the **Importance** field, select an option.</span></span>
+18. <span data-ttu-id="d23e4-128">Wählen Sie in der Liste die Zeile "3" aus.</span><span class="sxs-lookup"><span data-stu-id="d23e4-128">In the list, select row 3.</span></span>
+19. <span data-ttu-id="d23e4-129">Aktivieren Sie das **Optional**-Kontrollkästchen.</span><span class="sxs-lookup"><span data-stu-id="d23e4-129">Select the **Optional** checkbox.</span></span>
+20. <span data-ttu-id="d23e4-130">Wählen Sie im Feld **Wichtigkeit** eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="d23e4-130">In the **Importance** field, select an option.</span></span>
+21. <span data-ttu-id="d23e4-131">Wählen Sie in der Liste die Zeile "4" aus.</span><span class="sxs-lookup"><span data-stu-id="d23e4-131">In the list, select row 4.</span></span>
+22. <span data-ttu-id="d23e4-132">Aktivieren Sie das **Optional**-Kontrollkästchen.</span><span class="sxs-lookup"><span data-stu-id="d23e4-132">Select the **Optional** checkbox.</span></span>
+23. <span data-ttu-id="d23e4-133">Wählen Sie im Feld "Wichtigkeit" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="d23e4-133">In the Importance field, select an option.</span></span>
+24. <span data-ttu-id="d23e4-134">Erweitern Sie die Schnellregisterkarte **Ausbildung**, um die Ausbildungskompetenzen anzuzeigen oder zu bearbeiten, die in die Qualifikationszuordnung aufgenommen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="d23e4-134">Expand the **Education** fast tab to view or edit the education competencies to be included in the skill mapping.</span></span>
+25. <span data-ttu-id="d23e4-135">Wählen Sie **Ausführen**.</span><span class="sxs-lookup"><span data-stu-id="d23e4-135">Select **Execute**.</span></span>
+26. <span data-ttu-id="d23e4-136">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="d23e4-136">Select **OK**.</span></span>
+27. <span data-ttu-id="d23e4-137">Wählen Sie **Ergebnis** aus.</span><span class="sxs-lookup"><span data-stu-id="d23e4-137">Select **Result**.</span></span>
+28. <span data-ttu-id="d23e4-138">Wählen Sie **Bericht**.</span><span class="sxs-lookup"><span data-stu-id="d23e4-138">Select **Report**.</span></span> <span data-ttu-id="d23e4-139">Der Bericht führt die besten Übereinstimmungen oben im Bericht auf.</span><span class="sxs-lookup"><span data-stu-id="d23e4-139">The report lists the best matches at the top of the report.</span></span> <span data-ttu-id="d23e4-140">Sie können sehen, dass ein Lückenelement aufgeführt ist.</span><span class="sxs-lookup"><span data-stu-id="d23e4-140">You can see a gap element listed.</span></span> <span data-ttu-id="d23e4-141">Eine Lücke ist der Unterschied zwischen der Qualifikationszuordnungsstufe und der Qualifikationsstufe der Person.</span><span class="sxs-lookup"><span data-stu-id="d23e4-141">A gap is the difference between the skill-mapping level and the person's skill level.</span></span>  
 
