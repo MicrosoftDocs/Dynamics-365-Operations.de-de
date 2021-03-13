@@ -2,7 +2,7 @@
 title: Mitarbeitervergütungsprogramm bereitstellen
 description: Dieser Artikel beschreibt, wie Vorteilselemente erstellt werden, die verwendet werden, wenn ein neuer Vorteil erstellt wird.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,60 +11,60 @@ ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: cc02346ebccd04f2b4f6fc7029717a8793d75e0d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8fe53b28d1e2ff539cf431a2a6a00b10d1adb06f
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418702"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112636"
 ---
-# <a name="deliver-employee-benefits-program"></a><span data-ttu-id="23a4c-103">Mitarbeitervergütungsprogramm bereitstellen</span><span class="sxs-lookup"><span data-stu-id="23a4c-103">Deliver employee benefits program</span></span>
+# <a name="deliver-employee-benefits-program"></a><span data-ttu-id="d1a9a-103">Mitarbeitervergütungsprogramm bereitstellen</span><span class="sxs-lookup"><span data-stu-id="d1a9a-103">Deliver employee benefits program</span></span>
 
-<span data-ttu-id="23a4c-104">Dieser Artikel beschreibt, wie Vorteilselemente erstellt werden, die verwendet werden, wenn ein neuer Vorteil erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="23a4c-104">This article shows you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="23a4c-105">Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="23a4c-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="23a4c-106">Diese Aufgabe ist für einen "Leiter Vergütungen/Bezüge" vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="23a4c-106">This task is intended for a Compensation and Benefits manager.</span></span>
+<span data-ttu-id="d1a9a-104">Dieser Artikel beschreibt, wie Vorteilselemente erstellt werden, die verwendet werden, wenn ein neuer Vorteil erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-104">This article shows you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="d1a9a-105">Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="d1a9a-106">Diese Aufgabe ist für einen "Leiter Vergütungen/Bezüge" vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-106">This task is intended for a Compensation and Benefits manager.</span></span>
 
 
-## <a name="create-benefit-elements"></a><span data-ttu-id="23a4c-107">Vorteilselemente erstellen</span><span class="sxs-lookup"><span data-stu-id="23a4c-107">Create benefit elements</span></span>
-1. <span data-ttu-id="23a4c-108">Diese Aufgabe wird von der Listenseite "Vorteile" aus gestartet.</span><span class="sxs-lookup"><span data-stu-id="23a4c-108">This task starts from the Benefits list page.</span></span> <span data-ttu-id="23a4c-109">Starten Sie die Aufgabe, indem Sie diese Seite öffnen oder die Listenseite "Vorteile" durchsuchen.</span><span class="sxs-lookup"><span data-stu-id="23a4c-109">Start the task by opening that page or searching the Benefits list page.</span></span>
-2. <span data-ttu-id="23a4c-110">Klicken Sie auf Neu.</span><span class="sxs-lookup"><span data-stu-id="23a4c-110">Click New.</span></span>
-3. <span data-ttu-id="23a4c-111">Geben Sie im Feld "Typ" den Namen des Vorteilstyps ein, den Sie erstellen.</span><span class="sxs-lookup"><span data-stu-id="23a4c-111">In the Type field, Enter the name of the type of benefit you are creating..</span></span>
-4. <span data-ttu-id="23a4c-112">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="23a4c-112">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="23a4c-113">Wählen Sie im Feld "Gleichzeitige Registrierung" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="23a4c-113">In the Concurrent enrollment field, select an option.</span></span>
-    * <span data-ttu-id="23a4c-114">Um die Fähigkeit von Mitarbeitern einzuschränken, sich bei mehreren Krankenversicherungsplänen zu registrieren, wählen Sie "Eine Registrierung pro Typ" aus.</span><span class="sxs-lookup"><span data-stu-id="23a4c-114">To restrict employees' ability to enroll in multiple medical plans, select One enrollment per type.</span></span>  
-6. <span data-ttu-id="23a4c-115">Wählen Sie im Feld "Lohnkategorie" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="23a4c-115">In the Payroll category field, select an option.</span></span>
-7. <span data-ttu-id="23a4c-116">Klicken Sie auf die Registerkarte "Pläne".</span><span class="sxs-lookup"><span data-stu-id="23a4c-116">Click the Plans tab.</span></span>
-8. <span data-ttu-id="23a4c-117">Klicken Sie auf Neu.</span><span class="sxs-lookup"><span data-stu-id="23a4c-117">Click New.</span></span>
-9. <span data-ttu-id="23a4c-118">Geben Sie im Feld "Plan" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="23a4c-118">In the Plan field, type a value.</span></span>
-10. <span data-ttu-id="23a4c-119">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="23a4c-119">In the Description field, type a value.</span></span>
-11. <span data-ttu-id="23a4c-120">Klicken Sie im Feld "Typ" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="23a4c-120">In the Type field, click the drop-down button to open the lookup.</span></span>
-12. <span data-ttu-id="23a4c-121">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="23a4c-121">In the list, find and select the desired record.</span></span>
-13. <span data-ttu-id="23a4c-122">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="23a4c-122">In the list, click the link in the selected row.</span></span>
-14. <span data-ttu-id="23a4c-123">Wählen Sie im Feld "Lohnauswirkung" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="23a4c-123">In the Payroll impact field, select an option.</span></span>
-15. <span data-ttu-id="23a4c-124">Klicken Sie auf die Registerkarte "Optionen".</span><span class="sxs-lookup"><span data-stu-id="23a4c-124">Click the Options tab.</span></span>
-16. <span data-ttu-id="23a4c-125">Klicken Sie auf Neu.</span><span class="sxs-lookup"><span data-stu-id="23a4c-125">Click New.</span></span>
-17. <span data-ttu-id="23a4c-126">Geben Sie im Feld "Option" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="23a4c-126">In the Option field, type a value.</span></span>
-18. <span data-ttu-id="23a4c-127">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="23a4c-127">In the Description field, type a value.</span></span>
+## <a name="create-benefit-elements"></a><span data-ttu-id="d1a9a-107">Vorteilselemente erstellen</span><span class="sxs-lookup"><span data-stu-id="d1a9a-107">Create benefit elements</span></span>
+1. <span data-ttu-id="d1a9a-108">Diese Aufgabe wird von der Listenseite "Vorteile" aus gestartet.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-108">This task starts from the Benefits list page.</span></span> <span data-ttu-id="d1a9a-109">Starten Sie die Aufgabe, indem Sie diese Seite öffnen oder die Listenseite "Vorteile" durchsuchen.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-109">Start the task by opening that page or searching the Benefits list page.</span></span>
+2. <span data-ttu-id="d1a9a-110">Klicken Sie auf Neu.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-110">Click New.</span></span>
+3. <span data-ttu-id="d1a9a-111">Geben Sie im Feld "Typ" den Namen des Vorteilstyps ein, den Sie erstellen.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-111">In the Type field, Enter the name of the type of benefit you are creating..</span></span>
+4. <span data-ttu-id="d1a9a-112">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-112">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="d1a9a-113">Wählen Sie im Feld "Gleichzeitige Registrierung" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-113">In the Concurrent enrollment field, select an option.</span></span>
+    * <span data-ttu-id="d1a9a-114">Um die Fähigkeit von Mitarbeitern einzuschränken, sich bei mehreren Krankenversicherungsplänen zu registrieren, wählen Sie "Eine Registrierung pro Typ" aus.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-114">To restrict employees' ability to enroll in multiple medical plans, select One enrollment per type.</span></span>  
+6. <span data-ttu-id="d1a9a-115">Wählen Sie im Feld "Lohnkategorie" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-115">In the Payroll category field, select an option.</span></span>
+7. <span data-ttu-id="d1a9a-116">Klicken Sie auf die Registerkarte "Pläne".</span><span class="sxs-lookup"><span data-stu-id="d1a9a-116">Click the Plans tab.</span></span>
+8. <span data-ttu-id="d1a9a-117">Klicken Sie auf Neu.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-117">Click New.</span></span>
+9. <span data-ttu-id="d1a9a-118">Geben Sie im Feld "Plan" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-118">In the Plan field, type a value.</span></span>
+10. <span data-ttu-id="d1a9a-119">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-119">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="d1a9a-120">Klicken Sie im Feld "Typ" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-120">In the Type field, click the drop-down button to open the lookup.</span></span>
+12. <span data-ttu-id="d1a9a-121">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-121">In the list, find and select the desired record.</span></span>
+13. <span data-ttu-id="d1a9a-122">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-122">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="d1a9a-123">Wählen Sie im Feld "Lohnauswirkung" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-123">In the Payroll impact field, select an option.</span></span>
+15. <span data-ttu-id="d1a9a-124">Klicken Sie auf die Registerkarte "Optionen".</span><span class="sxs-lookup"><span data-stu-id="d1a9a-124">Click the Options tab.</span></span>
+16. <span data-ttu-id="d1a9a-125">Klicken Sie auf Neu.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-125">Click New.</span></span>
+17. <span data-ttu-id="d1a9a-126">Geben Sie im Feld "Option" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-126">In the Option field, type a value.</span></span>
+18. <span data-ttu-id="d1a9a-127">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-127">In the Description field, type a value.</span></span>
 
-## <a name="create-a-benefit"></a><span data-ttu-id="23a4c-128">Vorteil erstellen</span><span class="sxs-lookup"><span data-stu-id="23a4c-128">Create a benefit</span></span>
-1. <span data-ttu-id="23a4c-129">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="23a4c-129">Close the page.</span></span>
-2. <span data-ttu-id="23a4c-130">Wechseln Sie zu "Personalverwaltung" > "Leistungen" > "Leistungen".</span><span class="sxs-lookup"><span data-stu-id="23a4c-130">Go to Human resources > Benefits > Benefits.</span></span>
-3. <span data-ttu-id="23a4c-131">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="23a4c-131">Click New to open the drop dialog.</span></span>
-4. <span data-ttu-id="23a4c-132">Klicken Sie im Feld "Plan" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="23a4c-132">In the Plan field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="23a4c-133">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="23a4c-133">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="23a4c-134">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="23a4c-134">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="23a4c-135">Klicken Sie im Feld "Option" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="23a4c-135">In the Option field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="23a4c-136">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="23a4c-136">In the list, find and select the desired record.</span></span>
-9. <span data-ttu-id="23a4c-137">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="23a4c-137">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="23a4c-138">Geben Sie im Feld "Gültigkeit" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="23a4c-138">In the Effective field, enter a date and time.</span></span>
-11. <span data-ttu-id="23a4c-139">Klicken Sie auf "Vorteil erstellen".</span><span class="sxs-lookup"><span data-stu-id="23a4c-139">Click Create benefit.</span></span>
-12. <span data-ttu-id="23a4c-140">Schalten Sie die Erweiterung des Abschnitts "Lohndetails" ein/aus.</span><span class="sxs-lookup"><span data-stu-id="23a4c-140">Toggle the expansion of the Payroll details section.</span></span>
-13. <span data-ttu-id="23a4c-141">Klicken Sie im Feld "Häufigkeit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="23a4c-141">In the Frequency field, click the drop-down button to open the lookup.</span></span>
-14. <span data-ttu-id="23a4c-142">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="23a4c-142">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="23a4c-143">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="23a4c-143">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="23a4c-144">Wählen Sie im Feld "Basis" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="23a4c-144">In the Basis field, select an option.</span></span>
-17. <span data-ttu-id="23a4c-145">Geben Sie im Feld "Betrag oder Satz" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="23a4c-145">In the Amount or rate field, enter a number.</span></span>
+## <a name="create-a-benefit"></a><span data-ttu-id="d1a9a-128">Vorteil erstellen</span><span class="sxs-lookup"><span data-stu-id="d1a9a-128">Create a benefit</span></span>
+1. <span data-ttu-id="d1a9a-129">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-129">Close the page.</span></span>
+2. <span data-ttu-id="d1a9a-130">Wechseln Sie zu "Personalverwaltung" > "Leistungen" > "Leistungen".</span><span class="sxs-lookup"><span data-stu-id="d1a9a-130">Go to Human resources > Benefits > Benefits.</span></span>
+3. <span data-ttu-id="d1a9a-131">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-131">Click New to open the drop dialog.</span></span>
+4. <span data-ttu-id="d1a9a-132">Klicken Sie im Feld "Plan" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-132">In the Plan field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="d1a9a-133">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-133">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="d1a9a-134">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-134">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="d1a9a-135">Klicken Sie im Feld "Option" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-135">In the Option field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="d1a9a-136">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-136">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="d1a9a-137">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-137">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="d1a9a-138">Geben Sie im Feld "Gültigkeit" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-138">In the Effective field, enter a date and time.</span></span>
+11. <span data-ttu-id="d1a9a-139">Klicken Sie auf "Vorteil erstellen".</span><span class="sxs-lookup"><span data-stu-id="d1a9a-139">Click Create benefit.</span></span>
+12. <span data-ttu-id="d1a9a-140">Schalten Sie die Erweiterung des Abschnitts "Lohndetails" ein/aus.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-140">Toggle the expansion of the Payroll details section.</span></span>
+13. <span data-ttu-id="d1a9a-141">Klicken Sie im Feld "Häufigkeit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-141">In the Frequency field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="d1a9a-142">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-142">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="d1a9a-143">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-143">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="d1a9a-144">Wählen Sie im Feld "Basis" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-144">In the Basis field, select an option.</span></span>
+17. <span data-ttu-id="d1a9a-145">Geben Sie im Feld "Betrag oder Satz" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="d1a9a-145">In the Amount or rate field, enter a number.</span></span>
 

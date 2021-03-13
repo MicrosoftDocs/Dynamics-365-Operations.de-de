@@ -2,7 +2,7 @@
 title: Rundungsregeln einrichten
 description: Sie können Rundungsregeln in Dynamics 365 Human Resources einrichten, die zu den Anforderungen Ihrer Organisation passen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,21 +18,21 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a9b0c33d2e0c47b351463b4b3630a91c6bd9999
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a603c31e3a36072b6456bea212ad176009c8b48
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418706"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112648"
 ---
-# <a name="set-up-rounding-rules"></a><span data-ttu-id="988b3-103">Rundungsregeln einrichten</span><span class="sxs-lookup"><span data-stu-id="988b3-103">Set up rounding rules</span></span>
+# <a name="set-up-rounding-rules"></a><span data-ttu-id="05271-103">Rundungsregeln einrichten</span><span class="sxs-lookup"><span data-stu-id="05271-103">Set up rounding rules</span></span>
 
-<span data-ttu-id="988b3-104">Sie können Rundungsregeln in Dynamics 365 Human Resources einrichten, die zu den Anforderungen Ihrer Organisation passen.</span><span class="sxs-lookup"><span data-stu-id="988b3-104">You can set up rounding rules in Dynamics 365 Human Resources to meet the needs of your organization.</span></span>
+<span data-ttu-id="05271-104">Sie können Rundungsregeln in Dynamics 365 Human Resources einrichten, die zu den Anforderungen Ihrer Organisation passen.</span><span class="sxs-lookup"><span data-stu-id="05271-104">You can set up rounding rules in Dynamics 365 Human Resources to meet the needs of your organization.</span></span>
 
-1. <span data-ttu-id="988b3-105">Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellungen** die Option **Rundungsregeln** aus.</span><span class="sxs-lookup"><span data-stu-id="988b3-105">In the **Benefits management** workspace, under **Setup**, select **Rounding rules**.</span></span>
+1. <span data-ttu-id="05271-105">Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellungen** die Option **Rundungsregeln** aus.</span><span class="sxs-lookup"><span data-stu-id="05271-105">In the **Benefits management** workspace, under **Setup**, select **Rounding rules**.</span></span>
 
-2. <span data-ttu-id="988b3-106">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="988b3-106">Select **New**.</span></span>
+2. <span data-ttu-id="05271-106">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="05271-106">Select **New**.</span></span>
 
-3. <span data-ttu-id="988b3-107">Geben Sie Werte für **Auf den nächsten runden**, **Szenario** und **Rundungsart** an.</span><span class="sxs-lookup"><span data-stu-id="988b3-107">Specify values for **Round to the nearest**, **Scenario**, and **Rounding form**.</span></span>
+3. <span data-ttu-id="05271-107">Geben Sie Werte für **Auf den nächsten runden**, **Szenario** und **Rundungsart** an.</span><span class="sxs-lookup"><span data-stu-id="05271-107">Specify values for **Round to the nearest**, **Scenario**, and **Rounding form**.</span></span>
 
-4. <span data-ttu-id="988b3-108">Wählen Sie **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="988b3-108">Select **Save**.</span></span> 
+4. <span data-ttu-id="05271-108">Wählen Sie **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="05271-108">Select **Save**.</span></span> 

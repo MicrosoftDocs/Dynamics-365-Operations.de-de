@@ -2,8 +2,8 @@
 title: Ursachencodes einrichten
 description: Dynamics 365 Human Resources erläutert anhand von Ursachencodes, warum sich die Vorteile eines Mitarbeiters ändern.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+manager: tfehr
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,26 +18,64 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 83923eecf7eb23a21b8dbbd39491014fa2bc20d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ae82c8312d344f5380adec8413766304681a0a05
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418705"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112649"
 ---
-# <a name="set-up-reason-codes"></a><span data-ttu-id="ea92c-103">Ursachencodes einrichten</span><span class="sxs-lookup"><span data-stu-id="ea92c-103">Set up reason codes</span></span>
+# <a name="set-up-reason-codes"></a><span data-ttu-id="182c1-103">Ursachencodes einrichten</span><span class="sxs-lookup"><span data-stu-id="182c1-103">Set up reason codes</span></span>
 
-<span data-ttu-id="ea92c-104">Dynamics 365 Human Resources erläutert anhand von Ursachencodes, warum sich die Vorteile eines Mitarbeiters ändern.</span><span class="sxs-lookup"><span data-stu-id="ea92c-104">Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.</span></span> 
+<span data-ttu-id="182c1-104">Dynamics 365 Human Resources erläutert anhand von Ursachencodes, warum sich die Vorteile eines Mitarbeiters ändern.</span><span class="sxs-lookup"><span data-stu-id="182c1-104">Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.</span></span>
 
-1. <span data-ttu-id="ea92c-105">Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellungen** die Option **Ursachencodes** aus.</span><span class="sxs-lookup"><span data-stu-id="ea92c-105">In the **Benefits management** workspace, under **Setup**, select **Reason codes**.</span></span>
+> [!NOTE]
+> <span data-ttu-id="182c1-105">Ab Januar 2021 werden Ursachencodes zum **Personalverwaltung**-Arbeitsbereich statt zum **Vorteilsverwaltung**-Arbeitsbereich migriert.</span><span class="sxs-lookup"><span data-stu-id="182c1-105">As of January 2021, reason codes are migrating to the **Personnel management** workspace instead of the **Benefits management** workspace.</span></span> <span data-ttu-id="182c1-106">Weitere Informationen finden Sie unter [Ursachencodes manuell in die Personalverwaltung migrieren](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).</span><span class="sxs-lookup"><span data-stu-id="182c1-106">For more information, see [Manually migrate reason codes to Personnel management](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).</span></span>
 
-2. <span data-ttu-id="ea92c-106">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="ea92c-106">Select **New**.</span></span>
+## <a name="create-reason-codes"></a><span data-ttu-id="182c1-107">Erstellen von Ursachencodes</span><span class="sxs-lookup"><span data-stu-id="182c1-107">Create reason codes</span></span>
 
-3. <span data-ttu-id="ea92c-107">Geben Sie Werte für die folgenden Felder an:</span><span class="sxs-lookup"><span data-stu-id="ea92c-107">Specify values for the following fields:</span></span>
+1. <span data-ttu-id="182c1-108">In dem **Personalverwaltung**-Arbeitsbereich (oder, wenn Ihre Ursachencodes noch nicht migriert wurden, im **Vorteilsverwaltung**-Arbeitsbereich) wählen Sie **Links** und dann **Ursachencodes** aus.</span><span class="sxs-lookup"><span data-stu-id="182c1-108">In the **Personnel management** workspace (or **Benefits management** workspace if your reason codes haven't yet migrated), select **Links**, and then select **Reason codes**.</span></span>
 
-   | <span data-ttu-id="ea92c-108">Feld</span><span class="sxs-lookup"><span data-stu-id="ea92c-108">Field</span></span> | <span data-ttu-id="ea92c-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ea92c-109">Description</span></span> |
+2. <span data-ttu-id="182c1-109">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="182c1-109">Select **New**.</span></span>
+
+3. <span data-ttu-id="182c1-110">Geben Sie Werte für die folgenden Felder an:</span><span class="sxs-lookup"><span data-stu-id="182c1-110">Specify values for the following fields:</span></span>
+
+   | <span data-ttu-id="182c1-111">Feld</span><span class="sxs-lookup"><span data-stu-id="182c1-111">Field</span></span> | <span data-ttu-id="182c1-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="182c1-112">Description</span></span> |
    | --- | --- |
-   | <span data-ttu-id="ea92c-110">**Ursachencode**</span><span class="sxs-lookup"><span data-stu-id="ea92c-110">**Reason code**</span></span> | <span data-ttu-id="ea92c-111">Ein eindeutiger Name, der den Grund angibt, aus dem ein Mitarbeiter die Registrierung eines Vergütungsplans ändern würde.</span><span class="sxs-lookup"><span data-stu-id="ea92c-111">A unique name to identify the reason an employee would change a benefit plan enrollment.</span></span> |
-   | <span data-ttu-id="ea92c-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="ea92c-112">**Description**</span></span> | <span data-ttu-id="ea92c-113">Eine Beschreibung des Ursachencodes.</span><span class="sxs-lookup"><span data-stu-id="ea92c-113">A description of the reason code.</span></span> |
+   | <span data-ttu-id="182c1-113">**Ursachencode**</span><span class="sxs-lookup"><span data-stu-id="182c1-113">**Reason code**</span></span> | <span data-ttu-id="182c1-114">Ein eindeutiger Name, der den Grund angibt, aus dem ein Mitarbeiter die Registrierung eines Vergütungsplans ändern würde.</span><span class="sxs-lookup"><span data-stu-id="182c1-114">A unique name to identify the reason an employee would change a benefit plan enrollment.</span></span> |
+   | <span data-ttu-id="182c1-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="182c1-115">**Description**</span></span> | <span data-ttu-id="182c1-116">Eine Beschreibung des Ursachencodes.</span><span class="sxs-lookup"><span data-stu-id="182c1-116">A description of the reason code.</span></span> |
 
-4. <span data-ttu-id="ea92c-114">Wählen Sie **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="ea92c-114">Select **Save**.</span></span> 
+4. <span data-ttu-id="182c1-117">Legen Sie unter **Zutreffende Szenarios** die Option **Vorteilsverwaltung** auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="182c1-117">Under **Applicable scenarios**, set **Benefits management** to **Yes**.</span></span> <span data-ttu-id="182c1-118">(Gilt nicht, wenn Ihre Ursachencodes noch nicht auf den **Personalverwaltung**-Arbeitsbereich migriert wurden.)</span><span class="sxs-lookup"><span data-stu-id="182c1-118">(Not applicable if your reason codes haven't yet migrated to the **Personnel management** workspace.)</span></span>
+
+5. <span data-ttu-id="182c1-119">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="182c1-119">Select **Save**.</span></span>
+
+## <a name="manually-migrate-reason-codes-to-personnel-management"></a><span data-ttu-id="182c1-120">Ursachencodes manuell in die Personalverwaltung migrieren</span><span class="sxs-lookup"><span data-stu-id="182c1-120">Manually migrate reason codes to Personnel management</span></span>
+
+<span data-ttu-id="182c1-121">Im Januar 2021 werden Ursachencodes zum **Personalverwaltung**-Arbeitsbereich statt zum **Vorteilsverwaltung**-Arbeitsbereich migriert.</span><span class="sxs-lookup"><span data-stu-id="182c1-121">In January 2021, reason codes are migrating to the **Personnel management** workspace instead of the **Benefits management** workspace.</span></span> <span data-ttu-id="182c1-122">Die meisten Ursachencodedaten werden automatisch in Ihre Umgebung migriert.</span><span class="sxs-lookup"><span data-stu-id="182c1-122">Most reason code data will automatically migrate in your environment.</span></span> <span data-ttu-id="182c1-123">Einige Ursachencodedaten werden möglicherweise nicht migriert.</span><span class="sxs-lookup"><span data-stu-id="182c1-123">Some reason code data might not migrate.</span></span> <span data-ttu-id="182c1-124">Beispielsweise haben Ursachencodes jetzt ein Maximum von 15 Zeichen, sodass Ursachencodes, die länger als 15 Zeichen sind, nicht automatisch migriert werden.</span><span class="sxs-lookup"><span data-stu-id="182c1-124">For example, reason codes now have a 15-character maximum, so any reason codes longer than 15 characters won't migrate automatically.</span></span>
+
+<span data-ttu-id="182c1-125">Sie sehen ein Banner auf der **Links**-Seite des **Vorteilsverwaltung**-Arbeitsbereichs, das Sie über die Migration informiert und darüber, ob Ursachencodes nicht migriert wurden.</span><span class="sxs-lookup"><span data-stu-id="182c1-125">You'll see a banner on the **Links** page of the **Benefits management** workspace informing you about the migration and whether any reason codes didn't migrate.</span></span>
+
+1. <span data-ttu-id="182c1-126">Wählen Sie **Ursachencodes** aus, um Einzelheiten zum Migrationsstatus zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="182c1-126">Select **Reason codes** for details about migration status.</span></span>
+
+   <span data-ttu-id="182c1-127">[![Ursachencodes](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)</span><span class="sxs-lookup"><span data-stu-id="182c1-127">[![Reason codes](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)</span></span>
+
+2. <span data-ttu-id="182c1-128">Wählen Sie einen Ursachencode aus, der nicht migriert werden konnte.</span><span class="sxs-lookup"><span data-stu-id="182c1-128">Select a reason code that failed to migrate.</span></span>
+
+   <span data-ttu-id="182c1-129">[![Migrationsstatus des Ursachencodes](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)</span><span class="sxs-lookup"><span data-stu-id="182c1-129">[![Reason code migration status](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)</span></span>
+
+3. <span data-ttu-id="182c1-130">Wählen Sie **Ursachencode migrieren**.</span><span class="sxs-lookup"><span data-stu-id="182c1-130">Select **Migrate reason code**.</span></span>
+
+   <span data-ttu-id="182c1-131">[![Ursachencode für Migration](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)</span><span class="sxs-lookup"><span data-stu-id="182c1-131">[![Migrate reason code](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)</span></span>
+
+4. <span data-ttu-id="182c1-132">In dem **Migration von Vorteilsursachencodes**-Bereich haben Sie zwei Optionen für die Zuordnung zu einem Ursachencode der Personalverwaltung:</span><span class="sxs-lookup"><span data-stu-id="182c1-132">In the **Benefit reason code migration** pane, you have two options for mapping to a Personnel management reason code:</span></span>
+
+   - <span data-ttu-id="182c1-133">Um einen vorhandenen Ursachencode in der Personalverwaltung zu verwenden, wählen Sie einen aus der **Vorhandenen Ursachencode verwenden**-Dropdown-Liste.</span><span class="sxs-lookup"><span data-stu-id="182c1-133">To use an existing reason code in Personnel management, choose one from the **Use existing reason code** dropdown.</span></span>
+     > [!NOTE]
+     > <span data-ttu-id="182c1-134">Sie können nur dann einen vorhandenen Ursachencode in der Personalverwaltung verwenden, wenn noch kein anderer Ursachencode für die Vorteilsverwaltung dorthin migriert wurde.</span><span class="sxs-lookup"><span data-stu-id="182c1-134">You can only use an existing reason code in Personnel management if another Benefits management reason code hasn't already migrated to it.</span></span>
+   - <span data-ttu-id="182c1-135">Geben Sie einen neuen Ursachencode in **Neuer Ursachencode** ein, und geben Sie dann eine Beschreibung in ein **Neue Beschreibung** ein, um einen neuen Ursachencode in der Personalverwaltung zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="182c1-135">To create a new reason code in Personnel management, enter a new one in **New reason code**, and then enter a description in **New description**.</span></span>
+
+   <span data-ttu-id="182c1-136">[![Zuordnung zu einem Ursachencode für die Personalverwaltung](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)</span><span class="sxs-lookup"><span data-stu-id="182c1-136">[![Map to a Personnel management reason code](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)</span></span>
+
+<span data-ttu-id="182c1-137">Nachdem Ursachencodes in die Personalverwaltung migriert wurden, wird die Option für deren Verwendung in der Vorteilsverwaltung automatisch auf **Ja** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="182c1-137">After reason codes migrate to Personnel management, the option for using them in Benefits management is automatically set to **Yes**.</span></span>
+
+<span data-ttu-id="182c1-138">[![Ursachencodes in der Vorteilsverwaltung verwenden](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)</span><span class="sxs-lookup"><span data-stu-id="182c1-138">[![Use reason code in Benefits management](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)</span></span>
