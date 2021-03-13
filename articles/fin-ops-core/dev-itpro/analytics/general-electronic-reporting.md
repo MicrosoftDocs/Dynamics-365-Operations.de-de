@@ -1,9 +1,9 @@
 ---
 title: Überblick über die elektronische Berichterstellung (Electronic reporting, ER)
-description: Diese Thema bietet eine Übersicht zum elektronischen Berichterstellungstool. Es umfasst Informationen über wesentliche Konzepte, vom ER unterstützte Szenarien und eine Liste der Formate, die im Rahmen der Lösung entwickelt und veröffentlicht wurden.
+description: Diese Thema bietet eine Übersicht zum elektronischen Berichterstellungstool. Es beschreibt Schlüsselkonzepte, unterstützte Szenarien und Formate, die Teil der Lösung sind.
 author: NickSelin
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e40aa168c296af86721862d1751212d16d47bd49
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 33d399c6a9051097d3ea0c7990a37302395d9c77
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682598"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093925"
 ---
-# <a name="electronic-reporting-er-overview"></a>Überblick über die elektronische Berichterstellung (Electronic reporting, ER)
+# <a name="electronic-reporting-er-overview"></a>Überblick über die elektronische Berichterstellung (ER)
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,6 +37,7 @@ Das ER-Modul ist für die Verwendung durch geschäftliche Benutzer anstatt Entwi
 EB unterstützt zurzeit TEXT, XML, Microsoft Word-Dokumente und OPENXML-Arbeitsblattformate. Allerdings unterstützt eine Erweiterungsschnittstelle auch weitere Formate.
 
 ## <a name="capabilities"></a>Funktionen
+
 Das ER-Modul hat folgende Funktionen:
 
 - Es stellt ein einzelnes freigegebenes Tool für elektronische Berichterstellung in verschiedenen Domänen dar und ersetzt mehr als 20 verschiedene Module, die einige Arten der elektronischen Berichterstellung für Finance and Operations ausführen.
@@ -46,6 +47,7 @@ Das ER-Modul hat folgende Funktionen:
 - Es unterstützt die Möglichkeit, Formate an Partner und Kunden über Microsoft Dynamics Lifecycle Services (LCS) zu verteilen.
 
 ## <a name="key-concepts"></a>Schlüsselkonzepte
+
 ### <a name="components"></a>Komponenten
 
 ER unterstützt zwei Komponententypen: **Datenmodell** und **Format**.
@@ -71,7 +73,6 @@ Eine Modellzuordnung, die ausgehende elektronische Dokumente unterstützt, hat d
 - Sie kann verschiedene Datentypen als Datenquellen für ein Datenmodell verwenden. Beispielsweise kann sie Tabellen, Datenentitäten, Methoden oder Enumerationen verwenden.
 - Sie unterstützt Benutzereingabeparameter, die als Datenquellen für ein Datenmodell definiert werden, wenn einige Daten in der Laufzeit angegeben werden müssen.
 - Sie unterstützt die Umwandlung von Daten in die erforderlichen Gruppen. Sie können damit zudem Daten filtern, sortieren und zusammenfassen sowie logisch berechnete Felder anhängen, die mit Formeln entworfen werden, die Microsoft Excel-Formeln ähneln. Weitere Informationen finden Sie unter [Formuladesigner in der elektronischen Berichterstattung (ER)](general-electronic-reporting-formula-designer.md)).
-
 
 Eine Zuordnung, die vorbildliche eingehende elektronische Dokumente unterstützt, umfasst die folgenden Funktionen:
 
@@ -107,6 +108,7 @@ Die folgende Abbildung zeigt, wie die Daten für diese Formate fließen.
 Um eine einzelne ER-Formatkonfiguration ausführen und ein ausgehendes elektronisches Dokument zu generieren, müssen Sie die Zuordnung der Formatkonfiguration identifizieren.
 
 #### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Formatkomponenten für eingehende elektronische Dokumente
+
 Eine Formatkomponente ist das Schema des eingehenden Dokuments, das zur Laufzeit importiert wird. Ein Schema besteht aus folgenden Elementen:
 
 - Ein Format, das die Struktur und den Inhalt des zur Laufzeit importierten eingehenden elektronischen Dokuments festlegt, das Daten enthält. Eine Formatkomponente wird verwendet, um ein eingehendes Dokument in verschiedenen Formaten, z. B. Text und XML, zu analysieren.
@@ -196,6 +198,7 @@ Ein **Betrieblichees Ressourcen** Repository bietet Zugriff auf die Liste der Ko
 Benötigte **LCS-Projekt**-, **Dateisystem**- und **Gesetzliche Konfigurationsdienste (RCS)**-Repositorys können einzeln für jeden Konfigurationsanbieter der aktuellen Instanz registriert werden. Jedes Repository kann für einen bestimmten Konfigurationsanbieter dediziert werden.
 
 ## <a name="supported-scenarios"></a>Unterstützte Szenarien
+
 ### <a name="building-a-data-model"></a>Erstellen eines Datenmodells
 
 ER bietet einen Modell-Designer an, den Sie verwenden können, um ein Datenmodell für eine bestimmte Geschäftsdomäne zu erstellen. Alle domänenspezifischen Geschäftsentitäten und deren Beziehungen untereinander, können in einem Datenmodell als hierarchische Struktur dargestellt werden. 
@@ -216,6 +219,7 @@ ER stellt einen Modellzuordnungsdesigner bereit, mit dem der Benutzer Datenmodel
 Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Definieren der Modellzuordnung und Auswählen von Datenquellen** und **ER-Datenmodell den ausgewählten Datenquellen zuordnen** (Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
 
 ### <a name="configuring-data-model-mappings-for-incoming-documents"></a>Konfigurieren von Datenmodellzuordnungen für eingehende Dokumente
+
 ER stellt einen Modellzuordnungsdesigner bereit, mit dem der Benutzer Datenmodelle, die zu bestimmten Ziele erstellt wurden, zuordnen kann. Beispielsweise können Datenmodelle den aktualisierbaren Datenkomponenten (Tabellen, Datenentitäten und Ansichten) zugeordnet werden. Basierend auf der Zuordnung werden die Daten zur Laufzeit unter Verwendung der Daten aus dem Datenmodell aktualisiert. Als abstrakte Lagerung des ER-Formats, wird das Datenmodell mit Daten aufgefüllt, die aus einem eingehenden elektronischen Dokument importiert werden. 
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>Speichern einer entworfenen Modellkomponente als Modellkonfiguration
@@ -237,6 +241,7 @@ Der ER-Formatdesigner kann zum Erstellen eines elektronischen Dokuments im OPENX
 Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Erstellen einer Konfiguration für Berichte im OPENXML-Format** (Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder. Als Teil des Schritts für das Importieren einer Vorlage im Aufgabenleitfaden, verwenden Sie die [Vorlage des Zahlungsberichts (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202)-Excel-Datei als Vorlage.
 
 ### <a name="building-a-configuration-to-generate-electronic-documents-in-a-word-document-format"></a>Erstellen einer Konfiguration, um elektronische Dokumente in einem Word-Dokumentformat zu generieren
+
 Der ER-Formatdesigner kann zum Erstellen eines elektronischen Dokuments in einem Word-Dokumentformat verwendet werden. Die folgende Abbildung zeigt ein Beispiel für diesen Formattyp. Beachten Sie, dass dieses Format die vorhandene ER-Konfiguration erneut verwendet, die ursprünglich entworfen wurde, um die Berichtsausgabe im OPENXML-Format zu generieren.
 
 Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden ER Design einer Konfiguration zur Generierung von Berichten im Microsoft-WORD-Format (Teil des 7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)-Geschäftsprozesses) wieder. Als Teil des Schritts für das Importieren einer Vorlage im Aufgabenleitfaden verwenden Sie die folgenden Word-Dateien als Vorlagen für das ER-Format:
@@ -245,6 +250,7 @@ Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufga
 - [Begrenzte Vorlage eines Zahlungsberichtes (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
 ### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Erstellen einer Konfiguration, um Daten von eingehenden elektronischen Dokumenten zu importieren
+
 Der ER-Format-Designer kann verwendet werden, um ein elektronisches Dokument zu beschreiben, für das Datenimport in XML- oder Textformat geplant wird. Das entworfene Format wird verwendet, um ein eingehendes Dokument zu analysieren. Der ER-Formatzuordnungsdesigner kann verwendet werden, um die Bindung der Elemente des entworfenen Formats zum Datenmodell zu definieren. 
 
 Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden " Erforderliche ER-Konfigurationen zum Import von Daten aus einer externen Datei erstellen" (Teil des Geschäftsprozesses 7.5.4.3 Anschaffen/Entwickeln von IT-Dienstleistungs-/-Lösungskomponenten (10677)) wieder. Verwenden Sie die folgenden Dateien, um diesem Leitfaden wiederzugeben:
@@ -265,6 +271,7 @@ Die Anwendung kann so konfiguriert werden, dass die elektronische Berichtsgeneri
 Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Format zum Erstellen elektronischer Zahlungsdokumente verwenden** (Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
 
 ## <a name="handling-er-components"></a>ER-Komponenten handhaben
+
 ### <a name="publishing-an-er-component-in-lcs-to-offer-it-externally-localization"></a>Veröffentlichen einer ER-Komponente in LCS, um diese extern anzubieten (Lokalisierung)
 
 Der Eigentümer einer erstellten Komponente (Modell oder Format) kann ER zum Veröffentlichen der abgeschlossenen Version dieser Komponente in LCS verwenden. HIerfür ist ein Repository des **LCS-Projekt**-Typs für den aktuellen ER-Konfigurationsanbieter erforderlich. Wenn der Status der abgeschlossenen Version einer Komponente von **ABGESCHLOSSEN** in **GEMEINSAM GENUTZT** geändert wird, wird diese Version in LCS veröffentlicht. Wenn eine Komponente in LCS veröffentlicht wurde, wird der Besitzer dieser Komponente ein Anbieter des Dienstes, und betreut diesen. Wenn beispielsweise diese Formatkomponente erstellt wurde, um ein elektronisches Dokument zu generieren, das gesetzlich obligatorisch ist (beispielsweise in Übereinstimmung mit dem Lokalisierungsszenario), wird vorausgesetzt, dass dieses Format mit den Gesetzesänderungen konform ist und der Anbieter neue Versionen der Komponente bereitstellt, sobald neue Gesetzgebungsanforderungen auftreten. Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Upload einer Konfiguration nach Lifecycle Services** (Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
@@ -281,92 +288,13 @@ ER ermöglicht das Erstellen (Ableiten) einer neuen Komponente der aktuellen Kom
 
 ER ermöglicht die automatische Übernahme von Änderungen der neuesten Version der Basiskomponente in die aktuelle Entwurfsversion der abgeleiteten Komponente. Dieser Prozess wird als *Rebasierung* bezeichnet. Beispielsweise können neue gesetzliche Änderungen, die in der neuesten Version der von LCS importierten Formatkomponente eingeführt wurden, automatisch in die eigene angepasste Version dieses elektronischen Dokumenteformats übernommen werden. Alle Änderungen, die nicht automatisch zusammengeführt werden können, werden als Konflikte betrachtet. Diese Konflikte werden zur manuellen Lösung im Designer-Tool für die entsprechende Komponente angezeigt. Um sich mit den Details dieses Szenarios vertraut zu machen, sehen Sie sich den Aufgabenleitfaden **ER Format-Upgrade durch Übernahme der neuen Basisversion dieses Formats** an (Teil des Geschäftsprozesses **7.5.5.3 Geänderte IT-Service-/Lösungskomponente erwerben/entwickeln (10683)**).
 
-## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-application"></a>Eine Liste von ER-Konfigurationen, die in der Finance-Anwendung bereitgestellt werden.
+## <a name="list-of-er-configurations-that-have-been-released-in-finance"></a><a name="list-of-configurations"></a>Liste der EB-Konfigurationen, die in Finance veröffentlicht wurden
 
-| Domänenspezifische Datenmodellkonfigurationen: Titel | Domäne                | Datenmodellabhängige Formatkonfigurationen: Titel | Beschreibung                                                        |
-|--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
-| Protokolldateimodell                                 | Finanzprüfung       |                                                   |                                                                    |
-|                                                  |                       | Protokolldatei (NL)                                   | Protokolldateiformat für Niederlande                                  |
-| BAS-Modell                                        | Steuererklärung         |                                                   |                                                                    |
-|                                                  |                       | Australischer Geschäftsvorgangsbericht (Business Activity Statement - BAS)                                          | Geschäftsvorgangsberichtsformat für Australien                                           |
-| Bauindustrie-Schemamodell               | Steuererklärung         |                                                   |                                                                    |
-|                                                  |                       | CIS monatlicher Umsatz (Großbritannien)                           | CIS Monatliches Umsatzformat für Großbritannien                   |
-| Mahnschreibenmodell                          | elektronische Rechnungsstellung  |                                                   |                                                                    |
-|                                                  |                       | OIOUBL-Mahnschreiben (DK)                     | OIOUBL-Mahnschreibenformat für Dänemark                        |
-| Elektronisches Sachkontomodell (MX)          | Steuererklärung         |                                                   |                                                                    |
-|                                                  |                       | Hilfs-Sachkonto XML (MX)                         | "Hilfs-Sachkontenbuchungen pro Konto"-Berichtformat für Mexiko |
-|                                                  |                       | Kontenplan XML (MX)                         | Kontenplan-Berichtsformat für Mexiko                          |
-|                                                  |                       | Erfassungen XML (MX)                                 | Erfassungsbuchungen-Berichtsformat für Mexiko                      |
-|                                                  |                       | Zwischenbilanz XML (MX)                            | Zwischenbilanz-Berichtformat für Mexiko                             |
-| Elster-Modell                                     | Steuererklärung         |                                                   |                                                                    |
-|                                                  |                       | Elster (DE)                                       | Elster-Format für Deutschland                                          |
-| Modell für zusammenfassende Meldung                              | Handelsbericht       |                                                   |                                                                    |
-|                                                  |                       | Zusammenfassende Meldung (DE)                                | Zusammenfassende Meldung TXT-Format für Deutschland                               |
-|                                                  |                       | Zusammenfassende Meldung (DK)                                | Zusammenfassende Meldung TXT-Format für Dänemark                               |
-|                                                  |                       | Zusammenfassende Meldung (FR)                                | Zusammenfassende Meldung XML-Format für Frankreich                                |
-|                                                  |                       | Zusammenfassende Meldung (NL)                                | Zusammenfassende Meldung XML-Format für Niederlande                           |
-|                                                  |                       | Zusammenfassende Meldung (UK)                            | Zusammenfassende Meldung TXT-Format für Großbritannien                    |
-|                                                  |                       | Zusammenfassende Meldung XML (UK)                            | Zusammenfassende Meldung XML-Format für Großbritannien                    |
-|                                                  |                       | Bericht "Zusammenfassende Meldung nach Spalten"                   | Bericht "Zusammenfassende Meldung nach Spalten"                                    |
-|                                                  |                       | Bericht "Zusammenfassende Meldung nach Zeilen"                      | Bericht "Zusammenfassende Meldung nach Zeilen"                                       |
-| FEC-Buchhaltungsmodel (FR)                        | Steuererklärung         |                                                   |                                                                    |
-|                                                  |                       | FEC-Buchhaltungsdaten XML (FR)                      | FEC-Buchhaltungsdatenexport XML-Format für Frankreich                   |
-| Deutsche Protokolldatei                                | Finanzprüfung       |                                                   |                                                                    |
-|                                                  |                       | Deutsche Ausgabeprotokolldatei                          | Ausgabeprotokolldatei für Deutschland und Österreich                          |
-| Intrastat-Modell                                  | Handelsbericht       |                                                   |                                                                    |
-|                                                  |                       | Intrastat (DE)                                    | Intrastat-Format für Deutschland                                       |
-|                                                  |                       | Intrastat (DK)                                    | Intrastat-Format für Dänemark                                       |
-|                                                  |                       | Intrastat INTRACOM (FR)                           | Intrastat INTRACOM-Format für Frankreich                               |
-|                                                  |                       | Intrastat SAISUNIC (FR)                           | Intrastat SAISUNIC-Format für Frankreich                               |
-|                                                  |                       | Intrastat (NL)                                    | Intrastat-Format für die Niederlande                               |
-|                                                  |                       | Intrastat (UK)                                    | Intrastat-Format für Großbritannien                            |
-|                                                  |                       | Intrastat-Bericht                                  | Intrastat Excel Kontrollbericht                                     |
-| Debitorenrechnungsmodell                           | elektronische Rechnungsstellung  |                                                   |                                                                    |
-|                                                  |                       | OIOUBL Projekt Gutschrift (DK)                   | OIOUBL Projekt Gutschrift-Format für Dänemark                      |
-|                                                  |                       | OIOUBL Projektrechnung (DK)                       | OIOUBL Projektrechnung-Format für Dänemark                          |
-|                                                  |                       | OIOUBL Verkaufsgutschrift (DK)                     | OIOUBL Verkaufsgutschrift-Format für Dänemark                        |
-|                                                  |                       | OIOUBL Verkaufsrechnung (DK)                         | OIOUBL Verkaufsrechnungsformat für Dänemark                            |
-| OB-Meldungsmodell                             | Steuererklärung         |                                                   |                                                                    |
-|                                                  |                       | OB-Meldung (NL)                               | OB-Meldungsformat für die Niederlande                          |
-| Zahlungsmodell                                    | Zahlungen              |                                                   |                                                                    |
-|                                                  |                       | Betalingsservice (DK)                             | Betalingsservice-Zahlungsformat für Dänemark                        |
-|                                                  |                       | Wechselrimesse (FR)                  | Wechselrimesseformat für Frankreich                      |
-|                                                  |                       | BTL91 (NL)                                        | BTL91-Kreditorenzahlungsformat für die Niederlande                    |
-|                                                  |                       | CFONB Prelevements (FR)                           | CFONB-Direktbelastungsformat für Frankreich                       |
-|                                                  |                       | CFONB Virements (FR)                              | CFONB- inländische Kreditorenzahlung für Frankreich                    |
-|                                                  |                       | Nordea Kreditor (DK)                                | Nordea Corporate Netbank Kreditorenzahlungsformat für Dänemark         |
-|                                                  |                       | ANZ Direktkredit-Service (AU)                    | ANZ Direktkredit-Serviceformat für Australien                 |
-|                                                  |                       | CBA Direktkredit-Service (AU)                    | CBA Direktkredit-Serviceformat für Australien                 |
-|                                                  |                       | NAB Direktkredit-Service (AU)                    | NAB Direktkredit-Serviceformat für Australien                 |
-|                                                  |                       | STG Direktkredit-Service (AU)                    | STG Direktkredit-Serviceformat für Australien                 |
-|                                                  |                       | WBC Direkteingabe-System (AU)                      | WBC Direkteingabe-Systemformat für Australien                   |
-|                                                  |                       | DirectLink (NZ)                                   | DirectLink-Format für Neuseeland                              |
-|                                                  |                       | JBA-Zahlungsdatei (JP)                             | JBA Zahlungsformat für Japan                                       |
-|                                                  |                       | Kreditübertragung (ISO20022)                          | SEPA Kreditübertragungsformat für Europa                             |
-|                                                  |                       | Kreditübertragung (ISO20022) (FR)                     | SEPA Kreditübertragungsformat für Frankreich                             |
-|                                                  |                       | Kreditübertragung (ISO20022) (DE)                     | SEPA Kreditübertragungsformat für Deutschland                            |
-|                                                  |                       | Kreditübertragung (ISO20022) (NL)                     | SEPA Kreditübertragungsformat für die Niederlande                    |
-|                                                  |                       | Bankeinzug (ISO20022)                             | SEPA Bankeinzugsformat für Europa                                |
-|                                                  |                       | Bankeinzug (ISO20022) (FR)                        | SEPA Bankeinzugsformat für Frankreich                                |
-|                                                  |                       | Bankeinzug (ISO20022) (DE)                        | SEPA Bankeinzugsformat für Deutschland                               |
-|                                                  |                       | Bankeinzug (ISO20022) (NL)                        | SEPA Bankeinzugsformat für die Niederlande                       |
-|                                                  |                       | BACS (UK)                                         | BACS Kreditorenzahlungsformat für Großbritannien                  |
-| Verlagerung der Steuerschuld                                   | Steuererklärung         |                                                   |                                                                    |
-|                                                  |                       | Verkaufsliste für Verlagerungen der Steuerschuld                         | Verkaufslistenformat für Verlagerungen der Steuerschuld                                   |
-| Niederländisches XBRL-Integrationsmodell                     | XBRL-Berichtstellung        |                                                   |                                                                    |
-|                                                  |                       | Semansys XBRL (NL)                                | Semansys XBRL-Exportformat für die Niederlande                    |
-| GAF-Modell (MY)                                   | Finanzprüfung       |                                                   |                                                                    |
-|                                                  |                       | GAF-Datei (MY)                                     | GAF-Format für Malaysia                                         |
-| Kreditoren-Fälligkeitsbericht (CN)                         | Kreditoren-Datenanalyse |                                                   |                                                                    |
-|                                                  |                       | Format "Kreditorenfälligkeitsbericht" (CN)                   | Format "Kreditorenfälligkeitsbericht" für China                               |
-| Kreditorenrechnungserklärung-Model                 | Kreditoren-Datenanalyse |                                                   |                                                                    |
-|                                                  |                       | Kreditorenrechnungserklärung (IS)                   | "Kreditorenrechnungserklärung"-Format für Island                      |
-|                                                  |                       | Bericht 'Kreditorenrechnungserklärung' (IS)            | "Kreditorenrechnungserklärung"-Bericht für Island                      |
+Die Liste der EB-Konfigurationen für Finance wird ständig aktualisiert. Öffnen Sie das [globale Repository](er-download-configurations-global-repo.md), um die Liste der derzeit unterstützten EB-Konfigurationen zu überprüfen. Auf dem Inforegister **Details zur Einstellung** können Sie Informationen zu Konfigurationen überprüfen, die eingestellt wurden oder nicht mehr verwaltet werden. 
+
+![Inhalt des globalen Repositorys auf der Konfigurationsrepository-Seite](./media/er-overview-03.gif)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Erstellen von Konfigurationen für elektronische Meldungen (ER) ](electronic-reporting-configuration.md)
+- [Eine Elektronische Berichterstellungskonfiguration (ER) erstellen](electronic-reporting-configuration.md)
 - [Den Konfigurationslebenszyklus der elektronischen Berichterstellung (EB) verwalten](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

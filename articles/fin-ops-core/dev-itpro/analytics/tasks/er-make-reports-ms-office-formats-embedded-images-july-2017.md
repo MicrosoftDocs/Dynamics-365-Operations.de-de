@@ -1,6 +1,6 @@
 ---
 title: Konfigurationen zum Generieren von Berichten im Office-Format entwerfen, die eingebettete Bilder haben
-description: Die Schritte in diesem Thema enthalten Informationen darüber, wie die Konfigurationen zur elektronischen Berichterstattung (EB) entworfen werden, die elektronische Dokumente in Microsoft Office-Formaten (Excel und Word) generieren, die eingebettete Bilder enthalten.
+description: In diesem Thema wird beschrieben, wie die Konfigurationen entworfen werden, die elektronische Dokumente in Excel- und Word-Formaten generieren, die eingebettete Bilder enthalten.
 author: NickSelin
 manager: AnnBe
 ms.date: 01/23/2018
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0145565ba060308162620f29a42499b0bffe6496
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b60ed6b07851c44ceb4b8f313bc65f04b802e646
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684401"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093669"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfigurationen zum Generieren von Berichten im Office-Format entwerfen, die eingebettete Bilder haben
 
@@ -90,6 +90,3 @@ Um dies Schritte in dieser Prozedur auszuführen, müssen Sie zuerst die Prozedu
  30. Wählen Sie „Ja” im Feld „Erstellung von Testtransaktionen für inaktive Bankkonten zulassen:” aus.  
  31. Klicken Sie auf "Speichern".  
  32. Schließen Sie die Seite.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

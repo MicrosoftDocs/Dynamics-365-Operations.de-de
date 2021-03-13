@@ -1,6 +1,6 @@
 ---
 title: Er-Datenmodell zu den ausgewählten Datenquellen zuordnen
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Systemadministrator” oder „Entwickler für elektronische Berichterstellung” ein Datenmodell der elektronischen Berichterstellung (EB) ausgewählten Datenquellen von Microsoft Dynamics 365 Finance, zuordnen kann.
+description: In diesem Thema wird beschrieben, wie Sie ein EB-Datenmodell (elektronische Berichterstellung) ausgewählten Microsoft Dynamics 365 Finance-Datenquellen zuordnen.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2d09370b0e08897799d40c41c20c21b58e885dc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3e2ba94c9ec3ecc33f0c697d9f18f763749e4ba1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684306"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093747"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>Er-Datenmodell zu den ausgewählten Datenquellen zuordnen
 
@@ -146,6 +146,3 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
 5. Wählen Sie die abgeschlossene Version der aktuellen Konfiguration aus.
     * Beachten Sie, dass die erstellte Konfiguration als abgeschlossene Version 1 gespeichert wird.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

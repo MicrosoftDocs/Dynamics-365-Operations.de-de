@@ -1,6 +1,6 @@
 ---
 title: ER Erforderliche Konfigurationen zum Import von Daten aus einer externen Datei estellen
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Systemadministrator“ oder „Entwickler für elektronische Berichterstellung“ Konfigurationen für elektronische Berichterstellung (EB) entwerfen kann, um Daten in die Anwendung von Microsoft Dynamics 365 Finance aus einer externen Datei zu importieren.
+description: In diesem Thema wird beschrieben, wie Sie Konfigurationen zur elektronischen Berichterstellung (EB) entwerfen, um Daten in die Microsoft Dynamics 365 Finance-App aus einer externen Datei zu importieren.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0492fae6cfad505fc9fee5cd20f483c9c6d2a061
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684281"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093722"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Erforderliche Konfigurationen zum Import von Daten aus einer externen Datei estellen
 
@@ -254,6 +254,3 @@ Führen Sie diese Formatzuordnung für Testzwecke aus. Verwenden Sie die Datei 1
 27. Schließen Sie die Seite.
 28. Schließen Sie die Seite.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

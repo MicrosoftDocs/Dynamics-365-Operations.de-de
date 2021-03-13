@@ -1,6 +1,6 @@
 ---
 title: Finanzberichterstellung
-description: Die Finanzberichterstellung ermöglicht Finanz- und Geschäftsexperten Finanzaufstellungen zu erstellen, zu verwalten, bereitzustellen und anzuzeigen. Es bewegt sich über die traditionellen Berichtseinschränkungen hinaus, um effizient verschiedene Arten von Berichten zu entwerfen.
+description: Die Finanzberichterstellung ermöglicht Finanz- und Geschäftsexperten Finanzaufstellungen zu erstellen, zu verwalten, bereitzustellen und anzuzeigen.
 author: aprilolson
 manager: AnnBe
 ms.date: 12/01/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7da0d1aa4bb10658c66fce996e00b5714125f100
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0b1db953165bd745a00f68048767a2b19fcc2f38
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682695"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093950"
 ---
 # <a name="financial-reporting"></a>Finanzberichterstellung
 
@@ -96,6 +96,3 @@ Die folgenden Komponenten der Finanzberichterstellung erleichtern das Erstellen,
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 [Finanzberichte generieren](generate-financial-report.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

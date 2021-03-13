@@ -1,6 +1,6 @@
 ---
 title: Verbesserungen bei der Nachverfolgung erstellter ER-Berichtsergebnisse und Vergleich mit Ausgangswerten
-description: Dieses Thema enthält Informationen dazu, wie die ER-Grundlagenfunktion in Microsoft Dynamics 365 for Finance and Operations Version 10.0.3 verbessert wurde (Juni 2019).
+description: In diesem Thema werden Verbesserungen der EB-Basisfunktion in Microsoft Dynamics 365 for Finance and Operations Version 10.0.3 (Juni 2019) beschrieben.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 55e821b27f80383d8a8dc7a2d46f87e17c554078
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c00a5d9e2804f6ec0f6cb4c544029a1235ee58d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682846"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094003"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Verbesserungen bei der Nachverfolgung erstellter ER-Berichtsergebnisse und Vergleich mit Ausgangswerten
 
@@ -59,7 +59,7 @@ Um die Schritte dieses Beispiels abzuschließen, müssen Sie zunächst die Schri
 
 Der Grundwert wurde für das ausgewählte Format **Format zum erlernen der ER-Grundwerte** hinzugefügt, aber die Grundwertregeln für diesen Grundwert wurden noch nicht hinzugefügt.
 
-![Elektronisches Berichtsformat Baselines Seite](media/GER-BaselineSample-AddBaseline2.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
+![Seite „Grundwerte“ des EB-Formats, noch keine Regeln](media/GER-BaselineSample-AddBaseline2.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
 
 ### <a name="make-a-new-baseline-rule"></a>Erstellen eines neuen Grundwertregel
 
@@ -72,7 +72,7 @@ Der Grundwert wurde für das ausgewählte Format **Format zum erlernen der ER-Gr
 7. Wählen Sie **OK**.
 8. Wählen Sie **Ausgangswerte** aus.
 
-    ![Elektronisches Berichtsformat Baselines Seite](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
+    ![Seite mit Grundwerten des elektronischen Berichtsformats, Grundwerte ausgewählt](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
 
     Die generierte ausgehende Datei wird dem Grundwert des ausgeführten ER-Formats automatisch angefügt. Die Grundwertregel wurde diesem Grundwert automatisch hinzugefügt und enthält auch die Referenz zur zugeordneten Datei.
 
@@ -130,7 +130,7 @@ Um die Schritte dieses Beispiels abzuschließen, müssen Sie zunächst die Schri
 3. In der Liste der Ausgangswerte wählen Sie den Ausgangswert aus, der für das Format **Format zum erlernen von ER-Ausgangswerten** konfiguriert wird.
 4. Auf dem Inforegister **Ausgangswerte** wählen Sie **Löschen** aus, um die Ausgangswertregel zu entfernen, die Sie zuvor konfiguriert haben.
 
-![Elektronisches Berichtsformat Baselines Seite](media/GER-BaselineSample-AddBaseline3.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
+![Seite mit Grundwerten des elektronischen Berichtsformats, gelöscht](media/GER-BaselineSample-AddBaseline3.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>Definieren Sie Ersatz für Bindungen eines entworfenen ER-Formats
 
@@ -138,7 +138,7 @@ Um die Schritte dieses Beispiels abzuschließen, müssen Sie zunächst die Schri
 2. In der Formatkomponentenstruktur erweitern Sie den Knoten **Ausgabe**, erweitern Sie **Ausgabe \\Dokument** und aktivieren Sie anschließend das Kontrollkästchen für **Ausgabe \\Dokument\\ProcessingDateTime**.
 3. Wählen Sie **OK**.
 
-![Elektronisches Berichtsformat Baselines Seite](media/GER-BaselineSample-AddBaseline4.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
+![Seite mit Grundwerten des elektronischen Berichtsformats, Komponenten](media/GER-BaselineSample-AddBaseline4.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
 
 Die ausgewählte ER-Formatkomponente wurde der Liste der Komponenten auf dem Inforegister **Ersetzungen** hinzugefügt. Wenn das Basis-ER-Format in Debugmodus ausgeführt wird, wird die Bindung des Formats für jede Komponente durch die Bindung ersetzt, die in der Spalte **Binden** angezeigt wird. Um die Standardbindung für eine Komponente zu ändern, die im Inforegister **Ersetzungen** angezeigt wird, wählen Sie **Bearbeiten** aus.
 
@@ -207,6 +207,3 @@ Um Ausgangswerteinstellungen aus einer XML-Datei zu importieren, die auf dem Mic
 
 - [Nachverfolgung erstellter Berichtsergebnisse und Vergleich mit Ausgangswerten](er-trace-reports-compare-baseline.md)
 - [Aufgabenrecorder-Ressourcen](../user-interface/task-recorder.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

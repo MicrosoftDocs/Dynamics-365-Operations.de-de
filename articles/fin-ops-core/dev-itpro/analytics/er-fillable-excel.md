@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5733e40c67f9c97b04f126f7c3cfea9d4f8f5b5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686537"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094028"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -189,6 +189,3 @@ Wenn ein ausgehendes Dokument in einem Microsoft Excel-Arbeitsmappenformat gener
 [Einbetten von Bildern und Formen in generierten Dokumenten mithilfe von ER](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurieren Sie die elektronische Berichterstattung (ER), um Daten in Power BI zu ziehen.](general-electronic-reporting-report-configuration-get-data-powerbi.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

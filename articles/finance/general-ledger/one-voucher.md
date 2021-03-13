@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cada62078b71dd304e90951ab0f4c1643beaa48c
+ms.sourcegitcommit: bd4763cc6088e114818e80bb1c27c6521b039743
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443630"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5107719"
 ---
 # <a name="one-voucher"></a>Ein Beleg
 
@@ -55,25 +54,26 @@ Die Funktion „Ein Beleg” verursacht Probleme beim Ausgleich bei der Steuerbe
 
 Angenommen, Sie haben die folgenden mehrzeiligen Beleginformationen.
 
-[![Beispiel](./media/example.png)](./media/example.png)
+[![Beispiel eines mehrzeiligen Belegs](./media/example.png)](./media/example.png)
 
 Dann generieren Sie den Bericht **Ausgaben nach Kreditor** im Arbeitsbereich **Finanzinformationen**. Auf diesem Bericht sind Ausgabenkontosalden nach Lieferantengruppe und dann nach LIeferant gruppiert. Wenn der Bericht generiert wird, kann das System nicht bestimmen, bei welchen Kreditorengruppen/Kreditoren die Ausgabe von 250,00 anfiel. Da Buchungsdetails fehlen, geht das System davon aus, dass die gesamte Ausgabe von 250,00 vom ersten Lieferant angefallen ist, der im Beleg gefunden wurden. Deshalb wird die Ausgabe von 250,00, die im Saldo für das Hauptkonto 600120 enthalten ist, unter dieser Lieferantengruppe/diesem Lieferanten angezeigt. Es ist aber außerordentlich wahrscheinlich, dass der erste Lieferant im Beleg nicht der korrekte Lieferant ist. Deshalb ist der Bericht wahrscheinlich falsch.
 
-[![Ausgaben](./media/expenses.png)](./media/expenses.png)
+[![Ausgaben nach Lieferantenbericht](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Die Zukunft von „Ein Beleg”
 
-Aufgrund der Probleme, die früher angegeben wurden, wird die Belegfunktion nicht mehr weitergeführt. Da jedoch funktionale Lücken vorhanden sind, die von diesen Funktionen abhängen, werden die Funktionen nicht auf einmal verworfen. Stattdessen können Sie den folgenden Zeitplan nutzen:
+Aufgrund der Probleme, die bei der Verwendung eines Belegs auftreten können, wird diese Funktionalität möglicherweise nicht mehr unterstützt. Da jedoch funktionale Lücken vorhanden sind, die von diesen Funktionen abhängen, wird die Einstellung nicht auf einmal auftreten. Stattdessen können Sie den folgenden Zeitplan nutzen:
 
-- **Freigabe Frühling 2018** – Die Funktionen wird standardmäßig durch den Parameter **Mehrere Transaktionen innerhalb eines Belegs zulassen** auf der Registerkarte **Allgemeines** der Seite **Hauptbuchparameter** deaktiviert. Allerdings kann diese Funktion aktiviert werden, wenn in Ihrer Organisation ein Szenario besteht, das in eine der funktionalen Lücken fällt, die weiter unten in diesem Thema aufgeführt sind.
+- **Freigabe Frühling 2018** – diese Funktionalität wurde standardmäßig durch den Parameter **Mehrere Transaktionen innerhalb eines Belegs zulassen** auf der Registerkarte **Allgemeines** der Seite **Hauptbuchparameter** deaktiviert. Allerdings können Sei sie wieder aktivieren, wenn in Ihrer Organisation ein Szenario besteht, das in eine der funktionalen Lücken fällt, die weiter unten in diesem Thema aufgeführt sind.
 
-    - Wenn ein Debitor ein Geschäftsszenario hat, das keinen Beleg erfordert, sollten Sie die Funktionalität nicht aktivieren. Microsoft wird keine „Fehler” in den Bereichen beheben, die später in diesem Thema identifiziert wurden, wenn diese Funktion verwendet wird, obwohl eine andere Lösung vorhanden ist.
-    - Beenden Sie die Verwendung von „Ein Beleg” für Integrationen, sofern die Funktionalität nicht für eine der Funktionslücken erforderlich ist.
+    - Wenn für Ihr Geschäftsszenario „Ein Beleg“ nicht erforderlich ist, empfehlen wir, die Funktionalität deaktiviert zu lassen. Wenn Sie diese Funktion verwenden, obwohl eine andere Lösung vorhanden ist, wird Microsoft keine „Fehler” in den Bereichen beheben, die später in diesem Thema identifiziert wurden.
+    - Wir empfehlen, dass Sie die Verwendung von „Ein Beleg” für Integrationen einstellen, sofern Sie die Funktionalität nicht für die dokumentierten Funktionslücken benötigen.
 
-- **Später Versionen** – Alle funktionalen Lücken werden ausgefüllt. **Nachdem die funktionalen Lücken ausgefüllt sind und neue Funktionen bereitgestellt werden, dauert  es mindestens ein Jahr, bevor Funktion Ein Beleg dauerhaft deaktiviert wird**, da Debitoren und unabhängige Softwarehersteller (ISVs) ausreichend Zeit haben müssen, um auf die neue Funktionen zu reagieren. So müssen sie möglicherweise ihre Geschäftsprozesse, Entitäten und Integrationen aktualisieren.
+- **Spätere Versionen** – einige dieser Geschäftsanforderungen können nur mithilfe von „Ein Beleg” erfüllt werden. Microsoft muss sicherstellen, dass alle identifizierten Geschäftsanforderungen im System noch erfüllt werden können, nachdem die Funktionalität eingestellt ist. Daher müssen wahrscheinlich neue Funktionen hinzugefügt werden, um funktionalen Lücken zu schließen. Microsoft kann keine spezifische Lösung bereitstellen, da jede Funktionslücke unterschiedlich ist und basierend auf den Geschäftsanforderungen bewertet werden muss. Einige Funktionslücken werden wahrscheinlich durch Funktionen ersetzt, die dazu beitragen, bestimmte Geschäftsanforderungen zu erfüllen. Andere Lücken können jedoch geschlossen werden, indem weiterhin der Eintrag in eine Erfassung ermöglicht wird, wie bei Verwendung eines Belegs, aber das System erweitert wird, um bei Bedarf detailliertere Informationen zu erhalten.
 
-> [!IMPORTANT]
-> Beachten Sie, dass die Option **Nur „Ein Beleg”-Nummer** **nicht** aus der Erfassungsnameneinrichtung entfernt wurde. Diese Option wird immer noch unterstützt, wenn der Beleg nur Sachkontotypen enthält. Debitoren müssen vorsichtig sein, wenn sie diese Einstellung verwenden, da der Beleg nicht gebucht wird, wenn Sie **Nur „Ein Beleg”-Nummer** verwenden, aber dann mehrere Debitoren, Banken, Anlagen oder Projekte eingeben. Außerdem können Debitoren immer noch eine Mischung aus untergeordneten Sachkontotypen eingeben, wie beispielsweise Zahlung innerhalb eines einzelnen Belegs, der Kontotypen **Kreditor**/**Bank** enthält.
+Nachdem alle Funktionslücken geschlossen wurden, teilt Microsoft mit, dass die Funktion nicht mehr unterstützt wird. Die Einstellung wird jedoch erst ein Jahr nach dieser Mitteilung wirksam. Obwohl Microsoft keine Schätzung darüber abgeben kann, wann die Funktionalität „Ein Beleg“ eingestellt werden wird, wird es wahrscheinlich mindestens zwei Jahre dauern, bis die Einstellung eintritt. Die Microsoft-Richtlinie sieht vor, dass zwischen der Ankündigung veralteter Funktionen und der tatsächlichen Ablehnung mindestens 12 Monate verbleiben, damit Kunden und unabhängige Softwareanbieter (ISVs) Zeit haben, auf die Änderung zu reagieren. So muss eine Organisation möglicherweise ihre Geschäftsprozesse, Entitäten und Integrationen aktualisieren.
+
+Die Einstellung von „Ein Beleg“ ist eine wesentliche Änderung, die in großem Umfang kommuniziert wird. Im Rahmen dieser Kommunikation wird Microsoft dieses Thema aktualisieren und einen Blog-Beitrag im Microsoft Dynamics 365 Finance-Blog veröffentlichen, das Thema „Entfernte oder veraltete Funktionen“ aktualisieren, die Änderung auf entsprechenden Microsoft-Konferenzen mitteilen usw.
 
 ## <a name="why-use-one-voucher"></a>Warum „Ein Beleg” verwenden?
 
@@ -84,7 +84,7 @@ Auf Grundlage von Unterhaltungen mit Debitoren, hat Microsoft die folgende Liste
 Die folgenden Szenarien können nur mithilfe der Funktionalität „Ein Beleg” ausgeführt werden. Wenn Ihre Organisation eines dieser Szenarien hat, müssen Sie mehrere Transaktionen aktivieren, um sie in einen Beleg einzugeben, indem sie die Einstellungen  **Mehrere Transaktionen in einem Beleg zulassen** auf der Seite **Hauptbuchparameter** ändern. Diese Funktionslücken werden in späteren Versionen durch andere Funktionen ausgefüllt.
 
 > [!Note]
-> [Für jedes der folgenden Szenarien muss das Feld **Mehrere Transaktionen innerhalb eines Belegs zulassen** im **Allgemein**-Inforegister auf der Seite **Hauptbuchparameter** auf Ja gesetzt sein.]
+> [Für jedes der folgenden Szenarien muss das Feld **Mehrere Transaktionen innerhalb eines Belegs zulassen** im Feld **Allgemein** Inforegister auf der Seite **Hauptbuchparameter** auf Ja gesetzt sein.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Formular Beitragsdebitorenzahlungszusammenfassung vom Bankkonto
 
@@ -186,6 +186,3 @@ Wenn eine Korrektur des Debitor- oder Kreditorsachkonto vorgenommen wird, muss e
 ### <a name="the-system-allows-it"></a>"Das System erlaubt es"
 
 Organisationen verwenden häufig nur eine Belegfunktionen, da sie das System verwenden können, ohne die Auswirkungen zu veranschaulichen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

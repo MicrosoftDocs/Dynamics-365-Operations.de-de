@@ -1,9 +1,9 @@
 ---
 title: Zielorte für elektronische Berichterstellung (ER)
-description: Dieses Thema enthält Informationen zur Verwaltung von ER-Zielen (Electronic Reporting), zu den unterstützten Zieltypen und zu Sicherheitsaspekten.
+description: Dieses Thema enthält Informationen zur Verwaltung von EB-Zielen (Electronic Reporting), zu den unterstützten Zieltypen und zu Sicherheitsaspekten.
 author: nselin
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e4da9e09fe9e2c76426a117b6c4d83f5bc33851f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687157"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097280"
 ---
-# <a name="electronic-reporting-er-destinations"></a>Ziele für elektronische Berichterstellung (EB)
+# <a name="electronic-reporting-er-destinations"></a>Zielorte für elektronische Berichterstellung (ER)
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,7 +62,7 @@ Im Dialogfeld **Intrastat-Bericht** im Inforegister **Im Hintergrund ausführen*
 Wenn Sie die Option **Stapelverarbeitung** auf **Ja** festlegen, wird ein EB-Format im Modus [Charge](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) ausgeführt. Der entsprechende Stapelverarbeitungsauftrag wird basierend auf den Parametern erstellt, die Sie in der Registerkarte **Im Hintergrund ausführen** des Dialogfelds **EB-Parameter** angeben.
 
 > [!NOTE]
-> Die Einzelvorgangsbeschreibung wird initiiert, um Sie über die Ausführung einer EB-Formatzuordnung zu informieren. Sie enthält auch den Namen der ausgeführten EB-Komponente.
+> Die Einzelvorgangsbeschreibung informiert Sie über die Ausführung einer EB-Formatzuordnung. Sie enthält auch den Namen der ausgeführten EB-Komponente.
 
 [![Ausführen eines EB-Formats](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
@@ -95,6 +95,8 @@ In den Versionen von Finance **vor Version 10.0.9** können Sie **ein Dateiziel*
 Mit dieser Funktion können Sie beispielsweise Dateiziele für eine Dateikomponente konfigurieren, die zum Generieren eines ausgehenden Dokuments im Excel-Format verwendet wird. Ein Ziel ([Archiv](er-destination-type-archive.md)) kann so konfiguriert werden, dass die ursprüngliche Excel-Datei im ER-Auftragsarchiv gespeichert wird und ein anderes Ziel ([E-Mail](er-destination-type-email.md)) kann konfiguriert werden, um die Excel-Datei gleichzeitig ins PDF-Format zu [konvertieren](#OutputConversionToPDF) und die PDF-Datei per E-Mail zu senden.
 
 [![Mehrere Ziele für ein einzelnes Formatelement konfigurieren](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+
+Wenn Sie ein EB-Format ausführen, werden immer alle Ziele ausgeführt, die für Komponenten des Formats konfiguriert wurden. Darüber hinaus wurde die Funktionalität für EB-Ziele in Finance **Version 10.0.17 und höher** verbessert. Jetzt können Sie verschiedene Zielgruppen für ein einzelnes EB-Format konfigurieren. Diese Konfiguration markiert jeden Satz als für eine bestimmte Benutzeraktion konfiguriert. Die EB-API wurde [erweitert](er-apis-app10-0-17.md), sodass eine Aktion bereitgestellt werden kann, die der Benutzer durch Ausführen eines EB-Formats ausführt. Der bereitgestellte Aktionscode wird an EB-Ziele übergeben. Abhängig vom bereitgestellten Aktionscode können Sie verschiedene Ziele eines EB-Formats ausführen. Weitere Informationen finden Sie unter [Aktivitätsabhängige EB-Ziele konfigurieren](er-action-dependent-destinations.md).
 
 ## <a name="destination-types"></a>Zieltypen
 
@@ -154,7 +156,7 @@ Wenn Sie das Kontrollkästchen **Verarbeitung bei Fehler beenden** für die Komp
 
 ## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Ausgabeumwandlung in PDF
 
-Sie können die PDF-Konvertierungsoption verwenden, um die Ausgabe in Microsoft Office Format (Excel/Word) in PDF-Format zu konvertieren.
+Sie können die PDF-Konvertierungsoption verwenden, um die Ausgabe im Microsoft Office-Format (Excel oder Word) in das PDF-Format zu konvertieren.
 
 ### <a name="make-pdf-conversion-available"></a>PDF-Konvertierung verfügbar machen
 
@@ -164,21 +166,20 @@ Um die PDF-Konvertierungsoption in der aktuellen Finance-Instanz verfügbar zu m
 
 ### <a name="applicability"></a>Anwendbarkeit
 
-Die PDF-Konvertierungsoption kann nur für Dateikomponenten aktiviert werden, in denen die Ausgabe in Microsoft Office Excel oder Word-Format (**Excel-Datei**) generiert wird. Wenn diese Option aktiviert ist, wird die im Office-Format generierte Ausgabe automatisch in PDF-Format konvertiert.
+Die PDF-Konvertierungsoption kann nur für Dateikomponenten aktiviert werden, in denen die Ausgabe im Office-Format (Excel oder Word) (**Excel-Datei**) generiert wird. Wenn diese Option aktiviert ist, wird die im Office-Format generierte Ausgabe automatisch in PDF-Format konvertiert.
 
 ### <a name="limitations"></a>Einschränkungen
 
 > [!NOTE]
 > Diese Funktion ist eine Vorschau-Funktion und unterliegt den angegebenen Nutzungsbedingungen, die in [Ergänzende Nutzungsbedingungen für Microsoft Dynamics 365-Vorschauen](https://go.microsoft.com/fwlink/?linkid=2105274) beschrieben sind.
 
-> [!NOTE]
-> Die PDF-Konvertierungsoption ist nur für Cloud-Bereitstellungen verfügbar.
->
-> Das erstellte PDF ist auf maximal 300 Seiten beschränkt.
->
-> In Microsoft Dynamics 365 Finance Version 10.0.9 (April 2020) wird im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, nur die Querformat-Seitenausrichtung unterstützt. Mit der Veröffentlichung von Dynamics 365 Finance Version 10.0.10 (Mai 2020) können Sie im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, die [Seitenausrichtung angeben](#SelectPdfPageOrientation), während Sie ein EB-Ziel konfigurieren.
->
-> Für die Konvertierung einer Ausgabe, die keine eingebetteten Schriftarten enthält, werden nur die allgemeinen Systemschriftarten des Windows-Betriebssystems verwendet.
+Die PDF-Konvertierungsoption ist nur für Cloud-Bereitstellungen verfügbar.
+
+Das erstellte PDF ist auf maximal 300 Seiten beschränkt.
+
+In Finance **Version 10.0.9** wird im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, nur die Querformat-Seitenausrichtung unterstützt. In Finance **Version 10.0.10 (Mai 2020) und höher** können Sie im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, [die Seitenausrichtung angeben](#SelectPdfPageOrientation), während Sie ein EB-Ziel konfigurieren.
+
+Für die Konvertierung einer Ausgabe, die keine eingebetteten Schriftarten enthält, werden nur die allgemeinen Systemschriftarten des Windows-Betriebssystems verwendet.
 
 ### <a name="use-the-pdf-conversion-option"></a>Die PDF-Konvertierungsoption verwenden
 
@@ -188,16 +189,16 @@ Um die PDF-Konvertierung für ein Dateiziel zu aktivieren, aktivieren Sie das Ko
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Wählen Sie eine Seitenausrichtung für die PDF-Konvertierung</a>
 
-Wenn Sie eine ER-Konfiguration im Excel-Format generieren und in das PDF-Format konvertieren möchten, können Sie die Seitenausrichtung der PDF-Datei angeben. Wenn Sie **In PDF konvertieren** auswählen, aktivieren Sie das Kontrollkästchen, um die PDF-Konvertierung für ein Dateiziel zu aktivieren, das eine Ausgabedatei im Excel-Format erstellt. Das Feld **Seitenausrichtung** wird auf dem Inforegister **PDF-Konvertierungseinstellungen** verfügbar. In dem Feld **Seitenausrichtung** können Sie eine bevorzugte Seitenausrichtung auswählen.
+Wenn Sie eine EB-Konfiguration im Excel-Format generieren und in das PDF-Format konvertieren möchten, können Sie die Seitenausrichtung der PDF-Datei angeben. Wenn Sie **In PDF konvertieren** auswählen, aktivieren Sie das Kontrollkästchen, um die PDF-Konvertierung für ein Dateiziel zu aktivieren, das eine Ausgabedatei im Excel-Format erstellt. Das Feld **Seitenausrichtung** wird auf dem Inforegister **PDF-Konvertierungseinstellungen** verfügbar. In dem Feld **Seitenausrichtung** können Sie eine bevorzugte Seitenausrichtung auswählen.
 
 [![Wählen Sie eine Seitenausrichtung für die PDF-Konvertierung](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
-> Um die PDF-Seitenausrichtung auswählen zu können, müssen Sie Microsoft Dynamics 365 Finance Version 10.0.10 (Mai 2020) oder höher installieren.
+> Um die PDF-Seitenausrichtung auswählen zu können, müssen Sie Finance Version 10.0.10 oder höher installieren.
 >
 > Die ausgewählte Seitenausrichtung wird auf alle ER-Konfigurationen angewendet, die im Excel-Format generiert und dann in das PDF-Format konvertiert werden.
 >
-> Wenn eine konvertierte PDF-Datei aus einer ER-Konfiguration im Word-Format erstellt wird, wird die Seitenausrichtung der PDF-Datei aus dem Word-Dokument übernommen.
+> Wenn eine ER-Konfiguration im Word-Format in das PDF-Format konvertiert wird, wird die Seitenausrichtung der PDF-Datei aus dem Word-Dokument übernommen.
 
 ## <a name="security-considerations"></a>Sicherheitsaspekte
 
@@ -225,7 +226,7 @@ Nr. Nein. Der standardmäßige Microsoft Azure Blob-Speicher, der definiert ist 
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>Wozu dient die Datei in den Zieleinstellungen? Was bewirkt diese Einstellung?
 
-Das **Datei**-ziel dient zur Steuerung eines Dialogfelds. Wenn Sie dieses Ziel aktivieren oder wenn kein Ziel für eine Konfiguration definiert ist, erscheint ein Speichern- oder Öffnen-Dialogfeld, nachdem eine Ausgabedatei erstellt wurde.
+Das Ziel der **Datei** wird verwendet, um ein Dialogfeld Ihres Webbrowsers zu steuern, wenn Sie ein EB-Format im interaktiven Modus ausführen. Wenn Sie dieses Ziel aktivieren oder wenn kein Ziel für eine Konfiguration definiert ist, erscheint ein Speichern- oder Öffnen-Dialogfeld im Webbrowser.
 
 ### <a name="can-you-give-an-example-of-the-formula-that-refers-to-a-vendor-account-that-i-can-send-email-to"></a>Bitte geben Sie ein Beispiel für eine Formel, die auf ein Kreditorenkonto verweist, an das ich E-Mail senden kann.
 
@@ -237,7 +238,6 @@ Ihr Format muss erst in der ER-Konfigurationen verfügbar sein. Wenn diese Vorau
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)
+[Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[Aktivitätsabhängige EB-Ziele konfigurieren](er-action-dependent-destinations.md)

@@ -1,6 +1,6 @@
 ---
 title: Power BI-Inhalt zur Kostenrechnungsanalyse
-description: In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Kostenrechnungsanalyse enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
+description: In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Kostenrechnungsanalyse enthalten ist.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/02/2019
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c9a4741c1b09b8e68a9fe95d6f4effa328615d5
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683870"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093385"
 ---
-# <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-Inhalt zur Kostenrechnungsanalyse
+# <a name="cost-accounting-analysis-power-bi-content"></a>Inhalt zur Kostenrechnungsanalyse – Power BI-Inhalt
 
 [!include [banner](../includes/banner.md)]
 
@@ -123,6 +123,3 @@ Die folgenden wichtigen Dimensionen werden als Filter verwendet, um die aggregie
 | Steuerkalender                   | Kalender, Beschreibung des Kalenders                                                                                       |
 | Geschäftsjahr                       | Kalenderjahr                                                                                                        |
 | Finanzzeiträume                     | Kalenderperioden                                                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

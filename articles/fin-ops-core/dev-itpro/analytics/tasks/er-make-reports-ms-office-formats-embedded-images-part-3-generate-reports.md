@@ -1,6 +1,6 @@
 ---
 title: Berichte im Office-Format generieren, die eingebettete Bilder haben
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Rolle „Systemadministratorrolle“ oder „Entwickler für elektronische Berichterstellung“ angehört, eine neue Konfiguration für elektronische Berichterstellung (ER) erstellen kann, die eine Vorlage zur Generierung elektronischer Dokumente im OPENXML-Format enthält.
+description: In diesem Thema wird beschrieben, wie die Konfigurationen für die elektronische Berichterstellung (EB) entworfen werden, um elektronische Dokumente in Excel und Word zu generieren, die eingebettete Bilder enthalten.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7e15162251e5d6fa91c5a938fd846ef5b5c8cd7f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684378"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093822"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Berichte im Office-Format generieren, die eingebettete Bilder haben
 
@@ -119,6 +119,3 @@ In diesem Beispiel erstellen Sie eine ER-Konfigurationen für das Beispieluntern
 23. Klicken Sie auf "OK".
     * Prüfen Sie das generierte Ergebnis. Die Ausgabe wurde als ein Word-Dokument mit eingebetteten Bildern generiert, die das Unternehmenslogo, die Signatur einer autorisierten Person und den markierten Text des Wasserzeichens darstellen.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

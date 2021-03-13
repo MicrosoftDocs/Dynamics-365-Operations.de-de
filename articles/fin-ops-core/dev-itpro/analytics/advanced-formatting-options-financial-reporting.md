@@ -1,7 +1,7 @@
 ---
 title: Erweiterte Formatierungsoptionen in der Finanzberichterstellung
-description: Wenn Sie einen Bericht in der Finanzberichterstellung erstellen, sind zusätzliche Formatierungsfunktionen, einschließlich Filter für Dimensionen, Einschränkungen für Spalten und Berichtseinheiten, nicht druckbare Zeilen und IF/THEN/ELSE-Anweisungen in Berechnungen, verfügbar.
-author: ryansandness
+description: In diesem Thema werden erweiterte Formatierungsfunktionen beschrieben, einschließlich Filter, Einschränkungen, nicht druckbare Zeilen und bedingte Anweisungen in Berechnungen.
+author: panolte
 manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f0417ac1007fc94431aeb11d2464ee699e3f3441
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683162"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093161"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Erweiterte Formatierungsoptionen in der Finanzberichterstellung
 
@@ -310,6 +310,3 @@ Eine **IF/THEN/ELSE**-Anweisung ermöglicht, dass eine Berechnung von den Ergebn
 Sie können Berichte mithilfe von Dimensionswerten entwerfen, die ein kaufmännisches Und-Zeichen (&) enthalten.
 
 Innerhalb eines beliebigen Feld **Link zur Finanzdimension** können Sie einen Wert wie beispielsweise **GuV** eingeben. Das Einschließen von einfachen Anführungszeichen ('') auf beiden Seiten des Dimensionswert gibt an, dass Sie den Literalwert verwenden, wie beispielsweise das Einschließen des kaufmännischen Und-Zeichens (&).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

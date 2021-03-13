@@ -1,6 +1,6 @@
 ---
 title: Berichtsdefinitionen im Finanzberichtdesigner
-description: Dieser Artikel enthält Informationen zu Berichtsdefinitionen. Eine Berichtsdefinition ist eine Berichtskomponente (oder Baustein), die eine Zeilendefinition, eine Spaltendefinition und eine optionale Berichtstruktur-Definition verwendet, um den Bericht zu erstellen. Eine Berichtsdefinition enthält auch Optionen und Einstellungen zum Anpassen eines Berichts.
+description: Dieser Artikel enthält Informationen zu Berichtsdefinitionen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 779548dc49be0a92456df791017045803f70bd86
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7d5531112cfb803912849af3af785b2a69a79f3d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683110"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093413"
 ---
 # <a name="report-definitions-in-financial-report-designer"></a>Berichtsdefinitionen im Finanzberichtdesigner
 
@@ -84,6 +84,3 @@ In der folgenden Tabelle werden die Registerkarten in einer Berichtsdefinition u
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Spaltendefinitionen in Finanzberichten
-description: Dieser Artikel enthält Informationen zu Spaltendefinitionen. Eine Spaltendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Spalte eines Berichts angibt. Wie auch Zeilendefinitionen können grundlegende Spaltendefinitionen in mehreren Berichten verwendet werden.
+description: Dieser Artikel enthält Informationen zu Spaltendefinitionen. Eine Spaltendefinition ist eine Berichtkomponente, die den Inhalt von Spalten eines Berichts angibt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 611e5cdfd2289bb2c690a72659e9ba47d6309cfe
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 820604fac96f5c86be3f7206ca88b3eb1fc6c32a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687229"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093108"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Spaltendefinitionen in Finanzberichten
 
@@ -226,17 +226,16 @@ Ein Benutzer erstellt einen Bericht für eine dynamische Sechs-Monats-Prognose. 
 | Spaltenbreite        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Drucksteuerung       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
-Der Benutzer doppelklickt auf die Zelle einer Spaltenüberschrift, um das Dialogfeld **Spaltenüberschrift** zu öffnen, und gibt die folgenden Informationen ein.
+Dann doppelklickt der Benutzer auf die Zelle der Spaltenüberschrift in Spalte B, um das Dialogfeld **Spaltenüberschrift** zu öffnen, und gibt die folgenden Informationen ein.
 
 | Feld              | Wert                 |
 |--------------------|-----------------------|
 | Spaltenüberschriftstext | Istwert                |
 | AutoText einfügen    | Keine Auswahl getroffen. |
 | Formatoptionen     | Kasten                   |
-| Ausrichtung      | Keine Auswahl getroffen. |
+| Begründung      | Keine Auswahl getroffen. |
 | Zuweisen von        | Mrd                     |
 | Zuweisen bis          | BASE                  |
-| Budget-Kopfzeile      | BASE+1 bis letzte Spalte  |
 
 Nach der Eingabe der Informationen klickt der Benutzer auf **OK**. Dann doppelklickt der Benutzer auf die Zelle der Spaltenüberschrift in Spalte C, um das Dialogfeld **Spaltenüberschrift** zu öffnen, und gibt die folgenden Informationen ein.
 
@@ -244,10 +243,10 @@ Nach der Eingabe der Informationen klickt der Benutzer auf **OK**. Dann doppelkl
 |--------------------|-----------------------|
 | Spaltenüberschriftstext | Budget                |
 | AutoText einfügen    | Keine Auswahl getroffen. |
-| Formatoptionen     | Kasten                   |
-| Ausrichtung      | Keine Auswahl getroffen. |
-| Zuweisen von        | C                     |
-| Zuweisen bis          | BASE+2                |
+| Formatoptionen     | Feld                   |
+| Begründung      | Keine Auswahl getroffen. |
+| Zuweisen von        | BASE+1                |
+| Zuweisen bis          | Mo                     |
 
 Jetzt wird jedes Mal, wenn dieser Bericht generiert wird, das Wort "Istwert" über die Spalten mit Istdaten gedruckt, und das Wort "Budget" über die Spalten mit Prognosen für das Budget gedruckt. Darüber hinaus wird die Anzahl der Spalten jeden Monat reguliert.
 
@@ -383,7 +382,7 @@ Diese Standardeinstellungen können geändert werden.</td>
     </tr>
     <tr>
     <td>ACCT (Kontocodes)</td>
-    <td>Hier werden die Finanzdatensegmentwerte oder Dimensionswerte angezeigt, die für jede Zeile gelten. Für Konto- und Buchungsdetailberichte wird das vollqualifizierte Konto gedruckt (z. B. <strong>110140-070-0101</strong>). Falls in der Spalte <strong>Verknüpfen mit Finanzdimensionen</strong> Bereiche in einer zugeordneten Zeilendefinition festgelegt wurden, wird der Bereich von eckigen Klammern umgeben und als einzelner Wert behandelt (z. B. <strong>[110140:110700]-070-[0101:0200]</strong>). Für Finanzberichte und Übersichtsberichte, die mehrere Konten umfassen, wird der Finanzdatenlink aus der Zeilendefinition gedruckt (z. B. <strong>1100:1200</strong>).</td>
+    <td>Hier werden die Finanzdatensegmentwerte oder Dimensionswerte angezeigt, die für jede Zeile gelten. Für Konto- und Buchungsdetailberichte wird das vollqualifizierte Konto gedruckt (z. B. <strong>110140-070-0101</strong>). Falls in der Spalte <strong>Verknüpfen mit Finanzdimensionen</strong> Bereiche in einer zugeordneten Zeilendefinition festgelegt wurden, wird der Bereich von eckigen Klammern umgeben und als einzelner Wert behandelt (z. B. <strong>[110140:110700]-070-[0101:0200]</strong>). Für Finanzberichte und Übersichtsberichte, die mehrere Konten umfassen, wird der Finanzdatenlink aus der Zeilendefinition gedruckt (z. B. <strong>1100:1200</strong>).</td>
     </tr>
     <tr>
     <td>FÜLL</td>
@@ -599,6 +598,3 @@ Sie können den Betrag in einer Spalte durch eine angegebene Anzahl von Zeiträu
 [Zeilendefinitionen im Finanzberichtdesigner](row-definitions-financial-reporting.md)
 
 [Erweiterte Formatierungsoptionen in der Finanzberichterstellung](advanced-formatting-options-financial-reporting.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

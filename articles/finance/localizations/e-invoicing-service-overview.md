@@ -3,7 +3,7 @@ title: Übersicht über das Add-On für die elektronische Rechnungsstellung
 description: Dieses Thema enthält Informationen zum Add-On für die elektronische Rechnungsstellung in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 2c35b810151349384f105d9ac1d93e1885031450
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4443751"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104207"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>Übersicht über das Add-On für die elektronische Rechnungsstellung
 
@@ -45,9 +44,9 @@ Mit dem Add-On für die elektronische Rechnungsstellung können Sie die folgende
 
 Um das Add-On für die elektronische Rechnungsstellung verwenden zu können, müssen Sie es über Ihr Projekt in Microsoft Dynamics Lifecycle Services (LCS) installieren. Befolgen Sie anschließend die Einrichtungsprozedur um die Integration in Finance oder Supply Chain Management zu aktivieren. Weitere Informationen finden Sie unter [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung](e-invoicing-get-started.md).
 
-## <a name="availability"></a>Verfügbarkeit
+## <a name="service-availability"></a><a name="availability"></a>-Dienstverfügbarkeit
 
-Zunächst steht das Add-On für die elektronische Rechnungsstellung ausgewählten Kunden über ein Vorschauprogramm zur Verfügung. Später wird die Vorschau für weitere Kunden verfügbar gemacht. Schlussendlich wird der Dienst allgemein verfügbar sein. Da Funktionen, die landes-/regionsspezifische Anforderungen berücksichtigen, in verschiedenen Phasen des Release möglicherweise eingeschränkt sind, sollten Sie sich stets anhand der aktuellsten Dokumentation informieren, in der die Abdeckung und der Umfang der unterstützten landes-/regionsspezifischen Lösungen hervorgehoben werden.
+Derzeit steht Kunden das Add-On für die elektronische Rechnungsstellung über das Vorschauprogramm zur Verfügung. In der nächsten Phase wird der Dienst allgemein verfügbar sein. Da Funktionen, die landes-/regionsspezifische Anforderungen berücksichtigen, in verschiedenen Phasen des Release möglicherweise eingeschränkt sind, sollten Sie sich stets anhand der aktuellsten Dokumentation informieren, in der die Abdeckung und der Umfang der unterstützten landes-/regionsspezifischen Lösungen hervorgehoben werden.
 
 Das Add-On für die elektronische Rechnungsstellung wird in den folgenden Azure-Regionen bereitgestellt:
 
@@ -76,7 +75,7 @@ Das Add-On für die elektronische Rechnungsstellung kann in Szenarien verwendet 
     - Integrierte, leicht erweiterbare und konfigurierbare Integration mit zusätzlichen Inhalten für mehrere Länder
 
     > [!NOTE]
-    > Derzeit wird eine begrenzte Anzahl von direkten Übermittlungen unterstützt. Weitere Informationen finden Sie im Abschnitt [Verfügbarkeit](#availability) weiter oben in diesem Thema. Der Support wird in Zukunft erweitert.
+    > Derzeit wird eine begrenzte Anzahl von direkten Übermittlungen unterstützt. Weitere Informationen finden Sie im Abschnitt [Dienstverfügbarkeit](#availability) weiter oben in diesem Thema. Der Support wird in Zukunft erweitert.
 
 - Behandlung von Antworten von Webdiensten, einschließlich konfigurierbarer Behandlung von Ausnahmemeldungen
 - Unterstützung für elektronische Signaturen (z. B. mithilfe des XMLDSig-Signaturalgorithmus)
@@ -104,15 +103,9 @@ Die folgende Abbildung zeigt, wie Daten zum und vom Add-On für die elektronisch
 ![Datenfluss für das Add-On für die elektronische Rechnungsstellung](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Datenschutzhinweis
-Für die Aktivierung und Verwendung der elektronischen Rechnungsstellung müssen möglicherweise nur begrenzte Daten gesendet werden, einschließlich der Steuerregistrierungskennung für die Organisation. Diese Daten werden an von den Steuerbehörden autorisierte Drittagenturen weitergeleitet, um elektronische Rechnungen in den für die Integration in den Webdienst der Behörde erforderlichen Formaten zu senden. Daten, die aus diesen externen Systemen in diesen Dynamics 365-Onlinedienst importiert werden, unterliegen unseren [Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkId=512132). Weitere Informationen finden Sie in den Abschnitten zum Datenschutz in der landesspezifischen Funktionsdokumentation.
+Zur Aktivierung und Verwendung des Add-Ons für die elektronische Rechnungsstellung müssen möglicherweise nur begrenzte Daten gesendet werden, einschließlich der Steuerregistrierungskennung für die Organisation. Diese Daten werden an von den Steuerbehörden autorisierte Drittagenturen weitergeleitet, um elektronische Rechnungen in den für die Integration in den Webdienst der Behörde erforderlichen Formaten zu senden. Daten, die aus diesen externen Systemen in diesen Dynamics 365-Onlinedienst importiert werden, unterliegen unseren [Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkId=512132). Weitere Informationen finden Sie in den Abschnitten zum Datenschutz in der landesspezifischen Funktionsdokumentation.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-
-- [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung](e-invoicing-get-started.md)
-- [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Brasilien](e-invoicing-bra-get-started.md)
-- [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Mexiko](e-invoicing-mex-get-started.md)
-- [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Italien](e-invoicing-ita-get-started.md)
-- [Einrichten des Add-Ons für die elektronische Rechnungsstellung](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Dienstverwaltung](e-invoicing-service-administration.md)
+- [Elektronische Rechnungen in RCS konfigurieren](e-invoicing-configuration-rcs.md)
+- [Elektronische Rechnungen in Finance und Supply Chain Management ausstellen](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)

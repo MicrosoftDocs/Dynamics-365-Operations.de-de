@@ -1,6 +1,6 @@
 ---
-title: Berichtsstruktur-Definitionen in Finanzberichten
-description: Dieser Artikel enthält Informationen zu Berichtsstruktur-Definitionen. Eine Berichtsstruktur-Definition ist eine Berichtkomponente oder ein Baustein, die/der Sie dabei unterstützt, die Struktur und die Hierarchie Ihrer Organisation zu definieren.
+title: Definitionen für Berichtsbaumstrukturen in Finanzberichten
+description: Dieser Artikel beschreibt Definitionen für Berichtsbaumstrukturen. Eine Definition für Berichtsbaumstrukturen ist eine Berichtskomponente, die die Struktur einer Organisation definiert.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/07/2019
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 17f749863af3c37658935d5065cf053d0a165c1e
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682672"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093899"
 ---
-# <a name="reporting-tree-definitions-in-financial-reports"></a>Berichtsstruktur-Definitionen in Finanzberichten
+# <a name="reporting-tree-definitions-in-financial-reports"></a>Definitionen für Berichtsbaumstrukturen in Finanzberichten
 
 [!include [banner](../includes/banner.md)]
 
@@ -220,6 +220,3 @@ Die folgenden Beispiele zeigen mögliche Informationen an, die in einer Berichts
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

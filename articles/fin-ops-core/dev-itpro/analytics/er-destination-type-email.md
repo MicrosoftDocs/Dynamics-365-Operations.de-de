@@ -1,6 +1,6 @@
 ---
 title: E-Mail-ER-Zieltyp
-description: In diesem Thema wird erläutert, wie für jede FOLDER- oder FILE-Komponente eines EB-Formats (elektronische Berichterstellung), die zum Generieren ausgehender Dokumente konfiguriert wird, ein E-Mail-Ziel konfiguriert wird.
+description: In diesem Thema wird erläutert, wie für jede FOLDER- oder FILE-Komponente eines EB-Formats (elektronische Berichterstellung) ein E-Mail-Ziel konfiguriert wird.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/03/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: e2e0da1c724269e0956be2f402b34ff376ed1990
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690125"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094103"
 ---
 # <a name="email-er-destination-type"></a>E-Mail-ER-Zieltyp
 
@@ -65,8 +65,6 @@ Wenn Sie **Druckverwaltung** als Typ der E-Mail-Adresse auswählen, können Sie 
 - Wählen Sie im Feld **E-Mail-Quelle** die Option **Keine** aus.
 - Geben Sie im Feld **Zusätzliche E-Mail-Adressen, getrennt durch ";"** die festen E-Mail-Adressen ein.
 
-![Eine feste E-Mail-Adresse konfigurieren](./media/er_destinations-emailfixedaddress.png)
-
 Alternativ können Sie E-Mail-Adressen aus den Kontaktdaten der Partei beziehen, für die Sie ein ausgehendes Dokument erstellen. Um keine festen E-Mail-Adressen zu verwenden, wählen Sie im Feld **E-Mail-Quelle** die [Rolle](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles) der Partei für ein Dateiziel aus. Folgende Rollen werden unterstützt:
 
 - Debitor
@@ -92,8 +90,6 @@ Geben Sie auf der Seite **Formeldesigner** in das Feld **Formel** einen dokument
 
 Wenn die Kontonummern der konfigurierten Rolle für die gesamte Instanz von Microsoft Dynamics 365 Finance eindeutig sind, kann das Feld **Unternehmen aus der E-Mail-Quelle** im Dialogfeld **E-Mail an** leer bleiben.
 
-![Leeres Feld „Unternehmen aus der E-Mail-Quelle“](./media/er_destinations-emaildefineaddresssourceformula.png)
-
 Alternativ kann es vorkommen, dass verschiedene Parteien im [globalen Adressbuch](../../fin-ops/organization-administration/overview-global-address-book.md) in verschiedenen Unternehmen auf eine Weise als ([juristische Personen](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) registriert wurden, dass alle dieselbe Kontonummer verwenden, um die konfigurierte Rolle auszufüllen. In diesem Fall sind die Kontonummern für die konfigurierte Rolle nicht für die gesamte Instanz von Finance eindeutig. Um eine Partei explizit auszuwählen, können Sie daher nicht nur eine Kontonummer angeben. Sie müssen auch das Unternehmen angeben, in dessen Geltungsbereich die Partei registriert wurde, um die konfigurierte Rolle auszufüllen. Wählen Sie die Schaltfläche **Binden** (Kettensymbol) neben dem Feld **Unternehmen der E-Mail-Quelle** im Feld **E-Mail an** aus, um die Seite [Formeldesigner](general-electronic-reporting-formula-designer.md) zu öffnen. Auf dieser Seite können Sie dann eine Formel konfigurieren, die zur Laufzeit den Code des Unternehmens zurückgibt, in dessen Geltungsbereich die gewünschte Quelle gefunden werden muss.
 
 > [!TIP]
@@ -109,8 +105,6 @@ Um den Typ der E-Mail-Adressen anzugeben, die zur Laufzeit verwendet werden müs
 
 > [!NOTE]
 > Wenn Zwecke im Feld **Zweck** ausgewählt sind und gleichzeitig die Option **Hauptansprechpartner** auf **Ja** festgelegt ist, wird jede E-Mail, die mindestens ein konfiguriertes Kriterium erfüllt, zur Laufzeit verwendet.
-
-![E-Mail-Quellattributkonto konfigurieren](./media/er_destinations-emaildefineaddresssourceattributes.png)
 
 ### <a name="configuration-email"></a>Konfigurations-E-Mail
 
@@ -145,6 +139,3 @@ Die folgende Abbildung zeigt, wie einzelne Komponenten entsprechend der Beschrei
 - [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 - [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
 - [Formeldesigner in der elektronischen Berichterstellung (EB)](general-electronic-reporting-formula-designer.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

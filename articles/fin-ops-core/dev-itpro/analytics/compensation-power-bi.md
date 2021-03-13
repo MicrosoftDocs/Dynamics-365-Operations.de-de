@@ -1,6 +1,6 @@
 ---
 title: Power BI-Inhalt zur Kompensation
-description: In diesem Thema wird der Power BI-Inhalt zur Kompensation beschrieben. Es wird erläutert, wie Sie auf die Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+description: In diesem Thema wird der Power BI-Inhalt zur Kompensation beschrieben. Es wird erläutert, wie auf Berichte zugegriffen wird, und es werden Informationen zum verwendeten Datenmodell bereitgestellt.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 64b4f27b4a1fa3762169a18746c6b0933bddf3ca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b625ea7dcbb6bd8b80cbcdcc544c59b9839fc19d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687180"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093055"
 ---
 # <a name="compensation-power-bi-content"></a>Power BI-Inhalt zur Kompensation
 
@@ -71,6 +71,3 @@ Die folgenden Daten werden verwendet, um die Berichte im Power BI-Inhalt zur **K
 | Mitarbeitername            | Vorname, Nachname, vollständiger Name                                                                       | Aktueller Mitarbeiter, ausgeschiedener Mitarbeiter, Mitarbeitertrend |
 | Mitarbeitertitel           | Titel- und Dienstalter                                                                                   | Aktueller Mitarbeiter, ausgeschiedener Mitarbeiter, Mitarbeitertrend |
 | Mitarbeitertrend           | Arbeitskräfte im Zeitverlauf, Mitarbeiterzahl, Unternehmen und Position                                                        | Unternehmen, Vergütung, geografischer Standort, Mitarbeitername, Vorgesetzter, Kalender-Gegenkonto, Datum Mitarbeitertitel, Demographie, Beschäftigung, Stelle, Vergütungen |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

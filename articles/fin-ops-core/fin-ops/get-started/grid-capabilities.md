@@ -1,9 +1,9 @@
 ---
 title: Rasterfunktionen
-description: In diesem Thema werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Die neue Rasterfunktion muss aktiviert sein, damit auf diese Fähigkeiten zugegriffen werden kann.
+description: In diesem Thema werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Sie müssen die neue Rasterfunktion aktivieren, damit auf diese Fähigkeiten zugegriffen werden kann.
 author: jasongre
 manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: f8ec45208ea86f4b1782eaeb1d14bb414e3b577f
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693773"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104308"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Die neue Rastersteuerung bietet eine Reihe nützlicher und leistungsfähiger Funktionen, mit denen die Benutzerproduktivität gesteigert, interessantere Ansichten Ihrer Daten erstellt und Sie aussagekräftige Einblicke in Ihre Daten gewinnen können. Dieser Artikel deckt die folgenden Funktionen ab: 
+Die neue Rastersteuerung bietet eine Reihe nützlicher und leistungsfähiger Funktionen, mit denen Sie die Benutzerproduktivität steigern, interessantere Ansichten Ihrer Daten erstellen und aussagekräftige Einblicke in Ihre Daten gewinnen können. Dieser Artikel deckt die folgenden Funktionen ab: 
 
 -  Summen berechnen
 -  Type-ahead
 -  Auswerten von mathematischen Ausdrücken 
 -  Gruppieren von Tabellendaten (separat mit der **(Vorschau) Gruppierung in Rastern**-Funktion aktiviert)
--  Angeheftete Systemspalten
+-  Spalten fixieren
 
 ## <a name="calculating-totals"></a>Summen berechnen
 In Finance and Operations-Apps haben Benutzer die Möglichkeit, Summen am unteren Rand numerischer Spalten in Rastern anzuzeigen. Diese Summen werden in einem Fußzeilenbereich am unteren Rand des Rasters angezeigt. 
@@ -41,14 +41,14 @@ In Finance and Operations-Apps haben Benutzer die Möglichkeit, Summen am untere
 ### <a name="showing-the-grid-footer"></a>Anzeigen der Rasterfußzeile
 In den Finance and Operations-Apps gibt es am unteren Rand jedes Tabellenrasters einen Fußbereich. In der Fußzeile können wertvolle Informationen angezeigt werden, die sich auf die im Gitter angezeigten Daten beziehen. Hier sind einige Beispiele für diese Informationen:
 
-- Die Anzahl der ausgewählten Zeilen in der Tabelle (wenn mehr als ein Datensatz ausgewählt ist)
+- Die Anzahl der ausgewählten Zeilen in der Tabelle (wenn Sie mehr als einen Datensatz auswählen)
 - Gesamtsummen am unteren Ende konfigurierter, numerischer Spalten
 - Die Anzahl von Reihen in einem Dataset 
 
-Diese Fußzeile ist standardmäßig ausgeblendet, kann jedoch problemlos aktiviert werden. Um die Fußzeile für ein Raster anzuzeigen, klicken Sie mit der rechten Maustaste auf eine Spaltenüberschrift im Raster und wählen **Fußzeile anzeigen** aus. Sobald die Fußzeile für ein bestimmtes Raster aktiviert wurde, wird diese Einstellung gespeichert, bis der Benutzer die Fußzeile ausblenden möchte. Dies geschieht über einen Klick mit der rechten Maustaste und der Auswahl von **Fußzeile ausblenden**.  Beachten Sie, dass sich die Position der **Fußzeile anzeigen/Fußzeile ausblenden**-Aktion in zukünftigen Versionen vermutlich ändert. 
+Diese Fußzeile ist standardmäßig ausgeblendet, kann jedoch auch aktiviert werden. Um die Fußzeile für ein Raster anzuzeigen, klicken Sie mit der rechten Maustaste auf eine Spaltenüberschrift im Raster und wählen **Fußzeile anzeigen** aus. Nachdem Sie die Fußzeile für ein bestimmtes Raster aktiviert haben, wird diese Einstellung gespeichert, bis der Benutzer die Fußzeile ausblendet. Um die Fußzeile auszublenden, klicken Sie mit der rechten Maustaste auf eine Spaltenüberschrift, und wählen Sie **Fußzeile ausblenden**.  (Die Position der **Fußzeile anzeigen/Fußzeile ausblenden**-Aktion wird in zukünftigen Versionen vermutlich geändert.) 
 
 ### <a name="specifying-columns-with-totals"></a>Angeben von Spalten mit Summen
-Derzeit werden keine Spalten konfiguriert, die standardmäßig Summen anzeigen. Stattdessen wird dies als einmalige Einrichtungsaktivität betrachtet, ähnlich wie das Anpassen der Spaltenbreiten in Rastern. Wenn Sie festlegen, dass für eine Spalte Summen angezeigt werden sollen, wird diese Einstellung für den nächsten Besuch der Seite gespeichert.  
+Derzeit werden in keiner Spalte standardmäßig Summen angezeigt. Stattdessen wird dies als einmalige Einrichtungsaktivität betrachtet, ähnlich wie das Anpassen der Spaltenbreiten in Rastern. Wenn Sie festlegen, dass für eine Spalte Summen angezeigt werden sollen, wird diese Einstellung für den nächsten Besuch der Seite gespeichert.  
 
 Es gibt zwei Möglichkeiten, eine Spalte so zu konfigurieren, dass eine Summe angezeigt wird: 
 
@@ -122,8 +122,14 @@ Auf die gleiche Weise, wie Sie alle Zeilen im Raster auswählen (oder die Auswah
 ### <a name="hiding-column-names"></a>Spaltennamen ausblenden
 Beim Gruppieren von Daten wird standardmäßig der Spaltenname in der Gruppenkopfzeile angezeigt. Ab Version 10.0.14/Plattform-Update 38 können Sie den Spaltennamen in Gruppenkopfzeilen unterdrücken, indem Sie **Rasteroptionen** > **Gruppenspaltennamen ausblenden** auswählen.
 
-## <a name="pinned-system-columns"></a>Angeheftete Systemspalten
-Die Zeilenauswahlspalte und die Zeilenstatusspalte im neuen Raster werden am linken Rand des Rasters angeheftet oder eingefroren. Wenn diese Spalten in einem Raster enthalten sind, sind sie für den Benutzer unabhängig von der horizontalen Bildlaufposition im Raster immer sichtbar.   
+## <a name="freezing-columns"></a>Spalten fixieren
+Einige Spalten in einem Raster sind möglicherweise sehr wichtig für den Kontext, sodass sie nicht möchten, dass sie nicht mehr angezeigt werden. Stattdessen möchten Sie, dass die Werte in diesen Spalten immer sichtbar sind. In Version 10.0.17 bietet die Funktion **Spalten im Raster fixieren** Benutzern diese Flexibilität. 
+
+Um eine Spalte zu fixieren, klicken Sie mit der rechten Maustaste in die Spaltenüberschrift und wählen Sie dann **Spalte fixieren**. Wenn Sie diesen Schritt zum ersten Mal ausführen, wird die ausgewählte Spalte zur ersten Spalte und wird nicht mehr aus der Ansicht gescrollt. Jede nachfolgende Spalte, die Sie fixieren, wird rechts von der letzten fixierten Spalte hinzugefügt. Sie können die Standardfunktion zum Verschieben verwenden, um fixierte Spalten nach Bedarf neu anzuordnen. Fixierte Spalten können jedoch nicht verschoben werden, sodass sie in der Gruppe der nicht fixierten Spalten angezeigt werden. Ebenso können nicht fixierte Spalten nicht verschoben werden, sodass sie in der Gruppe der fixierten Spalten angezeigt werden.
+
+Um die Fixierung einer Spalte aufzuheben, klicken Sie mit der rechten Maustaste in die Überschrift der fixierten Spalte, und wählen Sie dann **Spaltenfixierung aufheben**. 
+
+Beachten Sie, dass die Zeilenauswahl- und Zeilenstatusspalten im neuen Raster immer als die ersten beiden Spalten fixiert werden. Wenn diese Spalten in einem Raster enthalten sind, sind sie für Benutzer unabhängig von der horizontalen Bildlaufposition im Raster immer sichtbar. Diese beiden Spalten können nicht neu angeordnet werden.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Wie aktiviere ich die neue Rastersteuerung in meiner Umgebung? 
@@ -159,7 +165,7 @@ Diese API wird bis zur Veröffentlichung im Oktober 2021 durchgeführt, danach 
 Wenn ein Entwickler die **WidthMode**-Eigenschaft bei Spalten innerhalb des neuen Rasters auf **SizeToAvailable** festlegt, haben diese Spalten zunächst dieselbe Breite wie bei einer Einstellung der Eigenschaft **SizeToContent**. Sie dehnen sich jedoch, um jede zusätzliche verfügbare Breite innerhalb des Rasters zu nutzen. Wenn die Eigenschaft bei mehreren Spalten auf **SizeToAvailable** festgelegt ist, teilen sich alle diese Spalten die zusätzliche verfügbare Breite innerhalb des Rasters. Wenn ein Benutzer jedoch die Größe einer dieser Spalten manuell ändert, wird die Spalte statisch. Sie bleibt auf dieser Breite und wird nicht mehr gedehnt, um die zusätzliche verfügbare Rasterbreite einzunehmen.  
 
 ## <a name="known-issues"></a>Bekannte Probleme
-In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteuerelement verwaltet, während sich die Funktion in einem Vorschaustatus befindet.  
+In diesem Abschnitt wird eine Liste bekannter Probleme für die neue Rastersteuerung aufgeführt.  
 
 ### <a name="open-issues"></a>Bekannte Probleme
 -  Nach dem Aktivieren der Funktion **Neue Rastersteuerung** werden einige Seiten weiterhin die vorhandene Rastersteuerung verwenden. Dies geschieht in den folgenden Situationen:  
@@ -170,26 +176,50 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteue
     Tritt diese Situation zum ersten Mal auf, wird eine Meldung zum Aktualisieren der Seite angezeigt. Nachdem diese Meldung angezeigt wird, verwendet die Seite das vorhandene Raster für alle Benutzer bis zur nächsten Aktualisierung der Produktversion weiter. Für ein zukünftiges Update wird an einem besseren Umgang mit diesen Szenarien gearbeitet, damit das neue Raster genutzt werden kann.    
     
 -  [KB 4582758] Datensätze sind verschwommen, wenn Sie den Zoom von 100 auf einen anderen Prozentsatz ändern
-    
+-  [KB 4592012] Unerwarteter Clientfehler in IE11 beim Einfügen mehrerer Zeilen aus Excel
+    -  Microsoft verfolgt keine Lösung für dieses Problem
+
+### <a name="fixed-as-part-of-10016"></a>Als Teil von 10.0.16 behoben
+
+-  [KB 4598335] Mehrzeilige Zeichenfolgensteuerelemente berücksichtigen ihre DisplayHeights in Listen/Karten nicht 
+-  [KB 4591891] Rechnungsvorschlagspositionen verschwinden beim Aufheben der Markierung von Positionen
+-  [KB 4592104] Datensätze können nicht bearbeitet werden, nachdem Sie auf „Problem beheben“ geklickt und in eine andere Zeile gewechselt haben, ohne das Validierungsproblem zu beheben
+-  [KB 4594449] Die Schaltflächen „Nie“ und „Löschen“ fehlen in der Datumsauswahl 
+-  [KB 4594448] Die Eingabe der Zeit wird bei dem neuen Raster anders behandelt
+-  [KB 4600059] Unerwarteter Clientfehler bei E-Mail-Drosselung
+-  [KB 4574584] Die Vorschau der Ausgabenanhänge ist nicht verfügbar, wenn Sie den Mauszeiger über das Belegsymbol bewegen
+
 ### <a name="fixed-as-part-of-10015"></a>Als Teil von 10.0.15 behoben    
 
+-  (Qualitätsaktualisierung) [KB 4594444] Unerwarteter Clientfehler bei Vorschau für die segmentierte Eingabesteuerung
 -  [KB 4582723] Anzeigeoptionen werden nicht angezeigt, wenn sie später im Formularlebenszyklus ausgeführt werden
+-  [KB 4591988] Probleme bei der Verwendung der Tastatur zum Auswählen eines Werts aus einer ReferenceGroup-Suche
+-  [KB 4588958] Regression Suite Automation Tool (RSAT)-Test schlägt mit Fehler fehl: TypeError: Nicht definierte Eigenschaft „text“ kann nicht gelesen werden
+-  [KB 4591970] Unerwarteter Clientfehler beim Einfügen aus Excel wurde unmittelbar nach dem Klicken in das Raster ausgeführt
+-  [KB 4591904] Datenänderungen werden nicht gespeichert, wenn der Benutzer nach dem Bearbeiten eines Steuerelements sofort auf die Suche eines anderen Steuerelements geklickt und diese geöffnet hat
+-  [KB 4584752] Unerwarteter Clientfehler auf der Seite mit den Projektrechnungsvorschlägen
+-  [KB 4584540] Das Raster kann nicht verlassen werden, nachdem eine einzelne Position in eine Erfassungsposition eingefügt wurde
+-  [KB 4591908] Beim Erstellen einer neuen Zeile bleibt der Fokus in der Spalte, in der Sie sich befanden
 
 ### <a name="fixed-as-part-of-10014"></a>Als Teil von 10.0.14 behoben
 
 -  (Qualitätsaktualisierung) [KB 4584752] Unerwarteter Clientfehler auf der Seite mit den Projektrechnungsvorschlägen
+-  [KB 4583880] Tests in Regression Suite Automation Tool (RSAT) schlagen bei OpenLookup-Aktion mit „Nicht definierte Eigenschaft RowIndex kann nicht gelesen werden“ fehl.
+-  [KB 4583847] Unerwarteter Clientfehler beim Navigieren durch Suchvorgänge
 
 ### <a name="fixed-as-part-of-10013"></a>Als Teil von 10.0.13 behoben
 
+-  (Qualitätsaktualisierung) [KB 4584752] Unerwarteter Clientfehler auf der Seite mit den Projektrechnungsvorschlägen
 -  (Qualitätsaktualisierung) [KB 4583880] Tests in Regression Suite Automation Tool (RSAT) schlagen bei OpenLookup-Aktion mit „Nicht definierte Eigenschaft RowIndex kann nicht gelesen werden“ fehl.
 -  (Qualitätsaktualisierung) [KB 4583847] Unerwarteter Clientfehler beim Navigieren durch Suchvorgänge 
 -  (Qualitätsaktualisierung) [Bug 471777] Felder in einem Raster können nicht zum Bearbeiten oder Erstellen einer mobilen App ausgewählt werden
--  [Bug 474851] Hyperlinks in Referenzgruppen-Steuerelementen funktionieren nicht 
+-  [KB 4582727] Das Raster friert ein, nachdem der Benutzer einen Dialog für Artikel mit mehreren Mengen angezeigt hat
+-  [Bug 474851] Hyperlinks in Referenzgruppensteuerelementen funktionieren nicht 
 -  [Bug 474848] Erweiterte Vorschauen mit Rastern werden nicht angezeigt
--  [KB 4582726] Die Eigenschat RotateSign wird nicht berücksichtigt  
+-  [KB 4582726] Die Eigenschaft RotateSign wird nicht berücksichtigt  
 -  [Bug 470173] Kontrollkästchen in inaktiven Zeilen werden umgeschaltet, wenn auf das Leerzeichen in der Zelle geklickt wird
 -  [Bug 474848] Erweiterte Vorschauen mit Rastern werden nicht angezeigt
--  [Bug 474851] Hyperlinks in Referenzgruppen-Steuerelementen funktionieren nicht 
+-  [Bug 474851] Hyperlinks in Referenzgruppensteuerelementen funktionieren nicht 
 -  [Bug 471777] Felder in einem Raster können nicht zum Bearbeiten oder Erstellen einer mobilen App ausgewählt werden
 -  [KB 4569441] Probleme beim Rendern mehrspaltiger Kartenlisten, QuickInfos für Bilder und Anzeigeoptionen für einige Felder
 -  [KB 4575279] Nicht alle markierten Zeilen werden aus der allgemeinen Erfassung gelöscht
@@ -201,7 +231,7 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteue
 -  [KB 4575435] Die verbesserte Vorschau bleibt manchmal bestehen, auch wenn sich der Mauszeiger nicht in der Nähe des Felds befindet
 -  [KB 4575434] Die Suche filtert nicht, wenn das Feld geändert wurde
 -  [KB 4575430] Werte in Kennwortfeldern werden im Raster nicht maskiert
--  [KB 4569438] Nach dem Markieren von Zeilen beim Abwickeln von Lieferantentransaktionen wird „Die Verarbeitung wurde aufgrund eines Prüfungsproblems gestoppt“ angezeigt
+-  [KB 4569438] Nach dem Markieren von Zeilen beim Abwickeln von Lieferantentransaktionen wird „Die Verarbeitung wurde aufgrund eines Validierungsproblems gestoppt“ angezeigt
 -  [KB 4569434] Das Aktualisieren des Formulars für juristische Personen führt zu weniger Datensätzen
 -  [KB 4575297] Der Fokus bewegt sich beim Bearbeiten und Durchblättern eines Rasters immer wieder zur Aufgabenaufzeichnung
 -  [KB 4566773] Korrekturtransaktionen werden bei der Belegbuchungsanfrage nicht als negativ angezeigt 
@@ -215,7 +245,7 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteue
 - [KB 4558545] Tabellensteuerelemente aktualisieren den Inhalt der angezeigten Elemente nicht.
 - [KB 4558570] Elemente werden nach dem Löschen des Datensatzes weiterhin auf der Seite angezeigt.
 - [KB 4558572] Stilelemente, die dem Listenfenster **ExtendedStyle** zugeordnet sind, werden nicht angewendet.
-- [KB 4558573] Prüfungsfehler können nicht behoben werden, wenn sich die erforderliche Änderung außerhalb des Rasters befindet.
+- [KB 4558573] Validierungsfehler können nicht behoben werden, wenn sich die erforderliche Änderung außerhalb des Rasters befindet.
 - [KB 4558584] Negative Zahlen werden nicht korrekt gerendert.
 - [KB 4560726] Ein unerwarteter Clientfehler tritt auf, nachdem der Austausch zwischen Listen mithilfe eines Listenansicht-Steuerelements erfolgt ist.
 - [KB 4562141] Rasterindizes sind deaktiviert, nachdem ein neuer Datensatz hinzugefügt wurde.
@@ -224,9 +254,9 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteue
 - [KB 4562646] Sie können zeitweise nicht außerhalb des Rasters klicken, nachdem Sie einige Zeilen mehrfach ausgewählt haben.
 - [KB 4562647] Fokus wird auf das erste Steuerelement im Dialogfeld **Veröffentlichen** zurückgesetzt, nachdem eine neue Zeile im Sicherheitsrollenraster hinzugefügt wurde.
 - [KB 4563310] Die erweiterte Vorschau wird nach dem Ändern einer Zeile nicht geschlossen.
-- [KB 4563313] Ein unerwarteter Clientfehler tritt in Internet Explorer auf, wenn ein Wert in einer Suche ausgewählt wird.
-- [KB 4564557] Suchvorgänge und Drop-down-Menüs werden in Internet Explorer nicht geöffnet
-- [KB 4563324] Navigation funktioniert nachdem der Arbeitsbereich **Personalmanagement** geöffnet wurde.
+- [KB 4563313] Ein unerwarteter Clientfehler tritt im Internet Explorer auf, wenn ein Wert in einer Suche ausgewählt wird.
+- [KB 4564557] Suchvorgänge und Drop-down-Menüs werden nicht im Internet Explorer geöffnet
+- [KB 4563324] Navigation funktioniert nachdem der **Personalmanagement** Arbeitsbereich geöffnet wurde.
 
 ### <a name="fixed-as-part-of-10011"></a>Als Teil von 10.0.11 behoben
 
@@ -235,11 +265,11 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteue
 - [KB 4558374] Datensätze, für die ein polymorphes Auswahldialogfeld erforderlich ist, können nicht erstellt werden.
 - [KB 4558375] Hilfetext wird in den Spalten des neuen Rasters nicht angezeigt.
 - [KB 4558376] Listenbedienfeldraster werden in Internet Explorer nicht in der richtigen Höhe gerendert.
-- [KB 4558377] Kombinationsfeldspalten mit der Breite **SizeToAvailable** werden auf einigen Seiten nicht gerendert.
+- [KB 4558377] Kombinationsfeldspalten mit **SizeToAvailable**-Breite werden auf einigen Seiten nicht gerendert.
 - [KB 4558378] Drillthrough öffnet manchmal den falschen Datensatz.
 - [KB 4558379] Ein Fehler tritt auf, wenn Suchvorgänge geöffnet werden, wenn **ReplaceOnLookup**=**Nein** ist.
 - [KB 4558380] Der verfügbare Platz im Raster wird nicht sofort nach dem Reduzieren eines Teils der Seite gefüllt.
-- [KB 4558381] Negative Zahlen werden nicht korrekt gerendert/Benutzer bleiben manchmal hängen, nachdem Prüfungsprobleme aufgetreten sind.
+- [KB 4558381] Negative Zahlen werden nicht korrekt gerendert/Benutzer bleiben manchmal hängen, nachdem Validierungsprobleme aufgetreten sind.
 - [KB 4558382] Unerwartete Clientfehler treten auf.
 - [KB 4558383] Steuerelemente außerhalb des Rasters werden nicht aktualisiert, nachdem der letzte Datensatz gelöscht wurde.
 - [KB 4558587] Referenzgruppen mit Kombinationsfeldern für Ersatzfelder zeigen keine Werte an.
@@ -263,6 +293,3 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteue
 ### <a name="quality-update-for-1009platform-update-33"></a>Qualitätsupdate für 10.0.9/Platform update 33
 
 - [KB 4550367] Zeitwerte sind nicht richtig formatiert.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

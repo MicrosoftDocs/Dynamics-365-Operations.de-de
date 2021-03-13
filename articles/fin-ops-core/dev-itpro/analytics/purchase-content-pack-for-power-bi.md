@@ -1,6 +1,6 @@
 ---
 title: Einkaufs- und Ausgabenanalyse Power BI-Inhalt
-description: In diesem Thema wird beschrieben, was in den Inhalten der Einkaufs- und Ausgabenanalyse Power BI enthalten ist. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet werden.
+description: In diesem Thema wird beschrieben, was in den Inhalten der Einkaufs- und Ausgabenanalyse Power BI enthalten ist.
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/24/2019
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3f556cf2e506c57e465c2a86485d2cdd4cf8b65e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5914abaafab509e278d7a85441928feddb0b5164
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680613"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093441"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Einkaufs- und Ausgabenanalyse Power BI-Inhalt
 
@@ -154,6 +154,3 @@ Die folgenden wichtigen Dimensionen im Inhaltspaket werden als Filter verwendet,
 | Daten                  | Daten, Jahresausgleich                                    |
 
 Standardmäßig zeigt das Inhaltspaket Daten während des laufenden Kalenderjahrs an. Allerdings können Sie den im Berichtsfilterabschnitt Datumsfilter ändern. Sie können das den Unternehmensfilter auch ändern.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

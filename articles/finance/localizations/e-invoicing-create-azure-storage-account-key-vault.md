@@ -11,33 +11,22 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5a883011bbff6d82504497d739c07f1ada9e5f69
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4443752"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104228"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Erstellen eines Azure-Speicherkontos und eines Schlüsseltresors
 
 [!include [banner](../includes/banner.md)]
-
-
-
-Der Add-On-Service für die elektronische Rechnungsstellung übernimmt die Zuständigkeit für die Speicherung aller Ihrer Geschäftsdaten in den Microsoft Azure-Ressourcen, die Ihrem Unternehmen gehören. Um sicherzustellen, dass der Service ordnungsgemäß funktioniert und auf alle Geschäftsdaten, die für das Add-On für die elektronische Rechnungsstellung benötigt und von ihm generiert werden, nur vom Add-On zugegriffen wird, müssen Sie zwei Azure-Hauptressourcen erstellen:
-
-- Ein Azure-Speicherkonto (Blob-Speicher) zum Speichern elektronischer Rechnungen
-- Ein Azure-Schlüsseldepot zum Speichern von Zertifikaten und des URI (Uniform Resource Identifier) des Speicherkontos
-
-> [!NOTE]
-> Eine dedizierte Schlüsseltresorressource und ein Blob-Speicher für den Kunden müssen speziell für die Verwendung mit dem Add-On für die elektronische Rechnungsstellung zugewiesen werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -91,6 +80,3 @@ In diesem Thema führen Sie zwei Hauptschritte aus:
 9. Wählen Sie im Dialogfeld **Prinzipal** den Prinzipal aus, indem Sie das **Add-On für die elektronische Rechnungsstellung** hinzufügen.
 10. Wählen Sie **Hinzufügen** aus und wählen Sie dann **Änderungen am Schlüsseltresor speichern** aus.
 11. Kopieren Sie auf der Seite **Übersicht** den Wert von **DNS-Name** für den Schlüsseltresor. Dieser Wert wird während der Einrichtung des Service in RCS verwendet und als *Schlüsseltresor-URI* bezeichnet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

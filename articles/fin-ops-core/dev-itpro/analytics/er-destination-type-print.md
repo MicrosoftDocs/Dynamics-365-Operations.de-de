@@ -1,6 +1,6 @@
 ---
 title: Drucker-ER-Zieltyps
-description: Dieses Thema enthält Informationen zum Konfigurieren eines Druckerziels für jede ORDNER- oder DATEI-Komponente eines ER-Formats (Electronic Reporting), das zum Generieren ausgehender Dokumente in PDF- oder Microsoft Office-Formaten (Excel\Word) konfiguriert ist.
+description: In diesem Thema wird erläutert, wie für jede FOLDER- oder FILE-Komponente eines EB-Formats (elektronische Berichterstellung) ein Druckerziel konfiguriert werden kann.
 author: NickSelin
 manager: AnnBe
 ms.date: 03/17/2020
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c6e298f62ec69f349eb713d66313e535c7e01881
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679605"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094078"
 ---
-# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Druckerziel
+# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Druckziel
 
 [!include [banner](../includes/banner.md)]
 
@@ -70,6 +70,3 @@ Um eine bestimmte [Seitenausrichtung](electronic-reporting-destinations.md#Selec
 
 - [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 - [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
