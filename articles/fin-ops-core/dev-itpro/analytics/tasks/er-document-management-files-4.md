@@ -1,6 +1,6 @@
 ---
 title: 'ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 4: Format ausführen)'
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien in ER-Berichten nutzen kann.
+description: In diesem Thema wird beschrieben, wie Sie ein elektronisches Berichtsformat für die Verwendung von Dokumentenverwaltungsdateien in der EB-Ausgabe konfigurieren. (Teil 4)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 89e09d79389dc2c883c429cfee3164632e0cdc0f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d437b31b8a55f345ebc3567bc8c6a2c5ecfd2eec
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681780"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092515"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-4---run-format"></a>ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 4: Format ausführen)
 
@@ -69,6 +69,3 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 11. Klicken Sie auf "OK".
     * Prüfen Sie das generierte Ergebnis. Beachten Sie, das für jede Anlage ein einzelner XML-Knoten erstellt wurde. Der Inhalt des Anhangs wird dann mit der XML-Ausgabe im MIME-Textformat (Base64) ausgefüllt.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

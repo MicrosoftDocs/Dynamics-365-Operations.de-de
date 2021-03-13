@@ -1,6 +1,6 @@
 ---
 title: Upload einer Konfiguration nach Lifecycle Services
-description: In diesem Thema wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Konfiguration für „Elektronische Berichterstellung (EB)“ erstellen kann und sie nach Microsoft Dynamics Lifecycle Services (LCS) hochladen kann.
+description: Dieses Thema zeigt, wie Sie eine neue Konfiguration zur elektronischen Berichterstellung (EB) erstellen und nach Microsoft Dynamics Lifecycle Services (LCS) hochladen.
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ebafb52882fd33f4f0ef140c5d23d3288af97a2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 92fc6d7a8b2508c9a1f7b56ca8115adbd6ae00ea
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684162"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092540"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Upload einer Konfiguration nach Lifecycle Services
 
@@ -145,6 +145,3 @@ In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen
     Die von Ihnen hochgeladene EB-Konfiguration sollte aufgelistet sein.
 
     Beachten Sie, dass die hochgeladene LCS-Konfiguration zu einer anderen Instance werden kann, wenn Anbieter Zugriff auf dieses LCS-Projekt haben.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -10,24 +10,22 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 981bbf03480abfd812b4020173b7acfdad0fef14
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 1d709d99737ad05af1fb19d9f3ef7b87a8db80d3
+ms.sourcegitcommit: da17648c296b22d517eadb2f71c7803672e5648d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594967"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "5031819"
 ---
 # <a name="upload-and-serve-static-files"></a>Statische Dateien hochladen und bedienen
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie eine statische Datei in Microsoft Dynamics 365 Commerce-Website-Generator hochladen und wie Sie eine benutzerdefinierte URL und Dateiname erstellen, die für die Anforderung dieser Datei verwendet werden können.
 
@@ -107,6 +105,3 @@ Folgen Sie diesen Schritte, um den URL-Pfad zu ändern.
 [Bilder zuschneiden](dam-crop-images.md)
 
 [Bildfokuspunkte anpassen](dam-custom-focal-point.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: ER Entwerfen einer Konfiguration für das Generieren von Berichten im OPENXML-Format (November 2016)
-description: In diesem Thema wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ angehört, eine neue Konfiguration für elektronische Berichterstellung (ER) erstellen kann, die eine Vorlage zur Generierung elektronischer Dokumente im OPENXML-Format enthält.
+description: In diesem Thema wird beschrieben, wie Sie eine neue EB-Konfiguration (elektronische Berichterstellung) erstellen, die eine Vorlage zum Generieren elektronischer Dokumente im OPENXML-Format enthält.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/12/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bf909efbac5dce8e22d9713ad2e694ce624ffeb0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3b832961061d05e3f1ae046f820bc7a37baaf90c
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681900"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092665"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER Entwerfen einer Konfiguration für das Generieren von Berichten im OPENXML-Format (November 2016)
 
@@ -150,6 +150,3 @@ Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter „Konf
 17. Geben Sie im Feld **Bankkonto** `GBSI OPER` ein.
 18. Wählen Sie **OK** und dann erneut **OK** aus. Überprüfen Sie das erstellte Arbeitsblatt, einschließlich Details von Zahlungspositionen sowie der Summen für jeden Währungscode, der in dieser Zahlungsnachricht verwendet wird.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

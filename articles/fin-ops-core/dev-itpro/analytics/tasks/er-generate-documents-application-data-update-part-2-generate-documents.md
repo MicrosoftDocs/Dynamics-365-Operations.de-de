@@ -1,6 +1,6 @@
 ---
 title: Konfigurationen entwerfen, um Dokumente zu generieren, die Anwendungsdaten haben
-description: Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, "ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 1 - Importkonfigurationen).
+description: Dieses Thema zeigt, wie elektronische Berichterstellungskonfigurationen (EB) entworfen werden, um ein elektronisches Dokument zu generieren. (Teil 1 – Konfigurationen importieren).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d099836ba00ffa1d4fd002af4ac3e6045b41c6a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 417c419dc6925bac337fe74a2f057395316ec75d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684594"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092921"
 ---
 # <a name="design-configurations-to-generate-documents-that-have-application-data"></a>Konfigurationen entwerfen, um Dokumente zu generieren, die Anwendungsdaten haben
 
@@ -58,6 +58,3 @@ Bevor Sie beginnen, ändern Sie den Landkontext für das DEMF-Unternehmen DEU (D
 10. Schließen Sie die Seite.
 11. Schließen Sie die Seite.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

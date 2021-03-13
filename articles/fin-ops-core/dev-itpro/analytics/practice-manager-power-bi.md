@@ -1,6 +1,6 @@
 ---
 title: Power BI-Inhalt – Practice Manager
-description: In diesem Thema wird beschrieben, was im Power BI-Inhalt – Practice Manager enthalten ist. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet werden.
+description: In diesem Thema wird beschrieben, was im Power BI-Inhalt – Practice Manager enthalten ist.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 17a68e5aedb8b085c85d1ed7b6ad87f3eaecfc25
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f01109b360b23adf84673e84e6240f8f4431340d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685704"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092456"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-Inhalt – Practice Manager
 
@@ -117,6 +117,3 @@ In den folgenden Abschnitten werden die aggregierten Messungen, die in jeder Ent
 | Zentrale aggregierte Messungen       | Feld               | Beschreibung |
 |---------------------------------|---------------------|-------------|
 | Geplante Kosten für abgeschlossene Aktivität | Sum(TotalCostPrice) | Der Gesamteinstandspreis in Vorkalkulationen für alle Projektbuchungsarten mit abgeschlossenen Aufgaben. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

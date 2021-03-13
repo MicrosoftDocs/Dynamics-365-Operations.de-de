@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bd3c9bea010099f83d16dad70261bc2d46a1dac
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: e3cb5dc59373b7af76fffa1b1c59728c84dfb5fb
+ms.sourcegitcommit: fd62ab3d399b0d6ea0d362f1d403a300e84a576d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693281"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "5067622"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurieren von Workfloweigenschaften
 
@@ -73,6 +73,9 @@ Sie können Benutzern, die Dokumente zur Verarbeitung und Genehmigung übermitte
     4. Geben Sie den Text im Feld **Übersetzter Text** ein.
     5. Zum Personalisieren des Texts können Sie Platzhalter einfügen. Anweisungen zum Eingeben eines Platzhalters finden Sie in Schritt 3.
     6. Klicken Sie auf **Schließen**.
+
+> [!NOTE]
+> Platzhalter können nicht durch Kopieren und Einfügen hinzugefügt werden, da die Zielinformationen nicht korrekt eingefügt werden. Verwenden Sie die Schnittstelle, um Platzhalter hinzuzufügen.
 
 ## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Geben Sie an, wann dieser Workflow über Aktivierungsbedingungen verwendet wird
 
@@ -179,6 +182,3 @@ Gehen Sie folgendermaßen vor, um Kommentare zu den Änderungen am Workflow einz
 2. Geben Sie im Feld **Kommentare zum Workflow eingeben** Ihre Kommentare ein.
 3. Prüfen Sie die Kommentare. Nach dem Hinzufügen von Kommentaren können diese nicht mehr geändert werden.
 4. Klicken Sie auf **Hinzufügen**, um Ihre Kommentare dem Bereich **Kommentarhistorie** hinzuzufügen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

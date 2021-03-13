@@ -1,6 +1,6 @@
 ---
 title: Arbeitsbereich für die Prüfliste für Datenüberprüfung
-description: Mit dem Arbeitsbereich für die Prüfliste für Datenüberprüfung können Sie Datenprüfungsvorgänge in Unternehmen, Bereichen und bei Personen erfassen. Die Checkliste kann während einer neuen Implementierung, nach einer Aktualisierung oder nach einer Migration verwendet werden.
+description: Mit dem Arbeitsbereich für die Prüfliste für Datenüberprüfung können Sie Datenprüfungsvorgänge in Unternehmen, Bereichen und bei Personen erfassen.
 author: bking
 manager: AnnBe
 ms.date: 01/12/2018
@@ -14,14 +14,14 @@ ms.reviewer: rhaertle
 ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.openlocfilehash: a3ac338670fdc9fc7cb526cdcdc1e7199904da8f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4e50d4c94c0b8468a80ad214a21c8f5e0dedae71
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687574"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092330"
 ---
-# <a name="data-validation-checklist-workspace"></a>Arbeitsbereich für die Prüfliste für Datenüberprüfung
+# <a name="data-validation-checklist-workspace"></a>Arbeitsbereich der Prüfliste zur Datenüberprüfung
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,8 +39,7 @@ Die **Zusammenfassung** Kacheln enthalten eine Übersicht über den Prozess, und
 
 Im Abschnitt **Aufgaben und Status** wird der Status des Gesamtdatenprüfungsprojekts auf unterschiedliche Weise angezeigt: Status nach juristischer Person, nach Bereich und nach Aufgabenliste. Sie können den Filter auch auswählen, um den Status für ein bestimmtes Unternehmen anzuzeigen. Jede Statusregisterkarte bietet eine Aufschlüsselung nach Prozentsatz, der abgeschlossen wurde und nach Aufgaben, die noch verbleiben.
 
-Die letzten Registerkarte ist für die detaillierte Aufgabenliste. Diese Liste zeigt die vollständige Aufgabenliste an.
-Sie können die Aufgabenliste auf verschiedene Weise filtern. Klicken Sie auf **Bearbeiten einer Aufgabe**, um den Status einer Aufgabe zu ändern oder eine Aufgabe zuweisen. Klicken Sie auf **Anhänge**, um die Anhänge für eine Aufgabe anzuzeigen.
+Die letzten Registerkarte ist für die detaillierte Aufgabenliste. Diese Liste zeigt die vollständige Aufgabenliste an. Sie können die Aufgabenliste auf verschiedene Weise filtern. Klicken Sie auf **Bearbeiten einer Aufgabe**, um den Status einer Aufgabe zu ändern oder eine Aufgabe zuweisen. Klicken Sie auf **Anhänge**, um die Anhänge für eine Aufgabe anzuzeigen.
 
 Der Aufgabenname ist ein Link zur Seite, auf der ein Benutzer die Arbeit abschließen muss. Sie können diesen Hyperlink festlegen, indem Sie das Feld **Menüelementname** verwenden, wenn Sie im Formular **Datenüberprüfungsprojekt konfigurieren** eine Aufgabe bearbeiten oder erstellen.
 
@@ -57,6 +56,3 @@ Bevor Sie den Arbeitsbereich **Prüfliste für Datenprüfung** verwenden können
 Sie verwenden Aufgabenbereiche, um Datenprüfungsaufgaben in logische Bereiche der Eigentümerschaft innerhalb der Organisation zu gruppieren. Beispielsweise können Kreditoren, Debitoren oder das Hauptbuch als Aufgabenbereiche verwendet werden.
 
 Die Menüoption **Menüelementname** wird dem Aufgabenarbeitseinsatz zugeordnet und kann verwendet werden, um in direktem Bezug zur zugeordneten Seite über den Aufgabenlink im Arbeitsbereich zu wechseln. Beispielsweise kann eine Datenprüfungsaufgabe zur Ausführung des Berichts **Kreditorenkontenfälligkeit** mit der Seite **Kreditorenkontenfälligkeitsbericht** verknüpft werden.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

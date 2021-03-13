@@ -1,6 +1,6 @@
 ---
 title: EB-Konfigurationen entwerfen, um Daten aus externen CSV-Dateien zu importieren
-description: Nutzen Sie diese Prozedur, um Konfigurationen zur elektronischen Berichterstellung (EB) zu erstellen, um Daten in die Finance and Operations-Anwendung aus einer externen Datei im CSV-Format zu importieren.
+description: Nutzen Sie diese Prozedur, um Konfigurationen zur elektronischen Berichterstellung (EB) zu erstellen, um Daten in die Finance and Operations-App aus einer externen Datei im CSV-Format zu importieren.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b542b6250bcc72334659e050f7ab6d5bd87d3508
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7fbae4570448a6bb1309ffe0092ff9b07825d717
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682044"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092765"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>EB-Konfigurationen entwerfen, um Daten aus externen CSV-Dateien zu importieren
 
@@ -124,6 +124,3 @@ Zu Textwecken führen Sie die Formatzuordnung mithilfe der Datei 1099entriescsv.
     * Überprüfen Sie die Ausgabe im XML-Format, das die Daten darstellt, die aus der ausgewählten Datei importiert wurden und in das Datenmodell übertragen wurden. Beachten Sie, dass alle 7 Positionen der importierten CSV-Datei verarbeitet wurden. Die Position 1 der Titel der enthaltenen Felder wurden übersprungen, 4 Transaktionen wurden richtig analysiert und 2 Transaktionen wurden als ungültig erkannt.
 3. Schließen Sie die Seite.
 4. Schließen Sie die Seite.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

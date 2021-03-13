@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aba35563266d1149131124f489f89da61432bfb2
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: 36d82efa182bff12442d51908d634cbddbd13fa9
+ms.sourcegitcommit: fc852ae4939089a294d00fdf9cad8d6372ffb012
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669168"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "5080037"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (2. Dezember 2020)
 
@@ -61,7 +60,7 @@ Die folgenden Fehlerkorrekturen sind in diesem Release enthalten.
 | 514087 | BenefitEligibilityProcessResult sollte Datetime enthalten, die bei der Verarbeitung verwendet wurde. | Das Ergebnis der BenefitEligibity-Verarbeitung enthält jetzt den bisher fehlenden Datetime-Stempel für die letzte Verarbeitung. |
 | 526903 | Die Vorteilsregistrierung funktioniert für Pläne mit Unterhaltsberechtigten nicht, wenn **Beauftragten automatisch auswählen** in **Freigegebene Human Resources-Parameter** aktiviert ist. | Das Problem, dass die Vorteilsregistrierung für Unterhaltsberechtigte nicht funktioniert, wenn die Option **Beauftragten automatisch auswählen** für Standardbeauftragte aktiviert ist, wurde behoben. |
 | 521922 | Der Parameter **Abwesenheit ohne Detail zeigen** zeigt Details zu Abwesenheitsanträgen im Abwesenheitskalender des Teams an. | Der Urlaubstyp, die Urlaubstypfarbe und die Tagesdetails wurden im Abwesenheitskalender des Teams angezeigt, wenn **Abwesenheit ohne Detail zeigen** in den **Urlaubs- und Abwesenheitsparametern** auf **Ja** gesetzt wurde. Dies wurde behoben. Der Urlaubstyp wird nicht angezeigt und die Standardfarbe für den Urlaubstyp (dunkelblau) wird für alle Urlaubstypen im Abwesenheitskalender des Teams verwendet. |
-| 527316 | Titeländerungen für Stellen-, Positions- und Arbeitskraftbenachrichtigungen werden nicht synchronisiert. | Früher war den Stellen-, Positions- und Arbeitskraftentitäten eine Titel-Relation hinzugefügt. Die Synchronisierung für diese Relation funktioniert für die Synchronisierung von Human Resources zu Common Data Service, funktionierte aber nicht für Benachrichtigungen von Common Data Service. Dies wurde behoben. |
+| 527316 | Titeländerungen für Stellen-, Positions- und Arbeitskraftbenachrichtigungen werden nicht synchronisiert. | Früher war den Stellen-, Positions- und Arbeitskraftentitäten eine Titel-Relation hinzugefügt. Die Synchronisierung für diese Relation funktioniert für die Synchronisierung von Human Resources zu Dataverse, funktionierte aber nicht für Benachrichtigungen von Dataverse. Dies wurde behoben. |
 | 512275 | Entfernen Sie die Farboptionen aus den **Urlaubs- und Abwesenheitsparametern**. | Nachdem die Farben für den Urlaubstyp definiert wurden, werden die Farboptionen in den **Urlaubs- und Abwesenheitsparametern** nicht mehr benötigt, sodass sie entfernt wurden. |
 | 437112 | Irreführender Fehlermeldungstext während der Mitarbeiterpositionszuweisung. | Die Fehlermeldung wurde aktualisiert, wenn eine Arbeitskraft eingestellt und versucht wurde, die Arbeitskraft einer Position zuzuweisen, die nicht aktiv ist. Aktualisierte Nachricht **Die angegebene Position ist zum Startdatum der Beschäftigung nicht aktiv. Bitte überprüfen Sie die Dauer dieser Position.** |
 | 527816 | Leistungsprobleme mit der Seite **Arbeitsfreie Zeit**. | Die Leistung auf der Seite **Arbeitsfreie Zeit** wurde verbessert. |
@@ -92,6 +91,3 @@ Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen 
 [Übersicht zu Dynamics 365 Human Resources 2020 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

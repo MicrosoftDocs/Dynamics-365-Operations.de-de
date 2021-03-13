@@ -1,6 +1,6 @@
 ---
 title: Rekrutierungs-Power BI-Inhalt
-description: In diesem Thema wird der Power BI-Inhalt zur Personalbeschaffung beschrieben. Es wird erläutert, wie Sie auf die Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+description: In diesem Thema wird der Power BI-Inhalt zur Personalbeschaffung beschrieben.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 524b1c29d204c1b013546008b1be7868cbf8db06
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 237af011229e3d84f54bc601753dc621f8335d2f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680561"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092740"
 ---
 # <a name="recruiting-power-bi-content"></a>Rekrutierungs-Power BI-Inhalt
 
@@ -64,6 +64,3 @@ Die folgende Tabelle zeigt die Entitäten, auf denen der **Rekrutierungs**-Power
 | Leistung          | Bewertung, Beschreibung und Bewertungsmodell                            | Bewerber, Bewerber angestellt, Bewerber beendeter |
 | Personalbeschaffungsprojekt  | Projektbeschreibung, Projektstatus und Öffnungen                | Bewerber, Bewerber angestellt, Bewerber beendeter |
 | Beendeter Bewerber | Gesperrte Bewerber, Grund, Leistung und Kündigungsdatum | Unternehmen, Kalender-Gegenkonto, Datum, Standort, Leistung, Demografie, Anstellung, Medien, Personalbeschaffungsprojekt, Bewerbername. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

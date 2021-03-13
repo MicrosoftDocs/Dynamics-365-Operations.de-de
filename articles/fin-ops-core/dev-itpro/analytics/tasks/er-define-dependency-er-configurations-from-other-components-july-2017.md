@@ -1,6 +1,6 @@
 ---
-title: Die Abhängigkeit der EB-Konfigurationen bei anderen Komponenten definieren
-description: Um diese Schritte auszuführen, müssen Sie zunächst die Schritte im Aufgabenleitfaden ausführen (Verwalten von Modellzuordnungskonfigurationen für elektronische Berichterstellung), und Sie müssen Zugriff auf Microsoft Dynamics Lifecycle Services (LCS) haben.
+title: Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen
+description: In diesem Thema wird beschrieben, wie Sie eine EB-Konfiguration (elektronische Berichterstellung) entwerfen und ihre Abhängigkeit von anderen Softwarekomponenten angeben.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/23/2017
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77783d629afc9abf30cdc48534fbb26eba5f8811
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: dd9516ac68c46649ebc50711357b97179bfc1b2c
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681972"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092149"
 ---
-# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Die Abhängigkeit der EB-Konfigurationen bei anderen Komponenten definieren
+# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen
 
 [!include [banner](../../includes/banner.md)]
 
@@ -46,8 +46,8 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 5. Klicken Sie auf "Neu".
 6. Wählen Sie Produktvoraussetzungskomponente aus.
 7. Microsoft Dynamics 365 for Operations (1611) auswählen.
-8. Geben Sie im Versionsfeld '[7.1.1541.3036,8)' ein.
-    * [7.1.1541.3036,8)  
+8. Geben Sie im Feld Version Typ '(7.1.1541.3036,8)' ein.
+    * (7.1.1541.3036,8)  
     * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus der RCS-Repository Variantenversion heruntergeladen, wenn Version 1 der Beispieldatmodell- Konfiguration entweder bereits an der richtigen Stelle ist oder im Voraus heruntergeladen wurde. Wenn sie vorab heruntergeladen wird, muss sie in Finance and Operations Version 7.1.1541.3036 oder höher abgeschlossen werden, darf aber Hauptversion 8 nicht überschreiten.   
 9. Klicken Sie auf "Speichern".
 10. Schließen Sie die Seite.
@@ -59,8 +59,8 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 16. Klicken Sie auf "Neu".
 17. Wählen Sie Produktvoraussetzungskomponente aus.
 18. Wählen Sie Microsoft Dynamics AX 7.0 RTW aus.
-19. Geben Sie im Versionsfeld '[7.0.1265.3015,7.1)' ein.
-    * [7.0.1265.3015,7.1)  
+19. Geben Sie im Feld Version Typ '(7.0.1265.3015,7.1)' ein.
+    * (7.0.1265.3015,7.1)  
     * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus der RCS-Repository Variantenversion heruntergeladen, wenn Version 1 der Beispieldatmodell- Konfiguration entweder bereits an der richtigen Stelle ist oder im Voraus heruntergeladen wurde. Wenn sie im Voraus heruntergeladen wird, muss sie in Microsoft Dynamics 365 for Finance and Operations Enterprise Edition abgeschlossen werden, wobei die Version 7.0.1265.3015 oder höher sein muss, aber die Nebenversion 1 nicht überschreiten darf.   
 20. Klicken Sie auf "Speichern".
 21. Schließen Sie die Seite.
@@ -139,6 +139,3 @@ Wir werden erstellte Konfigurationen löschen und laden sie erneut vom LCS-Repos
 26. Wählen Sie in der Struktur 'Muster Datenmodell' erweitern.
     * Beachten Sie, dass die vorbildliche Beispielzuordnung Zuordnungskonfiguration zusammen mit der gewählten Datenmodellkonfiguration heruntergeladen wurde. Die zwei Dateien werden zusammen heruntergeladen, da die „Beispielzuordnung“ als Implementierung des ausgewählten Datenmodells definiert wurde und weil sie für die Anwendung anwendbar ist. Die Variante Beispielzuordnung (Alternative) ist nicht heruntergeladen worden, da die Bedingung für die erforderliche Anwendungsversion nicht erfüllt ist.   
     * Wenn Sie sich bei Finance and Operations anmelden, registrieren Sie den gleichen Anbieter, greifen auf das gleiche LCS-Projekt zu und laden die gleiche Datenmodellkonfiguration, die Beispielzuordnung (Alternative) herunter, während die Beispielzuordnung-Konfiguration übersprungen wird.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

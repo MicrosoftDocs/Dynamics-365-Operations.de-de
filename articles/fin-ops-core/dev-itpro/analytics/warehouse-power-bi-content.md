@@ -1,6 +1,6 @@
 ---
 title: Power BI-Inhalt zur Lagerortleistung
-description: In diesem Thema wird beschrieben, was im Warehouse Performance Power BI Inhalt enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+description: In diesem Thema wird beschrieben, was im Warehouse Performance Power BI Inhalt enthalten ist.
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/18/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 4594c6c09abdac72a03ac1338701d2291b234106
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: be4acbb8eae3fd7d8dd0db4f99c3a2db06808f21
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687400"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092815"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>Power BI-Inhalt zur Lagerortleistung
 
@@ -111,6 +111,3 @@ Die folgenden aggregierten Messungen werden als Grundlage des Inhaltspakets verw
 | Versandleistung        | Versand nach Produkt                       | CustPackingSlipOnTimeStatus           | Früh, rechtzeitig und verspätet erhalten (siehe Beschreibungen oben in dieser Tabelle). |
 | Versandleistung        | Geliefert an Debitoren                      | CustPackingSlipOnTimeStatus           | Früh, rechtzeitig und verspätet erhalten (siehe Beschreibungen oben in dieser Tabelle). |
 | Versandleistung        | Nach Standort/Lagerort Versendet              | CustPackingSlipOnTimeStatus           | Früh, rechtzeitig und verspätet erhalten (siehe Beschreibungen oben in dieser Tabelle). |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

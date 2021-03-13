@@ -10,22 +10,21 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 768b20ecc8d15353258c9b3af69b897957d3de60
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: c0879343f100fa1fe6e0a4b4fbf085574225e898
+ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594965"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5053412"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Mehrere Lieferarten zur Abholung für Kundenaufträge
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 In Microsoft Dynamics 365 Commerce Version 10.0.16 und höher können Organisationen mehrere Lieferarten definieren, zwischen denen Käufer oder Vertriebsmitarbeiter wählen können, wenn sie einen Auftrag erstellen, der in einem Ladengeschäft abgeholt wird. Auf diese Weise können Organisationen ihren Kunden mehrere Abholoptionen anbieten. Beispielsweise bieten viele Einzelhändler ihren Kunden jetzt die Wahl zwischen Abholung im Geschäft oder Abholung am Straßenrand für ihre Aufträge an. Commerce unterstützt die Konfiguration dieser verschiedenen Abhollieferarten. Benutzer können sie dann nutzen, wenn sie Kundenaufträge in irgendeinem unterstützten Commerce-Kanal (E-Commerce, Callcenter oder Geschäft) erstellen.
 
@@ -86,6 +85,3 @@ Wenn für einen Kanal mehrere Abhollieferarten verfügbar sind, wird Kunden eine
 ## <a name="considerations-for-distributed-order-management"></a>Berücksichtigungen bei der verteilten Auftragsverwaltung
 
 Die [verteilte Auftragsverwaltung (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom)-Funktionen in Commerce ignorieren jegliche Verkaufspositionen, die für die Abholung im Geschäft markiert sind. Diese Funktionen wurden aktualisiert, um sicherzustellen, dass Verkaufspositionen, die mit konfigurierten Abhollieferarten verknüpft sind, die DOM-Logik umgehen und nicht einem neuen Erfüllungslagerort neu zugeordnet werden.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

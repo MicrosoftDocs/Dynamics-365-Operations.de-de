@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: 4b89e911f3c6eb8ffa0cfe049ef9bfc2ed306021
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4429013"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077630"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
@@ -41,11 +40,11 @@ In den verbleibenden Abschnitten dieses Themas wird beschrieben, wie Arbeitskrä
 
 ## <a name="all-jobs-tab"></a>Registerkarte alle Einzelvorgänge
 
-Die Registerkarte **Alle Einzelvorgänge** enthält eine Einzelauftragsliste, in der alle Produktionsjobs mit dem Status angezeigt werden *Nicht angefangen*, *Gestoppt*, oder *Gestartet*.
+Die Registerkarte **Alle Einzelvorgänge** enthält eine Einzelauftragsliste, in der alle Produktionsjobs mit dem Status angezeigt werden *Nicht angefangen*, *Gestoppt*, oder *Gestartet*. (Dieser Registerkartenname ist anpassbar und kann für Ihr System unterschiedlich sein.)
 
 ![Registerkarte alle Einzelvorgänge](media/pfei-all-jobs-tab.png "Registerkarte alle Einzelvorgänge")
 
-Die Einzelvorgangsliste enthält die folgenden Spalten. (Die Nummern in der ersten Spalte entsprechen den Nummern in der vorherigen Abbildung.)
+Die Einzelvorgangsliste enthält die folgenden Spalten. Die Nummern entsprechen den Nummern in der vorherigen Abbildung.
 
 1. **Auswahlspalte** – In der Spalte ganz links werden Häkchen verwendet, um Jobs anzuzeigen, die vom Mitarbeiter ausgewählt wurden. Arbeitskräfte können mehrere Einzelaufträge gleichzeitig in der Liste auswählen. Um alle Einzelaufträge in der Liste auszuwählen, aktivieren Sie das Häkchen in der Spaltenüberschrift. Wenn ein einzelner Einzelvorgang ausgewählt wird, werden Details zu diesem Einzelvorgang im unteren Teil der Seite angezeigt.
 1. **Einzelvorgangsstatusspalte** – In dieser Spalte werden Symbole verwendet, um den Status jedes Einzelvorganges anzuzeigen. Einzelvorgänge, die in dieser Spalte kein Symbol haben, haben den Status *Nicht angefangen*. Ein grünes Dreieck zeigt Einzelvorgänge mit dem Status *Gestartet* an. Zwei gelbe vertikale Linien kennzeichnen Einzelvorgänge mit dem Status *Gestoppt*.
@@ -60,9 +59,11 @@ Die Einzelvorgangsliste enthält die folgenden Spalten. (Die Nummern in der erst
 
 ## <a name="active-jobs-tab"></a>Registerkarte Aktive Einzelvorgänge
 
+Die Registerkarten **Aktive Aufträge** zeigen eine Liste aller Aufträge an, die die angemeldete Arbeitskraft bereits gestartet hat. (Dieser Registerkartenname ist anpassbar und kann für Ihr System unterschiedlich sein.)
+
 ![Registerkarte Aktive Einzelvorgänge](media/pfei-active-jobs-tab.png "Registerkarte Aktive Einzelvorgänge")
 
-Die Einzelvorgangsliste auf der Registerkarte **Aktive Jobs** enthält die folgenden Spalten:
+Die Liste der aktiven Aufträge enthält die folgenden Spalten:
 
 - **Auswahlspalte** – In der Spalte ganz links werden Häkchen verwendet, um Jobs anzuzeigen, die vom Mitarbeiter ausgewählt wurden. Arbeitskräfte können mehrere Einzelaufträge gleichzeitig in der Liste auswählen. Um alle Einzelaufträge in der Liste auszuwählen, aktivieren Sie das Häkchen in der Spaltenüberschrift. Wenn ein einzelner Einzelvorgang ausgewählt wird, werden Details zu diesem Einzelvorgang im unteren Teil der Seite angezeigt.
 - **Bestellung** – In dieser Spalte wird die Produktionsauftragsnummer für einen Auftrag angezeigt.
@@ -72,6 +73,28 @@ Die Einzelvorgangsliste auf der Registerkarte **Aktive Jobs** enthält die folge
 - **Abgeschlossen** – Diese Spalte zeigt die Menge, die bereits für einen Einzelvorgang abgeschlossen wurde.
 - **Verschrottet** – Diese Spalte zeigt die Menge, die bereits für einen Einzelvorgang verschrottet wurde.
 - **Verbleibend** – In dieser Spalte wird die Menge angezeigt, die für einen Einzelvorgang noch zu erledigen ist.
+
+## <a name="my-machine-tab"></a>Registerkarte „Meine Maschine“
+
+Auf der Registerkarte **Meine Maschine** können Arbeitskräfte eine Anlage auswählen, die mit einer Maschinenressource innerhalb des auf der Registerkarte **Alle Aufträge** festgelegten Filters liegt. Die Arbeitskraft kann dann den Status und den Zustand der ausgewählten Anlage anzeigen, indem sie Werte für bis zu vier ausgewählte Zähler und Listen der letzten Wartungsanfragen und registrierten Ausfallzeiten abliest. Die Arbeitskraft kann auch eine Wartung für die ausgewählte Anlage anfordern und Ausfallzeiten der Maschine registrieren und bearbeiten. (Dieser Registerkartenname ist anpassbar und kann für Ihr System unterschiedlich sein.)
+ 
+![Die Registerkarte „Meine Maschine“](media/pfei-my-machine-tab.png "Die Registerkarte „Meine Maschine“")
+
+Die Registerkarte **Meine Maschine** enthält die folgenden Spalten. Die Nummern entsprechen den Nummern in der vorherigen Abbildung.
+
+1. **Maschinenanlage** – Wählen Sie die Maschinenanlage aus, die Sie nachverfolgen möchten. Geben Sie einen Namen ein, um aus einer Liste übereinstimmender Anlagen auszuwählen, oder wählen Sie das Lupensymbol aus, um aus einer Liste aller Anlagen auszuwählen, die den Ressourcen zugeordnet sind, die sich im Filter der Auftragsliste befinden.
+
+    > [!NOTE]
+    > Benutzer von Supply Chain Management können jeder Anlage über die Seite **Alle Anlagen** (auf der Registerkarte **Anlage** über die Dropdownliste **Ressource**) nach Bedarf eine Ressource zuweisen. Weitere Informationen finden Sie unter [Erstellen einer Anlage](../asset-management/objects/create-an-object.md).
+
+1. **Einstellungen** – Wählen Sie das Zahnradsymbol aus, um ein Dialogfeld zu öffnen, in dem Sie auswählen können, welche Zähler für die ausgewählte Maschinenanlage angezeigt werden sollen. Die Werte für diese Zähler werden oben auf der Registerkarte **Anlagenverwaltung** angezeigt. Über das Menü **Einstellungen** (siehe den folgenden Screenshot) können Sie bis zu vier Zähler aktivieren. Verwenden Sie für jeden Zähler, den Sie aktivieren möchten, das Suchfeld oben auf der Kachel, um einen Zähler auszuwählen. Das Suchfeld listet alle Zähler auf, die der oben auf der Seite **Vermögensverwaltung** ausgewählten Anlage zugeordnet sind. Stellen Sie jeden Zähler so ein, dass für den Zähler entweder der Wert **Aggregiert** oder der aktuelle Wert **Tatsächlich** überwacht wird. Wenn Sie beispielsweise einen Zähler festlegen, der nachverfolgt, wie viele Stunden die Maschine gelaufen ist, sollten Sie ihn auf **Aggregiert** festlegen. Wenn Sie einen Zähler zum Messen der zuletzt aktualisierten Temperatur oder des zuletzt aktualisierten Drucks verwenden, sollten Sie ihn auf **Tatsächlich** festlegen. Wählen Sie **OK**, um Ihre Einstellungen zu speichern und das Dialogfeld zu schließen.
+
+    ![Die Registerkarte „Meine Maschine“](media/pfei-my-machine-tab-settings.png "Die Registerkarte „Meine Maschine“")
+
+1. **Wartung anfordern** – Wählen Sie diese Schaltfläche aus, um ein Dialogfeld zu öffnen, in dem Sie eine Wartungsanfrage erstellen können. Sie können eine Beschreibung und eine Notiz angeben. Die Anfrage wird an einen Benutzer von Supply Chain Management weitergeleitet, der dann in der Lage ist, die Wartungsanfrage in einen Wartungsarbeitsauftrag umzuwandeln.
+1. **Ausfallzeiten erfassen** – Wählen Sie diese Schaltfläche aus, um ein Dialogfeld zu öffnen, in dem Sie Ausfallzeiten der Maschine erfassen können. Sie können einen Ursachencode auswählen und ein Datum bzw. eine Zeitspanne für die Ausfallzeit eingeben. Die Erfassung der Ausfallzeit der Maschine wird zur Berechnung der Effizienz des Maschinenanlage verwendet.
+1. **Anzeigen oder bearbeiten** – Wählen Sie diese Schaltfläche aus, um ein Dialogfeld zu öffnen, in dem Sie vorhandene Ausfallzeitdatensätze bearbeiten oder anzeigen können.
+
 
 ## <a name="starting-and-completing-production-jobs"></a>Einzelvorgänge starten und abschließen
 
@@ -124,7 +147,7 @@ Zum Beispiel möchte Shannon, eine Werkstatt-Arbeitskraft bei Contoso, an einer 
 
 In beiden Szenarien wechselt Shannon, nachdem sie ihre Auswahl bestätigt hat, entweder zur Anmeldeseite oder zu einer Seite, die darauf wartet, dass sie bestätigt, dass sie von ihrer indirekten Aktivität zurückgekehrt ist. Die angezeigte Seite hängt von der Konfiguration der Produktionsausführungsoberfläche ab. (Weitere Informationen finden Sie unter [Einrichten der Produktionsausführungsoberfläche](production-floor-execution-configure.md).)
 
-## <a name="working-on-breaks"></a>An Pausen arbeiten
+## <a name="registering-breaks"></a>Erfassen von Pausen
 
 Arbeitskräfte können Pausen registrieren. Pausen können flexibel definiert werden, wie beschrieben in [Lohn auf Basis von Erfassungen](pay-based-on-registrations.md).
 
@@ -146,6 +169,3 @@ Arbeitskräfte können ein Dokument öffnen, das an einen Einzelvorgang angehän
 1. Die Arbeitskraft arbeitet die Anleitung durch, um die Aufgabe zu lernen.
 
 Weitere Informationen zum Erstellen, Zuweisen und Verwenden von Anleitungen für HoloLens, finden Sie unter [Bereitstellung von Mixed Reality-Leitfäden für Arbeitskräfte in der Produktion](instruction-guides-in-production-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

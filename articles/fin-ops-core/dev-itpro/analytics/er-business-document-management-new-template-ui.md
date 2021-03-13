@@ -1,6 +1,6 @@
 ---
 title: Neue Benutzeroberfläche für Dokumente in der Geschäftsdokumentenverwaltung
-description: Dieses Thema enthält Informationen zur Verwendung der neuen Benutzeroberfläche in der Geschäftsdokumentverwaltung-Funktion des Frameworks für elektronische Berichterstellung (ER).
+description: Dieses Thema enthält Informationen zur Verwendung der neuen Benutzeroberfläche in der Geschäftsdokumentverwaltung-Funktion des Frameworks für elektronische Berichterstellung (EB).
 author: v-anamir
 manager: AnnBe
 ms.date: 05/12/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2cb6e0da4af07b9b8486bf1e5bda29523cbd08e9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 64ac52385ae6145f7428ebbc3cb77e395557bce2
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681351"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092224"
 ---
 # <a name="new-document-user-interface-in-business-document-management"></a>Neue Benutzeroberfläche für Dokumente in der Geschäftsdokumentenverwaltung
 
@@ -64,6 +64,3 @@ Befolgen Sie diese Schritte, um diese Funktion für alle juristischen Personen z
 Die Schaltfläche **Neues Dokument** wird verwendet, um eine Vorlage in einer ER-Formatkonfiguration zu erstellen und zu bearbeiten, die von einem anderen Anbieter bereitgestellt wird. In diesem Beispiel ist der Anbieter Microsoft. Wenn Sie auf **Neues Dokument** klicken, sehen Sie alle Vorlagen, die sich im Besitz aktueller und anderer Anbieter befinden. Nachdem Sie die Vorlage ausgewählt haben, wird sie zur Bearbeitung geöffnet. Die bearbeitete Vorlage wird dann in einer neuen ER-Formatkonfiguration gespeichert, die automatisch generiert wird.
 
 Weitere Informationen finden Sie unter [Überblick über die Geschäftsdokumentverwaltung](er-business-document-management.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

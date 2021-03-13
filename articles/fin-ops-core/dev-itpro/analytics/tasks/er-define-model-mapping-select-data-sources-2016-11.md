@@ -1,6 +1,6 @@
 ---
 title: EB-Modellzuordnungen definieren und Datenquellen für sie auswählen
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, ein Modell der elektronischen Berichterstellung auswählen kann.
+description: In diesem Thema wird beschrieben, wie ein Systemadministrator oder ein Entwickler für elektronische Berichterstellung Datenquellen für ein Datenmodell der elektronischen Berichterstellung auswählen kann.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d57c191761b8e2367ff8806c1cd98d6d83559e3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7fccdda3ac441630836a0d33f78eb04e9cd26d4a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682116"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092109"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>EB-Modellzuordnungen definieren und Datenquellen für sie auswählen
 
@@ -77,14 +77,14 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 17. Wählen Sie in der Struktur 'Transactions\Voucher' aus.
 18. Klicken Sie auf Datenquelle hinzufügen.
 19. Im Feld „Formel” geben Sie „CONCATENATE(Transactions.Voucher, „-", „ ein.
-    * Geben Sie am Ende der Fomel [ , "-", ] ein.  
+    * Geben Sie [ , „-“, ] am Ende der Formel ein.  
 20. Wählen Sie in der Struktur den Knoten 'String\TEXT'.
 21. Klicken Sie auf Funktion hinzufügen.
 22. Wählen Sie in der Strukturdarstellung "Transactions\Record-ID (RecId)" aus.
 23. Klicken Sie auf Datenquelle hinzufügen.
 24. Im Feld „Formel” geben Sie „CONCATENATE(Transactions.Voucher, „-", TEXT(Transactions.RecId))” ein.
-    * Geben Sie am Ende der Fomel [))] ein.  
-25. Klicken Sie auf Speichern.
+    * Geben Sie [))] am Ende der Formel ein.  
+25. Klicken Sie auf "Speichern".
     * Stellen Sie sicher, dass keine Fehler für die erstellte Formel ermittelt worden sind. Sehen Sie sich die Registerkarte FEHLER unter dem Formeleditorsteuerelement an.  
 26. Schließen Sie die Seite.
 27. Klicken Sie auf "OK".
@@ -98,7 +98,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 32. Wählen Sie in der Strukturdarstellung "Transactions\Debit(AmountCurDebit)" aus.
 33. Klicken Sie auf Datenquelle hinzufügen.
 34. Im Feld „Formel” geben Sie „Transactions.AmountCurDebit - „ ein.
-    * Geben Sie am Ende der Fomel [ - ] ein.  
+    * Geben Sie [ - ] am Ende der Formel ein.  
 35. Wählen Sie in der Strukturdarstellung "Transactions\Credit(AmountCurCredit)" aus.
 36. Klicken Sie auf Datenquelle hinzufügen.
 37. Klicken Sie auf "Speichern".
@@ -157,6 +157,3 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 71. Schließen Sie die Seite.
 72. Schließen Sie die Seite.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: Gespeicherte Ansichten
 description: In diesem Thema wird beschrieben, wie Sie die gespeicherten Ansichtsfunktionen verwenden.
 author: jasongre
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 8537ec87c625e8b54cdf7574216d66f285da3a48
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 54f8c4bcac53f7cceb25f73b24311e93884be95d
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693700"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077448"
 ---
 # <a name="saved-views"></a>Gespeicherte Ansichten
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Einführung
 
@@ -123,12 +124,14 @@ Führen Sie folgende Schritte aus, um eine Ansicht zu veröffentlichen.
 1. Erstellen und Speichern einer persönlichen Kopie der Ansicht, die veröffentlicht werden soll. 
 2. Mit dieser Ansicht, die derzeit geladen ist, wählen Sie den Ansichtsnamen aus, um das Ansichtsauswahl-Dropdownmenü zu öffnen. 
 3. Wählen Sie die Schaltfläche **Mehr** und wählen Sie dann **Veröffentlichen** aus. Das Feld Veröffentlichen wird geöffnet.
-4. Geben Sie einen Namen (optional) und eine Beschreibung für die Ansicht ein. Der Name, den Sie eingeben, ist Name, den Benutzer, die diese Ansicht erhalten, in der Ansichts-Auswahl finden. Die Namen von veröffentlichten Ansichten für eine Seite müssen eindeutig sein. Es sind keine Duplikat-Namen zulässig, auch wenn die Liste der Rollen oder juristischen Personen, auf die sie angewendet werden, sich unterscheiden.
-5. **Version 10.0.9 und höher:** Legen Sie fest, ob die Ansicht als Standardansicht für die ausgewählten Benutzer veröffentlicht werden soll. Wenn eine Ansicht zur Standardansicht gemacht wird, wird sie beim nächsten Öffnen der Zielseite angezeigt. Die einzelne globale Standardansicht jedes Zielbenutzers wird geändert. Benutzer können jedoch ihre Standardansicht nach dem Veröffentlichen weiterhin ändern.
-6. Fügen Sie die Sicherheitsrollen hinzu, die den Benutzer entsprechen, auf die diese Ansicht ausgerichtet ist. 
-7. **Version 10.0.13 und höher:** Bestimmen Sie, ob Sie die Ansicht in den untergeordneten Rollen jeder ausgewählten Sicherheitsrolle veröffentlichen möchten. Wenn Sie dies tun, aktivieren Sie das Kontrollkästchen **Untergeordnete Rollen einschließen** in der Zeile für die entsprechenden Sicherheitsrollen. Beachten Sie, dass dieses Kontrollkästchen für Rollen ohne untergeordnete Rollen nicht verfügbar ist.
-7. Fügen Sie juristische Personen hinzu, für die diese Ansicht verfügbar sein sollte. 
-8. Wählen Sie **Veröffentlichen** aus.
+4. Geben Sie einen Namen für die Ansicht ein. Der Name, den Sie eingeben, ist Name, den Benutzer, die diese Ansicht erhalten, in der Ansichts-Auswahl finden. Die Namen von veröffentlichten Ansichten für eine Seite müssen eindeutig sein. Es sind keine Duplikat-Namen zulässig, auch wenn die Liste der Rollen oder juristischen Personen, auf die sie angewendet werden, sich unterscheiden.
+5. **Update 10.0.17 oder höher:** Wenn die Funktion **(Vorschau) Übersetzungsunterstützung für Organisationsansichten** aktiviert ist, können Sie Übersetzungen für Ihren Ansichtsnamen in so vielen Sprachen hinzufügen, wie Ihre Organisation benötigt, indem Sie die Schaltfläche **Übersetzungen** neben dem Feld **Name** auswählen. Der Ansichtsname wird den Benutzern dann in ihrer aktuellen Sprache angezeigt. Sie können auch die Standardsprache für die Übersetzung festlegen, die Benutzern angezeigt wird, die Sprachen verwenden, für die keine Übersetzung definiert ist.
+5. Optional: Geben Sie eine Beschreibung für die Ansicht ein, damit Benutzer, die diese Ansicht erhalten, ihren Zweck besser verstehen können. 
+6. Legen Sie fest, ob die Ansicht als Standardansicht für die ausgewählten Benutzer veröffentlicht werden soll. Wenn eine Ansicht zur Standardansicht gemacht wird, wird sie beim nächsten Öffnen der Zielseite angezeigt. Die einzelne globale Standardansicht jedes Zielbenutzers wird geändert. Benutzer können jedoch ihre Standardansicht nach dem Veröffentlichen weiterhin ändern.
+7. Fügen Sie die Sicherheitsrollen hinzu, die den Benutzer entsprechen, auf die diese Ansicht ausgerichtet ist. 
+8. Bestimmen Sie, ob Sie die Ansicht in den untergeordneten Rollen jeder ausgewählten Sicherheitsrolle veröffentlichen möchten. Wenn Sie dies tun, aktivieren Sie das Kontrollkästchen **Untergeordnete Rollen einschließen** in der Zeile für die entsprechenden Sicherheitsrollen. Beachten Sie, dass dieses Kontrollkästchen für Rollen ohne untergeordnete Rollen nicht verfügbar ist.
+9. Fügen Sie juristische Personen hinzu, für die diese Ansicht verfügbar sein sollte. 
+10. Wählen Sie **Veröffentlichen** aus.
 
 Beachten Sie, dass es in einer Umgebung einige Zeit in Anspruch nehmen kann (bis zu einer Stunde) bis Benutzer die veröffentlichte Ansicht sehen.
 
@@ -146,27 +149,15 @@ Wenn die Änderungen, die Sie an einer veröffentlichten Ansicht vornehmen möch
 1. Wechseln Sie zur veröffentlichten Ansicht für die Parameter, die Sie aktualisieren möchten. 
 2. Wählen Sie im Ansichtsauswahl-Dropdownmenü **Erneut veröffentlichen** aus. Wenn Sie Version 10.0.12 oder früher verwenden, müssen Sie **Veröffentlichen** und dann **Ja** auswählen, um die vorhandene Ansicht zu aktualisieren.
 3. Aktualisieren Sie den Namen, die Beschreibung, Sicherheitsrollen und juristischen Personen für die Ansicht. 
-4. Wählen Sie **Veröffentlichen** aus. 
-5. **Version 10.0.8 und früher:** Wenn Sie den Namen der veröffentlichten Ansicht aktualisiert haben, müssen Sie auch die veröffentlichte Ansicht mit dem alten Namen löschen. (Weitere Informationen finden Sie im Abschnitt [Veröffentlichte Ansichten verwalten](saved-views.md#managing-published-views).)
+4. Wählen Sie **Veröffentlichen** aus. Wenn Sie diese veröffentlichte Ansicht ursprünglich als Standardansicht ausgewählt haben, ist sie nach der erneuten Veröffentlichung wieder die Standardansicht für Benutzer. 
 
-**Version 10.0.9 und höher:** Wenn Sie diese veröffentlichte Ansicht ursprünglich als Standardansicht ausgewählt haben, ist sie nach der erneuten Veröffentlichung wieder die Standardansicht für Benutzer.
-
-Wenn Änderungen der veröffentlichten Ansicht die Personalisierungen oder Filter umfassen, die der Ansicht zugeordnet sind, folgen Sie diesen Schritten: 
-
-**Version 10.0.13 und höher:** Nehmen Sie die erforderlichen Änderungen direkt an der Ansicht vor. Ein Sternchen (\*) sollte neben dem Ansichtsnamen angezeigt werden.
+Wenn die Änderungen an der veröffentlichten Ansicht die Personalisierungen oder Filter umfassen, die der Ansicht zugeordnet sind, führen Sie die folgenden Schritte aus.
 
 1. Laden Sie die veröffentlichte Ansicht, die Sie ändern möchten. 
 2. Nehmen Sie die erforderlichen Änderungen am lokalen Entwurf vor.
 3. Wählen Sie im Ansichtsauswahl-Dropdownmenü **Erneut veröffentlichen** aus.
 4. Wählen Sie **Ja** aus, um anzuzeigen, dass Sie die Ansicht zusammen mit den nicht gespeicherten Änderungen veröffentlichen möchten. 
 5. Passen Sie alle Veröffentlichungsparameter an, die angepasst werden müssen, und wählen Sie dann **Veröffentlichen** aus. 
-
-**Version 10.0.12 und früher**
-
-1. Laden Sie die veröffentlichte Ansicht, die Sie aktualisieren möchten. 
-2. Hiermit wird eine Kopie der veröffentlichten Ansicht gespeichert, um einen lokalen Entwurf der veröffentlichten Ansicht zu erstellen. 
-3. Ändern Sie den lokalen Entwurf mit den erforderlichen Änderungen.
-4. Veröffentlicht Sie die Ansicht mit dem ursprünglichen Namen. 
 
 ## <a name="managing-published-views"></a>Verwalten von veröffentlichten Ansichten
 
@@ -179,20 +170,20 @@ Für eine Liste aller veröffentlichten Ansichten für diese Seite sind die folg
 - **Erneut veröffentlichen** – Verwenden Sie die Aktion **Erneut veröffentlichen**, um eine Ansicht erneut zu veröffentlichen, nachdem Veröffentlichungsparameter (Name, Beschreibung, Sicherheitsrollen oder juristische Personen) geändert wurden.
 - **Veröffentlichen** – Verwenden Sie die Aktion **Veröffentlichen** zum Veröffentlichen einer Ansicht, die derzeit nicht veröffentlicht ist. 
 - **Veröffentlichung aufheben** – Verwenden Sie die Aktion **Veröffentlichung aufheben**, um eine Ansicht inaktiv zu machen. Die Ansicht ist weiterhin im System verfügbar, aber Benutzer sehen sie erst in der Ansichtsauswahl, wenn die Ansicht erneut veröffentlicht wird.
-- **Als persönlich speichern** – Verwenden Sie die Aktion **Als persönlich speichern** zum Erstellen eines persönlichen Entwurfs einer Kopie der veröffentlichten Ansicht. Diese Funktion kann Ihnen helfen, den Inhalt einer Ansicht zu verstehen, die nicht für Sie veröffentlicht wurde oder die noch nicht veröffentlicht wurde. Sie können damit auch eine Ansicht bearbeiten und anschließend erneut veröffentlichen. Diese Funktion wird in Version 10.0.12 eingeführt.
+- **Als persönlich speichern** – Verwenden Sie die Aktion **Als persönlich speichern** zum Erstellen eines persönlichen Entwurfs einer Kopie der veröffentlichten Ansicht. Diese Funktion kann Ihnen helfen, den Inhalt einer Ansicht zu verstehen, die nicht für Sie veröffentlicht wurde oder die noch nicht veröffentlicht wurde. Sie können damit auch eine Ansicht bearbeiten und anschließend erneut veröffentlichen.
 - **Löschen** – Verwenden Sie die Aktion **Löschen**, um eine veröffentlichte oder unveröffentlichte Ansicht dauerhaft zu löschen. Diese Aktion entfernt auch die Ansicht für alle Benutzer im System. Das Entfernen von veröffentlichten Ansichten wird nach dem Auswählen der Schaltfläche **Speichern** wirksam. Nachdem eine Ansicht gelöscht wurde, kann sie nicht wiederhergestellt werden. 
 
 ## <a name="managing-views-globally"></a>Ansichten global verwalten
 
 Obwohl auf jeder Seite einige Verwaltungsfunktionen angezeigt werden, wie in diesem Thema angegeben, kann **Systemadministratoren** und **gespeicherte Ansichtsadministratoren** Ansichten für das System ganzheitlicher über die Seite **Personalisierung** verwalten. Diese Seite enthält insbesondere die folgenden Abschnitte und Funktionen: 
 
-- **Veröffentlichte Ansichten** – In diesem Abschnitt werden alle Ansichten aufgelistet, die für Ihre Organisation veröffentlicht wurden. Von hier aus können Sie eine Ansicht erneut veröffentlichen, nachdem Sie die Sicherheitsrollen oder juristischen Personen angepasst haben, auf die die Ansicht abzielt. Sie können Ansichten auch exportieren, löschen oder deren Veröffentlichung aufheben. In Version 10.0.12 und höher können Sie die Aktion **Als persönlich speichern** zum Erstellen einer persönlichen Kopie einer Ansicht verwenden, damit Sie die Ansicht aktualisieren oder deren Inhalt besser verstehen können. 
-- **Unveröffentlichte Ansichten** – In diesem Abschnitt werden alle Organisationsansichten in Ihrem System aufgelistet, die derzeit nicht veröffentlicht sind. Diese Ansichten werden am häufigsten über die Importfunktion in das System eingegeben. Sie können diese Ansichten veröffentlichen, exportieren oder löschen. Die Aktion **Schnelle Veröffentlichung**, die in Version 10.0.12 hinzugefügt wurde, kann mehrere Ansichten aus diesem Abschnitt in einer Aktion veröffentlicht werden, indem die vorhandenen Konfigurationen für Sicherheitsrollen und juristische Personen verwendet werden. In Version 10.0.12 und höher können Sie die Aktion **Als persönlich speichern** zum Erstellen einer persönlichen Kopie der Ansicht verwenden, damit Sie die Ansicht aktualisieren oder den Inhalt besser verstehen können.
+- **Veröffentlichte Ansichten** – In diesem Abschnitt werden alle Ansichten aufgelistet, die für Ihre Organisation veröffentlicht wurden. Von hier aus können Sie eine Ansicht erneut veröffentlichen, nachdem Sie die Sicherheitsrollen oder juristischen Personen angepasst haben, auf die die Ansicht abzielt. Sie können Ansichten auch exportieren, löschen oder deren Veröffentlichung aufheben. Sie können die Aktion **Als persönlich speichern** verwenden, um eine persönliche Kopie einer Ansicht zu erstellen, damit Sie die Ansicht aktualisieren oder deren Inhalt besser verstehen können. 
+- **Unveröffentlichte Ansichten** – In diesem Abschnitt werden alle Organisationsansichten in Ihrem System aufgelistet, die derzeit nicht veröffentlicht sind. Diese Ansichten werden am häufigsten über die Importfunktion in das System eingegeben. Sie können diese Ansichten veröffentlichen, exportieren oder löschen. Die Aktion **Schnelle Veröffentlichung**, die in Version 10.0.12 hinzugefügt wurde, kann mehrere Ansichten aus diesem Abschnitt in einer Aktion veröffentlicht werden, indem die vorhandenen Konfigurationen für Sicherheitsrollen und juristische Personen verwendet werden. Sie können die Aktion **Als persönlich speichern** verwenden, um persönliche Kopien dieser Ansichten zu erstellen, damit Sie ihren Inhalt besser verstehen können
 - **Persönliche Ansichten** – Dieser Abschnitt führt alle Ansichten auf, die von den Benutzern im System erstellt wurden. Von hier aus können Sie eine persönliche Ansicht für die Organisation veröffentlichen oder eine oder mehrere der Ansichten an andere Benutzer kopieren. Sie können diese Ansichten auch nach Bedarf exportieren oder löschen.
 - **Benutzereinstellungen** – Wählen Sie einen Benutzer zum Anzeigen aus oder passen Sie die Fähigkeit des Benutzers an, die Personalisierung entweder für das gesamte System oder für bestimmte Seiten zu verwenden, die der Benutzer besucht hat. Sie können die Personalisierungen des Benutzers im System anzeigen und damit interagieren. Sie können auch alle Personalisierungen für diesen Benutzer löschen oder Funktionslegenden für den Benutzer zurücksetzen. Wenn Funktionslegenden zurückgesetzt wurden, werden Popupfenster, in denen neue Funktionen eingeführt wurden und die der Benutzer zuvor abgelehnt hat, beim nächsten Mal wieder angezeigt, wenn der Benutzer auf diese Funktionen trifft.
 - **Systemeinstellungen** – Sie können temporär Personalisierung im System für alle Benutzer deaktivieren. In diesem Fall werden keine Personalisierungen für Benutzer angewendet und alle Seiten auf ihren Standardstatus zurückgesetzt. Wenn Sie die Personalisierungen später wieder reaktivieren, werden diese wieder angewendet. Sie können temporär alle Personalisierungen im System für alle Benutzer deaktivieren oder abschalten. Es gibt keine Möglichkeit, Personalisierungen wiederherzustellen, die gelöscht wurden. Deshalb müssen Sie vor diesem Schritt sicherstellen, dass Sie alle Personalisierungen exportiert haben, die Sie später importieren möchten.
 
-Benutzer, die Zugriff auf die Seite **Personalisierung** haben, können die persönlichen oder Organisationsansichten auch importieren, indem sie die Schaltfläche **Ansichten importieren** im Aktivitätsbereich verwenden. In Version 10.0.12 und höher wurde ein Mechanismus hinzugefügt, mit dem Ansichten beim Import sofort veröffentlicht werden können.
+Benutzer, die Zugriff auf die Seite **Personalisierung** haben, können die persönlichen oder Organisationsansichten auch importieren, indem sie die Schaltfläche **Ansichten importieren** im Aktivitätsbereich verwenden. Für Organisationsansichten können Sie **Sofort veröffentlichen** auswählen, um die Ansichten für Benutzer ohne zusätzliche explizite Veröffentlichung verfügbar zu machen.
 
 ## <a name="known-issues"></a>Bekannte Probleme
 Eine Liste bekannter Probleme mit gespeicherten Ansichten finden Sie unter [Formulare, die gespeicherte Ansichten vollständig verwenden, erstellen](../../dev-itpro/user-interface/understanding-saved-views.md).
@@ -204,27 +195,7 @@ Eine Liste bekannter Probleme mit gespeicherten Ansichten finden Sie unter [Form
 > [!NOTE]
 > Für die Funktion **Gespeicherte Ansichten** muss das Personalisierungssystem in Finance and Operations aktiviert sein. Wenn die Personalisierung für die gesamte Umgebung deaktiviert ist, werden Ansichten deaktiviert, selbst wenn Sie die folgenden Schritte ausführen. 
 
-**Version 10.0.13 und höher**
-
-Die Funktion **Gespeicherte Ansichten** ist nicht mehr in der Vorschau vorhanden. Sie ist jetzt direkt über die Funktionsverwaltung in jeder Umgebung verfügbar.
-
-**Versionen 10.0.9 bis 10.0.12**
-
-Die Funktion **Gespeicherte Ansichten** ist in jeder Umgebung direkt in der Funktionsverwaltung verfügbar. Wie für andere öffentliche Vorschaufunktionen unterliegt auch die Aktivierung dieser Funktion in der Produktion den [Zusätzlichen Nutzungsbedingungen](https://go.microsoft.com/fwlink/?linkid=2105274).
-
-**10.0.8/Plattformupdate 32 und früher**
-
-Die Funktion **Gespeicherte Ansichten** kann in Stufe 1 (Dev/Test)- und Stufe 2 (Sandbox)-Umgebungen aktiviert werden, um zusätzliche Test- und Entwurfsänderungen bereitzustellen, indem die folgenden Schritte ausgeführt werden.
-
-1. **Flight aktivieren**: Führen Sie die folgende SQL-Anweisung aus: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLISavedViewsEnableFeature', 1, 0, 5637144576);`
-
-2. **Reset IIS** zum Leeren des statischen Flighting-Cache. 
-3. **Finden Sie die Funktion**: Gehen Sie zum Arbeitsbereich **Feature-Management**. Wenn **Gespeicherte Ansichten** nicht in der Liste erscheint, wählen Sie **Auf Updates prüfen**.
-4. **Aktivieren Sie die Funktion**: Suchen Sie die Funktion **Gespeicherte Ansichten** in der Liste der Funktionen und wählen Sie **Jetzt aktivieren** im Detailbereich.
-
-Alle folgenden Benutzersitzungen beginnen mit aktivierten gespeicherten Ansichten.
+Sie können die Funktion **Gespeicherte Ansichten** über die Funktionsverwaltung in jeder Umgebung ein- und ausschalten. Nach dem Einschalten werden gespeicherte Ansichten in allen nachfolgenden Benutzersitzungen aktiviert.
 
 ### <a name="what-happens-to-existing-personalizations-when-views-are-enabled"></a>Was passiert an vorhandenen Personalisierungen, wenn Ansichten aktiviert werden? 
 
@@ -253,6 +224,3 @@ Bei Seiten mit Auswahlmöglichkeiten für große Ansichten (sowohl Personalisier
 
 - Wenn Sie also beispielsweise über eine Kachel zu einer Seite navigieren, wird die Abfrage für die Kachel unabhängig von der Abfrage, die der Standardansicht zugeordnet ist, ausgeführt. Wenn Sie diese Kachel erstellt haben, nachdem Ansichten aktiviert wurden, wird durch Auswahl einer Kachel die Seite mit der dieser Kachel zugeordneten Ansicht geöffnet.
 - Wenn Sie zu einer Seite navigieren und dieser Eingangspunkt bereits eine definierte Abfrage besitzt, wird die ursprüngliche Abfrage anstelle der Abfrage der Standardansicht ausgeführt. Wenn dies der Fall ist, sollten Sie beim Laden der Ansicht durch eine Informationsmeldung benachrichtigt werden. Sie können auch prüfen, indem Sie zu dieser Ansicht wechseln, nachdem die Seite geladen wird, damit sollte die Ansichtsabfrage unabhängig ausgeführt werden.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

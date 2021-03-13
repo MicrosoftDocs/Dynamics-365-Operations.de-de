@@ -1,6 +1,6 @@
 ---
 title: ER – Aktualisieren Sie Ihr Format durch Verwendung einer neuen Basisversion dieses Formats
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, eine Formatkonfiguration für elektronische Berichterstellung (ER) verwalten kann.
+description: In diesem Thema wird beschrieben, wie Sie eine Konfiguration im EB-Format (elektronische Berichterstellung) verwalten.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17fe6d772040c73959685920743225c128421951
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b76fb09ff961a3100b6a4bf890c1b12e6a0a2771
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684258"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092565"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER – Aktualisieren Sie Ihr Format durch Verwendung einer neuen Basisversion dieses Formats
 
@@ -243,6 +243,3 @@ Dazu muss Proseware, Inc. die Basiskonfigurationsversion für die benutzerdefini
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testen Sie das benutzerdefinierte Format zum Generieren von Zahlungsdateien
 Schließen Sie die Schritte in der Prozedur „Verwenden Sie erstelltes Format zum Generieren elektronischer Dokumente für Zahlungen“ in einer parallelen Finance and Operations-Sitzung ab. Wählen Sie das erstellte Format „BACS (Großbritannien, fiktiv benutzerdefiniert)“ in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem von Proseware, Inc.eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt. Die Datei sollte auch den vor kurzem von LItware, Inc. eingegeben XML Knoten enthalten, der in SWIFT-Bankleitzahl die Übereinstimmung der Landanforderungen darstellt.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

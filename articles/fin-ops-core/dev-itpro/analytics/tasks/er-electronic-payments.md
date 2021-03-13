@@ -1,6 +1,6 @@
 ---
 title: ER Generieren Sie elektronische Dokumente für Zahlungen mithilfe einer Formatkonfiguration
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" angehört, eine neue Formatkonfiguration für elektronische Berichterstellung (ER) verwenden kann, um elektronische Dokumente zur Verarbeitung von Zahlungen zu generieren.
+description: In diesem Thema wird beschrieben, wie Sie mithilfe einer neuen EB-Konfiguration (elektronische Berichterstellung) elektronische Dokumente für die Verarbeitung von Zahlungen generieren.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e88df5c2f92ee2b9b448ba100c8bc4105eddae4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 816f98660a5508ada203f49a71e0785548fb9a31
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681732"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092199"
 ---
 # <a name="er-generate-electronic-documents-for-payments-using-a-format-configuration"></a>ER Generieren Sie elektronische Dokumente für Zahlungen mithilfe einer Formatkonfiguration
 
@@ -81,6 +81,3 @@ Um diese Schritte abzuschließen, müssen Sie zunächst die Schritte in der Proz
 25. Klicken Sie auf "OK".
     * Analysieren Sie die erstellte Zahlungsdatei im XML-Format. Vergleichen Sie diese mit dem entworfenen Dokumentlayout und den definierten Zahlungstransaktionsattributen.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

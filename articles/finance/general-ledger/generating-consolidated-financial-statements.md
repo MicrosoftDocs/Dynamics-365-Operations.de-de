@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dda102b993ecc92a5089eb54d2708c2adebc572f
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443626"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5044020"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konsolidierte Finanzaufstellungen erstellen
 
@@ -74,7 +73,7 @@ Organisationshierarchien, die dynamische Dimensionen oder juristische Personen e
 ## <a name="consolidations-that-involve-eliminations"></a>Konsolidierungen die Löschungen beinhalten
 Löschungsbuchungen sind ein üblicher Teil des Konsolidierungsprozesses. In diesem Beispiel werden im Zuge der Konsolidierung fünf Konten gelöscht: 142600, 211400, 401420, 401180 und 510820. Unternehmen richten ihre Intercompany-Konten möglicherweise unterschiedlich ein. Beispielsweise legen einige Unternehmen die letzte Stelle auf den Wert 9 fest, wenn das Konto in Intercompany-Transaktionen verwendet wird. Wenn Ihnen die Intercompany-Konten bekannt sind, können Sie Löschungen unabhängig von der Methode in Ihren konsolidierten Finanzaufstellungen anzeigen.
 
-Die folgende Abbildung zeigt eine Spaltendefinition für eine konsolidierte Gewinn- und Verlustrechnung. Für jedes Unternehmen werden mit dem Dimensionsfilter drei Intercompany-Gewinn- und Verlust-Konten definiert. Spalte D umfasst nur die Löschungskonten für das USMF-Unternehmen und Spalte E schließt nur Löschungen für das DEMF-Unternehmen ein. Spalte D und Spalte E werden so eingerichtet, dass sie **nicht** in der Finanzaufstellung gedruckt werden.
+Die folgende Abbildung zeigt eine Spaltendefinition für eine konsolidierte Gewinn- und Verlustrechnung. Für jedes Unternehmen werden mit dem Dimensionsfilter drei Intercompany-Gewinn- und Verlust-Konten definiert. Die Spalten F, G und H enthalten nur die Löschungskonten für die USMF-, USRT- und DEMF-Unternehmen. Diese Spalten sind so eingerichtet, dass sie in der Finanzaufstellung **nicht** gedruckt werden.
 
 ![Spaltendefinition Konzern-Gewinn- und Verlustrechnung](./media/column-definition-consolidated-income-statement.png "Spaltendefinition Konzern-Gewinn- und Verlustrechnung")
 
@@ -140,7 +139,7 @@ Verschiedene juristische Personen verfügen möglicherweise über unterschiedlic
 - Erstellen Sie eine Spaltendefinition und verwenden Sie den Zeitraum und das Jahr, um die entsprechenden Zeiträume für jedes Unternehmen zuzuordnen.
 - Bei **Einstellungen** \> **Sonstiges** \> **Weitere Optionen** wählen Sie aus, ob konsolidiert wird, indem Sie das Enddatum des Zeitraums oder die Zeitraumnummer verwenden.
 
-Wenn die Spaltendefinition für mehrere Unternehmen entwerfen, die über verschiedene Finanzzeiträume verfügen, ist es wichtig, dass Sie berücksichtigen, welches Unternehmen dem Feld **Unternehmensname** in der Berichtsdefinition zugewiesen wird. Der Steuerkalender dieses Unternehmens wird als Basissteuerkalender für die Berichtsdefinition verwendet. Beispielsweise zeigt die folgende Tabelle die Einrichtung des Finanzzeitraums für die USMF- und INMF-Unternehmen an. Für konsolidierte Berichte möchten Sie den Steuerkalender verwenden, der von USMF verwendet wird. Die Spalte "Zuordnung" zeigt den entsprechenden Zeitraum und das Jahr für jedes Unternehmen, wenn ein Bericht für den 30. Juni 2018 generiert wird.
+Wenn die Spaltendefinition für mehrere Unternehmen entwerfen, die über verschiedene Finanzzeiträume verfügen, ist es wichtig, dass Sie berücksichtigen, welches Unternehmen dem Feld **Unternehmensname** in der Berichtsdefinition zugewiesen wird. Der Steuerkalender dieses Unternehmens wird als Basissteuerkalender für die Berichtsdefinition verwendet. Beispielsweise zeigt die folgende Tabelle den Finanzzeitraum an, der für die USMF- und INMF-Unternehmen eingerichtet wurde. Für konsolidierte Berichte möchten Sie den Steuerkalender verwenden, der von USMF verwendet wird. Die Spalte "Zuordnung" zeigt den entsprechenden Zeitraum und das Jahr für jedes Unternehmen, wenn ein Bericht für den 30. Juni 2018 generiert wird.
 
 | Firma   | Geschäftsjahr                                  | Zuordnung                     |
 |-----------|----------------------------------------------|-----------------------------|
@@ -193,7 +192,7 @@ Es gibt vier Optionen zur Berechnung der Wechselkurse in der Finanzberichterstel
 In der Finanzberichterstellung kann jeder Bericht in einer beliebigen Anzahl von Berichtswährungen angezeigt werden. Die folgenden Felder in der Berichtsdefinition unterstützen dieser Funktion:
 
 - Der Abschnitt **Währungsinformationen** auf der Seite **Berichtsdefinition**. Dieser Abschnitt zeigt die Währung, in der die Werte angezeigt werden, wenn ein Bericht generiert wird.
-- Ein neues **Alle Berichtswährungen einbeziehen**-Kontrollkästchen. Wenn dieses Kontrollkästchen aktiviert wird, wird ein Bericht für jede Berichtswährungen zur Berichtswarteschlange addiert, nachdem der Bericht, der die funktionale Währung des Unternehmens verwendet, generiert wird. Wenn das Kontrollkästchen deaktiviert ist, können Sie immer noch eine Berichtswährung im Web Viewer auswählen. In diesem Fall wird die Berichtswährung nur verarbeitet, wenn Sie sie auswählen.
+- Ein neues **Alle Berichtswährungen einbeziehen**-Kontrollkästchen. Wenn dieses Kontrollkästchen aktiviert ist, wird der Berichtswarteschlange für jede Berichtswährung ein Bericht hinzugefügt, sobald der Bericht, der die funktionale Währung des Unternehmens verwendet, generiert wurde. Wenn das Kontrollkästchen deaktiviert ist, können Sie immer noch eine Berichtswährung im Web Viewer auswählen. In diesem Fall wird die Berichtswährung nur verarbeitet, wenn Sie sie auswählen.
 
 Mit den Optionen in der Berichtsdefinition können Sie einen Bericht in alle Ihre Berichtswährungen umrechnen. Daher können Sie doppelte Berichtsdefinitionen entfernen, die sich nur in den Währungen unterschieden, die verwendet werden. Wenn Sie einen Bericht benötigen, der mehreren Währungen nebeneinander angezeigt, können das Feld **Währungsanzeige** auf der Seite **Spaltendefinition** weiter verwenden, um nur die Spalte des Berichts in eine andere Berichtswährung umzurechnen.
 
@@ -224,6 +223,3 @@ Um die ordnungsgemäß umgerechneten Beträge zu erhalten, wenn Währungen verwe
 Weitere Informationen zur Konsolidierung und Währungsumrechnung finden Sie im übergeordneten Thema dieses Themas, [Finanzkonsolidierungen und Übersicht zur Währungsumrechnung](./financial-consolidations-currency-translation.md).
 
 Weitere Informationen zur Online-Erfassung von Konsolidierungsdetails finden Sie unter [Online-Finanzkonsolidierungen](./consolidate-online.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
