@@ -1,255 +1,241 @@
 ---
-title: Mobiler Arbeitsbereich für Anlagenverwaltung
+title: Mobilen Arbeitsbereich für Anlagenverwaltung verwenden
 description: Dieses Thema enthält Informationen zum mobilen Arbeitsbereich „Anlageverwaltung“.
 author: josaw1
 manager: tfehr
-ms.date: 10/01/2019
+ms.date: 01/15/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 525f21d076027f1bf339e59fd0e346706044839c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: afda807714f14efb1cbab4ecfdd273aac52f4558
+ms.sourcegitcommit: 995c678b4715be267f1f97148902a6b3dde3bcab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428531"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "5033151"
 ---
-# <a name="asset-management-mobile-workspace"></a><span data-ttu-id="5461d-103">Mobiler Arbeitsbereich für Anlagenverwaltung</span><span class="sxs-lookup"><span data-stu-id="5461d-103">Asset management mobile workspace</span></span>
+# <a name="use-the-asset-management-mobile-workspace"></a><span data-ttu-id="4e6cf-103">Mobilen Arbeitsbereich für Anlagenverwaltung verwenden</span><span class="sxs-lookup"><span data-stu-id="4e6cf-103">Use the Asset management mobile workspace</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
+<span data-ttu-id="4e6cf-104">Dieses Thema enthält Informationen zum mobilen Arbeitsbereich **Anlageverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-104">This topic provides information about the **Asset management** mobile workspace.</span></span> <span data-ttu-id="4e6cf-105">Mit dem Arbeitsbereich können Benutzer Wartungsanforderungen und Arbeitsaufträge anzeigen und erstellen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-105">This workspace lets users view and create maintenance requests and work orders.</span></span> <span data-ttu-id="4e6cf-106">Benutzer können auch die zugeordneten Arbeitsauftragseinzelvorgänge in einer Listenansicht anzeigen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-106">Users can also view the assigned work order jobs in a calendar or list view.</span></span> <span data-ttu-id="4e6cf-107">Anlagen und funktionale Standorte können auch angezeigt und gesucht werden.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-107">Assets and functional locations can also be viewed and searched for.</span></span>
 
-<span data-ttu-id="5461d-104">Dieses Thema enthält Informationen zum mobilen Arbeitsbereich „Anlageverwaltung“.</span><span class="sxs-lookup"><span data-stu-id="5461d-104">This topic provides information about the Asset management mobile workspace.</span></span> <span data-ttu-id="5461d-105">Mit dem Arbeitsbereich können Benutzer Wartungsanforderungen und Arbeitsaufträge anzeigen und erstellen.</span><span class="sxs-lookup"><span data-stu-id="5461d-105">This workspace lets users view and create maintenance requests and work orders.</span></span> <span data-ttu-id="5461d-106">Benutzer können auch die zugeordneten Arbeitsauftragseinzelvorgänge in einer Listenansicht anzeigen.</span><span class="sxs-lookup"><span data-stu-id="5461d-106">Users can also view the assigned work order jobs in a calendar or list view.</span></span> <span data-ttu-id="5461d-107">Anlagen und funktionale Standorte können auch angezeigt und gesucht werden.</span><span class="sxs-lookup"><span data-stu-id="5461d-107">Assets and functional locations can also be viewed and searched for.</span></span>
+## <a name="overview"></a><span data-ttu-id="4e6cf-108">Übersicht</span><span class="sxs-lookup"><span data-stu-id="4e6cf-108">Overview</span></span>
 
+<span data-ttu-id="4e6cf-109">Anlagenverwaltung ist ein erweitertes Modul für die Verwaltung von Anlagen und Arbeitsauftragseinzelvorgänge in Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-109">Asset Management is an advanced module for managing assets and work order jobs in Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="4e6cf-110">Der mobile Arbeitsbereich **Asset-Management** ermöglicht Benutzern, zugewiesene Arbeitsauftragseinzelvorgänge schnell im mobilen Gerät ihrer Wahl anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-110">The **Asset management** mobile workspace lets users quickly view assigned work order jobs on the mobile device of their choice.</span></span> <span data-ttu-id="4e6cf-111">Benutzer können auch Wartungsanfragen erstellen und verwalten, Lebenszyklusstatus aktualisieren, und Anlagen und funktionale Standortdetail mit ihrem mobilen Gerät anzeigen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-111">Users can also create and manage maintenance requests, update lifecycle state, and view asset and functional location details by using their mobile device.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="5461d-108">Übersicht</span><span class="sxs-lookup"><span data-stu-id="5461d-108">Overview</span></span>
+<span data-ttu-id="4e6cf-112">Insbesondere ermöglicht der mobile Arbeitsbereich für die **Anlagenverwaltung** den Benutzern, die folgenden Aufgaben auszuführen:</span><span class="sxs-lookup"><span data-stu-id="4e6cf-112">Specifically, the **Asset management** mobile workspace lets users perform these tasks:</span></span>
 
-<span data-ttu-id="5461d-109">Anlagenverwaltung ist ein erweitertes Modul für die Verwaltung von Anlagen und Arbeitsauftragseinzelvorgänge in Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="5461d-109">Asset Management is an advanced module for managing assets and work order jobs in Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="5461d-110">Der mobile Arbeitsbereich **Asset-Management** ermöglicht Benutzern, zugewiesene Arbeitsauftragseinzelvorgänge schnell im mobilen Gerät ihrer Wahl anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="5461d-110">The **Asset management** mobile workspace lets users quickly view assigned work order jobs on the mobile device of their choice.</span></span> <span data-ttu-id="5461d-111">Benutzer können auch Wartungsanfragen erstellen und verwalten, Lebenszyklusstatus aktualisieren, und Anlagen und funktionale Standortdetail mit ihrem mobilen Gerät anzeigen.</span><span class="sxs-lookup"><span data-stu-id="5461d-111">Users can also create and manage maintenance requests, update lifecycle state, and view asset and functional location details by using their mobile device.</span></span>
+- <span data-ttu-id="4e6cf-113">Wartungsanfragen erstellen, anzeigen und bearbeiten, ein Foto machen oder ein vorhandenes Bild an die Wartungsanfrage anhängen, den Lebenszyklusstatus der Wartungsanfrage ändern</span><span class="sxs-lookup"><span data-stu-id="4e6cf-113">Create, view, and edit maintenance requests, take a photo or attach an existing image to the maintenance request, change the maintenance request lifecycle state.</span></span> 
+- <span data-ttu-id="4e6cf-114">Arbeitsaufträge erstellen, anzeigen und bearbeiten, ein Foto machen oder ein vorhandenes Bild an den Wartungsauftrag anhängen, den Lebenszyklusstatus der Wartungsanfrage ändern, Wartungsauftragseinzelvorgänge anzeigen</span><span class="sxs-lookup"><span data-stu-id="4e6cf-114">Create, view, and edit work orders, take a photo or attach an existing image to the work order, change the work order lifecycle state, view work order jobs.</span></span>
+- <span data-ttu-id="4e6cf-115">Zugewiesene Arbeitsauftrageinzelaufträge in einer Kalenderansicht anzeigen</span><span class="sxs-lookup"><span data-stu-id="4e6cf-115">View assigned work order jobs in a calendar view.</span></span>
+- <span data-ttu-id="4e6cf-116">Arbeitsauftragseinzelvorgänge erstellen, anzeigen und bearbeiten, Anlagenzähler aktualisieren, Wartungsprüflisten anzeigen, Notizen zu Arbeitsauftrageinzelvorgängen anzeigen und bearbeiten, die erforderlichen Werkzeuge für den Arbeitsauftrageinzelvorgang anzeigen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-116">Create, view, and edit work order job, update asset counters, view maintenance checklist, view and edit work order job notes, view the tools required for the work order job.</span></span>
+- <span data-ttu-id="4e6cf-117">Bestimmte Anlagen oder funktionale Standorte anzeigen oder suchen</span><span class="sxs-lookup"><span data-stu-id="4e6cf-117">View or search for a specific asset or functional location.</span></span>
 
-<span data-ttu-id="5461d-112">Insbesondere ermöglicht der mobile Arbeitsbereich für die **Anlagenverwaltung** den Benutzern, die folgenden Aufgaben auszuführen:</span><span class="sxs-lookup"><span data-stu-id="5461d-112">Specifically, the **Asset management** mobile workspace lets users perform these tasks:</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4e6cf-118">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="4e6cf-118">Prerequisites</span></span>
 
-- <span data-ttu-id="5461d-113">Wartungsanfragen erstellen, anzeigen und bearbeiten, ein Foto machen oder ein vorhandenes Bild an die Wartungsanfrage anhängen, den Lebenszyklusstatus der Wartungsanfrage ändern</span><span class="sxs-lookup"><span data-stu-id="5461d-113">Create, view, and edit maintenance requests, take a photo or attach an existing image to the maintenance request, change the maintenance request lifecycle state.</span></span> 
-- <span data-ttu-id="5461d-114">Arbeitsaufträge erstellen, anzeigen und bearbeiten, ein Foto machen oder ein vorhandenes Bild an den Wartungsauftrag anhängen, den Lebenszyklusstatus der Wartungsanfrage ändern, Wartungsauftragseinzelvorgänge anzeigen</span><span class="sxs-lookup"><span data-stu-id="5461d-114">Create, view, and edit work orders, take a photo or attach an existing image to the work order, change the work order lifecycle state, view work order jobs.</span></span>
-- <span data-ttu-id="5461d-115">Zugewiesene Arbeitsauftrageinzelaufträge in einer Kalenderansicht anzeigen</span><span class="sxs-lookup"><span data-stu-id="5461d-115">View assigned work order jobs in a calendar view.</span></span>
-- <span data-ttu-id="5461d-116">Arbeitsauftragseinzelvorgänge erstellen, anzeigen und bearbeiten, Anlagenzähler aktualisieren, Wartungsprüflisten anzeigen, Notizen zu Arbeitsauftrageinzelvorgängen anzeigen und bearbeiten, die erforderlichen Werkzeuge für den Arbeitsauftrageinzelvorgang anzeigen.</span><span class="sxs-lookup"><span data-stu-id="5461d-116">Create, view, and edit work order job, update asset counters, view maintenance checklist, view and edit work order job notes, view the tools required for the work order job.</span></span>
-- <span data-ttu-id="5461d-117">Bestimmte Anlagen oder funktionale Standorte anzeigen oder suchen</span><span class="sxs-lookup"><span data-stu-id="5461d-117">View or search for a specific asset or functional location.</span></span>
+<span data-ttu-id="4e6cf-119">Bevor Sie den mobilen Arbeitsbereich **Anlagenverwaltung** verwenden können, muss Ihr Administrator die erforderlichen Benutzer- und Arbeiterkonten einrichten und den Arbeitsbereich veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-119">Before you can use the **Asset management** mobile workspace, your admin must set up the required user and worker accounts, and publish the workspace.</span></span> <span data-ttu-id="4e6cf-120">Weitere Informationen finden Sie unter [Einrichten des mobilen Arbeitsbereichs zur Anlagenverwaltung](set-up-asset-management-mobile.md).</span><span class="sxs-lookup"><span data-stu-id="4e6cf-120">For more information, see [Set up the Asset management mobile workspace](set-up-asset-management-mobile.md).</span></span>
 
+## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="4e6cf-121">Herunterladen und Installieren der mobilen App</span><span class="sxs-lookup"><span data-stu-id="4e6cf-121">Download and install the mobile app</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5461d-118">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="5461d-118">Prerequisites</span></span>
+<span data-ttu-id="4e6cf-122">Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und installieren Sie diese:</span><span class="sxs-lookup"><span data-stu-id="4e6cf-122">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
 
-<span data-ttu-id="5461d-119">Die Voraussetzungen unterscheiden sich basierend auf der Version von Dynamics 365 Supply Chain Management, die für Ihre Organisation bereitgestellt wurde.</span><span class="sxs-lookup"><span data-stu-id="5461d-119">The prerequisites vary, based on the version of Dynamics 365 Supply Chain Management that has been deployed for your organization.</span></span>
+- [<span data-ttu-id="4e6cf-123">Für Android-Smartphones</span><span class="sxs-lookup"><span data-stu-id="4e6cf-123">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
+- [<span data-ttu-id="4e6cf-124">Für iPhones</span><span class="sxs-lookup"><span data-stu-id="4e6cf-124">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-supply-chain-management"></a><span data-ttu-id="5461d-120">Voraussetzungen, wenn Sie Microsoft Dynamics 365 Supply Chain Management verwenden</span><span class="sxs-lookup"><span data-stu-id="5461d-120">Prerequisites if you use Microsoft Dynamics 365 Supply Chain Management</span></span> 
-<span data-ttu-id="5461d-121">Wenn Microsoft Dynamics 365 Supply Chain Management für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Anlagenverwaltung** veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="5461d-121">If Microsoft Dynamics 365 Supply Chain Management has been deployed for your organization, the system administrator must publish the **Asset management** mobile workspace.</span></span> <span data-ttu-id="5461d-122">Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).</span><span class="sxs-lookup"><span data-stu-id="5461d-122">For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).</span></span>
+## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="4e6cf-125">Bei der mobile App anmelden</span><span class="sxs-lookup"><span data-stu-id="4e6cf-125">Sign in to the mobile app</span></span>
 
-## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="5461d-123">Herunterladen und Installieren der mobilen App</span><span class="sxs-lookup"><span data-stu-id="5461d-123">Download and install the mobile app</span></span>
-<span data-ttu-id="5461d-124">Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und installieren Sie diese:</span><span class="sxs-lookup"><span data-stu-id="5461d-124">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
+1. <span data-ttu-id="4e6cf-126">Starten Sie die App auf Ihrem mobilen Gerät.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-126">Start the app on your mobile device.</span></span>
 
-- [<span data-ttu-id="5461d-125">Für Android-Smartphones</span><span class="sxs-lookup"><span data-stu-id="5461d-125">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
-- [<span data-ttu-id="5461d-126">Für iPhones</span><span class="sxs-lookup"><span data-stu-id="5461d-126">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
+1. <span data-ttu-id="4e6cf-127">Geben Sie die URL Dynamics 365 ein.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-127">Enter your Dynamics 365 URL.</span></span>
 
-## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="5461d-127">Bei der mobile App anmelden</span><span class="sxs-lookup"><span data-stu-id="5461d-127">Sign in to the mobile app</span></span>
-1. <span data-ttu-id="5461d-128">Starten Sie die App auf Ihrem mobilen Gerät.</span><span class="sxs-lookup"><span data-stu-id="5461d-128">Start the app on your mobile device.</span></span>
+1. <span data-ttu-id="4e6cf-128">Bei der erstmaligen Anwendung werden Sie nach Ihrem Benutzernamen und dem Kennwort gefragt.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-128">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="4e6cf-129">Geben Sie Ihre Anmeldeinformationen ein.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-129">Enter your credentials.</span></span>
 
-2. <span data-ttu-id="5461d-129">Geben Sie die URL Dynamics 365 ein.</span><span class="sxs-lookup"><span data-stu-id="5461d-129">Enter your Dynamics 365 URL.</span></span>
+1. <span data-ttu-id="4e6cf-130">Nachdem Sie sich angemeldet haben, werden verfügbare Arbeitsbereiche für Ihr Unternehmen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-130">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="4e6cf-131">Beachten Sie, dass Sie, wenn Ihr Systemadministrator einen neuen Arbeitsbereich später veröffentlicht, die Liste der mobilen Arbeitsbereiche aktualisieren müssen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-131">Note that if your system administrator publishes a new workspace later, you'll have to refresh the list of mobile workspaces.</span></span>
 
-3. <span data-ttu-id="5461d-130">Bei der erstmaligen Anwendung werden Sie nach Ihrem Benutzernamen und dem Kennwort gefragt.</span><span class="sxs-lookup"><span data-stu-id="5461d-130">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="5461d-131">Geben Sie Ihre Anmeldeinformationen ein.</span><span class="sxs-lookup"><span data-stu-id="5461d-131">Enter your credentials.</span></span>
+    <span data-ttu-id="4e6cf-132">![Arbeitsbereich auswählen](media/am-mobile-01.png "Arbeitsbereich auswählen")</span><span class="sxs-lookup"><span data-stu-id="4e6cf-132">![Select a workspace](media/am-mobile-01.png "Select a workspace")</span></span>
 
-4. <span data-ttu-id="5461d-132">Nachdem Sie sich angemeldet haben, werden verfügbare Arbeitsbereiche für Ihr Unternehmen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="5461d-132">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="5461d-133">Beachten Sie, dass Sie, wenn Ihr Systemadministrator einen neuen Arbeitsbereich später veröffentlicht, die Liste der mobilen Arbeitsbereiche aktualisieren müssen.</span><span class="sxs-lookup"><span data-stu-id="5461d-133">Note that if your system administrator publishes a new workspace later, you'll have to refresh the list of mobile workspaces.</span></span>
+## <a name="view-assigned-work-order-jobs-in-calendar-view"></a><span data-ttu-id="4e6cf-133">Zugewiesene Arbeitsauftrageinzelaufträge in Kalenderansicht anzeigen</span><span class="sxs-lookup"><span data-stu-id="4e6cf-133">View assigned work order jobs in calendar view</span></span>
 
-![Abbildung 1](media/am-mobile-01.png)
+1. <span data-ttu-id="4e6cf-134">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-134">On your mobile device, open the **Asset management** workspace.</span></span>
 
+1. <span data-ttu-id="4e6cf-135">Wählen Sie **Mein Arbeitsauftragseinzelvorgangskalender** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-135">Select **My work order jobs calendar**.</span></span>
 
-## <a name="view-assigned-work-order-jobs-in-calendar-view"></a><span data-ttu-id="5461d-135">Zugewiesene Arbeitsauftrageinzelaufträge in Kalenderansicht anzeigen</span><span class="sxs-lookup"><span data-stu-id="5461d-135">View assigned work order jobs in calendar view</span></span>
+1. <span data-ttu-id="4e6cf-136">Wählen Sie das Datum aus, für das Sie archivierte Arbeitsauftrageinzelvorgänge anzeigen möchten.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-136">Select the date you want to view work order jobs for.</span></span> <span data-ttu-id="4e6cf-137">In der Liste finden Sie die Anlagenkennung und die Kennung des funktionalen Standorts für jeden Arbeitsauftragseinzelvorgang.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-137">In the list, you'll see the asset ID and functional location ID for each work order job.</span></span>
 
-1. <span data-ttu-id="5461d-136">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="5461d-136">On your mobile device, open the **Asset management** workspace.</span></span>
+1. <span data-ttu-id="4e6cf-138">Wählen Sie einen Arbeitsauftragseinzelvorgang in der Liste aus, um Detail zum Einzelvorgang anzuzeigen: Details zu Anlage und funktionalem Standort sowie andere Navigationslinks, um **Anhänge**, **Prüflisten**, **Tools**, **Anlagenzähler**, **Notizen**, **Erfassungen** anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-138">Select a work order job in the list to see job details: Asset and functional location details as well as other navigation links to view **Attachments**, **Checklists**, **Tools**, **Asset counters**, **Notes**, **Journals**.</span></span>
 
-2. <span data-ttu-id="5461d-137">Wählen Sie **Mein Arbeitsauftragseinzelvorgangskalender** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-137">Select **My work order jobs calendar**.</span></span>
+    <span data-ttu-id="4e6cf-139">![Zugewiesene Arbeitsauftrageinzelaufträge in Kalenderansicht anzeigen](media/am-mobile-02.png "Zugewiesene Arbeitsauftrageinzelaufträge in Kalenderansicht anzeigen")</span><span class="sxs-lookup"><span data-stu-id="4e6cf-139">![View assigned work order jobs in calendar view](media/am-mobile-02.png "View assigned work order jobs in calendar view")</span></span>
 
-3. <span data-ttu-id="5461d-138">Wählen Sie das Datum aus, für das Sie archivierte Arbeitsauftrageinzelvorgänge anzeigen möchten.</span><span class="sxs-lookup"><span data-stu-id="5461d-138">Select the date you want to view work order jobs for.</span></span> <span data-ttu-id="5461d-139">In der Liste finden Sie die Anlagenkennung und die Kennung des funktionalen Standorts für jeden Arbeitsauftragseinzelvorgang.</span><span class="sxs-lookup"><span data-stu-id="5461d-139">In the list, you'll see the asset ID and functional location ID for each work order job.</span></span>
+## <a name="create-a-work-order-job"></a><span data-ttu-id="4e6cf-140">Arbeitsauftrageinzelvorgang erstellen</span><span class="sxs-lookup"><span data-stu-id="4e6cf-140">Create a work order job</span></span>
 
-4. <span data-ttu-id="5461d-140">Wählen Sie einen Arbeitsauftragseinzelvorgang in der Liste aus, um Detail zum Einzelvorgang anzuzeigen: Details zu Anlage und funktionalem Standort sowie andere Navigationslinks, um **Anhänge**, **Prüflisten**, **Tools**, **Anlagenzähler**, **Notizen**, **Erfassungen** anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="5461d-140">Select a work order job in the list to see job details: Asset and functional location details as well as other navigation links to view **Attachments**, **Checklists**, **Tools**, **Asset counters**, **Notes**, **Journals**.</span></span>
+1. <span data-ttu-id="4e6cf-141">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-141">On your mobile device, open the **Asset management** workspace.</span></span>
 
-![Abbildung 2](media/am-mobile-02.png)
+1. <span data-ttu-id="4e6cf-142">Wählen Sie **Alle Wartungsarbeitsaufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-142">Select **All maintenance work orders**.</span></span>
 
+1. <span data-ttu-id="4e6cf-143">Wählen Sie den Arbeitsauftrag aus, für den Sie einen neuen Arbeitsauftragseinzelvorgang erstellen möchten.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-143">Select the work order you want to create a new work order job for.</span></span>
 
-## <a name="create-a-work-order-job"></a><span data-ttu-id="5461d-142">Arbeitsauftrageinzelvorgang erstellen</span><span class="sxs-lookup"><span data-stu-id="5461d-142">Create a work order job</span></span>
+1. <span data-ttu-id="4e6cf-144">Wählen Sie die Schaltfläche **Position hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-144">Select the **Add line** button.</span></span>
 
-1. <span data-ttu-id="5461d-143">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="5461d-143">On your mobile device, open the **Asset management** workspace.</span></span>
+1. <span data-ttu-id="4e6cf-145">Wählen Sie die **Anlage** aus, für die Sie einen Arbeitsauftragseinzelvorgang erstellen möchten.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-145">Select the **Asset** you want to create a work order job for.</span></span>
 
-2. <span data-ttu-id="5461d-144">Wählen Sie **Alle Wartungsarbeitsaufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-144">Select **All maintenance work orders**.</span></span>
+1. <span data-ttu-id="4e6cf-146">Wählen Sie **Wartungsauftragstyp**, **Wartungsauftragsartenvariante** und **Art** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-146">Select **Maintenance job type**, **Maintenance job type variant** and **Trade**.</span></span>
 
-3. <span data-ttu-id="5461d-145">Wählen Sie den Arbeitsauftrag aus, für den Sie einen neuen Arbeitsauftragseinzelvorgang erstellen möchten.</span><span class="sxs-lookup"><span data-stu-id="5461d-145">Select the work order you want to create a new work order job for.</span></span>
+1. <span data-ttu-id="4e6cf-147">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-147">Select **Done**.</span></span>
 
-4. <span data-ttu-id="5461d-146">Wählen Sie die Schaltfläche **Position hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-146">Select the **Add line** button.</span></span>
+    <span data-ttu-id="4e6cf-148">![Der Bildschirm „Position hinzufügen“](media/am-mobile-03.png "Der Bildschirm „Position hinzufügen“")</span><span class="sxs-lookup"><span data-stu-id="4e6cf-148">![The Add line screen](media/am-mobile-03.png "The Add line screen")</span></span>
 
-5. <span data-ttu-id="5461d-147">Wählen Sie die **Anlage** aus, für die Sie einen Arbeitsauftragseinzelvorgang erstellen möchten.</span><span class="sxs-lookup"><span data-stu-id="5461d-147">Select the **Asset** you want to create a work order job for.</span></span>
 
-6. <span data-ttu-id="5461d-148">Wählen Sie **Wartungsauftragstyp**, **Wartungsauftragsartenvariante** und **Art** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-148">Select **Maintenance job type**, **Maintenance job type variant** and **Trade**.</span></span>
+## <a name="add-attachment-to-a-work-order-job"></a><span data-ttu-id="4e6cf-149">Einem Arbeitsauftragseinzelvorgang einen Anhang hinzufügen</span><span class="sxs-lookup"><span data-stu-id="4e6cf-149">Add attachment to a work order job</span></span>
 
-7. <span data-ttu-id="5461d-149">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="5461d-149">Select **Done**.</span></span>
+1. <span data-ttu-id="4e6cf-150">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-150">On your mobile device, open the **Asset management** workspace.</span></span>
 
-![Abbildung 3](media/am-mobile-03.png)
+1. <span data-ttu-id="4e6cf-151">Wählen Sie **Alle Wartungsarbeitsaufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-151">Select **All maintenance work orders**.</span></span>
 
+1. <span data-ttu-id="4e6cf-152">Wählen Sie den Arbeitsauftrag > Arbeitsauftragseinzelvorgang aus, dem Sie einen Anhang hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-152">Select the work order > work order job you want to add an attachment to.</span></span>
+    - <span data-ttu-id="4e6cf-153">Alternativ können Sie auch **Mein Arbeitsauftragseinzelvorgangskalender** oder **Eigene Arbeitsauftragseinzelvorgangsliste** auf der Startseite auswählen, um zur Seite **Arbeitsauftragseinzelvorgangsdetails** zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-153">Alternatively, you can also select **My work order jobs calendar** or **My work order jobs list** on the home page to navigate to the **Work order job details** page.</span></span>
 
-## <a name="add-attachment-to-a-work-order-job"></a><span data-ttu-id="5461d-151">Einem Arbeitsauftragseinzelvorgang einen Anhang hinzufügen</span><span class="sxs-lookup"><span data-stu-id="5461d-151">Add attachment to a work order job</span></span>
+1. <span data-ttu-id="4e6cf-154">Wählen Sie **Anhänge** auf der Seite **Arbeitsauftragseinzelvorgangsdetails** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-154">Select **Attachments** on the **Work order job details** page.</span></span>
 
-1. <span data-ttu-id="5461d-152">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="5461d-152">On your mobile device, open the **Asset management** workspace.</span></span>
+1. <span data-ttu-id="4e6cf-155">Sie finden vorhandene Anhänge im Arbeitsauftragseinzelvorgang.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-155">You'll see existing attachments on the work order job.</span></span> <span data-ttu-id="4e6cf-156">Wählen Sie **Anhang hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-156">Select **Add attachment**.</span></span>
 
-2. <span data-ttu-id="5461d-153">Wählen Sie **Alle Wartungsarbeitsaufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-153">Select **All maintenance work orders**.</span></span>
+1. <span data-ttu-id="4e6cf-157">Geben Sie **Name** und **Notizen** für dien Anhang ein.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-157">Enter **Name** and **Notes** for the attachment.</span></span>
 
-3. <span data-ttu-id="5461d-154">Wählen Sie den Arbeitsauftrag > Arbeitsauftragseinzelvorgang aus, dem Sie einen Anhang hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="5461d-154">Select the work order > work order job you want to add an attachment to.</span></span>
-    - <span data-ttu-id="5461d-155">Alternativ können Sie auch **Mein Arbeitsauftragseinzelvorgangskalender** oder **Eigene Arbeitsauftragseinzelvorgangsliste** auf der Startseite auswählen, um zur Seite **Arbeitsauftragseinzelvorgangsdetails** zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="5461d-155">Alternatively, you can also select **My work order jobs calendar** or **My work order jobs list** on the home page to navigate to the **Work order job details** page.</span></span>
+1. <span data-ttu-id="4e6cf-158">Wählen Sie **Bild auswählen** aus, um ein Foto aus der mobilen Galerie auszuwählen, oder **Foto aufnehmen**, um ein Foto zu machen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-158">Select **Choose image** to select a photo from the mobile gallery, or **Take photo** to take a photo.</span></span>
 
-4. <span data-ttu-id="5461d-156">Wählen Sie **Anhänge** auf der Seite **Arbeitsauftragseinzelvorgangsdetails** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-156">Select **Attachments** on the **Work order job details** page.</span></span>
+1. <span data-ttu-id="4e6cf-159">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-159">Select **Done**.</span></span>
 
-5. <span data-ttu-id="5461d-157">Sie finden vorhandene Anhänge im Arbeitsauftragseinzelvorgang.</span><span class="sxs-lookup"><span data-stu-id="5461d-157">You'll see existing attachments on the work order job.</span></span> <span data-ttu-id="5461d-158">Wählen Sie **Anhang hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-158">Select **Add attachment**.</span></span>
+    <span data-ttu-id="4e6cf-160">![Anzeigen und Hinzufügen von Anhängen für einen Arbeitsauftrageinzelvorgang](media/am-mobile-04.png "Anzeigen und Hinzufügen von Anhängen für einen Arbeitsauftrageinzelvorgang")</span><span class="sxs-lookup"><span data-stu-id="4e6cf-160">![View and add attachments for a work order job](media/am-mobile-04.png "View and add attachments for a work order job")</span></span>
 
-6. <span data-ttu-id="5461d-159">Geben Sie **Name** und **Notizen** für dien Anhang ein.</span><span class="sxs-lookup"><span data-stu-id="5461d-159">Enter **Name** and **Notes** for the attachment.</span></span>
+## <a name="view-maintenance-checklist-on-a-work-order-job"></a><span data-ttu-id="4e6cf-161">Wartungsprüfliste zu einem Arbeitsauftragseinzelvorgang anzeigen</span><span class="sxs-lookup"><span data-stu-id="4e6cf-161">View maintenance checklist on a work order job</span></span>
 
-7. <span data-ttu-id="5461d-160">Wählen Sie **Bild auswählen** aus, um ein Foto aus der mobilen Galerie auszuwählen, oder **Foto aufnehmen**, um ein Foto zu machen.</span><span class="sxs-lookup"><span data-stu-id="5461d-160">Select **Choose image** to select a photo from the mobile gallery, or **Take photo** to take a photo.</span></span>
+1. <span data-ttu-id="4e6cf-162">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-162">On your mobile device, open the **Asset management** workspace.</span></span>
 
-8. <span data-ttu-id="5461d-161">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="5461d-161">Select **Done**.</span></span>
+1. <span data-ttu-id="4e6cf-163">Wählen Sie **Alle Wartungsarbeitsaufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-163">Select **All maintenance work orders**.</span></span>
 
-![Abbildung 4](media/am-mobile-04.png)
+1. <span data-ttu-id="4e6cf-164">Wählen Sie den Arbeitsauftrag > Arbeitsauftragseinzelvorgang aus, für den Sie Prüflisten anzeigen möchten.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-164">Select the work order > work order job you want to view checklists for.</span></span>
+    - <span data-ttu-id="4e6cf-165">Alternativ können Sie auch **Mein Arbeitsauftragseinzelvorgangskalender** oder **Eigene Arbeitsauftragseinzelvorgangsliste** auf der Startseite auswählen, um zur Seite **Arbeitsauftragseinzelvorgangsdetails** zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-165">Alternatively, you can also select **My work order jobs calendar** or **My work order jobs list** on the home page to navigate to the **work order job details** page.</span></span>
 
+1. <span data-ttu-id="4e6cf-166">Wählen Sie **Prüflisten** auf der Seite **Arbeitsauftragseinzelvorgangsdetails** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-166">Select **Checklists** on the **Work order job details** page.</span></span>
 
-## <a name="view-maintenance-checklist-on-a-work-order-job"></a><span data-ttu-id="5461d-163">Wartungsprüfliste zu einem Arbeitsauftragseinzelvorgang anzeigen</span><span class="sxs-lookup"><span data-stu-id="5461d-163">View maintenance checklist on a work order job</span></span>
+1. <span data-ttu-id="4e6cf-167">Es wird eine Liste der Prüflistenpositionen angezeigt, die dem Arbeitsauftragseinzelvorgang zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-167">You'll see a list of checklist lines related to the work order job.</span></span> <span data-ttu-id="4e6cf-168">Wählen Sie eine Prüflistenposition aus, um **Anweisungen** anzuzeigen und **Notizen** hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-168">Select a checklist line to view **Instructions** and add **Notes**.</span></span>
 
-1. <span data-ttu-id="5461d-164">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="5461d-164">On your mobile device, open the **Asset management** workspace.</span></span>
+1. <span data-ttu-id="4e6cf-169">Klicken Sie auf die Zurück-Schaltfläche (**<**), um zur vorherigen Seite zurückzugelangen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-169">Select the back button (**<**) to return to the previous page.</span></span>
 
-2. <span data-ttu-id="5461d-165">Wählen Sie **Alle Wartungsarbeitsaufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-165">Select **All maintenance work orders**.</span></span>
+    <span data-ttu-id="4e6cf-170">![Wartungsprüfliste und Positionsdetails](media/am-mobile-05.png "Wartungsprüfliste und Positionsdetails")</span><span class="sxs-lookup"><span data-stu-id="4e6cf-170">![Maintenance checklist and line details](media/am-mobile-05.png "Maintenance checklist and line details")</span></span>
 
-3. <span data-ttu-id="5461d-166">Wählen Sie den Arbeitsauftrag > Arbeitsauftragseinzelvorgang aus, für den Sie Prüflisten anzeigen möchten.</span><span class="sxs-lookup"><span data-stu-id="5461d-166">Select the work order > work order job you want to view checklists for.</span></span>
-    - <span data-ttu-id="5461d-167">Alternativ können Sie auch **Mein Arbeitsauftragseinzelvorgangskalender** oder **Eigene Arbeitsauftragseinzelvorgangsliste** auf der Startseite auswählen, um zur Seite **Arbeitsauftragseinzelvorgangsdetails** zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="5461d-167">Alternatively, you can also select **My work order jobs calendar** or **My work order jobs list** on the home page to navigate to the **work order job details** page.</span></span>
+## <a name="view-and-update-asset-counters-on-a-work-order-job"></a><span data-ttu-id="4e6cf-171">nlagenzähler zu einem Arbeitsauftragseinzelvorgang anzeigen und aktualisieren</span><span class="sxs-lookup"><span data-stu-id="4e6cf-171">View and update asset counters on a work order job</span></span>
 
-4. <span data-ttu-id="5461d-168">Wählen Sie **Prüflisten** auf der Seite **Arbeitsauftragseinzelvorgangsdetails** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-168">Select **Checklists** on the **Work order job details** page.</span></span>
+1. <span data-ttu-id="4e6cf-172">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-172">On your mobile device, open the **Asset management** workspace.</span></span>
 
-5. <span data-ttu-id="5461d-169">Es wird eine Liste der Prüflistenpositionen angezeigt, die dem Arbeitsauftragseinzelvorgang zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="5461d-169">You'll see a list of checklist lines related to the work order job.</span></span> <span data-ttu-id="5461d-170">Wählen Sie eine Prüflistenposition aus, um **Anweisungen** anzuzeigen und **Notizen** hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="5461d-170">Select a checklist line to view **Instructions** and add **Notes**.</span></span>
+1. <span data-ttu-id="4e6cf-173">Wählen Sie **Alle Wartungsarbeitsaufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-173">Select **All maintenance work orders**.</span></span>
 
-6. <span data-ttu-id="5461d-171">Klicken Sie auf die Zurück-Schaltfläche (**<**), um zur vorherigen Seite zurückzugelangen.</span><span class="sxs-lookup"><span data-stu-id="5461d-171">Select the back button (**<**) to return to the previous page.</span></span>
+1. <span data-ttu-id="4e6cf-174">Wählen Sie den Arbeitsauftrag > Arbeitsauftragseinzelvorgang aus, für den Sie Anlagenzähler anzeigen möchten.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-174">Select the work order > work order job you want to view asset counters for.</span></span>
+    - <span data-ttu-id="4e6cf-175">Alternativ können Sie auch **Mein Arbeitsauftragseinzelvorgangskalender** oder **Eigene Arbeitsauftragseinzelvorgangsliste** auf der Startseite auswählen, um zur Seite **Arbeitsauftragseinzelvorgangsdetails** zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-175">Alternatively, you can also select **My work order jobs calendar** or **My work order jobs list** on the home page to navigate to the **work order job details** page.</span></span>
 
-![Abbildung 5](media/am-mobile-05.png)
+1. <span data-ttu-id="4e6cf-176">Wählen Sie **Anlagenzähler** auf der Seite **Arbeitsauftragseinzelvorgangsdetails** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-176">Select **Asset counters** on the **Work order job details** page.</span></span>
 
+1. <span data-ttu-id="4e6cf-177">Es wird eine Liste der Anlagenzähler angezeigt, die dem Arbeitsauftragseinzelvorgang zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-177">You see a list of asset counters related to the work order job.</span></span> <span data-ttu-id="4e6cf-178">Wählen Sie das Bleistiftsymbol in einer Anlagenzählerposition aus, um den Gegenwert zu aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-178">Select the pencil icon on an asset counter line to update the counter value.</span></span>
 
-## <a name="view-and-update-asset-counters-on-a-work-order-job"></a><span data-ttu-id="5461d-173">nlagenzähler zu einem Arbeitsauftragseinzelvorgang anzeigen und aktualisieren</span><span class="sxs-lookup"><span data-stu-id="5461d-173">View and update asset counters on a work order job</span></span>
+1. <span data-ttu-id="4e6cf-179">Geben Sie einen neuen Gegenwert ein, und wählen Sie **Fertig** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-179">Enter a new counter value, and select **Done**.</span></span>
 
-1. <span data-ttu-id="5461d-174">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="5461d-174">On your mobile device, open the **Asset management** workspace.</span></span>
+    <span data-ttu-id="4e6cf-180">![Anlagenzähler anzeigen und aktualisieren](media/am-mobile-06.png "Anlagenzähler anzeigen und aktualisieren")</span><span class="sxs-lookup"><span data-stu-id="4e6cf-180">![View and update asset counters](media/am-mobile-06.png "View and update asset counters")</span></span>
 
-2. <span data-ttu-id="5461d-175">Wählen Sie **Alle Wartungsarbeitsaufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-175">Select **All maintenance work orders**.</span></span>
+## <a name="register-consumption-on-a-work-order-job"></a><span data-ttu-id="4e6cf-181">Verbrauch in einem Arbeitsauftragseinzelvorgang erfassen</span><span class="sxs-lookup"><span data-stu-id="4e6cf-181">Register consumption on a work order job</span></span>
 
-3. <span data-ttu-id="5461d-176">Wählen Sie den Arbeitsauftrag > Arbeitsauftragseinzelvorgang aus, für den Sie Anlagenzähler anzeigen möchten.</span><span class="sxs-lookup"><span data-stu-id="5461d-176">Select the work order > work order job you want to view asset counters for.</span></span>
-    - <span data-ttu-id="5461d-177">Alternativ können Sie auch **Mein Arbeitsauftragseinzelvorgangskalender** oder **Eigene Arbeitsauftragseinzelvorgangsliste** auf der Startseite auswählen, um zur Seite **Arbeitsauftragseinzelvorgangsdetails** zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="5461d-177">Alternatively, you can also select **My work order jobs calendar** or **My work order jobs list** on the home page to navigate to the **work order job details** page.</span></span>
+1. <span data-ttu-id="4e6cf-182">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-182">On your mobile device, open the **Asset management** workspace.</span></span>
 
-4. <span data-ttu-id="5461d-178">Wählen Sie **Anlagenzähler** auf der Seite **Arbeitsauftragseinzelvorgangsdetails** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-178">Select **Asset counters** on the **Work order job details** page.</span></span>
+1. <span data-ttu-id="4e6cf-183">Wählen Sie **Alle Wartungsarbeitsaufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-183">Select **All maintenance work orders**.</span></span>
 
-5. <span data-ttu-id="5461d-179">Es wird eine Liste der Anlagenzähler angezeigt, die dem Arbeitsauftragseinzelvorgang zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="5461d-179">You see a list of asset counters related to the work order job.</span></span> <span data-ttu-id="5461d-180">Wählen Sie das Bleistiftsymbol in einer Anlagenzählerposition aus, um den Gegenwert zu aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="5461d-180">Select the pencil icon on an asset counter line to update the counter value.</span></span>
+1. <span data-ttu-id="4e6cf-184">Wählen Sie den Arbeitsauftrag > Arbeitsauftragseinzelvorgang aus, für den Sie Verbrauchserfassungen hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-184">Select the work order > work order job you want to add consumption registrations for.</span></span>
+    - <span data-ttu-id="4e6cf-185">Alternativ können Sie auch **Mein Arbeitsauftragseinzelvorgangskalender** oder **Eigene Arbeitsauftragseinzelvorgangsliste** auf der Startseite auswählen, um zur Seite **Arbeitsauftragseinzelvorgangsdetails** zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-185">Alternatively, you can also select **My work order jobs calendar** or **My work order jobs list** on the home page to navigate to the **work order job details** page.</span></span>
 
-6. <span data-ttu-id="5461d-181">Geben Sie einen neuen Gegenwert ein, und wählen Sie **Fertig** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-181">Enter a new counter value, and select **Done**.</span></span>
+1. <span data-ttu-id="4e6cf-186">Wählen Sie **Erfassungen** auf der Seite **Arbeitsauftragseinzelvorgangsdetails** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-186">Select **Journals** on the **Work order job details** page.</span></span>
 
-![Abbildung 6](media/am-mobile-06.png)
+1. <span data-ttu-id="4e6cf-187">Wählen Sie **Stunden hinzufügen** aus, um Arbeitsstundenerfassungen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-187">Select **Add hours** to create work hour registrations.</span></span>
+    1. <span data-ttu-id="4e6cf-188">Wählen Sie aus der Suche die **Kategorie** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-188">Select the **Category** from the lookup.</span></span>
+    1. <span data-ttu-id="4e6cf-189">Geben Sie im Feld **Stunden** die Anzahl der Arbeitsstunden ein, die für den Arbeitsauftragseinzelvorgang aufgewendet wurden.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-189">In the **Hours** field, enter the number of work hours spent on the work order job.</span></span>
+    1. <span data-ttu-id="4e6cf-190">Wählen Sie die geeignete **Positionseigenschaft** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-190">Select the appropriate **Line property**.</span></span>
+    1. <span data-ttu-id="4e6cf-191">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-191">Select **Done**.</span></span>
 
+1. <span data-ttu-id="4e6cf-192">Wählen Sie **Artikel hinzufügen** aus, um Artikelerfassungen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-192">Select **Add items** to create item registrations.</span></span>
+    1. <span data-ttu-id="4e6cf-193">Wählen Sie die **Artikelnummer** aus der Suche aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-193">Select the **Item number** from the lookup.</span></span>
+    1. <span data-ttu-id="4e6cf-194">Wählen Sie den **Standort** aus der Suche aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-194">Select the **Site** from the lookup.</span></span>
+    1. <span data-ttu-id="4e6cf-195">Geben Sie die **Menge** der verbrauchten Artikel an.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-195">Enter the **Quantity** of items consumed.</span></span>
+    1. <span data-ttu-id="4e6cf-196">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-196">Select **Done**.</span></span>
 
-## <a name="register-consumption-on-a-work-order-job"></a><span data-ttu-id="5461d-183">Verbrauch in einem Arbeitsauftragseinzelvorgang erfassen</span><span class="sxs-lookup"><span data-stu-id="5461d-183">Register consumption on a work order job</span></span>
+1. <span data-ttu-id="4e6cf-197">Wählen Sie **Ausgaben hinzufügen** aus, um Ausgabenerfassungen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-197">Select **Add expense** to create expense registrations.</span></span>
+    1. <span data-ttu-id="4e6cf-198">Wählen Sie aus der Suche die **Kategorie** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-198">Select the **Category** from the lookup.</span></span>
+    1. <span data-ttu-id="4e6cf-199">Geben Sie die Menge für die Ausgabenerfassung ein.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-199">Enter the quantity for the expense registration.</span></span>
+    1. <span data-ttu-id="4e6cf-200">Wählen Sie **Verkaufswährung** aus der Suche aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-200">Select the **Sales currency** from the lookup.</span></span>
+    1. <span data-ttu-id="4e6cf-201">Geben Sie den **Einstandspreis** für die Ausgabenerfassung ein.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-201">Enter the **Cost price** for the expense registration.</span></span>
+    1. <span data-ttu-id="4e6cf-202">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-202">Select **Done**.</span></span>
 
-1. <span data-ttu-id="5461d-184">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="5461d-184">On your mobile device, open the **Asset management** workspace.</span></span>
+    <span data-ttu-id="4e6cf-203">![Arbeitsauftragserfassung aktualisieren](media/am-mobile-07.png "Arbeitsauftragserfassung aktualisieren")</span><span class="sxs-lookup"><span data-stu-id="4e6cf-203">![Update a work order journal](media/am-mobile-07.png "Update a work order journal")</span></span>
 
-2. <span data-ttu-id="5461d-185">Wählen Sie **Alle Wartungsarbeitsaufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-185">Select **All maintenance work orders**.</span></span>
+## <a name="update-lifecycle-state-on-a-work-order"></a><span data-ttu-id="4e6cf-204">Lebenszyklusstatus eines Arbeitsauftrags aktualisieren</span><span class="sxs-lookup"><span data-stu-id="4e6cf-204">Update lifecycle state on a work order</span></span>
 
-3. <span data-ttu-id="5461d-186">Wählen Sie den Arbeitsauftrag > Arbeitsauftragseinzelvorgang aus, für den Sie Verbrauchserfassungen hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="5461d-186">Select the work order > work order job you want to add consumtion registrations for.</span></span>
-    - <span data-ttu-id="5461d-187">Alternativ können Sie auch **Mein Arbeitsauftragseinzelvorgangskalender** oder **Eigene Arbeitsauftragseinzelvorgangsliste** auf der Startseite auswählen, um zur Seite **Arbeitsauftragseinzelvorgangsdetails** zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="5461d-187">Alternatively, you can also select **My work order jobs calendar** or **My work order jobs list** on the home page to navigate to the **work order job details** page.</span></span>
+1. <span data-ttu-id="4e6cf-205">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-205">On your mobile device, open the **Asset management** workspace.</span></span>
 
-4. <span data-ttu-id="5461d-188">Wählen Sie **Erfassungen** auf der Seite **Arbeitsauftragseinzelvorgangsdetails** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-188">Select **Journals** on the **Work order job details** page.</span></span>
+1. <span data-ttu-id="4e6cf-206">Wählen Sie **Alle Wartungsarbeitsaufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-206">Select **All maintenance work orders**.</span></span>
 
-5. <span data-ttu-id="5461d-189">Wählen Sie **Stunden hinzufügen** aus, um Arbeitsstundenerfassungen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="5461d-189">Select **Add hours** to create work hour registrations.</span></span>
-    1. <span data-ttu-id="5461d-190">Wählen Sie aus der Suche die **Kategorie** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-190">Select the **Category** from the lookup.</span></span>
-    2. <span data-ttu-id="5461d-191">Geben Sie im Feld **Stunden** die Anzahl der Arbeitsstunden ein, die für den Arbeitsauftragseinzelvorgang aufgewendet wurden.</span><span class="sxs-lookup"><span data-stu-id="5461d-191">In the **Hours** field, enter the number of work hours spent on the work order job.</span></span>
-    3. <span data-ttu-id="5461d-192">Wählen Sie die geeignete **Positionseigenschaft** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-192">Select the appropriate **Line property**.</span></span>
-    4. <span data-ttu-id="5461d-193">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="5461d-193">Select **Done**.</span></span>
+1. <span data-ttu-id="4e6cf-207">Wählen Sie den Arbeitsauftrag aus, für den Sie den Lebenszyklusstatus aktualisieren möchten.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-207">Select the work order you want to update lifecycle state for.</span></span>
 
-6. <span data-ttu-id="5461d-194">Wählen Sie **Artikel hinzufügen** aus, um Artikelerfassungen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="5461d-194">Select **Add items** to create item registrations.</span></span>
-    1. <span data-ttu-id="5461d-195">Wählen Sie die **Artikelnummer** aus der Suche aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-195">Select the **Item number** from the lookup.</span></span>
-    2. <span data-ttu-id="5461d-196">Wählen Sie den **Standort** aus der Suche aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-196">Select the **Site** from the lookup.</span></span>
-    3. <span data-ttu-id="5461d-197">Geben Sie die **Menge** der verbrauchten Artikel an.</span><span class="sxs-lookup"><span data-stu-id="5461d-197">Enter the **Quantity** of items consumed.</span></span>
-    4. <span data-ttu-id="5461d-198">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="5461d-198">Select **Done**.</span></span>
+1. <span data-ttu-id="4e6cf-208">Wählen Sie die Schaltfläche **Status aktualisieren** am unteren Bildschirmrand aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-208">Select the **Update state** button at the bottom of the screen.</span></span>
 
-7. <span data-ttu-id="5461d-199">Wählen Sie **Ausgaben hinzufügen** aus, um Ausgabenerfassungen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="5461d-199">Select **Add expense** to create expense registrations.</span></span>
-    1. <span data-ttu-id="5461d-200">Wählen Sie aus der Suche die **Kategorie** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-200">Select the **Category** from the lookup.</span></span>
-    2. <span data-ttu-id="5461d-201">Geben Sie die Menge für die Ausgabenerfassung ein.</span><span class="sxs-lookup"><span data-stu-id="5461d-201">Enter the quantity for the expense registration.</span></span>
-    3. <span data-ttu-id="5461d-202">Wählen Sie **Verkaufswährung** aus der Suche aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-202">Select the **Sales currency** from the lookup.</span></span>
-    4. <span data-ttu-id="5461d-203">Geben Sie den **Einstandspreis** für die Ausgabenerfassung ein.</span><span class="sxs-lookup"><span data-stu-id="5461d-203">Enter the **Cost price** for the expense registration.</span></span>
-    5. <span data-ttu-id="5461d-204">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="5461d-204">Select **Done**.</span></span>
+1. <span data-ttu-id="4e6cf-209">Wählen Sie einen neuen Lebenszyklusstatus aus der Liste aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-209">Select a new lifecycle state from the list.</span></span>
 
-![Abbildung 7](media/am-mobile-07.png)
+1. <span data-ttu-id="4e6cf-210">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-210">Select **Done**.</span></span>
 
+    <span data-ttu-id="4e6cf-211">![Lebenszyklusstatus eines Arbeitsauftrags aktualisieren](media/am-mobile-08.png "Lebenszyklusstatus eines Arbeitsauftrags aktualisieren")</span><span class="sxs-lookup"><span data-stu-id="4e6cf-211">![Update lifecycle state on a work order](media/am-mobile-08.png "Update lifecycle state on a work order")</span></span>
 
-## <a name="update-lifecycle-state-on-a-work-order"></a><span data-ttu-id="5461d-206">Lebenszyklusstatus eines Arbeitsauftrags aktualisieren</span><span class="sxs-lookup"><span data-stu-id="5461d-206">Update lifecycle state on a work order</span></span>
+## <a name="create-a-maintenance-request"></a><span data-ttu-id="4e6cf-212">Eine Wartungsanfrage erstellen</span><span class="sxs-lookup"><span data-stu-id="4e6cf-212">Create a maintenance request</span></span>
 
-1. <span data-ttu-id="5461d-207">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="5461d-207">On your mobile device, open the **Asset management** workspace.</span></span>
+1. <span data-ttu-id="4e6cf-213">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-213">On your mobile device, open the **Asset management** workspace.</span></span>
 
-2. <span data-ttu-id="5461d-208">Wählen Sie **Alle Wartungsarbeitsaufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-208">Select **All maintenance work orders**.</span></span>
+1. <span data-ttu-id="4e6cf-214">Wählen Sie **Alle Wartungsanfragen** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-214">Select **All maintenance requests**.</span></span>
 
-3. <span data-ttu-id="5461d-209">Wählen Sie den Arbeitsauftrag aus, für den Sie den Lebenszyklusstatus aktualisieren möchten.</span><span class="sxs-lookup"><span data-stu-id="5461d-209">Select the work order you want to update lifecycle state for.</span></span>
+1. <span data-ttu-id="4e6cf-215">Wählen Sie am unteren Bildschirmrand **Aktivitäten** und dann **Wartungsanfrage erstellen** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-215">Select **Actions** at the bottom of the screen, and select **Create maintenance request**.</span></span>
 
-4. <span data-ttu-id="5461d-210">Wählen Sie die Schaltfläche **Status aktualisieren** am unteren Bildschirmrand aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-210">Select the **Update state** button at the bottom of the screen.</span></span>
+1. <span data-ttu-id="4e6cf-216">Wenn für Wartungsanfragen in **Anlagenverwaltung** Nummernkreis aktiviert ist, wird das Feld **Wartungsanfrage** ausgeblendet, da es automatisch aufgefüllt wird. Wenn das Feld **Wartungsanfrage** angezeigt wird, geben Sie eine Wartungsanfragenkennung ein.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-216">If number sequence is enabled for maintenance requests in **Asset management**, the **Maintenance request** field is hidden because it is automatically filled out. If the **Maintenance request** field is visible, enter a maintenance request ID.</span></span>
 
-5. <span data-ttu-id="5461d-211">Wählen Sie einen neuen Lebenszyklusstatus aus der Liste aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-211">Select a new lifecycle state from the list.</span></span>
+1. <span data-ttu-id="4e6cf-217">Wählen Sie einen **Wartungsanfragetyp** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-217">Select a **Maintenance request type**.</span></span>
 
-6. <span data-ttu-id="5461d-212">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="5461d-212">Select **Done**.</span></span>
+1. <span data-ttu-id="4e6cf-218">Geben Sie eine **Beschreibung** für die Wartungsanfrage ein.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-218">Enter a **Description** for the maintenance request.</span></span>
 
-![Abbildung 8](media/am-mobile-08.png)
+1. <span data-ttu-id="4e6cf-219">Wählen Sie die **Anlage** aus, für die Sie eine Anfrage erstellen möchten.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-219">Select the **Asset** you want to create the request for.</span></span>
 
+1. <span data-ttu-id="4e6cf-220">Wählen Sie die **Leistungsebene** für die Wartungsanfrage aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-220">Select the **Service level** for the maintenance request.</span></span>
 
-## <a name="create-a-maintenance-request"></a><span data-ttu-id="5461d-214">Eine Wartungsanfrage erstellen</span><span class="sxs-lookup"><span data-stu-id="5461d-214">Create a maintenance request</span></span>
+1. <span data-ttu-id="4e6cf-221">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-221">Select **Done**.</span></span>
 
-1. <span data-ttu-id="5461d-215">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="5461d-215">On your mobile device, open the **Asset management** workspace.</span></span>
+    <span data-ttu-id="4e6cf-222">![Eine Wartungsanfrage erstellen](media/am-mobile-09.png "Eine Wartungsanfrage erstellen")</span><span class="sxs-lookup"><span data-stu-id="4e6cf-222">![Create a maintenance request](media/am-mobile-09.png "Create a maintenance request")</span></span>
 
-2. <span data-ttu-id="5461d-216">Wählen Sie **Alle Wartungsanfragen** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-216">Select **All maintenance requests**.</span></span>
+## <a name="add-attachment-to-a-maintenance-request"></a><span data-ttu-id="4e6cf-223">Einer Wartungsanforderung einen Anhang hinzufügen</span><span class="sxs-lookup"><span data-stu-id="4e6cf-223">Add attachment to a maintenance request</span></span>
 
-3. <span data-ttu-id="5461d-217">Wählen Sie am unteren Bildschirmrand **Aktivitäten** und dann **Wartungsanfrage erstellen** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-217">Select **Actions** at the bottom of the screen, and select **Create maintenance request**.</span></span>
+1. <span data-ttu-id="4e6cf-224">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-224">On your mobile device, open the **Asset management** workspace.</span></span>
 
-4. <span data-ttu-id="5461d-218">Wenn für Wartungsanfragen in **Anlagenverwaltung** Nummernkreis aktiviert ist, wird das Feld **Wartungsanfrage** ausgeblendet, da es automatisch aufgefüllt wird. Wenn das Feld **Wartungsanfrage** angezeigt wird, geben Sie eine Wartungsanfragenkennung ein.</span><span class="sxs-lookup"><span data-stu-id="5461d-218">If number sequence is enabled for maintenance requests in **Asset management**, the **Maintenance request** field is hidden because it is automatically filled out. If the **Maintenance request** field is visible, enter a maintenance request ID.</span></span>
+1. <span data-ttu-id="4e6cf-225">Wählen Sie **Alle Wartungsanfragen** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-225">Select **All maintenance requests**.</span></span>
 
-5. <span data-ttu-id="5461d-219">Wählen Sie einen **Wartungsanfragetyp** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-219">Select a **Maintenance request type**.</span></span>
+1. <span data-ttu-id="4e6cf-226">Wählen Sie die Wartungsanfrage aus, der Sie einen Anhang hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-226">Select the maintenance request you want to add an attachment to.</span></span>
 
-6. <span data-ttu-id="5461d-220">Geben Sie eine **Beschreibung** für die Wartungsanfrage ein.</span><span class="sxs-lookup"><span data-stu-id="5461d-220">Enter a **Description** for the maintenance request.</span></span>
+1. <span data-ttu-id="4e6cf-227">Wählen Sie **Anhänge** am unteren Bildschirmrand aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-227">Select **Attachments** at the bottom of the screen.</span></span>
 
-7. <span data-ttu-id="5461d-221">Wählen Sie die **Anlage** aus, für die Sie eine Anfrage erstellen möchten.</span><span class="sxs-lookup"><span data-stu-id="5461d-221">Select the **Asset** you want to create the request for.</span></span>
+1. <span data-ttu-id="4e6cf-228">Wählen Sie **Anhänge hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-228">Select **Add attachments**.</span></span>
 
-8. <span data-ttu-id="5461d-222">Wählen Sie die **Leistungsebene** für die Wartungsanfrage aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-222">Select the **Service level** for the maintenance request.</span></span>
+1. <span data-ttu-id="4e6cf-229">Geben Sie **Name** und **Notizen** für dien Anhang ein.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-229">Enter **Name** and **Notes** for the attachment.</span></span>
 
-9. <span data-ttu-id="5461d-223">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="5461d-223">Select **Done**.</span></span>
+1. <span data-ttu-id="4e6cf-230">Wählen Sie **Bild auswählen** aus, um ein Foto aus der mobilen Galerie auszuwählen, oder **Foto aufnehmen**, um ein Foto zu machen.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-230">Select **Choose image** to select a photo from the mobile gallery or **Take photo** to take a photo.</span></span>
 
-![Abbildung 9](media/am-mobile-09.png)
+1. <span data-ttu-id="4e6cf-231">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="4e6cf-231">Select **Done**.</span></span>
 
-
-## <a name="add-attachment-to-a-maintenance-request"></a><span data-ttu-id="5461d-225">Einer Wartungsanforderung einen Anhang hinzufügen</span><span class="sxs-lookup"><span data-stu-id="5461d-225">Add attachment to a maintenance request</span></span>
-
-1. <span data-ttu-id="5461d-226">Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Anlagenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="5461d-226">On your mobile device, open the **Asset management** workspace.</span></span>
-
-2. <span data-ttu-id="5461d-227">Wählen Sie **Alle Wartungsanfragen** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-227">Select **All maintenance requests**.</span></span>
-
-3. <span data-ttu-id="5461d-228">Wählen Sie die Wartungsanfrage aus, der Sie einen Anhang hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="5461d-228">Select the maintenance request you want to add an attachment to.</span></span>
-
-4. <span data-ttu-id="5461d-229">Wählen Sie **Anhänge** am unteren Bildschirmrand aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-229">Select **Attachments** at the bottom of the screen.</span></span>
-
-5. <span data-ttu-id="5461d-230">Wählen Sie **Anhänge hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="5461d-230">Select **Add attachments**.</span></span>
-
-6. <span data-ttu-id="5461d-231">Geben Sie **Name** und **Notizen** für dien Anhang ein.</span><span class="sxs-lookup"><span data-stu-id="5461d-231">Enter **Name** and **Notes** for the attachment.</span></span>
-
-7. <span data-ttu-id="5461d-232">Wählen Sie **Bild auswählen** aus, um ein Foto aus der mobilen Galerie auszuwählen, oder **Foto aufnehmen**, um ein Foto zu machen.</span><span class="sxs-lookup"><span data-stu-id="5461d-232">Select **Choose image** to select a photo from the mobile gallery, or **Take photo** to take a photo.</span></span>
-
-8. <span data-ttu-id="5461d-233">Wählen Sie **Fertig**.</span><span class="sxs-lookup"><span data-stu-id="5461d-233">Select **Done**.</span></span>
-
-![Abbildung 10](media/am-mobile-10.png)
-
+    <span data-ttu-id="4e6cf-232">![Einer Wartungsanfrage einen Anhang hinzufügen](media/am-mobile-10.png "Einer Wartungsanfrage einen Anhang hinzufügen")</span><span class="sxs-lookup"><span data-stu-id="4e6cf-232">![Add an attachment to a maintenance request](media/am-mobile-10.png "Add an attachment to a maintenance request")</span></span>

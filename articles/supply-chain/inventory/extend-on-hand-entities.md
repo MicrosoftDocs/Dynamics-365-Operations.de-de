@@ -10,46 +10,45 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e3bf3a7d48b0aa3e48845882be0ee86da17ed040
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e805b9379c73f7b7eb2820662fad70e28181ebf
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4428774"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5043392"
 ---
-# <a name="extend-inventory-on-hand-data-entities"></a><span data-ttu-id="955de-103">Erweitern vorhandener Dateneinheiten</span><span class="sxs-lookup"><span data-stu-id="955de-103">Extend inventory on-hand data entities</span></span>
+# <a name="extend-inventory-on-hand-data-entities"></a><span data-ttu-id="8f5dd-103">Erweitern vorhandener Dateneinheiten</span><span class="sxs-lookup"><span data-stu-id="8f5dd-103">Extend inventory on-hand data entities</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="955de-104">Microsoft Dynamics 365 Supply Chain Management bietet die Funktionen von [Erweiterbarkeit](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md), mit denen Sie [Felder durch Erweiterung in Tabellen einfügen](../../fin-ops-core/dev-itpro/extensibility/add-field-extension) können.</span><span class="sxs-lookup"><span data-stu-id="955de-104">Microsoft Dynamics 365 Supply Chain Management provides [extensibility](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) features that let you [add fields to tables through extension](../../fin-ops-core/dev-itpro/extensibility/add-field-extension).</span></span> <span data-ttu-id="955de-105">In diesem Thema finden Sie ein Beispiel, das zeigt, wie Sie den Ansichten `INVENTORSITEONHANDENTITY` und `INVENTWAREHOUSEONHANDENTITY` erweiterte Felder hinzufügen, damit die Funktionen der Inventardateneinheiten mit den Erweiterungen arbeiten können.</span><span class="sxs-lookup"><span data-stu-id="955de-105">This topic provides an example that shows how to add extended fields to the `INVENTORSITEONHANDENTITY` and `INVENTWAREHOUSEONHANDENTITY` views, so that the capabilities of the inventory on-hand data entities can work with the extensions.</span></span> <span data-ttu-id="955de-106">Ausführliche Informationen zu Dateneinheiten finden Sie unter [Datenverwaltungsübersicht](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).</span><span class="sxs-lookup"><span data-stu-id="955de-106">For more information about data entities, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).</span></span>
+<span data-ttu-id="8f5dd-104">Microsoft Dynamics 365 Supply Chain Management bietet die Funktionen von [Erweiterbarkeit](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md), mit denen Sie [Felder durch Erweiterung in Tabellen einfügen](../../fin-ops-core/dev-itpro/extensibility/add-field-extension.md) können.</span><span class="sxs-lookup"><span data-stu-id="8f5dd-104">Microsoft Dynamics 365 Supply Chain Management provides [extensibility](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) features that let you [add fields to tables through extension](../../fin-ops-core/dev-itpro/extensibility/add-field-extension.md).</span></span> <span data-ttu-id="8f5dd-105">In diesem Thema finden Sie ein Beispiel, das zeigt, wie Sie den Ansichten `INVENTORSITEONHANDENTITY` und `INVENTWAREHOUSEONHANDENTITY` erweiterte Felder hinzufügen, damit die Funktionen der Inventardateneinheiten mit den Erweiterungen arbeiten können.</span><span class="sxs-lookup"><span data-stu-id="8f5dd-105">This topic provides an example that shows how to add extended fields to the `INVENTORSITEONHANDENTITY` and `INVENTWAREHOUSEONHANDENTITY` views, so that the capabilities of the inventory on-hand data entities can work with the extensions.</span></span> <span data-ttu-id="8f5dd-106">Ausführliche Informationen zu Dateneinheiten finden Sie unter [Datenverwaltungsübersicht](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).</span><span class="sxs-lookup"><span data-stu-id="8f5dd-106">For more information about data entities, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="955de-107">Hier ist eine Liste einiger verfügbarer Inventardateneinheiten:</span><span class="sxs-lookup"><span data-stu-id="955de-107">Here is a list of some of the inventory on-hand data entities:</span></span>
+> <span data-ttu-id="8f5dd-107">Hier ist eine Liste einiger verfügbarer Inventardateneinheiten:</span><span class="sxs-lookup"><span data-stu-id="8f5dd-107">Here is a list of some of the inventory on-hand data entities:</span></span>
 >
-> - <span data-ttu-id="955de-108">Verfügbarer Lagerbestand nach Standort</span><span class="sxs-lookup"><span data-stu-id="955de-108">Inventory on-hand by site</span></span>
-> - <span data-ttu-id="955de-109">Verfügbarer Lagerbestand nach Standort V2</span><span class="sxs-lookup"><span data-stu-id="955de-109">Inventory on-hand by site V2</span></span>
-> - <span data-ttu-id="955de-110">Lagerbestand nach Lagerort</span><span class="sxs-lookup"><span data-stu-id="955de-110">Inventory on-hand by warehouse</span></span>
-> - <span data-ttu-id="955de-111">Verfügbarer Lagerbestand nach Lagerort v2</span><span class="sxs-lookup"><span data-stu-id="955de-111">Inventory on-hand by warehouse v2</span></span>
+> - <span data-ttu-id="8f5dd-108">Verfügbarer Lagerbestand nach Standort</span><span class="sxs-lookup"><span data-stu-id="8f5dd-108">Inventory on-hand by site</span></span>
+> - <span data-ttu-id="8f5dd-109">Verfügbarer Lagerbestand nach Standort V2</span><span class="sxs-lookup"><span data-stu-id="8f5dd-109">Inventory on-hand by site V2</span></span>
+> - <span data-ttu-id="8f5dd-110">Lagerbestand nach Lagerort</span><span class="sxs-lookup"><span data-stu-id="8f5dd-110">Inventory on-hand by warehouse</span></span>
+> - <span data-ttu-id="8f5dd-111">Verfügbarer Lagerbestand nach Lagerort v2</span><span class="sxs-lookup"><span data-stu-id="8f5dd-111">Inventory on-hand by warehouse v2</span></span>
 
-<span data-ttu-id="955de-112">Nachdem Sie Tabellen Felder hinzugefügt haben, die von der Ansicht `inventSiteOnHandView` verwendet werden, muss der Engine synchronisiert werden, damit die Erweiterungen korrekt erkannt werden.</span><span class="sxs-lookup"><span data-stu-id="955de-112">After you add fields to tables that are used by the `inventSiteOnHandView` view, you must sync the engine so that the extensions are correctly recognized.</span></span>
+<span data-ttu-id="8f5dd-112">Nachdem Sie Tabellen Felder hinzugefügt haben, die von der Ansicht `inventSiteOnHandView` verwendet werden, muss der Engine synchronisiert werden, damit die Erweiterungen korrekt erkannt werden.</span><span class="sxs-lookup"><span data-stu-id="8f5dd-112">After you add fields to tables that are used by the `inventSiteOnHandView` view, you must sync the engine so that the extensions are correctly recognized.</span></span>
 
-1. <span data-ttu-id="955de-113">Erweitern Sie die Ansicht `InventSiteOnHandView`, indem Sie das Erweiterungsfeld hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="955de-113">Extend the `InventSiteOnHandView` view by adding the extension field.</span></span>
-1. <span data-ttu-id="955de-114">Erweitern Sie die Ansicht `InventSiteOnHandAggregatedView` mit den Erweiterungsfeldern.</span><span class="sxs-lookup"><span data-stu-id="955de-114">Extend the `InventSiteOnHandAggregatedView` view with the extension fields.</span></span>
-1. <span data-ttu-id="955de-115">Erweitern Sie die `InventSiteOnHandAggregatedViewBuilder`viewBuilder-Klasse durch Ändern der `getExtensionFields()`-Methode.</span><span class="sxs-lookup"><span data-stu-id="955de-115">Extend the `InventSiteOnHandAggregatedViewBuilder` viewBuilder class by modifying the `getExtensionFields()` method.</span></span> <span data-ttu-id="955de-116">Auf diese Weise ordnen Sie alte Ansichtsfelder neuen Ansichtsfeldern zu, wenn die viewBuilder-Synchronisierung ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="955de-116">In this way, you map old view fields to new view fields when viewBuilder synchronization is run.</span></span>
+1. <span data-ttu-id="8f5dd-113">Erweitern Sie die Ansicht `InventSiteOnHandView`, indem Sie das Erweiterungsfeld hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="8f5dd-113">Extend the `InventSiteOnHandView` view by adding the extension field.</span></span>
+1. <span data-ttu-id="8f5dd-114">Erweitern Sie die Ansicht `InventSiteOnHandAggregatedView` mit den Erweiterungsfeldern.</span><span class="sxs-lookup"><span data-stu-id="8f5dd-114">Extend the `InventSiteOnHandAggregatedView` view with the extension fields.</span></span>
+1. <span data-ttu-id="8f5dd-115">Erweitern Sie die `InventSiteOnHandAggregatedViewBuilder`viewBuilder-Klasse durch Ändern der `getExtensionFields()`-Methode.</span><span class="sxs-lookup"><span data-stu-id="8f5dd-115">Extend the `InventSiteOnHandAggregatedViewBuilder` viewBuilder class by modifying the `getExtensionFields()` method.</span></span> <span data-ttu-id="8f5dd-116">Auf diese Weise ordnen Sie alte Ansichtsfelder neuen Ansichtsfeldern zu, wenn die viewBuilder-Synchronisierung ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="8f5dd-116">In this way, you map old view fields to new view fields when viewBuilder synchronization is run.</span></span>
 
-<span data-ttu-id="955de-117">Beispielsweise haben Sie die folgenden vier Felder durch Erweiterung in die Tabelle `InventTable` eingefügt:</span><span class="sxs-lookup"><span data-stu-id="955de-117">For example, you've added the following four fields to the `InventTable` table through extension:</span></span>
+<span data-ttu-id="8f5dd-117">Beispielsweise haben Sie die folgenden vier Felder durch Erweiterung in die Tabelle `InventTable` eingefügt:</span><span class="sxs-lookup"><span data-stu-id="8f5dd-117">For example, you've added the following four fields to the `InventTable` table through extension:</span></span>
 
-- <span data-ttu-id="955de-118">Benutzerdefiniertes Feld 1</span><span class="sxs-lookup"><span data-stu-id="955de-118">Custom field 1</span></span>
-- <span data-ttu-id="955de-119">Benutzerdefiniertes Feld 2</span><span class="sxs-lookup"><span data-stu-id="955de-119">Custom field 2</span></span>
-- <span data-ttu-id="955de-120">Benutzerdefiniertes Feld 3</span><span class="sxs-lookup"><span data-stu-id="955de-120">Custom field 3</span></span>
-- <span data-ttu-id="955de-121">Benutzerdefiniertes Feld 4</span><span class="sxs-lookup"><span data-stu-id="955de-121">Custom field 4</span></span>
+- <span data-ttu-id="8f5dd-118">Benutzerdefiniertes Feld 1</span><span class="sxs-lookup"><span data-stu-id="8f5dd-118">Custom field 1</span></span>
+- <span data-ttu-id="8f5dd-119">Benutzerdefiniertes Feld 2</span><span class="sxs-lookup"><span data-stu-id="8f5dd-119">Custom field 2</span></span>
+- <span data-ttu-id="8f5dd-120">Benutzerdefiniertes Feld 3</span><span class="sxs-lookup"><span data-stu-id="8f5dd-120">Custom field 3</span></span>
+- <span data-ttu-id="8f5dd-121">Benutzerdefiniertes Feld 4</span><span class="sxs-lookup"><span data-stu-id="8f5dd-121">Custom field 4</span></span>
 
-<span data-ttu-id="955de-122">In diesem Fall müssen Sie die Methode `getExtensionFields()` auf folgende Weise ändern.</span><span class="sxs-lookup"><span data-stu-id="955de-122">In the case, you must modify the `getExtensionFields()` method in the following way.</span></span>
+<span data-ttu-id="8f5dd-122">In diesem Fall müssen Sie die Methode `getExtensionFields()` auf folgende Weise ändern.</span><span class="sxs-lookup"><span data-stu-id="8f5dd-122">In the case, you must modify the `getExtensionFields()` method in the following way.</span></span>
 
 ```xpp
 [ExtensionOf(classStr(InventSiteOnHandAggregatedViewBuilder))]
@@ -68,4 +67,4 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 }
 ```
 
-<span data-ttu-id="955de-123">Nachdem Sie diese Schritte ausgeführt haben, können Sie den Lagerbestand nach Standort und den Lagerbestand nach Lagerdateneinheiten erweitern, indem Sie die neuen Felder hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="955de-123">After you complete these steps, you can extend the inventory on-hand by site and inventory on-hand by warehouse data entities by adding the new fields.</span></span> <span data-ttu-id="955de-124">Auf diese Weise stellen Sie sicher, dass die erweiterten Felder während der Datenmigration, die diese Datenentitäten verwendet, erkannt und eingeschlossen werden.</span><span class="sxs-lookup"><span data-stu-id="955de-124">In this way, you ensure that the extended fields are recognized and included during data migration that uses those data entities.</span></span>
+<span data-ttu-id="8f5dd-123">Nachdem Sie diese Schritte ausgeführt haben, können Sie den Lagerbestand nach Standort und den Lagerbestand nach Lagerdateneinheiten erweitern, indem Sie die neuen Felder hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="8f5dd-123">After you complete these steps, you can extend the inventory on-hand by site and inventory on-hand by warehouse data entities by adding the new fields.</span></span> <span data-ttu-id="8f5dd-124">Auf diese Weise stellen Sie sicher, dass die erweiterten Felder während der Datenmigration, die diese Datenentitäten verwendet, erkannt und eingeschlossen werden.</span><span class="sxs-lookup"><span data-stu-id="8f5dd-124">In this way, you ensure that the extended fields are recognized and included during data migration that uses those data entities.</span></span>

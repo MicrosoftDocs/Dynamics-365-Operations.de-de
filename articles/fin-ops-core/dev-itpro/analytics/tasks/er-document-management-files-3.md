@@ -1,6 +1,6 @@
 ---
 title: 'ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 3: Format erstellen)'
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien in ER-Berichten nutzen kann.
+description: In diesem Thema wird beschrieben, wie Sie ein elektronisches Berichtsformat für die Verwendung von Dokumentenverwaltungsdateien in der EB-Ausgabe konfigurieren. (Teil 3)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,107 +15,107 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfcc03fa7470d4f2fa45ef012e30acef0712bf99
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 432cf4c41a7a223ab07b02edf6da7eac9965cff0
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681852"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092615"
 ---
-# <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a><span data-ttu-id="eb60e-103">ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 3: Format erstellen)</span><span class="sxs-lookup"><span data-stu-id="eb60e-103">ER Use Document Management files in format outputs (Part 3 - Create format)</span></span>
+# <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a><span data-ttu-id="5131c-104">ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 3: Format erstellen)</span><span class="sxs-lookup"><span data-stu-id="5131c-104">ER Use Document Management files in format outputs (Part 3 - Create format)</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="eb60e-104">In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien (Anhänge) in ER-Berichten nutzen kann.</span><span class="sxs-lookup"><span data-stu-id="eb60e-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="eb60e-105">Diese Schritte können in jedem Unternehmen ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="eb60e-105">These steps can be performed in any company.</span></span>
+<span data-ttu-id="5131c-105">In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien (Anhänge) in ER-Berichten nutzen kann.</span><span class="sxs-lookup"><span data-stu-id="5131c-105">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="5131c-106">Diese Schritte können in jedem Unternehmen ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="5131c-106">These steps can be performed in any company.</span></span>
 
-<span data-ttu-id="eb60e-106">Um diese Schritte ausgeführt, müssen Sie erst die Schritte im Aufgabenleitfaden „.ER - Verwendung der Dokumentverwaltungsdateien in Formatausgaben (Teil 2: Erweitern des Datenmodells)“ ausführen.</span><span class="sxs-lookup"><span data-stu-id="eb60e-106">To complete these steps, you must first complete the steps in the "ER Use Document Management files in format outputs (Part 2: Extend data model" procedure.</span></span>
+<span data-ttu-id="5131c-107">Um diese Schritte ausgeführt, müssen Sie erst die Schritte im Aufgabenleitfaden „.ER - Verwendung der Dokumentverwaltungsdateien in Formatausgaben (Teil 2: Erweitern des Datenmodells)“ ausführen.</span><span class="sxs-lookup"><span data-stu-id="5131c-107">To complete these steps, you must first complete the steps in the "ER Use Document Management files in format outputs (Part 2: Extend data model" procedure.</span></span>
 
-<span data-ttu-id="eb60e-107">Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="eb60e-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="5131c-108">Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="5131c-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-format-to-process-invoices"></a><span data-ttu-id="eb60e-108">Erstellen eines Formats zur Rechnungsverarbeitung</span><span class="sxs-lookup"><span data-stu-id="eb60e-108">Create a format to process invoices</span></span>
-1. <span data-ttu-id="eb60e-109">Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.</span><span class="sxs-lookup"><span data-stu-id="eb60e-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="eb60e-110">Klicken Sie auf "Berichterstellungskonfigurationen".</span><span class="sxs-lookup"><span data-stu-id="eb60e-110">Click Reporting configurations.</span></span>
-3. <span data-ttu-id="eb60e-111">Erweitern Sie in der Strukturdarstellung "Debitorenrechnungsmodell ".</span><span class="sxs-lookup"><span data-stu-id="eb60e-111">In the tree, expand 'Customer invoice model'.</span></span>
-4. <span data-ttu-id="eb60e-112">Wählen Sie in der Strukturdarstellung "Debitorenrechnungsmodell\Debitorenrechnungsmodell (Benutzerdefiniert)" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-112">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
-    * <span data-ttu-id="eb60e-113">Sie erstellen ein Format, um elektronische Nachrichten mit Informationen zu allen Dateien zu generieren, die einem Auftrag zugeordnet wurden, der einer elektronischen Rechnung zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="eb60e-113">You will create a format to generate electronic messages with information about any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
-5. <span data-ttu-id="eb60e-114">Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="eb60e-114">Click Create configuration to open the drop dialog.</span></span>
-6. <span data-ttu-id="eb60e-115">Geben Sie im Feld "Neu" "Format basierend auf Debitorenrechnungsmodell (benutzerdefiniert)" ein.</span><span class="sxs-lookup"><span data-stu-id="eb60e-115">In the New field, enter 'Format based on data model Customer invoice model (custom)'.</span></span>
-7. <span data-ttu-id="eb60e-116">Geben Sie im Feld Name "Beispielnachricht für elektronische Rechnung" ein.</span><span class="sxs-lookup"><span data-stu-id="eb60e-116">In the Name field, type 'Electronic invoice sample message'.</span></span>
-    * <span data-ttu-id="eb60e-117">Beispielnachricht für elektronische Rechnung</span><span class="sxs-lookup"><span data-stu-id="eb60e-117">Electronic invoice sample message</span></span>  
-8. <span data-ttu-id="eb60e-118">Geben Sie im Feld "Datenmodelldefinition" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-118">In the Data model definition field, enter or select a value.</span></span>
-    * <span data-ttu-id="eb60e-119">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="eb60e-119">InvoiceCustomer</span></span>  
-9. <span data-ttu-id="eb60e-120">Klicken Sie auf Konfiguration erstellen.</span><span class="sxs-lookup"><span data-stu-id="eb60e-120">Click Create configuration.</span></span>
+## <a name="create-a-format-to-process-invoices"></a><span data-ttu-id="5131c-109">Erstellen eines Formats zur Rechnungsverarbeitung</span><span class="sxs-lookup"><span data-stu-id="5131c-109">Create a format to process invoices</span></span>
+1. <span data-ttu-id="5131c-110">Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.</span><span class="sxs-lookup"><span data-stu-id="5131c-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="5131c-111">Klicken Sie auf "Berichterstellungskonfigurationen".</span><span class="sxs-lookup"><span data-stu-id="5131c-111">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="5131c-112">Erweitern Sie in der Strukturdarstellung "Debitorenrechnungsmodell ".</span><span class="sxs-lookup"><span data-stu-id="5131c-112">In the tree, expand 'Customer invoice model'.</span></span>
+4. <span data-ttu-id="5131c-113">Wählen Sie in der Strukturdarstellung "Debitorenrechnungsmodell\Debitorenrechnungsmodell (Benutzerdefiniert)" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-113">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
+    * <span data-ttu-id="5131c-114">Sie erstellen ein Format, um elektronische Nachrichten mit Informationen zu allen Dateien zu generieren, die einem Auftrag zugeordnet wurden, der einer elektronischen Rechnung zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="5131c-114">You will create a format to generate electronic messages with information about any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
+5. <span data-ttu-id="5131c-115">Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="5131c-115">Click Create configuration to open the drop dialog.</span></span>
+6. <span data-ttu-id="5131c-116">Geben Sie im Feld "Neu" "Format basierend auf Debitorenrechnungsmodell (benutzerdefiniert)" ein.</span><span class="sxs-lookup"><span data-stu-id="5131c-116">In the New field, enter 'Format based on data model Customer invoice model (custom)'.</span></span>
+7. <span data-ttu-id="5131c-117">Geben Sie im Feld Name "Beispielnachricht für elektronische Rechnung" ein.</span><span class="sxs-lookup"><span data-stu-id="5131c-117">In the Name field, type 'Electronic invoice sample message'.</span></span>
+    * <span data-ttu-id="5131c-118">Beispielnachricht für elektronische Rechnung</span><span class="sxs-lookup"><span data-stu-id="5131c-118">Electronic invoice sample message</span></span>  
+8. <span data-ttu-id="5131c-119">Geben Sie im Feld "Datenmodelldefinition" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-119">In the Data model definition field, enter or select a value.</span></span>
+    * <span data-ttu-id="5131c-120">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="5131c-120">InvoiceCustomer</span></span>  
+9. <span data-ttu-id="5131c-121">Klicken Sie auf Konfiguration erstellen.</span><span class="sxs-lookup"><span data-stu-id="5131c-121">Click Create configuration.</span></span>
 
-## <a name="design-a-format-to-populate-attachments-into-generating-a-message-in-mime-format"></a><span data-ttu-id="eb60e-121">Entwerfen Sie ein Format, um Anlagen in einem MIME-Format zu generieren.</span><span class="sxs-lookup"><span data-stu-id="eb60e-121">Design a format to populate attachments into generating a message in MIME format</span></span>
-1. <span data-ttu-id="eb60e-122">Klicken Sie auf Designer.</span><span class="sxs-lookup"><span data-stu-id="eb60e-122">Click Designer.</span></span>
-2. <span data-ttu-id="eb60e-123">Klicken Sie auf "Stamm hinzufügen", um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="eb60e-123">Click Add root to open the drop dialog.</span></span>
-3. <span data-ttu-id="eb60e-124">Wählen Sie in der Struktur den Knoten 'XML\Element'.</span><span class="sxs-lookup"><span data-stu-id="eb60e-124">In the tree, select 'XML\Element'.</span></span>
-4. <span data-ttu-id="eb60e-125">Geben Sie im Feld "Name" "Rechnung" ein.</span><span class="sxs-lookup"><span data-stu-id="eb60e-125">In the Name field, type 'Invoice'.</span></span>
-    * <span data-ttu-id="eb60e-126">Rechnung</span><span class="sxs-lookup"><span data-stu-id="eb60e-126">Invoice</span></span>  
-5. <span data-ttu-id="eb60e-127">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="eb60e-127">Click OK.</span></span>
-6. <span data-ttu-id="eb60e-128">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="eb60e-128">Click Add to open the drop dialog.</span></span>
-7. <span data-ttu-id="eb60e-129">Wählen Sie in der Struktur 'XML\Attribute' aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-129">In the tree, select 'XML\Attribute'.</span></span>
-8. <span data-ttu-id="eb60e-130">Geben Sie im Feld "Name" "SalesOrder" ein.</span><span class="sxs-lookup"><span data-stu-id="eb60e-130">In the Name field, type 'SalesOrder'.</span></span>
-    * <span data-ttu-id="eb60e-131">SalesOrder</span><span class="sxs-lookup"><span data-stu-id="eb60e-131">SalesOrder</span></span>  
-9. <span data-ttu-id="eb60e-132">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="eb60e-132">Click OK.</span></span>
-10. <span data-ttu-id="eb60e-133">Klicken Sie auf "Attribut hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="eb60e-133">Click Add Attribute.</span></span>
-11. <span data-ttu-id="eb60e-134">Geben Sie im Feld "Name" "InvoiceNumber" ein.</span><span class="sxs-lookup"><span data-stu-id="eb60e-134">In the Name field, type 'InvoiceNumber'.</span></span>
-    * <span data-ttu-id="eb60e-135">InvoiceNumber</span><span class="sxs-lookup"><span data-stu-id="eb60e-135">InvoiceNumber</span></span>  
-12. <span data-ttu-id="eb60e-136">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="eb60e-136">Click OK.</span></span>
-13. <span data-ttu-id="eb60e-137">Klicken Sie auf "Attribut hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="eb60e-137">Click Add Attribute.</span></span>
-14. <span data-ttu-id="eb60e-138">Geben Sie im Feld "Name" "InvoiceAmount" ein.</span><span class="sxs-lookup"><span data-stu-id="eb60e-138">In the Name field, type 'InvoiceAmount'.</span></span>
-    * <span data-ttu-id="eb60e-139">InvoiceAmount</span><span class="sxs-lookup"><span data-stu-id="eb60e-139">InvoiceAmount</span></span>  
-15. <span data-ttu-id="eb60e-140">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="eb60e-140">Click OK.</span></span>
-16. <span data-ttu-id="eb60e-141">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="eb60e-141">Click Add to open the drop dialog.</span></span>
-17. <span data-ttu-id="eb60e-142">Wählen Sie in der Struktur den Knoten 'XML\Element'.</span><span class="sxs-lookup"><span data-stu-id="eb60e-142">In the tree, select 'XML\Element'.</span></span>
-18. <span data-ttu-id="eb60e-143">Geben Sie im Feld "Name" "EnclosedDocs" ein.</span><span class="sxs-lookup"><span data-stu-id="eb60e-143">In the Name field, type 'EnclosedDocs'.</span></span>
-    * <span data-ttu-id="eb60e-144">EnclosedDocs</span><span class="sxs-lookup"><span data-stu-id="eb60e-144">EnclosedDocs</span></span>  
-19. <span data-ttu-id="eb60e-145">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="eb60e-145">Click OK.</span></span>
-20. <span data-ttu-id="eb60e-146">Wählen Sie in der Strukturdarstellung "Rechnung\EnclosedDocs" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-146">In the tree, select 'Invoice\EnclosedDocs'.</span></span>
-21. <span data-ttu-id="eb60e-147">Klicken Sie auf "Element hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="eb60e-147">Click Add Element.</span></span>
-22. <span data-ttu-id="eb60e-148">Geben Sie im Feld "Name" 'Dokument' ein.</span><span class="sxs-lookup"><span data-stu-id="eb60e-148">In the Name field, type 'Document'.</span></span>
-    * <span data-ttu-id="eb60e-149">Dokument</span><span class="sxs-lookup"><span data-stu-id="eb60e-149">Document</span></span>  
-23. <span data-ttu-id="eb60e-150">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="eb60e-150">Click OK.</span></span>
-24. <span data-ttu-id="eb60e-151">Wählen Sie in der Strukturdarstellung "Rechnung\EnclosedDocs\Dokument" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-151">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
-25. <span data-ttu-id="eb60e-152">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="eb60e-152">Click Add to open the drop dialog.</span></span>
-26. <span data-ttu-id="eb60e-153">Wählen Sie in der Struktur 'XML\Attribute' aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-153">In the tree, select 'XML\Attribute'.</span></span>
-27. <span data-ttu-id="eb60e-154">Geben Sie im Feld "Name" "FileName" ein.</span><span class="sxs-lookup"><span data-stu-id="eb60e-154">In the Name field, type 'FileName'.</span></span>
-    * <span data-ttu-id="eb60e-155">Dateiname</span><span class="sxs-lookup"><span data-stu-id="eb60e-155">FileName</span></span>  
-28. <span data-ttu-id="eb60e-156">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="eb60e-156">Click OK.</span></span>
-29. <span data-ttu-id="eb60e-157">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="eb60e-157">Click Add to open the drop dialog.</span></span>
-30. <span data-ttu-id="eb60e-158">Wählen Sie in der Struktur den Knoten 'XML\Element'.</span><span class="sxs-lookup"><span data-stu-id="eb60e-158">In the tree, select 'XML\Element'.</span></span>
-31. <span data-ttu-id="eb60e-159">Geben Sie im Feld "Name" den Wert "FileContent" ein.</span><span class="sxs-lookup"><span data-stu-id="eb60e-159">In the Name field, type 'FileContent'.</span></span>
-    * <span data-ttu-id="eb60e-160">FileContent</span><span class="sxs-lookup"><span data-stu-id="eb60e-160">FileContent</span></span>  
-32. <span data-ttu-id="eb60e-161">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="eb60e-161">Click OK.</span></span>
-33. <span data-ttu-id="eb60e-162">Wählen Sie in der Strukturdarstellung "Rechnung\EnclosedDocs\Dokument\FileContent" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-162">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent'.</span></span>
-34. <span data-ttu-id="eb60e-163">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="eb60e-163">Click Add to open the drop dialog.</span></span>
-35. <span data-ttu-id="eb60e-164">Wählen Sie in der Struktur 'Text\Base64' aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-164">In the tree, select 'Text\Base64'.</span></span>
-36. <span data-ttu-id="eb60e-165">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="eb60e-165">Click OK.</span></span>
+## <a name="design-a-format-to-populate-attachments-into-generating-a-message-in-mime-format"></a><span data-ttu-id="5131c-122">Entwerfen Sie ein Format, um Anlagen in einem MIME-Format zu generieren.</span><span class="sxs-lookup"><span data-stu-id="5131c-122">Design a format to populate attachments into generating a message in MIME format</span></span>
+1. <span data-ttu-id="5131c-123">Klicken Sie auf Designer.</span><span class="sxs-lookup"><span data-stu-id="5131c-123">Click Designer.</span></span>
+2. <span data-ttu-id="5131c-124">Klicken Sie auf "Stamm hinzufügen", um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="5131c-124">Click Add root to open the drop dialog.</span></span>
+3. <span data-ttu-id="5131c-125">Wählen Sie in der Struktur den Knoten 'XML\Element'.</span><span class="sxs-lookup"><span data-stu-id="5131c-125">In the tree, select 'XML\Element'.</span></span>
+4. <span data-ttu-id="5131c-126">Geben Sie im Feld "Name" "Rechnung" ein.</span><span class="sxs-lookup"><span data-stu-id="5131c-126">In the Name field, type 'Invoice'.</span></span>
+    * <span data-ttu-id="5131c-127">Rechnung</span><span class="sxs-lookup"><span data-stu-id="5131c-127">Invoice</span></span>  
+5. <span data-ttu-id="5131c-128">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5131c-128">Click OK.</span></span>
+6. <span data-ttu-id="5131c-129">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5131c-129">Click Add to open the drop dialog.</span></span>
+7. <span data-ttu-id="5131c-130">Wählen Sie in der Struktur 'XML\Attribute' aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-130">In the tree, select 'XML\Attribute'.</span></span>
+8. <span data-ttu-id="5131c-131">Geben Sie im Feld "Name" "SalesOrder" ein.</span><span class="sxs-lookup"><span data-stu-id="5131c-131">In the Name field, type 'SalesOrder'.</span></span>
+    * <span data-ttu-id="5131c-132">SalesOrder</span><span class="sxs-lookup"><span data-stu-id="5131c-132">SalesOrder</span></span>  
+9. <span data-ttu-id="5131c-133">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5131c-133">Click OK.</span></span>
+10. <span data-ttu-id="5131c-134">Klicken Sie auf "Attribut hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5131c-134">Click Add Attribute.</span></span>
+11. <span data-ttu-id="5131c-135">Geben Sie im Feld "Name" "InvoiceNumber" ein.</span><span class="sxs-lookup"><span data-stu-id="5131c-135">In the Name field, type 'InvoiceNumber'.</span></span>
+    * <span data-ttu-id="5131c-136">InvoiceNumber</span><span class="sxs-lookup"><span data-stu-id="5131c-136">InvoiceNumber</span></span>  
+12. <span data-ttu-id="5131c-137">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5131c-137">Click OK.</span></span>
+13. <span data-ttu-id="5131c-138">Klicken Sie auf "Attribut hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5131c-138">Click Add Attribute.</span></span>
+14. <span data-ttu-id="5131c-139">Geben Sie im Feld "Name" "InvoiceAmount" ein.</span><span class="sxs-lookup"><span data-stu-id="5131c-139">In the Name field, type 'InvoiceAmount'.</span></span>
+    * <span data-ttu-id="5131c-140">InvoiceAmount</span><span class="sxs-lookup"><span data-stu-id="5131c-140">InvoiceAmount</span></span>  
+15. <span data-ttu-id="5131c-141">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5131c-141">Click OK.</span></span>
+16. <span data-ttu-id="5131c-142">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5131c-142">Click Add to open the drop dialog.</span></span>
+17. <span data-ttu-id="5131c-143">Wählen Sie in der Struktur den Knoten 'XML\Element'.</span><span class="sxs-lookup"><span data-stu-id="5131c-143">In the tree, select 'XML\Element'.</span></span>
+18. <span data-ttu-id="5131c-144">Geben Sie im Feld "Name" "EnclosedDocs" ein.</span><span class="sxs-lookup"><span data-stu-id="5131c-144">In the Name field, type 'EnclosedDocs'.</span></span>
+    * <span data-ttu-id="5131c-145">EnclosedDocs</span><span class="sxs-lookup"><span data-stu-id="5131c-145">EnclosedDocs</span></span>  
+19. <span data-ttu-id="5131c-146">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5131c-146">Click OK.</span></span>
+20. <span data-ttu-id="5131c-147">Wählen Sie in der Strukturdarstellung "Rechnung\EnclosedDocs" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-147">In the tree, select 'Invoice\EnclosedDocs'.</span></span>
+21. <span data-ttu-id="5131c-148">Klicken Sie auf "Element hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5131c-148">Click Add Element.</span></span>
+22. <span data-ttu-id="5131c-149">Geben Sie im Feld "Name" 'Dokument' ein.</span><span class="sxs-lookup"><span data-stu-id="5131c-149">In the Name field, type 'Document'.</span></span>
+    * <span data-ttu-id="5131c-150">Dokument</span><span class="sxs-lookup"><span data-stu-id="5131c-150">Document</span></span>  
+23. <span data-ttu-id="5131c-151">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5131c-151">Click OK.</span></span>
+24. <span data-ttu-id="5131c-152">Wählen Sie in der Strukturdarstellung "Rechnung\EnclosedDocs\Dokument" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-152">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
+25. <span data-ttu-id="5131c-153">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5131c-153">Click Add to open the drop dialog.</span></span>
+26. <span data-ttu-id="5131c-154">Wählen Sie in der Struktur 'XML\Attribute' aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-154">In the tree, select 'XML\Attribute'.</span></span>
+27. <span data-ttu-id="5131c-155">Geben Sie im Feld "Name" "FileName" ein.</span><span class="sxs-lookup"><span data-stu-id="5131c-155">In the Name field, type 'FileName'.</span></span>
+    * <span data-ttu-id="5131c-156">Dateiname</span><span class="sxs-lookup"><span data-stu-id="5131c-156">FileName</span></span>  
+28. <span data-ttu-id="5131c-157">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5131c-157">Click OK.</span></span>
+29. <span data-ttu-id="5131c-158">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5131c-158">Click Add to open the drop dialog.</span></span>
+30. <span data-ttu-id="5131c-159">Wählen Sie in der Struktur den Knoten 'XML\Element'.</span><span class="sxs-lookup"><span data-stu-id="5131c-159">In the tree, select 'XML\Element'.</span></span>
+31. <span data-ttu-id="5131c-160">Geben Sie im Feld "Name" den Wert "FileContent" ein.</span><span class="sxs-lookup"><span data-stu-id="5131c-160">In the Name field, type 'FileContent'.</span></span>
+    * <span data-ttu-id="5131c-161">FileContent</span><span class="sxs-lookup"><span data-stu-id="5131c-161">FileContent</span></span>  
+32. <span data-ttu-id="5131c-162">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5131c-162">Click OK.</span></span>
+33. <span data-ttu-id="5131c-163">Wählen Sie in der Strukturdarstellung "Rechnung\EnclosedDocs\Dokument\FileContent" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-163">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent'.</span></span>
+34. <span data-ttu-id="5131c-164">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5131c-164">Click Add to open the drop dialog.</span></span>
+35. <span data-ttu-id="5131c-165">Wählen Sie in der Struktur 'Text\Base64' aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-165">In the tree, select 'Text\Base64'.</span></span>
+36. <span data-ttu-id="5131c-166">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5131c-166">Click OK.</span></span>
 
-## <a name="map-format-elements-to-data-model-as-data-source"></a><span data-ttu-id="eb60e-166">Zuordnen von Formatelementen zum Datenmodell als Datenquelle</span><span class="sxs-lookup"><span data-stu-id="eb60e-166">Map format elements to data model as data source</span></span>
-1. <span data-ttu-id="eb60e-167">Wählen Sie in der Strukturdarstellung "Rechnung\SalesOrder" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-167">In the tree, select 'Invoice\SalesOrder'.</span></span>
-2. <span data-ttu-id="eb60e-168">Klicken Sie auf die Registerkarte Zuordnung.</span><span class="sxs-lookup"><span data-stu-id="eb60e-168">Click the Mapping tab.</span></span>
-3. <span data-ttu-id="eb60e-169">Erweitern Sie in der -Struktur den Knoten 'Modell'.</span><span class="sxs-lookup"><span data-stu-id="eb60e-169">In the tree, expand 'model'.</span></span>
-4. <span data-ttu-id="eb60e-170">Wählen Sie in der Strukturdarstellung "Modell\Auftragsnummer(SalesId)" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-170">In the tree, select 'model\Sales order number(SalesId)'.</span></span>
-5. <span data-ttu-id="eb60e-171">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="eb60e-171">Click Bind.</span></span>
-6. <span data-ttu-id="eb60e-172">Wählen Sie in der Strukturdarstellung "Rechnung\InvoiceNumber" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-172">In the tree, select 'Invoice\InvoiceNumber'.</span></span>
-7. <span data-ttu-id="eb60e-173">Erweitern Sie in der Strukturdarstellung "Modell\Basisrechnung(InvoiceBase)".</span><span class="sxs-lookup"><span data-stu-id="eb60e-173">In the tree, expand 'model\Base invoice(InvoiceBase)'.</span></span>
-8. <span data-ttu-id="eb60e-174">Wählen Sie in der Struktur 'Modell\Basisrechnung(InvoiceBase)\Rechnungsnummer(Id)' aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-174">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice number(Id)'.</span></span>
-9. <span data-ttu-id="eb60e-175">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="eb60e-175">Click Bind.</span></span>
-10. <span data-ttu-id="eb60e-176">Wählen Sie in der Strukturdarstellung "Rechnung\InvoiceAmount" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-176">In the tree, select 'Invoice\InvoiceAmount'.</span></span>
-11. <span data-ttu-id="eb60e-177">Wählen Sie in der Struktur 'Modell\Basisrechnung(InvoiceBase)\Rechnungsbetrag(Amount)' aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-177">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice amount(Amount)'.</span></span>
-12. <span data-ttu-id="eb60e-178">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="eb60e-178">Click Bind.</span></span>
-13. <span data-ttu-id="eb60e-179">Erweitern Sie in der Strukturdarstellung "Modell\Rechnungsanhänge".</span><span class="sxs-lookup"><span data-stu-id="eb60e-179">In the tree, expand 'model\Invoice attachments'.</span></span>
-14. <span data-ttu-id="eb60e-180">Wählen Sie in der Strukturdarstellung "Modell\Rechnungsanhänge\Dateiinhalt" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-180">In the tree, select 'model\Invoice attachments\File content'.</span></span>
-15. <span data-ttu-id="eb60e-181">Wählen Sie in der Strukturdarstellung "Rechnung\EnclosedDocs\Dokument\FileContent\Base64" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-181">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent\Base64'.</span></span>
-16. <span data-ttu-id="eb60e-182">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="eb60e-182">Click Bind.</span></span>
-17. <span data-ttu-id="eb60e-183">Wählen Sie in der Strukturdarstellung "Modell\Rechnungsanhänge\Dateiname" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-183">In the tree, select 'model\Invoice attachments\File name'.</span></span>
-18. <span data-ttu-id="eb60e-184">Wählen Sie in der Strukturdarstellung "Rechnung\EnclosedDocs\Dokument\FileName" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-184">In the tree, select 'Invoice\EnclosedDocs\Document\FileName'.</span></span>
-19. <span data-ttu-id="eb60e-185">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="eb60e-185">Click Bind.</span></span>
-20. <span data-ttu-id="eb60e-186">Wählen Sie in der Strukturdarstellung "Modell\Rechnungsanhänge " aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-186">In the tree, select 'model\Invoice attachments'.</span></span>
-21. <span data-ttu-id="eb60e-187">Wählen Sie in der Strukturdarstellung "Rechnung\EnclosedDocs\Dokument" aus.</span><span class="sxs-lookup"><span data-stu-id="eb60e-187">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
-22. <span data-ttu-id="eb60e-188">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="eb60e-188">Click Bind.</span></span>
-23. <span data-ttu-id="eb60e-189">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="eb60e-189">Click Save.</span></span>
-24. <span data-ttu-id="eb60e-190">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="eb60e-190">Close the page.</span></span>
+## <a name="map-format-elements-to-data-model-as-data-source"></a><span data-ttu-id="5131c-167">Zuordnen von Formatelementen zum Datenmodell als Datenquelle</span><span class="sxs-lookup"><span data-stu-id="5131c-167">Map format elements to data model as data source</span></span>
+1. <span data-ttu-id="5131c-168">Wählen Sie in der Strukturdarstellung "Rechnung\SalesOrder" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-168">In the tree, select 'Invoice\SalesOrder'.</span></span>
+2. <span data-ttu-id="5131c-169">Klicken Sie auf die Registerkarte Zuordnung.</span><span class="sxs-lookup"><span data-stu-id="5131c-169">Click the Mapping tab.</span></span>
+3. <span data-ttu-id="5131c-170">Erweitern Sie in der -Struktur den Knoten 'Modell'.</span><span class="sxs-lookup"><span data-stu-id="5131c-170">In the tree, expand 'model'.</span></span>
+4. <span data-ttu-id="5131c-171">Wählen Sie in der Strukturdarstellung "Modell\Auftragsnummer(SalesId)" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-171">In the tree, select 'model\Sales order number(SalesId)'.</span></span>
+5. <span data-ttu-id="5131c-172">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="5131c-172">Click Bind.</span></span>
+6. <span data-ttu-id="5131c-173">Wählen Sie in der Strukturdarstellung "Rechnung\InvoiceNumber" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-173">In the tree, select 'Invoice\InvoiceNumber'.</span></span>
+7. <span data-ttu-id="5131c-174">Erweitern Sie in der Strukturdarstellung "Modell\Basisrechnung(InvoiceBase)".</span><span class="sxs-lookup"><span data-stu-id="5131c-174">In the tree, expand 'model\Base invoice(InvoiceBase)'.</span></span>
+8. <span data-ttu-id="5131c-175">Wählen Sie in der Struktur 'Modell\Basisrechnung(InvoiceBase)\Rechnungsnummer(Id)' aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-175">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice number(Id)'.</span></span>
+9. <span data-ttu-id="5131c-176">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="5131c-176">Click Bind.</span></span>
+10. <span data-ttu-id="5131c-177">Wählen Sie in der Strukturdarstellung "Rechnung\InvoiceAmount" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-177">In the tree, select 'Invoice\InvoiceAmount'.</span></span>
+11. <span data-ttu-id="5131c-178">Wählen Sie in der Struktur 'Modell\Basisrechnung(InvoiceBase)\Rechnungsbetrag(Amount)' aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-178">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice amount(Amount)'.</span></span>
+12. <span data-ttu-id="5131c-179">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="5131c-179">Click Bind.</span></span>
+13. <span data-ttu-id="5131c-180">Erweitern Sie in der Strukturdarstellung "Modell\Rechnungsanhänge".</span><span class="sxs-lookup"><span data-stu-id="5131c-180">In the tree, expand 'model\Invoice attachments'.</span></span>
+14. <span data-ttu-id="5131c-181">Wählen Sie in der Strukturdarstellung "Modell\Rechnungsanhänge\Dateiinhalt" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-181">In the tree, select 'model\Invoice attachments\File content'.</span></span>
+15. <span data-ttu-id="5131c-182">Wählen Sie in der Strukturdarstellung "Rechnung\EnclosedDocs\Dokument\FileContent\Base64" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-182">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent\Base64'.</span></span>
+16. <span data-ttu-id="5131c-183">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="5131c-183">Click Bind.</span></span>
+17. <span data-ttu-id="5131c-184">Wählen Sie in der Strukturdarstellung "Modell\Rechnungsanhänge\Dateiname" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-184">In the tree, select 'model\Invoice attachments\File name'.</span></span>
+18. <span data-ttu-id="5131c-185">Wählen Sie in der Strukturdarstellung "Rechnung\EnclosedDocs\Dokument\FileName" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-185">In the tree, select 'Invoice\EnclosedDocs\Document\FileName'.</span></span>
+19. <span data-ttu-id="5131c-186">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="5131c-186">Click Bind.</span></span>
+20. <span data-ttu-id="5131c-187">Wählen Sie in der Strukturdarstellung "Modell\Rechnungsanhänge " aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-187">In the tree, select 'model\Invoice attachments'.</span></span>
+21. <span data-ttu-id="5131c-188">Wählen Sie in der Strukturdarstellung "Rechnung\EnclosedDocs\Dokument" aus.</span><span class="sxs-lookup"><span data-stu-id="5131c-188">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
+22. <span data-ttu-id="5131c-189">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="5131c-189">Click Bind.</span></span>
+23. <span data-ttu-id="5131c-190">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="5131c-190">Click Save.</span></span>
+24. <span data-ttu-id="5131c-191">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5131c-191">Close the page.</span></span>
 
