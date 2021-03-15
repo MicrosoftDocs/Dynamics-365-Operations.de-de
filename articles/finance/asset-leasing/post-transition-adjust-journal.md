@@ -46,3 +46,6 @@ Führen Sie die folgenden Schritte aus, um eine Übergangsregulierung gemäß de
 
 5. Um den Journaleintrag anzuzeigen, wählen Sie **Anlagenleasingerfassungen** aus.
 6. Wählen Sie die neuen Erfassung aus dann **Buchen**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

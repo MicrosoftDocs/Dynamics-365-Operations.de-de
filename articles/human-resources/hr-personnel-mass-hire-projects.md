@@ -82,3 +82,6 @@ Klicken Sie auf der Seite **Masseneinstellungsprojekt** auf **Projekt öffnen** 
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

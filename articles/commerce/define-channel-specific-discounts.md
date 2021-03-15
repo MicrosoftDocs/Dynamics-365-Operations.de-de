@@ -61,3 +61,6 @@ Das folgende Beispiel veranschaulicht die Aufgaben zur Einrichtung von Kanalraba
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Preisregulierungen und Rabatte](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

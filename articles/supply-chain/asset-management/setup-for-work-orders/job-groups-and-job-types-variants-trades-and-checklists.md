@@ -266,3 +266,6 @@ In der Anlageverwaltung können Sie Änderungen an den Prognosen der Wartungsauf
 2. Im Dialogfeld **Wartungsauftragstyp-Prognose aktualisieren** auf dem Inforegister **Einzuschließende Datensätze**, können Sie Auswahlen für bestimmte Wartungsauftragstypen nach Bedarf hinzufügen. Wählen Sie **Filtern** und **Auswählen**, um die Auswahl zu treffen.
 3. Im Inforegister **Im Hintergrund ausführen** können Sie die automatische Aktualisierung bei Bedarf als Batchauftrag einrichten.
 4. Klicken Sie auf **OK**, um die Aktualisierung der Prognose zu starten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

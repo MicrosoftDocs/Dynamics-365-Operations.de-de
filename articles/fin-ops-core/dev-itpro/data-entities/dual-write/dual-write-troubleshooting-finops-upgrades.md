@@ -91,3 +91,6 @@ Wenn das Problem immer noch nicht behoben ist, führen Sie die folgenden Schritt
 4. Öffnen Sie die Seite **Tabellenzuordnung** über die Seite **Duales Schreiben** in der Finance and Operations-App.
 5. Wenn das Attribut nicht automatisch in die Zuordnung eingefügt wird, fügen Sie es manuell hinzu, indem Sie auf **Attribut hinzufügen** und dann auf **Speichern** klicken. 
 6. Wählen Sie die Zuordnung aus, und klicken Sie auf **Ausführen**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

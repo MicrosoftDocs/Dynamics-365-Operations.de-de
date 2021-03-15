@@ -62,3 +62,6 @@ Mit diesem Verfahren können Sie Ursachencodes für Rückgaben einrichten, mit d
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

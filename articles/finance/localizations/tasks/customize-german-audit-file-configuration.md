@@ -86,3 +86,6 @@ Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF erstellt, mit "Deuts
 54. Geben Sie im Feld "Beschreibung" einen Wert ein.
 55. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

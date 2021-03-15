@@ -172,3 +172,6 @@ Um ein Containermodul auf einer Seite zu konfigurieren, befolgen Sie diese Schri
 
 [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

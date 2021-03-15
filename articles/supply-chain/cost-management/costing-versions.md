@@ -67,3 +67,6 @@ Die Einkaufspreisdatensätze für Artikel dienen auch zu Referenzzwecken. Durch 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

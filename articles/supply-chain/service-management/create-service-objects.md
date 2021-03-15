@@ -42,3 +42,6 @@ Serviceobjekte sind die Anlagen und Produkte eines Debitors, für die Sie eine D
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

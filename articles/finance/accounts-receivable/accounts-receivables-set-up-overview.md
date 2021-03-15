@@ -109,3 +109,6 @@ Weitere Informationen finden Sie unter [Kreditl und Inkassi in Debitorenparamete
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

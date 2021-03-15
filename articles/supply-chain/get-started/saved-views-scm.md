@@ -112,3 +112,6 @@ In der folgenden Tabelle werden die gespeicherten Ansichten beschrieben, die fü
 | Alle Wellen | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansicht für die Zyklusverarbeitung |
 | Ladungsplanungsworkbench | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansicht für die Arbeitsplanungs-Workbench |
 | Arbeitsdetails | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansicht für die Seite mit den Arbeitsdetails |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

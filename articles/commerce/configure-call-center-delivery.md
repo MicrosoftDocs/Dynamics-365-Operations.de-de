@@ -94,3 +94,6 @@ Sie können optional einen Eillieferungscode mit jeder von Ihnen konfigurierten 
 Bei Bestellungen, die beispielsweise am nächsten Tag per Luftfracht verschickt werden, muss die Kommissionierung täglich bis 13 Uhr im Lager erfolgen. In diesem Fall kann ein Eillieferungscode erstellt werden, der mit jeder im System konfigurierten Lieferart für den nächsten Tag verknüpft werden kann. Wenn das Lager seine Entnahmeserie erzeugt, kann der entsprechende Eillieferungscode im Feld **Eillieferung** als Filter verwendet werden, so dass die Entnahme nur für Aufträge durchgeführt wird, die Lieferarten haben, die mit diesem Code verknüpft sind.
 
 Zusätzlich kann bei der Eingabe eines Callcenterauftrags ein Eillieferungscode entweder manuell auf den Auftragskopf oder auf eine einzelne Auftragspositionen angewendet werden. Auch hier kann der Code für Sortier- oder Berichtszwecke verwendet werden. Manchmal muss ein Auftrag wegen eines Kundenserviceproblems sorgfältig behandelt werden. In diesem Fall kann ein spezieller Eillieferungscode auf den Auftragskopf oder die Auftragszeilen angewendet werden, um den Auftrag während des Ausführungsprozesses zu identifizieren und zu priorisieren.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

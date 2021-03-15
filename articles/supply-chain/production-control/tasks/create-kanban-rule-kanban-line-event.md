@@ -68,3 +68,6 @@ Diese Prozedur erstellt eine Kanban-Regel mithilfe der Kanban-Positionsereignise
     * Beachten Sie, dass ein Kanban für 27 erstellt wurde, um die Aktivität auf Grundlage der erstellten Kanban-Regel zu verarbeiten.  
     * Dies ist der letzte Schritt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ In diesem Thema wird erläutert, wie Richtlinien für Kreditorenrechnungen einge
 16. Wählen Sie **OK**.
 17. Schließen Sie die Seiten, um zur Startseite zurückzukehren.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

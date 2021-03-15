@@ -71,3 +71,6 @@ Einzelhändler entscheiden sich häufig, mehrere Produkte wie neue Artikel oder 
 
 > [!NOTE]
 > Wenn die Konfiguration **Alle Rabatte verhindern** auf **Ja** eingestellt ist, werden keine Rabatte auf das Produkt angewendet. Nicht einmal Zahlungsmittel-basierte Rabatte werden angewendet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

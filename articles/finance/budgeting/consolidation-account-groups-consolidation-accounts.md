@@ -53,3 +53,6 @@ Weitere Informationen finden Sie unter [Konsolidierungsgruppen und zusätzliche 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

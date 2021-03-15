@@ -102,3 +102,6 @@ Für einige sekundäre Datenquellen in Formularen können keine Warnungen erstel
     ```
 2. Erstellen Sie eine Warnung aus dem SysTableBrowser-Formular.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

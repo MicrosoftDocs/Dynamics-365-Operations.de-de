@@ -55,3 +55,6 @@ Diese Prozedur zeigt, wie Produktionsaufträge geplant werden sollen, die noch n
 4. Klicken Sie auf "Material".
     * Auf dieser Seite können Sie die vorkalkulierte Materialentnahme für die Arbeitsgänge im Produktionsauftrag und den aktuellen verfügbaren Bestand anzeigen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ Das folgende Verfahren veranschaulicht eine Möglichkeit, das Problem zu reprodu
 ### <a name="issue-resolution"></a>Problemlösung
 
 Dies hängt von den Parametereinstellungen für Rechnungen und Rechnungsgruppen ab. Weitere Informationen finden Sie im folgenden Blog-Beitrag: [Buchhaltung für Einkaufskosten und Bestandsabweichungen](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

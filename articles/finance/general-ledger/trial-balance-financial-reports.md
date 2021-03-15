@@ -109,3 +109,6 @@ Jeder Zwischenbilanzbericht verwendet eine andere Spaltendefinition. Diese Spalt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

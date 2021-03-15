@@ -80,3 +80,6 @@ In diesem Beispiel codiert die Datenquelle **\#MediaAsBase64String** den binäre
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Containerfunktionen](er-functions-category-container.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -429,3 +429,6 @@ Dies ist das Beispiel einer Kostenaufteilungsregel, wenn die vordefinierte Fomel
 |    CC002    |     FI      | 3,075.00  | (3.075,00 ÷ 18.162,50) × Betrag  |
 |    CC003    |     LU      | 13,250.00 | (13.250,00 ÷ 18.162,50) × Betrag |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -135,3 +135,6 @@ Validierungen für Seriennummern werden auch durchgeführt, wenn ein Benutzer di
 [Eingehender Bestandsvorgang in POS](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Ausgehender Bestandsvorgang in POS](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

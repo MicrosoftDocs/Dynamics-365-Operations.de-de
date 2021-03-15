@@ -381,3 +381,6 @@ Wenn die manuelle Aufgabe einem Benutzer zugewiesen wird, muss der Benutzer die 
 5. Aktivieren Sie das Kontrollkästchen **Delegieren**, wenn der Benutzer in der Lage sein soll, die Aufgabe einem anderen Benutzer zuzuweisen.
 6. Aktivieren Sie das Kontrollkästchen **Neu zuordnen**, wenn der Benutzer in der Lage sein soll, die Aufgabe einem anderen Benutzer in der Warteschlange für Arbeitsaufgaben neu zuzuweisen.
 7. Aktivieren Sie das Kontrollkästchen **Freigeben**, wenn der Benutzer in der Lage sein soll, die Aufgabe der Warteschlange für Arbeitsaufgaben neu zuzuweisen. Ein anderer Benutzer kann die Aufgabe anschließend ausführen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,5 @@ Dynamics 365 Human Resources bietet Analysen, mit denen Sie einen Einblick in di
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
 - [Einen Urlaubs- und Abwesenheitsplan erstellen](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

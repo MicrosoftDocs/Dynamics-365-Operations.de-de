@@ -68,3 +68,6 @@ Für vollständige Flexibilität im gemischten Modus, empfiehlt es sich, Produkt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

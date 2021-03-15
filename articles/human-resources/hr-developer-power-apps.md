@@ -60,3 +60,5 @@ Um die **Power Automate - SQL Connect and execute** Vorlage herunterzuladen, geh
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Das Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

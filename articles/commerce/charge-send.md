@@ -41,3 +41,6 @@ Die Belastung senden Funktion verwendet die folgenden POS-Vorgänge: Versand all
 Die Möglichkeit, Versand zu"-Adressen auszuwählen bleibt unverändert.
 
 Die Versandmethoden, die verwendet werden können, um die Auftragsposition zu decken, basieren auf der Konfiguration mit gültigen Lieferarten für Produkte und Adressen. Da die Regeln, die von Lieferarten gültig sind, nur im Zentralverwaltung (HQ) hat, der POS-Kunde ermöglicht einem Echtzeitanruf die gültigen Lieferarten für eine Schiffsposition abrufen verwaltet werden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

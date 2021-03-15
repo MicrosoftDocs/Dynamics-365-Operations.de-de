@@ -72,3 +72,6 @@ Dieser Artikel erläutert, wie Benutzervoreinstellungen zum Anpassen von Benutze
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

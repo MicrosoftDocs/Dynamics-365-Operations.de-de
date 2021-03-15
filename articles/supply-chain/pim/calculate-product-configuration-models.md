@@ -104,3 +104,6 @@ Berechnungen werden nicht in die Überprüfung einbezogen. Sie müssen das Produ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

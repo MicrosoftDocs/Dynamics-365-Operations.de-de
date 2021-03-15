@@ -78,3 +78,6 @@ Die Personalabteilung verbindet Mitarbeiter- und Betriebsdaten, um die Personalk
 [Verwalten von Urlaub und Abwesenheit](hr-leave-and-absence-overview.md)</br>
 [Mitarbeiterentwicklung](hr-develop-performance-management-overview.md)</br>
 [Kurse erstellen](hr-learning-courses.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

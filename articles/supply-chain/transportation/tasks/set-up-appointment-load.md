@@ -46,3 +46,6 @@ Dieses Verfahren zeigt, wie eine Dock-Terminplanung für eine Auslastung eingeri
 6. Klicken Sie auf "Speichern".
 7. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

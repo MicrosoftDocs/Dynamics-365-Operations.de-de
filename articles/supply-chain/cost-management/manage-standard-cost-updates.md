@@ -51,3 +51,6 @@ Durch Aktivieren eines neuen Standardpreises wird der verfügbare Lagerbestand i
 - **Kein** – Bei den Transaktionen zur Neubewertung werden keine Finanzdimensionen gebucht. Wenn Ihre Kontostruktur eine erforderliche Finanzdimension umfasst, wird der Neubewertungsprozess zwar weiterhin ausgeführt, aber er erstellt Buchhaltungseinträge, die keine Finanzdimensionen haben. In diesem Fall erhalten Benutzer zuerst eine Warnmeldung, damit sie die Neubewertung bei Bedarf abbrechen können.
 - **Tabelle** – Die Finanzdimensionen des Artikels werden bei den Transaktionen zur Neubewertung gebucht. Hierbei handelt es sich um die Standardeinstellung. Sie stimmt mit dem ursprünglichen Systemverhalten überein, bei dem die Funktion *Optionen für standardmäßige Finanzdimensionen zur Neubewertung der Standardkosten des Bestands* nicht aktiviert ist.
 - **Buchung** – Die Finanzdimensionen der Transaktion, die neu bewertet wird, werden bei den Transaktionen zur Neubewertung gebucht. Standardmäßig werden die Finanzdimensionen des Bestandskontos der ursprünglichen Transaktion sowohl für das Bestandskonto als auch für das Neubewertungskonto verwendet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

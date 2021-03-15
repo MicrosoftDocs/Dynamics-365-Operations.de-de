@@ -54,3 +54,6 @@ Verwenden Sie dieses Verfahren zum Einrichten einer Vorlage, die Objekte an eine
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

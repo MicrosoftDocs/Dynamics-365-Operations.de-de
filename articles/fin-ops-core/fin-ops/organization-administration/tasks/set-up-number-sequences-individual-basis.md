@@ -40,3 +40,6 @@ In diesem Thema wird erläutert, wie Sie Nummernkreise einzeln einrichten. Numme
 8. Erweitern Sie den Abschnitt **Allgemein**. Geben Sie auf dem Inforegister "Allgemein" an, ob der Nummernkreis manuell und fortlaufend bzw. nicht fortlaufend ist. Geben Sie zudem die niedrigste und die höchste Nummer ein, die in einem Nummernkreis verwendet werden kann. Es wird nicht empfohlen, einen nicht fortlaufenden Nummernkreis zu einem fortlaufenden Nummernkreis zu ändern. Der Nummernkreis wird nicht tatsächlich fortlaufend sein. Diese Änderung führt möglicherweise auch zu Doppelschlüssel-Verstößen in der Datenbank. Zudem besitzen fortlaufende Nummernkreise eine größere Auswirkungen auf die Leistung.   
 9. Klicken Sie auf **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

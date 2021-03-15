@@ -126,3 +126,6 @@ Um ein Auschecken-Modul einer neuen Seite hinzuzufügen und die erforderlichen E
 [Auftragsdetailmodul](order-confirmation-module.md)
 
 [Geschenkkartenmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

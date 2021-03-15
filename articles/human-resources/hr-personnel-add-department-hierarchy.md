@@ -54,3 +54,6 @@ Um der Abteilungshierarchie eine Abteilung hinzuzufügen, führen Sie folgende S
 
 ## <a name="steps-for-creating-a-department"></a>Schritte zum Erstellen einer Abteilung
 Im Artikel [Definieren neuer Abteilungen](../fin-and-ops/hr/tasks/define-new-departments.md) finden Sie die detaillierte Prozedur zum Erstellen eine neuen Abteilung. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

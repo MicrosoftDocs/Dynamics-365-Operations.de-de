@@ -87,3 +87,6 @@ Die folgenden acht Aufgabenleitfaden sind in diesem Thema in der Reihenfolge auf
 7.  [Variantenregeln erstellen](tasks/create-configuration-rules.md)
 8.  [Dimensionsbasierte Konfigurationen erstellen](tasks/create-dimension-based-configurations.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Im folgenden Verfahren sehen Sie, wie Sie einen neuen Einschränkungsausdruck ei
 4. Klicken Sie auf "Schließen".
 5. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

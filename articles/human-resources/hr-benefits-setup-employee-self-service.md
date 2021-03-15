@@ -72,3 +72,6 @@ In Microsoft Dynamics 365 Human Resources können Sie Kacheln für die Navigatio
    | **Beenden** | Enddatum und ‑uhrzeit für Verfügbarkeit der Kachel. |
 
 4. Wählen Sie **Speichern**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

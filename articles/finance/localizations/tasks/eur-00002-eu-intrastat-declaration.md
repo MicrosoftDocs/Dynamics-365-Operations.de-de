@@ -113,3 +113,6 @@ Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.
     * Wählen Sie z. B. "Versand" aus.  
 27. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

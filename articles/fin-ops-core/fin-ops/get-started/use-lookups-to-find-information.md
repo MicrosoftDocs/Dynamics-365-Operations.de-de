@@ -83,3 +83,6 @@ Stattdessen muss der Benutzer den Wert des Suchsteuerelements löschen, das Such
 Nachdem der Filter angewendet wurde (siehe Bild unten), kann der Benutzer die Zeile wie gewohnt suchen und auswählen.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

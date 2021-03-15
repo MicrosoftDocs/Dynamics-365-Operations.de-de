@@ -153,3 +153,6 @@ Die folgenden Einstellungen können verwendet werden, wenn Materialien immer man
 | Fertigmeldung |   Soll=Istrückmeldung Material    | <strong>Nie</strong>  |
 | Fertigmeldung | Fertigmeldungsbericht online aktualisieren | <strong>Status</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

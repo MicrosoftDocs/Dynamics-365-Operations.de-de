@@ -42,3 +42,6 @@ Die Einrichtung der geplanten Ausführung, die sich auf Arbeitsaufträge bezieht
 6. Wählen Sie **Speichern**.
 
 ![Geplante Ausführung](media/20-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

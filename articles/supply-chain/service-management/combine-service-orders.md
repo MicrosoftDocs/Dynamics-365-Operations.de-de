@@ -112,3 +112,6 @@ Die weitere Gruppierung von Serviceauftragspositionen in Serviceaufträge erfolg
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Wenn Sie mehrere Arten von Assets gleichzeitig hochladen (z. B. Bilder und Video
 [Bildfokuspunkte anpassen](dam-custom-focal-point.md)
 
 [Statische Dateien hochladen und bedienen](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

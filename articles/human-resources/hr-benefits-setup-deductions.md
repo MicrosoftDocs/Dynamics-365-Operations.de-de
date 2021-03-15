@@ -52,3 +52,6 @@ Verwenden Sie Abzüge in Microsoft Dynamics 365 Human Resources, um zu bestimmen
 4. Um Änderungen an der Vorteilssatzeinstellung zu verfolgen und beizubehalten, wählen Sie **Aktionen** und dann **Versionen verwalten** aus.
 
 5. Wählen Sie **Speichern**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

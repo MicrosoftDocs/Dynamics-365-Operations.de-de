@@ -409,3 +409,6 @@ Wenn das Supply Chain Management die Einzelvorgänge für die Produktion generie
 - Wenn Sie mehrere Arbeitsplanvorgangsbeziehungen definieren, die die Beziehung *Alle* enthalten, und ihnen Guides zuordnen, werden nur die Guides aus der spezifischsten Beziehung für den Einzelvorgang angezeigt.  
 
 ![Diagramm zum Auflösen der relevanten Guides](media/instruction-guides-Resolve.png "Diagramm zum Auflösen der relevanten Guides")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

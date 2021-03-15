@@ -47,3 +47,6 @@ Dies ist der dritte von fünf Aufgaben, die das Verfahren für Kreditorenzahlung
 10. Geben Sie im Feld "Zahlungskonto" die Werte "DEMF OPER" an.
 11. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

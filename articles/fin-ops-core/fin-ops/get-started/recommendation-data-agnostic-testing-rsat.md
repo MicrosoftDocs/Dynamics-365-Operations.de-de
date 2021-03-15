@@ -49,3 +49,6 @@ Während die funktionale Prüfung einer ERP-Anwendung nicht vollständig datenag
     - Überprüfen Sie nur, wenn Sie eine bestimmte Buchung anstelle der generischen Prüfung filtern. Filtern Sie z. B. für die Anzahl von Datensätzen die Buchungsnummer oder das Buchungsdatum, damit die Überprüfung alle weiteren Buchungen ausschließt. 
     - Wenn Sie ein Debitorensaldo oder eine Budgetprüfung prüfen, speichern Sie den Wert zuerst und fügen Sie dann Ihren Buchungswert hinzu, um das erwartete Ergebnis anstelle eines erwarteten festen Werts zu prüfen. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

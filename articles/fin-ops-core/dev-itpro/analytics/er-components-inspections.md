@@ -812,3 +812,6 @@ Informationen dazu, wie die Formatstruktur mit einer EB-Vorlage im Vorlagenedito
 [Überwachen der Ausführung von ER-Formaten zur Behebung von Leistungsproblemen](trace-execution-er-troubleshoot-perf.md)
 
 [Geschäftsdokumentverwaltung – Übersicht](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

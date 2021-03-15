@@ -103,3 +103,6 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

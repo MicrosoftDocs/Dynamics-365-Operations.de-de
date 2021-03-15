@@ -68,3 +68,6 @@ Die Reihenfolge wird gespeichert, jedoch wird die Markierung auf **nicht verarbe
 Um die Aufträge anzuzeigen und zu verwalten, die für Betrugsprüfung gesperrt sind, wechseln Sie zu **Einzelhandel und Handel** \> **Kunden** \> **Auftragssperren**. Auf der Seite **Aufträge sperren** wählen Sie einen Eintrag in der Liste aus, und klicken Sie dann auf **Auftrag gesperrt**, um eine detailliertere Ansicht anzuzeigen, die Informationen über den Grund für die Sperre enthält. Auf dem Inforegister **Betrugsdetails** können Sie die systematische die Betrugskriterien anzeigen, die gefunden wurden, um für eine Übereinstimmung die Reihenfolge und die Bewertungen abzustimmen. Wenn der Auftrag manuell gesperrt wurde, können Sie beliebige Kommentare anzeigen, die vom Benutzer eingegeben wurden, der den Auftrag gesperrt hat unter **Betrugs-Hinweise** im Inforegister  **Hinweise**.
 
 Weitere Informationen zum Arbeiten mit dem Formular, finden Sie unter [Auftrag sperren ](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

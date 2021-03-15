@@ -91,3 +91,6 @@ Um den Aufgabenlistenstatus für alle Ihnen zugewiesenen Aufgaben zu verfolgen, 
 [Aufgabenlisten erstellen und Aufgaben hinzufügen](task-mgmt-create-lists.md)
 
 [Aufgabenverwaltung in POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

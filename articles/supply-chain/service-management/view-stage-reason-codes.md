@@ -44,3 +44,6 @@ Anzeigen und Ändern der Liste der Phasenursachen für einen Serviceauftrag. Ver
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

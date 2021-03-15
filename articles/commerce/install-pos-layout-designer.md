@@ -62,3 +62,6 @@ Der grafische Entwurf der Schnittstelle für MPOS oder Cloud-POS wird durch das 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Konfigurieren, Installieren und Aktivieren von Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

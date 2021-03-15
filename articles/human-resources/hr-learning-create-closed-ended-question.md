@@ -68,3 +68,6 @@ Fragen mit vordefinierten Antworten ermöglichen die Angabe von Optionen, aus de
 5. Geben Sie im Feld "Antwortgruppe" einen Wert ein oder wählen Sie einen Wert aus.
 6. Geben Sie im Feld "Text" einen Wert ein.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

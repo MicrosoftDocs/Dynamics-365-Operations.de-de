@@ -47,3 +47,6 @@ Diese Prozedur zeigt Ihnen, wie Sie eine Projektbestellung manuell erstellen. Di
     * Überprüfen Sie, dass die Verkaufs- und Einstandspreise verfügbar sind. Wenn sie nicht verfügbar aber erforderlich sind, geben Sie die Informationen ein.  
 14. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

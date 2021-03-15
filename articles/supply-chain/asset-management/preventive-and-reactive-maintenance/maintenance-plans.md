@@ -238,3 +238,6 @@ Sie können das System so konfigurieren, dass ein Zähler jedes Mal automatisch 
 1. Wechseln Sie zu **Anlagenverwaltung \> Einrichtung \> Arbeitsaufträge \> Lebenszyklusstatus**.
 1. Wählen Sie im Listenbereich den Lebenszyklusstatus des Arbeitsauftrags aus, auf den der entsprechende Zähler zurückgesetzt werden soll.
 1. Legen Sie im Inforegister **Allgemein** die Option **Zähler zurücksetzen** auf *Ja* fest.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

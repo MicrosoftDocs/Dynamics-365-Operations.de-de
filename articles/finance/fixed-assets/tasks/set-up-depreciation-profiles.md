@@ -39,3 +39,6 @@ Abschreibungsprofile bestimmen den Typ und die Häufigkeit der Abschreibung für
 7. Wählen Sie im Feld **Periodenfrequenz** eine Option aus.
 8. Schließt das Formular.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

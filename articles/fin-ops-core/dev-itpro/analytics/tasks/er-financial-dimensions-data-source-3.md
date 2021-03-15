@@ -145,3 +145,6 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 46. Schließen Sie die Seite.
 ![EB-Vorgangs-Designerseite](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

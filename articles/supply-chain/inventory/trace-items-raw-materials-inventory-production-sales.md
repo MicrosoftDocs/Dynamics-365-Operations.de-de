@@ -139,3 +139,6 @@ Sie können den Bericht **Geliefert an Debitoren** generieren, um die Menge des 
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kann ich Kuppel- und Nebenprodukte verfolgen?
 Sie können Kuppelprodukte aber keine Nebenprodukte nachverfolgen, da Rückverfolgungsangaben in der Regel nicht Nebenprodukten zugewiesen werden. Wenn Sie einen Artikel nachverfolgen, beinhalten die Verfolgungsdetails alle zugehörigen Kuppelprodukte. Ein Knoten, der ein Kuppelprodukt enthält, umfasst das Wort "Kuppelprodukt" in den Details. Sie können Details zu einem Kuppelprodukt auch anzeigen, indem Sie den Knoten in den Verfolgungsdetails auswählen, und dann auf das Inforegister **Produktion** klicken.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

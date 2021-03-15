@@ -44,3 +44,6 @@ Wenn für eine Servicevereinbarungsposition kein Zeitfenster angegeben wird, mus
 
 [Erstellen von Zeitfenstern](create-time-windows.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

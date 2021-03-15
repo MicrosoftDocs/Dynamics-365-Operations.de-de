@@ -52,3 +52,6 @@ Sie können nach Chargenattributen suchen, wenn Sie Stapelreservierungen zur Erf
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Die Einzelvorgangsprozedur zur Quellensteuerzahlung gleicht Quellensteuersalden 
 7. Klicken Sie auf **OK**.
 
 ![Parameter für die Quellensteuerzahlung](media/withholding-tax-payment.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Gehen Sie folgendermaßen vor, um einen Ordner mit Bildern in Site Builder hochz
 [Bildfokuspunkte anpassen](dam-custom-focal-point.md)
 
 [Statische Dateien hochladen und bedienen](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

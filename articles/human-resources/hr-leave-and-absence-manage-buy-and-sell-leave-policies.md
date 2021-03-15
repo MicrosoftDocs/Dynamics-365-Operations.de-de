@@ -80,3 +80,6 @@ Sie können Mitarbeitern den Kauf und Verkauf von Urlaub ermöglichen, indem Sie
 [Urlaubs- und Abwesenheitspläne antizipieren](hr-leave-and-absence-accrue.md)</br>
 [Urlaub kaufen und verkaufen](hr-employee-self-service-buy-sell-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

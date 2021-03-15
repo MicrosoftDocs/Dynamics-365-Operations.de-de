@@ -79,3 +79,5 @@ Sie sehen ein Banner auf der **Links**-Seite des **Vorteilsverwaltung**-Arbeitsb
 Nachdem Ursachencodes in die Personalverwaltung migriert wurden, wird die Option für deren Verwendung in der Vorteilsverwaltung automatisch auf **Ja** festgelegt.
 
 [![Ursachencodes in der Vorteilsverwaltung verwenden](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

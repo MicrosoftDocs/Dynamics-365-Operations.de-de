@@ -89,3 +89,6 @@ Bei der Abschreibungsmethode „200 % degressiv“ werden 200 Prozent durch die
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ Nachdem Sie die Erfassung abgeschlossen haben, wählen Sie **Fertig** aus, um di
 -   Material kann bereits verbraucht sein. Wenn beispielsweise das Material mit einem Mengenverbrauch von 100 Kilogramm geschätzt wird, dann kann es mit einer Menge von beispielsweise 105 kg bereits verbraucht sein.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

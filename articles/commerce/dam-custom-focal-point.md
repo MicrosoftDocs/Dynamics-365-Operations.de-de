@@ -59,3 +59,6 @@ Um einen benutzerdefinierten Brennpunkt für ein Bild zu definieren, gehen Sie w
 [Bilder zuschneiden](dam-crop-images.md)
 
 [Statische Dateien hochladen und bedienen](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

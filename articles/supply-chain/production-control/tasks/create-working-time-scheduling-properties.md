@@ -43,3 +43,6 @@ Arbeitszeitplanungseigenschaften werden verwendet, um Arbeitszeitintervalle zu k
 3. Geben Sie im Feld "Wert" einen Wert ein.
 4. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

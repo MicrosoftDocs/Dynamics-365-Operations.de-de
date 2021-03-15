@@ -302,3 +302,6 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
     ![Diagramme Kostenvergleich](./media/subcontract35_cost-comparison-charts.png)
 
 Fehlende Daten in Unternehmensdaten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

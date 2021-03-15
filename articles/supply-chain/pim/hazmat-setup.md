@@ -283,3 +283,6 @@ Um Werte für diese Spezifikation einzurichten, gehen Sie zu **Produktinformatio
 Die Spezifikation *Gefahrstofftunnel* begrenzt die Arten von Tunneln, durch die ein gefährliches Material transportiert werden kann, indem die Arten von Tunneln identifiziert werden, die verwendet werden müssen. Tunnelkategorien werden durch geltende Vorschriften für den Gefahrguttransport festgelegt. Diese Spezifikation gilt normalerweise nur für den Straßentransport.
 
 Um Werte für diese Spezifikation einzurichten, gehen Sie zu **Produktinformationsverwaltung \> Setup \> Gefahrstoff-Versanddokumentation \> Gefahrstofftunnel**. Auf der Seite **Gefahrstofftunnel** können Sie eine beliebige Anzahl von Tunnelbezeichnern erstellen und diese jeweils mit einem identifizierenden Code und einer kurzen Beschreibung konfigurieren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

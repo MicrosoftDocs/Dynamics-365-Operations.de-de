@@ -60,3 +60,6 @@ Nachdem Sie mindestens eine vorgeschlagene Änderung haben, werden zwei zusätzl
     Der Status auf der Seite ändert sich in **Änderungen mit ausstehender Genehmigung**.
 
 Der Workflow erfolgt gemäß dem Standardworkflowprozess. Die genehmigende Person wird an die Seite **Kreditor** weitergeleitet. Dort können die Änderungen auf der Seite **Vorgeschlagene Änderungen** geprüft und der Workflow anschließend über **Workflow \> Genehmigen** genehmigt werden. Sind alle Genehmigungen bearbeitet, werden die Felder mit den vorgeschlagenen Werten aktualisiert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

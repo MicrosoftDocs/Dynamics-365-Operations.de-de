@@ -73,3 +73,6 @@ Beim Ausführen einer wertmäßigen Buchung besitzt der Buchungsdatensatz den St
 -   Lagererfassungen mit negativer Menge (beispielsweise Bewegungs-, Gewinn- und Verlust-, Inventur-, Stücklisten- oder Umlagerungserfassungen)
 
 Buchungen, durch die sich eine Verringerung der Menge ergibt, werden zum laufenden Durchschnittseinstandspreis ausgeführt. Daher müssen Abgangsbuchungen beim Lagerabschluss mit Zugangsbuchungen ausgeglichen werden. Die Grundlage hierfür bildet das den einzelnen Artikeln zugewiesene Lagermodell.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -130,3 +130,6 @@ Dieses Szenario zeigt, wie die Funktion für Lagerorte funktioniert, die auf **T
 
 > [!NOTE]
 > Das gleiche Ergebnis wird erwartet, wenn die zweite Position teilweise reserviert ist. In diesem Fall wird Arbeit für die reservierte Positionsmenge erstellt, nicht jedoch für die nicht reservierte Menge.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

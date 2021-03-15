@@ -117,3 +117,6 @@ Wählen Sie Standardkonten auf der Seite **Standardkontoeinstellungen** aus, die
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

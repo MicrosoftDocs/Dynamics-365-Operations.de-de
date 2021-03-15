@@ -181,3 +181,6 @@ Gehen Sie zum Einrichten von Safes folgendermaßen vor:
 
 [Einen Callcenterkanal einrichten](channel-setup-callcenter.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

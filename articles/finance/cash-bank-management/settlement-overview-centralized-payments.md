@@ -107,3 +107,6 @@ Bei Kreditorenzahlungen werden für die Buchungen vom Typ "Fällig bis" und "Fä
 
 ## <a name="withholding-tax"></a>Quellensteuer
 Anhand des Kreditorenkontos, das der Rechnung zugeordnet ist, wird bestimmt, ob Quellensteuer berechnet werden soll. Wenn Quellensteuer anfällt, wird sie für die juristische Person berechnet, die der Rechnung zugeordnet ist. Wenn die juristischen Personen unterschiedliche Währungen verwenden, wird der Wechselkurs der juristischen verwendet, die der Rechnung zugeordnet ist.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

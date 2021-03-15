@@ -302,3 +302,6 @@ Führen Sie die folgenden Schritte aus, um eine Rechnungsdetailseite im Site Bui
 [Inhaltsblockmodul](../add-hero-module.md)
 
 [Produktsammlung](../product-collection-module-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

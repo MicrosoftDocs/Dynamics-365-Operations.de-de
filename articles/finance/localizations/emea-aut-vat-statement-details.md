@@ -108,3 +108,6 @@ Um eine MwSt. -XML-Datei zu generieren, verwenden Sie die Seite the **Mehrwertst
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ In diesem Thema wird der Prozess der Erstellung und Buchung einer Lagerinventure
 1. Wählen Sie **Bestand** aus.
 2. Wählen Sie **Buchungen** aus. Hier können Sie alle zugehörigen Transaktionen finden, die erstellt werden, wenn Sie die Lagerinventurerfassung buchen.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

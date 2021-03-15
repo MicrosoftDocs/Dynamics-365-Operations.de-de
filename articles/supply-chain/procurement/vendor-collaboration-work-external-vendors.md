@@ -258,3 +258,6 @@ Der Benutzer, der Parameter für den Angebotsanforderungsprozess einrichtet, kan
 - %Erstellungsdatum%
 
 Wenn eine Ergänzung erforderlich ist und übermittelt wird, nachdem die Angebotsanforderung gesendet wurde, wird die Angebotsanforderung an alle eingeladenen Kreditoren erneut übermittelt. Das veröffentlichte Dokument wird auch auf der Seite **Offene veröffentlichte Angebotsanforderungen** aktualisiert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

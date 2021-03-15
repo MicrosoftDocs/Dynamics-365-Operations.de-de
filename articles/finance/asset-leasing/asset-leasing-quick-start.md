@@ -252,3 +252,6 @@ Führen Sie die folgenden Schritte aus, um ein neues Leasing zu erstellen.
 
    Dei Seite **Leasingverbindlichkeitstransaktionen** zeigt die erstmalige Erfassung, die Leasingzinszahlung, die Leasingzahlung und den Saldo der Leasingverbindlichkeit an. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

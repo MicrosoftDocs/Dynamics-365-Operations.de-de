@@ -45,3 +45,6 @@ Diese Aufgabe verwendet das SSI-Dataset.
 12. Geben Sie im Feld "Kommentar" einen Wert ein.
 13. Klicken Sie auf Absenden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Auf diese Weise können also separate Budgets für die wichtigsten Buchungskonte
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

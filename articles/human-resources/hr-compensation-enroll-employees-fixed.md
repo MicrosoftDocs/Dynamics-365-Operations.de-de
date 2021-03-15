@@ -39,3 +39,6 @@ Der Leiter für Vergütungen/Bezüge kann Mitarbeiter zu Plänen für feste Verg
     * Wenn der Plan mit fester Vergütung ein Schrittplan ist, wählen Sie den Schritt aus, der den korrekten Lohnsatz für den Mitarbeiter enthält. Wenn der Plan mit fester Vergütung ein gradueller oder flexibler Plan ist, geben Sie den Lohnsatz für den Mitarbeiter ein. Der Lohnsatz wird gegen die Toleranzeinstellungen für den Plan und die minimalen und maximalen Referenzpunkte für die Vergütungsstufe des Einzelvorgangs geprüft.  
 8. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

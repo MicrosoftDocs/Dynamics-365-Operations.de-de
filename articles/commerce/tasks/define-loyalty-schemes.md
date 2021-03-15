@@ -69,3 +69,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Definieren eines Treues
 27. Klicken Sie auf "Speichern".
     * Immer wenn Sie die Kanäle für ein Treueschema ändern, müssen Sie Prozesstreueschemas ausführen. Auf diese Weise werden für die Kanäle aktualisierte Treueschemas abgerufen.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

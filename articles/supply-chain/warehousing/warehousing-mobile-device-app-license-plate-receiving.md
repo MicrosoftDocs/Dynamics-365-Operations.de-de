@@ -104,3 +104,6 @@ Weitere Informationen zu Menüelementen für Mobilgeräte finden Sie unter [Rich
 Weitere Informationen zum *Als fertig melden* Produktionsszenario finden sie unter [Übersicht über die Lagerarbeitsrichtlinien](warehouse-work-policies.md).
 
 Weitere Informationen über eingehende Auslastungverwaltung finden Sie unter [Lagerortverwaltung von eingehender Auslastung für Bestellungen](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Führen Sie die folgenden Schritte aus, bevor Sie eine Standardkostenumrechnung 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

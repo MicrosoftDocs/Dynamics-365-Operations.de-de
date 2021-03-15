@@ -86,3 +86,6 @@ Um ein Auftragsbestätigungsmodul zu einer neuen Seite hinzuzufügen und die erf
 [Abholinformationsmodul](pickup-info-module.md)
 
 [Geschenkkartenmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

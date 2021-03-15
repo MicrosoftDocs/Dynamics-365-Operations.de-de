@@ -87,3 +87,6 @@ Um Zahlungen und Habenbuchungen für Berechnung des Mahnschreibencodes zu ignori
 
 1. Gehen Sie zu **Navigationsbereich > Module > Kredit und Inkasso > Einrichtung > Debitorenparameter** und klicken Sie auf die Registerkarte **Inkasso**. 
 2. Ändern Sie den Wert von **Zahlungen und Habenbuchungen für Berechnung des Mahnschreibencodes ignorieren** auf **Ja** ab.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

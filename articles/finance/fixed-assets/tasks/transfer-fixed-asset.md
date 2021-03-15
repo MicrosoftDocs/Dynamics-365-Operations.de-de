@@ -47,3 +47,6 @@ In diesem Aufgabenleitfaden werden die Finanzdaten für ein Anlagenbuch aus eine
     * Überprüfen Sie die Ergebnisse, bevor Sie die Anlagenbücher übertragen.  
 10. Klicken Sie auf **Übertragen**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

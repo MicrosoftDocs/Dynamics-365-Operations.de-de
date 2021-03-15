@@ -91,3 +91,6 @@ Das **Genehmigungsstatus**-Feld wird verwendet, wenn eine Bestellung einen Über
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

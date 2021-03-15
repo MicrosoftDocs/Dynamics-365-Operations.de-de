@@ -41,3 +41,6 @@ Der Schwerpunkt dieser Aufgabe liegt auf dem Vorbereiten eines Kanban-Bearbeitun
 6. Klicken Sie auf "Vorbereiten".
     * Der Vorbereitungsprozess ist nun abgeschlossen. Das aktivierte Kontrollkästchen für alle Zeilen in der Kommissionierliste gibt an, dass der Beschaffungsstatus entnommen wird.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

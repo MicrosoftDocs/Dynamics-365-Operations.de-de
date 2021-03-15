@@ -154,3 +154,6 @@ Derzeit unterstützt die Funktion „Gruppen veröffentlichen“ nur Website-Inh
 [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md)
 
 [Anpassen der Sitenavigation](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

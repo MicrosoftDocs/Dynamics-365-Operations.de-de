@@ -81,3 +81,6 @@ Das folgende Bild zeigt eine Hierarchie mit verschiedenen hinzugefügten Kanäle
 [Einen Retail Channel einrichten](channel-setup-retail.md)
     
 [Einen Onlinekanal einrichten](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

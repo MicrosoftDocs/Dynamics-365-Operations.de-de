@@ -93,3 +93,6 @@ Sie müssen die Engineering-Kategorie angeben, zu der das Produkt gehört. Die K
 Sie können die Engineering-Attribut-Suche verwenden, um Produkte zu finden, indem Sie nach ihren Engineering-Attribut-Werten suchen. So können Sie auf einfache Weise Engineering-Produkte anhand ihrer Eigenschaften finden. Sie können in den Produkten suchen, die zu einer Engineering-Produktkategorie gehören, oder Sie können über alle Engineering-Produkte suchen.
 
 Die Suche ist auf Produktstammdaten-Seiten und von transaktionalen Elementen im System aus verfügbar, z. B. von Aufträgen aus. Bei einem transaktionalen Element können Sie die Seite **Attributsuche Engineering** verwenden, um nach einem Produkt zu suchen. Sie können dann die Schaltfläche **Als neue Zeile hinzufügen** verwenden, um das Produkt zu den Zeilen des Verkaufsauftrags hinzuzufügen. Produkte aus den Suchergebnissen können auch direkt zum Auftrag hinzugefügt werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

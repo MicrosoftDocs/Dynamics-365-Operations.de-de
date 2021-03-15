@@ -87,3 +87,6 @@ Die folgenden Schritte im Produktionslebenszyklus können bei allen Auftragstype
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

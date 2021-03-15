@@ -67,3 +67,6 @@ Dieses Verfahren zeigt an, wie Zinsrechnungen erstellt, gedruckt und gebucht wer
 5. Klicken Sie auf **OK**.
 6. Wählen Sie im Feld **Status** die Option 'Gebucht'.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

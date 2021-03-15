@@ -47,3 +47,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch die Verwendung von Gewichts
 17. Legen Sie die Menge auf "1000" fest.
 18. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

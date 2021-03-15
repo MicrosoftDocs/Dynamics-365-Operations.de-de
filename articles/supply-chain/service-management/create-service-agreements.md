@@ -61,3 +61,6 @@ In diesem Thema wird beschrieben, wie mithilfe der Funktionen in den Modulen Ser
 [Ausarbeiten und Festsetzen von Serviceverträge – Übersicht](service-agreements.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

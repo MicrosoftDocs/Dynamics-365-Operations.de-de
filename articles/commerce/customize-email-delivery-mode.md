@@ -71,3 +71,6 @@ Führen Sie die folgenden Schritte aus, um E-Mail-Vorlagen für bestimmte Liefer
 [Callcenteraufträge erstellen](tasks/create-call-center-orders.md)
 
 [Lieferart in POS ändern](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

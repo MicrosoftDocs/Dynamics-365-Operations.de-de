@@ -77,3 +77,6 @@ So setzen Sie eine fehlgeschlagene Lager-App-Ereignismeldung zurück:
 1. Arbeiten Sie weiter, bis alle relevanten Meldungen zurückgesetzt sind.
 
 Sie können auch eine **Fehlgeschlagen**-Ereignismeldung mit der Option **Löschen** auf der Symbolleiste **Lager-App-Ereignismeldungen** entfernen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

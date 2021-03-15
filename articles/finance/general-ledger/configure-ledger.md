@@ -81,3 +81,6 @@ Wenn Sie zwei Währungen oder eine einzige Währung verwenden, Transaktionen jed
 Realisierte Gewinne und Verluste sind Gewinne und Verluste aus abgeschlossenen Transaktionen. Sie werden in der Gewinn- und Verlustrechnung erfasst. Nicht realisierte Gewinne und Verluste sind Gewinne und Verluste, die eingetreten sind, aber die Transaktion ist noch nicht abgeschlossen. Mit anderen Worten, Sie haben beispielsweise eine Rechnung gebucht, aber die Rechnung ist noch nicht beglichen und bezahlt. Nicht realisierte Gewinne und Verluste werden in der Bilanz erfasst.
 
 Weitere Informationen darüber, wie Sie zwei Währungen verwenden, finden Sie unter [Duale Währung](dual-currency.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

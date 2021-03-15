@@ -106,3 +106,6 @@ Weitere Informationen zum Erstellen einer Auschecken-Seite erhalten Sie unter [E
 [Übersicht der Produktdetailseiten](quick-tour-pdp.md)
 
 [Übersicht der Kontenverwaltungsseiten](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

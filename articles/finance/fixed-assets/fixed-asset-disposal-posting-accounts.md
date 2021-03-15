@@ -42,3 +42,6 @@ Durch die Abgangsbuchung für eine Anlage in einem Low-Value-Pool verringert sic
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

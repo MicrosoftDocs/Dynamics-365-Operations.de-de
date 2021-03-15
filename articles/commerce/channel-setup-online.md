@@ -133,3 +133,6 @@ Die folgende Abbildung zeigt ein Beispiel für die Einrichtung einer Erfüllungs
 [Einen Callcenterkanal einrichten](channel-setup-callcenter.md)
 
 [Connector für Adyen-Zahlungen für Dynamics 365](../retail/dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

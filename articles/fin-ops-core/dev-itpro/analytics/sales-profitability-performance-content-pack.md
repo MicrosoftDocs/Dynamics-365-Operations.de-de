@@ -107,3 +107,6 @@ Die folgenden wichtigen Dimensionen im Verkaufscube werden als Filter verwendet,
 | Daten            | Daten                                                |
 
 Standardmäßig zeigt das Inhaltspaket Daten während des laufenden Kalenderjahrs an. Allerdings können Sie den im Berichtsfilterabschnitt Datumsfilter ändern. Sie können das den Unternehmensfilter auch ändern.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

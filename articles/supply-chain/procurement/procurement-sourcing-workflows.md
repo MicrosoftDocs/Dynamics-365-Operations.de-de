@@ -79,3 +79,6 @@ Sie können folgenden Teilnehmergruppen einen Genehmigungsschritt zuweisen.
 - [Definieren von geschäftlichen Prozessworkflows für Bestellanforderungen.](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Bestellanforderungs-Workflow](purchase-requisitions-workflow.md)
 - [Kreditoren aufnehmen](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

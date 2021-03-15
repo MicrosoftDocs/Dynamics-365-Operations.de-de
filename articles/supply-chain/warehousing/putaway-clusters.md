@@ -295,3 +295,6 @@ Bevor die Elemente des Clusters eingelagert werden können, muss der Cluster ges
 ## <a name="notes-and-tips"></a>Hinweise und Tipps
 
 In Fällen, in denen die Cluster-ID zum übergeordneten Ladungsträger für eine verschachtelte Palette wird, wird die Einlagerungsposition automatisch angegeben, wenn die Cluster-ID gescannt wird. Es muss kein weiteres Ladungsträger-Kennzeichen gescannt werden, auch wenn die Kennzeichenerstellung auf manuell festgelegt ist.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

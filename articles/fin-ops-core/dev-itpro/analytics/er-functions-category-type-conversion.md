@@ -87,3 +87,6 @@ Die folgende Tabelle beschreibt die Typenumrechnungsfunktionen in der [Textkateg
 [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)
 
 [Formelsprache in der elektronischen Berichterstellung](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

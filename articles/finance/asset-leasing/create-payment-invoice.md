@@ -48,3 +48,6 @@ Sie können monatliche Rechnungen für einzelne Mietverträge erstellen oder sie
 6. Nachdem die Transaktion gebucht wurde, können Sie die Transaktionsinformationen und den Buchwert der Leasingverbindlichkeit anzeigen, indem Sie **Verbindlichkeitstransaktionen** im Leasingbuch auswählen.
 
     Im Zahlungsplan wird das Kontrollkästchen **Erfassung gebucht** aktiviert und in der Zeile wird die Rechnungserfassungsnummer angezeigt. Nachdem eine Zahlungserfassung und ein Eintrag für diese Erfassung erstellt wurden, müssen Sie den Eintrag stornieren, bevor er neu erstellt werden kann.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

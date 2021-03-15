@@ -46,3 +46,6 @@ In diesem Verfahren sehen Sie, wie eine Konsolidierungskontengruppe erstellt und
 8. Geben Sie im Feld "Konsolidierungskonto" einen Wert ein.
 9. Geben Sie im Feld "Konsolidierungskontoname" einen Wert ein.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

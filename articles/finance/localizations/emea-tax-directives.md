@@ -32,3 +32,6 @@ Die EU-Direktive bietet Bestimmungen, die von allen Mitgliedsstaaten befolgt wer
 
 > [!NOTE]
 > Überprüfen Sie, ob das Feld **Mehrwertsteuerspezifikation** auf **Erfassungswährung** oder auf **Erfassungs- und Firmenwährung** festgelegt ist. Öffnen Sie hierfür auf der Seite **Formulareinstellungen** die Registerkarte **Allgemein** (**Debitoren > Einrichtung > Formulare > Formulareinstellungen** oder **Projektverwaltung und Buchhaltung > Einrichtung > Formulare > Formulareinstellungen**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

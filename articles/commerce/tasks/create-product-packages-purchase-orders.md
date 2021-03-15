@@ -72,3 +72,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines Produkt
 17. Klicken Sie auf "Erstellen".
 18. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

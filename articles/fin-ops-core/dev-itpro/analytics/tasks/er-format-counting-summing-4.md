@@ -103,3 +103,6 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 21. Klicken Sie auf "Öffnen".
     * Prüfen Sie die erstellte XML-Datei, die die Inventur- und Zusammenfassungsdetails enthält, die bei der Ausführung der ausgewählten Konfiguration gesammelt wurden.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

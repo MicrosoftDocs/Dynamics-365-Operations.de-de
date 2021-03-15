@@ -63,3 +63,6 @@ Wenn einzelne Bereiche des Arbeitsbereichs Filter haben, können Sie jeden Absch
 [![Arbeitsbereich-Abschnitts-Filter](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Wie bei einem Arbeitsbereich-weiten Filter wählen Sie den gewünschten Filterwert aus oder geben ihn ein, um die angezeigten Inhalte des Bereichs einzugrenzen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

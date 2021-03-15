@@ -66,3 +66,6 @@ Wenn Anlagentypen zu einem Zählertyp unter **Zähler** hinzugefügt werden, wir
 
 ![Abbildung 1](media/071-setup-for-objects.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

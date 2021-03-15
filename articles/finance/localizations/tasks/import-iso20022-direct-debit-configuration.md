@@ -48,3 +48,6 @@ Dies ist die erste von sechs Aufgaben, die das Verfahren für Debitorenzahlungen
     * Wenn die Importschaltfläche nicht verfügbar ist, bedeutet dies, dass die Konfiguration bereits importiert wurde.  
 9. Klicken Sie auf "Ja".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

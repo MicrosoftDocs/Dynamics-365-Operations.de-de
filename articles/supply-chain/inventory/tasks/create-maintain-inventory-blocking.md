@@ -51,3 +51,6 @@ Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verf
 2. Klicken Sie auf **Ja**.
 3. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

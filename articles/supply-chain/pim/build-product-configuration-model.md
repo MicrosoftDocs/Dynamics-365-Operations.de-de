@@ -162,3 +162,6 @@ Wenn eine Variante an einem Standort erfolgt oder auch an einem Unternehmen, das
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

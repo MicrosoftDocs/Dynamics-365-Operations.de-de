@@ -79,3 +79,6 @@ Die folgende Abbildung zeigt das Beispiel einer Wartungsprüfliste.
 
 ![Abbildung 1](media/14-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

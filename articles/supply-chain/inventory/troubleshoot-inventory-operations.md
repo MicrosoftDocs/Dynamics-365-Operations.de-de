@@ -157,3 +157,6 @@ Dieses Problem tritt auf, wenn die Bestandstransaktionsmenge als Dezimalwert ang
 
 > [!IMPORTANT]
 > Wir empfehlen dringend, dass Sie das Skript entsprechend Ihrer Umgebung sorgfältig bearbeiten, es in einer Testumgebung testen und dann die resultierenden Daten überprüfen, bevor Sie das Skript in einer Produktionsumgebung ausführen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

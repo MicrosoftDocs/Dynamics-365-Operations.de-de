@@ -97,3 +97,6 @@ Die Konfigurationsversion wird gelöscht und eine Bestätigungsmeldung angezeigt
 > [!NOTE]
 > Konfigurationen können nur von dem Konfigurationsanbieter gelöscht werden, der sie erstellt hat. Wenn die Konfiguration für eine andere Organisation freigegeben wurde, muss die Freigabe der Konfiguration aufgehoben werden, bevor Sie sie löschen können.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

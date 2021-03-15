@@ -100,3 +100,6 @@ Es wird empfohlen, einen eindeutigen Dokumenttyp für Korrekturen zu definieren,
 [Testbestellungen einrichten](tasks/set-up-quality-orders.md)
 
 [Überprüfen Sie die Qualität von Waren](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

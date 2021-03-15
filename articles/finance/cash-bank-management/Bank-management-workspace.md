@@ -63,3 +63,6 @@ Die Seite **Analyse** enthält wichtige Metriken zu Bankkonten im aktuellen Unte
 -   Saldo in Währung
 
 Sie können die Bankanalyse für alle Unternehmen im Arbeitsbereich **Bargeldüberblick – alle Unternehmen** anzeigen. Weitere Informationen finden Sie unter [Bargelübersicht Power BI Inhalt](Cash-Overview-Power-BI-content.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

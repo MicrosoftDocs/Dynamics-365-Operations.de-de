@@ -803,3 +803,6 @@ In diesem Abschnitt erstellen Sie eine gespeicherte Variable im ersten Testfall.
 2. Überprüfen Sie, dass beide Testfälle erfolgreich waren.
 
     ![Auf „Erfolgreich“ festgelegtes Ergebnisfeld für beide Testfälle](./media/setup_rsa_tool_105.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

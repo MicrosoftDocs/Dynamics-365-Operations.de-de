@@ -148,3 +148,6 @@ Nur Einstellungen zum Standardbasiszeitraum werden mit der Berichtsdefinition ge
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

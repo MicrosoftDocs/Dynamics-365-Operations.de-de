@@ -87,3 +87,6 @@ Die Buchung zur Neubewertung der Fremdwährung wird ebenfalls über die Dimensio
 Wenn Sie die Neubewertungsbuchung rückbuchen müssen, wählen Sie die Schaltfläche **Buchung stornieren** im Aktivitätsbereich auf der Seite **Neubewertung der Fremdwährung** aus. Es wird eine neue Neubewertung der Fremdwährung des historischen Datensatzes erstellt, um den historischen Audit-Trail zum Zeitpunkt der Ausführung oder Rückbuchung der Neubewertung zu erhalten.
 
 Um mehrere Neubewertungen rückzubuchen, müssen Sie die neueste Neubewertung zuerst zurückbuchen. Fahren Sie dann fort, um ältere Neubewertungen in Datumsreihenfolge umzukehren. Sie können dann neue Neubewertungen für die von Ihnen rückgebuchten Zeiträume verarbeiten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

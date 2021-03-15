@@ -95,3 +95,6 @@ Um ein Werbebanner-Modul einer neuen Seite hinzuzufügen und die erforderlichen 
 [Inhaltsblockmodul](add-hero-module.md)
 
 [Video-Player-Modul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

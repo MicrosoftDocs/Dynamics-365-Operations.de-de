@@ -141,3 +141,6 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 4.  Auswählen des Debitors
 5.  Wählen Sie **Kontaktinformationen** oder **Aufträge** aus. Wenn Sie **Aufträge** auswählen, wird eine Liste der Aufträge für den Debitor angezeigt.
 6.  **Auftrag** auswählen. Sie können nun Informationen zu Auftragspositionen, Lieferungen, Debitorenkontaktinformationen und Auftragsannahmekontaktinformationen anzeigen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -117,3 +117,6 @@ In den folgenden Tabellen sind die Seiten und Felder aufgeführt, über die auf 
 |     Debitorenkontenparameter> Automatisierung von Inkassoprozessen     |     Mahnschreiben automatisch buchen           |     Aktionstypen für Mahnschreiben werden den Brief während der Automatisierung buchen.                                      |
 |     Debitorenkontenparameter> Automatisierung von Inkassoprozessen     |     Erstellen von Aktivitäten für Automatisierung                |     Erstellen und schließen Sie Aktivitäten für Aktionstypen ohne Aktivität, um alle automatisierten Schritte anzuzeigen, die für ein Konto ausgeführt wurden.        |
 |     Debitorenkontenparameter> Automatisierung von Inkassoprozessen     |     Inkassoprozessautomatisierung für aufzubewahrende Tage     |     Definiert die Anzahl der Tage, an denen der Inkassoverlauf gespeichert wird.                                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

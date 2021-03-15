@@ -43,3 +43,6 @@ Um den Import von den Kostenträgerdimensionsmitgliedern zu erleichtern, verwend
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

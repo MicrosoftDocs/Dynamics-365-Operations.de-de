@@ -38,3 +38,6 @@ Offene Fragen ermöglichen Befragungsteilnehmer, ihre eigene Antwort bereitzuste
     * Ein Text- oder Notiz-Eingabetyp wird für eine offene Frage verwendet.  
 6. Geben Sie im Feld "Text" die Frage ein.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

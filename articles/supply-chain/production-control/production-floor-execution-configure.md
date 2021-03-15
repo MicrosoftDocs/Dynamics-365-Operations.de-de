@@ -99,3 +99,6 @@ Ein Chargen-Einzelvorgang bereinigt regelmäßig Einträge in der Referenztabell
 1. Wählen Sie im Aktionsbereich die Option **Bereinigen Sie Client-Konfigurationen** aus.
 1. In dem Dialogfeld **Bereinigen Sie die Client-Konfiguration** stellen Sie das Feld **Anzahl der Tage** auf die Anzahl der Tage der Inaktivität (vor heute) ein, die zu berücksichtigen sind. Sie entfernen alle Konfigurationen und Anmeldedatensätze für Geräte, die während dieser Zeit nicht aktiv waren.
 1. Wählen Sie **OK**, um die relevanten Konfigurationen zu bereinigen, basierend auf der Eisntellung **Anzahl der Tage**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

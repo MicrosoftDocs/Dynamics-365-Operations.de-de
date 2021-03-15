@@ -72,3 +72,6 @@ Die folgende Tabelle enthält Empfehlungen zur Verwendung der Solver-Strategie i
 [Heuristik](https://techterms.com/definition/heuristic)
 
 [Constraint-Satisfaction-Problem](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

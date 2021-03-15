@@ -100,3 +100,6 @@ Diese Verfahren zeigt, wie Sie Angebote, die eine Gruppe von Produkte oder Diens
 11. Wechseln Sie zu "Vertrieb und Marketing" > "Verkaufsangebote" > "Alle Angebote".
     * Überprüfen Sie, ob Angebote für alle Debitoren erstellt wurden, die in der Massenaktualisierungsroutine angeben sind.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

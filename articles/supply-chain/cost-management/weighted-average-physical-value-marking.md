@@ -229,3 +229,6 @@ Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie übe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

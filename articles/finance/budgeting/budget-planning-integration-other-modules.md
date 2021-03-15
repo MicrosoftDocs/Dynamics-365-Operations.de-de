@@ -146,3 +146,6 @@ Zusätzliche Berichte, die verfügbar sind, sind zum Beispiel **Planpositionen n
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

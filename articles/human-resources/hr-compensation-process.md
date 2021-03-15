@@ -77,3 +77,6 @@ Wenn die Vergütungsbeträge für einen Mitarbeiter überprüft wurden und alle 
 Wenn für ein oder mehrere Mitarbeiterereignisse der Status in Genehmigt geändert wurde, können sie in die festen Vergütungsdatensätze des Mitarbeiters geladen werden. Dies kann erfolgen, indem jedes Mitarbeiterereignis einzeln ausgewählt wird und auf der Seite **Mitarbeiterergebnisse** auf die Schaltfläche **Mitarbeitervergütung laden** geklickt wird, oder indem auf der Seite **Ergebnisse bearbeiten** auf die Schaltfläche **Vergütung laden** geklickt wird, um alle genehmigten Mitarbeiterereignisse gleichzeitig zu laden.
 
 Durch Klicken auf **OK** im Dialogfeld **Vergütung laden** werden Vergütungsaktivitätspositionen ungleich Null zur Seite **Feste Mitarbeitervergütung** hinzugefügt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

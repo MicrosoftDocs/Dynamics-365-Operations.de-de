@@ -82,3 +82,6 @@ Strichcodemasken müssen den Strichcodes zugewiesen werden, bevor sie verwendet 
 5. Klicken Sie auf **Speichern**.
 
 Die kann nun Strichcodemaske verwendet werden, ob Strichcodes für Produkte erstellen. Die oben genannten Schritte sind Beispiele dazu, wie von Strichcodemasken für Produkte erstellt, doch sie werden auch, wie Strichcodemasken für alle anderen Strichcodetypen unterstützten erstellt. Strichcodemasken, Arten und Länge soll Verwendung in Ihrer Umgebung bestimmten angepasst werden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

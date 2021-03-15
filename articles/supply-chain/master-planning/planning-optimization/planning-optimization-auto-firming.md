@@ -66,3 +66,6 @@ Sowohl die Planungsoptimierung als auch die in Microsoft Dynamics 365 Supply Cha
 - Die automatische Bestätigung basiert auf dem Bedarfsdatum (Enddatum).
 - Um eine rechtzeitige Auftragsfeststellung zu gewährleisten, muss der Fixierungszeitrahmen länger als die Vorlaufzeit sein.
 - Wenn Sie alle Aufträge fixieren wollen, die in der aktuellen Woche beginnen müssen, muss der Fixierungszeitrahmen die Durchlaufzeit plus eine Woche sein.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Um Dateiformate auszuwählen, die auf der Grundlage X++-Code basieren, führen S
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Debitoren machen möglicherweise eine Teilzahlung, in der der verbleibende Betra
 
 
 Weitere Informationen finden Sie unter [Überfällige Debitorenzahlungen](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -253,3 +253,6 @@ Sie können reservierte Schlüsselwörter nicht als Wandlernamen für Attribute,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Diese Prozedur zeigt das Ausgleichen von Buchungen zwischen Sachkonten und das S
 7. Klicken Sie auf "Sachkontoausgleiche".
 8. Markieren Sie in der Liste die ausgewählte Zeile.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

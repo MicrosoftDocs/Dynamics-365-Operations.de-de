@@ -145,3 +145,6 @@ Wenn Sie auf einen Aufgabenleitfaden in den Suchergebnissen klicken, können Sie
 
 > [!NOTE]
 > Hilfe in modernem Retail Modern POS und Cloud POS zeigt Aufgabenleitfäden nicht entsprechend der Form oder dem Arbeitsgang an, bei dem Sie sich befinden. Sie müssen den Prozeßnamen im Suchfeld eingeben und dann **Suchen** klicken.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

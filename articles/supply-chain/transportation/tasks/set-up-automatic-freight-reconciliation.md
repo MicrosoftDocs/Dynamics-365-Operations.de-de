@@ -71,3 +71,6 @@ Dieses Verfahren zeigt, wie Daten für die automatische Frachtabstimmung eingeri
 11. Geben Sie im Feld "Unterzahlungs-Ursachencode" einen Wert ein, oder wählen Sie einen Wert aus.
 12. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -161,3 +161,6 @@ Führen Sie die folgenden Schritte aus, um den geheimen Schlüssel der Redis-Cac
 > Wenn Sie eine der Verbindungszeichenfolgen aktualisieren, müssen Sie auch die Werte der geheimen Schlüssel aktualisieren.
 
 Sie haben nun die Bereitstellung der erforderlichen Azure-Ressourcen abgeschlossen. Als Nächstes muss der Schritt [IoT-Intelligenz-Add-In in Microsoft Dynamics Lifecycle Services (LCS) installieren](iot-lcs-setup.md) ausgeführt werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

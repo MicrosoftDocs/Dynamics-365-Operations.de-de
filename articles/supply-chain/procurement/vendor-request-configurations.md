@@ -53,3 +53,6 @@ Sie können auch eine Bestätigungsmeldung eingeben, die angezeigt wird, wenn de
 4.  Öffnen Sie die Registerkarte **Land/Regionen**, um das Land/die Region auszuwählen, für das/die die Konfiguration verwendet werden soll.
 5.  Schließen Sie die Konfiguration ab, indem Sie die für Richtlinien die Standardkonfiguration befolgen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

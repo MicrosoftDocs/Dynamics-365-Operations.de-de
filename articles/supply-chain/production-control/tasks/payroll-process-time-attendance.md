@@ -69,3 +69,6 @@ Diese Prozedur zeigt, wie der Lohnprozess für Zeit und Anwesenheit aktiviert wi
 7. Klicken Sie auf "Bearbeiten".
 8. Geben Sie im Feld "Lohnvereinbarung" einen Wert ein, oder wählen Sie einen Wert aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

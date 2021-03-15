@@ -41,3 +41,6 @@ Artikelprüfung für die Clusterentnahme funktioniert auf die gleiche Weise, wie
 |        Mit der folgenden Option...        |                                    Beschreibung                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Produktbestätigung | Ermöglicht Ihnen, beim Scannen jeden Inventurartikel über das mobile Gerät zu bestätigen. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

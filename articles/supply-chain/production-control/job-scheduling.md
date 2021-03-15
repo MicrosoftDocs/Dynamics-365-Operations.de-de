@@ -76,3 +76,6 @@ Bei der Feinterminierung werden die für die Ressourcen angegebenen Effizienzgra
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

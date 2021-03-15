@@ -56,3 +56,6 @@ Bevor Sie diese Funktion nutzen können, müssen Sie sie auf Ihrem System aktivi
     > Das Formular enthält keine Zwischensummen, die im Berichtslayout definiert sind.
 
 Mit der **Bestandsfälligkeitsbericht**-Dateneinheit können Sie die Ausgabe eines Berichts **Bestandsfälligkeitsbericht** exportieren, indem Sie einen Filter für das Feld **Prozessidentifikator - Name** auf jedes Format anwenden, das von der Datenverwaltung unterstützt wird.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

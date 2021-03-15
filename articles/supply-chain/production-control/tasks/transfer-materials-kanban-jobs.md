@@ -65,3 +65,6 @@ Der Schwerpunkt dieser Prozedur liegt auf dem Ausführen eines Entnahme-Kanban-E
 2. Klicken Sie auf "Abgeschlossen".
     * Dadurch wird die Übertragung beider Einzelvorgänge abgeschlossen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Die folgende Tabelle enthält Beispiele, die zeigen, wie sich verschiedene Einst
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Kaufverträge](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

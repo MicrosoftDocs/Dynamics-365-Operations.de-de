@@ -140,3 +140,6 @@ Finden Sie die richtige Online-Schulung, persönliche Workshops und Veranstaltun
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

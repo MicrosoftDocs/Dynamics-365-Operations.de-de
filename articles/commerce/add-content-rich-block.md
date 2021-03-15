@@ -88,3 +88,6 @@ Um ein Textblockmodul einer neuen Seite hinzuzufügen und die erforderlichen Eig
 
 [Video-Player-Modul](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Administratoren können authentifizierte Benutzer die Erfassung von Webaktivitä
 ### <a name="custom-extensions"></a>Benutzerdefinierte Erweiterungen
 
 Administratoren können ihre eigenen Erweiterungen erstellen, um das Abmelde-Erlebnis für Benutzer zu verwalten. Weitere Informationen finden Sie unter [Rufen Sie die Retail Server APIs auf](e-commerce-extensibility/call-retail-server-apis.md) und [Online-Kanal-Erweiterbarkeit](e-commerce-extensibility/overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

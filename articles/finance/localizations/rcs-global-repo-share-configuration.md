@@ -72,3 +72,6 @@ Nachdem eine Konfiguration unter Ihrem Konfigurationsanbieter erstellt wurde, k�
 Die Konfiguration wird für die externe Organisation freigegeben und steht dieser Organisation im globalen Repository zur Verfügung. Von dort kann es in die RCS-Instanz der Organisation oder in deren Instanzen von Finance and Operations-Apps importiert werden.
 
 6. Um die Freigabe einer Konfiguration aufzuheben, die zuvor für eine externe Organisation freigegeben wurde, wählen Sie die Konfiguration aus und klicken Sie auf **Freigabe aufheben** und dann **OK**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

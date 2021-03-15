@@ -76,3 +76,6 @@ Schließlich fügen Sie in dem gewünschten Workflowstadium eine automatisierte 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

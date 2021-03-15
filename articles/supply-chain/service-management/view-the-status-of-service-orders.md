@@ -54,3 +54,6 @@ Zur einfachen Ermittlung der Dringlichkeit eines Serviceauftrags unterstützt da
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

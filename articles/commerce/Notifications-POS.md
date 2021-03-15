@@ -76,3 +76,6 @@ Um die Benachrichtigungsanzahl auf einer Schaltfläche anzuzeigen, müssen Sie s
 Die folgende Abbildung zeigt die Auswirkungen der Auswahl **Oben rechts** versus **Mitte** im Feld **Inhalts-Ausrichtung** für Schaltflächen für verschiedene Mengen an.
 
 ![Liveinhalt auf POS-Schaltflächen](./media/ButtonsWithLiveContent.png "Liveinhalt auf POS-Schaltflächen")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

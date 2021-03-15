@@ -164,3 +164,6 @@ Um die Entwurfsversion des bearbeitbaren Formats auszuführen, müssen Sie sie [
 
 - [Eine neue EB-Konfiguration zum Generieren von Berichten im Word-Format erstellen](../er-design-configuration-word.md)
 - [Einbetten von Bildern und Formen in generierten Dokumenten mithilfe von ER](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

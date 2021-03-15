@@ -50,3 +50,6 @@ Gehen Sie folgendermaßen vor, um nicht gespeicherten Änderungen in einer Einsa
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

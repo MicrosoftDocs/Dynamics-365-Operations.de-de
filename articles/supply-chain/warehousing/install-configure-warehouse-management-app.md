@@ -289,3 +289,6 @@ Im Fall von verlorenen oder beeinträchtigten Geräten müssen Sie den Zugriff d
 1. Stellen Sie sicher, dass die Client-ID der Anwendung mit der Client-ID übereinstimmt, die Sie sich in Schritt 2 notiert haben.
 1. Wählen Sie auf der Symbolleiste **Löschen** aus.
 1. Wählen Sie in der angezeigten Bestätigungsmeldung **Ja** aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

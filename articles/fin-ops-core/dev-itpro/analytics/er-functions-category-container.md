@@ -43,3 +43,6 @@ Mithilfe der Container-[Funktionen](er-formula-language.md#functions) für die [
 [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)
 
 [Formelsprache in der elektronischen Berichterstellung](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

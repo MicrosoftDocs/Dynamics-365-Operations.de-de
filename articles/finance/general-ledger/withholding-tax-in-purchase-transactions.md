@@ -75,3 +75,6 @@ Die Quellensteuer wird in der **Kreditorenzahlungserfassung** berechnet. Sie kö
 Der abgeleitete Quellensteuerbetrag wird von der Kreditorenzahlung abgezogen und auf das **Quellensteuerkonto** über einen dazugehörigen Beleg gebucht.
 
 ![Das Quellensteuerkonto zeigt einen dazugehörigen Beleg an](media/withholding-tax-adjusted.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

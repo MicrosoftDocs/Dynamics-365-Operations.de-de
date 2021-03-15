@@ -238,3 +238,5 @@ Sie erstellen eine Bestellung mit drei Positionen: zwei Positionen für dieselbe
 
 > [!TIP]
 > Sie können dieses Szenario wiederholen, diesmal jedoch **Größe** - *Nein* im Inforegister **Produktdimensionsmischung zulassen** in den **Lagerplatzprofilen** *BULK* festlegen, sodass keine der Produktdimensionen gemischt werden kann. In diesem Fall wird bei Erhalt der Bestellung jede Produktvariante an einen neuen Lagerplatz verschoben.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

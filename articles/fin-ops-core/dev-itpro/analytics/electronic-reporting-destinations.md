@@ -241,3 +241,6 @@ Ihr Format muss erst in der ER-Konfigurationen verfügbar sein. Wenn diese Vorau
 [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 
 [Aktivitätsabhängige EB-Ziele konfigurieren](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

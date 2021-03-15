@@ -300,3 +300,6 @@ Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Four
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleic
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

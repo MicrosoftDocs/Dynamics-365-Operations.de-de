@@ -52,3 +52,6 @@ Sie können vorläufige Budgetregistereinträge für ein bestimmtes Budgetmodell
 19. Klicken Sie auf Aktualisieren.
     * Um die Ergebnisse der Aktualisierung anzuzeigen, klicken Sie auf der blauen Leiste auf "Meldungsdetails".  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

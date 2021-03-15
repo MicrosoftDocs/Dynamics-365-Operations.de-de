@@ -86,3 +86,6 @@ Nachdem Sie die Schritte in [Einrichten von Standardbeschreibungen](#set-up-defa
 2. Wählen Sie im Feld **Bezugstabelle** die Datenbanktabelle aus, aus der der Beschreibung Parameterdaten hinzugefügt werden sollen.
 3. Wählen Sie im Feld **Referenzfeld** das Feld aus, aus dem der Beschreibung Parameterdaten hinzugefügt werden sollen.
 4. Wiederholen Sie zum Hinzufügen weiterer Parameter die Schritte 1 bis 3.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

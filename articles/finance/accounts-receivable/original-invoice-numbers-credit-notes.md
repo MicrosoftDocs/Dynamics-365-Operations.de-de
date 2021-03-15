@@ -97,3 +97,6 @@ Wenn Sie Freitext-, Kunden- und Projektgutschriften drucken, enthalten diese den
 
 > [!NOTE]
 > Stellen Sie, davon ausgehend, dass Verweise auf Originalrechnungen gedruckt werden, sicher, dass die druckbaren Formate der Dokumente korrekt konfiguriert sind.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -112,3 +112,5 @@ Wenn ein Produkt aus dem externen Lieferantenkatalog angefordert wurde, kann der
 
 - [cXML-Einkaufserweiterungen](purchasing-cxml-enhancements.md)
 - [Externe Kataloge für PunchOut-E-Procurement verwenden](use-external-catalogs-for-punchout.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

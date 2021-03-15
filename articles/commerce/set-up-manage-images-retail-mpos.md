@@ -208,3 +208,6 @@ Die Katalog-, Kategorie-, Mitarbeiter sowie die Debitorenbilder, die im Offline-
 5. Führen Sie einen ähnlichen Prozess für andere Entitäten, wie Kategorie, Mitarbeiter und Debitor durch.
 
     [![Offline-Bild](./media/offline2.png)](./media/offline2.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

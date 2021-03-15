@@ -59,3 +59,6 @@ Klicken Sie auf **Serviceverwaltung** \> **Periodisch** \> **Einsatzplanung**.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

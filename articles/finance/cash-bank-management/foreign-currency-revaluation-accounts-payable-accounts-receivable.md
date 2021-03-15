@@ -65,3 +65,6 @@ Jedes Mal, wenn Sie eine Neubewertung der Fremdwährung ausführen, wird ein Dat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

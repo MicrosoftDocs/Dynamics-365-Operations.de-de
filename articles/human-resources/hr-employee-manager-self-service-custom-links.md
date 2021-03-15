@@ -48,3 +48,6 @@ Um diese Funktion zu verwenden, aktivieren Sie **Benutzerdefinierte Links in Man
 ## <a name="see-also"></a>Siehe auch
 
 [Mitarbeiter- und Manager-Self-Service-Übersicht](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

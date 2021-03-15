@@ -71,3 +71,6 @@ Sie haben die Möglichkeit zum Erfassen der Historie eines Elements innerhalb ei
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

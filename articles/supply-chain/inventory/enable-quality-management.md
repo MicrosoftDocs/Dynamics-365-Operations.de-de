@@ -503,3 +503,6 @@ Sie müssen eine Qualitätszuordnung für jede Variante in einem Geschäftsproze
 [Qualitätsmangelverwaltung](enable-nonconformance-management.md)
 
 [Qualitätsmanagement für Lagerortprozesse](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

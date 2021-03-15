@@ -55,3 +55,6 @@ Die LCS-Einrichtung ist nun abgeschlossen. Als Nächstes muss der Schritt [Szena
 2. Wechseln Sie in LCS zu den Details Ihrer Supply Chain Management-Umgebung.
 3. Scrollen Sie zum Abschnitt **Umgebungs-Add-Ins**.
 4. Wählen Sie für das IoT-Intelligenz-Add-In **Deinstallieren** aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

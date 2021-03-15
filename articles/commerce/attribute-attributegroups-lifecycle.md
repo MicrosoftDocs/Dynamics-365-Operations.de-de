@@ -256,3 +256,6 @@ Die Standardwerte von Attributen können auf der Produktebene überschrieben wer
 
     > [!NOTE]
     > Wenn Produktmedien freigegebene und freigegebene Produktattribute erstellt werden, gelten sie für alle Produkte.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

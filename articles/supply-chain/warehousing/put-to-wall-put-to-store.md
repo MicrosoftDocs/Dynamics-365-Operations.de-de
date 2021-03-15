@@ -540,3 +540,6 @@ Wenn Sortierpositionen manuell geschlossen werden sollen, muss die Option **Sort
 
 > [!IMPORTANT]
 > Nachdem die Umlagerungsarbeit vom Sortierort aus erstellt wurde, dürfen Sie die Arbeit nicht abbrechen. Andernfalls werden die Position und die darin enthaltenen Container aus dem System gelöscht und stehen nicht zur weiteren Verarbeitung zur Verfügung. Der Bestand wird ebenfalls entfernt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

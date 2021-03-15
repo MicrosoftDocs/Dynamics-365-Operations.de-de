@@ -113,3 +113,6 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 [Filter auf einen Plan anwenden](plan-filters.md)
 
 [Abbrechen eines Planungsauftrags](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

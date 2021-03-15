@@ -96,3 +96,6 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 7. Klicken Sie auf "OK".
     * Prüfen Sie das generierte Ergebnis. Beachten Sie, das neben der Rechnungsnachricht im XML-Format eine einzelne Datei für jede Anlage erstellt wurde. Die Anhangdateien werden mit der gezippten Ausgabe im Binärformat ausgefüllt.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

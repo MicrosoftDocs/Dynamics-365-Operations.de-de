@@ -49,3 +49,6 @@ Nachdem Sie ein Anschlussprogramm eingerichtet haben, wie oben beschrieben, kön
 - **Erweitern von Anschlusspositionen** (Nach Bedarf) – Erweitern Sie die Anzahl der Male, die ein Anschlussereignis wiederholt werden kann. Die Wiederholung von Lieferungen kann sich dann über den Zeitpunkt hinaus verlängern, die im Feld **Anschlusswiederholungs-Schwellenwert** in den Callcenterparametern festgelegt wurde.
 - **Ausführen einer Anschlusssaktualisierung** (Nach Bedarf) – Synchronisieren Sie Änderungen zwischen dem Anschlussprogramm und den übergeordneten Anschlussaufträgen.
 - **Übergeordnete Anschlusspositionen und -aufträge schließen** – Schließen Sie Anschlussaufträge.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

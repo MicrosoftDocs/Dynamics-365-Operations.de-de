@@ -63,3 +63,6 @@ Sie können auch Wartungsarbeitergruppen erstellen und diesen Wartungsarbeiter z
 6. Wenn eine Ressourcengruppe der ausgewählten Wartungsarbeitergruppe zugeordnet sein soll, wählen Sie **Aus Ressourcengruppe kopieren** aus. Wählen Sie im Feld **Gruppe** die Ressourcengruppe aus, aus der Kalendereinstellungen kopiert werden sollen. Wählen Sie anschließend im Feld **Arbeitskraftgruppe** die Arbeitskraftgruppe aus, zu der die Kalendereinstellungen der Ressourcengruppe kopiert werden sollen. Dieser Schritt ist nur relevant, wenn Wartungsarbeiter während der Arbeitsauftragsplanung den Kalender verwenden sollen, der einer Ressource zugeordnet ist.
 
     Das Feld auf dem Inforegister **Details** zeigt die Anzahl der Wartungsarbeiter, die in der ausgewählte Wartungsarbeitergruppe eingerichtet wurden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

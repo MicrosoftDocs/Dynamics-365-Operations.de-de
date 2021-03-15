@@ -107,3 +107,6 @@ Im folgenden Screenshot wird ein Beispiel der Berechnungsergebnisse in **Datumsk
 ![Beispiel Berechnungsergebnisse in Datumskontrolle für Arbeitsaufträge](media/03-controlling-and-reporting.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

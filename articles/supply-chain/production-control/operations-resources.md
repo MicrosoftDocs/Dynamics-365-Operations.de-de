@@ -84,3 +84,6 @@ Wenn Sie eine Aktivität wie einen Arbeitsplan-Arbeitsgang oder eine Projektstun
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

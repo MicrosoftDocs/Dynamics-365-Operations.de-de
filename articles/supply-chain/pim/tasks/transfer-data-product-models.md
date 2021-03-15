@@ -36,3 +36,6 @@ Der Export von Daten für ein Produktkonfigurationsmodell setzt voraus, dass Sie
 5. Klicken Sie auf "Produktmodell exportieren".
     * Das Downloadverhalten variiert von Browser zu Browser. Es hängt davon ab, wie die Sicherheitseinstellungen eingerichtet werden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

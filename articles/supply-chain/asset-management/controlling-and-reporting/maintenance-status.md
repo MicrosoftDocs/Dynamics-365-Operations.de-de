@@ -67,3 +67,6 @@ Im Screenshot unten wurden Informationen über funktionale Standorte hinzugefüg
 
 ![Beispiel des monatlichen Arbeitsaufwands mit funktionalen Standorten](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

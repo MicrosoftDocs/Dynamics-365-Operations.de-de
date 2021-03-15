@@ -64,3 +64,6 @@ Planen Sie eine automatische Aufgabe, um den Verlauf der Stapelverarbeitungsauft
 
 8. Ändern Sie ggf. weitere Parameter unter **Im Hintergrund ausführen** und wählen Sie dann **OK** aus.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

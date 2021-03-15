@@ -52,3 +52,6 @@ Weitere Informationen finden Sie in folgenden Themen:
 [Bankfazilitätsvereinbarung für Kreditbrief erstellen](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

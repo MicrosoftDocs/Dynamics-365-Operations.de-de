@@ -139,3 +139,6 @@ Führen Sie diese Schritte aus, um ein Onboarding von Geschäftspartnern und Ben
 [Festlegen von Produktmengenbeschränkungen für B2B-E-Commerce-Websites](quantity-limits.md)
 
 [Nummernkreise – Übersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

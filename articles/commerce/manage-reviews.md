@@ -131,3 +131,6 @@ Führen Sie die folgenden Schritte aus, um Bewertungs- und Prüfdaten im Commerc
 [Konfigurieren von Bewertungen und Prüfungen](configure-ratings-reviews.md)
 
 [Synchronisieren von Produktbewertungen in Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

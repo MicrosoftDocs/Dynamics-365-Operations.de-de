@@ -41,3 +41,6 @@ Nachdem Sie die Abschreibungskonvention für Anlagen aktualisiert haben, können
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Wählen Sie eines der folgenden Themen aus, um zu beginnen.
 [Dokumentstatus und -Lebenszyklus](document-states-overview.md)
 
 [Aktivieren und verwenden Sie die kanalübergreifende Freigabe](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

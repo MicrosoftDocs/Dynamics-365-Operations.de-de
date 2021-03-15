@@ -59,3 +59,6 @@ Bei der Verwendung von Veröffentlichungsgruppen mit Experimenten sind einige wi
 
 ## <a name="next-step"></a>Nächster Schritt
 [Ein Experiment ausführen und überwachen](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

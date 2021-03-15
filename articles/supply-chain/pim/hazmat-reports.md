@@ -109,3 +109,6 @@ Wenn die Gefahrstofffunktion in Ihrem System aktiviert ist, enthält der **Frach
 ## <a name="packing-list-report"></a>Kommissionierlistenbericht
 
 Wenn die Gefahrstofffunktion in Ihrem System aktiviert ist, enthalten die Kommissionierlisten zusätzliche Informationen, die sich auf den Versanddrucktext für einen Artikel beziehen. Dieser Bericht ist auf der Seite **Alle Ladungen** verfügbar, wie gewohnt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

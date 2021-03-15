@@ -119,3 +119,6 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 23. Klicken Sie auf "Speichern".
 24. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

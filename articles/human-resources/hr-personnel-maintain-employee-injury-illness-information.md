@@ -93,3 +93,6 @@ Diese Aufgabenerfassung enthält die grundlegenden Schritte zum Erstellen eines 
 36. Klicken Sie auf "Speichern".
     * Der Anfragestatus kann jederzeit aktualisiert werden.  Setzen Sie die Anfrage auf "In Bearbeitung", wenn der Prozess der Verletzung oder Krankheit gerade bearbeitet wird.  Wenn der Vorfall erst geschlossen ist, können Sie nur Kosten, Behandlungen oder Archivierungen, die mit dem Vorfall in Zusammenhang stehen, hinzufügen oder entfernen.  Wenn Sie andere Informationen ändern wollen, öffnen Sie die Anfrage erneut.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Dies ist der vierte von fünf Aufgaben, die das Verfahren für Kreditorenzahlung
 4. Klicken Sie in der Liste auf den Link in der Zeile "SEPA CT".
 5. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

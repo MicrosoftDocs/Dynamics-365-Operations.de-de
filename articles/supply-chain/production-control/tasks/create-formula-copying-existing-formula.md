@@ -56,3 +56,6 @@ Im folgenden Verfahren sehen Sie, wie schnell eine neue Formel durch das Kopiere
 3. Klicken Sie auf "OK".
 4. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Als Nächstes sollten Sie den Ausgabentypen Konten zuordnen. Diese Konten werden
 7. Wählen Sie in den entsprechenden Feldern das Hauptkonto für Finanzierungsleasing und das Hauptkonto für Ausrüstungs-Leasingvertrag aus.
 
 Wenn Sie diese Schritte ausgeführt haben, können Sie Ausgaben über **Zahlungsplan für Nebenkosten beim Leasing**-Zeilen auf der **Mietvertragsdetails**-Seite eines ausgewählten Mietvertrags hinzufügen. Alternativ können Sie beim Erstellen eines neuen Mietvertrags Kosten hinzufügen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

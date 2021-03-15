@@ -105,3 +105,6 @@ Wenn Sie ein Dokument buchen, wird dem Dokument die entsprechende Nummernkreisgr
 
 > [!NOTE]
 > Für einige Länder gibt es bereits eine spezifische Logik für die Nummerierung von Dokumenten. In diesem Fall überschreibt die länderspezifische Logik die Funktion **Chronologische Nummerierung**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

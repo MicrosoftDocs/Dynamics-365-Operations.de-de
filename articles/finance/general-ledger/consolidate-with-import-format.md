@@ -42,3 +42,6 @@ In der folgenden Tabelle ist das Importformat aufgeführt, das Sie verwenden sol
 | 6            | BusinessUnit, 1 Abteilung, 2 | Die Finanzdimensionsattribute, die in der Segmentreihenfolge definiert sind.<p>Sie können die Seite **Exportieren** nutzen, um zu überprüfen, wie die Attribute definiert sind.</p> |
 | 7            | 002,1,658 | <ul><li>Der Finanzdimensionswert</li><li>Die Finanzdimension als Index, der in RecordDimensions bereitgestellt wird</li><li>Eine mehrdeutige, eindeutige Datensatz-ID, die der eindeutigen Datensatz-ID von RecordTrans oder RecordTrans2 zugeordnet ist</li></ul> |
 | 8            | 002,1,1 | <ul><li>Dimensionswerte, die der Buchung aus RecordBudget zugeordnet sind</li><li>Die Finanzdimension als Index, der in RecordDimensions bereitgestellt wird</li><li>Eine mehrdeutige Positionsdatensatz-ID, die an der Reihenfolge der Buchungspositionen in der Datei ausgerichtet ist</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

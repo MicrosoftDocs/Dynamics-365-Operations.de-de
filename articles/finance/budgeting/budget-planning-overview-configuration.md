@@ -204,3 +204,6 @@ Sie können auch das Menü **Aktionen** verwenden, um einen neuen Prozess anzule
 Ein anderer nützlicher Befehl im Menü **Aktivitäten** ist **Budgetprozessstatus anzeigen**. Dieser Befehl zeigt die Budgetpläne in einem Prozess grafisch an, zusammen mit relevanten Daten, wie z.B. dem Workflow-Status der Pläne, Zusammenfassungen nach Betrag und Einheit und die Navigation zu den Budgetplänen selbst mit einem Klick.
 
 [![Status des Budgetplanungsprozesses](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

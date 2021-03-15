@@ -86,3 +86,6 @@ Das Ergebnis ist ein Planauftrag von 25 Stück. (= 25 Stk. &minus; 0 Stk.), um L
 [Planhistorie und Planungsprotokolle anzeigen](plan-history-logs.md)
 
 [Abbrechen eines Planungsauftrags](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

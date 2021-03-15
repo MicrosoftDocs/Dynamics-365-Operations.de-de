@@ -101,3 +101,6 @@ Führen Sie folgende Schritte aus, um eine URL zu veröffentlichen.
 [Überprüfen der Zugänglichkeit des Seiteninhalts](verify-accessibility.md)
 
 [Dynamische E-Commerce-Seiten basierend auf URL-Parametern erstellen](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

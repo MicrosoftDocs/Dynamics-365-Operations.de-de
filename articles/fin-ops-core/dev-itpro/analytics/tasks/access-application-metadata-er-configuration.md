@@ -125,3 +125,6 @@ In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Ser
 > [!NOTE]
 > Diese Art des Informationsabrufs von Informationen zu Anwendungsmetadaten ist als einzige für lokal bereitgestellte Anwendungen verfügbar (wenn lokale Geschäftsdaten (LBD) oder ein lokales Bereitstellungsmodell verwendet werden).
         
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -127,3 +127,6 @@ Das Dynamics 365 Human Resources Benutzerhandbuch enthält Anweisungen zum Einri
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

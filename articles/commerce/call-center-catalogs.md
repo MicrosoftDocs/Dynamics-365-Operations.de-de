@@ -100,3 +100,6 @@ Auf der Registerkarte **Kataloge** sind auch Optionen zur Konfiguration eines **
 ## <a name="additional-notes"></a>Weitere Hinweise
 
 Derzeit wird eine Quellcodekennung für einen Kundenauftrag im Call Center verwendet, um Preise, Aktionen, Skripte und weitere/ergänzende Verkäufe, die katalogspezifisch sind, zu steuern. Das System verbietet oder verhindert nicht, daß ein Produkt, das nicht im Katalog enthalten ist, auf dem Auftrag bestellt wird. Wenn ein Artikel bestellt wird, der nicht Teil des Katalogs ist, verwendet das System zunächst die **Preisgruppe** die auf dem Callcenterkanal definiert ist (**Einzelhandel und Handel** \>**Kanäle** \> **Callcenter** \> **Alle Callcenter**) für Artikelpreise oder Aktionen. Wenn kein bestimmter Kanalpreis gefunden wird, wird der Basisverkaufspreis des Artikels verwendet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

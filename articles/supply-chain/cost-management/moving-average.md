@@ -154,3 +154,6 @@ In diesem Beispiel für flexiblen Durchschnitt wird der Lagerwertbericht gedruck
 
 > [!NOTE]
 > Sie können das Hauptbuch nicht mit dem Bestand abstimmen, indem Sie die Option **Transaktionsuhrzeit-Sortierung** verwenden. Der Bericht muss gedruckt werden, indem die Option **Buchungsdatum** verwendet wird.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

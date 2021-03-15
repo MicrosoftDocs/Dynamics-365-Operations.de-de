@@ -65,3 +65,6 @@ In diesem Thema wird erläutert, wie Sie einen Beschaffungskatalog erstellen. Di
 7. Wählen Sie **Zu Positionen hinzufügen**.
 8. Wählen Sie **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

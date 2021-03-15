@@ -186,3 +186,6 @@ Wenn eine Korrektur des Debitor- oder Kreditorsachkonto vorgenommen wird, muss e
 ### <a name="the-system-allows-it"></a>"Das System erlaubt es"
 
 Organisationen verwenden häufig nur eine Belegfunktionen, da sie das System verwenden können, ohne die Auswirkungen zu veranschaulichen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Sie können in Dynamics 365 Human Resources zukünftige Lebensereignisse planen.
    | Position | Die Positionsnummer des zukünftigen Lebensereignisses. |
 
 4. Wählen Sie **Speichern**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

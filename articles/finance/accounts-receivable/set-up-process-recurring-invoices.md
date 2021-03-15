@@ -66,3 +66,6 @@ Nach dem Buchen von Serienrechnungen können Sie die Rechnungen auf der Seite mi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

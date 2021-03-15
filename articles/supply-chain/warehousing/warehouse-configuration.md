@@ -118,3 +118,6 @@ Um das Definieren der Aktivitäten, die den einzelnen Richtlinienpositionen für
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

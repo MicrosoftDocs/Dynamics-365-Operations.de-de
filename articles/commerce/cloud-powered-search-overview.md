@@ -81,3 +81,6 @@ Verbessertes Sortieren in Dynamics 365 Commerce ermöglicht Kunden, Suchergebnis
 [Standard-Kategorie-Landingpage und Suchergebnisseite – Übersicht](category-search-page-overview.md)
 
 [Verwalten von SEO-Metadaten](manage-seo-metadata.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

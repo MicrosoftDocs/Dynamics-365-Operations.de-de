@@ -141,3 +141,6 @@ Um ein Containerspielmodul einer neuen Seite hinzuzufügen und die erforderliche
 [Kopfzeilenmodul](author-header-module.md)
 
 [Fußzeilenmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ Wenn Sie Seiten in der Vorschau anzeigen, die auf der Vorlage basieren, der Sie 
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

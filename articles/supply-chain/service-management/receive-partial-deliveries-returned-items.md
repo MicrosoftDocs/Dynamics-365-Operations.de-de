@@ -50,3 +50,6 @@ Wenn eine Rücklieferung weniger als die volle Menge einer Rücklieferungspositi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

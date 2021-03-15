@@ -931,3 +931,6 @@ Sie können Wellenetiketten von den folgenden Seiten anzeigen und erneut drucken
 - Wellenbeschriftungsverlauf
 
 Für die meisten dieser Seiten finden Sie die relevante Funktion durch Auswahl der **Wellenetiketten** in der Gruppe **Zugehörige Informationen** auf der Registerkarte **Lieferungen** des Aktionsbereichs.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

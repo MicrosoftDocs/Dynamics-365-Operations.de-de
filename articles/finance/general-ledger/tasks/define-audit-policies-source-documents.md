@@ -87,3 +87,6 @@ Dieses Thema erklärt, wie und Überwachungsrichtlinienregeln eingerichtet und a
 57. Erweitern Sie den Abschnitt **Zuordnungen**.
 58. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

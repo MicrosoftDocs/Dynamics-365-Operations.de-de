@@ -145,3 +145,6 @@ Die Dimension „Version“ funktioniert wie die anderen Produktdimensionen. Auf
 
 > [!IMPORTANT]
 > Wenn Sie die Dimension „Version“ aktivieren und verwenden, funktionieren einige Lösungen, die auf die Lagerungsdimensionen verweisen, möglicherweise nicht wie erwartet. Wenden Sie sich an den unabhängigen Softwareanbieter (ISV), um diese Probleme zu bestätigen und zu beheben. Weitere Informationen finden Sie unter [Die Dimension „Version“ aktivieren](#enable-version-dim).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

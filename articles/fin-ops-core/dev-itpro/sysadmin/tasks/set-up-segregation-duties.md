@@ -42,3 +42,6 @@ Sie können Regeln einrichten, Aufgaben abzugrenzen, die von unterschiedlichen B
 
 > [!IMPORTANT] 
 > Die Einhaltung der Regeln für die Aufgabentrennung wird beim Erstellen einer Regel nicht überprüft. Sie können eine Regel erstellen, die einen Konflikt für vorhandene Rollen erstellt. Bestehende Benutzerrollenzuweisungen können ebenfalls im Widerspruch zur neuen Regel stehen. Sie müssen die Einhaltung überprüfen, nachdem Sie eine Regel erstellt oder geändert haben. Weitere Informationen finden Sie unter [Konflikte bei der Aufgabentrennung erkennen und beheben](identify-resolve-conflicts-segregation-duties.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

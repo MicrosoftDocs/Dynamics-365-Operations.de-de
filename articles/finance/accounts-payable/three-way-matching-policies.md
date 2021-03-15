@@ -144,3 +144,6 @@ Weitere Informationen finden Sie unter [Übersicht zum Abgleich der Kreditorenre
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

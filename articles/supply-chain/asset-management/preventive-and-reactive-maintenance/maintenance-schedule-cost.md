@@ -53,3 +53,6 @@ In der folgende Abbildung wird die Ergebnisse einer Wartungsplankostenberechnung
 
 ![Abbildung 1](media/17-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

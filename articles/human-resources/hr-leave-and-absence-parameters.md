@@ -92,3 +92,6 @@ Bevor Sie Urlaubs- und Abwesenheitspläne einrichten in Dynamics 365 Human Resou
 ## <a name="see-also"></a>Siehe auch
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

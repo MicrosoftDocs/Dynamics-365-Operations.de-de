@@ -48,3 +48,6 @@ Im folgenden Verfahren wird gezeigt, wie Sie Bewerbungen prüfen, die über die 
 2. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 3. Erweitern Sie den Abschnitt "Anhänge".
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

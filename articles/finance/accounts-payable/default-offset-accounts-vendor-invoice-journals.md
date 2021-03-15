@@ -97,3 +97,6 @@ Verwenden Sie die folgende Tabelle, um zu entscheiden, wohin Standardkonten für
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

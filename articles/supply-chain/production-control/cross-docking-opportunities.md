@@ -126,3 +126,6 @@ Nachdem ein Produkt an der Fertigungsstraße als fertig gemeldet wird, wird es a
 -   Das Crossdockingszenario wird für Chargen- und seriengesteuerte Artikel unterstützt. Die Chargen- und Seriennummerdimensionen über und unter dem Lagerplatz in der Reservierungshierarchie sind definiert. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

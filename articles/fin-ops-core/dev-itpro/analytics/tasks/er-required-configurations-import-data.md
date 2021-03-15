@@ -254,3 +254,6 @@ Führen Sie diese Formatzuordnung für Testzwecke aus. Verwenden Sie die Datei 1
 27. Schließen Sie die Seite.
 28. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

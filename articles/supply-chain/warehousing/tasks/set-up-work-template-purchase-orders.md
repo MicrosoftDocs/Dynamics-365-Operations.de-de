@@ -60,3 +60,6 @@ In diesem Thema wird beschrieben, wie Sie eine einfache Arbeitsvorlage einrichte
 6. Geben Sie im Feld **Arbeitsklassenkennung** einen Wert ein. Die Entnahme- und Einlagerungsanweisungen sind ein Satz. Jede Entnahme/Einlagerung muss dieselbe Arbeitsklasse aufweisen. Verwenden Sie die gleiche Arbeitsklasse, die Sie für die Entnahmeanweisung angegeben haben.  
 7. Wählen Sie **Speichern**. Beachten Sie, dass das Kontrollkästchen **Valid** nun aktiviert ist.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

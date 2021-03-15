@@ -56,3 +56,6 @@ Wenn Ihre Organisation wächst, müssen Sie mit der Nachfolgeplanung beginnen. W
 27. Wählen Sie **Ergebnis** aus.
 28. Wählen Sie **Bericht**. Der Bericht führt die besten Übereinstimmungen oben im Bericht auf. Sie können sehen, dass ein Lückenelement aufgeführt ist. Eine Lücke ist der Unterschied zwischen der Qualifikationszuordnungsstufe und der Qualifikationsstufe der Person.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

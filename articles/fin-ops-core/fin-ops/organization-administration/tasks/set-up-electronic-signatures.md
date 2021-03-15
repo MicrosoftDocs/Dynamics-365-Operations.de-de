@@ -77,3 +77,6 @@ Verwenden Sie diese Prozedur, um elektronische Signaturen einzurichten. Eine ele
 10. Klicken Sie auf "Speichern".
 11. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

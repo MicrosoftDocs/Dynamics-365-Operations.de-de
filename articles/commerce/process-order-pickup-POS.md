@@ -57,3 +57,6 @@ Wenn Sie die Abholmenge ändern müssen, nachdem Sie die Artikel ausgewählt hab
 Wenn die **Verbesserte Benutzererfahrung bei der Abwicklung der Bestellungsabholung am Point of Sale**-Funktion aktiviert ist, können Organisationen eine Schaltfläche für den Vorgang **Abholpositionen ändern** dem Bildschirmlayout der Transaktionsseite hinzufügen. Nachdem Sie den Einkaufswagen der Transaktion am POS erstellt und Artikel ausgewählt haben, können Sie **Abholpositionen ändern** auswählen, wenn Sie die Abholartikel ändern müssen, aber nicht die gesamte Transaktion stornieren möchten. In dem **Abholpositionen ändern**-Dialogfeld, das angezeigt wird, können Sie die Abholpositionen und -mengen ändern. Der Einkaufswagen der Transaktion wird dann aktualisiert, um Ihre Änderungen widerzuspiegeln.
 
 ![Dialogfeld „Abholartikel ändern“](media/pickupchange.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

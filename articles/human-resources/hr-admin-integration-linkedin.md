@@ -190,3 +190,6 @@ Die folgenden Details werden importiert und in den neuen Mitarbeiterdatensatz au
 
 [Virtuelle Dataverse-Tabellen konfigurieren](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Was ist Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

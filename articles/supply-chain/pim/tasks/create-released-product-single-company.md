@@ -102,3 +102,6 @@ In dieser Prozedur wird erläutert, wie ein einzelnes freigegebenes Produkt im R
 12. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 13. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

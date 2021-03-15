@@ -52,3 +52,6 @@ Dies ist die dritte von acht Prozeduren, die beschreibt, wie Kombinationen für 
 20. Schließen Sie die Seite.
 21. Schließen Sie das Formular **Details für freigegebene Produkte**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Die Verwendung des Workflowsystems in der Organisation verspricht mehrere Vortei
 + [Konfigurieren paralleler Verzweigungen in einem Workflow](configure-parallel-branch-workflow.md)
 + [Konfigurieren von Positionsworkflows](configure-line-item-workflow.md)
 + [Workflow-FAQs](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

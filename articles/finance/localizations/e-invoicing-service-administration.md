@@ -138,3 +138,6 @@ Die Umgebung muss auf der Registerkarte **Übermittlungsdienste** der Seite **Pa
 
 - [Elektronische Rechnungen in RCS konfigurieren](e-invoicing-configuration-rcs.md)
 - [Elektronische Rechnungen in Finance und Supply Chain Management ausstellen](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

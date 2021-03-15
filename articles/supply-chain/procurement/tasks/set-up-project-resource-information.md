@@ -51,3 +51,6 @@ Diese Prozedur zeigt Ihnen an, wie eine Projektressource eingerichtet wird. Dies
 20. Klicken Sie auf "Speichern".
 21. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Der Abschreibungsvorschlag am 31. Januar lautet wie folgt: Abschreibung pro Einh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

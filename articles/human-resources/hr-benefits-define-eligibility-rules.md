@@ -67,3 +67,6 @@ Dieses Thema beschreibt, wie Sie Vorteilsberechtigungsregeln und -richtlinien er
 10. Wählen Sie **Speichern** aus.
 11. Schließt das Formular.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

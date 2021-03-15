@@ -62,3 +62,6 @@ Im folgenden Verfahren wird dargestellt, wie eine Maßeinheit definiert wird, Ü
 6. Klicken Sie auf **OK**.
 7. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -167,3 +167,6 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 [FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) konzentrieren sich auf die Bereitstellung technischer Tiefe und Best Practices, die Kunden und Partnern detailliertes, themenspezifisches Wissen vermitteln.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -151,3 +151,6 @@ Wenn eine Produktvariante bereits in einer Firma A freigegeben wurde und Sie ver
 Die Schaltfläche **Neu** auf der Seite **Freigegebene Produktvarianten** erstellt die Variante und gibt sie im Firmenkontext frei. Wenn die Variante bereits erstellt wurde, können Sie die **Neu**-Schaltfläche nicht verwenden, um sie in einer anderen Firma freizugeben.
 
 Um das Problem zu beheben, öffnen Sie die Seite **Produktstamm** und wählen Sie **Produkt freigeben**, um die vorhandene Variante in der gewünschten Firma freizugeben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Der Produktionsplaner berechnet das Material und die Kapazit√§tsanforderungen f√
 2. Klicken Sie auf "Umwandeln".
 3. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

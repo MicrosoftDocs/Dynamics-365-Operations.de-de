@@ -88,3 +88,6 @@ In der zweiten Jahreshälfte teilt Ihnen Ihr Debitor mit, dass die Servicebesuch
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

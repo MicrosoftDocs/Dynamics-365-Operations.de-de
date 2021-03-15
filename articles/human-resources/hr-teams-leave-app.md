@@ -228,3 +228,6 @@ Um den Zugriff auf die Human Resources-App in Microsoft Teams für Ihre Organisa
 [Microsoft Teams herunterladen und installieren](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Microsoft Teams-Hilfecenter](https://support.office.com/teams)</br>
 [Human Resources-App in Teams](hr-admin-teams-leave-app.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

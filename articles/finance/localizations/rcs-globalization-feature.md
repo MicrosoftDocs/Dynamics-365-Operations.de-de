@@ -251,3 +251,6 @@ Benutzer von Globalisierungsdiensten können die Umgebung verwalten, um eine Glo
 10. Wählen Sie **Veröffentlichen**, um die Umgebung zu veröffentlichen.
 
     ![Veröffentlichte Umgebung](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

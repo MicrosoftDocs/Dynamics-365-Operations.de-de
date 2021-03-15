@@ -42,3 +42,6 @@ Benutzer können die Verkaufstrends und -muster pro Stunde in Echtzeit auf unter
 - **Shopverwaltung**-Arbeitsbereich &gt; **Retail and Commerce** &gt; **Kanäle** &gt; **Shopverwaltung** &gt; **Berichte** &gt; **Bericht „Kanal Umsatz nach Stunde”**
 - **Shopfinanzdaten**-Arbeitsbereich &gt; **Retail and Commerce** &gt; **Kanäle** &gt; **Shopfinanzdaten** &gt; **Berichte** &gt; **Bericht „Kanal Umsatz nach Jahr”**
 - **Abfragen und Berichte**-Abschnitt &gt; **Retail and Commerce** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht „Kanal Umsatz nach Stunde”**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

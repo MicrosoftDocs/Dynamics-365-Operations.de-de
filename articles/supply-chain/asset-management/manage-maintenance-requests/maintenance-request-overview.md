@@ -72,3 +72,6 @@ Die Schaltflächen im Aktivitätsbereich sind auf Registerkarten zusammengefasst
 | Anlagenausleihe senden                  | Wählen Sie eine Anlagenausleihe aus, die als temporäre Ersetzung der Anlage dienen soll, die in der ausgewählten Wartungsanfrage ausgewählt ist. |
 | Anlagenausleiche zurückgeben                | Erfassen Sie die Anlagenausleihe als zurückgegeben. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Diese Prozedur führt Sie durch das Erstellen von Produktvarianten für einen Pr
     * Sie können Beschreibungen für alle Ihre Varianten anhand der Kombination von Produktdimensionswerten generieren. Die Beschreibungen sind optional.  
 5. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

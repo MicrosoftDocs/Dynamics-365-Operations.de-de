@@ -77,3 +77,6 @@ Die ausgewählten Serviceaufträge werden entweder storniert, oder der Status **
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

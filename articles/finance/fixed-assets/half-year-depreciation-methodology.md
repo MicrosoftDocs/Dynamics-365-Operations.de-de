@@ -41,3 +41,6 @@ Das erste Dienstjahr endet im Dezember 2020, d.h. die fünfjährige Nutzungsdaue
    [![Abschreibungsplan für die Halbjahresabschreibungskonvention](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 Die verlängerten Abschreibungszeiträume die durch die Halbjahreskonvention hinzugefügt werden, ermöglichen eine genauere Zuordnung der Abschreibungen. Die Sechsmonatsvereinbarung stellt die Abschreibungskosten gleichmäßiger dar, was für die Berichterstattung in der Gewinn- und Verlustrechnung nützlich ist.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

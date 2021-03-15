@@ -78,3 +78,6 @@ Schichtmodelle definieren die Arbeitsstunden in einer Woche und werden verwendet
 3. Erweitern Sie den Abschnitt "Sonntag".
 4. Wählen Sie "Ja" im Feld "Keine Abholung" aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

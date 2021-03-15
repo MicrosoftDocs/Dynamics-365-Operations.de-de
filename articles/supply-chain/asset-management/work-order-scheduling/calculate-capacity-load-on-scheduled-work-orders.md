@@ -57,3 +57,6 @@ Wenn Sie Auslastungstypen **Kapazit채t** oder **Rest** f체r die Berechnung ausw�
 
 Weitere Informationen dar체ber, wie die Kapazit채tsauslastung f체r Wartungsplanpositionen und nicht geplante Arbeitsauftr채ge berechnet wird, finden Sie unter [Berechnen der Kapazit채tsauslastung](../capacity-planning/calculate-capacity-load.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

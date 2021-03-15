@@ -45,3 +45,6 @@ Diese Aufzählung bietet den Optionssatz für die Statuswerte eines RecruitingRe
 
 [Einführung der API zur Integration des Bewerber-Tracking-Systems](hr-admin-integration-ats-api-introduction.md)<br>
 [Beispielabfrage für den Personalbeschaffungsantrag](hr-admin-integration-ats-api-recruiting-request-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

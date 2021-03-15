@@ -51,3 +51,6 @@ Dieser Leitfaden zeigt Ihnen, wie man einen Ausschreibungstyp erstellt und diese
 8. Klicken Sie auf "OK".
 9. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

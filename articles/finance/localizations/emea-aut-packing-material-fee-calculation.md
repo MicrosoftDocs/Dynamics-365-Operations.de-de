@@ -111,3 +111,6 @@ Der Bericht **Berechnung der Verpackungsmaterialgebühren** enthält Daten zu Ve
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

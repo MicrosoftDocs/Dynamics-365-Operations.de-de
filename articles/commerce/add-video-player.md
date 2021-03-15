@@ -105,3 +105,6 @@ Um ein Video-Player-Modul einer neuen Seite hinzuzufügen und die erforderlichen
 [Textblockmodul](add-content-rich-block.md)
 
 [Inhaltsblockmodul](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

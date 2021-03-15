@@ -38,3 +38,6 @@ Servicevorlagengruppen dienen zum Sortieren und Filtern von Servicevorlagen.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

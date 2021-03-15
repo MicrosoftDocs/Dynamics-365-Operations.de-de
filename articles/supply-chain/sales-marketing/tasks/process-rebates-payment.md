@@ -50,3 +50,6 @@ Diese Verfahren zeigt, wie genehmigte und verarbeiteten Debitorenrückvergütung
     * Beachten Sie, dass eine Buchung für einen negativen Betrag, der gesamte Nachlassbetrag, ohne Rechnungsreferenz darstellend zum Debitorensaldo hinzugefügt wurde.   
 15. Klicken Sie auf "Abbrechen".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

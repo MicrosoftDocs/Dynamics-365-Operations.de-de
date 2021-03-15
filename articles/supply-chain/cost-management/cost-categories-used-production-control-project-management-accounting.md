@@ -43,3 +43,6 @@ Zusätzliche Schaltflächen auf der Seite **Kostenkategorien** ermöglichen Ihne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

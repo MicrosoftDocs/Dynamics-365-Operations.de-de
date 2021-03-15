@@ -97,3 +97,6 @@ Die folgende Abbildung zeigt ein Beispiel für das resultierende Diagramm.
 ![Visualisierung von Zone vs. Arbeitsstatus](media/work-viz-chart.png "Visualisierung von Zone vs. Arbeitsstatus")
 
 Dieses Diagramm zeigt zwei Zonen mit den Namen **FLOOR** und **BULK**, sowie eine Zone mit dem Namen **Blank**. Die Zone **Leer** repräsentiert alle Arbeitszeilen, die nicht Mitglied einer Zone sind. Das Diagramm zeigt immer alle nicht zugehörigen gefilterten Daten als **Leerzeichen** an, um eine möglichst gute Sichtbarkeit zu gewährleisten. In der Zone **FLOOR** zeigt das Diagramm drei geschlossene Zeilen und vier offene Zeilen. In der Zone **BULK** zeigt das Diagramm vier geschlossene Linien, eine offene Linie und 24 gelöschte Linien. Schließlich zeigt das Diagramm acht geschlossene Zeilen, die zu keiner Zone gehören und daher als **Leer** aufgeführt sind.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

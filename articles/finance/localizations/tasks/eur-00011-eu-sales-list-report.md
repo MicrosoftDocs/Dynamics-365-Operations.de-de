@@ -100,3 +100,6 @@ Diese Prozedur ist für Buchhalter vorgesehen.
 7. Klicken Sie auf "OK".
 8. Wählen Sie im Feld "Abschnitt" "Abgeschlossen" aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

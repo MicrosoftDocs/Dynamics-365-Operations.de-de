@@ -86,3 +86,6 @@ Um den integrierten [Microsoft Accessibility Insights](https://accessibilityinsi
 [Füllen einer Kategorie-Landingpage](enrich-category-page.md)
 
 [Dynamische E-Commerce-Seiten basierend auf URL-Parametern erstellen](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Die folgende Tabelle enthält die Visualisierungen, die für jede Berichtsseite 
 |    Kreditoren-/Händlersaldo     |                                                                                                                   <ul><li>Kreditoren-/Händlersaldo</li><li>Kreditoren-/Händlersaldo nach Unternehmen</li><li>Kreditoren-/Händlersaldo-Details</li></ul>                                                                                                                    |
 |    Rechnungen mit Zahlungssperre     |                                                                                         <ul><li>Rechnungen mit Zahlungssperre</li><li>Rechnungen mit Zahlungssperre, Details</li><li>Rechnungen mit Zahlungssperre nach Unternehmen</li><li>Rechnungen mit Zahlungssperre nach Lieferantengruppe</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

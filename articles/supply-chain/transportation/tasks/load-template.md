@@ -53,3 +53,6 @@ Dieses Thema beschreibt, wie Sie Ladungsvorlagen festlegen und wie Sie eine Ladu
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Angebot und Nachfrage** in der Gruppe **Hinzufügen** die Option **Zu neuer Ladung** aus.
 1. Wählen Sie im Dialogfeld **Vorlage laden** im Feld **Vorlage-ID laden** die Vorlage, die Sie anwenden wollen.
 1. Wählen Sie **OK**, um die Vorlage anzuwenden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

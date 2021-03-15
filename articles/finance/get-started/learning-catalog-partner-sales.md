@@ -41,3 +41,6 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 | Inhalt | Beschreibung  | Formate  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Dynamics 365-Grundlagen](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Beweisen Sie, dass Sie Microsoft Dynamics 365 verstehen: Power Platform; Cloudkonzepte; Lizenzierungsoptionen und Bereitstellung sowie Freigabenoptionen. | Prüfung; Kosten variieren nach Regionen |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

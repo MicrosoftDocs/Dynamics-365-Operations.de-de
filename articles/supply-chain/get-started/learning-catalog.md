@@ -186,3 +186,6 @@ Finden Sie das richtige Onlinetraining, persönliche Workshops und Veranstaltung
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

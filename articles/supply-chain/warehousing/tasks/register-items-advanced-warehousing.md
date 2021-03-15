@@ -75,3 +75,6 @@ Notieren Sie die Nummer der Bestellung die Sie erstellen, und notieren Sie auch 
     * Nachdem Sie auf "OK" geklickt haben, überprüfen Sie die Statusleiste. Es sollte eine Nachricht geben, die darauf hinweist, dass der Vorgang abgeschlossen wurde.  
 5. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

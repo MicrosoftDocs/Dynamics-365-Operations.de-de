@@ -84,3 +84,6 @@ Mithilfe der Reduktionssaldomethode werden am Ende des vorherigen Abschreibungsz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

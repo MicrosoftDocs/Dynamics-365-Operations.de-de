@@ -99,3 +99,6 @@ Wenn Sie mit Microsoft an Tools und Prozessen zum Anpassen der Hilfe zusammenarb
 [Aufgaberecorder-Ressourcen](../../dev-itpro/user-interface/task-recorder.md)  
 [Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Benutzerdefiniertes Hilfe-GitHub-Repository](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ In diesem Thema wird erläutert, wie Sie einen Qualitätsprüfungsauftrag verarb
 4. Wählen Sie **OK**.
 5. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

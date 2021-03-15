@@ -39,3 +39,6 @@ Um eine Hypothese zu validieren, sollte der Erfolg oder Misserfolg eines Experim
 
 ## <a name="next-step"></a>Nächster Schritt
 [Experiment einrichten](experimentation-setup.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -220,3 +220,6 @@ Die folgenden Beispiele zeigen mögliche Informationen an, die in einer Berichts
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

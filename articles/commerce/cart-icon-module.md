@@ -65,3 +65,6 @@ Informationen zum Hinzufügen eines Warenkorbsymbolmoduls finden Sie unter [Kopf
 [Auftragsdetailmodul](order-confirmation-module.md)
 
 [Geschenkkartenmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

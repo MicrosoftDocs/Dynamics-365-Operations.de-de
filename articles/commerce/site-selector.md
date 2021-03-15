@@ -63,3 +63,6 @@ Das Site-Auswahlmodul kann dem [Header-Modul](author-header-module.md) unter dem
 [Breadcrumb-Modul](add-breadcrumb.md)
 
 [Navigationsmenümodul](nav-menu-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

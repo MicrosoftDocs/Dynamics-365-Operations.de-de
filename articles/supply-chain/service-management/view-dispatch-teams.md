@@ -52,3 +52,6 @@ Weitere Informationen zum Zuweisen einer Arbeitskraft zu einem Team finden Sie u
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

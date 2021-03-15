@@ -53,3 +53,6 @@ Im dazugehörige Belegfenster wird der Beleg aus dem Unternehmenskonto angezeigt
 3. Markieren Sie in der Liste die ausgewählte Zeile.
 4. Klicken Sie auf Beleg.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

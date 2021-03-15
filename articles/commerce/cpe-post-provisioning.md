@@ -163,3 +163,6 @@ Informationen zum Konfigurieren optionaler Funktionen für Ihre Commerce-Auswert
 [Microsoft Azure-Portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

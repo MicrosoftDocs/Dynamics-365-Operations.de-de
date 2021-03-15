@@ -61,3 +61,6 @@ Die folgenden Einschränkungen gelten für das Erstellen von Verknüpfungen in B
 Weitere Informationen finden Sie unter [Buchungsdefinitionsbeispiele](example-posting-definitions.md). 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

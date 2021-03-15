@@ -60,3 +60,6 @@ Wenn **Beschränkung für Rückerstattungen ohne Beleg** auf **Ja** gesetzt ist,
 
 Wenn eine Transaktion sowohl eine quittierte Rücksendung als auch eine Rücksendung ohne Beleg hat, werden die Einschränkungsbedingungen nicht durchgesetzt, da es sich bei der Transaktion um einen Rückgabe-Workflow mit Beleg handelt. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

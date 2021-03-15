@@ -61,3 +61,6 @@ Nachdem Sie die historischen Bedarfsdaten importiert haben, können Sie eine Bed
 
 [Eine statistische Grundplanung generieren](generate-statistical-baseline-forecast.md)  
 [Einzelvorgänge für Datenimport und ‑export – Übersicht](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

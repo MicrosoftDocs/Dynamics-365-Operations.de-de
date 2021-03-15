@@ -67,3 +67,6 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet. Die Erfassung ist 
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Eine Vorlage für Freitextrechnungen erstellen
 Sie können eine vorhandene Freitextrechnung als Vorlage auch speichern. Wenn Sie aus der Rechnungsregisterkarte Speichern in Vorlage auswählen, geben Sie einen Namen und eine Beschreibung für die Vorlage an. Wenn eine Vorlage mit dem Namen bereits vorhanden ist, sehen Sie eine Benachrichtigung, dass eine Vorlage mit diesem Namen vorhanden ist. Sie können immer noch auf OK klicken, um es zu ersetzen. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

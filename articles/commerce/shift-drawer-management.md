@@ -157,3 +157,6 @@ Gehen Sie zu **Einzelhandel und Handel \> Kanäle \> Shops \> Alle Shops \> Ausz
 Diese Einstellung stellt sicher, dass Backofficeauszüge die gleichen Buchungen wie Schichten im POS enthalten und die Daten durch diese Schicht zusammengefasst werden.
 
 Weitere Informationen zu Auszugs- und Abschlussmethoden, finden Sie unter [Shopkonfigurationen für Einzelhandelsauszug](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

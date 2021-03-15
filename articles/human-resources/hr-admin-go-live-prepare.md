@@ -99,3 +99,6 @@ Nachdem Sie die Checkliste eingereicht haben, überprüft Ihr FastTrack Lösungs
 ## <a name="see-also"></a>Siehe auch
 
 [FAQ live schalten](hr-admin-go-live-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

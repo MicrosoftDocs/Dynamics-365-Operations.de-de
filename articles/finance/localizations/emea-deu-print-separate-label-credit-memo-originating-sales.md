@@ -36,3 +36,6 @@ Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrekt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

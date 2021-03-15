@@ -45,3 +45,6 @@ In diesem Thema wird erläutert, wie eine Zahlungsmethode für Debitorenzahlunge
 15. Verwenden Sie die Registerkarte **Zahlungsattribute**, um zu definieren, welche Zahlungsattribute Sie für diese Zahlungsmethode verwenden möchten.
 16. Wählen Sie **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

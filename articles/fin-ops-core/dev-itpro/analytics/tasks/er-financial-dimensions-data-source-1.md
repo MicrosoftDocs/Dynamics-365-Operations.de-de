@@ -108,3 +108,6 @@ Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter „Konf
 
 ![ER Datenmodell Designerseite](../media/er-financial-dimensions-guides-data-model.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

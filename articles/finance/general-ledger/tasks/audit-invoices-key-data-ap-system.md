@@ -61,3 +61,6 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet. Die Kreditorenleit
 9. Klicken Sie im Aktionsbereich auf **Überprüfen**.
 10. Klicken Sie auf **Detailabgleich**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

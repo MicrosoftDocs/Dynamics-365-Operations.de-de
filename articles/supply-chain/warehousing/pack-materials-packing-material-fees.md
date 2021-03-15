@@ -111,3 +111,6 @@ Sie können das Gewicht des Verpackungsmaterials auf einer Rechnung ausdrucken u
 
 1. Gehen Sie zu **Debitoren \> Einrichtung \> Debitorenparameter**.
 1. Auf der Registerkarte **Aktualisierungen**, auf der Registerkarte **Rechnung** FastTab, setzen Sie die Option **Verpackungsmaterialgewicht drucken** auf **Ja**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

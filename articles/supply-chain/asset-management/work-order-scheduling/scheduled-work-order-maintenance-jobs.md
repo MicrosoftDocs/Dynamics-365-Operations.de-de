@@ -51,3 +51,6 @@ Der folgende Screenshot zeigt ein Beispiel für die Seite **Planmäßige Wartung
 
 ![Abbildung 1](media/07-work-order-scheduling.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

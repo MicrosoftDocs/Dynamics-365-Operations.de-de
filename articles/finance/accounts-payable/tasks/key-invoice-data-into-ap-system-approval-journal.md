@@ -53,3 +53,6 @@ In diesem Thema wird erläutert, wie das Rechnungsregister verwendet wird, um Re
 10. Wählen Sie **Buchen** aus.
 11. Wählen Sie **Beleg** aus, um die Einträge anzuzeigen, die gebucht wurden. Das Konto "Rechnung mit ausstehender Genehmigung" wird zurückgesetzt und durch das tatsächliche Ausgabenkonto ersetzt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

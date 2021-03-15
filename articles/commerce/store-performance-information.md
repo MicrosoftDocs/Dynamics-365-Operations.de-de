@@ -44,3 +44,6 @@ Der Bericht enthält eine Momentaufnahme der folgenden Zusammenfassungen im Rahm
 - Steuerzusammenfassung
 - Preisüberschreibungsübersicht
 - Rabattübersicht
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

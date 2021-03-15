@@ -65,3 +65,6 @@ Diese Funktion ist für juristische Personen verfügbar, deren primäre Adresse 
 16. Klicken Sie auf "Speichern".
 17. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

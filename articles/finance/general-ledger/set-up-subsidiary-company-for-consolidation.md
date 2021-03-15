@@ -80,3 +80,6 @@ Unabhängig davon, ob Sie Konten zugeordnet haben, müssen Sie das Kontrollkäst
 
 > [!NOTE]
 > Mithilfe dieser Methode können Sie im konsolidierten Unternehmen einen Kontenplan erstellen, der auf dem Kontenplan einer der Tochtergesellschaften basiert. (Weitere Informationen finden Sie unter [Konsolidierungskontengruppen und zusätzliche Konsolidierungskonten](../budgeting/consolidation-account-groups-consolidation-accounts.md).) Weisen Sie dann jedem konsolidierten Hauptkonto ein geeignetes Prinzip für die Konsolidierungskonvertierung zu, und führen Sie die Konsolidierung für alle juristischen Personen der Tochtergesellschaft aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

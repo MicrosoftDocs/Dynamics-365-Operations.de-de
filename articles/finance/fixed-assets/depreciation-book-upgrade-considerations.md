@@ -82,3 +82,6 @@ Bei jedem dieser Ansätze verwendet das Datenupgradeskript auch den Nummernkreis
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

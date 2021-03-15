@@ -191,3 +191,6 @@ Um den Prozess zum Bereitstellen und Konfigurieren Ihrer Commerce-Evaluierungsum
 [Microsoft Azure-Portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

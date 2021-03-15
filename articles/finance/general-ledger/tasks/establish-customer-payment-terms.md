@@ -56,3 +56,6 @@ Diese Prozedur definiert eine Skonto- und Fälligkeitsdatumseinstellung. Für di
 26. Geben Sie im Feld **Hauptkonto für Kreditorenrabatte** das Hauptkonto an, auf das das Skonto für Kreditorenrechnungen gebucht wird.
 27. Klicken Sie auf **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

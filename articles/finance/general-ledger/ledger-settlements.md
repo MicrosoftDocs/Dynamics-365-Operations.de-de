@@ -74,3 +74,6 @@ Sie können einen Ausgleich stornieren, die versehentlich vorgenommen wurde.
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Aktualisiert die Liste mit Konten, die in der Liste der Transaktionen einbezogen werden
 
 Wählen Sie **Sachkontoausgleichverrechnungskonten**, um ein Dialogfeld zu öffnen, in dem Sie die Konten bearbeiten können, die in der Liste der Transaktionen einbezogen werden. Wählen Sie **Neu** aus, um neue Konten der Liste hinzuzufügen. Diese Liste wird verwendet, um die Liste der Buchungen zu filtern, die auf der Seite **Sachkontoausgleiche** angezeigt wird.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Löschen Sie mithilfe des Formulars "**Rücklieferung löschen**" mehrere Rückl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

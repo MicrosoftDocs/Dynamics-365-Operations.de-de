@@ -59,3 +59,6 @@ Der oberste Knoten der Struktur stellt die verfügbare Menge des ausgewählten A
 9. Klicken Sie auf **Versendete Kundenaufträge**.
 10. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

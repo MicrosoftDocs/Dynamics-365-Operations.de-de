@@ -72,3 +72,6 @@ Wenn Sie Routinginformationen für die Nachkalkulation verwenden möchten, sind 
 
 [Einrichten von Produkten, die produziert werden oder beschafft werden](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

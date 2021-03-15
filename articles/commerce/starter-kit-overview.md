@@ -65,3 +65,6 @@ Die folgenden Modultypen sind in der Modulbibliothek enthalten:
 [Kopfzeilenmodul](author-header-module.md)
 
 [Fußzeilenmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

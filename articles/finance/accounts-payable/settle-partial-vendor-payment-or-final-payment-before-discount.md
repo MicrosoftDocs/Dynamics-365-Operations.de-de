@@ -141,3 +141,6 @@ April bucht diese Zahlungserfassung und prüft die Kreditorentransaktionen auf d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

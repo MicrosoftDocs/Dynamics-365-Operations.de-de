@@ -159,3 +159,6 @@ Sie können eine Beschreibung des Plans bereitstellen, um den Mitarbeitern bei d
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Pläne** die Option **Vorteilspläne**.
 
 2. Wählen Sie **Flexguthabenprogramme**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

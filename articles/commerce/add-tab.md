@@ -83,3 +83,6 @@ Um ein Registerkartenmodul einer Seite hinzuzufügen und die erforderlichen Eige
 [Akkordeonmodul](add-accordion.md)
 
 [Textblockmodul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Ziel dieser Prozedur ist es, die notwendigen Einstellungen vorzunehmen, um eine 
 2. Klicken Sie auf "Bedarfsverursacherstruktur anzeigen".
     * Beachten Sie, dass ein Kanban mit derselben Menge wie die Auftragsposition erstellt wird. Sie können außerdem die Materialabgänge sehen, die erforderlich sind, um L0050 zu erzeugen. Dies ist der letzte Schritt in diesem Verfahren.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -42,3 +42,5 @@ Für jede Organisation, die Vorteile bereitstellt, müssen Sie Einstellungen fü
    | **Standard-E-Mail-Adresse des Absenders** | Die E-Mail-Adresse, die beim Senden der Bestätigungs-E-Mail verwendet werden soll. |
 
 3. Wählen Sie **Speichern** aus.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

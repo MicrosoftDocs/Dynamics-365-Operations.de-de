@@ -207,3 +207,6 @@ Mit dem Schaltflächenrasterdesigner können Sie Schaltflächenraster konfiguri
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Den Retail-Verkaufstellen-(POS)-Layout-Designer installieren](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

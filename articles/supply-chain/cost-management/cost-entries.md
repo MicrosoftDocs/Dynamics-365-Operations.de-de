@@ -71,3 +71,6 @@ Die **Kosteneinträge**-Seite ermöglicht das Filter nach der Dokumentenkennung 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Wenn Sie verlangen, dass die Währungsgenauigkeit für eine bestimmte Währung v
 ### <a name="tables-currency-column"></a>Tabellen: Währungsspalte
 
 Die Anzahl der Dezimalstellen, die für bestimmte Währungsspalten konfiguriert werden können, ist auf vier begrenzt.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ Sie können mehrere Herstellkostenkalkulationsgruppen je nach Bedarf an Variatio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ In diesem Thema geht es um die Einrichtung eines Ankunftsübersichtsprofils. Das
 17. Wählen Sie **Speichern**.
 18. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

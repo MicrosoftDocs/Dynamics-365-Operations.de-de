@@ -73,3 +73,6 @@ Die Felder **Alias**, **UPN** und **Externer Sub-Identifikator** auf der Registe
 [Ein Einzelhandelsfunktionsprofil erstellen](retail-functionality-profile.md)
 
 [Eine Arbeitskraft konfigurieren](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

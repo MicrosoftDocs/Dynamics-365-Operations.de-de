@@ -379,3 +379,6 @@ In der ersten Buchung für den Dauerauftrag 00020\_135 wird der Verkaufspreis in
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

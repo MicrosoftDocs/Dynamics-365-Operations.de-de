@@ -52,3 +52,6 @@ Dieses Verfahren zeigt, wie die Konfigurationsvorlage für das Produkt auf einem
 
 ## <a name="select-the-product-configuration"></a>Wählen der Produktkonfiguration
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

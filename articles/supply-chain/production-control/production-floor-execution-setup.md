@@ -79,3 +79,6 @@ Der obere Teil der folgenden Abbildung zeigt, wie die Benutzeroberfläche standa
 Standardmäßig wird die Ausführungsoberfläche für die Produktionshalle automatisch abgemeldet, wenn sie 12 Stunden lang von niemandem verwendet wird. Ein Supply Chain Management-Benutzer muss sich dann erneut anmelden. Sie können das Timeout jedoch auf bis zu 90 Tage verlängern.
 
 Um das Timeout zu verlängern, melden Sie sich bei Supply Chain Management an und gehen Sie zu **Systemadministration \> Benutzer \> Sitzungserweiterungen**. Geben Sie das Benutzerkonto für das Supply Chain Management an, mit dem Sie sich am Gerät anmelden, und die Anzahl der Stunden, für die die Sitzung aktiv bleiben soll.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

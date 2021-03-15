@@ -51,3 +51,6 @@ Diese Prozedur zeigt an, wie ein Produktionsauftrag als abgeschlossen gemeldet w
 4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
     * Die Erfassung "Fertigmeldung" wurde gebucht. Wenn Sie Regulierungen in der Erfassung vornehmen möchten, können Sie manuell eine neue Erfassung erstellen, in der Sie Änderungen vornehmen können.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

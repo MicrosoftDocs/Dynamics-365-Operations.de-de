@@ -60,3 +60,6 @@ Neben den Finanzberichten können Sie die folgenden Sachkontoberichte verwenden,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

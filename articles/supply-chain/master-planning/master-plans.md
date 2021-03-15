@@ -56,3 +56,6 @@ Der anfängliche dynamische Produktprogrammplan kann auch so eingerichtet werden
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

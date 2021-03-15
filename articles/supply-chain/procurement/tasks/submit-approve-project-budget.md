@@ -56,3 +56,6 @@ Diese Aufgabe wurde mit dem USSI-Dataset erstellt.
 21. Geben Sie in das Feld **Kommentar** einen Wert ein.
 22. Klicken Sie auf **Absenden**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

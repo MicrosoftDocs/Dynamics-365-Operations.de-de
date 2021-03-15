@@ -255,3 +255,5 @@ Die Lagerplatzkennung, die für die Arbeitskraftadresse verwendet wird, gehört 
 Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung im Datenintegrator. 
 
 ![Vorlagenzuordnung](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Bei einem Auftragspositionseintrag wird standardmäßig die Seite **Produktsuche
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

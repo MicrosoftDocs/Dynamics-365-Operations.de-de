@@ -84,3 +84,6 @@ Führen Sie diese Schritte aus, um die Funktion für B2B-Bestellmengenbeschränk
 [Geschäftspartnerbenutzer auf B2B-E-Commerce-Websites verwalten](manage-b2b-users.md)
 
 [Konfigurieren der Zahlungsmethode des Kundenkontos für B2B-E-Commerce-Websites](payment-method.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

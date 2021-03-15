@@ -52,3 +52,6 @@ Dies ist die dritte von sechs Aufgaben, die das Verfahren für Debitorenzahlunge
     * Wählen Sie den Parameter "Mandat anfordern" für Debitorenzahlungsformate, die Vollmachtsinformationen in der Zahlungsnachricht benötigen, wie SEPA-Direktbelastung.  
 9. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -134,3 +134,6 @@ Die folgende Abbildung zeigt ein Beispiel für Produktbewertungen in Callcenter-
 [Verwalten von Bewertungen und Prüfungen](manage-reviews.md)
 
 [Konfigurieren von Bewertungen und Prüfungen](configure-ratings-reviews.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

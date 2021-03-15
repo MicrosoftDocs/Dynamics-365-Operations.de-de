@@ -104,3 +104,6 @@ Anhand der Felder, die Sie ausgewählt haben, um sie ins Diagramm einzubeziehen,
 **Zusätzliche Option**
 
 In Human Resources sind Sie möglicherweise auch in der Lage, den Arbeitsbereich **Personen** zu verwenden, um der Hierarchie zugehörige Informationen anzuzeigen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

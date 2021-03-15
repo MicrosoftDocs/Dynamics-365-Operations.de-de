@@ -145,3 +145,6 @@ Hier ist die dazugehörige Ausgabe.
 | IA0001 | 1 | 2 | 2 |
 
 Beachten Sie, dass die Einstellungen im Bereich **Filter** für die detaillierte (nicht aggregierte) Bestandstabelle gelten, die am Anfang dieses Abschnitts angezeigt wird. Daher findet das Kriterium **Physisch verfügbar** \| **weniger als oder gleich** \| _1_ zwei Zeilen aus dieser Tabelle (die erste und dritte Zeile, von denen jede einen Wert für **Physisch verfügbar** von _1_ hat). In diesem Szenario ist jedoch die Seite **Bestandsliste** nicht eingerichtet, um die **Lagerort** dimensionen anzuzeigen. Daher werden die beiden ursprünglichen Zeilen zu einer einzigen Zeile aggregiert, da beide in allen angezeigten Dimensionen identische Werte haben. Diese Zeile scheint das Filterkriterium zu verletzen, da der Wert **Physisch verfügbar** als _2_ angezeigt wird. Das Ergebnis ist jedoch korrekt, da die Einstellungen im Bereich **Filter** für die Quelltabelle und nicht für die aggregierte Tabelle gelten, die in der Tabelle auf der Seite **Verfügbar** angezeigt wird.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

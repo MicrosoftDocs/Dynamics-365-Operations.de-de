@@ -73,3 +73,6 @@ Meinungen, Neuigkeiten und weitere Informationen zu Lagerortverwaltung und ander
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

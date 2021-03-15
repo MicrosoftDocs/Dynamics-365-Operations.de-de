@@ -242,3 +242,6 @@ In der Tabelle im nächsten Abschnitt finden Sie zusätzliche Details zu <strong
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Diese allgemeine Szenarien sind in Commerce für Einzelhändler verfügbar. Mit 
 + Produkte im aktuellen Shops oder in einer anderen Filiale abholen.
 + Eine Bestellung in der aktuellen Filiale oder in einer anderen Filiale stornieren.
 + Einen Auftrag mit oder ohne Beleg in der aktuellen Filiale oder in einer anderen Filiale zurückgeben.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

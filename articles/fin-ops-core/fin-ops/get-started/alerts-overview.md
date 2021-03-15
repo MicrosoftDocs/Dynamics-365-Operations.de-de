@@ -88,3 +88,6 @@ Das Video [Warnungen zur Überwachung gefilterter Daten verwenden](https://youtu
 Das Video [Warnregeloptionen](https://youtu.be/cpzimwOjicM) (oben angezeigt) ist in der [Finance and Operations Wiedergabeliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verfügbar ist.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

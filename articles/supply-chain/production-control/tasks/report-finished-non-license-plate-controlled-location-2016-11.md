@@ -61,3 +61,6 @@ Dieser Aufgabenleitfaden zeigt ein Beispiel der Berichterstellung als beendet zu
 18. Klicken Sie auf "Arbeitsdetails".
     * Wenn der Produktionsauftrag als fertig gemeldet wurde, wurde keine Arbeit für die Einlagerung generiert. Dies tritt auf, weil eine Arbeitsrichtlinie definiert ist, die verhindert, dass Arbeit generiert wird, wenn Produkt L0101 als fertig nach Lagerplatz 001 gemeldet wird.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

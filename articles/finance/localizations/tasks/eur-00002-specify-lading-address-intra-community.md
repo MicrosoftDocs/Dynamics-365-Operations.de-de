@@ -72,3 +72,6 @@ Diese Prozedur gilt für alle europäischen Länder/Regionen. Diese Aufgabe wurd
 37. Klicken Sie auf die Registerkarte "Allgemein".
     * Suchen Sie eine neu erstellte Position und vergewissern Sie sich, dass der Absender die Waren aus Italien liefert.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

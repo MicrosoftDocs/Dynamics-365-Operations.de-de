@@ -50,3 +50,6 @@ Es ist außerordentlich wichtig, dass Sie verstehen, wie das Kontrollkästchen *
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

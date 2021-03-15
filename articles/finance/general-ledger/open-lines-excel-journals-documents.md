@@ -54,3 +54,6 @@ Um Finanzdimensionen einer Vorlage hinzugefügt werden soll, sind zusätzliche �
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

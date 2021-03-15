@@ -133,3 +133,6 @@ Um Vorlagenstücklisten verwenden möchten, müssen Sie zwei Nummernkreise einri
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Beispiel: Bei einem Basispreis von EUR 1000 und einem Indexwert von 110 ergibt 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -158,3 +158,6 @@ In diesem Thema wird erläutert, wie ein Benutzer, der der Systemadministratorro
 42. Klicken Sie auf **Speichern**.
 43. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

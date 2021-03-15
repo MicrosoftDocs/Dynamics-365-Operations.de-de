@@ -41,3 +41,6 @@ Beschäftigungstypen einrichten in Dynamics 365 Human Resources, die zu Ihren Ar
    | **Beschreibung** | Eine Beschreibung des Beschäftigungstyps. |
 
 4. Wählen Sie **Speichern**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

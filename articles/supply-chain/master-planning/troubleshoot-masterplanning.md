@@ -88,3 +88,6 @@ Eine Möglichkeit, die Leistung mit der eingebauten Produktprogrammplanung zu ve
 
 > [!NOTE]
 > Dadurch wird der Zeitraum für Auflösungen, die für diesen Masterplan durchgeführt werden, auf einen Tag begrenzt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

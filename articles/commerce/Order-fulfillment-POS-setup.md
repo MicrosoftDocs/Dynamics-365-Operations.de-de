@@ -130,3 +130,6 @@ Auftragserfüllung in der Verkaufsstelle umfasst Filterung, sodass der Benutzer 
 - Erstellungsdatum
 - Lieferdatum
 - Wareneingangsdatum
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

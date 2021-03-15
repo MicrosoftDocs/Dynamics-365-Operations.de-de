@@ -139,3 +139,6 @@ Am 20. Juli erstellt April eine endgültige Zahlung von 200,00. Kein Rabatt wird
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

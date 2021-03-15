@@ -150,3 +150,6 @@ Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter „Konf
 17. Geben Sie im Feld **Bankkonto** `GBSI OPER` ein.
 18. Wählen Sie **OK** und dann erneut **OK** aus. Überprüfen Sie das erstellte Arbeitsblatt, einschließlich Details von Zahlungspositionen sowie der Summen für jeden Währungscode, der in dieser Zahlungsnachricht verwendet wird.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

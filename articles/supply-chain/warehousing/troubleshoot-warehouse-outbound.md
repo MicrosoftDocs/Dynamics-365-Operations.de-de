@@ -61,3 +61,6 @@ Ein Element wird einer Verkaufszeile zur Direktlieferung aus einem Lagerort hinz
 ### <a name="issue-resolution"></a>Problemlösung
 
 Microsoft hat dieses Problem untersucht und festgestellt, dass es sich um eine Einschränkung der Funktion handelt. Derzeit unterstützt WMS die direkte Lieferung nicht. Um die direkte Lieferung zu verwenden, müssen Sie daher ein Element und ein Lagerort auswählen, die nicht zu WMS gehören.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ Um eine Kategorieseite anzureichern, gehen Sie folgendermaßen vor.
 [Überprüfen der Zugänglichkeit des Seiteninhalts](verify-accessibility.md)
 
 [Dynamische E-Commerce-Seiten basierend auf URL-Parametern erstellen](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

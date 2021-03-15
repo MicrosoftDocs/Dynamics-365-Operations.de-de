@@ -103,3 +103,6 @@ Folgen Sie den Schritten in einem der folgenden Beispiele, um die zulässigen R�
 
 
 ![Liste der Zahlungsmethoden](media/Return-policy-page5.PNG "Zulässige Rückerstattungstypen")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -99,3 +99,6 @@ Das Produktprüfungs-Listenmodul enthält einen Slot, in dem Sie ein Bewertungsh
 [Kopfzeilenmodul](author-header-module.md)
 
 [Fußzeilenmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

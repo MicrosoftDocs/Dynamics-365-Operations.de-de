@@ -47,3 +47,6 @@ Dieses Verfahren zeigt Ihnen an, wie eine Transportausschreibung eingerichtet wi
 7. Klicken Sie auf Absenden.
 8. Wählen Sie einen Arbeitsplan aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

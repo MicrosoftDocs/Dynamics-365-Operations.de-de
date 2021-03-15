@@ -36,3 +36,6 @@ Um einen Batch-Auftrag einzurichten oder Zahlungsrechnungen, Abschreibungen oder
 > Nachfolgende Transaktionen, wie z. B. Tilgungspläne für Verbindlichkeiten, Zahlungen, Abschreibungen und Aufwendungen, werden erst gebucht, nachdem die erstmalige Erfassung für entsprechende Mietverträge gebucht wurde.
 >
 > Die Journaleinträge werden erstellt, aber erst gebucht, wenn Sie den **Ausführen**-Befehl auswählen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

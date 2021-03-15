@@ -66,3 +66,6 @@ Das folgende Bild zeigt ein Beispiel für ein Online-Funktionsprofil.
 [Einen Retail Channel einrichten](channel-setup-retail.md)
 
 [Einen Callcenterkanal einrichten](channel-setup-callcenter.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

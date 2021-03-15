@@ -58,3 +58,6 @@ Sie können auch ein neues Wartungsbudget erstellen, indem Sie ein vorhandenes B
 
 > [!NOTE]
 > Das Wartungsbudget berechnet nur Budgetkosten auf Grundlage der Wartungsplanpositionen. Um Istkosten für die gleiche Periode zu berechnen, können Sie diese Berechnung auf der Seite **Kostensteuerung für Anlagen** vornehmen. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

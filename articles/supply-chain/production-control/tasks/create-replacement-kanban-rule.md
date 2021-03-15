@@ -55,3 +55,6 @@ Diese Prozedur konzentriert sich auf das Ersetzen einer vorhandenen Kanban-Regel
 1. Legen Sie "Höchstmenge" auf "100" fest.
     * Erweitern Sie das Inforegister "Mengen", um das Feld "Höchstmenge" anzuzeigen. Das Ändern der Höchstmenge auf 100 ermöglicht es, dass bis zu 100 Kanbans verarbeitet werden können.    Dies ist der letzte Schritt in dieser Aufgabe.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

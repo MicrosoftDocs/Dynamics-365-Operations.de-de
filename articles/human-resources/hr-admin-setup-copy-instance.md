@@ -150,3 +150,6 @@ Weitere Informationen über benutzerdefinierte Felder finden Sie unter [Erstelle
 [Eine Instanz entfernen](hr-admin-setup-remove-instance.md)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

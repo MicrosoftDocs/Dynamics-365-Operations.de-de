@@ -69,3 +69,6 @@ Sie können **Ausstehende Anlagenanzahl** ausführen, um ausstehende Anlagen zu 
 3. Sie können diesen Einzelvorgang als Batchauftrag einrichten, so dass er beispielsweise einmal pro Tag ausgeführt wird.
 
 **Vorsicht:**, Wenn Daten in einer Bestellung geändert werden, *nachdem* Sie eine Anlage auf Basis des dazu gehörenden Artikels erstellt haben, werden diese Änderungen nicht in der Anlage angezeigt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

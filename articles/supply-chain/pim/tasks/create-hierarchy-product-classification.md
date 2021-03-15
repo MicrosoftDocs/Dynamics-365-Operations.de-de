@@ -66,3 +66,6 @@ Im folgenden Verfahren, wie eine neue Kategoriehierarchie erstellt und einen War
 8. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 9. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

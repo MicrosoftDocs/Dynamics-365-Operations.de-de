@@ -116,3 +116,6 @@ Diese Prozedur wird für Benutzer erstellt, die die Rolle des Systemadministrato
 68. Klicken Sie auf Speichern.
     * Beachten Sie, dass das Feld „Ausführung bei“ angibt, dass diese Gruppierung zur Laufzeit im Arbeitsspeicher ausgeführt wird, obwohl keine Aggregationen definiert sind und die ausgewählte Datenquelle vom Typ „Tabellendatensätze“ sich auf dieselbe „Intrastat“-Tabelle bezieht. Dies ist erforderlich, weil in der Datenquelle einige berechneten Felder enthält, die noch nicht zur SQL-Datenbankebene übersetzt werden können.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

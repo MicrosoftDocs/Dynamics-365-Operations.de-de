@@ -100,3 +100,6 @@ Alle Richtlinienregeln für eine bestimmte Überwachungsrichtlinie besitzen dies
 [Definieren Sie Überwachungsrichtlinien für Quelldokumente](tasks/define-audit-policies-source-documents.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

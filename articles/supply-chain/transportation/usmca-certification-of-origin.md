@@ -139,3 +139,6 @@ Der Benutzer, der die Zertifizierung unterschreibt, muss die Anzahl der Seiten (
 ### <a name="page-numbers"></a>Seitennummern
 
 Die aktuelle Seite und die Anzahl der Seiten werden am unteren Rand des Dokuments gedruckt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

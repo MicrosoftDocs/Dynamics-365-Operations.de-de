@@ -41,3 +41,6 @@ Ein Verkaufsauftrag hat z. B. zwei Elemente: eines zur Lieferung und eines zur A
 ### <a name="issue-resolution"></a>Problemlösung
 
 Der Freigabestatus gilt nur für Auftragszeilen, bei denen die Elemente für die Lagerortverwaltung freigegeben sind. Daher bleibt der Freigabestatus in diesem Szenario *Teilweise freigegeben*. Microsoft hat dieses Problem untersucht und festgestellt, dass es sich um eine Einschränkung der Funktion handelt. Im Rahmen des Lieferschein- und Fakturierungsprozesses könnte eine Erweiterung hinzugefügt werden, um den Freigabestatus zu aktualisieren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

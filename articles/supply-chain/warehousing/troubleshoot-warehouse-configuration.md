@@ -108,3 +108,6 @@ Um den Arbeitskräften diese Änderung zu ermöglichen, können Sie einen Menüp
 - **Status des Bestands anzeigen:** *Ja*
 
 Sie können weitere Felder auf der Seite nach Bedarf festlegen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

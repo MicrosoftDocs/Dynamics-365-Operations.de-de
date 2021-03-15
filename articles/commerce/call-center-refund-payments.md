@@ -108,3 +108,6 @@ Alternativ kann eine Organisation die Option **Alternative Zahlung zulassen** au
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Zahlungsmethoden in Callcentern](work-with-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

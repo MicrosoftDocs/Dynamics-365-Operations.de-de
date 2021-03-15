@@ -57,3 +57,6 @@ Zur Vereinfachung der Suche nach den zu kopierenden Positionen empfiehlt es sich
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Kopieren von Servicevorlagenpositionen](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

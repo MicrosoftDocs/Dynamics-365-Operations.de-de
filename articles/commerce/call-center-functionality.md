@@ -68,3 +68,6 @@ Auf dieser Seite finden Sie Links zu relevanter Dokumentation zur Einrichtung, K
 ## <a name="configure-continuity-programs"></a>Kontinuitätsprogramme konfigurieren
 
 [Einrichten von Anschlussprogrammen für Callcenter](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

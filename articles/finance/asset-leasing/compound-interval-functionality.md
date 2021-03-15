@@ -159,3 +159,6 @@ In der folgenden Tabelle sind die ersten 12 Monate des Zahlungsplans aufgeführt
 
 > [!NOTE]
 > Wenn der Annuitätentyp in **Annuität fällig** geändert wird, erfolgt die Zahlung im Januar anstelle von Dezember.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

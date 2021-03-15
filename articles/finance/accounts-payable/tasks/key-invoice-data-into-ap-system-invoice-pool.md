@@ -67,3 +67,6 @@ In diesem Thema wird beschrieben, wie das Rechnungsbuch verwendet wird, um Rechn
 13. Wählen Sie **Buchungen** aus.
 14. Wählen Sie die Rechnung aus, die Sie erstellt haben. Die Rechnungsbuchabgrenzung wurde storniert und auf das entsprechende Ausgabenkonto gebucht.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

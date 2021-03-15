@@ -83,3 +83,6 @@ Um den erstellten Leasingbüchern und Gruppen Konten zuzuweisen, müssen Sie Par
     > [!NOTE]
     > Das ausgewählte Finanz- oder Betriebskonto wird belastet, wenn die Rechnung für den geplanten Aufwand gebucht wird.
     > **Mietaufwand verrechnen** wird als Buchungsart für Transaktionen für Nebenkosten beim Leasing verwendet, aber auf ein definiertes **Gegenkonto** in den **Zahlungsplanzeilen der Nebenkosten beim Leasing** in Mietvertragsdetails oder dem Leasingbuchformular gebucht.   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

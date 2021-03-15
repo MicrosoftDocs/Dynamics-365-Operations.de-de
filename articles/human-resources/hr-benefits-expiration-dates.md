@@ -46,3 +46,6 @@ Im folgenden Verfahren wird dargestellt, wie Sie einen Vorteil ablaufen lassen o
 15. Klicken Sie auf "Vorteile".
 16. Suchen Sie in der Liste den Vorteil, und wählen Sie ihn aus. Notieren Sie das neue Dispositionsenddatum.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

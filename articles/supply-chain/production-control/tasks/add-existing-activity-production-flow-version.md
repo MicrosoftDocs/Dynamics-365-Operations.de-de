@@ -55,3 +55,6 @@ Diese Aufgabe erfordert einen Produktionsfluss mit der Version und Aktivitäten,
 3. Geben Sie im Feld 'Aktivität' einen Wert ein, oder wählen Sie einen Wert aus.
 4. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

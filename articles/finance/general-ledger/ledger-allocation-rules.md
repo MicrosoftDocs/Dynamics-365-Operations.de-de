@@ -50,3 +50,6 @@ Jede Zuordnungsregel besitzt vier Komponenten: Allgemeines, Quelle, Ziel und Geg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

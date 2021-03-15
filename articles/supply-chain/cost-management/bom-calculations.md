@@ -94,3 +94,6 @@ Eine auftragsspezifische Herstellkostenkalkulation stellt eine Form der Herstell
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

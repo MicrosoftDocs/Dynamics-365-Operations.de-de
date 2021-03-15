@@ -345,3 +345,6 @@ Wenn die vordefinierte Dimensionsmitgliedzuweisungsbasis Elektrizität als Verre
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Zuteilungsbasen](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

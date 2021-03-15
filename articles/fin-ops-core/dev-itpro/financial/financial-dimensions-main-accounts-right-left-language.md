@@ -38,3 +38,6 @@ Finanzdimensionen und Hauptkonten sind Schlüsselkomponenten der Planungsphase f
 - Vermeiden Sie es, die ausgewählte Trennzeichen für Kontenpläne in den Finanzdimensions- und Hauptkontowerten zu verwenden.
 
 Indem Sie diese bewährten Methoden verwenden, tragen Sie zu einer konsistenten Darstellung der benutzerdefinierten Reihenfolge im gesamten System bei.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

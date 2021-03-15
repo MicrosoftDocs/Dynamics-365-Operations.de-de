@@ -61,3 +61,6 @@ Im folgenden Verfahren, wird dargestellt, wie Sie Informationen über Bewerber u
 6. Klicken Sie auf "Speichern".
     * Nachdem Sie die Bewerbung gespeichert haben, können Sie Dokumente anfügen, einschließlich Dokumente zur Erfahrung des Bewerbers, zu Auszeichnungen und das Anschreiben.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

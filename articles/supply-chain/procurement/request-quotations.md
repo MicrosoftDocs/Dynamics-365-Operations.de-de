@@ -246,3 +246,6 @@ Im Beispiel unten sehen Sie den niedrigsten und höchsten Status in der Angebots
 | Nehmen Sie eines derAngebote an. (oder mindestens eine Position ist erforderlich) |                          Eingegangen                           |                           Angenommen                           |                    Eingegangen                    |                    Angenommen                     |                   Eingegangen                   |                   Angenommen                    |
 |           Lehnen Sie alle anderen Angebote ab.           |                          Verweigert                           |                           Angenommen                           |                    Verweigert                    |                    Angenommen                     |                   Verweigert                   |                   Akzeptiert                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

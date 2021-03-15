@@ -477,3 +477,6 @@ In diesem Szenario registriert der empfangende Sachbearbeiter eine Menge, die di
     - **Menge** – Geben Sie _7_ ein. Dies ist die verbleibende Menge, zu deren Lieferung der Verkäufer berechtigt ist, als Teil der gesamten Bestellmenge von 12 (wobei 10 die ursprüngliche Bestellmenge und 2 die zulässige Mehrmenge von 20 Prozent ist). Denken Sie daran, dass bereits 5 Stück für die erste Ladung registriert wurden.
 
 Die zweite Ladung wurde jetzt mit der Menge 7 aktualisiert und kann basierend auf dieser Menge als Produktbeleg aktualisiert werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

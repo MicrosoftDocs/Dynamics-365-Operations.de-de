@@ -82,3 +82,6 @@ Dieses Verfahren führt Sie durch den Jahresabschlussprozess, der Salden in ein 
 23. Die Standardwerte für den als Stapelverarbeitung auszuführenden Jahresabschluss. Es ist eine bewährte Verfahrensweise für Prozesse mit langer Laufzeit, diese im Stapelverarbeitungsmodus auszuführen. Dies ist in der Regel einer dieser Prozesse. Daher wird er standardmäßig im Stapelbearbeitungsmodus ausgeführt.  
 24. Klicken Sie auf **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

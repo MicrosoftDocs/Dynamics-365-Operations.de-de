@@ -113,3 +113,6 @@ Jede Formatversion kann so konfiguriert werden, wie verfügbar für die Verwendu
 1. Erweitern Sie den Abschnitt „ISO-Land-/Regionencode”.
     * Jeder Formatzugriff kann beschränkt werden, indem bestimmte Länder/Regionen angibt, in denen ein Format anwendbar ist. Wenn die Länder-/Regionenliste für ein bestimmtes Format leer ist, kann dieses Format in einem beliebigen Unternehmen verwendet werden. Wenn mehrere ISO-Länder-/Regionscodes in die Länder-/Regionenliste eingefügt werden, kann dieses Format nur in Unternehmen verwendet werden, wenn die primäre Adresse sich in dem Land/der Region befindet.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

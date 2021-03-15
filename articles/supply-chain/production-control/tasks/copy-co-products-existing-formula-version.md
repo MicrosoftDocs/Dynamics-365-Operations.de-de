@@ -53,3 +53,6 @@ Diese Prozedur zeigt Ihnen an, wie Sie Co-Produkte aus einer vorhandenen Formelv
 6. Klicken Sie auf "OK".
 7. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

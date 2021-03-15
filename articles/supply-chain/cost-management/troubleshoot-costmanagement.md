@@ -81,3 +81,6 @@ Verwenden Sie die folgenden Problemumgehungen, bis Microsoft eine Lösung zur Be
 - Vermeiden Sie Dezimalwerte in den Standardkosten. Versuchen Sie, die Standardkosten so zu definieren, dass das Feld **Preismenge** auf *1* festgelegt ist. Wenn Sie einen Wert für **Preismenge** angeben müssen, der größer als *1* ist, versuchen Sie, die Anzahl der Dezimalstellen in den Standardkosten der Einheit zu minimieren. (Idealerweise sollten weniger als zwei Dezimalstellen vorhanden sein.) Vermeiden Sie beispielsweise die Definition von Standardkosteneinstellungen wie **Preis** = *10* und **Preismenge** = *3*, weil sie Standardkosten pro Einheit von 3,333333 erzeugen (wobei sich der Dezimalwert wiederholt).
 - Vermeiden Sie in den meisten Dokumenten mehrere Positionen mit derselben Kombination aus Produkt- und Finanzbestandsdimensionen.
 - Reduzieren Sie den Parallelisierungsgrad. (In diesem Fall wird Ihr System möglicherweise schneller, da weniger Aktualisierungskonflikte und Wiederholungsversuche auftreten.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

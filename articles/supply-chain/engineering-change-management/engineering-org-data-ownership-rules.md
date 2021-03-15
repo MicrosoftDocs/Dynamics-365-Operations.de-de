@@ -66,3 +66,6 @@ Da die Engineering-Firma Eigentümerin der Engineering-relevanten Daten ist, kon
 
     - Wenn diese Dokumente an andere juristische Entitäten freigegeben werden, sind die Dokumente davor geschützt, von der Betriebsfirma entfernt zu werden.
     - Andere juristische Entitäten können völlig neue, lokale Dokumente hinzufügen. Die Betriebsfirma ist Eigentümerin und Verwalterin dieser lokalen Dokumente.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

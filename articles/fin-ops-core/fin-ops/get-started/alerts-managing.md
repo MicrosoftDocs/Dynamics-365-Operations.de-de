@@ -82,3 +82,6 @@ Wenn ein Stapelverarbeitungsfenster eingerichtet wurde, wird eine Warnung gesend
 
 1. Gehen Sie zu **Systemverwaltung** &gt; **Periodische Aufgaben** &gt; **Warnungen** &gt; **Änderungsbasierte Warnungen**.
 2. Im Dialogfeld **Warnung Fälligkeitsdatum** geben Sie die entsprechenden Informationen ein.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

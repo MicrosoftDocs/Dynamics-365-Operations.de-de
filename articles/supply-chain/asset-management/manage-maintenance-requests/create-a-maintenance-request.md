@@ -73,3 +73,6 @@ In der Detailansicht können Sie verschiedene Informationen aktualisieren. Nachf
 
 > [!NOTE]
 > Wenn Sie bei der Erstellung einer Wartungsanfrage eine Anlage auswählen, können Sie der Anlage einen Fehler hinzufügen. Nachdem die Wartungsanfrage erstellt wurde, können Sie ggf. weitere Fehler hinzufügen. Um Fehler hinzuzufügen, wählen Sie auf der Seite **Alle Wartungsanfragen** die Option **Anlagenfehler** aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

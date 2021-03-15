@@ -44,3 +44,6 @@ Die Anzahl an Containern, die für eine Auslastung berücksichtigt werden sollen
 -   Um das Gewicht und das Volumen für einen Container festzulegen, klicken Sie auf **Lagerortverwaltung** \> **Einstellungen** \> **Container** \> **Containertypen**.
 
 -   Um den Containernutzungsprozentsatz einzurichten, klicken Sie auf **Lagerortverwaltung** \> **Einstellungen** \> **Container** \> **Containergruppen** und geben einen Wert in das Feld **Containernutzungsprozentsatz** ein.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

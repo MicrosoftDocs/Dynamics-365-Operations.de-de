@@ -65,3 +65,6 @@ Diese Prozedur zeigt, wie man die Vorschläge zur Mindestdeckung berechnet, basi
 5. Klicken Sie im Aktionsbereich **Action Pane** auf Plan.
 6. Klicken Sie auf **Einzelteilabdeckung**. Beachten Sie, dass die **Mindestmenge** mit der neuen Mindestmenge aus dem Sicherheitsbestandsjournal aktualisiert wurde.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

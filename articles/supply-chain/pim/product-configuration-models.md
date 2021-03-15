@@ -152,3 +152,6 @@ Sie können auf der Registerkarte <strong>Allgemein</strong> der Seite <strong>D
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

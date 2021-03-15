@@ -52,3 +52,6 @@ Weitere Informationen zu den Einstellungen, die sich auf die Berechnung von Bewe
 
 > [!NOTE]
 > Wenn Sie einen Anlagenservicelevel-Datensatz auf der Seite ändern **Anlagenservicelevel** ändern, nachdem Sie ihn bereits für einen Arbeitsauftrag verwendet haben, wird der Servicelevel für Wartungsanfragen und Arbeitsaufträge nicht entsprechend aktualisiert.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -182,3 +182,6 @@ Gehen Sie folgendermaßen vor, um Kommentare zu den Änderungen am Workflow einz
 2. Geben Sie im Feld **Kommentare zum Workflow eingeben** Ihre Kommentare ein.
 3. Prüfen Sie die Kommentare. Nach dem Hinzufügen von Kommentaren können diese nicht mehr geändert werden.
 4. Klicken Sie auf **Hinzufügen**, um Ihre Kommentare dem Bereich **Kommentarhistorie** hinzuzufügen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -189,3 +189,6 @@ Sie können jetzt die Datenentitäten **Common Data Service-Bezeichnerentität d
 ## <a name="related-topic"></a>Verwandtes Thema
 
 [Nach Produkten und Produktvarianten bei der Auftragserfassung suchen](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

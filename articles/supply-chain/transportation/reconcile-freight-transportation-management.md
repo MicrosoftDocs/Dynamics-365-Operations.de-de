@@ -105,3 +105,6 @@ Eine weitere Möglichkeit zum manuellen Abgleich für dieses Beispiel besteht da
 1. Gleichen Sie Inv1 und Inv 2 nacheinander mit FB ab. Der FB ist vollständig abgeglichen.
 
 Wie dieses Beispiel zeigt, sollte der Abgleich von Frachtrechnungen mit negativen Beträgen nur manuell erfolgen. Dadurch wird sichergestellt, dass es immer möglich ist, die Frachtrechnungen mit negativen Beträgen mit einem nicht vollständig abgeglichenen Frachtbrief abzugleichen, da Sie so die Reihenfolge des Abgleichs steuern können.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

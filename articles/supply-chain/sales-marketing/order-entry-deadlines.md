@@ -108,3 +108,6 @@ In der folgenden Tabelle sind die in MST umgerechneten Auftragsfristen für Stan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

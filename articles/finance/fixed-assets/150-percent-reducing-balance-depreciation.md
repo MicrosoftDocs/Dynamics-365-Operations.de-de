@@ -87,3 +87,6 @@ Bei der Abschreibungsmethode „150 % degressiv“ werden 150 Prozent durch die
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

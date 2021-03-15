@@ -81,3 +81,6 @@ Wenn Ihre Organisation einem Debitor für Mehrwertsteuer Erstattung bietet, müs
 3. Wählen Sie **Steuerrückerstattung** &gt; **MwSt. ausgeglichen.** aus.
 
 Das Kontrollkästchen **MwSt. ausgeglichen.** ist für die Rechnung und die Rechnungspositionen aktiviert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

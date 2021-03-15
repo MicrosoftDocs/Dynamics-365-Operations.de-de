@@ -40,3 +40,6 @@ Fokusse dieser Prozedur auf den Einstellungen eines Dispositionscodes, der mit e
 6. Geben Sie im Feld "Rückgabe Bereitstellungscode" einen Wert ein.
     * Der Rückholdispositionscode bestimmt den Rest des Rücklieferungsprozesses für die erfassten Artikel. In diesem Beispiel sollte der Debitor eine Gutschrift erhalten. Hinzufügen eines Rückgabedispositionscode hinzu, der einen Aktivität Haben enthält.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

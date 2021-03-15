@@ -73,3 +73,6 @@ Für diese Aufgaben wird das Demo-Unternehmen USMF verwendet.
     * Dieses Konto wird bei der Buchung der Eröffnungsmarge belastet und bei der Buchung der Zahlung entlastet.  
 9. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

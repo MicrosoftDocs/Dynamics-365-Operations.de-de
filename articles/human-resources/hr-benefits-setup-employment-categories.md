@@ -36,3 +36,6 @@ Beschäftigungskategorien einrichten in Dynamics 365 Human Resources, die zu Ihr
 3. Geben Sie Werte für **Arbeitskrafttyp**, **Beschäftigungskategorie** und **Beschreibung** ein.
 
 4. Wählen Sie **Speichern**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

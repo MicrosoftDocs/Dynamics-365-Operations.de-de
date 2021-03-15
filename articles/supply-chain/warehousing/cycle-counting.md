@@ -139,3 +139,6 @@ Sie können Abweichungen in den gezählten Werten anpassen und dann den gezählt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

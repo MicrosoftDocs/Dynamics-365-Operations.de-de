@@ -98,3 +98,6 @@ Da die Daten aus der Tabelle **Produkte** so konzipiert sind, dass sie nur in ei
 ## <a name="quote-and-quote-product-tables"></a>Anbegots- und Angebotsproduktetabellen
 
 Befolgen Sie für die Tabelle **Angebot** die Anweisungen im Abschnitt [Auftragstabelle](#order-table) weiter oben in diesem Thema. Befolgen Sie für die Tabelle **Angebotsprodukt** die Anweisungen im Abschnitt [Auftragsproduktetabelle](#order-products-table).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

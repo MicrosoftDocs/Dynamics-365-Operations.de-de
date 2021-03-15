@@ -64,3 +64,5 @@ Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Kostenverwaltung
 #### <a name="task-guides"></a>Aufgabenleitfäden
 
 Zusätzliche Hilfe steht über Aufgabenhandbücher zur Verfügung. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche „Hilfe”.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

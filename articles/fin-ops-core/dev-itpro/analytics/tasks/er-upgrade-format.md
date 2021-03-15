@@ -243,3 +243,6 @@ Dazu muss Proseware, Inc. die Basiskonfigurationsversion für die benutzerdefini
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testen Sie das benutzerdefinierte Format zum Generieren von Zahlungsdateien
 Schließen Sie die Schritte in der Prozedur „Verwenden Sie erstelltes Format zum Generieren elektronischer Dokumente für Zahlungen“ in einer parallelen Finance and Operations-Sitzung ab. Wählen Sie das erstellte Format „BACS (Großbritannien, fiktiv benutzerdefiniert)“ in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem von Proseware, Inc.eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt. Die Datei sollte auch den vor kurzem von LItware, Inc. eingegeben XML Knoten enthalten, der in SWIFT-Bankleitzahl die Übereinstimmung der Landanforderungen darstellt.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

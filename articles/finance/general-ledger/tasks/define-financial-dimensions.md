@@ -54,3 +54,6 @@ Dieser Aufgabenleitfaden veranschaulicht das Hinzufügen einer Finanzdimension u
 9. Geben Sie im Feld **Dimensionswert** einen Namen ein, um den Finanzdimensionswert zu beschreiben.
 10. Geben Sie im Textfeld eine **Beschreibung** ein, die den Finanzdimensionswert beschreibt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

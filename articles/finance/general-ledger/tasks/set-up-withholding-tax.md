@@ -48,3 +48,6 @@ In diesem Thema wird erläutert, wie die Quellensteuer eingerichtet wird. Die *Q
 18. Wählen Sie **Speichern**.
 19. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

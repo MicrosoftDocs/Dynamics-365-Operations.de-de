@@ -50,3 +50,6 @@ Die Einstellungen in der Registerkarte **Zahlensequenz** bestimmt die Sequenzen,
 
 > [!NOTE]
 > Die Anzahl der gearbeiteten Stunden kann 1,250 Stunden und eine Beschäftigungsdauer von 12 Monate nicht überschreiten. Diese maximalen Werte sind in Übereinstimmung mit dem Bundesgesetz in den USA festgelegt. Schließlich bestimmen die Einstellungen auf der Registerkarte **Mitarbeiter-Self-Service** die Informationen, die ein Manager im Auftrag der Angestellter eingeben kann.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

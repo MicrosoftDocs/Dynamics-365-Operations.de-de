@@ -99,3 +99,6 @@ Befolgen Sie die unter  [Produktionsausfall melden](https://docs.microsoft.com
  ## <a name="see-also"></a>Siehe auch
 
  [Liveschaltung vorbereiten](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

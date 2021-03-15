@@ -95,3 +95,6 @@ Bankauszugsbuchungen, die Sie auf dem Abstimmungsarbeitsblatt als **Neu** gekenn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

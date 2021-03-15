@@ -135,3 +135,6 @@ Sie können ein Fragment auch bearbeiten, indem Sie es auf einer Seite, in einer
 [Arbeiten mit Voreinstellungslayouts](work-with-layouts.md)
 
 [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

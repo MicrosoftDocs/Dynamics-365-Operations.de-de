@@ -97,3 +97,6 @@ Weitere Informationen zum Ändern der Lagerortvorlage, um die Konfiguration eine
 ## <a name="related-topic"></a>Verwandtes Thema
 
 [Konfigurationsdatenvorlagen](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

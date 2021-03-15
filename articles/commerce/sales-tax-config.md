@@ -81,3 +81,6 @@ Für Auftragspositionen, bei denen Abholung im Laden oder Abholung am Straßenra
 
 [Berechnung der Steuerbefreiung](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

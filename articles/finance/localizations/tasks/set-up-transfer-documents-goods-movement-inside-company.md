@@ -73,3 +73,6 @@ Dieses Verfahren zeigt, wie Umlagerungsdokumente für Warenbewegung innerhalb ei
 10. Klicken Sie auf "Lieferschein".
 11. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

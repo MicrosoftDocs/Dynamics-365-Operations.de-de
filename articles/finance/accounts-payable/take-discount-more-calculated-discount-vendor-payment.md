@@ -50,3 +50,6 @@ April bucht die Zahlungserfassung. Die Rechnung wird vollständig mit einer Zahl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

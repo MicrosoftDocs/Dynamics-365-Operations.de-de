@@ -209,3 +209,6 @@ Zusätzlich zu den Einschränkungen, die derzeit für Artikelgewichtsprodukte ge
 
 > [!NOTE]
 > Die vorstehenden Informationen zu Artikelgewichtstags sind nur gültig, wenn das Artikelgewichtsprodukt über eine Methode zur Verfolgung der Dimension von Artikelgewichtstags verfügt, die vollständig verfolgt wird (d. h. der Parameter der **Dimensionsrückverfolgungsmethode des Artikelgewichtstags** in der Richtlinie zur Handhabung von Gegenständen mit Artikelgewicht ist auf **Produktdimensionen, Rückverfolgungsangaben und alle Lagerdimensionen** gesetzt). Wenn der Gegenstand mit dem Artikelgewicht nur teilweise mit Tags verfolgt wird (d. h. wenn der Parameter **Dimensionsrückverfolgungsmethode des Artikelgewichtstags** in der Richtlinie zur Handhabung von Gegenständen mit Artikelgewicht auf **Produktdimensionen, Rückverfolgungsangaben und Inventarstatus** gesetzt ist) gelten zusätzliche Einschränkungen. Da in diesem Fall die Sichtbarkeit zwischen Tag und Inventar verloren geht, werden einige zusätzliche Szenarien nicht unterstützt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

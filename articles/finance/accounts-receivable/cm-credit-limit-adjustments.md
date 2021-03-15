@@ -123,3 +123,6 @@ Die Workflows **Kreditlimitanpassungen** können verwendet werden, um Kreditlimi
 
 > [!NOTE]
 > Wenn Sie den Workflow **Kreditlimitanpassungen** erstellen, können Sie ihn so einrichten, dass die Regulierungen automatisch gebucht werden, nachdem die Positionen genehmigt wurden. Fügen Sie einfach die Aufgabe **Erfassung automatisch buchen** im Workflow hinzu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

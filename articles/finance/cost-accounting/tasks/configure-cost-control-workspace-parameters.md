@@ -58,3 +58,6 @@ Verwenden Sie das folgende Verfahren, um den Kostenkontrollearbeitsbereich zu ko
 27. Geben Sie im Feld "Kostenobjektdimensionshierarchieknoten" einen Wert ein oder wählen Sie einen Wert aus.
     * Nachdem Sie eine Kostenträgerdimensionshierarchie ausgewählt haben, erweitern Sie die Kostenfaktordimensionshierarchie, um die gewünschten Kostenwerte anzuzeigen. So können Sie die Hierarchie zu den Produktionsgeschäftskosten erweitern, um den Wert zu finden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

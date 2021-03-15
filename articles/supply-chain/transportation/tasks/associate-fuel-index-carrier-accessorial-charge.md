@@ -77,3 +77,6 @@ Dieses Handbuch, zeigt wie Sie eine Zusatzleistungszuweisung, Spediteurzusatzgeb
 6. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 7. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Weitere Informationen zum Einrichten von Vorschriften und Werten für gefährlic
 ## <a name="warehouse-management"></a>Lagerortverwaltung
 
 Wenn Sie eine Lieferung in der Lagerverwaltung vorbereiten, können Sie mehrere neue Berichte drucken, die die Informationen verwenden, die Sie in der Produktinformationsverwaltung eingerichtet haben. Weitere Informationen zu den verfügbaren Berichten und deren Verwendung finden Sie unter [Anfragen und Berichte zu Gefahrstoffen](hazmat-reports.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

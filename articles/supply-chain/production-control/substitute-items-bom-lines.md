@@ -48,3 +48,6 @@ Betrachten wir das folgende Szenario: Ein Artikel der Metallplatte ist für eine
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

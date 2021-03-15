@@ -112,3 +112,6 @@ Nach erfolgter Reparatur kann die Reparaturposition abgeschlossen werden. Hierzu
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

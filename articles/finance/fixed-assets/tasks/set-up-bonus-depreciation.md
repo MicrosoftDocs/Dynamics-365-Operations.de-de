@@ -48,3 +48,6 @@ Die folgende Prozedur zeigt, wie ein Sonderabschreibungsbetrag erstellt wird und
     * Der Prozentsatz oder Betrag wird standardmäßig aus der Sonderabschreibungseinstellung übernommen.  
 8. Geben Sie im Feld "Priorität" eine Zahl ein.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

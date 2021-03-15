@@ -65,3 +65,6 @@ Arbeitgeber müssen wissen, ob ihre Mitarbeiter verletzt sind oder aufgrund von 
     * Berichtende Stellen sind die Behörden, denen der Vorfall gemeldet werden muss. Aktivieren Sie das Standardkontrollkästchen für die Stelle, die die Standardstelle ist, der die Verletzungs- und Krankheitsfälle gemeldet werden.  
 23. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

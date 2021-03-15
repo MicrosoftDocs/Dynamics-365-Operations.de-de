@@ -83,3 +83,6 @@ Unter beiden SEPA-Direktbelastungsschemen besitzen Debitoren bestimmte Rechte f√
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

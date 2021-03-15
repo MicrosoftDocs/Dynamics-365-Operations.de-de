@@ -94,3 +94,6 @@ Wenn Sie den Umfang Ihres Experiments als **ganz** im Assistenten **Experiment v
 
 ## <a name="next-step"></a>Nächster Schritt
 [Vorschau und Veröffentlichung eines Experiments](experimentation-preview-publish.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

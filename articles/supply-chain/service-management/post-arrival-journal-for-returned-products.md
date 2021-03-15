@@ -57,3 +57,6 @@ Nach der Buchung der Erfassung werden die zurückgelieferten Artikel im Lagerbes
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

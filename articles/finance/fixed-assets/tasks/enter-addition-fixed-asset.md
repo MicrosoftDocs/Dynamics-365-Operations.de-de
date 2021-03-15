@@ -45,3 +45,6 @@ Die Prozedur verwendet die "Buchhalterrolle" und die Demodaten für die juristis
     * Legen Sie **Verlängert die Nutzungsdauer** auf **Ja** fest, falls die Erweiterung die Nutzungsdauer der Anlage erhöht.  
     * Dieses Feld dient nur zur Information. Um die Nutzungsdauer zu erhöhen, ändern Sie die "Nutzungsdauer" in den "Wertmodellen" und/oder den "Abschreibungsbüchern" für die Anlage.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

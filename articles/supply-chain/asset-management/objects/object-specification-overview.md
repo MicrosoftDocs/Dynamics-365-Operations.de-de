@@ -39,3 +39,6 @@ Die Seite **Anlagenattributübersicht** zeigt jede Anlage in einer einzelnen Zei
 3. Wählen Sie **OK**. Eine Liste zeigt alle Anlagen an, die den ausgewählten Anlagentyp verwenden. Für jede Anlage werden alle zugehörigen Anlagenattributtypen in derselben Zeile angezeigt.
 
 Die Seite **Anlagenattribut** zeigt jeden Attributtyp, der in der Anlage verwendet wird, in einer eigenen Zeile an. Wählen Sie **Anlagenverwaltung** \> **Abfragen** \> **Anlagen** \> **Anlagenattribut** aus, um diese Seite zu öffnen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

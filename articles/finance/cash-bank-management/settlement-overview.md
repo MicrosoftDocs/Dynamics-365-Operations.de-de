@@ -77,3 +77,6 @@ Wenn Sie versuchen, eine Transaktion auszugleichen, wird möglicherweise ein Sym
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Rest ausgleichen](settle-remainder.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

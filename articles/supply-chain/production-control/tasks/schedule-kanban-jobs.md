@@ -61,3 +61,6 @@ Der Schwerpunkt dieser Prozedur liegt auf der Planung von Kanban-Bearbeitungsein
     * Beachten Sie, dass beide Einzelvorgänge zur gewünschten Periode hinzugefügt werden.  
     * Im Abschnitt "Periodenkapazität" können Sie die Auslastung für jede Periode sehen. Das Feld "Verbrauch" zeigt den geplanten Verbrauch in dieser Periode an. Wenn der geplante Verbrauch höher als die verfügbare Kapazität in dieser Periode ist, wird der überladene Verbrauch ausgewählt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

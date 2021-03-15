@@ -76,3 +76,6 @@ Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Arbeitsaufträge mit Projekt (Field Service zu Supply Chain Management): WorkOrderService
 
 [![Vorlagenzuordnung in Datenintegration](./media/FSWOP4.png)](./media/FSWOP4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

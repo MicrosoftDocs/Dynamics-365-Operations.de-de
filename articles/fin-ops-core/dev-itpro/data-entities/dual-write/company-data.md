@@ -102,3 +102,6 @@ Um die Filterung in Ihren benutzerdefinierten Formularen oder in benutzerdefinie
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Unternehmenskontext anwenden":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

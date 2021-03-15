@@ -95,3 +95,6 @@ Zykluszählung ist ein Lagerortprozess, den Sie verwenden können, um Artikel de
 21. Klicken Sie auf **OK**.
 22. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

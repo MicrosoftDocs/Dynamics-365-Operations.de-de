@@ -60,3 +60,6 @@ Weitere Informationen zu den [Richtlinienregeltypen](audit-policy-rules.md) find
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

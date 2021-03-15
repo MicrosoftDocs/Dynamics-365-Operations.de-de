@@ -72,3 +72,6 @@ Wenn Sie das konfigurierte EB-Format ausführen, wird die angehängte Word-Vorla
 
 - [EB-Konfigurationen mit Excel-Vorlagen wiederverwenden, um Berichte im Word-Format zu erstellen](./tasks/er-design-configuration-word-2016-11.md)
 - [Einbetten von Bildern und Formen in generierten Dokumenten mithilfe von ER](electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

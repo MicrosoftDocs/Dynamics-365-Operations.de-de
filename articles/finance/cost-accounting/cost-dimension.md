@@ -54,3 +54,6 @@ Nachdem die Daten in die Kostenrechnung importiert wurden, können Variablengrup
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

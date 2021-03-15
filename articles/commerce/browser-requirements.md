@@ -47,3 +47,6 @@ Dynamics 365 Commerce-Websites werden am besten von folgenden Webbrowsern unters
 [Robots.txt-Dateien verwalten](manage-robots-txt-files.md)
 
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

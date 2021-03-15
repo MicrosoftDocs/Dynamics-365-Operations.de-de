@@ -51,3 +51,6 @@ In diesem Thema wird erläutert, wie Sie eine attributive Preisgestaltung einric
 8. Geben Sie in das Feld **Ausdruck** einen Wert ein. Geben Sie z.B. `50` ein. 
 9. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Me
 | Mitarbeiterstatisik | Ausgabenbericht nach Kostentyp            |
 |                     | Persönliche Spesen                       |
 |                     | Ausgabenberichte nach Statistikgruppe     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

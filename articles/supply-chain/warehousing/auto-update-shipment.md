@@ -139,3 +139,6 @@ Die Welle wird verarbeitet und Arbeit für die reservierten Mengen in der Ladung
 Wenn eine Lieferung den Status **In Wellen** oder höher hat, werden Aktualisierungen der Menge in einer Auftragsposition nicht angezeigt oder gegen eine Ladungsposition geprüft, die der Lieferung zugeordnet ist. Änderungen an der Menge in der Ladungsposition müssen direkt in der Ladungsposition vorgenommen werden.
 
 Die Prüfung wird durchgeführt, nachdem Arbeit für die Ladungsposition erstellt und eine Reservierung vorgenommen wurde. Eine Verringerung der Menge in der Auftragsposition wird dann gegen die Arbeitspositionsreservierung geprüft.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Die folgende Tabelle enthält die Visualisierungen, die für jede Berichtsseite 
 | Bewertungszuordnungen        | Anlagendetails |
 
 Um die Analyse mit Daten anzuzeigen, müssen Sie die AssetTransactionMeasure-Aggregatmessung auf der Seite **Entität-Speicher** aktualisieren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

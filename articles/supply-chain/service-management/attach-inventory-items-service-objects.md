@@ -50,3 +50,6 @@ Der Artikel ist nun dem Serviceobjekt zugeordnet. Jede für den Artikel angegebe
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

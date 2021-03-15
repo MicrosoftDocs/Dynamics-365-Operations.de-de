@@ -290,3 +290,6 @@ Wird eine elektronische Rechnungsstellungsfunktion von einer anderen abgeleitet,
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Elektronische Rechnungen in Finance und Supply Chain Management ausstellen](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Sie können diese Anleitung im Demodatenunternehmen USMF ausführen. Diese Proze
 6. Wählen Sie **Speichern**.
 7. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -130,3 +130,6 @@ Dokument/Erfassung ist auf "Beträge einschließlich Mehrwertsteuer" festgelegt 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Der Verpackungsprozess ermöglicht es Ihnen, Produkte zu überprüfen und in Con
 8. Geben Sie im Feld "Gewichtseinheit" einen Wert ein, oder wählen Sie einen Wert aus.
 9. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Dieses Problem ist möglicherweise nur eine Frage der Zeitmessung. Gehen Sie fol
 1. Wählen Sie **Bearbeiten** am oberen Seitenrand aus, und legen Sie das geplante Startdatum/Uhrzeit auf einen Wert fest, durch den die Analyse näher an der aktuellen Uhrzeit aktualisiert wird.
 
 ![Batchaufträge](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

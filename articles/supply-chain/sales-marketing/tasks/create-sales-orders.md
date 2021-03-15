@@ -67,3 +67,6 @@ Die Produkte, die von Ihrer Organisation verkauft werden, sind möglicherweise i
     Die Seite **Summen** zeigt Details zum gesamten Auftrag an. Dazu zählt der Zwischensummenbetrag, der eine Summe aller Positionsnettobeträge ist, angepasst um spätere Positionsrabatte, den Gesamtrechnungsbetrag, der ein um spätere Rabatte auf Auftragsebene angepasster Zwischensummenbetrag ist, Belastungen und Mehrwertsteuer, die Debitorenkreditlimitsituation, usw. Der Rechnungsbetrag ist der Betrag, der auf dem Rechnungsdokument des Debitors angezeigt wird.  
     
 3. Wählen Sie **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

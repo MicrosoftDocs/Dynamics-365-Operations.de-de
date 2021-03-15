@@ -53,3 +53,6 @@ Gehen Sie zum Einrichten von Erfolgsmetriken folgendermaßen vor.
 
 ## <a name="next-step"></a>Nächster Schritt
 [Ein Experiment verbinden und bearbeiten](experimentation-connect-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

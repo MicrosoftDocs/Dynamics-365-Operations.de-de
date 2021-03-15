@@ -276,3 +276,6 @@ Der Mehrwertsteuertyp für jedes Land muss den Bedingungen der Gesetzgeber des L
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

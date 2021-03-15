@@ -70,3 +70,6 @@ Wenn Sie den Wartungs- oder Reparaturauftrag erledigt haben, können Sie die Anl
 2. Wählen Sie die Anlage oder die Wartungsanfrage aus.
 3. Wählen Sie **Anlagen liefern** aus.
 4. Geben Sie im Feld **Geliefert** das Datum und die Uhrzeit ein. Wählen Sie dann **OK** aus. Der Datensatz wird von der Listenseite **Ausgehende Anlagen** entfernt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

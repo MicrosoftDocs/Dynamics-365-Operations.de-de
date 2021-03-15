@@ -61,3 +61,6 @@ In vorliegenden Beispiel muss nur Artikelnummer A0001 in Lagerort 61 gezählt we
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Zykluszählung](cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

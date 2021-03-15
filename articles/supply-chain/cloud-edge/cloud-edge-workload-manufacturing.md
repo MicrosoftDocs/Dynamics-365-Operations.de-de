@@ -109,3 +109,6 @@ Um die Historie der Fertigungsaufträge einzusehen, die auf einer Scale-Unit ver
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Fertigungs-Hub zu Scale-Unit Nachrichtenprozessorauftrag
 
 Der Job _Manufacturing hub to scale unit message processor_ verarbeitet Daten vom Hub zur Scale-Unit. Dieser Job wird automatisch gestartet, wenn die Arbeitsauslastung der Fertigungsausführung bereitgestellt wird. Sie können ihn jedoch jederzeit manuell ausführen, indem Sie zu **Produktionssteuerung \> Periodische Aufgaben \> Backoffice-Arbeitsauslastung \> Manufacturing Hub to Scale-Unit Message Processor** gehen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

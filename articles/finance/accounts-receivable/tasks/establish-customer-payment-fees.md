@@ -50,3 +50,6 @@ Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 18. Wählen Sie im Feld **Gebührenwährung** die Währung der Gebühr aus. Dies ist die Währung, in der die Gebühr erstellt wird.  
 19. Klicken Sie auf **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

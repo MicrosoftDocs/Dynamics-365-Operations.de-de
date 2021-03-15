@@ -69,3 +69,6 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 11. Klicken Sie auf "OK".
     * Prüfen Sie das generierte Ergebnis. Beachten Sie, das für jede Anlage ein einzelner XML-Knoten erstellt wurde. Der Inhalt des Anhangs wird dann mit der XML-Ausgabe im MIME-Textformat (Base64) ausgefüllt.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -193,3 +193,6 @@ Weitere Informationen finden Sie unter [Dreiseitige Abgleichsrichtlinien](three-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

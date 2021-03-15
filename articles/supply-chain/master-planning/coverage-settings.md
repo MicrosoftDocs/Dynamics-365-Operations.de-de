@@ -65,3 +65,6 @@ Jeder Wiederbeschaffungsmethode wird eines der folgenden Dispositionsverfahren z
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Hauptpläne – Übersicht](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

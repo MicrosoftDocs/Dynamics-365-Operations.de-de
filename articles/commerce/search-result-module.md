@@ -90,3 +90,6 @@ Führen Sie folgende Schritte aus, um ein Suchergebnismodul einer Kategorieseite
 [Informationen zur Modulbibliothek](starter-kit-overview.md)
 
 [Schnellansichtsmodul](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

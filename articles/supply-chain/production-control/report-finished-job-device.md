@@ -238,3 +238,6 @@ Führen Sie die folgenden Schritte aus, um zu steuern, ob Mitarbeiter eine vorha
 
 > [!NOTE]
 > Um das Etikett zu konfigurieren, gehen Sie zu **Lagerortverwaltung \> Einstellung \> Dokumentrouting \> Dokumentrouting**. Weitere Informationen finden Sie unter [Aktivieren Sie das Drucken von Kennzeichenetiketten](../warehousing/tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

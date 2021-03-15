@@ -82,3 +82,6 @@ Die Schaltflächen im Aktivitätsbereich sind auf Registerkarten zusammengefasst
 | Fehler                              | Öffnen Sie die Seite **Anlagenfehler**, auf der Sie ein Liste aller Anlagenfehlererfassungen anzeigen können, die dem ausgewählten funktionalen Standort zugeordnet sind. |
 | Status für funktionalen Standort aktualisieren    | Aktualisiert die Phase des ausgewählten funktionalen Standorts.                                                                                        |
 | Lebenszyklusstatusprotokoll                 | Hier wird ein Protokoll angezeigt, das die Phasen des ausgewählten funktionalen Standorts anzeigt.                                                                        |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

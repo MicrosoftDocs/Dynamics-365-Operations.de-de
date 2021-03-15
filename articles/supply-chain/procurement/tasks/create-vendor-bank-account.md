@@ -57,3 +57,6 @@ Diese Prozedur zeigt Ihnen, wie Sie ein Bankkonto für einen Kreditor erstellen.
 25. Wählen Sie im Feld **Bankkonto** das Konto aus, dass Sie gerade erstellt haben.
 26. Klicken Sie auf **Speichern**. Die Adresse wird möglicherweise von der Bankgruppe geerbt, wenn eine angegeben ist, oder Sie können sie hier hinzufügen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

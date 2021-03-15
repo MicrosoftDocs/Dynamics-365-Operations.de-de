@@ -93,3 +93,6 @@ Die Übermittlungsprotokolle enthalten die folgenden zusätzlichen Funktionen:
 - **Übermittlungen abbrechen** – Diese Funktion ermöglicht einen speziellen Übermittlungsvorgang in Szenarien, in denen die elektronische Rechnung von einem externen Webdienst genehmigt werden muss. Es weist das Add-On für die elektronische Rechnungsstellung an, dem Webdienst eine bestimmte Meldung zu senden, mit der der Status einer genehmigten elektronischen Rechnung in der Webdienstdatenbank gelöscht werden soll.
 - **Dokument erneut übermitteln** – Übermitteln Sie ein elektronisches Dokument erneut, das bereits an das Add-On für die elektronische Rechnungsstellung übermittelt wurde. Auf der Seite **Übermittlungsdetails** wird ein ganz neues Protokoll erstellt.
 - **Verknüpfte Übermittlung senden**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

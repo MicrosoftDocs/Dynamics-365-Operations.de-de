@@ -186,3 +186,6 @@ Es gibt zwei Ausnahmen zur Regel, dass Chargenausgleiche in den Chargenaufträge
 1. Wenn sich die Formelmaßeinheit von der Lagermaßeinheit der Wirksubstanz unterscheidet, gilt der Chargenauftrag nicht für den Chargenausgleich.
 
 Ein Chargenauftrag, der nicht für Chargenausgleich anwendbar ist, durchläuft den normalen Prozesszyklus für Chargenaufträge.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

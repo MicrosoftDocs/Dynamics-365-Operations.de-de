@@ -56,3 +56,6 @@ In den **Produktionssteuerungsparametern** können Sie das Feld **Sachkontobuchu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Wenn Sie Benutzern Rollen zuweisen, werden die Regeln für die Aufgabentrennung 
 
 > [!NOTE]
 > Wenn mehrere Konflikte für denselben Benutzer aufgelistet sind, wählen Sie den Benutzerdatensatz aus, und bewerten Sie die zugewiesenen Rollen auf der Seite **Benutzer**. Um diesen Konflikt zu vermeiden, überprüfen Sie jede Regel, nachdem sie hinzugefügt oder geändert wurde.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

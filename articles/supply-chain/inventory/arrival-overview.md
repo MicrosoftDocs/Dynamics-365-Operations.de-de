@@ -120,3 +120,6 @@ Nachdem alle Waren erfasst wurden, aktualisiert der Lagerortleiter oder der Eink
 
 ## <a name="summary"></a>Summe
 Die Seite **Wareneingangsübersicht** kann der Lagerortverwaltung und den Lagerarbeitern dabei helfen, sich einen Überblick über die erwarteten Arbeit zu verschaffen, der als Teil eines eingehenden Prozesses ausgeführt werden muss. Die Seite kann auch verwendet werden, um den Wareneingangprozess zu starten, um zu gewährleisten, dass die Artikel an der ersten Position am Lagerort verfolgt werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

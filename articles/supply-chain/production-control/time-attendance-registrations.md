@@ -118,3 +118,6 @@ Arbeitskräfte mit Arbeitsaufgaben, die kein direktes Feedback erfordern (z. B. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

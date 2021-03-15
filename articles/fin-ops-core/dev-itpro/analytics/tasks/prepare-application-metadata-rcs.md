@@ -80,3 +80,6 @@ Es werden Metadateninformationen zur Intrastat-Tabelle der Datensätze hinzugef�
 3.    Klicken Sie auf **OK**. 
     
 Die erstellte ER-Metadatenkonfiguration ist als XML Datei gespeichert, die in RCS importiert werden kann und als die Informationsquelle über Metadaten für die Außenhandelsdomäne verwendet werden kann. Auf Basis dieser Informationen können wir die Zuordnung zwischen Bewerbungsmetadaten und ER-Datenmodell angeben.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Die folgende Abbildung zeigt ein Bildschirmabbild einer KPI-Berechnung für vier
 - Sie können mehrere Anlagen in **Alle Anlagen** auswählen und dann auf die Schaltfläche **Anlagen-KPIs** auf der Registerkarte **Allgemein** klicken. Klicken Sie dann im Dialogfeld **Anlagen-KPIs berechnen** auf **OK**, um KPIs für die ausgewählten Anlagen zu berechnen.  
 - Ergebnisse einer KPI-Berechnung können [Wartungsausfallzeiterfassungen](../work-orders/maintenance-downtime.md) enthalten, je nach Einstellungen und Verwendung von Wartungsausfallzeitursachencodes. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Dies ist hilfreich, wenn Sie einen Überblick über den erwarteten Artikelverbra
 8. Klicken Sie auf die Schaltfläche **Dimensionen anzeigen**, wenn Sie das Produktdimensionen, die Lagerdimensionen oder die Rückverfolgungsangaben anzeigen möchten, die Artikeln zugeordnet werden. Aktivieren Sie die relevanten Kontrollkästchen, und klicken Sie auf **OK**.
 
 ![Abbildung 1](media/02-capacity-planning.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

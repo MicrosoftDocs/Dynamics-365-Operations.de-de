@@ -130,3 +130,6 @@ Gehen Sie folgendermaßen vor, um eine vorhandene Empfehlungsliste in dem Commer
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

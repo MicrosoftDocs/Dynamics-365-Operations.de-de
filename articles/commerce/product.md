@@ -91,3 +91,6 @@ Gehen Sie zum Einrichten von Produktempfehlungen folgendermaßen vor:
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

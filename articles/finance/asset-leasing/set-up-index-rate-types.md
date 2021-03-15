@@ -42,3 +42,6 @@ Sie müssen entweder **Indexratenwertdifferenz** oder **Indexratenwert** als Ind
 
 - Wählen Sie die **Indexratenwertdifferenz**-Methode zur Berechnung einer neuen Mietzahlung basierend auf der Differenz zwischen der Indexrate am Startdatum und der letzten Indexrate aus. Die Indexrate wird im **Indexrate (%)**-Feld definiert.
 - Wählen Sie die **Indexratenwert**-Methode zur Berechnung der Mietzahlung unter Verwendung des im Feld **Indexrate (%)** Prozentsatzes aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

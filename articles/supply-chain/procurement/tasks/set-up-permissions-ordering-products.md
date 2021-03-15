@@ -44,3 +44,6 @@ In diesem Thema wird erläutert, wie Sie den Mitarbeitern die Erlaubnis erteilen
 2. Verwenden Sie den Schnellfilter, um die Arbeitskraft zu suchen, die Sie soeben als anfordernde Person hinzugefügt haben.
 3. Wählen Sie die anfordernde Person aus. Die Antragstellerliste zeigt die Personen an, die die Berechtigung haben, Artikel im Auftrag des Antragstellers zu bestellen, der im linken Bereich ausgewählt ist.  Sie können zusätzliche Antragsteller hier hinzufügen. In dieser Ansicht können Sie der anfordernden Person auch die Berechtigung erteilen, Anforderungen in juristischen Personen und Organisationseinheiten zu erstellen, die nicht die primäre juristische Person oder Organisationseinheit dieser Person sind.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

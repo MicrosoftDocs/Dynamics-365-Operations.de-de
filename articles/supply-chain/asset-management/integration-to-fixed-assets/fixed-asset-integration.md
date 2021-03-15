@@ -114,3 +114,6 @@ Um eine vorhandene Zuordnung zwischen einer Wartungsanlage und einer Anlage zu e
 1. Suchen und öffnen Sie die Anlage.
 1. Auf dem Inforegister **Anlage** löschen Sie den Wert aus dem Feld **Funktionaler Standort**.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Nachdem Sie das aktualisierte Headerfragment veröffentlicht haben, wird auf all
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -107,3 +107,6 @@ Die Nutzungsdauer der Anschaffungsänderung ist die gleiche wie die der Anlage s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

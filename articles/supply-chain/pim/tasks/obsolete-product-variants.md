@@ -72,3 +72,6 @@ Diese Prozedur zeigt, wie Sie veraltete freigegebene Produkte oder Produktvarian
 
 8. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

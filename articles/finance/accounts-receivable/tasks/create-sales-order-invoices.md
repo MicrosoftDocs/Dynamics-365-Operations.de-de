@@ -67,3 +67,6 @@ Dieses Aufgabenhandbuch beschreibt, wie ein Auftrag fakturiert wird, einschließ
 10. Klicken Sie auf **Abbrechen**.
 11. Klicken Sie auf **Ja**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Führen Sie diese Schritte aus, um zu bestätigen, dass die Zahlungsmethode „K
 [Festlegen von Produktmengenbeschränkungen für B2B-E-Commerce-Websites](quantity-limits.md)
 
 [SDK- und Modulbibliothekupdates](../e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

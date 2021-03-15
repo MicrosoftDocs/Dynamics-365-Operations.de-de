@@ -129,3 +129,6 @@ Sie können zusätzliche Pivottabellen und Diagramme für Gruppierungen und Visu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

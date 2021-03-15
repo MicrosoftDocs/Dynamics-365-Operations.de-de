@@ -77,3 +77,6 @@ Die folgende Abbildung zeigt den Datenfluss.
 [Filter auf einen Plan anwenden](plan-filters.md)
 
 [Abbrechen eines Planungsauftrags](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -79,3 +79,6 @@ Wenn diese Informationen nicht korrekt angegeben sind, erhalten Sie eine Meldung
 3. Wählen Sie im Feld **Auftragsart** die Option **Geplant und bestätigt**, **Geplant** oder **Bestätigt**, um die Art der zu projizierenden Aufträge auf dem Bericht anzugeben.
 4. Wählen Sie im Feld **Auslastungstyp** eine Auslastungstyp aus, um festzulegen, ob die Auslastungskapazität für Volumen oder Gewicht hochgerechnet werden soll.
 5. Wählen Sie im Feld **Arbeitslastkapazität** eine Auslastungskapazitätseinstellung aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

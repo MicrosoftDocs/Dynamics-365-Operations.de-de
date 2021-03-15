@@ -101,3 +101,6 @@ Mithilfe von Datensatzvorlagen können Sie Datensätze schneller erstellt werden
 - [Dokumentverwaltung konfigurieren](configure-document-management.md)
 - [E-Mail konfigurieren und senden](configure-email.md)
 - [Datums-/Uhrzeitdaten und Zeitzonen](date-time-zones.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

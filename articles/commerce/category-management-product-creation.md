@@ -56,3 +56,6 @@ In der erweiterten Produktkategoriestruktur kann darüber hinaus ein Verkaufsman
 Sie können die neue erweiterte Struktur für Produkteigenschaften verwenden, um aktualisierte Produkteigenschaften auszuwählen, die an die zugeordneten Produkte mit Push übertragen werden müssen. Wählen Sie auf der Seite **Produkthierarchie (Commerce)** im Aktivitätsbereich die Option **Kategorie** aus, und wählen Sie dann **Produkte aktualisieren**, um das Dialogfeld **Produkte aktualisieren** zu öffnen.
 
 ![Das Produktedialogfeld aktualisieren](media/NewUpdateProductsEnhancedView.PNG)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

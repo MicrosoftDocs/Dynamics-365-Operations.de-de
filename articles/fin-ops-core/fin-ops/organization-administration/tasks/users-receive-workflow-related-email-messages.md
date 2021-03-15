@@ -41,3 +41,6 @@ Sie können das System konfigurieren, um E-Mail-Nachrichten an Benutzer zu sende
 
 > [!NOTE]
 > Die Workflow-E-Mail-Vorlagen werden entweder aus System-E-Mail-Vorlagen oder aus Organisations-E-Mail-Vorlagen bezogen, je nachdem, ob es sich bei dem Workflow um einen Workflow auf Systemebene (nicht unternehmensspezifisch) oder auf Organisationsebene (unternehmensspezifisch) handelt.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

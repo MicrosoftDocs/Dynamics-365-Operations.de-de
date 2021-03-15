@@ -44,3 +44,6 @@ Dieses Handbuch veranschaulicht, wie die Berechnung der Abschreibung für zusät
 7. Ganzjährliche Abschreibung sonstiger Anschaffungen
 8. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

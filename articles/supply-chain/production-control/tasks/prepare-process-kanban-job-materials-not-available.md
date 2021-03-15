@@ -51,3 +51,6 @@ In dieser Prozedur liegt der Schwerpunkt auf dem Vorbereiten eines Kanban-Bearbe
 6. Klicken Sie auf "Vorbereiten".
     * Beachten Sie, dass ein Symbol im Einzelvorgangsstatus angibt, dass der Einzelvorgang nun bereit ist.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

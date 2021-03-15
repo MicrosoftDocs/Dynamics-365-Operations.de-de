@@ -156,3 +156,6 @@ Die allgemeine Regel wird in der folgenden Tabelle veranschaulicht.
 | Vorsteuer | Negativ              | Vorsteuerkonten | Negativ (Haben)  |
 | Mehrwertsteuer    | Positiv              | Mehrwertsteuerkonten    | Negativ (Haben)  |
 | Mehrwertsteuer    | Negativ              | Mehrwertsteuerkonten    | Positiv (Soll)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

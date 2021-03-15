@@ -293,3 +293,6 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für die neue Rastersteue
 ### <a name="quality-update-for-1009platform-update-33"></a>Qualitätsupdate für 10.0.9/Platform update 33
 
 - [KB 4550367] Zeitwerte sind nicht richtig formatiert.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

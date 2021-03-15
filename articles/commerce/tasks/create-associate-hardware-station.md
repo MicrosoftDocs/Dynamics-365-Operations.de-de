@@ -57,3 +57,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen einer neuen H
 23. Geben Sie einen Wert in das Feld "Terminalkennung für Überweisung (elektronisch)" ein.
 24. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

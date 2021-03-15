@@ -154,3 +154,6 @@ Die folgenden wichtigen Dimensionen im Inhaltspaket werden als Filter verwendet,
 | Daten                  | Daten, Jahresausgleich                                    |
 
 Standardmäßig zeigt das Inhaltspaket Daten während des laufenden Kalenderjahrs an. Allerdings können Sie den im Berichtsfilterabschnitt Datumsfilter ändern. Sie können das den Unternehmensfilter auch ändern.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

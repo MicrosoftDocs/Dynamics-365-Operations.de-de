@@ -48,3 +48,6 @@ Um einen Transportstatus einem Spediteur-Status zuzuordnen, gehen Sie wie folgt 
 1. Wählen Sie den Transportstatus-Code, den Sie dem Code des gewählten Spediteurs zuordnen wollen.
 1. Geben Sie den externen Code ein, der von dem Spediteur verwendet wird.
 1. Schließen Sie die Seite.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

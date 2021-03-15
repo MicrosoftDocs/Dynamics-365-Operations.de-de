@@ -207,3 +207,6 @@ Dispositionsinformationen für Unterhaltsberechtigte des Mitarbeiters werden ang
 
 > [!NOTE]
 > Auf der Seite werden nur Vorteilspläne angezeigt, die als **ACA-meldepflichtig** gekennzeichnet sind.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

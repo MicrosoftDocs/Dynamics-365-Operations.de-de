@@ -45,3 +45,6 @@ Dieser Leitfaden verwendet das Demounternehmen USMF.
 6. Klicken Sie auf "OK".
 7. Klicken Sie auf "Ja".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

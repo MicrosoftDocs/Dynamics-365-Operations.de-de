@@ -51,3 +51,6 @@ Wie bei jeder neuen Funktion müssen Kunden den Release-Plan und die Dokumentati
 ## <a name="when-the-deprecation-date-is-identified-where-will-it-be-communicated"></a>Wenn das Datum der Einstellung feststeht, wo wird dies mitgeteilt?
 
 Die Einstellung von „Ein Beleg“ ist eine wesentliche Änderung, die in großem Umfang kommuniziert wird. Sie werden über die Produktdokumentation, einen Blogbeitrag und Ankündigungen auf entsprechenden Microsoft-Konferenzen rechtzeitig vor dem Gültigkeitsdatums der Einstellung informiert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

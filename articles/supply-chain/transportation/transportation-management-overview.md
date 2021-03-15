@@ -86,3 +86,6 @@ Supply Chain Management enthält eine Ladungserstellungsstrategie mit dem Namen 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

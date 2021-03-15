@@ -36,3 +36,6 @@ Alle Serviceauftragsbuchungen werden in dem Projekt erfasst und gebucht, das der
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

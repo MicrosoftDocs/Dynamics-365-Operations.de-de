@@ -97,3 +97,5 @@ Führen Sie die folgenden Schritte aus, um jeden Auftrag, den Sie für dieses Sz
 
 - [Lieferungskonsolidierungsrichtlinien](about-shipment-consolidation-policies.md)
 - [Richtlinien zur Lieferungskonsolidierung konfigurieren](configure-shipment-consolidation-policies.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

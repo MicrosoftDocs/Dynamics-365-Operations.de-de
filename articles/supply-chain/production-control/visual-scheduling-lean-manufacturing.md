@@ -94,3 +94,6 @@ Sie können die Kanban-Zeitplanübersicht mit dem Menüeintrag auf den folgenden
 
 [Kanban-Feinterminierung für Lean Manufacturing](lean-manufacturing-kanban-job-scheduling.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

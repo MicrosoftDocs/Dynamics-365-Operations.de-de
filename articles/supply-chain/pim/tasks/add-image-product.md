@@ -36,3 +36,6 @@ Dieses Verfahren zeigt, wie einem Produkt ein Bild hinzugefügt wird. Das zur Er
 5. Klicken Sie auf "Neu".
     * Klicken Sie auf Durchsuchen. Suchen Sie das Bild, das Sie verwenden möchten, aktivieren Sie es, und schließen Sie dann das Dialogfeld.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

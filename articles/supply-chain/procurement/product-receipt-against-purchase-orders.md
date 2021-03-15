@@ -68,3 +68,6 @@ Sie können über die Aktivitätsgruppe **Zugang** auf der Seite **Bestellung** 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

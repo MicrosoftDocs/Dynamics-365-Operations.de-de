@@ -164,3 +164,6 @@ Der Bericht über den gewichteten durchschnittlichen Diskontsatz erfüllt die in
 |     Währung                          |     Die Abkürzung für die verwendete Transaktionswährung. Alle Berichte konvertieren die Transaktionswährung in die Berichtswährung.  |
 |     Verbleibende Mietzahlungen          |     Der Gesamtbetrag der nicht bezahlten Mietzahlungen aus dem Zahlungsplan, der vom **Ab**-Datum verbleibt.            |
 |     Verbleibende gewichtete Zahlungen       |     Die verbleibenden Mietraten multipliziert mit dem verwendeten Diskontsatz.   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

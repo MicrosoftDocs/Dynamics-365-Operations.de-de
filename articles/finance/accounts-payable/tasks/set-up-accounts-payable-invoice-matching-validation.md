@@ -97,3 +97,6 @@ Wechseln Sie zu **Kreditor > Einrichtung > Rechnungsabgleich einrichten > Rechnu
 
 1. Sie können für einzelne Kreditoren Toleranzen festlegen, die die Standardtoleranz überschreiben. Wählen Sie dazu **Kreditoren-Konto**.
 2. Hier können Sie den Prozentsatz der Abweichung eingeben, der für diesen Kreditor akzeptiert wird.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

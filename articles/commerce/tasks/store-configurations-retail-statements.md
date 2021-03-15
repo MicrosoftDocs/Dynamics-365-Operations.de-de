@@ -48,3 +48,6 @@ Diese Prozedur zeigt Schritt für Schritt Konfigurationen für den Shop, die sic
 17. Wählen Sie „Ja“ unter **Nach Auszugsmethode aufteilen**, um Auszüge für jede definierte Auszugsmethode zu erstellen. Diese Aktion kann hilfreich sein, wenn die Leistung der Buchung für Shops mit hohem Buchungsvolumen verbessert werden muss, da viele kleinere Auszüge erstellt werden, die parallel verarbeitet werden können.  
 18. In der Registerkarte **Allgemein** im Feld **Standardkunde** können Sie das Kundenkonto auswählen, das für den Verkauf an Laufkundschaft verwendet werden soll.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

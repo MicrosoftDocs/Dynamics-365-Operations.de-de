@@ -121,3 +121,6 @@ April bucht anschließend die Zahlung. Wenn sie die Seite **Kreditorentransaktio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

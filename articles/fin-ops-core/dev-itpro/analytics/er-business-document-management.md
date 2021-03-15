@@ -579,3 +579,6 @@ Die folgende Tabelle zeigt die Liste der EB-Konfigurationen, die konfigurierbare
 |                             | Lieferschein für Auftrag (LT) (Excel)           |
 |                             | Lieferschein für Auftrag (PL) (Excel)           |
 |                             | Lieferschein für Auftrag (Word)                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

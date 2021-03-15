@@ -85,3 +85,6 @@ Kostenverhalten ist die Klassifizierung von Kosten, entweder als fix oder als va
 15. Geben Sie im Feld "Kostenkontrolleinheit" einen Wert ein oder wählen Sie einen Wert aus.
 16. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

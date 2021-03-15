@@ -48,3 +48,6 @@ In diesem Thema wird erläutert, wie der Zugang von Waren direkt auf einer Beste
 6. Legen Sie **Menge** auf „4“ fest. Hier sind Sie in der Lage, die Menge manuell zu anzugeben, die für jede Position zum Auftrag empfangen wird.  
 7. Wählen Sie **OK**. Die Waren sind jetzt auf der Bestellung als empfangen erfasst worden und eine Produktzugangserfassung ist als Dokument, um dies widerzuspiegeln, erstellt worden. Sie können die Aktivität "Produktzugang" verwenden, um die Erfassungen zu überprüfen, die mit der Bestellung erstellt wurden und um zu sehen, was wann empfangen wurde.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

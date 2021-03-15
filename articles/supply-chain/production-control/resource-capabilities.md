@@ -57,3 +57,6 @@ Wenn Sie betriebliche Ressourcen vom Typ **Personalverwaltung** besitzen, die mi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

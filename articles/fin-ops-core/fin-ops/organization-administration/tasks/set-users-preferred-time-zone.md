@@ -35,3 +35,6 @@ Im folgenden Thema wird erklärt, wie ein Benutzer in der Rolle „Systemadminis
 5. Wählen Sie im Feld **Zeitzone** eine Option in der Dropdownliste aus.
 6. Wählen Sie **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

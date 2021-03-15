@@ -55,3 +55,6 @@ Diese Aufgabenanleitung führt Sie Schritt für Schritt durch die Erstellung und
 17. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 18. Klicken Sie auf **Buchen**. Die Anlage wird erstellt und abgerufen, wann die Rechnung gebucht wird.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ GTIN-Codes werden von der GS1-Organisation zugewiesen. In diesem Beispiel geben 
 11. Geben Sie im Feld "GTIN" einen Wert ein.
 12. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

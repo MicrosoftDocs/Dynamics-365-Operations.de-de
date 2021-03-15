@@ -37,3 +37,6 @@ Ein Kostenrechnungssachkonto stellt die Gesamtberichtseinheit dar. Es wird durch
 8. Geben Sie im Feld "Statistische Dimension" einen Wert ein, oder wählen Sie einen Wert aus.
 9. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

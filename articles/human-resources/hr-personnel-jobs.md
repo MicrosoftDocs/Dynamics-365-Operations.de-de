@@ -87,3 +87,6 @@ Verwenden Sie Zuständigkeitsbereiche, um die Arbeitsrollen, Prozesse und Produk
 
 ## <a name="steps-for-creating-a-job"></a>Schritte zum Erstellen einer Stelle
 Im Artikel [Definieren neuer Stellen](../fin-and-ops/hr/tasks/define-new-jobs.md) finden Sie die detaillierte Prozedur zum Erstellen einer neuen Stelle. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

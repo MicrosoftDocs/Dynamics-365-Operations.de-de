@@ -85,3 +85,6 @@ Bevor ein Dynamics 365 Commerce Kanal erstellt werden kann, müssen mehrere erfo
 [Einen Retail Channel einrichten](channel-setup-retail.md)
     
 [Einen Onlinekanal einrichten](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

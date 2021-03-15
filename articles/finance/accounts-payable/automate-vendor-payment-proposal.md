@@ -143,3 +143,6 @@ Die folgenden Aufgaben und Berechtigungen wurden für die Automatisierung von Li
 | Abfrage zu geplanten Ereignissen | Kreditorenbuchhalter, Kreditorenbuchhaltung Zentraler Zahlungsangestellter | Diese Pflicht gewährt die Rechte zum Anzeigen der Automatisierungsserien und -ereignisse für Zahlungsvorschläge durch die folgenden Berechtigungen:<ul><li>Zeitplanereignisse anzeigen</li><li>Zeigen Sie die wöchentlichen Vorkommnisse an</li></ul> |
 | Erkundigen Sie sich nach Zeitreihen      | Keiner                                                                       | Diese Pflicht gewährt die Rechte zum Anzeigen der Einstellungen der Serien und -ereignisse für die folgenden Berechtigungen:<ul><li>Zeitplanereignisse anzeigen</li><li>Zeigen Sie die Seite mit der Vorkommensliste an</li><li>Zeigen Sie die wöchentlichen Vorkommnisse an</li></ul>|
 | Zeitplanereignisse pflegen     | Keiner                                                                       | Diese Pflicht gewährt das Recht, ein Ereignis durch die folgenden Berechtigungen zu erstellen und aufrechtzuerhalten:<ul><li>Zeitplanereignisse pflegen</li><li>Zeigen Sie die wöchentlichen Vorkommnisse an</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

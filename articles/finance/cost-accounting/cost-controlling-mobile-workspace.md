@@ -144,3 +144,6 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 11. Hier können Sie die Leistung der einzelnen Kostenelemente anzeigen
 12. Sie können auch nach bestimmten Kostenfaktoren suchen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

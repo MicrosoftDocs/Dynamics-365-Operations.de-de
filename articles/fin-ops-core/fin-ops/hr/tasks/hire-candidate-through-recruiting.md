@@ -45,3 +45,6 @@ Auf diese Weise kann ein Personalbeschaffungsmitarbeiter einen Bewerber einstell
 15. Erweitern oder reduzieren Sie den Abschnitt "Kontaktinformationen".
 16. Erweitern oder reduzieren Sie den Abschnitt "Persönliche Informationen".
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

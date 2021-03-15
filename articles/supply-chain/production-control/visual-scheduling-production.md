@@ -159,3 +159,6 @@ Die Gantt-Diagramm können auf den folgenden Seiten geöffnet werden.
 
 [Sichtplanung für Produktion (Vorführungsskript)](https://docs.microsoft.com/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

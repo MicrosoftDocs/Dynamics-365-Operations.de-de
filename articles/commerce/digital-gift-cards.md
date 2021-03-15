@@ -100,3 +100,6 @@ Führen Sie folgende Schritte aus, um im Commerce-Website-Generator einen benutz
 [Ein Onlinefunktionsprofil erstellen](online-functionality-profile.md)
 
 [Unterstützung für externe Geschenkgutscheine](./dev-itpro/gift-card.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

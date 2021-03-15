@@ -162,3 +162,6 @@ Aus Gründen der Leistung und technischen Gründen ist es nur bei Tabellen, die 
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Kann ich in den Entwicklertools auf benutzerdefinierte Felder verweisen?  
 
 Benutzerdefinierte Felder können nur über die Benutzeroberfläche verwaltet und nicht durch Code referenziert werden. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

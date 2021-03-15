@@ -220,3 +220,6 @@ Gehen Sie folgendermaßen vor, um die Kompatibilitätsprüfung auszuführen.
 1. Wählen Sie im Aktionsbereich auf der Registerkarte **Ladungen** in der Gruppe **Aktionen** die Option **Kompatibilitätsprüfung** aus.
 
 Sie erhalten eine Nachricht, die Sie über die Ergebnisse der Prüfung informiert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

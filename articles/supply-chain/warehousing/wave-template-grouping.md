@@ -200,3 +200,6 @@ Für diese Lieferung wurde eine neue Welle erstellt, da sie einen anderen Spedit
 1. Wählen Sie die Wellen-ID aus, die aus dem dritten Auftrag erstellt wurde.
 1. Wählen Sie den Wellen-ID-Link aus, um die Wellendetailseite zu öffnen.
 1. Beachten Sie, dass die Lieferung zum Inforegister **Wellenpositionen** hinzugefügt wurde, zusammen mit der Lieferung für den ersten Auftrag.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

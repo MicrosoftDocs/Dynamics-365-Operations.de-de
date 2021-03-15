@@ -184,3 +184,6 @@ Diese Änderung erfolgt nach der Übertragung, da der Gleitzeitsaldo basierend a
 | 06:00 (nachmittags) | 08:00 (nachmittags) | 2    | 1.5       | 3            |
 | 08:00 (nachmittags) | 09:00 (nachmittags) | 1    | 2         | 2            |
 |          |          |      | **Summe** | **8**        |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

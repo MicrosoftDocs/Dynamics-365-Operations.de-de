@@ -103,3 +103,6 @@ Gehen Sie folgendermaßen vor, um ein Mediengaleriemodul einer Marketingseite hi
 [Containermodul](add-container-module.md)
 
 [Bilder hochladen](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Um eine Benutzer-ID zu ändern, müssen Sie den Schlüssel in der Datenbank umbe
 Weitere Optionen zum Implementieren von B2B-Benutzern finden Sie unter [B2B-Benutzer in Azure AD exportieren](../implement-b2b.md).
 
 Informationen zu vorkonfigurierten Systemkonten finden Sie unter [Vorkonfigurierte Systemkonten](../pre-configured-system-accounts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -239,3 +239,6 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 1. Wählen Sie **Fertig**.
 
     ![Einer Wartungsanfrage einen Anhang hinzufügen](media/am-mobile-10.png "Einer Wartungsanfrage einen Anhang hinzufügen")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

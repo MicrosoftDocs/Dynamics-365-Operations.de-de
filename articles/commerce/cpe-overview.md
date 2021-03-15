@@ -63,3 +63,6 @@ Informationen zum Bereitstellen der Commerce-Auswertungsumgebung finden Sie unte
 [Optionale Funktionen für eine Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](cpe-optional-features.md)
 
 [Dynamics 365 Commerce-Auswertungsumgebung – FAQ](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Das folgende Bild zeigt ein Beispiel für einen Einkaufswagen, mit der Meldung a
 [Shopauswahlmodul](store-selector.md)
 
 [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

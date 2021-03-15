@@ -67,3 +67,6 @@ Dies ist der fünfte von sechs Aufgaben, die das Verfahren für Debitorenzahlung
 11. Klicken Sie auf "OK".
 12. Klicken Sie auf "OK".
 13. Klicken Sie auf "Zahlungen erstellen".
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

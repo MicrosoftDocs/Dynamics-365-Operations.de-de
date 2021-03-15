@@ -50,3 +50,6 @@ Die Artikelkostendaten für Standardkosten können in eine andere Nachkalkulatio
 
 [Vorbereiten der Verwaltung von Standardkosten für produzierte Artikel](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

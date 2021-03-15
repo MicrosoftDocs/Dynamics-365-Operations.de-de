@@ -112,3 +112,6 @@ In der folgenden Tabelle sind die Listentypen aufgeführt, die im Dialogfeld **P
 [Überblick über Produktempfehlungen](product-recommendations.md)
 
 [Schnellansichtsmodul](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

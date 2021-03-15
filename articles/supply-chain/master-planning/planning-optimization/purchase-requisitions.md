@@ -101,3 +101,6 @@ Wenn die Masterplanung ausgeführt wird, werden zwei geplante Aufträge erstellt
 > Nachdem ein geplanter Auftrag, der an eine Bestellanforderung gebunden ist, umgewandelt wurde, behält das Planungsmodul den Bedarfsverursacher für die Bestellanforderung bei. Wenn später festgestellt wird, dass dem umgewandelten Auftrag eine Menge fehlt, die zur Erfüllung der Bestellanforderung erforderlich ist, erstellt das System einen neuen geplanten Auftrag für die Differenz.
 
 Weitere Informationen zu Bestellanforderungen finden Sie unter [Übersicht über Bestellanforderung](../../procurement/purchase-requisitions-overview.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

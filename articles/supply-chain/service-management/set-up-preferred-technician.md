@@ -67,3 +67,6 @@ Sie können eine beliebige Arbeitskraft als bevorzugten Techniker für eine Serv
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

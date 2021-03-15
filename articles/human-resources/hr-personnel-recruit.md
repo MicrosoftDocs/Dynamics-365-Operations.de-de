@@ -225,3 +225,6 @@ Bei Bedarf können Sie einen Kandidaten nach der Einstellung wieder entlassen. E
 [Virtuelle Dataverse-Tabellen konfigurieren](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Belegschaft organisieren](hr-personnel-departments-jobs-positions.md)<br>
 [Komponenten eines Einzelvorgangs einrichten](hr-personnel-jobs.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

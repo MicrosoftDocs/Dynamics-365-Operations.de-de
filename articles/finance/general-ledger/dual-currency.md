@@ -208,3 +208,6 @@ In der Hauptbuchkonsolidierung wurde eine neue Option hinzugefügt, um entweder 
 -  Sie können nun auswählen, ob die Buchhaltungswährung oder die Berichtswährung vom Quellunternehmen als die Buchungswährung im Konsolidierungsunternehmen verwendet wird.
 
 - Die Buchhaltungs- oder Berichtswährungsbeträge vom Quellunternehmen werden direkt in die Buchhaltungs- oder Berichtswährungsbeträge im Konsolidierungsunternehmen kopiert, wenn eine der Währungen übereinstimmt. Die Buchführungs- und Berichtswährungsbeträge im Konsolidierungsunternehmen werden mithilfe des Wechselkurses berechnet, wenn keine der Währungen übereinstimmt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

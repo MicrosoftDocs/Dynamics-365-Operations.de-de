@@ -117,3 +117,6 @@ In den folgenden Abschnitten werden die aggregierten Messungen, die in jeder Ent
 | Zentrale aggregierte Messungen       | Feld               | Beschreibung |
 |---------------------------------|---------------------|-------------|
 | Geplante Kosten für abgeschlossene Aktivität | Sum(TotalCostPrice) | Der Gesamteinstandspreis in Vorkalkulationen für alle Projektbuchungsarten mit abgeschlossenen Aufgaben. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

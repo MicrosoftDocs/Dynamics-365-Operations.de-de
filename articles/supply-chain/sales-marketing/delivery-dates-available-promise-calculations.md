@@ -80,3 +80,6 @@ Das Versanddatum wird auf 10 Tage ab jetzt festgelegt, basierend auf der VfZ-Ber
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

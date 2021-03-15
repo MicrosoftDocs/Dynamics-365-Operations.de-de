@@ -217,3 +217,6 @@ Um festzustellen, in welche Budgetpläne eine Planungsposition eingefügt wurde,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

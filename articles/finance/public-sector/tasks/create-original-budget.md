@@ -50,3 +50,6 @@ Wenn Sie einen Budgeteintrag erstellen und die Budgetmodell- und Dimensionswerte
     * Um eine optionale Auswahl zu treffen, klicken Sie auf das Entsperren-Symbol am oberen Seitenrand.  
 18. Klicken Sie auf Aktualisieren.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

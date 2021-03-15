@@ -67,3 +67,6 @@ Die konsolidierte juristische Person ist nun für den periodischen Einzelvorgang
 
 > [!NOTE]
 > Sie müssen die juristischer Personen vom Typ Tochtergesellschaft für die Konsolidierung vorbereiten, bevor Sie die Konsolidierung ausführen. Weitere Informationen finden Sie unter [Einrichten einer Tochtergesellschaft zur Konsolidierung](set-up-subsidiary-company-for-consolidation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

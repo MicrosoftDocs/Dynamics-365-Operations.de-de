@@ -55,3 +55,6 @@ Da Dynamics 365 Commerce authentifizierte WYSIWYG-Vorschauen (What you see is wh
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
 
 [Verwalten der Inhaltssicherheitsrichtlinie](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Diese Prozedur zeigt, wie die Kosten eines fertigen Produkts berechnet werden, i
 11. Schließen Sie die Seite.
 12. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

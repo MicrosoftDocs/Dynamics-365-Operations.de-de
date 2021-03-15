@@ -83,3 +83,6 @@ Nachdem Sie die Konfiguration des Callcenters abgeschlossen und Kanalbenutzer de
 > [!NOTE]
 > Um die Funktionen des Callcenters nutzen zu können, muss der Konfigurationsschlüssel für **Mehrere Lieferadressen** aktiviert sein. Diesen Konfigurationsschlüssel finden Sie in den Konfigurationsschlüsseln **Handel** unter **Systemverwaltung**\> **Einstellungen** \> **Lizenzkonfiguration**. Dies ist aufgrund der Call Center-Funktionalität erforderlich, die verschiedene Überprüfungen basierend auf der Lieferadresse durchführt, die auf der Ebene der Auftragspositionen konfiguriert wurde. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

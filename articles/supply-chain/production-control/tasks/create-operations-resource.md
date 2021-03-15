@@ -80,3 +80,6 @@ Eine betriebliche Ressource führt die Aktivitäten eines Projekts oder eines Pr
 4. Geben Sie im Feld "Lagerplatz für Wareneingang" einen Wert ein, oder wählen Sie einen Wert aus.
     * Geben Sie den Lagerort an, von dem aus die betriebliche Ressource Material verbraucht.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

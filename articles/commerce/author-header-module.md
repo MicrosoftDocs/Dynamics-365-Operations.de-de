@@ -118,3 +118,6 @@ Um Sicherzustellen, dass eine Kopfzeile auf jeder Seite angezeigt wird, führen 
 [Siteauswahlmodul](site-selector.md)
 
 [Shopauswahlmodul](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

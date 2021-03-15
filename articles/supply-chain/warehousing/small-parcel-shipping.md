@@ -279,3 +279,6 @@ Gehen Sie folgendermaßen vor, um die Lieferung zu verpacken.
     ![Beispieladressetikett](media/sps-label-example.png "Beispieladressetikett")
 
 1. Beachten Sie, dass die Werte für **Containermanifestierungs-ID** und **Gesamtfracht** als vom Spediteur erhalten hinzugefügt wurden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

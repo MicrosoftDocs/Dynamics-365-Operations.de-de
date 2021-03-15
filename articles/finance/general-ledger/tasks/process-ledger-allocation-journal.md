@@ -43,3 +43,6 @@ In diesem Thema wird erläutert, wie Sie eine Zuordnungsanforderung bearbeiten. 
 9. Wählen Sie **Buchen** aus.
 10. Wählen Sie **Buchen** aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

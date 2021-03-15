@@ -75,3 +75,6 @@ Da Kostenelemente die unterste Ebene der Kostendetails darstellen, sollten Sie s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

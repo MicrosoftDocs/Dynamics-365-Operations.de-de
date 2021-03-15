@@ -42,3 +42,6 @@ In Microsoft Dynamics 365 Human Resources legen Wartetage einen monatlichen Meil
    | **Tag** | Der Tag des Monats, auf den das System die Wartezeit einstellen soll. |
    
 4. Wählen Sie **Speichern**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

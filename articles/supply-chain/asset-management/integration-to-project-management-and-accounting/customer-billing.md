@@ -177,3 +177,6 @@ In diesem Abschnitt arbeiten Sie an dem Arbeitsauftrag, an dem Sie im vorherigen
 1. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Rechnungsstellung**, und wählen Sie **Neuer Rechnungsvorschlag** aus.
 1. Aktivieren Sie im Dialogfeld **Rechnungsvorschlag erstellen** im Abschnitt **Projektbuchungen** das Kontrollkästchen **Auswählen** für jede Zeile, die Sie in Rechnung stellen möchten.
 1. Wählen Sie **OK** aus, um das Dialogfeld zu schließen und den neuen Rechnungsvorschlag anzuzeigen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -159,3 +159,6 @@ Dieses Verhalten gilt nur, wenn ein Produkt direkt zur Freigabe ausgewählt wird
 Beispiel: Produkt X ist der Eigentümergruppe *Designschränke* zugewiesen. Produkt X ist auch Teil der Stückliste von Produkt Y, das der Produktbesitzer-Gruppe *Design-Lautsprecher* zugeordnet ist. Wenn ein Benutzer aus der Produktbesitzer-Gruppe *Design-Lautsprecher* das Produkt Y und dessen Stückliste freigibt, wird das Produkt X zusammen mit dem Produkt Y freigegeben.
 
 Weitere Informationen finden Sie unter [Produktbesitzer](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung einer Handel
 14. Schließen Sie die Seite.
 15. Aktualisieren Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

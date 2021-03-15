@@ -108,3 +108,6 @@ Führen Sie einen der folgenden Schritte aus, um das Layout auf Ihrer Live-Site 
 [Übersicht über Vorlagen und Layouts](templates-layouts-overview.md)
 
 [Arbeiten mit Vorlagen](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

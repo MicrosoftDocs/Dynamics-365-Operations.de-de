@@ -43,3 +43,6 @@ Eine gültige Stücklistenversion, egal ob standortspezifisch oder allgemein, mu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

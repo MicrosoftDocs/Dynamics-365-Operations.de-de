@@ -56,3 +56,6 @@ Die allgemeinen Buchhaltungsverteilungsfunktionen stellen die folgenden Optionen
 In Version 10.0.13 wurde eine Funktion hinzugefügt, die die Buchhaltungsverteilungstabelle überprüft, um sicherzustellen, dass neue Felder ordnungsgemäß eingerichtet sind. Hierbei handelt es sich um die Funktion **Zusätzliche Datenvalidierung aktivieren für Dokumente, die das Buchhaltungsframework des Quelldokuments verwenden**. Um diese Funktion zu verwenden, müssen Sie sie über den Arbeitsbereich **Funktionsverwaltung** aktivieren. Um die Funktion zu aktivieren, suchen Sie im Feld **Suche** nach dem Funktionsnamen auf der Seite **Funktionsverwaltung** und wählen Sie dann **Jetzt aktivieren** aus.
 
 Weitere Informationen finden Sie unter [Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Kreditorenrechnungen](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

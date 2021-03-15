@@ -221,3 +221,6 @@ Im Slideout-Bereich werden die neuesten Ausführungsergebnisse für den Prozess 
 [Erstellen und bearbeiten Sie virtuelle Tabellen, die Daten aus einer externen Datenquelle enthalten](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Was sind Power Apps-Portale?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Übersicht über das Erstellen von Apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

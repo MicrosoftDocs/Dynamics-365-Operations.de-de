@@ -40,3 +40,6 @@ Mehrwertsteuerbehörden sind Entitäten, an welche die eingezogene Mehrwertsteue
 10. Geben Sie im Feld "Rundung" eine Zahl ein.
 11. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -110,3 +110,6 @@ Die folgende Abbildung zeigt ein Beispiel für eine Kachel **Aufgaben** auf eine
 [Arbeitspläne den Filialen oder Mitarbeitern zuweisen](task-mgmt-assign-lists.md)
 
 [Aufgabenverwaltung in POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

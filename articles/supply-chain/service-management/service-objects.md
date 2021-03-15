@@ -46,3 +46,6 @@ Unternehmen A verwaltet die Finanzdatensätze für eine Reihe von kleinen Untern
 
 [Erstellen von Serviceobjekten](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 71. Schließen Sie die Seite.
 72. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

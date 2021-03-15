@@ -49,3 +49,6 @@ Supply Chain Management berechnet die folgenden Typen der Planungsgenauigkeit:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

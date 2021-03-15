@@ -39,3 +39,6 @@ Um das Problem zu beheben, muss der Kunde diese Schritte für die duplizierte Si
 3. Wählen Sie **Speichern**.
 
 ![Seite „Parameter des globalen Adressbuchs”](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -304,3 +304,6 @@ Die systemgeleiteten Arbeitsabfolgeabfragen sind *inklusive*. Es ist wichtig, da
 Daher wurde im Beispiel aus diesem Szenario die Arbeits-ID *4* auch von der Abfrage erfasst. Bei der Erstellung wurden zwei Positionen hinzugefügt: eine für 25 EA und eine für 10 EA. Die Arbeit wurde dem Benutzer weiterhin präsentiert, da mindestens eine Arbeitsposition eine Menge von weniger als 20 EA aufweist.
 
 Je nach Szenario können Sie dieses Verhalten mithilfe von Arbeitspausen verhindern.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

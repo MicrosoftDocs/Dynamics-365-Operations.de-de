@@ -67,3 +67,6 @@ Jede Anlagenbuchungsart kann auf der Seite "Allgemeine Erfassung" gebucht werden
 Der Wert der verbleibenden Abschreibungsperioden der Anlage wird nicht aktualisiert, wenn eine Erfassungsposition für einen Abschreibungstransaktionstyp manuell erstellt oder über eine Datenentität importiert wird. Dieser Wert wird aktualisiert, wenn der Abschreibungsvorschlagprozess verwendet wird, um die neue Erfassungsposition zu erstellen.
 
 Weitere Informationen finden Sie unter [Anlage-Integration](fixed-asset-integration.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

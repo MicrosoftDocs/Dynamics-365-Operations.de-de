@@ -48,3 +48,6 @@ Wenn Sie Rückerstattungsbuchungen erstellen, wird eine Kreditorenrechnung für 
 
 5. Um die erstellten Erstattungstransaktionen anzuzeigen, verwenden Sie den Bericht **Rückerstattung** (**Debitoren \> Anfragen und Berichte \> Erstattungsbericht**).
 6. Im Kreditorenmodul erstellen Sie eine Zahlung für die Kreditorenrechnungen, die durch den Rückerstattungsprozess erstellt wurden. Informationen zum Bezahlen von Kreditoren finden Sie unter [Übersicht über Kreditorenzahlungen](../accounts-payable/Vendor-payments-workspace.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

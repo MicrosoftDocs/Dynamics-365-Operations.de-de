@@ -57,3 +57,6 @@ Dieses Verfahrens zeigt das Erstellen von erweiterten Regeln für Erfassungen. H
 4. In der Struktur überprüfen Sie die Gruppe, der Sie die Buchung für diesen Erfassungsnamen gestatten möchten.
 5. Klicken Sie auf **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Um die Gruppierung für automatisch generierte Arbeitsaufträge einzurichten, f�
 1. Wenn Sie möchten, dass die Optionen angewendet werden, wenn Sie nur einige Ihrer Wartungspläne ausführen, klicken Sie auf das Inforegister **Einzuschließende Datensätze**, fügen Sie Filter nach Bedarf hinzu, genau wie bei anderen Stapelverarbeitungsaufträgen in Microsoft Dynamics 365 Supply Chain Management.
 1. Richten Sie auf dem Inforegister **Im Hintergrund ausführen** Stapel- und Planungsoptionen nach Bedarf ein, genau wie bei anderen Stapelverarbeitungsaufträgen in Supply Chain Management.
 1. Wählen **OK**, um die ausgewählten Wartungszeitpläne auszuführen und/oder zu planen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

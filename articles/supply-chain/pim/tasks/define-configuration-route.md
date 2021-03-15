@@ -45,3 +45,6 @@ Fokusse dieser Prozedur im Definieren eines Variantenarbeitsplans, der die Reihe
 15. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 16. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

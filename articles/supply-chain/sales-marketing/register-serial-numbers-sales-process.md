@@ -79,3 +79,6 @@ Diese Funktionalität ist für alle Rollen verfügbar, die Verkaufslieferscheine
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

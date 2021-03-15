@@ -107,3 +107,6 @@ Sie verwenden die Seite **Zertifikate für doppelte Verwendung**, um die erforde
     | Auf Rechnung drucken | Aktivieren Sie dieses Kontrollkästchen, um die Zertifikatsnummer auf Rechnungen zu drucken, die im angegebenen Datumsbereich an das angegebene Land adressiert sind. |
     | Auf Lieferscheinen drucken | Aktivieren Sie dieses Kontrollkästchen, um die Zertifikatsnummer auf Lieferscheine zu drucken, die im angegebenen Datumsbereich an das angegebene Land adressiert sind. |
     | Auf Auftrag drucken | Aktivieren Sie dieses Kontrollkästchen, um die Zertifikatsnummer auf Aufträge zu drucken, die im angegebenen Datumsbereich an das angegebene Land adressiert sind. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

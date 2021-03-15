@@ -53,3 +53,6 @@ Sie können einen Antrag auf Urlaub stellen und den Status Ihrer Urlaubsanträge
 ## <a name="see-also"></a>Siehe auch
 
 [Urlaub aussetzen](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Auf der Seite **Debitoren** für jeden Debitor, der einer Bezahlung per Wechsel 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

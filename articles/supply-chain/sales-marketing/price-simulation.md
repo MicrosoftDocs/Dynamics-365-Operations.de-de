@@ -144,3 +144,6 @@ Die Preissimulation wirkt sich nur auf die ausgewählte Position aus, wodurch si
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

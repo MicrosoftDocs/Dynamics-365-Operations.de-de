@@ -58,3 +58,6 @@ Diese Prozedur führt Sie durch den Prozess der Erstellung und des Buchens einer
 1. Klicken Sie auf **Bestand**.
 2. Klicken Sie auf **Transaktionen**. Hier können Sie die Transaktionen anzeigen, die erstellt wurden, als Sie Ihre Erfassung gebucht haben.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

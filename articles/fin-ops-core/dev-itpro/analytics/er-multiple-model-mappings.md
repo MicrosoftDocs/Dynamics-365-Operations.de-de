@@ -182,3 +182,6 @@ Die Modellzuordnung **InvoiceProject Kopie** der Konfiguration **Projektrechnung
 - [ER-Modellzuordnungen in separaten EB-Konfigurationen verwalten](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Auf Länderkontext beruhende ER-Modellzuordnungen konfigurieren](er-country-dependent-model-mapping.md)
 - [Änderungen der EB-Framework-API](er-apis-app10-0-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

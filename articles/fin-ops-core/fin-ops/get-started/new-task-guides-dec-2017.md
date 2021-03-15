@@ -368,3 +368,6 @@ Wenn eine BPM-Position gelöscht wird, wird jeder Aufgabenleitfaden, der der BPM
 **Gelöschte Stücklistenposition**
 
 - Geplante Kanban-Einzelvorgänge verschieben
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

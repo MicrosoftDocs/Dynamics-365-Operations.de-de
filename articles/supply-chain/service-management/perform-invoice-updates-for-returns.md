@@ -56,3 +56,6 @@ Beim Einrichten der Rechnungsaktualisierung für die Stapelverarbeitung muss fü
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

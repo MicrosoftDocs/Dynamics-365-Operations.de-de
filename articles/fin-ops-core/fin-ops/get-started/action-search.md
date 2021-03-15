@@ -75,3 +75,6 @@ Im vorherigen Beispiel ergibt sich die angezeigte Aktivitätssuche vom Standarda
 ## <a name="action-search-vs-navigation-search"></a>Aktivitätssuche im Vergleich zur Navigationssuche
 
 Während die Aktivitätssuche vorgesehen ist, um Aktivitäten auf einer Seite zu suchen und auszuführen, gibt es einen separaten Suchenmechanismus für die Suche und zum Navigieren zu Seiten. Weitere Informationen zu dieser Funktion finden Sie im Artikel [Navigationssuche](navigation-search.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Wenn Sie eine vorhandene Freizeitanforderung aktualisieren, können Sie einen An
 ## <a name="see-also"></a>Siehe auch
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

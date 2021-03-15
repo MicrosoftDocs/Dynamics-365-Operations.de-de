@@ -55,3 +55,6 @@ Die Rolle dieses Aufgabenleitfadens ist "Finanzverwalter". Für diese Aufgabe wi
 16. Schließen Sie die Seite.
 17. Klicken Sie auf die Registerkarte "Vordatierte Schecks".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

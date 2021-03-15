@@ -38,3 +38,6 @@ Die folgende Abbildung gibt einen Überblick über den Arbeitsablauf von der Ers
 
 ![Abbildung 1](media/01-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

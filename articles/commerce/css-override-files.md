@@ -113,3 +113,6 @@ Um eine CSS-Überschreibungsdatei auf Ihrer Site zu deaktivieren, gehen Sie folg
 [Hinzufügen von Sprachen zu Ihrer Website](add-languages-to-site.md)
 
 [Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

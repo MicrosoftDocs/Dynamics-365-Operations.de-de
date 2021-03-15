@@ -121,3 +121,6 @@ Nachdem das Erstellungstool geladen ist, können Sie die **Startseite** auswähl
 [Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Site](search-engine-optimization-considerations.md)
 
 [Verwalten der Inhaltssicherheitsrichtlinie](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

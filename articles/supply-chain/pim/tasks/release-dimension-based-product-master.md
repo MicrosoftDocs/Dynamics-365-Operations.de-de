@@ -40,3 +40,6 @@ Im folgenden Verfahren, wie ein Produktmaster gemeinsam nutzen, der für die dim
 7. Klicken Sie auf Weiter.
 8. Klicken Sie auf Fertig stellen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

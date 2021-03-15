@@ -47,3 +47,6 @@ In diesem Thema werden die Schritte zum Einrichten der globalen Quellensteuer fÃ
 7. Richten Sie Quellensteuergruppen auf der Seite **Artikel-Quellensteuergruppen** fÃ¼r einen Artikel oder eine Dienstleistung ein.
 
 8. Richten Sie **Mindestrechnungsbetrag** auf der Seite **Hauptbuchparameter > Quellensteuer** ein.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

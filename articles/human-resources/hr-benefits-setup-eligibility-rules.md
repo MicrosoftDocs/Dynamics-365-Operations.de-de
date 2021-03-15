@@ -176,3 +176,6 @@ Bei Programmen handelt es sich um eine Reihe von Vorteilsplänen, für die gemei
    | **Berechtigungsregeln** | Wählen Sie die Berechtigungsregeln aus, die für das Vorteilsprogramm gelten sollen. Sie definieren die Berechtigungsregeln auf der Registerkarte **Berechtigungsregeln** auf dieser Seite. |
    
 4. Wählen Sie **Speichern**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Sie können Chargen- und Kennzeichenbestätigung von den Menüeinträgen des mob
 
 1. Geben Sie im Menüeintrag des mobilen Geräts die Einrichtung der Arbeitsbestätigung ein.  
 1. Wählen Sie die Option für Kennzeichen- oder Chargen-Bestätigung aus. Beide Optionen sind für Arbeitstypentnahmen verfügbar, bei denen keine automatische Bestätigung aktiviert ist.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

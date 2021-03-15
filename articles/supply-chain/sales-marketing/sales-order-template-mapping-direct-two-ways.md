@@ -208,3 +208,6 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Dat
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Interessent zu Bargeld](prospect-to-cash.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

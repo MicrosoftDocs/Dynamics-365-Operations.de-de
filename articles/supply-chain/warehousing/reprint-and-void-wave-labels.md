@@ -217,3 +217,6 @@ Arbeitsausnahmen steuern das Verhalten der kurzen Entnahmen. Gehen Sie zum Einri
 1. Wählen Sie **Kurze Entnahme**.
 1. Wählen Sie den Arbeitsausnahmecode aus, den Sie für dieses Szenario erstellt haben.
 1. Wenn Sie die richtige Ausnahme ausgewählt haben, sollte das Kontrollkästchen **Stornieren und erneut drucken** verfügbar sein. Aktivieren Sie dieses Kontrollkästchen und bestätigen Sie. Nach Bestätigung wird die Etikettenrollensequenz durch das Feld **Etiketten-Build-ID** basierend auf der geänderten Arbeitszeilenmenge neu berechnet. Es wird dann auf dem angegebenen Drucker nachgedruckt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

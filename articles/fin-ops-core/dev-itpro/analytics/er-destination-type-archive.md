@@ -57,3 +57,6 @@ Wenn der Dokumenttypspeicherort auf **Azure-Speicher** festgelegt ist, können S
 - [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 - [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
 - [Konfigurieren der Dokumentverwaltung](../../fin-ops/organization-administration/configure-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

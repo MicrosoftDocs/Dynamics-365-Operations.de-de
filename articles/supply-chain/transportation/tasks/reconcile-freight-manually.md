@@ -60,3 +60,6 @@ Wenn Sie eine Spediteursrechnung und einen Frachtbrief abstimmen, passiert dies 
 5. Klicken Sie, um dem Link im Feld "Referenzerfassungsnummer".
 6. Klicken Sie auf "Positionen".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

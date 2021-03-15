@@ -43,3 +43,6 @@ Sachkonto-Zuordnungsregeln können für Budgetpläne verwendet werden. Wenn Sie 
 > [!NOTE]
 > Sie können Intercompany-Sachkontozuordnungsregeln für Budgetplanung nicht verwenden.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

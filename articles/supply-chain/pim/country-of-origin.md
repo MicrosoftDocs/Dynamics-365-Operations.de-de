@@ -90,3 +90,6 @@ Wenn Sie einen Stücklistenbericht erstellen, können Sie das Herkunftsland für
 Ein Bericht mit Informationen zum Herkunftsland jedes Teils wird generiert und angezeigt. Hier ist ein Beispiel des Berichts.
 
 ![Herkunftslandbericht](media/country-of-origin-report.png "Herkunftslandbericht")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

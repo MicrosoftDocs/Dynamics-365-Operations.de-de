@@ -62,3 +62,6 @@ Dieses Aufgabenhandbuch läuft Sie nach den verschiedenen Methoden durch, die ve
 33. Klicken Sie zum Generieren der Zahlungen auf **OK**.
 34. Klicken Sie auf **Buchen**, wenn alle Zahlungen genehmigt und generiert werden. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

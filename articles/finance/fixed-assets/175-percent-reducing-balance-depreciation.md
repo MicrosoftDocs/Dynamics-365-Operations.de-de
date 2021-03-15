@@ -87,3 +87,6 @@ Bei der Abschreibungsmethode „175 % degressiv“ werden 175 Prozent durch di
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

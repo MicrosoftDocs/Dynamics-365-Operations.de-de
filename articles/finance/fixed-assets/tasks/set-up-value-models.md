@@ -53,3 +53,6 @@ Die folgende Prozedur zeigt, wie Sie ein neues Abschreibungsbuch erstellen und e
     * Beachten Sie, dass Abschreibungszeiträume nach der Festlegung der Nutzungsdauer berechnet wird.  
     * Sie können die Abschreibungskonvention für Steuerzwecke bei Bedarf festlegen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

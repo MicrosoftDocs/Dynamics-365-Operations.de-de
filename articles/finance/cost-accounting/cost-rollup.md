@@ -300,3 +300,6 @@ Die eindeutige Trennung zwischen **Kostenzuweisung** und **Kostenrolluprichtlini
 -  [Kostenelementdimensionen](cost-elements.md)
 -  [Dimensionshierarchie](dimension-hierarchy.md)
 -  [Gemeinkostenberechnung](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

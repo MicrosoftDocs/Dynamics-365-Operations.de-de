@@ -223,3 +223,6 @@ Um die ordnungsgemäß umgerechneten Beträge zu erhalten, wenn Währungen verwe
 Weitere Informationen zur Konsolidierung und Währungsumrechnung finden Sie im übergeordneten Thema dieses Themas, [Finanzkonsolidierungen und Übersicht zur Währungsumrechnung](./financial-consolidations-currency-translation.md).
 
 Weitere Informationen zur Online-Erfassung von Konsolidierungsdetails finden Sie unter [Online-Finanzkonsolidierungen](./consolidate-online.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

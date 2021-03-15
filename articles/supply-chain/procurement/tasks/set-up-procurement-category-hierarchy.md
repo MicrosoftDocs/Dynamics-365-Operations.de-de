@@ -44,3 +44,6 @@ Dieses Verfahren zeigt Ihnen an, wie neue Knoten in einer Beschaffungskategorie-
 4. Wählen Sie Produkte aus, die Sie der Beschaffungskategorie hinzufügen möchten.
 5. Klicken Sie auf den Pfeil, um die Produkte zur Tabelle **Ausgewählt** hinzuzufügen.
 6. Wählen Sie **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

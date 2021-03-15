@@ -146,3 +146,6 @@ In der folgenden Tabelle wird das Berechnungsergebnis für ein Bestandsobjekt an
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

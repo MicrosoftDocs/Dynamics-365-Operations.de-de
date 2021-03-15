@@ -110,3 +110,6 @@ Eine neue Vorlagenstückliste erstellt. Diese enthält die gleichen Positionen, 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

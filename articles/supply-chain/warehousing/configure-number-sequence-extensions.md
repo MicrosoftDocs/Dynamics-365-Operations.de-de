@@ -91,3 +91,6 @@ Führen Sie die folgenden Schritte aus, um Nummernkreise zu erstellen und zu bea
     | Prüfziffer | Dieser Segmenttyp fügt eine Prüfziffer hinzu, bei der es sich um eine Modulo 10-Berechnung handelt. (Dieses Verhalten entspricht der vorhandenen Logik für Kennzeichen-IDs.) Für diesen Segmenttyp wird das Feld **Wert** immer auf ein Caretzeichen festgelegt (*^*), und das Feld **Länge** wird immer auf *1* festgelegt. |
 
 1. Um ein Beispiel für Ihr endgültiges Zahlenformat anzuzeigen, überprüfen Sie das Feld **Format** am unteren Rand des Inforegisters **Segmente**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

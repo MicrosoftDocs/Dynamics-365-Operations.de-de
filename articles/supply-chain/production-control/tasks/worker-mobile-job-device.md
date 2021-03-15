@@ -67,3 +67,6 @@ Bei diesem Beispiel sollen Sie überprüfen, ob dem Benutzer „SHANNON“ die M
 6. Im Feld **Produktionseinheit** können Sie den Standardfilter für die Arbeitskraft festlegen. Dadurch wird sichergestellt, dass nur Produktions-Einzelvorgänge für die ausgewählte Produktionseinheit angezeigt werden, wenn die Arbeitskraft sich beim Gerät anmeldet. Geben Sie den gewünschten Wert ein.
 7. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

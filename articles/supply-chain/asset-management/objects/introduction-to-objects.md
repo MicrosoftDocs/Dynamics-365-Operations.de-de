@@ -77,3 +77,6 @@ Die Schaltflächen im Aktivitätsbereich sind auf Registerkarten zusammengefasst
 | Ersatzteile          | Dient zum Anzeigen einer Liste mit genehmigten und alternativen Ersatzteilen, die für die Anlage verwendet werden können.                                                                               |
 | Anlage – Verbrauch    | Dient zum Drucken eines Berichts, der Verbrauchserfassungen für die Anlage anzeigt.                                                                                                |
 | Anlagenfehler          | Dient zum Drucken eines Berichts, der Fehlererfassungen für die Anlage anzeigt.                                                                                                      |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

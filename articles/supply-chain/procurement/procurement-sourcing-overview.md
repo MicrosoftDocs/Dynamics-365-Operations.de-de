@@ -92,3 +92,6 @@ Fakturierte Bestellungen erfassen die Verbindlichkeiten im Kreditorenkonto inner
 ## <a name="vendor-performance"></a>Kreditorleistung
 
 Leistung und Überprüfung des Einkaufs wird unterstützt durch *Beschaffungs- und Kreditorenberichte*, die eine Ausgabenanalyse und Kreditorenleistungsanalyse enthalten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

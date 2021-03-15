@@ -63,3 +63,6 @@ Die Standard-Quellensteuergruppe und die Artikel-Quellensteuergruppe werden als 
 Die Quellensteuer über die **Debitorzahlungserfassung** berechnet und gebucht. Sie können den entsprechenden Quellensteuercode sowie den tatsächlichen Quellensteuerbetrag auf der Registerkarte **Quellensteuer** der Seite **Buchungen ausgleichen** manuell anpassen.
 
 Der berechnete Quellensteuerbetrag wird von der Debitorenzahlung abgezogen und auf das **Quellensteuer-Gegenkonto** über einen dazugehörigen Beleg gebucht.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

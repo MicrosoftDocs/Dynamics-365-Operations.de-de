@@ -527,3 +527,6 @@ Die in den vorherigen Beispielen gezeigten Abfragen könnten ein Ergebnis wie di
 ```
 
 Beachten Sie, dass die Mengen-Felder als ein Wörterbuch von Kennzahlen und ihren zugehörigen Werten strukturiert sind.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

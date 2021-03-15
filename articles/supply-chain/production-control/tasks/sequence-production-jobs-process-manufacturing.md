@@ -70,3 +70,6 @@ Bei dieser Prozedur werden Farbenprodukte als Beispiel verwendet, um anzuzeigen,
 8. Verwenden Sie den Schnellfilter, um im Feld "Artikelnummer" nach dem Wert "P300" zu filtern.
     * Beachten Sie, dass die Aufträge nun entsprechend der Priorität von Farbe und Größe aufeinander folgen und die Bestellvorschläge beginnen mit dem frühesten Auftragsdatum und Lieferdatum. Überprüfen Sie die Spalte "Auftragsdatum" oder "Startdatum" in der Infobox "Planungsdetails".  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

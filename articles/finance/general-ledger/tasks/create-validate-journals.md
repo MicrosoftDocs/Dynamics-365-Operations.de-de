@@ -42,3 +42,6 @@ Diese Prozedur erstellt und prüft Erfassungen und Erfassungspositionen. Sie kö
 12. Klicken Sie auf **Buchen**.
 13. Klicken Sie auf **Beleg**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

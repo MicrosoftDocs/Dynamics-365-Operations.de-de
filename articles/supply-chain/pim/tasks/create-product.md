@@ -38,3 +38,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen P
 8. Geben Sie im Feld "Produktnummer" einen Wert ein.
 9. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

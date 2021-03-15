@@ -74,3 +74,6 @@ Für einen Serviceauftrag erstellte Serviceaufgabenbeziehungen sind für den spe
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

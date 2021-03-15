@@ -208,3 +208,6 @@ Im Assistenten werden die folgenden Werte für Contoso-Einzelhändler eingegeben
     - **Antwort:** „Ja, wie in diesem Produktprogrammplan definiert.“ **1 Tag** wird eingegeben.
 
     Contoso verwendet die genehmigten Anforderungen von den enthaltenen Ladengeschäften, um geplante Einkaufsbestellungen zu erstellen, um diese Geschäfte zu beliefern. Da die Produktprogrammplanung jeden Tag ausgeführt wird, sind die Anforderungen vom letzten Tag in der Planung enthalten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

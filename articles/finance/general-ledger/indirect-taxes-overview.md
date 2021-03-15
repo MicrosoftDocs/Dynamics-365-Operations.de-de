@@ -96,3 +96,6 @@ Wenn Sie jedoch eine Mehrwertsteuer nach vereinnahmten Geldern anwenden, begleic
 Wenn Sie vordatierte Schecks als Zahlungsmethode verwenden, wenn die Zahlung erstellt wird, wird das Bankkonto nicht ausgeglichen. In einigen Ländern wird die Mehrwertsteuer zu 'realisierten' Verbindlichkeiten, wenn die Zahlung bei der Bank eingeht, was bedeutet, dass der vordatierte Scheck ausgeglichen wird. Sie können es aktivieren, indem Sie **Die bedingte Steuer realisieren, wenn vordatierte Schecks gezogen werden** in **Bargeld- und Bankverwaltung > Einstellungen > Bargeld- und Bankverwaltungsparameter > Vordatierte Schecks** auswählen.
 
 Weitere Informationen finden Sie unter [Einrichten der Quellensteuer](tasks/set-up-withholding-tax.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

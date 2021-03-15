@@ -53,3 +53,6 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Versandteam erstellen. Nachdem
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch die Freigabe eines Produkts
 6. Klicken Sie auf Weiter.
 7. Klicken Sie auf Fertig stellen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ In diesem Thema wird gezeigt, wie Sie das automatische Drucken einer Beschriftun
 7. Wählen Sie **Speichern**.
 8. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

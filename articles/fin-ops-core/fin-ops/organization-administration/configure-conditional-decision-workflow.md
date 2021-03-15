@@ -52,3 +52,6 @@ Das System bestimmt durch Überprüfen, ob das übermittelte Dokument bestimmten
     2. Wählen Sie im Bereich **Bedingung überprüfen** des Formulars einen Datensatz aus.
     3. Klicken Sie auf **Test**. Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht.
     4. Klicken Sie auf **OK** oder **Abbrechen**, um zum Formular **Eigenschaften** zurückzukehren.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

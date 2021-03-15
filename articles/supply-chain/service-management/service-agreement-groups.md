@@ -41,3 +41,6 @@ Im Feld **Servicevereinbarungsgruppe** auf der Seite **Serviceverwaltungsparamet
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Erstellen von Servicevereinbarungsgruppen](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

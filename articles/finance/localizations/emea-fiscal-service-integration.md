@@ -348,3 +348,6 @@ In der folgenden Tabelle werden die Felder für Kassenzahlungsbuchungen beschrie
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

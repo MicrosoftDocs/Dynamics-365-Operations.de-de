@@ -58,3 +58,6 @@ Diese Prozedur zeigt an, wie man eine Kanban-Regel erstellt, die mehrere Aktivit
     * Beachten Sie, dass das Kanban zwei Prozesseinzelvorgänge vom Produktionsfluss hat. Das erste ist "SpeakerAssemblyAndPolish" und das zweite ist "SpeakerTestAndPackaging".  
     * Dies ist der letzte Schritt!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -169,3 +169,6 @@ Sämtliche Änderungen, die in der Auftragspositionsantwort vorgenommen wurden, 
 
 ### <a name="open-confirmed-orders"></a>Offene bestätigte Aufträge
 Wenn die Bestellung vom Debitor bestätigt wird (d. h. der Status des Auftrags, wird auf **Bestätigt** geändert), erscheint sie unter den offenen, bestätigten Aufträgen. Sie bleibt in der Liste, bis sie als vom Debitor empfangen registriert wird.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -117,3 +117,6 @@ Wählen Sie den Positionstyp **Händler** wenn für den Produktionsprozess ein Z
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

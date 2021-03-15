@@ -101,3 +101,6 @@ Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, is
 11. Geben Sie im Feld **Bestellzeit** den Wert „5“ ein.
 12. Klicken Sie auf **Speichern**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Nachdem ein Personalbeschaffungsmitarbeiter ein Masseneinstellungsprojekt erstel
 8. Heben Sie in der Liste die Markierung der ausgewählten Zeile auf.
     * Wählen Sie die nächste Projektposition aus und setzen Sie die Eingabe der Arbeitskraftinformationen für jede Person fort, die Sie einstellen.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

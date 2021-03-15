@@ -71,3 +71,6 @@ Eine Budgetplanvorlage wird vom Budget-Manager in Microsoft Word erstellt und zu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -123,3 +123,6 @@ Im Anlagenmanagement können Sie Änderungen an den Arbeitsauftragsprognosen fü
 Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Arbeitsauftragsplanung aktualisieren**.
 
 ![Abbildung 2](media/07-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

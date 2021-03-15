@@ -82,3 +82,6 @@ Es gibt zwei Möglichkeiten, die Reservierungen **im Bestand und in Lagerortverw
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Bestandreservierungsrichtlinien auf der Produktionsparameterseite
 
 Der Wert des Feldes **Reservierung** auf der Registerkarte **Allgemeines** auf der Seite **Produktionsparameter** ist abhängig vom Standardpunkt im Produktionsprozess, für den Lagerbestand reserviert werden soll. So kann zum Beispiel Bestand reserviert werden, wenn Arbeit eingeplant wird oder wenn Arbeit gestartet wird.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

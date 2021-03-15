@@ -207,3 +207,6 @@ Um Ausgangswerteinstellungen aus einer XML-Datei zu importieren, die auf dem Mic
 
 - [Nachverfolgung erstellter Berichtsergebnisse und Vergleich mit Ausgangswerten](er-trace-reports-compare-baseline.md)
 - [Aufgabenrecorder-Ressourcen](../user-interface/task-recorder.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

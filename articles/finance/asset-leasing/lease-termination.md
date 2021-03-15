@@ -158,3 +158,6 @@ Die folgenden Tabellen zeigen die Werte, die auf den Registerkarten **Allgemeine
 11. Um den Nettoeffekt der Kündigung anzuzeigen, bei dem das Nutzungsrecht am Leasingobjekt und die Leasingverbindlichkeit 0 (Null) betragen, öffnen Sie die Transaktionstabellen für Verbindlichkeiten und Anlagen.
 
 Der Leasingstatus sollte jetzt **Gekündigt** sein. Für diesen Mietvertrag werden keine zusätzlichen Journaleinträge gebucht, es sei denn, die Kündigung wird rückgängig gemacht.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

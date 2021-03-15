@@ -72,3 +72,6 @@ Die **Kanban-Feinterminierung**-Listenseite enth√§lt eine Infobox, die die verf√
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Eine *Werkzeugleiste* enthält Werkzeuge, wie z.B. die Möglichkeit, Felder hinz
 Eine *Liste* ist der Name einer Sammlung von Datensätzen, durch die Sie blättern können. Sie können diese Datensätze auf die Seite bringen, indem Sie sie auswählen. Häufig wird dadurch ein Raster geöffnet.
 
 ![Die folgende Abbildung zeigt Beispiele für Symbolleisten, Raster und Listen.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

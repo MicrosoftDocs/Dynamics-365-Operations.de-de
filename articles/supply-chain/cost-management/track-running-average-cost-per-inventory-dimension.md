@@ -55,3 +55,6 @@ Der laufende Durchschnittseinstandspreis für den Lagerort "GW" und Charge "AAA"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

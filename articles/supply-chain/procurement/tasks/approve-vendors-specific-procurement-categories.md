@@ -43,3 +43,6 @@ In diesem Thema wird erläutert, wie Kreditoren für bestimmte Beschaffungskateg
 13. Wählen Sie **Nein** im Feld **Kreditoren aus übergeordneter Kategorie erben:** aus.
 14. Wählen Sie **Ja** im Feld **Kreditoren aus übergeordneter Kategorie erben:** aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

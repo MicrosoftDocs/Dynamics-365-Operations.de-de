@@ -142,3 +142,6 @@ In diesem Thema wird erläutert, wie Sie Inkassoinformationen sowie verschiedene
 5. Wählen Sie **Liste anzeigen** aus.
 - Wählen Sie ein Debitorenkonto aus, oder übernehmen Sie den Standardeintrag. Hier wird standardmäßig das Debitorenkonto angezeigt, das auf der Listenseite oder in dem Formular ausgewählt ist, über die bzw. das dieses Formular geöffnet wurde. Wenn Sie das Formular über eine Listenseite geöffnet haben, enthält die Liste die Debitoren, die in dem auf der Listenseite verwendeten Debitorenpool enthalten sind.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Voraussetzungen:
 12. Klicken Sie auf Fertig stellen.
 13. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

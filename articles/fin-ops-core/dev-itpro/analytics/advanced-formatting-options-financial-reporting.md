@@ -310,3 +310,6 @@ Eine **IF/THEN/ELSE**-Anweisung ermöglicht, dass eine Berechnung von den Ergebn
 Sie können Berichte mithilfe von Dimensionswerten entwerfen, die ein kaufmännisches Und-Zeichen (&) enthalten.
 
 Innerhalb eines beliebigen Feld **Link zur Finanzdimension** können Sie einen Wert wie beispielsweise **GuV** eingeben. Das Einschließen von einfachen Anführungszeichen ('') auf beiden Seiten des Dimensionswert gibt an, dass Sie den Literalwert verwenden, wie beispielsweise das Einschließen des kaufmännischen Und-Zeichens (&).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

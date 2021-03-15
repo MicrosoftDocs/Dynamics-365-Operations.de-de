@@ -127,3 +127,6 @@ In der Callcenter-App können Callcenter-Agenten das Abholgeschäft oder den Abh
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Abholinformationsmodul](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

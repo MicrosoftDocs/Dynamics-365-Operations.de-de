@@ -72,3 +72,6 @@ In der Ansicht **Lagerortauftragspositionen** können Sie den Fortschritt des ei
 
 - Gehen Sie zu **Lagerortverwaltung \> Abfragen und Berichte \> Lagerortauftragspositionen**, und verwenden Sie den Filter, um die gesuchten Positionen zu finden.
 - Wechseln Sie zu **Beschaffung \> Bestellungen \> Alle Bestellungen**, und öffnen Sie die relevante Bestellung. In dem Abschnitt **Bestellpositionen** wählen Sie eine oder mehrere Zeilen aus, und wählen Sie dann in der Symbolleiste **Lagerort \> Lagerort-Empfangseinträge**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

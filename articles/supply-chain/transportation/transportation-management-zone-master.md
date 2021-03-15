@@ -35,3 +35,6 @@ Mit der Transportverwaltung können Sie geografische Lagerplätze in Zonen einte
 - **Optimieren Sie die Arbeitspläne** - Indem Sie bestimmte Arbeitspläne bestimmten Zonen zuordnen.
 
 Sie definieren Zonen basierend auf den Werten der Metadatenfelder (wie Land, Postleitzahlenbereich oder Spediteur), die jede Zone qualifizieren. Zonendefinitionen sind nicht erforderlich, wenn Ihre Transportpreise kein Zonenkonzept verwenden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

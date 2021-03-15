@@ -124,3 +124,6 @@ Dieses Verhalten wird erwartet. Da Anforderungen nicht immer genehmigt werden, s
 
 Sie können Handelsabkommen für alle Antworten auf eine Angebotsanforderungen (RFQ) erstellen, unabhängig davon, ob sie akzeptiert oder abgelehnt wurden. Weitere Informationen finden Sie unter [ÜBersicht der Angebotsanforderungen (RFQs)](request-quotations.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Auf der Seite **Anlagenzähler** (**Anlagenverwaltung** > **Abfragen** > **Anlag
 >[!NOTE]
 >Sie können einen Bereich einrichten, um Abweichungen in den manuellen Zählererfassungen zu definieren. Sie können auch die Art der Meldung angeben, die angezeigt wird, wenn Erfassungen außerhalb des definierten Bereich sind. Weitere Informationen zum Einrichten von Zählern finden Sie unter [Zähler](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

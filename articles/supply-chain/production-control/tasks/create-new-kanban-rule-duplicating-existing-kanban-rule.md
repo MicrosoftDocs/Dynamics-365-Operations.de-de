@@ -43,3 +43,6 @@ Ziel dieser Prozedur ist es, ein Duplikat einer vorhandenen Kanban-Regel zu erst
 3. Klicken Sie auf "OK".
     * Beachten Sie, dass ein Duplikat von Kanban-Regel 000017 erstellt wird.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Um den Rest auszugleichen, führen Sie die folgenden Schritte aus:
 7)  Sie können auch eine Zahlungserfassung mit dem Ausgleichsrest auswählen oder ihn nur buchen ohne eine Erfassung zu erstellen. Wählen Sie **Ja** für **Bearbeiten in der Erfassung**, um eine Zahlungserfassung zu erstellen. Sie können die Zahlungserfassung weiter bearbeiten, die Sie erstellen.
 8)  **Rest ausgleichen** anklicken. Wenn Sie sich entscheiden, eine Erfassung zu erstellen, wird die Schaltfläche zu **Erfassung erstellen** geändert. **Erfassung erstellen** anklicken.
 9)  Wenn Sie eine Zahlungserfassung erstellt haben, wird die Erfassungsseite **Rest ausgleichen** geöffnet. Eine zusätzliche Erfassungsposition wird der Erfassung für den Ausgleich des Restbetrags mit dem als Ausgleichsrestkonto als Gegenkonto hinzugefügt. Wenn Sie einen Debitor oder Lieferant hinzufügen, sodass der Regulierungsbetrag zu einem anderen Debitor oder Lieferanten verschoben werden kann, ist eine weitere Position zur Erfassung hinzuzufügen, um den Ausgleichsbetrag zu diesem Debitor oder Kreditor zu verschieben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

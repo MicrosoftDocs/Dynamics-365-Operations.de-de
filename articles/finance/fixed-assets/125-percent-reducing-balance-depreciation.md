@@ -87,3 +87,6 @@ Bei der Abschreibungsmethode „125 % degressiv“ werden 125 Prozent durch die
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

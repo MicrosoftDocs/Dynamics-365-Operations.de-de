@@ -50,3 +50,6 @@ Sie können Storno- und Korrekturrechnungen auf zwei Arten identifizieren:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

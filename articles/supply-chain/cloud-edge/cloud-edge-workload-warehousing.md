@@ -292,3 +292,6 @@ Bei der Arbeitsauslastung in Skalierungsheiten können Sie die folgenden Batchau
 - Verarbeiten von Wellentabellen-Sätzen
 - Lagerorthub zu Skalierungseinheit-Nachrichtenprozessor
 - Mengenaktualisierungsanforderungen für Lagerortauftragspositionen verarbeiten
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

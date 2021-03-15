@@ -56,3 +56,6 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 8. Erweitern Sie 'Intrastatmodell' in der Struktur.
 9. Wählen Sie in der Strukturdarstellung "Intrastatmodel\Intrastat (DE)" aus.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

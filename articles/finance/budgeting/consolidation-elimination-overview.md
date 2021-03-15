@@ -93,3 +93,6 @@ Es ist nicht möglich, Ihre Budgets im Konsolidierungsunternehmen zu verarbeiten
 Weitere Informationen finden Sie unter [Neubewertung der Währung in einem Konsolidierungsunternehmen](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

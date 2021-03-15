@@ -70,3 +70,6 @@ Nachdem Ihre Site erstellt wurde, werden nur Benutzer in den Sicherheitsgruppen 
 [Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Site](search-engine-optimization-considerations.md)
 
 [Verwalten der Inhaltssicherheitsrichtlinie](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

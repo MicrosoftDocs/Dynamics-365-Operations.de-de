@@ -64,3 +64,6 @@ Manchmal beendet eine Organisation das Angebot eines bestimmten Vorteils. In die
 Ebenso können Sie mit der Massenvorteilserweiterung das Ablaufdatum eines Vorteils und der Arbeitskraftregistrierungen für diesen Vorteil verlängern, wenn Sie beschließen, einen Vorteil länger anzubieten, als ursprünglich geplant.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

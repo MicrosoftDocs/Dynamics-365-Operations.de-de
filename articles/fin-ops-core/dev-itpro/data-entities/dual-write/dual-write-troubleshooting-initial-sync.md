@@ -211,3 +211,6 @@ Wenn Sie Zeilen mit Werten in der Debitorentabelle in den Spalten **ContactPerso
     Die anfängliche Synchronisierung der Zeilen ist nun abgeschlossen.
 
 8. Aktivieren Sie die Änderungsnachverfolgung in Finance and Operations für die Tabelle **Debitoren V3**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Nachdem die Initialisierung abgeschlossen wurde, müssen Sie zusätzliche Commer
 - Commerce-Kanäle
 - Register und Geräte
 - Sortimente
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

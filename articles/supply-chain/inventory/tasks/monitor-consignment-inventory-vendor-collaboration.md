@@ -42,3 +42,6 @@ Dieses Verfahren zeigt, wie Sie Kreditor-Kooperationen nutzen, um Informationen 
 1. Wechseln Sie zu "Kreditor-Kooperation" > "Lieferbestand" > "Verfügbarer Lagerbestand".
     * Die Seite „Verfügbare Lieferungsbestand“ zeigt den Bestand, den Sie am Lagerort des Debitors besitzen. Sie können zusätzliche Dimensionen eingegeben, z. B. der Standort und der Lagerort, indem Sie auf die Registerkarte "Dimensionen anzeigen" klicken.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

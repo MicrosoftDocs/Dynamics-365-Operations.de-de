@@ -127,3 +127,6 @@ In diesem Beispiel stimmt jedes Konto, das Teil der Kontostruktur - GuV ist, mit
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

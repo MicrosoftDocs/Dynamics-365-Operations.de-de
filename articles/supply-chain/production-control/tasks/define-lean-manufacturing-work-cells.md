@@ -99,3 +99,6 @@ Eine Arbeitsgruppe ist ein Form einer Ressourcengruppen, die in den Lean Manufac
 ## <a name="save"></a>Speichern
 1. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

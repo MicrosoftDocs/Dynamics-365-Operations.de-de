@@ -88,3 +88,6 @@ Die folgenden Entitäten wurden als Basis für die **Financial Performance** Pow
 - ChartofAccounts
 
 Diese Entitäten wurden verwendet, um berechnete Messungen im Datenmodell zu erstellen. Diese berechneten Messungen werden verwendet, um die Messdaten (KPIs) und Berichte zu erstellen, die im Inhalt verwendet werden. Standardmäßig enthält der Inhalt Daten für die letzten drei Jahre und ein zukünftiges Jahr. Um zusätzliche Berechnungen in Ihren Berichten und Dashboards einzubeziehen, können Sie die [Microsoft Excel-Arbeitsmappe](https://docs.microsoft.com/dynamics/s-e/) ändern. Diese Arbeitsmappe ist das Standarddatenmodell, das verwendet wurde, um den Inhalt zu erstellen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

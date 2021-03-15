@@ -109,3 +109,6 @@ Um mit Finance and Operations-Anwendungen Parität zu schaffen, nimmt duales Sch
 
 Weitere Informationen zu bevorstehenden Änderungen finden Sie unter [Neuerungen oder Änderungen beim dualen Schreiben](whats-new-dual-write.md).
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

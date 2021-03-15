@@ -67,3 +67,6 @@ Diese Prozedur konzentriert sich auf die Einstellungen, die benötigt werden, um
 5. Erweitern Sie den Abschnitt "Kanbans".
     * Beachten Sie, dass ein Kanban erstellt wurde, um das erforderliche Material an Lagerort 12 zu übertragen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

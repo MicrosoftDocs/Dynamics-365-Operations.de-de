@@ -54,3 +54,6 @@ Sie sollten ein gültiges Zertifikat (wie test-soft-pse.pfx) und eine Steuerbeh�
 13. Schließen Sie die Seite.
 14. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

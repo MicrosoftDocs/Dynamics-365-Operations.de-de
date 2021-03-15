@@ -72,3 +72,5 @@ Mithilfe der Fragebogenstatistik können Sie die Ergebnisse eines ausgefüllten 
 -   Wählen Sie Kriterien aus, oder zeigen Sie Kriterien an, um die Ergebnisse nach Merkmalen des Befragten oder des Fragebogens zu analysieren. Wenn Sie z. B. die **Postleitzahl** auswählen, können Sie die Korrelation zwischen dem Standort eines Befragten und den richtigen Antworten analysieren.
 
 Die festgelegten Einstellungen werden gespeichert und können zur regelmäßigen Neuberechnung der Ergebnisse verwendet werden.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

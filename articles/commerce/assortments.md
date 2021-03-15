@@ -106,3 +106,6 @@ Berücksichtigen Sie die folgenden Implementierungsanforderungen, wie Sie Sortim
 - **Vertrieb und externe Sortimente der Rücklieferungen** – Diese Funktion hilft Einzelhändlern, die Sortimente verwalten, indem sie die Anzahl der verfügbaren Produkte in den Produkten einschränken können, die der Kerngesamtproduktion für den Shop angehören. Diese Funktion ermöglicht auch Einzelhändlern, Situationen zu ermöglichen, in der ein Produkt irrtümlich von einem Sortiment ausgelassen wurde, oder in ein Produkt außerhalb des Gültigkeitsdatums für das Sortiment zurückgegeben wurde.
 
 Wenn Produktdaten nicht in der Kanaldatenbank vorhanden sind, können POS Anrufe in Echtzeit zu den Hauptsitzen machen, um die erforderlichen Informationen abzurufen, damit das Produkt verkauft, angezeigt oder zurückgegebenen oder einem Kundenauftrag hinzugefüt werden kann. Produktinformationen, die auf diese Weise abgerufen werden, gelten nur während des Bereichs dieser Buchung. Das Produkt wird nicht der Sortimentsdefinition hinzugefügt. Daher werden folgende Echtzeitanrufe bei Bedarf ausgeführt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

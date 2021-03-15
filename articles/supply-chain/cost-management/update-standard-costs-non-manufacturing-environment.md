@@ -51,3 +51,6 @@ Gehen Sie zum Korrigieren, Regulieren oder Aktualisieren der Standardkosten für
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

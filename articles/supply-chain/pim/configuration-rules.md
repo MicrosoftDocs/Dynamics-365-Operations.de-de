@@ -45,3 +45,6 @@ Vorhandene Varianten sind von nachfolgenden Änderungen der Variantenregeln nich
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

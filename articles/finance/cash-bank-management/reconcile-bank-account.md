@@ -70,3 +70,6 @@ Die Funktion „Bankauszugsabstimmung stornieren“ ermöglicht es Ihnen, den Vo
 Bankauszugsabstimmungen können nur in der chronologischen Reihenfolge storniert werden, in der sie eingegeben wurden. Wenn eine Bankauszugsabstimmung storniert wird, werden neue Buchungen und Korrekturen storniert und alle weiteren Buchungen werden als nicht abgestimmt markiert.
  
 Um die Bankauszugsabstimmung stornieren, wählen Sie den Bankauszug aus, und wählen Sie **Bankauszug > Abstimmung stornieren**. Geben Sie auf der Seite **Abstimmung stornieren** den **Ursachencode**, einen **Kommentar zur Ursache** und das **Stornierungsdatum** an. Wählen Sie **OK**, um die Stornierung zu starten. Beachten Sie, dass das Datum der Bankauszugsstornierung am oder nach dem Bankauszugsdatum liegen muss. Nachdem die Bankauszugsabstimmung storniert wurde, wird das Feld **Stornierungsdatum** für den Bankauszug mit dem angegebenen **Stornierungsdatum** aktualisiert. Wählen Sie die Schaltfläche **Buchungen** aus, um die Buchungen anzuzeigen, für die die Abstimmung storniert wurde.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

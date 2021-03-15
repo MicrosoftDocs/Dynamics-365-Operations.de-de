@@ -58,3 +58,6 @@ Diese Prozedur veranschaulicht, wie Handelsvereinbarungen zu Verkaufspreisen mit
 24. Klicken Sie auf die Registerkarte "Kategoriepreisregeln".
     * In dieser Liste werden kanalspezifische Kategoriepreiskalkulationsregeln angezeigt.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

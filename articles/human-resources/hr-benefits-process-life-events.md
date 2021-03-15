@@ -57,3 +57,6 @@ Wenn beispielsweise heute der 1. Februar ist und die Arbeitskraft Joe Smith am 
    4. Wählen Sie **OK**. Der Prozess wird mit den von Ihnen festgelegten Parametern ausgeführt.
 
 4. Wählen Sie **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

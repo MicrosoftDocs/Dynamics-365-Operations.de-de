@@ -245,3 +245,6 @@ Sie können die Übermittlungsprotokolle für alle übermittelten Dokumente anze
 - [Übersicht über das Add-On für die elektronische Rechnungsstellung](e-invoicing-service-overview.md)
 - [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung](e-invoicing-get-started.md)
 - [Einrichten des Add-Ons für die elektronische Rechnungsstellung](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

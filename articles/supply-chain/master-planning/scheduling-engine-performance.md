@@ -328,3 +328,6 @@ Der Wert für **Zeitlimit für Optimierungsversuche** steuert, wie viele Sekunde
 
 > [!NOTE]
 > Die für die Zeitüberschreitungen festgelegten Werte werden sowohl für die Planung von freigegebenen Produktionsaufträgen und von geplanten Aufträgen im Rahmen der Materialbedarfsplanung angewendet. Infolgedessen kann das Festlegen sehr hoher Werte die Laufzeit der Materialbedarfsplanung erheblich verlängern, wenn ein Plan mit vielen geplanten Produktionsaufträgen ausgeführt wird.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

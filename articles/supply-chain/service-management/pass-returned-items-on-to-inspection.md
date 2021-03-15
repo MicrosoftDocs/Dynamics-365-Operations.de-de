@@ -55,3 +55,6 @@ Damit wird das System aufgefordert, einen Quarantäneauftrag zu erstellen, und d
 
 [Angeben zur Entsorgung zurückgelieferter Artikel](specify-how-to-dispose-of-returned-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

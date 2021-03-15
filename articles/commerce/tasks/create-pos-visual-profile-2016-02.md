@@ -47,3 +47,6 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen v
 17. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 18. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

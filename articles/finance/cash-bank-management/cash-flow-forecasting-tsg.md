@@ -52,3 +52,6 @@ Stellen Sie sicher, dass die Messungen „Cashflow Measure V2“ und „LedgerCo
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Wurden die Entitätsspeicher-Entitäten aktualisiert?
 
 Sie müssen Ihre Entitäten regelmäßig aktualisieren, um sicherzustellen, dass die Daten aktuell und korrekt sind. Rufen Sie **Systemverwaltung \> Einrichtung \> Entitätsspeicher** auf. Wählen Sie die Entität und anschließend **Aktualisieren** aus, um eine bestimmte Entität manuell zu aktualisieren. Die Daten können auch automatisch aktualisiert werden. Setzen Sie auf der Seite **Entitätsspeicher** die Option **Automatische Aktualisierung aktiviert** auf **Ja**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

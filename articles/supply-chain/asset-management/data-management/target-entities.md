@@ -52,3 +52,6 @@ In Arbeitsbereich **Datenverwaltung** können Sie sich einen Überblick über Zi
 
     ![Abbildung 3](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

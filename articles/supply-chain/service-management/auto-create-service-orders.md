@@ -58,3 +58,6 @@ Die Servicevereinbarung gilt vom 1. Januar 2012 bis zum 31. Dezember 2012. D
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

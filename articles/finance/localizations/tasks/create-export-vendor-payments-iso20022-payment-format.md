@@ -49,3 +49,6 @@ Dies ist der fünfte von fünf Aufgaben, die das Verfahren für Kreditorenzahlun
     3.    Geben Sie im Feld **Dateiname** einen Wert ein. In vorliegenden Beispiel ist die generierte Datei aufgrund der EUR-Zahlung SEPA-konform. Die ISO20022-Banküberweisung und andere Kreditorenzahlungsformate können ebenfalls zum Generieren von Zahlungen in anderen Währungen verwendet werden.
     4.    Geben Sie im Feld **Bankkonto** einen Wert ein, oder wählen Sie einen Wert aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

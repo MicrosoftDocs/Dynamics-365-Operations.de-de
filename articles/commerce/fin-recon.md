@@ -61,3 +61,6 @@ Wenn die Buchung von Aufstellungen auf Basis von Einzelzuläufen verwendet wird,
 Details der finanziellen Abstimmung für eine Schicht werden mithilfe des P-Jobs mit der Commerce-Zentrale synchronisiert.
 
 Finanzaufstellungen für den Einzelhandel in der Commerce-Zentrale berechnen keine Summen, um die Details in den Auszugspositionen anzuzeigen. Stattdessen werden die finalisierten Beträge im POS-Client zum Erstellen und Buchen von Finanzaufstellungen für den Einzelhandel verwendet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

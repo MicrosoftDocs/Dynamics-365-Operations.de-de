@@ -72,3 +72,6 @@ Die im globalen Adressbuch festgelegten Parameter bestimmen die Rollen, in denen
     - Um ein Bild hochzuladen, wählen Sie **Neues Bild hochladen**.
     - Um ein Bild zu entfernen, wählen Sie das Bild aus und wählen Sie dann **Entfernen**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

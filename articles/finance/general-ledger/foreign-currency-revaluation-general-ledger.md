@@ -112,3 +112,6 @@ Sie können die Ergebnisse eines veralteten Auftrags der Neubewertung stornieren
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

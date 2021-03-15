@@ -40,3 +40,6 @@ Wenn eine Einkaufswagenposition ausgewählt und **Auswahl entnehmen**, **Auswahl
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Debitorenaufträge in Modern POS (MPOS)](customer-orders-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

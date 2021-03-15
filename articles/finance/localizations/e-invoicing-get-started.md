@@ -235,3 +235,6 @@ Je nach Land oder Region benötigt die elektronische Rechnungsstellungsfunktion 
 - [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Mexiko](e-invoicing-mex-get-started.md)
 - [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Italien](e-invoicing-ita-get-started.md)
 - [Elektronische Rechnungen für Kunden in Ägypten](emea-egy-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

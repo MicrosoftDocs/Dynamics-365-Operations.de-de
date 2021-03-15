@@ -67,3 +67,6 @@ Sie können die Funktion **Rücksetzdatum löschen** verwenden, um zukünftige R
 
 > [!NOTE]
 > Abhängig vom ausgewählten Rücksetzdatum und dem Belegformat haben Sie möglicherweise doppelte Belegnummern. Obwohl das POS-System (Point of Sale) diese Situationen bewältigen kann, erhöhen sie den Zeitaufwand für die Bearbeitung von Rücklieferungen, da Vertriebsmitarbeiter unter den doppelten Belegen auswählen müssen. Andere Komplikationen im Zusammenhang mit der Datenbereinigung können auftreten, wenn die doppelten Belege keine geplante Folge waren. Aus diesem Grund empfehlen wir die Verwendung dynamischer Datumszeichen (zum Beispiel **ddd**, **MM**, **DD** und **YY**), um doppelte Belegnummern nach einem Rücksetzvorgang zu vermeiden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ In diesem Thema wird erläutert, wie Sie Zahlenfolgen für Leasing-IDs erstellen
 4. Wählen Sie den Nummernkreis für die **Leasing-ID**-Referenz. Dieser Nummernkreis wird verwendet, um den eindeutigen Bezeichner für jeden Mietvertrag zu generieren.
 5. Wählen Sie den Nummernkreis für die **Prozess-ID**-Referenz. Dieser Nummernkreis wird verwendet, um den eindeutigen Bezeichner für jeden Prozess zur Indexneubewertung zu generieren.
 6. Wählen Sie den Nummernkreis für die **Kündigungsvorschlagskennung**-Referenz. Dieser Nummernkreis wird verwendet, um den eindeutigen Bezeichner für jeden Kündigungsvorschlag zu generieren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

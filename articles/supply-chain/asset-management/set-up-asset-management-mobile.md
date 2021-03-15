@@ -84,3 +84,6 @@ Um Funktionen für das Anlagenmanagement in der mobilen Finance and Operations-A
 Weitere Informationen zum Arbeiten mit dem mobilen Arbeitsbereich für die **Anlagenverwaltung** finden Sie unter [Mobilen Arbeitsbereich für die Anlagenverwaltung nutzen](asset-management-mobile-workspace.md).
 
 Weitere Informationen zur mobilen Finance and Operations-App (Dynamics 365) finden Sie unter [Startseite der mobilen App](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

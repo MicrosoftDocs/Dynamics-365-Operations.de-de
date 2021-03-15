@@ -37,3 +37,6 @@ Wenn mehrere Spediteure und Zustelldienste für denselben Streckenabschnitt exis
 1. Geben Sie in das Feld **Name** einen beschreibenden Namen für die Gruppe ein.
 1. Fügen Sie auf dem Inforegister **Details** eine Zeile hinzu und wählen Sie einen Spediteur und einen Speditionsdienst dafür aus. Wiederholen Sie diesen Schritt, bis Sie so viele Spediteure hinzugefügt haben, wie Sie für die Gruppe benötigen.
 1. Schließen Sie die Seite.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

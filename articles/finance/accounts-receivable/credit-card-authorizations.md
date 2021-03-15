@@ -79,3 +79,6 @@ Um eine Kreditkartenautorisierung zu stornieren, können Sie die Zahlungsmethode
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

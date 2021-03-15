@@ -221,3 +221,6 @@ In den folgenden Tabellen werden die allgemeinen Kreditorendatenstrukturdefiniti
 - [Deutsche Protokolldateikonfiguration importieren](./tasks/import-german-audit-file-configuration.md)
 - [Anpassen der deutschen Protokolldateikonfiguration](./tasks/customize-german-audit-file-configuration.md)
 - [Generieren Sie deutsche Protokolldatei](./tasks/german-audit-file.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

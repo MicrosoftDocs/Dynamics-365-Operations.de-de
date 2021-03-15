@@ -80,3 +80,6 @@ Wenn Sie einen neuen Serviceauftrag für eine Servicevereinbarung erstellen, der
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

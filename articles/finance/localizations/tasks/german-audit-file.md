@@ -40,3 +40,6 @@ Im folgenden Verfahren sehen Sie, wie die deutsche Protokolldatei generiert wird
 9. Geben Sie in das Feld "Periode - Bis Datum" ein Datum ein.
 10. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

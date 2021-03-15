@@ -83,3 +83,6 @@ Um den Abgang einer exponential zunehmenden Anzahl von Kombinationen die Behebun
 ![Formel für die Berechnung des Schwellenwerts](./media/overlapping-discount-combo-06.jpg)
 
 Nachdem der Schwellenwert eines jeden Rabatts auf einem freigegebenen Produktsatz berechnet wurde, werden die Rabatte auf die freigegebenen Produkten angewendet, und zwar in der Reihenfolge vom höchsten Schwellenwert bis zu niedrigsten Schwellenwert. Bei dieser Methode werden alle restlichen Rabattmöglichkeiten nicht jedes Mal verglichen, nachdem eine einzelne AOS-Instanz einen Rabatt angewendet wurde. Stattdessen werden einmal verglichen überlappenden die Rabatte angewendet und dann im Auftrag. Keine weiteren Vergleiche durchgeführt werden. Sie können den Schwellenwert konfigurieren, die der auf der Schwellenwertmethode **Rabatt** Registerkarte der **Commerce Parameter** Seite zu wechseln. Die akzeptierte Zeit, den Rechnungsrabatt zu berechnen variiert zu Einzelhandel. Allerdings liegt diese Zeit im Allgemeinen im Bereich der zehnten Millisekunden auf einer Sekunde.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

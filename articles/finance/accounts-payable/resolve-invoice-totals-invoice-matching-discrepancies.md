@@ -43,3 +43,6 @@ Sollten Sie nach Erkennung der Abweichung der Meinung sein, die Abweichung sei a
 Weitere Informationen finden Sie unter [Untersuchung/Auflösung von Ausnahmen](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

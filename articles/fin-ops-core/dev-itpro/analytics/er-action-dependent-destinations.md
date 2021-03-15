@@ -129,3 +129,6 @@ Die folgende Liste von Geschäftsdokumenten wird von der Funktion **Ausgabe von 
 [Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
 
 [Änderungen an der Framework-API für elektronische Berichterstellung für Application Update 10.0.17](er-apis-app10-0-17.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

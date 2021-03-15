@@ -60,3 +60,6 @@ In diesem Thema wird erläutert, wie Sie Daten von externen Systemen so vorberei
 8. Stellen Sie die **Stapelverarbeitung**-Option auf **Ja**, um die Konsolidierung zu einem bestimmten Zeitpunkt als Stapelaufgabe auszuführen. Um die Konsolidierung sofort auszuführen, wählen Sie **OK**. 
 
 Die in den Tochtergesellschaften für die Konsolidierung angegebenen Buchungen und Salden werden den entsprechenden Konten der konsolidierten juristischen Person hinzugefügt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Weitere Informationen finden Sie untere [Abschreibungsmethoden und - konventione
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

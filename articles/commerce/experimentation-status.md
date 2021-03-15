@@ -44,3 +44,6 @@ Entsprechend können in der Spalte **Drittanbieterstatus** die folgenden Werte a
 Das folgende Diagramm zeigt beide Statussätze und ihre Beziehung zueinander.
 
 [ ![Experimentierstatus](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

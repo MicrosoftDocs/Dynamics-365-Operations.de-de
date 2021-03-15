@@ -120,3 +120,6 @@ Um einen der Aufwendungsprüfer zu verwenden, den Sie in einem Workflow eingeric
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

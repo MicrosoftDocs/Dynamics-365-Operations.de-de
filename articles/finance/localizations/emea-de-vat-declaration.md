@@ -962,3 +962,6 @@ Sie können den deutschen Mehrwertsteuerbericht auch mit der **Umsatzsteuer für
 | 181                | 19                   |
 | 186                | 7                    |
 | 193                | 7                    |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

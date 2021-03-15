@@ -134,3 +134,6 @@ Wenn ein Mietvertrag angepasst wurde, können Sie sich die verschiedenen Version
 
 2. Öffnen Sie den geänderten Mietvertrag über die Seite **Mietvertragsübersicht**, , um historische Zeitpläne anzuzeigen, wählen Sie auf der Seite das gewünschte Buch und dann im Aktionsbereich **Buchversionsverlauf** aus.
 3. Wählen Sie auf der Seite **Buchversion** eine Version und einen Zeitplan aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

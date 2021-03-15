@@ -53,3 +53,6 @@ Im folgenden Verfahren wird dargestellt, wie ein Zusatzleistungsmaster für eine
 9. Klicken Sie auf "Speichern".
 10. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

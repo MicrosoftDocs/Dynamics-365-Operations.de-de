@@ -98,3 +98,6 @@ Metadaten für Transportverwaltungsmodule werden für die verschiedenen Arten vo
 | 3        | Zielstartpostleitzahl | Zuweisung | Zeichenfolge    | Postleitzahl    | Ausgewählt  |
 | 4        | Zielendepostleitzahl   | Zuweisung | Zeichenfolge    | Postleitzahl    | Ausgewählt  |
 | 5        | Zielland           | Zuweisung | Zeichenfolge    | Land/Region |           |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -149,3 +149,6 @@ Die folgenden Steuerintegrationsfunktionen sind ebenfalls im Retail SDK verfügb
 Die folgenden älteren Funktionen für die steuerliche Integration, die im Retail SDK verfügbar sind, verwenden nicht das Framework für die steuerliche Integration und werden in späteren Updates nicht mehr unterstützt:
 
 - [Beispiel zur Integration der Kontrolleinheit für Schweden (veraltet)](./retail-sdk-control-unit-sample.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

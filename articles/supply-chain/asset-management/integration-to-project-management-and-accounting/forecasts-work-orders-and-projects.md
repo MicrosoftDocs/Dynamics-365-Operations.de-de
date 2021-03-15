@@ -100,3 +100,6 @@ Die folgende Abbildung zeigt einen grafischen Überblick der verschiedenen Proje
 
 ![Abbildung 6](media/06-integration-to-pma.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

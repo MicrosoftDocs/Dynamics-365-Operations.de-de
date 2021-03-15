@@ -72,3 +72,6 @@ Wenn Sie Zykluszählungspläne verwenden, um Inventurarbeit zu erstellen, könne
 14. Klicken Sie auf "OK".
 15. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

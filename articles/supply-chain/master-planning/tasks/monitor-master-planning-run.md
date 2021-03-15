@@ -126,3 +126,6 @@ Die Farbe wird im Gantt-Diagramm nur auf der untersten Ebene angezeigt. Wählen 
 1. Wählen Sie im Raster die Zeile aus, in der das Feld **Feld** auf **Artikelnummer** gesetzt ist.
 1. Geben Sie im Feld **Kriterien** einen Wert ein.
 1. Wählen Sie **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

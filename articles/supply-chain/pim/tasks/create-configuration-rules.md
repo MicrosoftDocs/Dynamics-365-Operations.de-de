@@ -54,3 +54,6 @@ Diese Prozedur erstellt Konfigurationsregeln, die für eine dimensionsbasierte K
     * Die Artikelnummer, die abhängig von der gewählten Methode ausgewählt oder gelöscht werden soll.  
 18. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

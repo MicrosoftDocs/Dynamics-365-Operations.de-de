@@ -77,3 +77,6 @@ Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgende
 - Alle geplanten und freigegebenen regulatorischen Updates finden Sie unter [Lifecycle Service - Problemsuche](https://lcs.dynamics.com/Logon/Index) (Anmeldung erforderlich).
 - Eine Liste der Lokalisierungen, die unterstützt werden, finden Sie unter [Internationaler Verfügbarkeitsleitfaden](https://aka.ms/dynamics_365_international_availability_deck).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

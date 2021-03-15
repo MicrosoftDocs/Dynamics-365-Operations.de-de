@@ -353,3 +353,6 @@ Die folgenden Szenarien veranschaulichen, wie Sie die Versandkonsolidierungsrich
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Lieferungskonsolidierungsrichtlinien](about-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

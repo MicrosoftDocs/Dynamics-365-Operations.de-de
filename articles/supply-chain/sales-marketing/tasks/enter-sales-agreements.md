@@ -56,3 +56,6 @@ Dieses Thema erklärt, wie Sie einen Kaufvertrag erstellen, der einen Debitor ve
 11. Wählen Sie **OK**.
 12. Schließen Sie die Seite. Die Vereinbarung ist jetzt wirksam. Sie können jetzt Kundenaufträge mit der Vereinbarung verknüpfen, um diese dem Zusageziel zuzurechnen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

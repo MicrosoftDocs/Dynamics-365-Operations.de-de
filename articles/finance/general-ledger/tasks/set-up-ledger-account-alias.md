@@ -40,3 +40,6 @@ Das folgende Verfahren zeigt die Erstellung eines Kontoalias als Kürzel zur Ein
 9. Wählen Sie im Feld "Anfänglicher Fokus" die Dimension aus, die den Fokus hat, wenn der Alias verwendet wird.
     * Um nachdem Sie das Tastenkürzel verwendet haben, werden das Konto und die Dimensionen aufgefüllt. Der Cursor oder der Fokus wird zum Feld "Anfänglicher Fokus" verschoben.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

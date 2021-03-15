@@ -150,3 +150,6 @@ Dieses Inforegister zeigt die Auswirkungen auf die ausgewählte Lieferungsaltern
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Lieferterminzusage](delivery-dates-available-promise-calculations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

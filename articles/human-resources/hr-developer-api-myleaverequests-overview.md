@@ -64,3 +64,5 @@ Die MyLeaveRequests-Entität in Microsoft Dynamics 365 Human Resources stellt di
 
 - [Urlaubsanforderung an Workflow übermitteln](hr-developer-api-myleaverequests-submit.md)
 - [Authentifizierung](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

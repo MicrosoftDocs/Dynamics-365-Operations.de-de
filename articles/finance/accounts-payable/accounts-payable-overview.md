@@ -147,3 +147,6 @@ Die Seiten für zusätzliche Einstellungen sind nach Funktionen geordnet.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Führen Sie die folgenden Schritte aus, um innerhalb der unveränderlichen Perio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

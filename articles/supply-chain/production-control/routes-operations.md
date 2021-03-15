@@ -259,3 +259,6 @@ Wenn für Aktivierung für das Überschneiden ausgewählt wird, hat der Rest Ein
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

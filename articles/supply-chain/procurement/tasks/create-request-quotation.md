@@ -80,3 +80,6 @@ Nachdem Sie die grundlegenden Informationen zu Ihrer Angebotsanforderung angegeb
 4. Schließen Sie die Seite.
 5. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

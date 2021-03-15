@@ -48,3 +48,6 @@ Dieser Aufgabenleitfaden führt Sie durch die Generierung von Sachkontoabgrenzun
 17. Klicken Sie auf "OK".
 18. Klicken Sie auf "Buchen".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

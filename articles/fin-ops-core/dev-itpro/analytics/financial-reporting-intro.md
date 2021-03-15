@@ -96,3 +96,6 @@ Die folgenden Komponenten der Finanzberichterstellung erleichtern das Erstellen,
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 [Finanzberichte generieren](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

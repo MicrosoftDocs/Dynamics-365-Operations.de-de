@@ -131,3 +131,6 @@ Sie können eine Rechnung mit einem negativen Betrag erstellen; die dann eine al
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

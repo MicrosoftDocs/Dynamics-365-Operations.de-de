@@ -47,3 +47,6 @@ Die **Anlagentransaktion**-Seite zeigt die Transaktionen, die die Mietanlage und
 Um die Mietausgabentransaktionen anzuzeigen, wählen Sie einen Mietvertrag auf der **Mietvertragsübersicht**-Seite und dann **Bücher** aus, um die Leasingbücher zu öffnen, die dem Mietvertragsdatensatz zugewiesen sind. Wählen Sie dann **Ausgabentransaktionen** aus.
 
 Die **Ausgabentransaktionen**-Seite werden alle Ausgaben angezeigt, die auf den Mietvertrag gebucht wurden, z. B. Zinsaufwendungen, Abschreibungsaufwendungen und etwaige Nebenkosten beim Leasing.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

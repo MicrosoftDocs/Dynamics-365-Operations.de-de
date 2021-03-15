@@ -69,3 +69,6 @@ Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen D
     - Die Aktion **Deaktivieren und übermitteln** kann nur verwendet werden, wenn Sie Callsenterfunktionen verwenden.  
 8. Klicken Sie auf **Sperren aufhaben**. Die Sperre ist nun aus dem Auftrag deaktiviert worden und aus der Liste von aktiver Sperren entfernt worden. Um alle Sperren oder ihre Teilmengen nach einem spezifischen Status anzuzeigen, ändern Sie den Wert im Feld „Anzeigen”.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

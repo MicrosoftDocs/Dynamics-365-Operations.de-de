@@ -58,3 +58,6 @@ Es wird ein Planfilter eingerichtet, der die Positionen A, B und C enthält. Die
 [Planhistorie und Planungsprotokolle anzeigen](plan-history-logs.md)
 
 [Abbrechen eines Planungsauftrags](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

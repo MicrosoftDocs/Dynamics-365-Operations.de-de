@@ -83,3 +83,6 @@ Für Planungsszenarien inklusive Produktion empfehlen wir, gefilterte Masterplan
 Obwohl abhängige untergeordnete Artikel automatisch erkannt und in Masterplanungsläufe einbezogen werden, wenn das integrierte Masterplanungsmodul verwendet wird, führt die Planungsoptimierung diese Aktion nicht aus.
 
 Wenn beispielsweise eine einzelne Schraube aus der Stücklistenstruktur von Produkt A auch zur Herstellung von Produkt B verwendet wird, müssen alle Produkte in der Stücklistenstruktur der Produkte A und B in den Filter aufgenommen werden. Da es sehr komplex sein kann, sicherzustellen, dass alle Produkte Teil des Filters sind, empfehlen wir, gefilterte Masterplanungsläufe zu vermeiden, wenn Produktionsaufträge betroffen sind.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

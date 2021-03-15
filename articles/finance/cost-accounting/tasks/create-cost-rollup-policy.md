@@ -67,3 +67,6 @@ Dieses Verfahren zeigt, wie eine Rollup-Kostenrichtlinie und Regeln für die Ric
     * Fahren Sie fort, bis alle Kostenstellen den entsprechenden sekundären Kostenfaktoren zugeordnet sind.  
 16. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -184,3 +184,6 @@ Die meisten Felder auf Änderungsaufträgen sind die gleichen wie die Felder fü
 | Umwelt- und Arbeitsschutz | Geben Sie an, ob Umwelt- und Sicherheitsvorschriften auf die Änderung anwendbar sind. Wenn dies der Fall ist, können Sie die anwendbaren Regeln auswählen. |
 
 Mit der Schaltfläche **Änderungsinformationen beibehalten/kopieren** können Sie Änderungsinformationen zwischen betroffenen Produkten kopieren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ Legen Sie für jeden Regelsatz das folgende Feld fest:
 - **Schweregrad** - Wählen Sie den Schweregrad, für den Regeln aufgestellt werden sollen. Sie verwenden die Seite **Schweregrade ändern**, um die Stufen zu erstellen und zu benennen. (Weitere Informationen finden Sie im vorherigen Abschnitt.)
 
 Verwenden Sie die Schaltflächen auf dem Inforegister **Regeln**, um eine Regel für die aktuelle Schweregrad-Einstellung hinzuzufügen oder zu entfernen. Jede Regel hat ein Feld **Regel** und ein Feld **Name**. Die Regeln werden vom System festgelegt und geben die Arten von Änderungen an, die ein Produkt haben kann. Der Name gibt die Art der Änderung an.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

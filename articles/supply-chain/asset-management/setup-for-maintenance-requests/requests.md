@@ -41,3 +41,6 @@ Sie können unterschiedliche Arten von Anfragen einrichten, in Ihrem Unternehmen
 Die folgende Abbildung zeigt ein Beispiel der Listenseite **Alle Wartungsanfragen**.
 
 ![Listenseite „Alle Wartungsanfragen“](media/01-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

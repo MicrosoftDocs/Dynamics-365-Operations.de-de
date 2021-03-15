@@ -39,3 +39,6 @@ Diese Prozedur zeigt, wie Gründe für eine hohe Produktionsabweichung für eine
 6. Klicken Sie auf "Kostenvergleich anzeigen".
 7. Klicken Sie auf "Schließen".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

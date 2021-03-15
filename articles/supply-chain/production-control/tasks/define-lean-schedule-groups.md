@@ -55,3 +55,6 @@ Lean Schedule-Gruppen werden zur Gruppierung von Einzelprodukten in der Kanban-P
 3. Klicken Sie im Feld "Artikelzuteilungsschlüssel" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
 4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Verwenden Sie die **Exportieren**-Seite (**Systemverwaltung \> Arbeitsbereiche \
 5. Wählen Sie zum Ausführen des Exports **OK** aus.
 
 Nach Abschluss des Exports erhalten Sie eine Meldung mit der Anzahl der in den einzelnen Dateien gespeicherten Datensätze. Sie können die Dateien dann in die konsolidierte juristische Person importieren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

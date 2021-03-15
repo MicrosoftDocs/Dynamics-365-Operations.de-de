@@ -45,3 +45,6 @@ Wenn Sie Freiwillige oder andere Nicht-Mitarbeiter haben, möchten Sie mögliche
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Mitarbeiter- und Manager-Self-Service-Übersicht](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

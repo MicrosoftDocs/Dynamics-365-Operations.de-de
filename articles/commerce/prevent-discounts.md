@@ -40,3 +40,6 @@ Die folgenden Optionen, die auf der Registerkarte **Commerce** aus freigegebenen
 > Hinweis: Diese Einstellungen schränken nicht den Preisüberschreibungsarbeitsgang ein, da dieses den Basispreis festlegt und Rabatt nicht behandelt werden. .
 
 [![Rabattfeld verhindern](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

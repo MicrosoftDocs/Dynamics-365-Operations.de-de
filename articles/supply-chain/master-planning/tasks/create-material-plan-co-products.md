@@ -110,3 +110,6 @@ Der Produktionsplaner plant den Materialbedarf für Artikel, die Co-Produkte der
 19. Wählen Sie im Feld "Alle Planungsprozessfelder deaktivieren" Nein aus.
 20. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

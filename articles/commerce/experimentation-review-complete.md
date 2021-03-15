@@ -60,3 +60,6 @@ Um Ihre Experimentvariationen im Commerce Site Builder zu löschen, folgen Sie d
 
 ## <a name="previous-step"></a>Vorheriger Schritt
 [Experiment durchführen und überwachen](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

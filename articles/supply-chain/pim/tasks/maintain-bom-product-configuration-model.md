@@ -57,3 +57,6 @@ Die Ausführung dieser Prozedur erfordert ein vorhandenes Produktkonfigurationsm
     * Überprüfen Sie, ob vorhandene Produktdimensionen aktiv sind und daher ein Wert oder ein Attribut zugewiesen sein muss..  
 9. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

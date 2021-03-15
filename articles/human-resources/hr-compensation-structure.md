@@ -113,3 +113,6 @@ Sie können einem Mitarbeiter erst dann einen festen Vergütungsplan zuordnen, w
 
 8. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

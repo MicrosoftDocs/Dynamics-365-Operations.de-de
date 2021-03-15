@@ -113,3 +113,6 @@ Es wird empfohlen, diese Batchaufträge nicht zu häufig (alle paar Minuten) aus
 > Wenn die kanalseitige Bestandsverfügbarkeitsberechnung verwendet wird, um eine Bestandsverfügbarkeitsanforderung mit Hilfe der E-Commerce-APIs oder der neuen kanalseitigen POS-Bestandslogik zu stellen, verwendet die Berechnung aus Leistungsgründen einen Cache, um festzustellen, ob genügend Zeit verstrichen ist, um die erneute Ausführung der Berechnungslogik zu rechtfertigen. Der Standard-Cache ist auf 60 Sekunden eingestellt. Sie haben beispielsweise die kanalseitige Berechnung für Ihr Geschäft aktiviert und den verfügbaren Bestand für ein Produkt auf der Seite **Bestandssuche** angezeigt. Wenn dann eine Einheit des Produkts verkauft wird, zeigt die Seite **Bestandsabfrage** den reduzierten Bestand erst dann an, wenn der Cache geleert wurde. Nachdem Benutzer Transaktionen in POS gebucht haben, sollten sie 60 Sekunden warten, bevor sie überprüfen, ob der verfügbare Bestand reduziert wurde.
 
 Wenn Ihr Geschäftsszenario eine geringere Cache-Zeit erfordert, wenden Sie sich an Ihren Produktsupportvertreter, um Hilfe zu erhalten.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

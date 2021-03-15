@@ -63,3 +63,6 @@ Sie können eigene Attributtypen erstellen. Darüber hinaus können Sie Produktd
 9. Speichern Sie den Datensatz.
 
     Das Feld **Funktionale Standorttypen** zeigt die Anzahl der funktionalen Standorte an, die den Attributtyp verwenden. Das Feld **Anlagentypen** zeigt die Anzahl von Anlagentypen an, die ihn verwenden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

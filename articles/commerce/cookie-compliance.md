@@ -72,3 +72,6 @@ Wenn eine E-Commerce-Website-Funktion oder ein E-Commerce-Website-Modul ein nich
 [Cookie-Zustimmungsmodul](cookie-consent-module.md) 
  
 [Kopfzeilenmodul](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

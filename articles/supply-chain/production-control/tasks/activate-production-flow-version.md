@@ -40,3 +40,6 @@ Bevor Kanban-Einzelvorgänge erstellt werden können und Aktivitäten für eine 
 5. Klicken Sie auf Aktivieren.
 6. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

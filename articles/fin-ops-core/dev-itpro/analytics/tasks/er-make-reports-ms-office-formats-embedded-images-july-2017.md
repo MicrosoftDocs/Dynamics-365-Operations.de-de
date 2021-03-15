@@ -90,3 +90,6 @@ Um dies Schritte in dieser Prozedur auszuführen, müssen Sie zuerst die Prozedu
  30. Wählen Sie „Ja” im Feld „Erstellung von Testtransaktionen für inaktive Bankkonten zulassen:” aus.  
  31. Klicken Sie auf "Speichern".  
  32. Schließen Sie die Seite.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

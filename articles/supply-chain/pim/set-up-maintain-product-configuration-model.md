@@ -52,3 +52,6 @@ Dieser Artikel beschreibt die Schritte zum Einrichten und Erstellen eines Produk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

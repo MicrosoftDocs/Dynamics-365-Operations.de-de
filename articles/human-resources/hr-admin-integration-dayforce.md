@@ -676,3 +676,6 @@ Mitarbeiter können Ausweisinformationen melden. Diese Informationen haben den K
 
 Mitarbeiter können mehrere Kennungsnummern des Kennungstyps **Ausweis** melden. Jedoch wird nur der aktuell aktive Ausweiseintrag in Dayforce integriert. Wenn alle Ausweiseinträge abgelaufen sind, ist der Ausweis, der zuletzt ausgestellt wurde, in Dayforce integriert.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

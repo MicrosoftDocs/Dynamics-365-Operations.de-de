@@ -39,3 +39,6 @@ Die Konfiguration **Anzeige älterer Chargen im Lager** ist in Menüeinträgen f
 
 - Unter **Lagerverwaltung** > **Einrichtung** > **Mobiles Gerät** > **Menüeinträge mobiles Gerät** setzen Sie **Vorhandene Arbeit verwenden** für den Menüeintrag auf **Ja** und wählen dann **Warnung** im Feld **Älteste Charge auswählen**. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -165,3 +165,6 @@ Gehen Sie zum Einrichten von Kreditorenfiltercodes folgendermaßen vor.
 ## <a name="see-also"></a>Siehe auch
 
 [Weitere Informationen finden Sie im Blogbeitrag zu Filtercodes für WMS-aktivierte Lagerorte](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

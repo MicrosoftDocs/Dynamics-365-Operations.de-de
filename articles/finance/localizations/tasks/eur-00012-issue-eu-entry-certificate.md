@@ -86,3 +86,6 @@ Diese Prozedur läuft Sie durch das Aktivieren einer EU-Eintragsbescheinigung na
 4. Klicken Sie im Aktivitätsbereich auf "Rechnung".
 5. Ausgestellte Gelangensbestätigungen anzeigen
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

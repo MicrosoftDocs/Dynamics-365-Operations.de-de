@@ -50,3 +50,6 @@ Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 16. Wählen Sie **Neues Periodenintervall**. Sobald das erste Periodenintervall eingegeben wurde, können neue Perioden automatisch erstellt werden. Sie können nach Bedarf zurückkehren und neue Periodenintervalle hinzufügen.  
 17. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

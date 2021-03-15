@@ -133,3 +133,6 @@ In diesem Prozess erstellen Sie eine Lieferung basierend auf der Artikeldimensio
 1. Öffnen Sie das Mobilgerät, melden Sie sich bei Warehouse 63 an und wechseln Sie zu **Bestand \> Anpassen in**.
 1. Geben Sie **Loc** = *SHORT-01*. Erstellen Sie ein neues Kennzeichen mit **Artikel** = *A0001* und **Menge** = *1 Stk.*.
 1. Wählen Sie **OK**. Die Fehlermeldung „Lagerplatz SHORT-01 ist fehlgeschlagen, da Artikel A0001 nicht zu den für den Lagerplatz angegebenen Dimensionen passt.“ wird angezeigt. Das liegt daran, dass die Dimensionen der Art *Lagerung* des Produkts größer sind als die im Lagerplatzprofil angegebenen Dimensionen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

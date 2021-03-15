@@ -598,3 +598,6 @@ Wenn die Arbeitskraft nicht zur Arbeit kommt an einen Arbeitstag und keine gepla
 - Automatisches Einfügen von Abwesenheit
 
 Wenn die täglichen Erfassungen für eine Arbeitskraft berechnet werden, die für Gleitzeiten aktiviert ist, wird der Abwesenheitscode, der im Feld **Automatische Einfügung von Gleitzeit-** angegeben ist, als Standardabwesenheitscode verwendet. Wenn die Arbeitskraft nicht für Gleitzeiten aktiviert ist, wird der Abwesenheitscode, der im Feld **Automatische Einfügungsabwesenheit** angegeben ist, verwendet. Wenn ein Unternehmen einer Kombination von Arbeitskräften hat, die für Gleitzeiten und Arbeitskräfte aktiviert werden, die nicht für Gleitzeiten aktiviert sind, müssen beide Parameter eingerichtet werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

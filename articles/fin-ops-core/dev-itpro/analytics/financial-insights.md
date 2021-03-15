@@ -248,3 +248,6 @@ Die Informationen in den folgenden Ressourcen sind nicht erforderlich, um die ei
 - [Zugriff auf analytische Arbeitsbereiche und Berichte in einer Umgebungen mit einem Feld](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
 - [Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

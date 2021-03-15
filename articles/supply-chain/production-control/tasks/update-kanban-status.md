@@ -47,3 +47,6 @@ Wenn ein Kanban versehentlich geleert wird, oder ein empfangener Kanban geleert 
 2. Markieren Sie in der Liste die ausgewählte Zeile.
     * Beachten Sie, dass die "Handhabungseinheit" den Status "Geleert" hat.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

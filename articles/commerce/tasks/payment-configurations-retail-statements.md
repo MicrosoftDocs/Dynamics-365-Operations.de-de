@@ -52,3 +52,6 @@ Für diese Erfassung wird das Demo-Unternehmen USRT verwendet.
     * Wählen Sie das Konto zum Buchen von Ablage im Tresor-Beträgen aus.  
 8. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

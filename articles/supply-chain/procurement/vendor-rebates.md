@@ -166,3 +166,6 @@ Der Prozess für die Bearbeitung von Kreditorenrückvergütungen beinhaltet mehr
 - Generieren von genauen Rückvergütungsansprüchen
 - Die erwarteten Forderungen und Zwischengewinne im Hauptbuch antizipieren
 - Den Kreditorensaldo und die Gewinn- & Verlustrechnung mit der fälligen Vergütung aktualisieren
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

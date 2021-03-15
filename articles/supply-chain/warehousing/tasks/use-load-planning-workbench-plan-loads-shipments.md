@@ -60,3 +60,6 @@ In diesem Thema wird gezeigt, wie die Ladungsplanungsworkbench verwendet wird, u
 5. Wählen Sie **Zuweisen** aus.
 6. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

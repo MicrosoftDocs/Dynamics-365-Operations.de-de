@@ -96,3 +96,6 @@ Jedes Feld hat Auswirkungen auf eine andere Buchung, wenn Sie sie bearbeiten:
 - **Bearbeiten Sie die Skontobedingungen** - Die Skonti werden basierend auf dem Grunddatum und den Skontobedingungen geändert.
 
 Um die Bearbeitung der Zahlungseinstellungen abzuschließen wählen Sie **Schließen**, um die Änderungen zu speichern.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

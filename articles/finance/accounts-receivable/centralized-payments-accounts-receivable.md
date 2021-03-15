@@ -295,3 +295,6 @@ Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (North
 | Debitoren (Fabrikam West)    |              | 75,00         |
 | Fällig von Fabrikam Ost (Fabrikam West) | 25,00        |               |
 | Debitoren (Fabrikam West)    |              | 25,00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

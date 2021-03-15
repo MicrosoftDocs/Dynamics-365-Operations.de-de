@@ -56,3 +56,6 @@ Weitere Informationen zu den einzelnen Schritten des Experimentierprozesses find
 
 ## <a name="next-step"></a>Nächster Schritt
 [Eine Hypothese identifizieren und Erfolgsmetriken für ein Experiment bestimmen](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

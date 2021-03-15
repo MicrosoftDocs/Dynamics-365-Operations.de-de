@@ -66,3 +66,6 @@ Für die Implementierung des Lean Manufacturing haben wir den Produktionsfluss u
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -169,3 +169,6 @@ Arbeitskräfte können ein Dokument öffnen, das an einen Einzelvorgang angehän
 1. Die Arbeitskraft arbeitet die Anleitung durch, um die Aufgabe zu lernen.
 
 Weitere Informationen zum Erstellen, Zuweisen und Verwenden von Anleitungen für HoloLens, finden Sie unter [Bereitstellung von Mixed Reality-Leitfäden für Arbeitskräfte in der Produktion](instruction-guides-in-production-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

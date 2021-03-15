@@ -130,3 +130,6 @@ Ihr neuer Azure AD B2C-Mandanten sollte nun in der Liste unter **B2C-Anwendungen
 [Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)](add-cdn-support.md)
 
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Für diese Erfassung wird das Demo-Unternehmen USMF verwendet. Die Kreditorenlei
 24. Schließen Sie die Seite.
 25. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Sie müssen eine neue Menüoption mit Modusarbeit erstellen, die keine vorhanden
 - Empfang und Einlagerung gemischter Kennzeichen
 
 Die Optionen zum Identifizieren der Quelldokumentpositionen sind Bestellungsartikel, Bestellpositionen, Rücklieferungen, Umlagerungsaufträge und Umlagerungsauftragspositionen. Diese Optionen können den eingehenden Auftrag für einen einzelnen Ladungsträger ändern. Die letzte Option ist per Ladungsartikel. Sie können mehrere Artikel zu einem Ladungsträger hinzufügen, können aber nicht zwischen Ladungen wechseln.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

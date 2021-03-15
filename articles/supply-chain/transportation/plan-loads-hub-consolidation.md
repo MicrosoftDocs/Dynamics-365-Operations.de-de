@@ -38,3 +38,6 @@ Bevor Sie die Hub-Konsolidierung verwenden können, müssen Sie die Option **In 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

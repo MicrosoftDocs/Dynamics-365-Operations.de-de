@@ -51,3 +51,6 @@ In dieser Prozedur erstellen Sie einen Arbeitszeitnachweis, indem Sie ein leeres
 21. Klicken Sie auf **Absenden**.
 22. Klicken Sie auf **Absenden**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

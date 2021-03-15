@@ -40,3 +40,6 @@ Weitere Informationen über diese Funktion erhalten Sie bei Wiedergabe des ER-Sa
 - [ER-Datenmodellkonfiguration: Intrastat (Model)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [Er-Modellzuordnungskonfiguration: Intrastat (Zuordnung)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER-Formatkonfiguration: Intrastat (format)](https://go.microsoft.com/fwlink/?linkid=849038)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

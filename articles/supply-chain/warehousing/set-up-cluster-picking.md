@@ -79,3 +79,6 @@ Wann die Clusterentnahme angewendet wird, ist die Artikelbestätigung wichtig, u
 1. Öffnen Sie über ein Menüelement des mobilen Geräts das Einstellungsformular für Arbeitsbestätigung: **Lagerortverwaltung** \> **Lagerortverwaltung** \> **Einstellungen** \> **Mobiles Gerät** \> **Menüelemente des mobilen Geräts**.
 
 1. Öffnen Sie über das Menüelement des mobilen Geräts die Option **Einrichtung Arbeitsbestätigung**. Die **Produktbestätigung** ermöglicht Ihnen, beim Scannen jeden Inventurartikel über das mobile Gerät zu bestätigen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

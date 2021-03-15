@@ -61,3 +61,6 @@ In diesem Beispiel wird eine Anlagenfehler-Kostenkontrollberechnung angezeigt.
     ![Abbildung 1](media/05-controlling-and-reporting.png)
 
 Informationen zum Einrichten von Fehlern finden Sie im Thema [Fehlermanagement](../setup-for-work-orders/fault-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Bestandsmengen können entweder geplant oder ungeplant sein. Geplante Bestandsz�
 ## <a name="inventory-lookup"></a>Bestandssuche
 
 Die aktuell vorrätige Produktmenge für Mehrfachshops und Lagerorte kann auf der **Bestandssuchen**-Seite angezeigt werden. Neben der aktuellen verfügbaren Menge können auch künftige Verfügbarkeitszusagen-Mengen (ATP) für jede einzelne Filiale angezeigt werden. Wählen Sie die Filiale aus, für die die VfZ-Mengen angezeigt werden soll, und wählen Sie dann **Verfügbarkeit in Filiale anzeigen** aus. Informationen zu den verfügbaren Konfigurationsoptionen finden Sie unter [Berechnen der Bestandsverfügbarkeit für Einzelhandelskanäle ](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

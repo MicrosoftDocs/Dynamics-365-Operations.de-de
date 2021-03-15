@@ -98,3 +98,6 @@ Die folgende Abbildung zeigt das Kontrollkästchen **Link für „Produkte mit �
 [Manuell kuratierte Empfehlungen erstellen](create-editorial-recommendation-lists.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -145,3 +145,6 @@ Führen Sie die folgenden Schritte aus, um das Filialauswahlmodul so zu konfigur
 [Bing Maps-REST-APIs](https://docs.microsoft.com/bingmaps/rest-services/)
 
 [Kartenmodul](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

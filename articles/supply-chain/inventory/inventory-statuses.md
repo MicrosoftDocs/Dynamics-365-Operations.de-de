@@ -64,3 +64,6 @@ Sie können Bestandsstatus entweder über die Seite **Bestand nach Lagerplatz** 
 > - Auf der Seite **Bestand nach Lagerplatz** können Sie mit der Schaltfläche **Dimensionen anzeigen** Zeilen auf Basis der angezeigten Dimensionen gruppieren und den Status für die ausgewählten Zeilen ändern.
 > - Auf der Seite **Bestand nach Lagerplatz** können Sie mehrere Datensätze auswählen und dann die Schaltfläche **Status des Bestands ändern** verwenden, um alle auf einmal zu ändern.
 > - Auf der Seite **Bestandsstatus ändern** können Sie nach Dimensionen der Verfolgung filtern.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

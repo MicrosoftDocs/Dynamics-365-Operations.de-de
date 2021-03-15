@@ -70,3 +70,6 @@ Beachten Sie den Debitor und die Artikelnummern, die Sie für den Provisionsproz
 3. Schließen Sie die Seite.
 4. Wählen Sie **Beleg**. Sie können die Belegbuchungen für die Provisionsbeträge, die für die vordefinierten Provisionsausgaben gebucht werden, anzeigen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

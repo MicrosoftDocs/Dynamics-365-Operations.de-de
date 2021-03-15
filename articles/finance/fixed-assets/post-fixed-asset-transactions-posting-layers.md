@@ -48,3 +48,6 @@ Weitere Informationen finden Sie unter [Abgeleitete Bücher](derived-books.md) u
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

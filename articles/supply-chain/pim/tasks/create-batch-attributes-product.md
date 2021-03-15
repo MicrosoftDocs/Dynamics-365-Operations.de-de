@@ -54,3 +54,6 @@ Im folgenden Verfahren wird dargestellt, wie ein Stapelverarbeitungsattribut ers
 22. Klicken Sie auf "Speichern".
 23. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

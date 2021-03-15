@@ -332,3 +332,6 @@ Die Einstellungen für die Zugriffslistenhierarchie werden verwendet, um die Dat
 > [!NOTE] 
 > - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Zeilenebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Die Zugriffslistenhierarchie hilft nicht bei der Sicherheit des Exports der Daten in Excel. Daher sollte dieses Berichtstool nur von Kostenbuchhaltern und Managern verwendet werden, die vollen Zugriff zum Anzeigen der Daten haben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

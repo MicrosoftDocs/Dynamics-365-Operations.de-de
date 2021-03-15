@@ -40,3 +40,6 @@ Dieses Verfahren zeigt, wie Sie den Steuerabstimmungsbericht generiert, der für
 6. Wählen Sie "Ja" im Feld "Details anzeigen" aus.
 7. Klicken Sie auf "OK".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

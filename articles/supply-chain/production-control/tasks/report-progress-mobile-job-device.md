@@ -64,3 +64,6 @@ Damit Sie dieses Verfahren ausführen können, muss die Rolle Systemadministator
 29. Klicken Sie auf "OK".
 30. Wählen Sie eine Ursache für das frühzeitige Ausstempeln.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

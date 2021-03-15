@@ -142,3 +142,6 @@ Bezüglich des Deckungsgruppenkalenders ist zu beachten, dass dieses in der Mast
 
 ### <a name="updating-scm-related-calendars"></a>Aktualisierung von SCM-bezogenen Kalendern
 Es ist zwar wichtig, dass alle relevanten Kalender an ihrem jeweiligen Ort (Lieferant, Kunde, Lager, Lieferart oder Deckungsgruppe) zugeordnet sind, aber die Aktualisierung ist ebenso wichtig, damit sie die Änderungen berücksichtigen. Das System definiert die Produktions-, Transfer-, Einkaufs- und Kundenauftragsdaten abhängig von der Kombination der zugeordneten Kalender. Es ist eine bewährte Vorgehensweise, um zu klären, wer für die Zuordnung und Aktualisierung der Kalender in den entsprechenden Bereichen verantwortlich ist. Im Falle einer Panne oder einer anderen ungewöhnlichen Änderung der Arbeitstage ist es unerlässlich, die Kalender entsprechend zu aktualisieren. Alle kalenderabhängigen Aufgaben, wie z.B. die Masterplanung und Produktionsplanung, müssen bei der Aktualisierung von Kalendern erneut ausgeführt werden. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

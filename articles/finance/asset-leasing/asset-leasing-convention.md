@@ -50,3 +50,6 @@ Führen Sie die folgenden Schritte aus, um die Leasingkonvention anzuzeigen oder
 3. Wählen Sie **Speichern** aus.
 
 Wenn ein Mietvertrag erstellt wird, wird das Anfangsdatum jedes Buches automatisch basierend auf dem für den Mietvertrag eingegebenen Startdatum und der für das Buch angegebenen Leasingkonvention eingegeben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

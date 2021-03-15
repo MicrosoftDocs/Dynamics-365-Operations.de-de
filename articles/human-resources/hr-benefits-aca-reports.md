@@ -87,3 +87,6 @@ Wenn Sie versicherte Personen melden müssen, weil Sie selbstversicherten Versic
 
 > [!NOTE]
 > Nur Vorteilspläne, die als **ACA-meldepflichtig** gekennzeichnet sind, werden im Anfragefenster angezeigt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Verwenden Sie diese Prozedur, um die Historie eines RFM-Analysedatendsatzes anzu
 2. Wählen Sie auf der Seite **RFM-Analyse** den anzuzeigenden Datensatz aus.
 3. Um die Historie des Datensatzes anzuzeigen, wählen Sie das Inforegister **Historie**.
 4. Um die Historie des Datensatzes zu löschen, wählen Sie **Historie löschen** aus.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

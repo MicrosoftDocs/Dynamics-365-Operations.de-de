@@ -86,3 +86,6 @@ Im folgenden Szenario wird die Umlagerungsaktivität des Entnahme-Kanban für di
 
 Wenn ein Kanban am Lagerplatz für Produktions-Wareneingang verbraucht ist, wird der Kanban als leer erfasst und eine neuer Kanban wird zum Fluss hinzugefügt. Wenn der Kanban erstellt wird, wird eine Wellenposition zu einer Kanbanwelle hinzugefügt. Wenn die Kanbanwelle verarbeitet wird, wird Lagerortarbeit für die Kanban-Entnahme erstellt. Der Lagerarbeiter verarbeitet die Arbeit für die Kanban-Entnahme und wird angewiesen, das Material für den Kanban von einem Lagerort-Lagerplatz zu entnehmen. Wenn der Lagerarbeiter die Entnahme bestätigt hat, wird der Kanban automatisch abgeschlossen, und der Lagerarbeiter wird angewiesen, das Material im Lagerplatz für Produktions-Wareneingang einzulagern.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

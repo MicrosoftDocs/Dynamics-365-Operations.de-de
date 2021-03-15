@@ -56,3 +56,6 @@ Sie können auch einen Ursachencode einrichten, der dabei hilft zu erläutern, w
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

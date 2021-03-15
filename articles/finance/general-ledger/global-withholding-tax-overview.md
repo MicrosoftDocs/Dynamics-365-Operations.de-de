@@ -44,3 +44,6 @@ Die globale Quellensteuerfunktionalität wurde für Kreditoren- und Debitorenbuc
 
 > [!NOTE]
 > Die globale Quellensteuerfunktionalität kann nicht für Länder/Regionen aktiviert werden, in denen bereits lokalisierte Quellensteuerlösungen existieren. Diese Gebiete umfassen Indien, Brasilien, Thailand, Saudi-Arabien, Irland, Großbritannien und die Vereinigten Staaten, sind aber nicht auf diese beschränkt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

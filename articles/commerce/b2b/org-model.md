@@ -62,3 +62,6 @@ Benutzer der Commerce-Zentralverwaltung können die Eigenschaftswerte für alle 
 [Konfigurieren der Zahlungsmethode des Kundenkontos für B2B-E-Commerce-Websites](payment-method.md)
 
 [Festlegen von Produktmengenbeschränkungen für B2B-E-Commerce-Websites](quantity-limits.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

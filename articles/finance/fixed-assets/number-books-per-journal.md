@@ -49,3 +49,6 @@ Beispielsweise gibt es 5.001 Anlagen-IDs, jeder Anlagen-ID sind drei Bücher zug
 
 > [!Note] 
 > Wenn der **Abschreibung zusammenfassen**-Parameter aktiviert wird, wenn Sie einen Abschreibungsvorschlag erstellen, und dann hat der Wert im Feld **Anzahl der Bücher pro Erfassung – Abschreibungsvorschlag** keine Auswirkung. In diesem Fall beträgt die Anzahl der Bücher pro Erfassung 6000, was die intern definierte Grenze darstellt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

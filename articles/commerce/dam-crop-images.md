@@ -65,3 +65,6 @@ Nach Abschluss der benutzerdefinierten Beschneidung werden die Bildmodifikatione
 [Bildfokuspunkte anpassen](dam-custom-focal-point.md)
 
 [Statische Dateien hochladen und bedienen](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Zusätzliche Hilfe steht über Aufgabenhandbücher zur Verfügung. Um auf Aufgab
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

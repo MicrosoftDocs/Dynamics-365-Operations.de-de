@@ -54,3 +54,6 @@ Unter bestimmten Umständen empfehlen wir nicht, einen Data Mart zurückzusetzen
 > Die folgenden Punkte geben zwei Dinge an, die das Zurücksetzen eines Data Mart *nicht* bewirkt. <br>
 > - Berichtsentwürfe werden durch das Zurücksetzen nicht gelöscht. <br>
 > - Unternehmensdaten oder Benutzerdaten werden beim Zurücksetzen nicht gelöscht, sofern es nicht ausgewählt wurde.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

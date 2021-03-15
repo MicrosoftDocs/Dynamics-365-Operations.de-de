@@ -62,3 +62,6 @@ Wenn Sie die Lebenszyklusstatus erstellt haben, die für Ihre funktionalen Stand
 5. Wenn Sie alle verfügbaren Status für ein Modell auswählen möchten, klicken Sie auf die Schaltfläche ![Alle verfügbaren Phasen auswählen](media/03-setup-for-functional-locations.png). Alle Status werden in den Abschnitt **Ausgewählte Lebenszyklusstatus** übertragen.
 6. Wenn Sie einen ausgewählten Status aus dem Modell entfernen möchten, wählen Sie den Status im Abschnitt **Ausgewählte Lebenszyklusstatus** aus, und wählen Sie dann die Schaltfläche ![Zurück-Pfeil](media/04-setup-for-functional-locations.png) aus.
 7. Wählen Sie **Lebenszyklusstatusaktualisierungen**, um festzulegen, welche Lebenszyklusstatus einem ausgewählten Status folgen können.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

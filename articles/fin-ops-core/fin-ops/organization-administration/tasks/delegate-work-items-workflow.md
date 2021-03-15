@@ -60,3 +60,6 @@ Wenn Sie planen, für einen Zeitraum nicht im Büro anwesend oder anderweitig ni
 8. Geben Sie im Feld **Enddatum/-uhrzeit** ein Datum und eine Uhrzeit ein.
 9. Aktivieren Sie die Delegierungsregel durch Aktivieren des Kontrollkästchens **Aktiviert**. 
 10. Geben Sie in das Feld **Kommentar** einen Kommentar ein, der den Grund für die Delegierung der Arbeitsaufgaben erläutert.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ Auf Smartphones und anderen kleinen Bildschirmen passen sich die Steuerelemente 
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Empfehlungen, um Entwickler und Kunden zu helfen, Eingabehilfen in Ihre Anpassungen zu integrieren.
 
 Weitere Informationen zu Microsoft-Verfahren für das Aktivieren des Zugangs finden Sie unter [Eingabehilfen in Formularen, Produkten und Steuerungen](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

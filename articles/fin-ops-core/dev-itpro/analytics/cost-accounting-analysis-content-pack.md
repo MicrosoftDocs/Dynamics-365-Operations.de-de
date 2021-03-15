@@ -123,3 +123,6 @@ Die folgenden wichtigen Dimensionen werden als Filter verwendet, um die aggregie
 | Steuerkalender                   | Kalender, Beschreibung des Kalenders                                                                                       |
 | Geschäftsjahr                       | Kalenderjahr                                                                                                        |
 | Finanzzeiträume                     | Kalenderperioden                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

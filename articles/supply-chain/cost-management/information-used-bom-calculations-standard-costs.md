@@ -83,3 +83,6 @@ Beim Initiieren der Herstellkostenkalkulation können eine Reihe von Information
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

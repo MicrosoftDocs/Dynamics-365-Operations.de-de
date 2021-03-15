@@ -71,3 +71,6 @@ Dieses Thema führt Sie durch die Erstellung eines Kaufvertrags. Dadurch wird no
 5. Wählen Sie **Kaufvertragsbestätigungen** aus. Die Option **Vorschau anzeigen/Drucken** ermöglicht es Ihnen, ein Dokument für den Kaufvertrag zu generieren, den Sie an den Kreditor senden oder für diesen drucken können. Wenn Sie die Vereinbarung später aktualisieren und sie wieder-bestätigen, werden beide Versionen hier angezeigt.  
 6. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

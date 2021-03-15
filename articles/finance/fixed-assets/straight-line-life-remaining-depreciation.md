@@ -79,3 +79,6 @@ Der Abschreibungsbetrag ist derselbe jedes Jahr: (Anschaffungskosten – Restwer
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

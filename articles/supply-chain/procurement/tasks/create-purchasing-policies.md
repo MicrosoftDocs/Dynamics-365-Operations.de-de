@@ -56,3 +56,6 @@ In diesem Thema wird erläutert, wie Einkaufsrichtlinien so erstellt werden, das
 4. Wählen Sie **Schließen** aus.
 - Jetzt können Sie andere Richtlinienregeln für die Einkaufsrichtlinie haben. Beachten Sie, dass ein Richtlinienregeltyp keine sich überschneidenden Regeln haben kann, die gleichzeitig innerhalb einer einzelnen Beschaffungsrichtlinie aktiv sind.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

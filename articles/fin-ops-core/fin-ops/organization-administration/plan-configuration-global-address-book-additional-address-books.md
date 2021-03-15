@@ -57,3 +57,6 @@ Nachdem Sie das globale Adressbuch erstellt haben, können Sie, wenn nötig, zus
 **Entscheidung:**
 
 - Wie viele zusätzliche Adressbücher wollen Sie erstellen?
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

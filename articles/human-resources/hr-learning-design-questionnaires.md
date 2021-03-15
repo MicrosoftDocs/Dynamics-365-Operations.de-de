@@ -236,3 +236,5 @@ Um mithilfe bedingter Fragen eine Fragenhierarchie in einem Fragebogen zu erstel
 Eine juristische Person bietet seinen Kunden sowohl Artikel als auch Dienstleistungen an. Typischer Weise kaufen einige Kunden nur Artikel oder nur Dienstleistungen und manche beides. Wenn die juristische Person eine Umfrage zur Kundenzufriedenheit verteilt, kann mithilfe einer bedingten Struktur des Fragebogens verhindert werden, sodass Kunden, die nur Dienstleistungen kaufen, Fragen zu Artikeln beantworten müssen. 
 
 Alternativ können Sie einen Fragebogen z. B. so einrichten, dass Frage 2 die nächste Frage in der Folge ist, wenn ein Befragter die Antwort A für Frage 1 auswählt. Wenn der Befragte Antwort B für Frage 1 auswählt, dann könnte Frage 5 als nächstes folgen.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

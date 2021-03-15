@@ -162,3 +162,6 @@ Einige Datenentitäten wurden hinzugefügt, um eine rasche Implementierung der B
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

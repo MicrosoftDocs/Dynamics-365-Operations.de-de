@@ -106,3 +106,6 @@ Um eine URL zu einer anderen URL weiterzuleiten, folgen Sie diesen Schritten.
 [Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
 
 [Hinzufügen von Sprachen zu Ihrer Website](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

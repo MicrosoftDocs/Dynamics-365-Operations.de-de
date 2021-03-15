@@ -93,3 +93,6 @@ Sie können auch doppelte Stufen verwenden. Wenn Sie **Zweifache Stufe** für de
    | **Rauchersatz für Flexguthaben** | Die Höhe des Flexguthabens, den der Vorteil kostet, basierend auf der Berechnung, die für die Stufenebene für Raucher definiert wurde. |
 
 5. Wählen Sie **Speichern**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

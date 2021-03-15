@@ -87,3 +87,6 @@ Wenn Marketinginhalte für ein bestimmtes Produkt spezifisch sind, kann der PDP 
 [Übersicht der Kontenverwaltungsseiten](quick-tour-account-management.md)
 
 [Erweitern einer Produktdetailseite](enrich-product-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

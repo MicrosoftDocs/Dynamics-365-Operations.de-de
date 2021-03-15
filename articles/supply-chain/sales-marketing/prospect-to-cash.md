@@ -81,3 +81,6 @@ Um die Interessent zu Bargeld-Lösung zu nutzen, müssen Sie Folgendes installie
 
 - Dynamics 365 Sales-Version 1612 (8.2.1.207) (DB 8.2.1.207) online oder höher.
 - Interessent zu Bargeld-Lösung für Dynamics 365 Sales, Version 1.15.0.0 oder eine spätere Version. Die Lösung ist aus AppSource zum Download verfügbar. [Laden Sie Dynamics 365, Prospect to Cash herunter](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

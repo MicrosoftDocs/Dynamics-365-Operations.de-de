@@ -198,3 +198,6 @@ Wenn der Import erfolgreich ist, erhalten Sie eine Meldung, die besagt, dass das
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Gehen Sie folgendermaßen vor, um den BankTransactionType-Feld der zusammengeset
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

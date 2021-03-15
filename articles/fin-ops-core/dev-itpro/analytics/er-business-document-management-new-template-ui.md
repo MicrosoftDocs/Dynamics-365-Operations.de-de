@@ -64,3 +64,6 @@ Befolgen Sie diese Schritte, um diese Funktion für alle juristischen Personen z
 Die Schaltfläche **Neues Dokument** wird verwendet, um eine Vorlage in einer ER-Formatkonfiguration zu erstellen und zu bearbeiten, die von einem anderen Anbieter bereitgestellt wird. In diesem Beispiel ist der Anbieter Microsoft. Wenn Sie auf **Neues Dokument** klicken, sehen Sie alle Vorlagen, die sich im Besitz aktueller und anderer Anbieter befinden. Nachdem Sie die Vorlage ausgewählt haben, wird sie zur Bearbeitung geöffnet. Die bearbeitete Vorlage wird dann in einer neuen ER-Formatkonfiguration gespeichert, die automatisch generiert wird.
 
 Weitere Informationen finden Sie unter [Überblick über die Geschäftsdokumentverwaltung](er-business-document-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

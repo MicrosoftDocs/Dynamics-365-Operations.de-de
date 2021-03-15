@@ -96,3 +96,6 @@ Nachdem die benutzerdefinierte Seite veröffentlicht wurde, wird sie anstelle de
 [Überprüfen der Zugänglichkeit des Seiteninhalts](verify-accessibility.md)
 
 [Onlinekanalerweiterbarkeit](e-commerce-extensibility/overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Gehen Sie folgendermaßen vor, um ein Schnellansichtsmodul im Commerce-Website-G
 [Produktsammelmodul](product-collection-module-overview.md)
 
 [Suchergebnismodul](search-result-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

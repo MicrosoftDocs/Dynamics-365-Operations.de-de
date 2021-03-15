@@ -97,3 +97,6 @@ Sie können Rohmaterial für eine Teilmenge der Fertigartikel oder in einer best
     Die Einheiten, die zur Verfügung stehen, werden in der Einheitsnummernkreisgruppen-ID der Fertigartikel definiert.
 
     Ein Fertigartikel weist beispielsweise die folgende Einheitskonvertierung zwischen Kilogramm (kg) und Palette (PL) auf: 1 PL = 50 kg. Um einen Produktionsauftrag für 5.000 kg von Fertigkartikeln zu erstellen, können Sie Rohmaterialen für die Anzahl der Paletten freigeben, für die Sie die Fertigung planen. Wählen Sie **PL** als Einheit aus, und wählen Sie dann eine entsprechende Zahl im Feld **Menge** aus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

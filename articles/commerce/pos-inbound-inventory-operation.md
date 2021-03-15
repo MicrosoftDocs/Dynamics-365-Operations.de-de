@@ -220,3 +220,6 @@ Nachdem sich der Beleg im Status **Anforderung** befindet, ist er auf der Regist
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Bestandsaufnahme am Ausgang in POS](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

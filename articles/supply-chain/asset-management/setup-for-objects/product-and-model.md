@@ -59,3 +59,6 @@ In diesem Thema wird erläutert, wie Anlagenhersteller und zugehörige Modelle i
 2. Wählen Sie in der Spalte **Anlage** den Link für die Anlage aus. Die Seite **Details** wird angezeigt.
 3. Wählen Sie **Bearbeiten** aus.
 4. Wählen Sie auf dem Inforegister **Allgemein** Werte in den Feldern **Hersteller** und **Modell** aus.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

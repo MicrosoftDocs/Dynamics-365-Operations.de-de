@@ -56,3 +56,6 @@ Ziel dieser Prozedur ist die Prüfung der Bedarfsverursacherstruktur von einer V
 5. Wählen Sie in der Struktur "Verkaufsposition Kanban 000832 \ 000558 \ Problem für L0001 \ Kanban 000559 ".
     * Der Einzelvorgang für den zweiten Kanban wird auch geplant, da die gesamte Bedarfsverursacherstruktur geplant wird. Beachten Sie, dass sich der Kanban-Einzelvorgangsstatus von "Nicht geplant" nach "Geplant" geändert hat.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

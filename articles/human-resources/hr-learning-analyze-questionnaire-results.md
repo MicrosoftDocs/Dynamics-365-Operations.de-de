@@ -69,3 +69,6 @@ Die Fragebogenstatistiken können verwendet werden, um Durchschnitte, Summen und
 2. Klicken Sie auf "Ergebnis".
 3. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

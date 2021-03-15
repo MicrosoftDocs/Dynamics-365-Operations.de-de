@@ -39,3 +39,6 @@ Sie können den Status der Serviceaktivitäten im Formular **Einsatzplanung** an
 
 [Einsatzplanung (Formular)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

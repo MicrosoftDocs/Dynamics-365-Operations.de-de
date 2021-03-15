@@ -51,3 +51,6 @@ Dies ist der zweite von fünf Aufgaben, die das Verfahren für Kreditorenzahlung
 4. Geben Sie im Feld 'Bankkonto' einen Wert ein, oder wählen Sie einen Wert aus.
 5. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

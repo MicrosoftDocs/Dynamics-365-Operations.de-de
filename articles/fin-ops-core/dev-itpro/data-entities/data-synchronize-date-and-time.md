@@ -40,3 +40,6 @@ Diese doppelte Konvertierung führt dazu, dass sich die Datumsangaben zwischen d
 4. Ändern Sie die **Zeitzone** in **Koordinierte Weltzeit**, und ändern Sie **Sprache** in **En-US**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

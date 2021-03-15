@@ -100,3 +100,6 @@ Auf der Seite **Debitorenbuchungen** zeigt Arnie diese Transaktion an.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

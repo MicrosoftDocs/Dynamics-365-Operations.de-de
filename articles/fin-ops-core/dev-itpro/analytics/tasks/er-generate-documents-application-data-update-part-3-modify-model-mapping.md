@@ -168,3 +168,6 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
 66. Schließen Sie die Seite.
 67. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

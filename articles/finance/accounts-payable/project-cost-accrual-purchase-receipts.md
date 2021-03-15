@@ -82,3 +82,6 @@ Die Kreditorenrechnung wird zwar weiterhin im einem ausstehenden Status, wenn di
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

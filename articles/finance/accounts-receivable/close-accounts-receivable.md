@@ -61,3 +61,6 @@ Erstellen und Übermitteln der zusammenfassenden Meldung
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Vergütungsstrukturen werden zur Definition und Pflege der Vergütungsstrukturen
 29. Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.
 30. Klicken Sie auf "Auf Raster anwenden".
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

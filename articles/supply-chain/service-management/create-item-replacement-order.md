@@ -67,3 +67,6 @@ Aufträge für die Ersetzung von Artikeln werden normalerweise nach der Rückgab
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

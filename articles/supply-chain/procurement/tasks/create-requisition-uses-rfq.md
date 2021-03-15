@@ -98,3 +98,6 @@ Die folgende Aufgabe besteht darin, eine Angebotsanforderung zu erstellen, um An
 8. Wählen Sie die Seite aus.
 9. Wählen Sie „Abgeschlossen” aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

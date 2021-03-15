@@ -153,3 +153,6 @@ Das f체r jede Ausgabenart ausgew채hlte Konto wird belastet, wenn eine Zahlung f�
 
 > [!NOTE]
 > Das Gegenkonto wird auf Mietvertragsebene in den Zeilen f체r den Zahlungsplan f체r die Nebenkosten beim Leasing ausgew채hlt. Dieses Gegenkonto kann dem Kreditor oder einem Sachkonto zugeordnet werden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

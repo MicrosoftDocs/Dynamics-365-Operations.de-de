@@ -73,3 +73,6 @@ Um einen grundlegenden Workflow zu konfigurieren, der startet, wenn Mitarbeiter 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

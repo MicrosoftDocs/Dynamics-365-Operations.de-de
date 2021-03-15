@@ -64,3 +64,6 @@ Eine neue Funktion zur Behandlung eingehender Ladungen, *Übernahme von Ladungsm
 1. Zu hoher Zugang bei Auslastungsmengen
 
 Weitere Informationen finden Sie unter [Registrierte Produktmengen gegen Einkaufsbestellungen verbuchen](inbound-load-handling.md#post-registered-quantities).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

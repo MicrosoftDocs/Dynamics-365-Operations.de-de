@@ -148,3 +148,6 @@ Sie können die Seite **Arbeitsdetails** verwenden, um die erstellte Arbeit anzu
 > Wenn das Dialogfeld **Arbeitspool ändern** angezeigt wird, ist das Feld **Arbeitspool-ID** möglicherweise standardmäßig leer. Wenn das Feld leer ist, wenn Sie **OK** auswählen, um Änderungen zu übernehmen, entfernen Sie den Arbeitspool vollständig aus der Arbeit.
 >
 > Zusätzlich zum Wechseln des Arbeitspools können Sie mit dieser Prozedur jeder Arbeitsaufgabe, die keinen hat, einen Arbeitspool hinzufügen oder einen Arbeitspool aus jeder Arbeitsaufgabe entfernen, die einen hat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

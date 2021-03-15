@@ -109,3 +109,6 @@ Wenn Sie den Prozess *Systemgesteuerte Cluster-Kommissionierung* verwenden und e
 ### <a name="issue-resolution"></a>Problemlösung
 
 Um dieses Problem zu beheben, bearbeiten Sie das Clusterprofil und legen Sie die Option **Positionen aktivieren** auf *Nein* fest.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

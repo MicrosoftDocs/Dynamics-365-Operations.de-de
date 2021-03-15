@@ -43,3 +43,6 @@ Um den Preisbericht zu aktivieren, muss der Parameter **Preisbericht für Einzel
 | Produkte mit Preisänderungen anzeigen | Wenn Sie dies auf **Ja** einstellen, werden die Preise nur für die Daten angezeigt, bei denen der Preis geändert wurde. Der Preis für *einen Tag vor* dem ausgewählten **Von Datum** wird immer angezeigt, sodass der Shopleiter die Produkte, die die Preise für die gesamte gewählte Zeitspanne nicht geändert haben, leicht identifizieren kann und auch den aktuellen Preis einsehen kann. |
 
 Nach der Erstellung des Berichts kann die Excel-Datei für zusätzliche Filterzwecke heruntergeladen werden. Der Preisbericht kann auch verwendet werden, um die historischen Preise von Produkten für vergangene Termine zu überprüfen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

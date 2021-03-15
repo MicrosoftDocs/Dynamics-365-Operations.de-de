@@ -45,3 +45,6 @@ Verschiedene Konfigurationseinstellungen wirken sich auf das Verhalten von Anlag
 
     > [!NOTE]
     > Wir empfehlen, diese Option auf **Nein** zu setzen. Die Einstellung dieser Option wird als Validierung und Kontrolle verwendet, um zu verhindern, dass eine geschlossene Buchversion versehentlich abgeschrieben wird. Indem Sie die Option auf **Nein** setzen, tragen Sie dazu bei, den Nettobuchwert und zukünftige Abschreibungsberechnungen korrekt zu halten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -150,3 +150,6 @@ Bevor Sie die Vorgehensweisen in diesem Thema abschließen, müssen die folgende
 
 3. Geben Sie im Feld **Umgebung** den Namen der Add-On-Umgebung für die elektronische Rechnungsstellung ein.
 4. Klicken Sie auf **Speichern** und schließen Sie die Seite.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

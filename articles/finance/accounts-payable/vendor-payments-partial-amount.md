@@ -53,3 +53,6 @@ Es kann vorkommen, dass Sie eine Teilzahlung ausführen, wobei der Betrag, der n
 
 
 Weitere Informationen finden Sie unter [Kreditorenzahlungsübersicht](../cash-bank-management/tasks/vendor-payment-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

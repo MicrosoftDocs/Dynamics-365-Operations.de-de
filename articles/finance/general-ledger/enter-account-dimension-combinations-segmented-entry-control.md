@@ -113,3 +113,6 @@ In der folgenden Tabelle werden die Tastenkombinationen beschrieben, die verwend
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

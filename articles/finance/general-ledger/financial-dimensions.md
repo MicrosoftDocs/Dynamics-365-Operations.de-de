@@ -139,3 +139,6 @@ Weitere Informationen finden Sie in folgenden Themen:
 
 - [Finanzdimensionen definieren](tasks/define-financial-dimensions.md)
 - [Standardvorlagen für Finanzdimension verwalten](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

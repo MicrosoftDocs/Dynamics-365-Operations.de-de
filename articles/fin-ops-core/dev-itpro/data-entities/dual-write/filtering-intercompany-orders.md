@@ -66,3 +66,6 @@ Jede der Dataverse-Standardentitäten wird mit Verweisen auf die Spalte **Interc
 8. Nachdem Sie die **Angebote** erweitert haben, wenden Sie einen Filter mit `CUSTGROUP != "<company>"` als Abfragezeichenfolge an.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Dialogfeld „Abfrage bearbeiten“ für CDS-Verkaufsangebotskopf":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Eine Vorlagenstückliste kann einer Serviceobjektbeziehung zugeordnet werden. Di
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

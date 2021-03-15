@@ -101,3 +101,6 @@ Mit dem Bericht **Aufstellung zur Abweichungsanalyse** können Sie Neubewertungs
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

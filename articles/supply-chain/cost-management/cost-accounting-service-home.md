@@ -36,3 +36,6 @@ Mit dem Kostenrechnungsdienst-Add-In für Microsoft Dynamics 365 Supply Chain Ma
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 
 [Erste Schritte mit dem Kostenrechnungsdienst](cost-accounting-service-get-started.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

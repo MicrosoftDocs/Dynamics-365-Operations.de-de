@@ -112,3 +112,6 @@ Die folgende Abbildung zeigt ein Beispiel für die Konfiguration eines Debitors.
 [Kanäle – Übersicht](channels-overview.md)
 
 [Kanaleinstellungen – Voraussetzungen](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

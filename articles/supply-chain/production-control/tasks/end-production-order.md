@@ -45,3 +45,6 @@ Diese Prozedur zeigt, wie ein Produktionsauftrag beendet wird. Das Demodatenunte
 1. Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".
 2. Klicken Sie auf "Kostenvergleich anzeigen".
     * Nachdem Sie den Produktionsauftrag abgeschlossen haben, können Sie den vorkalkulierten Einstandspreis mit dem realisierten Einstandspreis vergleichen, um einen Überblick über die Produktionsabweichungen zu erhalten.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

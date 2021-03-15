@@ -66,3 +66,5 @@ Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsp
 32. Wählen Sie Sie auf **Status des Personalbeschaffungsprojekts**.
 33. Wählen Sie **Starten** aus. Der Status **Gestartet** bedeutet, dass das Projekt bereit ist, Bewerbungen zu erhalten.  
 34. Wählen Sie **OK**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

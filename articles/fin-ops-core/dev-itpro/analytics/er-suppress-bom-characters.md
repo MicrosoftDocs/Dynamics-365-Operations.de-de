@@ -66,3 +66,6 @@ Führen Sie die entsprechenden Schritte aus, um die Funktionalität zur Laufzeit
 ## <a name="see-also"></a>Siehe auch
 
 - [Ausführung von XML-Elementen in ER-Formaten verzögern](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

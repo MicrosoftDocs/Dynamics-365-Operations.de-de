@@ -45,3 +45,6 @@ Eine juristische Person ist eine Organisation, die über die Registrierung bei e
 15. Erweitern Sie den Abschnitt **Steuerregistrierung**. Geben Sie im Abschnitt **Steuerregistrierung** die Registrierungsnummern ein, die für die Meldung bei Steuerbehörden verwendet werden.
 16. Erweitern Sie den Abschnitt **Steuererklärung (US 1099)**. Geben Sie im Abschnitt **Steuererklärung (US 1099)** die Informationen zur Steuererklärung (US 1099) für die juristische Person ein.  
 17. Klicken Sie auf **Speichern**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

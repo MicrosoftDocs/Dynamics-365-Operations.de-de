@@ -60,3 +60,6 @@ Diese Informationen gelten für alle europäischen Länder/Regionen. Diese Aufga
     * Weisen Sie den Journaltyp zu, den Sie für eine vordefinierte Erfassungskategorie erstellt haben.  
 22. Klicken Sie auf "Speichern".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

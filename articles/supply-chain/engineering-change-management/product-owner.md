@@ -60,3 +60,6 @@ Beispiel: Produkt X ist der Eigentümergruppe *Designschränke* zugewiesen. Prod
 ## <a name="product-owners-and-approvals"></a>Produktbesitzer und Freigaben
 
 Da die Besitzer der Produkte wissen, ob bestimmte technische Änderungen für ihre Produkte von Vorteil sind, ist es oft sinnvoll, sie als Teil des Genehmigungsprozesses in die Verwaltung für technische Änderungen einzubeziehen. Sie können diesen Ansatz implementieren, indem Sie die Besitzer der Produkte als Teilnehmer in den Workflows festlegen, die für die Verwaltung für technische Änderungen verwendet werden. Das System weist dann Genehmigungsaufgaben in den Workflows zu, basierend auf den Produkten, die in Änderungsanträgen und Änderungsaufträgen enthalten sind. Weitere Informationen finden Sie unter [Verwalten von Änderungen an Engineering-Produkten](engineering-change-management.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

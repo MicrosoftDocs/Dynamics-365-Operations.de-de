@@ -78,3 +78,6 @@ Mehrere Kreditmanagementstatistiken sind in der Infobox **Statistiken zum Kunden
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Zahlenfolgen und gemeinsame Zahlenfolgenparameter
 
 Für die Bearbeitung von Kreditlimitanpassungen ist eine Journal-ID erforderlich. Sie müssen die Kreditlimitanpassungsnummer hinzufügen, die zum Generieren der Journal-ID verwendet werden soll.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

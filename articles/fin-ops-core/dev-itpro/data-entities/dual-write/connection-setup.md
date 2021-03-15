@@ -138,3 +138,6 @@ Links zu einem Beispiel und einem alternativen Ansatz finden Sie im Abschnitt [B
 Ein Beispiel finden Sie unter [Aktivieren der Tabellenzuordnung für Kunden V3 – Kontakte](enable-entity-map.md#enable-table-map).
 
 Einen alternativen Ansatz basierend auf den Datenmengen in jeder Entität, für die eine Erstsynchronisierung ausgeführt werden muss, finden Sie unter [Überlegungen zur Erstsynchronisierung](initial-sync-guidance.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -204,3 +204,6 @@ Zusätzliche Informationen zur Aktivierungen beinhalten die Arbeitskraft,die den
 ### <a name="client-data-synchronization"></a>Client-Datensynchronisierung
 
 Alle Änderungen an einem POS-Client, ausgenommen der Änderungen am Geräteaktivierungsstatus, müssen mit der Kanaldatenbank synchronisiert werden, um wirksam zu werden. Um Änderungen an der Kanaldatenbank zu synchronisieren, navigieren Sie zu **Retail and Commerce** &gt; **IT für Retail and Commerce** &gt; **Vertriebsplan**, und führen Sie den erforderlichen Vertriebsplan aus. Für Änderungen am Client sollten Sie die Vertriebszeitpläne **Register** und **Kanalkonfiguration** ausführen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

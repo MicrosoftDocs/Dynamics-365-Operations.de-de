@@ -53,3 +53,6 @@ Die Anlage kann jetzt mithilfe der Standardabschreibungsfunktion im Anlagevermö
 
 > [!NOTE]
 > Wenn Sie eine Anlage mit einem Mietvertrag verknüpfen, wird die **Anlagenabschreibung** und **Leasingminderung** Schaltflächen im Anlagenvermögen deaktiviert. Sie können Transaktionen zur Anlagenabschreibung und zur Leasingminderung im Anlagevermögen anzeigen. Die **Anlagentransaktionen**-Schaltfläche, mit der ein Anfrageformular geöffnet wird, ist ebenfalls deaktiviert. Sie können auch das **Anlagentransaktionen** -Anfrageformular im Anlagevermögen öffnen.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

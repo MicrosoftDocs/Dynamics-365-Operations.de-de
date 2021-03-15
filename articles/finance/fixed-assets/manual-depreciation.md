@@ -75,3 +75,6 @@ Die Summe der Prozentsätze für alle Intervalle muss nicht unbedingt 100 ergebe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

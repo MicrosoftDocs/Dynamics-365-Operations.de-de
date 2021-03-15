@@ -48,3 +48,6 @@ Darüber hinaus können die Benutzer mit zwei eindeutigen Berichten mit der hier
 - **Kategorie- und Produktverwaltung**-Arbeitsbereich &gt; **Einzelhandel und Handel** &gt; **Produkt und Kategorien** &gt; **Shop Verwaltung** &gt; **Berichte**
 - **Verwaltung von Preisen und Rabatten**-Arbeitsbereich &gt; **Einzelhandel und Handel** &gt; **Preise und Rabatte** &gt; **Shop Verwaltung** &gt; **Berichte**
 - **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel und Handel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

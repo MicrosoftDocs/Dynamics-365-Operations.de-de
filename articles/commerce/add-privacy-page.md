@@ -108,3 +108,6 @@ Das Fragment kann jetzt in der Vorlage für andere Websiteseiten referenziert we
 [Cookie-Compliance](cookie-compliance.md)
 
 [Benutzer-IDs ersetzen, die nachverfolgten Inhalten zugeordnet sind](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

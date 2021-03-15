@@ -54,3 +54,6 @@ Mehrere Schritte müssen ausgeführt werden, wenn Sie einen Wartungsauftrag für
 
 > [!NOTE]
 > Wenn Sie in Dynamics 365 Supply Chain Management und dem Modul **Asset Management** arbeiten, wählen Sie normalerweise **Neu**, um einen neuen Datensatz zu erstellen, **Bearbeiten**, um einen vorhandenen Datensatz zu aktualisieren, und **Speichern**, um die neuen oder bearbeiteten Daten zu speichern.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

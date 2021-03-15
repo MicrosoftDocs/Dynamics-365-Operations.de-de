@@ -56,3 +56,6 @@ Die Rolle dieser Prozedur ist "Finanzverwalter". Für diese Prozedur wird das De
 18. Klicken Sie auf Speichern.
 19. Schließen Sie die Seite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

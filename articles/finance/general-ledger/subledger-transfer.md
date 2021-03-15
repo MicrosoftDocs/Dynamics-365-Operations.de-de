@@ -41,3 +41,6 @@ Die folgenden Optionen stehen zum Übertragen von Chargen des untergeordneten Sa
 In Version 10.0.8 wurden Verbesserungen vorgenommen, um die Leistung der asynchronen Option zu verbessern. Diese Funktion wird unter dem Funktionsnamen **Übertragung des untergeordneten Sachkontos zur Leistungsoptimierung im Hauptbuch** aktiviert. 
  
 Diese Funktionalität verbessert die Übertragung von Daten aus dem untergeordneten Sachkonto in das Hauptbuch. Dadurch kann der Prozess effizienter werden, und Gruppen kleinerer zu übertragender Transaktionen werden zusammengefasst. Dies ermöglicht eine effizientere Nutzung des Batch-Servers. Diese Funktionalität setzt voraus, dass der Batch-Server eingerichtet, online ist und funktioniert, damit die asynchrone Übertragungsoption funktioniert. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

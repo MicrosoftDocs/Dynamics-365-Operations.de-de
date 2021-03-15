@@ -106,3 +106,6 @@ In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics AX 
 [Seite zu Neuerungen oder Änderungen in Finance and Operations](whats-new-changed.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

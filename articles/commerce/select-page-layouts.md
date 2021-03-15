@@ -79,3 +79,6 @@ Gehen Sie folgendermaßen vor, um ein anderes Layout für eine vorhandene Seite 
 
 [Dynamische E-Commerce-Seiten basierend auf URL-Parametern erstellen](create-dynamic-pages.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

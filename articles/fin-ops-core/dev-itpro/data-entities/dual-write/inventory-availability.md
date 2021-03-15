@@ -118,3 +118,6 @@ Finance and Operations-Feld | Zuordnungstyp | Customer Engagement-Feld | Standar
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

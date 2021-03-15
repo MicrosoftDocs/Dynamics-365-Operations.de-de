@@ -40,3 +40,6 @@ Gehen Sie folgendermaßen vor, um einen Serviceauftrag auf die nächste Phase im
 4.  In der **Servicephase ändern** Formular wählen Sie die entsprechende Phase aus.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

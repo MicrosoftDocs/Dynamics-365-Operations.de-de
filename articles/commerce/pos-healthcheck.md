@@ -82,3 +82,6 @@ Benutzerdefinierte Integritätsprüfungen können auch erstellt werden, um Gerä
 ## <a name="related-articles"></a>Zugehörige Artikel
 
 [Modern POS (MPOS) – Auslöser und Drucken](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

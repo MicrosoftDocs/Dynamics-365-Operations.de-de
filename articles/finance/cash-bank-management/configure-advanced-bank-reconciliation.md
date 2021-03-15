@@ -60,3 +60,6 @@ Die Option **Nach Import abstimmen** überprüft automatisch den Bankauszug, ers
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Ein Wartungsanfragetyp definiert die Zuordnung zu einer Wartungsanfrage-Lebenszy
 Die folgende Abbildung zeigt ein Beispiel der Seite **Wartungsanfragetypen**.
 
 ![Seite „Wartungsanfragentypen“](media/07-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

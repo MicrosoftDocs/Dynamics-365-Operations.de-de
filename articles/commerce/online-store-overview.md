@@ -120,3 +120,6 @@ Informationen zum Verwalten von Website-Inhalten finden Sie in den folgenden The
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
 
 [Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

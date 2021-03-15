@@ -87,3 +87,6 @@ Wenn Sie einen Auszug buchen, werden Aufträge und Rechnungen für die Verkäufe
 - Verkäufe, für die ein Debitor zu der Transaktion in POS hinzugefügt wurde, generieren für jeden einzelnen Debitor separate Aufträge und Rechnungen.
 
 Zahlungserfassungen werden automatisch für die Zahlungen in der Aufstellung erstellt, und der Lagerbestand wird für den POS-Speicher aktualisiert.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

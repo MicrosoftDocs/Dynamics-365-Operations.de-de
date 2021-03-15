@@ -48,3 +48,6 @@ Wenn Sie einen Lieferschein für einen zurückgelieferten Artikel aktualisieren,
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

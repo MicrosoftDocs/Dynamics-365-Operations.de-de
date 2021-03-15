@@ -110,3 +110,6 @@ Die Seite **Details der geplanten Arbeit** (**Lagerort verwaltung \> Arbeit \> D
 Um die Stapelverarbeitungsaufträge für die Verarbeitung von Wellen anzuzeigen, wählen Sie **Stapelverarbeitungsaufträge** im Aktionsbereich auf der Seite **Alle Wellen** aus.
 
 Von hier aus können Sie alle Details der Stapelverarbeitungsaufgabe für jede der Stapelverarbeitungsauftrags-IDs anzeigen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

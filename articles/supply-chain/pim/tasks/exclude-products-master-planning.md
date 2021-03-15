@@ -43,3 +43,6 @@ In dieser Prozedur wird gezeigt, wie ein neuer Produktlebenszyklus-Status erstel
 5. Markieren Sie in der Liste die ausgewählte Zeile.
 6. Geben Sie im Feld „Produktlebenszyklus-Status” einen Wert ein, oder wählen Sie einen Wert aus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
