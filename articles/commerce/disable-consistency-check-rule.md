@@ -1,6 +1,6 @@
 ---
 title: Regeln in der Konsistenzprüfung von Einzelhandelsbuchungen deaktivieren
-description: Dieses Thema beschreibt die Funktionalität zum Deaktivieren der Regeln für die Konsistenzprüfung von Buchungen in Microsoft Dynamics 365 Commerce.
+description: In diesem Thema werden die Funktionen zum Deaktivieren der Regeln in der Konsistenzprüfung von Buchungen in Microsoft Dynamics 365 Commerce beschrieben.
 author: josaw1
 manager: AnnBe
 ms.date: 10/15/2019
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5eb2af7e3090daabccd338d5d0bc6a6ebc4ea663
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: abd97819d44963d22269efc9536f746c3c0b3812
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982689"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5230589"
 ---
 # <a name="disable-rules-in-the-retail-transaction-consistency-checker"></a>Regeln in der Konsistenzprüfung von Einzelhandelsbuchungen deaktivieren 
 
 [!include [banner](../includes/banner.md)]
 
-Einzelhändler können individuelle Geschäftsszenarien und -prozesse nutzen. Daher sind nicht alle Regeln, die standardmäßig in der Konsistenzprüfung von Handelsbuchungen enthalten sind, für alle Einzelhändler anwendbar. Um Abweichungen auszugleichen, bietet Microsoft Dynamics 365 Commerce Funktionen, mit denen Sie die nicht anwendbaren Regeln deaktivieren können.
+Einzelhändler können individuelle Geschäftsszenarien und -prozesse nutzen. Daher gelten nicht alle standardmäßig in der Konsistenzprüfung von Commerce-Transaktionen enthaltenen Regeln für alle Einzelhändler. Zur Anpassung von Unterschieden stellt Microsoft Dynamics 365 Commerce Funktionen zum Deaktivieren nicht anwendbarer Regeln bereit.
 
 Um die Liste der Regeln anzuzeigen, die in der Konsistenzprüfung von Einzelhandelsbuchungen in Ihrer Umgebung verfügbar sind, und um den Status jeder Regel anzuzeigen, wechseln Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Handelsparameter**, und wählen Sie die Registerkarte **Buchungsprüfung** aus.
 

@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 694c1f415fd52eb9e98ace2e5787c12f7a1fed8e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 644cf8ea39da872962e44a38294af88d1dfa809e
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687274"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559868"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Berichterstellung und Analysen mit der Power BI-Startseite
 
@@ -35,7 +34,7 @@ In diesem Thema werden Ressourcen vorgestellt, in denen Sie weitere Informatione
 - [Finance and Operations: Blog zu Analysen und Reporting Services von Power BI](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (Blog)
 
 ## <a name="analytical-workspaces"></a>Analytische Arbeitsbereiche
-Arbeitsbereiche können umfangreiche Infografiken und visuelle Elemente verwenden, die von Microsoft Power BI unterstützt werden. Diese Infografiken und visuellen Elemente umfassen viele Steuerelemente von Drittanbietern. Daher können Arbeitsbereiche eine hochgradig visuelle, interaktive Oberfläche für Benutzer bieten.
+Arbeitsbereiche können umfangreiche Infografiken und visuelle Elemente verwenden, die von Microsoft Power BI unterstützt werden. Diese Infografiken und visuellen Elemente umfassen zahlreiche Steuerelemente von Drittanbietern. Daher können Arbeitsbereiche eine hochgradig visuelle, interaktive Oberfläche für Benutzer bieten.
 
 Benutzer können mit Daten interagieren, indem Sie auf visuelle Elemente auf der Seite klicken oder diese berühren. Sie können, ohne den Arbeitsbereich zu verlassen, Ursache und Wirkung sehen und einfache Was-wäre-wenn-Vorgänge ausführen. Dank beeindruckender interaktiver visueller Elemente, werden Ihre Benutzer Freude daran haben, Daten zu erkunden und versteckte Trends zu entdecken.
 

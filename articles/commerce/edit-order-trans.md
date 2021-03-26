@@ -1,6 +1,6 @@
 ---
 title: Onlineauftrag und asynchrone Debitorenauftragstransaktionen bearbeiten und prüfen
-description: In diesem Thema wird beschrieben, wie Sie Onlineaufträge und asynchrone Debitorenauftragstransaktionen in Microsoft Dynamics 365 Commerce bearbeiten und prüfen.
+description: In diesem Thema wird beschrieben, wie Onlineauftrags- und asynchrone Debitorenauftragstransaktionen in Microsoft Dynamics 365 Commerce bearbeitet und überwacht werden.
 author: josaw1
 manager: AnnBe
 ms.date: 11/04/2020
@@ -17,22 +17,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8fa6f7a71bae759e2b8feb3c5778200bb7bdbfe9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0fee5ef7ad61e9581e7b2797bb1bd26b1a48ddbd
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010150"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5221773"
 ---
 # <a name="edit-and-audit-online-order-and-asynchronous-customer-order-transactions"></a>Onlineauftrag und asynchrone Debitorenauftragstransaktionen bearbeiten und prüfen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Onlineaufträge und asynchrone Debitorenauftragstransaktionen in Microsoft Dynamics 365 Commerce bearbeiten und prüfen.
+In diesem Thema wird beschrieben, wie Onlineauftrags- und asynchrone Debitorenauftragstransaktionen in Microsoft Dynamics 365 Commerce bearbeitet und überwacht werden.
 
 ## <a name="overview"></a>Übersicht
 
-Von Commerce-Version 10.0.5 auf 10.0.6 wurde Unterstützung für die Bearbeitung von Abholungstransaktionen (z. B. Verkäufe und Retouren) sowie Bargeldverwaltungstransaktionen (z. B. Entfernen von Mittelzugängen und Zahlungsmitteln) hinzugefügt. In Commerce Version 10.0.7 wurde Unterstützung für das Bearbeiten von Onlineauftragstransaktionen und asynchronen Debitorenauftragstransaktionen hinzugefügt.
+Zwischen den Commerce-Versionen 10.0.5 und 10.0.6 wurde die Unterstützung für die Bearbeitung von Abholungstransaktion (z. B. Verkäufe und Rückgaben) und Zahlungsmanagementtransaktionen (z. B. Bareinlage und Entfernung von Zahlungsmitteln) hinzugefügt. In Commerce Version 10.0.7 wurde Unterstützung für das Bearbeiten von Onlineauftragstransaktionen und asynchronen Debitorenauftragstransaktionen hinzugefügt.
 
 ## <a name="edit-and-audit-order-transactions"></a>Auftragstransaktionen bearbeiten und prüfen
 

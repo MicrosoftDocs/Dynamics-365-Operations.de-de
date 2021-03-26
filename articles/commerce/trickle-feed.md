@@ -1,6 +1,6 @@
 ---
 title: Auftragserstellung per Einzelzulauf bei Transaktionen im Geschäft
-description: Dieses Thema beschreibt die Auftragserstellung per Einzelzulauf für Geschäftbuchungen in Microsoft Dynamics 365 Commerce.
+description: In diesem Thema wird die Auftragserstellung per Einzelzulauf für Geschäftstransaktionen in Microsoft Dynamics 365 Commerce beschrieben.
 author: josaw1
 manager: AnnBe
 ms.date: 09/04/2020
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1f864fd6e3aa62cabd039922ed55ad5f7714f0ce
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0fdb1f636183e8365729ab8947a50614a77eaeac
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991343"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211044"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Auftragserstellung per Einzelzulauf bei Transaktionen im Geschäft
 

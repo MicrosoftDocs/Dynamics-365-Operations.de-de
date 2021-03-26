@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: cf4d03c1a697259899c419ce084b35f4eddf13fe
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: 857078e0b97bd136f5236c999a939d3fd263c39f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142298"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238375"
 ---
 # <a name="revenue-recognition-bundles"></a>Umsatzerkennungsbündel
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird die Bündelfunktion erläutert, die Teil der Funktion zur Umsatzerkennung in der Debitorenbuchhaltung ist. Ein Bündel besteht aus einem übergeordneten Artikel und mehreren Komponentenartikeln. Der übergeordnete Artikel wird in einen Auftrag eingegeben, um die Auftragserfassung effizienter zu gestalten. Danach wird er in die Komponentenartikel aufgelöst. In internen Dokumenten, wie z. B. Lieferscheinen, werden die Komponenten aufgelistet. Externe Dokumente enthalten jedoch nur den übergeordneten Artikel.
+In diesem Artikel wird die Bündelfunktion erläutert, die Teil der Funktion zur Umsatzerkennung in der Debitorenbuchhaltung ist. Ein Bündel besteht aus einem übergeordneten Artikel und mehreren Komponentenartikeln. Der übergeordnete Artikel wird in einen Auftrag eingegeben, um die Auftragserfassung effizienter zu gestalten. Danach wird er in die Komponentenartikel aufgelöst. In internen Dokumenten, wie z. B. Lieferscheinen, werden die Komponenten aufgelistet. Externe Dokumente zeigen jedoch nur den übergeordneten Artikel an.
 
 > [!NOTE]
-> Kanäle von Microsoft Dynamics 365 Commerce, darunter Online-Kanäle, Verkaufsstelle (POS) und Callcenter, unterstützen die Umsatzerkennung (einschließlich Bündelfunktion) nicht. Dies trifft auch auf die Prospect-to-Cash-Lösung für Dynamics 365 Supply Chain Management und Dynamics 365 Sales zu. Artikel, bei denen die Umsatzerkennung konfiguriert wurde, sollten nicht Bestellungen oder Transaktionen hinzugefügt werden, die in Commerce-Kanälen oder in der Prospect-to-Cash-Lösung erstellt wurden.
+> Microsoft Dynamics 365 Commerce-Kanäle wie Onlineshops, Verkaufsstellen (Point of sale; POS) und Callcenter unterstützen keine Umsatzrealisierung (einschließlich der Paketfunktion). Dies trifft auch auf die Prospect-to-Cash-Lösung für Dynamics 365 Supply Chain Management und Dynamics 365 Sales zu. Artikel, bei denen die Umsatzerkennung konfiguriert wurde, sollten nicht Bestellungen oder Transaktionen hinzugefügt werden, die in Commerce-Kanälen oder in der Prospect-to-Cash-Lösung erstellt wurden.
 
 Um Bündel einzurichten, müssen Sie die Konfigurationsschlüssel für die Umsatzerkennung eingeben. Sie können Bündel allerdings auch dann nutzen, wenn keine Umsatzerkennung eingerichtet wurde. Ebenso können Sie die Umsatzerkennung ohne eingerichtete Bündel in Anspruch nehmen. Bei eingerichteter Umsatzerkennung bestimmen die Komponentenartikel den Umsatzerlöspreis und den Umsatzerlöszeitplan, der bei Berechnung eines Auftrags für Umsatzerkennung oder verzögerte Umsatzerlöse verwendet wird.
 

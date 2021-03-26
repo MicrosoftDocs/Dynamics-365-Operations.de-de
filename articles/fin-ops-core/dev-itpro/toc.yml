@@ -12,16 +12,20 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Neuerungen oder Änderungen in Plattformupdates
               items:
-                - name: Neuerungen oder Änderungen auf der Startseite von Plattformupdates
+                - name: Welche Neuerungen oder Änderungen bietet die Startseite für Plattformupdates
                   href: get-started/whats-new-home-page.md
-                - name: "Plattformupdates zu 10.0.17 (April\_2021)"
+                - name: Plattformupdates für 10.0.18 (Mai 2021)
+                  href: get-started/whats-new-platform-updates-10-0-18.md
+                - name: Plattformupdates für 10.0.17 (April 2021)
                   href: get-started/whats-new-platform-updates-10-0-17.md
-                - name: "Plattformupdates zu 10.0.16 (Februar\_2021)"
+                - name: Plattformupdates für 10.0.16 (Februar 2021)
                   href: get-started/whats-new-platform-updates-10-0-16.md
-                - name: "Plattformupdates zu 10.0.15 (Januar\_2021)"
+                - name: Plattformupdates für 10.0.15 (Januar 2021)
                   href: get-started/whats-new-platform-updates-10-0-15.md
             - name: Entfernte oder veraltete Funktionen
               items:
+                - name: Entfernte oder veraltete Funktionen – Startseite
+                  href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: Entfernte oder veraltete Plattformfunktionen
                   href: get-started/removed-deprecated-features-platform-updates.md
                 - name: In früheren Versionen entfernte oder veraltete Funktionen
@@ -32,12 +36,14 @@
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Geschäftsereignisse
           items:
-            - name: Geschäftsereignisse – Übersicht
+            - name: Übersicht über Geschäftsereignisse
               href: business-events/home-page.md
-            - name: Anwendungsgeschäftsereignisse
+            - name: Anwendungs-Geschäftsereignisse
               href: business-events/app-business-events.md
-            - name: Workflowgeschäftsereignisse
+            - name: Workflow-Geschäftsereignisse
               href: business-events/business-events-workflow.md
+            - name: Batch-Geschäftsereignisse
+              href: business-events/system-business-events.md
             - name: Warnungen als Geschäftsereignisse
               href: business-events/alerts-business-events.md
             - name: Geschäftsereignisse in Microsoft Flow
@@ -214,12 +220,16 @@
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
                             - name: Dynamics 365 Commerce-Preisgestaltungsmodul mit Dynamics 365 Sales verwenden
                               href: data-entities/dual-write/commerce-pricing.md
-                            - name: Hausinterne Anlagen zur Wartung
+                            - name: Interne Anlagen für Wartungsarbeiten
                               href: data-entities/dual-write/in-house-assets.md
-                            - name: 'Integrierte Arbeitskraft, Stelle und Position'
-                              href: data-entities/dual-write/integrated-hr.md
                             - name: Verfügbarkeit des Bestands
                               href: data-entities/dual-write/inventory-availability.md
+                            - name: 'Integrierte Arbeitskraft, Stelle und Position'
+                              href: data-entities/dual-write/integrated-hr.md
+                            - name: Notizenintegration
+                              href: data-entities/dual-write/notes-integration.md
+                            - name: Zuordnungsreferenz
+                              href: data-entities/dual-write/mapping-reference.md
                         - name: Unterstützung für duales Schreiben
                           items:
                             - name: Unterstützung von Field Service- und Project Service Automation-Lösungen
@@ -640,9 +650,11 @@
                   href: dev-tools/pipeline-asset-upload.md
                 - name: Anlagen mithilfe von Azure Pipelines bereitstellen
                   href: dev-tools/pipeline-deploy-asset.md
-                - name: Verbindung mit Lifecycle Services (LCS) in Azure Pipelines erstellen
+                - name: Lifecycle Services-Verbindung (LCS) in Azure Pipelines erstellen
                   href: dev-tools/pipeline-lcs-connection.md
-                - name: Veraltete Pipeline in Azure Pipelines aktualisieren
+                - name: Gehostete Azure Pipeline for neue NuGet-Pakete aktualisieren
+                  href: dev-tools/pipeline-nuget-split.md
+                - name: Vorgänger-Pipeline in Azure Pipelines aktualisieren
                   href: dev-tools/pipeline-msbuild-update.md
             - name: Beispielanwendung für die Flottenverwaltung
               items:
@@ -1100,8 +1112,6 @@
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Überwachung und Diagnose
               href: lifecycle-services/monitoring-diagnostics.md
-            - name: Auswirkungsanalysebericht
-              href: lifecycle-services/impact-analysis-report.md
             - name: Umgebungsdienste neu starten
               href: lifecycle-services/restart-environment-services.md
             - name: Produktionsausfall melden
@@ -1444,10 +1454,12 @@
               href: sysadmin/cross-company-data-sharing.md
             - name: Wartungsmodus
               href: sysadmin/maintenance-mode.md
-            - name: Vorkonfigurierte Systemkonten
+            - name: Vorkonfigurierten Systemkonten
               href: sysadmin/pre-configured-system-accounts.md
-            - name: B2B-Benutzer in Azure AD exportieren
+            - name: B2B-Benutzer nach Azure AD exportieren
               href: sysadmin/implement-b2b.md
+            - name: Datenverwaltung
+              href: sysadmin/DataMaintenancePortal.md
             - name: Sicherheit
               items:
                 - name: Rollenbasierte Sicherheit

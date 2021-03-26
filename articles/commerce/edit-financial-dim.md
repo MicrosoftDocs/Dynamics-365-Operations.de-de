@@ -1,6 +1,6 @@
 ---
 title: Finanzdimensionen für Einzelhandelstransaktionen bearbeiten
-description: In diesem Thema wird beschrieben, wie Sie Finanzdimensionen für Einzelhandelstransaktionen in Microsoft Dynamics 365 Commerce bearbeiten.
+description: In diesem Thema wird beschrieben, wie Finanzdimensionen für Einzelhandelstransaktionen in Microsoft Dynamics 365 Commerce bearbeitet werden.
 author: josaw1
 manager: AnnBe
 ms.date: 11/04/2020
@@ -17,22 +17,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5a5a82adbad16d8fea2ccf60ae0dbfbd2fd9f3c1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d4b7e383ca2089ee98e70d23ccd890d0e6a86c5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010174"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5221797"
 ---
 # <a name="edit-financial-dimensions-for-retail-transactions"></a>Finanzdimensionen für Einzelhandelstransaktionen bearbeiten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Finanzdimensionen für Einzelhandelstransaktionen in Microsoft Dynamics 365 Commerce bearbeiten.
+In diesem Thema wird beschrieben, wie Finanzdimensionen für Einzelhandelstransaktionen in Microsoft Dynamics 365 Commerce bearbeitet werden.
 
 ## <a name="edit-financial-dimensions"></a>Finanzdimensionen bearbeiten
 
-Führen Sie die folgenden Schritte aus, um Finanzdimensionen für Einzelhandelstransaktionen in der Commerce-Zentralverwaltung zu bearbeiten.
+Führen Sie die folgenden Schritte aus, um Finanzdimensionen für Einzelhandelstransaktionen in Commerce Headquarters zu bearbeiten.
 
 1. Öffnen Sie die Seite **Finanzdimensionskonfiguration für Integrationsanwendungen**.
 1. Wählen Sie den aktiven Datensatz **Standarddimensionsintegration**.

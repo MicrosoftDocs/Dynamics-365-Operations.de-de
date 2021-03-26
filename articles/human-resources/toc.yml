@@ -3,11 +3,15 @@
   items:
     - name: Neuerungen
       items:
-        - name: Neuerungen oder Änderungen in Human Resources
+        - name: Welche Neuerungen oder Änderungen bietet Human Resources?
           href: hr-admin-whats-new.md
-        - name: "28.\_Januar\_2021"
+        - name: 8. März 2021
+          href: hr-whats-new-2021-03-08.md
+        - name: 22. Februar 2021
+          href: hr-whats-new-2021-02-22.md
+        - name: 28. Jan. 2021
           href: hr-whats-new-2021-01-28.md
-        - name: "21.\_Januar\_2021"
+        - name: 21. Jan. 2021
           href: hr-whats-new-2021-01-21.md
         - name: "2.\_Dezember\_2020"
           href: hr-whats-new-2020-12-02.md
@@ -83,15 +87,15 @@
           items:
             - name: Eine Datenintegrationstechnologie auswählen
               href: hr-admin-integration-choose-technology.md
-            - name: Häufig gestellte Fragen zur Drosselung
+            - name: Drosselung – Häufig gestellte Fragen
               href: hr-admin-integration-throttling-faq.md
             - name: Dataverse-Integration konfigurieren
               href: hr-admin-integration-common-data-service.md
             - name: Dataverse-Tabellen
               href: hr-developer-entities.md
-            - name: Virtuelle Dataverse-Entitäten konfigurieren
+            - name: Virtuelle Dataverse-Tabellen konfigurieren
               href: hr-admin-integration-common-data-service-virtual-entities.md
-            - name: Häufig gestellte Fragen zu virtuellen Entitäten in Human Resources
+            - name: Virtuelle Human Resources-Tabellen – Häufig gestellte Fragen
               href: hr-admin-virtual-entity-faq.md
             - name: Integration mit Finance konfigurieren
               href: hr-admin-integration-finance.md
@@ -619,10 +623,12 @@
               href: hr-compensation-process.md
         - name: Vorteile verwalten
           items:
-            - name: Vergütungsverwaltung
+            - name: Vorteilsverwaltung
               items:
-                - name: "Vorteilsverwaltung\_– Übersicht"
+                - name: Vorteilsverwaltung – Übersicht
                   href: hr-benefits-management-overview.md
+                - name: Arbeitsbereich „Vorteilsverwaltung“
+                  href: hr-benefits-management-workspace.md
                 - name: Vorteilsverwaltung konfigurieren
                   items:
                     - name: Vorteilsverwaltungsparameter pro Unternehmen konfigurieren
@@ -779,7 +785,9 @@
               href: hr-employee-manager-self-service-overview.md
             - name: Benutzerdefinierte Links in Manager-Self-Service erstellen
               href: hr-employee-manager-self-service-custom-links.md
-            - name: Name des Self-Service-Arbeitsbereichs für Mitarbeiter ändern
+            - name: Name des Employee Self-Service-Arbeitsbereichs ändern
               href: hr-employee-self-service-workspace-name.md
-            - name: Persönliche Daten bearbeiten
+            - name: Persönliche Informationen bearbeiten
               href: hr-employee-manager-self-service-edit-personal-information.md
+            - name: Bearbeitung persönlicher Informationen beschränken
+              href: hr-employee-self-service-restrict-editing.md
