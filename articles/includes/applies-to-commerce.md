@@ -1,0 +1,10 @@
+---
+ms.openlocfilehash: 671dcead08ce4fa92859000a024584db6f5fab6d
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468634"
+---
+<span data-ttu-id="d02db-101">**Gilt für diese Dynamics 365-Apps**:</span><span class="sxs-lookup"><span data-stu-id="d02db-101">**Applies to these Dynamics 365 apps**:</span></span><br>
+<span data-ttu-id="d02db-102">Commerce</span><span class="sxs-lookup"><span data-stu-id="d02db-102">Commerce</span></span>

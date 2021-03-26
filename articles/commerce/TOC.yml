@@ -92,8 +92,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Neuerungen oder Änderungen in Commerce
                   items:
-                    - name: Neuerungen oder Änderungen auf der Startseite von Commerce
+                    - name: Neuerungen oder Änderungen auf der Commerce-Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: "Commerce\_10.0.18 (Mai\_2021)"
+                      href: get-started/whats-new-commerce-10-0-18.md
                     - name: "Commerce\_10.0.17 (April\_2021)"
                       href: get-started/whats-new-commerce-10-0-17.md
                     - name: "Commerce\_10.0.16 (Februar 2021)"
@@ -102,6 +104,8 @@
                       href: get-started/whats-new-commerce-10-0-15.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
+                    - name: Entfernte oder veraltete Funktionen – Startseite
+                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
                     - name: Entfernte oder veraltete Funktionen in Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
                     - name: Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
@@ -532,6 +536,8 @@
                       href: omni-channel-payments.md
                     - name: Omnichannel-Commerce-Auftragszahlungen
                       href: dev-itpro/commerce-payments.md
+                    - name: Kreditkartenbuchungsdaten archivieren
+                      href: dev-itpro/archive-cc-data.md
                     - name: Kreditkarten ohne Hardware Station verarbeiten
                       href: dev-itpro/cnp-pos.md
                     - name: "Dynamics\_365 Payment Connector für PayPal"
@@ -540,7 +546,13 @@
                       href: wallets.md
                     - name: FAQ zu Zahlungen
                       href: dev-itpro/payments-retail.md
-                - name: Bing Maps für Ihr Unternehmen verwalten
+                - name: E-Mails und Benachrichtigungen
+                  items:
+                    - name: Beleg-E-Mails für die Verwendung benutzerdefinierter Layouts und Vorlagen konfigurieren
+                      href: configure-emailed-receipt-formats.md
+                    - name: Transaktions- und Beleg-E-Mails einen QR-Code oder Barcode hinzufügen
+                      href: add-qr-code-barcode-email.md
+                - name: Bing Karten für Ihr Unternehmen verwalten
                   href: dev-itpro/manage-bing-maps.md
                 - name: Zeitfenster für die Kundenabholung erstellen und aktualisieren
                   href: dev-itpro/pickup-timeslots.md
@@ -766,13 +778,15 @@
                   href: refund_policy_returns.md
         - name: Ihre Kunden verwalten
           items:
+            - name: Kundenmanagement in Shops
+              href: customer-mgmt-stores.md
             - name: Kundenaktionen
               items:
-                - name: Übersicht zu Kundenaktionen
+                - name: Übersicht über Kundenaktionen
                   href: clienteling-overview.md
-            - name: Treue
+            - name: Loyalität
               items:
-                - name: Übersicht zur Treue
+                - name: Übersicht über Loyalität
                   href: set-up-customer-loyalty-program.md
                 - name: Treueprogramme definieren
                   href: tasks/define-loyalty-programs.md
@@ -860,6 +874,8 @@
                   href: configure-multi-B2C-tenants.md
                 - name: Domänen in Dynamics 365 Commerce
                   href: domains-commerce.md
+                - name: Optionen für die Content Delivery Network-Implementierung
+                  href: cdn-options.md
                 - name: Unterstützung für ein Content Delivery Network (CDN) hinzufügen
                   href: add-cdn-support.md
                 - name: Standortbasierte Shop-Erkennung aktivieren
@@ -1066,6 +1082,10 @@
                   items:
                     - name: Seiten und Module zur Kontenverwaltung
                       href: account-management.md
+                - name: Module zur Identitätsverwaltung
+                  items:
+                    - name: Seiten und Module zur Identitätsverwaltung
+                      href: identity-mgmt-modules.md
                 - name: Produktsammelmodule
                   items:
                     - name: Produktsammelmodule
@@ -1204,8 +1224,10 @@
                   href: localizations/apac-ind-cash-registers.md
                 - name: Bereitstellungsrichtlinien für Kassen
                   href: localizations/apac-ind-loc-deployment-guidelines.md
-                - name: Support für Upgrade und N-1 für Indien
+                - name: Unterstützung für Upgrade und N-1 für Indien
                   href: localizations/apac-ind-n-1-for-india.md
+                - name: QR-Codes generieren und auf Belege drucken
+                  href: localizations/ind-generate-qr-code-print-receipt.md
             - name: Italien
               items:
                 - name: Beispiel für die Integration eines Belegdruckers für Italien
@@ -2088,6 +2110,8 @@
                       href: e-commerce-extensibility/request-properties-object.md
                     - name: App-Einstellungen
                       href: e-commerce-extensibility/app-settings.md
+                    - name: Plattformeinstellungsdatei
+                      href: e-commerce-extensibility/platform-settings.md
                     - name: Eine Moduldefinition erweitern
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Übersicht zur Cookie-API
@@ -2136,6 +2160,8 @@
                       href: e-commerce-extensibility/data-action-overrides.md
                     - name: Datenaktivitätshooks
                       href: e-commerce-extensibility/data-action-hooks.md
+                    - name: Serverseitige Datenaktionen mit AJAX aufrufen
+                      href: e-commerce-extensibility/data-actions-with-ajax.md
                 - name: Designs entwickeln
                   items:
                     - name: Designüberblick
@@ -2248,7 +2274,7 @@
                   href: dev-itpro/pos-custom-transaction-column.md
                 - name: POS-APIs oder -Vorgänge aus POS-Erweiterungen aufrufen
                   href: dev-itpro/pos-api-extension.md
-                - name: Modern POS-Auslöser und Drucken
+                - name: POS-Auslöser
                   href: dev-itpro/pos-trigger-printing.md
                 - name: 'POS-Ansichten, die nicht auf dem Bildschirm-Designer basieren, mit benutzerdefinierten Steuerelementen ergänzen'
                   href: dev-itpro/pos-control-non-screen.md
@@ -2304,7 +2330,7 @@
                   href: dev-itpro/order-attributes.md
                 - name: Debitorattribute
                   href: dev-itpro/customer-attributes.md
-                - name: CRT SDK-Beispiele
+                - name: Belegerweiterungen
                   href: dev-itpro/retail-sdk/retail-sdk-samples.md
                 - name: Protokollerweiterungsereignisse zu Application Insights
                   href: dev-itpro/commerce-application-insights.md
@@ -2344,6 +2370,54 @@
                   href: dev-itpro/ecommerce-platform-sdk.md
             - name: Commerce-Erweiterungsressourcen und Beschriftungsdateien lokalisieren
               href: dev-itpro/extension-resource-localization.md
+        - name: Problembehandlung
+          items:
+            - name: Auftragsverarbeitung
+              items:
+                - name: Zahlungstyp muss ein Kreditkartenfehler sein
+                  href: troubleshoot/payment-type-credit-card-error.md
+                - name: Steuern auf Onlinebestellungen sind falsch berechnet
+                  href: troubleshoot/tax-miscalculated-online-order.md
+                - name: Fehler bei der Auftragssynchronisierung im Zusammenhang mit dem Standardzahlungsservice
+                  href: troubleshoot/synchronization-error.md
+            - name: Zahlungsverarbeitung
+              items:
+                - name: Rückerstattung bei Rücklieferung wird abgelehnt
+                  href: troubleshoot/refund-declined.md
+                - name: Dynamics 365 Payment Connector für Adyen
+                  items:
+                    - name: Fehler bei Dynamics 365 Payment Connector für Adyen beheben
+                      href: troubleshoot/adyen-support.md
+                    - name: Option zum Speichern für meine nächste Zahlungsoption wird nicht angezeigt
+                      href: troubleshoot/next-payment-link-not-appearing.md
+                    - name: Auf der Seite für die Kreditkartenerfassung wird beim Auschecken ein Fehler angezeigt.
+                      href: troubleshoot/credit-card-entry-form-error.md
+                    - name: 'Zahlungen werden automatisch ausgeglichen, bevor Bestellungen in Rechnung gestellt oder versendet werden'
+                      href: troubleshoot/payments-auto-settled.md
+            - name: E-Commerce-Site-Verwaltung
+              items:
+                - name: Sicherheitsgruppe für Site Builder kann während der ersten Bereitstellung nicht konfiguriert werden
+                  href: troubleshoot/security-group-site-builder.md
+                - name: Produkte und Kategorien werden im Site Builder nicht angezeigt
+                  href: troubleshoot/products-categories-unavailable.md
+                - name: Produkte und Kategorien fehlen nach Umgebungskopie
+                  href: troubleshoot/missing-products-categories.md
+                - name: Zugriff auf Storefront während des Testens oder der Entwicklung einschränken
+                  href: troubleshoot/restrict-access-storefront.md
+                - name: Anmeldelink leitet zur E-Commerce-Website um
+                  href: troubleshoot/sign-in-redirects-back.md
+                - name: Kundendatensätze werden nicht in der Commerce-Zentralverwaltung angezeigt
+                  href: troubleshoot/customer-record-not-appearing.md
+                - name: Diese Abholoption wird nicht angezeigt
+                  href: troubleshoot/pickup-store-link-missing.md
+                - name: Einzelhandelsshop wird nicht in der Liste der Shops angezeigt
+                  href: troubleshoot/pickup-store-missing.md
+                - name: Artikel ohne Bestand können ausgecheckt werden
+                  href: troubleshoot/items-without-inventory-checked-out.md
+            - name: SDK-Problembehandlung
+              items:
+                - name: "E-Commerce-Entwicklungsumgebung zum Debuggen einer Retail Server-VM der Ebene\_1"
+                  href: troubleshoot/set-up-dev-environment-debugging.md
     - name: Entwicklung und Verwaltung von Finance and Operations-Apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
