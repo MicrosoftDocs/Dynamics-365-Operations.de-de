@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8ddefcdc2b2bbb5fe25e9a87396802cbbbfef72c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 99c238ecfbb6cb29f4fefefdca32525b99a01dc8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965076"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251330"
 ---
 # <a name="financial-reconciliation-in-retail-stores"></a>Finanzielle Abstimmung in Einzelhandelsgeschäften
 
 [!include [banner](includes/banner.md)]
 
-In Microsoft Dynamics 365 Commerce Version 10.0.10 und früher können Ladenangestellte und Filialleiter mit den vom POS-Client (Point of Sale, Verkaufsstelle) für Tagesendgeschäftsprozesse in Einzelhandelsgeschäften bereitgestellten Funktionen entsprechende Vorgänge durchführen. Beispielsweise können sie Kassenstürze durchführen, Schichten blind schließen, Schichttransaktionen abstimmen und Schichten schließen. POS bietet jedoch keine Möglichkeit, um die Finanzdaten für Schichten zu finalisieren, und kann somit zum Buchen der Finanzdaten in der Commerce-Zentrale verwendet werden. In der Regel sind die Filialleiter für diese Aufgabe verantwortlich. Bevor sie sich von einer Schicht abmelden können, müssen sie die Informationen überprüfen, erforderliche Korrekturen vornehmen und die Gesamtsummen für diese Schicht finalisieren. Die finalisierten Summen sollten dann in Finanzmodulen in der Commerce-Zentrale veröffentlicht werden.
+In Microsoft Dynamics 365 Commerce Version 10.0.10 und früher können Shopangestellte und Shopleiter mit den vom POS-Client (Point of Sale, Verkaufsstelle) für Tagesendgeschäftsprozesse in Einzelhandelsgeschäften bereitgestellten Funktionen entsprechende Vorgänge durchführen. Beispielsweise können sie Kassenstürze durchführen, Schichten blind schließen, Schichttransaktionen abstimmen und Schichten schließen. POS bietet jedoch keine Möglichkeit, um die Finanzdaten für Schichten zu finalisieren, und kann somit zum Buchen der Finanzdaten in der Commerce-Zentrale verwendet werden. In der Regel sind die Filialleiter für diese Aufgabe verantwortlich. Bevor sie sich von einer Schicht abmelden können, müssen sie die Informationen überprüfen, erforderliche Korrekturen vornehmen und die Gesamtsummen für diese Schicht finalisieren. Die finalisierten Summen sollten dann in Finanzmodulen in der Commerce-Zentrale veröffentlicht werden.
 
 Darüber hinaus können Filialleiter in Commerce Version 10.0.10 und früher die Auszugspositionen in der Commerce-Zentrale überprüfen und einige Anpassungen vornehmen. Die Funktionen sind jedoch begrenzt und Filialleiter haben selten Zugriff auf den Client der Commerce-Zentrale. Darüber hinaus kann die Überprüfung und Anpassung von Finanzaufstellungen im Einzelhandel nur dann erfolgen, wenn sie in der Commerce-Zentrale erstellt werden. Dieser Prozess läuft jedoch üblicherweise nachts ab. Daher müssen Filialleiter auf die Abmeldung von der Schicht warten, wenn Finanzaufstellungen für den Einzelhandel in der Commerce-Zentrale erstellt werden.
 

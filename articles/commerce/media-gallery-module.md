@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 045568797722a621ea4e6c82d10dbb266b9e8162
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e9b5a8123c64dce2ba65758f0312a899646cf948
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982465"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252557"
 ---
 # <a name="media-gallery-module"></a>Mediengaleriemodul
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema befasst sich mit Mediengaleriemodulen und beschreibt, wie diese Seiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
-
-## <a name="overview"></a>Übersicht
 
 Mediengaleriemodule zeigen ein oder mehrere Bilder in einer Katalogansicht. Mediengaleriemodule unterstützen Miniaturansichten, die horizontal (als Zeile unter dem Bild) oder vertikal angeordnet werden (als Spalte neben dem Bild). Mediengaleriemodule bieten auch Funktionen, mit denen Bilder gezoomt (vergrößert) oder im Vollbildmodus angezeigt werden können. Um in einem Mediengaleriemodul gerendert zu werden, muss ein Bild in der Medienbibliothek des Commerce Site Builder verfügbar sein. Derzeit unterstützen Mediengaleriemodule nur Bilder.
 

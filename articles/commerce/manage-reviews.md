@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0a70d0526fb2443605a6b11df3ee281d4dd12f1d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f8ab85605bce11934f71237ad1ef7cd24804319b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982565"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5250803"
 ---
 # <a name="manage-ratings-and-reviews"></a>Bewertungen und Prüfungen verwalten
 
@@ -36,7 +36,7 @@ Dynamics 365 Commerce verwendet Microsoft Azure Cognitive Service, um den Prüft
 
 - Moderieren Sie Prüfungen, indem Sie darauf antworten oder sie entfernen.
 - Löschen Sie die Bewertungen eines Kunden auf Kundenwunsch.
-- Importieren Sie Bewertungen und Überprüfungsdaten für alle Produkte in eine Power BI-Vorlage, damit Trends für Bewertungen und Überprüfungen analysiert werden können.
+- Führen Sie einen Massenimport von Bewertungen und Überprüfungsdaten für alle Produkte in eine Microsoft Power BI-Vorlage durch, damit Trends für Bewertungen und Überprüfungen analysiert werden können.
 
 ## <a name="read-a-review"></a>Lesen einer Prüfung 
 

@@ -15,12 +15,12 @@ ms.search.region: Germany
 ms.author: v-lenest
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 87758498c656e7c69a79f5cf7d5eb4aedccf90bf
-ms.sourcegitcommit: d0219c8dd80ef4de82b64195bc087dca3d7f2ff5
+ms.openlocfilehash: 3f36ad1d0c674a6d96037dd406cd0d3fea6868f0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "5073610"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246858"
 ---
 # <a name="vat-declaration-for-germany"></a>Umsatzsteuererklärung für Deutschland
 

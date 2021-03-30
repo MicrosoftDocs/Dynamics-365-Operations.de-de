@@ -16,12 +16,12 @@ ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 645107ec5885c1f4f2b341afebdb969ee8096373
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 51e142e9f4c6efd2d2121cb54285a395523f97c9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962813"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246846"
 ---
 # <a name="print-a-separate-label-for-credit-memos-that-originate-from-sales"></a>Eine separate Beschriftung für die Gutschriften, die vom Vertrieb stammen, drucken
 

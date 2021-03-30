@@ -14,12 +14,12 @@ ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8eaf87d63c2991a9c1ed4aace58b588adaa5bca4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 63c2b3eb40298b77e876b98d18517b497ac1123a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988293"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227856"
 ---
 # <a name="generate-german-audit-file"></a>Generieren Sie deutsche Protokolldatei
 

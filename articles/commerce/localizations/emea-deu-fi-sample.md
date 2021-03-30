@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8fc7f2aa60992fe14c3759e99fabb7c5e4c86ce9
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 50897f2a52a258d0366bf66242850f05ef6537d9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018883"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225729"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Integrationsbeispiel für Steuererfassungsdienst für Deutschland
 
@@ -29,7 +29,7 @@ ms.locfileid: "5018883"
 
 ## <a name="introduction"></a>Einführung
 
-Um die lokalen steuerlichen Anforderungen für Kassen in Deutschland zu erfüllen, umfassen die Microsoft Dynamics 365 Commerce-Funktionen für Deutschland eine Beispielintegration der Verkaufsstelle (POS) in einen externen Steuerregistrierungsservice. Das Beispiel erweitert die [steuerliche Integrationsfunktionen](fiscal-integration-for-retail-channel.md). Es basiert auf der [EFR (Electronisches Fiskalregister)](https://www.efsta.eu/de/fiskalloesungen/deutschland)-Lösung von [EFSTA](https://www.efsta.eu/de/) und ermöglicht die Kommunikation mit dem EFR-Service über das HTTPS-Protokoll. Der EFR-Dienst sollte entweder in der Retail Hardware station oder auf einem separaten Computer gehostet werden, zu dem von der Hardarestation aus eine Verbindung hergestellt werden kann. Das Beispiel wird in der Form eines Quellcodes bereitgestellt und ist Teil des Retail Software Development Kit (SDK).
+Um die lokalen fiskalischen Anforderungen für Registrierkassen in Deutschland zu erfüllen, enthält die Microsoft Dynamics 365 Commerce-Funktionalität für Deutschland eine Beispielintegration der Kasse mit einem externen fiskalischen Registrierungsdienst. Das Beispiel erweitert die [steuerliche Integrationsfunktionen](fiscal-integration-for-retail-channel.md). Es basiert auf der [EFR (Electronisches Fiskalregister)](https://www.efsta.eu/de/fiskalloesungen/deutschland)-Lösung von [EFSTA](https://www.efsta.eu/de/) und ermöglicht die Kommunikation mit dem EFR-Service über das HTTPS-Protokoll. Der EFR-Dienst sollte entweder in der Retail Hardware station oder auf einem separaten Computer gehostet werden, zu dem von der Hardarestation aus eine Verbindung hergestellt werden kann. Das Beispiel wird in der Form eines Quellcodes bereitgestellt und ist Teil des Retail Software Development Kit (SDK).
 
 Microsoft gibt keine Hardware, Software oder Dokumentation von EFSTA aus frei. Um Informationen darüber zu erhalten, wie Sie die EFR-Lösung beziehen und betreiben, wenden Sie sich an [EFSTA](https://www.efsta.eu/de/kontakt/kontakt).
 
