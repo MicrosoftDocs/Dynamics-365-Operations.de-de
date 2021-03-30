@@ -1,6 +1,6 @@
 ---
 title: Möglichkeiten zum Hinzufügen von Inhalten
-description: In diesem Thema finden Sie eine Übersicht und ausgewählte Links, über die Sie erfahren, wo und wie Sie Inhalte mit Microsoft Dynamics 365 Commerce Web-Authoring-Tool-Set für Site Builder verwalten können.
+description: In diesem Thema finden Sie eine Übersicht und ausgewählte Links, über die Sie erfahren, wo und wie Sie Inhalte mit dem Microsoft Dynamics 365 Commerce-Web-Authoring-Toolset für Site Builder verwalten können.
 author: phinneyridge
 manager: annbe
 ms.date: 10/09/2020
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d818ab91af7b1a74b580e145e4b602cca0ea1662
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: eb0b1c3f77bb71ba04c9110ed25fb80c2f2e61f4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980256"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208062"
 ---
 # <a name="ways-to-add-content"></a>Möglichkeiten zum Hinzufügen von Inhalten
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema finden Sie eine Übersicht und Links zur Dokumentation, wo und wie Sie Inhalte mit Microsoft Dynamics 365 Commerce Web-Authoring-Tool-Set für Site Builder verwalten können.
+In diesem Thema finden Sie eine Übersicht und Links zur Dokumentation, wo und wie Sie Inhalte mit dem Microsoft Dynamics 365 Commerce-Web-Authoring-Toolset für Site Builder verwalten können.
 
 ## <a name="overview"></a>Übersicht
 

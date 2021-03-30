@@ -1,6 +1,6 @@
 ---
 title: Aktivieren Sie die Azure Active Directory-Authentifizierung für die POS-Anmeldung
-description: In diesem Thema wird erläutert, wie die Anmeldung für die Microsoft Dynamics 365 Commerce POS (Point of Sale) so konfiguriert wird, dass sie die Azure Active Directory Authentifizierung verwendet.
+description: In diesem Thema wird erläutert, wie die Anmeldung für die Microsoft Dynamics 365 Commerce-POS (Point of Sale) so konfiguriert wird, dass sie die Azure Active Directory-Authentifizierung verwendet.
 author: boycezhu
 manager: annbe
 ms.date: 07/27/2020
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: d6073a04814adf8237b4caa952b31b011f4b34bf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 234d19bb6659af07c65763e05671742b9581e244
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982739"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206678"
 ---
-# <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Aktivieren Sie die Azure Active Directory-Authentifizierung für die POS-Anmeldung
+# <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Azure Active Directory-Authentifizierung bei POS-Anmeldung aktivieren
 [!include [banner](includes/banner.md)]
 
 
-Viele Kunden, die Microsoft Dynamics 365 Commerce verwenden, nutzen auch andere Cloud-Dienste von Microsoft, und sie könnten Azure Active Directory (Azure AD) verwenden, um die Benutzeranmeldeinformationen für diese Dienste zu verwalten. In diesen Fällen möchten die Kunden möglicherweise anwendungsübergreifend dasselbe Azure AD-Konto verwenden. In diesem Thema wird erläutert, wie die Anmeldemöglichkeit am POS (Point of Sale) für die Verwendung der Azure AD-Authentifizierung konfiguriert wird.
+Viele Kunden, die Microsoft Dynamics 365 Commerce verwenden, nutzen auch andere Clouddienste von Microsoft, und sie könnten Azure Active Directory (Azure AD) verwenden, um die Benutzeranmeldeinformationen für diese Dienste zu verwalten. In diesen Fällen möchten die Kunden möglicherweise anwendungsübergreifend dasselbe Azure AD-Konto verwenden. In diesem Thema wird erläutert, wie die Anmeldemöglichkeit am POS (Point of Sale) für die Verwendung der Azure AD-Authentifizierung konfiguriert wird.
 
 ## <a name="configure-azure-ad-authentication"></a>Konfigurieren der Azure AD-Authentifizierung
 

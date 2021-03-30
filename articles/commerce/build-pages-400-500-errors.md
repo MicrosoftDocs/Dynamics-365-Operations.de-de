@@ -1,6 +1,6 @@
 ---
 title: Erstellen von benutzerdefinierte Antwortseiten für Fehler mit 4xx/5xx-Statuscodes
-description: In diesem Thema wird beschrieben, wie benutzerdefinierte Antwortseiten für 4xx und 5xx Statuscodefehler mithilfe von Erstellungstools in Microsoft Dynamics 365 Commerce erstellt werden.
+description: In diesem Thema wird beschrieben, wie benutzerdefinierte Antwortseiten für 4xx- und 5xx-Statuscodefehler mithilfe von Erstellungstools in Microsoft Dynamics 365 Commerce erstellt werden.
 author: v-chgri
 manager: annbe
 ms.date: 04/14/2020
@@ -16,19 +16,19 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d21ce20b2c7ac8c656a718749dabd76f33893da8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ee2f74581ded6020d075377f931c465d7c89f9e5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991464"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211104"
 ---
-# <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Erstellen von benutzerdefinierte Antwortseiten für Fehler mit 4xx/5xx-Statuscodes
+# <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Benutzerdefinierte Antwortseiten bei Fehlern mit 4xx/5xx-Statuscodes erstellen
 
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie benutzerdefinierte Antwortseiten für 4xx und 5xx Statuscodefehler mithilfe von Erstellungstools in Microsoft Dynamics 365 Commerce erstellt werden.
+In diesem Thema wird beschrieben, wie benutzerdefinierte Antwortseiten für 4xx- und 5xx-Statuscodefehler mithilfe von Erstellungstools in Microsoft Dynamics 365 Commerce erstellt werden.
 
 ## <a name="overview"></a>Übersicht
 
