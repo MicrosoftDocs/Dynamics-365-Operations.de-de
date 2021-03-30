@@ -1,6 +1,6 @@
 ---
 title: Breadcrumb-Modul
-description: Dieses Thema enthält Breadcrumb-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieses Thema behandelt Breadcrumb-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
 ms.date: 10/20/2020
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1883281c62575ae0b48b6e584876185bb179b4f4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 06f8ffdecd1f77468ed88043929f29b6957c2e6f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986078"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206558"
 ---
 # <a name="breadcrumb-module"></a>Breadcrumb-Modul
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Breadcrumb-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
-
-## <a name="overview"></a>Übersicht
+Dieses Thema behandelt Breadcrumb-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
 Breadcrumb-Module werden verwendet, um eine sekundäre Navigation auf Websiteseiten bereitzustellen. Sie werden normalerweise oben auf einer Seite unterhalb der Kopfzeile angezeigt. Obwohl Breadcrumb-Module zu jeder Seite hinzugefügt werden können, werden sie am häufigsten auf Produktdetailseiten (PDPs) verwendet, um die Produktkategoriehierarchie anzuzeigen und eine schnelle Möglichkeit zum Bewegen auf einer Site bereitzustellen. Ein Breadcrumb-Modul kann auch verwendet werden, um einen Link Zurück zu Ergebnissen anzuzeigen, wenn Benutzer einen PDP über eine Such- oder Listenseite öffnen. Auf diese Weise können Benutzer schnell zu ihrer gefilterten Listenseite zurückkehren, um mit dem Einkaufen fortzufahren.
 

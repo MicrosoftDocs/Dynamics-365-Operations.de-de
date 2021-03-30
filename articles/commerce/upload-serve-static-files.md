@@ -1,6 +1,6 @@
 ---
-title: Statische Dateien hochladen und bedienen
-description: In diesem Thema wird beschrieben, wie Sie eine statische Datei in Microsoft Dynamics 365 Commerce-Website-Generator hochladen und wie Sie eine benutzerdefinierte URL und Dateiname erstellen, die für die Anforderung dieser Datei verwendet werden können.
+title: Statische Dateien hochladen und bereitstellen
+description: In diesem Thema wird beschrieben, wie Sie eine statische Datei im Microsoft Dynamics 365 Commerce Site Builder hochladen, und wie Sie eine benutzerdefinierte URL und Dateiname erstellen, die für die Anforderung dieser Datei verwendet werden können.
 author: StuHarg
 manager: annbe
 ms.date: 11/16/2020
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 1d709d99737ad05af1fb19d9f3ef7b87a8db80d3
-ms.sourcegitcommit: da17648c296b22d517eadb2f71c7803672e5648d
+ms.openlocfilehash: aba9dde2ed9d5fa09e92fcdd784a53f208930eda
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "5031819"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211018"
 ---
-# <a name="upload-and-serve-static-files"></a>Statische Dateien hochladen und bedienen
+# <a name="upload-and-serve-static-files"></a>Statische Dateien hochladen und bereitstellen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie eine statische Datei in Microsoft Dynamics 365 Commerce-Website-Generator hochladen und wie Sie eine benutzerdefinierte URL und Dateiname erstellen, die für die Anforderung dieser Datei verwendet werden können.
+In diesem Thema wird beschrieben, wie Sie eine statische Datei im Microsoft Dynamics 365 Commerce Site Builder hochladen, und wie Sie eine benutzerdefinierte URL und Dateiname erstellen, die für die Anforderung dieser Datei verwendet werden können.
 
 Bei einigen Connectors von Drittanbietern muss eine Datei von der E-Commerce-Website gehostet und von ihr aus bereitgestellt werden. Diese Connectors erwarten, dass die Datei durch Anforderungen an einen bestimmten Rückruf-URL-Pfad und Dateinamen zurückgegeben wird. In diesem Thema wird daher erläutert, wie Sie eine statische Datei mit einer benutzerdefinierbaren URL und einem Dateinamen auf eine statische Dynamics 365 Commerce-E-Commerce-Website hochladen und auf dieser bedienen.
 

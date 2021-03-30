@@ -1,6 +1,6 @@
 ---
 title: Wenden Sie Inventareinstellungen an
-description: In diesem Thema werden Inventareinstellungen behandelt und beschrieben, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
+description: Dieses Thema behandelt Inventareinstellungen und beschreibt, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
 author: anupamar-ms
 manager: annbe
 ms.date: 09/15/2020
@@ -17,18 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 77a3bde12fd047e15d7730903416cdb5263a8cd9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5d3737ee1534dd973a35e2ef64f1d58d5a74d5b3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972808"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211348"
 ---
-# <a name="apply-inventory-settings"></a>Wenden Sie Inventareinstellungen an
+# <a name="apply-inventory-settings"></a>Bestandseinstellungen anwenden
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden Inventareinstellungen behandelt und beschrieben, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
+Dieses Thema behandelt Inventareinstellungen und beschreibt, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
 
 ## <a name="overview"></a>Übersicht
 
