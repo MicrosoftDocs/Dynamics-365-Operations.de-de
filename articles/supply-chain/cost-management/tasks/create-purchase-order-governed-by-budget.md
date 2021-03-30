@@ -14,50 +14,53 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbfbbef3bd7c7398f0f17b6cddbbff8c4755638d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 100db102f74d477bcfde48a24828b817fd65e033
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963712"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239502"
 ---
-# <a name="create-a-purchase-order-governed-by-budget"></a><span data-ttu-id="ef042-103">Eine durch das Budget gesteuerte Bestellung erstellen</span><span class="sxs-lookup"><span data-stu-id="ef042-103">Create a purchase order governed by budget</span></span>
+# <a name="create-a-purchase-order-governed-by-budget"></a><span data-ttu-id="5a8da-103">Eine durch das Budget gesteuerte Bestellung erstellen</span><span class="sxs-lookup"><span data-stu-id="5a8da-103">Create a purchase order governed by budget</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ef042-104">Erstellen Sie mit diesem Verfahren eine Bestellung, die auf einem verfügbaren Budget basiert.</span><span class="sxs-lookup"><span data-stu-id="ef042-104">Use this procedure to create a purchase order that is checked for available budget.</span></span> <span data-ttu-id="ef042-105">Für diese Aufzeichnung wird das Demo-Datenunternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="ef042-105">This recording uses the USMF demo data company.</span></span>
+<span data-ttu-id="5a8da-104">Erstellen Sie mit diesem Verfahren eine Bestellung, die auf einem verfügbaren Budget basiert.</span><span class="sxs-lookup"><span data-stu-id="5a8da-104">Use this procedure to create a purchase order that is checked for available budget.</span></span> <span data-ttu-id="5a8da-105">Für diese Aufzeichnung wird das Demo-Datenunternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="5a8da-105">This recording uses the USMF demo data company.</span></span>
 
 
-## <a name="review-the-budget-control-configuration"></a><span data-ttu-id="ef042-106">Budgetsteuerungskonfiguration überprüfen.</span><span class="sxs-lookup"><span data-stu-id="ef042-106">Review the budget control configuration</span></span>
-1. <span data-ttu-id="ef042-107">Klicken auf Budgetierung >Einrichtung > Budgetsteuerung > Budgetsteuerungskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="ef042-107">Go to Budgeting > Setup > Budget control > Budget control configuration.</span></span>
-2. <span data-ttu-id="ef042-108">Klicken Sie auf verfügbare Budgetmittel.</span><span class="sxs-lookup"><span data-stu-id="ef042-108">Click the Budget funds available tab.</span></span>
-3. <span data-ttu-id="ef042-109">Klicken Sie auf die Dokument- und Erfassungsregisterkarte.</span><span class="sxs-lookup"><span data-stu-id="ef042-109">Click the Documents and journals tab.</span></span>
-4. <span data-ttu-id="ef042-110">Klicken Sie auf die Registerkarte Budgetsteuerregel definieren.</span><span class="sxs-lookup"><span data-stu-id="ef042-110">Click the Define budget control rules tab.</span></span>
-5. <span data-ttu-id="ef042-111">Klicken Sie auf die Registerkarte Budgetgruppe definieren.</span><span class="sxs-lookup"><span data-stu-id="ef042-111">Click the Define budget groups tab.</span></span>
-6. <span data-ttu-id="ef042-112">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ef042-112">Close the page.</span></span>
+## <a name="review-the-budget-control-configuration"></a><span data-ttu-id="5a8da-106">Budgetsteuerungskonfiguration überprüfen.</span><span class="sxs-lookup"><span data-stu-id="5a8da-106">Review the budget control configuration</span></span>
+1. <span data-ttu-id="5a8da-107">Klicken auf Budgetierung >Einrichtung > Budgetsteuerung > Budgetsteuerungskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="5a8da-107">Go to Budgeting > Setup > Budget control > Budget control configuration.</span></span>
+2. <span data-ttu-id="5a8da-108">Klicken Sie auf verfügbare Budgetmittel.</span><span class="sxs-lookup"><span data-stu-id="5a8da-108">Click the Budget funds available tab.</span></span>
+3. <span data-ttu-id="5a8da-109">Klicken Sie auf die Dokument- und Erfassungsregisterkarte.</span><span class="sxs-lookup"><span data-stu-id="5a8da-109">Click the Documents and journals tab.</span></span>
+4. <span data-ttu-id="5a8da-110">Klicken Sie auf die Registerkarte Budgetsteuerregel definieren.</span><span class="sxs-lookup"><span data-stu-id="5a8da-110">Click the Define budget control rules tab.</span></span>
+5. <span data-ttu-id="5a8da-111">Klicken Sie auf die Registerkarte Budgetgruppe definieren.</span><span class="sxs-lookup"><span data-stu-id="5a8da-111">Click the Define budget groups tab.</span></span>
+6. <span data-ttu-id="5a8da-112">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5a8da-112">Close the page.</span></span>
 
-## <a name="create-the-purchase-order-header"></a><span data-ttu-id="ef042-113">Erstellen Sie den Bestellkopf</span><span class="sxs-lookup"><span data-stu-id="ef042-113">Create the purchase order header</span></span>
-1. <span data-ttu-id="ef042-114">Wechseln Sie zu "Beschaffung" > "Bestellung" > "Alle Bestellungen".</span><span class="sxs-lookup"><span data-stu-id="ef042-114">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="ef042-115">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ef042-115">Click New.</span></span>
-3. <span data-ttu-id="ef042-116">Geben Sie im Feld "Kreditorenkonto" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="ef042-116">In the Vendor account field, enter or select a value.</span></span>
-4. <span data-ttu-id="ef042-117">Erweitern Sie den Abschnitt "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="ef042-117">Expand the General section.</span></span>
-5. <span data-ttu-id="ef042-118">Wählen Sie im Feld Buchhaltungsdatum das Datum auf 2016-01-01 fest.</span><span class="sxs-lookup"><span data-stu-id="ef042-118">In the Accounting date field, set the date to '2016-01-01'.</span></span>
-6. <span data-ttu-id="ef042-119">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="ef042-119">Click OK.</span></span>
+## <a name="create-the-purchase-order-header"></a><span data-ttu-id="5a8da-113">Erstellen Sie den Bestellkopf</span><span class="sxs-lookup"><span data-stu-id="5a8da-113">Create the purchase order header</span></span>
+1. <span data-ttu-id="5a8da-114">Wechseln Sie zu "Beschaffung" > "Bestellung" > "Alle Bestellungen".</span><span class="sxs-lookup"><span data-stu-id="5a8da-114">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="5a8da-115">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="5a8da-115">Click New.</span></span>
+3. <span data-ttu-id="5a8da-116">Geben Sie im Feld "Kreditorenkonto" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="5a8da-116">In the Vendor account field, enter or select a value.</span></span>
+4. <span data-ttu-id="5a8da-117">Erweitern Sie den Abschnitt "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="5a8da-117">Expand the General section.</span></span>
+5. <span data-ttu-id="5a8da-118">Wählen Sie im Feld Buchhaltungsdatum das Datum auf 2016-01-01 fest.</span><span class="sxs-lookup"><span data-stu-id="5a8da-118">In the Accounting date field, set the date to '2016-01-01'.</span></span>
+6. <span data-ttu-id="5a8da-119">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5a8da-119">Click OK.</span></span>
 
-## <a name="add-a-purchase-order-line"></a><span data-ttu-id="ef042-120">Fügen Sie eine Bestellposition hinzu</span><span class="sxs-lookup"><span data-stu-id="ef042-120">Add a purchase order line</span></span>
-1. <span data-ttu-id="ef042-121">Geben Sie im Feld "Beschaffungskategorie" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="ef042-121">In the Procurement category field, enter or select a value.</span></span>
-2. <span data-ttu-id="ef042-122">Legen Sie "Menge" auf "2" fest.</span><span class="sxs-lookup"><span data-stu-id="ef042-122">Set Quantity to '2'.</span></span>
-3. <span data-ttu-id="ef042-123">Geben Sie im Feld 'Einheit' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="ef042-123">In the Unit field, enter or select a value.</span></span>
-4. <span data-ttu-id="ef042-124">Legen Sie "Preis je Einheit" auf "10000" fest.</span><span class="sxs-lookup"><span data-stu-id="ef042-124">Set Unit price to '10000'.</span></span>
-5. <span data-ttu-id="ef042-125">Klicken Sie auf "Finanzdaten".</span><span class="sxs-lookup"><span data-stu-id="ef042-125">Click Financials.</span></span>
-6. <span data-ttu-id="ef042-126">Verteilungsbeträge anzeigen</span><span class="sxs-lookup"><span data-stu-id="ef042-126">Click Distribute amounts.</span></span>
-7. <span data-ttu-id="ef042-127">Geben Sie im Feld "Sachkonto" den Wert 601300-001-023-- an.</span><span class="sxs-lookup"><span data-stu-id="ef042-127">In the Ledger account field, specify the value '601300-001-023--'.</span></span>
-8. <span data-ttu-id="ef042-128">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ef042-128">Close the page.</span></span>
+## <a name="add-a-purchase-order-line"></a><span data-ttu-id="5a8da-120">Fügen Sie eine Bestellposition hinzu</span><span class="sxs-lookup"><span data-stu-id="5a8da-120">Add a purchase order line</span></span>
+1. <span data-ttu-id="5a8da-121">Geben Sie im Feld "Beschaffungskategorie" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="5a8da-121">In the Procurement category field, enter or select a value.</span></span>
+2. <span data-ttu-id="5a8da-122">Legen Sie "Menge" auf "2" fest.</span><span class="sxs-lookup"><span data-stu-id="5a8da-122">Set Quantity to '2'.</span></span>
+3. <span data-ttu-id="5a8da-123">Geben Sie im Feld 'Einheit' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="5a8da-123">In the Unit field, enter or select a value.</span></span>
+4. <span data-ttu-id="5a8da-124">Legen Sie "Preis je Einheit" auf "10000" fest.</span><span class="sxs-lookup"><span data-stu-id="5a8da-124">Set Unit price to '10000'.</span></span>
+5. <span data-ttu-id="5a8da-125">Klicken Sie auf "Finanzdaten".</span><span class="sxs-lookup"><span data-stu-id="5a8da-125">Click Financials.</span></span>
+6. <span data-ttu-id="5a8da-126">Verteilungsbeträge anzeigen</span><span class="sxs-lookup"><span data-stu-id="5a8da-126">Click Distribute amounts.</span></span>
+7. <span data-ttu-id="5a8da-127">Geben Sie im Feld "Sachkonto" den Wert 601300-001-023-- an.</span><span class="sxs-lookup"><span data-stu-id="5a8da-127">In the Ledger account field, specify the value '601300-001-023--'.</span></span>
+8. <span data-ttu-id="5a8da-128">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5a8da-128">Close the page.</span></span>
 
-## <a name="perform-budget-checking"></a><span data-ttu-id="ef042-129">Budgetprüfung ausführen</span><span class="sxs-lookup"><span data-stu-id="ef042-129">Perform budget checking</span></span>
-1. <span data-ttu-id="ef042-130">Klicken Sie auf "Finanzdaten".</span><span class="sxs-lookup"><span data-stu-id="ef042-130">Click Financials.</span></span>
-2. <span data-ttu-id="ef042-131">Budgetprüfung ausführen anklicken.</span><span class="sxs-lookup"><span data-stu-id="ef042-131">Click Perform budget checking.</span></span>
-3. <span data-ttu-id="ef042-132">Klicken Sie auf "Finanzdaten".</span><span class="sxs-lookup"><span data-stu-id="ef042-132">Click Financials.</span></span>
-4. <span data-ttu-id="ef042-133">Klicken Sie auf Fehler oder Warnungen der Budgetprüfung anzeigen.</span><span class="sxs-lookup"><span data-stu-id="ef042-133">Click Budget check errors or warnings.</span></span>
-5. <span data-ttu-id="ef042-134">Klicken Sie auf "Schließen".</span><span class="sxs-lookup"><span data-stu-id="ef042-134">Click Close.</span></span>
+## <a name="perform-budget-checking"></a><span data-ttu-id="5a8da-129">Budgetprüfung ausführen</span><span class="sxs-lookup"><span data-stu-id="5a8da-129">Perform budget checking</span></span>
+1. <span data-ttu-id="5a8da-130">Klicken Sie auf "Finanzdaten".</span><span class="sxs-lookup"><span data-stu-id="5a8da-130">Click Financials.</span></span>
+2. <span data-ttu-id="5a8da-131">Budgetprüfung ausführen anklicken.</span><span class="sxs-lookup"><span data-stu-id="5a8da-131">Click Perform budget checking.</span></span>
+3. <span data-ttu-id="5a8da-132">Klicken Sie auf "Finanzdaten".</span><span class="sxs-lookup"><span data-stu-id="5a8da-132">Click Financials.</span></span>
+4. <span data-ttu-id="5a8da-133">Klicken Sie auf Fehler oder Warnungen der Budgetprüfung anzeigen.</span><span class="sxs-lookup"><span data-stu-id="5a8da-133">Click Budget check errors or warnings.</span></span>
+5. <span data-ttu-id="5a8da-134">Klicken Sie auf "Schließen".</span><span class="sxs-lookup"><span data-stu-id="5a8da-134">Click Close.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
