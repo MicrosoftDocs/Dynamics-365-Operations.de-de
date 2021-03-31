@@ -1,6 +1,6 @@
 ---
-title: Dynamische E-Commerce-Seiten basierend auf URL-Parametern erstellen
-description: In diesem Thema wird erläutert, wie Sie eine E-Commerce-Seite in Microsoft Dynamics 365 Commerce erstellen, die basierend auf URL-Parametern dynamischen Inhalt bereitstellen kann.
+title: Dynamische E-Commerce-Seiten anhand von URL-Parametern erstellen
+description: In diesem Thema wird erläutert, wie Sie eine E-Commerce-Seite in Microsoft Dynamics 365 Commerce einrichten, die basierend auf URL-Parametern dynamischen Inhalt bereitstellen kann.
 author: StuHarg
 manager: AnnBe
 ms.date: 01/28/2021
@@ -17,19 +17,19 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e72b738133b396848848d167cace80fe23694334
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 8d6b4756fc81dc99786da251d5d9a575a71ccc49
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5098627"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208014"
 ---
-# <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Dynamische E-Commerce-Seiten basierend auf URL-Parametern erstellen
+# <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Dynamische E-Commerce-Seiten anhand von URL-Parametern erstellen
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-In diesem Thema wird erläutert, wie Sie eine E-Commerce-Seite in Microsoft Dynamics 365 Commerce erstellen, die basierend auf URL-Parametern dynamischen Inhalt bereitstellen kann.
+In diesem Thema wird erläutert, wie Sie eine E-Commerce-Seite in Microsoft Dynamics 365 Commerce einrichten, die basierend auf URL-Parametern dynamischen Inhalt bereitstellen kann.
 
 Eine E-Commerce-Seite kann so konfiguriert werden, dass sie unterschiedliche Inhalte basierend auf einem Segment im URL-Pfad bereitstellt. Daher wird die Seite als dynamische Seite bezeichnet. Das Segment wird als Parameter zum Abrufen des Seiteninhalts verwendet. So wird beispielsweise eine Seite namens **Blog\_Zuschauer** erstellt und der URL `https://fabrikam.com/blog` zugeordnet. Diese Seite kann dann verwendet werden, um unterschiedliche Inhalte basierend auf dem letzten Segment im URL-Pfad anzuzeigen. Zum Beispiel ist das letzte Segment in der URL `https://fabrikam.com/blog/article-1` **Artikel-1**.
 

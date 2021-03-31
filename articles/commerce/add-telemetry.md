@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dfebc6616186a3a8859b00e90c178129feaa324b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e035c767474cba19c3a31eafdefb08b422b564ba
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980156"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209202"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie
 
@@ -34,7 +34,7 @@ In diesem Thema wird beschrieben, wie ein clientseitiger Skriptcode den Standort
 Internet-Analyse ist ein wichtiges Tool, wenn Sie verstehen möchten, wie Ihre Debitoren mit der Site interagieren und Entscheidungen treffen, die Ihnen helfen, die Erfahrung für maximale Umrechnung zu optimieren. Viele Internet-Analysepakete sind verfügbar, um zu helfen, diese Ziele zu erreichen wie Google Analytics, Clicky, Moz-Analyse und KISSMetrics. Die meisten Internet-Analysepakete erfordern, dass Sie clientseitigen Scriptcode im **\<head\>**-Element der HTML für alle Seiten Ihrer Website hinzufügen.
 
 > [!NOTE]
-> Die Anweisungen in diesem Thema gelten auch für benutzerdefinierte clientseitige andere Funktionen, die Microsoft Dynamics 365 Commerce System intern nicht bereitstellt.
+> Die Anweisungen in diesem Thema gelten auch für andere benutzerdefinierte clientseitige Funktionen, die Microsoft Dynamics 365 Commerce intern nicht bereitstellt.
 
 ## <a name="create-a-reusable-fragment-for-your-script-code"></a>Erstellen Sie ein wiederverwendbares Fragment für Ihren Skriptcode
 

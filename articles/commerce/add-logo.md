@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen eines Logos
+title: Logo hinzufügen
 description: In diesem Thema wird beschrieben, wie Sie ein Logo zu Ihrer Site in Microsoft Dynamics 365 Commerce hinzufügen.
 author: bicyclingfool
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 073c3d6f8d5ee88d51efb41f6b9c1a204b82fa12
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 143c1ab33547119ceab0a4fba165669bc8b22bf4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980306"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207578"
 ---
-# <a name="add-a-logo"></a>Hinzufügen eines Logos
+# <a name="add-a-logo"></a>Logo hinzufügen
 
 [!include [banner](includes/banner.md)]
 

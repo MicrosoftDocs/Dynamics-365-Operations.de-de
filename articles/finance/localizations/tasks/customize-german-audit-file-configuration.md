@@ -15,12 +15,12 @@ ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c0dfe70c6784b742573803a6a28fda56d764574
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 06d0440c6e20cffa73ac573e7e34b01571e29226
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964500"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207193"
 ---
 # <a name="customize-german-audit-file-configuration"></a>Anpassen der deutschen Protokolldateikonfiguration
 

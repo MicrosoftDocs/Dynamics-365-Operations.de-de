@@ -16,12 +16,12 @@ ms.search.region: Austria
 ms.author: sndray
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: cbfdb8bf47ed2d1067ab85d1a041179794a1a103
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e1cebf6b5efe216f6cc2573537f36b52f6f89cea
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988342"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209886"
 ---
 # <a name="half-year-depreciation-on-additional-acquisitions-for-austria"></a>Halbjährliche Abschreibung auf sonstige Anschaffungen für Österreich
 

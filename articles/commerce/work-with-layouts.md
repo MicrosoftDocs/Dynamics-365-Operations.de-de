@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit Voreinstellungslayouts
-description: In diesem Thema wird beschrieben, wie Sie mit vordefinierten Layouts in Microsoft Dynamics 365 Commerce arbeiten.
+description: In diesem Thema wird beschrieben, wie Sie in Microsoft Dynamics 365 Commerce mit vordefinierten Layouts arbeiten.
 author: phinneyridge
 manager: annbe
 ms.date: 04/14/2020
@@ -16,19 +16,19 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 57dc0de64ce7536cf70c1f277d5212c3b8dd7480
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a2539880e76ffb1861e0d18227a935a2ef35c120
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009592"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210874"
 ---
 # <a name="work-with-preset-layouts"></a>Arbeiten mit Voreinstellungslayouts
 
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie mit vordefinierten Layouts in Microsoft Dynamics 365 Commerce arbeiten.
+In diesem Thema wird beschrieben, wie Sie in Microsoft Dynamics 365 Commerce mit vordefinierten Layouts arbeiten.
 
 ## <a name="overview"></a>Übersicht
 

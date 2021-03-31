@@ -1,5 +1,5 @@
 ---
-title: Kontoverwaltungsseiten und Module
+title: Seiten und Module zur Kontenverwaltung
 description: In diesem Thema werden Kundenbetreuungsseiten und Module in Microsoft Dynamics 365 Commerce behandelt.
 author: v-chgri
 manager: annbe
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6c465b8883438eee886b177274bf89ddb86aa00b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 29523d03fb687684dae7d0ce08208905cce702df
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980555"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206630"
 ---
-# <a name="account-management-pages-and-modules"></a>Kontoverwaltungsseiten und Module
+# <a name="account-management-pages-and-modules"></a>Seiten und Module zur Kontenverwaltung
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema werden Kundenbetreuungsseiten und Module in Microsoft Dynamics 365 Commerce behandelt.
-
-## <a name="overview"></a>Übersicht
 
 Kundenbetreuung bezieht sich auf eine Gruppe von Seiten, die benötigt wird, um Konto-zugeordnete Benutzerinformationen in Dynamics 365 Commerce zu verwalten. Zu den Kontoverwaltungsseiten gehören die Startseite, die Benutzerprofilseite, die Benutzeradressenseite, der Bestellverlauf, die Bestelldetailseite, Treuepunkteseite und die Wunschlistenseite.
 

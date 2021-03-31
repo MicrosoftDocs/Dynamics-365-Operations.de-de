@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6639de250557ce9a25fc2cde3807abf64b0ddc18
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: def99a34404357e28501de5ccf11c6130d53f34f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993449"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213817"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Optionale Funktionen für eine Dynamics 365 Commerce-Auswertungsumgebung konfigurieren
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Optionale Funktionen für eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
 
 [!include [banner](includes/banner.md)]
 
@@ -102,7 +102,7 @@ Für jedes Transaktionsereignis, für das Sie E-Mails senden möchten, müssen S
 
 Möglicherweise möchten Sie die E-Mail-Vorlagen so anpassen, dass sie unterschiedliche Bilder verwenden. Oder Sie möchten die Links in den Vorlagen aktualisieren, damit sie in Ihre Auswertungsumgebung gelangen. In dieser Prozedur wird erläutert, wie Sie die Standardvorlagen herunterladen, anpassen und die Vorlagen im System aktualisieren.
 
-1. Laden Sie über einen Webbrowser die [Microsoft Dynamics 365 Commerce--Auswertungsstandard-E-Mail-Vorlagen-ZIP-Datei](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) auf Ihren lokalen Computer herunter. Diese Datei enthält die folgenden HTML-Dokumente:
+1. Laden Sie über einen Webbrowser die [Microsoft Dynamics 365 Commerce-Auswertungsstandard-E-Mail-Vorlagen-ZIP-Datei](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) auf Ihren lokalen Computer herunter. Diese Datei enthält die folgenden HTML-Dokumente:
 
     - Auftragsbestätigungsvorlage
     - Geschenkkartenvorlage ausstellen
@@ -133,17 +133,17 @@ Diese Token werden beim Rendern per E-Mail durch die tatsächlichen Werte ersetz
 
 Die folgenden Token gelten für den gesamten Auftrag.
 
-| Name des Token | Token  |
+| Name des Token | Token |
 |-------------------|-------|
-| Auftragsnummer      | %salesid% |
+| Bestellnummer      | %salesid% |
 | Debitorenname   | %customername% |
 | Lieferadresse  | %deliveryaddress% |
 | Rechnungsadresse   | %customeraddress% |
-| Spätestens        | %shipdate% |
+| Auftragsdatum        | %shipdate% |
 | Liefermodus     | %modeofdelivery% |
 | Skonto          | %discount% |
 | Mehrwertsteuer         | %tax% |
-| Bestellung gesamt       | %total% |
+| Auftrag gesamt       | %total% |
 
 #### <a name="sales-line"></a>Verkaufsposition
 
@@ -159,7 +159,7 @@ Die folgenden Token werden durch Werte für jedes Produkt im Auftrag ersetzt.
 | Produktname           | %lineproductname% |
 | Beschreibung            | %lineproductdescription% |
 | Leistung               | %linequantity% |
-| Preiseinheit der Position        | %lineprice% (prüfen) |
+| Preiseinheit der Position        | %lineprice% (verifizieren) |
 | Positionsartikel gesamt        | %linenetamount% |
 | Positionsrabatt          | %linediscount% |
 | Versanddatum              | %lineshipdate% |
@@ -169,7 +169,7 @@ Die folgenden Token werden durch Werte für jedes Produkt im Auftrag ersetzt.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Dynamics 365 Commerce-Auswertungsumgebung – Übersicht](cpe-overview.md)
+[Dynamics 365 Commerce-Evaluierungsumgebung – Übersicht](cpe-overview.md)
 
 [Bereitstellen einer Dynamics 365 Commerce-Auswertungsumgebung](provisioning-guide.md)
 
