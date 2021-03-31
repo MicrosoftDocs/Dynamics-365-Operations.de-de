@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32d99d9e90b65f7cac74176d21fa4b053ae8f62c
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: f11dbd6dc67ffccb087f67f5ce6267fe94e0ee65
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130754"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219986"
 ---
 # <a name="adjust-leases"></a>Mietverträge anpassen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie Sie einen Mietvertrag anpassen. Eine Regulierung kann erforderlich sein, wenn die Mietbedingungen geändert, der Mietvertrag verlängert oder andere Umstände geändert werden. Das Anlagenleasing entspricht den Richtlinien, die das Thema 842 zur Kodifizierung von Rechnungslegungsstandards (ASC 842) und der International Financial Reporting Standard 16 (IFRS 16) zu Änderungen von Mietverträgen enthalten. ASC 842-20-15-1 definiert eine Mietvertragsänderung als jede Änderung der Vertragsbedingungen, die eine Änderung des Umfangs oder der Gegenleistung eines Mietvertrags bewirkt. Gemäß Paragraph 39 von IFRS 16 muss ein Mieter die Leasingverbindlichkeit neu bewerten, damit sie Änderungen der Mietzahlungen widerspiegelt.
 
