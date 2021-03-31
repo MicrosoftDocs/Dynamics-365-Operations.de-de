@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen einer Begrüßungsnachricht
-description: In diesem Thema wird beschrieben, wie eine Begrüßungsmeldung Ihrer Microsoft Dynamics 365 Commerce hinzugefügt wird.
+description: In diesem Thema wird beschrieben, wie eine Begrüßungsmeldung Ihrer Microsoft Dynamics 365 Commerce-Website hinzugefügt wird.
 author: psimolin
 manager: annbe
 ms.date: 04/13/2020
@@ -16,54 +16,57 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5910ab85b1b0b2df992a24ad3cf7a032e7b98ea9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d17ad7cfd6f11e84fdd1c8ebccca6f786b83c62d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980131"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209154"
 ---
-# <a name="add-a-welcome-message"></a><span data-ttu-id="54445-103">Hinzufügen einer Begrüßungsnachricht</span><span class="sxs-lookup"><span data-stu-id="54445-103">Add a welcome message</span></span>
+# <a name="add-a-welcome-message"></a><span data-ttu-id="abd13-103">Hinzufügen einer Begrüßungsnachricht</span><span class="sxs-lookup"><span data-stu-id="abd13-103">Add a welcome message</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="54445-104">In diesem Thema wird beschrieben, wie eine Begrüßungsmeldung Ihrer Microsoft Dynamics 365 Commerce hinzugefügt wird.</span><span class="sxs-lookup"><span data-stu-id="54445-104">This topic describes how to add a welcome message to your Microsoft Dynamics 365 Commerce website.</span></span>
+<span data-ttu-id="abd13-104">In diesem Thema wird beschrieben, wie eine Begrüßungsmeldung Ihrer Microsoft Dynamics 365 Commerce-Website hinzugefügt wird.</span><span class="sxs-lookup"><span data-stu-id="abd13-104">This topic describes how to add a welcome message to your Microsoft Dynamics 365 Commerce website.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="54445-105">Übersicht</span><span class="sxs-lookup"><span data-stu-id="54445-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="abd13-105">Übersicht</span><span class="sxs-lookup"><span data-stu-id="abd13-105">Overview</span></span>
 
-<span data-ttu-id="54445-106">Eine Begrüßungsmeldung auf der E-Commerce-Website kann Besucher über laufende Verkäufe, Siteaktualisierungen oder verfügbaren saisonale Sammlungen informieren.</span><span class="sxs-lookup"><span data-stu-id="54445-106">A welcome message on your e-Commerce website can inform visitors about ongoing sales, site updates, or availability of seasonal collections.</span></span> <span data-ttu-id="54445-107">Die Begrüßungsmeldung wird festgelegt, indem das Warnungsmodul verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="54445-107">The welcome message is set by using the alert module.</span></span>
+<span data-ttu-id="abd13-106">Eine Begrüßungsmeldung auf der E-Commerce-Website kann Besucher über laufende Verkäufe, Siteaktualisierungen oder verfügbaren saisonale Sammlungen informieren.</span><span class="sxs-lookup"><span data-stu-id="abd13-106">A welcome message on your e-Commerce website can inform visitors about ongoing sales, site updates, or availability of seasonal collections.</span></span> <span data-ttu-id="abd13-107">Die Begrüßungsmeldung wird festgelegt, indem das Warnungsmodul verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="abd13-107">The welcome message is set by using the alert module.</span></span>
 
-<span data-ttu-id="54445-108">Das allgemeine Modul muss den **Fehler-/Informationensnachrichten** Slots des Kopffragments hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="54445-108">The alert module should be added to the **Error/Information messages** slot of the header fragment.</span></span> <span data-ttu-id="54445-109">Mit dem Warnungsmodul können Sie den Text definieren, der angezeigt wird, die Textfarbe und die Ausrichtung.</span><span class="sxs-lookup"><span data-stu-id="54445-109">The alert module lets you specify the text that is shown, the text color, and the alignment.</span></span> <span data-ttu-id="54445-110">Es kann auch angeben, ob Besucher der Site die Nachricht ablehnen können.</span><span class="sxs-lookup"><span data-stu-id="54445-110">It also lets you specify whether visitors to the site can dismiss the message.</span></span>
+<span data-ttu-id="abd13-108">Das allgemeine Modul muss den **Fehler-/Informationensnachrichten** Slots des Kopffragments hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="abd13-108">The alert module should be added to the **Error/Information messages** slot of the header fragment.</span></span> <span data-ttu-id="abd13-109">Mit dem Warnungsmodul können Sie den Text definieren, der angezeigt wird, die Textfarbe und die Ausrichtung.</span><span class="sxs-lookup"><span data-stu-id="abd13-109">The alert module lets you specify the text that is shown, the text color, and the alignment.</span></span> <span data-ttu-id="abd13-110">Es kann auch angeben, ob Besucher der Site die Nachricht ablehnen können.</span><span class="sxs-lookup"><span data-stu-id="abd13-110">It also lets you specify whether visitors to the site can dismiss the message.</span></span>
 
-<span data-ttu-id="54445-111">Wenn eine Begrüßungsmeldung einem freigegebenen Kopffragment hinzugefügt wird, wir dieses für jede Seite angezeigt, die die Vorlage verwendet, in dem das freigegebene Kopffragment verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="54445-111">When a welcome message is added to a shared header fragment, it will be shown on every page that uses the template where that shared header fragment is used.</span></span>
+<span data-ttu-id="abd13-111">Wenn eine Begrüßungsmeldung einem freigegebenen Kopffragment hinzugefügt wird, wir dieses für jede Seite angezeigt, die die Vorlage verwendet, in dem das freigegebene Kopffragment verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="abd13-111">When a welcome message is added to a shared header fragment, it will be shown on every page that uses the template where that shared header fragment is used.</span></span>
 
-<span data-ttu-id="54445-112">Um eine Begrüßungsmeldung der Site hinzufügen, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="54445-112">To add a welcome message to your site, follow these steps.</span></span>
+<span data-ttu-id="abd13-112">Um eine Begrüßungsmeldung der Site hinzufügen, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="abd13-112">To add a welcome message to your site, follow these steps.</span></span>
 
-1. <span data-ttu-id="54445-113">Navigieren Sie im Commerce Site Builder zu Ihrer Site.</span><span class="sxs-lookup"><span data-stu-id="54445-113">In Commerce site builder, go to your site.</span></span>
-1. <span data-ttu-id="54445-114">Wählen Sie **Fragmente**.</span><span class="sxs-lookup"><span data-stu-id="54445-114">Select **Fragments**.</span></span>
-1. <span data-ttu-id="54445-115">Wählen Sie das Kopffragment aus, um die Nachricht hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="54445-115">Select the header fragment to add the message to.</span></span>
-1. <span data-ttu-id="54445-116">In der Gliederungsstruktur erweitern Sie **Fehler-/Informationensnachrichten**</span><span class="sxs-lookup"><span data-stu-id="54445-116">In the outline tree, expand **Error/Information messages**.</span></span>
-1. <span data-ttu-id="54445-117">Wählen Sie das Warnungsmodul aus und wählen Sie dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="54445-117">Select the alert module, and then select **OK**.</span></span> <span data-ttu-id="54445-118">Wenn ein Warnungsmodul noch nicht vorhanden ist, wählen Sie zunächst die Ellipsen-Schaltfläche (**...**) neben der **Fehler-/Informationensnachricht** aus, und wählen Sie dann **Fügen Sie Modul hinzu** aus.</span><span class="sxs-lookup"><span data-stu-id="54445-118">If an alert module doesn't yet exist, first select the ellipsis button (**...**) next to **Error/Information messages**, and then select **Add module**.</span></span>
-1. <span data-ttu-id="54445-119">Im Eigenschaftenbereich auf der rechten Seite auf der Registerkarte **Daten** wählen Sie **Fügen Sie Datenquelle hinzu** und **Inhalt** aus.</span><span class="sxs-lookup"><span data-stu-id="54445-119">In the property pane on the right, on the **Data** tab, select **Add Data Source**, and then select **Content**.</span></span>
-1. <span data-ttu-id="54445-120">Im Feld **Geben Sie Text ein** geben Sie den Text der Begrüßungsmeldung ein.</span><span class="sxs-lookup"><span data-stu-id="54445-120">In the **Input Text** field, enter the text of the welcome message.</span></span>
-1. <span data-ttu-id="54445-121">Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um das Kopffragment einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="54445-121">Select **Save**, select **Finish editing** to check in the header fragment, and then select **Publish** to publish it.</span></span> 
+1. <span data-ttu-id="abd13-113">Navigieren Sie im Commerce Site Builder zu Ihrer Site.</span><span class="sxs-lookup"><span data-stu-id="abd13-113">In Commerce site builder, go to your site.</span></span>
+1. <span data-ttu-id="abd13-114">Wählen Sie **Fragmente**.</span><span class="sxs-lookup"><span data-stu-id="abd13-114">Select **Fragments**.</span></span>
+1. <span data-ttu-id="abd13-115">Wählen Sie das Kopffragment aus, um die Nachricht hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="abd13-115">Select the header fragment to add the message to.</span></span>
+1. <span data-ttu-id="abd13-116">In der Gliederungsstruktur erweitern Sie **Fehler-/Informationensnachrichten**</span><span class="sxs-lookup"><span data-stu-id="abd13-116">In the outline tree, expand **Error/Information messages**.</span></span>
+1. <span data-ttu-id="abd13-117">Wählen Sie das Warnungsmodul aus und wählen Sie dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="abd13-117">Select the alert module, and then select **OK**.</span></span> <span data-ttu-id="abd13-118">Wenn ein Warnungsmodul noch nicht vorhanden ist, wählen Sie zunächst die Ellipsen-Schaltfläche (**...**) neben der **Fehler-/Informationensnachricht** aus, und wählen Sie dann **Fügen Sie Modul hinzu** aus.</span><span class="sxs-lookup"><span data-stu-id="abd13-118">If an alert module doesn't yet exist, first select the ellipsis button (**...**) next to **Error/Information messages**, and then select **Add module**.</span></span>
+1. <span data-ttu-id="abd13-119">Im Eigenschaftenbereich auf der rechten Seite auf der Registerkarte **Daten** wählen Sie **Fügen Sie Datenquelle hinzu** und **Inhalt** aus.</span><span class="sxs-lookup"><span data-stu-id="abd13-119">In the property pane on the right, on the **Data** tab, select **Add Data Source**, and then select **Content**.</span></span>
+1. <span data-ttu-id="abd13-120">Im Feld **Geben Sie Text ein** geben Sie den Text der Begrüßungsmeldung ein.</span><span class="sxs-lookup"><span data-stu-id="abd13-120">In the **Input Text** field, enter the text of the welcome message.</span></span>
+1. <span data-ttu-id="abd13-121">Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um das Kopffragment einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="abd13-121">Select **Save**, select **Finish editing** to check in the header fragment, and then select **Publish** to publish it.</span></span> 
 
-<span data-ttu-id="54445-122">Die Begrüßungsmeldung wird nun oben auf jeder Standortsseite angezeigt, das das ausgewählte Kopffragment verwendet.</span><span class="sxs-lookup"><span data-stu-id="54445-122">The welcome message will now appear at the top of every site page that uses the selected header fragment.</span></span>
+<span data-ttu-id="abd13-122">Die Begrüßungsmeldung wird nun oben auf jeder Standortsseite angezeigt, das das ausgewählte Kopffragment verwendet.</span><span class="sxs-lookup"><span data-stu-id="abd13-122">The welcome message will now appear at the top of every site page that uses the selected header fragment.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="54445-123">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="54445-123">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="abd13-123">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="abd13-123">Additional resources</span></span>
 
-[<span data-ttu-id="54445-124">Hinzufügen eines Logos</span><span class="sxs-lookup"><span data-stu-id="54445-124">Add a logo</span></span>](add-logo.md)
+[<span data-ttu-id="abd13-124">Hinzufügen eines Logos</span><span class="sxs-lookup"><span data-stu-id="abd13-124">Add a logo</span></span>](add-logo.md)
 
-[<span data-ttu-id="54445-125">Auswählen eines Sitedesigns</span><span class="sxs-lookup"><span data-stu-id="54445-125">Select a site theme</span></span>](select-site-theme.md)
+[<span data-ttu-id="abd13-125">Auswählen eines Sitedesigns</span><span class="sxs-lookup"><span data-stu-id="abd13-125">Select a site theme</span></span>](select-site-theme.md)
 
-[<span data-ttu-id="54445-126">Arbeiten mit CSS-Überschreibungsdateien</span><span class="sxs-lookup"><span data-stu-id="54445-126">Work with CSS override files</span></span>](css-override-files.md)
+[<span data-ttu-id="abd13-126">Arbeiten mit CSS-Überschreibungsdateien</span><span class="sxs-lookup"><span data-stu-id="abd13-126">Work with CSS override files</span></span>](css-override-files.md)
 
-[<span data-ttu-id="54445-127">Hinzufügen eines Favicons</span><span class="sxs-lookup"><span data-stu-id="54445-127">Add a favicon</span></span>](add-favicon.md)
+[<span data-ttu-id="abd13-127">Hinzufügen eines Favicons</span><span class="sxs-lookup"><span data-stu-id="abd13-127">Add a favicon</span></span>](add-favicon.md)
 
-[<span data-ttu-id="54445-128">Hinzufügen eines Urheberrechtshinweises</span><span class="sxs-lookup"><span data-stu-id="54445-128">Add a copyright notice</span></span>](add-copyright-notice.md)
+[<span data-ttu-id="abd13-128">Hinzufügen eines Urheberrechtshinweises</span><span class="sxs-lookup"><span data-stu-id="abd13-128">Add a copyright notice</span></span>](add-copyright-notice.md)
 
-[<span data-ttu-id="54445-129">Hinzufügen von Sprachen zu Ihrer Website</span><span class="sxs-lookup"><span data-stu-id="54445-129">Add languages to your site</span></span>](add-languages-to-site.md)
+[<span data-ttu-id="abd13-129">Hinzufügen von Sprachen zu Ihrer Website</span><span class="sxs-lookup"><span data-stu-id="abd13-129">Add languages to your site</span></span>](add-languages-to-site.md)
 
-[<span data-ttu-id="54445-130">Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie</span><span class="sxs-lookup"><span data-stu-id="54445-130">Add script code to site pages to support telemetry</span></span>](add-telemetry.md)
+[<span data-ttu-id="abd13-130">Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie</span><span class="sxs-lookup"><span data-stu-id="abd13-130">Add script code to site pages to support telemetry</span></span>](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
