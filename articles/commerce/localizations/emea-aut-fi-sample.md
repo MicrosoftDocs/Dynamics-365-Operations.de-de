@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: a6371a1865708a48ef2039f7dcb5d487fb68b59f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a5f247abd22f58d7e6f282d27343ddb5277b5e99
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006353"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225759"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Integrationsbeispiel für Steuererfassungsdienst für Österreich
 
