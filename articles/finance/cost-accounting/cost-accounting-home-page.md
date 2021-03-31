@@ -17,38 +17,41 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 32003409ca070f98d3b3db75c790489c42be6081
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: db93078c862cd468ec692d490876d825725f4253
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989051"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219962"
 ---
-# <a name="cost-accounting-home-page"></a><span data-ttu-id="2d521-103">Startseite für die Kostenrechnung</span><span class="sxs-lookup"><span data-stu-id="2d521-103">Cost accounting home page</span></span>
+# <a name="cost-accounting-home-page"></a><span data-ttu-id="57d0b-103">Startseite für die Kostenrechnung</span><span class="sxs-lookup"><span data-stu-id="57d0b-103">Cost accounting home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="learning-map"></a><span data-ttu-id="2d521-104">Lernkarte</span><span class="sxs-lookup"><span data-stu-id="2d521-104">Learning map</span></span> 
+## <a name="learning-map"></a><span data-ttu-id="57d0b-104">Lernkarte</span><span class="sxs-lookup"><span data-stu-id="57d0b-104">Learning map</span></span> 
 
-<span data-ttu-id="2d521-105">Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, die vom Framework des Modul "Kostenrechnung" bestehen.</span><span class="sxs-lookup"><span data-stu-id="2d521-105">The following learning map shows the major concepts and tasks that make up the framework of the Cost accounting module.</span></span> <span data-ttu-id="2d521-106">Klicken Sie auf die Links im [Direktlinks](#quick-links)-Abschnitt, um zu erfahren, wie das Modul verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="2d521-106">Click the links in the [Quick links](#quick-links) section to learn how to use the module.</span></span>
+<span data-ttu-id="57d0b-105">Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, die vom Framework des Modul "Kostenrechnung" bestehen.</span><span class="sxs-lookup"><span data-stu-id="57d0b-105">The following learning map shows the major concepts and tasks that make up the framework of the Cost accounting module.</span></span> <span data-ttu-id="57d0b-106">Klicken Sie auf die Links im [Direktlinks](#quick-links)-Abschnitt, um zu erfahren, wie das Modul verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="57d0b-106">Click the links in the [Quick links](#quick-links) section to learn how to use the module.</span></span>
 
-<span data-ttu-id="2d521-107">[![Lernkarte für die Kostenrechnung](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span><span class="sxs-lookup"><span data-stu-id="2d521-107">[![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span></span>
+<span data-ttu-id="57d0b-107">[![Lernkarte für die Kostenrechnung](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span><span class="sxs-lookup"><span data-stu-id="57d0b-107">[![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span></span>
 
-## <a name="quick-links"></a><span data-ttu-id="2d521-108">Direktlinks</span><span class="sxs-lookup"><span data-stu-id="2d521-108">Quick links</span></span>
+## <a name="quick-links"></a><span data-ttu-id="57d0b-108">Direktlinks</span><span class="sxs-lookup"><span data-stu-id="57d0b-108">Quick links</span></span>
 
 |      |   |
 |------|---|
-|  <span data-ttu-id="2d521-109">[Basisentitäten konfigurieren (eLearning)](https://mbspartner.microsoft.com/Home) (CustomerSource-Konto erforderlich)</span><span class="sxs-lookup"><span data-stu-id="2d521-109">[Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)</span></span>  |[<span data-ttu-id="2d521-110">Kostenelementdimensionen</span><span class="sxs-lookup"><span data-stu-id="2d521-110">Cost element dimensions</span></span>](cost-elements.md)  |
-|  [<span data-ttu-id="2d521-111">Dimensionshierarchie</span><span class="sxs-lookup"><span data-stu-id="2d521-111">Dimension hierarchy</span></span>](dimension-hierarchy.md)  |[<span data-ttu-id="2d521-112">Kostenkontrolleinheiten definieren</span><span class="sxs-lookup"><span data-stu-id="2d521-112">Define cost control units</span></span>](./tasks/define-cost-control-units.md)| 
-| [<span data-ttu-id="2d521-113">Zuteilungsbasen</span><span class="sxs-lookup"><span data-stu-id="2d521-113">Allocation bases</span></span>](allocation-bases.md)|[<span data-ttu-id="2d521-114">Eine Kostenzuweisungsrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen</span><span class="sxs-lookup"><span data-stu-id="2d521-114">Create and assign a cost allocation policy to a cost control unit</span></span>](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
-| [<span data-ttu-id="2d521-115">Eine Datenquelle für das Sachkonto der Kostenrechnung verwalten</span><span class="sxs-lookup"><span data-stu-id="2d521-115">Manage a data source for the cost accounting ledger</span></span>](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [<span data-ttu-id="2d521-116">Quelldaten verarbeiten und nachverfolgen</span><span class="sxs-lookup"><span data-stu-id="2d521-116">Process and trace source data</span></span>](./tasks/process-trace-source-data.md)     | 
-|[<span data-ttu-id="2d521-117">Gemeinkostenberechnung</span><span class="sxs-lookup"><span data-stu-id="2d521-117">Overhead calculation</span></span>](overhead-calculation.md)  | [<span data-ttu-id="2d521-118">Kostensteuerungs-Arbeitsbereich</span><span class="sxs-lookup"><span data-stu-id="2d521-118">Cost control workspace</span></span>](cost-control-workspace.md)   |
+|  <span data-ttu-id="57d0b-109">[Basisentitäten konfigurieren (eLearning)](https://mbspartner.microsoft.com/Home) (CustomerSource-Konto erforderlich)</span><span class="sxs-lookup"><span data-stu-id="57d0b-109">[Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)</span></span>  |[<span data-ttu-id="57d0b-110">Kostenelementdimensionen</span><span class="sxs-lookup"><span data-stu-id="57d0b-110">Cost element dimensions</span></span>](cost-elements.md)  |
+|  [<span data-ttu-id="57d0b-111">Dimensionshierarchie</span><span class="sxs-lookup"><span data-stu-id="57d0b-111">Dimension hierarchy</span></span>](dimension-hierarchy.md)  |[<span data-ttu-id="57d0b-112">Kostenkontrolleinheiten definieren</span><span class="sxs-lookup"><span data-stu-id="57d0b-112">Define cost control units</span></span>](./tasks/define-cost-control-units.md)| 
+| [<span data-ttu-id="57d0b-113">Zuteilungsbasen</span><span class="sxs-lookup"><span data-stu-id="57d0b-113">Allocation bases</span></span>](allocation-bases.md)|[<span data-ttu-id="57d0b-114">Eine Kostenzuweisungsrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen</span><span class="sxs-lookup"><span data-stu-id="57d0b-114">Create and assign a cost allocation policy to a cost control unit</span></span>](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [<span data-ttu-id="57d0b-115">Eine Datenquelle für das Sachkonto der Kostenrechnung verwalten</span><span class="sxs-lookup"><span data-stu-id="57d0b-115">Manage a data source for the cost accounting ledger</span></span>](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [<span data-ttu-id="57d0b-116">Quelldaten verarbeiten und nachverfolgen</span><span class="sxs-lookup"><span data-stu-id="57d0b-116">Process and trace source data</span></span>](./tasks/process-trace-source-data.md)     | 
+|[<span data-ttu-id="57d0b-117">Gemeinkostenberechnung</span><span class="sxs-lookup"><span data-stu-id="57d0b-117">Overhead calculation</span></span>](overhead-calculation.md)  | [<span data-ttu-id="57d0b-118">Kostensteuerungs-Arbeitsbereich</span><span class="sxs-lookup"><span data-stu-id="57d0b-118">Cost control workspace</span></span>](cost-control-workspace.md)   |
 
-## <a name="get-started-videosbr"></a><span data-ttu-id="2d521-119">Erste Schritte-Videos</span><span class="sxs-lookup"><span data-stu-id="2d521-119">Get started videos</span></span><br/>
+## <a name="get-started-videosbr"></a><span data-ttu-id="57d0b-119">Erste Schritte-Videos</span><span class="sxs-lookup"><span data-stu-id="57d0b-119">Get started videos</span></span><br/>
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
-| [<span data-ttu-id="2d521-120">Erste Schritte mit Kostenrechnung</span><span class="sxs-lookup"><span data-stu-id="2d521-120">Get started with cost accounting</span></span>](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [<span data-ttu-id="2d521-121">Mobiler Arbeitsbereich für die Kostenrechnung</span><span class="sxs-lookup"><span data-stu-id="2d521-121">Cost accounting mobile workspace</span></span>](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [<span data-ttu-id="2d521-122">Verwendung von Excel zur Kostenrechnungsanalyse</span><span class="sxs-lookup"><span data-stu-id="2d521-122">Use Excel for cost accounting analysis</span></span>](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
+| [<span data-ttu-id="57d0b-120">Erste Schritte mit Kostenrechnung</span><span class="sxs-lookup"><span data-stu-id="57d0b-120">Get started with cost accounting</span></span>](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [<span data-ttu-id="57d0b-121">Mobiler Arbeitsbereich für die Kostenrechnung</span><span class="sxs-lookup"><span data-stu-id="57d0b-121">Cost accounting mobile workspace</span></span>](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [<span data-ttu-id="57d0b-122">Verwendung von Excel zur Kostenrechnungsanalyse</span><span class="sxs-lookup"><span data-stu-id="57d0b-122">Use Excel for cost accounting analysis</span></span>](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
