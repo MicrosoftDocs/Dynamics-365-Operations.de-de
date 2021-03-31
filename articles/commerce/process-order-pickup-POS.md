@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 2156542ed0932fab6fb4fa4035e009ad89eeb18f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2e7df580557486c67fc82af19f742bc8002cb881
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5003752"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231079"
 ---
 # <a name="process-customer-order-pickups-in-pos"></a>Kundenbestellungsabholung am POS bearbeiten
 
@@ -36,7 +36,7 @@ Wenn die ausgewählte Bestellung oder Bestellpositionen nicht für die Abholung 
 
 ![Abholvorgang](media/pickupoperation.png)
 
-In Microsoft Dynamics 365 Commerce Version 10.0.17 und höher kann die Funktion **Verbesserte Benutzererfahrung bei der Abwicklung der Bestellungsabholung am Point of Sale** über die Funktionsverwaltung in der Commerce-Zentralverwaltung aktiviert werden.zeigen. Wenn diese Funktion deaktiviert ist, können Benutzer keine Abholmengen auswählen. Standardmäßig ist die volle für die Position bestellte Menge auch die Menge, die abgeholt wird. Diese Erfahrung kann problematisch sein, da Benutzer möglicherweise vergessen, einige Artikel zur Abholung auszuwählen, wenn sie die Abholung durch Auftragserfüllung durchführen.
+In Microsoft Dynamics 365 Commerce Version 10.0.17 und höher kann die Funktion **Verbesserte Benutzererfahrung bei der Abwicklung der Bestellungsabholung am Point of Sale** über die Funktionsverwaltung in der Commerce-Zentralverwaltung aktiviert werden. Wenn diese Funktion deaktiviert ist, können Benutzer keine Abholmengen auswählen. Standardmäßig ist die volle für die Position bestellte Menge auch die Menge, die abgeholt wird. Diese Erfahrung kann problematisch sein, da Benutzer möglicherweise vergessen, einige Artikel zur Abholung auszuwählen, wenn sie die Abholung durch Auftragserfüllung durchführen.
 
 Die Funktion **Verbesserte Benutzererfahrung bei der Abwicklung der Bestellungsabholung am Point of Sale** bietet Benutzern mehr Kontrolle über die Auswahl der Produkte, die abgeholt werden sollen, und über die Menge der Produkte, die abgeholt werden. Benutzer müssen nicht jede Position des Kundenauftrags auf der Seite zur Auftragserfüllung auswählen, bevor sie **Abholen** auswählen. Alle Artikel, die abgeholt werden können, werden angezeigt. Benutzer können mehrere Positionen für die Abholung angeben, auch wenn nur eine Produktposition ausgewählt ist.
 

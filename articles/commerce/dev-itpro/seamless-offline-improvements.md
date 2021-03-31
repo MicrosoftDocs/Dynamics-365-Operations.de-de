@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0bf37453740d1c2b09b5bd7ae4841f23da20a3ec
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1ea46ae90dedcc3ad3c3b305bddeb4d98827353a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687536"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5230667"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Nahtloser Offline-Schalter für Geschenkkarten- und Gutschriftsvorgänge
 
@@ -32,7 +32,7 @@ Wenn ein POS-Gerät (Point of Sale) die Verbindung zur Kanaldatenbank verliert, 
 
 ## <a name="completing-gift-card-transactions-in-offline-mode"></a>Abschließen von Geschenkkartentransaktionen im Offline-Modus
 
-Interne Geschenkkarten sind auf den Echtzeitdienst angewiesen, da das Guthaben für die Geschenkkarten zentral in der Microsoft Dynamics 365 Commerce Headquarters verwaltet werden muss. Um Betrug oder andere Synchronisierungsprobleme zu verhindern, werden Geschenkkarten gesperrt, sobald sie einer Transaktion hinzugefügt werden. Die Sperrfunktion stellt sicher, dass eine Geschenkkarte nicht gleichzeitig an mehreren Terminals verwendet werden kann. Wenn eine Transaktion abgeschlossen ist, wird die Geschenkkarte aktualisiert und entsperrt.
+Interne Geschenkkarten sind auf den Echtzeitdienst angewiesen, da das Guthaben für die Geschenkkarten zentral in Microsoft Dynamics 365 Commerce Headquarters verwaltet werden muss. Um Betrug oder andere Synchronisierungsprobleme zu verhindern, werden Geschenkkarten gesperrt, sobald sie einer Transaktion hinzugefügt werden. Die Sperrfunktion stellt sicher, dass eine Geschenkkarte nicht gleichzeitig an mehreren Terminals verwendet werden kann. Wenn eine Transaktion abgeschlossen ist, wird die Geschenkkarte aktualisiert und entsperrt.
 
 Verliert die Kasse jedoch die Verbindung, nachdem eine Geschenkkarte einer Transaktion hinzugefügt wurde, kann die Geschenkkarte unbrauchbar werden. Um diese Situation zu verhindern, verfügt Dynamics 365 Commerce über einen Parameter, der es ermöglicht, Transaktionen, die eine Geschenkkartenzeile enthalten, abzuschließen, während das Kassensystem offline ist. Wenn dieser Parameter aktiviert ist, werden Geschenkkartentransaktionen, die offline erzwungen werden, zusammen mit Offline-Transaktionen gespeichert und mit Commerce Headquarters synchronisiert, wenn die Offline-Transaktionen synchronisiert werden. Durch die Synchronisation wird auch die Geschenkkarte entsperrt, sodass sie an einem anderen Terminal verwendet werden kann.
 
