@@ -15,43 +15,46 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d26879ab54b5d87252287ab64fa3c7ae4ae4a90
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ffd482facc629e65a79f328cb237fd72f6f6b5c5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985211"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225320"
 ---
-# <a name="register-and-post-a-postdated-check-for-a-vendor"></a><span data-ttu-id="8c480-103">Erfassen und Buchen eines vordatierten Schecks für einen Kreditor</span><span class="sxs-lookup"><span data-stu-id="8c480-103">Register and post a postdated check for a vendor</span></span>
+# <a name="register-and-post-a-postdated-check-for-a-vendor"></a><span data-ttu-id="76736-103">Erfassen und Buchen eines vordatierten Schecks für einen Kreditor</span><span class="sxs-lookup"><span data-stu-id="76736-103">Register and post a postdated check for a vendor</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="8c480-104">Mithilfe eines Erfassungsbelegs können Sie die Details eines vordatierten Schecks erfassen, bevor der Scheck an einen Kreditor ausgestellt wird.</span><span class="sxs-lookup"><span data-stu-id="8c480-104">You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher.</span></span> <span data-ttu-id="8c480-105">Sie können den vordatierten Scheck buchen und Finanzbuchungen erstellen.</span><span class="sxs-lookup"><span data-stu-id="8c480-105">You can also post the postdated check and generate financial transactions.</span></span> <span data-ttu-id="8c480-106">Führen Sie die folgenden Schritte aus, bevor Sie einen vordatierten Scheck registrieren und buchen, den Sie von einem Debitor erhalten haben:</span><span class="sxs-lookup"><span data-stu-id="8c480-106">Before you register and post a postdated check from a vendor, complete the following task:</span></span> 
+<span data-ttu-id="76736-104">Mithilfe eines Erfassungsbelegs können Sie die Details eines vordatierten Schecks erfassen, bevor der Scheck an einen Kreditor ausgestellt wird.</span><span class="sxs-lookup"><span data-stu-id="76736-104">You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher.</span></span> <span data-ttu-id="76736-105">Sie können den vordatierten Scheck buchen und Finanzbuchungen erstellen.</span><span class="sxs-lookup"><span data-stu-id="76736-105">You can also post the postdated check and generate financial transactions.</span></span> <span data-ttu-id="76736-106">Führen Sie die folgenden Schritte aus, bevor Sie einen vordatierten Scheck registrieren und buchen, den Sie von einem Debitor erhalten haben:</span><span class="sxs-lookup"><span data-stu-id="76736-106">Before you register and post a postdated check from a vendor, complete the following task:</span></span> 
 
-<span data-ttu-id="8c480-107">Einrichten von vordatierten Schecks in bar und in der Bankverwaltungsseite.</span><span class="sxs-lookup"><span data-stu-id="8c480-107">Set up postdated checks in the Cash and bank management page.</span></span> 
+<span data-ttu-id="76736-107">Einrichten von vordatierten Schecks in bar und in der Bankverwaltungsseite.</span><span class="sxs-lookup"><span data-stu-id="76736-107">Set up postdated checks in the Cash and bank management page.</span></span> 
 
 
 
-<span data-ttu-id="8c480-108">Die Rolle dieses Aufgabenleitfadens ist "Finanzverwalter".</span><span class="sxs-lookup"><span data-stu-id="8c480-108">The role of this task guides is Treasurer.</span></span> <span data-ttu-id="8c480-109">Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="8c480-109">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="76736-108">Die Rolle dieses Aufgabenleitfadens ist "Finanzverwalter".</span><span class="sxs-lookup"><span data-stu-id="76736-108">The role of this task guides is Treasurer.</span></span> <span data-ttu-id="76736-109">Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="76736-109">This task uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="8c480-110">Wechseln Sie zu Kreditoren > Zahlungen > Zahlungserfassung</span><span class="sxs-lookup"><span data-stu-id="8c480-110">Go to Acounts payable > Payments > Payment journal</span></span>
-2. <span data-ttu-id="8c480-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="8c480-111">Click New.</span></span>
-3. <span data-ttu-id="8c480-112">Geben Sie im Namensfeld "VendPay" ein.</span><span class="sxs-lookup"><span data-stu-id="8c480-112">In the Name field, type 'VendPay'.</span></span>
-4. <span data-ttu-id="8c480-113">Klicken Sie auf "Positionen".</span><span class="sxs-lookup"><span data-stu-id="8c480-113">Click Lines.</span></span>
-5. <span data-ttu-id="8c480-114">Geben Sie im Feld "Konto" die gewünschten Werte an.</span><span class="sxs-lookup"><span data-stu-id="8c480-114">In the Account field, specify the desired values.</span></span>
-6. <span data-ttu-id="8c480-115">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="8c480-115">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="8c480-116">Geben Sie im Feld "Soll" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="8c480-116">In the Debit field, enter a number.</span></span>
-8. <span data-ttu-id="8c480-117">Klicken Sie im Feld "Zahlungsmethode" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="8c480-117">In the Method of payment field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="8c480-118">Wählen Sie die Zahlungsmethode für den vordatierten Scheck aus.</span><span class="sxs-lookup"><span data-stu-id="8c480-118">Select the method of payment for the postdated check</span></span>  
-9. <span data-ttu-id="8c480-119">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="8c480-119">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="8c480-120">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="8c480-120">In the list, click the link in the selected row.</span></span>
-11. <span data-ttu-id="8c480-121">Klicken Sie auf die Registerkarte "Vordatierte Schecks".</span><span class="sxs-lookup"><span data-stu-id="8c480-121">Click the Postdated checks tab.</span></span>
-12. <span data-ttu-id="8c480-122">Geben Sie im Feld "Schecknummer" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8c480-122">In the Check number field, type a value.</span></span>
-    * <span data-ttu-id="8c480-123">Geben Sie die Nummer des vordatierten Schecks ein oder ändern Sie sie.</span><span class="sxs-lookup"><span data-stu-id="8c480-123">Enter or modify the number of the postdated check.</span></span>  
-13. <span data-ttu-id="8c480-124">Geben Sie im Feld "Ausstellender Bankname" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8c480-124">In the Issuing bank name field, type a value.</span></span>
-    * <span data-ttu-id="8c480-125">Geben Sie die Bankdetails für die ausgebende Bank ein.</span><span class="sxs-lookup"><span data-stu-id="8c480-125">enter the bank details for the issuing bank.</span></span>  
-14. <span data-ttu-id="8c480-126">Klicken Sie auf die Registerkarte "Liste".</span><span class="sxs-lookup"><span data-stu-id="8c480-126">Click the List tab.</span></span>
-15. <span data-ttu-id="8c480-127">Klicken Sie auf "Buchen".</span><span class="sxs-lookup"><span data-stu-id="8c480-127">Click Post.</span></span>
-16. <span data-ttu-id="8c480-128">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="8c480-128">Close the page.</span></span>
-17. <span data-ttu-id="8c480-129">Klicken Sie auf die Registerkarte "Vordatierte Schecks".</span><span class="sxs-lookup"><span data-stu-id="8c480-129">Click the Postdated checks tab.</span></span>
+1. <span data-ttu-id="76736-110">Wechseln Sie zu Kreditoren > Zahlungen > Zahlungserfassung</span><span class="sxs-lookup"><span data-stu-id="76736-110">Go to Acounts payable > Payments > Payment journal</span></span>
+2. <span data-ttu-id="76736-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="76736-111">Click New.</span></span>
+3. <span data-ttu-id="76736-112">Geben Sie im Namensfeld "VendPay" ein.</span><span class="sxs-lookup"><span data-stu-id="76736-112">In the Name field, type 'VendPay'.</span></span>
+4. <span data-ttu-id="76736-113">Klicken Sie auf "Positionen".</span><span class="sxs-lookup"><span data-stu-id="76736-113">Click Lines.</span></span>
+5. <span data-ttu-id="76736-114">Geben Sie im Feld "Konto" die gewünschten Werte an.</span><span class="sxs-lookup"><span data-stu-id="76736-114">In the Account field, specify the desired values.</span></span>
+6. <span data-ttu-id="76736-115">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="76736-115">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="76736-116">Geben Sie im Feld "Soll" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="76736-116">In the Debit field, enter a number.</span></span>
+8. <span data-ttu-id="76736-117">Klicken Sie im Feld "Zahlungsmethode" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="76736-117">In the Method of payment field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="76736-118">Wählen Sie die Zahlungsmethode für den vordatierten Scheck aus.</span><span class="sxs-lookup"><span data-stu-id="76736-118">Select the method of payment for the postdated check</span></span>  
+9. <span data-ttu-id="76736-119">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="76736-119">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="76736-120">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="76736-120">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="76736-121">Klicken Sie auf die Registerkarte "Vordatierte Schecks".</span><span class="sxs-lookup"><span data-stu-id="76736-121">Click the Postdated checks tab.</span></span>
+12. <span data-ttu-id="76736-122">Geben Sie im Feld "Schecknummer" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="76736-122">In the Check number field, type a value.</span></span>
+    * <span data-ttu-id="76736-123">Geben Sie die Nummer des vordatierten Schecks ein oder ändern Sie sie.</span><span class="sxs-lookup"><span data-stu-id="76736-123">Enter or modify the number of the postdated check.</span></span>  
+13. <span data-ttu-id="76736-124">Geben Sie im Feld "Ausstellender Bankname" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="76736-124">In the Issuing bank name field, type a value.</span></span>
+    * <span data-ttu-id="76736-125">Geben Sie die Bankdetails für die ausgebende Bank ein.</span><span class="sxs-lookup"><span data-stu-id="76736-125">enter the bank details for the issuing bank.</span></span>  
+14. <span data-ttu-id="76736-126">Klicken Sie auf die Registerkarte "Liste".</span><span class="sxs-lookup"><span data-stu-id="76736-126">Click the List tab.</span></span>
+15. <span data-ttu-id="76736-127">Klicken Sie auf "Buchen".</span><span class="sxs-lookup"><span data-stu-id="76736-127">Click Post.</span></span>
+16. <span data-ttu-id="76736-128">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="76736-128">Close the page.</span></span>
+17. <span data-ttu-id="76736-129">Klicken Sie auf die Registerkarte "Vordatierte Schecks".</span><span class="sxs-lookup"><span data-stu-id="76736-129">Click the Postdated checks tab.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
