@@ -1,6 +1,6 @@
 ---
 title: Verwalten von e-Commerce Benutzern und Rollen
-description: In diesem Thema wird erläutert, wie Sie Benutzern Zugriff auf die Erstellungsumgebung für Microsoft Dynamics 365 Commerce gewähren.
+description: In diesem Thema wird erläutert, wie Sie Benutzern Zugriff auf die Erstellungsumgebung für Ihre Microsoft Dynamics 365 Commerce-Website gewähren.
 author: bicyclingfool
 manager: AnnBe
 ms.date: 10/01/2019
@@ -18,19 +18,19 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8d4987a824b786401c41c6ae63c8486ce7eb0c5d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a2235a43fd69adddeaba4c29305435db0fa39d64
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995690"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255918"
 ---
 # <a name="manage-e-commerce-users-and-roles"></a>Verwalten von e-Commerce Benutzern und Rollen
 
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Benutzern Zugriff auf die Erstellungsumgebung für Microsoft Dynamics 365 Commerce gewähren.
+In diesem Thema wird erläutert, wie Sie Benutzern Zugriff auf die Erstellungsumgebung für Ihre Microsoft Dynamics 365 Commerce-Website gewähren.
 
 In der Umgebung zur Site-Erstellung werden von Ihnen in Microsoft erstellte Sicherheitsgruppen verwendet, um den Benutzerzugriff zu steuern und Benutzern die Berechtigung zum Ausführen bestimmter Aufgaben zu erteilen, die Sie in Microsoft Azure Active Directory (Azure AD) erstellen. Zunächst weisen Sie jeder Rolle in der Erstellungsumgebung eine neue oder vorhandene Sicherheitsgruppe aus Azure AD zu. Anschließend erteilen oder widerrufen Sie Berechtigungen für einzelne Benutzer, indem Sie diese Benutzer einer entsprechenden Sicherheitsgruppe hinzufügen oder aus einer Sicherheitsgruppe entfernen.
 
