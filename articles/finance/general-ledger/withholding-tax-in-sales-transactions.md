@@ -17,49 +17,52 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: c50f6df1c63c91107da65f463934565f786d6ccd
-ms.sourcegitcommit: 630a0b3f800f36ced49b79156dd52132904fef75
+ms.openlocfilehash: c839df1b54cdb60beefa6dc6c3fc6e945a6eac85
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "5060741"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256642"
 ---
-# <a name="withholding-tax-in-sales-transactions"></a><span data-ttu-id="e5a58-104">Quellensteuer bei Verkaufsbuchungen</span><span class="sxs-lookup"><span data-stu-id="e5a58-104">Withholding tax in sales transactions</span></span>
+# <a name="withholding-tax-in-sales-transactions"></a><span data-ttu-id="9a20f-104">Quellensteuer bei Verkaufsbuchungen</span><span class="sxs-lookup"><span data-stu-id="9a20f-104">Withholding tax in sales transactions</span></span>
 
-<span data-ttu-id="e5a58-105">In diesem Thema werden die Schritte aufgeführt, mit denen die Berechnung der Quellensteuer für ausgewählte Debitoren vermieden werden kann.</span><span class="sxs-lookup"><span data-stu-id="e5a58-105">This topic lists the steps for avoiding the calculation of withholding tax for selected customers.</span></span> <span data-ttu-id="e5a58-106">Für Debitoren, die in ihren Zahlungen an Sie eine Quellensteuer angeben, können Sie die Standard-**Quellensteuergruppe** auf der Seite **Debitoren** zuweisen.</span><span class="sxs-lookup"><span data-stu-id="e5a58-106">For customers who specify withholding tax in their payments to you, you can assign the default **Withholding tax group** on the **Customers** page.</span></span> 
+<span data-ttu-id="9a20f-105">In diesem Thema werden die Schritte aufgeführt, mit denen die Berechnung der Quellensteuer für ausgewählte Debitoren vermieden werden kann.</span><span class="sxs-lookup"><span data-stu-id="9a20f-105">This topic lists the steps for avoiding the calculation of withholding tax for selected customers.</span></span> <span data-ttu-id="9a20f-106">Für Debitoren, die in ihren Zahlungen an Sie eine Quellensteuer angeben, können Sie die Standard-**Quellensteuergruppe** auf der Seite **Debitoren** zuweisen.</span><span class="sxs-lookup"><span data-stu-id="9a20f-106">For customers who specify withholding tax in their payments to you, you can assign the default **Withholding tax group** on the **Customers** page.</span></span> 
 
-1. <span data-ttu-id="e5a58-107">Rufen Sie **Navigationsbereich > Module > Debitorenkonten > Debitoren > Alle Debitoren** auf.</span><span class="sxs-lookup"><span data-stu-id="e5a58-107">Go to **Navigation pane > Modules > Accounts receivable > Customers > All customers**.</span></span>
+1. <span data-ttu-id="9a20f-107">Rufen Sie **Navigationsbereich > Module > Debitorenkonten > Debitoren > Alle Debitoren** auf.</span><span class="sxs-lookup"><span data-stu-id="9a20f-107">Go to **Navigation pane > Modules > Accounts receivable > Customers > All customers**.</span></span>
 
-2. <span data-ttu-id="e5a58-108">Klicken Sie auf das entsprechende Debitorenkonto und dann auf **Bearbeiten**.</span><span class="sxs-lookup"><span data-stu-id="e5a58-108">Click the respective customer account, click **Edit**.</span></span>
+2. <span data-ttu-id="9a20f-108">Klicken Sie auf das entsprechende Debitorenkonto und dann auf **Bearbeiten**.</span><span class="sxs-lookup"><span data-stu-id="9a20f-108">Click the respective customer account, click **Edit**.</span></span>
 
-3. <span data-ttu-id="e5a58-109">Setzen Sie auf der Registerkarte **Rechnung und Lieferung** das Feld **Quellensteuer berechnen** auf **Ja**.</span><span class="sxs-lookup"><span data-stu-id="e5a58-109">In the **Invoice and delivery** tab, set the **Calculate withholding tax** field to **Yes**.</span></span>
-
-   > [!NOTE] 
-   > <span data-ttu-id="e5a58-110">Die Quellensteuer wird nicht berechnet, wenn für diesen Debitoren in den Masterdaten nicht **Quellensteuer berechnen** aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="e5a58-110">Withholding tax will not be calculated if **Calculate withholding tax** is not switched on for this customer in the master data.</span></span>
-
-4. <span data-ttu-id="e5a58-111">Wählen Sie eine Quellensteuergruppe unter **Quellensteuergruppe** aus.</span><span class="sxs-lookup"><span data-stu-id="e5a58-111">Select a withholding tax group in **Withholding tax group**.</span></span>
-
-5. <span data-ttu-id="e5a58-112">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="e5a58-112">Click **Save**.</span></span>
-
-<span data-ttu-id="e5a58-113">Für Artikel/Dienstleistungen, die der Quellensteuer unterliegen, können Sie die Standardeinstellung **Artikel-Quellensteuergruppe** in **Freigegebene Produkte** zuweisen.</span><span class="sxs-lookup"><span data-stu-id="e5a58-113">For items/services, which are liable to withholding tax, you can assign the default **Item withholding tax group** in **Released Products**.</span></span>
-
-1. <span data-ttu-id="e5a58-114">Wechseln Sie zu **Navigationsbereich > Module > Produktinformationsverwaltung > Produkte > Freigegebene Produkte**.</span><span class="sxs-lookup"><span data-stu-id="e5a58-114">Go to **Navigation pane > Modules > Product information management > Products > Released products**.</span></span>
-
-2. <span data-ttu-id="e5a58-115">Klicken Sie auf die entsprechende Artikelnummer und dann auf **Bearbeiten**.</span><span class="sxs-lookup"><span data-stu-id="e5a58-115">Click the respective Item number, click **Edit**.</span></span>
-
-3. <span data-ttu-id="e5a58-116">Klicken Sie auf der Registerkarte **Verkauf** auf **Quellensteuer berechnen**.</span><span class="sxs-lookup"><span data-stu-id="e5a58-116">In the **Sell** tab, click **Calculate withholding tax**.</span></span>
+3. <span data-ttu-id="9a20f-109">Setzen Sie auf der Registerkarte **Rechnung und Lieferung** das Feld **Quellensteuer berechnen** auf **Ja**.</span><span class="sxs-lookup"><span data-stu-id="9a20f-109">In the **Invoice and delivery** tab, set the **Calculate withholding tax** field to **Yes**.</span></span>
 
    > [!NOTE] 
-   > <span data-ttu-id="e5a58-117">Die Quellensteuer wird nicht berechnet, wenn **Quellensteuer berechnen** für diesen Artikel auf der Registerkarte **Verkauf** der Seite **Freigegebenes Produkt** nicht auf **Ja** gesetzt ist.</span><span class="sxs-lookup"><span data-stu-id="e5a58-117">Withholding tax will not be calculated if **Calculate withholding tax** is not set to **Yes** for this Item in the **Sell** tab on the **Released product** page.</span></span>
+   > <span data-ttu-id="9a20f-110">Die Quellensteuer wird nicht berechnet, wenn für diesen Debitoren in den Masterdaten nicht **Quellensteuer berechnen** aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="9a20f-110">Withholding tax will not be calculated if **Calculate withholding tax** is not switched on for this customer in the master data.</span></span>
 
-4. <span data-ttu-id="e5a58-118">Wählen Sie eine Artikel-Quellensteuergruppe in der Liste **Artikel-Quellensteuergruppe** aus.</span><span class="sxs-lookup"><span data-stu-id="e5a58-118">Select an Item withholding tax group in **Item withholding tax group** list.</span></span>
+4. <span data-ttu-id="9a20f-111">Wählen Sie eine Quellensteuergruppe unter **Quellensteuergruppe** aus.</span><span class="sxs-lookup"><span data-stu-id="9a20f-111">Select a withholding tax group in **Withholding tax group**.</span></span>
 
-5. <span data-ttu-id="e5a58-119">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="e5a58-119">Click **Save**.</span></span>
+5. <span data-ttu-id="9a20f-112">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="9a20f-112">Click **Save**.</span></span>
 
-<span data-ttu-id="e5a58-120">Quellensteuergruppen und Artikel-Quellensteuergruppen können über die Seite **Auftrag** zugewiesen werden.</span><span class="sxs-lookup"><span data-stu-id="e5a58-120">Withholding tax groups and Item withholding tax groups can be assigned using the **Sales order** page.</span></span> 
+<span data-ttu-id="9a20f-113">Für Artikel/Dienstleistungen, die der Quellensteuer unterliegen, können Sie die Standardeinstellung **Artikel-Quellensteuergruppe** in **Freigegebene Produkte** zuweisen.</span><span class="sxs-lookup"><span data-stu-id="9a20f-113">For items/services, which are liable to withholding tax, you can assign the default **Item withholding tax group** in **Released Products**.</span></span>
 
-<span data-ttu-id="e5a58-121">Die Standard-Quellensteuergruppe und die Artikel-Quellensteuergruppe werden als Standardeinträge in Auftragspositionen verwendet, wenn Sie einen neuen Auftrag erstellen.</span><span class="sxs-lookup"><span data-stu-id="e5a58-121">The default Withholding tax group and Item withholding tax group will be used as default entries on sales order lines when you create a new sales order.</span></span>
+1. <span data-ttu-id="9a20f-114">Wechseln Sie zu **Navigationsbereich > Module > Produktinformationsverwaltung > Produkte > Freigegebene Produkte**.</span><span class="sxs-lookup"><span data-stu-id="9a20f-114">Go to **Navigation pane > Modules > Product information management > Products > Released products**.</span></span>
 
-<span data-ttu-id="e5a58-122">Die Quellensteuer über die **Debitorzahlungserfassung** berechnet und gebucht.</span><span class="sxs-lookup"><span data-stu-id="e5a58-122">Withholding tax is calculated and posted with **Customer payment journal**.</span></span> <span data-ttu-id="e5a58-123">Sie können den entsprechenden Quellensteuercode sowie den tatsächlichen Quellensteuerbetrag auf der Registerkarte **Quellensteuer** der Seite **Buchungen ausgleichen** manuell anpassen.</span><span class="sxs-lookup"><span data-stu-id="e5a58-123">You can manually adjust the applicable withholding tax code, as well as the actual withholding tax amount in the **Withholding tax** tab on the **Settle transactions** page.</span></span>
+2. <span data-ttu-id="9a20f-115">Klicken Sie auf die entsprechende Artikelnummer und dann auf **Bearbeiten**.</span><span class="sxs-lookup"><span data-stu-id="9a20f-115">Click the respective Item number, click **Edit**.</span></span>
 
-<span data-ttu-id="e5a58-124">Der berechnete Quellensteuerbetrag wird von der Debitorenzahlung abgezogen und auf das **Quellensteuer-Gegenkonto** über einen dazugehörigen Beleg gebucht.</span><span class="sxs-lookup"><span data-stu-id="e5a58-124">The calculated withholding tax amount will be deducted from the customer payment and posted to the **Withholding tax offset** account in a related voucher.</span></span>
+3. <span data-ttu-id="9a20f-116">Klicken Sie auf der Registerkarte **Verkauf** auf **Quellensteuer berechnen**.</span><span class="sxs-lookup"><span data-stu-id="9a20f-116">In the **Sell** tab, click **Calculate withholding tax**.</span></span>
+
+   > [!NOTE] 
+   > <span data-ttu-id="9a20f-117">Die Quellensteuer wird nicht berechnet, wenn **Quellensteuer berechnen** für diesen Artikel auf der Registerkarte **Verkauf** der Seite **Freigegebenes Produkt** nicht auf **Ja** gesetzt ist.</span><span class="sxs-lookup"><span data-stu-id="9a20f-117">Withholding tax will not be calculated if **Calculate withholding tax** is not set to **Yes** for this Item in the **Sell** tab on the **Released product** page.</span></span>
+
+4. <span data-ttu-id="9a20f-118">Wählen Sie eine Artikel-Quellensteuergruppe in der Liste **Artikel-Quellensteuergruppe** aus.</span><span class="sxs-lookup"><span data-stu-id="9a20f-118">Select an Item withholding tax group in **Item withholding tax group** list.</span></span>
+
+5. <span data-ttu-id="9a20f-119">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="9a20f-119">Click **Save**.</span></span>
+
+<span data-ttu-id="9a20f-120">Quellensteuergruppen und Artikel-Quellensteuergruppen können über die Seite **Auftrag** zugewiesen werden.</span><span class="sxs-lookup"><span data-stu-id="9a20f-120">Withholding tax groups and Item withholding tax groups can be assigned using the **Sales order** page.</span></span> 
+
+<span data-ttu-id="9a20f-121">Die Standard-Quellensteuergruppe und die Artikel-Quellensteuergruppe werden als Standardeinträge in Auftragspositionen verwendet, wenn Sie einen neuen Auftrag erstellen.</span><span class="sxs-lookup"><span data-stu-id="9a20f-121">The default Withholding tax group and Item withholding tax group will be used as default entries on sales order lines when you create a new sales order.</span></span>
+
+<span data-ttu-id="9a20f-122">Die Quellensteuer über die **Debitorzahlungserfassung** berechnet und gebucht.</span><span class="sxs-lookup"><span data-stu-id="9a20f-122">Withholding tax is calculated and posted with **Customer payment journal**.</span></span> <span data-ttu-id="9a20f-123">Sie können den entsprechenden Quellensteuercode sowie den tatsächlichen Quellensteuerbetrag auf der Registerkarte **Quellensteuer** der Seite **Buchungen ausgleichen** manuell anpassen.</span><span class="sxs-lookup"><span data-stu-id="9a20f-123">You can manually adjust the applicable withholding tax code, as well as the actual withholding tax amount in the **Withholding tax** tab on the **Settle transactions** page.</span></span>
+
+<span data-ttu-id="9a20f-124">Der berechnete Quellensteuerbetrag wird von der Debitorenzahlung abgezogen und auf das **Quellensteuer-Gegenkonto** über einen dazugehörigen Beleg gebucht.</span><span class="sxs-lookup"><span data-stu-id="9a20f-124">The calculated withholding tax amount will be deducted from the customer payment and posted to the **Withholding tax offset** account in a related voucher.</span></span>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
