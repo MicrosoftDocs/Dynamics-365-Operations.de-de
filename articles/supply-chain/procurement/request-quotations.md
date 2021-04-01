@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d0338447cba847f3677f5e3de7144fc75da01ddf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016930"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237375"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Übersicht über Angebotsanfragen (RFQs)
 
@@ -80,23 +80,23 @@ Auf der Seite **Beschaffungsparameter** wählen Sie die Vorlage für die E-Mail-
 - %Grund für Rücksendung des Angebots%
 - %Grund für den Zusatz%
 - %Zusatz erstellt von%
-- %Unternehmen%
+- %Company%
 - %Name der Angebotsanforderungsanfrage%
 - %Gültig bis%
-- %Datum%
+- %Date%
 
-Die Tokens %Grund für Angebotrücksendung% und %Grund für Ergänzung% werden durch Text ersetzt, die der Beschaffungsspezialist eingeben kann, wenn er oder sie die Ergänzung im Assistenten **Ergänzung** abschließt. Die Werte für die Tokens %Ergänzung vorbereitet von% und %Unternehmen% werden automatisch aus der Angebotsanforderung übernommen. Das Token %Datum% wird durch das aktuelle Datum ersetzt.
+Die Tokens %Grund für Angebotrücksendung% und %Grund für Ergänzung% werden durch Text ersetzt, die der Beschaffungsspezialist eingeben kann, wenn er oder sie die Ergänzung im Assistenten **Ergänzung** abschließt. Die Werte für die Token %Amendment prepared by% und %Company% werden automatisch aus der RFQ übernommen. Das %Date%-Zeichen wird durch das aktuelle Datum ersetzt.
 
 Wenn Sie eine Angebotsanforderung löschen möchten, nachdem sie versendet wurde, können Sie das über den Angebotsanforderungsfall tun. Für die Stornierung ist eine E-Mail-Vorlage erforderlich, um die Stornierungsbenachrichtigung an Kontaktpersonen des Kreditors zu senden. Die Vorlage muss auf der Seite **Beschaffungsparameter** ausgewählt werden. Wenn die Vorlage erstellt ist, kann sie die folgenden Ersatztoken enthalten:
 
 - %Stornierungsgrund%
 - %Angebotsanforderungsanfrage%
 - %Angebotsanforderung storniert von%
-- %Unternehmen%
+- %Company%
 - %Name der Angebotsanforderungsanfrage%
-- %Datum%
+- %Date%
 
-Das Token %Grund für Stornierung% wird von Text ersetzt, den der Prokurist im **Stornierungs**-Assistenten eingeben kann. Das Token %Datum% wird durch das aktuelle Datum ersetzt.
+Das Token %Grund für Stornierung% wird von Text ersetzt, den der Prokurist im **Stornierungs**-Assistenten eingeben kann. Das %Date%-Zeichen wird durch das aktuelle Datum ersetzt.
 
 Wenn Sie Ursachencodes für eine Angebotsanforderungsantwort verwenden möchten, um anzugeben, warum ein Angebot angenommen oder abgelehnt wurde, müssen Sie Ursachencodes auf der Seite **Ursachen für Kreditorenbuchungen** einrichten.
 
