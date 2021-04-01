@@ -14,12 +14,12 @@ ms.search.region: Germany
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0917629e084eee81d79b3dd82d7baf910fd2a59d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9e4924abd120e96b36722879111578f875f6e942
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005797"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232424"
 ---
 # <a name="germany-overview"></a>Deutschland – Übersicht
 
