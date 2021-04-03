@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fe009de3a94bf3ea7885f8f794879e16c36a3266
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: ed215c4577484269ddf5de20ad93417f8eef38d6
+ms.sourcegitcommit: 45d10d0c25b3ec585323709bb97ba1895b500429
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115341"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "5502987"
 ---
 # <a name="edit-personal-information"></a>Persönliche Daten bearbeiten
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Sie können Ihre persönlichen Daten in Dynamics 365 Human Resources im **Self-Service-Arbeitsbereich für Mitarbeiter** bearbeiten.
 
@@ -38,13 +40,16 @@ Die persönlichen Informationen, die Sie bearbeiten können, umfassen:
 - Zahlungsweise
 - In Human Resources verwendetes Bild
 
+>[!NOTE]
+>Möglicherweise können Sie bestimmte Arten von persönlichen Informationen nicht bearbeiten, z. B. geschäftliche Kontaktdaten. Weitere Informationen finden Sie unter [Bearbeiten von persönlichen Informationen einschränken](hr-employee-self-service-restrict-editing.md).
+
 Die im globalen Adressbuch festgelegten Parameter bestimmen die Rollen, in denen Ihre persönlichen Daten angezeigt werden können.
 
 1. Wählen Sie in der Personalabteilung **Mitarbeiter-Self-Service** aus.
 
 2. Wählen Sie **Persönliche Daten bearbeiten** aus.
 
-3. Um Ihre Adresse zu ändern, wählen Sie die Registerkarte **Adressen** aus. Von Ihnen vorgenommene Änderungen werden im Arbeitsbereich **Personalmanagement** zur Alarmierung von HR angezeigt. 
+3. Um Ihre Adresse zu ändern, wählen Sie die Registerkarte **Adressen** aus. Von Ihnen vorgenommene Änderungen werden im Arbeitsbereich **Personalmanagement** zur Alarmierung von HR angezeigt.
 
     - Wählen Sie zum Hinzufügen einer neuen Adresse **Hinzufügen** aus.
     - Um eine vorhandene Adresse zu bearbeiten, wählen Sie die Adresse aus und wählen Sie dann **Bearbeiten**.
@@ -52,11 +57,13 @@ Die im globalen Adressbuch festgelegten Parameter bestimmen die Rollen, in denen
     - Wählen Sie zum Hinzufügen oder Entfernen eines Kontakts **Weitere Optionen** und dann **Erweitert** aus. Wählen Sie unter **Kontaktinformationen** **Hinzufügen** oder **Entfernen** aus und bearbeiten Sie die Felder nach Bedarf.
     - Wählen Sie zum Festlegen Ihrer Zeitzone und Ihres Standorts **Weitere Optionen** und dann **Erweitert** aus. Bearbeiten Sie unter **Allgemeines** die Felder nach Bedarf.
 
-4. Um Ihre Kontaktdaten zu ändern, wählen Sie die Registerkarte **Kontaktdetails** aus. Sie können verschiedene Arten von Kontaktinformationen bereitstellen, einschließlich Telefonnummer, E-Mail und Social Media-Links. Sie können ein Kontaktdetail als primär festlegen, aber Sie können nur eines von jedem Typ als primär festlegen. 
+4. Um Ihre Kontaktdaten zu ändern, wählen Sie die Registerkarte **Kontaktdetails** aus. Sie können verschiedene Arten von Kontaktinformationen bereitstellen, einschließlich Telefonnummer, E-Mail und Social Media-Links. Sie können ein Kontaktdetail als primär festlegen, aber Sie können nur eines von jedem Typ als primär festlegen.
 
     - Wählen Sie zum Hinzufügen einer neuen Kontaktinformation **Hinzufügen** aus. Bearbeiten Sie die Felder wie gewünscht.
     - Um eine vorhandene Kontaktinformation zu bearbeiten, wählen Sie das Element aus und wählen Sie dann **Bearbeiten**. Bearbeiten Sie die Felder wie gewünscht.
     - Um ein Kontaktdetail als privat festzulegen, wählen Sie das Element aus und wählen Sie **Erweitert** und stellen Sie dann die Option **Privat** auf **Ja** um. Wählen Sie **OK**.
+      >[!NOTE]
+      >Die Schaltfläche **Erweitert** ist nicht verfügbar, wenn Ihr Admin in Ihrer Umgebung die Funktion **(Vorschau) Mitarbeiter vom Hinzufügen oder Bearbeiten von Adress- und Kontaktinformationen für ausgewählte Zwecke ausschließen** aktiviert hat. Weitere Informationen finden Sie unter [Bearbeiten von persönlichen Informationen einschränken](hr-employee-self-service-restrict-editing.md).
   
 5. Um Ihre persönlichen Kontakte zu ändern, wählen Sie die Registerkarte **Persönliche Kontakte** aus. Sie können Notfallkontakte, Begünstigte und abhängige Personen festlegen. Ein Kontakt kann eine Person oder eine Organisation sein. Die Funktion **Vorteilsverwaltung** verwendet persönliche Kontaktinformationen. Weitere Informationen finden Sie unter [Berechtigungsoptionen für persönliche Kontakte konfigurieren](hr-benefits-setup-contact-eligibility-options.md).
 

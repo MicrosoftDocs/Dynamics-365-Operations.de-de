@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ebb9833be5e51fe59e9895e67cd8e55058078aa
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 265709f298d9310d5d647eaa029ece778d2e226e
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001347"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470640"
 ---
 # <a name="repair-management"></a>Reparaturverwaltung       
 
@@ -37,15 +37,11 @@ Zu diesem Zweck werden Einstellungen für Symptome, Diagnose und Lösung eingeri
 
 Verwenden Sie die folgenden Einrichtungsformulare, um Informationen über Symptome, Diagnose und Lösung in Bezug auf die Reparatur einzugeben.
 
-1.  Klicken Sie auf **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Bedingungen**.
-
-2.  Klicken Sie auf **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Symptombereiche**.
-
-3.  Klicken Sie auf **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Diagnosebereiche**.
-
-4.  Klicken Sie auf **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Lösungen**.
-
-5.  Klicken Sie auf **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Reparaturphasen**.
+- **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Bedingungen**.
+- **Service-Management** \> **Einrichten** \> **Reparatur** \> **Symptombereiche**.
+-  **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Diagnosebereiche**.
+- **Service-Management** \> **Einrichten** \> **Reparatur** \> **Lösungen**.
+- **Serviceverwaltung** \> **Einrichten** \> **Reparatur** \> **Reparaturstufen**.
 
 ## <a name="symptoms-and-conditions"></a>Symptome und Bedingungen
 
@@ -81,19 +77,19 @@ Reparaturpositionen können für jeden Schritt des Reparaturvorgangs erstellt we
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Erstellen einer Reparaturposition in einem Serviceauftrag
 
-1.  Klicken auf **Serviceverwaltung** \> **Gemeinsam** \> **Serviceaufträge** \> **Serviceaufträge**.
+1.  Gehen Sie zu **Serviceverwaltung** \> **Allgemein** \> **Serviceaufträge** \> **Serviceaufträge**.
 
 2.  Wählen Sie den Serviceauftrag mit dem zu reparierenden Serviceobjekt aus.
 
-3.  Klicken Sie **Reparatur** \> **Reparaturpositionen**, um das Formular **Reparaturpositionen** zu öffnen.
+3.  Wählen Sie **Reparatur** \> **Reparaturleitungen**, um das Formular **Reparaturleitungen** zu öffnen.
 
-4.  Erstellen Sie durch Drücken von Strg+N eine neue Position.
+4.  Wählen Sie **Neu**, um eine neue Zeile zu erstellen.
 
 5.  Wählen Sie ein Serviceobjekt aus. Sie können jedes beliebige Serviceobjekt auswählen, für das im Serviceauftrag eine Objektbeziehung eingerichtet wurde.
 
-6.  Wählen Sie in der Reparaturposition die zutreffenden Werte für Symptome, Diagnose und Ausführung aus, und klicken Sie ggf. zum Erstellen eines Hinweises für die Reparaturposition auf die Registerkarte **Hinweis**.
+6.  Wählen Sie eines der voreingestellten Symptome, Diagnosen und Ausführungswerte, die in der Reparaturzeile relevant sind, und wählen Sie dann die Registerkarte **Notiz**, um bei Bedarf eine Notiz zur Reparaturzeile zu erstellen.
 
-7.  Drücken Sie zum Speichern der neuen Reparaturposition die Tastenkombination STRG+S. Das Feld **Erstellungsdatum und -uhrzeit** auf der Registerkarte **Allgemein** des Formulars **Reparaturpositionen** wird mit dem Zeitpunkt des Speichervorgangs aktualisiert.
+7.  Wählen Sie **Speichern**, um die neue Reparaturzeile zu speichern. Das Feld **Erstellungsdatum und -uhrzeit** auf der Registerkarte **Allgemein** des Formulars **Reparaturpositionen** wird mit dem Zeitpunkt des Speichervorgangs aktualisiert.
 
 ## <a name="tracking-progress-and-resolving-a-repair-issue"></a>Nachverfolgen des Status und Beheben eines Reparaturproblems
 

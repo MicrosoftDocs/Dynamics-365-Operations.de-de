@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 722b004e607cb2e6b7de292d92b67b18c2024696
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970305"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556265"
 ---
 # <a name="planned-cross-docking"></a>Geplantes Crossdocking
 
@@ -37,12 +37,12 @@ Zum Zeitpunkt des Eingangs eingehender Bestellungen erkennt das Crossdocking-Set
 > [!NOTE]
 > Lagerbuchungen sind **nicht** unregistriert, wenn Crossdocking-Arbeiten abgebrochen werden, auch wenn die Einstellung für diese Funktion in den Lagerortverwaltungsparametern aktiviert ist.
 
-## <a name="turn-on-the-planned-cross-docking-feature"></a>Funktion für geplantes Crossdocking aktivieren
+## <a name="turn-on-the-planned-cross-docking-features"></a>Schalten Sie die Funktionen für das geplante Cross Docking ein
 
-Bevor Sie das erweiterte geplante Crossdocking verwenden können, muss die Funktion in Ihrem System aktiviert sein. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
+Wenn Ihr System nicht bereits die in diesem Thema beschriebenen Funktionen enthält, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die folgenden Funktionen in der folgenden Reihenfolge ein:
 
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Geplantes Crossdocking*
+1. *Geplantes Crossdocking*
+2. *Crossdockingvorlagen mit Lagerplatzrichtlinien*
 
 ## <a name="setup"></a>Einstellung
 
@@ -89,6 +89,10 @@ Das geplante Crossdocking wird als Ladebuchungsmethode implementiert. Nachdem Si
     - **Bei Eingang der Lieferung erneut validieren:** *Nein*
 
         Diese Option definiert, ob die Lieferung während des Eingangs erneut validiert werden soll. Wenn diese Option auf *Ja* festgelegt ist, werden sowohl das maximale Zeitfenster als auch der Ablauftagebereich überprüft.
+
+    - **Richtlinie Code** Lassen Sie dieses Feld leer
+
+        Mit dieser Option kann das System Lagerplatzrichtlinien verwenden, um den besten Lagerplatz zu bestimmen, an den der Bestand beim Cross-Docking gebracht werden soll. Sie können sie festlegen, indem Sie jeder relevanten Cross-Docking-Vorlage einen Richtliniencode zuweisen. Jeder Richtliniencode identifiziert eine eindeutige Lagerplatzrichtlinie.
 
     - **Zeitfenster validieren:** *Ja*
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSPhysDimUOM
+ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,16 +16,17 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 004d9b4522335b481b640ef0fe35f4db66e3c9f5
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: aa5cbf807e809238489c539d3ad8c0bc34421774
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078266"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501293"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Festlegen verschiedener Dimensionen für Verpackung und Lagerung
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Einige Artikel werden so verpackt oder gelagert, dass Sie möglicherweise die physischen Dimensionen für jeden von mehreren verschiedenen Prozessen unterschiedlich nachverfolgen müssen. Die Funktion *Produktdimensionen für Verpackung* ermöglicht für jedes Produkt das Einrichten einer oder mehrerer Arten von Dimensionen. Jede Dimensionsart bietet eine Reihe physikalischer Messwerte (Gewicht, Breite, Tiefe und Höhe) und legt den Prozess fest, bei dem diese physikalischen Messwerte gelten. Wenn diese Funktion aktiviert ist, unterstützt Ihr System die folgenden Arten von Dimensionen:
 

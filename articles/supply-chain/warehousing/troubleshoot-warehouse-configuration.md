@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 09b5770190fea9591f422b61ce6deedb2b9fa790
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994002"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487096"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>Fehlerbehebung bei der Lagerort-Konfiguration
 
@@ -109,5 +109,32 @@ Um den Arbeitskräften diese Änderung zu ermöglichen, können Sie einen Menüp
 
 Sie können weitere Felder auf der Seite nach Bedarf festlegen.
 
+## <a name="the-dock-management-profile-of-a-location-profile-is-not-preventing-inventory-types-from-being-mixed"></a>Das Dock-Verwaltungsprofil eines Lagerplatz-Profils verhindert nicht, dass Bestandstypen gemischt werden.
+
+### <a name="issue-description"></a>Problembeschreibung
+
+Sie verwenden *Sendungskonsolidierungsrichtlinien*. Sie haben ein *Dock-Verwaltungsprofil* für ein *Standortprofil* festgelegt, aber wenn Arbeit erstellt wird, werden die Bestandstypen am endgültigen Lagerplatz gemischt.
+
+### <a name="issue-resolution"></a>Problemlösung
+
+Dock-Verwaltungsprofile erfordern, dass die Arbeit im Voraus aufgeteilt wird. Mit anderen Worten, das Dock-Verwaltungsprofil erwartet, dass ein Arbeitskopf nicht mehrere Lagerplätze einlagert.
+
+Damit das Dock-Verwaltungsprofil die Vermischung von Beständen effektiv verwalten kann, muss eine Arbeitskopfunterbrechung festgelegt werden.
+
+In diesem Beispiel ist unser Dock-Verwaltungsprofil so konfiguriert, dass **Bestandstypen, die nicht gemischt werden sollen** auf *Sendungs-ID* festgelegt ist, und wir werden eine Arbeitskopfunterbrechung dafür einrichten:
+
+1. Gehen Sie zu **Lagerortverwaltung \> Einstellungen \> Arbeit \> Arbeitsvorlagen**.
+1. Wählen Sie die **Arbeitsauftragsart**, die Sie bearbeiten wollen (z.B. *Einkaufsbestellungen*).
+1. Wählen Sie die zu bearbeitende Arbeitsvorlage.
+1. Wählen Sie im Aktionsbereich **Abfrage bearbeiten** aus.
+1. Öffnen Sie die Registerkarte **Sortierung** und fügen Sie eine Zeile mit den folgenden Einstellungen hinzu:
+    - **Tabelle** - *Vorläufige Arbeitstransaktionen*
+    - **Abgeleitete Tabelle** - *Zeitweilige Arbeitstransaktionen*
+    - **Feld** - *Sendungs-ID*
+1. Wählen Sie **OK**.
+1. Sie kehren auf die Seite **Arbeitsvorlagen** zurück. Wählen Sie im Aktivitätsbereich **Arbeitskopfzeilenumbrüche** aus.
+1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
+1. Aktivieren Sie das Kontrollkästchen, das mit dem **Feldname** *Shipment ID* verbunden ist.
+1. Wählen Sie im Aktionsbereich **Speichern** aus.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
