@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ccf7901ebbea655b7f795a48944c6f03f9cf210a
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: ecabac54134629074ac01944963a037c2cdc63c9
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115101"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467168"
 ---
 # <a name="create-a-working-time-calendar"></a>Erstellen eines Arbeitszeitkalenders
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Ein Arbeitszeitkalender in Dynamics 365 Human Resources zeigt die Tage und Stunden an, an denen Mitarbeiter in Ihrer Organisation arbeiten. Wenn ein Mitarbeiter eine Freistellung beantragt, muss er sich keine Gedanken über Feiertage und Schließungen machen.
 

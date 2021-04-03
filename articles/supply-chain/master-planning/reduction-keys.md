@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8732d0a032b7dd44918955354c56321d065d4a77
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d16de8c339fadff074ef8ec30b0b4d6e3412569
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001848"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470768"
 ---
 # <a name="forecast-reduction-keys"></a>Planzahlenverrechnungsschlüssel vorhersagen
 
@@ -198,7 +198,7 @@ Deshalb werden die folgenden Aufträge erstellt.
 Ein Planungsverrechnungsschlüssel wird in den Formularen **Transaktionen - Planzahlenverrechnungsschlüssel** und **Prozentplanzahlenverrechnungsschlüssel**-Methoden zum Reduzieren des Planungsbedarfes verwendet. Gehen Sie folgendermaßen vor, um einen Planzahlenverrechnungsschlüssel zu erstellen und einzurichten.
 
 1. Gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Abdeckung \> Planzahlenverrechnungsschlüssel**.
-2. Klicken Sie auf **Neu** oder drücken Sie **STRG+N**, um einen neuen Planzahlenverrechnungsschlüssel zu erstellen.
+2. Wählen Sie **Neu**, um einen Reduzierungsschlüssel zu erstellen.
 3. Im Feld **Planzahlenverrechnungsschlüssel** geben Sie eine eindeutige Kennung für den Planzahlenverrechnungsschlüssel ein. Geben Sie im Feld  **Namen** einen Namen ein. 
 4. Hier können Sie die Perioden sowie die Planzahlenverrechnungsschlüsselprozentsatz in jeder Periode eingeben:
 

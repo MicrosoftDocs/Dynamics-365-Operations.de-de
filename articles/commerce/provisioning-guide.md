@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a57cc02c6d62f288f14b65191c2f4927a019963c
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969900"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478163"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Eine Dynamics 365 Commerce-Evaluierungsumgebung bereitstellen
 
@@ -34,8 +34,6 @@ Bevor Sie beginnen, empfehlen wir, dass Sie einen kurzen Blick in dieses Thema w
 
 > [!NOTE]
 > Commerce-Auswertungsumgebungen sind nicht allgemein verfügbar und sie werden Partner und Kunden auf Anfrage gewährt. Für weitere Informationen wenden Sie sich an den Ansprechpartner Ihres Microsoft-Partners.
-
-## <a name="overview"></a>Übersicht
 
 Um eine Commerce-Evaluierungsumgebung erfolgreich bereitzustellen, müssen Sie ein Projekt mit einem bestimmten Produktnamen und -Typ erstellen. Bei der Umgebung und der Commerce Scale Unit (CSU) gibt es auch einige spezifische Parameter, die Sie verwenden müssen, um später E-Commerce bereitstellen zu können. In den Anweisungen in diesem Thema werden alle Schritte, die zum Ausführen der Bereitstellung erforderlich sind, sowie die Parameter, die Sie verwenden müssen, beschrieben.
 

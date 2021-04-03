@@ -15,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 889cc90b534de33ccd0e2bea367b2da42b5d72e0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 18ba781795058de6228c712c6a22e59038e96368
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006184"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478361"
 ---
 # <a name="task-management-in-pos"></a>Aufgabenverwaltung in POS
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema beschreibt die Aufgabenverwaltung in der Microsoft Dynamics 365 Commerce-Point-of-Sale-Anwendung (POS).
-
-## <a name="overview"></a>Übersicht
 
 Die POS-Anwendung Dynamics 365 Commerce verfügt über Aufgabenverwaltungsfunktionen, mit denen Filialleiter und Mitarbeiter Aufgaben verwalten und den Aufgabenstatus aktualisieren können. Die Mitarbeiter der Filiale können auf die Aufgaben zugreifen, indem sie entweder die Kachel **Aufgaben** auf der POS-Homepage oder die Aufgabenbenachrichtigungen auswählen. Standardmäßig werden Filialmitarbeiter zur Registerkarte **Meine Aufgaben** geführt, wo sie die ihnen zugewiesenen Aufgaben einsehen können. Sie können jedoch problemlos zu den Registern **Überfällige Aufgaben**, **Öffnende Aufgaben** und **Aufgabenlisten** wechseln.
 

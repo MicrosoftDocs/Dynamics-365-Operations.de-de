@@ -17,29 +17,24 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89e6010440599c5e60415c1261927de73f520034
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 254a94548bc75ee6d1eae1d1c9f3ae4bdbf58855
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965962"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470976"
 ---
-# <a name="create-reason-codes"></a>Erstellen von Ursachencodes    
+# <a name="create-reason-codes"></a>Erstellen von Ursachencodes
 
 [!include [banner](../includes/banner.md)]
 
+1. Gehen Sie zu **Service-Verwaltung** \> **Einrichten** \> **Service-Aufträge** \> **Stufengrundcodes**.
 
-1.  Klicken auf **Serviceverwaltung** \> **Einrichtung** \> **Serviceaufträge** \> **Phasenursachencodes**.
+1. Wählen Sie **Neu**, um einen neuen Grundcode zu erstellen.
 
-2.  Erstellen Sie durch Drücken von STRG+N einen neuen Ursachencode.
-
-3.  Drücken Sie zum Speichern des Ursachencodes die Tastenkombination STRG+S.
+1. Wählen Sie **Speichern**, um den Grundcode zu speichern.
 
 Wenn Sie zur Angabe eines Ursachencodes aufgefordert werden, um zu erklären, warum Sie eine Phase des Serviceauftrags aktualisieren, können Sie unter allen Ursachencodes auswählen, die Sie hier erstellen.
 
-  
-
-
-
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0cd101bfe88ae1acb051ba11a676da66ef6a3db6
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 50be7631ec303171640b7fa9e6d283a198bd1a52
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115461"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465005"
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Einen Fragebogen mithilfe des Zeitplans verteilen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Die Fragebogenplanung ermöglicht es Ihnen, Fragebögen für mehrere Befragungsteilnehmer zu planen und zu verteilen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 
@@ -55,7 +57,7 @@ Die Fragebogenplanung ermöglicht es Ihnen, Fragebögen für mehrere Befragungst
 
 11. Geben Sie im Textfeld den Textkörper der E-Mail ein. Beachten Sie, das die Variable nur zum Ersetzen von Werten im System verwendet werden kann.
 
-    * Beispiel: Lieber %%P%%, melden Sie sich in Mitarbeiter Self Service an, um den Belegschafts-Statusfragebogen auszufüllen.  Contoso  
+    * Beispiel: Sehr geehrte %P%, bitte melden Sie sich im Mitarbeiter-Self-Service an, um den Fragebogen zur Mitarbeitergesundheit auszufüllen.  Contoso  
 
 12. Klicken Sie auf "Speichern".
 

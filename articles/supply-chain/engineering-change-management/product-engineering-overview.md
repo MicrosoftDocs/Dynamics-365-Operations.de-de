@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b081cd8d56217b8cf76db824c29482d453fc9ea3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3fde9194ece4774c4d39785e337caf2413052159
+ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001947"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476674"
 ---
 # <a name="engineering-change-management-overview"></a>Überblick über die Verwaltung für technische Änderungen
 
@@ -44,20 +44,24 @@ Die Verwaltung für technische Änderungen unterstützt Sie bei der Planung und 
 
 Das vorhergehende Video ([Funktionalitäten der Änderungsverwaltung in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) ist in der [Finance and Operations-Wiedergabeliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verfügbar ist.
 
-## <a name="turn-on-engineering-change-management-for-your-system"></a>Schalten Sie die Verwaltung für technische Änderungen für Ihr System ein
+## <a name="turn-on-the-engineering-change-management-and-version-dimension-features-for-your-system"></a>Schalten Sie die Funktionen für technische Änderungen Verwaltung für technische Änderungen und Versionsverwaltung für Ihr System ein
 
-Schalten Sie zunächst die Verwaltung für technische Änderungen ein, indem Sie die folgenden Schritte ausführen.
+Bevor Sie die Verwaltung für technische Änderungen nutzen können, müssen Sie sowohl die Funktion *Verwaltung für technische Änderungen* als auch deren Konfigurationsschlüssel aktivieren. Wenn Sie auch die Versionsdimension von Produkten in Transaktionen verfolgen wollen (optional), dann müssen Sie auch die Funktion *Produktversionsdimension* und deren Konfigurationsschlüssel aktivieren.
+
+Schalten Sie zunächst die Funktionen ein, indem Sie diese Schritte ausführen.
 
 1. Navigieren Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Suchen Sie nach Updates.
 1. Schalten Sie die Funktion ein, die **Verwaltung für technische Änderungen** genannt wird.
+1. Wenn Sie sie verwenden wollen, dann schalten Sie auch die Funktion ein, die **Produktdimension Version** heißt.
 
-Schalten Sie als nächstes den Konfigurationsschlüssel **Verwaltung für technische Änderungen** ein, indem Sie die folgenden Schritte ausführen.
+Als nächstes schalten Sie die Konfigurationstasten ein, indem Sie diese Schritte befolgen.
 
 1. Legen Sie Ihr System in den Wartungsmodus ein, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
 1. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**.
-1. Erweitern Sie den Knoten **Handel**, und aktivieren Sie das Kontrollkästchen **Verwaltung für technische Änderungen**.
+1. Erweitern Sie den Knoten **Handel**
+1. Aktivieren Sie das Kontrollkästchen **Verwaltung für technische Änderungen**.
+1. Wenn Sie es verwenden möchten, dann aktivieren Sie auch das Kontrollkästchen **Produktdimension - Version**.
 1. Schalten Sie den Wartungsmodus aus, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

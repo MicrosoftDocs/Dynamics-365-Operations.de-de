@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 1dd4dfc5b8ca7af66941d081b4c20be0f5d6001d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f988732549ce82919f02c87b320623d8d4218735
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993399"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477899"
 ---
 # <a name="create-a-default-customer"></a>Einen Standarddebitoren erstellen
-
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie einen Standarddebitoren erstellen, der beim Erstellen eines Kanals in Microsoft Dynamics 365 Commerce verwendet wird.
-
-## <a name="overview"></a>Übersicht
 
 Wenn Sie einen Channel anlegen, müssen Sie einen Standardkunden angeben. Ein Standardkunde kann einfach erstellt werden, nachdem zuerst die Kundengruppe und das Kundenadressbuch erstellt wurden.
 

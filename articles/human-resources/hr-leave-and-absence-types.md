@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b21d4d631bcdf603b38212f5f76bb78937d3d3c
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: f1c3ced43b1f5693c5d5466fd97a20beb358fa20
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115075"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463333"
 ---
 # <a name="configure-leave-and-absence-types"></a>Urlaubs- und Abwesenheitstypen konfigurieren
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Abwesenheitstypen in Dynamics 365 Human Resources definieren die verschiedenen Arten von Abwesenheitszeiten, die Mitarbeiter melden können. Sie können die Abwesenheitstypen an die Bedürfnisse Ihrer Organisation anpassen. Beispiele für Abwesenheitstypen sind:
 
@@ -72,8 +74,7 @@ Abwesenheitstypen in Dynamics 365 Human Resources definieren die verschiedenen A
    
  3. Einstellen des **Vortragstyps** für den Urlaubstyp. Wenn Sie diese Option auswählen, werden alle Vortragsguthaben auf die angegebene Urlaubsart übertragen. Die Art des Vortragstyps für den Urlaub muss ebenfalls in den Urlaubs- und Abwesenheitsplan aufgenommen werden. 
  
- 4. Definieren von **Ablaufregeln** für den Urlaubstyp. Wenn Sie diese Option konfigurieren, können Sie die Einheit der Tage oder Monate auswählen und die Dauer für den Ablauf festlegen. Sie können auch das Datum des Inkrafttretens der Ablaufregel festlegen. Zum Zeitpunkt des Ablaufs vorhandene Urlaubsguthaben werden von der Urlaubsart abgezogen und im Urlaubsguthaben ausgewiesen. 
- 
+ 4. Definieren von **Ablaufregeln** für den Urlaubstyp. Wenn Sie diese Option konfigurieren, können Sie die Einheit der Tage oder Monate auswählen und die Dauer für den Ablauf festlegen. Sie können auch das Datum des Inkrafttretens der Ablaufregel festlegen. Das Gültigkeitsdatum wird verwendet, um zu bestimmen, wann der Batch-Job gestartet wird, der den Ablauf des Urlaubs verarbeitet, oder das Datum, an dem die Regel in Kraft tritt. Der Verfall selbst wird immer am Startdatum des Urlaubsplans erfolgen, sobald der Batch-Job zur Verarbeitung festgelegt ist. Zum Beispiel kann das Startdatum des Plans der 1.1.2020 sein, aber die Regel wurde erst am 6.1.2020 erstellt. Wenn Sie das Gültigkeitsdatum auf den 1.6.2020 festlegen, wird die Regel an der nächsten Jahresgrenze verarbeitet, also am 1.1.2021. Zum Zeitpunkt des Ablaufs vorhandene Urlaubsguthaben werden von der Urlaubsart abgezogen und im Urlaubsguthaben ausgewiesen. 
  
 ## <a name="see-also"></a>Siehe auch
 

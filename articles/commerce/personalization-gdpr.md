@@ -1,6 +1,6 @@
 ---
 title: Personalisierte Empfehlungen abmelden
-description: In diesem Thema wird erläutert, wie Sie Kunden davon abhalten können, personalisierte Empfehlungen in Microsoft Dynamics 365 Commerce zu erhalten.
+description: In diesem Thema wird erläutert, wie Sie über Microsoft Dynamics 365 Commerce Kunden die Möglichkeit geben, sich vom Empfang personalisierter Empfehlungen abzumelden.
 author: bebeale
 manager: AnnBe
 ms.date: 09/15/2020
@@ -18,20 +18,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e822d0097443d7da347c29ebfa63ad6a2d7cbf8b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e65fc54f87664caec95b2bc2c579d0820ae08c0f
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000636"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477683"
 ---
-# <a name="opt-out-of-personalized-recommendations"></a>Personalisierte Empfehlungen abmelden
+# <a name="opt-out-of-personalized-recommendations"></a>Personalisierte Empfehlungen kündigen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Kunden davon abhalten können, personalisierte Empfehlungen in Microsoft Dynamics 365 Commerce zu erhalten.
-
-## <a name="overview"></a>Übersicht
+In diesem Thema wird erläutert, wie Sie über Microsoft Dynamics 365 Commerce Kunden die Möglichkeit geben, sich vom Empfang personalisierter Empfehlungen abzumelden.
 
 Während der Kontoerstellung werden neue Kunden automatisch eingerichtet, um personalisierte Empfehlungen zu erhalten. Jedoch bietet Dynamics 365 Commerce Einzelhändlern verschiedene Möglichkeiten, Benutzern zu ermöglichen, diese Empfehlungen nicht zu erhalten und die Verarbeitung ihrer personenbezogenen Daten einzuschränken. Authentifizierte Benutzer, die sich gegen personalisierte Empfehlungen entscheiden, sehen keine personalisierten Listen mehr. Darüber hinaus werden alle persönlichen Daten, die zur Personalisierung gesammelt werden, aus personalisierten Empfehlungsmodellen entfernt.
 

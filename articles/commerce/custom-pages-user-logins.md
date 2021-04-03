@@ -1,6 +1,6 @@
 ---
-title: Einrichten angepasster Seiten für die Benutzeranmeldung
-description: In diesem Thema wird beschrieben, wie Sie benutzerdefinierte Seiten in Microsoft Dynamics 365 Commerce erstellen, die benutzerdefinierte Anmeldungen für Benutzer von Mandanten von Azure Active Directory (Azure AD) Onlinebankenlösungen (B2C) verarbeiten.
+title: Angepasste Seiten für die Benutzeranmeldung einrichten
+description: In diesem Thema wird beschrieben, wie Sie benutzerdefinierte Seiten in Microsoft Dynamics 365 Commerce erstellen, die benutzerdefinierte Anmeldungen für Benutzer von Business-to-Consumer (B2C)-Mandanten von Azure Active Directory (Azure AD) verarbeiten.
 author: brianshook
 manager: annbe
 ms.date: 09/15/2020
@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a55da9683c43ac75109fd256e481b02a4d565914
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3328fad5328ae1954a6749f9a5eebcb71c723698
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970077"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477947"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Angepasste Seiten für die Benutzeranmeldung einrichten
 
-
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie benutzerdefinierte Seiten in Microsoft Dynamics 365 Commerce erstellen, die benutzerdefinierte Anmeldungen für Benutzer von Mandanten von Azure Active Directory (Azure AD) Onlinebankenlösungen (B2C) verarbeiten.
-
-## <a name="overview"></a>Übersicht
+In diesem Thema wird beschrieben, wie Sie benutzerdefinierte Seiten in Microsoft Dynamics 365 Commerce erstellen, die benutzerdefinierte Anmeldungen für Benutzer von Business-to-Consumer (B2C)-Mandanten von Azure Active Directory (Azure AD) verarbeiten.
 
 Um benutzerdefinierte Seiten zu verwenden, die in Dynamics 365 Commerce erstellt werden können, um Benutzeranmeldungsflüsse zu verarbeiten, müssen Sie die Azure AD Richtlinien festlegen, auf die in der Geschäftsumgebung verwiesen wird. Sie können die Azure AD B2C Richtlinien „An- und Abmeldung“, „Profilverwaltung“ und „Kennwortzurücksetzung“ mithilfe der Azure AD B2C Anwendung konfigurieren. Die Azure AD B2C Mandanten- und Richtliniennamen können dann während des Bereitstellungsprozesses referenziert werden, der für die Handelsumgebung mithilfe von Microsoft Dynamics Lifecycle Services (LCS) ausgeführt wird.
 
