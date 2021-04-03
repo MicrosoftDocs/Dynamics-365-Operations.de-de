@@ -15,29 +15,32 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6fb001d51fcaff2307845d918eddee8256c2ab8a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 58a0f8e9247e5885b1f148b3b28b7e67b1fa292d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994203"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5240316"
 ---
-# <a name="estimate-a-production-order"></a><span data-ttu-id="2fac4-103">Produktionsauftrag vorkalkulieren</span><span class="sxs-lookup"><span data-stu-id="2fac4-103">Estimate a production order</span></span>
+# <a name="estimate-a-production-order"></a><span data-ttu-id="c2d27-103">Produktionsauftrag vorkalkulieren</span><span class="sxs-lookup"><span data-stu-id="c2d27-103">Estimate a production order</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="2fac4-104">Sie können dieses Verfahren ausführen, indem Sie das USMF-Demodatunternehmen oder Ihren eigenen Datensatz verwenden.</span><span class="sxs-lookup"><span data-stu-id="2fac4-104">You can run this procedure by using the USMF demo data company or your own data set.</span></span> <span data-ttu-id="2fac4-105">In beiden Fällen müssen Sie einen offenen Produktionsauftrag haben, der den Status "Erstellt" aufweist.</span><span class="sxs-lookup"><span data-stu-id="2fac4-105">In both cases, you need to have an open production order that has the Created status.</span></span> <span data-ttu-id="2fac4-106">Dies ist die zweite Prozedur von sieben, die den Produktionsauftrags-Lebenszyklus erklärt.</span><span class="sxs-lookup"><span data-stu-id="2fac4-106">This is the second procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="c2d27-104">Sie können dieses Verfahren ausführen, indem Sie das USMF-Demodatunternehmen oder Ihren eigenen Datensatz verwenden.</span><span class="sxs-lookup"><span data-stu-id="c2d27-104">You can run this procedure by using the USMF demo data company or your own data set.</span></span> <span data-ttu-id="c2d27-105">In beiden Fällen müssen Sie einen offenen Produktionsauftrag haben, der den Status "Erstellt" aufweist.</span><span class="sxs-lookup"><span data-stu-id="c2d27-105">In both cases, you need to have an open production order that has the Created status.</span></span> <span data-ttu-id="c2d27-106">Dies ist die zweite Prozedur von sieben, die den Produktionsauftrags-Lebenszyklus erklärt.</span><span class="sxs-lookup"><span data-stu-id="c2d27-106">This is the second procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="estimate-a-production-order"></a><span data-ttu-id="2fac4-107">Produktionsauftrag vorkalkulieren</span><span class="sxs-lookup"><span data-stu-id="2fac4-107">Estimate a production order</span></span>
-1. <span data-ttu-id="2fac4-108">Wechseln Sie zu "Produktionssteuerung" > "Produktionsaufträge" > "Alle Produktionsaufträge".</span><span class="sxs-lookup"><span data-stu-id="2fac4-108">Go to Production control > Production orders > All production orders.</span></span>
-2. <span data-ttu-id="2fac4-109">Wählen Sie einen Auftrag aus, der den Status "Erstellt" im Raster hat.</span><span class="sxs-lookup"><span data-stu-id="2fac4-109">Select an order that has the Created status in the grid.</span></span>
-3. <span data-ttu-id="2fac4-110">Klicken Sie im Aktivitätsbereich auf "Produktionsauftrag".</span><span class="sxs-lookup"><span data-stu-id="2fac4-110">On the Action Pane, click Production order.</span></span>
-4. <span data-ttu-id="2fac4-111">Klicken Sie auf "Vorkalkulation".</span><span class="sxs-lookup"><span data-stu-id="2fac4-111">Click Estimate.</span></span>
-    * <span data-ttu-id="2fac4-112">In diesem Schritt werden die vorkalkulierten Gesamtkosten eines einzelnen Produktionsauftrags berechnet.</span><span class="sxs-lookup"><span data-stu-id="2fac4-112">In this step, the estimated costs of a single production order is calculated.</span></span>   
-5. <span data-ttu-id="2fac4-113">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="2fac4-113">Click OK.</span></span>
+## <a name="estimate-a-production-order"></a><span data-ttu-id="c2d27-107">Produktionsauftrag vorkalkulieren</span><span class="sxs-lookup"><span data-stu-id="c2d27-107">Estimate a production order</span></span>
+1. <span data-ttu-id="c2d27-108">Wechseln Sie zu "Produktionssteuerung" > "Produktionsaufträge" > "Alle Produktionsaufträge".</span><span class="sxs-lookup"><span data-stu-id="c2d27-108">Go to Production control > Production orders > All production orders.</span></span>
+2. <span data-ttu-id="c2d27-109">Wählen Sie einen Auftrag aus, der den Status "Erstellt" im Raster hat.</span><span class="sxs-lookup"><span data-stu-id="c2d27-109">Select an order that has the Created status in the grid.</span></span>
+3. <span data-ttu-id="c2d27-110">Klicken Sie im Aktivitätsbereich auf "Produktionsauftrag".</span><span class="sxs-lookup"><span data-stu-id="c2d27-110">On the Action Pane, click Production order.</span></span>
+4. <span data-ttu-id="c2d27-111">Klicken Sie auf "Vorkalkulation".</span><span class="sxs-lookup"><span data-stu-id="c2d27-111">Click Estimate.</span></span>
+    * <span data-ttu-id="c2d27-112">In diesem Schritt werden die vorkalkulierten Gesamtkosten eines einzelnen Produktionsauftrags berechnet.</span><span class="sxs-lookup"><span data-stu-id="c2d27-112">In this step, the estimated costs of a single production order is calculated.</span></span>   
+5. <span data-ttu-id="c2d27-113">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="c2d27-113">Click OK.</span></span>
 
-## <a name="view-the-calculation-details"></a><span data-ttu-id="2fac4-114">Berechnungsdetails anzeigen</span><span class="sxs-lookup"><span data-stu-id="2fac4-114">View the calculation details</span></span>
-1. <span data-ttu-id="2fac4-115">Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".</span><span class="sxs-lookup"><span data-stu-id="2fac4-115">On the Action Pane, click Manage costs.</span></span>
-2. <span data-ttu-id="2fac4-116">Klicken Sie auf Berechnungsdetails anzeigen</span><span class="sxs-lookup"><span data-stu-id="2fac4-116">Click View calculation details.</span></span>
-    * <span data-ttu-id="2fac4-117">Auf dieser Seite wird die Kostenaufschlüsselung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="2fac4-117">This page displays the cost breakdown.</span></span> <span data-ttu-id="2fac4-118">So können Sie beispielsweise den gesamten Einstandspreis pro Einheit für das Fertigprodukt in der ersten Zeile anzeigen.</span><span class="sxs-lookup"><span data-stu-id="2fac4-118">For example, you can view the total cost price per unit for the finished product in the first row.</span></span> <span data-ttu-id="2fac4-119">Die folgenden Zeilen enthalten Kosten gemäß der Stückliste, den Produktionsarbeitsplan und die indirekten Kosten.</span><span class="sxs-lookup"><span data-stu-id="2fac4-119">The subsequent rows contain costs according to the bill of materials, production route, and indirect costs.</span></span>  
+## <a name="view-the-calculation-details"></a><span data-ttu-id="c2d27-114">Berechnungsdetails anzeigen</span><span class="sxs-lookup"><span data-stu-id="c2d27-114">View the calculation details</span></span>
+1. <span data-ttu-id="c2d27-115">Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".</span><span class="sxs-lookup"><span data-stu-id="c2d27-115">On the Action Pane, click Manage costs.</span></span>
+2. <span data-ttu-id="c2d27-116">Klicken Sie auf Berechnungsdetails anzeigen</span><span class="sxs-lookup"><span data-stu-id="c2d27-116">Click View calculation details.</span></span>
+    * <span data-ttu-id="c2d27-117">Auf dieser Seite wird die Kostenaufschlüsselung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c2d27-117">This page displays the cost breakdown.</span></span> <span data-ttu-id="c2d27-118">So können Sie beispielsweise den gesamten Einstandspreis pro Einheit für das Fertigprodukt in der ersten Zeile anzeigen.</span><span class="sxs-lookup"><span data-stu-id="c2d27-118">For example, you can view the total cost price per unit for the finished product in the first row.</span></span> <span data-ttu-id="c2d27-119">Die folgenden Zeilen enthalten Kosten gemäß der Stückliste, den Produktionsarbeitsplan und die indirekten Kosten.</span><span class="sxs-lookup"><span data-stu-id="c2d27-119">The subsequent rows contain costs according to the bill of materials, production route, and indirect costs.</span></span>  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

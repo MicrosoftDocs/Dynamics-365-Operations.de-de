@@ -16,33 +16,36 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5aaf2e40864c3a774f7a654078c79a6fdd87240
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 14f3a0ebd82805761db997631b95f1423dc3fea0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5004951"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233726"
 ---
-# <a name="set-up-an-appointment-for-a-load"></a><span data-ttu-id="7699f-103">Termin für eine Auslastung einrichten</span><span class="sxs-lookup"><span data-stu-id="7699f-103">Set up an appointment for a load</span></span>
+# <a name="set-up-an-appointment-for-a-load"></a><span data-ttu-id="1ad98-103">Termin für eine Auslastung einrichten</span><span class="sxs-lookup"><span data-stu-id="1ad98-103">Set up an appointment for a load</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="7699f-104">Dieses Verfahren zeigt, wie eine Dock-Terminplanung für eine Auslastung eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="7699f-104">This procedure shows how to set up and plan a dock appointment for a load.</span></span> <span data-ttu-id="7699f-105">Diese Einstellung wird normalerweise von einem Transportkoordinator vorgenommen.</span><span class="sxs-lookup"><span data-stu-id="7699f-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="7699f-106">Sie können diese Prozedur im Demodatunternehmen USMF verwenden.</span><span class="sxs-lookup"><span data-stu-id="7699f-106">You can use this procedure in the USMF demo data company.</span></span>
+<span data-ttu-id="1ad98-104">Dieses Verfahren zeigt, wie eine Dock-Terminplanung für eine Auslastung eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="1ad98-104">This procedure shows how to set up and plan a dock appointment for a load.</span></span> <span data-ttu-id="1ad98-105">Diese Einstellung wird normalerweise von einem Transportkoordinator vorgenommen.</span><span class="sxs-lookup"><span data-stu-id="1ad98-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="1ad98-106">Sie können diese Prozedur im Demodatunternehmen USMF verwenden.</span><span class="sxs-lookup"><span data-stu-id="1ad98-106">You can use this procedure in the USMF demo data company.</span></span>
 
 
-## <a name="select-the-load"></a><span data-ttu-id="7699f-107">Wählen Sie die Auslastung aus.</span><span class="sxs-lookup"><span data-stu-id="7699f-107">Select the load</span></span>
-1. <span data-ttu-id="7699f-108">Wechseln Sie zu Transportverwaltung > Planung > Ladungsplanungsworkbench.</span><span class="sxs-lookup"><span data-stu-id="7699f-108">Go to Transportation management > Planning > Load planning workbench.</span></span>
-2. <span data-ttu-id="7699f-109">Deaktivieren Sie das Kontrollkästchen "'Versendet' und 'Empfangen' ausblenden".</span><span class="sxs-lookup"><span data-stu-id="7699f-109">Clear the Hide shipped and received check box.</span></span>
-3. <span data-ttu-id="7699f-110">Wählen Sie auf der Liste die Auslastung aus, die den Status "Versendet" hat.</span><span class="sxs-lookup"><span data-stu-id="7699f-110">In the list, select the load that has a status of Shipped.</span></span>
-4. <span data-ttu-id="7699f-111">Klicken Sie auf "Transport".</span><span class="sxs-lookup"><span data-stu-id="7699f-111">Click Transportation.</span></span>
-5. <span data-ttu-id="7699f-112">Klicken Sie auf Terminplanung.</span><span class="sxs-lookup"><span data-stu-id="7699f-112">Click Appointment scheduling.</span></span>
+## <a name="select-the-load"></a><span data-ttu-id="1ad98-107">Wählen Sie die Auslastung aus.</span><span class="sxs-lookup"><span data-stu-id="1ad98-107">Select the load</span></span>
+1. <span data-ttu-id="1ad98-108">Wechseln Sie zu Transportverwaltung > Planung > Ladungsplanungsworkbench.</span><span class="sxs-lookup"><span data-stu-id="1ad98-108">Go to Transportation management > Planning > Load planning workbench.</span></span>
+2. <span data-ttu-id="1ad98-109">Deaktivieren Sie das Kontrollkästchen "'Versendet' und 'Empfangen' ausblenden".</span><span class="sxs-lookup"><span data-stu-id="1ad98-109">Clear the Hide shipped and received check box.</span></span>
+3. <span data-ttu-id="1ad98-110">Wählen Sie auf der Liste die Auslastung aus, die den Status "Versendet" hat.</span><span class="sxs-lookup"><span data-stu-id="1ad98-110">In the list, select the load that has a status of Shipped.</span></span>
+4. <span data-ttu-id="1ad98-111">Klicken Sie auf "Transport".</span><span class="sxs-lookup"><span data-stu-id="1ad98-111">Click Transportation.</span></span>
+5. <span data-ttu-id="1ad98-112">Klicken Sie auf Terminplanung.</span><span class="sxs-lookup"><span data-stu-id="1ad98-112">Click Appointment scheduling.</span></span>
 
-## <a name="create-an-appointment"></a><span data-ttu-id="7699f-113">Termin erstellen</span><span class="sxs-lookup"><span data-stu-id="7699f-113">Create an appointment</span></span>
-1. <span data-ttu-id="7699f-114">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="7699f-114">Click New.</span></span>
-2. <span data-ttu-id="7699f-115">Geben Sie im Feld 'Terminregel' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="7699f-115">In the Appointment rule field, enter or select a value.</span></span>
-3. <span data-ttu-id="7699f-116">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="7699f-116">Click Save.</span></span>
-4. <span data-ttu-id="7699f-117">Klicken Sie auf Aktualisierungsstatus.</span><span class="sxs-lookup"><span data-stu-id="7699f-117">Click Update status.</span></span>
-5. <span data-ttu-id="7699f-118">Klicken Sie auf "Umwandeln".</span><span class="sxs-lookup"><span data-stu-id="7699f-118">Click Firm.</span></span>
-6. <span data-ttu-id="7699f-119">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="7699f-119">Click Save.</span></span>
-7. <span data-ttu-id="7699f-120">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="7699f-120">Close the page.</span></span>
+## <a name="create-an-appointment"></a><span data-ttu-id="1ad98-113">Termin erstellen</span><span class="sxs-lookup"><span data-stu-id="1ad98-113">Create an appointment</span></span>
+1. <span data-ttu-id="1ad98-114">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="1ad98-114">Click New.</span></span>
+2. <span data-ttu-id="1ad98-115">Geben Sie im Feld 'Terminregel' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="1ad98-115">In the Appointment rule field, enter or select a value.</span></span>
+3. <span data-ttu-id="1ad98-116">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="1ad98-116">Click Save.</span></span>
+4. <span data-ttu-id="1ad98-117">Klicken Sie auf Aktualisierungsstatus.</span><span class="sxs-lookup"><span data-stu-id="1ad98-117">Click Update status.</span></span>
+5. <span data-ttu-id="1ad98-118">Klicken Sie auf "Umwandeln".</span><span class="sxs-lookup"><span data-stu-id="1ad98-118">Click Firm.</span></span>
+6. <span data-ttu-id="1ad98-119">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="1ad98-119">Click Save.</span></span>
+7. <span data-ttu-id="1ad98-120">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="1ad98-120">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
