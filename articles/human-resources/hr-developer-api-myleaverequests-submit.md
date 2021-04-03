@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51be70edbe1439340377fd01b9760d49d3a75348
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: aeb3d66ad24f96efea1b0ea9828a537f8853c94b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115511"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465485"
 ---
 # <a name="submit-a-leave-request-to-workflow"></a>Urlaubsanforderung an Workflow übermitteln
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In Microsoft Dynamics 365 Human Resources können Sie die Anwendungsprogrammierschnittstelle (API) MyLeaveRequests submit () verwenden, um eine Urlaubsanfrage an den Workflow zu übermitteln. Diese API wird als Aktion für die OData-Entität MyLeaveRequests verfügbar gemacht.
 

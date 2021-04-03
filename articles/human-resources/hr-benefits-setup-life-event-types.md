@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 7b1f2fd953c1678a5099f4f3b5cf08fa6674f4db
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112694"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466037"
 ---
 # <a name="configure-life-event-types"></a>Lebensereignistypen konfigurieren
 
-Microsoft Dynamics 365 Human Resources verwendet die Lebensereignistypen, um Ereignisse zu definieren, bei denen eine Vorteilsregistrierung von Mitarbeitern aktualisiert werden muss. Beispiel: Heirat oder Geburt eines Kindes. Jede Kennung des Lebensereignistyps darf nur einem Lebensereignistyp zugeordnet werden. Wenn Sie beispielsweise eine Kennung eines Lebensereignistyps mit dem Namen „Adressänderung“ erstellen, die dem Lebensereignistyp „Änderung der Mitarbeiteradresse“ zugeordnet ist, können Sie keine andere Kennung mit der Bezeichnung „Änderung der Mitarbeiteradresse“ erstellen und sie dem Lebensereignistyp „Änderung der Mitarbeiteradresse“ zuordnen. 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dynamics 365 Human Resources verwendet Lebensereignis-Typen, um Ereignisse zu definieren, bei denen es gültig ist, die Einschreibung der Mitarbeiterleistungen zu aktualisieren. Beispiel: Heirat oder Geburt eines Kindes. Jede Kennung des Lebensereignistyps darf nur einem Lebensereignistyp zugeordnet werden. Wenn Sie beispielsweise eine Kennung eines Lebensereignistyps mit dem Namen „Adressänderung“ erstellen, die dem Lebensereignistyp „Änderung der Mitarbeiteradresse“ zugeordnet ist, können Sie keine andere Kennung mit der Bezeichnung „Änderung der Mitarbeiteradresse“ erstellen und sie dem Lebensereignistyp „Änderung der Mitarbeiteradresse“ zuordnen. 
 
 Nachdem Sie Lebensereignistypen erstellt haben, müssen Sie sie mit Plantypen verknüpfen. Weitere Informationen finden Sie unter [Plantypen erstellen](hr-benefits-setup-plan-types.md).
 

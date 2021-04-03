@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d400604bf1b044de52457b3f7a6eb858220a1972
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 305ce398b0ec80647a95e69409da9b77ebf14b45
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112718"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466952"
 ---
 # <a name="manage-features-in-human-resources"></a>Verwalten von Funktionen in der Personalverwaltung
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Im Rahmen unseres kontinuierlichen Rollouts von neuen Funktionen für Microsoft Dynamics 365 Human Resources wollen wir unseren Kunden so schnell wie möglich neue Funktionen zur Verfügung stellen. Wir bieten Vorschaufunktionen, die fast bereit für die allgemeine Verfügbarkeit sind und ausgiebig getestet wurden. Wir sind nur auf der Suche nach einer letzten Runde von Kunden-Feedback und Validierung, bevor wir sie zur allgemeinen Verfügbarkeit veröffentlichen.
 

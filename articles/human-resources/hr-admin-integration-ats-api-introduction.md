@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 48e368fe69443a5105ddba78a887bf9159bfe52a
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 61d8502a8f420d387b5b7f48fca2f8a680f6f3f8
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125592"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464031"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Einführung der API zur Integration des Bewerber-Tracking-Systems
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dieses Thema beschreibt die Dynamics 365 Human Resources-API zur Integration des Bewerber-Tracking-System (ATS). Die Absicht der API ist es, optimierte Integrationen zwischen Dynamics 365 Human Resources und ATSs, die eine Partnerschaft eingehen, zu ermöglichen.
 
@@ -120,8 +122,8 @@ Optionssätze:
 - [Bewerberintegrationsergebnis](hr-admin-integration-ats-api-applicant-integration-result.md)
 - [Leer Ja Nein](hr-admin-integration-ats-api-blank-yes-no.md)
 - [Abschlussstatus](hr-admin-integration-ats-api-completion-status.md)
-- [Kontakttyp](hr-admin-integration-ats-api-contact-type.md)
-- [Basis des Ausbildungskredits](hr-admin-integration-ats-api-education-credit-basis.md)
+- [Art des Kontakts](hr-admin-integration-ats-api-contact-type.md)
+- [Ausbildungsgrundlage](hr-admin-integration-ats-api-education-credit-basis.md)
 - [Geschlecht](hr-admin-integration-ats-api-gender.md)
 - [Familienstand](hr-admin-integration-ats-api-marital-status.md)
 - [Monate des Jahres](hr-admin-integration-ats-api-months-of-year.md)
