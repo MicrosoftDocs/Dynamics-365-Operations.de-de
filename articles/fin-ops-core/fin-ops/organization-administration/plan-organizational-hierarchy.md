@@ -3,10 +3,9 @@ title: Planen Ihrer Organisationshierarchie
 description: Bevor Sie Organisationen und Organisationshierarchien in  einrichten, sollten Sie sicherstellen, dass Sie planen, wie das Unternehmen modelliert wird.
 author: sericks007
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c779b5948370444b0b474568bb63b347c4a0831
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 7bf683487a20203d49fbab680373fbf48a5c58b6
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154408"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569360"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planen Ihrer Organisationshierarchie
 
@@ -166,7 +165,7 @@ Organisationseinheiten verwenden den Landeskontext der übergeordneten juristisc
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Wenn die Organisation als juristische Person modelliert wird
 
-Bei Ländern/Regionen, die unterstützt werden, können die meisten Offenlegungsberichte erstellt werden. Informationen darüber, welche Berichte für jedes Land/Region verfügbar sind, finden Sie im [Microsoft Dynamics-Lokalisierungs-Portal](https://docs.microsoft.com/dynamics/s-e/). (Eine CustomerSource -Anmeldung ist erforderlich.)
+Bei Ländern/Regionen, die unterstützt werden, können die meisten Offenlegungsberichte erstellt werden. 
 
 > [!NOTE]
 > Ein Buchungsebene im Hauptbuch ermöglicht Anpassungseingaben an einer Muttergesellschaft vorzunehmen, die einen anderen Rechnungslegungsstandard als das untergeordnete Unternehmen verwendet. Beispielsweise können Sie für ein Unternehmen, das in Großbritannien allgemein anerkannte Buchhaltungsverfahren (UK GAAP) verwendet, Anpassungseingaben auf der Buchungsebene vornehmen. Diese Einträge können in ein übergeordnetes Unternehmen konsolidiert werden, das in den USA allgemein anerkannte Rechnungslegungsgrundsätze (GAAP) verwendet. Die Anpassungseingaben haben keinen Einfluss auf die UK GAAP-Berichterstellung.

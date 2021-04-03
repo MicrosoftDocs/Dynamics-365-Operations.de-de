@@ -1,6 +1,6 @@
 ---
 title: Unterstützung für ein Content Delivery Network (CDN) hinzufügen
-description: In diesem Thema wird beschrieben, wie ein Content Delivery Network (CDN) Ihrer Microsoft Dynamics 365 Commerce Umgebung hinzugefügt wird.
+description: In diesem Thema wird beschrieben, wie ein Content Delivery Network (CDN) Ihrer Microsoft Dynamics 365 Commerce-Umgebung hinzugefügt wird.
 author: brianshook
 manager: annbe
 ms.date: 07/31/2020
@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d9482a45cb8f2ea52e7f58d55e30cfe56694d04
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985953"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582718"
 ---
-# <a name="add-support-for-a-content-delivery-network-cdn"></a>Unterstützung für ein Content Delivery Network (CDN) hinzufügen
-
+# <a name="add-support-for-a-content-delivery-network-cdn"></a>Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie ein Content Delivery Network (CDN) Ihrer Microsoft Dynamics 365 Commerce Umgebung hinzugefügt wird.
-
-## <a name="overview"></a>Übersicht
+In diesem Thema wird beschrieben, wie ein Content Delivery Network (CDN) Ihrer Microsoft Dynamics 365 Commerce-Umgebung hinzugefügt wird.
 
 Wenn Sie eine E-Commerce-Umgebung in Dynamics 365 Commerce einrichten, können Sie diese so konfigurieren, dass sie mit Ihrem CDN-Dienst arbeitet. 
 
@@ -96,7 +93,7 @@ Um eine Routingregel im Azure Front Door Service einzurichten, führen Sie die f
 1. Geben Sie im Feld **Name** **Standard** ein.
 1. Wählen Sie im Feld **Angenommenes Protokoll** **HTTP und HTTPS** aus.
 1. Im Feld **Frontend-Hosts** geben Sie den Text **dynamics-ecom-tenant-name.azurefd.net** ein.
-1. Unter **Muster zur Übereinstimmung** im oberen Feld geben Sie **/\** _ ein.
+1. Unter **Muster der Übereinstimmung** im oberen Feld, geben Sie **/\*** ein.
 1. Unter **Arbeitsplandetails** legen Sie die Option **Arbeitsplantyp** auf **Vorwärts** fest.
 1. Wählen Sie im Feld **Backend-Pool** **ecom-backend**.
 1. In der Feldgruppe **Weiterleitungsprotokoll** wählen Sie die Option **Abgleichungsanforderung** aus. 
@@ -109,7 +106,7 @@ Um eine Routingregel im Azure Front Door Service zwischenzuspeichern, führen Si
 1. Geben Sie im Feld **Name** **Statik** ein.
 1. Wählen Sie im Feld **Angenommenes Protokoll** **HTTP und HTTPS** aus.
 1. Im Feld **Frontend-Hosts** geben Sie den Text **dynamics-ecom-tenant-name.azurefd.net** ein.
-1. Unter **Muster zur Übereinstimmung** im oberen Feld **/\_msdyn365/\_scnr/\** _.
+1. Unter **Muster zur Übereinstimmung** im oberen Feld **/\_msdyn365/\_scnr/\***.
 1. Unter **Arbeitsplandetails** legen Sie die Option **Arbeitsplantyp** auf **Vorwärts** fest.
 1. Wählen Sie im Feld **Backend-Pool** **ecom-backend**.
 1. In der Feldgruppe **Weiterleitungsprotokoll** wählen Sie die Option **Abgleichungsanforderung** aus.
@@ -143,25 +140,7 @@ Ihr CDN sollte jetzt ordnungsgemäß konfiguriert werden, so dass sie mit der Co
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Domänennamen konfigurieren](configure-your-domain-name.md)
-
-[Neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md)
-
-[E-Commerce-Website erstellen](create-ecommerce-site.md)
-
-[Zuordnen einer Dynamics 365 Commerce-Website zu einem Onlinekanal](associate-site-online-store.md)
-
-[Robots.txt-Dateien verwalten](manage-robots-txt-files.md)
-
-[URL-Umleitungen in Massen hochladen](upload-bulk-redirects.md)
-
-[Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
-
-[Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
-
-[Konfigurieren Sie mehrere B2C-Mandanten in einer Commerce-Umgebung](configure-multi-B2C-tenants.md)
-
-[Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
+[Implementierungsoptionen für das Content Delivery Network](cdn-options.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

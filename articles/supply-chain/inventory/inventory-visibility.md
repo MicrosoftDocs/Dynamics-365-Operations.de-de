@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 4e588be2ac5aae395ca66e3c9a743a67d71db7c0
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5114669"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574221"
 ---
 # <a name="inventory-visibility-add-in"></a>Inventory Visibility Add-in
 
@@ -48,11 +48,64 @@ Weitere Informationen finden Sie unter [Ressourcen für Lifecycle Services](http
 Bevor Sie das Inventory Visibility Add-In installieren, müssen Sie Folgendes tun:
 
 - Besorgen Sie sich ein LCS-Implementierungsprojekt mit mindestens einer bereitgestellten Umgebung.
-- Erzeugen Sie die Beta-Schlüssel für Ihr Angebot in LCS.
-- Aktivieren Sie die Betaschlüssel für Ihr Angebot für Ihren Benutzer in LCS.
-- Wenden Sie sich an das Microsoft Inventory Visibility-Produktteam und geben Sie eine Umgebungs-ID an, in der Sie das Inventory Visibility-Add-In bereitstellen möchten.
+- Stellen Sie sicher, dass die Voraussetzungen für das Festlegen von Add-Ins, die in der [Add-Ins-Übersicht](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) bereitgestellt werden, erfüllt sind. Bestandssichtbarkeit erfordert keine Dual-Write-Verknüpfung.
+- Wenden Sie sich an das Team für Bestandssichtbarkeit unter [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), um die folgenden drei erforderlichen Dateien zu erhalten:
+
+    - `Inventory Visibility Dataverse Solution.zip`
+    - `Inventory Visibility Configuration Trigger.zip`
+    - `Inventory Visibility Integration.zip` (wenn die Version von Supply Chain Management, die Sie verwenden, älter ist als Version 10.0.18)
+
+> [!NOTE]
+> Zu den derzeit unterstützten Ländern und Regionen gehören Kanada, die Vereinigten Staaten und die Europäische Union (EU).
 
 Wenn Sie Fragen zu diesen Voraussetzungen haben, wenden Sie sich bitte an das Inventory Visibility-Produktteam.
+
+### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Einrichten von Dataverse
+
+Folgen Sie diesen Schritten, um Dataverse festzulegen.
+
+1. Fügen Sie Ihrem Mandanten ein Dienstprinzip hinzu:
+
+    1. Installieren Sie Azure AD PowerShell-Modul v2 wie in [Installieren Sie Azure Active Directory PowerShell für Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) beschrieben.
+    1. Führen Sie den folgenden PowerShell-Befehl aus.
+
+        ```powershell
+        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+
+        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+        ```
+
+1. Erstellen Sie einen Anwendungsbenutzer für Bestandssichtbarkeit in Dataverse:
+
+    1. Öffnen Sie die URL Ihrer Dataverse-Umgebung.
+    1. Gehen Sie zu **Erweiterte Einstellung \> System \> Sicherheit \> Benutzer**, und erstellen Sie einen Anwendungsbenutzer. Verwenden Sie das Menü Ansicht, um die Seitenansicht auf **Anwendungsbenutzer** zu ändern.
+    1. Wählen Sie **Neu** aus. Legen Sie die Anwendungs-ID auf *3022308a-b9bd-4a18-b8ac-2ddedb2075e1* fest. (Die Objekt-ID wird automatisch geladen, wenn Sie Ihre Änderungen speichern.) Sie können den Namen anpassen. Zum Beispiel können Sie ihn in *Bestandssichtbarkeit* ändern. Klicken Sie abschließend auf **Speichern**.
+    1. Wählen Sie **Rolle zuweisen**, und wählen Sie dann **Systemadministrator**. Wenn es eine Rolle gibt, die **Common Data Service Benutzer** heißt, wählen Sie diese ebenfalls aus.
+
+    Weitere Informationen finden Sie unter [Erstellen eines Anwendungsbenutzers](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. Importieren Sie die Datei `Inventory Visibility Dataverse Solution.zip`, die Dataverse-Konfigurationsbezogene Entitäten und Power Apps enthält:
+
+    1. Gehen Sie auf die Seite **Lösungen**.
+    1. **Import** auswählen
+
+1. Importieren Sie den Auslöser-Flow für das Konfigurations-Upgrade:
+
+    1. Gehen Sie auf die Seite Microsoft Flow.
+    1. Stellen Sie sicher, dass die Verbindung mit dem Namen *Dataverse (veraltet)* existiert. (Wenn sie nicht existiert, erstellen Sie sie.)
+    1. Importieren Sie die `Inventory Visibility Configuration Trigger.zip`-Datei. Nachdem sie importiert wurde, erscheint der Auslöser unter **Meine Flows**.
+    1. Initialisieren Sie die folgenden vier Variablen, basierend auf den Umgebungsinformationen:
+
+        - Azure Mandant ID
+        - Azure-Anwendungs-Client-ID
+        - Azure-Anwendungs-Client-Geheimnis
+        - Bestandssichtbarkeit Endpunkt
+
+            Weitere Informationen über diese Variable finden Sie im Abschnitt [Integration der Bestandssichtbarkeit festlegen](#setup-inventory-visibility-integration) weiter unten in diesem Thema.
+
+        ![Konfiguration Auslöser](media/configuration-trigger.png "Konfiguration Auslöser")
+
+    1. Wählen Sie **Einschalten**.
 
 ### <a name="install-the-add-in"></a><a name="install-add-in"></a>Installieren des Add-Ins
 
@@ -61,14 +114,16 @@ Um das Inventory Visibility Add-In zu installieren, gehen Sie wie folgt vor:
 1. Melden Sie sich am [Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index) Portal an.
 1. Wählen Sie auf der Startseite das Projekt aus, in dem Ihre Umgebung bereitgestellt ist.
 1. Wählen Sie auf der Projektseite die Umgebung aus, in der Sie das Add-In installieren möchten.
-1. Scrollen Sie auf der Seite der Umgebung nach unten, bis Sie den Abschnitt **Umgebungs-Add-Ins** sehen. Wenn der Abschnitt nicht sichtbar ist, stellen Sie sicher, dass die vorausgesetzten Beta-Schlüssel vollständig verarbeitet wurden.
-1. Wählen Sie im Abschnitt **Umgebungs-Add-Ins** die Option **Ein neues Add-In installieren**.
+1. Scrollen Sie auf der Umgebungsseite nach unten, bis Sie den Abschnitt **Umgebungs-Add-Ins** im Abschnitt **Power Platform-Integration** sehen, wo Sie den Umgebungsnamen Dataverse finden.
+1. Wählen Sie Im Abschnitt **Umgebungs-Add-Ins** die Option **Neues Add-In installieren** aus.
+
     ![Die Umgebungsseite in LCS](media/inventory-visibility-environment.png "Die Seite „Umgebung“ in LCS")
+
 1. Wählen Sie den Link **Ein neues Add-In installieren**. Es öffnet sich eine Liste der verfügbaren Add-Ins.
-1. Wählen Sie **Bestandsdienst** aus der Liste. (Beachten Sie, dass dies jetzt möglicherweise als **Add-In Inventory Visibility für Dynamics 365 Supply Chain Management** aufgeführt wird).
+1. Wählen Sie **Bestandssichtbarkeit** in der Liste.
 1. Geben Sie Werte für die folgenden Felder für Ihre Umgebung ein:
 
-    - **AAD-Anwendungs-ID**
+    - **AAD-Anwendung (Client) ID**
     - **AAD-Mandanten-ID**
 
     ![Einrichtungsseite hinzufügen](media/inventory-visibility-setup.png "Seite zum Einrichten des Add-Ins")
@@ -76,11 +131,74 @@ Um das Inventory Visibility Add-In zu installieren, gehen Sie wie folgt vor:
 1. Stimmen Sie den Bedingungen zu, indem Sie das Kontrollkästchen **Bedingungen und Konditionen** aktivieren.
 1. Wählen Sie **Installieren**. Der Status des Add-Ins wird als **Installation** angezeigt. Wenn es fertig ist, aktualisieren Sie die Seite, um den Status auf **Installiert** zu ändern.
 
-### <a name="get-a-security-service-token"></a>Abrufen eines Sicherheitsdienst-Tokens
+### <a name="uninstall-the-add-in"></a><a name="uninstall-add-in"></a>Add-In deinstallieren
+
+Um das Add-In zu deinstallieren, wählen Sie **Deinstallieren**. Wenn Sie LCS aktualisieren, wird das Bestandssichtbarkeit-Add-In entfernt. Der Deinstallationsprozess entfernt die Registrierung des Add-Ins und startet außerdem einen Job zum Bereinigen aller Geschäftsdaten, die im Dienst gespeichert sind.
+
+## <a name="consume-on-hand-inventory-data-from-supply-chain-management"></a>Verbrauchen von Lagerbestandsdaten aus Supply Chain Management
+
+### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Bereitstellen des Integrationspakets für die Bestandssichtbarkeit
+
+Wenn Sie Supply Chain Management Version 10.0.17 oder früher verwenden, wenden Sie sich an das Bestandssichtbarkeit On-Board-Support-Team unter [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), um die Paketdatei zu erhalten. Stellen Sie dann das Paket in LCS bereit.
+
+> [!NOTE]
+> Wenn beim Bereitstellen ein Fehler wegen Versionsinkongruenz auftritt, müssen Sie das X++ Projekt manuell in Ihre Entwicklungsumgebung importieren. Erstellen Sie dann das einsatzfähige Paket in Ihrer Entwicklungsumgebung und stellen Sie es in Ihrer Produktionsumgebung bereit.
+> 
+> Der Code ist in der Supply Chain Management Version 10.0.18 enthalten. Wenn Sie diese Version oder eine spätere verwenden, ist das Bereitstellen nicht erforderlich.
+
+Stellen Sie sicher, dass die folgenden Funktionen in Ihrer Supply Chain Management Umgebung aktiviert sind. (Standardmäßig sind sie eingeschaltet.)
+
+| Beschreibung der Funktion | Code-Version | Klasse umschalten |
+|---|---|---|
+| Aktivieren oder deaktivieren Sie die Verwendung von Bestandsdimensionen in der Tabelle InventSum | 10.0.11 | InventUseDimOfInventSumToggle |
+| Aktivieren oder deaktivieren Sie die Verwendung von Bestandsdimensionen in der Tabelle InventSumDelta | 10.0.12 | InventUseDimOfInventSumDeltaToggle |
+
+### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Integration der Bestandssichtbarkeit einrichten
+
+1. Öffnen Sie im Supply Chain Management den Arbeitsbereich **[Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** und schalten Sie die Funktion **Bestandssichtbarkeit-Integration** ein.
+1. Gehen Sie zu **Bestandsverwaltung \> Parameter für die \>-Bestandssichtbarkeits-Integration festlegen** und geben Sie die URL der Umgebung ein, in der Sie die Bestandssichtbarkeit ausführen.
+
+    Suchen Sie die Azure-Region Ihrer LCS Umgebung und geben Sie dann die URL ein. Die URL hat die folgende Form:
+
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+
+    Wenn Sie sich zum Beispiel in Europa befinden, hat Ihre Umgebung eine der folgenden URLs:
+
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+
+    Die folgenden Regionen sind derzeit verfügbar.
+
+    | Azure-Region | Region Kurzname |
+    |---|---|
+    | Australien Ost | eau |
+    | Australien Südost | seau |
+    | Kanada Mitte | cca |
+    | Kanada Ost | eca |
+    | Europa, Norden | neu |
+    | Europa, Westen | weu |
+    | USA, Osten | eus |
+    | USA, Westen | wus |
+
+1. Gehen Sie zu **Bestandsverwaltung \> Periodisch \> Bestandssichtbarkeit-Integration**, und aktivieren Sie den Auftrag. Alle Ereignisse zu Bestandsänderungen aus dem Supply Chain Management werden nun in die Bestandssichtbarkeit übernommen.
+
+## <a name="the-inventory-visibility-add-in-public-api"></a><a name="inventory-visibility-public-api"></a>Das öffentliche API des Bestandssichtbarkeit-Add-Ins
+
+Die öffentliche REST-API des Bestandssichtbarkeit-Add-Ins stellt mehrere spezifische Endpunkte für die Integration bereit. Sie unterstützt drei Hauptinteraktionstypen:
+
+- Verbuchung von Änderungen des Lagerbestands aus einem externen System in das Add-In
+- Abfrage aktueller Lagerbestände von einem externen System
+- Automatische Synchronisation mit dem Lagerbestand des Supply Chain Management
+
+Die automatische Synchronisation ist nicht Teil der öffentlichen API. Stattdessen wird sie in Umgebungen, in denen das Bestandssichtbarkeit-Add-In aktiviert ist, im Hintergrund ausgeführt.
+
+### <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Authentifizierung
+
+Für den Aufruf des Bestandssichtbarkeit-Add-Ins wird das Plattform-Sicherheitstoken verwendet. Daher müssen Sie ein *Azure Active Directory (Azure AD) Token* generieren, indem Sie Ihre Azure AD Anwendung verwenden. Sie müssen dann das Azure AD-Token verwenden, um das *Zugriffstoken* vom Sicherheitsdienst zu erhalten.
 
 Um ein Sicherheitsdienst-Token zu erhalten, gehen Sie wie folgt vor:
 
-1. Melden Sie sich beim Azure Portal an, und verwenden Sie es, um die `clientId` und das `clientSecret` für Ihre Supply Chain Management-Anwendung zu finden.
+1. Melden Sie sich am Azure-Portal an und verwenden Sie es, um die `clientId` und `clientSecret` für Ihre Supply Chain Management-Anwendung zu finden.
 1. Rufen Sie ein Azure Active Directory-Token (`aadToken`) durch Senden einer HTTP-Anfrage mit den folgenden Eigenschaften ab:
     - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
     - **Methode** - `GET`
@@ -140,27 +258,7 @@ Um ein Sicherheitsdienst-Token zu erhalten, gehen Sie wie folgt vor:
     }
     ```
 
-### <a name="uninstall-the-add-in"></a>Add-In deinstallieren
-
-Um das Add-In zu deinstallieren, wählen Sie **Deinstallieren**. Aktualisieren Sie LCS und das Inventory Visibility Add-in wird entfernt. Der Deinstallationsprozess entfernt die Registrierung des Add-Ins und startet außerdem einen Job zum Bereinigen aller im Dienst gespeicherten Geschäftsdaten.
-
-## <a name="inventory-visibility-add-in-public-api"></a>Öffentliches API des Inventory Visibility Add-Ins
-
-Die öffentliche REST-API des Inventory Visibility Add-Ins bietet mehrere spezifische Endpunkte für die Integration. Sie unterstützt drei Hauptinteraktionstypen:
-
-- Buchen von Bestandsänderungen an das Add-In aus einem externen System.
-- Abfrage von aktuellen Bestandsmengen aus einem externen System.
-- Automatische Synchronisation mit dem Supply Chain Management-Bestand.
-
-Die automatische Synchronisation ist nicht Teil der öffentlichen API, sondern wird für Umgebungen, die das Inventory Visibility Add-in aktiviert haben, im Hintergrund ausgeführt.
-
-### <a name="authentication"></a>Authentifizierung
-
-Das Plattform-Sicherheits-Token wird verwendet, um das Inventory Visibility Add-in aufzurufen, daher müssen Sie ein Azure Active Directory-Token mit Ihrer Azure Active Directory-Anwendung erzeugen.
-
-Weitere Informationen darüber, wie Sie das Sicherheitstoken erhalten, finden Sie unter [Installieren des Inventory Visibility Add-Ins](#install-add-in).
-
-### <a name="configure-the-inventory-visibility-api"></a>Konfigurieren Sie die Inventory Visibility API
+### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>Konfigurieren Sie die Inventory Visibility API
 
 Bevor Sie den Dienst verwenden, müssen Sie die in den folgenden Unterabschnitten beschriebenen Konfigurationen durchführen. Die Konfiguration kann je nach den Details Ihrer Umgebung variieren. Sie besteht im Wesentlichen aus vier Teilen:
 
@@ -232,7 +330,7 @@ Dann würden Sie zwei Indizes wie folgt definieren:
 
 Die leere Klammer wird auf Basis der Produkt-ID innerhalb der Partition aggregiert.
 
-Die Indizierung definiert, wie Sie Ihre Ergebnisse basierend auf der Abfrageeinstellung `groupBy` gruppieren können. Wenn Sie in diesem Fall keine `groupBy`-Werte definieren, erhalten Sie Summen nach `productid`. Wenn Sie dagegen `groupBy` als `groupBy=ColorId&groupBy=SizeId` definieren, erhalten Sie mehrere Zeilen zurück, basierend auf den verschiedenen Farb- und Größenkombinationen im System.
+Die Indizierung definiert, wie Sie Ihre Ergebnisse basierend auf der Abfrageeinstellung `groupBy` gruppieren können. Wenn Sie in diesem Fall keine `groupBy`-Werte definieren, erhalten Sie Summen nach `productid`. Andernfalls, wenn Sie `groupBy` als `groupBy=ColorId&groupBy=SizeId` definieren, erhalten Sie mehrere Zeilen zurück, basierend auf den verschiedenen Farb- und Größenkombinationen im System.
 
 Sie können Ihre Abfragekriterien in den Abfragekörper einlagern.
 
@@ -257,7 +355,7 @@ Hier ist eine Beispielabfrage für das Produkt mit Farb- und Größenkombination
 
 #### <a name="custom-measurement"></a>Benutzerdefinierte Messung
 
-Die voreingestellten Messungen sind mit dem Supply Chain Management verknüpft, aber Sie möchten vielleicht eine Menge haben, die sich aus einer Kombination der voreingestellten Kennzahlen zusammensetzt. Dazu können Sie eine Konfiguration von benutzerdefinierten Mengen haben, die zur Ausgabe der Bestandsabfragen hinzugefügt werden.
+Die voreingestellten Messungen sind mit dem Supply Chain Management verknüpft. Möglicherweise möchten Sie jedoch eine Menge haben, die sich aus einer Kombination der Standard Messungen zusammensetzt. Dazu können Sie eine Konfiguration von benutzerdefinierten Mengen haben, die zur Ausgabe der Bestandsabfragen hinzugefügt werden.
 
 Die Funktionalität erlaubt es Ihnen einfach, eine Reihe von Kennzahlen festzulegen, die addiert werden, und/oder eine Reihe von Kennzahlen, die subtrahiert werden, um die benutzerdefinierte Messung zu bilden.
 

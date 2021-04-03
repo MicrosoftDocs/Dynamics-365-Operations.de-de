@@ -3,10 +3,9 @@ title: Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeide
 description: In diesem Thema wird erläutert, wie Sie die konfigurierten EB-Komponenten (Elektronische Berichterstellung) überprüfen, um mögliche Laufzeitprobleme zu vermeiden.
 author: NickSelin
 manager: AnnBe
-ms.date: 12/04/2020
+ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ba696fb7a8d9083d11cc29953cf1340a581afcf
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 86db6dc27a8a76e90494e3dc7a7cc9c828f9ec37
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797340"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574124"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 
@@ -205,6 +204,33 @@ Die folgende Tabelle enthält eine Übersicht der Inspektionen, die die EB biete
 <td>Achtung</td>
 <td>Der definierte Name &lt;Komponentenname&gt; existiert nicht in der Excel-Tabelle &lt;Tabellenname&gt;.</td>
 </tr>
+<tr>
+<td><a href='#i14'>Nicht synchronisiertes Format</a></td>
+<td>Datenintegrität</td>
+<td>Achtung</td>
+<td>
+<p>Die Markierung &lt;Markiertes Word-Inhaltssteuerelement&gt; ist in der Word-Vorlagendatei nicht vorhanden</p>
+<p><b>Laufzeitfehler:</b> Die Markierung &lt;Markiertes Word-Inhaltssteuerelement&gt; ist in der Word-Vorlagendatei nicht vorhanden.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i15'>Keine Standardzuordnung</a></td>
+<td>Datenintegrität</td>
+<td>Fehler</td>
+<td>
+<p>Es gibt mehr als eine Modellzuordnung für das Datenmodell &lt;Modellname (Stammdeskriptor)&gt; in den Konfigurationen &lt;Konfigurationsnamen durch Komma getrennt&gt;. Eine der Konfigurationen als Standard festlegen</p>
+<p><b>Laufzeitfehler:</b> Es gibt mehr als eine Modellzuordnung für das Datenmodell &lt;Modellname (Stammdeskriptor)&gt; in den Konfigurationen &lt;Konfigurationsnamen durch Komma getrennt&gt;. Legen Sie eine der Konfigurationen als Standard fest.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i16'>Inkonsistente Einstellung der Kopf- oder Fußzeilenkomponenten</a></td>
+<td>Datenintegrität</td>
+<td>Fehler</td>
+<td>
+<p>Kopf-/Fußzeilen (&lt;Komponententyp: Kopf- oder Fußzeile&gt;) sind inkonsistent</p>
+<p><b>Laufzeit:</b> Die zuletzt konfigurierte Komponente wird während der Laufzeit verwendet, wenn die Entwurfsversion des konfigurierten EB-Formats ausgeführt wird.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -219,7 +245,7 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
     ![Das Feld „X“ und der Datentyp „Integer“ wurden dem Datenmodusbaum auf der Seite „Datenmodell“ hinzugefügt.](./media/er-components-inspections-01.png)
 
-3. Im Bereich „Datenquellen“ der Modellzuordnung fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu.
+3. Fügen Sie im Bereich **Datenquellen** des Modellzuordnungsdesigners eine Datenquelle vom Typ **Berechnetes Feld** hinzu.
 4. Nennen Sie die neue Datenquelle **Y** und konfigurieren Sie sie so, dass sie den Ausdruck `INTVALUE(100)` enthält.
 5. Binden Sie **X** an **Y**.
 6. Ändern Sie im Datenmodelldesigner den Datentyp des Felds **X** von **Integer** zu **Int64**.
@@ -229,7 +255,7 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
 8. Wählen Sie **Überprüfen** aus, um die Modellzuordnungskomponente der ausgewählten EB-Konfiguration auf der Seite **Konfigurationen** zu überprüfen.
 
-    ![Überprüfen, um die Modellzuordnungskomponente auf der Seite „Konfigurationen“ zu überprüfen](./media/er-components-inspections-01a.png)
+    ![Untersuchen der Modellzuordnungskomponente auf der Seite „Konfigurationen“](./media/er-components-inspections-01a.png)
 
 9. Beachten Sie, dass ein Prüfungsfehler auftritt. Die Nachricht gibt an, dass der Wert vom Typ **Integer**, der vom Ausdruck `INTVALUE(100)` der Datenquelle **Y** zurückgegeben wird, nicht im Datenmodellfeld **X** vom Typ **Int64** gespeichert werden kann.
 
@@ -294,13 +320,13 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
     ![Datenmodellbaum mit Feld „X“ und Datentyp „Integer“ auf der Seite „Datenmodell“](./media/er-components-inspections-01.png)
 
-3. Im Bereich „Datenquellen“ der Modellzuordnung fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu.
+3. Fügen Sie im Bereich **Datenquellen** des Modellzuordnungsdesigners eine Datenquelle vom Typ **Berechnetes Feld** hinzu.
 4. Nennen Sie die neue Datenquelle **Y** und konfigurieren Sie sie so, dass sie den Ausdruck `INTVALUE(100)` enthält.
 5. Binden Sie **X** an **Y**.
-6. Löschen Sie im Modellzuordnungsdesigner im Bereich „Datenquellen“ die Datenquelle **Y**.
+6. Löschen Sie im Modellzuordnungsdesigner im Bereich **Datenquellen** die Datenquelle **Y**.
 7. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen.
 
-    ![Überprüfen der bearbeitbaren EB-Modellzuordnungskomponente auf der Seite „Modellzuordnungsdesigner“](./media/er-components-inspections-03.gif)
+    ![Untersuchen der bearbeitbaren EB-Modellzuordnungskomponente auf der Seite „Modellzuordnungsdesigner“](./media/er-components-inspections-03.gif)
 
 8. Beachten Sie, dass ein Prüfungsfehler auftritt. Die Nachricht besagt, dass die Bindung des Datenmodellfelds **X** den Pfad enthält, der auf die Datenquelle **Y** verweist, diese Datenquelle jedoch nicht gefunden wurde.
 
@@ -316,11 +342,11 @@ Heben Sie die Bindung für das Datenmodellfeld **X** auf, damit es nicht mehr au
 
 #### <a name="option-2"></a>Option 2
 
-Fügen Sie im Bereich „Datenquellen“ des EB-Modellzuordnungsdesigners die Datenquelle **Y** erneut hinzu.
+Fügen Sie im Bereich **Datenquellen** des Modellzuordnungsdesigners erneut die Datenquelle **Y** hinzu.
 
 ## <a name="executability-of-an-expression-with-filter-function"></a><a id="i4"></a>Ausführbarkeit eines Ausdrucks mit FILTER-Funktion
 
-Die in die EB integrierte [FILTER](er-functions-list-filter.md)-Funktion wird verwendet, um auf Anwendungstabellen, Ansichten oder Datenentitäten zuzugreifen, indem ein einzelner SQL-Aufruf getätigt wird, um die erforderlichen Daten als Liste von Datensätzen abzurufen. Eine Datenquelle vom Typ **Datensatzliste** wird als Argument dieser Funktion verwendet und gibt die Anwendungsquelle für den Aufruf an. Die EB prüft, ob eine direkte SQL-Abfrage an eine Datenquelle gerichtet werden kann, auf die in der `FILTER`-Funktion verwiesen wird. Wenn keine direkte Abfrage möglich ist, tritt im EB-Modellzuordnungsdesigner ein Prüfungsfehler auf. Die Nachricht, die Sie erhalten, besagt, dass der EB-Ausdruck, der die `FILTER`-Funktion enthält, nicht zur Laufzeit ausgeführt werden kann. 
+Die in die EB integrierte [FILTER](er-functions-list-filter.md)-Funktion wird verwendet, um auf Anwendungstabellen, Ansichten oder Datenentitäten zuzugreifen, indem ein einzelner SQL-Aufruf getätigt wird, um die erforderlichen Daten als Liste von Datensätzen abzurufen. Eine Datenquelle vom Typ **Datensatzliste** wird als Argument dieser Funktion verwendet und gibt die Anwendungsquelle für den Aufruf an. Die EB prüft, ob eine direkte SQL-Abfrage an eine Datenquelle gerichtet werden kann, auf die in der `FILTER`-Funktion verwiesen wird. Wenn keine direkte Abfrage möglich ist, tritt im EB-Modellzuordnungsdesigner ein Prüfungsfehler auf. Die Nachricht, die Sie erhalten, besagt, dass der EB-Ausdruck, der die `FILTER`-Funktion enthält, nicht zur Laufzeit ausgeführt werden kann.
 
 Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
@@ -329,12 +355,12 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 3. Nennen Sie die neue Datenquelle **Lieferant**. Wählen Sie im Feld **Tabelle** die Option **VendTable** aus, um anzugeben, dass diese Datenquelle die VendTable-Tabelle anfordert.
 4. Fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu.
 5. Nennen Sie die neue Datenquelle **FilteredVendor** und konfigurieren Sie sie so, dass sie den Ausdruck `FILTER(Vendor, Vendor.AccountNum="US-101")` enthält.
-6. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen. Vergewissern Sie sich dann, ob der Ausdruck `FILTER(Vendor, Vendor.AccountNum="US-101")` in der Datenquelle **Lieferant** abgefragt werden kann.
+6. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen. Vergewissern Sie sich dann, ob der Ausdruck `FILTER(Vendor, Vendor.AccountNum="US-101")` in der Datenquelle **Liefernant** abgefragt werden kann.
 7. Ändern Sie die Datenquelle **Lieferant**, indem sie ein verschachteltes Feld vom Typ **Berechnetes Feld** hinzufügen, um die gekürzte Lieferantenkontonummer abzurufen.
 8. Nennen Sie die das verschachtelte Feld **$AccNumber** und konfigurieren Sie es so, dass es den Ausdruck `TRIM(Vendor.AccountNum)` enthält.
-9. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen. Vergewissern Sie sich dann, ob der Ausdruck `FILTER(Vendor, Vendor.AccountNum="US-101")` in der Datenquelle **Lieferant** abgefragt werden kann.
+9. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen. Vergewissern Sie sich dann, ob der Ausdruck `FILTER(Vendor, Vendor.AccountNum="US-101")` in der Datenquelle **Liefernant** abgefragt werden kann.
 
-    ![Überprüfen, ob der Ausdruck auf der Seite „Modellzuordnungsdesigner“ abgefragt werden kann](./media/er-components-inspections-04.gif)
+    ![Sicherstellen, dass der Ausdruck auf der Seite „Modellzuordnungsdesigner“ abgefragt werden kann](./media/er-components-inspections-04.gif)
 
 10. Beachten Sie, dass ein Prüfungsfehler auftritt, da die Datenquelle **Lieferant** ein verschachteltes Feld vom Typ **Berechnetes Feld** enthält, das nicht zulässt, dass der Ausdruck aus der Datenquelle **FilteredVendor** in die direkte SQL-Anweisung übersetzt wird.
 
@@ -381,13 +407,13 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
 9. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen. Vergewissern Sie sich dann, ob die konfigurierte Datenquelle **GroupedTrans** abgefragt werden kann.
 
-    ![Überprüfen Sie die EB-Modellzuordnungskomponente. Vergewissern Sie sich dann, ob die Datenquelle „GroupedTrans“ auf der Seite „Modellzuordnungsdesigner“ abgefragt werden kann.](./media/er-components-inspections-05b.png)
+    ![Überprüfen der EB-Modellzuordnungskomponente und Sicherstellen, dass die Datenquelle „GroupedTrans“ auf der Seite „Modellzuordnungsdesigner“ abgefragt werden kann](./media/er-components-inspections-05b.png)
 
 10. Beachten Sie, dass ein Prüfungsfehler auftritt, da die Datenquelle **Trans** ein verschachteltes Feld vom Typ **Berechnetes Feld** enthält, das nicht zulässt, dass die Datenquelle **GroupedTrans** in die direkte SQL-Anweisung übersetzt wird.
 
 Die folgende Abbildung zeigt den Laufzeitfehler, der auftritt, wenn Sie die Warnung ignorieren und **Ausführen** auswählen, um ein Format auszuführen, das für die Verwendung der Modellzuordnung konfiguriert ist.
 
-![Laufzeitfehler, die auftreten, wenn die Warnung auf der Seite „Formatdesigner“ ignoriert wird](./media/er-components-inspections-05c.png)
+![Auftretende Laufzeitfehler, wenn die Warnung auf der Seite „Formatdesigner“ ignoriert wird](./media/er-components-inspections-05c.png)
 
 ### <a name="automatic-resolution"></a>Automatische Lösung
 
@@ -429,11 +455,11 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 11. Ändern Sie den Ausdruck der Datenquelle **Vendor.FilteredTrans** von `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` zu `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)`.
 12. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen. Vergewissern Sie sich dann, ob die konfigurierte Datenquelle **JoinedList** abgefragt werden kann.
 
-    ![Überprüfen Sie die bearbeitbare Modellzuordnungskomponente, und vergewissern Sie sich dann, ob die konfigurierte Datenquelle „JoinedList“ auf der Seite „Modellzuordnungsdesigner“ abgefragt werden kann.](./media/er-components-inspections-06b.png)
+    ![Überprüfen der bearbeitbaren Modellzuordnungskomponente und Sicherstellen, dass die konfigurierte Datenquelle „JoinedList“ auf der Seite „Modellzuordnungsdesigner“ abgefragt werden kann](./media/er-components-inspections-06b.png)
 
 13. Beachten Sie, dass ein Prüfungsfehler auftritt, da der Ausdruck der Datenquelle **Vendor.FilteredTrans** nicht in den direkten SQL-Aufruf übersetzt werden kann. Darüber hinaus erlaubt der direkte SQL-Aufruf nicht den Aufruf der Datenquelle **JoinedList**, die in die direkte SQL-Anweisung übersetzt werden soll.
 
-    ![Laufzeitfehler aufgrund fehlgeschlagener Prüfung der Datenquelle „JoinedList“ auf der Seite „Modellzuordnungsdesigner“](./media/er-components-inspections-06c.png)
+    ![Laufzeitfehler aufgrund der fehlgeschlagenen Prüfung der Datenquelle „JoinedList“ auf der Seite „Modellzuordnungsdesigner“](./media/er-components-inspections-06c.png)
 
 Die folgende Abbildung zeigt den Laufzeitfehler, der auftritt, wenn Sie die Warnung ignorieren und **Ausführen** auswählen, um ein Format auszuführen, das für die Verwendung der Modellzuordnung konfiguriert ist.
 
@@ -472,11 +498,11 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 9. Nennen Sie die neue Datenquelle **FilteredVendor** und konfigurieren Sie sie so, dass sie den Ausdruck `WHERE(Vendor, Vendor.AccountNum="US-101")` enthält.
 10. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen.
 
-    ![Überprüfen, um die bearbeitbare Modellzuordnungskomponente auf der Seite „Modellzuordnungsdesigner“ zu überprüfen](./media/er-components-inspections-07a.png)
+    ![Untersuchen der bearbeitbaren Modellzuordnungskomponente auf der Seite „Modellzuordnungsdesigner“](./media/er-components-inspections-07a.png)
 
 11. Beachten Sie, dass Prüfungswarnungen die Verwendung der **FILTER**-Funktion anstelle der **WHERE**-Funktion für die Datenquellen **FilteredVendor** und **FilteredTrans** empfehlen.
 
-    ![Prüfungswarnungen empfehlen die FILTER-Funktion anstelle der WHERE-Funktion auf der Seite „Modellzuordnungsdesigner“](./media/er-components-inspections-07b.png)
+    ![Empfehlung zur Nutzung der FILTER-Funktion anstelle der WHERE-Funktion auf der Seite „Modellzuordnungsdesigner“](./media/er-components-inspections-07b.png)
 
 ### <a name="automatic-resolution"></a>Automatische Lösung
 
@@ -484,7 +510,7 @@ Wählen Sie **Beheben** aus, um die **WHERE**-Funktion automatisch durch die **F
 
 Alternativ können Sie die Zeile für eine einzelne Warnung im Raster auswählen und dann **Ausgewählte beheben** auswählen. In diesem Fall wird der Ausdruck automatisch nur in der Datenquelle geändert, die in der ausgewählten Warnung angegeben ist.
 
-![Wählen Sie „Beheben“ aus, um die WHERE-Funktion auf der Seite „Modellzuordnungsdesigner“ automatisch durch die FILTER-Funktion zu ersetzen](./media/er-components-inspections-07c.png)
+![Auswählen von „Beheben“, um die WHERE-Funktion auf der Seite „Modellzuordnungsdesigner“ automatisch durch die FILTER-Funktion zu ersetzen](./media/er-components-inspections-07c.png)
 
 ### <a name="manual-resolution"></a>Manuelle Lösung
 
@@ -501,15 +527,15 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 3. Nennen Sie die neue Datenquelle **Lieferant**. Wählen Sie im Feld **Tabelle** die Option **VendTable** aus, um anzugeben, dass diese Datenquelle die VendTable-Tabelle anfordert.
 4. Fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu, um Datensätze für mehrere Lieferanten zu erhalten.
 5. Nennen Sie die neue Datenquelle **FilteredVendor** und konfigurieren Sie sie so, dass sie den Ausdruck `FILTER(Vendor, OR(Vendor.AccountNum="US-101",Vendor.AccountNum="US-102"))` enthält.
-6. Fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu, um Transaktionen aller gefilterten Lieferanten zu erhalten.
+6. Fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu, um die Transaktionen aller gefilterten Kreditoren zu erhalten.
 7. Nennen Sie die neue Datenquelle **FilteredVendorTrans** und konfigurieren Sie sie so, dass sie den Ausdruck `ALLITEMS(FilteredVendor.'<Relations'.'VendTrans.VendTable_AccountNum')` enthält.
 8. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen.
 
-    ![Seite „Modellzuordnungsdesigner“, Schaltfläche „Überprüfen“](./media/er-components-inspections-08a.png)
+    ![Untersuchen der bearbeitbaren Modellzuordnungskomponente auf der Seite „Modellzuordnungsdesigner“](./media/er-components-inspections-08a.png)
 
 9. Beachten Sie, dass eine Prüfungswarnung auftritt. Die Nachricht empfiehlt, die **ALLITEMSQUERY**-Funktion anstelle der **ALLITEMS**-Funktion für die Datenquelle **FilteredVendorTrans** zu verwenden.
 
-    ![Prüfungswarnung, die ALLITEMSQUERY-Funktion anstelle der ALLITEMS-Funktion in der EB-Modellzuordnungskomponente auf der Seite „Modellzuordnungsdesigner“ zu verwenden](./media/er-components-inspections-08b.png)
+    ![Empfehlung zur Nutzung der ALLITEMSQUERY-Funktion anstelle der ALLITEMS-Funktion auf der Seite „Modellzuordnungsdesigner“](./media/er-components-inspections-08b.png)
 
 ### <a name="automatic-resolution"></a>Automatische Lösung
 
@@ -517,7 +543,7 @@ Wählen Sie **Beheben** aus, um die **ALLITEMS**-Funktion automatisch durch die 
 
 Alternativ können Sie die Zeile für eine einzelne Warnung im Raster auswählen und dann **Ausgewählte beheben** auswählen. In diesem Fall wird der Ausdruck automatisch nur in der Datenquelle geändert, die in der ausgewählten Warnung angegeben ist.
 
-![Seite „Modellzuordnungsdesigner“, „Beheben“ ausgewählt](./media/er-components-inspections-08c.png)
+![Auswählen von „Beheben“ auf der Seite „Modellzuordnungsdesigner“](./media/er-components-inspections-08c.png)
 
 ### <a name="manual-resolution"></a>Manuelle Lösung
 
@@ -540,7 +566,7 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
     ![Hinzufügen verschachtelter Felder auf der Seite „Datenmodell“](./media/er-components-inspections-09a.png)
 
-6. Im Bereich „Datenquellen“ der Modellzuweisung fügen Sie eine Datenquelle vom Typ **Dynamics 365 for Operations \\ Tabellendatensätze** hinzu.
+6. Fügen Sie im Bereich **Datenquellen** des Modellzuordnungsdesigners eine Datenquelle vom Typ **Dynamics 365 for Operations \\ Tabellendatensätze** hinzu.
 7. Nennen Sie die neue Datenquelle **Lieferant**. Wählen Sie im Feld **Tabelle** die Option **VendTable** aus, um anzugeben, dass diese Datenquelle die VendTable-Tabelle anfordert.
 8. Fügen Sie eine Datenquelle vom Typ **Allgemein \\ Benutzereingabeparameter** hinzu, um im Dialogfeld zur Laufzeit nach einem Lieferantenkonto zu suchen.
 9. Nennen Sie die neue Datenquelle **RequestedAccountNum**. Geben Sie in das Feld **Beschriftung** den Text **Lieferantenkontonummer** ein. Behalten Sie im Feld **Name des Betriebsdatentyps** den Standardwert **Beschreibung** bei.
@@ -570,15 +596,15 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
 15. Wählen Sie **Überprüfen** aus, um die bearbeitbare Formatkomponente auf der Seite **Formatdesigner** zu überprüfen.
 
-    ![Überprüfen der Formatelemente, die Sie an Datenquellen auf der Seite „Formatdesigner“ gebunden haben](./media/er-components-inspections-09c.png)
+    ![Überprüfen der Formatelemente, die Sie auf der Seite „Formatdesigner“ an Datenquellen gebunden haben](./media/er-components-inspections-09c.png)
 
 16. Beachten Sie, dass ein Prüfungsfehler auftritt. Die Nachricht besagt, dass zur Laufzeit möglicherweise ein Fehler für die konfigurierten Formatkomponenten **Anweisung\\Partei\\Name** und **Anweisung\\Partei\\AccountNum** auftritt, wenn die Liste `model.Vendor` leer ist.
 
-    ![Prüfungsfehler, der über einen möglichen Fehler für die konfigurierten Formatkomponenten informiert](./media/er-components-inspections-09d.png)
+    ![Prüfungsfehler hinsichtlich eines möglichen Fehlers bei den konfigurierten Formatkomponenten](./media/er-components-inspections-09d.png)
 
 Die folgende Abbildung zeigt den Laufzeitfehler, der auftritt, wenn Sie die Warnung ignorieren, für das Format **Ausführen** auswählen und die Kontonummer eines nicht existierenden Lieferanten auswählen. Da der angeforderte Kreditor nicht existiert, wird die Liste `model.Vendor` leer sein (d. h., sie enthält keine Datensätze).
 
-![Laufzeitfehler, die während der Ausführung der Formatzuordnung aufgetreten sind](./media/er-components-inspections-09e.png)
+![Laufzeitfehler, die während der Ausführung der Formatzuordnung auftreten](./media/er-components-inspections-09e.png)
 
 ### <a name="automatic-resolution"></a>Automatische Lösung
 
@@ -632,13 +658,13 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
 9. Wählen Sie **Überprüfen** aus, um die bearbeitbare Modellzuordnungskomponente auf der Seite **Modellzuordnungsdesigner** zu überprüfen.
 
-    ![Überprüfen der Filterfunktion, die auf die Datenquelle „Lieferant“ im Zwischenspeicher auf der Seite „Modellzuordnungsdesigner“ angewendet wird](./media/er-components-inspections-10a.png)
+    ![Überprüfen der FILTER-Funktion, die auf die Datenquelle „Kreditor“ im Zwischenspeicher auf der Seite „Modellzuordnungsdesigner“ angewendet wird](./media/er-components-inspections-10a.png)
 
 10. Beachten Sie, dass ein Prüfungsfehler auftritt. Die Nachricht besagt, dass die **FILTER**-Funktion nicht auf die zwischengespeicherte Datenquelle **Lieferant** angewendet werden kann.
 
 Die folgende Abbildung zeigt den Laufzeitfehler, der auftritt, wenn Sie die Warnung ignorieren und **Ausführen** auswählen, um das Format auszuführen.
 
-![Laufzeitfehler, der während der Ausführung der Formatzuordnung auf der Seite „Formatdesigner“ auftrat](./media/er-components-inspections-10b.png)
+![Laufzeitfehler, der während der Ausführung der Formatzuordnung auf der Seite „Formatdesigner“ auftritt](./media/er-components-inspections-10b.png)
 
 ### <a name="automatic-resolution"></a>Automatische Lösung
 
@@ -669,12 +695,12 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
     - Fügen Sie ein verschachteltes Feld vom Typ **Zeichenfolge** hinzu und nennen Sie es **Name**.
     - Fügen Sie ein verschachteltes Feld vom Typ **Zeichenfolge** hinzu und nennen Sie es **AccountNumber**.
 
-    ![Hinzufügen von verschachtelten Feldern zum Lieferantenelement auf der Seite „Datenmodell“](./media/er-components-inspections-11a.png)
+    ![Hinzufügen verschachtelter Felder zum Kreditorelement auf der Seite „Datenmodell“](./media/er-components-inspections-11a.png)
 
-6. Im Bereich „Datenquellen“ der Modellzuweisung fügen Sie eine Datenquelle vom Typ **Dynamics 365 for Operations \\ Tabellendatensätze** hinzu.
+6. Fügen Sie im Bereich **Datenquellen** des Modellzuordnungsdesigners eine Datenquelle vom Typ **Dynamics 365 for Operations \\ Tabellendatensätze** hinzu.
 7. Nennen Sie die neue Datenquelle **Lieferant**. Wählen Sie im Feld **Tabelle** die Option **VendTable** aus, um anzugeben, dass diese Datenquelle die VendTable-Tabelle anfordert.
 8. Fügen Sie eine Datenquelle vom Typ **Allgemein \\ Benutzereingabeparameter** hinzu, um im Dialogfeld zur Laufzeit ein Lieferantenkonto abzufragen.
-9 Nennen Sie die neue Datenquelle **RequestedAccountNum**. Geben Sie in das Feld **Beschriftung** den Text **Lieferantenkontonummer** ein. Behalten Sie im Feld **Name des Betriebsdatentyps** den Standardwert **Beschreibung** bei.
+9. Nennen Sie die neue Datenquelle **RequestedAccountNum**. Geben Sie in das Feld **Beschriftung** den Text **Lieferantenkontonummer** ein. Behalten Sie im Feld **Name des Betriebsdatentyps** den Standardwert **Beschreibung** bei.
 10. Fügen Sie eine Datenquelle vom Typ **Berechnetes Feld** hinzu, um nach einem Lieferanten zu filtern, zu dem eine Abfrage durchgeführt wird.
 11. Nennen Sie die neue Datenquelle **FilteredVendor** und konfigurieren Sie sie so, dass sie den Ausdruck `FILTER(Vendor, Vendor.AccountNum=RequestedAccountNum)` enthält.
 12. Binden Sie die Datenmodellelemente wie folgt an konfigurierte Datenquellen:
@@ -685,7 +711,7 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
     > [!NOTE]
     > Das Datenmodell **Vendor.Name** bleibt ungebunden.
 
-    ![Datenmodellelemente, die an konfigurierte Datenquellen gebunden sind, und ein Datenmodellelement, das auf der Seite „Modellzuordnungsdesigner“ verbleibt](./media/er-components-inspections-11b.png)
+    ![Datenmodellelemente, die an konfigurierte Datenquellen gebunden sind, und ein Datenmodellelement, das ungebunden auf der Seite „Modellzuordnungsdesigner“ verbleibt](./media/er-components-inspections-11b.png)
 
 13. Fügen Sie im Formatstrukturbaum die folgenden Elemente hinzu, um ein ausgehendes Dokument im XML-Format zu generieren, das die Details zu den abgefragten Lieferanten enthält:
 
@@ -704,7 +730,7 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
 15. Wählen Sie **Überprüfen** aus, um die bearbeitbare Formatkomponente auf der Seite **Formatdesigner** zu überprüfen.
 
-    ![Prüfen der EB-Formatkomponente auf der Seite „Formatdesigner“](./media/er-components-inspections-11c.png)
+    ![EB-Formatkomponente auf der Seite „Formatdesigner“ prüfen](./media/er-components-inspections-11c.png)
 
 16. Beachten Sie, dass eine Prüfungswarnung auftritt. Die Nachricht besagt, dass das Datenquellenfeld **model.Vendor.Name** nicht an eine Datenquelle in der Modellzuordnung gebunden ist, die zur Verwendung durch das Format konfiguriert ist. Deshalb wird das Formatelement **Anweisung\\Partei\\Name** zur Laufzeit möglicherweise nicht gefüllt und es kann zu einer Laufzeitausnahme kommen.
 
@@ -726,7 +752,7 @@ Es ist keine Option verfügbar, um dieses Problem automatisch zu beheben.
 
 #### <a name="option-2"></a>Option 2
 
-Ändern Sie das konfigurierte Format, indem Sie eine Bindung für das Formatelement **Anweisung\\Partei\\Name** entfernen.
+Ändern Sie das konfigurierte Format, indem Sie die Bindung des Formatelements **Anweisung\\Partei\\Name** entfernen.
 
 ## <a name="not-linked-template"></a><a id="i12"></a>Nicht verknüpfte Vorlage
 
@@ -743,7 +769,7 @@ Die folgenden Schritte zeigen, wie dieses Problem auftreten kann.
 
     ![Überprüfen der bearbeitbaren Formatkomponente der Arbeitsmappendatei auf der Seite „Formatdesigner“](./media/er-components-inspections-12a.gif)
 
-7. Beachten Sie, dass eine Prüfungswarnung auftritt. Die Nachricht gibt an, dass die Arbeitsmappendatei **B.xlsx** mit keinen Komponenten verknüpft ist und entfernt wird, nachdem der Status der Konfigurationsversion geändert wurde.
+7. Beachten Sie, dass eine Prüfungswarnung auftritt. Die Nachricht gibt an, dass die Arbeitsmappendatei B.xlsx mit keinen Komponenten verknüpft ist und entfernt wird, nachdem der Status der Konfigurationsversion geändert wurde.
 
 ### <a name="automatic-resolution"></a>Automatische Lösung
 
@@ -793,6 +819,55 @@ Es ist keine Option verfügbar, um dieses Problem automatisch zu beheben.
 
 Informationen dazu, wie die Formatstruktur mit einer EB-Vorlage im Vorlageneditor von der [Geschäftsdokumentverwaltung](er-business-document-management.md) synchronisiert werden kann, finden Sie unter [Struktur einer Geschäftsdokumentvorlage aktualisieren](er-bdm-update-structure.md).
 
+## <a name="not-synced-with-a-word-template-format"></a><a id="i14"></a>Nicht mit einem Word-Vorlagenformat synchronisiert
+
+Wenn Sie eine EB-Formatkomponente so [konfigurieren](er-fillable-excel.md), dass sie eine Word-Vorlage zum Generieren eines ausgehenden Dokuments verwendet, können Sie das Element **Excel\\Datei** manuell hinzufügen, die erforderliche Word-Vorlage als Anhang der bearbeitbaren Komponente hinzufügen und diesen Anhang im hinzugefügten Element **Excel\\Datei** auswählen.
+
+> [!NOTE]
+> Wenn das Word-Dokument angehängt ist, zeigt der EB-Formatdesigner das bearbeitbare Element als **Word\\Datei** an.
+
+Auf diese Weise geben Sie an, dass das hinzugefügte Element zur Laufzeit die ausgewählte Vorlage ausfüllt. Da die hinzugefügte Word-Vorlage extern entworfen wurde, enthält das bearbeitbare EB-Format möglicherweise Verweise auf Word-Inhaltssteuerelemente, die in der hinzugefügten Vorlage fehlen. Der EB-Formatdesigner warnt Sie vor Inkonsistenzen zwischen den Eigenschaften der EB-Formatelemente, die sich auf Inhaltssteuerelemente beziehen, die nicht in der hinzugefügten Word-Vorlage enthalten sind.
+
+Ein Beispiel, das zeigt, wie dieses Problem auftreten kann, finden Sie unter [Das bearbeitbare Format zum Unterdrücken des Zusammenfassungsabschnitts konfigurieren](er-design-configuration-word-suppress-controls.md#configure-to-suppress-control).
+
+### <a name="automatic-resolution"></a>Automatische Lösung
+
+Es ist keine Option verfügbar, um dieses Problem automatisch zu beheben.
+
+### <a name="manual-resolution"></a>Manuelle Lösung
+
+#### <a name="option-1"></a>Option 1
+
+Ändern Sie das konfigurierte Format, indem Sie die **Entfernt**-Formelaus dem Formatelement löschen, das in der Validierungswarnung erwähnt wird.
+
+#### <a name="option-2"></a>Option 2
+
+Ändern Sie die verwendete Word-Vorlage, indem Sie dem entsprechenden Word-Inhaltssteuerelement die erforderliche Markierung [hinzufügen](er-design-configuration-word-suppress-controls.md#tag-control).
+
+## <a name="no-default-mapping"></a><a id="i15"></a>Keine Standardzuordnung
+
+Wenn die Untersuchung [Fehlende Bindung](#i11) abgeschlossen ist, werden die untersuchten Formatbindungen anhand der Bindungen der relevanten Modellzuordnungskomponente bewertet. Da Sie [mehrere](./tasks/er-manage-model-mapping-configurations-july-2017.md) EB-Modellzuordnungskonfigurationen in Ihre Finance-Instanz importieren können, und jede Konfiguration möglicherweise die entsprechende Modellzuordnungskomponente enthält, muss eine Konfiguration als Standardkonfiguration ausgewählt werden. Andernfalls tritt beim Versuch, das untersuchte EB-Format auszuführen, zu bearbeiten oder zu validieren, eine Ausnahme auf, und Sie erhalten die folgende Meldung: „Für das \<model name (root descriptor)\>-Datenmodell ist in den Konfigurationen mehr als eine Modellzuordnung vorhanden\<configuration names separated by comma\>. Legen Sie eine der Konfigurationen als Standard fest.“
+
+Ein Beispiel, das zeigt, wie dieses Problem auftreten und behoben werden kann, finden Sie unter [Mehrere abgeleitete Zuordnungen für einen einzelnen Modellstamm verwalten](er-multiple-model-mappings.md).
+
+## <a name="inconsistent-setting-of-header-or-footer-components"></a><a id="i16"></a>Inkonsistente Einstellung der Kopf- oder Fußzeilenkomponenten
+
+Wenn Sie eine EB-Formatkomponente [konfigurieren](er-fillable-excel.md), um eine Excel-Vorlage zum Generieren eines ausgehenden Dokuments zu verwenden, können Sie die **Excel\\Kopfzeile**-Komponente zum Ausfüllen von Kopfzeilen in einem Arbeitsblatt einer Excel-Arbeitsmappe hinzufügen. Sie können auch die **Excel\\Fußzeile**-Komponente zum Ausfüllen von Fußzeilen in einem Arbeitsblatt hinzufügen. Für jede **Excel\\Kopfzeile**- oder **Excel\\Fußzeile**-Komponente, die Sie hinzufügen, müssen Sie die Eigenschaft **Kopf-/Fußzeilendarstellung** festlegen, um die Seiten anzugeben, für die die Komponente ausgeführt wird. Da Sie mehrere **Excel\\Kopfzeile**- oder **Excel\\Fußzeile**-Komponenten für eine einzelne **Blatt**-Komponente konfigurieren und verschiedene Kopf- oder Fußzeilen für verschiedene Seitentypen in einem Excel-Arbeitsblatt generieren können, müssen Sie eine einzelne **Excel\\Kopfzeile**- oder **Excel\\Fußzeile**-Komponente für einen bestimmten Wert der Eigenschaft **Kopf-/Fußzeile** konfigurieren. Wenn mehr als eine **Excel\\Kopfzeile**- oder **Excel\\Fußzeile**-Komponente für einen bestimmten Wert der Eigenschaft **Kopf-/Fußzeilendarstellung** konfiguriert ist, tritt ein Überprüfungsfehler auf, und Sie erhalten die folgende Fehlermeldung: „Kopf-/Fußzeilen (&lt;Komponententyp: Kopf- oder Fußzeile&gt;) sind inkonsistent.“
+
+### <a name="automatic-resolution"></a>Automatische Lösung
+
+Es ist keine Option verfügbar, um dieses Problem automatisch zu beheben.
+
+### <a name="manual-resolution"></a>Manuelle Lösung
+
+#### <a name="option-1"></a>Option 1
+
+Ändern Sie das konfigurierte Format, indem Sie eine der inkonsistenten **Excel\\Kopfzeile**- oder **Excel\\Fußzeile**-Komponenten löschen.
+
+#### <a name="option-2"></a>Option 2
+
+Ändern Sie den Wert der Eigenschaft **Kopf-/Fußzeile** für eine der inkonsistenten **Excel\\Kopfzeile**- oder **Excel\\Fußzeile**-Komponenten.
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [ALLITEMS EB-Funktion](er-functions-list-allitems.md)
@@ -812,6 +887,10 @@ Informationen dazu, wie die Formatstruktur mit einer EB-Vorlage im Vorlagenedito
 [Überwachen der Ausführung von ER-Formaten zur Behebung von Leistungsproblemen](trace-execution-er-troubleshoot-perf.md)
 
 [Geschäftsdokumentverwaltung – Übersicht](er-business-document-management.md)
+
+[Steuerelemente für Word-Inhalte in generierten Berichten unterdrücken](er-design-configuration-word-suppress-controls.md)
+
+[Mehrere abgeleitete Zuordnungen für eine einzelne Modellwurzel verwalten](er-multiple-model-mappings.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

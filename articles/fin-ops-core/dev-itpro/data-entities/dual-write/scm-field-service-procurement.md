@@ -6,7 +6,6 @@ manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: c2b0d5be38425b5ceebb38b7964f5ec600b1c838
-ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
+ms.openlocfilehash: 79a971e3de43cb0161d4ac5012f657a947bc567c
+ms.sourcegitcommit: afbdc268bcdb1755d7f1bc79ad1b7fc801b2e2f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5141903"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5579971"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrieren der Beschaffung zwischen Supply Chain Management und Field Service
 
@@ -47,8 +46,8 @@ Um Supply Chain Management in Field Service zu integrieren, müssen Sie die folg
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
-+ **Dual-Write** – Weitere Informationen finden Sie auf der [Dual-Write-Homepage](dual-write-home-page.md#dual-write-setup).
-+ **Dynamics 365 Field Service** – Weitere Informationen finden Sie unter [Installieren von Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
+- **Dual-Write** – Weitere Informationen finden Sie auf der [Dual-Write-Homepage](dual-write-home-page.md#dual-write-setup).
+- **Dynamics 365 Field Service** – Weitere Informationen finden Sie unter [Installieren von Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
 
 Wenn sie in Microsoft Dataverse aktiviert sind, führen Dual-Write und Field Service mehrere Lösungsebenen ein, die die Umgebung mit neuen Metadaten, Formularen, Ansichten und Logik erweitern. Diese Lösungen können in beliebiger Reihenfolge aktiviert werden, obwohl Sie sie normalerweise in der hier angegebenen Reihenfolge installieren:
 
@@ -57,8 +56,8 @@ Wenn sie in Microsoft Dataverse aktiviert sind, führen Dual-Write und Field Ser
 3. **Supply Chain Management Extended** – Supply Chain Management Extended wird automatisch installiert, wenn Dual-Write in einer Umgebung aktiviert ist. 
 4. **OneFSSCM-Lösung** – OneFSSCM wird automatisch von der zuletzt installierten Lösung (Field Service oder Supply Chain Management) installiert.
 
-    + Wenn Field Service bereits in der Umgebung installiert ist und Sie Dual-Write aktivieren, wodurch Supply Chain Management Extended installiert wird, wird OneFSSCM installiert.
-    + Wenn Supply Chain Management Extended bereits in der Umgebung installiert ist und Sie Field Service installieren, wird OneFSSCM installiert.
+    - Wenn Field Service bereits in der Umgebung installiert ist und Sie Dual-Write aktivieren, wodurch Supply Chain Management Extended installiert wird, wird OneFSSCM installiert.
+    - Wenn Supply Chain Management Extended bereits in der Umgebung installiert ist und Sie Field Service installieren, wird OneFSSCM installiert.
 
 ## <a name="initial-synchronization"></a>Erstsynchronisierung
 
@@ -124,22 +123,22 @@ Des Weiteren beinhaltet Dataverse eine Logik, die Lieferanten ihren zugehörigen
 
 ## <a name="supported-scenarios"></a>Unterstützte Szenarien
 
-+ Bestellungen können von Dataverse-Benutzern erstellt und aktualisiert werden. Der Prozess und die Daten werden jedoch von Supply Chain Management gesteuert. Die Einschränkungen für Aktualisierungen von Bestellungsspalten in Supply Chain Management gelten, wenn Aktualisierungen aus Field Service stammen. Beispielsweise können Sie eine Bestellung nicht aktualisieren, wenn sie abgeschlossen wurde. 
-+ Wenn die Bestellung vom Änderungsmanagement in Supply Chain Management gesteuert wird, kann ein Field Service-Benutzer die Bestellung nur aktualisieren, wenn der Genehmigungsstatus für Supply Chain Management *Entwurf* lautet.
-+ Einige Spalten werden nur von Supply Chain Management verwaltet und können in Field Service nicht aktualisiert werden. Überprüfen Sie die Zuordnungstabellen im Produkt, um zu sehen, welche Spalten nicht aktualisiert werden können. Der Einfachheit halber sind die meisten dieser Spalten auf Dataverse-Seiten schreibgeschützt. 
+- Bestellungen können von Dataverse-Benutzern erstellt und aktualisiert werden. Der Prozess und die Daten werden jedoch von Supply Chain Management gesteuert. Die Einschränkungen für Aktualisierungen von Bestellungsspalten in Supply Chain Management gelten, wenn Aktualisierungen aus Field Service stammen. Beispielsweise können Sie eine Bestellung nicht aktualisieren, wenn sie abgeschlossen wurde. 
+- Wenn die Bestellung vom Änderungsmanagement in Supply Chain Management gesteuert wird, kann ein Field Service-Benutzer die Bestellung nur aktualisieren, wenn der Genehmigungsstatus für Supply Chain Management *Entwurf* lautet.
+- Einige Spalten werden nur von Supply Chain Management verwaltet und können in Field Service nicht aktualisiert werden. Überprüfen Sie die Zuordnungstabellen im Produkt, um zu sehen, welche Spalten nicht aktualisiert werden können. Der Einfachheit halber sind die meisten dieser Spalten auf Dataverse-Seiten schreibgeschützt. 
 
     Beispielsweise werden die Spalten für Preisinformationen von Supply Chain Management verwaltet. Supply Chain Management verfügt über Handelsabkommen, von denen Field Service profitieren kann. Spalten wie **Preis je Einheit**, **Rabatt** und **Nettobetrag** stemmen ausschließlich aus Supply Chain Management. Um sicherzustellen, dass der Preis mit Field Service synchronisiert wird, sollten Sie die Funktion **Synchronisieren** auf den Seiten **Bestellung** und **Bestellprodukt** in Dataverse verwenden, wenn Bestellungsdaten eingegeben wurden. Weitere Informationen finden Sie unter [Synchronisieren mit den Beschaffungsdaten in Dynamics 365 Supply Chain Management bei Bedarf](#sync-procurement).
 
-+ Die Spalte **Summen** ist nur in Field Service verfügbar, da in Supply Chain Management keine aktuellen Summen der Bestellung vorhanden sind. Die Summen in Supply Chain Management werden basierend auf mehreren Parametern berechnet, die in Field Service nicht verfügbar sind.
-+ Bestellpositionen, in denen nur eine Beschaffungskategorie angegeben ist oder in denen das angegebene Produkt ein Artikel des Produkttyps *Dienstleistung* oder des Field Service-Produkttyps ist, können nur in Supply Chain Management initiiert werden. Die Positionen werden dann mit Dataverse synchronisiert und sind in Field Service sichtbar.
-+ Wenn nur Field Service installiert ist und Supply Chain Management nicht, ist die Spalte **Lagerort** auf der Bestellung obligatorisch. Wenn Supply Chain Management jedoch installiert ist, wird diese Anforderung gelockert, da Supply Chain Management Bestellpositionen ermöglicht, für die in bestimmten Situationen kein Lagerort angegeben ist.
-+ Produktzugänge (Bestellungszugänge in Dataverse) werden von Supply Chain Management verwaltet und können nicht mit Dataverse erstellt werden, wenn Supply Chain Management installiert ist. Die Produktzugänge von Supply Chain Management werden von Supply Chain Management zu Dataverse synchronisiert.
-+ In Supply Chain Management ist eine Unterlieferung zulässig. Die OneFSSCM-Lösung fügt Logik hinzu, sodass beim Erstellen oder Aktualisieren der Produktzugangsposition (oder des Bestellzugangsprodukts in Dataverse) eine Bestandserfassungszeile in Dataverse erstellt, um die verbleibende Menge anzupassen, die für Unterlieferungsszenarien bestellt wurde.
+- Die Spalte **Summen** ist nur in Field Service verfügbar, da in Supply Chain Management keine aktuellen Summen der Bestellung vorhanden sind. Die Summen in Supply Chain Management werden basierend auf mehreren Parametern berechnet, die in Field Service nicht verfügbar sind.
+- Bestellpositionen, in denen nur eine Beschaffungskategorie angegeben ist oder in denen das angegebene Produkt ein Artikel des Produkttyps *Dienstleistung* oder des Field Service-Produkttyps ist, können nur in Supply Chain Management initiiert werden. Die Positionen werden dann mit Dataverse synchronisiert und sind in Field Service sichtbar.
+- Wenn nur Field Service installiert ist und Supply Chain Management nicht, ist die Spalte **Lagerort** auf der Bestellung obligatorisch. Wenn Supply Chain Management jedoch installiert ist, wird diese Anforderung gelockert, da Supply Chain Management Bestellpositionen ermöglicht, für die in bestimmten Situationen kein Lagerort angegeben ist.
+- Produktzugänge (Bestellungszugänge in Dataverse) werden von Supply Chain Management verwaltet und können nicht mit Dataverse erstellt werden, wenn Supply Chain Management installiert ist. Die Produktzugänge von Supply Chain Management werden von Supply Chain Management zu Dataverse synchronisiert.
+- In Supply Chain Management ist eine Unterlieferung zulässig. Die OneFSSCM-Lösung fügt Logik hinzu, sodass beim Erstellen oder Aktualisieren der Produktzugangsposition (oder des Bestellzugangsprodukts in Dataverse) eine Bestandserfassungszeile in Dataverse erstellt, um die verbleibende Menge anzupassen, die für Unterlieferungsszenarien bestellt wurde.
 
 ## <a name="unsupported-scenarios"></a>Nicht unterstützte Szenarien
 
-+ Field Service verhindert, dass einer stornierten Bestellung in Supply Chain Management Positionen hinzugefügt werden. Um dieses Problem zu umgehen, können Sie den Systemstatus der Bestellung in Field Service ändern und dann die neue Position entweder in Field Service oder in Supply Chain Management hinzufügen.
-+ Obwohl Beschaffungszeilen die Bestandsebenen in beiden Systemen beeinflussen, gewährleistet diese Integration keine Bestandsausrichtung zwischen Supply Chain Management und Field Service. Sowohl Field Service als auch Supply Chain Management verfügen über andere Prozesse, mit denen die Bestandsebenen aktualisiert werden. Diese Prozesse fallen nicht in den Bereich der Beschaffung.
+- Field Service verhindert, dass einer stornierten Bestellung in Supply Chain Management Positionen hinzugefügt werden. Um dieses Problem zu umgehen, können Sie den Systemstatus der Bestellung in Field Service ändern und dann die neue Position entweder in Field Service oder in Supply Chain Management hinzufügen.
+- Obwohl Beschaffungszeilen die Bestandsebenen in beiden Systemen beeinflussen, gewährleistet diese Integration keine Bestandsausrichtung zwischen Supply Chain Management und Field Service. Sowohl Field Service als auch Supply Chain Management verfügen über andere Prozesse, mit denen die Bestandsebenen aktualisiert werden. Diese Prozesse fallen nicht in den Bereich der Beschaffung.
 
 ## <a name="status-management"></a>Statusverwaltung
 
@@ -161,13 +160,13 @@ Genehmigungsstatus für Positionen sind nur aktiv, wenn ein Positionsworkflow vo
 
 Die folgenden Regeln werden auf die Statusspalten angewendet:
 
-+ Der Status in Supply Chain Management kann nicht über Field Service aktualisiert werden. In einigen Fällen wird der Status in Field Service jedoch aktualisiert, wenn der Status der Bestellung in Supply Chain Management geändert wird.
-+ Wenn sich eine Bestellung in Supply Chain Management im Änderungsmanagement befindet und eine Änderung verarbeitet wird, lautet der Genehmigungsstatus *Entwurf* oder *Wird überprüft*. In diesem Fall wird der Genehmigungsstatus in Field Service auf *Null* gesetzt.
-+ Wenn der Genehmigungsstatus der Bestellung in Supply Chain Management auf *Genehmigt*, *In externer Überprüfung*, *Bestätigt* oder *Abgeschlossen* festgelegt ist, wird der Genehmigungsstatus der Bestellung in Field Service auf *Genehmigt* festgelegt.
-+ Wenn der Genehmigungsstatus der Bestellung in Supply Chain Management auf *Abgelehnt* festgelegt ist, wird der Genehmigungsstatus der Bestellung in Field Service auf *Abgelehnt* festgelegt.
-+ Wenn der Status des Dokumentkopfes in Supply Chain Management in *Offene Bestellung (Nachbestellung)* geändert wird und der Status der Bestellung in Field Service *Entwurf* oder *Storniert* lautet, wird der Status der Bestellung in Field Service in *Übermittelt* geändert.
-+ Wenn der Status des Dokumentkopfes in Supply Chain Management in *Storniert* geändert wird und der Bestellung in Field Service kein Produktzugang zugeordnet ist (über Bestellprodukte), wird der Systemstatus in Field Service auf *Storniert* festgelegt.
-+ Wenn der Status der Bestellposition in Supply Chain Management *Storniert* lautet, wird der Status des Bestellprodukts in Field Service auf *Storniert* festgelegt. Darüber hinaus wird, wenn der Status der Bestellposition in Supply Chain Management von *Storniert* in *Nachbestellung* geändert wird, der Status des Einkaufsartikels in der Bestellung in Field Service auf *Ausstehend* festgelegt.
+- Der Status in Supply Chain Management kann nicht über Field Service aktualisiert werden. In einigen Fällen wird der Status in Field Service jedoch aktualisiert, wenn der Status der Bestellung in Supply Chain Management geändert wird.
+- Wenn sich eine Bestellung in Supply Chain Management im Änderungsmanagement befindet und eine Änderung verarbeitet wird, lautet der Genehmigungsstatus *Entwurf* oder *Wird überprüft*. In diesem Fall wird der Genehmigungsstatus in Field Service auf *Null* gesetzt.
+- Wenn der Genehmigungsstatus der Bestellung in Supply Chain Management auf *Genehmigt*, *In externer Überprüfung*, *Bestätigt* oder *Abgeschlossen* festgelegt ist, wird der Genehmigungsstatus der Bestellung in Field Service auf *Genehmigt* festgelegt.
+- Wenn der Genehmigungsstatus der Bestellung in Supply Chain Management auf *Abgelehnt* festgelegt ist, wird der Genehmigungsstatus der Bestellung in Field Service auf *Abgelehnt* festgelegt.
+- Wenn der Status des Dokumentkopfes in Supply Chain Management in *Offene Bestellung (Nachbestellung)* geändert wird und der Status der Bestellung in Field Service *Entwurf* oder *Storniert* lautet, wird der Status der Bestellung in Field Service in *Übermittelt* geändert.
+- Wenn der Status des Dokumentkopfes in Supply Chain Management in *Storniert* geändert wird und der Bestellung in Field Service kein Produktzugang zugeordnet ist (über Bestellprodukte), wird der Systemstatus in Field Service auf *Storniert* festgelegt.
+- Wenn der Status der Bestellposition in Supply Chain Management *Storniert* lautet, wird der Status des Bestellprodukts in Field Service auf *Storniert* festgelegt. Darüber hinaus wird, wenn der Status der Bestellposition in Supply Chain Management von *Storniert* in *Nachbestellung* geändert wird, der Status des Einkaufsartikels in der Bestellung in Field Service auf *Ausstehend* festgelegt.
 
 ## <a name="sync-with-the-supply-chain-management-procurement-data-on-demand"></a><a id="sync-procurement"></a>Synchronisieren mit den Beschaffungsdaten von Supply Chain Management bei Bedarf
 

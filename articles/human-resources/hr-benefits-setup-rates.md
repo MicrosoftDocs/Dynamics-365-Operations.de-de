@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0f5c2ce14f6a0ff830ce2645496a35fb98d6a6ab
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 351364d6de250bad559b1704a928ed5274578151
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112650"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468418"
 ---
 # <a name="configure-rates"></a>Sätze konfigurieren
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Sätze in Microsoft Dynamics 365 Human Resources definieren, wie viel Arbeitgeber und Mitarbeiter für einen Vorteil beitragen. Der Wert kann abhängig von Ihrer Konfiguration ein Betrag oder ein Flexguthaben sein.
 

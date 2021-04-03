@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d91f377af2514af932ea585adb75a56bdee13871
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ec7417d44a7c2aa413a9cda75996c153727632dd
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988477"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592645"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Mexiko
 
@@ -291,7 +291,7 @@ Nachdem Sie die Funktion **Integration des konfigurierbaren Add-Ons für die ele
     ![Anzeigen der Details des Übermittlungsprotokolls zu Stornierungen](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Datenschutzhinweis
-Für die Aktivierung der Funktionen MX-00010 und MX-00016 (CFDI-Rechnung und CFDI-Stornierung) müssen möglicherweise nur begrenzte Daten gesendet werden, einschließlich der Steuerregistrierungskennung für die Organisation. Diese Daten werden an von der Steuerbehörde autorisierte Drittagenturen weitergeleitet, um elektronische Rechnungen in dem für die Integration in den Webdienst der Behörde erforderlichen Format an diese Steuerbehörde zu senden. Ein Administrator kann die Funktionen MX-00010 und MX-00016 (CFDI-Rechnung und CFDI-Stornierung) aktivieren und deaktivieren, indem er zu **Organisationsverwaltung \> Einrichtung \> Parameter elektronischer Dokumente** navigiert. Wählen Sie auf der Registerkarte **Funktionen** die Zeilen mit den Funktionen MX-00010 und MX-00016 aus und treffen Sie die entsprechende Auswahl. Daten, die aus diesen externen Systemen in diesen Dynamics 365-Onlinedienst importiert werden, unterliegen unseren [Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkId=512132). Weitere Informationen finden Sie in den Abschnitten zum Datenschutz in der landesspezifischen Funktionsdokumentation.
+Zur Aktivierung der Funktion für eine **Elektronische Rechnung CFDI für Mexiko (MX)** müssen möglicherweise nur begrenzte Daten gesendet werden, einschließlich der Steuerregistrierungskennung für die Organisation. Diese Daten werden an von der Steuerbehörde autorisierte Drittagenturen weitergeleitet, um elektronische Rechnungen in dem für die Integration in den Webdienst der Behörde erforderlichen Format an diese Steuerbehörde zu senden. Ein Administrator kann die Funktion für eine **Elektronische Rechnung CFDI für Mexiko (MX)** aktivieren und deaktivieren, indem er zu **Organisationsverwaltung \> Einrichtung \> Parameter elektronischer Dokumente** navigiert. Wählen Sie die Registerkarte **Funktionen** aus, wählen Sie die Zeilen mit der Funktion für **Elektronische Rechnung CFDI für Mexiko (MX)** aus und treffen Sie die entsprechende Auswahl. Daten, die aus diesen externen Systemen in diesen Dynamics 365-Onlinedienst importiert werden, unterliegen unseren [Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkId=512132). Weitere Informationen finden Sie in den Abschnitten zum Datenschutz in der landesspezifischen Funktionsdokumentation.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

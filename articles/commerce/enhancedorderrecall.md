@@ -3,7 +3,7 @@ title: Auftragsrückrufe in POS
 description: In diesem Thema werden die Funktionen erläutert, die für verbesserte Auftragsrückrufseiten in POS verfügbar sind.
 author: hhainesms
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 21e8045d754006345f5ad68e1e67579386c6df4a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 174821fce4baf81e4298da4b066f855bfec98ca5
+ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010073"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5585129"
 ---
 # <a name="recall-order-operation-in-pos"></a>Auftragsrückrufe in POS
 
@@ -35,7 +35,7 @@ Mit der Konfiguration der Schaltfläche **Auftrag zurückrufen** können Organis
 
 Die Anzeigeoptionen sind wie folgt:
 - **Keine** – Diese Option stellt den Vorgang ohne spezifische Anzeige bereit. Wenn ein Benutzer den Vorgang mit dieser Konfiguration öffnet, wird er aufgefordert, Aufträge zu suchen und zu finden oder aus einem vordefinierten Auftragsfilter auszuwählen.
-- **Zu erfüllende Aufträge** – Wenn ein Benutzer den Vorgang startet, wird automatisch eine Abfrage ausgeführt, um eine Liste der Aufträge zu durchsuchen und anzuzeigen, die vom Store ausgeführt werden sollen. Diese Aufträge sind für die Abholung im Store oder den Versand konfiguriert, und die Zeilen dieser Aufträge wurden noch nicht kommissioniert oder verpackt.
+- **Zu erfüllende Aufträge** – Wenn ein Benutzer den Vorgang startet, wird automatisch eine Abfrage ausgeführt, um eine Liste der Aufträge zu durchsuchen und anzuzeigen, die vom aktuellen Shop des Benutzers ausgeführt werden sollen. Diese Aufträge sind für die Abholung im Store oder den Versand konfiguriert, und die Zeilen dieser Aufträge wurden noch nicht kommissioniert oder verpackt.
 - **Aufträge zur Abholung** – Wenn ein Benutzer den Vorgang startet, wird automatisch eine Abfrage ausgeführt, um eine Liste der Aufträge zu durchsuchen und anzuzeigen, die für die Abholung im aktuellen Store des Benutzers konfiguriert sind.
 - **Aufträge zum Versand** – Wenn ein Benutzer den Vorgang startet, wird automatisch eine Abfrage ausgeführt, um eine Liste der Aufträge zu durchsuchen und anzuzeigen, die für den Versand vom aktuellen Store des Benutzers konfiguriert sind.
 
@@ -46,7 +46,7 @@ Beim Starten des Vorgangs **Auftrag zurückrufen** in POS, wenn das Display als 
 
 ![RecallOrderMainMenu](media/recallordermain.png)
 
-Nachdem die Suchkriterien angewendet wurden, zeigt die Anwendung eine Liste der übereinstimmenden Kundenaufträge an.
+Nachdem die Suchkriterien angewendet wurden, zeigt die Anwendung eine Liste der übereinstimmenden Kundenaufträge an. Es ist wichtig zu beachten, dass bei Verwendung der Such-/Filteroptionen die abgerufenen Aufträge keine Aufträge sein müssen, die mit dem aktuellen Shop des Benutzers verknüpft sind. Bei diesem Suchvorgang wird jeder Debitorauftrag abgerufen und angezeigt, der den Suchkriterien entspricht, auch wenn der Auftrag so erstellt oder festgelegt wurde, dass er von einem anderen Shop/Kanal oder Lagerort erfüllt wird.
 
 ![RecallOrderDetail](media/orderrecalldetail.png)
 
@@ -54,15 +54,18 @@ Ein Benutzer kann einen Auftrag in der Liste auswählen, um zusätzliche Details
 
 In der AppBar kann ein Benutzer einen Vorgang auswählen. Abhängig vom Auftragsstatus sind bestimmte Vorgänge möglicherweise nicht aktiviert.
 
-- **Rückgabe** – Führt eine Rücksendung für eine oder mehrere Rechnungen aus, die sich auf den ausgewählten Kundenauftrag beziehen.
+- **Rückgabe** – Leitet den Prozess zum Erstellen einer Rückgabe für eines der in Rechnung gestellten Produkte auf dem ausgewählten Debitorenauftrag ein.
 
-- **Stornieren** – Stellt eine vollständige Stornierung des ausgewählten Kundenauftrags aus.
+- **Stornieren** – Stellt eine vollständige Stornierung des ausgewählten Kundenauftrags aus. Diese Option ist nicht für Aufträge verfügbar, die über einen Callcenterkanal initiiert wurden, und kann nicht zum teilweisen Stornieren eines Auftrags verwendet werden.
 
 - **Erfüllen** – Überträgt den Benutzer auf die Seite zur Auftragserfüllung, die für die ausgewählte Bestellung vorgefiltert wird. Es werden nur Auftragspositionen angezeigt, die vom Store des Benutzers für den ausgewählten Auftrag zur Erfüllung geöffnet sind.
 
-- **Bearbeiten** – Ermöglicht Benutzern das Vornehmen von Änderungen am ausgewählten Kundenauftrag.
+- **Bearbeiten** – Ermöglicht Benutzern das Vornehmen von Änderungen am ausgewählten Kundenauftrag. Aufträge können nur in [bestimmten Szenarien](customer-orders-overview.md#edit-an-existing-customer-order) bearbeitet werden.
 
-- **Abholen** – Startet den Abholungs-Flow, mit dem der Benutzer die abzuholenden Produkte auswählen kann, und erstellt die Warenabholungstransaktion.
+- **Abholen** – Diese Option ist verfügbar, wenn auf dem Auftrag eine oder mehrere Positionen zur Abholung im aktuellen Geschäft des Benutzers vorgesehen sind. Dieser Vorgang startet den Abholungs-Flow, mit dem der Benutzer die abzuholenden Produkte auswählen kann, und erstellt die Warenabholungstransaktion.
 
+## <a name="add-notifications-to-the-recall-order-operation"></a>Dem Auftragsrückrufvorgang Benachrichtigungen hinzufügen
+
+In Version 10.0.18 und höher können Sie POS-Benachrichtigungen und Live-Kachel-Warnungen für den Vorgang **Auftragsrückruf** konfigurieren, falls gewünscht. Weitere Informationen finden Sie unter [Auftragsbenachrichtigungen in Point of Sale (POS) anzeigen](notifications-pos.md).  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
