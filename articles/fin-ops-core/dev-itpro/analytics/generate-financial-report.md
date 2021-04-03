@@ -1,12 +1,11 @@
 ---
 title: Finanzberichte generieren
 description: Dieses Thema enthält allgemeine Informationen zun Generieren von Finanzberichten.
-author: aprilolson
+author: jinniew
 manager: AnnBe
-ms.date: 09/26/2018
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e8b688cb1e4589eb076015d01dc4f0f0db14787e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 742361162c2f502bf479a9ab518054020617af93
+ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688316"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5572420"
 ---
 # <a name="generate-financial-reports"></a>Finanzberichte generieren
 
@@ -30,7 +29,7 @@ ms.locfileid: "4688316"
 
 Dieses Thema enthält allgemeine Informationen zun Generieren von Finanzberichten.
 
-Um einen Bericht zu generieren, öffnen Sie die Berichtsdefinition und klicken anschließend auf die Schaltfläche Generieren in der Symbolleiste. Das Fenster Berichtswarteschlangenstatus wird geöffnet und gibt den Ort des Berichts in der Warteschlange an. Standardmäßig wird der generierte Bericht in Web Viewer geöffnet.
+Öffnen Sie zum Generieren eines Berichts die Berichtsdefinition, und wählen Sie anschließend die Schaltfläche **Generieren** in der Symbolleiste aus. Die Seite **Berichtswarteschlangenstatus** wird geöffnet und gibt die Position Ihres Berichts in der Warteschlange an. Standardmäßig wird der generierte Bericht in Web Viewer geöffnet.
 
 Für die Erstellung von Berichten sind die folgenden Optionen verfügbar:
 
@@ -41,16 +40,26 @@ Wenn Sie einen Bericht generieren, werden die Optionen verwendet, die Sie auf de
 
 ## <a name="generate-a-financial-report"></a>Finanzbericht generieren
 
-Um einen Finanzbericht mit zu generieren, gehen Sie zu **Hauptbuch** \> **Abfragen und Berichte** \> **Finanzberichte**.
+Rufen Sie **Hauptbuch** \> **Abfragen und Berichte** \> **Finanzberichte**, um einen Finanzbericht mit zu generieren.
 
-- Wählen Sie einen Bericht, um den Bericht zu erstellen und klicken Sie auf **Erstellen**.
-- Fügen Sie das Feld **Daten berichten** und klicken sie auf **OK**.
+- Wählen Sie einen zu generierenden Bericht aus, und wählen Sie **Generieren** aus.
+- Fügen Sie das Feld **Berichtsdatum** aus, und klicken Sie auf **OK**.
 
 Nachdem der Bericht generiert wurde, ist der Bericht verfügbar zum Anzeigen im Abschnitt **Berichte** anzuzeigen.
 
 Sie können den Bericht **anzeigen** oder **löschen**.
 
-Um einen Bericht zu generieren, öffnen Sie **Berichtsdesigner**, und klicken Sie anschließend auf die Schaltfläche Generieren in der Symbolleiste. Das Fenster Berichtswarteschlangenstatus wird geöffnet und gibt den Ort des Berichts in der Warteschlange an. Standardmäßig wird der generierte Bericht in Web Viewer geöffnet.
+Öffnen Sie zum Generieren eines Berichts mithilfe des **Berichtsdesigners** die Berichtsdefinition, und wählen Sie anschließend die Schaltfläche **Generieren** in der Symbolleiste aus. Die Seite **Berichtswarteschlangenstatus** wird geöffnet und gibt die Position Ihres Berichts in der Warteschlange an. Standardmäßig wird der generierte Bericht in Web Viewer geöffnet.
+
+## <a name="report-groups"></a>Berichtsgruppen
+
+Berichtsgruppen sind eine effiziente Möglichkeit, mehrere Berichte gleichzeitig zu generieren. Angenommen Sie wissen, dass Ihre Benutzer zum Monatsende jeden Monat acht Berichte erstellen. Erstellen Sie eine Berichtsgruppe, und wählen Sie **Generieren** für die Berichtsgruppe aus. Die acht Berichte werden in einem Schritt generiert, und Sie müssen nicht für jeden der acht Berichte **Generieren** auswählen. Wenn die Berichte in der ausgewählten Berichtsgruppe generiert wurden, können Sie **Finanzberichte** (**Hauptbuch > Anfragen und Berichte > Finanzberichte**) aufrufen, um sich die einzelnen Berichte anzeigen zu lassen. Führen Sie folgende Schritte aus, um eine Berichtsgruppe einzurichten.
+
+1. Wählen Sie im Berichtsdesigner **Berichtsgruppen** aus. 
+2. Wählen Sie die vorhandenen Berichtsdefinitionen aus, die in Ihre Berichtsgruppe aufgenommen werden sollen. 
+3. Wählen Sie aus jedem der Berichte, die in die Gruppe aufgenommen werden sollen, die Einstellungen zum Überschreiben von Unternehmen, Details und Datum aus.
+   Wir empfehlen, für jeden Bericht die Optionen **Unternehmen**, **Periode**, **Jahr** und **Detailebene** einzustellen. 
+4. Speichern Sie die Berichtsgruppe.
 
 ## <a name="schedule-report-generation"></a>Planen der Berichtsgenerierung
 Viele Unternehmen verwenden einen Kernsatz von Berichten, die in Einklang mit ihren Geschäftsprozessen in geplanten Intervallen ausgeführt werden. Sie können festlegen, dass ein Bericht regelmäßig generiert wird, beispielsweise täglich, wöchentlich, monatlich oder jährlich. Sie können einen einzelnen Bericht oder eine Gruppe von Berichten, die mehrere Unternehmen umfasst, planen. Für jedes der Unternehmen, die z. B. in einer Berichtsbaumstruktur-Definition angegeben sind, müssen Anmeldeinformationen eingegeben werden. Wenn die Anmeldeinformationen nicht gültig sind, zeigt der Bericht nur die Informationen, für die Sie eine Zugriffsberechtigung haben, beispielsweise für das Unternehmen, bei dem Sie zu dem Zeitpunkt angemeldet sind. Die Ausgabeinformationen werden zuerst von der Berichtsgruppe und anschließend von den einzelnen Berichten gelesen.
@@ -62,36 +71,36 @@ Während Berichtszeitpläne erstellt und gespeichert werden, werden diese im Nav
 
 ### <a name="create-a-report-schedule"></a>Erstellen eines Berichtzeitplans
 
-1. Wählen Sie im Berichts-Designer im Menü Datei Neu und dann Berichtzeitplan. Das Dialogfeld Neuer Berichtzeitplan wird geöffnet.
-2. Unter Einstellungen wählen Sie einen individuellen Bericht oder eine Berichtsgruppe für den Zeitplan aus. Es sind nur Berichte oder Berichtsgruppen für das Unternehmen oder den Baustein verfügbar, bei dem Sie derzeit angemeldet sind.
-3. Aktivieren Sie das Kontrollkästchen Aktiv, um den Berichtszeitplan zu aktivieren. Nur der Ersteller des Berichts oder ein Administrator kann einen Berichtszeitplan aktivieren oder deaktivieren.
-4. Klicken Sie auf die Schaltfläche Berechtigungen, um die Unternehmensanmeldeinformationen einzugeben. Standardmäßig werden Ihre Anmeldeinformationen für das Unternehmen verwendet, bei dem Sie angemeldet sind. Sind andere Unternehmen enthalten, z. B. in Berichtsbaumstruktur-Definitionen, wählen Sie Gesonderte Anmeldeinformationen verwenden aus. Geben Sie dann die Anmeldeinformationen für die anderen im Berichtszeitplan enthaltenen Unternehmen ein. Sie können Windows-Authentifizierung auswählen oder für jedes Unternehmen einen Benutzernamen und ein Kennwort eingeben. Aktivieren Sie das Kontrollkästchen Anmeldeinformationen speichern, um die Anmeldeinformationen für diese Unternehmen zu speichern, und klicken Sie auf OK, um das Dialogfeld zu schließen.
-5. Unter Häufigkeit im Feld Wiederholung starten wählen Sie das Datum aus, an dem der Zeitplan zu starten ist. Standardmäßig wird das aktuelle Systemdatum des Clientcomputers ausgewählt.
-6. Wählen Sie im Feld Bericht ausführen unter die Uhrzeit für die Ausführung des Berichts aus. Wenn Sie eine Uhrzeit eingeben, die vor der aktuellen Systemzeit liegt, wird der Bericht am nächsten geplanten Datum ausgeführt.
-7. Geben Sie im Bereich Wiederholungsmuster an, wie oft der Bericht ausgeführt werden soll. Standardmäßig wird täglich mit einem Wert des Intervalls (Tage) von 1. ausgewählt. Andere Optionen wöchentlich, monatlich oder jährlich.
+1. Wählen Sie im Berichts-Designer im Menü **Datei** die Option **Neu** und dann **Berichtzeitplan** aus. Das Dialogfeld **Neuer Berichtzeitplan** wird geöffnet.
+2. Wählen Sie unter **Einstellungen** einen individuellen Bericht oder eine Berichtsgruppe für den Zeitplan aus. Es sind nur Berichte oder Berichtsgruppen für das Unternehmen oder den Baustein verfügbar, bei dem Sie derzeit angemeldet sind.
+3. Aktivieren Sie das Kontrollkästchen **Aktiv**, um den Berichtzeitplan zu aktivieren. Nur der Ersteller des Berichts oder ein Administrator kann einen Berichtszeitplan aktivieren oder deaktivieren.
+4. Wählen Sie die Schaltfläche **Berechtigungen** aus, um Unternehmens-Anmeldeinformationen einzugeben. Standardmäßig werden Ihre Anmeldeinformationen für das Unternehmen verwendet, bei dem Sie angemeldet sind. Wenn andere Unternehmen eingeschlossen sind, wie beispielsweise in den Berichtsbaumstruktur-Definitionen, wählen Sie **Gesonderte Anmeldeinformationen verwenden** und geben dann die Anmeldeinformationen für alle anderen Unternehmen ein, die im Berichtzeitplan enthalten sind. Sie können **Windows-Authentifizierung** auswählen oder einen Benutzernamen und ein Kennwort für jedes Unternehmen eingeben. Aktivieren Sie das Kontrollkästchen **Anmeldeinformationen speichern**, um die Anmeldeinformationen für diese Unternehmen zu speichern, und wählen Sie **OK** aus, um das Dialogfeld zu schließen.
+5. Wählen Sie unter **Häufigkeit** im Feld **Wiederholung starten** das Datum aus, an dem der Zeitplan zu starten ist. Standardmäßig wird das aktuelle Systemdatum des Clientcomputers ausgewählt.
+6. Wählen Sie im Feld **Bericht ausführen am** den Zeitpunkt aus, an dem der Bericht ausgeführt werden soll. Wenn Sie eine Uhrzeit eingeben, die vor der aktuellen Systemzeit liegt, wird der Bericht am nächsten geplanten Datum ausgeführt.
+7. Geben Sie im **Wiederholungsmuster**-Bereich an, wie oft der Bericht ausgeführt wird. Standardmäßig wird **Täglich** mit einem Intervallwert (Tage) von „1“ ausgewählt. Andere Optionen wöchentlich, monatlich oder jährlich.
 8. Wählen Sie im Bereich Wiederholungsbereich aus, wann die Berichtsgenerierung beendet werden soll.
 
-    - Kein Enddatum – Der Berichtszeitplan wird unendlich ausgeführt.
-    - Feste Anzahl von Vorgängen – Der Berichtszeitplan wird so häufig ausgeführt, wie angegeben, und dann deaktiviert.
-    - Ende bis – Der Berichtszeitplan wird am angegebenen Datum beendet.
+    - **Kein Enddatum** – Der Berichtzeitplan wird auf unbestimmte Zeit ausgeführt.
+    - **Anzahl der Vorkommen festlegen** – Der Berichtzeitplan wird so oft ausgeführt wie angegeben und dann deaktiviert.
+    - **Beenden zum** – Der Berichtzeitplan endet am angegebenen Datum.
 
-9. Klicken Sie auf der Symbolleiste auf Speichern. Geben Sie im Dialogfeld Speichern unter einen eindeutigen Namen und eine Beschreibung für den Berichtszeitplan ein.
+9. Wählen Sie **Speichern** aus. Geben Sie im Dialogfeld **Speichern unter** einen eindeutigen Namen und eine Beschreibung für den Berichtzeitplan ein.
 
 Zum Kopieren von Berichtszeitplänen müssen Sie die Rolle eines Designers oder Administrators haben. Auch wenn ein Administrator den Berichtszeitplan ändert, behält der Bericht die Anmeldeinformationen des Benutzers, der den Bericht erstellt hat.
 
 ### <a name="copy-a-report-schedule"></a>Kopieren eines Berichtzeitplans
 
-1. Im Berichts-Designer klicken Sie im Navigationsbereich auf Berichtzeitpläne und öffnen den zu kopierenden Bericht.
-2. Klicken Sie im Menü Datei auf Speichern unter, und geben Sie dann im Dialogfeld Speichern unter einen neuen Namen und eine Beschreibung für den Zeitplan ein. Klicken Sie auf OK. Daraufhin erscheint der neue Zeitplan im Navigationsbereich.
-3. Ändern Sie im neuen Zeitplan die Felder und die Informationen nach Bedarf, und klicken Sie anschließend in der Symbolleiste auf Speichern, oder klicken Sie auf Speichern im Menü Datei.
+1. Wählen Sie im Navigationsbereich des Berichts-Designers **Berichtzeitpläne** aus, und öffnen Sie den zu kopierenden Bericht.
+2. Wählen Sie im Menü **Datei** die Option **Speichern unter** aus, und geben Sie dann einen neuen Namen und eine Beschreibung für den Zeitplan im Dialogfeld **Speichern unter** ein. Wählen Sie **OK** aus, und der neue Zeitplan wird im Navigationsbereich angezeigt.
+3. Ändern Sie im neuen Zeitplan die Felder und die Informationen nach Bedarf, und wählen Sie anschließend in der Symbolleiste **Speichern** oder **Speichern** im Menü **Datei** aus.
 
 Um einen Berichtszeitplan zu löschen, müssen Sie der Besitzer des Berichtszeitplans oder Administrator sein.
 
 ### <a name="delete-a-report-schedule"></a>Löschen eines Berichtzeitplans
 
-1. Klicken Sie im Berichts-Designer auf Berichtzeitpläne im Navigationsbereich.
-2. Wählen Sie den zu löschenden Berichtszeitplan aus, und klicken Sie dann auf Löschen, oder drücken Sie die ENTF-TASTE.
-3. Klicken Sie im Dialogfeld zur Löschbestätigung auf Ja, um den Berichtszeitplan dauerhaft zu löschen. Wenn Sie nicht über die Berechtigung verfügen, den Zeitplan zu löschen, wird eine Meldung angezeigt und der Bericht wird nicht gelöscht.
+1. Wählen Sie im Berichts-Designer **Berichtzeitpläne** im Navigationsbereich aus.
+2. Wählen Sie den Berichtzeitplan aus, der gelöscht werden soll, und wählen Sie anschließend **Löschen** aus, oder drücken Sie die **Löschen**-Taste.
+3. Wählen Sie im Dialogfeld zum Bestätigen des Löschens **Ja** aus, um den Berichtzeitplan dauerhaft zu löschen. Wenn Sie nicht über die Berechtigung verfügen, den Zeitplan zu löschen, wird eine Meldung angezeigt und der Bericht wird nicht gelöscht.
 
 ### <a name="credentials-and-report-schedules"></a>Anmeldeinformationen und Berichtszeitpläne
 
@@ -103,7 +112,7 @@ Beispiel: Ein Benutzer meldet sich mit Anmeldeinformationen und Kennwort am Unte
 - Ein Bericht in einer Berichtsgruppe wurde geändert.
 - Einer Berichtsgruppe wurde ein neuer Bericht für ein weiteres Unternehmen hinzugefügt.
 
-Klicken Sie zum Fortfahren auf Berechtigungen im Dialogfeld Berichtzeitplanung, und geben Sie dann die entsprechenden Anmeldeinformationen ein.
+Wählen Sie zum Fortfahren **Berechtigungen** im Dialogfeld **Berichtzeitplanung** aus, und geben Sie dann die entsprechenden Anmeldeinformationen ein.
 
 ## <a name="missing-account-analysis-feature"></a>Analysefunktion für fehlende Konten
 Sie können nach Finanzkonten und Dimensionen suchen, die möglicherweise in allen Zeilendefinitionen, Berichtsbaumstruktur-Definitionen und Berichtsdefinitionen in einer Bausteingruppe fehlen. Dies ist hilfreich, wenn Sie mehrere Konten oder Bausteine während eines kurzen Zeitraum erstellen oder aktualisieren und Sie sicherstellen möchten, dass alle neuen Informationen in den Berichten enthalten sind.
@@ -120,24 +129,24 @@ Bei Berichten mit Wertebereichen ist es weniger wahrscheinlich, dass Konten fehl
 
 ### <a name="run-missing-account-analysis"></a>Analyse für fehlende Konten ausführen
 
-1. Im Berichts-Designer klicken Sie auf Extras und anschließend Analyse für fehlende Konten.
-2. Wählen Sie im Feld Unternehmensfilter ein Unternehmen aus, für das die Ergebnisse gefiltert werden sollen, oder wählen Sie Alle (kein Filter) aus, um die Ergebnisse für alle verfügbaren Unternehmen anzuzeigen.
-3. Wählen Sie im Feld Dimensionsfilter eine Dimension aus, für die die Ergebnisse gefiltert werden sollen, oder wählen Sie Alle (kein Filter) aus, um alle Dimensionsinformationen für alle verfügbaren Dimensionen anzuzeigen.
-4. Wählen Sie im Feld Gruppieren nach eine Option für die Sortierung der Ergebnisse aus. Sie können die Ergebnisse nach dem betroffenen Baustein oder nach Dimensions- und Wertsätzen sortieren.
+1. Wählen Sie im Berichts-Designer **Tools** und anschließend **Analyse für fehlende Konten** aus.
+2. Wählen Sie im Feld **Unternehmensfilter** ein Unternehmen aus, für das Ergebnisse gefiltert werden sollen, oder wählen Sie **Alle (kein Filter)** aus, um die Ergebnisse aller verfügbaren Unternehmen anzuzeigen.
+3. Wählen Sie im Feld **Dimensionsfilter** eine Dimension aus, um die Ergebnisse zu filtern, oder wählen Sie **Alle (kein Filter)**, um alle Dimensionsinformationen für alle verfügbaren Dimensionen anzuzeigen.
+4. Wählen Sie im Feld **Gruppieren nach** die geeignete Option zum Sortieren der Ergebnisse aus. Sie können die Ergebnisse nach dem betroffenen Baustein oder nach Dimensions- und Wertsätzen sortieren.
 5. Überprüfen Sie die angezeigten Ergebnisse. Wenn Sie im oberen Bereich ein Element auswählen, werden im unteren Bereich zusätzliche Informationen zu der Ausnahme angezeigt. Dies umfasst zugehörige Dimensionen, Werte und Berichte.
-6. Um den betreffenden Artikel zu öffnen, klicken Sie auf das zugeordnete Symbol im Listenbereich, oder klicken mit der rechten Maustaste auf den Artikel und wählen Öffnen. Um mehrere Artikel auszuwählen, halten Sie während des Auswählens im unteren Bereich die STRG-Taste gedrückt.
-7. Werden Werte, Bausteine oder Berichte zurückgegeben, die nicht in die Analyse einbezogen werden sollen, klicken Sie mit der rechten Maustaste auf den Artikel und wählen Ausschließen, oder Sie aktivieren das Kontrollkästchen Ausschließen neben dem Artikel, um den Artikel aus der Liste zu entfernen. Ausgeschlossene Artikel sind nicht enthalten, wenn die Liste aktualisiert wird. Halten Sie zum Auswählen mehrerer Elemente die STRG-Taste gedrückt, und wählen Sie die Elemente im unteren Bereich aus. Wenn Sie alle Elemente inklusive aller Ergebnisse, die Sie zuvor aus der Analyse ausgeschlossen haben, anzeigen möchten, aktivieren Sie das Kontrollkästchen Ausgeschlossene Bausteine und Werte anzeigen, und klicken Sie dann auf Aktualisieren.
-8. Klicken Sie auf Aktualisieren, um bearbeitete Ausnahmen zu aktualisieren. Klicken Sie auf Ja, um eine vollständige Aktualisierung aller Ergebnisse durchzuführen, oder auf Nein, um eine teilweise Aktualisierung der bearbeiteten Elemente durchzuführen.
+6. Wählen Sie das zugeordnete Symbol im Listenbereich aus, oder klicken mit der rechten Maustaste auf das Element, und wählen Sie **Öffnen** aus, um das betreffende Element zu öffnen. Um mehrere Elemente auszuwählen, halten Sie während des Auswählens im unteren Bereich die **STRG**-Taste gedrückt.
+7. Werden Werte, Bausteine oder Berichte zurückgegeben, die nicht in die Analyse einbezogen werden sollen, klicken Sie mit der rechten Maustaste auf den Artikel und wählen **Ausschließen** aus, oder Sie aktivieren das Kontrollkästchen **Ausschließen** neben dem Artikel, um den Artikel aus der Liste zu entfernen. Ausgeschlossene Artikel sind nicht enthalten, wenn die Liste aktualisiert wird. Um mehrere Elemente auszuwählen, halten Sie während des Auswählens im unteren Bereich die **STRG**-Taste gedrückt. Wenn Sie alle Elemente inklusive aller Ergebnisse, die Sie zuvor aus der Analyse ausgeschlossen haben, anzeigen möchten, aktivieren Sie das Kontrollkästchen **Ausgeschlossene Bausteine und Werte anzeigen**, und wählen Sie dann **Aktualisieren** aus.
+8. Wählen Sie **Aktualisieren** aus, um Ausnahmen zu aktualisieren, die Sie adressiert haben. Wählen Sie **Ja** aus, um alle Ergebnisse zu aktualisieren, oder wählen Sie für eine teilweise Aktualisierung der betroffenen Elemente **Nein** aus.
 
     > [!NOTE]
     > Das Formular wird beim Öffnen automatisch aktualisiert, es sei denn, es wurde in den letzten 15 Minuten bereits geöffnet.
 
-9. Klicken Sie nach der Problembehebung auf OK, um das Dialogfeld zu schließen.
+9. Wählen Sie nach der Problembehebung **OK** aus, um das Dialogfeld zu schließen.
 
 ## <a name="keyboard-shortcuts-for-missing-account-analysis"></a>Tastenkombinationen für eine Analyse für fehlende Konten
 Wenn Sie eine Analyse für fehlende Konten ausführen, sind die folgenden Tastenkombinationen verfügbar.
 
-| Ergebnis                           | Verwenden Sie diese Tastenkombination |
+| Aktion                           | Drücken Sie folgende Taste: . |
 |--------------------------------------|----------------------------|
 | Filtern nach Unternehmen                    | ALT+C                      |
 | Nach Dimension filtern                  | ALT+D                      |

@@ -1,6 +1,6 @@
 ---
 title: Schnellansichtsmodul
-description: Dieses Thema enthält Schnellansichtsmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+description: Dieses Thema enthält Schnellansichtsmodule und es wird beschrieben, wie diese Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
 ms.date: 01/28/2021
@@ -16,19 +16,19 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 7e8244a06c515029b559b2061d9a25c7355e9e14
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 07fbf8d4115561808b7c61489b343e1c72dd1b6d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097051"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5243792"
 ---
 # <a name="quick-view-module"></a>Schnellansichtsmodul
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dieses Thema enthält Schnellansichtsmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+Dieses Thema enthält Schnellansichtsmodule und es wird beschrieben, wie diese Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
 Mit dem Schnellansichtsmodul können Benutzer Produktinformationen schnell anzeigen, wenn sie Produkte auf einer Listenseite durchsuchen und ein oder mehrere Produkte über die Listenseite zum Warenkorb hinzufügen, ohne zur Produktdetailseite (PDP) wechseln zu müssen. Das Schnellansichtsmodul bietet einen Überblick über die Produktinformationen, die Benutzer benötigen, um eine Entscheidung zum Hinzufügen zum Warenkorb zu treffen. Es enthält auch einen Link zum PDP, sodass Benutzer zusätzliche Produktdetails und Kaufoptionen anzeigen können.
 

@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 34f4e22f571569a6276f8a801d33c6afef8480dc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ff97aaf22cfbac9ce68cf0436c6caec4e1b69bd2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979562"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252220"
 ---
 # <a name="vendor-payments-workspace"></a>Arbeitsbereich für Kreditorenzahlungen
 
 [!include [banner](../includes/banner.md)]
 
-Im Arbeitsbereich für **Kreditorenzahlungen** werden Informationen angezeigt, die zum Verarbeiten von Kreditorenzahlungen dienen. Der Arbeitsbereich umfasst eine Ansicht **meine Arbeit** und eine Seite **Analyse**. Die Ansicht **Meine Arbeit** zeigt zusammenfassende Kacheln, Lieferantentransaktionsrater und zugehörige Kreditoreninformationen. Die Seite **Analyse** verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Lieferantenzahlungen anzuzeigen.
+Im Arbeitsbereich für **Kreditorenzahlungen** werden Informationen angezeigt, die zum Verarbeiten von Kreditorenzahlungen dienen. Der Arbeitsbereich umfasst eine Ansicht **meine Arbeit** und eine Seite **Analyse**. Die Ansicht **Meine Arbeit** zeigt zusammenfassende Kacheln, Lieferantentransaktionsrater und zugehörige Kreditoreninformationen. Die Seite **Analyse** verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Kreditorenzahlungen anzuzeigen.
 
 ## <a name="setup-needed-to-view-power-bi-content"></a>Einrichtung erforderlich, um Power BI-Inhalt anzuzeigen
 

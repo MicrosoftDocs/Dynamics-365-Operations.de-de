@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: bb4a426bb54ee21197f9954d946d60ea55f5eb76
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104386"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592621"
 ---
 # <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Das Add-On für die elektronische Rechnungsstellung in Regulatory Configuration Services (RCS) konfigurieren
 
@@ -64,7 +64,6 @@ Die folgende Tabelle zeigt die Funktionen für die elektronische Rechnungsstellu
 | Belgien        | Elektronische Rechnungen für Belgien (BE)      | Verkaufs- und Projektrechnungen |
 | Brasilien         | Brasilianisches NF-e (BR)                  | Steuerdokumentmodell 55, Korrekturschreiben, Stornierungen und Verwerfungen |
 | Brasilien         | Brasilianisches NFS-e ABRASF Curitiba (BR) | Dienst Steuerdokumente |
-| Brasilien         | Brasilianisches NFS-e São Paulo (BR)       | Dienst Steuerdokumente |
 | Dänemark        | Elektronische Rechnungen für Dänemark (DK)       | Verkaufs- und Projektrechnungen |
 | Ägypten          | Elektronische Rechnungen für Ägypten (EG) | Verkaufs- und Projektrechnungen |
 | Estland        | Elektronische Rechnungen für Estland (EE)     | Verkaufs- und Projektrechnungen |
@@ -119,10 +118,6 @@ Die folgenden Listen zeigen die ER-Formatkonfigurationen, die für die Funktione
 
 - NFS-e ABRASF Curitiba (BR)
 - NFS-e ABRASF-Abfrage Curitiba (BR)
-
-#### <a name="brazilian-br-nfs-e-nfs-e-so-paulo-city"></a>Brasilianisches (BR) NFS-e: São Paulo (Stadt)
-
-- NFS-e Sao Paulo (BR)
 
 #### <a name="danish-dk-electronic-invoice-sales-and-project-invoices-for-denmark"></a>Dänische (DK) elektronische Rechnung: Verkaufs- und Projektrechnungen für Dänemark
 
@@ -210,7 +205,7 @@ In der folgenden Tabelle sind die verfügbaren Aktionen aufgeführt, und ob sie 
 | Brasilianischen SEFAZ-Dienst aufrufen                  | Integration in den brasilianischen SEFAZ-Dienst zur Übermittlung von Steuerdokumenten.       | Vorschau           |
 | Mexikanischen PAC-Dienst aufrufen                      | Integration in den mexikanischen PAC-Dienst zur CFDI-Übermittlung.                      | Vorschau           |
 | Verarbeiten der Antwort                              | Analysieren Sie die vom Webdienstaufruf erhaltene Antwort.                     | Allgemein verfügbar  |
-| MS Power Automate verwenden                         | Integration in den in Microsoft Power Automate erstellten Flow.                       | Vorschau           |
+| MS Power Automate verwenden                         | Integrieren Sie in den in Microsoft Power Automate eingebauten Flow.                       | Vorschau           |
 
 ## <a name="configuration-providers"></a>Konfigurationsanbieter
 
