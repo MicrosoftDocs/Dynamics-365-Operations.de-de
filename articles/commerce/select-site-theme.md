@@ -1,6 +1,6 @@
 ---
 title: Auswählen eines Sitedesigns
-description: In diesem Thema wird beschrieben, wie Sie das Design Ihrer Site in Microsoft Dynamics 365 Commerce festlegen oder ändern.
+description: In diesem Thema wird beschrieben, wie Sie das Design Ihrer Website in Microsoft Dynamics 365 Commerce festlegen oder ändern.
 author: bicyclingfool
 manager: annbe
 ms.date: 09/15/2020
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 66fcff9fa18d3c98e022ef91d15903fbba8b6b61
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e3f7f38a0b4b1e0be85d619a1c133d1555706d93
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982401"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254720"
 ---
-# <a name="select-a-site-theme"></a>Auswählen eines Sitedesigns
+# <a name="select-a-site-theme"></a>Sitedesign auswählen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie das Design Ihrer Site in Microsoft Dynamics 365 Commerce festlegen oder ändern.
+In diesem Thema wird beschrieben, wie Sie das Design Ihrer Website in Microsoft Dynamics 365 Commerce festlegen oder ändern.
 
 ## <a name="overview"></a>Übersicht
 

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 285e9d2d184a899f1ffa502d59a853ba83cda491
-ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
+ms.openlocfilehash: ca0a7233004522de2af7281416169f0393feeb11
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118680"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260646"
 ---
 # <a name="product-dimensions"></a>Produktdimensionen
 
@@ -106,7 +106,7 @@ Achten Sie beim Testen Ihrer Lösungen auf Kompatibilität mit der Dimension „
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Karten** – Wenn Karten die Lagerungsdimensionen verwenden, muss die entsprechende Beziehungszuordnung zu diesen Karten aktualisiert werden, sodass sie die Dimension „Version“ enthalten. Achten Sie in den erweiterten Modell‑ oder Tabellenerweiterungen auf Tabellen, in denen die Felder Lagerungsdimensionen enthalten.
-1. **Microsoft Dynamics 365 Commerce-Funktionalität** – Nach dem Aktivieren wird die Dimension „Version“ im gesamten Commerce-spezifischen Code in Dynamics 365 Supply Chain Management angezeigt. Die Dimension „Version“ wird jedoch noch nicht von der Commerce-Kanaldatenbank oder in den Verkaufsstellen POS- bzw. E-Commerce-Anwendungen unterstützt. Diese Commerce-spezifischen Anwendungen unterstützen keine Benutzer, die Bestand nach Versionsdimension verkaufen/versenden oder zurückgeben/empfangen. Suchfunktionen für die Verfügbarkeit von Bestand unterscheiden keinen Bestand nach Versionsdimension in Commerce-Apps. Dieses Verhalten ähnelt dem aktuellen Verhalten der Konfigurationsdimension in Commerce.
+1. **Microsoft Dynamics 365 Commerce-Funktionalität:** Nachdem sie eingeschaltet ist, erscheint die Versionsdimension im gesamten Commerce-spezifischen Code in Dynamics 365 Supply Chain Management. Die Dimension „Version“ wird jedoch noch nicht von der Commerce-Kanaldatenbank oder in den Verkaufsstellen POS- bzw. E-Commerce-Anwendungen unterstützt. Diese Commerce-spezifischen Anwendungen unterstützen keine Benutzer, die Bestand nach Versionsdimension verkaufen/versenden oder zurückgeben/empfangen. Suchfunktionen für die Verfügbarkeit von Bestand unterscheiden keinen Bestand nach Versionsdimension in Commerce-Apps. Dieses Verhalten ähnelt dem aktuellen Verhalten der Konfigurationsdimension in Commerce.
 
 #### <a name="turn-on-the-version-dimension"></a>Die Dimension „Version“ aktivieren
 
