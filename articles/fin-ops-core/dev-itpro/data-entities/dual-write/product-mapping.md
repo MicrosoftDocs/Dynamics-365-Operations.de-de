@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 20203a342b2bead4eb211597f4b73bbf35477a03
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: b46e49ec3510c93383216fdffeca2793a9076872
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115679"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560458"
 ---
 # <a name="unified-product-experience"></a>Einheitliche Produktumgebung
 
@@ -92,9 +91,13 @@ Da das Produkt als SKU dargestellt wird, können die Konzepte von eindeutig iden
 
 Wenn die Dual-Write-Funktionalität aktiviert ist, werden die Produkte aus Finance and Operations in anderen Dynamics 365-Produkten im Zustand **Entwurf** synchronisiert. Sie werden der ersten Preisliste mit derselben Währung hinzugefügt. Das bedeutet, sie werden der ersten Preisliste in einer Dynamics 365-App hinzugefügt, die mit der Währung Ihrer juristischen Tabelle übereinstimmt, in der das Produkt in einer Finance and Operations-App freigegeben wird. Wenn für die angegebene Währung keine Preisliste vorhanden ist, wird automatisch eine Preisliste erstellt und das Produkt dieser zugewiesen. 
 
+Die aktuelle Implementierung der Plugins für duales Schreiben, die der Einheit die Standardpreisliste zuordnet, nach der mit der Finance and Operations-App verknüpften Währung sucht und die erste Preisliste in der Kundenbindungs-App mithilfe alphabetischer Sortierung der Preislistennamen findet. Wenn Sie mehrere Preislisten für eine Währung haben und eine Standardpreisliste für diese Währung festlegen möchten, müssen Sie den Preislistennamen auf einen Namen aktualisieren, der in der alphabetischen Reihenfolge früher erscheint als alle anderen Preislisten derselben Währung.
+
 Produkte aus Finance and Operations-Apps werden standardmäßig mit anderen Dynamics 365-Apps im Status **Entwurf** synchronisiert. Um das Produkt mit dem Status **Aktiv** zu synchronisieren, können Sie es direkt in Auftragsangeboten verwenden, beispielsweise muss die folgende Einstellung ausgewählt werden. Wechseln Sie dazu zur Registerkarte **System > Verwaltung > Systemverwaltung > Systemeinstellungen > Verkauf**, und wählen Sie **Produkte im Status „Aktiv“ erstellen = ja** aus. 
 
 Wenn Produkte synchronisiert werden, müssen Sie einen Wert in das Feld **Verkaufseinheit** in der Finance and Operations-App eingeben, weil es in Sales ein Pflichtfeld ist.
+
+Die Erstellung von Produktfamilien aus Dynamics 365 Sales wird bei der Synchronisierung von Produkten über duales Schreiben nicht unterstützt.
 
 Die Synchronisierung der Produkte erfolgt von den Finance and Operations-Apps nach Dataverse. Das bedeutet, dass die Werte in den Spalten der Produkttabelle in Dataverse zwar geändert werden können, die Werte beim Auslösen der Synchronisierung (durch Ändern einer Produktspalte in einer Finance and Operations-App) in Dataverse jedoch überschrieben werden. 
 

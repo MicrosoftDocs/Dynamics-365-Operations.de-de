@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 10.0.09
-ms.openlocfilehash: 3355c3bced950f65964b124fee553d8c5b53c6b0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a6b6a2e4bc3c0eca8185f501121d9d1ba1b4e063
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679581"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5561973"
 ---
 # <a name="power-bi-destination"></a>Power BI-Ziel
 
 [!include [banner](../includes/banner.md)]
 
-Sie können ein Microsoft Power BI-Ziel für jede Ordner- oder Datei-Komponente eines ER-Formats (Electronic Reporting) konfigurieren, das zum Generieren ausgehender Dokumente konfiguriert ist. Basierend auf der Einstellung des Ziels wird ein generiertes Dokument in einem zuvor konfigurierten SharePoint-Ordner gespeichert.
+Sie können ein Microsoft Power BI-Ziel für jede Ordner- oder Datei-Komponente eines elektronischen Berichterstellungsformats (EB) konfigurieren, das zum Generieren ausgehender Dokumente konfiguriert ist. Basierend auf der Einstellung des Ziels wird ein generiertes Dokument in einem zuvor konfigurierten SharePoint-Ordner gespeichert.
 
-Setzen Sie **Aktiviert** auf **Ja**, um Ihre ER-Konfiguration zu verwenden, um die Übertragung von Daten Ihrer Dynamics 365 Finance-Instance an Microsoft Power BI-Services zu veranlassen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurden muss. Weitere Informationen finden Sie unter [Konfigurieren elektronischer Berichterstattung (EB), um Daten in Power BI einzubeziehen](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+Stellen Sie **Aktiviert** auf **Ja** ein, um Ihre EB-Konfiguration zur Übertragung von Daten aus Ihrer Dynamics 365 Finance-Instanz an Microsoft Power BI-Services zu verwenden. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurden muss. Weitere Informationen finden Sie unter [Konfigurieren elektronischer Berichterstattung (EB), um Daten in Power BI einzubeziehen](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 [![Zieleinstellungen-Seite](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)
 

@@ -3,7 +3,7 @@ title: Mail-Vorlagen für Transaktionsereignisse erstellen
 description: In diesem Thema wird beschrieben, wie Sie E-Mail-Vorlagen für Transaktionsereignisse in Microsoft Dynamics 365 Commerce erstellen, hochladen und konfigurieren.
 author: bicyclingfool
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 245ca998ef3e6d172df3525f06d7901f3f41b650
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 756e2a64ef4c33c347106968eb6bc79a413c3ff7
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000783"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555244"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Mail-Vorlagen für Transaktionsereignisse erstellen
 
@@ -39,7 +39,7 @@ Bevor Sie ein bestimmtes Transaktionsereignis einer E-Mail-Vorlage zuordnen kön
 
 Führen Sie folgende Schritte aus, um eine E-Mail-Vorlage zu erstellen:
 
-1. Gehen Sie in der Commerce-Zentrale zu **E-Mail-Vorlagen der Organisation**, die unter **Einzelhandel und Handel \> Einrichtung des Hauptsitzes \> E-Mail-Vorlagen der Organisation** oder **Organisationsverwaltung \> Installieren \> E-Mail-Vorlagen der Organisation** sind.
+1. Gehen Sie in der Commerce-Zentrale zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Organisations-E-Mail-Vorlagen** oder **Organisationsverwaltung \> Einrichten \> Organisations-E-Mail-Vorlagen**.
 1. Wählen Sie **Neu** aus.
 1. Unter **Allgemeines** setzen Sie die folgenden Felder:
 
@@ -78,28 +78,29 @@ Hier ist ein Beispiel.
 
 Die folgenden Platzhalter rufen Daten ab und zeigen sie an, die auf Kundenauftragsebene definiert sind (im Gegensatz zur Kundenzeilenebene).
 
-| Platzhaltername    | Platzhalterwert                                                |
-|---------------------|------------------------------------------------------------------|
-| customername        | Der Name des Debitors, der die Bestellung platziert hat.                   |
-| salesid             | Die Auftragskennung des Auftrags.                                       |
-| deliveryaddress     | Die Lieferadresse für versandte Bestellungen.                         |
-| customeraddress     | Die Debitorenadresse.                                     |
-| deliverydate        | Das Lieferdatum.                                               |
-| shipdate            | Das Versanddatum.                                                   |
-| modeofdelivery      | Der Versandmodus der Bestellung.                                  |
-| Zuschläge             | Die Gesamtkosten für die Bestellung.                                 |
-| Steuer                 | Die Gesamtsteuern für die Bestellung.                                     |
-| Gesamt               | Der Gesamtbetrag für die Bestellung.                                  |
-| ordernetamount      | Der Gesamtbetrag für die Bestellung abzüglich der Gesamtsteuer.             |
-| Rabatt            | Die Gesamtrabatt für die Bestellung.                                |
-| storename           | Der Name des Shops, bei dem die Bestellung platziert wurde.                |
-| storeaddress        | Die Adresse des Shops, der die Bestellung platziert hat.                  |
-| storeopenfrom       | Die Öffnungszeiten des Shops, der die Bestellung platziert hat.             |
-| storeopento         | Die Schließzeiten des Shops, der die Bestellung platziert hat.             |
-| pickupstorename     | Der Name des Shops, bei dem die Bestellung abgeholt wird.         |
-| pickupstoreaddress  | Die Adresse des Shops, bei dem die Bestellung abgeholt wird.      |
-| pickupopenstorefrom | Die Öffnungszeiten des Shops, bei dem die Bestellung abgeholt wird. |
-| pickupopenstoreto   | Die Schließzeiten des Shops, bei dem die Bestellung abgeholt wird. |
+| Platzhaltername     | Platzhalterwert                                            |
+| -------------------- | ------------------------------------------------------------ |
+| customername         | Der Name des Debitors, der die Bestellung platziert hat.               |
+| salesid              | Die Auftragskennung des Auftrags.                                   |
+| deliveryaddress      | Die Lieferadresse für versandte Bestellungen.                     |
+| customeraddress      | Die Debitorenadresse.                                 |
+| customeremailaddress | Die E-Mail-Adresse, die der Kunde an der Kasse eingegeben hat.     |
+| deliverydate         | Das Lieferdatum.                                           |
+| shipdate             | Das Versanddatum.                                               |
+| modeofdelivery       | Der Versandmodus der Bestellung.                              |
+| Zuschläge              | Die Gesamtkosten für die Bestellung.                             |
+| Steuer                  | Die Gesamtsteuern für die Bestellung.                                 |
+| Gesamt                | Der Gesamtbetrag für die Bestellung.                              |
+| ordernetamount       | Der Gesamtbetrag für die Bestellung abzüglich der Gesamtsteuer.         |
+| Rabatt             | Die Gesamtrabatt für die Bestellung.                            |
+| storename            | Der Name des Shops, bei dem die Bestellung platziert wurde.            |
+| storeaddress         | Die Adresse des Shops, der die Bestellung platziert hat.              |
+| storeopenfrom        | Die Öffnungszeiten des Shops, der die Bestellung platziert hat.         |
+| storeopento          | Die Schließzeiten des Shops, der die Bestellung platziert hat.         |
+| pickupstorename      | Der Name des Shops, bei dem die Bestellung abgeholt wird.     |
+| pickupstoreaddress   | Die Adresse des Shops, bei dem die Bestellung abgeholt wird.  |
+| pickupopenstorefrom  | Die Öffnungszeiten des Shops, bei dem die Bestellung abgeholt wird. |
+| pickupopenstoreto    | Die Schließzeiten des Shops, bei dem die Bestellung abgeholt wird. |
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Auftragspositionsplatzhalter (Verkaufspositionsebene)
 
@@ -169,11 +170,8 @@ Hier ist ein Beispiel.
 
 Belege können per E-Mail an Kunden gesendet werden, die an einer Verkaufsstelle (POS) einkaufen. Im Allgemeinen sind die Schritte zum Erstellen der E-Mail-Belegvorlage dieselben wie die Schritte zum Erstellen von Vorlagen für andere Transaktionsereignisse. Die folgenden Änderungen sind jedoch erforderlich:
 
-- Die E-Mail-Kennung der E-Mail-Vorlage muss **emailRecpt** lauten.
-- Der Text der Quittung wird mithilfe des **%message%**-Platzhalters in die E-Mail eingefügt. Um sicherzustellen, dass der Belegtext korrekt gerendert wird, umgeben Sie **%message%**-Platzhalter mit den HTML-Tags **&lt;pre&gt;** und **&lt;/pre&gt;**.
-- Zeilenumbrüche im HTML-Code für Kopf- und Fußzeile der E-Mail werden in **&lt;br /&gt;**-HTML-Tags konvertiert, damit der Belegkörper korrekt gerendert wird. Um unerwünschte vertikale Leerzeichen in Ihren Quittungs-E-Mails zu entfernen, entfernen Sie Zeilenumbrüche an allen Stellen im HTML, an denen keine vertikalen Leerzeichen erforderlich sind.
-
-Weitere Informationen über die Konfiguration von E-Mail-Belegen finden Sie unter [Einrichten von E-Mail-Bons](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
+- Der Text der Quittung wird mithilfe des **%message%**-Platzhalters in die E-Mail eingefügt. Um sicherzustellen, dass der Belegtext korrekt gerendert wird, umgeben Sie den **%message%**-Platzhalter mit den HTML-Tags **&lt;pre&gt;** und **&lt;/pre&gt;**.
+- Mit dem Platzhalter **%receiptid%** kann ein QR-Code oder ein Barcode angezeigt werden, der die Beleg-ID darstellt. (QR-Codes und Barcodes werden dynamisch generiert und von einem Drittanbieter bereitgestellt.) Weitere Informationen zum Anzeigen eines QR-Codes oder Barcodes in einer per E-Mail gesendeten Quittung finden Sie unter [Transaktions- und Quittungs-E-Mails einen QR-Code oder Barcode hinzufügen](add-qr-code-barcode-email.md).
 
 ## <a name="upload-the-email-html"></a>Laden Sie den E-Mail-HTML-Code hoch
 
