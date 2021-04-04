@@ -3,7 +3,7 @@ title: Elektronische Rechnungen in Finance und Supply Chain Management ausstelle
 description: In diesem Thema wird erläutert, wie elektronische Rechnungen in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management über das Add-On für die elektronische Rechnungsstellung ausgestellt werden.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/26/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 187f5a20d088b4fcd7af2a6576357a69c2efc2c6
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 099ebb56710e920f7b1453f32f23f59a80486ebf
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104384"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5486952"
 ---
 # <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Elektronische Rechnungen in Finance und Supply Chain Management ausstellen
 
@@ -35,25 +35,35 @@ In diesem Thema wird erläutert, wie elektronische Rechnungen in Microsoft Dynam
 
 ## <a name="feature-activation"></a>Funktionsaktivierung
 
-Um mit der Ausstellung elektronischer Rechnungen über das Add-On für die elektronische Rechnungsstellung zu beginnen, muss die Funktionsreferenz in Finance und Supply Chain Management aktiviert werden.
+Um elektronische Rechnungen über das Add-On für die elektronische Rechnungsstellung auszustellen, müssen Sie die Funktion in Finance und Supply Chain Management aktivieren.
 
-Jede Funktionsreferenz entspricht einer bestimmten Funktion für die elektronische Rechnungsstellung, die den Anforderungen eines Landes/einer Region an die elektronische Rechnungsstellung entspricht.
+Jede Funktion entspricht einer bestimmten Funktion für die elektronische Rechnungsstellung, die den Anforderungen eines Landes/einer Region an die elektronische Rechnungsstellung entspricht.
 
-Die folgende Tabelle zeigt die Liste der Funktionsreferenzen an, die das Add-On für die elektronische Rechnungsstellung unterstützt.
+Die folgende Tabelle zeigt die Liste der Funktionen an, die das Add-On für die elektronische Rechnungsstellung unterstützen kann.
 
-| Funktionsreferenz | Name                                              | Land/Region |
-|-------------------|---------------------------------------------------|----------------|
-| BR-00053          | NF-e – elektronische Rechnung Brasilien       | Brasilien         |
-| BR-00095          | NFS-e – elektronische Rechnungen Brasilien               | Brasilien         |
-| DK-00001          | Elektronische Rechnungsstellung für den öffentlichen Sektor (OIOUBL) – DK    | Dänemark        |
-| EG-00008          | Elektronische Rechnungsstellung für Ägypten                             | Ägypten          |
-| ES-00025          | Elektronische Rechnung an den öffentlichen Sektor           | Spanien          |
-| EUR-00023         | Elektronische Rechnungsstellung der Europäischen Union für den öffentlichen Sektor       | Europa         |
-| ITA-00036         | IT – elektronische Rechnungsstellung für den öffentlichen Sektor (FatturaPA) | Italien          |
-| MX-00010          | E-Rechnungsstellung CFDI                                  | Mexiko         |
-| MX-00016          | Elektronische Rechnungsstellung CFDI – Stornierungsvorgang           | Mexiko         |
+| Name                                              | Land/Region |
+|---------------------------------------------------|----------------|
+|Elektronische Rechnung Österreich                        |Österreich         |
+|Elektronische Rechnung Belgien                         |Belgien         |
+|NF-e – Behördliche E-Rechnungen Brasilien       |Brasilien          |
+|NFS-e – elektronische Rechnung für brasilianischen Dienst (Stadt)|Brasilien          |
+|Elektronische Rechnung Dänemark                          |Dänemark         |
+|Elektronische Rechnung Ägypten                        |Ägypten           |
+|Elektronische Rechnung Estland                        |Estland         |
+|Elektronische Rechnung Finnland                         |Finnland         |
+|Elektronische Rechnung Frankreich                          |Frankreich          |
+|Elektronische Rechnung Deutschland                          |Deutschland         |
+|PEPPOL – globale elektronische Rechnung                 |Global          |
+|Elektronische Rechnung Italien                         |Italien           |
+|CFDI – Elektronische Rechnung Mexiko                  |Mexiko          |
+|Elektronische Rechnung Niederlande                           |Niederlande     |
+|Elektronische Rechnung Norwegen                       |Norwegen          |
+|Elektronische Rechnung Spanien                         |Spanien           |
 
-In den Fällen, in denen eine ältere Funktion für die elektronische Rechnungsstellung vorhanden ist, die den Geltungsbereich der Länderlokalisierung unterstützt, ermöglicht die Aktivierung der Funktionsreferenz die Ausstellung elektronischer Rechnungen über das Add-On für die elektronische Rechnungsstellung und deaktiviert die vorherige Funktion.
+Wenn eine ältere Funktion für die elektronische Rechnungsstellung vorhanden ist, die im Geltungsbereich der Länder-/Regionenlokalisierung unterstützt wird, deaktiviert die Aktivierung einer dieser Funktionen die älteren Funktionen und ermöglicht die Ausstellung elektronischer Rechnungen über das Add-On für die elektronische Rechnungsstellung.
+
+> [!IMPORTANT]
+> Nachdem die Add-On-Integrationsfunktion für die elektronische Rechnungsstellung aktiviert wurde, wird die neue elektronische Rechnungsstellung standardmäßig deaktiviert. Mit dem Funktionskonzept können Sie selektiv neue Erfahrungen für juristische Personen mithilfe länder-/regionenspezifischer Funktionen aktivieren. Die Option **Global** steuert die neue Erfahrung für die verbleibenden Bezirke/Regionen, die nicht speziell in der Tabelle aufgeführt sind.
 
 ## <a name="submit-electronic-documents"></a>Elektronische Belege übermitteln
 
