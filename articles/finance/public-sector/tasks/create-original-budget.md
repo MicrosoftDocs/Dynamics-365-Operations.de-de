@@ -16,37 +16,40 @@ ms.search.industry: Service industries
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 134e2ca851d72965198026107817c66a808ac705
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0b11aeb377caf50808f661de25fcbbf90429d475
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987953"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5235064"
 ---
-# <a name="create-an-original-budget-and-then-reverse-preliminary-budget-entries-in-the-public-sector"></a><span data-ttu-id="ae78a-103">Erstellen Sie ein Originalbudget und machen Sie dann vorläufige Budgeteinträge im öffentlichen Sektor rückgängig</span><span class="sxs-lookup"><span data-stu-id="ae78a-103">Create an original budget and then reverse preliminary budget entries in the public sector</span></span>
+# <a name="create-an-original-budget-and-then-reverse-preliminary-budget-entries-in-the-public-sector"></a><span data-ttu-id="f1d54-103">Erstellen Sie ein Originalbudget und machen Sie dann vorläufige Budgeteinträge im öffentlichen Sektor rückgängig</span><span class="sxs-lookup"><span data-stu-id="f1d54-103">Create an original budget and then reverse preliminary budget entries in the public sector</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ae78a-104">Wenn Sie einen Budgeteintrag erstellen und die Budgetmodell- und Dimensionswerte verwenden, die vorläufige Budgetbeträge enthalten, dann werden die vorläufigen Budgetbeträge rückgängig gemacht.</span><span class="sxs-lookup"><span data-stu-id="ae78a-104">When you create an original budget entry and use the budget model and dimension values that contain preliminary budget amounts, the preliminary budget amounts can be reversed.</span></span> <span data-ttu-id="ae78a-105">Diese Prozedur wurde unter Verwendung der PSUS-Vorführungsunternehmensdaten in der Partition "Öffentlicher Sektor" erstellt.</span><span class="sxs-lookup"><span data-stu-id="ae78a-105">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
+<span data-ttu-id="f1d54-104">Wenn Sie einen Budgeteintrag erstellen und die Budgetmodell- und Dimensionswerte verwenden, die vorläufige Budgetbeträge enthalten, dann werden die vorläufigen Budgetbeträge rückgängig gemacht.</span><span class="sxs-lookup"><span data-stu-id="f1d54-104">When you create an original budget entry and use the budget model and dimension values that contain preliminary budget amounts, the preliminary budget amounts can be reversed.</span></span> <span data-ttu-id="f1d54-105">Diese Prozedur wurde unter Verwendung der PSUS-Vorführungsunternehmensdaten in der Partition "Öffentlicher Sektor" erstellt.</span><span class="sxs-lookup"><span data-stu-id="f1d54-105">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 
-1. <span data-ttu-id="ae78a-106">Wechseln Sie zu "Budgetierung" > "Budgetregistereinträge".</span><span class="sxs-lookup"><span data-stu-id="ae78a-106">Go to Budgeting > Budget register entries.</span></span>
-2. <span data-ttu-id="ae78a-107">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ae78a-107">Click New.</span></span>
-3. <span data-ttu-id="ae78a-108">Klicken Sie im Feld "Budgetmodell" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ae78a-108">In the Budget model field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="ae78a-109">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ae78a-109">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="ae78a-110">Klicken Sie im Feld "Budgetcode" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ae78a-110">In the Budget code field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="ae78a-111">Klicken Sie in der Liste auf "Ursprüngliches Budget".</span><span class="sxs-lookup"><span data-stu-id="ae78a-111">In the list, click Original budget.</span></span>
-7. <span data-ttu-id="ae78a-112">Klicken Sie auf Speichern.</span><span class="sxs-lookup"><span data-stu-id="ae78a-112">Click Save.</span></span>
-8. <span data-ttu-id="ae78a-113">Klicken Sie auf "Position hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="ae78a-113">Click Add line.</span></span>
-9. <span data-ttu-id="ae78a-114">Optional: Wenn Sie das Datum im Kopfbereich ändern möchten, geben Sie ein neues Datum.</span><span class="sxs-lookup"><span data-stu-id="ae78a-114">Optional: If you want to change the date from the one in the header, enter a new date.</span></span> <span data-ttu-id="ae78a-115">Dieses Datum bestimmt den Finanzzeitraum, für den das Budget erfasst wird.</span><span class="sxs-lookup"><span data-stu-id="ae78a-115">This date determines the fiscal period that the budget will be recorded to.</span></span>
-10. <span data-ttu-id="ae78a-116">Klicken Sie im Feld "Kontenstruktur" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ae78a-116">In the Account structure field, click the drop-down button to open the lookup.</span></span>
-11. <span data-ttu-id="ae78a-117">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ae78a-117">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="ae78a-118">Geben Sie im Feld "Dimensionswerte" die gewünschten Werte an.</span><span class="sxs-lookup"><span data-stu-id="ae78a-118">In the Dimension values field, specify the desired values.</span></span>
-13. <span data-ttu-id="ae78a-119">Geben Sie im Feld "Betrag" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="ae78a-119">In the Amount field, enter a number.</span></span>
-14. <span data-ttu-id="ae78a-120">Klicken Sie im Feld "Währung" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ae78a-120">In the Currency field, click the drop-down button to open the lookup.</span></span>
-15. <span data-ttu-id="ae78a-121">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ae78a-121">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="ae78a-122">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ae78a-122">Click Save.</span></span>
-17. <span data-ttu-id="ae78a-123">Klicken Sie auf "Budgetsalden aktualisieren".</span><span class="sxs-lookup"><span data-stu-id="ae78a-123">Click Update budget balances.</span></span>
-    * <span data-ttu-id="ae78a-124">Optional: Sie können die Option "Vorläufiges Budget rückgängig machen" auswählen.</span><span class="sxs-lookup"><span data-stu-id="ae78a-124">Optional: You can select the Reverse preliminary budget option.</span></span> <span data-ttu-id="ae78a-125">Beachten Sie, dass Sie alle vorläufigen Budgeteinträge rückgängig machen können, oder nur die vorläufigen Budgeteinträge, die den Budgetcode haben, den Sie angeben.</span><span class="sxs-lookup"><span data-stu-id="ae78a-125">Note that you can reverse all preliminary budget entries, or only the preliminary budget entries that have the budget code that you specify.</span></span>  
-    * <span data-ttu-id="ae78a-126">Um eine optionale Auswahl zu treffen, klicken Sie auf das Entsperren-Symbol am oberen Seitenrand.</span><span class="sxs-lookup"><span data-stu-id="ae78a-126">To make optional selections, click the Unlock icon at the top of the page.</span></span>  
-18. <span data-ttu-id="ae78a-127">Klicken Sie auf Aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="ae78a-127">Click Update.</span></span>
+1. <span data-ttu-id="f1d54-106">Wechseln Sie zu "Budgetierung" > "Budgetregistereinträge".</span><span class="sxs-lookup"><span data-stu-id="f1d54-106">Go to Budgeting > Budget register entries.</span></span>
+2. <span data-ttu-id="f1d54-107">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="f1d54-107">Click New.</span></span>
+3. <span data-ttu-id="f1d54-108">Klicken Sie im Feld "Budgetmodell" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="f1d54-108">In the Budget model field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="f1d54-109">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="f1d54-109">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="f1d54-110">Klicken Sie im Feld "Budgetcode" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="f1d54-110">In the Budget code field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="f1d54-111">Klicken Sie in der Liste auf "Ursprüngliches Budget".</span><span class="sxs-lookup"><span data-stu-id="f1d54-111">In the list, click Original budget.</span></span>
+7. <span data-ttu-id="f1d54-112">Klicken Sie auf Speichern.</span><span class="sxs-lookup"><span data-stu-id="f1d54-112">Click Save.</span></span>
+8. <span data-ttu-id="f1d54-113">Klicken Sie auf "Position hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="f1d54-113">Click Add line.</span></span>
+9. <span data-ttu-id="f1d54-114">Optional: Wenn Sie das Datum im Kopfbereich ändern möchten, geben Sie ein neues Datum.</span><span class="sxs-lookup"><span data-stu-id="f1d54-114">Optional: If you want to change the date from the one in the header, enter a new date.</span></span> <span data-ttu-id="f1d54-115">Dieses Datum bestimmt den Finanzzeitraum, für den das Budget erfasst wird.</span><span class="sxs-lookup"><span data-stu-id="f1d54-115">This date determines the fiscal period that the budget will be recorded to.</span></span>
+10. <span data-ttu-id="f1d54-116">Klicken Sie im Feld "Kontenstruktur" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="f1d54-116">In the Account structure field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="f1d54-117">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="f1d54-117">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="f1d54-118">Geben Sie im Feld "Dimensionswerte" die gewünschten Werte an.</span><span class="sxs-lookup"><span data-stu-id="f1d54-118">In the Dimension values field, specify the desired values.</span></span>
+13. <span data-ttu-id="f1d54-119">Geben Sie im Feld "Betrag" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="f1d54-119">In the Amount field, enter a number.</span></span>
+14. <span data-ttu-id="f1d54-120">Klicken Sie im Feld "Währung" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="f1d54-120">In the Currency field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="f1d54-121">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="f1d54-121">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="f1d54-122">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="f1d54-122">Click Save.</span></span>
+17. <span data-ttu-id="f1d54-123">Klicken Sie auf "Budgetsalden aktualisieren".</span><span class="sxs-lookup"><span data-stu-id="f1d54-123">Click Update budget balances.</span></span>
+    * <span data-ttu-id="f1d54-124">Optional: Sie können die Option "Vorläufiges Budget rückgängig machen" auswählen.</span><span class="sxs-lookup"><span data-stu-id="f1d54-124">Optional: You can select the Reverse preliminary budget option.</span></span> <span data-ttu-id="f1d54-125">Beachten Sie, dass Sie alle vorläufigen Budgeteinträge rückgängig machen können, oder nur die vorläufigen Budgeteinträge, die den Budgetcode haben, den Sie angeben.</span><span class="sxs-lookup"><span data-stu-id="f1d54-125">Note that you can reverse all preliminary budget entries, or only the preliminary budget entries that have the budget code that you specify.</span></span>  
+    * <span data-ttu-id="f1d54-126">Um eine optionale Auswahl zu treffen, klicken Sie auf das Entsperren-Symbol am oberen Seitenrand.</span><span class="sxs-lookup"><span data-stu-id="f1d54-126">To make optional selections, click the Unlock icon at the top of the page.</span></span>  
+18. <span data-ttu-id="f1d54-127">Klicken Sie auf Aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="f1d54-127">Click Update.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
