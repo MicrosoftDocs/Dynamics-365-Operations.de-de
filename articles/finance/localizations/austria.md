@@ -14,12 +14,12 @@ ms.search.region: Austria
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0b3d30f9115c6e784d58647e65f00666b7367671
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 71a44be1816a3f97300836bdd3fcdd4f85a9fa95
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009109"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5265015"
 ---
 # <a name="austria-overview"></a>Österreich – Übersicht
 

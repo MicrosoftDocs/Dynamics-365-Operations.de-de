@@ -15,12 +15,12 @@ ms.search.region: Germany
 ms.author: ilyako
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 7ea4eb36d8e63351f7140aec2a7d197dd95d241c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cffc9fffdf1fce980442def9240fc3b840fb4084
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988324"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246848"
 ---
 # <a name="customer-electronic-invoices-in-germany-de-00022"></a>Elektronische Rechnungen für Kunden in Deutschland (DE-00022)
 
