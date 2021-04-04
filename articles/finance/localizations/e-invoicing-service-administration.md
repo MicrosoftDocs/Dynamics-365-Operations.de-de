@@ -3,7 +3,7 @@ title: Verwaltungskomponenten im Add-On zur elektronischen Rechnungsstellung
 description: Dieses Thema enthält Informationen zu den Komponenten, die sich auf die Verwaltung des Add-Ons für die elektronische Rechnungsstellung beziehen.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6f630ebb694217c3bd52378a649933a670c090f2
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 70ef47dd45200a14c9d780f3c280c554d0e52ac3
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104385"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592573"
 ---
 # <a name="electronic-invoicing-add-on-administration-components"></a>Verwaltungskomponenten im Add-On zur elektronischen Rechnungsstellung
 
@@ -39,11 +39,15 @@ Verwenden Sie Microsoft Azure, um die Geheimnisse für den Schlüsseltresor und 
 
 Verwenden Sie Microsoft Dynamics Lifecycle Services (LCS), um das Add-On für die Microservices für Ihr LCS-Bereitstellungsprojekt zu aktivieren.
 
-Wählen Sie in LCS die Kachel **Verwaltung von Vorschaufunktionen** aus, und aktivieren Sie anschließend die **E-Invoicing-Dienst**-Funktion.
+> [!NOTE]
+> Für die Installation des Microservice-Add-Ons in LCS ist mindestens ein virtueller Tier 2-Computer erforderlich. Weitere Informationen zur Umgebungsplanung finden Sie unter [Umgebungsplanung](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+ 
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
 
 Dynamics 365 Regulatory Configuration Services (RCS) ist die Schnittstelle für die Konfiguration des Add-Ons für die elektronische Rechnungsstellung. Ressourcen wie Umgebungen und Funktionen für die elektronische Rechnungsstellung werden in RCS erstellt, verwaltet und gehostet. Wenn die Ressourcen bereit sind, werden sie im Add-On-Service für die elektronische Rechnungsstellung veröffentlicht.
+
+Informationen zur RCS-Anmeldung finden Sie unter [Regulatory services](https://marketing.configure.global.dynamics.com/).
 
 Weitere Informationen zu RCS finden Sie unter [Regulatory Configuration Services (RCS) – Globalisierungsfunktionen](rcs-globalization-feature.md).
 
@@ -53,22 +57,14 @@ Bevor Sie RCS zum Konfigurieren elektronischer Rechnungen verwenden können, mü
 
 #### <a name="service-endpoint"></a>Dienstendpunkt
 
-Die URL des Add-On-Endpunkts für die elektronische Rechnungsstellung kann je nach Geografie des Azure-Rechenzentrums variieren. In der folgenden Tabelle ist die Verfügbarkeit pro Region aufgeführt:
+Das Add-On für die elektronische Rechnungsstellung ist in mehreren Azure-Rechenzentrumsregionen verfügbar. In der folgenden Tabelle ist die Verfügbarkeit pro Region aufgeführt.
 
-| Azure-Rechenzentrumgeografie | Dienstendpunkt-URL                                                       |
-|----------------------------|----------------------------------------------------------------------------|
-| USA, Osten                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-| USA, Westen                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-| Norden, Europa                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-| Westen, Europa                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
-
-#### <a name="application-id"></a>Anwendungs-ID
-
-Die Anwendungs-ID ist die ID der Add-On-Anwendung für die elektronische Rechnungsstellung. In diesem Fall ist der Wert festgelegt: **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.
-
-#### <a name="lcs-environment-id"></a>LCS-Umgebungs-ID
-
-Die LCS-Umgebungs-ID ist die ID des LCS-Abonnements Ihrer Organisation.
+| Azure-Rechenzentrumgeografie |
+|----------------------------|
+| USA, Osten                    |
+| USA, Westen                    |
+| Norden, Europa                   |
+| Westen, Europa                    |
 
 ### <a name="service-environments"></a>Dienstumgebungen
 

@@ -1,12 +1,11 @@
 ---
-title: Finanzinformationen
-description: "\"Finanzinformationen\" verwendet Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen."
+title: Finanzanalyse
+description: Finanzanalyse nutzt Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen.
 author: kweekley
 manager: AnnBe
 ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,20 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9aaf24147900c890a14c60ab969da7124c538911
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
+ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115727"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5572365"
 ---
-# <a name="financial-insights"></a>Finanzinformationen
+# <a name="financial-analysis"></a>Finanzanalyse
 
 [!include [banner](../includes/banner.md)]
 
-**Finanzinformationen** verwendet Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen. Power BI wird in der Anwendung eingebettet. Der Fokus von **Finanzinformationen** liegt auf der analytischen Berichterstellung. Personen in einer gesamten Organisation können anzeigen, erforschen, verstehen und handeln. 
+**Finanzanalyse** nutzt Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen. Power BI wird in der Anwendung eingebettet. Der Fokus von **Finanzanalyse** liegt auf der analytischen Berichterstellung. Personen in einer gesamten Organisation können anzeigen, erforschen, verstehen und handeln. 
 
-**Finanzinformationen** kombiniert Daten aus dem Hauptbuch und von untergeordneten Sachkonten, um ein vollständigeres Bild der finanziellen Lage einer Organisation zu vermitteln.
+**Finanzanalyse** kombiniert Daten aus dem Hauptbuch und von untergeordneten Sachkonten, um ein vollständigeres Bild der finanziellen Lage einer Organisation zu vermitteln.
 
 > [!NOTE]
 > Dieses Dokument verwendet die folgende Power BI-Terminologie:
@@ -38,14 +37,14 @@ ms.locfileid: "5115727"
 > - **Seite** – Eine Registerkarte in einer einzelnen .pbix-Datei. Jeder Seite kann ein oder mehrere visuelle Elemente enthalten.
 > - **Visual** – Eine einzelne Datenquelle, wie eine Karte, KPI, Diagramm, Graph, Matrix oder Finanzaufstellung. Eine Seite, die eine Finanzaufstellung als ein visuelles Element hat, kann keine anderen visuellen Elemente haben wegen der Größe der Daten, über die berichtet wird.
 
-Aktuell wird **Finanzinformationen** verwendet, um Daten entweder für die aktive juristische Person oder für alle juristischen Personen anzuzeigen. In künftigen Versionen wird sich der Arbeitsbereich zu einem Ort entwickeln, an dem Sie Power BI verwenden können, um visuelle Elemente zu bearbeiten und zu erstellen.
+Aktuell wird **Finanzanalyse** verwendet, um Daten entweder für die aktive juristische Person oder für alle juristischen Personen anzuzeigen. In künftigen Versionen wird sich der Arbeitsbereich zu einem Ort entwickeln, an dem Sie Power BI verwenden können, um visuelle Elemente zu bearbeiten und zu erstellen.
 
-Der Arbeitsbereich **CFO-Überblick** zeigt dieselben visuellen Elemente an wie **Finanzinformationen**, aber er fokussiert sich darauf, Sie die Daten zu vorhandenen Berichten anzeigen und filtern zu lassen. In künftigen Versionen sind Sie in der Lage, neue visuelle Elementen zum Arbeitsbereich **Finanzinformationen** hinzuzufügen. Die neuen visuellen Elemente sind möglicherweise ebenfalls in Arbeitsbereichen verfügbar, die auf andere Rollen fokussiert sind, wie beispielsweise Projektmanager oder Kreditorenkontenleiter. Der Arbeitsbereich **CFO-Überblick** zeigt weiterhin Daten für alle juristischen Personen an, ungeachtet der juristischen Personen, auf die die Rolle Zugriff hat.
+Der Arbeitsbereich **CFO-Überblick** zeigt dieselben visuellen Elemente an wie **Finanzanalyse**, fokussiert sich aber darauf, Sie die Daten zu vorhandenen Berichten anzeigen und filtern zu lassen. In künftigen Versionen sind Sie in der Lage, dem Arbeitsbereich **Finanzanalyse** neue visuelle Elemente hinzuzufügen. Die neuen visuellen Elemente sind möglicherweise ebenfalls in Arbeitsbereichen verfügbar, die auf andere Rollen fokussiert sind, wie beispielsweise Projektmanager oder Kreditorenkontenleiter. Der Arbeitsbereich **CFO-Überblick** zeigt weiterhin Daten für alle juristischen Personen an, ungeachtet der juristischen Personen, auf die die Rolle Zugriff hat.
 
 ## <a name="dynamics-365-finance-setup"></a>Einrichten von Dynamics 365 Finance
 **Hauptbuch**
 
-Der Hauptkontotyp und die Hauptkontokategorien werden verwendet, um entsprechende Standardhauptkonten in der Finanzaufstellung **Bilanz** und den verschiedenen Finanzaufstellungen **Gewinn- & Verlustrechnung** in **Finanzinformationen** einzugeben.
+Der Hauptkontotyp und die Hauptkontokategorien werden verwendet, um entsprechende Standardhauptkonten in der Finanzaufstellung **Bilanz** und den verschiedenen Finanzaufstellungen **Gewinn- & Verlustrechnung** in **Finanzanalyse** einzugeben.
 
 Auf der Seite **Hauptkonten** müssen Sie Ihr Hauptkonto festlegen, sodass einer der folgenden Typen ihm zugewiesen wird:
 
@@ -57,14 +56,14 @@ Auf der Seite **Hauptkonten** müssen Sie Ihr Hauptkonto festlegen, sodass einer
 
 Weisen Sie Ihren Hauptkonten keinen anderen Hauptkontotyp zu, wie **Bilanz** oder **Gewinn und Verlust**. Die Berichterstellung kann nicht den Typ des Hauptkontos bestimmen, wenn andere Hauptkontotypen zugewiesen sind, weil sie nicht ausreichend differenziert sind. Der Typ des Hauptkontos muss bestimmt werden, damit Passivposten und Umsatzerlös als positive Beträge in Finanzberichten angezeigt werden.
 
-Um in Finanzaufstellungen angezeigt zu werden und in verschiedene andere visuelle Elemente einbezogen zu werden, wie beispielsweise KPIs, muss jedem Hauptkonto eine Hauptkontokategorie zugewiesen werden. Die Hauptkontokategorien sind verbessert worden, sodass sie einen Anzeigereihenfolge enthalten. Die Anzeigereihenfolge wird speziell für Finanzaufstellungen in **Finanzinformationen** verwendet. Nachdem Sie eine neue Hauptkontokategorie bearbeiten oder hinzufügen, können Sie den Wert **Anzeigereihenfolge** ändern, um die Reihenfolge zu definieren, in der die Hauptkontokategorien in einer Finanzaufstellung angezeigt werden sollen. Wenn Sie die Anzeigereihenfolge für viele Hauptkontokategorien ändern müssen, können Sie die Funktion „In Excel öffnen” verwenden, um die Änderungen schnell zurück in der Anwendung zu bearbeiten und zu veröffentlichen.
+Um in Finanzaufstellungen angezeigt zu werden und in verschiedene andere visuelle Elemente einbezogen zu werden, wie beispielsweise KPIs, muss jedem Hauptkonto eine Hauptkontokategorie zugewiesen werden. Die Hauptkontokategorien sind verbessert worden, sodass sie einen Anzeigereihenfolge enthalten. Die Anzeigereihenfolge wird speziell für Finanzaufstellungen in **Finanzanalyse** verwendet. Nachdem Sie eine neue Hauptkontokategorie bearbeiten oder hinzufügen, können Sie den Wert **Anzeigereihenfolge** ändern, um die Reihenfolge zu definieren, in der die Hauptkontokategorien in einer Finanzaufstellung angezeigt werden sollen. Wenn Sie die Anzeigereihenfolge für viele Hauptkontokategorien ändern müssen, können Sie die Funktion „In Excel öffnen” verwenden, um die Änderungen schnell zurück in der Anwendung zu bearbeiten und zu veröffentlichen.
 
 ## <a name="entity-store"></a>Entitätsspeicher
-Die Daten für **Finanzinformationen** werden aus dem Entitätsspeicher entnommen (**Systemverwaltung**\>**Setup**\>**Entitätsspeicher**). Wenn Sie den Arbeitsbereich **CFO-Überblick** oder **Finanzinformationen** öffnen und die folgende Warnmeldung in den visuellen Elementen angezeigt wird, müssen Sie die Entitäten aktualisieren.
+Die Daten für **Finanzanalyse** werden aus dem Entitätsspeicher entnommen (**Systemverwaltung** \> **Einrichtung** \> **Entitätsspeicher**). Wenn Sie den Arbeitsbereich **CFO-Überblick** oder **Finanzanalyse** öffnen und die folgende Warnmeldung in den visuellen Elementen angezeigt wird, müssen Sie die Entitäten aktualisieren.
 
 ![Warnung](./media/Cantdisplay.png)
 
-Sie müssen die folgenden Entitäten aktualisieren, um Daten in den Arbeitsbereichen **Finanzinformationen** und **CFO-Überblick** anzuzeigen:
+Sie müssen die folgenden Entitäten aktualisieren, um sich Daten im Arbeitsbereich **Finanzanalyse** anzeigen zu lassen:
 
 - BudgetActivityMeasure
 - Finanzberichterstattungs-Buchungsdaten – Version 3 
@@ -74,8 +73,6 @@ Sie müssen die folgenden Entitäten aktualisieren, um Daten in den Arbeitsberei
 - Einkaufscube
 - Verkaufscube
 
-In der vorherigen Version wurden die Entitäten LedgerActivityMeasure und VendPaymentBIMeasure für Daten im Arbeitsbereich **CFO-Überblick** verwendet. Sie werden aber nicht mehr in der aktuellen Version verwendet.
-
 Sie können definieren, dass eine sich wiederholende Charge regelmäßig die Daten in den Entitäten aktualisiert. Da jede Entität während einer Aktualisierung vollständig neu erstellt wird, wählen Sie die Zeit und die Häufigkeit von Entitätsaktualisierungen mit Bedacht aus. Die primäre Entität, die für die Finanzaufstellungen verwendet wird, ist die Entität FinancialReportingTransactionData. Daher entscheiden Sie sich möglicherweise, die Entität häufiger zu aktualisieren.
 
 ## <a name="security"></a>Sicherheit
@@ -83,18 +80,17 @@ Aktuell können die Daten in eingebetteten Power BI-Berichten nicht auf juristis
 
 | Abgabe                                    | Rollen | Beschreibung |
 |-----------------------------------------|-------|------------|
-| Arbeitsbereich der Übersicht (Leiter der Finanzabteilung) anzeigen             | Leiter Finanzabteilung | Diese Berechtigungen bieten Zugriff auf Arbeitsbereich CFO-Überblick. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können jedoch alle juristischen Personen hinzufügen, unabhängig davon, ob der Benutzer Zugriff auf die anderen juristischen Personen hat. |
-| Finanzeinblicke des derzeitigen Unternehmens anzeigen | <ul><li>Sachbearbeiter Buchhaltung</li><li>Leiter Buchhaltung</li><li>Supervisor Buchhaltung</li><li>Wirtschaftsprüfer</li><li>Budget-Manager</li><li>Leitender Geschäftsführer</li><li>Leiter Finanzabteilung</li><li>Financial Controller</li></ul> | Diese Berechtigungen bieten Zugriff auf Finanzinformationen. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können nicht andere juristische Personen hinzufügen. |
-| Finanzeinblicke unternehmensübergreifend anzeigen   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, sind diese Berechtigungen keiner Rolle zugewiesen. In der nächsten Version werden diese Berechtigungen der Rolle „Leiter Finanzabteilung” zugewiesen werden. | Diese Berechtigungen bieten Zugriff auf das Menüelement für den Arbeitsbereich CFO-Überblick. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können jedoch alle juristischen Personen hinzufügen, unabhängig davon, ob der Benutzer Zugriff auf die anderen juristischen Personen hat. |
+| Finanzanalyse des derzeitigen Unternehmens anzeigen | <ul><li>Sachbearbeiter Buchhaltung</li><li>Leiter Buchhaltung</li><li>Supervisor Buchhaltung</li><li>Wirtschaftsprüfer</li><li>Budget-Manager</li><li>Leitender Geschäftsführer</li><li>Leiter Finanzabteilung</li><li>Financial Controller</li></ul> | Diese Berechtigungen bieten Zugriff auf Finanzanalyse. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können nicht andere juristische Personen hinzufügen. |
+| Finanzanalyse aller Unternehmen anzeigen   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, sind diese Berechtigungen keiner Rolle zugewiesen. In der nächsten Version werden diese Berechtigungen der Rolle „Leiter Finanzabteilung” zugewiesen werden. | Diese Berechtigungen bieten Zugriff auf das Menüelement für den Arbeitsbereich CFO-Überblick. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können jedoch alle juristischen Personen hinzufügen, unabhängig davon, ob der Benutzer Zugriff auf die anderen juristischen Personen hat. |
 
 
-## <a name="financial-reporting-vs-financial-insights"></a>Financial Reporting vs. Finanical Insights
-Obwohl **Financial insights** Finanzaufstellungen enthält, ist es kein Ersatz für die Finanzberichterstattung in der Anwendung. Die Standardfinanzaufstellungen in **Financial insights** sind im Umfang begrenzt und umfassen nicht alle Typen von Finanzaufstellungen. Finanzberichterstattung ist immer noch das primäre Tool zum Entwerfen, Erstellen und Generieren von gesetzlich vorgeschriebenen Finanzaufstellungen.
+## <a name="financial-reporting-vs-financial-analysis"></a>Finanzberichterstellung vs. Finanzanalyse
+Obwohl **Finanzanalyse** Finanzaufstellungen enthält, ist es kein Ersatz für die Finanzberichterstellung in der Anwendung. Die Standardfinanzaufstellungen in **Finanzanalyse** sind im Umfang begrenzt und umfassen nicht alle Typen von Finanzaufstellungen. Finanzberichterstattung ist immer noch das primäre Tool zum Entwerfen, Erstellen und Generieren von gesetzlich vorgeschriebenen Finanzaufstellungen.
 
 Das folgende Vergleichsdiagramm hilft, die zwei Optionen zu unterscheiden:
 
 
-|                                                          | Finanzberichterstellung                                               | Finanzinformationen |
+|                                                          | Financial Reporting                                               | Finanzanalyse |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
 | **Standardberichte bearbeiten**                                 | Ja                                                               | Nr. |
 | **Neue Berichte erstellen**                                   | Ja                                                               | Nr. |
@@ -108,7 +104,7 @@ Das folgende Vergleichsdiagramm hilft, die zwei Optionen zu unterscheiden:
 | **Bericht zu externen Daten**                              | Nr.                                                                | Nr. |
 | **Konsolidierungen unterstützen**                               | Ja                                                               | Begrenzter Möglichkeitenbericht zu mehreren Unternehmen, aber nur Verwendung der Buchhaltungswährung |
 
-Zudem sind zur Benutzerschnittstelle der ursprüngliche Arbeitsbereich **CFO-Überblick**, neue KPIs, Tabellen und Finanzaufstellungen verfügbar. Folgende Finanzaufstellungen sind verfügbar:
+Folgende Finanzaufstellungen sind verfügbar:
 
 - Zwischenbilanz
 - Bilanz
@@ -121,7 +117,7 @@ Zudem sind zur Benutzerschnittstelle der ursprüngliche Arbeitsbereich **CFO-Üb
 - Umsatz nach Debitoren
 
 ## <a name="edit-visuals"></a>Bearbeiten visueller Elemente
-In der ersten Version von **Finanzinformationen** können keine visuellen Elemente bearbeitet werden. In künftigen Versionen können Benutzer, die über die entsprechende Sicherheit verfügen, neue visuelle Elemente erstellen, vorhandene visuelle Elemente kopieren und visuelle Elemente bearbeiten. Obwohl die .pbix-Dateien, die die Berichte enthalten, als Ressourcen verfügbar sind, wird davon abgeraten, dass Sie die Standardberichte bearbeiten. Zusätzliche Änderungen werden am Datenmodell, Standardberichten und benutzerdefinierten visuellen Elementen zur Finanzaufstellung, die zum Erstellen der Finanzaufstellungen verwendet werden, vorgenommen. Um sich daher neue Funktionen und Änderungen am Datenmodell in der nächsten Version zunutze zu machen, müssen Sie sämtliche Änderungen erneut vornehmen, die Sie in Standardberichten mithilfe von Microsoft Power BI Desktop vorgenommen haben.
+In den vorherigen Versionen von **Finanzanalyse** konnten keine visuellen Elemente bearbeitet werden. In künftigen Versionen können Benutzer, die über die entsprechende Sicherheit verfügen, neue visuelle Elemente erstellen, vorhandene visuelle Elemente kopieren und visuelle Elemente bearbeiten. Obwohl die .pbix-Dateien, die die Berichte enthalten, als Ressourcen verfügbar sind, wird davon abgeraten, dass Sie die Standardberichte bearbeiten. Zusätzliche Änderungen werden am Datenmodell, Standardberichten und benutzerdefinierten visuellen Elementen zur Finanzaufstellung, die zum Erstellen der Finanzaufstellungen verwendet werden, vorgenommen. Um sich daher neue Funktionen und Änderungen am Datenmodell in der nächsten Version zunutze zu machen, müssen Sie sämtliche Änderungen erneut vornehmen, die Sie in Standardberichten mithilfe von Microsoft Power BI Desktop vorgenommen haben.
 
 ## <a name="filtering"></a>Filtern
 Benutzer können den Bericht filtern, indem sie den Bereich **Filter** links verwenden. Dieser Bereich ist der gleiche Bereich, der über Power BI Desktop verfügbar ist. Es gibt verschiedene Ebenen der Filterung, von denen einige möglicherweise nicht verfügbar sind, abhängig davon, was Sie auf einer Seite (Registerkarte) ausgewählt haben oder ob Sie die Drillthroughfunktionen verwenden:
@@ -168,7 +164,7 @@ Folgende Dimensionen werden in den Standardberichten verwendet. Keine dieser Dim
 - Stadt
 
 > [!IMPORTANT] 
-> Wenn Sie Transaktionen für mehrere Lieferanten oder Debitoren in einem einzelnen Beleg zusammenfassen, indem Sie die Finanzerfassungen verwenden, werden die Daten nicht korrekt sein. Die Berichterstellung kann nicht bestimmen, welcher Lieferant oder Kunde einem spezifischen Sachkonto in einem Journaleintrag zugeordnet ist, da diese Informationen nirgends verwaltet werden. Daher wird davon abgeraten, dass Sie mehrere Lieferanten, Kunden, Anlagen oder Projekte in einem einzelnen Beleg eingeben.
+> Wenn Sie Transaktionen für mehrere Lieferanten oder Debitoren in einem einzelnen Beleg zusammenfassen, indem Sie die Finanzerfassungen verwenden, werden die Daten nicht korrekt sein. Der Berichterstellungsprozess kann nicht ermitteln, welcher Kreditor oder Debitor einem spezifischen Sachkonto in einem Journaleintrag zugeordnet ist, da diese Informationen nirgends verwaltet werden. Daher wird davon abgeraten, dass Sie mehrere Lieferanten, Kunden, Anlagen oder Projekte in einem einzelnen Beleg eingeben.
 
 ## <a name="drill-on-data"></a>Drillvorgang für Daten
 
@@ -243,7 +239,7 @@ Power BI bietet keine Option, leere Zeilen auszublenden und anzuzeigen. Wenn ein
 
 ## <a name="additional-resources-for-power-bi"></a>Zusätzliche Ressourcen für Power BI
 
-Die Informationen in den folgenden Ressourcen sind nicht erforderlich, um die eingebetteten Berichte für den Arbeitsbereich **CFO-Überblick** oder **Finanzinformationen** in einer Produktionsumgebung zu aktivieren. Stattdessen sind sie für Entwicklerfelder hilfreich und wenn Sie Ihre eigenen Power BI-Berichte einbetten möchten.
+Die Informationen in den folgenden Ressourcen sind nicht erforderlich, um die eingebetteten Berichte für den Arbeitsbereich **Finanzanalyse** in einer Produktionsumgebung zu aktivieren. Stattdessen sind sie für Entwicklerfelder hilfreich und wenn Sie Ihre eigenen Power BI-Berichte einbetten möchten.
 
 - [Zugriff auf analytische Arbeitsbereiche und Berichte in einer Umgebungen mit einem Feld](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 

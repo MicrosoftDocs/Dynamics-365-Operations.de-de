@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c1304d3277e12bc602fa5bc25a61e1f95edba59c
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967230"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580914"
 ---
 # <a name="release-product-structures"></a>Produktstrukturen freigeben
 
@@ -76,8 +76,6 @@ Ein Beispiel für die Annahme eines Produkts finden Sie unter [Prüfen und akzep
 ## <a name="release-policies"></a>Richtlinien für die Freigabe
 
 Nicht alle Betriebsfirmen benötigen die gleichen Produktdaten. Im Allgemeinen benötigen Betriebsfirmen, die Engineering-Produkte herstellen, eine Stückliste, während Betriebsfirmen, die nur Engineering-Produkte verkaufen, keine Stückliste benötigen. Mit Freigabe-Richtlinien können Sie die Parameter festlegen, die für die Freigabe von Produkten verwendet werden.
-
-Für technische Produkte wird die Richtlinie in der Kategorie für technische Produkte zugewiesen, und das Feld ist obligatorisch. Für Standardprodukte wird die Richtlinie dem gemeinsamen Produkt zugewiesen, und das Feld ist optional.
 
 Weitere Informationen über Engineering-Produktkategorien finden Sie unter [Engineering-Versionen und Engineering-Produktkategorien](engineering-versions-product-category.md).
 

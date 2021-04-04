@@ -1,9 +1,9 @@
 ---
 title: Automatisierung des Inkasso-Prozesses
-description: In diesem Thema wird das Einrichten von Inkassoprozessstrategien beschrieben, mit denen Debitorenrechnungen automatisch identifiziert werden, für die eine E-Mail-Erinnerung, eine Inkassoaktivität (z. B. ein Telefonanruf) oder ein Mahnschreiben an den Debitoren gesendet werden müssen.
+description: In diesem Thema wird das Einrichten von Inkassoprozessstrategien beschrieben, mit denen Debitorenrechnungen automatisch identifiziert werden, für die eine E-Mail-Erinnerung, eine Inkassoaktivität oder ein Mahnschreiben an den Debitoren gesendet werden müssen.
 author: panolte
 manager: AnnBe
-ms.date: 08/26/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,23 +15,25 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a5f5d65f3f757163b22d35c3c99b4d6b7fbdfafb
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969700"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582750"
 ---
-# <a name="collections-process-automation"></a>Automatisierung des Inkasso-Prozesses
+# <a name="collections-process-automation"></a>Automatisierung des Inkassoprozesses
 
 [!include [banner](../includes/banner.md)]
 
 In diesem Thema wird das Einrichten von Inkassoprozessstrategien beschrieben, mit denen Debitorenrechnungen automatisch identifiziert werden, für die eine E-Mail-Erinnerung, eine Inkassoaktivität (z. B. ein Telefonanruf) oder ein Mahnschreiben an den Debitoren gesendet werden müssen. 
 
-Unternehmen verbringen viel Zeit damit, alte Kontostandberichte, Debitorenkonten und offene Rechnungen zu recherchieren, um festzustellen, welche Debitoren wegen einer offenen Rechnung oder eines offenen Kontostands kontaktiert werden müssen. Diese Recherche nimmt Zeit in Anspruch, die ein Inkassobüro für die Kommunikation mit Debitoren benötigt, um überfällige Salden einzuziehen oder Rechnungsstreitigkeiten beizulegen. Mit der Automatisierung von Inkassoprozessen können Sie einen strategiebasierten Ansatz für Ihren Inkassoprozess festlegen. Auf diese Weise können Sie Inkassoaktivitäten konsistent anwenden, indem Sie benutzerdefinierte E-Mail-Erinnerungen oder einen programmierten Prozess zum Senden von Mahnschreiben bereitstellen. 
+Unternehmen verbringen viel Zeit damit, alte Kontostandberichte, Debitorenkonten und offene Rechnungen zu recherchieren, um festzustellen, welche Debitoren wegen einer offenen Rechnung oder eines offenen Kontostands kontaktiert werden sollten. Diese Recherche nimmt Zeit in Anspruch, die ein Inkassobüro für die Kommunikation mit Debitoren benötigt, um überfällige Salden einzuziehen oder Rechnungsstreitigkeiten beizulegen. Mit der Automatisierung von Inkassoprozessen können Sie einen strategiebasierten Ansatz für Ihren Inkassoprozess festlegen. Auf diese Weise können Sie Inkassoaktivitäten konsistent anwenden, indem Sie benutzerdefinierte E-Mail-Erinnerungen oder einen programmierten Prozess zum Senden von Mahnschreiben bereitstellen. 
 
 ## <a name="collections-process-setup"></a>Inkassoprozesseinrichtung
 Sie können die **Inkassoprozesseinrichtung**-Seite (**Kredit und Inkasso > Einrichtung > Inkassoprozesseinrichtung**) verwenden, um einen automatisierten Inkassoprozess zu erstellen, der Aktivitäten plant, E-Mail-Nachrichten sendet und Debitorenmahnschreiben erstellt und veröffentlicht. Die Prozessschritte basieren auf der führenden oder ältesten offenen Rechnung. Jeder Schritt verwendet diese Rechnung, um zu bestimmen, welche Kommunikation oder Aktivität mit einem bestimmten Debitor stattfinden soll.  
+
+Inkassoteams senden in der Regel eine frühzeitige Benachrichtigung zu jeder ausstehenden Rechnung, damit ein Kunde benachrichtigt wird, wenn die Rechnung fällig wird. Die Auswahl **Vormahnung** kann so eingestellt werden, dass für jede Rechnung ein Schritt in jeder Prozesshierarchie ausgeführt werden kann, wenn der Rechnungszeitpunkt diesen Schritt erreicht.
 
 ### <a name="process-hierarchy"></a>Prozesshierarchie
 Jeder Debitorenpool kann nur einer Prozesshierarchie zugeordnet werden. Der Hierarchierang dieses Schritts gibt an, welcher Prozess Vorrang hat, wenn ein Debitor in mehr als einem Pool enthalten ist, dem eine Prozesshierarchie zugewiesen ist. Die Pool-ID bestimmt, welche Debitoren dem Prozess zugewiesen werden. 
@@ -82,6 +84,7 @@ In den folgenden Tabellen sind die Seiten und Felder aufgeführt, über die auf 
 |                                                           |     Geschäftsdokument                           |     Definiert die Aktivität oder E-Mail-Vorlage, die während des Prozessschritts verwendet wird.                                                                        |
 |                                                           |     Wenn                                          |     Legt fest, ob der Prozessschritt vor oder nach dem Fälligkeitsdatum der führenden Rechnung zusammen mit dem **Tage in Bezug auf das Fälligkeitsdatum der Rechnung**-Feld auftritt.        |
 |                                                           |     Tage in Bezug auf das Fälligkeitsdatum der Rechnung        |     Zusammen mit dem **Wann**-Feld gibt dies den Zeitpunkt des Prozessschritts an.                                                                          |
+|                                                           |     Vorausmahnung                                   |     Mit dieser Auswahl kann ein Schritt pro Prozesshierarchie festgelegt und für jede Rechnung ausgeführt werden, sobald die Zeitkriterien erfüllt sind.                                                |
 |                                                           |     Auftragsbearbeiter                                     |     Gibt an, ob eine E-Mail an einen Debitor, eine Verkaufsgruppe oder einen Inkassoagent-Kontakt gesendet wird.                                                   |
 |                                                           |     Kontakt für Geschäftszweck                    |     Bestimmt, welche Empfänger-E-Mail-Adresse für die E-Mail-Kommunikation verwendet wird.                                                                                 |
 
@@ -100,7 +103,7 @@ In den folgenden Tabellen sind die Seiten und Felder aufgeführt, über die auf 
 ### <a name="collections-history"></a>Inkassohistorie 
 |     Seite                              |     Feld     |      Beschreibung                                                          |
 |------------------------------------   |-------------- |---------------------------------------------------------------------  |
-|     Inkassoprozesseinrichtung       |               |     Zeigen Sie den aktuellen Verlauf für die ausgewählte Prozesshierarchie an.     |
+|     Inkassoprozesseinrichtung       |               |     Zeigen Sie den aktuellen Verlauf für die ausgewählte Prozesshierarchie an.       |
 
 ### <a name="collection-process-assignment"></a>Inkassoprozesszuweisung
 |     Seite                              |     Feld     |      Beschreibung                                                  |
@@ -110,6 +113,11 @@ In den folgenden Tabellen sind die Seiten und Felder aufgeführt, über die auf 
 |     Vorschau der Prozesszuweisung      |               |     Zeigen Sie eine Vorschau der Debitoren an, die einer Strategie zugewiesen werden, wenn sie ausgeführt wird.   |
 |     Vorschau der Debitorenzuweisung     |               |     Zeigen Sie die Strategie an, die einem bestimmten Debitoren zugewiesen ist.    |
  
+ ### <a name="process-simulation"></a>Simulation verarbeiten
+|     Seite                              |     Feld     |      Beschreibung                                                  |
+|------------------------------------   |-------------- |-----------------------------------------------------------    |
+|    Simulation verarbeiten                 |               |     Zeigen Sie eine Vorschau der Aktionen an, die erstellt werden, wenn die ausgewählte Prozessautomatisierung zu diesem Zeitpunkt ausgeführt wird. |
+
 ### <a name="parameters"></a>Parameter
 |     Seite                                                                  |     Feld                                             |      Beschreibung                              |
 |-------------------------------------------------------------------------- |------------------------------------------------------ |-------------------------------------  |
@@ -117,6 +125,7 @@ In den folgenden Tabellen sind die Seiten und Felder aufgeführt, über die auf 
 |     Debitorenkontenparameter> Automatisierung von Inkassoprozessen     |     Mahnschreiben automatisch buchen           |     Aktionstypen für Mahnschreiben werden den Brief während der Automatisierung buchen.                                      |
 |     Debitorenkontenparameter> Automatisierung von Inkassoprozessen     |     Erstellen von Aktivitäten für Automatisierung                |     Erstellen und schließen Sie Aktivitäten für Aktionstypen ohne Aktivität, um alle automatisierten Schritte anzuzeigen, die für ein Konto ausgeführt wurden.        |
 |     Debitorenkontenparameter> Automatisierung von Inkassoprozessen     |     Inkassoprozessautomatisierung für aufzubewahrende Tage     |     Definiert die Anzahl der Tage, an denen der Inkassoverlauf gespeichert wird.                                                       |
+|     Debitorenkontenparameter> Automatisierung von Inkassoprozessen     |     Rechnung nach der Aktivierung des letzten Prozessschritts ausschließen    |     Eine Rechnung, die den letzten Schritt des Inkassoprozesses erreicht, wird nicht zum Erstellen zukünftiger Aktionsarten für die Prozessautomatisierung verwendet. Die nächstälteste Rechnung bestimmt den nächsten Prozessautomatisierungsschritt, um sicherzustellen, dass die Automatisierungsaktionen für den Inkassoprozess fortgesetzt werden.                                                        |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

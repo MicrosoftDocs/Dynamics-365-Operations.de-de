@@ -3,10 +3,9 @@ title: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerf
 description: Dieses Thema enthält Informationen zum Entwerfen eines Formats für die elektronische Berichterstellung (EB), um eine Excel-Vorlage auszufüllen und ausgehende Dokumente im Excel-Format zu generieren.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: a82afcdeb45bad79a008c3135ef332cf01c0b580
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094028"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574172"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -54,7 +53,7 @@ Sie müssen dem konfigurierten EB-Format eine **Excel\\Datei-Komponente** hinzuf
 Hängen Sie eine Excel-Arbeitsmappe mit der .xlsx-Erweiterung als Vorlage für ausgehende Dokumente an die **Excel\\Datei**-Komponente an, um das Layout des ausgehenden Dokuments festzulegen.
 
 > [!NOTE]
-> Wenn Sie eine Vorlage manuell anhängen, müssen Sie einen [Dokumententyp](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) verwenden, der zu diesem Zweck im [EB-Parameter ](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) konfiguriert wurde.
+> Wenn Sie eine Vorlage manuell anhängen, müssen Sie einen [Dokumententyp](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) verwenden, der zu diesem Zweck im [EB-Parameter ](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) konfiguriert wurde.
 
 ![Hinzufügen eines Anhangs zur Excel\Datei-Komponente](./media/er-excel-format-add-file-component2.png)
 
@@ -140,6 +139,36 @@ Weitere Informationen zum Einbetten von Bildern und Shapes finden Sie unter [Bil
 
 Die Komponente **PageBreak** erzwingt das Starten einer neuen Seite in Excel. Diese Komponente ist nicht erforderlich, wenn Sie das Standard-Paging von Excel verwenden möchten, aber Sie sollten sie verwenden, wenn Sie möchten, dass Excel Ihrem ER-Format folgt, um das Paging zu strukturieren.
 
+## <a name="footer-component"></a>Fußzeilenkomponente
+
+Die **Fußzeile**-Komponente wird verwendet, um Fußzeilen am unteren Rand eines generierten Arbeitsblatts in einer Excel-Arbeitsmappe auszufüllen.
+
+> [!NOTE]
+> Sie können diese Komponente für jede **Blatt**-Komponente zum Angeben verschiedener Fußzeilen für verschiedene Arbeitsblätter in einer generierten Excel-Arbeitsmappe hinzufügen.
+
+Wenn Sie eine individuelle **Fußzeile**-Komponente konfigurieren, können Sie die Eigenschaft **Kopf-/Fußzeilendarstellung** zum Angeben der Seiten verwenden, für die die Komponente verwendet werden soll. Folgende Werte sind verfügbar:
+
+- **Beliebig** – Führt die konfigurierte **Fußzeile**-Komponente für eine beliebige Seite des übergeordneten Excel-Arbeitsblatts aus.
+- **Zuerst** – Führt die konfigurierte **Fußzeile**-Komponente nur für die erste Seite des übergeordneten Excel-Arbeitsblatts aus.
+- **Gerade** – Führt die konfigurierte **Fußzeile**-Komponente nur für die geraden Seiten des übergeordneten Excel-Arbeitsblatts aus.
+- **Ungerade** – Führt die konfigurierte **Fußzeile**-Komponente nur für die ungeraden Seiten des übergeordneten Excel-Arbeitsblatts aus.
+
+Einer einzelnen **Blatt**-Komponente können Sie mehrere **Fußzeile**-Komponenten hinzufügen, von denen jede einen anderen Wert in der Eigenschaft **Kopf-/Fußzeilendarstellung** besitzt. Auf diese Weise können Sie verschiedene Fußzeilen für verschiedene Seitentypen in einem Excel-Arbeitsblatt generieren.
+
+> [!NOTE]
+> Vergewissern Sie sich, dass jede **Fußzeile**-Komponente, die Sie einer einzelnen **Blatt**-Komponenten hinzufügen, einen anderen Wert in der Eigenschaft **Kopf-/Fußzeilendarstellung** besitzt. Ansonsten tritt [Prüfungsfehler](er-components-inspections.md#i16) auf. Die Fehlermeldung, die Sie erhalten, benachrichtigt Sie über die Inkonsistenz.
+
+Fügen Sie unter der hinzugefügten **Fußzeile**-Komponente die erforderlichen verschachtelten Komponenten der Typen **Text\\String**, **Text\\DateTime** oder eines anderen Typs hinzu. Konfigurieren Sie die Bindungen für diese Komponenten, um anzugeben, wie Ihre Seitenfußzeile ausgefüllt werden soll.
+
+Sie können auch spezielle [Formatierungscodes](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) verwenden, um den Inhalt einer generierten Fußzeile korrekt zu formatieren. Befolgen Sie die Schritte in [Beispiel 1](#example-1) im weiteren Verlauf des Themas, um zu erfahren, wie Sie diesen Ansatz verwenden.
+
+> [!NOTE]
+> Berücksichtigen Sie beim Konfigurieren von EB-Formaten unbedingt die [Spezifikationen und Beschränkungen in Excel](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) sowie die maximale Zeichenanzahl für eine einzelne Kopf- oder Fußzeile.
+
+## <a name="header-component"></a>Kopfzeilenkomponente
+
+Die **Kopfzeile**-Komponente wird verwendet, um Kopfzeilen am oberen Rand eines generierten Arbeitsblatts in einer Excel-Arbeitsmappe auszufüllen. Sie wird wie die **Fußzeile**-Komponente verwendet.
+
 ## <a name="edit-an-added-er-format"></a>Hinzugefügtes EB-Format bearbeiten
 
 ### <a name="update-a-template"></a>Vorlage aktualisieren
@@ -175,6 +204,48 @@ Wenn ein ausgehendes Dokument in einem Microsoft Excel-Arbeitsmappenformat gener
     >[!NOTE]
     > Die Neuberechnung der Formel wird manuell erzwungen, wenn ein generiertes Dokument in Excel zur Vorschau geöffnet wird.
     > Verwenden Sie diese Option nicht, wenn Sie ein EB-Ziel konfigurieren, das die Verwendung eines generierten Dokuments ohne Vorschau in Excel (PDF-Konvertierung, E-Mail usw.) voraussetzt, da das generierte Dokument möglicherweise keine Werte in Zellen enthält, die Formeln enthalten.
+
+## <a name="example-1-format-footer-content"></a><a name="example-1"></a>Beispiel 1: Fußzeileninhalt formatieren
+
+1. Verwenden Sie die bereitgestellten EB-Konfigurationen, um ein druckbares Freitext-Dokument (Free Text Invoice, FTI) zu [generieren](er-generate-printable-fti-forms.md) .
+2. Überprüfen Sie die Fußzeile des generierten Dokuments. Beachten Sie, dass es Informationen zur aktuellen Seitenzahl und zur Gesamtzahl der Seiten im Dokument enthält.
+
+    ![Die Fußzeile eines generierten Dokuments im Excel-Format überprüfen](./media/er-fillable-excel-footer-1.gif)
+
+3. [Öffnen](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) Sie im EB-Formatdesigner das Beispiel-EB-Format zur Überprüfung.
+
+    Die Fußzeile des Arbeitsblattes **Rechnung** wird basierend auf den Einstellungen von zwei **String**-Komponenten generiert, die sich unter der **Fußzeile**-Komponente befinden:
+
+    - Die erste **String**-Komponente füllt die folgenden speziellen Formatierungscodes aus, um Excel zu zwingen, bestimmte Formatierungen anzuwenden:
+
+        - **&C** – Mittiges Ausrichten des Fußzeilentextes.
+        - **&"Segoe UI,Regular"&8** – Darstellen des Fußzeilentextes in der Schrift "Segoe UI Regular" und in einer Größe von 8-Punkt.
+
+    - Die zweite **String**-Komponente füllt den Text aus, der die aktuelle Seitenzahl und die Gesamtzahl der Seiten im aktuellen Dokument enthält.
+
+    ![Die EB-Formatkomponente der Fußzeile auf der Seite „Formatdesigner“ überprüfen](./media/er-fillable-excel-footer-2.png)
+
+4. Passen Sie das Beispiel-EB-Format an, um die aktuelle Seitenfußzeile zu ändern:
+
+    1. [Erstellen](er-quick-start2-customize-report.md#DeriveProvidedFormat) Sie ein abgeleitetes **Freitextrechnung (Excel) benutzerdefiniert**-EB-Format, das auf dem Beispiel-EB-Format basiert.
+    2. Fügen Sie das erste neue Paar an **String**-Komponenten für die **Fußzeile**-Komponente des Arbeitsblattes **Rechnung** hinzu:
+
+        1. Fügen Sie eine **String**-Komponente hinzu, die den Firmennamen links ausrichtet und in der Größe 8-Punkt in der Schriftart "Segoe UI Regular" (**"&L&"Segoe UI,Regular"&8"**) darstellt.
+        2. Fügen Sie eine **String**-Komponente hinzu, die den Firmennamen ausfüllt (**model.InvoiceBase.CompanyInfo.Name**).
+
+    3. Fügen Sie das zweite neue Paar an **String**-Komponenten für die **Fußzeile**-Komponente des Arbeitsblattes **Rechnung** hinzu:
+
+        1. Fügen Sie eine **String**-Komponente hinzu, die das Verarbeitungsdatum rechts ausrichtet und in der Größe 8-Punkt in der Schriftart "Segoe UI Regular" (**"&L&"Segoe UI,Regular"&8"**) darstellt.
+        2. Fügen Sie eine **String**-Komponente hinzu, die das Verarbeitungsdatum in einem benutzerdefinierten Format ausfüllt (**""&nbsp;"&DATEFORMAT(SESSIONTODAY(), "JJJJ-MM-TT")**).
+
+        ![Überprüfen der EB-Formatkomponente der Fußzeile auf der Seite „Formatdesigner“](./media/er-fillable-excel-footer-3.png)
+
+    4. [Vervollständigen](er-quick-start2-customize-report.md#CompleteDerivedFormat) Sie die Entwurfsversion des abgeleiteten **Freitextrechnung (Excel) benutzerdefiniert**-EB-Formats.
+
+5. [Konfigurieren](er-generate-printable-fti-forms.md#configure-print-management) Sie die Druckverwaltung zur Verwendung des abgeleiteten **Freitextrechnung (Excel) benutzerdefiniert**-EB-Formats anstelle des Beispiel-EB-Formats.
+6. Generieren Sie ein druckbares FTI-Dokument, und überprüfen Sie die Fußzeile des generierten Dokuments.
+
+    ![Überprüfen der Fußzeile eines generierten Dokuments im Excel-Format](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,18 +13,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 41e2f8b1dc5f86220a4a2edeab24f82883e5157f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1091357f1d86bac17c860a41daaa2577035163ca
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687101"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569662"
 ---
 # <a name="employee-development-power-bi-content"></a>Power BI-Inhalt zur Mitarbeiterentwicklung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Power BI-Inhalt zur **Mitarbeiterentwicklung** beschrieben.
+In diesem Thema wird der Microsoft Power BI-Inhalt zur **Mitarbeiterentwicklung** beschrieben.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI-Inhalt enthalten sind
 Die Berichte, die im Power BI-Inhalt zur **Mitarbeiterentwicklung** enthalten sind, umfassen Diagramme und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.

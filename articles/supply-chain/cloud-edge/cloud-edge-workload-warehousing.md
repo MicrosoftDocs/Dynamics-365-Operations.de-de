@@ -18,12 +18,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 91e614889c719ae700b13e54150e5025d64e2b97
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104939"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580964"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -85,7 +85,14 @@ Der Hub besitzt die folgenden Daten:
 > [!NOTE]
 > Der Flow der eingehenden Einkaufsbestellung unterscheidet sich konzeptionell vom ausgehenden Flow. Sie können denselben Lagerort entweder auf der Skalierungseinheit oder dem Hub betreiben, je nachdem, ob die Bestellung für das Lager freigegeben wurde oder nicht. Sobald Sie eine Bestellung für den Lagerort freigegeben haben, können Sie nur mit dieser Bestellung arbeiten, wenn Sie an der Skalierungseinheit angemeldet sind.
 
-Wenn Sie den Prozess *Freigabe an Lager* verwenden, werden [*Lagerortaufträge*](cloud-edge-warehouse-order.md) erstellt und die Verantwortung für den zugehörigen Eingangsflow wird der Skalierungseinheit zugewiesen. Der Hub ist nicht in der Lage, eingehenden Empfang zu registrieren.
+Wenn Sie den Prozess *Freigabe an Lagerort* verwenden, werden [*Lagerort-Bestellungen*](cloud-edge-warehouse-order.md) erstellt, und die Eigentümerschaft des zugehörigen Empfangsflusses wird der Scale-Unit zugewiesen. Der Hub ist nicht in der Lage, eingehenden Empfang zu registrieren.
+
+Sie müssen sich am Hub anmelden, um den Prozess *Freigeben an Lagerort* zu verwenden. Gehen Sie zu einer der folgenden Seiten, um ihn auszuführen oder zu planen:
+
+- **Beschaffung und Bezugsquellenfindung > Bestellungen > Alle Bestellungen > Lagerort > Aktionen > Freigabe an Lagerort**
+- **Lagerortverwaltung > Freigabe an Lagerort > Automatische Freigabe von Einkaufsbestellungen**
+
+Wenn Sie **Automatische Freigabe von Bestellungen** verwenden, können Sie bestimmte Zeilen der Einkaufsbestellung anhand einer Abfrage auswählen. Ein typisches Szenario wäre, einen wiederkehrenden Batch-Job festzulegen, der alle bestätigten Zeilen der Einkaufsbestellung freigibt, die voraussichtlich am nächsten Tag eintreffen.
 
 Die Arbeitskraft kann den Empfangsprozess über eine Lagerort-App ausführen, die mit der Scale-Unit verbunden ist. Die Daten werden dann von der Scale-Unit aufgezeichnet und gegen den eingehenden Lagerauftrag gemeldet. Die Erstellung und Verarbeitung der nachfolgenden Einlagerung wird ebenfalls von der Scale-Unit übernommen.
 
@@ -222,7 +229,7 @@ Die folgende Tabelle zeigt, welche Funktionen im Eingang unterstützt werden und
 | Umlagerungsauftragsposition – Empfang und Einlagerung                        | Ja | Nr. |
 | Arbeit stornieren (eingehend)                                              | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | <p>Ja, aber nur, wenn die Option <b>Bon bei Stornierung von Arbeit abmelden</b> (auf der Seite <b>Parameter der Lagerortverwaltung</b>) deaktivier ist</p> |
 | Einkaufsbestellung Wareneingangsbearbeitung                          | Ja | Nr. |
-| Bestelleingang mit Unterlieferung                        | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein, da Sie nur die vollen Mengen von Lagerortauftragspositionen stornieren können |
+| Bestelleingang mit Unterlieferung                        | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Ja, aber nur, wenn Sie eine Stornoanforderung vom Hub aus stellen |
 | Bestelleingang mit Überlieferung                        | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Ja  |
 | Eingang mit Erstellung von *Cross-Docking*-Arbeit                   | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nr. |
 | Eingang mit Erstellung von *Qualitätsprüfungsauftrags*-Arbeit                  | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nr. |
