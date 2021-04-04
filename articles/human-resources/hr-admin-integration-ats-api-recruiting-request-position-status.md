@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3f7bae64f58f0bdc1603b3c1b5493f1ebcfa8de9
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 01e8aa5157d0ad1c01f996886e7845e49ab97603
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5126049"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464717"
 ---
 # <a name="recruiting-request-position-status"></a>Positionsstatus ders Personalbeschaffungsantrags
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In diesem Thema wird der Optionssatz zum Status der Personalbeschaffungsantragsposition für Dynamics 365 Human Resources beschrieben.
 

@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 203dbc5463bfcc4249e9ed73802a9a1fc153f260
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 4e4b33e72d1d1dd9cb78a251281abd3e125c3665
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130204"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466327"
 ---
 # <a name="develop-a-succession-plan"></a>Nachfolgeplan entwickeln
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Wenn Ihre Organisation wächst, müssen Sie mit der Nachfolgeplanung beginnen. Während der Nachfolgeplanung möchten Sie möglicherweise jemanden finden, der ähnliche Fähigkeiten wie eine andere Person hat. Die Qualifikationszuordnung ermöglicht es Ihnen, Ihre vorhandenen Mitarbeiter und Bewerber zu analysieren, um festzustellen, ob ihre Fertigkeiten denen eines wertgeschätzten Mitarbeiters übereinstimmen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

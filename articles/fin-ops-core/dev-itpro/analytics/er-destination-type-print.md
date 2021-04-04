@@ -3,10 +3,9 @@ title: Drucker-ER-Zieltyps
 description: In diesem Thema wird erläutert, wie für jede FOLDER- oder FILE-Komponente eines EB-Formats (elektronische Berichterstellung) ein Druckerziel konfiguriert werden kann.
 author: NickSelin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: c6e298f62ec69f349eb713d66313e535c7e01881
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 19613d9dfba21d591d96a2df45bedb80c043b3a7
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094078"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5561949"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Druckziel
 
@@ -48,8 +47,6 @@ Damit das **Drucker**-Ziel in der aktuellen Instanz von Microsoft Dynamics 365 F
 Das **Drucker**-Ziel kann nur für Dateikomponenten konfiguriert werden, die zum Generieren von Ausgaben im druckbaren PDF-Format (PDF Merger- oder PDF-Dateiformatelemente) oder Microsoft Office Excel-/Word-Format (Excel-Datei) verwendet werden. Wenn die Ausgabe im PDF-Format erstellt wird, wird sie an einen Drucker gesendet. Wenn die Ausgabe im Microsoft Office-Format generiert wird, wird es automatisch in das PDF-Format konvertiert und dann an einen Drucker gesendet.
 
 ### <a name="limitations"></a>Einschränkungen
-
-Diese Funktion ist eine Vorschau-Funktion und unterliegt den angegebenen Nutzungsbedingungen, die in [Ergänzende Nutzungsbedingungen für Microsoft Dynamics 365-Vorschauen](https://go.microsoft.com/fwlink/?linkid=2105274) beschrieben sind.
 
 Das **Drucker**-Ziel ist nur für Cloud-Bereitstellungen implementiert.
 

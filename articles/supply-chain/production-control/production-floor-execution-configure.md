@@ -8,18 +8,19 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e822463ac80be3b1e498f02cb1aad2b214fed815
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: d34f9c235df480658a0935d731f7267a87894067
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077476"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556313"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -41,7 +42,8 @@ Die Produktionsausführungsoberfläche selbst sowie mehrere der optionalen Einst
 
 ### <a name="the-production-floor-execution-interface"></a>Die Produktionsausführungsoberfläche
 
-Dies ist die wichtigste Funktion, die in diesem Thema beschrieben wird. Sie fügt die Produktionsausführungsoberfläche zu Ihrem System hinzu. Um sie zu aktivieren, schalten Sie die folgende Funktion in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:  
+Dies ist die wichtigste Funktion, die in diesem Thema beschrieben wird. Sie fügt die Produktionsausführungsoberfläche zu Ihrem System hinzu. Um sie zu aktivieren, schalten Sie die folgende Funktion in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
+
 - Produktionsbereich-Ausführung
 
 ### <a name="generate-license-plates"></a>Generieren von Ladungsträgern
@@ -79,6 +81,7 @@ Um Gerätekonfigurationen zu erstellen und zu verwalten, gehen Sie zu **Produkti
 
 Konfigurieren Sie als Nächstes die verschiedenen Einstellungen für die ausgewählte Gerätekonfiguration. Folgende Felder sind verfügbar:
 
+- **Nur Ein- und Auszeit** - Legen Sie diese Option auf *Ja* fest, um eine vereinfachte Oberfläche zu erstellen, die nur die Ein- und Auszeitfunktionalität bietet. Dadurch werden die meisten anderen Optionen auf dieser Seite deaktiviert. Sie müssen alle Zeilen aus dem Inforegister **Tab-Auswahl** entfernen, bevor Sie diese Option aktivieren können.
 - **Menge beim Ausstempeln melden** – Stellen Sie diese Option auf *Ja* ein, um die Mitarbeiter aufzufordern, beim Ausstempeln Feedback zu laufenden Vorgängen zu melden. Wird diese Option auf *Nein* eingestellt, werden Arbeiter nicht dazu aufgefordert.
 - **Mitarbeiter sperren** – Wenn diese Option auf *Nein* eingestellt ist, werden die Arbeitnehmer sofort nach der Registrierung abgemeldet (z. B. bei einem neuen Einzelvorgang). Das Gerät kehrt dann zur Anmeldeseite zurück. Wenn diese Option auf *Ja* festgelegt ist, bleibt jeder Mitarbeiter am Einzelvorgangsgerät angemeldet. Ein Mitarbeiter kann sich jedoch manuell abmelden, damit sich ein anderer Mitarbeiter anmelden kann, während das Einzelvorgangsgerät weiterhin unter demselben Systembenutzerkonto ausgeführt wird. Weitere Informationen zu diesen Arten von Konten finden Sie unter [Zugewiesene Benutzer](config-job-card-device.md#assigned-users).
 - **Verwenden Sie den tatsächlichen Zeitpunkt der Registrierung** – Stellen Sie diese Option auf *Ja* ein, um die Zeit für jede neue Registrierung so festzulegen, dass sie genau der Zeit entspricht, zu der die Registrierung von einem Arbeitnehmer eingereicht wurde. Wenn diese Option auf *Nein* eingestellt wird, wird stattdessen die Anmeldezeit verwendet. Normalerweise möchten Sie diese auf *Ja* einstellen, wenn Sie die Optionen **Mitarbeiter sperren** und/oder **Einzelner Arbeiter** auf *Ja* festgelegt haben, falls Mitarbeiter häufig länger angemeldet bleiben.

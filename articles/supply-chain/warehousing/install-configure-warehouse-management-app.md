@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e2ffd12011b133bb13b69b49d6e894c6a887a8a0
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142322"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487024"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installieren und Verbinden der mobilen Lagerortverwaltungs-App
 
@@ -31,11 +31,9 @@ ms.locfileid: "5142322"
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> In diesem Thema wird beschrieben, wie Sie die neue mobile Lagerortverwaltungs-App konfigurieren, die derzeit in der öffentlichen Vorschau angezeigt wird. Weitere Informationen zum Konfigurieren der alten Lagerort-App finden Sie unter [Lagerort-App installieren und Verbindung herstellen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Dieses Thema beschreibt, wie Sie die neue mobile App Lagerortverwaltung konfigurieren. Weitere Informationen zum Konfigurieren der alten Lagerort-App finden Sie unter [Lagerort-App installieren und Verbindung herstellen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-Die öffentliche Vorschau der mobilen Lagerortverwaltungs-App kann im Microsoft App Center heruntergeladen werden. Sie wird als eigenständige Komponente bereitgestellt. Daher müssen Sie sie auf jedes Gerät herunterladen und dann so konfigurieren, dass eine Verbindung mit der Microsoft Dynamics 365 Supply Chain Management-Umgebung hergestellt wird.
-
-In diesem Thema wird erläutert, wie Sie die mobile Lagerortverwaltungs-App auf jedem Ihrer mobilen Geräte installieren und für die Verbindung mit Ihrer Supply Chain Management-Umgebung konfigurieren. Sie können jedes Gerät manuell konfigurieren oder Verbindungseinstellungen über eine Datei oder durch Scannen eines QR-Codes importieren.
+In diesem Thema wird erklärt, wie Sie die Warehouse Management mobile App herunterladen und auf jedem Ihrer mobilen Geräte installieren und wie Sie die App für die Verbindung mit Ihrer Supply Chain Management Umgebung konfigurieren. Sie können jedes Gerät manuell konfigurieren oder Verbindungseinstellungen über eine Datei oder durch Scannen eines QR-Codes importieren.
 
 ## <a name="system-requirements"></a>Systemanforderungen
 
@@ -53,17 +51,27 @@ Bevor Sie die App verwenden können, muss eine zugehörige Funktion in Ihrem Sys
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Die mobile Lagerortverwaltungs-App erhalten
 
-Verwenden Sie einen der folgenden Links, um die App herunterzuladen:
+Bei kleineren Bereitstellungen können Sie die App typischerweise auf jedem Gerät aus dem entsprechenden Store installieren und dann die Verbindung zu den von Ihnen verwendeten Umgebungen manuell konfigurieren.
 
-- **Windows (UWP):** [App Center-Vorschauprogramm – Windows](https://go.microsoft.com/fwlink/?linkid=2154406)
+Bei größeren Bereitstellungen können Sie das Bereitstellen und/oder die Konfiguration von Apps automatisieren, was bequemer sein kann, wenn Sie viele Geräte verwalten. Sie könnten z.B. eine Lösung für die Verwaltung von mobilen Geräten und mobilen Anwendungen wie [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) verwenden. Weitere Informationen dazu, wie Sie Intune zum Hinzufügen von Anwendungen verwenden, finden Sie unter [Microsoft Intune Apps hinzufügen](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
-    Da es sich bei dieser App um eine Vorschau-App handelt, sind einige zusätzliche Schritte erforderlich, um sie zu installieren. Einzelheiten finden Sie unter [Einen Build aus dem App Center installieren](https://docs.microsoft.com/appcenter/distribution/installation).
+### <a name="install-the-app-from-an-app-store"></a>Installieren Sie die App aus einem App-Store
 
-- **Android:** [App Center-Vorschau-Programm – Android](https://go.microsoft.com/fwlink/?linkid=2154613)
+Der einfachste Weg, die App auf einem einzelnen Gerät zu installieren, ist die Installation aus einem App-Store, der immer die neueste allgemein verfügbare Version bereitstellt. Microsoft Intune kann auch Apps aus den App-Stores holen. Verwenden Sie einen der folgenden Links, um die App aus einem App-Store zu installieren:
 
-    Da es sich bei dieser App um eine Vorschau-App handelt, sind einige zusätzliche Schritte erforderlich, um sie zu installieren. Einzelheiten finden Sie unter [Testen von Android-Apps](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+- **Windows (UWP):** [Lagerortverwaltung im Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 
-Bei kleineren Bereitstellungen können Sie die App über den entsprechenden Store auf jedem Gerät installieren und anschließend die Verbindung zu den von Ihnen verwendeten Umgebungen manuell konfigurieren. Sie können jedoch auch die App-Bereitstellung und/oder -Konfiguration automatisieren. Dieser Ansatz ist möglicherweise praktisch, wenn Sie viele Geräte verwalten und eine Lösung zur Verwaltung mobiler Geräte und zur Verwaltung mobiler Anwendungen wie [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) verwenden. Weitere Informationen dazu, wie Sie Intune zum Hinzufügen von Anwendungen verwenden, finden Sie unter [Microsoft Intune Apps hinzufügen](https://docs.microsoft.com/mem/intune/apps/apps-add).
+- **Android:** [Lagerortverwaltung im Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
+
+### <a name="download-the-app-from-microsoft-app-center"></a>Laden Sie die App aus dem Microsoft App Center herunter
+
+Als Alternative zur Installation aus einem App-Store können Sie die App stattdessen auch aus dem Microsoft App Center herunterladen. Das App Center stellt installierbare Pakete zur Verfügung, die Sie per Sideload laden können. Zusätzlich zur aktuellen Version können Sie im App Center auch frühere Versionen herunterladen und eventuell Vorschauversionen mit neuen Funktionen, die Sie ausprobieren können. Um aktuelle, frühere oder Vorschau-Versionen der mobilen App „Lagerortverwaltung“ aus dem Microsoft App Center herunterzuladen, verwenden Sie einen der folgenden Links:
+
+- **Windows (UWP):** [Warehouse Management (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+    Anweisungen zur Installation eines heruntergeladenen Pakets auf einem Windows-Gerät und zum anschließenden Festlegen der erforderlichen Zertifikate finden Sie unter [Installieren eines Builds aus dem App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+
+- **Android:** [Lagerortverwaltung (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+    Wenn Sie eine Vorschau-Version herunterladen, sind ein paar zusätzliche Schritte erforderlich, um sie zu installieren. Einzelheiten finden Sie unter [Testen von Android-Apps](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Webdienstanwendung in Azure Active Directory erstellen
 

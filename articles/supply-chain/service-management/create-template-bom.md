@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b34cc2e9921df6e3ef619e2b2adaf8d2069fbac
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5afcb8171b674281faf8100d5c01fdff8d6ff764
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974559"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470784"
 ---
 # <a name="create-a-template-bom"></a>Erstellen einer Vorlagenstückliste   
 
@@ -33,9 +33,9 @@ Eine Vorlagenstückliste kann auf folgende Arten erstellt werden. Bei allen Verf
 
 ## <a name="create-a-template-bom-manually"></a>Manuelles Erstellen einer Vorlagenstückliste
 
-1.  Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Vorlagenstücklisten**.
+1.  Gehen Sie zu **Serviceverwaltung** \> **Einrichten** \> **Serviceobjekte** \> **Vorlage Stücklisten**.
 
-2.  Drücken Sie STRG+N, um das Formular **Vorlagenstückliste erstellen** zu öffnen.
+2.  Wählen Sie **Neu**, um das Formular **Vorlagenstückliste erstellen** zu öffnen.
 
 3.  Wählen Sie unter **Stücklistenpositionen aus Referenz kopieren** die Option **Manuell** aus.
 
@@ -45,15 +45,15 @@ Eine Vorlagenstückliste kann auf folgende Arten erstellt werden. Bei allen Verf
 
 6.  Geben Sie mithilfe der Felder **Von Datum** und **Bis Datum** ein Datumsintervall an, in dem die Vorlagenstückliste aktiv sein soll.
 
-7.  Klicken Sie auf **OK**.
+7.  Wählen Sie **OK**.
 
 Eine neue leere Vorlagenstückliste wird erstellt.
 
 ## <a name="create-a-template-bom-based-on-another-template-bom"></a>Erstellen einer Vorlagenstückliste auf Basis einer anderen Vorlagenstückliste
 
-1.  Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Vorlagenstücklisten**.
+1.  Wählen Sie **Dienstverwaltung** \> **Einrichten** \> **Dienstobjekte** \> **Vorlagenstücklisten**.
 
-2.  Drücken Sie STRG+N, um das Formular **Vorlagenstückliste erstellen** zu öffnen.
+2.  Wählen Sie **Neu**, um das Formular **Vorlagenstückliste erstellen** zu öffnen.
 
 3.  Wählen Sie unter **Stücklistenpositionen aus Referenz kopieren** die Option **Vorlagenstückliste** aus.
 
@@ -63,15 +63,15 @@ Eine neue leere Vorlagenstückliste wird erstellt.
 
 6.  Geben Sie mithilfe der Felder **Von Datum** und **Bis Datum** ein Datumsintervall an, in dem die Vorlagenstückliste aktiv sein soll.
 
-7.  Klicken Sie auf **OK**.
+7.  Wählen Sie **OK**.
 
 Eine neue Vorlagenstückliste wird erstellt. Diese enthält die gleichen Positionen wie die ursprüngliche Vorlagenstückliste.
 
 ## <a name="create-a-template-bom-based-on-an-item-bom"></a>Erstellen einer Vorlagenstückliste auf Basis einer Artikelstückliste
 
-1.  Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Vorlagenstücklisten**.
+1.  Wählen Sie **Dienstverwaltung** \> **Einrichten** \> **Dienstobjekte** \> **Vorlagenstücklisten**.
 
-2.  Drücken Sie STRG+N, um das Formular **Vorlagenstückliste erstellen** zu öffnen.
+2.  Wählen Sie **Neu**, um das Formular **Vorlagenstückliste erstellen** zu öffnen.
 
 3.  Wählen Sie unter die **Stücklistenpositionen aus Referenz kopieren** **Stückliste** aus.
 
@@ -81,15 +81,15 @@ Eine neue Vorlagenstückliste wird erstellt. Diese enthält die gleichen Positio
 
 6.  Geben Sie mithilfe der Felder **Von Datum** und **Bis Datum** ein Datumsintervall an, in dem die Vorlagenstückliste aktiv sein soll.
 
-7.  Klicken Sie auf **OK**.
+7.  Wählen Sie **OK**.
 
 Eine neue Vorlagenstückliste erstellt. Diese enthält die gleichen Positionen, die auch in der unter **Stücklisten** aufgeführten Stückliste enthalten sind.
 
 ## <a name="create-a-template-bom-based-on-a-production-bom"></a>Erstellen einer Vorlagenstückliste auf Basis einer Produktionsstückliste
 
-1.  Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Vorlagenstücklisten**.
+1.  Wählen Sie **Dienstverwaltung** \> **Einrichten** \> **Dienstobjekte** \> **Vorlagenstücklisten**.
 
-2.  Drücken Sie STRG+N, um das Formular **Vorlagenstückliste erstellen** zu öffnen.
+2.  Wählen Sie **Neu**, um das Formular **Vorlagenstückliste erstellen** zu öffnen.
 
 3.  Wählen Sie unter die **Stücklistenpositionen aus Referenz kopieren** **Produktion** aus.
 
@@ -99,7 +99,7 @@ Eine neue Vorlagenstückliste erstellt. Diese enthält die gleichen Positionen, 
 
 6.  Geben Sie mithilfe der Felder **Von Datum** und **Bis Datum** ein Datumsintervall an, in dem die Vorlagenstückliste aktiv sein soll.
 
-7.  Klicken Sie auf **OK**.
+7.  Wählen Sie **OK**.
 
 Eine neue Vorlagenstückliste erstellt. Diese enthält die gleichen Positionen, die auch in der unter **Stückliste** aufgeführten Stückliste enthalten sind.
 
