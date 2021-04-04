@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8756dc22ffd64f836740124ce08dadca84207147
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 2391ec11bd497c69ddb19e29533f5441d7374877
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078263"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501101"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Überschreiben des Standardreservierungsprinzips für Materialien in der Produktion
 
@@ -38,11 +39,11 @@ Wenn es beispielsweise um Rohstoffe oder Substanzen geht, die Kommissionierarbei
 Bevor Sie die Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 
 - **Modul:** *Produktionssteuerung*
-- **Funktionsname:** *Standardreservierung für Produktion überschreiben*
+- **Name der Funktion:** *(Vorschau) Standard-Produktionsreservierung außer Kraft setzen*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Zuweisen einer Artikelmodellgruppe zu einer Produktionsreservierungsrichtlinie
 
-1. Wechseln Sie zu **Kostenverwaltung &gt; Einrichtung der Bestandsbuchhaltungsrichtlinien &gt; Artikelmodellgruppen**.
+1. Wechseln Sie zu **Kostenverwaltung \> Einrichtung der Bestandsbuchhaltungsrichtlinien \> Artikelmodellgruppen**.
 1. Erstellen Sie eine Artikelmodellgruppe aus oder erstellen Sie eine.
 1. Aktivieren Sie im Inforegister **Bestandrichtlinie** das Kontrollkästchen **Standardreservierung für Produktion überschreiben**.
 1. Wählen Sie im Feld **Reservierung** das Reservierungsprinzip für Artikel aus, die zur ausgewählten Modellgruppe gehören. (Bei diesen Artikeln handelt es sich um solche, die sich in einer Stücklisten- oder Formelposition befinden.)

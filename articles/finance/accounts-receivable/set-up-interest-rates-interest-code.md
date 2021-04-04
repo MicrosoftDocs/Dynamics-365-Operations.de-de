@@ -3,7 +3,7 @@ title: Einrichten von Zinssätzen für einen Zinscode
 description: Zinscodes enthalten Einstellungen, die festlegen, wann Zinsen erhoben werden und wie Zinsen für fällige Rechnungen berechnet werden.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1169a397dfdd32f728a09e2ad279842edc289c19
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5d9ff856e34eb894c5d0ab5fe17c8e95f62fff57
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971627"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555364"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Einrichten von Zinssätzen für einen Zinscode
 
@@ -46,10 +46,19 @@ Sie können Zinssätze einrichten, die einen angegebenen Prozentsatz berechnen.
 
 - Der Zinsbetrag gilt für alle Währungen.
 - Es können optional Zinsbetraggrenzen eingegeben werden.
-- Der <strong>Prozentsatz</strong> wird <strong>im Feld **Grundlage für Zinsberechnung</strong> auf der Seite <strong>Einrichten von Zinscodes</strong> ausgewählt**.
+- Der **Prozentsatz** wird im Feld **Grundlage für Zinsberechnung** auf der Seite **Zinscodes einrichten** ausgewählt.
 
 Um beispielsweise einen Zinscode einzurichten, der Zinsen in Höhe von 5 Prozent für alle 2 Monate festlegt die die Rechnungszahlung das Fälligkeitsdatum überschreitet, geben Sie 2 im Feld **Zinsen berechnen alle** ein wählen Sie **Monat** aus.
 
+> [!NOTE] 
+> Der neue Algorithmus zur Berechnung der Zinsrechnung wird mithilfe der Funktionsverwaltung hinzugefügt. Aktivieren Sie zur Verwendung dieses Algorithmus die Funktion **(GBL) Berechnung der Zinsen pro Tag als jährlichen Prozentsatz geteilt durch 365 zulassen**. Informationen zur Aktivierung der Funktionen finden Sie unter [Funktionsverwaltungsüberblick](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> 
+> Die Formel zur Berechnung des Zinsrechnungsbetrags lautet: 
+>  
+> Zinsrechnungsbetrag = geschuldeter Betrag * jährliche Zinsen % / 365 * Anzahl der verspäteten Tage
+>  
+> Diese Funktion ist ab Version 10.0.18 und höher verfügbar.    
+ 
 ## <a name="interest-rates-based-on-amounts"></a>Zinssätzen auf der Basis von Beträgen
 Sie können Zinssätze einrichten, die einen angegebenen Betrag pro Währung berechnen.
 - Für jede Währung wird im Zinscode ein Zinsbetrag angegeben.

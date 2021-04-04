@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cb696c365e02ab3e3b28da19b8b33f1975c142f8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7bd1268893d0869d2414b944493c8b8859f27abc
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983543"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501125"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Produktprogrammplanung mit Bedarfsprognosen
 
@@ -249,7 +249,7 @@ Deshalb werden die folgenden Aufträge erstellt.
 Ein Planungsverrechnungsschlüssel wird in den Formularen **Transaktionen - Planzahlenverrechnungsschlüssel** und **Prozentplanzahlenverrechnungsschlüssel**-Methoden zum Reduzieren des Planungsbedarfes verwendet. Gehen Sie folgendermaßen vor, um einen Planzahlenverrechnungsschlüssel zu erstellen und einzurichten.
 
 1. Gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Abdeckung \> Planzahlenverrechnungsschlüssel**.
-2. Klicken Sie auf **Neu** oder drücken Sie **STRG+N**, um einen neuen Planzahlenverrechnungsschlüssel zu erstellen.
+2. Wählen Sie **Neu**, um einen Reduzierungsschlüssel zu erstellen.
 3. Im Feld **Planzahlenverrechnungsschlüssel** geben Sie eine eindeutige Kennung für den Planzahlenverrechnungsschlüssel ein. Geben Sie im Feld  **Namen** einen Namen ein. 
 4. Hier können Sie die Perioden sowie die Planzahlenverrechnungsschlüsselprozentsatz in jeder Periode eingeben:
 
@@ -265,8 +265,8 @@ Ein Planzahlenverrechnungsschlüssel muss der Deckungsgruppe des Artikels zugewi
 2. Wählen Sie im Feld **Planzahlenverrechnungsschlüssel** auf der Registerkarte **Andere** den Planzahlenverrechnungsschlüssel aus, der der Deckungsgruppe zugewiesen werden soll. Der Planzahlenverrechnungsschlüssel gilt dann für die Artikel, die zur Deckungsgruppe gehören.
 3. Wenn der Planzahlenverrechnungsschlüsse eine Reduktion während der Produktprogrammplanung verwendet werden soll, müssen Sie diese Einstellungen in der Absatzplanung oder in den Einstellungen der Produktprogrammplanung definieren. Gehen Sie zu den folgenden Standorten:
 
-    - Produktprogrammpläne \>Einstellungen \>Pläne \> Absatzplanungen
-    - Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne
+    - **Produktprogrammplanung \> Einrichten \> Pläne \> Prognosepläne**
+    - **Produktprogrammplanung \> Einrichten \> Pläne \> Gesamtpläne**
 
 4. Auf der Seite **Absatzpläne** oder **Produktprogrammpläne** auf dem Inforegister **Allgemeine** im Feld **Methode, um die Planungsbedarfe zu reduzieren**, wählen Sie entweder **Prozent - Planzahlenverrechnungsschlüssel** oder **Transaktionen - Planzahlenverrechnungsschlüssel** aus.
 
@@ -274,5 +274,69 @@ Ein Planzahlenverrechnungsschlüssel muss der Deckungsgruppe des Artikels zugewi
 
 Wenn Sie **Transaktionen - Planzahlenverrechnungsschlüssel** oder **Transaktioen - dynamische Periode** als Methode für das Reduzieren von Planungsbedarfen aktivieren, können Sie angeben, welche Transaktionen die Planung verringert. Wählen Sie auf der Seite **Dispositionssteuerungsgruppe** im Inforegister **Sonstiges** für das Feld **Planungswert verringern um** die Option **Alle Transaktionen** aus, wenn alle Transaktionen die Planung reduzieren sollen, oder die Option **Aufträge**, wenn nur Aufträge die Planung reduzieren sollen.
 
+## <a name="forecast-models-and-submodels"></a>Prognosemodelle und Untermodelle
+
+Dieser Abschnitt beschreibt, wie Sie Prognosemodelle erstellen und wie Sie mehrere Prognosemodelle durch Festlegen von Untermodellen kombinieren können.
+
+Ein *Prognosemodell* benennt und identifiziert eine bestimmte Planung. Nachdem Sie das Prognosemodell erstellt haben, können Sie ihm Prognosezeilen hinzufügen. Um Prognosezeilen für mehrere Artikel hinzuzufügen, verwenden Sie die Seite **Bedarfsplanung Zeilen**. Um Planungszeilen für einen bestimmten ausgewählten Artikel hinzuzufügen, verwenden Sie die Seite **Freigegebene Produkte**.
+
+Ein Prognosemodell kann Prognosen aus anderen Prognosemodellen enthalten. Dazu fügen Sie andere Prognosemodelle als *Untermodelle* eines übergeordneten Prognosemodells hinzu. Sie müssen jedes relevante Modell erstellen, bevor Sie es als Untermodell eines übergeordneten Prognosemodells hinzufügen können.
+
+Die sich daraus ergebende Struktur bietet Ihnen eine leistungsfähige Möglichkeit zur Steuerung von Planungen, da Sie damit die Eingaben aus mehreren einzelnen Planungen kombinieren (aggregieren) können. Daher ist es vom Standpunkt der Planung aus gesehen einfach, Prognosen für Simulationen zu kombinieren. Sie könnten z. B. eine Simulation festlegen, die auf der Kombination einer regulären Prognose mit der Planung für eine Frühjahrsaktion basiert.
+
+### <a name="submodel-levels"></a>Untermodellebenen
+
+Es gibt keine Begrenzung für die Anzahl der Untermodelle, die zu einem übergeordneten Planungsmodell hinzugefügt werden können. Die Struktur kann jedoch nur eine Ebene tief sein. Mit anderen Worten: Ein Prognosemodell, das ein Untermodell eines anderen Prognosemodells ist, kann keine eigenen Untermodelle haben. Wenn Sie einem Prognosemodell Untermodelle hinzufügen, prüft das System, ob dieses Prognosemodell bereits ein Untermodell eines anderen Prognosemodells ist.
+
+Wenn die Produktprogrammplanung auf ein Untermodell stößt, das seine eigenen Untermodelle hat, erhalten Sie eine Fehlermeldung.
+
+#### <a name="submodel-levels-example"></a>Beispiel für Untermodellebenen
+
+Prognosemodell A hat Prognosemodell B als Untermodell. Daher kann das Planungsmodell B keine eigenen Untermodelle haben. Wenn Sie versuchen, ein Untermodell zu Prognosemodell B hinzuzufügen, erhalten Sie die folgende Fehlermeldung: „Prognosemodell B ist ein Untermodell für Modell A.“
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Aggregieren von Prognosen über Prognosemodelle hinweg
+
+Prognosezeilen, die am selben Tag auftreten, werden über ihr Prognosemodell und dessen Untermodelle aggregiert.
+
+#### <a name="aggregation-example"></a>Beispiel für Aggregation
+
+Prognosemodell A hat die Prognosemodelle B und C als Untermodelle.
+
+- Prognosemodell A enthält eine Bedarfsplanung für 2 Stück (Stk) am 15. Juni.
+- Prognosemodell B enthält eine Bedarfsplanung für 3 Stk. am 15. Juni.
+- Prognosemodell C enthält eine Bedarfsplanung für 4 Stk. am 15. Juni.
+
+Die resultierende Bedarfsplanung ist eine einzelne Planung für 9 Stk (2 + 3 + 4) am 15. Juni.
+
+> [!NOTE]
+> Jedes Untermodell verwendet seine eigenen Parameter und nicht die Parameter des übergeordneten Prognosemodells.
+
+### <a name="create-a-forecast-model"></a>Erstellen eines Prognosemodells
+
+Gehen Sie folgendermaßen vor, um ein Prognosemodell zu erstellen.
+
+1. Gehen Sie zu **Produktprogrammplanung \> Einrichten \> Bedarfsplanung \> Prognosemodelle**.
+1. Wählen Sie im Aktivitätsbereich **Neu** aus.
+1. Legen Sie die folgenden Felder für das neue Prognosemodell fest:
+
+    - **Modell** - Geben Sie einen eindeutigen Bezeichner für das Modell ein.
+    - **Name** - Geben Sie einen beschreibenden Namen für das Modell ein.
+    - **Gestoppt** - Normalerweise sollten Sie diese Option auf *Nein* festlegen. Legen Sie sie nur dann auf *Ja* fest, wenn Sie die Bearbeitung aller Zeilen der Planung, die dem Modell zugeordnet sind, verhindern wollen.
+
+    > [!NOTE]
+    > Das Feld **In Cash Flow Prognosen einbeziehen** und die Felder auf dem Inforegister **Projekt** haben keinen Bezug zur Produktprogrammplanung. Daher können Sie sie in diesem Zusammenhang ignorieren. Sie müssen sie nur berücksichtigen, wenn Sie mit Planungen für das Modul **Projektmanagement und Buchhaltung** arbeiten.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Zuweisen von Untermodellen zu einem Prognosemodell
+
+Um einem Planungsmodell Untermodelle zuzuweisen, gehen Sie wie folgt vor.
+
+1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Prognose \> Prognosemodelle**.
+1. Wählen Sie im Listenbereich das Prognosemodell, für das Sie ein Untermodell festlegen wollen.
+1. Wählen Sie auf der Inforegisterkarte **Untermodell** die Option **Hinzufügen**, um dem Raster eine Zeile hinzuzufügen.
+1. Legen Sie in der neuen Zeile die folgenden Felder fest.
+
+    - **Submodell** - Wählen Sie das Planungsmodell, das Sie als Untermodell hinzufügen möchten. Dieses Planungsmodell muss bereits existieren und es darf keine eigenen Untermodelle haben.
+    - **Name** - Geben Sie einen beschreibenden Namen für das Untermodell ein. Dieser Name kann z. B. die Beziehung des Untermodells zum übergeordneten Prognosemodell angeben.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

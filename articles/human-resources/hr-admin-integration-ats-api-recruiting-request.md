@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 572ee0755e331d19b41442e3614effb92db95a92
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: b89d257e3874ad7395c0a2c02f259c2f063aa8d0
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125424"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500621"
 ---
 # <a name="recruiting-request"></a>Personalbeschaffungsantrag
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In diesem Thema wird die Personalbeschaffungsantrag-Entität für Dynamics 365 Human Resources beschrieben.
 
@@ -98,7 +100,8 @@ Beschreibt einen Personalbeschaffungsantrag für eine Stelle.
 | **Wert der Stellentypkennung**<br>_mshr_fk_jobtype_id_value<br>*GUID* | Schreibgeschützt<br>Optional<br>Fremdschlüssel: mshr_hcmjobtypeentityid der Entität mshr_hcmjobtypenentity | Der vom System generierte eindeutige Bezeichner des Stellentyps, der mit der Stelle für den Personalbeschaffungsantrag verknüpft ist. |
 | **Befreiungsstatus**<br>mshr_exemptstatus<br>*JobExemptStatus*-Optionssatz | Schreibgeschützt<br>Optional | Der FLSA-Ausnahmestatus basierend auf dem Stellentyp. |
 | **Geschätztes Startdatum**<br>mshr_estimatedstartdate<br>*Datum* | Lesen/Schreiben<br>Erforderlich | Das voraussichtliche Datum, an dem ein Kandidat seine Arbeit aufnehmen würde. |
-| **Externe Beschreibung**<br>mshr_externaldescription<br>*Zeichenfolge* | Lesen/Schreiben<br>Optional | Eine Beschreibung der Stelle/der Position für den Kandidaten. | Untergrenze der Vergütung<br>mshr_compensationlowthreshold<br>*Doppelt* | Lesen/Schreiben<br>Optional | Untergrenze für die Vergütungsstufe. |
+| **Externe Beschreibung**<br>mshr_externaldescription<br>*Zeichenfolge* | Lesen/Schreiben<br>Optional | Eine Beschreibung der Stelle/der Position für den Kandidaten. | 
+| **Untergrenze der Vergütung**<br>mshr_compensationlowthreshold<br>*Doppelt* | Lesen/Schreiben<br>Optional | Untergrenze für die Vergütungsstufe. |
 | **Vergütungskontrollpunkt**<br>mshr_compensationcontrolpoint<br>*Doppelt* | Lesen/Schreiben<br>Optional | Kontrollpunkt für die Vergütungsstufe. |
 | **Höchstgrenze der Vergütung**<br>mshr_compensationhighthreshold<br>*Doppelt* | Lesen/Schreiben<br>Optional | Höchstgrenze für die Vergütungsstufe. |
 | **Vergütungsstufe**<br>mshr_compensationlevelid<br>*Zeichenfolge* | Lesen/Schreiben<br>Optional | Die Vergütungsstufe der Stelle. Eine Stelle kann mit mehreren Vergütungsstufen eingerichtet werden. Dieses Attribut gibt die ausgewählte Stellenvergütungsstufe für diese Anforderung an. |

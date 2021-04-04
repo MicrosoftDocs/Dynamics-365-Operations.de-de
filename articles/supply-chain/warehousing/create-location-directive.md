@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
+ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963309"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470518"
 ---
 # <a name="work-with-location-directives"></a>Arbeiten mit Lagerplatzrichtlinien
 
@@ -239,7 +239,7 @@ Sie können Lagerplatzrichtlinien-Aktivitäten für jede Position definieren. Er
     - **Aufrunden bis zum vollen LP und FEFO-Charge** - Diese Strategie kombiniert die Elemente der Strategien *FEFO-Chargenreservierung* und *Aufrunden bis zu einem vollen LP*. Sie ist nur für chargenaktivierte Elemente und Lagerplatzrichtlinien gültig, die einen Arbeitstyp *Pick* haben. Die Zeile muss chargenaktiviert sein, um die Strategie *FEFO-Chargenreservierung* zu verwenden, und die Strategie *Aufrunden bis zu einem vollen LP* kann nur für die Wiederbeschaffung verwendet werden. Wenn diese Strategie zusammen mit einem Lagerplatz-Limit konfiguriert ist, kann sie dazu führen, dass der gewählte Lagerplatz überlastet wird und Lagerplatz-Limits ignoriert werden.
     - **Auf einen vollen LP aufrunden** - Diese Strategie wird verwendet, um die Bestandsmenge aufzurunden, sodass sie mit der Ladungsträgermenge übereinstimmt, die den zu entnehmenden Elementen zugeordnet ist. Sie können diese Strategie nur für Lagerplatzrichtlinien des Typs *Pick* zur Wiederbeschaffung verwenden. Wenn diese Strategie zusammen mit einem Lagerplatz-Limit konfiguriert ist, kann sie dazu führen, dass der gewählte Lagerplatz überlastet wird und Lagerplatz-Limits ignoriert werden.
     - **Kennzeichen geführt** - Verwenden Sie diese Strategie, wenn Sie den Auftrag an das Lagerort freigeben, um die Pick-and-Put-Arbeit zu erstellen. Sie können diesen Ansatz für mehrere Ladungsträger verwenden. Diese Strategie versucht, die Lagerplätze mit den angeforderten Ladungsträgern, die mit den Transportauftragszeilen verknüpft wurden, zu reservieren und die Kommissionierarbeit zu erstellen. Wenn diese Aktionen jedoch nicht durchgeführt werden können, Sie aber dennoch Kommissionierarbeit erstellen möchten, sollten Sie auf eine andere Strategie für Lagerplatzrichtlinien-Aktionen zurückgreifen. Abhängig von Ihren Geschäftsprozessanforderungen möchten Sie vielleicht auch in einem anderen Bereich des Lagers nach Bestand suchen.
-    - **Leerer Lagerplatz ohne eingehende Arbeit** - Verwenden Sie diese Strategie, um leere Lagerplätze zu finden. Ein Lagerplatz wird als leer angesehen, wenn er keinen physischen Bestand und keine erwartete eingehende Arbeit hat. Sie können diese Strategie nur für Lagerplatzrichtlinien verwenden, die eine Arbeitsart von *Pick* haben.
+    - **Leerer Lagerplatz ohne eingehende Arbeit** - Verwenden Sie diese Strategie, um leere Lagerplätze zu finden. Ein Lagerplatz wird als leer angesehen, wenn er keinen physischen Bestand und keine erwartete eingehende Arbeit hat. Sie können diese Strategie nur für Lagerplatzrichtlinien verwenden, die einen Arbeitstyp von *Einlagern* haben.
     - **Lagerplatzfälligkeit FIFO** - Verwenden Sie die Strategie „First in, first out“ (FIFO), um sowohl chargenverfolgte Artikel als auch nicht chargenverfolgte Artikel zu versenden, basierend auf dem Datum, an dem der Bestand ins Lager kam. Diese Funktionalität kann besonders für nicht chargenverfolgte Bestände nützlich sein, bei denen kein Verfallsdatum für die Sortierung verfügbar ist. Die FIFO-Strategie findet den Lagerplatz, der das älteste Verfallsdatum enthält, und teilt dann die Kommissionierung basierend auf diesem Verfallsdatum zu.
     - **Lagerplatzfälligkeit LIFO** - Verwenden Sie die LIFO-Strategie (last in, last out), um sowohl chargenverfolgte Elemente als auch nicht chargenverfolgte Elemente zu versenden, basierend auf dem Datum, an dem der Bestand ins Lager kam. Diese Funktionalität kann besonders für nicht chargenverfolgte Bestände nützlich sein, bei denen kein Verfallsdatum für die Sortierung verfügbar ist. Die LIFO-Strategie findet den Lagerplatz, der das jüngste Alterungsdatum enthält, und weist dann die Kommissionierung basierend auf diesem Alterungsdatum zu.
 

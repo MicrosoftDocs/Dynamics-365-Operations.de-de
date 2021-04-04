@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c486567934f90a69aad3650d689fbff3256d397
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 777dfa2078adf31d651003f1075203c9b016ab1a
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974707"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470713"
 ---
-# <a name="create-service-subscriptions-from-a-subscription-group"></a>Erstellen von Daueraufträgen auf der Grundlage einer Dauerauftragsgruppe 
+# <a name="create-service-subscriptions-from-a-subscription-group"></a>Erstellen von Servicedaueraufträgen von einer Dauerauftragsgruppe aus 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klicken Sie auf **Servicemanagement** \> **Einrichtung** \> **Daueraufträge** \> **Dauerauftragsgruppen**.
+1.  Wählen Sie **Service-Verwaltung** \> **Einrichten** \> **Service-Abonnements** \> **Abonnementgruppen**.
 
 2.  Wählen Sie eine Dauerauftragsgruppe aus.
 
-3.  Klicken Sie auf die Schaltfläche **Servicedaueraufträge**.
+3.  Wählen Sie die Schaltfläche **Service-Abonnements**.
 
-4.  Erstellen Sie durch Drücken von STRG+N einen neuen Dauerauftrag. Im Feld für die Dauerauftragsgruppe werden Informationen aus der Dauerauftragsgruppe im Formular **Dauerauftrag** angezeigt.
+4.  Wählen Sie **Neu**, um ein neues Abonnement zu erstellen. Im Feld für die Dauerauftragsgruppe werden Informationen aus der Dauerauftragsgruppe im Formular **Dauerauftrag** angezeigt.
 
 5.  Geben Sie Informationen in die verbleibenden Felder ein.
 

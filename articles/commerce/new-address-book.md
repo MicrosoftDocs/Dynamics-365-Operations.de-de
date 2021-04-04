@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a2887bdb09b9c5754a2bb17b2cd8053b5d4fb273
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6b25e4d560d94c3481b717939e28f1eaa2f2ecde
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976638"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477849"
 ---
 # <a name="create-new-address-book"></a>Erstellen eines neuen Adressbuchs
-
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie ein neues Adressbuch in Microsoft Dynamics 365 Commerce erstellen.
-
-## <a name="overview"></a>Übersicht
 
 Adressbücher werden in Commerce aus verschiedenen Gründen verwendet, z. B. zum Speichern von Kundenlisten und Mitarbeiterlisten für einen Kanal. Adressbücher können für einen einzelnen Kanal verwendet oder von mehreren Kanälen gemeinsam genutzt werden.
 

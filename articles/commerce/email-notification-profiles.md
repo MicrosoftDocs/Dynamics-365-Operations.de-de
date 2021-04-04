@@ -1,9 +1,9 @@
 ---
 title: Ein E-Mail-Benachrichtigungsprofil einrichten
 description: In diesem Thema wird beschrieben, wie Sie ein E-Mail-Benachrichtigungsprofil in Microsoft Dynamics 365 Commerce erstellen.
-author: samjarawan
+author: bicyclingfool
 manager: annbe
-ms.date: 03/31/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -13,26 +13,23 @@ ms.reviewer: v-chgri
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: samjar
+ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9378fb200a239433f2023bb90f72840dace1c0eb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d82a1abe68ff6e162acb75c6fdc1e207af11c279
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000823"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555306"
 ---
-# <a name="set-up-an-email-notification-profile"></a>Ein E-Mail-Benachrichtigungsprofil einrichten
-
+# <a name="set-up-an-email-notification-profile"></a>E-Mail-Benachrichtigungsprofil einrichten
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie ein E-Mail-Benachrichtigungsprofil in Microsoft Dynamics 365 Commerce erstellen.
 
-## <a name="overview"></a>Übersicht
-
-Bevor Sie Kanäle erstellen, sollten Sie ein Profil einrichten, um sicherzustellen, dass E-Mail-Benachrichtigungen für verschiedene Ereignisse gesendet werden können, z. B. Auftragserstellung, Auftragsversandstatus und Zahlungsfehler.
+Wenn Sie Kanäle erstellen, können Sie ein E-Mail-Benachrichtigungsprofil einrichten. Auf diese Weise können E-Mails an Kunden für verschiedene Transaktionsereignisse gesendet werden, z. B. für die Auftragserstellung, den Versandstatus der Bestellung und Zahlungsfehler.
 
 Weitere Informationen über die Konfiguration von E-Mails finden Sie unter [E-Mail konfigurieren und senden](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -48,7 +45,7 @@ Gehen Sie folgendermaßen vor, um ein E-Mail-Benachrichtigungsprofil zu erstelle
 
 ### <a name="create-an-email-template"></a>E-Mail-Vorlage erstellen
 
-Bevor eine E-Mail-Benachrichtigung erstellt werden kann, müssen Sie eine Organisations-E-Mail-Vorlage erstellen, die die E-Mail-Informationen des Absenders und die E-Mail-Vorlage enthält.
+Bevor ein E-Mail-Benachrichtigungstyp aktiviert werden kann, müssen Sie eine E-Mail-Vorlage für die Organisation in der Commerce-Zentrale erstellen. Diese Vorlage definiert den E-Mail-Betreff, den Absender, die Standardsprache und den E-Mail-Text für jede Sprache, die Sie unterstützen möchten.
 
 Führen Sie folgende Schritte aus, um eine E-Mail-Vorlage zu erstellen:
 
@@ -58,7 +55,7 @@ Führen Sie folgende Schritte aus, um eine E-Mail-Vorlage zu erstellen:
 1. Geben Sie im Feld **Absendername** den Namen des Absenders ein.
 1. Geben Sie im Feld **E-Mail-Beschreibung** eine aussagekräftige Beschreibung ein.
 1. Geben Sie im Feld **E-Mail des Absenders** die E-Mail-Adresse des Absenders ein.
-1. Füllen Sie im Abschnitt **Allgemeines** die optionalen Informationen aus, die Sie benötigen (z. B. die E-Mail-Priorität).
+1. Wählen Sie im Abschnitt **Allgemein** eine Standardsprache für die E-Mail-Vorlage aus. Die Standardsprache wird verwendet, wenn für die angegebene Sprache keine lokalisierte Vorlage vorhanden ist.
 1. Erweitern Sie die Abschnitt **Inhalt der E-Mail-Nachricht** und wählen Sie **Neu**, um den Vorlageninhalt zu erstellen. Wählen Sie für jedes Inhaltselement die Sprache aus und geben Sie den Betreff der E-Mail an. Wenn die E-Mail einen Textkörper haben soll, stellen Sie sicher, dass das Kästchen **Hat Text** markiert ist.
 1. Wählen Sie im Aktionsbereich **E-Mail-Nachricht**, um eine E-Mail-Textvorlage bereitzustellen.
 

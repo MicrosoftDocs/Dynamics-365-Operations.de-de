@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c321531ace9e17f7d099be6280fd30500b991577
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d268c6fc90457c9f84f66ea5dbf86df356bea0f4
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991714"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470667"
 ---
 # <a name="set-up-return-reason-codes"></a>Einrichten von Codes für Rücklieferungsursachen   
 
@@ -31,9 +31,9 @@ ms.locfileid: "4991714"
 
 ## <a name="set-up-return-reason-code-groups"></a>Einrichten von Ursachencodegruppen für Rückgaben 
 
-1.  Klicken Sie auf **Vertrieb und Marketing** \> **Einstellungen** \> **Aufträge** \> **Retouren** \> **Ursachencodegruppen**.
+1.  Gehen Sie zu **Vertrieb und Marketing** \> **Einrichten** \> **Verkaufsaufträge** \> **Retouren** \> **Retourengrund-Codegruppen**.
 
-2.  Drücken Sie STRG+N, um eine neue Ursachencodegruppenposition für Rückgaben zu erstellen.
+2.  Wählen Sie **Neu**, um eine Zeile für eine neue Retourengrundcode-Gruppe zu erstellen.
 
 3.  Geben Sie im Feld **Ursachencodegruppen** eine Kennung für diese Gruppe ein.
 
@@ -43,7 +43,7 @@ ms.locfileid: "4991714"
 
 Mit diesem Verfahren können Sie Ursachencodes für Rückgaben einrichten, mit denen Sie angeben können, warum ein Debitor ein Produkt zurückgegeben hat.
 
-1.  Klicken Sie auf **Vertrieb und Marketing** \> **Einstellungen** \> **Aufträge** \> **Retouren** \> **Ursachencodes für Rückgabe**.
+1.  Gehen Sie zu **Vertrieb und Marketing** \> **Einrichten** \> **Verkaufsaufträge** \> **Retouren** \> **Retourengrundcodes**.
 
 2.  Drücken Sie STRG+N, um eine neue Ursachencodeposition für die Rückgabe zu erstellen.
 

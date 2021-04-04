@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd9f6dfdf17ffd506fff21763388ee0ca7526681
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fbc991c22271ccc3d9c50ade635a80c635b35f73
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991589"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470881"
 ---
 # <a name="set-up-subscription-groups"></a>Dauerauftragsgruppen einrichten 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klicken Sie auf **Servicemanagement** \> **Einrichtung** \> **Daueraufträge** \> **Dauerauftragsgruppen**.
+1.  Gehen Sie zu **Serviceverwaltung** \> **Einrichten** \> **Service-Abonnements** \> **Abonnementgruppen**.
 
-2.  Drücken Sie STRG+N, oder klicken Sie auf **Neu**, um eine neue Dauerauftragsgruppe zu erstellen.
+2.  Wählen Sie **Neu**, um eine neue Abonnementgruppe zu erstellen.
 
 3.  Wählen Sie im Feld **Dauerauftragsgruppe** einen Namen für die neue Dauerauftragsgruppe ein.
 
