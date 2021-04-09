@@ -2,11 +2,9 @@
 title: Neuzuweisung der Umsatzerkennung
 description: In diesem Artikel geht es darum, wie Unternehmen mit der Neuzuweisung die Umsatzerlöspreise neu berechnen können, wenn sich die Vertragsbedingungen für einen Verkauf ändern. Im Artikel enthaltene Links verweisen auf andere Artikel, in denen erläutert wird, wie Umsatzerlöse in verschiedenen Fällen erkennt werden.
 author: kweekley
-manager: aolson
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 45fa888508e3d9c6be1e26ebcf2896ca0b538caf
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2d961cb4eedda6265b4acd8dbd6f82e8026373fa
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238279"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820568"
 ---
 # <a name="revenue-recognition-reallocation"></a>Neuzuweisung der Umsatzerkennung
 

@@ -5,13 +5,15 @@
       items:
         - name: Welche Neuerungen oder Änderungen bietet Human Resources?
           href: hr-admin-whats-new.md
+        - name: "22.\_März\_2021"
+          href: hr-whats-new-2021-03-22.md
         - name: 8. März 2021
           href: hr-whats-new-2021-03-08.md
         - name: 22. Februar 2021
           href: hr-whats-new-2021-02-22.md
-        - name: 28. Jan. 2021
+        - name: 28. Januar 2021
           href: hr-whats-new-2021-01-28.md
-        - name: 21. Jan. 2021
+        - name: 21. Januar 2021
           href: hr-whats-new-2021-01-21.md
         - name: "2.\_Dezember\_2020"
           href: hr-whats-new-2020-12-02.md
@@ -263,8 +265,10 @@
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
             - name: Leistung durch Einplanung von Batchaufträgen nach Stunden verbessern
               href: hr-admin-troubleshooting-batch-jobs.md
-            - name: Leistung durch automatische Bereinigungsaufgaben verbessern
+            - name: Leistung mit automatischen Bereinigungsaufgaben optimieren
               href: hr-admin-troubleshooting-batch-history.md
+            - name: Steckengebliebene Batchaufträge zurücksetzen
+              href: hr-admin-troubleshooting-batch-execution.md
             - name: Analyseberichte werden nicht aktualisiert
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Erstellen einer Umgebung im Power Apps Admin Center nicht möglich
