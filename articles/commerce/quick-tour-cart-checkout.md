@@ -2,11 +2,9 @@
 title: Übersicht der Einkaufswagen- und Auschecken-Seiten
 description: Dieses Thema bietet eine Übersicht über Einkaufskorb- und Auschecken-Seiten in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4f7c708aa7f1a858e78cdbda809b90b944606022
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0b5a74a9880a5cabfdbc124f557998540c94a4d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244790"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792242"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Übersicht zu Einkaufswagen und Seiten für den Bezahlvorgang
 
 [!include [banner](includes/banner.md)]
 
 Dieses Thema bietet eine Übersicht über Einkaufskorb- und Auschecken-Seiten in Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Übersicht
 
 Auf der Einkaufskorbseite einer E-Commerce-Website werden alle Artikel angezeigt, die ein Kunde dem Einkaufskorb hinzugefügt hat. Die Einkaufskorbseite wird mithilfe des Einkaufskorbmoduls erstellt. Ein Einkaufskorbmodul ist ein Container, der verwendet wird, um alle Module zu hosten, die erforderlich sind, um Artikel im Einkaufskorb anzuzeigen. Das Einkaufskorbmodul kann auch andere Module verwenden, um die Bestellzusammenfassung und alle auf die Kundenbestellung angewendeten Aktionscodes anzuzeigen.
 

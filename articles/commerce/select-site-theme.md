@@ -2,11 +2,9 @@
 title: Auswählen eines Sitedesigns
 description: In diesem Thema wird beschrieben, wie Sie das Design Ihrer Website in Microsoft Dynamics 365 Commerce festlegen oder ändern.
 author: bicyclingfool
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,20 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3f7f38a0b4b1e0be85d619a1c133d1555706d93
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1e11e2ffafa29dfe4ad7a4a8e4d14e9d7c74c31f
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254720"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794066"
 ---
 # <a name="select-a-site-theme"></a>Sitedesign auswählen
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie das Design Ihrer Website in Microsoft Dynamics 365 Commerce festlegen oder ändern.
-
-## <a name="overview"></a>Übersicht
 
 Das Layout und der Stil einer Site (z. B. Schriftarten, Größen und Farben) werden durch das Design definiert, das Sie auswählen und auf die Site anwenden. Ein Design wird von einem Entwickler in Ihrem Unternehmen erstellt und bereitgestellt. Eine Überblick über die Designs erhalten Sie in [Designüberblick](e-commerce-extensibility/theming.md). Weitere Informationen zum Erstellen und Bereitstellen von Designs finden Sie unter [Neues Design erstellen](e-commerce-extensibility/create-theme.md).
 

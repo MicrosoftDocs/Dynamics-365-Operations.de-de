@@ -2,11 +2,9 @@
 title: Hinzufügen einer Begrüßungsnachricht
 description: In diesem Thema wird beschrieben, wie eine Begrüßungsmeldung Ihrer Microsoft Dynamics 365 Commerce-Website hinzugefügt wird.
 author: psimolin
-manager: annbe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d17ad7cfd6f11e84fdd1c8ebccca6f786b83c62d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3e61f43eca7d1343d020e1c01b5b1140f07b63c6
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209154"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797382"
 ---
 # <a name="add-a-welcome-message"></a>Hinzufügen einer Begrüßungsnachricht
-
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie eine Begrüßungsmeldung Ihrer Microsoft Dynamics 365 Commerce-Website hinzugefügt wird.
-
-## <a name="overview"></a>Übersicht
 
 Eine Begrüßungsmeldung auf der E-Commerce-Website kann Besucher über laufende Verkäufe, Siteaktualisierungen oder verfügbaren saisonale Sammlungen informieren. Die Begrüßungsmeldung wird festgelegt, indem das Warnungsmodul verwendet wird.
 

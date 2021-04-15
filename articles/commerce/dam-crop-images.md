@@ -2,11 +2,9 @@
 title: Bilder zuschneiden
 description: In diesem Thema wird beschrieben, wie man Bilder im Microsoft Dynamics 365 Commerce Site Builder zuschneidet.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7af1378e26368c4f35f4661f41c066baeaa09803
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6b90199e2f6c22863c379b488e8d89c566a14ec9
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222584"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799324"
 ---
 # <a name="crop-images"></a>Bilder zuschneiden
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie man Bilder im Microsoft Dynamics 365 Commerce Site Builder zuschneidet.
-
-## <a name="overview"></a>Übersicht
 
 Die Medienbibliothek des Commerce-Site-Builders ermöglicht es Ihnen, Bilder zuzuschneiden, um sie für verschiedene Modultypen und Ansichtsfenster zu optimieren.
 
