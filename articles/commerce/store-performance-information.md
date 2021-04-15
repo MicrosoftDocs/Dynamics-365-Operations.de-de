@@ -2,11 +2,9 @@
 title: Analysieren der Shopleistung
 description: In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblick zu Speicherleistung basierend auf Ihrer Dynamics 365 Commerce-Daten zu erhalten.
 author: ashishmsft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailChannelReport, RetailChannelManagementWorkspace
 audience: Application User
@@ -18,32 +16,32 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aced862e279135e25ca7380b746ae19b97227d10
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4d70012051ebd78913be17ad359714f81fa137b7
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234244"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795284"
 ---
-# <a name="analyze-store-performance"></a><span data-ttu-id="3de03-103">Analysieren der Leistung des Geschäfts</span><span class="sxs-lookup"><span data-stu-id="3de03-103">Analyze store performance</span></span>
+# <a name="analyze-store-performance"></a><span data-ttu-id="40da5-103">Analysieren der Leistung des Geschäfts</span><span class="sxs-lookup"><span data-stu-id="40da5-103">Analyze store performance</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="3de03-104">In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblick zu Speicherleistung basierend auf Ihrer Dynamics 365 Commerce-Daten zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="3de03-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Dynamics 365 Commerce data.</span></span>
+<span data-ttu-id="40da5-104">In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblick zu Speicherleistung basierend auf Ihrer Dynamics 365 Commerce-Daten zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="40da5-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Dynamics 365 Commerce data.</span></span>
 
-<span data-ttu-id="3de03-105">In Retail können Benutzer die Shopleistung in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für eine ausgewählte Periode überprüfen, indem sie den vordefinierten Bericht **Kanalzusammenfassung** an einer der folgenden Stellen öffnen:</span><span class="sxs-lookup"><span data-stu-id="3de03-105">As part of Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
+<span data-ttu-id="40da5-105">In Retail können Benutzer die Shopleistung in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für eine ausgewählte Periode überprüfen, indem sie den vordefinierten Bericht **Kanalzusammenfassung** an einer der folgenden Stellen öffnen:</span><span class="sxs-lookup"><span data-stu-id="40da5-105">As part of Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
 
-- <span data-ttu-id="3de03-106">**Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht Kanalzusammenfassung**</span><span class="sxs-lookup"><span data-stu-id="3de03-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
-- <span data-ttu-id="3de03-107">**Finanzdaten für den Einzelhandelsshop**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht Kanalzusammenfassung**</span><span class="sxs-lookup"><span data-stu-id="3de03-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
-- <span data-ttu-id="3de03-108">**Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht Kanalzusammenfassung**</span><span class="sxs-lookup"><span data-stu-id="3de03-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="40da5-106">**Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht Kanalzusammenfassung**</span><span class="sxs-lookup"><span data-stu-id="40da5-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="40da5-107">**Finanzdaten für den Einzelhandelsshop**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht Kanalzusammenfassung**</span><span class="sxs-lookup"><span data-stu-id="40da5-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="40da5-108">**Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht Kanalzusammenfassung**</span><span class="sxs-lookup"><span data-stu-id="40da5-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
 
-<span data-ttu-id="3de03-109">Der Bericht enthält eine Momentaufnahme der folgenden Zusammenfassungen im Rahmen der Shopleistung:</span><span class="sxs-lookup"><span data-stu-id="3de03-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
+<span data-ttu-id="40da5-109">Der Bericht enthält eine Momentaufnahme der folgenden Zusammenfassungen im Rahmen der Shopleistung:</span><span class="sxs-lookup"><span data-stu-id="40da5-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
 
-- <span data-ttu-id="3de03-110">Übersicht Bruttoverkäufe</span><span class="sxs-lookup"><span data-stu-id="3de03-110">Gross sales summary</span></span>
-- <span data-ttu-id="3de03-111">Übersicht Zahlungsmitteltyp</span><span class="sxs-lookup"><span data-stu-id="3de03-111">Tender type summary</span></span>
-- <span data-ttu-id="3de03-112">Steuerzusammenfassung</span><span class="sxs-lookup"><span data-stu-id="3de03-112">Tax summary</span></span>
-- <span data-ttu-id="3de03-113">Preisüberschreibungsübersicht</span><span class="sxs-lookup"><span data-stu-id="3de03-113">Price overrides summary</span></span>
-- <span data-ttu-id="3de03-114">Rabattübersicht</span><span class="sxs-lookup"><span data-stu-id="3de03-114">Discounts summary</span></span>
+- <span data-ttu-id="40da5-110">Übersicht Bruttoverkäufe</span><span class="sxs-lookup"><span data-stu-id="40da5-110">Gross sales summary</span></span>
+- <span data-ttu-id="40da5-111">Übersicht Zahlungsmitteltyp</span><span class="sxs-lookup"><span data-stu-id="40da5-111">Tender type summary</span></span>
+- <span data-ttu-id="40da5-112">Steuerzusammenfassung</span><span class="sxs-lookup"><span data-stu-id="40da5-112">Tax summary</span></span>
+- <span data-ttu-id="40da5-113">Preisüberschreibungsübersicht</span><span class="sxs-lookup"><span data-stu-id="40da5-113">Price overrides summary</span></span>
+- <span data-ttu-id="40da5-114">Rabattübersicht</span><span class="sxs-lookup"><span data-stu-id="40da5-114">Discounts summary</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
