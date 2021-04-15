@@ -2,11 +2,9 @@
 title: Seiten und Module zur Kontenverwaltung
 description: In diesem Thema werden Kundenbetreuungsseiten und Module in Microsoft Dynamics 365 Commerce behandelt.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 29523d03fb687684dae7d0ce08208905cce702df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: df4959a61f1b2948c62a558523a848ff8b2fe0a8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206630"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796293"
 ---
 # <a name="account-management-pages-and-modules"></a>Seiten und Module zur Kontenverwaltung
 
@@ -51,9 +49,9 @@ Die Auftragsverlaufseite verwendet das Auftragsarchivierungsmodul, um alle neuen
 
 Die Bestelldetailseite stellt Detailinformationen zu jedem Auftrag bereit und wird über die Auftragsverlaufsseite abgerufen. Es verwendet das Bestelldetailmodul, das die Vertriebs-ID oder -Transaktions-ID erfordert, um die Auftragsdetails abzurufen.
 
-### <a name="user-profile-page"></a>Benutzerprofilseite
+### <a name="my-profile-page"></a>Eigene Profilseite
 
-Die Benutzerprofilseite zeigt die Benutzerkontodetails, beispielsweise den Benutzernamen und die E-Mail-Adresse an. Es verwendet die Benutzerprofildetails und Benutzerprofilbearbeitungsmodule. Obwohl die E-Mail-Adresse nicht entfernt werden kann, kann sie bearbeitet werden. Auf der Benutzerprofilseite werden auch Benutzereinstellungen angezeigt, mit denen ein Benutzer bestimmte Funktionen wie die Personalisierung von Empfehlungslisten aktivieren oder deaktivieren kann. 
+Auf der Seite „Mein Profil“ werden die Kontoprofildetails des Benutzers mithilfe des Kontoprofilmoduls angezeigt. Auf der Seite werden die mit dem Benutzerkonto verknüpfte E-Mail-Adresse sowie die für das Konto eingerichteten Einstellungen angezeigt. Wenn Sie benutzerdefinierte Debitorenattribute einrichten, werden diese Attribute auch in einem Abschnitt „Weitere Informationen“ angezeigt. Benutzer können ihren Namen, ihre Einstellungen oder weitere Informationen (falls verfügbar) bearbeiten.
 
 ### <a name="user-address-page"></a>Adressenseite des Benutzers
 

@@ -2,7 +2,6 @@
 title: Transaktions- und Quittungs-E-Mails einen QR-Code oder Barcode hinzufügen
 description: In diesem Thema wird erläutert, wie Sie QR-Codes und Barcodes, die Auftrags-IDs darstellen, in Transaktions- und Quittungs-E-Mails in Microsoft Dynamics 365 Commerce einfügen.
 author: bicyclingfool
-manager: annbe
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 3cc4fcb1237f8409a89b3d4818c132c60c57b5a0
-ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
+ms.openlocfilehash: f8d9408090846799c1bb421c4b6e5e248d37fa07
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "5555421"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797502"
 ---
 # <a name="add-a-qr-code-or-bar-code-to-transactional-and-receipt-emails"></a>Transaktions- und Quittungs-E-Mails einen QR-Code oder Barcode hinzufügen
 

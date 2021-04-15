@@ -2,11 +2,9 @@
 title: Überprüfen der Zugänglichkeit des Seiteninhalts
 description: In diesem Thema wird beschrieben, wie Sie die Barrierefreiheit von Seiteninhalten in Microsoft Dynamics 365 Commerce überprüfen.
 author: josaw1
-manager: annbe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 186044fc7a360f227cecffb39bad0e225245dd4d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 885696c13b0e5353e6dbd9dc21cf075d5e301786
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210970"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791630"
 ---
 # <a name="verify-page-content-accessibility"></a>Barrierefreiheit von Seiteninhalten prüfen
-
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie die Barrierefreiheit von Seiteninhalten in Microsoft Dynamics 365 Commerce überprüfen.
-
-## <a name="overview"></a>Übersicht
 
 Wenn Sie mit dem Ändern einer Seite fertig sind, sollten Sie sicherstellen, dass der Inhalt für alle im Web zugänglich ist. In den Commerce-Authoring-Tools können Sie mithilfe des integrierten Dienstes [Microsoft Accessibility Insights](https://accessibilityinsights.io/) auf einfache Weise die Zugänglichkeit von Seiteninhalten überprüfen. Dieser Dienst überprüft Ihren Seiteninhalt anhand der neuesten Richtlinien zur [World Wide Web Consortium (W3C Zugänglichkeit)](https://www.w3.org/standards/webdesign/accessibility).
 
