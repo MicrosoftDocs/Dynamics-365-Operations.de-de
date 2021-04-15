@@ -2,11 +2,9 @@
 title: Arbeiten mit der Kundenservice-Übersicht
 description: Durch den Kundendienst werden professionelle servicebasierte Unternehmen sowie Serviceorganisationen mit Produktion unterstützt.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable, SMADispatchBoard
 audience: Application User
@@ -17,33 +15,33 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 654c33c890197f458c0cfb32bedeaf2a24cd073a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1b83b36102cc1c0f8ed9c08920ac3817435a6b24
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239325"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807751"
 ---
-# <a name="work-with-customer-service-overview"></a><span data-ttu-id="a28b1-103">Arbeiten mit der Kundenservice-Übersicht</span><span class="sxs-lookup"><span data-stu-id="a28b1-103">Work with customer service overview</span></span>
+# <a name="work-with-customer-service-overview"></a><span data-ttu-id="ed999-103">Arbeiten mit der Kundenservice-Übersicht</span><span class="sxs-lookup"><span data-stu-id="ed999-103">Work with customer service overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="a28b1-104">Durch den Kundendienst werden professionelle servicebasierte Unternehmen sowie Serviceorganisationen mit Produktion unterstützt.</span><span class="sxs-lookup"><span data-stu-id="a28b1-104">Customer service supports professional, service-based companies and manufacturing service organizations.</span></span>
+<span data-ttu-id="ed999-104">Durch den Kundendienst werden professionelle servicebasierte Unternehmen sowie Serviceorganisationen mit Produktion unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ed999-104">Customer service supports professional, service-based companies and manufacturing service organizations.</span></span>
 
-<span data-ttu-id="a28b1-105">Der Kundendienst umfasst folgende Funktionen:</span><span class="sxs-lookup"><span data-stu-id="a28b1-105">Customer service includes the following functionality:</span></span>
+<span data-ttu-id="ed999-105">Der Kundendienst umfasst folgende Funktionen:</span><span class="sxs-lookup"><span data-stu-id="ed999-105">Customer service includes the following functionality:</span></span>
 
-  - <span data-ttu-id="a28b1-106">Wichtige Serviceverwaltungsprozesse, z. B. Serviceverträge, Serviceaufträgen sowie Retourenverwaltung</span><span class="sxs-lookup"><span data-stu-id="a28b1-106">Key processes for service management, such as service agreements, service orders, and return management</span></span>
+  - <span data-ttu-id="ed999-106">Wichtige Serviceverwaltungsprozesse, z. B. Serviceverträge, Serviceaufträgen sowie Retourenverwaltung</span><span class="sxs-lookup"><span data-stu-id="ed999-106">Key processes for service management, such as service agreements, service orders, and return management</span></span>
 
-  - <span data-ttu-id="a28b1-107">Erweiterte Reparaturverwaltungseinstellungen einschließlich Reparaturnachverfolgung und Verwendung von Stücklistenversionen</span><span class="sxs-lookup"><span data-stu-id="a28b1-107">An advanced setup for repair management that includes tracking of repairs and versioning for bills of materials (BOMs)</span></span>
+  - <span data-ttu-id="ed999-107">Erweiterte Reparaturverwaltungseinstellungen einschließlich Reparaturnachverfolgung und Verwendung von Stücklistenversionen</span><span class="sxs-lookup"><span data-stu-id="ed999-107">An advanced setup for repair management that includes tracking of repairs and versioning for bills of materials (BOMs)</span></span>
 
-  - <span data-ttu-id="a28b1-108">Unterstützung von Mitarbeiterrollen wie Servicemanager, Disponent, Servicetechniker oder Serviceberater</span><span class="sxs-lookup"><span data-stu-id="a28b1-108">Support for employee roles, such as service manager, dispatcher, and service technician or service consultant</span></span>
+  - <span data-ttu-id="ed999-108">Unterstützung von Mitarbeiterrollen wie Servicemanager, Disponent, Servicetechniker oder Serviceberater</span><span class="sxs-lookup"><span data-stu-id="ed999-108">Support for employee roles, such as service manager, dispatcher, and service technician or service consultant</span></span>
 
-  - <span data-ttu-id="a28b1-109">Daueraufträge zum Generieren regelmäßiger Einnahmequellen, die nicht von der Servicehäufigkeit abhängen</span><span class="sxs-lookup"><span data-stu-id="a28b1-109">Service subscriptions, which can generate periodic streams of revenue that are independent of the frequency of service</span></span>
+  - <span data-ttu-id="ed999-109">Daueraufträge zum Generieren regelmäßiger Einnahmequellen, die nicht von der Servicehäufigkeit abhängen</span><span class="sxs-lookup"><span data-stu-id="ed999-109">Service subscriptions, which can generate periodic streams of revenue that are independent of the frequency of service</span></span>
 
-  - <span data-ttu-id="a28b1-110">Vereinbarungen zum Servicelevel zur Unterstützung eines vielfältigen Debitorenstamms</span><span class="sxs-lookup"><span data-stu-id="a28b1-110">Service-level agreements that support a differentiated customer base</span></span>
+  - <span data-ttu-id="ed999-110">Vereinbarungen zum Servicelevel zur Unterstützung eines vielfältigen Debitorenstamms</span><span class="sxs-lookup"><span data-stu-id="ed999-110">Service-level agreements that support a differentiated customer base</span></span>
 
-<span data-ttu-id="a28b1-111">Die Themen in diesem Abschnitt bieten eine Übersicht über den Geschäftsprozess und die Geschäftsprozesskomponenten für den Kundendienst.</span><span class="sxs-lookup"><span data-stu-id="a28b1-111">The topics in this section provide an overview of the Customer service business process and each business process component.</span></span> <span data-ttu-id="a28b1-112">Darüber hinaus werden hier die Formulare aufgeführt und die Aufgaben behandelt, die den einzelnen Geschäftsprozesskomponenten zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="a28b1-112">They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.</span></span>
+<span data-ttu-id="ed999-111">Die Themen in diesem Abschnitt bieten eine Übersicht über den Geschäftsprozess und die Geschäftsprozesskomponenten für den Kundendienst.</span><span class="sxs-lookup"><span data-stu-id="ed999-111">The topics in this section provide an overview of the Customer service business process and each business process component.</span></span> <span data-ttu-id="ed999-112">Darüber hinaus werden hier die Formulare aufgeführt und die Aufgaben behandelt, die den einzelnen Geschäftsprozesskomponenten zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="ed999-112">They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.</span></span>
 
 
 
