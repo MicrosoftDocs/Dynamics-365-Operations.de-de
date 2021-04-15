@@ -2,11 +2,9 @@
 title: Mobile Geräte für Lagerarbeiten einrichten
 description: In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db4c3a8c4bae226b5e154f4761e30b7341bc527b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1d3acbc15b6dc5f698f26aae96c75cc942189c6c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232982"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808797"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobile Geräte für Lagerarbeiten einrichten
 
@@ -64,7 +62,7 @@ Wenn das Feld **Modus** für eine Menüoption auf **Indirekt** festgelegt ist, k
 | Nummernkreis-Cache entleeren | Löschen Sie die Nummernkreisnummern aus dem Nummernkreiscache. Diese Aktivität wird normalerweise von einem Systemadministrator durchgeführt, um Zwischenspeicherprobleme zu beheben, wenn mobile Geräte verwendet werden. |
 | Chargendisposition ändern | Ermöglichen Sie einer Arbeitskraft, einen Chargendispositionscode für einen Artikel und eine Charge anzugeben. Diese Auswahl aktualisiert den Dispositionscode, der für die Charge angegeben ist. |
 | Offene Arbeitsliste anzeigen | Hier wird einem bestimmten Benutzer eine Liste der verfügbaren Arbeit angezeigt. Der Benutzer kann dann auszuführende Arbeit auswählen und wird auf diese verwiesen. Diese Liste ist für die Anzeige auf Tabletgeräten mit einer Bildschirmgröße von 7 Zoll oder mehr bestimmt. Wenn Sie diese Option auswählen, werden die Menüelemente **Abfrage bearbeiten** und **Feldliste** verfügbar. Auf der Seite **Abfrage bearbeiten** können Sie Kriterien für die Arbeit einrichten, die in der Liste angezeigt wird. Auf der Seite **Feldliste** können Sie auswählen, welche Felder in der Arbeitsliste angezeigt werden. Sie können beispielsweise die Anzahl der angezeigten Felder reduzieren, damit der Benutzer die geeigneten Arbeitsaufgaben schneller auswählen können. Sie können im Feld **Datensätze pro Seite** auf dem Inforegister **Allgemeines** außerdem auswählen, wie viele Datensätze pro Seite angezeigt werden. Wenn die Option **Benutzern das Filtern nach Arbeitstransaktionstyp erlauben** ausgewählt wurde, wird ein Steuerelement **Arbeit filtern** in der Arbeitsliste angezeigt, mit dem der Benutzer nach Buchungsart filtern kann. Benutzer sehen nur die Arbeit in der Arbeitsliste, auf die sie gemäß Berechtigungen zugreifen können. Sie müssen sich vergewissern, dass Benutzer die Berechtigung für eine oder mehrere benutzergeleitete Menüoptionen haben, die die bestimmten Arbeitsklassentypen unterstützen, auf die sie zugreifen können müssen. Berechtigungen werden auch verifiziert, wenn ein Benutzer versucht, Arbeit aus der Liste auszuführen.|
-| Umlagerungsauftrag aus Kennzeichen erstellen | Ermöglicht Lagerarbeitern das Erstellen und Verarbeiten von Umlagerungsaufträgen direkt über die Lagerort-App. Die Lagerarbeiter wählen zunächst den Ziellagerort aus und können dann mit der App ein oder mehrere Kennzeichen scannen. Wenn der Lagerarbeiter **Bestellung abschließen** auswählt, erstellt ein Batchauftrag den erforderlichen Umlagerungsauftrag und die Bestellpositionen basierend auf dem verfügbaren, für diese Kennzeichen registrierten Lagerbestand. Weitere Informationen finden Sie unter [Erstellen von Umlagerungsaufträgen aus der Lagerort-App](create-transfer-order-from-warehouse-app.md)
+| Umlagerungsauftrag aus Kennzeichen erstellen | Ermöglicht Lagerarbeitern das Erstellen und Verarbeiten von Umlagerungsaufträgen direkt über die Warehouse Management Mobile App. Die Lagerarbeiter wählen zunächst den Ziellagerort aus und können dann mit der App ein oder mehrere Kennzeichen scannen. Wenn der Lagerarbeiter **Bestellung abschließen** auswählt, erstellt ein Batchauftrag den erforderlichen Umlagerungsauftrag und die Bestellpositionen basierend auf dem verfügbaren, für diese Kennzeichen registrierten Lagerbestand. Weitere Informationen finden Sie unter [Erstellen von Umlagerungsaufträgen aus der Lagerort-App](create-transfer-order-from-warehouse-app.md)
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurieren von Menüoptionen, um Arbeit für eine andere Arbeitskraft oder einen anderen Prozess zu erstellen

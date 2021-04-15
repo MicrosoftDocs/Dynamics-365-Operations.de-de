@@ -2,11 +2,9 @@
 title: Produktionsausführungsschnittstelle konfigurieren
 description: In diesem Thema wird beschrieben, wie Sie eine oder mehrere Konfigurationen für die Produktionsoberflächen-Ausführungsschnittstelle erstellen. Wenn Sie die Produktionsausführungsoberfläche öffnen, wird automatisch eine ausgewählte Konfiguration und ein Auftragsfilter geladen, die für den Browser und das Gerät spezifisch sind. In der Konfiguration legen Sie die Richtlinien fest, die für eine bestimmte Verwendung gelten müssen.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d34f9c235df480658a0935d731f7267a87894067
-ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
+ms.openlocfilehash: 79e21977e4ef8bce88c97a8fb253345ccc8d6b4f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5556313"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814729"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Werkstattmitarbeiter nutzen die Produktionsausführungsschnittstelle, um ihre tägliche Arbeit zu registrieren, z. B. wenn Einzelvorgänge gestartet werden, Feedback zu Einzelvorgängen gemeldet, indirekte Aktivitäten registriert und Abwesenheit gemeldet werden. Diese Registrierungen sind die Grundlage für die Verfolgung von Fortschritt und Kosten bei Produktionsaufträgen und für die Berechnung der Grundlage für die Bezahlung von Arbeitnehmer.
 
@@ -67,6 +64,8 @@ Diese Funktion fügt der Produktionsausführungsoberfläche eine Schaltfläche h
 - Funktion zum Sperren von Jobkartengerät und Jobkartenterminal, damit sie saniert werden können
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Anlagenverwaltungsfunktion für die Produktionsumgebungs-Ausführungsschnittstelle
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Diese Funktion fügt der Produktionsausführungsoberfläche eine Registerkarte für die Anlagenverwaltung hinzu. Auf dieser Registerkarte können Arbeitskräfte eine Anlage auswählen, die mit einer Maschinenressource verbunden ist, die sich im ausgewählten Filter der Auftragsliste befindet. Für die ausgewählte Maschinenanlage kann die Arbeitskraft den Status und den Zustand der Anlage anhand von Zählerwerten für bis zu vier ausgewählte Zähler anzeigen. Wenn Sie diese Funktion nutzen möchten, aktivieren Sie die folgende Funktion in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

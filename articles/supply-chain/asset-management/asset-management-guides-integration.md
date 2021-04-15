@@ -2,11 +2,9 @@
 title: Integrieren von Dynamics 365 Supply Chain Management (Anlagenverwaltung) in Dynamics 365 Guides
 description: In diesem Thema wird erläutert, wie Sie das Anlagenverwaltungsmodul in Microsoft Dynamics 365 Supply Chain Management in Dynamics 365 Guides integrieren, um die Mixed-Reality-Anleitungen in Ihren täglichen Service- und Wartungsworkflows zu nutzen.
 author: kamaybac
-manager: tfehr
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: e3e9e74397faec12f6eecff1f562fd9d731ac5e2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4af14a66c839ccee02008057ad1de8ef5b9d291b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230151"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813916"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrieren von Dynamics 365 Supply Chain Management (Anlagenverwaltung) in Dynamics 365 Guides
 
