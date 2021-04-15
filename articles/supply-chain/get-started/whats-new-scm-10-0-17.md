@@ -1,12 +1,10 @@
 ---
-title: Vorschauversion von Dynamics 365 Supply Chain Management 10.0.17 (April 2021)
+title: Neuigkeiten oder Änderungen in Dynamics 365 Supply Chain Management 10.0.17 (April, 2021)
 description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Supply Chain Management 10.0.17 neu oder geändert wurden.
 author: kamaybac
-manager: annbe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,19 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 985879ef765bf3074387a909d508f0f93a4771ed
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 4b4e551f5c687f0021ddba0c9f5b73af528b7140
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571811"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813170"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10017-april-2021"></a>Vorschauversion von Dynamics 365 Supply Chain Management 10.0.17 (April 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Neuigkeiten oder Änderungen in Dynamics 365 Supply Chain Management 10.0.17 (April, 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-In diesem Thema werden die Funktionen aufgeführt, die in der Microsoft Dynamics 365 Supply Chain Management Vorschauversion 10.0.17 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.761 und ist wie folgt verfügbar:
+In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365 Supply Chain Management Version 10.0.17 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.761 und ist wie folgt verfügbar:
 
 - **Vorschauversion des Release:** Februar 2021
 - **Allgemeine Verfügbarkeit des Release (Selbstaktualisierung):** März 2021
@@ -36,9 +33,9 @@ In diesem Thema werden die Funktionen aufgeführt, die in der Microsoft Dynamics
 
 ## <a name="features-included-in-this-release"></a>In dieser Version enthaltene Funktionen
 
-Die folgenden Funktionen sind in diesem Release enthalten. Einige der aufgelisteten Funktionen befinden sich noch in der Vorschau, während andere möglicherweise bereits allgemein verfügbar sind. Folgen Sie den Links zu [Release-Plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), um die offiziellen Veröffentlichungstermine für jede Funktion anzuzeigen.
+Die folgenden Funktionen sind in diesem Release enthalten.  Folgen Sie den Links zu [Release-Plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), um die offiziellen Veröffentlichungstermine für jede Funktion anzuzeigen.
 
-Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können.
+Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können. Einige der aufgelisteten Funktionen befinden sich eventuell noch in der Vorschau, auch wenn die meisten jetzt bereits allgemein verfügbar sind.
 
 ### <a name="asset-management"></a>Anlagenverwaltung
 
@@ -68,9 +65,13 @@ Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsve
 
 - [Mobile App zur Lagerortverwaltung](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Weitere Informationen finden Sie unter [Installieren und Verbinden der App „Lagerortverwaltung“](../warehousing/install-configure-warehouse-management-app.md) und [Benutzereinstellungen für mobile Geräte](../warehousing/mobile-device-user-settings.md).
 
+- Zyklusausführungsbenachrichtigungen<br> - Weitere Informationen finden Sie unter [Wellenausführungsbenachrichtigungen](../warehousing/wave-execution-notifications.md)
+
 ### <a name="manufacturing"></a>Fertigung
 
-- [Funktionen zur Anlagenverwaltung in der Produktionsausführungsoberfläche](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Weitere Informationen finden Sie unter [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md).
+- [Funktionen zur Anlagenverwaltung in der Produktionsausführungsoberfläche](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Weitere Informationen finden Sie unter [Konfigurieren Sie die Produktionsausführungsoberfläche](../production-control/production-floor-execution-configure.md).
+
+- Vereinheitlichte Nummernkreise für Einzelvorgangskennungen<br> - Weitere Informationen finden sie unter 
 
 - [Standardreservierungsprinzip bei Materialien in Produktion überschreiben](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Weitere Informationen finden Sie unter [Überschreiben des Standardreservierungsprinzips für Materialien in der Produktion](../production-control/override-default-reservation-principle.md).
 

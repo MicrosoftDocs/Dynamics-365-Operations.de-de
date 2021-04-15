@@ -1,12 +1,10 @@
 ---
-title: Konfigurieren von Feldnamen in der Warehouse-App
-description: In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden.
+title: Felder für die mobile Warehouse Management Mobile App konfigurieren
+description: In diesem Thema wird beschrieben, wie Feldnamen und -prioritäten in der Warehouse Management Mobile App definiert und konfiguriert werden.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
@@ -18,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4c22a4314c36ba7112456ef264df500af98996f3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c6ed726536085b836f4014c59ea8df4755577ab5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232958"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808821"
 ---
-# <a name="configure-app-field-names-in-the-warehouse-app"></a>Konfigurieren von Feldnamen in der Warehouse-App
+# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Felder für die mobile Warehouse Management Mobile App konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden. 
+In diesem Thema wird beschrieben, wie Feldnamen und -prioritäten in der Warehouse Management Mobile App definiert und konfiguriert werden.
 
 > [!NOTE]
-> Dieser Artikel gilt für Funktionen im Modul „Lagerortverwaltung“. Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Warehousing ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Warehousing definiert, konfiguriert und verwendet werden. Ausführliche Informationen dazu, wie die Verbindung zur Warehouse-App konfiguriert wird, finden Sie im Tutorial [Übersicht zum Installieren und Konfigurieren der Warehouse-App](install-configure-warehousing-app.md).
+> Dieser Artikel gilt für Funktionen im Modul „Lagerortverwaltung“. Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Die Warehouse Management Mobile App ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie die Feldnamen und -prioritäten in der Warehouse Management Mobile App definiert, konfiguriert und verwendet werden.
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurieren von Lagerort-Feldnamen in der App
 
@@ -142,7 +140,7 @@ Die verbleibenden Metadaten beispielsweise Lagerplatz, werden nicht auf der Aufg
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Übersicht zum Installieren und Konfigurieren der Warehouse-App](install-configure-warehousing-app.md)
+[Mobile Lagerortsverwaltungs-App installieren und verbinden](../warehousing/install-configure-warehouse-management-app.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

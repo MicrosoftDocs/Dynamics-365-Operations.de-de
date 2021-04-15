@@ -2,7 +2,6 @@
 title: Schnittstelle für Materialhandhabung (MHAX)
 description: In diesem Thema wird beschrieben, wie Sie die Schnittstelle für Materialhandhabungsgeräte (MHAX) festlegen, damit Sie eine Verbindung zu externen physischen Systemen für die Materialhandhabung (MH) herstellen können.
 author: Mirzaab
-manager: tfehr
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ea021529d7417fb3170c859c7fffcb2cfd23a43f
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 9273e4a1f6b3f57086c921c4beb0530a67ccd976
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571841"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810509"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Schnittstelle für Materialhandhabung (MHAX)
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Sie können die *Materialhandhabungsgeräte-Schnittstelle* (MHAX) verwenden, um externe physische Materialhandhabungs-Systeme (MH) mit einem Lagerort zu verbinden, der von der erweiterten Lagerortverwaltung (WMS) in Microsoft Dynamics 365 Supply Chain Management verwaltet wird. Die Schnittstelle zwischen den WMS- und MH-Systemen besteht aus zwei Warteschlangen: eine für ausgehende Ereignisse (WMS zu MH) und eine für eingehende Ereignisse (MH zu WMS). Das WMS-System generiert ausgehende Ereignisse auf der Basis von Arbeitszeilen, die bei verschiedenen Prozessen der Arbeitserstellung und -ausführung erstellt werden. Das MH-System fragt dann regelmäßig das WMS-System nach neuen Ereignissen ab und verarbeitet die Antworten. Nachdem das MH-System die Ereignisse gemäß den Arbeitsanweisungen abgearbeitet hat, sendet es eingehende Ereignisse, wie z. B. die Beendigung von Arbeitszeilen und die Kurzkommissionierung.
 

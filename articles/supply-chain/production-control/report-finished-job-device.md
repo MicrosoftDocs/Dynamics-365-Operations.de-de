@@ -2,11 +2,9 @@
 title: Vom Einzelvorgangskartengerät als erledigt melden
 description: In diesem Thema wird beschrieben, wie Sie das System so konfigurieren, dass Benutzer eines Einzelvorgangskartengeräts fertige Produkte aus einem Fertigungsauftrag an das Inventar melden können.
 author: johanhoffmann
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7eabcb23681a9b2427fa1065b045e639cc98f9d7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bd21bdf532e1e607e66bb8f5ef032f0855c99612
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262140"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811629"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Vom Einzelvorgangskartengerät als erledigt melden
 
@@ -64,7 +62,7 @@ Das Einzelvorgangskartengerät unterstützt drei Szenarien für die Berichterste
 Damit Ihre Einzelvorgangskartengeräte während der Berichterstellung eine Chargennummer als abgeschlossen akzeptieren können, müssen Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um die folgenden Funktionen zu aktivieren (in dieser Reihenfolge):
 
 1. Verbesserte Benutzerfreundlichkeit für den Berichtsstatusdialog im Einzelvorgangs-Kartengerät
-1. Aktivieren Sie diese Option, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät (Vorschau) abgeschlossen wird
+1. Aktivieren, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät abgeschlossen wird
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>Produkte konfigurieren, die Chargennummernberichterstattung erfordern
 
@@ -142,7 +140,7 @@ Das Einzelvorgangskartengerät unterstützt drei Szenarien für die Berichterste
 Damit Ihre Einzelvorgangskartengeräte während der Berichterstellung eine Seriennummer als abgeschlossen akzeptieren können, müssen Sie die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um die folgenden Funktionen zu aktivieren (in dieser Reihenfolge):
 
 1. Verbesserte Benutzerfreundlichkeit für den Berichtsstatusdialog im Einzelvorgangs-Kartengerät
-1. Aktivieren Sie diese Option, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät (Vorschau) abgeschlossen wird
+1. Aktivieren, um Chargen- und Seriennummern einzugeben, während die Fertigmeldung vom Einzelvorgangs-Kartengerät abgeschlossen wird
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>Produkte konfigurieren, die Seriennummernberichterstattung erfordern
 

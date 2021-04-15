@@ -2,7 +2,6 @@
 title: Während der ersten Bereitstellung kann keine Sicherheitsgruppe für den Commerce-Website-Generator konfiguriert werden
 description: Dieses Thema enthält Anleitungen zur Fehlerbehebung, die hilfreich sein können, wenn die Microsoft Azure Active Directory (Azure AD)-Sicherheitsgruppe für den Commerce-Website-Generator beim Erstellen von E-Commerce-Komponenten in Microsoft Dynamics Lifecycle Services (LCS) nicht während der ersten Bereitstellung eines neuen E-Commerce-Mandanten als Option angezeigt werden.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 36ea43e19f395e3914d3eda1a9b8f5487b0926c5
-ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
+ms.openlocfilehash: aa00e9331693600ced2f4ead399a0c005b77ad08
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5585342"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801506"
 ---
 # <a name="cant-configure-a-security-group-for-commerce-site-builder-during-initial-deployment"></a>Während der ersten Bereitstellung kann keine Sicherheitsgruppe für den Commerce-Website-Generator konfiguriert werden
 
