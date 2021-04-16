@@ -2,11 +2,9 @@
 title: Serviceaufträge
 description: Ein Serviceauftrag steht für den Besuch eines Servicetechnikers am Standort eines Debitors zu einem bestimmten Datum.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26a1c693be9581bd26ad43c70a024b0a8115afdf
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e47c3f998b563c775da77c48edcb7b8abcba4a04
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254238"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824485"
 ---
 # <a name="service-orders"></a>Serviceaufträge   
 
