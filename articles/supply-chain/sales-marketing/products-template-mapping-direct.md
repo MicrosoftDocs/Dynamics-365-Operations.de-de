@@ -2,11 +2,9 @@
 title: Produkte direkt von Supply Chain Management mit Produkten in Sales synchronisieren
 description: Dieses Thema beschreibt die Vorlagen und die zugrunde liegende Aufgaben, die verwendet werden, um die Produkte aus Dynamics 365 Supply Chain Management mit Dynamics 365 Sales zu synchronisieren.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: f5e91d4dac8ea6d19fa32abca4e9ff73c7cd4a88
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 29bb9d05aa939ec82595e153faf03f290e219589
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234992"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817820"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Produkte direkt von Supply Chain Management mit Produkten in Sales synchronisieren
 

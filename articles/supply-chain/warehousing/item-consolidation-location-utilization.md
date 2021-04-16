@@ -2,11 +2,9 @@
 title: Artikelkonsolidierung – Auslastung von Lagerplatz
 description: Dieses Thema enthält Informationen zu Funktionen, mit denen Lagerverwalter die volumetrische Auslastung von Standorten im gesamten Lager problemlos anzeigen und filtern können. Manager können direkt auf der Seite „Positionskonsolidierung“ Standorte auswählen und Lagerumlagerungsarbeiten erstellen, um Artikel zu konsolidieren und so den Lagerraum besser zu nutzen.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 3b20b41d27e5faeac7ea88940c086ae33390dc29
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 892190ea7bad34dfd308796b93a1828e0e8e11b9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217004"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835569"
 ---
 # <a name="item-consolidation---location-utilization"></a>Artikelkonsolidierung – Auslastung von Lagerplatz
 
@@ -149,7 +147,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Ihr System auf die Verwendung der 
 
 ## <a name="example-scenario"></a>Beispielszenario
 
-Im folgenden Szenario wird die Lagerort-App auf einem mobilen Gerät verwendet, um eine Bestandsaufnahme *Anpassung in* an zwei Standorten im Lagerort durchzuführen.
+Im folgenden Szenario wird die Warehouse Management Mobile App auf einem mobilen Gerät verwendet, um eine Bestandsaufnahme *Anpassung in* an zwei Standorten im Lagerort durchzuführen.
 
 ### <a name="add-inventory-to-locations"></a>Lagerbestand zu Lagerplätzen hinzufügen
 

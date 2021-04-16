@@ -2,11 +2,9 @@
 title: Arbeitsauslastungen der Lagerortverwaltung für Scale-Units in der Cloud und Edge
 description: Dieses Thema enthält Informationen über die Funktion, die es Scale-Units ermöglicht, ausgewählte Prozesse aus der Arbeitsauslastung Ihrer Lagerortverwaltung auszuführen.
 author: perlynne
-manager: tfeyr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, SysSecRolesEditUsers
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
-ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
+ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5580964"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832393"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -70,7 +68,7 @@ Der Hub besitzt die folgenden Daten:
 - Auftragszuordnung und Ausgangslastverarbeitung
 - Die Prozesse Freigabe an Lagerort, Sendungserstellung und Wellenabschluss
 
-Die Scale-Units besitzen die eigentliche Wellenverarbeitung (z. B. Arbeitszuweisung, Wiederbeschaffung und Bedarfserstellung) nach der Freigabe der Welle. Daher können die Arbeitskräfte im Lagerort ausgehende Arbeit mithilfe einer Lager-App verarbeiten, die mit der Scale-Unit verbunden ist.
+Die Scale-Units besitzen die eigentliche Wellenverarbeitung (z. B. Arbeitszuweisung, Wiederbeschaffung und Bedarfserstellung) nach der Freigabe der Welle. Daher können die Arbeitskräfte im Lagerort ausgehende Arbeit mithilfe einer Warehouse Management Mobile App verarbeiten, die mit der Skalierungseinheit verbunden ist.
 
 ![Wellenverarbeitungs-Flow](./media/wes-wave-processing-ga.png "Ablauf der Wellenverarbeitung")
 
@@ -94,7 +92,7 @@ Sie müssen sich am Hub anmelden, um den Prozess *Freigeben an Lagerort* zu verw
 
 Wenn Sie **Automatische Freigabe von Bestellungen** verwenden, können Sie bestimmte Zeilen der Einkaufsbestellung anhand einer Abfrage auswählen. Ein typisches Szenario wäre, einen wiederkehrenden Batch-Job festzulegen, der alle bestätigten Zeilen der Einkaufsbestellung freigibt, die voraussichtlich am nächsten Tag eintreffen.
 
-Die Arbeitskraft kann den Empfangsprozess über eine Lagerort-App ausführen, die mit der Scale-Unit verbunden ist. Die Daten werden dann von der Scale-Unit aufgezeichnet und gegen den eingehenden Lagerauftrag gemeldet. Die Erstellung und Verarbeitung der nachfolgenden Einlagerung wird ebenfalls von der Scale-Unit übernommen.
+Die Arbeitskraft kann den Empfangsprozess über eine Warehouse Management Mobile App ausführen, die mit der Skalierungseinheit verbunden ist. Die Daten werden dann von der Scale-Unit aufgezeichnet und gegen den eingehenden Lagerauftrag gemeldet. Die Erstellung und Verarbeitung der nachfolgenden Einlagerung wird ebenfalls von der Scale-Unit übernommen.
 
 Wenn Sie nicht den Prozess *Freigabe an Lager* und damit auch nicht *Lageraufträge* verwenden, kann der Hub den Lagereingang und die Arbeitsaufträge unabhängig von Scale-Units verarbeiten.
 
@@ -117,10 +115,10 @@ Benutzern, die als Lagerortverwalter sowohl auf dem Hub als auch auf der Scale-U
 Die folgenden Lagerausführungsprozesse können für eine WES-Arbeitsauslastung auf einer Scale-Unit aktiviert werden:
 
 - Ausgewählte Wellenmethoden für Verkaufs- und Umlagerungsaufträge (Zuteilung, Wiederbeschaffung, Containerisierung, Arbeitserstellung und Wellenbeschriftungsdruck)
-- Bearbeitung von Lagerarbeiten für Verkaufs- und Umlagerungsaufträge mithilfe der Lagerort-App (einschließlich Wiederbeschaffungsarbeiten)
-- Abfrage von Lagerort-Beständen mit der Lagerort App
-- Erstellen und Ausführen von Bestandsbewegungen mit Hilfe der Lagerort App
-- Registrieren von Einkaufsbestellungen und Ausführen von Einlagerungsarbeiten mit der Lagerort App
+- Bearbeitung von Lagerarbeiten für Verkaufs- und Umlagerungsaufträge mithilfe der Warehouse Management Mobile App (einschließlich Wiederbeschaffungsarbeiten)
+- Abfrage von Lagerort-Beständen mit der Warehouse Management Mobile App
+- Erstellen und Ausführen von Bestandsbewegungen mit Hilfe der Warehouse Management Mobile App
+- Registrieren von Einkaufsbestellungen und Ausführen von Einlagerungsarbeiten mit der Warehouse Management Mobile App
 
 Die folgenden Arbeitsauftragstypen werden derzeit für WES-Arbeitsauslastungen bei Scale-Unit-Bereitstellungen unterstützt:
 
@@ -133,7 +131,7 @@ Die folgenden Arbeitsauftragstypen werden derzeit für WES-Arbeitsauslastungen b
 Keine anderen Arten von Quelldokumentverarbeitung oder Lagerortarbeiten wird derzeit auf Skalierungseinheiten unterstützt. Beispielsweise können Sie für eine WES-Arbeitsauslastung auf einer Skalierungseinheit keinen Empfangsvorgang für Umlagerungsaufträge (Umlagerungseingang) oder Prozesszykluszählarbeiten ausführen.
 
 > [!NOTE]
-> Menüelemente und Schaltflächen für mobile Geräte für nicht unterstützte Funktionen werden in der _Lagerort-App_ nicht angezeigt, wenn sie mit einer Skalierungseinheitsbereitstellung verbunden ist.
+> Menüelemente und Schaltflächen für mobile Geräte für nicht unterstützte Funktionen werden in der _Warehouse Management Mobile App_ nicht angezeigt, wenn sie mit einer Skalierungseinheitsbereitstellung verbunden ist.
 
 > [!WARNING]
 > Wenn Sie eine Arbeitsauslastung auf einer Skalierungseinheit ausführen, können Sie keine nicht unterstützten Prozesse für das spezifische Lager auf dem Hub ausführen. Die später in diesem Thema bereitgestellten Tabellen dokumentieren die unterstützten Funktionen.
@@ -164,7 +162,7 @@ Die folgenden Funktionen der Lagerortverwaltung werden derzeit für Arbeitsausla
 - Lagerort-Arbeitsverarbeitung mit Versandschein
 - Lagerort-Arbeitsverarbeitung mit Auslösung des Zykluszählschwellenwerts
 - Lagerort-Arbeitsverarbeitung mit Materialhandhabung/Lagerautomatisierung
-- Verwendung des Produktstammdaten-Bildes (z. B. in der Lagerort-App)
+- Verwendung des Produktstammdaten-Bildes (z. B. in der Warehouse Management Mobile App)
 
 > [!WARNING]
 > Einige Lagerortfunktionen sind für Lageorte, in denen die Arbeitsauslastungen für die Lagerortverwaltung auf einer Skalierungseinheit ausgeführt werden, nicht verfügbar und werden auch auf dem Hub oder der Arbeitsauslastung der Skalierungseinheit nicht unterstützt.
@@ -253,7 +251,7 @@ Die folgende Tabelle zeigt, welche Funktionen für Lagerort-Operationen und Exce
 | Bewegung                                           | Ja | Ja                          |
 | Bewegung durch Vorlage                               | Ja | Ja                          |
 | Lagerortumlagerung                                 | Ja | Nr.                           |
-| Umlagerungsauftrag aus der Lagerort-App erstellen           | Ja | Nr.                           |
+| Erstellen eines Umlagerungsauftrags aus der Warehouse Management Mobile App           | Ja | Nr.                           |
 | Abgleich (rein/raus)                                | Ja | Nr.                           |
 | Bestandsstatusänderung                            | Ja | Nr.                           |
 | Zykluszählung und Zähldiskrepanzverarbeitung | Ja | Nr.                           |

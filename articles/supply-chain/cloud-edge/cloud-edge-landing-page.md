@@ -2,11 +2,9 @@
 title: Cloud- und Edge-Skalierungseinheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung
 description: Dieses Thema enthält Informationen über Cloud- und Edge-Scale-Einheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung.
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-09-23
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fb0d8e0226b11e93503979c202da917de1df6319
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3eacc9d0cf53fa8af3ff166006cb8fab32445331
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240436"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836709"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Cloud- und Edge-Skalierungseinheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung
 
@@ -124,10 +122,10 @@ Weitere Informationen finden Sie in den [Details zur Arbeitsauslastung von Ferti
 Für die Lagerortverwaltung bieten Cloud- und Edge-Scale-Units die folgenden Funktionalitäten, auch wenn die Edge-Einheiten nicht mit der Cloud verbunden sind:
 
 - Die Verarbeitung ausgewählter Wave-Methoden ist für Verkaufsaufträge und Wiederbeschaffung von Bedarfen aktiviert.
-- Lagerort-Mitarbeiter können den Verkauf und die Wiederbeschaffung von Waren über die Lagerort-App abwickeln.
-- Lagerort-Mitarbeiter können über die Lagerort-App den Bestand abfragen.
-- Lagerort-Mitarbeiter können mit der Lagerort App Bestandsbewegungen erstellen und ausführen.
-- Lagerort-Mitarbeiter können mit der Lagerort-App Einkaufsbestellungen registrieren und Einlagerungen vornehmen.
+- Lagerort-Mitarbeiter können den Verkauf und die Wiederbeschaffung von Waren über die Warehouse Management Mobile App abwickeln.
+- Lagerort-Mitarbeiter können über die Warehouse Management Mobile App den Bestand abfragen.
+- Lagerort-Mitarbeiter können mit der Warehouse Management Mobile App Bestandsbewegungen erstellen und ausführen.
+- Lagerort-Mitarbeiter können mit der Warehouse Management Mobile App Einkaufsbestellungen registrieren und Einlagerungen vornehmen.
 
 Weitere Informationen finden Sie in den [Details zur Arbeitsauslastung von Lagerort-Scale-Units](cloud-edge-workload-warehousing.md).
 
