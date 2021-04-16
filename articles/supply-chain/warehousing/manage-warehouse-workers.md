@@ -1,12 +1,10 @@
 ---
 title: Verwalten der Lagerortarbeitskräfte
-description: In diesem Artikel wird beschrieben, wie Sie die Warehouse-App verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern an Ihren Lagerorten ausgeführt wird.
+description: In diesem Artikel wird beschrieben, wie Sie die Warehouse Management Mobile App verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern an Ihren Lagerorten ausgeführt wird.
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 audience: Application User
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18dbcf32f85bca51bf48e5ed8c64fedc99f66082
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9f5676879f631fce9c9c674250a07723131906fa
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216834"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818967"
 ---
 # <a name="manage-warehouse-workers"></a>Verwalten der Lagerortarbeitskräfte
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Sie die Warehouse-App verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern an Ihren Lagerorten ausgeführt wird.
+In diesem Artikel wird beschrieben, wie Sie die Warehouse Management Mobile App verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern an Ihren Lagerorten ausgeführt wird.
 
 Wenn Sie die Funktionen in der Lagerortverwaltung verwenden, werden alle Arbeitsgänge der Lagerarbeiter als *Arbeit* bezeichnet. Arbeit, wie die Entnahme, das Umlagern und das Zählen des verfügbaren Lagerbestands wird mithilfe von mobilen Geräten erfasst. Bevor ein Lagerarbeiter Arbeit ausführen kann, muss er einer Arbeitskraft in der Personalverwaltung zugeordnet werden. Jedes **Arbeitskraftkonto** kann mehrere Lagerortarbeitsbenutzer haben, die ihm zugeordnet sind. Diese Arbeitsbenutzer können in verschiedenen Lagerorten arbeiten und verschiedene Zugriffsebenen auf unterschiedliche Menüs des mobilen Geräts haben. Sie können die Lagerortarbeitsbenutzer als mehrere Anmeldungen für die ausgewählte Arbeitskraft betrachten. Jeder Arbeitsbenutzer hat einen Standardlagerort, und bestimmte Workflows werden durch die Menüartikel, die diesem Arbeitsbenutzer verfügbar sind, offengelegt. 
 

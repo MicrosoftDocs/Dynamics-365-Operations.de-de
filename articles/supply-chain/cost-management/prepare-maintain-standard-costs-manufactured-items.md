@@ -2,11 +2,9 @@
 title: Vorbereiten der Verwaltung von Standardkosten für produzierte Artikel
 description: In diesem Thema werden die Schritte zur Vorbereitung der Kostenverwaltung für produzierte Artikel beschrieben.
 author: AndersGirke
-manager: tfehr
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
@@ -18,12 +16,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f428f2e3966155b4fc95fd94b6a55d059eb3533d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6944782ac236a3f414b1cadfb12b0f0d8c1115b9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263517"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821512"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Vorbereiten der Verwaltung von Standardkosten für produzierte Artikel
 

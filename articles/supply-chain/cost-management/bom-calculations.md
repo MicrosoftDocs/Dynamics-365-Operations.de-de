@@ -2,11 +2,9 @@
 title: BOM-Berechnungen
 description: Die Berechnungen für die Kostenzusammenfassung sowie zur Ermittlung des Stücklistenpreises werden als Herstellkostenkalkulation bezeichnet, da sie vom Formular aus gestartet werden. Dieses Thema enthält Informationen zur Stücklistenberechnung
 author: AndersGirke
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, ProdSetupCostEstimation
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 94023157512a683ba82313c7867a054fc09b6a31
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9ee38138914ba0a33891083bae00fd582943bc30
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5266246"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816699"
 ---
 # <a name="bom-calculations"></a>BOM-Berechnungen
 

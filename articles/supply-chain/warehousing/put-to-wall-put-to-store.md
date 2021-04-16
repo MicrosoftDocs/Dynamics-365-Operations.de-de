@@ -2,11 +2,9 @@
 title: Put-to-Wall - Put-to-Store
 description: Dieses Thema enthält Informationen zu den Funktionen „Put-to-Wall - Put-to-Store“. Mit dieser Funktion können Sie Szenarien behandeln, in denen Sie ein Produkt basierend auf konfigurierbaren Kriterien in einem Prepack-Staging-Bereich konsolidieren müssen. Dies verkürzt die Kommissionierzeit, da es die Kommissionierung auf ein einzelnes Zielkennzeichen ermöglicht und mehr Put-Positionen als die Cluster-Kommissionierung verwenden kann.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e2dcfa18af457ea21618704bafa2ed81c615d952
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228512"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823286"
 ---
 # <a name="put-to-wall---put-to-store"></a>Put-to-Wall - Put-to-Store
 
@@ -524,7 +522,7 @@ Nachdem der gesamte Bestand an den Sortierort gebracht wurde, muss es an der ric
 
 Wenn Sortierpositionen manuell geschlossen werden sollen, muss die Option **Sortierposition automatisch schließen** für die Vorlage für die Ausgangssortierung auf *Nein* gesetzt sein und das Schließen muss erfolgen, bevor der Bestand in den Bereich der Frachttür gebracht werden kann. Positionen können auf verschiedene Arten geschlossen werden:
 
-- Über die Warehouse-App:
+- Über die Warehouse Management Mobile App:
 
     - Der Benutzer kann einen der Artikel scannen, die sich bereits an der Position befinden, und dann **Schließen** auswählen, um die Position zu schließen.
     - Wenn der Benutzer einen Container sortiert, der bereits sortiert wurde, wird eine Fehlermeldung angezeigt. Der Benutzer kann die Position jedoch weiterhin schließen.

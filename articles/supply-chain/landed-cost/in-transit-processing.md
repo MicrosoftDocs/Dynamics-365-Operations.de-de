@@ -2,7 +2,6 @@
 title: Waren in Zustellung bearbeiten
 description: Dieses Thema beschreibt, wie Sie mit Waren in Zustellung arbeiten. Wenn ein Auftrag oder eine Fahrt so festgelegt ist, dass die Waren in Zustellung verarbeitet werden, können die Waren in Rechnung gestellt werden, bevor sie im Lagerort zum Verbrauch eingegangen sind.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 77e30f8679c9422e895432c023997b5ff4768ebd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500403"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823408"
 ---
 # <a name="goods-in-transit-processing"></a>Waren in Zustellung
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dieses Thema beschreibt, wie Sie mit Waren in Zustellung arbeiten. Diese Art von Auftrag wird nur vom Modul **Gesamttransportkosten** verwendet. Wenn ein Auftrag oder eine Fahrt für die Verwendung der Waren in Zustellung festgelegt ist, müssen Sie nicht warten, bis die Waren im Lagerort eingegangen sind, bevor Sie sie in Rechnung stellen können. Stattdessen werden die Waren fakturiert, wenn sie den Lagerort oder den Hafen des Lieferanten verlassen, und die finanziellen Kosten werden bei Beginn der Fahrt erfasst. Mit dieser Funktionalität können Sie den Bestand korrekt in Besitz nehmen, da Waren oft in das Eigentum Ihres Unternehmens übergehen, wenn sie den Lieferhafen verlassen.
 
@@ -135,7 +133,7 @@ Gesamttransportkosten fügt die folgenden Arbeitserstellungsprozesse zu den Men�
 
 Die Konfigurationseinstellungen für diese Prozesse ähneln den Einstellungen für die [Arbeitserstellungsprozesse Einkaufsbestellung empfangen und einlagern](https://technet.microsoft.com/library/dn553216.aspx). Allerdings fügt der Prozess *Waren in Zustellung Artikel empfangen und einlagern* zusätzlich das folgende Feld hinzu.
 
-- **Transportcontainer abschließen** - Wenn diese Option auf *Ja* festgelegt ist, bietet die Lagerort App nach Abschluss der Einlagerungsarbeiten eine zusätzliche Option an, die **Transportcontainer abschließen** heißt. Wenn diese Option ausgewählt wird, wird die Arbeitskraft aufgefordert, zu bestätigen, dass der Container vollständig ist. Zu diesem Zeitpunkt werden alle Kurzbelege als eine untere Transaktion verarbeitet.
+- **Transportcontainer abschließen** - Wenn diese Option auf *Ja* festgelegt ist, bietet die Warehouse Management Mobile App nach Abschluss der Einlagerungsarbeiten eine zusätzliche Option an, die **Transportcontainer abschließen** heißt. Wenn diese Option ausgewählt wird, wird die Arbeitskraft aufgefordert, zu bestätigen, dass der Container vollständig ist. Zu diesem Zeitpunkt werden alle Kurzbelege als eine untere Transaktion verarbeitet.
 
 ### <a name="location-directives"></a>Lagerplatzrichtlinien
 
