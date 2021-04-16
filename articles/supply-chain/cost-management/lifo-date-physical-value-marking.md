@@ -2,11 +2,9 @@
 title: LIFO-Datum mit physischem Wert und Markierung
 description: Beim LIFO-Datum (Last In, First Out) handelt es sich um ein Lagermodell, das auf dem LIFO-Prinzip basiert. Abgänge aus dem Lager werden mit den neuesten Zugängen im Lager auf der Grundlage des Datums der Lagerbuchung abgeglichen. Bei Verwendung des LIFO-Datums wird der Abgang mit beliebigen Zugängen ausgeglichen, die nach dem Datum des Artikelabgangs liegen, wenn vor dem Abgang kein Zugang zu verzeichnen ist. Mehrere Abgänge am gleichen Datum können in der Reihenfolge "Neuester Abgang, neuester Zugang" ausgeglichen werden.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e88ae89ec10a03cfb7bd057bc5f2c33071b55b4a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f6a9f21c6c329ef37d515fa0fbdaca57b4f3be0a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233822"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821536"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-Datum mit physischem Wert und Markierung
 

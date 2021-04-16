@@ -1,12 +1,10 @@
 ---
-title: Kennzeichenempfang über die Warehouse-App
-description: In diesem Thema wird erläutert, wie Sie die Warehouse-App so einrichten, dass die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt wird.
+title: Kennzeicheneingang über die mobile Warehouse Management Mobile App
+description: In diesem Thema wird erläutert, wie Sie die Warehouse Management Mobile App so einrichten, dass die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Inventar unterstützt wird.
 author: perlynne
-manager: tfehr
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: f921d08572038d2ac53948825a8ca2459103b7f7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8c662da296bea7def443cb166bd3f7e501c9abcc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245153"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823190"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-app"></a>Kennzeichenempfang über die Warehouse-App
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Kennzeicheneingang über die mobile Warehouse Management Mobile App
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die Warehouse-App einrichten, sodass sie die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt.
+In diesem Thema wird erläutert, wie Sie die Warehouse Management Mobile App einrichten, so dass sie die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt.
 
 Mit dieser Funktion können Sie schnell den Eingang des eingehenden Bestands aufzeichnen, der sich auf eine Vorabmitteilung (ASN) bezieht. Das System erstellt automatisch einen Lieferavis, wenn Lagerverwaltungsprozesse zum Versenden eines Transportauftrags verwendet werden. Für den Bestellvorgang kann ein ASNs manuell erfasst oder mithilfe eines eingehenden ASN-Datenentitätsprozesses automatisch importiert werden.
 
@@ -72,7 +70,7 @@ Um diese Funktionalität auf Ihrem System verfügbar zu machen, müssen Sie die 
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Zeigen Sie die empfangende Zusammenfassungsseite an oder überspringen Sie sie
 
-Sie können die Funktion *Steuern Sie, ob auf Mobilgeräten eine Empfangsübersichtsseite angezeigt werden soll* verwenden, um einen zusätzlichen detaillierten Warehouse-App-Ablauf als Teil des Kennzeichenempfangsprozesses zu nutzen.
+Sie können die Funktion *Steuern Sie, ob auf Mobilgeräten eine Empfangsübersichtsseite angezeigt werden soll* verwenden, um einen zusätzlichen detaillierten Warehouse Management Mobile App-Flow als Teil des Kennzeichenempfangsprozesses zu nutzen.
 
 Wenn diese Funktion aktiviert ist, bieten Menüelemente für mobile Geräte zum Empfangen von Kennzeichen oder zum Empfangen und Einlagerungen eine Einstellung **Empfangsübersichtsseite anzeigen** an. Diese Einstellung bietet folgende Optionen:
 

@@ -2,11 +2,9 @@
 title: Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.11 (Juni 2020)
 description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Supply Chain Management 10.0.11 neu oder geändert wurden.
 author: kamaybac
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 16195e8dd99161cd812dea7dd6f3024b10b94713
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fa6a57266838fff4c34384337200fc6f24cbe640
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258994"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821176"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.11 (Juli 2020)
 
@@ -39,7 +37,7 @@ Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel 
 
 - [Speicher für den Bericht zum verfügbaren Lagerbestand](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 
-- [Verbesserungen beim Kennzeichenempfang für die Warehouse-App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Weitere Informationen finden Sie unter [Kennzeichenempfang über die Warehouse-App](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Verbesserungen beim Kennzeichenempfang für die Warehouse-App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Weitere Informationen finden Sie unter [Kennzeichenempfang über die Warehouse Management Mobile App](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
 - [Verbesserungen der Positionsreservierung für das Chargennummernreservierungsformular](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Weitere Informationen finden Sie unter [Dieselbe Charge für einen Auftrag reservieren](../sales-marketing/reserve-same-batch-sales-order.md).
 
