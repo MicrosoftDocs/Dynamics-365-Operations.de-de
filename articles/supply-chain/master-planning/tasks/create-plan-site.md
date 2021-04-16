@@ -2,11 +2,9 @@
 title: Einen Plan für einen Standort erstellen
 description: Der Produktionsplaner berechnet das Material und die Kapazitätsanforderungen für die Produktion eines bestimmten Artikels.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqTransPOUrgentFormPart, SysQueryForm
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5ef805ba42500175d29208f1dcd5d383c63adb8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bf3016e289248acafc3bc6b79d853fd9de8c5417
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214345"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841646"
 ---
 # <a name="create-a-plan-for-a-site"></a>Einen Plan für einen Standort erstellen
 

@@ -2,11 +2,9 @@
 title: Status des Lagerplatzes an einem Lagerort
 description: Dieses Thema bietet einen Überblick über die Statusfunktion für den Lagerplatz an einem Lagerort.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSLocation
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: e343fbd33ca616b0e20efb1f1fd66ed4863a72dd
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4f31fd424760aa677df9235e53dc4af20cc2ea94
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248618"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837344"
 ---
 # <a name="warehouse-location-status"></a>Status des Lagerplatzes an einem Lagerort
 
@@ -53,7 +51,7 @@ Bevor Sie die Funktion für *Status für den Lagerplatz an einem Lagerort* verwe
 
 ### <a name="prepare-the-sample-data-that-is-required-for-the-example-scenario"></a>Beispieldaten vorbereiten, die für das Beispielszenario erforderlich sind
 
-Bevor Sie mit der Bearbeitung des Szenarios beginnen, müssen Sie Beispieldaten aktivieren und die Funktion wie in diesem Abschnitt beschrieben einrichten. Um das Beispielszenario abzuschließen, müssen Sie entweder die Warehouse-App oder den browserbasierten Emulator verwenden. Die hier bereitgestellten Schritte verwenden die Warehouse-App. Die Schritte für den browserbasierten Emulator sind ähnlich.
+Bevor Sie mit der Bearbeitung des Szenarios beginnen, müssen Sie Beispieldaten aktivieren und die Funktion wie in diesem Abschnitt beschrieben einrichten. Um das Beispielszenario abzuschließen, müssen Sie entweder die Warehouse Management Mobile App oder den browserbasierten Emulator verwenden. Die hier bereitgestellten Schritte verwenden die Warehouse Management Mobile App. Die Schritte für den browserbasierten Emulator sind ähnlich.
 
 #### <a name="use-the-usmf-legal-entity"></a>USMF juristische Person verwenden
 

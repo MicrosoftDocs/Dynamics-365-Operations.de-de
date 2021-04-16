@@ -2,11 +2,9 @@
 title: Fehlerbehebung bei eingehenden Lagerort-Vorgängen
 description: In diesem Thema wird beschrieben, wie Sie allgemeine Probleme beheben können, die bei der Arbeit mit eingehenden Lagerort-Operationen in Microsoft Dynamics 365 Supply Chain Management auftreten können.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6875c3c644b9993a384ba4d8623640536d7307e1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250881"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828225"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Fehlerbehebung bei eingehenden Lagerort-Vorgängen
 
@@ -65,5 +63,22 @@ Eine neue Funktion zur Behandlung eingehender Ladungen, *Übernahme von Ladungsm
 
 Weitere Informationen finden Sie unter [Registrierte Produktmengen gegen Einkaufsbestellungen verbuchen](inbound-load-handling.md#post-registered-quantities).
 
+## <a name="when-i-register-inbound-orders-i-receive-the-following-error-message-the-quantity-is-not-valid"></a>Wenn ich eingehende Aufträge registriere, erhalte ich die folgende Fehlermeldung: „Die Menge ist nicht gültig.“
+
+### <a name="issue-description"></a>Problembeschreibung
+
+Wenn das Feld **Ladungsträgergruppierungsrichtlinie** für ein Menüelement eines mobilen Geräts, mit dem eingehende Aufträge registriert werden, auf *Benutzerdefiniert* eingestellt ist, wird eine Fehlermeldung angezeigt („Die Menge ist ungültig“) und Sie können die Registrierung nicht abschließen.
+
+### <a name="issue-cause"></a>Ursache des Problems
+
+Wenn *Benutzerdefiniert* als Ladungsträgergruppierungsrichtlinie verwendet wird, teilt das System den eingehenden Bestand in separate Ladungsträger auf, wie in der Nummernkreisgruppe der Einheit angegeben. Wenn Chargen- oder Seriennummern verwendet werden, um den eingehenden Artikel zu verfolgen, müssen die Mengen jeder Charge oder Seriennummer pro registriertem Ladungsträger angegeben werden. Wenn die für einen Ladungsträger angegebene Menge die Menge überschreitet, die für die aktuellen Dimensionen noch empfangen werden muss, wird die Fehlermeldung angezeigt.
+
+### <a name="issue-resolution"></a>Problemlösung
+
+Wenn Sie einen Artikel mithilfe eines Menüelements für mobile Geräte registrieren, in dem das Feld **Landungsträgergruppierungsichtlinie** auf *Benutzerdefiniert* ist, verlangt das System möglicherweise, dass Sie Kennzeichen-, Chargen- oder Seriennummern bestätigen oder eingeben.
+
+Auf der Seite zur Bestätigung des Ladungsträgers zeigt das System die Menge an, die dem aktuellen Ladungsträger zugeordnet ist. Auf den Seiten zur Chargen- oder Serienbestätigung zeigt das System die Menge, die auf dem aktuellen Ladungsträger noch empfangen werden muss. Dazu gehört auch ein Feld, in das Sie die Menge eingeben können, die für diese Kombination aus Ladungsträger und Chargen- oder Seriennummer registriert werden soll. Stellen Sie in diesem Fall sicher, dass die Menge, die für den Ladungsträger registriert wird, die Menge nicht überschreitet, die noch empfangen werden muss.
+
+Wenn bei der Registrierung eingehender Bestellungen zu viele Ladungsträger generiert werden, wird alternativ der Wert des Felds **Ladungsträgergruppierungsrichtlinie** auf *Ladungsträgergruppierung* geändert werden, dem Artikel kann eine neue Nummernkreisgruppe für die Einheit zugewiesen werden oder die Option **Ladungsträgergruppierung** kann für die Nummernkreisgruppe für die Einheit deaktiviert werden.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

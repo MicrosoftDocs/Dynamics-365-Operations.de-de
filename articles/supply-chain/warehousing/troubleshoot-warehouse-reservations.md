@@ -2,11 +2,9 @@
 title: Fehlerbehebung bei Reservierungen in der Lagerortverwaltung
 description: In diesem Thema wird beschrieben, wie Sie allgemeine Probleme beheben können, die bei der Arbeit mit Lagerort-Reservierungen in Microsoft Dynamics 365 Supply Chain Management auftreten können.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,18 +15,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a9a5d20732a802fc58c392853af8334bbc07de73
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0d73396772ed9e8397797d6685fb550d911303b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248714"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828105"
 ---
 # <a name="troubleshoot-reservations-in-warehouse-management"></a>Fehlerbehebung bei Reservierungen in der Lagerortverwaltung
 
 [!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie allgemeine Probleme beheben können, die bei der Arbeit mit Lagerort-Reservierungen in Microsoft Dynamics 365 Supply Chain Management auftreten können.
+
+Informationen zu Themen, die sich auf die Registrierung von Chargen- und Seriennummern beziehen, finden Sie unter [Problembehandlung bei Chargen- und Serienreservierungshierarchien für Lagerorte](troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md).
 
 ## <a name="i-receive-the-following-error-message-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations"></a>Ich erhalte die folgende Fehlermeldung: „Reservierungen können nicht entfernt werden, da Arbeit erstellt wurde, die sich auf die Reservierungen stützt.“
 
@@ -63,20 +63,6 @@ Dieses Problem kann auftreten, wenn das System eine Bestandsmenge nicht aktualis
 ### <a name="issue-resolution"></a>Problemlösung
 
 Dieses Problem wird wahrscheinlich durch offene Arbeit verursacht. Beenden Sie entweder die Arbeit oder empfangen Sie ohne Arbeitserstellung. Stellen Sie sicher, dass keine Bestandstransaktionen die Menge physisch reservieren. Diese Vorgänge können z. B. offene Qualitätsaufträge, Bestandssperrungen oder Ausgabeaufträge sein.
-
-## <a name="i-receive-the-following-error-message-to-be-assigned-to-wave-load-lines-must-specify-the-dimensions-above-the-location-to-assign-these-dimensions-reserve-and-recreate-the-load-line"></a>Ich erhalte die folgende Fehlermeldung: „Um einer Welle zugewiesen zu werden, müssen Ladungszeilen die Dimensionen oberhalb des Lagerplatzes angeben. Um diese Dimensionen zuzuweisen, reservieren Sie und erstellen Sie die Ladelinie neu.“
-
-### <a name="issue-description"></a>Problembeschreibung
-
-Wenn Sie ein Element verwenden, das eine Reservierungshierarchie „Charge oben“ hat (mit der Dimension **Chargennummer**, die *über* der Dimension **Lagerplatz** platziert ist), funktioniert der Befehl **Freigeben an Lagerort** auf der Seite **Ladungsplanung Workbench** für eine Teilmenge nicht. Sie erhalten diese Fehlermeldung, und es wird keine Arbeit für die Teilmenge erstellt.
-
-Wenn Sie jedoch ein Element verwenden, das eine Reservierungshierarchie „Charge unten“ hat (mit der Dimension **Chargennummer**, die *unter* der Dimension **Lagerplatz** platziert ist), können Sie auf der Seite **Ladungsplanung Werkbank** für eine Teilmenge eine Ladung freigeben.
-
-### <a name="issue-resolution"></a>Problemlösung
-
-Dieses Verhalten ist beabsichtigt. Wenn Sie in der Reservierungshierarchie eine Dimension oberhalb der **Ort**-Dimension einlagern, muss diese vor der Freigabe zum Lagerort angegeben werden. Microsoft hat dieses Problem untersucht und festgestellt, dass es sich um eine Einschränkung der Funktion bei Freigaben an das Lagerort aus der Ladeplanungs-Workbench handelt. Teilmengen können nicht freigegeben werden, wenn eine oder mehrere Dimensionen über **Lagerplatz** nicht angegeben sind.
-
-Weitere Informationen finden Sie unter [Flexible Richtlinie für die Reservierung von Dimensionen auf Lagerebene](flexible-warehouse-level-dimension-reservation.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

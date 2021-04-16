@@ -2,11 +2,9 @@
 title: Auto-Freigabelieferung für Crossdocking
 description: In diesem Thema wird eine Crossdockingstrategie beschrieben, mit der Sie automatisch einen Bedarfsauftrag für den Lagerort freigeben können, wenn der Produktionsauftrag, der die Bedarfsmenge liefert, als fertig gemeldet wird, sodass die Menge direkt vom Produktions-Warenabgang zum ausgehenden Lagerplatz bewegt wird.
 author: omulvad
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 619133cb1ef5f85222a42a08fd5fb77250c3d911
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1c831030659b38b52932e504f744d24d999958a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233174"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831433"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Auto-Freigabelieferung für Crossdocking
 
@@ -163,7 +161,7 @@ Für ein Crossdocking der Menge von Fertigerzeugnissen für den ausgehenden Lage
 8. Auf der Seite **Produktionsauftrag** im Aktivitätsbereich auf der **Produktionsauftrag**-Registerkarte in der Gruppe **Prozess** wählen Sie **Vorkalkulation** und dann **OK** aus. Der Auftrag wird vorkalkuliert und die Rohmaterialmenge wird für die Produktion reserviert.
 9. Im Aktivitätsbereich auf der **Produktionsauftrag**-Registerkarte in der Gruppe **Prozess** wählen Sie **Freigabe** und dann **OK** aus. Die Lagerortentnahmearbeit wird für die Rohmaterialien erstellt.
 10. Öffnen und überprüfen Sie die Arbeit. Wählen Sie im Aktivitätsbereich, auf der Registerkarte **Lagerort** in der Gruppe **Allgemein** die Option **Arbeitsdetails** aus. Notieren Sie die Arbeits-ID.
-11. Melden Sie sich bei der Warehouse-App an, um die Arbeit an Lagerort 51 auszuführen.
+11. Melden Sie sich bei der Warehouse Management Mobile App an, um die Arbeit an Lagerort 51 auszuführen.
 12. Gehen Sie zu **Produktion** \> **Produktionsentnahme**.
 13. Geben Sie die Arbeits-ID ein, um schließen Sie die Rohmaterialentnahme ab. 
 

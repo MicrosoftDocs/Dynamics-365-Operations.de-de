@@ -2,11 +2,9 @@
 title: Verwalten Sie Lohnarbeit in der Produktion
 description: In diesem Thema wird erläutert, wie Fremdarbeitsdienste in Dynamics 365 Supply Chain Management verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden.
 author: cvocph
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup, ProdBOMVendorListPagePreviewPane, ProdBOMVendor
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66aed16cc3e2c3b33dfd40982d2211816c4e5047
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 11728694565b10bf0336671f6c1b5f43cbcadf78
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245996"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825818"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Verwalten Sie Lohnarbeit in der Produktion
 

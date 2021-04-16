@@ -2,11 +2,9 @@
 title: Fremdarbeit
 description: Dieses Thema können Sie eine, einschließlich Zulieferung exemplarischen Vorgehensweise der bei der Herstellung in Dynamics 365 Supply Chain Managementerstellen.
 author: christophernread
-manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f771c15d98abe3689054d43cc8b33632121522a3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255540"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825181"
 ---
 # <a name="subcontracting"></a>Fremdarbeit
 
@@ -210,7 +208,7 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
 
     ![Zwei Sätze Arbeit für Rohmaterialentnahmen auf der Seite Arbeit](./media/subcontract22_work-page.png)
 
-26. Starten Sie die Lagerort-App, um die Lagerortarbeit für Arbeitsgang 10 zu verarbeiten.
+26. Starten Sie die Warehouse Management Mobile App, um die Lagerortarbeit für Arbeitsgang 10 zu verarbeiten.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -222,13 +220,13 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
     - Im **Von Arbeitsgangnr.** Feld wählen Sie **10**.
     - Im **Zu Arbeitsgangnr.** Feld wählen Sie **10**.
 
-    ![Werte festgelegt auf der Registerkarte "Allgemeines"](./media/subcontract23_start-dialog.png)
+    ![Werte festgelegt auf der Registerkarte 1 „Allgemeines“](./media/subcontract23_start-dialog.png)
 
 31. Wählen Sie **OK**, um das Dialogfeld **Start** zu schließen und zur Seite **Alle Produktionsaufträge** zurückzukehren.
 
     Beachten Sie, dass der Status des Produktionsauftrags nun **Gestartet** ist. Die Materialien für Arbeitsgang 10 werden durch eine automatische Buchung der Kommissionierlistenerfassung verbraucht. Der Zeitverbrauch für Arbeitsgang 10 wird durch eine automatische Buchung einer Arbeitsplanlisten-Erfassung angegeben.
 
-32. Starten Sie die Lagerort-App, um die Lagerortarbeit für Arbeitsgang 20 zu verarbeiten.
+32. Starten Sie die Warehouse Management Mobile App, um die Lagerortarbeit für Arbeitsgang 20 zu verarbeiten.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -240,7 +238,7 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
     - Geben Sie im Feld **Menge** den Wert **10** ein.
     - Wählen Sie im Feld **Kommissionierliste jetzt buchen** die Antwort **Nein** aus.
 
-    ![Werte festgelegt auf der Registerkarte "Allgemeines"](./media/subcontract24_general-tab.png)
+    ![Werte festgelegt auf der Registerkarte 2 „Allgemeines“](./media/subcontract24_general-tab.png)
 
 35. Wählen Sie **OK**, um das Dialogfeld **Start** zu schließen und zur Seite **Alle Produktionsaufträge** zurückzukehren.
 

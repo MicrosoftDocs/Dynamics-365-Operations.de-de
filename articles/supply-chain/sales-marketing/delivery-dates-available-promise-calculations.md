@@ -2,11 +2,9 @@
 title: Lieferterminzusage
 description: Dieser Artikel enthält Informationen zu Lieferterminzusagen. Lieferterminzusagen ermöglichen es Ihnen, Ihren Kunden zuverlässige Lieferdaten zuzusichern und geben Ihnen Flexibilität, sodass Sie diese Daten auch einhalten können.
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesATP, SalesAvailableDlvDates, SalesCarrier
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7107478e2af2e35819cef120cc536033ece3d1ec
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 40b43ed2b5dfc0126ff723f1d98c5bcf28637822
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229230"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840676"
 ---
 # <a name="order-promising"></a>Lieferterminzusage
 

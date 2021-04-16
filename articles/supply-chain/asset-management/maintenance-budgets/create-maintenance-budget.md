@@ -1,12 +1,10 @@
 ---
 title: Erstellen von Wartungsbudgets
 description: In diesem Thema wird erläutert, wie Wartungsbudgets in der Anlagenverwaltung erstellt werden.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetBudgetLineAdjust, EntAssetBudget, EntAssetBudgetRecalc, EntAssetBudgetCopy, EntAssetBudgetLine, EntAssetBudgetCreate, EntAssetBudgetApprove, EntAssetBudgetCalculateActualCost
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 593a03e3317de5759427dfc61093530c4b7ef7e9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b91b398c4ef864a92a5318b7e80f71a5a572844e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253493"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836757"
 ---
 # <a name="create-maintenance-budgets"></a>Erstellen von Wartungsbudgets
 

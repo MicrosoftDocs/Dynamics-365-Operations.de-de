@@ -2,11 +2,9 @@
 title: Clustereinlagerung
 description: Einlagerungs-Cluster bieten eine Möglichkeit, mehrere Ladungsträger gleichzeitig zu entnehmen und diese dann an verschiedenen Lagerplätzen einzulagern. Sie können sehr nützlich für Einzelhandelsgeschäfte sein, bei denen Ladungsträger in der Regel keine vollen Paletten mit Bestand darstellen.
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5552959068d109bffe32b8074666bcd63b57183a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b3a7d1b7109b83b26c8187a7f0d271f1c82f6d63
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228440"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840364"
 ---
 # <a name="putaway-clusters"></a>Clustereinlagerung
 
@@ -230,7 +228,7 @@ Dieses Szenario simuliert die Clustereinlagerungs-Verarbeitung.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Bestand empfangen und in ein Cluster einsortieren
 
-1. Melden Sie sich bei der Lagerort App als ein Benutzer an, der für Lagerort *61* festgelegt ist.
+1. Melden Sie sich bei der Warehouse Management Mobile App als Benutzer an, der auf den Lagerort *61* eingestellt ist.
 1. Wählen Sie im Hauptmenü **Eingang**.
 1. Wählen Sie im Menü **Eingang** die Option **Cluster empfangen und sortieren**.
 1. Geben Sie im Feld **Ponum** die Nummer der Einkaufsbestellung ein.
@@ -272,7 +270,7 @@ Bevor die Elemente des Clusters eingelagert werden können, muss der Cluster ges
 
 #### <a name="put-the-cluster-away"></a>Einlagern des Clusters
 
-1. Melden Sie sich bei der Lagerort App als ein Benutzer an, der für Lagerort *61* festgelegt ist.
+1. Melden Sie sich bei der Warehouse Management Mobile App als Benutzer an, der auf den Lagerort *61* eingestellt ist.
 1. Wählen Sie im Hauptmenü **Eingang**.
 1. Wählen Sie im Menü **Eingang** die Option **Clustereinlagerung**.
 1. Wählen Sie **Cluster-ID**, und geben Sie die Cluster-ID ein, die Sie zuvor für den geschlossenen Cluster eingegeben haben.

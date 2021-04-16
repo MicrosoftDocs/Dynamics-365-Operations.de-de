@@ -1,12 +1,10 @@
 ---
 title: Umlagerungsaufträge aus der Lagerort-App erstellen
-description: In diesem Thema wird beschrieben, wie Sie Umlagerungsaufträge über die Lagerort-App erstellen und verarbeiten
+description: In diesem Thema wird beschrieben, wie Sie Umlagerungsaufträge über die Warehouse Management Mobile App erstellen und verarbeiten
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 855b057706bc2f8315084a3cebec6f855a4d01e7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0238f46d28205fd6d0906030a1660ab3aa7225a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214129"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838369"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Umlagerungsaufträge aus der Lagerort-App erstellen
 
 [!include [banner](../includes/banner.md)]
 
-Diese Funktion ermöglicht Lagerarbeitern das Erstellen und Verarbeiten von Umlagerungsaufträgen direkt über die Lagerort-App. Die Lagerarbeiter wählen zunächst den Ziellagerort aus und können dann mit der App ein oder mehrere Kennzeichen scannen, um Kennzeichen zum Umlagerungsauftrag hinzuzufügen. Wenn der Lagerarbeiter **Bestellung abschließen** auswählt, erstellt ein Batchauftrag den erforderlichen Umlagerungsauftrag und die Bestellpositionen basierend auf dem verfügbaren, für diese Kennzeichen registrierten Lagerbestand.
+Diese Funktion ermöglicht Lagerarbeitern das Erstellen und Verarbeiten von Umlagerungsaufträgen direkt über die Warehouse Management Mobile App. Die Arbeiter wählen zunächst den Ziellagerort aus und können dann mit der App ein oder mehrere Kennzeichen scannen, um Kennzeichen zum Umlagerungsauftrag hinzuzufügen. Wenn der Lagerarbeiter **Bestellung abschließen** auswählt, erstellt ein Batchauftrag den erforderlichen Umlagerungsauftrag und die Bestellpositionen basierend auf dem verfügbaren, für diese Kennzeichen registrierten Lagerbestand.
 
-## <a name="enable-the-create-transfer-orders-from-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Erstellung von Umlagerungsaufträgen aus der Lagerort-App aktivieren
+## <a name="enable-the-create-transfer-orders-from-the-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Erstellung von Umlagerungsaufträgen aus der Lagerort-App aktivieren
 
 Bevor Sie diese Funktion nutzen können, müssen Sie die Funktion und ihre Voraussetzugnen auf Ihrem System aktivieren. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren.
 
@@ -50,8 +48,8 @@ Hier finden Sie allgemeine Richtlinien zum Einrichten eines Menüelements auf mo
 1. Wählen Sie **Neu** aus, um ein neues Menüelement zu erstellen. Nehmen Sie dann die folgenden Einstellungen vor, um loszulegen:
 
     - **Name des Menüelements**: Weisen Sie einen Namen zu, wie er in Supply Chain Management angezeigt werden soll.
-    - **Titel**: Weisen Sie einen Menünamen zu, der den Mitarbeitern in der Lagerort-App angezeigt werden soll.
-    - **Modus**: Auf *Indirekt* festlegen (diese Lagerort-App erstellt keine Arbeit).
+    - **Titel**: Weisen Sie einen Menünamen zu, der den Mitarbeitern in der Warehouse Management Mobile App angezeigt werden soll.
+    - **Modus**: Auf *Indirekt* festlegen (diese Menüoption erstellt keine Arbeit).
     - **Aktivitätscode**: Auf *Umlagerungsauftrag aus Kennzeichen erstellen* festlegen, damit die Lagerarbeiter einen Umlagerungsauftrag basierend auf einem oder mehreren gescannten Kennzeichen erstellen können.
 
 1. Verwenden Sie die Einstellung **Richtlinie zum Erstellen von Umlagerungsauftragspositionen**, um zu festzulegen, wie Umlagerungsauftragspositionen von diesem Menüpunkt erstellt werden. Die Positionen werden basierend auf dem vorhandenen Lagerbestand erstellt/aktualisiert, der für die gescannten Kennzeichen registriert ist. Wählen Sie einen der folgenden Werte aus:
@@ -74,7 +72,7 @@ Hier finden Sie allgemeine Richtlinien zum Einrichten eines Menüelements auf mo
 
 ## <a name="create-a-transfer-order-based-on-license-plates"></a>Erstellen eines Umlagerungsauftrags basierend auf Kennzeichen
 
-Die Lagerort-App verfügt über einen einfachen Prozess zum Erstellen von Umlagerungsaufträgen basierend auf Kennzeichen. Hierzu geht die Arbeitskraft mithilfe der Lagerort-App folgendermaßen vor:
+Die Warehouse Management Mobile App verfügt über einen einfachen Prozess zum Erstellen von Umlagerungsaufträgen basierend auf Kennzeichen. Hierzu geht die Arbeitskraft mithilfe der Warehouse Management Mobile App folgendermaßen vor:
 
 1. Erstellen Sie den Umlagerungsauftrag und identifizieren Sie den Ziellagerort.
 1. Identifizieren Sie jedes zu versendende Kennzeichen.
@@ -258,9 +256,9 @@ Für das erwähnte Beispiel werden zwei **Lagerort-App-Ereignisse** (*Umlagerung
 
 ### <a name="inquire-the-warehouse-app-events"></a><a name="#inquire-the-warehouse-app-events"></a>Abfrage von Lagerort-App-Ereignissen
 
-Sie können die Ereigniswarteschlange und die von der Lager-App generierten Ereignismeldungen anzeigen, indem Sie zu **Lagerortverwaltung \> Abfragen und Berichte \> Protokolle für mobile Geräte\> Lager-App-Ereignisse** gehen.
+Sie können die Ereigniswarteschlange und die von der Warehouse Management Mobile App generierten Ereignismeldungen anzeigen, indem Sie zu **Lagerortverwaltung \> Abfragen und Berichte \> Protokolle für mobile Geräte \> Lagerort-App-Ereignisse** gehen.
 
-Die Ereignismeldungen für *Umlagerungsauftrag erstellen* erhalten den Status *Im Wartezustand*, was bedeutet, dass der Batchauftrag **Lagerort-App-Ereignisse verarbeiten** die Ereignismeldungen nicht erhält und verarbeitet. Sobald die Ereignismeldung auf den Status *In Warteschlange* aktualisiert wird, verarbeitet der Batchauftrag die Ereignisse. Dies geschieht zeitgleich mit der Erstellung des Ereignisses *Umlagerungsauftrag abschließen* (wenn eine Arbeitskraft die Schaltfläche **Bestellung abschließen** in der Lagerort-App auswählt). Wenn die Ereignismeldungen für *Umlagerungsauftrag erstellen* verarbeitet wurden, wird der Status auf *Abgeschlossen* oder *Fehlgeschlagen* aktualisiert. Wenn der Status von *Umlagerungsauftrag abschließen* auf *Abgeschlossen* aktualisiert wird, werden alle zugehörigen Ereignisse aus der Warteschlange gelöscht.
+Die Ereignismeldungen für *Umlagerungsauftrag erstellen* erhalten den Status *Im Wartezustand*, was bedeutet, dass der Batchauftrag **Lagerort-App-Ereignisse verarbeiten** die Ereignismeldungen nicht erhält und verarbeitet. Sobald die Ereignismeldung auf den Status *In Warteschlange* aktualisiert wird, verarbeitet der Batchauftrag die Ereignisse. Dies geschieht zeitgleich mit der Erstellung des Ereignisses *Umlagerungsauftrag abschließen* (wenn eine Arbeitskraft die Schaltfläche **Bestellung abschließen** in der Warehouse Management Mobile App auswählt). Wenn die Ereignismeldungen für *Umlagerungsauftrag erstellen* verarbeitet wurden, wird der Status auf *Abgeschlossen* oder *Fehlgeschlagen* aktualisiert. Wenn der Status von *Umlagerungsauftrag abschließen* auf *Abgeschlossen* aktualisiert wird, werden alle zugehörigen Ereignisse aus der Warteschlange gelöscht.
 
 Da die **Lagerort-App-Ereignisse** für die Erstellung von Umlagerungsauftragsdaten vom Batchauftrag nicht verarbeitet werden, bevor die Nachrichten auf den Status *In Warteschlange* aktualisiert wurden, müssen Sie die angeforderten Umlagerungsauftragsnummern als Teil des Felds **Kennung** nachschlagen. Das Feld **Kennung** befindet sich im Header auf der Seite **Lagerort-App-Ereignisse**.
 
@@ -276,11 +274,11 @@ Weitere Informationen finden Sie unter [Verarbeitung von Lagerort-App-Ereignisse
 
 In diesem Szenario ist Folgendes geschehen:
 
-1. Mit der Lagerot-App haben Sie eine Menüoption ausgewählt, die den Aktivitätscode **Umlagerungsauftrag aus Kennzeichen erstellen** verwendet.
+1. Mit der Warehouse Management Mobile App haben Sie eine Menüoption ausgewählt, die den Aktivitätscode **Umlagerungsauftrag aus Kennzeichen erstellen** verwendet.
 1. Die App forderte Sie auf, den Ziellagerort für den Umlagerungsauftrag auszuwählen. Der Quelllagerort ist immer derjenige, an dem Sie derzeit als Arbeitskraft angemeldet sind.
 1. Bei der Auswahl des Ziellagerorts hat das System eine ID-Nummer für den bevorstehenden Umlagerungsauftrag reserviert (basierend auf dem in Ihrem System definierten Nummernkreis für den Umlagerungsauftrag), den Umlagerungsauftrag jedoch noch nicht erstellt.
 1. Beim Scannen der Kennung *LP10* mit verfügbarem Bestand, der an den neuen Lagerort verschoben werden soll, wurde ein **Lagerot-App-Ereignis** zur Ereigniswarteschlange hinzugefügt, um später verarbeitet zu werden. Das Lagerortereignis enthielt Meldungsdetails zum Scan, einschließlich der beabsichtigten Umlagerungsauftragsnummer.
-1. Wenn in der Lagerort-App die Schaltfläche **Bestellung abschließen** ausgewählt wird, wird ein neues Lagerort-App-Ereignis **Umlagerungsauftrag abschließen** erstellt und der Status des zugehörigen vorhandenen Ereignisses **Umlagerungsauftrag erstellen** wird zu **In Warteschlange** geändert.
+1. Wenn in der Warehouse Management Mobile App die Schaltfläche **Bestellung abschließen** ausgewählt wird, wird ein neues Lagerort-App-Ereignis **Umlagerungsauftrag abschließen** erstellt und der Status des zugehörigen vorhandenen Ereignisses **Umlagerungsauftrag erstellen** wird zu **In Warteschlange** geändert.
 1. Am Back-End hat der Batchauftrag **Lager-App-Ereignisse verarbeiten** das Ereignis mit dem Status **In Warteschlange** aufgenommen und den verfügbaren Bestand im Zusammenhang mit der gescannten Kennung erfasst. Basierend auf dem verfügbaren Bestand wurden der Datensatz und die zugehörigen Positionen für den tatsächlichen Umlagerungsauftrag erstellt. Der Auftrag füllte außerdem das Feld **Auslieferungsrichtlinie** für den Umlagerungsauftrag mit dem auf der Konfiguration von *Freigabe und Lieferungsbestätigung* basierenden Wert aus und veknüpfte die Kennung mit den Positionen für die Strategie **Ladungsträgerbasiert**.
 1. Basierend auf dem Feldwert **Auslieferungsrichtlinie** der Umlagerungsauftragsposition wurde durch die Abfrage des Batchauftrags **Automatische Freigabe von Umlagerungsaufträgen** der Umlagerungsauftrag an den Versandlagerort jetzt freigegeben. Und aufgrund des Setups der verwendeten Werte für **Zyklusvorlage**, **Arbeitsvorlage** und **Lagerplatzrichtlinien** wurde die Arbeit automatisch verarbeitet, wodurch **Ladungsstatus** auf *Geladen* aktualisiert wurde.
 1. Der Batchauftrag **Ausgehende Lieferungen verarbeiten** wird für die Ladung ausgeführt, was dazu führt, dass der Umlagerungsauftrag versendet wird und der Versand-Avis (Advance Shipment Notice, ASN) generiert wird.
@@ -294,13 +292,13 @@ In diesem Szenario ist Folgendes geschehen:
 
 Die Funktion *Erstellen und Verarbeiten von Umlagerungsaufträgen über die Lagerort-App* muss aktiviert sein. Weitere Informationen finden Sie unter [Erstellung von Umlagerungsaufträgen aus der Lagerort-App aktivieren](#enable-create-transfer-order-from-warehouse-app).
 
-### <a name="warehouse-app-processes"></a>Prozesse der Lagerort-App
+### <a name="warehouse-management-mobile-app-processes"></a>Prozesse der Warehouse Management Mobile App
 
 #### <a name="why-cant-i-see-the-menu-button-complete-order"></a>Warum wird die Menütaste „Bestellung abschließen“ nicht angezeigt?
 
 Dem Umlagerungsauftrag muss mindestens ein Kennzeichen zugeordnet sein.
 
-#### <a name="can-several-warehouse-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Können mehrere Benutzer der Lagerot-App gleichzeitig Kennzeichen zum selben Umlagerungsauftrag hinzufügen?
+#### <a name="can-several-warehouse-management-mobile-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Können mehrere Benutzer der Warehouse Management Mobile App gleichzeitig Kennzeichen zum selben Umlagerungsauftrag hinzufügen?
 
 Ja, mehrere Lagerarbeiter können gleichzeitig Kennzeichen für denselben Umlagerungsauftrag scannen.
 
@@ -312,11 +310,11 @@ Nein, ein Kennzeichen kann jeweils nur einem Umlagerungsauftrag hinzugefügt wer
 
 Nein, Sie können einem Umlagerungsauftrag mit einem Lagerort-App-Ereignis **Umlagerungsauftrag abschließen** keine weiteren Kennzeichen hinzufügen.
 
-#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Wie finde ich vorhandene Umlagerungsaufträge, die über die Schaltfläche „Umlagerungsauftrag auswählen“ in der Lagerort-App verwendet werden können, wenn der Auftrag im Back-End-System noch nicht erstellt wurde?
+#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Wie finde ich vorhandene Umlagerungsaufträge, die über die Schaltfläche „Umlagerungsauftrag auswählen“ in der Warehouse Management Mobile App verwendet werden können, wenn der Auftrag im Back-End-System noch nicht erstellt wurde?
 
 Derzeit können Sie in der App nicht nach Umlagerungsaufträgen suchen. Sie können die Umlagerungsauftragsnummern jedoch auf der Seite **Lagerot-App-Ereignisse** finden. Weitere Informationen finden Sie unter [Abfrage von Lagerort-App-Ereignissen](#inquire-the-warehouse-app-events).
 
-#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-app"></a>Kann ich die zu verwendende Umlagerungsauftragsnummer über die Lagerort-App manuell auswählen?
+#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Kann ich die zu verwendende Umlagerungsauftragsnummer über die Warehouse Management Mobile App manuell auswählen?
 
 Es werden nur automatisch generierte Umlagerungsauftragsnummern über Nummernkreise unterstützt.
 
