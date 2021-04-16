@@ -2,11 +2,9 @@
 title: Debitorenrücklieferungen – Übersicht
 description: Erstellen und verwenden Sie Rückgabegründe und Dispositionscodes, um den Rückgabeprozess zu unterstützen.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnReasonCodeLookup
 audience: Application User
@@ -17,35 +15,35 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c352c91ee9a6ae97d8cab12abb8a91e77a3d2b3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a0f4d8825a4218b440affee3aad3d52902aef89f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247381"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824533"
 ---
-# <a name="customer-returns-overview"></a><span data-ttu-id="a0fc5-103">Debitorenrücklieferungen – Übersicht</span><span class="sxs-lookup"><span data-stu-id="a0fc5-103">Customer returns overview</span></span>
+# <a name="customer-returns-overview"></a><span data-ttu-id="41070-103">Debitorenrücklieferungen – Übersicht</span><span class="sxs-lookup"><span data-stu-id="41070-103">Customer returns overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="a0fc5-104">Erstellen und verwenden Sie Rückgabegründe und Dispositionscodes, um den Rückgabeprozess zu unterstützen.</span><span class="sxs-lookup"><span data-stu-id="a0fc5-104">Create and use return reason codes and disposition codes to support the process for returning products.</span></span>
+<span data-ttu-id="41070-104">Erstellen und verwenden Sie Rückgabegründe und Dispositionscodes, um den Rückgabeprozess zu unterstützen.</span><span class="sxs-lookup"><span data-stu-id="41070-104">Create and use return reason codes and disposition codes to support the process for returning products.</span></span>
 
-<span data-ttu-id="a0fc5-105">Verwenden Sie einen Rücksendeursachencode, um den Grund zu beschreiben, weswegen der Debitor einen Artikel zurückgeben möchte.</span><span class="sxs-lookup"><span data-stu-id="a0fc5-105">Use a return reason code to describe the reason that the customer wants to return an item.</span></span> <span data-ttu-id="a0fc5-106">Sie können einen Ursachencode im Formular **Rücklieferungen erstellen** zuweisen.</span><span class="sxs-lookup"><span data-stu-id="a0fc5-106">You can assign a reason code in the **Create return orders** form.</span></span>
+<span data-ttu-id="41070-105">Verwenden Sie einen Rücksendeursachencode, um den Grund zu beschreiben, weswegen der Debitor einen Artikel zurückgeben möchte.</span><span class="sxs-lookup"><span data-stu-id="41070-105">Use a return reason code to describe the reason that the customer wants to return an item.</span></span> <span data-ttu-id="41070-106">Sie können einen Ursachencode im Formular **Rücklieferungen erstellen** zuweisen.</span><span class="sxs-lookup"><span data-stu-id="41070-106">You can assign a reason code in the **Create return orders** form.</span></span>
 
-<span data-ttu-id="a0fc5-107">Einen Dispositionscode zuweisen, wenn ein Artikel eingegangen ist oder während der physischen Prüfung des zurückgesendeten Artikels.</span><span class="sxs-lookup"><span data-stu-id="a0fc5-107">Assign a disposition code when an item is received or during the physical inspection of a returned item.</span></span> <span data-ttu-id="a0fc5-108">Sie können Dispositionscodes verwenden, um den Zustand des Artikels zu beschreiben.</span><span class="sxs-lookup"><span data-stu-id="a0fc5-108">You can use disposition codes to describe the condition of the item.</span></span> <span data-ttu-id="a0fc5-109">Sie können Dispositionscodes auch verwenden, um anzugeben, ob zusätzliche Aktivität für die Buchung erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="a0fc5-109">You can also use disposition codes to indicate whether additional action is required for the transaction.</span></span> <span data-ttu-id="a0fc5-110">Sie erstellen beispielsweise Dispositionscodes für die folgenden Aktionen:</span><span class="sxs-lookup"><span data-stu-id="a0fc5-110">For example, create disposition codes for the following actions:</span></span>
+<span data-ttu-id="41070-107">Einen Dispositionscode zuweisen, wenn ein Artikel eingegangen ist oder während der physischen Prüfung des zurückgesendeten Artikels.</span><span class="sxs-lookup"><span data-stu-id="41070-107">Assign a disposition code when an item is received or during the physical inspection of a returned item.</span></span> <span data-ttu-id="41070-108">Sie können Dispositionscodes verwenden, um den Zustand des Artikels zu beschreiben.</span><span class="sxs-lookup"><span data-stu-id="41070-108">You can use disposition codes to describe the condition of the item.</span></span> <span data-ttu-id="41070-109">Sie können Dispositionscodes auch verwenden, um anzugeben, ob zusätzliche Aktivität für die Buchung erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="41070-109">You can also use disposition codes to indicate whether additional action is required for the transaction.</span></span> <span data-ttu-id="41070-110">Sie erstellen beispielsweise Dispositionscodes für die folgenden Aktionen:</span><span class="sxs-lookup"><span data-stu-id="41070-110">For example, create disposition codes for the following actions:</span></span>
 
-  - <span data-ttu-id="a0fc5-111">Sondern Sie den zurückgelieferten Artikel aus und weisen Sie dem Debitor einen Ersatzartikel zu.</span><span class="sxs-lookup"><span data-stu-id="a0fc5-111">Scrap the returned item and provide a replacement item to the customer.</span></span>
+  - <span data-ttu-id="41070-111">Sondern Sie den zurückgelieferten Artikel aus und weisen Sie dem Debitor einen Ersatzartikel zu.</span><span class="sxs-lookup"><span data-stu-id="41070-111">Scrap the returned item and provide a replacement item to the customer.</span></span>
 
-  - <span data-ttu-id="a0fc5-112">Geben Sie den Artikel dem Lager zurück, um dem Debitor die Kosten des Artikels gutzuschreiben.</span><span class="sxs-lookup"><span data-stu-id="a0fc5-112">Return the item to inventory and credit the customer for the cost of the item.</span></span>
+  - <span data-ttu-id="41070-112">Geben Sie den Artikel dem Lager zurück, um dem Debitor die Kosten des Artikels gutzuschreiben.</span><span class="sxs-lookup"><span data-stu-id="41070-112">Return the item to inventory and credit the customer for the cost of the item.</span></span>
 
-  - <span data-ttu-id="a0fc5-113">Den Artikel reparieren und dem Debitor zurücksenden.</span><span class="sxs-lookup"><span data-stu-id="a0fc5-113">Repair the item and return it to the customer.</span></span>
+  - <span data-ttu-id="41070-113">Den Artikel reparieren und dem Debitor zurücksenden.</span><span class="sxs-lookup"><span data-stu-id="41070-113">Repair the item and return it to the customer.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a0fc5-114">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a0fc5-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="41070-114">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="41070-114">See also</span></span>
 
-[<span data-ttu-id="a0fc5-115">Einrichten von Codes für Rücklieferungsursachen</span><span class="sxs-lookup"><span data-stu-id="a0fc5-115">Set up return reason codes</span></span>](set-up-return-reason-code.md)
+[<span data-ttu-id="41070-115">Einrichten von Codes für Rücklieferungsursachen</span><span class="sxs-lookup"><span data-stu-id="41070-115">Set up return reason codes</span></span>](set-up-return-reason-code.md)
 
-[<span data-ttu-id="a0fc5-116">Dispositionscodes einrichten</span><span class="sxs-lookup"><span data-stu-id="a0fc5-116">Set up disposition codes</span></span>](set-up-disposition-codes.md)
+[<span data-ttu-id="41070-116">Dispositionscodes einrichten</span><span class="sxs-lookup"><span data-stu-id="41070-116">Set up disposition codes</span></span>](set-up-disposition-codes.md)
 
 
 
