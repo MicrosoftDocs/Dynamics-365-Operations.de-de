@@ -2,7 +2,6 @@
 title: Gesamttransportkosten vs. Transportverwaltung
 description: Microsoft Dynamics 365 Supply Chain Management bietet zwei verschiedene Module für die Arbeit mit dem Transportwesen, Transportverwaltung (TMS) und Gesamttransportkosten. Dieses Thema fasst die Funktionalität zusammen, die die beiden Module allgemein haben und hebt die Unterschiede zwischen ihnen hervor.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
@@ -15,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9349537754d7e6fd0e278c55d5d762267953800c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500717"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833856"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Gesamttransportkosten vs. Transportverwaltung
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management stellt zwei verschiedene Module für die Arbeit mit dem Transportwesen zur Verfügung: **Transportverwaltung** (TMS) und **Gesamttransportkosten**. Dieses Thema fasst die Funktionalität zusammen, die die beiden Module allgemein haben und hebt die Unterschiede zwischen ihnen hervor. Sie können diese Informationen nutzen, um zu entscheiden, welches Modul am besten zu Ihren Geschäftspraktiken passt. Vielleicht stellen Sie fest, dass einige Geschäftspraktiken besser mit TMS funktionieren, während andere am besten mit Gesamttransportkosten funktionieren. Je nach Ihren Geschäftsanforderungen können Sie sich dann für die ausschließliche Verwendung eines Moduls entscheiden, oder Sie können die beiden Module kombinieren.
 
@@ -158,15 +156,15 @@ Sowohl TMS als auch Gesamttransportkosten bieten Funktionen für die Verwaltung 
 
 ### <a name="tms-receiving-by-container-features"></a>Funktionen des TMS-Empfangs nach Containern
 
-TMS unterstützt eingehende ASNs, alle Varianten des Wareneingangs über die Lagerort App und alle Methoden des Wareneingangs über den Supply Chain Management Client.
+TMS unterstützt eingehende ASNs, alle Varianten des Wareneingangs über die Warehouse Management Mobile App und alle Methoden des Wareneingangs über den Supply Chain Management Client.
 
 ### <a name="landed-cost-receiving-by-container-features"></a>Funktionen für kalkulierte Gesamttransportkosten beim Containereingang
 
 Zur Unterstützung des Wareneingangs nach Containern erstellt Gesamttransportkosten Transportcontainer-Datensätze und verknüpft Kaufsbestellungen mit einem bestimmten Transportcontainer unter Verwendung seiner Container-ID. Gemeinkosten können dann auf diesen Transportcontainer angewendet und aufgeschlüsselt werden, so dass sie mit den entsprechenden Einkaufsbestellungen verknüpft werden.
 
-Container in kalkulierten Gesamttransportkosten können über eine neue Art von Quittung, die als *Wareneingangserfassung* bezeichnet wird, über Wareneingangserfassungen oder über den Empfang mit mobilen Geräten empfangen werden. Wenn Wareneingangserfassungen verwendet werden, können die Mengen aus den Zeilen der Waren in Zustellung oder der ursprünglichen Einkaufsbestellung im Behälter initialisiert werden. Gesamttransportkosten bietet zwei Arbeitstypen für den Wareneingang über die Lagerort-App.
+Container in kalkulierten Gesamttransportkosten können über eine neue Art von Quittung, die als *Wareneingangserfassung* bezeichnet wird, über Wareneingangserfassungen oder über den Empfang mit mobilen Geräten empfangen werden. Wenn Wareneingangserfassungen verwendet werden, können die Mengen aus den Zeilen der Waren in Zustellung oder der ursprünglichen Einkaufsbestellung im Behälter initialisiert werden. Gesamttransportkosten bietet zwei Arbeitstypen für den Wareneingang über die Warehouse Management Mobile App.
 
-Kalkulierte Gesamttransportkosten bieten keinen Lieferavis für den elektronischen Empfang von Waren. Außerdem unterstützt es keine Lagerort-App Flows, die Ladungsträger-, Ladungsträger- oder gemischten Ladungsträger-Eingang verarbeiten.
+Kalkulierte Gesamttransportkosten bieten keinen Lieferavis für den elektronischen Empfang von Waren. Außerdem werden keine Warehouse Management Mobile App-Flows unterstützt, die Ladungsträger-, Ladungsträger- oder gemischten Ladungsträger-Eingang verarbeiten.
 
 ## <a name="rate-shopping-by-vendor"></a>Bewertung von Sätzen nach Lieferanten
 

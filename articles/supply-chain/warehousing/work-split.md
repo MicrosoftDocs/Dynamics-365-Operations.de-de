@@ -2,11 +2,9 @@
 title: Arbeitsaufteilung
 description: Dieses Thema enthält Informationen über die Arbeitsteilungsfunktionalität. Mit dieser Funktionalität können Sie große Arbeitsaufträge in mehrere kleinere Arbeitsaufträge aufteilen, die Sie dann mehreren Lagerkräften zuweisen können. Auf diese Weise kann die gleiche Arbeit von mehreren Arbeitskräften gleichzeitig entnommen werden.
 author: mirzaab
-manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -15,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6dbf0f6dd0c691db74eaad2174d8f9849b4cb26a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245081"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830761"
 ---
 # <a name="work-split"></a>Arbeitsaufteilung
 
@@ -69,7 +67,7 @@ Die Funktion *Arbeit teilen* fügt dem Reiter **Arbeit** im Aktivitätsbereich d
 >
 > - Die Arbeit wird gerade von einem anderen Benutzer geteilt. Wenn Sie versuchen, die Aufteilungsseite für Arbeiten zu öffnen, die bereits von einem anderen Benutzer aufgeteilt werden, erhalten Sie die folgende Fehlermeldung: „Die Arbeit mit der ID \#\#\#\# wird gerade geteilt. Versuchen Sie es in ein paar Minuten erneut. Wenn Sie diese Meldung weiterhin erhalten, wenden Sie sich an einen Supervisor.“
 
-Ein neuer Arbeitssperrungsgrund, *Arbeit teilen*, zeigt an, wenn die Arbeits-ID gerade geteilt wird. Er wird sowohl auf der Seite **Arbeit aufteilen** als auch in der Lagerort App angezeigt, wenn ein Benutzer versucht, die Arbeit auszuführen. Wenn Sperrgründe verwendet werden, wird der Name des Feldes **Blockierte Welle** von der Arbeits-ID in **Blockiert** geändert.
+Ein neuer Arbeitssperrungsgrund, *Arbeit teilen*, zeigt an, wenn die Arbeits-ID gerade geteilt wird. Er wird sowohl auf der Seite **Arbeit aufteilen** als auch in der Warehouse Management Mobile App angezeigt, wenn ein Benutzer versucht, die Arbeit auszuführen. Wenn Sperrgründe verwendet werden, wird der Name des Feldes **Blockierte Welle** von der Arbeits-ID in **Blockiert** geändert.
 
 ## <a name="initiate-a-work-split"></a>Initiieren einer Arbeitsteilung
 
@@ -147,9 +145,9 @@ Um die Arbeitsteilung zu beenden, muss der Sperrgrund *Arbeitsteilung* aufgehobe
 
 Nachdem der *Arbeit teilen*-Blockierungsgrund entfernt wurde, kann die Arbeit auf dem mobilen Gerät ausgeführt werden, vorausgesetzt, der **Blockiert**-Status wird auf der Arbeits-ID auf *Nein* festgelegt.
 
-## <a name="user-blocking-on-the-warehouse-app"></a>Benutzersperrung auf der Lagerort App
+## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Benutzersperrung in der Wellenausführungsbenachrichtigungen
 
-Wenn Sie versuchen, mit der Lagerort App Entnahmearbeiten gegen eine Arbeits-ID laufen zu lassen, die geteilt wird, erhalten Sie folgende Fehlermeldung: „Die Arbeit mit der ID \#\#\#\# wird gerade geteilt.“ Wenn Sie diese Meldung erhalten, wählen Sie **Abbrechen**. Sie können dann mit der Bearbeitung anderer Arbeiten fortfahren.
+Wenn Sie versuchen, mit der Wellenausführungsbenachrichtigungen Entnahmearbeiten gegen eine Arbeits-ID laufen zu lassen, die geteilt wird, erhalten Sie folgende Fehlermeldung: „Die Arbeit mit der ID \#\#\#\# wird gerade geteilt.“ Wenn Sie diese Meldung erhalten, wählen Sie **Abbrechen**. Sie können dann mit der Bearbeitung anderer Arbeiten fortfahren.
 
 ## <a name="other-blocked-operations"></a>Andere gesperrte Operationen
 

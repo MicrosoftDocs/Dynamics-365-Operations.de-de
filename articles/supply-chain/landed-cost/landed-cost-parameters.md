@@ -2,7 +2,6 @@
 title: Einrichten der Gesamttransportkosten-Parameter
 description: Hier wird beschrieben, wie Sie allgemeine Informationen und Konfigurationseinstellungen festlegen, die im gesamten Modul für kalkulierte Transportkosten für Buchungen, Statusaktualisierungen, Sequenzen und Verhalten verwendet werden.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 489c0db50d52c1e58eab73ad19a73babf22b4de7
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 973f23a18166abeb05bdea660ef69230d9a8c4c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500765"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833904"
 ---
 # <a name="landed-cost-parameters-setup"></a>Einrichten der Gesamttransportkosten-Parameter
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Sie verwenden die Seite **Gesamttransportkosten-Parameter**, um allgemeine Informationen und Konfigurationseinstellungen festzulegen, die im gesamten Modul **Gesamttransportkosten** für Buchungen, Statusaktualisierungen, Nummernkreise und Verhalten verwendet werden. Das Einrichten der Parameter wird von allen juristischen Entitäten gemeinsam genutzt und kann von einem Administrator geändert werden.
 

@@ -2,11 +2,9 @@
 title: Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 description: In diesem Thema wird die Bestandsreservierungsrichtlinie beschrieben, mit der Unternehmen, die Produkte mit Chargenverfolgung verkaufen und für die Logistik WMS-fähige Vorgänge ausführen, bestimmte Chargen für Debitorenaufträge reservieren können, obwohl die mit den Produkten verknüpfte Reservierungshierarchie die Reservierung bestimmter Chargen nicht zulässt.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,33 +13,33 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b7d855914e59d90dd082c9e9a027604579a2f411
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 17ae3cc788c60917807acece2fc21f6c52d8ffe0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235411"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835677"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 
 [!include [banner](../includes/banner.md)]
 
-Wenn eine Bestandsreservierungshierarchie vom Typ „Charge unterhalb\[Lagerort\]“mit Produkten verknüpft ist, können Unternehmen, die Produkte mit Chargenverfolgung verkaufen und ihre Logistik als Operationen ausführen, die für das Microsoft Dynamics 365 Warehouse Management System (WMS) aktiviert sind, bestimmte Chargen dieser Produkte nicht für Debitorenaufträge reservieren.
+Wenn eine Bestandsreservierungshierarchie vom Typ *Charge unterhalb\[Lagerplatz\]* mit Produkten verknüpft ist, können Unternehmen, die Produkte mit Chargenverfolgung verkaufen und ihre Logistik als Operationen ausführen, die für das Microsoft Dynamics 365 Warehouse Management System (WMS) aktiviert sind, bestimmte Chargen dieser Produkte nicht für Debitorenaufträge reservieren.
 
 Ähnlich können bestimmte Ladungsträger nicht für Produkte in Aufträgen reserviert werden, wenn diese Produkte mit der Standardreservierungshierarchie verknüpft sind.
 
-In diesem Thema wird die Bestandsreservierungsrichtlinie beschrieben, mit der diese Unternehmen bestimmte Chargen oder Ladungsträger reservieren können, auch wenn die Produkte mit einer „Charge unterhalb\[Lagerort\]“-Reservierungshierarchie verknüpft sind.
+In diesem Thema wird die Bestandsreservierungsrichtlinie beschrieben, mit der diese Unternehmen bestimmte Chargen oder Ladungsträger reservieren können, auch wenn die Produkte mit einer Reservierungshierarchie *Charge unterhalb\[Lagerplatz\]* verknüpft sind.
 
 ## <a name="inventory-reservation-hierarchy"></a>Bestandreservierungshierarchie
 
 In diesem Abschnitt wird die vorhandene Bestandsreservierungshierarchie zusammengefasst.
 
-Die Bestandsreservierungshierarchie gibt vor, dass hinsichtlich von Lagerdimensionen, der Bedarfsauftrag die obligatorischen Dimensionen von Standort-, Lager- und Bestandsstatus trägt, während die Lagerlogik für die Zuweisung eines Lagerplatzes für die angeforderten Mengen und das Reservieren des Lagerplatzes zuständig ist. Mit anderen Worten, bei den Interaktionen zwischen dem Bedarfsauftrag und den Lagervorgängen wird erwartet, dass der Bedarfsauftrag angibt, von wo der Auftrag versendet werden muss (d. h., von welchem Standort und von welchem Lagerort). Das Lager verlässt sich dann auf seine Logik, um die erforderliche Menge in den Lagerstätten zu finden.
+Die Bestandsreservierungshierarchie schreibt vor, dass der Bedarfsauftrag in Bezug auf die Lagerdimension die obligatorischen Dimensionen für Standort, Lagerort und Bestandsstatus enthält. Mit anderen Worten, die obligatorischen Dimensionen sind alle Dimensionen über der Lagerplatzdimension in der Reservierungshierarchie, während die Lagerlogik dafür verantwortlich ist, den angeforderten Mengen einen Lagerplatz zuzuweisen und ihn zu reservieren. Bei den Interaktionen zwischen dem Bedarfsauftrag und den Lagerortvorgängen wird erwartet, dass der Bedarfsauftrag angibt, von wo der Auftrag versendet werden muss (d. h., von welchem Lagerplatz und von welchem Lagerort). Das Lager verlässt sich dann auf seine Logik, um die erforderliche Menge in den Lagerstätten zu finden.
 
 Um jedoch das Betriebsmodell des Unternehmens widerzuspiegeln, unterliegen die Rückverfolgungsangaben (Chargen- und Seriennummern) einer größeren Flexibilität. Eine Bestandsreservierungshierarchie kann Szenarien berücksichtigen, bei denen die folgenden Bedingungen zutreffen:
 
-- Das Unternehmen verlässt sich auf seine Lagerort-Arbeitsgänge für die Verwaltung der Kommissionierung von Mengen mit Chargen- oder Seriennummern, nachdem die Mengen in einem Lager gefunden wurden. Dieses Modell wird häufig als *Charge unterhalb\[Lagerort\]* bezeichnet. Es wird normalerweise verwendet, wenn die Chargen- oder Seriennummer eines Produkts für die Debitoren nicht wichtig ist, die eine Nachfrage beim verkaufenden Unternehmen stellen.
-- Wenn Chargen- oder Seriennummern Teil der Auftragsspezifikation eines Debitors sind und im Bedarfsauftrag aufgeführt werden, werden die Lagerortarbeitsgänge, die für die Suche nach den Mengen im Lager eingesetzt werden, durch die angegebenen Nummern eingeschränkt und können diese nicht ändern. Dieses Modell wird häufig als *Charge oberhalb\[Lagerort\]* bezeichnet.
+- Das Unternehmen verlässt sich auf seine Lagerortvorgänge für die Verwaltung der Entnahme von Mengen mit Chargen- oder Seriennummern, *nachdem* die Mengen an einem Lagerort gefunden wurden. Dieses Modell wird häufig als *Charge unterhalb\[Lagerplatz\]* oder *Serie unterhalb\[Lagerplatz\]* bezeichnet. Es wird normalerweise verwendet, wenn die Chargen- oder Seriennummer eines Produkts für die Debitoren nicht wichtig ist, die eine Nachfrage beim verkaufenden Unternehmen stellen.
+- Das Unternehmen verlässt sich auf seine Lagerortvorgänge für die Verwaltung der Entnahme von Mengen mit Chargen- oder Seriennummern, *bevor* die Mengen an einem Lagerort gefunden wurden. Wenn Chargen- oder Seriennummern als Teil der Auftragsspezifikation eines Debitors erforderlich sind, werden sie im Bedarfsauftrag aufgeführt. Die Lagerortvorgänge, welche die Mengen im Lagerort finden, dürfen diese nicht ändern. Dieses Modell wird häufig als *Charge oberhalb\[Lagerplatz\]* oder *Serie oberhalb\[Lagerplatz\]* bezeichnet. Da die Dimensionen über dem Lagerplatz die spezifischen Anforderungen für den Bedarf sind, die erfüllt werden müssen, werden sie von der Lagerlogik nicht zugeteilt. Diese Dimensionen **müssen** immer auf dem Bedarfsauftrag oder in den entsprechenden Reservierungen angegeben werden.
 
 In diesen Szenarien besteht die Herausforderung darin, dass jedem freigegebenen Produkt nur eine Bestandsreservierungshierarchie zugeordnet werden kann. Damit das WMS nachverfolgte Artikel verarbeiten kann, können, nachdem die Hierarchiezuweisung bestimmt, wann die Chargen- oder Seriennummer reserviert werden sollte (entweder wenn der Bedarfsauftrag entgegengenommen wird oder während der Lagerentnahme), diese Zeiten nicht ad-hoc geändert werden.
 
@@ -49,16 +47,16 @@ In diesen Szenarien besteht die Herausforderung darin, dass jedem freigegebenen 
 
 ### <a name="business-scenario"></a>Geschäftsszenario
 
-In diesem Szenario verwendet ein Unternehmen eine Bestandsstrategie, bei der Fertigwaren anhand von Chargennummern verfolgt werden. Diese Firma verwendet auch die WMS-Arbeitsauslastung. Da diese Auslastung eine gut gerüstete Logik für die Planung und Durchführung von Kommissionierungs- und Versandvorgängen für Artikel hat, für die Chargen aktiviert sind, werden die meisten Fertigprodukte mit der Bestandsreservierungshistorie „Charge unterhalb\[Lagerort\]“ verknüpft. Der Vorteil dieser Art des operativen Einrichtung besteht darin, dass Entscheidungen (die im Grunde genommen Reservierungsentscheidungen sind) darüber, welche Chargen kommissioniert werden sollen und wo sie im Lager abgelegt werden sollen, verschoben werden, bis mit der Kommissionierung begonnen wird. Sie werden nicht schon gemacht, wenn der Kunde bestellt.
+In diesem Szenario verwendet ein Unternehmen eine Bestandsstrategie, bei der Fertigwaren anhand von Chargennummern verfolgt werden. Diese Firma verwendet auch die WMS-Arbeitsauslastung. Da diese Arbeitsauslastung eine gut gerüstete Logik für die Planung und Durchführung von Kommissionierungs- und Versandvorgängen für Artikel hat, für die Chargen aktiviert sind, werden die meisten Fertigprodukte mit der Bestandsreservierungshistorie *Charge unterhalb\[Lagerplatz\]* verknüpft. Der Vorteil dieser Art des operativen Einrichtung besteht darin, dass Entscheidungen (die im Grunde genommen Reservierungsentscheidungen sind) darüber, welche Chargen kommissioniert werden sollen und wo sie im Lager abgelegt werden sollen, verschoben werden, bis mit der Kommissionierung begonnen wird. Sie werden nicht schon gemacht, wenn der Kunde bestellt.
 
-Obwohl die Reservierungshistorie „Charge unterhalb\[Lagerort\]“ den Geschäftszielen des Unternehmens dient, fordern viele der etablierten Unternehmenskunden bei der Nachbestellung die gleiche Charge an, wie beim vorherigen Kauf. Aus diesem Grund ist das Unternehmen bestrebt, die Regeln für die Chargenreservierung flexibel zu gestalten, sodass, je nachdem, ob der Kunde den gleichen Artikel wünscht, die folgenden Verhaltensweisen auftreten:
+Obwohl die Reservierungshistorie *Charge unterhalb\[Lagerort\]* den Geschäftszielen des Unternehmens dient, fordern viele der etablierten Unternehmenskunden bei der Nachbestellung die gleiche Charge an, wie beim vorherigen Kauf. Aus diesem Grund ist das Unternehmen bestrebt, die Regeln für die Chargenreservierung flexibel zu gestalten, sodass, je nachdem, ob der Kunde den gleichen Artikel wünscht, die folgenden Verhaltensweisen auftreten:
 
 - Eine Chargennummer kann aufgezeichnet und reserviert werden, wenn der Auftrag vom Verkäufer entgegengenommen wird. Sie kann während des Lagerortbetriebs nicht geändert werden und/oder aufgrund anderer Bedarfe verwendet werden. Dieses Verhalten hilft zu gewährleisten, dass die bestellte Chargennummer an den Kunden gesendet wird.
 - Wenn die Chargennummer für den Kunden nicht wichtig ist, kann der Lagerbetrieb während der Kommissionierungsarbeiten eine Chargennummer bestimmen, nachdem die Kundenauftragsregistrierung und -reservierung durchgeführt wurden.
 
 ### <a name="allowing-reservation-of-a-specific-batch-on-the-sales-order"></a>Reservierung einer bestimmten Charge im Auftrag zulassen
 
-Um der gewünschten Flexibilität bei der Chargenreservierung für Artikel, die mit einer „Charge unterhalb\[Lagerort\]“-Bestandsreservierungshistorie verknüpft sind, gerecht zu werden, müssen Bestandsverwalter das Kontrollkästchen für **Reservierung für Bedarfsauftrag zulassen** für die **Chargennummer**-Ebene auf der Seite **Bestandsreservierungshierarchien** aktivieren.
+Um der gewünschten Flexibilität bei der Chargenreservierung für Artikel, die mit einer *Charge unterhalb\[Lagerplatz\]*-Bestandsreservierungshistorie verknüpft sind, gerecht zu werden, müssen Bestandsverwalter das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** für die **Chargennummer**-Ebene auf der Seite **Bestandsreservierungshierarchien** aktivieren.
 
 ![Bestandreservierungshierarchie flexibler machen](media/Flexible-inventory-reservation-hierarchy.png)
 
@@ -69,25 +67,25 @@ Wenn die **Chargennummer**-Ebene in der Hierarchie ausgewählt wird, werden alle
 >
 > **Chargennummer** und **Ladungsträger** sind die einzigen Ebenen in der Hierarchie, die für die flexible Reservierungsrichtlinie offen sind. Mit anderen Worten, Sie können das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** nicht für die Ebenen **Lagerplatz** oder **Seriennummer** aktivieren.
 >
-> Wenn Ihre Reservierungshierarchie die Seriennummerdimension enthält (die immer unterhalb der **Chargennummer**-Ebene liegen muss), und wenn Sie die chargenspezifische Reservierung für die Chargennummer aktiviert haben, wird das System weiterhin die Seriennummernreservierung und die Kommissionierungsvorgänge basierend auf den Regeln durchführen, die für die Reservierungsrichtlinie „Serie unterhalb\[Lagerort\]“ gelten.
+> Wenn Ihre Reservierungshierarchie die Seriennummerdimension enthält (die immer unterhalb der **Chargennummer**-Ebene liegen muss), und wenn Sie die chargenspezifische Reservierung für die Chargennummer aktiviert haben, wird das System weiterhin die Seriennummernreservierung und die Kommissionierungsvorgänge basierend auf den Regeln durchführen, die für die Reservierungsrichtlinie *Serie unterhalb\[Lagerplatz\]* gelten.
 
-Sie können jederzeit eine chargenspezifische Reservierung für eine vorhandene „Charge unterhalb\[Lagerort\]“-Reservierungsrichtlinie in Ihrer Bereitstellung zulassen. Diese Änderung wirkt sich nicht auf Reservierungen und offene Lagerarbeiten aus, die vor der Änderung erstellt wurden. Das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** kann aber nicht deaktiviert werden, wenn Lagerbuchungen vom Abgangstyp **Bestellt reserviert**, **Physisch reserviert** oder **Bestellt** für mindestens einen Artikel vorhanden sind, der mit der Reservierungshistorie verknüpft ist.
+Sie können jederzeit eine chargenspezifische Reservierung für eine vorhandene *Charge unterhalb\[Lagerplatz\]*-Reservierungsrichtlinie in Ihrer Bereitstellung zulassen. Diese Änderung wirkt sich nicht auf Reservierungen und offene Lagerarbeiten aus, die vor der Änderung erstellt wurden. Das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** kann aber nicht deaktiviert werden, wenn Lagerbuchungen vom Abgangstyp **Bestellt reserviert**, **Physisch reserviert** oder **Bestellt** für mindestens einen Artikel vorhanden sind, der mit der Reservierungshistorie verknüpft ist.
 
 > [!NOTE]
 > Wenn die vorhandene Reservierungshierarchie eines Artikels keine Chargenspezifikation für den Auftrag zulässt, können Sie ihn einer Reservierungshierarchie zuordnen, die eine Chargenspezifikation zulässt, vorausgesetzt, die Struktur der Hierarchieebene ist in beiden Hierarchien gleich. Verwenden Sie die **Reservierungshierarchie für Artikel ändern**-Funktion, um die Neuzuweisung durchzuführen. Diese Änderung ist möglicherweise relevant, wenn Sie die flexible Chargenreservierung für eine Teilmenge von Artikeln mit Chargenverfolgung verhindern möchten, aber für den Rest des Produktportfolios zulassen möchten.
 
-Unabhängig davon, ob Sie das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** aktiviert haben, wird dennoch die standardmäßige Lagerort-Operationslogik angewendet, die für eine „Charge unterhalb\[Lagerort\]“-Reservierungshierarchie gilt, wenn Sie keine bestimmte Chargennummer für den Artikel in einer Auftragsposition reservieren möchten.
+Unabhängig davon, ob Sie das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** aktiviert haben, wird dennoch die standardmäßige Lagerort-Operationslogik angewendet, die für eine *Charge unterhalb\[Lagerplatz\]*-Reservierungshierarchie gilt, wenn Sie keine bestimmte Chargennummer für den Artikel in einer Auftragsposition reservieren möchten.
 
 ### <a name="reserve-a-specific-batch-number-for-a-customer-order"></a>Reservieren einer bestimmten Chargennummer für eine Kundenbestellung
 
-Nachdem die „Charge unterhalb\[Lagerort\]“-Bestandsreservierungshierarchie eines Artikels mit Chargenverfolgung so eingerichtet ist, dass bestimmte Chargennummern für Aufträge reserviert werden können, können Verarbeiter von Aufträgen, je nach Kundenwunsch, die Kundenaufträge für den gleichen Artikel auf eine der folgenden Arten aufnehmen:
+Nachdem die *Charge unterhalb\[Lagerplatz\]*-Bestandsreservierungshierarchie eines Artikels mit Chargenverfolgung so eingerichtet ist, dass bestimmte Chargennummern für Aufträge reserviert werden können, können Verarbeiter von Aufträgen, je nach Kundenwunsch, die Debitorenaufträge für den gleichen Artikel auf eine der folgenden Arten aufnehmen:
 
 - **Auftragsdetails ohne Angabe einer Chargennummer eingeben** – Dieser Ansatz sollte verwendet werden, wenn die Chargenspezifikation des Produkts für den Kunden nicht wichtig ist. Alle bestehenden Prozesse, die mit der Abwicklung eines Auftrags dieser Art verbunden sind, bleiben im System unverändert. Es sind keine zusätzlichen Überlegungen seitens der Benutzer erforderlich.
 - **Bestelldetails eingeben und eine bestimmte Chargennummer reservieren** – Dieser Ansatz sollte verwendet werden, wenn der Kunde eine bestimmte Charge anfordert. In der Regel fordern Kunden eine bestimmte Charge an, wenn sie ein zuvor erworbenes Produkt erneut bestellen. Diese Art der chargenspezifischen Reservierung wird als *auftragsgebundene Reservierung* bezeichnet.
 
 Die folgenden Regeln gelten, wenn Mengen verarbeitet werden und eine Chargennummer für eine bestimmte Bestellung vorgegeben ist:
 
-- Um die Reservierung einer bestimmten Chargennummer für einen Artikel zuzulassen, für den die Reservierungsrichtlinie „Charge unterhalb\[Lagerort\]“ gilt, muss das System alle Dimensionen bis zum Lagerort reservieren. Dieser Bereich umfasst normalerweise die Ladungsträgerdimension.
+- Um die Reservierung einer bestimmten Chargennummer für einen Artikel zuzulassen, für den die Reservierungsrichtlinie *Charge unterhalb\[Lagerplatz\]* gilt, muss das System alle Dimensionen bis zum Lagerort reservieren. Dieser Bereich umfasst normalerweise die Ladungsträgerdimension.
 - Lagerplatzrichtlinien werden nicht verwendet, wenn Kommissionierungsarbeiten für eine Verkaufsposition angelegt werden, die die auftragsgebundene Chargenreservierung verwendet.
 - Während der Verarbeitung von Lagerarbeit für auftragsgebundene Chargen dürfen weder der Benutzer noch das System die Chargennummer ändern. (Diese Verarbeitung umfasst auch die Ausnahmebehandlung.)
 
@@ -131,19 +129,19 @@ Für dieses Beispielmüssen Demodaten eingerichtet werden, und Sie müssen das *
 2. Wählen Sie **Neu** aus.
 3. Geben Sie im Auftragskopf im Feld **Debitorenkonto** **US-003** ein.
 4. Fügen Sie eine Position für den neuen Artikel hinzu und geben Sie als Menge **10** ein. Stellen Sie sicher, dass das Feld **Lagerort** auf **24** gesetzt ist.
-5. Wählen Sie im Inforegister **Auftragspositionen** **Bestand** und dann in der Gruppe **Verwalten** **Chargenreservierung** aus. Die Seite **Chargenreservierung** zeigt eine Liste der Chargen, die für die Reservierung für die Bestellposition verfügbar sind. In diesem Beispiel wird eine Menge von **20** für die Chargennummer **B11** und eine Menge von **10** für die Chargennummer **B22** angezeigt. Beachten Sie, dass auf die Seite **Chargenreservierung** nicht von einer Position aus zugegriffen werden kann, wenn der Artikel in dieser Position mit einer „Charge unterhalb\[Lagerort\]“-Reservierungshierarchie verknüpft ist, es sei denn, diese ist so eingerichtet, dass chargenspezifische Reservierungen möglich sind.
+5. Wählen Sie im Inforegister **Auftragspositionen** **Bestand** und dann in der Gruppe **Verwalten** **Chargenreservierung** aus. Die Seite **Chargenreservierung** zeigt eine Liste der Chargen, die für die Reservierung für die Bestellposition verfügbar sind. In diesem Beispiel wird eine Menge von **20** für die Chargennummer **B11** und eine Menge von **10** für die Chargennummer **B22** angezeigt. Beachten Sie, dass auf die Seite **Chargenreservierung** nicht von einer Position aus zugegriffen werden kann, wenn der Artikel in dieser Position mit einer *Charge unterhalb\[Lagerplatz\]*-Reservierungshierarchie verknüpft ist, es sei denn, diese ist so eingerichtet, dass chargenspezifische Reservierungen möglich sind.
 
     > [!NOTE]
     > Um eine bestimmte Charge für einen Auftrag zu reservieren, müssen Sie die Seite **Chargenreservierung** verwenden.
     >
-    > Wenn Sie die Chargennummer direkt in die Auftragsposition eingeben, verhält sich das System so, als hätten Sie einen bestimmten Chargenwert für einen Artikel eingegeben, für den die „Charge unterhalb\[Lagerort\]“-Reservierungsrichtlinie gilt. Wenn Sie die Position speichern, erhalten Sie eine Warnmeldung. Wenn Sie bestätigen, dass die Chargennummer direkt in der Bestellposition angegeben werden soll, wird die Position nicht von der normalen Lagerortverwaltungslogik verarbeitet.
+    > Wenn Sie die Chargennummer direkt in die Auftragsposition eingeben, verhält sich das System so, als hätten Sie einen bestimmten Chargenwert für einen Artikel eingegeben, für den die *Charge unterhalb\[Lagerplatz\]*-Reservierungsrichtlinie gilt. Wenn Sie die Position speichern, erhalten Sie eine Warnmeldung. Wenn Sie bestätigen, dass die Chargennummer direkt in der Bestellposition angegeben werden soll, wird die Position nicht von der normalen Lagerortverwaltungslogik verarbeitet.
     >
-    > Wenn Sie die Menge über die Seite **Reservierung** reservieren, wird keine bestimmte Charge reserviert und die Ausführung der Lagerortoperationen für die Position folgt den Regeln, die im Rahmen der Reservierungsrichtlinie „Charge unterhalb\[Lagerort\]“ gelten.
+    > Wenn Sie die Menge über die Seite **Reservierung** reservieren, wird keine bestimmte Charge reserviert und die Ausführung der Lagerortoperationen für die Position folgt den Regeln, die im Rahmen der Reservierungsrichtlinie *Charge unterhalb\[Lagerplatz\]* gelten.
 
-    Im Allgemeinen funktioniert und interagiert diese Seite genauso wie sie bei Artikeln funktioniert und interagiert, die mit einer Reservierungshierarchie vom Typ „Charge oberhalb\[Lagerort\]“ verknüpft sind. Es gelten jedoch folgende Ausnahmen:
+    Im Allgemeinen funktioniert und interagiert diese Seite genauso wie sie bei Artikeln funktioniert und interagiert, die mit einer Reservierungshierarchie vom Typ *Charge oberhalb\[Lagerplatz\]* verknüpft sind. Es gelten jedoch folgende Ausnahmen:
 
     - Das Inforegister **Chargennummern für Quellposition zugesagt** zeigt die Chargennummern an, die für die Bestellposition reserviert sind. Die Chargenwerte im Raster werden während des gesamten Erfüllungszyklus der Auftragsposition angezeigt, einschließlich der Phasen der Lagerortverarbeitung. Im Gegensatz dazu werden auf dem Inforegister **Übersicht** regelmäßige Auftragspositionsreservierungen (also Reservierungen für die Dimensionen oberhalb der **Lagerort**-Ebene) im Raster bis zu dem Punkt angezeigt, wenn Lagerarbeiten generiert werden. Die Arbeitsentität übernimmt dann die Positionsreservierung und die Positionsreservierung erscheint nicht mehr auf der Seite. Das Inforegister **Chargennummern für Quellposition zugesagt** sorgt mit dafür, dass der Auftragsverarbeiter die Chargennummern, die für den Kundenauftrag zugesagt wurden, während des gesamten Lebenszyklus bis hin zur Rechnungsstellung anzeigen kann.
-    - Zusätzlich zur Reservierung einer bestimmten Charge kann ein Benutzer den spezifischen Lagerort und Ladungsträger manuell auswählen und auf die automatische Auswahl durch das System verzichten. Diese Funktion hängt mit dem Design des auftragsgebunden Chargenreservierungsmechanismus zusammen. Wie bereits erwähnt: Wenn eine Chargenummer für einen Artikel reserviert ist, für den die Reservierungsrichtlinie „Charge unterhalb\[Lagerort\]“ gilt, muss das System alle Dimensionen bis zum Lagerort reservieren. Aus diesem Grund gelten für die Lagerarbeit die gleichen Lagerdimensionen, die von den Benutzern reserviert wurden, die diese Aufträge bearbeitet haben. Sie zeigt möglicherweise nicht immer die Artikellagerplatzierung, die für Kommissionierungsarbeiten zweckmäßig oder möglich ist. Wenn Auftragsbearbeiter die Einschränkungen des Lagerorts kennen, möchten sie möglicherweise die spezifischen Lagerorte und Ladungsträger manuell auswählen, wenn sie eine Charge reservieren. In diesem Fall muss der Benutzer die **Dimensionen anzeigen**-Funktionalität auf dem Seitenkopf nutzen und den Lagerort und den Ladungsträger zum Raster im Inforegister **Übersicht** hinzufügen.
+    - Zusätzlich zur Reservierung einer bestimmten Charge kann ein Benutzer den spezifischen Lagerort und Ladungsträger manuell auswählen und auf die automatische Auswahl durch das System verzichten. Diese Funktion hängt mit dem Design des auftragsgebunden Chargenreservierungsmechanismus zusammen. Wie bereits erwähnt: Wenn eine Chargenummer für einen Artikel reserviert ist, für den die Reservierungsrichtlinie *Charge unterhalb\[Lagerplatz\]* gilt, muss das System alle Dimensionen bis zum Lagerort reservieren. Aus diesem Grund gelten für die Lagerarbeit die gleichen Lagerdimensionen, die von den Benutzern reserviert wurden, die diese Aufträge bearbeitet haben. Sie zeigt möglicherweise nicht immer die Artikellagerplatzierung, die für Kommissionierungsarbeiten zweckmäßig oder möglich ist. Wenn Auftragsbearbeiter die Einschränkungen des Lagerorts kennen, möchten sie möglicherweise die spezifischen Lagerorte und Ladungsträger manuell auswählen, wenn sie eine Charge reservieren. In diesem Fall muss der Benutzer die **Dimensionen anzeigen**-Funktionalität auf dem Seitenkopf nutzen und den Lagerort und den Ladungsträger zum Raster im Inforegister **Übersicht** hinzufügen.
 
 6. Auf der Seite **Chargenreservierung** wählen Sie die Position für Charge **B11** sowie **Position reservieren** aus. Es gibt keine festgelegte Logik zum Zuweisen von Lagerorten und Ladungsträgern während der automatischen Reservierung. Sie können die Menge manuell in das Feld **Reservierung** eingeben. Beachten Sie, dass auf dem Inforegister **Chargennummern für Quellposition zugesagt** die Charge **B11** als **Zugesagt** angezeigt wird.
 
@@ -172,7 +170,7 @@ Für dieses Beispielmüssen Demodaten eingerichtet werden, und Sie müssen das *
     Die Arbeit, die den Kommissionierungsvorgang für Chargenmengen erledigt, die für die Kundenauftragsposition zugesagt sind, weist folgende Merkmale auf:
 
     - Das System verwendet Arbeitsvorlagen, jedoch keine Lagerplatzrichtlinien, um Arbeit zu generieren. Alle Standardeinstellungen, die für Arbeitsvorlagen definiert sind, z. B. eine maximale Anzahl von Entnahmepositionen oder eine bestimmte Maßeinheit, werden angewendet, um festzulegen, wann neue Arbeit angelegt werden sollte. Die Regeln, die mit Lagerplatzrichtlinien zum Identifizieren von Entnahmepositionen verknüpft sind, werden nicht berücksichtigt, da die auftragsgebundene Reservierung bereits alle Bestandsdimensionen angibt. Diese Bestandsdimensionen enthalten Dimensionen auf Lagerortebene. Daher erbt die Arbeit diese Dimensionen, ohne dass Lagerplatzrichtlinien berücksichtigt werden müssen.
-    - Die Chargennummer wird nicht an der Entnahmeposition angezeigt (im Gegensatz zur Arbeitsposition, die für einen Artikel mit verknüpfter „Charge oberhalb\[Lagerort\]“-Reservierungshierarchie erstellt wird.) Stattdessen werden die von-Chargennummer und alle anderen Lagerdimensionen in der Lagerbuchung der Arbeitsposition angezeigt, auf die von den verknüpften Lagerbuchungen verwiesen wird.
+    - Die Chargennummer wird nicht an der Entnahmeposition angezeigt (im Gegensatz zur Arbeitsposition, die für einen Artikel mit verknüpfter *Charge oberhalb\[Lagerplatz\]*-Reservierungshierarchie erstellt wird.) Stattdessen werden die von-Chargennummer und alle anderen Lagerdimensionen in der Lagerbuchung der Arbeitsposition angezeigt, auf die von den verknüpften Lagerbuchungen verwiesen wird.
 
         ![Lagerort-Lagerbuchungen für Arbeit, die aus einer auftragsgebundenen Reservierung stammt](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
@@ -215,7 +213,7 @@ Sie können die Ladungsträgerreservierungshierarchie für den Auftrag zu jedem 
 
 Selbst wenn das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** für die Ebene **Ladungsträger** aktiviert ist, ist es *nicht* möglich, in dem Auftrag einen bestimmten Ladungsträger zu reservieren. In diesem Fall gilt die Standardlagerort-Operationslogik, die auf die Reservierungshierarchie zutrifft.
 
-Um einen bestimmten Ladungsträger zu reservieren, müssen Sie einen [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) Prozess verwenden. In der Anwendung können Sie diese Reservierung direkt aus einem Auftrag über die Option **Auftragsgebundene Reservierungen nach Ladungsträger** im Befehl **In Excel öffnen** vornehmen. In den Entitätsdaten, die im Excel-Add-In geöffnet werden, müssen Sie die folgenden reservierungsbezogenen Daten eingeben und dann **Veröffentlichen** auswählen, um die Daten an das Supply Chain Management zurückzusenden:
+Um einen bestimmten Ladungsträger zu reservieren, müssen Sie einen Prozess mit [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) verwenden. In der Anwendung können Sie diese Reservierung direkt aus einem Auftrag über die Option **Auftragsgebundene Reservierungen nach Ladungsträger** des Befehls **In Excel öffnen**. In den Entitätsdaten, die im Excel-Add-In geöffnet werden, müssen Sie die folgenden reservierungsbezogenen Daten eingeben und dann **Veröffentlichen** auswählen, um die Daten an das Supply Chain Management zurückzusenden:
 
 - Referenz (nur der Wert *Auftrag* wird unterstützt)
 - Auftragsnummer (der Wert kann aus dem Los abgeleitet werden)
@@ -409,7 +407,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Lagerplatz überschreiben</strong> in der Warehouse-App aus, wenn Sie mit der Entnahmearbeit beginnen.</li>
+<li>Wählen Sie das Menüelement <strong>Lagerplatz überschreiben</strong> in der Warehouse Management Mobile App aus, wenn Sie mit der Entnahmearbeit beginnen.</li>
 <li>Wählen Sie die Option für <strong>Vorschlagen</strong> aus.</li>
 <li>Bestätigen Sie den neuen Lagerort, der basierend auf der Verfügbarkeit der Chargenmenge vorgeschlagen wird.</li>
 </ol>
@@ -426,7 +424,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nr.</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Lagerplatz überschreiben</strong> in der Warehouse-App aus, wenn Sie mit der Entnahmearbeit beginnen.</li>
+<li>Wählen Sie das Menüelement <strong>Lagerplatz überschreiben</strong> in der Warehouse Management Mobile App aus, wenn Sie mit der Entnahmearbeit beginnen.</li>
 <li>Geben Sie einen Lagerort manuell ein.</li>
 </ol>
 </td>
@@ -454,7 +452,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nicht zutreffend</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Voll</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit verarbeiten.</li>
+<li>Wählen Sie das Menüelement <strong>Voll</strong> in der Warehouse Management Mobile App aus, wenn Sie die Entnahmearbeit verarbeiten.</li>
 <li>Geben Sie im Feld <strong>Entnahmemenge</strong> eine Teilmenge der erforderlichen Entnahme ein, um die volle Kapazität anzuzeigen.</li>
 </ol>
 </td>
@@ -529,7 +527,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Starten Sie eine Verlagerung in der Warehouse-App.</li>
+<li>Beginnen Sie eine Verlagerung in der Warehouse Management Mobile App.</li>
 <li>Geben Sie „Von“- und „Nach“-Lagerorte ein.</li>
 </ol></td>
 <td>
@@ -645,7 +643,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme mit unzureichender Menge</strong> in der Warehouse Management Mobile App aus, wenn Sie die Entnahmearbeit durchführen.</li>
 <li>Geben Sie im Feld <strong>Entnahmemenge</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Geben Sie im Feld <strong>Grund</strong> <strong>Keine Neuzuteilung</strong> ein.</li>
 </ol>
@@ -674,7 +672,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme mit unzureichender Menge</strong> in der Warehouse Management Mobile App aus, wenn Sie die Entnahmearbeit durchführen.</li>
 <li>Geben Sie im Feld <strong>Entnahmemenge</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Geben Sie im Feld <strong>Grund</strong> <strong>Keine Neuzuteilung</strong> ein.</li>
 </ol>
@@ -698,7 +696,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme mit unzureichender Menge</strong> in der Warehouse Management Mobile App aus, wenn Sie die Entnahmearbeit durchführen.</li>
 <li>Geben Sie im Feld für <strong>Menge der Kurzentnahme</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Wählen Sie im Feld <strong>Grund</strong> <strong>Kurze Entnahme mit manueller Neuzuteilung</strong> aus.</li>
 <li>Wählen Sie den Lagerort/Ladungsträger in der Liste aus.</li>
@@ -724,7 +722,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nr.</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme mit unzureichender Menge</strong> in der Warehouse Management Mobile App aus, wenn Sie die Entnahmearbeit durchführen.</li>
 <li>Geben Sie im Feld für <strong>Menge der Kurzentnahme</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Wählen Sie im Feld <strong>Grund</strong> <strong>Kurze Entnahme mit manueller Neuzuteilung</strong> aus.</li>
 </ol>
@@ -737,7 +735,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nr.</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme mit unzureichender Menge</strong> in der Warehouse Management Mobile App aus, wenn Sie die Entnahmearbeit durchführen.</li>
 <li>Geben Sie im Feld für <strong>Menge der Kurzentnahme</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Wählen Sie im Feld <strong>Grund</strong> <strong>Kurze Entnahme mit manueller Neuzuteilung</strong> aus.</li>
 <li>Wählen Sie den Lagerort/Ladungsträger in der Liste aus.</li>
@@ -761,7 +759,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nicht zutreffend</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme mit unzureichender Menge</strong> in der Warehouse Management Mobile App aus, wenn Sie die Entnahmearbeit durchführen.</li>
 <li>Geben Sie im Feld für <strong>Menge der Kurzentnahme</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Wählen Sie im Feld <strong>Grund</strong> <strong>Kurze Entnahme mit automatischer Neuzuteilung</strong> aus.</li>
 </ol>
@@ -853,6 +851,14 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
     - Transportaufträge und Rohmaterialentnahme
 
 - Die Containerkonsolidierungsregel für das Verpacken nach Richtlinieneinheit hat Einschränkungen. Für auftragsgebundene Reservierungen empfehlen wir, keine Container-Build-Vorlagen zu verwenden, bei denen das Feld **Nach Richtlinieneinheit verpacken** aktiviert ist. Beim aktuellen Design werden keine Lagerplatzrichtlinien verwendet, wenn Lagerarbeit erstellt wird. Daher wird nur die niedrigste Einheit in der Nummernkreisgruppe (der Lagereinheit) während des Containerisierungswellenschritts angewendet.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Chargennummern in der Lagerortverwaltung](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [Reservieren derselben Charge für einen Auftrag](../sales-marketing/reserve-same-batch-sales-order.md)
+- [Entnahme der ältesten Charge mit einem mobilen Gerät](pick-oldest-batch.md)
+- [Chargen- und Kennzeichenbestätigung](batch-and-license-plate-confirmation.md)
+- [Problembehandlung bei Reservierungen in der Lagerortverwaltung](troubleshoot-warehouse-reservations.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
