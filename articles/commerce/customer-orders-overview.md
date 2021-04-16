@@ -2,11 +2,9 @@
 title: Kundenaufträge in Point of Sale (POS)
 description: Dieses Thema enthält Informationen zu Kundenaufträgen in Point of Sale (POS). Debitorenaufträge sind auch Sonderauftrag. Das Thema enthält eine Diskussion zu zugehörigen Parametern und Buchungsflüssen.
 author: josaw1
-manager: AnnBe
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: f60e07c1faae9bc3cb6d3c843e72e6000cff7591
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220509"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821007"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundenaufträge in Point of Sale (POS)
 
@@ -61,7 +59,8 @@ In Commerce Version 10.0.12 und höher können Organisationen definieren, ob di
 
 Wenn Sie mit Kundenbestellungen am POS arbeiten, müssen Sie einige Einstellungen des Geschäftskanals berücksichtigen. Diese Einstellungen finden Sie auf der Seite **Shops** in der Commerce-Zentralverwaltung.
 
-- **Lagerort** – Dieses Feld gibt den Lagerort an, in dem Bestellungen ausgeführt werden, die für den Versand aus dem Geschäft konfiguriert sind.
+- **Lagerort** – Dieses Feld gibt den Lagerort an, der verwendet wird, wenn der Bestände für Mitnahme- und Debitorenabholaufträge abgezogen werden, die an diesen Shop gebunden sind. Es hat sich bewährt, eindeutige Lagerorte für jeden Shopkanal zu verwenden, um Probleme mit widersprüchlichen Geschäftslogiken in allen Shops zu vermeiden.
+- **Versandlagerort** – Dieses Feld gibt den Lagerort an, der verwendet wird, wenn der Bestände für Debitorenaufträge abgezogen werden, die von dem gewählten Shop versandt werden. Wenn die Funktion **Option, Standorte in der Erfüllungsgruppe als „Versand“ oder „Abholung“ anzugeben** in Ihrer Umgebung aktiviert wurde, können POS-Benutzer einen bestimmten Lagerort für den Versand von einem POS auswählen, anstatt einen Shop für den Versand auszuwählen. Wenn diese Funktion aktiviert ist, wird der Versandlagerort daher nicht mehr verwendet, da der Benutzer den spezifischen Lagerort auswählt, ab dem der Auftrag versendet werden soll, wenn er erstellt wird.
 - **Zuordnung von Erfüllungsgruppen** – Wählen Sie diese Schaltfläche (auf der **Einrichten**-Registerkarte im Aktionsbereich) aus, um die Erfüllungsgruppen zu verknüpfen, auf die verwiesen wird, um Optionen für Abholorte oder Sendungsursprünge anzuzeigen, wenn Kundenaufträge am POS erstellt werden.
 - **Zielbasierte Steuer verwenden** – Diese Option gibt an, ob die Lieferadresse verwendet wird, um die Steuergruppe zu bestimmen, die auf Bestellpositionen angewendet wird, die an die Adresse des Kunden versendet werden.
 - **Debitorenbasierte Steuer verwenden** – Diese Option gibt an, ob die Steuergruppe, die für die Lieferadresse des Kunden definiert ist, zur Besteuerung von Kundenbestellungen verwendet wird, die am POS für den Versand zum Kunden nach Hause erstellt wurden.

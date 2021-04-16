@@ -2,11 +2,9 @@
 title: Wiederbeschaffung über Lagerplatzkapazität
 description: Dieses Thema enthält Informationen zur Funktion „Wiederbeschaffung über Lagerplatzkapazität“. Mit dieser Funktion können alle für den Tag erforderlichen Wiederbeschaffungsarbeiten erstellt und die Verfügbarkeit dieser Wiederbeschaffungsarbeiten verwaltet werden, um sicherzustellen, dass am Kommissionierort weder der Lagerbestand ausgeht noch die Kapazität überschritten wird.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 1e4acfea3484acaafd982d0f22c2303f921f909f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 309df56671bf258e1669ae6d5393de01e2b500f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228392"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823238"
 ---
 # <a name="replenishment-over-location-capacity"></a>Wiederbeschaffung über Lagerplatzkapazität
 
@@ -241,7 +239,7 @@ Abhängig von Ihren Bestandsmengen können die erstellten Arbeitsmengen geringf�
 
 #### <a name="on-hand-inventory-license-plate-id"></a>Bestandskennzeichen-ID
 
-Später in diesem Szenario verwenden Sie die Warehouse-App (oder einen Emulator), in der Sie das Kennzeichen identifizieren müssen, um die Kommissionier- und Wiederbeschaffungsszenarien abzuschließen.
+Später in diesem Szenario verwenden Sie die Warehouse Management Mobile App (oder einen Emulator), in der Sie das Kennzeichen identifizieren müssen, um die Kommissionier- und Wiederbeschaffungsszenarien abzuschließen.
 
 Führen Sie die folgenden Schritte aus, um die Kennzeichen-IDs zu finden, die Sie später benötigen.
 
@@ -266,7 +264,7 @@ Sie führen die Lagerplatzwiederbeschaffung für die ersten beiden Arbeits-IDs d
 
 #### <a name="replenishment"></a>Wiederbeschaffung
 
-1. Melden Sie sich bei der Warehouse-App als ein Benutzer im Lagerort *61* an. (Geben Sie *61* als Benutzer-ID und *1* als Passwort ein.)
+1. Melden Sie sich bei der Warehouse Management Mobile App als ein Benutzer im Lagerort *61* an. (Geben Sie *61* als Benutzer-ID und *1* als Passwort ein.)
 1. Gehen Sie zu **Lager \> Wiederbeschaffung**.
 
     Sie werden aufgefordert, die erste Wiederbeschaffungsarbeit abzuschließen. Artikelnummer, -menge und -lagerplatz zur Entnahme werden angezeigt.
@@ -296,7 +294,7 @@ Solange nicht genügend Bestand vom Lagerplatz entnommen wurde, um es unter den 
 
 Bevor die verbleibende Wiederbeschaffungsarbeitsaufgabe abgeschlossen werden kann, muss der Kommissionierort so weit vom Bestand geleert sein, dass die verbleibende Wiederbeschaffungsarbeit entsperrt werden kann. Mit anderen Worten, die Summe aus der Menge des Lagerbestands am Lagerplatz und der Wiederbeschaffungsmenge darf den **Überlaufmenge**-Wert nicht überschreiten. Wenn diese Summe geringer ist als die Überlaufmenge, wird die verbleibende Wiederbeschaffungsarbeit entsperrt.
 
-1. Melden Sie sich bei der Warehouse-App als ein Benutzer im Lagerort *61* an. (Geben Sie *61* als Benutzer-ID und *1* als Passwort ein.)
+1. Melden Sie sich bei der Warehouse Management Mobile App als ein Benutzer im Lagerort *61* an. (Geben Sie *61* als Benutzer-ID und *1* als Passwort ein.)
 1. Gehen Sie zu **Ausgehend \> Verkaufskommissionierung**.
 1. Geben Sie die erste Arbeits-ID für Auftrag 1 ein.
 

@@ -2,11 +2,9 @@
 title: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen in Dynamics 365 Supply Chain Management.
 author: kamaybac
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9c91ffcb03793db2f2ef3a9631ab549ace3f735d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2e41510f1f5810dde9683235384f89008f888471
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259090"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821272"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
 
@@ -34,6 +32,18 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > [!NOTE]
 > Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](https://docs.microsoft.com/dynamics/s-e/). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Entfernte oder veraltete Funktionen in Supply Chain Management 10.0.18
+
+### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations – Lagerhaltung (die Lagerort-App)
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Gültig ab April 2021, *Dynamics 365 for Finance and Operations – Lagerhaltung* (die Lagerort-App) ist veraltet und wird nach April 2022 nicht mehr unterstützt. Es wird jetzt durch die *Warehouse Management Mobile App* ersetzt, die mit Version 10.0.17 von Supply Chain Management veröffentlicht wurde. Die neue App ist ein vollständiger Ersatz, verwendet jedoch dasselbe zugrunde liegende Framework, was die Migration vereinfacht. Bei Bedarf können die beiden Apps nebeneinander verwendet werden, damit Benutzer sich schrittweise anpassen können, während sie lernen, die neue App zu verwenden.<br><br>Weitere Informationen über die neue Warehouse Management Mobile App finden Sie unter [Mobile Warehouse Management-Anwendung](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) und unter [Warehouse Management Mobile App installieren und Verbindung herstellen](../warehousing/install-configure-warehouse-management-app.md). |
+| **Ersetzt durch eine andere Funktion?**   | Ja, wird durch die neue Warehouse Management Mobile App ersetzt. |
+| **Betroffene Produktbereiche**         | Supply Chain Management – Lagerort-App |
+| **Bereitstellungsoption**              | Cloud und lokal |
+| **Status**                         | Veraltet. Die Lagerort-App wird mit Fehler- und Sicherheitskorrekturen unterstützt, es werden jedoch keine Funktionserweiterungen mehr bereitgestellt. Nach April 2022 wird die alte Lagerort-App nicht mehr unterstützt und Kunden werden aufgefordert, auf die neue Warehouse Management Mobile App umzusteigen. Die alte Lagerort-App wird dann aus dem Microsoft Store und dem Google Play Store entfernt.  |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10015-release"></a>Entfernte oder veraltete Funktionen in Supply Chain Management 10.0.15
 
