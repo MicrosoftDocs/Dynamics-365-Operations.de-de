@@ -2,11 +2,9 @@
 title: Fehlerbehebung bei der Lagerort-Konfiguration
 description: In diesem Thema wird beschrieben, wie Sie allgemeine Probleme beheben, die bei der Konfiguration von Microsoft Dynamics 365 Supply Chain Management auftreten können.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 1dbd947f0740d22e0f79e6d5c272beb64715c8a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5487096"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814391"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>Fehlerbehebung bei der Lagerort-Konfiguration
 
@@ -38,7 +36,7 @@ Sie erhalten diese Fehlermeldung, wenn Sie einen Ladungsträger oder einen Lager
 
 ### <a name="issue-resolution"></a>Problemlösung
 
-Stellen Sie sicher, dass die Ladungsträger-ID nicht durch etwas anderes reserviert ist. Dieses Problem trat früher auf, wenn der Wert, den ein Benutzer in der Lagerort App gescannt hat, sowohl ein gültiger Lagerplatz als auch eine gültige Ladungsträger-ID war. Dieses Problem wurde jedoch in Version 10.0.11 behoben.
+Stellen Sie sicher, dass die Ladungsträger-ID nicht durch etwas anderes reserviert ist. Dieses Problem trat früher auf, wenn der Wert, den ein Benutzer in der Warehouse Management Mobile App gescannt hat, sowohl ein gültiger Lagerplatz als auch eine gültige Ladungsträger-ID war. Dieses Problem wurde jedoch in Version 10.0.11 behoben.
 
 ## <a name="i-receive-the-following-error-message-license-plate-must-be-specified-for-this-location"></a>Ich erhalte die folgende Fehlermeldung: „Der Ladungsträger muss für diesen Lagerplatz angegeben werden.“
 
@@ -82,7 +80,7 @@ Lagerplatzrichtlinien der Arbeitsauftragsart *Verkaufsaufträge* und der Arbeits
 
 Eine neue Funktion, *Alle Aktionen für Multi SKU Lagerplatzrichtlinien auswerten*, wurde in Version 10.0.15 hinzugefügt (siehe [KB 4579866](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091)). Diese Funktion wertet alle Aktionen für Multi-SKU Lagerplatzrichtlinien aus. Wenn Sie diese Funktion benötigen, verwenden Sie [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um sie zu aktivieren.
 
-## <a name="i-cant-use-the-warehouse-app-to-do-partial-picking"></a>Ich kann mit der Lagerort App keine Teilkommissionierung durchführen.
+## <a name="i-cant-use-the-warehouse-management-mobile-app-to-do-partial-picking"></a>Ich kann mit der Warehouse Management Mobile App keine Teilkommissionierung durchführen.
 
 ### <a name="issue-description"></a>Problembeschreibung
 
@@ -100,7 +98,7 @@ Sie möchten eine Bestandsstatusänderung für eine Teilmenge einer Charge durch
 
 ### <a name="issue-resolution"></a>Problemlösung
 
-Um den Arbeitskräften diese Änderung zu ermöglichen, können Sie einen Menüpunkt für die Lagerort App erstellen. Erstellen (oder bearbeiten) Sie auf der Seite **Mobilgeräte-Menüpunkte** einen Menüpunkt, der die folgenden Einstellungen hat:
+Um den Arbeitskräften diese Änderung zu ermöglichen, können Sie einen Menüpunkt für die Warehouse Management Mobile App erstellen. Erstellen (oder bearbeiten) Sie auf der Seite **Mobilgeräte-Menüpunkte** einen Menüpunkt, der die folgenden Einstellungen hat:
 
 - **Modus:** *Arbeit*
 - **Vorhandene Arbeit verwenden:** *Nein*

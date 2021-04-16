@@ -2,11 +2,9 @@
 title: Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 description: In diesem Thema wird beschrieben, wie Sie die Produktionsausführungsoberfläche aus Sicht einer Arbeitskraft verwenden.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecution
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 38bc07d37b5c51f143846110c87cff9952d52b0e
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500789"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814655"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Die Produktionsausführungsoberfläche ist für die Touch-Interaktion optimiert. Das Design bietet einen visuellen Kontrast, der die Barrierefreiheitsanforderungen für Werkstattumgebungen erfüllt. Es bietet dieselben Funktionsfunktionen wie das Einzelvorgangskartengerät. Es ermöglicht jedoch auch das parallele Starten mehrerer Einzelvorgänge aus einer Einzelvorgangsliste. (Diese Funktion wird auch als *Einzelvorgangsbündelung* bezeichnet.) Darüber hinaus können Mitarbeiter aus einer Einzelvorgangsliste einen Leitfaden öffnen, der im Microsoft Dynamics 365 Handbuch erstellt wurde. Auf diese Weise können sie visuelle Anweisungen auf einem HoloLens erhalten.
 
@@ -90,7 +87,7 @@ Die Registerkarte **Meine Maschine** enthält die folgenden Spalten. Die Nummern
 
 1. **Einstellungen** – Wählen Sie das Zahnradsymbol aus, um ein Dialogfeld zu öffnen, in dem Sie auswählen können, welche Zähler für die ausgewählte Maschinenanlage angezeigt werden sollen. Die Werte für diese Zähler werden oben auf der Registerkarte **Anlagenverwaltung** angezeigt. Über das Menü **Einstellungen** (siehe den folgenden Screenshot) können Sie bis zu vier Zähler aktivieren. Verwenden Sie für jeden Zähler, den Sie aktivieren möchten, das Suchfeld oben auf der Kachel, um einen Zähler auszuwählen. Das Suchfeld listet alle Zähler auf, die der oben auf der Seite **Vermögensverwaltung** ausgewählten Anlage zugeordnet sind. Stellen Sie jeden Zähler so ein, dass für den Zähler entweder der Wert **Aggregiert** oder der aktuelle Wert **Tatsächlich** überwacht wird. Wenn Sie beispielsweise einen Zähler festlegen, der nachverfolgt, wie viele Stunden die Maschine gelaufen ist, sollten Sie ihn auf **Aggregiert** festlegen. Wenn Sie einen Zähler zum Messen der zuletzt aktualisierten Temperatur oder des zuletzt aktualisierten Drucks verwenden, sollten Sie ihn auf **Tatsächlich** festlegen. Wählen Sie **OK**, um Ihre Einstellungen zu speichern und das Dialogfeld zu schließen.
 
-    ![Die Registerkarte „Meine Maschine“](media/pfei-my-machine-tab-settings.png "Die Registerkarte „Meine Maschine“")
+    ![Einstellungen der Registerkarte „Meine Maschine“](media/pfei-my-machine-tab-settings.png "Einstellungen der Registerkarte „Meine Maschine“")
 
 1. **Wartung anfordern** – Wählen Sie diese Schaltfläche aus, um ein Dialogfeld zu öffnen, in dem Sie eine Wartungsanfrage erstellen können. Sie können eine Beschreibung und eine Notiz angeben. Die Anfrage wird an einen Benutzer von Supply Chain Management weitergeleitet, der dann in der Lage ist, die Wartungsanfrage in einen Wartungsarbeitsauftrag umzuwandeln.
 1. **Ausfallzeiten erfassen** – Wählen Sie diese Schaltfläche aus, um ein Dialogfeld zu öffnen, in dem Sie Ausfallzeiten der Maschine erfassen können. Sie können einen Ursachencode auswählen und ein Datum bzw. eine Zeitspanne für die Ausfallzeit eingeben. Die Erfassung der Ausfallzeit der Maschine wird zur Berechnung der Effizienz des Maschinenanlage verwendet.

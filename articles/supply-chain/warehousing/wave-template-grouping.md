@@ -2,11 +2,9 @@
 title: Wellenvorlagengruppierung
 description: Die Gruppierung von Wellenvorlagen ermöglicht es dem System, mithilfe von Wellenvorlagen-Setups anhand der von Ihnen definierten Kriterien zu bestimmen, wie freigegebene Positionen aufgeteilt und neuen oder vorhandenen Wellen zugewiesen werden sollen. Diese Funktion kann in Lagerorten nützlich sein, in denen Wellen nach bestimmten Kriterien erstellt werden, Manager jedoch Wellen lieber automatisch als manuell erstellen.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 520338683443105ffd1df7fc2569cd95a5f50879
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a591624f6611148abe4888e67d8d3a9bbea9cd27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245129"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838033"
 ---
 # <a name="wave-template-grouping"></a>Wellenvorlagengruppierung
 

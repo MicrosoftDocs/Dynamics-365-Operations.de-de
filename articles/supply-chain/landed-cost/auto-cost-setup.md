@@ -2,7 +2,6 @@
 title: Autokalkulation einrichten
 description: Dieses Thema beschreibt, wie Sie Kalkulationsregeln für verschiedene eingehende Fahrten festlegen können. Basierend auf diesen Regeln kalkuliert das System die Kosten und fügt sie automatisch hinzu. Daher müssen die Benutzer die Kalkulationen nicht manuell hinzufügen.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 86dcbfbe6e00e7324e29541da6d682794e7487b3
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 2e9135019323db74a4dca9343d315cbbf9683e32
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501149"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841958"
 ---
 # <a name="auto-costs-setup"></a>Autokalkulation einrichten
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Sie können die Seite **Autokalkulation** verwenden, um Kostenregeln für verschiedene Kostenbereiche (wie Fahrten, Transportcontainer, Paletten, Kaufsbestellungen, Artikel oder Umlagerungsaufträge) festzulegen. Basierend auf den Regeln und den Feldern, die Benutzer auswählen, wenn sie Datensätze für einen der Kostenbereiche erstellen, berechnet das System die Kosten und fügt sie automatisch hinzu. Daher müssen die Benutzer die Kalkulationen nicht manuell hinzufügen.
 

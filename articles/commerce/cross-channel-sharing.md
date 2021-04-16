@@ -2,11 +2,9 @@
 title: Die kanalübergreifende Freigabe aktivieren und verwenden
 description: In diesem Thema wird beschrieben, wie Sie die kanalübergreifende Freigabefunktion von Microsoft Dynamics 365 Commerce Site Builder aktivieren und verwenden.
 author: psimolin
-manager: annbe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 987dca54e47b909014862e310aa424019d8c4677
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: de317c2fae4607f5b8b887dd5e866d812043dcd3
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207822"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799516"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Kanalübergreifende Freigabe aktivieren und verwenden
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie die kanalübergreifende Freigabefunktion von Microsoft Dynamics 365 Commerce Site Builder aktivieren und verwenden.
-
-## <a name="overview"></a>Übersicht
 
 Durch die kanalübergreifende Freigabe können Einzelhändler Inhalte wiederverwenden und zwischen mehreren Kanälen einer Website austauschen. Diese Funktion ist nützlich, wenn die Site-Kanäle eine kompatible Basissprache haben oder wenn sie zahlreiche gemeinsame Inhaltselemente haben.
 

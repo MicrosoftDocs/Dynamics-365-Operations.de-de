@@ -1,12 +1,10 @@
 ---
 title: Wartungspläne
 description: In diesem Thema werden Wartungspläne in Asset Management erläutert.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 09ae8b0ce56b08db0ba400b19676bd698c90a561
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500813"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839606"
 ---
 # <a name="maintenance-plans"></a>Wartungspläne
 
@@ -195,8 +193,6 @@ Die folgende Abbildung zeigt das Beispiel eines Wartungsplans, der auf einer Anl
 
 ## <a name="counter-based-maintenance-enhancements"></a>Zählerbasierte Wartungsverbesserungen
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Die Funktion *Zählerbasierte Wartungsverbesserungen* führt die folgenden Funktionen ein:
 
 - Die Option zum automatischen Einfügen eines Zählers mit dem Wert *0* (Null), wenn eine Anlage erstellt wird. Diese Option kann hilfreich sein, wenn Sie eine Predictive Maintenance verwenden, die auf Zählern basiert. Wenn die Funktion *Zählerbasierte Wartungsverbesserungen* nicht verwendet wird, müssen Zähler mit dem Wert *0* (Null) manuell eingefügt werden.
@@ -209,7 +205,7 @@ Die Funktion *Zählerbasierte Wartungsverbesserungen* führt die folgenden Funkt
 Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 
 - **Modul:** *Anlagenverwaltung*
-- **Name der Funktion:** *(Vorschauversion) Zählerbasierte Wartungsverbesserungen*
+- **Name der Funktion:** *Zählerbasierte Wartungsverbesserungen*
 
 ### <a name="create-and-initialize-counters-when-an-asset-is-created"></a>Erstellen und Initialisieren von Zählern bei der Erstellung einer Anlage
 

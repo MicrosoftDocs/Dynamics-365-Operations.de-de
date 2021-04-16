@@ -2,11 +2,9 @@
 title: Fehlerbehebung beim Entnehmen und Verpacken
 description: In diesem Thema wird beschrieben, wie Sie allgemeine Probleme beheben können, die beim Entnehmen und Verpacken in Microsoft Dynamics 365 Supply Chain Management auftreten können.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 01e33b63e09a035f5243bd57faf53b522737c987
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1a54fa9dc21fb1691d74905a1215f4dfea31f136
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5223241"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828129"
 ---
 # <a name="troubleshoot-picking-and-packing"></a>Fehlerbehebung beim Entnehmen und Verpacken
 
@@ -44,7 +42,7 @@ Das Feld **Standard-Eingangsort** ist für ein Transitlager des „von“-Lagers
 
 ### <a name="issue-description"></a>Problembeschreibung
 
-Sie erhalten diese Fehlermeldung in der Lagerort App, wenn Sie einen Ladungsträger ID scannen.
+Sie erhalten diese Fehlermeldung in der Warehouse Management Mobile App, wenn Sie eine Ladungsträger-ID scannen.
 
 ### <a name="issue-resolution"></a>Problemlösung
 
@@ -68,7 +66,7 @@ Sie erhalten diese Fehlermeldung, wenn Sie versuchen, eine *Gesplittete Entnahme
 
 ### <a name="issue-resolution"></a>Problemlösung
 
-Die Arbeitskraft im Lager muss den Prozess *Kurzes Entnehmen* in der Lagerort App verwenden. Wenn Sie versuchen, mehrere Chargen vom selben Lagerplatz zu entnehmen, können Sie auch die Option **Voll** in der Lagerort App verwenden.
+Die Arbeitskraft im Lager muss den Prozess *Kurzes Entnehmen* in der Warehouse Management Mobile App verwenden. Wenn Sie versuchen, mehrere Chargen vom selben Lagerplatz zu entnehmen, können Sie auch die Option **Voll** in der Warehouse Management Mobile App verwenden.
 
 ## <a name="i-cant-move-inventory-to-a-location-that-is-license-platecontrolled"></a>Ich kann den Bestand nicht an einen Lagerplatz verschieben, der von Ladungsträgern kontrolliert wird.
 
