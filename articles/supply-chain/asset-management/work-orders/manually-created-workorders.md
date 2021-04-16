@@ -1,12 +1,10 @@
 ---
 title: Manuell erstellte Arbeitsaufträge
 description: In diesem Thema wird erläutert, wie Sie im Anlagenmanagement Arbeitsaufträge manuell anlegen.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b704699c5e04f38c3b79691f935287f8f9c24fba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8962cbbc8f413093eef0fb3783aa6ced22f7bc2d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263709"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839558"
 ---
 # <a name="manually-created-work-orders"></a>Manuell erstellte Arbeitsaufträge
 

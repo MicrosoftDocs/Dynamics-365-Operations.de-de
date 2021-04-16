@@ -2,11 +2,9 @@
 title: Fehlerbehebung bei Upgrade und Migration zur erweiterten Lagerortverwaltung
 description: In diesem Thema wird beschrieben, wie Sie allgemeine Probleme beheben, die beim Upgrade und bei der Migration zur erweiterten Lagerverwaltung auftreten können.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f5bfee31ce27e919086f978fb3ff88ca61a65eba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 953b828667a01157767c3ca79349fe972b0fbe9b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208086"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826394"
 ---
 # <a name="troubleshoot-upgrade-and-migration-to-advanced-warehouse-management"></a>Fehlerbehebung bei Upgrade und Migration zur erweiterten Lagerortverwaltung
 
@@ -34,11 +32,11 @@ In diesem Thema wird beschrieben, wie Sie allgemeine Probleme beheben, die beim 
 
 ### <a name="issue-description"></a>Problembeschreibung
 
-Sie erhalten diese Fehlermeldung in der Lagerort App, da selbstsignierten Zertifikaten auf Android 8+ in lokalen Umgebungen nicht vertraut wird.
+Sie erhalten diese Fehlermeldung in der Warehouse Management Mobile App, da selbstsignierten Zertifikaten auf Android 8+ in lokalen Umgebungen nicht vertraut wird.
 
 ### <a name="issue-resolution"></a>Problemlösung
 
-Verwenden Sie eine externe (öffentliche) Zertifizierungsstelle (CA). Ein Fix für dieses Problem ist in Version 1.9.0.0 der Lagerort App verfügbar. Weitere Informationen zu diesem Problem und wie Sie es beheben können, finden Sie unter [Fehlerbehebung bei Verbindungsproblemen der Lagerort App](troubleshoot-warehouse-app-connection.md).
+Verwenden Sie eine externe (öffentliche) Zertifizierungsstelle (CA). Ein Fix für dieses Problem ist in Version 1.9.0.0 der Lagerort App verfügbar. Weitere Informationen zu diesem Problem und wie Sie es beheben können, finden Sie unter [Fehlerbehebung bei Verbindungsproblemen der Warehouse Management Mobile App](troubleshoot-warehouse-app-connection.md).
 
 ## <a name="what-is-the-approved-process-for-moving-from-basic-warehousing-to-advanced-warehousing"></a>Was ist der genehmigte Prozess für den Wechsel von Basis-Lagerort zu erweitertem Lagerort?
 

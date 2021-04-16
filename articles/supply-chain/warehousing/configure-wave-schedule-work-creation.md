@@ -2,11 +2,9 @@
 title: Planen Sie der Arbeitserstellung während der Welle
 description: In diesem Thema wird beschrieben, wie Sie die Wellenverarbeitungsmethode „Arbeitserstellung planen“ einrichten und verwenden.
 author: perlynne
-manager: mirzaab
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
@@ -16,42 +14,59 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 36a450f78695f617056875f8d236fe46bc66aaaf
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: e4258c03b12a80a5bd81328ae7418835d68f82e7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501221"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835701"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Planen Sie der Arbeitserstellung während der Welle
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Verwenden Sie die Funktion *Arbeitserstellung planen* als Teil Ihres Wellenprozesses, um den Wellenverarbeitungsdurchsatz zu erhöhen, indem das System Arbeit mit paralleler Verarbeitung erstellt.
 
 Wenn die Funktionalität aktiviert ist, werden geplante Arbeiten automatisch erstellt, die das System schließlich verarbeitet, um tatsächliche Arbeiten zu erstellen. Wenn die Anzahl der Wellenladungspositionen einen vorgegebenen Schwellenwert erreicht, erstellt das System durch parallele asynchrone Verarbeitung schneller tatsächliche Arbeit.
 
-## <a name="enable-the-schedule-work-creation-feature"></a>Aktivieren der Funktion zum Erstellen von Arbeit
+## <a name="turn-on-the-scheduled-work-creation-features-in-feature-management"></a>Funktionen zur geplanten Arbeitserstellung in der Funktionsverwaltung aktivieren
 
-### <a name="enable-the-feature-in-feature-management"></a>Aktivieren der Funktion in der Funktionsverwaltung
+Um die in diesem Thema beschriebenen Funktionen nutzen zu können, müssen sie für Ihr System aktiviert sein. Benutzen Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die folgenden Funktionen in der folgenden Reihenfolge zu aktivieren:
 
-Bevor Sie die Funktion *Arbeitserstellung planen* verwenden können, muss sie in Ihrem System eingeschaltet werden. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
+1. **Organisationsweite Arbeitssperre** – Erforderlich für die manuelle und automatische Konfiguration der geplanten Arbeitserstellung.
+1. **Arbeitserstellung planen** – Erforderlich für die manuelle und automatische Konfiguration der geplanten Arbeitserstellung.
+1. **Organisationsweite Wellenmethode „Arbeitserstellung planen“**  – Erforderlich für die manuelle und automatische Konfiguration der geplanten Arbeitserstellung. Sie benötigen diese Funktion nicht, wenn Sie nur die manuelle Konfiguration verwenden.
 
-- **Module:** *Lagerortverwaltung*
-- **Funktionsname:** *Arbeitserstellung planen*
+<a name="Auto-enable-schedule-work-creation"></a>
 
-> [!NOTE]
-> Die Funktion *Organisationsweite Arbeitssperre* muss aktiviert sein, bevor Sie *Arbeitserstellung planen* aktivieren können.
+## <a name="automatically-configure-scheduled-work-creation"></a>Die geplante Arbeitserstellung automatisch konfigurieren
+
+Wenn Sie die Funktion *Organisationsweite Wellenmethode „Arbeitserstellung planen“* aktiviert haben, passiert auf Ihrem System automatisch Folgendes:
+
+- Die Wellenmethode *Arbeitserstellung planen* (`WHSScheduleWorkCreationWaveStepMethod`) wird hinzugefügt und so konfiguriert, dass sie für alle juristischen Personen parallel ausgeführt wird.
+- Bei Wellenvorlagen von allen juristischen Personen, bei denen der **Wellenvorlagentyp** auf *Versand* und **Vorlagenstatus** auf *Gültig* eingestellt ist, wird die Methode *Arbeit erstellen* durch die Methode *Arbeitserstellung planen* ersetzt. Wellenvorlagen von juristischen Personen, bei denen die Methode *Arbeit erstellen* wiederholbar sein darf, werden nicht geändert.
+- Aufgabenkonfigurationen für die Methode *Arbeitserstellung planen* werden für alle Lagerorte von allen juristischen Personen erstellt, bei denen **Lagerortverwaltungsprozesse verwenden** aktiviert ist. Dies bedeutet, dass die Methode *Arbeitserstellung planen* jetzt standardmäßig parallel ausgeführt wird. Bestehende Lagerorte, für die Sie **Lagerortverwaltungsprozesse verwenden** von *Nein* auf *Ja* ändern, führen diese Methode standardmäßig auch parallel aus.
+- Alle juristischen Personen verarbeiten Wellen in einem Stapel und **Auf Sperre (ms) warten** wird auf einen Standardwert von *60.000* ms gesetzt, wenn sie vorher auf *0* ms eingestellt waren.
+- Alle neuen Wellenvorlagen, die Sie erstellen, haben die Wellenmethode *Arbeitserstellung planen* anstelle der Methode *Arbeit erstellen*.
+
+Die vorhandenen Aufgaben- und Wellenverarbeitungskonfigurationen werden auch für alle juristischen Personen beibehalten, die bereits für die Stapelverarbeitung von Wellen konfiguriert sind, sowie für alle Lagerorte, die bereits für die parallele Verwendung der Methode *Arbeitserstellung erstellen* konfiguriert sind.
+
+Bei Bedarf können Sie einige oder alle Einstellungen, die beim Aktivieren von der Funktion *Organisationsweite Wellenmethode „Arbeitserstellung planen“* automatisch vorgenommen wurden, manuell zurücksetzen, indem Sie Folgendes tun:
+
+- Wechseln Sie für Wellenvorlagen zu **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenvorlagen**. Ersetzen Sie die Methode *Arbeitserstellung planen* mit *Arbeit erstellen*.
+- Gehen Sie für Lagerortparameter zu **Lagerortverwaltung\>Einstellungen \> Lagerortverwaltungsparameter**. Wenden Sie auf der Registerkarte **Wellenverarbeitung** Ihre bevorzugten Werte für **Wellen in einem Stapel verarbeiten** und **Auf Sperre (ms) warten**.
+- Wechseln Sie für die Wellenmethoden zu **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenverarbeitungsmethoden**. Wählen Sie `WHSScheduleWorkCreationWaveStepMethod` und dann im Aktivitätsbereich **Aufgabenkonfiguration** aus. Ändern oder löschen Sie nach Bedarf die Anzahl der Stapelverarbeitungsaufgaben und die zugewiesene Wellengruppe für die einzelnen aufgeführten Lagerorte.
+
+## <a name="manually-configure-scheduled-work-creation"></a>Die geplante Arbeitserstellung manuell konfigurieren
+
+Wenn Sie die [Funktion *Organisationsweite Wellenmethode „Arbeitserstellung planen“*](#Auto-enable-schedule-work-creation) aktiviert haben, können Sie die in diesem Abschnitt beschriebenen Prozeduren verwenden, um die geplante Arbeitserstellung nach Bedarf manuell zu konfigurieren.
 
 ### <a name="manually-enable-batch-processing-of-waves"></a>Die Stapelverarbeitung von Wellen manuell aktivieren
 
 Um eine parallele asynchrone Methode zum Erstellen von Lagerarbeiten nutzen zu können, muss Ihr Wellenprozess im Stapel ausgeführt werden. So richten Sie dies ein:
 
 1. Wechseln Sie zu  **Lagerortverwaltung \>  Einstellungen \> Lagerortverwaltungsparameter**.
-
 1. Setzen Sie auf der Registerkarte **Allgemein** die Option **Wellen in einem Stapel verarbeiten** auf *Ja*. Optional können Sie auch eine dedizierte **Stapelverarbeitungsgruppe Wellenverarbeitung** auswählen, um zu verhindern, dass Ihre Stapelwarteschlangenverarbeitung gleichzeitig mit anderen Prozessen ausgeführt wird.
-
 1. Stellen Sie die Zeit von **Auf Sperre warten (ms)** ein, die gilt, wenn das System mehrere Wellen gleichzeitig verarbeitet. Für die meisten größeren Wellenprozesse empfehlen wir einen Wert von *60000*.
 
 ### <a name="manually-enable-the-new-wave-step-method-for-existing-wave-templates"></a>Manuelles Aktivieren der neuen Wellenschrittmethode für vorhandene Wellenvorlagen
@@ -59,58 +74,31 @@ Um eine parallele asynchrone Methode zum Erstellen von Lagerarbeiten nutzen zu k
 Erstellen Sie zunächst die neue Wellenschrittmethode, und aktivieren Sie sie für die parallele asynchrone Aufgabenverarbeitung.
 
 1. Wechseln Sie zu  **Lagerortverwaltung \> Setup \> Wellen \> Wellenverarbeitungsmethoden**.
-
 1. Wählen Sie  **Methode erneut generieren** aus, und beachten Sie, dass *WHSScheduleWorkCreationWaveStepMethod* der Liste der Wellenprozessmethoden hinzugefügt wurde, die Sie in Ihren Versandwellenvorlagen verwenden können.
-
 1. Wählen Sie den Datensatz mit dem **Methodennamen** *WHSScheduleWorkCreationWaveStepMethod* und dann **Aufgabenkonfiguration** aus.
-
 1. Wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine Zeile hinzuzufügen, und verwenden Sie die folgenden Einstellungen:
 
     - **Lagerort** – Wählen Sie das Lager aus, in dem Sie die Verarbeitung der Arbeitserstellung planen möchten.
-
     - **Maximale Anzahl an Stapelverarbeitungsaufgaben** – Geben Sie eine maximale Anzahl von Stapelverarbeitungsaufgaben an. In den meisten Fällen sollte dieser Wert im Bereich von 8 bis 16 liegen. Wir empfehlen jedoch, mit der optimalen Einstellung basierend auf Ihren Szenarien zu experimentieren.
-
     - **Stapelverarbeitungsgruppe Wellenverarbeitung** – Wählen Sie eine dedizierte Stapelverarbeitungsgruppe der Wellenverarbeitung aus, um die Verarbeitung Ihrer Stapelverarbeitungswarteschlange zu optimieren.
 
 Jetzt können Sie eine vorhandene Wellenvorlage aktualisieren (oder eine neue erstellen), um die Wellenverarbeitungsmethode *Arbeitserstellung planen* zu verwenden.
 
 1. Wechseln Sie zu  **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenvorlagen**.
-
 1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
-
 1. Wählen Sie im Listenbereich die Wellenvorlage aus, die Sie aktualisieren möchten (wenn Sie mit Demodaten testen, können Sie *Standard-24-Lieferung* verwenden).
-
 1. Erweitern Sie das Inforegister **Methoden**, und wählen Sie die Zeile mit dem **Namen** *Arbeitserstellung planen* im Raster **Verbleibende Methoden** aus.
-
-1. Wählen Sie den Pfeil aus, der auf die Spalte **Ausgewählte Methoden** zeigt, um die ausgewählte Zeile in diese Spalte zu verschieben. (Sie können jeweils nur eine ausgewählte Methode haben, die entweder *WHSScheduleWorkCreationWaveStepMethod* oder *createWork* verwendet, sodass die vorhandene Zeile mit **Methodenname** *createWork* automatisch in das Raster **Verbleibende Methoden** verschoben wird.)
+1. Wählen Sie den Pfeil aus, der auf die Spalte **Ausgewählte Methoden** zeigt, um die ausgewählte Zeile in diese Spalte zu verschieben. (Sie können jeweils nur eine ausgewählte Methode haben, die entweder `WHSScheduleWorkCreationWaveStepMethod` oder `createWork` verwendet, sodass die vorhandene Zeile mit **Methodenname** `createWork` automatisch in das Raster **Verbleibende Methoden** verschoben wird.)
 
 ## <a name="set-wave-task-processing-threshold-data"></a>Festlegen der Schwellenwertdaten für die Verarbeitung von Wellenaufgaben
 
 Das System erstellt beim ersten Ausführen eines Wellenprozesses mit einer aufgabenbasierten Verarbeitung Standardschwellenwertdaten für die Verarbeitung von Wellenaufgaben. Die Daten werden verwendet, um zu steuern, wann die Wellenverarbeitung asynchron ausgeführt wird und aufgabenbasiert ist, wodurch Arbeit parallel verarbeitet und erstellt werden kann.
 
-Die Standarddaten verwenden zunächst einen Schwellenwert von 15 für die Mindestanzahl von Ladungspositionen (MINIMUMWAVELOADLINES). Dies bedeutet, dass das System bei der Verarbeitung einer Welle mit mehr als 15 Ladungspositionen die asynchrone Aufgabenverarbeitung verwendet. Sie können diese Daten manuell in die Tabelle **WHSWaveTaskProcessingThresholdParameters** in Ihren Testumgebungen einfügen oder dort aktualisieren. Wenn Sie diese Einstellung jedoch in einer Produktionsumgebung ändern müssen, müssen Sie sich an den Microsoft-Support wenden, um die Aktualisierung anzufordern.
+Die Standarddaten verwenden zunächst einen Schwellenwert von 15 für die Mindestanzahl von Ladungspositionen (`MINIMUMWAVELOADLINES`). Dies bedeutet, dass das System bei der Verarbeitung einer Welle mit mehr als 15 Ladungspositionen die asynchrone Aufgabenverarbeitung verwendet. Sie können diese Daten manuell in die Tabelle `WHSWaveTaskProcessingThresholdParameters` in Ihren Testumgebungen einfügen bzw. dort aktualisieren. Wenn Sie diese Einstellung in einer Produktionsumgebung ändern müssen, müssen Sie sich an den Microsoft-Support wenden, um das Update anzufordern.
 
-## <a name="work-with-the-feature"></a>Arbeiten mit der Funktion
+## <a name="work-with-the-scheduled-work-creation"></a>Mit der geplanten Arbeitserstellung arbeiten
 
-Wenn die Funktion *Arbeitserstellung planen* aktiviert ist, erstellt die Wellenverarbeitung geplante Arbeiten, die schließlich vom neuen Arbeitserstellungsprozess verwendet werden. Während der Arbeitserstellung wird die Arbeit mit der Funktion *Organisationsweite Arbeitssperre* gesperrt.
-
-Das folgende Flussdiagramm zeigt, wie geplante Arbeiten während der Wellenverarbeitung erstellt werden.
-
-![Arbeitserstellung planen](media/schedule-work-creation-process.png)
-
-### <a name="planned-work"></a>Geplante Arbeit
-
-Die Seite **Details der geplanten Arbeit** (**Lagerort verwaltung \> Arbeit \> Details der geplanten Arbeit**) zeigt Informationen über die geplante Arbeit an, die anfänglich während der Wellenverarbeitung erstellt werden. Die folgenden **Prozessstatus**-Werte sind verfügbar:
-
-- **In Warteschlange** – Die geplante Arbeit wartet darauf, zur Erstellung von Arbeit verwendet zu werden.
-- **Abgeschlossen** – Die geplante Arbeit wurde verwendet, um Arbeit zu erstellen.
-- **Fehlgeschlagen** – Die Wellenverarbeitung ist fehlgeschlagen. Beachten Sie, dass die geplante Arbeit mit oder ohne zugehörige tatsächliche Arbeit in einem Status **Fehlgeschlagen** sein kann. Wenn der eigentliche Arbeitserstellungsprozess fehlschlägt, bleibt die eigentliche Arbeit im Status *Storniert*.
-
-### <a name="batch-job-for-the-work-creation-process"></a>Stapelverarbeitungsauftrag für den Arbeitserstellungsprozess
-
-Um die Stapelverarbeitungsaufträge für die Verarbeitung von Wellen anzuzeigen, wählen Sie **Stapelverarbeitungsaufträge** im Aktionsbereich auf der Seite **Alle Wellen** aus.
-
-Von hier aus können Sie alle Details der Stapelverarbeitungsaufgabe für jede der Stapelverarbeitungsauftrags-IDs anzeigen.
+Ausführliche Informationen zum Arbeiten mit der geplanten Arbeitserstellung finden Sie unter [Wellen erstellen und verarbeiten](wave-processing.md). 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

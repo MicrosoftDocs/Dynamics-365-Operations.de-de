@@ -2,11 +2,9 @@
 title: Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.12 (August 2020)
 description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Supply Chain Management 10.0.12 neu oder geändert wurden.
 author: kamaybac
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8fdd831bd774f65e1737d5dec3046fa5ea978390
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0513dffb6395eaf00f4c71df91938a5db6486daf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258970"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832201"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.12 (August 2020)
 
@@ -47,11 +45,11 @@ Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel 
 
 - [Kerninformationen der IoT-Intelligenz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - Weitere Informationen finden Sie unter [IoT-Intelligenz-Homepage](../iot/iot-intelligence-home-page.md).
 
-- [Verbesserungen beim Kennzeichenempfang für die Warehouse-App (fortgesetzt)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Weitere Informationen finden Sie unter [Kennzeichenempfang über die Warehouse-App](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Verbesserungen beim Kennzeichenempfang für die Warehouse-App (fortgesetzt)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Weitere Informationen finden Sie unter [Kennzeichenempfang über die Warehouse Management Mobile App](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Massenbereitstellung für die Warehouse Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Weitere Informationen finden Sie unter [Übersicht zum Installieren und Konfigurieren der Warehouse-App](../warehousing/install-configure-warehousing-app.md).
+- [Massenbereitstellung für die Warehouse Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Weitere Informationen finden Sie unter [Installieren und Verbinden der Warehouse Management Mobile App](../warehousing/install-configure-warehouse-management-app.md).
 
-- [Maximale Ausführungszeit für den Einzelvorgang „Bereinigen Lagerbestandseinträge für Lagerortverwaltung“](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Weitere Informationen finden Sie unter [Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung](../warehousing/onhand-cleanup.md).
+- [Maximale Ausführungszeit für den Einzelvorgang „Bereinigen der Lagerbestandseinträge für die Lagerortverwaltung“](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Weitere Informationen finden Sie unter [Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung](../warehousing/onhand-cleanup.md).
 
 - [Planungsoptimierungsunterstützung für Kaufvereinbarungen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> - Weitere Informationen finden Sie unter [Masterplanung mit Kaufvereinbarungen](../master-planning/planning-optimization/purchase-trade-agreement.md).
 

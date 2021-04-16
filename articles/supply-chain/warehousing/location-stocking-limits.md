@@ -2,11 +2,9 @@
 title: Lagerplatzbeschränkungen
 description: Dieses Thema beschreibt die Funktionalität für Lagerplatz-Bestandsgrenzen.
 author: perlynne
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: e336b54b894669f8a49091473314e1d7d2639e5f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b9fb3c35f2f2e0fd7c0e3afe132efb4c51f163a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216980"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831265"
 ---
 # <a name="location-stocking-limits"></a>Lagerplatzbeschränkungen
 
@@ -83,7 +81,7 @@ In diesem Beispiel werden Sie einen Flow für den Empfang einer Einkaufsbestellu
 
 Sie erhalten zunächst eine Menge von *4* der Einheit *PL* in der Größe *S* und überprüfen die eingelagerten Zeilenplätze für die erstellte Arbeit. Sie erhalten dann eine Menge von *4* der Einheit *PL* in der Größe *L* und überprüfen die Lagerplätze für die erstellte Arbeit.
 
-1. Melden Sie sich in der Lagerort App an, indem Sie *24* als Benutzer-ID und *1* als Kennwort verwenden.
+1. Melden Sie sich in der Warehouse Management Mobile App an, indem Sie *24* als Benutzer-ID und *1* als Kennwort verwenden.
 1. Wählen Sie **Eingang** \> **Empfang**.
 1. Empfangen Sie *4* *PL* der Elementnummer *D0013* in Größe *S*.
 1. Überprüfen Sie die erstellte Einlagerungsarbeit. Sie sollten das folgende Ergebnis sehen:

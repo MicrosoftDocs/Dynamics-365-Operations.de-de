@@ -2,7 +2,6 @@
 title: Über-/Unterbuchungen
 description: Dieses Thema enthält Informationen, die Ihnen dabei helfen, die Details der Richtlinien für Über-/Unter-Transaktionen festzulegen, damit das System bestimmen kann, wie die Über- und Unterbearbeitung von Waren zum Zeitpunkt des Eingangs gehandhabt werden soll.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9027d5dc73ebd78a65429f7bc63a1ebf8ef60dac
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: c7e75e39877b36e482dd4aaa5cc7c8f84d57d81b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500981"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833736"
 ---
 # <a name="overunder-transactions"></a>Über-/Unterbuchungen
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Wenn die Bestellungen einer Fahrt verarbeitet werden, erwartet das System, dass die Artikelmenge, die im endgültigen Ziellagerort zum Verbrauch eintrifft, mit der Menge übereinstimmt, die auf den Zeilen der Einkaufsbestellung angegeben ist, die mit der Fahrt verbunden sind. Da jedoch nicht immer die exakte Menge auf den Zeilen der Einkaufsbestellung im Lagerort eintrifft, definiert das Modul **Gesamttransportkosten** eine Reihe von Regeln, die verwendet werden, um Über- und Unterempfang von Waren zu behandeln. Diese Regeln sind besonders wichtig, weil die ursprüngliche Einkaufsbestellung bereits fakturiert wurde und nicht mehr geändert werden kann. Indem Sie die Details der Richtlinien für Über-/Unter-Transaktionen festlegen, ermöglichen Sie dem System, zu bestimmen, wie die Über- und Unterbearbeitung von Waren zum Zeitpunkt des Eingangs gehandhabt werden soll. Sie können Über- und Unterbestände auch manuell verwalten, indem Sie die Seite **Über-/Unter-Transaktionen** verwenden.
 
