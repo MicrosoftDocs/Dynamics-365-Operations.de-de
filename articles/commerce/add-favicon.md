@@ -2,11 +2,9 @@
 title: Hinzufügen eines Favicons
 description: In diesem Thema wird erläutert, wie ein favicon der Site hinzufügt wird.
 author: bicyclingfool
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,87 +14,85 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 786ba02c312b7cdb3cf7f0689737084887d536bc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9268bc74a4131256f5a2e88df833104db271b56a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206342"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797718"
 ---
-# <a name="add-a-favicon"></a><span data-ttu-id="176f7-103">Hinzufügen eines Favicons</span><span class="sxs-lookup"><span data-stu-id="176f7-103">Add a favicon</span></span>
+# <a name="add-a-favicon"></a><span data-ttu-id="83e99-103">Hinzufügen eines Favicons</span><span class="sxs-lookup"><span data-stu-id="83e99-103">Add a favicon</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="176f7-104">In diesem Thema wird erläutert, wie ein favicon der Site hinzufügt wird.</span><span class="sxs-lookup"><span data-stu-id="176f7-104">This topic explains how to add a favicon to your site.</span></span>
+<span data-ttu-id="83e99-104">In diesem Thema wird erläutert, wie ein favicon der Site hinzufügt wird.</span><span class="sxs-lookup"><span data-stu-id="83e99-104">This topic explains how to add a favicon to your site.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="176f7-105">Übersicht</span><span class="sxs-lookup"><span data-stu-id="176f7-105">Overview</span></span>
+<span data-ttu-id="83e99-105">Ein favicon ist eine kleine Grafikdatei, die auf einer Webbrowserregisterkarte im Browserverlauf der Adressleiste sowie in Lesezeichen oder in den Favoriten angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="83e99-105">A favicon is a small graphics file that is shown on a web browser tab, in the Address bar, in the browsing history, and in bookmarks or favorites, among other places.</span></span> <span data-ttu-id="83e99-106">Es wird empfohlen, ein favicon dem Standort hinzufügen, da es Ihre Marke darstellt und verstärkt und hilft, den Standort von anderen Websites, die Ihre Kunden suchen, zu unterscheiden.</span><span class="sxs-lookup"><span data-stu-id="83e99-106">We recommend that you add a favicon to your site, because it represents and reinforces your brand, and helps distinguish your site from other sites that your customers visit.</span></span>
 
-<span data-ttu-id="176f7-106">Ein favicon ist eine kleine Grafikdatei, die auf einer Webbrowserregisterkarte im Browserverlauf der Adressleiste sowie in Lesezeichen oder in den Favoriten angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="176f7-106">A favicon is a small graphics file that is shown on a web browser tab, in the Address bar, in the browsing history, and in bookmarks or favorites, among other places.</span></span> <span data-ttu-id="176f7-107">Es wird empfohlen, ein favicon dem Standort hinzufügen, da es Ihre Marke darstellt und verstärkt und hilft, den Standort von anderen Websites, die Ihre Kunden suchen, zu unterscheiden.</span><span class="sxs-lookup"><span data-stu-id="176f7-107">We recommend that you add a favicon to your site, because it represents and reinforces your brand, and helps distinguish your site from other sites that your customers visit.</span></span>
+<span data-ttu-id="83e99-107">Zwar können Sie mehrere favicons von verschiedenen Größen und Dateitypen Ihrem Standort hinzufügen, dieses Thema behandelt lediglich das Hinzufügen von einem einzelnen favicon.</span><span class="sxs-lookup"><span data-stu-id="83e99-107">Although you can add multiple favicons of various sizes and file types to your site, this topic shows how to add a single favicon.</span></span> <span data-ttu-id="83e99-108">Allerdings werden der gleiche Prozess und Ort verwendet, um weitere favicons hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="83e99-108">However, the same process and location are used to add more favicons.</span></span>
 
-<span data-ttu-id="176f7-108">Zwar können Sie mehrere favicons von verschiedenen Größen und Dateitypen Ihrem Standort hinzufügen, dieses Thema behandelt lediglich das Hinzufügen von einem einzelnen favicon.</span><span class="sxs-lookup"><span data-stu-id="176f7-108">Although you can add multiple favicons of various sizes and file types to your site, this topic shows how to add a single favicon.</span></span> <span data-ttu-id="176f7-109">Allerdings werden der gleiche Prozess und Ort verwendet, um weitere favicons hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="176f7-109">However, the same process and location are used to add more favicons.</span></span>
+## <a name="upload-a-favicon-to-your-sites-asset-collection"></a><span data-ttu-id="83e99-109">Laden Sie ein favicon in die Anlagensammlung Ihrer Site hoch</span><span class="sxs-lookup"><span data-stu-id="83e99-109">Upload a favicon to your site's asset collection</span></span>
 
-## <a name="upload-a-favicon-to-your-sites-asset-collection"></a><span data-ttu-id="176f7-110">Laden Sie ein favicon in die Anlagensammlung Ihrer Site hoch</span><span class="sxs-lookup"><span data-stu-id="176f7-110">Upload a favicon to your site's asset collection</span></span>
+<span data-ttu-id="83e99-110">Um ein favicon aus der Anlagensammlung zu entfernen, folgen Sie diesen Schritten.</span><span class="sxs-lookup"><span data-stu-id="83e99-110">To upload a favicon to your site's asset collection, follow these steps.</span></span>
 
-<span data-ttu-id="176f7-111">Um ein favicon aus der Anlagensammlung zu entfernen, folgen Sie diesen Schritten.</span><span class="sxs-lookup"><span data-stu-id="176f7-111">To upload a favicon to your site's asset collection, follow these steps.</span></span>
-
-1. <span data-ttu-id="176f7-112">Wählen Sie im linken Navigationsbereich **Medienbibliothek**.</span><span class="sxs-lookup"><span data-stu-id="176f7-112">In the left navigation pane, select **Media Library**.</span></span>
-1. <span data-ttu-id="176f7-113">Wählen Sie in der Befehlsleiste **Hochladen \> Medienelemente hochladen**.</span><span class="sxs-lookup"><span data-stu-id="176f7-113">On the command bar, select **Upload \> Upload Media Items**.</span></span>
-1. <span data-ttu-id="176f7-114">Navigieren Sie im Fenster „Datei-Explorer“ zu der Favicon-Bilddatei, die Sie hochladen möchten, wählen Sie sie aus und wählen Sie sie **Öffnen** aus.</span><span class="sxs-lookup"><span data-stu-id="176f7-114">In the File Explorer window, browse to the favicon image file that you want to upload, select it, and then select **Open**.</span></span>
-1. <span data-ttu-id="176f7-115">Geben Sie im Dialogfenster **Medienelement hochladen** den gewünschten Titel und den Alt-Text ein.</span><span class="sxs-lookup"><span data-stu-id="176f7-115">In the **Upload Media Item** dialog box, enter the required title and alt text.</span></span>
-1. <span data-ttu-id="176f7-116">Wenn Sie das Bild unmittelbar nach dem Hochladen veröffentlichen möchten, markieren Sie das Kontrollkästchen **Medienelemente nach dem Upload veröffentlichen**.</span><span class="sxs-lookup"><span data-stu-id="176f7-116">If you want to publish the image immediately after upload, select the **Publish media items after upload** check box.</span></span>
+1. <span data-ttu-id="83e99-111">Wählen Sie im linken Navigationsbereich **Medienbibliothek**.</span><span class="sxs-lookup"><span data-stu-id="83e99-111">In the left navigation pane, select **Media Library**.</span></span>
+1. <span data-ttu-id="83e99-112">Wählen Sie in der Befehlsleiste **Hochladen \> Medienelemente hochladen**.</span><span class="sxs-lookup"><span data-stu-id="83e99-112">On the command bar, select **Upload \> Upload Media Items**.</span></span>
+1. <span data-ttu-id="83e99-113">Navigieren Sie im Fenster „Datei-Explorer“ zu der Favicon-Bilddatei, die Sie hochladen möchten, wählen Sie sie aus und wählen Sie sie **Öffnen** aus.</span><span class="sxs-lookup"><span data-stu-id="83e99-113">In the File Explorer window, browse to the favicon image file that you want to upload, select it, and then select **Open**.</span></span>
+1. <span data-ttu-id="83e99-114">Geben Sie im Dialogfenster **Medienelement hochladen** den gewünschten Titel und den Alt-Text ein.</span><span class="sxs-lookup"><span data-stu-id="83e99-114">In the **Upload Media Item** dialog box, enter the required title and alt text.</span></span>
+1. <span data-ttu-id="83e99-115">Wenn Sie das Bild unmittelbar nach dem Hochladen veröffentlichen möchten, markieren Sie das Kontrollkästchen **Medienelemente nach dem Upload veröffentlichen**.</span><span class="sxs-lookup"><span data-stu-id="83e99-115">If you want to publish the image immediately after upload, select the **Publish media items after upload** check box.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="176f7-117">Wenn Sie das Kontrollkästchen **Medienelemente nach dem Hochladen veröffentlichen** aktivieren, müssen Sie auf die Seite **Medienelemente** zurückkehren und das Favicon später manuell veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="176f7-117">If you don't select the **Publish media items after upload** check box, you must return to **Media items** page and manually publish the favicon later.</span></span>
+    > <span data-ttu-id="83e99-116">Wenn Sie das Kontrollkästchen **Medienelemente nach dem Hochladen veröffentlichen** aktivieren, müssen Sie auf die Seite **Medienelemente** zurückkehren und das Favicon später manuell veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="83e99-116">If you don't select the **Publish media items after upload** check box, you must return to **Media items** page and manually publish the favicon later.</span></span>
 
-1. <span data-ttu-id="176f7-118">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="176f7-118">Select **OK**.</span></span>
-1. <span data-ttu-id="176f7-119">Im Eigenschaftenbereich auf der rechten Seite, kopieren Sie die öffentliche URL des favicon.</span><span class="sxs-lookup"><span data-stu-id="176f7-119">In the property pane on the right, copy the public URL of the favicon.</span></span> <span data-ttu-id="176f7-120">Sie werden diese URL später verwenden.</span><span class="sxs-lookup"><span data-stu-id="176f7-120">You will use this URL later.</span></span>
+1. <span data-ttu-id="83e99-117">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="83e99-117">Select **OK**.</span></span>
+1. <span data-ttu-id="83e99-118">Im Eigenschaftenbereich auf der rechten Seite, kopieren Sie die öffentliche URL des favicon.</span><span class="sxs-lookup"><span data-stu-id="83e99-118">In the property pane on the right, copy the public URL of the favicon.</span></span> <span data-ttu-id="83e99-119">Sie werden diese URL später verwenden.</span><span class="sxs-lookup"><span data-stu-id="83e99-119">You will use this URL later.</span></span>
 
-## <a name="create-the-html-for-your-favicon"></a><span data-ttu-id="176f7-121">Erstellen Sie das HTML für Ihr Favicon</span><span class="sxs-lookup"><span data-stu-id="176f7-121">Create the HTML for your favicon</span></span>
+## <a name="create-the-html-for-your-favicon"></a><span data-ttu-id="83e99-120">Erstellen Sie das HTML für Ihr Favicon</span><span class="sxs-lookup"><span data-stu-id="83e99-120">Create the HTML for your favicon</span></span>
 
-<span data-ttu-id="176f7-122">Um das HTML für das Favicon zu erstellen, verwenden Sie die folgende HTML-Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="176f7-122">To create the HTML for the favicon, use the following HTML string.</span></span> <span data-ttu-id="176f7-123">Für das Attribut **href** ersetzen Sie **Öffentliche\_URL\_für\_Ihr\_Favicon** durch die öffentliche URL, die Sie zuvor kopierten.</span><span class="sxs-lookup"><span data-stu-id="176f7-123">For the **href** attribute, replace **Public\_URL\_for\_your\_favicon** with the public URL that you copied earlier.</span></span>
+<span data-ttu-id="83e99-121">Um das HTML für das Favicon zu erstellen, verwenden Sie die folgende HTML-Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="83e99-121">To create the HTML for the favicon, use the following HTML string.</span></span> <span data-ttu-id="83e99-122">Für das Attribut **href** ersetzen Sie **Öffentliche\_URL\_für\_Ihr\_Favicon** durch die öffentliche URL, die Sie zuvor kopierten.</span><span class="sxs-lookup"><span data-stu-id="83e99-122">For the **href** attribute, replace **Public\_URL\_for\_your\_favicon** with the public URL that you copied earlier.</span></span>
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a><span data-ttu-id="176f7-124">Erstellen Sie ein Fragment, das ein Metatag für Ihr Favicon enthält</span><span class="sxs-lookup"><span data-stu-id="176f7-124">Create a fragment that contains a metatag for your favicon</span></span>
+## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a><span data-ttu-id="83e99-123">Erstellen Sie ein Fragment, das ein Metatag für Ihr Favicon enthält</span><span class="sxs-lookup"><span data-stu-id="83e99-123">Create a fragment that contains a metatag for your favicon</span></span>
 
-<span data-ttu-id="176f7-125">Um ein Fragment zu erstellen, das ein Metatag für Ihr Favicon enthält, folgen Sie diesen Schritten.</span><span class="sxs-lookup"><span data-stu-id="176f7-125">To create a fragment that contains a metatag for your favicon, follow these steps.</span></span>
+<span data-ttu-id="83e99-124">Um ein Fragment zu erstellen, das ein Metatag für Ihr Favicon enthält, folgen Sie diesen Schritten.</span><span class="sxs-lookup"><span data-stu-id="83e99-124">To create a fragment that contains a metatag for your favicon, follow these steps.</span></span>
 
-1. <span data-ttu-id="176f7-126">Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="176f7-126">Go to **Fragments**, and select **New**.</span></span>
-1. <span data-ttu-id="176f7-127">Wählen Sie im Dialogfeld **Neues Fragment** die Option **Metatags** als das Modul aus, auf dem das Fragment basiert.</span><span class="sxs-lookup"><span data-stu-id="176f7-127">In the **New fragment** dialog box, select **Metatags** as the module that the fragment is based on.</span></span>
-1. <span data-ttu-id="176f7-128">Geben Sie einen Namen für das Fragment ein, und wählen Sie dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="176f7-128">Enter a name for the fragment, and then select **OK**.</span></span>
-1. <span data-ttu-id="176f7-129">Wählen Sie in der Fragmenthierarchiestruktur das untergeordnete Element **Standard-Metatags** aus.</span><span class="sxs-lookup"><span data-stu-id="176f7-129">In the fragment hierarchy tree, select the **Default metatags** child.</span></span>
-1. <span data-ttu-id="176f7-130">Im rechten Bereich unter **Metatags** wählen Sie **Hinzufügen** aus, und geben Sie dann die HTML-Zeichenfolge ein, die Sie zuvor für das Favicon erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="176f7-130">In the right pane, under **Meta Tags**, select **Add**, and then enter the HTML string that you created earlier for the favicon.</span></span> 
-1. <span data-ttu-id="176f7-131">Wählen Sie **Bearbeiten beenden** aus, und wählen Sie dann **Veröffentlichen** aus, um das Fragment zu veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="176f7-131">Select **Finish editing**, and then select **Publish** to publish the fragment.</span></span>
+1. <span data-ttu-id="83e99-125">Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="83e99-125">Go to **Fragments**, and select **New**.</span></span>
+1. <span data-ttu-id="83e99-126">Wählen Sie im Dialogfeld **Neues Fragment** die Option **Metatags** als das Modul aus, auf dem das Fragment basiert.</span><span class="sxs-lookup"><span data-stu-id="83e99-126">In the **New fragment** dialog box, select **Metatags** as the module that the fragment is based on.</span></span>
+1. <span data-ttu-id="83e99-127">Geben Sie einen Namen für das Fragment ein, und wählen Sie dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="83e99-127">Enter a name for the fragment, and then select **OK**.</span></span>
+1. <span data-ttu-id="83e99-128">Wählen Sie in der Fragmenthierarchiestruktur das untergeordnete Element **Standard-Metatags** aus.</span><span class="sxs-lookup"><span data-stu-id="83e99-128">In the fragment hierarchy tree, select the **Default metatags** child.</span></span>
+1. <span data-ttu-id="83e99-129">Im rechten Bereich unter **Metatags** wählen Sie **Hinzufügen** aus, und geben Sie dann die HTML-Zeichenfolge ein, die Sie zuvor für das Favicon erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="83e99-129">In the right pane, under **Meta Tags**, select **Add**, and then enter the HTML string that you created earlier for the favicon.</span></span> 
+1. <span data-ttu-id="83e99-130">Wählen Sie **Bearbeiten beenden** aus, und wählen Sie dann **Veröffentlichen** aus, um das Fragment zu veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="83e99-130">Select **Finish editing**, and then select **Publish** to publish the fragment.</span></span>
 
-## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a><span data-ttu-id="176f7-132">Fügen Sie das Metatag-Fragment zum HTML-Kopfbereich Ihrer Seiten hinzu</span><span class="sxs-lookup"><span data-stu-id="176f7-132">Add the metatag fragment to the HTML head section of your pages</span></span>
+## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a><span data-ttu-id="83e99-131">Fügen Sie das Metatag-Fragment zum HTML-Kopfbereich Ihrer Seiten hinzu</span><span class="sxs-lookup"><span data-stu-id="83e99-131">Add the metatag fragment to the HTML head section of your pages</span></span>
 
-<span data-ttu-id="176f7-133">Um das Metatag-Fragment zum HTML-**Kopf**-Bereich Ihrer Seiten hinzuzufügen, folgen Sie diesen Schritten.</span><span class="sxs-lookup"><span data-stu-id="176f7-133">To add the metatag fragment to the HTML **head** section of your pages, follow these steps.</span></span>
+<span data-ttu-id="83e99-132">Um das Metatag-Fragment zum HTML-**Kopf**-Bereich Ihrer Seiten hinzuzufügen, folgen Sie diesen Schritten.</span><span class="sxs-lookup"><span data-stu-id="83e99-132">To add the metatag fragment to the HTML **head** section of your pages, follow these steps.</span></span>
 
-1. <span data-ttu-id="176f7-134">Gehen Sie zu **Vorlagen**, öffnen Sie die Vorlage für die Seiten, denen Sie Ihr Favicon hinzufügen möchten, und wählen Sie dann **Bearbeiten** aus.</span><span class="sxs-lookup"><span data-stu-id="176f7-134">Go to **Templates**, open the template for the pages that you want to add your favicon to, and then select **Edit**.</span></span>
-1. <span data-ttu-id="176f7-135">Wählen Sie in der Vorlagenhierarchiestruktur die Auslassungspunkte (**...**)-Schaltfläche rechts neben dem **HTML-Kopf**-Container aus, und wählen Sie dann **Fragment hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="176f7-135">In the template hierarchy tree, select the ellipsis (**...**) button to the right of the **HTML head** container, and then select **Add fragment**.</span></span>
-1. <span data-ttu-id="176f7-136">Wählen Sie im Dialogfeld **Fragment auswählen** das Metatag-Fragment aus, das Sie zuvor erstellt haben, und wählen Sie dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="176f7-136">In the **Select fragment** dialog box, select the metatag fragment that you created earlier, and then select **OK**.</span></span>
-1. <span data-ttu-id="176f7-137">Wählen Sie **Bearbeiten beenden** aus, und wählen Sie dann **Veröffentlichen** aus, um die Vorlage zu veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="176f7-137">Select **Finish editing**, and then select **Publish** to publish the template.</span></span>
+1. <span data-ttu-id="83e99-133">Gehen Sie zu **Vorlagen**, öffnen Sie die Vorlage für die Seiten, denen Sie Ihr Favicon hinzufügen möchten, und wählen Sie dann **Bearbeiten** aus.</span><span class="sxs-lookup"><span data-stu-id="83e99-133">Go to **Templates**, open the template for the pages that you want to add your favicon to, and then select **Edit**.</span></span>
+1. <span data-ttu-id="83e99-134">Wählen Sie in der Vorlagenhierarchiestruktur die Auslassungspunkte (**...**)-Schaltfläche rechts neben dem **HTML-Kopf**-Container aus, und wählen Sie dann **Fragment hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="83e99-134">In the template hierarchy tree, select the ellipsis (**...**) button to the right of the **HTML head** container, and then select **Add fragment**.</span></span>
+1. <span data-ttu-id="83e99-135">Wählen Sie im Dialogfeld **Fragment auswählen** das Metatag-Fragment aus, das Sie zuvor erstellt haben, und wählen Sie dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="83e99-135">In the **Select fragment** dialog box, select the metatag fragment that you created earlier, and then select **OK**.</span></span>
+1. <span data-ttu-id="83e99-136">Wählen Sie **Bearbeiten beenden** aus, und wählen Sie dann **Veröffentlichen** aus, um die Vorlage zu veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="83e99-136">Select **Finish editing**, and then select **Publish** to publish the template.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="176f7-138">Wenn Ihre Site mehr als eine Vorlage verwendet, müssen Sie allen das Metatags-Fragment hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="176f7-138">If your site uses more than one template, you must add the metatags fragment to all of them.</span></span>
+> <span data-ttu-id="83e99-137">Wenn Ihre Site mehr als eine Vorlage verwendet, müssen Sie allen das Metatags-Fragment hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="83e99-137">If your site uses more than one template, you must add the metatags fragment to all of them.</span></span>
 
-<span data-ttu-id="176f7-139">Wenn Sie Seiten in der Vorschau anzeigen, die auf der Vorlage basieren, der Sie das Metatags-Fragment hinzugefügt haben, sollten Sie jetzt das Favicon in der Browser-Registerkarte sehen.</span><span class="sxs-lookup"><span data-stu-id="176f7-139">When you preview pages that are based on the template that you added the metatags fragment to, you should now see the favicon on the browser tab.</span></span>
+<span data-ttu-id="83e99-138">Wenn Sie Seiten in der Vorschau anzeigen, die auf der Vorlage basieren, der Sie das Metatags-Fragment hinzugefügt haben, sollten Sie jetzt das Favicon in der Browser-Registerkarte sehen.</span><span class="sxs-lookup"><span data-stu-id="83e99-138">When you preview pages that are based on the template that you added the metatags fragment to, you should now see the favicon on the browser tab.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="176f7-140">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="176f7-140">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="83e99-139">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="83e99-139">Additional resources</span></span>
 
-[<span data-ttu-id="176f7-141">Hinzufügen eines Logos</span><span class="sxs-lookup"><span data-stu-id="176f7-141">Add a logo</span></span>](add-logo.md)
+[<span data-ttu-id="83e99-140">Hinzufügen eines Logos</span><span class="sxs-lookup"><span data-stu-id="83e99-140">Add a logo</span></span>](add-logo.md)
 
-[<span data-ttu-id="176f7-142">Auswählen eines Sitedesigns</span><span class="sxs-lookup"><span data-stu-id="176f7-142">Select a site theme</span></span>](select-site-theme.md)
+[<span data-ttu-id="83e99-141">Auswählen eines Sitedesigns</span><span class="sxs-lookup"><span data-stu-id="83e99-141">Select a site theme</span></span>](select-site-theme.md)
 
-[<span data-ttu-id="176f7-143">Arbeiten mit CSS-Überschreibungsdateien</span><span class="sxs-lookup"><span data-stu-id="176f7-143">Work with CSS override files</span></span>](css-override-files.md)
+[<span data-ttu-id="83e99-142">Arbeiten mit CSS-Überschreibungsdateien</span><span class="sxs-lookup"><span data-stu-id="83e99-142">Work with CSS override files</span></span>](css-override-files.md)
 
-[<span data-ttu-id="176f7-144">Hinzufügen einer Begrüßungsnachricht</span><span class="sxs-lookup"><span data-stu-id="176f7-144">Add a welcome message</span></span>](add-welcome-message.md)
+[<span data-ttu-id="83e99-143">Hinzufügen einer Begrüßungsnachricht</span><span class="sxs-lookup"><span data-stu-id="83e99-143">Add a welcome message</span></span>](add-welcome-message.md)
 
-[<span data-ttu-id="176f7-145">Hinzufügen eines Urheberrechtshinweises</span><span class="sxs-lookup"><span data-stu-id="176f7-145">Add a copyright notice</span></span>](add-copyright-notice.md)
+[<span data-ttu-id="83e99-144">Hinzufügen eines Urheberrechtshinweises</span><span class="sxs-lookup"><span data-stu-id="83e99-144">Add a copyright notice</span></span>](add-copyright-notice.md)
 
-[<span data-ttu-id="176f7-146">Hinzufügen von Sprachen zu Ihrer Website</span><span class="sxs-lookup"><span data-stu-id="176f7-146">Add languages to your site</span></span>](add-languages-to-site.md)
+[<span data-ttu-id="83e99-145">Hinzufügen von Sprachen zu Ihrer Website</span><span class="sxs-lookup"><span data-stu-id="83e99-145">Add languages to your site</span></span>](add-languages-to-site.md)
 
-[<span data-ttu-id="176f7-147">Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie</span><span class="sxs-lookup"><span data-stu-id="176f7-147">Add script code to site pages to support telemetry</span></span>](add-telemetry.md)
+[<span data-ttu-id="83e99-146">Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie</span><span class="sxs-lookup"><span data-stu-id="83e99-146">Add script code to site pages to support telemetry</span></span>](add-telemetry.md)
 
 
 
