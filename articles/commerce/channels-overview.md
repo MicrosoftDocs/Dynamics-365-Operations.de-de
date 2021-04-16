@@ -2,11 +2,9 @@
 title: Übersicht über Kanäle
 description: Dieses Thema bietet einen Überblick über Kanäle in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,51 +14,51 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8ac188832bdaeba430eed7f08e91a9c2214a0e15
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7f5d527dd14d24c06aef874de0088bb07c49849b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219100"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800542"
 ---
-# <a name="channels-overview"></a><span data-ttu-id="7a648-103">Übersicht über Kanäle</span><span class="sxs-lookup"><span data-stu-id="7a648-103">Channels overview</span></span>
+# <a name="channels-overview"></a><span data-ttu-id="52ccf-103">Übersicht über Kanäle</span><span class="sxs-lookup"><span data-stu-id="52ccf-103">Channels overview</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="7a648-104">Dieses Thema bietet einen Überblick über Kanäle in Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="7a648-104">This topic presents an overview of channels in Microsoft Dynamics 365 Commerce.</span></span> <span data-ttu-id="7a648-105">Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie die einzelnen Kanäle einrichten.</span><span class="sxs-lookup"><span data-stu-id="7a648-105">It includes information about the tasks that you must complete both before and after you set up each channel.</span></span>
+<span data-ttu-id="52ccf-104">Dieses Thema bietet einen Überblick über Kanäle in Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="52ccf-104">This topic presents an overview of channels in Microsoft Dynamics 365 Commerce.</span></span> <span data-ttu-id="52ccf-105">Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie die einzelnen Kanäle einrichten.</span><span class="sxs-lookup"><span data-stu-id="52ccf-105">It includes information about the tasks that you must complete both before and after you set up each channel.</span></span>
 
-## <a name="types-of-channels"></a><span data-ttu-id="7a648-106">Kanaltypen</span><span class="sxs-lookup"><span data-stu-id="7a648-106">Types of Channels</span></span>
+## <a name="types-of-channels"></a><span data-ttu-id="52ccf-106">Kanaltypen</span><span class="sxs-lookup"><span data-stu-id="52ccf-106">Types of Channels</span></span>
 
-<span data-ttu-id="7a648-107">Dynamics 365 Commerceunterstützt drei verschiedene Kanaltypen: Einzelhandel, Callcenter und Onlinekanäle.</span><span class="sxs-lookup"><span data-stu-id="7a648-107">Dynamics 365 Commerce supports three different channel types: retail, call center, and online channels.</span></span>
+<span data-ttu-id="52ccf-107">Dynamics 365 Commerceunterstützt drei verschiedene Kanaltypen: Einzelhandel, Callcenter und Onlinekanäle.</span><span class="sxs-lookup"><span data-stu-id="52ccf-107">Dynamics 365 Commerce supports three different channel types: retail, call center, and online channels.</span></span>
 
-### <a name="retail-channels"></a><span data-ttu-id="7a648-108">Einzelhandelskanäle</span><span class="sxs-lookup"><span data-stu-id="7a648-108">Retail channels</span></span>
+### <a name="retail-channels"></a><span data-ttu-id="52ccf-108">Einzelhandelskanäle</span><span class="sxs-lookup"><span data-stu-id="52ccf-108">Retail channels</span></span>
 
-<span data-ttu-id="7a648-109">Retail Channel repräsentieren herkömmliche physische Shops.</span><span class="sxs-lookup"><span data-stu-id="7a648-109">Retail channels represent standard brick-and-mortar stores.</span></span> <span data-ttu-id="7a648-110">Jeder Shop kann seine eigenen POS-Register, Ein- und Ausgabenkonten und Mitarbeiter einrichten.</span><span class="sxs-lookup"><span data-stu-id="7a648-110">Each store can have its own point of sale (POS) registers, income and expense accounts, and staff.</span></span> 
+<span data-ttu-id="52ccf-109">Retail Channel repräsentieren herkömmliche physische Shops.</span><span class="sxs-lookup"><span data-stu-id="52ccf-109">Retail channels represent standard brick-and-mortar stores.</span></span> <span data-ttu-id="52ccf-110">Jeder Shop kann seine eigenen POS-Register, Ein- und Ausgabenkonten und Mitarbeiter einrichten.</span><span class="sxs-lookup"><span data-stu-id="52ccf-110">Each store can have its own point of sale (POS) registers, income and expense accounts, and staff.</span></span> 
 
-### <a name="call-center-channels"></a><span data-ttu-id="7a648-111">Callcenterkanäle</span><span class="sxs-lookup"><span data-stu-id="7a648-111">Call center channels</span></span>
+### <a name="call-center-channels"></a><span data-ttu-id="52ccf-111">Callcenterkanäle</span><span class="sxs-lookup"><span data-stu-id="52ccf-111">Call center channels</span></span>
 
-<span data-ttu-id="7a648-112">Callcenterkanäle stehen für die Callcenter-Bestellung und Kundenverwaltung.</span><span class="sxs-lookup"><span data-stu-id="7a648-112">Call center channels represent call center order and customer management.</span></span>
+<span data-ttu-id="52ccf-112">Callcenterkanäle stehen für die Callcenter-Bestellung und Kundenverwaltung.</span><span class="sxs-lookup"><span data-stu-id="52ccf-112">Call center channels represent call center order and customer management.</span></span>
 
-### <a name="online-channels"></a><span data-ttu-id="7a648-113">Onlinekanäle</span><span class="sxs-lookup"><span data-stu-id="7a648-113">Online channels</span></span>
+### <a name="online-channels"></a><span data-ttu-id="52ccf-113">Onlinekanäle</span><span class="sxs-lookup"><span data-stu-id="52ccf-113">Online channels</span></span>
 
-<span data-ttu-id="7a648-114">Onlinekanäle repräsentieren Online-E-Commerce-Schaufenster.</span><span class="sxs-lookup"><span data-stu-id="7a648-114">Online channels represent online e-Commerce storefronts.</span></span> <span data-ttu-id="7a648-115">Sobald ein Onlinekanal erstellt wurde, muss eine Site mit dem Microsoft Dynamics 365 Commerce Site Builder-Tool oder einer anderen E-Commerce-Lösung eines Drittanbieters erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="7a648-115">Once an online channel is created, a site must be created using the Microsoft Dynamics 365 Commerce Site Builder tool or other third-party e-Commerce solution.</span></span>
+<span data-ttu-id="52ccf-114">Onlinekanäle repräsentieren Online-E-Commerce-Schaufenster.</span><span class="sxs-lookup"><span data-stu-id="52ccf-114">Online channels represent online e-Commerce storefronts.</span></span> <span data-ttu-id="52ccf-115">Sobald ein Onlinekanal erstellt wurde, muss eine Site mit dem Microsoft Dynamics 365 Commerce Site Builder-Tool oder einer anderen E-Commerce-Lösung eines Drittanbieters erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="52ccf-115">Once an online channel is created, a site must be created using the Microsoft Dynamics 365 Commerce Site Builder tool or other third-party e-Commerce solution.</span></span>
 
-## <a name="channel-setup-basics"></a><span data-ttu-id="7a648-116">Grundlagen der Kanaleinrichtung</span><span class="sxs-lookup"><span data-stu-id="7a648-116">Channel setup basics</span></span>
+## <a name="channel-setup-basics"></a><span data-ttu-id="52ccf-116">Grundlagen der Kanaleinrichtung</span><span class="sxs-lookup"><span data-stu-id="52ccf-116">Channel setup basics</span></span>
 
-<span data-ttu-id="7a648-117">Die Kanaleinrichtung wird im Commerce-Tool durchgeführt.</span><span class="sxs-lookup"><span data-stu-id="7a648-117">Channel set up is performed in the Commerce tool.</span></span> <span data-ttu-id="7a648-118">Jeder Kanal kann über eigene Zahlungsmethoden, Preisgruppen, Produkthierarchien, Sortimente und Produktgruppen verfügen.</span><span class="sxs-lookup"><span data-stu-id="7a648-118">Each channel can have its own payment methods, price groups, product hierarchies, assortments, and set of products.</span></span> <span data-ttu-id="7a648-119">Nachdem Sie einen Kanal erstellt haben, weisen Sie die Produkte zu, die Sie führen und verkaufen möchten.</span><span class="sxs-lookup"><span data-stu-id="7a648-119">After you create a channel, you assign the products that you want it to carry and sell.</span></span> <span data-ttu-id="7a648-120">Jeder Kanaltyp verfügt über eine Reihe von Funktionen, die möglicherweise konfiguriert werden müssen.</span><span class="sxs-lookup"><span data-stu-id="7a648-120">Each channel type has a unique set of features that may need to be configured.</span></span> <span data-ttu-id="7a648-121">Ein Retail Channel benötigt beispielsweise zugewiesene Mitarbeiter, Register und Kunden.</span><span class="sxs-lookup"><span data-stu-id="7a648-121">For example, a retail channel needs assigned employees, registers, and customers.</span></span> <span data-ttu-id="7a648-122">Sobald ein neuer Kanal erstellt wurde, muss er einer Organisationshierarchie zugewiesen werden.</span><span class="sxs-lookup"><span data-stu-id="7a648-122">Once a new channel is created, it needs to be assigned to an organization hierarchy.</span></span>
+<span data-ttu-id="52ccf-117">Die Kanaleinrichtung wird im Commerce-Tool durchgeführt.</span><span class="sxs-lookup"><span data-stu-id="52ccf-117">Channel set up is performed in the Commerce tool.</span></span> <span data-ttu-id="52ccf-118">Jeder Kanal kann über eigene Zahlungsmethoden, Preisgruppen, Produkthierarchien, Sortimente und Produktgruppen verfügen.</span><span class="sxs-lookup"><span data-stu-id="52ccf-118">Each channel can have its own payment methods, price groups, product hierarchies, assortments, and set of products.</span></span> <span data-ttu-id="52ccf-119">Nachdem Sie einen Kanal erstellt haben, weisen Sie die Produkte zu, die Sie führen und verkaufen möchten.</span><span class="sxs-lookup"><span data-stu-id="52ccf-119">After you create a channel, you assign the products that you want it to carry and sell.</span></span> <span data-ttu-id="52ccf-120">Jeder Kanaltyp verfügt über eine Reihe von Funktionen, die möglicherweise konfiguriert werden müssen.</span><span class="sxs-lookup"><span data-stu-id="52ccf-120">Each channel type has a unique set of features that may need to be configured.</span></span> <span data-ttu-id="52ccf-121">Ein Retail Channel benötigt beispielsweise zugewiesene Mitarbeiter, Register und Kunden.</span><span class="sxs-lookup"><span data-stu-id="52ccf-121">For example, a retail channel needs assigned employees, registers, and customers.</span></span> <span data-ttu-id="52ccf-122">Sobald ein neuer Kanal erstellt wurde, muss er einer Organisationshierarchie zugewiesen werden.</span><span class="sxs-lookup"><span data-stu-id="52ccf-122">Once a new channel is created, it needs to be assigned to an organization hierarchy.</span></span>
 
-## <a name="channel-setup-prerequisites"></a><span data-ttu-id="7a648-123">Voraussetzungen der Kanaleinrichtung</span><span class="sxs-lookup"><span data-stu-id="7a648-123">Channel setup prerequisites</span></span>
+## <a name="channel-setup-prerequisites"></a><span data-ttu-id="52ccf-123">Voraussetzungen der Kanaleinrichtung</span><span class="sxs-lookup"><span data-stu-id="52ccf-123">Channel setup prerequisites</span></span>
 
-<span data-ttu-id="7a648-124">Bevor Sie einen Kanal einrichten können, müssen Sie einige erforderliche Aufgaben basierend auf dem Kanaltyp ausführen.</span><span class="sxs-lookup"><span data-stu-id="7a648-124">Before you can set up a channel, you must complete some prerequisite tasks based on the channel type.</span></span> <span data-ttu-id="7a648-125">Weitere Informationen finden Sie unter [Voraussetzungen für die Kanaleinrichtung ](channels-prerequisites.md).</span><span class="sxs-lookup"><span data-stu-id="7a648-125">For more information, see [Channel setup prerequisites](channels-prerequisites.md).</span></span>
+<span data-ttu-id="52ccf-124">Bevor Sie einen Kanal einrichten können, müssen Sie einige erforderliche Aufgaben basierend auf dem Kanaltyp ausführen.</span><span class="sxs-lookup"><span data-stu-id="52ccf-124">Before you can set up a channel, you must complete some prerequisite tasks based on the channel type.</span></span> <span data-ttu-id="52ccf-125">Weitere Informationen finden Sie unter [Voraussetzungen für die Kanaleinrichtung ](channels-prerequisites.md).</span><span class="sxs-lookup"><span data-stu-id="52ccf-125">For more information, see [Channel setup prerequisites](channels-prerequisites.md).</span></span>
 
-## <a name="set-up-a-channel"></a><span data-ttu-id="7a648-126">Einen Kanal einrichten</span><span class="sxs-lookup"><span data-stu-id="7a648-126">Set up a channel</span></span>
+## <a name="set-up-a-channel"></a><span data-ttu-id="52ccf-126">Einen Kanal einrichten</span><span class="sxs-lookup"><span data-stu-id="52ccf-126">Set up a channel</span></span>
 
-<span data-ttu-id="7a648-127">Verwenden Sie nach Abschluss der erforderlichen Aufgaben die folgenden Links, um weitere Anweisungen zur Einrichtung zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="7a648-127">After you complete the prerequisite tasks, for further setup instructions, use the following links.</span></span>
+<span data-ttu-id="52ccf-127">Verwenden Sie nach Abschluss der erforderlichen Aufgaben die folgenden Links, um weitere Anweisungen zur Einrichtung zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="52ccf-127">After you complete the prerequisite tasks, for further setup instructions, use the following links.</span></span>
 
-- [<span data-ttu-id="7a648-128">Einen Retail Channel einrichten</span><span class="sxs-lookup"><span data-stu-id="7a648-128">Set up a retail channel</span></span>](channel-setup-retail.md)
-- [<span data-ttu-id="7a648-129">Einen Callcenterkanal einrichten</span><span class="sxs-lookup"><span data-stu-id="7a648-129">Set up a call center channel</span></span>](channel-setup-callcenter.md)
-- [<span data-ttu-id="7a648-130">Einen Onlinekanal einrichten</span><span class="sxs-lookup"><span data-stu-id="7a648-130">Set up an online channel</span></span>](channel-setup-online.md)
+- [<span data-ttu-id="52ccf-128">Einen Retail Channel einrichten</span><span class="sxs-lookup"><span data-stu-id="52ccf-128">Set up a retail channel</span></span>](channel-setup-retail.md)
+- [<span data-ttu-id="52ccf-129">Einen Callcenterkanal einrichten</span><span class="sxs-lookup"><span data-stu-id="52ccf-129">Set up a call center channel</span></span>](channel-setup-callcenter.md)
+- [<span data-ttu-id="52ccf-130">Einen Onlinekanal einrichten</span><span class="sxs-lookup"><span data-stu-id="52ccf-130">Set up an online channel</span></span>](channel-setup-online.md)
 
 <!--
 ## Post-channel configuration
@@ -77,17 +75,17 @@ After you create a channel, you may need to complete some of the below tasks:
 - Run the jobs to send the store data to Retail POS. (LINK TBD)
 -->
 
-## <a name="additional-resources"></a><span data-ttu-id="7a648-131">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="7a648-131">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="52ccf-131">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="52ccf-131">Additional resources</span></span>
 
-[<span data-ttu-id="7a648-132">Voraussetzungen der Kanaleinrichtung</span><span class="sxs-lookup"><span data-stu-id="7a648-132">Channel setup prerequisites</span></span>](channels-prerequisites.md)
+[<span data-ttu-id="52ccf-132">Voraussetzungen der Kanaleinrichtung</span><span class="sxs-lookup"><span data-stu-id="52ccf-132">Channel setup prerequisites</span></span>](channels-prerequisites.md)
 
-[<span data-ttu-id="7a648-133">Einen Retail Channel einrichten</span><span class="sxs-lookup"><span data-stu-id="7a648-133">Set up a retail channel</span></span>](channel-setup-retail.md)
+[<span data-ttu-id="52ccf-133">Einen Retail Channel einrichten</span><span class="sxs-lookup"><span data-stu-id="52ccf-133">Set up a retail channel</span></span>](channel-setup-retail.md)
     
-[<span data-ttu-id="7a648-134">Einen Onlinekanal einrichten</span><span class="sxs-lookup"><span data-stu-id="7a648-134">Set up an online channel</span></span>](channel-setup-online.md)
+[<span data-ttu-id="52ccf-134">Einen Onlinekanal einrichten</span><span class="sxs-lookup"><span data-stu-id="52ccf-134">Set up an online channel</span></span>](channel-setup-online.md)
 
-[<span data-ttu-id="7a648-135">Einen Callcenterkanal einrichten</span><span class="sxs-lookup"><span data-stu-id="7a648-135">Set up a call center channel</span></span>](channel-setup-callcenter.md)
+[<span data-ttu-id="52ccf-135">Einen Callcenterkanal einrichten</span><span class="sxs-lookup"><span data-stu-id="52ccf-135">Set up a call center channel</span></span>](channel-setup-callcenter.md)
 
-[<span data-ttu-id="7a648-136">Organisationshierarchien einrichten</span><span class="sxs-lookup"><span data-stu-id="7a648-136">Set up organization hierarchies</span></span>](channels-org-hierarchies.md)
+[<span data-ttu-id="52ccf-136">Organisationshierarchien einrichten</span><span class="sxs-lookup"><span data-stu-id="52ccf-136">Set up organization hierarchies</span></span>](channels-org-hierarchies.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
