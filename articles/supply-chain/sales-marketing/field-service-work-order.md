@@ -2,11 +2,9 @@
 title: Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management synchronisieren
 description: Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management zu synchronisieren.
 author: ChristianRytt
-manager: tfehr
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3453d0f6e6217ab63047410c459dc65d8cc4df5c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 15a61b1fe4a267552708fa02fe482f7702668e06
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235435"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824965"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management synchronisieren
 

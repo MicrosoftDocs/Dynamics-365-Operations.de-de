@@ -2,10 +2,8 @@
 title: Serienetiketten neu drucken und stornieren
 description: In diesem Thema wird erläutert, wie vorhandene Serienetiketten storniert und neu gedruckt werden.
 author: GarmMSFT
-manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: article
-ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3d67052d47cf23acbb51354773fbd306545bbfa7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0b309a0e40541463db4d71fa9e7cac5db2d799be
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228368"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817364"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Serienetiketten neu drucken und stornieren
 
@@ -218,5 +216,8 @@ Arbeitsausnahmen steuern das Verhalten der kurzen Entnahmen. Gehen Sie zum Einri
 1. Wählen Sie den Arbeitsausnahmecode aus, den Sie für dieses Szenario erstellt haben.
 1. Wenn Sie die richtige Ausnahme ausgewählt haben, sollte das Kontrollkästchen **Stornieren und erneut drucken** verfügbar sein. Aktivieren Sie dieses Kontrollkästchen und bestätigen Sie. Nach Bestätigung wird die Etikettenrollensequenz durch das Feld **Etiketten-Build-ID** basierend auf der geänderten Arbeitszeilenmenge neu berechnet. Es wird dann auf dem angegebenen Drucker nachgedruckt.
 
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+- [Zyklusbeschriftungsdruck](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
