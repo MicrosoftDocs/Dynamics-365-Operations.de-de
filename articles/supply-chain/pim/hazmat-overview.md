@@ -2,11 +2,9 @@
 title: Gefahrstoffübersicht
 description: Dieses Thema bietet einen Überblick über Funktionen, die sich auf die Handhabung und Dokumentation gefährlicher Materialien während der Produktinformationsverwaltung und der Lagerverwaltung beziehen.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 4ff997214f80d97f6e558d32fbf66663cbc84143
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 15edf61cba03a57b9b4d2c939228fd064b797942
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231887"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829377"
 ---
 # <a name="hazardous-materials-overview"></a>Gefahrstoffübersicht
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Um die Liefer- und Transportvorschriften einzuhalten, müssen Organisationen, die Materialien liefern, die als gefährliche Güter eingestuft sind, zusätzliche Papiere ihren Lieferungen beifügen. Mit der Gefahrstofffunktion können Kunden Informationen speichern, die sich auf zugelassene Artikel beziehen. Diese Informationen können dann zur Vorbereitung der Versanddokumentation verwendet werden. Eine Organisation, die gefährliche Güter versendet, muss über eigene Prozesse und Prozeduren zur Verwaltung des Lieferprozesses verfügen. Microsoft Dynamics 365 Supply Chain Management ist nur ein Tool, mit dem Sie die erforderlichen Dokumente leichter erstellen können.
 
