@@ -2,11 +2,9 @@
 title: Experimentieren in Dynamics 365 Commerce
 description: Das Experimentieren ermöglicht das Erstellen, Bearbeiten und Verwalten von Seitenlayouts und Inhaltsbehandlungen im Site Builder. Die Unterstützung von End-to-End-Experimenten ist für E-Commerce-Seiten und -Entitäten innerhalb einer Seite aktiviert.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d836f0e431c444c07186da123579f5cce9895be5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7e415bc0a4ced11c5bb8393fe5dfe03a5f7cdd6c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238605"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798986"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Experimentieren in Dynamics 365 Commerce
 Verwenden Sie Experimente in Dynamics 365 Commerce, um Hypothesen über die Effektivität Ihrer E-Commerce-Seiten zu validieren und Entscheidungen mit datengesteuertem Vertrauen zu treffen. Commerce unterstützt A/B-Tests auf Seiten, in Modulen und Fragmenten und ermöglicht es Ihnen, die Auswirkungen vorgeschlagener Änderungen an Ihrer Website zu messen.

@@ -2,11 +2,9 @@
 title: Behebung von Problemen bei der Produktprogrammplanung
 description: Dieses Thema beschreibt, wie Sie Probleme beheben können, die bei der Arbeit mit der Produktprogrammplanung auftreten können.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 11/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-11-04
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: db336946873fa1b5cc3f669823541af8cab4115b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8e78634c0efb1c401297559ce40b2ca30519f3bf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216104"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809469"
 ---
 # <a name="troubleshoot-master-planning"></a>Fehlerbehebung bei der Produktprogrammplanung
 

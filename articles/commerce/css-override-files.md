@@ -2,11 +2,9 @@
 title: Arbeiten mit CSS-Überschreibungsdateien
 description: In diesem Thema wird beschrieben, warum, wann und wie Cascading Style Sheets-Überschreibungsdateien (CSS) Dateien in Microsoft Dynamics 365 Commerce verwendet werden.
 author: phinneyridge
-manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 41fb0be51f7af25faba1b860319aea84ae7a8b56
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ef96070fe77b46622667301c7c7c402909ee7dfc
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207798"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799492"
 ---
 # <a name="work-with-css-override-files"></a>Arbeiten mit CSS-Überschreibungsdateien
-
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, warum, wann und wie Cascading Style Sheets-Überschreibungsdateien (CSS) Dateien in Microsoft Dynamics 365 Commerce verwendet werden.
-
-## <a name="overview"></a>Übersicht
 
 Permanente Site-Stile sollten normalerweise über das Thema einer Site verwaltet werden. Designs bilden die grundlegenden CSS- und Stileinstellungen für die Module auf einer beliebigen Seite Ihrer Site. Designs werden mit dem Dynamics 365 Commerce Online Software Development Kit (SDK) erstellt, und sie werden mit Microsoft Dynamics Lifecycle Services (LCS) auf Ihren Websites bereitgestellt. Design-Debugging-Funktionen und Modulschnittstellenkonfigurationen im SDK helfen Site-Entwicklern, anpassbare und zusammenhängende Site-Design-Pakete zu erstellen. Wenn diese Entwurfspakete auf einer Website bereitgestellt werden, können sich die Website-Autoren auf das Erstellen, Bearbeiten und Veröffentlichen von Inhalten konzentrieren, anstatt die Website zu entwickeln.
 

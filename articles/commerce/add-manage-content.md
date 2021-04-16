@@ -2,11 +2,9 @@
 title: Möglichkeiten zum Hinzufügen von Inhalten
 description: In diesem Thema finden Sie eine Übersicht und ausgewählte Links, über die Sie erfahren, wo und wie Sie Inhalte mit dem Microsoft Dynamics 365 Commerce-Web-Authoring-Toolset für Site Builder verwalten können.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb0b1c3f77bb71ba04c9110ed25fb80c2f2e61f4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e6794e528d9fa6066d7246e99a3307bb1bdc9c78
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208062"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797574"
 ---
 # <a name="ways-to-add-content"></a>Möglichkeiten zum Hinzufügen von Inhalten
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema finden Sie eine Übersicht und Links zur Dokumentation, wo und wie Sie Inhalte mit dem Microsoft Dynamics 365 Commerce-Web-Authoring-Toolset für Site Builder verwalten können.
-
-## <a name="overview"></a>Übersicht
 
 Es gibt viele Möglichkeiten, Aussehen, Erscheinungsbild und Inhalt Ihrer Site zu ändern. Abhängig von der erforderlichen Anpassungsstufe können viele dieser Änderungen von Nicht-Entwicklern in Site Builder implementiert werden, dem Web Authoring-Toolset, das im Lieferumfang von Dynamics 365 Commerce enthalten ist. Mit dem Site Builder können Sie Vorlagen erstellen, Themen auswählen und Module auswählen und konfigurieren, ohne Code schreiben zu müssen. Hingegen werden Entwicklungsqualifikationen erforderlich, um ein neues Thema oder ein Modul zu erstellen, weil das E-Commerce-Software Development Kit (SDK) und der Microsoft Dynamics Lifecycle Services (LCS)- Bereitstellungsworkflow verwendet werden müssen.
 

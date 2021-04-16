@@ -2,11 +2,9 @@
 title: Mehrere B2C-Mandanten in einer Commerce-Umgebung konfigurieren
 description: In diesem Thema wird beschrieben, wann und wie mehrere Microsoft Azure Active Directory (Azure AD) Business-to-Consumer (B2C)-Mandanten pro Kanal für die Benutzerauthentifizierung in einer dedizierten Dynamics 365 Commerce-Umgebung eingerichtet werden können.
 author: BrianShook
-manager: annbe
-ms.date: 03/02/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ddc8cea42ab0b5a319d4725ce8c75e57529cc63
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 4e50855368a3fa86c38c756492fc7e6cd518f497
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477755"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796098"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Mehrere B2C-Mandanten in einer Commerce-Umgebung konfigurieren
 
@@ -55,10 +53,6 @@ Die folgende Abbildung zeigt mehrere B2C-Mieter in einer Commerce-Umgebung.
 
 Wenn Sie entscheiden, dass Ihr Unternehmen unterschiedliche B2C-Mandanten pro Kanal in derselben Commerce-Umgebung benötigt, füllen Sie die Verfahren in den folgenden Abschnitten aus, um diese Funktion zu beantragen.
 
-## <a name="request-that-b2c-per-channel-be-enabled-in-your-environment"></a>Beantragen Sie, dass B2C pro Kanal in Ihrer Umgebung aktiviert wird.
-
-Wenn Sie derzeit möchten, dass verschiedene B2C-Mandanten pro Kanal in derselben Commerce-Umgebung verfügbar sind, müssen Sie eine Anfrage an Dynamics 365 Commerce senden. Weitere Informationen finden Sie unter [Unterstützung für Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md), oder besprechen Sie dieses Problem mit Ihrem Ansprechpartner für Commerce-Lösungen.
-
 ## <a name="configure-b2c-tenants-in-your-environment"></a>Konfigurieren von B2C-Mandanten in Ihrer Umgebung
 
 Um B2C-Mandanten in Ihrer Umgebung zu konfigurieren, führen Sie die entsprechenden Verfahren in diesem Abschnitt aus.
@@ -79,11 +73,11 @@ Um einen Azure AD B2C-Mandanten zu Ihrer Umgebung hinzuzufügen, gehen Sie wie f
     - **Client GUID**: Geben Sie die Azure AD B2C-Mandanten-ID ein, wie sie im Azure-Portal erscheint (nicht die Anwendungs-ID für den B2C-Mandanten).
     - **Profilrichtlinien-ID bearbeiten**: Geben Sie die Richtlinien-ID ein (den Namen der Richtlinie im Azure-Portal).
 
-1. Wenn Sie mit der Eingabe dieser Informationen fertig sind, wählen Sie **OK**, um Ihre Änderungen zu sichern.
+1. Wenn Sie mit der Eingabe dieser Informationen fertig sind, wählen Sie **OK**, um Ihre Änderungen zu sichern. Ihr neuer Azure AD B2C-Mandanten sollte nun in der Liste unter **B2C-Anwendungen verwalten** erscheinen.
 
 > [!NOTE]
 > Sie sollten Felder wie **Umfang**, **Nicht interaktive Richtlinien-ID**, **Nicht interaktive Client-ID**, **Benutzerdefinierte Anmeldedomäne** und **Anmelde-Richtlinien-ID** leer lassen, es sei denn, das Dynamics 365 Commerce-Team weist Sie an, sie einzustellen.
-Ihr neuer Azure AD B2C-Mandanten sollte nun in der Liste unter **B2C-Anwendungen verwalten** erscheinen.
+
 
 ### <a name="manage-or-delete-an-azure-ad-b2c-tenant"></a>Verwalten oder löschen eines Azure AD B2C-Mandanten
 
@@ -97,6 +91,7 @@ Ihr neuer Azure AD B2C-Mandanten sollte nun in der Liste unter **B2C-Anwendungen
 > Wenn ein B2C-Mandant für eine live/veröffentlichte Website konfiguriert ist, haben sich die Benutzer möglicherweise über Konten angemeldet, die auf dem Mandanten vorhanden sind. Wenn Sie einen konfigurierten Mandanten im Menü **Mandanteneinstellungen \> B2C-Mandant** löschen, entfernen Sie die Zuordnung dieses B2C-Mandanten zu Websites, die mit beliebigen Kanälen des Mandanten verknüpft sind. In diesem Fall können sich Ihre Benutzer möglicherweise nicht mehr bei ihren Konten anmelden. Seien Sie daher äußerst vorsichtig, wenn Sie einen konfigurierten Mandanten löschen.
 >
 > Wenn ein konfigurierter Mandanten gelöscht wird, werden der B2C-Mandant und die Datensätze weiterhin gepflegt, aber die Commerce-Systemkonfiguration dieses Mandanten wird geändert oder entfernt. Benutzer, die versuchen, sich bei der Site anzumelden oder anzumelden, legen einen neuen Kontodatensatz im Standard- oder neu zugeordneten B2C-Mandanten an, der für den Kanal der Site konfiguriert ist.
+
 ## <a name="configure-your-channel-with-a-b2c-tenant"></a>Konfigurieren Ihres Kanals mit einem B2C-Mandanten
 
 1. Melden Sie sich beim Commerce Site Builder für Ihre Umgebung als Systemadministrator an. Um einen Azure AD B2C-Mandanten zu konfigurieren, müssen Sie Systemadministrator für die Commerce-Umgebung sein.

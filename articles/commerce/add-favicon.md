@@ -2,11 +2,9 @@
 title: Hinzufügen eines Favicons
 description: In diesem Thema wird erläutert, wie ein favicon der Site hinzufügt wird.
 author: bicyclingfool
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,20 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 786ba02c312b7cdb3cf7f0689737084887d536bc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9268bc74a4131256f5a2e88df833104db271b56a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206342"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797718"
 ---
 # <a name="add-a-favicon"></a>Hinzufügen eines Favicons
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird erläutert, wie ein favicon der Site hinzufügt wird.
-
-## <a name="overview"></a>Übersicht
 
 Ein favicon ist eine kleine Grafikdatei, die auf einer Webbrowserregisterkarte im Browserverlauf der Adressleiste sowie in Lesezeichen oder in den Favoriten angezeigt wird. Es wird empfohlen, ein favicon dem Standort hinzufügen, da es Ihre Marke darstellt und verstärkt und hilft, den Standort von anderen Websites, die Ihre Kunden suchen, zu unterscheiden.
 

@@ -2,11 +2,9 @@
 title: Unterstützung für ein Content Delivery Network (CDN) hinzufügen
 description: In diesem Thema wird beschrieben, wie ein Content Delivery Network (CDN) Ihrer Microsoft Dynamics 365 Commerce-Umgebung hinzugefügt wird.
 author: brianshook
-manager: annbe
-ms.date: 07/31/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
-ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
+ms.openlocfilehash: a56f675b1fb43160625101a067c74e9fcf4f714a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5582718"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797838"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)
 
@@ -41,11 +39,7 @@ Darüber hinaus kommt die *Statik* (JavaScript oder Cascading Style Sheets \[CSS
 
 ## <a name="set-up-ssl"></a>SSL einrichten
 
-Um sicherzustellen, dass SSL eingerichtet ist und dass die Statik zwischengespeichert wird, müssen Sie Ihre CDN konfigurieren, damit sie dem Hostnamen zugeordnet wird, die Commerce für Ihre Umgebung generiert wurde. Sie müssen folgendes Muster nur für Statik zwischenspeichern: 
-
-/\_msdyn365/\_scnr/\*
-
-Nachdem Sie Ihre Commerce Umgebung mit der benutzerdefinierten Domäne bereitgestellt haben oder nachdem Sie die benutzerdefinierte Domäne für Ihre Umgebung mithilfe der Serviceanforderung bereitgestellt haben, zeigen Sie Ihre benutzerdefinierten Domäne zum Hostnamen oder Endpunkt, der Commerce generiert hat.
+Nachdem Sie Ihre Commerce Umgebung mit der benutzerdefinierten Domäne bereitgestellt haben oder nachdem Sie die benutzerdefinierte Domäne für Ihre Umgebung mithilfe der Serviceanforderung bereitgestellt haben, müssen Sie Ihre DNS-Änderungen gemeinsam mit dem Commerce-Onboarding-Team planen.
 
 Wie zuvor erwähnt unterstützt der generierte Hostname oder der Endpunkt eine SSL-Zertifikat nur für \*.commerce.dynamics.com. Er unterstützt nicht SSL für benutzerdefinierte Domänen.
 
@@ -62,7 +56,7 @@ Der CDN-Einstellungsprozess besteht aus diesen allgemeinen Schritten:
 
 1. Hinzufügen eines Front-End-Hosts.
 1. Konfigurieren eines Back-End-Pools.
-1. Richten Sie Regeln zum Weiterleiten und Zwischenspeichern ein.
+1. Richten Sie Routingregeln ein.
 
 ### <a name="add-a-front-end-host"></a>Hinzufügen eines Front-End-Hosts.
 
@@ -74,8 +68,9 @@ Informationen darüber, wie Azure Front Door Service eingerichtet wird, finden S
 
 Um einen Back-End-Pool in Azure Front Door Service zu konfigurieren, folgen Sie diesen Schritten.
 
-1. Fügen Sie **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** dem Back-End-Pool als benutzerdefinierten Host hinzu, der einen leeren Back-End-Host-Titel hat.
+1. Fügen Sie **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** einen Back-End-Pool als benutzerdefinierten Host hinzu, der eine Back-End-Host-Kopfzeile hat, die **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** entspricht.
 1. Lassen Sie unter **Lastenausgleich** die Standardwerte.
+1. Deaktivieren Sie Integritätsprüfungen für den Back-End-Pool.
 
 Die folgende Abbildung zeigt das Dialogfeld **Hinzufügen eines Back-End-Pools** in Azure Front Door Service mit dem eingegebenen Back-End-Hostnamen.
 
@@ -84,6 +79,10 @@ Die folgende Abbildung zeigt das Dialogfeld **Hinzufügen eines Back-End-Pools**
 Die folgende Abbildung zeigt das Dialogfeld **Hinzufügen eines Back-End-Pools** in Azure Front Door Service mit den Standardwerten des Lastenausgleichs.
 
 ![Hinzufügen eines Back-End-Pool Dialogfelds – Fortsetzung](./media/CDN_BackendPool_2.png)
+
+> [!NOTE]
+> Stellen Sie sicher, dass Sie **Integritätstests** beim Einrichten Ihres eigenen Azure Front Door Service für Commerce deaktivieren.
+
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Richten Sie Regeln in Azure Front Door Service ein
 
@@ -100,24 +99,6 @@ Um eine Routingregel im Azure Front Door Service einzurichten, führen Sie die f
 1. Hier können Sie die Option **URL neu schreiben** auf **Deaktiviert** festlegen.
 1. Hier können Sie die Option **Zwischenspeichern** auf **Deaktiviert** festlegen.
 
-Um eine Routingregel im Azure Front Door Service zwischenzuspeichern, führen Sie die folgenden Schritte aus.
-
-1. Eine Zwischenspeicherregel hinzufügen.
-1. Geben Sie im Feld **Name** **Statik** ein.
-1. Wählen Sie im Feld **Angenommenes Protokoll** **HTTP und HTTPS** aus.
-1. Im Feld **Frontend-Hosts** geben Sie den Text **dynamics-ecom-tenant-name.azurefd.net** ein.
-1. Unter **Muster zur Übereinstimmung** im oberen Feld **/\_msdyn365/\_scnr/\***.
-1. Unter **Arbeitsplandetails** legen Sie die Option **Arbeitsplantyp** auf **Vorwärts** fest.
-1. Wählen Sie im Feld **Backend-Pool** **ecom-backend**.
-1. In der Feldgruppe **Weiterleitungsprotokoll** wählen Sie die Option **Abgleichungsanforderung** aus.
-1. Hier können Sie die Option **URL neu schreiben** auf **Deaktiviert** festlegen.
-1. Hier können Sie die Option **Zwischenspeichern** auf **Deaktiviert** festlegen.
-1. Wählen Sie im Feld **Verhalten für Zwischenspeicherabfagezeichenfolge**, **Jede einzelne URL zwischenspeichern** aus.
-1. In der Feldgruppe **Dynamische Kompression** wählen Sie die Option **Aktiviert** aus.
-
-Die folgende Abbildung zeigt das Dialogfeld **Hinzufügen einer Regel** in Azure Front Door Service an.
-
-![Fügen Sie ein Regeldialogfeld hinzu](./media/CDN_CachingRule.png)
 
 > [!WARNING]
 > Wenn die Domain, die Sie verwenden, bereits aktiv ist, erstellen Sie ein Supportticket aus der Kachel **Support** in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/), um Unterstützung für Ihre nächsten Schritte zu erhalten. Weitere Informationen finden Sie unter [Support für Finance and Operations Apps oder Lifecycle Services (LCS) anfordern](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).

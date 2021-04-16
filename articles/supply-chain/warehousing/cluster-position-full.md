@@ -2,11 +2,9 @@
 title: Clusterposition voll
 description: Dieses Thema enthält Informationen zur Funktion Clusterposition voll. Diese Funktion bietet eine Alternative zur strengeren Durchsetzung von Arbeitsunterbrechungsregeln, wenn die Clusterkommissionierung verwendet wird, da sie eine größere Fehlerquote bei den volumetrischen Einschränkungen von Containern oder Behältern ermöglicht.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b6a7cad070377de58d21a8eb91ee3e1ffaf1c660
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ad0f8e2fa6b3767c6b5d5549a36d52990f871531
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233006"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808845"
 ---
 # <a name="cluster-position-full"></a>Clusterposition voll
 
@@ -213,7 +211,7 @@ Es sollten zwei Arbeits-IDs erstellt worden sein, von denen jede zwei Kommission
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Flow-Ausführung für mobile Geräte – Einrichtung der Arbeitsbestätigung für das Produkt
 
-1. Melden Sie sich bei der Warehouse-App als ein Benutzer im Lagerort *61* an.
+1. Melden Sie sich bei der Warehouse Management Mobile App als ein Benutzer im Lagerort *61* an.
 1. Wechseln Sie zu **Ausgehend \> Clusterkommissionierung erstellen**.
 
     Die **AUFGABE: Arbeit dem Cluster zuweisen**-Seite erscheint.

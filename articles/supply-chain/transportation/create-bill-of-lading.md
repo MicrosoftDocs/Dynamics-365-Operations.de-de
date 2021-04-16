@@ -2,11 +2,9 @@
 title: Einen Frachtbrief erstellen
 description: In diesem Thema wird beschrieben, wie Sie einen Frachtbrief erstellen, wenn der Lagerortverwaltungsprozess verwendet wird.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench, WHSBillOfLadingCarrier, WHSBillOfLadingOrder
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 31e6ce3fd65263d6df248322ca149afa5f750cb7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a14d971475c71e6a02957acfa0c6e6494c4638fc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206894"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807631"
 ---
 # <a name="create-a-bill-of-lading"></a>Einen Frachtbrief erstellen
 
