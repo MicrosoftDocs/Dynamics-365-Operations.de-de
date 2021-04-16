@@ -2,11 +2,9 @@
 title: Domänen in Dynamics 365 Commerce
 description: In diesem Thema wird beschrieben, wie Domänen in Microsoft Dynamics 365 Commerce behandelt werden.
 author: BrShoo
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bafa49cc570ddf7e0ff9c3dcb1b6902fb341b790
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8d4381c64b69f8b62dcb509407c4f04dcee696ae
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225788"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792798"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domänen in Dynamics 365 Commerce
 
@@ -40,7 +38,7 @@ Bei der Bereitstellung einer E-Commerce-Umgebung in [Microsoft Dynamics Lifecycl
 
 Die folgende Abbildung zeigt den LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**. 
 
-![LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**](./media/Domains_ProvisioningeCommerceScreen.png)
+![LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Sie können eine Serviceanforderung erstellen, um einer Umgebung zusätzliche Domänen hinzuzufügen, wenn die Bereitstellung bereits erfolgt ist. Um in LCS eine Serviceanforderung zu erstellen, wechseln Sie in Ihrer Umgebung zu **Support \> Support-Probleme** und wählen Sie **Einen Vorfall einreichen**.
 
