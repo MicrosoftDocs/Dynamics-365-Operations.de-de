@@ -2,11 +2,9 @@
 title: Installieren und verbinden der Warehouse-App
 description: In diesem Thema wird erläutert, wie Sie die Warehouse-App auf jedem Ihrer mobilen Geräte installieren und für die Verbindung mit Ihrer Microsoft Dynamics 365 Supply Chain Management-Umgebung konfigurieren. Sie können jedes Gerät manuell konfigurieren oder Verbindungseinstellungen über eine Datei oder durch Scannen eines QR-Codes importieren.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 05/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
@@ -18,19 +16,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3d2920d015aab5e4f0a1966d2a2574fb659a7c80
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: c92fe991c8651d7665de2e850d8649b72f525f4c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5486976"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835564"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Lagerort-App installieren und Verbindung herstellen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> In diesem Thema wird erläutert, wie die alte Lagerort-App eingerichtet und konfiguriert wird. Wenn Sie Informationen darüber suchen, wie Sie die neue Mobile App der Lagerortverwaltung konfigurieren, lesen Sie [Installieren und Verbinden der Mobile App der Lagerortverwaltung](install-configure-warehouse-management-app.md).
+> In diesem Thema wird beschrieben, wie Sie die alte (jetzt veraltete) Lagerort-App konfigurieren. Wenn Sie Informationen darüber suchen, wie Sie die neue Mobile App der Lagerortverwaltung konfigurieren, lesen Sie [Installieren und Verbinden der Mobile App der Lagerortverwaltung](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
 > In diesem Thema wird beschrieben, wie Lagerort-App für Cloudbereitstellungen konfiguriert wird. Wenn Sie erfahren möchten, wie die Lagerort-App für lokale Bereitstellungen konfiguriert wird, finden Sie weitere Informationen unter [Lagerhaltung für lokale Bereitstellungen](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).

@@ -2,11 +2,9 @@
 title: Lagerabwicklung eingehender Ladungen für Bestellungen
 description: In diesem Thema wird der Lagerbehandlungsprozess für eingehende Ladungen für Bestellungen beschrieben.
 author: omulvad
-manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: fec2e7f39569c52ec17c5d0b2474eca720e0180a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235339"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835629"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerabwicklung eingehender Ladungen für Bestellungen
 
@@ -66,7 +64,7 @@ Wenn eine eingehende Ladung zum ersten Mal im Lager ankommt, müssen die Lagerar
 
 - **Ein Menü für mobile Geräte, das so konfiguriert ist, dass es den Lastempfang unterstützt**
 
-    Die [Warehouse-App](install-configure-warehousing-app.md) für mobile Geräte unterstützt die folgenden Arbeitserstellungsprozesse:
+    Die [Warehouse Management Mobile App](../warehousing/install-configure-warehouse-management-app.md) für mobile Geräte unterstützt die folgenden Arbeitserstellungsprozesse:
 
     - Artikelempfang aus Ladung
     - Artikelempfang und -einlagerung aus Ladung
@@ -285,7 +283,7 @@ Um diese Szenarien mithilfe der angegebenen Beispieldatensätze und -werte zu ve
 
 Bevor Lagerort-Empfangsmitarbeiter ein mobiles Gerät verwenden können, um eingehende Bestand zu registrieren, der mit einer Last verknüpft ist, müssen Sie zu diesem Zweck einen Menüpunkt für mobile Geräte erstellen.
 
-In diesem Abschnitt erstellen Sie einen Menüpunkt für mobile Geräte und fügen ihn einem vorhandenen Menü hinzu. Ein Lagerarbeiter kann dann den Menüpunkt in der Warehouse-App auswählen.
+In diesem Abschnitt erstellen Sie einen Menüpunkt für mobile Geräte und fügen ihn einem vorhandenen Menü hinzu. Ein Lagerarbeiter kann dann den Menüpunkt in der Warehouse Management Mobile App auswählen.
 
 1. Gehen Sie zu **Lagerverwaltung \> Konfiguration \> Mobilgerät \> Menüpunkte für mobile Geräte** und stellen Sie sicher, dass das Menü Ihres Mobilgeräts einen Menüpunkt mit den folgenden Einstellungen enthält:
 

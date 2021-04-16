@@ -1,12 +1,10 @@
 ---
 title: Behebung von Problemen bei der Kostenverwaltung
 description: Dieses Thema beschreibt, wie Sie Probleme beheben, die bei der Arbeit mit dem Kostenmanagement auftreten können.
-author: riluan
-manager: tfehr
+author: AndersGirke
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: riluan
+ms.author: aevengir
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: dceaca64132857d796a16c2450a372ba05712cf5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fc6a48a44a529c82c2a9ee818af95569d9bcb249
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262452"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834288"
 ---
 # <a name="troubleshoot-cost-management"></a>Behebung von Problemen bei der Kostenverwaltung
 
@@ -37,7 +35,7 @@ Die Funktionen [Speicherung von Bestandsalterungsberichten](inventory-aging-repo
 
 Zwischensummen können beim Exportieren des Ergebnisses zu Problemen führen, insbesondere wenn Benutzer die Sequenz der Datensätze ändern.
 
-Um die Zwischensummen zu prüfen, können Sie das Ergebnis in Microsoft Excel exportieren. Wenn Sie die Zwischensummen innerhalb des Supply Chain Managements prüfen wollen, verwenden Sie alternativ die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die Funktionen *Neue Rastersteuerung* und *(Vorschau) Gruppierung in Rastern* zu aktivieren, die eine viel flexiblere Möglichkeit bieten, die Zwischensumme für jede Gruppe nach Spalten zu sehen. Weitere Informationen finden Sie unter [Rasterfunktionen](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
+Um die Zwischensummen zu prüfen, können Sie das Ergebnis in Microsoft Excel exportieren. Wenn Sie die Zwischensummen innerhalb des Supply Chain Managements prüfen wollen, verwenden Sie alternativ die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die Funktionen *Neue Rastersteuerung* und *Gruppierung in Rastern* zu aktivieren, die eine viel flexiblere Möglichkeit bieten, die Zwischensumme für jede Gruppe nach Spalten zu sehen. Weitere Informationen finden Sie unter [Rasterfunktionen](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
 
 ### <a name="inventory-value-storage-report-doesnt-support-ledger-account-information"></a>Bestandswert-Speicherbericht unterstützt keine Ledger-Kontoinformationen
 

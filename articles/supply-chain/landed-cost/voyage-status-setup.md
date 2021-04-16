@@ -2,7 +2,6 @@
 title: Fahrt-Status einrichten
 description: Dieses Thema beschreibt, wie Sie die Statuswerte einrichten, die Benutzer Fahrten zuweisen können.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: b7180cc9ab2d13f2260635d717adb7aab2177ab9
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 80433c17ed9d790d88b20ecc253c8e4459ffea10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500885"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829787"
 ---
 # <a name="voyage-status-setup"></a>Einrichten des Status einer Fahrt
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Auf der Seite **Fahrtstatus** legen Sie die Statuswerte fest, die Benutzer den Fahrten zuweisen können. Benutzer können allen Ebenen einer Fahrt Statuswerte zuweisen: Fahrt, Transportcontainer, Palette, Einkaufsbestellung und Artikel (Einkaufs- und Umlagerungsauftragszeilen). Sie werden für zwei Zwecke verwendet:
 

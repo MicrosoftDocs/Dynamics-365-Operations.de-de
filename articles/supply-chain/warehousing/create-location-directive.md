@@ -2,11 +2,9 @@
 title: Arbeiten mit Lagerplatzrichtlinien
 description: In diesem Thema wird beschrieben, wie Sie mit Lagerplatzrichtlinien arbeiten. Lagerplatzrichtlinien sind benutzerdefinierte Regeln, die dabei helfen, Entnahme- und Einlagerungslagerorte für die Lagerortumlagerung zu identifizieren.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
-ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
+ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470518"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838393"
 ---
 # <a name="work-with-location-directives"></a>Arbeiten mit Lagerplatzrichtlinien
 
@@ -152,7 +150,7 @@ Die Felder auf dem Inforegister **Lagerplatzrichtlinien** sind spezifisch für d
     > [!IMPORTANT]
     > Um sowohl Multi-Element-Puts als auch Single-SKU-Puts durchführen zu können, müssen Sie zwei Zeilen angeben, die die gleiche Struktur und Einrichtung haben, aber Sie müssen die Option **Mehrere SKU** auf *Ja* für eine Zeile und *Nein* für die andere festlegen. Daher müssen Sie für Einlagerungsvorgänge zwei identische Lagerplatzrichtlinien haben, auch wenn Sie nicht zwischen einzelnen SKUs und mehreren SKUs auf einer Arbeits-ID unterscheiden müssen. Wenn Sie nicht beide Lagerplatzrichtlinien festlegen, werden oft unerwartete Lagerplätze im Geschäftsprozess durch die angewandte Lagerplatzrichtlinie erzeugt. Sie müssen eine ähnliche Einrichtung für Lagerplatzrichtlinien verwenden, die einen **Arbeitstyp** von *Pick* haben, wenn Sie Aufträge verarbeiten müssen, die mehrere SKUs enthalten.
 
-    Verwenden Sie die Option **Mehrere SKU** für Arbeitszeilen, die mehr als eine Artikelnummer verarbeiten. (Die Artikelnummer ist in den Arbeitsdetails leer und wird auf den Bearbeitungsseiten in der Lagerort App als **Mehrfach** angezeigt.)
+    Verwenden Sie die Option **Mehrere SKU** für Arbeitszeilen, die mehr als eine Artikelnummer verarbeiten. (Die Artikelnummer ist in den Arbeitsdetails leer und wird auf den Bearbeitungsseiten in der Warehouse Management Mobile App als **Mehrfach** angezeigt.)
 
     In einem typischen Beispielszenario wird eine Arbeitsvorlage so festgelegt, dass sie mehr als ein Entnehmen/Einlagern-Paar hat. In diesem Fall möchten Sie vielleicht nach einem bestimmten Lagerplatz suchen, der für Zeilen mit einem **Arbeitstyp** von *Einlagern* verwendet wird.
 
@@ -171,7 +169,7 @@ Die Felder auf dem Inforegister **Lagerplatzrichtlinien** sind spezifisch für d
     > [!NOTE]
     > Dieses Feld ist nur für ausgewählte Arbeitsauftragstypen verfügbar, bei denen eine Wiederbeschaffung erlaubt ist. Eine vollständige Liste finden Sie im Abschnitt [Felder, die für Arbeitsauftragstypen spezifisch sind](#fields-specific-types).
 
-- **Einlagerungscode** - Dieses Feld wird für Lagerplatzrichtlinien verwendet, die eine Arbeitsauftragsart *Einkaufsbestellung*, *Einlagerung fertiger Ware* oder *Rücklieferung* und eine Arbeitsart *Einlagerung* haben. Verwenden Sie es, um den Flow anzuleiten, eine bestimmte Lagerplatzrichtlinie zu verwenden, abhängig vom Dispositionscode, den ein Arbeiter in der Lagerort App ausgewählt hat. So können Sie z.B. zurückgegebene Waren zu einem Lagerplatz leiten, bevor sie ins Lager zurückgebracht werden. Ein Dispositionscode kann mit einem Bestandsstatus verknüpft werden. Auf diese Weise kann er verwendet werden, um den Bestandsstatus als Teil eines Eingangsprozesses zu ändern. Sie haben zum Beispiel einen Dispositionscode, *QA*, der den Bestandsstatus auf *QA* festlegt. Sie können dann eine separate Lagerplatzrichtlinie haben, um diesen Bestand an einen Quarantäneplatz zu verschieben.
+- **Einlagerungscode** - Dieses Feld wird für Lagerplatzrichtlinien verwendet, die eine Arbeitsauftragsart *Einkaufsbestellung*, *Einlagerung fertiger Ware* oder *Rücklieferung* und eine Arbeitsart *Einlagerung* haben. Verwenden Sie es, um den Flow anzuleiten, eine bestimmte Lagerplatzrichtlinie zu verwenden, abhängig vom Dispositionscode, den ein Arbeiter in der Warehouse Management Mobile App ausgewählt hat. So können Sie z.B. zurückgegebene Waren zu einem Lagerplatz leiten, bevor sie ins Lager zurückgebracht werden. Ein Dispositionscode kann mit einem Bestandsstatus verknüpft werden. Auf diese Weise kann er verwendet werden, um den Bestandsstatus als Teil eines Eingangsprozesses zu ändern. Sie haben zum Beispiel einen Dispositionscode, *QA*, der den Bestandsstatus auf *QA* festlegt. Sie können dann eine separate Lagerplatzrichtlinie haben, um diesen Bestand an einen Quarantäneplatz zu verschieben.
 
     > [!NOTE]
     > Dieses Feld ist nur für ausgewählte Arbeitsauftragstypen verfügbar, bei denen eine Wiederbeschaffung erlaubt ist. Eine vollständige Liste finden Sie im Abschnitt [Felder, die für Arbeitsauftragstypen spezifisch sind](#fields-specific-types).

@@ -2,11 +2,9 @@
 title: Produktionsplanung
 description: In diesem Thema wird die Planung für die Produktion beschrieben und erläutert, wie Sie geplante Produktionsaufträge mithilfe der Planungsoptimierung ändern können.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,18 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f9b5e4122fbd83ff76e0605b2f0816e10d2d9aab
-ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
+ms.openlocfilehash: 22b78f44940f71097ca8b1cdb74edb06274bba75
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470832"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839222"
 ---
 # <a name="production-planning"></a>Produktionsplanung
 
 Die Planungsoptimierung unterstützt mehrere Produktionsszenarien. Wenn Sie vom bestehenden integrierten Masterplanungsmodul migrieren, ist es wichtig, dass Sie einige geänderte Verhaltensweisen beachten.
 
 Das folgende Video gibt eine kurze Einführung in einige der in diesem Thema besprochenen Konzepte: [Dynamics 365 Supply Chain Management: Erweiterungen der Planungsoptimierung](https://youtu.be/u1pcmZuZBTw).
+
+## <a name="turn-on-this-feature-for-your-system"></a>Schalten Sie diese Funktion für Ihr System ein
+
+Wenn Ihr System noch nicht über die in diesem Thema beschriebenen Funktionen verfügt, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Geplante Produktionsaufträge zur Planungsoptimierung* ein.
 
 ## <a name="planned-production-orders"></a>Geplante Produktionsaufträge
 

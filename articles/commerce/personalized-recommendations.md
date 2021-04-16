@@ -2,11 +2,9 @@
 title: Personalisierte Produktempfehlungen aktivieren
 description: In diesem Thema wird beschrieben, wie Kunden in Microsoft Dynamics 365 Commerce personalisierte Produktempfehlungen zur Verfügung gestellt werden.
 author: bebeale
-manager: AnnBe
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: be460ec5ce8a9a625dc1a80f761bea9e2ab2f632
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: dc0fbff437bfa948d70a03479561542106805bdb
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477659"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804428"
 ---
 # <a name="enable-personalized-recommendations"></a>Personalisierte Empfehlungen aktivieren
 

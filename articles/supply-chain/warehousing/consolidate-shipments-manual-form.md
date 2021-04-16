@@ -2,11 +2,9 @@
 title: Lieferungen manuell auf der Seite zur Lieferungskonsolidierung konsolidieren
 description: In diesem Thema wird ein Szenario vorgestellt, in dem mehrere Aufträge an das Lager freigegeben werden und anschließend später auf der Lieferungskonsolidierungsseite konsolidiert werden.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 6d9186fe242fa56b6a360d6a4e4284c0c3eac141
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e4e6dac1d1b4a304062e852526235eeee6579540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242204"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840388"
 ---
 # <a name="consolidate-shipments-manually-by-using-the-consolidate-shipments-page"></a>Lieferungen manuell auf der Seite zur Lieferungskonsolidierung konsolidieren
 
