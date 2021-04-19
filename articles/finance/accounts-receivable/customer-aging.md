@@ -2,11 +2,9 @@
 title: Debitorenfälligkeitsbericht
 description: Im Debitorenfälligkeitsbericht werden die von Debitoren fälligen Salden sortiert nach Datumsintervall oder Zahlungsfrist angezeigt.
 author: JodiChristiansen
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 384e44ef07771a174aaed4f8fb893e75b0206da7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b80345513d355115a182c108bf3843963e9a59d9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236985"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840340"
 ---
-# <a name="customer-aging-report"></a><span data-ttu-id="abf6a-103">Debitorenfälligkeitsbericht</span><span class="sxs-lookup"><span data-stu-id="abf6a-103">Customer aging report</span></span> 
+# <a name="customer-aging-report"></a><span data-ttu-id="c0d5e-103">Debitorenfälligkeitsbericht</span><span class="sxs-lookup"><span data-stu-id="c0d5e-103">Customer aging report</span></span> 
 
-<span data-ttu-id="abf6a-104">Im **Debitorenfälligkeitsbericht** werden die von Debitoren fälligen Salden sortiert nach Datumsintervall oder Zahlungsfrist angezeigt.</span><span class="sxs-lookup"><span data-stu-id="abf6a-104">The **Customer aging** report displays the balances that are due from customers, sorted by date interval, or aging period.</span></span>
+<span data-ttu-id="c0d5e-104">Im **Debitorenfälligkeitsbericht** werden die von Debitoren fälligen Salden sortiert nach Datumsintervall oder Zahlungsfrist angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-104">The **Customer aging** report displays the balances that are due from customers, sorted by date interval, or aging period.</span></span>
 
-<span data-ttu-id="abf6a-105">Wenn dieser Bericht generiert wird, werden die folgenden Standardparameter angezeigt.</span><span class="sxs-lookup"><span data-stu-id="abf6a-105">When you generate this report, the following default parameters are displayed.</span></span> <span data-ttu-id="abf6a-106">Sie können mithilfe der Parameter die Daten filtern, die im Bericht angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="abf6a-106">You can use these parameters to filter the data that will be displayed on the report.</span></span> <span data-ttu-id="abf6a-107">Weitere Informationen finden Sie unter [Einrichten von Auflistungen](set-up-collections.md).</span><span class="sxs-lookup"><span data-stu-id="abf6a-107">For more information, see [Set up collections](set-up-collections.md).</span></span>
+<span data-ttu-id="c0d5e-105">Wenn dieser Bericht generiert wird, werden die folgenden Standardparameter angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-105">When you generate this report, the following default parameters are displayed.</span></span> <span data-ttu-id="c0d5e-106">Sie können mithilfe der Parameter die Daten filtern, die im Bericht angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-106">You can use these parameters to filter the data that will be displayed on the report.</span></span> <span data-ttu-id="c0d5e-107">Weitere Informationen finden Sie unter [Einrichten von Auflistungen](set-up-collections.md).</span><span class="sxs-lookup"><span data-stu-id="c0d5e-107">For more information, see [Set up collections](set-up-collections.md).</span></span>
 
 <table>
 <colgroup>
@@ -37,86 +35,86 @@ ms.locfileid: "5236985"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="abf6a-108">Feld</span><span class="sxs-lookup"><span data-stu-id="abf6a-108">Field</span></span></p></th>
-<th><p><span data-ttu-id="abf6a-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="abf6a-109">Description</span></span></p></th>
+<th><p><span data-ttu-id="c0d5e-108">Feld</span><span class="sxs-lookup"><span data-stu-id="c0d5e-108">Field</span></span></p></th>
+<th><p><span data-ttu-id="c0d5e-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c0d5e-109">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="abf6a-110"><strong>Abrechnungsklassifizierung</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-110"><strong>Billing classification</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-111">Wählen Sie die in den Bericht einzuschließenden Abrechnungsklassifizierungen aus.</span><span class="sxs-lookup"><span data-stu-id="abf6a-111">Select one or more billing classifications to include on the report.</span></span></p>
+<td><p><span data-ttu-id="c0d5e-110"><strong>Abrechnungsklassifizierung</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-110"><strong>Billing classification</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-111">Wählen Sie die in den Bericht einzuschließenden Abrechnungsklassifizierungen aus.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-111">Select one or more billing classifications to include on the report.</span></span></p>
 <div class="alert">
 
-<span data-ttu-id="abf6a-112">**Hinweis:** Dieses Steuerelement ist nur verfügbar, wenn der Konfigurationsschlüssel <STRONG>Öffentlicher Sektor</STRONG> ausgewählt wurde.</span><span class="sxs-lookup"><span data-stu-id="abf6a-112">**Note:** This control is available only if the <STRONG>Public Sector</STRONG> configuration key is selected.</span></span></P>
+<span data-ttu-id="c0d5e-112">**Hinweis:** Dieses Steuerelement ist nur verfügbar, wenn der Konfigurationsschlüssel <STRONG>Öffentlicher Sektor</STRONG> ausgewählt wurde.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-112">**Note:** This control is available only if the <STRONG>Public Sector</STRONG> configuration key is selected.</span></span></P>
 
 
 </div></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="abf6a-113"><strong>Transaktionen ohne Abrechnungsklassifizierung einbeziehen</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-113"><strong>Include transactions without a billing classification</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-114">Wenn dieses Kontrollkästchen aktiviert ist, werden alle Buchungen ohne zugewiesene Abrechnungsklassifizierungen im Bericht angezeigt.</span><span class="sxs-lookup"><span data-stu-id="abf6a-114">If this check box is selected, all transactions that do not have a billing classification assigned to them will be displayed on the report.</span></span></p>
+<td><p><span data-ttu-id="c0d5e-113"><strong>Transaktionen ohne Abrechnungsklassifizierung einbeziehen</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-113"><strong>Include transactions without a billing classification</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-114">Wenn dieses Kontrollkästchen aktiviert ist, werden alle Buchungen ohne zugewiesene Abrechnungsklassifizierungen im Bericht angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-114">If this check box is selected, all transactions that do not have a billing classification assigned to them will be displayed on the report.</span></span></p>
 <div class="alert">
 
-<span data-ttu-id="abf6a-115">**Hinweis:** Dieses Steuerelement ist nur verfügbar, wenn der Konfigurationsschlüssel <STRONG>Öffentlicher Sektor</STRONG> ausgewählt wurde.</span><span class="sxs-lookup"><span data-stu-id="abf6a-115">**Note:** This control is available only if the <STRONG>Public sector</STRONG> configuration key is selected.</span></span></P>
+<span data-ttu-id="c0d5e-115">**Hinweis:** Dieses Steuerelement ist nur verfügbar, wenn der Konfigurationsschlüssel <STRONG>Öffentlicher Sektor</STRONG> ausgewählt wurde.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-115">**Note:** This control is available only if the <STRONG>Public sector</STRONG> configuration key is selected.</span></span></P>
 
 </div></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="abf6a-116"><strong>Fälligkeit per</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-116"><strong>Aging as of</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-117">Geben Sie das Datum ein, das für den aktuellen Fälligkeitsbereich verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="abf6a-117">Enter the date used on the current aging bucket.</span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-116"><strong>Fälligkeit per</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-116"><strong>Aging as of</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-117">Geben Sie das Datum ein, das für den aktuellen Fälligkeitsbereich verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-117">Enter the date used on the current aging bucket.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="abf6a-118"><strong>Saldo per</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-118"><strong>Balance as of</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-119">Geben Sie das Datum ein, für das die Debitorensalden angezeigt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="abf6a-119">Enter the date to view the customer balances for.</span></span> <span data-ttu-id="abf6a-120">Dies wird auch als Abschnittsdatum für Buchungen bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="abf6a-120">This is also known as a cutoff date for transactions.</span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-118"><strong>Saldo per</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-118"><strong>Balance as of</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-119">Geben Sie das Datum ein, für das die Debitorensalden angezeigt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-119">Enter the date to view the customer balances for.</span></span> <span data-ttu-id="c0d5e-120">Dies wird auch als Abschnittsdatum für Buchungen bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-120">This is also known as a cutoff date for transactions.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="abf6a-121"><strong>Startdatum</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-121"><strong>Start date</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-122">Geben Sie ein Datum ein, das im ersten Periodenintervall oder in der Zahlungsfrist liegt und in den Bericht einbezogen werden soll.</span><span class="sxs-lookup"><span data-stu-id="abf6a-122">Enter a date that is in the first period interval or aging period to include on the report.</span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-121"><strong>Startdatum</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-121"><strong>Start date</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-122">Geben Sie ein Datum ein, das im ersten Periodenintervall oder in der Zahlungsfrist liegt und in den Bericht einbezogen werden soll.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-122">Enter a date that is in the first period interval or aging period to include on the report.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="abf6a-123"><strong>Kriterien</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-123"><strong>Criteria</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-124">Wählen Sie den Datumstyp aus, auf dem der Bericht basieren soll.</span><span class="sxs-lookup"><span data-stu-id="abf6a-124">Select the type of date to base the report on.</span></span></p>
+<td><p><span data-ttu-id="c0d5e-123"><strong>Kriterien</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-123"><strong>Criteria</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-124">Wählen Sie den Datumstyp aus, auf dem der Bericht basieren soll.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-124">Select the type of date to base the report on.</span></span></p>
 <ul>
-<li><p><span data-ttu-id="abf6a-125"><strong>Buchungsdatum</strong> – Das Buchungsdatum der ausgewählten Buchungen.</span><span class="sxs-lookup"><span data-stu-id="abf6a-125"><strong>Transaction date</strong> – The posting date of the transactions.</span></span> <span data-ttu-id="abf6a-126">Dies kann z. B. ein Rechnungsdatum sein, das die Grundlage für die Berechnung des Fälligkeitsdatums ist.</span><span class="sxs-lookup"><span data-stu-id="abf6a-126">For example, this might be an invoice date that is the basis for the calculation of the due date.</span></span></p></li>
-<li><p><span data-ttu-id="abf6a-127"><strong>Fälligkeitsdatum</strong> – Das Fälligkeitsdatum der Buchungen, basierend auf den Zahlungsbedingungen.</span><span class="sxs-lookup"><span data-stu-id="abf6a-127"><strong>Due date</strong> – The due date of the transactions, based on the terms of payment.</span></span></p></li>
-<li><p><span data-ttu-id="abf6a-128"><strong>Dokumentdatum</strong> – Ein benutzerdefiniertes Dokumentdatum, das die Grundlage für die Berechnung des Fälligkeitsdatums bildet.</span><span class="sxs-lookup"><span data-stu-id="abf6a-128"><strong>Document date</strong> – A user-defined document date that is the basis for the calculation of the due date.</span></span></p></li>
+<li><p><span data-ttu-id="c0d5e-125"><strong>Buchungsdatum</strong> – Das Buchungsdatum der ausgewählten Buchungen.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-125"><strong>Transaction date</strong> – The posting date of the transactions.</span></span> <span data-ttu-id="c0d5e-126">Dies kann z. B. ein Rechnungsdatum sein, das die Grundlage für die Berechnung des Fälligkeitsdatums ist.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-126">For example, this might be an invoice date that is the basis for the calculation of the due date.</span></span></p></li>
+<li><p><span data-ttu-id="c0d5e-127"><strong>Fälligkeitsdatum</strong> – Das Fälligkeitsdatum der Buchungen, basierend auf den Zahlungsbedingungen.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-127"><strong>Due date</strong> – The due date of the transactions, based on the terms of payment.</span></span></p></li>
+<li><p><span data-ttu-id="c0d5e-128"><strong>Dokumentdatum</strong> – Ein benutzerdefiniertes Dokumentdatum, das die Grundlage für die Berechnung des Fälligkeitsdatums bildet.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-128"><strong>Document date</strong> – A user-defined document date that is the basis for the calculation of the due date.</span></span></p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="abf6a-129"><strong>Zahlungsfristdefinition</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-129"><strong>Aging period definition</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-130">Wählen Sie eine Zahlungsfristdefinition aus.</span><span class="sxs-lookup"><span data-stu-id="abf6a-130">Select an aging period definition.</span></span> <span data-ttu-id="abf6a-131">Das Feld <strong>Intervall</strong> wird bei Auswahl einer Zahlungsfristdefinition nicht verwendet.</span><span class="sxs-lookup"><span data-stu-id="abf6a-131">The <strong>Interval</strong> field is not used if you select an aging period definition.</span></span></p>
-<p><span data-ttu-id="abf6a-132">Zahlungsfristdefinitionen mit mehr als sechs Zahlungsfristen können im gedruckten Bericht nicht verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="abf6a-132">Aging period definitions that have more than six aging periods cannot be used on the printed report.</span></span></p>
+<td><p><span data-ttu-id="c0d5e-129"><strong>Zahlungsfristdefinition</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-129"><strong>Aging period definition</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-130">Wählen Sie eine Zahlungsfristdefinition aus.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-130">Select an aging period definition.</span></span> <span data-ttu-id="c0d5e-131">Das Feld <strong>Intervall</strong> wird bei Auswahl einer Zahlungsfristdefinition nicht verwendet.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-131">The <strong>Interval</strong> field is not used if you select an aging period definition.</span></span></p>
+<p><span data-ttu-id="c0d5e-132">Zahlungsfristdefinitionen mit mehr als sechs Zahlungsfristen können im gedruckten Bericht nicht verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-132">Aging period definitions that have more than six aging periods cannot be used on the printed report.</span></span></p>
 <div class="alert">
 
-<span data-ttu-id="abf6a-133">**Hinweis:** Sie können Zahlungsfristen auf der Seite <STRONG>Zahlungsfristdefinitionen</STRONG> einrichten.</span><span class="sxs-lookup"><span data-stu-id="abf6a-133">**Note:** You can set up aging periods on the <STRONG>Aging period definitions</STRONG> page.</span></span></P>
+<span data-ttu-id="c0d5e-133">**Hinweis:** Sie können Zahlungsfristen auf der Seite <STRONG>Zahlungsfristdefinitionen</STRONG> einrichten.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-133">**Note:** You can set up aging periods on the <STRONG>Aging period definitions</STRONG> page.</span></span></P>
 
 
 </div></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="abf6a-134"><strong>Beschreibung der Zahlungsfrist drucken</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-134"><strong>Print aging period description</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-135">Wählen Sie <strong>Ja</strong> aus, um Zahlungsfristbeschreibungen im Bericht am Anfang jeder Zahlungsfristspalte einzuschließen.</span><span class="sxs-lookup"><span data-stu-id="abf6a-135">Select <strong>Yes</strong> to include aging period descriptions at the top of each aging period column on the report.</span></span> <span data-ttu-id="abf6a-136">Wählen Sie <strong>Nein</strong> aus, um den Bericht ohne Spaltenüberschriften zu drucken.</span><span class="sxs-lookup"><span data-stu-id="abf6a-136">Select <strong>No</strong> to print the report without column headers.</span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-134"><strong>Beschreibung der Zahlungsfrist drucken</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-134"><strong>Print aging period description</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-135">Wählen Sie <strong>Ja</strong> aus, um Zahlungsfristbeschreibungen im Bericht am Anfang jeder Zahlungsfristspalte einzuschließen.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-135">Select <strong>Yes</strong> to include aging period descriptions at the top of each aging period column on the report.</span></span> <span data-ttu-id="c0d5e-136">Wählen Sie <strong>Nein</strong> aus, um den Bericht ohne Spaltenüberschriften zu drucken.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-136">Select <strong>No</strong> to print the report without column headers.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="abf6a-137"><strong>Intervall</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-137"><strong>Interval</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-138">Definieren Sie die zu verwendende Periode durch Eingeben der Anzahl der Tages- oder Monatseinheiten in jeder Periode.</span><span class="sxs-lookup"><span data-stu-id="abf6a-138">Define the period to use by entering the number of the day or month units in each period.</span></span> <span data-ttu-id="abf6a-139">Wenn beispielsweise Zahlungsfristinformationen nach Woche angezeigt werden sollen, geben Sie in dieses Feld den Wert 7 ein, und wählen Sie im Feld <strong>Tag/Monat</strong> den Eintrag <strong>Tag</strong> aus.</span><span class="sxs-lookup"><span data-stu-id="abf6a-139">For example, to view aging information by week, enter 7 in this field and select <strong>Day</strong> in the <strong>Day/Mth</strong> field.</span></span></p>
+<td><p><span data-ttu-id="c0d5e-137"><strong>Intervall</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-137"><strong>Interval</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-138">Definieren Sie die zu verwendende Periode durch Eingeben der Anzahl der Tages- oder Monatseinheiten in jeder Periode.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-138">Define the period to use by entering the number of the day or month units in each period.</span></span> <span data-ttu-id="c0d5e-139">Wenn beispielsweise Zahlungsfristinformationen nach Woche angezeigt werden sollen, geben Sie in dieses Feld den Wert 7 ein, und wählen Sie im Feld <strong>Tag/Monat</strong> den Eintrag <strong>Tag</strong> aus.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-139">For example, to view aging information by week, enter 7 in this field and select <strong>Day</strong> in the <strong>Day/Mth</strong> field.</span></span></p>
 <div class="alert">
 
-<span data-ttu-id="abf6a-140">**Hinweis:** Die in diesem Feld eingegebenen Informationen werden nur verwendet, falls keine Zahlungsfristdefinition ausgewählt wurde.</span><span class="sxs-lookup"><span data-stu-id="abf6a-140">**Note:** The information that you enter in this field is used only if you have not selected an aging period definition.</span></span> <span data-ttu-id="abf6a-141">Andernfalls wird die Druckrichtung in der Zahlungsfristdefinition definiert.</span><span class="sxs-lookup"><span data-stu-id="abf6a-141">Otherwise, the printing direction is defined on the aging period definition.</span></span></P>
+<span data-ttu-id="c0d5e-140">**Hinweis:** Die in diesem Feld eingegebenen Informationen werden nur verwendet, falls keine Zahlungsfristdefinition ausgewählt wurde.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-140">**Note:** The information that you enter in this field is used only if you have not selected an aging period definition.</span></span> <span data-ttu-id="c0d5e-141">Andernfalls wird die Druckrichtung in der Zahlungsfristdefinition definiert.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-141">Otherwise, the printing direction is defined on the aging period definition.</span></span></P>
 
 
 </div></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="abf6a-142"><strong>Tag/Monat</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-142"><strong>Day/Mth</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-143">Wählen Sie die Einheit aus (entweder <strong>Tag</strong> oder <strong>Monat</strong>), mit der die Periode im Feld <strong>Intervall</strong> definiert wird.</span><span class="sxs-lookup"><span data-stu-id="abf6a-143">Select the unit, either <strong>Day</strong> or <strong>Month</strong>, that is used to define the period in the <strong>Interval</strong> field.</span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-142"><strong>Tag/Monat</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-142"><strong>Day/Mth</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-143">Wählen Sie die Einheit aus (entweder <strong>Tag</strong> oder <strong>Monat</strong>), mit der die Periode im Feld <strong>Intervall</strong> definiert wird.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-143">Select the unit, either <strong>Day</strong> or <strong>Month</strong>, that is used to define the period in the <strong>Interval</strong> field.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="abf6a-144"><strong>Druckrichtung</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-144"><strong>Printing direction</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-145">Wählen Sie aus, ob die Berechnung der Salden und das Drucken des Fälligkeitsberichts für vergangene oder zukünftige Perioden erfolgen soll.</span><span class="sxs-lookup"><span data-stu-id="abf6a-145">Select whether to calculate balances and print the aging report for past or future periods.</span></span> <span data-ttu-id="abf6a-146">Die Datumsangaben werden relativ zum im Feld <strong>Saldo per</strong> ausgewählten Datum ausgewertet.</span><span class="sxs-lookup"><span data-stu-id="abf6a-146">The dates are evaluated relative to the date that is selected in the <strong>Balance as on</strong> field.</span></span> <span data-ttu-id="abf6a-147">Wählen Sie <strong>Rückwärts</strong> aus, um Informationen zu vergangenen Perioden anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="abf6a-147">Select <strong>Backward</strong> to show information for past periods.</span></span> <span data-ttu-id="abf6a-148">Wählen Sie <strong>Vorwärts</strong> aus, um Informationen zu zukünftigen Perioden anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="abf6a-148">Select <strong>Forward</strong> to show information for future periods.</span></span></p>
-<div class="alert"><span data-ttu-id="abf6a-149">
+<td><p><span data-ttu-id="c0d5e-144"><strong>Druckrichtung</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-144"><strong>Printing direction</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-145">Wählen Sie aus, ob die Berechnung der Salden und das Drucken des Fälligkeitsberichts für vergangene oder zukünftige Perioden erfolgen soll.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-145">Select whether to calculate balances and print the aging report for past or future periods.</span></span> <span data-ttu-id="c0d5e-146">Die Datumsangaben werden relativ zum im Feld <strong>Saldo per</strong> ausgewählten Datum ausgewertet.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-146">The dates are evaluated relative to the date that is selected in the <strong>Balance as on</strong> field.</span></span> <span data-ttu-id="c0d5e-147">Wählen Sie <strong>Rückwärts</strong> aus, um Informationen zu vergangenen Perioden anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-147">Select <strong>Backward</strong> to show information for past periods.</span></span> <span data-ttu-id="c0d5e-148">Wählen Sie <strong>Vorwärts</strong> aus, um Informationen zu zukünftigen Perioden anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-148">Select <strong>Forward</strong> to show information for future periods.</span></span></p>
+<div class="alert"><span data-ttu-id="c0d5e-149">
   
-<STRONG>Hinweis:</STRONG> Die in diesem Feld eingegebenen Informationen werden nur verwendet, falls keine Zahlungsfristdefinition ausgewählt wurde.</span><span class="sxs-lookup"><span data-stu-id="abf6a-149">
+<STRONG>Hinweis:</STRONG> Die in diesem Feld eingegebenen Informationen werden nur verwendet, falls keine Zahlungsfristdefinition ausgewählt wurde.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-149">
   
 <STRONG>Note:</STRONG> The information that you enter in this field is used only if you have not selected an aging period definition.</span></span></P>
 
@@ -124,24 +122,24 @@ ms.locfileid: "5236985"
 </div></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="abf6a-150"><strong>Detaildaten</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-150"><strong>Details</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-151">Aktivieren Sie dieses Kontrollkästchen, um die Buchungen aufzulisten, die in den im Bericht angezeigten Salden enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="abf6a-151">Select to list the transactions that are included in the balances that are shown on the report.</span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-150"><strong>Detaildaten</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-150"><strong>Details</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-151">Aktivieren Sie dieses Kontrollkästchen, um die Buchungen aufzulisten, die in den im Bericht angezeigten Salden enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-151">Select to list the transactions that are included in the balances that are shown on the report.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="abf6a-152"><strong>Beträge in Buchungswährung einbeziehen</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-152"><strong>Include amounts in transaction currency</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-153">Aktivieren Sie dieses Kontrollkästchen, um zusätzlich zu Beträgen in der Buchhaltungswährung Beträge in der Buchungswährung einzubeziehen.</span><span class="sxs-lookup"><span data-stu-id="abf6a-153">Select to include amounts in the transaction currency in addition to amounts in the accounting currency.</span></span> <span data-ttu-id="abf6a-154">Wenn dieses Kontrollkästchen nicht aktiviert ist, werden die Beträge im Bericht nur in der Buchhaltungswährung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="abf6a-154">If this check box is not selected, the amounts on the report are displayed only in the accounting currency.</span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-152"><strong>Beträge in Buchungswährung einbeziehen</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-152"><strong>Include amounts in transaction currency</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-153">Aktivieren Sie dieses Kontrollkästchen, um zusätzlich zu Beträgen in der Buchhaltungswährung Beträge in der Buchungswährung einzubeziehen.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-153">Select to include amounts in the transaction currency in addition to amounts in the accounting currency.</span></span> <span data-ttu-id="c0d5e-154">Wenn dieses Kontrollkästchen nicht aktiviert ist, werden die Beträge im Bericht nur in der Buchhaltungswährung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-154">If this check box is not selected, the amounts on the report are displayed only in the accounting currency.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="abf6a-155"><strong>Negativer Saldo</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-155"><strong>Negative balance</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-156">Aktivieren Sie dieses Kontrollkästchen, um Debitorenkonten mit negativen Salden einzubeziehen.</span><span class="sxs-lookup"><span data-stu-id="abf6a-156">Select to include customer accounts that have negative balances.</span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-155"><strong>Negativer Saldo</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-155"><strong>Negative balance</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-156">Aktivieren Sie dieses Kontrollkästchen, um Debitorenkonten mit negativen Salden einzubeziehen.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-156">Select to include customer accounts that have negative balances.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="abf6a-157"><strong>Konten mit Nullsaldo ausschließen</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-157"><strong>Exclude zero balance accounts</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-158">Aktivieren Sie dieses Kontrollkästchen, um Debitorenkonten mit Nullsaldo auszuschließen.</span><span class="sxs-lookup"><span data-stu-id="abf6a-158">Select to exclude customer accounts that have a zero balance.</span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-157"><strong>Konten mit Nullsaldo ausschließen</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-157"><strong>Exclude zero balance accounts</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-158">Aktivieren Sie dieses Kontrollkästchen, um Debitorenkonten mit Nullsaldo auszuschließen.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-158">Select to exclude customer accounts that have a zero balance.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="abf6a-159"><strong>Zahlungspositionierung</strong></span><span class="sxs-lookup"><span data-stu-id="abf6a-159"><strong>Payment positioning</strong></span></span></p></td>
-<td><p><span data-ttu-id="abf6a-160">Aktivieren Sie dieses Kontrollkästchen, um nicht ausgeglichene Zahlungen anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="abf6a-160">Select to display payments that have not been settled.</span></span> <span data-ttu-id="abf6a-161">Diese werden in der ersten Spalte des Berichts angezeigt.</span><span class="sxs-lookup"><span data-stu-id="abf6a-161">These are displayed in the first column of the report.</span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-159"><strong>Zahlungspositionierung</strong></span><span class="sxs-lookup"><span data-stu-id="c0d5e-159"><strong>Payment positioning</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d5e-160">Aktivieren Sie dieses Kontrollkästchen, um nicht ausgeglichene Zahlungen anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-160">Select to display payments that have not been settled.</span></span> <span data-ttu-id="c0d5e-161">Diese werden in der ersten Spalte des Berichts angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c0d5e-161">These are displayed in the first column of the report.</span></span></p></td>
 </tr>
 </tbody>
 </table>

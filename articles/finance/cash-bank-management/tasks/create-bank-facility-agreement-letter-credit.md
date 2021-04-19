@@ -2,11 +2,9 @@
 title: Eine Bankfazilitätsvereinbarung für einen Kreditbrief erstellen
 description: In dieser Aufgabe gehen Sie Schritt für Schritt durch das Erstellen einer Bankfazilitätsvereinbarung, um einen Kreditbrief zu bearbeiten.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankDocumentFacilityAgreement, BankAccountTableLookUp, BankDocumentFacilityAgreementExtension, DefaultDashboard
 audience: Application User
@@ -15,40 +13,40 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40d13e996b08efecb19be961c592230567656a4d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 582a41a0a4a3c509eae8a05c57b0910446addb26
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225488"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834835"
 ---
-# <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a><span data-ttu-id="c159c-103">Eine Bankfazilitätsvereinbarung für einen Kreditbrief erstellen</span><span class="sxs-lookup"><span data-stu-id="c159c-103">Create a bank facility agreement for a letter of credit</span></span>
+# <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a><span data-ttu-id="96217-103">Eine Bankfazilitätsvereinbarung für einen Kreditbrief erstellen</span><span class="sxs-lookup"><span data-stu-id="96217-103">Create a bank facility agreement for a letter of credit</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="c159c-104">In dieser Aufgabe gehen Sie Schritt für Schritt durch das Erstellen einer Bankfazilitätsvereinbarung, um einen Kreditbrief zu bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="c159c-104">This task walks through the creating a Bank facility agreement to process a Letter of credit.</span></span> <span data-ttu-id="c159c-105">Vor dieser Aufgabe möchten Sie Bankfazilitäten und Buchungsprofile einrichten.</span><span class="sxs-lookup"><span data-stu-id="c159c-105">You will want to set up bank facilities and posting profiles before this task.</span></span>  <span data-ttu-id="c159c-106">Für diese Aufgabe wird das Demo-Unternehmen "USMF" verwendet.</span><span class="sxs-lookup"><span data-stu-id="c159c-106">This task uses the demo company 'USMF'.</span></span>  
+<span data-ttu-id="96217-104">In dieser Aufgabe gehen Sie Schritt für Schritt durch das Erstellen einer Bankfazilitätsvereinbarung, um einen Kreditbrief zu bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="96217-104">This task walks through the creating a Bank facility agreement to process a Letter of credit.</span></span> <span data-ttu-id="96217-105">Vor dieser Aufgabe möchten Sie Bankfazilitäten und Buchungsprofile einrichten.</span><span class="sxs-lookup"><span data-stu-id="96217-105">You will want to set up bank facilities and posting profiles before this task.</span></span>  <span data-ttu-id="96217-106">Für diese Aufgabe wird das Demo-Unternehmen "USMF" verwendet.</span><span class="sxs-lookup"><span data-stu-id="96217-106">This task uses the demo company 'USMF'.</span></span>  
 
 
-## <a name="create-bank-facility-agreement"></a><span data-ttu-id="c159c-107">Bankfazilitätsvereinbarung erstellen</span><span class="sxs-lookup"><span data-stu-id="c159c-107">Create Bank facility agreement</span></span>
-1. <span data-ttu-id="c159c-108">Wechseln Sie zu "Kasse und Bankverwaltung" > "Kreditbriefe" > "Bankinstitutsvereinbarungen".</span><span class="sxs-lookup"><span data-stu-id="c159c-108">Go to Cash and bank management > Letters of credit > Bank facility agreements.</span></span>
-2. <span data-ttu-id="c159c-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="c159c-109">Click New.</span></span>
-3. <span data-ttu-id="c159c-110">Geben Sie im Feld "Vereinbarungsnummer" die Vereinbarungsnummer gemäß der Vereinbarung mit der Bank ein.</span><span class="sxs-lookup"><span data-stu-id="c159c-110">In the Agreement number field, enter the agreement number according to the agreement with the bank.</span></span>
-4. <span data-ttu-id="c159c-111">Geben Sie im Feld "Bankkonto" die Kontonummer bei der ausgebenden Bank ein.</span><span class="sxs-lookup"><span data-stu-id="c159c-111">In the Bank account field, enter the account number at the issuing bank.</span></span>
-5. <span data-ttu-id="c159c-112">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="c159c-112">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="c159c-113">Geben Sie im Feld "Startdatum" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="c159c-113">In the Start date field, enter a date and time.</span></span>
-7. <span data-ttu-id="c159c-114">Geben Sie im Feld "Enddatum" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="c159c-114">In the End date field, enter a date and time.</span></span>
-8. <span data-ttu-id="c159c-115">Erweitern oder reduzieren Sie den Abschnitt "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="c159c-115">Expand or collapse the General section.</span></span>
-9. <span data-ttu-id="c159c-116">Klicken Sie auf "Position hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="c159c-116">Click Add line.</span></span>
-10. <span data-ttu-id="c159c-117">Klicken Sie im Feld "Fazilitätstyp" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="c159c-117">In the Facility type field, click the drop-down button to open the lookup.</span></span>
-11. <span data-ttu-id="c159c-118">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="c159c-118">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="c159c-119">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="c159c-119">In the list, click the link in the selected row.</span></span>
-13. <span data-ttu-id="c159c-120">Geben Sie im Feld "Limit" den Fazilitätsbetrag ein, der mit der Bank vereinbart wurde.</span><span class="sxs-lookup"><span data-stu-id="c159c-120">In the Limit field, enter the facility amount that was negotiated with the bank.</span></span>
-14. <span data-ttu-id="c159c-121">Klicken Sie auf Speichern.</span><span class="sxs-lookup"><span data-stu-id="c159c-121">Click Save.</span></span>
-15. <span data-ttu-id="c159c-122">Klicken Sie auf "Erweitern", um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="c159c-122">Click Extend to open the drop dialog.</span></span>
-16. <span data-ttu-id="c159c-123">Geben Sie im Feld "Neue Vereinbarungsnummer" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="c159c-123">In the New agreement number field, type a value.</span></span>
-17. <span data-ttu-id="c159c-124">Geben Sie im Feld "Enddatum" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="c159c-124">In the End date field, enter a date and time.</span></span>
-18. <span data-ttu-id="c159c-125">Klicken Sie auf "Erweitern".</span><span class="sxs-lookup"><span data-stu-id="c159c-125">Click Extend.</span></span>
-19. <span data-ttu-id="c159c-126">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="c159c-126">Close the page.</span></span>
+## <a name="create-bank-facility-agreement"></a><span data-ttu-id="96217-107">Bankfazilitätsvereinbarung erstellen</span><span class="sxs-lookup"><span data-stu-id="96217-107">Create Bank facility agreement</span></span>
+1. <span data-ttu-id="96217-108">Wechseln Sie zu "Kasse und Bankverwaltung" > "Kreditbriefe" > "Bankinstitutsvereinbarungen".</span><span class="sxs-lookup"><span data-stu-id="96217-108">Go to Cash and bank management > Letters of credit > Bank facility agreements.</span></span>
+2. <span data-ttu-id="96217-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="96217-109">Click New.</span></span>
+3. <span data-ttu-id="96217-110">Geben Sie im Feld "Vereinbarungsnummer" die Vereinbarungsnummer gemäß der Vereinbarung mit der Bank ein.</span><span class="sxs-lookup"><span data-stu-id="96217-110">In the Agreement number field, enter the agreement number according to the agreement with the bank.</span></span>
+4. <span data-ttu-id="96217-111">Geben Sie im Feld "Bankkonto" die Kontonummer bei der ausgebenden Bank ein.</span><span class="sxs-lookup"><span data-stu-id="96217-111">In the Bank account field, enter the account number at the issuing bank.</span></span>
+5. <span data-ttu-id="96217-112">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="96217-112">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="96217-113">Geben Sie im Feld "Startdatum" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="96217-113">In the Start date field, enter a date and time.</span></span>
+7. <span data-ttu-id="96217-114">Geben Sie im Feld "Enddatum" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="96217-114">In the End date field, enter a date and time.</span></span>
+8. <span data-ttu-id="96217-115">Erweitern oder reduzieren Sie den Abschnitt "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="96217-115">Expand or collapse the General section.</span></span>
+9. <span data-ttu-id="96217-116">Klicken Sie auf "Position hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="96217-116">Click Add line.</span></span>
+10. <span data-ttu-id="96217-117">Klicken Sie im Feld "Fazilitätstyp" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="96217-117">In the Facility type field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="96217-118">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="96217-118">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="96217-119">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="96217-119">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="96217-120">Geben Sie im Feld "Limit" den Fazilitätsbetrag ein, der mit der Bank vereinbart wurde.</span><span class="sxs-lookup"><span data-stu-id="96217-120">In the Limit field, enter the facility amount that was negotiated with the bank.</span></span>
+14. <span data-ttu-id="96217-121">Klicken Sie auf Speichern.</span><span class="sxs-lookup"><span data-stu-id="96217-121">Click Save.</span></span>
+15. <span data-ttu-id="96217-122">Klicken Sie auf "Erweitern", um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="96217-122">Click Extend to open the drop dialog.</span></span>
+16. <span data-ttu-id="96217-123">Geben Sie im Feld "Neue Vereinbarungsnummer" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="96217-123">In the New agreement number field, type a value.</span></span>
+17. <span data-ttu-id="96217-124">Geben Sie im Feld "Enddatum" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="96217-124">In the End date field, enter a date and time.</span></span>
+18. <span data-ttu-id="96217-125">Klicken Sie auf "Erweitern".</span><span class="sxs-lookup"><span data-stu-id="96217-125">Click Extend.</span></span>
+19. <span data-ttu-id="96217-126">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="96217-126">Close the page.</span></span>
 
 
 
