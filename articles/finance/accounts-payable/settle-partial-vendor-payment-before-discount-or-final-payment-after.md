@@ -2,11 +2,9 @@
 title: Teilzahlungen vor dem Rabattdatum ausgleichen und vollständige Zahlung nach dem Rabattdatum
 description: Dieser Artikel führt Sie durch ein Szenario, in dem mehrere Teilzahlungen erfolgen, einige innerhalb des Skontoperiode und andere außerhalb der Skontoperiode.
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e125ca5fbebcf062eb17f56a2ef6669d1b6d6ae3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d34a9dd53b6a287ef512a5479c0ad1a51211577b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227327"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810341"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Teilzahlungen vor dem Rabattdatum ausgleichen und vollständige Zahlung nach dem Rabattdatum
 
@@ -48,7 +46,7 @@ Am 2. Juli möchte April 300,00 Euro dieser Rechnung ausgleichen. Die Zahlung is
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt.
 
-|                              |           |
+| Feld                        | Wert     |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
 | Skontobetrag         | -10,00    |
@@ -73,7 +71,7 @@ April zahlt den Rest der Rechnung am 15. Juli, also nach der Rabattperiode. Auf 
 
 Rabattinformationen werden am unteren Rand der Seite **Buchungen ausgleichen** angezeigt. April kann sehen, dass sie bereits einen Rabatt 3,00 genommen hat.
 
-|                              |           |
+| Feld                        | Wert     |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
 | Skontobetrag         | 0,00      |
@@ -99,10 +97,10 @@ Wenn der Kreditor April ermöglicht, einen Rabatt zu nehmen, auch wenn sie nach 
 
 Rabattinformationen werden am unteren Rand der Seite **Buchungen ausgleichen** angezeigt.
 
-|                              |           |
+| Feld                        | Wert     |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
-| Skontobetrag         | 7:00      |
+| Skontobetrag         | 7.00      |
 | Skonto verwenden            | Immer    |
 | Verwendetes Skonto          | -3,00     |
 | Zu verwendender Skontobetrag | -7,00     |

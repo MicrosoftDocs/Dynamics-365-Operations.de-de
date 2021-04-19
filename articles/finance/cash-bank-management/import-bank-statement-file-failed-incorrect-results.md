@@ -2,11 +2,9 @@
 title: Bankauszugsdatei-Importproblembehandlung
 description: Es ist wichtig, dass die Bankauszugdatei der Bank dem Layout entspricht, das von Microsoft Dynamics 365 Finance unterstützt wird. Aufgrund der strengen Standards für Bankauszüge, funktionieren die meisten Integrationen korrekt. Allerdings kann manchmal die Auszugsdatei nicht importiert werden oder enthält falsche Ergebnisse. In der Regel werden diese Probleme durch geringfügige Unterschiede in der Bankauszugdatei verursacht. In diesem Artikel wird beschrieben, wie Sie diese Unterschiede korrigieren und Probleme lösen können.
 author: panolte
-manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankStatementFormat
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac82a269e8f7773c58517ef017576c82c52039cb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0e01881a6b68526479d27014d49a718069cffc9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253962"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815883"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Bankauszugsdatei-Importproblembehandlung
 
@@ -34,6 +32,9 @@ Es ist wichtig, dass die Bankauszugdatei der Bank dem Layout entspricht, das von
 ------------------
 
 Nachdem Sie versuchen, eine Bankauszugsdatei zu importieren, wechseln Sie zur Einzelvorgangshistorie der Datenverwaltung und den darin enthaltenen Ausführungsdetails, um den Fehler zu suchen. Der Fehler kann auf einen Kontoauszug, ein Saldo oder eine Auszugszeile verweisen. Es ist allerdings unwahrscheinlich, genügend Informationen zu erhalten, um das Feld oder das Element zu identifizieren, das das Problem verursacht.
+
+> [!NOTE]
+> Importierte Bankauszüge können sich nur für einen bestimmten Zeitpunkt überschneiden.  Wenn ein Auszug beispielsweise am 1. Januar 2021 um 12:00 AM endet, kann das Anfangsdatum für den nächsten Auszug 12:00 AM am 1. Januar 2021 um 12:00:00 AM sein.
 
 ## <a name="what-are-the-differences"></a>Wie lauten die Unterschiede:
 Vergleichen Sie die Bankdateilayoutdefinition mit der Finance-Importdefinition, und achten Sie auf eventuelle Unterschiede in den Feldern und den Elementen. Vergleichen Sie die Bankauszugdatei mit der jeweiligen Finance-Datei. In den Dateien ISO20022 sollten sämtliche Abweichungen einfach sein anzuzeigen.
@@ -94,14 +95,13 @@ Manchmal können Soll- als Habenbeträge importiert werden, und Haben- als Sollb
 -   MT940XML-to-Reconcilation.xslt GetCreditDebitIndicator Vorlage
 
 ## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Beispiele für Bankauszugsformate und technische Layouts
-Die folgende Tabelle zeigt Beispiele der technischen Layoutdefinitionen für erweiterte Importdateien zur Bankabstimmung und drei entsprechenden Beispieldateien für Bankauszüge auf. Sie können die Beispielsdateien und die technischen Layouts hier herunterladen: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
-
+Die folgende Tabelle zeigt Beispiele der technischen Layoutdefinitionen für erweiterte Importdateien zur Bankabstimmung und drei entsprechenden Beispieldateien für Bankauszüge auf. Sie können die Beispielsdateien und die technischen Layouts hier herunterladen: [Importdateibeispiele](//download.microsoft.com/download/8/e/c/8ec8d2d0-eb8c-41fb-ad8c-f01a4d670a44/Dynamics365FinanceAdvancedBankStatementLayouts.xlsx)  
 
 | Technische Layoutdefinition                             | Beispieldatei für Bankauszüge          |
 |---------------------------------------------------------|--------------------------------------|
-| DynamicsAXMT940Layout                                   | MT940StatementExample                |
-| DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
-| DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+| DynamicsAXMT940Layout                                   | [MT940StatementExample](//download.microsoft.com/download/2/d/c/2dcc4e55-ddc8-4a74-b79c-250fae201c3c/mt940StatementExample.txt)                |
+| DynamicsAXISO20022Layout                                | [ISO20022StatementExample](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdownload.microsoft.com%2Fdownload%2F1%2F5%2F5%2F155d84ed-c250-48f3-b0b1-c5a431e7855b%2FISO20022-MultipleStatements.xml&data=04%7C01%7CRobert.Schlomann%40microsoft.com%7C30d0c233cb6546547d0a08d8f4965edc%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637528273956712775%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=3VzvLZK%2BO8PjuI7XVdC6rD2j3nUJfteo7zFp%2B1s9BwM%3D&reserved=0)             |
+| DynamicsAXBAI2Layout                                    | [BAI2StatementExample](//download.microsoft.com/download/1/1/6/11693f57-bfc1-4993-a274-5fb978be70fa/BAI2StatementExample.txt)                 |
 
 
 

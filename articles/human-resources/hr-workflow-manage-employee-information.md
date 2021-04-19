@@ -2,11 +2,9 @@
 title: Workflows zum Verwalten von Mitarbeiterinformationen verwenden
 description: In diesem Artikel wird erläutert, wie die Sie Workflowfunktion für die Personalverwaltung verwenden können, um Mitarbeiterdaten zu verwalten. So können Sie beispielsweise einen Workflow einer Position zuordnen und einen Genehmigungsworkflow konfigurieren, der gestartet wird, wenn Mitarbeiter Ihren Datensatz ändern.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 923ec7d3940124da4ada50d23f88e3ab3646a5a0
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: b76adc228a949d334213eda605972f062aa0e46b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5463501"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791268"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>Workflows zum Verwalten von Mitarbeiterinformationen verwenden
 

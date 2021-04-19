@@ -2,7 +2,6 @@
 title: Anzeigen und Aktualisieren von Entitätsdaten mit Excel
 description: In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics-Add-In für Excel angezeigt, aktualisiert und bearbeitet werden.
 author: jasongre
-manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
@@ -15,19 +14,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b7da9867ed86921f3487077081ec63e8b44e92c
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 05b5126b29351ca3093e75e878682f7a07186898
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562548"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752965"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Anzeigen und Aktualisieren von Entitätsdaten mit Excel 
 
 [!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics-Add-In für Excel angezeigt, aktualisiert und bearbeitet werden. Um Entitätsdaten zu öffnen, können Sie entweder mit Excel oder Finance and Operations-Apps beginnen.
 

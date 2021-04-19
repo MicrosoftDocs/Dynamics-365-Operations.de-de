@@ -2,11 +2,9 @@
 title: Neuerungen oder Änderungen in Human Resources
 description: Jede Woche stellen wir ein neues Release für Microsoft Dynamics 365 Human Resources zur Verfügung. In den hier aufgeführten Themen werden die wöchentlich vorgenommenen Änderungen im Detail beschrieben.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm, FeatureManagementWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e3412f446fe9fb8e3c2ca5407b22680dec3c3b82
-ms.sourcegitcommit: 75b432ce9019c81253eb6bd865db905701e28a26
+ms.openlocfilehash: 6a7d86e85ef9cff493dcdfab498d107163f381d1
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5579330"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5806017"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Neuerungen oder Änderungen in Human Resources
 
@@ -51,6 +49,7 @@ Weitere Informationen über bevorstehende Funktionen oder den Aktualisierungspro
 
 Um herauszufinden, was in jeder zweiwöchentlichen Version von Human Resources neu ist oder geändert wurde, lesen Sie die folgenden Artikel:
 
+[22. März 2021](hr-whats-new-2021-03-22.md)</br>
 [8. März 2021](hr-whats-new-2021-03-08.md)</br>
 [22. Februar 2021](hr-whats-new-2021-02-22.md)</br>
 [28. Januar 2021](hr-whats-new-2021-01-28.md)</br>

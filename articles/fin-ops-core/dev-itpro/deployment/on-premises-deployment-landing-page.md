@@ -2,8 +2,7 @@
 title: Startseite der lokalen Bereitstellung
 description: Dieses Thema liefert Informationen und Links zu Inhalten über lokale Bereitstellungen.
 author: sericks007
-manager: AnnBe
-ms.date: 11/23/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: dc9642ee224290891c738c9d0d2b96ff119a1622
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: caa3fccd9dcdfb3950958e793057131e77676d91
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564059"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749304"
 ---
 # <a name="on-premises-deployment-home-page"></a>On-Premises-Bereitstellung – Startseite
 
@@ -38,12 +37,14 @@ Sie können Dynamics 365 Finance und Operations (on-premises) bereitstellen. Wen
 
 ## <a name="onboard"></a>Aufnehmen
 - [Lokale Projekte in Lifecycle Services (LCS) erstellen](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Einrichten und bereitstellen lokaler Umgebungen (Platform Update 12 und höher)](setup-deploy-on-premises-pu12.md)
+- [Einrichten und bereitstellen lokaler Umgebungen (Platform Update 41 und höher)](setup-deploy-on-premises-pu41.md)
+- [Lokale Umgebungen einrichten und bereitstellen (Plattformupdate 12 bis 40)](setup-deploy-on-premises-pu12.md)
 - [Netzwerkdruckergeräte in lokalen Umgebungen installieren](../analytics/install-network-printer-onprem.md)
 - [SQL Server Reporting Services für lokale Bereitstellungen konfigurieren](../analytics/configure-ssrs-on-premises.md)
-- [Angepasste Modelle für lokale Umgebungen entwickeln und bereitstellen](develop-deploy-custom-models-on-premises.md)
+- [Benutzerdefinierte Modelle für lokale Umgebungen entwickeln und bereitstellen](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>In Ihrer lokalen Bereitstellung arbeiten
+- [Hohe Verfügbarkeit für SQL Server Reporting Services-Knoten (SSRS) konfigurieren](onprem-SSRSHA.md)
 - [Dokumentverwaltung konfigurieren](../../fin-ops/organization-administration/configure-document-management.md)
 - [Elektronische Berichtskonfigurationen (ER) importieren](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Generieren, Veröffentlichen und Drucken von Dokumenten in lokalen Bereitstellungen](../analytics/printing-capabilities-on-premises.md)

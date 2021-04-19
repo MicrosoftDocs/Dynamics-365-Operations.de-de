@@ -2,11 +2,9 @@
 title: Anpassen der deutschen Protokolldateikonfiguration
 description: Im folgenden Verfahren sehen Sie, wie Sie die deutsche Protokolldateikonfiguration durch Hinzufügen einer neuen Tabellengruppe und Auswählen einer Tabelle mit Feldern für die Datenexportdefinition anpassen.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERTableNameLookup, ERModelGDPdUFunctionEditor,  ERExpressionDesignerFormula
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 06d0440c6e20cffa73ac573e7e34b01571e29226
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cfb0d9c212543226c0ea18de37498b6ed2bee5a0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207193"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822635"
 ---
 # <a name="customize-german-audit-file-configuration"></a>Anpassen der deutschen Protokolldateikonfiguration
 

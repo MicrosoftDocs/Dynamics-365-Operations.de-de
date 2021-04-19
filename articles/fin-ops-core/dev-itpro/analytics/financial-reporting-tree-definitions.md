@@ -1,27 +1,26 @@
 ---
 title: Definitionen für Berichtsbaumstrukturen in Finanzberichten
 description: Dieser Artikel beschreibt Definitionen für Berichtsbaumstrukturen. Eine Definition für Berichtsbaumstrukturen ist eine Berichtskomponente, die die Struktur einer Organisation definiert.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/07/2019
+author: jinniew
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 367df467d20fb7c60821c9de1f86758196f4faf3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568774"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819937"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definitionen für Berichtsbaumstrukturen in Finanzberichten
 
@@ -74,7 +73,7 @@ Um eine Berichtstruktur-Definition zu erstellen, führen Sie die folgenden Schri
     | Einschließen/Zeichenposition       | Dieser Abschnitt listet die Dimensionen auf, die in den Finanzdaten definiert werden und gibt die Anzahl der Zeichen im längsten Wert an, der für jede Dimension definiert wurde. Wählen Sie ein Kontrollkästchen für eine Dimension aus, um diese Dimension in die Berichtstruktur-Hierarchie einzuschließen. |
     | Segmenthierarchie und -bereiche     | Dieser Abschnitt zeigt die Dimensionshierarchie. Sie können die Dimensionen in der Liste verschieben, um die Reihenfolge ihre Berichterstellung zu ändern. In den Feldern **Ausgangsdimension** und **Zieldimension** können Sie den Wertebereich jeder Dimension angeben. Wenn Sie keinen Bereich angeben, werden alle Dimensionswerte in die Berichtsstruktur eingefügt.<blockquote>[!NOTE] Falls Sie mehr als eine Dimension verwenden, werden nur Dimensionskombinationen, in denen Buchungen vorgenommen wurden, in den Ergebnissen zurückgegeben.</blockquote> |
 
-    Einen Screenshot, der ein Beispiel für das Dialogfenster **Berichtseinheiten aus Dimensionen einfügen** zeigt, finden Sie im Abschnitt „Beispiel für das Dialogfenster „Berichtseinheiten aus Dimensionen einfügen““ weiter unten in diesem Artikel.
+    Eine Abbildung, die ein Beispiel für das Dialogfenster **Berichtseinheiten aus Dimensionen einfügen** zeigt, finden Sie im Abschnitt „Beispiel für das Dialogfenster „Berichtseinheiten aus Dimensionen einfügen““ weiter unten in diesem Artikel.
 
 5. Um zusätzliche Segmente zu erstellen (z. B. durch das Teilen eines Segments in zwei kürzere Segmente), klicken Sie auf die richtige Position in einem **Zeichenposition**-Feld, und klicken Sie auf **Segmente teilen**.
 6. Um zwei Segmente in einem Segment zusammenführen, klicken Sie in jedes der Segmentfelder, die zusammengeführt werden sollen, und klicken Sie anschließend auf **Segmente kombinieren**.
@@ -186,35 +185,35 @@ Die Berichtseinheitenstruktur in der folgenden Berichtstruktur ist wie folgt:
 - Die Detailberichtseinheiten der niedrigsten Ebene (Home Sales, Auto Sales, Client Services, und Operations) stellen Abteilungen in den Finanzdaten dar. Diese Berichtseinheiten befinden sich im schattierten Bereich des Diagramms.
 - Die zusammengefassten Einheiten auf höherer Ebene fassen Informationen aus den Detaileinheiten zusammen.
 
-[![ContosoEntertainmentSummaryReportStructure](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso-Zusammenfassungsberichtsstruktur – Beispiel 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Berichtseinheitsstruktur - Beispiel 2
 
 Das folgende Diagramm zeigt eine Berichtstruktur mit eine Organisationsstruktur, die nach Unternehmensfunktion aufgeteilt ist.
 
-[![summaryofallunitscontoso](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso-Zusammenfassungsberichtsstruktur – Beispiel 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Beispiel für das Dialogfeld "Berichtseinheiten aus Dimensionen einfügen"
 
 Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Berichtseinheiten aus Dimensionen einfügen**. In diesem Beispiel ist das Ergebnis eine Kombination aus Unternehmenseinheiten, Kostenstellen und Abteilungen.
 
-[![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Berichtseinheiten einfügen](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Die resultierende Berichtstruktur-Definition ist nach Geschäftseinheit, dann nach Kostenstelle und dann nach Abteilung sortiert. Die Dimension für die fünfte Berichtseinheit ist **Unternehmenseinhet = \[001\] Kostenstelle =\[\], Abteilung = \[022\]**, und identifiziert eine Berichtseinheit für Konten die spezifisch für die Unternehmenseinheit 001 und Abteilung 022 sind.
 
-[![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Abbildung des Berichtsbaums](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Beispiele für Daten-Rollup
 
 Die folgenden Beispiele zeigen mögliche Informationen an, die in einer Berichtsstruktur-Definition als ein Beispiel für Daten-Rollup verwendet werden.
 
-#### <a name="example-1"></a>Beispiel 1
+#### <a name="example-1"></a>Beispiel 1
 
-[![MutliCompanyRollUp](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Roll-up für mehrere Unternehmen](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
-#### <a name="example-2"></a>Beispiel 2
+#### <a name="example-2"></a>Beispiel 2
 
-[![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Abteilungsübergreifendes Roll-up](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

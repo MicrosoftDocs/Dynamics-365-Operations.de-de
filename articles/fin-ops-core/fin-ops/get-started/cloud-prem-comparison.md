@@ -2,7 +2,6 @@
 title: Vergleich von Cloudfunktionen und lokalen Funktionen
 description: Das Thema zeigt Funktionen, die in Cloud und lokal unterstützt werden.
 author: sericks007
-manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 52dfff77fa7d14e560ce20596a4d79edeadb5390
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e2126983fef2b59af5c8082a6495f808afeb5f9c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566635"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744050"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Vergleich von Cloud- und On-Premises-Funktionen
 
@@ -43,9 +42,9 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 |---------------------|-----------------------------|-----------|-----------------|
 | Compliance und Bescheinigungen        |                                                                                           | Ja       | Ja             |
 |                                      | SOC 1 Type 1 Zertifizierung                                                                | Ja       | Nein              |
-| Datenverwaltung und -integration      |                                                                                           | Ja       | Ja             
+| Datenverwaltung und -integration      |                                                                                           | Ja       | Ja             |
 |                                      | Exportieren von Daten in Ihrem eigenen Data Warehouse                                                    | Ja       | Ja             |
-|                                      | Aktivieren des Exports von stufenweisen Aktualisierungen an einer Datenentität                                 | Ja       | Ja              |
+|                                      | Aktivieren des Exports von stufenweisen Aktualisierungen an einer Datenentität                                 | Ja       | Ja             |
 |                                      | Datenintegrationen                                                                         | Ja       | Ja             |
 | Dokumentverwaltung                  |                                                                                           | Ja       | Ja             |
 | Finanzverwaltung                 |                                                                                           | Ja       | Ja             |
@@ -62,8 +61,8 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 |                                      | Analytische Arbeitsbereiche                                                                     | Ja       | Nr.              |
 |                                      | Intelligente Geschäftsprozesse: Empfehlungen                                             | Ja       | Nr.              |
 |                                      | Power BI-Berichte mit OData mithilfe des Power BI-Desktops oder des Excel PowerQuery-Tools genehmigen    | Ja       | Nr.              |
-|                                      | SQL Server Reporting Services unterstützt die Skalierung nach Außen                                 | Ja       | Nein              |
-|                                      | Telemetrie wird in die Cloud übertragen                                                   | Ja       | Nein              |
+|                                      | SQL Server Reporting Services unterstützt die Skalierung nach Außen                                 | Ja       | Ja             |
+|                                      | Telemetrie wird in die Cloud übertragen                                                   | Ja       | Nr.              |
 | Lifecycle Services                   |                                                                                           | Ja       | Ja             |
 |                                      | Konfigurierbare Geschäftsprozesse                                                           | Ja       | Nein              |
 | Lokalisierungen                        |                                                                                           | Ja       | Ja             |
@@ -85,7 +84,7 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 
 | **Bereich**                | **Funktion**             | **Cloud** | **Lokal** |
 |-------------------------|-------------------|-----------|-----------------|
-| Anlagenverwaltung                     |                                                                                           | Ja       | Nr. |
+| Anlagenverwaltung                     |                                                                                           | Ja       | Nr.              |
 | Compliance und Bescheinigungen        |                                                                                           | Ja       | Ja             |
 |                                      | SOC 1 Type 1 Zertifizierung                                                                | Ja       | Nr.              |
 | Kostenrechnung                      |                                                                                           | Ja       | Ja             |
@@ -96,7 +95,7 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 | Datenverwaltung und -integration      |                                                                                           | Ja       | Ja             |
 |                                      | Konfigurations-getriebene Erweiterung                                                            | Ja       | Nr.              |
 |                                      | Exportieren von Daten in Ihrem eigenen Data Warehouse                                                    | Ja       | Ja             |
-|                                      | Aktivieren des Exports von stufenweisen Aktualisierungen an einer Datenentität                                 | Ja       | Ja              |
+|                                      | Aktivieren des Exports von stufenweisen Aktualisierungen an einer Datenentität                                 | Ja       | Ja             |
 |                                      | Datenintegrationen                                                                         | Ja       | Ja             |
 | Dokumentverwaltung                  |                                                                                           | Ja       | Ja             |
 | Hilfe                                 |                                                                                           | Ja       | Nein              |
@@ -111,7 +110,7 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 |                                      | Analytische Arbeitsbereiche                                                                     | Ja       | Nr.              |
 |                                      | Intelligente Geschäftsprozesse: Empfehlungen                                             | Ja       | Nr.              |
 |                                      | Power BI-Berichte mit OData mithilfe des Power BI-Desktops oder des Excel PowerQuery-Tools genehmigen    | Ja       | Nr.              |
-|                                      | SQL Server Reporting Services unterstützt die Skalierung nach Außen                                 | Ja       | Nr.              |
+|                                      | SQL Server Reporting Services unterstützt die Skalierung nach Außen                                 | Ja       | Ja             |
 |                                      | Telemetrie wird in die Cloud übertragen                                                   | Ja       | Nr.              |
 | Lagerverwaltung                 |                                                                                           | Ja       | Ja             |
 | Lifecycle Services                   |                                                                                           | Ja       | Ja             |

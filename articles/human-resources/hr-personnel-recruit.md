@@ -2,11 +2,9 @@
 title: Kandidaten für Stellen anwerben
 description: Dieses Thema zeigt, wie Sie Kandidaten in Dynamics 365 Human Resources anwerben.
 author: andreabichsel
-manager: tfehr
 ms.date: 12/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6aca285133495dfe023dfd18bdeb050aabcafee6
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 9259cfa78d65f36da653c807a66e291b3cb01c63
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5478283"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802526"
 ---
 # <a name="recruit-job-candidates"></a>Kandidaten für Stellen anwerben
 

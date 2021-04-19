@@ -2,11 +2,9 @@
 title: DE-00002 Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr
 description: Dieses Handbuch veranschaulicht, wie die Berechnung der Abschreibung für zusätzliche Anschaffungen eingerichtet.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, AssetDepreciationProfile
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4bd525b068ef1eea3327af80259e895b18062cfb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7b8d7ff694d7a7f4a2222ea8fe93ef4643989b70
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5204706"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822631"
 ---
 # <a name="de-00002-depreciation-adjustments-for-additional-acquisitions-in-the-second-year"></a>DE-00002 Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr
 

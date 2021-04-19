@@ -1,12 +1,10 @@
 ---
 title: Cashflowplanung
 description: Dieses Thema bietet einen Überblick über den Cashflow-Planungsprozess. Es wird auch erklärt, wie Cashflow-Planung in andere Module im System integriert wird.
-author: saraschi2
-manager: AnnBe
-ms.date: 08/03/2020
+author: JodiChristiansen
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 98bf906569f99c74fef747381e8f27b1d9f91a5f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2a0bcb5266472b3d0e936d27c9f599d2c6b16d7a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232464"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819649"
 ---
 # <a name="cash-flow-forecasting"></a>Cashflowplanung
 
@@ -45,8 +43,7 @@ Cashflow-Planung kann in die Module "Hauptbuch", "Kreditoren", "Debitoren", "Bud
 - **Budgeterfassungseinträge** – Budgeterfassungseinträge, die für die Cashflow-Planung ausgewählt wurden.
 - **Bedarfsplanung** – Bestandsplanungsmodellpositionen, die für die Cashflow-Planung ausgewählt wurden.
 - **Beschaffungssplanung** – Bestandsplanungsmodellpositionen, die für die Cashflow-Planung ausgewählt wurden.
-
-Obwohl es keine direkte Integration in die Projektverwaltung und - verrechnung gibt, gibt es mehrere Möglichkeiten, um Projektbuchungen in die Cashflow-Planung einzubeziehen. Gebuchte Projektrechnungen werden in der Planung als Teil der offenen Debitorenbuchungen einbezogen. Durch das Projekt initiierte Aufträge und Bestellungen sind bei der Kapazitätsplanung für offene Aufträge enthalten, nachdem diese in das System eingegeben wurden. Projektplanung kann auch in ein Sachkontobudgetmodell übertragen werden. Dieses Sachkontobudgetmodell ist dann in der Cashflow-Planung als Teil der Budgetregistereinträge enthalten.
+- **Projektplanungen** – Projektverwaltungs- und -verrechnungsplanungen unter Verwendung des Planungsmodells.
 
 ## <a name="configuration"></a>Variante
 
@@ -97,6 +94,14 @@ Auf der neuen Registerkarte auf der **Einrichtung der Cashflow-Planung** Seite k
 
 Wählen Sie auf der Registerkarte **Dimensionen** aus der Liste der zur Filterung verwendeten Dimensionen aus und verschieben Sie sie mit den Pfeiltasten in die rechte Spalte. Zum Filtern von Cashflow-Planungsdaten können nur zwei Dimensionen ausgewählt werden. 
 
+### <a name="project-management-and-accounting"></a>Projektverwaltung und -buchhaltung
+
+In Version 10.0.17 ermöglicht eine neue Funktion die Integration in die Projektverwaltung und -verrechnung sowie in die Cashflow-Planung. In dem **Funktionsverwaltung**-Arbeitsbereich schalten Sie die **Cashflow-Projektplanung**-Funktion zur Einbeziehung der prognostizierten Kosten und Einnahmen in die Cashflow-Planung ein. Auf der Registerkarte **Projektverwaltung und -verrechnung** der Seite **Cashflow-Planungssetup** wählen Sie die Projekttypen und Transaktionstypen aus, die in die Cashflow-Planung aufgenommen werden sollen. Wählen Sie dann das Projektplanungsmodell aus. Ein Submodell vom Reduktionstyp funktioniert am besten. Die Liquiditätskonten, die in der Debitorenkonfiguration eingegeben wurden, werden als Standardliquiditätskonten verwendet. Daher müssen Sie beim Einrichten der Cashflow-Planung keine Standard-Liquiditätskonten eingeben. Es kann auch ein Budgetmodell verwendet werden, es kann jedoch nur ein Typ auf der Seite **Cashflow-Planungssetup** für Projektverwaltung und -verrechnung ausgewählt werden. Ein Planungsmodell bietet die größte Flexibilität, wenn Projektverwaltung und -verrechnung oder Project Operations verwendet werden.
+
+Nachdem die Funktion zur Cashflow-Projektplanung aktiviert wurde, kann die Cashflow-Planung für jedes Projekt auf der Seite **Alle Projekte** angezeigt werden. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Plan** in der Gruppe **Planung** die Option **Cashflow-Planung** aus. In den **Bargeldübersicht**-Arbeitsbereichen (siehe den Abschnitt [Berichterstattung](#reporting) weiter unten in diesem Thema) zeigt der Projektplanungs-Transaktionstyp die Zuflüsse (Projektplanungseinnahmen) und die Abflüsse (Projektplanungskosten) an. Die Beträge können nur einbezogen werden, wenn das **Projektphase**-Feld in den **Bargeldübersicht**-Arbeitsbereichen auf **In Bearbeitung** eingestellt ist.
+
+Projekttransaktionen werden weiterhin auf verschiedene Weise in die Cashflow-Planungen einbezogen, unabhängig davon, ob die **Cashflow-Projektplanung**-Funktion aktiviert ist. Gebuchte Projektrechnungen werden in der Planung als Teil der offenen Debitorenbuchungen einbezogen. Durch das Projekt initiierte Aufträge und Bestellungen sind bei der Kapazitätsplanung für offene Aufträge enthalten, nachdem diese in das System eingegeben wurden. Projektplanung kann auch in ein Sachkontobudgetmodell übertragen werden. Dieses Sachkontobudgetmodell ist dann in der Cashflow-Planung als Teil der Budgetregistereinträge enthalten. Wenn Sie die Funktion **Cashflow-Projektplanung** eingeschaltet haben, übertragen Sie keine Projektplanungen in ein Sachkontobudgetmodell, da diese Aktion dazu führt, dass die Projektplanungen zweimal gezählt werden.
+
 ### <a name="calculation"></a>Herstellkostenkalkulation
 
 Bevor Sie Cashflowplanungsanalyse anzeigen können, muss der Cashflow-Berechnungsprozess ausgeführt werden. Der Berechnungsprozess projiziert die künftigen Bargeldauswirkungen von Buchungen, die eingegeben wurden.
@@ -137,7 +142,7 @@ Zugriff auf den Arbeitsbereich für das aktuelle Unternehmen wird über die Arbe
 
 Der Arbeitsbereich **Bargeldüberblick – alle Unternehmen** zeigt die Cashflowplanungsanalyse in der Systemwährung an. Die Systemwährung und der Systemwechselkurstyp, die zur Analyse verwendet werden, werden auf der Seite **Systemparameter** definiert. Der Arbeitsbereich zeigt einen Überblick der Cashflowplanung und Bankkontosalden für alle Unternehmen an. Ein Diagramm aus Barzu- und -ausflüssen bietet eine Übersicht der künftigen Geldbewegungen und Salden in der Systemwährung, zusammen mit detaillierten Informationen zu den Planungsbuchungen. Sie können auch die folgenden Währungssalden sehen.
 
-Der Arbeitsbereich **Bargeldüberblick – aktuelles Unternehmen** zeigt Cashflowplanungsanalyse in der definierten Buchhaltungswährung des Unternehmens. Die Buchhaltungswährung, die zur Analyse verwendet wird, wird auf der Seite **Sachkonto** definiert. Der Arbeitsbereich zeigt einen Überblick der Cashflowplanung und Bankkontosalden für das aktuelle Unternehmen an. Ein Diagramm aus Barzu- und -ausflüssen bietet eine Übersicht der künftigen Geldbewegungen und Salden in der Buchhaltungswährung, zusammen mit detaillierten Informationen zu den Planungsbuchungen. Sie können auch die folgenden Währungssalden sehen.
+Der Arbeitsbereich **Bargeldüberblick – aktuelles Unternehmen** zeigt Cashflowplanungsanalysen in der definierten Buchhaltungswährung des Unternehmens. Die Buchhaltungswährung, die zur Analyse verwendet wird, wird auf der Seite **Sachkonto** definiert. Der Arbeitsbereich zeigt einen Überblick der Cashflowplanung und Bankkontosalden für das aktuelle Unternehmen an. Ein Diagramm aus Barzu- und -ausflüssen bietet eine Übersicht der künftigen Geldbewegungen und Salden in der Buchhaltungswährung, zusammen mit detaillierten Informationen zu den Planungsbuchungen. Sie können auch die folgenden Währungssalden sehen.
 
 Weitere Informationen zur Cashflowplanungsanalyse finden Sie im Thema [Power BI-Inhalt Bargeldübersicht](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content).
 

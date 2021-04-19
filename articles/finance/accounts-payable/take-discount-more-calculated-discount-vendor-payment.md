@@ -2,11 +2,9 @@
 title: Für eine Kreditorenzahlung mehr als den berechneten Rabatt nehmen
 description: Dieser Artikel führt Sie durch ein Szenario, in dem ein Skonto für einen Betrag übernommen wird, der höher als der ursprünglich auf der Rechnung verfügbare Rabatt ist Dieses Szenario kann eintreten, wenn eine Organisation eine Vereinbarung mit dem Kreditor getroffen hat, einen geringen Betrag zu zahlen als auf der Rechnung vermerkt.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a56331f76867aeac0bad0912749d96f959513e0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 62f2088ff04a0ef5ffe6ffe47b85f47e6957264d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235884"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810245"
 ---
 # <a name="take-more-than-the-calculated-discount-for-a-vendor-payment"></a>Für eine Kreditorenzahlung mehr als den berechneten Rabatt nehmen
 
@@ -38,10 +36,10 @@ Kreditor 3051 gibt Fabrikam ein Skonto von 4 Prozent, wenn eine Rechnung in sieb
 
 Rabattinformationen werden am unteren Rand der Seite **Buchungen ausgleichen** angezeigt.
 
-|                              |           |
+| Feld                        | Wert     |
 |------------------------------|-----------|
 | Skontodatum           | 7/12/2015 |
-| Skontobetrag         | 60,00     |
+| Skontobetrag         | 60.00     |
 | Skonto verwenden            | Normal    |
 | Verwendetes Skonto          | 0,00      |
 | Zu verwendender Skontobetrag | 60,00     |

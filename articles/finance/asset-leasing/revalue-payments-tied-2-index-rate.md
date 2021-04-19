@@ -2,11 +2,9 @@
 title: An eine Indexrate gebundene Mietzahlungen neu bewerten
 description: In diesem Thema wird die Regulierung beschrieben, die an der Mietverbindlichkeit für eine Anlage mit Nutzungsrecht am Leasingobjekt vorgenommen wird, wenn sich die variablen Mietzahlungen aufgrund einer Änderung des Indexsatzes ändern.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 79e8922a6118693db941ec259a2a1004e3522954
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8d743bb51cfc1487e76ee46adfd59276f1c1b48b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241369"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819721"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>An eine Indexrate gebundene Mietzahlungen neu bewerten
 

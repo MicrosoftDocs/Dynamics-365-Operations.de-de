@@ -2,7 +2,6 @@
 title: Ändern von elektronisches Berichterstellungsformaten, indem Excel-Vorlagen erneut angewendet werden
 description: In diesem Thema wird beschrieben, wie Sie das Format der elektronischen Berichterstellung (EB) ändern können, das verwendet wird, um Geschäftsdokumente zu generieren, indem eine geänderte Excel-Tabelle erneut angewendet wird.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f28760f42d16b6ffcd301f121e583542bce0fac0
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0ab7686ac0aba982fd44195214df878ba3ede446
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559289"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748716"
 ---
 # <a name="modify-electronic-reporting-formats-by-reapplying-excel-templates"></a>Elektronische Berichterstellungsformate ändern, indem Microsoft Excel-Vorlagen erneut angewendet werden
 

@@ -2,11 +2,9 @@
 title: Integrationsbeispiel für Steuererfassungsdienst für Deutschland
 description: In diesem Thema erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für Deutschland.
 author: josaw
-manager: annbe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 50897f2a52a258d0366bf66242850f05ef6537d9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 520c4e0ea56335d1750a17eb782f9262cd366cc1
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225729"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798845"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Integrationsbeispiel für Steuererfassungsdienst für Deutschland
 

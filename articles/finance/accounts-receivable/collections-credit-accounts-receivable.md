@@ -2,11 +2,9 @@
 title: Inkasso bei Debitoren
 description: Informationen zu Debitoreninkassi werden in einer zentralen Ansicht auf der Seite „Inkassi“ von Microsoft Dynamics 365 Finance verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Kriterien generiert werden, oder über die Seite „Debitoren”.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4dd9887debf73b94fb976af873690dcc53b8f53c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3dc4dc556cbb8bd461e904ef569016acd4276f7a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5224788"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814247"
 ---
 # <a name="collections-in-accounts-receivable"></a>Inkasso bei Debitoren
 

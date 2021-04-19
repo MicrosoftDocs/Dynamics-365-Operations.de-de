@@ -2,11 +2,9 @@
 title: Steuerrückerstattungsdokumente für Ungarn
 description: In diesem Thema wird erläutert, wie Steuerrückerstattungsdokumente für Ungarn eingerichtet und erstellt werden.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/27/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Austria
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 089391a739ecf26766739d24d9d9b2dc977079cd
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: af39f650ed7536cdeaad8688136136ae55e1a551
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212975"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815007"
 ---
 # <a name="tax-reimbursement-documents-for-hungary"></a>Steuerrückerstattungsdokumente für Ungarn
 

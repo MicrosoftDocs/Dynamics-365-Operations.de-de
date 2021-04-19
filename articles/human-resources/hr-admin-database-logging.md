@@ -2,11 +2,9 @@
 title: Datenbankprotokollierung konfigurieren und verwalten
 description: Sie können Änderungen an Tabellen und Feldern in Dynamics 365 Human Resources mit Datenbankprotokollierung verfolgen.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8057ebd0bc061c6bf78d8674c45e0885ffce681c
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: d22ff9f3ce68c81f37840342c795d7d162eb027b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467648"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801334"
 ---
 # <a name="configure-and-manage-database-logging"></a>Datenbankprotokollierung konfigurieren und verwalten
 
@@ -68,7 +66,22 @@ Wählen Sie zum Eingrenzen der Anzahl von Protokolleinträgen und zur Steigerung
 Sie können den Assistent **Protokollieren von Datenbankänderungen** zum Einrichten der Datenbankprotokollierung verwenden. Der Assistent bietet eine flexible Möglichkeit, die Protokollierung für Tabellen oder Felder einzurichten.
 
 1. Gehen Sie zu **Systemadministration> Links> Datenbank> Datenbankprotokoll einrichten**. Wählen Sie **Neu** aus, um den Assistent **Protokollieren von Datenbankänderungen** zu starten.
-2. Schließen Sie den Assistenten ab.
+2. Wählen Sie **Weiter**. 
+3. Wählen Sie auf der Seite **Tabellen und Felder** des Assistenten die Tabellen und Felder aus, für die Sie die Datenbankprotokollierung aktivieren möchten, und wählen Sie **Weiter** aus.
+
+   > [!Note]
+   > Die Datenbankprotokollierung ist nicht für alle Tabellen in der Personaldatenbank verfügbar. Wenn Sie **Alle Tabellen anzeigen** unterhalb der Liste auswählen, wird die Liste der Tabellen und Felder erweitert, um alle Datenbanktabellen anzuzeigen, für die die Datenbankprotokollierung verfügbar ist. Dies ist jedoch eine Teilmenge der vollständigen Liste der Datenbanktabellen.
+
+4. Wählen Sie auf der Seite **Änderungstypen** des Assistenten die Datenvorgänge aus, für die Sie Änderungen für jede der Tabellen und Felder verfolgen möchten, und wählen Sie **Weiter**. In der folgenden Tabelle finden Sie eine Beschreibung der Datenvorgänge, die für die Protokollierung verfügbar sind.
+5. Überprüfen Sie auf der Seite **Fertig stellen** die vorgenommenen Änderungen und wählen Sie **Fertig stellen**.
+
+| Vorgang | Beschreibung |
+| -- | -- |
+| Neue Buchungen nachverfolgen | Erstellen Sie ein Protokoll für neue Datensätze, die in der Tabelle erstellt werden. |
+| Buchen | Erstellen Sie ein Protokoll für Aktualisierungen von Tabellendatensätzen oder Aktualisierungen für einzeln ausgewählte Felder in der Tabelle. Wenn Sie auswählen, Aktualisierungen für die Tabelle zu protokollieren, wird jedes Mal ein Protokolldatensatz erstellt, wenn eine Aktualisierung an einem Feld eines Datensatzes in der Tabelle vorgenommen wird. Wenn Sie auswählen, Aktualisierungen für bestimmte Felder zu protokollieren, wird ein Protokolldatensatz nur erstellt, wenn Aktualisierungen an diesen Feldern von Tabellendatensätzen vorgenommen werden. |
+| Löschen | Erstellen Sie ein Protokoll für Datensätze, die aus der Tabelle gelöscht wurden. |
+| Schlüssel umbenennen | Erstellen Sie einen Protokolldatensatz, wenn ein Tabellenschlüssel umbenannt wird. |
+
 
 ## <a name="clean-up-database-logs"></a>Bereinigen Sie Datenbankprotokolle
 

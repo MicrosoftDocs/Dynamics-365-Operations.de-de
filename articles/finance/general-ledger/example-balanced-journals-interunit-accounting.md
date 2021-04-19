@@ -2,11 +2,9 @@
 title: Ausgeglichene Erfassungen für einheitenübergreifende Buchhaltung
 description: Dieser Artikel zeigt, wie eine Erfassung automatisch ausgeglichen wird, wenn eine ausgleichende Finanzdimension auf der Sachkontoseite ausgewählt ist.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5f73606708b8c32a7a8ebc364af6ba57c4c343
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a5a926adcc631ec286f37796713466eb0144494c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205522"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818391"
 ---
 # <a name="balanced-journals-for-interunit-accounting"></a>Ausgeglichene Erfassungen für einheitenübergreifende Buchhaltung
 
@@ -32,7 +30,7 @@ Dieser Artikel zeigt, wie eine Erfassung automatisch ausgeglichen wird, wenn ein
 
 Wenn Buchhaltungseinträge nicht auf der Ebene der Finanzdimensionswerte ausgeglichen sind, werden zusätzliche Kontoeinträge automatisch erstellt, um die Erfassung auszugleichen. Diese Kontoeinträge verwenden **Einheitenbezogen - Soll**- und **Einheitenbezogen - Haben**-Buchungstypen auf der Seite **Konten für automatische Buchungen**, um das Hauptkonto zu bestimmen. Beispielsweise wird Geschäftseinheit, die das zweite Segment des Sachkontos darstellt, als Ausgleichsfinanzdimension ausgewählt, und die folgenden Buchhaltungseinträge werden anschließend erstellt.
 
-|                      |           |
+| &nbsp;               | &nbsp;    |
 |----------------------|-----------|
 | 6100 – MSP – OU\_256 | 100,00 DR |
 | 6100 – NY – OU\_249  | 100,00 DR |
@@ -45,7 +43,7 @@ In diesem Fall werden die folgenden Salden bestimmt:
 
 Die folgenden Buchhaltungseinträge werden daher automatisch erstellt, damit die Erfassung auf der Ebene der Finanzdimensionswerte ausgeglichen ist.
 
-|                                   |           |
+| &nbsp;                            | &nbsp;    |
 |-----------------------------------|-----------|
 | (Einheitenbezogen Soll) – MSP  – OU\_256 | 100,00 DR |
 | (Einheitenbezogen Haben) – NY – OU\_249 | 100,00 CR |

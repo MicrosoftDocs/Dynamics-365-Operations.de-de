@@ -2,7 +2,6 @@
 title: Erstellte Berichtsergebnisse protokollieren und mit Ausgangswerten vergleichen
 description: Dieses Thema erklärt, wie Sie die Ergebnisse von generierten Berichten für elektronische Berichterstellung (ER) mit Basisberichtswerten vergleichen können.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 3141e285f694f8778c7ac886d3f7e289fd76c648
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: a8609cb026e7738eab96980bc9fe4a53340272eb
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568924"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743580"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Erstellte Berichtsergebnisse protokollieren und mit Ausgangswerten vergleichen
 
@@ -241,7 +240,7 @@ Die Grundlegende wird für das Format **Format zum Erlernen von ER-Grundlagen** 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Konfigurieren Sie das Electronic Reporting (ER) Framework](electronic-reporting-er-configure-parameters.md).
+- [Konfigurieren Sie das Electronic Reporting (ER) Framework](electronic-reporting-er-configure-parameters.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

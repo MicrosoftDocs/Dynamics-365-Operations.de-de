@@ -2,11 +2,9 @@
 title: Budgetplanung
 description: Das Ziel dieser Übungseinheit ist es, eine Übersicht über aktualisierte Funktionen in Microsoft Dynamics 365 Finance im Budgetplanbereich bereitzustellen. Ziel dieser Übungseinheit ist es, ein schnelles Konfigurationsbeispiel für das Budgetplanungsmodul zu illustrieren und zu zeigen, wie die Budgetplanung mithilfe dieser Konfiguration erstellt werden kann.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05de2748b0cf7a2b09618aee5c41c8c797f2b3d3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f6223cce4a960d3fa3db1f3a17b324201085ea04
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210408"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822226"
 ---
 # <a name="budget-planning"></a>Budgetplanung
 

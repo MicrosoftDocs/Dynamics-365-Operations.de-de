@@ -2,8 +2,7 @@
 title: ER Erforderliche Konfigurationen zum Import von Daten aus einer externen Datei estellen
 description: In diesem Thema wird beschrieben, wie Sie Konfigurationen zur elektronischen Berichterstellung (EB) entwerfen, um Daten in die Microsoft Dynamics 365 Finance-App aus einer externen Datei zu importieren.
 author: NickSelin
-manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b8a94173c7c5367b79bfcb354f0397515d94445
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 2194bdc918035bf3aebe9b90ddc8a30f9937bb0c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564289"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751461"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Erforderliche Konfigurationen zum Import von Daten aus einer externen Datei estellen
 
 [!include [banner](../../includes/banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Systemadministrator“ oder „Entwickler für elektronische Berichterstellung“ Konfigurationen für elektronische Berichterstellung (EB) entwerfen kann, um Daten in die Anwendung aus einer externen Datei zu importieren. In diesem Beispiel erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc., um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Aufgabenleitfaden „ER bieten einen Konfigurationsanbieter erstellen und als aktiv markieren“ erst abschließen. Die Schritte können abgeschlossen werden, indem Sie den USMF-Datensatz verwenden. Sie müssen auch die folgenden Dateien mithilfe der Links aus dem Elektronischen Berichterstellungsüberblick-Thema herunterladen und lokal speichern (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Systemadministrator“ oder „Entwickler für elektronische Berichterstellung“ Konfigurationen für elektronische Berichterstellung (EB) entwerfen kann, um Daten in die Anwendung aus einer externen Datei zu importieren. In diesem Beispiel erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc., um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Aufgabenleitfaden „ER bieten einen Konfigurationsanbieter erstellen und als aktiv markieren“ erst abschließen. Die Schritte können abgeschlossen werden, indem Sie den USMF-Datensatz verwenden. Sie müssen auch die folgenden Dateien herunterladen und lokal speichern: 
+
+| Inhaltsbeschreibung                       | Dateiname                                     |
+|-------------------------------------------|-----------------------------------------------|
+| ER-Datenmodell-Konfiguration – 1099 | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)                  |
+| ER-Formatkonfiguration – 1099    | [1099format.xml](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)                  |
+| Beispiel eines eingehenden Dokuments im XML-Format                          | [1099entries.xml](https://download.microsoft.com/download/4/0/3/403a4958-df24-476a-b8b0-6843a9fa7f89/1099entries.xml)        |
+| Beispiel der Arbeitsmappe zur Verwaltung von Daten aus eingehenden Dokumenten                          | [1099entries.xlsx](https://download.microsoft.com/download/6/0/0/6001abab-a331-48db-a939-41851fb0f5d0/1099entries.xlsx) |
 
 ER bietet Geschäftskunden die Möglichkeit, den Prozess des Imports externer Datendateien in Tabellen, entweder im .XML- oder .TXT-Format, zu konfigurieren. Zunächst muss eine Kurzfassungsdatenmodell- sowie ein ER-Datenmodellkonfiguration entworfen werden, um die Daten darzustellen, die Sie importieren. Danach müssen Sie die Struktur der Datei, die Sie importieren und die Methode, die Sie verwenden, um die Daten aus der Datei zum Kurzfassungsdatenmodell zu übertragen, definieren. Die ER-Formatkonfiguration, die dem entworfenen Datenmodell zugeordnet ist, muss für das Kurzfassungsatenmodell erstellt werden. Anschließend muss die Datenmodellkonfiguration mit einer Zuordnung erweitert werden, die beschreibt, wie die importierten Daten permanent als Kurzfassungsdatenmodell sind und wie sie verwendet werden, um Tabellen zu aktualisieren.  Der ER-Datenmodellkonfiguration muss eine neue Modellzuordnung angefügt werden, die die Bindung des Datenmodells an die Ziele der Anwendung beschreibt.  
 

@@ -2,11 +2,9 @@
 title: Anzahl der Bücher pro Erfassung
 description: In diesem Thema wird die Beziehung zwischen Erfassungen und Anlagenbüchern beschrieben, wenn Sie einen Vorschlag zur Anschaffung oder zur Abschreibung von Anlagen über einen Batch-Auftrag erstellen. Sie können die maximale Anzahl von Büchern definieren, die für jede Anschaffung und für jede Abschreibung enthalten sind.
 author: moaamer
-manager: Ann Beebe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7f266e458802e65f0955ae8f8933f9bee2eca972
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e948b4353d0216f1e09019a98319e343bd535861
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5256714"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822032"
 ---
 # <a name="number-of-books-per-journal"></a>Anzahl der Bücher pro Erfassung
 
@@ -43,11 +41,14 @@ Sie können die Stapelverarbeitung verwenden, um Abschreibungen für denselben S
 
 Der Stapelverarbeitungsjob schließt geschlossene Bücher aus. Beispielsweise werden in einem Batch-Auftrag zur Abschreibung 10 der ersten 2.000 Bücher geschlossen. In diesem Fall enthält die erste Erfassung Bücher, die dem Anlagevermögen zugeordnet sind und die Nummern 1 bis 2.011 haben. Die zweite Erfassung enthält dann Bücher, die dem Anlagevermögen zugeordnet sind und die Nummern 2.012 bis 4.000 haben.
 
+> [!NOTE]
+> Wenn Sie Anlagen-IDs mit unterschiedlichen Trennzeichen (z. B. – oder /) haben und Anlagen-Transaktionen in Batchaufträgen erstellen, müssen Sie für jeden Trennzeichentyp einen separaten Batchauftrag ausführen. Das System kann nicht verschiedene Trennzeichen innerhalb desselben Batchauftrags verarbeiten.
+
 Die Begrenzung der Anzahl der Bücher wird angewendet, wenn in derselben Erfassung keine doppelten Anlagen-IDs vorhanden sind. Wenn die Anlagen-ID jedoch mit der Buch-ID übereinstimmt, kann die Anzahl der Bücher pro Erfassung überschritten werden, um die Anlagen-ID in derselben Erfassung zu belassen.
 
 Beispielsweise gibt es 5.001 Anlagen-IDs, jeder Anlagen-ID sind drei Bücher zugeordnet, und jedes Anlagenbuch wird auf derselben Buchungsebene gebucht. Sie führen drei aufeinanderfolgende Monate lang eine Abschreibung ohne Zusammenfassung durch.  Die Abschreibungserfassung wird über einen Batch-Auftrag erstellt, und das System erstellt sieben Erfassungen mit 667 Anlagen-IDs und drei Büchern für jede Anlagen-ID. Das Ergebnis werden 2.001 Bücher sein. Daher werden in drei Monaten 6.003 Erfassungszeilen vorhanden sein, um dieselben Anlagen-IDs in derselben Erfassung zu verwalten. Das System erstellt außerdem eine Erfassung mit 332 Anlagen-IDs und drei Büchern für jede Anlage-ID. In drei Monaten wird es 2.988 Zeilen geben.
 
-> [!Note] 
+> [!NOTE] 
 > Wenn der **Abschreibung zusammenfassen**-Parameter aktiviert wird, wenn Sie einen Abschreibungsvorschlag erstellen, und dann hat der Wert im Feld **Anzahl der Bücher pro Erfassung – Abschreibungsvorschlag** keine Auswirkung. In diesem Fall beträgt die Anzahl der Bücher pro Erfassung 6000, was die intern definierte Grenze darstellt.
 
 

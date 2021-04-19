@@ -2,11 +2,9 @@
 title: Deutschland – Übersicht
 description: Dieses Thema bietet eine Übersicht der Dynamics 365 Finance-Funktionen, die für Deutschland spezifisch sind.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Germany
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9e4924abd120e96b36722879111578f875f6e942
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8557abe112fb9bd745c6c118799cdd7b268e29e4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232424"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813445"
 ---
 # <a name="germany-overview"></a>Deutschland – Übersicht
 

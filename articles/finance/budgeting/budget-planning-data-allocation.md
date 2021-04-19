@@ -2,11 +2,9 @@
 title: Datenzuteilung für Budgetplanung
 description: Dieses Thema beschreibt die verschiedenen Zuordnungsmethoden, die in Microsoft Dynamics 365 Finance verfügbar sind, und wie sie verwendet werden können.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3ce04e8936ace70d83febc6be1e39c210fecfa7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bef79df8d9806771f87a6f77a0c9094887050646
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210384"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822202"
 ---
 # <a name="budget-planning-data-allocation"></a>Datenzuteilung für Budgetplanung
 

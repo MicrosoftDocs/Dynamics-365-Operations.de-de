@@ -2,11 +2,9 @@
 title: Dimensionshierarchie
 description: Dieses Thema bietet Informationen über Dimensionshierarchien. Sie verwenden eine Dimensionshierarchie, um die Berichtsstruktur, Kostenrichtlinien sowie die Sicherheitseinstellungen zu in der Kostenrechnung zu definieren.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2a2e48b15bedd25b685686fa18a91f30b600331c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fdf280031e2ad2356a1a2ef3bba75d1f74c8e4de
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217385"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810173"
 ---
 # <a name="dimension-hierarchy"></a>Dimensionshierarchie
 
@@ -124,12 +122,13 @@ Eine Dimensionshierarchie, die die Meldeanforderungen der Organisation erfüllt,
 
 Die Dimensionshierarchie für die Berichtserstellung kann beispielsweise wir hier angezeigt eingerichtet werden.
 
-|                   | Dimensionsmitgliedsbereiche   |                         |
+**Dimensionsmitgliedsbereiche**
+
+|   Knoten           |   Ausgangsdimensionsmitglied   |   Zieldimensionsmitglied   |
 |-------------------|---------------------------|-------------------------|
-| **Knoten**         | **Ausgangsdimensionsmitglied** | **Zieldimensionsmitglied** |
 | Organisation      |                           |                         |
 | &nbsp;&nbsp;Verwaltung         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Finanzen   | CC002                     | CC003                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Finanzen   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;Personalverwaltung        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Produktion    |                           |                         |
@@ -146,12 +145,13 @@ Eine Dimensionshierarchie, die die Meldeanforderungen der Organisation erfüllt,
 
 Die Dimensionshierarchie für die Richtlinie kann beispielsweise eingerichtet hier angezeigt werden.
 
-|                   | Dimensionsmitgliedsbereiche   |                         |
+**Dimensionsmitgliedsbereiche**
+
+|   Knoten           |   Ausgangsdimensionsmitglied   |   Zieldimensionsmitglied   |
 |-------------------|---------------------------|-------------------------|
-| **Knoten**         | **Ausgangsdimensionsmitglied** | **Zieldimensionsmitglied** |
 | Kostenverhalten     |                           |                         |
 | &nbsp;&nbsp;Fixkosten    | 10001                     | 10011                   |
-|&nbsp;&nbsp;Variable Kosten | 40001                     | 40010                   |
+| &nbsp;&nbsp;Variable Kosten | 40001                     | 40010                   |
 
 > [!NOTE]
 > Unter **Dimensionsmitgliedsbereiche** kann ein Knoten 1:_n_ -Dimensionsmitgliedsbereiche enthalten. Sie können Dimensionsmitgliedskennungen einfügen, die noch nicht als Dimensionsmitglieder vorhanden sind. Durch diesen Ansatz wird die Hierarchie zukunftssicher.  
@@ -297,9 +297,10 @@ Möglicherweise sind alle Manager in der Lage, auf sehr vertrauliche Unternehmen
 
 Ein neues Inforegister **Benutzer** ist im Hierarchie-Designer verfügbar. Hier können Sie einen oder mehrere Benutzerkennungen an jedem Knoten in die Hierarchie einfügen.
 
-|                 | Benutzer            | Dimensionsmitgliedsbereiche   |                         |
+**Benutzer- und Dimensionsmitgliedsbereiche**
+
+|   Knoten         |   Benutzerkennung        |   Von-Dimensionsmitglied   |   Zieldimensionsmitglied   |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Knoten**       | **Benutzerkennung**      | **Ausgangsdimensionsmitglied** | **Zieldimensionsmitglied** |
 | Organisation    | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Verwaltung         | April            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finanzen   | Alicia           | CC002                     | CC003                   |

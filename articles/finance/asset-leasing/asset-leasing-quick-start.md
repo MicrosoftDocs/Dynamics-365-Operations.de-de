@@ -2,11 +2,9 @@
 title: Erste Schritte mit dem Anlagen-Leasing
 description: In diesem Thema wird die Anlagenleasing-Funktion beschrieben und Sie werden durch die Schritte zum Erstellen eines Anlagenleasings sowie zum Anzeigen von Informationen zu diesen Leasingverträgen geführt.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b4f1bdf74dc5319f0b3ba145969b064ad33d5010
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229597"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814127"
 ---
 # <a name="asset-leasing-get-started"></a>Erste Schritte mit dem Anlagen-Leasing
 
@@ -41,16 +39,16 @@ Ein Leasingobjekt enthält folgende Hauptkomponenten:
 
 - **Leasingvertrag**: Der Leasinggeber ist Eigentümer der Anlage und vereinbart mit dem Leasingnehmer das Leasing einer Anlage für einen bestimmten Zeitraum gegen regelmäßige Leasingzahlungen. Neben dem rechtsgültigen Vertrag zwischen dem Leasinggeber und dem Leasingnehmer erfasst der Leasingvertrag Managemententscheidungen wie die Wahrscheinlichkeit des Gebrauchmachens von einer Verlängerungsoption und die Übertragung des Eigentums.
 
-- **Leasingberechnung und -klassifizierung nach Rechnungslegungsstandard**: Die Berechnung und Klassifizierung des Leasingverhältnisses geben den Rechnungslegungsstandard an, der bei der anfänglichen und nachfolgenden Bewertung angewendet wird, sowie den Klassifizierungstest, der die Art des Leasingverhältnisses bestimmt. Ein Leasingverhältnis kann ein Finanzierungsleasing, ein Ausrüstungs-Leasingvertrag, ein Kurzzeitleasing oder ein Leasing von geringem Wert sein. Das System berechnet auch den Barwert zukünftiger Mindestleasingzahlungen zum Zwecke der Bewertung und Klassifizierung.
+- **Leasingberechnung und -klassifizierung nach Rechnungslegungsstandard**: Die Berechnung und Klassifizierung des Leasingverhältnisses geben den Rechnungslegungsstandard an, der bei der anfänglichen und nachfolgenden Bewertung angewendet wird, sowie den Klassifizierungstest, der die Art des Leasingverhältnisses bestimmt. Ein Leasingverhältnis kann ein Finanzierungsleasing, ein Ausrüstungs-Leasingvertrag, ein Kurzzeitleasing oder ein Leasing von geringem Wert sein. Das System berechnet auch den Nettobarwert zukünftiger Mindestmietzahlungen zum Zwecke der Bewertung und Klassifizierung.
 
-- **Leasingbuchungen**: Das Anlagenleasing unterstützt die erstmalige Erfassung des Nutzungsrechts am Leasingobjekt für in der Bilanz enthaltene Leasingverhältnisse sowie die anschließende Bewertung entweder für bilanzielle oder für außerbilanzielle Leasingverhältnisse. Die erstmalige Erfassungbuchung bemisst den Barwert zukünftiger Mindestleasingzahlungen. Diese Daten werden verwendet, um den Wert des ursprünglichen Nutzungsrechts am Leasingobjekt und der Leasingverbindlichkeiten zu bestimmen, der sich auf die Bilanz des Unternehmens auswirkt. Die anschließende Bewertung der monatlichen Leasingbuchungen umfasst die Aufzinsung auf die Leasingverbindlichkeit, wodurch sich die Leasingverbindlichkeit erhöht. Außerdem wird die Rückstellung von Leasingzahlungen bewertet, die die Leasingverbindlichkeit verringern und anschließend an den Leasinggeber gezahlt werden. Die Bewertung umfasst auch die Amortisierung des Nutzungsrechts am Leasingobjekt.
+- **Leasingbuchungen**: Das Anlagenleasing unterstützt die erstmalige Erfassung des Nutzungsrechts am Leasingobjekt für in der Bilanz enthaltene Leasingverhältnisse sowie die anschließende Bewertung entweder für bilanzielle oder für außerbilanzielle Leasingverhältnisse. Die erstmalige Erfassungsbuchung bemisst den Nettobarwert zukünftiger Mindestmietzahlungen. Diese Daten werden verwendet, um den Wert des ursprünglichen Nutzungsrechts am Leasingobjekt und der Leasingverbindlichkeiten zu bestimmen, der sich auf die Bilanz des Unternehmens auswirkt. Die anschließende Bewertung der monatlichen Leasingbuchungen umfasst die Aufzinsung auf die Leasingverbindlichkeit, wodurch sich die Leasingverbindlichkeit erhöht. Außerdem wird die Rückstellung von Leasingzahlungen bewertet, die die Leasingverbindlichkeit verringern und anschließend an den Leasinggeber gezahlt werden. Die Bewertung umfasst auch die Amortisierung des Nutzungsrechts am Leasingobjekt.
 
   Bei außerbilanziellen Leasingverhältnissen berechnet das System die linearen Leasingaufwendungen für den niedrigeren der folgenden Werte: die wirtschaftliche Lebensdauer der Anlage oder die Leasingdauer. Leasinganpassungen bewerten Vertragsänderungen, wie eine Verlängerung oder Erweiterung des Leasingverhältnisses, sowie die Wertminderungsbuchung, bei der das Nutzungsrecht am Leasingobjekt für nicht erstattungsfähige Kosten verwendet wird.
 
   Anlagenleasing wird in Hauptbuch integriert, um sicherzustellen, dass alle gebuchten Leasingbuchungen Ihren Kontenplan aktualisieren. Assetleasing wird in Kreditorenkonten integriert, um Leasinggeberrechnungen in den Kreditorenkonten zu verfolgen und zukünftige Zahlungen von dort zu übernehmen. Durch die Integration in Anlage können Sie Leasingverhältnisse im Anlagenregister verfolgen und Buchungen mit Nutzungsrechten am Leasingobjekt, einschließlich der erstmaligen Erfassung, der Abschreibung und der dauerhaften Wertminderung der Anlage, innerhalb von Anlage buchen.   
 
 ## <a name="asset-leasing-components"></a>Assetleasing-Komponenten 
-Assetleasing ordnet Leasinginformationen, Zahlungspläne, Start- und Enddaten sowie die Zahlungshäufigkeit zu. Außerdem werden Berechnungen für den Barwert, die monatlichen Leasingzahlungen, die Zinsen und die Leasingamortisierung automatisiert. Das System führt je nach Konfiguration Klassifizierungstests für das Leasingverhältnis durch. Das System erstellt und bucht auch die entsprechenden Leasingbuchungen, die auf dem Framework basieren, das durch den von Ihnen befolgten Rechnungslegungsstandard definiert ist.
+Assetleasing ordnet Leasinginformationen, Zahlungspläne, Start- und Enddaten sowie die Zahlungshäufigkeit zu. Außerdem werden Berechnungen für den Nettobarwert, die monatlichen Mietzahlungen, die Zinsen und die Mietvertragsamortisierung automatisiert. Das System führt je nach Konfiguration Klassifizierungstests für das Leasingverhältnis durch. Das System erstellt und bucht auch die entsprechenden Leasingbuchungen, die auf dem Framework basieren, das durch den von Ihnen befolgten Rechnungslegungsstandard definiert ist.
 
 Das folgende Diagramm zeigt das Leasingbuch, das Leasingverhältnis, den berechneten Zahlungsplan, die Klassifizierungstests für Leasingverhältnisse und -bücher sowie die entsprechenden Buchhaltungsbuchungen.
 
@@ -62,13 +60,13 @@ Das folgende Diagramm zeigt das Leasingbuch, das Leasingverhältnis, den berechn
 
 - **Nutzungsdauer der Anlage**: Dies sind die verbleibenden Zeiträume der Nutzungsdauer einer Anlage ab dem Datum des Leasingbeginns. Die Nutzungsdauer einer Anlage wird in der Gleichung für den Klassifizierungstest berücksichtigt. Sie unterscheidet sich von der in den Anlagen definierten Nutzungsdauer.
 
-- **Zinssatz für Neukredit**: Dies ist der Zinssatz, der zur Berechnung des Barwerts verwendet wird. Das System verwendet den impliziten Satz, wenn er in den Leasingdaten definiert ist, um den Barwert der Leasingzahlungen zu berechnen. Wenn der implizite Satz nicht definiert ist, verwendet das System den Zinssatz für Neukredite.
+- **Zinssatz für Neukredit**: Dies ist der Zinssatz, der zur Berechnung des Nettobarwerts verwendet wird. Das System verwendet den impliziten Satz, wenn er in den Mietvertragsdaten definiert ist, um den Nettobarwert der Mietzahlungen zu berechnen. Wenn der implizite Satz nicht definiert ist, verwendet das System den Zinssatz für Neukredite.
 
 - **Annuitätstyp**: Die Leasingzahlung, die entweder zu Beginn des Zahlungszeitraums oder am Ende des Zeitraums fällig ist. Dies kann eine Vorauszahlung oder eine fällige Annuität (zu Beginn des Zeitraums der Leasingzahlung) oder eine normale Annuität (am Ende des Zeitraums der Leasingzahlung) sein.
 
   Der erste Monat gilt als Zeitraum mi der Nummer Null für die Vorauszahlung. Der erste Monat gilt als erster Zeitraum für Zahlungsrückstände.
 
-- **Aufzinsungsintervall**: Dies entspricht der Anzahl der Zeiträume, die der Zins pro Jahr aufgezinst wird. Diese Aufzinsung kann monatlich (12 Zeiträume pro Jahr), vierteljährlich (4 Zeiträume pro Jahr), halbjährlich (2 Zeiträume pro Jahr) oder jährlich (1 Zeitraum pro Jahr) erfolgen. Die Anzahl der Zeiträume wird bei der Barwertberechnung berücksichtigt.
+- **Aufzinsungsintervall**: Dies entspricht der Anzahl der Zeiträume, die der Zins pro Jahr aufgezinst wird. Diese Aufzinsung kann monatlich (12 Zeiträume pro Jahr), vierteljährlich (4 Zeiträume pro Jahr), halbjährlich (2 Zeiträume pro Jahr) oder jährlich (1 Zeitraum pro Jahr) erfolgen. Die Anzahl der Zeiträume wird bei der Nettobarwertberechnung berücksichtigt.
 
 - **Datum des Leasingbeginns**: Das Datum, an dem der Leasinggeber dem Leasingnehmer die Anlage zur Nutzung zur Verfügung stellt. Alle Leasingberechnungen und -buchungen basieren auf dem Datum des Leasingbeginns. Das Datum des Leasingbeginns sollte am Anfang eines Zeitraums (1. des Monats) liegen, um die Genauigkeit nachfolgender Berechnungen sicherzustellen. Sie können das Feld **Datum der Vertragsunterzeichnung** zur Eingabe des tatsächlichen Datums der Vertragsunterzeichnung verwenden.
 
@@ -81,7 +79,7 @@ Das folgende Diagramm zeigt das Leasingbuch, das Leasingverhältnis, den berechn
 
 - **Zahlungshäufigkeit**: Gibt an, ob die Zahlung monatlich, vierteljährlich, halbjährlich oder jährlich erfolgt. Das Enddatum wird automatisch anhand des Startdatums und der Anzahl der eingegebenen Zeiträume berechnet.
 
-- **Zahlungsplan**: Der berechnete Barwert, basierend auf der von den Leasingzahlungen abgedeckten Zeitspanne, der Höhe der Zahlungen, den Aufzinsungsintervallen und dem Annuitätstyp.
+- **Zahlungsplan**: Der berechnete Nettobarwert, basierend auf der von den Mietzahlungen abgedeckten Zeitspanne, der Höhe der Zahlungen, den Aufzinsungsintervallen und dem Annuitätstyp.
 
 - **Zeiträume**: Die Leasingzeiträume, die das Aufzinsungsintervall und den Annuitätstyp widerspiegeln. Das Aufzinsungsintervall bestimmt, wie Zeiträume aufgeteilt werden. Sie können folgende Aufzinsungsintervalle festlegen:
 
@@ -92,10 +90,10 @@ Das folgende Diagramm zeigt das Leasingbuch, das Leasingverhältnis, den berechn
 
 Der erste Zeitraum beginnt mit dem Zeitraum Null, wenn der Annuitätstyp „Annuität fällig“ ist. Andernfalls beginnt der erste Zeitraum mit Eins, wenn der Annuitätstyp „Zahlungsrückstände“ ist.
 
-- **Monate**: Gibt die Anzahl der Kalendermonate über die Laufzeit des Leasingverhältnisses an. Der Zahlungsbetrag ist der fällige Betrag, wie in der Zahlungshäufigkeit definiert. Der berechnete Barwert ist die auf dem Barwert basierende Leasingzahlung pro Zeitraum, die Aufzinsungsintervalle und der Zinssatz für Neukredite.
+- **Monate**: Gibt die Anzahl der Kalendermonate über die Laufzeit des Leasingverhältnisses an. Der Zahlungsbetrag ist der fällige Betrag, wie in der Zahlungshäufigkeit definiert. Der berechnete Nettobarwert ist die auf dem Nettobarwert basierende Mietzahlung pro Zeitraum, die Aufzinsungsintervalle und der Zinssatz für Neukredite.
 
 > [!NOTE] 
-> Der Barwert wird basierend auf der Gleichung des diskontierten Cashflows berechnet.
+> Der Nettobarwert wird basierend auf der Gleichung des diskontierten Cashflows berechnet.
 
 - **Bücher**: Das vorkonfigurierte Setup, das jedem Leasingverhältnis zugeordnet wird. Das Buch definiert den angewandten Rechnungslegungsstandard, die Leasingarten und den Schwellenwert, der als Grundlage für die Klassifizierungstests verwendet wird. Klassifizierungstests werden verwendet, um die Leasingart automatisch festzulegen.
 
@@ -107,7 +105,7 @@ Der erste Zeitraum beginnt mit dem Zeitraum Null, wenn der Annuitätstyp „Annu
 
   - **Leasingdauer**: Der Prozentsatz der Nutzungsdauer, der für den Klassifizierungstest verwendet werden soll. Das System klassifiziert das Leasingverhältnis als Finanzierungsleasing, wenn die Leasingart auf automatisch eingestellt ist und das Verhältnis der Leasingdauer zur Nutzungsdauer der Anlage größer oder gleich dem hier definierten Prozentsatz ist.
 
-  - **Barwert**: Der Prozentsatz des Zeitwerts der Anlage, der für den Klassifizierungstest verwendet werden soll. Das System klassifiziert das Leasingverhältnis als Finanzierungsleasing, wenn die Leasingart auf automatisch eingestellt ist und das Verhältnis des Barwerts künftiger Leasingzahlungen zum Zeitwert der Anlage größer oder gleich dem hier definierten Prozentsatz ist.
+  - **Nettobarwert**: Der Prozentsatz des Zeitwerts der Anlage, der für den Klassifizierungstest verwendet werden soll. Das System klassifiziert den Mietvertrag als Finanzierung, wenn die Mietvertragsart auf automatisch eingestellt ist und das Verhältnis des Nettobarwerts künftiger Mietzahlungen zum Zeitwert der Anlage größer oder gleich dem hier definierten Prozentsatz ist.
 
   - **Kurzzeitleasing**: Wenn die Leasingdauer kürzer oder gleich dem hierfür definierten Wert ist, wird das Leasingverhältnis als Kurzzeitleasing eingestuft.
 
@@ -115,7 +113,7 @@ Der erste Zeitraum beginnt mit dem Zeitraum Null, wenn der Annuitätstyp „Annu
 
   - **Leasingklassifizierung und -buchungen**: Die Leasingklassifizierung ist ein automatisierter Prozess zur Klassifizierung der Leasingverhältnisse anhand der in Büchern definierten Schwellenwerte sowie anderer Kriterien für Klassifizierungstests, um festzustellen, ob es sich bei dem Leasingverhältnis um ein Finanzierungsleasing, einen Ausrüstungs-Leasingvertrag, ein Kurzzeitleasing oder ein Leasingobjekt von geringem Wert handelt. Dies wird auch verwendet, um festzustellen, ob der Prozess für den zurückgestellten Mietaufwand eingehalten wird.
 
-Zu den Klassifizierungstests gehören Eigentumsübertragung, Kaufoption, Leasingdauer, Barwert und Einmalige Anlage. Das folgende Diagramm zeigt die Klassifizierungstests für Leasingverhältnisse.
+Zu den Klassifizierungstests gehören Eigentumsübertragung, Kaufoption, Mietdauer, Nettobarwert und Einmalige Anlage. Das folgende Diagramm zeigt die Klassifizierungstests für Leasingverhältnisse.
 
 [![Klassifizierungstests für Leasingverhältnisse](./media/overview-03.png)](./media/overview-03.png)
 
@@ -124,22 +122,22 @@ Jede Leasingart geht bei der Buchhaltung für unterschiedliche Leasingbuchungen 
 ## <a name="asset-leasing-transactions"></a>Transaktionen beim Anlagenleasing
 
 #### <a name="initial-recognition"></a>Anfängliche Erkennung 
-Für die erstmalige Erfassung eines Leasingobjekts wird der berechnete Barwert verwendet, damit er in der Bilanz ausgewiesen werden kann. Der Buchhaltungseintrag hierfür wird automatisch generiert. Diese Transaktion belastet das Konto des Nutzungsrechts am Leasingobjekt und führt für das Konto der Ausrüstungs-Leasingverbindlichkeit wie folgt eine Gutschrift durch. Wenn dem Leasingverhältnis eine Anlage zugeordnet ist, wird der erste Erfassungseintrag als eine Anlagenanschaffung ausgewiesen. In diesem Szenario müssen Sie ein Buchungsprofil für Anlagen definieren, um die Buchung auf das Konto des Nutzungsrechts am Leasingobjekt durchzuführen. 
+Für die erstmalige Erfassung eines Leasingobjekts wird der berechnete Nettobarwert verwendet, damit er in der Bilanz ausgewiesen werden kann. Der Buchhaltungseintrag hierfür wird automatisch generiert. Diese Transaktion belastet das Konto des Nutzungsrechts am Leasingobjekt und führt für das Konto der Ausrüstungs-Leasingverbindlichkeit wie folgt eine Gutschrift durch. Wenn dem Leasingverhältnis eine Anlage zugeordnet ist, wird der erste Erfassungseintrag als eine Anlagenanschaffung ausgewiesen. In diesem Szenario müssen Sie ein Buchungsprofil für Anlagen definieren, um die Buchung auf das Konto des Nutzungsrechts am Leasingobjekt durchzuführen. 
 
 > [!NOTE]
 > Ausrüstungs-Leasingverträge werden nur von US GAAP ASC 842 unterstützt.
 
 |     Typ                                          |     Belastung                     |     Gutschrift                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |
-|     Operating-Leasingvertrag nach US GAAP              |     Nutzungsrecht am Leasingobjekt      |     Ausrüstungs-Leasingverbindlichkeit       |
-|     Finanzierungsleasing nach IFRS und US GAAP        |     Nutzungsrecht am Leasingobjekt      |     Ausrüstungs-Leasingverbindlichkeit       |
+|     Ausrüstungs-Leasingvertrag nach US GAAP            |     Nutzungsrecht am Leasingobjekt        |     Verbindlichkeit für Ausrüstungs-Leasingvertrag     |
+|     Finanzierungsleasing nach IFRS und US GAAP      |     Nutzungsrecht am Leasingobjekt        |     Verbindlichkeit durch Finanzierungsleasing       |
 
 #### <a name="lease-liability-amortization-interest-expense"></a>Amortisierung von Leasingverbindlichkeiten (Zinsaufwand) 
 Die Zinsen für ein Leasingverhältnis werden durch Berechnung der Zinsen für den Anfangssaldo des Leasingverhältnisses, die Leasingzahlung pro Zeitraum, den Sollzinssatz und die Aufzinsungsintervalle pro Jahr erfasst. Der Zinsbetrag erhöht das Konto der Ausrüstungs-Leasingverbindlichkeit durch eine Gutschrift, die in der Bilanz des Unternehmens ausgewiesen wird. Die Transaktion beinhaltet auch eine Belastung des Zinsaufwandkontos, die für ein Finanzierungsleasing in der Gewinn- und Verlustrechnung ausgewiesen wird, sowie des Leasingaufwandkontos für Ausrüstungs-Leasingverträge.
 
 |     Typ                                          |     Belastung                     |     Gutschrift                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |
-|     Eintrag der Ausrüstungs-Leasingverbindlichkeit nach US GAAP ASC 842    |     Zinsausgaben          |     Verbindlichkeit für Ausrüstungs-Leasingvertrag         |
+|     Eintrag der Ausrüstungs-Leasingverbindlichkeit nach US GAAP ASC 842    |     Mietvertragsausgaben         |     Verbindlichkeit für Ausrüstungs-Leasingvertrag         |
 |     Eintragung der Finanzierungsleasingverbindlichkeit nach IFRS und US GAAP      |     Zinsausgaben          |     Verbindlichkeit durch Finanzierungsleasing           |
 
 #### <a name="accrued-lease-payment"></a>Aufgelaufene Leasingzahlung
@@ -151,7 +149,7 @@ Eine aufgelaufene Leasingzahlung wird als zukünftige Leasingzahlung erfasst, di
 |     Finanzierungsleasing nach IFRS und US GAAP        |  Verbindlichkeit durch Finanzierungsleasing      |   Kreditorenverbindlichkeit (untergeordnetes Sachkonto) / Wechselverbindlichkeit  |
 
 #### <a name="asset-depreciation"></a>Anlagenabschreibung
-Das Nutzungsrecht am Leasingobjekt wird entweder über die Nutzungsdauer der Anlage oder die Leasingdauer abgeschrieben, je nachdem, welcher Wert kleiner ist. Die Methode zur Berechnung der Abschreibung nach US GAAP (ASC 842) basiert auf der Differenz zwischen den linearen Leasingaufwendungen und dem Zinsbetrag. Die Zinsen für ein Finanzierungsleasing werden linear berechnet. Die Leasingabschreibung wirkt sich durch die Zinsaufwendungen auf die Gewinn- und Verlustrechnung aus. Bei Finanzierungsleasings wird die Bilanz durch kumulierte Gutschriften auf das Konto des Nutzungsrechts am Leasingobjekt beeinflusst. Bei Ausrüstungs-Leasingverträgen wird die Abschreibung dem Leasingaufwandskonto gutgeschrieben. Wenn das Leasingverhältnis mit einer Anlage verknüpft ist, werden die Abschreibungstransaktionen nur über das Anlagenmodul ausgeführt. 
+Das Nutzungsrecht am Leasingobjekt wird entweder über die Nutzungsdauer der Anlage oder die Leasingdauer abgeschrieben, je nachdem, welcher Wert kleiner ist. Die Methode zur Berechnung der Abschreibung nach US GAAP-Ausrüstungs-Leasingvertrag (ASC 842) basiert auf der Differenz zwischen den linearen Mietvertragsausgaben und dem Zinsbetrag. Die Abschreibung für Finanzierungsleasings wird linear berechnet. Die Leasingabschreibung wirkt sich durch die Zinsaufwendungen auf die Gewinn- und Verlustrechnung aus. Bei Finanzierungsleasings wird die Bilanz durch kumulierte Gutschriften auf das Konto des Nutzungsrechts am Leasingobjekt beeinflusst. Wenn das Leasingverhältnis mit einer Anlage verknüpft ist, werden die Abschreibungstransaktionen nur über das Anlagenmodul ausgeführt. 
 
 |     Typ                                          |     Belastung                     |     Gutschrift                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |

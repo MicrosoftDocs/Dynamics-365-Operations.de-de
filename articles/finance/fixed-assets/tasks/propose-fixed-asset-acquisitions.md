@@ -2,11 +2,9 @@
 title: Anlagenanschaffungen vorschlagen
 description: In diesem Thema wird beschrieben, wie eine Anlage mithilfe des Anschaffungsvorschlags in der Anlagenerfassung angeschafft wird.
 author: saraschi2
-manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 03/17/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
@@ -15,18 +13,22 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 426a5e42c1fc26958ab37eddd915334f8b0e19cc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d529cd53b41827a78b282afd4d2c69d2f2db555e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205027"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817164"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Anlagenanschaffungen vorschlagen
 
 [!include [banner](../../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie eine Anlage mithilfe des Anschaffungsvorschlags in der Anlagenerfassung angeschafft wird. Dabei werden die Buchhalterrolle und die Demodaten für die juristische Person USMF verwendet. Um eine Anlage durch eine Anlagenerfassung zu erwerben, müssen Sie zuerst den Anlagendatensatz erstellen und dann den Anschaffungspreis im Anlagenbuch festlegen.
+
+## <a name="create-an-asset-acquisition-proposal"></a>Vorschlag zum Anlagenerwerb erstellen
+
+Führen Sie die folgenden Schritte aus, um einen Vorschlag zum Anlagenerwerb zu erstellen. 
 
 1. Gehen Sie im Navigationsbereich zu **Module > Anlage > Journalbuchungen > Anlagenbuchhaltung**.
 2. Wählen Sie **Neu** aus.
@@ -38,10 +40,16 @@ In diesem Thema wird beschrieben, wie eine Anlage mithilfe des Anschaffungsvorsc
 8. Wählen Sie die Zeile **Anlagennummer** aus.
 9. Geben Sie im Feld **Kriterien** einen Wert ein, oder wählen Sie einen Wert aus. Legen Sie die verbleibenden Kriterien für die Anlagen fest, die Sie mit diesem Vorschlag abrufen möchten.  
 10. Wählen Sie zweimal **OK** aus, um den Bereich zu verlassen.
-- Überprüfen Sie die erstellten Transaktionspositionen.  
+- Überprüfen Sie, ob die Transaktionspositionen erstellt werden.  
 - Nur Anlagen mit dem Anschaffungsdatum und dem Anschaffungspreis, die im Buch festgelegt sind, werden in den Anschaffungsvorschlag einbezogen.  
 11. Wählen Sie auf der Seite die Registerkarte **Bücher** aus.
 12. Wählen Sie **Buchen** aus.
 
+## <a name="include-default-financial-dimensions-in-an-acquisition-proposal"></a>Standardfinanzdimensionen in einen Anschaffungsvorschlag aufnehmen
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+Die Anschaffungstransaktion kann mithilfe von Excel-Add-Ins erstellt werden, indem Sie zu **Anlagen > Journaleinträge > Anlagenerfassung** gehen. Erstellen Sie eine neue Erfassung und wechseln Sie zum **Positionen**-Abschnitt auf der Seite und wählen Sie das Excel-Symbol und dann eine Anlagenerfassungsposition. Das System erstellt und öffnet eine Excel-Vorlage, die Erfassungspositionen darstellt. Sie können Daten für die Erfassungspositionen hinzufügen, die Sie der Vorlage hinzufügen, und diese Informationen dann wieder im System veröffentlichen. 
+
+Wenn für das ausgewählte Anlagenbuch und die entsprechenden Anlagen, die in die Excel-Vorlage eingegeben wurden, Standarddimensionen eingerichtet wurden, werden die Standardfinanzdimensionen von den Anlagenbuch-Masterdaten aufgerufen, wenn die Erfassung aus Excel heraus im System veröffentlicht wird. Um Finanzdimensionen automatisch in ein Anlagenbuch aufzunehmen, während die Anlagenerfassung über das Excel-Add-In veröffentlicht wird, müssen die Standarddimensionen im Voraus eingerichtet werden.  
+
+
+[!INCLUDE [footer-include](../../../includes/footer-banner.md)]

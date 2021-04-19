@@ -2,7 +2,6 @@
 title: Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 description: In diesem Thema wird erläutert, wie Sie die konfigurierten EB-Komponenten (Elektronische Berichterstellung) überprüfen, um mögliche Laufzeitprobleme zu vermeiden.
 author: NickSelin
-manager: AnnBe
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86db6dc27a8a76e90494e3dc7a7cc9c828f9ec37
-ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
+ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5574124"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753839"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 
@@ -666,19 +665,19 @@ Die folgende Abbildung zeigt den Laufzeitfehler, der auftritt, wenn Sie die Warn
 
 ![Laufzeitfehler, der während der Ausführung der Formatzuordnung auf der Seite „Formatdesigner“ auftritt](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution"></a>Automatische Lösung
+### <a name="automatic-resolution&quot;></a>Automatische Lösung
 
 Es ist keine Option verfügbar, um dieses Problem automatisch zu beheben.
 
-### <a name="manual-resolution"></a>Manuelle Lösung
+### <a name=&quot;manual-resolution&quot;></a>Manuelle Lösung
 
-#### <a name="option-1"></a>Option 1
+#### <a name=&quot;option-1&quot;></a>Option 1
 
 Entfernen Sie die Markierung **Zwischenspeicher** aus der Datenquelle **Lieferant**. Die Datenquelle **FilteredVendor** wird dann ausführbar, aber auf die Datenquelle **Lieferant**, auf die in der VendTable-Tabelle verwiesen wird, wird jedes Mal zugegriffen, wenn die Datenquelle **FilteredVendor** aufgerufen wird.
 
-#### <a name="option-2"></a>Option 2
+#### <a name=&quot;option-2&quot;></a>Option 2
 
-Ändern Sie den Ausdruck der Datenquelle **FilteredVendor** von `FILTER(Vendor, Vendor.AccountNum="US-101")` zu `WHERE(Vendor, Vendor.AccountNum="US-101")`. In diesem Fall wird auf die Datenquelle **Lieferant**, auf die in der VendTable-Tabelle verwiesen wird, nur beim ersten Aufruf der Datenquelle **Lieferant** zugegriffen. Die Auswahl der Datensätze erfolgt jedoch im Speicher. Daher kann dieser Ansatz eine Verschlechterung der Leistung verursachen.
+Ändern Sie den Ausdruck der Datenquelle **FilteredVendor** von `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` zu `WHERE(Vendor, Vendor.AccountNum="US-101")`. In diesem Fall wird auf die Datenquelle **Lieferant**, auf die in der VendTable-Tabelle verwiesen wird, nur beim ersten Aufruf der Datenquelle **Lieferant** zugegriffen. Die Auswahl der Datensätze erfolgt jedoch im Speicher. Daher kann dieser Ansatz eine Verschlechterung der Leistung verursachen.
 
 ## <a name="missing-binding"></a><a id="i11"></a>Fehlende Bindung
 

@@ -2,11 +2,9 @@
 title: Rechnungsabgleich von Kreditorenkonten – Übersicht
 description: Beim Kreditorenrechnungsabgleich handelt es sich um den Prozess zum Abgleich der Informationen aus der Kreditorenrechnung, der Bestellung und des Produktzugangs.
 author: abruer
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ecbfdd157985899da04aa6b41d9a96cdf2fa6bc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 86fe870c43721ac737a7bd34cc3c985e61911dc1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213043"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820906"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>Rechnungsabgleich von Kreditorenkonten – Übersicht
 
@@ -48,7 +46,7 @@ Die folgenden Arten von Kreditorenrechnungsabgleich können verwendet werden:
 
 Beim zweiseitigen und beim dreiseitigen Abgleich werden Preisinformationen stets nach dem Einheitspreis abgeglichen. Sie können diese Abgleichsrichtlinien für einen Abgleich der Preisinformationen nach dem Preissumme konfigurieren.
 -   Nettostückpreis-Abgleich – Die Preisinformationen beim zweiseitigen oder dreiseitigen Abgleich werden durch einen Vergleich des Nettostückpreises jeder Rechnungsposition mit dem entsprechenden Nettostückpreis der Bestellung abgeglichen. Der Nettostückpreis ergibt sich aus der folgenden Formel: Nettobetrag der Position / die Menge der Position.
--   Preissummenabgleich – Die Preisinformationen beim zweiseitigen oder dreiseitigen Abgleich werden durch einen Vergleich des Nettobetrags (Preissumme) jeder Rechnungsposition mit dem entsprechenden Nettobetrag der Bestellung abgeglichen. Der Nettobetrag ergibt sich aus der folgenden Formel: *(Einheitspreis \* Positionsmenge) + Positionszuschläge - Positionsrabatte*. Bei einem Abgleich der Preissummen nach Prozentsatz vergleicht das System Werte mithilfe der Transaktionswährung. Bei einem Abgleich der Preissummen nach Menge vergleicht das System die Werte mithilfe der Buchungswährung.
+-   Preissummenabgleich – Die Preisinformationen beim zweiseitigen oder dreiseitigen Abgleich werden durch einen Vergleich des Nettobetrags (Preissumme) jeder Rechnungsposition mit dem entsprechenden Nettobetrag der Bestellung abgeglichen. Der Nettobetrag ergibt sich aus der folgenden Formel: *(Einheitspreis \* Positionsmenge) + Positionszuschläge - Positionsrabatte*. Bei einem Abgleich der Preissummen nach Prozentsatz vergleicht das System Werte mithilfe der Transaktionswährung. Bei einem Abgleich der Preissummen nach Menge vergleicht das System die Werte mithilfe der Buchungswährung. Wenn Sie eine Bestellposition teilweise in Rechnung stellen, erfolgt die Validierung des Preis-Gesamt-Abgleichs auf der letzten Rechnung für diese Position. 
 
 Rechnungsabgleichsberechnungen werden in der Regel ausgeführt, wenn Kreditorenrechnungen auf der Seite "Kreditorenrechnung" bearbeitet werden. Alternativ kann der Rechnungsabgleich bei Bedarf ausgeführt werden, falls erforderlich. Der Rechnungsabgleich bei Bedarf wird für die juristischen Person über "Rechnungskopfstatus automatisch aktualisieren" auf der Seite "Kreditorenkontenparameter" in der Registerkarte "Rechnungsprüfung" durchgeführt. Der Rechnungsabgleich kann auch im Rahmen eines Rechnungsprüfungsprozesses erfolgen. Sie können die Ergebnisse eines Rechnungsabgleichs auf der Seite "Kreditorenrechnung" und den zugehörigen Rechnungsabgleichseiten anzeigen.
 

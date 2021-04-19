@@ -2,11 +2,9 @@
 title: Aktualisierungsprozess
 description: Microsoft Dynamics 365 Human Resources ist ein echter Software-as-a-Service (SaaS), der kontinuierliche, eingriffsfreie Service-Updates für Anwendungs- und Plattformwechsel bietet.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 27561bfd9cb4f115cc507954c837ea93f9c93b72
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466831"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791532"
 ---
 # <a name="update-process"></a>Aktualisierungsprozess
 
@@ -58,14 +56,14 @@ Bei Bedarf bietet Human Resources auch die folgenden Fehlerkorrekturtypen:
 
 Versionen werden in einer internen Umgebung überprüft, getestet und validiert. Nachdem die Builds genehmigt wurden, werden sie für die Produktion bereitgestellt.
 
-## <a name="release-cadence-exceptions-in-2020"></a>Freigabe von Trittfrequenzausnahmen im Jahr 2020
+## <a name="release-cadence-exceptions-in-2021"></a>Freigabe von Trittfrequenzausnahmen im Jahr 2021
 
-Um die Feiertage zu berücksichtigen, sieht der Veröffentlichungsplan für November und Dezember 2020 wie folgt aus:
+Um die Feiertage zu berücksichtigen, sieht der Veröffentlichungsplan für November und Dezember 2021 wie folgt aus:
 
-- November-Veröffentlichung: 2. November – 13. November
-- Dezember-Veröffentlichung: 30. November – 11. Dezember
+- November-Veröffentlichung: 1. November – 14. November
+- Dezember-Veröffentlichung: 29. November – 12. Dezember
  
-Die zweiwöchige Veröffentlichungshäufigkeit wird wie gewohnt am 11. Januar 2021 wieder aufgenommen.
+Die zweiwöchige Veröffentlichungshäufigkeit wird wie gewohnt am 10. Januar 2022 wieder aufgenommen.
 
 ## <a name="communications"></a>Kommunikation
 

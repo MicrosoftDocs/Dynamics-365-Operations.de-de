@@ -2,8 +2,7 @@
 title: SPLITLIST EB-Funktion
 description: In diesem Thema werden Informationen zur Verwendung der SPLITLIST-Funktion bei der elektronischen Berichterstellung (EB) bereitgestellt.
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af8c413726ca8d9f92eff18807e7fa9002fc9d37
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 99e199e238b3132622a8b305895637b430e8f6d2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559137"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745568"
 ---
 # <a name="splitlist-er-function"></a>SPLITLIST EB-Funktion
 
@@ -29,10 +28,16 @@ ms.locfileid: "5559137"
 
 Die Funktion `SPLITLIST` teilt die angegebene Liste in Unterlisten (oder Batches), die jeweils die angegebene Anzahl von Datensätzen enthalten. Sie gibt dann das Ergebnis als neuen Wert *Datensatzliste* zurück, der aus den Batches besteht.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax-1"></a>Syntax 1
 
 ```vb
 SPLITLIST (list, number)
+```
+
+## <a name="syntax-2"></a>Syntax 2
+
+```vb
+SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>Argumente
@@ -44,6 +49,10 @@ Der gültige Pfad einer Datenquelle des Datentyps *Datensatzliste*.
 `number`: *Integer*
 
 Die maximale Anzahl angezeigter Datensätze pro Batch.
+
+`on-demand reading flag`: *Boolesch*
+
+Ein *Boolescher Wert*, der angibt, ob Elemente von Unterlisten bei Bedarf generiert werden sollen.
 
 ## <a name="return-values"></a>Rückgabewerte
 
@@ -62,6 +71,8 @@ Die Liste der Batches, die zurückgegeben wird, enthält die folgenden Elemente:
 - **BatchNumber:** *Integer*
 
     Die Nummer des aktuellen Batches in der zurückgegebenen Liste.
+
+Wenn das On-Demand-Leseflag auf **Wahr**  gesetzt ist, werden Unterlisten auf Anforderung erstellt, was eine Reduzierung des Speicherverbrauchs ermöglicht, jedoch zu Leistungseinbußen führen kann, wenn Elemente nicht nacheinander verwendet werden.
 
 ## <a name="example"></a>Beispiel
 
