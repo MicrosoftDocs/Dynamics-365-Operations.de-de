@@ -2,7 +2,6 @@
 title: COUNT EB-Funktion
 description: In diesem Thema werden Informationen zur Verwendung der COUNT-Funktion bei der elektronischen Berichterstellung (EB) bereitgestellt.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
@@ -16,44 +15,44 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e36347d928148e85bc9295d529cbf2801946433a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: a0b780051684ef52d06a9baf78d9b513d9ac1f0e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567891"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746626"
 ---
-# <a name="count-er-function"></a><span data-ttu-id="ae3b0-103">COUNT EB-Funktion</span><span class="sxs-lookup"><span data-stu-id="ae3b0-103">COUNT ER function</span></span>
+# <a name="count-er-function"></a><span data-ttu-id="3f69b-103">COUNT EB-Funktion</span><span class="sxs-lookup"><span data-stu-id="3f69b-103">COUNT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ae3b0-104">Die Funktion `COUNT` gibt den Wert *Integer* zurück, der die Anzahl der Datensätze in der angegebenen Liste darstellt, wenn die Liste nicht leer ist.</span><span class="sxs-lookup"><span data-stu-id="ae3b0-104">The `COUNT` function returns an *Integer* value that represents the number of records in the specified list, if the list isn't empty.</span></span> <span data-ttu-id="ae3b0-105">Wenn die Liste leer ist, gibt diese Funktion **0** (Null) zurück.</span><span class="sxs-lookup"><span data-stu-id="ae3b0-105">If the list is empty, this function returns **0** (zero).</span></span>
+<span data-ttu-id="3f69b-104">Die Funktion `COUNT` gibt den Wert *Integer* zurück, der die Anzahl der Datensätze in der angegebenen Liste darstellt, wenn die Liste nicht leer ist.</span><span class="sxs-lookup"><span data-stu-id="3f69b-104">The `COUNT` function returns an *Integer* value that represents the number of records in the specified list, if the list isn't empty.</span></span> <span data-ttu-id="3f69b-105">Wenn die Liste leer ist, gibt diese Funktion **0** (Null) zurück.</span><span class="sxs-lookup"><span data-stu-id="3f69b-105">If the list is empty, this function returns **0** (zero).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ae3b0-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="ae3b0-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3f69b-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="3f69b-106">Syntax</span></span>
 
 ```vb
 COUNT (list)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="ae3b0-107">Argumente</span><span class="sxs-lookup"><span data-stu-id="ae3b0-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="3f69b-107">Argumente</span><span class="sxs-lookup"><span data-stu-id="3f69b-107">Arguments</span></span>
 
-<span data-ttu-id="ae3b0-108">`list`: *Datensatzliste*</span><span class="sxs-lookup"><span data-stu-id="ae3b0-108">`list`: *Record list*</span></span>
+<span data-ttu-id="3f69b-108">`list`: *Datensatzliste*</span><span class="sxs-lookup"><span data-stu-id="3f69b-108">`list`: *Record list*</span></span>
 
-<span data-ttu-id="ae3b0-109">Der gültige Pfad einer Datenquelle des Datentyps *Datensatzliste*.</span><span class="sxs-lookup"><span data-stu-id="ae3b0-109">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="3f69b-109">Der gültige Pfad einer Datenquelle des Datentyps *Datensatzliste*.</span><span class="sxs-lookup"><span data-stu-id="3f69b-109">The valid path of a data source of the *Record list* data type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="ae3b0-110">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="ae3b0-110">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="3f69b-110">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="3f69b-110">Return values</span></span>
 
-<span data-ttu-id="ae3b0-111">*Ganze Zahl*</span><span class="sxs-lookup"><span data-stu-id="ae3b0-111">*Integer*</span></span>
+<span data-ttu-id="3f69b-111">*Ganze Zahl*</span><span class="sxs-lookup"><span data-stu-id="3f69b-111">*Integer*</span></span>
 
-<span data-ttu-id="ae3b0-112">Der resultierende numerische Wert.</span><span class="sxs-lookup"><span data-stu-id="ae3b0-112">The resulting numeric value.</span></span>
+<span data-ttu-id="3f69b-112">Der resultierende numerische Wert.</span><span class="sxs-lookup"><span data-stu-id="3f69b-112">The resulting numeric value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ae3b0-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ae3b0-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3f69b-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3f69b-113">Example</span></span>
 
-<span data-ttu-id="ae3b0-114">`COUNT (SPLIT("abcd" , 3))` gibt **2** zurück, da die Funktion `SPLIT`, die in diesem Beispiel verwendet wird, eine Liste erstellt, die aus zwei Datensätzen besteht.</span><span class="sxs-lookup"><span data-stu-id="ae3b0-114">`COUNT (SPLIT("abcd" , 3))` returns **2**, because the `SPLIT` function that is used in this example creates a list that consists of two records.</span></span>
+<span data-ttu-id="3f69b-114">`COUNT (SPLIT("abcd" , 3))` gibt **2** zurück, da die Funktion `SPLIT`, die in diesem Beispiel verwendet wird, eine Liste erstellt, die aus zwei Datensätzen besteht.</span><span class="sxs-lookup"><span data-stu-id="3f69b-114">`COUNT (SPLIT("abcd" , 3))` returns **2**, because the `SPLIT` function that is used in this example creates a list that consists of two records.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ae3b0-115">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="ae3b0-115">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="3f69b-115">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="3f69b-115">Additional resources</span></span>
 
-[<span data-ttu-id="ae3b0-116">Listenfunktionen</span><span class="sxs-lookup"><span data-stu-id="ae3b0-116">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="3f69b-116">Listenfunktionen</span><span class="sxs-lookup"><span data-stu-id="3f69b-116">List functions</span></span>](er-functions-category-list.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

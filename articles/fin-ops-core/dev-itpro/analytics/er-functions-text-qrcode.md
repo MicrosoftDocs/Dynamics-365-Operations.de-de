@@ -2,7 +2,6 @@
 title: QRCODE EB-Funktion
 description: In diesem Thema werden Informationen zur Verwendung der QRCODE-Funktion bei der elektronischen Berichterstellung (EB) bereitgestellt.
 author: NickSelin
-manager: kfend
 ms.date: 12/10/2019
 ms.topic: article
 ms.prod: ''
@@ -16,50 +15,50 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92665936decc87b29f2fabb346f4d16745d0a30b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 6a76549ba5d663a7b6cfb858342a56921c5cd56b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562660"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746170"
 ---
-# <a name="qrcode-er-function"></a><span data-ttu-id="25429-103">QRCODE EB-Funktion</span><span class="sxs-lookup"><span data-stu-id="25429-103">QRCODE ER function</span></span>
+# <a name="qrcode-er-function"></a><span data-ttu-id="77bf1-103">QRCODE EB-Funktion</span><span class="sxs-lookup"><span data-stu-id="77bf1-103">QRCODE ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="25429-104">Die Funktion `QRCODE` gibt den Wert *Container* zurück, der das QR-Code-Bild (Quick Response Code) für die angegebene Zeichenfolge im Binärformat darstellt.</span><span class="sxs-lookup"><span data-stu-id="25429-104">The `QRCODE` function returns a *Container* value that presents the Quick Response code (QR code) image for the specified string in binary format.</span></span>
+<span data-ttu-id="77bf1-104">Die Funktion `QRCODE` gibt den Wert *Container* zurück, der das QR-Code-Bild (Quick Response Code) für die angegebene Zeichenfolge im Binärformat darstellt.</span><span class="sxs-lookup"><span data-stu-id="77bf1-104">The `QRCODE` function returns a *Container* value that presents the Quick Response code (QR code) image for the specified string in binary format.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="25429-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="25429-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="77bf1-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="77bf1-105">Syntax</span></span>
 
 ```vb
 QRCODE (text)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="25429-106">Argumente</span><span class="sxs-lookup"><span data-stu-id="25429-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="77bf1-106">Argumente</span><span class="sxs-lookup"><span data-stu-id="77bf1-106">Arguments</span></span>
 
-<span data-ttu-id="25429-107">`text`: *String*</span><span class="sxs-lookup"><span data-stu-id="25429-107">`text`: *String*</span></span>
+<span data-ttu-id="77bf1-107">`text`: *String*</span><span class="sxs-lookup"><span data-stu-id="77bf1-107">`text`: *String*</span></span>
 
-<span data-ttu-id="25429-108">Der Wert *String*, der den Originaltext darstellt.</span><span class="sxs-lookup"><span data-stu-id="25429-108">A *String* value that represents the original text.</span></span>
+<span data-ttu-id="77bf1-108">Der Wert *String*, der den Originaltext darstellt.</span><span class="sxs-lookup"><span data-stu-id="77bf1-108">A *String* value that represents the original text.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="25429-109">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="25429-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="77bf1-109">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="77bf1-109">Return values</span></span>
 
-<span data-ttu-id="25429-110">*Container*</span><span class="sxs-lookup"><span data-stu-id="25429-110">*Container*</span></span>
+<span data-ttu-id="77bf1-110">*Container*</span><span class="sxs-lookup"><span data-stu-id="77bf1-110">*Container*</span></span>
 
-<span data-ttu-id="25429-111">Der resultierende binäre Stream.</span><span class="sxs-lookup"><span data-stu-id="25429-111">The resulting binary stream.</span></span>
+<span data-ttu-id="77bf1-111">Der resultierende binäre Stream.</span><span class="sxs-lookup"><span data-stu-id="77bf1-111">The resulting binary stream.</span></span>
 
-## <a name="example"></a><span data-ttu-id="25429-112">Beispiel</span><span class="sxs-lookup"><span data-stu-id="25429-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="77bf1-112">Beispiel</span><span class="sxs-lookup"><span data-stu-id="77bf1-112">Example</span></span>
 
-<span data-ttu-id="25429-113">Sie können ein EB-Format (elektronische Berichtserstellung) konfigurieren, um ein ausgehendes Dokument im Microsoft Office-Format (Excel-Arbeitsmappen oder Word-Dokumente) mithilfe einer vordefinierten Vorlage zu generieren.</span><span class="sxs-lookup"><span data-stu-id="25429-113">You can configure an Electronic reporting (ER) format to generate an outbound document in Microsoft Office format (Excel workbooks or Word documents) by using a predefined template.</span></span> <span data-ttu-id="25429-114">Diese Vorlage kann das Objekt **Bild** (Excel-Arbeitsmappe) oder eine **Picture Content Control** (Word-Dokument) als Platzhalter für ein QR-Codebild enthalten.</span><span class="sxs-lookup"><span data-stu-id="25429-114">This template may contain a **Picture** object (Excel workbook) or a **Picture Content Control** (Word document) as a placeholder for a QR code image.</span></span> <span data-ttu-id="25429-115">Sie müssen dem konfigurierten EB-Format das Element **Zelle** hinzufügen, das zum Ausfüllen dieses Platzhalters verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="25429-115">You need to add to the configured ER format a **Cell** element that will be used to fill this placeholder in.</span></span> <span data-ttu-id="25429-116">Um festzulegen, welche Informationen in einem QR-Code gespeichert werden, müssen Sie eine Bindung für das Element **Zelle** definieren.</span><span class="sxs-lookup"><span data-stu-id="25429-116">To specify what information will be stored in a QR code, you need to define a binding for this **Cell** element.</span></span> <span data-ttu-id="25429-117">Beispielsweise können Sie eine solche Bindung so konfigurieren, dass sie den folgenden Ausdruck enthält:</span><span class="sxs-lookup"><span data-stu-id="25429-117">For example, you can configure such binding as containing the following expression:</span></span>
+<span data-ttu-id="77bf1-113">Sie können ein EB-Format (elektronische Berichtserstellung) konfigurieren, um ein ausgehendes Dokument im Microsoft Office-Format (Excel-Arbeitsmappen oder Word-Dokumente) mithilfe einer vordefinierten Vorlage zu generieren.</span><span class="sxs-lookup"><span data-stu-id="77bf1-113">You can configure an Electronic reporting (ER) format to generate an outbound document in Microsoft Office format (Excel workbooks or Word documents) by using a predefined template.</span></span> <span data-ttu-id="77bf1-114">Diese Vorlage kann das Objekt **Bild** (Excel-Arbeitsmappe) oder eine **Picture Content Control** (Word-Dokument) als Platzhalter für ein QR-Codebild enthalten.</span><span class="sxs-lookup"><span data-stu-id="77bf1-114">This template may contain a **Picture** object (Excel workbook) or a **Picture Content Control** (Word document) as a placeholder for a QR code image.</span></span> <span data-ttu-id="77bf1-115">Sie müssen dem konfigurierten EB-Format das Element **Zelle** hinzufügen, das zum Ausfüllen dieses Platzhalters verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="77bf1-115">You need to add to the configured ER format a **Cell** element that will be used to fill this placeholder in.</span></span> <span data-ttu-id="77bf1-116">Um festzulegen, welche Informationen in einem QR-Code gespeichert werden, müssen Sie eine Bindung für das Element **Zelle** definieren.</span><span class="sxs-lookup"><span data-stu-id="77bf1-116">To specify what information will be stored in a QR code, you need to define a binding for this **Cell** element.</span></span> <span data-ttu-id="77bf1-117">Beispielsweise können Sie eine solche Bindung so konfigurieren, dass sie den folgenden Ausdruck enthält:</span><span class="sxs-lookup"><span data-stu-id="77bf1-117">For example, you can configure such binding as containing the following expression:</span></span>
 
 ```vb
 QRCODE (model.ListOfShelfLabels.LabelText)`
 ```
 
-<span data-ttu-id="25429-118">Wenn Sie das konfigurierte EB-Format ausführen, wird der Textwert des Feldes **LabelText** von der Datenquelle **model.ListOfShelfLabels** verwendet, um ein QR-Codebild zu generieren.</span><span class="sxs-lookup"><span data-stu-id="25429-118">When you run the configured ER format, the text value of the **LabelText** field of the **model.ListOfShelfLabels** data source will be used to generate a QR code image.</span></span> <span data-ttu-id="25429-119">Dieses Bild ersetzt einen Platzhalter für ein QR-Code-Bild in der Dokumentvorlage, mit dem ein ausgehendes Dokument generiert wird.</span><span class="sxs-lookup"><span data-stu-id="25429-119">This image will replace a QR code image placeholder in the document template using to generate an outbound document.</span></span> <span data-ttu-id="25429-120">Wenn dieses Bild des generierten Dokuments gescannt wird, wird der Text zurückgegeben, der aus dem Feld **LabelText** der Datenquelle **model.ListOfShelfLabels** bezogen wurde.</span><span class="sxs-lookup"><span data-stu-id="25429-120">When this image of the generated document is scanned, it returns the text that was taken from the **LabelText** field of the **model.ListOfShelfLabels** data source.</span></span> <span data-ttu-id="25429-121">Weitere Informationen erhalten Sie unter [Einbetten von Bildern und Formen in generierten Dokumenten mithilfe von EB](electronic-reporting-embed-images-shapes.md).</span><span class="sxs-lookup"><span data-stu-id="25429-121">For more information, see [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md).</span></span>
+<span data-ttu-id="77bf1-118">Wenn Sie das konfigurierte EB-Format ausführen, wird der Textwert des Feldes **LabelText** von der Datenquelle **model.ListOfShelfLabels** verwendet, um ein QR-Codebild zu generieren.</span><span class="sxs-lookup"><span data-stu-id="77bf1-118">When you run the configured ER format, the text value of the **LabelText** field of the **model.ListOfShelfLabels** data source will be used to generate a QR code image.</span></span> <span data-ttu-id="77bf1-119">Dieses Bild ersetzt einen Platzhalter für ein QR-Code-Bild in der Dokumentvorlage, mit dem ein ausgehendes Dokument generiert wird.</span><span class="sxs-lookup"><span data-stu-id="77bf1-119">This image will replace a QR code image placeholder in the document template using to generate an outbound document.</span></span> <span data-ttu-id="77bf1-120">Wenn dieses Bild des generierten Dokuments gescannt wird, wird der Text zurückgegeben, der aus dem Feld **LabelText** der Datenquelle **model.ListOfShelfLabels** bezogen wurde.</span><span class="sxs-lookup"><span data-stu-id="77bf1-120">When this image of the generated document is scanned, it returns the text that was taken from the **LabelText** field of the **model.ListOfShelfLabels** data source.</span></span> <span data-ttu-id="77bf1-121">Weitere Informationen erhalten Sie unter [Einbetten von Bildern und Formen in generierten Dokumenten mithilfe von EB](electronic-reporting-embed-images-shapes.md).</span><span class="sxs-lookup"><span data-stu-id="77bf1-121">For more information, see [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="25429-122">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="25429-122">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="77bf1-122">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="77bf1-122">Additional resources</span></span>
 
-[<span data-ttu-id="25429-123">Textfunktionen</span><span class="sxs-lookup"><span data-stu-id="25429-123">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="77bf1-123">Textfunktionen</span><span class="sxs-lookup"><span data-stu-id="77bf1-123">Text functions</span></span>](er-functions-category-text.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

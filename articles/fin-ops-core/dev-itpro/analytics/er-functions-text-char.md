@@ -2,7 +2,6 @@
 title: CHAR EB-Funktion
 description: In diesem Thema werden Informationen zur Verwendung der CHAR-Funktion bei der elektronischen Berichterstellung (EB) bereitgestellt.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
@@ -16,48 +15,48 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b008cf6ddf51d816a17e0fae1fa0db464adeabde
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: a621328817171be7df0622507c84f5c6f6fe90a1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563197"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746434"
 ---
-# <a name="char-er-function"></a><span data-ttu-id="ce41f-103">CHAR EB-Funktion</span><span class="sxs-lookup"><span data-stu-id="ce41f-103">CHAR ER function</span></span>
+# <a name="char-er-function"></a><span data-ttu-id="be9d6-103">CHAR EB-Funktion</span><span class="sxs-lookup"><span data-stu-id="be9d6-103">CHAR ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ce41f-104">Die Funktion `CHAR` gibt den Wert *String* zurück, der ein einzelnes Zeichen darstellt, auf das durch die angegebene Unicode-Nummer verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="ce41f-104">The `CHAR` function returns a *String* value that presents a single character that is referenced by the specified Unicode number.</span></span>
+<span data-ttu-id="be9d6-104">Die Funktion `CHAR` gibt den Wert *String* zurück, der ein einzelnes Zeichen darstellt, auf das durch die angegebene Unicode-Nummer verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="be9d6-104">The `CHAR` function returns a *String* value that presents a single character that is referenced by the specified Unicode number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ce41f-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="ce41f-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="be9d6-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="be9d6-105">Syntax</span></span>
 
 ```vb
 CHAR (number)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="ce41f-106">Argumente</span><span class="sxs-lookup"><span data-stu-id="ce41f-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="be9d6-106">Argumente</span><span class="sxs-lookup"><span data-stu-id="be9d6-106">Arguments</span></span>
 
-<span data-ttu-id="ce41f-107">`number`: *Integer*</span><span class="sxs-lookup"><span data-stu-id="ce41f-107">`number`: *Integer*</span></span>
+<span data-ttu-id="be9d6-107">`number`: *Integer*</span><span class="sxs-lookup"><span data-stu-id="be9d6-107">`number`: *Integer*</span></span>
 
-<span data-ttu-id="ce41f-108">Eine Zahl, die einem erwarteten einzelnen Zeichen entspricht.</span><span class="sxs-lookup"><span data-stu-id="ce41f-108">A number that corresponds to an expected single character.</span></span>
+<span data-ttu-id="be9d6-108">Eine Zahl, die einem erwarteten einzelnen Zeichen entspricht.</span><span class="sxs-lookup"><span data-stu-id="be9d6-108">A number that corresponds to an expected single character.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="ce41f-109">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="ce41f-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="be9d6-109">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="be9d6-109">Return values</span></span>
 
-<span data-ttu-id="ce41f-110">*Zeichenfolge*</span><span class="sxs-lookup"><span data-stu-id="ce41f-110">*String*</span></span>
+<span data-ttu-id="be9d6-110">*Zeichenfolge*</span><span class="sxs-lookup"><span data-stu-id="be9d6-110">*String*</span></span>
 
-<span data-ttu-id="ce41f-111">Der resultierende Textwert.</span><span class="sxs-lookup"><span data-stu-id="ce41f-111">The resulting text value.</span></span>
+<span data-ttu-id="be9d6-111">Der resultierende Textwert.</span><span class="sxs-lookup"><span data-stu-id="be9d6-111">The resulting text value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="ce41f-112">Anwendungshinweise</span><span class="sxs-lookup"><span data-stu-id="ce41f-112">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="be9d6-112">Anwendungshinweise</span><span class="sxs-lookup"><span data-stu-id="be9d6-112">Usage notes</span></span>
 
-<span data-ttu-id="ce41f-113">Die Zeichenfolge, die diese Funktion zurückgibt, hängt von der Codierung ab, die im übergeordneten **DATEI**-Formatelement ausgewählt ist.</span><span class="sxs-lookup"><span data-stu-id="ce41f-113">The string that this function returns depends on the encoding that is selected in the parent **FILE** format element.</span></span> <span data-ttu-id="ce41f-114">Eine Liste der unterstützten Codierungen erhalten Sie unter [Codierungsklasse](https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).</span><span class="sxs-lookup"><span data-stu-id="ce41f-114">For a list of the supported encodings, see [Encoding class](https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).</span></span>
+<span data-ttu-id="be9d6-113">Die Zeichenfolge, die diese Funktion zurückgibt, hängt von der Codierung ab, die im übergeordneten **DATEI**-Formatelement ausgewählt ist.</span><span class="sxs-lookup"><span data-stu-id="be9d6-113">The string that this function returns depends on the encoding that is selected in the parent **FILE** format element.</span></span> <span data-ttu-id="be9d6-114">Eine Liste der unterstützten Codierungen erhalten Sie unter [Codierungsklasse](https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).</span><span class="sxs-lookup"><span data-stu-id="be9d6-114">For a list of the supported encodings, see [Encoding class](https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).</span></span>
 
-## <a name="example"></a><span data-ttu-id="ce41f-115">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ce41f-115">Example</span></span>
+## <a name="example"></a><span data-ttu-id="be9d6-115">Beispiel</span><span class="sxs-lookup"><span data-stu-id="be9d6-115">Example</span></span>
 
-<span data-ttu-id="ce41f-116">`CHAR (255)` gibt **"ÿ"** zurück.</span><span class="sxs-lookup"><span data-stu-id="ce41f-116">`CHAR (255)` returns **"ÿ"**.</span></span>
+<span data-ttu-id="be9d6-116">`CHAR (255)` gibt **"ÿ"** zurück.</span><span class="sxs-lookup"><span data-stu-id="be9d6-116">`CHAR (255)` returns **"ÿ"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ce41f-117">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="ce41f-117">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="be9d6-117">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="be9d6-117">Additional resources</span></span>
 
-[<span data-ttu-id="ce41f-118">Textfunktionen</span><span class="sxs-lookup"><span data-stu-id="ce41f-118">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="be9d6-118">Textfunktionen</span><span class="sxs-lookup"><span data-stu-id="be9d6-118">Text functions</span></span>](er-functions-category-text.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
