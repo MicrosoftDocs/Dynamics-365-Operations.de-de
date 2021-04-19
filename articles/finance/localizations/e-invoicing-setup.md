@@ -1,12 +1,10 @@
 ---
-title: Einrichten des Add-Ons für die elektronische Rechnungsstellung
-description: In diesem Thema wird erläutert, wie das Add-On für die elektronische Rechnungsstellung in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management eingerichtet wird.
+title: Elektronische Rechnungsstellung einrichten
+description: In diesem Thema wird erläutert, wie die elektronische Rechnungsstellung in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management eingerichtet wird.
 author: gionoder
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,62 +15,62 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5821a512b2beaf7ba2b8015355f04562f7b3b38a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fd0dda0adb292c10eea0a770ae0eae33d5f91f17
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209945"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840003"
 ---
-# <a name="set-up-the-electronic-invoicing-add-on"></a>Einrichten des Add-Ons für die elektronische Rechnungsstellung
+# <a name="set-up-electronic-invoicing"></a>Elektronische Rechnungsstellung einrichten
 
 [!include [banner](../includes/banner.md)]
 
 
-Bei der Einrichtung der Add-On-Funktion für die elektronische Rechnungsstellung wird die erforderliche Konfiguration über die RCS-Umgebung (Regulatory Configuration Services) erstellt und auf dem Add-On-Server für die elektronische Rechnungsstellung veröffentlicht. Mit der Einrichtung können Sie die konfigurierbaren Regeln erstellen, die es dem Add-On für die elektronische Rechnungsstellung ermöglichen, ein sicheres Protokoll über das Internet zu verwenden, um über Webdienste mit einer Drittanbieterentität zu kommunizieren und Daten auszutauschen.
+Bei der Einrichtung der Funktion für die elektronische Rechnungsstellung wird die erforderliche Konfiguration über die RCS-Umgebung (Regulatory Configuration Services) erstellt und auf dem Server für die elektronische Rechnungsstellung veröffentlicht. Mit der Einrichtung können Sie die konfigurierbaren Regeln erstellen, die es der elektronischen Rechnungsstellung ermöglichen, ein sicheres Protokoll über das Internet zu verwenden, um über Webdienste mit einer Drittanbieterentität zu kommunizieren und Daten auszutauschen.
 
 Die Konfigurierbarkeit basiert auf der Konfiguration des Formats der elektronischen Berichterstattung (EB), um Inhalte zu erstellen, die über digitale Dateien gesendet und empfangen werden. Sie basiert auch auf der Orchestrierung von Kommunikationsaktionen, um Anforderungen an Webdienste von Drittanbietern zu senden und Antworten von diesen zu empfangen, ohne dass Sie Code schreiben müssen.
 
 ## <a name="overview"></a>Übersicht
 
-„Die Add-On-Funktion für die elektronische Rechnungsstellung“ ist der generische Name für die Ressource, die so konfiguriert und veröffentlicht ist, dass sie den Add-On-Server für die elektronische Rechnungsstellung verwendet. Das Einrichten der Funktion umfasst unter anderem die Verwendung von EB-Konfigurationsformaten zum Erstellen konfigurierbarer Export- und Importdateien sowie die Verwendung von Aktionen und Aktionsabläufen, um die Erstellung konfigurierbarer Regeln zum Senden von Anforderungen, zum Importieren von Antworten und zum Analysieren des Inhalts der Antworten zu ermöglichen.
+„Die Funktion für die elektronische Rechnungsstellung“ ist der generische Name für die Ressource, die so konfiguriert und veröffentlicht ist, dass sie den Server für die elektronische Rechnungsstellung verwendet. Das Einrichten der Funktion umfasst unter anderem die Verwendung von EB-Konfigurationsformaten zum Erstellen konfigurierbarer Export- und Importdateien sowie die Verwendung von Aktionen und Aktionsabläufen, um die Erstellung konfigurierbarer Regeln zum Senden von Anforderungen, zum Importieren von Antworten und zum Analysieren des Inhalts der Antworten zu ermöglichen.
 
-Die folgende Abbildung zeigt die Hauptkomponenten einer Add-On-Funktion für die elektronische Rechnungsstellung.
+Die folgende Abbildung zeigt die Hauptkomponenten einer Funktion für die elektronische Rechnungsstellung.
 
-![Übersicht über die Add-On-Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Übersicht über die Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 Aufgrund unterschiedlicher Rechnungsformate und Aktivitätsabläufe kann die Einrichtung der Funktionen je nach Land oder Region oder je nach Geschäftsanforderungen variieren.
 
-## <a name="set-up-the-electronic-invoicing-add-on-feature"></a>Einrichten der Add-On-Funktion für die elektronische Rechnungsstellung
+## <a name="set-up-the-electronic-invoicing-feature"></a>Funktion für die elektronische Rechnungsstellung einrichten
 
-Der Einrichtungsprozess muss in Ihrer RCS-Umgebung abgeschlossen sein. Befolgen Sie diese Schritte, um eine neue Add-On-Funktion für die elektronische Rechnungsstellung zu erstellen.
+Der Einrichtungsprozess muss in Ihrer RCS-Umgebung abgeschlossen sein. Befolgen Sie diese Schritte, um eine neue Funktion für die elektronische Rechnungsstellung zu erstellen.
 
 1. Melden Sie sich bei Ihrer RCS-Umgebung an.
-2. Wählen Sie im Arbeitsbereich **Globalisierungsfunktionen** im Abschnitt **Funktionen** die Kachel **Add-On für die elektronische Rechnungsstellung** aus.
-3. Wählen Sie auf der Seite **Add-On-Funktionen für die elektronische Rechnungsstellung** die Option **Importieren** aus, um die EB-Datenmodellkonfiguration aus dem globalen Repository zu importieren.
-4. Wählen Sie **Hinzufügen** aus, um eine Add-On-Funktion für die elektronische Rechnungsstellung zu erstellen. Sie können die Funktion entweder von Grund auf neu erstellen oder aus einer vorhandenen Add-On-Funktion für die elektronische Rechnungsstellung ableiten.
+2. Wählen Sie im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktionen** die Kachel **Elektronische Rechnungsstellung** aus.
+3. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** die Option **Importieren** aus, um die ER-Datenmodellkonfiguration aus dem globalen Repository zu importieren.
+4. Wählen Sie **Hinzufügen** aus, um eine Funktion für die elektronische Rechnungsstellung zu erstellen. Sie können die Funktion entweder von Grund auf neu erstellen oder aus einer vorhandenen Funktion für die elektronische Rechnungsstellung ableiten.
 
-    ![Hinzufügen einer Add-On-Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Hinzufügen einer Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
-> Wenn Sie eine neue Add-On-Funktion für die elektronische Rechnungsstellung erstellen, hat diese eine Versionsnummer und der Standardstatus ist auf **Entwurf** festgelegt.
+> Wenn Sie eine neue Funktion für die elektronische Rechnungsstellung erstellen, hat diese eine Versionsnummer und der Standardstatus ist auf **Entwurf** festgelegt.
 
 ### <a name="configurations"></a>Varianten
 
-Konfigurationen enthalten die EB-Formatkonfigurationen, die für Transformationen und zum Erstellen der Dateien erforderlich sind, die während der Kommunikation mit Webdiensten von Drittanbietern ausgetauscht werden. Eine Add-On-Funktion für die elektronische Rechnungsstellung kann so viele EB-Dateiformatkonfigurationen aufweisen, wie erforderlich sind, je nach den vom Webdienstanbieter bereitgestellten technischen Integrationsspezifikation.
+Konfigurationen enthalten die EB-Formatkonfigurationen, die für Transformationen und zum Erstellen der Dateien erforderlich sind, die während der Kommunikation mit Webdiensten von Drittanbietern ausgetauscht werden. Eine Funktion für die elektronische Rechnungsstellung kann so viele ER-Dateiformatkonfigurationen aufweisen, wie erforderlich sind, je nach der vom Webdienstanbieter bereitgestellten technischen Integrationsspezifikation.
 
-Befolgen Sie diese Schritte, um der Add-On-Funktion für die elektronische Rechnungsstellung EB-Formate hinzuzufügen.
+Befolgen Sie diese Schritte, um der Funktion für die elektronische Rechnungsstellung ER-Formate hinzuzufügen.
 
-1. Wählen Sie auf der Seite **Add-On-Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Konfigurationen** die Option **Hinzufügen** aus, um EB-Dateiformatkonfigurationen für die Add-On-Funktion für die elektronische Rechnungsstellung hinzuzufügen.
+1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Konfigurationen** die Option **Hinzufügen** aus, um ER-Dateiformatkonfigurationen für die Funktion für die elektronische Rechnungsstellung hinzuzufügen.
 
-    ![Hinzufügen von Konfigurationen für die Add-On-Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Hinzufügen von Konfigurationen für die Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
-    > Wenn Sie eine Add-On-Funktion für die elektronische Rechnungsstellung von Grund auf neu erstellen, müssen Sie alle EB-Dateiformatkonfigurationen manuell hinzufügen. Wenn Sie eine Add-On-Funktion für die elektronische Rechnungsstellung von einer vorhandenen Funktion ableiten, werden die EB-Dateiformatkonfigurationen automatisch erstellt, da sie von der ursprünglichen Add-On-Funktion für die elektronische Rechnungsstellung geerbt werden.
+    > Wenn Sie eine Funktion für die elektronische Rechnungsstellung von Grund auf neu erstellen, müssen Sie alle ER-Dateiformatkonfigurationen manuell hinzufügen. Wenn Sie eine Funktion für die elektronische Rechnungsstellung von einer vorhandenen Funktion ableiten, werden die ER-Dateiformatkonfigurationen automatisch erstellt, da sie von der ursprünglichen Funktion für die elektronische Rechnungsstellung geerbt werden.
 
 2. Wählen Sie **Bearbeiten** aus, um die Seite **Formatdesigner** zu öffnen, auf der Sie die Konfiguration des EB-Dateiformats bearbeiten können.
 
-    ![Bearbeiten von Konfigurationen für die Add-On-Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Bearbeiten von Konfigurationen für die Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Während Sie das Format bearbeiten, wird der Status der Konfigurationsversion auf **Entwurf** festgelegt.
@@ -83,20 +81,20 @@ Befolgen Sie diese Schritte, um der Add-On-Funktion für die elektronische Rechn
 
 ### <a name="feature-setups"></a>Funktionseinrichtungen
 
-Funktionseinrichtungen beinhalten die Regeln für Kommunikation und Sicherheit mit dem Webdienst eines Drittanbieters. Eine Add-On-Funktion für die elektronische Rechnungsstellung kann basierend auf der Geschäftsregel, die Sie umsetzen möchten, so viele Funktionseinrichtungen haben, wie erforderlich sind.
+Funktionseinrichtungen beinhalten die Regeln für Kommunikation und Sicherheit mit dem Webdienst eines Drittanbieters. Eine Funktion für die elektronische Rechnungsstellung kann basierend auf der Geschäftsregel, die Sie umsetzen möchten, so viele Funktionseinrichtungen haben, wie erforderlich sind.
 
-Befolgen Sie diese Schritte, um der Add-On-Funktion für die elektronische Rechnungsstellung Funktionseinrichtungen hinzuzufügen.
+Befolgen Sie diese Schritte, um der Funktion für die elektronische Rechnungsstellung Funktionseinrichtungen hinzuzufügen.
 
-1. Wählen Sie auf der Seite **Add-On-Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Einrichtungen** die Option **Hinzufügen** aus, um Funktionseinrichtungen zur Add-On-Funktion für die elektronische Rechnungsstellung hinzuzufügen.
+1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Einrichtungen** die Option **Hinzufügen** aus, um Funktionseinrichtungen zur Funktion für die elektronische Rechnungsstellung hinzuzufügen.
 
-    ![Hinzufügen von Funktionseinrichtungen zur Add-On-Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Hinzufügen von Einrichtungen der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
-    > Wenn Sie eine Add-On-Funktion für die elektronische Rechnungsstellung von Grund auf neu erstellen, müssen Sie alle erforderlichen Funktionseinrichtungen manuell hinzufügen. Wenn Sie eine Add-On-Funktion für die elektronische Rechnungsstellung von einer vorhandenen Funktion ableiten, werden alle Funktionseinrichtungen automatisch erstellt, da sie von der ursprünglichen Add-On-Funktion für die elektronische Rechnungsstellung geerbt werden.
+    > Wenn Sie eine Funktion für die elektronische Rechnungsstellung von Grund auf neu erstellen, müssen Sie alle erforderlichen Funktionseinrichtungen manuell hinzufügen. Wenn Sie eine Funktion für die elektronische Rechnungsstellung von einer vorhandenen Funktion ableiten, werden alle Funktionseinrichtungen automatisch erstellt, da sie von der ursprünglichen Funktion für die elektronische Rechnungsstellung geerbt werden.
 
 2. Wählen Sie **Bearbeiten** aus, um die Einrichtung der Funktionsversion zu bearbeiten.
 
-    ![Bearbeiten von Funktionseinrichtungen der Add-On-Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Bearbeiten von Einrichtungen der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. Verwenden Sie die Seite **Einrichtung der Funktionsversion** zum Konfigurieren von Aktionen, Anwendbarkeitsregeln und Variablen.
 
@@ -104,7 +102,7 @@ Befolgen Sie diese Schritte, um der Add-On-Funktion für die elektronische Rechn
 
 ### <a name="actions"></a>Aktionen
 
-Aktionen sind eine vordefinierte Liste von Vorgängen, die in sequenzieller Reihenfolge ausgeführt werden. Diese Liste enthält die Aufschlüsselung der Schritte, die für die vollständige Ausführung der Add-On-Funktion für die elektronische Rechnungsstellung erforderlich sind. Die Aktionen können in derselben Add-On-Funktion für die elektronische Rechnungsstellung die Kommunikation in beide Richtungen umfassen: Senden einer Anforderung für ein Ziel sowie Empfangen einer Antwort und Analysieren Ihres Inhalts.
+Aktionen sind eine vordefinierte Liste von Vorgängen, die in sequenzieller Reihenfolge ausgeführt werden. Diese Liste enthält die Aufschlüsselung der Schritte, die für die vollständige Ausführung der Funktion für die elektronische Rechnungsstellung erforderlich sind. Die Aktionen können in derselben Funktion für die elektronische Rechnungsstellung die Kommunikation in beide Richtungen umfassen: Senden einer Anforderung für ein Ziel sowie Empfangen einer Antwort und Analysieren Ihres Inhalts.
 
 Jede Aktion enthält eine vordefinierte Liste von Parametern, die erforderlich sind, damit die Aktion ihren Zweck erfüllt. Optional können zusätzliche Parameter bereitgestellt werden.
 
@@ -255,7 +253,7 @@ Die verfügbaren Parameter variieren je nach der Aktion, die auf dem Inforegiste
 
 ### <a name="applicability-rules"></a>Regeln für die Anwendbarkeit
 
-Mit den Anwendbarkeitsregeln können Sie logische Regeln erstellen, die den Nutzungskontext für die Funktionseinrichtung bestimmen. Die Übereinstimmung zwischen dem Kontext des Geschäftsdokuments, das zur Verarbeitung gesendet wird, und den Kriterien für die Anwendbarkeitsregel bestimmt somit, welche Add-On-Funktion für die elektronische Rechnungsstellung zur Verarbeitung dieser Übermittlung verwendet wird.
+Mit den Anwendbarkeitsregeln können Sie logische Regeln erstellen, die den Nutzungskontext für die Funktionseinrichtung bestimmen. Die Übereinstimmung zwischen dem Kontext des Geschäftsdokuments, das zur Verarbeitung gesendet wird, und den Kriterien für die Anwendbarkeitsregel bestimmt somit, welche Funktion für die elektronische Rechnungsstellung zur Verarbeitung dieser Übermittlung verwendet wird.
 
 #### <a name="set-up-applicability-rules"></a>Einrichten von Anwendbarkeitsregeln
 
@@ -290,7 +288,7 @@ In der folgenden Tabelle werden die Felder beschrieben, die auf der Registerkart
 
 ### <a name="variables"></a>Variable
 
-Sie können Variablen erstellen und diese dann als Eingabewert für einen Parameter einer bestimmten Aktion verwenden. Sie können sie auch verwenden, um zwischen den Add-On-Diensten für die elektronische Rechnungsstellung und dem Client Informationen auszutauschen, die das Ergebnis der Ausführung einer bestimmten Aktion als Teil des Übermittlungs-Flows sind.
+Sie können Variablen erstellen und diese dann als Eingabewert für einen Parameter einer bestimmten Aktion verwenden. Sie können sie auch verwenden, um zwischen den Diensten für die elektronische Rechnungsstellung und dem Client Informationen auszutauschen, die das Ergebnis der Ausführung einer bestimmten Aktion als Teil des Übermittlungs-Flows sind.
 
 #### <a name="set-up-variables"></a>Variablen einrichten
 
@@ -318,45 +316,45 @@ Die Validierung überprüft die Konsistenz der gesamten Konfiguration. Wenn beis
 
 ## <a name="environments"></a>Umgebungen
 
-Eine Add-On-Umgebung für die elektronische Rechnungsstellung muss der Add-On-Funktion für die elektronische Rechnungsstellung zugeordnet und für diese aktiviert sein. Add-On-Umgebungen für die elektronische Rechnungsstellung müssen im Voraus erstellt und veröffentlicht werden, indem die Globalisierungsfunktionen im RCS-Konto Ihres Unternehmens konfiguriert werden.
+Eine Umgebung für die elektronische Rechnungsstellung muss der Funktion für die elektronische Rechnungsstellung zugeordnet und für diese aktiviert sein. Umgebungen für die elektronische Rechnungsstellung müssen im Voraus erstellt und veröffentlicht werden, indem die Globalisierungsfunktionen im RCS-Konto Ihres Unternehmens konfiguriert werden.
 
-Befolgen Sie diese Schritte, um eine Add-On-Umgebung für die elektronische Rechnungsstellung für die Add-On-Funktion für die elektronische Rechnungsstellung zu aktivieren.
+Befolgen Sie diese Schritte, um eine Umgebung für die elektronische Rechnungsstellung für die Funktion für die elektronische Rechnungsstellung zu aktivieren.
 
-1. Wählen Sie auf der Seite **Add-On-Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Umgebungen** die Option **Aktivieren** aus, um eine Add-On-Umgebung für die elektronische Rechnungsstellung hinzuzufügen.
+1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Umgebungen** die Option **Aktivieren** aus, um eine Umgebung für die elektronische Rechnungsstellung hinzuzufügen.
 2. Wählen Sie im Feld **Gültig ab** das Datum aus, an dem die neue Umgebung wirksam wird.
 
-![Aktivieren einer Add-On-Umgebung für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Aktivieren einer Umgebung für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>Organisation
 
-Die Add-On-Funktion für die elektronische Rechnungsstellung kann von mehreren Organisationen gemeinsam genutzt werden.
+Die Funktion für die elektronische Rechnungsstellung kann von mehreren Organisationen gemeinsam genutzt werden.
 
-- Wählen Sie auf der Seite **Add-On-Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Organisationen** die Option **Teilen mit** aus, um die Organisation hinzuzufügen, mit der Sie die Add-On-Funktion für die elektronische Rechnungsstellung teilen möchten.
+- Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Organisationen** die Option **Teilen mit** aus, um die Organisation hinzuzufügen, mit der Sie die Funktion für die elektronische Rechnungsstellung teilen möchten.
 
-Wählen Sie **Freigabe aufheben** aus, um die Freigabe der Add-On-Funktion für die elektronische Rechnungsstellung für die Organisation zu beenden.
+Wählen Sie **Freigabe aufheben** aus, um die Freigabe der Funktion für die elektronische Rechnungsstellung für die Organisation zu beenden.
 
 ## <a name="versions"></a>Versionen
 
-Mit Versionen können Sie den Lebenszyklus der Add-On-Funktion für die elektronische Rechnungsstellung steuern, indem Sie ihren Status verwalten. Sie können eine neue Version einer vorhandenen Add-On-Funktion für die elektronische Rechnungsstellung erstellen. Alternativ können Sie, wenn die gesamte Konfiguration für die Add-On-Funktion für die elektronische Rechnungsstellung abgeschlossen ist, den Status der Funktion in **Abgeschlossen** und dann in **Veröffentlichen** ändern.
+Mit Versionen können Sie den Lebenszyklus der Funktion für die elektronische Rechnungsstellung steuern, indem Sie ihren Status verwalten. Sie können eine neue Version einer vorhandenen Funktion für die elektronische Rechnungsstellung erstellen. Alternativ können Sie, wenn die gesamte Konfiguration für die Funktion für die elektronische Rechnungsstellung abgeschlossen ist, den Status der Funktion in **Abgeschlossen** und dann in **Veröffentlichen** ändern.
 
-### <a name="create-a-new-version-of-an-existing-electronic-invoicing-add-on-feature"></a>Erstellen einer neuen Version einer vorhandenen Add-On-Funktion für die elektronische Rechnungsstellung
+### <a name="create-a-new-version-of-an-existing-electronic-invoicing-feature"></a>Erstellen einer neuen Version einer vorhandenen Funktion für die elektronische Rechnungsstellung
 
-1. Wählen Sie auf der Seite **Add-On-Funktionen für die elektronische Rechnungsstellung** im Raster auf der linken Seite die Add-On-Funktion für die elektronische Rechnungsstellung aus.
-2. Wählen Sie auf der Registerkarte **Versionen** die Option **Neu** aus, um eine neue Version der Add-On-Funktion für die elektronische Rechnungsstellung hinzuzufügen.
+1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** im Raster auf der linken Seite die Funktion für die elektronische Rechnungsstellung aus.
+2. Wählen Sie auf der Registerkarte **Versionen** die Option **Neu** aus, um eine neue Version der Funktion für die elektronische Rechnungsstellung hinzuzufügen.
 
-### <a name="change-the-status-of-the-electronic-invoicing-add-on-feature"></a>Ändern des Status der Add-On-Funktion für die elektronische Rechnungsstellung
+### <a name="change-the-status-of-the-electronic-invoicing-feature"></a>Ändern des Status der Funktion für die elektronische Rechnungsstellung
 
-Befolgen Sie diese Schritte, um den Lebenszyklus der Add-On-Funktion für die elektronische Rechnungsstellung zu verwalten.
+Befolgen Sie diese Schritte, um den Lebenszyklus der Funktion für die elektronische Rechnungsstellung zu verwalten.
 
-1. Wählen Sie auf der Seite **Add-On-Funktionen für die elektronische Rechnungsstellung** im Raster auf der linken Seite die Add-On-Funktion für die elektronische Rechnungsstellung aus.
+1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** im Raster auf der linken Seite die Funktion für die elektronische Rechnungsstellung aus.
 2. Wählen Sie auf der Registerkarte **Versionen** die Option **Status ändern** aus und ändern Sie dann den Status von **Entwurf** zu **Abgeschlossen**.
-3. Sie werden aufgefordert, zu bestätigen, dass Sie die Add-On-Funktion für die elektronische Rechnungsstellung und alle ihre Komponenten abschließen möchten. Wählen Sie **Ja** aus, um die Aktion zu bestätigen, oder **Nein** um sie abzubrechen.
+3. Sie werden aufgefordert, zu bestätigen, dass Sie die Funktion für die elektronische Rechnungsstellung und alle ihre Komponenten abschließen möchten. Wählen Sie **Ja** aus, um die Aktion zu bestätigen, oder **Nein** um sie abzubrechen.
 
     > [!NOTE]
-    > Wenn Sie **Ja** auswählen, wird der Status von Konfigurationsversionen, die Bestandteile der Add-On-Funktion für die elektronische Rechnungsstellung sind, automatisch von **Entwurf** zu **Abgeschlossen** geändert.
+    > Wenn Sie **Ja** auswählen, wird der Status von Konfigurationsversionen, die Bestandteile der Funktion für die elektronische Rechnungsstellung sind, automatisch von **Entwurf** zu **Abgeschlossen** geändert.
 
 4. Wählen Sie **Status ändern** aus und ändern Sie dann den Status von **Abgeschlossen** zu **Veröffentlichen**.
-5. Sie werden aufgefordert, zu bestätigen, dass Sie die Add-On-Funktion für die elektronische Rechnungsstellung und alle ihre Komponenten im globalen Repository veröffentlichen möchten. Wählen Sie **Ja** aus, um die Aktion zu bestätigen, oder **Nein** um sie abzubrechen.
+5. Sie werden aufgefordert, zu bestätigen, dass Sie die Funktion für die elektronische Rechnungsstellung und alle ihre Komponenten im globalen Repository veröffentlichen möchten. Wählen Sie **Ja** aus, um die Aktion zu bestätigen, oder **Nein** um sie abzubrechen.
 
     > [!NOTE]
     > Wenn Sie **Ja** auswählen, wird der Status von Konfigurationsversionen automatisch von **Abgeschlossen** zu **Freigegeben** geändert.

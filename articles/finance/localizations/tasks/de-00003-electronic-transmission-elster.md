@@ -2,11 +2,9 @@
 title: DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
 description: Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxElectronicHTTPServer
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a1cab3d0a3ff022657f75e34b9b2c3b7050533a8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a7e5857fcbd4aeedca6e195c80b2391ba206184e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236174"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822629"
 ---
 # <a name="de-00003-electronic-transmission-of-vat-declaration-elster"></a>DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
 

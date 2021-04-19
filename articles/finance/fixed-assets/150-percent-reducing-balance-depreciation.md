@@ -2,11 +2,9 @@
 title: Degressiven Abschreibung von 150 Prozent
 description: Dieser Artikel gibt eine Übersicht die 150 Prozent Reduktionssaldomethode der Abschreibung.
 author: saraschi2
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4edc868b76d466c41be8036b962730db90eeb68a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f1c6b7e92ea8b20123c0b1c1747c49847b0e2420
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249436"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827169"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>Degressiven Abschreibung von 150 Prozent
 
@@ -66,7 +64,7 @@ Wenn als Abschreibungsjahr **Steuerlich** ausgewählt wird, stehen im Feld **Per
 
 ## <a name="example-of-150-reducing-balance-depreciation"></a>Beispiel für die Abschreibungsmethode "150 % degressiv"
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Anschaffungskosten               | 11.000 |
 | Schrottwert                  | 1.000  |

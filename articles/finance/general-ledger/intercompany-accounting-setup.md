@@ -2,11 +2,9 @@
 title: Einrichten der Intercompany-Verrechnung
 description: In diesem Thema wird erläutert, wie die Intercompany-Verrechnung eingerichtet wird, sodass Sie Intercompany-Erfassungen für Sachkonto-Zuweisungen Finanzerfassung, z. B. Tageserfassungen, Kreditorenrechnungserfassungen und Zahlungserfassungen, verwenden können.
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6e7aa7bde493a1527b3c953e0ff2c6ce61df4c9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0f74a70c5db4f70b9850fb5093f1afea2a4f7240
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249022"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826593"
 ---
 # <a name="intercompany-accounting-setup"></a>Einrichten der Intercompany-Verrechnung
 

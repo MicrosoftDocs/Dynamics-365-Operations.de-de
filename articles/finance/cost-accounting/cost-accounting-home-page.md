@@ -2,11 +2,9 @@
 title: Startseite für die Kostenbuchhaltung
 description: Dieser Artikel enthält eine Liste der Hilfethemen und weiterer Ressourcen, die für die Kostenbuchhaltung verfügbar sind.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace, CAMAXCostAccountingSetupWizard
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db93078c862cd468ec692d490876d825725f4253
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3485818ff67e20a5354e4bebc4903faaa36f6286
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219962"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841116"
 ---
 # <a name="cost-accounting-home-page"></a>Startseite für die Kostenrechnung
 
@@ -36,7 +34,7 @@ Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, d
 
 ## <a name="quick-links"></a>Direktlinks
 
-|      |   |
+| &nbsp; | &nbsp;  |
 |------|---|
 |  [Basisentitäten konfigurieren (eLearning)](https://mbspartner.microsoft.com/Home) (CustomerSource-Konto erforderlich)  |[Kostenelementdimensionen](cost-elements.md)  |
 |  [Dimensionshierarchie](dimension-hierarchy.md)  |[Kostenkontrolleinheiten definieren](./tasks/define-cost-control-units.md)| 
@@ -46,7 +44,7 @@ Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, d
 
 ## <a name="get-started-videosbr"></a>Erste Schritte-Videos<br/>
 
-|  |  |                             |
+| &nbsp; | &nbsp;  | &nbsp;  |
 |------------------------|--------------------|-----------------------------|
 | [Erste Schritte mit Kostenrechnung](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [Mobiler Arbeitsbereich für die Kostenrechnung](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [Verwendung von Excel zur Kostenrechnungsanalyse](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
 

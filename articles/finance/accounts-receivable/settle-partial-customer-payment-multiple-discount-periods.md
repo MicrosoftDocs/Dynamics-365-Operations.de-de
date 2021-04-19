@@ -2,11 +2,9 @@
 title: Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträume hat
 description: Dieser Artikel beschreibt, wie Debitorenteilzahlungen ausgeglichen werden, die mehrere Rabattzeiträume enthalten.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5047debd0f3d035ec5fc8bc24745183b28e9f0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241713"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835099"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträume hat
 
@@ -56,7 +54,7 @@ Am 28. Juni leistet Debitor 4031 eine Teilzahlung von 294,00. Da der 28. Juni im
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt. Wenn Sie den Wert **Auszugleichender Betrag** nicht auf **294,00** ändern, weichen die erscheinenden Werte für **Skontobetrag** ab. Allerdings werden 6,00 als das Skonto übernommen, wenn die Zahlung gebucht wurde, da der Ausgleich automatisch den Wert **Auszugleichender Betrag** für Sie anpasst.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Skontodatum           | 6/30/2015 |
 | Skontobetrag         | 20,00     |
@@ -75,7 +73,7 @@ Am 8. Juli zahlt der Debitor den Rest des Rechnungsbetrags. Da diese Zahlung im 
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
 | Skontobetrag         | 30,00     |

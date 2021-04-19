@@ -2,7 +2,6 @@
 title: Import von Dateien im XML-Format mit optionalen Attributen
 description: Dieses Thema enthält Informationen zum Entwurf von ER-Formaten, die XML-Attributen angeben, um eingehende elektronische Dokumente im XML-Format zu analysieren.
 author: NickSelin
-manager: AnnBe
 ms.date: 07/03/2019
 ms.topic: article
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 399f19197a729c11eaff94d708c837caef0d366d
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: cd5add18f2f1588cef02afae052d29dc1a28face
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562951"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748268"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Import von Dateien im XML-Format mit optionalen Attributen
 

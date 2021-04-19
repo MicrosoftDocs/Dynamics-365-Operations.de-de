@@ -2,11 +2,9 @@
 title: Eine Datenquelle für das Sachkonto der Kostenrechnung verwalten
 description: Verwenden Sie diese Prozedur, um die Hauptbuchdatenquelle für ein Kostenrechnungssachkonto zu verwalten.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMAXGeneralLedgerEntryProviderConfiguration
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48fef42f1866b0995182ac6fd022045f7dd31906
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: da4d351f4bce6494a107a55895866e4d3d43953f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218910"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841068"
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Eine Datenquelle für das Sachkonto der Kostenrechnung verwalten
 

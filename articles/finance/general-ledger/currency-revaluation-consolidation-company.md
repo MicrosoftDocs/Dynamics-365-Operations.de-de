@@ -2,11 +2,9 @@
 title: Neubewertung der Währung in einem Konsolidierungsunternehmen
 description: In diesem Thema wird beschrieben, wie Währung in einem Konsolidierungsunternehmen neu bewertet werden.
 author: roschlom
-manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerExchAdjHist
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81de31ee75b4be38256505bc7b875dc15473c75a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c901d5ccd8c8b2146daa49752b7d8b70bbfca722
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212228"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818415"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Neubewertung der Währung in einem Konsolidierungsunternehmen
 

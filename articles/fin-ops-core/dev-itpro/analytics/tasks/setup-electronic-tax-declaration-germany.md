@@ -2,7 +2,6 @@
 title: Einrichtung der elektronischen Steuererklärung für Deutschland
 description: Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Germany
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 04bf28dc8800f84bffcd718a6ea93d13afeda73d
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: b915c38c51cd1d233dd61be5965a89b18508445e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569189"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751018"
 ---
 # <a name="set-up-electronic-tax-declaration-for-germany"></a>Einrichtung der elektronischen Steuererklärung für Deutschland
 
