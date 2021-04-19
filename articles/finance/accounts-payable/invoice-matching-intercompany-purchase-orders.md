@@ -2,11 +2,9 @@
 title: Rechnungsabgleich und Intercompany-Bestellungen
 description: Die einkaufende juristische Person, die in eine Buchung des Intercompany-Handels einbezogen ist, kann auch so eingerichtet werden, dass der Kreditorenrechnungsabgleich verwendet wird. In diesem Fall müssen sowohl die Buchungsanforderungen für den Intercompany-Handel und der Kreditorenrechnungsabgleich erfüllt sein, bevor Intercompany-Kreditorenrechnungen gebucht werden können.
 author: abruer
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4af4251580b66895d4dd284a2984d47fddc77066
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6d54f81c4d45d060784daf0666253fc60287ba26
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5221032"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820688"
 ---
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Rechnungsabgleich und Intercompany-Bestellungen
 

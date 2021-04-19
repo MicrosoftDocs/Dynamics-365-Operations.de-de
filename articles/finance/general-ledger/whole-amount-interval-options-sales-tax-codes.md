@@ -2,11 +2,9 @@
 title: Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes
 description: Dieser Artikel beschreibt die Optionen des Felds "Berechnungsmethoden" für Mehrwertsteuercodes und wie die Mehrwertsteuer für Intervalle und gesamte Beträge berechnet wird.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxData, TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0414f835b7797d2ed554f8d9dbd95b2ad47bba43
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 48569da2d504e4c380ca89bfec4450ad1b9888e5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234116"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842367"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes
 
@@ -46,9 +44,8 @@ Bildet ein Betrag gleichzeitig die Obergrenze des vorherigen und die Untergrenze
 ## <a name="example-whole-amount-method-of-calculation"></a>Beispiel: Berechnungsmethode mit Gesamtbetrag
 Auf der Seite "Mehrwertsteuer-Codewerte" werden Mehrwertsteuersätze für die folgenden Intervalle eingerichtet:
 
-|                   |                   |              |
+| Untergrenze     | Höchstgrenze     | Steuersatz     |
 |-------------------|-------------------|--------------|
-| **Untergrenze** | **Höchstgrenze** | **Steuersatz** |
 | 0,00              | 50,00             | 30 %          |
 | 50,00             | 100,00            | 20 %          |
 | 100,00            | 0,00              | 10 %          |
@@ -65,9 +62,8 @@ Die Mehrwertsteuer wird mit dem gesamten steuerpflichtigen Betrag veranschlagt.
 ## <a name="example-interval-method-of-calculation"></a>Beispiel: Berechnungsmethode mit Intervall
 Auf der Seite "Werte" werden Mehrwertsteuersätze für die folgenden Intervalle eingerichtet:
 
-|                   |                   |              |
+| Untergrenze     | Höchstgrenze     | Steuersatz     |
 |-------------------|-------------------|--------------|
-| **Untergrenze** | **Höchstgrenze** | **Steuersatz** |
 | 0,00              | 50,00             | 30 %          |
 | 50,00             | 100,00            | 20 %          |
 | 100,00            | 0,00              | 10 %          |

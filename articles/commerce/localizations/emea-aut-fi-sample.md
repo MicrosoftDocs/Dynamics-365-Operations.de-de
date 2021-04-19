@@ -2,11 +2,9 @@
 title: Beispiel der Steuerregistrierungsserviceintegration für Österreich
 description: In diesem Thema erhalten Sie einen Überblick über das steuerliche Integrationsbeispiel für Österreich.
 author: josaw
-manager: annbe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: a5f247abd22f58d7e6f282d27343ddb5277b5e99
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e0d5abff5f192339c3835bf9e3e4563dc8adbd72
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225759"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798843"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Integrationsbeispiel für Steuererfassungsdienst für Österreich
 

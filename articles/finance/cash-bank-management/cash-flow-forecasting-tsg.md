@@ -2,11 +2,9 @@
 title: Problembehandlung bei Einrichtung der Cashflow-Planung
 description: Dieses Thema enthält Antworten auf Fragen, die Sie möglicherweise haben, wenn Sie die Cashflow-Planung konfigurieren. Behandelt werden häufig gestellte Fragen (FAQ) zur Einrichtung des Cashflows sowie zu Aktualisierungen des Cashflows und des Power BI-Cashflows.
 author: panolte
-manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1cde9321259753bd0cacab3706c7f8455598ff3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7b4760d7a0d0c14e2df8df20c2f81ec41e077cc0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232488"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827313"
 ---
 # <a name="troubleshoot-cash-flow-forecasting-setup"></a>Problembehandlung bei Einrichtung der Cashflow-Planung
 
@@ -47,11 +45,19 @@ Es müssen mehrere Schritte ausgeführt werden, bevor Cashflow-Planungen in Powe
 
 ## <a name="why-did-cash-flow-power-bi-work-in-previous-versions-but-is-now-blank"></a>Warum funktionierte der Cashflow-Power BI in früheren Versionen, ist jetzt aber leer?
 
-Stellen Sie sicher, dass die Messungen „Cashflow Measure V2“ und „LedgerCovLiquidityMeasurement“ aus dem Entitätsspeicher konfiguriert wurden. Weitere Informationen zum Arbeiten mit Daten im Entitätsspeicher finden Sie unter [Power BI-Integration mit Entitätsspeicher](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). Stellen Sie sicher, dass alle Schritte zum Anzeigen von Power BI-Inhalten abgeschlossen sind. Weitere Informationen finden Sie unter [Bargelübersicht Power BI Inhalt](Cash-Overview-Power-BI-content.md).
+Stellen Sie sicher, dass die Messungen „Cashflow Measure V2“ und „LedgerCovLiquidityMeasurement“ aus dem Entitätsspeicher konfiguriert wurden. Weitere Informationen zum Arbeiten mit Daten im Entitätsspeicher finden Sie unter [Power BI-Integration mit Entitätsspeicher](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). Stellen Sie sicher, dass alle Schritte abgeschlossen wurden, die zum Anzeigen von Power BI-Inhalt erforderlich sind. Weitere Informationen finden Sie unter [Bargelübersicht Power BI Inhalt](Cash-Overview-Power-BI-content.md).
 
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Wurden die Entitätsspeicher-Entitäten aktualisiert?
 
 Sie müssen Ihre Entitäten regelmäßig aktualisieren, um sicherzustellen, dass die Daten aktuell und korrekt sind. Rufen Sie **Systemverwaltung \> Einrichtung \> Entitätsspeicher** auf. Wählen Sie die Entität und anschließend **Aktualisieren** aus, um eine bestimmte Entität manuell zu aktualisieren. Die Daten können auch automatisch aktualisiert werden. Setzen Sie auf der Seite **Entitätsspeicher** die Option **Automatische Aktualisierung aktiviert** auf **Ja**.
 
+## <a name="which-calculation-method-should-be-used-when-calculating-cash-flow-forecasts"></a>Welche Berechnungsmethode sollte bei der Berechnung von Cashflow-Planungen angewendet werden?
+
+Die Berechnungsmethode für die Cashflow-Planung bietet zwei wichtige Auswahlmöglichkeiten. Mit der Option **Neu** werden Cashflow-Planungen für neue Dokumente und Dokumente berechnet, die sich seit der letzten Ausführung des Batchauftrags geändert haben. Diese Option wird in der Regel schneller ausgeführt, da eine kleinere Teilmenge von Dokumenten verarbeitet wird. Mit der Option **Gesamt** werden Cashflow-Planungen für jedes Dokument im System neu berechnet. Diese Option benötigt mehr Zeit, da mehr Arbeit zu erledigen ist.
+
+### <a name="how-do-i-improve-the-performance-of-the-cash-flow-forecasting-recurring-batch-job"></a>Wie kann ich die Leistung der Cashflow-Planung für wiederkehrende Batchaufträge verbessern?
+
+Wir empfehlen, Ihre Cashflow-Planung einmal täglich außerhalb der Hauptverkehrszeiten mit der **Neu**-Rechenmethode auszuführen. Wir empfehlen diesen Ansatz an sechs Tagen pro Woche. Führen Sie dann einmal pro Woche eine Cashflow-Planung mit der **Gesamt**-Berechnungsmethode am Tag mit der geringsten Aktivität aus.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
