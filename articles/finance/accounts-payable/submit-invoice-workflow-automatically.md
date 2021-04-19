@@ -2,11 +2,9 @@
 title: Rechnungen beim Workflowsystem einreichen und Produktzugangspositionen abgleichen
 description: In diesem Thema wird erläutert, wie Lieferantenrechnungen an das Workflow-System gesendet und gebuchte Produktzugangspositionen automatisch mit Lieferantenrechnungen abgeglichen werden.
 author: abruer
-manager: AnnBe
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 534b5dbc54a516fea0b3f7090042d247c1076737
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 84699746349024854a4eeb9cee62960ec38bc338
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231541"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827817"
 ---
 # <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Rechnungen beim Workflowsystem einreichen und Produktzugangspositionen abgleichen
 
@@ -41,7 +39,9 @@ Der Wert **Eingereicht von** im Workflow ist die Benutzer-ID, die für die Hinte
 
 Im Rahmen eines berührungslosen Rechnungsstellungsprozesses für Kreditorenkonten kann das System gebuchte Produktzugänge automatisch Rechnungspositionen zuordnen. Für diese Aufgabe muss eine dreiseitige Abgleichsrichtlinie definiert werden. Diese Funktion ist verfügbar, wenn die Funktion **Automatisierung von Lieferantenrechnungen** auf der Seite **Funktionsverwaltung** aktiviert wurde.
 
-Der Prozess wird ausgeführt, bis die abgeglichene Produktzugangsmenge der Rechnungsmenge entspricht. Im Rahmen dieses Prozesses können Sie für das System die maximale Anzahl der versuchten Abgleiche der Produktzugänge mit einer Rechnungsposition festlegen, bevor das System zu dem Schluss kommt, dass der Prozess fehlgeschlagen ist. Der Prozess wird entweder stündlich oder täglich im Hintergrund ausgeführt. Sie können den automatisierten Abgleichprozess im Rahmen des Prozesses zum Senden von Rechnungen an das Workflowsystem ausführen. Alternativ können Sie den Prozess auch als eigenständigen Prozess ausführen. Die Einstellungen für den Abgleich von Produktzugängen mit Rechnungspositionen werden auf der Registerkarte **Automatisierung von Kreditorenrechnungen** der Seite **Kreditorenkontenparameter** konfiguriert (**Kreditorenkonten \> Setup \> Kreditorenkontenparameter**).
+Der Abgleichsprozess wird ausgeführt, bis die abgeglichene Produktzugangsmenge der Rechnungsmenge entspricht. Wenn jedoch mehrere Produktzugänge für eine einzelne Rechnungsposition vorhanden sind, müssen Sie den Prozess mehrmals ausführen, um die vollständige Mengenübereinstimmung zu erzielen. Sie können für das System die maximale Anzahl der versuchten Abgleiche der Produktzugänge mit einer Rechnungsposition festlegen, bevor das System zu dem Schluss kommt, dass der Prozess fehlgeschlagen ist. Der Prozess wird entweder stündlich oder täglich im Hintergrund ausgeführt. 
+
+Sie können den automatisierten Abgleichprozess im Rahmen des Prozesses zum Senden von Rechnungen an das Workflowsystem ausführen. Alternativ können Sie den Prozess auch als eigenständigen Prozess ausführen. Die Einstellungen für den Abgleich von Produktzugängen mit Rechnungspositionen werden auf der Registerkarte **Automatisierung von Kreditorenrechnungen** der Seite **Kreditorenkontenparameter** konfiguriert (**Kreditorenkonten \> Setup \> Kreditorenkontenparameter**).
 
 Rechnungsposten mit einer dreiseitige Abgleichsrichtlinie, bei der die abgeglichene Zugangsmenge geringer als die Rechnungsmenge ist, werden in den automatisierten Abgleich von Produkt zum Produktzugang einbezogen.
 

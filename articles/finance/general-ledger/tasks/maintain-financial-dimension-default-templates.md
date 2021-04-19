@@ -2,11 +2,9 @@
 title: Standardvorlagen für Finanzdimension verwalten
 description: Dieses Thema zeigt, wie Finanzdimensions-Standardvorlagen eingerichtet werden.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/30/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialDimensionDefaultTemplates, DimensionLookup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a03a277ef3ccc6796bc0a4f081dcec0d9a51fb7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 428fdc1540da98642b81d3aff6a586d355715488
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240689"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836936"
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>Standardvorlagen für Finanzdimension verwalten
 

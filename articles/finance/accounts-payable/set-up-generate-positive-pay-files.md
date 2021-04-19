@@ -2,11 +2,9 @@
 title: Einrichten und Generieren von Dateien für positive Zahlungen
 description: In diesem Thema wird beschrieben, wie positive Lohnzahlungen eingerichtet und positive Lohndateien generiert werden.
 author: panolte
-manager: AnnBe
 ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7d1520828bc626784f1555d8878a1fdad1bd5b9e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9f96e34b8d94f9e83afb39d6ad97aca85386b458
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227375"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830711"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Einrichten und Generieren von Dateien für positive Zahlungen
 
@@ -140,6 +138,9 @@ Dateien für positive Zahlungen werden über Datenentitäten erstellt. Bevor Sie
   </xsl:template>
 </xsl:stylesheet>
 ```
+
+> [!NOTE]
+> XML-Namen im XSLT müssen mit der Schreibweise der Knoten im XML übereinstimmen. Sowohl die XSLT- als auch die XML-Datei unterscheiden zwischen Groß- und Kleinschreibung. 
 
 ## <a name="assign-the-positive-pay-format-to-a-bank-account"></a>Zuweisen eines eines Formats für positive Zahlungen zu einem Bankkonto
 Jedem Bankkonto, für das Sie positive Erfassung von Lohndaten generieren möchten, müssen Sie das positive Lohnformat zuweisen, das im vorherigen Abschnitt angegeben wurde. Wählen Sie auf der **Bankkonten**-Seite das positive Lohnformat aus, das dem Bankkonto entspricht. Geben Sie im Feld **Startdatum für positive Zahlungen** das erste Datum ein, an dem positive Lohndateien generiert werden sollen. Es ist wichtig, dass Sie in diesem Feld ein Datum eingeben. Andernfalls umfasst die erste positive Lohndatei, die generiert wird, alle Prüfungen, die jemals für dieses Bankkonto erstellt wurden.

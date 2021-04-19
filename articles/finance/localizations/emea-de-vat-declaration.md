@@ -2,11 +2,9 @@
 title: Umsatzsteuererklärung für Deutschland
 description: Dieses Thema enthält Informationen zum Generieren von QR-Rechnungen und zum Verarbeiten eingehender QR-Rechnungen.
 author: anasyash
-manager: AnnBe
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Germany
 ms.author: v-lenest
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 3f36ad1d0c674a6d96037dd406cd0d3fea6868f0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0caac8f705e8e8d96c4cb56ba83949a56407b6c8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246858"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839850"
 ---
 # <a name="vat-declaration-for-germany"></a>Umsatzsteuererklärung für Deutschland
 

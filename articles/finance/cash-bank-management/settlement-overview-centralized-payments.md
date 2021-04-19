@@ -2,11 +2,9 @@
 title: Ausgleichsüberblick für zentralisierte Zahlungen
 description: In diesem Thema wird der Ausgleich von zentralisierten Zahlungen für Microsoft Dynamics 365 Finance beschrieben.
 author: abruer
-manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 682df83e2685e82b68ae5aa4fcaa7997ee942dca
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: febe29500714e5cbe9e364a79f128a55b23defa8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241393"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834883"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Übersicht über Ausgleiche bei zentralisierten Zahlungen
 

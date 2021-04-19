@@ -2,11 +2,9 @@
 title: Ausgleichen einer teilweisen Kreditorenzahlung, die mehrere Rabattzeiträume hat
 description: Dieser Artikel führt Sie durch ein Szenario, in dem mehrere Teilzahlungen an einen Kreditoren vorgenommen werden, der mehrere Skonti anbietet.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbcaca97203c47bf7eac02ba410763a4e1a7b34a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 56e2b3a8dadd824fa0170a1db19fffeaecb47775
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227279"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827865"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Ausgleichen einer teilweisen Kreditorenzahlung, die mehrere Rabattzeiträume hat
 
@@ -56,7 +54,7 @@ Am 2. Juli möchte April 300,00 Euro dieser Rechnung ausgleichen. Sie erfasst ei
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt.
 
-|                              |           |
+| Feld                        | Wert     |
 |------------------------------|-----------|
 | Skontodatum           | 02.07.2015 |
 | Skontobetrag         | -20,00    |
@@ -72,7 +70,7 @@ Da ein Skonto verfügbar ist, möchte April den Zahlungsbetrag ändern, sodass d
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt.
 
-|                              |           |
+| Feld                        | Wert     |
 |------------------------------|-----------|
 | Skontodatum           | 02.07.2015 |
 | Skontobetrag         | -20,00    |
@@ -105,7 +103,7 @@ April beschließt, 495,00 zu zahlen und das Skonto von 5,00 in Anspruch zu nehme
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt.
 
-|                              |           |
+| Feld                        | Wert     |
 |------------------------------|-----------|
 | Skontodatum           | 7/12/2015 |
 | Skontobetrag         | -10,00    |

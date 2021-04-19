@@ -2,11 +2,9 @@
 title: Händlerzahlungen für einen Teilbetrag
 description: Es kann vorkommen, dass Sie eine Zahlung an einen Kreditor leisten, die geringer als der in der Rechnung angegebene Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43b0f4f6a6988f659c957664b140c4b9907ef3d3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a46ebb841b4abe6aa5bd8b06966f4197b27aeaee
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255692"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841212"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>Kreditorenzahlungen für einen Teilbetrag
 

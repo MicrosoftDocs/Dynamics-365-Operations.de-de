@@ -2,11 +2,9 @@
 title: Eine separate Beschriftung für die Gutschriften, die vom Vertrieb stammen, drucken
 description: In diesem Artikel wird beschrieben, wie die Beschriftung definiert wird, die auf Gutschriften erscheinen, die vom Vertrieb stammen.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51e142e9f4c6efd2d2121cb54285a395523f97c9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8156307b4fbf5e594b75af11d57a7f1daa86137c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246846"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839840"
 ---
 # <a name="print-a-separate-label-for-credit-memos-that-originate-from-sales"></a>Eine separate Beschriftung für die Gutschriften, die vom Vertrieb stammen, drucken
 

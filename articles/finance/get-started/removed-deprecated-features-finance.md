@@ -2,11 +2,9 @@
 title: Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Finance.
 author: roschlom
-manager: AnnBe
 ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 14428491383883c1fc2a8cdcd1975e1f1cb71b40
-ms.sourcegitcommit: e9d19f25e64cf4d1c1d07c8031a7081454a6f79e
+ms.openlocfilehash: 5a8f5dbc52eab78697de0d3a48d8cceb42c36540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5474062"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836912"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -39,7 +37,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 ### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>LCS-Repository als Speicheroption für Konfigurationen zur elektronischen Berichterstellung
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Ersetzt durch das neue globale Repository des Regulatory Configuration Service (RCS) |
 | **Ersetzt durch eine andere Funktion?**   | Ja |
@@ -51,7 +49,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 ### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>Elektronische Berichtsformate „Mehrwertsteuererklärung (CZ)“ und „Steueranweisungsexport (CZ)“ für die Tschechische Republik
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Durch neue Formate ersetzt |
 | **Ersetzt durch eine andere Funktion?**   | Ja |
@@ -61,7 +59,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>Das elektronisches Berichtsformat „Ledger Transaction Export Format (BE)“ und das entsprechende „Ledger Transaction Export (BE)“-Modell für Belgien
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Ersetzt durch das neue ER-Format unter dem Modell „Standard Audit File (SAF-T)“.  |
 | **Ersetzt durch eine andere Funktion?**   | Ja |
@@ -71,7 +69,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 ### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>„VAT 100“-Bericht für Großbritannien im SSRS-Format
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Ersetzt durch neues ER-Format – „VAT Declaration Excel (UK)“-Format im „Tax Declaration Model“.  |
 | **Ersetzt durch eine andere Funktion?**   | Ja |
@@ -83,7 +81,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-Unterstützung für Dynamics 365 ist veraltet
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Ab Dezember 2020 wird die Unterstützung von Microsoft Internet Explorer 11 für alle Dynamics 365-Produkte veraltet sein und Internet Explorer 11 wird nach August 2021 nicht mehr unterstützt werden.<br><br>Dies wirkt sich auf Kunden aus, die Dynamics 365-Produkte verwenden, die für die Verwendung über eine Internet Explorer 11-Schnittstelle entworfen wurden. Nach August 2021 wird Internet Explorer 11 für solche Dynamics 365-Produkte nicht mehr unterstützt. |
 | **Ersetzt durch eine andere Funktion?**   | Wir empfehlen den Kunden den Übergang zu Microsoft Edge.|
@@ -95,7 +93,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 ### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Polnische SSRS-Berichte: Ausgangssteuer, Vorsteuer, EU-Zusammenfassung des Umsatzsteuerregisters – Funktionsreferenz PL-00014
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Nicht rechtlich obligatorisch.  |
 | **Ersetzt durch eine andere Funktion?**   | Ja (Excel-Format für Standard-Auditdatei mit Umsatzsteuererklärung – JPK_VDEK) |
@@ -107,7 +105,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 ### <a name="norwegian-standard-main-accounts"></a>Norwegische Standard-Hauptkonten
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Neugestaltung  |
 | **Ersetzt durch eine andere Funktion?**   | Ja (ersetzt durch anwendungsspezifische Parameter im ER-Format) |
@@ -118,7 +116,8 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.7
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>Das Dialogfeld für die Änderung von Workflow-Anforderungen enthält nicht mehr die Dropdown-Liste für die Benutzerauswahl.
-|   |  |
+
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Geändert in die Funktion mit Kontogruppenauswahl.  |
 | **Ersetzt durch eine andere Funktion?**   | Ja |

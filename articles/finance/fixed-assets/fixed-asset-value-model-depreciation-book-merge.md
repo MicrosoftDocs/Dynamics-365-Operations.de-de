@@ -2,11 +2,9 @@
 title: Anlagewertmodel und Abschreibungsbuchzusammenführung
 description: 'In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In der Microsoft Dynamics 365 for Operations-Version 1611 wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als Buch bekannt ist.'
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 26409b6416a5b4e93ccd051b1625633ea12e22ac
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f027a856dbd596ede84c39e30ee2227aab9329f2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212468"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826737"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Anlagewertmodel und Abschreibungsbuchzusammenführung
 
@@ -34,9 +32,8 @@ Die neue Buchfunktionalität basiert auf einer früheren Wertmodellfunktionalit�
 ## <a name="setup"></a>Einstellung
 Standardmäßig buchen Bücher sowohl in das Hauptbuch als auch in das untergeordnete Anlagensachkonto. Bücher haben eine neue Option **Ins Hauptbuch buchen**. Mit ihr können Sie Buchungen in das Hauptbuch deaktivieren und nur in das untergeordnete Anlagensachkonto buchen. Diese Funktionalität ähnelt dem früheren Buchungsverhalten für Abschreibungsbücher. Das Erfassungsnamenssetup hat eine neue Buchungsebene mit der Bezeichnung „Keine”. Diese Buchungsebene wurde speziell für Anlagenbuchungen hinzugefügt. Um Buchungen für Bücher zu buchen die nicht auf das Hauptkonto buchen, müssen Sie einen Erfassungsnamen verwenden, bei dem die Buchungsebene auf **Keine** festgelegt ist.
 
-|                                                  |                                 |                                 |                                                         |
+| &nbsp;                                           | Abschreibungsbuch               | Wertmodell                     | Buch (neu)                                              |
 |--------------------------------------------------|---------------------------------|---------------------------------|---------------------------------------------------------|
-|                                                  | Abschreibungsbuch               | Wertmodell                     | Buch (neu)                                              |
 | Zum Hauptbuch buchen                                   | Nie                           | Immer                          | Option, zum Hauptbuch zu buchen                                |
 | Buchungsebenen                                   | Nicht zutreffend                  | 3: Aktuell, Vorgänge und Steuer | 11: Aktuell, Vorgänge, Steuern, 7 benutzerdefinierte Ebenen und Keine |
 | Journale                                    | Abschreibungsbuch-Journale | Hauptbuch – Erfassungsnamen              | Hauptbuch – Erfassungsnamen                                      |
@@ -46,9 +43,8 @@ Standardmäßig buchen Bücher sowohl in das Hauptbuch als auch in das untergeor
 ## <a name="processes"></a>Prozesse
 Prozesse verwenden jetzt eine gemeinsame Seite. Einige Prozesse sind nur zulässig, wenn die Option **Ins Hauptbuch buchen** in den Bucheinstellungen auf **Nein** festgelegt ist.
 
-|                                |                           |                     |                                          |
+| &nbsp;                                           | Abschreibungsbuch               | Wertmodell                     | Buch (neu)                                              |
 |--------------------------------|---------------------------|---------------------|------------------------------------------|
-|                                | Abschreibungsbuch         | Wertmodell         | Buch (neu)                               |
 | Buchungseintrag              | Abschreibungsbuch-Journal | Anlagenerfassung | Anlagenerfassung                      |
 | Vorzeitige Abschreibung             | Zulässig                   | Nicht zulässig         | Zulässig                                  |
 | Historische Buchungen löschen | Zulässig                   | Nicht zulässig         | Zulässig, es sei denn, Sie buchen zum Hauptbuch |
@@ -57,9 +53,8 @@ Prozesse verwenden jetzt eine gemeinsame Seite. Einige Prozesse sind nur zuläss
 ## <a name="inquiries-and-reports"></a>Abfragen und Berichte
 Abfragen und Berichte unterstützen alle Bücher. Berichte, die in der folgenden Tabelle nicht einbezogen sind, unterstützten zuvor beide Abschreibungsbücher und Wertmodelle und unterstützen jetzt weiterhin alle Buchtypen. Das Feld **Buchungsebene** ist auch Berichten hinzugefügt worden, sodass Sie die Transaktionsbuchungen leichter identifizieren können.
 
-|                                       |                                |                          |                          |
+| &nbsp;                                           | Abschreibungsbuch               | Wertmodell                     | Buch (neu)                                              |
 |---------------------------------------|--------------------------------|--------------------------|--------------------------|
-|                                       | Abschreibungsbuch              | Wertmodell              | Buch (neu)               |
 | Abfragen                             | Abschreibungsbuchbuchungen | Anlagenbuchungen | Anlagenbuchungen |
 | Anlagenspiegel                 | Nicht zulässig                    | Zulässig                  | Zulässig                  |
 | Anlagenbasis                     | Zulässig                        | Nicht zulässig              | Zulässig                  |

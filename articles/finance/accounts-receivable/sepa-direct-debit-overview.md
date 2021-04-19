@@ -2,11 +2,9 @@
 title: SEPA-Direktbelastungsüberblick
 description: Der einheitliche Euro-Zahlungsverkehrsraum (SEPA) wird von der Europäischen Kommission eingerichtet und schreibt vor, dass alle elektronischen Zahlungen als Inland gelten, unabhängig vom Land/Region, wo die Person, Geschäfte, oder Organisation und die Bank sich befinden. Es gibt keine Differenz zwischen nationalen und grenzüberschreitenden Zahlungen. Zu SEPA zählen die 28 Mitgliedsstaaten der Europäischen Union (EU) sowie Island, Liechtenstein, Norwegen, die Schweiz, Monaco und San Marino. SEPA hilft dabei, einen gemeinsamen Markt für Zahlungsbuchungen innerhalb des europäischen Wirtschaftsraums (EEA) zu bilden. Letztlich wird von SEPA erwartet, die Anzahl von Zahlungsformaten zu reduzieren, mit denen Banken, Unternehmen und Personen arbeiten müssen.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c0a64e2bfefb7c4ed0e0f07be60e9f5293f8d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cf3872a47a92509af5857c0c1aec0d4da4095d19
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229621"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835267"
 ---
 # <a name="sepa-direct-debit-overview"></a>SEPA-Direktbelastungsüberblick
 

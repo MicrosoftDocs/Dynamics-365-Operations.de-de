@@ -1,12 +1,10 @@
 ---
 title: Vorauszahlungsrechnungen im Vergleich zu Vorauszahlungen
-description: Dieser Artikel erläutert und vergleicht die beiden Methoden, die Organisationen für Vorauszahlungen verwenden können. In einer Methode können Sie eine Vorauszahlungsrechnung erstellen, die einer Bestellung zugeordnet ist. In der anderen Methode erstellen Sie Erfassungsbelege für Vorauszahlungen, indem Sie Journaleinträge erstellen und diese dann als Erfassungsbelege für Vorauszahlungen markieren.
+description: Dieser Artikel erläutert und vergleicht die beiden Methoden, die Organisationen für Vorauszahlungen verwenden können.
 author: abruer
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8e882cb2063133324005a8e4585daa1c6a0752b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 64301ac540ce2e6e914b6b23668fddeb295ef84c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227473"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827985"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Vorauszahlungsrechnungen im Vergleich zu Vorauszahlungen
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel erläutert und vergleicht die beiden Methoden, die Organisationen für Vorauszahlungen verwenden können. In einer Methode können Sie eine Vorauszahlungsrechnung erstellen, die einer Bestellung zugeordnet ist. In der anderen Methode erstellen Sie Erfassungsbelege für Vorauszahlungen, indem Sie Journaleinträge erstellen und diese dann als Erfassungsbelege für Vorauszahlungen markieren.
+Dieser Artikel erläutert und vergleicht die beiden Methoden, die Organisationen für Vorauszahlungen verwenden können. In einer Methode wird eine Vorauszahlungsrechnung erstellt, die einer Bestellung zugeordnet ist. In der anderen Methode werden Erfassungsbelege für Vorauszahlungen erstellt, indem Sie Journaleinträge erstellen und diese dann als Erfassungsbelege für Vorauszahlungen markieren.
 
 Organisationen können für Waren oder Dienstleistungen Vorauszahlungen an Kreditoren leisten, bevor die Waren geliefert oder Dienstleistungen erbracht wurden. Zwei Methoden können verwendet werden, um Vorauszahlungen an Kreditoren auszugeben. Vorauszahlungen können zur Minimierung des Risikos nachverfolgt und auf einer Bestellung definiert werden. Für diese Methode müssen Sie eine Vorauszahlungsrechnung erstellen, die einer Bestellung zugeordnet ist. Diese Methode wird als Vorauszahlungsrechnungsstellung bezeichnet. Organisationen, die nicht Vorauszahlungen als Lagerabschluss verfolgen möchten oder keine Vorauszahlungsrechnung von dem Kreditor erhalten, können Erfassungsbelege für Vorauszahlungen anstelle der Vorauszahlungsrechnungsstellungsmethode verwenden. Sie können zum Erstellen von Erfassungsbelegen für Vorauszahlungen Journaleinträge erstellen und diese dann als Erfassungsbelege für Vorauszahlungen markieren. Für diese Methode können Sie jedoch nicht nachverfolgen, welche Zahlungen an einen Kreditor für welche Bestellungen erfolgen. Allerdings können Sie eine gebuchte Vorauszahlung für den Ausgleich mit einer Bestellung markieren.
 
@@ -37,7 +35,7 @@ Organisationen können für Waren oder Dienstleistungen Vorauszahlungen an Kredi
 | Vorauszahlungsrechnungsstellung                                                                | Vorauszahlungen                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Vorauszahlungswerte können für eine Bestellung definiert werden,                                    | Kein Vorauszahlungswert ist für die Bestellung definiert.                    |
-| Schlüssel: Eine Vorauszahlungsrechnung und eine Endabrechnung müssen gebucht werden.                       | Keine Vorauszahlungsrechnung muss gebucht werden.                                    |
+| Eine Vorauszahlungsrechnung und eine Endabrechnung müssen gebucht werden.                       | Keine Vorauszahlungsrechnung muss gebucht werden.                                    |
 | Verbindlichkeiten für die Vorauszahlung werden im Vorauszahlungskonto, nicht im Kreditorenkonto vorgesehen. | Verbindlichkeiten für die Vorauszahlung werden im Kreditorenkonto vorgesehen.                  |
 | Der Kreditorensaldo spiegelt nicht den Vorauszahlungswert beim Ausführen des Prozesses wider.     | Der Kreditorensaldo spiegelt den Vorauszahlungswert beim Ausführen des Prozesses wider. |
 | Vorauszahlungsrechnungsstellung ist nur in den Kreditoren verfügbar.                         | Vorauszahlungen sind in Kreditoren und Debitoren verfügbar.    |
@@ -59,11 +57,41 @@ Vorauszahlungsrechnungen sind eine allgemeine Geschäftspraktik. Ein Kreditor gi
 1.  Die Bestellung, für die der Kreditor eine Vorauszahlung angefordert hat, wird vom Einkaufsvertreter erstellt, bestätigt und gesendet. Der Vorauszahlungswert wird auf der Bestellung als Teil der Vereinbarung definiert.
 2.  Der Kreditor übermittelt eine Vorauszahlungsrechnung.
 3.  Der Kreditorenkoordinator erfasst die Vorauszahlungsrechnung für die Bestellung, und dann wird die Vorauszahlungsrechnung bezahlt.
-4.  Nachdem der Kreditor die Waren oder Dienstleistungen geliefert hat und die zugehörige Kreditorenrechnung eingegangen ist, wendet der Kreditorenkoordinator den bereits geleisteten Vorauszahlungsbetrag auf die Rechnung an.
-5.  Der Kreditorenkoordinator begleicht dann den verbleibenden Rechnungsbetrag.
+4.  Der Lieferant sendet eine Zahlungsaufforderung, die als Standard-Kreditorenrechnung bezeichnet wird. Nachdem der Kreditor die Waren oder Dienstleistungen geliefert hat und die zugehörige Standard-Kreditorenrechnung eingegangen ist, wendet der Kreditorenkoordinator den bereits geleisteten Vorauszahlungsbetrag auf die Standardrechnung an.
+5.  Der Kreditorenkoordinator begleicht dann den verbleibenden Betrag der Standardrechnung.
 
+## <a name="set-up-parameters-to-enable-the-prepayment-invoicing-process"></a>Einrichten von Parametern, um den Rechnungsstellungsprozess für Vorauszahlungen zu aktivieren
+Auf der Registerkarte **Bestellung** der Seite **Lagerbuchung** (**Lagerverwaltung \> Einrichtung \> Buchung \> Buchung**) muss ein Vorauszahlungskonto definiert sein. Das Vorauszahlungskonto wird aktualisiert, normalerweise belastet, wenn die Vorauszahlungsrechnung gebucht wird. Der Saldo auf dem Vorauszahlungskonto wird storniert, wenn die Standardrechnung, die auf die Vorauszahlungsrechnung angewendet wird, gebucht wird. Wenn Sie die Vorauszahlungsrechnung nicht mit einer Zahlung abrechnen, bevor Sie die Vorauszahlungsrechnung auf die Standardrechnung anwenden, werden die Buchhaltungseinträge aus der gebuchten Vorauszahlungsrechnung storniert, wenn die Standardrechnung gebucht wird.
 
+Das Gegenkonto für die Verbindlichkeiten aus Lieferungen und Leistungen ist im Profil **Kreditorenbuchung** definiert. Klicken Sie auf **Kreditorenkonten \>Einrichtung \> Kreditorenkontenparameter \>Registerkarte „Sachkonto und Mehrwertsteuer“ \> Buchungsprofil mit Vorauszahlung für Kreditorenrechnung**, um das Standardbuchungsprofil zu definieren.
 
+Die **Vorauszahlungsantragsrichtlinie** gibt an, ob das System automatisch abgerechnete Vorauszahlungsrechnungen auf die manuell erstellte endgültige Rechnung anwendet. Rechnungen, die mit einer Datenentität erstellt wurden, beziehen sich nicht auf die **Vorauszahlungsantragsrichtlinie**. Sie müssen abgerechnete Vorauszahlungsrechnungen manuell auf Rechnungen anwenden, die mit einer Datenentität erstellt wurden. Gehen Sie zu **Kreditorenkonten \>Einrichtung \> Kreditorenkontenparameter \> Registerkarte „Sachkonto und Mehrwertsteuer“ \> Vorauszahlungsantragsrichtlinie**, um die Richtlinie zu definieren. Wenn das Feld **Vorauszahlungsantragsrichtlinie** auf **Automatisch** gesetzt ist, wird die Vorauszahlungsrechnung automatisch für die Begleichung mit der Schlussrechnung markiert. Wenn das Feld auf **Benachrichtigung** eingestellt ist, wird ein visueller Hinweis angezeigt, dass eine Vorauszahlungsrechnung für die Anwendung verfügbar ist, wenn die endgültige Rechnung erstellt wird.
+
+## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Erstellen einer Bestellung, die Informationen zur Vorauszahlungsrechnung enthält
+Wenn ein Lieferant Ihnen mitteilt, dass für Waren und Dienstleistungen, die in einer Bestellung enthalten sind, eine Vorauszahlung erforderlich ist, müssen Sie den Vorauszahlungswert für die zugehörige Bestellung definieren. Gehen Sie zu **Kreditorenkonten \> Allgemein \> Bestellungen \> Alle Bestellungen** und finden Sie die Bestellung des Lieferanten. Wählen Sie im Aktivitätsbereich die Registerkarte **Kauf** und dann **Vorauszahlung** aus. Geben Sie Informationen zur Vorauszahlung ein, einschließlich einer Beschreibung, der Höhe der Vorauszahlung, ob es sich um einen festen Betrag oder einen Prozentsatz handelt, sowie einer Kennung für die Vorauszahlungskategorie. 
+
+Beachten Sie, dass mehrere Vorauszahlungsdefinitionen in einer Bestellung nicht zulässig sind. Wenn Sie mehrere Vorauszahlungen für eine Bestellung zulassen müssen, buchen Sie die Zahlungen über die Zahlungserfassung anstelle einer Vorauszahlungsrechnung.
+
+Die Vorauszahlung kann aus der Bestellung entfernt werden, es sei denn, Sie haben bereits eine Zahlung mit der gebuchten Vorauszahlungsrechnung verrechnet oder die Standardrechnung gebucht. Wählen Sie **Kreditorenkonten \> Allgemein \> Bestellungen \> Alle Bestellungen** aus und finden Sie die Bestellung des Lieferanten, um eine Vorauszahlungsinformation aus der Bestellung zu entfernen. Wählen Sie im Aktivitätsbereich die Registerkarte **Kauf** und dann **Vorauszahlung entfernen** aus.
+
+## <a name="create-and-post-a-prepayment-invoice"></a>Erstellen und buchen einer Vorauszahlungsrechnung
+Um die Vorauszahlungsrechnung des Lieferanten zu erfassen, gehen Sie zur Seite **Kreditorenrechnung** durch Auswahl der Option **Vorauszahlungsrechnung** auf der Seite **Bestellungen** (**Kreditorenkonten \> Allgemein \> Bestellungen \> Alle Bestellungen \> Registerkarte „Rechnung“ \> Vorauszahlungsrechnung**). Geben Sie Informationen zur Vorauszahlungsrechnung ein, einschließlich der Rechnungsnummer. Die Mengen für eine Vorauszahlungsrechnung können nicht geändert werden. Wenn der Lieferant einen Teilbetrag des in der Bestellung definierten Vorauszahlungswerts in Rechnung gestellt hat, können Sie den Stückpreis aktualisieren, um den Teilwert widerzuspiegeln.
+
+Wenn die Vorauszahlungsrechnung gebucht wird, werden der Kreditorensaldo und das Vorauszahlungskonto aktualisiert. Der Wert **Vorauszahlungsantrag** der in der Bestellung enthaltenen Vorauszahlungsdefinition wird ebenfalls aktualisiert. Die Standardeinträge für die Finanzdimension des gebuchten Vorauszahlungsbelegs werden den Kopfinformationen auf der Bestellung entnommen.
+
+## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Buchen und Begleichen von Zahlungen für die Vorauszahlungsrechnung
+Als nächstes wird die Vorauszahlungsrechnung von der Seite **Zahlungserfassung** aus bezahlt. Klicken Sie auf **Kreditorenrechnungen \> Erfassungen \> Zahlungen \> Zahlungserfassungen**, um auf Zahlungserfassungen zuzugreifen. Nach Buchung des Ausgleichs der Zahlung auf die Vorauszahlungsrechnung wird der Wert **Vorauszahlungsantrag verbleibend** der Bestellung aktualisiert.
+
+Bevor Sie die Standardrechnung für die Vorauszahlungsrechnung buchen, können Sie die Abwicklung der Zahlung aus der Vorauszahlungsrechnung stornieren. Nachdem Sie eine Standardrechnung auf die Vorauszahlungsrechnung angewendet haben, kann die Zahlungsabwicklung jedoch nicht aus der Vorauszahlungsrechnung storniert werden.
+
+## <a name="post-the-standard-vendor-invoice-for-the-purchase-order-and-apply-the-prepayment-invoice-to-the-standard-invoice"></a>Buchen der Standardkreditorenrechnung für die Bestellung und Anwenden der Vorauszahlungsrechnung auf die Standardrechnung
+Erfassen Sie die vom Lieferanten erhaltene Standardrechnung. Im Rahmen dieses Vorgangs können Sie die abgerechnete Vorauszahlungsrechnung auf die Lieferantenrechnung anwenden, sodass sich der Rechnungswert um den bereits bezahlten Betrag verringert. Durch Anwenden der Vorauszahlungsrechnung auf die Kreditorenrechnung wird sichergestellt, dass Buchhaltungseinträge aus der Vorauszahlungsrechnung storniert werden.
+
+## <a name="application-of-the-prepayment-invoice-after-posting-the-standard-invoice"></a>Anwendung der Vorauszahlungsrechnung nach Buchung der Standardrechnung
+Wenn Sie vergessen haben, die Vorauszahlung zum Zeitpunkt der Buchung der Kreditorenrechnung auf die Standardkreditorenrechnung anzuwenden, steht die abgerechnete Vorauszahlung zur Verfügung, um sie auf andere Rechnungen dieses Lieferanten über die Seite **Kreditor** anzuwenden (**Kreditorenkonten \> Allgemein \> Kreditoren \> Alle Kreditoren \> Registerkarte „Rechnung“ \> Anwenden**).
+
+## <a name="reversal-of-the-prepayment-application-process"></a>Stornierung des Vorauszahlungsantragsverfahrens
+Wenn Sie den Antrag einer Vorauszahlungsrechnung aus einer Standardrechnung stornieren oder dessen Begleichung rückgängig machen müssen, wählen Sie die Aktion **Stornieren** auf der Seite **Kreditoren** aus (**Kreditorenkonten \> Allgemein \> Kreditoren \> Alle Kreditoren \> Registerkarten „Rechnung“ \> Stornieren**). Nachdem der Vorauszahlungsantrag storniert wurde, können Sie die Vorauszahlung auf eine andere Standardrechnung anwenden. 
 
 
 

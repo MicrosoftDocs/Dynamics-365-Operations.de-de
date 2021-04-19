@@ -2,11 +2,9 @@
 title: Veröffentlicht von Erfassungspositionen und Dokumente aus Excel
 description: In diesem Thema wird erläutert, wie Positionen für allgemeine Erfassungen aus Microsoft Excel veröffentlicht werden. Es umfasst Informationen zu verschiedenen Vorlagen, die Sie verwenden können, abhängig vom Buchungstyp, den Sie eingeben.
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f87ce1dcbae779f875abcbffd1781bbf076b1b7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2211f666b2b1dc7600639007794ab8133b58b2cb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230249"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834475"
 ---
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Veröffentlicht von Erfassungspositionen und Dokumente aus Excel
 
@@ -32,9 +30,8 @@ In diesem Thema wird erläutert, wie Positionen für allgemeine Erfassungen aus 
 
 Benutzer können Positionen für Finanzerfassungen aus Microsoft Excel eingeben und veröffentlichen. Nachdem ein Benutzer eine Erfassung erstellt, die zeigt **Positionen in Excel öffnen**-Schaltfläche die Vorlagen an, die zur Verfügung stehen. Vorlagen sind so entworfen, dass bestimmte Szenarien zu unterstützen, jedoch nicht alle der Kontenart in Kombination die Erfassung unterstützt wird. In der folgenden Tabelle werden die Vorlagen, die verfügbar sind und die Kontenart an, die sie unterstützt wird.
 
-|                          |                                                                                                                         |                                                                                         |
+| Vorlage             | Unterstützte Kontenarten | Informationen zum Zugreifen auf die Vorlage                                                          |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **Vorlage**             | **Unterstützte Kontenarten**                                                                                             | **Informationen zum Zugreifen auf die Vorlage**                                                          |
 | Sachkontoerfassungspositionen     | Konto: Sachkonto, Debitor, Kreditor, Bank-Gegenkonto: Sachkonto, Debitor, Kreditor, Bank-Intercompany wird unterstützt.       | Allgemeine Erfassung                                                                         |
 | Rechnungsbuch         | Konto: Kreditoren-Gegenkonto: Sachkonto-Intercompany wird nicht unterstützt.                                                    | Kreditorenrechnungsbuch                                                                     |
 | Rechnungserfassung          | Konto: Kreditoren-Gegenkonto: Sachkonto-Intercompany wird unterstützt.                                                      | Kreditorenrechnungserfassung                                                                      |

@@ -2,11 +2,9 @@
 title: Bericht "Berechnung der Verpackungsmaterialgebühren" für Österreich
 description: Dieses Thema enthält Informationen zu Verpackungsmaterialsätze und Gebühren in Österreich.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventPackagingMaterialTransPurch
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Austria
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 83dedd712d888066ebc1f6e266c4fd12aa035911
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: db588bc4685093fdd70a7a894b7f07baa948b987
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209884"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839918"
 ---
 # <a name="packing-material-fee-calculation-for-austria"></a>Bericht "Berechnung der Verpackungsmaterialgebühren" für Österreich
 

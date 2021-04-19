@@ -1,12 +1,10 @@
 ---
-title: Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Mexiko
-description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in das Add-On für die elektronische Rechnungsstellung für Mexiko in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management erleichtern.
+title: Erste Schritte mit der elektronischen Rechnungsstellung für Mexiko
+description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Mexiko erleichtern.
 author: gionoder
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,25 +15,25 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ec7417d44a7c2aa413a9cda75996c153727632dd
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: 2f5dd1d6bc520c9f5349c77dfcabdf2d538881ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592645"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840051"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Mexiko
+# <a name="get-started-with-electronic-invoicing-for-mexico"></a>Erste Schritte mit der elektronischen Rechnungsstellung für Mexiko
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Das Add-On für die elektronische Rechnungsstellung für Mexiko unterstützt derzeit eventuell nicht alle Funktionen, die im Dokument Comprobante Fiscal Digital por Internet (CFDI) und in der zugehörigen Integration in Microsoft Dynamics 365 Finance oder Dynamics 365 Supply Chain Management verfügbar sind.
+> Die elektronische Rechnungsstellung für Mexiko unterstützt derzeit eventuell nicht alle Funktionen, die im Dokument „Comprobante Fiscal Digital por Internet (CFDI)“ und in der zugehörigen Integration in Microsoft Dynamics 365 Finance oder Dynamics 365 Supply Chain Management verfügbar sind.
 
-Dieses Thema enthält Informationen, die Ihnen den Einstieg in das Add-On für die elektronische Rechnungsstellung für Mexiko erleichtern. Es führt Sie durch die Konfigurationsschritte, die in Regulatory Configuration Services (RCS) sowie in Finance länderabhängig sind. Außerdem werden Sie durch die Schritte geführt, die Sie in Finance ausführen müssen, um CFDI-Rechnungen über den Service zu übermitteln, und es wird erläutert, wie Sie die Verarbeitungsergebnisse und den Status von CFDI-Rechnungen überprüfen.
+Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Mexiko erleichtern. Es führt Sie durch die Konfigurationsschritte, die in Regulatory Configuration Services (RCS) sowie in Finance länderabhängig sind. Außerdem werden Sie durch die Schritte geführt, die Sie in Finance ausführen müssen, um CFDI-Rechnungen über den Service zu übermitteln, und es wird erläutert, wie Sie die Verarbeitungsergebnisse und den Status von CFDI-Rechnungen überprüfen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie die Schritte in diesem Thema ausführen, müssen Sie die Schritte in [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung](e-invoicing-get-started.md) ausführen.
+Bevor Sie die Schritte in diesem Thema ausführen, müssen Sie die Schritte in [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md) ausführen.
 
 ## <a name="rcs-setup"></a>RCS-Einstellungen
 
@@ -47,7 +45,7 @@ Während der RCS-Einrichtung führen Sie folgende Aufgaben aus:
 4. Veröffentlichen Sie die Funktion für die elektronische Rechnungsstellung für CFDI-Rechnungen.
 
 > [!NOTE]
-> „Die Funktion für die elektronische Rechnungsstellung“ ist der generische Name für die Ressource, die so konfiguriert und veröffentlicht ist, dass sie den Add-On-Server für die elektronische Rechnungsstellung verwendet. In diesem Fall sind CFDI-Rechnungen (MX) die Funktion für die elektronische Rechnungsstellung, die Sie einrichten werden.
+> „Die Funktion für die elektronische Rechnungsstellung“ ist der generische Name für die Ressource, die so konfiguriert und veröffentlicht ist, dass sie den Server für die elektronische Rechnungsstellung verwendet. In diesem Fall sind CFDI-Rechnungen (MX) die Funktion für die elektronische Rechnungsstellung, die Sie einrichten werden.
 
 ## <a name="import-the-e-invoicing-feature"></a>Importieren der Funktion für die elektronische Rechnungsstellung
 
@@ -153,9 +151,9 @@ Um eine CFDI-Rechnungsstornierung zu übermitteln, sind die Funktionseinrichtung
 
 ![Ändern des Status der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
 
-## <a name="set-up-electronic-invoicing-add-on-integration-in-finance"></a>Einrichten der Integration des Add-Ons für die elektronische Rechnungsstellung in Finance
+## <a name="set-up-electronic-invoicing--integration-in-finance"></a>Einrichten der Integration für die elektronische Rechnungsstellung in Finance
 
-Um das Add-On für die elektronische Rechnungsstellung in Finance einzurichten, führen Sie die folgenden Aufgaben aus:
+Um die elektronische Rechnungsstellung in Finance einzurichten, führen Sie die folgenden Aufgaben aus:
 
 1. Importieren Sie das EB-Datenmodell, die EB-Datenmodellzuordnung und die Formate, die für CFDI-Rechnungen erforderlich sind.
 2. Konfigurieren Sie Antworttypen für die Aktualisierung der CFDI-Rechnungen. Diese Antworttypen werden für die Antwort vom Server der autorisierten Zertifizierungsstelle (PAC) verwendet.
@@ -194,7 +192,7 @@ Um das Add-On für die elektronische Rechnungsstellung in Finance einzurichten, 
     - Wählen Sie für **Debitorenrechnungserfassung** die Option **Kontext Debitorenrechnung** aus.
     - Wählen Sie für **Projektrechnung** die Option **Kontext Projektrechnung** aus.
 
-4. Wählen Sie **Antworttypen** aus, um die Antworttypen zu konfigurieren, die vom Add-On für die elektronische Rechnungsstellung zurückgegeben und in einer Debitorenrechnungserfassung oder einer Projektrechnung enthalten sein können.
+4. Wählen Sie **Antworttypen** aus, um die Antworttypen zu konfigurieren, die von der elektronischen Rechnungsstellung zurückgegeben und in einer Debitorenrechnungserfassung oder einer Projektrechnung enthalten sein können.
 5. Wählen Sie **Neu** aus und wählen Sie anschließend im Feld **Antworttyp** die Option **Antwort** aus.
 6. Wählen Sie im Feld **Übermittlungsstatus** die Option **Ausstehend** aus.
 7. Wählen Sie im Feld **Modellzuordnung** die Option **Importformat für Antwortnachrichten – Modellzuordnung aus Antwortnachricht** aus.
@@ -206,7 +204,7 @@ Um das Add-On für die elektronische Rechnungsstellung in Finance einzurichten, 
 
 ## <a name="process-electronic-invoices-in-finance"></a>Verarbeiten elektronischer Rechnungen in Finance 
 
-Während der Verarbeitung von CFDI-Rechnungen in Finance über das Add-On für die elektronische Rechnungsstellung können Sie folgende Aufgaben ausführen:
+Während der Verarbeitung von CFDI-Rechnungen in Finance über die elektronische Rechnungsstellung können Sie folgende Aufgaben ausführen:
 
 - Übermitteln Sie CFDI-Rechnungen.
 - Zeigen Sie die Ausführungsprotokolle für die Übermittlung an.
@@ -214,7 +212,7 @@ Während der Verarbeitung von CFDI-Rechnungen in Finance über das Add-On für d
 
 ### <a name="submit-cfdi-invoices"></a>Übermitteln von CFDI-Rechnungen
 
-Nachdem Sie die Funktion **Integration des konfigurierbaren Add-Ons für die elektronische Rechnungsstellung** aktiviert haben, kann der Prozess **Elektronischen Rechnungsprozess exportieren/importieren** (**Debitoren \> Rechnungen \> Elektronische Rechnungen**) zur Übermittlung von CFDI-Rechnungen nicht mehr verwendet werden. Er wird durch einen neuen Prozess mit dem Namen **Elektronische Dokumente übermitteln** ersetzt.
+Nachdem Sie die Funktion **Integration der konfigurierbaren elektronischen Rechnungsstellung** aktiviert haben, kann der Prozess **Elektronische Rechnung exportieren/importieren** (**Debitoren \> Rechnungen \> Elektronische Rechnungen**) zur Übermittlung von CFDI-Rechnungen nicht mehr verwendet werden. Er wird durch einen neuen Prozess mit dem Namen **Elektronische Dokumente übermitteln** ersetzt.
 
 > [!NOTE]
 > Bevor Sie den neuen Prozess **Elektronische Dokumente übermitteln** verwenden, vergewissern Sie sich, dass die für elektronische Rechnungen in Mexiko erforderliche Einrichtung abgeschlossen ist. Weitere Hinweise zur Umrechnung finden Sie unter [Layoutversion 3.3 für CFDI](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
@@ -226,7 +224,7 @@ Nachdem Sie die Funktion **Integration des konfigurierbaren Add-Ons für die ele
 ![Übermitteln eines CFDI-Dokuments](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
 
 > [!NOTE]
-> Bei Ihrem ersten Versuch, ein Dokument über den Service zu übermitteln, werden Sie aufgefordert, die Verbindung mit dem Add-On für die elektronische Rechnungsstellung zu bestätigen. Wählen Sie **Hier klicken, um eine Verbindung mit dem Electronic Document Submission Service herzustellen** aus.
+> Bei Ihrem ersten Versuch, ein Dokument über den Service zu übermitteln, werden Sie aufgefordert, die Verbindung mit der elektronischen Rechnungsstellung zu bestätigen. Wählen Sie **Hier klicken, um eine Verbindung mit dem Electronic Document Submission Service herzustellen** aus.
 
 ### <a name="view-submission-logs"></a>Anzeigen von Übermittlungsprotokollen
 
@@ -234,7 +232,7 @@ Sie können die Übermittlungsprotokolle für alle übermittelten Dokumente oder
 
 #### <a name="view-all-submission-logs"></a>Anzeigen aller Übermittlungsprotokolle
 
-Nach dem Aktivieren der Funktion **Integration des konfigurierbaren Add-Ons für die elektronische Rechnungsstellung** ist eine neue Seite verfügbar, über die Sie den Übermittlungsprozess für das Dokument nachverfolgen können. Sie können diese Seite verwenden, um die Übermittlungsprotokolle für alle übermittelten Dokumente anzuzeigen.
+Nach dem Aktivieren der Funktion **Integration der konfigurierbaren elektronischen Rechnungsstellung** ist eine neue Seite verfügbar, über die Sie den Übermittlungsprozess für das Dokument nachverfolgen können. Sie können diese Seite verwenden, um die Übermittlungsprotokolle für alle übermittelten Dokumente anzuzeigen.
 
 1. Navigieren Sie zu **Organisationsverwaltung \> Periodisch \> Elektronische Dokumente \> Übermittlungsprotokoll für elektronische Dokumente**.
 2. Wählen Sie im Feld **Dokumenttyp** die Option **Debitorenrechnungserfassung** aus, um nach den erforderlichen elektronischen Dokumenten zu filtern.
@@ -249,26 +247,26 @@ Die Informationen in den Übermittlungsprotokollen sind auf drei Inforegister au
 
 - **Verarbeitungsaktivitäten** – Dieses Inforegister zeigt das Ausführungsprotokoll für die Aktionen an, die in der in RCS eingerichteten Funktionsversion konfiguriert sind. Die Spalte **Status** zeigt an, ob die Aktion erfolgreich ausgeführt wurde.
 - **Aktionsdateien** – Dieses Inforegister zeigt die Zwischendateien an, die während der Ausführung der Aktionen generiert wurden. Sie können **Anzeigen** auswählen, um die Datei herunterzuladen und anzuzeigen.
-- **Aktivitätsprotokoll verarbeiten** – Dieses Inforegister zeigt die Ergebnisse der Kommunikation zwischen dem Add-On für die elektronische Rechnungsstellung und dem Ziel-Webdienst an. Außerdem zeigt es an, was von der Verarbeitung durch den Webdienst zurückgegeben wurde. Die Spalte **Fehlercode** zeigt den Rückgabecode an, der vom Autorisierungs-Webdienst zurückgegeben wurde.
+- **Aktivitätsprotokoll verarbeiten** – Dieses Inforegister zeigt die Ergebnisse der Kommunikation zwischen der elektronischen Rechnungsstellung und dem Ziel-Webdienst an. Außerdem zeigt es an, was von der Verarbeitung durch den Webdienst zurückgegeben wurde. Die Spalte **Fehlercode** zeigt den Rückgabecode an, der vom Autorisierungs-Webdienst zurückgegeben wurde.
 
 Wenn die übermittelte CFDI-Rechnung autorisiert ist, wird ihr Status auf **Genehmigt** aktualisiert.
 
 #### <a name="view-submission-logs-from-cfdi-invoices"></a>Anzeigen von Übermittlungsprotokollen über CFDI-Rechnungen
 
-Nach dem Aktivieren der Funktion **Integration des konfigurierbaren Add-Ons für die elektronische Rechnungsstellung** können Sie die Übermittlungsprotokolle auch über die CFDI-Rechnungen anzeigen.
+Nach dem Aktivieren der Funktion **Integration der konfigurierbaren elektronischen Rechnungsstellung** können Sie die Übermittlungsprotokolle auch über die CFDI-Rechnungen anzeigen.
 
 1. Wechseln Sie zu **Debitoren \> Abfragen und Berichte \> CFDI (elektronische Rechnungen)**.
-2. Wählen Sie eine CFDI-Rechnung aus, die nach dem Aktivieren der Funktion **Integration des konfigurierbaren Add-Ons für die elektronische Rechnungsstellung** übermittelt wurde.
+2. Wählen Sie eine CFDI-Rechnung aus, die nach dem Aktivieren der Funktion **Integration der konfigurierbaren elektronischen Rechnungsstellung** übermittelt wurde.
 3. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Verlauf** die Option **Elektronisches Dokumentenprotokoll** aus.
 
 ![Anzeigen von Übermittlungsprotokollen über CFDI-Rechnungen](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
 
 > [!NOTE]
-> Für CFDI-Rechnungen, die vor dem Aktivieren der Funktion **Integration des konfigurierbaren Add-Ons für die elektronische Rechnungsstellung** übermittelt wurden, ist die Schaltfläche **Verlauf** verfügbar. Die Schaltfläche **Verlauf** ist für CFDI-Rechnungen, die nach dem Aktivieren der Funktion **Integration des konfigurierbaren Add-Ons für die elektronische Rechnungsstellung** übermittelt wurden, nicht verfügbar.
+> Für CFDI-Rechnungen, die vor dem Aktivieren der Funktion **Integration der konfigurierbaren elektronischen Rechnungsstellung** übermittelt wurden, ist die Schaltfläche **Verlauf** verfügbar. Die Schaltfläche **Verlauf** ist für CFDI-Rechnungen, die nach dem Aktivieren der Funktion **Integration der konfigurierbaren elektronischen Rechnungsstellung** übermittelt wurden, nicht verfügbar.
 
 ### <a name="submit-cancellation-of-cfdi-invoices"></a>Übermitteln der Stornierung von CFDI-Rechnungen
 
-Nachdem Sie die Funktion **Integration des konfigurierbaren Add-Ons für die elektronische Rechnungsstellung** aktiviert haben, kann der alte Prozess zum Stornieren von CFDI-Rechnungen nicht mehr verwendet werden. Er wird durch einen neuen Stornierungsprozess ersetzt, der in die Seite **Übermittlungsprotokoll für elektronische Dokumente** eingebettet ist.
+Nachdem Sie die Funktion **Integration der konfigurierbaren elektronischen Rechnungsstellung** aktiviert haben, kann der alte Prozess zum Stornieren von CFDI-Rechnungen nicht mehr verwendet werden. Er wird durch einen neuen Stornierungsprozess ersetzt, der in die Seite **Übermittlungsprotokoll für elektronische Dokumente** eingebettet ist.
 
 1. Wechseln Sie zu **Debitoren \> Abfragen und Berichte \> CFDI (elektronische Rechnungen)**.
 2. Wenn die CFDI-Rechnung den Status **Genehmigt** hat, wählen Sie **Funktionen \> CFDI stornieren** aus.
@@ -295,9 +293,9 @@ Zur Aktivierung der Funktion für eine **Elektronische Rechnung CFDI für Mexiko
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Übersicht über das Add-On für die elektronische Rechnungsstellung](e-invoicing-service-overview.md)
-- [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung](e-invoicing-get-started.md)
-- [Einrichten des Add-Ons für die elektronische Rechnungsstellung](e-invoicing-setup.md)
+- [Informationen zur elektronischen Rechnungsstellung](e-invoicing-service-overview.md)
+- [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md)
+- [Elektronische Rechnungsstellung einrichten](e-invoicing-setup.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

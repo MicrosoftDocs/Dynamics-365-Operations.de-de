@@ -2,11 +2,9 @@
 title: Einrichten von vordatierten Schecks
 description: In diesem Thema wird erläutert, wie angegeben wird, ob Journaleinträge für vordatierte Schecks gebucht werden sollen, und welche Erfassungen für das Verrechnen von Einträgen und von Kreditorenzahlungen verwendet werden sollen.
 author: kweekley
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 84bb0f8250e68dd65aa87d126df59b7cea74b9ed
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2adb8b969a6e86becaa3c0a3b59d8f8f259e5a64
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225220"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834595"
 ---
 # <a name="set-up-postdated-checks"></a>Einrichten von vordatierten Schecks
 

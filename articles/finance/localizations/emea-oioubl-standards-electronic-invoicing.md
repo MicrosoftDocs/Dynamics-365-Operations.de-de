@@ -2,11 +2,9 @@
 title: Unterstützte Standards für die elektronische Rechnungsstellung in Europa
 description: Dieses Thema beschreibt die Abdeckung für eine elektronische Rechnungsstellung für Europa.
 author: mrolecki
-manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.industry: ''
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b25dedca6d8d6726be60d1943ade0865eaf6b0ec
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9aa3e1f6fc14d2c0c8f35307f1084d09399c08f5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262815"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832709"
 ---
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Unterstützte Standards für die elektronische Rechnungsstellung in Europa
 

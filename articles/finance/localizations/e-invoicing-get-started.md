@@ -1,12 +1,10 @@
 ---
-title: Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung
-description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in das Add-On für die elektronische Rechnungsstellung in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management erleichtern.
+title: Erste Schritte mit der elektronischen Rechnungsstellung
+description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management erleichtern.
 author: gionoder
-manager: AnnBe
-ms.date: 02/22/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,83 +15,82 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 56227e031f8205836bcae9ce26006fc8091c2863
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: cf553f2ffecf18859b88932e68360231ca46410f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592549"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840123"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on"></a>Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung
+# <a name="get-started-with-electronic-invoicing"></a>Erste Schritte mit der elektronischen Rechnungsstellung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen, die Ihnen den Einstieg in das Add-On für die elektronische Rechnungsstellung erleichtern.
-
-In der folgenden Tabelle sind die Funktionen für die elektronische Rechnungsstellung und die Geschäftsdokumente aufgeführt, auf die sie angewendet werden können.
-
-| Funktionsname                         | Geschäftsdokument |
-|--------------------------------------|-------------------|
-| Elektronische Rechnungen für Österreich (AT)    | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
-| Elektronische Rechnungen für Belgien (BE)      | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
-| Brasilianisches NF-e (BR)                  | <p>Steuerdokument Modell 55</p><p>Korrekturschreiben</p> |
-| Brasilianisches NFS-e ABRASF Curitiba (BR) | Dienst Steuerdokumente |
-| Elektronische Rechnungen für Dänemark (DK)       | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
-| Elektronische Rechnungen für Ägypten (EG)     | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
-| Elektronische Rechnungen für Estland (EE)     | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
-| Elektronische Rechnungen für Finnland (FI)       | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
-| Elektronische Rechnungen für Frankreich (FR)       | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
-| Elektronische Rechnungen für Deutschland (DE)       | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
-| FatturaPA (IT)                       | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
-| Mexikanische CFDI Interfactura (MX)       | <p>Verkaufsrechnung</p><p>Lieferschein</p><p>Lagerumlagerung</p><p>Zahlungsergänzung</p> |
-| Elektronische Rechnungen für die Niederlande (NL)        | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
-| Elektronische Rechnungen für Norwegen (NO)    | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
-| Elektronische Rechnungen für Spanien (ES)      | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
-| Elektronische Rechnungen im PEPPOL-Format            | <p>Verkaufsrechnung</p><p>Projektrechnung</p> |
+Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung erleichtern. Dieses Thema führt Sie durch die allgemeinen Konfigurationsschritte in Regulatory Configuration Services (RCS) und Dynamics 365 Finance und enthält die Schritte, die Sie ausführen müssen, um Geschäftsdokumente einzureichen und die Verarbeitungsergebnisse zu überprüfen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Bevor Sie die Vorgehensweisen in diesem Thema abschließen, müssen die folgenden Voraussetzungen erfüllt sein:
 
-- Konfigurieren Sie Ihren Regulatory Configuration Service (RCS) und Ihre Microsoft Dynamics 365 Finance- oder Dynamics 365 Supply Chain Management-Umgebung zur Übermittlung an das Add-On für die elektronische Rechnungsstellung.
-- Erstellen Sie eine Dienst-Umgebung, und veröffentlichen Sie sie im Add-On für die elektronische Rechnungsstellung. Weitere Informationen finden Sie unter [Erste Schritte in der Add-On-Dienstverwaltung für die elektronische Rechnungsstellung](e-invoicing-get-started-service-administration.md).
-- Erstellen Sie eine verbundene Anwendung. Weitere Informationen finden Sie unter [Erste Schritte in der Add-On-Dienstverwaltung für die elektronische Rechnungsstellung](e-invoicing-get-started-service-administration.md).
-- Erstellen Sie einen Konfigurationsanbieter für Ihre Organisation. Weitere Informationen finden Sie unter [Konfigurationsanbieter erstellen und als aktiv markieren](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+- Konfigurieren Sie Ihre Microsoft Dynamics Lifecycle Services (LCS)-, Regulatory Configuration Service (RCS)- und Microsoft Dynamics 365 Finance- oder Dynamics 365 Supply Chain Management-Umgebung. Weitere Informationen finden Sie unter [Erste Schritte mit der Dienstverwaltung für die elektronische Rechnungsstellung](e-invoicing-get-started-service-administration.md).
+- Erstellen Sie einen Konfigurationsanbieter für Ihre Organisation. Weitere Informationen finden Sie unter [Einen Konfigurationsanbieter erstellen und als aktiv markieren](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Eine elektronische Rechnungsstellungsfunktion über den Microsoft-Konfigurationsanbieter importieren 
 
 1. Melden Sie sich bei Ihrem RCS-Konto (Regulatory Configuration Service) an.
-2. Wählen Sie im Arbeitsbereich **Globalisierungsfunktion** im Abschnitt **Funktionen** die Kachel **Add-On für die elektronische Rechnungsstellung** aus.
+2. Wählen Sie im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Elektronische Rechnungsstellung** aus.
 3. Wählen Sie **Importieren** und anschließend **Synchronisieren** aus.
 4. Filtern Sie die Spalte **Konfigurationsanbieter** nach dem Begriff **Microsoft**.
 5. Wählen Sie den Namen einer elektronischen Rechnungsstellungsfunktion aus der Tabelle am Anfang dieses Themas und anschließend **Importieren** aus.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Eine elektronische Rechnungsstellungsfunktion unter Ihrem Organisationsanbieter erstellen
 
-1. Wählen Sie in RCS im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Add-On für die elektronische Rechnungsstellung** aus.
+1. Wählen Sie in RCS im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Elektronische Rechnungsstellung** aus.
 2. Wählen Sie **Hinzufügen** > **Auf vorhandener Funktion basierend** aus, und geben Sie im Feld **Name** den Namen der elektronischen Rechnungsstellungsfunktion ein.
 3. Geben Sie im Feld **Beschreibung** eine Beschreibung der Funktion ein.
 4. Wählen Sie im **Basisfunktionsfeld** die importierte elektronische Rechnungsstellungsfunktion des Microsoft-Konfigurationsanbieters aus.
 5. Wählen Sie **Funktion erstellen**.
 
-## <a name="configure-the-electronic-invoicing-feature"></a>Die elektronische Rechnungsstellungsfunktion konfigurieren
+## <a name="country-specific-configuration-for-electronic-invoicing-feature"></a>Länderspezifische Konfiguration für die elektronische Rechnungsstellungsfunktion
 
-Je nach Land oder Region benötigt die elektronische Rechnungsstellungsfunktion möglicherweise eine zusätzliche Konfiguration. 
+Je nach Land oder Region benötigt die elektronische Rechnungsstellungsfunktion möglicherweise eine spezielle Konfiguration. 
 
 Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „Erste Schritte“, die für Ihr Land oder Ihre Region verfügbar ist.
+
+## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Importieren von Modellzuordnungskonfigurationen für elektronische Berichterstellung
+
+1. Wählen Sie in RCS den Arbeitsbereich **Elektronische Berichterstellung** aus.
+2. Wählen Sie aus der Liste der **Microsoft**-Konfigurationsanbieter **Repositorys** aus.
+3. Wählen Sie **Global** und im Aktionsbereich **Öffnen** aus.
+4. Importieren Sie die Modellzuordnungskonfigurationen gemäß der folgenden Tabelle nach Funktionsname.
+
+| Funktionsname                         | Konfiguration der Modellzuordnung |
+|--------------------------------------|-----------------------------|
+| Elektronische Rechnungen für Österreich (AT)    | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+| Elektronische Rechnungen für Belgien (BE)      | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+| Brasilianisches NF-e (BR)                  | <p>Kontextmodell Debitorenrechnung</p><p>Steuerdokumente</p><p>Antwortnachrichtenmodell</p> |
+| Brasilianisches NFS-e ABRASF Curitiba (BR) | <p>Kontextmodell Debitorenrechnung</p><p>Steuerdokumente</p><p>Antwortnachrichtenmodell</p> |
+| Elektronische Rechnungen für Dänemark (DK)       | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+| Elektronische Rechnungen für Ägypten (EG)     | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p><p>Antwortnachrichtenmodell</p> |
+| Elektronische Rechnungen für Estland (EE)     | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+| Elektronische Rechnungen für Finnland (FI)       | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+| Elektronische Rechnungen für Frankreich (FR)       | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+| Elektronische Rechnungen für Deutschland (DE)       | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+| FatturaPA (IT)                       | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+| Mexikanische CFDI Interfactura (MX)       | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p><p>Antwortnachrichtenmodell</p> |
+| Elektronische Rechnungen für die Niederlande (NL)        | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+| Elektronische Rechnungen für Norwegen (NO)    | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+| Elektronische Rechnungen für Spanien (ES)      | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+| Elektronische Rechnungen im PEPPOL-Format            | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+
 
 ## <a name="configure-the-application-setup"></a>Anwendungseinrichtung konfigurieren
 
 1. Wählen Sie die zuvor erstellte elektronische Rechnungsstellungsfunktion aus.
-2. Überprüfen Sie auf der Registerkarte **Version**, ob die **Entwurf**-Version ausgewählt ist.
-3. Wählen Sie auf der Registerkarte **Einrichtungen** **Anwendungseinrichtung** aus.
-
-    > [!NOTE]
-    > Überprüfen Sie, ob die Konfigurationsanbietereinstellung auf **Aktiv** für Ihre Organisation festgelegt ist. Weitere Informationen finden Sie unter [Konfigurationsanbieter erstellen und als aktiv markieren](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-
-4. Wählen Sie **Funktionseinrichtung** und anschließend **Verbundene Anwendung** aus.
-5. Wählen Sie im Abschnitt **Elektronische Dokumenttypen** die Option **Hinzufügen** aus.
-6. Wählen Sie für jedes von der Funktion unterstützte Geschäftsdokument **Tabellenname** aus, und geben Sie einen Wert gemäß folgender Tabelle ein.
+2. Wählen Sie auf der Registerkarte **Einrichtungen** **Anwendungseinrichtung** aus.
+3. Wählen Sie im Feld **Anwendung verbinden** die Verbindung aus, die Ihrer Instanz von Finance oder Supply Chain Management zugeordnet ist.
+4. Wählen Sie im Abschnitt **Elektronische Dokumenttypen** die Option **Hinzufügen** aus.
+5. Wählen Sie einen **Tabellenname** aus, und geben Sie einen Wert gemäß folgender Tabelle ein.
 
     | Funktionsname                         | Geschäftsdokument | Name der Tabelle |
     |--------------------------------------|-------------------|------------|
@@ -114,7 +111,7 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
     | Elektronische Rechnungen für Spanien (ES)      | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Debitorenrechnungserfassung</p><p>Projektrechnung</p> |
     | Elektronische Rechnungen im PEPPOL-Format            | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Debitorenrechnungserfassung</p><p>Projektrechnung</p> |
 
-7. Wählen Sie für jedes von der Funktion unterstützte Geschäftsdokument **Kontext** aus, und geben Sie einen Wert gemäß folgender Tabelle ein.
+7. Für jeden Tabellennamen, den Sie erstellen, wählen Sie einen Kontextwert gemäß folgender Tabelle aus und geben ihn ein.
 
     | Funktionsname                         | Geschäftsdokument | Kontext |
     |--------------------------------------|-------------------|---------|
@@ -135,7 +132,7 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
     | Elektronische Rechnungen für Spanien (ES)      | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Kontextmodell Debitorenrechnung – Kontext Debitorenrechnung</p><p>Kontextmodell Debitorenrechnung – Kontext Projektrechnung</p> |
     | Elektronische Rechnungen im PEPPOL-Format            | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Kontextmodell Debitorenrechnung – Kontext Debitorenrechnung</p><p>Kontextmodell Debitorenrechnung – Kontext Projektrechnung</p> |
 
-8. Wählen Sie für jedes von der Funktion unterstützte Geschäftsdokument **Geschäftsdokumentzuordnung** aus, und geben Sie einen Wert gemäß folgender Tabelle ein.
+8. Wählen Sie gemäß folgender Tabelle für jeden Tabellennamen und Kontext einen Geschäftsdokumentzuordnungswert aus, und geben Sie ihn ein.
 
     | Funktionsname                         | Geschäftsdokument | Geschäftsdokumentzuordnungen |
     |--------------------------------------|-------------------|---------------------------|
@@ -156,21 +153,32 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
     | Elektronische Rechnungen für Spanien (ES)      | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Rechnungsmodellzuordnung – Debitorenrechnung</p><p>Rechnungsmodellzuordnung – Projektrechnung</p> |
     | Elektronische Rechnungen im PEPPOL-Format            | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Rechnungsmodellzuordnung – Debitorenrechnung</p><p>Rechnungsmodellzuordnung – Projektrechnung</p> |
 
-Je nach Land oder Region benötigt die elektronische Rechnungsstellungsfunktion möglicherweise eine zusätzliche Konfiguration.
 
-Informationen zu spezifischen Schritten finden Sie in der Dokumentation „Erste Schritte“, die für Ihr Land oder Ihre Region verfügbar ist.
+## <a name="country-specific-configuration-of-application-setup"></a>Länderspezifische Konfiguration der Anwendungseinrichtung
 
-## <a name="deploy-the-electronic-invoicing-feature"></a>Die elektronische Rechnungsstellungsfunktion bereitstellen
+Je nach Land oder Region benötigt die Anwendungseinrichtung möglicherweise eine spezielle Konfiguration. 
+
+Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „Erste Schritte“, die für Ihr Land oder Ihre Region verfügbar ist.
+
+## <a name="deploy-the-electronic-invoicing-feature-to-service-environment"></a>Bereitstellen der Funktion für die elektronische Rechnungsstellung in der Service-Umgebung
 
 1. Wählen Sie auf der Registerkarte **Versionen** die Funktionsversion für die elektronische Rechnungsstellung aus, die Sie bereitstellen möchten.
 2. Wählen Sie **Status ändern** \> **Abgeschlossen**.
 3. Wählen Sie **Status ändern** \> **Veröffentlichen** aus.
 4. Wählen Sie **Bereitstellen** aus.
+5. Stellen Sie die Option **In verbundener Anwendung bereitstellen** auf **Nein** ein.
+6. Stellen Sie die Option **In Service-Umgebung bereitstellen** auf **Ja** ein.
+7. Wählen Sie im Feld **Service-Umgebung** die Service-Umgebung für die elektronische Rechnungsstellung aus, in der Sie die elektronische Rechnungsstellungsfunktion bereitstellen möchten.
+8. Wählen Sie im Feld **Startdatum** das Datum aus, an dem die Funktion für die elektronische Rechnungsstellung in der elektronischen Rechnungsstellung wirksam werden soll.
+9. Wählen Sie **OK**.
+
+## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Bereitstellen der Funktion für die elektronische Rechnungsstellung in der verbundenen Anwendung
+
+1. Wählen Sie auf der Registerkarte **Versionen** eine Funktionsversion für die elektronische Rechnungsstellung aus, die Sie bereitstellen möchten.
+4. Wählen Sie **Bereitstellen** aus.
 5. Stellen Sie die Option **In verbundener Anwendung bereitstellen** auf **Ja** ein.
-6. Wählen Sie auf der Seite **Anwendung verbinden** die Verbindung aus, die Ihrer Instanz von Finance oder Supply Chain Management zugeordnet ist.
-7. Stellen Sie die Option **In Service-Umgebung bereitstellen** auf **Ja** ein.
-8. Wählen Sie im Feld **Service-Umgebung** das Add-On „Service-Umgebung“ für die elektronische Rechnungsstellung aus, in der Sie die elektronische Rechnungsstellungsfunktion bereitstellen möchten.
-9. Wählen Sie im Feld **Startdatum** das Datum aus, an dem die elektronische Rechnungsstellungsfunktion im Add-On für die elektronische Rechnungsstellung wirksam werden soll.
+6. Wählen Sie im Feld **Anwendung verbinden** die Verbindung aus, die Ihrer Instanz von Finance oder Supply Chain Management zugeordnet ist.
+7. Stellen Sie die Option **In Service-Umgebung bereitstellen** auf **Nein** ein.
 10. Wählen Sie **OK**.
 
 ## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Die elektronische Rechnungsstellungsfunktion in Finance oder Supply Chain Management aktivieren
@@ -228,12 +236,12 @@ Informationen zu spezifischen Schritten finden Sie in der Dokumentation „Erste
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Informationen zum Add-On für die elektronische Rechnungsstellung](e-invoicing-service-overview.md)
-- [Erste Schritte mit der Dienstverwaltung des Add-Ons für die elektronische Rechnungsstellung](e-invoicing-get-started-service-administration.md)
-- [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Brasilien](e-invoicing-bra-get-started.md)
-- [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Mexiko](e-invoicing-mex-get-started.md)
-- [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Italien](e-invoicing-ita-get-started.md)
-- [Elektronische Rechnungen für Kunden in Ägypten](emea-egy-e-invoices.md)
+- [Informationen zur elektronischen Rechnungsstellung](e-invoicing-service-overview.md)
+- [Erste Schritte mit der Dienstverwaltung für die elektronische Rechnungsstellung](e-invoicing-get-started-service-administration.md)
+- [Erste Schritte mit der elektronischen Rechnungsstellung für Brasilien](e-invoicing-bra-get-started.md)
+- [Erste Schritte mit der elektronischen Rechnungsstellung für Mexiko](e-invoicing-mex-get-started.md)
+- [Erste Schritte mit der elektronischen Rechnungsstellung für Italien](e-invoicing-ita-get-started.md)
+- [Elektronische Rechnungen für Debitoren in Ägypten](emea-egy-e-invoices.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

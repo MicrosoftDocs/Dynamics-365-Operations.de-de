@@ -2,11 +2,9 @@
 title: Leasingbuchungsarten
 description: In diesem Thema werden die Buchungsarten beschrieben, die für Anlagenleasing-Transaktionen verwendet werden.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9b7d8c545c1addaa570d54855bbad6c576783007
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ddc229f3ab8e048390f27503e2c6c26bd1a6f24f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229501"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841140"
 ---
 # <a name="lease-posting-types"></a>Leasingbuchungsarten
 
@@ -90,15 +88,6 @@ Das Konto ist dem Gegen-Anlagenkonto des Nutzungsrecht am Leasingobjekt zugeordn
 **Beispieljournaleinträge:** Abschreibungsabgrenzung<br>
 **Soll:** Abschreibungsausgaben XXX<br>
 **Haben:** Kumulierte Abschreibung XXX
-
-## <a name="retained-earnings"></a>Nicht ausgeschüttete Gewinne
-
-Das den Anfangssalden zugeordnete Konto. Dieses Konto kann entweder in einem Journaleintrag für die Übergangsregulierung unter Verwendung der vollständigen retrospektiven Methode oder der Methode der kumulativen Nachholoption A belastet oder gutgeschrieben werden. Die Differenz zwischen dem anfänglichen Nutzungsrecht am Leasingobjekt und der Leasingverbindlichkeit wird in den Gewinnrücklagen verbucht. In seltenen Fällen können die Gewinnrücklagen auch während der Änderung des Mieterhältnisses beeinflusst werden, wenn die Klassifizierung eines Mietvertrags von „Finanzierung“ in„Betrieb“ geändert wird, um den ROU-Vermögenswert so hoch oder runter zu schreiben, dass er der Leasingverbindlichkeit entspricht.
-
-**Beispieljournaleinträge:** Übergangsregulierung (vollständige retrospektive oder kumulative Nachholoption A-Methode)<br>
-**Soll:** Leasingverbindlichkeit XXX<br>
-**Haben:** Mietanlage XXX<br>
-**Haben:** Nicht ausgeschüttete Gewinne XXX
 
 ## <a name="variable-payment"></a>Variable Zahlung
 

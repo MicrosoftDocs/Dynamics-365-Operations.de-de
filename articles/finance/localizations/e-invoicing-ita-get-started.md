@@ -1,12 +1,10 @@
 ---
-title: Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Italien
-description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in das Add-On für die elektronische Rechnungsstellung für Italien in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management erleichtern.
+title: Erste Schritte mit der elektronischen Rechnungsstellung für Italien
+description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Italien erleichtern.
 author: gionoder
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,26 +15,26 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9c50000c98bdde2c9da43b3110686aa5d01e8081
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259219"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840099"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung für Italien
+# <a name="get-started-with-electronic-invoicing-for-italy"></a>Erste Schritte mit der elektronischen Rechnungsstellung für Italien
 
 [!include [banner](../includes/banner.md)]
 
 
 > [!IMPORTANT]
-> Das Add-On für die elektronische Rechnungsstellung für Italien unterstützt derzeit möglicherweise nicht alle Funktionen, die für elektronische Rechnungen in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management verfügbar sind. 
+> Die elektronische Rechnungsstellung für Italien unterstützt derzeit möglicherweise nicht alle Funktionen, die für elektronische Rechnungen in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management verfügbar sind. 
 
-Dieses Thema enthält Informationen, die Ihnen den Einstieg in das Add-On für die elektronische Rechnungsstellung für Italien erleichtern. Es führt Sie durch die Konfigurationsschritte, die in Regulatory Configuration Services (RCS) sowie in Finance länderabhängig sind. Es führt Sie auch durch den Übermittlungsprozess für elektronische Rechnungen, die über den Service im für Italien spezifischen Format **FatturaPA** erstellt werden, und es wird erläutert, wie die Ergebnisse der Verarbeitung überprüft werden.
+Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung für Italien erleichtern. Es führt Sie durch die Konfigurationsschritte, die in Regulatory Configuration Services (RCS) sowie in Finance länderabhängig sind. Es führt Sie auch durch den Übermittlungsprozess für elektronische Rechnungen, die über den Service im für Italien spezifischen Format **FatturaPA** erstellt werden, und es wird erläutert, wie die Ergebnisse der Verarbeitung überprüft werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie die Schritte in diesem Thema ausführen, müssen Sie die Schritte in [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung](e-invoicing-get-started.md) ausführen.
+Bevor Sie die Schritte in diesem Thema ausführen, müssen Sie die Schritte in [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md) ausführen.
 
 ## <a name="rcs-setup"></a>RCS-Einstellungen
 
@@ -48,7 +46,7 @@ Während der RCS-Einrichtung führen Sie folgende Aufgaben aus:
 4. Veröffentlichen Sie die Funktion für die elektronische Rechnungsstellung.
 
 > [!NOTE]
-> „Die Funktion für die elektronische Rechnungsstellung“ ist der generische Name für die Ressource, die so konfiguriert und veröffentlicht ist, dass sie den Add-On-Server für die elektronische Rechnungsstellung verwendet. In diesem Fall ist der Export elektronischer Kundenrechnungen die Funktion für die elektronische Rechnungsstellung, die Sie einrichten werden.
+> „Die Funktion für die elektronische Rechnungsstellung“ ist der generische Name für die Ressource, die so konfiguriert und veröffentlicht ist, dass sie den Server für die elektronische Rechnungsstellung verwendet. In diesem Fall ist der Export elektronischer Kundenrechnungen die Funktion für die elektronische Rechnungsstellung, die Sie einrichten werden.
 
 ## <a name="import-the-e-invoicing-feature"></a>Importieren der Funktion für die elektronische Rechnungsstellung
 
@@ -153,7 +151,7 @@ Sie können die Funktion für die elektronische Rechnungsstellung veröffentlich
 
 ![Ändern des Status der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
-## <a name="set-up-the-electronic-invoicing-add-on-integration-in-finance"></a>Einrichten der Integration des Add-Ons für die elektronische Rechnungsstellung in Finance
+## <a name="set-up-electronic-invoicing-integration-in-finance"></a>Einrichten der Integration für die elektronische Rechnungsstellung in Finance
 
 Während der Einrichtung von Finance führen Sie folgende Aufgaben aus:
 
@@ -193,17 +191,17 @@ Während der Einrichtung von Finance führen Sie folgende Aufgaben aus:
 
 Während der Verarbeitung in Finance führen Sie folgende Aufgaben aus:
 
-1. Generieren elektronischer Rechnungen in Italien über das Add-On für die elektronische Rechnungsstellung
+1. Generieren elektronischer Rechnungen in Italien über die elektronische Rechnungsstellung
 2. Anzeigen der Ausführungsprotokolle und Überprüfen der Ergebnisse der Verarbeitung
 
 ### <a name="generate-electronic-invoices"></a>Generieren elektronischer Rechnungen
 
-Nachdem Sie die Funktion **Integration des konfigurierbaren Add-Ons für die elektronische Rechnungsstellung** und die Funktion **IT00036** aktiviert haben, kann der alte Prozess von Finance zum Generieren elektronischer Rechnungen in Italien nicht mehr verwendet werden. Er wird durch einen neuen Prozess mit dem Namen **Elektronische Dokumente übermitteln** ersetzt.
+Nachdem Sie die Funktion **Integration der konfigurierbaren elektronischen Rechnungsstellung** und die Funktion **IT00036** aktiviert haben, kann der alte Prozess von Finance zum Generieren elektronischer Rechnungen in Italien nicht mehr verwendet werden. Er wird durch einen neuen Prozess mit dem Namen **Elektronische Dokumente übermitteln** ersetzt.
 
 Sie können die Dokumente manuell übermitteln, basierend auf Ihrer Nachfrage nach elektronischen Rechnungsdokumenten.
 
 > [!NOTE]
-> Bevor Sie fortfahren, stellen Sie sicher, dass die für elektronische Rechnungen in Italien erforderliche Einrichtung abgeschlossen wurde. Weitere Informationen finden Sie unter [Elektronische Rechnungen für Kunden](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Beachten Sie, dass einige der in diesem Thema beschriebenen Einrichtungsschritte aufgrund der Aktivierung des Add-Ons für die elektronische Rechnungsstellung möglicherweise nicht verfügbar sind.
+> Bevor Sie fortfahren, stellen Sie sicher, dass die für elektronische Rechnungen in Italien erforderliche Einrichtung abgeschlossen wurde. Weitere Informationen finden Sie unter [Elektronische Rechnungen für Kunden](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Beachten Sie, dass einige der in diesem Thema beschriebenen Einrichtungsschritte aufgrund der Aktivierung der elektronischen Rechnungsstellung möglicherweise nicht verfügbar sind.
 
 1. Navigieren Sie zu **Organisationsverwaltung \> Periodisch \> Elektronische Dokumente \> Elektronische Dokumente übermitteln**.
 2. Legen Sie für die erste Übermittlung irgendeines Dokuments die Option **Dokumente erneut übermitteln** auf **Nein** fest. Wenn Sie ein Dokument erneut über den Service übermitteln müssen, legen Sie diese Option auf **Ja** fest.
@@ -220,7 +218,7 @@ Sie können die Dokumente manuell übermitteln, basierend auf Ihrer Nachfrage na
 2. Wählen Sie **OK** aus, um das Dialogfeld **Anfrage** zu schließen.
 3. Wählen Sie **OK** aus, um die ausgewählten Dokumente zu übermitteln.
 
-> ! [HINWEIS] Bei Ihrem ersten Versuch, ein Dokument über den Service zu übermitteln, werden Sie aufgefordert, die Verbindung mit dem Add-On für die elektronische Rechnungsstellung zu bestätigen. Wählen Sie **Hier klicken, um eine Verbindung mit dem Electronic Document Submission Service herzustellen** aus.
+> ! [HINWEIS] Bei Ihrem ersten Versuch, ein Dokument über den Service zu übermitteln, werden Sie aufgefordert, die Verbindung mit der elektronischen Rechnungsstellung zu bestätigen. Wählen Sie **Hier klicken, um eine Verbindung mit dem Electronic Document Submission Service herzustellen** aus.
 
 #### <a name="view-submission-logs"></a>Anzeigen von Übermittlungsprotokollen
 
@@ -242,9 +240,9 @@ Sie können die Übermittlungsprotokolle für alle übermittelten Dokumente anze
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Übersicht über das Add-On für die elektronische Rechnungsstellung](e-invoicing-service-overview.md)
-- [Erste Schritte mit dem Add-On für die elektronische Rechnungsstellung](e-invoicing-get-started.md)
-- [Einrichten des Add-Ons für die elektronische Rechnungsstellung](e-invoicing-setup.md)
+- [Informationen zur elektronischen Rechnungsstellung](e-invoicing-service-overview.md)
+- [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md)
+- [Elektronische Rechnungsstellung einrichten](e-invoicing-setup.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

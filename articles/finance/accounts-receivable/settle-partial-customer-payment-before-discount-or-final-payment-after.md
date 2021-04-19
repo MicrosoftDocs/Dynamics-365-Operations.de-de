@@ -2,11 +2,9 @@
 title: Teilzahlungen vor dem Rabattdatum ausgleichen mit vollständiger Zahlung nach dem Rabattdatum
 description: Dieser Artikel erläutert die Auswirkung von Zahlungsvereinbarungen auf Rechnungen für Debitoren. Das Szenario konzentriert sich auf die Auswirkungen im untergeordneten Sachkonto, nicht im Hauptbuch.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87408e864ab8e6101fc908e744231f10d0d2e664
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250553"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835146"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Teilzahlungen vor dem Rabattdatum ausgleichen mit vollständiger Zahlung nach dem Rabattdatum
 
@@ -48,10 +46,10 @@ Am 2. Juli leistet Debitor 4027 eine Teilzahlung von 297,00 für die Rechnung. D
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt. Wenn Sie den Wert **Auszugleichender Betrag** nicht auf **297,00** ändern, weichen die erscheinenden Werte für Skontobetrag ab. Allerdings werden 3,00 als das Skonto übernommen, wenn die Zahlung gebucht wurde, da der Ausgleich automatisch den Wert **Auszugleichender** Betrag für Sie anpasst.
 
-|                              |           |
+| Feld                        | Wert     |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
-| Skontobetrag         | 10,00     |
+| Skontobetrag         | 10.00     |
 | Skonto verwenden            | Normal    |
 | Verwendetes Skonto          | 0,00      |
 | Zu verwendender Skontobetrag | 3,00      |
@@ -73,7 +71,7 @@ Am 11. Juli, also nach der Rabattperiode, zahlt Debitor 4027 den Rest dieser Rec
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt.
 
-|                              |           |
+| Feld                        | Wert     |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
 | Skontobetrag         | 0,00      |
@@ -89,10 +87,10 @@ Wenn Arnie den Wert im **Skonto verwenden**-Feld auf **Immer** ändert, wird die
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt.
 
-|                              |           |
+| Feld                        | Wert     |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
-| Skontobetrag         | 7:00      |
+| Skontobetrag         | 7.00      |
 | Skonto verwenden            | Immer    |
 | Verwendetes Skonto          | 3,00      |
 | Zu verwendender Skontobetrag | 7:00      |

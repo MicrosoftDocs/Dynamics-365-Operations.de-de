@@ -2,11 +2,9 @@
 title: Einrichten zentralisierter Zahlungen
 description: Mithilfe dieses Verfahrens wird die Verarbeitung von Zahlungen einer juristischen Person vorbereitet, die im Auftrag anderer juristischer Personen innerhalb der Organisation abgewickelt werden.
 author: kweekley
-manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b890b3bd8d88615b3e1846b10a0f3a06e29679cb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c0ff7051611c1253ce8f431e24274fab53cf79b6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208894"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834915"
 ---
 # <a name="set-up-centralized-payments"></a>Einrichten zentralisierter Zahlungen
 

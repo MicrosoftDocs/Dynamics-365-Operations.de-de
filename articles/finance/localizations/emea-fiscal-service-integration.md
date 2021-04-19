@@ -2,11 +2,9 @@
 title: Integration von steuerlichem Dienst (ESR)
 description: Dieses Thema enthält Informationen zur Integration eines steuerlichen Diensts für Österreich und die Tschechische Republik.
 author: Anasyash
-manager: AnnBe
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CashRegister_W
 audience: Application user
@@ -15,12 +13,12 @@ ms.search.region: Austria, Czech Republic
 ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7740ae9af85efc7ba91048d436c6f5eca9fef4cb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4d974b91289b27d7ead0102ba5f2e727184311a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226197"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826102"
 ---
 # <a name="fiscal-service-esr-integration"></a>Integration von steuerlichem Dienst (ESR)
 

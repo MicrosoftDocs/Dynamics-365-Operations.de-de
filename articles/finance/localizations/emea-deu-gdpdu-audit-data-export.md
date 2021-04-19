@@ -2,11 +2,9 @@
 title: Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht
 description: Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. Dieser Artikel beschreibt, wie die aktuelle Version von Microsoft Dynamics 365 Finance die Anforderungen der GDPdU/GoBD-Prüfungsdatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.
 author: mrolecki
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Austria, Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 809e6f0a57580247830f561d5d93841ab049fe09
-ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
+ms.openlocfilehash: 6d4be19eaef4696e0405fdec41d1fe12f3b2cf3e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5585070"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839844"
 ---
 # <a name="german-audit-file-gdpdugobd-overview"></a>Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht
 

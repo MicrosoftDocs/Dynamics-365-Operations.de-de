@@ -1,12 +1,10 @@
 ---
-title: Erste Schritte in der Add-On-Dienstverwaltung für die elektronische Rechnungsstellung
-description: Dieses Thema erläutert die ersten Schritte mit dem Add-On für die elektronische Rechnungsstellung.
+title: Erste Schritte mit der Dienstverwaltung für die elektronische Rechnungsstellung
+description: Dieses Thema erläutert die ersten Schritte mit der elektronischen Rechnungsstellung.
 author: gionoder
-manager: AnnBe
-ms.date: 03/12/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,18 +15,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 05b00380cec7511adad2467d3f252799a4aaee5c
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: ec431cb4a3620459d905f64a80fd820a2113290f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592525"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840147"
 ---
-# <a name="get-started-with-electronic-invoicing-add-on-service-administration"></a>Erste Schritte in der Add-On-Dienstverwaltung für die elektronische Rechnungsstellung
+# <a name="get-started-with-electronic-invoicing-service-administration"></a>Erste Schritte mit der Dienstverwaltung für die elektronische Rechnungsstellung
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -46,7 +42,7 @@ Bevor Sie die Vorgehensweisen in diesem Thema abschließen, müssen die folgende
 - Die Globalisierungsfunktion für Ihr RCS-Konto muss in der Funktionsverwaltung aktiviert sein. Weitere Informationen finden Sie unter [Regulatory Configuration Services (RCS) – Globalisierungsfunktionen](rcs-globalization-feature.md).
 - Sie müssen einen Schlüsseltresor und ein Speicherkonto in Azure erstellen. Weitere Informationen finden Sie unter [Ein Azure-Speicherkonto und einen Schlüsseltresor erstellen](e-invoicing-create-azure-storage-account-key-vault.md).
 
-## <a name="install-the-add-on-for-microservices-in-lifecycle-services"></a>Das Add-On für Microservices in Lifecycle Services installieren
+## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Das Add-In für Microservices in Lifecycle Services installieren
 
 1. Melden Sie sich bei Ihrem LCS-Konto an.
 2. Wählen Sie die Kachel **Verwaltung von Vorschaufunktionen** aus.
@@ -54,13 +50,14 @@ Bevor Sie die Vorgehensweisen in diesem Thema abschließen, müssen die folgende
 4. Stellen Sie sicher, dass die Option **Vorschaufunktion aktiviert** auf **Ja** festgelegt ist.
 5. Wählen Sie in Ihrem LCS-Dashboard Ihr LCS-Bereitstellungsprojekt aus. Das LCS-Projekt muss ausgeführt werden.
 7. Wählen Sie auf der Registerkarte **Umgebungs-Add-Ins** die Option **Neues Add-In installieren** aus.
-8. Wählen Sie **E-Invoicing-Dienste** aus, und geben Sie im Feld **AAD-Anwendungs-ID** die ID **091c98b0-a1c9-4b02-b62c-7753395ccabe** ein. Dies ist ein fester Wert.
+8. Wählen Sie **E-Invoicing-Services** aus.
+9. Geben Sie im **AAD-Anwendungs-ID**-Feld **091c98b0-a1c9-4b02-b62c-7753395ccabe** ein. Dies ist ein fester Wert.
 10. Geben Sie in das Feld **AAD-Mandanten-ID** die Mandanten-ID Ihres Azure-Abonnementkontos ein.
 11. Lesen Sie die allgemeinen Geschäftsbedingungen, und aktivieren Sie dann das Kontrollkästchen.
 12. Wählen Sie **Installieren**.
 
 
-## <a name="set-up-the-parameters-for-rcs-integration-with-the-electronic-invoicing-add-on"></a>Richten Sie die Parameter für die RCS-Integration im Add-On für die elektronische Rechnungsstellung ein.
+## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Parameter für die RCS-Integration in die elektronische Rechnungsstellung einrichten
 
 1. Melden Sie sich bei Ihrem RCS-Konto an.
 2. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** im Abschnitt **Zugehörige Links** **Elektronische Berichterstellungsparameter** aus.
@@ -74,58 +71,56 @@ Bevor Sie die Vorgehensweisen in diesem Thema abschließen, müssen die folgende
     | Westen, Europa                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
 4. Vergewissern Sie sich, dass das Feld **Anwendungs-ID** auf **0cdb527f-a8d1-4bf8-9436-b352c68682b2** gesetzt ist. Dieser Wert ist ein fester Wert.
-5. Geben Sie in das Feld **LCS-Umgebungs-ID** die ID Ihres LCS-Abonnementkontos ein.
+5. Geben Sie in das Feld **LCS-Umgebungs-ID** die ID Ihrer LCS-Umgebung ein.
 6. Klicken Sie auf **Speichern** und schließen Sie die Seite.
 
-## <a name="create-key-vault-secret"></a>Ein Key Vault-Geheimnis erstellen
+## <a name="create-key-vault-references"></a>Schlüsseltresorreferenzen erstellen
 
 1. Melden Sie sich bei Ihrem RCS-Konto an.
-2. Wählen Sie im Arbeitsbereich **Globalisierungsfunktion** im Abschnitt **Umgebung** die Kachel **Add-On für die elektronische Rechnungsstellung** aus.
+2. Wählen Sie im Arbeitsbereich **Globalisierungsfunktion** im Abschnitt **Umgebung** die Kachel **Elektronische Rechnungsstellung** aus.
 3. Wählen Sie im Aktivitätsbereich auf der Seite **Umgebungseinrichtungen** **Service-Umgebung** und anschließend **Key Vault-Parameter** aus.
-4. Wählen Sie **Neu** aus, um ein Schlüsseltresorgeheimnis zu erstellen.
-5. Geben Sie im Feld **Name** den Namen des Schlüsseltresorgeheimnisses ein. Geben Sie im Feld **Beschreibung** eine Beschreibung ein.
-6. Fügen Sie im Feld **Key Vault URI** das Geheimnis aus Azure Key Vault ein.
+4. Wählen Sie **Neu** aus, um eine Schlüsseltresorreferenz zu erstellen.
+5. Geben Sie im Feld **Name** den Namen des Schlüsseltresorreferenz ein. Geben Sie im Feld **Beschreibung** eine Beschreibung ein.
+6. Fügen Sie im Feld **Key Vault-URI** das Schlüsseltresorgeheimnis aus Azure Key Vault ein. Weitere Informationen finden Sie unter [Ein Azure-Speicherkonto und einen Schlüsseltresor erstellen](e-invoicing-create-azure-storage-account-key-vault.md).
 7. Wählen Sie **Speichern** aus.
 
 ## <a name="create-storage-account-secret"></a>Ein Speicherkontogeheimnis erstellen
 
-1. Gehen Sie zu **Systemadministration** > **Einrichten** > **Key Vault-Parameter** und wählen Sie ein Schlüsseltresorgeheimnis aus.
-2. Wählen Sie im **Zertifikate**-Abschnitt **Hinzufügen** aus.
-3. Geben Sie im Feld **Name** den Namen des Speicherkontogeheimnisses und in das Feld **Beschreibung** eine Beschreibung ein.
-4. Wählen Sie im Feld **Typ** die Option **Zertifikat** aus.
-5. Klicken Sie auf **Speichern** und schließen Sie die Seite.
+1. Wählen Sie im Aktivitätsbereich auf der Seite **Umgebungseinrichtungen** **Service-Umgebung** > **Key Vault-Parameter** aus.
+2. Wählen Sie eine **Key Vault-Referenz** und im Abschnitt **Zertifikate** **Hinzufügen** aus.
+3. Geben Sie im Feld **Name** den Namen des Speicherkontogeheimnisses ein. Weitere Informationen finden Sie unter [Ein Azure-Speicherkonto und einen Schlüsseltresor erstellen](e-invoicing-create-azure-storage-account-key-vault.md).
+4. Geben Sie im Feld **Beschreibung** eine Beschreibung ein.
+5. Wählen Sie im Feld **Typ** **Geheimnis** aus.
+6. Klicken Sie auf **Speichern** und schließen Sie die Seite.
 
 ## <a name="create-a-digital-certificate-secret"></a>Ein digitales Zertifikatgeheimnis erstellen
 
-1. Gehen Sie zu **Systemadministration** > **Einrichten** > **Key Vault-Parameter** und wählen Sie ein Schlüsseltresorgeheimnis aus.
-2. Wählen Sie im **Zertifikate**-Abschnitt **Hinzufügen** aus.
-3. Geben Sie im Feld **Name** den Namen des digitalen Zertifikatgeheimnisses und in das Feld **Beschreibung** eine Beschreibung ein.
-4. Wählen Sie im Feld **Typ** die Option **Zertifikat** aus.
-5. Klicken Sie auf **Speichern** und schließen Sie die Seite.
-
-## <a name="create-an-electronic-invoicing-add-on-environment"></a>Eine Add-On-Umgebung für die elektronische Rechnungsstellung erstellen
-
-1. Melden Sie sich bei Ihrem RCS-Konto an.
-2. Wählen Sie im Arbeitsbereich **Globalisierungsfunktion** im Abschnitt **Umgebung** die Kachel **Add-On für die elektronische Rechnungsstellung** aus.
+1. Wählen Sie im Aktivitätsbereich auf der Seite **Umgebungseinrichtungen** **Service-Umgebung** und anschließend **Key Vault-Parameter** aus.
+2. Wählen Sie eine **Key Vault-Referenz** und dann im Abschnitt **Zertifikate** **Hinzufügen** aus.
+3. Geben Sie im Feld **Name** den Namen des digitalen Zertifikatsgeheimnisses ein. Weitere Informationen finden Sie unter [Ein Azure-Speicherkonto und einen Schlüsseltresor erstellen](e-invoicing-create-azure-storage-account-key-vault.md).
+4. Geben Sie im Feld **Beschreibung** eine Beschreibung ein.
+5. Wählen Sie im Feld **Typ** die Option **Zertifikat** aus.
+6. Klicken Sie auf **Speichern** und schließen Sie die Seite.
 
 ## <a name="create-a-service-environment"></a>Eine Service-Umgebung erstellen
 
-1. Wählen Sie im Aktivitätsbereich auf der Seite **Umgebungseinrichtungen** **Service-Umgebung** aus.
-2. Wählen Sie **Neu** aus, um eine neue Service-Umgebung zu erstellen.
-3. Geben Sie im Feld **Name** den Namen der Umgebung für die elektronische Rechnungsstellung ein. Geben Sie im Feld **Beschreibung** eine Beschreibung ein.
-4. Wählen Sie im Feld **Storage SAS-Tokengeheimnis** den Namen des Speicherkontogeheimnisses aus, das zur Authentifizierung des Zugriffs auf das Speicherkonto verwendet werden muss.
-5. Wählen Sie im Abschnitt **Benutzer** die Option **Hinzufügen** aus, um einen Benutzerhinzuzufügen, der elektronische Rechnungen über die Umgebung senden und eine Verbindung zum Speicherkonto herstellen darf.
-6. Geben Sie im Feld **Benutzer-ID** den Alias des Benutzers ein. Geben Sie im Feld **E-Mail** die E-Mail-Adresse des Benutzers ein.
-7. Wählen Sie **Speichern** aus.
-8. Wenn Ihre landes-/regionsspezifischen Rechnungen zur Anwendung digitaler Signaturen eine Zertifikatskette erfordern, wählen Sie im Aktivitätsbereich die Option **Key Vault-Parameter** und anschließend **Zertifikatskette** aus. Befolgen Sie dann diese Schritte:
-
+1. Melden Sie sich bei Ihrem RCS-Konto an.
+2. Wählen Sie im Arbeitsbereich **Globalisierungsfunktion** im Abschnitt **Umgebung** die Kachel **Elektronische Rechnungsstellung** aus.
+3. Wählen Sie im Aktivitätsbereich auf der Seite **Umgebungseinrichtungen** **Service-Umgebung** aus.
+4. Wählen Sie **Neu** aus, um eine neue Service-Umgebung zu erstellen.
+5. Geben Sie im Feld **Name** den Namen der Umgebung für die elektronische Rechnungsstellung ein. Geben Sie im Feld **Beschreibung** eine Beschreibung ein.
+6. Wählen Sie im Feld **Storage SAS-Tokengeheimnis** den Namen des Speicherkontogeheimnisses aus, das zur Authentifizierung des Zugriffs auf das Speicherkonto verwendet werden muss.
+7. Wählen Sie im Abschnitt **Benutzer** die Option **Hinzufügen** aus, um einen Benutzerhinzuzufügen, der elektronische Rechnungen über die Umgebung senden und eine Verbindung zum Speicherkonto herstellen darf.
+8. Geben Sie im Feld **Benutzer-ID** den Alias des Benutzers ein. Geben Sie im Feld **E-Mail** die E-Mail-Adresse des Benutzers ein.
+9. Wählen Sie **Speichern** aus.
+10. Wenn Ihre landes-/regionsspezifischen Rechnungen zur Anwendung digitaler Signaturen eine Zertifikatskette erfordern, wählen Sie im Aktivitätsbereich die Option **Key Vault-Parameter** und anschließend **Zertifikatskette** aus. Befolgen Sie dann diese Schritte:
     1. Wählen Sie **Neu** aus, um eine Zertifikatskette zu erstellen.
     2. Geben Sie im Feld **Name** den Namen der Zertifikatskette ein. Geben Sie im Feld **Beschreibung** eine Beschreibung ein.
     3. Wählen Sie im Abschnitt **Zertifikate** die Option **Hinzufügen** aus, um der Kette ein Zertifikat hinzuzufügen.
     4. Verwenden Sie die Schaltflächen **Oben**- oder **Unten**-Schaltfläche, um die Position des Zertifikats in der Kette zu ändern.
     5. Klicken Sie auf **Speichern** und schließen Sie die Seite.
     6. Schließen Sie die Seite.
-9. Wählen Sie im Aktivitätsbereich auf der Seite **Service-Umgebung** die Option **Veröffentlichen** aus, um die Umgebung in der Cloud zu veröffentlichen. Der Wert des Felds **Status** wird in **Veröffentlicht** geändert.
+11. Wählen Sie im Aktivitätsbereich auf der Seite **Service-Umgebung** die Option **Veröffentlichen** aus, um die Umgebung in der Cloud zu veröffentlichen. Der Wert des Felds **Status** wird in **Veröffentlicht** geändert.
 
 ## <a name="create-a-connected-application"></a>Eine verbundene Anwendung erstellen
 
@@ -144,12 +139,12 @@ Bevor Sie die Vorgehensweisen in diesem Thema abschließen, müssen die folgende
 3. Wählen Sie im Feld **Service-Umgebung** eine Service-Umgebung aus.
 4. Klicken Sie auf **Speichern** und schließen Sie die Seite.
 
-## <a name="set-up-the-electronic-invoicing-add-on-integration-in-finance-and-supply-chain-management"></a>Die Add-On-Integration für die elektronische Rechnungsstellung in Finance oder Supply Chain Management einrichten
+## <a name="set-up-electronic-invoicing-integration-in-finance-and-supply-chain-management"></a>Einrichten der Integration für die elektronische Rechnungsstellung in Finance und Supply Chain Management
 
-### <a name="turn-on-the-electronic-invoicing-add-on-integration-feature"></a>Aktivieren Sie die Integrationsfunktion für das Add-On für die elektronische Rechnungsstellung.
+### <a name="turn-on-the-electronic-invoicing-integration-feature"></a>Aktivieren der Integrationsfunktion für die elektronische Rechnungsstellung
 
 1. Melden Sie sich bei Ihrer Finance- oder Supply Chain Management-Instanz an.
-2. Suchen Sie im Arbeitsbereich **Funktionsverwaltung** nach der Funktion **Integration des Add-Ons für die elektronische Rechnungsstellung**. Wenn diese Funktion nicht auf der Seite angezeigt wird, wählen Sie **Nach Updates suchen** aus.
+2. Suchen Sie im Arbeitsbereich **Funktionsverwaltung** nach der Funktion **Integration für die elektronische Rechnungsstellung**. Wenn diese Funktion nicht auf der Seite angezeigt wird, wählen Sie **Nach Updates suchen** aus.
 3. Wählen Sie die Funktion aus und wählen Sie dann **Jetzt aktivieren** aus.
 
 ### <a name="set-up-the-service-endpoint-url"></a>Einrichten der Service-Endpunkt-URL
@@ -164,8 +159,18 @@ Bevor Sie die Vorgehensweisen in diesem Thema abschließen, müssen die folgende
     | Norden, Europa                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
     | Westen, Europa                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
-3. Geben Sie im Feld **Umgebung** den Namen der Add-On-Umgebung für die elektronische Rechnungsstellung ein.
+3. Geben Sie im Feld **Umgebung** den Namen der Service-Umgebung ein, die in der elektronischen Rechnungsstellung veröffentlicht wurde.
 4. Klicken Sie auf **Speichern** und schließen Sie die Seite.
 
+### <a name="enable-flighting-keys"></a>Flighting-Schlüssel aktivieren
+
+Aktivieren Sie Flighting-Schlüssel für Microsoft Dynamics 365 Finance- oder Microsoft Dynamics 365 Supply Chain Management-Versionen 10.0.17 oder früher. 
+1. Führen Sie den folgenden SQL-Befehl aus:
+
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)
+    
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('ElectronicInvoicingServiceIntegrationFeature', 1)
+
+2. Führen Sie einen IISreset-Befehl für alle AOS aus.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
