@@ -2,7 +2,6 @@
 title: Probleme bezüglich der Lösungssensitivität beheben
 description: Dieses Thema enthält Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der Lösungserkennung zusammenhängen.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
@@ -17,14 +16,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f9e02a6a5afe965a1707f0b04e1b4daedd4ec1df
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 86dd8803f7560ea337f2452e9722fe0151466daf
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566788"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748872"
 ---
-# <a name="troubleshoot-issues-related-to-solution-awareness"></a><span data-ttu-id="cd356-103">Probleme bezüglich der Lösungssensitivität beheben</span><span class="sxs-lookup"><span data-stu-id="cd356-103">Troubleshoot issues related to solution awareness</span></span>
+# <a name="troubleshoot-issues-related-to-solution-awareness"></a><span data-ttu-id="db995-103">Probleme bezüglich der Lösungssensitivität beheben</span><span class="sxs-lookup"><span data-stu-id="db995-103">Troubleshoot issues related to solution awareness</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
@@ -32,18 +31,18 @@ ms.locfileid: "5566788"
 
 
 
-<span data-ttu-id="cd356-104">Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Dataverse.</span><span class="sxs-lookup"><span data-stu-id="cd356-104">This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.</span></span> <span data-ttu-id="cd356-105">Dieses Thema enthält besonders Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der Lösungserkennung zusammenhängen.</span><span class="sxs-lookup"><span data-stu-id="cd356-105">Specifically, it provides information that can help you fix issues that are related to solution awareness.</span></span>
+<span data-ttu-id="db995-104">Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Dataverse.</span><span class="sxs-lookup"><span data-stu-id="db995-104">This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.</span></span> <span data-ttu-id="db995-105">Dieses Thema enthält besonders Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der Lösungserkennung zusammenhängen.</span><span class="sxs-lookup"><span data-stu-id="db995-105">Specifically, it provides information that can help you fix issues that are related to solution awareness.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="cd356-106">Einige der in diesem Thema behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD) Anmeldeinformationen des Mandantenadministrators.</span><span class="sxs-lookup"><span data-stu-id="cd356-106">Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials.</span></span> <span data-ttu-id="cd356-107">Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="cd356-107">The section for each issue explains whether a specific role or credentials are required.</span></span>
+> <span data-ttu-id="db995-106">Einige der in diesem Thema behandelten Probleme erfordern möglicherweise entweder die Systemadministratorrolle oder Microsoft Azure Active Directory (Azure AD) Anmeldeinformationen des Mandantenadministrators.</span><span class="sxs-lookup"><span data-stu-id="db995-106">Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials.</span></span> <span data-ttu-id="db995-107">Im Abschnitt zu jedem Problem wird erläutert, ob eine bestimmte Rolle oder Anmeldeinformationen erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="db995-107">The section for each issue explains whether a specific role or credentials are required.</span></span>
 
-## <a name="error-on-the-dual-write-page"></a><span data-ttu-id="cd356-108">Fehler auf der Seite Duales Screiben</span><span class="sxs-lookup"><span data-stu-id="cd356-108">Error on the Dual-write page</span></span>
+## <a name="error-on-the-dual-write-page"></a><span data-ttu-id="db995-108">Fehler auf der Seite Duales Screiben</span><span class="sxs-lookup"><span data-stu-id="db995-108">Error on the Dual-write page</span></span>
 
-<span data-ttu-id="cd356-109">Auf der Seite **Duales Schreiben** wird möglicherweise eine Fehlermeldung angezeigt, die dem folgenden Beispiel ähnelt:</span><span class="sxs-lookup"><span data-stu-id="cd356-109">On the **Dual-write** page, you might receive an error message that resembles the following example:</span></span>
+<span data-ttu-id="db995-109">Auf der Seite **Duales Schreiben** wird möglicherweise eine Fehlermeldung angezeigt, die dem folgenden Beispiel ähnelt:</span><span class="sxs-lookup"><span data-stu-id="db995-109">On the **Dual-write** page, you might receive an error message that resembles the following example:</span></span>
 
-<span data-ttu-id="cd356-110">*Die Entität mit dem Namen 'msdyn\_dualwriteentitymap 'mit namemapping =' Logical 'wurde im MetadataCache nicht gefunden.*</span><span class="sxs-lookup"><span data-stu-id="cd356-110">*The entity with a name 'msdyn\_dualwriteentitymap' with namemapping='Logical' was not found in the MetadataCache.*</span></span>
+<span data-ttu-id="db995-110">*Die Entität mit dem Namen 'msdyn\_dualwriteentitymap 'mit namemapping =' Logical 'wurde im MetadataCache nicht gefunden.*</span><span class="sxs-lookup"><span data-stu-id="db995-110">*The entity with a name 'msdyn\_dualwriteentitymap' with namemapping='Logical' was not found in the MetadataCache.*</span></span>
 
-<span data-ttu-id="cd356-111">Stellen Sie zur Behebung des Problems sicher, dass die Dual-Write-Core-Lösung in Dataverse instaliert ist.</span><span class="sxs-lookup"><span data-stu-id="cd356-111">To fix the issue, make sure that the dual-write core solution is installed in Dataverse.</span></span> <span data-ttu-id="cd356-112">Die Dual-Write-Core-Lösung ist eine Voraussetzung für das Lösungsbewusstsein.</span><span class="sxs-lookup"><span data-stu-id="cd356-112">The dual-write core solution is a prerequisite for solution awareness.</span></span>
+<span data-ttu-id="db995-111">Stellen Sie zur Behebung des Problems sicher, dass die Dual-Write-Core-Lösung in Dataverse instaliert ist.</span><span class="sxs-lookup"><span data-stu-id="db995-111">To fix the issue, make sure that the dual-write core solution is installed in Dataverse.</span></span> <span data-ttu-id="db995-112">Die Dual-Write-Core-Lösung ist eine Voraussetzung für das Lösungsbewusstsein.</span><span class="sxs-lookup"><span data-stu-id="db995-112">The dual-write core solution is a prerequisite for solution awareness.</span></span>
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
