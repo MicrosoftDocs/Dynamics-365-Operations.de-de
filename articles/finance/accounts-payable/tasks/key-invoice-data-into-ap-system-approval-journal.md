@@ -2,11 +2,9 @@
 title: Rechnungsdaten mit einer Genehmigungserfassung in Kreditorenkonten eingeben
 description: In diesem Thema wird erläutert, wie das Rechnungsregister verwendet wird, um Rechnungen zu erstellen und anschließend die Genehmigungserfassung verwendet wird, um die Ausgabenkonten zu aktualisieren.
 author: abruer
-manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransInvoiceRegister, HcmWorkerLookUp, LedgerJournalTransApprove, LedgerJournalTransApproveFetchVouchers, LedgerTransVoucher
 audience: Application User
@@ -15,43 +13,43 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0fee32d9fd1ab89b1a8cedb2e1965674586d4e7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d01c04fcf707109cd7bc6f056846506914e96dec
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227183"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838884"
 ---
-# <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a><span data-ttu-id="66da4-103">Rechnungsdaten mit einer Genehmigungserfassung in Kreditorenkonten eingeben</span><span class="sxs-lookup"><span data-stu-id="66da4-103">Key invoice data into accounts payable using an approval journal</span></span>
+# <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a><span data-ttu-id="a6073-103">Rechnungsdaten mit einer Genehmigungserfassung in Kreditorenkonten eingeben</span><span class="sxs-lookup"><span data-stu-id="a6073-103">Key invoice data into accounts payable using an approval journal</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="66da4-104">In diesem Thema wird erläutert, wie das Rechnungsregister verwendet wird, um Rechnungen zu erstellen und anschließend die Genehmigungserfassung verwendet wird, um die Ausgabenkonten zu aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="66da4-104">This topic explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts.</span></span>
+<span data-ttu-id="a6073-104">In diesem Thema wird erläutert, wie das Rechnungsregister verwendet wird, um Rechnungen zu erstellen und anschließend die Genehmigungserfassung verwendet wird, um die Ausgabenkonten zu aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="a6073-104">This topic explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts.</span></span>
 
-## <a name="create-and-post-and-invoice"></a><span data-ttu-id="66da4-105">Erstellen und buchen und fakturieren</span><span class="sxs-lookup"><span data-stu-id="66da4-105">Create and post and invoice</span></span>
-1. <span data-ttu-id="66da4-106">Wechseln Sie im Navigationsbereich zu **Module > Kreditoren > Rechnungen > Rechnungserfassung**.</span><span class="sxs-lookup"><span data-stu-id="66da4-106">In the navigation pan, go to **Modules > Accounts payable > Invoices > Invoice register**.</span></span>
-2. <span data-ttu-id="66da4-107">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="66da4-107">Select **New**.</span></span>
-3. <span data-ttu-id="66da4-108">Wählen Sie den Namen des Rechnungsregisters aus, den Sie benutzen möchten.</span><span class="sxs-lookup"><span data-stu-id="66da4-108">Select the name of the invoice register that you want to use.</span></span>
-4. <span data-ttu-id="66da4-109">Klicken Sie auf **Positionen**, um das Register zu öffnen und Ausgabenpositionen einzugeben.</span><span class="sxs-lookup"><span data-stu-id="66da4-109">Select **Lines** to open the register and enter expense lines.</span></span>
-5. <span data-ttu-id="66da4-110">Wählen Sie einen Kreditor aus.</span><span class="sxs-lookup"><span data-stu-id="66da4-110">Select a vendor.</span></span> <span data-ttu-id="66da4-111">Geben Sie beispielsweise `US-104` ein oder wählen Sie es aus.</span><span class="sxs-lookup"><span data-stu-id="66da4-111">For example, enter or select `US-104`.</span></span>
-6. <span data-ttu-id="66da4-112">Geben Sie im Feld **Rechnung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="66da4-112">In the **Invoice** field, type a value.</span></span>
-7. <span data-ttu-id="66da4-113">Geben Sie im Feld **Beschreibung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="66da4-113">In the **Description** field, type a value.</span></span>
-8. <span data-ttu-id="66da4-114">Geben Sie im Feld **Kredit** eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="66da4-114">In the **Credit** field, enter a number.</span></span>
-9. <span data-ttu-id="66da4-115">Wählen Sie im Feld **Genehmigt von** einen Genehmiger in der Dropdownliste aus.</span><span class="sxs-lookup"><span data-stu-id="66da4-115">In the **Approved by** field, select an approver from the drop-down menu.</span></span>
-10. <span data-ttu-id="66da4-116">Wählen Sie **Buchen** aus.</span><span class="sxs-lookup"><span data-stu-id="66da4-116">Select **Post**.</span></span>
+## <a name="create-and-post-and-invoice"></a><span data-ttu-id="a6073-105">Erstellen und buchen und fakturieren</span><span class="sxs-lookup"><span data-stu-id="a6073-105">Create and post and invoice</span></span>
+1. <span data-ttu-id="a6073-106">Wechseln Sie im Navigationsbereich zu **Module > Kreditoren > Rechnungen > Rechnungserfassung**.</span><span class="sxs-lookup"><span data-stu-id="a6073-106">In the navigation pan, go to **Modules > Accounts payable > Invoices > Invoice register**.</span></span>
+2. <span data-ttu-id="a6073-107">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="a6073-107">Select **New**.</span></span>
+3. <span data-ttu-id="a6073-108">Wählen Sie den Namen des Rechnungsregisters aus, den Sie benutzen möchten.</span><span class="sxs-lookup"><span data-stu-id="a6073-108">Select the name of the invoice register that you want to use.</span></span>
+4. <span data-ttu-id="a6073-109">Klicken Sie auf **Positionen**, um das Register zu öffnen und Ausgabenpositionen einzugeben.</span><span class="sxs-lookup"><span data-stu-id="a6073-109">Select **Lines** to open the register and enter expense lines.</span></span>
+5. <span data-ttu-id="a6073-110">Wählen Sie einen Kreditor aus.</span><span class="sxs-lookup"><span data-stu-id="a6073-110">Select a vendor.</span></span> <span data-ttu-id="a6073-111">Geben Sie beispielsweise `US-104` ein oder wählen Sie es aus.</span><span class="sxs-lookup"><span data-stu-id="a6073-111">For example, enter or select `US-104`.</span></span>
+6. <span data-ttu-id="a6073-112">Geben Sie im Feld **Rechnung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="a6073-112">In the **Invoice** field, type a value.</span></span>
+7. <span data-ttu-id="a6073-113">Geben Sie im Feld **Beschreibung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="a6073-113">In the **Description** field, type a value.</span></span>
+8. <span data-ttu-id="a6073-114">Geben Sie im Feld **Kredit** eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="a6073-114">In the **Credit** field, enter a number.</span></span>
+9. <span data-ttu-id="a6073-115">Wählen Sie im Feld **Genehmigt von** einen Genehmiger in der Dropdownliste aus.</span><span class="sxs-lookup"><span data-stu-id="a6073-115">In the **Approved by** field, select an approver from the drop-down menu.</span></span>
+10. <span data-ttu-id="a6073-116">Wählen Sie **Buchen** aus.</span><span class="sxs-lookup"><span data-stu-id="a6073-116">Select **Post**.</span></span>
 
-## <a name="approve-an-invoice"></a><span data-ttu-id="66da4-117">Genehmigen einer Rechnung</span><span class="sxs-lookup"><span data-stu-id="66da4-117">Approve an invoice</span></span>
-1. <span data-ttu-id="66da4-118">Wechseln Sie im Navigationsbereich zu **Module > Kreditoren > Rechnungen > Rechnungsgenehmigung**.</span><span class="sxs-lookup"><span data-stu-id="66da4-118">In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice approval**.</span></span>
-2. <span data-ttu-id="66da4-119">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="66da4-119">Select **New**.</span></span>
-3. <span data-ttu-id="66da4-120">Wählen Sie den Namen der Rechnungsgenehmigungserfassung aus, den Sie benutzen möchten.</span><span class="sxs-lookup"><span data-stu-id="66da4-120">Select the name of the invoice approval journal that you want to use.</span></span>
-4. <span data-ttu-id="66da4-121">Klicken Sie auf **Positionen**, um eine Seite anzuzeigen, auf der Sie die Rechnungen auswählen können, die Sie genehmigen möchten.</span><span class="sxs-lookup"><span data-stu-id="66da4-121">Select **Lines** to display a page where you will be able to select the invoices that you want to approve.</span></span>
-5. <span data-ttu-id="66da4-122">Wählen Sie **Belege suchen** aus, um alle Rechnungen anzuzeigen, die zur Genehmigung bereit sind.</span><span class="sxs-lookup"><span data-stu-id="66da4-122">Select **Find Vouchers** to display all of the invoices that are ready for approval.</span></span>
-6. <span data-ttu-id="66da4-123">Markieren Sie die Rechnung, die Sie erstellt haben, klicken Sie **Auswählen**.</span><span class="sxs-lookup"><span data-stu-id="66da4-123">Mark the invoice that you created, then click **Select**.</span></span> <span data-ttu-id="66da4-124">Die Belege, die Sie oben ausgewählt haben, werden auf diese Liste verschoben, nachdem Sie sie auswählen.</span><span class="sxs-lookup"><span data-stu-id="66da4-124">The vouchers that you selected above are moved to this list after you select them.</span></span>  
-7. <span data-ttu-id="66da4-125">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="66da4-125">Select **OK**.</span></span>
-8. <span data-ttu-id="66da4-126">Wählen Sie das Feld **Kontonummern**, um ein Ausgabenkonto der Rechnung hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="66da4-126">Select the **account number** field to add an expense account to the invoice.</span></span>
-9. <span data-ttu-id="66da4-127">Geben Sie eine Kontonummer ein und bewegen Sie die Tabulatortaste vom Feld weg.</span><span class="sxs-lookup"><span data-stu-id="66da4-127">Enter an account number and tab off of the field.</span></span> <span data-ttu-id="66da4-128">Geben Sie beispielsweise `600120` ein.</span><span class="sxs-lookup"><span data-stu-id="66da4-128">For example, enter `600120`.</span></span>
-10. <span data-ttu-id="66da4-129">Wählen Sie **Buchen** aus.</span><span class="sxs-lookup"><span data-stu-id="66da4-129">Select **Post**.</span></span>
-11. <span data-ttu-id="66da4-130">Wählen Sie **Beleg** aus, um die Einträge anzuzeigen, die gebucht wurden.</span><span class="sxs-lookup"><span data-stu-id="66da4-130">Select **Voucher** to view the entries that were posted.</span></span> <span data-ttu-id="66da4-131">Das Konto "Rechnung mit ausstehender Genehmigung" wird zurückgesetzt und durch das tatsächliche Ausgabenkonto ersetzt.</span><span class="sxs-lookup"><span data-stu-id="66da4-131">The Invoice Pending Approval account is reversed and replaced with the actual expense account.</span></span>  
+## <a name="approve-an-invoice"></a><span data-ttu-id="a6073-117">Genehmigen einer Rechnung</span><span class="sxs-lookup"><span data-stu-id="a6073-117">Approve an invoice</span></span>
+1. <span data-ttu-id="a6073-118">Wechseln Sie im Navigationsbereich zu **Module > Kreditoren > Rechnungen > Rechnungsgenehmigung**.</span><span class="sxs-lookup"><span data-stu-id="a6073-118">In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice approval**.</span></span>
+2. <span data-ttu-id="a6073-119">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="a6073-119">Select **New**.</span></span>
+3. <span data-ttu-id="a6073-120">Wählen Sie den Namen der Rechnungsgenehmigungserfassung aus, den Sie benutzen möchten.</span><span class="sxs-lookup"><span data-stu-id="a6073-120">Select the name of the invoice approval journal that you want to use.</span></span>
+4. <span data-ttu-id="a6073-121">Klicken Sie auf **Positionen**, um eine Seite anzuzeigen, auf der Sie die Rechnungen auswählen können, die Sie genehmigen möchten.</span><span class="sxs-lookup"><span data-stu-id="a6073-121">Select **Lines** to display a page where you will be able to select the invoices that you want to approve.</span></span>
+5. <span data-ttu-id="a6073-122">Wählen Sie **Belege suchen** aus, um alle Rechnungen anzuzeigen, die zur Genehmigung bereit sind.</span><span class="sxs-lookup"><span data-stu-id="a6073-122">Select **Find Vouchers** to display all of the invoices that are ready for approval.</span></span>
+6. <span data-ttu-id="a6073-123">Markieren Sie die Rechnung, die Sie erstellt haben, klicken Sie **Auswählen**.</span><span class="sxs-lookup"><span data-stu-id="a6073-123">Mark the invoice that you created, then click **Select**.</span></span> <span data-ttu-id="a6073-124">Die Belege, die Sie oben ausgewählt haben, werden auf diese Liste verschoben, nachdem Sie sie auswählen.</span><span class="sxs-lookup"><span data-stu-id="a6073-124">The vouchers that you selected above are moved to this list after you select them.</span></span>  
+7. <span data-ttu-id="a6073-125">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="a6073-125">Select **OK**.</span></span>
+8. <span data-ttu-id="a6073-126">Wählen Sie das Feld **Kontonummern**, um ein Ausgabenkonto der Rechnung hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="a6073-126">Select the **account number** field to add an expense account to the invoice.</span></span>
+9. <span data-ttu-id="a6073-127">Geben Sie eine Kontonummer ein und bewegen Sie die Tabulatortaste vom Feld weg.</span><span class="sxs-lookup"><span data-stu-id="a6073-127">Enter an account number and tab off of the field.</span></span> <span data-ttu-id="a6073-128">Geben Sie beispielsweise `600120` ein.</span><span class="sxs-lookup"><span data-stu-id="a6073-128">For example, enter `600120`.</span></span>
+10. <span data-ttu-id="a6073-129">Wählen Sie **Buchen** aus.</span><span class="sxs-lookup"><span data-stu-id="a6073-129">Select **Post**.</span></span>
+11. <span data-ttu-id="a6073-130">Wählen Sie **Beleg** aus, um die Einträge anzuzeigen, die gebucht wurden.</span><span class="sxs-lookup"><span data-stu-id="a6073-130">Select **Voucher** to view the entries that were posted.</span></span> <span data-ttu-id="a6073-131">Das Konto "Rechnung mit ausstehender Genehmigung" wird zurückgesetzt und durch das tatsächliche Ausgabenkonto ersetzt.</span><span class="sxs-lookup"><span data-stu-id="a6073-131">The Invoice Pending Approval account is reversed and replaced with the actual expense account.</span></span>  
 
 
 
