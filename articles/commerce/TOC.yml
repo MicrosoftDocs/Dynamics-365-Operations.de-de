@@ -280,7 +280,7 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Retail Hardware Station – Konfiguration und Installation
                   href: retail-hardware-station-configuration-installation.md
-                - name: Massenbereitstellung der Self-Service-Komponenten
+                - name: Massenbereitstellung veralteter Self-Service-Komponenten
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Commerce-Komponentenereignisse für Diagnose und Problembehandlung
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
@@ -1056,6 +1056,16 @@
                       href: author-header-module.md
                     - name: Fußzeilenmodul
                       href: author-footer-module.md
+                - name: 'Seiten-, Metadaten- und Skriptmodule'
+                  items:
+                    - name: Standardseitenmodul
+                      href: default-page-module.md
+                    - name: Seitenzusammenfassungsmodule
+                      href: page-summary-module.md
+                    - name: Metatags-Modul
+                      href: metatags-module.md
+                    - name: Externe und Inlineskriptmodule
+                      href: script-module.md
                 - name: Produktdetailseitenmodule
                   items:
                     - name: Kauffeldmodul
