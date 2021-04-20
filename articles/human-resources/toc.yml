@@ -5,6 +5,8 @@
       items:
         - name: Welche Neuerungen oder Änderungen bietet Human Resources?
           href: hr-admin-whats-new.md
+        - name: "5.\_April\_2021"
+          href: hr-whats-new-2021-04-05.md
         - name: "22.\_März\_2021"
           href: hr-whats-new-2021-03-22.md
         - name: 8. März 2021
@@ -305,6 +307,8 @@
               href: hr-admin-integration-choose-technology.md
             - name: Dataverse-Integration konfigurieren
               href: hr-admin-integration-common-data-service.md
+            - name: Virtuelle Dataverse-Tabellen konfigurieren
+              href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: Integration mit Finance konfigurieren
               href: hr-admin-integration-finance.md
             - name: Integration mit Dayforce konfigurieren
@@ -321,6 +325,12 @@
                   href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Problembehandlung bei der Office-Integration
                   href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Fehlerbehebung bei der Entwicklung mit virtuellen Dataverse-Tabellen
+          items:
+            - name: Virtuelle Dataverse-Tabellenabfragen optimieren
+              href: hr-developer-optimize-virtual-table-queries.md
+            - name: Virtuelle Human Resources-Tabellen – Häufig gestellte Fragen
+              href: hr-admin-virtual-entity-faq.md
         - name: Referenz zur Entitäts-API
           items:
             - name: Authentifizierung
@@ -417,8 +427,24 @@
                   href: hr-admin-integration-ats-api-screening-frequency.md
                 - name: Prüffrequenz erzeugen aus
                   href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
-                - name: Art der Qualifikationsstufe
+                - name: Typ der Qualifikationsstufe
                   href: hr-admin-integration-ats-api-skill-level-type.md
+        - name: Lohnintegrations-API
+          items:
+            - name: Einführung
+              href: hr-admin-integration-payroll-api-introduction.md
+            - name: Lohnentitäten generieren und überprüfen
+              href: hr-admin-integration-payroll-api-generate-review-entities.md
+            - name: Mitarbeiter der Lohnbuchhaltung
+              href: hr-admin-integration-payroll-api-payroll-employee.md
+            - name: Lohn – Adresse der Arbeitskraft
+              href: hr-admin-integration-payroll-api-payroll-worker-address.md
+            - name: Fester Vergütungsplan für Lohnabrechnung
+              href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+            - name: Lohnpositions-Einzelvorgang
+              href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: Lohnposition
+              href: hr-admin-integration-payroll-api-payroll-position.md
     - name: Benutzerhandbuch
       items:
         - name: Übersicht
