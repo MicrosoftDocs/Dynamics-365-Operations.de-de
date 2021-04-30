@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dad97e13624449d287ded74e7e25f94eb0dbde3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f571f80330d2cc7858ef11271b0466d71aa9709c
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838321"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908010"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Verzögerte Verarbeitung der Lagerarbeit
 
@@ -28,7 +28,7 @@ In diesem Thema werden die Funktionen beschrieben, die die verzögerte Verarbeit
 
 Mit der verzögerten Verarbeitungsfunktion können Lagerarbeiter weiterhin andere Aufgaben erledigen, während im Hintergrund der Einlagerungsvorgang verarbeitet wird. Die verzögerte Verarbeitung ist hilfreich, wenn zahlreiche Arbeitspositionen verarbeitet werden müssen und die Arbeitskraft diese Arbeit asynchron verarbeiten lassen kann. Sie ist außerdem nützlich, wenn es beim Server zu spontanen oder ungeplanten Zunahmen bei der Verarbeitungszeit kommen kann und sich diese erhöhte Verarbeitungszeit auf die Produktivität des Benutzers auswirken kann.
 
-Eine Hintergrundverarbeitung wird durch Verwendung des SysOperations-Frameworks erreicht. Weitere Informationen finden Sie unter [Übersicht über das SysOperation-Framework](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
+Eine Hintergrundverarbeitung wird durch Verwendung des SysOperations-Frameworks erreicht. Weitere Informationen finden Sie unter [Übersicht über das SysOperation-Framework](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## <a name="configuring-the-work-processing-policies"></a>Konfigurieren der Arbeitsverarbeitungsrichtlinien
 

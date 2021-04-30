@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ce06a0ce4f2a308e1917ac2c7cbc66f0494a2ec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8d7f32c5d3d29be8d1d2742c4017c1719cbd47a8
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811509"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897331"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Verweise auf Originalrechnungen in Gutschriften
 
@@ -30,7 +30,7 @@ In einigen Ländern und Regionen ist es gesetzlich vorgeschrieben, dass gedruckt
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Aktivieren Sie im **Funktionsverwaltung**-Arbeitsbereich die Funktion **Layout für die Fakturierung von Gutschriften auf Verkaufs- und Projektrechnungsberichte**. Weitere Informationen finden Sie unter [Funktionsverwaltung – Übersicht](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- Aktivieren Sie im **Funktionsverwaltung**-Arbeitsbereich die Funktion **Layout für die Fakturierung von Gutschriften auf Verkaufs- und Projektrechnungsberichte**. Weitere Informationen finden Sie unter [Funktionsverwaltung – Übersicht](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Die druckbaren Formate der erforderlichen Dokumente müssen in der Druckverwaltung konfiguriert werden.
 
 Die in diesem Thema beschriebene Funktionalität gilt für die folgenden Dokumente:

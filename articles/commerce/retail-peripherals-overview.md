@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d2cbab3177756fbf5df4f07350a6449f0b22e028
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
+ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791946"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5857272"
 ---
 # <a name="peripherals"></a>Peripheriegeräte
 
@@ -137,11 +137,14 @@ Wenn OPOS-Steuerungen für Windows-Drucker verfügbar sind, sollte der Drucker t
 
 ### <a name="universal-windows-platform"></a>Universal Windows Platform
 
-UWP steht im Falle von Peripheriegeräten in Zusammenhang mit der Windows-Unterstützung für Plug-and-Play-Geräte. Wenn ein Plug&Play-Gerät an eine Windows-Betriebssystemversion verbunden ist, in der diese Art des Geräts unterstützt, ist kein Treiber erforderlich, damit das Gerät verwendet werden kann. Wenn beispielsweise Windows ein Bluetooth-Lautsprechergerät erkennt weiß das Betriebssystem das Gerät, dass den Klassentyp **Lautsprecher** hat. Daher behandelt es dieses Gerät es als Lautsprecher. Es sind keine zusätzlichen Einrichtung erforderlich. Im Falle von POS-Geräten können viele USB-Geräte verbunden werden, und Windows werden sie als Eingabegeräte (HIDs) erkannt. Allerdings ist es möglicherweise nicht in der Lage, die Funktion auf bestimmen Geräten zu erkennen, da das Gerät nicht die Klasse oder den Typ angibt. In Windows 10 sind Einheitenklassen für Strichcodescanner MSR und hinzugefügt. Wenn ein Gerät unter Windows 10 sich als Gerät aus einer der Klassen deklariert, hört Windows auf Ereignisse vom Gerät zu den entsprechenden Uhrzeiten. Modern POS unterstützt UWP MSR und Scanner. Wenn die Eingabe über dieser Geräte bereit ist, und ein RFID-Gerät, das zu einer der Klassen gehört vrbunden ist, kann das Gerät verwendet werden. Wenn beispielsweise ein UWP-Barcodescanner in einem Windows 10-Computer eingesteckt wird, und Strichcodeanmeldung für Modern POS konfiguriert ist, wird Strichcodescanner aktiv im Feld Anmeldungsbildschirm. Es sind keine zusätzlichen Einrichtung erforderlich. Zusätzliche Klassen von Geräten für UWP werden Windows hinzugefügt werden. Diese Klassen beinhalten Klassen für Kassenladen und Bondrucker. Unterstützung für diese neuen Einheitenklassen für Modern POS ist aussteht.
+UWP steht im Falle von Peripheriegeräten in Zusammenhang mit der Windows-Unterstützung für Plug-and-Play-Geräte. Wenn ein Plug-and-Play-Gerät an eine Windows-Betriebssystemversion verbunden ist, in der diese Art des Geräts unterstützt, ist kein Treiber erforderlich, damit das Gerät verwendet werden kann. Wenn beispielsweise Windows ein Bluetooth-Lautsprechergerät erkennt weiß das Betriebssystem das Gerät, dass den Klassentyp **Lautsprecher** hat. Daher behandelt es dieses Gerät es als Lautsprecher. Es sind keine zusätzlichen Einrichtung erforderlich. Im Falle von POS-Geräten können viele USB-Geräte verbunden werden, und Windows werden sie als Eingabegeräte (HIDs) erkannt. Allerdings ist es möglicherweise nicht in der Lage, die Funktion auf bestimmen Geräten zu erkennen, da das Gerät nicht die Klasse oder den Typ angibt. In Windows 10 sind Einheitenklassen für Strichcodescanner MSR und hinzugefügt. Wenn ein Gerät unter Windows 10 sich als Gerät aus einer der Klassen deklariert, hört Windows auf Ereignisse vom Gerät zu den entsprechenden Uhrzeiten. Modern POS unterstützt UWP MSR und Scanner. Wenn die Eingabe über dieser Geräte bereit ist, und ein RFID-Gerät, das zu einer der Klassen gehört vrbunden ist, kann das Gerät verwendet werden. Wenn beispielsweise ein UWP-Barcodescanner in einem Windows 10-Computer eingesteckt wird, und Strichcodeanmeldung für Modern POS konfiguriert ist, wird Strichcodescanner aktiv im Feld Anmeldungsbildschirm. Es sind keine zusätzlichen Einrichtung erforderlich. Zusätzliche Klassen von Geräten für UWP werden Windows hinzugefügt werden. Diese Klassen beinhalten Klassen für Kassenladen und Bondrucker. Unterstützung für diese neuen Einheitenklassen für Modern POS ist aussteht.
 
 ### <a name="keyboard-wedge"></a>Tastaturweiche
 
 Tastaturweichengeräte senden Daten auf den Computer, als ob diese Daten auf der Tastatur eingegeben wurden. Somit erhält standardmäßig das Feld, das am POS aktiv ist, die Daten, die eingelesen werden. In einigen Fällen kann dieses Verhalten zum falschen Typ der Daten führen, die in das falsche Feld gescannt werden. Beispielsweise könnte ein Strichcode in ein Feld eingefügt werden, das sich möglicherweise auf Kreditkartendaten bezieht. In vielen Fällen legt die Logik am POS fest, ob die gescannten Daten ein Strichcode oder ein Kartendaten sind. Daher werden die Daten korrekt bearbeitet. Wenn Geräte jedoch als OPOS anstelle von Tastaturweichengeräten eingerichtet werden, gibt es mehr Kontrolle darüber, wie die Daten von diesen Geräten verwendet werden können, da mehr über das Gerät „bekannt“ ist, von dem die Daten stammen. Beispielsweise werden Daten von einem Strichcodescanner automatisch als Strichcode erkannt, und der entsprechende Datensatz in der Datenbank ist einfach und schneller als, wenn eine generische Suche nach einer Zeichenfolge verwendet wurden, z.B. im Falle der Tastaturweichen.
+
+> [!NOTE]
+> Wenn am POS Keyboard-Wedge-Scanner verwendet werden, müssen sie so programmiert sein, dass sie einen Wagenrücklauf oder ein **Eingeben**-Ereignis nach dem zuletzt gescannten Zeichen senden. Wenn diese Konfiguration nicht vorgenommen wird, funktionieren Keyboard-Wedge-Scanner nicht ordnungsgemäß. Weitere Informationen zum Anfügen des Wagenrücklaufereignisses finden Sie in der Dokumentation Ihres Geräteherstellers.  
 
 ### <a name="native-printer"></a>Systemeigener Drucker
 

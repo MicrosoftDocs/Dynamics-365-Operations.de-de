@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838393"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911295"
 ---
 # <a name="work-with-location-directives"></a>Arbeiten mit Lagerplatzrichtlinien
 
@@ -44,8 +44,8 @@ Bevor Sie eine Standortanweisung erstellen können, müssen Sie diese Schritte a
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Lagerort \> Lagerorte**.
 1. Erstellen Sie einen Lagerort.
 1. Setzen Sie auf dem Inforegister **Lagerort** die Option **Lagerortverwaltungsprozesse verwenden** auf *Ja*.
-1. Erstellen Sie Lagerplätze, Lagerplatztypen, Lagerplatzprofile und Lagerplatzformate. Weitere Informationen finden Sie unter [Konfigurieren von Standorten in einem WMS-aktivierten Lagerort](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
-1. Erstellen Sie Standorte, Zonen und Zonengruppen. Weitere Informationen finden Sie unter [Einrichten eines Lagerorts](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) und [Konfigurieren von Standorten an einem WMS-aktivierten Lagerort](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Erstellen Sie Lagerplätze, Lagerplatztypen, Lagerplatzprofile und Lagerplatzformate. Weitere Informationen finden Sie unter [Konfigurieren von Standorten in einem WMS-aktivierten Lagerort](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Erstellen Sie Standorte, Zonen und Zonengruppen. Weitere Informationen finden Sie unter [Einrichten eines Lagerorts](../../commerce/channels-setup-warehouse.md) und [Konfigurieren von Standorten an einem WMS-aktivierten Lagerort](./tasks/configure-locations-wms-enabled-warehouse.md).
 
 ## <a name="work-order-types-for-location-directives"></a>Arbeitsauftragstypen für Lagerplatzrichtlinien
 
@@ -143,7 +143,7 @@ Die Felder auf dem Inforegister **Lagerplatzrichtlinien** sind spezifisch für d
 - **Richtliniencode** - Wählen Sie den Richtliniencode aus, der mit einer Arbeits- oder Wiederbeschaffungsvorlage verknüpft werden soll. Auf der Seite **Richtliniencode** können Sie neue Codes erstellen, die verwendet werden können, um Arbeitsvorlagen oder Wiederbeschaffungsvorlagen mit Lagerplatzrichtlinien zu verbinden. Richtliniencodes können auch verwendet werden, um eine Verbindung zwischen einer beliebigen Zeile der Arbeitsvorlage und einer Lagerplatzrichtlinie (z. B. dem Hallentor oder dem Bühnenstandort) herzustellen.
 
     > [!TIP]
-    > Wenn ein Richtlinien-Code festgelegt ist, sucht das System die Lagerplatzrichtlinien nicht nach der Sequenznummer, wenn Arbeit generiert werden muss. Stattdessen wird es nach dem Code der Richtlinie suchen. Auf diese Weise können Sie den Lagerplatz, der für einen bestimmten Schritt in einer Arbeitsvorlage verwendet wird, genauer bestimmen, z. B. den Schritt zum Bereitstellen der Materialien.
+    > Wenn ein Richtlinien-Code festgelegt ist, sucht das System die Lagerplatzrichtlinien nicht nach der Sequenznummer, wenn Arbeit generiert werden muss. Stattdessen wird es nach dem Code der Richtlinie suchen. Auf diese Weise können Sie die Lagerplatzrichtlinie, die für einen bestimmten Schritt in einer Arbeitsvorlage verwendet wird, genauer bestimmen, z. B. den Schritt zum Bereitstellen der Materialien.
 
 - **Mehrere SKU** - Legen Sie diese Option auf *Ja* fest, damit mehrere stockkeeping units (SKUs) auf einem Lagerplatz verwendet werden können. Zum Beispiel müssen mehrere SKUs für den Lagerplatz „Hallentor“ aktiviert werden. Wenn Sie mehrere SKUs aktivieren, wird Ihr eingelagerter Lagerplatz wie erwartet in Arbeit angegeben. Der Lagerplatz kann jedoch nur ein Einlagern mehrerer Elemente verarbeiten (wenn die Arbeit verschiedene SKUs enthält, die entnommen und eingelagert werden müssen). Ein Einlagern einer einzelnen SKU ist nicht möglich. Wenn Sie diese Option auf *Nein* festlegen, wird Ihr Lagerplatz nur angegeben, wenn Ihr Auftrag nur eine Art von SKU enthält.
 
@@ -198,7 +198,7 @@ Verwenden Sie das Inforegister **Zeilen**, um Bedingungen für die Anwendung der
     1. Wählen Sie auf dem Inforegister **Zeilen** die Schaltfläche **Einschränken nach Einheit** in der Werkzeugleiste. (Diese Schaltfläche wird erst verfügbar, nachdem Sie das Kontrollkästchen **Einschränken nach Einheit** auf der Zeile aktiviert und dann **Speichern** gewählt haben).
     1. Wählen Sie auf der Seite **Beschränken nach Einheiten** im Feld **Einheit** die Maßeinheit aus, nach der Sie für die Prozesse des Entnehmens und Einlagerns beschränken wollen.
 
-- **Aufrunden auf Einheit** - Dieses Feld arbeitet zusammen mit dem Kontrollkästchen **Beschränken nach Einheit**. Wenn z.B. **Beschränken nach Einheit** und **Aufrunden auf Einheit** in der Zeile Lagerplatzrichtlinie ausgewählt sind, soll die Arbeit, die aus der Richtlinie für die Rohmaterialkommissionierung erzeugt wird, auf ein Vielfaches der Handhabungseinheit aufgerundet werden, die auf der Seite **Beschränken nach Einheit** angegeben ist.
+- **Aufrunden auf Einheit** - Dieses Feld arbeitet zusammen mit dem Kontrollkästchen **Beschränken nach Einheit**. Wenn z. B. **Beschränken nach Einheit** und **Aufrunden auf Einheit** in der Zeile Lagerplatzrichtlinie ausgewählt sind, soll die Arbeit, die aus der Richtlinie für die Rohmaterialkommissionierung erzeugt wird, auf ein Vielfaches der Handhabungseinheit aufgerundet werden, die auf der Seite **Beschränken nach Einheit** angegeben ist.
 
     > [!NOTE]
     > Diese **Aufrunden auf Einheit**-Einrichtung funktioniert nur für den Arbeitsauftragstyp *Rohstoffkommissionierung* und nur für Lagerplatzrichtlinien, bei denen das Feld **Arbeitstyp** auf *Pick* festgelegt ist.
@@ -249,7 +249,7 @@ Für dieses Szenario müssen zwei Lagerplatzrichtlinien-Aktivitäten definiert w
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Wenn Sie Lagerplatzrichtlinien erstellt haben, können Sie jeden Richtliniencode zu einem Arbeitsvorlagencode zur Arbeitserstellung zuordnen. (Weitere Informationen finden Sie unter [Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).)
+Wenn Sie Lagerplatzrichtlinien erstellt haben, können Sie jeden Richtliniencode zu einem Arbeitsvorlagencode zur Arbeitserstellung zuordnen. (Weitere Informationen finden Sie unter [Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien](./control-warehouse-location-directives.md).)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

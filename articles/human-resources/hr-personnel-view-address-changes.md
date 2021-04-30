@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5eca902ee7df7eb6835caf6f64b17f3f004b0776
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 387caeee3ba44e1fbc661e2c31915b75dd80c31e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802454"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892128"
 ---
 # <a name="view-and-manage-address-changes"></a>Adressänderungen anzeigen und verwalten
 
@@ -125,9 +125,9 @@ HR-Mitarbeiter können Adressänderungen über den Arbeitsbereich **Personalverw
 Wenn Sie die Kachel **Adressänderungen** auswählen, werden auf einer neuen Seite die Details aller Adressänderungen angezeigt. Sie können optional **Zukünftige Adressänderungen einschließen** in der oberen rechten Ecke auswählen, um Adressänderungen mit einem Datum in der Zukunft anzuzeigen.
 
 > [!NOTE]
-> Wenn Sie eine Warnung oder E-Mail über diese Adressänderungen erhalten möchten, können Sie eine neue Warnregel auf der Registerkarte **Optionen** im Aktionsbereich erstellen. Weitere Informationen zum Erstellen von Warnregeln finden Sie unter [Warnregeln erstellen](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
+> Wenn Sie eine Warnung oder E-Mail über diese Adressänderungen erhalten möchten, können Sie eine neue Warnregel auf der Registerkarte **Optionen** im Aktionsbereich erstellen. Weitere Informationen zum Erstellen von Warnregeln finden Sie unter [Warnregeln erstellen](../fin-ops-core/fin-ops/get-started/create-alerts.md).<br><br>
 
-> Wenn Sie einen Workflow für die Adressänderungen konfigurieren möchten, können Sie die auswählen Option **Extern senden** für Ihre Warnregel auswählen und dann Power Automate verwenden, um das Geschäftsereignis auszulösen und einen Workflow zu konfigurieren. Weitere Informationen finden Sie unter [Warnungen als Geschäftsereignisse](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+> Wenn Sie einen Workflow für die Adressänderungen konfigurieren möchten, können Sie die auswählen Option **Extern senden** für Ihre Warnregel auswählen und dann Power Automate verwenden, um das Geschäftsereignis auszulösen und einen Workflow zu konfigurieren. Weitere Informationen finden Sie unter [Warnungen als Geschäftsereignisse](../fin-ops-core/fin-ops/get-started/create-alerts.md#alerts-as-business-events).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

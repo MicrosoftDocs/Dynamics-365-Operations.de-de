@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e316cda9b9c5361c0a2837e7ed6c050e76cc39b9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8ddb74a2f0b6265c5be3c13a009211455ea862da
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793608"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893399"
 ---
 # <a name="dataverse-tables"></a>Dataverse-Tabellen
 
@@ -30,7 +30,7 @@ ms.locfileid: "5793608"
 Microsoft Dynamics 365 Human Resources verwendet Dataverse, um Erweiterbarkeit und Integrationsszenarien zu ermöglichen.
 
 > [!NOTE]
-> Human Resources-Entitäten entsprechen Dataverse-Tabellen. Weitere Informationen zu Dataverse (früher Common Data Service) und Terminologie-Updates finden Sie unter [Was ist Microsoft Dataverse ?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Human Resources-Entitäten entsprechen Dataverse-Tabellen. Weitere Informationen zu Dataverse (früher Common Data Service) und Terminologie-Updates finden Sie unter [Was ist Microsoft Dataverse ?](/powerapps/maker/data-platform/data-platform-intro)
 
 Die folgenden Dataverse-Tabellen sind basierend auf Human Resources-Entitäten verfügbar.
 
@@ -181,8 +181,8 @@ Die folgenden Dataverse-Tabellen sind basierend auf Human Resources-Entitäten v
 [Dataverse-Integration konfigurieren](hr-admin-integration-common-data-service.md)<br>
 [Virtuelle Dataverse-Tabellen konfigurieren](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [FAQ zu virtuellen Tabellen für Human Resources](hr-admin-virtual-entity-faq.md)<br>
-[Was ist Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminologie-Updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[Was ist Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminologie-Updates](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

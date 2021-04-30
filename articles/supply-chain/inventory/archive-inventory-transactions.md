@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: bacc27c1a9066892c51110d28ba9a2ad26bebe77
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b740da1a8a349f4a1a80b41bf717c388fd3db0c0
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839294"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881831"
 ---
 # <a name="archive-inventory-transactions"></a>Archivieren von Bestandstransaktionen
 
@@ -38,7 +38,7 @@ Wenn eine `itemId`- und `inventDimId`-Kombination nur eine Eingangs- oder Ausgan
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Funktion in Ihrem System aktivieren
 
-Wenn Ihr System noch nicht über die in diesem Thema beschriebenen Funktionen verfügt, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Archivierung von Transaktionen im Bestand* ein.
+Wenn Ihr System noch nicht über die in diesem Thema beschriebenen Funktionen verfügt, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Archivierung von Transaktionen im Bestand* ein. Beachten Sie, dass diese Funktion nach ihrer Aktivierung nicht mehr deaktiviert werden kann.
 
 ## <a name="things-to-consider-before-you-archive-inventory-transactions"></a>Dinge, die Sie beachten sollten, bevor Sie Transaktionen im Bestand archivieren
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 728984678d78cf626e2b30222f1d1e603e05d117
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ab4cd4a390782936a74977ac2aef3790aa8ac1af
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755057"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891694"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>EB-Konfigurationen mit Excel-Vorlagen wiederverwenden, um Berichte im Word-Format zu erstellen
 
@@ -90,7 +90,7 @@ Aktuell wird das Excel-Dokument als Vorlage verwendet, um die Ausgabe im OPENXML
 
 Sie können jetzt die Elemente des ausgewählten benutzerdefinierten XML-Teils **Bericht** den Inhaltssteuerelementen des Word-Dokuments zuordnen.
 
-Wenn Sie mit dem Entwurf von Word-Dokumenten als Formulare vertraut sind, die [Inhaltssteuerelemente](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) enthalten, die den Elementen von [benutzerdefinierten XML-Teilen](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) zugeordnet sind, führen Sie alle Schritte in der nächsten Prozedur aus, um das Dokument zu erstellen. Weitere Informationen finden Sie unter [Erstellen von Formularen, die in Word ausgefüllt oder gedruckt werden können](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Überspringen Sie anderenfalls die nächste Prozedur.
+Wenn Sie mit dem Entwurf von Word-Dokumenten als Formulare vertraut sind, die [Inhaltssteuerelemente](/office/client-developer/word/content-controls-in-word) enthalten, die den Elementen von [benutzerdefinierten XML-Teilen](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) zugeordnet sind, führen Sie alle Schritte in der nächsten Prozedur aus, um das Dokument zu erstellen. Weitere Informationen finden Sie unter [Erstellen von Formularen, die in Word ausgefüllt oder gedruckt werden können](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Überspringen Sie anderenfalls die nächste Prozedur.
 
 ## <a name="get-a-word-document-that-has-a-custom-xml-part-and-do-data-mapping"></a><a id='get-word-doc'></a>Ein Word-Dokument mit einem benutzerdefinierten XML-Teil erstellen und eine Datenzuordnung durchführen
 

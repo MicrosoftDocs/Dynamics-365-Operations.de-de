@@ -2,7 +2,8 @@
 title: Konfigurieren von EB-Formaten zur Verwendung von Parametern, die pro juristischer Person angegeben werden
 description: In diesem Thema wird erläutert, wie Sie Elektronische Berichterstellungs(EB)-Formate konfigurieren können, um Parameter zu verwenden, die pro juristischer Person angegeben werden.
 author: NickSelin
-ms.date: 03/24/2021
+manager: AnnBe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 16eab3ffa7d4a780ec9709f5c8a5c263b1e75365
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3802675b2fe0615f4c2ad682462a233c67f18f1a
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751177"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853492"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurieren von EB-Formaten zur Verwendung von Parametern, die pro juristischer Person angegeben werden
 
@@ -28,7 +29,7 @@ ms.locfileid: "5751177"
 
 ## <a name="overview"></a>Übersicht
 
-In vielen der Elektronischen Berichterstellungs(EB)-Formate, die Sie gestalten, müssen Sie Daten mithilfe einer Gruppe von Werten filtern, die für jede juristische Person Ihrer Instanz (zum Beispiel, eine Gruppe von Steuercodes, um Steuertransaktionen zu filtern) spezifisch sind. Wenn dieser Typ momentan in einem EB-Format gefiltert wird, werden Werte, die von der juristischen Person abhängig sind (zum Beispiel Steuercodes) in Ausdrücken des EB-Formats verwendet, um Datenfilterungsregeln anzugeben. Daher wird das EB-Format an die juristischen Person angepasst. Um die erforderlichen Berichte zu erzeugen, müssen Sie abgeleitete Kopien des ursprünglichen EB-Formats für jede juristische Person erstellen, für die Sie das EB-Format ausgeführt haben. Jedes abgeleitete EB-Format muss bearbeitet werden, um Werte speziell für die juristische Person dort hinzuzufügen. Es muss umbasiert werden, sobald die ursprüngliche (Basis-)Version aktualisiert, sie aus einer Testumgebung exportiert und in eine Produktionsumgebung importiert wurde, wenn sie für die Verwendung in der Produktion bereitgestellt werden muss usw. Daher ist die Wartung dieses Typs der konfigurierten EB-Lösung aus verschiedenen Gründen ziemlich komplex und zeitaufwändig:
+In vielen der Elektronischen Berichterstellungs(EB)-Formate, die Sie gestalten, müssen Sie Daten mithilfe einer Gruppe von Werten filtern, die für jede juristische Person Ihrer Instanz (zum Beispiel, eine Gruppe von Steuercodes, um Steuertransaktionen zu filtern) spezifisch sind. Wenn dieser Typ momentan in einem EB-Format gefiltert wird, werden Werte, die von der juristischen Person abhängig sind (zum Beispiel Steuercodes) in Ausdrücken des EB-Formats verwendet, um Datenfilterungsregeln anzugeben. Daher wird das EB-Format an die juristischen Person angepasst. Um die erforderlichen Berichte zu erzeugen, müssen Sie abgeleitete Kopien des ursprünglichen EB-Formats für jede juristische Person erstellen, für die Sie das EB-Format ausgeführt haben. Jedes abgeleitete EB-Format muss bearbeitet werden, um Werte speziell für die juristische Person dort hinzuzufügen. Es muss umbasiert werden, sobald die ursprüngliche (Basis-)Version aktualisiert, sie aus einer Testumgebung exportiert und in eine Produktionsumgebung importiert wurde, wenn sie für die Verwendung in der Produktion bereitgestellt werden muss usw. Daher ist die Wartung dieses Typs der konfigurierten EB-Lösung aus verschiedenen Gründen komplex und zeitaufwändig:
 
 -   Je mehr juristische Personen vorhanden sind, desto mehr EB-Formatkonfigurationen müssen verwaltet werden.
 -   Die Verwaltung von EB-Konfigurationen setzt voraus, dass geschäftliche Benutzer EB-Wissen haben.
@@ -54,7 +55,7 @@ Laden Sie die folgenden ER-Konfigurationen herunter und speichern Sie sie lokal.
 | Beispiel-**EB-Datenmodell**-Konfigurationsdatei    | [Model to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/2/d/b/2db913a0-3622-494e-91a2-97fc494af9b9/Modeltolearnparameterizedcalls.version.1.xml)     |
 | Beispiel-**EB-Metadaten**-Konfigurationsdatei      | [Metadata to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/1/b/3/1b343968-5a47-4000-b5a8-6487698ef4c0/Metadatatolearnparameterizedcalls.version.1.xml)  |
 | Beispiel-**EB-Modellzuordnungs**-Konfigurationsdatei | [Mapping to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/8/6/6/866e0ab6-2e05-4d98-9d52-d2da2038f6e4/Mappingtolearnparameterizedcalls.version.1.1.xml) |
-| Beispiel-**EB-Formatkonfiguration**             | [Format to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/e/3/9/e392eadc-b9b4-4834-95c3-b8066dd00b9c/Formattolearnparameterizedcalls.version.1.1.xml)  |
+| Beispiel-**EB-Format**-Konfiguration             | [Format to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/e/3/9/e392eadc-b9b4-4834-95c3-b8066dd00b9c/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 Melden Sie sich als Nächstes bei Ihrer RCS-Instanz an.
 
@@ -86,7 +87,7 @@ In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen
 
     ![Die Model.Data.Summary-Datenquellenliste der Steuertransaktionen](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
-    Das berechnete Feld **Model.Data.Summary.Level** wurde so konfiguriert, dass es einen EB-Ausdruck enthält. Beachten Sie, dass Steuercodes (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** und **InVAT0**) in dieser Konfiguration hartcodiert sind. Daher hängt dieses EB-Format von der juristischen Person ab, in der diese Steuercodes konfiguriert wurden.
+    Das berechnete Feld **Model.Data.Summary.Level** wurde so konfiguriert, dass es einen EB-Ausdruck enthält. Steuercodes (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** und **InVAT0**) sind in dieser Konfiguration hartcodiert. Daher hängt dieses EB-Format von der juristischen Person ab, in der diese Steuercodes konfiguriert wurden.
 
     ![Das berechnete Feld Model.Data.Summary.Level mit fest codierten Steuercodes](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
@@ -153,12 +154,12 @@ Danach fügen Sie eine neue Datenquelle hinzu, um anzugeben, wie geschäftliche 
 1.  Wählen Sie auf der Registerkarte **Zuordnung** die Option **Hinzufügen** aus.
 2.  Wählen Sie **Formatenumeration\Suche** aus.
 
-    Sie haben gerade ermittelt, dass jede Regel, die geschäftliche Benutzer für die Erkennung der Besteuerungsstufe angeben, einen Wert einer EB-Formatenumeration zurückgibt. Beachten Sie, dass der Datenquellentyp **Suche** über **Datenmodell** und **Dynamics 365 for Operations**-Blöcke sowie den Block **Formatenumeration** aufgerufen werden kann. Daher können EB-Datenmodellenumerationen und Anwendungsenumerationen verwendet werden, um den Typ der Werte anzugeben, der für Datenquellen dieses Typs zurückgegeben wird.
+    Sie haben gerade ermittelt, dass jede Regel, die geschäftliche Benutzer für die Erkennung der Besteuerungsstufe angeben, einen Wert einer EB-Formatenumeration zurückgibt. Beachten Sie, dass der Datenquellentyp **Suche** über **Datenmodell** und **Dynamics 365 for Operations**-Blöcke sowie den Block **Formatenumeration** aufgerufen werden kann. Daher können EB-Datenmodellenumerationen und Anwendungsenumerationen verwendet werden, um den Typ der Werte anzugeben, der für Datenquellen dieses Typs zurückgegeben wird. Mehr über **Such**-Datenquellen finden Sie in [Suchdatenquellen für die Verwendung anwendungsspezifischer EB-Parameter konfigurieren](er-lookup-data-sources.md).
     
 3.  Geben Sie im Feld **Name** **Auswahl** ein.
 4.  Wählen Sie im Feld **Formatenumeration** die Option **Liste der Besteuerungsstufen** ein.
 
-    Sie haben gerade angegeben, dass geschäftliche Benutzer für jede in dieser Datenquelle angegebene Regel einen der Werte der Formatenumeration **Liste der Besteuerungsstufen** als zurückgegebenen Wert auswählen müssen.
+    Sie haben angegeben, dass geschäftliche Benutzer für jede in dieser Datenquelle angegebene Regel einen der Werte der Formatenumeration **Liste der Besteuerungsstufen** als zurückgegebenen Wert auswählen müssen.
     
 5.  Wählen Sie **Suche bearbeiten** aus.
 6.  Wählen Sie **Spalten** aus.
@@ -190,7 +191,7 @@ Danach fügen Sie eine neue Datenquelle hinzu, um anzugeben, wie geschäftliche 
     
     ![Format-Designer-Seite mit einer neuen Datenquelle](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
-    Beachten Sie, dass die Bewertung von konfigurierten Regeln vom Datentyp der Felder abhängt, die ausgewählt wurden, um die Bedingungen dieser Regeln zu definieren. Wenn Sie ein Feld auswählen, das als Feld des Datentyps **Numerisch** oder **Datum** konfiguriert wird, weichen die Kriterien von den Kriterien ab, die zuvor für den Datentyp **Zeichenfolge** beschrieben wurden. Für die Felder **Numerisch** und **Datum** muss die Regel als Wertebereich angegeben werden. Die Bedingung der Regel wird dann als erfüllt angesehen, wenn ein Wert, der an die Datenquelle weitergegeben wird, sich im konfigurierten Bereich befindet.
+    Die Bewertung hängt von konfigurierten Regeln vom Datentyp der Felder ab, die ausgewählt wurden, um die Bedingungen dieser Regeln zu definieren. Wenn Sie ein Feld auswählen, das als Feld des Datentyps **Numerisch** oder **Datum** konfiguriert wird, weichen die Kriterien von den Kriterien ab, die zuvor für den Datentyp **Zeichenfolge** beschrieben wurden. Für die Felder **Numerisch** und **Datum** muss die Regel als Wertebereich angegeben werden. Die Bedingung der Regel wird dann als erfüllt angesehen, wenn ein Wert, der an die Datenquelle weitergegeben wird, sich im konfigurierten Bereich befindet.
     
     Die folgende Abbildung zeigt ein Beispiel für diesen Einrichtungstyp. Zusätzlich zu dem Feld **Model.Data.Tax.Code** des Datentyps **Zeichenfolge** wird das Feld **Model.Tax.Summary.Base** des Datentyps **Gleitkommazahl** verwendet, um die Bedingungen für eine Suchendatenquelle anzugeben.
     
@@ -306,7 +307,9 @@ Um mehr darüber zu erfahren, wie Sie das konfigurierte EB-Format **Format zum E
 
 [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)
 
-[Einrichten von Parametern eines EB-Formats pro juristischer Person](er-app-specific-parameters-set-up.md)
+[Parameter eines ER-Formats pro juristischer Person einrichten](er-app-specific-parameters-set-up.md)
+
+[Suchdatenquellen für die Funktion zur Verwendung anwendungsspezifischer EB-Parameter konfigurieren](er-lookup-data-sources.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

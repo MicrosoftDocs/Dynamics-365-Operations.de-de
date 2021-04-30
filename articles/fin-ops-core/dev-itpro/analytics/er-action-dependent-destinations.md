@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ac0efbbe645969cdf0419bf533d34e38b76fb67a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751231"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893577"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Aktivitätsabhängige EB-Ziele konfigurieren
 
@@ -60,7 +60,7 @@ Wenn Sie den Dokumenttyp **Beliebige** auswählen, wird im Feld **Druckverwaltun
     - Wenn die Aktion **Senden** zur Laufzeit bereitgestellt wird, wird das EB-Ziel **E-Mail** angewendet.
     - Wenn die Aktion **Drucken** zur Laufzeit bereitgestellt wird, wird das EB-Ziel **Drucker** angewendet.
 
-Zum Beispiel können Sie das EB-Format **Freitextrechnung (Excel)** verwenden, um eine [Freitextrechnung](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) zu drucken, wenn Sie sie buchen. Um ein generiertes Dokument weiterzuleiten, müssen Sie EB-Ziele für dieses EB-Format konfigurieren. Beispielsweise müssen Sie diese EB-Ziele möglicherweise so konfigurieren, dass für ein generiertes Dokument Folgendes ausgeführt wird:
+Zum Beispiel können Sie das EB-Format **Freitextrechnung (Excel)** verwenden, um eine [Freitextrechnung](../../../finance/accounts-receivable/create-free-text-invoice-new.md) zu drucken, wenn Sie sie buchen. Um ein generiertes Dokument weiterzuleiten, müssen Sie EB-Ziele für dieses EB-Format konfigurieren. Beispielsweise müssen Sie diese EB-Ziele möglicherweise so konfigurieren, dass für ein generiertes Dokument Folgendes ausgeführt wird:
 
 - Archivieren Sie das Dokument, wenn das EB-Format ausgeführt wird, aber kein Aktionscode bereitgestellt wird (z. B. wenn das Dokument elektronisch gesendet wird).
 - Zeigen Sie eine Vorschau des Dokuments in einem Webbrowser an, wenn ein Benutzer die Aktion **Ansicht** ausführt.
@@ -82,7 +82,7 @@ Die folgende Abbildung zeigt, wie Sie das Gleiche erreichen können, indem Sie a
 
 Wenn ein EB-Format ausgeführt wird und Benutzeraktionen von Benutzern bereitgestellt wurden, die über die entsprechenden [Berechtigungen](electronic-reporting-destinations.md#security-considerations) verfügen, um die konfigurierten Zieleinstellungen zur Laufzeit zu ändern, wird ein Dialogfeld angezeigt, in dem die konfigurierten Zieleinstellungen geändert werden können. Dieses Dialogfeld ist optional und hängt davon ab, wie der Aufruf des EB-Frameworks zum Ausführen eines EB-Formats implementiert wurde. Wenn dieses Dialogfeld angezeigt wird, werden die darin enthaltenen EB-Ziele entsprechend der bereitgestellten Benutzeraktion aktiviert.
 
-Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Ziele für elektronisches Berichterstellungsformat**, das angezeigt wird, wenn eine Freitextrechnung [gebucht wird](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) und das EB-Format **Freitextrechnung (Excel)** ausgeführt wird, um dieses Dokument zu generieren, wenn die Aktion **Drucker** bereitgestellt wurde und EB-Ziele für dieses Format konfiguriert wurden (siehe weiter oben in diesem Thema).
+Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Ziele für elektronisches Berichterstellungsformat**, das angezeigt wird, wenn eine Freitextrechnung [gebucht wird](../../../finance/accounts-receivable/create-free-text-invoice-new.md) und das EB-Format **Freitextrechnung (Excel)** ausgeführt wird, um dieses Dokument zu generieren, wenn die Aktion **Drucker** bereitgestellt wurde und EB-Ziele für dieses Format konfiguriert wurden (siehe weiter oben in diesem Thema).
 
 ![Dialogfeld, in dem Sie die anfänglich konfigurierten EB-Ziele für das laufende EB-Format ändern können](./media/er-destination-action-dependent-02.gif)
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a81e5c56e219ec9d7fb95ac6cc053fb13601f0f2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ac4c15b4dbf60f378ba325adedb377e12585481a
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801166"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889955"
 ---
 # <a name="configure-integration-with-finance"></a>Integration mit Finance konfigurieren
 
@@ -29,7 +29,7 @@ ms.locfileid: "5801166"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Um Dynamics 365 Human Resources in Dynamics 365 Finance zu integrieren, können Sie die Vorlage „Human Resources to Finance“ in [Datenintegrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) verwenden. Die Vorlage „Human Resources to Finance“ ermöglicht den Datenfluss für Jobs, Positionen und Mitarbeiter. Die Vorlage ermöglicht den Datenfluss von der Personalabteilung in die Finanzabteilung, jedoch nicht den Datenfluss von der Finanzabteilung in die Personalabteilung.
+Um Dynamics 365 Human Resources in Dynamics 365 Finance zu integrieren, können Sie die Vorlage „Human Resources to Finance“ in [Datenintegrator](/powerapps/administrator/data-integrator) verwenden. Die Vorlage „Human Resources to Finance“ ermöglicht den Datenfluss für Jobs, Positionen und Mitarbeiter. Die Vorlage ermöglicht den Datenfluss von der Personalabteilung in die Finanzabteilung, jedoch nicht den Datenfluss von der Finanzabteilung in die Personalabteilung.
 
 ![Human Resources nach Finance – Integrationsfluss](./media/hr-admin-integration-finance-flow.png)
 
@@ -248,7 +248,7 @@ Bei der Integration von Daten von Human Resources in Finance wird versucht, Date
 
 Dieses Problem kann bei **Arbeitskraft** auftreten. Diese nutzen **Personalnummer** und **Positionen** zum Abgleich. Für Stellen werden keine Nummernkreise verwendet. Wenn also dieselbe Stellen-ID in Human Resources und Finance vorhanden ist, überschreiben die Daten aus Human Resources die Daten aus Dynamics 365 Finance. 
 
-Um Probleme mit doppelten IDs zu vermeiden, können Sie entweder ein Präfix zum [Nummernkreis](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json) hinzufügen oder eine Anfangsnummer für den Nummernkreis festlegen, die außerhalb des Bereichs des anderen Systems liegt. 
+Um Probleme mit doppelten IDs zu vermeiden, können Sie entweder ein Präfix zum [Nummernkreis](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json) hinzufügen oder eine Anfangsnummer für den Nummernkreis festlegen, die außerhalb des Bereichs des anderen Systems liegt. 
 
 Die Lagerplatzkennung, die für die Arbeitskraftadresse verwendet wird, gehört nicht zum Nummernkreis. Wenn eine Arbeitskraftadresse von Human Resources in Finance integriert wird und die Arbeitskraft bereits in Finance vorhanden ist, wird möglicherweise ein neuer Datensatz erstellt. 
 

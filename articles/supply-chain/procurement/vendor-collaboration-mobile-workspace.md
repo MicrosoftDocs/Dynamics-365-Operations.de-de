@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: dabourq
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: dee77f6967cc72fdcc81d5cff9a39d13248af588
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8f6affd05e658f39d567f7512c71d944636588ff
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811037"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907938"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
 
@@ -57,7 +57,7 @@ Der mobile Arbeitsbereich **Kreditorenzusammenarbeit** ermöglicht einem Kredito
 Die Voraussetzungen unterscheiden sich basierend auf der Version von Microsoft Dynamics 365, die für Ihre Organisation bereitgestellt wurde.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Voraussetzungen, wenn Sie verwenden Supply Chain Management
-Wenn Supply Chain Management für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Kreditor-Kooperation** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Wenn Supply Chain Management für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Kreditor-Kooperation** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher verwenden
 Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
@@ -77,7 +77,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 <td>3216943 KB ist eine binäre Aktualisierung, die erforderlich ist, wenn Sie Plattformaktualisierung 3. verwenden. Um diesen KB zu implementieren, muss Ihr Systemadministrator folgende Schritte ausführen.
 <ol>
 <li>Download von KB 3216943 von Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li>Binäre Aktualisierung instalieren, die zur Bereitstellung als geeignetes Paket geliefert wird. Informationen dazu, wie ein bereitgestelltes Paket übernommen wird, finden Sie unter <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Ein bereitgestelltes Paket anwenden</a>.</li>
+<li>Binäre Aktualisierung instalieren, die zur Bereitstellung als geeignetes Paket geliefert wird. Informationen dazu, wie ein bereitgestelltes Paket übernommen wird, finden Sie unter <a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Ein bereitgestelltes Paket anwenden</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -85,14 +85,14 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 <td>Systemadministrator</td>
 <td>4013633 KB ist ein X++-Aktualisierungs- oder -Metadatenhotfix, der den mobilen Arbeitsbereich <strong>Lagerbestand</strong> enthält. Um KB 4013633 muss Ihr Systemadministrator folgende Schritte ausführen.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Laden Sie den Metadatumenhotfix herunter</a>.</li>
-<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Installieren Sie den Metadatenhotfix</a>.</li><li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das das <strong>SCMMobile</strong> Modell enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
-<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Das bereitstellbare Paket übernehmen</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Laden Sie den Metadatumenhotfix herunter</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installieren Sie den Metadatenhotfix</a>.</li><li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das das <strong>SCMMobile</strong> Modell enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Das bereitstellbare Paket übernehmen</a>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Die <strong>Kreditoren-Kooperation</strong> mobiler Arbeitsbereich muss veröffentlicht werden.</td><td>Systemadministrator</td>
-<td>Siehe <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Einen mobilen Arbeitsbereich veröffentlichen</a>.</td>
+<td>Siehe <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Einen mobilen Arbeitsbereich veröffentlichen</a>.</td>
 </tr>
 <tr class="even">
 <td>Der Kreditorenbenutzer muss Zugriff auf die Weboberfläche für die Kreditor-Kooperation im Webclient haben und muss als Keditor-Kooperations-Benutzer eingerichtet werden.</td><td>Einkäufer und Systemadministrator</td>

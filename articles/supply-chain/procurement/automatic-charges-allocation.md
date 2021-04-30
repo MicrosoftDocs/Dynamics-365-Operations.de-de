@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: a167e6ba4a3b4161e964e5018944af0901000b01
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4e8d65cc1f946f921523607eff850b29f9ff9bf1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841478"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910160"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatische Zuteilung von Gebühren
 
@@ -144,7 +144,7 @@ Führen Sie nach dem Einrichten Ihrer Gebührencodes die folgenden Schritte aus,
     - **Site** und **Lager** – Geben Sie einen Standort und ein Lager an, wenn Gebühren nur für einen bestimmten Standort und ein bestimmtes Lager erhoben werden sollen.
     - **Beibehalten** - Aktivieren Sie dieses Kontrollkästchen , um die Zuschlagsbuchungen nach der Fakturierung beizubehalten, damit der Zuschlag immer angewendet wird, wenn Sie eine neue Rechnung für das ausgewählte Debitorenkonto erstellen.
 
-1. **Nur für Kundenaufträge:** Wenn Sie gestaffelte Gebühren berechnen möchten, lesen Sie [Staffelgebühren für Kundenaufträge](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) für weitere Information.
+1. **Nur für Kundenaufträge:** Wenn Sie gestaffelte Gebühren berechnen möchten, lesen Sie [Staffelgebühren für Kundenaufträge](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) für weitere Information.
 
 ## <a name="allocate-charges-from-the-header-to-a-line"></a>Ordnen Sie einer Zeile Gebühren aus dem Header zu
 

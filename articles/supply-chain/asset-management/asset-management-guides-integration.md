@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 4af14a66c839ccee02008057ad1de8ef5b9d291b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813916"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908566"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrieren von Dynamics 365 Supply Chain Management (Anlagenverwaltung) in Dynamics 365 Guides
 
@@ -30,12 +30,12 @@ Bevor Sie Anleitungen an Anlagenverwaltungs-Arbeitsaufträge anhängen können, 
 - [Einrichten von Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) Version 10.0.9 oder höher.
 - [Aktivieren Sie duales Schreiben für Supply Chain Management-Apps](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 - [Schalten Sie Flight ein](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) für die Funktion **MRGuidesFeature**. (Für Produktionsumgebungen müssen Sie zuerst ein Support-Ticket übermitteln, damit Ihr Mandant zur Flighting-Gruppe hinzugefügt wird.)
-- [Aktivieren Sie die folgenden Konfigurationsschlüssel](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) auf der Seite **Lizenzkonfiguration**:
+- [Aktivieren Sie die folgenden Konfigurationsschlüssel](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) auf der Seite **Lizenzkonfiguration**:
 
     - Anlagenverwaltung \> Anlagenverwaltung – Mixed Reality
     - Mixed Reality \> Mixed Reality-Anleitung
 
-- [Einrichten von Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) Version 200.0.0.96 oder höher.
+- [Einrichten von Dynamics 365 Guides](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) Version 200.0.0.96 oder höher.
 
 ## <a name="use-dynamics-365-guides-with-asset-management"></a>Verwenden von Dynamics 365 Guides mit Anlagenverwaltung
 
@@ -47,8 +47,8 @@ Um eine Anleitung einer Wartungsprüflistenvorlage zuzuordnen, folgen Sie diesen
 
 1. Erstellen Sie eine Anleitung mit dem Dynamics 365 Guides-PC und HoloLens-Apps. Informationen darüber, wie eine Anleitung erstellt wird, finden Sie in den folgenden Themen:
 
-    - [Verwenden der PC-App, um eine Anleitung zu erstellen](https://docs.microsoft.com/dynamics365/mixed-reality/guides/pc-app-overview)
-    - [Verwenden der HoloLens-App, um Ihre Hologramme zu platzieren](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-overview)
+    - [Verwenden der PC-App, um eine Anleitung zu erstellen](/dynamics365/mixed-reality/guides/pc-app-overview)
+    - [Verwenden der HoloLens-App, um Ihre Hologramme zu platzieren](/dynamics365/mixed-reality/guides/hololens-app-overview)
 
 1. In Supply Chain Management [erstellen Sie eine Wartungsprüflistenvorlage](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-checklist-template).
 1. Ordnen Sie die Anleitung zu, die Sie mit einer Wartungsprüflistenposition in der neuen Wartungsprüflistenvorlage erstellt haben:

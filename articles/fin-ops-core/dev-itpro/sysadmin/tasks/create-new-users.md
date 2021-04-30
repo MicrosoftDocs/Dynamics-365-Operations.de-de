@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b994473b4535c255f87551a6d97e197516fc2a9c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 88d3f1fba05d944e78e4595018d190c3dc41e076
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745836"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907910"
 ---
 # <a name="create-new-users"></a>Neue Benutzer erstellen
 
@@ -29,10 +29,10 @@ Bevor Sie auf Finance and Operations-Apps zugreifen können, müssen Sie der Sei
 Informationen zum Kauf und zur Lizenzierung für Finance and Operations-Apps siehe [Microsoft Dynamics 365-Lizenzierungshandbuch](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Zuweisen einer Lizenz zu einem Benutzer
-Systemadministratoren können [Benutzern Lizenzen zuordnen](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) – im [Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+Systemadministratoren können [Benutzern Lizenzen zuordnen](/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) – im [Microsoft 365 Admin Center](/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Einen externen Benutzer in Azure AD hinzufügen und eine Lizenz zuweisen 
-Externe Benutzer müssen in Ihrem Mandantenverzeichnis vertreten sein (Azure Active Directory (Azure AD)) damit ihnen Lizenzen zugewiesen werden können. Diese externen Benutzer sollten dem Mandanten in Azure AD als Gastbenutzer hinzugefügt werden und dann sollten ihnen die entsprechenden Lizenzen zugewiesen werden. Eine Voraussetzung für Finance and Operations-Apps ist, dass die Firma des Gastbenutzers Azure AD verwenden muss. Weitere Informationen finden Sie unter [Azure Active Directory Benutzer der B2B-Zusammenarbeit im Azure-Portal hinzufügen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+Externe Benutzer müssen in Ihrem Mandantenverzeichnis vertreten sein (Azure Active Directory (Azure AD)) damit ihnen Lizenzen zugewiesen werden können. Diese externen Benutzer sollten dem Mandanten in Azure AD als Gastbenutzer hinzugefügt werden und dann sollten ihnen die entsprechenden Lizenzen zugewiesen werden. Eine Voraussetzung für Finance and Operations-Apps ist, dass die Firma des Gastbenutzers Azure AD verwenden muss. Weitere Informationen finden Sie unter [Azure Active Directory Benutzer der B2B-Zusammenarbeit im Azure-Portal hinzufügen](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Neue Benutzer aus Azure AD importieren 
 1. Wechseln Sie zu **Systemverwaltung** \> **Benutzer** \> **Benutzer**.
@@ -57,7 +57,7 @@ Externe Benutzer müssen in Ihrem Mandantenverzeichnis vertreten sein (Azure Act
 7. Wählen Sie im Feld **Unternehmen** das Standardstartunternehmen für den Benutzer aus. 
 8. Wählen Sie **Speichern** aus.
 
-Die Werte für Identitätsanbieter und Telemetrie-ID werden basierend auf einem [Microsoft Graph](https://docs.microsoft.com/graph/overview)-Aufruf aktualisiert, wenn der Benutzerdatensatz gespeichert wird. Die Telemetrie-ID basiert auf der Objekt-ID/Sicherheitskennung (SID) des Benutzers in Azure AD.
+Die Werte für Identitätsanbieter und Telemetrie-ID werden basierend auf einem [Microsoft Graph](/graph/overview)-Aufruf aktualisiert, wenn der Benutzerdatensatz gespeichert wird. Die Telemetrie-ID basiert auf der Objekt-ID/Sicherheitskennung (SID) des Benutzers in Azure AD.
 
 > [!NOTE]
 > Nachdem Sie einen Benutzer hinzugefügt haben, müssen Sie gegebenenfalls Rollen und Organisationen zuweisen. Ausführlichere Informationen finden Sie unter [Zuweisen von Benutzern zu Sicherheitsrollen](assign-users-security-roles.md). Bedingt kann es auch erforderlich sein, den Benutzer mit einer **Person** zu verknüpfen und **Benutzeroptionen** wie Sprache zu aktualisieren.

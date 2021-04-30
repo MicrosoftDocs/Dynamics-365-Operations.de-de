@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2f5dd1d6bc520c9f5349c77dfcabdf2d538881ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c1112ba8394afb3aa9c9b4f68249524498bd8b32
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840051"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894882"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Erste Schritte mit der elektronischen Rechnungsstellung für Mexiko
 
@@ -86,7 +86,7 @@ Sie können eine neue Version erstellen, wenn beispielsweise URLs aktualisiert w
 
     ![Öffnen der Seite „Formatdesigner“](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
-3. Verwenden Sie die Seite **Formatdesigner**, um die EB-Formatkonfigurationen für Dateien zu bearbeiten und anzuzeigen. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](../../dev-itpro/analytics/electronic-reporting-configuration.md).
+3. Verwenden Sie die Seite **Formatdesigner**, um die EB-Formatkonfigurationen für Dateien zu bearbeiten und anzuzeigen. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
     ![Formatdesignerseite](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
@@ -161,7 +161,7 @@ Um die elektronische Rechnungsstellung in Finance einzurichten, führen Sie die 
 ### <a name="import-the-er-data-model-er-data-model-mapping-and-context-configurations-for-cfdi-invoices"></a>Importieren des EB-Datenmodells, der EB-Datenmodellzuordnung und der Kontextkonfigurationen für CFDI-Rechnungen
 
 1. Melden Sie sich bei Finance an.
-2. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** im Abschnitt **Konfigurationsanbieter** die Kachel **Microsoft** aus. Stellen Sie sicher, dass dieser Konfigurationsanbieter auf **Aktiv** festgelegt ist. Weitere Informationen zum Festlegen eines Anbieters auf **Aktiv** finden Sie unter [Erstellen von Konfigurationsanbietern und Markieren als aktiv](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** im Abschnitt **Konfigurationsanbieter** die Kachel **Microsoft** aus. Stellen Sie sicher, dass dieser Konfigurationsanbieter auf **Aktiv** festgelegt ist. Weitere Informationen zum Festlegen eines Anbieters auf **Aktiv** finden Sie unter [Erstellen von Konfigurationsanbietern und Markieren als aktiv](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Wählen Sie **Repositorys** aus.
 4. Wählen Sie **Globale Ressource \> Öffnen** aus.
 5. Importieren Sie **Rechnungsmodell**, **Rechnungsmodellzuordnung**, **CFDI-Rechnungsformat (MX)**, **Format CFDI-Rechnungsstornierungsanforderung (MX)** und **Format CFDI-Rechnungsabbruch (MX)**.
@@ -215,7 +215,7 @@ Während der Verarbeitung von CFDI-Rechnungen in Finance über die elektronische
 Nachdem Sie die Funktion **Integration der konfigurierbaren elektronischen Rechnungsstellung** aktiviert haben, kann der Prozess **Elektronische Rechnung exportieren/importieren** (**Debitoren \> Rechnungen \> Elektronische Rechnungen**) zur Übermittlung von CFDI-Rechnungen nicht mehr verwendet werden. Er wird durch einen neuen Prozess mit dem Namen **Elektronische Dokumente übermitteln** ersetzt.
 
 > [!NOTE]
-> Bevor Sie den neuen Prozess **Elektronische Dokumente übermitteln** verwenden, vergewissern Sie sich, dass die für elektronische Rechnungen in Mexiko erforderliche Einrichtung abgeschlossen ist. Weitere Hinweise zur Umrechnung finden Sie unter [Layoutversion 3.3 für CFDI](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
+> Bevor Sie den neuen Prozess **Elektronische Dokumente übermitteln** verwenden, vergewissern Sie sich, dass die für elektronische Rechnungen in Mexiko erforderliche Einrichtung abgeschlossen ist. Weitere Hinweise zur Umrechnung finden Sie unter [Layoutversion 3.3 für CFDI](./latam-mex-cfdi-3-3.md).
 
 1. Navigieren Sie zu **Organisationsverwaltung \> Periodisch \> Elektronische Dokumente \> Elektronische Dokumente übermitteln**.
 2. Legen Sie für die erste Übermittlung irgendeines Dokuments immer die Option **Dokumente erneut übermitteln** auf **Nein** fest. Wenn Sie ein Dokument erneut über den Service übermitteln müssen, legen Sie diese Option auf **Ja** fest.

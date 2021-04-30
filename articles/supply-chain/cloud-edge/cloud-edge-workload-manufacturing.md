@@ -16,22 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a8c263104e209a81e33ea0db9e5fecddff3bc95b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809781"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899094"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbeitsauslastungen bei der Fertigungsausführung für Cloud- und Edge-Scale-Einheiten
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> Der Workload für die Fertigungsausführung ist zu diesem Zeitpunkt in der Vorschau verfügbar.
 > Einige Geschäftsfunktionen werden in der öffentlichen Vorschau nicht vollständig unterstützt, wenn Arbeitsauslastungen mit Scale-Units verwendet werden.
 
-Bei der Fertigungsausführung bieten Cloud- und Edge-Scale-Einheiten die folgenden Funktionalitäten, auch wenn die Edge-Einheiten nicht mit dem Hub verbunden sind:
+Bei der Ausführung der Fertigung bieten Skalierungseinheiten die folgenden Funktionen:
 
 - Maschinenbediener und Werkstattleiter können auf den operativen Produktionsplan zugreifen.
 - Maschinenbediener können den Plan auf dem neuesten Stand halten, indem sie diskrete und Prozessfertigungsaufträge ausführen.
@@ -58,7 +59,7 @@ Wie die folgende Abbildung zeigt, wird bei Verwendung von Scale-Units die Phase 
 
 Das Modell geht nun von einer Einzelinstanz-Installation zu einem Modell über, das auf dem Hub und Scale-Units basiert. Die Phasen _Planen_ und _Finalisieren_ laufen als Back-Office-Operationen auf dem Hub, und die Arbeitsauslastung der Fertigungsausführung läuft auf den Scale-Units. Die Daten werden asynchron zwischen dem Hub und den Scale-Units übertragen.
 
-Wenn ein Produktionsauftrag auf dem Hub freigegeben wird, werden alle Daten, die zur Verarbeitung von Produktionsaufträgen erforderlich sind, an die Scale-Unit übertragen. Zu diesen Daten gehören Produktionsaufträge, Arbeitspläne, Stücklisten und Produkte. Daten, die sich nicht auf einen Produktionsauftrag beziehen (z. B. indirekte Aktivitäten, Abwesenheitscodes und Produktionsparameter), werden ebenfalls vom Hub an die Scale-Unit übertragen. In der Regel können Daten, die aus dem Hub stammen und an die Scale-Unit übertragen werden, nur im Hub erstellt oder aktualisiert werden. Zum Beispiel kann ein neuer Abwesenheitscode oder eine indirekte Aktivität nicht auf der Scale-Unit erstellt werden &mdash;, sie können nur für die Registrierung verwendet werden. Die Registrierungen, die während der Ausführung auf der Scale-Unit vorgenommen werden, werden dann an den Hub übertragen, wo die Zeit- und Anwesenheitsgenehmigung, der Bestand und die finanziellen Aktualisierungen verarbeitet werden.
+Wenn ein Produktionsauftrag auf dem Hub freigegeben wird, werden alle Daten, die zur Verarbeitung von Produktionsaufträgen erforderlich sind, an die Scale-Unit übertragen. Zu diesen Daten gehören Produktionsaufträge, Arbeitspläne, Stücklisten und Produkte. Daten, die sich nicht auf einen Produktionsauftrag beziehen (z. B. indirekte Aktivitäten, Abwesenheitscodes und Produktionsparameter), werden ebenfalls vom Hub an die Scale-Unit übertragen. In der Regel können Daten, die aus dem Hub stammen und an die Scale-Unit übertragen werden, nur im Hub erstellt oder aktualisiert werden. Zum Beispiel kann ein neuer Abwesenheitscode oder eine indirekte Aktivität nicht auf der Scale-Unit erstellt werden – sie können nur für die Registrierung verwendet werden. Die Registrierungen, die während der Ausführung auf der Scale-Unit vorgenommen werden, werden dann an den Hub übertragen, wo die Zeit- und Anwesenheitsgenehmigung, der Bestand und die finanziellen Aktualisierungen verarbeitet werden.
 
 ## <a name="manufacturing-execution-tasks-that-can-be-run-on-workloads"></a>Manufacturing Execution Tasks, die auf Arbeitsauslastungen ausgeführt werden können
 
@@ -108,5 +109,6 @@ Um die Historie der Fertigungsaufträge einzusehen, die auf einer Scale-Unit ver
 
 Der Job _Manufacturing hub to scale unit message processor_ verarbeitet Daten vom Hub zur Scale-Unit. Dieser Job wird automatisch gestartet, wenn die Arbeitsauslastung der Fertigungsausführung bereitgestellt wird. Sie können ihn jedoch jederzeit manuell ausführen, indem Sie zu **Produktionssteuerung \> Periodische Aufgaben \> Backoffice-Arbeitsauslastung \> Manufacturing Hub to Scale-Unit Message Processor** gehen.
 
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

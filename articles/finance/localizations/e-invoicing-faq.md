@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 41cddcdad5043ec314a94dda67f4f2e9de406cac
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1ba1a6c5542c10306d4b7494d33e7ff04504fa95
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840171"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893777"
 ---
 # <a name="electronic-invoicing-faq"></a>Häufig gestellt Fragen zur elektronischen Rechnungsstellung
 
@@ -55,7 +55,7 @@ Die aktuelle Plattform erlaubt die Verwendung der lokalen Version nicht und es g
 
 ## <a name="does-electronic-invoicing-interface-with-the-vendor-import-automation-feature"></a>Ist die elektronische Rechnungsstellung mit der Importautomatisierungsfunktion des Anbieters verbunden?
 
-Nein. Es gibt Pläne für diese Schnittstelle, aber es gibt keine geplante Zeitskala. Wenn geplant, werden die Termine in [Release-Pläne](https://docs.microsoft.com/dynamics365/release-plans/) bekannt gegeben.
+Nein. Es gibt Pläne für diese Schnittstelle, aber es gibt keine geplante Zeitskala. Wenn geplant, werden die Termine in [Release-Pläne](/dynamics365/release-plans/) bekannt gegeben.
 
 ## <a name="how-does-electronic-invoicing-handle-file-attachments-into-the-electronic-invoice-is-a-sharepoint-server-needed-when-embedding-pdf-files-into-the-xml-file"></a>Wie behandelt die elektronische Rechnungsstellung Dateianhänge in der elektronischen Rechnung? Wird ein SharePoint-Server benötigt beim Einbetten von PDF-Dateien in die XML-Datei?
 

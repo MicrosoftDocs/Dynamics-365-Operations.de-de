@@ -1,7 +1,7 @@
 ---
 title: Startseite für die Produktprogrammplanung
 description: Produktprogrammplanung ermöglicht es Unternehmen, die zukünftigen Anforderung für Rohmaterialen und Kapazität zu bestimmen und abzustimmen, um die Unternehmensziele zu erfüllen.
-author: ShylaThompson
+author: ChristianRytt
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
@@ -13,34 +13,34 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5056bc9ffa96e1a23e07582b1742e5b3bec12610
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 92dfb05addc1c791b24f129587b842d22423eb54
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833424"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908755"
 ---
 # <a name="master-planning-home-page"></a>Startseite für die Produktprogrammplanung
 
 [!include [banner](../includes/banner.md)]
 
-Produktprogrammplanung ermöglicht es Unternehmen, die zukünftigen Anforderung für Rohmaterialen und Kapazität zu bestimmen und abzustimmen, um die Unternehmensziele zu erfüllen. Produktprogrammplanung setzt Folgendes fest: 
+Produktprogrammplanung ermöglicht es Unternehmen, die zukünftigen Anforderung für Rohmaterialen und Kapazität zu bestimmen und abzustimmen, um die Unternehmensziele zu erfüllen. Produktprogrammplanung setzt Folgendes fest:
 
--  Welche Rohmaterialien und Kapazitäten sind zurzeit verfügbar? 
--  Welche Rohmaterialien und Kapazitäten werden benötigt, um die Produktion zu vervollständigen? Beispielsweise was produziert, gekauft, übertragen oder zurückgestellt werden muss, bevor die Produktion ausgeführt werden kann.
+- Welche Rohmaterialien und Kapazitäten sind zurzeit verfügbar?
+- Welche Rohmaterialien und Kapazitäten werden benötigt, um die Produktion zu vervollständigen? Beispielsweise was produziert, gekauft, übertragen oder zurückgestellt werden muss, bevor die Produktion ausgeführt werden kann.
 
 Dient zum Berechnen des Bedarfs für die Produktprogrammplanung sowie zum Generieren von Bestellvorschlägen für den ausgewählten Artikel.
 
 Die drei Hauptplanungsprozesse sind:
 
--  **Produktprogrammplanung** - Im Produktprogrammplan wird der Nettobedarf berechnet. Es basiert auf aktuellen und tatsächlichen Aufträgen, um gibt Unternehmen die Möglichkeit, Bestandswiederbeschaffung auf einer täglichen Basis zu steuern. Eine andere Bedingung, um dies zu beschreiben, ist der *Nettobedarfsplan*. Weitere Informationen finden Sie unter [Masterplanübersicht](master-plans.md). 
+- **Produktprogrammplanung** - Im Produktprogrammplan wird der Nettobedarf berechnet. Es basiert auf aktuellen und tatsächlichen Aufträgen, um gibt Unternehmen die Möglichkeit, Bestandswiederbeschaffung auf einer täglichen Basis zu steuern. Eine andere Bedingung, um dies zu beschreiben, ist der *Nettobedarfsplan*. Weitere Informationen finden Sie unter [Masterplanübersicht](master-plans.md).
 
--  **Absatzplanung** - Planungszeitplan der Bruttobedarf berechnet. Er basiert auf künftiger (oder geplanter) Projektionen und aktiviert Unternehmen, langfristig Material- und Kapazitätsplanung zu tätigen. Weitere Informationen finden Sie unter [Übersicht der Bedarfsprognose](introduction-demand-forecasting.md). 
+- **Absatzplanung** - Planungszeitplan der Bruttobedarf berechnet. Er basiert auf künftiger (oder geplanter) Projektionen und aktiviert Unternehmen, langfristig Material- und Kapazitätsplanung zu tätigen. Weitere Informationen finden Sie unter [Übersicht der Bedarfsprognose](introduction-demand-forecasting.md).
 
--  **Intergesellschaftsproduktprogrammplanung** - Die Intercompany-Produktprogrammplan berechnet den Bedarfsverlauf zu juristischen Personen. Er umfasst Angebot und Nachfrage zwischen Unternehmen nicht nur für kurzfristige, feste und nachgefragte, sondern auch für langfristige (die noch nicht fest sind), geplante Angebot und Nachfrage. Weitere Informationen finden Sie unter [Intercompany-Produktprogrammplanungslauf](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (CustomerSource-Konto erforderlich). 
+- **Intergesellschaftsproduktprogrammplanung** - Die Intercompany-Produktprogrammplan berechnet den Bedarfsverlauf zu juristischen Personen. Er umfasst Angebot und Nachfrage zwischen Unternehmen nicht nur für kurzfristige, feste und nachgefragte, sondern auch für langfristige (die noch nicht fest sind), geplante Angebot und Nachfrage. Weitere Informationen unter [Intercompany-Planung](planning-optimization/Intercompany-planning.md).
 
 Unternehmen können die Ausgabe des Plans ändern. Sie können verbessernde Nettoveränderung oder beides ausführen. Verbessernde Pläne aktualisieren alle Anforderungen, während Nettoveränderungspläne nur den Plan an Artikeln mit neuen Anforderungen aktualisieren, die seit den letzten hereingekommen den Planungslauf sind.
 
@@ -61,28 +61,30 @@ Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, d
 - [Intercompany-Plan erstellen](./tasks/create-intercompany-plan.md)
 - [Bedarfsplanung – Übersicht](introduction-demand-forecasting.md)
 - [Planzahlenverrechnungsschlüssel vorhersagen](reduction-keys.md)
-                                  
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 ### <a name="roadmaps"></a>Roadmaps
+
 Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neue Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden.
 
 ### <a name="blogs"></a>Blogs
-Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Produktprogrammplanung und zu anderen Lösungen im [Dynamics AX Manufacturing R&D Team-Blog](https://blogs.msdn.microsoft.com/axmfg) und [Supply Chain Management in Dynamics AX R&D Team-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+
+Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Produktprogrammplanung und zu anderen Lösungen im [Dynamics AX Manufacturing R&D Team-Blog](/archive/blogs/axmfg/) und [Supply Chain Management in Dynamics AX R&D Team-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Aufgabenleitfäden
+
 Zusätzliche Hilfe steht über Aufgabenhandbücher zur Verfügung. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche **Hilfe**.
 
 ### <a name="webinars"></a>Webinars
+
 [Azure Machine Learning Bedarfsplanungsstrategie nutzen](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
 
 ### <a name="tech-conference-recordings"></a>Technologiekonferenzaufzeichnungen
--  [Bedarfsplanungsfunktionen erweitern](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
--  [Produktprogrammplanung – Hinweise und Tricks zur Problembehebung im Bereich der Leistung](https://youtu.be/7v8BPmEs9Dg)
--  [Hilfe! PPS ist langsam!](https://youtu.be/RLXybx20B5o)
 
-
-
+- [Bedarfsplanungsfunktionen erweitern](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+- [Produktprogrammplanung – Hinweise und Tricks zur Problembehebung im Bereich der Leistung](https://youtu.be/7v8BPmEs9Dg)
+- [Hilfe! PPS ist langsam!](https://youtu.be/RLXybx20B5o)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

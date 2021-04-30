@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5f4c91c16363b978932d74c7e8b4420b3a8366d3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0f92ace4e7e765c326c62095fb57e3343d8d303b
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752707"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909766"
 ---
 # <a name="available-mobile-workspaces"></a>Verfügbare mobile Arbeitsbereiche
 
@@ -31,9 +31,9 @@ Dieses Thema führt die mobilen Arbeitsbereiche auf, die vor kurzem für die mob
 |[Unternehmensverzeichnis](company-directory-mobile-workspace.md)| Ermöglicht Benutzern das Anzeigen von Kontakten und Mitarbeitern in der Organisation.| 2017. Juni |    
 |[Mein Team](manager-self-service-mobile-workspace.md)| Ermöglicht Benutzern, direkte Mitarbeiter und erweitertes Personal anzuzeigen und Lob an Personen innerhalb der Mitarbeitergruppe senden.|2017. Juni |     
 |[Rechnungsgenehmigung](invoice-approval-mobile-workspace.md)| Stellt eine Liste von Rechnungen bereit, die Ihnen über den Kreditorenrechnungskopfworkflowprozess zugewiesen wurden.| 2017. Juni   |
-| [Spesenverwaltung](../../../finance/expense-management/expense-management-mobile-workspace.md) | Ermöglicht Benutzern einen Beleg zu erfassen und hochzuladen, sodass sie diesen einer Spesenabrechnung später zuordnen können. Der mobile Arbeitsbereich lässt Benutzer schnell eine Ausgabenposition erstellen, indem er einen einzigen Zugriff verwendet. | 2017. April |
+| [Spesenverwaltung](/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace) | Ermöglicht Benutzern einen Beleg zu erfassen und hochzuladen, sodass sie diesen einer Spesenabrechnung später zuordnen können. Der mobile Arbeitsbereich lässt Benutzer schnell eine Ausgabenposition erstellen, indem er einen einzigen Zugriff verwendet. | 2017. April |
 | [Bestellungsgenehmigung](../../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Ermöglicht Benutzern Bestellungen anzuzeigen und mit Aktivitäten wie Genehmigung der Ablehnung auf diese zu reagieren. | 2017. April |
-| [Projektzeiteintrag](../../../finance/project-management/project-time-entry-mobile-workspace.md) | Ermöglicht Benutzern Zeiten für ein Projekt einzugeben und zu speichern, indem sie das mobile Gerät verwenden. | 2017. März |
+| [Projektzeiteintrag](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace) | Ermöglicht Benutzern Zeiten für ein Projekt einzugeben und zu speichern, indem sie das mobile Gerät verwenden. | 2017. März |
 | [Kostensteuerung](../../../finance/cost-accounting/cost-controlling-mobile-workspace.md)     | Kostenstellenmanager können die die Kostenstellenleistung jederzeit und überall finden.                                                                                               |  2017. Januar        |
 | [Verfügbarer Lagerbestand](../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Erhalten Sie Einblicke in reservierten und verfügbaren Lagerbestand.                                                                                                    |   2017. Januar       |
 | [Aufträge](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Sie sind jederzeit auf dem neuesten Stand hinsichtlich Ihrer Aufträge, jederzeit und überall.                                                                                                                          |  2017. Januar                  |

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2211f666b2b1dc7600639007794ab8133b58b2cb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d95584ff02eac7353b01c2159be02e694b4c83fe
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834475"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897743"
 ---
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Veröffentlicht von Erfassungspositionen und Dokumente aus Excel
 
@@ -45,7 +45,7 @@ Benutzer können Positionen für Finanzerfassungen aus Microsoft Excel eingeben 
 
 Wenn die Positionen veröffentlicht werden, sie werden geprüft, um sicherzustellen, dass sie mit den Regeln entsprechen, die den in Finanzerfassungen eingerichtet werden. Nachdem die veröffentlicht Positionen sind, können Benutzer die Belege von Dynamics 365 Finance bearbeiten oder buchen. 
 
-Um Finanzdimensionen einer Vorlage hinzugefügt werden soll, sind zusätzliche Änderungen erforderlich. Weitere Informationen finden Sie unter [Dimensions zur Microsoft Excel-Vorlage hinzufügen](../../dev-itpro/financial/add-dimensions-excel-templates.md). Nachdem sich mit Dimensionen befassen Entität hinzugefügt wurden, werden sie im Excel-Designer verfügbar und können zur Vorlage hinzugefügt werden.
+Um Finanzdimensionen einer Vorlage hinzugefügt werden soll, sind zusätzliche Änderungen erforderlich. Weitere Informationen finden Sie unter [Dimensions zur Microsoft Excel-Vorlage hinzufügen](../../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md). Nachdem sich mit Dimensionen befassen Entität hinzugefügt wurden, werden sie im Excel-Designer verfügbar und können zur Vorlage hinzugefügt werden.
 
 
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfc0497286ae0286cde05412c82fcaac76f4042a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 476dfd6be55ce484cb9bc101ac27dc6181f3c010
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837632"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910376"
 ---
 # <a name="modeling-a-lean-organization"></a>Modellierung einer Lean-Organisation
 
@@ -51,7 +51,7 @@ Es können die künftigen Status-Wertströme als Produktionsflussversion modelli
 
 Der Wertstrom selbst wird als Organisationseinheit modelliert. Daher kann der Wertstrom als Finanzdimension verwendet werden.
 
-Weitere Informationen zum Erstellen von Organisationseinheiten finden Sie unter [Organisationseinheiten erstellen](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
+Weitere Informationen zum Erstellen von Organisationseinheiten finden Sie unter [Organisationseinheiten erstellen](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>Kosten für Lean Manufacturing basierend auf dem Produktionsfluss
 Die regelmäßige Konsolidierung der Kosten für einen Produktionsfluss korrigiert das zugehörige RIF-Konto und ermöglicht die Bestimmung von Abweichungen für die Produkte , die vom Produktionsfluss geliefert werden.

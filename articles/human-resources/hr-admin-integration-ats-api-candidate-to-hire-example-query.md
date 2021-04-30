@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ea6fc745ffb5892a32196394cb28cb5e646b7639
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a8c3655e7ff609eedbf92fa90a36b65002f40306
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795068"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893471"
 ---
 # <a name="example-query-for-candidate-to-hire"></a>Beispielabfrage für Kandidaten zur Einstellung
 
@@ -27,7 +27,7 @@ ms.locfileid: "5795068"
 
 Dieses Thema enthält eine Beispielabfrage für die Entität Kandidat zur Einstellung, in Dynamics 365 Human Resources.
 
-Dieses Thema enthält ein Beispiel, das zeigt, wie Sie *tiefes Einfügen* verwenden können, um alle Details eines neuen Kandidatendatensatzes in einer einzigen API-Operation zu erstellen. Weitere Informationen zu tiefen Einfügen finden Sie unter [Erstellen verwandter Entitätsdatensätze in einem Vorgang](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
+Dieses Thema enthält ein Beispiel, das zeigt, wie Sie *tiefes Einfügen* verwenden können, um alle Details eines neuen Kandidatendatensatzes in einer einzigen API-Operation zu erstellen. Weitere Informationen zu tiefen Einfügen finden Sie unter [Erstellen verwandter Entitätsdatensätze in einem Vorgang](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
 
 Die **mshr_hcmcandidatetohireentity**-Entität ist aufgrund seiner Beziehung zur **mshr_dirpersonentity**-Entität einzigartig. Viele der Eigenschaften von **mshr_hcmcandidatetohireentity** (zum Beispiel **mshr_firstname**, **mshr_lastname** und **mshr_birthdate**) sind vom **mshr_dirpersonentity**-Datensatz abgeleitet. Wenn Sie einen neuen Kandidatendatensatz ohne tiefes Einfügen an **mshr_hcmcandidatetohireentity** senden, können Sie Werte für diese Eigenschaften direkt im **mshr_hcmcandidatetohireentity**-Datensatz definieren. Der zugehörige **mshr_dirpersonentity**-Datensatz wird implizit mit den definierten Werten für die Eigenschaften erstellt. Sie können dann alle anderen zugehörigen Entitätsdatensätze (z. B. Qualifikationen oder Ausbildung) als separate API-Aufrufe erstellen.
 

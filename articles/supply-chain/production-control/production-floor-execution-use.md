@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0ece83a20a33a8f23e8700d1b5d680a11d64fea0
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814655"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907716"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
@@ -136,7 +136,7 @@ Die Arbeitskraft wählt auf der Registerkarte **Alle Einzelvorgänge** den dritt
 
 ## <a name="working-on-indirect-activities"></a>Arbeiten an indirekten Aktivitäten
 
-Indirekte Aktivitäten sind Aktivitäten, die nicht direkt mit einem Produktionsauftrag zusammenhängen. Indirekte Aktivitäten können flexibel definiert werden, wie beschrieben unter [Richten Sie indirekte Aktivitäten für Zeit und Anwesenheit ein](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
+Indirekte Aktivitäten sind Aktivitäten, die nicht direkt mit einem Produktionsauftrag zusammenhängen. Indirekte Aktivitäten können flexibel definiert werden, wie beschrieben unter [Richten Sie indirekte Aktivitäten für Zeit und Anwesenheit ein](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
 
 Zum Beispiel möchte Shannon, eine Werkstatt-Arbeitskraft bei Contoso, an einer Firmenbesprechung teilnehmen, und Besprechungen werden als indirekte Aktivität betrachtet. Es gilt eines der folgenden beiden Szenarien:
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 586c0f807cf45908bacd88ff4e4d5793db054e4d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5ab53f4b8888f77cd41ccbd7956ed307ba1b54ff
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815403"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897135"
 ---
 # <a name="reverse-journal-posting"></a>Buchungserfassung stornieren
 
@@ -65,7 +65,7 @@ Wenn der Beleg mehr als 100 Positionen enthält, wird der Umkehr-Prozess mithilf
 
 Wenn die Anzahl der Belegpositionen 100 oder weniger beträgt, wird der Umkehr-Prozess sofort ausgeführt. Die Ergebnisse werden in einem Dialogfeld angezeigt, das Belege, die nicht storniert werden konnten, und den Grund anzeigt, warum nicht storniert werden konnte. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
-Buchungen können nur storniert werden, wenn sie die Geschäftsregeln für das Zurücksetzen sie gelten. Kreditorenzahlungen können nicht mithilfe der Funktion storniert werden, die in diesem Thema beschrieben wird. Kreditorenzahlungen müssen storniert werden, indem die Schritte unter [Stornieren einer Kreditorenzahlung](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment) ausgeführt werden.
+Buchungen können nur storniert werden, wenn sie die Geschäftsregeln für das Zurücksetzen sie gelten. Kreditorenzahlungen können nicht mithilfe der Funktion storniert werden, die in diesem Thema beschrieben wird. Kreditorenzahlungen müssen storniert werden, indem die Schritte unter [Stornieren einer Kreditorenzahlung](../accounts-payable/reverse-vendor-payment.md) ausgeführt werden.
 
 
 

@@ -15,12 +15,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9d8b9977d733c87566249bcb9658b80c4350c17d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a4de42c23bf96591d1ac99ed32438fe34a485998
+ms.sourcegitcommit: 05868764acd3d77970724a30c49c5ae5ffb6ca5b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792024"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906648"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Einrichten von Coupons für Einzelhandelsverkäufe
 
@@ -38,6 +38,8 @@ Um einen Coupon zu erstellen, stellen Sie den Rabatt und den Coupon getrennt her
 
 > [!NOTE]
 > Nachdem ein Coupon mit einem Rabatt verknüpft ist, sind einige Felder auf der Rabattseite in Commerce schreibgeschützt, da sie durch die Einstellungen des Coupons verwaltet werden. Diese Felder enthalten die Felder für die Standarddatumsbereiche.
+> 
+> Während Sie den Coupon im Callcenterkanal verwenden, müssen Sie die Schaltfläche **Neu berechnen** auswählen **(Registerkarte Verkaufen > Berechnen > Neu berechnen)**, damit der mit dem Coupon verbundene Rabatt angewendet wird. Dieser zusätzliche Schritt wird in einem zukünftigen Release entfernt.
 
 ### <a name="limited-use-coupons"></a>Begrenzte Nutzung der Coupons
 

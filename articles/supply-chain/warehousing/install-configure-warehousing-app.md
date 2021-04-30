@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c92fe991c8651d7665de2e850d8649b72f525f4c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835564"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909378"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Lagerort-App installieren und Verbindung herstellen
 
@@ -31,7 +31,7 @@ ms.locfileid: "5835564"
 > In diesem Thema wird beschrieben, wie Sie die alte (jetzt veraltete) Lagerort-App konfigurieren. Wenn Sie Informationen darüber suchen, wie Sie die neue Mobile App der Lagerortverwaltung konfigurieren, lesen Sie [Installieren und Verbinden der Mobile App der Lagerortverwaltung](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
-> In diesem Thema wird beschrieben, wie Lagerort-App für Cloudbereitstellungen konfiguriert wird. Wenn Sie erfahren möchten, wie die Lagerort-App für lokale Bereitstellungen konfiguriert wird, finden Sie weitere Informationen unter [Lagerhaltung für lokale Bereitstellungen](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> In diesem Thema wird beschrieben, wie Lagerort-App für Cloudbereitstellungen konfiguriert wird. Wenn Sie erfahren möchten, wie die Lagerort-App für lokale Bereitstellungen konfiguriert wird, finden Sie weitere Informationen unter [Lagerhaltung für lokale Bereitstellungen](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 Die Warehouse-App ist im Google Play Store und im Microsoft Store verfügbar. Sie wird als eigenständige Komponente bereitgestellt. Daher müssen Sie sie auf jedes Gerät herunterladen und dann so konfigurieren, dass eine Verbindung mit der Microsoft Dynamics 365 Supply Chain Management-Umgebung hergestellt wird.
 
@@ -54,7 +54,7 @@ Verwenden Sie einen der folgenden Links, um die App herunterzuladen:
 - **Windows (UWP):** [Dynamics 365 for Finance and Operations – Lagerhaltung im Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Warehousing – Dynamics 365 im Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-Bei kleineren Bereitstellungen können Sie die App über den entsprechenden Store auf jedem Gerät installieren und anschließend die Verbindung zu den von Ihnen verwendeten Umgebungen manuell konfigurieren. In der Warehouse-App ab Version 1.7.0.0 können Sie jedoch auch die App-Bereitstellung und/oder -Konfiguration automatisieren. Dieser Ansatz ist möglicherweise praktisch, wenn Sie viele Geräte verwalten und eine Lösung zur Verwaltung mobiler Geräte und zur Verwaltung mobiler Anwendungen wie [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) verwenden. Weitere Informationen dazu, wie Sie Intune zum Hinzufügen von Anwendungen verwenden, finden Sie unter [Microsoft Intune Apps hinzufügen](https://docs.microsoft.com/mem/intune/apps/apps-add).
+Bei kleineren Bereitstellungen können Sie die App über den entsprechenden Store auf jedem Gerät installieren und anschließend die Verbindung zu den von Ihnen verwendeten Umgebungen manuell konfigurieren. In der Warehouse-App ab Version 1.7.0.0 können Sie jedoch auch die App-Bereitstellung und/oder -Konfiguration automatisieren. Dieser Ansatz ist möglicherweise praktisch, wenn Sie viele Geräte verwalten und eine Lösung zur Verwaltung mobiler Geräte und zur Verwaltung mobiler Anwendungen wie [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) verwenden. Weitere Informationen dazu, wie Sie Intune zum Hinzufügen von Anwendungen verwenden, finden Sie unter [Microsoft Intune Apps hinzufügen](/mem/intune/apps/apps-add).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Webdienstanwendung in Azure Active Directory erstellen
 
@@ -89,11 +89,11 @@ Sie müssen eine Webdienstanwendung für den Supply Chain Management-Mandanten i
 
 Weitere Informationen zum Einrichten von Webdienstanwendungen in Azure AD finden Sie in den folgenden Ressourcen:
 
-- Anweisungen zum Einrichten von Webdienstanwendungen mit Windows PowerShell in Azure AD finden Sie unter [Vorgehensweise: Azure PowerShell zum Erstellen eines Dienstprinzipals mit einem Zertifikat verwenden](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- Anweisungen zum Einrichten von Webdienstanwendungen mit Windows PowerShell in Azure AD finden Sie unter [Vorgehensweise: Azure PowerShell zum Erstellen eines Dienstprinzipals mit einem Zertifikat verwenden](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - Ausführliche Informationen zum manuellen Erstellen einer Webdienstanwendung in Azure AD finden Sie in den folgenden Themen:
 
-    - [Schnellstart: Eine Anwendung bei der Microsoft Identity Platform registrieren](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Vorgehensweise: Das Portal verwenden, um eine Azure AD-Anwendung- und einen -Dienstprinzipal zu erstellen, die auf Ressourcen zugreifen können](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Schnellstart: Eine Anwendung bei der Microsoft Identity Platform registrieren](/azure/active-directory/develop/quickstart-register-app)
+    - [Vorgehensweise: Das Portal verwenden, um eine Azure AD-Anwendung- und einen -Dienstprinzipal zu erstellen, die auf Ressourcen zugreifen können](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Erstellen und Konfigurieren eines Benutzerkontos in Supply Chain Management
 
@@ -121,7 +121,7 @@ Die Authentifizierung mit Azure AD bietet eine sichere Möglichkeit, ein mobiles
 
 Zertifikate können als geheime Schlüssel verwendet werden, um die Identität der Anwendung zu belegen, wenn ein Token angefordert wird. Der öffentliche Teil des Zertifikats wird in die App-Registrierung im Azure-Portal hochgeladen, während das vollständige Zertifikat auf jedem Gerät bereitgestellt werden muss, auf dem die Warehouse-App installiert ist. Ihre Organisation ist für die Verwaltung des Zertifikats in Bezug auf Rotation usw. verantwortlich. Sie können selbstsignierte Zertifikate verwenden, Sie sollten jedoch stets nicht exportierbare Zertifikate verwenden.
 
-Sie müssen das Zertifikat lokal auf jedem Gerät verfügbar machen, auf dem Sie die Warehouse-App ausführen. Weitere Informationen dazu, wie Sie bei Verwendung von Intune, Intune-gesteuerte Geräte verwalten, finden Sie unter [Zertifikate zur Authentifizierung in Microsoft Intune verwenden](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Sie müssen das Zertifikat lokal auf jedem Gerät verfügbar machen, auf dem Sie die Warehouse-App ausführen. Weitere Informationen dazu, wie Sie bei Verwendung von Intune, Intune-gesteuerte Geräte verwalten, finden Sie unter [Zertifikate zur Authentifizierung in Microsoft Intune verwenden](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Die Anwendung durch Importieren der Verbindungseinstellungen konfigurieren
 

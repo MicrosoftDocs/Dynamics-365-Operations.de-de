@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: aadf43d478eb4bf5af20df02dcc6399a7a2e71a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8e95fa06745840a6ba1782f135af0e7625c934aa
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743506"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893251"
 ---
 # <a name="expense-management-power-bi-content"></a>Power BI-Inhalt der Ausgabenverwaltung
 
@@ -41,7 +41,7 @@ Zwei  Power BI  Inhaltspakete sind für die Verwendung mit der Ausgabenverwaltun
 Alle Beträge werden in der Unternehmenswährung angezeigt. Daten für alle Unternehmen werden angezeigt, aber Sie können nach Bedraf einen Unternehmensfilter hinzufügen. 
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
-Sie finden die Dateien Administrator Ausgaben Dashboard.pbix und Persönliche Ausgaben Dashboard.pbix Power BI Inhalt in der freigegebenen Anlagenbibliothek in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie den Inhalt herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+Sie finden die Dateien Administrator Ausgaben Dashboard.pbix und Persönliche Ausgaben Dashboard.pbix Power BI Inhalt in der freigegebenen Anlagenbibliothek in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie den Inhalt herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 Der Inhalt ist vom Ausgabenverwaltungsarbeitsbereich als eingebetteter Power BI Inhalt verfügbar. Jeder Ausgabeneneigentümer kann selbst auf persönliche Ausgaben zugreifen, während nur Kreditorenkonten-Sachbearbeiter und Manager Zugriff auf Administratorinhalte haben, um alle Ausgabenendaten anzuzeigen.
 
 ## <a name="refreshing-the-power-bi-content"></a>Aktualisieren des Power BI Inhalts

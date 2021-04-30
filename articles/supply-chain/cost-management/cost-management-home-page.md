@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1594babd6f27a6af867267d2ae745549355d3c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a42709621c692bb9a20ade0d1835893f534ec4e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839366"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908781"
 ---
 # <a name="cost-management-home-page"></a>Startseite für die Kostenrechnung
 
@@ -43,7 +43,7 @@ Sie können auf Lagerbuchhaltungs- und Fertigungskostenrechnung über die Arbeit
 
 Mit der Fertigungskostenrechnung können Sie [Auftragskalkulation](production-order-cost-analysis.md) in Produktionsaufträgen und in den Chargenaufträgen wie auch die [Nachkalkulation für Produktionskosten](backflush-costing.md) in Lean Manufacturing ermöglichen.
 
-Der [Power BI-Inhalt zur Kostenverwaltung](../../dev-itpro/analytics/cost-management-content-pack.md) bietet Verwaltungseinblicke in den Bestand und RIF-Bestand (Ressource in Fertigung), und wie die Kosten nach Kategorie im Laufe der Zeit hindurch fließen. Die Informationen können auch als detaillierte Ergänzung der Finanzaufstellung verwendet werden.
+Der [Power BI-Inhalt zur Kostenverwaltung](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) bietet Verwaltungseinblicke in den Bestand und RIF-Bestand (Ressource in Fertigung), und wie die Kosten nach Kategorie im Laufe der Zeit hindurch fließen. Die Informationen können auch als detaillierte Ergänzung der Finanzaufstellung verwendet werden.
 
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen
 
@@ -57,7 +57,7 @@ Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics
 
 #### <a name="blogs"></a>Blogs
 
-Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Kostenverwaltung im [Dynamics AX Manufacturing R&D Team-Blog](https://blogs.msdn.microsoft.com/axmfg) und [Supply Chain Management in Dynamics AX R&D Team-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm). Auch wenn einige dieser Beiträge für die ältere Version von Kostenverwaltung verfasst wurden, gelten die gleichen Konzepte noch und die Prozeduren sind in der aktuellen Version ebenfalls vergleichbar.
+Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Kostenverwaltung im [Dynamics AX Manufacturing R&D Team-Blog](/archive/blogs/axmfg/) und [Supply Chain Management in Dynamics AX R&D Team-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm). Auch wenn einige dieser Beiträge für die ältere Version von Kostenverwaltung verfasst wurden, gelten die gleichen Konzepte noch und die Prozeduren sind in der aktuellen Version ebenfalls vergleichbar.
 
 #### <a name="task-guides"></a>Aufgabenleitfäden
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dc53d2c40414993e43ac90ce4f878c7d1c425eb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832129"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909352"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Vorschau auf Dynamics 365 Supply Chain Management 10.0.18 (Mai 2021)
 
@@ -35,15 +35,15 @@ In diesem Thema werden die Funktionen aufgeführt, die in der Microsoft Dynamics
 
 ## <a name="features-included-in-this-release"></a>In dieser Version enthaltene Funktionen
 
-Die folgenden Funktionen sind in diesem Release enthalten. Folgen Sie den Links zu [Release-Plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), um die offiziellen Veröffentlichungstermine für jede Funktion anzuzeigen.
+Die folgenden Funktionen sind in diesem Release enthalten. Folgen Sie den Links zu [Release-Plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), um die offiziellen Veröffentlichungstermine für jede Funktion anzuzeigen.
 
-- Automatische Freigabe von Einkaufsbestellungen (Erweiterung für [Lagerort-Ausführung mit Scale-Units in der Cloud](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Weitere Informationen finden Sie unter [Arbeitsauslastungen bei der Lagerortverwaltung für Scale-Units in der Cloud und am Rand](../cloud-edge/cloud-edge-workload-warehousing.md).
+- Automatische Freigabe von Einkaufsbestellungen (Erweiterung für [Lagerort-Ausführung mit Scale-Units in der Cloud](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Weitere Informationen finden Sie unter [Arbeitsauslastungen bei der Lagerortverwaltung für Scale-Units in der Cloud und am Rand](../cloud-edge/cloud-edge-workload-warehousing.md).
 
-- [Leistungsverbesserungen für Bestände im Unternehmensmaßstab und Archivierung](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Weitere Informationen finden Sie unter [Archivieren von Transaktionen im Bestand](../inventory/archive-inventory-transactions.md)
+- [Leistungsverbesserungen für Bestände im Unternehmensmaßstab und Archivierung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Weitere Informationen finden Sie unter [Archivieren von Transaktionen im Bestand](../inventory/archive-inventory-transactions.md)
 
-- [Rebate-Verwaltung](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Weitere Informationen finden Sie unter [Übersicht über das Modul zur Rückvergütungsverwaltung](../rebate-management/rebate-management-overview.md)
+- [Rebate-Verwaltung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Weitere Informationen finden Sie unter [Übersicht über das Modul zur Rückvergütungsverwaltung](../rebate-management/rebate-management-overview.md)
 
-- Vereinfachte Schnittstelle nur für das Ein- und Ausbuchen (Erweiterung für [Erweiterte Produktionsausführungsoberfläche für die Fertigung](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Weitere Informationen finden Sie unter [Konfigurieren Sie die Produktionsausführungsoberfläche](../production-control/production-floor-execution-configure.md).
+- Vereinfachte Schnittstelle nur für das Ein- und Ausbuchen (Erweiterung für [Erweiterte Produktionsausführungsoberfläche für die Fertigung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Weitere Informationen finden Sie unter [Konfigurieren Sie die Produktionsausführungsoberfläche](../production-control/production-floor-execution-configure.md).
 
 Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können. Einige der aufgelisteten Funktionen befinden sich noch in der Vorschau, während andere möglicherweise bereits allgemein verfügbar sind. 
 
@@ -70,7 +70,7 @@ Melden Sie sich bei Lifecycle Services (LCS) an, um Informationen zu den Fehlerb
 
 Sie möchten Informationen über zukünftige und vor Kurzem veröffentlichte Funktionen unserer Unternehmens-Apps oder -Plattformen erhalten?
 
-Testen Sie [Dynamics 365: 2021 Release Welle 1 Plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). Hier finden Sie zentral und übersichtlich in einem Dokument alle Informationen, die Sie für Ihre Planung benötigen.
+Testen Sie [Dynamics 365: 2021 Release Welle 1 Plan](/dynamics365-release-plan/2021wave1/). Hier finden Sie zentral und übersichtlich in einem Dokument alle Informationen, die Sie für Ihre Planung benötigen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Entfernte und veraltete Supply Chain Management-Funktionen
 

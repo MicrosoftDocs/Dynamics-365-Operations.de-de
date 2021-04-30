@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05b5126b29351ca3093e75e878682f7a07186898
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a39dbdcae29df5e838673dc1fe77ae7e76ebfc86
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752965"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908340"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Anzeigen und Aktualisieren von Entitätsdaten mit Excel 
 
@@ -45,7 +45,7 @@ Weitere Informationen zur Verwendung des Excel-Add-Ins bietet das kurze Video [E
 2. Klicken Sie auf eine **In Excel öffnen**-Option, um die generierte Arbeitsmappe zu öffnen. Diese Arbeitsmappe besitzt Bindungsinformationen für die Entität, einen Mauszeiger auf Ihre Umgebung und einen Zeiger auf das Excel-Add.
 3. Klicken Sie in Excel auf die Option zum **Bearbeiten aktiveren**, damit das Excel Add-In ausgeführt werden kann. Das Excel-Add-In wird in einem Bereich auf der rechten Seite des Excel-Fensters ausgeführt.
 4. Wenn Sie das Excel-Add-In zum ersten Mal ausführen, klicken Sie auf **Diesem Add-In vertrauen**.
-5. Klicken Sie nach Aufforderung auf **Anmelden** und melden Sie sich mit den Anmeldedaten an, mit denen Sie sich bei der Finance and Operations-App angemeldet haben. Das Excel-Add-In verwendet einen vorherigen Anmeldungskontext aus dem Browser und meldet Sie automatisch an, wenn dies möglich ist. (Informationen zum Browser, der basierend auf dem Betriebssystem verwendet wird, finden Sie unter [Von Office-Add-Ins verwendete Browser](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.). Überprüfen Sie den Benutzernamen oben rechts im Excel-Add-In, um sicherzustellen, dass die Anmeldung erfolgreich war. 
+5. Klicken Sie nach Aufforderung auf **Anmelden** und melden Sie sich mit den Anmeldedaten an, mit denen Sie sich bei der Finance and Operations-App angemeldet haben. Das Excel-Add-In verwendet einen vorherigen Anmeldungskontext aus dem Browser und meldet Sie automatisch an, wenn dies möglich ist. (Informationen zum Browser, der basierend auf dem Betriebssystem verwendet wird, finden Sie unter [Von Office-Add-Ins verwendete Browser](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.). Überprüfen Sie den Benutzernamen oben rechts im Excel-Add-In, um sicherzustellen, dass die Anmeldung erfolgreich war. 
 
 Das Excel-Add-In liest automatisch die Daten für die Entität, die Sie ausgewählt haben. Beachten Sie, dass keine Daten in der Arbeitsmappe sind, bis sie vom Excel-Add-In eingelesen werden.
 
@@ -60,7 +60,7 @@ Das Excel-Add-In liest automatisch die Daten für die Entität, die Sie ausgewä
 
 6. Klicken Sie auf **OK** und dann auf **Ja**, um die Änderung zu bestätigen. Das Excel-Add-In wird neu gestartet und lädt die Metadaten.
 
-    Die Schatfläche für den **Entwurf** ist jetzt verfügbar. Verfügt das Excel-Add-In über eine Schaltfläche **Applets laden**, sind Sie möglicherweise nicht als der korrekte Benutzer angemeldet. Weitere Informationen finden Sie unter "Die 'Applets laden'-Schaltfläche wird angezeigt" im Abschnitt [Problembehandlung](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) in diesem Thema.
+    Die Schatfläche für den **Entwurf** ist jetzt verfügbar. Verfügt das Excel-Add-In über eine Schaltfläche **Applets laden**, sind Sie möglicherweise nicht als der korrekte Benutzer angemeldet. Weitere Informationen finden Sie unter "Die 'Applets laden'-Schaltfläche wird angezeigt" im Abschnitt [Problembehandlung](../office-integration/use-excel-add-in.md#troubleshooting) in diesem Thema.
 
 7. **Design** auswählen. Das Excel-Add-In ruft die Entitätsmetadaten ab.
 8. **Tabelle hinzufügen** auswählen. Eine Liste von Entitäten wird angezeigt. Die Entitäten werden in "Name - Beschriftungs"-Format angezeigt.
@@ -138,7 +138,7 @@ Es gibt mehrere Probleme, die ganz einfach behoben werden können.
 
 - **Die "Applets laden"-Schaltfläche wird angezeigt.** – Verfügt das Excel-Add-In nach der Anmeldung über eine Schaltfläche Applets laden, sind Sie möglicherweise nicht als der korrekte Benutzer angemeldet. **Applets laden**, sind Sie möglicherweise nicht als der korrekte Benutzer angemeldet. Zur Behebung dieses Problems sollten Sie sicherstellen, dass der korrekte Benutzername in der oberen rechten Ecke des Excel-Add-Ins angezeigt wird. Wenn ein falscher Benutzername angezeigt wird, klicken Sie auf dieses Symbol, melden Sie sich ab, und melden Sie sich dann wieder an.
 - **Sie erhalten eine "Nicht zulässig"-Meldung.** – Wenn Sie eine "Nicht zulässig"-Meldung erhalten, während das Excel-Add-In die Metadaten lädt, dann verfügt das Konto, mit dem Sie beim Excel-Add-In angemeldet sind, nicht über die Berechtigungen, den gewünschten Dienst, die gewünschte Instanz oder die gewünschte Datenbank zu verwenden. Zur Behebung dieses Problems sollten Sie sicherstellen, dass der korrekte Benutzername in der oberen rechten Ecke des Excel-Add-Ins angezeigt wird. Wenn ein falscher Benutzername angezeigt wird, klicken Sie auf dieses Symbol, melden Sie sich ab, und melden Sie sich dann wieder an.
-- **Eine leere Webseite wird über Excel angezeigt** – Wenn eine leere Webseite während des Anmeldungsprozesses geöffnet wird, benötigt das Konto AD FS, aber die Excel-Version, mit der das Excel-Add-In ausgeführt wird, ist veraltet und reicht für das Laden des Anmeldedialogs nicht aus. Zur Behebung dieses Problems aktualisieren Sie die Excel-Version, die Sie verwenden. Zum Aktualisieren der Excel-Version, während Sie sich in einem Unternehmen mit einem verzögerten Kanal befinden, nutzen Sie das [Office-Bereitstellungstool](https://technet.microsoft.com/library/jj219422.aspx) um [vom verzögerten Kanal zum aktuellen Kanal zu wechseln](https://technet.microsoft.com/library/mt455210.aspx).
+- **Eine leere Webseite wird über Excel angezeigt** – Wenn eine leere Webseite während des Anmeldungsprozesses geöffnet wird, benötigt das Konto AD FS, aber die Excel-Version, mit der das Excel-Add-In ausgeführt wird, ist veraltet und reicht für das Laden des Anmeldedialogs nicht aus. Zur Behebung dieses Problems aktualisieren Sie die Excel-Version, die Sie verwenden. Zum Aktualisieren der Excel-Version, während Sie sich in einem Unternehmen mit einem verzögerten Kanal befinden, nutzen Sie das [Office-Bereitstellungstool](/deployoffice/overview-office-deployment-tool) um [vom verzögerten Kanal zum aktuellen Kanal zu wechseln](/deployoffice/overview-update-channels).
 - **Sie erhalten beim Veröffentlichen von Datenänderungen ein Timeout** – Wenn Sie Meldungen zu Timeouts erhalten, während Sie versuchen, Datenänderungen in einer Entität zu veröffentlichen, sollten Sie die Größe des Veröffentlichungsstapels für die betroffene Arbeitsmappe reduzieren. Bei Entitäten, die bei Datensatzänderungen eine umfangreiche Logik auslösen, müssen Aktualisierungen möglicherweise in kleineren Stapeln gesendet werden, um Timeouts zu vermeiden.
 
 

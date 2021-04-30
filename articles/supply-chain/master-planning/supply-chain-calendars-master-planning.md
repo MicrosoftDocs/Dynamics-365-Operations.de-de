@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dcc66549bf6bdd67438bea9ac3c29c3f01e2674e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7a53efb753a75916c85dc4a45a3c64872a7f5d32
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841766"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908370"
 ---
 # <a name="calendars-and-master-planning"></a>Kalender und Produktprogrammplanung
 
@@ -90,7 +90,7 @@ Um die Termine anzugeben, an denen ein Kunde Lieferungen annehmen kann, können 
 
 Beachten Sie, dass es möglich ist, nur einen Kalender pro Kunde einzubinden. Wenn Sie für jede verschiedene Adresse eines Kunden einen Kalender einbinden müssen, können Sie pro Adresse einen Kunden anlegen und ihm dann den entsprechenden Kalender zuordnen. 
 
-Das gewünschte Zugangsdatum auf den Kundenauftragszeilen wird durch den Kundenkalender und die Steuerung des Liefertermins beeinflusst. Weitere Informationen zur Berechnung des frühesten Liefertermins finden Sie unter [Lieferterminzusage](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Das gewünschte Zugangsdatum auf den Kundenauftragszeilen wird durch den Kundenkalender und die Steuerung des Liefertermins beeinflusst. Weitere Informationen zur Berechnung des frühesten Liefertermins finden Sie unter [Lieferterminzusage](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Versandkalender für eine juristische Person
 Um die Daten anzugeben, an denen eine juristische Person Waren versenden kann, können Sie unter **Organisationsverwaltung > Organisationen > Juristische Personen** einen Versandkalender einrichten. Wählen Sie die juristische Person aus und fügen Sie den Kalender auf der Registerkarte **Außenhandel und Logistik** im Feld **Versandkalender** hinzu. Der Versandkalender dient als Quelle für Standardwerte für alle Lagerkalender der juristischen Person. 

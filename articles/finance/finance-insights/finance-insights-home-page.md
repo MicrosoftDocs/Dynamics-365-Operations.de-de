@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 502205f76f1519153caf6e976ffbb5eb9412c4ea
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1f034017c2cd8736c1e3ce286924bf305961390
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818559"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898059"
 ---
 # <a name="finance-insights-home-page-preview"></a>Homepage zu Finance Insights (Vorschau)
 
@@ -31,7 +31,7 @@ Finance Insights bietet konfigurierbare und erweiterbare Modelle, mit denen Sie 
 
 Die Finance Insights-Vorschau ist für Testbereitstellungen in den Vereinigten Staaten von Amerika, Europa und Großbritannien verfügbar. Microsoft fügt schrittweise Unterstützung für weitere Regionen hinzu.
 
-Vorschaufunktionen können und sollten nur in Sandbox-Umgebungen der Stufe 2 aktiviert werden. Einrichtungs- und künstliche Intelligenz(KI)-Mopelle, die in einer Sandbox-Umgebung erstellt werden, können nicht in eine Produktionsumgebung migriert werden. Weitere Informationen finden Sie unter [Ergänzende Nutzungsbedingungen für Microsoft Dynamics 365 Vorschauen](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+Vorschaufunktionen können und sollten nur in Sandbox-Umgebungen der Stufe 2 aktiviert werden. Einrichtungs- und künstliche Intelligenz(KI)-Mopelle, die in einer Sandbox-Umgebung erstellt werden, können nicht in eine Produktionsumgebung migriert werden. Weitere Informationen finden Sie unter [Ergänzende Nutzungsbedingungen für Microsoft Dynamics 365 Vorschauen](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -43,7 +43,7 @@ Um sich für das Vorschauprogramm zu bewerben, füllen Sie das Feld aus [Finance
 
 ### <a name="system-requirements"></a>Systemanforderungen
 
-Für die Finance Insights-Vorschau ist eine Sandbox-Umgebung der Stufe 2 (Multi-Box) erforderlich. Weitere Hintergrundinformationen über Umgebungen finden Sie unter [Umgebungsplanung](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+Für die Finance Insights-Vorschau ist eine Sandbox-Umgebung der Stufe 2 (Multi-Box) erforderlich. Weitere Hintergrundinformationen über Umgebungen finden Sie unter [Umgebungsplanung](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Versionsanforderungen
 
@@ -79,7 +79,7 @@ Sie müssen ein Datenintegratorprojekt erstellen, damit Daten, die vom Machine L
 Wenn Sie die Konfigurationsschritte abgeschlossen und Demodaten eingerichtet haben, müssen Sie alle Funktionen aktivieren und einrichten, die Sie verwenden möchten: Zahlungsvorhersagen für Kunden, Cashflow-Planungen und Budgetvorschläge.
 
 ### <a name="enable-customer-payment-predictions"></a>Aktivieren der Zahlungsvorhersagen für Debitoren
-Wenn Sie Demodaten zum Testen von Debitorenzahlungsvorhersagen verwenden, müssen Sie möglicherweise zusätzliche Demodaten importieren, um Ihr KI-Modell erfolgreich zu erstellen. Informationen zu den spezifischen Schritten zum Importieren von Demodaten finden Sie unter [Einrichten der Demodaten für Zahlungsvorhersagen](set-up-demo-data.md).
+Wenn Sie Demodaten zum Testen von Debitorenzahlungsvorhersagen verwenden, müssen Sie möglicherweise zusätzliche Demodaten importieren, um Ihr KI-Modell erfolgreich zu erstellen. 
 
 Um Zahlungsvorhersagen für Debitoren zu aktivieren, müssen Sie eine Reihe von Schritten ausführen, um ein Machine Learning-Modell zu erstellen, das die Daten Ihres Unternehmens verwendet, um anhand der Daten Ihres Unternehmens Vorhersagen darüber zu erstellen, wann Debitoren voraussichtlich ausstehende Rechnungen bezahlen und wann bestimmte Rechnungen wahrscheinlich bezahlt werden. Weitere Informationen und die spezifischen Schritte finden Sie unter [Aktivieren der Zahlungsvorhersagen für Debitoren](enable-cust-paymnt-prediction.md). 
 

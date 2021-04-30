@@ -13,12 +13,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a95dd6caf01e2c1079d6d9690b52e9ef65d87ea8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0df3f840162cf93c9e9f5f34a22e8b49171ea71f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839959"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891160"
 ---
 # <a name="import-iso20022-files"></a>ISO20022-Dateien importieren
 
@@ -114,7 +114,7 @@ Wenn Sie eine Formatkonfiguration in LCS importieren, importieren Sie die gesamt
  - **Pain.002** – Dieses Format wird zusammen mit dem Zahlungsmodell verwendet, das sich auf das ISO20022 Ziel bezieht, um die Datei pain.002 in Kreditorenzahlungsübergangserfassung zu importieren
  - **Camo.054** – Dieses Format wird zusammen mit dem Zahlungsmodell verwendet, das sich auf das ISO20022 Ziel bezieht, um die Datei camt.054 in Kreditorenzahlungsübergangserfassung zu importieren Dieselbe Formatkonfiguration wird in den Debitorenzahlungsimportfunktionen verwendet, aber unterschiedliche Zuordnung wird im Zahlungsmodell verwendet, das zur Konfiguration des Ziels ISO20022 bezieht.
 
-Weitere Informationen über die elektronische Berichterstattung finden Sie unter [Elektronischer Berichterstellungsüberblick](../../dev-itpro/analytics/general-electronic-reporting.md).
+Weitere Informationen über die elektronische Berichterstattung finden Sie unter [Elektronischer Berichterstellungsüberblick](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Kreditorenzahlungen mithilfe eines ISO20022-Zahlungsformats erstellen und exportieren](./tasks/create-export-vendor-payments-iso20022-payment-format.md)

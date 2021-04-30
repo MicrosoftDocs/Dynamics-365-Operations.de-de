@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f2f40bec79c0b5ce26882e1146c1751b9b6eee01
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1c8d939fef4fd0f9e189ca37318c2c0306511785
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753311"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893907"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -159,7 +159,7 @@ Einer einzelnen **Blatt**-Komponente können Sie mehrere **Fußzeile**-Komponent
 
 Fügen Sie unter der hinzugefügten **Fußzeile**-Komponente die erforderlichen verschachtelten Komponenten der Typen **Text\\String**, **Text\\DateTime** oder eines anderen Typs hinzu. Konfigurieren Sie die Bindungen für diese Komponenten, um anzugeben, wie Ihre Seitenfußzeile ausgefüllt werden soll.
 
-Sie können auch spezielle [Formatierungscodes](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) verwenden, um den Inhalt einer generierten Fußzeile korrekt zu formatieren. Befolgen Sie die Schritte in [Beispiel 1](#example-1) im weiteren Verlauf des Themas, um zu erfahren, wie Sie diesen Ansatz verwenden.
+Sie können auch spezielle [Formatierungscodes](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) verwenden, um den Inhalt einer generierten Fußzeile korrekt zu formatieren. Befolgen Sie die Schritte in [Beispiel 1](#example-1) im weiteren Verlauf des Themas, um zu erfahren, wie Sie diesen Ansatz verwenden.
 
 > [!NOTE]
 > Berücksichtigen Sie beim Konfigurieren von EB-Formaten unbedingt die [Spezifikationen und Beschränkungen in Excel](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) sowie die maximale Zeichenanzahl für eine einzelne Kopf- oder Fußzeile.

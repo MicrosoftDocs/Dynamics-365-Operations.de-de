@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22a372ad4bfcae4a1d66635921a680cdb04cc2f0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1231c942e2ab3dd6b48655ac8c6e24c87165c009
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840845"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908542"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Benutzer für Kreditor-Kooperationen verwalten
 
@@ -62,7 +62,7 @@ Bevor Sie anfordern können, dass ein neuer Benutzer bereitgestellt wird, muss d
 4. Wählen Sie im Abschnitt **Benutzerrollen zuweisen** das Kontrollkästen **Zuweisen** für die Sicherheitsrollen, die der neue Benutzer besitzen sollte.
 5. Klicken Sie auf **Absenden**.
 
-Wenn die Kreditorenbenutzeranforderung übermittelt wird, wird das Feld **Kreditorenzusammenarbeit erlaubt** für das ausgewählte Kreditorenkonto auf **Ja** festgelegt und es wird ein Benutzeranforderungsworkflow gestartet. Im Rahmen des Workflows wird ein neuer Benutzer erstellt und die Sicherheitsrollen zugewiesen. Darüber hinaus ist eine Azure B2B-Dienstleistung aktiviert, die die Interaktion mit dem Azure Portal initiiert und ein neues oder vorhandenes AAD-Konto dem Supply Chain Management-Benutzer zuordnet. Weitere Informationen finden Sie unter [Was ist die Azure AD B2B-Zusammenarbeit?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+Wenn die Kreditorenbenutzeranforderung übermittelt wird, wird das Feld **Kreditorenzusammenarbeit erlaubt** für das ausgewählte Kreditorenkonto auf **Ja** festgelegt und es wird ein Benutzeranforderungsworkflow gestartet. Im Rahmen des Workflows wird ein neuer Benutzer erstellt und die Sicherheitsrollen zugewiesen. Darüber hinaus ist eine Azure B2B-Dienstleistung aktiviert, die die Interaktion mit dem Azure Portal initiiert und ein neues oder vorhandenes AAD-Konto dem Supply Chain Management-Benutzer zuordnet. Weitere Informationen finden Sie unter [Was ist die Azure AD B2B-Zusammenarbeit?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Benutzer deaktivieren
 

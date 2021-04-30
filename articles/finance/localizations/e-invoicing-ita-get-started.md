@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840099"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894776"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Erste Schritte mit der elektronischen Rechnungsstellung für Italien
 
@@ -201,7 +201,7 @@ Nachdem Sie die Funktion **Integration der konfigurierbaren elektronischen Rechn
 Sie können die Dokumente manuell übermitteln, basierend auf Ihrer Nachfrage nach elektronischen Rechnungsdokumenten.
 
 > [!NOTE]
-> Bevor Sie fortfahren, stellen Sie sicher, dass die für elektronische Rechnungen in Italien erforderliche Einrichtung abgeschlossen wurde. Weitere Informationen finden Sie unter [Elektronische Rechnungen für Kunden](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Beachten Sie, dass einige der in diesem Thema beschriebenen Einrichtungsschritte aufgrund der Aktivierung der elektronischen Rechnungsstellung möglicherweise nicht verfügbar sind.
+> Bevor Sie fortfahren, stellen Sie sicher, dass die für elektronische Rechnungen in Italien erforderliche Einrichtung abgeschlossen wurde. Weitere Informationen finden Sie unter [Elektronische Rechnungen für Kunden](./emea-ita-e-invoices.md). Beachten Sie, dass einige der in diesem Thema beschriebenen Einrichtungsschritte aufgrund der Aktivierung der elektronischen Rechnungsstellung möglicherweise nicht verfügbar sind.
 
 1. Navigieren Sie zu **Organisationsverwaltung \> Periodisch \> Elektronische Dokumente \> Elektronische Dokumente übermitteln**.
 2. Legen Sie für die erste Übermittlung irgendeines Dokuments die Option **Dokumente erneut übermitteln** auf **Nein** fest. Wenn Sie ein Dokument erneut über den Service übermitteln müssen, legen Sie diese Option auf **Ja** fest.

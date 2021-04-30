@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832393"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899166"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -33,13 +33,13 @@ ms.locfileid: "5832393"
 
 ## <a name="warehouse-execution-on-scale-units"></a>Lagerort-Ausführung auf Scale-Units
 
-Diese Funktion ermöglicht es Scale-Units, ausgewählte Prozesse aus den Funktionalitäten der Lagerortverwaltung auszuführen. Cloud-Scale-Units führen ihre Arbeitsauslastungen in der Cloud aus, indem sie dedizierte Verarbeitungskapazität in Ihrer ausgewählten Microsoft Azure-Region nutzen. Für Edge-Scale-Units können Sie einige Arbeitsauslastungen unabhängig vor Ort ausführen, auch wenn die Scale-Units vorübergehend von der Cloud getrennt sind.
+Diese Funktion ermöglicht es Scale-Units, ausgewählte Prozesse aus den Funktionalitäten der Lagerortverwaltung auszuführen.
 
 In diesem Thema werden Lagerortverwaltungs-Ausführungen in einem Lagerort, der als Scale-Unit definiert ist, als *Lagerort Execution System* (*WES*) bezeichnet.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Sie müssen über einen Dynamics 365 Supply Chain Management-Hub und eine Scale-Unit verfügen, die mit der Arbeitsauslastung der Lagerortverwaltung bereitgestellt wurde. Weitere Informationen über die Architektur und den Bereitstellungsprozess finden Sie unter [Cloud- und Edge-Scale-Einheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung](cloud-edge-landing-page.md).
+Sie müssen über einen Dynamics 365 Supply Chain Management-Hub und eine Scale-Unit verfügen, die mit der Arbeitsauslastung der Lagerortverwaltung bereitgestellt wurde. Weitere Informationen über die Architektur und den Bereitstellungsprozess finden Sie unter [Mit Skalierungseinheiten die Resilienz von Arbeitsauslastungen in Supply Chain Management steigern](cloud-edge-landing-page.md).
 
 ## <a name="how-the-wes-workload-works-on-scale-units"></a>Wie die WES-Arbeitsauslastung auf Scale-Units funktioniert
 
@@ -225,7 +225,7 @@ Die folgende Tabelle zeigt, welche Funktionen im Eingang unterstützt werden und
 | Kennzeichenempfang und -einlagerung                              | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nr. |
 | Artikelempfang und -einlagerung für Umlagerungsauftrag                        | Ja | Nr. |
 | Umlagerungsauftragsposition – Empfang und Einlagerung                        | Ja | Nr. |
-| Arbeit stornieren (eingehend)                                              | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | <p>Ja, aber nur, wenn die Option <b>Bon bei Stornierung von Arbeit abmelden</b> (auf der Seite <b>Parameter der Lagerortverwaltung</b>) deaktivier ist</p> |
+| Arbeit stornieren (eingehend)                                              | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | <p>Ja, aber nur, wenn die Option <b>Bon bei Stornierung von Arbeit abmelden</b> (auf der Seite <b>Parameter der Lagerortverwaltung</b>) deaktiviert ist</p> |
 | Einkaufsbestellung Wareneingangsbearbeitung                          | Ja | Nr. |
 | Bestelleingang mit Unterlieferung                        | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Ja, aber nur, wenn Sie eine Stornoanforderung vom Hub aus stellen |
 | Bestelleingang mit Überlieferung                        | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Ja  |
@@ -297,6 +297,8 @@ Bei der Arbeitsauslastung in Skalierungsheiten können Sie die folgenden Batchau
 - Verarbeiten von Wellentabellen-Sätzen
 - Lagerorthub zu Skalierungseinheit-Nachrichtenprozessor
 - Mengenaktualisierungsanforderungen für Lagerortauftragspositionen verarbeiten
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

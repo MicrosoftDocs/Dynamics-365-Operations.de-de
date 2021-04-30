@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Finance.
 author: roschlom
-ms.date: 02/08/2021
+ms.date: 04/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5a8f5dbc52eab78697de0d3a48d8cceb42c36540
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e0db5c35e58ab7a7cbf31642072d25ee5d8ba868
+ms.sourcegitcommit: 04817103dc8e87a679d371575927284b8ce080b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836912"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5898286"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -31,7 +31,20 @@ In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entf
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
 > [!NOTE]
-> Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+> Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.20
+
+### <a name="rtir-query-invoice-data-request-hu-format-configuration"></a>Konfiguration des Formats der RTIR-Abfrage von Rechnungsdatenanforderungen (HU)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Ausgenommen von der Verarbeitung elektronischer Nachrichten für die Zusammenarbeit mit dem ungarischen Online-Abrechnungssystem |
+| **Ersetzt durch eine andere Funktion?**   | Nr. |
+| **Betroffene Produktbereiche**         | Bewerbung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Bis zum 15. April 2022 planen wir, die Konfiguration des Formats „RTIR-Abfrage von Rechnungsdatenanforderungen (HU)“ nicht mehr zu unterstützen. |
+
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.17
 

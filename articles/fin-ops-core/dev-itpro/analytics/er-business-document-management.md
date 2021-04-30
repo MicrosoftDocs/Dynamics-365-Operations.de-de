@@ -2,7 +2,7 @@
 title: Geschäftsdokumentverwaltung – Übersicht
 description: Dieses Thema enthält Informationen dazu, wie die Geschäftsdokumentverwaltungsfunktion des ER-Frameworks verwendet wird.
 author: NickSelin
-ms.date: 12/15/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5589925b7bfba3d9315c3828fd1ec5993a09a59
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01067a253651bbeddcc5f02c8c15c916b25b6684
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749536"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891304"
 ---
 # <a name="business-document-management-overview"></a>Geschäftsdokumentverwaltung – Übersicht
 
@@ -45,9 +45,9 @@ Um die Geschäftsdokumentverwaltung zur Bearbeitung von Vorlagen in Excel- oder 
 
 ## <a name="business-document-availability"></a>Geschäftsdokument-Verfügbarkeit
 
-Eine vollständige Liste aller Berichte, die für die Veröffentlichung im Oktober 2019 geplant sind, finden Sie unter [Konfigurierbare Berichterstellung für Geschäftsbelege in Word und Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
+Eine vollständige Liste aller Berichte, die für die Veröffentlichung im Oktober 2019 geplant sind, finden Sie unter [Konfigurierbare Berichterstellung für Geschäftsbelege in Word und Excel](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-Eine vollständige Liste aller Berichte, die für die Veröffentlichung im Oktober 2020 geplant sind, finden Sie unter [Konfigurierbare Geschäftsdokumente: Word-Vorlagen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
+Eine vollständige Liste aller Berichte, die für die Veröffentlichung im Oktober 2020 geplant sind, finden Sie unter [Konfigurierbare Geschäftsdokumente: Word-Vorlagen](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
 Weitere Berichte werden in zukünftigen Versionen verfügbar sein. Spezielle Benachrichtigungen über zusätzliche Berichte werden gesondert übermittelt. Informationen zum Überprüfen der Liste der derzeit verfügbaren Berichte finden Sie im Abschnitt [Liste der EB-Konfigurationen, die in Finance veröffentlicht wurden, um konfigurierbare Geschäftsdokumente zu unterstützen](#list-of-configurations-cbd) unten.
 
@@ -272,7 +272,23 @@ Die Option **Vorlage bearbeiten** ist für die ausgewählte Vorlage verfügbar. 
 
 ![Den Start des Bearbeitungsprozesses bestätigen, um eine neue Vorlage zu erstellen](./media/BDM-Overview-EditingTemplate4.png)
 
+Wenn es keinen Anbieter gibt, wird die Erstellung angeboten. Wenn es keinen aktiven Anbieter gibt, wird angeboten, ihn zur Aktivierung auszuwählen.
+
+Um einen Anbieter zu erstellen, ändern Sie den Namen des Anbieters im Feld **Name**, aktualisieren Sie die Internetadresse des neuen Anbieters im Feld **Internetadresse** und bestätigen Sie mit **OK**.
+
+   ![Einen neuen Anbieter in BDM erstellen](./media/bdm_create_provider.png)
+
+Um einen vorhandenen Anbieter zu aktivieren, wählen Sie den Namen des Anbieters im Feld **Konfigurationsanbieter** aus und aktivieren Sie den Anbieter dann mit **OK**.
+
+   ![Einen Anbieter in BDM aktivieren](./media/bdm_choose_provider.png)
+
+> [!NOTE]
+> Jede BDM-Vorlage verweist auf den Anbieter als Autor der Konfiguration. Aus diesem Grund ist für die Vorlage ein aktiver Anbieter erforderlich.
+
+
 Die Option **Neues Dokument** ist immer für eine Vorlage in einer ER-Formatkonfiguration verfügbar, die von einem aktuellen oder anderen Anbieter (in diesem Beispiel Microsoft) angeboten wird. Die bearbeitete Vorlage wird dann in einer neuen ER-Formatkonfiguration gespeichert, die automatisch generiert wird.
+
+
 
 ### <a name="start-editing-a-template"></a>Mit der Bearbeitung einer Vorlage beginnen
 
@@ -419,7 +435,7 @@ Höchstwahrscheinlich haben Sie sich bei der aktuellen Instanz der App der Azure
 
 ## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>Liste der EB-Konfigurationen, die in Finance veröffentlicht wurden, um konfigurierbare Geschäftsdokumente zu unterstützen
 
-Die [Liste](general-electronic-reporting.md#list-of-configurations) der EB-Konfigurationen für Finance wird ständig aktualisiert. Öffnen Sie das [globale Repository](er-download-configurations-global-repo.md), um die Liste der derzeit unterstützten EB-Konfigurationen zu überprüfen. Sie können das globale Repository [filtern](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo), um die Liste der EB-Konfigurationen zu überprüfen, die zur Unterstützung konfigurierbarer Geschäftsdokumente verwendet werden.
+Die [Liste](general-electronic-reporting.md#list-of-configurations) der EB-Konfigurationen für Finance wird ständig aktualisiert. Öffnen Sie das [globale Repository](er-download-configurations-global-repo.md), um die Liste der derzeit unterstützten EB-Konfigurationen zu überprüfen. Sie können das globale Repository [filtern](../../../finance/localizations/enhanced-filtering-global-repo.md), um die Liste der EB-Konfigurationen zu überprüfen, die zur Unterstützung konfigurierbarer Geschäftsdokumente verwendet werden.
 
 ![Filtern des Inhalts des globalen Repositorys auf der Konfigurationsrepository-Seite](./media/bdm-overview-filterglobalrepo.gif)
 

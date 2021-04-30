@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4679ce27b248770b9998914407cd2eb21d7dd16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825397"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909155"
 ---
 # <a name="create-purchase-orders"></a>Bestellungen erstellen
 
@@ -65,7 +65,7 @@ Manchmal möchten Sie die bestellte Menge teilen, so dass verschiedene Teile des
 Kosten können automatisch zu PO-Positionen hinzugefügt werden wenn automatische Zuschläge für den Kreditor oder Kreditorenzuschlagsgruppe und für den Artikel oder die Artikelzuschlagsgruppe eingerichtet wurden. Normalerweise werden Zuschläge jedoch manuell zum jeweiligen Auftrag hinzugefügt. Um eine Belastung hinzuzufügen, öffnen die Seite **Belastungen verwalten**, indem Sie die Aktion **Belastungen verwalten** im Menü **Finanzdaten** in der Ansicht **Positionen** nutzen. Der Vorteil beim Hinzufügen von Belastungen auf Bestellebene ist, dass die Belastung als Lagerkosten zugeordnet werden kann. Um Belastungscodes für Produktkosten einzurichten, verwenden Sie die Belastungsoption **Artikel**. Derartige Belastungstypen müssen vor der Genehmigung der Bestellung aus dem Bestellungskopf zugeordnet werden. Sie möchten z. B. Belastungen basierend auf der Menge in jeder Position zuweisen. Die Belastungskategorie wirkt sich auch darauf aus, wie die Belastungen berücksichtigt werden. Feste Belastungen legen beispielsweise einen festen Betrag fest. Prozentuale Belastungen werden als Prozentsatz des Nettobetrags für die Auftragsposition berechnet. POs können einer Auslastung zugewiesen werden. Die Auslastung kann eine Schätzung der erwarteten Ausgaben für die Transportkosten enthalten. Sie können diese Ausgabe von der Auslastung zurück zu den Bestellungspotionen zuweisen.
 
 ## <a name="purchase-order-actions"></a>Bestellungsaktionen
-Nachdem Sie den Kopf und die Positionen zur Bestellung hinzugefügt haben, müssen Sie oft zusätzliche Schritte ausführen, bevor die Bestellung bestätigt werden kann. Da so viele Optionen verfügbar sind, ist es unter Umständen hilfreich, die entsprechende Menüelement über [Aktion suchen](../../fin-and-ops/get-started/action-search.md) zu suchen.  
+Nachdem Sie den Kopf und die Positionen zur Bestellung hinzugefügt haben, müssen Sie oft zusätzliche Schritte ausführen, bevor die Bestellung bestätigt werden kann. Da so viele Optionen verfügbar sind, ist es unter Umständen hilfreich, die entsprechende Menüelement über [Aktion suchen](../../fin-ops-core/fin-ops/get-started/action-search.md) zu suchen.  
 
 Sie können Produkte in der Bestellung so konfigurieren, dass sie zusätzliche Artikel haben. Zusätzliche Artikel sind Produkte, die zusammen mit anderen Produkten erworben werden müssen oder erworben werden können. Zusätzliche Produkte können kostenlos als zugehörige Produkte hinzufügt werden. Möglicherweise können Sie entscheiden, ob sie dem Auftrag hinzufügen oder nicht hinzugefügt werden. Sie können die zusätzlichen Artikel nach jeder Auftragsposition die hinzugefügt wird überprüfen. Möglicherweise ist es jedoch einfacher, die zusätzlichen Artikel für alle Auftragspositionen über die Seite **Zusätzliche Artikel** zu überprüfen. Diese können sie über den Aktionsbereich öffnen.  
 

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: cd056798773bce492e429f8cca2ef39cb59bf739
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753815"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894171"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimieren großer Dokumente, die in der elektronischen Berichterstellung generiert werden 
 
 [!include [banner](../includes/banner.md)]
 
-Sie können das [Framework für die elektronische Berichterstellung (EB)](general-electronic-reporting.md) verwenden, um eine Lösung zu konfigurieren, die Transaktionsdaten abruft, um ein ausgehendes Dokument zu generieren. Dieses generierte Dokument ist möglicherweise sehr groß. Wenn dieser Dokumenttyp generiert wird, wird der Speicher des [Anwendungsobjektservers (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) zur Speicherung verwendet. Irgendwann muss das Dokument dann aus Ihrer Microsoft Dynamics 365 Finance-Anwendung heruntergeladen werden. Derzeit ist die maximale Größe eines einzelnen Dokuments, das in EB generiert werden kann, auf 2 Gigabyte (GB) begrenzt. Des Weiteren [begrenzt](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) Finance die Größe einer heruntergeladenene Datei derzeit auf 1 GB. Daher müssen Sie eine EB-Lösung konfigurieren, die die Wahrscheinlichkeit verringert, dass diese Einschränkungen überschritten werden und Sie eine Ausnahme **Stream war zu lang** oder **Überlauf oder Unterlauf in der Rechenoperation** erhalten.
+Sie können das [Framework für die elektronische Berichterstellung (EB)](general-electronic-reporting.md) verwenden, um eine Lösung zu konfigurieren, die Transaktionsdaten abruft, um ein ausgehendes Dokument zu generieren. Dieses generierte Dokument ist möglicherweise sehr groß. Wenn dieser Dokumenttyp generiert wird, wird der Speicher des [Anwendungsobjektservers (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) zur Speicherung verwendet. Irgendwann muss das Dokument dann aus Ihrer Microsoft Dynamics 365 Finance-Anwendung heruntergeladen werden. Derzeit ist die maximale Größe eines einzelnen Dokuments, das in EB generiert werden kann, auf 2 Gigabyte (GB) begrenzt. Des Weiteren [begrenzt](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) Finance die Größe einer heruntergeladenene Datei derzeit auf 1 GB. Daher müssen Sie eine EB-Lösung konfigurieren, die die Wahrscheinlichkeit verringert, dass diese Einschränkungen überschritten werden und Sie eine Ausnahme **Stream war zu lang** oder **Überlauf oder Unterlauf in der Rechenoperation** erhalten.
 
 Wenn Sie eine Lösung konfigurieren, können Sie Ihr EB-Format im Vorgangs-Designer anpassen, indem Sie ein Stammelement vom Typ **Ordner** hinzufügen, um den Inhalt zu komprimieren, der von einem der verschachtelten Elemente generiert wird. Die Komprimierung arbeitet „just in time“, sodass die maximale Speichernutzung und die Größe der herunterzuladenden Datei verringert werden können.
 

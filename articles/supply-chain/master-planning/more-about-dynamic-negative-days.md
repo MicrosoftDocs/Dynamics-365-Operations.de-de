@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 184f0f22d4587b25b02ca3d425ab26a6f8ab23f6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7440a6a0b9093664a0d717b3bfa011ee3100639f
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836613"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907740"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negative und dynamisch negative Tage
 
@@ -87,7 +87,7 @@ Die folgende Abbildung zeigt eine grafische Ansicht, was in diesem Fall passiert
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Fall D: Nur dynamische negative Tage verwenden
 
-Wenn Sie die negativen Tage auf **0** (Null) festlegen und nur den Planungszeitraum mit den dynamischen negativen Tagen verwenden, ist der negative Planungszeitraum 6 + 0 = 6 Tage. In diesem Fall ist das Ergebnis mit dem Ergebnis von Fall A für dieses Szenario identisch. MRP muss einen neuen geplanten Auftrag erstellen und muss die Verzögerungen und Aktivitäten berechnen. Diese Aufgaben sind zeitaufwendig und können auch frustrierend sein. Zudem haben Sie zwei weitere Transaktionen zu verarbeiten. Da der Bedarf nicht rechtzeitig abgeschlossen werden kann, bis der Artikel eintrifft, verursacht dieser Fall unnötige Komplikationen in Ihrem Plan.
+Wenn Sie die negativen Tage auf **0** (Null) festlegen und nur den Planungszeitraum mit den dynamischen negativen Tagen verwenden, ist der negative Planungszeitraum 6 + 0 + 0 = 6 Tage. In diesem Fall ist das Ergebnis mit dem Ergebnis von Fall A für dieses Szenario identisch. MRP muss einen neuen geplanten Auftrag erstellen und muss die Verzögerungen und Aktivitäten berechnen. Diese Aufgaben sind zeitaufwendig und können auch frustrierend sein. Zudem haben Sie zwei weitere Transaktionen zu verarbeiten. Da der Bedarf nicht rechtzeitig abgeschlossen werden kann, bis der Artikel eintrifft, verursacht dieser Fall unnötige Komplikationen in Ihrem Plan.
 
 Die folgende Abbildung zeigt ein Bildschirmfoto für diesen Fall.
 
@@ -247,7 +247,7 @@ Um sicherzustellen, dass die korrekten Werte für Ihr Unternehmen eingegeben wur
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Diskussion finden Sie im ursprünglichen Blogbeitrag [Mehr über (dynamische) negative Tage](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/).
+Weitere Diskussion finden Sie im ursprünglichen Blogbeitrag [Mehr über (dynamische) negative Tage](/archive/blogs/axmfg/more-about-dynamic-negative-days).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

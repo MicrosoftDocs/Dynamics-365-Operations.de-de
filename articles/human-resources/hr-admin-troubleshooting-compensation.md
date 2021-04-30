@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e0bc9f3516baf2dbd933df94b8d711e6b14722c0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ff0619302d6ce9c2bf6db9e78778a536016ef176
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794876"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892728"
 ---
 # <a name="run-the-compensation-process"></a>Vergütungsprozesses ausführen
 
@@ -40,13 +40,13 @@ Hier ist die Dokumentation für die Kompensation:
 
 - "Einstellungen":
 
-    - [Vergütungspläne](https://docs.microsoft.com/dynamics365/unified-operations/talent/compensation-plans)
-    - [Erstellen fester Vergütungspläne](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-    - [Variable Vergütungspläne erstellen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+    - [Vergütungspläne](/dynamics365/unified-operations/talent/compensation-plans)
+    - [Erstellen fester Vergütungspläne](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+    - [Variable Vergütungspläne erstellen](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
 
 - "Bearbeiten":
 
-    - [Vergütung verarbeiten](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+    - [Vergütung verarbeiten](/dynamics365/unified-operations/talent/process-compensation)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: d733bf3256fa1f6c572bd0aa35c228490d409bbc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0956e7aa51973014ee474d97829d3d15dfdea3b3
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836493"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909942"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Arbeitsaufträge mit Projekt von Field Service mit Supply Chain Management synchronisieren
 
@@ -31,7 +31,7 @@ Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die ve
 
 [![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
-Die verwendete Vorlage **Arbeitsaufträge mit Projekt (Field Serivce zu Supply Chain Management)** basiert auf der Vorlage **Arbeitsaufträge (Field Service zu Supply Chain Management)**. Weitere Informationen finden Sie unter [Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management synchronisieren](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+Die verwendete Vorlage **Arbeitsaufträge mit Projekt (Field Serivce zu Supply Chain Management)** basiert auf der Vorlage **Arbeitsaufträge (Field Service zu Supply Chain Management)**. Weitere Informationen finden Sie unter [Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management synchronisieren](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 In diesem Thema werden nur die Unterschiede zwischen den zwei Vorlagen beschrieben:
 - **Arbeitsaufträge mit Projekt (Field Service zu Supply Chain Management)**

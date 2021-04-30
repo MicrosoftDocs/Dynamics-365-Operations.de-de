@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 23ee82922a2103d02a4c1fe0c364fa381c4984c3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3acdde483cb997b4a16a497f145c7c087c6906b5
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842008"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909718"
 ---
 # <a name="product-readiness"></a>Produktbereitschaft
 
@@ -142,7 +142,7 @@ Legen Sie für jede Zeile, die Sie hinzufügen, die folgenden Felder fest.
 | Firma | Wenn Sie das Feld **Ausführen in** auf *Einzelne Firma* festlegen, wählen Sie die Firma. |
 | Eigentümertyp | Wählen Sie, ob Bereitschaftsprüfungen, die die Zeile generiert, einer Person oder einem Team zugewiesen werden sollen. |
 | Eigentümer | Wählen Sie die Person oder das Team aus, der/dem Bereitschaftschecks, die die Zeile erzeugt, zugewiesen werden sollen. |
-| Fragebogen | Wählen Sie den Fragebogen aus, der für die Checkliste verwendet werden soll. Die Checkliste ist eine lokale Checkliste in dem Unternehmen, in dem die Bereitschaftsprüfung durchgeführt wird. Das System muss in der Lage sein, auszuwerten, ob die Checkliste korrekt beantwortet wird. Daher muss die Checkliste so festgelegt werden, dass eine Auswertung auf Basis der richtigen Antworten erfolgt. Weitere Informationen zum Erstellen von Fragebögen finden Sie unter [Verwenden von Fragebögen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) und den zugehörigen Themen. |
+| Fragebogen | Wählen Sie den Fragebogen aus, der für die Checkliste verwendet werden soll. Die Checkliste ist eine lokale Checkliste in dem Unternehmen, in dem die Bereitschaftsprüfung durchgeführt wird. Das System muss in der Lage sein, auszuwerten, ob die Checkliste korrekt beantwortet wird. Daher muss die Checkliste so festgelegt werden, dass eine Auswertung auf Basis der richtigen Antworten erfolgt. Weitere Informationen zum Erstellen von Fragebögen finden Sie unter [Verwenden von Fragebögen](/dynamicsax-2012/appuser-itpro/using-questionnaires) und den zugehörigen Themen. |
 | Automatische Genehmigung | Bereitschaftsprüfungsdatensätze enthalten ein Kontrollkästchen **Genehmigt**, das den Genehmigungsstatus anzeigt. Aktivieren Sie das Kontrollkästchen **Automatische Genehmigung** für Prüfungen, die sofort auf genehmigt festgelegt werden sollen, nachdem der zugewiesene Benutzer sie abgeschlossen hat. Deaktivieren Sie dieses Kontrollkästchen, um eine explizite Genehmigung als zusätzlichen Schritt zu verlangen. |
 | Obligatorisch | Aktivieren Sie dieses Kontrollkästchen für Checks, die vom zugewiesenen Benutzer abgeschlossen werden müssen. Obligatorische Prüfungen können nicht übersprungen werden. |
 

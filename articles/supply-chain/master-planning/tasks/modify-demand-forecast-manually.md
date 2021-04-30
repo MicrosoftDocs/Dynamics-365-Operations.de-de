@@ -1,45 +1,54 @@
 ---
-title: Eine Bedarfsplanung manuell ändern
-description: Im folgenden Verfahren wird gezeigt, wie Sie die Planung für einen Artikel ändern.
-author: ShylaThompson
+title: Manuelles Ändern einer Bedarfsplanung
+description: In dem Thema wird beschrieben, wie Sie die Planung für einen Artikel ändern
+author: ChristianRytt
 ms.date: 08/12/2019
 ms.topic: business-process
-ms.prod: ''
-ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, ForecastSales
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 518a49441a9d73d9da5ab90400e0b7482692d374
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5da1d5b1fbd91964e695a704681b1c9ee513a2f1
+ms.sourcegitcommit: 4016c223a985c46e33f9941bf91ba5e1583e1cfd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829665"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889023"
 ---
-# <a name="modify-a-demand-forecast-manually"></a>Eine Bedarfsplanung manuell ändern
+# <a name="modify-a-demand-forecast-manually"></a>Manuelles Ändern einer Bedarfsplanung
 
 [!include [banner](../../includes/banner.md)]
 
-Im folgenden Verfahren wird gezeigt, wie Sie die Planung für einen Artikel ändern. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Aufzeichnung ist für den Produktionsplaner vorgesehen. 
+Im folgenden Verfahren wird gezeigt, wie Sie die Planung für einen Artikel ändern. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Prozedur ist für den Produktionsplaner vorgesehen.
 
+## <a name="modify-the-forecast-for-a-selected-item"></a>Die Planung für einen ausgewählten Artikel ändern
 
-## <a name="modify-the-forecast-for-an-item"></a>Ändern der Planung für einen Artikel
-1. Gehen Sie im Navigationsbereich **Navigationsbereich** zu **Module > Produktinformationsmanagement > Produkte > Veröffentlichte Produkte**.
-2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Wählen Sie den Artikel aus, für den Sie die Planung ändern möchten. Sie können beispielsweise Artikel "D0001" auswählen.  
-3. Klicken Sie im **Aktivitätsbereich** auf **Plan**.
-4. Klicken Sie auf **Bedarfsprognose**.
-5. Markieren Sie in der Liste die ausgewählte Zeile. Wenn es keine Prognosepositionen gibt, erstellen Sie eine neue Position, indem Sie in der App-Leiste auf Neu klicken.  
-6. Geben Sie im Feld **Verkaufsmenge** eine Nummer ein. Diese Zahl gibt die prognostizierte Menge des Artikels wieder.  
-7. Klicken Sie auf "Speichern".
+Um die Planung für einen ausgewählten Artikel zu ändern:
 
-## <a name="modify-the-forecast-in-excel"></a>Ändern der Planung in Excel
-1. Klicken Sie auf **Öffnen** in Microsoft Office.
-2. Klicken Sie auf **Bearbeiten der Bedarfsprognose** in Excel. In Excel können Sie Bedarfsplanungspositionen hinzufügen, löschen und bearbeiten. Wenn die Daten in Excel nicht angezeigt werden können, müssen Sie sich mit aktivierter Option „Angemeldet bleiben“ anmelden und der Datenverbindungs-App vertrauen.  
+1. Gehen Sie zu **Module \> Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**.
+1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Wählen Sie den Artikel aus, für den Sie die Planung ändern möchten.
+1. Öffnen Sie im Aktivitätsbereich die Registerkarte **Planen** und dann **Bedarfsplanung**.
+1. Wählen Sie in der Liste eine Zeile aus. Wenn es keine Planungspositionen gibt, erstellen Sie eine neue Position, indem Sie im Aktivitätsbereich **Neu** auswählen.  
+1. Geben Sie im Feld **Verkaufsmenge** eine positive Zahl ein. Diese Zahl gibt die prognostizierte Menge des Artikels wieder. Ein Fehler wird angezeigt, wenn Sie eine negative Zahl eingeben.
+1. Füllen Sie bei Bedarf die anderen Felder aus.
+1. Wählen Sie **Speichern** im Aktivitätsbereich aus.
 
+## <a name="modify-the-forecast-for-one-or-more-items-microsoft-excel"></a>Die Planung für einen oder mehrere Artikel in Microsoft Excel ändern
+
+Um die Planung für einen oder mehrere Artikel in Microsoft Excel zu ändern:
+
+1. Führen Sie einen der folgenden Schritte aus:
+    - Öffnen Sie die Seite **Bedarfsplanung** für einen Artikel (egal welchen) wie im vorherigen Abschnitt beschrieben.
+    - Wechseln Sie zu **Produktprogrammplan \> Planung \> Planung manuell eintragen \> Bedarfsplanungspositionen**.
+1. Wählen Sie im Aktivitätsbereich **In Microsoft Office öffnen \> Bedarfsplanungseinträge**.
+1. Wählen Sie einen Download-Speicherort aus, speichern Sie die Datei und öffnen Sie die heruntergeladene Datei in Excel.
+1. Wenn Sie eine Warnung sehen, wählen Sie **Bearbeitung aktivieren**.
+1. Melden Sie sich in Excel bei Supply Chain Management über den Aufgabenbereich Microsoft Dynamics an. Sie müssen sich mit der Option **Angemeldet bleiben** anmelden und Sie müssen der Datenverbindungs-App vertrauen.
+1. In der Excel-Tabelle werden jetzt alle aktuellen Bedarfsplanungspositionen für Ihr Unternehmen angezeigt.  Sie können Bedarfsplanungspositionen nach Bedarf hinzufügen, löschen und bearbeiten.
+1. Wählen Sie **Veröffentlichen** im Aufgabenbereich von Microsoft Dynamics, um Ihre Änderungen wieder in Supply Chain Management hochzuladen.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

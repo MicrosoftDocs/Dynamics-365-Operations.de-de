@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11604389ff598c70e15709c9e3e04b6ec436f6a6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 64ce34cf38e4d6f37d9d417b70843a8308a408a8
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747200"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890356"
 ---
 # <a name="workflow-faq"></a>Workflow-FAQs
 
@@ -45,9 +45,9 @@ Nachfolgend sind einige wesentliche Konzepte, um Warnungen für Workflows zu bea
     - In einer zukünftigen Aktualisierung werden wir die Aktivitätscenternachricht hinzufügen, damit Benutzer einem Workflow-Arbeitselement zugewiesen werden. 
 - Benachrichtigungen Workflows hinzufügen
     - Aktivitätscenternachrichten können für bestimmte Benutzer erstellt werden, wie eine Nachricht, die von einem früheren Workflow in X++ erstellt wurden.
-    - [Workflows haben Geschäftsereignisse](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), die der Kunde zum Auslösen von Flows verwenden könnte, haben die gesuchten Benachrichtigungen.   
+    - [Workflows haben Geschäftsereignisse](../../dev-itpro/business-events/business-events-workflow.md), die der Kunde zum Auslösen von Flows verwenden könnte, haben die gesuchten Benachrichtigungen.   
 
-Wenn ein Benutzer nicht die korrekte Benachrichtigung des Aktivitätscenter abrufen kann, wenn sie einer Arbeitsaufgabe für den Arbeitsplan zugeordnet wird, dann verwenden Sie [Workflow-Geschäftsereignisse](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) mit Microsoft Power Automate, um zusätzliche oder unterschiedliche Benachrichtigungen bereitzustellen.
+Wenn ein Benutzer nicht die korrekte Benachrichtigung des Aktivitätscenter abrufen kann, wenn sie einer Arbeitsaufgabe für den Arbeitsplan zugeordnet wird, dann verwenden Sie [Workflow-Geschäftsereignisse](../../dev-itpro/business-events/business-events-workflow.md) mit Microsoft Power Automate, um zusätzliche oder unterschiedliche Benachrichtigungen bereitzustellen.
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Warum kann der Workflow-Editor nicht unter AD FS gestartet werden?
 Wenn der Workflow-Editor unter Active Directory-Verbunddiensten (AD FS) in einer aktualisierten Umgebung ausgeführt wird, kann er möglicherweise nicht gestartet werden. Wenn dies der Fall ist, stellen Sie sicher, dass die URL "https://dynamicsaxworkfloweditor/" der Eigenschaft **Microsoft Dynamics 365 for Operations Vor Ort – Workflow – Native Anwendung** in den ADFS-Einstellungen hinzugefügt wird.

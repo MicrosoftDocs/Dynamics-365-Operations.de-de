@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ca8868069fca4453efbb76694702a554da6d7aa6
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791532"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892274"
 ---
 # <a name="update-process"></a>Aktualisierungsprozess
 
@@ -39,7 +39,7 @@ Aktualisierungen werden in regelmäßigen Abständen in allen Umgebungen veröff
 
 Human Resources-Aktualisierungen werden automatisch auf alle Umgebungen angewendet. Human Resources bietet zwei Versionstypen:
 
-- **Dienstupdates**: Updates finden alle zwei Wochen staat und enthalten Fehlerkorrekturen und neuen Funktionen. Zu den Dienstupdates gehören auch relevante veröffentlichte Plattformupdates. Informationen zum Zeitpunkt der Veröffentlichung von Plattformupdates finden Sie unter [Tabelle 3: Plattformfreigaben](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Zweiwöchentliche Updates werden in allen Regionen global eingeführt. Weitere Informationen zu zweiwöchentlichen Updates finden Sie unter [Neuerungen oder Änderungen in Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Dienstupdates**: Updates finden alle zwei Wochen staat und enthalten Fehlerkorrekturen und neuen Funktionen. Zu den Dienstupdates gehören auch relevante veröffentlichte Plattformupdates. Informationen zum Zeitpunkt der Veröffentlichung von Plattformupdates finden Sie unter [Tabelle 3: Plattformfreigaben](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases). Zweiwöchentliche Updates werden in allen Regionen global eingeführt. Weitere Informationen zu zweiwöchentlichen Updates finden Sie unter [Neuerungen oder Änderungen in Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
     Alle unterstützten Rechenzentren werden alle zwei Wochen aktualisiert, sofern nicht anders angegeben. In den USA, Australien, Europa, Vereinigtes Königreich, Asien und Kanada finden zweiwöchentliche Updates statt. 
 
@@ -71,11 +71,11 @@ Hier können Sie herausfinden, was für Human Resources in Arbeit ist und was wi
 
 - [Dynamics 365 Human Resources-Produktplan](https://dynamics.microsoft.com/roadmap/human-resources/)
 
-- [Dynamics 365-Veröffentlichungspläne](https://docs.microsoft.com/dynamics365/release-plans/)
+- [Dynamics 365-Veröffentlichungspläne](/dynamics365/release-plans/)
 
 - [Was ist neu oder geändert in Dynamics 365 Human Resources](hr-admin-whats-new.md)
 
-- [Problemsuche in Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (nur für plattformbezogene Fehler)
+- [Problemsuche in Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs.md) (nur für plattformbezogene Fehler)
 
 - [Human Resources-Blog](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
@@ -83,7 +83,7 @@ Hier können Sie herausfinden, was für Human Resources in Arbeit ist und was wi
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>Vorschaufunktionen in einer Sandkastenumgebung
 
-Sie können Vorschaufunktionen in einer Sandkastenumgebung überprüfen, bevor Sie sie in Ihrer Produktionsumgebung aktivieren. Weitere Informationen zur Aktivierung von Funktionen finden Sie unter [Funktionsverwaltungsüberblick](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Sie können Vorschaufunktionen in einer Sandkastenumgebung überprüfen, bevor Sie sie in Ihrer Produktionsumgebung aktivieren. Weitere Informationen zur Aktivierung von Funktionen finden Sie unter [Funktionsverwaltungsüberblick](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Alle neuen Funktionen bleiben mindestens 30 Tage und in der Regel 30-60 Tage in der Vorschau. Die wichtigsten Funktionen sind in der Regel im Oktober und April eines jeden Jahres nach dem Vorschauzeitraum verfügbar. Sobald Sie neue Funktionen im Arbeitsbereich Feature-Management sehen, können Sie diese einschalten. Einige Funktionen sind möglicherweise standardmäßig aktiviert.
 
@@ -101,9 +101,9 @@ Beim Testen der Vorschaufunktionen oder neuer Funktionen werden möglicherweise 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Dynamics 365 und Power Platform-Versionsveröffentlichungspläne](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[Dynamics 365 und Power Platform-Versionsveröffentlichungspläne](/dynamics365/release-plans)</br>
 [Neuerungen oder Änderungen in Dynamics 365 Human Resources](hr-admin-whats-new.md)</br>
-[Software-Lebenszyklusrichtlinie](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[Software-Lebenszyklusrichtlinie](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
 
 
 

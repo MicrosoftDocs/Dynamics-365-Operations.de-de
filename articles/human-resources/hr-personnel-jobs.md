@@ -16,12 +16,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1c481a468b2d624f029082fe27e7f14ecf7c068d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ad7feb837594186f4282103881745c4cfc944d52
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803488"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891053"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Einrichten von Komponenten eines Einzelvorgangs
 
@@ -86,7 +86,7 @@ Verwalten Sie Stellenaufgaben mithilfe der Seite **Stellenaufgaben**. Geben Sie 
 Verwenden Sie Zuständigkeitsbereiche, um die Arbeitsrollen, Prozesse und Produkte anzugeben, für die eine Arbeitskraft in einer Position für diesen Einzelvorgang zuständig sein würde. Ein Beispiel für einen Zuständigkeitsbereich für eine Stelle mit dem Titel "Buchhalter" könnte "Finanzberichterstellung für Produkt A" sein. Sie verwalten Zuständigkeitsbereiche mithilfe der Seite **Bereiche der Zuständigkeit**, die Sie mithilfe der Suchfunktion finden. Geben Sie auf der Seite **Zuständigkeitsbereiche** einen Namen und eine kurze Beschreibung der Zuständigkeit ein. Im Feld **Hinweise** können Sie optional zusätzliche Informationen eingeben. Die Hinweise können für einen bestimmten Einzelvorgang aktualisiert werden, ohne die zu Hinweise ändern, die Sie hier eingegeben haben.
 
 ## <a name="steps-for-creating-a-job"></a>Schritte zum Erstellen einer Stelle
-Im Artikel [Definieren neuer Stellen](../fin-and-ops/hr/tasks/define-new-jobs.md) finden Sie die detaillierte Prozedur zum Erstellen einer neuen Stelle. 
+Im Artikel [Definieren neuer Stellen](./hr-personnel-define-jobs.md) finden Sie die detaillierte Prozedur zum Erstellen einer neuen Stelle. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

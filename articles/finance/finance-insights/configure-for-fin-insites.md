@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2443bb057a8b7fe280ed26ecae4e50f671b5e082
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818798"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908829"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Konfiguration für Finance Insights (Vorschau)
 
@@ -69,7 +69,7 @@ Sie können die folgenden manuellen Konfigurationsschritte ausführen oder den K
     13. Wählen Sie **Ressourcen \> Alle Legacy-Einstellungen**.
     14. Wählen Sie in der oberen Navigationsleiste **Einstellungen** und dann **Anpassungen**.
     15. Wählen Sie **Entwicklerressourcen**.
-    16. Legen Sie das **Instanzreferenzinformations-ID**-Feld auf den Wert der Dataverse-Organisations-ID fest, den Sie zuvor notiert haben.
+    16. Kopieren Sie den Wert der **Dataverse-Organisations-ID** ein.
     17. Notieren Sie sich in der Adressleiste des Browsers die URL der Dataverse-Organisation. Zum Beispiel könnte die URL `https://org42b2b3d3.crm.dynamics.com` lauten.
 
 2. Wenn Sie die Funktion „Cashflow-Planung“ oder „Budget-Plaung“ verwenden möchten, führen Sie die folgenden Schritte aus, um das Anmerkungslimit für Ihre Organisation auf mindestens 50 Megabyte (MB) zu aktualisieren:
@@ -286,12 +286,12 @@ catch {
 
 # <a name="use-a-windows-powershell-script"></a>[Verwenden eines Windows PowerShell-Konfigurationsskripts](#tab/use-a-powershell-script)
 
-Es wurde ein Windows PowerShell-Skript bereitgestellt, mit dem Sie die in [Konfigurieren des Exports nach Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake) beschriebenen Azure-Ressourcen problemlos einrichten können. Wenn Sie eine manuelle Einrichtung bevorzugen, überspringen Sie diesen Vorgang und fahren Sie mit dem Vorgang im Abschnitt [Manuelle Einrichtung](#manual-setup) fort.
+Es wurde ein Windows PowerShell-Skript bereitgestellt, mit dem Sie die in [Konfigurieren des Exports nach Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) beschriebenen Azure-Ressourcen problemlos einrichten können. Wenn Sie eine manuelle Einrichtung bevorzugen, überspringen Sie diesen Vorgang und fahren Sie mit dem Vorgang im Abschnitt [Manuelle Einrichtung](#manual-setup) fort.
 
 > [!NOTE]
 > Führen Sie die folgenden Schritte aus, um das PowerShell-Skript auszuführen: Die Azure CLI-Option „Try it“ oder das Ausführen des Skripts auf Ihrem PC funktioniert möglicherweise nicht.
 
-Führen Sie die folgenden Schritte aus, um Azure mithilfe des Windows PowerShell-Skripts zu konfigurieren. Sie müssen über Rechte zum Erstellen einer Azure-Ressourcengruppe, von Azure-Ressourcen und einer Azure AD-Anwendung verfügen. Informationen zu den erforderlichen Berechtigungen finden Sie unter [Prüfen der Azure AD-Berechtigungen](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
+Führen Sie die folgenden Schritte aus, um Azure mithilfe des Windows PowerShell-Skripts zu konfigurieren. Sie müssen über Rechte zum Erstellen einer Azure-Ressourcengruppe, von Azure-Ressourcen und einer Azure AD-Anwendung verfügen. Informationen zu den erforderlichen Berechtigungen finden Sie unter [Prüfen der Azure AD-Berechtigungen](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
 1. Wechseln Sie im [Azure-Portal](https://portal.azure.com) zu Ihrem Azure-Zielabonnement. Wählen Sie die **Cloud Shell**-Schaltfläche rechts neben dem **Suche**-Feld aus.
 2. Wählen Sie **Power Shell**.
@@ -943,18 +943,7 @@ finally {
 ```
 ---
 
-## <a name="configure-the-entity-store"></a>Konfigurieren des Entitätsspeichers
 
-Führen Sie die folgenden Schritte aus, um den Entitätsspeicher in Ihrer Finance-Umgebung einzurichten.
-
-1. Gehen Sie zu **Systemadministration \> Einrichten \> Systemparameter \> Datenverbindungen**.
-2. Setzen Sie die Option **Integration von Data Lake aktivieren** auf **Ja**.
-3. Legen Sie die folgenden Key Vault-Felder fest:
-
-    - **Anwendungs(client)-ID** – Geben Sie die zuvor erstellte Anwendungsclient-ID ein.
-    - **Anwendungsgeheimnis** – Geben Sie das Geheimnis ein, das Sie für die zuvor erstellte Anwendung gespeichert haben.
-    - **DNS-Name** – Den DNS(Domain Name System)-Namen finden Sie auf der Seite mit den Anwendungsdetails für die zuvor erstellte Anwendung.
-    - **Geheimer Name** – Geben Sie **storage-account-connection-string** ein.
 
 ## <a name="configure-the-data-lake"></a>Den Data Lake konfigurieren
 
@@ -991,6 +980,19 @@ Das Add-In wird innerhalb weniger Minuten installiert.
     | CDS-Mandanten-ID (Verzeichnis-ID von AAD)               | Die Mandanten-ID der Dataverse-Instanz. Um diesen Wert zu finden, öffnen Sie das [Azure-Portal](https://portal.azure.com), wechseln Sie zu **Azure Active Directory** und kopieren Sie den **Mandanten-ID**-Wert. |
     | Geben Sie die Objekt-ID des Benutzers an, der die Systemadministratorrolle innehat | Die Azure AD-Benutzerobjekt-ID des Benutzers in Dataverse. Dieser Benutzer muss ein Systemadministrator der Dataverse-Instanz sein. Um diesen Wert zu finden, öffnen Sie das [Azure-Portal](https://portal.azure.com), wechseln Sie zu **Azure Active Directory \> Benutzer**, wählen Sie den Benutzer aus und klicken Sie dann in den **Identität**-Abschnitt. Kopieren Sie den **Objekt-ID**-Wert. |
     | Ist dies die Standard-CDS-Umgebung für den Mandanten?      | Wenn die Dataverse-Instanz die erste Produktionsinstanz war, die erstellt wurde, aktivieren Sie dieses Kontrollkästchen. Wenn die Dataverse-Instanz manuell erstellt wurde, deaktivieren Sie dieses Kontrollkästchen. |
+
+## <a name="configure-the-entity-store"></a>Konfigurieren des Entitätsspeichers
+
+Führen Sie die folgenden Schritte aus, um den Entitätsspeicher in Ihrer Finance-Umgebung einzurichten.
+
+1. Gehen Sie zu **Systemadministration \> Einrichten \> Systemparameter \> Datenverbindungen**.
+2. Setzen Sie die Option **Integration von Data Lake aktivieren** auf **Ja**.
+3. Legen Sie die folgenden Schlüsseltresorfelder fest:
+
+    - **Anwendungs(client)-ID** – Geben Sie die zuvor erstellte Anwendungsclient-ID ein.
+    - **Anwendungsgeheimnis** – Geben Sie das Geheimnis ein, das Sie für die zuvor erstellte Anwendung gespeichert haben.
+    - **DNS-Name** – Den DNS(Domain Name System)-Namen finden Sie auf der Seite mit den Anwendungsdetails für die zuvor erstellte Anwendung.
+    - **Geheimer Name** – Geben Sie **storage-account-connection-string** ein.
 
 ## <a name="feedback-and-support"></a>Feedback und Support
 

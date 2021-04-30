@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2f6dbcbd92a99699ce8d7e91c1a7e89a6063035f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: df2c55a8a69efa20c6d8c41e97c9e1f80ee1640d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795140"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892752"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Liveschaltung für Human Resources vorbereiten
 
@@ -43,7 +43,7 @@ In der folgenden Tabelle sind alle Schritte des Prozesses, die erwartete Dauer u
 | 2 | Checkliste ausfüllen und senden | Nachdem der Benutzerakzeptanztest (UAT) abgeschlossen ist | Partner/Kunde | Befolgen Sie die Anweisungen in [FastTrack Liveschaltungs-Bewertung](hr-admin-go-live-prepare.md#fasttrack-go-live-assessment). |
 | 3 | Projektbewertung (FastTrack) | FastTrack Architect* | Der Architekt liefert nach Erhalt der Checkliste eine Bewertung und setzt die Überprüfung fort, bis die Fragen geklärt sind und gegebenenfalls Abhilfemaßnahmen getroffen wurden. |
 | 4 | Projektworkshop (FastTrack) | FastTrack Architect* | |
-| 5 | Importieren eines Datenpakets | Kommt auf das Projekt an | Partner/Kunde | Folgen Sie den Anweisungen in [Datenverwaltungsübersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).|
+| 5 | Importieren eines Datenpakets | Kommt auf das Projekt an | Partner/Kunde | Folgen Sie den Anweisungen in [Datenverwaltungsübersicht](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).|
 | 6 | Produktion bereit | Nachdem alle vorherigen Schritte abgeschlossen wurden | Partner/Kunde | Partner/Kunde kann die Kontrolle über die Produktionsumgebung übernehmen.|
 | 7 | Cutover-Aktivitäten | Kommt auf das Projekt an | Partner/Kunde | |
 | 8 | Liveschaltung | Kommt auf das Projekt an | Debitor | |
@@ -66,7 +66,7 @@ Während der UAT-Phase müssen Sie alle von Ihnen implementierten Geschäftsproz
 
 - Wir empfehlen, dass Ihr UAT-Prozess mit einer sauberen und frischen Umgebung beginnt, in der die Daten aus Ihrer GOLD-Konfiguration vor dem Start des UAT-Prozesses in die Umgebung kopiert werden. Wir empfehlen, dass Sie die Produktionsumgebung bis zur Inbetriebnahme als GOLD-Umgebung verwenden. Ab diesem Zeitpunkt wird die Umgebung zur Produktion.
 - Testfälle decken den gesamten Anforderungsumfang ab. 
-- Testen Sie mit migrierten Daten. Diese Daten sollten Stammdaten wie Arbeitnehmer, Jobs und Positionen enthalten. Schließen Sie auch Eröffnungssalden wie Urlaubs- und Abwesenheitsrückstellungen ein. Schließen Sie schließlich offene Transaktionen ein, z. B. aktuelle Leistungsregistrierungen. Schließen Sie die Tests mit allen Datentypen ab, auch wenn der Datensatz noch nicht abgeschlossen ist. 
+- Testen Sie mit migrierten Daten. Dazu sollten Daten wie Arbeitskräfte, Stellen und Positionen gehören. Schließen Sie auch Eröffnungssalden wie Urlaubs- und Abwesenheitsrückstellungen ein. Schließen Sie schließlich offene Transaktionen ein, z. B. aktuelle Leistungsregistrierungen. Schließen Sie die Tests mit allen Datentypen ab, auch wenn der Datensatz noch nicht abgeschlossen ist. 
 - Testen Sie mit den richtigen Sicherheitsrollen (Standardrollen und benutzerdefinierte Rollen), die Benutzern zugewiesen sind. 
 - Stellen Sie sicher, dass die Lösung allen unternehmens- und branchenspezifischen gesetzlichen Anforderungen entspricht. 
 - Dokumentieren Sie alle Funktionen und lassen Sie sich vom Kunden genehmigen und abmelden. 
@@ -86,7 +86,7 @@ Vor Ihrer Inbetriebnahme müssen Sie eine Pseudo-Inbetriebnahme durchführen, um
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack Liveschaltungs-Bewertung
 
-Kunden, die für FastTrack qualifiziert sind und mit einem FastTrack Lösungsarchitekt zusammenarbeiten, führen eine Liveschaltungs-Überprüfung mit Microsoft FastTrack durch. Für weitere Informationen siehe [Microsoft FastTrack](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). 
+Kunden, die für FastTrack qualifiziert sind und mit einem FastTrack Lösungsarchitekt zusammenarbeiten, führen eine Liveschaltungs-Überprüfung mit Microsoft FastTrack durch. Für weitere Informationen siehe [Microsoft FastTrack](/dynamics365/fasttrack/). 
 
 Ungefähr acht Wochen vor der Inbetriebnahme werden Sie vom FastTrack-Team gebeten, eine [Liveschaltungs-Checkliste](https://go.microsoft.com/fwlink/?linkid=2146013) auszufüllen.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 4885caf017fa0f9d36d293fa32aad53c21d3f162
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7790d7e581b9b4260a4c57af84b02a182dde953d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753575"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894075"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Eine neue EB-Konfiguration zum Generieren von Berichten im Word-Format erstellen
 
@@ -38,7 +38,7 @@ Um ein Word-Dokument als Vorlage für Berichte im Word-Format zu verwenden, kön
 Die EB-Formatkomponente der Lösung muss das Formatelement **Excel\\Datei** enthalten, und dieses Formatelement muss mit dem Word-Dokument verknüpft sein, das zur Laufzeit als Vorlage für generierte Berichte verwendet wird. Um die EB-Formatkomponente zu konfigurieren, müssen Sie die [Entwurfs](general-electronic-reporting.md#component-versioning)version der erstellten EB-Konfiguration im EB-Format-Designer öffnen. Dann fügen Sie das Element **Excel\\Datei** hinzu, hängen Ihre Word-Vorlage an das bearbeitbare EB-Format an, und verknüpfen diese Vorlage mit dem Element **Excel\\Datei**, das Sie hinzugefügt haben.
 
 > [!NOTE]
-> Wenn Sie eine Vorlage manuell anhängen, müssen Sie einen [Dokumenttyp](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) verwenden, der zuvor in den EB-Parametern zum Speichern von Vorlagen von EB-Formaten [konfiguriert](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) wurde.
+> Wenn Sie eine Vorlage manuell anhängen, müssen Sie einen [Dokumenttyp](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) verwenden, der zuvor in den EB-Parametern zum Speichern von Vorlagen von EB-Formaten [konfiguriert](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) wurde.
 
 ![Anhängen einer Vorlage auf der Seite „Formatdesigner“](./media/er-design-configuration-word-image3.gif)
 
@@ -46,11 +46,11 @@ Sie können verschachtelte **Excel\\Bereich**- und **Excel\\Zelle**-Elemente fü
 
 ![Hinzufügen der verschachtelten Elemente auf der Seite „Formatdesigner“](./media/er-design-configuration-word-image4.gif)
 
-Wenn Sie Ihre Änderungen am EB-Format zur Entwurfszeit speichern, wird die hierarchische Formatstruktur in der angehängten Word-Vorlage als [benutzerdefinierter XML-Teil](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) gespeichert, der **Bericht** heißt. Sie müssen auf die geänderte Vorlage zugreifen, sie von Finance herunterladen, lokal speichern und in der Word-Desktopanwendung öffnen. Die folgende Abbildung zeigt die lokal gespeicherte Beispielvorlage für den Kontrollbericht, der den benutzerdefinierten XML-Teil **Bericht** enthält.
+Wenn Sie Ihre Änderungen am EB-Format zur Entwurfszeit speichern, wird die hierarchische Formatstruktur in der angehängten Word-Vorlage als [benutzerdefinierter XML-Teil](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) gespeichert, der **Bericht** heißt. Sie müssen auf die geänderte Vorlage zugreifen, sie von Finance herunterladen, lokal speichern und in der Word-Desktopanwendung öffnen. Die folgende Abbildung zeigt die lokal gespeicherte Beispielvorlage für den Kontrollbericht, der den benutzerdefinierten XML-Teil **Bericht** enthält.
 
 ![Anzeige der Beispielberichtsvorlage in der Word-Desktopanwendung](./media/er-design-configuration-word-image5.gif)
 
-Wenn Bindungen der Formatelemente **Excel\\Bereich** und **Excel\\Zelle** zur Laufzeit ausgeführt werden, werden die Daten, die jede Bindung liefert, als einzelnes Feld des benutzerdefinierten XML-Teils **Berichts** in das generierte Word-Dokument eingegeben. Um die Werte aus den Feldern des benutzerdefinierten XML-Teils in ein generiertes Dokument einzugeben, müssen Sie die entsprechenden Word-[Inhaltssteuerelemente](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) zu Ihrer Word-Vorlage hinzufügen, um als Platzhalter für Daten zu dienen, die zur Laufzeit aufgefüllt werden. Um festzulegen, wie Inhaltssteuerelemente ausgefüllt werden, ordnen Sie jedes Inhaltssteuerelement dem entsprechenden Feld des benutzerdefinierten XML-Teils **Bericht** zu.
+Wenn Bindungen der Formatelemente **Excel\\Bereich** und **Excel\\Zelle** zur Laufzeit ausgeführt werden, werden die Daten, die jede Bindung liefert, als einzelnes Feld des benutzerdefinierten XML-Teils **Berichts** in das generierte Word-Dokument eingegeben. Um die Werte aus den Feldern des benutzerdefinierten XML-Teils in ein generiertes Dokument einzugeben, müssen Sie die entsprechenden Word-[Inhaltssteuerelemente](/office/client-developer/word/content-controls-in-word) zu Ihrer Word-Vorlage hinzufügen, um als Platzhalter für Daten zu dienen, die zur Laufzeit aufgefüllt werden. Um festzulegen, wie Inhaltssteuerelemente ausgefüllt werden, ordnen Sie jedes Inhaltssteuerelement dem entsprechenden Feld des benutzerdefinierten XML-Teils **Bericht** zu.
 
 ![Hinzufügen und Zuordnen von Inhaltssteuerelementen in der Word-Desktopanwendung](./media/er-design-configuration-word-image6.gif)
 

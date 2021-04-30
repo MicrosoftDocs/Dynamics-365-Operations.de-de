@@ -13,12 +13,12 @@ ms.search.region: Austria, Czech Republic
 ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4d974b91289b27d7ead0102ba5f2e727184311a5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 74bcf2e1b6ff3b0b5e2fd6cd9c5ce48a8eee5f57
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826102"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892392"
 ---
 # <a name="fiscal-service-esr-integration"></a>Integration von steuerlichem Dienst (ESR)
 
@@ -79,7 +79,7 @@ Jede Kasse muss so eingerichtet werden, dass sie mit dem steuerlichen Dienst kom
 <td>Wählen Sie für jede Kasse die EB-Formate aus, die verwendet werden müssen, um Belege auszudrucken, Anforderungen an den steuerlichen Dienst zu senden und Antworten vom steuerlichen Dienst zu empfangen. Die EB-Formate, die Sie auswählen, müssen für die primäre Adresse der juristischen Person geeignet sein.</td>
 <td>Für das Belegformat wählen Sie beispielsweise <strong>Barbelegformat (AT)</strong> für Österreich und <strong>Barbelegformat (CZ)</strong> für die Tschechische Republik aus.
 
-Wenn Sie kein Format in der Liste finden, können Sie aktuelle elektronische Formate von LCS herunterladen. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Elektronische Berichtskonfigurationen aus Lifecycle Service herunterladen</a>.</td>
+Wenn Sie kein Format in der Liste finden, können Sie aktuelle elektronische Formate von LCS herunterladen. Weitere Informationen finden Sie unter <a href="/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Elektronische Berichtskonfigurationen aus Lifecycle Service herunterladen</a>.</td>
 </tr>
 <tr>
 <td>Kassenzertifikatseinstellungen</td>
@@ -189,7 +189,7 @@ In diesem Abschnitt werden Sie Schritt für Schritt durch die folgenden Geschäf
     2. Überprüfen Sie im Inforegister **Kasse** den Standort, das Terminal, die Kasse und die Operatorcodes. Der Terminalcode wird automatisch aus dem Feld **Standardkassenterminal** auf der Seite **Kassenoperatoren** eingegeben. Ändern Sie den Terminalcode nur, wenn die Barzahlung an einem anderen Kassenterminal empfangen wurde, die für den aktuellen Operator verfügbar ist.
     3. Wählen Sie **OK**.
 
-7. Überprüfen Sie den Barbeleg, der für die gebuchte Rechnung generiert ist. Standardmäßig ist der generierte Barbeleg als Datei verfügbar. Informationen dazu, wie andere Ziele eingerichtet werden, die Sie für Barbelege verwenden können, finden Sie unter [Ziele für die elektronische Berichterstellung](../../dev-itpro/analytics/electronic-reporting-destinations.md).
+7. Überprüfen Sie den Barbeleg, der für die gebuchte Rechnung generiert ist. Standardmäßig ist der generierte Barbeleg als Datei verfügbar. Informationen dazu, wie andere Ziele eingerichtet werden, die Sie für Barbelege verwenden können, finden Sie unter [Ziele für die elektronische Berichterstellung](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 
 ### <a name="register-an-automatically-posted-cod-payment-for-a-sales-order-invoice-and-print-a-cash-receipt"></a>Registrieren einer automatisch gebuchten Zahlung bei Lieferung für eine Auftragsrechnung und Drucken eines Barbelegs
