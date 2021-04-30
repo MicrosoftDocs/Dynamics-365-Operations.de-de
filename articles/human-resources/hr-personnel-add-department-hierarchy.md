@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 3c4382336e53bc09c51dd845446af9a20a2ba8af
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c43b45c7919be4673224b0f83606c390d0bb6265
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794468"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891077"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Abteilungen erstellen und sie in die Abteilungshierarchie einbeziehen
 
@@ -53,7 +53,7 @@ Um der Abteilungshierarchie eine Abteilung hinzuzufügen, führen Sie folgende S
 6.  Wenn Sie fertig sind, klicken auf **Veröffentlichen** im Hierarchie-Designer. Sie können ein Gültigkeitsdatum eingeben, das angibt, wann die Hierarchie veröffentlicht werden soll. Um beispielsweise eine neue Abteilung zu Beginn des folgenden Kalenderjahrs hinzuzufügen, legen Sie das Gültigkeitsdatum auf den 1. Januar des neuen Kalenderjahrs fest. Die Änderungen an der Hierarchie treten an diesem Datum in Kraft.
 
 ## <a name="steps-for-creating-a-department"></a>Schritte zum Erstellen einer Abteilung
-Im Artikel [Definieren neuer Abteilungen](../fin-and-ops/hr/tasks/define-new-departments.md) finden Sie die detaillierte Prozedur zum Erstellen eine neuen Abteilung. 
+Im Artikel [Definieren neuer Abteilungen](./hr-personnel-define-departments.md) finden Sie die detaillierte Prozedur zum Erstellen eine neuen Abteilung. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 03dd6f81185e8944019eaadbb77690e4cd9ba9a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751315"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893603"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Zielorte für elektronische Berichterstellung (ER)
 
@@ -57,7 +57,7 @@ Das Standardverhalten für eine EB-Formatkonfiguration hängt vom Ausführungsty
 
 Im Dialogfeld **Intrastat-Bericht** im Inforegister **Im Hintergrund ausführen**, wenn Sie die Option **Stapelverarbeitung** auf **Nein** festlegen, wird ein EB-Format sofort im interaktiven Modus ausgeführt. Wenn diese Ausführung erfolgreich abgeschlossen wurde, wird ein generiertes ausgehendes Dokument zum Download bereitgestellt.
 
-Wenn Sie die Option **Stapelverarbeitung** auf **Ja** festlegen, wird ein EB-Format im Modus [Charge](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) ausgeführt. Der entsprechende Stapelverarbeitungsauftrag wird basierend auf den Parametern erstellt, die Sie in der Registerkarte **Im Hintergrund ausführen** des Dialogfelds **EB-Parameter** angeben.
+Wenn Sie die Option **Stapelverarbeitung** auf **Ja** festlegen, wird ein EB-Format im Modus [Charge](../sysadmin/batch-processing-overview.md) ausgeführt. Der entsprechende Stapelverarbeitungsauftrag wird basierend auf den Parametern erstellt, die Sie in der Registerkarte **Im Hintergrund ausführen** des Dialogfelds **EB-Parameter** angeben.
 
 > [!NOTE]
 > Die Einzelvorgangsbeschreibung informiert Sie über die Ausführung einer EB-Formatzuordnung. Sie enthält auch den Namen der ausgeführten EB-Komponente.
@@ -70,7 +70,7 @@ Informationen zu diesen Einzelvorgang finden Sie an mehreren Stellen:
 - Gehen Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Einzelvorgänge der elektronischen Berichterstellung,** um den Status des geplanten Einzelvorgangs und die Ausführungsergebnisse des abgeschlossenen Einzelvorgangs zu überprüfen. Wenn die Einzelvorgangsausführung erfolgreich abgeschlossen wurde, wählen Sie **Dateien anzeigen** auf der Seite **Einzelvorgänge der elektronischen Berichterstellung** aus, um ein generiertes ausgehendes Dokument abzurufen.
 
     > [!NOTE]
-    > Dieses Dokument wird als Anhang des aktuellen Einzelvorgangsdatensatzes gespeichert und vom [Dokumentverwaltung](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management)-Framework gesteuert. Der [Dokumententyp](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), der verwendet wird, um EB-Artefakte dieses Typs zu speichern, wird in den [EB-Parametern](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) konfiguriert.
+    > Dieses Dokument wird als Anhang des aktuellen Einzelvorgangsdatensatzes gespeichert und vom [Dokumentverwaltung](../../fin-ops/organization-administration/configure-document-management.md)-Framework gesteuert. Der [Dokumententyp](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types), der verwendet wird, um EB-Artefakte dieses Typs zu speichern, wird in den [EB-Parametern](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) konfiguriert.
 
 - Auf der Seite **Einzelvorgänge der elektronischen Berichterstellung** wählen Sie **Dateien anzeigen** aus, um die Liste aller Fehler und Warnungen anzuzeigen, die während der Einzelvorgangsausführung generiert wurden.
 

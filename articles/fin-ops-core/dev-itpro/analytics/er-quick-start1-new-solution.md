@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 986beb6d46ac69192206c86fc3660c2e2345d6a9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743726"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891792"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Entwerfen einer neuen EB-Lösung zum Drucken eines benutzerdefinierten Berichts
 
@@ -119,7 +119,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in den Rollen "Syst
 
 - [Zusätzliche Ressourcen](#References)
 
-In diesem Beispiel erstellen Sie eine neue EB-Lösung für das Modul [Fragebogen](https://docs.microsoft.com/dynamics365/human-resources/hr-learning-questionnaires). Mit dieser neuen EB-Lösung können Sie einen Bericht mithilfe eines Microsoft Excel-Arbeitsblatts als Vorlage erstellen. Sie können dann den Bericht **Fragebogen** im Excel- oder PDF-Format zusätzlich zum vorhandenen SSRS-Bericht (SQL Server Reporting Services) generieren. Auf Anfrage können Sie den neuen Bericht auch später ändern. Eine Codierung ist nicht erforderlich.
+In diesem Beispiel erstellen Sie eine neue EB-Lösung für das Modul [Fragebogen](../../../human-resources/hr-learning-questionnaires.md). Mit dieser neuen EB-Lösung können Sie einen Bericht mithilfe eines Microsoft Excel-Arbeitsblatts als Vorlage erstellen. Sie können dann den Bericht **Fragebogen** im Excel- oder PDF-Format zusätzlich zum vorhandenen SSRS-Bericht (SQL Server Reporting Services) generieren. Auf Anfrage können Sie den neuen Bericht auch später ändern. Eine Codierung ist nicht erforderlich.
 
 1. Um den vorhandenen Bericht auszuführen, wählen Sie **Fragebogen**\>**Entwurf**\>**Fragebogenbericht**.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a5e1cea5a249b6087ef87560dd06bc026dd129
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ed56920ca1b4f2ac1313f7025b7a3c7245e9913
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822130"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898209"
 ---
 # <a name="budget-planning-overview"></a>Budgetplanung – Übersicht
 
@@ -75,7 +75,7 @@ Die folgende Abbildung zeigt ein Beispiel, bei dem die Unternehmenszentrale die 
 
 Auf der Seite **Organisationshierarchie** können Sie für jeden Budgetplanungsprozess eine Organisationshierarchie als Budgetplanungshierarchie festlegen. Die Budgetplanungshierarchie muss mit der Standardorganisationshierarchie nicht übereinstimmen, die für andere Zwecke verwendet wird. Da diese Hierarchie verwendet wird, um Daten zu aggregieren und zu verteilen, sollten sie eine andere Struktur haben. In dem Beispielschema befinden sich die Vertriebsabteilungen unter einer Hauptsitz-Ebene, die die Budget- und Finanzabteilungen umfasst. Diese Struktur unterscheidet sich wahrscheinlich von der Struktur, die für die Verwaltung der Vorgänge für die Vertriebsabteilungen verwendet wird. Nur eine Organisationshierarchie kann einem Budgetplanungsprozess zugewiesen werden.
 
-Weitere Informationen zu den finden Sie unter [Organisationen und Organisationshierarchien](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+Weitere Informationen zu den finden Sie unter [Organisationen und Organisationshierarchien](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Benutzersicherheit
 
@@ -163,7 +163,7 @@ Zusätzlich zu den Spalten für Budgetbeträge können Sie Spalten für die Feld
 
 Für das Beispielschema könnten Sie Spalten für die Szenarien „Jahresumsatz“, „Verträge“ und „Prognose“ anlegen. (Die folgende Abbildung zeigt den entsprechenden Abschnitt des Schemas.) Sie können dann eines oder alle diese Szenarien in separate Spalten für jedes Quartal des Geschäftsjahres aufgliedern, sodass der Leiter der Vertriebsabteilung die Prognosebeträge für jede Periode genau eingeben kann.
 
-[![Spalten](./media/columns.png)](./media/columns.png)
+[![Abbildung von Abschnitten des Schemas zum Hinzufügen von Spalten](./media/columns.png)](./media/columns.png)
 
 Sie geben auch an, ob jedes Layoutelement (Spalte) bearbeitbar ist und ob es in jeder Arbeitsblattvorlage, die für dieses Layout erstellt wird, verfügbar ist. Für das Beispielschema sind in dem Layout, das für die Phase „Schätzung“ verwendet wird, die Spalten „Prognose“ editierbar, die Spalten „PY Verkauf“ und „Verträge“ sind jedoch schreibgeschützt.
 

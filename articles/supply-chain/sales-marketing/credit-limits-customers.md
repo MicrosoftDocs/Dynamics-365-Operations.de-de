@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbf5ed3d0f83619746ae66ae7008940f4600060c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6aede26fb7d371806624742792ded5be23ad0e51
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824917"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908083"
 ---
 # <a name="credit-limits-for-customers"></a>Kreditlimits für Debitoren
 
@@ -90,7 +90,7 @@ Verwenden Sie das Formular **Debitorenparameter**, um die Informationen zum Verg
 
 **Wo werden Informationen zu dem verbleibenden Kredit eines Debitors verwendet?**
 
-Informationen zum Saldo sowie den verbleibenden Habenbetrag eines Debitors werden berechnet und gespeichert, wenn Sie eine Fälligkeitsmomentaufnahme erstellen, und sie werden im Formular **Inkassi** angezeigt. Die Beträge, die im Formular **Inkassi** angezeigt werden, umfassen möglicherweise nicht alle Buchungsaktivitäten, bis eine neue Fälligkeitsmomentaufnahme erstellt wird. Weitere Informationen finden Sie unter [Inkassi und Kredit in Debitorenparametern](https://technet.microsoft.com/library/hh209221.aspx).
+Informationen zum Saldo sowie den verbleibenden Habenbetrag eines Debitors werden berechnet und gespeichert, wenn Sie eine Fälligkeitsmomentaufnahme erstellen, und sie werden im Formular **Inkassi** angezeigt. Die Beträge, die im Formular **Inkassi** angezeigt werden, umfassen möglicherweise nicht alle Buchungsaktivitäten, bis eine neue Fälligkeitsmomentaufnahme erstellt wird. Weitere Informationen finden Sie unter [Inkassi und Kredit in Debitorenparametern](/dynamicsax-2012/appuser-itpro/collections-and-credit-in-accounts-receivable).
 
 Abhängig von den Dokumenten, die ausgewählt wurden, werden Informationen zu den Saldi und verbleibenden Habenbetrag eines Debitors berechnet, wenn Aufträge, Lieferscheine und Debitorenrechnungen aktualisiert werden. Wenn der Betrag des Dokuments, mit dem Sie arbeiten, dazu führen würde, dass das Kreditlimit überschritten wird, wird eine Meldung angezeigt.
 

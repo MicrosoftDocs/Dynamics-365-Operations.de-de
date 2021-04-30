@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 080f66e4e13df44a77f0499c6d69686f0e3d7021
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bf406a954f5bb8b49627b58a901d0721cdad407b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801190"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890027"
 ---
 # <a name="configure-dataverse-integration"></a>Dataverse-Integration konfigurieren
 
@@ -30,7 +30,7 @@ ms.locfileid: "5801190"
 Sie können die Integration zwischen Microsoft Dataverse und Dynamics 365 Human Resources aktivieren und deaktivieren. Sie können auch die Synchronisierungsdetails anzeigen, Nachverfolgungsdaten löschen und eine Tabelle erneut synchronisieren, um Datenprobleme zwischen den beiden Umgebungen zu beheben.
 
 > [!NOTE]
-> Weitere Informationen zu Dataverse (früher Common Data Service) und Terminologie-Updates finden Sie unter [Was ist Microsoft Dataverse ?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Weitere Informationen zu Dataverse (früher Common Data Service) und Terminologie-Updates finden Sie unter [Was ist Microsoft Dataverse ?](/powerapps/maker/data-platform/data-platform-intro)
 
 Wenn Sie die Integration deaktivieren, können Benutzer Änderungen in Human Resources oder Dataverse vornehmen, diese Änderungen werden jedoch nicht zwischen den beiden Umgebungen synchronisiert.
 
@@ -124,8 +124,8 @@ So führen Sie eine vollständige Synchronisierung für eine Tabelle zwischen Hu
 [Dataverse-Tabellen](hr-developer-entities.md)<br>
 [Virtuelle Dataverse-Tabellen konfigurieren](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [FAQ zu virtuellen Tabellen für Human Resources](hr-admin-virtual-entity-faq.md)<br>
-[Was ist Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminologie-Updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[Was ist Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminologie-Updates](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

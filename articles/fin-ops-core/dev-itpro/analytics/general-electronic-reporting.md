@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f172e4d3e9c175a93d6fd64f0aa1933a48860bca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d22a6fc336708028ce4953df50360c233398303d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750057"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893176"
 ---
 # <a name="electronic-reporting-er-overview"></a>Überblick über die elektronische Berichterstellung (ER)
 
@@ -183,11 +183,11 @@ Beachten Sie, dass auf diesen Repositorytyp in die folgenden Umgebungen zugegrif
 
 Weitere Informationen finden Sie unter [Elektronische Berichterstellungskonfigurationen (ER) importieren](./electronic-reporting-import-ger-configurations.md).
 
-Ein **RCS**-Instanz-Repository bietet Zugriff auf die Konfigurationsliste einer bestimmten Instanz vom [Konfigurationsdienst](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration), der in der Repository-Registrierungsphase ausgewählt wurde. Mithilfe von EB können Sie abgeschlossene oder geteilte Konfigurationen aus der ausgewählten RCS-Instanz in die aktuelle Instanz importieren, damit Sie sie für die elektronische Berichterstellung verwenden können.
+Ein **RCS**-Instanz-Repository bietet Zugriff auf die Konfigurationsliste einer bestimmten Instanz vom [Konfigurationsdienst](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration), der in der Repository-Registrierungsphase ausgewählt wurde. Mithilfe von EB können Sie abgeschlossene oder geteilte Konfigurationen aus der ausgewählten RCS-Instanz in die aktuelle Instanz importieren, damit Sie sie für die elektronische Berichterstellung verwenden können.
 
 Weitere Informationen finden Sie unter [Elektronische Berichterstellungskonfigurationen (ER) aus RCS importieren](./rcs-download-configurations.md).
 
-Ein **Globales** Repository bietet Zugriff auf die Liste der Konfigurationen innerhalb des globalen Repositorys im [Konfigurationsdienst](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Dieser Typ von ER-Repository kann nur für den Microsoft-Anbieter erfasst werden. Vom globalen Repository aus können Sie die neueste Version der ER-Konfiguration in die aktuelle Instanz importieren.
+Ein **Globales** Repository bietet Zugriff auf die Liste der Konfigurationen innerhalb des globalen Repositorys im [Konfigurationsdienst](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Dieser Typ von ER-Repository kann nur für den Microsoft-Anbieter erfasst werden. Vom globalen Repository aus können Sie die neueste Version der ER-Konfiguration in die aktuelle Instanz importieren.
 
 Weitere Informationen unter [Importieren von elektronischen Berichtstellungskonfigurationen aus dem globalen Repository der Konfigurationsdienste](./er-download-configurations-global-repo.md).
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2e41510f1f5810dde9683235384f89008f888471
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 785f9055c44110d88b9494b5066647511840b646
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821272"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909646"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Dieses Thema wird aktualisiert, sobald neue entfernte oder veraltete Funktionen 
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen.
 
 > [!NOTE]
-> Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](https://docs.microsoft.com/dynamics/s-e/). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+> Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Entfernte oder veraltete Funktionen in Supply Chain Management 10.0.18
 
@@ -39,7 +39,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Gültig ab April 2021, *Dynamics 365 for Finance and Operations – Lagerhaltung* (die Lagerort-App) ist veraltet und wird nach April 2022 nicht mehr unterstützt. Es wird jetzt durch die *Warehouse Management Mobile App* ersetzt, die mit Version 10.0.17 von Supply Chain Management veröffentlicht wurde. Die neue App ist ein vollständiger Ersatz, verwendet jedoch dasselbe zugrunde liegende Framework, was die Migration vereinfacht. Bei Bedarf können die beiden Apps nebeneinander verwendet werden, damit Benutzer sich schrittweise anpassen können, während sie lernen, die neue App zu verwenden.<br><br>Weitere Informationen über die neue Warehouse Management Mobile App finden Sie unter [Mobile Warehouse Management-Anwendung](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) und unter [Warehouse Management Mobile App installieren und Verbindung herstellen](../warehousing/install-configure-warehouse-management-app.md). |
+| **Grund für veralteten Zustand/Entfernung** | Gültig ab April 2021, *Dynamics 365 for Finance and Operations – Lagerhaltung* (die Lagerort-App) ist veraltet und wird nach April 2022 nicht mehr unterstützt. Es wird jetzt durch die *Warehouse Management Mobile App* ersetzt, die mit Version 10.0.17 von Supply Chain Management veröffentlicht wurde. Die neue App ist ein vollständiger Ersatz, verwendet jedoch dasselbe zugrunde liegende Framework, was die Migration vereinfacht. Bei Bedarf können die beiden Apps nebeneinander verwendet werden, damit Benutzer sich schrittweise anpassen können, während sie lernen, die neue App zu verwenden.<br><br>Weitere Informationen über die neue Warehouse Management Mobile App finden Sie unter [Mobile Warehouse Management-Anwendung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) und unter [Warehouse Management Mobile App installieren und Verbindung herstellen](../warehousing/install-configure-warehouse-management-app.md). |
 | **Ersetzt durch eine andere Funktion?**   | Ja, wird durch die neue Warehouse Management Mobile App ersetzt. |
 | **Betroffene Produktbereiche**         | Supply Chain Management – Lagerort-App |
 | **Bereitstellungsoption**              | Cloud und lokal |
@@ -65,7 +65,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Ersetzt durch eine andere Funktion?**   | Ja, die Planungsoptimierung wird das bestehende integrierte Supply Chain Management-Masterplanungsmodul ersetzen. |
 | **Betroffene Produktbereiche**         | Supply Chain Management – Masterplanung |
 | **Bereitstellungsoption**              | Nur Cloud. Planungsoptimierung wird bei lokalen Bereitstellungen nicht unterstützt. |
-| **Status**                         | Veraltet. Ab dem 1. Oktober 2021 werden Fertigungsszenarien nicht mehr mit der eingebauten Dynamics 365 Supply Chain Management-Masterprogrammplanung unterstützt. Für Fertigungsszenarien müssen Kunden die Planungsoptimierung für die Produktprogrammplanung verwenden. Weitere Informationen finden Sie unter [Planungsoptimierungsdokumentation](https://go.microsoft.com/fwlink/?linkid=2105830). Kunden, die Dynamics 365 Supply Chain Management lokal bereitstellen, können nach Oktober 2021 weiterhin die Supply Chain Management Masterplanungs-Engine für Fertigungsszenarien verwenden. Es werden jedoch keine weiteren Funktionserweiterungen bereitgestellt. |
+| **Status**                         | Veraltet. Ab dem 1. April 2022 werden Fertigungsszenarien nicht mehr mit der eingebauten Dynamics 365 Supply Chain Management-Masterprogrammplanung unterstützt. Für Fertigungsszenarien müssen Kunden die Planungsoptimierung für die Produktprogrammplanung verwenden. Weitere Informationen finden Sie unter [Planungsoptimierungsdokumentation](../master-planning/planning-optimization/planning-optimization-overview.md). Kunden, die Dynamics 365 Supply Chain Management lokal bereitstellen, können nach April 2022 weiterhin die Supply Chain Management Masterplanungs-Engine für Fertigungsszenarien verwenden. Es werden jedoch keine weiteren Funktionserweiterungen bereitgestellt. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Entfernte oder veraltete Funktionen in Supply Chain Management 10.0.11
 
@@ -77,7 +77,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Ersetzt durch eine andere Funktion?**   | Ja, die Planungsoptimierung wird das bestehende integrierte Supply Chain Management-Masterplanungsmodul ersetzen. |
 | **Betroffene Produktbereiche**         | Supply Chain Management – Masterplanung |
 | **Bereitstellungsoption**              | Nur Cloud. Planungsoptimierung wird bei lokalen Bereitstellungen nicht unterstützt. |
-| **Status**                         | Veraltet. Ab dem 1. April 2021 werden Vertriebsszenarien nicht mehr mit der eingebauten Dynamics 365 Supply Chain Management-Masterprogrammplanung unterstützt. Für Verteilungsszenarien müssen Kunden die Planungsoptimierung für Masterplanungsberechnungen verwenden. Weitere Informationen finden Sie unter [Planungsoptimierungsdokumentation](https://go.microsoft.com/fwlink/?linkid=2105830). Kunden mit lokalen Bereitstellungen von Dynamics 365 Supply Chain Management verwenden möglicherweise weiterhin das Supply Chain Management-Masterplanungsmodul für Verteilungsszenarien nach April 2021. Es werden jedoch keine weiteren Funktionserweiterungen bereitgestellt. |
+| **Status**                         | Veraltet. Ab dem 1. April 2021 werden Vertriebsszenarien nicht mehr mit der eingebauten Dynamics 365 Supply Chain Management-Masterprogrammplanung unterstützt. Für Verteilungsszenarien müssen Kunden die Planungsoptimierung für Masterplanungsberechnungen verwenden. Weitere Informationen finden Sie unter [Planungsoptimierungsdokumentation](../master-planning/planning-optimization/planning-optimization-overview.md). Kunden mit lokalen Bereitstellungen von Dynamics 365 Supply Chain Management verwenden möglicherweise weiterhin das Supply Chain Management-Masterplanungsmodul für Verteilungsszenarien nach April 2021. Es werden jedoch keine weiteren Funktionserweiterungen bereitgestellt. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Frühere Ankündigungen über entfernte oder veraltete Funktionen
 

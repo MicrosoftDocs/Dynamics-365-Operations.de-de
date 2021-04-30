@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80799b770f0ede9ca1175a44dd738ae635d012c2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 038e741978bce033621bad428321a4b14ac90650
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793824"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889835"
 ---
 # <a name="manage-features-in-human-resources"></a>Verwalten von Funktionen in der Personalverwaltung
 
@@ -29,9 +29,9 @@ ms.locfileid: "5793824"
 
 Im Rahmen unseres kontinuierlichen Rollouts von neuen Funktionen für Microsoft Dynamics 365 Human Resources wollen wir unseren Kunden so schnell wie möglich neue Funktionen zur Verfügung stellen. Wir bieten Vorschaufunktionen, die fast bereit für die allgemeine Verfügbarkeit sind und ausgiebig getestet wurden. Wir sind nur auf der Suche nach einer letzten Runde von Kunden-Feedback und Validierung, bevor wir sie zur allgemeinen Verfügbarkeit veröffentlichen.
 
-Weitere Informationen über neue Funktionen im Human Resources finden Sie unter [Neuerungen in Human Resources](hr-admin-whats-new.md) und [Dynamics 365 und Power Platform-Versionsveröffentlichungsplan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
+Weitere Informationen über neue Funktionen im Human Resources finden Sie unter [Neuerungen in Human Resources](hr-admin-whats-new.md) und [Dynamics 365 und Power Platform-Versionsveröffentlichungsplan](/dynamics365/release-plans/?panel=products1#pivot=products).
 
-Der Arbeitsbereich **Funktionsverwaltung** bietet eine Liste der in jedem Release ausgelieferten Features. Standardmäßig sind neue Funktionen ausgeschaltet. Sie können den Arbeitsbereich verwenden, um sie zu aktivieren und die Dokumentation für sie anzuzeigen. Weitere Informationen zur Feature-Verwaltung finden Sie unter [Feature-Verwaltung Übersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Der Arbeitsbereich **Funktionsverwaltung** bietet eine Liste der in jedem Release ausgelieferten Features. Standardmäßig sind neue Funktionen ausgeschaltet. Sie können den Arbeitsbereich verwenden, um sie zu aktivieren und die Dokumentation für sie anzuzeigen. Weitere Informationen zur Feature-Verwaltung finden Sie unter [Feature-Verwaltung Übersicht](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Alle neuen Funktionen bleiben mindestens 30 Tage und in der Regel 30-60 Tage in der Vorschau. Die wichtigsten Funktionen sind in der Regel im Oktober und April eines jeden Jahres nach dem Vorschauzeitraum verfügbar. Sobald Sie neue Funktionen im Arbeitsbereich **Feature-Management** sehen, können Sie diese einschalten. Einige Funktionen sind möglicherweise standardmäßig aktiviert.
 
@@ -93,6 +93,6 @@ Bitte geben Sie keine persönlichen Daten (Informationen, die Sie identifizieren
 ## <a name="see-also"></a>Siehe auch
 
 - [Neuerungen in Human Resources](hr-admin-whats-new.md)
-- [Dynamics 365 und Power Platform-Versionsveröffentlichungsplan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+- [Dynamics 365 und Power Platform-Versionsveröffentlichungsplan](/dynamics365/release-plans/?panel=products1#pivot=products)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Austria, Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d4be19eaef4696e0405fdec41d1fe12f3b2cf3e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ac0e9d836102b7368bc5d2f7d7f1340ecc901d89
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839844"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892421"
 ---
 # <a name="german-audit-file-gdpdugobd-overview"></a>Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht
 
@@ -249,7 +249,7 @@ In den folgenden Tabellen werden die allgemeinen Anlagendatenstrukturdefinitione
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Überblick über die elektronische Berichterstellung](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Deutsche Protokolldateikonfiguration importieren](./tasks/import-german-audit-file-configuration.md)
 - [Anpassen der deutschen Protokolldateikonfiguration](./tasks/customize-german-audit-file-configuration.md)
 - [Generieren Sie deutsche Protokolldatei](./tasks/german-audit-file.md)

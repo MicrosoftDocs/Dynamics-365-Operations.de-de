@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: faf54fec2885f868c66987a7b481559d0c5615d0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b5bf6815f225dcca8f9e89e2c85942ce8a2ccd7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838273"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907986"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumenten-Routing-Layout für Kennzeichenetiketten
 
@@ -73,7 +73,7 @@ Die folgenden Beispiele zeigen, wie Sie die Arbeitsmenge anpassen können (**Men
 - Um immer vier Ziffern anzuzeigen (indem Sie Nullen als Platzhalter verwenden), verwenden Sie `$Qty:0000$`. Wenn die Menge beispielsweise 10 ist, wird auf dem Etikett 0010 angezeigt.
 - Um immer zwei Dezimalstellen anzuzeigen, verwenden Sie `$Qty:0.00$`. Wenn die Menge beispielsweise 10 ist, wird auf dem Etikett 10.00 angezeigt.
 
-Eine vollständige Liste der verfügbaren Zeichenfolgen im Zahlenformat finden Sie unter [Benutzerdefinierte Zeichenfolgen im numerischen Format](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
+Eine vollständige Liste der verfügbaren Zeichenfolgen im Zahlenformat finden Sie unter [Benutzerdefinierte Zeichenfolgen im numerischen Format](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## <a name="custom-string-formats"></a>Benutzerdefinierte Zeichenfolgenformate
 
@@ -95,7 +95,7 @@ $PrintedDate:dd-MM-yyyy$
 
 In diesem Beispiel wird das Datum 30. April 2020 als 30-04-2020 gedruckt.
 
-Eine vollständige Liste der verfügbaren Datums-/Zeitformate finden Sie unter [Benutzerdefinierte Datum-/Zeitformatzeichenfolgen](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Eine vollständige Liste der verfügbaren Datums-/Zeitformate finden Sie unter [Benutzerdefinierte Datum-/Zeitformatzeichenfolgen](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="print-individual-lines-from-multiline-data"></a>Drucken Sie einzelne Zeilen aus mehrzeiligen Daten
 

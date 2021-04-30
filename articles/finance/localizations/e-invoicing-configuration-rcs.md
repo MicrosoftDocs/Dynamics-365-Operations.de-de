@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9958091db4a3d7ce0b625e5adc8e2a6b37878618
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840243"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897719"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Elektronische Rechnungsstellung in Regulatory Configuration Services (RCS) konfigurieren
 
@@ -50,6 +50,14 @@ Schließlich unterstützen die Funktionen den Austausch von Nachrichten mit exte
 
 Die Verfügbarkeit von Funktionen für die elektronische Rechnungsstellung hängt vom Land oder der Region ab. Obwohl einige Funktionen grundsätzlich verfügbar sind, befinden sich andere in der Vorschauversion.
 
+#### <a name="generally-available-features"></a>Allgemein verfügbare Funktionen
+
+Die folgende Tabelle zeigt die Funktionen für die elektronische Rechnungsstellung an, die allgemein verfügbar sind.
+
+| Land/Region | Funktionsname                         | Geschäftsdokument |
+|----------------|--------------------------------------|-------------------|
+| Ägypten          | Elektronische Rechnungen für Ägypten (EG) | Verkaufs- und Projektrechnungen |
+
 #### <a name="preview-features"></a>Vorschaufunktionen
 
 Die folgende Tabelle zeigt die Funktionen für die elektronische Rechnungsstellung an, die sich derzeit in der Vorschauversion befinden.
@@ -61,7 +69,6 @@ Die folgende Tabelle zeigt die Funktionen für die elektronische Rechnungsstellu
 | Brasilien         | Brasilianisches NF-e (BR)                  | Steuerdokumentmodell 55, Korrekturschreiben, Stornierungen und Verwerfungen |
 | Brasilien         | Brasilianisches NFS-e ABRASF Curitiba (BR) | Dienst Steuerdokumente |
 | Dänemark        | Elektronische Rechnungen für Dänemark (DK)       | Verkaufs- und Projektrechnungen |
-| Ägypten          | Elektronische Rechnungen für Ägypten (EG) | Verkaufs- und Projektrechnungen |
 | Estland        | Elektronische Rechnungen für Estland (EE)     | Verkaufs- und Projektrechnungen |
 | Finnland        | Elektronische Rechnungen für Finnland (FI)      | Verkaufs- und Projektrechnungen |
 | Frankreich         | Elektronische Rechnungen für Frankreich (FR)       | Verkaufs- und Projektrechnungen |
@@ -201,7 +208,92 @@ In der folgenden Tabelle sind die verfügbaren Aktionen aufgeführt, und ob sie 
 | Brasilianischen SEFAZ-Dienst aufrufen                  | Integration in den brasilianischen SEFAZ-Dienst zur Übermittlung von Steuerdokumenten.       | Vorschau           |
 | Mexikanischen PAC-Dienst aufrufen                      | Integration in den mexikanischen PAC-Dienst zur CFDI-Übermittlung.                      | Vorschau           |
 | Verarbeiten der Antwort                              | Analysieren Sie die vom Webdienstaufruf erhaltene Antwort.                     | Allgemein verfügbar  |
-| MS Power Automate verwenden                         | Integrieren Sie in den in Microsoft Power Automate eingebauten Flow.                       | Vorschau           |
+| MS Power Automate verwenden                         | Integrieren Sie in den in Microsoft Power Automate eingebauten Flow.                       | Vorschau           |
+
+### <a name="applicability-rules"></a>Regeln für die Anwendbarkeit
+
+Regeln für die Anwendbarkeit sind konfigurierbare Klauseln, die auf der Ebene der Funktionen für die elektronische Rechnungsstellung definiert werden. Die Regeln sind so konfiguriert, dass sie einen Kontext für die Ausführung von Funktionen für die elektronische Rechnungsstellung über den Funktionsumfang für die elektronische Rechnungsstellung bereitstellen.
+
+Wenn für ein Geschäftsdokument aus Finance oder Supply Chain Management eine elektronische Rechnungsstellung durchgeführt wird, enthält das Geschäftsdokument keine explizite Referenz, die es der Funktion „Elektronische Rechnungsstellung“ ermöglicht, eine bestimmte elektronische Rechnungsstellungsfunktion aufzurufen, um die Übermittlung zu verarbeiten.
+
+Bei ordnungsgemäßer Konfiguration enthält das Geschäftsdokument jedoch die erforderlichen Elemente, mit denen die elektronische Rechnungsstellung festlegen kann, welche Funktion für die elektronische Rechnungsstellung ausgewählt werden muss, und anschließend die elektronische Rechnung erstellt wird.
+
+Mithilfe der Regeln für die Anwendbarkeit kann die Funktion für die elektronische Rechnungsstellung die genauen Funktionen für die elektronische Rechnungsstellung ermitteln, die zur Verarbeitung der Übermittlung verwendet werden müssen. Dazu wird der Inhalt des eingereichten Geschäftsdokuments mit den Klauseln aus den Regeln für die Anwendbarkeit abgeglichen.
+
+Beispielsweise werden zwei Funktionen für die elektronische Rechnungsstellung mit zugehörigen Regeln für die Anwendbarkeit im Funktionsumfang für die elektronische Rechnungsstellung bereitgestellt.
+
+| Funktion der elektronischen Rechnungsstellung | Regeln für die Anwendbarkeit        |
+|------------------------------|--------------------------- |
+| K                            | <p>Land = BR</p><p>und</p><p>Juristische Person = BRMF</p>  |
+| Mrd                            | <p>Land = MX</p><p>und</p><p>Juristische Person = MXMF</p>  |
+
+Wenn ein Geschäftsdokument aus Finance oder Supply Chain Management an die Funktionen für die elektronische Rechnungsstellung gesendet wird, enthält das Geschäftsdokument die folgenden Attribute:
+
+- Land = BR
+- Juristische Person = BRMF
+
+Mit den Funktionen für die elektronische Rechnungsstellung wird die Funktion **A** der elektronischen Rechnungsstellung ausgewählt, um die Einreichung zu bearbeiten und die elektronische Rechnung zu erstellen.
+
+Das Gleiche gilt, wenn das Geschäftsdokument Folgendes enthält:
+
+- Land = MX
+- Juristische Person = MXMF
+
+Funktion **B** der elektronischen Rechnungsstellung wird ausgewählt, um die elektronische Rechnung zu erstellen.
+
+Die Konfiguration der Regeln für die Anwendbarkeit darf nicht mehrdeutig sein. Dies bedeutet, dass zwei oder mehr Funktionen der elektronischen Rechnungsstellung nicht dieselben Klauseln enthalten können, da sonst keine Auswahl getroffen wird. Wenn doppelte Funktionen der elektronischen Rechnungsstellung vorhanden sind, verwenden Sie zusätzliche Klauseln, um Unklarheiten zu vermeiden, damit die elektronische Rechnungsstellung zwischen den beiden Funktionen der elektronischen Rechnungsstellung unterscheiden kann.
+
+Ziehen Sie zum Beispiel die Funktion **C** der elektronischen Rechnungsstellung in Betracht. Diese Funktion ist eine Kopie der Funktion **A** der elektronischen Rechnungsstellung.
+
+| Funktion der elektronischen Rechnungsstellung | Regeln für die Anwendbarkeit        |
+|------------------------------|--------------------------- |
+| K                            | <p>Land = BR</p><p>und</p><p>Juristische Person = BRMF</p>  |
+| C                            | <p>Land = BR</p><p>und</p><p>Juristische Person = BRMF</p>  |
+
+In diesem Beispiel steht Funktion **C** vor der Übermittlung eines Geschäftsdokuments, das Folgendes enthält:
+
+- Land = BR
+- Juristische Person = BRMF
+
+Die Funktion der elektronischen Rechnungsstellung kann nicht unterscheiden, welche Funktion der elektronischen Rechnungsstellung zur Verarbeitung der Übermittlung verwendet werden muss, da die Übermittlungen genau dieselben Klauseln enthalten.
+
+Um eine Unterscheidung zwischen den beiden Funktionen anhand der Regeln für die Anwendbarkeit zu schaffen, muss einer der Funktionen eine neue Klausel hinzugefügt werden, damit die elektronische Rechnungsstellung die richtige Funktion der elektronischen Rechnungsstellung auswählen kann.
+
+| Funktion der elektronischen Rechnungsstellung | Regeln für die Anwendbarkeit        |
+|------------------------------|--------------------------- |
+| K                            | <p>Land = BR</p><p>und</p><p>Juristische Person = BRMF</p>  |
+| C                            | <p>Land = BR</p><p>und</p><p>Juristische Person = BRMF</p><p>und</p><p>Modell = 55</p>  |
+
+Zur Unterstützung der Erstellung komplexerer Klauseln stehen folgende Ressourcen zur Verfügung:
+
+Logische Operatoren:
+- Und
+- Oder
+
+Operatortypen:
+- Equal
+- Not equal
+- Greater than
+- Less than
+- Größer oder gleich
+- Kleiner oder gleich
+- Contains
+- Beginnt mit
+
+Datentypen:
+- Zeichenfolge
+- Anzahl
+- Aktiv
+- Datum
+- UUID
+
+Fähigkeit zum Gruppieren und Aufheben der Gruppierung von Klauseln.
+Das Beispiel sieht so aus.
+
+| Funktion der elektronischen Rechnungsstellung | Regeln für die Anwendbarkeit        |
+|------------------------------|--------------------------- |
+| C                            | <p>Land = BR</p><p>und</p><p>(Juristische Person = BRMF</p><p>oder</p><p>Modell = 55)</p>  |
+
 
 ## <a name="configuration-providers"></a>Konfigurationsanbieter
 

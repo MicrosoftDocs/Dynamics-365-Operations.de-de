@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7783c22659c5a2b070648c82a8b72e49e17b8e34
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823859"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897307"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finanzdimensionen und Buchungen 
 
@@ -73,7 +73,7 @@ In der folgenden Abbildung wird die feste Standarddimension angezeigt, die im Ha
 
 [![Standardfinanzdimensionen](./media/default-dimensions.png)](./media/default-dimensions.png)
 
-Für dieses sehr grundlegende Beispiel geben Sie eine allgemeine Erfassung ein, in der die Abteilungsdimension auf den Standardwert **023** (Arbeitsgänge) festgelegt wird. Wir geben das  Sachkonto ein und buchen es. Die folgende Abbildung zeigt die Standardfinanzdimension im Feld Hauptbuchkopf.
+Für dieses sehr grundlegende Beispiel geben Sie eine allgemeine Erfassung ein, in der die Abteilungsdimension auf den Standardwert **023** (Arbeitsgänge) festgelegt wird. Wir geben das Sachkonto ein und buchen es. Die folgende Abbildung zeigt die Standardfinanzdimension im Feld Hauptbuchkopf.
 
 [![Allgemeine Erfassungen](./media/general-journal.png)](./media/general-journal.png)
 
@@ -83,23 +83,23 @@ Die Standarddimension im Erfassungskopf hat zur Folge, dass Abteilung 023 Abteil
 
 Wenn die Position gebucht wird, wird die feste Dimension angewendet, und die Position wird in Abteilung 022 gebucht. Die folgende Abbildung zeigt den gebuchten Beleg an, in der die feste Dimension für das Verkaufskonto verwendet wird.
 
-[![Belegbuchungen](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Belegtransaktionen mit angewendeter fester Dimension](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
-### <a name="example-2"></a>Beispiel 2
+### <a name="example-2"></a>Beispiel 2
 
-Dieses Beispiel verwendet die gleiche Einstellung wie das erste Beispiel. Allerdings können wir eine zweite Komponente hinzufügen und  die Abteilungsdimension als Ausgleichsdimension verwenden. In der folgenden Abbildung wird **Abteilung** als Ausgleichsfinanzdimension für das USMF-Sachkonto festgelegt.
+Dieses Beispiel verwendet die gleiche Einstellung wie das erste Beispiel. Allerdings können wir eine zweite Komponente hinzufügen und die Abteilungsdimension als Ausgleichsdimension verwenden. In der folgenden Abbildung wird **Abteilung** als Ausgleichsfinanzdimension für das USMF-Sachkonto festgelegt.
 
-[![Sachkonto](./media/ledger.png)](./media/ledger.png)
+[![Abbildung mit Abteilung als ausgleichender Finanzdimension](./media/ledger.png)](./media/ledger.png)
 
 Wenn eine Erfassungskopfeinstellung verwendet wird und die gleiche Buchung gebucht ist, wird zuerst die feste Dimension angewendet. Danach wird die Ausgleichslogik angewendet, die sicherstellt, dass jede Abteilung einen Eintrag ausgeglichenen hat. Die folgende Abbildung zeigt Belegbuchungen an, die die Gegenbuchung enthalten, nachdem die feste Dimension angewendet wurde.
 
-[![Belegbuchungen](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Belegtransaktionen nach Anwendung des ausgleichenden Eintrags](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Beispiel 3
 
 In diesem Beispiel werden wir eine erweiterte Regel hinzufügen. Die erweiterte Regel legt zudem fest, dass wenn Verkaufskonto 401100 und 022 Abteilung (Vertrieb und Marketing) verwendet werden, vom System ein zusätzliches Segment verfolgt werden soll, das "Kunde" heißt.
 
-Dieses Beispiel ist wegen dem  Auftrag wichtig. Die Kontostruktur wird bestimmt, wenn das Hauptkonto eingegeben wurde. Wenn Sie die Kontostruktureinstellung beziehen, kann das System erkennen, dass das Hauptkonto, Geschäftseinheit, die Abteilung und die Kostenstelle relevant sind. An diesem Punkt wurde die erweiterte Regel nicht gestartet, da feste Dimensionen nicht angewendet werden, bis für den Erfassungsbeleg Standarddimensionen für die Buchung angewendet wurden. In der folgenden Abbildung ist das Debitorensegment nicht vorhanden, da die Kriterien für die erweiterte Regel nicht ausgeführt wurden.
+Dieses Beispiel ist wegen dem Auftrag wichtig. Die Kontostruktur wird bestimmt, wenn das Hauptkonto eingegeben wurde. Wenn Sie die Kontostruktureinstellung beziehen, kann das System erkennen, dass das Hauptkonto, Geschäftseinheit, die Abteilung und die Kostenstelle relevant sind. An diesem Punkt wurde die erweiterte Regel nicht gestartet, da feste Dimensionen nicht angewendet werden, bis für den Erfassungsbeleg Standarddimensionen für die Buchung angewendet wurden. In der folgenden Abbildung ist das Debitorensegment nicht vorhanden, da die Kriterien für die erweiterte Regel nicht ausgeführt wurden.
 
 [![Sachkonto](./media/drop-down.png)](./media/drop-down.png)
 
@@ -113,17 +113,17 @@ Um zu gewährleisten, was Sie möchten in diesem Beispiel, können Sie die Konfi
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen 
 
-Einige der folgenden Ressourcen beziehen sich auf eine ältere Versionen unserer Software. Sie sind jedoch Teil der Informationen zur Bewerbung von Standarddimensionen und viele der Konzepte sind  identisch in der Vorgängerversion, und die Referenzen sind noch gültig.
+Einige der folgenden Ressourcen beziehen sich auf eine ältere Versionen unserer Software. Sie sind jedoch Teil der Informationen zur Bewerbung von Standarddimensionen und viele der Konzepte sind identisch in der Vorgängerversion, und die Referenzen sind noch gültig.
 
 [Ausgeglichene Erfassungen für einheitenbezogene Buchhaltung](example-balanced-journals-interunit-accounting.md)
 
 [Ihren Kontenplan planen](plan-chart-of-accounts.md) 
 
-[Planung Ihres Kontenplans in AX 2012 (Blog)](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – Dieser Link geht zu Teil 1 einer siebenteiligen Reihe.
+[Planung Ihres Kontenplans in AX 2012 (Blog)](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) – Dieser Link geht zu Teil 1 einer siebenteiligen Reihe.
 
-[Dimension, die in den Buchhaltungsverteilungen den Standardwert akzeptiert](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
+[Dimension, die in den Buchhaltungsverteilungen den Standardwert akzeptiert](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
 
-[Dimension, die das Dimensionsframework standardmäßig akzeptiert](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+[Dimension, die das Dimensionsframework standardmäßig akzeptiert](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

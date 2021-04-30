@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 244d378316caf639c3520a1179dd82955d94220a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833856"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909474"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Gesamttransportkosten vs. Transportverwaltung
 
@@ -51,8 +51,8 @@ TMS und Gesamttransportkosten teilen sich keine Referenzdaten für Entitäten wi
 
 Die folgenden Berichte funktionieren nicht in Verbindung mit der Funktion Waren in Zustellung, die Gesamttransportkosten bereitstellt:
 
-- [Intercompany-Bericht Waren in Zustellung gesamt](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
-- [Intercompany-Bericht Waren in Zustellung gesamt](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Intercompany-Bericht Waren in Zustellung gesamt](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Intercompany-Bericht Waren in Zustellung gesamt](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
 
 Diese Berichte gehen davon aus, dass Waren in Transit eingelagert werden, sobald Sie einen Lieferschein ausstellen, und dass sie bei Erhalt aus dem Transit in den Bestand übernommen werden. Waren in Zustellung werden jedoch nicht auf diese Weise verarbeitet. Wenn Sie also die Funktionen für Waren in Zustellung und Intercompany zusammen verwenden, sind die Ergebnisse für diese beiden Berichte falsch.
 

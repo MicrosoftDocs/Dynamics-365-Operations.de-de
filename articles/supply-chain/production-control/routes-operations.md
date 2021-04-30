@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6be472336ce8ea58973e897c42f6ee9ae92c0761
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819279"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908927"
 ---
 # <a name="routes-and-operations"></a>Arbeitspläne und Arbeitsgänge
 
@@ -79,7 +79,7 @@ Ein Arbeitsplan muss genehmigt werden, bevor er im Produktionsprozess verwendet 
 
 Jeder Arbeitsplan kann separat genehmigt oder widerrufen werden. Beachten Sie, dass, wenn ein Arbeitsplan widerrufen ist, alle zugehörigen Arbeitsplanversionen auch widerrufen sind. In den Produktionssteuerungsparametern können Sie angeben, ob die Arbeitsplangenehmigung widerrufen werden kann und ob genehmigte Arbeitspläne geändert werden können.  
 
-Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer müssen anschließend ihre Identität bestätigen, indem sie [elektronische Signaturen](../../fin-and-ops/organization-administration/electronic-signature-overview.md) verwenden.
+Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer müssen anschließend ihre Identität bestätigen, indem sie [elektronische Signaturen](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) verwenden.
 
 ## <a name="operations"></a>Operations
 Ein Arbeitsgang ist ein Schritt im Produktionsprozess. Jeder Arbeitsgang besitzt eine Kennung und eine einfache Beschreibung. Die folgenden Tabellen zeigt typische Beispiele für Arbeitsgänge einer Maschinenwerkstatt.
@@ -185,7 +185,7 @@ Wenn Sie eine Arbeitsplanversion aktivieren, legen Sie diese als die Standardarb
 
 ### <a name="electronic-signatures"></a>Elektronische Signaturen
 
-Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt und aktiviert, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer, die Arbeitsplanversionen genehmigen und aktivieren, müssen dann ihre Identität bestätigen, indem sie eine [elektronische Signatur](../../fin-and-ops/organization-administration/electronic-signature-overview.md) verwenden.
+Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt und aktiviert, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer, die Arbeitsplanversionen genehmigen und aktivieren, müssen dann ihre Identität bestätigen, indem sie eine [elektronische Signatur](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) verwenden.
 
 ### <a name="product-change-that-uses-case-management"></a>Produktänderung mit Anfrageverwaltung
 
@@ -253,7 +253,7 @@ Wenn für Aktivierung für das Überschneiden ausgewählt wird, hat der Rest Ein
 
 - [Ressourcenfähigkeiten](resource-capabilities.md)
 
-- [Elektronische Signatur – Überblick](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [Elektronische Signatur – Überblick](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
 
 

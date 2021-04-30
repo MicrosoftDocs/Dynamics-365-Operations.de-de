@@ -2,7 +2,7 @@
 title: SPLIT EB-Funktion
 description: In diesem Thema werden Informationen zur Verwendung der SPLIT-Funktion bei der elektronischen Berichterstellung (EB) bereitgestellt.
 author: NickSelin
-ms.date: 12/12/2019
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c99ee5e8129ed45253893dc83acdef99b4ce2c9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 26b6ddeb2880fc220283b6389327a497549a4511
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745592"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853442"
 ---
 # <a name="split-er-function"></a>SPLIT EB-Funktion
 
@@ -79,6 +79,14 @@ Falls das Argument `input` leer ist, wird eine neue leere Liste zurückgegeben. 
 ## <a name="example-2"></a>Beispiel 2
 
 `SPLIT ("XAb aBy", "aB")` gibt eine neue Liste zurück, die aus drei Datensätzen besteht, die das Feld **Wert** des Typs *String* aufweisen. Das Feld **Wert** im ersten Datensatz enthält den Text **"X"**, das Feld **Wert** im zweiten Datensatz enthält den Text **"&nbsp;"**, und das Feld **Wert** im dritten Datensatz enthält den Text **"y"**. 
+
+## <a name="example-3"></a>Beispiel 3
+
+Sie können die Funktion [INDEX](er-functions-list-index.md) zum Zugriff auf einzelne Elemente der angegebenen Eingabezeichenfolge verwenden. Wenn Sie die Datenquelle **MyList** des Typs **Berechnetes Feld** eingeben, und auf den Ausdruck `SPLIT("abc", 1)` konfigurieren, gibt der Ausdruck `INDEX(MyList,2).Value` den Text **„A“** zurück.
+
+## <a name="example-4"></a>Beispiel 4
+
+Die Funktion [AUFZÄHLEN](er-functions-list-enumerate.md) auch zum Zugriff auf einzelne Elemente der angegebenen Eingabezeichenfolge verwenden. Wenn Sie zuerst die Datenquelle **MyList** des Typs **Berechnetes Feld** eingeben und sie auf den Ausdruck `SPLIT("abc", 1)` konfigurieren und dann die Datenquelle **EnumeratedList** des Typs **Berechnetes Feld** eingeben und dafür den Ausdruck `ENUMERATE(MyList)` konfigurieren, gibt der Ausdruck `FIRSTORNULL(WHERE(EnumeratedList, EnumeratedList.Number=2)).Value` den Text **„B“** zurück.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

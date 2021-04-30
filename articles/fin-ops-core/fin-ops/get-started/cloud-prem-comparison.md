@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: e2126983fef2b59af5c8082a6495f808afeb5f9c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 497061500660e41c8f82c73e5dd6c085810c9209
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744050"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910448"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Vergleich von Cloud- und On-Premises-Funktionen
 
@@ -84,7 +84,7 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 
 | **Bereich**                | **Funktion**             | **Cloud** | **Lokal** |
 |-------------------------|-------------------|-----------|-----------------|
-| Anlagenverwaltung                     |                                                                                           | Ja       | Nr.              |
+| Anlagenverwaltung                     |                                                                                           | Ja       | Ja             |
 | Compliance und Bescheinigungen        |                                                                                           | Ja       | Ja             |
 |                                      | SOC 1 Type 1 Zertifizierung                                                                | Ja       | Nr.              |
 | Kostenrechnung                      |                                                                                           | Ja       | Ja             |
@@ -147,7 +147,7 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 
 ## <a name="dynamics-365-commerce"></a>Dynamics 365 Commerce 
 
-Eine Liste der Funktionen, die in lokalen Implementierungen verfügbar sind, finden Sie unter [Commerce-Funktionen, die in lokalen Implementierungen verfügbar sind](../../../retail/retail-onprem.md).
+Eine Liste der Funktionen, die in lokalen Implementierungen verfügbar sind, finden Sie unter [Commerce-Funktionen, die in lokalen Implementierungen verfügbar sind](../../../commerce/retail-onprem.md).
 
 ## <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources 
 

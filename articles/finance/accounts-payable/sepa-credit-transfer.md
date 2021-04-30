@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 760763078d10c56c8bc485601a2f14979d28ac11
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 158d96e748b982c87be3f8b08f68d1fdb919aeeb
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830735"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897161"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Überblick zur SEPA-Kreditübertragung
 
@@ -54,7 +54,7 @@ Das SEPA-Überweisungsformat wird über die generische elektronische Berichterst
 Sie sollten für die Bibliothek der freigegebenen Anlage auf Microsoft Dynamics Lifecycle Services (LCS) nutzen und die neuesten Liste der verfügbaren Dateien mit dem Anlagentyp **GER-Konfiguration** sehen. Im nächsten Abschnitt "Was muss ich einrichten?" wird ein Link zum Thema bereitgestellt, der erläutert, wie ein LCS-Repository herstellt, um verfügbare Konfigurationen und Importieren ausgewählter Konfigurationen zu prüfen.
 
 ## <a name="what-do-i-have-to-set-up"></a>Was muss ich einrichten?
--   Bevor Sie Überweisungsdateien erstellen können, muss mindestens eine aktive Banküberweisungskonfiguration in die generischen elektronischen Berichterstellungskonfigurationen importiert werden. Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+-   Bevor Sie Überweisungsdateien erstellen können, muss mindestens eine aktive Banküberweisungskonfiguration in die generischen elektronischen Berichterstellungskonfigurationen importiert werden. Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   Wenn Sie Kreditorenkonten-Zahlungsmethoden konfigurieren, wählen Sie die **Elektronische Berichterstellung**-Kontrollkästchen und wählen das passende Banküberweisungsformat (z. B. **ISO 20022 Credit transfer (AT)**)
 -   Sie müssen die juristische Person und die Bankkontoinformationen einrichten.
 -   Kontonummern, IBAN und manchmal SWIFT-Codes (BICs) oder andere Nummern werden benötigt, um spezifische Kredittransferzahlungen zu erstellen. Daher müssen diese für das Bankkonto des Kreditors einrichten und das Bankkonto der Organisation, die die Übertragung angefordert werden.

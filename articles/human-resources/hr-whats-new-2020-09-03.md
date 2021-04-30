@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 965f3ca859c601d26470038a889b0f21d2bdff5f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 10978d8843e7bce2800d62b63e58152569be9631
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800116"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891768"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (3. September 2020)
 
@@ -31,7 +31,7 @@ ms.locfileid: "5800116"
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Resources neu oder geändert wurden. Änderungen gelten für Build-Nummer 8.1.3504. Die Zahlen in Klammern in einigen Überschriften beziehen sich zur Referenz auf die Supportnummern in Lifecycle Services (LCS).
 
-Weitere Informationen zu bevorstehenden Funktionen in Human Resources finden Sie unter [Übersicht über Dynamics 365 Human Resources 2019 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/). Weitere Informationen zum Aktualisierungsprozess für Human Resources finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
+Weitere Informationen zu bevorstehenden Funktionen in Human Resources finden Sie unter [Übersicht über Dynamics 365 Human Resources 2019 Versionswelle 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/). Weitere Informationen zum Aktualisierungsprozess für Human Resources finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
 ## <a name="in-this-release"></a>In dieser Version
 
@@ -76,21 +76,21 @@ Der Analysebericht zeigt jetzt die richtigen Informationen für **Lohnsatz** an.
 
 Mitarbeiter können Abwesenheiten von der Arbeit mit Microsoft Teams anfordern. Sie können mit einem Bot interagieren, um Urlaubsanträge zu erstellen. Weitere Informationen finden Sie hier:
 
-- [Abwicklung von Urlaub und Abwesenheit von Mitarbeitern in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) im der Dynamics 365 2020 Veröffentlichungsplan Welle 1
-- [Human Resources-App in Teams](https://go.microsoft.com/fwlink/?linkid=2127841) in der Dokumentation für Human Resources
+- [Abwicklung von Urlaub und Abwesenheit von Mitarbeitern in Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) im der Dynamics 365 2020 Veröffentlichungsplan Welle 1
+- [Human Resources-App in Teams](./hr-admin-teams-leave-app.md) in der Dokumentation für Human Resources
 
 ### <a name="human-resources-app-in-teams-preview-features"></a>Human Resources-App in Teams-Vorschaufunktonen
  
 -  **Benachrichtigungen**: Antragssteller und Genehmigende von Anforderungen arbeitsfreier Zeit werden in der Human Resources-App in Teams benachrichtigt. Genehmigende Personen können Freistellungsanträge genehmigen oder ablehnen. Einreicher werden benachrichtigt, wenn die Anfrage genehmigt oder abgelehnt wurde. Weitere Informationen finden Sie hier:
-   - [Abwicklung von Urlaub und Abwesenheit von Mitarbeitern in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) im der Dynamics 365 2020 Veröffentlichungsplan Welle 2
-   - [Aktivieren von Benachrichtigungen für die Human Resources-App in Teams](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#enable-notifications-for-the-human-resources-app-in-teams) in der Dokumentation für Human Resources
-   - [Aktivieren oder Deaktivieren von Team-Benachrichtigungen für einzelne Benutzer](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#turn-teams-notifications-on-or-off-for-individual-users) in der Dokumentation für Human Resources
-   - [Teams-Benachrichtigungen](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#teams-notifications) in der Dokumentation für Human Resources
-   - [Anzeigen den Urlaubskalenders Ihres Teams](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) in der Dokumentation für Human Resources
+   - [Abwicklung von Urlaub und Abwesenheit von Mitarbeitern in Microsoft Teams](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) im der Dynamics 365 2020 Veröffentlichungsplan Welle 2
+   - [Aktivieren von Benachrichtigungen für die Human Resources-App in Teams](./hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) in der Dokumentation für Human Resources
+   - [Aktivieren oder Deaktivieren von Team-Benachrichtigungen für einzelne Benutzer](./hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users) in der Dokumentation für Human Resources
+   - [Teams-Benachrichtigungen](./hr-teams-leave-app.md#respond-to-teams-notifications) in der Dokumentation für Human Resources
+   - [Anzeigen den Urlaubskalenders Ihres Teams](./hr-teams-leave-app.md#view-your-teams-leave-calendar) in der Dokumentation für Human Resources
  
 - **Manager-Kalender für arbeitsfreie Zeit**: Manager können die genehmigte und ausstehende arbeitsfreie Zeit für ihre direkten Berichte in einer Kalenderansicht anzeigen. Diese Ansicht bietet ein einfaches Verständnis dafür, wann ihre Teammitglieder nicht arbeiten. Weitere Informationen finden Sie hier:
-   - [Abwicklung von Urlaub und Abwesenheit von Mitarbeitern in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) im der Dynamics 365 2020 Veröffentlichungsplan Welle 2
-   - [Anzeigen den Urlaubskalenders Ihres Teams](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) in der Dokumentation für Human Resources
+   - [Abwicklung von Urlaub und Abwesenheit von Mitarbeitern in Microsoft Teams](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) im der Dynamics 365 2020 Veröffentlichungsplan Welle 2
+   - [Anzeigen den Urlaubskalenders Ihres Teams](./hr-teams-leave-app.md#view-your-teams-leave-calendar) in der Dokumentation für Human Resources
 
 ### <a name="configuration-option-to-position-work-items-assigned-to-me-list-477004"></a>Konfigurationsoption zum Positionieren der Liste der mir zugewiesenen Arbeitselemente (477004)
 
@@ -98,7 +98,7 @@ Eine neue Option ist jetzt verfügbar, um die **Mir zugewiesene Arbeitselemente*
 
 Diese Funktion fördert auch die Workflow-Optionen, die in den Formularen für Personalaktionen angezeigt werden. Workflow-Optionen werden auch über das Aktion-Inforegister für den schnellen Zugriff angezeigt. Weitere Informationen finden Sie hier: 
 
-- [Verbesserung der Workflow-Erfahrung in Organisation und Personalverwaltung](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) im Plan der Dynamics 365 2020 Versionswelle 2
+- [Verbesserung der Workflow-Erfahrung in Organisation und Personalverwaltung](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) im Plan der Dynamics 365 2020 Versionswelle 2
 
 ![Mir zugewiesene Arbeitsaufgaben](./media/hr-workflow-work-items-assigned-to-me.png)
 
@@ -117,7 +117,7 @@ Ursachencodes für das Vergütungsverwaltung werden in Kürze mit vorhandenen Ur
 ## <a name="see-also"></a>Siehe auch
 
 [Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)</br>
-[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
 

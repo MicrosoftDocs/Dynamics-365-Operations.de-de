@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 1e021105c19273db5ded7cb0902eca1d502ced8e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 724048991fc8864ef72a5155af66b9c709f4b875
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753359"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893955"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Importieren von aktualisierten Versionen von EB-Konfigurationen
 
@@ -28,7 +28,7 @@ ms.locfileid: "5753359"
 
 [Repositorys](general-electronic-reporting.md#Repository) für die elektronische Berichterstattung (EB) werden verwendet, um [EB-Konfigurationen](general-electronic-reporting.md#Configuration) freizugeben. [Importieren](download-electronic-reporting-configuration-lcs.md) Sie EB-Konfigurationen aus verschiedenen Repositorys in Ihre Instanz von Microsoft Dynamics 365 Finance. Wenn Sie EB-Konfigurationen importieren, können [Konfigurationsanbieter](general-electronic-reporting.md#Provider) Repositorys mit neuen [Versionen](general-electronic-reporting.md#component-versioning) veröffentlichen, damit sie freigegeben werden können.
 
-In diesem Thema wird erläutert, wie Sie aktualisierte Versionen von EB-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes importieren. Weitere Informationen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations – Regulatory services](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+In diesem Thema wird erläutert, wie Sie aktualisierte Versionen von EB-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes importieren. Weitere Informationen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations – Regulatory services](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>Überprüfen der verfügbaren aktualisierten Versionen
 

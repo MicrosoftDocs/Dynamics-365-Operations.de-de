@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c734b62dff6fc6151e192f239ad319b78f8faa8f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5931d718d34db81ebd032eda821f071d9d329a26
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825205"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908034"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Kreditorenzusammenarbeit mit Debitoren
 
@@ -31,7 +31,7 @@ In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden kö
 - **Bestellungsbestätigung** – Überwachen von Bestellungen und auf sie antworten.
 - **Kreditorenangebotsabgabe** – Angebotsanforderungen anzeigen und durch Eingeben von Angeboten auf sie antworten.
 - **Kreditoreninformationen** – Kreditorenmasterdaten anzeigen und aktualisieren.
-- **Rechnungsstellung** – Mit Rechnungen arbeiten. In diesem Thema wird der Arbeitsbereich **Rechnungsstellung** nicht behandelt. Weitere Informationen über diesen Arbeitsbereich finden Sie unter [Arbeitsbereich für Kreditorenzusammenarbeitsrechnungsstellung](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Rechnungsstellung** – Mit Rechnungen arbeiten. In diesem Thema wird der Arbeitsbereich **Rechnungsstellung** nicht behandelt. Weitere Informationen über diesen Arbeitsbereich finden Sie unter [Arbeitsbereich für Kreditorenzusammenarbeitsrechnungsstellung](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Kreditoren können außerdem Informationen zu Lieferungsbestand überwachen.
 

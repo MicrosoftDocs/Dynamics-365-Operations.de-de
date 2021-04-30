@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ff00b577428c96804af5af29a91c7048bf736400
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 62bc6587ad80fd318038f5dfc5ff68821b2a65cd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753335"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893931"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Benutzern ermöglichen, eine ER-Formatreferenz einzurichten, die ein Format aus dem globalen Repository abfragt
 
@@ -30,7 +30,7 @@ Sie können das [Elektronische Berichterstattung](general-electronic-reporting.m
 
 In der Regel müssen Sie angeben, welches ER-Format in einem bestimmten Geschäftsprozess verwendet werden muss. Wählen Sie dazu ein einzelnes ER-Format in einem Suchfeld aus, das als Teil von Geschäftsprozess-spezifischen Parametern konfiguriert ist. Diese Suchfelder werden normalerweise mithilfe der entsprechenden API des ER-Frameworks implementiert. Weitere Informationen finden Sie unter [ER-Framework-API – Code zum Anzeigen einer Formatzuordnungssuche](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
-Beispiel: Wenn Sie [Außenhandelsparameter](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters) konfigurieren, müssen Sie die Verweise auf einzelne Formate einrichten, die zum Generieren der Intrastat-Meldung und des Intrastat-Meldungskontrollberichts verwendet werden. Die folgenden Screenshots zeigen, wie das Suchfeld für die ER-Formate auf der Seite **Außenhandelsparameter** aussieht.
+Beispiel: Wenn Sie [Außenhandelsparameter](../../../finance/localizations/emea-intrastat.md#set-up-foreign-trade-parameters) konfigurieren, müssen Sie die Verweise auf einzelne Formate einrichten, die zum Generieren der Intrastat-Meldung und des Intrastat-Meldungskontrollberichts verwendet werden. Die folgenden Screenshots zeigen, wie das Suchfeld für die ER-Formate auf der Seite **Außenhandelsparameter** aussieht.
 
 Wenn die aktuelle Finance-Instanz keine auf den Intrastat-Geschäftsprozess bezogenen EB-Formate enthält, ist dieses Suchfeld leer.
 

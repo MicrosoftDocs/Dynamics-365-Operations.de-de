@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9bb3c178a698bdcd46e7c596247360ba9233b398
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: de380113fe951f75c15f9e5526ad2f1f5cc84334
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816483"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908879"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Wichtige historische Daten für Bedarfsplanungen
 
@@ -41,7 +41,7 @@ Weitere Informationen zum Importieren von Daten, einschließlich zum Bereinigen 
 
 ## <a name="example"></a>Beispiel
 
-Sie können die folgende Datei als Beispiel verwenden. Laden Sie Die [HistoricalDemandData](https://docs.microsoft.com/dynamics/s-e/) herunter. Diese Datei enthält die historischen Bedarfsdaten für Artikel D0001. Sie enthält nur die folgenden Pflichtfelder: Standort, Menge und das Bedarfsdatum.
+Sie können die folgende Datei als Beispiel verwenden. Laden Sie Die [HistoricalDemandData](/dynamics/s-e/) herunter. Diese Datei enthält die historischen Bedarfsdaten für Artikel D0001. Sie enthält nur die folgenden Pflichtfelder: Standort, Menge und das Bedarfsdatum.
 
 1. Wählen Sie das Unternehmen aus, in das die historischen Bedarfsdaten importiert werden sollen.
 2. Öffnen Sie den Arbeitsbereich **Datenverwaltung**.

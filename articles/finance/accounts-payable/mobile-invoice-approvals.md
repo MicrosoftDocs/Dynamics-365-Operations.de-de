@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5d3b85e076292b9d41de6a4cf3198ed9b38d27c8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9e6138ccd92019f52afab0d8ed4b8cf64d66ff24
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828033"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897695"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobile Rechnungsgenehmigungen
 
@@ -32,7 +32,7 @@ Mithilfe der mobilen Funktionen können Geschäftsbenutzer mobile Erfahrungen en
 
 | Voraussetzung                                                                                            | Beschreibung                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Vorbereitung                                                                                |[Mobile Plattform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
+| Vorbereitung                                                                                |[Mobile Plattform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Eine Umgebung mit Version 1611 und Plattform-Update 3 (November 2016)                   |
 | Hotfix KB 3204341 installieren.                                                                              | Die Aufgabenaufzeichnung kann fälschlicherweise zwei Scließen-Befehle für Dropdowndialogfelder erfassen, die in Plattform-Update 3 (November 2016) einbezogen sind |
 | Hotfix KB 3207800 installieren.                                                                              | Dieser Hotfix ermöglicht das Anzeigen von Anhängen im mobilen Client, der in Plattform-Update 3 (November 2016) enthalten ist.           |
@@ -213,7 +213,7 @@ Um die Rechnungsdetailseite für die mobile App zu entwerfen, verwenden Sie die 
 
 11. Nachdem alle Felder aus den früheren zwei Schritten hinzugefügt wurden, klicken Sie auf **Fertig**. Die müssen der folgenden Abbildung ähneln.
     
-    [![Seite nach Felder hinzugefügt](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Abbildung mit zusätzlichen Feldern hinzugefügt](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
 

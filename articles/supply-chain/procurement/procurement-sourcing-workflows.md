@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd9ee69e180f2ff605c4f373a95d2346ccc73c0e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 126e9969f312ff7f6a6c64b733708754e7659214
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807943"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909230"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Beschaffungsworkflows
 
@@ -47,7 +47,7 @@ Die folgenden Workflowtypen stehen für die Beschaffung zur Verfügung.
 | Workflow für Antrag zum Hinzufügen eines Kreditors | Erstellen Sie Prüfungs- und Genehmigungsworkflows zum Hinzufügen neuer Kreditoren über Kreditorenanforderungen. |
 
 > [!IMPORTANT]
-> Wenn Sie einen neuen Workflow hinzufügen, werden möglicherweise auch die folgenden veralteten Workflows im Dialogfeld **Workflow erstellen** aufgeführt. Diese beziehen sich auf die *Empfangsbestätigung*-Funktionalität, die in [Dynamics AX 2012](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows) verfügbar war, die aber jetzt außer Betrieb genommen wurde. Diese Workflows werden derzeit nicht unterstützt.
+> Wenn Sie einen neuen Workflow hinzufügen, werden möglicherweise auch die folgenden veralteten Workflows im Dialogfeld **Workflow erstellen** aufgeführt. Diese beziehen sich auf die *Empfangsbestätigung*-Funktionalität, die in [Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows) verfügbar war, die aber jetzt außer Betrieb genommen wurde. Diese Workflows werden derzeit nicht unterstützt.
 > 
 > - Workflow für Benachrichtigung über Lieferfälligkeit
 > - Workflow für Benachrichtigung über Rechnungseingang

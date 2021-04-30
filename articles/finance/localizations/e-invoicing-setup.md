@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fd0dda0adb292c10eea0a770ae0eae33d5f91f17
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9aac18155fbc7a87554ac0521cd9f40d11eba9e2
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840003"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890830"
 ---
 # <a name="set-up-electronic-invoicing"></a>Elektronische Rechnungsstellung einrichten
 
@@ -75,7 +75,7 @@ Befolgen Sie diese Schritte, um der Funktion für die elektronische Rechnungsste
     > [!NOTE]
     > Während Sie das Format bearbeiten, wird der Status der Konfigurationsversion auf **Entwurf** festgelegt.
 
-3. Verwenden Sie die Seite **Formatdesigner**, um die Dateiformatkonfiguration zu bearbeiten. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
+3. Verwenden Sie die Seite **Formatdesigner**, um die Dateiformatkonfiguration zu bearbeiten. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
     ![Formatdesignerseite](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 

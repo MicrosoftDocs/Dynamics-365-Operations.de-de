@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3639c05b24de31cfa09d2d9d0cf427122f51eae
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa8faf0f0f45f901151b3b20a1792b3d8f264fa6
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810197"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897623"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Zugriffsrechte für Kostenobjekt-Controller
 
@@ -62,9 +62,8 @@ Das folgende Beispiel zeigt, wie eine Dimensionshierarchie aussehen kann.
 
 Sie können das Inforegister **Benutzer** im Hierarchie-Designer verwenden, um mindestens eine Benutzerkennungen auf jedem Knoten einzufügen.
 
-|                                   | Benutzer            | Dimensionsmitgliedsbereiche   |                         |
+|             Knoten                 | Benutzer            | Von-Dimensionsmitglied     |   Bis-Dimensionsmitglied   |
 |-----------------------------------|------------------|---------------------------|-------------------------|
-| **Knoten**                         | **Benutzerkennung**      | **Ausgangsdimensionsmitglied** | **Zieldimensionsmitglied** |
 | Organisation                      | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Verwaltung                 | April            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finanzen   | Alicia           | CC002                     | CC003                   |
@@ -95,14 +94,14 @@ Die Einstellungen für die Zugriffslistenhierarchie werden verwendet, um die Dat
     - Power BI-Datenvisualisierungen, die im Client der Dynamics 365 Finance eingebettet werden
 
 > [!IMPORTANT]
-> - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Zeilenebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Zeilenebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - In diesem Thema werden die Voraussetzungen behandelt, die erfüllt sein müssen, bevor Sie den Arbeitsbereich **Kostensteuerung** verwenden können.
 
 Zusätzliche Ressourcen
 
 - [Kostensteuerungs-Arbeitsbereich](cost-control-workspace.md)
 - [Dimensionshierarchie](dimension-hierarchy.md)
-- [Sicherheit für Kostensteuerungs-Inhaltspack einrichten](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+- [Sicherheit für Kostensteuerungs-Inhaltspack einrichten](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

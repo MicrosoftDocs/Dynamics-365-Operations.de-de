@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 62317f7e42c5392dce32a667f05f22e5c970abc7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835629"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910014"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerabwicklung eingehender Ladungen für Bestellungen
 
 In diesem Thema wird der Lagerbehandlungsprozess für eingehende Ladungen für Bestellungen beschrieben.
 
-Für jede eingehende Ladung sollte Ihr System bereits einen zugehörigen Kundenauftrag enthalten, und sie kann auch eine zugehörige Ladungsspezifikation und/oder einen zugehörigen Transportplan enthalten. Weitere Informationen zum Erstellen und Verwalten eingehender Auslastungen finden Sie unter [Geschäftsprozess: Transport für eingehende Ladungen planen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+Für jede eingehende Ladung sollte Ihr System bereits einen zugehörigen Kundenauftrag enthalten, und sie kann auch eine zugehörige Ladungsspezifikation und/oder einen zugehörigen Transportplan enthalten. Weitere Informationen zum Erstellen und Verwalten eingehender Auslastungen finden Sie unter [Geschäftsprozess: Transport für eingehende Ladungen planen](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## <a name="overview-how-inbound-loads-are-created-registered-and-received"></a>Übersicht: Wie eingehende Lasten erstellt, registriert und empfangen werden
 
@@ -38,11 +38,11 @@ Die folgende Abbildung zeigt den typischen Ablauf für die Bearbeitung eingehend
 
 1. **Ein eingehender Ladedatensatz wird erstellt, um die Ankunft und den Inhalt zu planen.**
 
-    Der Eingangsladedatensatz repräsentiert eine Lieferantensendung einer oder mehrerer Bestellungen. Es wird erwartet, dass die Ladung als eine einzige physische Transporteinheit (z. B. eine LKW-Ladung) im Lager ankommt. Der eingehende Ladungsdatensatz wird zu Planungszwecken verwendet und ermöglicht es dem Logistikkoordinator, den Fortschritt der Ladung vom Lieferanten zu verfolgen. Es wird auch verwendet, um Bestellpostenmengen zu registrieren und den Fortschritt durch Lageroperationen wie Ankunfts- und Einlagerungsarbeiten zu verwalten. Ladungen können entweder automatisch oder manuell erstellt werden und sie können entweder auf einer Bestellung oder einem Lieferavis (ASN) des Lieferanten basieren. Weitere Informationen finden Sie unter [Erstellen oder ändern Sie eine eingehende Last](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    Der Eingangsladedatensatz repräsentiert eine Lieferantensendung einer oder mehrerer Bestellungen. Es wird erwartet, dass die Ladung als eine einzige physische Transporteinheit (z. B. eine LKW-Ladung) im Lager ankommt. Der eingehende Ladungsdatensatz wird zu Planungszwecken verwendet und ermöglicht es dem Logistikkoordinator, den Fortschritt der Ladung vom Lieferanten zu verfolgen. Es wird auch verwendet, um Bestellpostenmengen zu registrieren und den Fortschritt durch Lageroperationen wie Ankunfts- und Einlagerungsarbeiten zu verwalten. Ladungen können entweder automatisch oder manuell erstellt werden und sie können entweder auf einer Bestellung oder einem Lieferavis (ASN) des Lieferanten basieren. Weitere Informationen finden Sie unter [Erstellen oder ändern Sie eine eingehende Last](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **Der Lieferant bestätigt den Ladungsversand.**
 
-    Wenn der Lieferant die Ladung versendet, bestätigt der Logistikkoordinator im empfangenden Lager die Ladungssendung. Wenn die empfangende Firma das Modul **Transport-Management** verwendet, löst die Versandbestätigung andere Lastmanagementprozesse aus, die den eingehenden Ladungen zugeordnet sind. Weitere Informationen finden Sie unter [Bestätigen Sie eine Ladung für den Versand](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    Wenn der Lieferant die Ladung versendet, bestätigt der Logistikkoordinator im empfangenden Lager die Ladungssendung. Wenn die empfangende Firma das Modul **Transport-Management** verwendet, löst die Versandbestätigung andere Lastmanagementprozesse aus, die den eingehenden Ladungen zugeordnet sind. Weitere Informationen finden Sie unter [Bestätigen Sie eine Ladung für den Versand](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **Die Ladung kommt im Lager an und die Arbeiter registrieren Mengen.**
 

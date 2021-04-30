@@ -2,11 +2,11 @@
 title: Erste Schritte mit dem Anlagen-Leasing
 description: In diesem Thema wird die Anlagenleasing-Funktion beschrieben und Sie werden durch die Schritte zum Erstellen eines Anlagenleasings sowie zum Anzeigen von Informationen zu diesen Leasingverträgen geführt.
 author: moaamer
-ms.date: 10/16/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814127"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892432"
 ---
 # <a name="asset-leasing-get-started"></a>Erste Schritte mit dem Anlagen-Leasing
 
 [!include [banner](../includes/banner.md)]
 
 In diesem Thema wird die Anlagenleasing-Funktion beschrieben und Sie werden durch die Schritte zum Erstellen eines Anlagenleasings sowie zum Anzeigen von Informationen zu diesen Leasingverträgen geführt. Das Thema definiert außerdem die in der Benutzeroberfläche und der Dokumentation verwendete Terminologie. Anlagenleasing ist eine erweiterte Funktion zur Verwaltung, Verfolgung und Automatisierung von Finanzbuchungen für Leasingobjekte in Microsoft Dynamics 365 Finance. Anlagenleasing entspricht den internationalen Rechnungslegungsstandards (IFRS 16) und den US-GAAP-Standards (ASC 842). Anlagenleasing erfasst und verarbeitet Informationen zu den Leasingverträgen und unterstützt das Generieren von Journaleinträgen über den gesamten Lebenszyklus des Leasingtvertrags hinweg, von der erstmaligen Erfassung über monatliche Journaleinträge bis hin zur dauerhaften Wertminderung und zur Beendigung des Leasingvertrags. Anlagenleasing lässt sich nahtlos in andere Komponenten von Dynamics 365 Finance integrieren, inklusive „Anlagen“, „Kreditorenkonten“ und „Hauptbuch“.
+
+Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit der Einstellung **Funktionsverwaltung** den Status der Funktion überprüfen und ggf. aktivieren. Suchen und wählen Sie im Arbeitsbereich **Funktionsverwaltung** die Funktion namens **Anlagenleasing** aus. Klicken Sie anschließend auf **Jetzt aktivieren**.
 
 Weitere Informationen zu Rechnungslegungsstandards finden Sie in der Standarddokumentation für IFRS 16 und US GAAP ASC 842.
 

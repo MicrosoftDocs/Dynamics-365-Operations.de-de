@@ -2,11 +2,11 @@
 title: Abschreibung des Nutzungsrechts am Leasingobjekt erfassen (Vorschau)
 description: In diesem Thema wird erläutert, wie Sie den Journaleintrag für die Amortisierung erstellen, die für Mietverträge erforderlich ist, die in der Bilanz eines Unternehmens erfasst werden.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseAssetSchedule
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c64f19d4cf334a6cbcacaaa3753dbafe8cbf1ffe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba26e83202163eb8e750705eb1bbb1c97cee813e
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823070"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881493"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Abschreibung des Nutzungsrechts am Leasingobjekt erfassen (Vorschau)
 

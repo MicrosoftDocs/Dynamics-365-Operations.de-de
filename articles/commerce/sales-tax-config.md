@@ -2,7 +2,8 @@
 title: Mehrwertsteuer für Online-Aufträge konfigurieren
 description: Dieses Thema bietet eine Übersicht über die Auswahl von Mehrwertsteuergruppen für verschiedene Online-Auftragstypen in Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 11/16/2020
+manager: AnnBe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,61 +16,64 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 68b7e59a1e1ea18bdcd4e7a9117e4892407f40ff
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8df939c1a566fb63bc53e455cc6c2aa85956ac79
+ms.sourcegitcommit: 583801af75c50915ea5ffc60e831fb617d045533
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791846"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853810"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Mehrwertsteuer für Online-Aufträge konfigurieren
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema bietet eine Übersicht über die Auswahl von Mehrwertsteuergruppen für verschiedene Online-Auftragstypen. 
+Dieses Thema bietet einen Überblick über die Auswahl von Mehrwertsteuergruppen für verschiedene Online-Auftragstypen unter Verwendung von steuerlichen Einstellungen auf Ziel oder Debitorenkontobasis. 
 
-Ihr E-Commerce-Kanal möchte möglicherweise Optionen wie Lieferung oder Abholung für Online-Aufträge unterstützen. Die Anwendbarkeit der Mehrwertsteuer basiert auf der von Ihren Online-Benutzern ausgewählten Option. Wenn ein Websitekunde sich entscheidet, einen Artikel online zu kaufen, und ihn an eine Adresse geliefert bekommt, wird die Mehrwertsteuer basierend auf der Steuergruppeneinstellung der Lieferadresse des Kunden bestimmt. Wenn sich ein Kunde dafür entscheidet, einen gekauften Artikel in einem Geschäft abzuholen, wird die Mehrwertsteuer basierend auf der Steuergruppeneinstellung des Abholgeschäfts ermittelt. 
+Ihr E-Commerce-Kanal soll möglicherweise Optionen wie Lieferung oder Abholung für Online-Aufträge unterstützen. Die Anwendbarkeit der Mehrwertsteuer basiert auf der von Ihren Onlinedebitoren ausgewählten Option. 
 
-## <a name="orders-shipped-to-a-customer-address"></a>An eine Kundenadresse gelieferte Aufträge 
+## <a name="destination-based-taxes-for-online-orders"></a>Zielbasierte Steuern für Online-Bestellungen
 
-Im Allgemeinen werden Steuern für Online-Aufträge, die an Kundenadressen geliefert werden, vom Zielort bestimmt. Jede Mehrwertsteuergruppe hat eine Einzelhandelsziel-basierte Steuerkonfiguration, in der Ihr Unternehmen die Zieldetails definieren kann, wie Land/Region, Bundesland, Landkreis und Ort in einer hierarchischen Form. Wenn ein Online-Auftrag erteilt wird, verwendet das Commerce-Steuermodul die Lieferadresse jeder Position im Auftrag und sucht Mehrwertsteuergruppen mit übereinstimmenden zielbasierten Steuerkriterien. Bei einem Online-Auftrag mit San Francisco, Kalifornien, USA, als Positionslieferadresse findet das Steuermodul die Mehrwertsteuergruppe und den Mehrwertsteuercode für Kalifornien und berechnet dann entsprechend die Steuer für jede einzelne Position.  
+Im Allgemeinen werden Steuern für Online-Aufträge, die an Kundenadressen geliefert werden, vom Zielort bestimmt. Jede Mehrwertsteuergruppe hat eine Einzelhandelsziel-basierte Steuerkonfiguration, in der Ihr Unternehmen die Zieldetails definieren kann, wie Land oder Region, Bundesland, Landkreis und Ort in einer hierarchischen Form.
 
-## <a name="customer-based-tax-groups"></a>Kundenbasierte Steuergruppen
+### <a name="orders-delivered-to-customer-address"></a>An eine Debitorenadresse gelieferte Aufträge
 
-In der Commerce-Zentralverwaltung gibt es zwei Stellen, an denen Kundensteuergruppen konfiguriert werden:
+Wenn ein Online-Auftrag erteilt wird, verwendet das Commerce-Steuermodul die Lieferadresse jeder Position im Auftrag und sucht Mehrwertsteuergruppen mit übereinstimmenden zielbasierten Steuerkriterien. Bei einem Online-Auftrag mit San Francisco, Kalifornien, USA, als Positionslieferadresse findet das Steuermodul die Mehrwertsteuergruppe und den Mehrwertsteuercode für Kalifornien und berechnet dann entsprechend die Steuer für jede einzelne Position.
 
-- **Kundenprofil**
-- **Lieferadresse des Kunden**
+### <a name="order-pick-up-in-store"></a>Auftragsabholung im Laden
 
-### <a name="if-a-customers-profile-has-a-tax-group-configured"></a>Wenn für das Profil eines Kunden eine Steuergruppe konfiguriert wurde
+Für Auftragspositionen, bei denen Abholung im Laden oder Abholung am Straßenrand angegeben ist, wird die Steuergruppe aus dem ausgewählten Abholladen angewendet. Details zum Einrichten der Mehrwertsteuer für einen bestimmten Laden finden Sie unter [Andere Steueroptionen für Läden festlegen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
 
-Für den Profildatensatz eines Kunden in der Zentralverwaltung wurde möglicherweise eine Mehrwertsteuergruppe konfiguriert. Für Online-Aufträge wird die in einem Kundenprofil konfigurierte Mehrwertsteuergruppe jedoch nicht vom Steuermodul verwendet. 
+## <a name="customer-account-based-taxes-for-online-orders"></a>Debitorenkontobasierte Steuern für Online-Bestellungen
 
-### <a name="if-a-customers-shipping-address-has-a-tax-group-configured"></a>Wenn für die Lieferadresse eines Kunden eine Steuergruppe konfiguriert wurde
+Möglicherweise gibt es ein Geschäftsszenario, in dem Sie eine Mehrwertsteuergruppe für ein bestimmtes Debitorenkonto in der Commerce-Zentralverwaltung konfigurieren möchten. In der Zentralverwaltung gibt es zwei Stellen, an denen Sie die Mehrwertsteuer für ein Debitorenkonto konfigurieren können. Um auf diese zuzugreifen, müssen Sie zunächst eine Seite „Debitorendetails“ aufrufen, indem Sie auf **Retail und Commerce \> Debitoren \> Alle Debitoren** gehen und dann einen Debitor auswählen.
 
-Wenn für den Lieferadressdatensatz eines Kunden eine Steuergruppe konfiguriert ist und ein Online-Auftrag (oder Positionsartikel) an die Lieferadresse des Kunden geliefert wird, wird die im Adressdatensatz des Kunden konfigurierte Steuergruppe vom Steuermodul für Steuerberechnungen verwendet.
+Die zwei Stellen, an denen Sie die Mehrwertsteuer für ein Debitorenkonto konfigurieren können, sind:
 
-#### <a name="configure-a-tax-group-for-a-customers-shipping-address-record"></a>Eine Steuergruppe für den Lieferadressdatensatz eines Kunden konfigurieren
+- **Mehrwertsteuergruppe** auf dem Inforegister **Rechnung und Lieferung** der Seite „Debitorendetails“. 
+- **Mehrwertsteuer** auf dem Inforegister **Allgemein** der Seite **Adressen verwalten**. Um von der Seite „Debitorendetails“ dorthin zu gelangen, wählen Sie eine bestimmte Adresse im Inforegister **Adressen** und dann **Erweitert** aus.
 
-Führen Sie die folgenden Schritte aus, um eine Steuergruppe für den Lieferadressdatensatz eines Kunden in der Commerce-Zentralverwaltung zu konfigurieren.
+> [!TIP]
+> Wenn Sie bei Online-Kundenbestellungen nur die zielbasierten Steuern anwenden und debitorenkontobasierte Steuern vermeiden möchten, stellen Sie sicher, dass das Feld **Mehrwertsteuergruppe** im Inforegister **Rechnung und Lieferung** der Seite „Debitorendetails“ leer ist. Um sicherzustellen, dass für Neukunden, die sich über den Online-Kanal anmelden, nicht die Einstellungen der Mehrwertsteuergruppe aus den Standardeinstellungen für Debitoren oder Debitorengruppen übernommen werden, stellen Sie sicher, dass das **Mehrwertsteuergruppe** für die Standard-Debitoreneinstellungen und Debitorengruppeneinstellungen des Onlinekanals ebenfalls leer ist (**Retail und Commerce \> Debitoren \> Debitorengruppen**).
 
-1. Wechseln Sie zu **Alle Kunden** und wählen Sie dann den gewünschten Kunden aus. 
-1. Im Inforegister **Adressen** wählen Sie die gewünschte Adresse und dann **Weitere Optionen \> Erweitert** aus. 
-1. Unter der Registerkarte **Allgemein** auf der Seite **Adressen verwalten** legen Sie den Mehrwertsteuerwert nach Bedarf fest.
+## <a name="determine-destination-based-tax-or-customer-account-based-tax-applicability"></a>Die anwendbare zielbasierte oder debitorenkontobasierte Steuer bestimmen 
 
-> [!NOTE]
-> Die Steuergruppe wird anhand der Lieferadresse der Auftragsposition definiert und die zielbasierten Steuern werden in der Steuergruppe selbst konfiguriert. Weitere Informationen finden Sie unter [Steuern für Online-Shops auf der Grundlage des Ziels einrichten](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
+In der folgenden Tabelle wird erläutert, ob für Online-Bestellungen zielbasierte oder debitorenkontobasierte Steuern angewendet werden. 
 
-## <a name="order-pickup-in-store"></a>Auftragsabholung im Laden
-
-Für Auftragspositionen, bei denen Abholung im Laden oder Abholung am Straßenrand angegeben ist, wird die Steuergruppe aus dem ausgewählten Abholladen angewendet. Details zum Konfigurieren der Steuergruppe für einen bestimmten Laden finden Sie unter [Andere Steueroptionen für Läden festlegen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
-
-> [!NOTE]
-> Wenn eine Bestellposition in einem Geschäft abgeholt wird, werden die Adresssteuereinstellungen des Kunden (sofern eingerichtet) vom Steuermodul ignoriert und die Steuerkonfiguration des Abholladens werden angewendet. 
+| Debitorentyp | Versandadresse                   | Debitor > Rechnung und Lieferung> Mehrwertsteuergruppe? | Adresse auf Debitorenkonto in der Zentralverwaltung? | Debitorenadresse > Erweitert > Allgemein > Mehrwertsteuergruppe?                                              | Angewendete Mehrwertsteuergruppe      |
+|---------------|------------------------------------|-----------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------|
+| Gast         | Manhattan, New York                      | Nein (leer)                                                | Nein (leer)                              | Nein (leer)                                                                                                   | New York (zielbasierte Steuern) |
+| Angemeldet     | Austin, Texas                          | Nein (leer)                                             | Ja                               | Keines<br/><br/>Neue Adresse über Onlinekanal hinzugefügt.                                                            | Texas (zielbasierte Steuern) |
+| Angemeldet     | San Francisco, Kalifornien (Abholung im Geschäft) | Ja (New York)                                            | Nicht zutreffend                              | Nicht zutreffend                                                                                                    | Kalifornien (zielbasierte Steuern) |
+| Angemeldet     | Houston, Texas                         | Ja (New York)                                            | Ja                               | Ja (New York)<br/><br/>Neue Adresse über Onlinekanal und Mehrwertsteuergruppe hinzugefügt, die vom Debitorenkonto übernommen wurde. | New York (debitorenkontobasierte Steuern)  |
+| Angemeldet     | Austin, Texas                          | Ja (New York)                                            | Ja                               | Ja (New York)<br/><br/>Neue Adresse über Onlinekanal und Mehrwertsteuergruppe hinzugefügt, die vom Debitorenkonto übernommen wurde. | New York (debitorenkontobasierte Steuern)  |
+| Angemeldet     | Sarasota, Florida                       | Ja (New York)                                            | Ja                               | Ja (Washington)<br/><br/>Manuell auf Washington gesetzt.                                                                          | Washington (debitorenkontobasierte Steuern)  |
+| Angemeldet     | Sarasota, Florida                       | Nein (leer)                                                | Ja                               | Ja (Washington)<br/><br/>Manuell auf Washington gesetzt.                                                                          | Washington (debitorenkontobasierte Steuern)  |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Mehrwertsteuerübersicht](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
+[Einrichten von Steuern für Onlineshops auf Zielbasis](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
+
+[Übersicht über die Mehrwertsteuer](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
 
 [Mehrwertsteuer-Berechnungsmethoden im Feld „Ursprung“](https://docs.microsoft.com/dynamics365/finance/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/commerce/toc.json) 
 
