@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 7d5768a6cb2b3623333fab93a42ac5840e87ec68
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ddfc0670a5fca24d996e9ab605e267f9f3f26f19
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818613"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897887"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts-preview"></a>Externe Daten in Cashflow-Planungen verwenden (Vorschau)
 
@@ -33,7 +33,7 @@ Externe Daten können eingegeben oder in Cashflow-Planungen importiert werden. I
 
 Verwenden Sie die **Externe Quelle**-Registerkarte auf der **Einrichtung der Cashflow-Planung**-Seite (**Bargeld- und Bankverwaltung \> Cashflow-Planung**), um Einstellungen einzugeben, die die Verwendung externer Daten in Cashflow-Planungen unterstützen.
 
-Weitere Informationen zum Einrichten finden Sie unter [Cashflow-Planung](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting).
+Weitere Informationen zum Einrichten finden Sie unter [Cashflow-Planung](../cash-bank-management/cash-flow-forecasting.md).
 
 Um externe Daten für Cashflow-Planungen einzugeben, können Sie die Erfahrung zum Öffnen in Excel zum Eingeben und Ändern externer Daten verwenden. Wählen Sie die Schaltfläche **Externe Daten** und dann entweder **Externe Daten hinzufügen** oder **Vorhandene externe Daten bearbeiten** aus. Wenn die Microsoft Excel-Datei geöffnet ist, können Sie Informationen in die folgenden Felder eingeben:
 

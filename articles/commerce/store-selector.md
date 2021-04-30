@@ -2,7 +2,8 @@
 title: Shopauswahlmodul
 description: Dieses Thema enthält das Siteauswahlmodul und es wird beschrieben, wie Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e73338666c0bd8c0dc8df840b308ec758ee812dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798632"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853416"
 ---
 # <a name="store-selector-module"></a>Shopauswahlmodul
 
@@ -32,11 +33,32 @@ Kunden können das Filialauswahlmodul verwenden, um ein Produkt in einem ausgew�
 
 Mit dem Filialauswahlmodul können Benutzer einen Ort (Stadt, Bundesland, Adresse usw.) eingeben, um nach Filialen innerhalb eines Suchradius zu suchen. Beim ersten Öffnen des Moduls wird der Browserstandort des Kunden verwendet, um Geschäfte zu suchen (sofern eine Einwilligung vorliegt).
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>Speichern Sie die Verwendung des Auswahlmoduls im E-Commerce
+## <a name="store-selector-module-usage"></a>Verwendung des Shopauswahlmodul
 
 - Ein Shopauswahlmodul kann auf einer Produktdetailseite (PDP) verwendet werden, um ein Geschäft zur Abholung auszuwählen.
 - Ein Shopauswahlmodul kann auf einer Warenkorbseite verwendet werden, um ein Geschäft zur Abholung auszuwählen.
 - Ein Shopauswahlmodul kann auf einer eigenständigen Seite verwendet werden, auf der alle verfügbaren Geschäfte angezeigt werden.
+
+## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Erfüllungsgruppen-Einrichtung in der Commerce-Zentralverwaltung
+
+Damit die Shopauswahl verfügbare Geschäfte anzeigen kann, muss die Erfüllungsgruppe in der Commerce-Zentralverwaltung eingerichtet werden. Weitere Informationen finden Sie unter [Erfüllungsgruppen einrichten](customer-orders-overview.md#set-up-fulfillment-groups).
+
+Darüber hinaus müssen für jedes Geschäft in der Erfüllungsgruppe der Breiten- und Längengrad des Geschäftsstandorts in der Zentralverwaltung definiert werden.
+
+Um den Längen- und Breitengrad für den Geschäftsstandort in der Commerce-Zentralverwaltung zu konfigurieren, gehen Sie wie folgt vor.
+
+1. Wechseln Sie zu **Bestandsverwaltung \> Einstellungen \> Lageraufschlüsselung**.
+1. Wählen Sie im linken Bereiche den Lagerortstandort aus.
+1. Wählen Sie im Inforegister **Adressen** **Erweitert** aus.
+
+    ![Beispiel für Geschäftsdetails in der Zentralverwaltung](./media/Store-address.png)
+
+1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
+1. Geben Sie im Inforegister **Allgemein** Werte für **Breitengrad** und **Längengrad**.
+
+    ![Beispiel für die Einrichtung von Längen- und Breitengraden für ein Geschäft in der Zentraleverwaltung](./media/Store-latitude-longitude.png)
+
+1. Wählen Sie im Aktionsbereich **Speichern** aus. 
 
 ## <a name="bing-maps-integration"></a>Bing Maps-Integration
 
@@ -48,6 +70,7 @@ Für die Vorschlagssuche-REST-API müssen Sie sicherstellen, dass die folgenden 
 - Fügen Sie der **img-src**-Richtlinie **&#42;.virtualearth.net** hinzu.
 - Fügen Sie der **script-src**-Richtlinie **&#42;.bing.com und &#42;.virtualearth.net** hinzu.
 - Fügen Sie der **script style-src**-Richtlinie **&#42;.bing.com** hinzu.
+
  
 ## <a name="pickup-in-store-mode"></a>Modus „Im Shop abholen“
 

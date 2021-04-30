@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2927a976c38e9ed8166c62b030d665a159119ae1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 36be4a85dbbd28839afd45b6ed167b4c8181ae72
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826418"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909500"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Szenarioeinrichtung für IoT-Intelligenz
 
@@ -42,7 +42,7 @@ Das Szenario **Ausfallzeiten der Geräte** weist die Folgenden Abhängigkeiten a
 Gehen Sie folgendermaßen vor, um das Szenario zu konfigurieren.
 
 1. Melden Sie sich im Supply Chain Management an.
-2. Aktivieren Sie das IoT-Intelligenz-Funktionsflag. Weitere Informationen finden Sie unter [Funktionsverwaltung – Übersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+2. Aktivieren Sie das IoT-Intelligenz-Funktionsflag. Weitere Informationen finden Sie unter [Funktionsverwaltung – Übersicht](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 3. Konfigurieren Sie die Kennzahlen. Weitere Informationen finden Sie unter [So konfigurieren Sie Kennzahlen](iot-metrics-setup.md#configure-metrics).
 4. Wechseln Sie zu **Produktionssteuerung \> Einrichtung \> IoT-Intelligenz \> Szenariovewaltung**.
 6. Wählen Sie auf der **Ausfallzeiten der Geräte**-Kachel **Konfigurieren** aus, um den Konfigurationsassistenten zu öffnen.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f0e50cc1e18400258a4ad5da008e1719d39bd1da
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0d2978d680efa59b1ba9cfcd7f58655da0ff4107
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801214"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890099"
 ---
 # <a name="choose-a-data-integration-technology"></a>Eine Datenintegrationstechnologie auswählen
 
@@ -36,7 +36,7 @@ Dieser Artikel enthält Informationen zur Integration mit Daten, die von Dynamic
 Geschäftsdaten als Schlüsselelemente, die ein Unternehmen einzigartig machen. Die Daten Ihres Unternehmens sind sehr wertvoll. Sie können die Beziehungen zwischen den in Ihrem Unternehmen gesammelten Daten verwenden, um Geschäftsprozesse und Business Intelligence in Ihrem Unternehmen zu verbessern. Wir bemühen uns um einen einfachen, sicheren und stabilen Zugriff auf Ihre Geschäftsdaten, unabhängig davon, von welchem System sie stammen.
 
 In der Vergangenheit war die Integration von Daten zwischen mehreren Systemen schwierig.
-Microsoft unternimmt Schritte, um die Datenintegration zu vereinfachen, und ein großer Schritt in Richtung dieses Ziels wird durch den [Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) verwirklicht.
+Microsoft unternimmt Schritte, um die Datenintegration zu vereinfachen, und ein großer Schritt in Richtung dieses Ziels wird durch den [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) verwirklicht.
 
 Zukünftig macht Human Resources Dataverse zur bevorzugten öffentlichen Schnittstelle für Human Resources-Daten. Im Laufe der Zeit erwarten wir, dass alle wichtigen Daten, die von Human Resources verwaltet werden, in Dataverse veröffentlicht werden. Wir empfehlen Dataverse als Technologie der Wahl für die meisten integrierenden Anwendungen.
 
@@ -48,21 +48,21 @@ In den folgenden Abschnitten werden die verschiedenen Datenintegrationstechnolog
 
 ### <a name="dataverse-tables"></a>Dataverse-Tabellen
 
-Dataverse ist die bevorzugte öffentliche Datenschnittstelle für Human Resources. Es ist aus der Dynamics 365 XRM-Plattform hervorgegangen, die von [Dynamics 365 Customer Engagement](https://docs.microsoft.com/dynamics365/#pivot=business-apps&panel=customer-engagement) Lösungen verwendet wird.
+Dataverse ist die bevorzugte öffentliche Datenschnittstelle für Human Resources. Es ist aus der Dynamics 365 XRM-Plattform hervorgegangen, die von [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps) Lösungen verwendet wird.
 
 Dataverse bietet eine Plattform und API für Datentabellen. Wenn Sie Human Resources bereitstellen, wird eine Verbindung zu einer Dataverse Instanz hergestellt. Darin werden die Entitäten für Personaldaten in einer Dataverse Instanz bereitgestellt. Die Tabellen und ihre Daten stehen jeder Anwendung zur Verfügung, die eine Verbindung zur Dataverse Instanz herstellen können. Die Personalabteilung synchronisiert Daten zu und von Dataverse-Tabellen.
 
 > [!NOTE]
-> Human Resources-Entitäten entsprechen Dataverse-Tabellen. Weitere Informationen zu Dataverse (früher Common Data Service) und Terminologie-Updates finden Sie unter [Was ist Microsoft Dataverse ?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Human Resources-Entitäten entsprechen Dataverse-Tabellen. Weitere Informationen zu Dataverse (früher Common Data Service) und Terminologie-Updates finden Sie unter [Was ist Microsoft Dataverse ?](/powerapps/maker/data-platform/data-platform-intro)
 
-Wenn sich die für Ihre integrierenden Apps erforderlichen Datentabellen in Dataverse befinden, können Sie [Dataverse und die unterstützten APIs](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer) voll nutzen. Zu den unterstützten APIs gehört die [Dynamics 365-Web-API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api), die eine OData-Implementierung für den Zugriff auf Dataverse-Daten bereitstellt.
+Wenn sich die für Ihre integrierenden Apps erforderlichen Datentabellen in Dataverse befinden, können Sie [Dataverse und die unterstützten APIs](/powerapps/?panel=developer#pivot=home) voll nutzen. Zu den unterstützten APIs gehört die [Dynamics 365-Web-API](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api), die eine OData-Implementierung für den Zugriff auf Dataverse-Daten bereitstellt.
 
 Die Dataverse-Tabellen und ihre zugehörigen APIs sind die beste Option für den Zugriff auf Human Resources-Daten von Webanwendungen, Webdiensten/APIs und von jeder anderen Anwendung, die eine Verbindung zu OData-Feeds herstellt.
 
 > [!NOTE]
 > Da die Entscheidung Dataverse zur bevorzugten Datenschnittstelle für Human Resources zu machen, erst kürzlich getroffen wurde, stellen Sie möglicherweise fest, dass die Human Resources-Datenentitäten, die Sie für die Integration benötigen, möglicherweise noch nicht in Dataverse verfügbar sind.
 > </br>
-> Eine Liste der Human Resources-Entitäten, die in Dataverse verfügbar sind, finden Sie unter [Human Resources und Dataverse](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities).
+> Eine Liste der Human Resources-Entitäten, die in Dataverse verfügbar sind, finden Sie unter [Human Resources und Dataverse](/dynamics365/unified-operations/talent/corehrentities).
 > </br>
 > Wenn die für Ihre Integration erforderlichen Human Resources-Entitäten noch nicht verfügbar sind, müssen Sie warten, bis die Datenentitäten verfügbar sind, oder Sie müssen eine der unten beschriebenen Integrationstechnologien verwenden.
 > </br>
@@ -70,14 +70,14 @@ Die Dataverse-Tabellen und ihre zugehörigen APIs sind die beste Option für den
 
 ### <a name="dmfdixf-entities"></a>DMF/DIXF-Entitäten
 
-Human Resources, hauptsächlich auf derselben Plattform wie Finance and Operations Anwendungen, bietet ein [Data Management Framework (DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json). DMF wird auch als Data Import Export Framework (DIXF) bezeichnet. Human Resources bietet eine Reihe von Dateneinheiten, die Sie zum Importieren und Exportieren von Human Resources-Daten verwenden können. Auch wenn Dataverse-Tabellen die bevorzugte Datenintegrationsschnittstelle für Human Resources darstellen, sind DMF-Entitäten immer noch unter bestimmten Umständen nützlich, beispielsweise:
+Human Resources, hauptsächlich auf derselben Plattform wie Finance and Operations Anwendungen, bietet ein [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF wird auch als Data Import Export Framework (DIXF) bezeichnet. Human Resources bietet eine Reihe von Dateneinheiten, die Sie zum Importieren und Exportieren von Human Resources-Daten verwenden können. Auch wenn Dataverse-Tabellen die bevorzugte Datenintegrationsschnittstelle für Human Resources darstellen, sind DMF-Entitäten immer noch unter bestimmten Umständen nützlich, beispielsweise:
 
 - Dataverse-Tabellen sind noch nicht verfügbar.
 
 - Die Integration erfordert sehr leistungsstarke Funktionen zum Import/Export von Massendaten.
 
 > [!NOTE]
-> Human Resources-Entitäten entsprechen Dataverse-Tabellen. Weitere Informationen zu Dataverse (früher Common Data Service) und Terminologie-Updates finden Sie unter [Was ist Microsoft Dataverse ?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Human Resources-Entitäten entsprechen Dataverse-Tabellen. Weitere Informationen zu Dataverse (früher Common Data Service) und Terminologie-Updates finden Sie unter [Was ist Microsoft Dataverse ?](/powerapps/maker/data-platform/data-platform-intro)
 
 DMF-Entitäten bieten derzeit die umfassendste Datenabdeckung für Human Resources-Daten.
 
@@ -90,7 +90,7 @@ DMF ist möglicherweise die beste Option, wenn ein hoher Durchsatz erforderlich 
 
 ### <a name="dmf-package-rest-api"></a>DMF-Paket REST-API
 
-DMF bietet eine [REST-API](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api) zur Bearbeitung von Datenpaketen. Diese API kann zur programmgesteuerten Interaktion mit DMF verwendet werden und ermöglicht Aktionen wie:
+DMF bietet eine [REST-API](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api) zur Bearbeitung von Datenpaketen. Diese API kann zur programmgesteuerten Interaktion mit DMF verwendet werden und ermöglicht Aktionen wie:
 
 - Importieren eines Datenpakets.
 
@@ -102,36 +102,36 @@ Die DMF-Paket-REST-API wird in Human Resources vollständig unterstützt.
 
 ### <a name="azure-sql-db-byod"></a>Azure SQL DB (BYOD)
 
-DMF bietet darüber hinaus eine leistungsstarke Funktion (allgemein bekannt als [Bring Your Own Database](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database) oder BYOD), mit der Human Resources Daten dann in Ihre eigene Microsoft Azure-SQL-Datenbank exportieren kann. Diese Fähigkeit bietet enorme Flexibilität. Wenn die Daten in Ihrer eigenen SQL-Datenbank vorhanden sind, alle Anwendungen oder Middleware verwenden können, die eine Verbindung zu einem SQL-Datenspeicher herstellen können.
+DMF bietet darüber hinaus eine leistungsstarke Funktion (allgemein bekannt als [Bring Your Own Database](/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database) oder BYOD), mit der Human Resources Daten dann in Ihre eigene Microsoft Azure-SQL-Datenbank exportieren kann. Diese Fähigkeit bietet enorme Flexibilität. Wenn die Daten in Ihrer eigenen SQL-Datenbank vorhanden sind, alle Anwendungen oder Middleware verwenden können, die eine Verbindung zu einem SQL-Datenspeicher herstellen können.
 
 BYOD ist hauptsächlich eine schreibgeschützte Lösung. Während Sie beliebige Daten in der Azure SQL-Datenbank bearbeiten und speichern können (z. B. für Data Mashups), werden in der Azure SQL-Datenbank die gespeicherte Daten nicht wieder mit Human Resources synchronisiert.
 
-BYOD eignet sich für Berichtlösungen, Datenintegrationen und Data Mashups als Datenquelle für eine [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/)-Pipeline.
+BYOD eignet sich für Berichtlösungen, Datenintegrationen und Data Mashups als Datenquelle für eine [Azure Data Factory](/azure/data-factory/)-Pipeline.
 
 > [!NOTE]
 > BYOD ist für Attract und Onboard nicht verfügbar.
 
 ### <a name="odata-enabled-entities"></a>OData-fähige Entitäten
 
-Die meisten DMF-Entitäten sind auch für den Zugriff über den Human Resources-Datendienst (OData) konfiguriert. Die Dokumentation für die [Finance and Operations OData-Dienste](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata)gelten für die Personalabteilung, außer für das Erstellen eigener OData-verfügbarer Entitäten.
+Die meisten DMF-Entitäten sind auch für den Zugriff über den Human Resources-Datendienst (OData) konfiguriert. Die Dokumentation für die [Finance and Operations OData-Dienste](/dynamics365/unified-operations/dev-itpro/data-entities/odata)gelten für die Personalabteilung, außer für das Erstellen eigener OData-verfügbarer Entitäten.
 
-Obwohl Dataverse und die OData-Implementierung, die von Dataverse bereitgestellt wird (durch die [Dynamics 365-Web-API](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))), dem Human Resources-Datendienst vorgezogen wird, hat der Human Resources-Datendienst eine größere Datenabdeckung für die Human Resources-Daten.
+Obwohl Dataverse und die OData-Implementierung, die von Dataverse bereitgestellt wird (durch die [Dynamics 365-Web-API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))), dem Human Resources-Datendienst vorgezogen wird, hat der Human Resources-Datendienst eine größere Datenabdeckung für die Human Resources-Daten.
 
 ### <a name="excel-add-in"></a>Excel-Add-In
 
-Das [Excel-Add-In](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/talent/toc.json) verwendet OData-fähige Objekte im Hintergrund. Bietet dem Endbenutzer eine bequeme Möglichkeit, Human Resources-Daten über die vertraute Excel-Benutzeroberfläche abzurufen und zu ändern.
+Das [Excel-Add-In](/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json) verwendet OData-fähige Objekte im Hintergrund. Bietet dem Endbenutzer eine bequeme Möglichkeit, Human Resources-Daten über die vertraute Excel-Benutzeroberfläche abzurufen und zu ändern.
 
 Das Excel-Add-In eignet sich für Ad-hoc-Datenimporte und -Exporte durch Experten von Geschäftsdomänen. Für eine wiederkehrende Datenintegration, die eine programmgesteuerte Automatisierung erfordert, ist eine andere Integrationstechnologie besser geeignet.
 
 ### <a name="data-integrator"></a>Datenintegrator
 
-Sie können den Dienst [Datenintegrationsdienst](https://docs.microsoft.com/powerapps/administrator/data-integrator) Daten zu und von Dataverse. Der Datenintegrator kann zum Definieren von Integrationsprojekten, häufig basierend auf vordefinierten Vorlagen, die Anwendungsentwickler für bestimmte Integrationen angepasst haben, verwendet werden. Sie können Integrationsprojekte so planen, dass sie automatisch nach einem wiederkehrenden Zeitplan oder manuell ausgeführt werden.
+Sie können den Dienst [Datenintegrationsdienst](/powerapps/administrator/data-integrator) Daten zu und von Dataverse. Der Datenintegrator kann zum Definieren von Integrationsprojekten, häufig basierend auf vordefinierten Vorlagen, die Anwendungsentwickler für bestimmte Integrationen angepasst haben, verwendet werden. Sie können Integrationsprojekte so planen, dass sie automatisch nach einem wiederkehrenden Zeitplan oder manuell ausgeführt werden.
 
 Datenintegrationsprojekte sind geeignet für Dataverse Chargen-Integrationen. Sie sind eine gute Wahl für die Integration zwischen der Dynamics 365 Anwendungsfamilie. Zum Beispiel stellt Microsoft Datenintegrations-Vorlagen zur Verfügung, mit der Daten aus Human Resources in Dynamics 365 Finance integriert werden können. Weitere Informationen zur Vorlage finden Sie unter [Integration von Dynamics 365 Human Resources zu Dynamics 365 Finance](hr-admin-integration-finance.md).
 
 ### <a name="power-query"></a>Powerabfrage
 
-Der Datenintegrator unterstützt auch [Power Query](https://docs.microsoft.com/power-query/power-query-what-is-power-query) durch seine [Erweiterte Abfragefunktion](https://docs.microsoft.com/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query bietet leistungsstarke, flexible Datenfilterung und -transformation, einschließlich der umfangreichen M-Formelsprache. Power Query ist Ihnen wahrscheinlich bekannt, wenn Sie Power BI Berichte entwickelt haben.
+Der Datenintegrator unterstützt auch [Power Query](/power-query/power-query-what-is-power-query) durch seine [Erweiterte Abfragefunktion](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query bietet leistungsstarke, flexible Datenfilterung und -transformation, einschließlich der umfangreichen M-Formelsprache. Power Query ist Ihnen wahrscheinlich bekannt, wenn Sie Power BI Berichte entwickelt haben.
 
 ## <a name="deciding-on-an-integration-technology"></a>Entscheidung für eine Integrationstechnologie
 

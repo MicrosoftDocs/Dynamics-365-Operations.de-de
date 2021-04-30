@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 14df61a68ed402365bd26257cfc5e9b6b4c14db3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2bf587933aa24e772e6cebca94ee6e8648ec7f10
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803368"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890674"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-21-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 21. Januar 2021
 
@@ -31,7 +31,7 @@ In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Human Res
 
 Weitere Informationen zu unserem Aktualisierungsprozess und Zeitplan finden Sie unter [Aktualisierungsprozess](hr-admin-setup-update-process.md).
 
-Weitere Informationen zu neuen Funktionen und den voraussichtlichen allgemeinen Verfügbarkeitsterminen finden Sie unter [Überblick Dynamics 365 Human Resources 2020 Veröffentlichungszyklus 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+Weitere Informationen zu neuen Funktionen und den voraussichtlichen allgemeinen Verfügbarkeitsterminen finden Sie unter [Überblick Dynamics 365 Human Resources 2020 Veröffentlichungszyklus 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 
 ## <a name="in-this-release"></a>In dieser Version
@@ -44,8 +44,8 @@ Die folgenden Funktionen sind in dieser Version allgemein verfügbar.
 
 | Funktion | Freigabeplan | Dokumentation |
 | --- | --- | --- |
-| Platform Update 10.0.16(40) | -- | [Plattform-Updates für Version 10.0.16 von Finance and Operations Apps (Februar 2021)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16) |
-| Erweiterte Workflow-Anforderungen und Genehmigungen | [Organisations- und Personalmanagement-Workflow wird verbessert](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurationsoption zum Positionieren der Liste der mir zugewiesenen Arbeitselemente](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
+| Platform Update 10.0.16(40) | -- | [Plattform-Updates für Version 10.0.16 von Finance and Operations Apps (Februar 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
+| Erweiterte Workflow-Anforderungen und Genehmigungen | [Organisations- und Personalmanagement-Workflow wird verbessert](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurationsoption zum Positionieren der Liste der mir zugewiesenen Arbeitselemente](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 | Aktualisierungen der Einhaltung des ACA (Affordable Care Act) für Formular 1095-C, Formular 1095-B und elektronische Berichterstattung in veralteten Vorteilen | -- | -- | 
 | Die Vorteilsverwaltung unterstützt jetzt die ACA-Einhaltungs-Berichterstattung für in den USA ansässige juristische Personen | -- | [ACA-Berichte in der Vorteilsverwaltung generieren](hr-benefits-management-aca-reports.md) |
 | Die Vorteilsverwaltung verfügt nun über exponierte Entitäten für Vorteilssätze und doppelte Vorteilsstufen  | -- | -- |
@@ -80,13 +80,13 @@ Die folgenden neuen Funktionen stehen in der Vorschau zur Verfügung. Weitere In
 
 | Funktion | Freigabeplan | Dokumentation |
 | --- | --- | --- |
-| Human Resources-App in Microsoft Teams | [Mitarbeiterurlaub und Abwesenheitserfahrung in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-App in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Urlaubsanträge in Teams verwalten](hr-teams-leave-app.md) |
-| Integration mit LinkedIn Talent Hub | [Integration mit LinkedIn Talent Hub](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [In LinkedIn Talent Hub integrieren](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-linkedin) |
-| Unternehmensübergreifende Urlaubsansicht für Manager | [Unternehmensübergreifende Ansicht des Mitarbeiterurlaubs für Manager](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Urlaub- und Abwesenheitsparameter konfigurieren](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
-|Zusätzliche Einblicke in Abwesenheitssalden| [Zusätzliche Einblicke in Abwesenheitssalden geben](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [Mitarbeiter-Sonderurlaub verwalten](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-employee-leave) |
-| Manager können Personalbeschaffungsanträge für Positionen einreichen | [Manager können einen Personalbeschaffungsantrag für offene Positionen einreichen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Einen Personalbeschaffungsantrag hinzufügen](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-a-recruiting-request) |
-| Verbessertes Kandidatenprofil in der Personalverwaltung | [Verbessertes Kandidatenprofil in der Personalverwaltung](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Ein Kandidatenprofil hinzufügen oder bearbeiten](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-or-edit-a-candidate-profile) |
-| Vereinfachte Integration in Rekrutierungsanbieter aktivieren | [Vereinfachte Integration in Rekrutierungsanbieter aktivieren](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Kandidaten für Stelle anwerben](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
+| Human Resources-App in Microsoft Teams | [Mitarbeiterurlaub und Abwesenheitserfahrung in Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-App in Teams](./hr-admin-teams-leave-app.md)<br>[Urlaubsanträge in Teams verwalten](hr-teams-leave-app.md) |
+| Integration mit LinkedIn Talent Hub | [Integration mit LinkedIn Talent Hub](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [In LinkedIn Talent Hub integrieren](./hr-admin-integration-linkedin.md) |
+| Unternehmensübergreifende Urlaubsansicht für Manager | [Unternehmensübergreifende Ansicht des Mitarbeiterurlaubs für Manager](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Urlaub- und Abwesenheitsparameter konfigurieren](./hr-leave-and-absence-parameters.md) |
+|Zusätzliche Einblicke in Abwesenheitssalden| [Zusätzliche Einblicke in Abwesenheitssalden geben](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [Mitarbeiter-Sonderurlaub verwalten](./hr-leave-and-absence-manage-employee-leave.md) |
+| Manager können Personalbeschaffungsanträge für Positionen einreichen | [Manager können einen Personalbeschaffungsantrag für offene Positionen einreichen](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Einen Personalbeschaffungsantrag hinzufügen](./hr-personnel-recruit.md#add-a-recruiting-request) |
+| Verbessertes Kandidatenprofil in der Personalverwaltung | [Verbessertes Kandidatenprofil in der Personalverwaltung](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Ein Kandidatenprofil hinzufügen oder bearbeiten](./hr-personnel-recruit.md#add-or-edit-a-candidate-profile) |
+| Vereinfachte Integration in Rekrutierungsanbieter aktivieren | [Vereinfachte Integration in Rekrutierungsanbieter aktivieren](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Kandidaten für Stelle anwerben](./hr-personnel-recruit.md) |
 
 ## <a name="coming-soon"></a>Bald verfügbar
 | Funktion | Detaildaten |
@@ -94,20 +94,20 @@ Die folgenden neuen Funktionen stehen in der Vorschau zur Verfügung. Weitere In
 | E-Mail-Bestätigung für Vorteilsregistrierung | Diese Funktion bietet eine Option zum Senden einer Bestätigungs-E-Mail an Mitarbeiter, wenn sie sich aus der Umgebung zur Vorteilsregistrierung im Mitarbeiter-Self-Service abmelden. Weitere Informationen finden Sie unter [Vorteilsverwaltungsparameter pro Unternehmen konfigurieren](hr-benefits-setup-parameters-per-company.md). |
 | Von einem Manager für seine Mitarbeiter eingegebene Qualifikationen können von einem Workflow automatisch genehmigt werden | Bald verfügbar. |
 
-Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen finden Sie unter [Überblick über Dynamics 365 Human Resources 2020 Veröffentlichungszyklus 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+Eine vollständige Liste der geplanten Funktionen und ihrer geplanten Versionen finden Sie unter [Überblick über Dynamics 365 Human Resources 2020 Veröffentlichungszyklus 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="terminology-updates-for-microsoft-dataverse"></a>Terminologie-Updates für Microsoft Dataverse
 
-Gültig ab November 2020, Common Data Service wurde umbenannt in [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro). Siehe die [offizielle Ankündigung](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) im Power Apps-Blog, um mehr zu erfahren. In Verbindung mit dieser Namensänderung wurde manche Terminologie in Dataverse aktualisiert. Beispielsweise ist *Entität* jetzt *Tabelle* und *Feld* *Säule*. Weitere Informationen finden Sie unter [Terminologie-Aktualisierungen](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates).
+Gültig ab November 2020, Common Data Service wurde umbenannt in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Siehe die [offizielle Ankündigung](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) im Power Apps-Blog, um mehr zu erfahren. In Verbindung mit dieser Namensänderung wurde manche Terminologie in Dataverse aktualisiert. Beispielsweise ist *Entität* jetzt *Tabelle* und *Feld* *Säule*. Weitere Informationen finden Sie unter [Terminologie-Aktualisierungen](/powerapps/maker/data-platform/data-platform-intro#terminology-updates).
 
 In dieser Version wurde Terminologie, die sich auf die Dynamics 365 Human Resources-Integration mit Dataverse bezieht, in der gesamten Anwendung aktualisiert, um diese Änderungen widerzuspiegeln. Zum Beispiel ist das **Common Data Service-Integration**-Formular jetzt **Microsoft Dataverse-Integration**.
 
-Weitere Informationen zur Dynamics 365 Human Resources-Integration in Microsoft Dataverse finden Sie unter [Konfigurieren der Microsoft Dataverse-Integration](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service) und [Konfigurieren virtueller Microsoft Dataverse-Tabellen](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+Weitere Informationen zur Dynamics 365 Human Resources-Integration in Microsoft Dataverse finden Sie unter [Konfigurieren der Microsoft Dataverse-Integration](./hr-admin-integration-common-data-service.md) und [Konfigurieren virtueller Microsoft Dataverse-Tabellen](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 [Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)</br>
-[Übersicht zu Dynamics 365 Human Resources 2020 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[Übersicht zu Dynamics 365 Human Resources 2020 Versionswelle 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4b4e551f5c687f0021ddba0c9f5b73af528b7140
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3faffad2bff18278a54a26f77c1423f2246d086e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813170"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907962"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Neuigkeiten oder Änderungen in Dynamics 365 Supply Chain Management 10.0.17 (April, 2021)
 
@@ -33,65 +33,65 @@ In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365
 
 ## <a name="features-included-in-this-release"></a>In dieser Version enthaltene Funktionen
 
-Die folgenden Funktionen sind in diesem Release enthalten.  Folgen Sie den Links zu [Release-Plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), um die offiziellen Veröffentlichungstermine für jede Funktion anzuzeigen.
+Die folgenden Funktionen sind in diesem Release enthalten.  Folgen Sie den Links zu [Release-Plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), um die offiziellen Veröffentlichungstermine für jede Funktion anzuzeigen.
 
 Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können. Einige der aufgelisteten Funktionen befinden sich eventuell noch in der Vorschau, auch wenn die meisten jetzt bereits allgemein verfügbar sind.
 
 ### <a name="asset-management"></a>Anlagenverwaltung
 
-- [Anwenden von Regeln zum Gruppieren von Arbeitsaufträgen während der Ausführung eines Wartungsplans](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - Weitere Informationen finden Sie unter [Arbeitsaufträge erstellen](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md).
+- [Anwenden von Regeln zum Gruppieren von Arbeitsaufträgen während der Ausführung eines Wartungsplans](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - Weitere Informationen finden Sie unter [Arbeitsaufträge erstellen](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md).
 
-- [Inrechnungstellung von Wartungsarbeiten](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - Weitere Informationen finden Sie unter [Rechnung für die Wartung von kundeneigenen Anlagen](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
+- [Inrechnungstellung von Wartungsarbeiten](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - Weitere Informationen finden Sie unter [Rechnung für die Wartung von kundeneigenen Anlagen](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
 
-- [Planen von Wartungsarbeiten basierend auf akkumulierten Anlagenzählerwerten](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - Weitere Informationen finden Sie unter [Wartungspläne](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
+- [Planen von Wartungsarbeiten basierend auf akkumulierten Anlagenzählerwerten](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - Weitere Informationen finden Sie unter [Wartungspläne](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
 
 ### <a name="inventory-and-logistics"></a>Bestand und Logistik
 
-- [Integrationsrahmen für Materialhandhabung für automatisierte Lagerort-Prozesse (früher MHAX)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - Weitere Informationen finden Sie unter [Schnittstelle für Materialhandhabung (MHAX)](../warehousing/mhax.md).
+- [Integrationsrahmen für Materialhandhabung für automatisierte Lagerort-Prozesse (früher MHAX)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - Weitere Informationen finden Sie unter [Schnittstelle für Materialhandhabung (MHAX)](../warehousing/mhax.md).
 
-- [Gesamttransportkosten](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - Weitere Informationen finden Sie unter [Gesamttransportkosten-Modul](../landed-cost/landed-cost-overview.md).
+- [Gesamttransportkosten](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - Weitere Informationen finden Sie unter [Gesamttransportkosten-Modul](../landed-cost/landed-cost-overview.md).
 
-- [Verpackung vs. Lagerabmessungen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Weitere Informationen finden Sie unter [Unterschiedliche Dimensionen für Verpackung und Lagerung festlegen](../warehousing/packing-vs-storage-dimensions.md).
+- [Verpackung vs. Lagerabmessungen](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Weitere Informationen finden Sie unter [Unterschiedliche Dimensionen für Verpackung und Lagerung festlegen](../warehousing/packing-vs-storage-dimensions.md).
 
-- [Gespeicherte Ansichten für Bestand und Logistik](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Weitere Informationen finden Sie unter [Gespeicherte Standardansichten für Supply Chain Management](saved-views-scm.md).
+- [Gespeicherte Ansichten für Bestand und Logistik](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Weitere Informationen finden Sie unter [Gespeicherte Standardansichten für Supply Chain Management](saved-views-scm.md).
 
-- [Planen der Erstellung von Lagerortarbeiten](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - Weitere Informationen finden Sie unter [Planen der Arbeitserstellung während der Welle](../warehousing/configure-wave-schedule-work-creation.md).
+- [Planen der Erstellung von Lagerortarbeiten](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - Weitere Informationen finden Sie unter [Planen der Arbeitserstellung während der Welle](../warehousing/configure-wave-schedule-work-creation.md).
 
-- [Festlegen der Standardfinanzdimensionen für Neubewertungsbelege für die Standardkosten des Bestands](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - Weitere Informationen finden Sie unter [Verwalten von Standardkostenaktualisierungen](../cost-management/manage-standard-cost-updates.md).
+- [Festlegen der Standardfinanzdimensionen für Neubewertungsbelege für die Standardkosten des Bestands](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - Weitere Informationen finden Sie unter [Verwalten von Standardkostenaktualisierungen](../cost-management/manage-standard-cost-updates.md).
 
-- [Kleinpaketlieferung](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/small-parcel-shipping-sps)<br> - Weitere Informationen finden Sie unter [Kleinpaketlieferung](../warehousing/small-parcel-shipping.md).
+- [Kleinpaketlieferung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/small-parcel-shipping-sps)<br> - Weitere Informationen finden Sie unter [Kleinpaketlieferung](../warehousing/small-parcel-shipping.md).
 
-- [Lagerortausführung mit Skalierungseinheiten in der Cloud](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - Weitere Informationen finden Sie unter [Arbeitsauslastungen bei der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-warehousing.md) und [Lagerortaufträge für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-warehouse-order.md).
+- [Lagerortausführung mit Skalierungseinheiten in der Cloud](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - Weitere Informationen finden Sie unter [Arbeitsauslastungen bei der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-warehousing.md) und [Lagerortaufträge für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-warehouse-order.md).
 
-- [Mobile App zur Lagerortverwaltung](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Weitere Informationen finden Sie unter [Installieren und Verbinden der App „Lagerortverwaltung“](../warehousing/install-configure-warehouse-management-app.md) und [Benutzereinstellungen für mobile Geräte](../warehousing/mobile-device-user-settings.md).
+- [Mobile App zur Lagerortverwaltung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Weitere Informationen finden Sie unter [Installieren und Verbinden der App „Lagerortverwaltung“](../warehousing/install-configure-warehouse-management-app.md) und [Benutzereinstellungen für mobile Geräte](../warehousing/mobile-device-user-settings.md).
 
 - Zyklusausführungsbenachrichtigungen<br> - Weitere Informationen finden Sie unter [Wellenausführungsbenachrichtigungen](../warehousing/wave-execution-notifications.md)
 
 ### <a name="manufacturing"></a>Fertigung
 
-- [Funktionen zur Anlagenverwaltung in der Produktionsausführungsoberfläche](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Weitere Informationen finden Sie unter [Konfigurieren Sie die Produktionsausführungsoberfläche](../production-control/production-floor-execution-configure.md).
+- [Funktionen zur Anlagenverwaltung in der Produktionsausführungsoberfläche](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Weitere Informationen finden Sie unter [Konfigurieren Sie die Produktionsausführungsoberfläche](../production-control/production-floor-execution-configure.md).
 
 - Vereinheitlichte Nummernkreise für Einzelvorgangskennungen<br> - Weitere Informationen finden sie unter 
 
-- [Standardreservierungsprinzip bei Materialien in Produktion überschreiben](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Weitere Informationen finden Sie unter [Überschreiben des Standardreservierungsprinzips für Materialien in der Produktion](../production-control/override-default-reservation-principle.md).
+- [Standardreservierungsprinzip bei Materialien in Produktion überschreiben](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Weitere Informationen finden Sie unter [Überschreiben des Standardreservierungsprinzips für Materialien in der Produktion](../production-control/override-default-reservation-principle.md).
 
-- [Gespeicherte Ansichten für die Produktionssteuerung](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Weitere Informationen finden Sie unter [Gespeicherte Standardansichten für Supply Chain Management](saved-views-scm.md).
+- [Gespeicherte Ansichten für die Produktionssteuerung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Weitere Informationen finden Sie unter [Gespeicherte Standardansichten für Supply Chain Management](saved-views-scm.md).
 
-- [Fertigungsausführung mit Skalierungseinheiten in der Cloud](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Weitere Informationen finden Sie unter [Arbeitsauslastungen bei der Fertigungsausführung für Cloud- und Edge-Scale-Einheiten](../cloud-edge/cloud-edge-workload-manufacturing.md).
+- [Fertigungsausführung mit Skalierungseinheiten in der Cloud](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Weitere Informationen finden Sie unter [Arbeitsauslastungen bei der Fertigungsausführung für Cloud- und Edge-Scale-Einheiten](../cloud-edge/cloud-edge-workload-manufacturing.md).
 
 ### <a name="planning"></a>Planung
 
-- [Support im Planungszeitraum für die Planungsoptimierung](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - Weitere Informationen finden Sie unter [Planungszeiträume](../master-planning/planning-optimization/coverage-time-fence.md).
+- [Support im Planungszeitraum für die Planungsoptimierung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - Weitere Informationen finden Sie unter [Planungszeiträume](../master-planning/planning-optimization/coverage-time-fence.md).
 
-- [Unterstützung des Untermodells für die Planungsoptimierung](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/forecast-submodel-support-planning-optimization)<br> - Weitere Informationen finden Sie unter [Produktprogrammplanung mit Bedarfsprognosen](../master-planning/planning-optimization/demand-forecast.md).
+- [Unterstützung des Untermodells für die Planungsoptimierung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/forecast-submodel-support-planning-optimization)<br> - Weitere Informationen finden Sie unter [Produktprogrammplanung mit Bedarfsprognosen](../master-planning/planning-optimization/demand-forecast.md).
 
-- [Support für Bestellanforderungen für die Planungsoptimierung](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - Weitere Informationen finden Sie unter [Bestellanforderungen](../master-planning/planning-optimization/purchase-requisitions.md).
+- [Support für Bestellanforderungen für die Planungsoptimierung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - Weitere Informationen finden Sie unter [Bestellanforderungen](../master-planning/planning-optimization/purchase-requisitions.md).
 
-- [Gespeicherte Ansichten für Bestellvorschläge](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - Weitere Informationen finden Sie unter [Gespeicherte Standardansichten für Supply Chain Management](saved-views-scm.md).
+- [Gespeicherte Ansichten für Bestellvorschläge](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - Weitere Informationen finden Sie unter [Gespeicherte Standardansichten für Supply Chain Management](saved-views-scm.md).
 
 ### <a name="product-information-management"></a>Produktinformationsverwaltung
 
-- [Änderungsmanagement für vorhandene Produkte aktivieren](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)<br> - Weitere Informationen finden Sie unter [Änderungsverwaltung für bestehende Produkte aktivieren](../engineering-change-management/change-management-existing-products.md).
+- [Änderungsmanagement für vorhandene Produkte aktivieren](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)<br> - Weitere Informationen finden Sie unter [Änderungsverwaltung für bestehende Produkte aktivieren](../engineering-change-management/change-management-existing-products.md).
 
 ## <a name="new-and-updated-documentation-resources"></a>Neue und aktualisierte Dokumentationsressourcen
 
@@ -145,7 +145,7 @@ Melden Sie sich bei Lifecycle Services (LCS) an, um Informationen zu den Fehlerb
 
 Sie möchten Informationen über zukünftige und vor Kurzem veröffentlichte Funktionen unserer Unternehmens-Apps oder -Plattformen erhalten?
 
-Testen Sie [Dynamics 365: 2021 Release Welle 1 Plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). Hier finden Sie zentral und übersichtlich in einem Dokument alle Informationen, die Sie für Ihre Planung benötigen.
+Testen Sie [Dynamics 365: 2021 Release Welle 1 Plan](/dynamics365-release-plan/2021wave1/). Hier finden Sie zentral und übersichtlich in einem Dokument alle Informationen, die Sie für Ihre Planung benötigen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Entfernte und veraltete Supply Chain Management-Funktionen
 

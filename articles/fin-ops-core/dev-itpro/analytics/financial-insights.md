@@ -2,8 +2,7 @@
 title: Finanzanalyse
 description: Finanzanalyse nutzt Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen.
 author: kweekley
-manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
-ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
+ms.openlocfilehash: 71fd1ad15320fda162a289e9c5741aec2ce76778
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5572365"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894907"
 ---
 # <a name="financial-analysis"></a>Finanzanalyse
 
@@ -65,10 +64,9 @@ Die Daten für **Finanzanalyse** werden aus dem Entitätsspeicher entnommen (**S
 
 Sie müssen die folgenden Entitäten aktualisieren, um sich Daten im Arbeitsbereich **Finanzanalyse** anzeigen zu lassen:
 
-- BudgetActivityMeasure
 - Finanzberichterstattungs-Buchungsdaten – Version 3 
+- Kredit und Inkasso V2
 - CustCollectionsBIMeasurements
-- LedgerActivityMeasure
 - LedgerCovLiquidityMeasurement
 - Einkaufscube
 - Verkaufscube
@@ -241,9 +239,9 @@ Power BI bietet keine Option, leere Zeilen auszublenden und anzuzeigen. Wenn ein
 
 Die Informationen in den folgenden Ressourcen sind nicht erforderlich, um die eingebetteten Berichte für den Arbeitsbereich **Finanzanalyse** in einer Produktionsumgebung zu aktivieren. Stattdessen sind sie für Entwicklerfelder hilfreich und wenn Sie Ihre eigenen Power BI-Berichte einbetten möchten.
 
-- [Zugriff auf analytische Arbeitsbereiche und Berichte in einer Umgebungen mit einem Feld](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
+- [Zugriff auf analytische Arbeitsbereiche und Berichte in einer Umgebungen mit einem Feld](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)
 
-- [Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+- [Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

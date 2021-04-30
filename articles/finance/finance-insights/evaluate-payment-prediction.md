@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 56ec9795f0eb8b15dd00578bf35739eaa9e3d086
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818620"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897911"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Bewerten des anfänglichen Kundenzahlungsvorhersagemodells (Vorschau)
 
@@ -41,7 +41,7 @@ Auf der **Finance Insights-Parameter**-Seite in Microsoft Dynamics 365 Finance w
 
 Die Seite, die geöffnet wird, zeigt die Folgenden Informationen:
 
-- Im Abschnitt **Leistung** bietet der Modellleistungsgrad einen Überblick über die Qualität des Modells. Weitere Informationen zu dieser Klasse finden Sie unter [Leistung des Vorhersagemodells](https://docs.microsoft.com/ai-builder/prediction-performance) in der AI Builder-Dokumentation.
+- Im Abschnitt **Leistung** bietet der Modellleistungsgrad einen Überblick über die Qualität des Modells. Weitere Informationen zu dieser Klasse finden Sie unter [Leistung des Vorhersagemodells](/ai-builder/prediction-performance) in der AI Builder-Dokumentation.
 - Der Abschnitt **Die einflussreichsten Daten** zeigt, wie wichtig verschiedene Eingabetypen für Ihr Modell waren. Sie können diese Liste und die entsprechenden Prozentsätze auswerten, um festzustellen, ob die Informationen mit Ihren Kenntnissen über Ihr Unternehmen und Ihren Markt übereinstimmen.
 
     [![Die Abschnitte zur Leistung und zu den einflussreichsten Daten für das Vorhersagemodell](./media/models.png)](./media/models.png)

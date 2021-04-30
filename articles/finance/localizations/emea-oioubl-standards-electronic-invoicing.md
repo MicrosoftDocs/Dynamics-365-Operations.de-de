@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9aa3e1f6fc14d2c0c8f35307f1084d09399c08f5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5d46b87428e642d970a5efd8c6d4c4a462f3a3ea
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832709"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894715"
 ---
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Unterstützte Standards für die elektronische Rechnungsstellung in Europa
 
@@ -44,7 +44,7 @@ Die folgenden länderspezifischen Formate elektronischer Rechnungen stehen zur V
 -   Estnisches spezifisches Format, Version 1.2
 -   Finvoice 3.0 für Finnland
 
-Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserstellung (EB)](../../dev-itpro/analytics/general-electronic-reporting.md). Für die folgenden Länder/Regionen wurde ein **Rechnungsmodell**, Datenmodell, Rechnungsmodell-Mapping und verschiedene länder-/regionenspezifische EB-Formatkonfigurationen erstellt: 
+Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserstellung (EB)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). Für die folgenden Länder/Regionen wurde ein **Rechnungsmodell**, Datenmodell, Rechnungsmodell-Mapping und verschiedene länder-/regionenspezifische EB-Formatkonfigurationen erstellt: 
 
 - Österreich (AT)
 - Dänemark (DK)
@@ -105,7 +105,7 @@ Die Einrichtung und Besonderheiten elektronischer Rechnungen hängen von dem Lan
 - [PEPPOL](https://support.microsoft.com/help/4490320)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-Weitere Informationen über die Einrichtung elektronischer Rechnungen finden Sie in den folgenden [Aufgabenleitfäden](../../fin-and-ops/get-started/help-overview.md#task-guides) im Feld Hilfe:
+Weitere Informationen über die Einrichtung elektronischer Rechnungen finden Sie in den folgenden [Aufgabenleitfäden](../../fin-ops-core/fin-ops/get-started/help-overview.md#task-guides) im Feld Hilfe:
 
  - Einrichten der elektronischen OIOUBL-Rechnungsstellung
  - Konfigurationen der elektronischen Fakturierung des Imports OIOUBL

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e550f310fe3ec0aaee9c16f3edccd775921a64be
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c993c10bdd3517ed8a3e192851b4716cba1c638
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821152"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909966"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management 10.0.15 (Januar 2021)
 
@@ -33,23 +33,23 @@ In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365
 
 ## <a name="features-included-in-this-release"></a>In dieser Version enthaltene Funktionen
 
-Die folgenden Funktionen sind in diesem Release enthalten. Folgen Sie den Links zu [Release-Plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features), um die offiziellen Veröffentlichungstermine für jede Funktion anzuzeigen.
+Die folgenden Funktionen sind in diesem Release enthalten. Folgen Sie den Links zu [Release-Plan](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features), um die offiziellen Veröffentlichungstermine für jede Funktion anzuzeigen.
 
 - Verwaltung von Cloud- und Edge-Scale-Einheiten mit Arbeitsauslastungen für Fertigung und Lagerausführung<br> - Weitere Informationen finden Sie unter [Cloud- und Edge-Scale-Einheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung](../cloud-edge/cloud-edge-landing-page.md).
 
-- [Umlagerungsaufträge aus der Lagerort-App erstellen und verarbeiten](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Weitere Informationen finden Sie unter [Erstellen von Umlagerungsaufträgen aus der Lager-App](../warehousing/create-transfer-order-from-warehouse-app.md).
+- [Umlagerungsaufträge aus der Lagerort-App erstellen und verarbeiten](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Weitere Informationen finden Sie unter [Erstellen von Umlagerungsaufträgen aus der Lager-App](../warehousing/create-transfer-order-from-warehouse-app.md).
 
-- [Standard-Angebotsanforderung-Antwortfelder für Lieferantenangebote](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - Weitere Informationen finden Sie unter [Übersicht der Angebotsanforderungen (RFQs)](../procurement/request-quotations.md).
+- [Standard-Angebotsanforderung-Antwortfelder für Lieferantenangebote](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - Weitere Informationen finden Sie unter [Übersicht der Angebotsanforderungen (RFQs)](../procurement/request-quotations.md).
 
-- [Änderungsmanagement-Add-In für Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - Weitere Informationen finden Sie unter [Übersicht über die Verwaltung für technische Änderungen](../engineering-change-management/product-engineering-overview.md).
+- [Änderungsmanagement-Add-In für Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - Weitere Informationen finden Sie unter [Übersicht über die Verwaltung für technische Änderungen](../engineering-change-management/product-engineering-overview.md).
 
-- [Mixed Reality-Guides für die Fertigung](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - Weitere Informationen finden Sie unter [Bereitstellung von Mixed Reality-Guides für Arbeiter in der Produktion](../production-control/instruction-guides-in-production-overview.md).
+- [Mixed Reality-Guides für die Fertigung](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - Weitere Informationen finden Sie unter [Bereitstellung von Mixed Reality-Guides für Arbeiter in der Produktion](../production-control/instruction-guides-in-production-overview.md).
 
-- [Neue Benutzererfahrung für die Ausführung in der Produktion](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Weitere Informationen finden Sie unter [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md).
+- [Neue Benutzererfahrung für die Ausführung in der Produktion](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Weitere Informationen finden Sie unter [Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte](../production-control/production-floor-execution-use.md).
 
-- [Lagerort-App-Ereignisse verarbeiten](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Weitere Informationen finden Sie unter [Verarbeitung von Warehouse-App-Ereignissen](../warehousing/warehouse-app-events.md).
+- [Lagerort-App-Ereignisse verarbeiten](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Weitere Informationen finden Sie unter [Verarbeitung von Warehouse-App-Ereignissen](../warehousing/warehouse-app-events.md).
 
-- [Gespeicherte Ansichten für die Seite „Freigegebene Produkte“](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - Weitere Informationen finden Sie unter [Gespeicherte Ansichten](../../fin-ops-core/fin-ops/get-started/saved-views.md).
+- [Gespeicherte Ansichten für die Seite „Freigegebene Produkte“](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - Weitere Informationen finden Sie unter [Gespeicherte Ansichten](../../fin-ops-core/fin-ops/get-started/saved-views.md).
 
 - USMCA-Zertifizierung des Ursprungsdokuments<br> - Weitere Informationen finden Sie unter [USMCA-Ursprungszertifizierung](../transportation/usmca-certification-of-origin.md).
 
@@ -69,7 +69,7 @@ Melden Sie sich bei Lifecycle Services (LCS) an, um Informationen zu den Fehlerb
 
 Sie möchten Informationen über zukünftige und vor Kurzem veröffentlichte Funktionen unserer Unternehmens-Apps oder -Plattformen erhalten?
 
-Testen Sie [Dynamics 365: 2020 Release Welle 2 Plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Hier finden Sie zentral und übersichtlich in einem Dokument alle Informationen, die Sie für Ihre Planung benötigen.
+Testen Sie [Dynamics 365: 2020 Release Welle 2 Plan](/dynamics365-release-plan/2020wave2/index). Hier finden Sie zentral und übersichtlich in einem Dokument alle Informationen, die Sie für Ihre Planung benötigen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Entfernte und veraltete Supply Chain Management-Funktionen
 

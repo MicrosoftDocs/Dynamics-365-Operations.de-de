@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fff3c3cfe5d0628fd4df6e719b72bc134c9d9c0a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823408"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909450"
 ---
 # <a name="goods-in-transit-processing"></a>Waren in Zustellung
 
@@ -40,7 +40,7 @@ Wenn Sie das Modul **Gesamttransportkosten** aktivieren, wird die Standard-Entit
 
 Wenn die Option **Waren in Zustellung** für den entsprechenden Lieferbedingungen-Datensatz auf *Ja* festgelegt ist, werden die Waren in den Lagerort für Waren in Zustellung eingelagert. Diese Aktion wird nur ausgelöst, wenn der Bestandseingang nicht vor der Bearbeitung einer Rechnung verarbeitet wird. Wenn die Lieferbedingungen für eine Bestellung auf Waren in Zustellung festgelegt sind, können Benutzer keinen Wareneingang mehr für die Einkaufsbestellung buchen. Wenn sie es versuchen, tritt ein Fehler auf. Die Fehlermeldung besagt, dass sie die Waren in Zustellung verwenden müssen, um fortzufahren.
 
-Um mit Informationen zu den Lieferbedingungen für Waren in Zustellung zu arbeiten, gehen Sie zu **Beschaffung und Sourcing \> Einrichten \> Verteilung \> Lieferbedingungen**. Die folgende Tabelle beschreibt die Felder, die das Modul **Gesamttransportkosten** auf der Seite **Lieferbedingungen** hinzufügt, um die Funktionalität für Waren in Zustellung zu unterstützen. Beide Felder befinden sich auf dem Inforegister **Allgemein**. Weitere Informationen über die anderen Felder auf dieser Seite finden Sie unter [Lieferbedingungen (Formular)](https://technet.microsoft.com/library/aa575567.aspx).
+Um mit Informationen zu den Lieferbedingungen für Waren in Zustellung zu arbeiten, gehen Sie zu **Beschaffung und Sourcing \> Einrichten \> Verteilung \> Lieferbedingungen**. Die folgende Tabelle beschreibt die Felder, die das Modul **Gesamttransportkosten** auf der Seite **Lieferbedingungen** hinzufügt, um die Funktionalität für Waren in Zustellung zu unterstützen. Beide Felder befinden sich auf dem Inforegister **Allgemein**. Weitere Informationen über die anderen Felder auf dieser Seite finden Sie unter [Lieferbedingungen (Formular)](/dynamicsax-2012//terms-of-delivery-form).
 
 | Feld | Beschreibung |
 |---|---|
@@ -55,7 +55,7 @@ Gesamttransportkosten fügt zwei neue Arten von Lagerorten hinzu: *Waren in Zust
 
 Der Lagertyp *Transitware* wird mit Ihrem Lagerort für Waren in Zustellung verknüpft, und dieser Lagerort wird verwendet, um die Waren von Aufträgen für Waren in Zustellung zu verarbeiten, bevor sie im endgültigen Ziellager ankommen. Allgemein gilt, dass ein Waren in Zustellung pro Standort ausreicht, wenn Standort und Lagerort die einzigen Bestandsdimensionen sind, die für die Lagerortverwaltung verwendet werden. Wenn auch die Bestandsdimension Standort verwendet wird, muss für jede Kombination aus einem Betrieb und einem Lagerort ein Waren in Zustellung festgelegt werden, damit auch der Standardlagerort angegeben werden kann.
 
-Um mit den Einstellungen für Waren in Zustellung für Ihre Lagerorte zu arbeiten, gehen Sie zu **Bestandsverwaltung \> Einrichten \> Bestandsaufteilung \> Lagerorte**. Die folgende Tabelle beschreibt die Felder, die das Modul **Gesamttransportkosten** auf der Seite **Lagerorte** hinzufügt, um die Funktion Waren in Zustellung zu unterstützen. Beide Felder erscheinen auf dem Inforegister **Allgemein**. Informationen über die anderen Felder auf der Seite finden Sie unter [Lagerorte (Formular)](https://technet.microsoft.com/library/aa620570.aspx).
+Um mit den Einstellungen für Waren in Zustellung für Ihre Lagerorte zu arbeiten, gehen Sie zu **Bestandsverwaltung \> Einrichten \> Bestandsaufteilung \> Lagerorte**. Die folgende Tabelle beschreibt die Felder, die das Modul **Gesamttransportkosten** auf der Seite **Lagerorte** hinzufügt, um die Funktion Waren in Zustellung zu unterstützen. Beide Felder erscheinen auf dem Inforegister **Allgemein**. Informationen über die anderen Felder auf der Seite finden Sie unter [Lagerorte (Formular)](/dynamicsax-2012//warehouses-form).
 
 | Feld | Beschreibung |
 |---|---|
@@ -109,7 +109,7 @@ Sie können Waren auch empfangen, indem Sie eine Wareneingangserfassung erstelle
     - **Erstellen aus Waren in Zustellung** - Legen Sie diese Option auf *Ja* fest, um Mengen aus den ausgewählten Zeilen in Zustellung für die ausgewählte Fahrt, den ausgewählten Container oder die ausgewählte Palette zu nehmen.
     - **Erstellen aus Bestellzeilen** - Setzen Sie diese Option auf *Ja*, um die Standardmenge in der Wareneingangserfassung aus den Zeilen der Einkaufsbestellung festzulegen. Die Standardmenge in der Wareneingangserfassung kann auf diese Weise nur festgelegt werden, wenn die Menge in der Zeile der Einkaufsbestellung mit der Menge in der Waren in Zustellung übereinstimmt.
 
-1. Verarbeiten Sie das Wareneingangsprotokoll wie in [Artikel-Eingänge mit einer Wareneingangserfassung erfassen](https://technet.microsoft.com/library/aa571129.aspx) beschrieben.
+1. Verarbeiten Sie das Wareneingangsprotokoll wie in [Artikel-Eingänge mit einer Wareneingangserfassung erfassen](/dynamicsax-2012/appuser-itpro/register-item-receipts-with-an-item-arrival-journal) beschrieben.
 
 > [!NOTE]
 > Die Wareneingangserfassung wird allgemein in Situationen verwendet, in denen Lagerorte und Chargen-/Serienverfolgung verwendet werden, aber keine Lagerortverwaltung.
@@ -131,15 +131,14 @@ Gesamttransportkosten fügt die folgenden Arbeitserstellungsprozesse zu den Men�
 - Waren in Zustellung – Artikelempfang
 - Waren in Zustellung Artikel-Eingang und Einlagerung
 
-Die Konfigurationseinstellungen für diese Prozesse ähneln den Einstellungen für die [Arbeitserstellungsprozesse Einkaufsbestellung empfangen und einlagern](https://technet.microsoft.com/library/dn553216.aspx). Allerdings fügt der Prozess *Waren in Zustellung Artikel empfangen und einlagern* zusätzlich das folgende Feld hinzu.
+Die Konfigurationseinstellungen für diese Prozesse ähneln den Einstellungen für die [Arbeitserstellungsprozesse Einkaufsbestellung empfangen und einlagern](/dynamicsax-2012/appuser-itpro/configure-mobile-devices-for-warehouse-work). Allerdings fügt der Prozess *Waren in Zustellung Artikel empfangen und einlagern* zusätzlich das folgende Feld hinzu.
 
 - **Transportcontainer abschließen** - Wenn diese Option auf *Ja* festgelegt ist, bietet die Warehouse Management Mobile App nach Abschluss der Einlagerungsarbeiten eine zusätzliche Option an, die **Transportcontainer abschließen** heißt. Wenn diese Option ausgewählt wird, wird die Arbeitskraft aufgefordert, zu bestätigen, dass der Container vollständig ist. Zu diesem Zeitpunkt werden alle Kurzbelege als eine untere Transaktion verarbeitet.
 
 ### <a name="location-directives"></a>Lagerplatzrichtlinien
 
-Gesamttransportkosten fügt eine neue Arbeitsauftragsart mit dem Namen *Waren in Zustellung* auf der Seite **Lagerplatzrichtlinien** hinzu. Diese Arbeitsauftragsart sollte auf die gleiche Weise konfiguriert werden wie die [Arbeitsauftragsarten für Kaufsbestellungen](https://technet.microsoft.com/library/dn553184.aspx).
+Gesamttransportkosten fügt eine neue Arbeitsauftragsart mit dem Namen *Waren in Zustellung* auf der Seite **Lagerplatzrichtlinien** hinzu. Diese Arbeitsauftragsart sollte auf die gleiche Weise konfiguriert werden wie die [Arbeitsauftragsarten für Kaufsbestellungen](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 ### <a name="work-templates"></a>Arbeitsvorlagen
 
-Gesamttransportkosten fügt einen neuen Arbeitsauftragstyp mit dem Namen *Waren in Zustellung* auf der Seite **Arbeitsvorlagen** hinzu. Dieser Arbeitsauftragstyp sollte auf die gleiche Weise konfiguriert werden wie die [Arbeitsvorlagen für Einkaufsbestellungen](https://technet.microsoft.com/library/dn553184.aspx).
-
+Gesamttransportkosten fügt einen neuen Arbeitsauftragstyp mit dem Namen *Waren in Zustellung* auf der Seite **Arbeitsvorlagen** hinzu. Dieser Arbeitsauftragstyp sollte auf die gleiche Weise konfiguriert werden wie die [Arbeitsvorlagen für Einkaufsbestellungen](/dynamicsax-2012/appuser-itpro/create-a-work-template).

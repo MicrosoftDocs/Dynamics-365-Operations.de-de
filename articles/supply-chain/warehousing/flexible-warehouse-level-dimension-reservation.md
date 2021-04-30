@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 17ae3cc788c60917807acece2fc21f6c52d8ffe0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 13b81459fe3449a90839dac7637118f09afe2e55
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835677"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910232"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 
@@ -854,7 +854,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Chargennummern in der Lagerortverwaltung](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [Chargennummern in der Lagerortverwaltung](/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
 - [Reservieren derselben Charge für einen Auftrag](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Entnahme der ältesten Charge mit einem mobilen Gerät](pick-oldest-batch.md)
 - [Chargen- und Kennzeichenbestätigung](batch-and-license-plate-confirmation.md)

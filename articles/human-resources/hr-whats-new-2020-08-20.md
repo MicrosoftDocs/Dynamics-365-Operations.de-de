@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 69304cbffafa4c20dbbbb31d5c19920f669761b9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 95ffe90795b9781408607257f3f63bf68c489b56
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800164"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891816"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-20-2020"></a>Neuerungen und Änderungen in Dynamics 365 Human Resources (20. August 2020)
 
@@ -65,15 +65,15 @@ Eine DMF-Entität ist jetzt verfügbar für Ansammlungsaussetzungen.
 
 Mithilfe der Personalisierungsfunktionen für die Personalabteilung können Sie Felder zu Pflichtfeldern machen. Diese Funktion erfordert **Gespeicherte Ansichten**. Weitere Informationen zu gespeicherten Ansichten finden Sie hier:
 
-- [Gespeicherte Ansichten – allgemeine Verfügbarkeit](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) im Dynamics 365 2020 Veröffentlichungsplan Welle 2
-- [Buildformulare, die gespeicherte Ansichten vollständig verwenden](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
+- [Gespeicherte Ansichten – allgemeine Verfügbarkeit](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) im Dynamics 365 2020 Veröffentlichungsplan Welle 2
+- [Buildformulare, die gespeicherte Ansichten vollständig verwenden](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
 
 ### <a name="human-resources-application-in-teams"></a>Human Resources Anwendung in Teams
 
 Mitarbeiter können Abwesenheiten von der Arbeit mit Microsoft Teams anfordern. Sie können mit einem Bot interagieren, um Urlaubsanträge zu erstellen. Weitere Informationen finden Sie hier:
 
-- [Abwicklung von Urlaub und Abwesenheit von Mitarbeitern in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) im der Dynamics 365 2020 Veröffentlichungsplan Welle 1
-- [Human Resources-App in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
+- [Abwicklung von Urlaub und Abwesenheit von Mitarbeitern in Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) im der Dynamics 365 2020 Veröffentlichungsplan Welle 1
+- [Human Resources-App in Teams](./hr-admin-teams-leave-app.md)
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
@@ -117,7 +117,7 @@ Wir haben kürzlich zwei Probleme in Bezug auf die Entität **BenefitsPlanEmploy
 ## <a name="see-also"></a>Siehe auch
 
 [Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)</br>
-[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)
 

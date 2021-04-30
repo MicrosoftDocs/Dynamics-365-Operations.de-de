@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4d6d88f69f9b958c9e8f49695d07d0b593da2258
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 453c6f18c689bb8bf2f6208d9181b23a2792f41a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840700"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907764"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Erstellen und Verwalten von Kundenportalbenutzern
 
@@ -44,26 +44,26 @@ Stellen Sie vor dem Einladen neuer Kunden sicher, dass Sie die Tabellenzuordnung
 
 ## <a name="the-invitation-process"></a>Der Einladungsprozess
 
-Führen Sie die folgenden Schritte aus, um einen vorhandenen Kontakt zum Kundenportal einzuladen [Laden Sie Kontakte zu Ihren Portalen ein](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) in der Power Apps Portaldokumentation.
+Führen Sie die folgenden Schritte aus, um einen vorhandenen Kontakt zum Kundenportal einzuladen [Laden Sie Kontakte zu Ihren Portalen ein](/powerapps/maker/portals/configure/invite-contacts) in der Power Apps Portaldokumentation.
 
-Stellen Sie vor dem Einladen eines Kunden zum Kundenportal sicher, dass der [Kontaktdatensatz](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) des Kunden verfügbar ist und wie folgt eingerichtet ist:
+Stellen Sie vor dem Einladen eines Kunden zum Kundenportal sicher, dass der [Kontaktdatensatz](/powerapps/maker/portals/configure/configure-contacts) des Kunden verfügbar ist und wie folgt eingerichtet ist:
 
 1. Legen Sie das Feld **Unternehmen** auf die juristische Person fest, zu der der Kunde in Supply Chain Management gehören soll.
 2. Legen Sie das Feld **Kontonummer** auf die Kontonummer des Kunden fest, zu der der Kunde in Supply Chain Management gehören soll.
 
 Nachdem ein Kontakt erstellt wurde, sollte er im Supply Chain Management angezeigt werden können.
 
-Weitere Informationen finden Sie unter [Konfigurieren Sie einen Kontakt für die Verwendung in einem Portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) in der Power Apps Portaldokumentation.
+Weitere Informationen finden Sie unter [Konfigurieren Sie einen Kontakt für die Verwendung in einem Portal](/powerapps/maker/portals/configure/configure-contacts) in der Power Apps Portaldokumentation.
 
 ## <a name="out-of-box-web-roles-and-table-permissions"></a>Out-of-Box-Webrollen und Tabellenberechtigungen
 
-Benutzerrollen in Power Apps Portalen sind definiert durch [Webrollen](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) und [Tabellenberechtigungen](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Für das Kundenportal sind sofort einige Rollen definiert. Sie können neue Rollen erstellen und vorhandene Rollen ändern oder entfernen.
+Benutzerrollen in Power Apps Portalen sind definiert durch [Webrollen](/powerapps/maker/portals/configure/create-web-roles) und [Tabellenberechtigungen](/powerapps/maker/portals/configure/assign-entity-permissions). Für das Kundenportal sind sofort einige Rollen definiert. Sie können neue Rollen erstellen und vorhandene Rollen ändern oder entfernen.
 
 ### <a name="out-of-box-web-roles"></a>Out-of-Box-Webrollen
 
 In diesem Abschnitt werden die Webrollen beschrieben, die mit dem Kundenportal bereitgestellt werden.
 
-Weitere Informationen zum Ändern der Standardbenutzerrollen finden Sie unter [Erstellen Sie Webrollen für Portale](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) und [Fügen Sie datensatzbasierte Sicherheit hinzu, indem Sie Tabellenberechtigungen für Portale verwenden](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) in der Power Apps Portaldokumentation.
+Weitere Informationen zum Ändern der Standardbenutzerrollen finden Sie unter [Erstellen Sie Webrollen für Portale](/powerapps/maker/portals/configure/create-web-roles) und [Fügen Sie datensatzbasierte Sicherheit hinzu, indem Sie Tabellenberechtigungen für Portale verwenden](/powerapps/maker/portals/configure/assign-entity-permissions) in der Power Apps Portaldokumentation.
 
 #### <a name="administrator"></a>Administrator
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fe7ff2ab877182dd3145e39574aa7229c48b6057
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e30b02a6f98f638954adc7ec335babd518b92bf4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833400"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909402"
 ---
 # <a name="set-up-master-planning"></a>Produktprogrammpläne einrichten
 
@@ -106,11 +106,11 @@ Für jeden Plan auf dem Inforegister **Allgemeines** der Seite **Produktprogramm
 
 ### <a name="operations-scheduling"></a>Grobterminierung
 
-Diese Grobplanung wird häufig verwendet, wenn eine allgemeine Schätzung der Dauer des Produktionsprozesses benötigt wird. Mit der Grobterminierung werden die Arbeitsgänge im Produktionsarbeitsplan nicht in Einzelvorgänge aufgelöst. Weitere Informationen zur Grobterminierung finden Sie unter [Grobterminierung](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
+Diese Grobplanung wird häufig verwendet, wenn eine allgemeine Schätzung der Dauer des Produktionsprozesses benötigt wird. Mit der Grobterminierung werden die Arbeitsgänge im Produktionsarbeitsplan nicht in Einzelvorgänge aufgelöst. Weitere Informationen zur Grobterminierung finden Sie unter [Grobterminierung](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
 
 ### <a name="job-scheduling"></a>Feinterminierung
 
-Die Feinterminierung ist eine detailliertere Planungsmethode, in der jeder Arbeitsgang in einzelne Aufgaben oder Einzelvorgänge unterteilt wird. Die Feinterminierung enthält Informationen wie Kapazität. Die Feinterminierung wird normalerweise verwendet, um Einzelvorgänge im Fertigungsbereich für einen sofortigen oder kurzfristigen Zeitrahmen zu planen. Weitere Informationen zur Feinterminierung finden Sie unter [Feinterminierung](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Die Feinterminierung ist eine detailliertere Planungsmethode, in der jeder Arbeitsgang in einzelne Aufgaben oder Einzelvorgänge unterteilt wird. Die Feinterminierung enthält Informationen wie Kapazität. Die Feinterminierung wird normalerweise verwendet, um Einzelvorgänge im Fertigungsbereich für einen sofortigen oder kurzfristigen Zeitrahmen zu planen. Weitere Informationen zur Feinterminierung finden Sie unter [Feinterminierung](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="time-fences-in-days"></a>Planungszeitraum in Tagen
 
@@ -158,7 +158,7 @@ Aktivitätsmeldungen schlagen Änderungen vor, damit Änderungen am vorhandenen 
 
 Wenn Sie die Option **Aktivitätsmeldung** auf **Ja** festlegen, können Sie den Aktivitätsmeldungszeitraum überschreiben, der für den Artikel während des Produktprogrammplanungslaufs definiert wird. In diesem Fall geben Sie die Anzahl der Tage ein, für die Aktivitätsmeldungen für den Bedarf im Produktprogrammplanungslauf generiert werden sollen. Der Aktivitätenmeldungszeitraum wird ab dem aktuellen Datum vorwärts berechnet.
 
-Weitere Informationen zu den Aktivitätenmeldungen finden Sie unter [Aktivitätenmeldungen](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
+Weitere Informationen zu den Aktivitätenmeldungen finden Sie unter [Aktivitätenmeldungen](/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
 
 > [!NOTE]
 > Die Berechnung der Aktivitätsmeldungen bewirkt eine längere Laufzeit der Produktprogrammplanung. Wenn Aktivitätsmeldungen nicht regelmäßig analysiert und angewendet werden (täglich, wöchentlich, usw.), sollten Sie die Berechnung beim Produktprogrammplanungslauf deaktivieren. Um die Berechnung auszuschalten, legen Sie auf der Seite **Produktprogrammpläne** den Planungszeitraum für die **Aktivitätsmeldungen** auf **0** (null) fest für die Produktprogrammplanung, die Sie ausführen. Überprüfen Sie außerdem, dass die Einstellung **Aktivitätsmeldung** für alle Dispositionssteuerungsgruppen deaktiviert ist.
@@ -223,7 +223,7 @@ Lieferzeit + Negative Tage + Aktuelles Datum - Fälligkeitsdatum des Bedarfs
 
 Das System verwendet nur die geplanten Lieferaufträge, die innerhalb dieses Planungszeitraums sind, und er erstellt einen neuen Bestellvorschlag außerhalb. dieser Zeit. Der Vorteil von dynamischen negativen Tagen ist, dass sie die Einzelproduktlieferzeit enthalten, vorhandene Aufträge wieder verwenden, und das Erstellen neuer Bestellvorschläge vermeiden, die zusammen an einem späteren Datum aufgrund von Verzögerungen in der Lieferzeit enden. 
 
-Weitere Informationen finden Sie unter [Negative Tage und dynamische negative Tagen](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+Weitere Informationen finden Sie unter [Negative Tage und dynamische negative Tagen](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

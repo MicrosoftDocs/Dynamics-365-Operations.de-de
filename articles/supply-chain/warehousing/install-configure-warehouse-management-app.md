@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835605"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908951"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installieren und Verbinden der mobilen Lagerortverwaltungs-App
 
@@ -50,7 +50,7 @@ Bevor Sie die App verwenden können, muss eine zugehörige Funktion in Ihrem Sys
 
 Bei kleineren Bereitstellungen können Sie die App typischerweise auf jedem Gerät aus dem entsprechenden Store installieren und dann die Verbindung zu den von Ihnen verwendeten Umgebungen manuell konfigurieren.
 
-Bei größeren Bereitstellungen können Sie das Bereitstellen und/oder die Konfiguration von Apps automatisieren, was bequemer sein kann, wenn Sie viele Geräte verwalten. Sie könnten z.B. eine Lösung für die Verwaltung von mobilen Geräten und mobilen Anwendungen wie [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) verwenden. Weitere Informationen dazu, wie Sie Intune zum Hinzufügen von Anwendungen verwenden, finden Sie unter [Microsoft Intune Apps hinzufügen](https://docs.microsoft.com/mem/intune/apps/apps-add).
+Bei größeren Bereitstellungen können Sie das Bereitstellen und/oder die Konfiguration von Apps automatisieren, was bequemer sein kann, wenn Sie viele Geräte verwalten. Sie könnten z.B. eine Lösung für die Verwaltung von mobilen Geräten und mobilen Anwendungen wie [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) verwenden. Weitere Informationen dazu, wie Sie Intune zum Hinzufügen von Anwendungen verwenden, finden Sie unter [Microsoft Intune Apps hinzufügen](/mem/intune/apps/apps-add).
 
 ### <a name="install-the-app-from-an-app-store"></a>Installieren Sie die App aus einem App-Store
 
@@ -65,10 +65,10 @@ Der einfachste Weg, die App auf einem einzelnen Gerät zu installieren, ist die 
 Als Alternative zur Installation aus einem App-Store können Sie die App stattdessen auch aus dem Microsoft App Center herunterladen. Das App Center stellt installierbare Pakete zur Verfügung, die Sie per Sideload laden können. Zusätzlich zur aktuellen Version können Sie im App Center auch frühere Versionen herunterladen und eventuell Vorschauversionen mit neuen Funktionen, die Sie ausprobieren können. Um aktuelle, frühere oder Vorschau-Versionen der mobilen App „Lagerortverwaltung“ aus dem Microsoft App Center herunterzuladen, verwenden Sie einen der folgenden Links:
 
 - **Windows (UWP):** [Warehouse Management (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
-    Anweisungen zur Installation eines heruntergeladenen Pakets auf einem Windows-Gerät und zum anschließenden Festlegen der erforderlichen Zertifikate finden Sie unter [Installieren eines Builds aus dem App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+    Anweisungen zur Installation eines heruntergeladenen Pakets auf einem Windows-Gerät und zum anschließenden Festlegen der erforderlichen Zertifikate finden Sie unter [Installieren eines Builds aus dem App Center](/appcenter/distribution/installation).
 
 - **Android:** [Lagerortverwaltung (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
-    Wenn Sie eine Vorschau-Version herunterladen, sind ein paar zusätzliche Schritte erforderlich, um sie zu installieren. Einzelheiten finden Sie unter [Testen von Android-Apps](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+    Wenn Sie eine Vorschau-Version herunterladen, sind ein paar zusätzliche Schritte erforderlich, um sie zu installieren. Einzelheiten finden Sie unter [Testen von Android-Apps](/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Webdienstanwendung in Azure Active Directory erstellen
 
@@ -103,11 +103,11 @@ Sie müssen eine Webdienstanwendung für den Supply Chain Management-Mandanten i
 
 Weitere Informationen zum Einrichten von Webdienstanwendungen in Azure AD finden Sie in den folgenden Ressourcen:
 
-- Anweisungen zum Einrichten von Webdienstanwendungen mit Windows PowerShell in Azure AD finden Sie unter [Vorgehensweise: Azure PowerShell zum Erstellen eines Dienstprinzipals mit einem Zertifikat verwenden](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- Anweisungen zum Einrichten von Webdienstanwendungen mit Windows PowerShell in Azure AD finden Sie unter [Vorgehensweise: Azure PowerShell zum Erstellen eines Dienstprinzipals mit einem Zertifikat verwenden](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - Ausführliche Informationen zum manuellen Erstellen einer Webdienstanwendung in Azure AD finden Sie in den folgenden Themen:
 
-    - [Schnellstart: Eine Anwendung bei der Microsoft Identity Platform registrieren](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Vorgehensweise: Das Portal verwenden, um eine Azure AD-Anwendung- und einen -Dienstprinzipal zu erstellen, die auf Ressourcen zugreifen können](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Schnellstart: Eine Anwendung bei der Microsoft Identity Platform registrieren](/azure/active-directory/develop/quickstart-register-app)
+    - [Vorgehensweise: Das Portal verwenden, um eine Azure AD-Anwendung- und einen -Dienstprinzipal zu erstellen, die auf Ressourcen zugreifen können](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Erstellen und Konfigurieren eines Benutzerkontos in Supply Chain Management
 
@@ -135,7 +135,7 @@ Die Authentifizierung mit Azure AD bietet eine sichere Möglichkeit, ein mobiles
 
 Zertifikate können als geheime Schlüssel verwendet werden, um die Identität der Anwendung zu belegen, wenn ein Token angefordert wird. Der öffentliche Teil des Zertifikats wird in die App-Registrierung im Azure-Portal hochgeladen, während das vollständige Zertifikat auf jedem Gerät bereitgestellt werden muss, auf dem die mobile Lagerortverwaltungs-App installiert ist. Ihre Organisation ist für die Verwaltung des Zertifikats in Bezug auf Rotation usw. verantwortlich. Sie können selbstsignierte Zertifikate verwenden, Sie sollten jedoch stets nicht exportierbare Zertifikate verwenden.
 
-Sie müssen das Zertifikat lokal auf jedem Gerät verfügbar machen, auf dem Sie die mobile Lagerortverwaltungs-App ausführen. Weitere Informationen dazu, wie Sie bei Verwendung von Intune, Intune-gesteuerte Geräte verwalten, finden Sie unter [Zertifikate zur Authentifizierung in Microsoft Intune verwenden](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Sie müssen das Zertifikat lokal auf jedem Gerät verfügbar machen, auf dem Sie die mobile Lagerortverwaltungs-App ausführen. Weitere Informationen dazu, wie Sie bei Verwendung von Intune, Intune-gesteuerte Geräte verwalten, finden Sie unter [Zertifikate zur Authentifizierung in Microsoft Intune verwenden](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Die Anwendung durch Importieren der Verbindungseinstellungen konfigurieren
 

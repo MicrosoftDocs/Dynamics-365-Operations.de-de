@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 42896c85fe72690aadafb878eb7e899c6fe10c32
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dd49edeb92e6a23723b1b6b6ea7800b69a81bd0f
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823787"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897599"
 ---
 # <a name="electronic-messaging"></a>Elektronische Nachrichten
 
@@ -29,7 +29,7 @@ Vor kurzem haben die Behörden und die gesetzgebenden Instanzen aus verschiedene
 
 Die Funktionalität zum elektronischen Messaging in Finance unterstützt verschiedene Prozesse zum elektronischen dialogfähigen Betrieb zwischen Finance und den Systemen, die Regierungen und gesetzgebende Instanzen zur Berichterstellung, Übermittlung und dem Empfang von amtlichen Informationen anbieten.
 
-Die Funktion zum elektronischen Messaging ist im Modul **Elektronische Berichterstellung** (EB) integriert. Daher können Sie EB-Formate für elektronische Nachrichten einrichten. Weitere Informationen finden Sie unter [Elektronische Berichterstellung (EB)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Die Funktion zum elektronischen Messaging ist im Modul **Elektronische Berichterstellung** (EB) integriert. Daher können Sie EB-Formate für elektronische Nachrichten einrichten. Weitere Informationen finden Sie unter [Elektronische Berichterstellung (EB)](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
 Elektronisches Messaging basiert auf folgenden Entitäten:
 
@@ -56,7 +56,7 @@ Die Funktion der elektronischen Messaging unterstützt die folgenden Szenarien:
 
 ## <a name="set-up-electronic-messaging"></a>Einrichten des elektronischen Messaging
 
-Mithilfe des elektronischen Messaging können Sie verschiedene elektronische Berichterstellungsprozesse für verschiedene Dokumenttypen verwalten. In einigen komplexen Szenarien werden elektronische Nachrichten so eingerichtet, dass sie eine Kombination vieler Nachrichtenstatus, Nachrichtenelementstatus, Aktivitäten, zusätzlicher Felder und ausführbarer Klassen sind. Für diese Szenarien sind Pakete von Datenentitäten für den Import verfügbar. Wenn Sie diese Datenentitätspakete verwenden, sollten Sie sie zu einer juristischen Person importieren, indem Sie das Datenverwaltungstool verwenden. Weitere Informationen dazu, wie das Datenverwaltungstool verwendet wird, finden Sie unter [Datenverwaltung](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Mithilfe des elektronischen Messaging können Sie verschiedene elektronische Berichterstellungsprozesse für verschiedene Dokumenttypen verwalten. In einigen komplexen Szenarien werden elektronische Nachrichten so eingerichtet, dass sie eine Kombination vieler Nachrichtenstatus, Nachrichtenelementstatus, Aktivitäten, zusätzlicher Felder und ausführbarer Klassen sind. Für diese Szenarien sind Pakete von Datenentitäten für den Import verfügbar. Wenn Sie diese Datenentitätspakete verwenden, sollten Sie sie zu einer juristischen Person importieren, indem Sie das Datenverwaltungstool verwenden. Weitere Informationen dazu, wie das Datenverwaltungstool verwendet wird, finden Sie unter [Datenverwaltung](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 Wenn Sie kein Datenentitätspaket importieren, kann die Funktionalität für elektronische Nachrichten manuell eingerichtet werden. In diesem Fall müssen Sie die folgenden Elemente einrichten:
 

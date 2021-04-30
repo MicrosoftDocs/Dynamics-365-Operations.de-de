@@ -1,8 +1,8 @@
 ---
-title: Erste Schritte mit dem Steuerberechnungs-Add-In
-description: In diesem Abschnitt wird erläutert, wie Sie das Steuerberechnungs-Add-In einrichten.
+title: Erste Schritte mit der Steuerberechnung
+description: In diesem Thema wird erläutert, wie Steuerberechnungen eingerichtet werden.
 author: wangchen
-ms.date: 03/10/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,27 +16,27 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 835ae33fba31d4bccb218969aa9aa61eaa7a3061
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a90455a338067331a6a44cab36b578ed01ed56eb
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832592"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890297"
 ---
-# <a name="get-started-with-the-tax-calculation-add-in-preview"></a>Erste Schritte mit dem Steuerberechnungs-Add-In (Vorschau)
+# <a name="get-started-with-the-tax-calculation-preview"></a>Erste Schritte mit der Steuerberechnung (Vorschau)
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-Dieses Thema enthält Informationen zu den ersten Schritten mit dem Steuerberechnungs-Add-In. Zunächst werden Sie durch die Konfigurationsschritte in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) und Dynamics 365 Finance sowie Dynamics 365 Supply Chain Management geführt. Anschließend wird der allgemeine Prozess für die Verwendung des Steuerberechnungs-Add-Ins für Transaktionen in Finance und Supply Chain Management überprüft.
+Dieses Thema enthält Informationen zu den ersten Schritten mit der Steuerberechnung. Zunächst werden Sie durch die Konfigurationsschritte in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) und Dynamics 365 Finance sowie Dynamics 365 Supply Chain Management geführt. Anschließend wird der allgemeine Prozess für die Verwendung der Steuerberechnungsfunktion für Transaktionen in Finance und Supply Chain Management überprüft.
 
 Die Einrichtung besteht aus vier Hauptschritten:
 
-1. Installieren Sie in LCS das Steuerberechnungs-Add-In.
+1. Installieren Sie in LCS die Steuerberechnung.
 2. Richten Sie in RCS die Steuerberechnungsfunktion ein. Diese Einrichtung ist nicht für jede juristische Person spezifisch. Es kann von juristischen Personen in Finance und Supply Chain Management gemeinsam genutzt werden.
-3. Richten Sie in Finance und Supply Chain Management die Steuerberechnungs-Add-In-Parameter nach juristischer Person ein.
-4. Erstellen Sie in Finance und Supply Chain Management Transaktionen wie Aufträge und verwenden Sie das Steuerberechnungs-Add-In, um Steuern zu ermitteln und zu berechnen.
+3. Richten Sie in Finance und Supply Chain Management die Steuerberechnungsparameter nach juristischer Person ein.
+4. Erstellen Sie in Finance und Supply Chain Management Transaktionen wie Aufträge und verwenden Sie die Steuerberechnung, um Steuern zu ermitteln und zu berechnen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -46,7 +46,7 @@ Bevor Sie die Vorgehensweisen in diesem Thema abschließen können, müssen die 
 - Sie haben Zugriff auf Ihr RCS-Konto.
 - Sie haben Microsoft kontaktiert, um das Flighting in Ihrer bereitgestellten Finance- oder Supply Chain Management-Umgebung zu aktivieren.
 
-## <a name="set-up-the-tax-calculation-add-in-in-lcs"></a>Steuerberechnungs-Add-In in LCS einrichten
+## <a name="set-up-tax-calculation-in-lcs"></a>Steuerberechnung in LCS einrichten
 
 1. Bei [LCS](https://lcs.dynamics.com) anmelden
 2. Schließen Sie die Einrichtung für die Microsoft Power Platform-Integration ab. Weitere Informationen finden Sie unter [Übersicht über Add-Ins](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
@@ -54,7 +54,7 @@ Bevor Sie die Vorgehensweisen in diesem Thema abschließen können, müssen die 
 4. Wählen Sie **Steuerberechnung (Vorschau)**.
 5. Lesen Sie die allgemeinen Geschäftsbedingungen, stimmen Sie ihnen zu und wählen Sie **Installieren** aus.
 
-## <a name="set-up-the-tax-calculation-add-in-in-rcs"></a>Steuerberechnungs-Add-In in RCS einrichten
+## <a name="set-up-tax-calculation-in-rcs"></a>Steuerberechnung in RCS einrichten
 
 Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristische Person. Sie müssen dieses Verfahren nur einmal ausführen und können es in jeder juristischen Person in RCS ausführen.
 
@@ -64,7 +64,7 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
 4. Wählen Sie den **Microsoft**-Konfigurationsanbieter und dann **Repositorys** aus.
 5. Wählen Sie im Feld **Typ** **Global** aus.
 6. Wählen Sie **Öffnen**.
-7. Gehen Sie zu **Steuerdatenmodell**, erweitern Sie den Dateibaum und wählen Sie dann **Steuerkonfiguration – Europa** aus.
+7. Gehen Sie zu **Steuerdatenmodell**, erweitern Sie den Dateibaum und wählen Sie dann **Steuerkonfiguration** aus.
 8. Wählen Sie die neueste Version aus und wählen Sie dann **Importieren**.
 9. Gehen Sie zurück zum Arbeitsbereich **Globalisierungsfunktionen (Vorschau)**, wählen Sie **Funktionen** aus, wählen Sie die Kachel **Steuerberechnung** und dann **Hinzufügen** aus.
 10. Wählen Sie eine der folgenden Funktionstypen aus:
@@ -79,18 +79,18 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
 12. Wählen Sie die Entwurfsversion der Funktion aus und wählen Sie dann **Bearbeiten**. Die Seite **Einrichtung der Steuerberechnung** wird ausgefüllt.
 13. Wählen Sie **Konfigurationsversion**. Sie sollten die Konfigurationsversion sehen, die Sie in Schritt 8 importiert haben.
 
-    Microsoft bietet eine Standardsteuerkonfiguration für das Steuerberechnungs-Add-In. Diese Konfiguration deckt die meisten Anforderungen für das Verhalten bei der Steuerberechnung ab. Es wird basierend auf Marktrückmeldungen aktualisiert. Wenn Sie die Konfiguration erweitern müssen, um bestimmte Anforderungen zu erfüllen, lesen Sie [So erstellen Sie eine Erweiterung im Steuerdienst](https://go.microsoft.com/fwlink/?linkid=2138483) für Informationen zum Generieren und Auswählen Ihrer eigenen Steuerkonfiguration.
+    Microsoft bietet eine Standardsteuerkonfiguration für das Steuerberechnungs-Add-In. Diese Konfiguration deckt die meisten Anforderungen für das Verhalten bei der Steuerberechnung ab. Es wird basierend auf Marktrückmeldungen aktualisiert. Wenn Sie die Konfiguration erweitern müssen, um bestimmte Anforderungen zu erfüllen, lesen Sie [So erstellen Sie eine Erweiterung im Steuerdienst](./tax-service-add-data-fields-tax-integration-by-extension.md) für Informationen zum Generieren und Auswählen Ihrer eigenen Steuerkonfiguration.
 
     Nachdem Sie **Konfigurationsversion** ausgewählt haben, werden mehrere zusätzliche Registerkarten angezeigt:
 
-    - **Steuercodes** – Diese Registerkarte ist für den Steuerberechnungsdienst obligatorisch. Sie wird verwendet, um Masterdaten für Steuercodes zu pflegen. Alle Steuercodes, die auf dieser Registerkarte erstellt werden, werden automatisch mit Finance synchronisiert, wenn Sie die aktuelle Version der Steuerfunktionseinrichtung in der juristischen Person aktivieren.
-    - **Anwendbarkeit von Steuercodes** – Diese Registerkarte ist für das Steuerberechnungs-Add-In obligatorisch. Sie wird verwendet, um eine Matrix zu definieren, die den Steuercode, die Steuergruppe und die Artikelsteuergruppe bestimmt. Der ermittelte Steuercode wird zur Berechnung des Steuerbetrags verwendet. Die Werte der Felder **Steuercode**, **Steuergruppe** und **Artikelsteuergruppe** werden an Finance zurückgegeben.
-    - **Anwendbarkeit der Debitor-Steuerregistrierungsnummer** – Diese Registerkarte ist für das Steuerberechnungs-Add-In optional. Wenn Sie mehrere Steuerregistrierungsnummern für einen Kunden haben, kann das Steuerberechnungs-Add-In automatisch die richtige Steuerregistrierungsnummer ermitteln. In der Matrix auf dieser Registerkarte definieren Sie die Regeln, nach denen das Add-In die Bestimmung vornimmt. Andernfalls verwenden Finance und Supply Chain Management weiterhin die Standardsteuerregistrierungsnummer für steuerpflichtige Dokumente für Verkaufstransaktionen.
-    - **Anwendbarkeit der Kreditor-Steuerregistrierungsnummer** – Diese Registerkarte ist für das Steuerberechnungs-Add-In optional. Wenn Sie mehrere Steuerregistrierungsnummern für einen Lieferanten haben, kann das Steuerberechnungs-Add-In automatisch die richtige Steuerregistrierungsnummer ermitteln. In der Matrix auf dieser Registerkarte definieren Sie die Regeln, nach denen das Add-In die Bestimmung vornimmt. Andernfalls verwenden Finance und Supply Chain Management weiterhin die Standardsteuerregistrierungsnummer für steuerpflichtige Dokumente für Kauftransaktionen.
-    - **Anwendbarkeit des Listencodes** – Diese Registerkarte ist für das Steuerberechnungs-Add-In optional. Es kann helfen, den Wert im Feld **Listencode** durch flexiblere und konfigurierbare Regeln automatisch zu bestimmen. In der Matrix auf dieser Registerkarte können Sie die Regeln definieren, nach denen das Add-In die Bestimmung vornimmt. Andernfalls verwenden Finance und Supply Chain Management weiterhin den Standardcode für steuerpflichtige Dokumente.
+    - **Steuercode** – Diese Registerkarte ist obligatorisch. Sie wird verwendet, um Masterdaten für Steuercodes zu pflegen. Alle Steuercodes, die auf dieser Registerkarte erstellt werden, werden automatisch mit Finance synchronisiert, wenn Sie die aktuelle Version der Steuerfunktionseinrichtung in der juristischen Person aktivieren.
+    - **Anwendbarkeit von Steuercodes** – Diese Registerkarte ist obligatorisch. Sie wird verwendet, um eine Matrix zu definieren, die den Steuercode, die Steuergruppe und die Artikelsteuergruppe bestimmt. Der ermittelte Steuercode wird zur Berechnung des Steuerbetrags verwendet. Die Werte der Felder **Steuercode**, **Steuergruppe** und **Artikelsteuergruppe** werden an Finance zurückgegeben.
+    - **Anwendbarkeit der Debitor-Steuerregistrierungsnummer** – Diese Registerkarte ist optional. Wenn Sie mehrere Steuerregistrierungsnummern für einen Debitor haben, kann die Steuerberechnung automatisch die richtige Steuerregistrierungsnummer ermitteln. In der Matrix auf dieser Registerkarte definieren Sie die Regeln, nach denen die Bestimmung vorgenommen wird. Andernfalls verwenden Finance und Supply Chain Management weiterhin die Standardsteuerregistrierungsnummer für steuerpflichtige Dokumente für Verkaufstransaktionen.
+    - **Anwendbarkeit der Kreditoren-Steuerregistrierungsnummer** – Diese Registerkarte ist optional. Wenn Sie mehrere Steuerregistrierungsnummern für einen Lieferanten haben, kann die Steuerberechnung automatisch die richtige Steuerregistrierungsnummer ermitteln. In der Matrix auf dieser Registerkarte definieren Sie die Regeln, nach denen die Bestimmung vorgenommen wird. Andernfalls verwenden Finance und Supply Chain Management weiterhin die Standardsteuerregistrierungsnummer für steuerpflichtige Dokumente für Kauftransaktionen.
+    - **Anwendbarkeit des Listencodes** – Diese Registerkarte ist optional. Es kann helfen, den Wert im Feld **Listencode** durch flexiblere und konfigurierbare Regeln automatisch zu bestimmen. In der Matrix auf dieser Registerkarte können Sie die Regeln definieren, nach denen die Bestimmung vorgenommen wird. Andernfalls verwenden Finance und Supply Chain Management weiterhin den Standardcode für steuerpflichtige Dokumente.
 
 14. Wählen Sie auf der **Steuercode**-Registerkarte **Hinzufügen** aus, und geben Sie den Steuercode und eine Beschreibung ein.
-15. Wählen Sie **Steuerkomponente** aus. Die Steuerkomponente ist eine Gruppe von Steuerberechnungsmethoden, die in der vorherigen Version der ausgewählten Steuerkonfiguration definiert wurde. Folgende Steuerkomponenten sind verfügbar:
+15. Wählen Sie **Steuerkomponente** aus. Die Steuerkomponente ist eine Gruppe von Methoden, die in der vorherigen Version der ausgewählten Steuerkonfiguration definiert wurden. Folgende Steuerkomponenten sind verfügbar:
 
     - Nach Nettobetrag
     - Nach Bruttobetrag
@@ -104,13 +104,13 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
     - Ist befreit
     - Ist Verbrauchssteuer (USA)
     - Ist Verlagerung der Steuerschuld
-    - In Basisbetragsberechnung ausschließen
+    - Von der Basisbetragsberechnung ausschließen
 
     Richten Sie für ein Verbrauchssteuer (USA)-Szenario einen einzelnen Steuercode mit einem positiven Steuersatz ein und markieren Sie es als **Ist Verbrauchssteuer (USA)**.
 
     Richten Sie für ein Steuerschuldumkehr-Szenario zwei Steuercodes ein, von denen eines einen positiven Steuersatz und das andere einen negativen Steuersatz bei gleichem Steuersatzwert aufweist. Markieren Sie den negativen Steuercode als **Ist Verlagerung der Steuerschuld**. Weitere Informationen zur Steuerschuldumkehr-Lösung in Finance finden Sie unter [Mechanismus zur Verlagerung der Steuerschuld für USt./GST-Regelung](emea-reverse-charge.md).
     
-    Wählen Sie für einige Steuertypen, die bei der Berechnung des Steuerbasisbetrags für preisbezogene Transaktionen ausgeschlossen werden sollten, wie z. B. Zoll in einigen Ländern, das Kontrollkästchen **In Basisbetragsberechnung ausschließen** aus.
+    Wählen Sie für einige Steuertypen, die bei der Berechnung des Steuerbasisbetrags für preisbezogene Transaktionen ausgeschlossen werden sollten, wie z. B. Zoll in einigen Ländern, das Kontrollkästchen **Von der Basisbetragsberechnung ausschließen** aus.
 
     Verwalten Sie die Steuersätze und die Steuerbetragsgrenzen für diesen Steuercode.
 
@@ -124,31 +124,31 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
 
 ## <a name="dynamics-365-setup"></a>Dynamics 365-Einrichtung
 
-Nachdem Sie die Einrichtung in RCS abgeschlossen haben, wie im vorherigen Abschnitt beschrieben, haben Sie eine veröffentlichte Version der Steuerfunktion. Führen Sie die folgenden Schritte aus, um das Steuerberechungs-Add-In in Finance einzurichten.
+Nachdem Sie die Einrichtung in RCS abgeschlossen haben, wie im vorherigen Abschnitt beschrieben, haben Sie eine veröffentlichte Version der Steuerfunktion. Führen Sie die folgenden Schritte aus, um die Steuerberechnung in Finance einzurichten.
 
-Die Einrichtung in diesem Abschnitt erfolgt nach juristischer Person. Sie müssen sie für jede juristische Person konfigurieren, für die Sie das Steuerberechnungs-Add-In in Finance aktivieren möchten.
+Die Einrichtung in diesem Abschnitt erfolgt nach juristischer Person. Sie müssen sie für jede juristische Person konfigurieren, für die Sie die Steuerberechnung in Finance aktivieren möchten.
 
-1. Gehen Sie in Finance zu **Steuer** \> **Einrichtung** \> **Steuerkonfiguration** \> **Add-In für Steuerberechnung (Vorschau)**.
+1. Gehen Sie in Finance zu **Steuer** \> **Einrichtung** \> **Steuerkonfiguration** \> **Einrichtung der Steuerberechnung (Vorschau)**.
 2. Legen Sie auf der Registerkarte **Allgemein** die folgenden Felder fest:
 
-    - **Steuerberechnungs-Add-In aktivieren** – Aktivieren Sie dieses Kontrollkästchen, um das Steuerberechnungs-Add-In für die juristische Person zu aktivieren. Wenn das Steuerberechnungs-Add-In für die aktuelle juristische Person nicht aktiviert ist, verwendet die juristische Person weiterhin das vorhandene Steuermodul, um die Steuer zu ermitteln und zu berechnen.
+    - **Steuerberechnung aktivieren** – Aktivieren Sie dieses Kontrollkästchen, um die Steuerberechnung für die juristische Person zu aktivieren. Wenn es für die aktuelle juristische Person nicht aktiviert ist, verwendet die juristische Person weiterhin das vorhandene Steuermodul, um die Steuer zu ermitteln und zu berechnen.
     - **Funktionseinrichtung** – Wählen Sie eine veröffentlichte Steuerfunktionseinrichtung und Version für die juristische Person aus. Weitere Informationen zum Einrichten und Vervollständigen einer veröffentlichten Steuerfunktion finden Sie im vorherigen Abschnitt dieses Themas.
-    - **Geschäftsprozess** – Wählen Sie die Geschäftsprozesse aus, die für das Steuerberechnungs-Add-In aktiviert werden sollen.
+    - **Geschäftsprozess** – Wählen Sie die zu aktivierenden Geschäftsprozesse aus.
     - **Anpassung des Steuerkennzeichens aktivieren** – Setzen Sie diese Option auf **Ja**, um Steuercodeanpassungen auf der Mehrwertsteuerseite zu aktivieren.
 
 3. Definieren Sie auf der Registerkarte **Berechnung** die erwartete Rundungsregel für die juristische Person.
-4. Definieren Sie auf der Registerkarte **Fehlerbehandlung** die erwartete Fehlerbehandlungsmethode für die juristische Person. Für jeden Ergebniscode stehen drei Optionen aus dem Steuerberechnungs-Add-In zur Verfügung:
+4. Definieren Sie auf der Registerkarte **Fehlerbehandlung** die erwartete Fehlerbehandlungsmethode für die juristische Person. Für jeden Ergebniscode stehen drei Optionen zur Verfügung:
 
     - Nr.
     - Achtung
     - Fehler
 
-5. Speichern Sie die Einrichtung des Steuerberechnungs-Add-Ins.
+5. Speichern Sie die Einrichtung.
 6. Wiederholen Sie die Schritte 1 bis 5 für jede weitere juristische Person.
 
 ## <a name="transaction-processing"></a>Verarbeiten von Buchungen
 
-Nachdem Sie alle Einrichtungsvorgänge abgeschlossen haben, können Sie das Steuerberechnungs-Add-In verwenden, um die Steuer in Finance zu ermitteln und zu berechnen. Die Schritte zur Verarbeitung von Transaktionen bleiben unverändert. Die folgenden Transaktionen werden in Finance Version 10.0.18 unterstützt:
+Nachdem Sie alle Einrichtungsvorgänge abgeschlossen haben, können Sie die Steuerberechnung verwenden, um die Steuer in Finance zu ermitteln und zu berechnen. Die Schritte zur Verarbeitung von Transaktionen bleiben unverändert. Die folgenden Transaktionen werden in Finance Version 10.0.18 unterstützt:
 
 - Verkaufsprozess
 

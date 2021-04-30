@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fabc308b1b0682c6fdce3e81e7335417846bebd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743532"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893275"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Entwerfen von EB-Konfigurationen, um Zeichen von Bytereihenfolge-Marken in generierten Dateien zu unterdrücken
 
 [!include [banner](../includes/banner.md)]
 
-Sie können eine [EB-](general-electronic-reporting.md)[Lösung](er-quick-start1-new-solution.md) entwerfen, um ausgehende Dokumente zu generieren. Um die Dokumente als Text- oder XML-Dateien zu generieren, muss die Lösung eine EB-[Konfiguration](general-electronic-reporting.md#Configuration) enthalten, die eine EB-[Format-](general-electronic-reporting.md#FormatComponentOutbound)-Komponente enthält. Um die [Zeichencodierung](https://docs.microsoft.com/windows/win32/intl/character-sets) anzugeben, die den Zeichensatz in generierten Dateien darstellt, muss das EB-Format das Formatelement **Allgemein\\Datei** enthalten. Um die EB-Formatkomponente zu konfigurieren, öffnen Sie die [Entwurfs](general-electronic-reporting.md#component-versioning)version der erstellten EB-Konfiguration im EB-Format-Designer, und fügen Sie das Element **Allgemein\\Datei** hinzu. Geben Sie im Feld **Codierung** die Codierung ausgehender Dateien an, die zur Laufzeit mithilfe dieser Komponente generiert werden.
+Sie können eine [EB-](general-electronic-reporting.md)[Lösung](er-quick-start1-new-solution.md) entwerfen, um ausgehende Dokumente zu generieren. Um die Dokumente als Text- oder XML-Dateien zu generieren, muss die Lösung eine EB-[Konfiguration](general-electronic-reporting.md#Configuration) enthalten, die eine EB-[Format-](general-electronic-reporting.md#FormatComponentOutbound)-Komponente enthält. Um die [Zeichencodierung](/windows/win32/intl/character-sets) anzugeben, die den Zeichensatz in generierten Dateien darstellt, muss das EB-Format das Formatelement **Allgemein\\Datei** enthalten. Um die EB-Formatkomponente zu konfigurieren, öffnen Sie die [Entwurfs](general-electronic-reporting.md#component-versioning)version der erstellten EB-Konfiguration im EB-Format-Designer, und fügen Sie das Element **Allgemein\\Datei** hinzu. Geben Sie im Feld **Codierung** die Codierung ausgehender Dateien an, die zur Laufzeit mithilfe dieser Komponente generiert werden.
 
 > [!NOTE]
 > Wenn das Format einen falschen Codierungsnamen enthält, wird ein Fehler ausgegeben, wenn Sie Ihre Änderungen an den Einstellungen des Formats speichern.
 
 ![Hinzufügen eines Stammelements auf der Seite „Formatdesigner“](./media/er-suppress-bom-characters-image1.gif)
 
-Wenn Sie **UTF-8**, **UTF-16** oder **UTF-32** als Codierung angeben, wird die Option **Zeichen von Bytereihenfolge-Marken unterdrücken** verfügbar. Setzen Sie diese Option auf **Ja**, um [Zeichen von Bytereihenfolge-Marken](https://docs.microsoft.com/globalization/encoding/byte-order-mark) in ausgehenden Dateien zu unterdrücken, die zur Laufzeit generiert werden, wenn das bearbeitbare ER-Format ausgeführt wird.
+Wenn Sie **UTF-8**, **UTF-16** oder **UTF-32** als Codierung angeben, wird die Option **Zeichen von Bytereihenfolge-Marken unterdrücken** verfügbar. Setzen Sie diese Option auf **Ja**, um [Zeichen von Bytereihenfolge-Marken](/globalization/encoding/byte-order-mark) in ausgehenden Dateien zu unterdrücken, die zur Laufzeit generiert werden, wenn das bearbeitbare ER-Format ausgeführt wird.
 
 > [!NOTE]
 > Wenn Sie das Feld **Codierung** leer lassen, wird die Standardcodierung **UTF-8** verwendet.

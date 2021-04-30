@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 25719de3d86785442e00f7375de525b95bdb094d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753695"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894147"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Benutzerdefinierte Speicherorte für generierte Dokumente angeben
 
@@ -27,7 +27,7 @@ Mit der Anwendungsprogrammierschnittstelle (API) des Framework der elektronische
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Stellen Sie eine Topologie bereit, die einen fortlaufenden Build unterstützt. Weitere Informationen finden Sie unter [Bereitstellen von Topologien, die fortlaufenden Build und Testautomatisierung unterstützen](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation) Sie unter. Sie müssen für eine der folgenden Rollen Zugriff auf diese Topologie haben:
+Stellen Sie eine Topologie bereit, die einen fortlaufenden Build unterstützt. Weitere Informationen finden Sie unter [Bereitstellen von Topologien, die fortlaufenden Build und Testautomatisierung unterstützen](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation) Sie unter. Sie müssen für eine der folgenden Rollen Zugriff auf diese Topologie haben:
 
 - Entwickler für elektronische Berichterstellung
 - Funktionaler Berater für elektronische Berichterstellung
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Ändern Sie die vorhandene Klasse `AssetRollForwardService` und schreiben Sie Code, um ein benutzerdefiniertes Empfängerwerk für die Berichtsausführung einzurichten. Beachten Sie, dass beim Erstellen eines benutzerdefinierten Empfängerwerks der anwendungsgesteuerte Parameter, der einen Zielordner angibt, übergeben wird. Auf diese Weise wird dieser Zielordner zum Speichern generierter Dateien verwendet.
 
     > [!NOTE] 
-    > Stellen Sie sicher, dass der angegebene Ordner (in diesem Beispiel **c:\\0**) im lokalen Dateisystem des Servers vorhanden ist, auf dem der AOS-Dienst ausgeführt wird. Ansonsten wird zur Laufzeit eine [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-Ausnahme ausgelöst.
+    > Stellen Sie sicher, dass der angegebene Ordner (in diesem Beispiel **c:\\0**) im lokalen Dateisystem des Servers vorhanden ist, auf dem der AOS-Dienst ausgeführt wird. Ansonsten wird zur Laufzeit eine [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-Ausnahme ausgelöst.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 12bc3cbccb1577c278489f640299510b3ced17e7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ccc1d52b83f9319af1c6336c1876c795c70028a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811085"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908518"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>Problembehandlung bei Preisen, Ermäßigungen, Vereinbarungen und Rabatten
 
@@ -37,7 +37,7 @@ Wenn Sie das Versanddatum ändern, erhalten Sie möglicherweise die Meldung „M
 
 Die Nachricht wird ausgelöst, wenn eine der Daten oder andere Parameter geändert werden. Der Zweck der Nachricht besteht darin, sicherzustellen, dass Sie über Preisänderungen informiert sind, die aufgrund dieser Änderungen auftreten können.
 
-Die Nachricht ist die Eingabeaufforderung zur Bewertung des Handelsabkommens (TAE). Eine vollständige Beschreibung finden Sie unter [Bewertungsrichtlinien für Handelsabkommen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper).
+Die Nachricht ist die Eingabeaufforderung zur Bewertung des Handelsabkommens (TAE). Eine vollständige Beschreibung finden Sie unter [Bewertungsrichtlinien für Handelsabkommen](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper).
 
 ## <a name="a-purchase-order-receipt-doesnt-include-all-charges"></a>Ein Bestellungsbeleg enthält nicht alle Gebühren.
 

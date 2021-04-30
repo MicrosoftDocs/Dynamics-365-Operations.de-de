@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2db444d4a5e40c1bbfdab9e044aff43031b6e9f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c0eab7b0b1325d18f77ab5b8c9704781beba856
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826689"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897863"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konsolidierte Finanzaufstellungen erstellen
 
@@ -34,7 +34,7 @@ Die einfachste Methode zum Konsolidieren durch Finanzberichterstellung ist die V
 3. Erstellen Sie eine Berichtsbaumstruktur, die einen Berichterstellungsknoten für jedes Unternehmen umfasst, das Sie auf konsolidierten Berichten verwenden.
 
 > [!TIP]
-> Weitere Informationen dazu, wie Zeilendefinitionen, Spaltendefinitionen und Berichtsbaumstrukturen erstellt und verwaltet werden, finden sie unter [Finanzberichtskomponenten](../../dev-itpro/analytics/financial-report-components.md).
+> Weitere Informationen dazu, wie Zeilendefinitionen, Spaltendefinitionen und Berichtsbaumstrukturen erstellt und verwaltet werden, finden sie unter [Finanzberichtskomponenten](../../fin-ops-core/dev-itpro/analytics/financial-report-components.md).
 
 Die folgende Abbildung zeigt, wie Sie eine Berichtsbaumstruktur-Definition in der Finanzberichterstellung verwenden können, um jedes Unternehmen zu identifizieren, das Sie konsolidieren.
 
@@ -42,7 +42,7 @@ Die folgende Abbildung zeigt, wie Sie eine Berichtsbaumstruktur-Definition in de
 
 Wie der konsolidierte Bericht in der folgenden Abbildung zeigt, können Sie jedes Unternehmen getrennt anzeigen, wenn Sie die Berichtsbaumstruktur zusammen mit einer Berichtsdefinition verwenden. Die konsolidierten Beträge werden auf der Zusammenfassungsebene angezeigt.
 
-![Konsolidieren Sie die Summenstufe ](./media/consolidate-amount-summary-level.png "Summenstufe konsolidieren")
+![Konsolidieren Sie die Summenstufe](./media/consolidate-amount-summary-level.png "Summenstufe konsolidieren")
 
 Sie können auch eine mehrstufige Berichtsbaumstruktur erstellen, die so viele Ebenen umfasst, wie Sie benötigen. Die folgende Abbildung zeigt eine mehrstufige Berichtsbaumstruktur-Definition, die Zusammenfassungen nach weltweiter Funktion aufweist.
 
@@ -90,18 +90,18 @@ Ob Sie Konten, Dimensionen oder beides verwenden, mit Finanzberichten können Si
 Ein Unternehmen besitzt ggf. nur einen Anteil eines anderen Unternehmens. Wenn Sie in dieser Situation einen konsolidierten Bericht erstellen, ist es wichtig, dass Sie nur den Anteil berücksichtigen, den das Unternehmen besitzt. Finanzberichterstellung hat mehrere Möglichkeiten, die Minderheitsbeteiligung abhängig von Benutzereinstellungen darzustellen. Eine Möglichkeit ist die Verwendung eines Zusammenfassungsanteils in der Berichtsbaumstruktur-Dimension. Eine weitere Möglichkeit ist das Anzeigen des Minderheitsbesitzes als separate Position im Bericht.
 
 ### <a name="using-the-reporting-tree-definition"></a>Verwenden der Berichtsbaumstruktur-Definition
-Geben Sie in der Berichtsbaumstruktur-Definition den Anteil der Eigentümerschaft in der Spalte **Rollup %** (Spalte H) ein, wie in der folgenden Abbildung dargestellt. Wenn der Bericht erstellt wird, wird dieser Anteil verwendet, um den konsolidierten Betrag zu berechnen. In diesem Beispiel besitzt Contoso nur 80 Prozent von Contoso Deutschland. Sie können entweder **80** oder **.8** in der Spalte **Rollup %** eingeben, und es werden 80 Prozent auf der konsolidierten Ebene ausgeführt.
+Geben Sie in der Berichtsbaumstruktur-Definition den Anteil der Eigentümerschaft in der Spalte **Rollup %** (Spalte H) ein, wie in der folgenden Abbildung dargestellt. Wenn der Bericht erstellt wird, wird dieser Anteil verwendet, um den konsolidierten Betrag zu berechnen. In diesem Beispiel besitzt Contoso nur 80 % von Contoso Deutschland. Sie können entweder **80** oder **.8** in der Spalte **Rollup %** eingeben, und es werden 80 Prozent auf der konsolidierten Ebene ausgeführt.
 
 > [!NOTE]
 > Sie können diesen Anteil der Eigentümerschaft auf jede Berichtseinheit anwenden, nicht nur auf Unternehmensebene. 
 
-![Verwendung der prozentualen Definition des Berichtsbaums ](./media/Using-reporting-tree-definition-percentage.png "Prozentsatz der Berichtsbaumdefinition verwenden")
+![Verwendung der prozentualen Definition des Berichtsbaums](./media/Using-reporting-tree-definition-percentage.png "Prozentsatz der Berichtsbaumdefinition verwenden")
 
-Wenn der Bericht generiert wird, zeigt der Bericht für Contoso Deutschland 100 Prozent des Verkaufsbetrags und 80 Prozent des Betrags wird der konsolidierten Ebene für Verkäufe zugewiesen und zusammengefasst.
+Wenn der Bericht generiert wird, zeigt der Bericht für Contoso Deutschland 100 % des Verkaufsbetrags und 80 % des Betrags wird der konsolidierten Ebene für Verkäufe zugewiesen und zusammengefasst.
 
 Wenn Sie weniger als 1 Prozent eines Unternehmens besitzen, können Sie das Kontrollkästchen **Rollup von weniger als 1% zulassen** auf der Registerkarte **Weitere Optionen** der Seite **Berichtseinstellungen** aktivieren, wie in der folgenden Abbildung dargestellt. In diesem Fall werden die Werte in der Spalte **Rollup %** in der Berichtsbaumstruktur als weniger als 1 Prozent behandelt. Wenn Sie beispielsweise **.8** eingeben, werden 0,8 % auf der konsolidierten Ebene ausgeführt, nicht 80 Prozent. Alternativ erreichen Sie das gleiche Ergebnis, indem Sie das Kontrollkästchen **Rollup von weniger als 1% zulassen** deaktiviert lassen und **.008** in der Spalte **Rollup %** eingeben.
 
-![Einstellungsoptionen für die Berichterstellung ](./media/reporting-setting-options.png "Optionen für die Berichtseinstellung")
+![Einstellungsoptionen für die Berichterstellung](./media/reporting-setting-options.png "Optionen für die Berichtseinstellung")
 
 ### <a name="showing-ownership-as-a-separate-row-on-the-consolidated-report"></a>Eigentümerschaft als separate Zeile im konsolidierten Bericht anzeigen
 Eine weitere Option der Minderheitsbeteiligung ist das Anzeigen von 100 Prozent der Tochtergesellschaft für jede Position im Bericht, aber die nicht-kontrollierende Beteiligung vom Nettogewinn zu subtrahieren.
@@ -168,7 +168,7 @@ Im Hauptkonto müssen die Felder **Wechselkurstyp für Finanzberichterstellung**
 - Im Feld **Wechselkurstyp für Finanzberichterstellung** wählen Sie den Wechselkurstyp aus, der die Währungen und Wechselkurse enthält, die auf das Konto angewendet werden sollen. Diese Tabelle der Währungen und von Wechselkurse wird bei den tatsächlichen Daten in der Finanzberichterstellung angewendet.
 - Wählen Sie im Feld **Währungsumrechnungstyp** die Methode aus, die zur Berechnung des Wechselkurses für die Firma verwendet wird. Diese Währungsmethode wird für Ist- und Budgetdaten in der Finanzberichterstellung verwendet.
 
-![Finanzberichterstattung Hauptkonten ](./media/Financial-reporting-main-accounts.png "Finanzberichterstattung Hauptkonten")
+![Finanzberichterstattung Hauptkonten](./media/Financial-reporting-main-accounts.png "Finanzberichterstattung Hauptkonten")
 
 Für Budget, Budgetsteuerung und Budgetplanungsdaten wird der Wechselkurstyp auf der Seite **Sachkonto** definiert. Diese Tabelle wird verwendet, um die Wechselkurse zu übernehmen, und der Währungsumrechnungstyp, der dem Konto zugewiesen ist, wird verwendet.
 
