@@ -15,69 +15,69 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a38f0016f69792e5beffa5d8224c70d6e5261c4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1b3a0a2608328b233004034f7ab2ccfa833c17e3
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747034"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890909"
 ---
-# <a name="dateformat-er-function"></a><span data-ttu-id="0f279-103">DATEFORMAT EB-Funktion</span><span class="sxs-lookup"><span data-stu-id="0f279-103">DATEFORMAT ER function</span></span>
+# <a name="dateformat-er-function"></a><span data-ttu-id="32898-103">DATEFORMAT EB-Funktion</span><span class="sxs-lookup"><span data-stu-id="32898-103">DATEFORMAT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0f279-104">Die Funktion `DATEFORMAT` gibt den Wert *String* zurück, der einen vorgegebenen Datenwert als Text im angegebenen Format und in einer optional angegebenen [Kultur](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) darstellt.</span><span class="sxs-lookup"><span data-stu-id="0f279-104">The `DATEFORMAT` function returns a *String* value that presents a given date value as text in the specified format and in an optionally specified [culture](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).</span></span> <span data-ttu-id="0f279-105">Informationen zu unterstützten Formaten finden Sie unter [Standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).</span><span class="sxs-lookup"><span data-stu-id="0f279-105">For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).</span></span>
+<span data-ttu-id="32898-104">Die Funktion `DATEFORMAT` gibt den Wert *String* zurück, der einen vorgegebenen Datenwert als Text im angegebenen Format und in einer optional angegebenen [Kultur](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) darstellt.</span><span class="sxs-lookup"><span data-stu-id="32898-104">The `DATEFORMAT` function returns a *String* value that presents a given date value as text in the specified format and in an optionally specified [culture](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).</span></span> <span data-ttu-id="32898-105">Informationen zu unterstützten Formaten finden Sie unter [Standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) und [Benutzerdefiniert](/dotnet/standard/base-types/custom-date-and-time-format-strings).</span><span class="sxs-lookup"><span data-stu-id="32898-105">For information about the supported formats, see [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) and [custom](/dotnet/standard/base-types/custom-date-and-time-format-strings).</span></span>
 
-## <a name="syntax-1"></a><span data-ttu-id="0f279-106">Syntax 1</span><span class="sxs-lookup"><span data-stu-id="0f279-106">Syntax 1</span></span>
+## <a name="syntax-1"></a><span data-ttu-id="32898-106">Syntax 1</span><span class="sxs-lookup"><span data-stu-id="32898-106">Syntax 1</span></span>
 
 ```vb
 DATEFORMAT (date, format)
 ```
 
-## <a name="syntax-2"></a><span data-ttu-id="0f279-107">Syntax 2</span><span class="sxs-lookup"><span data-stu-id="0f279-107">Syntax 2</span></span>
+## <a name="syntax-2"></a><span data-ttu-id="32898-107">Syntax 2</span><span class="sxs-lookup"><span data-stu-id="32898-107">Syntax 2</span></span>
 
 ```vb
 DATEFORMAT (date, format, culture)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="0f279-108">Argumente</span><span class="sxs-lookup"><span data-stu-id="0f279-108">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="32898-108">Argumente</span><span class="sxs-lookup"><span data-stu-id="32898-108">Arguments</span></span>
 
-<span data-ttu-id="0f279-109">`date`: *Date*</span><span class="sxs-lookup"><span data-stu-id="0f279-109">`date`: *Date*</span></span>
+<span data-ttu-id="32898-109">`date`: *Date*</span><span class="sxs-lookup"><span data-stu-id="32898-109">`date`: *Date*</span></span>
 
-<span data-ttu-id="0f279-110">Ein Datums-/Zeitwert, der das zu formatierende Datum darstellt.</span><span class="sxs-lookup"><span data-stu-id="0f279-110">A date value that represents the date to format.</span></span>
+<span data-ttu-id="32898-110">Ein Datums-/Zeitwert, der das zu formatierende Datum darstellt.</span><span class="sxs-lookup"><span data-stu-id="32898-110">A date value that represents the date to format.</span></span>
 
-<span data-ttu-id="0f279-111">`format`: *String*</span><span class="sxs-lookup"><span data-stu-id="0f279-111">`format`: *String*</span></span>
+<span data-ttu-id="32898-111">`format`: *String*</span><span class="sxs-lookup"><span data-stu-id="32898-111">`format`: *String*</span></span>
 
-<span data-ttu-id="0f279-112">Das Format der Ausgabezeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="0f279-112">The format of the output string.</span></span>
+<span data-ttu-id="32898-112">Das Format der Ausgabezeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="32898-112">The format of the output string.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0f279-113">Bei der Formatzeichenfolge wird zwischen Groß- und Kleinschreibung unterschieden, wenn Sie entweder ein Standardformat oder ein benutzerdefiniertes Format verwenden.</span><span class="sxs-lookup"><span data-stu-id="0f279-113">The format string is case-sensitive when you use either a standard format or a custom format.</span></span> <span data-ttu-id="0f279-114">Der [standardmäßige](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) Formatbezeichner „d“ gibt das Datum unter Verwendung des kurzen Datumsmusters zurück, während der Standardformatbezeichner „D“ das Datum unter Verwendung des langen Datumsmusters zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="0f279-114">For example, the [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) "d" format specifier returns the date by using the short date pattern, whereas the standard "D" format specifier returns the date by using the long date pattern.</span></span> <span data-ttu-id="0f279-115">Darüber hinaus gibt der [benutzerdefinierte](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx) Formatbezeichner „M“ den Monat von 1 bis 12 zurück, während der benutzerdefinierte Formatbezeichner „m“ die Minute von 0 bis 59 zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="0f279-115">Additionally, the [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx) "M" format specifier returns the month from 1 through 12, whereas the custom "m" format specifier returns the minute from 0 through 59.</span></span>
+> <span data-ttu-id="32898-113">Bei der Formatzeichenfolge wird zwischen Groß- und Kleinschreibung unterschieden, wenn Sie entweder ein Standardformat oder ein benutzerdefiniertes Format verwenden.</span><span class="sxs-lookup"><span data-stu-id="32898-113">The format string is case-sensitive when you use either a standard format or a custom format.</span></span> <span data-ttu-id="32898-114">Der [standardmäßige](/dotnet/standard/base-types/standard-date-and-time-format-strings) Formatbezeichner „d“ gibt das Datum unter Verwendung des kurzen Datumsmusters zurück, während der Standardformatbezeichner „D“ das Datum unter Verwendung des langen Datumsmusters zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="32898-114">For example, the [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) "d" format specifier returns the date by using the short date pattern, whereas the standard "D" format specifier returns the date by using the long date pattern.</span></span> <span data-ttu-id="32898-115">Darüber hinaus gibt der [benutzerdefinierte](/dotnet/standard/base-types/custom-date-and-time-format-strings) Formatbezeichner „M“ den Monat von 1 bis 12 zurück, während der benutzerdefinierte Formatbezeichner „m“ die Minute von 0 bis 59 zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="32898-115">Additionally, the [custom](/dotnet/standard/base-types/custom-date-and-time-format-strings) "M" format specifier returns the month from 1 through 12, whereas the custom "m" format specifier returns the minute from 0 through 59.</span></span>
 
-<span data-ttu-id="0f279-116">`culture`: *String*</span><span class="sxs-lookup"><span data-stu-id="0f279-116">`culture`: *String*</span></span>
+<span data-ttu-id="32898-116">`culture`: *String*</span><span class="sxs-lookup"><span data-stu-id="32898-116">`culture`: *String*</span></span>
 
-<span data-ttu-id="0f279-117">Die zum Formatieren zu verwendende Kultur.</span><span class="sxs-lookup"><span data-stu-id="0f279-117">The culture to use for formatting.</span></span>
+<span data-ttu-id="32898-117">Die zum Formatieren zu verwendende Kultur.</span><span class="sxs-lookup"><span data-stu-id="32898-117">The culture to use for formatting.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="0f279-118">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="0f279-118">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="32898-118">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="32898-118">Return values</span></span>
 
-<span data-ttu-id="0f279-119">*Zeichenfolge*</span><span class="sxs-lookup"><span data-stu-id="0f279-119">*String*</span></span>
+<span data-ttu-id="32898-119">*Zeichenfolge*</span><span class="sxs-lookup"><span data-stu-id="32898-119">*String*</span></span>
 
-<span data-ttu-id="0f279-120">Der resultierende Zeichenfolgenwert.</span><span class="sxs-lookup"><span data-stu-id="0f279-120">The resulting string value.</span></span>
+<span data-ttu-id="32898-120">Der resultierende Zeichenfolgenwert.</span><span class="sxs-lookup"><span data-stu-id="32898-120">The resulting string value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="0f279-121">Anwendungshinweise</span><span class="sxs-lookup"><span data-stu-id="0f279-121">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="32898-121">Anwendungshinweise</span><span class="sxs-lookup"><span data-stu-id="32898-121">Usage notes</span></span>
 
-<span data-ttu-id="0f279-122">Wenn die Kultur nicht als Argument der aufgerufenen Funktion definiert ist, wird der Wert `culture` durch den aufrufenden Kontext definiert.</span><span class="sxs-lookup"><span data-stu-id="0f279-122">If the culture isn't defined as an argument of the called function, the value of `culture` is defined by the calling context.</span></span> <span data-ttu-id="0f279-123">Wenn die Funktion `DATEFORMAT` beispielsweise mit der Syntax 1 in einem EB-Format (elektronische Berichterstellung) für das Element **DATEI** abgerufen wird, das für die Verwendung der kulturspezifischen Kriterien für Deutschland konfiguriert ist, wird die Konvertierung unter Verwendung der kulturspezifischen Kriterien für Deutschland durchgeführt.</span><span class="sxs-lookup"><span data-stu-id="0f279-123">For example, if the `DATEFORMAT` function is called by using syntax 1 in an Electronic reporting (ER) format for a **FILE** element that is configured to use the German culture, the conversion will be done by using the German culture.</span></span> <span data-ttu-id="0f279-124">Der Standardwert `culture` lautet **EN-US**.</span><span class="sxs-lookup"><span data-stu-id="0f279-124">The default `culture` value is **EN-US**.</span></span>
+<span data-ttu-id="32898-122">Wenn die Kultur nicht als Argument der aufgerufenen Funktion definiert ist, wird der Wert `culture` durch den aufrufenden Kontext definiert.</span><span class="sxs-lookup"><span data-stu-id="32898-122">If the culture isn't defined as an argument of the called function, the value of `culture` is defined by the calling context.</span></span> <span data-ttu-id="32898-123">Wenn die Funktion `DATEFORMAT` beispielsweise mit der Syntax 1 in einem EB-Format (elektronische Berichterstellung) für das Element **DATEI** abgerufen wird, das für die Verwendung der kulturspezifischen Kriterien für Deutschland konfiguriert ist, wird die Konvertierung unter Verwendung der kulturspezifischen Kriterien für Deutschland durchgeführt.</span><span class="sxs-lookup"><span data-stu-id="32898-123">For example, if the `DATEFORMAT` function is called by using syntax 1 in an Electronic reporting (ER) format for a **FILE** element that is configured to use the German culture, the conversion will be done by using the German culture.</span></span> <span data-ttu-id="32898-124">Der Standardwert `culture` lautet **EN-US**.</span><span class="sxs-lookup"><span data-stu-id="32898-124">The default `culture` value is **EN-US**.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="0f279-125">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="0f279-125">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="32898-125">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="32898-125">Example 1</span></span>
 
-<span data-ttu-id="0f279-126">`DATEFORMAT (TODAY (), "dd-MM-yyyy")` gibt den Wert für das aktuelle Datum des Anwendungsservers, 24. Dezember 2015, basierend auf dem angegebenen benutzerdefinierten Format als Zeichenfolge **"24-12-2015"** zurück.</span><span class="sxs-lookup"><span data-stu-id="0f279-126">`DATEFORMAT (TODAY (), "dd-MM-yyyy")` returns the current application server date, December 24, 2015, as the string **"24-12-2015"**, based on the specified custom format.</span></span>
+<span data-ttu-id="32898-126">`DATEFORMAT (TODAY (), "dd-MM-yyyy")` gibt den Wert für das aktuelle Datum des Anwendungsservers, 24. Dezember 2015, basierend auf dem angegebenen benutzerdefinierten Format als Zeichenfolge **"24-12-2015"** zurück.</span><span class="sxs-lookup"><span data-stu-id="32898-126">`DATEFORMAT (TODAY (), "dd-MM-yyyy")` returns the current application server date, December 24, 2015, as the string **"24-12-2015"**, based on the specified custom format.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="0f279-127">Beispiel 2</span><span class="sxs-lookup"><span data-stu-id="0f279-127">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="32898-127">Beispiel 2</span><span class="sxs-lookup"><span data-stu-id="32898-127">Example 2</span></span>
 
-<span data-ttu-id="0f279-128">`DATEFORMAT (SESSIONTODAY (), "d", "DE")` gibt das aktuelle Datum der Anwendungssitzung, den 24. Dezember 2015, als Zeichenfolge **"24-12-2015"** basierend auf den ausgewählten kulturspezifischen Kriterien für Deutschland und dem angegebenen Format zurück.</span><span class="sxs-lookup"><span data-stu-id="0f279-128">`DATEFORMAT (SESSIONTODAY (), "d", "DE")` returns the current application session date, December 24, 2015, as the string **"24-12-2015"**, based on the selected German culture and the specified format.</span></span>
+<span data-ttu-id="32898-128">`DATEFORMAT (SESSIONTODAY (), "d", "DE")` gibt das aktuelle Datum der Anwendungssitzung, den 24. Dezember 2015, als Zeichenfolge **"24-12-2015"** basierend auf den ausgewählten kulturspezifischen Kriterien für Deutschland und dem angegebenen Format zurück.</span><span class="sxs-lookup"><span data-stu-id="32898-128">`DATEFORMAT (SESSIONTODAY (), "d", "DE")` returns the current application session date, December 24, 2015, as the string **"24-12-2015"**, based on the selected German culture and the specified format.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="0f279-129">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="0f279-129">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="32898-129">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="32898-129">Additional resources</span></span>
 
-[<span data-ttu-id="0f279-130">Datums- und Zeitfunktionen</span><span class="sxs-lookup"><span data-stu-id="0f279-130">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="32898-130">Datums- und Zeitfunktionen</span><span class="sxs-lookup"><span data-stu-id="32898-130">Date and time functions</span></span>](er-functions-category-datetime.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
