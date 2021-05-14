@@ -14,78 +14,57 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0718db77399901acc8c88278c5b373b77b3cb16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 023354b0e2973f63411bf81cbeb0344333c49112
+ms.sourcegitcommit: d63e7e0593084a61362a6cad3937b1fd956c384f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811307"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923024"
 ---
-# <a name="financial-reporting-faq"></a><span data-ttu-id="f8192-103">Häufig gestellte Fragen zur Finanzberichterstellung</span><span class="sxs-lookup"><span data-stu-id="f8192-103">Financial reporting FAQ</span></span> 
+# <a name="financial-reporting-faq"></a><span data-ttu-id="d3c0a-103">Häufig gestellte Fragen zur Finanzberichterstellung</span><span class="sxs-lookup"><span data-stu-id="d3c0a-103">Financial reporting FAQ</span></span> 
 
-<span data-ttu-id="f8192-104">In diesem Artikel werden Fragen anderer Benutzer zur Finanzberichterstellung beantwortet.</span><span class="sxs-lookup"><span data-stu-id="f8192-104">This topic lists questions related to financial reporting that other users have had.</span></span> 
+<span data-ttu-id="d3c0a-104">Dieser Artikel gibt Antwort auf häufig gestellte Fragen zur Finanzberichterstattung.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-104">This topic provides answers to frequently asked questions about financial reporting.</span></span> 
 
+## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a><span data-ttu-id="d3c0a-105">Wie beschränke ich den Zugriff auf einen Bericht mithilfe der Baumstruktursicherheit?</span><span class="sxs-lookup"><span data-stu-id="d3c0a-105">How do I restrict access to a report using tree security?</span></span>
 
-## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a><span data-ttu-id="f8192-105">Wie beschränke ich den Zugriff auf einen Bericht mithilfe der Baumstruktursicherheit?</span><span class="sxs-lookup"><span data-stu-id="f8192-105">How do I restrict access to a report using Tree security?</span></span>
+<span data-ttu-id="d3c0a-106">Das folgende Beispiel zeigt, wie der Zugriff auf einen Bericht mithilfe der Baumstruktursicherheit eingeschränkt werden kann.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-106">The following example shows how to restrict access to a report using tree security.</span></span>
 
-<span data-ttu-id="f8192-106">Szenario: Das Demounternehmen USMF hat eine Bilanz erstellt, die nicht alle Benutzer der Finanzberichterstellung in Dynamics 365 einsehen sollen.</span><span class="sxs-lookup"><span data-stu-id="f8192-106">Scenario: The USMF demo company has a Balance sheet report that it doesn’t want all Financial reporting users to be able to view in D365.</span></span> <span data-ttu-id="f8192-107">Lösung: Mithilfe der Baumstruktursicherheit können Sie den Zugriff auf einzelne Berichte so einschränken, damit nur bestimmte Benutzer die Berichte aufrufen können.</span><span class="sxs-lookup"><span data-stu-id="f8192-107">Solution: You can utilize Tree security to restrict access to a single report so that only certain users can access the report.</span></span> 
+<span data-ttu-id="d3c0a-107">Auf den Bilanzbericht des USMF-Demounternehmens sollen nicht alle Benutzer der Finanzberichterstellung zugreifen dürfen.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-107">The USMF demo company has a Balance sheet report that not all Financial reporting users should have access to.</span></span> <span data-ttu-id="d3c0a-108">Mithilfe der Baumstruktursicherheit können Sie den Zugriff auf einzelne Berichte so einschränken, damit nur bestimmte Benutzer die Berichte aufrufen können.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-108">To restrict access, you can use tree security to restrict access to a single report so that only certain users can access the report.</span></span> <span data-ttu-id="d3c0a-109">So schränken Sie den Zugriff ein:</span><span class="sxs-lookup"><span data-stu-id="d3c0a-109">Follow these steps to restrict access:</span></span> 
 
-1.  <span data-ttu-id="f8192-108">Im Berichts-Designer der Finanzberichterstellung anmelden</span><span class="sxs-lookup"><span data-stu-id="f8192-108">Log into Financial Reporter Report Designer</span></span>
+1. <span data-ttu-id="d3c0a-110">Melden Sie sich in Financial Reporter Report Designer an.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-110">Sign in to Financial Reporter Report Designer.</span></span>
+2. <span data-ttu-id="d3c0a-111">Erstellen Sie eine neue Baumdefinition.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-111">Create a new tree definition.</span></span> <span data-ttu-id="d3c0a-112">Wählen Sie **Datei > Neu > Baumdefinition** aus.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-112">Go to **File > New > Tree Definition**.</span></span>
+3. <span data-ttu-id="d3c0a-113">Doppelklicken Sie in der Spalte **Einheitssicherheit** auf **Zusammenfassung**.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-113">Double-click the **Summary** line in the **Unit Security** column.</span></span>
+4. <span data-ttu-id="d3c0a-114">Klicken Sie auf **Benutzer und Gruppen**.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-114">Select **Users and Groups**.</span></span>  
+5. <span data-ttu-id="d3c0a-115">Wählen Sie die Benutzer oder Gruppen aus, die auf diesen Bericht zugreifen dürfen.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-115">Select the users or groups that need access to this report.</span></span> 
+6. <span data-ttu-id="d3c0a-116">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-116">Select **Save**.</span></span>
+7. <span data-ttu-id="d3c0a-117">Ergänzen Sie die neue Baumdefinition in der Berichtsdefinition.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-117">In the report definition, add your new tree definition.</span></span>
+8. <span data-ttu-id="d3c0a-118">Wählen Sie in der Baumdefinition **Einstellung** aus.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-118">In the tree definition, select **Setting**.</span></span> <span data-ttu-id="d3c0a-119">Wählen Sie unter **Auswahl der Berichtseinheit** die Option **Alle Einheiten einschließen** aus.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-119">Under **Reporting unit selection**, select **Include all units**.</span></span>
 
-2.  <span data-ttu-id="f8192-109">Neue Baumdefinition erstellen (Datei | Neu | Baumdefinition) a.</span><span class="sxs-lookup"><span data-stu-id="f8192-109">Create a new Tree Definition (File | New | Tree Definition) a.</span></span>    <span data-ttu-id="f8192-110">Doppelklicken Sie in der Spalte **Einheitssicherheit** auf **Zusammenfassung**.</span><span class="sxs-lookup"><span data-stu-id="f8192-110">Double-click the **Summary** line in the **Unit Security** column.</span></span>
-  <span data-ttu-id="f8192-111">i.</span><span class="sxs-lookup"><span data-stu-id="f8192-111">i.</span></span>    <span data-ttu-id="f8192-112">Klicken Sie auf „Benutzer und Gruppen“.</span><span class="sxs-lookup"><span data-stu-id="f8192-112">Click Users and Groups.</span></span>  
-          <span data-ttu-id="f8192-113">1. Wählen Sie den/die Benutzer oder die Gruppe aus, die auf diesen Bericht zugreifen möchte.</span><span class="sxs-lookup"><span data-stu-id="f8192-113">1.    Select the User(s) or Group that would like to access this report.</span></span> 
-          
-<span data-ttu-id="f8192-114">[![Benutzerbildschirm](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)</span><span class="sxs-lookup"><span data-stu-id="f8192-114">[![user screen](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)</span></span>
+## <a name="how-do-i-identify-which-accounts-do-not-match-my-balances"></a><span data-ttu-id="d3c0a-120">Wie finde ich heraus, welche Konten nicht mit meinen Salden übereinstimmen?</span><span class="sxs-lookup"><span data-stu-id="d3c0a-120">How do I identify which accounts do not match my balances?</span></span>
 
-<span data-ttu-id="f8192-115">[![Sicherheitsbildschirm](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)</span><span class="sxs-lookup"><span data-stu-id="f8192-115">[![security screen](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)</span></span>
+<span data-ttu-id="d3c0a-121">Bei einem Bericht, in dem die Salden nicht übereinstimmen, können Sie die einzelnen Konten und Abweichungen in folgenden Schritten ermitteln.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-121">If you have a report that doesn't have matching balances, here are some steps you can take to identify each of the accounts and variances.</span></span> 
 
-  <span data-ttu-id="f8192-116">b.</span><span class="sxs-lookup"><span data-stu-id="f8192-116">b.</span></span>    <span data-ttu-id="f8192-117">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="f8192-117">Click **Save**.</span></span>
-  
-<span data-ttu-id="f8192-118">[![Schaltfläche „Speichern“](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)</span><span class="sxs-lookup"><span data-stu-id="f8192-118">[![save button](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)</span></span>
+<span data-ttu-id="d3c0a-122">**Financial Reporter Report Designer**</span><span class="sxs-lookup"><span data-stu-id="d3c0a-122">**Financial Reporter Report Designer**</span></span>
+1. <span data-ttu-id="d3c0a-123">Erstellen Sie in Financial Reporter Report Designer eine neue Zeilendefinition.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-123">In Financial Reporter Report Designer, create a new row definition.</span></span> 
+2. <span data-ttu-id="d3c0a-124">Wählen Sie **Bearbeiten > Zeilen aus Dimensionen einfügen** aus.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-124">Select **Edit > Insert Rows from Dimensions**.</span></span>
+3. <span data-ttu-id="d3c0a-125">Wählen Sie **Hauptkonto** aus.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-125">Select **MainAccount**.</span></span>  
+4. <span data-ttu-id="d3c0a-126">Wählen Sie **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-126">Select **OK**.</span></span>
+5. <span data-ttu-id="d3c0a-127">Speichern Sie die Zeilendefinition.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-127">Save the row definition.</span></span>
+6. <span data-ttu-id="d3c0a-128">Neue Spaltendefinition erstellen</span><span class="sxs-lookup"><span data-stu-id="d3c0a-128">Create a new column definition</span></span>
+7. <span data-ttu-id="d3c0a-129">Erstellen Sie eine neue Berichtsdefinition.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-129">Create a new report definition.</span></span>
+8. <span data-ttu-id="d3c0a-130">Wählen Sie **Einstellungen** aus, und deaktivieren Sie diese Option.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-130">Select **Settings** and unmark this option.</span></span>  
+9. <span data-ttu-id="d3c0a-131">Erstellen Sie den Bericht.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-131">Generate the report.</span></span> 
+10. <span data-ttu-id="d3c0a-132">Exportieren Sie den Bericht in Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-132">Export the report to Microsoft Excel.</span></span>
 
-3.  <span data-ttu-id="f8192-119">Neue Baumdefinition in der Berichtsdefinition ergänzen</span><span class="sxs-lookup"><span data-stu-id="f8192-119">In your Report Definition add your new Tree Definition</span></span>
+<span data-ttu-id="d3c0a-133">**Dynamics 365 Finance**</span><span class="sxs-lookup"><span data-stu-id="d3c0a-133">**Dynamics 365 Finance**</span></span> 
+1. <span data-ttu-id="d3c0a-134">Wählen Sie in Dynamics 365 Finance die Optionen **Hauptbuch > Anfragen und Berichte > Zwischenbilanz** aus.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-134">In Dynamics 365 Finance, go to **General Ledger > Inquiries and Reports > Trial Balance**.</span></span>
+2. <span data-ttu-id="d3c0a-135">Legen Sie die folgenden Parameter fest:</span><span class="sxs-lookup"><span data-stu-id="d3c0a-135">Set the following parameters:</span></span>
+   - <span data-ttu-id="d3c0a-136">**Ab Datum**: Geben Sie den Beginn des Geschäftsjahres ein.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-136">**From Date** - Enter the start of the fiscal year.</span></span>
+   - <span data-ttu-id="d3c0a-137">**Bis Datum**: Geben Sie das Datum ein, zu dem der Bericht erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-137">**To Date** - Enter the date you are generating the report for.</span></span>
+   - <span data-ttu-id="d3c0a-138">**Finanzdimension**: Setzen Sie dieses Feld auf **Hauptkonto festgelegt**.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-138">**Financial Dimension** - Set this field to **Main Account set**.</span></span>
+ 3. <span data-ttu-id="d3c0a-139">Wählen Sie **Berechnen** aus.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-139">Select **Calculate**.</span></span>
+ 4. <span data-ttu-id="d3c0a-140">Exportieren Sie den Bericht in Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-140">Export the report to Microsoft Excel.</span></span>
 
-<span data-ttu-id="f8192-120">[![Formular „Baumdefinition“](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)</span><span class="sxs-lookup"><span data-stu-id="f8192-120">[![tree definition form](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)</span></span>
-
-<span data-ttu-id="f8192-121">A.</span><span class="sxs-lookup"><span data-stu-id="f8192-121">A.</span></span>  <span data-ttu-id="f8192-122">Klicken Sie in der Baumdefinition auf „Einstellung“ und danach unter „Auswahl der Berichtseinheit“ auf „Alle Einheiten einschließen“.</span><span class="sxs-lookup"><span data-stu-id="f8192-122">While in the Tree Definition click on Setting and under “Reporting unit selection” check “Include all units”</span></span>
-
-<span data-ttu-id="f8192-123">[![Formular zur Auswahl der Berichtseinheit](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)</span><span class="sxs-lookup"><span data-stu-id="f8192-123">[![reporting unit selection form](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)</span></span>
-
-<span data-ttu-id="f8192-124">**Vorher:** [![Screenshot „Vorher“](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)</span><span class="sxs-lookup"><span data-stu-id="f8192-124">**Before:** [![before screenshot](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)</span></span>
-
-<span data-ttu-id="f8192-125">**Nachher:** [![Screenshot „Nachher“](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)</span><span class="sxs-lookup"><span data-stu-id="f8192-125">**After:** [![after screenshot](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)</span></span>
-
-<span data-ttu-id="f8192-126">Hinweis: Die obige Meldung wird angezeigt, weil der Benutzer nach Übernahme der Einheitssicherheit keinen Zugriff mehr auf den Bericht hat.</span><span class="sxs-lookup"><span data-stu-id="f8192-126">Note: Reason for the above message is my user does not have access to that report after applying Unit Security</span></span>
-
-
-
-## <a name="how-do-i-determine-which-accounts-do-not-matching-my-balances-in-d365"></a><span data-ttu-id="f8192-127">Wie finde ich heraus, welche Konten nicht mit meinen Saldo in D365 übereinstimmen?</span><span class="sxs-lookup"><span data-stu-id="f8192-127">How do I determine which account(s) do not matching my balances in D365?</span></span>
-
-<span data-ttu-id="f8192-128">Wenn ein Bericht in D365 nicht den Erwartungen entspricht, können Sie Konten und Abweichungen wie folgt ermitteln.</span><span class="sxs-lookup"><span data-stu-id="f8192-128">When you have a report that doesn't match what you would expect in D365, here are some steps you could take to identify those accounts and the variances.</span></span> 
-
-### <a name="in-financial-reporter-report-designer"></a><span data-ttu-id="f8192-129">Im Berichts-Designer der Finanzberichterstellung</span><span class="sxs-lookup"><span data-stu-id="f8192-129">In Financial Reporter Report Designer</span></span>
-
-1.  <span data-ttu-id="f8192-130">Neue Zeilendefinition erstellen a.</span><span class="sxs-lookup"><span data-stu-id="f8192-130">Create a new Row Definition a.</span></span>    <span data-ttu-id="f8192-131">Auf „Bearbeiten“ | „Zeilen aus Dimensionen einfügen“ i.</span><span class="sxs-lookup"><span data-stu-id="f8192-131">Click Edit | Insert Rows from Dimensions i.</span></span>  <span data-ttu-id="f8192-132">„MainAccount“ auswählen [![Hauptbildschirm auswählen](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)</span><span class="sxs-lookup"><span data-stu-id="f8192-132">Select MainAccount [![Select Main screen_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)</span></span>
-    
-    <span data-ttu-id="f8192-133">ii.</span><span class="sxs-lookup"><span data-stu-id="f8192-133">ii.</span></span> <span data-ttu-id="f8192-134">Auf „OK“ klicken b.</span><span class="sxs-lookup"><span data-stu-id="f8192-134">Click Ok b.</span></span>    <span data-ttu-id="f8192-135">Zeilendefinition speichern</span><span class="sxs-lookup"><span data-stu-id="f8192-135">Save the Row Definition</span></span>
-
-2.  <span data-ttu-id="f8192-136">Eine neue Spaltendefinition erstellen     [![Eine neue Spaltendefinition erstellen](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)</span><span class="sxs-lookup"><span data-stu-id="f8192-136">Create a new Column Definition     [![Create a new column definition](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)</span></span>
-
-3.  <span data-ttu-id="f8192-137">Eine neue Berichtsdefinition erstellen a.</span><span class="sxs-lookup"><span data-stu-id="f8192-137">Create a new Report Definition a.</span></span>    <span data-ttu-id="f8192-138">Auf „Einstellungen“ klicken und das Kontrollkästchen [![Einstellungsformular](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png) deaktivieren</span><span class="sxs-lookup"><span data-stu-id="f8192-138">Click Settings and uncheck [![Settings form](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)</span></span>
-   
-4.  <span data-ttu-id="f8192-139">Erstellen Sie den Bericht.</span><span class="sxs-lookup"><span data-stu-id="f8192-139">Generate the Report.</span></span> 
-
-5.  <span data-ttu-id="f8192-140">Exportieren Sie den Bericht in Excel.</span><span class="sxs-lookup"><span data-stu-id="f8192-140">Export the Report to Excel.</span></span>
-
-### <a name="in-d365"></a><span data-ttu-id="f8192-141">In D365:</span><span class="sxs-lookup"><span data-stu-id="f8192-141">In D365:</span></span> 
-1.  <span data-ttu-id="f8192-142">Auf „Hauptbuch“ | „Anfragen und Berichte“ | „Zwischenbilanz“ klicken a.</span><span class="sxs-lookup"><span data-stu-id="f8192-142">Click General Ledger | Inquiries and Reports | Trial Balance a.</span></span>    <span data-ttu-id="f8192-143">Parameter i.</span><span class="sxs-lookup"><span data-stu-id="f8192-143">Parameters i.</span></span>  <span data-ttu-id="f8192-144">Ab Datum: Beginn des Geschäftsjahres ii.</span><span class="sxs-lookup"><span data-stu-id="f8192-144">From Date: Start of Fiscal Year ii.</span></span> <span data-ttu-id="f8192-145">Bis Datum: Datum, zu dem der Bericht erstellt wurde iii.</span><span class="sxs-lookup"><span data-stu-id="f8192-145">To Date: Date you generated the report for iii.</span></span>    <span data-ttu-id="f8192-146">Finanzdimensionssatz, „Hauptkonto“ festgelegt [![Hauptkontoformular](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)</span><span class="sxs-lookup"><span data-stu-id="f8192-146">Financial Dimension Set “Main Account set” [![Main Account Form](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)</span></span>
-      
-  <span data-ttu-id="f8192-147">b.</span><span class="sxs-lookup"><span data-stu-id="f8192-147">b.</span></span>    <span data-ttu-id="f8192-148">Auf „Berechnen“ klicken</span><span class="sxs-lookup"><span data-stu-id="f8192-148">Click Calculate</span></span>
-
-2.  <span data-ttu-id="f8192-149">Bericht in Excel exportieren</span><span class="sxs-lookup"><span data-stu-id="f8192-149">Export the report to Excel</span></span>
-
-<span data-ttu-id="f8192-150">Sie sollten nun in der Lage sein, die Daten aus dem Excel-Bericht in der Finanzberichterstellung in den D365-Zwischenbilanzbericht zu kopieren und die Spalten mit der Abschlussbilanz zu vergleichen.</span><span class="sxs-lookup"><span data-stu-id="f8192-150">You should now be able to copy the data from the FR Excel Report and to the D365 Trial Balance report and compare the “Closing Balance” columns.</span></span>
-
+<span data-ttu-id="d3c0a-141">Nun sollten sich die Daten aus dem Excel-Bericht in der Finanzberichterstellung in den Bericht zur Zwischenbilanz kopieren lassen, damit Sie die Spalten zur **Abschlussbilanz** vergleichen können.</span><span class="sxs-lookup"><span data-stu-id="d3c0a-141">You should now be able to copy the data from the Financial Reporter Excel report to the Trial Balance report, so you can compare the **Closing Balance** columns.</span></span>
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
