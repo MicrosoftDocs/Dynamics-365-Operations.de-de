@@ -92,17 +92,17 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Neuerungen oder Änderungen in Commerce
                   items:
-                    - name: Neuerungen oder Änderungen auf der Commerce-Startseite
+                    - name: Neuerungen oder Änderungen auf der Startseite von Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: "Commerce\_10.0.19 (Juli\_2021)"
+                      href: get-started/whats-new-commerce-10-0-19.md
                     - name: "Commerce\_10.0.18 (Mai\_2021)"
                       href: get-started/whats-new-commerce-10-0-18.md
                     - name: "Commerce\_10.0.17 (April\_2021)"
                       href: get-started/whats-new-commerce-10-0-17.md
-                    - name: "Commerce\_10.0.16 (Februar 2021)"
-                      href: get-started/whats-new-commerce-10-0-16.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
-                    - name: Entfernte oder veraltete Funktionen – Startseite
+                    - name: "Entfernte oder veraltete Funktionen\_– Startseite"
                       href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
                     - name: Entfernte oder veraltete Funktionen in Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
@@ -184,7 +184,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: Canvas-Apps aus Power Apps einbetten
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
-                - name: Informationen per Suchen finden
+                - name: Apps von Drittanbietern einbetten
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/commerce/toc.json
+                - name: Informationen durch Suchen finden
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Datum einer Sitzung ändern
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/commerce/toc.json
@@ -280,6 +282,8 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Retail Hardware Station – Konfiguration und Installation
                   href: retail-hardware-station-configuration-installation.md
+                - name: Massenbereitstellung versiegelter Commerce-Self-Service-Komponenten
+                  href: dev-itpro/Enhanced-Mass-Deployment.md
                 - name: Massenbereitstellung veralteter Self-Service-Komponenten
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Commerce-Komponentenereignisse für Diagnose und Problembehandlung
@@ -368,7 +372,7 @@
                       href: pos-operations.md
                     - name: Geräteaktivierung eines benutzerdefinierten Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
-                    - name: Azure Active Directory-Authentifizierung bei POS-Anmeldung aktivieren
+                    - name: Azure Active Directory-Authentifizierung für POS-Anmeldung konfigurieren
                       href: aad-pos-logon.md
                     - name: Produkt- und Debitorensuche im POS
                       href: POS-search-improvements.md
@@ -634,6 +638,8 @@
                   href: tender_based_discounts.md
                 - name: Überblick über Versandrabatte
                   href: retail-shipping-discount.md
+                - name: Geschenke mit Kaufangeboten konfigurieren
+                  href: gift-with-purchase.md
                 - name: Coupons einrichten
                   href: retail-coupons.md
                 - name: Rabatte in POS anzeigen
@@ -760,11 +766,13 @@
                   href: notifications-pos.md
                 - name: Anschlussprogramme verkaufen und Aufträge verarbeiten
                   href: tasks/use-continuity-program.md
+                - name: Benachrichtigungen zu Kunden-Check-Ins an der Verkaufsstelle (POS)
+                  href: enable-customer-check-in.md
             - name: Retouren
               items:
                 - name: Verknüpfte Rückerstattungen
                   href: dev-itpro/linked-refunds.md
-                - name: 'Verkauf und Rückgabe von Produkten, die nicht im Sortiment eines Shops enthalten sind'
+                - name: 'Verkauf und Rückgabe von Produkten, die nicht Teil eines Shopsortiments sind'
                   href: sell-return-outside-assortments.md
                 - name: Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
                   href: orderexchanges.md
@@ -918,13 +926,15 @@
                   href: inventory-settings.md
                 - name: Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Site
                   href: search-engine-optimization-considerations.md
-                - name: 'Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) verwalten'
+                - name: Richtlinie zur Sicherheit von Inhalten (CSP) verwalten
                   href: manage-csp.md
                 - name: Erfassung von Webaktivitätsereignissen deaktivieren
                   href: web-activity-opt-out.md
-            - name: Site-Inhalte verwalten
+                - name: Einstellungen für Maßeinheiten übernehmen
+                  href: unit-of-measure.md
+            - name: Website-Inhalte pflegen
               items:
-                - name: Möglichkeiten zum Hinzufügen von Inhalten
+                - name: Möglichkeiten zur Inhaltsergänzung
                   href: add-manage-content.md
                 - name: Seitenmodellglossar
                   href: page-elements-overview.md
@@ -1092,6 +1102,8 @@
                       href: delivery-options-module.md
                     - name: Abholinformationsmodul
                       href: pickup-info-module.md
+                    - name: Modul für Check-In zur Abholung
+                      href: check-in-pickup-module.md
                     - name: Auftragsdetailmodul
                       href: order-confirmation-module.md
                     - name: Geschenkkartenmodul
@@ -1190,21 +1202,31 @@
               href: sales-performance-products.md
             - name: Debitoren- und Produktrentabilität bewerten
               href: assess-customer-product-profitability.md
-            - name: Leistung des Geschäfts analysieren
+            - name: Shopleistung analysieren
               href: store-performance-information.md
-            - name: 'Einrichten von Analysen zu Aktualität, Häufigkeit und Geldbeträgen (RFM)'
+            - name: 'Analysen zu Aktualität, Häufigkeit und Geldbeträgen (RFM) einrichten'
               href: set-up-rfm-analysis.md
+            - name: "Microsoft Clarity in Dynamics\_365 Commerce einrichten"
+              href: set-up-clarity.md
         - name: Globalisierung
           items:
-            - name: Steuerintegrationsübersicht für Commerce-Kanal
+            - name: Überblick über die Steuerintegration für Commerce-Kanal
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Steuerintegration für Commerce-Kanal einrichten
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: Benutzerdefinierte Zertifikatprofile für Einzelhandelsgeschäfte
               href: localizations/certificate-profiles-for-retail-stores.md
+            - name: Regulatory Configuration Service
+              items:
+                - name: Übersicht über Regulatory Configuration Service
+                  href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service – Globalisierungsfunktionen
+                  href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+                - name: EB-Konfigurationen in Regulatory Configuration Service erstellen und in das globale Repository hochladen
+                  href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
             - name: Österreich
               items:
-                - name: Integrationsbeispiel für Steuererfassungsdienst für Österreich
+                - name: Beispiel für Integration des Steuererfassungsdienstes in Österreich
                   href: localizations/emea-aut-fi-sample.md
             - name: Brasilien
               items:
@@ -2210,6 +2232,8 @@
                       href: e-commerce-extensibility/module-test-file.md
                     - name: props.autogenerated.ts-Moduldatei
                       href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
+                    - name: Modulkonfigurationseinstellungen
+                      href: e-commerce-extensibility/module-config-presets.md
                 - name: Module entwickeln
                   items:
                     - name: Neues Modul erstellen
@@ -2416,7 +2440,19 @@
                   href: dev-itpro/cart-view-handlers.md
                 - name: POS-Kopfzeilenleiste mit benutzerdefinierten Schaltflächen ergänzen
                   href: dev-itpro/pos-header-bar.md
-            - name: "Hardware\_Station-Erweiterbarkeit"
+                - name: SDK für POS-unabhängiges Verpacken
+                  items:
+                    - name: Überblick über die POS-Erweiterung
+                      href: dev-itpro/pos-extension/pos-extension-overview.md
+                    - name: Erste Schritte bei POS-Erweiterungen
+                      href: dev-itpro/pos-extension/pos-extension-getting-started.md
+                    - name: POS-Erweiterungspaketprojekt erstellen
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
+                    - name: Appx-Datei für Modern-POS-Erweiterung erstellen
+                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                    - name: POS-Erweiterung debuggen
+                      href: dev-itpro/pos-extension/debug-pos-extension.md
+            - name: "Erweiterbarkeit von Hardware\_Station"
               items:
                 - name: "Hardware\_Station und Erweiterbarkeit"
                   href: dev-itpro/hardware-station-extensibility.md

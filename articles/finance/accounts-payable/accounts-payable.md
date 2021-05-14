@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e20c26939389a72a8b3249bcb26bb3871768bbee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 62e075fc26ee2e183cd859c5ec2c90faa3bfe3ab
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820858"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897009"
 ---
 # <a name="accounts-payable-home-page"></a>Kreditorenkonten – Startseite
 
@@ -120,7 +120,7 @@ Unter den folgenden Themen finden Sie Informationen zum Verwalten von Ausgleiche
 
 #### <a name="whats-new-and-in-development"></a>Neuerungen und Entwicklungen
 
-Lesen Sie die [Microsoft Dynamics 365-Veröffentlichungspläne](https://go.microsoft.com/fwlink/?linkid=2010158), um zu erfahren, welche neuen Funktionen geplant sind. 
+Lesen Sie die [Microsoft Dynamics 365-Veröffentlichungspläne](/dynamics365/release-plans/), um zu erfahren, welche neuen Funktionen geplant sind. 
 
 #### <a name="blogs"></a>Blogs
 

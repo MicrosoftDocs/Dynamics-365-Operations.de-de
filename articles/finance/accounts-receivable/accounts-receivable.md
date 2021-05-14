@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5064ea3b9435d0fb9e97c00df6b17a304b8a6a0f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 799619e6fc03174c8ad47512ea839ca7b2aab20e
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827721"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898135"
 ---
 # <a name="accounts-receivable-home-page"></a>Startseite für Debitoren
 
@@ -39,61 +39,45 @@ Sie können Debitorenrechnungen auf Basis von Aufträgen oder Lieferscheinen ers
 
 Mithilfe von „Debitoren” lassen sich alle Debitorenrechnungen und eingehenden Zahlungen von Debitoren nachverfolgen. Sie haben die Möglichkeit zum Einrichten der folgenden Elemente: Debitorengruppen, Debitoren, Buchungsprofile, Zinsrechnungen, Mahnschreiben, Provisionen sowie Parameter zu Debitoren, Gebühren, Lieferungen und Zielorte, Wechsel sowie andere Arten von Debitoreninformationen. 
 
-:::row:::
-    :::column:::
-        - [Buchhaltungsverteilungen und Erfassungseinträge in untergeordnetem Sachkonto bei Freitextrechnungen](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
-        - [Debitorenbuchungsprofile](customer-posting-profiles.md)
-        - [Einrichten, Genehmigen und Erfassen von Kreditkarten](credit-card-authorizations.md)
-        - [Erstellen einer Debitorenrechnung](configure-customer-invoices.md)
-        - [Serienrechnungen einrichten und verarbeiten](set-up-process-recurring-invoices.md)
-        - [Eine Freitextrechnung berichtigen](correct-free-text-invoice.md)
-    :::column-end:::
-    :::column:::
-        - [Einrichten von Wechseln](set-up-bills-exchange.md)
-        - [Einrichten von Zinssätzen für einen Zinscode](set-up-interest-rates-interest-code.md)
-        - [Aufheben, Wiedererheben oder Stornieren von Zinsgebühren](waive-reinstate-reverse-interest-fees.md)
-        - [SEPA-Lastschriftüberblick](sepa-direct-debit-overview.md)
-        - [SEPA-Direkteinzugsvollmacht einrichten](sepa-direct-debit-mandate.md)
-        - [Debitoren abschließen](close-accounts-receivable.md)
-    :::column-end:::
-:::row-end:::
-
-
+- [Buchhaltungsverteilungen und Erfassungseinträge in untergeordnetem Sachkonto bei Freitextrechnungen](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+- [Debitorenbuchungsprofile](customer-posting-profiles.md)
+- [Einrichten, Genehmigen und Erfassen von Kreditkarten](credit-card-authorizations.md)
+- [Erstellen einer Debitorenrechnung](configure-customer-invoices.md)
+- [Serienrechnungen einrichten und verarbeiten](set-up-process-recurring-invoices.md)
+- [Eine Freitextrechnung berichtigen](correct-free-text-invoice.md)
+- [Einrichten von Wechseln](set-up-bills-exchange.md)
+- [Einrichten von Zinssätzen für einen Zinscode](set-up-interest-rates-interest-code.md)
+- [Aufheben, Wiedererheben oder Stornieren von Zinsgebühren](waive-reinstate-reverse-interest-fees.md)
+- [SEPA-Lastschriftüberblick](sepa-direct-debit-overview.md)
+- [SEPA-Direkteinzugsvollmacht einrichten](sepa-direct-debit-mandate.md)
+- [Debitoren abschließen](close-accounts-receivable.md)
+    
 ## <a name="set-up-credit-and-collections"></a>Kredit und Inkasso einrichten
 
 Informationen zu Debitoreninkassi werden in einer zentralen Ansicht auf der Seite „Inkassi” verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Kriterien generiert werden, oder über die Seite „Debitoren”.
 
-[Kredit und Inkasso bei Debitoren](collections-credit-accounts-receivable.md)
-
-[Konfigurieren von Debitoren sowie Kredit und Inkasso](accounts-receivables-set-up-overview.md)
-
-[Kredit und Inkasso einrichten](set-up-collections.md)
+- [Kredit und Inkasso bei Debitoren](collections-credit-accounts-receivable.md)
+- [Konfigurieren von Debitoren sowie Kredit und Inkasso](accounts-receivables-set-up-overview.md)
+- [Kredit und Inkasso einrichten](set-up-collections.md)
 
 ## <a name="set-up-payments-and-settlements"></a>Zahlungen und Ausgleiche einrichten
 
 Akzeptieren Sie unterschiedliche Zahlungstypen von Debitoren, wie Wechsel, Bargeld, Schecks, Kreditkarten und elektronische Zahlungen. 
 
-:::row:::
-    :::column:::
-        - [Verwenden einer Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattperioden enthalten](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
-        - [Zentralisierte Zahlungen für Debitoren](centralized-payments-accounts-receivable.md)
-        - [Ausgleichen einer teilweisen Debitorenzahlung und Ausgleichen der abschließenden vollständigen Zahlung vor dem Skontodatum](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [Ausgleich einer teilweisen Debitorenzahlung vor dem Skontodatum mit einer abschließenden Zahlung nach dem Skontodatum](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
-    :::column-end:::
-    :::column:::
-        - [Eine teilweise Debitorenzahlung ausgleichen, bei der Rabatte auf Gutschriften vorhanden sind](settle-partial-customer-payment-discounts-credit-notes.md)
-        - [Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträume hat](settle-partial-customer-payment-multiple-discount-periods.md)
-        - [Ausführen einer Debitorenrückerstattung](reimburse-customers.md)
-        - [Debitorenzahlungen für einen Teilbetrag](customer-payments-partial-amount.md)
-    :::column-end:::
-:::row-end:::
-
-
+- [Verwenden einer Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattperioden enthalten](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+- [Zentralisierte Zahlungen für Debitoren](centralized-payments-accounts-receivable.md)
+- [Ausgleichen einer teilweisen Debitorenzahlung und Ausgleichen der abschließenden vollständigen Zahlung vor dem Skontodatum](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+- [Ausgleich einer teilweisen Debitorenzahlung vor dem Skontodatum mit einer abschließenden Zahlung nach dem Skontodatum](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+- [Eine teilweise Debitorenzahlung ausgleichen, bei der Rabatte auf Gutschriften vorhanden sind](settle-partial-customer-payment-discounts-credit-notes.md)
+- [Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträume hat](settle-partial-customer-payment-multiple-discount-periods.md)
+- [Ausführen einer Debitorenrückerstattung](reimburse-customers.md)
+- [Debitorenzahlungen für einen Teilbetrag](customer-payments-partial-amount.md)
+   
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 #### <a name="whats-new-and-in-development"></a>Neuerungen und Entwicklungen
 
-Lesen Sie den [Microsoft Dynamics 365-Produktplan](https://go.microsoft.com/fwlink/?linkid=2010158), um zu erfahren, welche neuen Funktionen geplant sind. 
+Lesen Sie den [Microsoft Dynamics 365-Produktplan](/dynamics365/release-plans/), um zu erfahren, welche neuen Funktionen geplant sind. 
 
 #### <a name="blogs"></a>Blogs
 

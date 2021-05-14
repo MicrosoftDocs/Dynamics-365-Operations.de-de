@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d82f31212245044f27558c3cdea78fbcf4988afb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e8b92dc975fdae74e134d86169a2b9ceffe63b62
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829955"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909790"
 ---
 # <a name="supply-chain-management-home-page"></a>Startseite zum Supply Chain Management
 
@@ -94,16 +94,16 @@ In den folgenden Aufzeichnungen von Fachkonferenzen werden die Funktionen der Li
 
 ## <a name="blogs"></a>Blogs
 
-Im [Blog des Teams für F&E in der Fertigung von Dynamics AX](https://blogs.msdn.microsoft.com/axmfg/) und im [Blog des Teams für Supply Chain Management in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/) finden Sie viele weitere Themen zu Fertigung und Supply Chain Management. Die meisten dieser Beiträge beziehen sich auf die ältere Version, aber es gelten weiterhin die gleichen Konzepte und die Vorgehensweisen sind in der aktuellen Version vergleichbar.
+Im [Blog des Teams für F&E in der Fertigung von Dynamics AX](/archive/blogs/axmfg/) und im [Blog des Teams für Supply Chain Management in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/) finden Sie viele weitere Themen zu Fertigung und Supply Chain Management. Die meisten dieser Beiträge beziehen sich auf die ältere Version, aber es gelten weiterhin die gleichen Konzepte und die Vorgehensweisen sind in der aktuellen Version vergleichbar.
 
 ## <a name="white-papers"></a>Whitepapers
 
-- [Lean Manufacturing: Verfügbarkeitszusage und Kanban-Feinterminierung](https://docs.microsoft.com/dynamics/s-e/)
+- [Lean Manufacturing: Verfügbarkeitszusage und Kanban-Feinterminierung](/dynamics/s-e/)
 - [Stücklistenberechnung anhand eines Nachkalkulationsbogens](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>E-Learning-Schulungen
 
-Informationen zu Onlinetrainings und Schulungen finden Sie bei [Microsoft Learn unter Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+Informationen zu Onlinetrainings und Schulungen finden Sie bei [Microsoft Learn unter Dynamics 365 Supply Chain Management](/learn/browse/?products=dynamics-scm&resource_type=learning+path).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
