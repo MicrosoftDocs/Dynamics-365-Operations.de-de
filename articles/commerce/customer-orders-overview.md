@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821007"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936729"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundenaufträge in Point of Sale (POS)
 
@@ -42,7 +42,7 @@ Bevor Sie versuchen, die Kundenbestellfunktion in POS zu verwenden, stellen Sie 
 
 ### <a name="configure-modes-of-delivery"></a>Konfigurieren von Lieferarten
 
-Um Kundenbestellungen verwenden zu können, müssen Sie die Lieferarten konfigurieren, die der Ladenkanal verwenden kann. Sie müssen mindestens eine Lieferart definieren, die verwendet werden kann, wenn Bestellpositionen aus einem Laden an einen Kunden versendet werden. Sie müssen zudem mindestens eine Abholart definieren, die verwendet werden kann, wenn Bestellpositionen im Laden abgeholt werden. Lieferarten sind auf Seite **Versandarten** in der Commerce-Zentralverwaltung definiert. Einzelheiten zum Einrichten der Lieferarten für Commerce-Kanäle finden Sie unter [Lieferarten definieren](https://docs.microsoft.com/dynamics365/commerce/configure-call-center-delivery#define-delivery-modes).
+Um Kundenbestellungen verwenden zu können, müssen Sie die Lieferarten konfigurieren, die der Ladenkanal verwenden kann. Sie müssen mindestens eine Lieferart definieren, die verwendet werden kann, wenn Bestellpositionen aus einem Laden an einen Kunden versendet werden. Sie müssen zudem mindestens eine Abholart definieren, die verwendet werden kann, wenn Bestellpositionen im Laden abgeholt werden. Lieferarten sind auf Seite **Versandarten** in der Commerce-Zentralverwaltung definiert. Einzelheiten zum Einrichten der Lieferarten für Commerce-Kanäle finden Sie unter [Lieferarten definieren](./configure-call-center-delivery.md#define-delivery-modes).
 
 ![Seite „Lieferarten“](media/customer-order-modes-of-delivery.png)
 
@@ -78,19 +78,19 @@ Bevor Sie versuchen, Kundenaufträge am POS zu erstellen, müssen Sie die entspr
 - **Annullierungsgebührprozentsatz** – Wenn ein Zuschlag angewendet soll, wenn ein Kundenauftrag zurückgezogen wurde, geben Sie den Betrag dieses Zuschlages an.
 - **Code für Stornogebühr** – Geben Sie den Debitorenbelastungscode an, der verwendet werden soll, wenn eine Stornogebühr auf über den POS stornierte Kundenbestellungen erhoben wird. Der Gebührencode definiert die Logik der Finanzbuchung für die Stornogebühr.
 - **Versandkostencode** – Wenn die Option **Erweiterte automatische Gebühren verwenden** auf gesetzt **Ja** festgelegt ist, hat diese Parametereinstellung keine Auswirkung. Wenn diese Option auf **Nein** festgelegt ist, werden Benutzer aufgefordert, manuell eine Versandkostenpauschale einzugeben, wenn sie Kundenbestellungen am POS erstellen. Verwenden Sie diesen Parameter, um einen Debitorengebührencode zuzuordnen, der auf Bestellungen angewendet wird, wenn Benutzer eine Versandgebühr eingeben. Der Gebührencode definiert die Logik der Finanzbuchung für die Versandgebühr.
-- **Erweiterte automatische Gebühren verwenden** – Legen Sie diese Option auf **Ja** fest, um vom System berechnete automatische Gebühren zu verwenden, wenn Kundenaufträge am POS erstellt werden. Diese automatischen Gebühren können zur Berechnung von Versandkosten oder anderen bestell- oder artikelspezifischen Gebühren verwendet werden. Weitere Informationen zum Einrichten und Verwenden der erweiterten automatischen Gebühren finden Sie unter [Erweiterte automatische Omni-Channel-Gebühren](https://docs.microsoft.com/dynamics365/commerce/omni-auto-charges).
+- **Erweiterte automatische Gebühren verwenden** – Legen Sie diese Option auf **Ja** fest, um vom System berechnete automatische Gebühren zu verwenden, wenn Kundenaufträge am POS erstellt werden. Diese automatischen Gebühren können zur Berechnung von Versandkosten oder anderen bestell- oder artikelspezifischen Gebühren verwendet werden. Weitere Informationen zum Einrichten und Verwenden der erweiterten automatischen Gebühren finden Sie unter [Erweiterte automatische Omni-Channel-Gebühren](./omni-auto-charges.md).
 
 ![Registerkarte „Kundenbestellungen“ auf der Seite „Commerce-Parameter“](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Aktualisieren der Layouts des Transaktionsbildschirms am POS
 
-Stellen Sie sicher, dass der POS [Bildschirmlayout](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) so konfiguriert ist, dass die Erstellung und Verwaltung von Kundenaufträgen unterstützt wird und alle erforderlichen POS-Vorgänge konfiguriert sind. Im Folgenden sind einige der POS-Vorgänge aufgeführt, die empfohlen werden, um die Erstellung und Verwaltung von Kundenaufträgen korrekt zu unterstützen:
+Stellen Sie sicher, dass der POS [Bildschirmlayout](./pos-screen-layouts.md) so konfiguriert ist, dass die Erstellung und Verwaltung von Kundenaufträgen unterstützt wird und alle erforderlichen POS-Vorgänge konfiguriert sind. Im Folgenden sind einige der POS-Vorgänge aufgeführt, die empfohlen werden, um die Erstellung und Verwaltung von Kundenaufträgen korrekt zu unterstützen:
 - **Alle Produkte versenden** – Mit diesem Vorgang wird festgelegt, dass alle Positionen im Einkaufskorb der Transaktion an ein Ziel gesendet werden.
 - **Ausgewählte Produkte versenden** – Mit diesem Vorgang wird festgelegt, dass ausgewählte Positionen im Einkaufskorb der Transaktion an ein Ziel gesendet werden.
 - **Alle Produkte abholen** – Mit diesem Vorgang wird festgelegt, dass alle Positionen im Einkaufskorb der Transaktion von einem ausgewählten Shopstandort abgeholt werden.
 - **Ausgewählte Produkte abholen** – Mit diesem Vorgang wird festgelegt, dass ausgewählte Positionen im Einkaufskorb der Transaktion von einem ausgewählten Shopstandort abgeholt werden.
 - **Alle Produkte für Takeaway** – Mit diesem Vorgang wird festgelegt, dass alle Zeilen im Einkaufskorb der Transaktion mitgenommen werden. Wenn dieser Vorgang im POS verwendet wird, wird die Kundenbestellung in eine Cash-and-Carry-Transaktion umgewandelt.
-- **Ausgewählte Produkte als Takeaway** – Mit diesem Vorgang wird festgelegt, dass ausgewählte Positionen im Einkaufskorb der Transaktion zum Zeitpunkt des Kaufs vom Kunden mitgenommen werden. Diese Operation ist nur in einem [Hybridbestellung](https://docs.microsoft.com/dynamics365/commerce/hybrid-customer-orders)-Szenario nützlich.
+- **Ausgewählte Produkte als Takeaway** – Mit diesem Vorgang wird festgelegt, dass ausgewählte Positionen im Einkaufskorb der Transaktion zum Zeitpunkt des Kaufs vom Kunden mitgenommen werden. Diese Operation ist nur in einem [Hybridbestellung](./hybrid-customer-orders.md)-Szenario nützlich.
 - **Bestellung zurückrufen** – Dieser Vorgang wird zum Suchen und Abrufen von Kundenaufträgen verwendet, damit POS-Benutzer sie nach Bedarf bearbeiten, stornieren oder erfüllungsbezogene Vorgänge ausführen können.
 - **Lieferart ändern** – Mit diesem Vorgang können Sie die Lieferart für Positionen, die bereits für den Versand konfiguriert sind, schnell ändern, ohne dass Benutzer erneut den Flow „Alle Produkte versenden“ oder „Ausgewählte Produkte versenden“ erneut durchlaufen müssen.
 - **Einzahlung überschreiben** – Mit diesem Vorgang können Sie den Einzahlungsbetrag ändern, den der Kunde für die ausgewählte Kundenbestellung bezahlt.
@@ -128,7 +128,7 @@ Stellen Sie sicher, dass der POS [Bildschirmlayout](https://docs.microsoft.com/d
 Einzelhandelsaufträge, die entweder im Online- oder im Shop-Kanal erstellt wurden, können bei Bedarf über den POS abgerufen und bearbeitet werden.
 
 > [!IMPORTANT]
-> Nicht alle Einzelhandelsaufträge können über die POS-Anwendung bearbeitet werden. Aufträge, die in einem Call Center-Kanal erstellt werden, können nicht über POS bearbeitet werden, wenn die Einstellung [Auftragsabschluss aktivieren](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) für den Call Center-Kanal aktiviert ist. Um eine korrekte Zahlungsabwicklung sicherzustellen, müssen Aufträge, die aus einem Callcenter-Kanal stammen und die Funktion „Auftragsabschluss aktivieren“ verwenden, über die Callcenter-Anwendung in der Commerce-Zentrale bearbeitet werden.
+> Nicht alle Einzelhandelsaufträge können über die POS-Anwendung bearbeitet werden. Aufträge, die in einem Call Center-Kanal erstellt werden, können nicht über POS bearbeitet werden, wenn die Einstellung [Auftragsabschluss aktivieren](./set-up-order-processing-options.md#enable-order-completion) für den Call Center-Kanal aktiviert ist. Um eine korrekte Zahlungsabwicklung sicherzustellen, müssen Aufträge, die aus einem Callcenter-Kanal stammen und die Funktion „Auftragsabschluss aktivieren“ verwenden, über die Callcenter-Anwendung in der Commerce-Zentrale bearbeitet werden.
 
 In Version 10.0.17 und höher können Benutzer berechtigte Aufträge über die POS-Anwendung bearbeiten, auch wenn die Bestellung teilweise erfüllt ist. Bestellungen, die vollständig in Rechnung gestellt werden, können jedoch immer noch nicht über den POS bearbeitet werden. Aktivieren Sie die Funktion **Teilweise erfüllte Aufträge in der Verkaufsstelle bearbeiten** im Arbeitsbereich **Funktionsverwaltung**, um diese Funktionalität zu aktivieren. Wenn diese Funktion nicht aktiviert ist oder wenn Sie Version 10.0.16 oder früher verwenden, können Benutzer Debitorenaufträge nur in POS bearbeiten, wenn der Auftrag noch vollständig offen ist. Außerdem können Sie, wenn die Funktion aktiviert ist, einschränken, in welchen Shops teilweise erfüllte Aufträge bearbeitet werden können. Die Option zum Deaktivieren dieser Funktion für bestimmte Shops kann über das **Funktionsprofil** im Inforegister **Allgemein** konfiguriert werden.
 
@@ -153,7 +153,7 @@ In Version 10.0.17 und höher können Benutzer berechtigte Aufträge über die 
 
 ## <a name="finalizing-the-customer-order-shipment-or-pickup-from-pos"></a>Abschluss der Kundenauftragslieferung oder der Abholung am POS
 
-Nachdem ein Auftrag erstellt wurde, werden die Artikel vom Kunden je nach Konfiguration der Bestellung von einem Geschäft abgeholt oder versendet. Weitere Informationen zu diesem Vorgang finden Sie in der [Shopauftragserfüllung](https://docs.microsoft.com/dynamics365/commerce/order-fulfillment-overview)-Dokumentation.
+Nachdem ein Auftrag erstellt wurde, werden die Artikel vom Kunden je nach Konfiguration der Bestellung von einem Geschäft abgeholt oder versendet. Weitere Informationen zu diesem Vorgang finden Sie in der [Shopauftragserfüllung](./order-fulfillment-overview.md)-Dokumentation.
 
 ## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asynchroner Transaktionsfluss für Kundenbestellungen
 

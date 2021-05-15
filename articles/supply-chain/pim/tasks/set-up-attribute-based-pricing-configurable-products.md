@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f54d0ea87d8ce5ffdf5600995004e558ddd86fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c30c520e7265c2676937f5191844f6789c364e6
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833256"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921240"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Eine Attribut-basierte Preiskalkulation für konfigurierbare Produkte einrichten
 
@@ -28,17 +28,18 @@ In diesem Thema wird erläutert, wie Sie eine attributive Preisgestaltung einric
 
 
 ## <a name="create-a-new-price-model"></a>Erstellen eines neuen Preismodellkriteriums
-1. Wählen Sie auf der Startseite **Produktvariantenmodelldefinition**.
-2. Wählen Sie **Produktkonfigurationsmodelle** im Abschnitt **Links**.
-3. Wählen Sie in der Liste die Zeile **High-End-Lautsprecher**, aber nicht den Link für den Namen.
-4. Wählen Sie im Aktionsbereich **Modell**.
-5. Wählen Sie **Preismodelle**.
-6. Wählen Sie **Neu** aus.
-7. Geben Sie im Feld **Preismodellname** einen Wert ein. Verwenden Sie einen Namen, mit dem das Modell einfach zu identifizieren ist.  
-8. Geben Sie im Feld **Beschreibung** einen Wert ein.
-9. Wählen Sie **Speichern**.
+
+1. Wechseln Sie zu **Produktinformationsmanagement \> Produkte \> Produktkonfigurationsmodelle**.
+1. Wählen Sie in der Liste die Zeile **High-End-Lautsprecher**, aber nicht den Link für den Namen.
+1. Wählen Sie im Aktionsbereich **Modell**.
+1. Wählen Sie **Preismodelle**.
+1. Wählen Sie **Neu** aus.
+1. Geben Sie im Feld **Preismodellname** einen Wert ein. Verwenden Sie einen Namen, mit dem das Modell einfach zu identifizieren ist.  
+1. Geben Sie im Feld **Beschreibung** einen Wert ein.
+1. Wählen Sie **Speichern**.
 
 ## <a name="add-price-elements"></a>Hinzufügen von Preiselementen
+
 1. Wählen Sie **Bearbeiten** aus. Jede Komponente in einem Produktmodell kann ein Basispreiselement und eine beliebige Anzahl Preisausdrucksregeln haben. Sie können die Preise in den verschiedenen Währungen hinzufügen.  
 2. Geben Sie im Feld **Basispreisausdruck** einen Wert ein. Geben Sie beispielsweise "100" ein. Ein Basispreisausdruck kann ein numerischer Wert sein, oder er kann aus einer arithmetischen Berechnung mit einem oder mehreren Attribute zusammensetzen.  
 3. Wählen Sie **Hinzufügen** aus.

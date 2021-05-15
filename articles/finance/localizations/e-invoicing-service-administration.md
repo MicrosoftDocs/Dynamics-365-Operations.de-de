@@ -2,7 +2,7 @@
 title: Verwaltungskomponenten der elektronischen Rechnungsstellung
 description: Dieses Thema enthält Informationen zu den Komponenten, die sich auf die Verwaltung der elektronischen Rechnungsstellung beziehen.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2e859875e124796e49000cd5ea94cfb75ecd768a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3ac4a03d75898680b5655421f3024dc6f666464c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840027"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963190"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Verwaltungskomponenten der elektronischen Rechnungsstellung
 
@@ -31,7 +31,7 @@ Dieses Thema enthält Informationen zu den Komponenten, die sich auf die Verwalt
 
 ## <a name="azure"></a>Azure
 
-Verwenden Sie Microsoft Azure, um die Geheimnisse für den Schlüsseltresor und das Speicherkonto zu erstellen. Verwenden Sie dann die Geheimnisse in der Konfiguration der elektronischen Rechnungsstellung.
+Verwenden Sie Microsoft Azure, um die Geheimnisse für den Key Vault und das Speicherkonto zu erstellen. Verwenden Sie dann die Geheimnisse in der Konfiguration der elektronischen Rechnungsstellung.
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
@@ -85,12 +85,14 @@ Service-Umgebungen können über den Status verwaltet werden. Mögliche Optionen
 Der Dienst für die elektronische Rechnungsstellung ist verantwortlich für die Speicherung aller Ihrer Geschäftsdaten in den Azure-Ressourcen, die Ihrem Unternehmen gehören. Um sicherzustellen, dass der Service ordnungsgemäß funktioniert und auf alle Geschäftsdaten, die für die elektronische Rechnungsstellung erforderlich sind und von ihr generiert werden, ordnungsgemäß zugegriffen wird, müssen Sie zwei Azure-Hauptressourcen erstellen:
 
 - ein Azure-Speicherkonto (Blob-Speicher) zum Speichern elektronischer Rechnungen
-- einen Azure-Schlüsseltresor zum Speichern von Zertifikaten und des URI (Uniform Resource Identifier) des Speicherkontos
+- Ein Azure Key Vault, der Zertifikate und den Uniform Resource Identifier (URI) des Speicherkontos speichert
 
-> [!NOTE]
-> Ein dedizierter Schlüsseltresor und ein Speicherkonto für den Kunden müssen speziell für die Verwendung mit der elektronischen Rechnungsstellung zugewiesen werden.
 
-Weitere Informationen finden Sie unter [Ein Azure-Speicherkonto und einen Schlüsseltresor erstellen](e-invoicing-create-azure-storage-account-key-vault.md).
+Ein dediziertes Key Vault- und Kunden-Speicherkonto muss speziell für die Elektronische Rechnungsstellung zugewiesen werden. Weitere Informationen finden Sie unter [Erstellen eines Azure-Speicherkontos und eines Key Vaults](e-invoicing-create-azure-storage-account-key-vault.md).
+
+Um den Zustand Ihres Key Vault zu überwachen und Warnungen zu erhalten, konfigurieren Sie den Azure Monitor für Key Vault. Indem Sie die Protokollierung von Schlüsseltresoren aktivieren, können Sie überwachen, wie, wann und von wem auf Ihre Schlüsseltresore zugegriffen wird. Weitere Informationen finden Sie unter [Überwachung und Alarmierung für Azure Key Vault](/azure/key-vault/general/alert) und [Wie Sie die Key Vault-Protokollierung aktivieren](/azure/key-vault/general/howto-logging?tabs=azure-cli).
+
+Als bewährtes Verfahren sollten Sie die Geheimnisse periodisch austauschen. Weitere Informationen finden Sie unter [Geheimnisvolle Dokumentation](/azure/key-vault/secrets/).
 
 #### <a name="users"></a>Benutzer
 

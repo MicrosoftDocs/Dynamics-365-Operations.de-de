@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: c8f417b3ba427104d6d0e57ac595ab7b453f48fa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b7a1809a3012af86ad9ba39da8721c63b3c4b885
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749564"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923597"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
@@ -134,7 +134,7 @@ Beachten Sie, dass die Zeilenauswahl- und Zeilenstatusspalten im neuen Raster im
 
 **10.0.9/Plattformupdate 33 und später**
 
-Die Funktion **Neue Rastersteuerung** ist in jeder Umgebung direkt in der Funktionsverwaltung verfügbar. Wie andere öffentliche Vorschaufunktionen unterliegt auch die Aktivierung dieser Funktion in der Produktion den [Zusätzlichen Nutzungsbedingungen](https://go.microsoft.com/fwlink/?linkid=2105274).  
+Die Funktion **Neue Rastersteuerung** ist in jeder Umgebung direkt in der Funktionsverwaltung verfügbar. Wie andere öffentliche Vorschaufunktionen unterliegt auch die Aktivierung dieser Funktion in der Produktion den [Zusätzlichen Nutzungsbedingungen](public-preview-terms.md).  
 
 **10.0.8/Plattform-Update 32 und 10.0.7/Plattform-Update 31**
 

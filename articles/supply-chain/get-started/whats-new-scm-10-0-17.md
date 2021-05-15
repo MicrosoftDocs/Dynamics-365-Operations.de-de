@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3faffad2bff18278a54a26f77c1423f2246d086e
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: fd8c306dd6c3aeb7ef41b4eb3f6f8bad040035c2
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907962"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935604"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Neuigkeiten oder Änderungen in Dynamics 365 Supply Chain Management 10.0.17 (April, 2021)
 
@@ -35,7 +35,7 @@ In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365
 
 Die folgenden Funktionen sind in diesem Release enthalten.  Folgen Sie den Links zu [Release-Plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), um die offiziellen Veröffentlichungstermine für jede Funktion anzuzeigen.
 
-Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können. Einige der aufgelisteten Funktionen befinden sich eventuell noch in der Vorschau, auch wenn die meisten jetzt bereits allgemein verfügbar sind.
+Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können.
 
 ### <a name="asset-management"></a>Anlagenverwaltung
 
@@ -71,13 +71,13 @@ Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsve
 
 - [Funktionen zur Anlagenverwaltung in der Produktionsausführungsoberfläche](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Weitere Informationen finden Sie unter [Konfigurieren Sie die Produktionsausführungsoberfläche](../production-control/production-floor-execution-configure.md).
 
-- Vereinheitlichte Nummernkreise für Einzelvorgangskennungen<br> - Weitere Informationen finden sie unter 
+- [Fertigungsausführung mit Skalierungseinheiten in der Cloud](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Weitere Informationen finden Sie unter [Arbeitsauslastungen bei der Fertigungsausführung für Cloud- und Edge-Scale-Einheiten](../cloud-edge/cloud-edge-workload-manufacturing.md).
 
 - [Standardreservierungsprinzip bei Materialien in Produktion überschreiben](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Weitere Informationen finden Sie unter [Überschreiben des Standardreservierungsprinzips für Materialien in der Produktion](../production-control/override-default-reservation-principle.md).
 
 - [Gespeicherte Ansichten für die Produktionssteuerung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Weitere Informationen finden Sie unter [Gespeicherte Standardansichten für Supply Chain Management](saved-views-scm.md).
 
-- [Fertigungsausführung mit Skalierungseinheiten in der Cloud](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Weitere Informationen finden Sie unter [Arbeitsauslastungen bei der Fertigungsausführung für Cloud- und Edge-Scale-Einheiten](../cloud-edge/cloud-edge-workload-manufacturing.md).
+- Vereinheitlichte Nummernkreise für Einzelvorgangskennungen<br> - Weitere Informationen finden Sie unter [Einheitliche Nummernkreise für Auftrags-IDs](../production-control/unified-job-ids.md).
 
 ### <a name="planning"></a>Planung
 

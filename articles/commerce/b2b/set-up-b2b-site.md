@@ -2,7 +2,8 @@
 title: Eine B2B-E-Commerce-Website einrichten
 description: In diesem Thema wird beschrieben, wie Sie eine B2B-E-Commerce-Website (Business-to-Business) in Microsoft Dynamics 365 Commerce einrichten.
 author: josaw1
-ms.date: 01/20/2021
+manager: AnnBe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3c6ea6118c3ba0ab77fea91b2eafa75c89b8d71d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: db33bf941303c6a74f9c6b2d5a782762f7180f1b
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799756"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937505"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Website für B2B-E-Commerce einrichten
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Business-to-Business-E-Commerce-Websites (B2B) bieten einige wichtige Funktionen, die den Workflow für einen B2B-Benutzer optimieren. In diesem Thema wird beschrieben, wie Sie eine B2B-E-Commerce-Website in Microsoft Dynamics 365 Commerce einrichten. Es werden die Modul- und Websiteeinstellungen durchlaufen, die konfiguriert werden müssen, um B2B-spezifische Szenarien zu aktivieren.
 
@@ -283,9 +285,35 @@ Führen Sie die folgenden Schritte aus, um eine Rechnungsdetailseite im Site Bui
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Veröffentlichen Sie die URL der Seite.
 
+## <a name="add-a-quick-add-module-to-the-cart-page"></a>Hinzufügen eines Moduls zum schnellen Hinzufügen zur Warenkorb-Seite
+
+Mit dem Modul „Quick Add“ können Sie schnell mehrere Elemente in den Warenkorb legen, indem Sie Element-IDs verwenden (auch bekannt als Lagerhaltungseinheit \[SKU \]-IDs). Das Modul „Quick Add“ wird zur Warenkorb-Seite einer Website hinzugefügt.
+
+So fügen Sie einer Einkaufswagenseite in Commerce Site Builder ein Modul zum schnellen Hinzufügen hinzu.
+
+1. Gehen Sie zu **Vorlagen** und wählen Sie die Vorlage für die Warenkorbseite Ihrer Website.
+1. Wählen Sie **Bearbeiten** aus.
+1. Auf der **Standardseite** wählen Sie **Haupt**-Slot und wählen dann die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Container** und dann **OK** aus.
+1. Wählen Sie im Slot **Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Schnell hinzufügen** und wählen Sie dann **OK**.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
+1. Gehen Sie zu **Seiten** und wählen Sie die Warenkorb-Seite Ihrer Seite.
+1. Auf der **Standardseite** wählen Sie **Haupt**-Slot und wählen dann die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Container** und dann **OK** aus.
+1. Wählen Sie im Eigenschaftenbereich für das Modul **Behälter** unter **Breite** die Option **Behälter füllen**.
+1. Wählen Sie im Slot **Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Schnell hinzufügen** und wählen Sie dann **OK**.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
+
+> [!NOTE] 
+> Das Quick-Add-Modul ist ab der Commerce-Version 10.0.17 verfügbar. Wenn Sie ein Update von einer älteren Version von Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen finden Sie unter [SDK- und Modulbibliotheks-Updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Informationen zur Modulbibliothek](../starter-kit-overview.md)
+
+[SDK- und Modulbibliotheksupdates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
 
 [Übersicht über die Seite zur Dokumenterstellung](../authoring-home-overview.md)
 
@@ -299,7 +327,7 @@ Führen Sie die folgenden Schritte aus, um eine Rechnungsdetailseite im Site Bui
 
 [Inhaltsblockmodul](../add-hero-module.md)
 
-[Produktsammlung](../product-collection-module-overview.md)
+[Produktsammelmodul](../product-collection-module-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

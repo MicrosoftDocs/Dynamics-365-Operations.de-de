@@ -2,7 +2,7 @@
 title: Konfigurieren elektronischer Berichterstattung (EB), um Daten in Power BI einzubeziehen
 description: In diesem Thema wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung (EB) verwenden können, um die Übertragung von Daten aus Ihrer Instanz zu den Power BI-Diensten zu veranlassen.
 author: NickSelin
-ms.date: 06/20/2017
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8a53c1c3e1850dabc05a47df6d8cc785a13f6f86
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b37bc608b3b987016622d9cd0abc66e420025d26
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750081"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944436"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurieren elektronischer Berichterstattung (EB), um Daten in Power BI einzubeziehen
 
@@ -68,10 +68,10 @@ Um das Beispiel in diesem Thema abzuschließen, müssen Sie den folgenden Zugrif
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>Verwenden eines Datenmodells zur elektronischen Berichterstellung als die Datenquelle
 Sie müssen ein Datenmodell zur elektronischen Berichterstellung als Quelle von Geschäftsdaten haben, die bei Power BI-Berichten verwendet werden. Dieses Datenmodell wir vom Konfigurationsrepository der elektronischen Berichterstellung hochgeladen. Weitere Informationen finden Sie unter [Elektronische Berichterstellungskonfigurationen des Downloads von Lebenszyklusdiensten](download-electronic-reporting-configuration-lcs.md), oder geben Sie den Aufgabenleitfaden **Elektronische Berichterstellung – Importieren einer Konfiguration aus den Lebenszyklusdiensten** wieder. Wählen Sie **Intrastat** als das Datenmodell aus, das vom ausgewählten Konfigurationsrepository der elektronischen Berichterstellung hochgeladen wird. (In diesem Beispiel wird Version 1 des Modells verwendet). Sie können die **Intrastat** ER-Modell-Konfiguration auf der **Konfigurationen** Seite zugreifen.
 
-[![Seite "Konfigurationen"](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+[![Konfiguration des Intrastat ER-Modells auf der Seite Konfigurationen](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Eine Formatkonfiguration für die elektronische Berichterstellung entwerfen
-Sie müssen eine neue Formatkonfiguration für elektronische Berichterstellung erstellen, die das Datenmodell **Intrastat** als Quelle von Geschäftsdaten verwendet. Diese Formatkonfiguration muss Ausgabeergebnisse als elektronische Dokumente im OpenXML-(Excel-Datei)-Format erstellen. Für weitere Informationen geben Sie den Aufgabenleitfaden **Elektronische Berichterstellung – Eine Konfiguration für Berichte im OPENXML-Format erstellen** wieder. Benennen Sie die neue Konfiguration **Aktivitäten importieren / exportieren**, wie in der folgenden Abbildung dargestellt. Verwenden Sie die [Daten der elektronischen Berichterstellung – Details importieren und exportieren](https://go.microsoft.com/fwlink/?linkid=845208) Excel-Datei als Vorlage, wenn Sie das Format der elektronischen Berichterstellung entwerfen. (Um weitere Informationen darüber zu erhalten, wie eine Formatvorlage importiert wird, geben Sie den Aufgabenleitfaden wieder.)
+Sie müssen eine neue Formatkonfiguration für elektronische Berichterstellung erstellen, die das Datenmodell **Intrastat** als Quelle von Geschäftsdaten verwendet. Diese Formatkonfiguration muss Ausgabeergebnisse als elektronische Dokumente im OpenXML-(Excel-Datei)-Format erstellen. Für weitere Informationen geben Sie den Aufgabenleitfaden **Elektronische Berichterstellung – Eine Konfiguration für Berichte im OPENXML-Format erstellen** wieder. Benennen Sie die neue Konfiguration **Aktivitäten importieren / exportieren**, wie in der folgenden Abbildung dargestellt. Verwenden Sie die [Daten der elektronischen Berichterstellung – Details importieren und exportieren](https://download.microsoft.com/download/f/7/5/f755c0fd-025c-4aa9-920b-909abb8302ad/ER-data-import-and-export-details.xlsx) Excel-Datei als Vorlage, wenn Sie das Format der elektronischen Berichterstellung entwerfen. (Um weitere Informationen darüber zu erhalten, wie eine Formatvorlage importiert wird, geben Sie den Aufgabenleitfaden wieder.)
 
 ![[Aktivitätenkonfiguration importieren / exportieren](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
@@ -126,7 +126,7 @@ Klicken Sie auf die Schaltfläche **Einstellungen** für den neuen Zieldatensatz
 1. Wählen Sie auf der Seite **Konfigurationen** (**Organisationsverwaltung** &gt; **Elektronische Berichterstellung** &gt; **Konfigurationen**) in der Konfigurationsstruktur die Konfiguration Aktivitäten **importieren / exportieren** aus, die Sie zuvor erstellt haben.
 2. Ändern Sie den Status von Version 1.1 von **Entwurf** auf **Abgeschlossen**, um dieses Format zur Verwendung bereitzustellen.
 
-    [![Seite "Konfigurationen"](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
+    [![Konfiguration der Import/Export-Aktivitäten auf der Seite Konfigurationen](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
 
 3. Wählen Sie abgeschlossene Version der Konfiguration **Aktivitäten importieren / exportieren** aus, und klicken Sie dann auf **Ausführen**. Beachten Sie, dass das konfigurierte Ziel auf das Ausgabeergebnis angewendet wird, das im Excel-Format generiert wird.
 4. Legen Sie die Option **Stapelverarbeitung** auf **Ja** fest, um diesen Bericht im unbeaufsichtigten Modus auszuführen.
@@ -187,11 +187,11 @@ Einrichten der Integration in Power BI. Weitere Informationen finden Sie unter [
 2. Wählen Sie den Power BI-Bericht **Import- und Exportdetails** aus, den Sie erstellt haben, um diesen Bericht als Aktivitätselement auf der ausgewählten Seite anzuzeigen.
 3. Klicken Sie auf das Aktivitätselement, um die Seite zu öffnen, die den Bericht anzeigt, den Sie in Power BI entworfen haben.
 
-    [![Import- und Exportdetailbericht.xlsx](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+    [![Import- und Export-Detailbericht entworfen in Power BI](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Ziele für elektronische Berichterstellung (EB)](electronic-reporting-destinations.md)
+[Zielorte für elektronische Berichterstellung (ER)](electronic-reporting-destinations.md)
 
 [Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b6bf158361f95b6551b29f195616cf21f908b802
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f0f1e0f3e7145c66b8f2b082b44ad7035c57d947
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800638"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936943"
 ---
 # <a name="set-up-an-online-channel"></a>Einen Onlinechannel einrichten
 
@@ -67,7 +67,7 @@ Wenn Ihre E-Commerce-Site mehrere Sprachen unterstützt, erweitern Sie den Absch
 
 ## <a name="set-up-payment-account"></a>Zahlungskonto einrichten
 
-Aus dem Abschnitt **Zahlungskonto** können Sie einen Drittanbieter für Zahlungen hinzufügen. Mehr Informationen zum Einrichten eines Adyen-Zahlungskonnektors finden Sie unter [Dynamics 365 Adyen-Zahlungskonnektor](../retail/dev-itpro/adyen-connector.md).
+Aus dem Abschnitt **Zahlungskonto** können Sie einen Drittanbieter für Zahlungen hinzufügen. Mehr Informationen zum Einrichten eines Adyen-Zahlungskonnektors finden Sie unter [Dynamics 365 Adyen-Zahlungskonnektor](./dev-itpro/adyen-connector.md).
 
 ## <a name="additional-channel-setup"></a>Einrichtung eines zusätzlichen Kanals
 
@@ -130,7 +130,7 @@ Die folgende Abbildung zeigt ein Beispiel für die Einrichtung einer Erfüllungs
 
 [Einen Callcenterkanal einrichten](channel-setup-callcenter.md)
 
-[Connector für Adyen-Zahlungen für Dynamics 365](../retail/dev-itpro/adyen-connector.md)
+[Connector für Adyen-Zahlungen für Dynamics 365](./dev-itpro/adyen-connector.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

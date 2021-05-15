@@ -2,7 +2,7 @@
 title: Arbeitsfreie Zeit anfordern
 description: Arbeitsfreie Zeit anfordern in Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0159935e98e720d401923230dd7b69e22581df84
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4885c91eb0406acda2cf60ed4e30f494ebaa2a99
+ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790691"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924853"
 ---
 # <a name="request-time-off"></a>Arbeitsfreie Zeit anfordern
 
@@ -45,7 +45,7 @@ Sie können Anträge auf Freizeit stellen, Ihren Urlaub und Ihr Urlaubsguthaben 
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Fügen Sie einer vorhandenen Anforderung einen Anhang hinzu
 
-Wenn Sie eine vorhandene Freizeitanforderung aktualisieren, können Sie einen Anhang hinzufügen. Sie können auch alle zugehörigen Anforderungen für ein bestimmtes Datum anzeigen. 
+Wenn Sie eine vorhandene Freizeitanforderung aktualisieren, können Sie einen Anhang hinzufügen. Sie können auch alle zugehörigen Anforderungen für ein bestimmtes Datum anzeigen.
 
 ## <a name="view-leave-balances"></a>Abwesenheitssalden anzeigen
 
@@ -58,6 +58,20 @@ Wenn Sie eine vorhandene Freizeitanforderung aktualisieren, können Sie einen An
 1. In dem **Mitarbeiter Selbstservice** Arbeitsbereich wählen Sie **Mehr** (...) in der Kachel **Freizeitguthaben**.
 
 2. Um Ihre genehmigten Abwesenheitsanträge anzuzeigen, wählen Sie **Genehmigte Freizeit**. Um Ihre noch nicht genehmigten Abwesenheitsanträge anzuzeigen, wählen Sie **Abwesenheitsanträge**.
+
+## <a name="cancel-time-off-requests"></a>Stornieren von Abwesenheitsanträgen
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+1. Wählen Sie im Arbeitsbereich **Mitarbeiter-Self-Service** in der Kachel **Zeitsalden** die Option **Zeitsalden anzeigen**.
+
+2. Wählen Sie auf dem Formular **Auszeit** eine oder mehrere Auszeitanforderungen aus, die Sie stornieren möchten.
+
+3. Wählen Sie die Schaltfläche **Abbrechen**.
+
+4. Geben Sie im Bereich **Stornierungsdetails** einen Kommentar ein und wählen Sie dann **Senden**.
+
+   ![Stornieren von Urlaubsanträgen](media/hr-leave-and-absence-cancel.png)
 
 ## <a name="see-also"></a>Siehe auch
 

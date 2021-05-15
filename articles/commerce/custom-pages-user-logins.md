@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0318814f421ab862559965bb4b003308d6279812
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799444"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936779"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Angepasste Seiten für die Benutzeranmeldung einrichten
 
@@ -32,7 +32,7 @@ Um benutzerdefinierte Seiten zu verwenden, die in Dynamics 365 Commerce erstellt
 Die benutzerdefinierten Handelsseiten können erstellt werden, indem Anmeldung, Abmeldung, Kontoprofile bearbeiten, Kennwortrücksetzung oder generische ADD-Module verwendet werden. Die Seite URLs, die für die benutzerdefinierten Seiten veröffentlicht werden, sollten dann in Azure AD B2C Richtlinienkonfigurationen im Azureportal referenziert werden.
 
 > [!WARNING] 
-> Azure AD B2C stellt alte (veraltete) Benutzerströme bis zum 1. August 2021 ein. Daher sollten Sie planen, Ihre Benutzerflows auf die neue empfohlene Version zu migrieren. Die neue Version bietet Featureparität und neue Funktionen. Weitere Informationen finden Sie unter [Benutzerflows in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
+> Azure AD B2C stellt alte (veraltete) Benutzerströme bis zum 1. August 2021 ein. Daher sollten Sie planen, Ihre Benutzerflows auf die neue empfohlene Version zu migrieren. Die neue Version bietet Featureparität und neue Funktionen. Weitere Informationen finden Sie unter [Benutzerflows in Azure Active Directory B2C](/azure/active-directory-b2c/user-flow-overview).
 
 >Die Modulbibliothek für die Commerce-Version 10.0.15 oder höher sollte mit den empfohlenen B2C-Benutzerflows verwendet werden. Die Standardbenutzerrichtlinienseiten, die in Azure AD B2C angeboten werden, können ebenfalls verwendet werden und ermöglichen zusätzliche Änderungen des Hintergrundbilds, des Logos und der Hintergrundfarbe im Zusammenhang mit dem Branding des Unternehmens. Obwohl ihre Entwurfsfunktionen eingeschränkter sind, bieten die Standardbenutzerrichtlinienseiten Azure AD B2C-Richtlinienfunktionalität ohne Erstellen und Konfigurieren dedizierter benutzerdefinierter Seiten. 
 

@@ -2,7 +2,7 @@
 title: Entwerfen Sie mehrsprachige Berichte in der elektronischen Berichterstellung
 description: In diesem Thema wird erläutert, wie Sie mithilfe von Electronic Reporting (ER) mehrsprachige Berichte erstellen und erstellen können.
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5a2e8cca441189020e6274248a48c5e9dd80e00
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 50156b8c6b3553b02d092fad9c72e90c1f70ff78
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753551"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951984"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Entwerfen Sie mehrsprachige Berichte in der elektronischen Berichterstellung
 
@@ -158,6 +158,31 @@ EB unterstützt verschiedene Möglichkeiten, eine Sprache für einen generierten
 - **Definiert zu Runtime** – Generieren Sie einen Bericht in einer Sprache, die zur Runtime angegeben wurde. Wenn Sie diesen Wert auswählen, konfigurieren Sie einen EB-Ausdruck im Feld **Sprache**, der den Sprachcode für die Sprache zurückgibt, z. B. die Sprache des entsprechenden Kunden.
 
     ![Geben Sie im EB Vorgangs-Designer eine Runtime definierte Sprache als Sprache für einen generierten Bericht an](./media/er-multilingual-labels-language-context-runtime.png)
+
+## <a name="culture-specific-formatting"></a>Kulturspezifische Formatierung
+
+ER unterstützt verschiedene Möglichkeiten, die Kultur für einen generierten Bericht anzugeben. Daher kann die richtige kulturspezifische Formatierung für Datum, Uhrzeit und numerische Werte verwendet werden. Wenn Sie ein ER-Format entwerfen, können Sie auf der Registerkarte **Format** im Feld **Kultureinstellungen** für jede Formatkomponente vom Typ **Gemeinsam \\Datei**, **Excel \\Datei**, **PDF \\Datei** oder **PDF \\Zusammenführung** einen der folgenden Werte auswählen:
+
+- **Benutzerpräferenz** – Formatieren Sie die Werte entsprechend der bevorzugten Kultur des Benutzers. Diese Kultur wird im Feld **Datum, Uhrzeit und Zahlenformat** auf der Registerkarte **Einstellungen** der Seite **Benutzeroptionen** definiert.
+
+    ![Festlegen der bevorzugten Kultur des Benutzers als Kultur eines generierten Berichts im ER Operation Designer](./media/er-multilingual-labels-culture-context-user-preferred.png)
+
+- **Explizit definiert** – Formatieren Sie die Werte entsprechend der Kultur, die zur Entwurfszeit angegeben ist.
+
+    ![Definieren der Kultur, die zur Entwurfszeit als Kultur eines generierten Reports im ER Operation Designer festgelegt wird](./media/er-multilingual-labels-culture-context-fixed.png)
+
+- **Zur Laufzeit definiert** – Formatieren Sie die Werte entsprechend der Kultur, die zur Laufzeit angegeben wird. Wenn Sie diesen Wert wählen, konfigurieren Sie auf der Registerkarte **Zuordnung** im Feld **Datums-, Zeit- und Zahlenformat** einen ER-Ausdruck, der den Kulturcode für die Kultur liefert, z. B. die Kultur des entsprechenden Debitors.
+
+    ![Definieren der Kultur, die zur Laufzeit als Kultur eines generierten Reports im ER-Vorgangsdesigner festgelegt wird](./media/er-multilingual-labels-culture-context-runtime.png)
+
+> [!NOTE]
+> Eine ER-Komponente, für die Sie eine bestimmte Kultur definieren, kann untergeordnete ER-Komponenten enthalten, die so konfiguriert wurden, dass sie einen Textwert ausfüllen. Standardmäßig wird die Kultur der übergeordneten Komponente verwendet, um die Werte dieser Komponenten zu formatieren. Sie können die folgenden integrierten ER-Funktionen verwenden, um Bindungen für diese Komponenten zu konfigurieren und eine alternative Kultur für die Werteformatierung anzuwenden:
+>
+> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2).
+> - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
+> - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
+>
+> Ab Version 10.0.20 wird das Gebietsschema von Formatkomponenten der Typen **Allgemein \\Datei** und **Excel \\Datei** zur Formatierung von Werten während der [PDF-Konvertierung](electronic-reporting-destinations.md#OutputConversionToPDF) eines generierten Dokuments verwendet.
 
 ## <a name="translation"></a>Übersetzung
 

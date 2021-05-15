@@ -1,8 +1,8 @@
 ---
 title: Budgetierungsüberblick
 description: Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 Finance verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindestkonfiguration sein muss, um Budgets in Finance and Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen.
-author: ShylaThompson
-ms.date: 01/11/2018
+author: panolte
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70428d6603939d8a36c0d3452e6ffdc6e3864865
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 02122d9145552952412c239a7f541e6a727f061e
+ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827457"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5960048"
 ---
 # <a name="budgeting-overview"></a>Budgetierungsüberblick
 
@@ -71,7 +71,7 @@ Bei Funktionen, die in Microsoft Dynamics 365 Finance Version 10.0.7 (Januar 202
 
 Mit der Funktion **Nur Budgetregistereinträge für Menge** können Sie einen Budgetregistereintrag mit ausschließlich mengenbezogenen Beträgen buchen. Sie können beispielsweise einen Budgeteintrag mit einer Menge von 32 und einen Preis von Null buchen, was den Betrag von Null ergibt. Sie können dann diese Menge im Kontext einem Finanzberichts verwenden, um einem Preis pro Menge zu bestimmen. Beachten Sie, dass keine Abfragen oder Berichte als Teil dieser Funktion aktualisiert wurden; mit der Funktion können Sie momentan nur eine Menge von Null buchen.
 
-Die Funktion **Budgetregistereintrags-Standardwerte für den Betragstyp** ermöglicht, dass der Standardbetragstyp innerhalb eines Budgetregistereintrags ein Betragstyp sein kann, der nicht Ausgaben entspricht. Die Budgetregistereintragsposition wird nun standardmäßig auf „Ausgaben“ gesetzt, wenn der Hauptkontotyp „Ausgaben“ ist. Sie wird standardmäßig auf „Umsatzerlös“ gesetzt, wenn der Hauptkontotyp „Ausgaben“ ist, und wird standardmäßig für alle anderen Kontotypen auf „Ausgaben“ gesetzt.
+Die Funktion **Budgetregistereintrags-Standardwerte für den Betragstyp** ermöglicht, dass der Standardbetragstyp innerhalb eines Budgetregistereintrags ein Betragstyp sein kann, der nicht Ausgaben entspricht. Die Eintragszeile des Budgetregisters wird jetzt standardmäßig auf Aufwand gesetzt, wenn die Hauptkontenart Aufwand ist; sie wird standardmäßig auf Umsatz gesetzt, wenn die Hauptkontenart Umsatz ist; und sie wird standardmäßig auf Aufwand für alle anderen Kontenarten gesetzt.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Verwenden der Arbeitsbereiche und Anfragenseiten, um des Budgets im Vergleich zum Istwert zu verfolgen
 Der Budget-Manager kann den aktuellen Status eines Budgets im Arbeitsbereich **Sachkontobudgets und Planungen** überprüfen. Die Registerkarten **Ausgaben über Budget** und **Umsatzerlös unter Budget** geben einen raschen Überblick über die Finanzdimensionskombinationen, wenn Budgetziele nicht erfüllt werden oder sich dem Schwellenwert nähern. Sie können den Budgetschwellenwertprozentsatz und die Finanzdimensionssätze, die in diesen Registerkarten verwendet werden, personalisieren, indem Sie den **Meinen Arbeitsbereich konfigurieren** anklicken. Sie können auf **Einheiten-Manager** klicken, um die Arbeitskräfte anzuzeigen, die für bestimmte Finanzdimensionskombinationen, die auf diesen Registerkarten ausgewählt werden, verantwortlich sind. Wenn Sie beispielsweise sehen, dass das Ausgabenbudget der Betriebsabteilung den Budgetschwellenwert überschreitet, können Sie den Betriebsabteilungsmanager einfach auffinden, um das Problem zu diskutieren. 

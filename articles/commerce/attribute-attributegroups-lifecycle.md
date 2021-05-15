@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 9d1d511fa83655dfcb383bdf2c1da84eb4e0ed3e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797256"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936803"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Attribute und Attributgruppen verwalten
 
@@ -101,7 +101,7 @@ Hierbei gelten die verbleibenden Attributmetadatumenoptionen auf der Seite **Att
 
 Diese Optionen waren ursprünglich für die Verbesserung der Suchfunktion, die ursprünglich für das Onlinetool Schaufenster vorgesehen war. Obwohl Commerce den Online-Storefront nicht umfasst, enthält dieses das eCommerce Publishing Software Development Kit (SDK). Debitoren können dieses SDK verwenden, um Produkte in einen Suchenindex ihrer Wahl zu sperren. Obgleich die Produktdaten importiert werden, sollten Kunden in der Lage sein, noch durchsuchbare Daten, Daten die abgerufen werden können etc. zu unterscheiden.. Auf diese Weise können sie den optimalen Index erstellen, um sicherzustellen, dass sie nur Attribute indexieren, *die ihrer Meinung nach* indiziert werden sollen.
 
-Informationen über den Zweck dieser verbleibenden Optionen finden Sie unter [Überblick über Suchschemas in SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
+Informationen über den Zweck dieser verbleibenden Optionen finden Sie unter [Überblick über Suchschemas in SharePoint Server 2013](/SharePoint/search/search-schema-overview).
 
 ## <a name="filter-settings-for-attributes"></a>Attributfiltereinstellungen
 

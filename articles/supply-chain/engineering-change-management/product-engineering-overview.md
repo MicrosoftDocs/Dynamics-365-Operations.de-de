@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 964db71efc9dc81d60199e37de8668de9d667496
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
+ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842080"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5947519"
 ---
 # <a name="engineering-change-management-overview"></a>Überblick über die Verwaltung für technische Änderungen
 
@@ -48,7 +48,7 @@ Bevor Sie die Verwaltung für technische Änderungen nutzen können, müssen Sie
 
 Schalten Sie zunächst die Funktionen ein, indem Sie diese Schritte ausführen.
 
-1. Navigieren Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+1. Gehen Sie in den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Suchen Sie nach Updates.
 1. Schalten Sie die Funktion ein, die **Verwaltung für technische Änderungen** genannt wird.
 1. Wenn Sie sie verwenden wollen, dann schalten Sie auch die Funktion ein, die **Produktdimension Version** heißt.
@@ -57,9 +57,12 @@ Als nächstes schalten Sie die Konfigurationstasten ein, indem Sie diese Schritt
 
 1. Legen Sie Ihr System in den Wartungsmodus ein, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
 1. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**.
-1. Erweitern Sie den Knoten **Handel**
-1. Aktivieren Sie das Kontrollkästchen **Verwaltung für technische Änderungen**.
-1. Wenn Sie es verwenden möchten, dann aktivieren Sie auch das Kontrollkästchen **Produktdimension - Version**.
+1. Erweitern Sie den Knoten **Handel**.
+1. Aktivieren Sie den Konfigurationsschlüssel für die Hauptfunktion, indem Sie das Kontrollkästchen **Verwaltung für technische Änderungen** aktivieren. (Es ist nicht notwendig, den Knoten zu erweitern, es sei denn, Sie wollen auch eine oder beide seiner Unterfunktionen deaktivieren.)
+1. Wenn Sie auch die Dimension „Version“ verwenden möchten, dann aktivieren Sie das Kontrollkästchen **Produktdimension – Version**. (Dieses Kontrollkästchen befindet sich weiter unten in der Liste, nicht verschachtelt unter dem Knoten **Verwaltung für technische Änderungen**.)
 1. Schalten Sie den Wartungsmodus aus, wie in [Wartungsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) beschrieben.
+
+> [!IMPORTANT]
+> Ab April 2022 werden die Lizenzschlüssel für sowohl **Verwaltung für technische Änderungen** als auch **Produktdimension – Version** standardmäßig für alle neuen Installationen aktiviert sein, aber Sie können sie bei Bedarf immer noch deaktivieren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

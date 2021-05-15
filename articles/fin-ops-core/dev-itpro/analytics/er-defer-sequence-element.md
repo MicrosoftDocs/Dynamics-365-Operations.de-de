@@ -2,7 +2,7 @@
 title: Verzögern der Ausführung von Sequenz-Elementen in ER-Formaten
 description: In diesem Thema wird erläutert, wie die Ausführung eines Sequenz-Elements in einem ER-Format verzögert wird.
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: cdcbc828fadce641cbee2cc6135be819a03275c9
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: a7904924d1c2830287e26eb9fb71bd9a03f210d9
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894099"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944508"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Verzögern der Ausführung von Sequenz-Elementen in ER-Formaten
 
@@ -57,14 +57,14 @@ Wenn Sie das Beispiel im Thema [Verzögern der Ausführung von XML-Elementen in 
 
 | Inhaltsbeschreibung            | Dateiname |
 |--------------------------------|-----------|
-| ER-Datenmodell-Konfiguration    | [Model to learn deferred elements.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Konfiguration der ER-Modellzuordnung | [Mapping to learn deferred elements.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-Datenmodell-Konfiguration    | [Model to learn deferred elements.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| Konfiguration der ER-Modellzuordnung | [Mapping to learn deferred elements.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiellösung herunterladen und speichern.
 
 | Inhaltsbeschreibung     |Dateiname |
 |-------------------------|----------|
-| ER-Formatkonfiguration | [Format to learn deferred sequences.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-Formatkonfiguration | [Format to learn deferred sequences.version.1.1.xml](https://download.microsoft.com/download/0/f/5/0f55c341-8285-4d92-a46d-475d9a010927/Formattolearndeferredsequences.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>ER-Beispielkonfigurationsdateien importieren
 
@@ -169,7 +169,7 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
 1. Wählen Sie auf der Seite **Formatdesigner** die Option **Ausführen** aus.
 2. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Datei](./media/ER-DeferredSequence-Run.png)
+    ![Heruntergeladene Beispiel-Berichtsdatei](./media/ER-DeferredSequence-Run.png)
 
 Beachten Sie, dass die Zusammenfassungszeile 22 die Summe der Steuerwerte für die verarbeiteten Transaktionen anzeigt. Weil das Format für die Verwendung der **model.Data.Summary.Total**-Bindung zum Zurückgeben der Summe konfiguriert ist, wird die Summe berechnet, indem die **TotalSum**-Aggregation der Datenquelle **Gruppiert** vom Typ *GroupBy*, die die Modellzuordnung verwendet, aufgerufen wird. Um diese Aggregation zu berechnen, durchläuft die Modellzuordnung alle Transaktionen, die in der Datenquelle **Gefiltert** ausgewählt wurden. Durch Vergleichen der Ausführungszeiten der Zeilen 21 und 22 können Sie feststellen, dass die Berechnung der Summe 10 Millisekunden (ms) gedauert hat. Durch Vergleichen der Ausführungszeiten der Zeilen 2 und 21 können Sie feststellen, dass das Generieren aller Transaktionszeilen 7 Millisekunden (ms) gedauert hat. Daher waren insgesamt 17 ms erforderlich.
 
@@ -202,7 +202,7 @@ Wenn das Transaktionsvolumen viel größer als das Volumen im aktuellen Beispiel
 12. Wählen Sie **Speichern** und dann **Ausführen** aus.
 13. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Datei](./media/ER-DeferredSequence-Run1.png)
+    ![Heruntergeladene Datei – Summierte Steuerwerte](./media/ER-DeferredSequence-Run1.png)
 
     Zeile 21 enthält die laufende Summe der Steuerwerte, die für alle verarbeiteten Transaktionen unter Verwendung der generierten Ausgabe als Datenquelle berechnet werden. Diese Datenquelle beginnt am Anfang des Berichts und geht bis zur letzten Steuerbuchung. Zeile 22 enthält die Summe der Steuerwerte für alle verarbeiteten Transaktionen, die in der Modellzuordnung unter Verwendung der Datenquelle des Typs *GroupBy* berechnet werden. Beachten Sie, dass diese Werte gleich sind. Daher kann die ausgabenbasierte Summierung anstelle von **GroupBy** verwendet werden. Durch Vergleichen der Ausführungszeiten der Zeilen 2 und 21 können Sie feststellen, dass das Generieren aller Transaktionszeilen und das Summieren 9 Millisekunden (ms) gedauert hat. Daher ist das geänderte Format hinsichtlich der Erzeugung von Detailzeilen und der Summierung von Steuerwerten ungefähr zweimal schneller als das ursprüngliche Format.
 
@@ -211,7 +211,7 @@ Wenn das Transaktionsvolumen viel größer als das Volumen im aktuellen Beispiel
 16. Wählen Sie **Speichern** und dann **Ausführen** aus.
 17. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Datei](./media/ER-DeferredSequence-Run2.png)
+    ![Heruntergeladene Datei mit bearbeiteter Formel](./media/ER-DeferredSequence-Run2.png)
 
     Beachten Sie, dass die laufende Summe der Steuerwerte in der letzten Transaktionsdetailzeile jetzt der Summe in der Zusammenfassungszeile gleicht.
 
@@ -224,7 +224,7 @@ Wenn Sie beispielsweise die Summe der Steuerwerte in der Kopfzeile Ihres Bericht
 3. Wählen Sie **Speichern** und dann **Ausführen** aus.
 4. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Datei](./media/ER-DeferredSequence-Run3.png)
+    ![Heruntergeladene Datei für die Summierung im Berichtskopf](./media/ER-DeferredSequence-Run3.png)
 
     Beachten Sie, dass die Summe der Steuerwerte in der Zusammenfassungszeile 2 jetzt gleich 0 (Null) ist, da diese Summe jetzt auf der Grundlage der generierten Ausgabe berechnet wird. Wenn Zeile 2 generiert wird, enthält die generierte Ausgabe noch keine Zeilen mit Transaktionsdetails. Sie können dieses Format so konfigurieren, dass die Ausführung des Sequenz-Elements **Bericht\\Zeilen\\Zusammenfassung** verzögert wird, bis das Element **Bericht\\Zeilen\\Datensatz** für alle Steuerbuchungen ausgeführt wurde.
 
@@ -238,7 +238,7 @@ Wenn Sie beispielsweise die Summe der Steuerwerte in der Kopfzeile Ihres Bericht
 3. Wählen Sie **Speichern** und dann **Ausführen** aus.
 4. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Datei](./media/ER-DeferredSequence-Run4.png)
+    ![Heruntergeladene Datei – aufgeschobene Ausführung](./media/ER-DeferredSequence-Run4.png)
 
     Das Sequenz-Element **Bericht\\Zeilen\\Zusammenfassung** wird jetzt nur dann ausgeführt, wenn alle Elemente unter dem übergeordneten Element, **Bericht\\Zeilen**, bereits ausgeführt wurden. Deshalb wird es nach Ausführung des Sequenz-Elements **Bericht\\Zeilen\\Datensatz** für alle Steuerbuchungen der Datenquelle **model.Data.List** ausgeführt. Die Ausführungszeiten der Zeilen 1, 2 und 3 sowie der letzten Zeile 22 belegen diese Tatsache.
 

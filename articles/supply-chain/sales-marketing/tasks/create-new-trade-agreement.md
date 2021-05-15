@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad1221bb57aea4c93cb60fc29caec2d3b41798f9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 592b3d0265a3be92a5a823c6aabdd40b4e3f0a27
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836397"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919940"
 ---
 # <a name="create-a-new-trade-agreement"></a>Eine neue Handelsvereinbarung erstellen
 
@@ -26,8 +26,8 @@ ms.locfileid: "5836397"
 
 Dieses Verfahren zeigt Ihnen an, wie eine Handelsvereinbarung erstellt, in der Sie einen Verkaufspreis der neuen Produktdimensionsgruppen erfassen, den Sie mit einem bestimmten Debitor aktualisiert haben. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen. Wenn Sie eigene Daten verwenden, bevor Sie dieses Handbuch starten, müssen Sie prüfen, ob ein Handelsvereinbarungserfassungsname vorhanden ist, in die standardmäßige Beziehung festgelegt ist „Preis- (Verkauf )“.
 
-
 ## <a name="create-and-post-a-new-trade-agreement-journal"></a>Erstellen und buchen einer neuen Handelsvereinbarungs-Erfassung.
+
 1. Wechseln Sie zu **Navigationsbereich > Module > Verrieb und Marketing > Preise und Rabatte > Handelsvereinbarungserfassungen**.
 2. Klicken Sie auf **Neu**.
 3. Klicken Sie im Feld **Name** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
@@ -58,22 +58,26 @@ Dieses Verfahren zeigt Ihnen an, wie eine Handelsvereinbarung erstellt, in der S
 20. Klicken Sie auf **OK**.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Handelsvereinbarungen für ein Produkt anzeigen
+
 1. Wechseln Sie zu **Navigationsbereich > Module > Produktinformationsverwaltung > Produkte > Freigegebene Produkte**.
 2. Wählen Sie in der Liste suchen Sie und wählen Sie das Produkt aus, dessen Preis Sie derzeit aktualisiert haben.
 3. Klicken Sie im **Aktivitätsbereich** auf **Verkaufen**.
 4. Klicken Sie auf **Handelsvereinbarungen** anzeigen.
     
-    Prüfen Sie die Details der Preishandelsvereinbarung, soeben erstellt haben.    
+    Prüfen Sie die Details der Preishandelsvereinbarung, soeben erstellt haben.
 
 5. Schließen Sie die Seite.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 ### <a name="whitepaper"></a>Whitepaper
+
 Laden Sie für weitere Informationen das folgende Whitepaper herunter (geschrieben zur Unterstützung von AX2012, gilt jedoch weiterhin für Dynamics 365 Supply Chain Management)
-- [Handelsvereinbarungen](https://mbs.microsoft.com/files/public/CS/AX2012R3/TradeagreementsinAX.pdf)
+
+- [Handelsvereinbarungen](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
 
 ### <a name="community-blogs"></a>Communityblogs
+
 - [Verkaufspreise in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
 
 

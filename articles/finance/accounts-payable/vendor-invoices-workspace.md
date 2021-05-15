@@ -1,5 +1,5 @@
 ---
-title: Arbeitsbereich für die Eingabe der Kreditorenrechnung
+title: Arbeitsbereich für die Kreditor-Rechnungsautomatisierung
 description: In diesem Thema wird erläutert, wie Sie den Arbeitsbereich einrichten, der sich auf Lieferantenrechnungen bezieht und die Informationen anzeigt, die über Microsoft Power BI verfügbar sind.
 author: abruer
 ms.date: 09/28/2020
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bac57056af6d85bb30600e13628279801508741d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7216c2f6e593e3ca11d78903f318d5f217b19674
+ms.sourcegitcommit: 375dd11a9e4076394a33e99f11371ab53e80c337
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837254"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954134"
 ---
-# <a name="vendor-invoice-entry-workspace"></a>Arbeitsbereich für die Eingabe der Kreditorenrechnungen
+# <a name="vendor-invoice-automation-workspace"></a>Arbeitsbereich für die Kreditor-Rechnungsautomatisierung
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -30,11 +30,11 @@ In diesem Thema wird erläutert, wie Sie den Arbeitsbereich einrichten, der sich
 
 ## <a name="overview"></a>Übersicht
 
-Im Arbeitsbereich für **Kreditorenzahlungs-Eingabe** werden Informationen angezeigt, die zum Verarbeiten von Kreditorenzahlungen dienen. Der Arbeitsbereich umfasst eine Ansicht **Meine Arbeit** und eine Seite **Analyse - Alle Unternehmen**. Die Ansicht **Meine Arbeit** zeigt zusammenfassende Kacheln, Lieferantentransaktionsrater und zugehörige Kreditoreninformationen. Die Seite **Analyse - Alle Unternehmen** verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Lieferantenrechnungen anzuzeigen.
+Der Arbeitsbereich **Automatisierung von Lieferantenrechnungen** zeigt Informationen an, die sich auf die Verarbeitung von Lieferantenrechnungen beziehen. Der Arbeitsbereich umfasst eine Ansicht **Meine Arbeit** und eine Seite **Analyse - Alle Unternehmen**. Die Ansicht **Meine Arbeit** zeigt zusammenfassende Kacheln, Lieferantentransaktionsrater und zugehörige Kreditoreninformationen. Die Seite **Analyse - Alle Unternehmen** verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Lieferantenrechnungen anzuzeigen.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Richten Sie den anzuzeigenden Arbeitsbereich ein, um Power BI Inhalt anzuzeigen
 
-Sie müssen diese Einrichtung abschließen, bevor Daten in Power BI Visualisierungen im Arbeitsbereich **Lieferantenrechnungserfassung** angezeigt werden können.
+Sie müssen dieses Einrichten abschließen, bevor Daten in Power BI-Visualisierungen im Arbeitsbereich **Lieferantenrechnungsautomatisierung** angezeigt werden können.
 
 1. In dem **Funktionsverwaltung** Arbeitsbereich filtern Sie die Liste, um die Funktion **Automatisierung von Lieferantenrechnungen** zu suchen.
 3. Wählen Sie **Jetzt aktivieren**.
@@ -54,7 +54,7 @@ Um die im Arbeitsbereich angezeigten Informationen anzuzeigen, müssen Sie über
 
 ### <a name="company-selection"></a>Unternehmensauswahl
 
-Wenn die Funktion **Lieferantenrechnungen automatisieren** aktiviert ist, wird ein Feld **Unternehmen** oben im Arbeitsbereich angezeigt. Die Auswahl im Feld **Unternehmen** wirkt sich auf alle im Arbeitsbereich angezeigten Informationen aus. Standardmäßig werden in der Ansicht Informationen zu dem Unternehmen angezeigt, bei dem Sie sich angemeldet haben. Durch Auswahl eines anderen Unternehmens im Feld **Unternehmen** können Sie Informationen für dieses Unternehmen im Arbeitsbereich anzeigen. Sie können dann eine Kachel im Arbeitsbereich auswählen, um zur zugehörigen Seite in der ausgewählten Firma zu gelangen.
+Wenn die Funktion **Automatisierung von Kreditor-Rechnungen** eingeschaltet ist, erscheint oben im Arbeitsbereich ein Feld **Firma**. Die Auswahl im Feld **Unternehmen** wirkt sich auf alle im Arbeitsbereich angezeigten Informationen aus. Standardmäßig werden in der Ansicht Informationen zu dem Unternehmen angezeigt, bei dem Sie sich angemeldet haben. Durch Auswahl eines anderen Unternehmens im Feld **Unternehmen** können Sie Informationen für dieses Unternehmen im Arbeitsbereich anzeigen. Sie können dann eine Kachel im Arbeitsbereich auswählen, um zur zugehörigen Seite in der ausgewählten Firma zu gelangen.
 
 ### <a name="summary-tiles"></a>Zusammenfassungskacheln
 

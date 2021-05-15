@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f1d0361da03f2fc4aaaa749d632192265483db2d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c4d762a6750a295b91a1d146b7bf0ae750e2e9bd
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752818"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923188"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Neuheiten und Änderungen in Dynamics AX 7.0.1 (Mai 2016)
 
@@ -76,7 +76,7 @@ In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics AX 
 </tr>
 <tr>
 <td>Unterstützung für Stücklisten, die Artikel mit unterschiedlichen Produktdimensionen desselben Artikels umfassen.</td>
-<td>Wenn Sie eine oder mehrere der Produktdimensionen in der Produktion verwenden, treten Situationen auf, in denen Sie einen Artikel auf Basis einer Variante des gleichen Artikels produzieren möchten. Weitere Informationen finden Sie <a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">in diesem Blog</a>.</td>
+<td>Wenn Sie eine oder mehrere der Produktdimensionen in der Produktion verwenden, treten Situationen auf, in denen Sie einen Artikel auf Basis einer Variante des gleichen Artikels produzieren möchten. Weitere Informationen finden Sie <a href="/archive/blogs/axmfg/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item">in diesem Blog</a>.</td>
 </tr>
 <tr>
 <td>Fertigungsaufträge mit Zirkularitätsstrukturen auf der ersten Ebene ihrer Stücklisten sind von der Kalkulation der Materialressourcenplanung auf Stücklistenebene ausgeschlossen.</td>

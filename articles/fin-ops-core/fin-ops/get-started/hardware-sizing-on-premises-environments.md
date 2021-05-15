@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 55dc237629b7b595b03d48adabc6b31492171e25
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c5e6e96ea1ce821233d7104bb9a7af8e793f4264
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748744"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923479"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Anforderungen an die Hardwarekalkulation für lokale Umgebungen
 
@@ -134,7 +134,7 @@ Für die allgemeine Verfügbarkeit kann nur ein SSRS-Knoten bereitgestellt werde
 
 ## <a name="environment-orchestrator"></a>Environment Orchestrator
 
-Der Orchestrator-Service verwaltet Ihre Bereitstellung und die entsprechende Kommunikation mit LCS. Dieser Service wird als primärer Service Fabric-Service bereitgestellt und benötigt mindestens drei VMs. Dieser Services befindet sich am selben Standort wie die Service Fabric-Orchestrierungsservices. Dieser sollte auf die Spitzenlast des Clusters ausgelegt werden. Weitere Informationen finden Sie unter [Planen und Vorbereiten Ihrer eigenständigen Fabric-Cluster-Bereitstellung](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Der Orchestrator-Service verwaltet Ihre Bereitstellung und die entsprechende Kommunikation mit LCS. Dieser Service wird als primärer Service Fabric-Service bereitgestellt und benötigt mindestens drei VMs. Dieser Services befindet sich am selben Standort wie die Service Fabric-Orchestrierungsservices. Dieser sollte auf die Spitzenlast des Clusters ausgelegt werden. Weitere Informationen finden Sie unter [Planen und Vorbereiten Ihrer eigenständigen Fabric-Cluster-Bereitstellung](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisierung und Überabonnement
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: e0db5c35e58ab7a7cbf31642072d25ee5d8ba868
-ms.sourcegitcommit: 04817103dc8e87a679d371575927284b8ce080b6
+ms.openlocfilehash: 93d025759f86ffeb0ee1f1e6e6e2aeb3ab341b75
+ms.sourcegitcommit: 4ba25601eba295bd9057f7fb5e85f1f6764f5a27
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5898286"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5965309"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -104,7 +104,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10012-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.12
 
-### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Polnische SSRS-Berichte: Ausgangssteuer, Vorsteuer, EU-Zusammenfassung des Umsatzsteuerregisters – Funktionsreferenz PL-00014
+### <a name="not-deprecated-polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Nicht außer Betrieb genommen: Polnische SSRS-Berichte: Umsatzsteuerkartei, Kaufsteuerkartei, EU-Summensteuerkartei – Funktion Referenz PL-00014
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -112,7 +112,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Ersetzt durch eine andere Funktion?**   | Ja (Excel-Format für Standard-Auditdatei mit Umsatzsteuererklärung – JPK_VDEK) |
 | **Betroffene Produktbereiche**         | Bewerbung |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Bis zum 1. Juli 2021 planen wir, die SSRS-Berichte nicht mehr zu unterstützen: **Ausgangssteuerregister, Kaufsteuerregister, EU-Zusammenfassung des Umsatzsteuerregisters – Funktionsreferenz PL-00014**. Stattdessen wird ein Beispiel für ein Excel-Format für eine Standard-Auditdatei mit Umsatzsteuererklärung (JPK_VDEK) eingeführt. |
+| **Status**                         | Nicht außer Betrieb genommen: Ab dem 27. April 2021 ist geplant, die SSRS-Berichte weiterhin zu unterstützen: **Verkaufs-Mehrwertsteuerregister, Kauf-Mehrwertsteuerregister, EU-Summen-Mehrwertsteuerregister – Funktionsreferenz PL-00014**. Ein Beispiel für ein Excel-Format für eine Standard-Prüfungsdatei mit Mehrwertsteuererklärung (JPK_VDEK) wurde ebenfalls eingeführt. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.11
 

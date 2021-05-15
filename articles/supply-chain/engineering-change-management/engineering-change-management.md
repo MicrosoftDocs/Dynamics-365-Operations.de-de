@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: fb71d941a5cd58701f723e56a07c6b6cca6689bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
+ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830027"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954644"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Änderungen an Verwaltung für technische Änderung verwalten
 
@@ -139,13 +139,14 @@ Während Sie einen Änderungsantrag prüfen, wählen Sie im Aktivitätsbereich a
 
 Wie in [Ingenieurunternehmen und Dateneigentumsregeln](engineering-org-data-ownership-rules.md) beschrieben, variieren die Produktdaten, die Sie bearbeiten können, je nach Art der juristischen Entität, in der Sie arbeiten (ein Ingenieurunternehmen oder ein operatives Unternehmen). Die Dateneigentumsregeln werden auch auf Änderungsaufträge angewendet. Abhängig von der juristischen Entität, in der Sie einen Änderungsauftrag erstellen, können daher unterschiedliche Arten von Änderungen vorgenommen werden. Im Folgenden finden Sie einige Beispiele hierfür:
 
-- Bei Änderungsaufträgen in einer **Ingenieurgesellschaft** können Sie grundlegende Änderungen an den Engineering-Daten vornehmen. Sie können z. B. neue Versionen eines Produkts erstellen, die Struktur eines Produkts über die Stückliste ändern und Engineering-Attributwerte ändern. Wählen Sie für jedes betroffene Produkt einen der folgenden Werte im Feld **Auswirkung**:
+- Bei Änderungsaufträgen in einer *Ingenieurgesellschaft* können Sie grundlegende Änderungen an den Engineering-Daten vornehmen. Sie können z. B. neue Versionen eines Produkts erstellen, die Struktur eines Produkts über die Stückliste ändern und Engineering-Attributwerte ändern. Wählen Sie für jedes betroffene Produkt einen der folgenden Werte im Feld **Auswirkung**:
 
     - **Keine** - Aktualisieren Sie die vorhandene Produktversion (In-Versions-Update).
     - **Neue Version** - Erzeugt eine neue Version, die auf der ausgewählten Produktversion basiert.
-    - **Neues Produkt** - Ein komplett neues Produkt oder eine Produktvariante erstellen, die auf der gewählten Produktversion basiert.
+    - **Neues Produkt** – Erzeugen Sie ein komplett neues Produkt, das auf der ausgewählten Produktversion basiert.
+    - **Neue Variante** – Erstellen Sie eine neue Variante, die auf der gewählten Produktversion basiert. Seine Stückliste und Arbeitsplaninformationen werden kopiert.
 
-- Bei Änderungsaufträgen in einer **Betriebsgesellschaft** können Sie die logistischen Daten des Produkts ändern. Sie können z.B. die bestehende Stückliste mit Einstellungen für die Bezugsquellenfindung anreichern, lokale Arbeitspläne oder lokale Stücklisten hinzufügen und sogar eine Stückliste anreichern, indem Sie neue Stücklistenzeilen für lokale Verpackungsmaterialien, Schmiermittel oder Anweisungen in der Landessprache hinzufügen. Anreicherungen, die Benutzer in der operativen Firma vornehmen, bleiben erhalten, wenn neue Updates von der technischen Firma gesendet werden. Weitere Informationen finden Sie unter [Engineering-Unternehmen und Dateneigentumsregeln](engineering-org-data-ownership-rules.md).
+- Bei Änderungsaufträgen in einer *Betriebsgesellschaft* können Sie die logistischen Daten des Produkts ändern. Sie können z.B. die bestehende Stückliste mit Einstellungen für die Bezugsquellenfindung anreichern, lokale Arbeitspläne oder lokale Stücklisten hinzufügen und sogar eine Stückliste anreichern, indem Sie neue Stücklistenzeilen für lokale Verpackungsmaterialien, Schmiermittel oder Anweisungen in der Landessprache hinzufügen. Anreicherungen, die Benutzer in der operativen Firma vornehmen, bleiben erhalten, wenn neue Updates von der technischen Firma gesendet werden. Weitere Informationen finden Sie unter [Engineering-Unternehmen und Dateneigentumsregeln](engineering-org-data-ownership-rules.md).
 
     Wenn Änderungsaufträge in der Engineering-Firma bearbeitet werden, werden die Produkte nur in der Engineering-Firma erstellt und/oder aktualisiert. Wenn also auch die Produktstammdaten aktualisiert werden sollen, müssen Sie die Produkte auch für Betriebsgesellschaften freigeben.
 

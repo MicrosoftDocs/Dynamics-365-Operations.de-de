@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0db1c35779a468d9a86d18eb6c849d40bc8c03a3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 13053dd87242963586678b46c64493feb3383c4c
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820081"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920704"
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>Eine Stückliste für einen dimensionsbasierten Produktmaster erstellen
 
@@ -26,55 +26,56 @@ ms.locfileid: "5820081"
 
 Für diese Prozedur sollten Sie die vorherigen 4 Leitfäden in dieser Reihenfolge der acht Aufzeichnungen abgeschlossen haben. Die ersten 4 Aufzeichnungen richten Daten ein, die benötigt werden, um diese Prozedur abzuschließen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Aufgabe wird normalerweise vom Produktdesigner ausgeführt.
 
-
 ## <a name="select-the-product"></a>Wählen Sie das Produkt aus
-1. Klicken Sie auf "Freigegebene Produktverwaltung".
-2. Klicken Sie auf "Freigegebene Produkte".
-3. Markieren Sie in der Liste die ausgewählte Zeile.
+
+1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
     * Suchen Sie den freigegebenen Produktmaster mit dimensionsbasierter Konfigurationstechnologie, die Sie im ersten Aufgabenleitfaden in dieser Sequenz erstellt haben.  
-4. Klicken Sie im Aktivitätsbereich auf "Entwickler".
-5. Klicken Sie auf "Stücklistenversionen".
+1. Wählen Sie im Aktivitätsbereich **Techniker**.
+1. Wählen Sie **Stücklisten-Versionen**.
 
 ## <a name="create-new-bom-and-bom-version"></a>Erstellen Sie neue Stückliste und Stücklistenversion
-1. Klicken Sie auf "Neu".
-2. Klicken Sie auf "Stückliste" und "Stücklistenversion".
-3. Geben Sie im Feld "Name" einen Wert ein.
+
+1. Wählen Sie **Neu** aus.
+1. Wählen Sie **Stückliste und Stückliste Version**.
+1. Geben Sie im Feld **Name** einen Wert ein.
     * Festlegen eines Standorts  
     * In dieser Prozedur legen wir keinen bestimmten Standort für die Stückliste fest.  
-4. Klicken Sie auf "OK".
-5. Klicken Sie auf "Neu".
+1. Wählen Sie **OK**.
+1. Wählen Sie **Neu** aus.
     * In dieser Prozedur fügen wir vier Positionen der Stückliste hinzu. Zwei Positionen stellen Kabeloptionen dar und zwei Positionen stellen Gehäuseoptionen dar.  
-6. Markieren Sie in der Liste die ausgewählte Zeile.
-7. Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Artikelnummer** einen Wert ein, oder wählen Sie einen Wert aus.
     * Wählen Sie Artikelnummer "A0001", HDMI 6'-Kabel, aus.  
-8. Geben Sie im Feld "Variantengruppe" einen Wert ein oder wählen Sie einen Wert aus.
-    * Wählen Sie die Kabelvariantengruppe aus, die im Leitfaden 4 in dieser Reihenfolge erstellt wird.  
-9. Klicken Sie auf "Neu".
+1. Geben Sie in das Feld **Konfigurationsgruppe** einen Wert ein oder wählen Sie einen Wert aus.
+    * Wählen Sie die in Anleitung 4 erstellte Kabelkonfigurationsgruppe in dieser Sequenz.  
+1. Wählen Sie **Neu** aus.
     * Wählen Sie Artikelnummer "A0002", HDMI 12'-Kabel, aus.  
-10. Markieren Sie in der Liste die ausgewählte Zeile.
-11. Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.
-12. Geben Sie im Feld "Variantengruppe" einen Wert ein oder wählen Sie einen Wert aus.
-    * Wählen Sie erneut die Kabelvariantengruppe aus.  
-13. Klicken Sie auf "Neu".
-14. Markieren Sie in der Liste die ausgewählte Zeile.
-15. Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Artikelnummer** einen Wert ein, oder wählen Sie einen Wert aus.
+1. Geben Sie in das Feld **Konfigurationsgruppe** einen Wert ein oder wählen Sie einen Wert aus.
+    * Wählen Sie erneut die Kabelkonfigurationsgruppe.  
+1. Wählen Sie **Neu** aus.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Artikelnummer** einen Wert ein, oder wählen Sie einen Wert aus.
     * Wählen Sie Artikelnummer "D0002 Gehäuse" aus.  
-16. Geben Sie im Feld "Variantengruppe" einen Wert ein oder wählen Sie einen Wert aus.
-    * Wählen Sie die Gehäusevariantengruppe für diese Stücklistenposition aus.  
-17. Klicken Sie auf "Neu".
-18. Markieren Sie in der Liste die ausgewählte Zeile.
-19. Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.
+1. Geben Sie in das Feld **Konfigurationsgruppe** einen Wert ein oder wählen Sie einen Wert aus.
+    * Wählen Sie die Gehäusekonfigurationsgruppe für diese Stückliste-Zeile.  
+1. Wählen Sie **Neu** aus.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Artikelnummer** einen Wert ein, oder wählen Sie einen Wert aus.
     * Wählen Sie Artikelnummer "M0007 StandardCabinet" als letzte Stücklistenposition aus.  
-20. Geben Sie im Feld "Variantengruppe" einen Wert ein oder wählen Sie einen Wert aus.
-    * Wählen Sie die Gehäusevariantengruppe für die letzte Stücklistenposition aus.  
+1. Geben Sie in das Feld **Konfigurationsgruppe** einen Wert ein oder wählen Sie einen Wert aus.
+    * Wählen Sie die Gehäusekonfigurationsgruppe für die letzte Zeile der Stückliste aus.  
 
 ## <a name="approve-and-activate"></a>Genehmigen und aktivieren
+
 1. Schließen Sie die Seite.
-2. Klicken Sie auf Genehmigen.
-3. Geben Sie im Feld 'Genehmig von' einen Wert ein, oder wählen Sie einen Wert aus.
-4. Wählen Sie "Ja" aus in "Mächten Sie auch die Stückliste genehmigen?".
-5. Klicken Sie auf "OK".
-6. Klicken Sie auf Aktivieren.
+1. Wählen Sie **Genehmigen**.
+1. Geben Sie im Feld **Genehmigt von** einen Wert ein oder wählen Sie ihn aus.
+1. Wählen Sie *Ja* im Feld **Wollen Sie die Stückliste auch genehmigen?**.
+1. Wählen Sie **OK**.
+1. Wählen Sie **Aktivieren** aus.
 
 
 

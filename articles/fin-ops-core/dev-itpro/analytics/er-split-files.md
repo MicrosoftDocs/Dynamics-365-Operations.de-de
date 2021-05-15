@@ -2,7 +2,7 @@
 title: Erstellte XML-Dateien auf Grundlage der Dateigröße und Inhaltsmenge teilen
 description: Dieses Thema enthält Informationen darüber, wie Sie generierte Dateien anhand der Dateigröße und der Anzahl der Inhaltselemente aufteilen können.
 author: NickSelin
-ms.date: 05/25/2018
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: f39cb93f4ba2d41b145ed7cfa52da287ccac3df5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9b0c8d215d1932a4c897488cb9c6ed7fa2127d82
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743556"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944340"
 ---
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>Erstellte XML-Dateien auf Grundlage der Dateigröße und Inhaltsmenge teilen
 
@@ -38,8 +38,8 @@ Wenn Sie Dateiziele für ein FILE Formatelement konfiguriert haben, das so konfi
 
 Um mehr über diese Funktion zu erfahren, spielen Sie den Aufgabenleitfaden **ER Teilen von XML-Dateien basierend auf der Dateigröße oder der Anzahl der Inhaltselemente** ab, der Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)** Geschäftsprozesses ist und im [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) heruntergeladen werden kann. Dieser Aufgabenleitfaden führt Sie durch den Prozess der Konfiguration eines ER-Formats zur Aufteilung der generierten Dateien basierend auf den Begrenzungen der Dateigröße und der Anzahl der Inhaltselemente. Um den Aufgabenleitfaden zu auszuführen, müssen Sie die folgenden Dateien herunterladen:
 
-- [ER-Datenmodellkonfiguration - XmlFilesSplittingModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
-- [ER-Formatkonfiguration - XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+- [ER-Datenmodellkonfiguration - XmlFilesSplittingModel.xml](https://download.microsoft.com/download/e/a/f/eaffe96a-22ec-4a32-898a-f4328c91c387/XmlFilesSplittingModel.xml)
+- [ER-Formatkonfiguration - XmlFilesSplittingFormat.xml](https://download.microsoft.com/download/e/9/c/e9c5849b-8254-4cdf-bb00-4c2ebc72ddec/XmlFilesSplittingFormat.xml)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 [Ziele für elektronische Berichterstellung (EB)](electronic-reporting-destinations.md)

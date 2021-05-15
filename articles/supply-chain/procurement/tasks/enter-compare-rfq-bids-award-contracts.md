@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e7abe133c4d2c7a515c75709bd5616c83ebbcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0acff4165ef4d61fb0d14a8f365273ea43fac7d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811989"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920580"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angebotsanforderungsangebote eingeben und vergleichen und Verträge vergeben
 
@@ -32,7 +32,7 @@ Sie können das Angebot entweder als Lieferant oder als Beschaffungsspezialist e
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Geben Sie eine Antwort als Lieferant ein
 
-1. Wählen Sie auf dem Dashboard **Bieten als Lieferant** aus.
+1. Wechseln Sie zu **Zusammenarbeit mit Kreditor \> Arbeitsbereiche \> Kreditor-Ausschreibung**.
 2. In der **Neue Angebotseinladungen** Liste finden Sie Angebotsanforderung, die soeben übermittelt wurde. Wählen Sie die Angebotsanforderung aus, um zu prüfen, was angefordert wurde.
 3. Wählen Sie **Angebotsanforderungsanhänge** aus, um alle Anhänge zu überprüfen, die hinzugefügt wurden.
 4. Wählen Sie **Angebot**, um die Felder zu bearbeiten. Beachten Sie, dass das Feld **Angebotsfortschritt** auf **Kreditor aktualisiert** festgelegt ist.

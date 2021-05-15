@@ -2,25 +2,25 @@
 title: Mehrwertsteuerberechnung für allgemeine Erfassungspositionen
 description: In diesem Thema wird erläutert, wie die Mehrwertsteuer für verschiedene Kontotypen (Kreditorenkonto, Debitorenkonto, Sachkonto und Projekt) in allgemeinen Erfassungspositionen berechnet werden.
 author: EricWang
-ms.date: 08/14/2019
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: roschlom
+ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: e4d367fe6cb729c9c5658a9bbbac04e53fdf9644
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815331"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937305"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Mehrwertsteuerberechnung für allgemeine Erfassungspositionen
 [!include [banner](../includes/banner.md)]
@@ -117,7 +117,7 @@ Dieser Abschnitt beschreibt, wie das Vorzeichen des Mehrwertsteuerbetrags berech
 
 ![Seite „Mehrwertsteuerbuchungen“](media/sales-tax-amount-sign.jpg)
 
-Die folgende Tabelle zeigt die generische Regel zum Bestimmen der Vorzeichen von Mehrwertsteuerbeträgen in der temporären Mehrwertsteuertabelle.
+Die folgende Tabelle zeigt die generische Richtlinie zur Bestimmung der Umsatzsteuer-Richtung und des Vorzeichens von Umsatzsteuer-Beträgen in der temporären Umsatzsteuer-Tabelle.
 
 | Erfassungspositionbetrag | Mehrwertsteuerart  | Mehrwertsteuerbetrag-Zeichen |
 |---------------------|----------------------|-----------------------|
@@ -126,7 +126,7 @@ Die folgende Tabelle zeigt die generische Regel zum Bestimmen der Vorzeichen von
 | Negativ            | Vorsteuer | Negativ              |
 | Negativ            | Mehrwertsteuer    | Positiv              |
 
-Es gibt eine Sonderregelung für Belege, die nur Positionen **Projekt** oder **Sachkonto** besitzen, wenn eine Mehrwertsteuergruppe und eine Artikel-Mehrwertsteuergruppe in der Position **Sachkonto** ausgewählt wurde. Diese Regel wird durch Aktivieren der unabhängigen Mehrwertsteuerberechnungsfunktion für allgemeine Erfassungen gesteuert. Wenn diese Funktion deaktiviert wird, verwendet der Steuerbetrag der **Sachkonto**-Position die Soll-/Kreditrichtung der Position **Projekt**. Wenn diese Funktion deaktiviert wird, verwendet der Steuerbetrag **Sachkonto**-Position seine eigene Soll-/Kreditrichtung. Die folgenden Tabellen zeigen die Regel für jedes Szenario an. 
+Es gibt eine Sonderregelung für Belege, die nur Positionen **Projekt** oder **Sachkonto** besitzen, wenn eine Mehrwertsteuergruppe und eine Artikel-Mehrwertsteuergruppe in der Position **Sachkonto** ausgewählt wurde. Diese Regel wird durch die Funktion **Aktiviere unabhängige Mehrwertsteuer-Berechnungsfunktion für allgemeine Erfassungen** gesteuert. Wenn diese Funktion deaktiviert wird, verwendet der Steuerbetrag der **Sachkonto**-Position die Soll-/Kreditrichtung der Position **Projekt**. Wenn diese Funktion deaktiviert wird, verwendet der Steuerbetrag **Sachkonto**-Position seine eigene Soll-/Kreditrichtung. Die folgenden Tabellen zeigen die Regel für jedes Szenario an. 
 
 **Regel, wenn die Funktion aktiviert ist.**
 

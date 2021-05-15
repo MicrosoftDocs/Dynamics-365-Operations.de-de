@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db87d0a26efa948a618344ed392ab638b8790
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45c6b1e6e75645bb17ce4defa0bca0e6d2131b6e
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817988"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921264"
 ---
 # <a name="maintain-route-for-a-product-model"></a>Arbeitsplan für ein Produktmodell verwalten
 
@@ -26,43 +26,43 @@ ms.locfileid: "5817988"
 
 Die Ausführung dieser Prozedur erfordert ein vorhandenes Produktkonfigurationsmodell. Bei diesem Verfahren wird das Spitzenlautsprechermodell im Vorführungsunternehmen USMF verwendet.
 
-
 ## <a name="add-a-route-operation"></a>Hinzufügen eines Arbeitsplanarbeitsgangs
-1. Klicken Sie auf "Produktvariantenmodell-Definition".
-2. Klicken Sie auf "Produktkonfigurationsmodelle".
-3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+
+1. Wechseln Sie zu **Produktinformationsmanagement \> Produkte \> Produktkonfigurationsmodelle**.
+1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
     * Wählen Sie den Spitzenlautsprecher für diese Aufgabe aus.  
-4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-5. Erweitern Sie den Abschnitt "Arbeitsgänge".
-6. Klicken Sie auf Hinzufügen.
-7. Geben Sie im Feld "Name" einen Wert ein.
-8. Geben Sie im Feld "Beschreibung" einen Wert ein.
-9. Klicken Sie auf "Speichern".
+1. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
+1. Erweitern Sie den Abschnitt **Arbeitsplanvorgänge**.
+1. Wählen Sie **Hinzufügen** aus.
+1. Geben Sie im Feld **Name** einen Wert ein.
+1. Geben Sie im Feld **Beschreibung** einen Wert ein.
+1. Wählen Sie **Speichern** aus.
 
 ## <a name="enter-route-operation-details"></a>Eingeben von Arbeitsplanarbeitsgangdetails
-1. Klicken Sie auf "Details zum Arbeitsplanarbeitsgang"
-2. Geben Sie im Feld 'Arbeitsgang' einen Wert ein, oder wählen Sie einen Wert aus.
-3. Geben Sie im Feld Arbeitsgang- Nr. eine Zahl ein.
+
+1. Wählen Sie **Details zum Arbeitsplanvorgang**.
+1. Geben Sie im Feld **Vorgang** einen Wert ein oder wählen Sie ihn aus.
+1. In dem **Vorgang. Nr.** eine Zahl ein.
     * Vorgangsnummer legen die Arbeitsplansequenz fest.  
     * Jede Eigenschaft eines Arbeitsplanvorgang kann einen statischen Wert enthalten oder einem Attribut zugeordnet werden. Die Zuordnung zu einem Attribut arbeitet mit dem Wert, die als Teil der Konfiguration festgelegt ist.  
-4. Geben Sie im Feld "Arbeitsplangruppe" einen Wert ein oder wählen Sie einen Wert aus.
+1. Geben Sie im Feld **Arbeitsplan-Gruppe** einen Wert ein oder wählen Sie einen Wert aus.
     * Die Arbeitsgangsteuerungsgruppe bestimmt das grundlegende Verhalten der Nachkalkulation, des Verbrauch und der Einstellungen.  
-5. Klicken Sie auf die Registerkarte "Einstellungen".
-6. Klicken Sie auf die Registerkarte 'Zeiten'.
-7. Geben Sie im Feld Prozessmenge eine Zahl ein.
+1. Wählen Sie die Registerkarte **Einrichten**.
+1. Wählen Sie die Registerkarte **Zeiten**.
+1. Geben Sie im Feld **Anzahl verarbeiten** eine Zahl ein.
     * Bestimmen Sie, wie viele während eines Arbeitsgangs verarbeitet werden.  
-8. Geben Sie im Feld "Stunden/Zeit" eine Zahl ein.
+1. Geben Sie im Feld **Stunden/Zeit** eine Zahl ein.
     * Geben Sie einen Zeitanteil ein.  
-9. Wählen Sie das Kontrollkästchen "Festlegen" aus.
-10. Geben Sie im Feld "Laufzeit" eine Zahl ein.
+1. Aktivieren Sie das Kontrollkästchen **Setzen**.
+1. Geben Sie im Feld **Laufzeit** eine Zahl ein.
     * Bestimmen Sie die Bearbeitungszeit zur Menge, die Sie angegeben haben.  
-11. Klicken Sie auf die Ressourcenanforderungsregisterkarte.
-12. Klicken Sie auf Hinzufügen.
-13. Markieren Sie in der Liste die ausgewählte Zeile.
-14. Wählen Sie im Feld "Anforderungstyp" eine Option aus.
+1. Wählen Sie die Registerkarte **Ressourcenanforderung**.
+1. Wählen Sie **Hinzufügen** aus.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Wählen Sie im Feld **Bedarfstyp** eine Option.
     * Entscheiden Sie, ob spezifische Ressourcen oder Funktionen vorhanden sein müssen.  
-15. Geben Sie im Feld 'Anforderung' einen Wert ein, oder wählen Sie einen Wert aus.
-16. Klicken Sie auf "OK".
+1. Geben Sie im Feld **Anforderung** einen Wert ein oder wählen Sie ihn aus.
+1. Wählen Sie **OK**.
 
 
 

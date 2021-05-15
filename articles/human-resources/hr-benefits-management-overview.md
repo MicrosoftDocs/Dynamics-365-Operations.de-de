@@ -2,7 +2,7 @@
 title: Vorteilsverwaltung – Übersicht
 description: Übersicht über die Vorschaufunktion für die Vorteilsverwaltung in Dynamics 365 Human Resources. Bieten Sie Ihren Mitarbeitern erweiterte Vorteilsoptionen mit einer benutzerfreundlichen Online-Erfahrung.
 author: andreabichsel
-ms.date: 09/17/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 34b0916e0bf618590bcc56a9a3bc7c61576361cc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4ad94d81d7e8bedd3622b3e073e431bc4abaafff
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805777"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924229"
 ---
 # <a name="benefits-management-overview"></a>Vorteilsverwaltung – Übersicht
 
@@ -40,6 +40,10 @@ Um wettbewerbsfähig zu bleiben, müssen Sie zahlreiche Vorteile bieten, um die 
 - Qualifizierte Lebensereignisverarbeitung unterstützt zukünftige Lebensereignisse.
 
 Wenn Sie auf die Demodaten zugreifen möchten, müssen Sie Ihre Sandkastenumgebung erneut bereitstellen.
+
+>[!NOTE]
+>Sie können jetzt Formulare für die Verwaltung von Leistungen anpassen. Sie können dem Formular **Deckungsoption** für Leistungspläne jetzt angepasste Felder in Bezug auf die Sätze hinzufügen. Weitere Informationen zum Arbeiten mit angepassten Feldern finden Sie unter [Benutzerdefinierte Felder](hr-developer-custom-fields.md).
+>![Angepasste Felder für die Verwaltung von Leistungen ](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Vorteilsverwaltung aktivieren
 

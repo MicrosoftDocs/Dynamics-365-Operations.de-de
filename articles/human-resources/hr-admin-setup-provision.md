@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 177586068ddb86943f8013722e1be9e63c53fa0f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: fee496157db581bf77f444674ca858aa4383e27c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889787"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963214"
 ---
 # <a name="provision-human-resources"></a>Personalverwaltung bereitstellen
 
@@ -55,6 +55,9 @@ Zu den Überlegungen für zusätzliche Umgebungen gehören unter anderem:
 Um LCS für die Human Resources-Umgebung zu verwalten, müssen Sie zuerst ein LCS-Projekt erstellen.
 
 1. Melden Sie sich an bei [LCS](https://lcs.dynamics.com/Logon/Index), indem Sie das Konto verwenden, das Sie verwenden, um Human Resources zu abonnieren.
+
+   > [!NOTE]
+   > Um eine erfolgreiche Bereitstellung zu gewährleisten, muss das Konto, das Sie für die Bereitstellung der Human Resources-Umgebung verwenden, entweder der Rolle **Systemadministrator** oder **System-Anpasser** in der Power Apps-Umgebung zugewiesen sein, die mit der Human Resources-Umgebung verbunden ist. Siehe [Konfigurieren Sie die Benutzersicherheit für Ressourcen](https://docs.microsoft.com/power-platform/admin/database-security) für weitere Informationen über die Zuweisung von Sicherheitsrollen an Benutzer in der Power Platform.
 
 2. Wählen Sie das Pluszeichen (**+**) aus, um ein Projekt zu erstellen.
 
@@ -115,13 +118,30 @@ Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche Power Apps-U
    
     - **Testumgebungen** – Diese Umgebungen werden mit einem Ablaufdatum erstellt. Nach Ablauf werden Ihre Umgebung und alle darin enthaltenen Personalinstanzen automatisch entfernt.
    
-    - **Nicht unterstützte Regionen** – Human Resources wird derzeit nur in folgenden Regionen unterstützt: USA, Europa, Vereinigtes Königreich, Australien, Kanada und Asien.
-
-    > [!NOTE]
-    > Das Human Ressource-Umgebung wird in derselben Region bereitgestellt, in der die Power Apps-Umgebung bereitgestellt wird. Die Migration einer Human Ressources-Umgebung in eine andere Region wird nicht unterstützt.
+    - **Unterstützte Geografien** – Die Umgebung muss sich in einer unterstützten Geografie befinden. Weitere Informationen finden Sie unter [Unterstützte Geografien](hr-admin-setup-provision.md#supported-geographies).
 
 6. Nachdem Sie die korrekte Umgebung bestimmt haben, die verwendet werden soll, können Sie mit dem Bereitstellungsprozess fortfahren. 
- 
+
+### <a name="supported-geographies"></a>Unterstützte Geografien
+
+Human Resources unterstützt derzeit die folgenden Geografien:
+
+- Vereinigte Staaten
+- Europa
+- Vereinigtes Königreich
+- Australien
+- Kanada
+- Asien 
+
+Wenn Sie eine Human Resources-Umgebung erstellen, wählen Sie eine Power Apps-Umgebung, um sie mit der Human Resources-Umgebung zu verknüpfen. Die Human Resources-Umgebung wird dann in der gleichen Azure-Geografie bereitgestellt wie die ausgewählte Power Apps-Umgebung. Sie können auswählen, wo sich die Human Resources Umgebung und die Datenbank physisch befinden, indem Sie die Geografie auswählen, wenn Sie die Power Apps-Umgebung erstellen, die mit der Human Resources Umgebung verbunden sein wird.
+
+Sie können die Azure *Geografie* auswählen, in der die Umgebung bereitgestellt wird, aber Sie können nicht die spezifische Azure *Region* auswählen. Die Automatisierung bestimmt die spezifische Region innerhalb der Geografie, in der die Umgebung erstellt wird, um Ladung und Leistung zu optimieren. Informationen zu Azure-Geografien und -Regionen finden Sie in der Dokumentation zu [Azure-Geografien](https://azure.microsoft.com/global-infrastructure/geographies).
+
+Die Daten für die Human Resources Umgebung werden immer in der Azure-Geografie enthalten sein, in der sie erstellt wurden. Diese wird jedoch nicht immer in der gleichen Azure-Region enthalten sein. Zu Zwecken der Notfallwiederherstellung werden die Daten sowohl in der primären Azure-Region als auch in einer sekundären Failover-Region innerhalb der Geografie repliziert.
+
+ > [!NOTE]
+ > Die Migration einer Human Resources Umgebung von einer Azure Region in eine andere wird nicht unterstützt.
+
 ## <a name="grant-access-to-the-environment"></a>Zugriff auf die Umgebung gewähren
 
 Standardmäßig besitzt nur der globale Administrator, von dem Enterprise Portal installiert wurde, Zugriff auf diese Anwendung. Allerdings muss zusätzliche Bewerbungsbenutzern explizit Zugriff gewährt werden. Um Zugriff zu gewähren, müssen Sie Benutzer hinzufügen und ihnen die entsprechenden Rollen in der Human Resources-Umgebung zuweisen. Der globale Administrator, der Human Resources eingesetzt hat, muss auch Attract und Onboard starten, um die Initialisierung abzuschließen und den Zugriff für andere Mieter zu ermöglichen. Bis dies geschieht, können andere Benutzer nicht auf Attract und Onboard zugreifen und erhalten Zugriffsverletzungsfehler. Weitere Informationen finden Sie unter [Neue Benutzer erstellen](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) und [Weisen Sie Benutzer Sicherheitsrollen zu](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

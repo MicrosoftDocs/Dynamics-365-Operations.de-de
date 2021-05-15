@@ -2,7 +2,7 @@
 title: Qualitätsmanagement für Lagerortprozesse
 description: Dieses Thema enthält Informationen zur Funktion „Qualitätsmanagement für Lagerortprozesse“. Diese Funktion erweitert die Funktionen des Qualitätsmanagements und ermöglicht Benutzern, mithilfe der erweiterten Lagerverwaltung Steuerelemente für die Probenahme von Artikeln in den Wareneingangsprozess zu integrieren.
 author: Henrikan
-ms.date: 04/02/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: a049a7832e02dbd2debdd016a6b723726cc25df0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: db23ffcea4da28fa309ccca12540e0edaf00ad6c
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834264"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956081"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Qualitätsmanagement für Lagerortprozesse
 
@@ -620,5 +620,8 @@ Sie haben die Arbeits- und Ortsdaten für Lagerort 51 eingerichtet, um sicherzus
 > [!NOTE]
 > Ziehen Sie es in Betracht, den Eintrag für den Qualitätsausgang zu einem Menüpunkt für mobile Geräte hinzuzufügen, für den der Aktivitätscode *Offene Arbeitsliste anzeigen* lautet. Ein Beispiel stellt der Menüpunkt für mobile Geräte mit dem Namen **Arbeitsliste** in den Demodaten dar. Fügen Sie zuerst die Arbeitsklasse *Qualitätsprüfungsauftrag* zu einem benutzergesteuerten Menüpunkt hinzu, da diese Arbeitsklasse erforderlich ist, damit die Arbeit in der Arbeitsliste angezeigt wird. Fügen Sie die Arbeitsklasse *Qualitätsprüfungsauftrag* anschließend dem Menüpunkt **Arbeitsliste** hinzu. Benutzer, die Zugriff auf die Arbeitsliste haben, können dann die Arbeit auswählen und verarbeiten, die durch die Prüfung des Qualitätsprüfungsauftrags automatisch generiert wird.
 
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+- [Überblick über Qualitätsmanagement und Qualitätsmangel](quality-management-processes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

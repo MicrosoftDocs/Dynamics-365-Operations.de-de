@@ -10,12 +10,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 76e64d483e833782733277a64d8dc37cbeba6130
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 32128d48bfac195530d70b60e67cfd4921fc001e
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857369"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941082"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Auf das Partei- und globale Adressbuchmodell aktualisieren
 
@@ -52,11 +52,11 @@ Es gelten die folgenden Voraussetzungen:
 
 2. Melden Sie sich auf [Microsoft Azure](https://portal.azure.com/) an.
 
-3. Erstellen Sie eine [Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal).
+3. Erstellen Sie eine [Ressourcengruppe](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
-4. Erstellen Sie ein [Speicherkonto](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal) in der von Ihnen erstellten Ressourcengruppe.
+4. Erstellen Sie ein [Speicherkonto](/azure/storage/common/storage-account-create?tabs=azure-portal) in der von Ihnen erstellten Ressourcengruppe.
 
-5. Erstellen Sie eine [Data Factory](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal) über der von Ihnen erstellten Ressourcengruppe.
+5. Erstellen Sie eine [Data Factory](/azure/data-factory/quickstart-create-data-factory-portal) über der von Ihnen erstellten Ressourcengruppe.
 
 6. Öffnen Sie die Data Factory und wählen Sie die Kachel **Erstellen und überwachen** aus.
 
@@ -81,7 +81,7 @@ Es gelten die folgenden Voraussetzungen:
     FO Linked Service_properties_type Properties_service Principal Id | Geben Sie den Schlüssel der Client-ID an.
     Dynamics Crm Linked Service_properties_type Properties_username | Der Benutzername für die Verbindung zu Dynamics.
 
-    Weitere Informationen finden Sie unter [Manuelles Höherstufen einer Resource Manager-Vorlage für jede Umgebung](https://docs.microsoft.com/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Eigenschaften des verknüpften Diensts](https://docs.microsoft.com/azure/data-factory/connector-dynamics-ax#linked-service-properties) und [Daten mit Azure Data Factory kopieren](https://docs.microsoft.com/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    Weitere Informationen finden Sie unter [Manuelles Höherstufen einer Resource Manager-Vorlage für jede Umgebung](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Eigenschaften des verknüpften Diensts](/azure/data-factory/connector-dynamics-ax#linked-service-properties) und [Daten mit Azure Data Factory kopieren](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. Überprüfen Sie nach der Bereitstellung die Datensätze, den Datenfluss und den verknüpften Dienst der Data Factory.
 
@@ -158,7 +158,7 @@ Es gelten die folgenden Voraussetzungen:
 8. Importieren Sie den neuen **Partei**-Datensatz in der Finance and Operations-App.
 
     + Laden Sie die Datei `FONewParty.csv` aus dem Azure Blob Storage herunter. Der Pfad lautet `partybootstrapping/output/FONewParty.csv`.
-    + Konvertieren Sie die Datei `FONewParty.csv` in eine Excel-Datei und importieren Sie die Excel-Datei in die Finance and Operations-App.  Wenn der CSV-Import bei Ihnen funktioniert, können Sie die CSV-Datei direkt importieren. Das Importieren kann je nach Datenvolumen einige Stunden dauern. Weitere Informationen finden Sie unter [Übersicht über Datenimport- und -exportaufträge](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job).
+    + Konvertieren Sie die Datei `FONewParty.csv` in eine Excel-Datei und importieren Sie die Excel-Datei in die Finance and Operations-App.  Wenn der CSV-Import bei Ihnen funktioniert, können Sie die CSV-Datei direkt importieren. Das Importieren kann je nach Datenvolumen einige Stunden dauern. Weitere Informationen finden Sie unter [Übersicht über Datenimport- und -exportaufträge](../data-import-export-job.md).
 
     ![Die Datavers-Partei-Datensätze importieren](media/data-factory-import-party.png)
 

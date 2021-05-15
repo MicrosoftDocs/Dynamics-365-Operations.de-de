@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 73ef52580ffe80c6c5cc9f77c2088d071a749ca7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 27c1f910fc9fa533877726562c45a9eaa13e2858
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833448"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935808"
 ---
 # <a name="improve-master-planning-performance"></a>Leistungsverbesserungen der Produktprogrammplanung
 
@@ -79,14 +79,14 @@ Sie können den Parameter **Cacheverwendung** im Abschnitt **Leistung** auf der 
 
 ### <a name="number-of-orders-in-firming-bundle"></a>Zahl der Produktionsaufträge im Anlagebündel
 
-Der Parameter **Zahl der Produktionsaufträge im Anlagebündel** gibt die Gesamtanzahl der Aufträge an, die jeweils von jedem Thread/jeder Charge ausgeführt werden. Er verursacht Parallelisierung des automatischen Umwandlungsprozesses.
+Der Parameter **Zahl der Produktionsaufträge im Anlagebündel** gibt die Gesamtanzahl der Aufträge an, die jeweils von jedem Thread/jeder Charge ausgeführt werden. Es bewirkt eine Parallelisierung der automatischen Umwandlung.
 
-Sie können den Parameter **Zahl der Produktionsaufträge im Anlagebündel** im Abschnitt **Leistung** auf der Registerkarte **Allgemein** der Seite **Parameter für Produktprogrammplanung** (**Produktprogrammplanung \> Einstellungen \>-Parameter für Produktprogrammplanung**) festlegen. Parallelisierung des automatischen Umwandlungsprozesses basiert auf den Aufträgen, die zusammen verarbeitet werden müssen. Wenn der Parameter beispielsweise auf **50** festgelegt wird, nimmt jeder Thread oder Batchauftrag 50 Aufträge auf einmal an und verarbeitet diese zusammen. Es wird empfohlen, einen den besten Wert mithilfe einer Versuchsreihe zu bestimmen. Sie können jedoch die folgende Formel verwenden, um einen Ausgangswert zu berechnen:
+Sie können den Parameter **Zahl der Produktionsaufträge im Anlagebündel** im Abschnitt **Leistung** auf der Registerkarte **Allgemein** der Seite **Parameter für Produktprogrammplanung** (**Produktprogrammplanung \> Einstellungen \>-Parameter für Produktprogrammplanung**) festlegen. Die Parallelisierung der automatischen Umwandlung basiert auf den Aufträgen, die zusammen verarbeitet werden müssen. Wenn der Parameter beispielsweise auf **50** festgelegt wird, nimmt jeder Thread oder Batchauftrag 50 Aufträge auf einmal an und verarbeitet diese zusammen. Es wird empfohlen, einen den besten Wert mithilfe einer Versuchsreihe zu bestimmen. Sie können jedoch die folgende Formel verwenden, um einen Ausgangswert zu berechnen:
 
 (Anzahl der Aufträge pro Bündel) = (Anzahl der Bedarfsartikel ÷ Anzahl der Threads)
 
 > [!NOTE]
-> Durch Festlegen des Parameters auf **Zahl der Produktionsaufträge im Anlagebündel** auf den Wert **0** (Null), wird keine Parallelisierung des automatischen Umwandlungsprozesses auftreten. Der ganze Prozess wird in einem einzelnen Chargenauftrag ausgeführt und hat eine kumulative Ausführungszeit. Daher steigt die Ausführungszeit der Produktprogrammplanung. Aus diesem Grund sollten Sie diesen Parameter auf einen Wert über **0** (Null) festlegen.
+> Wenn Sie den Parameter **Anzahl der Aufträge im bündeln** auf **0** (Null) festlegen, findet keine Parallelisierung der automatischen Umwandlung statt. Der ganze Prozess wird in einem einzelnen Chargenauftrag ausgeführt und hat eine kumulative Ausführungszeit. Daher steigt die Ausführungszeit der Produktprogrammplanung. Aus diesem Grund sollten Sie diesen Parameter auf einen Wert über **0** (Null) festlegen.
 
 ### <a name="time-fences"></a>Planungszeiträume
 

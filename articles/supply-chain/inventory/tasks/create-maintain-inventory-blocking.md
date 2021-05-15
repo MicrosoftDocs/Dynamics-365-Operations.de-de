@@ -1,8 +1,8 @@
 ---
 title: Dient zum Erstellen und Verwalten einer Sperrung von Lagerbestand
-description: Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verfügbarer Lagerbestand durch andere ausgehende Quelldokumente mithilfe der Sperrung von Lagerbestand reserviert wird.
+description: Dieses Thema beschreibt, wie Sie eine Bestandssperre verwenden können, um zu verhindern, dass physische Lagerbestände durch andere ausgehende Quelldokumente reserviert werden.
 author: perlynne
-ms.date: 08/08/2019
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,41 +14,47 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 319ae6da1e0e504316b2d96001d582e835cef20c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e9aa38ca52da577fff258bb330922ad7f4044330
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834000"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956157"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>Dient zum Erstellen und Verwalten einer Sperrung von Lagerbestand
 
 [!include [banner](../../includes/banner.md)]
 
-Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verfügbarer Lagerbestand durch andere ausgehende Quelldokumente mithilfe der Sperrung von Lagerbestand reserviert wird. Sie können die Prozedur im Demodatenunternehmen USMF mit den Beispielswerten ausführen, die angezeigt werden. Sie müssen einen Artikel mit physisch verfügbarem Lagerbestand haben, bevor Sie dieses Verfahren beginnen.
+Dieses Thema beschreibt, wie Sie eine Bestandssperre verwenden können, um zu verhindern, dass physische Lagerbestände durch andere ausgehende Quelldokumente reserviert werden. Bevor Sie die Vorgänge in diesem Thema starten, müssen Sie ein Element haben, für das physischer Lagerbestand vorhanden ist.
 
+## <a name="block-inventory"></a>Lagerbestand sperren
 
-## <a name="create-an-inventory-blocking"></a>Erstellen einer Sperrung von Lagerbestand
-1. Wechseln Sie im **Navigationsbereich** zu **Module > Lagerverwaltung > Periodische Aufgaben > Sperrung von Lagerbestand**.
-2. Klicken Sie auf **Neu**.
-3. Klicken Sie im Feld **Artikelnummer** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-4. Wählen Sie in der Liste den Artikel aus. Wählen Sie eine Artikelnummer mit physischem Lagerbestand aus, die Sie sperren möchten. Wenn Sie USMF verwenden, können Sie den Artikel M9201 auswählen.  
-5. Geben Sie im Feld **Menge** eine Zahl ein. Wenn Sie den Artikel M9201 verwenden, müssen Sie weniger als 200 auswählen.
-6. Erweitern Sie das Inforegister **Lagerungsdimensionen**.
-7. Klicken Sie im Feld **Lagerort** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-8. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Wenn Sie den Artikel M9201 verwenden, können Sie Warehouse 51 auswählen.  
-9. Klicken Sie auf **Speichern**.
+Um einen Datensatz zur Bestandssperrung zu erstellen, so dass der Bestand gesperrt wird, folgen Sie diesen Schritten.
+
+1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Bestandssperrung**.
+1. Wählen Sie im Aktivitätsbereich **Neu** aus.
+1. Legen Sie in der Kopfzeile des neuen Bestandssperrungs-Datensatzes das Feld **Elementnummer** auf das Element fest, das Sie sperren wollen, und geben Sie eine Beschreibung ein.
+1. Geben Sie auf der Registerkarte **Allgemein** Inforegister im Feld **Menge** die Anzahl der zu blockierenden Elemente ein.
+1. Geben Sie auf dem Inforegister **Bestandsdimensionen** den Standort und den Lagerort an, an dem sich die zu sperrenden Elemente derzeit befinden.
+1. Wählen Sie im Aktionsbereich **Speichern** aus.
 
 ## <a name="update-the-conditions-of-the-inventory-blocking"></a>Aktualisieren Sie die Bedingungen der Sperrung von Lagerbestand
-1. Geben Sie im Inforegister **Allgemein** im Feld **Menge** eine Nummer ein. Aktualisieren Sie das Felde "Lagermenge", um die zu sperrende Menge wiederzugeben.  
-2. Geben Sie im Feld **Erwartetes Datum** ein Datum ein. Sie sollten angeben, wann damit gerechnet wird, dass der gesperrte Bestand für die Reservierung verfügbar wird, indem Sie ein erwartetes Datum zuweisen. Wenn die Option "Erwartete Zugänge" für die Sperrung des Lagerbestands aktiviert ist (Standardeinstellung, wenn Sie manuell eine Sperrung erstellen), wird dieses Datum auf der erwarteten Buchung angezeigt.  
-3. Klicken Sie auf **Speichern**.
 
-## <a name="remove-the-inventory-blocking"></a>Sperrung von Lagerbestand entfernen
-1. Klicken Sie im **Aktivitätsbereich** auf **Löschen**.
-2. Klicken Sie auf **Ja**.
-3. Schließen Sie die Seite.
+Um einen Datensatz zur Bestandssperrung zu aktualisieren, führen Sie die folgenden Schritte aus.
 
+1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Bestandssperrung**.
+1. Wählen Sie im Listenbereich den entsprechenden Bestandssperrungs-Datensatz aus.
+1. Bearbeiten Sie den Datensatz wie gewünscht. Sie können z. B. den Wert des Feldes **Erwartetes Datum** ändern, um anzugeben, wann der gesperrte Bestand voraussichtlich für die Reservierung verfügbar sein wird. Wenn die Option **Erwartete Zugänge** ausgewählt ist, wird das Datum auf der erwarteten Transaktion angezeigt. (Die Option **Erwartete Zugänge** ist standardmäßig ausgewählt, wenn Sie einen Datensatz für die Bestandssperrung manuell erstellen.)
+1. Wählen Sie im Aktionsbereich **Speichern** aus.
 
+## <a name="unblock-inventory"></a>Bestand entsperren
+
+Um einen Bestandssperrungs-Datensatz zu entfernen, so dass der Bestand freigegeben wird, gehen Sie wie folgt vor.
+
+1. Gehen Sie zu **Bestandsverwaltung \> Periodische Aufgaben \> Bestandssperrung**.
+1. Wählen Sie im Listenbereich den entsprechenden Bestandssperrungs-Datensatz aus.
+1. Wählen Sie im Aktivitätsbereich **Löschen**.
+1. Sie werden aufgefordert, den Vorgang zu bestätigen. Wählen Sie **Ja** aus, um fortzufahren.
+1. Schließen Sie die Seite.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

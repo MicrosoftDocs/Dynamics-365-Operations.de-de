@@ -2,7 +2,8 @@
 title: Lieferoptionsmodul
 description: Dieses Thema enthält Beschreibungen der Lieferoptionsmodule und Erklärungen zu ihrer Konfiguration in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 08/05/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,26 +15,27 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f97dcd42e22e319d9af7cbf57fce7c10d8565d04
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 12b0281a27dcf5f567bcd6be5530fa8e26a4ae99
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801991"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937481"
 ---
 # <a name="delivery-options-module"></a>Lieferoptionenmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema enthält Beschreibungen der Lieferoptionsmodule und Erklärungen zu ihrer Konfiguration in Microsoft Dynamics 365 Commerce.
 
 Mit den Versandoptionsmodulen können Kunden eine Versandart auswählen, z. B. Versand oder Abholung für ihre Online-Bestellung. Eine Lieferadresse ist erforderlich, um die Lieferart zu bestimmen. Wenn sich die Versandadresse ändert, müssen die Lieferoptionen erneut abgerufen werden. Wenn ein Auftrag nur Artikel enthält, die in einem Shop abgeholt werden, wird dieses Modul automatisch ausgeblendet.
 
-Informationen zum Konfigurieren der Lieferarten finden Sie unter [Online-Kanaleinrichtung ](channel-setup-online.md)und [Zustellungsmodi einrichten](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+Informationen zum Konfigurieren der Lieferarten finden Sie unter [Online-Kanaleinrichtung ](channel-setup-online.md)und [Zustellungsmodi einrichten](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Den einzelnen Lieferarten können jeweils Gebühren zugeordnet sein. Weitere Informationen zum Konfigurieren von Gebühren für einen Online-Shop finden Sie unter [Erweiterte automatische Omni-Channel-Belastungen](omni-auto-charges.md).
 
-In der Commerce Version 10.0.13 wurde das Lieferoptionsmodul aktualisiert, damit es die Funktionen **Kopfzuschläge ohne Verrechnung** und **Versand als Positionsbelastung** unterstützt. Wenn Verrechnung deaktiviert ist, wird erwartet, dass der E-Commerce-Workflow keine gemischte Lieferart für die Artikel im Warenkorb zulässt (d. h. einige Artikel werden für den Versand ausgewählt, andere für die Abholung). Die Funktion **Kopfzuschläge ohne Verrechnung** erfordert, dass das Flag **Einheitlicher Umgang mit der Lieferart im Kanal** in der Commerce-Zentralverwaltung aktiviert ist. Wenn das Flag aktiviert ist, werden entsprechend der Konfiguration in der Commerce-Zentralverwaltung Versandkosten auf Kopf- oder Positionsebene fällig.
+In der Commerce Version 10.0.13 wurde das Lieferoptionsmodul aktualisiert, damit es die Funktionen **Kopfzuschläge ohne Verrechnung** und **Versand als Positionsbelastung** unterstützt. Wenn Verrechnung deaktiviert ist, wird erwartet, dass der E-Commerce-Workflow keine gemischte Lieferart für die Artikel im Warenkorb zulässt (d. h. einige Artikel werden für den Versand ausgewählt, andere für die Abholung). Die Funktion **Kopfkosten ohne Aufschlag** erfordert, dass das Flag **Konsistente Lieferartbehandlung im Kanal aktivieren** in der Commerce-Zentrale eingeschaltet ist. Wenn die Funktion Flag eingeschaltet ist, werden die Versandkosten entweder auf Kopf- oder auf Zeilenebene angewendet, je nach Konfiguration in der Commerce-Zentrale.
 
 Das Fabrikam-Design unterstützt eine gemischte Lieferart, bei der einige Artikel für den Versand ausgewählt werden, andere jedoch für die Abholung. In diesem Modus werden die Versandkosten für alle Artikel anteilig berechnet, die für die Lieferart ausgewählt wurden. Damit eine gemischte Lieferart funktioniert, müssen Sie zuerst die Funktion **Kopfzuschläge ohne Verrechnung** in der Commerce-Zentralverwaltung konfigurieren. Weitere Informationen zu dieser Konfiguration finden Sie unter [Kopfbelastungen auf übereinstimmende Verkaufspositionen aufteilen](pro-rate-charges-matching-lines.md).
 
@@ -50,6 +52,7 @@ Das folgende Bild zeigt ein Beispiel eines Lieferoptionsmoduls auf einer Checkou
 | Überschrift | Überschriftentext und eine Überschriftsmarkierung (**H1**, **H2**, **H3**, **H4**, **H5** oder **H6**) | Eine optionale Überschrift für das Lieferoptionsmodul. |
 | Benutzerdefinierter CSS-Klassenname | Text | Ein benutzerdefinierter CSS-Klassenname (Cascading Style Sheets), der gegebenenfalls zum Rendern dieses Moduls verwendet wird. |
 | Liefermodusoption filtern | **Nicht filtern** oder **Nicht-Versand-Modi** | Ein Wert, der angibt, ob das Lieferoptionsmodul alle Nicht-Versand-Modi herausfiltern soll. |
+| Automatisch eine Lieferoption auswählen | **Nicht filtern**, **Lieferoption automatisch auswählen und Zusammenfassung anzeigen**, oder **Lieferoption automatisch auswählen und Zusammenfassung nicht anzeigen** | Diese Eigenschaft wendet automatisch die erste verfügbare Lieferoption auf die Kasse an, ohne dass der Benutzer diese auswählen muss. Es sollte nur verwendet werden, wenn es eine verfügbare Lieferoption gibt. Diese Eigenschaft wird ab der Commerce-Version 10.0.19 unterstützt. |
 
 ## <a name="add-a-delivery-options-module-to-a-checkout-page-and-set-the-required-properties"></a>Fürgen Sie ein Lieferoptionsmodul in eine Checkout-Seite ein und bestimmen Sie die erforderlichen Eigenschaften
 
@@ -77,7 +80,7 @@ Ein Lieferoptionsmodul kann nur zu einem Auschecken-Modul hinzugefügt werden. W
 
 [Kopfbelastungen abgeglichen mit Verkaufspositionen aufteilen](pro-rate-charges-matching-lines.md)
 
-[Lieferarten einrichten](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Lieferarten einrichten](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

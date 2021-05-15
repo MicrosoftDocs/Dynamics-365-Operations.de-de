@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0389548b7867cc9505c9b8fe70c880959f6783b0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745262"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921422"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>In früheren Versionen entfernte oder veraltete Funktionen
 
@@ -37,7 +37,7 @@ Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operati
 
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
-Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 mit Plattformupdate 31
 
@@ -147,7 +147,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Kopfzeilenausrichtung an anderen Dynamics- und Office-Produkten. Weitere Informationen finden Sie unter [Aktualisierte Navigationsleiste, die an der Office-Kopfzeile ausgerichtet ist](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
+| **Grund für veralteten Zustand/Entfernung** | Kopfzeilenausrichtung an anderen Dynamics- und Office-Produkten. Weitere Informationen finden Sie unter [Aktualisierte Navigationsleiste, die an der Office-Kopfzeile ausgerichtet ist](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Ersetzt durch eine andere Funktion?**   | Ab Plattformupdate 24 wurde eine neu formatierte Navigationsleiste eingeführt, die eine Suchfunktion enthält. |
 | **Betroffene Produktbereiche**         | Webclient |
 | **Bereitstellungsoption**              | Alle |
@@ -161,7 +161,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Das Vorgängerverhalten für Standardaktivitäten in Rastern führt dazu, dass eine unerwartete Spalte den Standardaktivitätslink hat, nachdem Rasterspalten über die Personalisierung neu geordnet wurden. Die neue Kurzstandardaktivitätsfunktion korrigiert das. Weitere Informationen finden Sie unter [Kurzstandardaktivitäten in Rastern](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Grund für veralteten Zustand/Entfernung** | Das Vorgängerverhalten für Standardaktivitäten in Rastern führt dazu, dass eine unerwartete Spalte den Standardaktivitätslink hat, nachdem Rasterspalten über die Personalisierung neu geordnet wurden. Die neue Kurzstandardaktivitätsfunktion korrigiert das. Weitere Informationen finden Sie unter [Kurzstandardaktivitäten in Rastern](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Ersetzt durch eine andere Funktion?**   | Ab Plattformupdate 21 wurde eine Funktion für „Kurzstandardaktivitäten” eingeführt. Diese Funktion kann auf der Seite **Leistungsoptionen des Clients** aktiviert werden. |
 | **Betroffene Produktbereiche**         | Raster im Webclient |
 | **Bereitstellungsoption**              | Alle |
@@ -172,7 +172,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Filterfunktion „gehört zu” wurde im Plattformupdate 22 neu konzipiert. Geplant ist, dass dies letztendlich die einzige „gehört zu”-Filterfunktion sein soll. |
-| **Ersetzt durch eine andere Funktion?**   | Ab Plattformupdate 22 ist eine verbesserte „gehört zu”-Filterfunktion auf der Seite **Leistungsoptionen des Clients** verfügbar. Weitere Informationen finden Sie unter [Optimierte „gehört zu”-Filterfunktion](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Ersetzt durch eine andere Funktion?**   | Ab Plattformupdate 22 ist eine verbesserte „gehört zu”-Filterfunktion auf der Seite **Leistungsoptionen des Clients** verfügbar. Weitere Informationen finden Sie unter [Optimierte „gehört zu”-Filterfunktion](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Betroffene Produktbereiche**         | Webclient |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Ab April 2020 wird die verbesserte „gehört zu”-Funktionalität zum Standardverhalten ohne einen Mechanismus, um zum Vorgängerverhalten zurückzukehren. |
@@ -1333,7 +1333,7 @@ Sites Services lassen Sie Websites erstellen, die Ihre Geschäftsprozesse mit de
 
 ### <a name="virtual-company-accounts"></a>Virtuelle Unternehmenskonten
 
-Die virtuelle Unternehmensfunktion wird nicht mehr in Dynamics AX unterstützt. Die virtuelle Unternehmensfunktion ermöglicht es Benutzern, Tabellen einzurichten, die für eine Gruppe von Unternehmen freigegeben werden könnten. Eine Beschreibung der Funktion finden Sie unter [Unternehmenskonten und virtuelle Unternehmenskonten](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Die Funktion arbeitet, indem sie Tabellen in Sammlungen gruppiert die virtuellen Unternehmen zugewiesen werden (Gruppen von "tatsächlichen" Unternehmen). Abfragen werden erstellt, sodass alle Unternehmen im virtuellen Unternehmen auf die Daten in Tabellen der zugeordneten Tabellensammlungen zugreifen können.
+Die virtuelle Unternehmensfunktion wird nicht mehr in Dynamics AX unterstützt. Die virtuelle Unternehmensfunktion ermöglicht es Benutzern, Tabellen einzurichten, die für eine Gruppe von Unternehmen freigegeben werden könnten. Eine Beschreibung der Funktion finden Sie unter [Unternehmenskonten und virtuelle Unternehmenskonten](../../fin-ops/get-started/ax4-content-retired.md). Die Funktion arbeitet, indem sie Tabellen in Sammlungen gruppiert die virtuellen Unternehmen zugewiesen werden (Gruppen von "tatsächlichen" Unternehmen). Abfragen werden erstellt, sodass alle Unternehmen im virtuellen Unternehmen auf die Daten in Tabellen der zugeordneten Tabellensammlungen zugreifen können.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 48bf6f7997d6159077419bcd05d27fd711c8fb4b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
+ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891029"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5953411"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Urlaubsanträge in Teams verwalten
 
@@ -207,6 +207,14 @@ Wenn Sie beim Versuch, Urlaubsanträge in der Teams-App zu genehmigen, eine Fehl
 1. Stellen Sie sicher, dass das Konto, mit dem Sie sich bei Microsoft Teams anmelden, dasselbe ist, mit dem Sie auf Dynamics 365 Human Resources zugreifen.
 
 2. Stellen Sie sicher, dass Sie ein gültiger Genehmiger für die Anforderung sind, indem Sie die Workflow-Einstellungen auf Urlaubsgenehmigung überprüfen. Weitere Informationen zu Workflows für Urlaubsanträge finden Sie unter [Erstellen eines Workflows für Urlaubsanträge](hr-leave-and-absence-workflow.md).
+
+### <a name="leave-approvers-dont-receive-teams-chat-messages-to-approve-leave-requests"></a>Genehmiger von Abwesenheiten erhalten keine Teams-Chat-Nachrichten, um Abwesenheitsanträge zu genehmigen
+
+1. Stellen Sie sicher, dass Benachrichtigungen für die Umgebung und den Benutzer aktiviert sind. Weitere Informationen finden Sie unter [Benachrichtigungen für die Human Resources App in Teams aktivieren](hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) und [Benachrichtigungen von Teams für einzelne Benutzer ein- oder ausschalten](hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users).
+
+2. Stellen Sie sicher, dass die Benutzer auf der Registerkarte **Chats** mit denselben Anmeldeinformationen angemeldet sind, die sie für die Genehmigung von Urlaubsanträgen verwenden. Verwenden Sie die Nachrichten „Abmelden“ und dann „Anmelden“, um sich mit den richtigen Anmeldeinformationen anzumelden.
+
+3. Wenn das Problem weiterhin besteht, überprüfen Sie als Systemadministrator den Status des Batchauftrags für das System Business Events. Wenn es sich in einer Warte- oder Ausführungsphase befindet, schauen Sie in ein paar Minuten noch einmal nach. Wenn der Status unverändert bleibt, protokollieren Sie ein Support-Ticket, damit unser Team das Problem beheben kann.
 
 ## <a name="known-accessibility-issues"></a>Bekannte Probleme mit den Eingabehilfen
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f342831d95f9988f9bb7807bac986e43cb317e0f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7ea30dc107213b1a2c6b2a109188066a6ea82159
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820008"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921010"
 ---
 # <a name="create-a-product-number-nomenclature-for-configured-product-variants"></a>Produktnummernbezeichnung für konfigurierte Produktvarianten erstellen
 
@@ -26,79 +26,78 @@ ms.locfileid: "5820008"
 
 Diese Verfahren zeigt, wie eine Produktnummerenbezeichnung für konfigurierte Produktvarianten eingerichtet wird und sie einem konfigurierbaren Produktmaster zugeordnet werden kann. Dieses Verfahren beschreibt auch, wie eine Konfigurationsbezeichnung für eine Produktkonfigurationsmodellkomponente erstellen wird. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Die neue Produktnummernbezeichnung wird dem Produktmaster D0004 zugewiesen. Diese Aufgabe erfolgt in der Regel durch einen Produktdesigner.
 
-
 ## <a name="create-a-product-number-nomenclature"></a>Erstellen eine Produktnummerbezeichnung
-1. Klicken Sie auf "Produktvariantenmodell-Definition".
-2. Klicken Sie auf "Produktbezeichnung".
-3. Klicken Sie auf "Neu".
-4. Geben Sie im Feld "Name" einen Wert ein.
-5. Geben Sie im Feld "Beschreibung" einen Wert ein.
-6. Klicken Sie auf Hinzufügen.
-7. Klicken Sie auf "Produktmasternummer".
-8. Klicken Sie auf Hinzufügen.
-9. Klicken Sie auf Textkonstante.
-10. Markieren Sie in der Liste die ausgewählte Zeile.
-11. Geben Sie im Feld "Text" einen Wert ein.
-12. Klicken Sie auf Hinzufügen.
-13. Klicken Sie auf "Konfiguration".
-14. Schließen Sie die Seite.
+
+1. Wechseln Sie zu **Produktinformationsmanagement \> Einrichten \> Produktbezeichnung**.
+1. Wählen Sie **Neu** aus.
+1. Geben Sie im Feld **Name** einen Wert ein.
+1. Geben Sie im Feld **Beschreibung** einen Wert ein.
+1. Wählen Sie **Hinzufügen** aus.
+1. Wählen Sie **Produktstammnummer**.
+1. Wählen Sie **Hinzufügen** aus.
+1. Wählen Sie **Textkonstante** aus.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Text** einen Wert ein.
+1. Wählen Sie **Hinzufügen** aus.
+1. Wählen Sie **Konfiguration**.
+1. Schließen Sie die Seite.
 
 ## <a name="assign-the-product-number-nomenclature-to-a-product-master"></a>Zuweisen der Produktnummernbezeichnung zu einem Produktmaster
-1. Klicken Sie auf "Produktmaster".
-2. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise im Feld "Produktnummer" mit dem Wert "D".
-3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-4. Klicken Sie auf Bearbeiten.
-5. Wählen Sie "Ja" im Feld "Bezeichnungen verwenden".
-6. Geben Sie im Feld "Produktvariantennummerbezeichnung" eine Bezeichnung ein oder wählen Sie eine aus.
-7. Schließen Sie die Seite.
-8. Schließen Sie die Seite.
+
+1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Produktmaster**.
+1. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie zum Beispiel auf das Feld **Produktnummer** mit dem Wert 'D'.
+1. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
+1. Wählen Sie **Bearbeiten** aus.
+1. Wählen Sie *Ja* im Feld **Bezeichnungen verwenden** aus.
+1. Geben Sie im Feld **Produktvariantennummerbezeichnung** einen Wert ein oder wählen Sie einen Wert aus.
+1. Schließen Sie die Seite.
+1. Schließen Sie die Seite.
 
 ## <a name="create-nomenclature-for-a-product-configuration-model-component"></a>Erstellen einer Bezeichnung für eine Produktkonfigurationsmodellkomponente
-1. Klicken Sie auf "Produktkonfigurationsmodelle".
-2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-4. Klicken Sie auf Bearbeiten.
-5. Wählen Sie "Ja" im Feld "Konfigurationsbezeichnungen verwenden".
-6. Klicken Sie auf Hinzufügen.
-7. Klicken Sie auf Attributwert.
-8. Markieren Sie in der Liste die ausgewählte Zeile.
-9. Geben Sie im Feld 'Attribut' einen Wert ein, oder wählen Sie einen Wert aus.
-10. Klicken Sie auf Hinzufügen.
-11. Klicken Sie auf Textkonstante.
-12. Markieren Sie in der Liste die ausgewählte Zeile.
-13. Geben Sie im Feld "Text" einen Wert ein.
-14. Klicken Sie auf Hinzufügen.
-15. Klicken Sie auf Attributwert.
-16. Markieren Sie in der Liste die ausgewählte Zeile.
-17. Geben Sie im Feld 'Attribut' einen Wert ein, oder wählen Sie einen Wert aus.
-18. Klicken Sie auf Hinzufügen.
-19. Klicken Sie auf Textkonstante.
-20. Markieren Sie in der Liste die ausgewählte Zeile.
-21. Geben Sie im Feld "Text" einen Wert ein.
-22. Klicken Sie auf Hinzufügen.
-23. Klicken Sie auf Attributwert.
-24. Markieren Sie in der Liste die ausgewählte Zeile.
-25. Geben Sie im Feld 'Attribut' einen Wert ein, oder wählen Sie einen Wert aus.
-26. Klicken Sie auf Hinzufügen.
-27. Klicken Sie auf Textkonstante.
-28. Markieren Sie in der Liste die ausgewählte Zeile.
-29. Geben Sie im Feld "Text" einen Wert ein.
-30. Klicken Sie auf Hinzufügen.
-31. Klicken Sie auf Attributwert.
-32. Markieren Sie in der Liste die ausgewählte Zeile.
-33. Geben Sie im Feld 'Attribut' einen Wert ein, oder wählen Sie einen Wert aus.
-34. Klicken Sie auf Hinzufügen.
-35. Klicken Sie auf Textkonstante.
-36. Markieren Sie in der Liste die ausgewählte Zeile.
-37. Geben Sie im Feld "Text" einen Wert ein.
-38. Klicken Sie auf Hinzufügen.
-39. Klicken Sie auf Nummernkreiswert.
-40. Markieren Sie in der Liste die ausgewählte Zeile.
-41. Geben Sie im Feld "Nummernkreis" einen Wert ein, oder wählen Sie einen Wert aus.
-42. Schließen Sie die Seite.
-43. Schließen Sie die Seite.
-44. Schließen Sie die Seite.
 
-
+1. Wechseln Sie zu **Produktinformationsmanagement \> Produkte \> Produktkonfigurationsmodelle**.
+1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+1. Wählen Sie in der Liste den Link in der ausgewählten Zeile.
+1. Wählen Sie **Bearbeiten** aus.
+1. Wählen Sie *Ja* im Feld **Konfigurationsnomenklatur verwenden**.
+1. Wählen Sie **Hinzufügen** aus.
+1. Wählen Sie **Attributwert**.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Attribut** einen Wert ein oder wählen Sie einen Wert aus.
+1. Wählen Sie **Hinzufügen** aus.
+1. Wählen Sie **Textkonstante** aus.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Text** einen Wert ein.
+1. Wählen Sie **Hinzufügen** aus.
+1. Wählen Sie **Attributwert**.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Attribut** einen Wert ein oder wählen Sie einen Wert aus.
+1. Wählen Sie **Hinzufügen** aus.
+1. Wählen Sie **Textkonstante** aus.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Text** einen Wert ein.
+1. Wählen Sie **Hinzufügen** aus.
+1. Wählen Sie **Attributwert**.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Attribut** einen Wert ein oder wählen Sie einen Wert aus.
+1. Wählen Sie **Hinzufügen** aus.
+1. Wählen Sie **Textkonstante** aus.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Text** einen Wert ein.
+1. Wählen Sie **Hinzufügen** aus.
+1. Wählen Sie **Attributwert**.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Attribut** einen Wert ein oder wählen Sie einen Wert aus.
+1. Wählen Sie **Hinzufügen** aus.
+1. Wählen Sie **Textkonstante** aus.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Text** einen Wert ein.
+1. Wählen Sie **Hinzufügen** aus.
+1. Wählen Sie **Nummernkreis Wert**.
+1. Markieren Sie in der Liste die ausgewählte Zeile.
+1. Geben Sie im Feld **Nummernkreis** einen Wert ein oder wählen Sie einen aus.
+1. Schließen Sie die Seite.
+1. Schließen Sie die Seite.
+1. Schließen Sie die Seite.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

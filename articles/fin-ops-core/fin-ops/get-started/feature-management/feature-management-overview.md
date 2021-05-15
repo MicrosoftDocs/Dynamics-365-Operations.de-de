@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d5d5303b6d81ad182e0e28a51790166b833bee7b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754799"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923306"
 ---
 # <a name="feature-management-overview"></a>Funktionsverwaltung – Übersicht
 
@@ -140,7 +140,7 @@ Mit der Funktionsverwaltung können Sie die Funktionen steuern, die in jeder Ver
 
 ## <a name="new-features-are-optional-for-12-months"></a>Neue Funktionen sind für 12 Monate optional
 
-Wenn eine neue, nicht kritische Funktion installiert wird, ist sie für einen Zeitraum von 12 Monaten optional. Auf diese Weise können Sie und Ihr Unternehmen im Voraus planen, wann eine Funktion in Anspruch genommen und anhand Ihrer täglichen Abläufe getestet werden soll. Weitere Informationen finden Sie in den [FAQ zu Dienstupdates für eine Version](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
+Wenn eine neue, nicht kritische Funktion installiert wird, ist sie für einen Zeitraum von 12 Monaten optional. Auf diese Weise können Sie und Ihr Unternehmen im Voraus planen, wann eine Funktion in Anspruch genommen und anhand Ihrer täglichen Abläufe getestet werden soll. Weitere Informationen finden Sie in den [FAQ zu Dienstupdates für eine Version](../one-version.md#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Verwenden der Funktionsverwaltung zum Aktivieren von ISV-Funktionen oder benutzerdefinierten Funktionen
 
@@ -161,7 +161,7 @@ Die Richtlinie lautet, dass alle neuen Funktionen für einen Zeitraum von 12 Mon
 Das Aktualisierungs-Release-Timing ist variabel, das Umgebungs-Update-Timing ist variabel und Kunden können einige Updates überspringen. Infolgedessen sind bestimmte Daten schwer zu bestimmen. 
 
 ### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Wo ist die Dokumentation für Funktionen, die obligatorisch gemacht werden? 
-Diese Dokumentation stammt von den Anwendungsteams. Oft werden diese in [Entfernte oder veraltete Funktionen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features) erwähnt. 
+Diese Dokumentation stammt von den Anwendungsteams. Oft werden diese in [Entfernte oder veraltete Funktionen](../../../dev-itpro/migration-upgrade/deprecated-features.md) erwähnt. 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Gibt es eine produktinterne Benachrichtigung oder ein Signal, dass eine Funktion obligatorisch aktiviert werden muss? 
 Ein Benachrichtigungsmechanismus, der sich darauf bezieht, dass eine Funktion obligatorisch ist, gibt es heute nicht.

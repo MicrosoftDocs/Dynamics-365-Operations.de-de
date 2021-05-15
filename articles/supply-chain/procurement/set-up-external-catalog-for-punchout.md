@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9267047b4bf1ab4185efca9980e0f517f4b05096
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a816f6cff90b8292f66d73b12d328c3f56108957
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812519"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920556"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Externen Katalog für PunchOut-E-Procurement einrichten
 
@@ -40,7 +40,7 @@ Der externe Katalog sollte einem Mitarbeiter, der eine Bestellanforderung eingib
 
 1. Richten Sie eine Beschaffungskategoriehierarchie ein. Weitere Informationen finden Sie unter [Einrichten einer Beschaffungskategoriehierarchie](tasks/set-up-policies-procurement-category-hierarchies.md).
 2. Registrieren von Kreditoren in Supply Chain Management. Bevor Sie Konfigurationen für den Zugriff auf einen externen Lieferantenkatalog einrichten können, müssen Sie zuerst den Lieferanten und den Lieferantenkontakt in Microsoft Dynamics 365 einrichten. Der externe Lieferantenkatalog muss auch der ausgewählten Beschaffungskategorie zugeordnet werden. Weitere Informationen zum Registrieren von Kreditoren finden Sie unter Benutzer [für Kreditorenzusammenarbeit verwalten](manage-vendor-collaboration-users.md). Informationen zum Einrichten einer Beschaffungskategoriehierarchie und zum Zuordnen der Warencodes zu einer Beschaffungskategorie finden Sie unter [Lieferanten bestimmten Beschaffungskategorien zuweisen](tasks/approve-vendors-specific-procurement-categories.md).
-3. Stellen Sie sicher, dass die Maßeinheiten und die Währung, die vom Lieferanten verwendet werden, eingerichtet werden. Informationen zum Anlegen einer Mengeneinheit finden Sie unter [Mengeneinheit verwalten](../pim/tasks/manage-unit-measure.md).
+3. Stellen Sie sicher, dass die Maßeinheiten und die Währung, die vom Lieferanten verwendet werden, eingerichtet werden. Informationen darüber, wie Sie eine Maßeinheit erstellen, finden Sie unter [Maßeinheit verwalten](../pim/tasks/manage-unit-measure.md).
 4. Konfigurieren Sie den externen Lieferantenkatalog anhand der Anforderungen an die externe Katalogwebsite des Lieferanten. Genauere Informationen zu dieser Aufgabe finden Sie unter [Konfigurieren des externen Lieferantenkatalogs](#configure-the-external-vendor-catalog).
 5. Testen Sie die Konfigurationen des externen Lieferantenkatalogs. Überprüfen Sie dabei, ob die Einstellungen funktionieren und Sie auf den Katalog zugreifen können. Verwenden Sie die Aktion **Einstellungen überprüfen**, um die von Ihnen definierte Einrichtungsanforderungsnachricht zu überprüfen. Diese Nachricht soll auf die externe Lieferantenkatalogseite weiterleiten, die in einem Browserfenster geöffnet wird. Während der Prüfungs können Sie keine Artikel und Dienstleistungen beim Lieferanten bestellen. Zum Bestellen von Artikeln oder Dienstleistungen müssen Sie auf die Bestellanforderung des Lieferanten zugreifen.
 6. Aktivieren Sie den externen Katalog, indem Sie die Schaltfläche **Katalog aktivieren** auf der Seite **Externe Kataloge** verwenden. Der externe Katalog muss aktiviert werden, bevor Mitarbeiter ihn verwenden können. Sie können jederzeit den externen Katalog deaktivieren.

@@ -2,7 +2,7 @@
 title: Verwenden Sie JOIN-Datenquellen in ER-Modellzuordnungen, um Daten aus mehreren Anwendungstabellen abzurufen
 description: In diesem Thema wird erläutert, wie Sie JOIN-Typ-Datenquellen in der Elektronischen Berichterstellung (Electronic Reporting/ER) verwenden können.
 author: NickSelin
-ms.date: 05/04/2020
+ms.date: 04/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: d42016b914d7992b6f4ae1c573eb8f867ba87e22
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: be5646eaf395310c8b34586ef1274a41b5b97029
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743976"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944713"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Verwenden Sie JOIN-Datenquellen in ER-Modellzuordnungen, um Daten aus mehreren Anwendungstabellen abzurufen
 
@@ -64,13 +64,13 @@ Um die Beispiele in diesem Thema durchzuführen, müssen Sie Zugriff auf eines d
 
 Sie müssen außerdem zunächst die Schritte unter der Prozedur [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md) durchführen.
 
-Vorab müssen Sie auch die folgenden ER-Beispiel-Konfigurationsdateien vom [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=000000) herunterladen und lokal speichern:
+Im Vorfeld müssen Sie außerdem die folgenden Beispiel-ER-Konfigurationsdateien herunterladen und speichern:
 
 | **Inhaltsbeschreibung**  | **Dateiname**   |
 |--------------------------|-----------------|
-| **ER-Datenmodell**-Beispielkonfigurationsdatei, die als Datenquelle für die Beispiele verwendet wird.| [Model to learn JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| **ER-Datenmodellzuordnung**-Beispielkonfigurationsdatei, die das ER-Datenmodell für die Beispiele implementiert. | [Mapping to learn JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| **ER-Format**-Beispielkonfigurationsdatei. Diese Datei beschreibt die Daten zum Auffüllen der ER-Formatkomponente für die Beispiele. | [Format to learn JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| **ER-Datenmodell**-Beispielkonfigurationsdatei, die als Datenquelle für die Beispiele verwendet wird.| [Model to learn JOIN data sources.version.1.1.xml](https://download.microsoft.com/download/5/c/1/5c1d8a57-6ebd-425b-bc5d-c71dde92c6af/ModeltolearnJOINdatasources.version.1.xml) |
+| **ER-Datenmodellzuordnung**-Beispielkonfigurationsdatei, die das ER-Datenmodell für die Beispiele implementiert. | [Mapping to learn JOIN data sources.version.1.1.xml](https://user-images.githubusercontent.com/19827601/115923048-86b10400-a432-11eb-9e57-c37a02effcb4.png)|
+| **ER-Format**-Beispielkonfigurationsdatei. Diese Datei beschreibt die Daten zum Auffüllen der ER-Formatkomponente für die Beispiele. | [Format to learn JOIN data sources.version.1.1.xml](https://download.microsoft.com/download/f/f/8/ff8f1b48-14d0-4c73-9145-bcdf8b5265bc/FormattolearnJOINdatasources.version.1.1.xml) |
 
 ### <a name="activate-a-configurations-provider"></a>Aktivieren eines Konfigurationsanbieters
 
@@ -99,7 +99,7 @@ Vorab müssen Sie auch die folgenden ER-Beispiel-Konfigurationsdateien vom [Micr
     3. Wählen Sie **Durchsuchen** aus, um die **Format to learn JOIN data sources.version.1.1.xml**-Datei zu suchen.
     4. Wählen Sie **OK**.
 5. In der Konfigurationsstruktur erweitern Sie das Element **Model to learn JOIN data sources** sowie weitere Modellelemente (falls verfügbar).
-6. Achten Sie auf die Liste der ER-Konfigurationen in der Baumstruktur sowie die Versionsdetails auf der **Versionen**-Schnellregisterkarte – sie werden als Quelle der Daten für den Beispielbericht verwendet.
+6. Beachten Sie die Liste der ER-Konfigurationen im Baum sowie die Versionsangaben auf dem Inforegister **Versionen** – sie werden als Datenquelle für Ihren Beispielbericht verwendet.
 
     ![Elektronische Berichtskonfigurationen – Seite](./media/GER-JoinDS-ConfigurationsTree.PNG)
 
@@ -123,18 +123,18 @@ Vorab müssen Sie auch die folgenden ER-Beispiel-Konfigurationsdateien vom [Micr
 4. Wählen Sie **Details anzeigen**.
 5. In der Konfigurationsstruktur erweitern Sie die **Set1**- und **Set1.Details**-Datenmodellelemente:
 
-    1. Die Bindung **Details: Record list = Versions** gibt an, dass das **Set1.Details**-Element an die Datenquelle **Versionen** gebunden ist, die Datensätze der Tabelle **ERSolutionVersionTable** zurückgibt. Jeder Datensatz dieser Tabelle stellt eine einzelne Version einer ER-Konfiguration dar. Der Inhalt dieser Tabelle wird in der **Versionen**-Schnellregisterkarte auf der Seite **Varianten** angezeigt.
+    1. Die Bindung **Details: Record list = Versions** gibt an, dass das **Set1.Details**-Element an die Datenquelle **Versionen** gebunden ist, die Datensätze der Tabelle **ERSolutionVersionTable** zurückgibt. Jeder Datensatz dieser Tabelle stellt eine einzelne Version einer ER-Konfiguration dar. Der Inhalt dieser Tabelle wird im Inforegister **Versionen** auf der Seite **Konfigurationen** dargestellt.
     2. Die Bindung **ConfigurationVersion: String = @.PublicVersionNumber** bedeutet, dass der Wert der öffentlichen Version der jeweiligen ER-Konfigurationsversion aus dem Feld **PublicVersionNumber** der **ERSolutionVersionTable**-Tabelle übernommen und dem **ConfigurationVersion**-Element hinzugefügt wird.
     3. Die Bindung **ConfigurationTitle: String = @.'>Relations'.Solution.Name** gibt an, dass der Name einer ER-Konfiguration aus dem Feld **Name** der **ERSolutionTable**-Tabelle übernommen wird, durch Bewertung über die Viele-zu-Eins-Beziehung (**'>Relations'**) zwischen den Tabellen **ERSolutionVersionTable** und **ERSolutionTable**. Die Namen von ER-Konfigurationen der aktuellen Anwendungsinstanz werden in der Konfigurationsstruktur auf der Seite **Varianten** angezeigt.
     4. Die Bindung **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** bedeutet, dass der Name des Konfigurationsanbieters, der die aktuelle Konfiguration besitzt, aus dem Feld **Name** der Tabelle **ERVendorTable** übernommen wird, durch Bewertung über die Viele-zu-Eins-Beziehung zwischen den Tabellen **ERSolutionTable** und **ERVendorTable**. Die Namen von ER-Konfigurationsanbietern werden in der Konfigurationsstruktur auf der Seite **Varianten** der Seitenkopfzeile für die jeweilige Konfiguration angezeigt. Die gesamte Liste der ER-Konfigurationsanbieter kann auf der **Organisationsverwaltung \> Elektronische Berichterstellung \> Konfigurationsanbieter**-Tabellenseite gefunden werden.
 
-    ![ER-Modellzuordnungsdesigner – Seite](./media/GER-JoinDS-Set1Review.PNG)
+    ![ER-Model Zuordnung Designer Seite, Liste der gebundenen Datenmodellelemente](./media/GER-JoinDS-Set1Review.PNG)
 
 6. In der Konfigurationsstruktur erweitern Sie das **Set1.Summary**-Datenmodellelement:
 
     1. Die Bindung **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** gibt an, dass das **Set1.Summary.VersionsNumber**-Element an das **VersionsNumber**-Aggregationsfeld der **VersionsSummary**-Datenquelle des **GroupBy**-Typs gebunden ist, der konfiguriert wurde, um die Anzahl der Datensätze der **ERSolutionVersionTable**-Tabelle über die **Versionen**-Datenquelle zurückzugeben.
 
-    ![GROUPBY-Datenquellenparameter – Seite](./media/GER-JoinDS-Set1GroupByReview.PNG)
+    ![Seite 'Gruppieren nach' Parameter bearbeiten](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
 7. Schließen Sie die Seite.
 
@@ -144,11 +144,11 @@ Vorab müssen Sie auch die folgenden ER-Beispiel-Konfigurationsdateien vom [Micr
 
 1. In der Konfigurationsstruktur erweitern Sie die **Set2**- und **Set2.Details**-Datenmodellelemente. Die Bindung **Details: Record list = Details** gibt an, dass das Element **Set2.Details** an die **Details**-Datenquelle gebunden ist, die als Datenquelle des Typs **Join** konfiguriert ist.
 
-    ![ER-Modellzuordnungsdesigner – Seite](./media/GER-JoinDS-Set2Review.PNG)
+    ![ER-Model Mapping Designer-Seite mit erweiterten Set2:Datensatz-Datenmodellelementen](./media/GER-JoinDS-Set2Review.PNG)
 
     Die **Join**-Datenquelle kann hinzugefügt werden, indem die Datenquelle **Functions\Join** ausgewählt wird:
 
-    ![ER-Modellzuordnungsdesigner – Seite](./media/GER-JoinDS-AddJoinDS.PNG)
+    ![ER-Model Zuordnung Designer Seite, Typ der Datenquelle zuordnen](./media/GER-JoinDS-AddJoinDS.PNG)
 
 2. Wählen Sie die **Details**-Datenquelle aus.
 3. Wählen Sie **Bearbeiten** im Bereich **Datenquellen** aus.
@@ -196,21 +196,21 @@ Vorab müssen Sie auch die folgenden ER-Beispiel-Konfigurationsdateien vom [Micr
 
     Dieses Format wurde entwickelt, um eine generierte Textdatei mit einer neuen Position für jede Version einer EB-Konfiguration (**Version**-Nummernkreis) aufzufüllen. Jede generierte Position enthält den Namen eines Konfigurationsanbieters, der die aktuelle Konfiguration besitzt, den Namen der Konfiguration und die Version der Konfiguration, die von einem Semikolon getrennt wird. Die abschließende Position der generierten Datei enthält die Anzahl der erkannten Versionen von ER-Konfigurationen (**Zusammenfassung**-Nummernkreis).
 
-    ![ER-Formatdesigner – Seite](./media/GER-JoinDS-FormatReview.PNG)
+    ![ER-Format-Designer-Seite, Registerkarte Format](./media/GER-JoinDS-FormatReview.PNG)
 
     Die **Daten**- und **Zusammenfassung**-Datenquellen werden verwendet, um Konfigurationsversionsdetails für die generierte Datei aufzufüllen:
 
     - Die Informationen im **Set1**-Datenmodell werden verwendet, wenn Sie **Nein** für die Datenquelle **Auswahl** zur Laufzeit auf der Benutzerdialogfeldseite beim Ausführen des ER-Formats auswählen.
     - Die Informationen im **Set2**-Datenmodell werden verwendet, wenn Sie **Ja** für die Datenquelle **Auswahl** zur Laufzeit auf der Benutzerdialogfeldseite auswählen.
 
-    ![ER-Formatdesigner – Seite](./media/GER-JoinDS-FormatMappingReview.PNG)
+    ![ER-Format-Designer-Seite, Registerkarte Zuordnung](./media/GER-JoinDS-FormatMappingReview.PNG)
 
 9. Wählen Sie **Ausführen** aus.
 10. Wählen Sie auf der Dialogfeldseite **Nein** im Feld **JOIN-Datenquelle verwenden** aus.
 11. Wählen Sie **OK**.
 12. Überprüfen Sie die generierte Datei.
 
-    ![ER-Benutzerdialogfeld – Seite](./media/GER-JoinDS-Set1Run.PNG)
+    ![Elektronische Berichtsparameter generierte Datei, die keine JOIN-Datenquelle verwendet](./media/GER-JoinDS-Set1Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a>Analysieren der ER-Formatausführungsablaufverfolgung
 
@@ -224,7 +224,7 @@ Vorab müssen Sie auch die folgenden ER-Beispiel-Konfigurationsdateien vom [Micr
     - **ERSolutionTable** wurde so oft aufgerufen wie Konfigurationsversionsdatensätze in der Tabelle **ERSolutionVersionTable** vorhanden sind, während die Anzahl solcher Aufrufe zur Leistungsverbesserung verringert werden konnte.
     - **ERVendorTable** wurde zweimal aufgerufen für jeden Konfigurationsversionsdatensatz, der in der Tabelle **ERSolutionVersionTable** ermittelt wurde, während die Anzahl solcher Aufrufe ebenfalls verringert werden konnte.
 
-    ![ER-Modellzuordnungsdesigner – Seite](./media/GER-JoinDS-Set1Run2.PNG)
+    ![Ausführungsstatistik auf der Seite ER-Model Zuordnung Designer](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. Schließen Sie die Seite.
 
@@ -236,7 +236,7 @@ Vorab müssen Sie auch die folgenden ER-Beispiel-Konfigurationsdateien vom [Micr
 4. Wählen Sie **OK**.
 5. Überprüfen Sie die generierte Datei.
 
-    ![ER-Benutzerdialogfeld – Seite](./media/GER-JoinDS-Set2Run.PNG)
+    ![Elektronische Berichtsparameter generierte Datei mit JOIN-Datenquelle](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analysieren der ER-Formatausführungsablaufverfolgung
 
@@ -249,11 +249,11 @@ Vorab müssen Sie auch die folgenden ER-Beispiel-Konfigurationsdateien vom [Micr
 
     - Die Anwendungsdatenbank wurde einmal aufgerufen, um Datensätze von **ERVendorTable**, **ERSolutionTable** und **ERSolutionVersionTable** abzurufen, um auf Pflichtfelder zuzugreifen.
 
-    ![ER-Modellzuordnungsdesigner – Seite](./media/GER-JoinDS-Set2Run2.PNG)
+    ![ER-Model Zuordnung Designer-Seite Leistungsstatistik Details](./media/GER-JoinDS-Set2Run2.PNG)
 
     - Die Anwendungsdatenbank wurde einmal aufgerufen, um die Anzahl von Konfigurationsversionen zu berechnen, indem Verknüpfungen verwendet wurden, die in der **Details**-Datenquelle konfiguriert wurden.
 
-    ![ER-Modellzuordnungsdesigner – Seite](./media/GER-JoinDS-Set2Run3.PNG)
+    ![ER-Model-Zuordnungsdesigner-Seite mit Aufrufen der Anwendungsdatenbank](./media/GER-JoinDS-Set2Run3.PNG)
 
 ## <a name="limitations"></a>Einschränkungen
 

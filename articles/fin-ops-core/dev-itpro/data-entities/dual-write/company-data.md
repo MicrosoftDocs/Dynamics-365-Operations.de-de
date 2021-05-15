@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1c3af66c0b8daa120c6ba19bd910f7531ffada0e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6a858135d377b30d6e8885ae18b2dc50da11813b
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751409"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941028"
 ---
 # <a name="company-concept-in-dataverse"></a>Unternehmenskonzept in Dataverse
 
@@ -89,7 +89,7 @@ Es gibt verschiedene Möglichkeiten, den Unternehmensnamen in Kundenbindungs-App
 
     :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Durch Auswahl einer Zeile wird das Standardunternehmen geändert.":::
 
-+ Wenn Sie ein Systemkonfigurator oder -Administrator sind und Unternehmensdaten automatisch in ein benutzerdefiniertes Formular einfügen möchten, können Sie [Formularereignisse](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) verwenden. Fügen Sie einen JavaScript-Verweis auf **msdyn_/DefaultCompany.js** hinzu, und verwenden Sie die folgenden Ereignisse. Sie können jedes sofort einsatzbereite Formular verwenden, z. B. das **Konto**-Formular.
++ Wenn Sie ein Systemkonfigurator oder -Administrator sind und Unternehmensdaten automatisch in ein benutzerdefiniertes Formular einfügen möchten, können Sie [Formularereignisse](/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) verwenden. Fügen Sie einen JavaScript-Verweis auf **msdyn_/DefaultCompany.js** hinzu, und verwenden Sie die folgenden Ereignisse. Sie können jedes sofort einsatzbereite Formular verwenden, z. B. das **Konto**-Formular.
 
     + **OnLoad**-Ereignis für das Formular: Legen Sie die Spalte **defaultCompany** fest.
     + **OnChange**-Ereignis für die Spalte **Unternehmen**: Legen Sie die Spalte **updateDefaultCompany** fest.

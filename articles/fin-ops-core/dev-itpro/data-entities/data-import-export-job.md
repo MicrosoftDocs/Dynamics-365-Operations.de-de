@@ -2,7 +2,7 @@
 title: Einzelvorgänge für Datenimport und ‑export – Übersicht
 description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
 author: Sunil-Garg
-ms.date: 11/02/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cb38c812aed60bddadce25f66ec77f4e428be71
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750999"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937329"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
@@ -161,19 +161,7 @@ Um den Import von Daten zu beschleunigen, kann die parallele Verarbeitung des Im
     - Geben Sie im Feld **Importschwellenwert für Datensatzanzahl** die Anzahl der Schwellenwerte für den Import ein. Dies bestimmt die Anzahl der Datensätze, die von einem Thread verarbeitet werden sollen. Wenn eine Datei 10 KB an Datensätzen enthält, bedeutet eine Datensatzanzahl von 2500 mit einer Aufgabenanzahl von 4, dass jeder Thread 2500 Datensätze verarbeitet.
     - Im Feld **Aufgabenanzahl importieren** geben Sie die Anzahl der Importaufgaben ein. Dies darf die maximale Anzahl von Batch-Threads nicht überschreiten, die für die Stapelverarbeitung in **Systemadministration \>Serverkonfiguration** zugewiesen sind.
 
-## <a name="clean-up-the-staging-tables"></a>Bereinigen der Tabellen
-Mit Plattformupdate 29 wurde diese Funktion eingestellt. Sie wird durch eine neue Version der Bereinigungsfunktion für den Auftragsverlauf ersetzt, die nachstehend erläutert wird.
-
-Sie können Tabellen bereinigen, indem Sie die Funktion **Bereinigen der Tabellen** im **Datenverwaltung** Arbeitsbereich verwenden. Sie können folgende Optionen verwenden, um auszuwählen, welche Datensätze gelöscht werden sollen, aus den Stagingtabellen:
-
-- **Entität** – Wenn nur eine Entität angegeben wurde, werden alle Datensätze ab dieser Stagingtabellen Entität gelöscht. Wählen Sie diese Option aus, um alle Daten für die Entität zu allen Datenprojekten und allen Einzelvorgängen zu bereinigen.
-- **Auftrags-ID** – Wenn nur eine Einzelvorgangskennung angegeben wurde, werden alle Datensätze für allen Entitäten im ausgewählten Einzelvorgang aus den entsprechenden Tabellen gelöscht.
-- **Datenprojekte** – Wenn nur ein Datenprojekt aktiviert ist, werden alle Datensätze für alle Entitäten und zu allen Einzelvorgängen für das ausgewählte Datenprojekt gelöscht.
-
-Sie können auch die Optionen kombinieren, um den Datensatz einzuschränken, der gelöscht werden soll.
-
-## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Bereinigung des Auftragsverlaufs (verfügbar ab Plattformupdate 29)
-
+## <a name="job-history-clean-up"></a>Auftragshistorie bereinigen 
 Die Funktion zur Bereinigung des Auftragsverlaufs in der Datenverwaltung muss verwendet werden, um eine regelmäßige Bereinigung des Ausführungsverlaufs einzuplanen. Diese Funktion ersetzt die vorherige Bereinigungsfunktion für Stagingtabellen, die ab sofort nicht mehr bereitgestellt wird. Die folgenden Tabellen werden durch den Bereinigungsprozess bereinigt.
 
 -   Alle Stagingtabellen

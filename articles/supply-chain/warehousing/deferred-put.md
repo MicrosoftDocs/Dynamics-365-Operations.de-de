@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f571f80330d2cc7858ef11271b0466d71aa9709c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: e2c9fced9091e851683c7dd7727aff693043c433
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908010"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956277"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Verzögerte Verarbeitung der Lagerarbeit
 
@@ -108,5 +108,8 @@ Der Arbeitsbereich **Überwachung ausgehender Arbeit** hat zwei Kacheln, die Ihn
 
 Sie können verzögerte Einlagerungsverarbeitungsaufgaben löschen, die abgeschlossen wurden, indem Sie sie auswählen und sie auf der Seite löschen.
 
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+- [Verzögerte Verarbeitung des manuellen Bestandsumlagerungsvorgangs](deferred-processing-manual-inventory-movement.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

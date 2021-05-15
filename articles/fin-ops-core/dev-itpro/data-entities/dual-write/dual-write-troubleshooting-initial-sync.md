@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c716707140c85b06ad2f084c10c4b2d0ecfea82e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 709a3c332bb6d086910b257fee9cdec8d2bc81a2
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754013"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941054"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Probleme bei der anfänglichen Synchronisierung behandeln
 
@@ -192,7 +192,7 @@ Wenn Sie Zeilen mit Werten in der Debitorentabelle in den Spalten **ContactPerso
 6. Führen Sie die erste Synchronisierung noch einmal für die **Debitoren V3 (Konten)** Zuordnung aus. Da die Änderungsverfolgung deaktiviert ist, werden die Daten für **InvoiceAccount** und **ContactPersonId** von der Finance and Operations App zu Dataverse synchronisiert.
 7. Um die Daten für **Rechnungskonto** und **ContactPersonId** von Dataverse zu Finance and Operations zu synchronisieren, müssen Sie ein Datenintegrationsprojekt verwenden.
 
-    1. Erstellen Sie in Power Apps ein Datenintegrationsprojekt zwischen den Tabellen **Sales.Account** und **Finance and Operations apps.Customers V3**. Die Datenrichtung muss von Dataverse zu Finance and Operations App sein. Weil **Rechnungskonto** ein neues Attribut in dualem Schreiben ist, wollen Sie möglicherweise die anfängliche Synchronisierung dazu überspringen. Weitere Informationen finden Sie unter [Datenintegration in Dataverse](https://docs.microsoft.com/power-platform/admin/data-integrator).
+    1. Erstellen Sie in Power Apps ein Datenintegrationsprojekt zwischen den Tabellen **Sales.Account** und **Finance and Operations apps.Customers V3**. Die Datenrichtung muss von Dataverse zu Finance and Operations App sein. Weil **Rechnungskonto** ein neues Attribut in dualem Schreiben ist, wollen Sie möglicherweise die anfängliche Synchronisierung dazu überspringen. Weitere Informationen finden Sie unter [Datenintegration in Dataverse](/power-platform/admin/data-integrator).
 
         Das folgende Illustration zeigt ein Projekt, das **Kundenkonto** und **ContactPersonId** aktualisiert.
 

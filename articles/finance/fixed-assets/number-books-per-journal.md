@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fb2a25d9e2ffc26f0a37a09cdf3e28a7ca4b84bc
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c56b5a333854c9a95fdc74b8f98a3552ff0f7719
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892406"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944800"
 ---
 # <a name="number-of-books-per-journal"></a>Anzahl der Bücher pro Erfassung
 
@@ -47,9 +47,5 @@ Der Stapelverarbeitungsjob schließt geschlossene Bücher aus. Beispielsweise we
 Die Begrenzung der Anzahl der Bücher wird angewendet, wenn in derselben Erfassung keine doppelten Anlagen-IDs vorhanden sind. Wenn die Anlagen-ID jedoch mit der Buch-ID übereinstimmt, kann die Anzahl der Bücher pro Erfassung überschritten werden, um die Anlagen-ID in derselben Erfassung zu belassen.
 
 Beispielsweise gibt es 5.001 Anlagen-IDs, jeder Anlagen-ID sind drei Bücher zugeordnet, und jedes Anlagenbuch wird auf derselben Buchungsebene gebucht. Sie führen drei aufeinanderfolgende Monate lang eine Abschreibung ohne Zusammenfassung durch.  Die Abschreibungserfassung wird über einen Batch-Auftrag erstellt, und das System erstellt sieben Erfassungen mit 667 Anlagen-IDs und drei Büchern für jede Anlagen-ID. Das Ergebnis werden 2.001 Bücher sein. Daher werden in drei Monaten 6.003 Erfassungszeilen vorhanden sein, um dieselben Anlagen-IDs in derselben Erfassung zu verwalten. Das System erstellt außerdem eine Erfassung mit 332 Anlagen-IDs und drei Büchern für jede Anlage-ID. In drei Monaten wird es 2.988 Zeilen geben.
-
-> [!NOTE] 
-> Wenn der **Abschreibung zusammenfassen**-Parameter aktiviert wird, wenn Sie einen Abschreibungsvorschlag erstellen, und dann hat der Wert im Feld **Anzahl der Bücher pro Erfassung – Abschreibungsvorschlag** keine Auswirkung. In diesem Fall beträgt die Anzahl der Bücher pro Erfassung 6000, was die intern definierte Grenze darstellt.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

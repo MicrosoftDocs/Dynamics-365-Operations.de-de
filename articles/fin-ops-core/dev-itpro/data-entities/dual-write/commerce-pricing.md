@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: shajain
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-11-03
-ms.openlocfilehash: 364cc5adf0358ffa952750149ad31d62cbd35e87
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fa93b1262049d80148ff23b3d7223ec0f6c2fe68
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751433"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941165"
 ---
 # <a name="use-the-dynamics-365-commerce-pricing-engine-with-dynamics-365-sales"></a>Dynamics 365 Commerce-Preisgestaltungsmodul mit Dynamics 365 Sales verwenden
 
@@ -31,7 +31,7 @@ In diesem Thema wird die Verwendung des Microsoft Dynamics 365 Commerce-Preisges
 
 Das Dynamics 365 Commerce-Preisgestaltungsmodul unterstützt die meisten B2C-Preisszenarien (Business-to-Consumer), z. B. Preisgestaltung auf Filialebene, zugehörigkeits- und treuebasierte Preisgestaltung, Rabatte für Angebots-Sortimente, Mengenrabatte und Schwellenrabatte. Das Preisgestaltungsmodul verwendet komplexe Regeln, um den besten Preis für ein bestimmtes Angebot oder eine bestimmte Bestellung zu ermitteln.
 
-Wenn Sie [duales Schreiben](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview) verwenden, haben Sie drei Möglichkeiten für Ihre Preisgestaltungsanforderungen. Sie können mit der statischen Preisgestaltung arbeiten, die die Preisliste aus Dynamics 365 Sales verwendet, mit dem Preisgestaltungsmodul von Dynamics 365 Supply Chain Management oder mit dem Preisgestaltungsmodul von Dynamics 365 Commerce. Unter diesen Optionen eignet sich das Preisgestaltungsmodul von Commerce am besten für B2C-Szenarien.
+Wenn Sie [duales Schreiben](./dual-write-overview.md) verwenden, haben Sie drei Möglichkeiten für Ihre Preisgestaltungsanforderungen. Sie können mit der statischen Preisgestaltung arbeiten, die die Preisliste aus Dynamics 365 Sales verwendet, mit dem Preisgestaltungsmodul von Dynamics 365 Supply Chain Management oder mit dem Preisgestaltungsmodul von Dynamics 365 Commerce. Unter diesen Optionen eignet sich das Preisgestaltungsmodul von Commerce am besten für B2C-Szenarien.
 
 ## <a name="use-the-commerce-pricing-engine-in-sales"></a>Preisgestaltungsmodul von Commerce in Sales verwenden
 
@@ -42,7 +42,7 @@ Wenn Benutzer ein Angebot in Sales initiieren, kopiert das Framework für duales
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Bevor Sie das Preisgestaltungsmodul von Commerce in Sales verwenden können, müssen Sie die Schritte in [Prospect-to-Cash in Dual-Write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/) ausführen.
+- Bevor Sie das Preisgestaltungsmodul von Commerce in Sales verwenden können, müssen Sie die Schritte in [Prospect-to-Cash in Dual-Write](./dual-write-prospect-to-cash.md) ausführen.
 - Sie müssen die Bewertung von Handelsvereinbarungen für die manuelle Eingabe deaktivieren, indem Sie die folgenden Schritte ausführen:
 
     1. Rufen Sie in Ihrer Commerce-Umgebung **Debitoren \> Einrichtung \> Debitorenparameter** auf.
@@ -50,7 +50,7 @@ Wenn Benutzer ein Angebot in Sales initiieren, kopiert das Framework für duales
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Prospect-to-cash in Dual-Write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+[Prospect-to-cash in Dual-Write](./dual-write-prospect-to-cash.md)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

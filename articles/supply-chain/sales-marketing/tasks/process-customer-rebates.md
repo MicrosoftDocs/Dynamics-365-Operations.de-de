@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ed48d41926c801c9017867be2eaa9af85a94b119
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f29a5014b98daa5150e01b541a076237e45ff180
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817676"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951958"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Debitorenrückvergütungen generieren und verarbeiten
 
@@ -62,7 +62,7 @@ Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgener
 
 ## <a name="process-rebate-claims"></a>Nachlassansprüche verarbeiten
 1. Wechseln Sie zu **Navigationsbereich > Module > Vertrieb und Marketing > Debitorenrückvergütungen > Rückvergütungen**.
-    - Die Rückvergütungsseite agiert ein Werktisch, in dem Sie prüfen, genehmigen und können Prozeßrückvergütungsansprüche. Verarbeiten Sie nun die Ansprüche, die bei der Fakturierung eines Auftrags für Debitor US-009 erstellt wurden, der der Betreff der Rückvergütungsvereinbarung USMF-000001 ist.   
+    - Die Seite Rabatte dient als Werkbank, in der Sie Rabattanträge überprüfen, genehmigen und verarbeiten können. Verarbeiten Sie nun die Ansprüche, die bei der Fakturierung eines Auftrags für Debitor US-009 erstellt wurden, der der Betreff der Rückvergütungsvereinbarung USMF-000001 ist.   
     - Die erste Zeile stellt einen Rückvergütungsanspruch für 800 EUR, der auf dem Verkauf von 40 Einheiten des Produkts T0020 ist, berechnet bei 20 EUR pro Einheit dar. Dieses entspricht die Bedingungen der ersten Mengenpause in der Nachlassvereinbarung ab.  
     - Der zweite Anspruch liegt bei 2.400 EUR, der auf dem Verkauf von 60 Einheiten des Produkts T0020 ist, berechnet bei 40 EUR pro Einheit, aufgrund der zweiten Mengenpause in der Vereinbarung.  
     - Beide Ansprüche sind im Status „Zu berechnen“. Das bedeutet, dass sie mit einer Vereinbarung zugeordnet sind, die das Verkaufsleistung des Debitors auf Basis regelmäßiger verfolgt und dass sie neu berechnet werden müssen, um das Gesamtumsatzvolumen innerhalb der betreffenden Periode abzulegen.   

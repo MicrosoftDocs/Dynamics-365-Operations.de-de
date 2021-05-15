@@ -2,7 +2,8 @@
 title: Wenden Sie Inventareinstellungen an
 description: Dieses Thema behandelt Inventareinstellungen und beschreibt, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +16,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b2c44eb5ece74de15e22180abc6d9d0448ab401b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: dd3db0039525c18521ad6a42b2f281976b7b236a
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798888"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937409"
 ---
 # <a name="apply-inventory-settings"></a>Bestandseinstellungen anwenden
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema behandelt Inventareinstellungen und beschreibt, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
 
@@ -39,12 +41,17 @@ In Commerce Site Builder können Bestandsschwellenwerte und -bereiche für ein P
 
 ## <a name="inventory-settings"></a>Bestandeinstellungen
 
-In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiterungen \> Bestandsverwaltung** im Site Builder definiert. Es gibt vier Bestandeinstellungen, von denen eine veraltet (veraltet) ist:
+In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiterungen \> Bestandsverwaltung** im Site Builder definiert. Es gibt fünf Bestandseinstellungen, von denen eine veraltet ist (außer Betrieb genommen):
 
 - **Bestandsüberprüfung in App aktivieren** – Diese Einstellung aktiviert eine Produktbestandsüberprüfung. Wenn Sie Box-, Warenkorb- und Abholmodule kaufen, wird der Produkbestand überprüft und das Hinzufügen eines Produkts zum Warenkorb nur dann ermöglicht, wenn Bestand verfügbar ist.
 - **Lagerbestand basierend auf** – Diese Einstellung definiert, wie die Lagerbestände berechnet werden. Die verfügbaren Werte sind **Insgesamt verfügbar**, **Physisch verfügbar** und **Nicht verfügbar**. In Commerce Site Builder können die Bestandsschwellenwerte und -bereiche für ein Produkt oder eine Kategorie definiert werden. Die Inventar-APIs geben Produktbestandinformationen für die Eigenschaft **Insgesamt verfügbar** und **Physisch verfügbar** zurück. Der Händler entscheidet, ob der Wert **Insgesamt verfügbar** oder **Physisch verfügbar** verwendet wird, um die Anzahl der Bestände und die entsprechenden Bereiche für den Status Lagerbestand verfügbar und Lagerbestand nicht verfügbar zu bestimmen.
 
     Der Wert **Nicht vorrätige Schwelle** des **Lagerbestand basierend auf** Einstellungen ist ein alter (veralteter) Wert. Wenn er ausgewählt ist, wird die Bestandanzahl aus den Ergebnissen des Werts **Insgesamt verfügbar** ermittelt, aber der Schwellenwert wird durch die Einstellung **Nicht vorrätige Schwelle** numerische Einstellung definiert, die später beschrieben wird. Diese Schwellenwerteinstellung gilt für alle Produkte auf einer E-Commerce-Website. Wenn der Lagerbestand unter dem Schwellenwert liegt, gilt ein Produkt als nicht vorrätig. Ansonsten gilt es als auf Lager. Die Möglichkeiten des Werts **Nicht vorrätige Schwelle** ist begrenzt und wir empfehlen nicht, ihn in Version 10.0.12 und höher zu verwenden.
+
+- **Bestand für mehrere Lagerorte** – Mit dieser Einstellung kann der Bestand gegen den Standardlagerort oder mehrere Lagerorte berechnet werden. Die Option **Basierend auf individuellem Lagerort** wird die Bestände basierend auf dem Standardlagerort berechnen. Alternativ kann eine E-Commerce-Seite auf mehrere Lagerorte verweisen, um die Erfüllung zu erleichtern. In diesem Fall wird die Option **Basierend auf Aggregat für Versand und Abholung Lagerorte** verwendet, um die Verfügbarkeit des Bestands anzuzeigen. Wenn ein Debitor z. B. ein Element kauft und „Versand“ als Liefermodus auswählt, kann das Element von jedem Lagerort in der Erfüllungsgruppe versendet werden, der über einen verfügbaren Bestand verfügt. Auf der Produktdetailseite (PDP) wird für den Versand die Nachricht „Auf Lager“ angezeigt, wenn ein verfügbares Versandlager in der Erfüllungsgruppe über Bestand verfügt. 
+
+> [!IMPORTANT] 
+> Die Einstellung **Bestandsebene für mehrere Lagerorte** ist ab der Commerce-Version 10.0.19 verfügbar. Wenn Sie ein Update von einer älteren Version von Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen finden Sie unter [SDK- und Modulbibliotheks-Updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Bestandsbereiche** – Diese Einstellung definiert die Bestandbereiche, für die die Meldung vor Ort angezeigt wird. Er ist nur anwendbar, wenn entweder der **Insgesamt verfügbar** oder der Wert **Physisch verfügbar** ausgewählt für die Einstellung **Lagerbestand basierend auf**. Die verfügbaren Werte sind **Alle**, **Niedrig und vergriffen** und **Ausverkauft**.
 
@@ -61,15 +68,15 @@ In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiteru
 
 Kaufbox, Wunschliste, Filialauswahl, Warenkorb und Warenkorbsymbolmodule verwenden Bestandeinstellungen, um die Inventarbereiche und Meldungen anzuzeigen.
 
-Das folgende Bild zeigt ein Beispiel für eine Produktdetailseite (PDP), auf der eine Meldung Auf Lager (Verfügbar) angezeigt wird.
+In dem Beispiel in der folgenden Abbildung zeigt eine PDP die Nachricht „Auf Lager“ („Verfügbar“) an.
 
 ![Beispiel eines PDP-Moduls mit einer Nachricht auf Lager](./media/pdp-InStock.png)
 
-Das folgende Bild zeigt ein Beispiel für eine Produktdetailseite (PDP), auf der eine Meldung Nicht auf Lager (Nicht Verfügbar) angezeigt wird.
+Im Beispiel in der folgenden Abbildung zeigt eine PDP die Nachricht „Nicht vorrätig“ an.
 
 ![Beispiel eines PDP-Moduls mit einer Nachricht Nicht auf Lager](./media/pdp-outofstock.png)
 
-Das folgende Bild zeigt ein Beispiel für einen Einkaufswagen, mit der Meldung auf Lager (Verfügbar).
+Im Beispiel in der folgenden Abbildung zeigt ein Warenkorb die Nachricht „Auf Lager“ („Verfügbar“).
 
 ![Beispiel eines Einkaufswagenmoduls mit einer Nachricht auf Lager](./media/cart-instock.png)
 

@@ -2,7 +2,7 @@
 title: Verwalten von Urlaub und Abwesenheitsanfragen
 description: Urlaubs- und Abwesenheitsanträge anzeigen und genehmigen in Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 53d4651b60da63243547ee8a5da6e105705640c3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 301b8978264dd3cb517652492a0b1791df63e6f3
+ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790739"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924802"
 ---
 # <a name="manage-leave-and-absence-requests"></a>Urlaubs- und Abwesenheitsanforderungen verwalten
 
@@ -31,9 +31,20 @@ Verwalten Sie Abwesenheitsanträge über den Arbeitsbereich **Mitarbeiter-Self-S
 
 1. Wählen Sie auf der Startseite **Mitarbeiter-Self-Service** **Mein Team** aus.
 
-2. Unter **Meine Teaminformationen** wählen Sie die **Urlaub und Abwesenheit** Registerkarte aus. 
+2. Unter **Meine Teaminformationen** wählen Sie die **Urlaub und Abwesenheit** Registerkarte aus.
 
 3. Zeigen Sie ggf. die Abwesenheitsanträge Ihrer Teammitglieder an und genehmigen Sie sie.
+
+## <a name="preview-leave-request-workflow-experience-enhancements"></a>(Vorschau) Erfahrungsverbesserungen für Urlaubsanforderungsworkflow
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+Diese Funktion für die Vorschau bietet die folgenden Erweiterungen:
+
+- Sie können mehrere Abwesenheitsanträge auswählen und für alle die gleiche Aktion durchführen.
+- Das Menüband am oberen Rand und eine neue Schaltfläche für den Workflow auf der Seite zeigen die Aktionen, die Sie bei Urlaubsanträgen durchführen können.
+
+![Manager-Erfahrung](media/hr-leave-and-absence-manager-experience.png)
 
 ## <a name="see-also"></a>Siehe auch
 

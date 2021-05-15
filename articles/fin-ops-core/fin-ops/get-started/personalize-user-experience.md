@@ -2,7 +2,7 @@
 title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie die App personalisieren können.
 author: jasongre
-ms.date: 09/11/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efc5afc9d685954bf736686bbed3e7575f76e7e7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744692"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944532"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
@@ -98,7 +98,7 @@ Sie können das Eigenschaftenfenster verwenden, um ein Element in folgender Hins
 
 Das Eigenschaftenfenster kann andere Personalisierungsfunktionen enthalten, abhängig vom Element. Beispielsweise können Sie mit dem Eigenschaftenfenster für eine Kachel diese in einem Dashboard höher stufen, und die Eigenschaftenfenster für die Elemente des Standard-Dashboards lassen Sie möglicherweise einen neuen Arbeitsbereich personalisieren.
 
-### <a name="the-personalization-toolbar"></a>Personalisierungssymbolleiste
+### <a name="personalization-toolbar"></a>Personalisierungssymbolleiste
 
 Wenn Sie mehrere Änderungen auf einer Seite oder Änderungen vornehmen möchten, die über keine anderen Mechanismen (z. B. Elemente neu anordnen) verfügbar sind, können Sie die Symbolleiste **Personalisierung** verwenden. Um die Symbolleiste **Personalisierung** zu öffnen, führen Sie die folgenden Schritte aus:
 
@@ -173,7 +173,90 @@ Eine einzigartige Personalisierungsfunktion, die im Dashboard verfügbar ist, is
 
 ## <a name="sharing-personalizations"></a>Personalisierungen freigeben
 
-Nach dem Personalisieren einer Seite können Sie die Personalisierungen mit anderen Benutzern teilen, indem Sie die personalisierte exportieren. Sie können dann andere Benutzer auffordern, die Personalisierungsdatei zu importieren. Alternativ können Sie die Personalisierungen an einen Benutzer geben, der Administratorrechte besitzt. Dieser Benutzer kann dann Ihre Personalisierungsdatei auf viele Benutzer gleichzeitig anwenden, indem er die Administratorseite **Personalisierung** nutzt.
+Nachdem Sie eine Seite personalisiert haben, gibt es einige Methoden, die Sie verwenden können, um Ihre Personalisierungen mit anderen Benutzern zu teilen. In der folgenden Liste sind die Methoden in der Reihenfolge von am meisten empfohlen bis am wenigsten empfohlen angeordnet.
+
+1. Veröffentlichen von Ansichten für Benutzer.
+2. Kopieren Sie Ansichten oder Personalisierungen auf Benutzer.
+3. Exportieren und importieren Sie Ansichten oder Personalisierungen.
+
+### <a name="publish-views-to-users"></a>Ansichten an Benutzer veröffentlichen
+
+Wenn die Funktion [Gespeicherte Ansichten](saved-views.md) eingeschaltet ist und die Seite Ansichten unterstützt, ist der beste Weg, Personalisierungen mit anderen Benutzern zu teilen, die Ansicht für Benutzer zu veröffentlichen, die eine oder mehrere Sicherheitsrollen haben. Weitere Informationen finden Sie unter [Veröffentlichen von Ansichten](saved-views.md#publishing-views).
+
+### <a name="copy-views-or-personalizations-to-users"></a>Kopieren von Ansichten oder Personalisierungen auf Benutzer
+
+Wenn die Funktion [Gespeicherte Ansichten](saved-views.md) ausgeschaltet ist oder wenn die Seite keine Ansichten unterstützt, ist die empfohlene Art, Personalisierungen gemeinsam zu nutzen, sie zwischen Benutzern zu kopieren. Diese Methode ist nur für privilegierte Benutzer (z. B. Systemadministratoren) verfügbar. Admins können jedoch die Personalisierung eines bestimmten Benutzers im System nachschlagen (einschließlich der persönlichen Ansicht des Benutzers, wenn gespeicherte Ansichten aktiviert sind) und die Konfiguration auf andere Benutzer kopieren.
+
+Wenn gespeicherte Ansichten aktiviert sind, führen Sie diese Schritte aus, um Personalisierungen zu kopieren.
+
+1. Gehen Sie zu **Systemverwaltung \> Einrichten \> Personalisierung**.
+2. Führen Sie diese Schritte aus, um persönliche Ansichten zu kopieren:
+
+    1. Wählen Sie **Persönliche Ansichten**.
+    2. Markieren Sie die gewünschten Ansichten in der Liste.
+    3. Wählen Sie **Kopieren auf Benutzer**.
+    4. Wählen Sie die Benutzer aus, an die die Ansichten verteilt werden sollen.
+
+    Führen Sie diese Schritte aus, um Personalisierungen auf Seiten zu kopieren, die keine Ansichten unterstützen:
+
+    1. Wählen Sie **Benutzer-Einstellungen**.
+    2. Wählen Sie den Benutzer, der die Personalisierung hat, die Sie verteilen wollen.
+    3. Wählen Sie **Alle Personalisierungen verwalten**.
+    4. Markieren Sie die gewünschten Personalisierungen in der Liste.
+    5. Wählen Sie **Kopieren auf Benutzer**.
+    6. Wählen Sie die Benutzer aus, an die die Personalisierungen verteilt werden sollen.
+
+Wenn gespeicherte Ansichten nicht aktiviert sind, führen Sie diese Schritte aus, um eine Personalisierung zu kopieren.
+
+1. Gehen Sie zu **Systemverwaltung \> Einrichten \> Personalisierung**.
+2. Wählen Sie **Anwenden** aus.
+3. Wählen Sie die Benutzer aus, an die die Personalisierung verteilt werden soll.
+4. Wählen Sie **Vorhandene Personalisierung wählen**.
+5. Suchen und wählen Sie die (einzelne) Personalisierung, die Sie interessiert.
+6. Wählen Sie **OK**.
+
+### <a name="export-and-import-views-or-personalizations"></a>Ansichten oder Personalisierungen exportieren und importieren
+
+Eine andere Möglichkeit, Personalisierungen gemeinsam zu nutzen, ist über Export und Import. Einzelne Benutzer oder ein Admin, der in ihrem Namen handelt, können diese Methode verwenden, um ihre Personalisierungen oder Ansichten zu exportieren und die exportierte Datei dann anderen Benutzern zum Importieren zu geben. Alternativ können Benutzer ihre exportierten Personalisierungen einem Benutzer mit Admin-Rechten übergeben, und dieser Benutzer kann dann die Verwaltungsseite **Personalisierung** verwenden, um die Personalisierungsdatei auf viele Benutzer gleichzeitig anzuwenden.
+
+#### <a name="export"></a>Warenexport
+
+Allgemein können Sie eine Ihrer eigenen Ansichten oder Personalisierungen exportieren, indem Sie die entsprechende Seite öffnen, die Werkzeugleiste **Personalisierung** öffnen und dann **Exportieren** wählen. Weitere Informationen über die Symbolleiste finden Sie im Abschnitt [Personalisierungs-Symbolleiste](#personalization-toolbar) weiter oben in diesem Thema. Alternativ können Sie, wenn [Gespeicherte Ansichten](saved-views.md) aktiviert sind, zu **Einstellungen \> Benutzeroptionen \> Personalisierung** gehen, um eine Liste aller Ihrer Personalisierungen im System anzuzeigen. Von dort aus können Sie die Ansichten oder Personalisierungen auswählen, die exportiert werden sollen, und dann **Exportieren** wählen.
+
+Zusätzlich können Admins die Personalisierungen anderer Benutzer exportieren, indem sie diese Schritte ausführen.
+
+1. Gehen Sie zu **Systemverwaltung \> Einrichten \> Personalisierung**.
+2. Wählen Sie auf der Registerkarte **Benutzer** den gewünschten Benutzer.
+3. Suchen und wählen Sie die Ansicht oder Personalisierung, die Sie interessiert.
+4. Wählen Sie **Exportieren**.
+
+#### <a name="import"></a>Warenimport
+
+Um eine Ansicht oder Personalisierung zu importieren, öffnen Sie einfach die Werkzeugleiste **Personalisierung** und wählen **Importieren**. Zusätzlich können Admins eine Datei importieren und sie sofort an einen oder mehrere Benutzer weitergeben.
+
+Wenn gespeicherte Ansichten aktiviert sind, führen Sie diese Schritte aus.
+
+1. Gehen Sie zu **Systemverwaltung \> Einrichten \> Personalisierung**.
+2. Wählen Sie im Aktivitätsbereich **Ansichten importieren \> Benutzeransichten**.
+3. Wählen Sie den Importmodus:
+
+    - **Bestimmte Benutzer auswählen** – Geben Sie die Ansicht oder Personalisierung an ausgewählte Benutzer weiter.
+    - **Importieren im Ist-Zustand** – Importieren Sie die Ansicht oder Personalisierung mit demselben Benutzer, der sie exportiert hat.
+
+4. Wählen Sie **Durchsuchen**, und suchen und wählen Sie die zu importierende Personalisierung.
+5. Wählen Sie **Weiter**.
+6. Wenn Sie in Schritt 3 **Bestimmte Benutzer auswählen** gewählt haben, wählen Sie die Benutzer aus, für die die Personalisierung importiert werden soll.
+7. **Import** auswählen
+8. Lösen Sie Konflikte wie erforderlich auf.
+
+Wenn gespeicherte Ansichten nicht aktiviert sind, führen Sie diese Schritte aus.
+
+1. Gehen Sie zu **Systemverwaltung \> Einrichten \> Personalisierung**.
+2. Wählen Sie **Anwenden** aus.
+3. Wählen Sie die Benutzer aus, an die die Personalisierung verteilt werden soll.
+4. Wählen Sie **Personalisierungen aus einer Datei importieren**.
+5. Wählen Sie **Durchsuchen**, und suchen und wählen Sie die zu importierende Personalisierung.
+6. Wählen Sie **OK**.
 
 ## <a name="administration-of-personalizations"></a>Verwalten der Personalisierungen
 
@@ -184,8 +267,11 @@ Für Kunden, die die Funktion **Gespeicherte Ansichten** aktiviert haben, gibt e
 Für Kunden, die die Funktion [Gespeicherte Ansichten](saved-views.md) noch nicht aktiviert haben, hat diese Seite vier Registerkarten:
 
 - **Anwenden** - Sie können eine Personalisierung für einen oder mehrere Benutzer auswählen. Um eine Personalisierung für einen oder mehrere Benutzer anzuwenden, wählen Sie zuerst eine Rolle und Benutzer aus, die diese Rolle besitzen. Wählen Sie anschließend eine vorhandene Personalisierung aus, um die ausgewählten Benutzer zu übernehmen oder importieren Sie eine Personalisierung. Die Personalisierung wird geprüft und auf alle ausgewählten Benutzer angewendet, wenn diese die ausgewählte Seite das nächste Mal öffnen.
+
 - **Löschen** – Sie können eine Seiten- oder Arbeitsbereichspersonalisierung für einen oder mehrere Benutzer löschen. Wählen Sie eine Seite oder einen Arbeitsbereich aus, um die Liste der Benutzer zu sehen, die diese Seite personalisiert haben. Anschließend wählen Sie die Benutzer, die für diese deaktivierte Seite oder Arbeitsbereich aus und wählen Sie **Löschen** aus. Alle Personalisierungen, die die ausgewählten Benutzer auf die ausgewählte Seite oder den ausgewählten Arbeitsbereich angewendet haben, werden gelöscht. Diese Aktion kann nicht rückgängig gemacht werden. Wenn eine Personalisierung für die Seite oder den Arbeitsbereich gespeichert wurde, dann kann die Personalisierung neu importiert werden.
+
 - **Benutzer** – Wählen Sie einen Benutzer aus, um die Liste der Seiten anzuzeigen, die der Benutzer personalisiert hat. Sie können dann die Möglichkeit aktivieren oder deaktivieren, um zu bestimmen, ob der Benutzer Personalisierungen für bestimmte Seiten oder das gesamte System verwenden kann oder nicht. Sie können Personalisierungen auch löschen, importieren oder exportieren für diesen Benutzer. Darüber hinaus können Sie Funktionslegenden für den Benutzer zurücksetzen. In diesem Fall, wenn der Benutzer zuvor Popup-Fenster, die neue Funktionen einführen, abgelehnt hat, werden sie beim nächsten Mal, wenn der Benutzer auf diese Funktionen trifft, wieder angezeigt.
+
 - **System** – Sie können temporär Personalisierungen im System für alle Benutzer deaktivieren. In diesem Fall werden alle Personalisierungen für alle Benutzer gelöscht und alle Seiten auf ihren Standardstatus zurückgesetzt. Wenn Sie die Personalisierungen später wieder reaktivieren, werden diese wieder angewendet. Sie können temporär alle Personalisierungen im System für alle Benutzer deaktivieren oder abschalten. Es gibt keine Möglichkeit, Personalisierungen wiederherzustellen, die gelöscht wurden. Deshalb müssen Sie vor diesem Schritt sicherstellen, dass Sie alle Personalisierungen exportiert haben, die Sie später importieren möchten.
 
 ## <a name="personalizing-inventory-dimensions"></a>Personalisierung von Lagerungsdimensionen

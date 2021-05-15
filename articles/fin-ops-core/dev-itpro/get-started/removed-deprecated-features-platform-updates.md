@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ac3b5274aaea2e267685e80d051c81489ece50eb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 782a147794bc30251ad60f5d788d1255a9d02b5f
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814319"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923537"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
@@ -30,7 +30,7 @@ Dieses Thema beschreibt Funktionen, die in den Plattform-Updates von Finance and
 
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
-Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Die Funktion wurde mit Wirkung zum 28. Januar 2021 entfernt.
 
@@ -123,7 +123,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Im Allgemeinen bietet benutzerdefinierter Code nur begrenzte Vorteile und erfordert gleichzeitig erhebliche Ressourcen und Rechenleistung für den Support. Benutzerdefinierter Code wird hauptsächlich von Berichtsautoren verwendet, um öffentliche Methoden aus einer benutzerdefinierten Codeassembly aufzurufen. Der in der Cloud gehostete Dienst unterstützt jedoch keine Verweise auf benutzerdefinierte Assemblys für SSRS-Berichte. |
-| **Ersetzt durch eine andere Funktion?**   | Berichtsautoren können weiterhin öffentliche .NET-APIs für Mathematik‑, Konvertierungs‑ und Formatierungsvorgänge aus einem beliebigen Textfeldausdruck referenzieren. Weitere Informationen finden Sie unter [Code zu einem Bericht (SSRS) hinzufügen](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Ersetzt durch eine andere Funktion?**   | Berichtsautoren können weiterhin öffentliche .NET-APIs für Mathematik‑, Konvertierungs‑ und Formatierungsvorgänge aus einem beliebigen Textfeldausdruck referenzieren. Weitere Informationen finden Sie unter [Code zu einem Bericht (SSRS) hinzufügen](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
 | **Betroffene Produktbereiche**         | Teilmenge der in RDL definierten Anwendungsberichtsentwürfe, die benutzerdefinierten Code enthalten. |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Ab Version 10.0.13 gibt der Compiler eine Warnung für Fälle aus, in denen benutzerdefinierter Code in einer SSRS-Berichtsdefinition erkannt wird. Öffnen Sie die Berichtsentwurfsdefinition und entfernen Sie alle benutzerdefinierten Codeartefakte, um das Problem zu beheben. Diese Warnung wird in einem zukünftigen Update durch einen Compiler-Fehler ersetzt.   |
@@ -178,7 +178,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Der Prozess zum Verschieben von IP in sichere Listen hat sich geändert. Self-Service unterstützt keine IP-sichere Listen mehr. |
-| **Ersetzt durch eine andere Funktion?**   | Weitere Informationen finden Sie unter [Konfigurieren von Azure Active Directory Bedingter Zugriff](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Ersetzt durch eine andere Funktion?**   | Weitere Informationen finden Sie unter [Konfigurieren von Azure Active Directory Bedingter Zugriff](/appcenter/general/configuring-aad-conditional-access).|
 | **Betroffene Produktbereiche**         | Sicherheit |
 | **Bereitstellungsoption**              | Cloud |
 | **Status**                         | **Veraltet:** Diese Funktion ist für Self-Service-Bereitstellungen nicht mehr verfügbar. |
@@ -223,7 +223,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Workflow |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Die Benutzerauswahl-Dropdown-Liste wurde aus dem Dialogfeld zur Änderung der Anforderung in Plattform-Update 32 entfernt. Änderungsanfragen werden automatisch wie vorgesehen an den Absender gesendet. Weitere Informationen über diese Funktionalität finden Sie unter [Aktionen in Workflow-Genehmigungsprozessen](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change). |
+| **Status**                         | Die Benutzerauswahl-Dropdown-Liste wurde aus dem Dialogfeld zur Änderung der Anforderung in Plattform-Update 32 entfernt. Änderungsanfragen werden automatisch wie vorgesehen an den Absender gesendet. Weitere Informationen über diese Funktionalität finden Sie unter [Aktionen in Workflow-Genehmigungsprozessen](../../fin-ops/organization-administration/workflow-actions.md?toc=%2fdynamics365%2fcommerce%2ftoc.json#request-change). |
 
 ### <a name="embedded-drill-through-links-are-no-longer-supported-in-paginated-documents-rendered-by-the-cloud-hosted-service"></a>Eingebettete Drillthrough-Links werden in paginierten Dokumenten, die vom Cloud-gehosteten Dienst gerendert werden, nicht mehr unterstützt 
 
@@ -233,7 +233,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Ersetzt durch eine andere Funktion?**   | Nr. |
 | **Betroffene Produktbereiche**         | Bericht |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Diese Funktion wird aktiv aus dem Dienst entfernt.<br><br>Der moderne Client bietet zahlreiche Optionen zum Erstellen von Ansichten, einschließlich automatisch generierter Links zur Unterstützung der Navigation in der Anwendung. Vom Dienst bereitgestellte paginierte Dokumente werden für externe Kommunikation empfohlen, die per E-Mail gesendet, archiviert und für Empfänger gedruckt werden. Wir haben die Vorschau von Dokumenten direkt im Browser verbessert, der direkten Zugriff auf lokale Drucker bietet. Weitere Informationen finden Sie unter [Vorschau von PDF-Dokumenten mit einem eingebetteten Viewer](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/preview-pdf-documents). |
+| **Status**                         | Diese Funktion wird aktiv aus dem Dienst entfernt.<br><br>Der moderne Client bietet zahlreiche Optionen zum Erstellen von Ansichten, einschließlich automatisch generierter Links zur Unterstützung der Navigation in der Anwendung. Vom Dienst bereitgestellte paginierte Dokumente werden für externe Kommunikation empfohlen, die per E-Mail gesendet, archiviert und für Empfänger gedruckt werden. Wir haben die Vorschau von Dokumenten direkt im Browser verbessert, der direkten Zugriff auf lokale Drucker bietet. Weitere Informationen finden Sie unter [Vorschau von PDF-Dokumenten mit einem eingebetteten Viewer](../analytics/preview-pdf-documents.md). |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Frühere Ankündigungen über entfernte oder veraltete Funktionen
 Um mehr über Funktionen zu erfahren, die in früheren Versionen entfernt oder veraltet sind, siehe [Entfernte oder veraltete Funktionen in früheren Versionen](../migration-upgrade/deprecated-features.md).

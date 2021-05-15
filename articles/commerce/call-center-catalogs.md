@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a091e059d4528c356a5038c750cac3a3f31a7edb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3758ff51de8217a209b40d7dd461e42ea9632f0a
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799646"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936881"
 ---
 # <a name="call-center-catalogs"></a>Callcenterkataloge
 
@@ -39,7 +39,7 @@ Direct-to-Consumer-Marketing-Unternehmen sind sehr darauf ausgerichtet, die Reak
 
 Gehen Sie zu **Einzelhandel und Handel**\> **Kataloge und Sortimente** \> **Alle Kataloge**, um Ihren Katalog zu konfigurieren.
 
-Wenn Sie einen neuen Katalog anlegen, müssen Sie diesen zunächst mit einem oder mehreren Kanälen verknüpfen. Dies geschieht im Inforegister **Commerce-Kanäle** im Formular **Katalogeinrichtung**. Klicken Sie auf **Hinzufügen** und wählen Sie einen oder mehrere Kanäle aus. Nur Artikel, die mit dem ausgewählten Kanal [Sortimente](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments) verknüpft sind, können bei der Erstellung des Katalogs verwendet werden.
+Wenn Sie einen neuen Katalog anlegen, müssen Sie diesen zunächst mit einem oder mehreren Kanälen verknüpfen. Dies geschieht im Inforegister **Commerce-Kanäle** im Formular **Katalogeinrichtung**. Klicken Sie auf **Hinzufügen** und wählen Sie einen oder mehrere Kanäle aus. Nur Artikel, die mit dem ausgewählten Kanal [Sortimente](/dynamics365/unified-operations/retail/assortments) verknüpft sind, können bei der Erstellung des Katalogs verwendet werden.
 
 Um Produkte in einen Katalog aufzunehmen, muss eine Navigationshierarchie gewählt werden. Die Navigationshierarchie unterstützt die Kategoriestruktur für den Katalog. Sie müssen aus einer der Navigationshierarchien wählen, die mit den ausgewählten Kanäle auf dem Inforegister **Commerce-Kanäle** der Seite **Katalog** verknüpft sind. Wenn ein Navigationskanal vorher nicht mit einem Kanal verknüpft war, gehen Sie zu **Einzelhandel und Handel** \>**Kanaleinrichtung**\>**Kanalkategorien und Produktattribute**, um eine Navigationshierarchievorgabe mit jedem Ihrer Einzelhandelskanäle zu verknüpfen.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6539bf6acf0216f1491cbf852f2c9a7063fbe26e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9fffe8aa99641846c0052dfa4a42856c8dddb8a5
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752865"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923224"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Neuheiten und Änderungen in Dynamics AX 7.0 (Februar 2016)
 
@@ -732,7 +732,7 @@ Die Einzelhandel-Server und Datenverwaltung bietet Kunden und Unternehmen die M�
 </tr>
 <tr>
 <td>Verschieben Sie Daten zwischen dem Microsoft Dynamics AX Back-Office und Kanälen, indem Commerce Data Exchange verwenden.</td>
-<td>Commerce Data Exchange ist ein System, das Daten zwischen Microsoft Dynamics AX und den Handelskanälen wie Online-Shops oder Filialen überträgt. Weitere Informationen finden Sie unter <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>Commerce Data Exchange ist ein System, das Daten zwischen Microsoft Dynamics AX und den Handelskanälen wie Online-Shops oder Filialen überträgt. Weitere Informationen finden Sie unter <a href="/dynamicsax-2012/appuser-itpro/commerce-data-exchange">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>Es besteht eine funktionale Parität mit Microsoft Dynamics AX 2012 CU8. Beachten Sie jedoch die folgenden Details:
 <ul>
 <li>Commerce Data Exchange wurde für die Cloud überarbeitet.</li>

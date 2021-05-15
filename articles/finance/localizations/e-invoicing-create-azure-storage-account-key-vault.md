@@ -2,7 +2,7 @@
 title: Erstellen eines Azure-Speicherkontos und eines Schlüsseltresors
 description: In diesem Thema wird erläutert, wie Sie ein Azure-Speicherkonto und einen Schlüsseltresor erstellen.
 author: gionoder
-ms.date: 02/12/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893801"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963238"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Erstellen eines Azure-Speicherkontos und eines Schlüsseltresors
 
@@ -80,6 +80,10 @@ In diesem Thema führen Sie zwei Hauptschritte aus:
 11. Wählen Sie **Hinzufügen** aus und wählen Sie dann **Änderungen am Schlüsseltresor speichern** aus.
 12. Kopieren Sie auf der Seite **Übersicht** den Wert von **DNS-Name** für den Schlüsseltresor. Dieser Wert wird während der Einrichtung des Service in RCS verwendet und als *Schlüsseltresor-URI* bezeichnet.
 
+> [!NOTE]
+> Für zusätzliche Sicherheit auf dem Speicherkonto, konfigurieren Sie den Azure Defender for Storage.
+> 
+> Weitere Informationen finden Sie unter [Einführung in Azure Defender for Storage](/azure/security-center/defender-for-storage-introduction).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

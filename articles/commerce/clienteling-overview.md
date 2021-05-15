@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 8a809b81504fdc31d8f9e0529048269dd7e0c5cc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800446"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937011"
 ---
 # <a name="clienteling-overview"></a>Übersicht zu Kundenaktionen
 
@@ -60,7 +60,7 @@ Verkäufer können Notizen verwenden, um allgemeine Debitoreninformationen zu er
 
 ## <a name="integration-with-dynamics-365-customer-insights"></a>Integration mit Dynamics 365 Customer Insights
 
-Mithilfe der Anwendung Dynamics 365 Customer Insights können Einzelhändler Daten aus den verschiedenen Systemen zusammenführen, die Debitoren verwenden, um mit den Produkten des Einzelhändlers zu interagieren. Sie können diese Daten anschließend verwenden, um eine einzelne Ansicht des Debitors zu generieren und Einsichten zu gewinnen. Die Integration von Customer Insights in Commerce ermöglicht es Einzelhändlern, mindestens eine Maßnahme auszuwählen, die auf der Debitorenkarte im Kundenbuch angezeigt werden sollte. So können Einzelhändler die Daten in Customer Insights beispielsweise verwenden, um die „Abwanderungswahrscheinlichkeit“ für einen Debitoren zu berechnen und die „nächstbeste Aktion“ zu definieren. Wenn diese Werte als Kennzahlen definiert werden, können sie auf der Debitorenkarte angezeigt werden und zentrale Informationen zu den Vertriebsmitarbeitern bereitstellen. Weitere Informationen zu Customer Insights finden Sie in der Dokumentation zu [Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview). Weitere Informationen zu Kennzahlen finden Sie unter [Kennzahlen](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+Mithilfe der Anwendung Dynamics 365 Customer Insights können Einzelhändler Daten aus den verschiedenen Systemen zusammenführen, die Debitoren verwenden, um mit den Produkten des Einzelhändlers zu interagieren. Sie können diese Daten anschließend verwenden, um eine einzelne Ansicht des Debitors zu generieren und Einsichten zu gewinnen. Die Integration von Customer Insights in Commerce ermöglicht es Einzelhändlern, mindestens eine Maßnahme auszuwählen, die auf der Debitorenkarte im Kundenbuch angezeigt werden sollte. So können Einzelhändler die Daten in Customer Insights beispielsweise verwenden, um die „Abwanderungswahrscheinlichkeit“ für einen Debitoren zu berechnen und die „nächstbeste Aktion“ zu definieren. Wenn diese Werte als Kennzahlen definiert werden, können sie auf der Debitorenkarte angezeigt werden und zentrale Informationen zu den Vertriebsmitarbeitern bereitstellen. Weitere Informationen zu Customer Insights finden Sie in der Dokumentation zu [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview). Weitere Informationen zu Kennzahlen finden Sie unter [Kennzahlen](/dynamics365/ai/customer-insights/pm-measures).
 
 ## <a name="set-up-clienteling"></a>Kundenaktionen einrichten
 
@@ -73,7 +73,7 @@ Um die Funktionen für Kundenaktionen in Ihrer Umgebung zu aktivieren, führen S
 2. Aktivieren Sie die Funktion **Kundenaktionen**, indem Sie **Jetzt aktivieren** auswählen.
 3. Wählen Sie auf der Seite **Commerce-Parameter** auf der Registerkarte **Nummernkreis** die Zeile **Kundenbuchbezeichner** aus. Wählen Sie dann im Feld **Nummernkreiscode** einen Nummernkreis aus. Das System verwendet diesen Nummernkreis, um Kundenbüchern eine ID zuzuweisen.
 4. Wählen Sie **Speichern**.
-5. Erstellen Sie eine neue Attributgruppe, die die Attribute enthält, die Sie für Debitoren erfassen möchten, die in den Kundenbüchern verwaltet werden. Weitere Anweisungen finden Sie unter [Attribute und Attributgruppen](https://docs.microsoft.com/dynamics365/retail/attribute-attributegroups-lifecycle).
+5. Erstellen Sie eine neue Attributgruppe, die die Attribute enthält, die Sie für Debitoren erfassen möchten, die in den Kundenbüchern verwaltet werden. Weitere Anweisungen finden Sie unter [Attribute und Attributgruppen](./attribute-attributegroups-lifecycle.md).
 
     - Definieren Sie die erforderlichen Attribute als **Kann verfeinert werden**. Verkäufer können ihr Kundenbuch dann anhand dieser Attribute filtern.
     - Legen Sie die Anzeigereihenfolge für diese Attribute fest. Dieser Anzeigereihenfolge bestimmt, welche Attribute auf der Debitorenkarte im Kundenbuch angezeigt werden sollen. Die Anzeigereihenfolge 1 wird als höher angesehen als die Anzeigereihenfolge 2. Daher wird das Attribut mit der Anzeigereihenfolge 1 vor dem Attribut mit der Anzeigereihenfolge 2 angezeigt.
@@ -103,18 +103,18 @@ Um die Integration von Customer Insights in Commerce zu aktivieren, müssen Sie 
 
 Führen Sie die folgenden Schritte aus, um die Integration einzurichten.
 
-1. Registrieren Sie im Azure-Portal eine neue Anwendung, und notieren Sie sich den Anwendungsnamen, die Anwendungs-ID und das Geheimnis. Diese Informationen werden für die Service-to-Service-Authentifizierung zwischen Commerce und Customer Insights verwendet. Notieren Sie das Geheimnis sorgfältig, da es im Schlüsseldepot gespeichert werden muss. Verwenden Sie für das folgende Beispiel CI_Access_name, CI_Access_AppID, CI_Access_Secret für den Anwendungsnamen, die Anwendungs-ID bzw. das Geheimnis. Weitere Informationen finden Sie unter [Schnellstart: Eine Anwendung bei der Microsoft Identity Platform registrieren](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+1. Registrieren Sie im Azure-Portal eine neue Anwendung, und notieren Sie sich den Anwendungsnamen, die Anwendungs-ID und das Geheimnis. Diese Informationen werden für die Service-to-Service-Authentifizierung zwischen Commerce und Customer Insights verwendet. Notieren Sie das Geheimnis sorgfältig, da es im Schlüsseldepot gespeichert werden muss. Verwenden Sie für das folgende Beispiel CI_Access_name, CI_Access_AppID, CI_Access_Secret für den Anwendungsnamen, die Anwendungs-ID bzw. das Geheimnis. Weitere Informationen finden Sie unter [Schnellstart: Eine Anwendung bei der Microsoft Identity Platform registrieren](/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
     > Unternehmen Sie entsprechende Schritte, damit sie nicht vergessen, das Geheimnis zu ändern, bevor es abläuft. Andernfalls wird die Integration unerwartet beendet.
 
 2. Rufen Sie Ihre Customer Insights-Instanz auf, und suchen Sie nach dem Namen der oben erstellten Anwendung (in diesem Beispiel „CI_Access_name“).
-3. Erstellen Sie einen Azure-Schlüsseltresor, und notieren Sie sich den Namen und die URL (in diesem Beispiel „KeyVaultName“, „KeyVaultURL“). Weitere Anweisungen finden Sie unter [Schnellstart: Ein Geheimnis aus Azure Key Vault über das Azure-Portal festlegen und abrufen](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
+3. Erstellen Sie einen Azure-Schlüsseltresor, und notieren Sie sich den Namen und die URL (in diesem Beispiel „KeyVaultName“, „KeyVaultURL“). Weitere Anweisungen finden Sie unter [Schnellstart: Ein Geheimnis aus Azure Key Vault über das Azure-Portal festlegen und abrufen](/azure/key-vault/quick-create-portal).
 4. Speichern Sie das Geheimnis im Tresor (in diesem Beispiel „CI_Access_Secret“). Wenn dieses Geheimnis im Tresor gespeichert ist, erhält das Geheimnis einen Namen. Notieren Sie den geheimen Namen (in diesem Beispiel „SecretName“).
 5. Erstellen Sie eine andere Anwendung mit einer Anwendungs-ID und einem Geheimnis (in diesem Beispiel „KeyVault_Access_AppID“ und „KeyVault_Access_Secret“), um von Azure Key Vault aus auf das Geheimnis zuzugreifen. Notieren Sie das Geheimnis sorgfältig, da es nicht mehr angezeigt wird.
 6. Als Nächstes müssen Sie Berechtigungen für die Anwendung erteilen, um über APIs von Commerce aus auf den Key Vault zugreifen zu können. Rufen Sie im Azure-Portal die Anwendungsseite auf. Wählen Sie im Abschnitt **Verwalten** die Option **API-Berechtigungen** aus. Fügen Sie die Berechtigung zum Zugriff auf **Azure-Schlüsseldepot** hinzu. Wählen Sie für diese Berechtigung **Zugangsrichtlinie** aus. Wählen Sie die Vorlage als **Verwaltung von Geheimnissen** aus, und wählen Sie die Optionen **Erhalten**, **Liste**, **Entschlüsseln**, und **Verschlüsseln** aus. 
 5. Wechseln Sie in der Commerce-Zentralverwaltung zu **Systemverwaltung \> Einrichtung \> Key Vault-Parameter**, und geben Sie die erforderlichen Informationen für Key Vault ein. Geben Sie anschließend im Feld **Key Vault-Client** die Anwendungskennung ein, die Sie in Schritt 4 verwendet haben, damit Commerce auf die Geheimnisse in Vault Key zugreifen kann.
-6. Um die in Schritt 1 erstellte Anwendung der Liste der sicheren Anwendungen (auch als Sichere Liste bezeichnet) hinzuzufügen, wechseln Sie zu Customer Insights, und wählen Sie **Anzeigezugriff** auf die Anwendung aus. Weitere Anweisungen finden Sie unter [Berechtigungen](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+6. Um die in Schritt 1 erstellte Anwendung der Liste der sicheren Anwendungen (auch als Sichere Liste bezeichnet) hinzuzufügen, wechseln Sie zu Customer Insights, und wählen Sie **Anzeigezugriff** auf die Anwendung aus. Weitere Anweisungen finden Sie unter [Berechtigungen](/dynamics365/ai/customer-insights/pm-permissions).
 7. Aktualisieren Sie in der Commerce-Zentralverwaltung auf der Seite **Systemverwaltung > Einrichtung > Key Vault-Parameter** die Felder wie folgt: 
 
 - **Key Vault-URL**: „KeyVaultURL“ (ab Schritt 3 oben).

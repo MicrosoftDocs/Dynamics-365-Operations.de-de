@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6f6d689c596b4ec924cb50ec3bea8ce907e6dc6b
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828225"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920986"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Fehlerbehebung bei eingehenden Lagerort-Vorgängen
 
@@ -56,7 +56,7 @@ Nachdem Sie die periodische Aufgabe *Produkteingänge aktualisieren* ausgeführt
 
 ### <a name="issue-resolution"></a>Problemlösung
 
-Eine neue Funktion zur Behandlung eingehender Ladungen, *Übernahme von Ladungsmengen*, behebt dieses Problem. Um diese Funktion zu aktivieren, gehen Sie zu [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die folgenden Funktionen ein (in der Reihenfolge, in der sie aufgelistet sind):
+Eine neue Funktion zur Behandlung eingehender Ladungen, *Übernahme von Ladungsmengen*, behebt dieses Problem. Um diese Funktion einzuschalten, gehen Sie zum Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die folgenden Funktionen ein (in der Reihenfolge, in der sie aufgelistet sind):
 
 1. Zuordnung von Bestellbestandsbuchungen zur Ladung
 1. Zu hoher Zugang bei Auslastungsmengen

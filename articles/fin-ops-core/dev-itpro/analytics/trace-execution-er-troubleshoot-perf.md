@@ -2,7 +2,7 @@
 title: Überwachen der Ausführung von ER-Formaten zur Behebung von Leistungsproblemen
 description: Dieses Thema bietet Informationen darüber, wie die Leistungsnachverfolgungsfunktion in der Elektronischen Berichterstellung (EB) verwendet werden kann, um Leistungsprobleme zu behandeln.
 author: NickSelin
-ms.date: 06/12/2019
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0cf76a9b9af0fc648cb61cefbe92dc7aaa436692
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754215"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944652"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Ausführung von EB-Formaten nachverfolgen, um Leistungsprobleme zu behandeln
 
@@ -47,10 +47,10 @@ Sie müssen auch die folgenden Dateien herunterladen und lokal speichern.
 
 | Datei                                  | Inhalt                               |
 |---------------------------------------|---------------------------------------|
-| Leistungsnachverfolgung model.version.1     | [Beispiel-EB-Datenmodell-Konfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
-| Leistungsnachverfolgung metadata.version.1  | [Beispiel-EB-Metadatenkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
-| Leistungsnachverfolgung mapping.version.1.1 | [Beispiel-EB-Modellzuordnungskonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Leistungsnachverfolgung format.version.1.1  | [Beispiel-EB-Formatkonfiguration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
+| Leistungsnachverfolgung model.version.1     | [Beispiel-EB-Datenmodell-Konfiguration](https://download.microsoft.com/download/0/a/a/0aa84e48-8040-4c46-b542-e3bf15c9b2ad/Performancetracemodelversion.1.xml)    |
+| Leistungsnachverfolgung metadata.version.1  | [Beispiel-EB-Metadatenkonfiguration](https://download.microsoft.com/download/a/9/3/a937e8c4-1f8a-43e4-83ee-7d599cf7d983/Performancetracemetadataversion.1.xml)      |
+| Leistungsnachverfolgung mapping.version.1.1 | [Beispiel-EB-Modellzuordnungskonfiguration](https://download.microsoft.com/download/7/7/3/77379bdc-7b22-4cfc-9b64-a9147599f931/Performancetracemappingversion1.1.xml) |
+| Leistungsnachverfolgung format.version.1.1  | [Beispiel-EB-Formatkonfiguration](https://download.microsoft.com/download/8/6/8/868ba581-5a06-459e-b173-fb00f038b37f/Performancetraceformatversion1.1.xml)       |
 
 ### <a name="configure-er-parameters"></a>Parameter der elektronischen Berichterstellung konfigurieren
 
@@ -84,7 +84,7 @@ Um im Suchfeld **Andere** verfügbar zu sein, muss ein DM-Dokumenttyp in folgend
 Nehmen Sie an, Sie haben mit dem Entwurf einer neuen EB-Lösung begonnen, um einen neuen Bericht zu generieren, der Kreditorentransaktionen darstellt. Aktuell können Sie die Transaktionen für einen ausgewählten Kreditor auf der Seite **Kreditorenbuchungen** suchen (wechseln Sie zu **Kreditor \> Kreditoren \> Alle Kreditoren**, wählen Sie einen Kreditor aus, und dann, im Aktivitätsbereich unter der Registerkarte **Kreditor** in der Gruppe **Transaktionen** wählen Sie **Transaktionen**). Sie möchten jedoch alle Kreditorenbuchungen gleichzeitig in einem elektronischen Dokument im XML-Format haben. Diese Lösung besteht aus mehreren EB-Konfigurationen, die das erforderliche Datenmodell, die Metadaten, die Modellzuordnung und Formatkomponenten enthalten.
 
 1. Melden Sie sich bei der Instanz von RCS an, die für Ihr Unternehmen bereitgestellt wurde.
-2. In diesem Tutorial erstellen und modifizieren Sie Konfigurationen für das Beispielunternehmen **Litware, Inc.**. Stellen Sie daher sicher, dass dieser Konfigurationsanbieter RCS hinzugefügt wurde und als aktiv ausgewählt wurde. Anweisungen finden Sie unter der Prozedur [Konfigurationsanbieter erstellen und als aktiv markieren](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. In diesem Tutorial erstellen und modifizieren Sie Konfigurationen für das Beispielunternehmen **Litware, Inc.**. Stellen Sie daher sicher, dass dieser Konfigurationsanbieter RCS hinzugefügt wurde und als aktiv ausgewählt wurde. Anweisungen finden Sie unter der Prozedur [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Im Arbeitsbereich **Elektronische Berichterstellung** wählen Sie die Kachel **Berichterstellungskonfigurationen** aus.
 4. Auf der Seite **Konfigurationen** importieren Sie die EB-Konfigurationen, die Sie als Voraussetzung nach RCS heruntergeladen haben, in der folgenden Reihenfolge: Datenmodell, Metadaten, Modellzuordnung, Format. Führen Sie für jede Konfiguration die folgenden Schritte aus:
 
@@ -101,7 +101,7 @@ Gehen Sie davon aus, dass Sie das Entwerfen der ersten Version der EB-Lösung be
 ### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importieren einer EB-Konfiguration aus RCS in Finance and Operations
 
 1. Anmelden bei Ihrer Anwendungsinstanz.
-2. Für dieses Tutorial importieren Sie Konfigurationen aus Ihrer RCS-Instanz (wo Sie Ihre EB-Komponenten entwerfen) in Ihre Instanz (wo Sie sie testen und schließlich benutzen). Daher müssen Sie sicherstellen, dass alle erforderlichen Artefakte vorbereitet wurden. Anweisungen finden Sie unter der Prozedur [Importieren von elektronischen Berichtstellungskonfigurationen (EB) aus Regulatory Configuration Services (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
+2. Für dieses Tutorial importieren Sie Konfigurationen aus Ihrer RCS-Instanz (wo Sie Ihre EB-Komponenten entwerfen) in Ihre Instanz (wo Sie sie testen und schließlich benutzen). Daher müssen Sie sicherstellen, dass alle erforderlichen Artefakte vorbereitet wurden. Anweisungen finden Sie unter der Prozedur [Importieren von elektronischen Berichtstellungskonfigurationen (EB) aus Regulatory Configuration Services (RCS)](rcs-download-configurations.md).
 3. Gehen Sie folgendermaßen vor, um die Konfigurationen von RCS in die Anwendung zu importieren:
 
     1. Im Arbeitsbereich **Elektronische Berichterstellung** in der Kachel für den Konfigurationsanbieter **Litware, Inc.** wählen Sie **Repositorys** aus.
