@@ -2,7 +2,6 @@
 title: Lohnentitäten generieren und überprüfen
 description: In diesem Thema wird beschrieben, wie Sie Lohnentitäten generieren und überprüfen.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod: ''
@@ -15,24 +14,24 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6e043498d4e36e38575a16c6475a5edfef51fc6
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 4adab0225190b4dea5213dccf297eaab33efc863
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881991"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021319"
 ---
-# <a name="generate-payroll-entities"></a><span data-ttu-id="305b6-103">Lohnentitäten generieren</span><span class="sxs-lookup"><span data-stu-id="305b6-103">Generate payroll entities</span></span>
+# <a name="generate-payroll-entities"></a><span data-ttu-id="40360-103">Lohnentitäten generieren</span><span class="sxs-lookup"><span data-stu-id="40360-103">Generate payroll entities</span></span>
 
-<span data-ttu-id="305b6-104">Verwenden Sie diese OData-Funktion, um die Entitäten zu generieren, die für die Lohnintegration erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="305b6-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="305b6-105">Wenn an diesen Entitäten in Human Resources Änderungen vorgenommen werden, z. B. das Hinzufügen benutzerdefinierter Felder, kann diese Funktion erneut aufgerufen werden, um die Metadaten jeder Entität zu aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="305b6-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="305b6-106">Die Antwort enthält eine Vorgangskennung, die Sie überwachen können, damit Sie wissen, wann der Generierungsprozess abgeschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="305b6-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
+<span data-ttu-id="40360-104">Verwenden Sie diese OData-Funktion, um die Entitäten zu generieren, die für die Lohnintegration erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="40360-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="40360-105">Wenn an diesen Entitäten in Human Resources Änderungen vorgenommen werden, z. B. das Hinzufügen benutzerdefinierter Felder, kann diese Funktion erneut aufgerufen werden, um die Metadaten jeder Entität zu aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="40360-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="40360-106">Die Antwort enthält eine Vorgangskennung, die Sie überwachen können, damit Sie wissen, wann der Generierungsprozess abgeschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="40360-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
 
-<span data-ttu-id="305b6-107">**Anforderung**</span><span class="sxs-lookup"><span data-stu-id="305b6-107">**Request**</span></span>
+<span data-ttu-id="40360-107">**Anforderung**</span><span class="sxs-lookup"><span data-stu-id="40360-107">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 ```
 
-<span data-ttu-id="305b6-108">**Text**</span><span class="sxs-lookup"><span data-stu-id="305b6-108">**body**</span></span>
+<span data-ttu-id="40360-108">**Text**</span><span class="sxs-lookup"><span data-stu-id="40360-108">**body**</span></span>
 
 ```json
 {
@@ -40,7 +39,7 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-<span data-ttu-id="305b6-109">**Antwort**</span><span class="sxs-lookup"><span data-stu-id="305b6-109">**Response**</span></span>
+<span data-ttu-id="40360-109">**Antwort**</span><span class="sxs-lookup"><span data-stu-id="40360-109">**Response**</span></span>
 
 ```json
 {
@@ -48,17 +47,17 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-## <a name="review-payroll-entities"></a><span data-ttu-id="305b6-110">Lohnentitäten überprüfen</span><span class="sxs-lookup"><span data-stu-id="305b6-110">Review payroll entities</span></span>
+## <a name="review-payroll-entities"></a><span data-ttu-id="40360-110">Lohnentitäten überprüfen</span><span class="sxs-lookup"><span data-stu-id="40360-110">Review payroll entities</span></span>
 
-<span data-ttu-id="305b6-111">Verwenden Sie diese API, um eine Liste der Entitäten abzurufen, die erfolgreich generiert wurden und zur Verwendung bereit sind.</span><span class="sxs-lookup"><span data-stu-id="305b6-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
+<span data-ttu-id="40360-111">Verwenden Sie diese API, um eine Liste der Entitäten abzurufen, die erfolgreich generiert wurden und zur Verwendung bereit sind.</span><span class="sxs-lookup"><span data-stu-id="40360-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
 
-<span data-ttu-id="305b6-112">**Anforderung**</span><span class="sxs-lookup"><span data-stu-id="305b6-112">**Request**</span></span>
+<span data-ttu-id="40360-112">**Anforderung**</span><span class="sxs-lookup"><span data-stu-id="40360-112">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_hrvirtualentitycatalogs?$filter=mshr_hasbeengenerated eq true
 ```
 
-<span data-ttu-id="305b6-113">**Antwort**</span><span class="sxs-lookup"><span data-stu-id="305b6-113">**Response**</span></span>
+<span data-ttu-id="40360-113">**Antwort**</span><span class="sxs-lookup"><span data-stu-id="40360-113">**Response**</span></span>
 
 ```json
 {
