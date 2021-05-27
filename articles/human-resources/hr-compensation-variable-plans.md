@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 874d879c04e6b16889ca6900962394036278ba10
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ab5e0db339615ad9c434e3e65b6f04ff9fb4cc25
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800878"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027769"
 ---
 # <a name="create-variable-compensation-plans"></a>Erstellen von Plänen für variable Vergütung
 
@@ -38,7 +38,7 @@ Die Berechnung von Beträgen für variable Vergütung für Ihre Mitarbeiter kann
 
 ### <a name="describe-vesting-rules"></a>Beschreiben von Übertragungsregeln
 
-Unternehmen können optionale **Übertragungsregeln** einrichten. Übertragungsregeln beschreiben, wie die variable Prämie im Zeitverlauf zugewiesen werden soll. Beispielsweise kann eine Übertragungsregel festhalten, dass der Mitarbeiter 25 Prozent der gesamt Prämie jedes Jahr für die folgenden vier Jahre erhält. Übertragungsregeln sind nur zur Information.
+Unternehmen können optionale **Übertragungsregeln** einrichten. Übertragungsregeln beschreiben, wie die variable Prämie im Zeitverlauf zugewiesen werden soll. Beispielsweise kann eine Übertragungsregel festhalten, dass der Mitarbeiter 25 % der gesamt Prämie jedes Jahr für die folgenden vier Jahre erhält. Übertragungsregeln sind nur zur Information.
 
 ## <a name="variable-compensation-plans"></a>Pläne für variable Vergütung
 Der **Plan für variable Vergütung** enthält die Regeln, Berechnungsmethoden und Standardwerte für die Berechnung der variablen Vergütung für registrierte Mitarbeiter. Wenn Sie einen variablen Vergütungsplan erstellen, muss der Typ für variable Vergütung eingerichtet werden. Der Typ der variablen Vergütung bestimmt, ob das System einen Währungsbetrag oder mehrere Einheiten für die Berechnung der Prämie berechnet. Sie müssen auch die Berechnungsmethode festlegen:
@@ -49,7 +49,7 @@ Der **Plan für variable Vergütung** enthält die Regeln, Berechnungsmethoden u
 Der Betrag für variable Prämien kann entweder auf einem Prozentsatz des regulären Basiseinkommens des Mitarbeiters basieren oder auf einer festgelegten Anzahl von Einheiten.
 
 -   Wählen Sie die Option **Prozentsatz des Basiswerts** aus, um einen Standardprozentsatz einzugeben, und geben Sie an, ob der feste Lohnsatz des Mitarbeiters oder der Kontrollpunkt für die Vergütungsstufe des Mitarbeiters als Grundlage dienen soll. Die Vergütungsstufe wird auf der Stufe des Mitarbeiters festgelegt. Einer der Referenzpunkte aus der Vergütungsstruktur kann als Kontrollpunkt im Plan für feste Vergütung eingerichtet werden. Das System verwendet die Vergütungsstufe der Stufe des Mitarbeiters und überprüft sie mit dem Kontrollpunkt, der im Plan für feste Vergütung des Mitarbeiters aufgeführt ist, um den Kontrollpunktbetrag der Vergütungsstufe des Mitarbeiters zu suchen. Der Kontrollpunktbetrag wird anschließend anstelle des festen Lohnsatzes des Mitarbeiters als Basis für die Prämie verwendet.
--   Wählen Sie die Option **Anzahl der Einheiten** aus, um eine Standardanzahl von Einheiten, den Wert der einzelnen Einheiten und die Währung für den Wert der Einheiten einzugeben, wenn der Vergütungsplan eine nicht monetäre Prämie vorsieht (beispielsweise 200 Einheiten des Bestands mit einem Wert von EUR 40 pro Einheit). Wenn es sich um einen Vergütungsplan für eine Bargeldprämie handelt, geben Sie hier einfach die Anzahl der Einheiten ein. Für eine Bargeldprämie erhält der Mitarbeiter die angegebene Anzahl von Einheiten der Währung, die für den Plan für feste Vergütung verwendet wird (z, 500 Einheiten von 1 EUR). Das 1:1-Beziehungs-Steuerelement kann verwendet werden, um anzugeben, ob es eine direkte eins-zu-eins Zuordnung zwischen der Anzahl der Einheiten und dem Einheitenwert gibt. Wenn Sie einen Plan für variable Vergütung für einen Bargeld-basierten Plan erstellen, indem Sie die Anzahl der Einheiten verwenden, ist diese Option automatisch gesperrt auf **Ja** und der Einheitswert ist **1.0000**.
+-   Wählen Sie die Option **Anzahl der Einheiten** aus, um eine Standardanzahl von Einheiten, den Wert der einzelnen Einheiten und die Währung für den Wert der Einheiten einzugeben, wenn der Vergütungsplan eine nicht monetäre Prämie vorsieht (beispielsweise 200 Einheiten des Bestands mit einem Wert von EUR 40 pro Einheit). Wenn es sich um einen Vergütungsplan für eine Bargeldprämie handelt, geben Sie hier einfach die Anzahl der Einheiten ein. Für eine Bargeldprämie erhält der Mitarbeiter die angegebene Anzahl von Einheiten der Währung, die für den Plan für feste Vergütung verwendet wird (z. B. 500 Anteile von 1 EUR). Das 1:1-Beziehungs-Steuerelement kann verwendet werden, um anzugeben, ob es eine direkte eins-zu-eins Zuordnung zwischen der Anzahl der Einheiten und dem Einheitenwert gibt. Wenn Sie einen Plan für variable Vergütung für einen Bargeld-basierten Plan erstellen, indem Sie die Anzahl der Einheiten verwenden, ist diese Option automatisch gesperrt auf **Ja** und der Einheitswert ist **1.0000**.
 
 Über die **Einstellungsregel** können Sie festlegen, ob alle Mitarbeiter unabhängig von ihrem Einstellungsdatum die gleiche Erhöhung erhalten sollen (**Einstellungsregel** = **Keine**), oder ob Mitarbeiter basierend auf der Länge ihrer Beschäftigungsdauer in diesem Zyklus einen Prozentsatz der Prämie erhalten sollen (**Einstellungsregel** = **Prozent**). 
 

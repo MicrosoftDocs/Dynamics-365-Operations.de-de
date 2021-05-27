@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bd93744cf947dcc343d2b31d3d52b2b748c062a9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 212f425dc3603f838ce030d9ed86f2e418bef29a
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792870"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019932"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitale E-Commerce-Geschenkkarten
 
@@ -51,12 +51,12 @@ Digitale Geschenkkartenprodukte sollten in der Commerce-Zentralverwaltung konfig
 
     ![Geschenkkartenprodukt-Feld in der Commerce-Zentralverwaltung](./media/PostGiftcard.png)
 
-- Wenn eine Geschenkkarte mehrere vordefinierte Beträge unterstützen muss (z. B. 25, 50 und 100 US-Dollar), sollte die Dimension **Größe** verwendet werden, um diese vordefinierten Beträge einzurichten. Jeder vordefinierte Betrag ist eine Variante. Weitere Informationen finden Sie unter [Produktdimensionen](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json).
+- Wenn eine Geschenkkarte mehrere vordefinierte Beträge unterstützen muss (z. B. 25, 50 und 100 US-Dollar), sollte die Dimension **Größe** verwendet werden, um diese vordefinierten Beträge einzurichten. Jeder vordefinierte Betrag ist eine Variante. Weitere Informationen finden Sie unter [Produktdimensionen](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
 - Wenn Kunden in der Lage sein müssen, einen benutzerdefinierten Betrag für eine Geschenkkarte zu bestimmen, richten Sie zunächst eine Variante ein, die einen benutzerdefinierten Betrag zulässt. Öffnen Sie anschließend das Produkt über die Seite **Freigegebene Produkte in Kategorie**, und setzen Sie dann im Inforegister **Commerce** das Feld **Preis eingeben** auf **Neuer Preis muss eingegeben werden**, wie in der folgenden Abbildung dargestellt. Diese Einstellung stellt sicher, dass Kunden einen Preis eingeben können, wenn sie nach dem Produkt auf einer PDP suchen.
 
     ![„Preis eingeben“-Feld in der Commerce-Zentralverwaltung](./media/KeyInPrice.png)
 
-- Die Lieferart für eine digitale Geschenkkarte muss auf **Elektronisch** eingestellt sein. Wählen Sie auf der Seite **Lieferarten** (**Einzelhandel und Handel \> Kanaleinstellung \> Lieferarten**) die Lieferart **Elektronisch** im Listenbereich aus, und fügen Sie dann das digitale Geschenkkartenprodukt dem Raster im Inforegister **Produkte** hinzu, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Lieferarten einrichten](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+- Die Lieferart für eine digitale Geschenkkarte muss auf **Elektronisch** eingestellt sein. Wählen Sie auf der Seite **Lieferarten** (**Einzelhandel und Handel \> Kanaleinstellung \> Lieferarten**) die Lieferart **Elektronisch** im Listenbereich aus, und fügen Sie dann das digitale Geschenkkartenprodukt dem Raster im Inforegister **Produkte** hinzu, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Lieferarten einrichten](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
     ![Digitale Geschenkkartenprodukte auf der „Lieferart“-Seite in der Commerce-Zentralverwaltung](./media/ElectronicMode.PNG)
 
@@ -89,9 +89,9 @@ Führen Sie folgende Schritte aus, um im Commerce-Website-Generator einen benutz
 
 [Neues Produkt in Commerce erstellen](create-new-product-commerce.md)
 
-[Lieferarten einrichten](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Lieferarten einrichten](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
-[Produktdimensionen](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json)
+[Produktdimensionen](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json)
 
 [E-Mail-Benachrichtigungsprofil einrichten](email-notification-profiles.md)
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3cfe144f7bba2bbc4b25024b68155045271f6366
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5a2c596293e632bb6c06af56f413fcee9e867563
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795644"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022730"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Ausgehender Bestandsvorgang in POS
 
@@ -71,7 +71,7 @@ Die von Ihnen erstellten Batch-Jobs werden zur Verarbeitung von Dokumenten verwe
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Dies ist eine Voraussetzung: Fügen Sie dem POS-Bildaufbau den Ausgang hinzu.
 
-Bevor Ihr Unternehmen die Funktionalität des Ausgangsvorgangs nutzen kann, muss es den **Ausgangsvorgang** POS-Vorgang auf einem oder mehreren Ihrer [POS-Bildschirmbilder](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) konfigurieren. Bevor Sie den neuen Vorgang in einer Produktionsumgebung einsetzen, sollten Sie ihn gründlich testen und Ihre Benutzer in der Verwendung schulen.
+Bevor Ihr Unternehmen die Funktionalität des Ausgangsvorgangs nutzen kann, muss es den **Ausgangsvorgang** POS-Vorgang auf einem oder mehreren Ihrer [POS-Bildschirmbilder](/dynamics365/unified-operations/retail/pos-screen-layouts) konfigurieren. Bevor Sie den neuen Vorgang in einer Produktionsumgebung einsetzen, sollten Sie ihn gründlich testen und Ihre Benutzer in der Verwendung schulen.
 
 ## <a name="overview"></a>Übersicht
 

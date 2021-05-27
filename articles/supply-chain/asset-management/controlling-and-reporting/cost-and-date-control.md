@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d6f0a155b38b1d732d17bd2f964677862ff363e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808663"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016131"
 ---
 # <a name="cost-and-date-control"></a>Kosten- und Datenkontrolle
 
 [!include [banner](../../includes/banner.md)]
 
- 
-
-In der Anlagenverwaltung können Sie Kosten berechnen, um sich so einen Überblick über die Istkosten im Vergleich zu den Budgetkosten für Anlagen, funktionale Standorte und Arbeitsaufträge zu verschaffen. Istkosten basieren auf gebuchten Transaktionen. 
+In der Anlagenverwaltung können Sie Kosten berechnen, um sich so einen Überblick über die Istkosten im Vergleich zu den Budgetkosten für Anlagen, funktionale Standorte und Arbeitsaufträge zu verschaffen. Istkosten basieren auf gebuchten Transaktionen.
 
 Sie können auch eine Datumsberechnung vornehmen, wenn Sie geplante Start- und Enddaten mit tatsächlichen Start- und Enddaten für Arbeitsaufträge vergleichen möchten.
 
@@ -46,8 +44,8 @@ Die Berechnungen für Anlagen, Technische Standorte und Arbeitsaufträge sind na
 
 5. Sie können das Feld **Ebene** verwenden, um anzugeben, wie detailliert die Kostensteuerungspositionen bezüglich funktionaler Standorte sein sollen. 
 
-    Wenn Sie beispielsweise die Zahl „1“ im Feld einfügen und eine funktionale Standorthierarchie auf mehreren Ebenen haben, werden alle Kostenkontrollpositionen für einen funktionalen Standort auf der höchsten Ebene angezeigt, und daher werden die Stunden in einer Position von den funktionalen Standorten auf einer niedrigeren Ebene hinzugefügt. 
-    
+    Wenn Sie beispielsweise die Zahl „1“ im Feld einfügen und eine funktionale Standorthierarchie auf mehreren Ebenen haben, werden alle Kostenkontrollpositionen für einen funktionalen Standort auf der höchsten Ebene angezeigt, und daher werden die Stunden in einer Position von den funktionalen Standorten auf einer niedrigeren Ebene hinzugefügt.
+
     Wenn Sie die Zahl „0“ im Feld **Ebene** eingeben, wird ein detailliertes Ergebnis mit allen Kostenkontrollpositionen für alle funktionalen Standortebenen angezeigt, denen sie zugeordnet sind.
 
 6. Wählen Sie „Ja“ für die Umschaltschaltfläche **Offene zugesagte Kosten anzeigen** aus, wenn diese Spalte in die Berechnung einbezogen werden soll.
@@ -64,7 +62,7 @@ Die Berechnungen für Anlagen, Technische Standorte und Arbeitsaufträge sind na
 
 10. Klicken Sie auf der Seite **Kostensteuerung für Anlagen** auf die **Gruppieren nach…**-Schaltflächen, um die erforderliche Detailebene der Berechnung anzuzeigen. Die ausgewählten **Gruppieren nach…**-Schaltflächen werden hervorgehoben. Klicken Sie auf eine Schaltfläche, um sie zu aktivieren oder zu deaktivieren.
 
-## <a name="example"></a>Beispiel
+## <a name="example-of-calculation-results-in-asset-cost-control"></a>Beispiel für Berechnungsergebnisse in Kostensteuerung für Anlagen
 
 Im folgenden Screenshot wird ein Beispiel der Berechnungsergebnisse in **Kostensteuerung für Anlagen** angezeigt.
 
@@ -76,7 +74,6 @@ Im folgenden Screenshot wird ein Beispiel der Berechnungsergebnisse in **Kostens
 ![Beispiel Berechnungsergebnisse in Kostensteuerung für Anlagen](media/02-controlling-and-reporting.png)
 
 Eine weitere Möglichkeit der Erstellung einer Kostenberechnung ist die Mehrfachauswahl von Anlagen in **Alle Anlagen** oder **Aktive Anlagen**. Klicken Sie anschließend auf die Schaltfläche **Kostensteuerung** auf der Registerkarte **Allgemein** . Im Dialogfeld **Kostensteuerung für Anlagen** werden die ausgewählten Anlagen automatisch in das Feld **Anlage** auf dem Inforegister **Einzuschließende Datensätze** eingefügt. Klicken Sie auf **OK**, und eine Kostenberechnung für die ausgewählten Anlagen wird angezeigt. Das gleiche Verfahren kann für Technische Standorte in **Alle Technischen Standorte** oder **Aktive Technische Standorte** und für Arbeitsaufträge in **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** durchgeführt werden.
-
 
 ## <a name="work-order-date-control"></a>Datumskontrolle für Arbeitsaufträge
 
@@ -94,7 +91,7 @@ Verwenden Sie diese Seite, um einen Überblick über die erwarteten Start- und E
 
 6. Klicken Sie auf die **Gruppieren nach…**-Schaltflächen, um die erforderliche Detailebene der Berechnung anzuzeigen. Die ausgewählten **Gruppieren nach…**-Schaltflächen werden hervorgehoben. Klicken Sie auf eine Schaltfläche, um sie zu aktivieren oder zu deaktivieren.
 
-## <a name="example"></a>Beispiel
+## <a name="example-of-calculation-results-in-work-order-date-control"></a>Beispiel für Berechnungsergebnisse in Datumskontrolle für Arbeitsaufträge
 
 Im folgenden Screenshot wird ein Beispiel der Berechnungsergebnisse in **Datumskontrolle für Arbeitsaufträge** angezeigt.
 

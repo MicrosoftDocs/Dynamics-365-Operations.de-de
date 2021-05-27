@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4f50dfa5c2914ce2131cdc44582588be69b35335
-ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
+ms.openlocfilehash: 570b0995821dcaa2e180b48c25facee01e98f8e3
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5961704"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015900"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Produktprogrammplanung mit Kaufverträgen
 
@@ -67,7 +67,7 @@ Nachdem Sie Ihr System wie im vorherigen Abschnitt beschrieben vorbereitet haben
 1. Wiederholen Sie diese Schritte für jedes relevante Produkt.
 
 > [!NOTE]
-> Die Planungsoptimierung unterstützt Handelsvereinbarungen für den Kauf in mehreren Währungen. Bei der Suche nach einer Handelsvereinbarung mit der Option **Niedrigster Preis pro Einheit** werden Zeilen von Handelsvereinbarungen mit unterschiedlichen Währungen berücksichtigt, sofern ein Wechselkurs zwischen der Währung der Handelsvereinbarungszeile und der Buchhaltungswährung der juristischen Entität definiert wurde. Andernfalls wird die Zeile mit der Handelsvereinbarung ignoriert, und es wird ein Fehler bei der Produktprogrammplanung angezeigt. Daher wird die Produktprogrammplanung Informationen aus allen relevanten Zeilen der Handelsvereinbarungen für den Kauf enthalten, in denen die Preise in die Buchhaltungswährung umgerechnet werden können.
+> Die Planungsoptimierung unterstützt Handelsvereinbarungen für den Kauf in mehreren Währungen. Bei der Suche nach einer Handelsvereinbarung mit der Option **Niedrigster Preis pro Einheit** werden Zeilen von Handelsvereinbarungen mit unterschiedlichen Währungen berücksichtigt, sofern ein Wechselkurs zwischen der Währung der Handelsvereinbarungszeile und der Buchhaltungswährung der juristischen Entität definiert wurde. Andernfalls wird die Zeile mit der Handelsvereinbarung ignoriert, und es wird ein Fehler bei der Produktprogrammplanung angezeigt. Daher wird die Produktprogrammplanung Informationen aus allen relevanten Zeilen der Handelsvereinbarungen für den Kauf enthalten, in denen die Preise in die Buchhaltungswährung umgerechnet werden können. Bitte beachten Sie, dass Rundungsregeln bei der Preisumrechnung für Handelsvereinbarungenzeilen nicht berücksichtigt werden.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Beispiele dafür, wie die Planungsoptimierung Lieferanten- und Vorlaufzeiten ermittelt
 

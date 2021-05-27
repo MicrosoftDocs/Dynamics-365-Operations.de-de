@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 692a958840ab5c403575edc1da210002c368a084
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a7d13b533cda70dba432b2de20a65d6dcedb6863
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830687"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028082"
 ---
 # <a name="settle-partial-and-final-payments-in-full-before-the-discount-date"></a>Teilzahlungen und abschließende Zahlungen vor dem Rabattdatum vollständig ausgleichen
 
@@ -61,14 +61,14 @@ Arnie klicket auf die Registerkarte **Skonto**, um den Rabattbetrag anzuzeigen.
 | 7/25/2015          | 0,00                 | 1.000,00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Teilzahlung mithilfe der Seite "Debitorenzahlungen eingeben"
-Debitor 4028 übermittelt eine Zahlung in Höhe von 500,00. am 1. Juli Um dieser Zahlung einzugeben, klickt Arnie nicht **Positionen**. Stattdessen erfasst er die Zahlung, indem er eine neue Zahlungserfassung erstellt und dann die Seite **Debitorenzahlungen eingeben** öffnet. Er gibt die Zahlungsinformationen ein und markiert die Rechnung, die er eingegeben hat. Wenn Arnie **500,00** als Betrag eingibt, gibt er auch **500,00** im Feld **Zu zahlender Betrag** im Raster ein. Da Fabrikam ein Skonto für Teilzahlungen zulässt, sieht er, dass auch ein Teilskonto von 5,05 gewährt wird. Die Berechnung für diesen Rabatt ist 500,00 ÷ 0,99 × 0,01 = 5,05. (In dieser Berechnung werden 500,00 durch 0,99 dividiert, da es einen Rabatt von einem Prozent gibt. Daher zahlt der Debitor 99 Prozent der Rechnung. Das Ergebnis wird dann mit dem Rabattprozentsatz 1 Prozent oder 0,01 multipliziert. Wenn der Debitor den vollen Rabatt von 10,00 nimmt, ist der Betrag, der ausgeglichen werden muss, 990,00.) Rabattinformationen werden im Raster im unteren Bereich der **Debitorenzahlungen eingeben** Seite.
+Debitor 4028 übermittelt eine Zahlung in Höhe von 500,00. am 1. Juli Um dieser Zahlung einzugeben, klickt Arnie nicht **Positionen**. Stattdessen erfasst Arnie die Zahlung, indem er eine neue Zahlungserfassung erstellt und dann die Seite **Debitorenzahlungen eingeben** öffnet. Arnie gibt die Zahlungsinformationen ein und markiert die Rechnung, die er eingegeben hat. Wenn Arnie **500,00** als Betrag eingibt, gibt er auch **500,00** im Feld **Zu zahlender Betrag** im Raster ein. Da Fabrikam ein Skonto für Teilzahlungen zulässt, sieht Arnie, dass auch ein Teilskonto von 5,05 gewährt wird. Die Berechnung für diesen Rabatt ist 500,00 ÷ 0,99 × 0,01 = 5,05. (In dieser Berechnung werden 500,00 durch 0,99 dividiert, da es einen Rabatt von einem Prozent gibt. Daher zahlt der Debitor 99 Prozent der Rechnung. Das Ergebnis wird dann mit dem Rabattprozentsatz 1 Prozent oder 0,01 multipliziert. Wenn der Debitor den vollen Rabatt von 10,00 nimmt, ist der Betrag, der ausgeglichen werden muss, 990,00.) Rabattinformationen werden im Raster im unteren Bereich der **Debitorenzahlungen eingeben** Seite.
 
 | Zu verwendender Skontobetrag | Verwendetes Skonto | Zu zahlender Betrag |
 |------------------------------|---------------------|---------------|
 | 5,05                         | 0,00                | 500,00        |
 
 ## <a name="partial-payment-by-using-the-journal-lines"></a>Teilzahlung mithilfe der Erfassungspositionen
-Anstatt die Seite **Debitorenzahlungen eingeben** in der Zahlungserfassung zu öffnen, kann Arnie auf **Positionen** klicken, um eine Zahlung einzugeben. Die Zahlungserfassung wird angezeigt, wo Arnie einer Position für Debitor 4028 eingeben kann. Arnie öffnet anschließend die Seite **Buchungen ausgleichen**, sodass er die Rechnung zum Ausgeleichen markieren kann. Arnie markiert die Rechnung und ändert den Wert im Feld **Auszugleichender Betrag** zu **500,00**. Er sieht wieder, dass der Wert im Feld **Skontobetrag** der Betrag **10,00** für die gesamte Rechnung ist, und der Wert im Feld **In Anspruch zu nehmender Skontobetrag** beträgt **5,05**. Daher gleicht Arnie 505,05 dieser Rechnung aus.
+Anstatt die Seite **Debitorenzahlungen eingeben** in der Zahlungserfassung zu öffnen, kann Arnie auf **Positionen** klicken, um eine Zahlung einzugeben. Die Zahlungserfassung wird angezeigt, wo Arnie einer Position für Debitor 4028 eingeben kann. Arnie öffnet anschließend die Seite **Buchungen ausgleichen**, sodass Arnie die Rechnung zum Ausgleichen markieren kann. Arnie markiert die Rechnung und ändert den Wert im Feld **Auszugleichender Betrag** zu **500,00**. Arnie sieht wieder, dass der Wert im Feld **Skontobetrag** der Betrag **10,00** für die gesamte Rechnung ist, und der Wert im Feld **In Anspruch zu nehmender Skontobetrag** beträgt **5,05**. Daher gleicht Arnie 505,05 dieser Rechnung aus.
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -100,7 +100,7 @@ Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleic
 | Verwendetes Skonto          | 0,00      |
 | Zu verwendender Skontobetrag | 5,00      |
 
-Arnie schließt die Seite **Transaktionen abgleichen**. Eine Zahlungsposition für 495,00 wird in der Erfassung erstellt, und Arnie dann bucht die Erfassung. Er kann die Debitorentransaktionen auf der Seite **Debitorentransaktionen** überprüfen. Auf dieser Seite sieht Arnie, dass die Rechnung ein Saldo von 500,00 hat. Er sieht auch eine Zahlung von 495,00 und einen Rabatt von 5,00.
+Arnie schließt die Seite **Transaktionen abgleichen**. Eine Zahlungsposition für 495,00 wird in der Erfassung erstellt, und Arnie dann bucht die Erfassung. Arnie kann die Debitorentransaktionen auf der Seite **Debitorentransaktionen** überprüfen. Auf dieser Seite sieht Arnie, dass die Rechnung ein Saldo von 500,00 hat. Arnie sieht auch eine Zahlung von 495,00 und einen Rabatt von 5,00.
 
 | Beleg    | Transaktionstyp | Datum      | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag | Währung |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -109,7 +109,7 @@ Arnie schließt die Seite **Transaktionen abgleichen**. Eine Zahlungsposition f�
 | DISC-10010 |  Skonto   | 1. Juli 2015  |         |                                      | 5,00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Zahlung für den verbleibenden Betrag
-Debitor 4028 zahlt den verbleibenden Betrag von 495,00 am 8. Juli, also innerhalb des Skontozeitraums. Arnie erstellt die Zahlungserfassung am 8. Juli und markiert die Buchung für den Ausgleich. Er sieht, dass der auszugleichende Betrag 495,00 ist. Der Wert im Feld **Vorkalkuliertes Skonto** ist **5,00**, da der Rabatt 5,00 zuvor in Anspruch genommen wurde.
+Debitor 4028 zahlt den verbleibenden Betrag von 495,00 am 8. Juli, also innerhalb des Skontozeitraums. Arnie erstellt die Zahlungserfassung am 8. Juli und markiert die Buchung für den Ausgleich. Arnie sieht, dass der auszugleichende Betrag 495,00 ist. Der Wert im Feld **Vorkalkuliertes Skonto** ist **5,00**, da der Rabatt 5,00 zuvor in Anspruch genommen wurde.
 
 |   &nbsp;                | &nbsp; |
 |-------------------------|--------|

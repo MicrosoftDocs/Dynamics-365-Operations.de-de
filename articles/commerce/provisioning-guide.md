@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 19cedf01d1b916de785454d55448f41d1f5db1df
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b675d4af6fb9a080f3f3a13e64b2c5b6ad4b783
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792290"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022421"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Eine Dynamics 365 Commerce-Evaluierungsumgebung bereitstellen
 
@@ -76,7 +76,7 @@ Gehen Sie folgendermaßen vor, um ein neues Projekt in LCS zu erstellen.
 
 ### <a name="add-the-azure-connector"></a>Azure-Connector hinzufügen
 
-Führen Sie die folgenden Schritte aus, um den Azure Connector zu Ihrem LCS-Projekt hinzuzufügen [Schließen Sie den Onboarding-Prozess für Azure Resource Manager (ARM) ab](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding).
+Führen Sie die folgenden Schritte aus, um den Azure Connector zu Ihrem LCS-Projekt hinzuzufügen [Schließen Sie den Onboarding-Prozess für Azure Resource Manager (ARM) ab](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md).
 
 ### <a name="deploy-the-environment"></a>Bereitstellen der Umgebung
 
@@ -180,9 +180,9 @@ Um den Prozess zum Bereitstellen und Konfigurieren Ihrer Commerce-Evaluierungsum
 
 [Dynamics 365 Commerce-Evaluierungsumgebung – FAQ](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Commerce Scale Unit (Cloud)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (Cloud)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-Portal](https://azure.microsoft.com/features/azure-portal)
 

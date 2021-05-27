@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d0b5a74a9880a5cabfdbc124f557998540c94a4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792242"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027938"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Übersicht zu Einkaufswagen und Seiten für den Bezahlvorgang
 
@@ -83,7 +83,7 @@ Der Debitor kann den Auschecken-Prozess als Gastbenutzer oder angemeldeter Benut
 
 ### <a name="order-summary"></a>Auftragszusammenfassung
 
-Das Ausschecken zeigt eine Zusammenfassung der Positionen im Einkaufskorb an, damit der Kunde die Bestellung überprüfen kann, bevor er sie aufgibt. Die Positionen können während des Auschecken-Vorgangs nicht bearbeitet werden. Es wird jedoch ein Link zum Einkaufskorb bereitgestellt, falls der Benutzer zurückkehren und Positionen bearbeiten möchte.
+Das Ausschecken zeigt eine Zusammenfassung der Positionen im Einkaufskorb an, damit der Kunde die Bestellung vor dem Aufgeben überprüfen kann. Die Positionen können während des Auschecken-Vorgangs nicht bearbeitet werden. Es wird jedoch ein Link zum Einkaufskorb bereitgestellt, falls der Benutzer zurückkehren und Positionen bearbeiten möchte.
 
 Nachdem der Debitor Versand- und Rechnungsinformationen angegeben hat, zeigt die Bestellübersicht den Betrag an, der fällig ist, nachdem Treuepunkte, Geschenkkarten und andere Zahlungen abgezogen wurden.
 

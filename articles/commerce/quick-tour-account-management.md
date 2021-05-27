@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dc4ae56be1740f0160b4e4777f8db93a6bc4e704
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792266"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027962"
 ---
 # <a name="account-management-pages-overview"></a>Übersicht zu Kontoverwaltungsseiten
 
@@ -39,7 +39,7 @@ Die folgende Abbildung zeigt ein Beispiel für die Landingpage der Kontoverwaltu
 
 ### <a name="my-profile-page"></a>Eigene Profilseite
 
-Auf der Seite **Mein Profil** werden die Kontoinformationen des Kunden, wie Name und Telefonnummer, angezeigt. Der Kunde kann seine Profilinformationen auf dieser Seite aktualisieren. Diese Seite kann so angepasst werden, dass sie zusätzliche Einstellungen für Kundenkonten enthält, z. B. eine Option zum Aktivieren von Marketing-E-Mails.
+Auf der Seite **Mein Profil** werden die Kontoinformationen des Kunden, wie Name und Telefonnummer, angezeigt. Der Kunde kann die Profilinformationen auf dieser Seite aktualisieren. Diese Seite kann so angepasst werden, dass sie zusätzliche Einstellungen für Kundenkonten enthält, z. B. eine Option zum Aktivieren von Marketing-E-Mails.
 
 Die folgende Abbildung zeigt ein Beispiel für die Seite **Mein Profil**, die mit der Modulbibliothek erstellt wurde.
 
@@ -47,7 +47,7 @@ Die folgende Abbildung zeigt ein Beispiel für die Seite **Mein Profil**, die mi
 
 ### <a name="addresses-page"></a>Adressenseite
 
-Über die Seite **Adressen** kann der Kunde seinem Konto Adressen hinzufügen. Außerdem wird die Liste der Adressen angezeigt, die der Kunde zuvor zum Konto hinzugefügt oder in diesem gespeichert hat. Diese Adressen sind Adressen, die der Kunde entweder auf dieser Seite oder bei der Bestellung eingegeben hat.
+Über die Seite **Adressen** kann der Kunde dem Konto Adressen hinzufügen. Außerdem wird die Liste der Adressen angezeigt, die der Kunde zuvor zum Konto hinzugefügt oder in diesem gespeichert hat. Diese Adressen sind Adressen, die der Kunde entweder auf dieser Seite oder bei der Bestellung eingegeben hat.
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Adressen**.
 
@@ -55,7 +55,7 @@ Die folgende Abbildung zeigt ein Beispiel der Seite **Adressen**.
 
 ### <a name="order-history-and-order-details-pages"></a>Auftragshistorien- und Bestelldetailseiten
 
-Die Seite **Auftragshistorie** zeigt eine Zusammenfassung aller Bestellungen, die der Kunde über sein Konto aufgegeben hat. Sie enthält eine kurze Zusammenfassung der bestellten Artikel, die Bestätigungsnummer, die Verkaufsnummer, die Nachverfolgungsinformationen und andere Informationen. Wenn der Kunde eine detailliertere Aufschlüsselung jedes Auftrags sehen möchte, gibt es die Seite **Auftragsdetails**. Diese Seite enthält Informationen wie die Versandadresse, Zahlungsinformationen, Rabatte, Steuern und Versandkosten für die Bestellung.
+Die Seite **Auftragshistorie** zeigt eine Zusammenfassung aller Bestellungen, die der Kunde über das Konto aufgegeben hat. Sie enthält eine kurze Zusammenfassung der bestellten Artikel, die Bestätigungsnummer, die Verkaufsnummer, die Nachverfolgungsinformationen und andere Informationen. Wenn der Kunde eine detailliertere Aufschlüsselung jedes Auftrags sehen möchte, gibt es die Seite **Auftragsdetails**. Diese Seite enthält Informationen wie die Versandadresse, Zahlungsinformationen, Rabatte, Steuern und Versandkosten für die Bestellung.
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Auftragshistorie**.
 
@@ -75,7 +75,7 @@ Die folgende Abbildung zeigt das Beispiel einer **Treueprogramm**-Seite.
 
 ### <a name="wishlist-page"></a>Wunschlistenseite
 
-Die Seite **Wunschliste** zeigt eine Liste der Elemente, die der Kunde seiner Wunschliste hinzugefügt hat. Beide Produkte und Produktvarianten können der Wunschliste hinzugefügt werden. Auf dieser Seite kann der Kunde einen Artikel von der Wunschliste entfernen oder einen Artikel direkt in den Einkaufskorb legen.
+Die Seite **Wunschliste** zeigt eine Liste der Elemente, die der Kunde der Wunschliste hinzugefügt hat. Beide Produkte und Produktvarianten können der Wunschliste hinzugefügt werden. Auf dieser Seite kann der Kunde einen Artikel von der Wunschliste entfernen oder einen Artikel direkt in den Einkaufskorb legen.
 
 Die folgende Abbildung zeigt das Beispiel der Seite **Wunschliste**.
 

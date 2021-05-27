@@ -4,19 +4,18 @@ description: In diesem Thema wird erklärt, wie Sie einen Datenfilter in der deu
 author: liza-golub
 ms.date: 02/09/2021
 ms.topic: article
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Austria, Germany
 ms.author: elgolu
-ms.openlocfilehash: 4adf4e51d1d4b47c06a005f16d13352c52153f0d
-ms.sourcegitcommit: 08ac570bece3e4ee4a0f632f51623e328536dfcf
+ms.openlocfilehash: b22fa7c9abffeeb007d00012636d50892c419502
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5557562"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020079"
 ---
 # <a name="add-filters-to-an-audit-file-configuration"></a>Hinzufügen von Filtern zu einer Audit-Datei-Konfiguration
 

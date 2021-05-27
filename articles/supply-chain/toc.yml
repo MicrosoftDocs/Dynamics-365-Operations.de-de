@@ -361,13 +361,11 @@
                   href: asset-management/objects/object-timeline.md
                 - name: Anlagenansicht
                   href: asset-management/objects/object-view.md
-                - name: Anlagenattributübersicht
+                - name: Anlagenattribut – Übersicht
                   href: asset-management/objects/object-specification-overview.md
             - name: Einstellungen für Wartungsanfragen
               items:
-                - name: Wartungsanfragen
-                  href: asset-management/setup-for-maintenance-requests/requests.md
-                - name: Wartungsanfrage-Lebenszyklusstatus
+                - name: Lebenszyklusstatus der Wartungsanfrage
                   href: asset-management/setup-for-maintenance-requests/request-stages.md
                 - name: Wartungsanfragentypen
                   href: asset-management/setup-for-maintenance-requests/request-types.md
@@ -3343,9 +3341,95 @@
               href: inventory/extend-on-hand-entities.md
         - name: Problembehandlung
           items:
+            - name: Kostenverwaltung
+              items:
+                - name: Fehlende Feldeinstellungen beim Kopieren von Artikelmodellgruppen in eine andere juristische Person
+                  href: troubleshooting/costing/copying-item-model-groups.md
+                - name: Der Bericht „Indirekte Kosten in Bearbeitung“ enthält gelöschte Produktionsaufträge
+                  href: troubleshooting/costing/indirect-costs-in-pr.md
+                - name: Einkaufsabgrenzung mit Null-Betrag für Nullwert-Produktbeleg gebucht
+                  href: troubleshooting/costing/posting-to-purchase.md
+                - name: Physisch eingegangene Bestellungen werden nicht im Bestandsabschlussbericht angezeigt.
+                  href: troubleshooting/costing/purchase-orders-rece.md
+                - name: Auf der Registerkarte „Aktive Preise“ der Seite „Artikelpreis“ gibt es kein Startdatum.
+                  href: troubleshooting/costing/there-is-no-from-dat.md
+            - name: Lagerverwaltung
+              items:
+                - name: Mehrere Lagerbuchungen für Chargennummern ohne „Bei physischer Aktualisierung“
+                  href: troubleshooting/inventory/multiple-inventory-t.md
+                - name: 'Wenn Sie einen Berichtsabschluss rückgängig machen, wird eine unerwartete offene Buchung erstellt.'
+                  href: troubleshooting/inventory/reverse-report-as-fi.md
+                - name: 'Neue Notizen, die an eine Erfassung angehängt sind, können im Kommissionierlistenbericht nicht angezeigt werden.'
+                  href: troubleshooting/inventory/unable-to-print-the.md
+                - name: 'Die Menge einer gestarteten Quarantänebestellung wird nicht aktualisiert, wenn die Bestellung aufgeteilt wird.'
+                  href: troubleshooting/inventory/quantity-on-a-start.md
+                - name: Das Feld „Datum des letzten Tests“ wird beim Erstellen mehrerer Qualitätsaufträge nicht aktualisiert.
+                  href: troubleshooting/inventory/the-field-last-test.md
+                - name: Beim Aufteilen einer Artikelgewichtsmenge wird anstelle der nominellen Menge ein Minimum verwendet.
+                  href: troubleshooting/inventory/while-splitting-the.md
+            - name: Produktprogrammplanung
+              items:
+                - name: Direkt abgeleitete feste Bestellungen werden von einem Überprüfungs-Workflow verarbeitet.
+                  href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Die Masterplanung generiert Planaufträge für Phantomprodukte.
+                  href: troubleshooting/planning/planned-orders-are-g.md
+                - name: 'Eine geplante Bestellung wird erstellt, wenn ein Kauf innerhalb negativer Tage vorliegt.'
+                  href: troubleshooting/planning/planning-optimisatio.md
+                - name: Der Selbstkostenpreis kann nicht in Bedarfsprognoseeinträge hochgeladen werden.
+                  href: troubleshooting/planning/unable-to-upload-the.md
+                - name: Die Dimension der Lagerbedarfsprognose kann nicht aus den Prognosezeilen entfernt werden.
+                  href: troubleshooting/planning/warehouse-removal-fr.md
+            - name: Beschaffung
+              items:
+                - name: Ein kundenorientierter Auftrag in der Firma VEL kann nicht in Rechnung gestellt werden.
+                  href: troubleshooting/procurement/not-able-to-invoice-.md
+                - name: Nach dem Anfordern einer Änderung kann einer Bestellanforderung keine Zeile hinzugefügt werden.
+                  href: troubleshooting/procurement/purchase-requisition.md
+            - name: Produktinformationsverwaltung
+              items:
+                - name: Es kann keine Vorlage zum Erstellen eines freigegebenen Produkts angewendet werden.
+                  href: troubleshooting/products/apply-template-in-re.md
+                - name: Ein Artikel kann nicht mit der Entität „Freigegebene Produkte V2“ importiert werden.
+                  href: troubleshooting/products/cannot-import-with-r.md
+                - name: Bestellungen zeigen keinen übersetzten Produkttext.
+                  href: troubleshooting/products/when-the-customer-ad.md
+            - name: Produktionssteuerung
+              items:
+                - name: Die Einstellungen für das Stücklisten-Bezugsprinzip in Stücklistenpositionen werden nicht berücksichtigt.
+                  href: troubleshooting/production/flushing-principle-n.md
+                - name: Die Losnummer wird bei Auswahl einer neuen Loskennung gelöscht.
+                  href: troubleshooting/production/when-customer-is-try.md
+                - name: Verspätete Auswahl wird beim Zurücksetzen von Produktionsaufträgen per Stapelverarbeitungsauftrag nicht berücksichtigt.
+                  href: troubleshooting/production/late-selection-is-no.md
+                - name: 'Benutzer können Materialpositionen für Produkte entfernen, die als fertig gemeldet wurden.'
+                  href: troubleshooting/production/raw-material-lines-a.md
+                - name: Fehler beim Buchen des Berichts als fertige Erfassung
+                  href: troubleshooting/production/posting-report-as-.md
+                - name: Das Lager in der Kommissionierlistenerfassung wird in einer Stücklistenzeile nicht aktualisiert.
+                  href: troubleshooting/production/the-warehouse-in-pic.md
+            - name: Rückvergütungsverwaltung
+              items:
+                - name: Fehler beim Kumulieren von Kundenrabatten mithilfe von Artikelrabattgruppen
+                  href: troubleshooting/rebates/cumulating-customer-.md
+            - name: Vertrieb und Marketing
+              items:
+                - name: 'Systemadministratoren können Auftragsbestellungen nicht löschen, da sie nicht autorisiert sind.'
+                  href: troubleshooting/sales/system-administrator.md
+            - name: Transportverwaltung
+              items:
+                - name: Das Hauptkonto kann nur aus Abstimmungsgründen als Habenkonto hinzugefügt werden.
+                  href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerortverwaltung
               items:
-                - name: Eine Lieferung kann aufgrund von Problemen mit dem Kalender nicht bestätigt werden
+                - name: Bei der Auswahl des Standorts während der Kommissionierlistenregistrierung tritt ein Fehler auf.
+                  href: troubleshooting/warehousing/error-cannot-update.md
+                - name: In der Packstation werden keine Produkthinweise angezeigt.
+                  href: troubleshooting/warehousing/packing-station-not-.md
+                - name: 'Das Standortprofil erlaubt kein negatives Inventar, aber ein negativer Lagerbestand ist zulässig.'
+                  href: troubleshooting/warehousing/location-profile-set.md
+                - name: Auf einem Beleg wird nur eine Beschriftung für mehrere Arbeitsköpfe gedruckt.
+                  href: troubleshooting/warehousing/when-receipting-prod.md
+                - name: Eine Lieferung kann aufgrund von Problemen mit dem Kalender nicht bestätigt werden.
                   href: troubleshooting/warehousing/load-has-active-appo.md
                 - name: Eine Lieferung kann wegen unvollständiger oder fehlender Arbeit nicht bestätigt werden
                   href: troubleshooting/warehousing/open-or-no-work-exis.md

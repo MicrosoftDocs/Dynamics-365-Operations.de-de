@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aa00e9331693600ced2f4ead399a0c005b77ad08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d29e560d0f7b2bbc2415d7a0f6fe18f2ca17dc7c
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801506"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020731"
 ---
 # <a name="cant-configure-a-security-group-for-commerce-site-builder-during-initial-deployment"></a>Während der ersten Bereitstellung kann keine Sicherheitsgruppe für den Commerce-Website-Generator konfiguriert werden
 
@@ -38,7 +37,7 @@ Wenn Sie die E-Commerce-Komponenten im Rahmen der Bereitstellung eines neuen E-C
 ### <a name="provision-the-e-commerce-site-with-a-user-in-the-correct-tenant"></a>Der E-Commerce-Website einen Benutzer im richtigen Mandanten zur Verfügung stellen
 
 1. Gehen Sie zu [Azure-Portal](https://portal.azure.com/).
-1. Befolgen Sie in dem Mandanten, für den das LCS-Projekt Ihrer E-Commerce-Website bereitgestellt wurde, die Anweisungen in [Erstellen einer Basisgruppe und Hinzufügen von Mitglieder mit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+1. Befolgen Sie in dem Mandanten, für den das LCS-Projekt Ihrer E-Commerce-Website bereitgestellt wurde, die Anweisungen in [Erstellen einer Basisgruppe und Hinzufügen von Mitglieder mit Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 1. Rufen Sie [LCS](https://lcs.dynamics.com/) auf, und melden Sie sich mit einem Konto an, das über denselben Mandanten wie die Azure AD-Sicherheitsgruppe verfügt, die Sie gerade erstellt haben. Das Konto muss Zugriff haben, um die Azure AD-Sicherheitsgruppe anzuzeigen.
 1. Führen Sie die Einrichtungsschritte aus, um die E-Commerce-Website zu konfigurieren. Wenn Sie die E-Commerce-Komponenten bereitstellen, sollte die Sicherheitsgruppe jetzt als Option im Dialogfeld angezeigt werden.
 
@@ -47,6 +46,6 @@ Wenn Sie die E-Commerce-Komponenten im Rahmen der Bereitstellung eines neuen E-C
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Erstellen einer Basisgruppe und Hinzufügen von Mitgliedern mit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+[Erstellen einer Basisgruppe und Hinzufügen von Mitgliedern mit Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 [Neuen E-Commerce-Mandanten bereitstellen](../deploy-ecommerce-site.md)

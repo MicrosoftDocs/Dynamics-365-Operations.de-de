@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b0c7aa3bc1d4eef7b557bd9b07b31196faab273d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791077"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022471"
 ---
 # <a name="e-commerce-site-overview"></a>E-Commerce-Site – Übersicht
 
@@ -37,11 +37,11 @@ In Dynamics 365 Commerce können Sie einen Onlineshopkanal verwenden, um die Pro
 
 Nur ein Onlineshopkanal muss eingerichten werden, bevor Sie mit Dynamics 365 Commerce loslegen können. Jedoch kann eine einzelne E-Commerce-Website die Online-Umgebung für mehrere Onlineshops bereitstellen. Wenn zum Beispiel mehrere Online-Shops eingerichtet sind, um unterschiedliche geografische Regionen zu unterstützen, kann ein einzelner Satz von E-Commerce-Seiten verwendet werden, um die von jedem Shop definierten einzigartigen Umgebungen und Funktionalitäten bereitzustellen. Weitere Informationen zum Konfigurieren einer Site für die Unterstützung mehrerer Onlineshops finden Sie unter [Verknüpfen Sie eine Online-Site mit einem Kanal](associate-site-online-store.md).
 
-Nachdem ein Online-Shop eingerichtet wurde, kann er der Dynamics 365 Commerce-Site zugeordnet werden, die als Ihre Online-Storefront dient. Weitere Informationen zu Onlineshops und deren Einrichtung finden Sie unter [Richten Sie Online-Shops ein](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
+Nachdem ein Online-Shop eingerichtet wurde, kann er der Dynamics 365 Commerce-Site zugeordnet werden, die als Ihre Online-Storefront dient. Weitere Informationen zu Onlineshops und deren Einrichtung finden Sie unter [Richten Sie Online-Shops ein](/dynamics365/unified-operations/retail/online-stores).
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>Neuen E-Commerce-Mandanten bereitstellen
 
-Während der Initialisierung einer E-Commerce-Website werden Sie zur Eingabe eines Domänennamens aufgefordert. Weitere Informationen zu Domänen in Commerce finden Sie unter [Ihren Domänennamen konfigurieren](configure-your-domain-name.md) und [Domänen in Dynamics 365 Commerce](domains-commerce.md). Um einen neuen E-Commerce-Mandanten mithilfe von [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide) bereitzustellen, folgen Sie den Schritten in [Einen neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md). Nachdem Ihr E-Commerce-Mandant in LCS eingerichtet wurde, wird ein Link zum Commerce-Website-Generator bereitgestellt. Sie können dann den Commerce-Website-Generator verwenden, um Ihre E-Commerce-Websites zu initialisieren und zu konfigurieren.
+Während der Initialisierung einer E-Commerce-Website werden Sie zur Eingabe eines Domänennamens aufgefordert. Weitere Informationen zu Domänen in Commerce finden Sie unter [Ihren Domänennamen konfigurieren](configure-your-domain-name.md) und [Domänen in Dynamics 365 Commerce](domains-commerce.md). Um einen neuen E-Commerce-Mandanten mithilfe von [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide) bereitzustellen, folgen Sie den Schritten in [Einen neuen E-Commerce-Mandanten bereitstellen](deploy-ecommerce-site.md). Nachdem Ihr E-Commerce-Mandant in LCS eingerichtet wurde, wird ein Link zum Commerce-Website-Generator bereitgestellt. Sie können dann den Commerce-Website-Generator verwenden, um Ihre E-Commerce-Websites zu initialisieren und zu konfigurieren.
 
 ## <a name="initialize-your-e-commerce-site"></a>Ihre E-Commerce-Website initialisieren
 

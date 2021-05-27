@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 421fae6eab20eea50b9ce677a1ae7993add6cb93
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8bb3d5848b7e2c50a8fdaba1c6a1a7c0087d1390
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842056"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6016955"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Zustände und Transaktionen im Produktlebenszyklus
 
@@ -74,5 +74,24 @@ Die folgenden Felder sind für jeden Prozess verfügbar, der auf der Registerkar
 
 Wenn Sie weitere Regeln für den Status des Lebenszyklus als Anpassung hinzufügen, können Sie diese Regeln in der Benutzeroberfläche (UI) anzeigen, indem Sie **Prozesse aktualisieren** im oberen Fensterbereich auswählen. Die Schaltfläche **Prozesse aktualisieren** ist nur für Administratoren verfügbar.
 
+## <a name="lifecycle-states-for-released-products-and-product-variants"></a>Lebenszyklusstatus für freigegebene Produkte und Produktvarianten
+
+Für ein Produkt mit Varianten (Produktmaster und Varianten) hat das Produkt (Produktmaster) einen Lebenszyklusstatus, und jede der Varianten kann auch einen anderen Lebenszyklusstatus haben.
+
+Wenn für bestimmte Prozesse entweder die Variante oder das Produkt blockiert ist, wird der Prozess ebenfalls blockiert. Um festzustellen, ob ein Prozess blockiert ist, führt das System die folgenden Überprüfungen durch:
+
+- Für technisch gesteuerte Produkte:
+  - Wenn die aktuelle technische Version blockiert ist, blockieren Sie den Prozess.
+  - Wenn die aktuelle Variante blockiert ist, blockieren Sie den Prozess.
+  - Wenn das freigegebene Produkt blockiert ist, blockieren Sie den Prozess.
+- Für Standardprodukte:
+  - Wenn die aktuelle Variante blockiert ist, blockieren Sie den Prozess.
+  - Wenn das freigegebene Produkt blockiert ist, blockieren Sie den Prozess.
+
+Angenommen, Sie möchten nur eine Variante (rot) eines bestimmten Produkts (T-Shirt) verkaufen und den Verkauf aller anderen Varianten vorerst blockieren. Sie können dies mit dem folgenden Setup erreichen:
+
+- Weisen Sie dem Produkt einen Lebenszyklusstatus zu, der den Prozess ermöglicht. Weisen Sie dem T-Shirt-Produkt beispielsweise einen Lebenszyklusstatus von *Verkäuflich* zu, sodass der Geschäftsprozess *Auftrag* möglich ist.
+- Weisen Sie der verkäuflichen Variante einen Lebenszyklusstatus zu, der den Prozess ermöglicht. Weisen Sie der roten Variante beispielsweise auch einen Lebenszyklusstatus von *Verkäuflich* zu.
+- Allen anderen Varianten wird ein anderer Lebenszyklusstatus zugewiesen, in dem der Prozess blockiert ist. Weisen Sie beispielsweise der weißen Variante (und allen anderen Varianten) einen Lebenszyklusstatus von *Nicht verkäuflich* zu, die den Geschäftsprozess *Auftrag* blockiert.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

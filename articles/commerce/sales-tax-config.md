@@ -2,7 +2,6 @@
 title: Mehrwertsteuer für Online-Aufträge konfigurieren
 description: Dieses Thema bietet eine Übersicht über die Auswahl von Mehrwertsteuergruppen für verschiedene Online-Auftragstypen in Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: AnnBe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 8df939c1a566fb63bc53e455cc6c2aa85956ac79
-ms.sourcegitcommit: 583801af75c50915ea5ffc60e831fb617d045533
+ms.openlocfilehash: fff4f39703a146412b460dacc3805fde097ab756
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853810"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021439"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Mehrwertsteuer für Online-Aufträge konfigurieren
 
@@ -41,7 +40,7 @@ Wenn ein Online-Auftrag erteilt wird, verwendet das Commerce-Steuermodul die Lie
 
 ### <a name="order-pick-up-in-store"></a>Auftragsabholung im Laden
 
-Für Auftragspositionen, bei denen Abholung im Laden oder Abholung am Straßenrand angegeben ist, wird die Steuergruppe aus dem ausgewählten Abholladen angewendet. Details zum Einrichten der Mehrwertsteuer für einen bestimmten Laden finden Sie unter [Andere Steueroptionen für Läden festlegen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
+Für Auftragspositionen, bei denen Abholung im Laden oder Abholung am Straßenrand angegeben ist, wird die Steuergruppe aus dem ausgewählten Abholladen angewendet. Details zum Einrichten der Mehrwertsteuer für einen bestimmten Laden finden Sie unter [Andere Steueroptionen für Läden festlegen](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
 
 ## <a name="customer-account-based-taxes-for-online-orders"></a>Debitorenkontobasierte Steuern für Online-Bestellungen
 
@@ -71,15 +70,15 @@ In der folgenden Tabelle wird erläutert, ob für Online-Bestellungen zielbasier
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Einrichten von Steuern für Onlineshops auf Zielbasis](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
+[Einrichten von Steuern für Onlineshops auf Zielbasis](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
 
-[Übersicht über die Mehrwertsteuer](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
+[Übersicht über die Mehrwertsteuer](../finance/general-ledger/indirect-taxes-overview.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[Mehrwertsteuer-Berechnungsmethoden im Feld „Ursprung“](https://docs.microsoft.com/dynamics365/finance/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/commerce/toc.json) 
+[Mehrwertsteuer-Berechnungsmethoden im Feld „Ursprung“](../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[Mehrwertsteuer-Zuweisung und -Außerkraftsetzungen](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks/sales-tax-assignment-overrides?toc=/dynamics365/commerce/toc.json) 
+[Mehrwertsteuer-Zuweisung und -Außerkraftsetzungen](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes](https://docs.microsoft.com/dynamics365/finance/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/commerce/toc.json) 
+[Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes](../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
 [Berechnung der Steuerbefreiung](tax-exempt-price-inclusive.md) 
 

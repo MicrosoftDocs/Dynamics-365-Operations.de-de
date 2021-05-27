@@ -2,11 +2,9 @@
 title: Konfigurieren Sie die Azure Active Directory-Authentifizierung für die POS-Anmeldung
 description: Dieses Thema erklärt, wie Sie Azure Active Directory als Authentifizierungsmethode in Microsoft Dynamics 365 Commerce Point of Sale (POS) konfigurieren.
 author: boycezhu
-manager: annbe
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +13,12 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 34a7946a56a58655bc9ae23e060fc50ab01f2c6e
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: e271bbae84605b4adace1809b53b7cbdb6932da0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937457"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020010"
 ---
 # <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Konfigurieren Sie die Azure Active Directory-Authentifizierung für die POS-Anmeldung
 
@@ -41,7 +39,7 @@ Um die POS-Authentifizierungsmethode in der Commerce-Zentrale zu konfigurieren, 
     Die **Anmelde-Authentifizierungsmethode** hat drei Optionen:
     
     - **Personal-ID und Kennwort** – Diese Standardoption erfordert, dass POS-Benutzer eine Personal-ID und ein Kennwort eingeben, um sich am POS anzumelden und um auf die Manager-Überschreibungsfunktion zuzugreifen.
-    - **Azure AD ohne Single Sign-On** – Bei dieser Option müssen POS-Benutzer Azure ADAnmeldeinformationen verwenden, um sich an der Kasse anzumelden und auf die Manager-Override-Funktionalität zuzugreifen. Wenn der POS Client aktualisiert oder neu geöffnet wird, muss der POS-Benutzer Anmeldeinformationen Azure AD angeben, um sich erneut anzumelden.
+    - **Azure AD ohne Single Sign-On** – Bei dieser Option müssen POS-Benutzer Azure AD-Anmeldeinformationen verwenden, um sich an der Kasse anzumelden und auf die Manager-Override-Funktionalität zuzugreifen. Wenn der POS Client aktualisiert oder neu geöffnet wird, muss der POS-Benutzer Anmeldeinformationen Azure AD angeben, um sich erneut anzumelden.
     - **Azure AD mit Single Sign-On** – Wenn diese Option ausgewählt ist, können sich POS-Benutzer bei Cloud POS (CPOS) mit aktiven Anmeldeinformationen Azure AD anmelden, die von anderen Webanwendungen im selben Webbrowser verwendet werden, oder sich bei Modern POS (MPOS) mit Anmeldeinformationen Azure AD anmelden, die bei Windows angemeldet sind. Beide Methoden lassen die Anmeldung zu, ohne dass die Anmeldeinformationen Azure AD auf dem POS-Anmeldebildschirm eingegeben werden müssen. Für den Zugriff auf die Überschreibungsfunktion des POS-Managers ist jedoch immer noch eine Anmeldung mit Anmeldeinformationen Azure AD erforderlich.
 
 1. Gehen Sie zu **Retail und Commerce > Retail und Commerce IT > Verteilungsplan** und führen Sie den Job **1070 (Kanalkonfiguration)** aus, um die neuesten Einstellungen des Funktionalitätsprofils mit den POS Clients zu synchronisieren.

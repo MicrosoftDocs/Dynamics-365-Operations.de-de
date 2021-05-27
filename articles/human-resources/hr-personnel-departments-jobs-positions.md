@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 48427bb52d4e398edba152ff25e28c3625b6a5d3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 31b9532eea82fd5b88fe59718af7be4d242dc885
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803584"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027889"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Verwalten der Belegschaft mittels Abteilungen, Stellen und Positionen
 
@@ -120,7 +120,7 @@ Wenn Sie eine Arbeitskraft einer Position zuweisen, füllen Sie diese Position a
 
 Positionen sind wichtiges Elemente der untergeordneten Ebene einer Organisationshierarchie. Im Formular "Position" können Sie die Position angeben, der eine Position untergeordnet ist. Wenn Sie eine Arbeitskraft einer Position zuweisen, die einer andere Position untergeben ist, erstellen Sie Berichtbeziehung zwischen den Arbeitskräften, die den beiden Positionen zugewiesen werden. Beispielsweise ist Stellung "Buchhalter-A" der Stellung "Buchhaltungs-Vorgesetzter" untergeben. Kim Akers wird der Position "Buchhaltungs-Vorgesetzter" zugewiesen und Sanjay Patel wird der Position "Buchhalter-A" zugewiesen. Das bedeutet, dass Sanjay Patel an Kim Akers berichtet. 
 
-Wenn Ihre Organisation eine Matrixhierarchie oder eine andere benutzerdefinierte Hierarchie verwendet, können Sie Positionshierarchietypen einrichten und dann Berichtsbeziehungen zu den Positionen für jede Hierarchie hinzufügen, Sie einrichten. Beispielsweise ist Lori Penor ein Generaldirektor bei Adventure Works und wird der Position "Generaldirektor" zugewiesen. Lori verwaltet die Entwicklung eines Produkts, das verwendet wird, um Produkte zu säubern. Lori fordert einen Buchhalter an, der ihr mit den Finanzen zum Entwickeln des Produkts helfen soll. Daher hat sie Sanjay Patel herangezogen, um ihr Buchhalter zu werden. Sanjay ist direkt Kim Akers unterstellt, arbeitet aber auch mit Lori Penor an der Arbeit, die den Finanzen zum Entwickeln des Gerätereinigers zugeordnet ist. 
+Wenn Ihre Organisation eine Matrixhierarchie oder eine andere benutzerdefinierte Hierarchie verwendet, können Sie Positionshierarchietypen einrichten und dann Berichtsbeziehungen zu den Positionen für jede Hierarchie hinzufügen, Sie einrichten. Beispielsweise ist Lori Penor ein Generaldirektor bei Adventure Works und wird der Position "Generaldirektor" zugewiesen. Lori verwaltet die Entwicklung eines Produkts, das verwendet wird, um Produkte zu säubern. Lori fordert jemanden von der Buchhaltung an, um mit den Finanzen zum Entwickeln des Produkts zu helfen. Daher hat sie Sanjay Patel herangezogen, um dies zu übernehmen. Sanjay ist direkt Kim Akers unterstellt, arbeitet aber auch mit Lori Penor an der Arbeit, die den Finanzen zum Entwickeln des Gerätereinigers zugeordnet ist. 
 
 Für das vorherige Beispiel würden Sie die folgenden Aufgaben ausführen, um das Arbeitsverhältnis zwischen Sanjay Patel und Lori Penor einzurichten:
 1.  Erstellen Sie einen benutzerdefinierten Positionshierarchietyp mit der Bezeichnung "Gerät" erstellt, um eine Hierarchie zu erstellen, die die Positionen enthält, die für die Arbeit an dem Gerätereinigerprodukt zuständig sind.
@@ -159,7 +159,7 @@ Für einige Datensätze können Sie zukünftige Änderungen am Datensatz angeben
 </tbody>
 </table>
 
-Sie können die in der vorherigen Tabelle für eine Position oder Einzelvorgangs aufgeführten Informationen ändern und das Datum angeben, an dem die Änderungen an der Position oder dem Einzelvorgang wirksam werden sollen. Zum Beispiel kann eine Position nur einer Arbeitskraft zugewiesen sein, aber Sanjay Patel, dem die Position Buchhalter-A zugewiesen ist, wird in zwei Wochen gehen. Jens Healy ersetzt Sanjay Patel, wenn dieser geht. Obwohl Sanjay noch seiner Position zugeordnet ist, können Sie Jens Healy der gleichen Position zuweisen, sodass die Zuweisung erst nach Sanjays letzten Tag gültig ist.
+Sie können die in der vorherigen Tabelle für eine Position oder Einzelvorgangs aufgeführten Informationen ändern und das Datum angeben, an dem die Änderungen an der Position oder dem Einzelvorgang wirksam werden sollen. Zum Beispiel kann eine Position nur einer Arbeitskraft zugewiesen sein, aber Sanjay Patel, dem die Position Buchhalter-A zugewiesen ist, wird in zwei Wochen gehen. Jens Healy ersetzt Sanjay Patel, wenn Sanjay geht. Obwohl Sanjay noch seiner Position zugeordnet ist, können Sie Jens Healy der gleichen Position zuweisen, sodass die Zuweisung erst nach Sanjays letzten Tag gültig ist.
 
 
 

@@ -2,11 +2,9 @@
 title: Lagerregulierung des Lagerorts
 description: Dieses Thema enthält Informationen über die Erfassung und Verarbeitung von Lagerort-Bestandsanpassungen, wenn Sie Scale-Units verwenden.
 author: perlynne
-manager: tfehr
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSInventoryAdjustmentJournal, InventJournalCount
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: be386539ea7addf20256ac2b1f8a2a72736fcbec
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: a451816078ca2e77f30379828777209dc48bd849
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938225"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026132"
 ---
 # <a name="warehouse-inventory-adjustment"></a>Lagerregulierung des Lagerorts
 
@@ -40,7 +38,7 @@ Die folgenden Lagerort-App-Arbeitsprozesse verwenden derzeit die **Erfassung von
 - Permanente Inventur
 - Ladungsträgerladung
 
-Mehrere Transaktionen bei der Bestandsanpassung werden als Teil von Cloud und Edge erstellt, da die Hub- und Scale-Unit-Einsätze die Datensätze für den Bestand gemeinsam nutzen.
+Mehrere Transaktionen bei im Rahmen jeder Bestandsanpassung erstellt, da die Hub- und Skalierungseinheiteneinsätze die Datensätze für den Bestand gemeinsam nutzen.
 
 ## <a name="inventory-adjustment-example"></a>Beispiel für Bestandsanpassung
 

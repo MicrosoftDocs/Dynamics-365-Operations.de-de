@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 39135111a8e7bf16d1e56ca42726ae8a8e130c5d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7b1b004d7a910e3b53eb584dbceb4d52d41fe409
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798680"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022682"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Arbeiten mit serialisierten Artikeln in der POS
 
@@ -130,9 +130,9 @@ Validierungen für Seriennummern werden auch durchgeführt, wenn ein Benutzer di
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Eingehender Bestandsvorgang in POS](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
+[Eingehender Bestandsvorgang in POS](./pos-inbound-inventory-operation.md)
 
-[Ausgehender Bestandsvorgang in POS](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+[Ausgehender Bestandsvorgang in POS](./pos-outbound-inventory-operation.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

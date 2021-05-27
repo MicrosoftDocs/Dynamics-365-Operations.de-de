@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8334b46f7e943e888c3a4db7580eeca30d49ad39
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 401fb9af5d2d50a14c288363af3e0b814dcbf7c6
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793968"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018540"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Einstellungen und Arbeiten mit Callcenterbetrugswarnungen
 
@@ -34,13 +34,13 @@ In diesem Thema wird erläutert, wie Sie Kriterien und Regeln einrichteten ,um p
 
 ## <a name="turning-on-the-fraud-check-feature"></a>Aktiviert die Betrugsüberprüfungsfunktion
 
-Um die Betrugsscheckfunktion zu verwenden, müssen Sie die Option **Aktivieren Sie Auftragsabschluss** im Kanal auf **Ja** festlegen, wenn der Callcenterkanal [ist](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-order-processing-options). Wenn Auftragsabschluss aktiviert ist, müssen Callcenterbenutzer auf der Seite Auftrag **Vollständig** auswählen für alle Aufträge, die erstellt werden. Die vollständige Aktivität hat zur Folge, dass die Seite **Auftragszusammenfassung** geöffnet wird. Nachdem Benutzer die obligatorischen Zahlungsdaten auf der Seite **Auftragszusammenfassung** eingeben haben, wählen Sie **Übermitteln**, um den Auftrag einrichten. Wenn der Auftrag übermittelt wird, wird die Betrugsscheckfunktion ausgelöst, und alle Regeln, die im System aktiv sind, werden automatisch geprüft.
+Um die Betrugsscheckfunktion zu verwenden, müssen Sie die Option **Aktivieren Sie Auftragsabschluss** im Kanal auf **Ja** festlegen, wenn der Callcenterkanal [ist](/dynamics365/unified-operations/retail/set-up-order-processing-options). Wenn Auftragsabschluss aktiviert ist, müssen Callcenterbenutzer auf der Seite Auftrag **Vollständig** auswählen für alle Aufträge, die erstellt werden. Die vollständige Aktivität hat zur Folge, dass die Seite **Auftragszusammenfassung** geöffnet wird. Nachdem Benutzer die obligatorischen Zahlungsdaten auf der Seite **Auftragszusammenfassung** eingeben haben, wählen Sie **Übermitteln**, um den Auftrag einrichten. Wenn der Auftrag übermittelt wird, wird die Betrugsscheckfunktion ausgelöst, und alle Regeln, die im System aktiv sind, werden automatisch geprüft.
 
-Callcenterbenutzer können Aufträge für Betrugsprüfung auch manuell sperren, bevor sie **Übermitteln** wählen. Um einen Auftrag, auf der Seite **Auftragszusammenfassung** manuell zu sperren, wählen Sie **Anhalten** \> **Manueller Betrugsstopp** aus. Sie werden aufgefordert, dann einen Kommentar einzugeben, um den Grund für das Sperren des Auftrags darzulegen. Dieser Kommentar erscheint unter [Auftragsstopp](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds), um dem Benutzer den Kontext anzugeben, der den Auftrag berprüft, der gestoppt wurde, um zu bestimmen, ob der Auftrag freigegeben werden soll.
+Callcenterbenutzer können Aufträge für Betrugsprüfung auch manuell sperren, bevor sie **Übermitteln** wählen. Um einen Auftrag, auf der Seite **Auftragszusammenfassung** manuell zu sperren, wählen Sie **Anhalten** \> **Manueller Betrugsstopp** aus. Sie werden aufgefordert, dann einen Kommentar einzugeben, um den Grund für das Sperren des Auftrags darzulegen. Dieser Kommentar erscheint unter [Auftragsstopp](/dynamics365/unified-operations/retail/work-with-order-holds), um dem Benutzer den Kontext anzugeben, der den Auftrag berprüft, der gestoppt wurde, um zu bestimmen, ob der Auftrag freigegeben werden soll.
 
 Zusätzlich zur Konfiguration der Option **Auftragabschluss aktivieren** im Kanal müssen Sie die Betrugsprüffunktion in den Callcenter-Parametern konfigurieren.  Gehen Sie zu **Einzelhandel und Handel** \> **Kanaleinstellung** \> **Callcenter-Einrichtung** \> **Callcenter-Parameter**. Auf der Seite **Callcenterparameter** auf der Registerkarte **Sperren**, setzen Sie die  **Betrugsscheck** Option auf **Ja**.
 
-Auf der Registerkarte **Sperren** können Sie auch [Codes halten](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) definieren, die für einen Aftrag angewendet werden, der entweder manuell oder automatisch für Betrugsprüfung gesperrt wird. Legen Sie die Haltecodes in den Feldern **Betrughaltecode manuell** und **Betrugshaltecode** fest. Sie finden es möglicherweise hilfreich, zwei eindeutige Haltecodes zu erstellen, damit Benutzer, die Workbench Sperre arbeiten, einfach automatische Sperren von manuellen Sperrren unterscheiden können.
+Auf der Registerkarte **Sperren** können Sie auch [Codes halten](/dynamics365/unified-operations/retail/work-with-order-holds) definieren, die für einen Aftrag angewendet werden, der entweder manuell oder automatisch für Betrugsprüfung gesperrt wird. Legen Sie die Haltecodes in den Feldern **Betrughaltecode manuell** und **Betrugshaltecode** fest. Sie finden es möglicherweise hilfreich, zwei eindeutige Haltecodes zu erstellen, damit Benutzer, die Workbench Sperre arbeiten, einfach automatische Sperren von manuellen Sperrren unterscheiden können.
 
 Damit die Betrugssperrfunktion effektiv ist, müssen Sie das Feld **Minimale Punktzahl** festlegen. Jedes Betrugskriterium und - regel, die im System definiert wird, besitzt eine Bewertung. Wenn ein Auftrag für Betrugsabgleichungen geprüft wird, wenn mindestens Übereinstimmungen gefunden werden, werden die Punktzahlen zusammen hinzugefügt, um dem Auftrag eine gesamte Betrugspunktzahl zu geben. Wenn die gesamte Betrugspunktzahl für einen Auftrag den Wert **Minimale Punktzahl** überschreitet, wird der Auftrag automatisch gesperrt. Sie können optional die anderen punktebezogenen Felder auf der Registerkarte **Sperren** nutzen, um die E-Mail-Punktzahl, die Telefonnummer-Punktzahl, die Postleitzahl-Punktzahl und die erweiterte Postleitzahlpunktzahl zu definieren. Wird keine Punktzahl für ein statisches Betrugskriterien angeben, wenn Sie diese auf der Seite **Statische Betrugsdaten** festlegen, wird sie das System bewerten, indem es die Standardpunktzahlen verwendet, die Sie auf der Registerkarte **Sperren** auf der Seite **Callcenterparameter** definieren.
 
@@ -65,7 +65,7 @@ Die Reihenfolge wird gespeichert, jedoch wird die Markierung auf **nicht verarbe
 
 Um die Aufträge anzuzeigen und zu verwalten, die für Betrugsprüfung gesperrt sind, wechseln Sie zu **Einzelhandel und Handel** \> **Kunden** \> **Auftragssperren**. Auf der Seite **Aufträge sperren** wählen Sie einen Eintrag in der Liste aus, und klicken Sie dann auf **Auftrag gesperrt**, um eine detailliertere Ansicht anzuzeigen, die Informationen über den Grund für die Sperre enthält. Auf dem Inforegister **Betrugsdetails** können Sie die systematische die Betrugskriterien anzeigen, die gefunden wurden, um für eine Übereinstimmung die Reihenfolge und die Bewertungen abzustimmen. Wenn der Auftrag manuell gesperrt wurde, können Sie beliebige Kommentare anzeigen, die vom Benutzer eingegeben wurden, der den Auftrag gesperrt hat unter **Betrugs-Hinweise** im Inforegister  **Hinweise**.
 
-Weitere Informationen zum Arbeiten mit dem Formular, finden Sie unter [Auftrag sperren ](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+Weitere Informationen zum Arbeiten mit dem Formular, finden Sie unter [Auftrag sperren ](/dynamics365/unified-operations/retail/work-with-order-holds).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
