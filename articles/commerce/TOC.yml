@@ -376,13 +376,11 @@
                       href: aad-pos-logon.md
                     - name: Produkt- und Debitorensuche im POS
                       href: POS-search-improvements.md
-                    - name: Suchen nach Produkten und Produktvarianten bei der Auftragserfassung
+                    - name: Nach Produkten und Produktvarianten bei der Auftragserfassung suchen
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Verbesserungen bei der Kassenbuchführung
                       href: cash-mgmt.md
-                    - name: Bestandssuche im POS
-                      href: product-variants-POS.md
-                    - name: Anhalten und Fortsetzen von Transaktionen im POS
+                    - name: Transaktionen im POS anhalten und fortsetzen
                       href: pos-suspend-recall-transactions.md
                     - name: POS-Offlinefunktionalität
                       href: pos-offline-functionality.md
@@ -714,6 +712,8 @@
                       href: pos-outbound-inventory-operation.md
                     - name: Lagerverfügbarkeit für Retail Channels berechnen
                       href: calculated-inventory-retail-channels.md
+                    - name: Bestandssuchvorgang im POS
+                      href: pos-inventory-lookup-operation.md
                 - name: Bestellungen
                   items:
                     - name: Übersicht über Bestellungen
@@ -2448,10 +2448,34 @@
                       href: dev-itpro/pos-extension/pos-extension-getting-started.md
                     - name: POS-Erweiterungspaketprojekt erstellen
                       href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Appx-Datei für Modern-POS-Erweiterung erstellen
+                    - name: "APPX-Datei für Modern\_POS-Erweiterungspaket erstellen"
                       href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: POS-Erweiterung debuggen
+                    - name: POS-Erweiterungen debuggen
                       href: dev-itpro/pos-extension/debug-pos-extension.md
+                    - name: Erweiterungsverpackung und -bereitstellung
+                      items:
+                        - name: "Modern\_POS-Erweiterungspaketprojekt erstellen"
+                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                        - name: "Codesignatur eines MSIX-Erweiterungspakets (Modern\_POS)"
+                          href: dev-itpro/pos-extension/mpos-extension-signing.md
+                        - name: "Cloud\_POS-Erweiterungspaket erstellen"
+                          href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Eine POS-Erweiterung zum unabhängigen Verpackungsmodell migrieren
+                      href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Entwicklungshandbuch für POS-Erweiterungen
+                      items:
+                        - name: POS-Erweiterungsgrundlagen
+                          href: dev-itpro/pos-extension/pos-extension-basics.md
+                        - name: Eine benutzerdefinierte Ansicht in POS erstellen
+                          href: dev-itpro/pos-extension/custom-pos-view.md
+                        - name: POS-Steuerelemente in Erweiterungen verwenden
+                          href: dev-itpro/pos-extension/controls-pos-extension.md
+                        - name: Aufgaben
+                          items:
+                            - name: „Knockout.js“ in POS-Erweiterungen verwenden
+                              href: dev-itpro/pos-extension/knockout-pos-extension.md
+                            - name: Benutzerdefinierte Headless-Commerce-APIs verarbeiten
+                              href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: "Erweiterbarkeit von Hardware\_Station"
               items:
                 - name: "Hardware\_Station und Erweiterbarkeit"

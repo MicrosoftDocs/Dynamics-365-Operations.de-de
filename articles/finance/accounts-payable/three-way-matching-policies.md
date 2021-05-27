@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 829c9c5549c337c5c2b118f3027111831f2632ca
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814295"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027793"
 ---
 # <a name="three-way-matching-policies"></a>Dreiseitige Abgleichsrichtlinien
 
@@ -37,9 +37,9 @@ Fabrikam arbeitet mit mehreren juristischen Personen und Mitarbeitern in allen T
 
 Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter mit den folgenden Rollen, diese Ziele zu erreichen:
 
--   Kurt ist Controller beim Unternehmen Fabrikam. Er kann den Mitarbeitern seiner Organisation helfen, Probleme bei der Bestellung, beim Eingang und bei der Bezahlung von Artikeln (Waren und Dienstleistungen) von Kreditoren zu erkennen und zu beheben.
+-   Kurt ist Controller beim Unternehmen Fabrikam. Kurt kann den Mitarbeitern in der Organisation helfen, Probleme bei der Bestellung, beim Eingang und bei der Bezahlung von Artikeln (Waren und Dienstleistungen) von Kreditoren zu erkennen und zu beheben.
 -   Phyllis und April sind Buchhaltungsleiterinnen in der Kreditorenabteilung der USA-Division von Fabrikam. Sie können eine Unternehmensrichtlinie erzwingen und sicherstellen, dass Rechnungen erst bezahlt werden, nachdem die Rechnungen mit der Bestellung und ggf. dem Eingang der Waren und Dienstleistungen abgeglichen wurden.
--   Tony ist Produktionsleiter der USA-Division von Fabrikam. Er und andere Produktionsmitarbeiter können sicherstellen, dass der Eingang der Artikel mit deren Bestellung bei den Kreditoren übereinstimmt und dass die Artikel erfasst werden, sodass die Mitarbeiter über die für ihre Arbeit notwendigen Dinge verfügen.
+-   Tony ist Produktionsleiter der USA-Division von Fabrikam. Tony und andere Produktionsmitarbeiter können sicherstellen, dass der Eingang der Artikel mit deren Bestellung bei den Kreditoren übereinstimmt und dass die Artikel erfasst werden, sodass die Mitarbeiter über die für ihre Arbeit notwendigen Dinge verfügen.
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
@@ -47,17 +47,17 @@ Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter m
 -   Kurt legt die Umschaltfläche "Abgleichstatus des Kopfes automatisch aktualisieren" bei der juristischen Person auf „Ja“ fest.
 -   Kurt legt das Feld "Preissummen abgleichen" für die juristische Person auf "Prozentsatz" fest und gibt 15 % als Toleranzprozentsatz ein.
 -   Kurt legt die Abgleichsrichtlinie auf der Artikelebene für Artikel 1500 - Maschine CNC Milicron auf "Dreiseitiger Abgleich" fest. Dieser Artikel ist ein Aktivposten, der bei Fabrikam für die Produktion verwendet wird. Rechnungen über diesen Artikel werden in Bezug auf die Preise mit Bestellpositionen und in Bezug auf die Mengen mit Produktzugängen abgeglichen.
--   Tony gibt eine Anforderung für fünf CNC Milicron-Maschinen ein. Alicia, Bestellungssekretärin bei Fabrikam, gibt eine Bestellung an eine juristische Person mit dem Namen Contoso aus, welche die Artikel liefern soll.
+-   Tony gibt eine Anforderung für fünf CNC Milicron-Maschinen ein. Alicia, eine Bestellungssekretärin bei Fabrikam, gibt eine Bestellung an eine juristische Person mit dem Namen Contoso aus, welche die Artikel liefern soll.
 
-    | Artikelnummer                 | Menge | Preis je Einheit | Nettobetrag | Kennung der sonstigen Zuschläge        | Wert der sonstigen Zuschläge |
+    | Artikelnummer                 | Leistung | Preis je Einheit | Nettobetrag | Kennung der sonstigen Zuschläge        | Wert der sonstigen Zuschläge |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 – Maschine CNC Milicron | 5        | 8.000,00   | 40.000,00  | Lieferung und Bearbeitung | 3.000,00      |
+    | 1500 – Maschine CNC Milicron | 5        | 8.000,00   | 40.000,00  | Lieferung und Bearbeitung | 3,000.00      |
 
 -   Arnie, Debitorensekretär bei Contoso, prüft die Lieferungen für die Woche. Arnie wählt Lieferungsbuchungen aus, um Fabrikam für die Lieferung der CNC Milicron-Maschinen zu fakturieren. Arnie fügt einen Zuschlag für Lieferung und Bearbeitung hinzu. Fabrikam wird betrachtet den Zuschlag als Teil der Anlagekosten.
 
 ### <a name="scenario"></a>Szenario
 
-1.  Thomas, eine Arbeitskraft in der Empfangsabteilung bei Fabrikam, nimmt die Gesamtmenge der Maschinen in Empfang, die von Contoso geliefert werden. Er gibt auf einem Produktzugang die Menge 5 ein. Da die Bestellung vollständig eingegangen ist, ändert sich der Status der Bestellung in "Eingegangen".
+1.  Thomas, eine Arbeitskraft in der Empfangsabteilung bei Fabrikam, nimmt die Gesamtmenge der Maschinen in Empfang, die von Contoso geliefert werden. Thomas gibt auf einem Produktzugang die Menge 5 ein. Da die Bestellung vollständig eingegangen ist, ändert sich der Status der Bestellung in "Eingegangen".
 2.  April, die Kreditorenkoordinatorin bei Fabrikam, gibt die von Contoso übermittelte Rechnung ein und überprüft sie. Sie prüft die folgenden Informationen:
     -   Bei Artikeln, für die ein dreiseitiger Abgleich erforderlich ist, muss die in der Rechnungsposition angegebene Menge der eingegangenen Menge entsprechen. Die eingegangene Menge wird auf dem Produktzugang angegeben, der mit der Rechnung abgeglichen wird.
     -   Bei Artikeln, für die ein zweiseitiger oder dreiseitiger Abgleich erforderlich ist, müssen die Preise auf der Rechnungsposition innerhalb der Toleranzen liegen, die in Microsoft Dynamics 365 Finance definiert sind. Dazu zählen die folgenden Preisabgleichsarten:
@@ -66,7 +66,7 @@ Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter m
 
 Die Papierrechnung von Contoso enthält folgende Informationen.
 
-| Artikel                        | Menge | Preis je Einheit | Nettobetrag |
+| Artikel                        | Leistung | Preis je Einheit | Nettobetrag |
 |-----------------------------|----------|------------|------------|
 | 1500 – Maschine CNC Milicron | 5        | 8.100,00   | 40,500.00  |
 | Versandkostenanteil       |          |            | 4,000.00   |
@@ -87,7 +87,7 @@ Zusammenfassung: Kurt ist Controller in der Unternehmenszentrale einer juristisc
 Das Volumen und die Beträge sind klein, und es gab Probleme mit der Lieferung einiger Kreditoren in Malaysia. Daher legt Cassie für bestimmte Kombinationen von Kreditoren und Artikeln, die in Malaysia beschafft werden, einen dreiseitigen Abgleich fest. 
 
 Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter mit den folgenden Rollen, diese Ziele zu erreichen:
--   Kurt ist Controller beim Unternehmen Fabrikam. Er kann den Mitarbeitern seiner Organisation helfen, Probleme bei der Bestellung, beim Eingang und bei der Bezahlung von Artikeln (Waren und Dienstleistungen) von Kreditoren zu erkennen und zu beheben.
+-   Kurt ist Controller beim Unternehmen Fabrikam. Kurt kann den Mitarbeitern in der Organisation helfen, Probleme bei der Bestellung, beim Eingang und bei der Bezahlung von Artikeln (Waren und Dienstleistungen) von Kreditoren zu erkennen und zu beheben.
 -   Cassie ist Buchhalterin bei der Malaysia-Division von Fabrikam. Sie kann eine Unternehmensrichtlinie erzwingen und sicherstellen, dass Rechnungen erst bezahlt werden, nachdem sie mit den Bestellpositionen und den Produkteingängen abgeglichen wurden, die den Eingang der Güter und Dienstleistungen darstellen. Sie hat außerdem die Möglichkeit, bei bestimmten Artikeln den Grad an Kontrolle auf einen dreiseitigen Abgleich heraufzustufen, um die Betriebskosten zu kontrollieren.
 
 ### <a name="prerequisites"></a>Voraussetzungen
@@ -95,7 +95,7 @@ Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter m
 -   Kurt legt die Abgleichsrichtlinie auf der Ebene der juristischen Person auf "Zweiseitiger Abgleich" fest.
 -   Kurt legt das Feld "Preissummen abgleichen" für die juristische Person auf "Prozentsatz" fest und gibt 10 % als Toleranzprozentsatz ein.
 -   Kurt legt die Stückpreistoleranz für alle Artikel auf 2 % fest.
--   Cassie legt die Abgleichsrichtlinie auf der Ebene der Kombination von Artikel und Kreditor für den Artikel PH2500 fest – Computer und Kreditor Contoso auf "Dreiseitiger Abgleich".
+-   Cassie legt die Abgleichsrichtlinie auf der Ebene der Kombination von Artikel und Kreditor für den Artikel PH2500 fest – Computer und Kreditor Contoso auf „Dreiseitiger Abgleich“.
 -   Alicia, Bestellungssekretärin in der Malaysia-Division von Fabrikam, sendet Bestellungen über die Lieferung von drei Artikeln an Contoso, wie in der folgenden Tabelle dargestellt wird. Wenn sie die Bestellung erstellt, überschreibt sie die Abgleichsrichtlinie für die drahtlose Maus, sodass ein dreiseitiger Abgleich anstelle eines zweiseitigen Abgleichs erfolgt.
 
     | Artikelnummer           | Menge | Preis je Einheit | Nettobetrag | Abgleichsrichtlinie (Standardeintrag) | Abgleichsrichtlinie (in der Bestellposition) |
@@ -115,7 +115,7 @@ Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter m
 
 Die Papierrechnung von Contoso enthält folgende Informationen.
 
-| Artikel                  | Menge | Preis je Einheit | Nettobetrag |
+| Artikel                  | Leistung | Preis je Einheit | Nettobetrag |
 |-----------------------|----------|------------|------------|
 | PH2500 – Computer     | 2        | 2.500,00   | 5.000,00   |
 | MM01 – drahtlose Maus | 2        | 41.00      | 82.00      |

@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 45eeae751051b58e1c9e725eb4ed4b5240026e7f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fa174bbb257379f6ce906dd21180bbcb19f8bc3f
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801434"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021126"
 ---
 # <a name="order-synchronization-error-related-to-the-default-payment-service"></a>Fehler bei der Auftragssynchronisierung im Zusammenhang mit dem Standardzahlungsservice
 
@@ -46,4 +45,4 @@ Befolgen Sie diese Schritte, um den Standardzahlungsservice in der Commerce-Zent
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Einrichten, Genehmigen und Erfassen von Kreditkarten](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/credit-card-authorizations)
+[Einrichten, Genehmigen und Erfassen von Kreditkarten](../../finance/accounts-receivable/credit-card-authorizations.md)

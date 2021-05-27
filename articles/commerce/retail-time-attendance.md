@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9bec213cd4954f69605387ae2801d8af98a8111c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7ac7eec69bda7ad2fa41a7311a71a969eddeafb6
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791894"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021487"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Zeit- und Anwesenheitsverwaltung in Retail
 
@@ -38,9 +38,9 @@ Dieses Thema beschreibt Szenarien, die für die Verwaltung von Zeit und Anwesenh
 
 ### <a name="plan-worker-schedules"></a>Planen von Arbeitskraftzeitplänen
 
-- Wenden Sie Profile durch Verwendung der Arbeitsplanung an. Weitere Informationen zu [Arbeitszeitprofilen finden Sie unter](https://technet.microsoft.com/library/aa551234.aspx)
+- Wenden Sie Profile durch Verwendung der Arbeitsplanung an. Weitere Informationen zu [Arbeitszeitprofilen finden Sie unter](/dynamicsax-2012/appuser-itpro/apply-profiles-using-work-planner)
 
-Informationen über die Konfigurationsschritte, finden [Zeit und Anwesenheit](https://technet.microsoft.com/library/aa496971.aspx) Sie unter.
+Informationen über die Konfigurationsschritte, finden [Zeit und Anwesenheit](/dynamicsax-2012/appuser-itpro/setting-up-time-and-attendance) Sie unter.
 
 ### <a name="commerce-specific-configuration"></a>Commerce-spezifische Konfiguration
 
@@ -135,7 +135,7 @@ Ein Commerce-Benutzer folgt dem Workflow, um Zeiterfassungen zu berechnen, zu ge
 - Massenausstempeln
 - Erfassen der Abwesenheit
 
-Weitere Informationen dazu, wie Anwesenheitserfassungen in den Erfassungen verarbeitet werden, finden [Anwesenheitserfassungen und Prozesszeit](https://technet.microsoft.com/library/aa573180.aspx).
+Weitere Informationen dazu, wie Anwesenheitserfassungen in den Erfassungen verarbeitet werden, finden [Anwesenheitserfassungen und Prozesszeit](/dynamicsax-2012/appuser-itpro/process-time-and-attendance-registrations).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 93d025759f86ffeb0ee1f1e6e6e2aeb3ab341b75
-ms.sourcegitcommit: 4ba25601eba295bd9057f7fb5e85f1f6764f5a27
+ms.openlocfilehash: 8cacf2fbef8873288493f71b43d22dc186e6d18e
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5965309"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980896"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -35,7 +35,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.20
 
-### <a name="rtir-query-invoice-data-request-hu-format-configuration"></a>Konfiguration des Formats der RTIR-Abfrage von Rechnungsdatenanforderungen (HU)
+### <a name="rtir-query-invoice-data-request-hu-electronic-reporting-er-format-configuration"></a>Konfiguration des Formats der elektronischen Berichterstellung (ER) „RTIR-Abfrage von Rechnungsdatenanforderungen (HU)“
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -45,6 +45,15 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Bis zum 15. April 2022 planen wir, die Konfiguration des Formats „RTIR-Abfrage von Rechnungsdatenanforderungen (HU)“ nicht mehr zu unterstützen. |
 
+### <a name="french-fec-audit-file-electronic-reporting-er-format-for-france-under-german-audit-file-output-format"></a>Format der elektronischen Berichterstellung (ER) „Französische FEC-Protokolldatei“ für Frankreich im Format „Deutsche Ausgabeprotokolldatei“
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Ersetzt durch neues Format „FEC-Protokolldatei (FR)“ |
+| **Ersetzt durch eine andere Funktion?**   | Ja |
+| **Betroffene Produktbereiche**         | Bewerbung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Bis zum 1. Mai 2022 planen wir, das Format zur elektronischen Berichtserstellung „Französische FEC-Protokolldatei“ für Frankreich im Format „Deutsche Ausgabeprotokolldatei“ nicht mehr zu unterstützen. Das neue Format der FEC-Auditdatei (FR) wird stattdessen unter dem „Datenexportmodell“ eingeführt. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.17
 

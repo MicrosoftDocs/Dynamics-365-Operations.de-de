@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9d6fa36d7bb45e1cd9f8c3fbc1e60ac521f1f9b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d9d36bcb05cf466d34d921d8cd5266b6c12a63d7
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795452"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028250"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Schicht- und Kassenladenverwaltung
 
@@ -45,7 +45,7 @@ Traditionsgemäß wird dieses Szenarios am häufigsten verwendet. Es wird immer 
 
 Bei einer "Wechselnen Kasse" kann die Schicht und die Bargeldkasse von einer Kasse zu einer anderen verschoben werden. Obgleich ein Register nur eine aktive Schicht pro Bargeldkasse haben kann, können Schichten unterbrochen und später fortgeführt oder zu einer anderen Kasse verschoben werden.
 
-Ein Geschäft hat beispielsweise zwei Kassen. Jede Kasse wird zu Beginn des Tages geöffnet, wenn der Kassierer eine neue Schicht öffnet und den Anfangsbetrag bereitstellt. Wenn ein Kassierer bereit ist, eine Pause einzulegen, unterbricht dieser Kassierer seine Schicht und entfernt die Kassenlade aus der Kasse. Die Kasse ist dann für andere Kassierer verfügbar. Ein anderer Kassierer kann sich anmelden und dann seine Schicht an der Kasse öffnen. Nachdem die Pause des ersten Kassiers beendet ist, kann der Kassier seine Schicht wieder aufnehmen, wenn eine Kasse verfügbar ist. Schichten mit "Fester Kasse" benötigen keine besondere Konfiguration oder Erlaubnis.
+Ein Geschäft hat beispielsweise zwei Kassen. Jede Kasse wird zu Beginn des Tages geöffnet, wenn der Kassierer eine neue Schicht öffnet und den Anfangsbetrag bereitstellt. Wenn ein Kassierer bereit ist, eine Pause einzulegen, unterbricht dieser die Schicht und entfernt die Kassenlade aus der Kasse. Die Kasse ist dann für andere Kassierer verfügbar. Ein anderer Kassierer kann sich anmelden und dann die eigene Schicht an der Kasse öffnen. Nachdem die Pause des ersten Kassierers beendet ist, kann der Kassierer die Schicht wieder aufnehmen, wenn eine Kasse verfügbar ist. Schichten mit "Fester Kasse" benötigen keine besondere Konfiguration oder Erlaubnis.
 
 ### <a name="single-user"></a>Einzelbenutzer
 
@@ -84,7 +84,7 @@ Dieser Vorgang ist häufig die erste Aktivität, die bei einer neu geöffneten S
 
 ### <a name="tender-removal"></a>Zahlungsmittel entfernen
 
-*Angebotsentfernungen* sind Nichtverkaufstransaktionen, die in einer aktiven Schicht ausgeführt werden, um die Menge des Bargelds in der Schublade zu reduzieren. Dieser Vorgang wird am häufigsten in Verbindung mit einem Mittelzugang bei einer anderen Schicht verwendet. Beispielsweise hat Kasse 1 wenig Bargeld und der Benutzer von Kasse 2 macht einen Bezug, um den Betrag in der eigenen Kasse zu reduzieren. Der Benutzer von Kasse 1 führt dann einen Mittelzugang aus, um den Betrag in seiner Kassenlade zu erhöhen.
+*Angebotsentfernungen* sind Nichtverkaufstransaktionen, die in einer aktiven Schicht ausgeführt werden, um die Menge des Bargelds in der Schublade zu reduzieren. Dieser Vorgang wird am häufigsten in Verbindung mit einem Mittelzugang bei einer anderen Schicht verwendet. Beispielsweise hat Kasse 1 wenig Bargeld und der Benutzer von Kasse 2 macht einen Bezug, um den Betrag in der eigenen Kasse zu reduzieren. Der Benutzer von Kasse 1 führt dann einen Mittelzugang aus, um den Betrag in der Kassenlade zu erhöhen.
 
 ### <a name="suspend-shift"></a>Schicht aussetzen
 
@@ -154,7 +154,7 @@ Gehen Sie zu **Einzelhandel und Handel \> Kanäle \> Shops \> Alle Shops \> Ausz
 
 Diese Einstellung stellt sicher, dass Backofficeauszüge die gleichen Buchungen wie Schichten im POS enthalten und die Daten durch diese Schicht zusammengefasst werden.
 
-Weitere Informationen zu Auszugs- und Abschlussmethoden, finden Sie unter [Shopkonfigurationen für Einzelhandelsauszug](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+Weitere Informationen zu Auszugs- und Abschlussmethoden, finden Sie unter [Shopkonfigurationen für Einzelhandelsauszug](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

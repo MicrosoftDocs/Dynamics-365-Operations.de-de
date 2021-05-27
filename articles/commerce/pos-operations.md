@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dac3eb0da704e06376d8ca969e06fb177ce15a6b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b02f94bb2217729f35f0593fe99807273608811
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804280"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027647"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 
@@ -30,7 +30,7 @@ Die meisten Aktivitäten, die Benutzer in Verkaufsstelle (POS) vornehmen, gelten
 
 Die folgende Tabelle enthält Informationen zu den Arbeitsgängen, die in Modern POS und Cloud POS verfügbar sind. Die Tabelle gibt auch an, an welcher Position in der Anwendung die Arbeitsgänge aufgerufen werden können, und ob POS im Offline-Modus verfügbar sind.
 
-Einige Arbeitsgänge sind derzeit nicht in Modern POS  oder Cloud POS für  verfügbar. Einige dieser Arbeitsgänge sind jeder gebietsschemaspezifische Arbeitsgänge, die weitere Konfiguration und Erweiterungen erfordern. Auch einige Funktionen von Microsoft Dynamics AX 2012 werden derzeit nicht unterstützt.
+Einige Arbeitsgänge sind derzeit nicht in Modern POS oder Cloud POS für verfügbar. Einige dieser Arbeitsgänge sind jeder gebietsschemaspezifische Arbeitsgänge, die weitere Konfiguration und Erweiterungen erfordern. Auch einige Funktionen von Microsoft Dynamics AX 2012 werden derzeit nicht unterstützt.
 
 Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden können:
 
@@ -64,7 +64,7 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 642 | Alle Produkte ausführen | Legen Sie die Lieferart für alle Positionen auf **Takeaway** fest. | Ja | Ja | Nr. | Ja\* | Nr. |
 | 641 | Ausgewählte Produkte ausführen | Legen Sie die Lieferart für die ausgewählten Positionen auf **Takeaway** fest. | Ja | Ja | Nein | Ja\* | Nein |
 | 647 | Lieferart ändern | Ändern Sie die Lieferart für vorkonfigurierte Versandverkaufszeilen. | Ja | Ja | Nein | Nein| Nein |
-| 1215 | Kennwort ändern | Dieser Arbeitsgang ermöglicht dem POS-Benutzer, sein Kennwort zu ändern. | Ja | Ja | Ja | Nr. | Nr. |
+| 1215 | Kennwort ändern | Dieser Arbeitsgang ermöglicht POS-Benutzern, ihr Kennwort zu ändern. | Ja | Ja | Ja | Nr. | Nr. |
 | 123 | Maßeinheit ändern | Ändern der Maßeinheit für den ausgewählten Positionsartikel. | Ja | Ja | Nr. | Ja | Nr. |
 | 639 | Standardverkäufer für Buchung löschen | Entfernt die Provisionsverkaufsgruppe (Verkäufer) aus der Buchung. | Ja | Ja | Nr. | Ja | Nr. |
 | 106 | Menge löschen | Setzt die Menge auf der momentan ausgewählten Position auf **1** zurück. | Ja | Ja | Nr. | Ja | Nr. |

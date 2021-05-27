@@ -1,6 +1,6 @@
 ---
 title: Client wurde getrennt
-description: In diesem Artikel wird erläutert, was zu tun ist, wenn der Kunde/die Kundin von seiner/ihrer Umgebung getrennt ist und den Grund nicht kennt.
+description: In diesem Artikel wird erläutert, was zu tun ist, wenn Kunden von der Umgebung getrennt sind und den Grund nicht kennen.
 author: andreabichsel
 ms.date: 02/03/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e9ec43ad0a7d121eb247d81d4b506556a0fa2214
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: db0e8efec1a5a6f01c9b7c4d9334a959fc42886b
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794900"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027986"
 ---
 # <a name="client-disconnects"></a>Client wurde getrennt
 
@@ -32,7 +32,7 @@ Dieses Problem kann in allen Umgebungen auftreten.
  
 **Symptom** 
 
-Der Kunde/die Kundin ist von seiner/ihrer Umgebung getrennt und kennt den Grund nicht. Der Kunde erhält eine der folgenden Fehlermeldungen:
+Kunden sind von der Umgebung getrennt und kennen den Grund nicht. Der Kunde erhält eine der folgenden Fehlermeldungen:
 
 - Die Verbindung wurde getrennt Klicken Sie auf „Schließen”, um die Arbeit fortzusetzen.
 - Die Netzwerkverbindung wurde anscheinend unterbrochen. Klicken Sie auf 'Wiederholen', um es erneut zu versuchen.

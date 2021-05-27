@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 91f1963f2bbc01fc4d3a9282d6ac7705bc5287c2
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857272"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018830"
 ---
 # <a name="peripherals"></a>Peripheriegeräte
 
@@ -158,7 +158,7 @@ Netzwerk-Kassenladen, -Bondrucker und -Zahlungsterminals können über ein Netzw
 
 ### <a name="dedicated"></a>Dediziert
 
-Moderne POS-Clients für Windows und Android umfassen **dedizierte** oder eingebaute Hardwarestationen. Diese Clients können mithilfe der in die Anwendungen integrierten Geschäftslogik direkt mit Peripheriegeräten kommunizieren. Die Android-Anwendung unterstützt nur Netzwerkgeräte. Weitere Informationen über die Unterstützung von Peripheriegeräten für die Android finden Sie im Artikel [POS-Hybridanwendung einrichten auf Android und iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+Moderne POS-Clients für Windows und Android umfassen **dedizierte** oder eingebaute Hardwarestationen. Diese Clients können mithilfe der in die Anwendungen integrierten Geschäftslogik direkt mit Peripheriegeräten kommunizieren. Die Android-Anwendung unterstützt nur Netzwerkgeräte. Weitere Informationen über die Unterstützung von Peripheriegeräten für die Android finden Sie im Artikel [POS-Hybridanwendung einrichten auf Android und iOS](./dev-itpro/hybridapp.md).
 
 Um die dedizierte Hardwarestation zu verwenden, weisen Sie einem Register ein Hardwareprofil zu, das Modern POS für Windows- oder Android-Anwendungen nutzt. Erstellen Sie dann eine Hardwarestation vom Typ **Dediziert** für den Shop, in dem die Register verwendet wird. Starten Sie den Modern POS im kassenladenfremden Modus und verwenden Sie den Vorgang **Hardwarestationen verwalten**, um die Hardwarestationsfunktionen einzuschalten; die dedizierte Hardwarestation ist standardmäßig aktiv. Melden Sie sich als Nächstes vom Modern POS ab, melden Sie sich dann wieder an und öffnen Sie eine Schicht. Die im Hardwareprofil konfigurierten Peripheriegeräte können verwendet werden. 
 
@@ -199,7 +199,7 @@ Weitere Informationen finden Sie unter [Konfigurieren, Installieren und Aktivier
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Modern POS für Android und iOS – Einrichtung und Konfiguration
 
-Weitere Informationen finden Sie unter [POS-Hybridanwendung auf Android und iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp) einrichten.
+Weitere Informationen finden Sie unter [POS-Hybridanwendung auf Android und iOS](./dev-itpro/hybridapp.md) einrichten.
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS-Geräte Einrichtung und Konfiguration
 
@@ -494,7 +494,7 @@ Diese Konfiguration ist die typischste Konfiguration für die traditionelle, fes
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS für Android mit einer IPC-Hardwarestation (integriert)
 
-**Neu für 10.0.8** – Epson-Netzwerkdrucker und Kassenladen, die über den DK-Port mit diesen Druckern verbunden sind, werden jetzt für die Modern POS für Android-App unterstützt. Einzelheiten finden Sie im Artikel [POS-Hybridanwendung einrichten auf Android und iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+**Neu für 10.0.8** – Epson-Netzwerkdrucker und Kassenladen, die über den DK-Port mit diesen Druckern verbunden sind, werden jetzt für die Modern POS für Android-App unterstützt. Einzelheiten finden Sie im Artikel [POS-Hybridanwendung einrichten auf Android und iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Alle Modern POS-Clients mit festgeschriebener freigegebener IIS-Hardwarestation
 
@@ -614,6 +614,9 @@ Die folgenden Peripheriegeräte wurden getestet, indem die IPC-Hardwarestation v
 | Star         | TSP650II | Benutzerdefiniert    | Per Netzwerk verbunden   |
 | Star         | mPOP     | OPOS      | Angeschlossen per Bluetooth |
 | HP           | F7M67AA  | OPOS      | USB             |
+
+> [!NOTE]
+> Der Drucker Star TSP 100 wird für die integrierte Hardwarestation nicht unterstützt. Die integrierte Hardwarestation verwendet einen 64-Bit-Prozess, der nicht mit vorhandenen Star-TP-100-Treibern kompatibel ist. 
 
 #### <a name="bar-code-scanner"></a>Strichcodescanner
 

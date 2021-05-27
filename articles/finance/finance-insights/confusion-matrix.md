@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d6e8f63ef00f714109ae650d3cedaf19e5159325
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818751"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028202"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Ergebnisse von Machine Learning-Modellen (Vorschau)
 
@@ -63,8 +63,8 @@ Um diese Frage zu beantworten, betrachten Sie die Richtigkeit einer naiven Vermu
 
 Ein weiterer Aspekt ist erwähnenswert. Stellen Sie sich ein Szenario vor, in dem ein medizinischer Test verwendet wird, um eine Krankheit bei einem Patienten zu erkennen. Dieses Problem ist ein binäres Klassifizierungsproblem, bei dem ein positives Ergebnis anzeigt, dass der Patient an der Krankheit leidet. In diesem Szenario müssen Sie über die Auswirkungen der folgenden Fehler nachdenken:
 
-- Falsche Positive, bei denen der Test besagt, dass ein Patient an der Krankheit leidet, diese aber nicht wirklich hat
-- Falsche Negative, bei denen der Test besagt, dass ein Patient nicht an der Krankheit leidet, er diese aber hat
+- Falsche Positive, bei denen der Test besagt, dass ein Patient an der Krankheit leidet, diese aber nicht wirklich hat.
+- Falsche Negative, bei denen der Test besagt, dass ein Patient nicht an der Krankheit leidet, diese aber hat.
 
 Natürlich sind beide Fehlertypen unerwünscht, aber was ist schlimmer? Auch hier kommt es darauf an. Bei einer lebensbedrohlichen Krankheit, die eine schnelle Behandlung erfordert, hat die Minimierung falsch negativer Ergebnisse (hoffentlich gefolgt von zusätzlichen Tests) Vorrang. In anderen, weniger kritischen Situationen können die Modellersteller stattdessen Fehlalarme minimieren. In jedem Fall ist eine vernünftige Schlussfolgerung, dass Sie mehr Informationen haben müssen, als eine Genauigkeitsmetrik liefert, um die Qualität eines Modells effektiv zu bestimmen.
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6efc20de5309bc7ec209a557a4bc12c6a0a42a43
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a14b98cab78896d3a6c2e567cadc1ff9a991a278
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804330"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018953"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Eingehender Bestandsvorgang in POS
 
@@ -70,7 +70,7 @@ Die von Ihnen erstellten Batch-Jobs werden zur Verarbeitung von Dokumenten verwe
 
 ## <a name="prerequisite-add-inbound-operation-to-the-pos-screen-layout"></a>Voraussetzung: Hinzufügen des Eingangsvorgangs zum POS-Bildaufbau
 
-Bevor Ihr Unternehmen die Eingangsoperationsfunktionalität nutzen kann, muss es die **Eingangsoperation** POS-Operation auf einem oder mehreren Ihrer [POS-Bildlayouts](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) konfigurieren. Bevor Sie den neuen Vorgang in einer Produktionsumgebung einsetzen, sollten Sie ihn gründlich testen und Ihre Benutzer in der Verwendung schulen.
+Bevor Ihr Unternehmen die Eingangsoperationsfunktionalität nutzen kann, muss es die **Eingangsoperation** POS-Operation auf einem oder mehreren Ihrer [POS-Bildlayouts](/dynamics365/unified-operations/retail/pos-screen-layouts) konfigurieren. Bevor Sie den neuen Vorgang in einer Produktionsumgebung einsetzen, sollten Sie ihn gründlich testen und Ihre Benutzer in der Verwendung schulen.
 
 ## <a name="overview"></a>Übersicht
 
@@ -159,9 +159,9 @@ In Commerce Version 10.0.14 und höher können Benutzer ein Produkt erhalten, da
 
 Diese Funktion funktioniert nur für den Zugang von Bestellungen. Es ist nicht möglich, Artikel bei Umlagerungsaufträgen zu erhalten, wenn die Artikel zuvor nicht bestellt und aus dem Ausgangslager versendet wurden.
 
-Benutzer können der Bestellung während des POS-Zugangs keine neuen Produkte hinzufügen, wenn der [Änderungsverwaltungsworkflow](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) für die Bestellung in der Commerce-Zentrale (HQ) aktiviert ist. Um die Änderungsverwaltung zu aktivieren, müssen alle Änderungen an einer Bestellung zuerst genehmigt werden, bevor der Zugang zulässig ist. Da dieser Prozess es einem Empfänger ermöglicht, der Bestellung neue Positionen hinzuzufügen, schlägt der Zugang fehl, wenn der Änderungsverwaltungs-Workflow aktiviert ist. Wenn die Veränderungsverwaltung für alle Bestellungen oder für den Lieferanten aktiviert ist, der mit der Bestellung verknüpft ist, die aktiv am POS zugeht, kann der Benutzer der Bestellung während des Zugangs am POS keine neuen Produkte hinzufügen.
+Benutzer können der Bestellung während des POS-Zugangs keine neuen Produkte hinzufügen, wenn der [Änderungsverwaltungsworkflow](../supply-chain/procurement/purchase-order-approval-confirmation.md) für die Bestellung in der Commerce-Zentrale (HQ) aktiviert ist. Um die Änderungsverwaltung zu aktivieren, müssen alle Änderungen an einer Bestellung zuerst genehmigt werden, bevor der Zugang zulässig ist. Da dieser Prozess es einem Empfänger ermöglicht, der Bestellung neue Positionen hinzuzufügen, schlägt der Zugang fehl, wenn der Änderungsverwaltungs-Workflow aktiviert ist. Wenn die Veränderungsverwaltung für alle Bestellungen oder für den Lieferanten aktiviert ist, der mit der Bestellung verknüpft ist, die aktiv am POS zugeht, kann der Benutzer der Bestellung während des Zugangs am POS keine neuen Produkte hinzufügen.
 
-Die Funktion zum Hinzufügen von Positionen kann nicht als Problemumgehung für den Zugang zusätzlicher Mengen von Produkten verwendet werden, die bereits in der Bestellung enthalten sind. Überhöhter Zugang wird über den Standard verwaltet [Überhöhter Zugang](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations)-Einstellungen für die Produktposition in der Bestellung.
+Die Funktion zum Hinzufügen von Positionen kann nicht als Problemumgehung für den Zugang zusätzlicher Mengen von Produkten verwendet werden, die bereits in der Bestellung enthalten sind. Überhöhter Zugang wird über den Standard verwaltet [Überhöhter Zugang](#over-receiving-validations)-Einstellungen für die Produktposition in der Bestellung.
 
 Wenn **Der Bestellung während des Zugangs an der Verkaufsstelle Positionen hinzufügen** aktiviert ist und ein Benutzer mit dem **Eingehender Vorgang** in POS empfängt, die nicht als Artikel in der aktuellen Bestellung erkannt wird, aber als gültiger Artikel erkannt wird, erhält der Benutzer eine Nachricht über das Hinzufügen des Artikels zur Bestellung. Wenn der Benutzer den Artikel zur Bestellung hinzufügt, wird die in **Jetzt zugegangen** eingegebene Menge als bestellte Menge für die Bestellposition betrachtet.
 

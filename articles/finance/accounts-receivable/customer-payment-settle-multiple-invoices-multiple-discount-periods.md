@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e68ef15fed1841bcbf006929f3c6441d62798fc8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56d74b6700b48a8c523d02a1affc421ee370215e
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819913"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027745"
 ---
 # <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Eine Zahlung zum Ausgleichen von Rechnungen verwenden, die sich über mehrere Rabattperioden erstrecken
 
@@ -66,7 +66,7 @@ Wenn Arnie eine Zahlungserfassung erstellt, um diese Rechnungen am 1. Juli volls
 | Ausgewählt und hervorgehoben | Normal            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1.000,00                             |                                       | USD      | 990,00           |
 
 ## <a name="partial-settlement-on-june-29"></a>Teilausgleich am 29. Juni
-Debitor 4032 kann einen Teilbetrag, wie etwa die Hälfte jeder Rechnung, bezahlen. Arnie erstellt eine Zahlung für Debitor 4032 und öffnet anschließend die Seite **Buchungen ausgleichen**. Auf der Seite **Buchungen ausgleichen** markiert Arnie alle drei Rechnungspositionen für den Ausgleich. Für jede Position gibt er den auszugleichenden Betrag auf Grundlage der Anweisungen ein, die dem Debitor bereitgestellt werden. Wenn Arnie eine Position auswählt, sieht er den Rabattbetrag für diese Position und den Skontobetrag, der veranschlagt wird. Da der Debitor die Hälfte der Rechnung bezahlt, sieht Arnie, dass der Wert im Feld **Skontobetrag** für FTI-10042 **20,00** betragt, aber der Wert im Feld **In Anspruch genommener Skonto** beträgt **10,00**. Der Zahlungsbetrag ist 1,485.00.
+Debitor 4032 kann einen Teilbetrag, wie etwa die Hälfte jeder Rechnung, bezahlen. Arnie erstellt eine Zahlung für Debitor 4032 und öffnet anschließend die Seite **Buchungen ausgleichen**. Auf der Seite **Buchungen ausgleichen** markiert Arnie alle drei Rechnungspositionen für den Ausgleich. Für jede Position gibt Arnie den auszugleichenden Betrag auf Grundlage der Anweisungen ein, die dem Debitor bereitgestellt werden. Wenn Arnie eine Position auswählt, sieht Arnie den Rabattbetrag für diese Position und den Skontobetrag, der veranschlagt wird. Da der Debitor die Hälfte der Rechnung bezahlt, sieht Arnie, dass der Wert im Feld **Skontobetrag** für FTI-10042 **20,00** betragt, aber der Wert im Feld **In Anspruch genommener Skonto** beträgt **10,00**. Der Zahlungsbetrag ist 1,485.00.
 
 | Markieren                     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
@@ -74,11 +74,11 @@ Debitor 4032 kann einen Teilbetrag, wie etwa die Hälfte jeder Rechnung, bezahle
 | Ausgewählt                 | Normal            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1.000,00                             |                                       | USD      | 495,00           |
 | Ausgewählt und hervorgehoben | Normal            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1.000,00                             |                                       | USD      | 490,00           |
 
-Arnie kann auch manuell den Zahlungsbetrag von 1.485,00 eingeben, bevor er die Seite **Bankbuchungen** öffnet. Wenn Arnie manuell den Zahlungsbetrag eingeben und dann alle drei Buchungen markiert hat, doch den Wert im Feld **Auszugleichenden Betrag** nicht für jede Buchung anpasst, erhält er folgende Nachricht, wenn er die Seite beendet:
+Arnie kann auch manuell den Zahlungsbetrag von 1.485,00 eingeben, bevor die Seite **Bankbuchungen** geöffnet wird. Wenn Arnie manuell den Zahlungsbetrag eingeben und dann alle drei Buchungen markiert hat, doch den Wert im Feld **Auszugleichenden Betrag** nicht für jede Buchung anpasst, erhält Arnie beim Schließen der Seite folgende Nachricht:
 
 > Der Gesamtbetrag der markierten Transaktionen unterscheidet sich vom Erfassungsbetrag. Erfassungsbetrag ändern?
 
-Wenn Arnie will, dass der Zahlungsbetrag nur 1.485,00 ist, klickt er auf **Nein** und bucht anschließend die Erfassung. Die Buchungen werden ausgeglichen, wie folgt:
+Wenn Arnie will, dass der Zahlungsbetrag nur 1.485,00 ist, klickt Arnie auf **Nein** und bucht anschließend die Erfassung. Die Buchungen werden ausgeglichen, wie folgt:
 
 1.  Rechnung FTI-10040 ist vollständig für 1.000,00 ausgeglichen, da sie am 15. Mai eingegeben wurde und sie ist die älteste Rechnung. Es wird kein Skonto genommen. Der verbleibende Betrag der Zahlungsbuchung ist 485,00.
 2.  Rechnung FTI-10041 wird gar nicht ausgeglichen. Rechnungen FTI-10041 und FTI-10042 wurden gleichzeitig eingegeben. Allerdings ist für Rechnung FTI-10041 ein 1-Prozent-Rabatt verfügbar, und für Rechnung FTI-10042 ist ein 2-Prozent-Rabatt verfügbar. Da ein besserer Rabatt für FTI-10042 verfügbar ist, werden die verbleibenden 485,00 mit Rechnung FTI-10042 ausgeglichen.

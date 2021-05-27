@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d1b99046b0e439c9dadbb240050e270a7b2a6914
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 3a5c2b6fb48d98ba045c77ed034d976f7d89af98
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920954"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021368"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Unterstützung für Steuerfunktionen für Umlagerungsaufträge
 
@@ -41,7 +40,7 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
 
 1. Wählen Sie auf der Seite **Steuerliche Merkmale** auf der Registerkarte **Versionen** den Entwurf der Funktionsversion aus und wählen Sie dann **Bearbeiten**.
 
-    ![Auswählen von „Bearbeiten“](../media/image1.png)
+    ![Auswählen von „Bearbeiten“](../media/tax-feature-support-01.png)
 
 2. Wählen Sie auf der Seite **Einrichtung der Steuerfunktionen** auf der **Steuercode**-Registerkarte **Hinzufügen** aus, um neue Steuercodes zu erstellen. In diesem Beispiel werden drei Steuercodes erstellt: **NL-befreit**, **BE-RC-21** und **BE-RC+21**.
 
@@ -54,7 +53,7 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         4. Wählen Sie **Hinzufügen** in der **Satz**-Tabelle.
         5. Schalten Sie **Ist befreit** auf **Ja** im Abschnitt **Allgemein** um.
 
-        ![NL-Steuerbefreiungscode](../media/image2.png)
+        ![NL-Steuerbefreiungscode](../media/tax-feature-support-02.png)
 
     - Wenn ein Umlagerungsauftrag in einem belgischen Lager eingeht, wird die Verlagerung der Steuerschuld mithilfe der Steuercodes **BE-RC-21** und **BE-RC+21** angewendet.
         
@@ -67,7 +66,7 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         6. Schalten Sie **Ist Verlagerung der Steuerschuld** auf **Ja** im Abschnitt **Allgemein** um.
         7. Wählen Sie **Speichern** aus.
 
-        ![BE-RC-21-Steuercode für Verlagerungen der Steuerschuld](../media/image3.png)
+        ![BE-RC-21-Steuercode für Verlagerungen der Steuerschuld](../media/tax-feature-support-03.png)
         
         Erstellen Sie den Steuercode **BE-RC+21**.
         1. Wählen Sie **Hinzufügen**, geben Sie **BE-RC-21** in dem **Steuercode**-Feld ein.
@@ -77,7 +76,7 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         5. Geben Sie **21** im Feld **Steuersatz** ein.
         6. Wählen Sie **Speichern** aus.
 
-        ![BE-RC+21-Steuercode für Verlagerungen der Steuerschuld](../media/image4.png)
+        ![BE-RC+21-Steuercode für Verlagerungen der Steuerschuld](../media/tax-feature-support-04.png)
 
 3. Definieren Sie die Anwendbarkeit der Steuercodes.
 

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4e50855368a3fa86c38c756492fc7e6cd518f497
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c813adb79ae1b78a052332e077393f125830633f
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796098"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027721"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Mehrere B2C-Mandanten in einer Commerce-Umgebung konfigurieren
 
@@ -27,7 +27,7 @@ ms.locfileid: "5796098"
 
 In diesem Thema wird beschrieben, wann und wie mehrere Microsoft Azure Active Directory (Azure AD) Business-to-Consumer (B2C)-Mandanten pro Kanal für die Benutzerauthentifizierung in einer dedizierten Dynamics 365 Commerce-Umgebung eingerichtet werden können.
 
-Dynamics 365 Commerce verwendet den Azure AD B2C-Cloud-Identitätsdienst zur Unterstützung von Benutzeranmeldeinformationen und Authentifizierungsströmen. Die Benutzer können die Authentifizierungsflüsse nutzen, um sich anzumelden, sich anzumelden und ihr Kennwort zurückzusetzen. Azure AD B2C speichert die sensiblen Authentifizierungsinformationen eines Benutzers, wie z.B. seinen Benutzernamen und sein Passwort. Der Benutzerdatensatz ist für jeden B2C-MiMandanten ter einzigartig und verwendet entweder die Anmeldedaten des Benutzernamens (E-Mail-Adresse) oder die Anmeldedaten des Anbieters der sozialen Identität.
+Dynamics 365 Commerce verwendet den Azure AD B2C-Cloud-Identitätsdienst zur Unterstützung von Benutzeranmeldeinformationen und Authentifizierungsströmen. Die Benutzer können die Authentifizierungsflüsse nutzen, um sich anzumelden, sich anzumelden und ihr Kennwort zurückzusetzen. Azure AD B2C speichert die sensiblen Authentifizierungsinformationen eines Benutzers, wie z. B. den Benutzernamen und das Passwort. Der Benutzerdatensatz ist für jeden B2C-MiMandanten ter einzigartig und verwendet entweder die Anmeldedaten des Benutzernamens (E-Mail-Adresse) oder die Anmeldedaten des Anbieters der sozialen Identität.
 
 In den meisten Fällen wird in einer Commerce-Umgebung ein einzelner Azure AD B2C-Mandanten verwendet. Commerce-Kunden können dann mehrere Sites in derselben Commerce-Umgebung erstellen und veröffentlichen, und auf diesen Sites werden dieselben Kundendaten verwendet. Wenn die Sites in der Umgebung jedoch als unterschiedliche Marken behandelt werden und den Benutzern als separate Unternehmen erscheinen sollen, kann ein B2C-Mandanten für den Kanal konfiguriert werden, der für die Trennung von Site und Marke verwendet wird.
 

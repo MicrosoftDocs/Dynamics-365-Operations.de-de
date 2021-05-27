@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03a195c725854eff1fe6d6fa20bb815673e2e307
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3ff7ac15a64196d7839177ded5515386184e268
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827338"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028226"
 ---
 # <a name="position-forecasting"></a>Positionsplanung
 
@@ -55,7 +55,7 @@ Sie können zusätzliche Planungspositionsversionen erstellen, während Budgetpl
 
 Budgetkostenelemente werden verwendet, um Kostendetails für eine Planungsposition zu definieren. Diese Details enthalten die Art der Kosten, wie die Kosten berechnet werden und ob die Kosten mehreren Datumsangaben zugewiesen werden, wenn die Planungsposition in einem Budgetplan enthalten ist. 
 
-Bestimmte Felder definieren das Verhalten des Budgetkostenelements. Jedem Budgetkostenelement wird der Budgetkostentyp **Einnahmen**,  **Vergütung**, **Steuern** oder **Sonstiges** zugewiesen. Die Budgetkostentypen werden hauptsächlich verwendet, um Summen zu berechnen. Der Wert **Planungspositionsüberschreibung** gibt an, ob die Beträge im Element in der Planungsposition geändert werden können. Das Feld **Zuordnungsmethode** wird verwendet, wenn eine Planungsposition zu einem Budgetplan hinzugefügt wird. Sie können den Kostenbetrag auf separate Budgetplanpositionen mit unterschiedlichen Daten auf einer monatlichen, vierteljährlichen, wöchentlichen oder zweiwöchentlichen Grundlage aufteilen. Wenn Sie ein Startdatum auswählen, ordnen Sie die Kosten als einzelnen Betrag an dem Startdatum zu, das in der Planungsposition festgelegt ist. 
+Bestimmte Felder definieren das Verhalten des Budgetkostenelements. Jedem Budgetkostenelement wird der Budgetkostentyp **Einnahmen**, **Vergütung**, **Steuern** oder **Sonstiges** zugewiesen. Die Budgetkostentypen werden hauptsächlich verwendet, um Summen zu berechnen. Der Wert **Planungspositionsüberschreibung** gibt an, ob die Beträge im Element in der Planungsposition geändert werden können. Das Feld **Zuordnungsmethode** wird verwendet, wenn eine Planungsposition zu einem Budgetplan hinzugefügt wird. Sie können den Kostenbetrag auf separate Budgetplanpositionen mit unterschiedlichen Daten auf einer monatlichen, vierteljährlichen, wöchentlichen oder zweiwöchentlichen Grundlage aufteilen. Wenn Sie ein Startdatum auswählen, ordnen Sie die Kosten als einzelnen Betrag an dem Startdatum zu, das in der Planungsposition festgelegt ist. 
 
 Die Berechnung des Kostenbetrags des Budgetkostenelements verwendet Gültigkeitsdaten, um die Verwendung des gleichen Kostenelements in verschiedenen Perioden zu ermöglichen. Ein einzelnes Hauptkonto wird in jeder Periode zugewiesen, zusammen mit einem Prozentsatz oder einem jährlichen Betrag, der den Kostenbetrag angibt. Ein Budgetkostenelement kann einen Prozentsatz anderer Kostenelemente oder des jährlichen Betrags, aber nicht beides verwenden. Sie können auch eine jährliche Grenze angeben. 
 
@@ -67,9 +67,9 @@ Jodis Organisation bietet eine Ausbildungsvergütung von 5 Prozent des Grundlohn
 
 Jodis möchte nicht, dass Manager den Betrag der Vergütung ändern. Daher wählt sie **Kostenänderungen nicht zulassen** im Feld **Planungspositionsüberschreibung** aus. Die Organisation wünscht, dass diese Kosten jeden Monat gleichmäßig zugewiesen werden. Daher wählt Jodi **Vierteljährlich** im Feld **Zuordnungsmethode** aus. 
 
-Danach fügt Jodi eine Kostenberechnungsposition hinzu, legt die Datumsangaben und ein Hauptkonto fest und gibt als Prozentsatz **5,00** ein. Ihre Organisation hat eine Kapazität von 5.000 USD pro Jahr für diese Vergütung. Daher gibt Jodi diesen Betrag als das jährliche Limit ein. 
+Danach fügt Jodi eine Kostenberechnungsposition hinzu, legt die Datumsangaben und ein Hauptkonto fest und gibt als Prozentsatz **5,00** ein. Die Organisation hat eine Kapazität von 5.000 Euro pro Jahr für diese Vergütung. Daher gibt Jodi diesen Betrag als das jährliche Limit ein. 
 
-Schließlich fügt Jodi alle Einkommenkostenelemente hinzu, die als Berechnungsgrundlage für den Grundlohn verwendet werden. Ihr Budgetkostenelement kann jetzt verwendet werden.
+Schließlich fügt Jodi alle Einkommenkostenelemente hinzu, die als Berechnungsgrundlage für den Grundlohn verwendet werden. Das Budgetkostenelement kann jetzt verwendet werden.
 
 ### <a name="compensation-groups"></a>Vergütungsgruppen
 
@@ -137,7 +137,7 @@ Die Positionen des Budgetkostenelements müssen neu berechnet werden, wenn der F
 
 **Beispiel** 
 
-Die Organisation erwägt zwei Optionen für das Reduzieren der Kosten einer Buchhalterposition. Eine Option ist, die Position nach einem halben Jahr zu beenden. Die andere Option ist, die Position für das gesamte Jahr in Teilzeit zu ändern. Brad hat eine Planungsposition für die vorhandene Buchhalterposition in einem Basisszenario erstellt. Er kopiert diese Basisplanungsposition in Szenario A, legt das Rückzugsdatum 31. Mai fest und berechnet neu. Brad kopiert dann die Basisplanungsposition in Szenario B, ändert den FTE-Wert in **0,50** und berechnet neu. Brad besitzt nun drei Versionen, die jeweils Kostensummen aufweisen, die mit den Optionen abgestimmt sind.
+Die Organisation erwägt zwei Optionen für das Reduzieren der Kosten einer Buchhalterposition. Eine Option ist, die Position nach einem halben Jahr zu beenden. Die andere Option ist, die Position für das gesamte Jahr in Teilzeit zu ändern. Brad hat eine Planungsposition für die vorhandene Buchhalterposition in einem Basisszenario erstellt. Brad kopiert diese Basisplanungsposition in Szenario A, legt das Rückzugsdatum 31. Mai fest und berechnet neu. Brad kopiert dann die Basisplanungsposition in Szenario B, ändert den FTE-Wert in **0,50** und berechnet neu. Brad besitzt nun drei Versionen, die jeweils Kostensummen aufweisen, die mit den Optionen abgestimmt sind.
 
 #### <a name="assigning-a-compensation-group"></a>Zuweisen einer Vergütungsgruppe
 

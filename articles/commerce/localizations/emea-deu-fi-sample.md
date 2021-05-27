@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 520c4e0ea56335d1750a17eb782f9262cd366cc1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e3ce5bca45e9439983c8db3c2c332fea317bd055
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798845"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020297"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Integrationsbeispiel für Steuererfassungsdienst für Deutschland
 
@@ -86,7 +86,7 @@ Der Belegdruck ist in Deutschland obligatorisch. Alle Belege müssen mindestens 
 - Informationsnachricht
 
 > [!NOTE]
-> Ein QR-Code kann auch auf Quittungen gedruckt werden. Obwohl der QR-Code optional ist, wird er dringend empfohlen. Weitere Informationen dazu, wie Sie QR-Code als Teil einer Antwort vom Steuerregistrierungsdienst erhalten, finden Sie im EFR-Handbuch \[DE\] Dokument, das auf der Website [EFSTA-Dokumentation](https://public.efsta.net/efr/) veröffentlicht wird.
+> Ein QR-Code kann auch auf Quittungen gedruckt werden. Obwohl der QR-Code optional ist, wird er dringend empfohlen. Weitere Informationen dazu, wie Sie QR-Code als Teil einer Antwort vom Steuerregistrierungsdienst erhalten, finden Sie im „EFR-Handbuch \[DE\]“-Dokument, das auf der Website [EFSTA-Dokumentation](https://public.efsta.net/efr/) veröffentlicht wird.
 >
 > Das Feld **Info Nachricht** auf den Belegen zeigt eine Benachrichtigung des Steuerregistrierungsdienstes. Wenn beispielsweise ein Signaturgerät defekt ist, kann ein spezieller Text auf eine Quittung gedruckt werden.
 
@@ -115,9 +115,9 @@ Der Vorgang **Nichtverkaufstransaktionen** werden im Steuerregistrierungsdienst 
 Alle Transaktionen müssen von einem TSE signiert werden, um ihre Integrität, Authentizität und Vollständigkeit sicherzustellen und um die Manipulation aufgezeichneter Daten zu verhindern.
 
 > [!WARNING]
-> Es kann nur ein zertifizierter TSE verwendet werden. Informationen zu den Typen und Modellen von TSEs, die von der EFR-Lösung unterstützt werden, finden Sie im EFR-Handbuch \[DE\] Dokument, das auf der Website [EFSTA-Dokumentation](https://public.efsta.net/efr/) veröffentlicht wird. Informationen zur Auswahl und zum Erhalt eines TSE erhalten Sie von [EFSTA](https://www.efsta.eu/at/kontakt).
+> Es kann nur ein zertifizierter TSE verwendet werden. Informationen zu den Typen und Modellen von TSEs, die von der EFR-Lösung unterstützt werden, finden Sie im „EFR-Handbuch \[DE\]“-Dokument, das auf der Website [EFSTA-Dokumentation](https://public.efsta.net/efr/) veröffentlicht wird. Informationen zur Auswahl und zum Erhalt eines TSE erhalten Sie von [EFSTA](https://www.efsta.eu/at/kontakt).
 
-Vorschriften in Deutschland erfordern Unterstützung für den DSFinV-K-Export. Der DSFinV-K-Export kann in der EFR-Lösung ausgelöst werden. Weitere Informationen zum DSFinV-K-Export finden Sie im EFR-Handbuch \[DE\] Dokument, das auf der Website [EFSTA-Dokumentation](https://public.efsta.net/efr/) veröffentlicht wird.
+Vorschriften in Deutschland erfordern Unterstützung für den DSFinV-K-Export. Der DSFinV-K-Export kann in der EFR-Lösung ausgelöst werden. Weitere Informationen zum DSFinV-K-Export finden Sie im „EFR-Handbuch \[DE\]“-Dokument, das auf der Website [EFSTA-Dokumentation](https://public.efsta.net/efr/) veröffentlicht wird.
 
 ### <a name="default-data-mapping"></a>Standarddatenzuordnung
 
@@ -160,7 +160,7 @@ Sie müssen auch die folgenden Einstellungen für Deutschland angeben. Stellen S
 
 ### <a name="set-up-vat-per-german-requirements"></a>MwSt. nach deutschen Anforderungen einrichten
 
-Sie müssen Mehrwertsteuercodes, Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen erstellen. Sie müssen auch Mehrwertsteuerinformationen für Produkte und Dienstleistungen einrichten. Weitere Informationen dazu, wie die Mehrwertsteuer in eingerichtet und verwendet wird, finden Sie unter [Mehrwertsteuerüberblick](../../financials/general-ledger/indirect-taxes-overview.md).
+Sie müssen Mehrwertsteuercodes, Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen erstellen. Sie müssen auch Mehrwertsteuerinformationen für Produkte und Dienstleistungen einrichten. Weitere Informationen dazu, wie die Mehrwertsteuer in eingerichtet und verwendet wird, finden Sie unter [Mehrwertsteuerüberblick](../../finance/general-ledger/indirect-taxes-overview.md).
 
 Auf Verkaufsbelegen können Sie einen abgekürzten Code für einen Mehrwertsteuercode drucken (beispielsweise „A“ oder „B”). Um diese Funktionalität verfügbar zu machen, legen Sie das Feld **Code zum Drucken** auf der Seite **Mehrwertsteuercodes** fest.
 

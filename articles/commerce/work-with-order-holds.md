@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 61a73f10c8a8b3386826f08184028d8d5e6508a4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2066e0841658917cb0e6ddc0fbacf98d52098da8
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800382"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027455"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurieren und Arbeiten mit Callcenter-Auftragssperren
 
@@ -43,7 +43,7 @@ Aufträge, die Callcenterbenutzer im Back-Office-Commerce-Programm erstellen, k�
 
 Während der Verkaufserfassung aber vor Auftragsunterordnung und Bestätigung, sollten Callcenterbenutzer einen Auftrag manuell sperren, um ihn an freigegeben werden dem Lagerort das für die weitere Verarbeitung verhindert. Zum Beispiel ist der Debitor, der den Auftrag platziert, noch nicht bereit oder es fehlen zentrale Daten, um den Prozess erfolgreich zu verarbeiten.
 
-Auf der Auftragserfassungsseite kann der Callcenterbenutzer einen Auftrag sperren, indem er die Option **Auftragsgriffe** der Registerkarte **Auftrag** Auftragserfassungsmenüs verwendet. Alternativ kann der Benutzer die Menüoption **Sperren** auf der Seite **Auftragszusammenfassung** auswählen, die angezeigt wird, wenn sie bei einem Callcenterauftrag **Vollständig** auswählen.
+Auf der Auftragserfassungsseite kann der Callcenterbenutzer einen Auftrag sperren, indem er die Option **Auftragsgriffe** der Registerkarte **Auftrag** Auftragserfassungsmenüs verwendet. Alternativ kann der Benutzer die Menüoption **Sperren** auf der Seite **Auftragszusammenfassung** auswählen, die angezeigt wird, wenn der Benutzer bei einem Callcenterauftrag **Vollständig** auswählt.
 
 In beiden Fällen wird die Seite **Auftragssperre** angezeigt. Der Benutzer kann dann **Neu** auswählen, um eine Sperre für den Auftrag zu erstellen. Im Feld **Code sperren** sollte der Benutzer den Code auswählen, der den Grund für die Sperre am besten beschreibt. Im Feld **Ursachencode** kann der Benutzer einen zusätzlicher optionalen Code auswählen, um eine zweite Sperre des Werts bereitzustellen.
 
@@ -53,7 +53,7 @@ Nachdem Sie die Sperrinformationen eingegeben und gespeichert haben, kann der Be
 
 Wenn die Markierung **Aktivieren Sie Auftragsabschluss** im Callcenterkanal aktiviert ist, wird die Zahlung für einen gesperrten Auftrag nicht angewendet. Durch Kontrast für einen Auftrag, der nicht gesperrt ist, können Benutzer die Auftragseintragsseite nicht verlassen, bis die Zahlung angewendet wird. Selbstverständlich ist Zahlung erforderlich, bevor die Auftragssperre freigegeben wird.
 
-Darüber hinaus können Callcenterbenutzer eine manuelle Sperre für Aufträge erstellen, die aus einem bestimmten Grund verdächtig erscheinen. Aufträge können auch automatisch gesperrt werden, wenn sie mit Betrugskriterien und aktiven Regeln übereinstimmen. Weitere Informationen zu diesen Auftragssperrtypen, finden Sie unter [Einstellungsbetrugswarnungen](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Darüber hinaus können Callcenterbenutzer eine manuelle Sperre für Aufträge erstellen, die aus einem bestimmten Grund verdächtig erscheinen. Aufträge können auch automatisch gesperrt werden, wenn sie mit Betrugskriterien und aktiven Regeln übereinstimmen. Weitere Informationen zu diesen Auftragssperrtypen, finden Sie unter [Einstellungsbetrugswarnungen](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Aufträge anzeigen und verwalten, die gesperrt sind
 

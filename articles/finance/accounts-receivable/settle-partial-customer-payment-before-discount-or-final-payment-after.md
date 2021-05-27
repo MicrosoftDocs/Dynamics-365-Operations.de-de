@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4df5ebaf6e8ae8414515bd11087adcd05a88e581
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835146"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027527"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Teilzahlungen vor dem Rabattdatum ausgleichen mit vollständiger Zahlung nach dem Rabattdatum
 
@@ -38,7 +38,7 @@ Am 25. Juni gibt Arnie eine Rechnung für 1.000,00 für den Debitor 4027 ein und
 | FTI-10020 | Rechnung          | 6/25/2015 | 10020   | 1.000,00                             |                                       | 1.000,00 | USD      |
 
 ## <a name="partial-payment-before-the-cash-discount-date"></a>Teilzahlung vor dem Skontodatum
-Am 2. Juli leistet Debitor 4027 eine Teilzahlung von 297,00 für die Rechnung. Die Zahlung ist für ein Skonto freigegeben, da Fabrikam Skonti auf Teilzahlungen anbietet, und die Teilzahlungs vor dem Skontodatum geleistet wurde. Daher zahlt nimmt Debitor 4027 ein Skonto von 3,00 in Anspruch. Arnie erfasst die Zahlung für Debitor 4027, indem er die Zahlungserfassung verwendet. Arnie öffnet anschließend die Seite **Buchungen ausgleichen**, sodass er die Rechnung zum Ausgeleichen markieren kann.
+Am 2. Juli leistet Debitor 4027 eine Teilzahlung von 297,00 für die Rechnung. Die Zahlung ist für ein Skonto freigegeben, da Fabrikam Skonti auf Teilzahlungen anbietet, und die Teilzahlungs vor dem Skontodatum geleistet wurde. Daher zahlt nimmt Debitor 4027 ein Skonto von 3,00 in Anspruch. Arnie erfasst die Zahlung für Debitor 4027, indem er die Zahlungserfassung verwendet. Arnie öffnet anschließend die Seite **Buchungen ausgleichen**, sodass Arnie die Rechnung zum Ausgleichen markieren kann.
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Geschuldeter Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
@@ -63,7 +63,7 @@ Arnie bucht diese Zahlung. Die Rechnung hat nun einem Saldo von 700,00. Folgende
 | DISC-10020 |  Skonto   | 1. Juli 2015  |         |                                      | 3,00                                  | 0,00    | USD      |
 
 ## <a name="remaining-payment-after-the-cash-discount-date"></a>Verbleibende Teilzahlung nach dem Skontodatum
-Am 11. Juli, also nach der Rabattperiode, zahlt Debitor 4027 den Rest dieser Rechnung. Auf der **Offene Buchungen ausgleichen** Seite wird kein Rabattbetrag im **Vorkalkuliertes Skonto** Feld angezeigt, und der Wert im Feld **Skontobetrag** beträgt **0,00**. Wenn Debitor 4027 die verbleibenden 700,00 bezahlt, wird kein zusätzlicher Rabatt genommen.
+Am 11. Juli, also nach der Rabattperiode, zahlt Debitor 4027 den Rest dieser Rechnung. Auf der **Offene Buchungen ausgleichen** Seite wird kein Rabattbetrag im Feld **Vorkalkuliertes Skonto** angezeigt, und der Wert im Feld **Skontobetrag** beträgt **0,00**. Wenn Debitor 4027 die verbleibenden 700,00 bezahlt, wird kein zusätzlicher Rabatt genommen.
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Geschuldeter Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
@@ -95,7 +95,7 @@ Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleic
 | Verwendetes Skonto          | 3,00      |
 | Zu verwendender Skontobetrag | 7:00      |
 
-Arnie ändert der Wert im Feld **Skonto verwenden** wieder zu **Normal**, da er diesem Debitor nicht den verbleibenden Barzahlungsrabatt von 7,00 gewährt. Arnie bucht anschließend die Zahlung. Wenn Arnie die Seite **Debitorentransaktionen** öffnet, sieht er, dass die Rechnung einem Saldo von 0,00 hat. Er sieht auch, dass es zwei Zahlungen gibt. Eine Zahlung ist für 297,00 und hat ein Skonto von 3,00, während die anderen Zahlung für 700,00 ist.
+Arnie ändert der Wert im Feld **Skonto verwenden** wieder zu **Normal**, da Arnie diesem Debitor nicht den verbleibenden Barzahlungsrabatt von 7,00 gewährt. Arnie bucht anschließend die Zahlung. Wenn Arnie die Seite **Debitorentransaktionen** öffnet, hat die Rechnung einen Saldo von 0,00. Es gibt zwei Zahlungen. Eine Zahlung ist für 297,00 und hat ein Skonto von 3,00, während die anderen Zahlung für 700,00 ist.
 
 | Beleg    | Transaktionstyp | Datum      | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag | Währung |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

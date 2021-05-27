@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 21600c0815da99314dcbb8f123449c2ae93a3c1a
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835099"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027479"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträume hat
 
@@ -31,7 +31,7 @@ Dieser Artikel beschreibt, wie Debitorenteilzahlungen ausgeglichen werden, die m
 Fabrikam bietet Debitor 4031 zwei Skontozeiträume. Der Debitor erhält ein 2-Prozent Skonto, wenn die Rechnung in fünf Tagen bezahlt wird, und ein 1-Prozent-Skonto, wenn die Rechnung in 14 Tagen beglichen wird. Fabrikam bietet auch Skonti auf Teilzahlungen an. Die Ausgleichsparameter sind auf der Seite **Debitorenkontenparameter** Seite verfügbar.
 
 ## <a name="invoice"></a>Rechnung
-Am 25. Juni gibt Arnie eine Rechnung für 1.000,00 für den Debitor 4031 ein und bucht diese. Beim Zuweisen der Skonto für diese Rechnung geprüft, sieht Arnie, dass 4031 Debitoren einen Rabatt 20,00 erhält, wenn die Rechnung bis 30. Juni bezahlt wird. Wenn die Rechnung bis 9. Juli bezahlt wird, erhält der Debitor ein Skonto 10,00.
+Am 25. Juni gibt Arnie eine Rechnung für 1.000,00 für den Debitor 4031 ein und bucht diese. Beim Zuweisen der Skonto für diese Rechnung geprüft, sieht Arnie, dass Debitor 4031 einen Rabatt von 20,00 erhält, wenn die Rechnung bis 30. Juni bezahlt wird. Wenn die Rechnung bis 9. Juli bezahlt wird, erhält der Debitor ein Skonto 10,00.
 
 | Skontodatum | Skontobetrag | Betrag in Buchungswährung |
 |--------------------|----------------------|--------------------------------|

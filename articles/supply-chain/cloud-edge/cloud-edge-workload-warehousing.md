@@ -6,7 +6,7 @@ ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PurchTable, SysSecRolesEditUsers
+ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944412"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980948"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -58,7 +58,10 @@ Die Scale-Units besitzen die folgenden Daten:
   - **Umlagerungsaufträge** (nur ausgehend mit einfachen Kommissionier- und Ladearbeiten)
 
 - **Lagerbestellungs-Eingangsdaten** – Diese Daten werden nur für Bestellungen verwendet, die an einen Lagerort freigegeben wurden.
-- **Ladungsträgerdaten** - Ladungsträger können auf dem Hub und der Scale-Unit erstellt werden. Eine dedizierte Konfliktbehandlung ist vorgesehen. Beachten Sie, dass diese Daten nicht lagerspezifisch sind.
+- **Ladungsträgerdaten**: Ladungsträger können sowohl auf den Hub- als auch den Skalierungseinheiten erstellt werden. Eine dedizierte Konfliktbehandlung wird bereitgestellt. 
+
+    > [!IMPORTANT]
+    > Ladungsträgerdaten sind nicht lagerortspezifisch. Wenn während des gleichen Synchronisationszyklus sowohl auf der Hub- als auch der Skalierungseinheit die gleiche Kennzeichennummer erstellt wird, schlägt die nächste Synchronisation fehl. In diesem Fall gehen Sie zu **Systemadministration > Anfragen > Workload-Anfragen > Doppelte Datensätze**, wo Sie die Daten anzeigen und zusammenführen können.
 
 ## <a name="outbound-process-flow"></a>Ausgehender Prozessablauf
 

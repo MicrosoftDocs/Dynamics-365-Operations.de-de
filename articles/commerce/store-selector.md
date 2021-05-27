@@ -2,7 +2,6 @@
 title: Shopauswahlmodul
 description: Dieses Thema enthält das Siteauswahlmodul und es wird beschrieben, wie Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-manager: annbe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
-ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
+ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853416"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021463"
 ---
 # <a name="store-selector-module"></a>Shopauswahlmodul
 
@@ -62,7 +61,7 @@ Um den Längen- und Breitengrad für den Geschäftsstandort in der Commerce-Zent
 
 ## <a name="bing-maps-integration"></a>Bing Maps-Integration
 
-Das Filialauswahlmodul ist in die [Bing Maps REST-Anwendungsprogrammierschnittstellen (APIs)](https://docs.microsoft.com/bingmaps/rest-services/) integriert, um die Geocodierungs- und Vorschlagssuchfunktionen von Bing zu verwenden. Ein Bing Maps-API-Schlüssel ist erforderlich und muss auf der Seite „Freigegebene Parameter“ in Commerce Headquarters hinzugefügt werden. Die Geocodierungs-API wird verwendet, um einen Standort in Breiten- und Längengrade umzuwandeln. Die Integration in die Vorschlagssuche-API wird verwendet, um Suchvorschläge anzuzeigen, wenn Benutzer Standorte in das Suchfeld eingeben.
+Das Filialauswahlmodul ist in die [Bing Maps REST-Anwendungsprogrammierschnittstellen (APIs)](/bingmaps/rest-services/) integriert, um die Geocodierungs- und Vorschlagssuchfunktionen von Bing zu verwenden. Ein Bing Maps-API-Schlüssel ist erforderlich und muss auf der Seite „Freigegebene Parameter“ in Commerce Headquarters hinzugefügt werden. Die Geocodierungs-API wird verwendet, um einen Standort in Breiten- und Längengrade umzuwandeln. Die Integration in die Vorschlagssuche-API wird verwendet, um Suchvorschläge anzuzeigen, wenn Benutzer Standorte in das Suchfeld eingeben.
 
 Für die Vorschlagssuche-REST-API müssen Sie sicherstellen, dass die folgenden URLs gemäß der Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) Ihrer Website zulässig sind (Content Security Policy, CSP). Diese Einstellung erfolgt im Commerce Site Builder, indem zulässige URLs zu verschiedenen Inhaltssicherheitsrichtlinien der Website hinzugefügt werden (z. B. **img-src**). Weitere Informationen finden Sie unter [Inhaltssicherheitsrichtlinie](manage-csp.md). 
 
@@ -78,14 +77,14 @@ Das Filialauswahlmodul unterstützt den Modus **Im Shop abholen**, der eine List
 
 Das Shopauswahlmodul kann einem Kauffeldmodul auf einer PDP-Seite hinzugefügt werden, um Filialen anzuzeigen, in denen ein Produkt zur Abholung verfügbar ist. Es kann auch einem Einkaufswagenmodul hinzugefügt werden. In diesem Fall zeigt das Filialauswahlmodul die Abholoptionen für jeden Positionsartikel im Warenkorb an. Das Shopauswahlmodul kann auch über Erweiterungen und Anpassungen zu anderen Seiten oder Modulen hinzugefügt werden.
 
-Damit dieses Szenario funktioniert, sollten Produkte so konfiguriert werden, dass der Liefermodus **Abholung** verwendet wird. Andernfalls wird das Modul nicht auf den Produktseiten angezeigt. Einzelheiten zum Konfigurieren des Liefermodus finden Sie unter [Lieferarten einrichten](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+Damit dieses Szenario funktioniert, sollten Produkte so konfiguriert werden, dass der Liefermodus **Abholung** verwendet wird. Andernfalls wird das Modul nicht auf den Produktseiten angezeigt. Einzelheiten zum Konfigurieren des Liefermodus finden Sie unter [Lieferarten einrichten](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Das folgende Bild zeigt ein Beispiel eines Speicherauswahlmoduls, das auf einem PDP verwendet wird.
 
 ![Beispiel eines in einem PDP verwendeten Shopauswahlmoduls](./media/BOPIS.PNG)
 
 > [!NOTE]
-> In Version 10.0.16 und höher kann eine neue Funktion aktiviert werden, mit der eine Organisation mehrere Optionen für Abhollieferarten für Kunden definieren kann.  Wenn diese Funktion aktiviert ist, werden die Ladenauswahl und andere Module von E-Commerce erweitert, um es den Einkäufern zu ermöglichen, aus möglicherweise mehreren Abhollieferoptionen auszuwählen, sofern diese konfiguriert sind.  Weitere Informationen zu dieser Funktion finden Sie in [dieser Dokumentation](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
+> In Version 10.0.16 und höher kann eine neue Funktion aktiviert werden, mit der eine Organisation mehrere Optionen für Abhollieferarten für Kunden definieren kann.  Wenn diese Funktion aktiviert ist, werden die Ladenauswahl und andere Module von E-Commerce erweitert, um es den Einkäufern zu ermöglichen, aus möglicherweise mehreren Abhollieferoptionen auszuwählen, sofern diese konfiguriert sind.  Weitere Informationen zu dieser Funktion finden Sie in [dieser Dokumentation](./multiple-pickup-modes.md). 
 
 ## <a name="find-stores-mode"></a>Modus „Geschäfte suchen“
 
@@ -157,11 +156,11 @@ Führen Sie die folgenden Schritte aus, um das Filialauswahlmodul so zu konfigur
 
 [Schnelleinführung zum Einkaufskorb und Auscheckvorgang](quick-tour-cart-checkout.md)
 
-[Lieferarten einrichten](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Lieferarten einrichten](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [Bing Maps für Ihr Unternehmen verwalten](dev-itpro/manage-bing-maps.md)
 
-[Bing Maps-REST-APIs](https://docs.microsoft.com/bingmaps/rest-services/)
+[Bing Maps-REST-APIs](/bingmaps/rest-services/)
 
 [Kartenmodul](map-module.md)
 

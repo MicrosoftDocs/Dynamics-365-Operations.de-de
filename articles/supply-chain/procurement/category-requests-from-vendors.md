@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fb3555e6d923fe37479c3204f0b78f7cdf510118
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 1951f85f84c3b8b2d42f49d5f464d90d410ebfa2
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938473"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015950"
 ---
 # <a name="category-requests-from-vendors"></a>Kategorieanfragen von Kreditoren
 
@@ -36,10 +36,7 @@ Nachdem die Funktion eingeschaltet ist, können Sie immer noch manuell Beschaffu
 
 Bevor ein Verkäufer mit Kategorieanforderungen interagieren kann, muss er für die Zusammenarbeit mit Verkäufern festgelegt werden.
 
-Der Kreditor muss mindestens einen Benutzer für die Zusammenarbeit mit Lieferanten haben. Nur Kreditor-Benutzer, die eine oder beide der folgenden Sicherheitsrollen haben, können Kategorieanfragen erstellen und senden:
-
-- Kreditorenkontakt (extern)
-- Kreditorenadministrator (extern)
+Der Kreditor muss mindestens einen Benutzer für die Zusammenarbeit mit Lieferanten haben. Nur Kreditorenbenutzer mit der Sicherheitsrolle *Kreditorenadministrator (extern)* kann Kategorieanforderungen erstellen und senden.
 
 Weitere Informationen finden Sie unter [Kreditorenzusammenarbeit einrichten und verwalten](set-up-maintain-vendor-collaboration.md).
 
