@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,67 +15,67 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c5e3eeb66d4f32b1fea1a43fff9f5b09d87d1f53
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 6e43b9127b247fa618558b725837d12bf290662f
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018708"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6052024"
 ---
-# <a name="restrict-editing-of-personal-information"></a><span data-ttu-id="03c6a-103">Bearbeiten von persönlichen Informationen einschränken</span><span class="sxs-lookup"><span data-stu-id="03c6a-103">Restrict editing of personal information</span></span>
+# <a name="restrict-editing-of-personal-information"></a><span data-ttu-id="dce0f-103">Bearbeiten von persönlichen Informationen einschränken</span><span class="sxs-lookup"><span data-stu-id="dce0f-103">Restrict editing of personal information</span></span>
 
 [!include [applies to](../includes/applies-to-hr.md)]
 [!include [preview feature](./includes/preview-feature.md)]
 
-<span data-ttu-id="03c6a-104">Dieses Thema beschreibt, wie Sie Mitarbeiter an der Bearbeitung von Kontaktdaten in Dynamics 365 Human Resources hindern können.</span><span class="sxs-lookup"><span data-stu-id="03c6a-104">This topic describes how to restrict employees from editing contact details in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="03c6a-105">Möglicherweise möchten Sie verhindern, dass Mitarbeiter bestimmte Kontaktdetails bearbeiten, z. B. ihren Lagerplatz oder ihre E-Mail-Adresse.</span><span class="sxs-lookup"><span data-stu-id="03c6a-105">You might want to prevent employees from editing certain contact details, such as their business location or email address.</span></span>
+<span data-ttu-id="dce0f-104">Dieses Thema beschreibt, wie Sie Mitarbeiter an der Bearbeitung von Kontaktdaten in Dynamics 365 Human Resources hindern können.</span><span class="sxs-lookup"><span data-stu-id="dce0f-104">This topic describes how to restrict employees from editing contact details in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="dce0f-105">Möglicherweise möchten Sie verhindern, dass Mitarbeiter bestimmte Kontaktdetails bearbeiten, z. B. ihren Lagerplatz oder ihre E-Mail-Adresse.</span><span class="sxs-lookup"><span data-stu-id="dce0f-105">You might want to prevent employees from editing certain contact details, such as their business location or email address.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="03c6a-106">Um diese Funktion zu nutzen, müssen Sie zuerst **(Vorschau) Mitarbeiter vom Hinzufügen oder Bearbeiten von Adress- und Kontaktinformationen für ausgewählte Zwecke einschränken** in der Funktionsverwaltung aktivieren.</span><span class="sxs-lookup"><span data-stu-id="03c6a-106">To use this feature, you must first enable **(Preview) Restrict employees from adding or editing address and contact information for select purposes** in Feature management.</span></span> <span data-ttu-id="03c6a-107">Weitere Informationen zur Aktivierung der Vorschaufunktionen finden Sie unter [Funktonen verwalten](hr-admin-manage-features.md).</span><span class="sxs-lookup"><span data-stu-id="03c6a-107">For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).</span></span><br><br><span data-ttu-id="03c6a-108">![Vorschaufunktion aktivieren](./media/hr-employee-self-service-restrict-enable.png)</span><span class="sxs-lookup"><span data-stu-id="03c6a-108">![Enable preview feature](./media/hr-employee-self-service-restrict-enable.png)</span></span>
+> <span data-ttu-id="dce0f-106">Um diese Funktion zu nutzen, müssen Sie zuerst **(Vorschau) Mitarbeiter vom Hinzufügen oder Bearbeiten von Adress- und Kontaktinformationen für ausgewählte Zwecke einschränken** in der Funktionsverwaltung aktivieren.</span><span class="sxs-lookup"><span data-stu-id="dce0f-106">To use this feature, you must first enable **(Preview) Restrict employees from adding or editing address and contact information for select purposes** in Feature management.</span></span> <span data-ttu-id="dce0f-107">Weitere Informationen zur Aktivierung der Vorschaufunktionen finden Sie unter [Funktonen verwalten](hr-admin-manage-features.md).</span><span class="sxs-lookup"><span data-stu-id="dce0f-107">For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).</span></span><br><br><span data-ttu-id="dce0f-108">![Vorschaufunktion aktivieren](./media/hr-employee-self-service-restrict-enable.png)</span><span class="sxs-lookup"><span data-stu-id="dce0f-108">![Enable preview feature](./media/hr-employee-self-service-restrict-enable.png)</span></span>
 
-## <a name="choose-the-information-an-employee-can-add-or-edit"></a><span data-ttu-id="03c6a-109">Wählen Sie die Informationen, die ein Mitarbeiter hinzufügen oder bearbeiten kann</span><span class="sxs-lookup"><span data-stu-id="03c6a-109">Choose the information an employee can add or edit</span></span>
+## <a name="choose-the-information-an-employee-can-add-or-edit"></a><span data-ttu-id="dce0f-109">Wählen Sie die Informationen, die ein Mitarbeiter hinzufügen oder bearbeiten kann</span><span class="sxs-lookup"><span data-stu-id="dce0f-109">Choose the information an employee can add or edit</span></span>
 
-1. <span data-ttu-id="03c6a-110">Wählen Sie in der Personalverwaltung **Personalverwaltung** aus, wählen Sie **Links** aus und dann **Personalverwaltungsparameter**.</span><span class="sxs-lookup"><span data-stu-id="03c6a-110">In Human Resources, select **Personnel management**, select **Links**, and then select **Human resources parameters**.</span></span>
+1. <span data-ttu-id="dce0f-110">Wählen Sie in der Personalverwaltung **Personalverwaltung** aus, wählen Sie **Links** aus und dann **Personalverwaltungsparameter**.</span><span class="sxs-lookup"><span data-stu-id="dce0f-110">In Human Resources, select **Personnel management**, select **Links**, and then select **Human resources parameters**.</span></span>
 
    ![Gehen Sie zu Human Resources-Parameter](./media/hr-employee-self-service-human-resources-parameters.png)
 
-2. <span data-ttu-id="03c6a-112">Wählen Sie auf der Seite **Parameter für Human Resources** die Registerkarte **Mitarbeiter-Self-Service**.</span><span class="sxs-lookup"><span data-stu-id="03c6a-112">On the **Human resources parameters** page, select the **Employee self service** tab.</span></span>
+2. <span data-ttu-id="dce0f-112">Wählen Sie auf der Seite **Parameter für Human Resources** die Registerkarte **Mitarbeiter-Self-Service**.</span><span class="sxs-lookup"><span data-stu-id="dce0f-112">On the **Human resources parameters** page, select the **Employee self service** tab.</span></span>
 
    ![Wählen Sie Mitarbeiter-Self-Service](./media/hr-employee-self-service-tab.png)
 
-3. <span data-ttu-id="03c6a-114">Deaktivieren Sie auf der Registerkarte **Mitarbeiter-Self-Service** alle Informationen im Abschnitt **Adress- und Kontaktinformationen**, die ein Mitarbeiter nicht hinzufügen oder bearbeiten soll.</span><span class="sxs-lookup"><span data-stu-id="03c6a-114">On the **Employee self service** tab, uncheck all information in the **Address and contact information** section that you don't want employees to add or edit.</span></span> <span data-ttu-id="03c6a-115">In diesem Beispiel haben wir das Häkchen bei **Geschäftliche** Kontaktinformationen entfernt.</span><span class="sxs-lookup"><span data-stu-id="03c6a-115">In this example, we've unchecked **Business** contact information.</span></span>
+3. <span data-ttu-id="dce0f-114">Deaktivieren Sie auf der Registerkarte **Mitarbeiter-Self-Service** alle Informationen im Abschnitt **Adress- und Kontaktinformationen**, die ein Mitarbeiter nicht hinzufügen oder bearbeiten soll.</span><span class="sxs-lookup"><span data-stu-id="dce0f-114">On the **Employee self service** tab, uncheck all information in the **Address and contact information** section that you don't want employees to add or edit.</span></span> <span data-ttu-id="dce0f-115">In diesem Beispiel haben wir das Häkchen bei **Geschäftliche** Kontaktinformationen entfernt.</span><span class="sxs-lookup"><span data-stu-id="dce0f-115">In this example, we've unchecked **Business** contact information.</span></span>
 
    ![Bearbeitung für geschäftliche Kontaktinformationen einschränken](./media/hr-employee-self-service-restrict-business.png)
 
-4. <span data-ttu-id="03c6a-117">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="03c6a-117">Select **Save**.</span></span>
+4. <span data-ttu-id="dce0f-117">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="dce0f-117">Select **Save**.</span></span>
 
    ![Änderungen speichern](./media/hr-employee-self-service-restrict-save.png)
 
-## <a name="employee-experience"></a><span data-ttu-id="03c6a-119">Erfahrung der Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="03c6a-119">Employee experience</span></span>
+## <a name="employee-experience"></a><span data-ttu-id="dce0f-119">Erfahrung der Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="dce0f-119">Employee experience</span></span>
 
-<span data-ttu-id="03c6a-120">Nachdem Sie Mitarbeitern das Hinzufügen oder Bearbeiten von Kontaktinformationen untersagt haben, können sie die Informationen zwar sehen, aber nicht ändern.</span><span class="sxs-lookup"><span data-stu-id="03c6a-120">After you've restricted employees from adding or editing contact details, they can see the information, but can't change it.</span></span>
+<span data-ttu-id="dce0f-120">Nachdem Sie Mitarbeitern das Hinzufügen oder Bearbeiten von Kontaktinformationen untersagt haben, können sie die Informationen zwar sehen, aber nicht ändern.</span><span class="sxs-lookup"><span data-stu-id="dce0f-120">After you've restricted employees from adding or editing contact details, they can see the information, but can't change it.</span></span>
 
-<span data-ttu-id="03c6a-121">In diesem Beispiel, in dem Mitarbeitern das Bearbeiten von **Geschäfts**-Kontaktdetails untersagt ist, können sie die Informationen dennoch im Mitarbeiter-Self-Service sehen:</span><span class="sxs-lookup"><span data-stu-id="03c6a-121">In this example, where employees are restricted from editing **Business** contact details, they can still see the information in Employee self service:</span></span>
+<span data-ttu-id="dce0f-121">In diesem Beispiel, in dem Mitarbeitern das Bearbeiten von **Geschäfts**-Kontaktdetails untersagt ist, können sie die Informationen dennoch im Mitarbeiter-Self-Service sehen:</span><span class="sxs-lookup"><span data-stu-id="dce0f-121">In this example, where employees are restricted from editing **Business** contact details, they can still see the information in Employee self service:</span></span>
 
 ![Geschäftskontaktdetails anzeigen](./media/hr-employee-self-service-restrict-view.png)
 
-<span data-ttu-id="03c6a-123">Wenn sie jedoch die geschäftlichen Kontaktdetails auswählen, wird der Bereich **Adresse bearbeiten** als schreibgeschützt angezeigt, und sie können keines der Felder ändern.</span><span class="sxs-lookup"><span data-stu-id="03c6a-123">However, when they select the business contact details, the **Edit address** pane appears as read-only, and they can't change any of the fields.</span></span>
+<span data-ttu-id="dce0f-123">Wenn sie jedoch die geschäftlichen Kontaktdetails auswählen, wird der Bereich **Adresse bearbeiten** als schreibgeschützt angezeigt, und sie können keines der Felder ändern.</span><span class="sxs-lookup"><span data-stu-id="dce0f-123">However, when they select the business contact details, the **Edit address** pane appears as read-only, and they can't change any of the fields.</span></span>
 
 ![Geschäftskontakt-Details werden als schreibgeschützt angezeigt](./media/hr-employee-self-service-restrict-read-only.png)
 
-<span data-ttu-id="03c6a-125">Wenn sie **Hinzufügen** wählen, um eine neue Adresse hinzuzufügen, können sie außerdem nicht **Geschäftlich** aus dem Dropdown-Feld **Zweck** wählen.</span><span class="sxs-lookup"><span data-stu-id="03c6a-125">In addition, if they select **Add** to add a new address, they can't select **Business** from the **Purpose** dropdown box.</span></span>
+<span data-ttu-id="dce0f-125">Wenn sie **Hinzufügen** wählen, um eine neue Adresse hinzuzufügen, können sie außerdem nicht **Geschäftlich** aus dem Dropdown-Feld **Zweck** wählen.</span><span class="sxs-lookup"><span data-stu-id="dce0f-125">In addition, if they select **Add** to add a new address, they can't select **Business** from the **Purpose** dropdown box.</span></span>
 
 ![Mitarbeiter kann keine Geschäftsadresse hinzufügen](./media/hr-employee-self-service-restrict-add.png)
 
-<span data-ttu-id="03c6a-127">Das gleiche Erlebnis haben Mitarbeiter, wenn sie **Kontaktdetails** auf der Seite **Persönliche Daten** wählen und eine neue Adresse hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="03c6a-127">Employees get the same experience when they select **Contact details** on the **Personal information** page and add a new address.</span></span> <span data-ttu-id="03c6a-128">Die Dropdown-Box **Zweck** zeigt nur die Arten von Informationen an, die sie hinzufügen können.</span><span class="sxs-lookup"><span data-stu-id="03c6a-128">The **Purpose** dropdown box only displays the types of information they can add.</span></span> 
+<span data-ttu-id="dce0f-127">Das gleiche Erlebnis haben Mitarbeiter, wenn sie **Kontaktdetails** auf der Seite **Persönliche Daten** wählen und eine neue Adresse hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="dce0f-127">Employees get the same experience when they select **Contact details** on the **Personal information** page and add a new address.</span></span> <span data-ttu-id="dce0f-128">Die Dropdown-Box **Zweck** zeigt nur die Arten von Informationen an, die sie hinzufügen können.</span><span class="sxs-lookup"><span data-stu-id="dce0f-128">The **Purpose** dropdown box only displays the types of information they can add.</span></span> 
 
 ![Der Mitarbeiter kann im Dropdown-Feld Zweck nicht Geschäftlich auswählen](./media/hr-employee-self-service-restrict-purpose.png)
 
-<span data-ttu-id="03c6a-130">**Kontaktdetails** zeigt jetzt **Zweck** im Raster an.</span><span class="sxs-lookup"><span data-stu-id="03c6a-130">**Contact details** now shows **Purpose** in the grid.</span></span>
+<span data-ttu-id="dce0f-130">**Kontaktdetails** zeigt jetzt **Zweck** im Raster an.</span><span class="sxs-lookup"><span data-stu-id="dce0f-130">**Contact details** now shows **Purpose** in the grid.</span></span>
 
 ![Zweck wird im Raster der Kontaktdetails angezeigt](./media/hr-employee-self-service-restrict-purpose-grid.png)
 
-## <a name="see-also"></a><span data-ttu-id="03c6a-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="03c6a-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dce0f-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="dce0f-132">See also</span></span>
 
-[<span data-ttu-id="03c6a-133">Mitarbeiter- und Manager-Self-Service-Übersicht</span><span class="sxs-lookup"><span data-stu-id="03c6a-133">Employee and Manager self service overview</span></span>](hr-employee-manager-self-service-overview.md)<br>
-[<span data-ttu-id="03c6a-134">Parameter in Human Resources konfigurieren</span><span class="sxs-lookup"><span data-stu-id="03c6a-134">Configure Human resources parameters</span></span>](hr-setup-parameters.md)<br>
-[<span data-ttu-id="03c6a-135">Persönliche Daten bearbeiten</span><span class="sxs-lookup"><span data-stu-id="03c6a-135">Edit personal information</span></span>](hr-employee-manager-self-service-edit-personal-information.md)
+[<span data-ttu-id="dce0f-133">Mitarbeiter- und Manager-Self-Service-Übersicht</span><span class="sxs-lookup"><span data-stu-id="dce0f-133">Employee and Manager self service overview</span></span>](hr-employee-manager-self-service-overview.md)<br>
+[<span data-ttu-id="dce0f-134">Parameter in Human Resources konfigurieren</span><span class="sxs-lookup"><span data-stu-id="dce0f-134">Configure Human resources parameters</span></span>](hr-setup-parameters.md)<br>
+[<span data-ttu-id="dce0f-135">Persönliche Daten bearbeiten</span><span class="sxs-lookup"><span data-stu-id="dce0f-135">Edit personal information</span></span>](hr-employee-manager-self-service-edit-personal-information.md)
