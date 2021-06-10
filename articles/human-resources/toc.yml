@@ -3,8 +3,10 @@
   items:
     - name: Neuerungen
       items:
-        - name: Welche Neuerungen oder Änderungen bietet Human Resources?
+        - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: "20.\_Mai\_2021"
+          href: hr-whats-new-2021-05-20.md
         - name: "3.\_Mai\_2021"
           href: hr-whats-new-2021-05-03.md
         - name: "19.\_April\_2021"
@@ -785,13 +787,19 @@
           items:
             - name: Übersicht über die Leistungsverwaltung
               href: hr-develop-performance-management-overview.md
-            - name: Mitarbeiterqualifikationen ausrichten
-              href: hr-develop-skills.md
+            - name: Qualifikationen
+              items:
+                - name: Qualifikationen konfigurieren
+                  href: hr-develop-skills.md
+                - name: Qualifikationen eingeben
+                  href: hr-develop-enter-skills.md
+                - name: Qualifikationen zuordnen
+                  href: hr-develop-map-skills.md
             - name: Hinzufügung zur Leistungserfassung
               href: hr-develop-add-performance-journal.md
-            - name: Ziele erstellen
+            - name: Ziel erstellen
               href: hr-develop-create-goal.md
-            - name: Eine Leistungsbeurteilung erstellen
+            - name: Leistungsbeurteilung erstellen
               href: hr-develop-create-performance-review.md
         - name: Kurse erstellen
           items:

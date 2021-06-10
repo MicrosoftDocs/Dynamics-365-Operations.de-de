@@ -12,13 +12,15 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Neuerungen oder Änderungen in Plattformupdates
               items:
-                - name: Neuerungen oder Änderungen auf der Startseite von Plattformupdates
+                - name: Neuerungen oder Änderungen in Plattformupdates – Startseite
                   href: get-started/whats-new-home-page.md
-                - name: Plattformupdates zu 10.0.19 (Juli 2021)
+                - name: Plattformupdates für Version 10.0.20 (Juli 2021)
+                  href: get-started/whats-new-platform-updates-10-0-20.md
+                - name: Plattformupdates zu 10.0.19 (Juni 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
-                - name: Plattformupdates zu 10.0.18 (Mai 2021)
+                - name: Plattformupdates für 10.0.18 (Mai 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
-                - name: Plattformupdates zu 10.0.17 (April 2021)
+                - name: Plattformupdates für 10.0.17 (April 2021)
                   href: get-started/whats-new-platform-updates-10-0-17.md
             - name: Entfernte oder veraltete Funktionen
               items:
@@ -940,8 +942,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Neuerungen oder Änderungen in Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
-                - name: Entfernte oder veraltete Funktionen in Lifecycle Services (LCS)
-                  href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services-Benutzerhandbuch
               href: lifecycle-services/lcs-user-guide.md
             - name: Onboarding eines Projekts
@@ -1064,7 +1064,11 @@
                       href: data-entities/dual-write/errors-and-alerts.md
                     - name: Anwendungslebenszyklusverwaltung
                       href: data-entities/dual-write/app-lifecycle-management.md
-                - name: Zuordnen von Konzepten zwischen Apps
+                    - name: Benutzerdefinierter Teambesitzer
+                      href: data-entities/dual-write/user-specified-team-owner.md
+                    - name: Umgebungen für duales Schrreiben trennen und erneut verknüpfen
+                      href: data-entities/dual-write/relink-environments.md
+                - name: Konzepte zwischen Apps zuordnen
                   items:
                     - name: Integrierte Masterdaten von Debitoren
                       href: data-entities/dual-write/customer-mapping.md
@@ -1166,6 +1170,8 @@
               items:
                 - name: Übersicht über Add-Ins
                   href: power-platform/add-ins-overview.md
+            - name: Richtlinien und Kommunikation
+              href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobile Plattform
           items:
             - name: Mobile Plattformressourcen
