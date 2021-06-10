@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,42 +15,42 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a3cddc6205660b48abd9067bfdcaa04c9d2ba541
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1bfbd7347581e57edcab39a675b17ef66e262582
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790907"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059015"
 ---
-# <a name="process-life-event-changes"></a><span data-ttu-id="58203-103">Lebensereignisänderungen verarbeiten</span><span class="sxs-lookup"><span data-stu-id="58203-103">Process life event changes</span></span>
+# <a name="process-life-event-changes"></a><span data-ttu-id="6f4cc-103">Lebensereignisänderungen verarbeiten</span><span class="sxs-lookup"><span data-stu-id="6f4cc-103">Process life event changes</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="58203-104">Lebensereignisänderungen verarbeiten in Microsoft Dynamics 365 Human Resources für zwei Änderungen bei Lebensereignissen:</span><span class="sxs-lookup"><span data-stu-id="58203-104">Process life event changes in Microsoft Dynamics 365 Human Resources for two life event changes:</span></span>
+<span data-ttu-id="6f4cc-104">Lebensereignisänderungen verarbeiten in Microsoft Dynamics 365 Human Resources für zwei Änderungen bei Lebensereignissen:</span><span class="sxs-lookup"><span data-stu-id="6f4cc-104">Process life event changes in Microsoft Dynamics 365 Human Resources for two life event changes:</span></span>
 
-- <span data-ttu-id="58203-105">Geburtstagsänderungen</span><span class="sxs-lookup"><span data-stu-id="58203-105">Birthday changes</span></span>
-- <span data-ttu-id="58203-106">Ablaufänderungen Berechtigungsregelüberschreibung</span><span class="sxs-lookup"><span data-stu-id="58203-106">Eligibility rule override expiration changes</span></span> 
+- <span data-ttu-id="6f4cc-105">Geburtstagsänderungen</span><span class="sxs-lookup"><span data-stu-id="6f4cc-105">Birthday changes</span></span>
+- <span data-ttu-id="6f4cc-106">Ablaufänderungen Berechtigungsregelüberschreibung</span><span class="sxs-lookup"><span data-stu-id="6f4cc-106">Eligibility rule override expiration changes</span></span> 
 
-1. <span data-ttu-id="58203-107">Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Bearbeitung** die Option **Verarbeitung von Lebensereignisänderungen**.</span><span class="sxs-lookup"><span data-stu-id="58203-107">In the **Benefits management** workspace, under **Processing**, select **Life event change processing**.</span></span>
+1. <span data-ttu-id="6f4cc-107">Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Bearbeitung** die Option **Verarbeitung von Lebensereignisänderungen**.</span><span class="sxs-lookup"><span data-stu-id="6f4cc-107">In the **Benefits management** workspace, under **Processing**, select **Life event change processing**.</span></span>
 
-2. <span data-ttu-id="58203-108">Geben Sie im Dialogfeld **Verarbeitung von Lebensereignisänderungen ausführen** Werte für die folgenden Felder ein:</span><span class="sxs-lookup"><span data-stu-id="58203-108">In the **Run life event change process** dialog box, specify values for the following fields:</span></span>
+2. <span data-ttu-id="6f4cc-108">Geben Sie im Dialogfeld **Verarbeitung von Lebensereignisänderungen ausführen** Werte für die folgenden Felder ein:</span><span class="sxs-lookup"><span data-stu-id="6f4cc-108">In the **Run life event change process** dialog box, specify values for the following fields:</span></span>
 
-   | <span data-ttu-id="58203-109">Feld</span><span class="sxs-lookup"><span data-stu-id="58203-109">Field</span></span> | <span data-ttu-id="58203-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="58203-110">Description</span></span> |
+   | <span data-ttu-id="6f4cc-109">Feld</span><span class="sxs-lookup"><span data-stu-id="6f4cc-109">Field</span></span> | <span data-ttu-id="6f4cc-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6f4cc-110">Description</span></span> |
    | --- | --- |
-   | <span data-ttu-id="58203-111">Registrierungsperiode</span><span class="sxs-lookup"><span data-stu-id="58203-111">Enrollment period</span></span> | <span data-ttu-id="58203-112">Die Registrierungsperiode, für die die Lebensereignisänderung verarbeitet wird.</span><span class="sxs-lookup"><span data-stu-id="58203-112">The enrollment period to process life event changes for.</span></span> |
-   | <span data-ttu-id="58203-113">Juristische Person</span><span class="sxs-lookup"><span data-stu-id="58203-113">Legal entity</span></span> | <span data-ttu-id="58203-114">Die juristische Person, für die die Lebensereignisänderung verarbeitet wird.</span><span class="sxs-lookup"><span data-stu-id="58203-114">The legal entity to process life event changes for.</span></span> |
+   | <span data-ttu-id="6f4cc-111">Registrierungsperiode</span><span class="sxs-lookup"><span data-stu-id="6f4cc-111">Enrollment period</span></span> | <span data-ttu-id="6f4cc-112">Die Registrierungsperiode, für die die Lebensereignisänderung verarbeitet wird.</span><span class="sxs-lookup"><span data-stu-id="6f4cc-112">The enrollment period to process life event changes for.</span></span> |
+   | <span data-ttu-id="6f4cc-113">Juristische Person</span><span class="sxs-lookup"><span data-stu-id="6f4cc-113">Legal entity</span></span> | <span data-ttu-id="6f4cc-114">Die juristische Person, für die die Lebensereignisänderung verarbeitet wird.</span><span class="sxs-lookup"><span data-stu-id="6f4cc-114">The legal entity to process life event changes for.</span></span> |
 
-3. <span data-ttu-id="58203-115">Wenn Sie den Prozess im Hintergrund ausführen möchten, wählen Sie **Im Hintergrund ausführen** und führen Sie die folgenden Aufgaben aus:</span><span class="sxs-lookup"><span data-stu-id="58203-115">If you want to run the process in the background, select **Run in the background** and do the following tasks:</span></span>
+3. <span data-ttu-id="6f4cc-115">Wenn Sie den Prozess im Hintergrund ausführen möchten, wählen Sie **Im Hintergrund ausführen** und führen Sie die folgenden Aufgaben aus:</span><span class="sxs-lookup"><span data-stu-id="6f4cc-115">If you want to run the process in the background, select **Run in the background** and do the following tasks:</span></span>
 
-   1. <span data-ttu-id="58203-116">Geben Sie Informationen für den Prozess ein.</span><span class="sxs-lookup"><span data-stu-id="58203-116">Enter information for the process.</span></span>
+   1. <span data-ttu-id="6f4cc-116">Geben Sie Informationen für den Prozess ein.</span><span class="sxs-lookup"><span data-stu-id="6f4cc-116">Enter information for the process.</span></span>
 
-   2. <span data-ttu-id="58203-117">Um eine wiederkehrende Stelle einzurichten, wählen Sie **Wiederholung**, geben Sie die Wiederholungsinformationen ein und wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="58203-117">To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.</span></span>
+   2. <span data-ttu-id="6f4cc-117">Um eine wiederkehrende Stelle einzurichten, wählen Sie **Wiederholung**, geben Sie die Wiederholungsinformationen ein und wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="6f4cc-117">To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.</span></span>
 
-   3. <span data-ttu-id="58203-118">Um eine Stellenbenachrichtigung einzurichten, wählen Sie **Benachrichtigungen**, wählen Sie die zu empfangenden Benachrichtigungen und wählen Sie dann **OK**.</span><span class="sxs-lookup"><span data-stu-id="58203-118">To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.</span></span>
+   3. <span data-ttu-id="6f4cc-118">Um eine Stellenbenachrichtigung einzurichten, wählen Sie **Benachrichtigungen**, wählen Sie die zu empfangenden Benachrichtigungen und wählen Sie dann **OK**.</span><span class="sxs-lookup"><span data-stu-id="6f4cc-118">To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.</span></span>
 
-   4. <span data-ttu-id="58203-119">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="58203-119">Select **OK**.</span></span> <span data-ttu-id="58203-120">Der Prozess wird mit den von Ihnen festgelegten Parametern ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="58203-120">The process will run with the parameters you set.</span></span>
+   4. <span data-ttu-id="6f4cc-119">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="6f4cc-119">Select **OK**.</span></span> <span data-ttu-id="6f4cc-120">Der Prozess wird mit den von Ihnen festgelegten Parametern ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="6f4cc-120">The process will run with the parameters you set.</span></span>
 
-4. <span data-ttu-id="58203-121">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="58203-121">Select **OK**.</span></span>
+4. <span data-ttu-id="6f4cc-121">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="6f4cc-121">Select **OK**.</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
