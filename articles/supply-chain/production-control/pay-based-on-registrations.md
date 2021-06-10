@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: c511558735e89db32e88f6efdd2d0cc88a04b61c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 39786323e1ea11a960332e6e0a01f6ef8de1838d
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814825"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102998"
 ---
 # <a name="pay-based-on-registrations"></a>Lohn auf Basis von Erfassungen
 
@@ -39,7 +39,7 @@ In diesem Thema wird im Detail erläutert, wie Lohn auf der Grundlage der Erfass
 
 ## <a name="the-use-of-flex-time"></a>Die Verwendung von Gleitzeit
 
-Perioden der Gleitzeit werden in den Zeitprofilen eingerichtet, die in "Zeit und Anwesenheit" verwendet werden. Es gibt zwei Gleitzeitprofiltypen: **Gleitzeit+** und **Gleitzeit-**. Wenn eine Arbeitskraft Zeit in einer „Gleitzeit+”-Periode erfasst, wird das Gleitzeitsaldo der Arbeitskraft um die Stunden erhöht, die gearbeitet wurden. Die Arbeitskraft erhält keine Vergütung für die Stunden, die während der „Gleitzeit+”-Periode gearbeitet wurden. Allerdings kann die Arbeitskraft während der Flexperioden frei machen und dies mit den Stunden von seinem Gleitzeitsaldo ausgleichen. Deshalb wird Freizeit während der Gleitzeitperioden vom System als Abwesenheit betrachtet.
+Perioden der Gleitzeit werden in den Zeitprofilen eingerichtet, die in "Zeit und Anwesenheit" verwendet werden. Es gibt zwei Gleitzeitprofiltypen: **Gleitzeit+** und **Gleitzeit-**. Wenn eine Arbeitskraft Zeit in einer „Gleitzeit+”-Periode erfasst, wird das Gleitzeitsaldo der Arbeitskraft um die Stunden erhöht, die gearbeitet wurden. Die Arbeitskraft erhält keine Vergütung für die Stunden, die während der „Gleitzeit+”-Periode gearbeitet wurden. Allerdings kann die Arbeitskraft während der Flexperioden frei machen und dies mit den Stunden von ihrem Gleitzeitsaldo ausgleichen. Deshalb wird Freizeit während der Gleitzeitperioden vom System als Abwesenheit betrachtet.
 
 ## <a name="scenarios-based-on-flex-periods"></a>Szenarien auf Grundlage von Gleitzeitperioden
 
@@ -77,7 +77,7 @@ Um dieses Szenario zu verstehen, sehen Sie sich die folgenden Felder an.
 
 #### <a name="calculation-of-flex"></a>Flex + berechnen
 
-Entsprechend dem Gleitzeitprofil ist die Zeitspanne zwischen 06:00 bis 07:00 eine Flex+-Periode. Wenn die Arbeitskraft daher um 06:30 Uhr einstempelt, erhält er 0,5 Stunden. Diese Zeitmenge wird dem Gleitzeitkonto der Arbeitskraft hinzugefügt.
+Entsprechend dem Gleitzeitprofil ist die Zeitspanne zwischen 06:00 bis 07:00 eine Flex+-Periode. Wenn die Arbeitskraft daher um 06:30 Uhr einstempelt, erhält sie 0,5 Stunden. Diese Zeitmenge wird dem Gleitzeitkonto der Arbeitskraft hinzugefügt.
 
 #### <a name="calculation-of-flex-"></a>Flex - berechnen
 
@@ -116,11 +116,11 @@ Nachdem Sie die Journal-Erfassungen der Seite auf **Genehmigen** berechnet haben
 
 #### <a name="calculation-of-flex"></a>Flex + berechnen
 
-Entsprechend dem Gleitzeitprofil ist die Zeitspanne zwischen 06:00 bis 07:00 eine Flex+-Periode. Wenn daher die Arbeitskraft um 06:30 Uhr einstempelt, verdient sie 0,5 Stunden „Gleitzeit+”-Zeit in ihrem Gleitzeitsaldo.
+Entsprechend dem Gleitzeitprofil ist die Zeitspanne zwischen 06:00 bis 07:00 eine Flex+-Periode. Wenn daher die Arbeitskraft um 06:30 Uhr einstempelt, verdient sie 0,5 Stunden Gleitzeit+ Zeit in ihrem Gleitzeitsaldo.
 
 #### <a name="calculation-of-flex-"></a>Flex - berechnen
 
-Weil die Arbeitskraft während der Flexperiode arbeitet, wird die Flexperioade nicht berechnet. "Gleitzeit-" wird nur berechnet, wenn die Arbeitskraft während der Flexperiode abwesend ist. Klicken Sie in einer Zahlungsperspektive, wenn die Arbeitskraft während der Flexperiode arbeitet, wird ihr der Lohnsatz gewährt, der für Standardzeit definiert wird. Wenn die Arbeitskraft während der Flexperiode abwesend ist, werdebn die 45 Minuten aus dem Gleitzeitkonto abgezogen werden.
+Weil die Arbeitskraft während der Flexperiode arbeitet, wird die Flexperioade nicht berechnet. "Gleitzeit-" wird nur berechnet, wenn die Arbeitskraft während der Flexperiode abwesend ist. Klicken Sie in einer Zahlungsperspektive, wenn die Arbeitskraft während der Flexperiode arbeitet, wird ihr der Lohnsatz gewährt, der für Standardzeit definiert wird. Wenn die Arbeitskraft während der Flexperiode abwesend ist, werden die 45 Minuten aus dem Gleitzeitkonto abgezogen werden.
 
 #### <a name="calculation-of-time"></a>Berechnung der Zeit
 
@@ -168,7 +168,7 @@ Um das System so zu konfigurieren, das deutlich zwischen Standardzeit und Übers
 
 Wählen Sie auf der Seite **Berechnungsparameter** **Überstunden** als Profil-Spezifikationstyp aus, und legen Sie die Option **Entlohnte Zeit** auf **Nein** fest, wie hier angezeigt.
 
-| Erfassungs-Spezifikation | Profilspezifikationstyp | Herstellkostenkalkulation   |     | Entlohnt         |     |
+| Erfassungs-Spezifikation | Profilspezifikationstyp | Herstellkostenkalkulation   | Einstellung | Kostenpflichtig         | Einstellung |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
 | Arbeitszeit       | Überstunden                   | Standardzeit | Ja | Entlohnte Zeit     | Nr.  |
 |                    |                            | Entlohnte Zeit      | Ja | Entlohnte Überstundenzeit | Ja |
@@ -466,11 +466,11 @@ In den folgenden Szenarios werden die Lohnelemente und -einträge zur Genehmigun
 
 ### <a name="scenario-1-the-worker-clocks-in-later-than-planned"></a>Szenario 1: Die Arbeitskraft stempelt später als geplant ein
 
-Die Arbeitskraft stempelt um 08:30 Uhr ein. Da die geplante Einstempelzeit 07:00 ist, ist er 1,50 Stunde zu spät zur Arbeit. Da die 1,50 Stunden als Abwesenheitzeit berücksichtigt wird, ist die Arbeitskraft aufgefordert, einen Abwesenheitscode auswählen. Die Arbeitskraft verlässt die Arbeit um 15:30 Uhr, was die geplante Ausstempeluhrzeit ist. Wenn die Erfassungen der Arbeitskraft berechnet und genehmigt werden, wird die Abwesenheitserfassung zusammen mit dem Abwesenheitscode, den die Arbeitskraft beim Einstempeln auswählte, für die Zeit zwischen 07:00 Uhr bis 08:30 Uhr angezeigt.
+Die Arbeitskraft stempelt um 08:30 Uhr ein. Da die geplante Einstempelzeit 07:00 ist, ist sie 1,50 Stunde zu spät zur Arbeit. Da die 1,50 Stunden als Abwesenheitzeit berücksichtigt wird, ist die Arbeitskraft aufgefordert, einen Abwesenheitscode auswählen. Die Arbeitskraft verlässt die Arbeit um 15:30 Uhr, was die geplante Ausstempeluhrzeit ist. Wenn die Erfassungen der Arbeitskraft berechnet und genehmigt werden, wird die Abwesenheitserfassung zusammen mit dem Abwesenheitscode, den die Arbeitskraft beim Einstempeln auswählte, für die Zeit zwischen 07:00 Uhr bis 08:30 Uhr angezeigt.
 
-Im Zeitprofil können Sie den Anmeldetyp **Einstempeln** konfigurieren, damit eine Toleranz vorhanden ist, wenn Arbeitskräfte zu spät zur Arbeit sind. Wenn Sie eine Toleranz von 5 einrichten, erhält die Arbeitskraft für einen Abwesenheitscode, wenn er später als 07:05 einstempelt.
+Im Zeitprofil können Sie den Anmeldetyp **Einstempeln** konfigurieren, damit eine Toleranz vorhanden ist, wenn Arbeitskräfte zu spät zur Arbeit sind. Wenn Sie eine Toleranz von 5 einrichten, erhält die Arbeitskraft einen Abwesenheitscode, wenn sie später als 07:05 einstempelt.
 
-Da die Arbeitskraft in diesem Fall keinen triftigen Grund für das Zuspätkommen zur Arbeit hat, wählt er einen Abwesenheitscode aus, der für unzulässige Abwesenheit definiert wird. Ein Abwesenheitscode wird für ungültige Abwesenheit anwendbar, wenn die Einstellung für Überstundenabzug für die Abwesenheitsgruppe aktiviert ist, zum der Abwesenheitscode gehört. Um die Einstellung festzulegen, wählen Sie **Zeit und Anwesenheit** &gt; **Einstellungen** &gt; **Gruppen** &gt; **Abwesenheitsgruppen** aus, und aktivieren Sie dann das Kontrollkästchen **Überstunden abziehen**.
+Da die Arbeitskraft in diesem Fall keinen triftigen Grund für das Zuspätkommen zur Arbeit hat, wählt sie einen Abwesenheitscode aus, der für unzulässige Abwesenheit definiert wird. Ein Abwesenheitscode wird für ungültige Abwesenheit anwendbar, wenn die Einstellung für Überstundenabzug für die Abwesenheitsgruppe aktiviert ist, zum der Abwesenheitscode gehört. Um die Einstellung festzulegen, wählen Sie **Zeit und Anwesenheit** &gt; **Einstellungen** &gt; **Gruppen** &gt; **Abwesenheitsgruppen** aus, und aktivieren Sie dann das Kontrollkästchen **Überstunden abziehen**.
 
 So werden Erfassungen der Arbeitskraft für den Tag auf der Seite **Genehmigen** bei Berechnung angezeigt werden.
 
@@ -526,7 +526,7 @@ Das hier ist das sich ergebende Lohnelemente, nachdem die Erfassungen übertrage
 
 ### <a name="scenario-4-the-worker-clocks-in-late-and-clocks-out-after-the-planned-clock-out-time-during-an-overtime-period"></a>Szenario 4: Die Arbeitskraft stempelt verspätet ein und stempelt nach der geplanten Ausstempeluhrzeit während einer Überstundenperiode aus
 
-Die Arbeitskraft stempelt verspätet um 09:30 Uhr ein, und um dann seine verspätete Anwesenheit auszugleichen, macht er Überstunden und stempelt um 17:00 Uhr aus. Da die Arbeitskraft verspätet kam und die Zeit durch länger Arbeiten ausgeglichen hat, will das Unternehmen dem Mitarbeiter keine Überstunden vergüten, die er zwischen der geplanten Ausstempelzeit zwischen 03:30 Uhr und seinem Ausstempeln um 05:00 Uhr gearbeitet hat, obwohl diese Periode als Überstunden im Zeitprofil definiert wird.
+Die Arbeitskraft stempelt verspätet um 09:30 Uhr ein, und um dann ihre verspätete Anwesenheit auszugleichen, macht sie Überstunden und stempelt um 17:00 Uhr aus. Da die Arbeitskraft verspätet kam und die Zeit durch länger Arbeiten ausgeglichen hat, will das Unternehmen der Arbeitskraft keine Überstunden vergüten, die sie zwischen der geplanten Ausstempelzeit zwischen 03:30 Uhr und ihrem Ausstempeln um 05:00 Uhr gearbeitet hat, obwohl diese Periode als Überstunden im Zeitprofil definiert wird.
 
 Um dieses Szenarios zu behandeln, kann der Abwesenheitscode so festgelegt werden, dass Überstunden um sämtliche Stunden unzulässiger Abwesenheit reduziert werden, die bei der Arbeitskraft am gleichen Tag vorliegen. Wählen Sie **Zeit und Anwesenheit** &gt; **Einstellungen** &gt; **Gruppen** &gt; **Abwesenheitsgruppen** aus, und aktivieren Sie das Kontrollkästchen **Überstunden abziehen**, um Überstunden von Stunden unzulässiger Abwesenheit abzuziehen.
 
@@ -548,7 +548,7 @@ Wenn das Kontrollkästchen **Überstundenzeit abziehen** für den ausgewählten 
 
 Hier ziehen die 1,5 Stunden der unzulässigen Abwesenheit von 07:00 bis 09:30 bis die 2 Überstunden von 03:30 Uhr bis 05:30 Uhr ab. Das Ergebnis der Erfassung beträgt 1,5 Stunden Standardzeit und 0,5 Stunden Überstunden.
 
-Durch Kontrast, wenn das Kontrollkästchen **Überstundenzeit abziehen** für den ausgewählten Abwesenheitscode deaktiviert ist, wird der Arbeitskraft Überstundenzuschlag gewährt, auch wenn er zu spät war oder eine ungültige Abwesenheit aufweist. Wenn die Erfassungen übertragen werden, werden folgende Lohnelemente generiert.
+Durch Kontrast, wenn das Kontrollkästchen **Überstundenzeit abziehen** für den ausgewählten Abwesenheitscode deaktiviert ist, wird der Arbeitskraft Überstundenzuschlag gewährt, auch wenn sie zu spät war oder eine ungültige Abwesenheit aufweist. Wenn die Erfassungen übertragen werden, werden folgende Lohnelemente generiert.
 
 | Gehaltstyp     | Lohnart | Lohneinheiten | Satz |
 |---------------|----------|-----------|------|
@@ -559,7 +559,7 @@ Durch Kontrast, wenn das Kontrollkästchen **Überstundenzeit abziehen** für de
 
 Das folgende Beispiel zeigt, wie das Gleitzeitkonto einer Arbeitskraft reduziert werden kann, indem die Abwesenheitsperiode in eine „Gleitzeit-”-Periode konvertiert wird.
 
-Die Arbeitskraft stempelt um 07:00 Uhr ein und stempelt um 01:00 Uhr aus. Sie hat eine Vereinbarung mit ihrem Vorgesetzten getroffen, dass sie nach Hause ins Wochenende gehen kann, wenn sie diese Stunden von ihrem Gleitzeitkonto abzieht. Wenn die Arbeitskraft um 13:00 Uhr ausstempelt, wird Sie dazu aufgefordert, einen Abwesenheitscode auszuwählen, da die Periode der Abwesenheit für den Rest des Arbeitstags, der betroffen ist, sich nicht in einer geplanten „Gleitzeit-”-Periode befindet. Um den verbleibenden Teil des Arbeitstags in eine „Gleitzeit-”-Periode zu konvertieren, kann die Arbeitskraft einen Abwesenheitscode auswählen, der eingerichtet ist, um ihr Gleitzeitkonto zu reduzieren.
+Die Arbeitskraft stempelt um 07:00 Uhr ein und stempelt um 01:00 Uhr aus. Die Arbeitskraft hat eine Vereinbarung getroffen, dass sie für das Wochenende nach Hause gehen kann, wenn sie diese Stunden von ihrem Flex-Konto abzieht. Wenn die Arbeitskraft um 13:00 Uhr ausstempelt, wird sie dazu aufgefordert, einen Abwesenheitscode auszuwählen, da die Periode der Abwesenheit für den Rest des Arbeitstags, der betroffen ist, sich nicht in einer geplanten Gleitzeit-Periode befindet. Um den verbleibenden Teil des Arbeitstags in eine Gleitzeit-Periode zu konvertieren, kann die Arbeitskraft einen Abwesenheitscode auswählen, der eingerichtet ist, um ihr Gleitzeitkonto zu reduzieren.
 
 Um den Saldo flexibler Stunden für Arbeitskräfte zu reduzieren, die an einem Arbeitstag Abwesenheit erfassen, wählen Sie **Zeit und Anwesenheit** &gt; **Einstellungen** &gt; **Gruppen** &gt; **Abwesenheitsgruppen** aus, und aktivieren Sie das Kontrollkästchen **Reduziert Gleitzeit**.
 

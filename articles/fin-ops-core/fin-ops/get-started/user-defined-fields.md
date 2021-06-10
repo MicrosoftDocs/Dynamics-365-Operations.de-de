@@ -2,7 +2,7 @@
 title: Erstellen von und Arbeiten mit benutzerdefinierten Feldern
 description: In diesem Thema wird gezeigt, wie Sie benutzerdefinierte Felder über die Benutzerschnittstelle erstellen, um die Anwendung für ihre geschäftlichen Bedürfnisse anzupassen.
 author: jasongre
-ms.date: 03/09/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: a07c1a81f0436664acdfd23975a99c6670c6fb1c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1acbcbc49be6b764481e151d0fb3f12bf3cf5554
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754751"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092347"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Erstellen von und Arbeiten mit benutzerdefinierten Feldern
 
@@ -26,7 +26,7 @@ ms.locfileid: "5754751"
 
 Während es einen umfangreichen Satz von vorkonfigurierten Feldern gibt, um eine große Bandbreite von Geschäftsprozessen zu verwalten, besteht manchmal für ein Unternehmen der Bedarf, zusätzliche Informationen im System nachzuverfolgen. Während Programmierer verwendet werden können, um diese Felder als Erweiterungen in den Entwicklertools hinzuzufügen, können mit der Funktion für benutzerdefinierte Felder Felder direkt über die Benutzeroberfläche hinzugefügt werden, sodass Sie die Anwendung mithilfe Ihres Webbrowsers an Ihr Unternehmen anpassen können.
 
-Die Möglichkeit, benutzerdefinierte Felder hinzuzufügen, ist in Plattformupdate 13 und höher verfügbar. Nur Benutzer mit speziellen Berechtigungen haben Zugriff auf diese Funktion.
+*Nur Benutzer mit speziellen Berechtigungen haben Zugriff auf diese Funktion.*
 
 Dieses Video zeigt, wie einfach es ist, ein benutzerdefiniertes Feld einer Seite hinzuzufügen: [Hinzufügen von benutzerdefinierten Feldern](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 
@@ -46,8 +46,9 @@ In den folgenden Schritten wird der Prozess zum Erstellen eines benutzerdefinier
     Wenn Sie die Schaltfläche **Neues Feld erstellen** nicht sehen, haben Sie nicht die notwendigen Berechtigungen, um diese Funktion zu verwenden.
 
 7. Geben Sie im Dialogfeld **Neues Feld erstellen** die folgenden Informationen ein.
-
+   
     1. Wählen Sie die Datenbanktabelle aus, in der dieses Feld hinzugefügt werden soll. Beachten Sie, dass in der Dropdownliste nur Tabellen angezeigt werden, die benutzerdefinierte Felder unterstützen. Sehen Sie den Abschnitt unten für technische Details zu unterstützen Tabellen.
+
     2. Wählen Sie den Datentyp für das neue Feld aus. Die verfügbaren Datentypen sind Kontrollkästchen, Datum, Datum/Uhrzeit, Dezimal, Zahl, Auswahlliste und Text.
 
         - Wenn Sie den Textdatentyp auswählen, können Sie auch die maximale Länge des Texts angeben, der in diesem Feld eingegeben werden kann.
@@ -60,11 +61,15 @@ In den folgenden Schritten wird der Prozess zum Erstellen eines benutzerdefinier
 10. Klicken Sie auf **Einfügen**, um die markierten Felder in den ausgewählten Bereich des Formulars einzufügen.
 11. **Optional:** Aktivieren Sie den Modus **Verschieben** aus der Personalisierungssymbolleiste, um die neuen Felder an die gewünschte Position im ausgewählten Bereich zu verschieben. Weitere Informationen darüber, wie die verschiedenen Personalisierungsfunktionen verwendet werden, um ein Formular für Ihre persönliche Verwendung zu optimieren, finden Sie unter [Die Benutzeroberfläche personalisieren](personalize-user-experience.md).
 
+> [!WARNING]
+> Die Möglichkeit, Werte in ein benutzerdefiniertes Feld einzugeben, das einer Seite hinzugefügt wurde, hängt davon ab, ob die dem benutzerdefinierten Feld zugeordnete Tabelle bearbeitet oder schreibgeschützt ist. Wenn die zugeordnete Tabelle schreibgeschützt ist, sind alle mit dieser Tabelle verknüpften Felder, einschließlich aller benutzerdefinierten Felder, ebenfalls schreibgeschützt.
+
+
 ## <a name="sharing-custom-fields-with-other-users"></a>Benutzerdefinierte Felder für andere Benutzer freigeben
 
-Nachdem Sie ein benutzerdefiniertes Feld erstellt haben und es auf einem Formular verfügbar gemacht haben, möchten Sie vielleicht diese aktualisierte Seitenansicht bereitstellen, die das neue Feld für andere Benutzer im System enthält. Dies kann auf zwei unterschiedliche Arten mithilfe der Personalisierungsfunktionen des Produkts ausgeführt werden:
+Nachdem Sie ein benutzerdefiniertes Feld erstellt haben und es auf einer Seite verfügbar gemacht haben, möchten Sie vielleicht diese aktualisierte Seitenansicht bereitstellen, die das neue Feld für andere Benutzer im System enthält. Dies kann auf zwei unterschiedliche Arten mithilfe der Personalisierungsfunktionen des Produkts ausgeführt werden:
 
-- Die empfohlene Vorgehensweise erfolgt über den Systemadministrator, der eine Personalisierung an alle Benutzer oder einer Teilmenge der Benutzer mithilfe von Push übertragen kann. Weitere Informationen finden Sie unter [Personalisieren der Benutzeroberfläche](personalize-user-experience.md).
+- Die empfohlene Route ist zu **Veröffentlichen einer [gespeicherte Ansicht](saved-views.md)** mit dem benutzerdefinierten Feld, das der Seite zu den entsprechenden Benutzern hinzugefügt wurde. Wenn die Funktion zum Speichern gespeicherter Ansichten nicht aktiviert ist, kann der Systemadministrator die Personalisierung über das Personalisierungsformular auf die gewünschten Benutzer anwenden. Weitere Informationen unter [Personalisieren der Benutzeroberfläche](personalize-user-experience.md).
 - Alternativ können Sie Ihre Änderungen exportieren (genannt *Personalisierungen*), sie an einen oder mehrere Benutzer übermitteln und jeden dieser Benutzer dazu veranlassen, Ihre Änderungen zu importieren. Die Option **Verwalten** in der Personalisierungssymbolleiste ermöglich es Ihnen, Personalisierungen zu exportieren und importieren.
 
 ## <a name="managing-custom-fields"></a>Benutzerdefinierte Felder verwalten
@@ -134,6 +139,10 @@ In einigen seltenen Fällen entscheiden Sie sich möglicherweise, dass ein benut
 > Diese Aktivität kann nicht rückgängig gemacht werden und führt dazu, dass die Daten, die diesem Feld zugeordnet sind, dauerhaft aus der Datenbank gelöscht werden.
 
 ## <a name="appendix"></a>Anhang
+
+### <a name="why-cant-i-enter-a-value-in-my-custom-field"></a>Warum kann ich keinen Wert in mein benutzerdefiniertes Feld eingeben? 
+
+Wenn Sie im Bearbeitungsmodus der Seite keinen Wert in das benutzerdefinierte Feld eingeben können, liegt dies möglicherweise daran, dass die Tabelle, zu der das Feld hinzugefügt wurde, derzeit schreibgeschützt ist. Alle Felder in einer Tabelle sind schreibgeschützt, wenn die Sicherungstabelle derzeit auf der Seite als schreibgeschützt konfiguriert ist.   
 
 ### <a name="who-can-create-custom-fields"></a>Wer kann benutzerdefinierte Felder erstellen?
 

@@ -1,27 +1,21 @@
 ---
 title: Negative und dynamisch negative Tage
 description: Dieses Thema enthält Informationen zu negativen Tagen und dynamischen negativen Tagen und wie Sie diese verwenden können, um Ihr Unternehmen zu unterstützen.
-author: t-benebo
-ms.date: 06/06/2019
+author: ChristianRytt
+ms.date: 05/25/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 72704
-ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.search.region: Global
+ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7440a6a0b9093664a0d717b3bfa011ee3100639f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 37ae6ebd4347d3bbb414b7f1e4e0d54150878c02
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907740"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097233"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negative und dynamisch negative Tage
 
@@ -45,7 +39,7 @@ Sie können jeweils entweder verhältnismäßig früh Bedarf bei der Durchlaufze
 - Der DemoProduct-Artikel hat eine sechstägige Lieferzeit.
 - Am Tag Null (1. Januar), ist der Lagerbestand für den DemoProduct-Artikel 0 (null).
 - Am Tag Null (1. Januar) erhalten Sie einen Auftrag für die Menge 10 des DemoProduct-Artikels
-- Am Tag sieben (7. Januar)  gibt es eine vorhandene Bestellung der Menge 10 des DemoProduct-Artikels.
+- Am Tag sieben (8. Januar)  gibt es eine vorhandene Bestellung der Menge 10 des DemoProduct-Artikels.
 
 Die folgende Abbildung zeigt eine grafische Ansicht dieses Szenarios.
 
@@ -112,7 +106,7 @@ Sie können Bedarf während der Lieferzeit des Artikels erhalten. Hier ist ein B
 
 Die folgende Abbildung zeigt eine grafische Ansicht dieses Szenarios.
 
-![Grafische Darstellung von Szenario 1](./media/negative-days-8.png)
+![Grafische Darstellung von Szenario 2](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Fall A: Negative Tage sind geringer als die Lieferzeit des Artikels
 
@@ -219,8 +213,8 @@ Sie müssen die negativen Tage auf einen langen Zeitraum festlegen und dann mit 
 - Der DemoProduct-Artikel hat eine sechstägige Lieferzeit.
 - Am Tag Null (1. Januar), ist der Bestand für den DemoProduct-Artikel 0 (null).
 - Am Tag Null (1. Januar) erhalten Sie einen Auftrag für die Menge 10 des DemoProduct-Artikels
-- Am Tag zehn (10. Januar) erhalten Sie einen Auftrag für die Menge 10 des DemoProduct-Artikels
-- Am Tag zwölf (12. Januar) gibt es eine Bestellung für die Menge 10 des DemoProduct-Artikels.
+- Am Tag Neun (10. Januar) erhalten Sie einen Auftrag für die Menge 10 des DemoProduct-Artikels.
+- Am Tag Elf (12. Januar) gibt es eine Bestellung für die Menge 10 des DemoProduct-Artikels.
 - Negative Tage werden auf **20** festgelegt, was viel höher ist als der Lieferzeitraum des Artikels.
 
 Die folgende Abbildung zeigt eine grafische Ansicht davon, was passieren könnte.
@@ -229,7 +223,7 @@ Die folgende Abbildung zeigt eine grafische Ansicht davon, was passieren könnte
 
 MRP ergibt folgendes Ergebnis:
 
-![Ergebnisse](./media/negative-days-20.png)
+![Ergebnisbeispiel 1](./media/negative-days-20.png)
 
 Im oberen Bildschirmfoto ist das Auftragsanforderungsdatum der 9. Januar anstelle dem 10. Januar. Da dieses Bildschirmfoto aus dem Jahre 2015 stammt, als der 10. Januar ein Samstag war, verschiebt das Bedarfsdatum den Auftrag auf den vorangehenden Arbeitstag, der am Freitag den 9. Januar war.
 
@@ -239,7 +233,7 @@ Die Ergebnisse sind nicht falsch, doch die Ausführungszeit für MRP kann länge
 
 Wenn Sie die negativen Tage auf eine Nummer reduzieren, die näher am Lieferdatum ist, und Sie negative dynamische Tage nutzen, wird MRP folgendes Ergebnis anzeigen.
 
-![Ergebnisse](./media/negative-days-21.png)
+![Ergebnisbeispiel 2](./media/negative-days-21.png)
 
 MRP erstellt einen Bestellvorschlag, der dem ersten Auftrag zugeordnet ist. Anschließend wird der zweite Auftrag wie erwartet der bestehenden Bestellung zugeordnet, basierend auf den festgelegten negativen Tagen. Dieses Planungsergebnis ist ebenfalls korrekt, und Ausführungszeit für MRP kann kürzer sein. In diesem Fall ist es wichtig, dass Sie die Aktivitätsmeldungen verstehen und wissen, wie Sie damit umgehen müssen.
 

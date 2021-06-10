@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af67d320f14fc6c3d28eec47de402ba645eea06d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 147388d5052bd14851bbddfbb7fe25297a43f104
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836781"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102973"
 ---
 # <a name="create-maintenance-requests"></a>Wartungsanfragen erstellen
 
@@ -30,7 +30,7 @@ ms.locfileid: "5836781"
 
 Wartungsanfragen können verwendet werden, wenn Wartungsarbeiter oder Produktionsarbeitskräfte bemerken, dass Maschinen eine Reparatur erfordern, die Reparaturarbeiten aber nicht sofort ausgeführt werden können.
 
-**Beispiel:** Während eine Wartungsarbeiterin eine Reparatur durchführt, stellt sie fest, dass eine andere Anlage am gleichen Standort gewartet werden muss. Die Wartungsarbeiterin hat jedoch nicht die Zeit oder erforderlichen Ersatzteile, um die Reparatur durchzuführen. Aus diesem Grund erstellt sie eine Wartungsanfrage für die Anlage und gibt eine kurze Beschreibung des Problems ein.
+**Beispiel:** Während Wartungsarbeiter eine Reparatur durchführt, stellen sie fest, dass eine andere Anlage am gleichen Standort gewartet werden muss. Die Wartungsarbeiterin hat jedoch nicht die Zeit oder erforderlichen Ersatzteile, um die Reparatur durchzuführen. Aus diesem Grund erstellen sie eine Wartungsanfrage für die Anlage und geben eine kurze Beschreibung des Problems ein.
 
 Der Abschnitt **Aktive Wartungsanfragen** des Bereichs **Zugehörige Informationen** rechts auf der Seite **Alle Anlagen** oder **Aktive Anlagen** (**Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Alle Anlagen** oder **Aktive Anlagen**) enthält die aktiven Wartungsanfragen, die der ausgewählten Anlage zugeordnet sind.
 

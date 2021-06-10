@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6d4cc52a90b25406080032c7a98caa59f53ce188
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908999"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102686"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Das Debitorenportal anpassen und verwenden
 
@@ -44,7 +44,7 @@ Die folgenden Themen helfen Ihnen beim Erlernen der Grundlagen von Power Apps Po
 
 ## <a name="customize-the-order-creation-process"></a>Passen Sie den Prozess der Auftragserstellung an
 
-Wenn ein Benutzer eine Bestellung über das Kundenportal abgibt, wird die Bestellung automatisch mit der entsprechenden Dynamics 365 Supply Chain Management Umgebung synchronisiert. Da der Benutzer ein externer Kunde ist, werden einige erforderliche Informationen absichtlich vor ihm verborgen. Diese Informationen werden automatisch ausgefüllt, wenn das Formular gesendet wird.
+Wenn ein Benutzer eine Bestellung über das Kundenportal abgibt, wird die Bestellung automatisch mit der entsprechenden Dynamics 365 Supply Chain Management Umgebung synchronisiert. Da der Benutzer ein externer Kunde ist, werden gewisse erforderliche Informationen absichtlich vor ihm verborgen. Diese Informationen werden automatisch ausgefüllt, wenn das Formular gesendet wird.
 
 Dieser Abschnitt zeigt, wie Sie Kontakte einrichten sollten, um Fehler zu vermeiden. Es werden Felder erläutert, die automatisch festgelegt werden, und wie Sie den Wert dieser Felder bei Bedarf ändern können.
 
@@ -82,7 +82,7 @@ Hier sind die Standardschritte zum Absenden eines Auftrags über das Kundenporta
 1. Wenn Sie alle Elemente hinzugefügt haben, wählen Sie **Weiter** auf der Seite **Artikel**.
 1. Die Seite **Bestellinformationen** zeigt eine Zusammenfassung der Bestellung. Überprüfen Sie den Bestellinhalt und die Lieferdetails. Wenn alles richtig aussieht, wählen Sie **übermitteln**, um die Bestellung abzuschicken.
 
-    ![Auftragsinformationsseite](media/customer-portal-order-submit.png "Auftragsinformationsseite")
+    ![Abgeschlossene Auftragsinformationsseite](media/customer-portal-order-submit.png "Abgeschlossene Auftragsinformationsseite")
 
 ### <a name="standard-data-setup"></a>Standarddaten einrichten
 

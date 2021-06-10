@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 080b84d712a9c634611090f71b9ecca75e13cdcb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 77b4276cec5e046a19d6d001acf41fc410052fba
+ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837464"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049291"
 ---
 # <a name="mobile-device-user-settings"></a>Benutzereinstellungen für das mobile Gerät
 
@@ -94,3 +94,8 @@ Folgen Sie diesen Schritten, um Ihre Marken und Modelle für mobile Geräte zu e
 
     - **Gerätemodell-ID** - Die Gerätemodell-ID, z. B. *Surface Book 2*.
     - **Beschreibung** - Sie können eine Beschreibung eingeben, um die Modell-IDs zu unterscheiden.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+- [Mobile Lagerortsverwaltungs-App installieren und verbinden](install-configure-warehouse-management-app.md)
+- [Weisen Sie der mobilen Warehouse Management-App Schrittsymbole und -titel zu](step-icons-titles.md)

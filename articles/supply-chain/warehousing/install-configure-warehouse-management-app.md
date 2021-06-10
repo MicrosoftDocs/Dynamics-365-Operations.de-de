@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 810592bcbe11b03753c12ab7bfe6160d3e9233ee
+ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908951"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049315"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installieren und Verbinden der mobilen Lagerortverwaltungs-App
 
@@ -92,7 +92,7 @@ Sie müssen eine Webdienstanwendung für den Supply Chain Management-Mandanten i
 
 1. Die neue App-Registrierung wird geöffnet. Notieren Sie sich den Wert der **Anwendungs(Client)-ID**, da Sie ihn zu einem späteren Zeitpunkt benötigen. Dies ID wird später in diesem Thema als *Client-ID* bezeichnet.
 
-    ![Anwendungs(client)-ID](media/app-connect-azure-app-id.png "Anwendungs(client)-ID")
+    ![Anwendungs(client)-ID](media/app-connect-azure-app-id.png "Anwendungs-ID (Client)")
 
 1. Wählen Sie in der Liste **Verwalten** **Zertifikat und geheime Schlüssel** aus. Wählen Sie dann eine der folgenden Schaltflächen aus, je nachdem, wie Sie die App für die Authentifizierung konfigurieren möchten. (Weitere Informationen finden Sie im Abschnitt [Mit einem Zertifikat oder geheimen Clientschlüssel authentifizieren](#authenticate) weiter unten in diesem Thema.)
 
@@ -295,5 +295,9 @@ Im Fall von verlorenen oder beeinträchtigten Geräten müssen Sie den Zugriff d
 1. Wählen Sie auf der Symbolleiste **Löschen** aus.
 1. Wählen Sie in der angezeigten Bestätigungsmeldung **Ja** aus.
 
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+- [Benutzereinstellungen für mobile Geräte](mobile-device-user-settings.md)
+- [Weisen Sie der mobilen Warehouse Management-App Schrittsymbole und -titel zu](step-icons-titles.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

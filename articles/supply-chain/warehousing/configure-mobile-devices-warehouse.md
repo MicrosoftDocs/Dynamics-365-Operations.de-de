@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d3acbc15b6dc5f698f26aae96c75cc942189c6c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 657dd864885bc7c8216aab95a73f389f21f7cccd
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808797"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102925"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobile Geräte für Lagerarbeiten einrichten
 
@@ -41,6 +41,7 @@ Um eine Menüoption für eine Aktivität oder eine Abfrage zu erstellen, legen S
 > Abhängig vom Modus, den Sie für die Menüoption auswählen, und ob das Menüelement verwendet wird, um vorhandene Arbeit auszuführen, sind zusätzliche Felder für die Menüoption verfügbar. Informationen zu den zusätzlichen Feldauswahlen finden Sie im Abschnitt „Zusätzliche Menüelementoptionen“ in diesem Thema weiter unten.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurieren von Menüelementen für Aktivitäten und Abfragen
+
 Wenn das Feld **Modus** für eine Menüoption auf **Indirekt** festgelegt ist, können Sie eine Menüoption erstellen, um eine allgemeine Aktivität oder eine Abfrage auszuführen, die keine Arbeit erstellt. Die Beispiele umfassen Aktivitäten, wie das erneute Drucken von Ladungsträgerbeschriftungen, und eine Abfrage zu den Artikel in einem Lagerplatz. In der folgenden Tabelle sind die Optionen aufgelistet, die zur Verfügung stehen.
 
 | Mit der folgenden Option... | Beschreibung |
@@ -58,16 +59,15 @@ Wenn das Feld **Modus** für eine Menüoption auf **Indirekt** festgelegt ist, k
 | Ladungsträgererstellung | Erstellen Sie einen übergeordneten Ladungsträger, indem Sie mehrere Ladungsträger am gleichen Lagerort kombinieren. Diese Option ist nützlich, wenn Sie mehrere Ladungsträger gleichzeitig verschieben. Nachdem der übergeordnete Ladungsträger verschoben wurde, müssen Sie eine Ladungsträgerauflösung durchführen, bevor Sie Artikel für jeden Ladungsträger auswählen können. <p></p>**Tipp:** Wenn Sie einen übergeordneten Ladungsträger verschieben möchten, müssen Sie ein mobiles Gerät verwenden, das konfiguriert ist, um Arbeit für Bewegungen zu erstellen. |
 | Ladungsträgerauflösung | Lösen Sie einen Ladungsträger aus, sodass Sie Artikel aus den Ladungsträgern entnehmen können, die sich im Build befanden. |
 | Einchecken durch Fahrer | Wenn Sie Transportverwaltung verwenden, registrieren Sie die Ankunft eines Fahrers, indem sie die ausgehende Ladungskennung, Terminkennung oder Lieferkennung scannen. Diese Option setzt voraus, dass dem Termin eine Ladung zugewiesen wurde und dass der Status der Ladung **Geladen** ist. |
-| Auschecken durch Fahrer | Registrieren, dass ein Fahrer den Termin abgeschlossen hat. |
+| Auschecken durch Fahrer | Erfassen, dass ein Fahrer den Termin abgeschlossen hat. |
 | Nummernkreis-Cache entleeren | Löschen Sie die Nummernkreisnummern aus dem Nummernkreiscache. Diese Aktivität wird normalerweise von einem Systemadministrator durchgeführt, um Zwischenspeicherprobleme zu beheben, wenn mobile Geräte verwendet werden. |
 | Chargendisposition ändern | Ermöglichen Sie einer Arbeitskraft, einen Chargendispositionscode für einen Artikel und eine Charge anzugeben. Diese Auswahl aktualisiert den Dispositionscode, der für die Charge angegeben ist. |
 | Offene Arbeitsliste anzeigen | Hier wird einem bestimmten Benutzer eine Liste der verfügbaren Arbeit angezeigt. Der Benutzer kann dann auszuführende Arbeit auswählen und wird auf diese verwiesen. Diese Liste ist für die Anzeige auf Tabletgeräten mit einer Bildschirmgröße von 7 Zoll oder mehr bestimmt. Wenn Sie diese Option auswählen, werden die Menüelemente **Abfrage bearbeiten** und **Feldliste** verfügbar. Auf der Seite **Abfrage bearbeiten** können Sie Kriterien für die Arbeit einrichten, die in der Liste angezeigt wird. Auf der Seite **Feldliste** können Sie auswählen, welche Felder in der Arbeitsliste angezeigt werden. Sie können beispielsweise die Anzahl der angezeigten Felder reduzieren, damit der Benutzer die geeigneten Arbeitsaufgaben schneller auswählen können. Sie können im Feld **Datensätze pro Seite** auf dem Inforegister **Allgemeines** außerdem auswählen, wie viele Datensätze pro Seite angezeigt werden. Wenn die Option **Benutzern das Filtern nach Arbeitstransaktionstyp erlauben** ausgewählt wurde, wird ein Steuerelement **Arbeit filtern** in der Arbeitsliste angezeigt, mit dem der Benutzer nach Buchungsart filtern kann. Benutzer sehen nur die Arbeit in der Arbeitsliste, auf die sie gemäß Berechtigungen zugreifen können. Sie müssen sich vergewissern, dass Benutzer die Berechtigung für eine oder mehrere benutzergeleitete Menüoptionen haben, die die bestimmten Arbeitsklassentypen unterstützen, auf die sie zugreifen können müssen. Berechtigungen werden auch verifiziert, wenn ein Benutzer versucht, Arbeit aus der Liste auszuführen.|
 | Umlagerungsauftrag aus Kennzeichen erstellen | Ermöglicht Lagerarbeitern das Erstellen und Verarbeiten von Umlagerungsaufträgen direkt über die Warehouse Management Mobile App. Die Lagerarbeiter wählen zunächst den Ziellagerort aus und können dann mit der App ein oder mehrere Kennzeichen scannen. Wenn der Lagerarbeiter **Bestellung abschließen** auswählt, erstellt ein Batchauftrag den erforderlichen Umlagerungsauftrag und die Bestellpositionen basierend auf dem verfügbaren, für diese Kennzeichen registrierten Lagerbestand. Weitere Informationen finden Sie unter [Erstellen von Umlagerungsaufträgen aus der Lagerort-App](create-transfer-order-from-warehouse-app.md)
 
-
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurieren von Menüoptionen, um Arbeit für eine andere Arbeitskraft oder einen anderen Prozess zu erstellen
-Sie können eine Menüoption einrichten, die Arbeit für eine andere Arbeitskraft erstellt, nachdem eine ursprüngliche Aktion auf dem mobilen Gerät ausgeführt wurde. Wenn z. B. eine Arbeitskraft ein mobiles Gerät verwendet, um einen Artikel zu erhalten, wird Einlagerungsarbeit für eine andere Arbeitskraft erstellt. Wählen Sie zum Einrichten eines Menüelements zum Erstellen von Arbeit auf der Seite **Menüelemente des mobilen Geräts** im Feld **Modus** die Option **Arbeit** aus. In der folgenden Tabelle werden die Optionen im Feld **Arbeitserstellungsprozess** nach Arbeitsauftragstyp angeordnet.
 
+Sie können eine Menüoption einrichten, die Arbeit für eine andere Arbeitskraft erstellt, nachdem eine ursprüngliche Aktion auf dem mobilen Gerät ausgeführt wurde. Wenn z. B. eine Arbeitskraft ein mobiles Gerät verwendet, um einen Artikel zu erhalten, wird Einlagerungsarbeit für eine andere Arbeitskraft erstellt. Wählen Sie zum Einrichten eines Menüelements zum Erstellen von Arbeit auf der Seite **Menüelemente des mobilen Geräts** im Feld **Modus** die Option **Arbeit** aus. In der folgenden Tabelle werden die Optionen im Feld **Arbeitserstellungsprozess** nach Arbeitsauftragstyp angeordnet.
 
 <table>
 <tbody>
@@ -185,7 +185,7 @@ Sie können eine Menüoption einrichten, die Arbeit für eine andere Arbeitskraf
 </tr>
 <tr>
 <td>Ladungsträgerladung</td>
-<td>Verwenden Sie diese Option, wenn Sie den Lagerort zum ersten Mal einrichten. Scannen Sie alle Ladungsträger in allen Lagerplätzen am Lagerort. Die Lagerplätze müssen von einem Ladungsträger gesteuert sein. Sie können diese Option nicht verwenden, wenn in der Bestandsreservierungshierarchie über <strong>Lagerplatz</strong> <strong>Seriennummer</strong> oder <strong>Chargennummer</strong> aufgeführt wird.</td>
+<td>Verwenden Sie diese Option, wenn&#39;Sie den Lagerort zum ersten Mal einrichten. Scannen Sie alle Ladungsträger in allen Lagerplätzen am Lagerort. Die Lagerplätze müssen von einem Ladungsträger gesteuert sein. Sie können&#39;diese Option nicht verwenden, wenn in der Bestandsreservierungshierarchie über <strong>Lagerplatz</strong> <strong>Seriennummer</strong> oder <strong>Chargennummer</strong> aufgeführt wird.</td>
 </tr>
 <tr>
 <td rowspan="3">Inventur</td>
@@ -220,7 +220,7 @@ Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Si
 <tbody>
 <tr class="odd">
 <td>Nichts</td>
-<td>Dieser Standardwert verarbeitet keine Arbeit.</td>
+<td>Dieser Standardwert verarbeitet&#39;keine Arbeit.</td>
 </tr>
 <tr class="even">
 <td>Systemgeleitet</td>
@@ -249,7 +249,7 @@ Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Si
 <li><strong>Überprüftes benutzergeleitetes Feld</strong> – Wählen Sie das Feld aus, das die Arbeitskraft scannt, um die Arbeit zu gruppieren.</li>
 <li><strong>Überprüfte benutzergeleitete Beschriftung</strong> – Geben Sie den Text ein, der die Arbeitskraft darüber informiert, was zu scannen ist, wenn Entnahmearbeit vom System gruppiert wird.</li>
 </ul>
-Diese Option ist beispielsweise hilfreich, wenn mehrere Paletten für eine Ladung bereitgestellt werden. Wenn Sie im Feld <strong>Benutzergeleitet – überprüft</strong> die Option <strong>LoadId</strong> auswählen, kann die Arbeitskraft eine beliebige Palette auswählen, die der Ladung zugeordnet ist. Der Arbeitskraft wird eine Fehlermeldung angezeigt, wenn sie oder er einen Artikel scannt, der nicht der Ladung zugeordnet ist.</td>
+Diese Option ist beispielsweise hilfreich, wenn mehrere Paletten für eine Ladung bereitgestellt werden. Wenn Sie im Feld <strong>Benutzergeleitet – überprüft</strong> die Option <strong>LoadId</strong> auswählen, kann die Arbeitskraft eine beliebige Palette auswählen, die der Ladung zugeordnet ist. Der Arbeitskraft wird eine Fehlermeldung angezeigt, wenn sie oder er einen Artikel scannt, der nicht&#39;der Ladung zugeordnet ist.</td>
 </tr>
 <tr class="odd">
 <td>Clusterkommissionierung</td>
@@ -293,7 +293,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Anker von</td>
-<td>Wenn Sie "Verankern" verwenden, müssen Sie angeben, ob Sie nach Lieferdatum oder nach Ladung verankern möchten.</td>
+<td>Wenn Sie Verankern&#39;verwenden, müssen Sie angeben, ob Sie nach Lieferdatum oder nach Ladung verankern möchten.</td>
 </tr>
 <tr class="even">
 <td>Überwachungsvorlagenkennung</td>
@@ -317,11 +317,11 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Schwellenwerte für permanente Inventur deaktivieren</td>
-<td>Aktivieren Sie diese Option, um die Inventurschwellenwerte zu ignorieren. Wenn Sie diese Option aktivieren, wird Inventurarbeit nicht erstellt, wenn Schwellenwerte überschritten werden.</td>
+<td>Aktivieren Sie diese Option, um die Inventurschwellenwerte zu ignorieren. Wenn Sie diese Option aktivieren, wird Inventurarbeit nicht&#39;erstellt, wenn Schwellenwerte überschritten werden.</td>
 </tr>
 <tr class="even">
 <td>Den Chargendispositionscode anzeigen</td>
-<td>Aktivieren Sie dieses Kontrollkästchen, um Chargendispositionscodes anzuzeigen. Sie können beispielsweise Chargendispositionscodes anzeigen, wenn Sie eine zurückgegebene Charge empfangen. Arbeitskräfte können dann den Status oder die Qualität einer Charge überprüfen und den entsprechenden Code auswählen. Die Regeln im Chargendispositionscode bestimmen, ob die Charge für andere Lagerortprozesse verfügbar ist. Wenn Sie diese Option nicht auswählen, wird einer der folgenden Chargendispositionscodes verwendet:
+<td>Aktivieren Sie dieses Kontrollkästchen, um Chargendispositionscodes anzuzeigen. Sie können beispielsweise Chargendispositionscodes anzeigen, wenn Sie eine zurückgegebene Charge empfangen. Arbeitskräfte können dann den Status oder die Qualität einer Charge überprüfen und den entsprechenden Code auswählen. Die Regeln im Chargendispositionscode bestimmen, ob die Charge für andere Lagerortprozesse verfügbar ist. Wenn Sie diese Option nicht&#39;auswählen, wird einer der folgenden Chargendispositionscodes verwendet:
 <ul>
 <li>Wenn Sie eine neue Chargennummer empfangen, wird der standardmäßige Chargendispositionscode verwendet, der auf der Artikelmodellgruppe angegeben ist.</li>
 <li>Der Chargendispositionscode, der bereits der Charge zugeordnet ist, wird verwendet.</li>
@@ -368,8 +368,8 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 <td>Geben Sie an, ob die Arbeitskraft zuerst die älteste Charge in einem Lagerplatz entnehmen muss. Die folgenden Optionen sind verfügbar:
 <ul>
 <li><strong>Keine</strong> – Die Arbeitskraft kann jede Charge im Lagerplatz entnehmen. Die Arbeitskraft erhält keine Meldung.</li>
-<li><strong>Warnen</strong> – Die Arbeitskraft kann jede Charge im Lagerplatz entnehmen, es wird jedoch eine Warnmeldung angezeigt, wenn die Charge nicht die älteste ist.</li>
-<li><strong>Erzwingen</strong> – Die Arbeitskraft muss zuerst die älteste Charge im Lagerplatz entnehmen. Der Arbeitskraft wird eine Fehlermeldung angezeigt, wenn eine Charge nicht die älteste Charge ist. <strong>Hinweis:</strong> Diese Option ist nur relevant, wenn <strong>Chargennummer</strong> in der Reservierungshierarchie ist, die dem Artikel zugewiesen ist, niedriger ist als <strong>Lagerplatz</strong>.</li>
+<li><strong>Warnen</strong> – Die Arbeitskraft kann jede Charge im Lagerplatz entnehmen, es wird jedoch eine Warnmeldung angezeigt, wenn die Charge nicht&#39;die älteste ist.</li>
+<li><strong>Erzwingen</strong> – Die Arbeitskraft muss zuerst die älteste Charge im Lagerplatz entnehmen. Der Arbeitskraft wird eine Fehlermeldung angezeigt, wenn eine Charge nicht&#39;die älteste Charge ist. <strong>Hinweis:</strong> Diese Option ist nur relevant, wenn <strong>Chargennummer</strong> in der Reservierungshierarchie ist, die dem Artikel zugewiesen ist, niedriger ist als <strong>Lagerplatz</strong>.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -382,7 +382,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Systemgruppierungsbezeichnung</td>
-<td>Geben Sie den Text ein, der die Arbeitskraft darüber informiert, was zu scannen ist, wenn Entnahmearbeit vom Supply Chain Management gruppiert wird. Wenn Sie beispielsweise das Feld <strong>ShipmentId</strong> verwenden, um Entnahmearbeit nach Lieferung zu gruppieren, können Sie <strong>Lieferkennung</strong> in das Feld eingeben. Dieses Feld setzt voraus, dass Sie eine Menüoption erstellen, um vorhandene Arbeit zu nutzen, die vom System gruppiert wird. Sie müssen auch das Feld auswählen, um nach <strong>Systemgruppierung</strong> zu gruppieren.</td>
+<td>Geben Sie den Text ein, der die Arbeitskraft darüber informiert, was zu scannen ist, wenn Entnahmearbeit vom Supply Chain Management gruppiert wird. Wenn Sie&#39;beispielsweise das Feld <strong>ShipmentId</strong> verwenden, um Entnahmearbeit nach Lieferung zu gruppieren, können Sie <strong>Lieferkennung</strong> in das Feld eingeben. Dieses Feld setzt voraus, dass Sie eine Menüoption erstellen, um vorhandene Arbeit zu nutzen, die vom System gruppiert wird. Sie müssen auch das Feld auswählen, um nach <strong>Systemgruppierung</strong> zu gruppieren.</td>
 </tr>
 <tr class="even">
 <td>Standarddaten verwenden</td>
@@ -398,7 +398,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Arbeitsvorlagencode</td>
-<td>Wählen Sie die Arbeitsvorlage aus, die die Arbeit für einen Prozess erstellt. Wenn Sie zum Beispiel einen Artikel für eine Bestellung erhalten, wird die Entnahmearbeit auf Grundlage der Arbeitsvorlage generiert. Wenn Sie keine Arbeitsvorlage auswählen, weist das Supply Chain Management eine Vorlage auf Grundlage von Abfragekriterien zu. Weitere Informationen zu Arbeitsvorlagen, finden Sie unter <a href="control-warehouse-location-directives.md">Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien</a>.</td>
+<td>Wählen Sie die Arbeitsvorlage aus, die die Arbeit für einen Prozess erstellt. Wenn Sie zum Beispiel einen Artikel für eine Bestellung erhalten, wird die Entnahmearbeit auf Grundlage der Arbeitsvorlage generiert. Wenn Sie keine&#39;Arbeitsvorlage auswählen, weist das Supply Chain Management eine Vorlage auf Grundlage von Abfragekriterien zu. Weitere Informationen zu Arbeitsvorlagen, finden Sie unter <a href="control-warehouse-location-directives.md">Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien</a>.</td>
 <tr class="even">
 <td>Arbeitspositionsliste anzeigen</td>
 <td>Wählen Sie eine Option aus, wie Arbeitskräfte die Positionen für die aktuell ausgewählte Kommissionierarbeit anzeigen und mit ihnen interagieren können. Weitere Informationen zu dieser Option finden Sie unter <a href="pick-line-overview.md">Richten Sie einen Menüpunkt für mobile Geräte ein, um eine Übersicht über die Entnahmepositionen bereitzustellen</a>.</td>
@@ -407,6 +407,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Erfordern von Arbeitskräften, das Produkt, den Lagerplatz oder die Menge zu bestätigen, wenn sie Artikel entnehmen
+
 Sie können Arbeitsbestätigungen einrichten, die eine Arbeitskraft auffordern, ein mobiles Gerät zu verwenden, um den Lagerplatz oder die Menge zu erfassen, wenn Arbeit am Lagerort ausgeführt wird. Arbeitsbestätigungen helfen dabei, sicherzustellen, dass die Arbeitskraft am richtigen Lagerplatz ist oder die richtige Menge der Artikel bearbeitet. Sie können auch aktivieren, dass das Supply Chain Management die Registrierung der Arbeitskraft automatisch bestätigt. Wenn Sie Autobestätigung aktivieren, können Sie keine Bestätigungen für Lagerplatz oder Menge anfordern. Arbeitsbestätigungen beinhalten auch Produkte und Produktvarianten. Darüber hinaus können Sie Bestätigungen erfassen, indem Sie einen Strichcode scannen. Um Produkte und Produktvarianten zu bestätigen, müssen Sie eine Kennung für das Produkt oder die Produktvariante eingeben. Diese Kennung kann eine Produktkennung, Produktsuchkennung, externe Kennung, GTIN oder ein Strichcode sein. Nachdem Sie die Kennung eingeben oder den Strichcode gescannt haben, werden die Dimensionen für die Produktvariante im mobilen Gerät angezeigt. 
 
 In der folgenden Tabelle werden die verschiedenen Arbeitstypen beschrieben, bei denen Sie Arbeitsbestätigungen verwenden können.
@@ -426,14 +427,11 @@ In der folgenden Tabelle werden die verschiedenen Arbeitstypen beschrieben, bei 
 > [!NOTE]
 > Produktbestätigungen können nur bei Entnahmen und Einlagerungen erforderlich gemacht werden.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Richten Sie eine Menüoption des mobilen Geräts für das Abschließen der Arbeit von Typ Bestellung](tasks/set-up-mobile-device-menu.md)
-
-[Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen](tasks/set-up-mobile-device-menu-item-register-received-items.md)
-
-[Bestandsstatus](../inventory/inventory-statuses.md)
+- [Richten Sie eine Menüoption des mobilen Geräts für das Abschließen der Arbeit von Typ Bestellung](tasks/set-up-mobile-device-menu.md)
+- [Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen](tasks/set-up-mobile-device-menu-item-register-received-items.md)
+- [Bestandsstatus](../inventory/inventory-statuses.md)
 
 
 

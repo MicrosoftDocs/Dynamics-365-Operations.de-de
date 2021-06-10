@@ -2,7 +2,7 @@
 title: Erste Schritte mit der Steuerberechnung
 description: In diesem Thema wird erläutert, wie Steuerberechnungen eingerichtet werden.
 author: wangchen
-ms.date: 04/12/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 43a7c7133156d199da7b5ba16d48652359098c74
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 3f8aa791cee1926afe6be347331d47902a3b7304
+ms.sourcegitcommit: f4dc09601bceb5cdc88ee184ce7c8f369e3e6e86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018878"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6060562"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Erste Schritte mit der Steuerberechnung (Vorschau)
 
@@ -41,7 +41,7 @@ Die Einrichtung besteht aus vier Hauptschritten:
 
 Bevor Sie die Vorgehensweisen in diesem Thema abschließen können, müssen die folgenden Voraussetzungen erfüllt sein:
 
-- Sie haben Zugriff auf Ihr LCS-Konto und haben ein LCS-Projekt mit einer Tier 2-Umgebung (oder höher) bereitgestellt, in der Dynamics 365 Version 10.0.18 oder höher ausgeführt wird.
+- Sie haben Zugriff auf Ihr LCS-Konto und haben ein LCS-Projekt mit einer Tier 2-Umgebung (oder höher) bereitgestellt, in der Dynamics 365 Version 10.0.18 mit [KB4616360](https://fix.lcs.dynamics.com/Issue/Details?kb=4616360&bugId=568738&dbType=3&qc=1f1c04ff39adad74ef871f539e8d73e14c1893ef7cc4b6e3f7d5c5864ec2781a) oder höher ausgeführt wird.
 - Sie haben Zugriff auf Ihr RCS-Konto.
 - Sie haben Microsoft kontaktiert, um das Flighting in Ihrer bereitgestellten Finance- oder Supply Chain Management-Umgebung zu aktivieren.
 
@@ -127,7 +127,7 @@ Nachdem Sie die Einrichtung in RCS abgeschlossen haben, wie im vorherigen Abschn
 
 Die Einrichtung in diesem Abschnitt erfolgt nach juristischer Person. Sie müssen sie für jede juristische Person konfigurieren, für die Sie die Steuerberechnung in Finance aktivieren möchten.
 
-1. Gehen Sie in Finance zu **Steuer** \> **Einrichtung** \> **Steuerkonfiguration** \> **Einrichtung der Steuerberechnung (Vorschau)**.
+1. Gehen Sie in Finance zu **Steuer** \> **Einrichtung** \> **Steuerkonfiguration** \> **Steuerberechnung einrichten (Vorschau)**.
 2. Legen Sie auf der Registerkarte **Allgemein** die folgenden Felder fest:
 
     - **Steuerberechnung aktivieren** – Aktivieren Sie dieses Kontrollkästchen, um die Steuerberechnung für die juristische Person zu aktivieren. Wenn es für die aktuelle juristische Person nicht aktiviert ist, verwendet die juristische Person weiterhin das vorhandene Steuermodul, um die Steuer zu ermitteln und zu berechnen.

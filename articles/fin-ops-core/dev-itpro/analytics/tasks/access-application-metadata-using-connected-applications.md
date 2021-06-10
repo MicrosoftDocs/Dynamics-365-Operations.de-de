@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b113f0db1d44dc5fbda30e10d62ff939550f299
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 88fb3a947dd15f80238baab5f315c889f47f5b3b
+ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748692"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "6087014"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Zugriff auf Anwendungs-Metadaten über verbundene Anwendungen
 
 [!include [banner](../../includes/banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Service (RCS)-Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Modellzuordnung für „Elektronische Berichterstellung (ER)“ entwerfen kann, indem er die Metadaten in Finance and Operations. Zugriff auf Anwendungs-Metadaten erfolgt online über die RCS verbundene Anwendungen. Beispiel-ER-Modellzuordnung wird konfiguriert, um auf Außenhandelstransaktionen zuzugreifen. Um diese Schritte auszuführen, müssen Sie in RCS zunächst die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. Wenn Sie die Schritte im Thema [Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration](access-application-metadata-er-configuration.md) abgeschlossen haben, fahren Sie mit der [Beispielseite für elektronische Berichterstellung](https://go.microsoft.com/fwlink/?linkid=862266) fort, um die folgenden ER-Konfigurationen herunterzuladen und zu speichern: Außenhandelsmetadaten.xml; Außenhandelsmodel.xml; Außenhandelszuordnung.xml und führen Sie dann die Schritte in der Prozedur aus.
+In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Service (RCS)-Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Modellzuordnung für „Elektronische Berichterstellung (ER)“ entwerfen kann, indem er die Metadaten in Finance and Operations. Zugriff auf Anwendungs-Metadaten erfolgt online über die RCS verbundene Anwendungen. Beispiel-ER-Modellzuordnung wird konfiguriert, um auf Außenhandelstransaktionen zuzugreifen. Um diese Schritte auszuführen, müssen Sie in RCS zunächst die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. Wenn Sie die Schritte im Thema [Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration](access-application-metadata-er-configuration.md) abgeschlossen haben, fahren Sie mit der [Beispielseite für elektronische Berichterstellung](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) fort, um die folgenden ER-Konfigurationen herunterzuladen und dann zu speichern: Außenhandelsmetadaten.xml; Außenhandelsmodel.xml; Außenhandelszuordnung.xml und führen Sie dann die Schritte in der Prozedur aus.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 1. Wechseln Sie zu **Alle Arbeitsbereiche** > **Elektronische Berichterstellung**. 

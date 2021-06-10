@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2c69ab02ea9e6a5a5699a204258243d6204413b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e89e8b4860bbafe4bd47d62d2feb7d197f233d24
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825301"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102781"
 ---
 # <a name="purchasing-policies-overview"></a>Überblick über die Einkaufsrichtlinien
 
@@ -61,7 +61,7 @@ Richtlinie 123 ist für die Organisationshierarchie "Abteilung" für "Verkauf UK
 
 Richtlinie 456 ist für die Organisationshierarchie "Globale Einkaufskontrolle" für "Verkauf UK – Vertriebs- und Marketingabteilung" definiert. In Richtlinie 456 legt die Regel "Bestellanforderungskontrolle" nicht fest, dass Einschränkungen zu Mindestbestellmengen erzwungen werden müssen. In dieser Regel ist die Option **Einschränkungen der Mindestbestellmenge erzwingen** abgewählt.  
 
-Steffen ist Mitarbeiter von "Verkauf UK – Vertriebsabteilung" in der Contoso-Niederlassung im Vereinigten Königreich. Auf seine Abteilung treffen sowohl die Richtlinien für die Organisationshierarchie "Abteilung" als auch für die Organisationshierarchie "Globale Einkaufskontrolle" zu. Wenn Steffen eine Bestellanforderung erstellt, muss vom System ermittelt werden, welche Richtlinie angewendet wird. Der Systemadministrator richtet die Einkaufsrichtlinienparameter ein, um festzulegen, dass Einkaufsrichtlinien in der folgenden Reihenfolge angewendet werden müssen:
+Sam ist Mitarbeiter von Verkauf GB – Vertriebsabteilung in der Contoso Niederlassung im Vereinigten Königreich. Auf seine Abteilung treffen sowohl die Richtlinien für die Organisationshierarchie "Abteilung" als auch für die Organisationshierarchie "Globale Einkaufskontrolle" zu. Wenn Steffen eine Bestellanforderung erstellt, muss vom System ermittelt werden, welche Richtlinie angewendet wird. Der Systemadministrator richtet die Einkaufsrichtlinienparameter ein, um festzulegen, dass Einkaufsrichtlinien in der folgenden Reihenfolge angewendet werden müssen:
 
 1.  Globale Einkaufskontrolle
 2.  Abteilung
@@ -132,7 +132,7 @@ Die Richtlinie definiert Richtlinienregeln, die beim Generieren einer Bestellung
 -   Auf der Registerkarte **Preistoleranz** können Sie Preistoleranzregeln definieren, um genehmigte Bestellanforderungen erneut durch den Prüfprozess zu leiten, wenn sich der Preis eines Beschaffungskatalogartikels erhöht. Legen Sie den maximalen Betrag fest, um den der Nettobetrag einer Position in einer Bestellanforderung zwischen der Genehmigungszeitpunkt der Bestellanforderung und dem Erstellungszeitpunkt der Bestellung erhöht werden kann. Der Nettobetrag wird berechnet, indem die folgende Formel verwendet wird: (\[Menge × (Preis je Einheit – Rabatt) ÷ Preiseinheit\] + Sonstige Zuschläge) × (100 – Rabattprozent) ÷ 100. Bestellanforderungspositionen, die die Preistoleranz überschreiten, müssen manuell verarbeitet werden. Mit den auf der Registerkarte **Fehlerverarbeitung** konfigurierten Regeln wird bestimmt, wie die Bestellanforderungspositionen verarbeitet werden.
 -   Auf der Registerkarte **Fehlerverarbeitung** konfigurieren Sie die Verarbeitungsregel, die auf eine Bestellanforderung angewendet wird, wenn die Prüfung bei der Erstellung der Bestellung aufgrund eines Kreditoren- oder Preistoleranzfehlers nicht erfolgreich ist. Folgende Optionen stehen zur Auswahl:
     -   **Keine Aktion** – Die Bestellanforderungspositionen verbleiben auf der **Genehmigte Bestellanforderungen freigeben** Seite. Der Status der Bestellanforderungspositionen ist weiterhin **Genehmigt**. Die Fehler müssen jedoch behoben werden, bevor für die Bestellanforderungspositionen eine Bestellung generiert werden kann.
-    -   **Bestellanforderungsposition stornieren** – Die Bestellanforderungspositionen werden storniert. Die anfordernde Person kann eine neue Bestellanforderung für die stornierten Positionen erstellen, wenn die Positionen immer noch angefordert werden sollen.
+    -   **Bestellanforderungsposition stornieren** – Die Bestellanforderungspositionen werden storniert. Die anfordernde Person kann eine neue Bestellanforderung für die stornierten Positionen erstellen, wenn sie die Positionen immer noch anfordern möchten.
     -   **Neue Bestellanforderungsposition erstellen** – Die Bestellanforderungspositionen werden storniert. Es werden dann neue Bestellanforderungen generiert, die nur die Bestellanforderungspositionen enthalten, für die die Prüfung nicht erfolgreich war. Die neuen Bestellanforderungen, die generiert werden, haben den Status **Entwurf**. Diese Bestellanforderungen können erneut zur Prüfung übermittelt werden, nachdem die Prüfungsfehler behoben wurden. Der Antragsteller der Bestellanforderungspositionen wird benachrichtigt, dass die Positionen storniert wurden und dass für die Bestellanforderungspositionen, deren Prüfung nicht erfolgreich war, neue Bestellanforderungen generiert wurden.
 -   Auf der Registerkarte **Manuelle Erstellung der Bestellung** definieren Sie dann die Parameter, mit denen ermittelt wird, ob eine Bestellanforderung manuell verarbeitet werden muss oder ob sie automatisch in eine Bestellung konvertiert werden kann. Die Parameter können auf interne Katalogartikel, externe Katalogartikel oder Nicht-Katalogartikel angewendet werden. Folgende Optionen stehen zur Auswahl:
     -   **Bestellungen manuell erstellen** – Bestellungen für alle genehmigten Bestellanforderungen manuell erstellen.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 13b81459fe3449a90839dac7637118f09afe2e55
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ed90e773e1b8c90afc119a471cf844941ad19226
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910232"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103045"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 
@@ -176,7 +176,7 @@ Für dieses Beispielmüssen Demodaten eingerichtet werden, und Sie müssen das *
 
     - Nachdem die Arbeit erstellt wurde, wird die Lagerbuchung, bei der das Feld **Referenz** auf **Auftragsgebundene Reservierung** gesetzt ist, entfernt. Die Lagerbuchung, bei das Feld **Referenz** auf **Arbeit** gesetzt ist, enthält nun die physische Reservierung für alle Lagerdimensionen der Menge.
 
-        Arbeitsgänge am Arbeitsort können auf die übliche Art und Weise abgewickelt werden. Die Anweisungen auf dem Mobilgerät weisen die Arbeitskraft jedoch an, eine bestimmte Chargennummer auszuwählen. In Lagerortumgebungen, bei denen Lagerorte durch Ladungsträger gesteuert werden, kann eine Arbeitskraft, nachdem sie den Lagerort erreicht hat, der die gleiche Charge auf mehreren Ladungsträgern lagert, von einem beliebigen Ladungsträger entnehmen, der nicht bereits reserviert ist (beispielsweise von einer anderen auftragsgebundenen Reservierung oder einer Arbeit, die von einer Reservierung diesen Typs stammt).
+        Arbeitsgänge am Arbeitsort können auf die übliche Art und Weise abgewickelt werden. Die Anweisungen auf dem Mobilgerät weisen die Arbeitskraft jedoch an, eine bestimmte Chargennummer auszuwählen. In Lagerortumgebungen, bei denen Lagerorte durch Ladungsträger gesteuert werden, kann eine Arbeitskraft, nachdem sie den Lagerort erreicht hat, der die gleiche Charge auf mehreren Ladungsträgern lagert, von einem beliebigen Ladungsträger entnehmen, der nicht bereits reserviert ist (beispielsweise von einer anderen auftragsgebundenen Reservierung oder einer Arbeit, die von einer Reservierung diesen Typs stammt.)
 
         Wenn es sich als unpraktisch herausstellt, von dem Lagerort zu entnehmen, der in der Arbeitsposition angegeben ist, kann der Lagerortoperator eine der folgenden Aktionen verwenden, um die Kommissionierung der bestimmten Charge zu einem passenderen Lagerort umleiten.
 

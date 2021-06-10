@@ -2,7 +2,7 @@
 title: Erste Schritte mit der Dienstverwaltung für die elektronische Rechnungsstellung
 description: Dieses Thema erläutert die ersten Schritte mit der elektronischen Rechnungsstellung.
 author: gionoder
-ms.date: 05/04/2021
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 7c4d69edd4a8f7c7acc2ac1bc22c1ba6eaba25ae
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980974"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092405"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Erste Schritte mit der Dienstverwaltung für die elektronische Rechnungsstellung
 
@@ -44,18 +44,14 @@ Bevor Sie die Vorgehensweisen in diesem Thema abschließen, müssen die folgende
 
 ## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Das Add-In für Microservices in Lifecycle Services installieren
 
-1. Melden Sie sich bei Ihrem LCS-Konto an.
-2. Wählen Sie die Kachel **Verwaltung von Vorschaufunktionen** aus.
-3. Wählen Sie im Abschnitt **Öffentliche Vorschaufunktionen** **Elektronische Rechnungsstellung** aus.
-4. Stellen Sie sicher, dass die Option **Vorschaufunktion aktiviert** auf **Ja** festgelegt ist.
-5. Wählen Sie in Ihrem LCS-Projektdashboard ein LCS-Projekt aus.
-6. Wählen Sie im LCS-Projekt im LCS-Umgebungs-Dashboard Ihr LCS-Bereitstellungsprojekt aus. Das LCS-Bereitstellungsprojekt muss ausgeführt werden.
-7. Wählen Sie in der Registerkarte **Power Platform-Integration** in der Feldgruppe **Umgebungs-Add-Ins** **Neues Add-In installieren**.
-8. Wählen Sie **Elektronische Rechnungsstellung** aus.
-9. Geben Sie im **AAD-Anwendungs-ID**-Feld **091c98b0-a1c9-4b02-b62c-7753395ccabe** ein. Dies ist ein fester Wert.
-10. Geben Sie in das Feld **AAD-Mandanten-ID** die Mandanten-ID Ihres Azure-Abonnementkontos ein.
-11. Lesen Sie die allgemeinen Geschäftsbedingungen, und aktivieren Sie dann das Kontrollkästchen.
-12. Wählen Sie **Installieren**.
+1. Melden Sie sich in Ihrem LCS-Konto und im LCS-Projekt-Dashboard an und wählen Sie ein LCS-Projekt.
+2. Wählen Sie im Projekt im Umgebungs-Dashboard Ihr LCS-Bereitstellungsprojekt aus. Das von Ihnen ausgewählte Projekt muss ausgeführt werden.
+3. Wählen Sie in der Registerkarte **Power Platform-Integration** in der Feldgruppe **Umgebungs-Add-Ins** **Neues Add-In installieren**.
+4. Wählen Sie **Elektronische Rechnungsstellung** aus.
+5. Geben Sie im **AAD-Anwendungs-ID**-Feld **091c98b0-a1c9-4b02-b62c-7753395ccabe** ein. Dies ist ein fester Wert.
+6. Geben Sie in das Feld **AAD-Mandanten-ID** die Mandanten-ID Ihres Azure-Abonnementkontos ein.
+7. Lesen Sie die allgemeinen Geschäftsbedingungen, und aktivieren Sie dann das Kontrollkästchen.
+8. Wählen Sie **Installieren**.
 
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Parameter für die RCS-Integration in die elektronische Rechnungsstellung einrichten

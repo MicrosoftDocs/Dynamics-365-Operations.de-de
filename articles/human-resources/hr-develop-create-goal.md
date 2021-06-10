@@ -8,18 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 82104e401f21c459081f48a5d1f9a0a264288106
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c6e329c2219c57f83ef02f9fa224bcac84fb83fa
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794828"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6055459"
 ---
 # <a name="create-a-goal"></a>Ein Ziel erstellen
 
@@ -29,9 +28,9 @@ Sie können Ziele erstellen, Aktivitäten hinzufügen, Messungen nachverfolgen u
 
 1. Wechseln Sie zu Alle Arbeitsbereiche > Mitarbeiter-Self-Service.
 2. Klicken Sie auf "Alle Ziele anzeigen".
-3. Klicken Sie auf "Neu".
-4. Geben Sie im Feld Name "Contos-Projekt abschließen" ein.
-5. Geben Sie im "Überblick" "Ich werde das Contoso-Projekt in 30 Tagen abschließen" ein.
+3. Klicken Sie auf Neu.
+4. Geben Sie im Feld Name Contoso Projekt abschließen ein.
+5. Geben Sie im Feld Überblick Ich werde das Contoso Projekt in 30 Tagen abschließen ein.
     * Ziele können für eine Person, ein Team oder sogar ein Unternehmen gelten. Die Standardeinstellung für Mitarbeiterziele ist "Einzeln".  
 6. Geben Sie im Feld "Zielkategorie" einen Wert ein, oder wählen Sie einen Wert aus.
 7. Im Feld Startdatum können Sie das angezeigte Datum ändern.

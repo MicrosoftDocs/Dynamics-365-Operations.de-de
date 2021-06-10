@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0a3245febe31857181d17bba42e12b65f4ebb40f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3673642729aa41fa3c00a09fe8fe205edd0624c7
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832969"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088464"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Unterstützung der Umsatzsteuer in zwei Währungen
 [!include [banner](../includes/banner.md)]
@@ -42,8 +42,9 @@ Weitere Informationen über Doppelwährung finden Sie unter [Duale Währung](dua
 Als Folge der Unterstützung von Doppelwährungen sind zwei neue Funktionen in der Funktionsverwaltung verfügbar: 
 
 - Umsatzsteuerumrechnung (neu in Version 10.0.13)
+- Geben Sie die Finanzdimensionen in die realisierten Währungsbereinigungs-Gewinn- und Verlustrechnungen für die Umsatzsteuerabrechnung ein (neu in Version 10.0.17)
 
-Die Doppelwährungsunterstützung für die Umsatzsteuer stellt sicher, dass die Steuern genau in der Steuerwährung berechnet werden und dass der Umsatzsteuerabrechnungssaldo sowohl in der Buchhaltungs- als auch in der Berichtswährung genau berechnet wird. 
+Die Doppelwährungsunterstützung für die Umsatzsteuer stellt sicher, dass die Steuern genau in der Steuerwährung berechnet werden und dass der Umsatzsteuerabrechnungssaldo sowohl in der Buchhaltungs- als auch in der Berichtswährung genau berechnet wird.
 
 ## <a name="sales-tax-conversion"></a>Mehrwertsteuerkonvertierung
 
@@ -88,6 +89,10 @@ Diese Funktion gilt nur für neue Transaktionen. Für Steuertransaktionen, die b
 
 Um das vorhergehende Szenario zu verhindern, empfehlen wir, diesen Parameterwert in einer neuen (sauberen) Steuerabrechnungsperiode zu ändern, die keine nicht abgerechneten Steuertransaktionen enthält. Um diesen Wert in der Mitte einer Steuerabrechnungsperiode zu ändern, führen Sie bitte das Programm „Umsatzsteuer abrechnen und buchen“ für die aktuelle Steuerabrechnungsperiode aus, bevor Sie diesen Parameterwert ändern.
 
+Diese Funktion fügt Buchhaltungseinträge hinzu, die Gewinne und Verluste aus Geldwechseln verdeutlichen. Die Buchungen werden in der realisierten Gewinn- und Verlustrechnung der Währungsanpassung vorgenommen, wenn die Neubewertung während der Umsatzsteuerabrechnung erfolgt. Weitere Informationen finden Sie im Abschnitt [Automatische Bilanzierung der Steuerabrechnung in Berichtswährung](#tax-settlement-auto-balance-in-reporting-currency) später in diesem Thema.
+
+> [!NOTE]
+> Während der Abrechnung werden Informationen für Finanzdimensionen aus Umsatzsteuerkonten, die Bilanzkonten sind, entnommen und in Gewinn- und Verlustrechnungen zur Währungsanpassung, die Gewinn- und Verlustrechnungen sind, erfasst. Da sich die Wertbeschränkungen der Finanzdimensionen zwischen Bilanzkonten und Gewinn- und Verlustrechnungskonten unterscheiden, kann während des Abrechnungs- und Nachsteuerprozesses ein Fehler auftreten. Um zu vermeiden, dass Kontostrukturen geändert werden müssen, können Sie die Funktion Finanzielle Dimensionen mit den realisierten Währungsanpassungs-Gewinn-/Verlustkonten für die Umsatzsteuerabrechnung füllen aktivieren. Diese Funktion erzwingt die Ableitung von Finanzdimensionen zu Währungsanpassungs-Gewinn-/Verlustrechnungen. 
 
 ## <a name="track-reporting-currency-tax-amount"></a>Steuerbetrag in Berichtswährung verfolgen
 
@@ -114,7 +119,7 @@ Anhand des vorhergehenden Beispiels zur Veranschaulichung dieser Funktion wird a
 | Buchhaltungswährung             | 100                        | 111                       | 83                       | **83.25**          |
 | Berichtswährung              | 100                        | 111                       | 83                       | **83**             |
 
-Wenn Sie das Umsatzsteuerabrechnungsprogramm am Monatsende ausführen, wird die Buchhaltung wie folgt gebucht:.
+Wenn Sie das Umsatzsteuerabrechnungsprogramm am Monatsende ausführen, wird die Buchhaltung wie folgt gebucht.
 #### <a name="scenario-sales-tax-conversion--accounting-currency"></a>Szenario: Umsatzsteuerumrechnung = „Buchhaltungswährung“.
 
 | Hauptkonto           | Transaktionswährung (GBP) | Rechnungswährung (USD) | Berichtswährung (GBP) |
