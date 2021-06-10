@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 871ac40ea73c8a72e20ff495b9b7e6fe5a12159e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 60f63a49222b3d0f13850b0f39764c6c848aba15
+ms.sourcegitcommit: 3c15a26e9708adc9a75082dc551f0a3a0a7d89f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812978"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049435"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Passanalyse zu Planungsoptimierung
 
@@ -89,13 +89,13 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | Produktion | Pläne einschließlich Abfolge: _\#_ | Diese Funktion steht noch aus. Derzeit werden Abfolgen ignoriert, wenn die Planungsoptimierung unabhängig von dieser Einstellung aktiviert ist. | Oktober 2021 - April 2022 |
 | Produktion | Freigegebene, noch nicht gestartete Produktionsaufträge, deren Beginn vor heute geplant ist: _\#_ | Diese Funktion steht noch aus. Wenn sich ein Fertigungsauftrag verzögert, wird die Masterplanung derzeit davon ausgehen, dass er heute abgeschlossen wird. Dies ist für freigegebene Fertigungsaufträge relevant, bei denen ein Liefertermin in der Vergangenheit liegt, dieser jedoch noch nicht abgeschlossen wurde. | Oktober 2021 - April 2022 |
 | Produktion | Mit begrenzter Kapazität eingeplante Ressourcen: _\#_ | Diese Funktion steht noch aus. Derzeit werden Ressourcen mit begrenzter Kapazität ignoriert, wenn die Planungsoptimierung aktiviert ist. Die Planung erfolgt basierend auf der Standardvorlaufzeit des Produkts. | Unendlich: Juni 2021, begrenzt: Oktober 2021 |
-| Produktion | In Planung verwendete Arbeitspläne: _\#_ | Diese Funktion steht noch aus. Derzeit werden Arbeitspläne ignoriert, wenn die Planungsoptimierung aktiviert ist. Die Standardvorlaufzeit des Produkts wird verwendet. | 2021. Juni |
+| Produktion | In Planung verwendete Arbeitspläne: _\#_ | Diese Funktion steht noch aus. Derzeit werden Arbeitspläne ignoriert, wenn die Planungsoptimierung aktiviert ist. Die Standardvorlaufzeit des Produkts wird verwendet. | 2021. Juli |
 | Produktion | Verkaufspositionsreservierung mit Stücklistenauflösung: _\#_ | Verkaufspositionsreservierung, die Auflösung verwendet, wird nicht unterstützt, wenn die Planungsoptimierung aktiviert ist. | 2021. Oktober |
 | Produktion | Planung mit Auflösung von Produktionsaufträgen: _\#_ | Terminplanung, die Auflösung von Produktionsaufträgen verwendet, wird nicht unterstützt, wenn die Planungsoptimierung aktiviert ist. Produktionsaufträge können individuell geplant werden. | 2021. Oktober |
 | Angebotsanforderungen | Produktprogrammpläne mit aktivierten Angebotsanforderungen: _\#_ | Diese Funktion steht noch aus. Derzeit werden Angebotsanfragen (RFQs) nicht als Bedarf betrachtet, wenn die Planungsoptimierung aktiviert ist. Sie werden unabhängig von dieser Einstellung ignoriert. | Oktober 2021 - April 2022 |
 | Anforderungen | Produktprogrammpläne mit aktivierten Anforderungen: _\#_ | Diese Funktion wird jetzt unterstützt. Weitere Informationen finden Sie unter [Bestellanforderungen](purchase-requisitions.md) | Unterstützt |
-| Sicherheitszuschläge | Dispositionssteuerungsgruppen mit Sicherheitszuschlag: _\#_ | Diese Funktion wird jetzt teilweise unterstützt. Weitere Informationen finden Sie unter [Sicherheitszuschläge](safety-margins.md) | Sicherheitszuschlag für Warenzugang: Unterstützt. Sicherheitszuschlag für Wiederbestellung und Warenabgang: April 2021 |
-| Sicherheitszuschläge | Produktprogrammpläne mit Sicherheitszuschlag: _\#_ | Diese Funktion wird jetzt teilweise unterstützt. Weitere Informationen finden Sie unter [Sicherheitszuschläge](safety-margins.md) | Sicherheitszuschlag für Warenzugang: Unterstützt. Sicherheitszuschlag für Wiederbestellung und Warenabgang: April 2021 |
+| Sicherheitszuschläge | Dispositionssteuerungsgruppen mit Sicherheitszuschlag: _\#_ | Diese Funktion wird jetzt teilweise unterstützt. Weitere Informationen finden Sie unter [Sicherheitszuschläge](safety-margins.md) | Sicherheitszuschlag für Warenzugang: Unterstützt. Sicherheitszuschlag für Wiederbestellung und Warenabgang: April - Oktober 2021 |
+| Sicherheitszuschläge | Produktprogrammpläne mit Sicherheitszuschlag: _\#_ | Diese Funktion wird jetzt teilweise unterstützt. Weitere Informationen finden Sie unter [Sicherheitszuschläge](safety-margins.md) | Sicherheitszuschlag für Warenzugang: Unterstützt. Sicherheitszuschlag für Wiederbestellung und Warenabgang: April - Oktober 2021 |
 | Sicherheitslagerbestandserfüllung | Artikelabdeckungsaufzeichnungen mit Einstellung „Mindestbestand auffüllen“, die sich von „Heutiges Datum + Beschaffungszeit“ unterscheiden: _\#_ | Planungsoptimierung verwendet immer *Heutiges Datum + Beschaffungszeit*. Diese Änderung wird vorgenommen, um sich auf eine vereinfachte Planungskonfiguration in der Zukunft vorzubereiten und ein umsetzbares Ergebnis zu erzielen. Wenn die Beschaffungszeit für den Sicherheitsbestand nicht enthalten ist, werden Planaufträge, die für den aktuell niedrigen Lagerbestand erstellt werden, aufgrund der Vorlaufzeit immer verzögert. Dieses Verhalten kann zu erheblichen Störungen und unerwünschten Planaufträgen führen. Die beste Vorgehensweise besteht darin, die Einstellung so zu ändern, dass *Heutiges Datum + Beschaffungszeit* verwendet wird. Aktualisieren Sie die Stammdaten, um Warnungen zu vermeiden. | N/V |
 | Verkaufsangebote | Produktprogrammpläne mit aktivierten Verkaufsangeboten: _\#_ | Diese Funktion steht noch aus. Derzeit werden Angebote ignoriert, wenn die Planungsoptimierung aktiviert ist. Sie werden unabhängig von dieser Einstellung ignoriert. | Oktober 2021 - April 2022 |
 | Haltbarkeitsdatum | Produktprogrammpläne mit aktiviertem Haltbarkeitsdatum: _\#_ | Diese Funktion steht noch aus. Derzeit wird das Haltbarkeitsdatum ignoriert, wenn die Planungsoptimierung unabhängig von dieser Einstellung aktiviert ist. | 2021. Oktober |

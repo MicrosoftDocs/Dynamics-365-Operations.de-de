@@ -2,7 +2,7 @@
 title: Gespeicherte Ansichten
 description: In diesem Thema wird beschrieben, wie Sie die gespeicherten Ansichtsfunktionen verwenden.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 25b59400cdd62f8728f03683d51c86c671edd9de
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8a5daee72f4f339fbebffb5c1d64814959775340
+ms.sourcegitcommit: 13fa6385d8f3bb18df5a52fd2b0f4ad3484ad0ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744614"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6050555"
 ---
 # <a name="saved-views"></a>Gespeicherte Ansichten
 
@@ -126,17 +126,26 @@ Führen Sie folgende Schritte aus, um eine Ansicht zu veröffentlichen.
 5. **Update 10.0.17 oder höher:** Wenn die Funktion **(Vorschau) Übersetzungsunterstützung für Organisationsansichten** aktiviert ist, können Sie Übersetzungen für Ihren Ansichtsnamen in so vielen Sprachen hinzufügen, wie Ihre Organisation benötigt, indem Sie die Schaltfläche **Übersetzungen** neben dem Feld **Name** auswählen. Der Ansichtsname wird den Benutzern dann in ihrer aktuellen Sprache angezeigt. Sie können auch die Standardsprache für die Übersetzung festlegen, die Benutzern angezeigt wird, die Sprachen verwenden, für die keine Übersetzung definiert ist.
 5. Optional: Geben Sie eine Beschreibung für die Ansicht ein, damit Benutzer, die diese Ansicht erhalten, ihren Zweck besser verstehen können. 
 6. Legen Sie fest, ob die Ansicht als Standardansicht für die ausgewählten Benutzer veröffentlicht werden soll. Wenn eine Ansicht zur Standardansicht gemacht wird, wird sie beim nächsten Öffnen der Zielseite angezeigt. Die einzelne globale Standardansicht jedes Zielbenutzers wird geändert. Benutzer können jedoch ihre Standardansicht nach dem Veröffentlichen weiterhin ändern.
-7. Fügen Sie die Sicherheitsrollen hinzu, die den Benutzer entsprechen, auf die diese Ansicht ausgerichtet ist. 
-8. Bestimmen Sie, ob Sie die Ansicht in den untergeordneten Rollen jeder ausgewählten Sicherheitsrolle veröffentlichen möchten. Wenn Sie dies tun, aktivieren Sie das Kontrollkästchen **Untergeordnete Rollen einschließen** in der Zeile für die entsprechenden Sicherheitsrollen. Beachten Sie, dass dieses Kontrollkästchen für Rollen ohne untergeordnete Rollen nicht verfügbar ist.
-9. Fügen Sie juristische Personen hinzu, für die diese Ansicht verfügbar sein sollte. 
-10. Wählen Sie **Veröffentlichen** aus.
+
+    > [!NOTE]
+    > Beachten Sie Folgendes, wenn Sie eine Ansicht als Standardansicht veröffentlichen: 
+    > -  Wenn Sie eine Ansicht als Standardansicht für alle oder gewisse juristische Personen veröffentlichen, können Sie die einzelne **globale** Standardansicht jedes Zielbenutzers ändern. 
+    > -  Wenn ein Benutzer Rollen hat, in denen mehrere Ansichten als Standardansicht veröffentlicht werden, wird die zuletzt veröffentlichte Ansicht als Standardansicht des Benutzers verwendet. 
+
+8. Fügen Sie die Sicherheitsrollen hinzu, die den Benutzer entsprechen, auf die diese Ansicht ausgerichtet ist. 
+9. Bestimmen Sie, ob Sie die Ansicht in den untergeordneten Rollen jeder ausgewählten Sicherheitsrolle veröffentlichen möchten. Wenn Sie dies tun, aktivieren Sie das Kontrollkästchen **Untergeordnete Rollen einschließen** in der Zeile für die entsprechenden Sicherheitsrollen. Beachten Sie, dass dieses Kontrollkästchen für Rollen ohne untergeordnete Rollen nicht verfügbar ist.
+10. Fügen Sie juristische Personen hinzu, für die diese Ansicht verfügbar sein sollte. 
+
+    > [!NOTE]
+    > Beachten Sie die folgenden Erwartungen, wenn Sie eine Ansicht für eine juristische Person veröffentlichen.
+    > 
+    > Wenn Sie eine Ansicht für eine juristische Person veröffentlichen, diese jedoch nicht als Standardansicht veröffentlichen, wird den Benutzern die Ansicht in der Ansichtsauswahl zunächst nur für die angegebenen juristischen Personen angezeigt. Nachdem die Ansicht zum ersten Mal geladen wurde, befindet sie sich unabhängig von der juristischen Person immer in der Ansichtsauswahl des Benutzers für diese Seite.
+
+11. Wählen Sie **Veröffentlichen** aus.
 
 Beachten Sie, dass es in einer Umgebung einige Zeit in Anspruch nehmen kann (bis zu einer Stunde) bis Benutzer die veröffentlichte Ansicht sehen.
 
-> [!NOTE]
-> Beachten Sie die folgenden Erwartungen, wenn Sie eine Ansicht für eine juristische Person veröffentlichen oder wenn Sie eine Ansicht als Standardansicht veröffentlichen.
-> - Wenn Sie eine Ansicht als Standardansicht für alle oder einige juristische Personen veröffentlichen, können Sie die einzelne globale Standardansicht jedes Zielbenutzers ändern. Wenn ein Benutzer Rollen hat, in denen mehrere Ansichten als Standardansicht veröffentlicht werden, wird die zuletzt veröffentlichte Ansicht als Standardansicht des Benutzers verwendet. 
-> - Wenn Sie eine Ansicht für eine juristische Person veröffentlichen, diese jedoch nicht als Standardansicht veröffentlichen, wird den Benutzern die Ansicht in der Ansichtsauswahl zunächst nur für die angegebenen juristischen Personen angezeigt. Nachdem die Ansicht zum ersten Mal geladen wurde, befindet sie sich unabhängig von der juristischen Person immer in der Ansichtsauswahl des Benutzers für diese Seite. 
+ 
 
 ## <a name="modifying-a-published-view"></a>Ändern einer veröffentlichten Ansicht
 
