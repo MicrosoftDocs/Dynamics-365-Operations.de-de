@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,61 +15,61 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 07c7f1303238fe61d70be26ec5a198f1ac489090
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: cedff4031c6455b446af9c56a770a00f3b2efc80
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790763"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6052096"
 ---
-# <a name="view-team-and-company-calendars"></a><span data-ttu-id="3377d-103">Team- und Unternehmenskalender anzeigen</span><span class="sxs-lookup"><span data-stu-id="3377d-103">View team and company calendars</span></span>
+# <a name="view-team-and-company-calendars"></a><span data-ttu-id="33755-103">Team- und Unternehmenskalender anzeigen</span><span class="sxs-lookup"><span data-stu-id="33755-103">View team and company calendars</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="3377d-104">Sie können Teamkalender und Unternehmenskalender in Dynamics 365 Human Resources anzeigen.</span><span class="sxs-lookup"><span data-stu-id="3377d-104">You can view team and company calendars in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="3377d-105">Teamkalender zeigen nur Direktunterstellte an, wie in der Hierarchie definiert.</span><span class="sxs-lookup"><span data-stu-id="3377d-105">Team calendars only display direct reports, as defined in the line hierarchy.</span></span>
+<span data-ttu-id="33755-104">Sie können Teamkalender und Unternehmenskalender in Dynamics 365 Human Resources anzeigen.</span><span class="sxs-lookup"><span data-stu-id="33755-104">You can view team and company calendars in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="33755-105">Teamkalender zeigen nur Direktunterstellte an, wie in der Hierarchie definiert.</span><span class="sxs-lookup"><span data-stu-id="33755-105">Team calendars only display direct reports, as defined in the line hierarchy.</span></span>
 
-## <a name="view-your-team-calendar-as-an-employee"></a><span data-ttu-id="3377d-106">Teamkalender als Mitarbeiter anzeigen</span><span class="sxs-lookup"><span data-stu-id="3377d-106">View your team calendar as an employee</span></span>
+## <a name="view-your-team-calendar-as-an-employee"></a><span data-ttu-id="33755-106">Teamkalender als Mitarbeiter anzeigen</span><span class="sxs-lookup"><span data-stu-id="33755-106">View your team calendar as an employee</span></span>
 
-1. <span data-ttu-id="3377d-107">Im **Mitarbeiter-Self-Service**-Arbeitsbereich wählen Sie **Teamabwesenheitskalender** unter **Zusammenfassung**.</span><span class="sxs-lookup"><span data-stu-id="3377d-107">In the **Employee self service** workspace, select **Team absence calendar** under **Summary**.</span></span>
+1. <span data-ttu-id="33755-107">Im **Mitarbeiter-Self-Service**-Arbeitsbereich wählen Sie **Teamabwesenheitskalender** unter **Zusammenfassung**.</span><span class="sxs-lookup"><span data-stu-id="33755-107">In the **Employee self service** workspace, select **Team absence calendar** under **Summary**.</span></span>
 
-## <a name="view-your-team-calendar-as-a-manager"></a><span data-ttu-id="3377d-108">Teamkalender als Manager anzeigen</span><span class="sxs-lookup"><span data-stu-id="3377d-108">View your team calendar as a manager</span></span>
+## <a name="view-your-team-calendar-as-a-manager"></a><span data-ttu-id="33755-108">Teamkalender als Manager anzeigen</span><span class="sxs-lookup"><span data-stu-id="33755-108">View your team calendar as a manager</span></span>
 
-1. <span data-ttu-id="3377d-109">Wählen Sie auf der Startseite **Mitarbeiter-Self-Service** **Mein Team** aus.</span><span class="sxs-lookup"><span data-stu-id="3377d-109">In the **Employee self service** workspace, select **My team**.</span></span>
+1. <span data-ttu-id="33755-109">Wählen Sie auf der Startseite **Mitarbeiter-Self-Service** **Mein Team** aus.</span><span class="sxs-lookup"><span data-stu-id="33755-109">In the **Employee self service** workspace, select **My team**.</span></span>
 
-2. <span data-ttu-id="3377d-110">Wählen Sie **Urlaub und Abwesenheit** und dann **Managerabwesenheitskalender anzeigen**.</span><span class="sxs-lookup"><span data-stu-id="3377d-110">Select **Leave and absence**, and then select **View manager absence calendar**.</span></span>
+2. <span data-ttu-id="33755-110">Wählen Sie **Urlaub und Abwesenheit** und dann **Managerabwesenheitskalender anzeigen**.</span><span class="sxs-lookup"><span data-stu-id="33755-110">Select **Leave and absence**, and then select **View manager absence calendar**.</span></span>
 
-<span data-ttu-id="3377d-111">Manager können auch über **Ausstehende Anfragen meines Teams**, **Genehmigte Freizeit** und **Freizeitanfragen** auf den Teamkalender zugreifen.</span><span class="sxs-lookup"><span data-stu-id="3377d-111">Managers can also access the team calendar from **Pending time off requests from my team**, **Approved time off**, and **Time off requests**.</span></span> 
+<span data-ttu-id="33755-111">Manager können auch über **Ausstehende Anfragen meines Teams**, **Genehmigte Freizeit** und **Freizeitanfragen** auf den Teamkalender zugreifen.</span><span class="sxs-lookup"><span data-stu-id="33755-111">Managers can also access the team calendar from **Pending time off requests from my team**, **Approved time off**, and **Time off requests**.</span></span> 
 
-## <a name="view-a-company-calendar"></a><span data-ttu-id="3377d-112">Einen Unternehmenskalender anzeigen</span><span class="sxs-lookup"><span data-stu-id="3377d-112">View a company calendar</span></span>
+## <a name="view-a-company-calendar"></a><span data-ttu-id="33755-112">Einen Unternehmenskalender anzeigen</span><span class="sxs-lookup"><span data-stu-id="33755-112">View a company calendar</span></span>
 
-<span data-ttu-id="3377d-113">Personen, die in der Personalabteilung tätig sind, können Unternehmenskalender anzeigen.</span><span class="sxs-lookup"><span data-stu-id="3377d-113">People who are in human resources roles can view company calendars.</span></span> <span data-ttu-id="3377d-114">In den Unternehmenskalendern werden alle Mitarbeiter angezeigt.</span><span class="sxs-lookup"><span data-stu-id="3377d-114">Company calendars display all employees.</span></span> <span data-ttu-id="3377d-115">Standardmäßig zeigt der Kalender das heutige Datum plus 28 Tage an, Sie können jedoch den Datumsbereich ändern.</span><span class="sxs-lookup"><span data-stu-id="3377d-115">By default, the calendar displays today's date plus 28 days, but you can change the date range.</span></span> <span data-ttu-id="3377d-116">Sie können den Kalender auch nach **Name**, **Personalnummer** und **Abwesenheitstyp** filtern.</span><span class="sxs-lookup"><span data-stu-id="3377d-116">You can also filter the calendar by **Name**, **Personnel number**, and **Leave type**.</span></span>
+<span data-ttu-id="33755-113">Personen, die in der Personalabteilung tätig sind, können Unternehmenskalender anzeigen.</span><span class="sxs-lookup"><span data-stu-id="33755-113">People who are in human resources roles can view company calendars.</span></span> <span data-ttu-id="33755-114">In den Unternehmenskalendern werden alle Mitarbeiter angezeigt.</span><span class="sxs-lookup"><span data-stu-id="33755-114">Company calendars display all employees.</span></span> <span data-ttu-id="33755-115">Standardmäßig zeigt der Kalender das heutige Datum plus 28 Tage an, Sie können jedoch den Datumsbereich ändern.</span><span class="sxs-lookup"><span data-stu-id="33755-115">By default, the calendar displays today's date plus 28 days, but you can change the date range.</span></span> <span data-ttu-id="33755-116">Sie können den Kalender auch nach **Name**, **Personalnummer** und **Abwesenheitstyp** filtern.</span><span class="sxs-lookup"><span data-stu-id="33755-116">You can also filter the calendar by **Name**, **Personnel number**, and **Leave type**.</span></span>
 
-1. <span data-ttu-id="3377d-117">In dem Arbeitsbereich **Urlaub und Abwesenheit** wählen Sie **Verknüpfen**.</span><span class="sxs-lookup"><span data-stu-id="3377d-117">In the **Leave and absence** workspace, select **Links**.</span></span>
+1. <span data-ttu-id="33755-117">In dem Arbeitsbereich **Urlaub und Abwesenheit** wählen Sie **Verknüpfen**.</span><span class="sxs-lookup"><span data-stu-id="33755-117">In the **Leave and absence** workspace, select **Links**.</span></span>
 
-2. <span data-ttu-id="3377d-118">Wählen Sie **Urlaubs- und Abwesenheitskalender**.</span><span class="sxs-lookup"><span data-stu-id="3377d-118">Select **Leave and absence calendar**.</span></span>
+2. <span data-ttu-id="33755-118">Wählen Sie **Urlaubs- und Abwesenheitskalender**.</span><span class="sxs-lookup"><span data-stu-id="33755-118">Select **Leave and absence calendar**.</span></span>
 
-<span data-ttu-id="3377d-119">Personalrollen können auch über auf den Unternehmenskalender **Urlaubs- und Abwesenheitsanträge**, **Genehmigte Freizeit**, und **Freizeitanfragen** zugreifen.</span><span class="sxs-lookup"><span data-stu-id="3377d-119">Human resources roles can also access the company calendar from **Leave and absence requests**, **Approved time off**, and **Time off requests**.</span></span> 
+<span data-ttu-id="33755-119">Personalrollen können auch über auf den Unternehmenskalender **Urlaubs- und Abwesenheitsanträge**, **Genehmigte Freizeit**, und **Freizeitanfragen** zugreifen.</span><span class="sxs-lookup"><span data-stu-id="33755-119">Human resources roles can also access the company calendar from **Leave and absence requests**, **Approved time off**, and **Time off requests**.</span></span> 
 
-<span data-ttu-id="3377d-120">Kalender enthalten jetzt zusätzliche Filter und Optionen.</span><span class="sxs-lookup"><span data-stu-id="3377d-120">Calendars now contain additional filters and options.</span></span> <span data-ttu-id="3377d-121">Alle Kalender enthalten Ansichtsoptionen für:</span><span class="sxs-lookup"><span data-stu-id="3377d-121">All calendars include view options for:</span></span>
+<span data-ttu-id="33755-120">Kalender enthalten jetzt zusätzliche Filter und Optionen.</span><span class="sxs-lookup"><span data-stu-id="33755-120">Calendars now contain additional filters and options.</span></span> <span data-ttu-id="33755-121">Alle Kalender enthalten Ansichtsoptionen für:</span><span class="sxs-lookup"><span data-stu-id="33755-121">All calendars include view options for:</span></span>
 
-- <span data-ttu-id="3377d-122">Genehmigte Anforderungen</span><span class="sxs-lookup"><span data-stu-id="3377d-122">Approved requests</span></span>
-- <span data-ttu-id="3377d-123">Ausstehende Anträge</span><span class="sxs-lookup"><span data-stu-id="3377d-123">Pending requests</span></span>
-- <span data-ttu-id="3377d-124">Mitarbeiter mit Urlaubsanträgen</span><span class="sxs-lookup"><span data-stu-id="3377d-124">Employees with leave requests</span></span>
-- <span data-ttu-id="3377d-125">Mitarbeiter ohne Urlaubsanträge</span><span class="sxs-lookup"><span data-stu-id="3377d-125">Employees without leave requests</span></span>
-- <span data-ttu-id="3377d-126">Mitarbeiter-Geburtstage</span><span class="sxs-lookup"><span data-stu-id="3377d-126">Employee birthdays</span></span>
-- <span data-ttu-id="3377d-127">Anforderungen von arbeitsfreier Zeit</span><span class="sxs-lookup"><span data-stu-id="3377d-127">Time-off requests</span></span> 
-- <span data-ttu-id="3377d-128">Beurlaubungsanforderungen</span><span class="sxs-lookup"><span data-stu-id="3377d-128">Leave of absence requests</span></span>
+- <span data-ttu-id="33755-122">Genehmigte Anforderungen</span><span class="sxs-lookup"><span data-stu-id="33755-122">Approved requests</span></span>
+- <span data-ttu-id="33755-123">Ausstehende Anträge</span><span class="sxs-lookup"><span data-stu-id="33755-123">Pending requests</span></span>
+- <span data-ttu-id="33755-124">Mitarbeiter mit Urlaubsanträgen</span><span class="sxs-lookup"><span data-stu-id="33755-124">Employees with leave requests</span></span>
+- <span data-ttu-id="33755-125">Mitarbeiter ohne Urlaubsanträge</span><span class="sxs-lookup"><span data-stu-id="33755-125">Employees without leave requests</span></span>
+- <span data-ttu-id="33755-126">Mitarbeiter-Geburtstage</span><span class="sxs-lookup"><span data-stu-id="33755-126">Employee birthdays</span></span>
+- <span data-ttu-id="33755-127">Anforderungen von arbeitsfreier Zeit</span><span class="sxs-lookup"><span data-stu-id="33755-127">Time-off requests</span></span> 
+- <span data-ttu-id="33755-128">Beurlaubungsanforderungen</span><span class="sxs-lookup"><span data-stu-id="33755-128">Leave of absence requests</span></span>
 
-<span data-ttu-id="3377d-129">Die Kalenderkonfiguration in den Parametern Urlaub und Abwesenheit bestimmt die verfügbaren Ansichtsoptionen.</span><span class="sxs-lookup"><span data-stu-id="3377d-129">Calendar configuration in Leave and absence parameters determine available view options.</span></span>
+<span data-ttu-id="33755-129">Die Kalenderkonfiguration in den Parametern Urlaub und Abwesenheit bestimmt die verfügbaren Ansichtsoptionen.</span><span class="sxs-lookup"><span data-stu-id="33755-129">Calendar configuration in Leave and absence parameters determine available view options.</span></span>
 
-<span data-ttu-id="3377d-130">Sie können Kalender auch nach Manager oder Abteilung filtern.</span><span class="sxs-lookup"><span data-stu-id="3377d-130">You can also filter calendars by manager or department.</span></span> <span data-ttu-id="3377d-131">Die primäre Positionszuweisung bestimmt die Mitarbeiter, die angezeigt werden, wenn diese Filter gesetzt werden.</span><span class="sxs-lookup"><span data-stu-id="3377d-131">The primary position assignment determines the employees displayed when these filters are set.</span></span> 
+<span data-ttu-id="33755-130">Sie können Kalender auch nach Manager oder Abteilung filtern.</span><span class="sxs-lookup"><span data-stu-id="33755-130">You can also filter calendars by manager or department.</span></span> <span data-ttu-id="33755-131">Die primäre Positionszuweisung bestimmt die Mitarbeiter, die angezeigt werden, wenn diese Filter gesetzt werden.</span><span class="sxs-lookup"><span data-stu-id="33755-131">The primary position assignment determines the employees displayed when these filters are set.</span></span> 
 
 >[!IMPORTANT]
-><span data-ttu-id="3377d-132">Urlaub und Abwesenheit wird in verschiedenen Unternehmen derzeit in der Vorschau angezeigt.</span><span class="sxs-lookup"><span data-stu-id="3377d-132">Viewing leave and absence across companies is currently in preview.</span></span> <span data-ttu-id="3377d-133">Sie müssen es in Ihrer **Sandbox**-Umgebung aktivieren.</span><span class="sxs-lookup"><span data-stu-id="3377d-133">You'll need to enable it in your **Sandbox** environment.</span></span> <span data-ttu-id="3377d-134">Weitere Informationen zum Aktivieren der Vorschaufunktionen finden Sie unter [Funktonen verwalten](hr-admin-manage-features.md).</span><span class="sxs-lookup"><span data-stu-id="3377d-134">For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).</span></span><br><br>
-><span data-ttu-id="3377d-135">Dann müssen Sie die Funktion in **Freigegebene Human Resources-Parameter** aktivieren, um den Filter für juristische Personen in Kalendern anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="3377d-135">Then you must enable the feature in **Human resources shared parameters** to display the legal entity filter in calendars.</span></span> <span data-ttu-id="3377d-136">Weitere Informationen finden Sie unter [Urlaub- und Abwesenheitsparameter konfigurieren](hr-leave-and-absence-parameters.md).</span><span class="sxs-lookup"><span data-stu-id="3377d-136">For more information, see [Configure leave and absence parameters](hr-leave-and-absence-parameters.md).</span></span><br><br>
-><span data-ttu-id="3377d-137">Sie können im Kalender nach juristischen Personen filtern.</span><span class="sxs-lookup"><span data-stu-id="3377d-137">You can filter the calendar by legal entity.</span></span> <span data-ttu-id="3377d-138">Wenn Sie alle Mitarbeiter unabhängig von der juristischen Person sehen möchten, deaktivieren Sie das Filterfeld und drücken Sie die Eingabetaste.</span><span class="sxs-lookup"><span data-stu-id="3377d-138">If you want to see all employees regardless of legal entity, clear the filter box and select enter.</span></span> 
+><span data-ttu-id="33755-132">Urlaub und Abwesenheit wird in verschiedenen Unternehmen derzeit in der Vorschau angezeigt.</span><span class="sxs-lookup"><span data-stu-id="33755-132">Viewing leave and absence across companies is currently in preview.</span></span> <span data-ttu-id="33755-133">Sie müssen es in Ihrer **Sandbox**-Umgebung aktivieren.</span><span class="sxs-lookup"><span data-stu-id="33755-133">You'll need to enable it in your **Sandbox** environment.</span></span> <span data-ttu-id="33755-134">Weitere Informationen zum Aktivieren der Vorschaufunktionen finden Sie unter [Funktonen verwalten](hr-admin-manage-features.md).</span><span class="sxs-lookup"><span data-stu-id="33755-134">For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).</span></span><br><br>
+><span data-ttu-id="33755-135">Dann müssen Sie die Funktion in **Freigegebene Human Resources-Parameter** aktivieren, um den Filter für juristische Personen in Kalendern anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="33755-135">Then you must enable the feature in **Human resources shared parameters** to display the legal entity filter in calendars.</span></span> <span data-ttu-id="33755-136">Weitere Informationen finden Sie unter [Urlaub- und Abwesenheitsparameter konfigurieren](hr-leave-and-absence-parameters.md).</span><span class="sxs-lookup"><span data-stu-id="33755-136">For more information, see [Configure leave and absence parameters](hr-leave-and-absence-parameters.md).</span></span><br><br>
+><span data-ttu-id="33755-137">Sie können im Kalender nach juristischen Personen filtern.</span><span class="sxs-lookup"><span data-stu-id="33755-137">You can filter the calendar by legal entity.</span></span> <span data-ttu-id="33755-138">Wenn Sie alle Mitarbeiter unabhängig von der juristischen Person sehen möchten, deaktivieren Sie das Filterfeld und drücken Sie die Eingabetaste.</span><span class="sxs-lookup"><span data-stu-id="33755-138">If you want to see all employees regardless of legal entity, clear the filter box and select enter.</span></span> 
 
-<span data-ttu-id="3377d-139">Informationen zu Kalendereinstellungen finden Sie unter [Konfigurieren Sie die Kalenderparameter](hr-leave-and-absence-parameters.md?configure-calendar-parameters).</span><span class="sxs-lookup"><span data-stu-id="3377d-139">For information about calendar settings, see [Configure calendar parameters](hr-leave-and-absence-parameters.md?configure-calendar-parameters).</span></span>
+<span data-ttu-id="33755-139">Informationen zu Kalendereinstellungen finden Sie unter [Konfigurieren Sie die Kalenderparameter](hr-leave-and-absence-parameters.md?configure-calendar-parameters).</span><span class="sxs-lookup"><span data-stu-id="33755-139">For information about calendar settings, see [Configure calendar parameters](hr-leave-and-absence-parameters.md?configure-calendar-parameters).</span></span>
 
 
 
