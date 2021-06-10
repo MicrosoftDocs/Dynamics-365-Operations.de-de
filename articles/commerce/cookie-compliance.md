@@ -2,7 +2,7 @@
 title: Cookie-Compliance
 description: In diesem Thema werden Überlegungen zur Einhaltung von Cookies und zu den in Microsoft Dynamics 365 Commerce enthaltenen Standardrichtlinien beschrieben.
 author: BrianShook
-ms.date: 04/16/2021
+ms.date: 05/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908183"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088386"
 ---
 # <a name="cookie-compliance"></a>Cookie-Compliance
 
@@ -52,8 +52,7 @@ Die folgende Tabelle zeigt die aktuelle Referenzliste der von Dynamics 365 Comme
 | x-ms-cpim-trans                             | Wird zum Verfolgen von Transaktionen verwendet (Anzahl der offenen Registerkarten, die sich bei einer B2C-Site (Business-to-Consumer) authentifizieren), einschließlich der aktuellen Transaktion. |
 | \_msdyn365___muid_                            | Wird verwendet, wenn Experimentieren für die Umgebung aktiviert ist. Wird als Benutzer-ID für Experimentierzwecke verwendet. |
 | \_msdyn365___exp_                             | Wird verwendet, wenn Experimentieren für die Umgebung aktiviert ist. Wird verwendet, um die Leistung des Lastenausgleichs zu messen.         |
-
-
+| d365mkt                                       | Wird verwendet, wenn die standortbasierte Erkennung zum Verfolgen der IP-Adresse eines Benutzers für Standortvorschläge im Commerce Site Builder unter **Site-Einstellungen> Allgemein> Standortbasierte Speichererkennung aktivieren** aktiviert ist.      |
 
 Wenn ein Site-Benutzer in einer Site Links zu sozialen Medien auswählt, werden die Cookies in der folgenden Tabelle auch in seinem Browser verfolgt.
 

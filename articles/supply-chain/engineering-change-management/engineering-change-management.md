@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
-ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
+ms.openlocfilehash: d31c73964877aeb1556c93b03d276698e8d84d30
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954644"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6114998"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Änderungen an Verwaltung für technische Änderung verwalten
 
@@ -92,9 +92,13 @@ Diese Liste dient nur zu Informationszwecken. Daher können Sie so viele verwand
 
 Mit dem **Inforegister Quelle** können Sie den Startpunkt der Änderungsanforderung verfolgen. Es ist nützlich, wenn Sie z.B. sehen wollen, ob die Änderungsanforderung aus einem Verkaufsauftrag erstellt wurde, wer sie erstellt hat und in welcher Firma sie erstellt wurde.
 
-### <a name="evaluate-the-business-impact-of-a-change-request"></a>Bewerten Sie die geschäftlichen Auswirkungen einer Änderungsanforderung
+### <a name="evaluate-the-business-impact-of-a-change-request-and-send-notifications"></a>Bewerten Sie die geschäftlichen Auswirkungen einer Änderungsanforderung und senden einer Benachrichtigung
 
-Wenn Sie eine Änderungsanforderung überprüfen, können Sie nach Abhängigkeiten suchen. Auf diese Weise können Sie die Auswirkungen der angeforderten Änderung auf offene Transaktionen, wie z. B. Verkaufsaufträge, Produktionsaufträge und den Bestand, beurteilen.
+Wenn Sie eine Änderungsanforderung überprüfen, können Sie nach Abhängigkeiten suchen. Auf diese Weise können Sie die Auswirkungen der angeforderten Änderung auf offene Transaktionen, wie z. B. Verkaufsaufträge, Produktionsaufträge und den Bestand, beurteilen. Während Sie Änderungsanforderungen überprüfen, können Sie Benachrichtigungen an die Personen senden, die für die Erfüllung der verschiedenen Arten von zugehörigen Bestellungen verantwortlich sind.
+
+#### <a name="review-affected-transactions-block-selected-transactions-and-send-notifications"></a>Überprüfen Sie betroffene Transaktionen, blockieren Sie ausgewählte Transaktionen und senden Sie Benachrichtigungen
+
+Zum Überprüfen von betroffenen Transaktionen, zum Blockieren ausgewählter Transaktionen und zum Senden von damit im Zusammenhang stehende Benachrichtigungen folgen Sie diesen Schritten.
 
 1. Gehen Sie zu **Verwaltung für technische Änderung \> Allgemein \> Verwaltung für technische Änderung \> Entwicklungsänderungsanträge**.
 1. Öffnen Sie entweder eine bestehende Änderungsanforderung oder wählen Sie **Neu** im Aktivitätsbereich, um eine neue Änderungsanforderung zu erstellen.
@@ -103,7 +107,30 @@ Wenn Sie eine Änderungsanforderung überprüfen, können Sie nach Abhängigkeit
     - **Suchen** - Durchsucht alle offenen Transaktionen und öffnet dann die Dialogbox **Geschäftsauswirkungen auf offene Transaktionen**, die alle Transaktionen auflistet, die von der Änderung betroffen sind.
     - **Vorherige Suche anzeigen** - Öffnet das Dialogfeld **Auswirkungen auf offene Transaktionen**, in dem die Ergebnisse der vorherigen Suche aufgelistet sind. (Eine neue Suche wird nicht durchgeführt.)
 
-1. Wenn das Problem, das eine Änderung erfordert, als kritisch eingestuft wird, können Sie die offenen Transaktionen sperren oder den verantwortlichen Benutzer benachrichtigen, indem Sie die Schaltflächen auf der Symbolleiste im Dialogfeld **Geschäftsauswirkungen auf offene Transaktionen** verwenden.
+1. Das Dialogfeld **Geschäftliche Auswirkungen auf offene Transaktionen** enthält eine Reihe von Registerkarten, von denen jede eine Liste der betroffenen Transaktionen eines bestimmten Typs anzeigt (**Verkaufsaufträge**, **Kaufaufträge**, **Fertigungsaufträge**, **Inventar** und so weiter). Auf jeder Registerkarte wird auch eine Zahl angezeigt, die die Anzahl der betroffenen Transaktionen dieses Typs angibt. Wählen Sie eine Registerkarte aus, um die entsprechende Liste anzuzeigen.
+1. Um mit einer Transaktion in der Liste zu arbeiten, wählen Sie sie aus und klicken Sie dann auf eine der folgenden Schaltflächen in der Symbolleiste:
+
+    - **Transaktion anzeigen** – Öffnen Sie den ausgewählten Transaktionsdatensatz.
+    - **Blockreihenfolge** – Diese Schaltfläche ist nur auf der Registerkarte **Kundenaufträge** verfügbar. Wählen Sie diese Option aus, um den ausgewählten Kundenauftrag zu blockieren.
+    - **Zeile blockieren** – Diese Schaltfläche ist nur auf der Registerkarte **Bestellungen** verfügbar. Wählen Sie diese Option aus, um die ausgewählte Bestellzeile zu blockieren.
+    - **Verantwortliche benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Aufträge** verfügbar. Wählen Sie diese Option aus, um eine Änderungsbenachrichtigung an den Benutzer zu senden, der für den ausgewählten Auftrag verantwortlich ist.
+    - **Besteller benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Bestellung** verfügbar. Wählen Sie diese Option aus, um eine Änderungsbenachrichtigung an den Besteller zu senden, der für die ausgewählte Bestellung verantwortlich ist.
+    - **Produktion benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Produktionsaufträge** verfügbar. Im Gegensatz zu Bestellungen und Aufträgen haben Produktionsaufträge keinen einzigen Benutzer, der von  Anfang bis Ende für sie verantwortlich ist. Stattdessen übernehmen verschiedene Vorgesetzte oder Planer normalerweise die Verantwortung für einen bestimmten Standort oder einen bestimmten Teil der Produktion (z. B. für bestimmte Ressourcen oder Ressourcengruppen). Wenn Sie diese Schaltfläche auswählen, erhalten daher alle Benutzer, die für Ressourcen verantwortlich sind, auf die sich der ausgewählten Produktionsauftrag bezieht, eine Änderungsbenachrichtigung.
+    - **Antragstellerr benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Bestellanforderung** verfügbar. Wählen Sie diese Option aus, um eine Änderungsbenachrichtigung an den Besteller zu senden, der für die ausgewählte Bestellanforderung verantwortlich ist.
+    - **Vertriebsverantwortliche benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Angebote** verfügbar. Wählen Sie diese Option aus, um eine Änderungsbenachrichtigung an den Benutzer zu senden, der für das ausgewählte Angebot verantwortlich ist.
+    - **Schrott** – Diese Schaltfläche ist nur auf der Registerkarte **Inventar** verfügbar. Wählen Sie sie aus, um das ausgewählte Inventar zu verschrotten.
+    - **Verlauf anzeigen** – Öffnen Sie den Verlauf der Aktionen, die für die ausgewählte Transaktion ausgeführt wurden, mithilfe des Dialogfeldes **Geschäftliche Auswirkungen auf offene Transaktionen**. (Der Verlauf zeigt beispielsweise an, ob Benachrichtigungen gesendet oder Transaktionen blockiert wurden.) 
+    - **Alle Transaktionen anzeigen** – Öffnen Sie die vollständige Liste aller Transaktionen, nicht nur der offenen Transaktionen.
+
+#### <a name="review-and-process-change-notifications-for-transactions"></a>Überprüfen und verarbeiten Sie Änderungsbenachrichtigungen für Transaktionen
+
+Sie können die Änderungsbenachrichtigungen, die Sie erhalten, folgendermaßen lesen und verarbeiten:
+
+- Mit Ausnahme von Fertigungsaufträgen werden Änderungsbenachrichtigungen für die Transaktionen, für die Sie verantwortlich sind, im Aktionscenter angezeigt. Die Schaltfläche **Nachrichten anzeigen** (Glockensymbol) auf der rechten Seite der Navigationsleiste zeigt an, wann eine Aktionszentrumsnachricht für den aktuellen Benutzer verfügbar ist. Wählen Sie die Schaltfläche **Nachrichten anzeigen**, um das Aktionszentrum zu öffnen und die Nachrichten zu lesen.
+- Um alle Produktionsaufträge anzuzeigen, für die eine technische Benachrichtigung gesendet wurde, gehen Sie zu **Produktionsaufträge \> Produktionsaufträge \> Alle Produktionsaufträge**. Wählen Sie dann im Aktivitätsbereich auf der Registerkarte **Produktionsauftrag** in der Gruppe **Technische Änderungsanforderung** den Eintrag **Technische Benachrichtigung** aus, um die Seite **Technische Benachrichtigung** zu öffnen.
+- Bei Produktionsaufträgen können Sie festlegen, dass nur die Änderungsbenachrichtigungen überprüft werden, die für die von Ihnen verwalteten Produktionsressourcen gelten. In dem Arbeitsbereich **Produktionsflächenmanagement** im Aktionsbereich wählen Sie die Option **Meinen Arbeitsbereich konfigurieren** aus, um die Seite so zu filtern, dass nur Informationen zu den von Ihnen verwalteten Produktionseinheiten, Gruppen und/oder Ressourcen angezeigt werden. In dem Abschnitt **Zusammenfassung** zeigt eine Kachel, die als **Produktionsaufträge mit geänderten Produkten** gekennzeichnet ist, eine Anzahl von Benachrichtigungen an, die Ihren Filtereinstellungen entsprechen. Wählen Sie diese Kachel aus, um die Seite **Technische Benachrichtigungen** zu öffnen, auf der die vollständige Liste der Transaktionen angezeigt wird, die die Kriterien Ihres Filters erfüllen.
+
+Während Sie die Produktionsbenachrichtigungen auf der Seite **Technische Benachrichtigungen** überprüfen, können Sie Links zu zugehörigen Änderungsaufträgen oder Produktionsaufträgen folgen, indem Sie Spaltenwerte auswählen oder die zugehörigen Befehle im Aktivitätenbereich verwenden. Nachdem Sie eine Änderung ausgewertet und Produktionsaufträge nach Bedarf storniert oder geändert haben, können Sie eine Benachrichtigung als gelöst markieren. Wählen Sie die Benachrichtigung aus und wählen Sie dann im Aktivitätsbereich **Gelöst**. Die Benachrichtigung wird aus den Ansichten aller Benutzer entfernt.
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Erzeugen eines Änderungsauftrags aus einer Änderungsanforderung
 

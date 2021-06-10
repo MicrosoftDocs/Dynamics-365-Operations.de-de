@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5f0ed7d3344b43c477923ebd8c69acfb6630e6f4
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 30f7919e5ae0933b389a274d80aaed8e149631e7
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910400"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103095"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorenzusammenarbeit mit externen Kreditoren
 
@@ -90,19 +90,19 @@ Die folgende Tabelle zeigt den üblichen Informationsaustausch, abhängig von de
 <tbody>
 <tr class="even">
 <td>Der Kreditor <strong>akzeptiert</strong> den Auftrag, und Supply Chain Management wird so konfiguriert, dass Bestellungen, die der Kreditor akzeptiert, automatisch bestätigt werden.</td>
-<td>Der Status einer Bestellstatus wird auf <strong>Bestätigt</strong> aktualisiert. Wenn der Auftrag aus einem bestimmten Grund nicht aktualisiert werden kann, wird die Antwort des Kreditors trotzdem als <strong>Akzeptiert</strong> erfasst, die Bestellung bleibt aber im Status <strong>In externer Prüfung</strong>. 
+<td>Der Status einer Bestellstatus wird auf <strong>Bestätigt</strong> aktualisiert. Wenn der Auftrag aus&#39;einem bestimmten Grund nicht aktualisiert werden kann, wird die Antwort des Kreditors trotzdem als <strong>Akzeptiert</strong> erfasst, die Bestellung bleibt aber im Status <strong>In externer Prüfung</strong>. 
 
 Die Bestellung, die an den Kreditor gesendet wurde und die den Status <strong>In externer Prüfung</strong> hat, wird mit bestätigtem Lieferdatum für die Positionen aktualisiert. Diese Aktualisierung initiiert eine neue Version, die automatisch auf den Status <strong>Bestätigt</strong> festgelegt wird. Wenn die Bestellung bestätigt wird, wird sie in der Zusammenarbeitschnittstelle des Kreditors angezeigt.</td>
 </tr>
 <tr class="odd">
-<td>Der Kreditor <strong>akzeptiert</strong> den Auftrag, aber Supply Chain Management wird so konfiguriert, dass Bestellungen, die der Kreditor akzeptiert, automatisch bestätigt werden.</td>
+<td>Der Kreditor <strong>akzeptiert</strong> den Auftrag, aber Supply Chain Management wird&#39;so konfiguriert, dass Bestellungen, die der Kreditor akzeptiert, automatisch bestätigt werden.</td>
 <td>Die Antwort des Kreditors wird als <strong>Bestätigt</strong> erfasst, die Bestellung bleibt jedoch im Status <strong>Externe Prüfung</strong>.
 
 Die Bestellung, die an den Kreditor gesendet wurde und die den Status <strong>In externer Prüfung</strong> hat, wird mit bestätigtem Lieferdatum für die Positionen aktualisiert. Diese Aktualisierung initiiert eine neue Version, die automatisch auf den Status <strong>In externer Überprüfung</strong> festgelegt wird. Sie können anschließend die Bestellung manuell bestätigen.</td>
 </tr>
 <tr class="even">
 <td>Der Kreditor <strong>lehnt</strong> die Bestellung ab.</td>
-<td>Die Antwort des Kreditors wird als <strong>Abgelehnt</strong> erfasst, die Bestellung bliebt jedoch im Status <strong>Externe Prüfung</strong>. Die Ablehnung wird zusammen mit dem Kreditoren-Hinweis empfangen</td>
+<td>Die Antwort des Kreditors wird als <strong>Abgelehnt</strong> erfasst, die Bestellung bliebt jedoch im Status <strong>Externe Prüfung</strong>. Die Ablehnung wird zusammen mit dem Kreditoren-Hinweis&#39;empfangen</td>
 </tr>
 <tr class="odd">
 <td>Der Kreditor <strong>akzeptiert</strong> den Auftrag <strong>mit Änderungen</strong>. Änderungen werden auf Positionsebene vorgeschlagen. Der Kreditor kann einzelne Positionen annehmen oder ablehnen. Hier sind einige andere Änderungen, die der Kreditor vorschlagen kann:
@@ -111,7 +111,7 @@ Die Bestellung, die an den Kreditor gesendet wurde und die den Status <strong>In
 <li>Teilen Sie Positionen für verschiedene Lieferdaten und Mengen auf.</li>
 <li>Einen Artikel ersetzen.</li>
 </ul>
-Der Kreditor kann keine Preisinformationen und Gebühren ändern. Allerdings kann der Kreditor diese Änderungen vorschlagen, indem er Hinweise verwendet.</td>
+Der Kreditor kann&#39;keine Preisinformationen und Gebühren ändern. Allerdings kann der Kreditor diese Änderungen vorschlagen, indem er Hinweise verwendet.</td>
 <td>Die Antwort des Kreditors wir als <strong>Mit Änderungen akzeptiert</strong>, erfasst und der Status der Bestellung bleibt <strong>In externer Prüfung</strong> Die Statusangaben zeigen die Arten von Änderungen, die der Kreditor vorgeschlagen hat. Weitere Informationen zum automatischen Verbrauch der Änderungen lesen Sie im Abschnitt &quot;Die Bestellung aktualisieren, wenn ein Kreditor Änderungen vorschlägt&quot;, später in diesem Thema. </td>
 </tr>
 </tbody>

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7761366c0372c105ecbd4281c7bafa44bf6cf7b5
-ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
+ms.openlocfilehash: b88d3fe97d14d3e2f766367de501148063582000
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6039926"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123361"
 ---
 # <a name="customer-aging-snapshots"></a>Fälligkeitsmomentaufnahmen für Debitoren
 
@@ -28,6 +28,8 @@ ms.locfileid: "6039926"
 Dieses Thema enthält Informationen zu Fälligkeitsmomentaufnahmen für Debitoren. Eine Fälligkeitsmomentaufnahme berechnet Saldenrückblicke für eine Gruppe von Debitoren zu einem bestimmten Zeitpunkt. Sie können Fälligkeitsmomentaufnahme entweder für alle Debitoren oder für die Debitoren in einem Debitorenpool erstellen.
 
 Informationen aus Fälligkeitsmomentaufnahmen werden auf der Listenseite **Saldenrückblick** und auf der Seite **Inkassi** angezeigt. Sie müssen zuerst eine Fälligkeitsmomentaufnahme erstellen, bevor Sie die Listenseite **Saldenrückblick** verwenden können. Auf der Listenseite sind nur Informationen für Debitoren aufgeführt, für die eine Fälligkeitsmomentaufnahme erstellt wurde.
+
+Der Arbeitsbereich **Debitorenkredit und Inkasso** zeigt die Fälligkeit für Debitoren ebenfalls an. Weitere Informationen finden Sie unter [Power BI-Inhalt zur Kredit- und Inkassoverwaltung](credit-collections-power-bi.md).
 
 > [!NOTE]
 > Um die Zeit zum Erstellen einer Fälligkeitsmomentaufnahme für Debitoren zu verkürzen, aktivieren Sie die Funktion **Leistungsverbesserung von Fälligkeiten für Debitoren** im Arbeitsbereich **Funktionsverwaltung**. Wenn diese Funktion aktiviert ist, dürfen Sie jedoch keine Debitorenpools verwenden. Wenn ein Debitorenpool ausgewählt ist, funktioniert die Funktion nicht. Sie können jedoch trotzdem eine Fälligkeitsmomentaufnahme erstellen.
@@ -62,4 +64,3 @@ Sie sollten diesen Prozess so planen, dass er als Batch ausgeführt wird.
 > [!NOTE]
 > Um die Batchleistung beim Erstellen von Fälligkeitsmomentaufnahmen zu verbessern, geben Sie in das Feld **Maximale Anzahl an Stapelverarbeitungsaufgaben** im Inforegister **Inkassostandards** unter der Registerkarte **Inkassi** der Seite **Debitorenparameter** eine Zahl ein. Im Feld **Fällige Debitorensalden** sollten Sie mit **100** als Standardwert beginnen und ihn dann anpassen, um die Verarbeitung für Ihre Situation zu optimieren.
 
-Der Arbeitsbereich **Debitorenkredit und Inkasso** zeigt die Fälligkeit für Debitoren ebenfalls an. Weitere Informationen finden Sie unter [Power BI-Inhalt zur Kredit- und Inkassoverwaltung](credit-collections-power-bi.md).

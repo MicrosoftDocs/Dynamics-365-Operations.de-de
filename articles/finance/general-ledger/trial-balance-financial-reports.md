@@ -1,8 +1,8 @@
 ---
 title: Zwischenbilanzfinanzberichte
 description: In diesem Artikel werden die Standardberichte für Zwischenbilanzen beschrieben. Zudem werden die Bausteine beschrieben, die mit diesen Berichten zugeordnet werden und wie Sie Berichte ändern können, um diese an Ihre geschäftlichen Anforderungen anpassen.
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a9902471101b752c4b09d8ae28eb673743b7a53
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 26ec03422315a280f7e779f992cf694eb5f845ea
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816930"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103657"
 ---
 # <a name="trial-balance-financial-reports"></a>Zwischenbilanzfinanzberichte
 
@@ -28,8 +28,7 @@ ms.locfileid: "5816930"
 
 In diesem Artikel werden die Standardberichte für Zwischenbilanzen beschrieben. Zudem werden die Bausteine beschrieben, die mit diesen Berichten zugeordnet werden und wie Sie Berichte ändern können, um diese an Ihre geschäftlichen Anforderungen anpassen. 
 
-<a name="default-trial-balance-reports"></a>Standardzwischenbilanzberichte
------------------------------
+## <a name="default-trial-balance-reports"></a>Standardzwischenbilanzberichte
 
 Drei Zwischenbilanzberichte sind in der Finanzberichterstellung verfügbar.
 
@@ -47,6 +46,9 @@ Die Zwischenbilanzfinanzberichte verwenden die folgenden Bausteine.
 | Ausführliche Zwischenbilanz – Standard               | Zwischenbilanz - Standard | Ausführliche Zwischenbilanz – Standard               |
 | Zusammengefasste Zwischenbilanz – Standard                | Zwischenbilanz - Standard | Zusammengefasste Zwischenbilanz - Standard                |
 | Jährlich zusammengefasste Zwischenbilanz – Standard | Zwischenbilanz - Standard | Jährlich zusammengefasste Zwischenbilanz - Standard |
+
+> [!NOTE] 
+> Beim Ausführen der **Zwischenbilanz** in Financial Reporting aktivieren Sie unbedingt die Kontrollkästchen für **Zeilen ohne Beträge anzeigen** und **Berichte ohne aktive Zeilen anzeigen** auf der Registerkarte **Einstellungen**.
 
 ### <a name="row-definition"></a>Zeilendefinition
 
@@ -94,10 +96,7 @@ Jeder Zwischenbilanzbericht verwendet eine andere Spaltendefinition. Diese Spalt
     -   **FD** - Finanzdaten, die nur Soll für das letzte Jahr enthahlten
     -   **FD** - Finanzdaten, die nur Haben für das letzte Jahr enthalten
 
-
-
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung – Übersicht](financial-reporting-getting-started.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kategorien von Wartungsaufträgen und Arten von Wartungsaufträgen, Variationen von Wartungsaufträgen, Handel von Wartungsaufträgen und Wartungsprüflisten
+title: Wartungsauftragstypen, Kategorien, Varianten, Handel und Checklisten
 description: In diesem Thema werden Kategorien von Wartungsaufträgen und Arten von Wartungsaufträgen, Variationen von Wartungsaufträgen, Wartungsauftragsbranchen und Wartungsprüflisten im Asset Management beschrieben.
 author: johanhoffmann
 ms.date: 08/13/2019
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb73fb36ee31d93b2121437d57d959ba6c01a337
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d2a2bcff302814903959f78d6435abd540b46ef5
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842272"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117082"
 ---
-# <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorien von Wartungsaufträgen und Arten von Wartungsaufträgen, Variationen von Wartungsaufträgen, Handel von Wartungsaufträgen und Wartungsprüflisten
+# <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Wartungsauftragstypen, Kategorien, Varianten, Handel und Checklisten
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Jeder Anlage ist ein Anlagentyp zugeordnet. Anlagentypen definieren die Wartungsauftragsarten (und damit die Wartungsaufträge), die auf Anlagen durchgeführt werden können. Wenn Sie einen Arbeitsauftrag anlegen, müssen Sie einen Wartungsauftragstyp auswählen. Sie können nur die Wartungsauftragsarten auswählen, die sich auf das Einrichten der Anlagenart beziehen, die für die Anlage verwendet wird.
 

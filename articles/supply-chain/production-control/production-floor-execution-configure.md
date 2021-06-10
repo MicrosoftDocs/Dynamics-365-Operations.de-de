@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 79e21977e4ef8bce88c97a8fb253345ccc8d6b4f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 84d845055e175e6f4b8078fabeb3307ee96826f2
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814729"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115022"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -71,6 +71,14 @@ Diese Funktion fügt der Produktionsausführungsoberfläche eine Registerkarte f
 
 - Anlagenverwaltungsfunktion für die Produktionsumgebungs-Ausführungsschnittstelle
 
+### <a name="enable-job-search"></a>Aktivieren Sie die Einzuelvorgangssuche
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Diese Funktion ermöglicht das Hinzufügen eines Suchfelds zur Einzelvorgangsliste. Mitarbeiter können einen bestimmten Einzelvorgang finden, indem sie die Job-ID eingeben, oder alle Jobs für einen bestimmten Auftrag finden, indem sie die Auftrags-ID eingeben. Arbeitskräfte können die ID über eine Tastatur oder durch Scannen eines Barcodes eingeben. Wenn Sie diese Funktion nutzen möchten, aktivieren Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Einzelvorgangssuche für die Produktionsausführungsoberfläche
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeiten mit Produktionsausführungsoberflächen-Konfigurationen
 
 Um Gerätekonfigurationen zu erstellen und zu verwalten, gehen Sie zu **Produktionskontrolle \> Einrichtung \> Fertigungsausführung \> Konfigurieren Sie die Ausführung der Produktionsfläche**. Die Seite **Konfigurieren Sie die Ausführung der Produktionsfläche** zeigt eine Liste der vorhandenen Konfigurationen. Auf dieser Seite können folgende Aktivitäten ausgeführt werden:
@@ -81,6 +89,7 @@ Um Gerätekonfigurationen zu erstellen und zu verwalten, gehen Sie zu **Produkti
 Konfigurieren Sie als Nächstes die verschiedenen Einstellungen für die ausgewählte Gerätekonfiguration. Folgende Felder sind verfügbar:
 
 - **Nur Ein- und Auszeit** - Legen Sie diese Option auf *Ja* fest, um eine vereinfachte Oberfläche zu erstellen, die nur die Ein- und Auszeitfunktionalität bietet. Dadurch werden die meisten anderen Optionen auf dieser Seite deaktiviert. Sie müssen alle Zeilen aus dem Inforegister **Tab-Auswahl** entfernen, bevor Sie diese Option aktivieren können.
+- **Suche aktivieren** – Setzen Sie diese Option auf *Ja*, um ein Suchfeld in die Einzelvorgangsliste aufzunehmen. Mitarbeiter können einen bestimmten Einzelvorgang finden, indem sie die Job-ID eingeben, oder alle Jobs für einen bestimmten Auftrag finden, indem sie die Auftrags-ID eingeben. Arbeitskräfte können die ID über eine Tastatur oder durch Scannen eines Barcodes eingeben.
 - **Menge beim Ausstempeln melden** – Stellen Sie diese Option auf *Ja* ein, um die Mitarbeiter aufzufordern, beim Ausstempeln Feedback zu laufenden Vorgängen zu melden. Wird diese Option auf *Nein* eingestellt, werden Arbeiter nicht dazu aufgefordert.
 - **Mitarbeiter sperren** – Wenn diese Option auf *Nein* eingestellt ist, werden die Arbeitnehmer sofort nach der Registrierung abgemeldet (z. B. bei einem neuen Einzelvorgang). Das Gerät kehrt dann zur Anmeldeseite zurück. Wenn diese Option auf *Ja* festgelegt ist, bleibt jeder Mitarbeiter am Einzelvorgangsgerät angemeldet. Ein Mitarbeiter kann sich jedoch manuell abmelden, damit sich ein anderer Mitarbeiter anmelden kann, während das Einzelvorgangsgerät weiterhin unter demselben Systembenutzerkonto ausgeführt wird. Weitere Informationen zu diesen Arten von Konten finden Sie unter [Zugewiesene Benutzer](config-job-card-device.md#assigned-users).
 - **Verwenden Sie den tatsächlichen Zeitpunkt der Registrierung** – Stellen Sie diese Option auf *Ja* ein, um die Zeit für jede neue Registrierung so festzulegen, dass sie genau der Zeit entspricht, zu der die Registrierung von einem Arbeitnehmer eingereicht wurde. Wenn diese Option auf *Nein* eingestellt wird, wird stattdessen die Anmeldezeit verwendet. Normalerweise möchten Sie diese auf *Ja* einstellen, wenn Sie die Optionen **Mitarbeiter sperren** und/oder **Einzelner Arbeiter** auf *Ja* festgelegt haben, falls Mitarbeiter häufig länger angemeldet bleiben.
@@ -89,7 +98,7 @@ Konfigurieren Sie als Nächstes die verschiedenen Einstellungen für die ausgew�
 - **Dauer der Bildschirmsperre** – Wenn die Option **Sperren des Touchscreens zulassen** auf *Ja* festgelegt ist, verwenden Sie diese Option, um anzugeben, wieviele Sekunden der Touchscreen für die Bereinigung gesperrt werden soll. Die Dauer muss eine Zahl zwischen 5 und 120 Sekunden sein.
 - **Kennzeichen erstellen** – Setzen Sie diese Option auf *Ja*, um jedes Mal eine neue Kennzeichnung zu erstellen, wenn ein Mitarbeiter das Einzelvorgangsgerät verwendet, um den Vorgang als beendet zu melden. Das Kennzeichen wird aus einer Nummernfolge generiert, die auf der Seite **Lagerverwaltungsparameter** erstellt wird. Wenn diese Option auf *Nein* festgelegt ist, muss die Arbeitskraft eine bestehende Kennzeichnung definieren, wenn er den Vorgang als beendet meldet.
 - **Etikett drucken** – Setzen Sie diese Option auf *Ja*, um ein Kennzeichenetikett zu drucken, wenn eine Arbeitskraft das Einzelvorgangskartengerät verwendet, um dann den Vorgang als beendet zu melden. Die Konfiguration des Etiketts wird im Dokumentrouting eingerichtet, wie beschrieben in [Dokumenten-Routing-Layout für Kennzeichenetiketten](../warehousing/document-routing-layout-for-license-plates.md).
-- **Registerkartenauswahl** - Verwenden Sie die Einstellungen in diesem Abschnitt, um festzulegen, welche Registerkarten von der Produktionsausführungsoberfläche angezeigt werden sollen, wenn die aktuelle Konfiguration aktiv ist. Sie können so viele Registerkarten entwerfen, wie Sie benötigen, und diese dann hier nach Bedarf hinzufügen und anordnen. Details zum Gestalten von Registerkarten und zum Arbeiten mit den Einstellungen hier finden Sie unter [Gestalten der Produktionsausführungsoberfläche](production-floor-execution-tabs.md).
+- **Registerkartenauswahl**  - Verwenden Sie die Einstellungen in diesem Abschnitt, um festzulegen, welche Registerkarten von der Produktionsausführungsoberfläche angezeigt werden sollen, wenn die aktuelle Konfiguration aktiv ist. Sie können so viele Registerkarten entwerfen, wie Sie benötigen, und diese dann hier nach Bedarf hinzufügen und anordnen. Details zum Gestalten von Registerkarten und zum Arbeiten mit den Einstellungen hier finden Sie unter [Gestalten der Produktionsausführungsoberfläche](production-floor-execution-tabs.md).
 
 ## <a name="clean-up-job-configurations"></a>Bereinigen Sie die Einzelvorgangskonfigurationen
 

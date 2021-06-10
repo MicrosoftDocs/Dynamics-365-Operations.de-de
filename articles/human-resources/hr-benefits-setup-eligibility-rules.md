@@ -2,13 +2,12 @@
 title: Berechtigungsregeln und -optionen konfigurieren
 description: Legen Sie die Berechtigungsregeln und ‑optionen in der Vorteilsverwaltung von Microsoft Dynamics 365 Human Resources fest.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1c5ad568d2e1dd14acdfb3848cace035abfc0507
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
+ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791507"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6093919"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Berechtigungsregeln und -optionen konfigurieren
 
@@ -39,7 +38,7 @@ Während der offenen Registrierung können Mitarbeiter Vorteilspläne auswählen
 
 2. Wählen Sie in der Registerkarte **Berechtigungsregeln** die Option **Neu** aus, um eine Berechtigungsregel zu erstellen. Wählen Sie **Angefügte Pläne** aus, um Pläne anzuzeigen, die mit einer Berechtigungsregel verknüpft sind.
 
-3. Geben Sie Werte für die folgenden Felder an:
+3. Geben Sie Werte für die folgenden Felder an.
 
    | Feld | Beschreibung |
    | --- | --- |
@@ -57,7 +56,7 @@ Während der offenen Registrierung können Mitarbeiter Vorteilspläne auswählen
    | **Registrierungsperiode** | Die Periode, für die die Registrierung einer Neueinstellung zulässig ist. Wenn Sie dies auch in Parametern einstellen, hat die Parametereinstellung Vorrang. |
    | **Ehemaligen Beschäftigungsstatus verwenden** | Gibt an, ob der frühere Beschäftigungsstatus eines Mitarbeiters als Teil der Vorteilsberechtigungsregel verwendet werden soll. Beispielsweise können Sie eine Berechtigungsregel angeben, die auf eine Deckungswartezeit für alle Mitarbeiter verzichtet, die vom Status **Entlassen** zu einem Status **Beschäftigt** innerhalb von 90 Tagen nach ihrer vorherigen Beschäftigung gewechselt haben. |
 
-4. Wählen Sie unter **Zusätzliche Kriterien** die folgenden Optionen aus und fügen Sie nach Bedarf Informationen hinzu:
+4. Wählen Sie unter **Zusätzliche Kriterien** die folgenden Optionen aus und fügen Sie nach Bedarf Informationen hinzu.
 
    | Option | Beschreibung |
    | --- | --- |
@@ -76,7 +75,7 @@ Während der offenen Registrierung können Mitarbeiter Vorteilspläne auswählen
    | **Zulässige Gewerkschaft** | Gibt die Mitgliedschaft bei Gewerkschaften an, die die Berechtigungsregel erfüllen. Beispiel: IG Metall. </br></br>Bei Verwendung einer gewerkschaftsbasierten Berechtigungsregel muss das Enddatum des Gewerkschaftsdatensatzes der Arbeitskraft angegeben werden. Sie können es nicht leer lassen. |
    | **Zulässige Postleitzahl** | Gibt die Postleitzahlen an, die die Berechtigungsregel erfüllen. Beispiel: 58104. |
 
-5. Unter **Zusätzliches Detail** können Sie die folgenden zusätzlichen Details anzeigen:
+5. Unter **Zusätzliches Detail** können Sie die folgenden zusätzlichen Details anzeigen.
 
    | Feld | Beschreibung |
    | --- | --- |
@@ -85,8 +84,74 @@ Während der offenen Registrierung können Mitarbeiter Vorteilspläne auswählen
    | **Berechtigungsreferenz** | Gibt die Werte an, die Sie unter **Zusätzliche Kriterien** ausgewählt haben. |
    | **Beschreibung** | Die Beschreibung, die Sie unter **Zusätzliche Kriterien** ausgewählt haben. |
 
-6. Wählen Sie **Speichern**.
+6. Wählen Sie **Speichern** aus.
 
+## <a name="using-custom-fields-in-eligibility-rules"></a>Verwenden von benutzerdefinierten Feldern in Berechtigungsregeln
+
+[Benutzerdefinierte Felder](hr-developer-custom-fields.md) kann in der Personalabteilung erstellt werden, um zusätzliche Informationen zu verfolgen. Diese Felder können direkt zur Benutzeroberfläche hinzugefügt werden, und der zugrunde liegenden Tabelle wird dynamisch eine Spalte hinzugefügt.  
+
+Benutzerdefinierte Felder können im Berechtigungsprozess verwendet werden. Berechtigungsregeln können einen oder mehrere benutzerdefinierte Feldwerte verwenden, um die Berechtigung eines Mitarbeiters zu bestimmen.  Um einer vorhandenen Regel ein benutzerdefiniertes Feld hinzuzufügen oder eine neue Regel zu erstellen, gehen Sie zu **Leistungsverwaltung> Links> Einrichtung > Teilnahmebedingungen> Benutzerdefinierte Feldberechtigung**. Auf dieser Seite können Sie eine Regel erstellen, die ein oder mehrere benutzerdefinierte Felder verwendet, und Sie können für jedes benutzerdefinierte Feld mehrere Werte definieren, um die Berechtigung zu bestimmen.
+
+Die folgenden Tabellen unterstützen benutzerdefinierte Felder, die bei der Berechtigungsverarbeitung verwendet werden können:
+
+- Arbeitskraft (HcmWorker)  
+- Auftrag (HcmJob)  
+- Position (HcmPosition)  
+- Positionsdetail (HcmPositionDetail)  
+- Arbeitskraftzuweisung für die Position  
+- Beschäftigung (HcmEmployment)  
+- EmploymentDetails (HcmEmploymentDetails)  
+- Auftragsdetails (HcmJobDetails)  
+
+Die folgenden benutzerdefinierten Feldtypen sind in der Berechtigungsverarbeitung unterstützt:
+
+- Text  
+- Auswahlliste  
+- Anzahl  
+- Dezimal  
+- Kontrollkästchen  
+
+In der folgenden Tabelle sind die Feldinformationen für benutzerdefinierte Feldberechtigungsformulare aufgeführt.
+
+| Feld  | Beschreibung |
+|--------|-------------|
+| Name | Name der Kriterien, die erstellt werden. |
+| Name der Tabelle | Der Tabellenname, der das benutzerdefinierte Feld enthält, das für die Berechtigungsregel verwendet wird. |
+| Feldname | Das Feld, das für die Berechtigungsregel verwendet wird. |
+| Operatortyp | Zeigt den Operator an, der in der Konfiguration der benutzerdefinierten Feldberechtigung verwendet wird. |
+| Wert | Zeigt den Wert an, der in der Konfiguration der benutzerdefinierten Feldberechtigung verwendet wird. |
+
+## <a name="eligibility-logic"></a>Zulassungslogik
+
+In den folgenden Abschnitten wird beschrieben, wie die Leistungsberechtigung verarbeitet wird.
+
+### <a name="rules-assigned-to-a-plan"></a>Einem Plan zugewiesene Regeln 
+Wenn einem Leistungsplan mehrere Anspruchsregeln zugewiesen sind, muss ein Mitarbeiter mindestens eine Regel erfüllen, um sich für den Leistungsplan anmelden zu können.  Im folgenden Beispiel muss der Mitarbeiter entweder die Anforderungen der Regel **Auftragstyp** oder die Regel **Aktive Mitarbeiter** erfüllen.
+
+![Der Mitarbeiter muss entweder die Anforderungen der Regel Auftragstyp oder die Regel Aktive Mitarbeiter erfüllen.](media/RulesAssignedToAPlan.png)
+ 
+### <a name="criteria-within-an-eligibility-rule"></a>Kriterien innerhalb einer Zulassungsregel 
+Innerhalb einer Regel definieren Sie die Kriterien, aus denen die Regel besteht. Im obigen Beispiel sind die Kriterien für die Regel **Stellentyp** wobei Stellentyp = Direktoren. Daher muss der Mitarbeiter auf der Stufe Direktor sein, um berechtigt zu sein. Dies ist eine Regel, bei der es nur ein Kriterium innerhalb der Regel gibt.
+
+Sie können Regeln definieren, die mehrere Kriterien haben. Wenn Sie innerhalb einer Anspruchsregel mehrere Kriterien definieren, muss ein Mitarbeiter alle Kriterien innerhalb der Regel erfüllen, um für den Leistungsplan in Frage zu kommen. 
+
+Zum Beispiel setzt sich die Regel **Aktive Mitarbeiter** aus den folgenden Kriterien zusammen. Damit der Mitarbeiter aufgrund der Regel **Aktive Mitarbeiter** bereichtigt ist, muss der Mitarbeiter in der juristischen Person USMF beschäftigt sein *und* einen Positionstyp Vollzeit haben.  
+
+![Kriterien innerhalb einer Zulassungsregel](media/CriteriaWithinAnEligibilityRule.png) 
+ 
+### <a name="multiple-conditions-within-criteria"></a>Mehrere Bedingungen innerhalb von Kriterien
+
+Regeln können weiter erweitert werden, um mehrere Bedingungen innerhalb eines einzigen Kriteriums zu verwenden. Der Mitarbeiter muss mindestens eine Bedingung erfüllen, um berechtigt zu sein. Um auf dem obigen Beispiel aufzubauen, kann die Regel **Aktive Mitarbeiter** weiter ausgebaut werden, um Mitarbeiter einzubeziehen, die auch Teilzeitbeschäftigte sind. Infolgedessen muss der Mitarbeiter jetzt ein Mitarbeiter in USMF sein *und* entweder ein Vollzeit- oder ein Teilzeitbeschäftigter sein.  
+
+![Mehrere Bedingungen innerhalb von Kriterien](media/MultipleConditionsWithinCriteria.png) 
+ 
+### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Teilnahmebedingungen innerhalb eines benutzerdefinierten Feldkriteriums 
+Ähnlich wie oben können benutzerdefinierte Felder beim Erstellen von Berechtigungsregeln verwendet werden und auf dieselbe Weise funktionieren. Beispielsweise möchten Sie den Mitarbeitern von Fargo und Kopenhagen, die von zu Hause aus arbeiten, eine Internet-Rückerstattung anbieten, da die Internetkosten an diesen Standorten höher sind. Erstellen Sie dazu zwei benutzerdefinierte Felder: **Bürostandort** (Auswahlliste) und **Von zu Hause aus arbeiten** (Kontrollkästchen). Erstellen Sie dann eine Regel mit dem Namen **WFH-Mitarbeiter**. Das Kriterium für die Regel ist wo **Bürostandort = Fargo** oder **Kopenhagen** *und* wo **Von zu Hause aus arbeiten = Ja**.
+
+Die benutzerdefinierten Berechtigungsregeln müssten wie in der folgenden Abbildung angegeben eingerichtet werden. 
+
+![Teilnahmebedingungen innerhalb eines benutzerdefinierten Feldkriteriums](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+ 
 ## <a name="configure-bundles"></a>Bündel konfigurieren
 
 Bündel sind ein Satz verwandter Vorteilspläne. Sie können Vorteilsbündel verwenden, um Vorteilspläne zu gruppieren, die ein Mitarbeiter auswählen muss, um sich für bestimmte Vorteilspläne anzumelden, die möglicherweise von anderen Vorteilsplanregistrierungen abhängig sind. Beispiele dafür, wann Sie ein Bündel verwenden sollten:
@@ -99,7 +164,7 @@ Bündel sind ein Satz verwandter Vorteilspläne. Sie können Vorteilsbündel ver
 
 2. Wählen Sie in der Registerkarte **Bündel** die Option **Neu** aus, um ein Bündel zu erstellen. Wählen Sie **Angefügte Pläne** aus, um Pläne anzuzeigen, die mit einem Bündel verknüpft sind.
 
-3. Geben Sie Werte für die folgenden Felder an:
+3. Geben Sie Werte für die folgenden Felder an.
 
    | Feld | Beschreibung |
    | --- | --- |
@@ -119,7 +184,7 @@ In den Perioden wird festgelegt, wann die Vorteile in Kraft sind und wann sich M
 
 2. Wählen Sie in der Registerkarte **Perioden** die Option **Neu** aus, um eine Periode zu erstellen. Um einen Prozess auszuführen, der alle gültigen aktiven Vorteilspläne mit der Vorteilsperiode verknüpft, wählen Sie **Pläne anhängen**. Wählen Sie **Angefügte Pläne** aus, um Pläne anzuzeigen, die mit einem Bündel verknüpft sind. 
 
-3. Geben Sie Werte für die folgenden Felder an:
+3. Geben Sie Werte für die folgenden Felder an.
 
    | Feld | Beschreibung |
    | --- | --- |
@@ -141,7 +206,7 @@ Sie können Flexguthabenprogramme verwenden, um Mitarbeiter für Vorteile gemä�
 
 2. Wählen Sie auf der Registerkarte **Perioden** die Option **Flexguthabenprogramme**.
 
-3. Wählen Sie ein zu übernehmendes Flexguthabenprogramm aus. Die Felder enthalten die folgenden Informationen:
+3. Wählen Sie ein zu übernehmendes Flexguthabenprogramm aus. Die Felder enthalten die folgenden Informationen.
 
    | Feld | Beschreibung |
    | --- | --- |
@@ -157,13 +222,13 @@ Sie können Flexguthabenprogramme verwenden, um Mitarbeiter für Vorteile gemä�
 
 ## <a name="configure-programs"></a>Programme konfigurieren
 
-Bei Programmen handelt es sich um eine Reihe von Vorteilsplänen, für die gemeinsame Berechtigungsregeln gelten. Sie können Berechtigungsregeln für das gesamte Programm anstatt für jeden einzelnen Plan definieren. Beispiel: ein FTE-Programm von Contoso Canada oder ein Führungskräfteprogramm von Contoso Europe. 
+Bei Programmen handelt es sich um eine Reihe von Vorteilsplänen, für die gemeinsame Berechtigungsregeln gelten. Sie können Berechtigungsregeln für das gesamte Programm anstatt für jeden einzelnen Plan definieren. Beispiel: ein Programm für Vollzeitmitarbeiter von Contoso Kanada oder ein Programm auf Führungsebene von  Contoso Europa. 
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellung** die Option **Berechtigungsregeln und -optionen**.
 
 2. Wählen Sie in der Registerkarte **Programme** die Option **Neu** aus, um ein Programm zu erstellen. Um Ausnahmen für Mitarbeiter zu machen, die die Anforderungen der Berechtigungsregeln nicht erfüllen, wählen Sie **Berechtigungsregelüberschreibung**. Wählen Sie **Angefügte Pläne** aus, um Pläne anzuzeigen, die mit einem Programm verknüpft sind.
 
-3. Geben Sie Werte für die folgenden Felder an:
+3. Geben Sie Werte für die folgenden Felder an.
 
    | Feld | Beschreibung |
    | --- | --- |

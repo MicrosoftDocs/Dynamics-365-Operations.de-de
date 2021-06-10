@@ -8,18 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: KMKnowledgeCollectorPlanningTable, KMKnowledgeCollectorPlanningMulti, SysQueryForm, HcmPersonLookup, KMKnowledgeCollectorPlanning, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ddad70792c4ebc1785698812fe12406142f07a2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 952048ce0a2ac94be70d7bde0dc52610f19151ed
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790619"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6056299"
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Einen Fragebogen mithilfe des Zeitplans verteilen
 
@@ -57,7 +56,7 @@ Die Fragebogenplanung ermöglicht es Ihnen, Fragebögen für mehrere Befragungst
 
     * Beispiel: Sehr geehrte %P%, bitte melden Sie sich im Mitarbeiter-Self-Service an, um den Fragebogen zur Mitarbeitergesundheit auszufüllen.  Contoso  
 
-12. Klicken Sie auf "Speichern".
+12. Klicken Sie auf Speichern.
 
 ## <a name="use-the-setup-details-to-select-the-questionnaires-to-be-answered-as-well-as-any-queries-to-use-to-select-respondents"></a>Verwenden Sie die Einrichtungsdetails, um die zu beantwortenden Fragebögen sowie alle Abfragen für Auswahl der Antwortenden auszuwählen.
 

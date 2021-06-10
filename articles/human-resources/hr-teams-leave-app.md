@@ -2,13 +2,12 @@
 title: Urlaubsanträge in Teams verwalten
 description: In diesem Thema wird beschrieben, wie Sie arbeitsfreie Zeit in der Dynamics 365 Human Resources-App in Microsoft Teams beantragen.
 author: andreabichsel
-ms.date: 02/23/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
-ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
+ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5953411"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097258"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Urlaubsanträge in Teams verwalten
 
@@ -33,21 +32,13 @@ Mit der Dynamics 365 Human Resources-App in Microsoft Teams können Sie schnell 
 
 Sie finden die App Dynamics 365 Human Resources im Teams-Store.
 
-1. Wählen Sie in Microsoft Teams die drei Punkte aus.
-
-   ![Human Resources-App für Abwesenheiten in Teams – Ellipsen](./media/hr-teams-leave-app-ellipses.png)
+1. Im Microsoft Teams navigieren Sie zur Liste der Apps.
  
 2. Suchen Sie nach Dynamics 365 Human Resources, und wählen Sie dann die Kachel **Human Resources** aus.
 
-   ![Human Resources-App für Abwesenheiten in Teams – Kachel „Human Resources“](./media/hr-teams-leave-app-human-resources-tile.png)
-
 3. Wählen Sie die Schaltfläche **Hinzufügen** aus, um die App zu installieren.
 
-   ![Human Resources-App für Abwesenheiten in Teams – Installation](./media/hr-teams-leave-app-in-store.png)
-
 Wenn Sie nicht automatisch von der App angemeldet werden, wählen Sie die Registerkarte **Einstellungen** aus, um sich anzumelden.
-
-![Human Resources-App für Abwesenheiten in Teams – Registerkarte „Einstellungen“](./media/hr-teams-leave-app-settings-tab.png)
 
 > [!NOTE]
 > Wenn kein Anmeldedialogfeld angezeigt wird, überprüfen Sie die Einstellungen Ihres Browsers, um Popupfenster zuzulassen. 
@@ -61,20 +52,24 @@ Wenn Sie Zugriff auf mehrere Human Resources-Instanzen haben, können Sie auf de
 
 Nach der Installation der App wird eine Willkommensnachricht angezeigt, in der Sie über die Aktivitätstypen informiert werden, die der Bot in Ihrem Namen ausführen kann.
 
-![Human Resources-App für Abwesenheiten in Teams – Willkommensnachricht für Bot](./media/hr-teams-leave-app-bot.png)
- 
 > [!NOTE]
 > Bei der ersten Interaktion mit dem Bot müssen Sie sich möglicherweise anmelden. Wenn kein Anmeldedialogfeld angezeigt wird, überprüfen Sie die Einstellungen Ihres Browsers, um Popupfenster zuzulassen.
 
 Sie können den Bot bitten, die folgenden Aktionen durchzuführen:
 
-- Urlaubsanforderung für Sie starten
+- Zeigen Sie Ihre aktuellen Urlaubsguthaben an. Senden Sie beispielsweise eine Nachricht mit dem Titel Urlaubssalden anzeigen.
+
+- Urlaubsanforderung für Sie starten Senden Sie beispielsweise eine Nachricht mit der Aufschrift Nehmen Sie sich frei oder Ich möchte nächsten Donnerstag und Freitag Urlaub machen, um genauer zu sagen, ob Sie Urlaub für den Urlaubstyp beantragen möchten. 
 
   ![Starten Sie einen Urlaubsantrag im Teams-Chat](./media/hr-teams-leave-app-initiate.png)
 
 - Der Chat-Bot wird einen Urlaubsantrag für Sie ausfüllen. Wählen Sie **Abwesenheitsantrag** und bearbeiten Sie die Details für Ihren Antrag.
 
-  ![Details des Urlaubsantrags bearbeiten](./media/hr-teams-leave-app-details.png)
+   Wenn Sie Urlaubsanträge für mehrere Urlaubstypen zum selben Datum einreichen möchten, wählen Sie die Option **Tag teilen mit** aus dem Menü **Mehr Optionen**. 
+
+   Wenn Sie einen halbtägigen Urlaub auswählen, während die Urlaubsantragseinheit in Tagen angegeben ist, können Sie angeben, ob Sie eine Freistellung für den ersten halben Tag oder den zweiten halben Tag beantragen möchten, indem Sie die Option **Halbtagesdefinition** aus dem Menü **Mehr Optionen** auswählen.
+   
+   ![Halbtagesdefinitionen](./media/HalfDayDefinitions.png)
 
 - Wenn Sie mit der Bearbeitung der Details Ihres Urlaubsantrags fertig sind, wählen Sie **Senden**, um ihn zur Genehmigung zu senden.
 
@@ -91,42 +86,36 @@ Auf der Registerkarte **Arbeitsfreie Zeit** können Sie Folgendes anzeigen:
 - Anforderungen von arbeitsfreier Zeit
 
 - Urlaubsanforderungen entwerfen
-
-![Human Resources-App für Abwesenheiten in Teams – Registerkarte „Arbeitsfreie Zeit“](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### <a name="create-a-new-request"></a>Neue Anforderung erstellen
 
 1. Wählen Sie **Neue Anforderung** aus, um eine neue Urlaubsanforderung zu erstellen.
 
-   ![Human Resources-App für Abwesenheiten in Teams – Neue Anforderung](./media/hr-teams-leave-app-timeoff-tab-new.png)
-
 2. Geben Sie den/die Tag(e) ein, den/die Sie sich frei nehmen möchten, und wählen Sie dann **Hinzufügen** aus.
 
-   ![Human Resources-App für Abwesenheiten in Teams – Arbeitsfreie Zeit hinzufügen](./media/hr-teams-leave-app-timeoff-tab-add.png)
+   ![Human Resources-App für Abwesenheiten in Teams – Arbeitsfreie Zeit hinzufügen](./media/TimeOffHours.png)
 
 3. Geben Sie gegebenenfalls einen Ursachencode ein. Geben Sie auch Kommentare ein, und fügen Sie Anhänge hinzu.
 
-4. Wenn Sie die Informationen eingegeben haben, geben Sie **Absenden** ein, um sie zur Genehmigung einzureichen. Sie können auch **Als Entwurf speichern** eingeben, um später darauf zurückzukommen.
+4. Wenn Sie Urlaubsanträge für mehrere Urlaubstypen zum selben Datum einreichen möchten, wählen Sie die Option **Tag teilen mit** aus dem Menü **Mehr Optionen** aus.
+
+5. Wählen Sie die Option **Halbtagesdefinition**, um anzugeben, ob Sie den ersten halben Tag oder den zweiten halben Tag frei beantragen möchten. Diese Option ist verfügbar, wenn die Urlaubsantragseinheit in Tagen angegeben ist und der angeforderte Betrag 0,5 Tage beträgt.
+
+6. Wenn Sie die Informationen eingegeben haben, wählen Sie **Absenden**, um sie zur Genehmigung einzureichen. Sie können auch **Als Entwurf speichern** eingeben, um später darauf zurückzukommen.
 
 ### <a name="manage-draft-requests"></a>Entwurfsanforderungen verwalten
 
 1. Wählen Sie die Registerkarte **Entwürfe** aus.
 
-   ![Human Resources-App für Abwesenheiten in Teams – Registerkarte „Entwürfe“](./media/hr-teams-leave-app-drafts-tab.png)
-
 2. Wählen Sie den Stift aus, um die Anforderung zu bearbeiten, oder wählen Sie den Papierkorb aus, um die Anforderung zu löschen.
 
 3. Nehmen Sie die erforderlichen Änderungen vor. Wenn Sie die Informationen eingegeben haben, geben Sie **Absenden** ein, um sie zur Genehmigung einzureichen. Sie können auch **Als Entwurf speichern** auswählen, um später darauf zurückzukommen.
-
-   ![Human Resources-App für Abwesenheiten in Teams – „Entwurf bearbeiten“](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### <a name="respond-to-teams-notifications"></a>Antworten auf Teams-Benachrichtigungen
 
 Wenn Sie oder ein Mitarbeiter, für den Sie Genehmiger sind, einen Urlaubsantrag stellen, erhalten Sie eine Benachrichtigung in der Human Resources-App in Teams. Sie können die Benachrichtigung auswählen, um sie anzuzeigen. Benachrichtigungen werden auch im **Plaudern**-Bereich angezeigt.
 
 Wenn Sie ein Genehmiger sind, können Sie in der Benachrichtigung **Genehmigen** oder **Verweigern** auswählen. Sie können auch eine optionale Nachricht bereitstellen.
-
-![Urlaubsantragsbenachrichtigungen in der Human Resources-Teams-App](./media/hr-teams-leave-app-notification.png)
 
 ## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Informationen zu bevorstehender arbeitsfreier Zeit an Ihre Kollegen senden
 
@@ -138,15 +127,9 @@ Nachdem Sie die Human Resources-App für Teams installiert haben, können Sie Ih
 
 2. Wählen Sie die Urlaubsanfrage aus, die Sie teilen möchten. Wenn Sie einen Entwurf für einen Urlaubsantrag freigeben möchten, wählen Sie zuerst **Entwürfe**.
 
-   ![Einen bevorstehenden Urlaubsantrag zum Teilen auswählen](./media/hr-teams-leave-app-chat-search.png)
-
 Ihre Urlaubsanfrage wird im Chat angezeigt.
 
-![Urlaubsantragskarte in Human Resources](./media/hr-teams-leave-app-chat-card.png)
-
-Wenn Sie einen Entwurfsantrag freigegeben haben, wird dieser als Entwurf angezeigt:
-
-![Entwurfsurlaubsantragskarte in Human Resources](./media/hr-teams-leave-app-chat-draft-card.png)
+Wenn Sie einen Entwurfsantrag freigegeben haben, wird dieser als Entwurf angezeigt.
 
 ## <a name="view-your-teams-leave-calendar"></a>Urlaubskalender Ihres Teams anzeigen
 
@@ -155,8 +138,6 @@ Wenn Sie ein Manager mit direkten Berichten sind, können Sie die genehmigte und
 1. Wählen Sie in der Human Resources-App in Teams die Option aus **Arbeitsfreie Zeit** aus.
 
 2. Wählen Sie **Teamkalender**. Der Kalender zeigt die genehmigte und ausstehende arbeitsfreie Zeit Ihrer direkten Berichte an.
-
-   ![Kalender in der Human Resources-Teams-App anzeigen](./media/hr-teams-leave-app-view-calendar.png)
 
    > [!NOTE]
    > Wenn Sie den Team-Kalender nicht sehen können, bitten Sie Ihren Admin, ihn zu aktivieren. Weitere Informationen finden Sie unter [Installation und Einrichten](hr-admin-teams-leave-app.md#install-and-setup).

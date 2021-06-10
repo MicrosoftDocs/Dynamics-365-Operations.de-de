@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95472a00d34ba939ac89b4e2484f34d50bee3088
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018311"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112672"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Auf das Partei- und globale Adressbuchmodell aktualisieren
 
@@ -22,28 +22,29 @@ ms.locfileid: "6018311"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Die [Azure Data Factory-Vorlage](https://aka.ms/dual-write-gab-adf) hilft Ihnen beim Aktualisieren vorhandener **Konto**-, **Kontakt**- und **Kreditor**-Tabellendaten in dualem Schreiben in das Partei- und das globale Adressbuchmodell. Die Vorlage stimmt die Daten sowohl von Finance and Operations-Apps als auch von Anwendungen zur Kundenbindung ab. Am Ende des Prozesses werden die Felder **Partei** und **Kontakt** für **Partei**-Datensätze erstellt und mit **Konto**-, **Kontakt**- und **Kreditor**-Datensätzen in Anwendungen zur Kundenbindung verknüpft. Eine .csv-Datei (`FONewParty.csv`) wird generiert, um einen neuen **Partei**-Datensatz in der Finance and Operations-App zu erstellen. Dieses Thema enthält Anweisungen zur Verwendung der Data Factory-Vorlage und zum Aktualisieren Ihrer Daten.
+Die [Microsoft Azure Data Factory-Vorlage](https://aka.ms/dual-write-gab-adf) hilft Ihnen beim Aktualisieren vorhandener **Konto-**, **Kontakt**- und **Kreditor**-Tabellendaten in dualem Schreiben in das Partei- und das globale Adressbuchmodell. Die Vorlage stimmt die Daten sowohl von Finance and Operations Apps als auch von Customer Engagement Anwendungen ab. Am Ende des Prozesses werden die Felder **Partei** und **Kontakt** für **Partei**-Datensätze erstellt und mit **Konto**-, **Kontakt**- und **Kreditor**-Datensätzen in Anwendungen zur Kundenbindung verknüpft. Eine .csv-Datei (`FONewParty.csv`) wird generiert, um einen neuen **Partei**-Datensatz in der Finance and Operations App zu erstellen. Dieses Thema enthält Anweisungen zur Verwendung der Data Factory-Vorlage und zum Aktualisieren Ihrer Daten.
 
 Wenn Sie keine Anpassungen vorgenommen haben, können Sie die Vorlage unverändert verwenden. Wenn Sie Anpassungen für **Konto**, **Kontakt** und **Kreditor** vorgenommen haben, müssen Sie die Vorlage anhand der folgenden Anweisungen ändern.
 
-> [!Note]
+> [!NOTE]
 > Die Vorlage hilft nur, die **Partei**-Daten zu aktualisieren. Ein zukünftiger Release wird postalische und elektronische Adressen enthalten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Es gelten die folgenden Voraussetzungen:
+Die folgenden Voraussetzungen sind erforderlich, um ein Upgrade auf das Partei- und das globale Adressbuchmodell durchzuführen:
 
 + [Azure-Abonnement](https://portal.azure.com/)
 + [Zugriff auf die Vorlage](https://aka.ms/dual-write-gab-adf)
-+ Sie sind ein bestehender Kunde für duales Schreiben.
++ Sie müssen ein bestehender Kunde für duales Schreiben sein.
 
 ## <a name="prepare-for-the-upgrade"></a>Vorbereitung auf die Aktualisierung
+Die folgenden Aktivitäten sind erforderlich, um das Upgrade vorzubereiten:
 
 + **Vollständig synchronisiert**: Beide Umgebungen sind vollständig im Hinblick auf **Konto (Kunde)**, **Kontakt** und **Kreditor** synchronisiert.
 + **Integrationsschlüssel**: Die Tabellen **Konto (Kunde)**, **Kontakt** und **Kreditor** in Apps zur Kundenbindung verwenden die sofort einsatzbereiten Integrationsschlüssel. Wenn Sie die Integrationsschlüssel angepasst haben, müssen Sie die Vorlage anpassen.
 + **Parteinummer**: Alle **Konto (Kunde)**-, **Kontakt**- und **Kreditor**-Datensätze, die aktualisiert werden, haben eine **Partei**-Nummer. Aufzeichnungen ohne **Partei**-Nummer werden ignoriert. Wenn Sie diese Datensätze aktualisieren möchten, fügen Sie eine **Partei**-Nummer hinzu, bevor Sie den Aktualisierungsprozess starten.
 + **Systemausfall**: Während des Aktualisierungsprozesses müssen Sie sowohl die Finance and Operations- als auch die Kundenbindungsumgebung offline nehmen.
-+ **Momentaufnahme**: Machen Sie sowohl von der Finance and Operations als auch der App zur Kundenbindung eine Momentaufnahme. Verwenden Sie die Momentaufnahmen, um bei Bedarf den vorherigen Status wiederherzustellen.
++ **Momentaufnahme**: Machen Sie sowohl von der Finance and Operations App als auch der Customer Engagement App eine Momentaufnahme. Verwenden Sie die Momentaufnahmen, um bei Bedarf den vorherigen Status wiederherzustellen.
 
 ## <a name="deployment"></a>Bereitstellung
 
@@ -78,15 +79,19 @@ Es gelten die folgenden Voraussetzungen:
     FO Linked Service_properties_type Properties_tenant | Geben Sie die Mandanteninformationen (Domänenname oder Mandanten-ID) an, unter denen sich Ihre Anwendung befindet.
     FO Linked Service_properties_type Properties_aad Resource Id | `https://sampledynamics.sandboxoperationsdynamics.com`
     FO Linked Service_properties_type Properties_service Principal Id | Geben Sie den Schlüssel der Client-ID an.
-    Dynamics Crm Linked Service_properties_type Properties_username | Der Benutzername für die Verbindung zu Dynamics.
+    Dynamics Crm Linked Service_properties_type Properties_username | Der Benutzername für die Verbindung zu Dynamics 365.
 
-    Weitere Informationen finden Sie unter [Manuelles Höherstufen einer Resource Manager-Vorlage für jede Umgebung](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Eigenschaften des verknüpften Diensts](/azure/data-factory/connector-dynamics-ax#linked-service-properties) und [Daten mit Azure Data Factory kopieren](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    Zusätzliche Informationen finden Sie unter einem der folgenden Themen: 
+    
+    - [Manuelles Heraufstufen einer Resource Manager-Vorlage für jede Umgebung](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment)
+    - [Verknüpfte Serviceeigenschaften](/azure/data-factory/connector-dynamics-ax#linked-service-properties)
+    - [Kopieren Sie Daten mit Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. Überprüfen Sie nach der Bereitstellung die Datensätze, den Datenfluss und den verknüpften Dienst der Data Factory.
 
    ![Datensätze, Datenfluss und verknüpfter Dienst](media/data-factory-validate.png)
 
-11. Gehen Sie zu **Verwalten**. Wählen Sie unter **Verbindungen** **Verknüpfter Dienst** aus. Wählen Sie **DynamicsCrmLinkedService** aus. Geben Sie im Formular **Verknüpften Dienst bearbeiten (Dynamics CRM)** die folgenden Werte ein:
+11. Gehen Sie zu **Verwalten**. Wählen Sie unter **Verbindungen** **Verknüpfter Dienst** aus. Wählen Sie **DynamicsCrmLinkedService** aus. Geben Sie im Formular **Verknüpften Dienst bearbeiten (Dynamics CRM)** die folgenden Werte ein.
 
     Feld | Wert
     ---|---
@@ -125,7 +130,7 @@ Es gelten die folgenden Voraussetzungen:
 
 5. Deaktivieren Sie in der App zur Kundenbindung die folgenden Plugin-Schritte.
 
-    + Konto aktualisieren
+    + Kontoupdate
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Aktualisieren des Kontos
          + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Aktualisieren des Kontos
     + Kontakt aktualisieren
@@ -157,13 +162,13 @@ Es gelten die folgenden Voraussetzungen:
 8. Importieren Sie den neuen **Partei**-Datensatz in der Finance and Operations-App.
 
     + Laden Sie die Datei `FONewParty.csv` aus dem Azure Blob Storage herunter. Der Pfad lautet `partybootstrapping/output/FONewParty.csv`.
-    + Konvertieren Sie die Datei `FONewParty.csv` in eine Excel-Datei und importieren Sie die Excel-Datei in die Finance and Operations-App.  Wenn der CSV-Import bei Ihnen funktioniert, können Sie die CSV-Datei direkt importieren. Das Importieren kann je nach Datenvolumen einige Stunden dauern. Weitere Informationen finden Sie unter [Übersicht über Datenimport- und -exportaufträge](../data-import-export-job.md).
+    + Konvertieren Sie die Datei `FONewParty.csv` in eine Excel-Datei und importieren Sie die Excel-Datei in die Finance and Operations App. Wenn der CSV-Import bei Ihnen funktioniert, können Sie die CSV-Datei direkt importieren. Das Importieren kann je nach Datenvolumen einige Stunden dauern. Weitere Informationen finden Sie unter [Übersicht über Datenimport- und -exportaufträge](../data-import-export-job.md).
 
     ![Die Datavers-Partei-Datensätze importieren](media/data-factory-import-party.png)
 
 9. Aktivieren Sie in den Apps zur Kundenbindung die folgenden Plugin-Schritte:
 
-    + Konto aktualisieren
+    + Kontoupdate
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Aktualisieren des Kontos
          + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Aktualisieren des Kontos
     + Kontakt aktualisieren
@@ -198,4 +203,4 @@ Es gelten die folgenden Voraussetzungen:
 
 ## <a name="learn-more-about-the-template"></a>Mehr über die Vorlage
 
-In der [readme.md](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md)-Datei finden Sie Anmerkungen zur Vorlage.
+Weitere Informationen zur Vorlage finden Sie unter [Kommentare zur Readme-Datei für Azure Data Factory-Vorlagen](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).

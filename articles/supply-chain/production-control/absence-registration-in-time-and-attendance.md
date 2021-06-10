@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b765ae63cfb17e26439758f2a0ed64770ef70881
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a94df9dd706c2540779db70e794e4a0a3f2dd186
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809277"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103021"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Abwesenheitserfassung in "Zeit und Anwesenheit"
 
@@ -101,7 +101,7 @@ Arbeitskraftzeiterfassungen müssen berechnet und genehmigt werden, damit sie ei
 
 Eine genehmigende Person kann die Zeiterfassungen einer Arbeitskraft ändern. Der Genehmiger kann jede Abwesenheit auch ändern, die die Arbeitskraft registriert hat. Wenn der Genehmiger manuell eine Zeitperiode eingibt, die einen Abwesenheitscode hat, wird der Abwesenheitscode für diese Periode nicht durch den Standardabwesenheitscode anhand von Zeit- und Anwesenheitsparametern überschrieben.
 
-Beispielsweise stempelt eine Arbeitskraft um 10 ein und wählt einen Abwesenheitscode aus, der angibt, dass sie sich verspätet. Später informiert die Arbeitskraft ihren Supervisor, dass sie einen Arzttermin von 8 bis zu 10 einen Arzttermin hatte. Ein Arzttermin sollte keinen Abzug im Lohn der Arbeitskraft verursachen. Daher in diesem Fall kann der Supervisor die zwei Stunden der Abwesenheit von 8 bis auf 10 am Morgen regulieren, indem er manuell einem Abwesenheitscode eingibt, und Krankheit für diese zwei Stunden angibt.
+Beispielsweise stempelt eine Arbeitskraft um 10 ein und wählt einen Abwesenheitscode aus, der angibt, dass sie sich verspätet. Später informiert die Arbeitskraft ihren Vorgesetzten, dass sie von 8 bis zu 10 einen Arzttermin hatte. Ein Arzttermin sollte keinen Abzug im Lohn der Arbeitskraft verursachen. Daher in diesem Fall kann der Supervisor die zwei Stunden der Abwesenheit von 8 bis auf 10 am Morgen regulieren, indem er manuell einem Abwesenheitscode eingibt, und Krankheit für diese zwei Stunden angibt.
 
 ### <a name="calculate-and-approve-absence"></a>Berechnen und Genehmigen von Abwesenheit
 
