@@ -92,9 +92,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Neuerungen oder Änderungen in Commerce
                   items:
-                    - name: Neuerungen oder Änderungen auf der Startseite von Commerce
+                    - name: Neuerungen oder Änderungen in Commerce – Startseite
                       href: get-started/whats-new-home-page.md
-                    - name: "Commerce\_10.0.19 (Juli\_2021)"
+                    - name: "Commerce\_10.0.20 (Juli\_2021)"
+                      href: get-started/whats-new-commerce-10-0-20.md
+                    - name: "Commerce\_10.0.19 (Juni\_2021)"
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: "Commerce\_10.0.18 (Mai\_2021)"
                       href: get-started/whats-new-commerce-10-0-18.md
@@ -552,10 +554,12 @@
                       href: configure-emailed-receipt-formats.md
                     - name: Transaktions- und Beleg-E-Mails einen QR-Code oder Barcode hinzufügen
                       href: add-qr-code-barcode-email.md
-                - name: Bing Karten für Ihr Unternehmen verwalten
+                - name: Bing Karten für Ihre Organisation verwalten
                   href: dev-itpro/manage-bing-maps.md
                 - name: Zeitfenster für die Kundenabholung erstellen und aktualisieren
                   href: dev-itpro/pickup-timeslots.md
+                - name: 'Produktdimensionswerte konfigurieren, sodass Sie als Muster angezeigt werden'
+                  href: dev-itpro/dimensions-swatch.md
         - name: Verkaufsförderung für Produkte und Dienstleistungen
           items:
             - name: 'Kategorien, Produkte und Sortimente'
@@ -932,7 +936,9 @@
                   href: web-activity-opt-out.md
                 - name: Einstellungen für Maßeinheiten übernehmen
                   href: unit-of-measure.md
-            - name: Website-Inhalte pflegen
+                - name: Anzeigeeinstellungen für Produktdimensionen anwenden
+                  href: dimension-settings.md
+            - name: Site-Inhalte verwalten
               items:
                 - name: Möglichkeiten zur Inhaltsergänzung
                   href: add-manage-content.md
@@ -1206,11 +1212,11 @@
               href: store-performance-information.md
             - name: 'Analysen zu Aktualität, Häufigkeit und Geldbeträgen (RFM) einrichten'
               href: set-up-rfm-analysis.md
-            - name: "Microsoft Clarity in Dynamics\_365 Commerce einrichten"
+            - name: Microsoft Clarity in Dynamics 365 einrichten
               href: set-up-clarity.md
         - name: Globalisierung
           items:
-            - name: Überblick über die Steuerintegration für Commerce-Kanal
+            - name: Steuerintegrationsübersicht für Commerce-Kanal
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Steuerintegration für Commerce-Kanal einrichten
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
@@ -1946,7 +1952,7 @@
                   items:
                     - name: Erstellte Berichtsergebnisse nachverfolgen und mit Ausgangswerten vergleichen
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
-                    - name: Verbesserungen bei der Nachverfolgung erstellter ER-Berichtsergebnisse und Vergleich mit Ausgangswerten
+                    - name: 'Nachverfolgung der erstellten ER-Berichtsergebnisse verbessern, um sie mit Ausgangswerten zu vergleichen'
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
                     - name: Testen mit ER automatisieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
@@ -2262,6 +2268,8 @@
                       href: e-commerce-extensibility/request-properties-object.md
                     - name: App-Einstellungen
                       href: e-commerce-extensibility/app-settings.md
+                    - name: Globale Site Builder-Konfigurationseinstellungen basierend auf aktivierten Funktionen konfigurieren
+                      href: e-commerce-extensibility/config-settings-for-features.md
                     - name: Plattformeinstellungsdatei
                       href: e-commerce-extensibility/platform-settings.md
                     - name: Eine Moduldefinition erweitern
@@ -2366,6 +2374,8 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: Entwicklungs- und ALM-Änderungen von Version 10.0.10 bis 10.0.13
                   href: dev-itpro/dev-changes-10-13.md
+                - name: Buildpipeline für das unabhängige Verpackungs-SDK einrichten
+                  href: dev-itpro/build-pipeline.md
                 - name: Buildsysteme für Commerce und Finance and Operations zusammenführen
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Retail SDK von Visual Studio 2015 nach Visual Studio 2017 migrieren
@@ -2386,6 +2396,8 @@
               items:
                 - name: POS-Bildschirmlayouts
                   href: pos-screen-layouts.md
+                - name: Store Commerce-App in Microsoft Dynamics 365 Commerce
+                  href: dev-itpro/store-commerce.md
                 - name: URL in POS öffnen
                   href: Open-URL-in-POS.md
                 - name: POS-Layoutdesigner installieren

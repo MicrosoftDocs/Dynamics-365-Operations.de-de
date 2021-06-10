@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 38b2cdb618d92dca7909a145e7fc07ddfc5f4d45
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 0435deb009173684c7faaf5340e8095c019ec71c
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017054"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085473"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Buchhaltungs- oder Berichtswährung ändern
 
@@ -31,16 +31,16 @@ In diesem Thema wird erläutert, wie Sie die Buchhaltungs- oder Berichtswährung
 Sie möchten die Buchhaltungs- oder Berichtswährung ändern oder der Einrichtung eines Sachkontos eine Berichtswährung hinzufügen. Dies tritt normalerweise in den folgenden Szenarien auf:
 
 - Bei der Einrichtung einer juristischen Person wurde die falsche Buchhaltungs- oder Berichtswährung angegeben. Sie möchten diese Währung jetzt ändern.
-- Bei der Einrichtung einer juristischen Person wurde keine Berichtswährung angegeben. (Eine Berichtswährung ist optional.) Sie möchten jetzt eine Berichtswährung hinzufügen.
-
-Eine Organisation, die die Funktion „Doppelte Währung“ zuvor nicht verwendet hat, möchte sie jetzt nutzen. Dieses Problem tritt normalerweise in den folgenden Szenarien auf.
-
 - Bei der Einrichtung einer juristischen Person wurde eine Berichtswährung angegeben, die Organisation möchte die Berichtswährung jedoch jetzt entfernen.
 - Die Organisation aktualisiert oder migriert zu Microsoft Dynamics 365 Finance und möchte die Buchhaltungs- oder Berichtswährung ändern.
 
+Eine Organisation, die die Funktion „Doppelte Währung“ zuvor nicht verwendet hat, möchte sie jetzt nutzen. Dieses Problem tritt normalerweise in den folgenden Szenarien auf.
+
+- Bei der Einrichtung einer juristischen Person wurde keine Berichtswährung angegeben. (Eine Berichtswährung ist optional.) Sie möchten jetzt eine Berichtswährung hinzufügen.
+
 ## <a name="resolution"></a>Lösung
 
-Die wichtigste Überlegung ist, ob Buchungen (tatsächliche oder budgetierte) in der juristischen Person für die Einrichtung des Hauptbuchs gebucht wurden. **Sie können die Buchhaltungs- oder Berichtswährung nicht ändern oder eine Berichtswährung hinzufügen, wenn Buchungen (tatsächliche oder budgetierte) in der juristischen Person gebucht wurden.** Befolgen Sie die Schritte in einem der folgenden Abschnitte, je nachdem, ob Buchungen gebucht wurden.
+Die wichtigste Überlegung ist, ob Buchungen (tatsächliche oder budgetierte) in der juristischen Person für die Einrichtung des Sachkontos gebucht wurden. **Sie können die Buchhaltungs- oder Berichtswährung nicht ändern oder eine Berichtswährung hinzufügen, wenn Buchungen (tatsächliche oder budgetierte) in der juristischen Person gebucht wurden.** Befolgen Sie die Schritte in einem der folgenden Abschnitte, je nachdem, ob Buchungen gebucht wurden.
 
 ### <a name="no-transactions-have-been-posted"></a>Es wurden keine Buchungen gebucht
 

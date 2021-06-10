@@ -70,8 +70,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
                 - name: Neuerungen oder Änderungen in Finance
                   items:
-                    - name: Neuerungen oder Änderungen auf der Startseite von Finance
+                    - name: Neuerungen oder Änderungen in Finance – Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: "Finance\_10.0.20 (Juli\_2021)"
+                      href: get-started/whats-new-changed-10-0-20.md
                     - name: "Finance\_10.0.19 (Juli\_2021)"
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: "Finance\_10.0.18 (Mai\_2021)"
@@ -1160,6 +1162,8 @@
                   href: general-ledger/rvrs-settgs-on-jrnls-lines.md
                 - name: Fehlende Anfangssalden für den Jahresabschluss
                   href: general-ledger/yec-mssng-open-blnces.md
+                - name: Finanzerfassungsvorlagen in Office öffnen
+                  href: general-ledger/open-fincl-jrnls-in-office.md
         - name: Finanzberichterstellung
           items:
             - name: Erste Schritte mit der Finanzberichterstellung
@@ -1502,10 +1506,20 @@
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Datenfelder mithilfe von Erweiterungen der Steuerintegration hinzufügen
                       href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: Mehrere MwSt.-Registrierungsnummern
-                      href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
                     - name: Eine Umgebung für die Masterdatensuche einrichten
                       href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                    - name: Mehrere MwSt.-Registrierungsnummern
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: Berichterstellung für mehrere MwSt.-Registrierungen
+                      items:
+                        - name: Berichterstellung für mehrere MwSt.-Registrierungen
+                          href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Berichterstellung für die Niederlande
+                          items:
+                            - name: MwSt.-Erklärung
+                              href: localizations/emea-nl-vat-declaration-netherlands.md
+                            - name: Zusammenfassende Meldung
+                              href: localizations/emea-nl-eu-sales-list.md
             - name: Neues zu rechtlichen Bestimmungen
               href: localizations/regulatory-updates.md
             - name: Australien
@@ -2028,7 +2042,7 @@
                       href: localizations/emea-vat-register-transactions.md
                     - name: Steuerleistungsdatum (Datum des MwSt.-Registers)
                       href: localizations/emea-tax-point-date.md
-                    - name: MwSt.-Erklärung
+                    - name: MwSt.-Abrechnung
                       href: localizations/emea-vat-reporting.md
                     - name: MwSt.-Erklärung erstellen und übermitteln
                       href: localizations/tasks/create-submit-vat-report.md
@@ -2388,11 +2402,25 @@
                               href: localizations/apac-ind-GST-tax-returns.md
                             - name: Verarbeitung mehrerer Batches bei GSTR-Berichten aktivieren
                               href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                        - name: Problembehandlung bei GST
+                          items:
+                            - name: Falscher Steuerbetrag nach Berechnung
+                              href: localizations/apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md
+                            - name: Steuerkonfigurationsfehler
+                              href: localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md
+                            - name: Steuer wird nicht berechnet
+                              href: localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md
+                            - name: Aktivierung der Setoffregeln dauert länger als erwartet
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-activate-take-long-time.md
+                            - name: TaxTrans oder Beleg wird nicht generiert
+                              href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
+                            - name: Steuertransaktions-ID ist falsch
+                              href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
                 - name: Direkte Steuern
                   items:
                     - name: Quellensteuer Indien
                       items:
-                        - name: Berücksichtigung des GST bei der Berechnung von Steuerabzügen
+                        - name: GST bei der Berechnung von Steuerabzügen berücksichtigen
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
                         - name: Berücksichtigung des GST bei der Berechnung von Steuererhebungen
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
@@ -2844,6 +2872,10 @@
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Protokolldatei (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
+                - name: MwSt.-Erklärung (Niederlande)
+                  href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: Zusammenfassende Meldung
+                  href: localizations/emea-nl-EU-sales-list.md
             - name: Norwegen
               items:
                 - name: Norwegen – Übersicht
@@ -3382,9 +3414,9 @@
                   href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
                 - name: Hinzufügung zur Leistungserfassung
                   href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
-                - name: Ziele erstellen
+                - name: Ziel erstellen
                   href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
-                - name: Eine Leistungsbeurteilung erstellen
+                - name: Leistungsbeurteilung erstellen
                   href: ../human-resources/hr-develop-create-performance-review.md?toc=/dynamics365/finance/toc.json
             - name: Kurse erstellen
               items:
@@ -4123,7 +4155,7 @@
                   items:
                     - name: Erstellte Berichtsergebnisse nachverfolgen und mit Ausgangswerten vergleichen
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
-                    - name: Verbesserungen bei der Nachverfolgung erstellter ER-Berichtsergebnisse und Vergleich mit Ausgangswerten
+                    - name: 'Nachverfolgung der erstellten ER-Berichtsergebnisse verbessern, um sie mit Ausgangswerten zu vergleichen'
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
                     - name: Testen mit ER automatisieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json

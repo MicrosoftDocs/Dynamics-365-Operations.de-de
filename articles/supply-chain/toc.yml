@@ -70,9 +70,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Neuerungen oder Änderungen in Supply Chain Management
                   items:
-                    - name: Neuerungen oder Änderungen auf der Startseite von Supply Chain Management
+                    - name: Neuerungen oder Änderungen in Supply Chain Management – Startseite
                       href: get-started/whats-new-home-page.md
-                    - name: "Supply Chain Management\_10.0.19 (Juli 2021)"
+                    - name: "Supply Chain Management\_10.0.20 (Juli 2021)"
+                      href: get-started/whats-new-scm-10-0-20.md
+                    - name: "Supply Chain Management\_10.0.19 (Juni 2021)"
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: "Supply Chain Management\_10.0.18 (Mai 2021)"
                       href: get-started/whats-new-scm-10-0-18.md
@@ -387,7 +389,7 @@
                   href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
             - name: Einstellungen für Arbeitsaufträge
               items:
-                - name: 'Kategorien von Wartungsaufträgen und Arten von Wartungsaufträgen, Variationen von Wartungsaufträgen, Handel von Wartungsaufträgen und Wartungsprüflisten'
+                - name: 'Wartungsauftragstypen, -kategorien, -varianten, -branchen und -prüflisten'
                   href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
                 - name: Lebenszyklusstatus von Arbeitsaufträgen
                   href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
@@ -1371,7 +1373,7 @@
                   items:
                     - name: Erstellte Berichtsergebnisse nachverfolgen und mit Ausgangswerten vergleichen
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Verbesserungen bei der Nachverfolgung erstellter ER-Berichtsergebnisse und Vergleich mit Ausgangswerten
+                    - name: 'Nachverfolgung der erstellten ER-Berichtsergebnisse verbessern, um sie mit Ausgangswerten zu vergleichen'
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Testen mit ER automatisieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
@@ -2225,6 +2227,8 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: Technische Versionen und technische Produktkategorien
               href: engineering-change-management/engineering-versions-product-category.md
+            - name: Änderungen in Formeln und deren Bestandteile verwalten
+              href: engineering-change-management/manage-formula-changes.md
             - name: Änderungsmanagement für vorhandene Produkte aktivieren
               href: engineering-change-management/change-management-existing-products.md
             - name: Produktlebenszyklusstatus und Transaktionen
@@ -2247,6 +2251,8 @@
               href: production-control/manage-subcontract-work-production.md
             - name: Vereinheitlichte Nummernkreise für Einzelvorgangskennungen
               href: production-control/unified-job-ids.md
+            - name: 'Prozessautomatisierungsflows aufrufen, um Qualitätsprüfungsaufträge zu erstellen'
+              href: production-control/process-automation-quality-orders.md
             - name: Einzelfertigung
               items:
                 - name: Produktionsmasterdaten verwalten
@@ -2337,7 +2343,7 @@
                           href: production-control/production-floor-execution-setup.md
                         - name: Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
                           href: production-control/production-floor-execution-use.md
-                        - name: Steuerelementformate für Benutzeroberflächen für Produktionsausführung
+                        - name: Produktionsausführungsoberfläche entwerfen
                           href: production-control/production-floor-execution-styles.md
                     - name: Einzelvorgangsliste für Geräte konfigurieren
                       href: production-control/config-job-card-device.md
@@ -3139,11 +3145,11 @@
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Richtlinien zur Lieferungskonsolidierung konfigurieren
                       href: warehousing/configure-shipment-consolidation-policies.md
-                    - name: "Szenario\_1: Lieferungen mithilfe der automatischen Auftragsfreigabe konsolidieren, wenn sie im Lager freigegeben werden"
+                    - name: "Szenario\_1: Im Lager freigegebene Lieferungen mithilfe der automatischen Auftragsfreigabe konsolidieren"
                       href: warehousing/consolidate-shipments-automatic.md
-                    - name: "Szenario\_2: Lieferungen konsolidieren, wenn die Richtlinie zur Lieferungskonsolidierung auf der Seite „Freigabe an Lager“ überschrieben wird"
+                    - name: "Szenario\_2: Lieferungen konsolidieren, wenn die Richtlinie zur Lieferungskonsolidierung überschrieben wird"
                       href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                    - name: "Szenario\_3: Lieferungen mithilfe von „An Lager freigeben“ von der Ladungsplanungs-Workbench aus konsolidieren"
+                    - name: "Szenario\_3: Lieferungen durch Freigabe an das Lager über die Ladungsplanungs-Workbench konsolidieren"
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
                     - name: "Szenario\_4: Lieferungen mithilfe der Workbench zur Lieferungskonsolidierung konsolidieren"
                       href: warehousing/consolidate-shipments-manual-workbench.md
@@ -3287,23 +3293,25 @@
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Problembehandlung bei der Lagerortkonfiguration
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: Mobile Lagerortsverwaltungs-App installieren und konfigurieren
+                - name: Mobile Warehouse Management-App installieren und konfigurieren
                   items:
-                    - name: Mobile Lagerortsverwaltungs-App installieren und verbinden
+                    - name: Mobile Warehouse Management-App installieren und verbinden
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: Benutzereinstellungen für mobile Geräte
                       href: warehousing/mobile-device-user-settings.md
                     - name: Lagerort-App installieren und verbinden
                       href: warehousing/install-configure-warehousing-app.md
-                    - name: Barcodes mit einer Kamera in die mobile Lagerortverwaltungs-App scannen
+                    - name: Barcodes mit einer Kamera in die mobile Warehouse Management-App scannen
                       href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Felder für die mobile Lagerortverwaltungs-App konfigurieren
+                    - name: Felder für die mobile Warehouse Management-App konfigurieren
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Mobile Geräte für Lagerarbeiten einrichten
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Schrittsymbole und Titel zuweisen
+                      href: warehousing/step-icons-titles.md
                     - name: Verarbeitung von Ereignissen der Lagerort-App
                       href: warehousing/warehouse-app-events.md
-                    - name: Kennzeicheneingang über die mobile Lagerortverwaltungs-App
+                    - name: Kennzeicheneingang über die mobile Warehouse Management-App
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Auf einem mobilen Gerät eine Menüoption zur Fertigstellung von Arbeiten in einer Bestellung einrichten
                       href: warehousing/tasks/set-up-mobile-device-menu.md
@@ -3321,7 +3329,7 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: Framework zur Prozessanleitung
                       href: warehousing/process-guide-framework.md
-                    - name: Problembehandlung bei Verbindungsproblemen der mobilen Lagerortverwaltungs-App
+                    - name: Problembehandlung bei Verbindungsproblemen der mobilen Warehouse Management-App
                       href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Upgrade und Migration
                   items:
@@ -3347,7 +3355,7 @@
                   href: troubleshooting/costing/copying-item-model-groups.md
                 - name: Der Bericht „Indirekte Kosten in Bearbeitung“ enthält gelöschte Produktionsaufträge
                   href: troubleshooting/costing/indirect-costs-in-pr.md
-                - name: Einkaufsabgrenzung mit Null-Betrag für Nullwert-Produktbeleg gebucht
+                - name: Einkaufsabgrenzung mit Null-Betrag für Nullwert-Produktzugang gebucht
                   href: troubleshooting/costing/posting-to-purchase.md
                 - name: Physisch eingegangene Bestellungen werden nicht im Bestandsabschlussbericht angezeigt.
                   href: troubleshooting/costing/purchase-orders-rece.md
@@ -3357,41 +3365,45 @@
               items:
                 - name: Mehrere Lagerbuchungen für Chargennummern ohne „Bei physischer Aktualisierung“
                   href: troubleshooting/inventory/multiple-inventory-t.md
-                - name: 'Wenn Sie einen Berichtsabschluss rückgängig machen, wird eine unerwartete offene Buchung erstellt.'
+                - name: 'Wenn Sie einen Berichtsabschluss rückgängig machen, wird eine unerwartete offene Buchung erstellt'
                   href: troubleshooting/inventory/reverse-report-as-fi.md
-                - name: 'Neue Notizen, die an eine Erfassung angehängt sind, können im Kommissionierlistenbericht nicht angezeigt werden.'
+                - name: 'Der Kommissionierlistenbericht zeigt keine neuen Hinweise an, die an eine Erfassung angehängt sind'
                   href: troubleshooting/inventory/unable-to-print-the.md
-                - name: 'Die Menge einer gestarteten Quarantänebestellung wird nicht aktualisiert, wenn die Bestellung aufgeteilt wird.'
+                - name: 'Die Menge einer gestarteten Quarantänebestellung wird nicht aktualisiert, wenn die Bestellung aufgeteilt wird'
                   href: troubleshooting/inventory/quantity-on-a-start.md
-                - name: Das Feld „Datum des letzten Tests“ wird beim Erstellen mehrerer Qualitätsaufträge nicht aktualisiert.
+                - name: 'Das Feld „Datum des letzten Tests“ wird nicht aktualisiert, wenn mehrere Qualitätsprüfungsaufträge erstellt werden'
                   href: troubleshooting/inventory/the-field-last-test.md
-                - name: Beim Aufteilen einer Artikelgewichtsmenge wird anstelle der nominellen Menge ein Minimum verwendet.
+                - name: 'Wenn eine Artikelgewichtsmenge aufgeteilt wird, wird anstelle der nominellen Menge die Mindestmenge verwendet'
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Produktprogrammplanung
               items:
-                - name: Direkt abgeleitete feste Bestellungen werden von einem Überprüfungs-Workflow verarbeitet.
+                - name: Direkt abgeleitete feste Bestellungen werden von einem Überprüfungs-Workflow verarbeitet
                   href: troubleshooting/planning/firmed-directly-deri.md
-                - name: Die Masterplanung generiert Planaufträge für Phantomprodukte.
+                - name: Sie können Artikel der Produktprogrammplanung nicht nach den zugehörigen Werten der Dispositionssteuerungsgruppen filtern
+                  href: troubleshooting/planning/master-planning-batc.md
+                - name: Die Masterplanung generiert Planaufträge für Phantomprodukte
                   href: troubleshooting/planning/planned-orders-are-g.md
-                - name: 'Eine geplante Bestellung wird erstellt, wenn ein Kauf innerhalb negativer Tage vorliegt.'
+                - name: 'Eine geplante Einkaufsbestellung wird erstellt, wenn ein Kauf innerhalb negativer Tage vorliegt'
                   href: troubleshooting/planning/planning-optimisatio.md
-                - name: Der Selbstkostenpreis kann nicht in Bedarfsprognoseeinträge hochgeladen werden.
+                - name: 'Die geplanten Einstandspreise können nicht aktualisiert werden, wenn Sie Bedarfsplanungsdatensätze importieren'
                   href: troubleshooting/planning/unable-to-upload-the.md
-                - name: Die Dimension der Lagerbedarfsprognose kann nicht aus den Prognosezeilen entfernt werden.
+                - name: Die Dimension der Lagerbedarfsplanung kann nicht aus den Planungsdimension entfernt werden
                   href: troubleshooting/planning/warehouse-removal-fr.md
+                - name: 'Sie werden aufgefordert, die Artikeldeckungseinstellungen zu speichern, obwohl Sie keine Änderungen vorgenommen haben'
+                  href: troubleshooting/planning/when-importing-to-th.md
             - name: Beschaffung
               items:
-                - name: Ein kundenorientierter Auftrag in der Firma VEL kann nicht in Rechnung gestellt werden.
+                - name: Sie können keinen kundenorientierten Auftrag in Rechnung stellen
                   href: troubleshooting/procurement/not-able-to-invoice-.md
-                - name: Nach dem Anfordern einer Änderung kann einer Bestellanforderung keine Zeile hinzugefügt werden.
+                - name: Nach dem Anfordern einer Änderung kann einer Bestellanforderung keine Zeile hinzugefügt werden
                   href: troubleshooting/procurement/purchase-requisition.md
             - name: Produktinformationsverwaltung
               items:
-                - name: Es kann keine Vorlage zum Erstellen eines freigegebenen Produkts angewendet werden.
+                - name: Sie können keine Vorlage zum Erstellen eines freigegebenen Produkts anwenden
                   href: troubleshooting/products/apply-template-in-re.md
-                - name: Ein Artikel kann nicht mit der Entität „Freigegebene Produkte V2“ importiert werden.
+                - name: Sie können keinen Artikel mit der Entität „Freigegebene Produkte V2“ importieren
                   href: troubleshooting/products/cannot-import-with-r.md
-                - name: Bestellungen zeigen keinen übersetzten Produkttext.
+                - name: Bestellungen zeigen keinen übersetzten Produkttext
                   href: troubleshooting/products/when-the-customer-ad.md
             - name: Produktionssteuerung
               items:
@@ -3401,11 +3413,11 @@
                   href: troubleshooting/production/when-customer-is-try.md
                 - name: Verspätete Auswahl wird beim Zurücksetzen von Produktionsaufträgen per Stapelverarbeitungsauftrag nicht berücksichtigt.
                   href: troubleshooting/production/late-selection-is-no.md
-                - name: 'Benutzer können Materialpositionen für Produkte entfernen, die als fertig gemeldet wurden.'
+                - name: 'Benutzer können Materialpositionen für Produkte entfernen, die als fertig gemeldet wurden'
                   href: troubleshooting/production/raw-material-lines-a.md
-                - name: Fehler beim Buchen des Berichts als fertige Erfassung
+                - name: Beim Buchen des Berichts als fertige Erfassung ist ein Fehler aufgetreten
                   href: troubleshooting/production/posting-report-as-.md
-                - name: Das Lager in der Kommissionierlistenerfassung wird in einer Stücklistenzeile nicht aktualisiert.
+                - name: Das Lager in der Kommissionierlistenerfassung wird in einer Stücklistenzeile nicht aktualisiert
                   href: troubleshooting/production/the-warehouse-in-pic.md
             - name: Rückvergütungsverwaltung
               items:
@@ -3421,15 +3433,15 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerortverwaltung
               items:
-                - name: Bei der Auswahl des Standorts während der Kommissionierlistenregistrierung tritt ein Fehler auf.
+                - name: Bei der Auswahl des Standorts während der Kommissionierlistenregistrierung tritt ein Fehler auf
                   href: troubleshooting/warehousing/error-cannot-update.md
-                - name: In der Packstation werden keine Produkthinweise angezeigt.
+                - name: In der Packstation werden keine Produkthinweise angezeigt
                   href: troubleshooting/warehousing/packing-station-not-.md
-                - name: 'Das Standortprofil erlaubt kein negatives Inventar, aber ein negativer Lagerbestand ist zulässig.'
+                - name: 'Das Standortprofil erlaubt kein negatives Inventar, aber ein negativer Lagerbestand ist zulässig'
                   href: troubleshooting/warehousing/location-profile-set.md
-                - name: Auf einem Beleg wird nur eine Beschriftung für mehrere Arbeitsköpfe gedruckt.
+                - name: Auf einem Beleg wird nur eine Beschriftung für mehrere Arbeitsköpfe gedruckt
                   href: troubleshooting/warehousing/when-receipting-prod.md
-                - name: Eine Lieferung kann aufgrund von Problemen mit dem Kalender nicht bestätigt werden.
+                - name: Eine Lieferung kann aufgrund von Problemen mit dem Kalender nicht bestätigt werden
                   href: troubleshooting/warehousing/load-has-active-appo.md
                 - name: Eine Lieferung kann wegen unvollständiger oder fehlender Arbeit nicht bestätigt werden
                   href: troubleshooting/warehousing/open-or-no-work-exis.md
@@ -3445,7 +3457,7 @@
                   href: troubleshooting/warehousing/the-last-closed-work.md
                 - name: Die Gewichtsfelder in den Ladungspositionen stimmen nicht mit den Gewichtsfeldern in der Ladung überein
                   href: troubleshooting/warehousing/the-weight-fields-on.md
-                - name: Welle ist nicht zur Bereinigung berechtigt
+                - name: Zyklus ist nicht zur Bereinigung berechtigt
                   href: troubleshooting/warehousing/wave-is-not-eligible.md
                 - name: Gewicht muss positiv sein
                   href: troubleshooting/warehousing/weight-must-be-posit.md
@@ -3453,7 +3465,7 @@
                   href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
                 - name: Arbeit kann aufgrund des Status nicht storniert werden
                   href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
-                - name: Arbeit ist nicht gesperrt
+                - name: Arbeit ist nicht blockiert
                   href: troubleshooting/warehousing/work-is-not-blocked.md
                 - name: Arbeit bleibt gesperrt
                   href: troubleshooting/warehousing/work-remains-blocked.md
