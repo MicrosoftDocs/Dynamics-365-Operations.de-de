@@ -2,26 +2,20 @@
 title: Einrichtung von dualem Schreiben aus Lifecycle Services
 description: In diesem Thema wird erläutert, wie Sie eine Verbindung für duales Schreiben über Microsoft Dynamics Lifecycle Services (LCS) einrichten.
 author: RamaKrishnamoorthy
-ms.date: 01/06/2020
+ms.date: 05/11/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e51b4ef1e309e5f89dc82a3776b88c505dc6593d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748540"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103568"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Einrichtung von dualem Schreiben aus Lifecycle Services
 
@@ -29,64 +23,48 @@ ms.locfileid: "5748540"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-In diesem Thema wird erläutert, wie Sie eine Dual-Schreib-Verbindung zwischen einer neuen Finance and Operations Umgebung und einer neuen Dataverse Umgebung aus Microsoft Dynamics Lifecycle Services (LCS) einrichten.
+In diesem Thema wird erläutert, wie Sie eine Verbindung für duales Schreiben über Microsoft Dynamics Lifecycle Services (LCS) aktivieren.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Sie müssen ein Administrator sein, um eine Dual-Schreib-Verbindung einzurichten.
+Sie müssen die Power Platform Integration wie in den folgenden Themen beschrieben ausfüllen:
 
-+ Sie müssen Zugriff auf den Mandant besitzen.
-+ Sie müssen in beiden Bereichen Administrator sein, in Finance and Operations Umgebungen und Dataverse Umgebungen.
++ [Power Platform Integration – Aktivieren Sie diese Option während der Bereitstellung der Umgebung](../../power-platform/overview.md#enable-during-environment-deployment)
++ [Power Platform Integration – Richten Sie diese Option nach der Bereitstellung der Umgebung ein](../../power-platform/overview.md#set-up-after-environment-deployment)
 
-## <a name="set-up-a-dual-write-connection"></a>Richten Sie eine Dual-Schreib-Verbindung ein
+## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Richten Sie duales Schreiben für neue Dataverse Umgebungen ein
 
-Folgen Sie diesen Schritten, um eine Dual-Schreib-Verbindung einzurichten.
+Befolgen Sie diese Schritte, um duales Schreiben von der LCS -Seite **Umgebungsdetails** einzurichten:
 
-1. In LCS gehen Sie zu Ihrem Projekt.
-2. Wählen Sie **Konfigurieren**, um eine neue Umgebung bereitzustellen.
-3. Wählen Sie die Version. 
-4. Wählen Sie die Topologie aus. Wenn nur eine Topologie verfügbar ist, wird diese automatisch ausgewählt.
-5. Führen Sie die ersten Schritte im Assistent **Bereitstellungseinstellungen** aus.
-6. Folgen Sie einem dieser Schritte auf der Registerkarte **Dataverse**:
+1. Auf der Seite **Umgebungsdetails** erweitern Sie den Abschnitt **Power Platform Integration**.
 
-    - Wenn eine Dataverse Umgebung bereits für Ihren Mandanten bereitgestellt ist, können sie sie auswählen.
+2. Wählen Sie die Schaltfläche **Duale Schreibanwendung** aus.
 
-        1. Legen Sie die Option **Dataverse Konfigurieren** auf **Ja** fest.
-        2. In der Spalte **Verfügbare Umgebungen** wählen Sie im Feld die Umgebung aus, die in Ihre Finance and Operations-Daten integriert werden soll. Die Liste enthält alle Umgebungen, in denen Sie über Administratorrechte verfügen.
-        3. Wähle Sie das Kontrollkästchen **Zustimmen**, um anzuzeigen, dass Sie den Nutzungsbedingungen zustimmen.
+    ![Power Platform-Integration](media/powerplat_integration_step2.png)
 
-        ![Dataverse Registerkarte, wenn eine Dataverse Umgebung bereits für Ihren Mandanten bereitgestellt ist](../dual-write/media/lcs_setup_1.png)
+3. Lesen Sie die allgemeinen Geschäftsbedingungen und wählen Sie **Konfigurieren** aus.
 
-    - Wenn Ihr Mandant noch keine Dataverse Umgebung hat, wird eine neue Umgebung bereitgestellt.
+4. Wählen Sie **OK**, um fortzufahren.
 
-        1. Legen Sie die Option **Dataverse Konfigurieren** auf **Ja** fest.
-        2. Einen Namen für die Dataverse Umgebung eingeben.
-        3. Wählen Sie die Region aus, in der die Umgebung bereitgestellt werden soll.
-        4. Wählen Sie die Standardsprache und -währung für die Umgebung aus.
+5. Sie können den Fortschritt überwachen, indem Sie die Seite mit den Umgebungsdetails regelmäßig aktualisieren. Die Einrichtung dauert normalerweise 30 Minuten oder weniger.  
 
-            > [!NOTE]
-            > Sie können die Sprache und Währung später nicht mehr ändern.
+6. Nach Abschluss der Einrichtung werden Sie in einer Meldung darüber informiert, ob der Vorgang erfolgreich war oder ob ein Fehler aufgetreten ist. Wenn die Einrichtung fehlgeschlagen ist, wird eine entsprechende Fehlermeldung angezeigt. Sie müssen alle Fehler beheben, bevor Sie mit dem nächsten Schritt fortfahren können.
 
-        5. Wähle Sie das Kontrollkästchen **Zustimmen**, um anzuzeigen, dass Sie den Nutzungsbedingungen zustimmen.
+7. Wählen Sie **Link zur Power Platform Umgebung**, um eine Verbindung zwischen Dataverse und der aktuellen Umgebung der Datenbank zu erstellen. Diese Einrichtung dauert normalerweise 5 Minuten oder weniger.
 
-        ![Dataverse Registerkarte, wenn Ihr Mandant noch keine Dataverse Umgebung hat](../dual-write/media/lcs_setup_2.png)
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link zur Power Platform Umgebung":::
 
-7. Führen Sie die verbleibenden Schritte im Assistent **Bereitstellungseinstellungen** aus.
-8. Nachdem die Umgebung den Status **Bereitgestellt** hat, öffnen Sie die Seite mit den Umgebungsdetails. Der Abschnitt **Power Platform-Integration** zeigt die Namen der Finance and Operations-Umgebung und der Dataverse-Umgebung, die verknüpft sind.
+8. Wenn die Verknüpfung abgeschlossen ist, wird ein Hyperlink angezeigt. Verwenden Sie den Link, um sich im Verwaltungsbereich mit zwei Schreibvorgängen in der Finance and Operations Umgebung zu registrieren. Von dort aus können Sie Entitätszuordnungen einrichten.
 
-    ![Abschnitt „Power Platform-Integration“](../dual-write/media/lcs_setup_3.png)
+## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Richten Sie duales Schreiben für eine bestehende Dataverse Umgebung ein
 
-9. Ein Administrator der Finance and Operations Umgebung muss sich bei LCS anmelden und **Verknüpfung zu CDS für Apps** auswählen, um den Link vervollständigen. Auf der Seite mit den Umgebungsdetails werden die Kontaktinformationen des Administrators angezeigt.
+Um duales Schreiben für eine vorhandene Dataverse Umgebung einzurichten, müssen Sie ein Microsoft [Supportticket](../../lifecycle-services/lcs-support.md) erstellen. Das Ticket muss enthalten:
 
-    Nach Abschluss der Verknüpfung wird der Status auf **Umgebungsverknüpfung erfolgreich abgeschlossen** aktualisiert.
-
-10. Zum Öffnen des **Datenintegration** Arbeitsbereichs in der Finance and Operations wählen Sie die Umgebung aus und steuern Sie die verfügbaren Vorlagen und wählen Sie **Link zu CDS für Apps**.
-
-    ![Link zur Schaltfläche „CDS für Apps“ im Abschnitt „Power Platform-Integration“](../dual-write/media/lcs_setup_4.png)
++ Ihre Finance and Operations Umgebungs-ID.
++ Ihr Umgebungsname von Lifecycle Services.
++ Die Dataverse Organisations-ID oder Power Platform Umgebungs-ID vom Power Platform Admin Center. Fordern Sie in Ihrem Ticket an, dass die ID die Instanz ist, die für die Power Platform Integration verwendet wird.
 
 > [!NOTE]
 > Sie können die Verknüpfung von Umgebungen mit LCS nicht aufheben. Um die Verknüpfung einer Umgebung aufzuheben, öffnen Sie den **Datenintegration** Arbeitsbereich in der Finance and Operations Umgebung und wählen Sie dann **Verknüpfung aufheben**.
-
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

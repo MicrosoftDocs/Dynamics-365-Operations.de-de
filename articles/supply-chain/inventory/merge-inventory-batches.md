@@ -1,7 +1,7 @@
 ---
 title: Lagerchargen zusammenführen
 description: Dieses Thema enthält Informationen, wie zwei oder mehr Lagerchargen in einer zusammengeführte Charge konsolidiert werden.
-author: pjacobse
+author: sherry-zheng
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
-ms.author: pjacobse
+ms.author: chuzheng
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b3594e9f5e26eeecbcb22e67807df9720fdd9ef8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 16c3f13081dffd154f1a019357f1d9af7cc8912b
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808183"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103143"
 ---
 # <a name="merge-inventory-batches"></a>Lagerchargen zusammenführen
 
@@ -57,12 +57,12 @@ Ja, gibt es mehrere Dinge, die Sie einrichten müssen, bevor Sie die Zusammenfü
 <td>Freigegebene Produkte</td>
 <td>Die empfohlenen Einstellungen für den Artikel sind wie folgt:
 <ul>
-<li>Um Chargennummern für zusammengeführte Chargen automatisch zu generieren, müssen Sie das freigegebene Produkt einer Chargennummerngruppe zuweisen. Sie können eine Chargennummer auch manuell eingeben, wenn Sie eine zusammengeführte Charge erstellen, oder wählen Sie eine vorhandene Chargennummer. Wenn Sie eine vorhandene Chargennummer auswählen, müssen Sie sicherstellen, dass die ausgewählte Charge in keine Bestandstransaktion einbezogen wurde.</li>
-<li>Wenn Sie Haltbarkeits- oder Mindesthaltbarkeits-Datumsangaben für das freigegebene Produkt verwenden, werden die Datumsangaben für eine zusammengeführte Charge basierend auf der Auswahl im Feld <strong>Datumsberechnung für Chargenzusammenführung</strong> berechnet. Die folgenden Optionen sind verfügbar:
+<li>Um Chargennummern für zusammengeführte Chargen automatisch zu generieren, müssen Sie das freigegebene Produkt einer Chargennummerngruppe zuweisen. Sie können eine Chargennummer auch manuell eingeben, wenn Sie eine zusammengeführte Charge erstellen, oder wählen Sie eine vorhandene Chargennummer. Wenn Sie eine vorhandene Chargennummer auswählen, müssen Sie sicherstellen, dass die ausgewählte Charge in&#39;keine Bestandstransaktion einbezogen wurde.</li>
+<li>Wenn Sie Haltbarkeits- oder Mindesthaltbarkeits-Datumsangaben&#39;für das freigegebene Produkt verwenden, werden die Datumsangaben für eine zusammengeführte Charge basierend auf der Auswahl im Feld <strong>Datumsberechnung für Chargenzusammenführung</strong> berechnet. Die folgenden Optionen sind verfügbar:
 <ul>
 <li><strong>Frühester Zeitpunkt</strong> - Die Berechnung basiert auf dem frühesten Datum, das für eine Quellcharge angegeben wird, die für die Chargenzusammenführung ausgewählt ist.</li>
 <li><strong>Spätester Zeitpunkt</strong> - Die Berechnung basiert auf dem spätesten Datum, das für eine Quellcharge angegeben wird, die für die Chargenzusammenführung ausgewählt ist.</li>
-<li><strong>Manuell</strong> - Es wird keine Berechnung vorgenommen. Wenn ein Datum für alle Quellchargen gleich ist, wird ein Datum vorgeschlagen. Dieses Datum kann geändert werden. Wenn das Datum auf den Quellchargen nicht gleich ist, können Sie es manuell eingeben.</li>
+<li><strong>Manuell</strong> - Es wird keine Berechnung vorgenommen. Wenn ein Datum für alle Quellchargen gleich ist, wird ein Datum vorgeschlagen. Dieses Datum kann geändert werden. Wenn das Datum&#39;auf den Quellchargen nicht gleich ist, können Sie es manuell eingeben.</li>
 </ul></li>
 </ul></td>
 </tr>

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921422"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112620"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>In früheren Versionen entfernte oder veraltete Funktionen
 
@@ -104,6 +104,39 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Bis 1. Oktober 2020 planen wir, **Inlandssteuererklärung – Funktionsreferenz IT-00003** nicht mehr zu unterstützen. |
 
+## <a name="october-2019-deprecation-announcement"></a>Ankündigung der Außerbetriebnahme im Oktober 2019
+
+### <a name="flowchart-diagrams-in-business-process-modeler"></a>Flussdiagramme im Geschäftsprozessmodellierer
+
+<table>
+<tbody>
+<tr>
+<td><strong>Grund für veralteten Zustand/Entfernung</strong></td>
+<td>Die Flowchart-Diagrammkomponente im Geschäftsprozessmodellierer (BPM) wird nicht mehr empfohlen, da das Legacy-Design zu einer geringen Nutzung geführt hat.</td>
+</tr>
+<tr>
+<td><strong>Ersetzt durch eine andere Funktion?</strong></td>
+<td>Nein</td>
+</tr>
+<tr>
+<td><strong>Betroffene Bereiche</strong></td>
+<td>Geschäftsprozessmodellierer</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>Veraltet: Die Flussdiagrammkomponente in BPM wird voraussichtlich im Jahr 2020 entfernt. Folgende Funktion wird nicht mehr verfügbar sein:
+<ul>
+<li>Alle Flussdiagramme sind schreibgeschützt und können nicht bearbeitet werden. Die Formeigenschaften, die Flussdiagrammaktivitäten zugeordnet sind, sind ebenfalls nicht verfügbar. Diese Flussdiagramme umfassen sowohl automatisch generierte Standardflussdiagramme als auch benutzerdefinierte Flussdiagramme, die auf der Grundlage dieser Standardflussdiagramme geändert werden.</li>
+<li>Die Prozessschritte sind schreibgeschützt und können nicht bearbeitet werden.</li>     
+<li>Die Funktion zur Analyse älterer Anpassungen/Lücken ist nicht verfügbar. Daher wird keine Lückenliste automatisch erstellt oder steht für den Export zur Verfügung.
+<p><strong>Hinweis:</strong> Diese Funktion war zuvor veraltet und wurde durch Microsoft Azure DevOps-Integrationen ersetzt.</p>
+</li>
+<li>Der Versionsverlauf des Flussdiagramms ist nicht verfügbar.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 mit Plattformupdate 29
 

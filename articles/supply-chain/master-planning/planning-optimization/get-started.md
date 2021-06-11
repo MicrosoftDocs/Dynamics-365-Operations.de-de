@@ -2,7 +2,7 @@
 title: Erste Schritte mit der Planungsoptimierung
 description: In diesem Thema wird erläutert, wie Sie mit der Verwendung der Funktionalität der Planungsoptimierung beginnen.
 author: ChristianRytt
-ms.date: 10/09/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d346251e82737624edfce88dc7b2ee10280f6877
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907666"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103592"
 ---
 # <a name="get-started-with-planning-optimization"></a>Erste Schritte mit der Planungsoptimierung
 
@@ -58,7 +58,7 @@ Bevor Sie die das Planungsoptimierungs-Add-In installieren, müssen die folgende
 
 - Sie müssen Supply Chain Management in einer LCS-fähigen Hochverfügbarkeitsumgebung, Ebene 2 oder höher (keine OneBox-Umgebung) mit Dynamics 365 Supply Chain Management Version 10.0.7 oder höher ausführen. Wenn Sie versuchen, das Add-In in einer OneBox-Umgebung zu installieren, wird die Installation nicht abgeschlossen und Sie müssen die Installation abbrechen.
 
-- Ihr System muss für die Power Platform-Integration eingerichtet sein. Weitere Informationen finden Sie unter [Voraussetzungen für die Einrichtung von Add-Ins](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) und [Add-Ins einrichten](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins).
+- Ihr System muss für die Power Platform-Integration eingerichtet sein. Weitere Informationen finden Sie unter [Microsoft Power Platform Integration mit Finance and Operations Apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>Planungsoptimierungslizenz aktivieren
 

@@ -2,7 +2,7 @@
 title: Suchergebnismodul
 description: Dieses Thema behandelt Suchergebnismodule und erläutert, wie diese Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3409e9e99329def55b173eb78cf03db4a6764c92
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 645022000d8746db3793a8a8611ab8f17c7bcc6e
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794114"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117132"
 ---
 # <a name="search-results-module"></a>Suchergebnismodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema behandelt Suchergebnismodule und erläutert, wie diese Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
@@ -51,9 +52,12 @@ In der folgenden Tabelle sind die Eigenschaften von Suchergebnismodulen mit ihre
 | Kategorie-Hierarchieanzeige ausblenden | **True** oder **False** | Ist diese Eigenschaft auf **True** gesetzt, wird die Anzeige der Kategoriehierarchie auf der Seite ausgeblendet. Diese Eigenschaft sollte auf **True** gesetzt sein, wenn Sie das [Breadcrumb-Modul](add-breadcrumb.md) nutzen, um die Kategoriehierarchie anzuzeigen.|
 | Produktattribute in Suchergebnisse einbeziehen | **True** oder **False** | Wenn diese Eigenschaft auf **True** gesetzt ist, werden für die Produkte in den Suchergebnissen Attribute zurückgegeben. Obwohl diese Attribute auf einer Commerce-Website angezeigt werden können, ist eine Erweiterung erforderlich.|
 | Zugehörigkeitspreise anzeigen | **True** oder **False** | Ist diese Eigenschaft auf **True** gesetzt, werden in den Suchergebnissen Zugehörigkeitspreise für Produkte angezeigt, wenn ein angemeldeter Benutzer die Seite durchsucht. |
+| Aktualisieren Sie den Verfeinerungs-Bereich | **True** oder **False** | Wenn diese Eigenschaft auf **Wahr** festgelegt ist, wird der Verfeinerungs-Bereich aktualisiert, wenn Verfeinerungen ausgewählt werden. In diesem Modus verhalten sich einige Mehrfachauswahl-Verfeinerungen wie Einzelauswahl-Verfeinerungen, wenn das Verfeinerungsfenster aktualisiert wird. |
 
 > [!IMPORTANT]
-> In Dynamics 365 Commerce Version 10.0.16 und später kann die Konfiguration **Zugehörigkeitspreise anzeigen** verwendet werden, um die Zugehörigkeitspreise auf der Seite anzuzeigen.
+> In Commerce Version 10.0.16 und später kann die Konfiguration **Zugehörigkeitspreise anzeigen** verwendet werden, um die Zugehörigkeitspreise auf der Seite anzuzeigen.
+>
+> In der Commerce-Version 10.0.20 und höher kann die Konfiguration **Aktualisieren Sie den Verfeinerungs-Bereich** verwendet werden, um den Verfeinerungs-Bereich während der Verfeinerungs-Auswahl zu aktualisieren.
 
 ## <a name="supported-modules"></a>Unterstützte Module
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 12be18aa245757991daa418d5875d7497939d223
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5c038462bb84c7fe68acc3825482286581e55358
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841430"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103069"
 ---
 # <a name="onboard-vendors"></a>Kreditoren aufnehmen
 
@@ -33,7 +33,7 @@ Der Prozess besteht aus den folgenden Schritten, in denen verschiedene Rollen Ak
 1. **OData zur Datenverwaltung** – Entitätsimport – Die ursprüngliche Anforderung ist die Registrierungsanforderung des künftigen Kreditors. Normalerweise kommt diese Anforderung von eine Quelle, wie von einer durch einen Debitor gehostete Website, die den anonymen Zugriff zulässt. Kreditoren können sich registrieren, indem sie grundlegende Informationen bereitstellen, wie z. B. Kreditorenname, Begründung, Organisationsnummer sowie Name und E-Mail-Adersse der Kontaktperson. Die Anforderungen werden über die Datenverwaltungsschnittstelle importiert.
 2. **Registrierungsanforderungen-Listenseite für künftigen Kreditor** – Auf Grundlage von Daten, die in der Registerierungsanforderung des künftigen Kreditors bereitgestellt werden, entscheidet ein Prokurist, ob der Kreditor aufgenommen werden soll. Der Prokurist zeigt die eingehende Anforderung auf der Listenseite **Registrierungsanforderungen des künftigen Kreditors** an.
 3. **Benutzerbereitstellungsworkflow** – Wenn ein Prokurist die Informationen in der eingehenden Anforderung überprüft hat und entschieden hat, mit dem Aufnahmeprozess fortzufahren, stellt der Anfoderungsbenutzerworkflow den neuen Benutzer bereit und sendet eine Einladungs-E-Mail, um die Kontaktperson als einen authentifizierten Benutzer von Microsoft Dynamics 365 zu akzeptieren.
-4. **Kreditorenregistrierungs-Assistent** – Die Kontaktperson des Kreditors meldet sich an, indem sie das neue Benutzerkonto verwendet. Er oder sie führen einen Kreditorenregistrierungs-Assistenten abschließend aus, um Informationen, wie Adressen, Geschäftsdaten, Beschaffungskategorien und Fragebogenantworten bereitzustellen.
+4. **Kreditorenregistrierungs-Assistent** – Die Kontaktperson des Kreditors meldet sich an, indem sie das neue Benutzerkonto verwendet. Sie führen einen Kreditorenregistrierungs-Assistenten abschließend aus, um Informationen, wie Adressen, Geschäftsdaten, Beschaffungskategorien und Fragebogenantworten bereitzustellen.
 5. **Genehmigungsworkflow** – Eine Kreditorenanforderung, die die Registrierungsinformationen enthält, wird erstellt. Die Kreditorenanforderung wird als Workflow übermittelt und zur Überprüfung und Genehmigung weitergeleitet.
 6. **Erstellung eines Kreditorenmasters und einer Benutzerrollenänderung** – Wenn die Kreditorenanforderung genehmigt wurde, wird ein Kreditorendatensatz erstellt. Dem Benutzerkonto der Kontaktperson des Kreditors wird entweder die Berechtigung zur Kreditorenzusammenarbeit gewährt, oder es wird deaktiviert.
 
@@ -72,7 +72,7 @@ Nachdem die Registrierungsanforderung des künftigen Kreditors importiert wurde,
 
 ## <a name="submitting-a-prospective-vendor-user-request"></a>Eine Anforderung eines künftigen Kreditorenbenutzers übermitteln
 
-Der Zweck der Anforderung für künftige Kreditorbenutzer liegt darin, die Person bereitzustellen, die die ursprüngliche Anforderung übermittelt hat, sodass er oder sie sich bei Supply Chain Management mithilfe des E-Mail-Kontos anmelden kann, das in der Registrierungsanforderung für künftige Kreditoren bereitgestellt wird.
+Der Zweck der Anforderung für künftige Kreditorbenutzer liegt darin, die Person bereitzustellen, die die ursprüngliche Anforderung übermittelt hat, sodass sie sich bei Supply Chain Management mithilfe des E-Mail-Kontos anmelden kann, das in der Registrierungsanforderung für künftige Kreditoren bereitgestellt wird.
 
 Die Anforderung des künftigen Kreditorenbenutzers wird durch den Benutzeranforderungsworkflow verarbeitet. Dieser Workflow kommuniziert durch die Azure AD B2B-Zusammenarbeit. Er erstellt einen Benutzer in Supply Chain Management, der über die entsprechenden Sicherheitseinstellungen verfügt.
 
@@ -87,7 +87,7 @@ Informationen zur Konfiguration der E-Mail und des Workflows im Allgemeinen find
 
 ## <a name="vendor-registration"></a>Kreditorenregistrierung
 
-Ein künftiger Kreditorbenutzer, der sich bei Supply Chain Management anmeldet, sieht die erste Seite eines Kreditorenregistrierungs-Assistenten, wo er oder sie Kreditoreninformationen eingeben können.
+Ein künftiger Kreditorbenutzer, der sich bei Supply Chain Management anmeldet, sieht die erste Seite eines Kreditorenregistrierungs-Assistenten, wo sie Kreditoreninformationen eingeben können.
 
 Der Assistent spiegelt die Konfiguration der Kreditorenanforderung wider. Das Land oder die Region, wo der Kreditor Geschäfte tätigt, bestimmt, welche Informationen im Assistenten angefordert werden und welche Informationen obligatorisch sind.
 
@@ -127,7 +127,7 @@ Die folgende Tabelle zeigt die Statusangaben, die Kreditorenanforderungen haben 
 |----------------------------|-------------|
 | Überblick                      | Die Kreditorenanforderung ist noch nicht übermittelt worden. |
 | Anforderung übermittelt          | Die Kreditorenanforderung wurde übermittelt, und der erste Schritt im Workflow wird gerade verarbeitet. |
-| Überprüfung ausstehend             | Wenn es mehrere Prüfer in einer Workflowaufgabe gibt, kann ein Prüfer die Aufgabe der Überprüfung der Kreditorenanforderung akzeptieren und dann die Überprüfung abschließen. Wenn es nur einen Prüfer gibt, kann dieser Teilnehmer die Prüfung abschließen, indem er **Abgeschlossen** in der Workflowaktivität auswählt. Er oder sie müssen die Arbeitsaufgabe nicht zuerst akzeptieren. |
+| Überprüfung ausstehend             | Wenn es mehrere Prüfer in einer Workflowaufgabe gibt, kann ein Prüfer die Aufgabe der Überprüfung der Kreditorenanforderung akzeptieren und dann die Überprüfung abschließen. Wenn es nur einen Prüfer gibt, kann dieser Teilnehmer die Prüfung abschließen, indem er **Abgeschlossen** in der Workflowaktivität auswählt. Sie müssen die Arbeitsaufgabe nicht zuerst akzeptieren. |
 | Genehmigung der Anforderung ausstehend   | Die Kreditorenanforderung wurde an die Teilnehmer zur Genehmigung weitergeleitet, und es gibt eine Option, weitere Informationen anzufordern. Eine Anforderung weiterer Informationen führt dazu, dass die Arbeitsaufgabe zurück zum Übermittler weitergeleitet wird. Die Kreditorenanforderung kann genehmigt oder abgelehnt werden, während sie in diesem Status ist. |
 | Antragsänderungsanforderung | Zusätzliche Informationen sind vom Genehmiger angefordert worden, und die Kreditorenanforderung wurde an die Person weitergeleitet, die die Kreditorenanforderung übermittelt hat. Der Übermittler kann erforderliche Informationen hinzufügen und dann die Kreditorenanforderung erneut übermitteln. Wenn eine Kreditorenanforderung erneut übermittelt wird, wird der Status wieder in **Anforderung mit ausstehender Genehmigung** geändert. |
 | Anforderung genehmigt           | Dieser Status ist ein Endzustand. |

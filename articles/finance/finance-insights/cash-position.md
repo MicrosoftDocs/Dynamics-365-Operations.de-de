@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 36eb939d2539653fdcde78a6044cf1a87e8e3280
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cf9d3fd905a90a2937bfac97c8e44ea13be4f42e
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811386"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123389"
 ---
 # <a name="cash-position-preview"></a>Bargeldposition (Vorschau)
 
@@ -31,7 +31,7 @@ Die Bargeldposition ist die Projektion des Cashflows, die für die nahe Zukunft 
 
 Wenn das System Debitorenzahlungen vorhersagt, verwendet es die Zahlungsvorhersagen aus der Funktion zur Vorhersage von Debitorenzahlungen. Ohne Zahlungsvorhersagen wird die durchschnittliche Zeit, die erforderlich ist, um eine Debitorenrechnung in eine Zahlung für jeden Debitor umzuwandeln, zur Berechnung eines Zahlungsdatums verwendet. Bei offenen Debitorenbestellungen berechnet das System das Rechnungsdatum anhand der durchschnittlichen Anzahl von Tagen für die Rechnungsstellung der Auftragspositionen pro Debitor. Anschließend wird das Rechnungsdatum als Eingabe für die Zahlungsvorhersagefunktion verwendet. Die Funktion zur Vorhersage der Debitorenzahlung berechnet für jede Bestellposition ein Zahlungsdatum. 
 
-<*Text von Jarek oder Dave darüber erforderlich, wie Zahlungsvorhersagen in ein Datum umgewandelt werden*> Der Zahlungstermin für ausstehende Rechnungen ist ungefähr [*geschätzt*] aus den Zahlungsvorhersagen durch Auswahl eines Datums, das dem fünfzigsten Perzentil der kumulativen Verteilungsfunktion entspricht, die aus den Wahrscheinlichkeiten des vorhergesagten Buckets stammen.
+Der Zahlungstermin für ausstehende Rechnungen ist ungefähr [geschätzt] aus den Zahlungsvorhersagen durch Auswahl eines Datums, das dem fünfzigsten Perzentil der kumulativen Verteilungsfunktion entspricht, die aus den Wahrscheinlichkeiten des vorhergesagten Buckets stammen.
 
 Ein ähnlicher Ansatz wird verwendet, um Zahlungen an Kreditoren vorherzusagen. Für jeden Kreditor berechnet das System die durchschnittliche Zeit, die erforderlich ist, um eine Kreditorenrechnung in eine Zahlung umzuwandeln. Diese Anzahl von Tagen wird dann dazu verwendet, das Zahlungsdatum zu berechnen. Bei offenen Kreditorenbestellungen berechnet das System das Rechnungsdatum unter Berücksichtigung der durchschnittlichen Anzahl von Tagen, die erforderlich sind, um Auftragspositionen für jeden Kreditor in eine Rechnung umzuwandeln. Das System berechnet dann das Zahlungsdatum unter Verwendung der durchschnittlichen Zeit, die erforderlich ist, um eine Zahlung für jeden Kreditor umzuwandeln.
 

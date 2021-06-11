@@ -1,5 +1,5 @@
 ---
-title: Lieferungen konsolidieren, wenn die Richtlinie zur Lieferungskonsolidierung auf der Seite „Freigabe an Lager“ überschrieben wird
+title: Konsolidieren Sie Sendungen, wenn die Versandkonsolidierungsrichtlinie überschrieben wird
 description: In diesem Thema wird ein Szenario vorgestellt, in dem eine oder mehrere Verkaufspositionen von der Seite „Freigabe an Lager“ manuell an das Lager freigegeben werden müssen und die systemdefinierte Lieferungskonsolidierungsrichtlinie vor der Freigabe überschrieben werden muss.
 author: GarmMSFT
 ms.date: 05/12/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: dcd619ad2906d4224966e2696712ed0e71886eb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6928375c88a199bd9c6b48f05b38343463762920
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837488"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117008"
 ---
-# <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>Lieferungen konsolidieren, wenn die Richtlinie zur Lieferungskonsolidierung auf der Seite „Freigabe an Lager“ überschrieben wird
+# <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden"></a>Konsolidieren Sie Sendungen, wenn die Versandkonsolidierungsrichtlinie überschrieben wird
 
 [!include [banner](../includes/banner.md)]
 

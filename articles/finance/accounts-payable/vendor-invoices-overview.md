@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf3b842f018b4386d5ab4769143d4f7f0907873e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bd30e7128c688a0880727380e601069a95a28dcd
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841260"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111693"
 ---
 # <a name="vendor-invoices-overview"></a>Kreditorenrechnungen – Übersicht
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Dieses Thema enthält allgemeine Informationen zu Kreditorenrechnungen. Kreditorenrechnungen sind Zahlungseingangsaufforderungen für Produkte und Dienstleistungen. Kreditorenrechnungen können eine Rechnung für laufende Dienstleistungen darstellen oder auf Bestellungen für bestimmte Artikel und Dienstleistungen basieren.
 
@@ -71,7 +73,9 @@ Im Folgenden finden Sie verschiedene Möglichkeiten, wie Sie verhindern können,
 
 - **Die Rechnung enthält nicht zugeordnete Gebühren.** Die Person, die die Rechnung eingereicht hat, erhält eine Benachrichtigung, dass die Rechnung nicht zugewiesene Belastungen enthält, sodass sie die Salden korrigieren kann, bevor sie die Rechnung erneut an den Workflow sendet. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn nicht zugewiesene Belastungen auf einer Kreditorenrechnung sind** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist.
 
-- **Die Rechnung enthält dieselbe Rechnungsnummer wie eine andere gebuchte Rechnung.** Die Person, die die Rechnung eingereicht hat, erhält eine Benachrichtigung, dass eine Rechnung mit gleicher Rechnungsnummer gefunden wurde, sodass sie sie korrigieren kann, bevor sie die Rechnung erneut an den Workflow sendet. Diese Warnung wird angezeigt, wenn der Parameter **Die verwendete Rechnungsnummer überprüfen** im Kreditorenkonto verwendet wird und auf **Duplikat ablehnen** eingestellt ist. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn die Rechnungsnummer bereits auf einer gebuchten Rechnung vorhanden ist und Ihr System nicht für die Annahme doppelter Rechnungsnummern eingerichtet ist** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist.  
+- **Die Rechnung enthält dieselbe Rechnungsnummer wie eine andere gebuchte Rechnung.** Die Person, die die Rechnung eingereicht hat, erhält eine Nachricht, dass eine Rechnung mit einer doppelten Nummer gefunden wurde. Die doppelte Nummer kann korrigiert werden, bevor die Rechnung erneut an den Workflow gesendet wird. Diese Warnung wird angezeigt, wenn der Parameter **Die verwendete Rechnungsnummer überprüfen** im Kreditorenkonto verwendet wird und auf **Duplikat ablehnen** eingestellt ist. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn die Rechnungsnummer bereits auf einer gebuchten Rechnung vorhanden ist und Ihr System nicht für die Annahme doppelter Rechnungsnummern eingerichtet ist** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist.
+
+- **Rechnung enthält eine Zeile, in der die Rechnungsmenge geringer ist als die übereinstimmende Produktbelegmenge.** Die Person, die die Rechnung einreicht oder versucht zu buchen, erhält eine Nachricht, dass die Mengen nicht gleich sind. Die Meldung bietet die Möglichkeit, die Werte zu korrigieren, bevor die Rechnung erneut an den Workflow gesendet wird. Diese Funktion ist verfügbar, wenn die Parameter **Buchung und Übermittlung von Lieferantenrechnungen an den Workflow blockieren** auf der Seite **Funktionsverwaltung** eingeschaltet ist und die Parameter **Buchung und Übermittlung an den Workflow blockieren** auf der Seite **Kreditorenbuchhaltungsparameter** eingeschaltet sind.  
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Abgleichen von Kreditorenrechnungen mit Produktzugängen
 

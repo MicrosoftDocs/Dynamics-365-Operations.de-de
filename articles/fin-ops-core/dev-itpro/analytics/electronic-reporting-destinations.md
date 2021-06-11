@@ -2,7 +2,7 @@
 title: Zielorte für elektronische Berichterstellung (ER)
 description: Dieses Thema enthält Informationen zur Verwaltung von EB-Zielen (Electronic Reporting), zu den unterstützten Zieltypen und zu Sicherheitsaspekten.
 author: nselin
-ms.date: 02/24/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893603"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085499"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Zielorte für elektronische Berichterstellung (ER)
 
@@ -164,7 +164,7 @@ Um die PDF-Konvertierungsoption in der aktuellen Finance-Instanz verfügbar zu m
 
 ### <a name="applicability"></a>Anwendbarkeit
 
-Die PDF-Konvertierungsoption kann nur für Dateikomponenten aktiviert werden, in denen die Ausgabe im Office-Format (Excel oder Word) (**Excel-Datei**) generiert wird. Wenn diese Option aktiviert ist, wird die im Office-Format generierte Ausgabe automatisch in PDF-Format konvertiert. In Versionen von Finance **vor der Version 10.0.18** können Sie diese Option nur für Komponenten des Typs **Excel\\Datei** aktivieren, die zum Generieren der Ausgabe im [Excel](er-fillable-excel.md)- oder[Word](er-design-configuration-word.md)-Format verwendet werden. In **Version 10.0.18 und höher** können Sie diese Option jedoch auch für Komponenten des Typs **Allgemein\\Datei** aktivieren.
+Die PDF-Konvertierungsoption kann nur für Dateikomponenten aktiviert werden, in denen die Ausgabe im Office-Format (Excel oder Word) (**Excel-Datei**) generiert wird. Wenn diese Option aktiviert ist, wird die im Office-Format generierte Ausgabe automatisch in PDF-Format konvertiert. In Versionen von Finance **vor der Version 10.0.18** können Sie diese Option nur für Komponenten des Typs **Excel\\Datei** aktivieren, die zum Generieren der Ausgabe im [Excel](er-fillable-excel.md)- oder [Word](er-design-configuration-word.md)-Format verwendet werden. In **Version 10.0.18 und höher** können Sie diese Option jedoch auch für Komponenten des Typs **Allgemein\\Datei** aktivieren.
 
 > [!NOTE]
 > Beachten Sie die Warnmeldung, die Sie erhalten, wenn Sie die PDF-Konvertierungsoption für eine ER-Komponente des Typs **Allgemein\\Datei** aktivieren. Diese Meldung informiert Sie darüber, dass zur Entwurfszeit nicht garantiert werden kann, dass die ausgewählte Dateikomponente den Inhalt im PDF-Format oder den PDF-konvertierbaren Inhalt zur Laufzeit verfügbar macht. Daher sollten Sie die Option nur aktivieren, wenn Sie sicher sind, dass die ausgewählte Dateikomponente so konfiguriert wurde, dass der Inhalt im PDF-Format oder der PDF-konvertierbare Inhalt zur Laufzeit verfügbar gemacht wird.
@@ -199,6 +199,34 @@ Wenn Sie eine EB-Konfiguration im Excel-Format generieren und in das PDF-Format 
 > Die ausgewählte Seitenausrichtung wird auf alle ER-Konfigurationen angewendet, die im Excel-Format generiert und dann in das PDF-Format konvertiert werden.
 >
 > Wenn eine ER-Konfiguration im Word-Format in das PDF-Format konvertiert wird, wird die Seitenausrichtung der PDF-Datei aus dem Word-Dokument übernommen.
+
+## <a name="output-unfolding"></a>Ausgabe entfaltet sich
+
+Wenn Sie ein Ziel für die Komponente **Ordner** Ihres ER-Formats erstellen, können Sie angeben, wie die Ausgabe dieser Komponente an das konfigurierte Ziel geliefert wird.
+
+### <a name="make-output-unfolding-available"></a>Stellen Sie die Entfaltung der Ausgabe zur Verfügung
+
+Damit die Option zum Entfalten der Ausgabe in der aktuellen Finanzinstanz verfügbar ist, öffnen Sie den Arbeitsbereich **Funktionsverwaltung** und schalten Sie die Funktion **Ermöglichen Sie das Konfigurieren von ER-Zielen, Ordnerinhalte als separate Dateien zu senden** ein.
+
+### <a name="applicability"></a>Anwendbarkeit
+
+Die Option zum Entfalten der Ausgabe kann nur für die Formatkomponenten des Typs **Ordner** konfiguriert werden. Wenn Sie mit der Konfiguration von einer Komponente **Ordner** beginnen, wird das Inforegister **Allgemeines** auf der Seite **Ziel der elektronischen Berichterstattung** verfügbar. 
+
+### <a name="use-the-output-unfolding-option"></a>Verwenden Sie die Option zum Entfalten der Ausgabe
+
+Auf dem Inforegister **Allgemeines** im **Ordner senden als** wählen Sie im Feld einen der folgenden Werte aus:
+
+- **ZIP-Archiv** – Liefern Sie eine generierte Datei als Zip-Datei.
+- **Separate Dateien** – Liefern Sie jede Datei einer generierten Zip-Datei als einzelne Datei.
+
+    > [!NOTE]
+    > Wenn Sie **Separate Dateien** auswählen, wird die generierte Ausgabe in einem komprimierten Zustand im Speicher gesammelt. Daher wird die maximale [Dateigrößenbeschränkung](er-compress-outbound-files.md) für die komprimierte Ausgabe angewendet, wenn die tatsächliche Dateigröße diese Grenze möglicherweise überschreitet. Wir empfehlen, diesen Wert auszuwählen, wenn Sie erwarten, dass die Größe der generierten Ausgabe zu groß ist.
+
+[![Konfigurieren eines Ziels für eine Komponente im Ordnerformat](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+
+### <a name="limitations"></a>Einschränkungen
+
+Wenn Sie das Feld **Ordner senden als** auf **Separate Dateien** für eine Komponente **Ordner** festlegen, die andere eingebetteten Komponenten **Ordner** enthält, wird die Einstellung nicht rekursiv auf die verschachtelten Komponenten **Ordner** angewendet.
 
 ## <a name="security-considerations"></a>Sicherheitsaspekte
 

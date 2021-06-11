@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e9cd90d74b92754d4a5432485d5dd59c31e34c61
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45763d5e602946fc3328cc3b565777fb7e549c61
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841984"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115096"
 ---
 # <a name="release-product-structures"></a>Produktstrukturen freigeben
 
@@ -103,6 +103,7 @@ Legen Sie die folgenden Felder auf der Inforegisterkarte **Allgemein** einer Ric
 | Feld | Beschreibung |
 |---|---|
 | Produkttyp | Wählen Sie, ob die Richtlinie für Produkte vom Typ *Element* oder *Service* gilt. Sie können diese Einstellung nicht mehr ändern, nachdem Sie den Datensatz gespeichert haben. |
+| Produktionstyp | Dieses Feld wird nur angezeigt, wenn Sie [Formeländerungsmanagement](manage-formula-changes.md) in Ihrem System aktiviert haben. Dient zum Auswählen des Produktionstyps, für den diese Relase-Richtlinie gültig ist:<ul><li>**Co-Produkt** – Verwenden Sie diese Freigaberichtlinie, um Co-Produkte zu verwalten. Co-Produkte entstehen während der Prozessherstellung und sind keine versionierten oder technischen Produkte. Release-Richtlinien für Co-Produkte können dazu beitragen, dass wichtige Einstellungen wie **Speicherdimensionsgruppe** und **Rückverfolgungsangabengruppe** werden mithilfe einer freigegebenen Produktvorlage eingerichtet, bevor sie für ein Unternehmen freigegeben werden.</li><li>**Co-Produkt** – Verwenden Sie diese Freigaberichtlinie, um Nebenprodukte zu verwalten. Nebenprodukte entstehen während der Prozessherstellung und sind keine versionierten oder technischen Produkte. Release-Richtlinien für Nebenprodukte können dazu beitragen, dass wichtige Einstellungen wie **Speicherdimensionsgruppe** und **Rückverfolgungsangabengruppe** werden mithilfe einer freigegebenen Produktvorlage eingerichtet, bevor sie für ein Unternehmen freigegeben werden.</li><li>**Keiner** – Verwenden Sie diese Richtlinie, um Standardprodukte zu verwalten, die nicht versioniert sind, oder technische Produkte oder Nebenprodukte oder Nebenprodukte.</li><li>**Planungsgegenstand** – Verwenden Sie diese Freigaberichtlinie, um Planungselemente zu verwalten, die mithilfe der Prozessfertigung erstellt werden. Planungselemente verwenden Formeln. Sie ähneln Formeln, werden jedoch nur zur Herstellung von Co-Produkten und Nebenprodukten verwendet, nicht von Fertigprodukten.</li><li>**Stückliste** – Verwenden Sie diese Freigaberichtlinie, um Engineering-Produkte zu verwalten, die keine Formeln verwenden und normalerweise (aber nicht unbedingt) Stücklisten enthalten.</li><li>**Formel** – Verwenden Sie diese Freigaberichtlinie, um Planungselemente zu verwalten, die mithilfe der Prozessfertigung erstellt werden. Diese Artikel haben eine Formel, aber keine Stückliste.</li></ul> |
 | Vorlagen anwenden | Wählen Sie eine der folgenden Optionen, um festzulegen, ob und wie Produktfreigabevorlagen angewendet werden sollen, wenn die Richtlinie verwendet wird:<ul><li>**Immer** - Eine Produktfreigabevorlage muss immer für Freigaben verwendet werden. Wenn Sie diese Option wählen, verwenden Sie das Inforegister **Alle Produkte**, um die Vorlage anzugeben, die für jede Firma verwendet wird, für die Sie eine Freigabe erteilen. Wenn Sie nicht für jede Firma, die auf dem Inforegister **Alle Produkte** aufgeführt ist, eine Vorlage angeben, erhalten Sie einen Fehler, wenn Sie versuchen, die Richtlinie zu speichern.</li><li>**Optional** - Wenn für eine Firma, die auf der Registerkarte **Alle Produkte** Inforegister aufgeführt ist, eine Vorlage für freigegebene Produkte angegeben ist, wird diese Vorlage verwendet, wenn Sie für diese Firma freigeben. Andernfalls wird keine Vorlage verwendet. Wenn Sie diese Option wählen, können Sie die Richtlinie speichern, ohne allen Firmen Vorlagen zuzuweisen. (Es wird keine Warnung angezeigt.)</li><li>**Niemals** - Es wird keine Vorlage verwendet, wenn Sie ein Produkt für eine Firma freigeben, auch wenn eine Vorlage für Firmen angegeben ist, die auf **Alle Produkte** Inforegister aufgeführt sind. Die Vorlagenspalten werden nicht verfügbar sein.</li></ul> |
 | Aktiv | Verwenden Sie diese Option, um die Einhaltung Ihrer Richtlinien für die Freigabe zu erleichtern. Legen Sie sie für alle von Ihnen verwendeten Richtlinien auf *Ja* fest. Legen Sie sie auf *Nein* fest, um eine Freigabe-Richtlinie als inaktiv zu markieren, wenn sie nicht verwendet wird. Beachten Sie, dass Sie eine Richtlinie, die einer technischen Produktkategorie zugewiesen ist, nicht inaktivieren können, und dass Sie nur inaktive Richtlinien löschen können. |
 

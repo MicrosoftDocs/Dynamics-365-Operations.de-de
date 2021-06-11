@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a4f882f1abc9f758aca77b137b28aa973f925ea9
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019493"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103627"
 ---
 # <a name="firm-planned-orders"></a>Fest geplante Aufträge
 
@@ -77,6 +77,7 @@ Um geplanter Aufträge manuell zu fixieren, suchen Sie die geplanter Aufträge, 
 
     - **Gruppieren nach Lieferant** – Legen Sie diese Option auf *Ja* fest, um geplante Aufträge zu gruppieren und eine Einkaufsbestellung pro Lieferant während der Umwandlung zu erstellen. Alternativ können Sie eine Einkaufsbestellung erstellen, die für jeden geplanten Auftrag eine Zeile enthält.
     - **Gruppieren nach Käufergruppe** – Legen Sie diese Option auf *Ja* fest, um geplante Aufträge zu gruppieren und eine Einkaufsbestellung zu erstellen, die den Lieferanten und die Käufergruppe kombiniert. Um diese Option zu verwenden, müssen Sie auch die Option **Gruppieren nach Kreditor** auf *Ja* festlegen.
+    - **Nach Kaufvertrag gruppieren** – Setzen Sie diese Option auf *Ja*, um geplante Bestellungen zu gruppieren, die denselben Lieferanten wie bestehende Kaufverträge haben, und eine Bestellung pro Kaufvertrag zu erstellen. Diese Option wird automatisch aktiviert, wenn **Nach Anbieter gruppieren** aktiviert ist. Um **Nach Kaufvertrag gruppieren** zu nutzen, muss **Kaufvertrag finden** auf *Ja* eingestellt sein auf der Seite **Masterplanungsparameter**.
     - **Gruppieren nach Periode** (im Abschnitt **Einkaufsbestellungen**) – Wählen Sie die Periode, nach der geplante Aufträge gruppiert werden sollen. Um diese Option zu verwenden, müssen Sie auch die Option **Gruppieren nach Kreditor** aktivieren.
     - **Gruppieren nach Periode** (im Bereich **Umlagerungsaufträge**) – Wählen Sie die Periode aus, nach der geplante Umlagerungsaufträge gruppiert werden sollen. Die Aufträge werden anhand der Werte **Vom Lagerort** und **Zum Lagerort** gruppiert.
 

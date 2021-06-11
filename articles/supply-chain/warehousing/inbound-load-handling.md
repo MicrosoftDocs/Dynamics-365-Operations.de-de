@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 62317f7e42c5392dce32a667f05f22e5c970abc7
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910014"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103167"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerabwicklung eingehender Ladungen für Bestellungen
 
@@ -127,7 +127,7 @@ In der folgenden Tabelle werden die Optionen beschrieben, die für das Feld **Em
 | Wert | Beschreibung |
 |---|---|
 | Zulassen | Arbeiter können den Eingang von Mengen registrieren, die die verbleibende nicht registrierte Menge für eine ausgewählte Ladung überschreiten, jedoch nur, wenn die gesamte registrierte Menge die Menge der Bestellposition, die der Ladung zugeordnet ist, nicht überschreitet (nach Anpassung des Prozentsatzes für die Mehrlieferung). |
-| Sperren | <p>Mitarbeiter können den Empfang von Mengen nicht registrieren, die größer sind als die verbleibende nicht registrierte Menge für eine ausgewählte Auslastung (nach Anpassung des Prozentsatzes der Mehrlieferung). Ein Mitarbeiter, der versucht, die Belege zu registrieren, erhält einen Fehler und kann erst fortfahren, wenn er eine Menge registriert, die der verbleibenden nicht registrierten Ladungsmenge entspricht oder darunter liegt.</p><p>Standardmäßig wird der Wert des Prozentsatzes der Mehrlieferung in einer Ladezeile aus der zugehörigen Bestellposition kopiert. Wenn das Feld <b>Quittung der Mehrladung</b> auf <i>Sperren</i> festgelegt ist, berechnet das System anhand des prozentualen Mehrlieferungswerts die Gesamtmenge, die für eine Ladeposition registriert werden kann. Dieser Wert kann jedoch bei Bedarf für einzelne Lasten überschrieben werden. Dieses Verhalten wird beim Empfang von Flüssen relevant, bei denen ein Teil oder die gesamte überschüssige Menge, die den Prozentsatz der Mehrlieferung der Bestellposition darstellt, überproportional auf mehrere Ladungen verteilt ist. Hier ist ein Beispielszenario:</p><ul><li>Es gibt mehrere Ladungen für eine Bestellposition.</li><li>Die Bestellungsposition hat einen Mehrlieferungsprozentsatz von mehr als 0 (Null).</li><li>Mengen wurden bereits für eine oder mehrere Ladungen registriert, ohne den Prozentsatz der Mehrlieferung zu berücksichtigen.</li><li>Die Mehrlieferungsmenge kommt mit der letzten Ladung an.</li></ul><p>In diesem Szenario kann ein mobiles Gerät nur dann verwendet werden, um die überschüssige Menge für die letzte Ladung zu registrieren, wenn der Lagerleiter den Prozentsatz der Mehrlieferung für die betreffende Ladelinie vom Standardwert auf einen Wert erhöht, der groß genug ist, damit die vollständige Mehrlieferung mit der endgültigen Ladung registriert werden kann.</p> |
+| Sperren | <p>Mitarbeiter können den Empfang von Mengen nicht registrieren, die größer sind als die verbleibende nicht registrierte Menge für eine ausgewählte Auslastung (nach Anpassung des Prozentsatzes der Mehrlieferung). Eine Arbeitskraft, die versucht, die Belege zu registrieren, erhält einen Fehler und kann erst fortfahren, wenn sie eine Menge registriert, die der verbleibenden nicht registrierten Ladungsmenge entspricht oder darunter liegt.</p><p>Standardmäßig wird der Wert des Prozentsatzes der Mehrlieferung in einer Ladezeile aus der zugehörigen Bestellposition kopiert. Wenn das Feld <b>Quittung der Mehrladung</b> auf <i>Sperren</i> festgelegt ist, berechnet das System anhand des prozentualen Mehrlieferungswerts die Gesamtmenge, die für eine Ladeposition registriert werden kann. Dieser Wert kann jedoch bei Bedarf für einzelne Lasten überschrieben werden. Dieses Verhalten wird beim Empfang von Flüssen relevant, bei denen ein Teil oder die gesamte überschüssige Menge, die den Prozentsatz der Mehrlieferung der Bestellposition darstellt, überproportional auf mehrere Ladungen verteilt ist. Hier ist ein Beispielszenario:</p><ul><li>Es gibt mehrere Ladungen für eine Bestellposition.</li><li>Die Bestellungsposition hat einen Mehrlieferungsprozentsatz von mehr als 0 (Null).</li><li>Mengen wurden bereits für eine oder mehrere Ladungen registriert, ohne den Prozentsatz der Mehrlieferung zu berücksichtigen.</li><li>Die Mehrlieferungsmenge kommt mit der letzten Ladung an.</li></ul><p>In diesem Szenario kann ein mobiles Gerät nur dann verwendet werden, um die überschüssige Menge für die letzte Ladung zu registrieren, wenn der Lagerleiter den Prozentsatz der Mehrlieferung für die betreffende Ladelinie vom Standardwert auf einen Wert erhöht, der groß genug ist, damit die vollständige Mehrlieferung mit der endgültigen Ladung registriert werden kann.</p> |
 | Nur für geschlossene Ladungen sperren | Arbeiter können Mehrmengen für offene Lasten empfangen, jedoch nicht für Lasten mit dem Status _Empfangen_. |
 
 > [!NOTE]
@@ -216,7 +216,7 @@ Um zusätzliche registrierte Ladungsmengen gegen eine Ladung mit dem Status _Emp
 
 ### <a name="post-registered-quantities-from-the-purchase-order-page"></a>Veröffentlichen Sie registrierte Mengen auf der Seite Bestellung
 
-Um den Produktbeleg zu erhalten, senden Sie die registrierten Mengen von der Seite **Bestellung**, Der Benutzer führt die folgenden Aufgaben aus, bevor er die Aktion **Produktbeleg** auswählt:
+Um den Produktbeleg für die registrierte Mengen von der Seite **Bestellung** zu erstellen, führt der Benutzer die folgenden Aufgaben aus, bevor er die Aktion **Produktbeleg** auswählt:
 
 - Legen Sie das Feld **Menge** im Abschnitt **Parameter** auf der Registerkarte **Einstellungen** auf _registrierte Menge_ fest.
 - In dem Feld **Produktbeleg** geben Sie die Nummern der Bestellungen ein, die in der Buchung enthalten sind.
@@ -347,7 +347,7 @@ Wenn die Ladung am Wareneingangsdock ankommt, registriert ein Empfangsmitarbeite
 
 1. Fahren Sie mit dem Workflow fort und lassen Sie alle anderen Felder leer oder setzen Sie sie auf Ihre Standardwerte, bis Ihr Gerät Sie darüber informiert, dass die Arbeit abgeschlossen ist.
 
-Die Ladungsempfangsaufgabe ist nun abgeschlossen, und der Empfangsmitarbeiter kann mit seiner nächsten Aufgabe fortfahren. Das Lagerempfangspersonal überprüft jedoch eventuell den Ladungsdatensatz und kann feststellen, dass die empfangene Menge unter der erwarteten Menge lag. Anschließend führen sie die folgende Prozedur mithilfe des Webclients aus.
+Die Ladungsempfangsaufgabe ist nun abgeschlossen, und der Empfangsmitarbeiter kann mit der nächsten Aufgabe fortfahren. Das Lagerempfangspersonal überprüft jedoch eventuell den Ladungsdatensatz und kann feststellen, dass die empfangene Menge unter der erwarteten Menge lag. Anschließend führen sie die folgende Prozedur mithilfe des Webclients aus.
 
 1. Gehen Sie zu **Lagerortverwaltung \> Ladungen \> Alle Ladungen**.
 1. Suchen Sie in der Liste die Ladung, die Sie gerade erhalten haben. (Möglicherweise müssen Sie das Kontrollkästchen **Abgeschlossene Anzeigen** auswählen, um die eingehenden Ladungen mit dem Ladungsstatus von _Versandt_ einzuschließen.) Wählen Sie dann den Link in der Spalte **ID laden**, um die Ladung zu öffnen.
