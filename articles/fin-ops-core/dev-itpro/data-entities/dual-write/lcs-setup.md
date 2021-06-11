@@ -2,91 +2,69 @@
 title: Einrichtung von dualem Schreiben aus Lifecycle Services
 description: In diesem Thema wird erläutert, wie Sie eine Verbindung für duales Schreiben über Microsoft Dynamics Lifecycle Services (LCS) einrichten.
 author: RamaKrishnamoorthy
-ms.date: 01/06/2020
+ms.date: 05/11/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e51b4ef1e309e5f89dc82a3776b88c505dc6593d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748540"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103568"
 ---
-# <a name="dual-write-setup-from-lifecycle-services"></a><span data-ttu-id="2f2c8-103">Einrichtung von dualem Schreiben aus Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="2f2c8-103">Dual-write setup from Lifecycle Services</span></span>
+# <a name="dual-write-setup-from-lifecycle-services"></a><span data-ttu-id="49be9-103">Einrichtung von dualem Schreiben aus Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="49be9-103">Dual-write setup from Lifecycle Services</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-<span data-ttu-id="2f2c8-104">In diesem Thema wird erläutert, wie Sie eine Dual-Schreib-Verbindung zwischen einer neuen Finance and Operations Umgebung und einer neuen Dataverse Umgebung aus Microsoft Dynamics Lifecycle Services (LCS) einrichten.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-104">This topic explains how to set up a dual-write connection between a new Finance and Operations environment and a new Dataverse environment from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="49be9-104">In diesem Thema wird erläutert, wie Sie eine Verbindung für duales Schreiben über Microsoft Dynamics Lifecycle Services (LCS) aktivieren.</span><span class="sxs-lookup"><span data-stu-id="49be9-104">This topic explains how to enable dual-write from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2f2c8-105">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="2f2c8-105">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="49be9-105">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="49be9-105">Prerequisites</span></span>
 
-<span data-ttu-id="2f2c8-106">Sie müssen ein Administrator sein, um eine Dual-Schreib-Verbindung einzurichten.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-106">You must be an admin to set up a dual-write connection.</span></span>
+<span data-ttu-id="49be9-106">Sie müssen die Power Platform Integration wie in den folgenden Themen beschrieben ausfüllen:</span><span class="sxs-lookup"><span data-stu-id="49be9-106">You must complete the Power Platform integration as described in the following topics:</span></span>
 
-+ <span data-ttu-id="2f2c8-107">Sie müssen Zugriff auf den Mandant besitzen.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-107">You must have access to the tenant.</span></span>
-+ <span data-ttu-id="2f2c8-108">Sie müssen in beiden Bereichen Administrator sein, in Finance and Operations Umgebungen und Dataverse Umgebungen.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-108">You must be an admin in both Finance and Operations environments and Dataverse environments.</span></span>
++ [<span data-ttu-id="49be9-107">Power Platform Integration – Aktivieren Sie diese Option während der Bereitstellung der Umgebung</span><span class="sxs-lookup"><span data-stu-id="49be9-107">Power Platform Integration - Enable during environment deployment</span></span>](../../power-platform/overview.md#enable-during-environment-deployment)
++ [<span data-ttu-id="49be9-108">Power Platform Integration – Richten Sie diese Option nach der Bereitstellung der Umgebung ein</span><span class="sxs-lookup"><span data-stu-id="49be9-108">Power Platform integration - Set up after environment deployment</span></span>](../../power-platform/overview.md#set-up-after-environment-deployment)
 
-## <a name="set-up-a-dual-write-connection"></a><span data-ttu-id="2f2c8-109">Richten Sie eine Dual-Schreib-Verbindung ein</span><span class="sxs-lookup"><span data-stu-id="2f2c8-109">Set up a dual-write connection</span></span>
+## <a name="set-up-dual-write-for-new-dataverse-environments"></a><span data-ttu-id="49be9-109">Richten Sie duales Schreiben für neue Dataverse Umgebungen ein</span><span class="sxs-lookup"><span data-stu-id="49be9-109">Set up dual-write for new Dataverse environments</span></span>
 
-<span data-ttu-id="2f2c8-110">Folgen Sie diesen Schritten, um eine Dual-Schreib-Verbindung einzurichten.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-110">Follow these steps to set up the dual-write connection.</span></span>
+<span data-ttu-id="49be9-110">Befolgen Sie diese Schritte, um duales Schreiben von der LCS -Seite **Umgebungsdetails** einzurichten:</span><span class="sxs-lookup"><span data-stu-id="49be9-110">Follow these steps to set up dual-write from LCS **Environment Details** page:</span></span>
 
-1. <span data-ttu-id="2f2c8-111">In LCS gehen Sie zu Ihrem Projekt.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-111">In LCS, go to your project.</span></span>
-2. <span data-ttu-id="2f2c8-112">Wählen Sie **Konfigurieren**, um eine neue Umgebung bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-112">Select **Configure** to deploy a new environment.</span></span>
-3. <span data-ttu-id="2f2c8-113">Wählen Sie die Version.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-113">Select the version.</span></span> 
-4. <span data-ttu-id="2f2c8-114">Wählen Sie die Topologie aus.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-114">Select the topology.</span></span> <span data-ttu-id="2f2c8-115">Wenn nur eine Topologie verfügbar ist, wird diese automatisch ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-115">If only one topology is available, it's automatically selected.</span></span>
-5. <span data-ttu-id="2f2c8-116">Führen Sie die ersten Schritte im Assistent **Bereitstellungseinstellungen** aus.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-116">Complete the first steps in the **Deployment settings** wizard.</span></span>
-6. <span data-ttu-id="2f2c8-117">Folgen Sie einem dieser Schritte auf der Registerkarte **Dataverse**:</span><span class="sxs-lookup"><span data-stu-id="2f2c8-117">On the **Dataverse** tab, follow one of these steps:</span></span>
+1. <span data-ttu-id="49be9-111">Auf der Seite **Umgebungsdetails** erweitern Sie den Abschnitt **Power Platform Integration**.</span><span class="sxs-lookup"><span data-stu-id="49be9-111">On the **Environment Details** page, expand the **Power Platform Integration** section.</span></span>
 
-    - <span data-ttu-id="2f2c8-118">Wenn eine Dataverse Umgebung bereits für Ihren Mandanten bereitgestellt ist, können sie sie auswählen.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-118">If a Dataverse environment is already provisioned for your tenant, you can select it.</span></span>
+2. <span data-ttu-id="49be9-112">Wählen Sie die Schaltfläche **Duale Schreibanwendung** aus.</span><span class="sxs-lookup"><span data-stu-id="49be9-112">Select the **Dual-write application** button.</span></span>
 
-        1. <span data-ttu-id="2f2c8-119">Legen Sie die Option **Dataverse Konfigurieren** auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-119">Set the **Configure Dataverse** option to **Yes**.</span></span>
-        2. <span data-ttu-id="2f2c8-120">In der Spalte **Verfügbare Umgebungen** wählen Sie im Feld die Umgebung aus, die in Ihre Finance and Operations-Daten integriert werden soll.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-120">In the **Available environments** column, select the environment to integrate with your Finance and Operations data.</span></span> <span data-ttu-id="2f2c8-121">Die Liste enthält alle Umgebungen, in denen Sie über Administratorrechte verfügen.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-121">The list includes all environments where you have admin privileges.</span></span>
-        3. <span data-ttu-id="2f2c8-122">Wähle Sie das Kontrollkästchen **Zustimmen**, um anzuzeigen, dass Sie den Nutzungsbedingungen zustimmen.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-122">Select the **Agree** check box to indicate that you agree to the terms and conditions.</span></span>
+    ![Power Platform-Integration](media/powerplat_integration_step2.png)
 
-        ![Dataverse Registerkarte, wenn eine Dataverse Umgebung bereits für Ihren Mandanten bereitgestellt ist](../dual-write/media/lcs_setup_1.png)
+3. <span data-ttu-id="49be9-114">Lesen Sie die allgemeinen Geschäftsbedingungen und wählen Sie **Konfigurieren** aus.</span><span class="sxs-lookup"><span data-stu-id="49be9-114">Review the terms and conditions, and then select **Configure**.</span></span>
 
-    - <span data-ttu-id="2f2c8-124">Wenn Ihr Mandant noch keine Dataverse Umgebung hat, wird eine neue Umgebung bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-124">If your tenant doesn't already have a Dataverse environment, a new environment will be provisioned.</span></span>
+4. <span data-ttu-id="49be9-115">Wählen Sie **OK**, um fortzufahren.</span><span class="sxs-lookup"><span data-stu-id="49be9-115">Select **OK** to continue.</span></span>
 
-        1. <span data-ttu-id="2f2c8-125">Legen Sie die Option **Dataverse Konfigurieren** auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-125">Set the **Configure Dataverse** option to **Yes**.</span></span>
-        2. <span data-ttu-id="2f2c8-126">Einen Namen für die Dataverse Umgebung eingeben.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-126">Enter a name for the Dataverse environment.</span></span>
-        3. <span data-ttu-id="2f2c8-127">Wählen Sie die Region aus, in der die Umgebung bereitgestellt werden soll.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-127">Select the region to deploy the environment in.</span></span>
-        4. <span data-ttu-id="2f2c8-128">Wählen Sie die Standardsprache und -währung für die Umgebung aus.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-128">Select the default language and currency for the environment.</span></span>
+5. <span data-ttu-id="49be9-116">Sie können den Fortschritt überwachen, indem Sie die Seite mit den Umgebungsdetails regelmäßig aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="49be9-116">You can monitor the progress by periodically refreshing the environment details page.</span></span> <span data-ttu-id="49be9-117">Die Einrichtung dauert normalerweise 30 Minuten oder weniger.</span><span class="sxs-lookup"><span data-stu-id="49be9-117">Setup typically takes 30 minutes or less.</span></span>  
 
-            > [!NOTE]
-            > <span data-ttu-id="2f2c8-129">Sie können die Sprache und Währung später nicht mehr ändern.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-129">You can't change the language and currency later.</span></span>
+6. <span data-ttu-id="49be9-118">Nach Abschluss der Einrichtung werden Sie in einer Meldung darüber informiert, ob der Vorgang erfolgreich war oder ob ein Fehler aufgetreten ist.</span><span class="sxs-lookup"><span data-stu-id="49be9-118">When the setup is complete, a message will inform you if the process was successful or if there was a failure.</span></span> <span data-ttu-id="49be9-119">Wenn die Einrichtung fehlgeschlagen ist, wird eine entsprechende Fehlermeldung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="49be9-119">If the setup failed, then a related error message is displayed.</span></span> <span data-ttu-id="49be9-120">Sie müssen alle Fehler beheben, bevor Sie mit dem nächsten Schritt fortfahren können.</span><span class="sxs-lookup"><span data-stu-id="49be9-120">You must fix any errors before moving to the next step.</span></span>
 
-        5. <span data-ttu-id="2f2c8-130">Wähle Sie das Kontrollkästchen **Zustimmen**, um anzuzeigen, dass Sie den Nutzungsbedingungen zustimmen.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-130">Select the **Agree** check box to indicate that you agree to the terms and conditions.</span></span>
+7. <span data-ttu-id="49be9-121">Wählen Sie **Link zur Power Platform Umgebung**, um eine Verbindung zwischen Dataverse und der aktuellen Umgebung der Datenbank zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="49be9-121">Select **Link to Power Platform environment** to create a link between Dataverse and the current environment's databases.</span></span> <span data-ttu-id="49be9-122">Diese Einrichtung dauert normalerweise 5 Minuten oder weniger.</span><span class="sxs-lookup"><span data-stu-id="49be9-122">This typically takes less than 5 minutes.</span></span>
 
-        ![Dataverse Registerkarte, wenn Ihr Mandant noch keine Dataverse Umgebung hat](../dual-write/media/lcs_setup_2.png)
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link zur Power Platform Umgebung":::
 
-7. <span data-ttu-id="2f2c8-132">Führen Sie die verbleibenden Schritte im Assistent **Bereitstellungseinstellungen** aus.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-132">Complete the remaining steps in the **Deployment settings** wizard.</span></span>
-8. <span data-ttu-id="2f2c8-133">Nachdem die Umgebung den Status **Bereitgestellt** hat, öffnen Sie die Seite mit den Umgebungsdetails.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-133">After the environment has a status of **Deployed**, open the environment details page.</span></span> <span data-ttu-id="2f2c8-134">Der Abschnitt **Power Platform-Integration** zeigt die Namen der Finance and Operations-Umgebung und der Dataverse-Umgebung, die verknüpft sind.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-134">The **Power Platform Integration** section shows the names of the Finance and Operations environment and the Dataverse environment that are linked.</span></span>
+8. <span data-ttu-id="49be9-124">Wenn die Verknüpfung abgeschlossen ist, wird ein Hyperlink angezeigt.</span><span class="sxs-lookup"><span data-stu-id="49be9-124">When the linking is complete, a hyperlink is displayed.</span></span> <span data-ttu-id="49be9-125">Verwenden Sie den Link, um sich im Verwaltungsbereich mit zwei Schreibvorgängen in der Finance and Operations Umgebung zu registrieren.</span><span class="sxs-lookup"><span data-stu-id="49be9-125">Use the link to sign in to the dual-write administration area in the Finance and Operations environment.</span></span> <span data-ttu-id="49be9-126">Von dort aus können Sie Entitätszuordnungen einrichten.</span><span class="sxs-lookup"><span data-stu-id="49be9-126">From there, you can set up entity mappings.</span></span>
 
-    ![Abschnitt „Power Platform-Integration“](../dual-write/media/lcs_setup_3.png)
+## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a><span data-ttu-id="49be9-127">Richten Sie duales Schreiben für eine bestehende Dataverse Umgebung ein</span><span class="sxs-lookup"><span data-stu-id="49be9-127">Set up dual-write for an existing Dataverse environment</span></span>
 
-9. <span data-ttu-id="2f2c8-136">Ein Administrator der Finance and Operations Umgebung muss sich bei LCS anmelden und **Verknüpfung zu CDS für Apps** auswählen, um den Link vervollständigen.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-136">An admin of the Finance and Operations environment must sign in to LCS and select **Link to CDS for Apps** to complete the link.</span></span> <span data-ttu-id="2f2c8-137">Auf der Seite mit den Umgebungsdetails werden die Kontaktinformationen des Administrators angezeigt.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-137">The environment details page shows the admin's contact information.</span></span>
+<span data-ttu-id="49be9-128">Um duales Schreiben für eine vorhandene Dataverse Umgebung einzurichten, müssen Sie ein Microsoft [Supportticket](../../lifecycle-services/lcs-support.md) erstellen.</span><span class="sxs-lookup"><span data-stu-id="49be9-128">To set up dual-write for an existing Dataverse environment, you must create a Microsoft [support ticket](../../lifecycle-services/lcs-support.md).</span></span> <span data-ttu-id="49be9-129">Das Ticket muss enthalten:</span><span class="sxs-lookup"><span data-stu-id="49be9-129">The ticket must include:</span></span>
 
-    <span data-ttu-id="2f2c8-138">Nach Abschluss der Verknüpfung wird der Status auf **Umgebungsverknüpfung erfolgreich abgeschlossen** aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-138">After the link is completed, the status is updated to **Environment linking successfully completed**.</span></span>
-
-10. <span data-ttu-id="2f2c8-139">Zum Öffnen des **Datenintegration** Arbeitsbereichs in der Finance and Operations wählen Sie die Umgebung aus und steuern Sie die verfügbaren Vorlagen und wählen Sie **Link zu CDS für Apps**.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-139">To open the **Data integration** workspace in the Finance and Operations environment and control the templates that are available, select **Link to CDS for Apps**.</span></span>
-
-    ![Link zur Schaltfläche „CDS für Apps“ im Abschnitt „Power Platform-Integration“](../dual-write/media/lcs_setup_4.png)
++ <span data-ttu-id="49be9-130">Ihre Finance and Operations Umgebungs-ID.</span><span class="sxs-lookup"><span data-stu-id="49be9-130">Your Finance and Operations environment ID.</span></span>
++ <span data-ttu-id="49be9-131">Ihr Umgebungsname von Lifecycle Services.</span><span class="sxs-lookup"><span data-stu-id="49be9-131">Your environment name from Lifecycle Services.</span></span>
++ <span data-ttu-id="49be9-132">Die Dataverse Organisations-ID oder Power Platform Umgebungs-ID vom Power Platform Admin Center.</span><span class="sxs-lookup"><span data-stu-id="49be9-132">The Dataverse organization ID or Power Platform Environment ID from Power Platform Admin Center.</span></span> <span data-ttu-id="49be9-133">Fordern Sie in Ihrem Ticket an, dass die ID die Instanz ist, die für die Power Platform Integration verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="49be9-133">In your ticket, request that the ID be the instance used for Power Platform integration.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2f2c8-141">Sie können die Verknüpfung von Umgebungen mit LCS nicht aufheben.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-141">You can't unlink environments by using LCS.</span></span> <span data-ttu-id="2f2c8-142">Um die Verknüpfung einer Umgebung aufzuheben, öffnen Sie den **Datenintegration** Arbeitsbereich in der Finance and Operations Umgebung und wählen Sie dann **Verknüpfung aufheben**.</span><span class="sxs-lookup"><span data-stu-id="2f2c8-142">To unlink an environment, open the **Data integration** workspace in the Finance and Operations environment, and then select **Unlink**.</span></span>
-
-
+> <span data-ttu-id="49be9-134">Sie können die Verknüpfung von Umgebungen mit LCS nicht aufheben.</span><span class="sxs-lookup"><span data-stu-id="49be9-134">You can't unlink environments by using LCS.</span></span> <span data-ttu-id="49be9-135">Um die Verknüpfung einer Umgebung aufzuheben, öffnen Sie den **Datenintegration** Arbeitsbereich in der Finance and Operations Umgebung und wählen Sie dann **Verknüpfung aufheben**.</span><span class="sxs-lookup"><span data-stu-id="49be9-135">To unlink an environment, open the **Data integration** workspace in the Finance and Operations environment, and then select **Unlink**.</span></span>
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
