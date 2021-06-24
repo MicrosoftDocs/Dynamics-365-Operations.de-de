@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f573dadeab88ead57fdb4b91ade21c244325058c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 818d96b14e32716e95b57391df5a90f7d32c4bb0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054018"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190231"
 ---
 # <a name="set-up-training-courses"></a>Kursschulungen einrichten
 
@@ -28,8 +28,7 @@ ms.locfileid: "6054018"
 
 Personalverwaltungsadministratoren und ein Manager können die Kursfunktionen verwenden, um Informationen zur Schulung zu verwalten, welche für Arbeitskräfte angeboten wird.
 
- <a name="set-up-prerequisites"></a>Einrichten von Voraussetzungen
----------------------
+##  <a name="set-up-prerequisites"></a>Einrichten von Voraussetzungen
 
 Die folgenden Informationen werden benötigt und müssen eingerichtet werden, bevor Sie Kurse erstellen.
 -   **Kurstypen**
@@ -127,8 +126,7 @@ In der folgenden Tabelle werden die möglichen Kursstatus und Aktivitäten aufge
 ## <a name="course-participants"></a>Kursteilnehmer
 Kursteilnehmer sind Arbeitskräfte, die an einem Schulungskurs oder Ereignis teilnehmen. Sie können nur Teilnehmer für offene Kurse registrieren. Die Höchst- und Mindestzahl der Teilnehmer, die für einen Kurs registriert werden können, wird im Inforegister **Allgemein** auf der Seite **Kurse** definiert.
 
-<a name="workflow"></a>Workflow
---------
+## <a name="workflow"></a>Workflow
 
 Mitarbeiter, die sich über die Seite **Mitarbeiter-Self-Service** erfassen, können ihre Erfassung per Workflow zur Genehmigung weiterleiten. Sie können einen Workflow für einen Kurs im Inforegister **Allgemein** auf der Seite **Kurse** zuweisen.
 

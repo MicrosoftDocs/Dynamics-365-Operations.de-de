@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 33d5e831d3a631aa17e78628a4e88b5e1cfa8c73
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e4109762a2db3114ad66882092d6729dd9b08364
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052863"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190207"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Artikel verwalten, die an Arbeitskräfte ausgeliehen werden
 
@@ -41,14 +41,12 @@ Mitarbeiter können die Datensätze der Artikel anzeigen, die ihnen über den A
 
 Manager können ausgeliehene Artikel für ihre direkten Berichte anzeigen. Sie können auch Berechtigung gewähren, um neue Ausleihartikeln im Auftrag ihrer Mitarbeiter hinzuzufügen.
 
- <a name="account-for-lost-or-misplaced-loan-items"></a>Konto für verlorene oder verlegte Ausleihartikel
------------------------------------------
+##  <a name="account-for-lost-or-misplaced-loan-items"></a>Konto für verlorene oder verlegte Ausleihartikel
 
 Wenn ein Artikel beschädigt oder verlegt wurde, geben Sie einen fiktive Rückgabedatensatz ein. Anschließend können Sie den Artikel entweder löschen oder im Überblick behalten und die Beschreibung ändern, um anzugeben, dass der Artikel nicht verfügbar ist.
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Personalverwaltung](index.md)
 

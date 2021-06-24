@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: dee9a6a7e2a5278f069958ce00689b1beb9b1bd7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a243399536fec3f5361104289c38e550bf8b1144
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792146"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193281"
 ---
 # <a name="ratings-and-reviews-modules"></a>Bewertungs‑ und Prüfungsmodule
 
@@ -54,7 +54,11 @@ Die folgende Abbildung zeigt, wie das Dialogfeld **Modul hinzufügen** Bewertung
 
 Das Modul Bewertung schreiben enhält eine Schaltfläche **Bewertung schreiben**, bei der sich Benutzer anmelden, eine Bewertung zuweisen und eine Überprüfung eines Produkts schreiben können. Mit diesem Modul können Benutzer eine Bewertung oder Prüfung bearbeiten, die sie zuvor übermittelt haben. Dieses Modul wird in der Regel über den Produktbewertungs-Histogramm- und Produktbewertungslistenmodulen auf einem PDP angezeigt.
 Die folgende Abbildung zeigt das Dialogfeld **Eine Bewertung schreiben**, das angezeigt wird, wenn ein Debitor **Eine Bewertung schreiben** auswählt. Der Debitor kann dieses Dialogfeld verwenden, um eine Bewertung und eine Prüfung zu übermitteln.
-![Dialogfeld zum Schreiben einer Rezension](media/rnr-eCommerce-write-review-module.png) Die folgende Tabelle zeigt die Eigenschaft des Rezensionsmoduls zum Schreiben, die im Autorentool konfiguriert werden muss.
+
+![Schreiben Sie ein Bewertungsdialogfeld](media/rnr-eCommerce-write-review-module.png)
+
+In der folgenden Tabelle wird die Eigenschaft für das Modul Bewertung schreiben angezeigt, die im Erstellungstool konfiguriert werden muss.
+
 | Eigenschaftenname | Wert        | Eigenschaftbeschreibung                 |
 |---------------|--------------|--------------------------------------|
 | Name          | Bewertung schreiben | Der Name des Moduls Bewertung schreiben |

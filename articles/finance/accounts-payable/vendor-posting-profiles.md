@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37fb7d2623451313475a6c234e820c7c6295be40
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e4b38fd137e6479493da79d4b62d0111b502a632
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835483"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189492"
 ---
 # <a name="vendor-posting-profiles"></a>Kreditoren-Buchungsprofile
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835483"
 
 Händlerbuchungsprofile steuern die Buchung von Händlertransaktionen im Hauptbuch.
 
-<a name="vendor-posting-profiles"></a>Kreditoren-Buchungsprofile
------------------------
+## <a name="vendor-posting-profiles"></a>Kreditoren-Buchungsprofile
 
 Kreditoren-Buchungsprofile ermöglichen das Zuweisen von Hauptbuch-Sachkonten und Dokumenteinstellungen zu allen Kreditoren, einer Kreditorengruppe oder einem bestimmten Kreditor. Diese Einstellungen werden verwendet, wenn Sie Bestellungen, Kreditorenrechnungen und Barzahlungen erstellen. Bei einigen Buchungen können Sie ein Buchungsprofil auswählen, das sich von auf dieser Seite für Buchungen eingerichteten Buchungsprofilen unterscheidet und Vorrang vor diesen hat. Das Buchungsprofil wird im **Sachkonto- und Mehrwertsteuer** Inforegister auf der **Kreditorenparameterseite** definiert. Das Buchungsprofil wird dann automatisch in den Kopf neuer Dokumente einbezogen. Dort können Sie es bei Bedarf zu einem anderen Buchungsprofil ändern.
 

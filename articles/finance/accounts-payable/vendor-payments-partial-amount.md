@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a46ebb841b4abe6aa5bd8b06966f4197b27aeaee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ee17aeb75e2bdc3b9c36d50914c24aa9d6218b7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841212"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189516"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>Kreditorenzahlungen für einen Teilbetrag
 
@@ -28,8 +28,7 @@ ms.locfileid: "5841212"
 
 Es kann vorkommen, dass Sie eine Zahlung an einen Kreditor leisten, die geringer als der in der Rechnung angegebene Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben. Die zur Verfügung stehenden Optionen sind von den jeweiligen Geschäftsanforderungen und der Konfiguration abhängig. 
 
-<a name="cash-discount-amounts"></a>Skontobeträge
----------------------
+## <a name="cash-discount-amounts"></a>Skontobeträge
 
 Ein Händler kann Ihnen einen Skonto für die Zahlung einer Rechnung vor dem Fälligkeitsdatum anbieten. Beispielsweise geben Sie eine Rechnung für 100.00 ein, die einen Skonto in Höhe von 2 % angibt, wenn die Rechnung innerhalb von 10 Tagen bezahlt wird. Die Fälligkeitsdatumsbedingungen sind 30 Tage. Wenn ein Zahlungsvorschlag das Skonto als Kriterium zum Auswählen einer Rechnung verwendet und der Vorschlag am oder vor dem Skontodatum erfolgt, wird die Rechnung zur Zahlung ausgewählt und die Zahlung über einen Betrag von 98,00 erstellt. Ein Skonto kann auch für eine Einmalzahlung verwendet werden, die manuell erstellt wurde.
 

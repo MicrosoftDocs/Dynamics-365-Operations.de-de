@@ -2,7 +2,7 @@
 title: Homepage zu Finance Insights (Vorschau)
 description: Finance Insights bietet konfigurierbare und erweiterbare Modelle, mit denen Sie den Cashflow Ihres Unternehmens genau und intelligent vorhersagen können und auch, wann Sie Zahlungen für ausstehende Forderungen erhalten, und einen Budgetvorschlag erstellen können, der Ihren Budgetierungsprozess beschleunigen kann. Alle diese Funktionen basieren auf intelligenten Machine Learning-Modellen.
 author: ShivamPandey-msft
-ms.date: 07/20/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3a78a162469790d797344ce9311c55bfcecd19f4
-ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
+ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6086988"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222509"
 ---
 # <a name="finance-insights-home-page-preview"></a>Homepage zu Finance Insights (Vorschau)
 
@@ -68,7 +68,9 @@ Vertrautheit mit dem Erstellen und Verwalten von Ressourcen in Azure, Microsoft 
 
 ## <a name="configure-finance-insights"></a>Konfigurieren von Finance Insights
 
-Sie müssen einige Konfigurationsschritte ausführen, bevor Sie Finance Insights verwenden können. Weitere Informationen zum Konfigurieren von Finance Insights finden Sie unter [Konfiguration für Finance Insights](configure-for-fin-insites.md).
+Sie müssen einige Konfigurationsschritte ausführen, bevor Sie Finance Insights verwenden können. Weitere Informationen zur Konfiguration von Finance insights finden Sie unter:
+  - Für Versionen bis 10.0.19: [Konfiguration für Finance Insights – Versionen bis 10.0.19](configure-for-fin-insites.md).
+  - Für Versionen 10.0.20 und höher: [Konfiguration für Finance Insights (Vorschau) – Versionen 10.0.20 und höher](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Erstellen Sie ein Datenintegratorprojekt
 
@@ -84,10 +86,7 @@ Wenn Sie Demodaten zum Testen von Debitorenzahlungsvorhersagen verwenden, müsse
 Um Zahlungsvorhersagen für Debitoren zu aktivieren, müssen Sie eine Reihe von Schritten ausführen, um ein Machine Learning-Modell zu erstellen, das die Daten Ihres Unternehmens verwendet, um anhand der Daten Ihres Unternehmens Vorhersagen darüber zu erstellen, wann Debitoren voraussichtlich ausstehende Rechnungen bezahlen und wann bestimmte Rechnungen wahrscheinlich bezahlt werden. Weitere Informationen und die spezifischen Schritte finden Sie unter [Aktivieren der Zahlungsvorhersagen für Debitoren](enable-cust-paymnt-prediction.md). 
 
 ### <a name="enable-cash-flow-forecasting"></a>Cashflow-Planung aktivieren
-Um die Cashflow-Planung zu aktivieren, müssen Sie eine Reihe von Schritten ausführen, um ein Machine Learning-Modell zu erstellen, das die Daten Ihrer Organisation verwendet, um eine Cashflow-Planung zu erstellen. Weitere Informationen und die spezifischen Schritte finden Sie unter [Aktivieren der Cashflow-Planung](enable-cash-flow-forecasting.md) 
-
-### <a name="set-up-and-use-cash-flow-forecasting"></a>Einrichten und Verwenden der Cashflow-Planung
-Weitere Informationen dazu, wie die Cashflow-Planung eingerichtet und verwendet wird, finden Sie unter [Cashflow-Planung aktivieren](enable-cash-flow-forecasting.md). Weitere Informationen dazu, wie diese Fähigkeit verwendet wird, finden Sie unter [Cachflow-Planung](cash-flow-forecast-intro.md).
+Um die Cashflow-Planung zu aktivieren, müssen Sie eine Reihe von Schritten ausführen, um ein Machine Learning-Modell zu erstellen, um eine Cashflow-Planung zu erstellen. Weitere Informationen und die spezifischen Schritte finden Sie unter [Aktivieren der Cashflow-Planung](enable-cash-flow-forecasting.md).
 
 ### <a name="enable-budget-proposals"></a>Budgetvorschläge aktivieren
 
@@ -111,14 +110,12 @@ Mit der Funktion zur Cashflow-Planung können Sie Ihre Cash-Position genauer ein
 
 - Informationen zu den neuen Funktionen in Cashflow-Planungen finden Sie unter [Cahflow-Planung](cash-flow-forecast-intro.md).
 - Informationen zum Importieren externer Daten, die hier in Ihre Cashflow-Prognose aufgenommen werden sollen, finden Sie unter [Verwenden externer Daten in Cashflow-Planungen](external-data-in-cash-flow.md). 
-- Informationen zur Verwendung eines KI-Modells zur Planung des langfristigen Cashflows finden Sie unter [Übersicht über die Cashflow-Planungen](cash-position.md).
+- Informationen zur Verwendung eines KI-Modells zur Planung des kurzfristigen Cashflows finden Sie unter [Bargeldposition](cash-position.md).
 - Informationen zum Speichern von Cashflow-Positionen und Cashflow-Planungen als Momentaufnahmen sowie zum Vergleichen einer Momentaufnahme mit tatsächlichen Werten finden Sie unter [Übersicht über Momentaufnahmen](payment-snapshots.md).
 
 ### <a name="using-budget-proposal"></a>Budgetvorschlag verwenden
 
 Informationen zur Beschleunigung der Erstellung eines Budgets finden Sie unter [Budgetvorschläge](budget-proposals.md). 
-
-Demo-Daten für Budgetvorschlag:
 
 ## <a name="feedback-and-support"></a>Feedback und Support
 

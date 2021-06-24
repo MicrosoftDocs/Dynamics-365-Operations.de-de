@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 69232eed8520bafeb734ffad43b333bf9e36909e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c95c1f2342654ca2bbee57959becc85291eebbc
+ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018684"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187270"
 ---
 # <a name="engineering-change-management-faq"></a>Verwaltung für technische Änderungen FAQ
 
@@ -46,7 +46,7 @@ Diese Option ist viel einfacher zu verwalten, denn wenn Sie von einer Version zu
 
 Die meisten Unternehmen entscheiden sich für diese Option, weil sie Versions- und Änderungsverwaltung bietet, aber nicht den zusätzlichen Aufwand für die Verfolgung der Version in jeder Transaktion, im Bestand und bei der Produktprogrammplanung mit sich bringt.
 
-## <a name="which-fields-are-copied-to-the-released-item-template"></a>Welche Felder werden in die Vorlage für zugelassene Artikel kopiert?
+## <a name="which-fields-are-copied-from-the-released-item-template"></a>Welche Felder werden aus der Vorlage für zugelassene Artikel kopiert?
 
 Wenn eine Engineering-Firma ein technisches Produkt erstellt, wird dieses Produkt als freigegebenes Produkt in der Engineering-Firma erstellt. Das erstellte freigegebene Produkt basiert auf der ausgewählten *Vorlage für freigegebene Artikel*. (Die Vorlage für zugelassene Artikel ist selbst ein bestehendes zugelassenes Produkt.) Die Vorlage für zugelassene Artikel wird auch verwendet, wenn das Produkt für eine Betriebsfirma freigegeben wird. In jedem Fall definiert die Vorlage für zugelassene Artikel die meisten Feldwerte für das zugelassene Produkt, und diese Werte stammen von der zugehörigen Seite **Details zu zugelassenen Artikeln**.
 

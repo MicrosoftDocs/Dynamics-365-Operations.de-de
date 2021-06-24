@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
+ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941108"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6219786"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrieren der Beschaffung zwischen Supply Chain Management und Field Service
 
@@ -196,23 +196,10 @@ Die folgenden Vorlagen stehen für die Integration von beschaffungsbezogenen Dok
 
 | Lieferkettenverwaltung | Field Service | Beschreibung |
 |---|---|---|
-| Bestellkopf V2 | msdyn\_Purchaseorders | Diese Tabelle enthält die Spalten, die den Bestellkopf darstellen. |
-| Bestellpositionsentität | msdyn\_PurchaseOrderProducts | Diese Tabelle enthält die Zeilen, die den Positionen in einer Bestellung entsprechen. Die Produktnummer wird zur Synchronisierung verwendet. Dies identifiziert das Produkt als Lagermengeneinheit (SKU), inklusive der Produktabmessungen. Weitere Informationen zur Produktintegration mit Dataverse finden Sie unter [Einheitliche Produktumgebung](product-mapping.md). |
-| Produktzugangskopfzeile | msdyn\_purchaseorderreceipts | Diese Tabelle enthält die Produktzugangsköpfe, die erstellt werden, wenn ein Produktzugang in Supply Chain Management gebucht wird. |
-| Produktzugangsposition | msdyn\_purchaseorderreceiptproducts | Diese Tabelle enthält die Produktzugangspositionen, die erstellt werden, wenn ein Produktzugang in Supply Chain Management gebucht wird. |
-| Entität einer Auftragsposition weich gelöscht | msdyn\_purchaseorderproducts | Diese Tabelle enthält Informationen zu Bestellpositionen, die weich gelöscht werden. Eine Bestellposition in Supply Chain Management kann nur dann weich gelöscht werden, wenn die Bestellung bei aktiviertem Änderungsmanagement bestätigt oder genehmigt wurde. Die Zeile ist in der Datenbank von Supply Chain Management vorhanden und als **Wird gelöscht** gekennzeichnet. Da es in Dataverse das Konzept des weichen Löschens nicht gibt, müssen diese Informationen unbedingt nach Dataverse synchronisiert werden. Auf diese Weise können Positionen, die in Supply Chain Management weich gelöscht werden, automatisch aus Dataverse gelöscht werden. In diesem Fall befindet sich die Logik zum Löschen einer Position in Dataverse in Supply Chain Management Extended. |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/productreceiptheader-msdyn-purchaseorderreceipts.md)]
-
-[!include [Currency](includes/productreceiptline-msdyn-purchaseorderreceiptproducts.md)]
-
-[!include [Currency](includes/purchaseorderheadersv2-msdyn-purchaseorders.md)]
-
-[!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
-
-[!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
-
+| [Bestellkopf V2](mapping-reference.md#183) | msdyn\_Purchaseorders | Diese Tabelle enthält die Spalten, die den Bestellkopf darstellen. |
+| [Bestellpositionsentität](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | Diese Tabelle enthält die Zeilen, die den Positionen in einer Bestellung entsprechen. Die Produktnummer wird zur Synchronisierung verwendet. Dies identifiziert das Produkt als Lagermengeneinheit (SKU), inklusive der Produktabmessungen. Weitere Informationen zur Produktintegration mit Dataverse finden Sie unter [Einheitliche Produktumgebung](product-mapping.md). |
+| [Produktzugangskopfzeile](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | Diese Tabelle enthält die Produktzugangsköpfe, die erstellt werden, wenn ein Produktzugang in Supply Chain Management gebucht wird. |
+| [Produktzugangsposition](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | Diese Tabelle enthält die Produktzugangspositionen, die erstellt werden, wenn ein Produktzugang in Supply Chain Management gebucht wird. |
+| [Entität einer Auftragsposition weich gelöscht](mapping-reference.md#182) | msdyn\_purchaseorderproducts | Diese Tabelle enthält Informationen zu Bestellpositionen, die weich gelöscht werden. Eine Bestellposition in Supply Chain Management kann nur dann weich gelöscht werden, wenn die Bestellung bei aktiviertem Änderungsmanagement bestätigt oder genehmigt wurde. Die Zeile ist in der Datenbank von Supply Chain Management vorhanden und als **Wird gelöscht** gekennzeichnet. Da es in Dataverse das Konzept des weichen Löschens nicht gibt, müssen diese Informationen unbedingt nach Dataverse synchronisiert werden. Auf diese Weise können Positionen, die in Supply Chain Management weich gelöscht werden, automatisch aus Dataverse gelöscht werden. In diesem Fall befindet sich die Logik zum Löschen einer Position in Dataverse in Supply Chain Management Extended. |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

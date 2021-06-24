@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 562cf07348e77d9c2f169e31a852843bea10fcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 780d1e1307b69ec9a31d032039970de454160d6f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816507"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189691"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Eine statistische Grundplanung generieren
 
@@ -67,8 +67,7 @@ Wenn die Planung nicht für einen großen Satz Artikel generiert wird, sondern b
 > [!NOTE]
 > Eine möglicherweise flache aussehende Planung kann auf historische Daten zurückzuführen sein, die sich über einen längeren historischen Zeitraum erstrecken müssen (mindestens 3 Zeitperioden, um Muster zu erkennen, z. B. 3 Jahre mit Monatsplanung). Für ein besseres Ergebnis können Sie versuchen, die Granularität des Zeitbereichs zu ändern oder den Zeitbereich zu erhöhen.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Einrichten einer Bedarfsplanung](demand-forecasting-setup.md)
 

@@ -2,7 +2,7 @@
 title: Mehrere Lieferarten zur Abholung für Kundenaufträge
 description: In diesem Thema wird die Funktionalität in Microsoft Dynamics 365 Commerce erklärt, mit der Sie Kundenaufträge für die Abholung in einem Ladengeschäft erstellen können.
 author: hhainesms
-ms.date: 11/17/2020
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 124765a3d4d2ebd01e200b76fc862e2c37073b8e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ae7df6679c261b5e5dcd39e4ca6fe0e21d993927
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020650"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216766"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Mehrere Lieferarten zur Abholung für Kundenaufträge
 
@@ -38,7 +38,7 @@ Nachdem Sie die Funktion **Unterstützung für mehrere Abhollieferarten** aktivi
 
 Die Felder **Lieferart durchführen** und **Elektronische Lieferart** und die Option **Nur Spediteurartoptionen für Lieferaufträge anzeigen** wurden zu diesem Inforegister verlegt.
 
-Bevor Sie zusätzliche Abhollieferarten konfigurieren, müssen Sie die Lieferarten definieren. Auf der Seite **Lieferarten** in der Commerce-Zentralverwaltung fügen Sie Lieferarten hinzu, die als Abhollieferarten gelten sollen. Stellen Sie sicher, dass die gesamte Konfiguration abgeschlossen ist. Stellen Sie beispielsweise sicher, dass die Lieferart mit den entsprechenden Kanälen und Artikeln verknüpft ist. Wenn Sie fertig sind, führen Sie den Einzelvorgang **Lieferarten verarbeiten** aus, um die Beziehungen zwischen den Lieferarten, Kanälen und Artikeln zu erstellen. Wenn die Ausführung des Einzelvorgangs beendet ist, öffnen Sie die Seite **Verteilungszeitplan** in der Commerce-Zentralverwaltung und führen Sie den Verteilungseinzelvorgang **1120** aus, um sicherzustellen, dass die relevanten Commerce-Kanaldatenbanken mit Ihrer neuen Lieferartkonfiguration aktualisiert werden.
+Bevor Sie zusätzliche Abhollieferarten konfigurieren, müssen Sie die Lieferarten definieren. Auf der Seite **Lieferarten** in der Commerce-Zentralverwaltung fügen Sie Lieferarten hinzu, die als Abhollieferarten gelten sollen. Stellen Sie sicher, dass die gesamte Konfiguration abgeschlossen ist. Wenn Sie beispielsweise Ihren Online-Shoppern für bestimmte Geschäfte die Abholung bis zur Bordsteinkante als Lieferoption anbieten, müssen Sie hierfür einen neuen Liefermodus erstellen. Sie können diese Lieferart mit „Abholung am Straßenrand“ als Beschreibung erstellen. Stellen Sie dann sicher, dass die Lieferart „Abholung am Straßenrand“ allen E-Commerce-Kanälen zugeordnet ist, die sie anbieten können, einschließlich Online-Shops, die diese Option anbieten, und den einzelnen Shop-Kanälen, die diese Versandmethode anbieten. Auch die Lieferarten müssen mit den Produkten verknüpft sein. In diesem Beispiel müssen Sie sicherstellen, dass diese Artikel ausgeschlossen werden, wenn bestimmte Produkte nicht mit der „Abholung am Straßenrand“ geliefert werden können. Wenn Sie fertig alle neuen Lieferarten hinzugefügt haben, führen Sie den Einzelvorgang **Lieferarten verarbeiten** aus, um die Beziehungen zwischen den Lieferarten, Kanälen und Artikeln zu erstellen. Wenn die Ausführung des Einzelvorgangs beendet ist, öffnen Sie die Seite **Verteilungszeitplan** in der Commerce-Zentralverwaltung und führen Sie den Verteilungseinzelvorgang **1120** aus, um sicherzustellen, dass die relevanten Commerce-Kanaldatenbanken mit Ihrer neuen Lieferartkonfiguration aktualisiert werden.
 
 ![Beispiel für eine Lieferartkonfiguration für die Abholung am Straßenrand](media/pickupmodes.png)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e334c6351814db191731ce94c4a704863679dd85
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0edc2fcbde536e98fa3ce3567c2c8fdf3fc864ad
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820882"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188781"
 ---
 # <a name="configure-accounts-payable-overview"></a>Kreditorenkonten konfigurieren – Übersicht
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820882"
 
 In diesem Artikel werden die Seiten beschrieben, die Sie verwenden, um die grundlegenden und optionalen Funktionen für Kreditorenkonten einzurichten. Er beschreibt zudem die Einrichtungsschritte, die Sie durchführen müssen, bevor Sie damit beginnen, die Kreditoren einzurichten.
 
-<a name="prerequisites-for-accounts-payable-setup"></a>Voraussetzungen für die Einstellungen von Kreditoren
-----------------------------------------
+## <a name="prerequisites-for-accounts-payable-setup"></a>Voraussetzungen für die Einstellungen von Kreditoren
 
 Die folgenden Einstellungen müssen abgeschlossen werden, bevor Sie Kreditoren einrichten können:
 

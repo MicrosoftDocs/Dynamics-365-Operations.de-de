@@ -2,7 +2,7 @@
 title: Momentaufnahmenübersicht (Vorschau)
 description: In diesem Thema wird die Momentaufnahmefunktion beschrieben, mit der Sie eine Cashflow-Planung zur späteren Analyse oder zum Vergleich mit Istdaten speichern können. Wenn Sie eine Cashflow-Planung erstellen, können Sie diese Prognose als „Momentaufnahme“ speichern. Mit dieser Momentaufnahme können Sie dann die Konten bearbeiten, die in der Prognose enthalten waren, oder die Prognose in der Momentaufnahme mit den Istwerten vergleichen.
 author: ShivamPandey-msft
-ms.date: 05/19/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 07854d47fa2e42ea0d49cde193a2040415acf089
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 593d6fa8efdecf1b64ef802e6861783d6f85489c
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827241"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186589"
 ---
 # <a name="snapshots-overview-preview"></a>Momentaufnahmenübersicht (Vorschau)
 
@@ -42,9 +42,5 @@ Die Bargeldein- und -abgänge in Momentaufnahmen können jederzeit bearbeitet we
 Um mehrere Momentaufnahmen zu vergleichen, wählen Sie **Momentaufnahmen vergleichen** aus. Sie können zwei Momentaufnahmen gleichzeitig vergleichen. Wählen Sie die beiden zu vergleichenden Momentaufnahmen und dann **OK**. Die Seite **Momentaufnahmen vergleichen** zeigt einen Vergleich der ausgewählten Momentaufnahmen. Das Diagramm im oberen Bereich der Seite zeigt einen Vergleich der Bargeldeingänge, Bargeldabgänge und des Bankguthabens in den überlappenden Zeiträumen zwischen den beiden Momentaufnahmen. Das Raster im unteren Bereich zeigt einen detaillierten Vergleich der beiden Prognosen für jeden Liquiditätsbetrag. Die **Varianz**-Spalte im Raster zeigt die Differenz zwischen den Salden in einem Zeitraum.
 
 Um die tatsächlichen Finanzergebnisse mit einer Prognose zu vergleichen, die als Momentaufnahme gespeichert wurde, wählen Sie **Mit Istwerten vergleichen** aus. Die Seite **Momentaufnahme vergleichen** zeigt einen Vergleich der tatsächlichen Beträge und der Prognose. Das Diagramm im oberen Bereich der Seite zeigt einen Vergleich der Bargeldeingänge, Bargeldabgänge und des Bankguthabens in den überlappenden Zeiträumen zwischen den beiden Momentaufnahmen. Das Raster im unteren Bereich zeigt einen detaillierten Vergleich der tatsächlichen Bilanz pro Zeitraum und die prognostizierte Bilanz für jeden Liquiditätsbetrag. Die **Varianz**-Spalte im Raster zeigt die Differenz zwischen der tatsächlichen Bilantz in einem Zeitraum und der prognostizierten Bilanz.
-
-#### <a name="privacy-notice"></a>Datenschutzhinweis
-Vorschauen (1) wenden möglicherweise weniger Datenschutz- und Sicherheitsmaßnahmen an als der Dynamics 365 Finance and Operations-Dienst, (2) sind nicht in der Service Level Agreement (SLA) für diesen Dienst enthalten, (3) sollten nicht zur Verarbeitung personenbezogener Daten oder anderer Daten verwendet werden, die gesetzlichen oder behördlichen Compliance-Anforderungen unterliegen, und (4) hat begrenzten Support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

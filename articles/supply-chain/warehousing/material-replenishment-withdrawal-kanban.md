@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7044aa84dc7ea7adc303c250e75ca6fb4a493800
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831241"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189943"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Wiederbeschaffung mit Entnahme-Kanbans
 
@@ -30,7 +30,6 @@ ms.locfileid: "5831241"
 In diesem Thema wird beschrieben, wie der Entnahme-Kanban für die Materialwiederbeschaffung für Fertigungsaktivitäten verwendet wird.
 
 ## <a name="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban"></a>Workflow für die Materialwiederbeschaffung, die den Entnahme-Kanban verwendet
--------------------------------------------------------------------
 
 Der Entnahme-Kanban kann verwendet werden, um einen Kanban eines einzelnen Artikels zwischen Lagerorten und Produktionslagerplätze zu verschieben, in denen das Material verbraucht wird. Der Entnahme-Kanban unterstützt eine entnahmebasierte Lösung für die Materialwiederbeschaffung, wobei das Entnahmesignal erforderlich ist, um die Lieferung für einen bestimmten Bedarf zu starten. 
 

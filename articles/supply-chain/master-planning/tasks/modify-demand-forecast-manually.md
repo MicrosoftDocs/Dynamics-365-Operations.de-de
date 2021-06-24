@@ -1,5 +1,5 @@
 ---
-title: Manuelles Ändern einer Bedarfsplanung
+title: 'Anleitung: Manuelles Ändern einer Bedarfsplanung'
 description: In dem Thema wird beschrieben, wie Sie die Planung für einen Artikel ändern
 author: ChristianRytt
 ms.date: 08/12/2019
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5da1d5b1fbd91964e695a704681b1c9ee513a2f1
-ms.sourcegitcommit: 4016c223a985c46e33f9941bf91ba5e1583e1cfd
+ms.openlocfilehash: 1e12ccf90b9971379e8931bd48d6243a855bb795
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889023"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224009"
 ---
-# <a name="modify-a-demand-forecast-manually"></a>Manuelles Ändern einer Bedarfsplanung
+# <a name="guide-modify-a-demand-forecast-manually"></a>Anleitung: Manuelles Ändern einer Bedarfsplanung
 
 [!include [banner](../../includes/banner.md)]
 
-Im folgenden Verfahren wird gezeigt, wie Sie die Planung für einen Artikel ändern. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Prozedur ist für den Produktionsplaner vorgesehen.
+Im folgenden Verfahren wird gezeigt, wie Sie die Planung für einen Artikel ändern. Diese Prozedur ist für den Produktionsplaner vorgesehen.
 
 ## <a name="modify-the-forecast-for-a-selected-item"></a>Die Planung für einen ausgewählten Artikel ändern
 
@@ -36,9 +36,9 @@ Um die Planung für einen ausgewählten Artikel zu ändern:
 1. Füllen Sie bei Bedarf die anderen Felder aus.
 1. Wählen Sie **Speichern** im Aktivitätsbereich aus.
 
-## <a name="modify-the-forecast-for-one-or-more-items-microsoft-excel"></a>Die Planung für einen oder mehrere Artikel in Microsoft Excel ändern
+## <a name="modify-the-forecast-for-one-or-more-items-with-microsoft-excel"></a>Die Planung für einen oder mehrere Artikel in Microsoft Excel ändern
 
-Um die Planung für einen oder mehrere Artikel in Microsoft Excel zu ändern:
+So ändern Sie die Planung für einen oder mehrere Artikel in Microsoft Excel:
 
 1. Führen Sie einen der folgenden Schritte aus:
     - Öffnen Sie die Seite **Bedarfsplanung** für einen Artikel (egal welchen) wie im vorherigen Abschnitt beschrieben.

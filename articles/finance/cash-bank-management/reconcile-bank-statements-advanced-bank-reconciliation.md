@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e5b097d667186a849b23814917d0d6f837c25de
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0b8e64264795fe90b52471a82220fe87459ca248
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835003"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188589"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835003"
 
 Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Dynamics 365 Finance automatisch mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess.  
 
-<a name="import-an-electronic-bank-statement"></a>Import eines elektronischen Bankauszugs
------------------------------------
+## <a name="import-an-electronic-bank-statement"></a>Import eines elektronischen Bankauszugs
 
 Sie Importieren die Bankauszüge mithilfe der **Auszug importieren**-Aktivität auf der Seite **Bankauszüge**. Auf dem Bankauszug wird das Bankkonto durch eine Kombination der in den Bankkontodetails eingerichteten Werten identifiziert. Dazu gehören Bankname, Bankkontonummer, Bankleitzahl, SWIFT-Code (Society for Worldwide Interbank Financial Telecommunication) und IBAN (International Bank Account Number). 
 

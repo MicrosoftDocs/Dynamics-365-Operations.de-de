@@ -2,7 +2,7 @@
 title: Videos hochladen
 description: In diesem Thema wird beschrieben, wie Sie Videos in Microsoft Dynamics 365 Commerce Site Builder hochladen können.
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5ec20f8caee2f5a62230be05923dfd52600c1e35
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e3579b54c58898b79c84406480a3b58f541c4621
+ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799204"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6224537"
 ---
 # <a name="upload-videos"></a>Videos hochladen
 
@@ -35,7 +35,7 @@ Die Medienbibliothek des Commerce-Site-Builders ermöglicht Ihnen das Hochladen 
 Beim Hochladen eines Videos können die folgenden Informationen angegeben werden.
 
 - **Titel, Beschreibung, Schlüsselwörter**: Metadaten des Videos.
-- **Automatische Generierung von Untertiteln**: Gibt an, ob Untertitel für das Video automatisch generiert werden sollen.
+- **Automatische Generierung von Untertiteln**: Gibt an, ob Untertitel für das Video automatisch generiert werden sollen (nur die englische Sprache wird unterstützt). 
 - **Untertitel**: Gibt die zu verwendenden Untertitel an.
 - **Regular Audio**: Gibt die zu verwendende reguläre Tonspur an.
 - **Miniaturansicht**: Gibt die Miniaturansicht für das Video an. Wenn nicht angegeben, wird es automatisch generiert.

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103627"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193880"
 ---
 # <a name="firm-planned-orders"></a>Fest geplante Aufträge
 
@@ -102,7 +102,7 @@ Mit der automatischen Fixierung können Sie geplanter Aufträge als Teil der Pro
 
 Sowohl die Planungsoptimierung als auch die integrierte Planungs-Engine können zur automatischen Umwandlung geplanter Aufträge verwendet werden. Jedoch gibt es mehrere wichtige Unterschiede. Die Planungsoptimierung verwendet z. B. das Auftragsdatum (d. h. das Startdatum), um zu bestimmen, welche geplanter Aufträge fixiert werden sollen, während die integrierte Planungs-Engine das Bedarfsdatum (d. h. das Enddatum) verwendet. In der folgenden Tabelle sind die Unterschiede zusammengefasst.
 
-| | Planungsoptimierung | Integrierte Planungs-Engine |
+| Funktion | Planungsoptimierung | Integrierte Planungs-Engine |
 |---|---|---|
 | **Datumsbasis** | Die automatische Bestätigung basiert auf dem Bestelldatum (Startdatum). | Die automatische Bestätigung basiert auf dem Bedarfstermin (Enddatum). |
 | **Vorlaufzeit** | Da das Auftragsdatum (Startdatum) die Fixierung auslöst, müssen Sie die Durchlaufzeit nicht als Teil des Fixierungszeitfensters betrachten. | Um zu gewährleisten, dass Aufträge rechtzeitig umgewandelt werden, muss der Zeitrahmen für die Umwandlung länger sein als die Vorlaufzeit. |
