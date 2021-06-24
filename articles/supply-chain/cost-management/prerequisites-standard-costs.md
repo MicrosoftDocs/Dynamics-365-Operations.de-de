@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92f80ecc611e68210e24e59b696724e1bc9c3a06
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4f2e1620de804f42688ad8d05232e38178b5fb80
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809661"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187721"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>Voraussetzungen für die Standardkostenübersicht
 
@@ -66,8 +66,7 @@ Erstellen Sie mithilfe der Seite **Nachkalkulationsversionssetup** mindestens ei
 Kunden, die ihre vorhandenen Artikel auf ein Lagermodell vom Typ „Standardkosten” umstellen möchten, benötigen dafür die Seite **Standardkostenumrechnungen**.
 
 
-<a name="related-topics"></a>Verwandte Themen
---------
+## <a name="related-topics"></a>Verwandte Themen
 
 [Standardkostenumrechnung – Überblick](standard-cost-conversion-overview.md)
 

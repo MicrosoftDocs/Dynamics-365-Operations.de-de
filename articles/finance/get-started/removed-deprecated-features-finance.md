@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8cacf2fbef8873288493f71b43d22dc186e6d18e
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: e6a391b10ddaef79e68f47afae7d77135a1c333a
+ms.sourcegitcommit: cb282e8d2306ab71adf80a84346a6863d2d019e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980896"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184124"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -65,7 +65,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Ersetzt durch eine andere Funktion?**   | Ja |
 | **Betroffene Produktbereiche**         | Dynamics 365 Finance-, Supply Chain Management- und Project Operations-Produkte|
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Wir planen, das Microsoft Dynamics Lifecycle Services (LCS)-Repository ab dem 01. April 2022 nicht länger als Speicheroption für EB-Konfigurationen (elektronische Berichterstellung) zu unterstützen. Neue Microsoft-EB-Konfigurationen werden exklusiv im globalen Repository zum Download veröffentlicht. Auf das globale Repository kann über die Dynamics 365-Produkte und RCS zugegriffen werden. Weitere Informationen finden Sie unter [EB-Konfigurationen aus RCS importieren](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md). |
+| **Status**                         | Veraltet: Wir planen, das Microsoft Dynamics Lifecycle Services (LCS)-Repository ab dem 01. April 2022 nicht länger als Speicheroption für EB-Konfigurationen (elektronische Berichterstellung) zu unterstützen. Neue Microsoft-EB-Konfigurationen werden exklusiv im globalen Repository zum Download veröffentlicht. Auf das globale Repository kann über die Dynamics 365-Produkte und RCS zugegriffen werden. Weitere Informationen finden Sie unter [Importieren von ER-Konfigurationen aus RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) und [Regulatory Configuration Service – Lifecycle Services (LCS)-Speichereinstellung](../localizations/rcs-lcs-repo-dep-faq.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.16
 

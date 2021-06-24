@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ed068f4264269334babec9acd59d9d58551333b4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018385"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186785"
 ---
 # <a name="note-integration"></a>Integration von Notizen
 
@@ -122,5 +122,9 @@ Die Notizintegration enthält eine Sammlung von Tabellenzuordnungen, die währen
 | [Kreditorendokumentanhänge](mapping-reference.md#231) | Anmerkungen | Unternehmen, die Klartext und URLs zum Erfassen kreditorspezifischer Informationen verwenden (sowohl für Organisationen als auch für Personen). |
 | [Auftragskopfdokument-Anhänge](mapping-reference.md#229) | Anmerkungen | Unternehmen, die Klartext und URLs zum Erfassen auftragsspezifischer Informationen verwenden. |
 | [Anhänge des Bestellkopfdokuments](mapping-reference.md#232) | Anmerkungen | Unternehmen, die Klartext und URLs zum Erfassen bestellungsspezifischer Informationen verwenden. |
+
+## <a name="limitations"></a>Einschränkungen
+
+Nachdem Sie die Notes-Lösung installiert haben, können Sie sie nicht mehr deinstallieren. 
 
 Weitere Informationen finden Sie unter [Referenz für die Zuordnung von dualem Schreiben](mapping-reference.md).

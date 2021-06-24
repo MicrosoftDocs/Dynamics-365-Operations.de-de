@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: a88ca9cc8fc8cde6d738dbc4fcf474f1e27e05dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fd69d82536047c06e94ba4a7e860ef54680619a4
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796389"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193130"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Lieferart in POS ändern
 
@@ -31,7 +31,7 @@ In Dynamics 365 Commerce Versionen 10.0.10 und höher, ist der Vorgang (647) **L
 
 Mit der Funktion zum Ändern des Zustellungsmodus können Sie den Zustellungsmodus für eine oder mehrere versandkonfigurierte Verkaufslinien in der POS-Transaktion ändern. In früheren Versionen von Commerce mussten Sie die vollständige Version durchlaufen **Versenden Sie alle** oder **Ausgewählte versenden**. Die Konfiguration erfolgt, wenn Sie den Zustellungsmodus für eine vorhandene Linie ändern möchten, die für den Versand konfiguriert wurde. Dieser Vorgang war zeitaufwändig und konnte zu versehentlichen Änderungen des Lieferursprungs oder der Liefertermine für die Linie führen. Die neue Funktionalität bietet eine alternative Methode zur effizienten Aktualisierung der Zustellungsart in diesen Vertriebslinien.
 
-Weitere Informationen zum Hinzufügen einer Operation zu einer Schaltfläche in Ihrem POS-Schaltflächenraster finden Sie unter [Bildschirmlayouts für die Verkaufsstelle](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts).
+Weitere Informationen zum Hinzufügen einer Operation zu einer Schaltfläche in Ihrem POS-Schaltflächenraster finden Sie unter [Bildschirmlayouts für die Verkaufsstelle](pos-screen-layouts.md).
 
 Nachdem diese Funktion in POS konfiguriert wurde, wenn Sie **Lieferart ändern** auswählen, wird eine Listenseite angezeigt, auf der Sie die Zeilen der Transaktion auswählen können, für die Sie den Zustellungsmodus ändern möchten. Sie können einige oder alle Zeilen auswählen oder beenden, ohne Änderungen vorzunehmen. Die Verkaufszeilen, die zuvor für den Versand konfiguriert wurden, sind die einzigen Zeilen in der Liste, die Sie ändern können. Wenn Sie eine Linie ändern möchten, die für die Abholung oder den Transport bestimmt ist, müssen Sie die Vorgänge **Versenden Sie alle** oder **Ausgewählte versenden** auswählen. Wenn Sie dagegen eine als Sendung bezeichnete Position in eine Abholung oder einen Transport ändern möchten, müssen Sie die Vorgänge **Alles abholen**, **Ausgewählte abholen**, **Alles ausführen**, oder **ausgewählte durchführen** verwenden.
 

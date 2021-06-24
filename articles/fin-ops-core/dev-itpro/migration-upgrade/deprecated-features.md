@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: f6a2bf4b15a067fd98059ecc41dfd62e4a91862e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112620"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193565"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>In früheren Versionen entfernte oder veraltete Funktionen
 
@@ -92,7 +92,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Italienische Lokalisierung |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Bis 1. Oktober 2020 planen wir, **Blacklist-Bericht (IT) – Funktionsreferenz IT-00001** nicht mehr zu unterstützen. |
+| **Status**                         | Veraltet: Wir planen, diesen Bericht bis zum 1. Oktober 2020 nicht mehr zu unterstützen. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>InInlandssteuererklärung – Funktionsreferenz IT-00003
 
@@ -365,6 +365,16 @@ Funktion zum Erstellen von Vorlagen für neue Gewinnsteuerregister. Diese Funkti
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Ab Finance and Operations 8.1 mit dem Plattform-Update 20 entfernt. |
 
+### <a name="payroll-and-human-resources-for-russia"></a>Gehaltsabrechnung und Personalverwaltung für Russland
+Russisches länderspezifisches Modul zur Verwaltung von Personalverwaltungsinformationen, Arbeitszeittabellendetails für Mitarbeiter, Gehaltsabrechnung und Erstellung von Gehaltsabrechnungen. 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Die Personalabrechnung ist nicht im globalen strategischen Fokus des Dynamics 365-Portfolios enthalten. Partner und ISVs sind am besten positioniert, um Gehaltsabrechnungsfunktionen bereitzustellen, die den lokalen Vorschriften und Steueraktualisierungen entsprechen.|
+| **Ersetzt durch eine andere Funktion?**   | Nr.|
+| **Betroffene Produktbereiche**         | Verwaltung für russische Gehaltsabrechnung und Personalverwaltung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Zielzeitrahmen für die Entfernung der Funktionalität ist eine der künftigen Aktualisierungen von Version 10.0. |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 mit Plattformupdate 15
 Keine Funktionen sind in dieser Version entfernt oder veraltet worden. Plattformupdate 15 ist kumulativ und enthält neue oder geänderte Funktionen aus Plattformupdate 13, Plattformupdate 14 und Plattformupdate 15.

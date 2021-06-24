@@ -1,8 +1,8 @@
 ---
 title: Anlagen einrichten
 description: Dieses Thema bietet einen Überblick über das Einrichten des Anlagenmoduls.
-author: ShylaThompson
-ms.date: 01/12/2018
+author: moaamer
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff025984307f979ce98947f2225971041ebbdbae
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f624ddc2e7b8f59a2ba002d757ce68ee222a7223
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818535"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216585"
 ---
 # <a name="set-up-fixed-assets"></a>Anlagen einrichten
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema bietet einen Überblick über das Einrichten des **Anlagen**-Moduls.
+Dieses Thema bietet einen Überblick über das Einrichten des **Anlagen**-Moduls. 
 
-## <a name="overview"></a>Überblick
-
-Parameter steuern das allgemeine Verhalten in Anlagen.
-
-Mit Anlagengruppen können Sie Ihre Anlagen gruppieren und Standardattribute für jede Anlage definieren, die einer Gruppe zugewiesen wird. Bücher werden Anlagengruppen zugewiesen. Bücher verfolgen den Finanzwert einer Anlage im Laufe der Zeit ändern, indem die Abschreibungskonfiguration verwenden, die im Abschreibungsprofil definiert wird.
+Parameter steuern das allgemeine Verhalten in Anlagen. Mit Anlagengruppen können Sie Ihre Anlagen gruppieren und Standardattribute für jede Anlage definieren, die einer Gruppe zugewiesen wird. Bücher werden Anlagengruppen zugewiesen. Bücher verfolgen den Finanzwert einer Anlage im Laufe der Zeit ändern, indem die Abschreibungskonfiguration verwenden, die im Abschreibungsprofil definiert wird.
 
 Anlagen werden bei der Erstellung einer Gruppe zugeordnet. Standardmäßig werden die Bücher, die der Anlagengruppe zugeordnet sind, dann der Anlage zugeordnet. Bücher, die konfiguriert werden, um im Hauptbuch zu buchen, sind einem Buchungsprofil zugeordnet. Sachkonten werden für jedes Buch im Buchungsprofil definiert. Sie werden verwendet, wenn Anlagentransaktionen gebucht werden.
 
@@ -49,6 +45,8 @@ Nachdem Sie das Abschreibungsprofile erstellt haben, müssen Sie die erforderlic
 Ein primäres Abschreibungsprofil wird jedem Buch zugewiesen. Bücher haben auch ein alternatives oder wechselbares Abschreibungsprofil, wenn diese Art des Profils anwendbar ist. Um das Anlagenbuch in den Abschreibungsausführungen automatisch einzubeziehen, müssen Sie die Option **Berechnen der Abschreibung** aktivieren. Wenn diese Option nicht für eine Anlage aktiviert ist, überspringt der Abschreibungsvorschlag die Anlage.
 
 Sie können auch abgeleitete Bücher einrichten. Die angegebenen abgeleiteten Transaktionen werden in den abgeleiteten Büchern als genaue Kopie der primären Transaktion gebucht. Daher werden normalerweise die abgeleitete Buchungen für Anschaffungen und Abgänge und nicht für Abschreibungsbuchungen eingerichtet. Weitere Informationen finden Sie unter [Wertmodelle einrichten](tasks/set-up-value-models.md).
+
+Über eine Option auf der Seite **Anlagenparameter** können Sie die Sperrfunktion ein- oder ausschalten. Diese Funktion wird in **Arbeitsbereich der Funktionsverwaltung** aktiviert.
 
 ## <a name="fixed-asset-posting-profiles"></a>Anlagenbuchungsprofile
 
@@ -73,6 +71,8 @@ Der letzte Schritt ist, das Aktualisieren der Anlagenparameter.
 Das Feld **Aktivierungsschwelle** bestimmt die Anlagen, die abgeschrieben werden. Wenn eine Bestellposition als Anlage ausgewählt wird, aber nicht den angegebenen Aktivierungsschwellenwert erreicht, ist eine Anlage noch erstellt oder aktualisiert, wobei die Option **Berechnung der Abschreibung** auf **Nein** festgelegt ist. Daher wird die Anlage nicht automatisch im Rahmen der Abschreibungsvorschläge abgeschrieben.
 
 Eine wichtige Option ist **Automatisch Abschreibungsregulierungsbeträge mit Abgang erstellen** genannt. Wenn Sie diese Option auf **Ja** festlegen, wird die Anlagenabschreibung automatisch angepasst, basierend auf den Abschreibungseinstellungen zum Zeitpunkt des Anlagenabgangs. Eine weitere Option ist es, Skonti vom Anschaffungsbetrag abzuziehen, wenn Sie Anlagen erwerben, indem Sie eine Kreditorenrechnung verwenden.
+
+Mit dem Parameter **Anlagenbücher in einem Abschreibungsjournal sperren** können Sie Anlagenbücher in einem Abschreibungsjournal sperren. Wenn Abschreibungsbuchungen gebucht werden, überprüft das System, dass dasselbe Anlagenbuch nicht mehr als einem Abschreibungsjournal hinzugefügt wurde. Ist dies der Fall, wird dieses Anlagenbuch gesperrt und die Buchung wird gestoppt. Wenn sich eine Anlagenbuch-ID in einem gesperrten Journal befindet, wird es automatisch entsperrt, wenn die Buchung für das ursprüngliche Journal abgeschlossen ist. Sie können das Journal auch manuell entsperren. 
 
 Im Inforegister **Bestellung** können Sie konfigurieren, wie Anlagen als Teil des Einkaufsprozesses erstellt werden sollen. Die erste Option wird **Anlagenanschaffung aus Einkauf zulassen** genannt. Wenn Sie diese Option auf **Ja** festlegen, erfolgt die Anlagenanschaffung, wenn die Rechnung gebucht wird. Wenn Sie diese Option auf **Nein** festlegen, können Sie immer noch eine Anlage in eine Bestellung (PO) und Rechnung geben, aber die Anschaffung wird nicht gebucht werden. Die Buchung muss als separater Schritt aus der Anlagenerfassung ausgeführt werden. Mithilfe der Option **Anlage bei Buchung von Produktzugang oder Rechnung erstellen** können Sie eine neue Anlage bei der Buchung „spontan” erstellen. Daher muss die Anlage nicht als Anlage vor der Transaktion eingerichtet werden. Die letzte Option **Während Positionseingabe auf Anlagenerstellung überprüfen**, bezieht sich nur auf Bestellanforderungen.
 

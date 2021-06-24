@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc069743c1b28133540eeab98ae6dd5242a5e887
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e6be2aeb263c339f4e733b98ea4e01194973a9f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826833"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189783"
 ---
 # <a name="fixed-assets-integration"></a>Integration von Anlagevermögen
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826833"
 
 Anlagen können in die Module "Hauptbuch", "Bestandsverwaltung", "Debitoren" und "Kreditoren" integriert werden. Darüber hinaus können Anlagen auch für die Integration in Bestellungen eingerichtet werden.
 
-<a name="general-ledger"></a>Hauptbuch
---------------
+## <a name="general-ledger"></a>Hauptbuch
 
 Im Hauptbuch wird der Wert des Anlagevermögens normalerweise in mehreren Hauptkonten zusammengefasst, die für Finanzberichte erforderlich sind. Auf der Seite **Analgen** können Sie jedoch viele Anlagendatensätze erstellen. Diese Datensätze können Informationen wie den Anschaffungspreis, die Abschreibung und die Bewertung enthalten. Jedes Mal, wenn Sie einen Posten für eine Anlage buchen, werden die entsprechenden Hauptkonten aktualisiert. In den Hauptkonten für Anlagen wird immer der aktualisierte Wert der Anlagen aufgeführt.
 

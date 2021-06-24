@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0af952c760a3a2039d3332f73544d0b7c45d7b09
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 87bb31d6456356342773f38699a412aa72ea458e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811360"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193904"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Finanzielle Konsolidierungen und Währungsumrechnung – Übersicht
 
@@ -165,7 +165,8 @@ Kunden, die Finanzberichte für die Finanzkonsolidierungen und Währungsumrechnu
 - **Fortschrittliche Währungsumrechnung** – Nach der Einstellung im Bereich Finance können Sie einen beliebigen Rechnungslegungsbericht in einer Berichtswährung übersetzen, die eingerichtet wurde. Sie können eine unbegrenzte Anzahl an Berichterstattungswährungen einrichten.
 - **Beitragslöschungen an der Quelle** – Sie können einen Löschungsbericht erstellen und drucken, um Löschtransaktionen zu überprüfen. Sie können dann neue Löschungen als Standard-Intercompany-Transaktionen buchen. Sie können eine juristische Person für beliebige Buchungen verwenden, die sie nicht in Ihren juristischen Personen wünschen.
 
-## <a name="supported-consolidation-scenarios"></a>Unterstützte Konsolidierungsszenarien
+## <a name="supported-consolidation-scenarios-for-financial-reporting"></a>Unterstützte Konsolidierungsszenarien für die Finanzberichterstattung
+
 Nachfolgend sind einige der Konsolidierungsszenarien, die Finanzberichterstattung unterstützen.
 
 - Einstufige und mehrstufige Konsolidierungen zu verschiedenen juristischen Personen

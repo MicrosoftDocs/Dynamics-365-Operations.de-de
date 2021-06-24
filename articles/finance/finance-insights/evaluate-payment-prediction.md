@@ -2,7 +2,7 @@
 title: Bewerten des anfänglichen Kundenzahlungsvorhersagemodells (Vorschau)
 description: In diesem Thema werden die Schritte beschrieben, die Sie ausführen können, um das Kundenvorhersagemodell zu verstehen und seine Wirksamkeit zu bewerten.
 author: ShivamPandey-msft
-ms.date: 05/28/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897911"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186737"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Bewerten des anfänglichen Kundenzahlungsvorhersagemodells (Vorschau)
 
@@ -95,9 +95,5 @@ Nachdem Sie die Ergebnisse Ihres ersten Modells besser verstanden haben, möchte
 ## <a name="for-more-information"></a>Weitere Informationen
 
 Weitere Informationen dazu, wie Sie Vorhersagemodelle bewerten, finden Sie unter [Ergebnisse von Machine Learning-Modellen](/confusion-matrix.md)
-
-#### <a name="privacy-notice"></a>Datenschutzhinweis
-Vorschauen (1) wenden möglicherweise weniger Datenschutz- und Sicherheitsmaßnahmen an als der Dynamics 365 Finance and Operations-Dienst, (2) sind nicht in der Service Level Agreement (SLA) für diesen Dienst enthalten, (3) sollten nicht zur Verarbeitung personenbezogener Daten oder anderer Daten verwendet werden, die gesetzlichen oder behördlichen Compliance-Anforderungen unterliegen, und (4) hat begrenzten Support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

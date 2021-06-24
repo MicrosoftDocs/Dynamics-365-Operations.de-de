@@ -2,7 +2,7 @@
 title: Anforderungen an die Hardwarekalkulation für lokale Umgebungen
 description: Dieses Thema listet die Anforderungen an die Hardwarekalkulation für eine lokale Umgebung auf.
 author: sericks007
-ms.date: 11/27/2019
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: c5e6e96ea1ce821233d7104bb9a7af8e793f4264
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
+ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923479"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6168728"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Anforderungen an die Hardwarekalkulation für lokale Umgebungen
 
@@ -131,6 +131,8 @@ Größtenteils sollten die empfohlenen Mindestanforderungen mit zwei Knoten ausr
 ## <a name="sql-server-reporting-services"></a>SQL Server Reporting Services
 
 Für die allgemeine Verfügbarkeit kann nur ein SSRS-Knoten bereitgestellt werden. Überwachen Sie Ihren SSRS-Knoten beim Test und erhöhen Sie die Anzahl der Kerne für SSRS bei Bedarf. Stellen Sie sicher, dass Ihnen auf einem virtuellen Host, der nicht die SSRS VM ist, ein vorkonfigurierter sekundärer Knoten zur Verfügung steht. Das ist wichtig, falls es Probleme mit der virtuellen Maschine gibt, auf der SSRS oder der virtuelle Host untergebracht sind. In diesem Fall müssten sie ersetzt werden.
+
+Ab Version 10.0.17 ist es möglich, zusätzliche SSRS-Knoten zu konfigurieren, um eine hohe Verfügbarkeit zu erreichen. Weitere Informationen finden Sie unter [Hohe Verfügbarkeit für Knoten von SQL Server Reporting Services (SSRS) konfigurieren](../../dev-itpro/deployment/onprem-ssrsha.md).
 
 ## <a name="environment-orchestrator"></a>Environment Orchestrator
 

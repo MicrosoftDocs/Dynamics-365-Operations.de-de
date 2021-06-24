@@ -2,7 +2,7 @@
 title: Preisregulierungen und Rabatte
 description: Dieser Artikel enthält Informationen über Preisanpassungen und Rabatte in Dynamics 365 Commerce.
 author: scott-tucker
-ms.date: 11/16/2020
+ms.date: 06/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2d3e8025c5ab28296713634094694156f9addf62
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 44c03ae0a04d648e788a72d8f6dcc3671c5736c7
+ms.sourcegitcommit: 7c9d6be464db058511df9cb6ba162d21dc0554e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802790"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6240941"
 ---
 # <a name="price-adjustments-and-discounts"></a>Preisregulierungen und Rabatte
 
@@ -48,6 +48,13 @@ Es gibt viele verschiedene Arten von Rabatten:
 - **Lieferrabatt** – Ein Rabatt, der angewendet wird, wenn der Gesamtbetrag der Transaktion einen angegebenen Betrag übersteigt und eine bestimmte Lieferart (z. B. Lieferung in zwei Tagen oder Lieferung über Nacht) beim Auftrag verwendet wird.
 
 Sowohl Preisregulierungen als auch Rabatte können mit Preisgruppen verknüpft werden. Preisgruppen können anschließend Kanälen, Katalogen, Zuordnungen und Treueprogrammen zugeordnet werden.
+
+> [!NOTE]
+> Der Mix-and-Match-Rabatt und der Schwellenrabatt haben die Eigenschaften „Nicht rabattfähige Produkte zählen“ bzw. „Nicht rabattierbare Produkte auf den Schwellenwert anrechnen“. Wenn diese Eigenschaften aktiviert sind, kann ein Artikel, für den kein Rabatt in Frage kommt, dennoch dazu beitragen, eine Transaktion für den Rabatt zu qualifizieren, aber der nicht rabattfähige Artikel erhält keinen Rabatt. 
+> 
+> Wenn Sie beispielsweise einen Mix-and-Match-Rabatt mit zwei Zeilen A und B erstellen, bei dem ein Kunde 10 % Rabatt auf beide Artikel erhalten soll, aber Artikel A die Konfiguration „Alle Rabatte verhindern“ aktiviert hat, dann würde dies normalerweise den Artikel stoppen A von der Ermäßigung ab. Wenn jedoch die Eigenschaft „Nicht rabattierbare Produkte zählen“ aktiviert ist, kann Artikel A verwendet werden, um sich für den Mix-and-Match-Rabatt zu qualifizieren, aber der Rabatt von 10 % wird nur auf Artikel B angewendet. Eine ähnliche Logik gilt für den Schwellenrabatt. 
+>
+> Die Eigenschaft „Nicht rabattfähige Produkte zum Schwellenwert zählen“ hat jedoch eine zusätzliche Funktion im Vergleich zur Eigenschaft „Nicht rabattierbare Produkte zählen“ der Mix-and-Match-Rabatte. Wenn der Schwellenrabatt aktiviert ist und es für einen Artikel einen bestehenden Rabatt gibt, der den Artikel von anderen Rabatten abhalten würde, würde der für diesen Artikel bezahlte Preis den Schwellenwert erreichen, aber dieser Artikel erhält keine zusätzlichen Rabatte.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

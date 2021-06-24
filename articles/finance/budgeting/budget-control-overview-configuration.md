@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9a4897f34d016da8dd03d3108069e8aaa1369f7
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 98331fa4dcafb87789e7ea80f28a16463d7f2e3e
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5959968"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188044"
 ---
 # <a name="budget-control-overview"></a>Budgetsteuerung – Übersicht
 
@@ -28,8 +28,7 @@ ms.locfileid: "5959968"
 
 Dieser Artikel stellt Budgetsteuerung vor und bietet Informationen, mit denen Sie die Budgetsteuerung so konfigurieren können, dass Sie Finanzquellen verwalten können.
 
-<a name="overview"></a>Übersicht
---------
+## <a name="overview"></a>Übersicht
 
 Die Budgetsteuerung unterstützt die Verwaltung der Finanzquellen einer Organisation über den Kontenplan, Workflows, Benutzergruppen, Quelldokumente und Erfassungen, konfigurierbare Berechnungen der verfügbaren Budgetmittel, Budgetzyklen und Schwellenwerte. Mit Steuerelementen kann eine Organisation während des Geschäftsjahrs seine Finanzquellen planen, messen und verwalten. 
 

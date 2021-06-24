@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b52a1720077c055d416f04cbbe9ec46cbcf319bc
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020410"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216742"
 ---
 # <a name="rebate-management-posting-setup"></a>Einrichtung von Rückvergütungsverwaltungsbuchungen
 
@@ -43,7 +43,7 @@ In der folgenden Tabelle werden die Einstellungen beschrieben, die im Kopfbereic
 | Beschreibung | Geben Sie eine Beschreibung des Profils ein. |
 | Modul | Wählen Sie die Art der Rückvergütungen und Lizenzgebühren aus, mit denen das Profil verknüpft ist (*Debitor* oder *Kreditor*). |
 | Typ | Wählen Sie den Profiltyp (*Rückvergütung* oder *Lizenzgebühr*). |
-| Zahlungstyp | <p>Dieses Feld bestimmt das Format der gebuchten Rückvergütungsausgabe.<p><p>Wenn das Feld **Typ** auf *Rückvergütung* gesetzt ist, stehen folgende Werte zur Verfügung:</p><ul><li>*Keiner* – Es gibt keinen Standardbuchungstyp. Daher müssen Sie den Typ bei der Verarbeitung festlegen.</li><li>*Bezahlen mit Kreditorenkonten* – Wenn Sie die Rückvergütung buchen, wird eine Kreditorenrechnung für den Remissekreditor erstellt, die für den Rückvergütungsdebitor eingerichtet wurde.</li><li>*Debitorabzüge* – Wenn Sie die Rückvergütung buchen, wird eine Debitorabzugserfassung für den Rückvergütungsdebitor erstellt.</li><li>*Steuerrechnung-Debitorabzüge* – Wenn Sie die Rückvergütung buchen, wird eine Freitextrechnung für den Rückvergütungsdebitor erstellt.</li><li>*Handelsausgaben* – Wenn Sie die Rückvergütung buchen, wird eine Debitorabzugserfassung für den Rückvergütungsdebitor erstellt.</li><li>*Berichterstellung* – Wenn Sie die Rückvergütung buchen, wird eine Debitorabzugserfassung für den Rückvergütungsdebitor erstellt.</li></ul><p>Wenn das Feld **Typ** auf *Lizenzgebühr* gesetzt ist, stehen folgende Werte zur Verfügung:</p><ul><li>*Keiner* – Es gibt keinen Standardbuchungstyp. Daher müssen Sie den Typ bei der Verarbeitung festlegen.</li><li>*Bezahlen mit Kreditorenkonten* – Wenn Sie die Rückvergütung buchen, wird eine Kreditorenrechnung für das Rückvergütungsdebitorkonto eingerichtet erstellt.</li><li>*Berichterstellung* – Wenn Sie die Rückvergütung buchen, wird eine Kreditorenrechnung für das Rückvergütungsdebitorkonto eingerichtet erstellt.</li></ul><p>Weitere Informationen finden Sie im folgenden Abschnitt zu [Zahlungstypen](#payment-types). |
+| Zahlungstyp | <p>Dieses Feld bestimmt das Format der gebuchten Rückvergütungsausgabe.<p><p>Wenn das Feld **Typ** auf *Rückvergütung* gesetzt ist, stehen folgende Werte zur Verfügung:</p><ul><li>*Bezahlen mit Kreditorenkonten* – Wenn Sie eine Rückvergütung für einen Kunden buchen, wird eine Kreditorenrechnung für den Remissekreditor erstellt, die für den Rückvergütungsdebitor eingerichtet wurde. Wenn Sie eine Rückvergütung für einen Lieferanten buchen, wird eine Kreditorenrechnung für das Rückvergütungsdebitorkonto eingerichtet erstellt.</li><li>*Debitorabzüge* – Wenn Sie die Rückvergütung buchen, wird eine Debitorabzugserfassung für den Rückvergütungsdebitor erstellt.</li><li>*Steuerrechnung-Debitorabzüge* – Wenn Sie die Rückvergütung buchen, wird eine Freitextrechnung für den Rückvergütungsdebitor erstellt.</li><li>*Handelsausgaben* – Wenn Sie die Rückvergütung buchen, wird eine Debitorabzugserfassung für den Rückvergütungsdebitor erstellt.</li><li>*Berichterstellung* – Wenn Sie die Rückvergütung buchen, wird eine Debitorabzugserfassung für den Rückvergütungsdebitor erstellt.</li></ul><p>Wenn das Feld **Typ** auf *Lizenzgebühr* gesetzt ist, stehen folgende Werte zur Verfügung:</p><ul><li>*Bezahlen mit Kreditorenkonten* – Wenn Sie die Rückvergütung buchen, wird eine Kreditorenrechnung für das Rückvergütungsdebitorkonto eingerichtet erstellt.</li><li>*Berichterstellung* – Wenn Sie die Rückvergütung buchen, wird eine Kreditorenrechnung für das Rückvergütungsdebitorkonto eingerichtet erstellt.</li></ul><p>Weitere Informationen finden Sie im folgenden Abschnitt zu [Zahlungstypen](#payment-types). |
 | Firma | Wählen Sie das Unternehmen (juristische Person) aus, für das Rückstellungen gebildet werden und von dem Ansprüche bezahlt werden. |
 
 ### <a name="payment-types"></a>Zahlungstypen

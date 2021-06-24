@@ -2,7 +2,7 @@
 title: Ergebnisse von Machine Learning-Modellen (Vorschau)
 description: In diesem Thema werden Verwirrungsmatrizen, Klassifizierungsprobleme und Genauigkeit in Machine Learning(ML)-Modellen erläutert. Der Zweck besteht darin, Ihr Verständnis der Genauigkeit von ML-Vorhersageergebnissen zu verbessern.
 author: ShivamPandey-msft
-ms.date: 06/05/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028202"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193539"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Ergebnisse von Machine Learning-Modellen (Vorschau)
 
@@ -129,16 +129,12 @@ Um die Berechnungen zu vereinfachen, wurden Beispielarrays erstellt, die den tat
 
 Weitere Informationen zur Funktionsweise dieser Berechnung finden Sie im Klassifizierungsbericht sklearn.metrics für Modell 1. Die drei Zustände „Pünktlich“, „Verspätet“ und „Sehr spät“ werden durch die mit 1, 2 bzw. 3 gekennzeichneten Zeilen dargestellt. Der Makro-Durchschnitt ist nur der Durchschnitt der Spalte „f1-Score“.
 
-|           | Präzision | Erinnerung   | f1-score |
+| &nbsp;    | Präzision | Erinnerung   | f1-score |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
 | **3**     | 0.50      | 0.50     | 0.50     |
 
 Wie diese Ergebnisse zeigen, weisen die beiden Modelle nahezu identische F1-Makrogenauigkeitswerte auf. In diesem und vielen anderen Fällen liefert die F1-Genauigkeit einen besseren Indikator für die Leistungsfähigkeit eines Modells. Für die Interpretation der Ergebnisse ist es erforderlich, dass Sie verstehen, was im Modell am wichtigsten ist.
-
-#### <a name="privacy-notice"></a>Datenschutzhinweis
-Vorschauen (1) wenden möglicherweise weniger Datenschutz- und Sicherheitsmaßnahmen an als der Dynamics 365 Finance and Operations-Dienst, (2) sind nicht in der Service Level Agreement (SLA) für diesen Dienst enthalten, (3) sollten nicht zur Verarbeitung personenbezogener Daten oder anderer Daten verwendet werden, die gesetzlichen oder behördlichen Compliance-Anforderungen unterliegen, und (4) hat begrenzten Support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

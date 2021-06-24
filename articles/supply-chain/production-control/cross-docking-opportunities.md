@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 231c59cea2ca0bcb139079209d2e846e67eb7fed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839148"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190087"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Crossdocking von Produktionsaufträgen zu Ausgangsrampen
 
@@ -28,8 +28,7 @@ ms.locfileid: "5839148"
 
 In diesem Thema wird beschrieben, wie Sie den Prozess des Crossdockings von Materials verwalten, das als fertig gestellt gemeldet wurde, spricht von eine Produktionsauftragsposition an einen ausgehenden Transportdock beendet.
 
-<a name="introduction"></a>Einführung
-------------
+## <a name="introduction"></a>Einführung
 
 Crossdocking aus der Produktion an einen ausgehenden Lagerplatz ist für Hersteller von Bedeutung, die große Mengen produzieren und die fertigen Produkte idealerweise versenden möchten, sobald sie von den Produktionsauftragspositionen als fertiggestellt gemeldet werden. Die Produkte sollen zu den Verteilzentren, die physisch nahe bei der Kundennachfrage liegen, gesendet werden, anstatt Bestand am Produktionsstandort anzuhäufen.
 

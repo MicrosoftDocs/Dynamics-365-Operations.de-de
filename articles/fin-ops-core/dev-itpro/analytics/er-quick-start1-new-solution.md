@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891792"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224033"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Entwerfen einer neuen EB-Lösung zum Drucken eines benutzerdefinierten Berichts
 
@@ -285,7 +285,7 @@ Durch Ausführen der Schritte im Abschnitt [Importieren einer neuen Datenmodellk
 
 Der Status von Version 1 dieser Konfiguration wird von **Entwurf** zu **Abgeschlossen** geändert. Version 1 kann nicht mehr geändert werden. Diese Version enthält das konfigurierte Datenmodell und kann als Basis für andere EB-Konfigurationen verwendet werden. Version 2 dieser Konfiguration wird erstellt und hat den Status **Entwurf**. Sie können diese Version bearbeiten, um das Datenmodell **Fragebogen** anzupassen.
 
-![Versionen der bearbeitbaren EB-Konfiguration auf der Seite "Konfigurationen"](./media/er-quick-start1-model-configuration.png)
+![Versionen der bearbeitbaren Konfiguration auf der Seite "Konfigurationen"](./media/er-quick-start1-model-configuration.png)
 
 Weitere Informationen zur Versionierung für EB-Konfigurationen finden Sie unter [Übersicht über die elektronische Berichterstattung (EB)](general-electronic-reporting.md#component-versioning).
 
@@ -799,7 +799,7 @@ Die folgende Abbildung zeigt einen generierten Bericht im Excel-Format, in dem d
 
 Der Status von Version 1.1 dieser Konfiguration wird von **Entwurf** zu **Abgeschlossen** geändert. Version 1.1 kann nicht mehr geändert werden. Diese Version enthält das konfigurierte Format und kann zum Drucken Ihres benutzerdefinierten Berichts verwendet werden. Version 1.2 dieser Konfiguration wird erstellt und hat den Status **Entwurf**. Sie können diese Version bearbeiten, um das Format Ihres Berichts **Fragebogen** anzupassen.
 
-![Versionen der bearbeitbaren EB-Konfiguration auf der Seite "Konfigurationen"](./media/er-quick-start1-format-configuration.png)
+![Bearbeitbare EB-Konfiguration auf der Seite „Konfigurationen“](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Das konfigurierte Format ist Ihr Design des Berichts **Fragebogen** und es enthält keine Beziehungen zu den finanzspezifischen Artefakten.

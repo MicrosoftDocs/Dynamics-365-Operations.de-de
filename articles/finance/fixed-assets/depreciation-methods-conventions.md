@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afd771f3f2f0434aa3663a9f99512f0c31adbb78
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 76b20c895519edb7316c2b9a6b223a109a307e77
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826929"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189396"
 ---
 # <a name="depreciation-methods-and-conventions"></a>Abschreibungsmethoden und -konventionen
 
@@ -61,8 +61,7 @@ Die folgenden Abschreibungsmethoden stehen zur Auswahl.
 
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Anlagenabschreibung](fixed-asset-depreciation.md)
 

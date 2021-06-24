@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d1852eac49b4a26e0680d7a918d2a6d8af37031
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6ab5e7a2675705cc2265b7f894d9b12d4465aea1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838836"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187819"
 ---
 # <a name="income-statement-financial-report"></a>Finanzbericht für die Einkommensaufstellung
 
@@ -28,8 +28,7 @@ ms.locfileid: "5838836"
 
 In diesem Artikel werden die Standardberichte für Einkommensaufstellung beschrieben. Er beschreibt zudem die die Bausteine, die diesen Bericht zugeordnet werden. 
 
-<a name="default-income-statement-report"></a>Standardbericht für die Einkommensaufstellung
--------------------------------
+## <a name="default-income-statement-report"></a>Standardbericht für die Einkommensaufstellung
 
 | Standardbericht             | Funktionsweise                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -57,8 +56,7 @@ Die Spaltendefinitionen enthalten verschieden Spaltentypen, um verschiedene Stuf
 
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung – Übersicht](financial-reporting-getting-started.md)
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 037b6de9c23947b8b67faa12f2fc64afa089949c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bb9b26eaedd9e9645209ce0b4b767170cccfdc48
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811773"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190111"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Stücklisten und Formeln
 
@@ -29,8 +29,7 @@ ms.locfileid: "5811773"
 
 Dieser Artikel enthält Informationen zu Stücklisten (BOMs) und Formeln, die ein zentraler Teil der Definition der Produkte und Produktvarianten sind. Stücklisten und Formeln können die erforderlichen Inhaltsstoffe oder Materialien für ein bestimmtes Produkt angezeigt. Formeln definieren außerdem die Kuppel- und Nebenprodukten, die in einem bestimmten Produktionskontext eingehen. 
 
-<a name="bills-of-materials"></a>Stücklisten
-------------------
+## <a name="bills-of-materials"></a>Stücklisten
 
 Eine Stückliste (BOM) definiert die Komponenten, die erforderlich sind, um ein Produkt zu erzeugen. Die Komponenten können Rohmaterialien, Halbfertigprodukte oder Inhaltsstoffe sein. In einigen Fällen kann eine Stückliste auf Dienstleistungen verweisen. Jedoch beschreiben Stücklisten in der Regel erforderliche *Materialressourcen*.  
 

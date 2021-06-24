@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fee455fe1e51ac99fe6f38a63b48c7b92d32ac7a
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 01d6d79c482871c9f39898298292b21367c9a48e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897063"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193330"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Lernkatalog für Implementierungs-Projektmanager, die mit Dynamics 365 Finance arbeiten
 
@@ -88,10 +88,10 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 
 ## <a name="exams"></a>Prüfungen<a name="exams"></a>
 
-| Inhalt  | Beschreibung  | Formate   |
-|-------------|-----------------|-------------|
-| [Prüfung MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Diese Prüfung ermittelt Ihre Fähigkeit, die folgenden technischen Aufgaben zu erfüllen: allgemeine Funktions- und Implementierungstools verwenden; Sicherheit, Prozesse und Optionen konfigurieren, Datenmigration ausführen und die Lösung validieren und unterstützen. | Prüfung; Kosten variieren nach Regionen | |
-| [Prüfung MB-310: Microsoft Dynamics 365 for Finance and Operations, Finanzdaten](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Diese Prüfung ermittelt Ihre Fähigkeit, die folgenden technischen Aufgaben zu erfüllen: Einrichten und Konfigurieren der Finanzverwaltung; Verwalten und Anwenden von allgemeinen Prozessen; Implementieren des und Verwalten von Kreditorenkonten und Debitoren; und Verwalten der Budgetierung und Anlagen. | Prüfung; Kosten variieren nach Regionen | |
+| Inhalt | Beschreibung | Formate |
+|---|---|---|
+| [Prüfung MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Diese Prüfung ermittelt Ihre Fähigkeit, die folgenden technischen Aufgaben zu erfüllen: allgemeine Funktions- und Implementierungstools verwenden; Sicherheit, Prozesse und Optionen konfigurieren, Datenmigration ausführen und die Lösung validieren und unterstützen. | Prüfung; Kosten variieren nach Regionen |
+| [Prüfung MB-310: Microsoft Dynamics 365 for Finance and Operations, Finanzdaten](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Diese Prüfung ermittelt Ihre Fähigkeit, die folgenden technischen Aufgaben zu erfüllen: Einrichten und Konfigurieren der Finanzverwaltung; Verwalten und Anwenden von allgemeinen Prozessen; Implementieren des und Verwalten von Kreditorenkonten und Debitoren; und Verwalten der Budgetierung und Anlagen. | Prüfung; Kosten variieren nach Regionen |
 | [Microsoft-zertifiziert: Dynamics 365 for Finance and Operations, Funktioneller Beraterexperte für Finanzdaten](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft-zertifiziert: Dynamics 365 for Finance and Operations, Funktionelle Berater für Finanzen vereinheitlichen globale Finanzdaten und Arbeitsgänge und automatisieren Aufgaben und Workflows, optimieren die Debitorenreihenfolge, den Verkauf, die Rechnungsstellung und die Berichterstellung. | Zertifizierung, Kosten variieren nach Regionen |
 
 

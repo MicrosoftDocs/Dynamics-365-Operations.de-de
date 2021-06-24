@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d2f1820f79798488c73f20f9c688fa877af4f1b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4960e8418de473d20c9a1948ca606ae76ad1ac19
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816531"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189715"
 ---
 # <a name="demand-forecasting-setup"></a>Einrichten einer Bedarfsplanung
 
@@ -88,8 +88,7 @@ Auf der Registerkarte **Verteilungsschlüssel** können Sie den **Planungsalgori
 - **Hinweis zur Saisonalität**: Geben Sie für Saisondaten einen Hinweis an das Planungsmodell, um die Planungsgenauigkeit zu verbessern. Format: Ganzzahl, die die Anzahl der Zeitrahmen angibt, in denen sich ein Bedarfsmuster wiederholt. Geben Sie zum Beispiel „6“ für Daten ein, die alle 6 Monate wiederholt werden.
 - **Testsatzgröße in Prozent**: Prozentsatz der historischen Daten, die als Testsatz für die Prognose der Genauigkeitsberechnung verwendet werden. 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Bedarfsplanung – Übersicht](introduction-demand-forecasting.md)
 

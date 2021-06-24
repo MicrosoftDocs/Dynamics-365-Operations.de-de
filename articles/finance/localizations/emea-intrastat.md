@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db97d05d79a100ebdcfb5b4931b37243b77bd352
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bafbb908531e003d2184409bf5d09ed5848fc474
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814994"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216787"
 ---
 # <a name="intrastat-overview"></a>Intrastat – Übersicht
 
@@ -73,7 +73,7 @@ In der folgenden Tabelle werden die Komponenten für Intrastat-Berichte angezeig
 </tr>
 <tr class="odd">
 <td>Hierarchie der Produktkategorie (Vertriebshierarchie, Beschaffungshierarchie)</td>
-<td>Weisen Sie die Intrastat-Warencodes den Kategorieknoten auf der Registerkarte <strong>Warencodes</strong> der Seite <strong>Kategoriehierarchie</strong> zu. Wenn Sie einen Warencode einem Knoten der übergeordneten Kategorie zuweisen, ist dieser Code auf alle Knoten der untergeordneten Kategorie anwendbar. Die ausgewählten Warencodes sind in der Ansicht <strong>Ausgewählt</strong> verfügbar, wenn Sie einen Warencode in den Details für freigegebene Produkte und in Aufträgen, Bestellungen und Umlagerungsauftragspositionen auswählen.</td>
+<td>Weisen Sie die Intrastat-Warencodes den Kategorieknoten auf der Registerkarte <strong>Warencodes</strong> der Seite <strong>Kategoriehierarchie</strong> zu. Wenn Sie einen Warencode einem Knoten der übergeordneten Kategorie zuweisen, ist dieser Code auf alle Knoten der untergeordneten Kategorie anwendbar. Die ausgewählten Warencodes sind in der Ansicht <strong>Ausgewählt</strong> verfügbar, wenn Sie einen Warencode in den Details für Produkte und in Aufträgen, Bestellungen und Umlagerungsauftragspositionen auswählen.</td>
 </tr>
 <tr class="even">
 <td>Details für freigegebene Produkte</td>
@@ -84,6 +84,7 @@ In der folgenden Tabelle werden die Komponenten für Intrastat-Berichte angezeig
 <li><strong>Herkunftsland/-region</strong> - Wählen Sie das Standardland /-region aus, in dem die Waren vollständig erhalten oder produziert wurden.</li>
 <li><strong>Bundesland/Kanton für Ursprung/Ziel</strong> - Wählen Sie das Standardbundesland/den Kanton des Ziels für Eingänge sowie das Ursprungsbundesland/den Kanton für den Versand aus.</li>
 <li><strong>Nettogewicht in kg</strong></li>
+<li><strong>Ausschließen</strong> - Aktivieren Sie diesen Parameter, um Transaktionen mit diesem Produkt nicht an Intrastat zu übertragen</li>
 </ul></td>
 </tr>
 <tr class="odd">

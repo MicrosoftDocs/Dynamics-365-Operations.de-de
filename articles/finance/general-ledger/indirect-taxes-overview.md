@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8dcb5c9860cb617612dade03b55b8bd4a0983b6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41c64607f5dfbe00bd8a2e7cc80fb4771f11a6d1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826617"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188439"
 ---
 # <a name="sales-tax-overview"></a>Mehrwertsteuerüberblick
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826617"
 
 Dieser Artikel enthält eine Übersicht über das Mehrwertsteuersystem. Er erklärt die Elemente zur Einrichtung der Mehrwertsteuer und wie sie zusammenarbeiten.
 
-<a name="overview"></a>Überblick
---------
+## <a name="overview"></a>Überblick
 
 Das Mehrwertsteuerframework unterstützt verschiedene Varianten von indirekten Steuern, wie etwa Mehrwertsteuer, Mehrwertsteuer (VAT), Waren und GST (Goods and Services Tax bezogene), Gebühren und Quellensteuer. Diese Steuern werden während des Einkaufs und der Verkaufsbuchungen berechnet und angegeben. In regelmäßigen Abständen muss Mehrwertsteuer gemeldet werden und an die Steuerbehörde abgeführt werden. 
 

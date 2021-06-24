@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0be27fc759c525dcc1ffe4f2717b2e2378c52a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744162"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188074"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen
 
@@ -31,8 +31,7 @@ In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläuter
 > [!IMPORTANT]
 > Sie können Ihre eigenen Aufgabenleitfäden für Dynamics 365 Human Resources erfassen, jedoch sind Sie noch nicht in der Lage, sie in einer Geschäftsprozessmodellierer-(BPM)-Bibliothek zu speichern oder sie vom Hilfebereich zu öffnen. Sie können sie lokal oder an einem Netzwerkspeicherort speichern und sie dann mithilfe der Aufgabenaufzeichnung öffnen und erneut wiedergeben. 
 
-<a name="learn-about-task-recorder"></a>Mehr über die "Aufgabenaufzeichnung" erfahren
--------------------------
+## <a name="learn-about-task-recorder"></a>Mehr über die "Aufgabenaufzeichnung" erfahren
 
 Die Aufgabenaufzeichnung ist ein Tool, das Sie verwenden können, um Aktivitäten aufzuzeichnen, die Sie in der Produkt-Benutzeroberfläche (UI) ausgeführt haben. Wenn Sie die Aufgabenaufzeichnung anwenden, werden alle Ereignisse, die in der Benutzeroberfläche vom Server abgerufen werden – einschließlich dem Hinzufügen von Werten, der Änderung von Einstellungen und dem Entfernen von Daten – aufgezeichnet. Die Schritte, die Sie erfassen, werden zusammenfassend als *Aufgabenaufzeichnung* bezeichnet. Aufgabenaufzeichnungen können auf unterschiedliche Weise verwendet werden:
 
@@ -111,8 +110,7 @@ Sie können die Microsoft Aufgabenaufzeichnungen herunterladen und bearbeiten, u
 
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Hilfesystem](../../fin-ops/get-started/help-overview.md)
 

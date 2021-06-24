@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b72ccbcec1e3796917c041def19f3985668e7e1e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6ac31634844ea5d82f795b2262d17a6be3a926c2
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807919"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190135"
 ---
 # <a name="procurement-catalogs-overview"></a>Beschaffungskataloge (Überblick)
 
@@ -66,8 +66,7 @@ Aktualisierungen werden entweder automatisch oder manuell veröffentlicht. Dies 
 -   **Beides** – Wenn der Katalog Produktkategorien beinhaltet, die den standardmäßigen Aktualisierungstyp **Statisch** aufweisen, müssen bei einer Aktualisierung diese Kategorien manuell aktualisiert werden. Kataloge mit Produktkategorien, die den standardmäßigen Aktualisierungstyp **Dynamisch** aufweisen, werden automatisch aktualisiert, wenn am Katalog eine Änderung vorgenommen wird.
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Beschaffungskategoriehierarchie einrichten](tasks/set-up-procurement-category-hierarchy.md)
 

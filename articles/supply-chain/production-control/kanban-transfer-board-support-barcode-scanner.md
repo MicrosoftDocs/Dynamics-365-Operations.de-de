@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a7073fb5d77e2d11569e86b92433864371f0e1d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c48c4737c260004ea44109cfb2a0478a3e8653cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825866"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190063"
 ---
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Unterstützung der Kanban-Übertragungskarte für Strichcodescanner
 
@@ -29,8 +29,7 @@ ms.locfileid: "5825866"
 
 Die Kanban-Umlagerungsübersicht unterstützt die Scanner-Eingabe von einem Widgetstrichcodescanner bei der Auswahl, dem Starten, dem Abschluss und dem Leeren eines Kanban-Einzelvorgangs.
 
-<a name="registration-modes"></a>Erfassungsmodi
-------------------
+## <a name="registration-modes"></a>Erfassungsmodi
 
 Auf dem Inforegister **Scanner-Erfassung** können Sie den Registrierungsmodus auswählen, der die Aktivität steuert, wenn Sie eine Kanban-Kartennummer scannen oder manuell im Nummernfeld eingeben.
 
@@ -42,8 +41,7 @@ Auf dem Inforegister **Scanner-Erfassung** können Sie den Registrierungsmodus a
 | Auswählen                | Registriert eine Kanban-Kartennummer und wählt automatisch den Einzelvorgang in der Kanban-Einzelvorgangsliste aus. |
 
  
-<a name="registration-mode-select"></a>Erfassungsmodusauswahl
-------------------------
+## <a name="registration-mode-select"></a>Erfassungsmodusauswahl
 
 Wenn Sie einen Barcodeleser verwenden, um einen Einzelvorgang auszuwählen, ändert sich der Ansichtsmodus der Kanban-Übersicht. In diesem Modus gelten folgende Bedingungen:
 

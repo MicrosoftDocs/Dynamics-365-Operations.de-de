@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.openlocfilehash: 9cd7dd8b9241171bdfdb3cc1379211a2fe99bbe1
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899094"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6183995"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten
 
@@ -72,6 +72,7 @@ Die folgenden Manufacturing Execution Tasks können derzeit auf Arbeitsauslastun
 - Ausschuss melden
 - Indirekte Aktivität
 - Pause
+- Fertig melden und einlagern (erfordert, dass Sie auch den Workload für die Lagerausführung auf Ihrer Skalierungseinheit ausführen, siehe auch [Fertig melden und auf einer Skalierungseinheit einlagern](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Arbeiten mit Arbeitsauslastungen zur Fertigungsausführung auf dem Hub
 
@@ -108,6 +109,26 @@ Um die Historie der Fertigungsaufträge einzusehen, die auf einer Scale-Unit ver
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Fertigungs-Hub zu Scale-Unit Nachrichtenprozessorauftrag
 
 Der Job _Manufacturing hub to scale unit message processor_ verarbeitet Daten vom Hub zur Scale-Unit. Dieser Job wird automatisch gestartet, wenn die Arbeitsauslastung der Fertigungsausführung bereitgestellt wird. Sie können ihn jedoch jederzeit manuell ausführen, indem Sie zu **Produktionssteuerung \> Periodische Aufgaben \> Backoffice-Arbeitsauslastung \> Manufacturing Hub to Scale-Unit Message Processor** gehen.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Fertig melden und auf einer Skalierungseinheit einlagern
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+Im aktuellen Release werden Vorgänge zum Fertig melden und einlagern (für Fertig-, Co- und Nebenprodukte) vom [Workload für die Lagerausführung](cloud-edge-workload-warehousing.md) unterstützt (nicht der Workload für die Fertigungsausführung). Um diese Funktionalität bei der Verbindung mit einer Skalierungseinheit zu verwenden, müssen Sie daher Folgendes tun:
+
+- Installieren Sie sowohl den Workload für die Lagerausführungs als auch für die Fertigungsausführung auf Ihrer Skalierungseinheit.
+- Verwenden Sie die Mobile Warehouse Management-App, um den Abschluss zu melden und die Einlagerungsarbeiten zu verarbeiten. Die Produktionsausführungsoberfläche unterstützt diese Prozesse derzeit nicht.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

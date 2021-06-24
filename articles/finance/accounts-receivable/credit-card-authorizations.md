@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6b59d54df9427961e2c4fb6f1387646d6fe8dfc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 502fe22aa0caafbcff059c9d0ae83c7cd030e8d0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837128"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190308"
 ---
 # <a name="credit-card-setup-authorization-and-capture"></a>Einstellungen, Autorisierung und Erfassung von Kreditkarten
 
@@ -28,8 +28,7 @@ ms.locfileid: "5837128"
 
 Dieser Artikel stellt eine Übersicht der Kreditkartenautorisierung in Microsoft Dynamics 365 Finance bereit. Er umfasst Informationen darüber, wie ein Zahlungsdienst eingerichtet, eine Kreditkarte einem Auftrag hinzugefügt und eine Autorisierung storniert wird.
 
-<a name="setting-up-the-credit-card-payment-service"></a>Einrichten des Kreditkartenzahlungsdienstes
-------------------------------------------
+## <a name="setting-up-the-credit-card-payment-service"></a>Einrichten des Kreditkartenzahlungsdienstes
 
 Um Kreditkarten zu verwenden, müssen Sie einen Zahlungsdienst auf der Seite "Zahlungsdienst" einrichten und aktivieren. Ein Zahlungsdienst fungiert als Bindeglied zwischen der juristischen Person und der Bank, die die Kreditkartengebühren eines Debitoren verarbeitet. Sie müssen mit einem Kreditkartenanbieter zusammenarbeiten, der im Feld Zahlungskonnektor aufgeführt ist, und Sie müssen ein Konto bei diesem Anbieter einrichten. Sie müssen dann die anderen Optionen auf der Seite "Zahlungsdienst" einrichten, Kreditkartentypen für American Express, Discover, MasterCard sowie Discover auf der Seite "Kreditkartentypen" einrichten und den Anbieter als Standardanbieter aktivieren. Sie müssen auch diese Schritte ausführen, um Ihre Einrichtung abzuschließen.
 -   Geben Sie auf der Seite "Debitorenparameter" die Parameter für die Verwendung von Kreditkartenautorisierungen an.
@@ -39,13 +38,11 @@ Um Kreditkarten zu verwenden, müssen Sie einen Zahlungsdienst auf der Seite "Za
 ## <a name="adding-a-new-credit-card"></a>Hinzufügen einer neuen Kreditkarte
 Sie können neue Kreditkartendatensätze auf der Seite "Debitoren" mithilfe von "Debitor", "Einrichten", "Kreditkarte" erstellen. Sie können auch Kreditkartendatensätze erstellen, wenn Sie Aufträge auf der Seite "Auftrag" eingeben, indem Sie "Verwalten", "Debitor", "Kreditkarte", "Registrieren" verwenden.
 
-<a name="adding-a-credit-card-to-a-sales-order"></a>Eine Kreditkarte zu einem Auftrag hinzufügen
--------------------------------------
+## <a name="adding-a-credit-card-to-a-sales-order"></a>Eine Kreditkarte zu einem Auftrag hinzufügen
 
 Sie können eine Kreditkarte einem Auftrag hinzufügen, indem Sie eine Kreditkarte in der Kreditkartensuche im Inforegister "Preis und Rabatte" auf der Seite "Auftrag" auswählen. Um des Autorisierungsprozess zu starten, wählen Sie im Aktivitätsbereich auf der Registerkarte "Verwalten" die Optionen "Kreditkarte" und "Autorisieren" aus.
 
-<a name="authorizing-a-credit-card"></a>Eine Kreditkarte autorisieren
--------------------------
+## <a name="authorizing-a-credit-card"></a>Eine Kreditkarte autorisieren
 
 Wenn eine Kreditkarte autorisiert wird, werden die Kreditkartennummer und der Name des Karteninhabers überprüft und der verfügbare Guthabensaldo bestätigt. Optional werden der Kreditkartenüberprüfungswert und die Adresse des Karteninhabers überprüft. Anschließend wird der verfügbare Guthabensaldo des Debitors um den Rechnungsbetrag verringert. Der Zahlungsservice informiert Sie, ob die Kreditkarte akzeptiert oder abgelehnt wurde. Nach der Fakturierung des Auftrags wird die Kreditkarte mit dem Rechnungsbetrag belastet (erfasst).
 

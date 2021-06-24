@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: e2b0abb2826f81ed87b4f0f37dba32c1d8d749c2
-ms.sourcegitcommit: 194d68b24cd36db21e9029044bed18983fd9810c
+ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937885"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216611"
 ---
 # <a name="party-and-global-address-book"></a>Partei und globales Adressbuch
 
@@ -143,16 +143,22 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
 
 ## <a name="setup"></a>Einstellung
 
-1. Installieren Sie die neueste Version (2.2.2.60 oder höher) von [Dual-write application orchestration solution](https://aka.ms/dual-write-app).
+1. Öffnen Sie Ihre Kundenbindungs-App-Umgebung.
 
-2. Installieren Sie [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
+2. Installieren Sie die neueste Version (2.2.2.60 oder höher) von [Dual-write application orchestration solution](https://aka.ms/dual-write-app).
 
-3. Stoppen Sie die folgenden Zuordnungen, da sie nicht mehr benötigt werden. Führen Sie stattdessen die `Contacts V2 (msdyn_contactforparties)`-Zuordnung aus.
+3. Installieren Sie [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
+
+4. Öffnen Sie die Finance and Operations-App. Navigieren Sie zum Modul Datenverwaltung und wählen Sie die Registerkarte Duales Schreiben. Die Duales Schreiben-Verwaltungsseite wird geöffnet.
+
+5. Wenden Sie beide in den Schritten 2 und 3 installierten Lösungen an, indem Sie die Funktion [Lösung anwenden](link-your-environment.md) verwenden.
+
+6. Stoppen Sie die folgenden Zuordnungen, da sie nicht mehr benötigt werden. Führen Sie stattdessen die `Contacts V2 (msdyn_contactforparties)`-Zuordnung aus.
 
     + CDS-Kontakte V2 und Kontakte (bezieht sich auf Kundenkontakte)
     + CDS-Kontakte V2 und Kontakte (bezieht sich auf Lieferantenkontakte)
 
-4. Die folgenden Entitätszuordnungen werden für die Partei-Funktionalität aktualisiert, daher muss die neueste Version auf diese Zuordnungen angewendet werden.
+7. Die folgenden Entitätszuordnungen werden für die Partei-Funktionalität aktualisiert, daher muss die neueste Version auf diese Zuordnungen angewendet werden.
 
     Zuordnen | Update auf diese Version | Änderungen
     ---|---|---
@@ -176,7 +182,7 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Dies ist eine neue Zuordnung, die im Rahmen dieses Releases hinzugefügt wurde.
 
-5. Bevor Sie die oben genannten Zuordnungen ausführen, müssen Sie die Integrationsschlüssel manuell aktualisieren, wie in den folgenden Schritten beschrieben. Wählen Sie dann **Speichern** aus.
+8. Bevor Sie die oben genannten Zuordnungen ausführen, müssen Sie die Integrationsschlüssel manuell aktualisieren, wie in den folgenden Schritten beschrieben. Wählen Sie dann **Speichern** aus.
 
     | Zuordnen | Schlüssel |
     |-----|------|
@@ -185,7 +191,7 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
     | Kontakt für Debitor/Lieferant | msdyn_contactforpartynumber [Kontakt für Partei-Nummer]<br>msdyn_associatedcompanyid.cdm_companycode [Zugehörige Firma (Buchungskreis)] |
     | Lieferant | msdyn_vendoraccountnumber [Kontonummer des Kreditors]<br>msdyn_company.cdm_companycode [Firma (Firmencode)]|
 
-6. In Dataverse haben sich die Zeichengrenzen für die Regeln zur Erkennung von Duplikaten von 450 auf 700 Zeichen erhöht. Mit dieser Begrenzung können Sie einen oder mehrere Schlüssel zu den Regeln für die Duplikaterkennung hinzufügen. Erweitern Sie die Regel zur Erkennung von Duplikaten für die Tabelle **Konten**, indem Sie die folgenden Felder festlegen.
+9. In Dataverse haben sich die Zeichengrenzen für die Regeln zur Erkennung von Duplikaten von 450 auf 700 Zeichen erhöht. Mit dieser Begrenzung können Sie einen oder mehrere Schlüssel zu den Regeln für die Duplikaterkennung hinzufügen. Erweitern Sie die Regel zur Erkennung von Duplikaten für die Tabelle **Konten**, indem Sie die folgenden Felder festlegen.
 
     | Feld | Wert |
     |-------|-------|
@@ -201,7 +207,7 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
 
     ![Doppelte Regel für Konten](media/duplicate-rule-1.PNG)
 
-7. Erweitern Sie die Regel zur Erkennung von Duplikaten für die Tabelle **Kontakte**, indem Sie die folgenden Felder festlegen.
+10. Erweitern Sie die Regel zur Erkennung von Duplikaten für die Tabelle **Kontakte**, indem Sie die folgenden Felder festlegen.
 
     | Feld | Wert |
     |-------|-------|
@@ -217,9 +223,9 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
 
     ![Duplizieren Sie die Regel für Kontakte](media/duplicate-rule-2.PNG)
 
-8. Wenn Sie ein bestehender Dual-Write-Benutzer sind, folgen Sie den Anweisungen unter [Upgrade auf das Modell Partei und globales Adressbuch](upgrade-party-gab.md) und aktualisieren Sie Ihre Daten.
+11. Wenn Sie ein bestehender Dual-Write-Benutzer sind, folgen Sie den Anweisungen unter [Upgrade auf das Modell Partei und globales Adressbuch](upgrade-party-gab.md) und aktualisieren Sie Ihre Daten.
 
-9. Führen Sie die Zuordnungen in der folgenden Reihenfolge aus. Wenn Sie eine Fehlermeldung erhalten, die besagt „Projektvalidierung fehlgeschlagen“. „Fehlendes Zielfeld...“, öffnen Sie dann die Zuordnung und wählen Sie **Tabellen aktualisieren**. Führen Sie dann die Zuordnung aus.
+12. Führen Sie die Zuordnungen in der folgenden Reihenfolge aus. Wenn Sie eine Fehlermeldung erhalten, die besagt „Projektvalidierung fehlgeschlagen“. „Fehlendes Zielfeld...“, öffnen Sie dann die Zuordnung und wählen Sie **Tabellen aktualisieren**. Führen Sie dann die Zuordnung aus.
 
     Finance and Operations-App | Customer Engagement-App  
     ----------------------------|------------------------

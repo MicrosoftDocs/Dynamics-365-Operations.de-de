@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df06df63c28ca99bb9cb95e99b3498f70c54d97f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053658"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193723"
 ---
 # <a name="provision-human-resources"></a>Personalverwaltung bereitstellen
 
@@ -56,7 +56,7 @@ Um LCS für die Human Resources-Umgebung zu verwalten, müssen Sie zuerst ein LC
 1. Melden Sie sich an bei [LCS](https://lcs.dynamics.com/Logon/Index), indem Sie das Konto verwenden, das Sie verwenden, um Human Resources zu abonnieren.
 
    > [!NOTE]
-   > Um eine erfolgreiche Bereitstellung zu gewährleisten, muss das Konto, das Sie für die Bereitstellung der Human Resources-Umgebung verwenden, entweder der Rolle **Systemadministrator** oder **System-Anpasser** in der Power Apps-Umgebung zugewiesen sein, die mit der Human Resources-Umgebung verbunden ist. Siehe [Konfigurieren Sie die Benutzersicherheit für Ressourcen](https://docs.microsoft.com/power-platform/admin/database-security) für weitere Informationen über die Zuweisung von Sicherheitsrollen an Benutzer in der Power Platform.
+   > Um eine erfolgreiche Bereitstellung zu gewährleisten, muss das Konto, das Sie für die Bereitstellung der Human Resources-Umgebung verwenden, entweder der Rolle **Systemadministrator** oder **System-Anpasser** in der Power Apps-Umgebung zugewiesen sein, die mit der Human Resources-Umgebung verbunden ist. Siehe [Konfigurieren Sie die Benutzersicherheit für Ressourcen](/power-platform/admin/database-security) für weitere Informationen über die Zuweisung von Sicherheitsrollen an Benutzer in der Power Platform.
 
 2. Wählen Sie das Pluszeichen (**+**) aus, um ein Projekt zu erstellen.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f89b3d94fd16aa9cf27931d11fd8fff22048d40
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c6d96f1f957bfe8002a763d98f170681ad92b23
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824027"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188733"
 ---
 # <a name="customer-payments-for-a-partial-amount"></a>Debitorenzahlungen für einen Teilbetrag
 
@@ -28,8 +28,7 @@ ms.locfileid: "5824027"
 
 Es kann vorkommen, dass Debitoren eine Zahlung leisten, die geringer als der in der Rechnung gestellte Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben. Die zur Verfügung stehenden Optionen sind von den jeweiligen Geschäftsanforderungen und der Konfiguration abhängig.
 
-<a name="partial-payment-with-no-discount"></a>Teilzahlung ohne Rabatte
---------------------------------
+## <a name="partial-payment-with-no-discount"></a>Teilzahlung ohne Rabatte
 
 Debitoren könnten eine Teilzahlung leisten, da sie derzeit nicht genügend Bargeld haben, um die Rechnung vollständig zu bezahlen, oder weil es eine Streitigkeit zu einem Rechnungsposten gibt. In diesem Fall kann die Rechnung mit der Zahlung teilweise ausgeglichen werden. Die Rechnung bleibt offen und zeigt einen offenen Saldo.
 

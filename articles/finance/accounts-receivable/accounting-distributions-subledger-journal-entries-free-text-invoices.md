@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c3609ed396b543bb708ea36f308eee60976e66f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7e3e1e0a757dcd51edcd38bb348e52b756e57334
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837176"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188757"
 ---
 # <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Buchhaltungsverteilungen und Journaleinträge für Freitextrechnungen
 
@@ -28,8 +28,7 @@ ms.locfileid: "5837176"
 
 Mithilfe von Buchhaltungsverteilungen wird definiert, wie ein Betrag kalkuliert wird, beispielsweise wie Umsatzerlöse, Steuern oder Zuschläge auf einer Freitextrechnung kalkuliert werden. Jeder Betrag, der kalkuliert werden muss, wenn die Freitextrechnung journalisiert wird, enthält eine oder mehrere Buchhaltungsverteilungen.
 
-<a name="accounting-distributions"></a>Buchhaltungsverteilungen
-------------------------
+## <a name="accounting-distributions"></a>Buchhaltungsverteilungen
 
 Sie können die folgenden Schaltflächen auf der Seite "Freitextrechnung" verwenden, um die Buchhaltungsverteilungen für jeden Betrag auf der Freitextrechnung anzuzeigen und eventuell zu ändern.
 

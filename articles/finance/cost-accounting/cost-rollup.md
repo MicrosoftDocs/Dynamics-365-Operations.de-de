@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2235545760899c0d945f08b5419154dfdbe4dffc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1137ee7938b378e5212e355580d005cd49b31dbb
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815763"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189044"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kostenaufschlüsselungsrichtlinie und Gemeinkostenberechnung 
 
@@ -149,8 +149,7 @@ Kostenzuweisungsregeln können wie folgt eingerichtet werden.
 | CC001                                | Gesamt         | **HR-Dienste**        |
 | CC002                                | Gesamt         | **Finanzdienstleistungen** |
 
-<a name="brhow-cost-flows-between-cost-centers"></a><br>Wie Kosten zwischen Kostenstellen fließen 
----------------------------------------------------
+## <a name="brhow-cost-flows-between-cost-centers"></a><br>Wie Kosten zwischen Kostenstellen fließen 
 
 Wenn Sie mehr darüber erfahren möchten, wie Kosten zwischen den Kostenstellen in der Organisation fließen, können Sie für jede Kostenstelle Kostenelemente vom Typ **Sekundär** erstellen. Diese Kostenelemente werden dann dazu verwendet, während der Gemeinkostenberechnung Salden zwischen den Kostenstellen zu übertragen.
 

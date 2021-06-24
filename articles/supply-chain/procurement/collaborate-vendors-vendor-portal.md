@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceffa7028f4490a88027a2affdc898877cc2db43
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 2fa295c71fb82b4168123970fee6ba71d293e3c8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910064"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189667"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals
 
@@ -92,8 +92,7 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 |                           Sie senden die neue Version der Bestellung an das Kreditorenportal.                            |                                                                                                                                                                    Die neue Version wird im Kreditorenportal erfasst, und der Status wird in <strong>Externe Prüfung</strong> geändert.                                                                                                                                                                     |
 |                                Der Kreditor genehmigt die neue Version der PO.                                 |                                                                                                                                                     Der Status wird entweder automatisch in <strong>Bestätigt</strong> geändert oder wenn Sie die Antwort vom Kreditor erhalten und die Bestellung dann bestätigen.                                                                                                                                                     |
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Kreditorenportalbenutzersicherheit](configure-security-vendor-portal-users.md)
 

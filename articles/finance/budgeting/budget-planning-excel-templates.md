@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 80190419176848f10d9a3908350d57ddaadfd8c3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9d4e901871267d4f11d9afefc873708663dbabd6
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822178"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190284"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budgetplanungsvorlagen für Excel
 
@@ -66,8 +66,7 @@ Gehen Sie mit dem Cursor auf den gewünschten Ort in der Excel-Datei. Klicken Si
 
 ## <a name="select-add-valuemediabpt7png"></a>[![„Wert hinzufügen“ auswählen](./media/bpt7.png)](./media/bpt7.png)
 
-<a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Der Budgetplandokumentvorlagentabelle eine berechnete Spalte hinzufügen
---------------------------------------------------------------
+## <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Der Budgetplandokumentvorlagentabelle eine berechnete Spalte hinzufügen
 
 Nächste berechnete Spalten werden der zu generierenden Budgetplandokumentvorlage hinzugefügt. Eine Spalte **Gesamte Anforderung**, die die Anforderung Q1 zusammenfasst: Anforderung Q4 Spalten und eine Spalte **Anpassung**, die die Spalte **Total Anforderung** durch einen vordefinierten Faktor berechnet.
 

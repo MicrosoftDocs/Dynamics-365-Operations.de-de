@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908927"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188933"
 ---
 # <a name="routes-and-operations"></a>Arbeitspläne und Arbeitsgänge
 
@@ -29,8 +29,7 @@ ms.locfileid: "5908927"
 
 Dieses Thema enthält allgemeine Informationen zu Arbeitsplan und Arbeitsgänge. Ein Arbeitsplan definiert den Prozess für die Produktion eines Produkts oder die Produktvariante. Er beschreibt jeden Schritt (Arbeitsgang) im Produktionsprozess und den Auftrag für den diese Schritte ausgeführt werden müssen. Für jeden Schritt definiert der Arbeitsplan erforderliche betrieblichen Ressourcen, die Zeit der erforderlichen Einstellungen und die Bearbeitungszeit sowie wie die Kosten berechnet werden sollen.
 
-<a name="overview"></a>Überblick
---------
+## <a name="overview"></a>Überblick
 
 Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der erforderlich ist, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Für jeden Arbeitsgang definiert der Arbeitsplan auch die betrieblichen Ressourcen, die erforderlich sind, die Zeit, die benötigt wird, um den Arbeitsgang einrichten und ausführen, und wie Kosten berechnet werden sollen. Sie können dieselben Arbeitsplan verwenden, um mehrere Produkte anzuzeigen, oder Sie können einen eindeutigen Arbeitsplan für jedes Produkt oder Produktvariante definieren. Sie können sogar mehrere Arbeitspläne für das gleiche Produkt haben. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie der Menge, die produziert werden muss ab. Die Definition eines Arbeitsplans in Supply Chain Management besteht aus vier verschiedenen Elemente, die zusammen den Produktionsprozess beschreiben:
 

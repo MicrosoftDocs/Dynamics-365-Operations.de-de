@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76dd6b21207b61dfb96e4d9538b5e6ffc1c6b02d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 834dc64ce531fb614bc7836e0def16f27ecf5e18
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835123"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188637"
 ---
 # <a name="set-up-and-process-recurring-invoices"></a>Einrichten und Verarbeiten von Serienrechnungen
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835123"
 
 In diesem Artikel wird beschrieben, wie Serienrechnungen eingerichtet und verarbeitet werden. Sie können Serienrechnungen verwenden, wenn Sie Debitoren regelmäßig für den gleichen Betrag eine Rechnung stellen müssen.
 
-<a name="create-a-recurring-free-text-invoice-template"></a>Erstellen einer Vorlage für Freitext-Serienrechnungen
----------------------------------------------
+## <a name="create-a-recurring-free-text-invoice-template"></a>Erstellen einer Vorlage für Freitext-Serienrechnungen
 
 Um Debitoren regelmäßig dieselben Dienstleistungen in Rechnung zu stellen, müssen Sie eine Freitext-Rechnungsvorlage definieren, die immer wieder zum Ausstellen der Rechnungen verwendet werden kann. Diese Vorlage enthält folgende Informationen:
 
@@ -52,13 +51,11 @@ Für einen Debitor können mehrere Vorlagen mit unterschiedlichen Zahlungshäufi
 ## <a name="generate-the-recurring-invoices"></a>Generieren der Serienrechnungen
 Auf der Seite **Serienrechnungen** gibt es eine Aufgabe zum Verarbeiten von Serienrechnungsvorlagen. Sie geben das Rechnungsdatum und die Vorlage zum Generieren der Rechnungen an. Die Rechnungen werden generiert, und jeder Gruppe von verarbeiteten Rechnungen wird eine individuelle Serienkennung zugewiesen.
 
-<a name="post-recurring-free-text-invoices"></a>Buchen von Freitext-Serienrechnungen
----------------------------------
+## <a name="post-recurring-free-text-invoices"></a>Buchen von Freitext-Serienrechnungen
 
 Nachdem Serienrechnungen generiert wurden, werden die Serienkennungen in einer Buchungsaufgabe auf der Seite **Serienrechnungen** angezeigt. Sie können alle Rechnungen für eine Serienkennung anzeigen, indem Sie auf den Link klicken. Beim Überprüfen der Rechnungen für eine Serienkennung können Sie einzelne Rechnungen löschen. Die Wiederholungseinstellungen für den Debitor werden für diese Vorlage zurückgesetzt und können später neu generiert werden. Sie können eine, mehrere oder alle Rechnungen für eine Serienkennung buchen. Wenn Workflows aktiviert sind, müssen Sie auf **Senden** klicken, bevor Sie die Rechnungen buchen können.
 
-<a name="print-recurring-free-text-invoices"></a>Drucken von Freitext-Serienrechnungen
-----------------------------------
+## <a name="print-recurring-free-text-invoices"></a>Drucken von Freitext-Serienrechnungen
 
 Nach dem Buchen von Serienrechnungen können Sie die Rechnungen auf der Seite mit der Liste mit Freitextrechnungen drucken. Sie können die ausgewählten Rechnungen drucken oder einen Bereich von Rechnungen auswählen und drucken.
 

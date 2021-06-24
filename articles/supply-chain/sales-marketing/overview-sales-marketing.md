@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4735b51d13a6de9874c10ec82e1e6d9761ce9fcf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42934a88065da015334455b6c37f57591611360f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810869"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188124"
 ---
 # <a name="sales-and-marketing-overview"></a>Vertriebs- und Marketingübersicht
 
@@ -27,8 +27,7 @@ ms.locfileid: "5810869"
 
 Im Vertriebs- und Marketingmodul können verschiedene Arten von Daten im Verkaufsablauf abgerufen, gespeichert und verwendet werden. Zu diesen Daten zählen die ursprüngliche Vertriebsinitiative, künftige Weiterverfolgungsaktivitäten und zusätzliche Verkäufe.
 
-<a name="marketing"></a>Marketing
----------
+## <a name="marketing"></a>Marketing
 
 Marketingkampagnen und -aktivitäten dienen der Suche und dem Aufbau von Beziehungen mit potenziellen Kunden, sodass sich Erstkontakte zu Geschäftsbeziehungen entwickeln können. Im folgenden Ablaufdiagramm werden die Geschäftsprozesse für das Marketing dargestellt. [![Geschäftsprozess für Marketing](./media/marketing01.jpg)](./media/marketing01.jpg)
 

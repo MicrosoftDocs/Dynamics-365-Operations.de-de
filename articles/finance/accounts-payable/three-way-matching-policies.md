@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 87ab65469ec4a8154267b88fe45481b65ade5e7a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027793"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189177"
 ---
 # <a name="three-way-matching-policies"></a>Dreiseitige Abgleichsrichtlinien
 
@@ -28,8 +28,7 @@ ms.locfileid: "6027793"
 
 Dieser Artikel enthält Beispiele für den dreiseitigen Abgleich.
 
-<a name="example-three-way-matching-for-items"></a>Beispiel: Dreiseitiger Abgleich für Artikel
--------------------------------------
+## <a name="example-three-way-matching-for-items"></a>Beispiel: Dreiseitiger Abgleich für Artikel
 
 **Zusammenfassung:** Kurt ist Controller in der Unternehmenszentrale einer juristischen Person mit dem Namen Fabrikam. Kurt beschließt, dass alle Kreditorenrechnungen, die auf Bestellungen beruhen, mit Bestellpositionen abgeglichen werden sollen (zweiseitiger Abgleich). Beim Einkauf von Artikeln, die als Anlagen verwendet werden, müssen die Rechnungen sowohl mit den Bestellpositionen als auch mit den Produktzugangspositionen abgeglichen werden (dreiseitiger Abgleich).
 

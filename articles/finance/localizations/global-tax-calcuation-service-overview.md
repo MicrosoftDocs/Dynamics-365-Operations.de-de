@@ -2,7 +2,7 @@
 title: Steuerberechnung (Vorschau)
 description: In diesem Thema werden der Gesamtumfang und die Funktionen der Steuerberechnung erläutert.
 author: wangchen
-ms.date: 04/12/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b26472e195d9bdbba340a118c106de1a4dc79b34
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9daa6e001200d03a2639974fb6de618d77ddf09d
+ms.sourcegitcommit: cb282e8d2306ab71adf80a84346a6863d2d019e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021931"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184100"
 ---
 # <a name="tax-calculation-preview"></a>Steuerberechnung (Vorschau)
 
@@ -31,6 +31,9 @@ ms.locfileid: "6021931"
 Die Steuerberechnung ist ein hyperskalierbarer mandantenfähiger Dienst, mit dem die Global Tax Engine den Steuerermittlungs- und -berechnungsprozess automatisieren und vereinfachen kann. Das Steuermodul ist vollständig konfigurierbar. Zu den Elementen, die konfiguriert werden können, gehören unter anderem das steuerpflichtige Datenmodell, der Steuercode, die Steueranwendbarkeitsmatrix und die Steuerberechnungsformel. Das Steuermodul läuft auf der Microsoft Azure-Hauptserviceplattform und bietet moderne Technologie und exponenzielle Skalierbarkeit.
 
 Die Steuerberechnung ist in Dynamics 365 Finance und Dynamics 365 Supply Chain Management integriert. Schließlich wird er auch in Dynamics 365 Project Operations, Dynamics 365 Commerce und andere Anwendungen von Erstanbietern und Drittanbietern integriert.
+
+> [!IMPORTANT]
+> Wenn Sie den Steuerberechnungsdienst aktivieren, werden einige Vorgänge an verwandten Daten möglicherweise in einem anderen Rechenzentrum als dem Rechenzentrum ausgeführt, das Ihre Dienstdaten verwaltet. Überprüfen Sie die [Geschäftsbedingungen](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md), bevor Sie den Steuerberechnungsdienst aktivieren. Datenschutz ist uns sehr wichtig. Weiteres erfahren Sie in unserer [Datenschutzerklärung](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Die Steuerberechnung ist ein Microsoft-basiertes Steuermodul, das exponenzielle Skalierbarkeit bietet. Er kann bei der Ausführung folgender Aufgaben helfen:
 

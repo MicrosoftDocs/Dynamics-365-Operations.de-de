@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 61c745802edc419cb2ae94df6bc293f839cd8a0a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920108"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188846"
 ---
 # <a name="transportation-management-engines"></a>Transportverwaltungsmodule
 
@@ -43,8 +43,7 @@ Die folgende Tabelle zeigt die Transportverwaltungsmodule, die verfügbar sind.
 | **Frachtbrieftyp**            | Standardisiert die Frachtrechnungs- und Frachtbriefpositionen und wird für den automatischen Frachtbriefabgleich verwendet.                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Welche Module müssen konfiguriert werden, um eine Lieferung zu bewerten?
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Welche Module müssen konfiguriert werden, um eine Lieferung zu bewerten?
 
 Um eine Lieferung mithilfe eines bestimmten Spediteurs zu bewerten, müssen Sie mehrere Transportverwaltungsmodule konfigurieren. Das **Tarifmodul** ist erforderlich, möglicherweise jedoch auch andere Transportverwaltungsmodule, um das **Tarifmodul** zu unterstützen. So kann das **Tarifmodul** beispielsweise verwendet werden, um Daten aus dem **Kilometerleistungsmodul** abzurufen und den Satz anhand der Kilometerleistung zwischen den Start und Ziel zu berechnen.
 
@@ -62,8 +61,7 @@ In den meisten Fällen können Sie auf die Schaltfläche **Parameter** in den Ei
 |  <em>MileageEngineCode</em>  |                       Code des Kilometerleistungsmoduls, der den Datensatz des Kilometerleistungsmoduls in der Datenbank kennzeichnet.                        |
 | <em>Umlagenmodul</em> |                        Code des allgemeinen Moduls, der den Datensatz des Umlagenmoduls in der Datenbank kennzeichnet.                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>Wie werden Metadaten in den Transportverwaltungsmodulen verwendet?
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Wie werden Metadaten in den Transportverwaltungsmodulen verwendet?
 
 Transportverwaltungsmodule, die auf Daten beruhen, die in Supply Chain Management definiert sind, können verschiedene Datenschemas verwenden. Das Transportverwaltungssystem ermöglicht verschiedenen Transportverwaltungsmodulen die Verwendung der gleichen allgemeinen physischen Datenbanktabellen. Um sicherzustellen, dass die Laufzeitinterpretation der Moduldaten korrekt ist, können Sie Metadaten für die Datenbanktabellen definieren. Dies reduziert die Kosten für die Erstellung neuer Transportverwaltungsmodule, da in Operations keine zusätzlichen Tabellen und Formularstrukturen erforderlich sind.
 

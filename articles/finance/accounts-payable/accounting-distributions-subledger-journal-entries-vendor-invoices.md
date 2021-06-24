@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 953069dfd39843d39cc92d99318f02819dc31ed0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 513066a597620450f0b482e98e36d31c6f2c980a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820983"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189092"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Buchhaltungsverteilungen und Erfassungseinträge für Kreditorenrechnungen
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820983"
 
 Mithilfe von Buchhaltungsverteilungen wird definiert, wie ein Betrag kalkuliert wird, beispielsweise wie Ausgaben, Steuern oder Zuschläge auf einer Kreditorenrechnung kalkuliert werden. Jeder Betrag, der kalkuliert werden muss, wenn die Kreditorenrechnung journalisiert wird, enthält eine oder mehrere Buchhaltungsverteilungen. 
 
-<a name="accounting-distributions"></a>Buchhaltungsverteilungen 
--------------------------
+## <a name="accounting-distributions"></a>Buchhaltungsverteilungen 
 
 Sie können die folgenden Schaltflächen auf der Seite "Kreditorenrechnung" verwenden, um die Buchhaltungsverteilungen für jeden Betrag auf der Kreditorenrechnung anzuzeigen und eventuell zu ändern.
 -   **Beträge verteilen** - Dient zum Anzeigen und Ändern der Buchhaltungsverteilungen für eine einzelne Position und alle untergeordneten Positionen wie Steuern oder Zuschläge. Sie können auch die Buchhaltungsverteilungen für die untergeordnete Position direkt von der Seite "Mehrwertsteuerbuchungen" oder der Seite "Belastungsbuchungen" aus anzeigen und ändern.
@@ -227,8 +226,7 @@ Wenn Sie eine Kreditorenrechnung eingeben, wird jeder Betrag wie folgt verteilt.
 </table>
 
 
-<a name="distributing-taxes"></a>Verteilen von Steuern
-------------------
+## <a name="distributing-taxes"></a>Verteilen von Steuern
 
 Buchhaltungsverteilungen für Steuern können erst erstellt werden, nachdem Steuern berechnet wurden. Zum Berechnen der Mehrwertsteuer müssen Sie auf der Seite "Kreditorenrechnung" eine der folgenden Aufgaben ausführen:
 -   Zeigen Sie die Rechnungssumme an.

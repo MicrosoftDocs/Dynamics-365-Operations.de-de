@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d322d0a59c2d1fe7be98b97bf25c6db8dec2d6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e57e97847c6aa7a775b0f2639dff93f1e3a9e7a2
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815355"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189372"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Mehrwertsteuer-Berechnungsmethoden im Feld "Ursprung"
 
@@ -52,8 +52,7 @@ Wenn der Nettobetrag 10,00 beträgt, dann ist ABGABE 1 "1,00 (10,00 x 10 %)" und
 | Nur ein Steuercode mit Ursprung = "Prozentanteil des Bruttobetrags" kann für eine Buchung verwendet werden. Wenn mehr als ein Steuercode für eine Buchung bestimmt wird, wird ein Fehler angezeigt, dass keine Steuer berechnet werden kann. |
 
 
-<a name="percentage-of-sales-tax"></a>Mehrwertsteuer-Prozentsatz
------------------------
+## <a name="percentage-of-sales-tax"></a>Mehrwertsteuer-Prozentsatz
 
 Wenn Sie im Feld "Ursprung" die Berechnungsmethode "Mehrwertsteuer-Prozentsatz" auswählen, wird die Mehrwertsteuer als Prozentsatz der im Feld "Mehrwertsteuer auf Mehrwertsteuer" ausgewählten Mehrwertsteuer berechnet. Die im Feld "Mehrwertsteuer auf Mehrwertsteuer" ausgewählte Mehrwertsteuer wird zuerst berechnet. Die zweite Mehrwertsteuer wird anschließend auf Basis des ersten Mehrwertsteuerbetrags berechnet.
 ### <a name="example"></a>Beispiel
@@ -119,8 +118,7 @@ Dokument/Erfassung ist auf "Beträge einschließlich Mehrwertsteuer" festgelegt 
 
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Mehrwertsteuersteuersätze auf Grundlage der Felder Berechnungsgrundlage und Berechnungsmethode](marginal-base-field.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f729b1703a7703a8a604b007bd1c8d9e1f604a6
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 723e0fa52cd7a9377671795e039f5948ce9239f3
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897283"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187793"
 ---
 # <a name="view-financial-reports"></a>Finanzberichte anzeigen
 
@@ -28,8 +28,7 @@ ms.locfileid: "5897283"
 
 Dieses Thema beschreibt, wie Finanzberichte angezeigt und durchsucht werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
 
-<a name="financial-reporting-overview"></a>Überblick über die Finanzberichterstellung
-----------------------------
+## <a name="financial-reporting-overview"></a>Überblick über die Finanzberichterstellung
 
 ## <a name="open-a-financial-report"></a>Öffnen eines Finanzberichts
 Um einen Bericht zu öffnen, wählen Sie den Berichtsnamen aus. Wenn ein Bericht zum ersten Mal geöffnet wird, wird er automatisch für den vorherigen Monat generiert. Wenn Sie beispielsweise einen Bericht zum ersten Mal im August 2015 öffnen, wird der Bericht zum 31. Juli 2015 generiert. Nach dem Öffnen eines Berichts können Sie ihn durchsuchen, indem Sie Detailinformationen bestimmter Daten anzeigen und Berichtsoptionen ändern.
@@ -76,8 +75,7 @@ Nachdem Sie die Druckoptionen festgelegt haben, klicken Sie auf **Drucken**, um 
 ## <a name="export-a-financial-report"></a>Exportieren eines Finanzberichts
 Um einen Finanzbericht zu exportieren, klicken Sie im Aktivitätsbereich auf **Exportieren**. Der Bericht wird in Microsoft Excel exportiert, und Ihr Browser fordert Sie auf, die exportierte Datei zu öffnen oder zu speichern. Die im Berichtsentwurf definierten Exporteinstellungen werden auf den exportierten Bericht angewendet.    
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
 

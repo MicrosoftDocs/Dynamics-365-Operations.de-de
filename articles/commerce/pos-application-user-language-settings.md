@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0c5087ee04030a76aef774871b88b7970391723c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bdd03dff359e7c2799eff53b0e999580ce8b1c06
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804380"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193102"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Verkaufsstellen-(POS)-Anwendung und Benutzerspracheinstellungen
 
@@ -57,7 +57,7 @@ Die Einstellung des POS- Benutzers werden die Übersetzungen, die in der Bewerbu
 
 Die Spracheinstellung des POS-Benutzers wird unter **Alle Arbeitskräfte** auf der Seite **Arbeitskraft** unter **Einzelhandel und Commerce &gt;  Sprache** festgelegt. Sie wird nicht auf der Hauptregisterkarte „Profil“ festgelegt. Diese Einstellung wird nicht durch POS verwendet. Wenn die Sprache des Benutzers nicht festgelegt wird oder sie auf eine Sprache festgelegt wird, in der Übersetzungen nicht verfügbar sind, stellt das POS die Sprache des Shops wieder her.
 
-|             | Sprache der Benutzeroberfläche                  | Datensprache (Produkte, Bonlayouts, Zeilenanzeige usw.) |
+| &nbsp;      | Sprache der Benutzeroberfläche                  | Datensprache (Produkte, Bonlayouts, Zeilenanzeige usw.) |
 |-------------|----------------------------|---------------------------------------------------------------|
 | **Unternehmen** | Standard                    | Standard                                                       |
 | **Shop**   | Überschreibt Unternehmen          | Überschreibt Unternehmen                                             |

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 275a51620fad50f725dad7a37bd8ee776cf0ce4c
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 24743bd15f77769e2d4ca81981284995ce3a576e
+ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941139"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129776"
 ---
 # <a name="regulatory-updates"></a>Regulatorische Features
 
@@ -38,37 +38,52 @@ Updates zu rechtlichen Bestimmungen, die als Teil der monatlichen Updates freige
 Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgenden Tabelle.   
 
 |Land|Freigabedatum|Version freigeben|Regulatorisches Update|
-|--------------------|---------------|-------|-------|
-|      Österreich         |   2020. September      | 10.0.15      |   Das Format der Mehrwertsteuererklärung U30 wurde für die Erklärung 2020 aktualisiert   |
-|      Belgien         |   2020. Dezember      | 10.0.16      |   Belgien: Vorteilsverbesserung für den Bericht „Sachkontobuchungen exportieren“ in Dynamics 365 Finance   |   
-|      Brasilien         |   November 2020      | 10.0.15HF      |   SPED Fiscal ICMS/IPI – Datensatz C176 – RS-Status   |
-|      Brasilien         |   2020. Oktober      | 10.0.16, 10.0.15HF      |   NF-e NT2019.001 v1.51 – Annahme der Validierungsregeln für den Vorteilscode durch Distrito Federal   |
-|      Brasilien         |   Oktober 2020, November 2020      | 10.0.16, 10.0.15HF      |   SPED fiscal – Layout 015   |
-|      Brasilien         |   2020. Oktober      | 10.0.16      |   DRCST-Erklärung SC – SEF 262/2020   |
-|      Brasilien         |   2020. Oktober      | 10.0.16      |   SPED Fiscal ICMS/IPI-Datensatz C176   |
-|      Brasilien         |   2020. Dezember      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NF-e NT2020.006 – Identifizierung des Zwischenbenutzers der digitalen Plattform (Aktualisierung der Layout- und Validierungsregeln)   |
-|      Brasilien         |   2021. März         | 10.0.17, 10.0.18, 10.0.19         |    SPED REINF-Layout 1.5.1
-|      Europa        |   2021. Januar       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit – Auswirkungen des Nordirland-Protokolls auf die innergemeinschaftliche Handelsberichterstattung in EU-Ländern  |
-|      Deutschland        |   2021. Januar       | 10.0.16HF      |   Das Vorabbenachrichtigungsformat für die ELSTER UstVA-Mehrwertsteuer wurde um zwei neue Felder 37,50 für die Abschreibung von nicht eintreibbaren Schulden erweitert  |
+|--------------------|---------------|-------|-------| 
+|      Brasilien         |   May 2021, Dezember 2020      | 10.0.20, 10.0.19, 10.0.17      |   NF-e NT2020.006 – Identifizierung des Zwischenbenutzers der digitalen Plattform (Aktualisierung der Layout- und Validierungsregeln)   |
+|      Brasilien         |   2021. März         | 10.0.19         |    SPED REINF-Layout 1.5.1  |
+|      Brasilien         |   Februar 2021         | 10.0.18         |    SPED Fiscal 015 – RS-Regeln |
+|      Brasilien         |   2021. März         | 10.0.17 HF       |    NFS-e – elektronische Rechnung für brasilianischen Dienst (Stadt)  |
+|      Brasilien         |   April 2021         | 10.0.20        |    SPED ECD Layout 9  |
+|      Brasilien         |   Mai 2021         | 10.0.20         |    SPED-Beiträge – Versionsleitfaden 1.34  |
+|      Ägypten         |   Februar 2021         | 10.0.17         |    MwSt.-Rückgabeformular und Berichte  |
+|      Ägypten        |   Februar 2021         | 10.0.17         |    Konfiguration des Rechnungslayouts  |
+|      Ägypten         |   Februar 2021         | 10.0.17         |    Quellensteuererklärungsformular 41  |
+|      Ägypten         |   Februar 2021         | 10.0.17         |    Quellensteuererklärungsformular 11  |
+|      Ägypten         |   Februar 2021         | 10.0.17         |    Verweise auf Originalrechnungen in Gutschriften  |
+|      Europa        |   2021. Januar       | 10.0.17      |   Brexit – Auswirkungen des Nordirland-Protokolls auf die innergemeinschaftliche Handelsberichterstattung in EU-Ländern  |
+|      Frankreich        |   2021. März       | 10.0.18      |   Retail – Zertifiziertes POS-Systemupdate – Dynamics 365 Commerce  |
+|      Frankreich        |   April 2021       | 10.0.20      |   Verbesserung des französischen Datenarchivierungsexports (FEC)  |
 |      Deutschland        |   2021. Januar       | 10.0.17      |   Änderungen in der XML-Struktur für erweiterte ELSTER-Mehrwertsteuer-Benachrichtigung (UstVA)  |
-|      Global        |   2021. Januar       | 10.0.16      |   Den Mechanismus zur Verlagerung der Steuerschuld für MwSt./GST-Schema aktivieren  |
-|      Indien         |   2020. Dezember      | 10.0.16, HF, 10.0.15HF      |   Änderung bei TCS zum Verkauf von Waren gemäß Abschnitt 206 9(1H) basierend auf der CBDT-Pressemitteilung  |
+|      Deutschland        |   2021. März       | 10.0.19      |   GDPDU-Erweiterungen für Tabelle und Transaktionen des Anlagevermögens  |
+|      Deutschland        |   April 2021       | 10.0.20HF      |   Änderungen im Format elektronischer Rechnungen (xRechnung) in Deutschland seit 2021  |
+|      Global        |   2021. Januar       | 10.0.17      |   Quellensteuer auf Positionsebende  |
+|      Global        |   2021. Januar       | 10.0.17      |   Quellensteuerzahlung  |
+|      Global        |   2021. Januar       | 10.0.17      |   Quellensteuer bei Aufträgen  |
+|      Global        |   2021. Januar       | 10.0.17      |   Quellensteuergrenze auf Rechnungsbetrag  |
+|      Global        |   2021. Januar       | 10.0.17      |   Validierung der Ausstellung des Rechnungsdatums, nachdem der Lieferschein für alle Länder verfügbar gemacht wurde  |
+|      Ungarn        |   Februar 2021       | 10.0.17HF, 10.0.18      |   Online-Fakturierungssystem v.3.0  |
+|      Indien         |   Februar 2021      | 10.0.17HF, 10.0.18      |   GST-E-Rechnungen: Informationen zur eWay-Rechnung  |
+|      Indien         |   2021. März      | 10.0.17HF, 10.0.18HF, 10.0.19      |   GST-E-Rechnungen: Exportaufträge, Erachteter Export, SEZ  |
+|      Indien         |   2021. März      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Dynamics QR-Code auf B2C-Rechnung  |
+|      Italien         |   2021. März      | 10.0.19      |   Änderungen des Formats der Rechnungskommunikation (Esterometro) v.2.1.1  |
+|      Italien        |   Mai 2021      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Retail – Beispiel-Update für die steuerliche Druckerintegration zur Unterstützung von XML RT 2.0  |
+|      Italien         |   2021. März      | 10.0.19      |   Retail – Aktivieren Sie einzelhandelsspezifische Rechnungen, die gegen die chronologische Buchung verstoßen  |
+|      Italien         |   Februar 2021      | 10.0.19      |   Eindeutige Zertifizierung – 2021  |
 |      Lettland         |   2020. Dezember      | 10.0.17      |   Das Intrastat-Format wird ab 2021 aktualisiert  |
-|      Mexiko         |   2020. Dezember      | 10.0.17, 10.0.16, 10.0.15      |   Attribut „Monto“-Update |
-|      Niederlande         |   2020. Oktober      | 10.0.16     |   Das Intrastat-Format wird ab 2021 aktualisiert |
-|      Niederlande         |   2020. Dezember      | 10.0.167     |   Neue Version der niederländischen Taxonomie NT15 |
-|      Polen          |   2020. September     | 10.0.15     |   Verbesserungen der freiwilligen Teilzahlung |
-|      Polen          |   November 2020     | 10.0.16, 10.0.15     |   JPK-V7M (VDEK) – Verkaufsbelegart FP und RO für Einzelhandelstransaktionen |
-|      Polen          |   2020. September     | 10.0.15     |   Polen: JPK-V7M (VDEK) – freischalten der Möglichkeit, die Berichterstellung nach Teilen auszuführen |
-|      Polen          |   2020. Oktober     | 10.0.16     |   JPK-V7M (VDEK)-Bericht – „Freiwillige geteilte Zahlung“-Parameterimplementierung |
-|      Polen          |   November 2020     | 10.0.16, 10.0.15HF     |   Einzelhandel – Ausstellung einer Rechnung für Privatkunden auf Anfrage |
-|      Polen          |   2021. Januar     | 10.0.17, 10.0.16HF, 10.0.15HF     |   Polen: Klarstellungen zu JPK_KR (SAF-Buchhaltungsbücher), gültig ab Januar 2021 |
-|      Russische Föderation          |   November 2020     | 10.0.16    |   Das Format der Mehrwertsteuererklärung wird ab der Berichterstattung für das vierte Quartal 2020 auf Version 5.07 aktualisiert|
-|      Russische Föderation          |   2020. Oktober     | 10.0.16    |   Änderungen in PBU18 für die Rechnungslegung für 2020|
+|      Litauen         |   2021. März      | 10.0.18      |   SAF-T-Berichtsversion 2.01  |
+|      Mexiko         |   2020. Dezember      | 10.0.17      |   Attribut „Monto“-Update |
+|      Niederlande         |   2020. Dezember      | 10.0.17     |   Neue Version der niederländischen Taxonomie NT15 |
+|      Polen          |   2021. Januar     | 10.0.17     |   Polen: Klarstellungen zu JPK_KR (SAF-Buchhaltungsbücher), gültig ab Januar 2021 |
 |      Russische Föderation          |   2021. Januar     | 10.0.17    |   Ein neues Format der Grundsteuererklärung (technische Version 5.07 statt 5.06) für die Berichterstellung 2020|
+|      Russische Föderation          |   2021. März     | 10.0.19    |   In der Grundsteuererklärung 2020 muss der durchschnittliche Jahreswert des beweglichen Anlagevermögens angegeben werden|
+|      Russische Föderation          |   2021. März     | 10.0.19HF    |   Gewinnsteuererklärung Version 5.09 für die Berichterstattung 2020|
+|      Russische Föderation          |   2021. März     | 10.0.19    |   Regierungsverordnung N 2200 21.12.2020 Antrag 4 neues Formular für Transportrechnung erforderlich|
 |      Spanien          |   November 2020     | 10.0.17    |   Validierung und Fehler der SII-Aktualisierung v.2.1 (bis) ab dem 1. Januar 2021|
-|      Vereinigtes Königreich         |   2020. Dezember     | 10.0.17, 10.0.16, 10.0.15    |   Registrierung der Unternehmenssteuer in Kundenrechnungen (Brexit – Nordirland-Protokoll)|
-|      Vereinigtes Königreich          |   2020. Dezember     | 10.0.17, 10.0.16HF. 10.0.15HF    |   Brexit – Auswirkungen des Nordirland-Protokolls auf Unternehmen, die Waren an Standorten in GB und NI handeln|
+|      Thailand          |   Februar 2021     | 10.0.17HF    |   Einbehaltungsformular Por Ngor Dor 53, 3 und 2 |
+|      Vereinigte Arabische Emirate   |   Mai 2021     | 10.0.20    |   Buchen der Zahlungserfassung mit vordatierten Schecks auf das Bankkonto |
+|      Vereinigtes Königreich         |   2020. Dezember     | 10.0.17    |   Registrierung der Unternehmenssteuer in Kundenrechnungen (Brexit – Nordirland-Protokoll)|
+|      Vereinigtes Königreich          |   2020. Dezember     | 10.0.17    |   Brexit – Auswirkungen des Nordirland-Protokolls auf Unternehmen, die Waren an Standorten in GB und NI handeln|
+|      Vereinigtes Königreich          |   2021. März     | 10.0.18    |   MTD VAT> Wortlautänderungen im Layout des Vorschaudrucks (Boxen 2,8,9) 2021|
 
 
 

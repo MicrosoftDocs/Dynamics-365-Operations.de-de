@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6223cce4a960d3fa3db1f3a17b324201085ea04
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1e22089220edfff3fb53b2101b39f5352817db2a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822226"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188020"
 ---
 # <a name="budget-planning"></a>Budgetplanung
 
@@ -34,8 +34,7 @@ Das Ziel dieser Übungseinheit ist es, eine Übersicht über aktualisierte Funkt
 - Verwenden der Zuweisungen, um die Budgetplandokumentdaten anzupassen
 - Budgetplan-Dokumentdaten in Excel bearbeiten 
 
-<a name="prerequisites"></a>Voraussetzungen 
-------------------
+## <a name="prerequisites"></a>Voraussetzungen 
 
 Für dieses Lernprogramm müssen Sie auf die Microsoft Dynamics 365 Finance-Umgebung mit Contoso-Demodaten zugreifen und werden als Administrator auf der Instanz bereitgestellt. Verwenden Sie für diese Übungseinheit nicht den privaten Browsermodus - melden Sie sich falls erforderlich von einem anderen Konto ab und mit den Administrator-Anmeldeinformationen wieder an. Wenn Sie sich anmelden, **MÜSSEN** Sie das Kontrollkästchen „Angemeldet bleiben“ aktivieren. Dadurch wird ein persistentes Cookie erstellt, das die Excel-App derzeit benötigt. Wenn Sie sich bei der Anwendung nicht mithilfe eines IE-Browsers anmelden, werden Sie aufgefordert, sich mit der Excel-App anzumelden. Beim Sie auf "Anmelden" in der Excel-App klicken, wird im IE ein Popup- Fenster geöffnet und Sie **MÜSSEN** das Kontrollkästchen „Angemeldet bleiben“ aktivieren. Wenn Sie in der Excel-App auf "Anmelden" klicken, und nichts passiert, leeren Sie den Cookie-Zwischenspeicher des IE.
 

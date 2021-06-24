@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5e08832d39f0428590780d47fd6b686048889cd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1ce37a85477d65b9592a32dcbe430d09f9dde62b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835219"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189468"
 ---
 # <a name="set-up-collections"></a>Einrichten Inkassi
 
@@ -40,8 +40,7 @@ In diesem Artikel wird beschrieben, wie Inkassofunktionen eingerichtet werden. S
 
 Diese Punkte werden im weiteren Verlauf dieses Themas ausführlicher behandelt. 
 
-<a name="set-up-aging-period-definitions"></a>Zahlungsfristdefinitionen einrichten
--------------------------------
+## <a name="set-up-aging-period-definitions"></a>Zahlungsfristdefinitionen einrichten
 
 Eine Zahlungsfristdefinition einrichten. Eine Zahlungsfristdefinition legt die in den Listenseiten **Saldenrückblick**, **Inkassoaktivitäten** und **Inkassofälle** angezeigten Spalten fest. Sie definiert auch die Perioden, die auf der Seite **Inkassi** angezeigt werden. Beim Einrichten eines Debitorenpools wird die Zahlungsfristdefinition für den Pool verwendet. Werden keine Pools eingerichtet, wird die standardmäßige Zahlungsfristdefinition verwendet, die auf der Seite **Debitorenparameter** angegeben ist. Ist keine standardmäßige Zahlungsfristdefinition angegeben, wird die erste Zahlungsfristdefinition auf der Seite **Zahlungsfristdefinitionen** verwendet.
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcdd8097279027df2fa5cf22cc38cc8a5e2a13e3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f3d82089d2917a0ec0b9ceead7cd1ec22457733
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814583"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188148"
 ---
 # <a name="production-process-overview"></a>Produktionsprozessübersicht
 
@@ -74,8 +74,7 @@ Die folgenden Schritte im Produktionslebenszyklus können bei allen Auftragstype
 12. **Periodenabschluss** – Einige Kostenrechnungsprinzipien, wie regelmäßiger Durchschnitt, Nachkalkulation mit rückwärtiger Leerung, FIFO oder LIFO, erfordern, dass Periodenaktivitäten den Bestand oder die Finanzperiode abschließen. In der Regel versucht das System, den gesamten Material- und Ressourcenverbrauch zu melden sowie auch Korrekturen bei Bestand und Ausschuss, bevor die Periode abgeschlossen wird. Diese Berichterstellung erfolgt normalerweise mithilfe von Lagerumlagerungserfassungen oder Regulierungserfassungen. Die Zielsetzung besteht darin, die wirtschaftliche Leistung von Organisationseinheiten pro Periode zu bewerten. In einigen Fällen, wenn Produktionsaufträge mit langer Laufzeit verwendet werden, die sich über die Finanzberichterstellungsperioden erstrecken, werden Produktionserfassungen verwendet, um den Produktionsfortschritt und den Ressourcenverbrauch am Ende der Periode zu melden.
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Produktionsrückmeldung](production-feedback.md)
 

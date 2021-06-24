@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d916b6593b641ec1c8365475103b1520e07e3768
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 64e3624b387820bea3bfea9c2a4b2f48b0aa9822
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821936"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189020"
 ---
 # <a name="balance-sheet-financial-reports"></a>Bilanzfinanzberichte
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821936"
 
 In diesem Artikel werden die Standardberichte für Bilanzen beschrieben. Er beschreibt zudem die die Bausteine, die diesen Berichten zugeordnet werden. 
 
-<a name="default-balance-sheet-reports"></a>Standardbilanzberichte
------------------------------
+## <a name="default-balance-sheet-reports"></a>Standardbilanzberichte
 
 Es gibt zwei Standardbilanzberichte. Bei einem Bericht werden die Abschnitte gestapelt. Beim anderen Bericht sind die Abschnitte parallel.
 
@@ -68,8 +67,7 @@ Die Spaltendefinitionen enthalten verschieden Spaltentypen, um verschiedene Stuf
 
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung – Übersicht](financial-reporting-getting-started.md)
 

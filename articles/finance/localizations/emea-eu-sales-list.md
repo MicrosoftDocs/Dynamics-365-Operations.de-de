@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672bb37a4d191c4b4f72b234ba98766ffd223f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5d1df15462a39c17710c9300425561bba8b69fc7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826128"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188383"
 ---
 # <a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
 
@@ -27,8 +27,7 @@ ms.locfileid: "5826128"
 
 Dieser Artikel enthält Informationen über Verkaufslisten-Berichte der Europäischen Union (EU).
 
-<a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
------------------------
+## <a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
 
 Ein Lieferant, der innergemeinschaftliche Lieferungen von Waren oder Dienstleistungen an Unternehmen ausführt, die innerhalb der Europäischen Union (EU) gegründet wurden, muss eine Erklärung für innergemeinschaftliche Lieferungen (zusammenfassende Meldung oder ESL) einreichen. Im Allgemeinen muss die ESL an die Steuerbehörden spätestens bis zum letzten Tag des Monats nach dem Kalenderzeitraum, den die ESL umfasst, übermittelt werden. Der Lieferant muss seine Umsatzsteuer-Identifikationsnummer auf der ESL und nach Debitor auch die folgenden Informationen angeben:
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c59a4f098ac19223c5b2fb6808d18d8fea4f4290
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2673ecb09cd479eb10182a4345fe89d8f6b8d404
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815931"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188463"
 ---
 # <a name="letters-of-credit-and-import-collections"></a>Kreditbrief und Importinkasso
 
@@ -28,8 +28,7 @@ ms.locfileid: "5815931"
 
 Dieser Artikel enthält allgemeine Informationen über Kreditbrief und Importinkasso. Beide Arten von Bankdokumenten werden häufig für den Einkauf und Verkauf im internationalen Warenverkehr verwendet werden.
 
-<a name="letters-of-credit"></a>Kreditbriefe
------------------
+## <a name="letters-of-credit"></a>Kreditbriefe
 
 Mit Kreditbriefen wird bei internationalen Transaktionen sichergestellt, dass eine Zahlung geleistet wird. Ein Kreditbrief stellt eine Vereinbarung dar, die von einer Bank ausgegeben wird. Darin gewährleistet die Bank die Zahlung im Auftrag des Einkäufers, sofern die Vertragsbedingungen zwischen Einkäufer und Verkäufer erfüllt sind. Ein Kreditbrief wird auch als durch Dokumente belegter Kredit bezeichnet.
 

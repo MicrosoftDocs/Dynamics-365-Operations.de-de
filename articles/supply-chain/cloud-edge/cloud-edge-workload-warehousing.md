@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980948"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184021"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -289,14 +289,15 @@ Die folgende Tabelle zeigt, welche Funktionen für Lagerort-Operationen und Exce
 | Arbeitspool für Arbeit ändern                           | Ja | Ja                          |
 | Arbeit stornieren                                        | Ja | Ja                          |
 
-
 ### <a name="production"></a>Produktion
 
-Produktionsszenarien der Lagerortverwaltung werden derzeit für Arbeitsauslastungen auf Skalierungseinheiten nicht unterstützt, wie in der folgenden Tabelle angegeben.
+Die folgende Tabelle fasst zusammen, welche Produktionsszenarien der Lagerortverwaltung derzeit für Arbeitsauslastungen auf Skalierungseinheiten (nicht) unterstützt werden.
 
 | Bearbeiten | Hub | WES-Arbeitsauslastung in einer Scale-Unit |
 |---------|-----|------------------------------|
-| <p>Alle Lagerortverwaltungsprozesse, die mit der Produktion zusammenhängen. Im Folgenden finden Sie einige Beispiele hierfür:</p><li>Für Lagerort freigeben</li><li>Verarbeitung von Produktionswellen</li><li>Rohmaterialentnahme</li><li>Fertigmeldung und Einlagerung von Fertigerzeugnissen</li><li>Einlagerung von Co- und Nebenprodukten</li><li>Kanban-Einlagerung</li><li>Kanban-Entnahme</li><li>Produktionsauftrag starten</li><li>Produktionsausschuss</li><li>Letzte Palette der Produktion</li><li>Materialverbrauch registrieren</li><li>Kanban leeren</li></ul> | Ja | Nr. |
+| Fertig melden und Fertigerzeugnisse einlagern | Ja | Ja |
+| Einlagerung von Co- und Nebenprodukten | Ja | Ja |
+| <p>Alle anderen Lagerortverwaltungsprozesse, die mit der Produktion zusammenhängen, einschließlich:</p><li>An Lagerort freigeben</li><li>Verarbeitung von Produktionswellen</li><li>Rohmaterialentnahme</li><li>Kanban-Einlagerung</li><li>Kanban-Entnahme</li><li>Produktionsauftrag starten</li><li>Produktionsausschuss</li><li>Letzte Palette der Produktion</li><li>Materialverbrauch registrieren</li><li>Kanban leeren</li></ul> | Ja | Nr. |
 
 ## <a name="maintaining-scale-units-for-wes"></a>Pflege von Scale-Units für WES
 

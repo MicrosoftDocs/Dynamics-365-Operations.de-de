@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5654084232c2988ed844862b977945c04dbb0833
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: 982d835c6c0d9bf6e19aa0ec1b03bce9aa7d2e5d
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935882"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193749"
 ---
 # <a name="financial-analysis"></a>Finanzanalyse
 
@@ -87,7 +87,7 @@ Obwohl **Finanzanalyse** Finanzaufstellungen enthält, ist es kein Ersatz für d
 Das folgende Vergleichsdiagramm hilft, die zwei Optionen zu unterscheiden:
 
 
-|                                                          | Financial Reporting                                               | Finanzanalyse |
+| Funktion                                                   | Financial Reporting                                               | Finanzanalyse |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
 | **Standardberichte bearbeiten**                                 | Ja                                                               | Nr. |
 | **Neue Berichte erstellen**                                   | Ja                                                               | Nr. |
