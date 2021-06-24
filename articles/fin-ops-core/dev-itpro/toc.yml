@@ -12,11 +12,11 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Neuerungen oder Änderungen in Plattformupdates
               items:
-                - name: Neuerungen oder Änderungen in Plattformupdates – Startseite
+                - name: Neuerungen oder Änderungen auf der Startseite von Plattformupdates
                   href: get-started/whats-new-home-page.md
-                - name: Plattformupdates für Version 10.0.20 (Juli 2021)
+                - name: Plattformupdates für Version 10.0.20 (August 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
-                - name: Plattformupdates zu 10.0.19 (Juni 2021)
+                - name: Plattformupdates für 10.0.19 (Juni 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Plattformupdates für 10.0.18 (Mai 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
@@ -848,14 +848,12 @@
                       href: extensibility/compatibility-checker-tool.md
             - name: Leistung
               items:
-                - name: Abläufe mithilfe des Ablaufverfolgungs-Parsers verfolgen
+                - name: Abläufe mithilfe des Ablaufverfolgungsparsers verfolgen
                   href: perf-test/trace-trace-tutorial.md
-                - name: "Einzelbenutzertests mit Aufgabenaufzeichnung und Performance\_SDK"
+                - name: "Einzelbenutzertests mit Performance\_SDK und Aufgabenaufzeichnung"
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: "Performance\_SDK-Mehrfachbenutzertests mit einem lokalen Testcontroller"
-                  href: perf-test/multi-user-testing-local-test-controller.md
-                - name: Mehrfachbenutzertests mit Performance SDK und Azure DevOps
-                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+                - name: Mehrbenutzertests mit Performance SDK
+                  href: perf-test/perfsdk-multi-user-testing.md
                 - name: Anleitung zur Problembehandlung beim Testen mit Performance SDK
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: "Performance\_SDK und Mehrbenutzertests in lokalen Umgebungen"
@@ -1534,15 +1532,17 @@
               items:
                 - name: Übersicht über die Batchverarbeitung
                   href: sysadmin/batch-processing-overview.md
-                - name: Batchverarbeitung und Batchverarbeitungsserver
+                - name: Batchverarbeitung und Batchserver
                   href: sysadmin/batch-server-overview.md
-                - name: Stapelverarbeitungsaufträge erstellen
+                - name: Batchaufträge erstellen
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Kopieren von Stapelverarbeitungsaufträgen
+                - name: Automatische erneute Versuche bei Batchaufträgen aktivieren
+                  href: sysadmin/retryable-batch.md
+                - name: Batchauftrag kopieren
                   href: sysadmin/copy-batch-job.md
-                - name: Aktive Stapelverarbeitungsperioden
+                - name: Aktive Batchzeiträume
                   href: sysadmin/activeperiod.md
-                - name: Unterstützung der Sommerzeit bei aktiven Batchverarbeitungsperioden
+                - name: Unterstützung der Sommerzeit bei aktiven Batchzeiträumen
                   href: sysadmin/batch-active-period-dst.md
                 - name: Sicherheitsrolle Chargenmanager
                   href: sysadmin/runby.md
@@ -1586,17 +1586,15 @@
                   href: migration-upgrade/analysis-sandbox.md
                 - name: AX 2012 Upgrade – Datenaktualisierung in Entwicklungsumgebungen
                   href: migration-upgrade/data-upgrade-2012.md
-                - name: AX 2012 Upgrade – Prüfliste vor dem Upgrade für die Datenaktualisierung
+                - name: AX 2012 Upgrade – Prüfliste vor dem Upgrade bei der Datenaktualisierung
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: "AX 2012 Upgrade\_– Datenupgrade in Sandbox-Umgebungen mithilfe des Dacpac-Prozesses"
-                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: "Upgrade von AX\_2012\_– SQL-Transaktionsreplikation"
                   href: database/replication-setup.md
-                - name: "AX 2012 Upgrade\_– Datenaktualisierung in Sandbox-Umgebungen"
-                  href: migration-upgrade/upgrade-data-sandbox.md
+                - name: "Upgrade von AX 2012\_– Datenaktualisierung in Self-Service-Umgebungen"
+                  href: migration-upgrade/data-upgrade-self-service.md
                 - name: AX 2012 Upgrade – lokale Umgebungen
                   href: migration-upgrade/on-prem-upgrade-2012.md
-                - name: AX 2012 Upgrade – Cut-Over-Tests
+                - name: AX 2012 Upgrade – Übernahmetests
                   href: migration-upgrade/upgrade-cutover-testing.md
                 - name: AX 2012 Upgrade – Aufgaben nach dem Upgrade
                   href: migration-upgrade/app-validation-process.md

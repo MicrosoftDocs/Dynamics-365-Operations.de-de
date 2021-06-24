@@ -70,19 +70,17 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
                 - name: Neuerungen oder Änderungen in Finance
                   items:
-                    - name: Neuerungen oder Änderungen in Finance – Startseite
+                    - name: Neuerungen oder Änderungen auf der Startseite von Finance
                       href: get-started/whats-new-home-page.md
-                    - name: "Finance\_10.0.20 (Juli\_2021)"
+                    - name: "Finance 10.0.20 (August\_2021)"
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: "Finance\_10.0.19 (Juli\_2021)"
+                    - name: "Finance\_10.0.19 (Juni\_2021)"
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: "Finance\_10.0.18 (Mai\_2021)"
-                      href: get-started/whats-new-changed-10-0-18.md
-                    - name: "Finance\_10.0.17 (April 2021)"
                       href: get-started/whats-new-changed-10-0-17.md
             - name: Entfernte oder veraltete Funktionen
               items:
-                - name: "Entfernte oder veraltete Funktionen\_– Startseite"
+                - name: Entfernte oder veraltete Funktionen auf der Startseite
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Entfernte oder veraltete Funktionen in Dynamics 365 Finance
                   href: get-started/removed-deprecated-features-finance.md
@@ -1216,7 +1214,9 @@
               href: finance-insights/finance-insights-home-page.md
             - name: Konfiguration und Administration
               items:
-                - name: Finanzeinblicke konfigurieren
+                - name: Finance Insights für die öffentliche Vorschauversion konfigurieren
+                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
+                - name: Finance Insights konfigurieren
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Vorhersagen für Kundenzahlungen aktivieren
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1464,6 +1464,8 @@
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: EB-Konfigurationen in Regulatory Configuration Service erstellen und in das globale Repository hochladen
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: "Regulatory Configuration Service\_– Einstellung des Speichers von Lifecycle Services"
+                      href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronische Rechnungsstellung
                   items:
                     - name: Übersicht über die elektronische Rechnungsstellung
@@ -1476,6 +1478,8 @@
                       href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
                     - name: Azure-Speicherkonto und Key Vault erstellen
                       href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
+                    - name: Dashboard zur Nutzungsverwaltung
+                      href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
                     - name: Erste Schritte
                       items:
                         - name: Erste Schritte mit der Dienstverwaltung für elektronische Rechnungsstellung
@@ -2416,21 +2420,105 @@
                               href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
                             - name: Steuertransaktions-ID ist falsch
                               href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
+                            - name: Falsche Feldwerte im GSTR-Bericht
+                              href: localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md
+                            - name: Falscher Feldwert in einer Rechnungserfassung oder einem Beleg
+                              href: localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md
+                            - name: Falsches Sachkonto im Beleg
+                              href: localizations/apac-ind-GST-troubleshooting-ledger-account-voucher-wrong.md
+                            - name: Designer für die aktuelle Steuerkonfiguration öffnen
+                              href: localizations/apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md
+                            - name: Datensätze und Felder erscheinen nicht im GSTR-Bericht
+                              href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
+                            - name: Fehler in der Absetzungsregel bei Ausführung eines Steuerausgleichs
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
                 - name: Direkte Steuern
                   items:
                     - name: Quellensteuer Indien
                       items:
-                        - name: GST bei der Berechnung von Steuerabzügen berücksichtigen
-                          href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
-                        - name: Berücksichtigung des GST bei der Berechnung von Steuererhebungen
-                          href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
                         - name: Häufig gestellte Fragen zu Steuerschwellenwerten
                           href: localizations/apac-ind-tax-thresholds.md
-                        - name: TCS beim Verkauf von Waren
-                          href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                        - name: Indien TCS
+                          items:
+                            - name: TCS beim Verkauf von Waren
+                              href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                            - name: Berücksichtigung von GST bei der Berechnung von Steuererhebungen
+                              href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+                        - name: Indien TDS
+                          items:
+                            - name: Übersicht über die Quellenbesteuerung in Indien (TDS)
+                              href: localizations/apac-ind-TDS-India-TDS-overview.md
+                            - name: GST bei der Berechnung von Steuerabzügen berücksichtigen
+                              href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                            - name: Grundeinstellungen für TDS
+                              items:
+                                - name: TDS-Parameter festlegen
+                                  href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                                - name: TDS-Sachkonten einrichten
+                                  href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                                - name: TDS-Registrierungsnummern für juristische Personen einrichten
+                                  href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: Quellensteuerbehörden für TDS-Steuertyp einrichten
+                                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                                - name: Steuerkomponenten für TDS-Steuertyp einrichten
+                                  href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                                - name: Quellensteuercodes für TDS-Steuertyp einrichten
+                                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                                - name: Quellensteuer-Ausgleichsperioden für TDS-Steuertyp einrichten
+                                  href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                                - name: Quellensteuer-Berichtscodes für TDS-Steuertyp einrichten
+                                  href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                                - name: Quellensteuercodes für TDS-Steuertyp einrichten
+                                  href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
+                                - name: TDS-Steuercodes an TDS-Steuergruppen anfügen und Formel zur TDS-Berechnung definieren
+                                  href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                                - name: TDS-Konzessionszertifikatnummer aufzeichnen
+                                  href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                                - name: TDS-Parameter in der Kreditorenbuchhaltung und Debitorenbuchhaltung festlegen
+                                  href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                                - name: Zahlungspläne mit TDS-Zuordnung einrichten
+                                  href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                                - name: Zahlungsgebühren für TDS-Behördenzahlungen einrichten
+                                  href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                                - name: 'TDS-Gruppen-, PAN- und TAN-Informationen für Kreditoren und Debitoren einrichten'
+                                  href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                                - name: Formeldesigner und Schwellenwert für die TDS-Berechnung
+                                  items: null
+                                - name: Formeldesigner für TDS-Berechnungen
+                                  href: localizations/apac-ind-TDS-Formula-designer.md
+                                - name: Schwellenwert und Ausnahmeschwellenwert
+                                  href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
+                            - name: TDS-Berechnung auf Rechnungen
+                              items:
+                                - name: TDS-Berechnung auf Rechnungen
+                                  href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                                - name: TDS auf Rechnungen mithilfe von Erfassungen berechnen
+                                  href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                                - name: TDS-Rechnungen mithilfe des Bestellformulars und des Kundenauftragsformulars berechnen
+                                  href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                                - name: TDS-Berechnung auf Rechnungen über die Seite „Freitextrechnung“
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                                - name: Funktionen zum Teilen von Rechnungen
+                                  href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+                            - name: TDS-Berechnung für Zahlungen und Solawechsel
+                              href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                            - name: TDS-Berechnung für Intercompany-Buchungen
+                              href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                            - name: TDS-Ausgleichsprozess
+                              items:
+                                - name: TDS-Berechnung für Zahlungen und Solawechsel
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                                - name: TDS-Berechnung für Intercompany-Buchungen
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                                - name: Regelmäßigen TDS-Ausgleichsprozess durchführen
+                                  href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                                - name: TDS-Zahlungen an TDS-Behördenkreditoren ausgleichen und TDS-Challan generieren
+                                  href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                                - name: Gebuchte TDS-Zahlungen und -Buchungen zu einem TDS-Abrechnungszeitraum anzeigen
+                                  href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
                 - name: Anlagen
                   items:
-                    - name: Indien-Anlagen – Übersicht
+                    - name: Übersicht über Anlagen in Indien
                       href: localizations/apac-ind-fixed-assets.md
                     - name: Tagesbasierten Kalender an ein Anlagenbuch anhängen
                       href: localizations/tasks/apac-ind-attach-day-based-calendar.md
@@ -2450,88 +2538,16 @@
                       href: localizations/tasks/apac-ind-day-based-calendar.md
                     - name: Parameter zur Berechnung von Abschreibungen einrichten
                       href: localizations/tasks/apac-ind-set-up-depreciation.md
-                    - name: Einrichten einer Anlagengruppenabschreibung für Abschreibungsbücher
+                    - name: Anlagengruppenabschreibung für Abschreibungsbücher einrichten
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Übertragung von Kapitalelementen in Anlagen
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: Indien TDS
-                  items:
-                    - name: Quellenbesteuerung in Indien (TDS) – Übersicht
-                      href: localizations/apac-ind-TDS-India-TDS-overview.md
-                    - name: Grundeinstellungen für TDS
+                    - name: TDS-Zertifikatsnummern und -daten aufzeichnen und aktualisieren
                       items:
-                        - name: TDS-Parameter festlegen
-                          href: localizations/apac-ind-TDS-TDS-parameter-activation.md
-                        - name: TDS-Sachkonten einrichten
-                          href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
-                        - name: TDS-Registrierungsnummern für juristische Personen einrichten
-                          href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
-                        - name: Quellensteuerbehörden für TDS-Steuertyp einrichten
-                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-                        - name: Steuerkomponenten für TDS-Steuertyp einrichten
-                          href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
-                        - name: Quellensteuercodes für TDS-Steuertyp einrichten
-                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-                        - name: Quellensteuer-Ausgleichsperioden für TDS-Steuertyp einrichten
-                          href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
-                        - name: Quellensteuer-Berichtscodes für TDS-Steuertyp einrichten
-                          href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
-                        - name: Quellensteuercodes für TDS-Steuertyp einrichten
-                          href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
-                        - name: TDS-Steuercodes an TDS-Steuergruppen anfügen und Formel zur TDS-Berechnung definieren
-                          href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
-                        - name: TDS-Konzessionszertifikatnummer aufzeichnen
-                          href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
-                        - name: TDS-Parameter in der Kreditorenbuchhaltung und Debitorenbuchhaltung festlegen
-                          href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
-                        - name: Zahlungspläne mit TDS-Zuordnung einrichten
-                          href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
-                        - name: Zahlungsgebühren für TDS-Behördenzahlungen einrichten
-                          href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
-                        - name: 'TDS-Gruppen-, PAN- und TAN-Informationen für Kreditoren und Debitoren einrichten'
-                          href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
-                    - name: Formeldesigner und Schwellenwert für die TDS-Berechnung
-                      items:
-                        - name: Formeldesigner für TDS-Berechnungen
-                          href: localizations/apac-ind-TDS-Formula-designer.md
-                        - name: Schwellenwert und Ausnahmeschwellenwert
-                          href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
-                    - name: TDS-Berechnung auf Rechnungen
-                      items:
-                        - name: TDS-Berechnung auf Rechnungen
-                          href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
-                        - name: TDS auf Rechnungen mithilfe von Erfassungen berechnen
-                          href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
-                        - name: TDS-Rechnungen mithilfe des Bestellformulars und des Kundenauftragsformulars berechnen
-                          href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
-                        - name: TDS-Berechnung auf Rechnungen über die Seite „Freitextrechnung“
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
-                        - name: Funktionen zum Teilen von Rechnungen
-                          href: localizations/apac-ind-TDS-Split-invoice-functionality.md
-                    - name: TDS-Berechnung für Zahlungen und Solawechsel
-                      href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-                    - name: TDS-Berechnung für Intercompany-Buchungen
-                      href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-                    - name: TDS-Ausgleichsprozess
-                      items:
-                        - name: TDS-Berechnung für Zahlungen und Solawechsel
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-                        - name: TDS-Berechnung für Intercompany-Buchungen
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-                        - name: TDS-Ausgleichsprozess
-                          items:
-                            - name: Periodischen TDS-Ausgleichsprozesses ausführen
-                              href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
-                            - name: TDS-Zahlungen an TDS-Behördenkreditoren ausgleichen und TDS-Challan generieren
-                              href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
-                            - name: Gebuchte TDS-Zahlungen und -Buchungen für einen TDS-Abrechnungszeitraum anzeigen
-                              href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
-                        - name: TDS-Zertifikatsnummern und -daten aufzeichnen und aktualisieren
-                          items:
-                            - name: TDS-Wiederherstellungszertifikatnummer aufzeichnen
-                              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
-                            - name: Zertifikatsnummern und -daten für TDS-Buchungen aktualisieren
-                              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+                        - name: TDS-Wiederherstellungszertifikatnummer aufzeichnen
+                          href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+                        - name: Zertifikatsnummern und -daten für TDS-Buchungen aktualisieren
+                          href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
             - name: Italien
               items:
                 - name: Italien – Übersicht
@@ -4157,23 +4173,27 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
                     - name: 'Nachverfolgung der erstellten ER-Berichtsergebnisse verbessern, um sie mit Ausgangswerten zu vergleichen'
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
-                    - name: Testen mit ER automatisieren
+                    - name: Tests mit EB automatisieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
-                - name: Geschäftsprozesse mit elektronischen Berichtskonfigurationen automatisieren
+                - name: Geschäftsprozesse mit EB-Konfigurationen automatisieren
                   items:
-                    - name: 'ER konfigurieren, um Daten in Power BI einzubeziehen'
+                    - name: 'EB konfigurieren, um Daten in Power BI einzubeziehen'
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
-                    - name: Druckbarer Freitextrechnungs-Formulare (FTI) generieren
+                    - name: Druckbare Formulare für Freitextrechnungen (FTI) erstellen
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-                - name: Ausführung von ER-Formaten zur Behebung von Leistungsproblemen überwachen
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
-                - name: 'Geschäftsdokumentverwaltung (BDM, Business Document Management)'
+                - name: Effiziente EB-Lösungen entwerfen
                   items:
-                    - name: "BDM\_– Übersicht"
+                    - name: Ausführung von EB-Formaten zur Behebung von Leistungsproblemen überwachen
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                    - name: Leistungsprobleme bei EB-Konfigurationen beheben
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
+                - name: Geschäftsdokumentverwaltung
+                  items:
+                    - name: Übersicht über die Geschäftsdokumentverwaltung
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
-                    - name: Neue Dokumentbenutzeroberfläche in BDM
+                    - name: Neue Dokumentbenutzeroberfläche in der Geschäftsdokumentverwaltung
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/finance/toc.json
-                    - name: Geschäftsdokumentvorlagen in BDM bearbeiten
+                    - name: Geschäftsdokumentvorlagen in der Geschäftsdokumentverwaltung bearbeiten
                       items:
                         - name: Einer Geschäftsdokumentvorlage in Microsoft Excel neue Felder hinzufügen
                           href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
