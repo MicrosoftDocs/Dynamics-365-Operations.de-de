@@ -92,9 +92,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Neuerungen oder Änderungen in Commerce
                   items:
-                    - name: Neuerungen oder Änderungen in Commerce – Startseite
+                    - name: Neuerungen oder Änderungen auf der Startseite von Commerce
                       href: get-started/whats-new-home-page.md
-                    - name: "Commerce\_10.0.20 (Juli\_2021)"
+                    - name: "Commerce 10.0.20 (August\_2021)"
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: "Commerce\_10.0.19 (Juni\_2021)"
                       href: get-started/whats-new-commerce-10-0-19.md
@@ -244,7 +244,7 @@
                   href: arch-auth-flow.md
                 - name: Versionsanforderungen für Dynamics 365 Commerce-Komponenten
                   href: arch-component-versioning.md
-                - name: Commerce Scale Unit-Architektur
+                - name: Monitorlose Commerce-Modularchitektur
                   href: dev-itpro/retail-server-architecture.md
                 - name: Shoptopologie auswählen
                   href: dev-itpro/retail-in-store-topology.md
@@ -258,9 +258,9 @@
                       href: dev-itpro/CDX-Troubleshooting.md
                 - name: Modern POS-Architektur
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Veröffentlichungsarchitektur für Onlineshop
+                - name: Onlineshopkanal veröffentlichen
                   href: dev-itpro/retail-online-store-publishing-architecture.md
-                - name: Retail Channel Performance Power BI-Inhalt
+                - name: Inhalt von Retail Channel Performance Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Payment Application Data Security Standards (PA-DSS)-Zertifizierung
                   href: dev-itpro/PA-DSS-Certification.md
@@ -546,11 +546,13 @@
                       href: paypal.md
                     - name: Wallet-Zahlungsunterstützung
                       href: wallets.md
-                    - name: FAQ zu Zahlungen
+                    - name: Erweiterte Zahlungen beim Bezahlen im Shop
+                      href: dev-itpro/enhanced-sca.md
+                    - name: Häufig gestellte Fragen zu Zahlungen
                       href: dev-itpro/payments-retail.md
                 - name: E-Mails und Benachrichtigungen
                   items:
-                    - name: Beleg-E-Mails für die Verwendung benutzerdefinierter Layouts und Vorlagen konfigurieren
+                    - name: Beleg-E-Mails zur Verwendung benutzerdefinierter Layouts und Vorlagen konfigurieren
                       href: configure-emailed-receipt-formats.md
                     - name: Transaktions- und Beleg-E-Mails einen QR-Code oder Barcode hinzufügen
                       href: add-qr-code-barcode-email.md
@@ -770,13 +772,17 @@
                   href: notifications-pos.md
                 - name: Anschlussprogramme verkaufen und Aufträge verarbeiten
                   href: tasks/use-continuity-program.md
-                - name: Benachrichtigungen zu Kunden-Check-Ins an der Verkaufsstelle (POS)
+                - name: Benachrichtigungen zu Kunden-Check-In im POS aktivieren
                   href: enable-customer-check-in.md
-            - name: Retouren
+            - name: Rückgaben und Rückerstattungen
               items:
+                - name: Rückgaben im POS erstellen
+                  href: POS-returns.md
+                - name: Produkte mit Seriennummer am POS zurückgeben
+                  href: POS-serial-returns.md
                 - name: Verknüpfte Rückerstattungen
                   href: dev-itpro/linked-refunds.md
-                - name: 'Verkauf und Rückgabe von Produkten, die nicht Teil eines Shopsortiments sind'
+                - name: 'Produkte verkaufen und zurückgeben, die nicht Teil eines Shopsortiments sind'
                   href: sell-return-outside-assortments.md
                 - name: Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
                   href: orderexchanges.md
@@ -1230,6 +1236,8 @@
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
                 - name: EB-Konfigurationen in Regulatory Configuration Service erstellen und in das globale Repository hochladen
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service – Einstellung des Speichers von Lifecycle Services
+                  href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
             - name: Österreich
               items:
                 - name: Beispiel für Integration des Steuererfassungsdienstes in Österreich
@@ -1238,6 +1246,8 @@
               items:
                 - name: Lokalisierung von Commerce für Brasilien
                   href: localizations/latam-bra-commerce-localization.md
+                - name: Lokalisierung von Commerce für Brasilien einrichten und bereitstellen
+                  href: localizations/latam-bra-deployment.md
             - name: Osteuropa
               items:
                 - name: Allgemein
@@ -1958,19 +1968,23 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
                 - name: Geschäftsprozesse mit elektronischen Berichtskonfigurationen automatisieren
                   items:
-                    - name: 'ER konfigurieren, um Daten in Power BI einzubeziehen'
+                    - name: 'EB konfigurieren, um Daten in Power BI einzubeziehen'
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
-                    - name: Druckbarer Freitextrechnungs-Formulare (FTI) generieren
+                    - name: Druckbare Formulare für Freitextrechnungen (FTI) erstellen
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: Ausführung von ER-Formaten zur Behebung von Leistungsproblemen überwachen
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Geschäftsdokumentverwaltung (BDM, Business Document Management)'
+                - name: Effiziente EB-Lösungen entwerfen
                   items:
-                    - name: "BDM\_– Übersicht"
+                    - name: Ausführung von EB-Formaten zur Behebung von Leistungsproblemen nachverfolgen
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                    - name: Leistungsprobleme bei EB-Konfigurationen lösen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
+                - name: Geschäftsdokumentverwaltung
+                  items:
+                    - name: Übersicht über die Geschäftsdokumentverwaltung
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
-                    - name: Neue Dokumentbenutzeroberfläche in BDM
+                    - name: Neue Dokumentbenutzeroberfläche in der Geschäftsdokumentverwaltung
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/commerce/toc.json
-                    - name: Geschäftsdokumentvorlagen in BDM bearbeiten
+                    - name: Geschäftsdokumentvorlagen in der Geschäftsdokumentverwaltung bearbeiten
                       items:
                         - name: Einer Geschäftsdokumentvorlage in Microsoft Excel neue Felder hinzufügen
                           href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/commerce/toc.json
@@ -2390,7 +2404,7 @@
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
                 - name: Beispiele und Pakete von GitHub und NuGet herunterladen
                   href: dev-itpro/retail-sdk/sdk-github.md
-                - name: FAQ zu Retail SDK
+                - name: Häufig gestellte Fragen zu Retail SDK
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Erweiterbarkeit von Verkaufsstellen
               items:

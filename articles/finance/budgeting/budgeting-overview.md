@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4aa89f27925b88be947f27303957cd53089b8290
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: a2597dda47e3441d2c41497081849a2213974e55
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5960015"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187915"
 ---
 # <a name="budgeting-home-page"></a>Startseite der Budgetierung
 
@@ -28,8 +28,7 @@ ms.locfileid: "5960015"
 
 Dieses Thema enthält eine Übersicht über die Budgetierungsfunktionskomponenten, die Budgetierungstools und die Berichtsfunktionen. 
 
-<a name="components-of-budgeting-functionality"></a>Budgetfunktionskomponenten
--------------------------------------
+## <a name="components-of-budgeting-functionality"></a>Budgetfunktionskomponenten
 
 Der Ressourcenplanungszyklus für ein Unternehmen besteht normalerweise aus folgenden Aktivitäten: Planung, Budgetierung und Prognose.
 
