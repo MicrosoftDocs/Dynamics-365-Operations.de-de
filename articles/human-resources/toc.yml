@@ -3,8 +3,10 @@
   items:
     - name: Neuerungen
       items:
-        - name: Neuerungen oder Änderungen in Human Resources
+        - name: Welche Neuerungen oder Änderungen bietet Human Resources?
           href: hr-admin-whats-new.md
+        - name: "22.\_Juni\_2021"
+          href: hr-whats-new-2021-06-22.md
         - name: "20.\_Mai\_2021"
           href: hr-whats-new-2021-05-20.md
         - name: "3.\_Mai\_2021"

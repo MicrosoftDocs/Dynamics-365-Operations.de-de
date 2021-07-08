@@ -78,11 +78,9 @@
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: "Supply Chain Management\_10.0.18 (Mai 2021)"
                       href: get-started/whats-new-scm-10-0-18.md
-                    - name: "Supply Chain Management\_10.0.17 (April\_2021)"
-                      href: get-started/whats-new-scm-10-0-17.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
-                    - name: "Entfernte oder veraltete Funktionen\_– Startseite"
+                    - name: Entfernte oder veraltete Funktionen auf der Startseite
                       href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
                       href: get-started/removed-deprecated-features-scm-updates.md
@@ -222,7 +220,7 @@
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
                     - name: EB-Konfigurationen in Regulatory Configuration Service erstellen und in das globale Repository hochladen
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Regulatory Configuration Service – Einstellung des Speichers von Lifecycle Services
+                    - name: "Regulatory Configuration Service\_– Einstellung des Speichers von Lifecycle Services"
                       href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elektronische Rechnungsstellung
                   items:
@@ -236,7 +234,7 @@
                       href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Azure-Speicherkonto und Key Vault erstellen
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Dashboard zur Verbrauchsverwaltung
+                    - name: Dashboard zur Nutzungsverwaltung
                       href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Erste Schritte
                       items:
@@ -603,6 +601,20 @@
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Kostensteuerungsarbeitsbereich für die mobile Finance and Operations-Anwendung verwenden
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Globale Bestandsbuchhaltung
+          items:
+            - name: Startseite für die globale Bestandsbuchhaltung
+              href: global-inventory-accounting/global-inventory-accounting-home.md
+            - name: Erste Schritte mit der globalen Bestandsbuchhaltung
+              href: global-inventory-accounting/get-started-with-gia.md
+            - name: Von der globalen Bestandsbuchhaltung unterstützte Geschäftsdokumente
+              href: global-inventory-accounting/business-documents-supported.md
+            - name: Power BI für globale Bestandsbuchhaltung aktivieren
+              href: global-inventory-accounting/enable-power-bi-for-gia.md
+            - name: Konventionen
+              href: global-inventory-accounting/conventions.md
+            - name: Globale Bestandsbuchhaltung – Sachkonto
+              href: global-inventory-accounting/global-inventory-accounting-ledger.md
         - name: Kostenverwaltung
           items:
             - name: Kostenverwaltung – Startseite
@@ -873,6 +885,12 @@
               items:
                 - name: Formelsprache
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Unterstützte Datentypen für ER-Formeln
+                  items:
+                    - name: Primitive Datentypen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Zusammengesetzte Datentypen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Funktionen
                   items:
                     - name: Container
@@ -1389,9 +1407,9 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Effiziente EB-Lösungen entwerfen
                   items:
-                    - name: Ausführung von EB-Formaten zur Behebung von Leistungsproblemen nachverfolgen
+                    - name: Ausführung von EB-Formaten zur Behebung von Leistungsproblemen überwachen
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Leistungsprobleme bei EB-Konfigurationen lösen
+                    - name: Leistungsprobleme bei EB-Konfigurationen beheben
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Geschäftsdokumentverwaltung
                   items:
@@ -1417,12 +1435,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: "Anwendungsupdate\_10.0.17"
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: "Anwendungsupdate\_10.0.19"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Benutzerdefinierten Speicherort für generierte Dokumente angeben
                   items:
                     - name: 'Ein Ereignis abonnieren, um eine Antwort vom abonnierenden Handler anzufordern'
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Erstellung eines ER-Ziels an ein benutzerdefiniertes Empfängerwerk delegieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Benutzerdefiniertes Ziel für generierte Dokumente implementieren
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Datenquellenwerte vom Typ USER INPUT PARAMETER aus dem Quellcode initiieren
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
         - name: Lagerverwaltung
@@ -1593,6 +1615,8 @@
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Sicherheitszuschläge
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Verzögerungstoleranz (negative Tage)
+                  href: master-planning/planning-optimization/delay-tolerance.md
                 - name: Bestellanforderungen
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Produktionsplanung
@@ -1603,9 +1627,11 @@
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Produkte mit bestimmtem Produktlebenszyklusstatus ausschließen
                   href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: Wiederbeschaffungsmethoden und Mengenänderung
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Planungszeiträume
                   href: master-planning/planning-optimization/coverage-time-fence.md
-                - name: Bestellvorschläge genehmigen
+                - name: Auftragsvorschläge genehmigen
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Fest geplante Aufträge
                   href: master-planning/planning-optimization/planned-order-firming.md
@@ -3047,6 +3073,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Artikel für einen für grundlegendes Warehousing aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
                   href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Eingehende ASNs über die V2-Datenentität importieren
+                  href: warehousing/import-asn-v2-data-entity.md
                 - name: Produkte vom empfangenden Lagerort Filialen zuordnen
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Lagerplatzrichtlinie für Einlagerung von Bestellungen festlegen
@@ -3065,11 +3093,11 @@
                   href: warehousing/troubleshoot-warehouse-inbound.md
             - name: Ausgehende Lagerortvorgänge
               items:
-                - name: Reservierungen in der Lagerortverwaltung
+                - name: Reservierungen in Warehouse Management
                   items:
                     - name: Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
                       href: warehousing/flexible-warehouse-level-dimension-reservation.md
-                    - name: Problembehandlung bei Reservierungen in der Lagerortverwaltung
+                    - name: Problembehandlung bei Reservierungen in Warehouse Management
                       href: warehousing/troubleshoot-warehouse-reservations.md
                     - name: Fehlerbehebung bei Chargen- und Serienreservierungshierarchien für Lagerorte
                       href: warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md
@@ -3147,7 +3175,7 @@
                       href: warehousing/confirm-and-transfer.md
                     - name: Ausgehende Lieferungen aus Batchaufträgen bestätigen
                       href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
-                    - name: Erweiterte Ladungserstellung während einer Welle
+                    - name: Erweiterte Ladungserstellung während eines Zyklus
                       href: warehousing/advanced-load-building-during-wave.md
                     - name: Regel für Freigabe an Lager
                       href: warehousing/release-to-warehouse-rule.md
@@ -3171,9 +3199,9 @@
                       href: warehousing/consolidate-shipments-manual-workbench.md
                     - name: "Szenario\_5: Lieferungen manuell auf der Seite zur Lieferungskonsolidierung konsolidieren"
                       href: warehousing/consolidate-shipments-manual-form.md
-                - name: Wellenerstellung und -verarbeitung
+                - name: Zykluserstellung und -verarbeitung
                   href: warehousing/wave-processing.md
-                - name: Serienetiketten neu drucken und Wellenbeschriftungen stornieren
+                - name: Serienetiketten neu drucken und Zyklusbeschriftungen stornieren
                   href: warehousing/reprint-and-void-wave-labels.md
                 - name: Problembehandlung bei ausgehenden Lagerortvorgängen
                   href: warehousing/troubleshoot-warehouse-outbound.md
@@ -3215,7 +3243,9 @@
                       href: warehousing/partial-location-cycle-counting.md
                     - name: Partiellen Lagerplatz-Zykluszählungsprozess definieren
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
-                    - name: Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
+                    - name: Beispiele für Zykluszählungsszenarien
+                      href: warehousing/cycle-counting-scenarios.md
+                    - name: Einzelvorgang zur Eingangsbereinigung in der Lagerortverwaltung
                       href: warehousing/onhand-cleanup.md
                     - name: Lagererfassungen
                       href: inventory/inventory-journals.md
@@ -3241,6 +3271,52 @@
                       href: warehousing/mhax.md
                     - name: Problembehandlung für Lagerortarbeit
                       href: warehousing/troubleshoot-warehouse-work.md
+            - name: Die Lagerort-App
+              items:
+                - name: 'Mobilgeräte installieren, einrichten und verwenden'
+                  items:
+                    - name: Neuerungen oder Änderungen in der mobilen Warehouse Management-App
+                      href: warehousing/whats-new-wma.md
+                    - name: Mobile Warehouse Management-App installieren und verbinden
+                      href: warehousing/install-configure-warehouse-management-app.md
+                    - name: Lagerort-App installieren und verbinden
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Barcodes mit einer Kamera in die mobile Warehouse Management-App scannen
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Problembehandlung bei Verbindungsproblemen der mobilen Warehouse Management-App
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
+                - name: Felder und Menüs für Mobilgeräte einrichten
+                  items:
+                    - name: Felder für die mobile Warehouse Management-App konfigurieren
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Mobile Geräte für Lagerarbeiten einrichten
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Kennzeicheneingang über die mobile Warehouse Management-App
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: Auf einem mobilen Gerät eine Menüoption zur Fertigstellung von Arbeiten in einer Bestellung einrichten
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: Auf einem mobilen Gerät eine Menüoption zur Erfassung eingegangener Artikel einrichten
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Auf einem mobilen Gerät eine Menüoption zur Bereitstellung einer Übersicht über Kommissionierpositionen einrichten
+                      href: warehousing/pick-line-overview.md
+                    - name: Auf einem mobilen Gerät eine Menüoption zur Konsolidierung von Ladungsträgern erstellen
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: Gemischter Ladungsträger – Empfang auf einem mobilen Gerät
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: Konfigurieren der Anzeige von älteren Chargen am Lagerort auf einem mobilen Gerät
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: Entnahme der ältesten Charge mit einem mobilen Gerät
+                      href: warehousing/pick-oldest-batch.md
+                - name: Benutzereinstellungen für mobile Geräte
+                  href: warehousing/mobile-device-user-settings.md
+                - name: Verarbeitung von Ereignissen der Lagerort-App
+                  href: warehousing/warehouse-app-events.md
+                - name: Die Lagerort-App anpassen
+                  items:
+                    - name: Framework zur Prozessanleitung
+                      href: warehousing/process-guide-framework.md
+                    - name: Schrittsymbole und Titel zuweisen
+                      href: warehousing/step-icons-titles.md
             - name: Lagerorteinrichtung
               items:
                 - name: Lagerkonfiguration
@@ -3257,28 +3333,32 @@
                       href: warehousing/filters-and-filter-codes.md
                     - name: Lagerplatzbeschränkungen
                       href: warehousing/location-stocking-limits.md
-                    - name: Wellengenerierung und -verarbeitung
+                    - name: Zyklusgenerierung und -verarbeitung
                       items:
-                        - name: Wellenverarbeitung konfigurieren – Beispiel
+                        - name: Zyklusverarbeitung konfigurieren – Beispiel
                           href: warehousing/tasks/configure-wave-processing.md
-                        - name: Lagerparameter für Wellenverarbeitung
+                        - name: Lagerparameter für Zyklusverarbeitung
                           href: warehousing/wave-warehouse-parameters.md
-                        - name: Wellenvorlagen
+                        - name: Zyklusvorlagen
                           href: warehousing/wave-templates.md
-                        - name: Wellenschrittcodes
+                        - name: Zyklusschrittcodes
                           href: warehousing/wave-step-codes.md
-                        - name: Wellenvorlagengruppierung
+                        - name: Zyklusvorlagengruppierung
                           href: warehousing/wave-template-grouping.md
-                        - name: Wellenzuteilung
+                        - name: Zykluszuteilung
                           href: warehousing/wave-allocation-method.md
-                        - name: Arbeitserstellung während Welle planen
+                        - name: Arbeitserstellung während Zyklus planen
                           href: warehousing/configure-wave-schedule-work-creation.md
                         - name: Zyklusausführungsbenachrichtigungen
                           href: warehousing/wave-execution-notifications.md
-                        - name: Wellenbeschriftungsdruck
+                        - name: Zyklusbeschriftungsdruck
                           href: warehousing/configure-wave-label-printing.md
+                        - name: Zyklusbeschriftungsdruck während des Zyklus planen
+                          href: warehousing/configure-task-based-wave-label-printing.md
                         - name: Containerisierung
                           href: warehousing/wave-containerization.md
+                        - name: Verpackungsstrategien für Container
+                          href: warehousing/container-packing-strategy-overview.md
                     - name: Lieferungen automatisch aktualisieren
                       href: warehousing/auto-update-shipment.md
                     - name: Lagerplatzprofil erstellen
@@ -3309,44 +3389,6 @@
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Problembehandlung bei der Lagerortkonfiguration
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: Mobile Warehouse Management-App installieren und konfigurieren
-                  items:
-                    - name: Mobile Warehouse Management-App installieren und verbinden
-                      href: warehousing/install-configure-warehouse-management-app.md
-                    - name: Benutzereinstellungen für mobile Geräte
-                      href: warehousing/mobile-device-user-settings.md
-                    - name: Lagerort-App installieren und verbinden
-                      href: warehousing/install-configure-warehousing-app.md
-                    - name: Barcodes mit einer Kamera in die mobile Warehouse Management-App scannen
-                      href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Felder für die mobile Warehouse Management-App konfigurieren
-                      href: warehousing/configure-app-field-names-priorities-warehouse.md
-                    - name: Mobile Geräte für Lagerarbeiten einrichten
-                      href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Schrittsymbole und Titel zuweisen
-                      href: warehousing/step-icons-titles.md
-                    - name: Verarbeitung von Ereignissen der Lagerort-App
-                      href: warehousing/warehouse-app-events.md
-                    - name: Kennzeicheneingang über die mobile Warehouse Management-App
-                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                    - name: Auf einem mobilen Gerät eine Menüoption zur Fertigstellung von Arbeiten in einer Bestellung einrichten
-                      href: warehousing/tasks/set-up-mobile-device-menu.md
-                    - name: Auf einem mobilen Gerät eine Menüoption zur Erfassung eingegangener Artikel einrichten
-                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                    - name: Auf einem mobilen Gerät eine Menüoption zur Bereitstellung einer Übersicht über Kommissionierpositionen einrichten
-                      href: warehousing/pick-line-overview.md
-                    - name: Auf einem mobilen Gerät eine Menüoption zur Konsolidierung von Ladungsträgern erstellen
-                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                    - name: Gemischter Ladungsträger – Empfang auf einem mobilen Gerät
-                      href: warehousing/mixed-license-plate-receiving.md
-                    - name: Konfigurieren der Anzeige von älteren Chargen am Lagerort auf einem mobilen Gerät
-                      href: warehousing/display-older-batches-within-warehouses.md
-                    - name: Entnahme der ältesten Charge mit einem mobilen Gerät
-                      href: warehousing/pick-oldest-batch.md
-                    - name: Framework zur Prozessanleitung
-                      href: warehousing/process-guide-framework.md
-                    - name: Problembehandlung bei Verbindungsproblemen der mobilen Warehouse Management-App
-                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Upgrade und Migration
                   items:
                     - name: Lagerortverwaltungsprozesse von Microsoft Dynamics AX 2012 auf Finance and Operations aktualisieren
@@ -3393,7 +3435,23 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Produktprogrammplanung
               items:
-                - name: Direkt abgeleitete feste Bestellungen werden von einem Überprüfungs-Workflow verarbeitet
+                - name: 'Sie erhalten eine Fehlermeldung, wenn Sie das integrierte Produktprogrammplanungsmodul ausführen.'
+                  href: troubleshooting/planning/deprecated-master-planning-error.md
+                - name: Artikel darf keine Stückliste oder Formel haben
+                  href: troubleshooting/planning/item-cannot-have-bom-formula.md
+                - name: Parameter für Produktprogrammplan sind nicht vorhanden.
+                  href: troubleshooting/planning/no-parameters-for-master-plan.md
+                - name: 'Der geplante Produktionsauftrag muss geplant werden, bevor er umgewandelt werden kann.'
+                  href: troubleshooting/planning/planned-order-must-be-scheduled.md
+                - name: Produkt ist für Buchungen gesperrt.
+                  href: troubleshooting/planning/product-is-on-hold.md
+                - name: Die ausgewählte Formelnummer ist nicht für einen Chargenauftrag genehmigt.
+                  href: troubleshooting/planning/selected-formula-not-approved.md
+                - name: Der Kreditorencode ist für ein bestimmtes Produkt und Datum nicht autorisiert.
+                  href: troubleshooting/planning/vendor-code-not-authorized.md
+                - name: Kreditor wurde beim Fixieren von Planaufträgen nicht angegeben.
+                  href: troubleshooting/planning/vendor-not-specified.md
+                - name: Direkt abgeleitete feste Bestellungen werden von einem Überprüfungs-Workflow verarbeitet.
                   href: troubleshooting/planning/firmed-directly-deri.md
                 - name: Sie können Artikel der Produktprogrammplanung nicht nach den zugehörigen Werten der Dispositionssteuerungsgruppen filtern
                   href: troubleshooting/planning/master-planning-batc.md
@@ -3451,7 +3509,21 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerortverwaltung
               items:
-                - name: Bei der Auswahl des Standorts während der Kommissionierlistenregistrierung tritt ein Fehler auf
+                - name: Der Transaktionsstatus wird für stornierte Produkteingänge nicht auf „Registriert“ aktualisiert.
+                  href: troubleshooting/warehousing/canceled-product-receipts.md
+                - name: Dezimalrundung der physikalischen Fortschreibungsgröße ist falsch.
+                  href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
+                - name: Physische Restmenge in der Einheit darf nicht null sein.
+                  href: troubleshooting/warehousing/physical-remaining-q.md
+                - name: Kommissionierte Menge bei Lieferscheinerstellung ist nicht ausreichend.
+                  href: troubleshooting/warehousing/picked-quantity-is-n.md
+                - name: Die Menge überschreitet den Prozentsatz der Überlieferung während der Lieferscheinerstellung.
+                  href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
+                - name: 'Die Menge, die Sie aktualisieren möchten, überschreitet die erhaltene/gelieferte Menge.'
+                  href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
+                - name: Die Menge unterschreitet den Prozentsatz der Überlieferung während der Lieferscheinerstellung.
+                  href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
+                - name: Bei der Auswahl des Standorts während der Kommissionierlistenregistrierung tritt ein Fehler auf.
                   href: troubleshooting/warehousing/error-cannot-update.md
                 - name: In der Packstation werden keine Produkthinweise angezeigt
                   href: troubleshooting/warehousing/packing-station-not-.md
