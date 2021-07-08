@@ -100,11 +100,9 @@
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: "Commerce\_10.0.18 (Mai\_2021)"
                       href: get-started/whats-new-commerce-10-0-18.md
-                    - name: "Commerce\_10.0.17 (April\_2021)"
-                      href: get-started/whats-new-commerce-10-0-17.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
-                    - name: "Entfernte oder veraltete Funktionen\_– Startseite"
+                    - name: Entfernte oder veraltete Funktionen auf der Startseite
                       href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
                     - name: Entfernte oder veraltete Funktionen in Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
@@ -244,7 +242,7 @@
                   href: arch-auth-flow.md
                 - name: Versionsanforderungen für Dynamics 365 Commerce-Komponenten
                   href: arch-component-versioning.md
-                - name: Monitorlose Commerce-Modularchitektur
+                - name: Monitorlose Commerce-Architektur
                   href: dev-itpro/retail-server-architecture.md
                 - name: Shoptopologie auswählen
                   href: dev-itpro/retail-in-store-topology.md
@@ -710,7 +708,7 @@
                       href: pos-serialized-items.md
                     - name: Produkte vom Verteilzentrum zu Stores mithilfe von Käuferübertragung übertragen
                       href: tasks/push-products-distribution-center-store-buyers-push.md
-                    - name: Auffüllungsregeln für Crossdocking und Käuferübertragung einrichten
+                    - name: Wiederbeschaffungsregeln für Crossdocking und Käuferübertragung einrichten
                       href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
                     - name: Eingehender Bestandsvorgang in POS
                       href: pos-inbound-inventory-operation.md
@@ -1248,6 +1246,16 @@
                   href: localizations/latam-bra-commerce-localization.md
                 - name: Lokalisierung von Commerce für Brasilien einrichten und bereitstellen
                   href: localizations/latam-bra-deployment.md
+                - name: NFC-e-Steuerdokumentfunktion in Commerce POS für Brasilien
+                  href: localizations/latam-bra-nfce.md
+                - name: Kundeninformationen in POS für Brasilien verwalten
+                  href: localizations/latam-bra-customer-information.md
+                - name: Stornierung und Rückgabe von NFC-e-Dokumenten in Commerce POS für Brasilien
+                  href: localizations/latam-bra-nfce-cancel-return.md
+                - name: 'Verschobene Registrierung von NFC-e-Dokumenten, die im Offlinenotfallmodus ausgestellt wurden'
+                  href: localizations/latam-bra-nfce-contingency-mode.md
+                - name: Brasilianische Steuerdokumente über Einzelhandelsauszüge in der Commerce-Zentralverwaltung veröffentlichen
+                  href: localizations/latam-bra-retail-statements.md
             - name: Osteuropa
               items:
                 - name: Allgemein
@@ -1458,6 +1466,12 @@
               items:
                 - name: Formelsprache
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
+                - name: Unterstützte Datentypen für ER-Formeln
+                  items:
+                    - name: Primitive Datentypen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/commerce/toc.json
+                    - name: Zusammengesetzte Datentypen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/commerce/toc.json
                 - name: Funktionen
                   items:
                     - name: Container
@@ -1974,9 +1988,9 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
                 - name: Effiziente EB-Lösungen entwerfen
                   items:
-                    - name: Ausführung von EB-Formaten zur Behebung von Leistungsproblemen nachverfolgen
+                    - name: Ausführung von EB-Formaten zur Behebung von Leistungsproblemen überwachen
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
-                    - name: Leistungsprobleme bei EB-Konfigurationen lösen
+                    - name: Leistungsprobleme bei EB-Konfigurationen beheben
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
                 - name: Geschäftsdokumentverwaltung
                   items:
@@ -2002,12 +2016,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/commerce/toc.json
                     - name: "Anwendungsupdate\_10.0.17"
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
+                    - name: "Anwendungsupdate\_10.0.19"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
                 - name: Benutzerdefinierten Speicherort für generierte Dokumente angeben
                   items:
                     - name: 'Ein Ereignis abonnieren, um eine Antwort vom abonnierenden Handler anzufordern'
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
                     - name: Erstellung eines ER-Ziels an ein benutzerdefiniertes Empfängerwerk delegieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
+                - name: Benutzerdefiniertes Ziel für generierte Dokumente implementieren
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
                 - name: Datenquellenwerte vom Typ USER INPUT PARAMETER aus dem Quellcode initiieren
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
         - name: Mobile Finance and Operations-App (Dynamics 365)
@@ -2500,7 +2518,7 @@
                           items:
                             - name: „Knockout.js“ in POS-Erweiterungen verwenden
                               href: dev-itpro/pos-extension/knockout-pos-extension.md
-                            - name: Benutzerdefinierte Headless-Commerce-APIs verarbeiten
+                            - name: Benutzerdefinierte monitorlose Commerce-APIs verarbeiten
                               href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: "Erweiterbarkeit von Hardware\_Station"
               items:

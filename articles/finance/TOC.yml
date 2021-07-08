@@ -1208,9 +1208,9 @@
               href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
             - name: Häufig gestellte Fragen zur Finanzberichterstellung
               href: general-ledger/financial-reporting-faq.md
-        - name: Finanzeinblicke
+        - name: Finance Insights
           items:
-            - name: Startseite von Finanzeinblicke
+            - name: Startseite von Finance Insights
               href: finance-insights/finance-insights-home-page.md
             - name: Konfiguration und Administration
               items:
@@ -1226,7 +1226,7 @@
                   href: finance-insights/enable-budget-proposal.md
                 - name: Datenintegratorprojekt erstellen
                   href: finance-insights/create-data-integrate-project.md
-            - name: Finanzeinblicke verwenden
+            - name: Finance Insights verwenden
               items:
                 - name: Budgetvorschläge
                   href: finance-insights/budget-proposals.md
@@ -1464,6 +1464,8 @@
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: EB-Konfigurationen in Regulatory Configuration Service erstellen und in das globale Repository hochladen
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Regulatory Configuration Service – Eine RCS-Umgebung löschen
+                      href: localizations/rcs-delete-environment.md
                     - name: "Regulatory Configuration Service\_– Einstellung des Speichers von Lifecycle Services"
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronische Rechnungsstellung
@@ -1524,11 +1526,15 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Zusammenfassende Meldung
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Berichterstellung für das Vereinigte Königreich
+                          items:
+                            - name: Vorbereitung der Integration mit MTD für MwSt.
+                              href: localizations/emea-gbr-mtd-vat-integration.md
             - name: Neues zu rechtlichen Bestimmungen
               href: localizations/regulatory-updates.md
             - name: Australien
               items:
-                - name: Australien – Übersicht
+                - name: Informationen zu Australien
                   href: localizations/australia.md
                 - name: 'Australischer Geschäftsvorgangsbericht (Business Activity Statement, BAS)'
                   href: localizations/apac-aus-business-activity-statement.md
@@ -1930,7 +1936,7 @@
                   href: localizations/emea-edit-invoice-id-sales-orders.md
                 - name: EU-Gelangensbestätigungen
                   href: localizations/emea-entry-certificates.md
-                - name: Zusammenfassende Meldung
+                - name: Berichterstellung für zusammenfassende Meldung
                   href: localizations/emea-eu-sales-list.md
                 - name: Wechselkursregulierungen
                   href: localizations/emea-exchange-rate-adjustments.md
@@ -2014,7 +2020,7 @@
                   href: accounts-receivable/sepa-direct-debit-overview.md
                 - name: Einrichten der Debitoren- und Kreditorenvergütung
                   href: localizations/emea-compensation-customer-vendor-transactions.md
-                - name: Zusammenfassende Meldung einrichten
+                - name: Berichterstellung für zusammenfassende Meldung einrichten
                   href: localizations/tasks/eur-00011-eu-sales-list-reporting.md
                 - name: Zahlungsbelegformats für Projektrechnungen einrichten
                   href: localizations/tasks/set-up-payment-slip-format-project-invoices.md
@@ -3176,6 +3182,8 @@
                       href: localizations/rus-rated-expenses-registers.md
                     - name: Verbindlichkeiten von Kreditorenkonten und Schuldenabschreibungen
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
+                    - name: Uneinbringliche Außenstandsrückstellungen für Debitoren
+                      href: localizations/rus-bad-debts.md
             - name: Saudi-Arabien
               items:
                 - name: Saudi-Arabien – Übersicht
@@ -3292,8 +3300,6 @@
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: Mehrwertsteuergruppen für die Verlagerung der Steuerschuld festlegen
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Digitale Steuer für MwSt.
-                  href: localizations/emea-gbr-mtd-vat-integration.md
                 - name: Statistiken zu Bericht über Zahlungsmethoden
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Vereinigte Staaten
@@ -3665,6 +3671,12 @@
               items:
                 - name: Formelsprache
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
+                - name: Unterstützte Datentypen für ER-Formeln
+                  items:
+                    - name: Primitive Datentypen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/finance/toc.json
+                    - name: Zusammengesetzte Datentypen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/finance/toc.json
                 - name: Funktionen
                   items:
                     - name: Container
@@ -3929,12 +3941,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
             - name: ER-Formate zum Generieren ausgehender Dokumente in unterschiedlichen Formaten erstellen
               items:
+                - name: Eine Konfiguration zum Generieren von Berichten im OpenXML-Format entwerfen
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurationen zur Generierung ausgehender Dokumente im Excel-Format entwerfen
                   items:
                     - name: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
-                    - name: Beispiel für die Erstellung von Berichten im OPENXML-Format
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Elektronische Berichterstellungsformate durch erneute Anwendung von Excel-Vorlagen ändern
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
                     - name: Excel-Berichten dynamisch Spalten als horizontal erweiterbare Bereiche hinzufügen
@@ -4211,12 +4223,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
                     - name: "Anwendungsupdate\_10.0.17"
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
+                    - name: "Anwendungsupdate\_10.0.19"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                 - name: Benutzerdefinierten Speicherort für generierte Dokumente angeben
                   items:
                     - name: 'Ein Ereignis abonnieren, um eine Antwort vom abonnierenden Handler anzufordern'
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
                     - name: Erstellung eines ER-Ziels an ein benutzerdefiniertes Empfängerwerk delegieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
+                    - name: Benutzerdefiniertes Ziel für generierte Dokumente implementieren
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
                 - name: Datenquellenwerte vom Typ USER INPUT PARAMETER aus dem Quellcode initiieren
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: Mobile App

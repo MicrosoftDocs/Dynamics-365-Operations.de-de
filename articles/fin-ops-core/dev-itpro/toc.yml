@@ -20,11 +20,9 @@
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Plattformupdates für 10.0.18 (Mai 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
-                - name: Plattformupdates für 10.0.17 (April 2021)
-                  href: get-started/whats-new-platform-updates-10-0-17.md
             - name: Entfernte oder veraltete Funktionen
               items:
-                - name: "Entfernte oder veraltete Funktionen\_– Startseite"
+                - name: Entfernte oder veraltete Funktionen auf der Startseite
                   href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: Entfernte oder veraltete Plattformfunktionen
                   href: get-started/removed-deprecated-features-platform-updates.md
@@ -278,6 +276,8 @@
               href: data-entities/finance-data-azure-data-lake.md
             - name: Entitätsspeicher als Data Lake zur Verfügung stellen
               href: data-entities/entity-store-data-lake.md
+            - name: Daten in Azure Data Lake ändern
+              href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Datenbankverschiebungen
           items:
             - name: Übersicht
