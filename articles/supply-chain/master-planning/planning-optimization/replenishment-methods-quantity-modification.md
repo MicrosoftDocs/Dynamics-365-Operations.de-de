@@ -1,0 +1,116 @@
+---
+title: Methoden der Wiederbeschaffung und Mengenänderung
+description: Dieses Thema enthält Informationen zu Wiederbeschaffungsmethoden in der Planungsoptimierung. Außerdem wird erklärt, wie die Mehrfachbestellmenge für ein Produkt das Ergebnis beeinflusst.
+author: crytt
+ms.date: 6/1/2021
+ms.topic: article
+ms.search.form: ReqGroup, ReqItemTable, InventItemOrderSetup
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.author: crytt
+ms.search.validFrom: 2021-06-01
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d5e0e671e624de2646a47647ef08d3567599b884
+ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261695"
+---
+# <a name="replenishment-methods-and-quantity-modification"></a><span data-ttu-id="706d7-104">Methoden der Wiederbeschaffung und Mengenänderung</span><span class="sxs-lookup"><span data-stu-id="706d7-104">Replenishment methods and quantity modification</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+<span data-ttu-id="706d7-105">Dieses Thema enthält Informationen zu Wiederbeschaffungsmethoden in der Planungsoptimierung.</span><span class="sxs-lookup"><span data-stu-id="706d7-105">This topic provides information about replenishment methods in Planning Optimization.</span></span> <span data-ttu-id="706d7-106">Außerdem wird erklärt, wie die Mehrfachbestellmenge für ein Produkt das Ergebnis beeinflusst.</span><span class="sxs-lookup"><span data-stu-id="706d7-106">It also explains how the multiple order quantity for a product affects the result.</span></span>
+
+<span data-ttu-id="706d7-107">Wiederbeschaffungsmethoden werden auch als Deckungsmethoden und Losgrößenmethoden bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="706d7-107">Replenishment methods are also known as coverage methods and lot-sizing methods.</span></span>
+
+## <a name="coverage-codes"></a><span data-ttu-id="706d7-108">Abdeckungscodes</span><span class="sxs-lookup"><span data-stu-id="706d7-108">Coverage codes</span></span>
+
+<span data-ttu-id="706d7-109">Die Planungsoptimierung kann für die Verwendung verschiedener Wiederbeschaffungsmethoden konfiguriert werden.</span><span class="sxs-lookup"><span data-stu-id="706d7-109">Planning Optimization can be configured to use different replenishment methods.</span></span> <span data-ttu-id="706d7-110">Die Wiederbeschaffungsmethoden sind die Techniken, die das System verwendet, um den Bedarf für ein Produkt zu berechnen.</span><span class="sxs-lookup"><span data-stu-id="706d7-110">The replenishment methods are the techniques that the system uses to calculate requirements for a product.</span></span> <span data-ttu-id="706d7-111">Wiederbeschaffungsmethoden werden durch Abdeckungscodes definiert, die Sie entweder auf der Abdeckungsgruppe oder auf dem Produkt festlegen können.</span><span class="sxs-lookup"><span data-stu-id="706d7-111">Replenishment methods are defined by coverage codes that you can set up on either the coverage group or the product.</span></span>
+
+<span data-ttu-id="706d7-112">Die folgenden Reichweitencodes können in der Planungsoptimierung verwendet werden:</span><span class="sxs-lookup"><span data-stu-id="706d7-112">The following coverage codes can be used in Planning Optimization:</span></span>
+
+- <span data-ttu-id="706d7-113">**Periode** – Die Wiederbeschaffungsmethode fasst den gesamten Bedarf für eine Periode in einem Auftrag für das Produkt zusammen.</span><span class="sxs-lookup"><span data-stu-id="706d7-113">**Period** – The replenishment method combines all the demand for a period into one order for the product.</span></span> <span data-ttu-id="706d7-114">Der Auftrag wird für den ersten Tag der Periode geplant, und seine Menge erfüllt den Nettobedarf während des festgelegten Zeitraums.</span><span class="sxs-lookup"><span data-stu-id="706d7-114">The order will be planned for the first day of the period, and its quantity will fulfill the net requirements during the established period.</span></span> <span data-ttu-id="706d7-115">Die Periode beginnt mit dem ersten Bedarf des Produkts und umfasst die festgelegte Zeitspanne.</span><span class="sxs-lookup"><span data-stu-id="706d7-115">The period starts with the first demand of the product and covers the defined length of time.</span></span> <span data-ttu-id="706d7-116">Die nächste Periode beginnt mit dem nächsten Bedarf des Produkts.</span><span class="sxs-lookup"><span data-stu-id="706d7-116">The next period will start with the next requirements of the product.</span></span> <span data-ttu-id="706d7-117">Der *Perioden*-Deckungscode wird häufig für nicht vorhersagbare Bestandsziehung, saisonabhängige Produkte oder Produkte mit hohen Kosten verwendet.</span><span class="sxs-lookup"><span data-stu-id="706d7-117">The *Period* coverage code is often used for non-predictable inventory draw, season-influenced products, or high-cost products.</span></span> <span data-ttu-id="706d7-118">Die folgende Abbildung zeigt ein Beispiel.</span><span class="sxs-lookup"><span data-stu-id="706d7-118">The following illustration shows an example.</span></span>
+
+    <span data-ttu-id="706d7-119">![Beispiel für die Verwendung des periodischen Abdeckungscodes](./media/coverage-code-period.png "Beispiel für die Verwendung des periodischen Abdeckungscodes")</span><span class="sxs-lookup"><span data-stu-id="706d7-119">![Example of Period coverage code use](./media/coverage-code-period.png "Example of Period coverage code use")</span></span>
+
+- <span data-ttu-id="706d7-120">**Bedarf** – Bei der Wiederbeschaffungsmethode erstellt das System eine geplante Einkaufs-, Transport- oder Produktionsbestellung pro Bedarf für das Produkt.</span><span class="sxs-lookup"><span data-stu-id="706d7-120">**Requirement** – In the replenishment method, the system creates a planned purchase, transfer, or production order per requirement for the product.</span></span> <span data-ttu-id="706d7-121">Diese Methode wird für teure Produkte verwendet, die einen intermittierenden Bedarf haben.</span><span class="sxs-lookup"><span data-stu-id="706d7-121">This method is used for expensive products that have intermittent demand.</span></span> <span data-ttu-id="706d7-122">Der *Bedarfsdeckungscode* wird häufig für konfigurierbare Produkte oder Make-to-Order-Szenarien verwendet.</span><span class="sxs-lookup"><span data-stu-id="706d7-122">The *Requirement* coverage code is often used for configurable products or make-to-order scenarios.</span></span> <span data-ttu-id="706d7-123">Die folgende Abbildung zeigt ein Beispiel.</span><span class="sxs-lookup"><span data-stu-id="706d7-123">The following illustration shows an example.</span></span>
+
+    <span data-ttu-id="706d7-124">![Beispiel für die Verwendung des Anforderungsabdeckungscodes](./media/coverage-code-requirement.png "Beispiel für die Verwendung des Anforderungsabdeckungscodes")</span><span class="sxs-lookup"><span data-stu-id="706d7-124">![Example of Requirement coverage code use](./media/coverage-code-requirement.png "Example of Requirement coverage code use")</span></span>
+
+- <span data-ttu-id="706d7-125">**Min./Max.**</span><span class="sxs-lookup"><span data-stu-id="706d7-125">**Min./Max.**</span></span> <span data-ttu-id="706d7-126">- Die Methode der Wiederbeschaffung basiert auf dem Bestand.</span><span class="sxs-lookup"><span data-stu-id="706d7-126">– The replenishment method is based on the inventory level.</span></span> <span data-ttu-id="706d7-127">Sie definiert die Wiederbeschaffung des Bestands bis zu einem bestimmten Niveau, wenn der vorhergesagte Lagerbestand unter einem bestimmten Schwellenwert liegt.</span><span class="sxs-lookup"><span data-stu-id="706d7-127">It defines the replenishment of inventory up to a specific level when the predicted on-hand level is below a specific threshold.</span></span> <span data-ttu-id="706d7-128">Die Wiederbeschaffungsmenge ist die Differenz zwischen dem maximalen Leven und dem Level der vorhergesagten Verfügbarkeit.</span><span class="sxs-lookup"><span data-stu-id="706d7-128">The replenishment quantity will be the difference between the maximum level and the predicted on-hand level.</span></span> <span data-ttu-id="706d7-129">Der *Min./Max.*</span><span class="sxs-lookup"><span data-stu-id="706d7-129">The *Min./Max.*</span></span> <span data-ttu-id="706d7-130">Abdeckungscode wird häufig für vorhersagbare Bestandsentnahmen, hohe Läufer oder weniger teure Produkte verwendet.</span><span class="sxs-lookup"><span data-stu-id="706d7-130">coverage code is often used for predictable inventory draw, high runners, or less expensive products.</span></span> <span data-ttu-id="706d7-131">Die folgende Abbildung zeigt ein Beispiel.</span><span class="sxs-lookup"><span data-stu-id="706d7-131">The following illustration shows an example.</span></span>
+
+    <span data-ttu-id="706d7-132">![Beispiel für die Verwendung des Min./Max.Deckungscodes](./media/coverage-code-min-max.png "Beispiel für die Verwendung des Min./Max.Deckungscodes")</span><span class="sxs-lookup"><span data-stu-id="706d7-132">![Example of Min./Max. coverage code use](./media/coverage-code-min-max.png "Example of Min./Max. coverage code use")</span></span>
+
+- <span data-ttu-id="706d7-133">**Manuell** – Bei der Wiederbeschaffung schlägt das System keine Einkaufs-, Transport- oder Produktionsaufträge für das Produkt vor.</span><span class="sxs-lookup"><span data-stu-id="706d7-133">**Manual** – In the replenishment method, the system doesn't suggest purchase, transfer, or production orders for the product.</span></span> <span data-ttu-id="706d7-134">Stattdessen erstellt der Planer für das Produkt die erforderlichen Aufträge für die Wiederbeschaffung des Produkts.</span><span class="sxs-lookup"><span data-stu-id="706d7-134">Instead, the planner for the product is responsible for creating the required orders for the replenishment of the product.</span></span> <span data-ttu-id="706d7-135">Der Deckungscode *Manuell* wird häufig für Produkte verwendet, für die systemgenerierte geplante Aufträge nicht erwünscht sind.</span><span class="sxs-lookup"><span data-stu-id="706d7-135">The *Manual* coverage code is often used for products that system-generated planned orders aren't wanted for.</span></span>
+
+## <a name="impact-of-the-order-quantity-from-default-order-settings"></a><span data-ttu-id="706d7-136">Auswirkung der Bestellmenge aus Standardauftragseinstellungen</span><span class="sxs-lookup"><span data-stu-id="706d7-136">Impact of the order quantity from default order settings</span></span>
+
+<span data-ttu-id="706d7-137">Auf der Seite **Standardauftragseinstellungen** für ein freigegebenes Produkt können Sie jede der folgenden Mengeneinstellungen auf den Inforegistern **Einkaufsbestellung**, **Bestand** und **Verkaufsauftrag** festlegen.</span><span class="sxs-lookup"><span data-stu-id="706d7-137">On the **Default order setting** page for a released product, you can specify each of following quantity settings on the **Purchase order**, **Inventory**, and **Sales order** FastTabs.</span></span> <span data-ttu-id="706d7-138">(Das Inforegister **Bestand** wird sowohl für Umlagerungsaufträge als auch für Fertigungsaufträge verwendet.)</span><span class="sxs-lookup"><span data-stu-id="706d7-138">(The **Inventory** FastTab is used for both transfer orders and production orders.)</span></span>
+
+- <span data-ttu-id="706d7-139">**Mehrfaches** – Geplante Aufträge werden ein Vielfaches dieser Menge sein.</span><span class="sxs-lookup"><span data-stu-id="706d7-139">**Multiple** – Planned orders will be a multiple of this quantity.</span></span>
+
+    <span data-ttu-id="706d7-140">Wenn das Feld **Mehrfaches** zum Beispiel auf *5* festgelegt ist, kann ein Auftrag für eine Menge von 5, 10, 15, 20 usw. sein.</span><span class="sxs-lookup"><span data-stu-id="706d7-140">For example, if the **Multiple** field is set to *5*, an order can be for a quantity of 5, 10, 15, 20, and so on.</span></span>
+
+- <span data-ttu-id="706d7-141">**Min. Bestellmenge** – Geplante Aufträge werden nicht kleiner als der angegebene Wert sein.</span><span class="sxs-lookup"><span data-stu-id="706d7-141">**Min. order quantity** – Planned orders won't be less than the specified value.</span></span>
+
+    <span data-ttu-id="706d7-142">Wenn zum Beispiel das Feld **Min. Auftragsmenge** auf *10* festgelegt ist, wird ein geplanter Auftrag für eine Menge von 10 erstellt, auch wenn nur vier benötigt werden, um den Bedarf zu decken.</span><span class="sxs-lookup"><span data-stu-id="706d7-142">For example, if the **Min. order quantity** field is set to *10*, a planned order for a quantity of 10 will be created, even if only four are required to fulfill the demand.</span></span>
+
+- <span data-ttu-id="706d7-143">**Max. Auftragsmenge** – Geplante Aufträge werden den angegebenen Wert nicht überschreiten.</span><span class="sxs-lookup"><span data-stu-id="706d7-143">**Max. order quantity** – Planned orders won't exceed the specified value.</span></span> <span data-ttu-id="706d7-144">Ist der Bedarf größer als der Wert **Max. Auftragsmenge**, werden mehrere geplante Aufträge erstellt, um ihn zu decken.</span><span class="sxs-lookup"><span data-stu-id="706d7-144">If the demand is more than the **Max. order quantity** value, multiple planned orders will be created to cover it.</span></span>
+
+    <span data-ttu-id="706d7-145">Wenn z. B. das Feld **Max. Auftragsmenge** auf *100* festgelegt ist und der Bedarf 450 beträgt, werden vier Planaufträge für eine Menge von 100 und ein Planauftrag für eine Menge von 50 erstellt.</span><span class="sxs-lookup"><span data-stu-id="706d7-145">For example, if the **Max. order quantity** field is set to *100*, and the demand is 450, four planned orders for a quantity of 100 and one planned order for a quantity of 50 will be created.</span></span>
+
+## <a name="examples-of-replenishment-that-use-the-minmax-coverage-code"></a><span data-ttu-id="706d7-146">Beispiele für die Wiederbeschaffung, die den Min./Max.</span><span class="sxs-lookup"><span data-stu-id="706d7-146">Examples of replenishment that use the Min./Max.</span></span> <span data-ttu-id="706d7-147">Abdeckungscode</span><span class="sxs-lookup"><span data-stu-id="706d7-147">coverage code</span></span>
+
+<span data-ttu-id="706d7-148">Wenn Sie auf der Seite **Standardauftragseinstellung** keinen Wert im Feld **Mehrfach** für ein Produkt festlegen und die *Min./Max.*</span><span class="sxs-lookup"><span data-stu-id="706d7-148">If you don't specify a value in the **Multiple** field for a product on the **Default order setting** page, and if you're using the *Min./Max.*</span></span> <span data-ttu-id="706d7-149">Wiederbeschaffung verwenden, füllt die Planungsoptimierung den Bestand bis zu einer bestimmten Menge wieder auf, wenn der vorhergesagte Lagerbestand unter einem bestimmten Schwellenwert liegt.</span><span class="sxs-lookup"><span data-stu-id="706d7-149">replenishment method, Planning Optimization will replenish the inventory up to a specific level when the predicted on-hand level is below a specific threshold.</span></span>
+
+<span data-ttu-id="706d7-150">Wenn Sie eine Mehrfachmenge für ein Produkt definieren, ändert die *Min./Max.*</span><span class="sxs-lookup"><span data-stu-id="706d7-150">If you define a multiple quantity for a product, the *Min./Max.*</span></span> <span data-ttu-id="706d7-151">Wiederbeschaffung ihr Verhalten und berücksichtigt den **Mehrfachen** Wert.</span><span class="sxs-lookup"><span data-stu-id="706d7-151">replenishment method changes its behavior and considers the **Multiple** value.</span></span>
+
+<span data-ttu-id="706d7-152">Mit anderen Worten: Die Planungsoptimierung wird den Bestand auch dann bis zum definierten Maximalbestand wiederbeschaffen, wenn der vorhergesagte Lagerbestand kleiner als der definierte Minimalbestand ist.</span><span class="sxs-lookup"><span data-stu-id="706d7-152">In other words, Planning Optimization will still replenish the inventory up to the defined maximum level when the predicted on-hand level is less than the defined minimum level.</span></span> <span data-ttu-id="706d7-153">Die Wiederbeschaffung muss jedoch ein Vielfaches des **Vielfachen**-Wertes sein.</span><span class="sxs-lookup"><span data-stu-id="706d7-153">However, the replenishment quantity must be a multiple of the **Multiple** value.</span></span>
+
+<span data-ttu-id="706d7-154">Wenn die Wiederbeschaffungsmenge (die Differenz zwischen dem Maximalbestand und dem vorhergesagten Lagerbestand) kein Vielfaches des definierten Vielfachen ist, verwendet die Planungsoptimierung den ersten möglichen Wert, der zusammen mit dem vorhergesagten Lagerbestand unter dem Maximalbestand liegt.</span><span class="sxs-lookup"><span data-stu-id="706d7-154">If the replenishment quantity (the difference between the maximum level and the predicted on-hand level) isn't a multiple of the defined multiple quantity, Planning Optimization uses the first possible value that, together with predicted on-hand level, will be below the maximum level.</span></span> <span data-ttu-id="706d7-155">Wenn die Summe kleiner als der Mindestbestand ist, verwendet die Planungsoptimierung den ersten Wert, der zusammen mit dem vorhergesagten Lagerbestand über dem Maximalbestand liegt.</span><span class="sxs-lookup"><span data-stu-id="706d7-155">If the sum is less than the minimum level, Planning Optimization uses the first value that, together with predicted on-hand, will be above the maximum level.</span></span>
+
+<span data-ttu-id="706d7-156">In den folgenden Unterabschnitten finden Sie einige Beispiele, die zeigen, wie sich die Mehrfachbestellmenge für ein Produkt auf das Ergebnis der *Min./Max.*</span><span class="sxs-lookup"><span data-stu-id="706d7-156">The following subsections provide some examples that show how the multiple order quantity for a product affects the result of the *Min./Max.*</span></span> <span data-ttu-id="706d7-157">Wiederbeschaffung auswirkt.</span><span class="sxs-lookup"><span data-stu-id="706d7-157">replenishment method.</span></span>
+
+### <a name="example-1"></a><span data-ttu-id="706d7-158">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="706d7-158">Example 1</span></span>
+
+<span data-ttu-id="706d7-159">Ein Produkt hat die folgende Konfiguration:</span><span class="sxs-lookup"><span data-stu-id="706d7-159">A product has the following configuration:</span></span>
+
+- <span data-ttu-id="706d7-160">**Deckungscode:** *Min./Max.*</span><span class="sxs-lookup"><span data-stu-id="706d7-160">**Coverage code:** *Min./Max.*</span></span>
+- <span data-ttu-id="706d7-161">**Minimum:** *15*</span><span class="sxs-lookup"><span data-stu-id="706d7-161">**Minimum:** *15*</span></span>
+- <span data-ttu-id="706d7-162">**Maximum:** *22*</span><span class="sxs-lookup"><span data-stu-id="706d7-162">**Maximum:** *22*</span></span>
+- <span data-ttu-id="706d7-163">**Mehrfach:** *0*</span><span class="sxs-lookup"><span data-stu-id="706d7-163">**Multiple:** *0*</span></span>
+
+<span data-ttu-id="706d7-164">Es gibt 10 Stück Lagerbestand für das Produkt, und es gibt keinen anderen Bedarf oder Vorrat.</span><span class="sxs-lookup"><span data-stu-id="706d7-164">There are 10 pieces of on-hand inventory for the product, and there is no other demand or supply.</span></span>
+
+<span data-ttu-id="706d7-165">Wenn die Produktprogrammplanung ausgeführt wird, wird ein geplanter Auftrag für 12 Stück erstellt, um den Bestand auf die maximale Menge aufzufüllen.</span><span class="sxs-lookup"><span data-stu-id="706d7-165">When master planning runs, a planned order for 12 pieces is created to replenish inventory to the maximum quantity.</span></span>
+
+### <a name="example-2"></a><span data-ttu-id="706d7-166">Beispiel 2</span><span class="sxs-lookup"><span data-stu-id="706d7-166">Example 2</span></span>
+
+<span data-ttu-id="706d7-167">Ein Produkt hat die folgende Konfiguration:</span><span class="sxs-lookup"><span data-stu-id="706d7-167">A product has the following configuration:</span></span>
+
+- <span data-ttu-id="706d7-168">**Deckungscode:** *Min./Max.*</span><span class="sxs-lookup"><span data-stu-id="706d7-168">**Coverage code:** *Min./Max.*</span></span>
+- <span data-ttu-id="706d7-169">**Minimum:** *15*</span><span class="sxs-lookup"><span data-stu-id="706d7-169">**Minimum:** *15*</span></span>
+- <span data-ttu-id="706d7-170">**Maximal:** *22*</span><span class="sxs-lookup"><span data-stu-id="706d7-170">**Maximum:** *22*</span></span>
+- <span data-ttu-id="706d7-171">**Mehrfach:** *5*</span><span class="sxs-lookup"><span data-stu-id="706d7-171">**Multiple:** *5*</span></span>
+
+<span data-ttu-id="706d7-172">Es gibt 10 Stück Lagerbestand für das Produkt, und es gibt keinen anderen Bedarf oder Vorrat.</span><span class="sxs-lookup"><span data-stu-id="706d7-172">There are 10 pieces of on-hand inventory for the product, and there is no other demand or supply.</span></span>
+
+<span data-ttu-id="706d7-173">Wenn die Produktprogrammplanung ausgeführt wird, wird ein geplanter Auftrag über 10 Stück erstellt (weil 15 Stück Wiederbeschaffung plus 10 Stück Lagerbestand die Maximalmenge überschreiten).</span><span class="sxs-lookup"><span data-stu-id="706d7-173">When master planning runs, a planned order for 10 pieces is created (because 15 pieces of replenishment plus 10 pieces of on-hand inventory will exceed the maximum quantity).</span></span>
+
+### <a name="example-3"></a><span data-ttu-id="706d7-174">Beispiel 3</span><span class="sxs-lookup"><span data-stu-id="706d7-174">Example 3</span></span>
+
+<span data-ttu-id="706d7-175">Ein Produkt hat die folgende Konfiguration:</span><span class="sxs-lookup"><span data-stu-id="706d7-175">A product has the following configuration:</span></span>
+
+- <span data-ttu-id="706d7-176">**Deckungscode:** *Min./Max.*</span><span class="sxs-lookup"><span data-stu-id="706d7-176">**Coverage code:** *Min./Max.*</span></span>
+- <span data-ttu-id="706d7-177">**Minimum:** *21*</span><span class="sxs-lookup"><span data-stu-id="706d7-177">**Minimum:** *21*</span></span>
+- <span data-ttu-id="706d7-178">**Maximal:** *24*</span><span class="sxs-lookup"><span data-stu-id="706d7-178">**Maximum:** *24*</span></span>
+- <span data-ttu-id="706d7-179">**Mehrfach:** *5*</span><span class="sxs-lookup"><span data-stu-id="706d7-179">**Multiple:** *5*</span></span>
+
+<span data-ttu-id="706d7-180">Es gibt 10 Stück Lagerbestand für das Produkt, und es gibt keinen anderen Bedarf oder Vorrat.</span><span class="sxs-lookup"><span data-stu-id="706d7-180">There are 10 pieces of on-hand inventory for the product, and there is no other demand or supply.</span></span>
+
+<span data-ttu-id="706d7-181">Wenn die Produktprogrammplanung ausgeführt wird, wird ein geplanter Auftrag für 15 Stück erstellt (weil 10 Stück Wiederbeschaffung plus 10 Stück Lagerbestand weniger als die Mindestmenge sind).</span><span class="sxs-lookup"><span data-stu-id="706d7-181">When master planning runs, the planned order for 15 pieces is created (because 10 pieces of replenishment plus 10 pieces of on-hand inventory will be less than the minimum quantity).</span></span>
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

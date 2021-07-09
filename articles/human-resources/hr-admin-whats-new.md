@@ -15,78 +15,79 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b9657a40cac3301814fe5d35a83f89dd60de1636
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: 9e914334e464a87d9a89680d0ef9998cc1484a4a
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111603"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303439"
 ---
-# <a name="whats-new-or-changed-in-human-resources"></a><span data-ttu-id="17e27-104">Neuerungen oder Änderungen in Human Resources</span><span class="sxs-lookup"><span data-stu-id="17e27-104">What's new or changed in Human Resources</span></span>
+# <a name="whats-new-or-changed-in-human-resources"></a><span data-ttu-id="b9993-104">Neuerungen oder Änderungen in Human Resources</span><span class="sxs-lookup"><span data-stu-id="b9993-104">What's new or changed in Human Resources</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="17e27-105">Alle zwei Wochenn stellen wir ein neues Release für Microsoft Dynamics 365 Human Resources zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="17e27-105">Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resources.</span></span> <span data-ttu-id="17e27-106">In den hier aufgeführten Themen werden die vorgenommenen Änderungen in jeder Veröffentlichung im Detail beschrieben.</span><span class="sxs-lookup"><span data-stu-id="17e27-106">The topics listed here detail the changes made with each release.</span></span>
+<span data-ttu-id="b9993-105">Alle zwei Wochenn stellen wir ein neues Release für Microsoft Dynamics 365 Human Resources zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="b9993-105">Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resources.</span></span> <span data-ttu-id="b9993-106">In den hier aufgeführten Themen werden die vorgenommenen Änderungen in jeder Veröffentlichung im Detail beschrieben.</span><span class="sxs-lookup"><span data-stu-id="b9993-106">The topics listed here detail the changes made with each release.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="17e27-107">Um die Feiertage zu berücksichtigen, sieht der Veröffentlichungsplan für November und Dezember 2020 wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="17e27-107">To account for holidays, the release schedule for November and December 2020 is as follows:</span></span>
+><span data-ttu-id="b9993-107">Um die Feiertage zu berücksichtigen, sieht der Veröffentlichungsplan für November und Dezember 2020 wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="b9993-107">To account for holidays, the release schedule for November and December 2020 is as follows:</span></span>
 >
->- <span data-ttu-id="17e27-108">November-Veröffentlichung: 2. November – 13. November</span><span class="sxs-lookup"><span data-stu-id="17e27-108">November release: November 2 - November 13</span></span>
->- <span data-ttu-id="17e27-109">Dezember-Veröffentlichung: 30. November – 11. Dezember</span><span class="sxs-lookup"><span data-stu-id="17e27-109">December release: November 30 - December 11</span></span>
+>- <span data-ttu-id="b9993-108">November-Veröffentlichung: 2. November – 13. November</span><span class="sxs-lookup"><span data-stu-id="b9993-108">November release: November 2 - November 13</span></span>
+>- <span data-ttu-id="b9993-109">Dezember-Veröffentlichung: 30. November – 11. Dezember</span><span class="sxs-lookup"><span data-stu-id="b9993-109">December release: November 30 - December 11</span></span>
 > 
-><span data-ttu-id="17e27-110">Die zweiwöchige Veröffentlichungshäufigkeit wird wie gewohnt am 11. Januar 2021 wieder aufgenommen.</span><span class="sxs-lookup"><span data-stu-id="17e27-110">The two-week release cadence will resume as usual on January 11, 2021.</span></span>
+><span data-ttu-id="b9993-110">Die zweiwöchige Veröffentlichungshäufigkeit wird wie gewohnt am 11. Januar 2021 wieder aufgenommen.</span><span class="sxs-lookup"><span data-stu-id="b9993-110">The two-week release cadence will resume as usual on January 11, 2021.</span></span>
 
-<span data-ttu-id="17e27-111">Weitere Informationen über bevorstehende Funktionen oder den Aktualisierungsprozess für die Personalabteilung finden Sie in den folgenden Artikeln:</span><span class="sxs-lookup"><span data-stu-id="17e27-111">For more information about upcoming features or the update process for Human Resources, see the following articles:</span></span> 
+<span data-ttu-id="b9993-111">Weitere Informationen über bevorstehende Funktionen oder den Aktualisierungsprozess für die Personalabteilung finden Sie in den folgenden Artikeln:</span><span class="sxs-lookup"><span data-stu-id="b9993-111">For more information about upcoming features or the update process for Human Resources, see the following articles:</span></span> 
 
-- [<span data-ttu-id="17e27-112">Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2</span><span class="sxs-lookup"><span data-stu-id="17e27-112">Overview of Dynamics 365 Human Resources 2019 release wave 2</span></span>](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
+- [<span data-ttu-id="b9993-112">Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2</span><span class="sxs-lookup"><span data-stu-id="b9993-112">Overview of Dynamics 365 Human Resources 2019 release wave 2</span></span>](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
 
-- [<span data-ttu-id="17e27-113">Aktualisierungsprozess</span><span class="sxs-lookup"><span data-stu-id="17e27-113">Update process</span></span>](hr-admin-setup-update-process.md)
+- [<span data-ttu-id="b9993-113">Aktualisierungsprozess</span><span class="sxs-lookup"><span data-stu-id="b9993-113">Update process</span></span>](hr-admin-setup-update-process.md)
 
-- [<span data-ttu-id="17e27-114">Funktionen verwalten</span><span class="sxs-lookup"><span data-stu-id="17e27-114">Manage features</span></span>](hr-admin-manage-features.md)
+- [<span data-ttu-id="b9993-114">Funktionen verwalten</span><span class="sxs-lookup"><span data-stu-id="b9993-114">Manage features</span></span>](hr-admin-manage-features.md)
 
-## <a name="human-resources-weekly-releases"></a><span data-ttu-id="17e27-115">Wöchentliche Veröffentlichungen von Human Resources</span><span class="sxs-lookup"><span data-stu-id="17e27-115">Human Resources weekly releases</span></span>
+## <a name="human-resources-weekly-releases"></a><span data-ttu-id="b9993-115">Wöchentliche Veröffentlichungen von Human Resources</span><span class="sxs-lookup"><span data-stu-id="b9993-115">Human Resources weekly releases</span></span>
 
-<span data-ttu-id="17e27-116">Um herauszufinden, was in jeder zweiwöchentlichen Version von Human Resources neu ist oder geändert wurde, lesen Sie die folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="17e27-116">To find out what's new or changed in each biweekly release of Human Resources, see the following topics:</span></span>
+<span data-ttu-id="b9993-116">Um herauszufinden, was in jeder zweiwöchentlichen Version von Human Resources neu ist oder geändert wurde, lesen Sie die folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="b9993-116">To find out what's new or changed in each biweekly release of Human Resources, see the following topics:</span></span>
 
-[<span data-ttu-id="17e27-117">20. Mai 2021</span><span class="sxs-lookup"><span data-stu-id="17e27-117">May 20, 2021</span></span>](hr-whats-new-2021-05-20.md)</br>
-[<span data-ttu-id="17e27-118">3. Mai 2021</span><span class="sxs-lookup"><span data-stu-id="17e27-118">May 3, 2021</span></span>](hr-whats-new-2021-05-03.md)</br>
-[<span data-ttu-id="17e27-119">19. April 2021</span><span class="sxs-lookup"><span data-stu-id="17e27-119">April 19, 2021</span></span>](hr-whats-new-2021-04-19.md)</br>
-[<span data-ttu-id="17e27-120">5. April 2021</span><span class="sxs-lookup"><span data-stu-id="17e27-120">April 5, 2021</span></span>](hr-whats-new-2021-04-05.md)</br>
-[<span data-ttu-id="17e27-121">22. März 2021</span><span class="sxs-lookup"><span data-stu-id="17e27-121">March 22, 2021</span></span>](hr-whats-new-2021-03-22.md)</br>
-[<span data-ttu-id="17e27-122">8. März 2021</span><span class="sxs-lookup"><span data-stu-id="17e27-122">March 8, 2021</span></span>](hr-whats-new-2021-03-08.md)</br>
-[<span data-ttu-id="17e27-123">22. Februar 2021</span><span class="sxs-lookup"><span data-stu-id="17e27-123">February 22, 2021</span></span>](hr-whats-new-2021-02-22.md)</br>
-[<span data-ttu-id="17e27-124">28. Januar 2021</span><span class="sxs-lookup"><span data-stu-id="17e27-124">January 28, 2021</span></span>](hr-whats-new-2021-01-28.md)</br>
-[<span data-ttu-id="17e27-125">21. Januar 2021</span><span class="sxs-lookup"><span data-stu-id="17e27-125">January 21, 2021</span></span>](hr-whats-new-2021-01-21.md)</br>
-[<span data-ttu-id="17e27-126">2. Dezember 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-126">December 2, 2020</span></span>](hr-whats-new-2020-12-02.md)</br>
-[<span data-ttu-id="17e27-127">22. Oktober 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-127">October 22, 2020</span></span>](hr-whats-new-2020-10-22.md)</br>
-[<span data-ttu-id="17e27-128">16. September 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-128">September 16, 2020</span></span>](hr-whats-new-2020-09-16.md)</br>
-[<span data-ttu-id="17e27-129">3. September 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-129">September 3, 2020</span></span>](hr-whats-new-2020-09-03.md)</br>
-[<span data-ttu-id="17e27-130">20. August 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-130">August 20, 2020</span></span>](hr-whats-new-2020-08-20.md)</br>
-[<span data-ttu-id="17e27-131">6. August 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-131">August 6, 2020</span></span>](hr-whats-new-2020-08-06.md)</br>
-[<span data-ttu-id="17e27-132">23. Juli 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-132">July 23, 2020</span></span>](hr-whats-new-2020-07-23.md)</br>
-[<span data-ttu-id="17e27-133">8. Juli 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-133">July 8, 2020</span></span>](hr-whats-new-2020-07-08.md)</br>
-[<span data-ttu-id="17e27-134">23. Juni 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-134">June 23, 2020</span></span>](hr-whats-new-2020-06-23.md)</br>
-[<span data-ttu-id="17e27-135">11. Juni 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-135">June 11, 2020</span></span>](hr-whats-new-2020-06-11.md)</br>
-[<span data-ttu-id="17e27-136">28. Mai 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-136">May 28, 2020</span></span>](hr-whats-new-2020-05-28.md)</br>
-[<span data-ttu-id="17e27-137">14. Mai 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-137">May 14, 2020</span></span>](hr-whats-new-2020-05-14.md)</br>
-[<span data-ttu-id="17e27-138">1. Mai 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-138">May 1, 2020</span></span>](hr-whats-new-2020-05-01.md)</br>
-[<span data-ttu-id="17e27-139">13. April 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-139">April 13, 2020</span></span>](hr-whats-new-2020-04-13.md)</br>
-[<span data-ttu-id="17e27-140">3. April 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-140">April 3, 2020</span></span>](hr-whats-new-2020-04-03.md)</br>
-[<span data-ttu-id="17e27-141">24. März 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-141">March 24, 2020</span></span>](hr-whats-new-2020-03-24.md)</br>
-[<span data-ttu-id="17e27-142">19. März 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-142">March 19, 2020</span></span>](hr-whats-new-2020-03-19.md)</br>
-[<span data-ttu-id="17e27-143">10. März 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-143">March 10, 2020</span></span>](hr-whats-new-2020-03-10.md)</br>
-[<span data-ttu-id="17e27-144">3. März 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-144">March 3, 2020</span></span>](hr-whats-new-2020-03-03.md)</br>
-[<span data-ttu-id="17e27-145">25. Februar 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-145">February 25, 2020</span></span>](hr-whats-new-2020-02-25.md)</br>
-[<span data-ttu-id="17e27-146">18. Februar 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-146">February 18, 2020</span></span>](hr-whats-new-2020-02-18.md)</br>
-[<span data-ttu-id="17e27-147">12. Februar 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-147">February 12, 2020</span></span>](hr-whats-new-2020-02-12.md)</br>
-[<span data-ttu-id="17e27-148">7. Februar 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-148">February 7, 2020</span></span>](hr-whats-new-2020-02-07.md)</br>
-[<span data-ttu-id="17e27-149">3. Februar 2020</span><span class="sxs-lookup"><span data-stu-id="17e27-149">February 3, 2020</span></span>](hr-whats-new-2020-02-03.md)
+[<span data-ttu-id="b9993-117">22. Juni 2021</span><span class="sxs-lookup"><span data-stu-id="b9993-117">June 22, 2021</span></span>](hr-whats-new-2021-06-22.md)</br>
+[<span data-ttu-id="b9993-118">20. Mai 2021</span><span class="sxs-lookup"><span data-stu-id="b9993-118">May 20, 2021</span></span>](hr-whats-new-2021-05-20.md)</br>
+[<span data-ttu-id="b9993-119">3. Mai 2021</span><span class="sxs-lookup"><span data-stu-id="b9993-119">May 3, 2021</span></span>](hr-whats-new-2021-05-03.md)</br>
+[<span data-ttu-id="b9993-120">19. April 2021</span><span class="sxs-lookup"><span data-stu-id="b9993-120">April 19, 2021</span></span>](hr-whats-new-2021-04-19.md)</br>
+[<span data-ttu-id="b9993-121">5. April 2021</span><span class="sxs-lookup"><span data-stu-id="b9993-121">April 5, 2021</span></span>](hr-whats-new-2021-04-05.md)</br>
+[<span data-ttu-id="b9993-122">22. März 2021</span><span class="sxs-lookup"><span data-stu-id="b9993-122">March 22, 2021</span></span>](hr-whats-new-2021-03-22.md)</br>
+[<span data-ttu-id="b9993-123">8. März 2021</span><span class="sxs-lookup"><span data-stu-id="b9993-123">March 8, 2021</span></span>](hr-whats-new-2021-03-08.md)</br>
+[<span data-ttu-id="b9993-124">22. Februar 2021</span><span class="sxs-lookup"><span data-stu-id="b9993-124">February 22, 2021</span></span>](hr-whats-new-2021-02-22.md)</br>
+[<span data-ttu-id="b9993-125">28. Januar 2021</span><span class="sxs-lookup"><span data-stu-id="b9993-125">January 28, 2021</span></span>](hr-whats-new-2021-01-28.md)</br>
+[<span data-ttu-id="b9993-126">21. Januar 2021</span><span class="sxs-lookup"><span data-stu-id="b9993-126">January 21, 2021</span></span>](hr-whats-new-2021-01-21.md)</br>
+[<span data-ttu-id="b9993-127">2. Dezember 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-127">December 2, 2020</span></span>](hr-whats-new-2020-12-02.md)</br>
+[<span data-ttu-id="b9993-128">22. Oktober 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-128">October 22, 2020</span></span>](hr-whats-new-2020-10-22.md)</br>
+[<span data-ttu-id="b9993-129">16. September 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-129">September 16, 2020</span></span>](hr-whats-new-2020-09-16.md)</br>
+[<span data-ttu-id="b9993-130">3. September 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-130">September 3, 2020</span></span>](hr-whats-new-2020-09-03.md)</br>
+[<span data-ttu-id="b9993-131">20. August 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-131">August 20, 2020</span></span>](hr-whats-new-2020-08-20.md)</br>
+[<span data-ttu-id="b9993-132">6. August 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-132">August 6, 2020</span></span>](hr-whats-new-2020-08-06.md)</br>
+[<span data-ttu-id="b9993-133">23. Juli 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-133">July 23, 2020</span></span>](hr-whats-new-2020-07-23.md)</br>
+[<span data-ttu-id="b9993-134">8. Juli 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-134">July 8, 2020</span></span>](hr-whats-new-2020-07-08.md)</br>
+[<span data-ttu-id="b9993-135">23. Juni 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-135">June 23, 2020</span></span>](hr-whats-new-2020-06-23.md)</br>
+[<span data-ttu-id="b9993-136">11. Juni 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-136">June 11, 2020</span></span>](hr-whats-new-2020-06-11.md)</br>
+[<span data-ttu-id="b9993-137">28. Mai 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-137">May 28, 2020</span></span>](hr-whats-new-2020-05-28.md)</br>
+[<span data-ttu-id="b9993-138">14. Mai 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-138">May 14, 2020</span></span>](hr-whats-new-2020-05-14.md)</br>
+[<span data-ttu-id="b9993-139">1. Mai 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-139">May 1, 2020</span></span>](hr-whats-new-2020-05-01.md)</br>
+[<span data-ttu-id="b9993-140">13. April 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-140">April 13, 2020</span></span>](hr-whats-new-2020-04-13.md)</br>
+[<span data-ttu-id="b9993-141">3. April 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-141">April 3, 2020</span></span>](hr-whats-new-2020-04-03.md)</br>
+[<span data-ttu-id="b9993-142">24. März 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-142">March 24, 2020</span></span>](hr-whats-new-2020-03-24.md)</br>
+[<span data-ttu-id="b9993-143">19. März 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-143">March 19, 2020</span></span>](hr-whats-new-2020-03-19.md)</br>
+[<span data-ttu-id="b9993-144">10. März 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-144">March 10, 2020</span></span>](hr-whats-new-2020-03-10.md)</br>
+[<span data-ttu-id="b9993-145">3. März 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-145">March 3, 2020</span></span>](hr-whats-new-2020-03-03.md)</br>
+[<span data-ttu-id="b9993-146">25. Februar 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-146">February 25, 2020</span></span>](hr-whats-new-2020-02-25.md)</br>
+[<span data-ttu-id="b9993-147">18. Februar 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-147">February 18, 2020</span></span>](hr-whats-new-2020-02-18.md)</br>
+[<span data-ttu-id="b9993-148">12. Februar 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-148">February 12, 2020</span></span>](hr-whats-new-2020-02-12.md)</br>
+[<span data-ttu-id="b9993-149">7. Februar 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-149">February 7, 2020</span></span>](hr-whats-new-2020-02-07.md)</br>
+[<span data-ttu-id="b9993-150">3. Februar 2020</span><span class="sxs-lookup"><span data-stu-id="b9993-150">February 3, 2020</span></span>](hr-whats-new-2020-02-03.md)
 
-## <a name="see-also"></a><span data-ttu-id="17e27-150">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="17e27-150">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b9993-151">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b9993-151">See also</span></span>
 
-[<span data-ttu-id="17e27-151">Übersicht zu Dynamics 365 Human Resources 2020 Versionswelle 2</span><span class="sxs-lookup"><span data-stu-id="17e27-151">Overview of Dynamics 365 Human Resources 2020 release wave 2</span></span>](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
-[<span data-ttu-id="17e27-152">Aktualisierungsprozess</span><span class="sxs-lookup"><span data-stu-id="17e27-152">Update process</span></span>](hr-admin-setup-update-process.md)</br>
-[<span data-ttu-id="17e27-153">Funktionen verwalten</span><span class="sxs-lookup"><span data-stu-id="17e27-153">Manage features</span></span>](hr-admin-manage-features.md)
+[<span data-ttu-id="b9993-152">Übersicht zu Dynamics 365 Human Resources 2020 Versionswelle 2</span><span class="sxs-lookup"><span data-stu-id="b9993-152">Overview of Dynamics 365 Human Resources 2020 release wave 2</span></span>](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[<span data-ttu-id="b9993-153">Aktualisierungsprozess</span><span class="sxs-lookup"><span data-stu-id="b9993-153">Update process</span></span>](hr-admin-setup-update-process.md)</br>
+[<span data-ttu-id="b9993-154">Funktionen verwalten</span><span class="sxs-lookup"><span data-stu-id="b9993-154">Manage features</span></span>](hr-admin-manage-features.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
