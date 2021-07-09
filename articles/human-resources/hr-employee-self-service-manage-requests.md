@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3a2db97cfd5aa6210002bf3e6abb1d7a178623c4
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: a2bcd7a1ce68dfd6c4c93d10561d58a42d30f611
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057357"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303243"
 ---
 # <a name="manage-leave-and-absence-requests"></a>Urlaubs- und Abwesenheitsanforderungen verwalten
 
@@ -34,11 +34,9 @@ Verwalten Sie Abwesenheitsanträge über den Arbeitsbereich **Mitarbeiter-Self-S
 
 3. Zeigen Sie ggf. die Abwesenheitsanträge Ihrer Teammitglieder an und genehmigen Sie sie.
 
-## <a name="preview-leave-request-workflow-experience-enhancements"></a>(Vorschau) Erfahrungsverbesserungen für Urlaubsanforderungsworkflow
+## <a name="leave-request-workflow-experience-enhancements"></a>Erfahrungsverbesserungen für Urlaubsanforderungsworkflow
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-Diese Funktion für die Vorschau bietet die folgenden Erweiterungen:
+Diese Funktion bietet die folgenden Erweiterungen:
 
 - Sie können mehrere Abwesenheitsanträge auswählen und für alle die gleiche Aktion durchführen.
 - Das Menüband am oberen Rand und eine neue Schaltfläche für den Workflow auf der Seite zeigen die Aktionen, die Sie bei Urlaubsanträgen durchführen können.

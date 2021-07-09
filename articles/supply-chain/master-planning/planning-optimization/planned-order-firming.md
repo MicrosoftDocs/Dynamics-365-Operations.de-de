@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193880"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271207"
 ---
 # <a name="firm-planned-orders"></a>Fest geplante Aufträge
 
@@ -123,8 +123,6 @@ Die automatische Umwandlung wird durch die Anzahl der Tage definiert, die Sie f�
 Wenn Sie alle zuvor erwähnten Zeitzäune auf *0* (Null) festlegen, ist die automatische Umwandlung für die betreffenden abgedeckten Elemente effektiv deaktiviert.
 
 ## <a name="firm-planned-orders-by-using-a-query"></a>Geplante Aufträge umwandeln mit Hilfe einer Abfrage
-
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Mit der abfragebasierten Umwandlung können Sie die Umwandlung auf der Basis von Kriterien planen, die im Voraus definiert wurden. Im Gegensatz zur automatischen Umwandlung lässt die abfragebasierte Umwandlung die automatische Umwandlung verschiedener Teilmengen von Aufträgen zu verschiedenen Zeitpunkten zu. Zusätzlich können Sie entweder manuelle oder automatisierte Vorgänge verwenden, um verschiedene Arten von geplanten Aufträgen zu fixieren. Sie können auch eine Vorschau anzeigen, welche umgewandelten Aufträge auf der Grundlage Ihrer Einstellungen ausgewählt wurden. So können Sie bestätigen, dass die Auswahl Ihren Erwartungen entspricht.
 

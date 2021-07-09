@@ -2,7 +2,7 @@
 title: Urlaubs- und Abwesenheitstypen konfigurieren
 description: Einrichten von Abwesenheitstypen, die Mitarbeiter in Anspruch nehmen können in Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 098f614da80a1e7e3e31b30cea707ecfbd5b0a70
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 39e4c4b9c83ca648c21ac20bd20b739af8a6b9ed
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056611"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271126"
 ---
 # <a name="configure-leave-and-absence-types"></a>Urlaubs- und Abwesenheitstypen konfigurieren
 
@@ -71,7 +71,7 @@ Abwesenheitstypen in Dynamics 365 Human Resources definieren die verschiedenen A
    
  3. Einstellen des **Vortragstyps** für den Urlaubstyp. Wenn Sie diese Option auswählen, werden alle Vortragsguthaben auf die angegebene Urlaubsart übertragen. Die Art des Vortragstyps für den Urlaub muss ebenfalls in den Urlaubs- und Abwesenheitsplan aufgenommen werden. 
  
- 4. Definieren von **Ablaufregeln** für den Urlaubstyp. Wenn Sie diese Option konfigurieren, können Sie die Einheit der Tage oder Monate auswählen und die Dauer für den Ablauf festlegen. Sie können auch das Datum des Inkrafttretens der Ablaufregel festlegen. Das Gültigkeitsdatum wird verwendet, um zu bestimmen, wann der Batch-Job gestartet wird, der den Ablauf des Urlaubs verarbeitet, oder das Datum, an dem die Regel in Kraft tritt. Der Verfall selbst wird immer am Startdatum des Urlaubsplans erfolgen, sobald der Batch-Job zur Verarbeitung festgelegt ist. Zum Beispiel kann das Startdatum des Plans der 1.1.2020 sein, aber die Regel wurde erst am 6.1.2020 erstellt. Wenn Sie das Gültigkeitsdatum auf den 1.6.2020 festlegen, wird die Regel an der nächsten Jahresgrenze verarbeitet, also am 1.1.2021. Zum Zeitpunkt des Ablaufs vorhandene Urlaubsguthaben werden von der Urlaubsart abgezogen und im Urlaubsguthaben ausgewiesen. 
+4. Definieren von **Ablaufregeln** für den Urlaubstyp. Wenn Sie diese Option konfigurieren, können Sie die Einheit Tage oder Monate wählen und die Dauer für den Verfall festlegen. Das Gültigkeitsdatum der Verfallsregel wird verwendet, um zu bestimmen, wann der Batchauftrag ausgeführt wird, der den Urlaubsverfall verarbeitet, oder das Datum, an dem die Regel in Kraft tritt. Der Verfall selbst findet immer am Startdatum der Abgrenzungsperiode statt. Wenn z. B. das Abgrenzungszeitraum-Startdatum der 3. August 2021 ist und die Verfallsregel auf 6 Monate festgelegt wurde, wird die Regel basierend auf dem Verfalls-Offset vom Abgrenzungszeitraum-Startdatum verarbeitet, so dass sie am 3. Februar 2022 ausgeführt würde. Zum Zeitpunkt des Ablaufs vorhandene Urlaubsguthaben werden von der Urlaubsart abgezogen und im Urlaubsguthaben ausgewiesen.
  
 ## <a name="see-also"></a>Siehe auch
 
@@ -79,6 +79,7 @@ Abwesenheitstypen in Dynamics 365 Human Resources definieren die verschiedenen A
 - [Einen Urlaubs- und Abwesenheitsplan erstellen](hr-leave-and-absence-plans.md)
 - [Einen Arbeitszeitkalender erstellen](hr-leave-and-absence-working-time-calendar.md)
 - [Urlaub aussetzen](hr-leave-and-absence-suspend-leave.md)
+- [Einen Workflow zum Kaufen und Verkaufen von Urlaubsanforderungen erstellen](hr-leave-and-absence-buy-sell-workflow.md)
 
 
 

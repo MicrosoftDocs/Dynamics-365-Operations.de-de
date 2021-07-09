@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: ee342de6d069131e230120c5d65aef58da8e632a
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8436842b4f07ba000649075198bdef43ad508f8f
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020385"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270956"
 ---
 # <a name="rebate-management-deal-workflows"></a>Workflows für Rückvergütungsverwaltungsdeals
 
@@ -27,12 +27,12 @@ ms.locfileid: "6020385"
 
 Um Rückvergütungsdeals zu genehmigen, verwendet die Rückvergütungsverwaltung dieselbe Workflow-Plattform wie andere Finance and Operations-Apps. Jedem Workflow sind zwei Auftragsprozesse zugeordnet:
 
-- Ein Element des Workflows aktiviert den Deal, sodass der Benutzer oder der Workflowprozess die Transaktionen genehmigen kann.
 - Ein Element des Workflows genehmigt den Deal.
+- Ein Element des Workflows aktiviert den Deal, sodass der Benutzer oder der Workflowprozess die Transaktionen genehmigen kann.
 
 Bevor Sie einen Rückvergütungsdeal verwenden können, muss der im Modul **Rückvergütungsverwaltung** aktiviert werden. Um einen Deal zu aktivieren, müssen Sie zuerst einen *Workflow für Rückvergütungsverwaltungsdeals* erstellen und konfigurieren.
 
-Nachdem ein Workflow für die Rückvergütungsverwaltung aktiviert wurde, können Benutzer Deals nicht manuell genehmigen. Der Workflow muss immer verwendet werden.
+Benutzer können Geschäfte nicht manuell genehmigen. Es muss immer der Workflow verwendet werden.
 
 ## <a name="create-and-manage-rebate-management-deal-workflows"></a>Workflows für Rückvergütungsverwaltungsdeals erstellen und verwalten
 
@@ -42,4 +42,17 @@ Um mit Ihren Workflows für Rückvergütungsverwaltungsdeals zu arbeiten, gehen 
 
 Um einen Deal über einen Workflow zu aktivieren, öffnen Sie den Deal (z. B. auf der Seite **Alle Rückvergütungsverwaltungsdeals**). Wählen Sie im Aktivitätsbereich **Workflow \> Senden**. Nachdem der neue Deal über den Workflow verarbeitet und genehmigt wurde, ist es aktiv und einsatzbereit.
 
-Nachdem ein Deal aktiviert wurde, können Sie dessen Einstellungen nicht mehr ändern. Wenn Sie einen aktiven Deal ändern müssen, deaktivieren Sie ihn und erstellen Sie einen neuen. Wenn der neue Deal dem alten ähnelt, können Sie ihn erstellen, indem Sie den alten Deal kopieren.
+Nachdem ein Geschäft aktiviert wurde, können Sie die meisten seiner Einstellungen nicht mehr ändern. Wenn Sie ein aktives Geschäft ändern müssen, inaktivieren Sie es zuerst und erstellen Sie dann ein neues Geschäft. Wenn der neue Deal dem alten ähnelt, können Sie ihn erstellen, indem Sie den alten Deal kopieren.
+
+Sie können die folgenden Einstellungen für ein Geschäft ändern, nachdem es aktiviert wurde:
+
+- Abstimmen nach
+- Kumulative Garantie
+- Buchungsprofil
+- Buchungsprofil für Garantie
+- Dokumentnotizen
+- Währung
+- Anfangsdatum
+- Bis-Datum
+
+Darüber hinaus können Bonuszeilen entfernt werden.

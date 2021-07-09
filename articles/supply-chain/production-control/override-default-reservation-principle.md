@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a1b2dd204c9a507dba387b0295f3021253e02dc4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb4200deed5407bef6861913cecdad7114ea68cc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814801"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270786"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Überschreiben des Standardreservierungsprinzips für Materialien in der Produktion
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Mit der Funktion *Standardreservierung für Produktion überschreiben* können Sie ein Standardreservierungsprinzip für jede Artikelmodellgruppe festlegen. Daher können für jeden Artikel, der Teil einer Stückliste oder einer Chargenauftragsformel für die Produktion ist, automatisch unterschiedliche Reservierungsprinzipien angewendet werden. Sie können auswählen, ob jede Artikelmodellgruppe das für einen Auftrag festgelegte Standardreservierungsprinzip überschreiben und welches Reservierungsprinzip stattdessen verwendet werden soll (*Manuell*, *Kalkulation*, *Planung*, *Veröffentlichung* oder *Start*).
 
@@ -37,7 +36,7 @@ Wenn es beispielsweise um Rohstoffe oder Substanzen geht, die Kommissionierarbei
 Bevor Sie die Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 
 - **Modul:** *Produktionssteuerung*
-- **Name der Funktion:** *(Vorschau) Standard-Produktionsreservierung außer Kraft setzen*
+- **Funktionsname:** *Standardreservierung für Produktion überschreiben*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Zuweisen einer Artikelmodellgruppe zu einer Produktionsreservierungsrichtlinie
 

@@ -1,8 +1,8 @@
 ---
-title: Personalverwaltung bereitstellen
-description: Dieser Artikel führt Sie durch den Prozess des Bereitstellens einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
+title: Human Resources bereitstellen
+description: Dieses Thema führt Sie durch den Prozess des Bereitstellens einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/23/2020
+ms.date: 06/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,22 +15,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2632616834e405d31facdcf3853baaf96066e9aa
+ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193723"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6248820"
 ---
-# <a name="provision-human-resources"></a>Personalverwaltung bereitstellen
+# <a name="provision-human-resources"></a>Human Resources bereitstellen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dieser Artikel führt Sie durch den Prozess des Bereitstellens einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources. Für diesen Artikel wird vorausgesetzt, dass Sie Human Resources über einen Cloud-Lösungsanbieter (CSP) oder eine Unternehmensarchitekturvereinbarung erworben haben. Wenn Sie eine vorhandene Microsoft Dynamics 365 Lizenz haben, die den Human Resources-Service-Plan bereits beinhaltet, und Sie die Schritte in diesem Artikel nicht ausführen können, kontaktieren Sie den Support.
+Dieses Thema führt Sie durch den Prozess des Bereitstellens einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources. Dieses Thema setzt voraus, dass Sie Human Resources über einen Cloud Solution Provider (CSP) oder einen Enterprise Architecture (EA)-Vertrag gekauft haben. Wenn Sie eine vorhandene Microsoft Dynamics 365 Lizenz haben, die den Human Resources-Service-Plan bereits beinhaltet, und Sie die Schritte in diesem Artikel nicht ausführen können, kontaktieren Sie den Support.
 
 Um zu beginnen, sollte der globale Administrator sich bei [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) anmelden und ein neues Human Resources-Projekt erstellen. Solange kein Lizenzierungsproblem die Bereitstellung von Human Resources verhindert, ist keine Hilfe von Support oder dem Dynamics Engineering (DSE) erforderlich.
+
+## <a name="provision-a-human-resources-trial-environment"></a>Bereitstellen einer Human Resources-Testumgebung
+
+Bevor Sie Ihre erste Sandbox- oder Produktionsumgebung bereitstellen, möchten Sie möglicherweise eine [Human Resources Testumgebung](https://go.microsoft.com/fwlink/p/?LinkId=2115962) bereitstellen, um die Human Resources-Funktionalität zu validieren. Probeumgebung enthält fiktive Daten, die verwendet werden können, um das Programm in einem sicheren Verfahren zu untersuchen. Obwohl eine Probeumgebung dem Benutzer gehört, der sie angefordert hat, können andere Benutzer durch die Systemverwaltungserfahrung für Human Resources eingeladen werden. 
+
+Test-Umgebungen sind nicht für die Verwendung als Produktionsumgebung vorgesehen. Sie sind auf einen Testzeitraum von 60 Tagen beschränkt. Nach Ablauf des Testzeitraums werden die Umgebung und alle darin befindlichen Daten gelöscht und können nicht wiederhergestellt werden. Die Umgebung kann nicht in eine Sandbox- oder Produktionsumgebung umgewandelt werden. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
 
 ## <a name="plan-human-resources-environments"></a>Human Resources-Umgebungen planen
 
@@ -95,8 +101,6 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Human Resources in einer
     > [!NOTE]
     > Sollten Sie sich von den definitiven Anforderungen noch nicht abgemeldet haben, können Sie eine Testinstanz von Human Resources im Projekt bereitstellen. Sie können diese Instanz dann verwenden, um Ihre Lösung zu testen, bevor Sie sie freigeben. Wenn Sie die neuen Umgebung für Testzwecke verwenden, müssen Sie diese Schrittfolge wiederholen, um eine Produktionsumgebung zu erstellen.
 
-    > Sie können eine kostenlose 60-Tage-Nutzung in Betracht ziehen [Human Ressources-Testumgebung](https://go.microsoft.com/fwlink/p/?LinkId=2115962). Obwohl eine Probeumgebung dem Benutzer gehört, der sie angefordert hat, können andere Benutzer durch die Systemverwaltungserfahrung für Human Resources eingeladen werden. Probeumgebung enthält fiktive Daten, die verwendet werden können, um das Programm in einem sicheren Verfahren zu untersuchen. Sie sind nicht dazu vorgesehen, als Produktionsumgebung verwendet zu werden. Beachten Sie, dass, wenn die Testumgebung nach 60 Tagen abläuft, alle Daten im Modul gelöscht und nicht wiederhergestellt werden können. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
-
 ## <a name="select-a-power-apps-environment"></a>Eine Power Apps-Umgebung auswählen
 
 Sie können die Verwendung von Personaldaten mithilfe von Power Apps-Tools integrieren und erweitern. Weitere Informationen zur Power Apps-Umgebungen, einschließlich Umgebungsumfang, Umgebungszugriff und das Erstellen und Wählen einer Umgebung finden Sie unter [Ankündigung der Power Apps-Umgebungen](https://powerapps.microsoft.com/blog/powerapps-environments/). 
@@ -132,7 +136,7 @@ Human Resources unterstützt derzeit die folgenden Geografien:
 - Kanada
 - Asien 
 
-Wenn Sie eine Human Resources-Umgebung erstellen, wählen Sie eine Power Apps-Umgebung, um sie mit der Human Resources-Umgebung zu verknüpfen. Die Human Resources-Umgebung wird dann in der gleichen Azure-Geografie bereitgestellt wie die ausgewählte Power Apps-Umgebung. Sie können auswählen, wo sich die Human Resources Umgebung und die Datenbank physisch befinden, indem Sie die Geografie auswählen, wenn Sie die Power Apps-Umgebung erstellen, die mit der Human Resources Umgebung verbunden sein wird.
+Wenn Sie eine Human Resources-Umgebung erstellen, wählen Sie eine Power Apps-Umgebung, um sie mit der Human Resources-Umgebung zu verknüpfen. Die Human Resources-Umgebung wird dann in der gleichen Azure-Geografie bereitgestellt wie die ausgewählte Power Apps-Umgebung. Sie können auswählen, wo sich die Human Resources-Umgebung und die Datenbank physisch befinden, indem Sie beim Erstellen der Power Apps-Umgebung, die mit der Human Resources-Umgebung verknüpft wird, die Geografie auswählen.
 
 Sie können die Azure *Geografie* auswählen, in der die Umgebung bereitgestellt wird, aber Sie können nicht die spezifische Azure *Region* auswählen. Die Automatisierung bestimmt die spezifische Region innerhalb der Geografie, in der die Umgebung erstellt wird, um Ladung und Leistung zu optimieren. Informationen zu Azure-Geografien und -Regionen finden Sie in der Dokumentation zu [Azure-Geografien](https://azure.microsoft.com/global-infrastructure/geographies).
 

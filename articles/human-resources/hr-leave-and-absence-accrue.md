@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86ca63b1703faa6f57ed2e5591c89a5e84363481
-ms.sourcegitcommit: 318e406b84d43381d450272eb83c5eea9c5cf1c0
+ms.openlocfilehash: ddd4c55f6ebfbe91fb949a92cb379f51d826c465
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059472"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303463"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Urlaubs- und Abwesenheitspläne antizipieren
 
@@ -104,11 +104,9 @@ Löschen Sie Abgrenzungssätze für einen bestimmten Plan und Zeitraum. Abgrenzu
 
 2. Unter **Urlaub verwalten**, wählen Sie **Aufgelaufene Urlaubs- und Abwesenheitsprüfung löschen**.
 
-## <a name="preview-leave-accrual-transaction-auditing"></a>(Vorschau) Überwachung von Urlaubsabgrenzungstransaktionen
+## <a name="leave-accrual-transaction-auditing"></a>Überwachung von Urlaubsabgrenzungstransaktionen
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-Diese Vorschaufunktion hilft Urlaubs- und Abwesenheitsmanagern dabei, die Abgrenzungstransaktionen für Urlaub und Abwesenheit zu verstehen, die sich auf die Freizeitguthaben eines Mitarbeiters für einen bestimmten Urlaubstyp beziehen.
+Diese Funktion hilft den Managern von Urlaub und Abwesenheit, die Transaktionen zur Abgrenzung von Urlaub und Abwesenheit zu verstehen, die mit den Zeitsalden eines Mitarbeiters für eine bestimmte Urlaubsart zusammenhängen.
 
 Zum Anzeigen von Transaktionsdetails:
 

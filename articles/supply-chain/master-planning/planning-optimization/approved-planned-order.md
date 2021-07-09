@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3b9b5274481e693f9fa05eb084ec5505ce5bc2eb
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: 71ec26bea2063bcf8b6d302a7ece804b3ac934b3
+ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935656"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304366"
 ---
 # <a name="view-manage-and-approve-planned-orders"></a>Geplante Aufträge anzeigen, verwalten und genehmigen
 
@@ -46,7 +46,7 @@ Sie können das Feld **Status** jedes geplanten Auftrags verwenden, um Ihren For
 
 - **Unbearbeitet** – Wenn die Produktprogrammplanung geplanter Aufträge erzeugt, erhalten diese diesen Status. Geplante Aufträge, die diesen Status haben, werden beim nächsten Planungslauf gelöscht.
 - **Erledigt** – Dieser Status zeigt an, dass der geplante Auftrag abgeschlossen ist. Wenn Sie sich entscheiden, einen geplanten Auftrag nicht zu sperren, können Sie seinen Status manuell auf *Erledigt* ändern. Beachten Sie, dass das System die Zustände *Unbearbeitet* und *Erledigt* gleich behandelt.
-- **Genehmigt** – Dieser Status zeigt an, dass der geplante Auftrag zur Umwandlung genehmigt ist. Wenn Sie einen geplanten Auftrag fixieren wollen, können Sie seinen Status auf *Genehmigt* ändern. Wenn Sie die Änderungen, die an einem geplanten Auftrag vorgenommen wurden, beibehalten wollen oder wenn Sie planen, einen geplanten Auftrag zu fixieren, ändern Sie seinen Status auf *Genehmigt*. Geplante Aufträge, die den Status *Freigegeben* haben, werden von der Produktprogrammplanung als fixiert und erwartete Lieferung betrachtet. Daher werden sie bei späteren Ausführungen der Produktprogrammplanung nicht geändert oder gelöscht. Um dieses Verhalten zu erreichen, kopiert die Planungslogik während der Produktprogrammplanung geplanter Aufträge, die den Status *Genehmigt* haben, von der alten Planversion in die neue Planversion. Beachten Sie, dass geplanter Auftrag, der den Status *Bewilligt* hat, nur innerhalb des spezifischen Masterplans als Lieferung gilt.
+- **Genehmigt** – Dieser Status zeigt an, dass der geplante Auftrag zur Umwandlung genehmigt ist. Wenn Sie einen geplanten Auftrag fixieren wollen, können Sie seinen Status auf *Genehmigt* ändern. Wenn Sie die Änderungen, die an einem geplanten Auftrag vorgenommen wurden, beibehalten wollen oder wenn Sie planen, einen geplanten Auftrag zu fixieren, ändern Sie seinen Status auf *Genehmigt*. Geplante Aufträge, die den Status *Freigegeben* haben, werden von der Produktprogrammplanung als fixiert und erwartete Lieferung betrachtet. Daher werden sie bei späteren Ausführungen der Produktprogrammplanung nicht geändert oder gelöscht. Um dieses Verhalten zu erreichen, kopiert die Planungslogik während der Produktprogrammplanung geplanter Aufträge, die den Status *Genehmigt* haben, von der alten Planversion in die neue Planversion. Beachten Sie, dass geplanter Aufträge, die den Status *Genehmigt* haben, nur innerhalb des spezifischen Masterplans als Vorrat gelten.
 
 Um den Status eines einzelnen geplanten Auftrags zu ändern, [öffnen Sie eine beliebige Listenseite für geplante Aufträge](#view-planned-orders), öffnen Sie den Auftrag und führen Sie dann einen der folgenden Schritte aus:
 

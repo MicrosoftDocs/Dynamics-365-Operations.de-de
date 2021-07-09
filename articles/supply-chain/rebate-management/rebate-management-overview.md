@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7afad911454916c49cda47253736defdd7e9b16b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d271d70791a8fe4ad1581ae8a150ad13bffc7a94
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020458"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271052"
 ---
 # <a name="rebate-management-module-overview"></a>Übersicht über das Modul zur Rückvergütungsverwaltung
 
@@ -70,7 +70,7 @@ Rückvergütungen können basierend auf vielen verschiedenen Parametern konfigur
 
 Die Ergebnisse der Rückvergütungsberechnung können auch durch andere Rückvergütungen reduziert werden, je nachdem, ob die Rückvergütung so eingerichtet ist, dass sie auf der Grundlage des Nettobetrags berechnet wird.
 
-Auf der Kreditorenseite können Rückvergütungen den Preis basierend auf einer FIFO-Regel (First in, first out), dem letzten Einkaufspreis, dem durchschnittlichen Einkaufspreis oder dem Verkaufspreis berechnen.
+Auf der Seite des Kreditors können Rabatte, die auf Verkaufsaufträgen basieren, den Preis auf der Grundlage einer FIFO-Regel (first in, first out), dem letzten Einkaufspreis, dem durchschnittlichen Einkaufspreis oder dem Verkaufspreis berechnen.
 
 ## <a name="rebate-target-transactions"></a>Rückvergütungszielbuchungen
 
@@ -84,11 +84,12 @@ Artikelausgaben erstellen einen kostenlosen Artikelauftrag für Debitorenrückve
 
 Die Kombination der zugehörigen Deals, der Häufigkeit der Berechnungen, der Berechnungsbasis und der ausgewählten Berechnungsmethode bestimmt die Genauigkeit und Präzision der Rückvergütungsberechnungen. Rückvergütungsrückstellungen können verwendet werden, um gebuchte und beanspruchte Werte zu erfassen.
 
-Rückstellungen können täglich oder monatlich verwaltet werden. Die Funktionalität kann jedoch die Rückvergütung in einer festgelegten Häufigkeit zuweisen oder bezahlen oder eine Zahlung erhalten. Benutzer können jederzeit während der Auszahlung problemlos einen Plan oder Zahlungsbetrag anpassen.
+Rückstellungen können täglich, wöchentlich, monatlich oder nach einer angepassten Periode verwaltet werden. Die Funktionalität kann jedoch den Rabatt in einem beliebigen definierten Rhythmus, der gleich lang oder länger als der Rückstellungsrhythmus ist, zuweisen oder auszahlen oder eine Zahlung davon erhalten. Die Abschreibung verwendet denselben Rhythmus wie der Rabatt. Benutzer können jederzeit während der Auszahlung problemlos einen Plan oder Zahlungsbetrag anpassen.
 
-Benutzer müssen Deals oder Rückstellungen nicht mehr in zwei Schritten abwickeln. Rückstellungen und Abschreibungen werden direkt in das Hauptbuch gebucht. Zusätzlich können Gutschriften automatisch erstellt werden. Daher besteht eine vollständige Integration in die Kreditoren- und Debitorenkonten. Während der Verarbeitung berücksichtigen die Berechnungen Abrechnungsrabatte, bezahlte Rechnungen, Handelsrabatte und vorhandene Gutschriften, um sicherzustellen, dass Beträge und Werte genau berechnet werden.
+Benutzer müssen Deals oder Rückstellungen nicht mehr in zwei Schritten abwickeln. Rückstellungen und Abschreibungen werden direkt in das Hauptbuch gebucht. Zusätzlich können Gutschriften automatisch erstellt werden. Daher besteht eine vollständige Integration in die Kreditoren- und Debitorenkonten. Während der Verarbeitung können die Berechnungen Abrechnungsrabatte, bezahlte Rechnungen, Handelsrabatte und vorhandene Gutschriften berücksichtigen, um sicherzustellen, dass Beträge und Werte korrekt berechnet werden.
 
-Wenn Rückvergütungen berechnet werden, erstellt der Prozess Transaktionen, die vor der Buchung überprüft werden können. Anschließend kann eine Erfassung, eine Gutschrift oder eine Lastschriftentransaktion erstellt werden. Rückvergütungs- und Abzugstransaktionen werden in einem separaten Prozess gebucht. Berichtserklärungen und Transaktionslisten können abgerufen werden, um Compliance, Effektivität und Transparenz sicherzustellen.
+Wenn Rückvergütungen berechnet werden, erstellt der Prozess Transaktionen, die vor der Buchung überprüft werden können. Ein separater Prozess bucht Transaktionen der Bonusverwaltung. Bei der Buchung kann dann eine Erfassung, eine Gutschrift oder eine Lastschrifttransaktion für vorgeschlagene Transaktionen erstellt werden. Berichtserklärungen und Transaktionslisten können abgerufen werden, um Compliance, Effektivität und Transparenz sicherzustellen.
+
 
 ## <a name="guaranteed-royalty-payments"></a>Garantierte Lizenzgebührzahlungen
 

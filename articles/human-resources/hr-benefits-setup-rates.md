@@ -2,7 +2,7 @@
 title: Sätze konfigurieren
 description: Sätze in Microsoft Dynamics 365 Human Resources definieren, wie viel Arbeitgeber und Mitarbeiter für einen Vorteil beitragen.
 author: andreabichsel
-ms.date: 06/22/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3d6018decbc429a5e6fbb658369d56a34439f6c7
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
+ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054979"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "6266656"
 ---
 # <a name="configure-rates"></a>Sätze konfigurieren
 
@@ -46,7 +46,7 @@ Bestimmen Sie mithilfe der Sätze, wie viel Arbeitnehmer und Mitarbeiter basiere
    | **Ablaufdatum** | Das Enddatum des Satzes. Der Standardwert lautet 12/31/2154 (stellvertretend für nie). |
    | **Ebenen verwenden** | Die Stufe, die zur Berechnung des Vergütungssatzes verwendet werden soll. Für den Vergütungssatz kann entweder eine einfache oder eine zweifache Stufe verwendet werden. Ein Beispiel für eine zweifache Stufe ist eine Stufe, die auf Geschlecht und Alter basiert. |
    | **Zahlungshäufigkeit** | Die Zahlungshäufigkeit bestimmt, wie oft der Vergütungsprämiensatz an den Vorteilsanbieter ausgezahlt wird. Wenn die Auszahlung beispielsweise monatlich erfolgt, entspricht der Vergütungssatz dem monatlichen Zahlungsbetrag. |
-   | **Rundung des Zahlungshäufigkeitssatzes** | Die Methode zum Runden des Satzes: Standard oder Gekürzt. |
+   | **Rundung des Zahlungshäufigkeitssatzes** | Die Methoden zur Rundung des Satzes sind: Standard, Abgeschnitten, Normal, Abwärts und Aufrunden. </br></br><ul><li>**Standard** – Rundet immer auf. Zum Beispiel wird 10,611 auf 10,62 gerundet. -10,231 rundet auf -10,23. </li><li>**Abgeschnitten** – Rundet immer ab. Beispiel: 10,619 rundet auf 10,61. -10,231 rundet auf -10,24. </li><li>**Normal** – Dezimalwerte, die auf oder größer als 5 enden, werden von Null abgerundet. Dezimalwerte, die auf oder kleiner als 4 enden, werden gegen Null gerundet. Beispiel: 10,615 wird auf 10,62 gerundet. -10,235 rundet auf -10,24. 10,614 rundet auf 10,61. -10,234 rundet auf -10,23. </li><li>**Abwärts** – Rundet gegen Null. Beispiel: 10,619 rundet auf 10,61. -10,231 rundet auf -10,23. </li><li>**Aufrunden** – Rundet weg von Null. Zum Beispiel wird 10,619 auf 10,62 gerundet. -10,231 rundet auf -10,24. |
    | **Mitarbeiterbetrag für Nichtraucher** | Der Betrag, den der Vorteilsanbieter für einen nicht rauchenden Mitarbeiter berechnet. Dies ist der Betrag, den der Arbeitgeber an den Vorteilsanbieter zahlt und der auf der Zahlungshäufigkeit für die Vergütungssatzeinstellung basieren sollte. |
    | **Arbeitgeberbetrag für Nichtraucher** | Der Betrag, den der Vorteilsanbieter für einen nicht rauchenden Mitarbeiter berechnet. Dies ist der Betrag, den der Arbeitgeber an den Vorteilsanbieter zahlt und der auf der Zahlungshäufigkeit für die Vergütungssatzeinstellung basieren sollte. |
    | **Mitarbeiterbetrag für Raucher** | Der Betrag, den der Vorteilsanbieter für einen rauchenden Mitarbeiter berechnet. Dies ist der Betrag, den der Arbeitgeber an den Vorteilsanbieter zahlt und der auf der Zahlungshäufigkeit für die Vergütungssatzeinstellung basieren sollte. |

@@ -15,17 +15,16 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: e7bae4ae7c2f3367132b03accb31c01c5f3b673e
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 0baa922afc72778dd6e4836398a280cbe6abaec2
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937586"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270582"
 ---
 # <a name="check-in-for-pickup-module"></a>Modul Einchecken für das Abholung
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema behandelt das Modul „Einchecken zur Abholung“ und erklärt, wie Sie es in Microsoft Dynamics 365 Commerce einstellen.
 
@@ -55,4 +54,4 @@ Wenn ein oder mehrere zusätzliche Informationsschlüssel konfiguriert sind, wir
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Benachrichtigungen zum Einchecken von Kunden im Point of Sale (POS)](enable-customer-check-in.md) aktivieren
+[Benachrichtigungen zum Einchecken von Kunden im Point of Sale (POS) aktivieren](enable-customer-check-in.md)

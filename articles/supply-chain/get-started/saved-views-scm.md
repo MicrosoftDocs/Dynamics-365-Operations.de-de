@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1636d37b40c826fb9b922636d68c56963a791af5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821248"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270658"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Gespeicherte Standardansichten für Supply Chain Management
 
@@ -79,16 +79,14 @@ In der folgenden Tabelle werden die gespeicherten Ansichten beschrieben, die fü
 
 ## <a name="saved-views-for-the-production-control-module"></a>Gespeicherte Ansichten für das Modul „Produktionssteuerung“
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 In der folgenden Tabelle werden die gespeicherten Ansichten beschrieben, die für das Modul „Produktionssteuerung“ verfügbar sind.
 
 | Seite | Ansichtsname | Ansichtsbeschreibung | Funktionsname |
 |---|---|---|---|
-| Stücklistenseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | (Vorschau) Gespeicherte Ansichten für die Produktionssteuerung |
-| Detailseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | (Vorschau) Gespeicherte Ansichten für die Produktionssteuerung |
-| Kommissionierlistenseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | (Vorschau) Gespeicherte Ansichten für die Produktionssteuerung |
-| Listenseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | (Vorschau) Gespeicherte Ansichten für die Produktionssteuerung |
+| Stücklistenseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansichten für die Produktionssteuerung |
+| Detailseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansichten für die Produktionssteuerung |
+| Kommissionierlistenseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansichten für die Produktionssteuerung |
+| Listenseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansichten für die Produktionssteuerung |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Gespeicherte Ansichten für das Modul „Vertrieb und Marketing“
 

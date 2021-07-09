@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c9e1cadae97bd8f0dea270deaa1a8e09bb28eb4b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ee5a195b3d2881ff70fb1f0d4063ed681e874648
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020482"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271076"
 ---
 # <a name="rebate-management-groups"></a>Rückvergütungsverwaltungsgruppen
 
 [!include [banner](../includes/banner.md)]
 
-Rückvergütungs- und Abzugsberechnungen können von Gruppen gesteuert werden. Rückvergütungsverwaltungsgruppen können für Debitoren, Kreditoren und Artikel erstellt werden. Sie können an einen Masterdatensatz angehängt werden.
+Die Berechnungen der Rabattverwaltung können über Gruppen gesteuert werden. Rückvergütungsverwaltungsgruppen können für Debitoren, Kreditoren und Artikel erstellt werden. Sie können an einen Masterdatensatz angehängt werden.
 
 ## <a name="rebate-management-customer-groups"></a>Rückvergütungsverwaltungs-Debitorengruppen
 
@@ -49,10 +49,9 @@ Gehen Sie wie folgt vor, um Debitoren einer ausgewählten Gruppe anzuzeigen, daz
 1. Gehen Sie zu **Rückvergütungsverwaltung \> Rückvergütungsverwaltungsgruppen einrichten \> Debitorengruppen**.
 1. Wählen Sie die zu verwaltende Gruppe aus.
 1. Wählen Sie im Aktivitätsbereich **Debitoren** aus. Die Seite **Rückvergütungsverwaltungsgruppen** wird angezeigt und zeigt eine Liste der Debitoren an, die bereits Mitglieder der ausgewählten Gruppe sind.
-1. Um einer Gruppe einen neuen Debitor hinzuzufügen, wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine neue Zeile hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
+1. Um einer Gruppe einen neuen Debitor hinzuzufügen, wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine neue Zeile hinzuzufügen. Legen Sie dann das folgende Feld für die neue Zeile fest:
 
     - **Debitorenkonto** – Wählen Sie die ID des Debitorenkontos aus.
-    - **Name** – Geben Sie einen Namen und/oder eine Beschreibung des Debitors ein.
 
 1. Um einen Debitor aus der Gruppe zu entfernen, wählen Sie ihn aus und wählen Sie dann im Aktivitätsbereich **Löschen** aus.
 
@@ -61,10 +60,9 @@ Gehen Sie wie folgt vor, um Gruppenzuweisungen für einen ausgewählten Debitor 
 1. Gehen Sie zu **Debitorenkonten \> Debitoren \> Alle Debitoren**.
 1. Wählen Sie den Debitor aus, mit dem Sie arbeiten möchten.
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Debitor** in der Gruppe **Rückvergütungsverwaltung** die Option **Rückvergütungsverwaltungsgruppen** aus. Die Seite **Rückvergütungsverwaltungsgruppen** wird angezeigt und zeigt eine Liste der Gruppen an, zu denen der ausgewählte Debitor bereits gehört.
-1. Um den Debitor einer neuen Gruppe hinzuzufügen, wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine neue Zeile hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
+1. Um den Debitor einer neuen Gruppe hinzuzufügen, wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine neue Zeile hinzuzufügen. Legen Sie dann das folgende Feld für die neue Zeile fest:
 
     - **Rückvergütungsverwaltungsgruppen** – Wählen Sie die Gruppe aus, zu der der Debitor hinzugefügt werden soll.
-    - **Beschreibung** – Geben Sie eine Beschreibung der Gruppe ein (um beispielsweise zu erklären, warum der Debitor Mitglied der Gruppe ist).
 
 1. Um einen Debitor aus einer Gruppe zu entfernen, wählen Sie die Gruppe aus und wählen Sie dann im Aktivitätsbereich **Löschen** aus.
 
@@ -88,10 +86,9 @@ Gehen Sie wie folgt vor, um Kreditoren einer ausgewählten Gruppe anzuzeigen, da
 1. Gehen Sie zu **Rückvergütungsverwaltung \> Rückvergütungsverwaltungsgruppen einrichten \> Kreditorengruppen**.
 1. Wählen Sie die zu verwaltende Gruppe aus.
 1. Wählen Sie im Aktivitätsbereich **Kreditoren** aus. Die Seite **Rückvergütungsverwaltungsgruppen** wird angezeigt und zeigt eine Liste der Kreditoren an, die bereits Mitglieder der ausgewählten Gruppe sind.
-1. Um einer Gruppe einen neuen Kreditor hinzuzufügen, wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine neue Zeile hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
+1. Um einer Gruppe einen neuen Kreditor hinzuzufügen, wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine neue Zeile hinzuzufügen. Legen Sie dann das folgende Feld für die neue Zeile fest:
 
     - **Kreditorenkonto** – Wählen Sie die ID des Kreditorenkontos aus.
-    - **Name** – Geben Sie einen Namen und/oder eine Beschreibung des Kreditor ein.
 
 1. Um einen Kreditor aus der Gruppe zu entfernen, wählen Sie ihn aus und wählen Sie dann im Aktivitätsbereich **Löschen** aus.
 
@@ -100,10 +97,9 @@ Gehen Sie wie folgt vor, um Gruppenzuweisungen für einen ausgewählten Kreditor
 1. Gehen Sie zu **Kreditorenkonten \> Kreditoren \> Alle Kreditoren**.
 1. Wählen Sie den Kreditor aus, mit dem Sie arbeiten möchten.
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Kreditor** in der Gruppe **Rückvergütungsverwaltung** die Option **Rückvergütungsverwaltungsgruppen** aus. Die Seite **Rückvergütungsverwaltungsgruppen** wird angezeigt und zeigt eine Liste der Gruppen an, zu denen der ausgewählte Kreditor bereits gehört.
-1. Um den Kreditor einer neuen Gruppe hinzuzufügen, wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine neue Zeile hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
+1. Um den Kreditor einer neuen Gruppe hinzuzufügen, wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine neue Zeile hinzuzufügen. Legen Sie dann das folgende Feld für die neue Zeile fest:
 
     - **Rückvergütungsverwaltungsgruppen** – Wählen Sie die Gruppe aus, zu der der Kreditor hinzugefügt werden soll.
-    - **Beschreibung** – Geben Sie eine Beschreibung der Gruppe ein (um beispielsweise zu erklären, warum der Kreditor Mitglied der Gruppe ist).
 
 1. Um einen Kreditor aus einer Gruppe zu entfernen, wählen Sie die Gruppe aus und wählen Sie dann im Aktivitätsbereich **Löschen** aus.
 
@@ -127,10 +123,9 @@ Gehen Sie wie folgt vor, um Artikel einer ausgewählten Gruppe anzuzeigen, dazu 
 1. Gehen Sie zu **Rückvergütungsverwaltung \> Rückvergütungsverwaltungsgruppen einrichten \> Artikelgruppen**.
 1. Wählen Sie die zu verwaltende Gruppe aus.
 1. Klicken Sie im Aktivitätsbereich auf **Artikel**. Die Seite **Rückvergütungsverwaltungsgruppen** wird angezeigt und zeigt eine Liste der Artikel an, die bereits zur ausgewählten Gruppe gehören.
-1. Um einer Gruppe einen neuen Artikel hinzuzufügen, wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine neue Zeile hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
+1. Um einer Gruppe einen neuen Artikel hinzuzufügen, wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine neue Zeile hinzuzufügen. Legen Sie dann das folgende Feld für die neue Zeile fest:
 
     - **Artikelkonto** – Wählen Sie die ID des Artikelkontos aus.
-    - **Produktname** – Geben Sie einen Namen und/oder eine Beschreibung des Artikels ein.
 
 1. Um einen Artikel aus der Gruppe zu entfernen, wählen Sie ihn aus und wählen Sie dann im Aktivitätsbereich **Löschen** aus.
 
@@ -139,10 +134,9 @@ Gehen Sie wie folgt vor, um Gruppenzuweisungen für einen ausgewählten Artikel 
 1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**.
 1. Wählen Sie den Artikel aus, mit dem Sie arbeiten möchten.
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Produkt** in der Gruppe **Rückvergütungsverwaltung** die Option **Rückvergütungsverwaltungsgruppen** aus. Die Seite **Rückvergütungsverwaltungsgruppen** wird angezeigt und zeigt eine Liste der Gruppen an, zu denen der ausgewählte Artikel bereits gehört.
-1. Um den Artikel einer neuen Gruppe hinzuzufügen, wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine neue Zeile hinzuzufügen. Legen Sie für die neue Zeile die folgenden Felder fest:
+1. Um den Artikel einer neuen Gruppe hinzuzufügen, wählen Sie im Aktivitätsbereich **Neu** aus, um dem Raster eine neue Zeile hinzuzufügen. Legen Sie dann das folgende Feld für die neue Zeile fest:
 
     - **Rückvergütungsverwaltungsgruppen** – Wählen Sie die Gruppe aus, zu der der Artikel hinzugefügt werden soll.
-    - **Beschreibung** – Geben Sie eine Beschreibung der Gruppe ein (um beispielsweise zu erklären, warum der Artikel Mitglied der Gruppe ist).
 
 1. Um einen Artikel aus einer Gruppe zu entfernen, wählen Sie die Gruppe aus und wählen Sie dann im Aktivitätsbereich **Löschen** aus.
 

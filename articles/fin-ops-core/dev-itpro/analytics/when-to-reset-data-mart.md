@@ -1,8 +1,8 @@
 ---
-title: Zeitpunkt für das Zurücksetzen eines Data Mart
-description: In diesem Thema werden die Umstände aufgeführt, die durch das Zurücksetzen eines Data Mart verbessert werden könnten, und die Umstände, unter denen das Zurücksetzen Ihres Data Mart wahrscheinlich nicht hilfreich ist.
+title: Zurücksetzen von Data Marts FAQ
+description: In diesem Thema finden Sie Antworten auf einige häufig gestellte Fragen zum Zurücksetzen des Data Marts.
 author: jinniew
-ms.date: 05/06/2021
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,40 +14,47 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: bc2c4ee490f3bebd6e7c91609a06f8dfedfcb628
-ms.sourcegitcommit: 5916ea2a94ab9af7aac21f0fc44e194d5ce82917
+ms.openlocfilehash: 7cd96c7bc698986ef1ef07ca88479a3d49f22924
+ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "5988991"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "6266608"
 ---
-# <a name="when-to-reset-a-data-mart"></a>Zeitpunkt für das Zurücksetzen eines Data Mart
+# <a name="data-mart-resets-faq"></a>Zurücksetzen von Data Marts FAQ
 
-Das Zurücksetzen eines Data Mart kann zeitaufwändig sein. Abhängig von den Umständen ist diese Aktion möglicherweise nicht die passende Lösung. In diesem Thema werden die Umstände aufgeführt, die durch das Zurücksetzen eines Data Mart verbessert werden könnten, sowie die Umstände, unter denen das Zurücksetzen Ihres Data Mart wahrscheinlich nicht hilfreich ist.  
+In diesem Thema finden Sie Antworten auf einige häufig gestellte Fragen zum Zurücksetzen des Data Marts. Ein Zurücksetzen des Data Mart kann ein zeitaufwändiger Prozess sein und ist je nach den Umständen möglicherweise nicht die Lösung, die benötigt wird. Daher enthält dieses Thema Informationen über Umstände, unter denen ein Data Mart-Reset hilfreich sein kann, und auch über Umstände, unter denen es unwahrscheinlich ist, dass es hilft.
 
-## <a name="when-do-i-need-to-do-a-data-mart-reset"></a>Wann muss ich einen Data Mart zurücksetzen?
-Stellen Sie sich die folgenden Fragen, bevor Sie einen Data Mart zurücksetzen. Wenn Sie eine oder mehrere Fragen mit „Ja“ beantworten, kann dies darauf hinweisen, dass Ihre Organisation vom Zurücksetzen des Data Mart profitieren kann.
-
-- Wurde die Anwendungsdatenbank wiederhergestellt?
-- Wenn Sie einen Support-Vorfall eröffnet haben und ein Support-Techniker Sie angewiesen hat, den Data Mart im Rahmen einer Problembehandlung zurückzusetzen?
- 
-## <a name="when-is-it-not-appropriate-to-reset-a-data-mart"></a>Wann ist es nicht angebracht, einen Data Mart zurückzusetzen?
-Unter bestimmten Umständen empfehlen wir nicht, einen Data Mart zurückzusetzen. Im Folgenden finden sind einige Beispiele für solche Umstände. 
-
-- Bei Ihnen treten Leistungsprobleme auf, die mit einer Datensynchronisierung zusammenhängen. 
-- Aus einem der folgenden Gründe kommt es zum Zurücksetzen mit einem sich wiederholenden Muster: 
-  - **Fehlende Daten** 
-  - **Hängengebliebener Integrationszustand** 
-  - **Veraltete Datensätze** – Veraltete Datensätze allein rechtfertigen nicht unbedingt das Zurücksetzen des Data Mart. Bei großen Datasets kann das Zurücksetzen einige Zeit dauern. Es ist jedoch unwahrscheinlich, dass es dadurch zu einer Verbesserung kommt.
- 
 ## <a name="what-is-a-data-mart-reset"></a>Was ist das Zurücksetzen eines Data Marts?
-- Das Zurücksetzen wird erst gestartet, wenn vorhandene Aufgaben abgeschlossen sind. Dadurch wird sichergestellt, dass keine alten Daten eingefügt werden. Zu diesem Zeitpunkt wird möglicherweise die folgende Meldung angezeigt: „Das Zurücksetzen des Data Mart konnte aufgrund einer aktiven Aufgabe nicht verarbeitet werden. Bitte versuchen Sie es später erneut.“
-- Durch das Zurücksetzen werden die Integrationsaufgaben deaktiviert und alle Data-Mart-Daten gelöscht. Die Integration wird erneut aktiviert.
 
-## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Verliere ich Berichte, die ich bereits erstellt habe, wenn ich den Data Mart zurücksetze? 
-Nein, Ihre Berichte werden in SQL-Tabellen gespeichert, die von einem Zurücksetzen des Data Mart nicht betroffen sind. Wenn Sie sich Sorgen machen, von Ihnen erstellte Berichte zu verlieren, können Sie eine Sicherungskopien der Designs erstellen, die Sie nicht verlieren möchten. Öffnen Sie dazu den Berichts-Designer und gehen Sie zu **Unternehmen > Unternehmen > Bausteine > Export**.
+Bei einem Data Mart-Reset werden die Integrationsaufgaben deaktiviert, alle Data Mart-Daten gelöscht und anschließend die Integration wieder aktiviert.
+
+Um sicherzustellen, dass keine alten Daten eingefügt werden, kann ein Data Mart-Reset erst dann gestartet werden, wenn bestehende Aufgaben abgeschlossen sind. Wenn Sie versuchen, den Data Mart zurückzusetzen, bevor alle Aufgaben abgeschlossen sind, erhalten Sie möglicherweise eine Nachricht wie „Das Zurücksetzen des Data Mart konnte aufgrund einer aktiven Aufgabe nicht verarbeitet werden. Bitte versuchen Sie es später erneut.“
+
+## <a name="when-do-i-have-to-do-a-data-mart-reset"></a>Wann muss ich ein Data Mart-Reset durchführen?
+
+Wenn eine oder mehrere der folgenden Aussagen auf Ihre Situation zutreffen, kann Ihre Organisation von einem Data Mart-Reset profitieren:
+
+- Die Anwendungsdatenbank wurde wiederhergestellt.
+- Sie haben ein Support-Ticket geöffnet, und ein Support-Techniker hat Sie angewiesen, den Data Mart als Teil einer Fehlerbehebung zurückzusetzen.
  
-## <a name="is-it-necessary-for-all-users-to-exit-the-system-to-reset-the-data-mart"></a>Müssen alle Benutzer das System verlassen, um den Data Mart zurückzusetzen?
-Nein, Benutzer können während des Zurücksetzens des Data Mart weiter im System arbeiten. Sie können jedoch erst dann auf Berichte zugreifen, die mit Financial Reporter erstellt wurden, wenn das Zurücksetzen abgeschlossen ist. 
+## <a name="when-is-a-data-mart-reset-inappropriate"></a>Wann ist ein Data Mart-Reset unangebracht?
+
+Im Folgenden sind einige der Umstände aufgeführt, unter denen wir nicht empfehlen, den Data Mart zurückzusetzen:
+
+- Sie haben Leistungsprobleme, die mit der Datensynchronisierung zusammenhängen.
+- Sie haben ein wiederkehrendes Rücksetzungsmuster aus einem der folgenden Gründe:
+
+    - **Fehlende Daten** – Wenn Sie feststellen, dass Daten fehlen, eröffnen Sie ein Support-Ticket bei Microsoft, um Ihr Berichtsformat und mögliche Probleme bei der Datensynchronisation zu überprüfen.
+    - **Hängengebliebener Integrationszustand**
+    - **Veraltete Datensätze** – Veraltete Datensätze allein rechtfertigen nicht unbedingt einen Data Mart Reset. Wenn Sie ein großes Dataset haben, dauert es einige Zeit, bis der Rücksetzungsprozess ausgeführt wird, aber es ist unwahrscheinlich, dass er zu einer Verbesserung führt.
+
+## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Verliere ich Berichte, die ich bereits erstellt habe, wenn ich den Data Mart zurücksetze?
+
+Nein. Ihre Berichte sind in SQL-Tabellen gespeichert, die von einem Data Mart-Reset nicht betroffen sind. Wenn Sie befürchten, dass von Ihnen entworfene Berichte verloren gehen, können Sie die Entwürfe, die Sie nicht verlieren möchten, sichern. Um Designs zu sichern, öffnen Sie den Report Designer und gehen Sie zu **Firma \> Firmen \> Bausteine \> Export**.
+ 
+## <a name="do-all-users-have-to-exit-the-system-before-i-can-reset-the-data-mart"></a>Müssen alle Benutzer das System verlassen, bevor ich den Data Mart zurücksetzen kann?
+
+Nein. Die Benutzer können während eines Data Mart-Resets weiter im System arbeiten. Bis das Zurücksetzen abgeschlossen ist, können die Benutzer jedoch nicht auf Berichte zugreifen, die mit Financial Reporter erstellt wurden.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

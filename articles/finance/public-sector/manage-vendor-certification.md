@@ -10,17 +10,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 06f4a0feda82d20e5ec01fd75e4bb8a597a6d09b
-ms.sourcegitcommit: 5916ea2a94ab9af7aac21f0fc44e194d5ce82917
+ms.openlocfilehash: b6e4194a4b3463476a32679ff11b35affc131faa
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "5989015"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270503"
 ---
 # <a name="maintain-vendor-certification"></a>Pflegen Sie das Zertifikat des Kreditors
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dieses Thema beschreibt die Schritte, die Ihre Kreditor verwenden können, um ihre Zertifikate unter Verwendung des **Arbeitsbereichs für die Zusammenarbeit mit Lieferanten** zu pflegen. Beispiele für Zertifikate sind Woman Business Enterprise (WBE) oder eine Firma, die nach LEED (Leadership in Energy and Environment Design) zertifiziert ist. Kreditor müssen Zertifizierungsinformationen in den Arbeitsbereich **Lieferanteninformationen** eingeben. Von dort aus wählen die Kreditor **Mehr Details** und dann **Zertifikate** aus.
 

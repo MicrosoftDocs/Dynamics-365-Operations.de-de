@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84d845055e175e6f4b8078fabeb3307ee96826f2
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 34d0f3a0ff2a2ce1efd52f7bad2367af5f2f371b
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115022"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271154"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -64,8 +64,6 @@ Diese Funktion fügt der Produktionsausführungsoberfläche eine Schaltfläche h
 - Funktion zum Sperren von Jobkartengerät und Jobkartenterminal, damit sie saniert werden können
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Anlagenverwaltungsfunktion für die Produktionsumgebungs-Ausführungsschnittstelle
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Diese Funktion fügt der Produktionsausführungsoberfläche eine Registerkarte für die Anlagenverwaltung hinzu. Auf dieser Registerkarte können Arbeitskräfte eine Anlage auswählen, die mit einer Maschinenressource verbunden ist, die sich im ausgewählten Filter der Auftragsliste befindet. Für die ausgewählte Maschinenanlage kann die Arbeitskraft den Status und den Zustand der Anlage anhand von Zählerwerten für bis zu vier ausgewählte Zähler anzeigen. Wenn Sie diese Funktion nutzen möchten, aktivieren Sie die folgende Funktion in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

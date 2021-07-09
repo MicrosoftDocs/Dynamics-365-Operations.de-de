@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de380113fe951f75c15f9e5526ad2f1f5cc84334
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0b04ee246d4c28e934407ccb92d792692cc4347d
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908879"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301649"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Wichtige historische Daten für Bedarfsplanungen
 
@@ -39,26 +39,6 @@ Um die Datenentität zu verwenden, müssen Sie über eine Microsoft Excel-Datei 
 
 Weitere Informationen zum Importieren von Daten, einschließlich zum Bereinigen von Daten nach einem Import, finden Sie unter [Übersicht zu Datenimportaufträgen und Datenexportaufträgen](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) und in den verwandten Themen.
 
-## <a name="example"></a>Beispiel
-
-Sie können die folgende Datei als Beispiel verwenden. Laden Sie Die [HistoricalDemandData](/dynamics/s-e/) herunter. Diese Datei enthält die historischen Bedarfsdaten für Artikel D0001. Sie enthält nur die folgenden Pflichtfelder: Standort, Menge und das Bedarfsdatum.
-
-1. Wählen Sie das Unternehmen aus, in das die historischen Bedarfsdaten importiert werden sollen.
-2. Öffnen Sie den Arbeitsbereich **Datenverwaltung**.
-3. Wählen Sie die Kachel **Importieren** aus.
-4. Geben Sie einen Namen für das Importprojekt ein, wie **Historischen Bedarf für Artikel D0001 importieren**.
-5. Wählen Sie im Feld **Quelldatenformat** das Dateiformat der Datei aus, die Sie importieren. Um die HistoricalDemandData-Datei für dieses Beispiel zu importieren, wählen Sie **CSV** aus.
-6. Wählen Sie im Feld **Entitätsname** die Option **Historischer externer Bedarf** aus.
-7. Speichern Sie die Datei auf Ihrem Computer, und laden Sie sie dann hoch.
-8. **Import** auswählen
-9. Die Seite **Ausführungszusammenfassung** wird automatisch geöffnet. Überprüfen Sie die importierten Daten auf der Seite.
-
-Nachdem Sie die historischen Bedarfsdaten importiert haben, können Sie eine Bedarfsplanung generieren.
-
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-
-[Eine statistische Grundplanung generieren](generate-statistical-baseline-forecast.md)  
-[Einzelvorgänge für Datenimport und ‑export – Übersicht](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
-
+Siehe auch [Erstellen einer statistischen Basisplanung](generate-statistical-baseline-forecast.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

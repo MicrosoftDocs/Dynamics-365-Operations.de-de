@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: 9d7eca35d6e5ce8f434f923fef69a6d13a8ac1b3
+ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222509"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261909"
 ---
 # <a name="finance-insights-home-page-preview"></a>Homepage zu Finance Insights (Vorschau)
 
@@ -32,6 +32,9 @@ Finance Insights bietet konfigurierbare und erweiterbare Modelle, mit denen Sie 
 Die Finance Insights-Vorschau ist für Testbereitstellungen in den Vereinigten Staaten von Amerika, Europa und Großbritannien verfügbar. Microsoft fügt schrittweise Unterstützung für weitere Regionen hinzu.
 
 Vorschaufunktionen können und sollten nur in Sandbox-Umgebungen der Stufe 2 aktiviert werden. Einrichtungs- und künstliche Intelligenz(KI)-Mopelle, die in einer Sandbox-Umgebung erstellt werden, können nicht in eine Produktionsumgebung migriert werden. Weitere Informationen finden Sie unter [Ergänzende Nutzungsbedingungen für Microsoft Dynamics 365 Vorschauen](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+
+> [!NOTE]
+> Diese Funktionalität wird als eine Reihe von Vorschau-Funktionen angeboten. Als Vorschau-Funktion sollten Sie die resultierenden Machine-Learning-Modelle nicht verwenden, um Ihre Geschäftsentscheidungen oder Budgetierungsvorschläge zu steuern oder zu beeinflussen. Ihre Nutzung dieser Funktion unterliegt den [Ergänzenden Nutzungsbedingungen](https://go.microsoft.com/fwlink/?linkid=2105274).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

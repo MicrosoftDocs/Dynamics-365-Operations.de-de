@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8f6edc848e1ed03f97e11cd4eb3fd1aaf4ee0c59
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 445360659e993451b1289091e43e4fc64e0ad228
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056707"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303219"
 ---
 # <a name="request-time-off"></a>Arbeitsfreie Zeit anfordern
 
@@ -59,8 +59,6 @@ Wenn Sie eine vorhandene Freizeitanforderung aktualisieren, können Sie einen An
 2. Um Ihre genehmigten Abwesenheitsanträge anzuzeigen, wählen Sie **Genehmigte Freizeit**. Um Ihre noch nicht genehmigten Abwesenheitsanträge anzuzeigen, wählen Sie **Abwesenheitsanträge**.
 
 ## <a name="cancel-time-off-requests"></a>Stornieren von Abwesenheitsanträgen
-
-[!include [Preview feature](includes/preview-feature.md)]
 
 1. Wählen Sie im Arbeitsbereich **Mitarbeiter-Self-Service** in der Kachel **Zeitsalden** die Option **Zeitsalden anzeigen**.
 

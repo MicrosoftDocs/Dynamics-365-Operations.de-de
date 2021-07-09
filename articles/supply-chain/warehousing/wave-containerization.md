@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c62e2d1b361e0ed1ab1ced42997add157b30c828
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 88e38989e3d3e46d0c43779659bc6ea2e29f08e2
+ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019050"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "6292736"
 ---
 # <a name="containerization"></a>Containerisierung
 
@@ -108,6 +108,8 @@ Gehen Sie zum Einrichten einer Containererstellungsvorlage folgendermaßen vor.
 
       - **In alle offenen Container verpacken** – Das System wertet aus, ob die Zuteilungsposition in einen Container passt, der während des Containerisierungszyklus erstellt wurde.
       - **Nur in aktuellen Container verpacken** – Das System wertet nur aus, ob die Zuteilungsposition in den zuletzt erstellten Container passt.
+
+    Weitere Informationen und Beispiele, die das Arbeiten mit Container-Packstrategien zeigen, finden Sie unter [Container-Packstrategien](container-packing-strategy-overview.md).
 
 1. Wählen Sie **Mischlogikpausen aus**, um Regeln für das Verpacken von Zuteilungspositionen in Containern einzurichten. So können Sie beispielsweise eine Regel erstellen, die Arbeitskräften erlaubt, Zuteilungspositionen für zwei unterschiedliche Artikel im gleichen Container zu verpacken. Gehen Sie folgendermaßen vor, um eine Mischungsregel zu erstellen:
 

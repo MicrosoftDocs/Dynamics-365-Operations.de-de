@@ -2,7 +2,7 @@
 title: Überwachen der Ausführung von ER-Formaten zur Behebung von Leistungsproblemen
 description: Dieses Thema bietet Informationen darüber, wie die Leistungsnachverfolgungsfunktion in der Elektronischen Berichterstellung (EB) verwendet werden kann, um Leistungsprobleme zu behandeln.
 author: NickSelin
-ms.date: 04/23/2021
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
+ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944652"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6295572"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Ausführung von EB-Formaten nachverfolgen, um Leistungsprobleme zu behandeln
 
@@ -119,12 +119,27 @@ Die entsprechenden Versionen der Datenmodell- und Modellzuordnungskonfiguratione
 2. Auf der Seite **Konfigurationen** im Aktivitätsbereich, auf der Registerkarte **Konfigurationen** in der Gruppe **Erweiterte Einstellungen** wählen Sie **Benutzerparameter** aus.
 3. Im Dialogfeld **Benutzerparameter** im Abschnitt **Ausführungsnachverfolgung** führen Sie die folgenden Schritte aus:
 
-    1. Wählen Sie im Feld **Ausführungsnachverfolgungsformat** die Option **Nachverfolgungsformat debuggen** aus, um mit dem Sammeln der Details der EB-Formatausführung zu beginnen. Wenn dieser Wert ausgewählt wurde, dann sammelt die Leistungsnachverfolgung Informationen zu der Zeit, die für die folgenden Aktivitäten aufgewendet wird:
+    1. Geben Sie im Feld **Ausführungs-Trace-Format** das Format des generierten Performance-Trace an, in dem die Ausführungsdetails für ER-Format- und Zuordnungselemente gespeichert werden sollen:
 
-        - Ausführen jeder Datenquelle in der Modellzuordnung, die aufgerufen wird, um Daten abzurufen
-        - Verarbeitung jedes Formatelements, um Daten in der Ausgabe einzugeben, die generiert wird
+        - **Debug-Trace-Format** – Wählen Sie diesen Wert, wenn Sie planen, ein ER-Format, das eine kurze Ausführungszeit hat, interaktiv auszuführen. Die Sammlung von Details zur ER-Format-Ausführung wird dann gestartet. Wenn dieser Wert ausgewählt ist, sammelt der Performance-Trace Informationen über die Zeit, die für die folgenden Aktionen aufgewendet wird:
 
-        Sie verwenden das Feld **Ausführungsnachverfolgungsformat**, um das Format der generierten Leistungsnachverfolgung anzugeben, in der die Ausführungsdetails für das EB-Format und Zuordnungselemente gespeichert werden. Indem Sie **Nachverfolgungsformat debuggen** als Wert auswählen, sind Sie in der Lage, den Inhalt der Nachverfolgung im EB-Arbeitsgang-Designer zu analysieren und das EB-Format oder die Zuordnungselemente, die in der Nachverfolgung aufgeführt werden, anzuzeigen.
+            - Ausführen jeder Datenquelle in der Modellzuordnung, die aufgerufen wird, um Daten abzurufen
+            - Verarbeitung jedes Formatelements, um Daten in der Ausgabe einzugeben, die generiert wird
+
+            Wenn Sie den Wert **Debug-Trace-Format** wählen, können Sie den Inhalt des Trace im ER-Vorgangsdesigner analysieren. Dort können Sie sich die ER-Format- oder Zuordnungselemente ansehen, die im Trace erwähnt werden.
+
+        - **Aggregiertes Trace-Format** – Wählen Sie diesen Wert, wenn Sie planen, ein ER-Format, das eine lange Ausführungszeit hat, im Batch-Modus auszuführen. Die Sammlung der aggregierten Details zur ER-Format-Ausführung wird dann gestartet. Wenn dieser Wert ausgewählt ist, sammelt der Performance-Trace Informationen über die Zeit, die für die folgenden Aktionen aufgewendet wird:
+
+            - Ausführen jeder Datenquelle in der Modellzuordnung, die aufgerufen wird, um Daten abzurufen
+            - Ausführen jeder Datenquelle in der Zuordnung des Formats, die aufgerufen wird, um Daten zu erhalten
+            - Verarbeitung jedes Formatelements, um Daten in der Ausgabe einzugeben, die generiert wird
+
+            Der Wert **Aggregiertes Trace-Format** ist in Microsoft Dynamics 365 Finance Version 10.0.20 und später verfügbar.
+
+            Im ER-Formatdesigner und ER-Model-Zuordnungsdesigner können Sie die Gesamtausführungszeit für eine einzelne Komponente anzeigen. Zusätzlich enthält die Ablaufverfolgung Details über die Ausführung, wie z. B. die Anzahl der Ausführungen sowie die minimale und maximale Zeit einer einzelnen Ausführung.
+
+            > [!NOTE]
+            > Diese Ablaufverfolgung wird auf der Grundlage des Pfads der verfolgten Komponenten gesammelt. Daher kann die Statistik falsch sein, wenn eine einzelne übergeordnete Komponente mehrere unbenannte untergeordnete Komponenten enthält oder wenn mehrere untergeordnete Komponenten denselben Namen haben.
 
     2. Legen Sie die folgenden Optionen auf **Ja** fest, um bestimmte Details der Ausführung der EB-Modellzuordnung und EB-Formatkomponenten zu sammeln:
 

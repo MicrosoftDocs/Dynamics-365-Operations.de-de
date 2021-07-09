@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79115f26047c64ddb528a73e01e76891fd9b5044
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6d32abacc1539cb930ad6f1ebcfe6fa9af4befcf
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052072"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271483"
 ---
 # <a name="buy-and-sell-leave"></a>Urlaub kaufen und verkaufen
 
@@ -47,6 +47,12 @@ Ihre Guthaben werden entweder automatisch aktualisiert oder durchlaufen vor der 
 3. Wählen **einreichen**, wenn Sie bereit sind, Ihre Anfrage einzureichen.
 
 Ihre Guthaben werden entweder automatisch aktualisiert oder durchlaufen vor der Aktualisierung einen Genehmigungsprozess. Dies hängt davon ab, wie die Kaufrichtlinie konfiguriert wurde.
+
+
+## <a name="troubleshooting"></a>Problembehandlung 
+
+Wenn ein Workflow für eine Kauf- oder Verkaufsabwesenheitsanforderung fehlschlägt, können Benutzer mit der Berechtigung **EssLeaveBuySellRequestApprover** das Nachrichtenprotokoll für alle Kauf- und Verkaufsabwesenheitsanforderungen überprüfen. Gehen Sie dazu auf **Urlaub und Abwesenheit > Link > Urlaubskäufe und -verkäufe > Meldungsprotokoll** (links oben). Das **Meldungsprotokoll** zeigt dem Benutzer, wie die Transaktionen verarbeitet wurden und die dazugehörige Workflow-Historie.
+
 
 ## <a name="see-also"></a>Siehe auch
 

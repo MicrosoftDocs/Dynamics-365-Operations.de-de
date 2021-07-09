@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f231b9ae85d136b0e963757d9561a7abda4edc
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
+ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938299"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261745"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Cloud- und Edge-Skalierungseinheiten für Workloads in der Fertigungs- und Lagerortverwaltung
 
@@ -24,7 +24,7 @@ ms.locfileid: "5938299"
 > [!IMPORTANT]
 > Die Skalierungseinheit für Microsoft Dynamics 365 Supply Chain Management wird Ihnen unter den Bedingungen zur Verfügung gestellt, die für die Nutzung des Dienstes gelten. Weitere Informationen finden Sie in den [rechtlichen Hinweisen zu Microsoft Dynamics](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> Durch die Aktivierung von Cloud- und Edge-Scale-Einheiten bestätigen Sie, dass Sie verstehen, dass einige Daten, die mit der Konfiguration und Verarbeitung von Cloud- und Edge-Scale-Einheiten zusammenhängen, in einem Rechenzentrum gespeichert werden können, das sich in den Vereinigten Staaten befindet. Weitere Informationen zur Datenverarbeitung für Cloud- und Edge-Skalierungseinheiten finden Sie weiter unten in diesem Thema im Abschnitt [Datenverarbeitung während der Verwaltung von Skalierungseinheiten](#data-processing-management).
+> Wenn Sie Cloud- und Edge-Scale-Einheiten aktivieren, werden Sie aufgefordert, zu bestätigen, dass Sie verstehen, dass einige Daten, die mit der Konfiguration und Verarbeitung von Cloud- und Edge-Scale-Einheiten zusammenhängen, möglicherweise in einem Rechenzentrum gespeichert werden, das sich in den USA befindet. Weitere Informationen zur Datenverarbeitung für Cloud- und Edge-Skalierungseinheiten finden Sie weiter unten in diesem Thema im Abschnitt [Datenverarbeitung während der Verwaltung von Skalierungseinheiten](#data-processing-management).
 
 ## <a name="core-value-proposition-for-scale-units"></a>Kernwertversprechen für Skalierungseinheiten
 

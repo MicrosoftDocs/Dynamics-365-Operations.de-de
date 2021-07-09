@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a7ed310ebdef130b0fb09c5db19397398dc5042
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 7901bcfc239885aa53863729e573d1f37ba67f81
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216841"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306414"
 ---
 # <a name="inventory-forecasts"></a>Bestandsprognosen
 
@@ -353,20 +353,46 @@ Dieses Verfahren dient zum Verarbeiten vorhandener Buchungspositionen. Planungsb
 1. Verwenden Sie den Abschnitt **Finanzdimensionen**, um die Finanzdimensionen von Planungspositionen zu aktualisieren. Wählen Sie die Finanzdimensionen aus, die Sie ändern möchten, und geben Sie dann einen Wert ein, der auf die ausgewählten Dimensionen angewendet werden soll.
 1. Wählen Sie **OK**, um Ihre Änderungen zu übernehmen.
 
-## <a name="run-forecast-planning"></a>Prognoseplanung ausführen
+## <a name="use-forecasts-with-master-planning"></a>Prognosen mit der Produktprogrammplanung verwenden
 
-Wenn Sie Ihre Bedarfsplanung und/oder Beschaffungsplanung eingegeben haben, können Sie einen Bedarfsplanungslauf durchführen, um den Bruttobedarf an Material und Kapazität zu berechnen und um Bestellvorschläge zu erstellen.
+Nachdem Sie Ihre Bedarfsprognose und/oder Vorratsprognose eingegeben haben, können Sie die Prognosen während der Masterplanung einbeziehen, um den erwarteten Bedarf und/oder Vorrat in Ihrem Masterplanungslauf zu berücksichtigen. Wenn Prognosen in die Produktprogrammplanung einbezogen werden, werden die Bruttobedarfe für Materialien und Kapazitäten berechnet und geplanter Aufträge generiert.
 
-1. Gehen Sie zu **Masterplanung \> Prognose \> Prognoseplanung**.
-1. Im Feld **Prognoseplan** wählen Sie einen Prognoseplan.
-1. Aktivieren Sie **Bearbeitungszeit nachverfolgen**, um die Bearbeitungszeit für jede Planungsaufgabe zu erfassen.
-1. Geben Sie im Feld **Anzahl von Threads** einen Wert ein. (Weitere Informationen finden Sie unter [Verbessern der Masterplanungsleistung](master-planning-performance.md) .)
-1. Geben Sie im Feld **Kommentar** einen Text ein, um zusätzliche Information zu erfassen, die erforderlich sind.
-1. Wählen Sie auf dem Inforegister **Aufzeichnungen enthalten** **Filter** aus, um die Auswahl der Artikel zu begrenzen.
-1. Geben Sie im Inforegister **Im Hintergrund ausführen** die Parameter des Stapels an.
+### <a name="set-up-a-master-plan-to-include-an-inventory-forecast"></a>Festlegen eines Masterplans zur Einbeziehung einer Bestandsprognose
+
+Um einen Masterplan so festzulegen, dass er eine Bestandsprognose enthält, führen Sie die folgenden Schritte aus.
+
+1. Wechseln Sie zu **Produktprogrammplanung \> Einrichtung \> Pläne \> Produktprogrammpläne**.
+1. Wählen Sie einen bestehenden Plan aus, oder erstellen Sie einen neuen Plan.
+1. Legen Sie im Inforegister **Allgemein** die folgenden Felder fest:
+
+    - **Prognosemodell** - Wählen Sie das zu verwendende Prognosemodell. Dieses Modell wird berücksichtigt, wenn ein Versorgungsvorschlag für den aktuellen Masterplan erstellt wird.
+    - **Bestandsprognose einbeziehen** – Legen Sie diese Option auf *Ja* fest, um die Bestandsprognose in den aktuellen Masterplan einzubeziehen. Wenn Sie sie auf *Nein* festlegen, werden Transaktionen der Versorgungsprognose nicht in den Masterplan aufgenommen.
+    - **Bedarfsprognose einbeziehen** - Legen Sie diese Option auf *Ja* fest, um die Bedarfsplanung in den aktuellen Masterplan einzubeziehen. Wenn Sie sie auf *Nein* festlegen, werden die Transaktionen der Bedarfsplanung nicht in den Masterplan aufgenommen.
+    - **Methode zur Reduzierung des Prognosebedarfs** - Wählen Sie die Methode, die zur Reduzierung des Prognosebedarfs verwendet werden soll. Weitere Informationen finden Sie unter [Schlüssel für Prognosereduzierung](planning-optimization/demand-forecast.md#reduction-keys).
+
+1. Auf dem Inforegister **Zeiträume in Tagen** können Sie die folgenden Felder festlegen, um den Zeitraum festzulegen, in dem die Planung berücksichtigt wird:
+
+    - **Prognoseplan** - Legen Sie diese Option auf *Ja* fest, um den Prognoseplan-Zeitzaun, der von den einzelnen Deckungsgruppen ausgeht, außer Kraft zu setzen. Legen Sie sie auf *Nein* fest, um die Werte aus den einzelnen Coverage-Gruppen für den aktuellen Masterplan zu verwenden.
+    - **Prognosezeitraum** - Wenn Sie die Option **Prognoseplan** auf *Ja* festlegen, geben Sie die Anzahl der Tage (ab dem heutigen Datum) an, für die die Bedarfsplanung gelten soll.
+
+    > [!IMPORTANT]
+    > Die Option **Prognoseplan** wird bei der Planungsoptimierung noch nicht unterstützt.
+
+### <a name="run-a-master-plan-that-includes-an-inventory-forecast"></a>Einen Masterplan ausführen, der eine Bestandsprognose enthält
+
+Führen Sie die folgenden Schritte aus, um einen Masterplan auszuführen, der eine Bestandsprognose enthält.
+
+1. Gehen Sie zu **Produktprogrammplanung \> Arbeitsbereiche \> Masterplanung**.
+1. Geben Sie im Feld **Stammplan** den Masterplan ein oder wählen Sie ihn aus, den Sie im vorherigen Verfahren festgelegt haben.
+1. Wählen Sie auf der Kachel **Stammplanung** die Option **Ausführen**.
+1. Legen Sie in der Dialogbox **Produktprogrammplanung** die Option **Verarbeitungszeit verfolgen** auf *Ja* fest.
+1. Geben Sie im Feld **Anzahl von Threads** eine Zahl ein.
+1. Wählen Sie auf der Seite **Einschließende Datensätze** Inforegister die Option **Filter**.
+1. Ein Standard-Dialogfeld für den Abfrage-Editor wird angezeigt. Markieren Sie auf der Registerkarte **Bereich** die Zeile, in der das Feld **Feld** auf *Elementnummer* festgelegt ist.
+1. Wählen Sie im Feld **Kriterium** die Elementnummer aus, die in den Plan aufgenommen werden soll.
 1. Wählen Sie **OK** aus.
 
-Um die berechneten Anforderungen anzuzeigen, öffnen Sie die Seite **Bruttobedarf**. Wählen Sie zum Beispiel auf der Seite **Veröffentlichte Produkte** auf der Registerkarte **Planen** im Abschnitt **Anforderungen** die Option **Bruttoanforderungen**.
+Um die berechneten Anforderungen anzuzeigen, öffnen Sie die Seite **Bruttobedarf**. Beispiel: Wählen Sie auf der Seite **Freigegebene Produkte** im Aktionsbereich auf der Registerkarte **Plan** in der Gruppe **Bedarf** die Option **Bruttobedarf**.
 
 Um die erzeugten Planaufträge anzuzeigen, gehen Sie zu **Masterplanung \> Allgemein \> Geplante Aufträge**, und wählen Sie den entsprechenden Prognoseplan aus.
 
@@ -376,5 +402,6 @@ Um die erzeugten Planaufträge anzuzeigen, gehen Sie zu **Masterplanung \> Allge
 - [Einrichten einer Bedarfsplanung](demand-forecasting-setup.md)
 - [Eine statistische Grundplanung generieren](generate-statistical-baseline-forecast.md)
 - [Manuelle Anpassungen an der Grundplanung](manual-adjustments-baseline-forecast.md)
+- [Produktprogrammplanung mit Bedarfsprognosen](planning-optimization/demand-forecast.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

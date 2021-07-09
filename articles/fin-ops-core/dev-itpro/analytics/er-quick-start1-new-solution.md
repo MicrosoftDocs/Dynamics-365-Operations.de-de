@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 90e5381c2d30753e3ad82a38d7361b411f1d7a87
+ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224033"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304392"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Entwerfen einer neuen EB-Lösung zum Drucken eines benutzerdefinierten Berichts
 
@@ -185,7 +185,7 @@ Durch Ausführen der Schritte im Abschnitt [Importieren einer neuen Datenmodellk
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Importieren einer neuen Datenmodellkonfiguration
 
-1. Laden Sie die Datei [Fragebögen model.version.1.xml ](https://go.microsoft.com/fwlink/?linkid=851448) herunter und speichern Sie sie auf Ihrem lokalen Computer.
+1. Laden Sie die Datei [Fragebögen model.version.1.xml ](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) herunter und speichern Sie sie auf Ihrem lokalen Computer.
 2. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 3. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** die Option **Berichterstellungskonfigurationen** aus.
 4. Wählen Sie im Aktivitätsbereich **Austausch** \> **Aus XML-Datei laden** aus.
@@ -300,7 +300,7 @@ Durch Ausführen der Schritte im Abschnitt [Importieren einer neuen Modellzuordn
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Importieren einer neuen Modellzuordnungskonfiguration
 
-1. Laden Sie die Datei [Questionnaires mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) herunter und speichern Sie sie auf Ihrem lokalen Computer.
+1. Laden Sie die Datei [Questionnaires mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) herunter und speichern Sie sie auf Ihrem lokalen Computer.
 2. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 3. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** die Option **Berichterstellungskonfigurationen** aus.
 4. Wählen Sie im Aktivitätsbereich **Austausch** \> **Aus XML-Datei laden** aus.
@@ -366,7 +366,7 @@ Sie müssen Datenquellen konfigurieren, um auf die Anwendungstabellen zuzugreife
     2. Wählen Sie **Hinzufügen** aus.
     3. Geben Sie im Dialogfeld im Feld **Name** den Eintrag **\$ResultGroup** ein.
     4. Wählen Sie **Formel bearbeiten** aus.
-    5. Geben Sie im [EB-Formeleditor](general-electronic-reporting-formula-designer.md) im Feld **Formel** den Eintrag **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** ein, um den [Pfad](er-formula-language.md#paths) der 1:n-Beziehung zwischen den KMCollection- und KMQuestionResultGroup-Tabellen zu verwenden.
+    5. Geben Sie im [EB-Formeleditor](general-electronic-reporting-formula-designer.md) im Feld **Formel** den Eintrag **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** ein, um den [Pfad](er-formula-language.md#Paths) der 1:n-Beziehung zwischen den KMCollection- und KMQuestionResultGroup-Tabellen zu verwenden.
     6. Klicken Sie auf **Speichern** und schließen Sie den Formeleditor.
     7. Wählen Sie **OK** aus, um das neue berechnete Feld hinzuzufügen.
 
@@ -547,7 +547,7 @@ Der Status von Version 1.1 dieser Konfiguration wird von **Entwurf** zu **Abgesc
 
 Das EB-Framework verwendet vordefinierte Vorlagen, um Berichte in Microsoft Office-Formaten zu generieren (Excel-Arbeitsmappen oder Word-Dokumente) zu erstellen. Während der Erstellung des erforderlichen Berichts wird eine Vorlage mit den erforderlichen Daten gemäß dem konfigurierten Datenfluss ausgefüllt. Daher müssen Sie zuerst eine Vorlage für Ihren benutzerdefinierten Bericht entwerfen. Diese Vorlage muss als Excel-Arbeitsmappe konzipiert sein, deren Struktur das Layout eines benutzerdefinierten Berichts darstellt. Sie müssen jedes Excel-Element benennen, das Sie mit den erforderlichen Daten füllen möchten.
 
-1. Laden Sie die Datei [Questionnaires report template.xslx](https://go.microsoft.com/fwlink/?linkid=851448) herunter und speichern Sie sie auf Ihrem lokalen Computer.
+1. Laden Sie die Datei [Questionnaires report template.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) herunter, und speichern Sie sie auf Ihrem lokalen Computer.
 2. Öffnen Sie die Datei in Excel und überprüfen Sie die Struktur der Arbeitsmappe.
 
 Wie die folgende Abbildung zeigt, wurde die heruntergeladene Vorlage so gestaltet, dass bestimmte Fragebögen gedruckt werden, in denen die Fragen eines Fragebogens zusammen mit den entsprechenden Antworten dargestellt werden.
@@ -572,7 +572,7 @@ Durch Ausführen der Schritte im Abschnitt [Importieren einer entworfenen Format
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Importieren einer entworfenen Formatkonfiguration
 
-1. Laden Sie die Datei [Questionnaires format.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) herunter und speichern Sie sie auf Ihrem lokalen Computer.
+1. Laden Sie die Datei [Questionnaires format.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) herunter und speichern Sie sie auf Ihrem lokalen Computer.
 2. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 3. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** die Option **Berichterstellungskonfigurationen** aus.
 4. Wählen Sie im Aktivitätsbereich **Austausch** \> **Aus XML-Datei laden** aus.
