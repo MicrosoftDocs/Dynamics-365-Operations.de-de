@@ -15,43 +15,27 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4a64794a0e04516441fab628d441640e4d154b8d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c36fe4c8376ad0364516c0268965c798e20436c6
+ms.sourcegitcommit: 3a9599e9b9458434c0e44d295eabd2304c5650be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796891"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "6334424"
 ---
-# <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Artikel über mehrere Debitorenaufträge und Rechnungen zurückgeben
+# <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Artikel über mehrere Debitorenaufträgen und Rechnungen zurückgeben
 
 [!include [banner](includes/banner.md)]
 
 
-Dieser Artikel beschreibt zwei Funktionen, mit denen die Rückgabe von Debitorenaufträgen über mehrere Rechnungen optimiert wird. 
+Rücklieferungen können über mehrere Aufträge und Rechnungen erfolgen. 
 
-## <a name="enable-refunds-over-multiple-captures"></a>Rückerstattungen über mehrere Erfassungen aktivieren
+## <a name="configure-commerce-to-support-returns-across-multiple-customer-order-and-invoices"></a>Commerce konfigurieren, um Rücklieferungen für mehrere Debitorenaufträge und Rechnungen zu unterstützen
 
-Diese Funktion ermöglicht mehrere verknüpfte Rückerstattungen für denselben Debitorenauftrag. 
-
-1. Wechseln Sie zum Arbeitsbereich **Funktionsverwaltung** und suchen Sie nach **Rückerstattungen über mehrere Erfassungen aktivieren**.
-2. Wählen Sie **Rückerstattungen über mehrere Erfassungen aktivieren** und klicken Sie dann auf **Aktivieren**. 
-
-## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Richtige Steuerberechnung für Retouren mit Teilmengen aktivieren
-
-Diese Funktion stellt sicher, dass bei der Retoure eines Auftrags über mehrere Rechnungen die Steuern letztendlich dem ursprünglich berechneten Steuerbetrag entsprechen. 
-
-1. Wechseln Sie zum Arbeitsbereich **Funktionsverwaltung** und suchen Sie nach **Richtige Steuerberechnung für Retouren mit Teilmengen aktivieren**.
-2. Wählen Sie **Richtige Steuerberechnung für Retouren mit Teilmengen aktivieren** aus und klicken Sie dann auf **Aktivieren**. 
-
+1. Wechseln Sie zu **Handelsparameter \> Debitorenaufträge**.
+1. Aktivieren Sie den Parameter **Rücklieferungen für mehrere Aufträge aktivieren**. 
 
 ## <a name="process-returns"></a>Rücklieferungen verarbeiten
 
-Nachdem diese Funktionen aktiviert und die Änderungen mit den Shops synchronisiert wurden, kann der Kassierer im Shop mehrere Aufträge für einen Debitor zur Rücklieferung auswählen.
+Nachdem der Parameter aktiviert und die Änderungen mit den Shops synchronisiert wurden, kann der Kassierer im Shop mehrere Aufträge für einen Debitor zur Rücklieferung auswählen.
 
 Wenn die Aufträge ausgewählt werden, wird eine Liste aller retournierbaren Produkte für alle Rechnungen des Auftrags angezeigt. Der Kassierer kann dann die Produkte auswählen, die retourniert werden sollen. Es wird ein einzelner Rücklieferungsauftrag für alle ausgewählten Produkte erstellt.
-
-Wenn der Auftrag vollständig zurückgesandt wird, entspricht der an den Kunden zurückgegebene Steuerbetrag dem ursprünglich berechneten Steuerbetrag.
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

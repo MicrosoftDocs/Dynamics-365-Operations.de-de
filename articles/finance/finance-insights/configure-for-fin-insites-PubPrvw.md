@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 613bd4816e2f0c4fbb56cf79779a08c6a09592bd
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: eeb3061f215666d0aeb32094b5d04a9ae6e618f2
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222611"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309664"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfiguration für Finance Insights für die öffentliche Vorschau (Vorschau) – Version 10.0.20 und höher
 
@@ -33,7 +33,7 @@ ms.locfileid: "6222611"
 Finance Insights kombiniert Funktionen von Microsoft Dynamics 365 Finance mit Dataverse, Azure und AI Builder, um leistungsstarke Prognosetools für Ihr Unternehmen zu bieten. In diesem Thema wird die Konfiguration von Dynamics 365 Finance Version 10.0.20 erläutert, mit denen Ihr System die in der öffentlichen Vorschau von Finance Insights verfügbaren Funktionen nutzen kann.
 
 > [!NOTE]
-> Die in diesem Thema beschriebenen Konfigurationsschritte gelten nur für Finance Version 10.0.20 und höher. Informationen zum Einrichten von Finance Insights in Version 10.0.19 und früher finden Sie unter [Konfiguration für Finance Insights – Versionen 10.0.18](configure-for-fin-insites.md).
+> Die in diesem Thema beschriebenen Konfigurationsschritte gelten nur für Finance Version 10.0.20 und höher. Informationen zum Einrichten von Finance Insights in Version 10.0.19 und früher finden Sie unter [Konfiguration für Finance Insights – Versionen 10.0.19](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>Finance bereitstellen
 
@@ -748,6 +748,8 @@ Führen Sie diese Schritte aus, um das Finance Insights-Add-In zu installieren.
 2. Wählen Sie Im Abschnitt **Umgebungs-Add-Ins** die Option **Neues Add-In installieren** aus.
 3. Wählen Sie das **Finance insights**-Add-In aus.
 4. Stimmen Sie den Bedingungen zu und wählen Sie dann **Installieren**.
+
+Die Installation des Add-Ins kann einige Minuten dauern.
 
 ## <a name="feedback-and-support"></a>Feedback und Support
 

@@ -349,15 +349,17 @@
                   items:
                     - name: Überblick über MyLeaveRequests
                       href: hr-developer-api-myleaverequests-overview.md
-                    - name: Urlaubsantrag an Workflow übermitteln
+                    - name: Urlaubsanforderung an Workflow übermitteln
                       href: hr-developer-api-myleaverequests-submit.md
         - name: API zur ATS-Integration
           items:
             - name: Einführung
               href: hr-admin-integration-ats-api-introduction.md
-            - name: Personalbeschaffungsantrag und verwandte Entitäten
+            - name: Server-zu-Server-Authentifizierung für ATS-Integrationen
+              href: hr-admin-integration-ats-api-s2s-auth.md
+            - name: Personalbeschaffungsanforderung und verwandte Entitäten
               items:
-                - name: Personalbeschaffungsantrag
+                - name: Personalbeschaffungsanforderung
                   href: hr-admin-integration-ats-api-recruiting-request.md
                 - name: "Personalbeschaffungsantrag\_– Ausbildung"
                   href: hr-admin-integration-ats-api-recruiting-request-education.md
@@ -443,16 +445,40 @@
               href: hr-admin-integration-payroll-api-introduction.md
             - name: Lohnentitäten generieren und überprüfen
               href: hr-admin-integration-payroll-api-generate-review-entities.md
-            - name: Mitarbeiter der Lohnbuchhaltung
-              href: hr-admin-integration-payroll-api-payroll-employee.md
-            - name: Lohn – Adresse der Arbeitskraft
-              href: hr-admin-integration-payroll-api-payroll-worker-address.md
-            - name: Fester Vergütungsplan für Lohnabrechnung
-              href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
-            - name: Lohnpositions-Einzelvorgang
-              href: hr-admin-integration-payroll-api-payroll-position-job.md
-            - name: Lohnposition
-              href: hr-admin-integration-payroll-api-payroll-position.md
+            - name: Parameter für die Lohnintegration
+              href: hr-admin-integration-payroll-api-parameters.md
+            - name: Lohnentitäten
+              items:
+                - name: Mitarbeiter der Lohnbuchhaltung
+                  href: hr-admin-integration-payroll-api-payroll-employee.md
+                - name: Lohn – Adresse der Arbeitskraft
+                  href: hr-admin-integration-payroll-api-payroll-worker-address.md
+                - name: Fester Vergütungsplan für Lohnabrechnung
+                  href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+                - name: Variabler Vergütungsplan für Lohnabrechnung
+                  href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md
+                - name: Lohnposition
+                  href: hr-admin-integration-payroll-api-payroll-position.md
+                - name: Lohnpositions-Einzelvorgang
+                  href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: Entitäten im Zusammenhang mit Urlaub und Abwesenheit
+              items:
+                - name: Urlaubssaldo
+                  href: hr-admin-integration-payroll-api-leave-balance.md
+                - name: Urlaubstyp
+                  href: hr-admin-integration-payroll-api-leave-type.md
+                - name: Urlaubsanforderung
+                  href: hr-admin-integration-payroll-api-leave-request.md
+            - name: Optionssätze
+              items:
+                - name: Geschlecht
+                  href: hr-admin-integration-payroll-api-gender.md
+                - name: Nein Ja
+                  href: hr-admin-integration-payroll-api-no-yes.md
+                - name: Prämientyp
+                  href: hr-admin-integration-payroll-api-award-type.md
+                - name: Prozesstyp
+                  href: hr-admin-integration-payroll-api-process-type.md
     - name: Benutzerhandbuch
       items:
         - name: Übersicht
@@ -503,7 +529,7 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
             - name: Workflow-System
               items:
-                - name: Workflowsystem – Übersicht
+                - name: Übersicht über das Workflowsystem
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
                 - name: Workflow-Systemarchitektur
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
@@ -521,13 +547,13 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
                     - name: Konfigurieren von automatisierten Aufgaben
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurieren von Genehmigungsprozessen
+                    - name: Genehmigungsprozesse konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurieren von Genehmigungsschritten
+                    - name: Genehmigungsschritte konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurieren von manuellen Entscheidungen
+                    - name: Manuelle Entscheidungen konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurieren von bedingten Entscheidungen
+                    - name: Bedingte Entscheidungen konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
                     - name: Konfigurieren von parallelen Aktivitäten
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
@@ -559,9 +585,9 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
                     - name: Eine SubmitToWorkflow-Klasse erstellen
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Eine Workflow-Dokumentenklasse einem Workflow-Typ zuordnen
+                    - name: Eine Workflowdokumenten-Klasse einem Workflowtyp zuordnen
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
-                - name: Bericht zu Workflow-Typen
+                - name: Bericht zu Workflowtypen
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
                 - name: Workflow-FAQ
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
@@ -599,7 +625,9 @@
           items:
             - name: Belegschaft organisieren
               href: hr-personnel-departments-jobs-positions.md
-            - name: Komponenten eines Einzelvorgangs einrichten
+            - name: Arbeitsbereich „Personalmanagement“
+              href: hr-personnel-personnel-management-workspace.md
+            - name: Komponenten einer Stelle einrichten
               href: hr-personnel-jobs.md
             - name: Abteilungen definieren
               href: hr-personnel-define-departments.md
@@ -607,9 +635,11 @@
               href: hr-personnel-add-department-hierarchy.md
             - name: Stellen definieren
               href: hr-personnel-define-jobs.md
-            - name: Einen Arbeitszeitkalender erstellen
+            - name: Positionen
+              href: hr-personnel-positions.md
+            - name: Arbeitszeitkalender erstellen
               href: hr-personnel-create-working-time-calendar.md
-            - name: Kandidaten für Stelle anwerben
+            - name: Kandidaten für eine Stelle anwerben
               href: hr-personnel-recruit.md
             - name: FAQ zu Personalaktivitäten
               href: hr-personnel-actions-faq.md
@@ -837,3 +867,69 @@
               href: hr-employee-manager-self-service-edit-personal-information.md
             - name: Bearbeitung persönlicher Informationen beschränken
               href: hr-employee-self-service-restrict-editing.md
+        - name: Workflowsystem verwenden
+          items:
+            - name: Übersicht über das Workflowsystem
+              href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+            - name: Workflow-Systemarchitektur
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+            - name: Workflow-Elemente
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: Workflow-Aktivitäten
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+            - name: Erstellen von Workflows
+              items:
+                - name: Erstellen von Workflows – Übersicht
+                  href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurieren von Workflow-Eigenschaften
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurieren von manuellen Aufgaben
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurieren von automatisierten Aufgaben
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Genehmigungsprozesse konfigurieren
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Genehmigungsschritte konfigurieren
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Aufwendungsprüfer konfigurieren
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/human-resources/toc.json
+                - name: Manuelle Entscheidungen konfigurieren
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Bedingte Entscheidungen konfigurieren
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurieren von parallelen Aktivitäten
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurieren von Parallelzweigen
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurieren von Positionsworkflows
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurieren des Batchauftrags für die Workflowmeldungsverarbeitung als kritisch
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+            - name: Delegieren von Arbeitsaufgaben in einem Workflow
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Anzeigen der Workflowhistorie
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurieren des Systems zum Senden workflowbezogener E-Mail-Nachrichten an Benutzer
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Workflowtypen
+              items:
+                - name: Einen Workflowtyp erstellen
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Prüfliste für Workflowtypen
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                - name: Workflowkategorie erstellen
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                - name: Abfrage für einen Workflowtyp erstellen
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                - name: Einen neuen Workflowtyp erstellen
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                - name: Eine Workflowdokumentenklasse erstellen
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Eine SubmitToWorkflow-Klasse erstellen
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Workflow-Dokumentenklasse einem Workflow-Typ zuordnen
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+            - name: Bericht zu Workflowtypen
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+            - name: Workflow-FAQ
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json

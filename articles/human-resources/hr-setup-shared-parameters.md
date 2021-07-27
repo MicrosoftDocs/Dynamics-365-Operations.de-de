@@ -2,7 +2,7 @@
 title: Konfigurieren von geteilten Parametern
 description: Sie müssen gemeinsame Parameter für Datensätze einrichten, die über Unternehmen freigegeben werden, wie Positionsdatensätzen einrichten. Dieser Artikel beschreibt, wie Sie Personalverwaltungsparameter einrichten, die für alle juristischen Personen verwendet werden.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 888caa19a9befd32ce27b27e499cdfe88a1bbf01
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 7aff01bee8cadcf852ae32fd60447c68e2174a2a
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054523"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6332994"
 ---
 # <a name="configure-shared-parameters"></a>Konfigurieren von geteilten Parametern
 
@@ -32,18 +32,31 @@ Gewisse Datentypen wie Positionsdaten werden in den Unternehmen freigegeben. Fü
 
 Auf der Seite **Freigegebene Parameter für Personalverwaltung** werden Parameter basierend auf deren Funktionalität in Bereiche gruppiert. 
 
-### <a name="previously-released-functionality"></a>Bereits freigegebene Funktionen
+### <a name="settings"></a>Einstellungen
 Auf der Registerkarte **Kennung** müssen Sie die Kennungstypen wählen, die die Kennnummern darstellen, die auf der Seite aufgeführten werden. Sie müssen Ausweistypen einrichten, bevor Sie Kennungsinformationen für Arbeitskräfte eingeben können. Informationen zur Sozialversicherungsnummer, zum Personalausweisnummer, Ausländernummer und persönlicher ID-Code wird auf der Seite **Kennungstyp** verwaltet. Um einen neuen Kennungstyp zu definieren oder die Liste der vorhandenen Typen zu prüfen, klicken Sie **Personalverwaltung** &gt; **Re Links** &gt; **Einstellungen** &gt; **Kennungstypen** Sie können einen einfachen Code und eine Beschreibung eingeben. 
-
-### <a name="if-youre-using-dynamics-365-human-resources"></a>Wenn Sie Dynamics 365 Human Resources verwenden:
-Auf der Registerkarte **Kennung** müssen Sie die Kennungstypen wählen, die die Kennnummern darstellen, die auf der Seite aufgeführten werden. Sie müssen Ausweistypen einrichten, bevor Sie Kennungsinformationen für Arbeitskräfte eingeben können. Informationen zur Sozialversicherungsnummer, zum Personalausweisnummer, Ausländernummer und persönlicher ID-Code wird auf der Seite **Kennungstyp** verwaltet. Um einen neuen Kennungstyp zu definieren oder die Liste der vorhandenen Typen zu prüfen, klicken Sie **Personalverwaltung** &gt; **Einstellungen** &gt; **Kennungstypen** an. Sie können einen einfachen Code und eine Beschreibung eingeben. 
 
 Auf der Registerkarte **Nummernkreise** können Sie die Nummernkreise auswählen, die für die folgenden Datensätze verwendet werden: Personalnummer, Position, Benutzeranforderungs-ID, I-9-Dokument, Bewerber, Diskussion, Vorteils-ID und Mitarbeiteraktivität (wenn dieser Datensatztyp. aktiviert ist). Um Zahlenkreisreferenzen und -codes zu verwalten, verwenden Sie die Listenseite **Zahlensequenz**. Um diese Seite zu suchen, verwenden Sie die Seiten-Suchfunktion. 
 
 Geben Sie auf der Registerkarte **Positionen** an, ob neue Positionen für Zuweisung standardmäßig verfügbar sind:
 
--   **Immer** – Sie können Arbeitskräfte den neuen Positionen zuordnen, wenn Positionen erstellt werden. Wenn Positionen erstellt werden, werden das **Verfügbar für die Zuweisung** Datum und die Uhrzeit auf der Registerkarte " **Allgemein** der Seite **Position** automatisch auf das Datum und die Uhrzeit festgelegt.
--   **Nie** – Sie können keine Arbeitskräfte den neuen Positionen zuordnen, wenn Positionen erstellt werden. Wenn Sie diese Option auswählen, müssen Sie die Seite **Position** für jede neu verfügbare Position öffnen und dann auf der Registerkarte **Allgemein** das Datum **Verfügbar für Zuweisung** eingeben, um die Arbeitskraftzuweisung zu aktivieren.
+- **Immer** – Sie können Arbeitskräfte den neuen Positionen zuordnen, wenn Positionen erstellt werden. Wenn Positionen erstellt werden, werden das **Verfügbar für die Zuweisung** Datum und die Uhrzeit auf der Registerkarte " **Allgemein** der Seite **Position** automatisch auf das Datum und die Uhrzeit festgelegt.
+- **Nie** – Sie können keine Arbeitskräfte den neuen Positionen zuordnen, wenn Positionen erstellt werden. Wenn Sie diese Option auswählen, müssen Sie die Seite **Position** für jede neue Position öffnen, sobald sie verfügbar wird. Geben Sie dann auf der Registerkarte **Allgemein** ein **Für eine Zuweisung verfügbar**-Datum ein, um die Mitarbeiterzuweisung zu aktivieren.
 
+Auf der Registerkarte **Erweiterter Zugriff** können Sie den Zugriff auf einige Informationen oder Links einschränken:
+
+- **Zugriff auf Arbeitskraftinformationen einschränken** – Aktivieren Sie diese Funktion, wenn Benutzer Arbeitskraftinformationen nur für die juristischen Personen anzeigen können sollen, auf die sie Zugriff haben, und für Mitarbeiter, die bei diesen juristischen Personen beschäftigt sind.
+
+    Nachdem diese Funktion aktiviert wurde, müssen Sie die folgenden Schritte ausführen, um die entsprechenden Berechtigungen für jeden Benutzer festzulegen, der die Informationen nur eingeschränkt anzeigen können soll:
+
+    1. Wählen Sie auf der Seite **Benutzer** einen Benutzer aus.
+    1. Wählen Sie eine Rolle für den Benutzer aus. Die Option **Organisationen zuweisen** wird verfügbar.
+    1. Wählen Sie **Organisationen zuweisen** aus.
+    1. Wählen Sie auf der neuen Seite **Zugriff individuell auf spezifische Organisationen erteilen** und dann die Organisationen aus, auf die der Benutzer Zugriff haben soll.
+    1. Wiederholen Sie die Schritte 2 bis 4 für jede weitere Rolle des Benutzers, einschließlich der Systembenutzerrolle.
+
+    > [!NOTE]
+    > Die Unternehmen, auf die ein Benutzer Zugriff hat, müssen in allen Rollen des Benutzers übereinstimmen.
+
+- **Ansicht „Unternehmensübergreifende Vergütung aktivieren“** – Die Mitarbeitervergütung wird pro juristischer Person des Beschäftigungsverhältnisses zugeordnet. Manchmal kann ein Mitarbeiter bei mehreren juristischen Personen gleichzeitig beschäftigt sein. Wenn diese Funktion aktiviert ist, wird die Vergütung für jede juristische Person im Mitarbeiter-Self-Service und Manager-Self-Service angezeigt, ohne dass Sie die juristischen Personen ändern müssen. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

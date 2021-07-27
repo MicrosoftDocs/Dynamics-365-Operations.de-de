@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d0d4afd74f9a0f9018629fa92ab6595bfa94f973
-ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
+ms.openlocfilehash: 1d73a382f1786a73a5af917b28d00384ecc36aa8
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6026204"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309765"
 ---
 # <a name="set-up-postdated-checks"></a>Einrichten von vordatierten Schecks
 
@@ -58,6 +58,7 @@ Die Rolle dieser Prozedur ist "Finanzverwalter". Für diese Prozedur wird das De
 > 
 > Füllen Sie beim Festlegen der **Zahlungmethode** (**Kreditorenkonto > Zahlungssetup > Zahlungsmethoden**) **Transferkonto** nicht aus. In diesem Fall wird als Gegenkonto das Bankkonto eingetragen, das unter **Zahlungsmethode** angegeben ist.
 >  
-> Wenn die Funktion aktiviert ist und das Sitzungsdatum niedriger ist als das Fälligkeitsdatum, wird beim Buchen einer Zahlungserfassung die folgende Fehlermeldung angezeigt: „Das Fälligkeitsdatum muss niedriger oder gleich dem Sitzungsdatum sein, wenn der Gegenkontotyp die Bank ist“. Wenn die Funktion nicht aktiviert ist, können Sie eine Zahlungserfassung mit einem vordatierten Scheck buchen, wenn das Sitzungsdatum niedriger ist als das Fälligkeitsdatum.    
+> Wenn die Funktion aktiviert ist und das Sitzungsdatum niedriger ist als das Fälligkeitsdatum, wird beim Buchen einer Zahlungserfassung die folgende Fehlermeldung angezeigt: „Das Fälligkeitsdatum muss niedriger oder gleich dem Sitzungsdatum sein, wenn der Gegenkontotyp die Bank ist“. Wenn die Funktion nicht aktiviert ist, können Sie eine Zahlungserfassung mit einem vordatierten Scheck buchen, wenn das Sitzungsdatum niedriger ist als das Fälligkeitsdatum.
+> Diese Funktion ist ab Version 10.0.21 und höher verfügbar.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

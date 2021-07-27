@@ -13,18 +13,26 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8918044dbf84e79015dc3bca904f204123a37db8
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e13a6b3608802eb7bb2bc00686c2e914cc765587
+ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056779"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314164"
 ---
 # <a name="payroll-position"></a>Lohnposition
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dieses Thema enthält Details und eine Beispielabfrage für die Entität „Lohndetails für Positionen“ in Dynamics 365 Human Resources.
+Dieses Thema beschreibt die Entität „Lohnposition“ in Dynamics 365 Human Resources.
+
+Physischer Name: mshr_payrollpositionentity.
+
+### <a name="description"></a>Beschreibung
+
+Diese Entität stellt positionsbezogene Informationen für einen bestimmten Mitarbeiter bereit.
+
+Physischer Name: 
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -41,7 +49,7 @@ Dieses Thema enthält Details und eine Beispielabfrage für die Entität „Lohn
 | **Gültig bis**<br>validto<br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt<br>Erforderlich |Das Datum, ab dem die Positionsdetails gültig sind.  |
 | **Gültig ab**<br>validfrom<br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt<br>Erforderlich |Das Datum, bis zu dem die Positionsdetails gültig sind.  |
 
-**Abfrage**
+## <a name="example-query"></a>Beispielabfrage
 
 **Anforderung**
 
@@ -53,15 +61,21 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollpositionentities?$filter=mshr_po
 
 ```json
 {
-            "mshr_positionid": "000276",
-            "mshr_paycycleid": "w",
-            "mshr_annualregularhours": 3000,
-            "mshr_paidbylegalentity": "USMF",
-            "mshr_validfrom": "2021-03-14T00:00:00Z",
-            "mshr_validto": "2154-12-31T00:00:00Z",
-            "mshr_primaryfield": "000276 | 3/14/2021",
-            "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
-            "_mshr_fk_fixedcompplan_id_value": "0000029f-0000-0000-d5ff-004105000000",
-            "mshr_payrollpositionentityid": "00010097-0000-0000-df00-014105000000"
+    "mshr_positionid": "000276",
+    "mshr_paycycleid": "w",
+    "mshr_annualregularhours": 3000,
+    "mshr_paidbylegalentity": "USMF",
+    "mshr_validfrom": "2021-03-14T00:00:00Z",
+    "mshr_validto": "2154-12-31T00:00:00Z",
+    "mshr_primaryfield": "000276 | 3/14/2021",
+    "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
+    "_mshr_fk_fixedcompplan_id_value": "0000029f-0000-0000-d5ff-004105000000",
+    "mshr_payrollpositionentityid": "00010097-0000-0000-df00-014105000000"
 }
 ```
+
+## <a name="see-also"></a>Siehe auch
+
+[Einführung Lohnintegrations-API](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

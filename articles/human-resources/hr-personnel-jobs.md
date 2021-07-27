@@ -2,11 +2,11 @@
 title: Einrichten von Komponenten eines Einzelvorgangs
 description: In diesem Artikel werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können.
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace
+ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
 ms.author: anbichse
 ms.search.scope: Human Resources
@@ -15,12 +15,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88dc3cec4880fdcb4d4f8d54b03037f738d2a57a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d4e24e64f3fece0807df8fbf4fb206c4588c9332
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056568"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333092"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Einrichten von Komponenten eines Einzelvorgangs
 
@@ -35,7 +35,7 @@ Einige Einzelvorgangsdetails, wie die Position, Typ und Funktion, sind Datum-eff
 ## <a name="job-titles"></a>Stellenbezeichnungen
 Vor der Erstellung von Stellen sind zugehörige Stellenbezeichnungen einzurichten. Positionen erben die Stellenbezeichnungen von den Stellen, denen die Positionen zugeordnet sind. 
 
-Verwalten Sie Positionen mithilfe der **Titel**-Seite, die Sie öffnen können, indem Sie die Suchfunktion verwenden. Auf der **Titel** Seite geben Sie die Positionen ein, die Sie einplanen und für die Einzelvorgänge verwenden möchten.
+Verwalten Sie Positionen mithilfe der **Titel**-Seite, die Sie öffnen können, indem Sie die Suchfunktion verwenden. Auf der Seite **Titel** geben Sie die Positionen ein, die Sie einplanen und für die Einzelvorgänge verwenden möchten.
 
 ## <a name="job-types"></a>Stellentypen
 Verwenden Sie Stellentypen als Gruppe, um ähnliche Stellen in Kategorien zu klassifizieren. Stellentypen sind nicht erforderlich. Planen Sie jedoch, Stellentypen zur Einrichtung von Berechtigungsregeln für die Vergütungsverwaltung zu verwenden, richten Sie vor der Einrichtung von Stellen zunächst Stellentypen ein. Beispiele für Stellentypen sind Voll- und Teilzeit oder festes Salär und Stundenlohn. Verwalten Sie Stellentypen mithilfe der Seite **Stellenarten**. Geben Sie auf der Seite **Stellenarten** einen Namen und eine kurze Beschreibung des Positionstyps ein. Wählen Sie im Feld **Status befreit** eine der folgenden Optionen aus, um den Ausnahmezustand des Fair Labor Standards Act (FLSA) für Stellen anzugeben, die zu folgenden Stellenarten gehören:
@@ -43,6 +43,11 @@ Verwenden Sie Stellentypen als Gruppe, um ähnliche Stellen in Kategorien zu kla
 -   **Befreit** – – Stellen sind gemäß dem FLSA-Gesetz von Überstunden befreit.
 -   **Nicht Befreit** – – Stellen sind gemäß dem FLSA-Gesetz nicht von Überstunden befreit.
 -   **Nicht anwendbar** – Eine Abdeckung durch das FLSA-Gesetzt trifft nicht zu.
+
+## <a name="job-family"></a>Stellenfamilie
+Eine Stellenfamilie ist eine Gruppe von Stellen, die ähnliche Tätigkeiten enthalten und ähnliche Ausbildung, Fähigkeiten, Kenntnisse und Fachkenntnisse erfordern. Eine Stellenfamilie kann mit einer Stelle auf dem Inforegister **Stellenklassifizierung** der Seite **Stellen** und dem Inforegister **Allgemein** der Seite **Alle Positionen**. Stellenfamilien können breit oder spezifisch sein, je nach Ihren Geschäfts- und Berichtsanforderungen. Einige Beispiele für breite Stellenfamilien sind **Facharbeiter** und **Ungelernte Arbeitskräfte**. Einige Beispiele für bestimmte Stellenfamilien sind **Buchhaltung**, **Fertigung** und **Vertrieb**.
+
+Verwalten Sie Stellenfamilien mithilfe der Seite **Stellenfamilie**, die Sie öffnen können, indem Sie die Suchfunktion verwenden. Geben Sie auf der Seite **Stellenfamilie** der Familie einen eindeutigen Namen und geben Sie eine detaillierte Beschreibung ein, die Sie für Ihre Stellen verwenden möchten.
 
 ## <a name="job-functions"></a>Stellenfunktionen
 Stellenfunktionen beschreiben funktionale übergeordnete Kategorien und ordnen übergeordnete Aufgaben zu. Stellenfunktionen sind nicht erforderlich. Sie können Stellenfunktionen zusammen mit Stellentypen verwenden, um Vergütungspläne nach bestimmten Stellen zu filtern. Sie ordnen Stellenfunktionen und Stellentypen Vergütungsplänen zu, indem Sie im Formular auf der Seite **Berechtigungsregeln** Berechtigungsregeln einrichten. Sie können mit dem Vergütungsplan auch mehrere Ebenen verknüpfen, die für eine bestimmte, über eine Berechtigungsregel definierte Stellenfunktion/Stellentyp-Kombination gelten. (Diese Funktion gilt für feste Vergütungspläne und variable Vergütungspläne) Planen Sie jedoch, Stellenfunktionen zur Einrichtung von Berechtigungsregeln für die Vergütungsverwaltung zu verwenden, richten Sie vor der Einrichtung von Stellen zunächst Stellenfunktionen ein. Beispiele für Stellenfunktionen finden Sie in der folgenden Tabelle.
@@ -53,6 +58,14 @@ Stellenfunktionen beschreiben funktionale übergeordnete Kategorien und ordnen �
 | Sachbearbeiter Buchhaltung    | Professionals        |
 
 Verwalten Sie Stellenfunktionen mithilfe der Seite **Stellenfunktionen**. Geben Sie auf der Seite **Stellenarten** einen Namen und eine kurze Beschreibung des Positionstyps ein.
+
+## <a name="compensation"></a>Vergütung
+Um einem Mitarbeiter, der eine Position in einer Stelle hat, einen festen Vergütungsplan zuzuweisen, müssen Sie die Vergütungsstufen für die Stelle festlegen. Die Vergütungsstufe wird verwendet, wenn Mindest-, Mittel- und Höchstbeträge in einer Vergütungsstruktur (Vergütungsraster) festgelegt sind. Beim Anlegen eines festen Vergütungsplans wird die Vergütungsstruktur ausgewählt. Die Vergütungsstruktur enthält auch die Vergütungsstufe. Wenn Sie einen festen Vergütungsplan für einen Mitarbeiter auswählen, hängen die zur Auswahl stehenden Vergütungsstufen von der Stelle ab, der die Position des Mitarbeiters zugeordnet ist. Weitere Informationen über das Einrichten von Vergütungen finden Sie unter [Vergütungspläne](hr-compensation-overview.md).
+
+## <a name="job-skills"></a>Stellenqualifikationen
+Stellenqualifikationen beschreiben die Fähigkeiten, die zur Ausübung einer Stelle erforderlich sind. Jeder Stellenqualifikation muss eine Qualifikationsstufe zugeordnet werden. Die Qualifikationsstufen sind benutzerdefiniert. Sie geben an, welches Wissen oder Können für die Qualifikation erforderlich ist. Unternehmen können beispielsweise numerische Stufen wie 1 bis 5 einrichten, wobei **1** auf einen Anfänger hinweist und **5** auf einen Experten hinweist. Alternativ können Unternehmen Stufen einrichten, die als **Anfänger**, **Mittelstufe** oder **Experte** gekennzeichnet sind. Nachdem die Qualifikationsstufe festgelegt wurde, kann auch die Wichtigkeit der Qualifikation eingestellt werden. Wenn zum Beispiel ein Buchhalter über solide Kenntnisse in Microsoft Excel verfügt, kann eine Qualifikation, die **Excel-Kenntnisse** genannt wird, erstellt werden. Die Qualifikationsstufe kann dann auf **Mittelstufe** und die Wichtigkeit kann auf **Am wichtigsten** eingestellt werden.
+
+Die Qualifikationen, die in einer Stelle vorhanden sind, können in der Qualifikationszuordnung verwendet werden. Die Qualifikationszuordnung kann die Qualifikation, die für eine Stelle erforderlich sind, und die Qualifikation, die einer Arbeitskraft zugeordnet sind, vergleichen. Sie kann dann eine prozentuale Übereinstimmung basierend auf überlappenden Qualifikationen bestimmen. Weitere Informationen zur Qualifikationszuordnung finden Sie unter [Qualifikationen konfigurieren](hr-develop-skills.md). 
 
 ## <a name="job-tasks"></a>Arbeitsaufgaben
 Sie können Arbeitsaufgaben erstellen, die die grundlegenden Aufgaben beschreiben, die eine Arbeitskraft in einer Position für diesen Einzelvorgang ausführen muss. Die gleiche Arbeitsaufgabe kann mehreren Einzelvorgängen hinzugefügt werden, und Positionen für diese Einzelvorgänge erben die Arbeitsaufgaben. Beispiele für Stellenaufgaben finden Sie in der folgenden Tabelle.

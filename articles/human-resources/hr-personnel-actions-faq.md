@@ -2,7 +2,7 @@
 title: FAQs zu Personalaktivitäten
 description: Dieser Artikel enthält Antworten auf Fragen, die Sie möglicherweise haben, wenn Ihre Organisation Mitarbeiteraktivitäten verwendet. Mitarbeiteraktivitäten sind zusätzliche Schritte, die Sie ausführen müssen, wenn Sie bestimmte mitarbeiterbezogene Aufgaben ausführen.
 author: andreabichsel
-ms.date: 06/16/2017
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a458800788d8e0df6c1f937a639eff31dcbb2c06
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 05365eabe6f3c283f5828e468c9323c3fa897fb8
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054547"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333018"
 ---
 # <a name="personnel-actions-faq"></a>FAQs zu Personalaktivitäten
 
@@ -51,7 +51,7 @@ Personalaktivitäten können folgende Status haben:
 - **Verweigert** – Die Aktivitätsanforderung wurde von der genehmigenden Person abgelehnt.
 
 ## <a name="can-i-delete-a-personnel-action"></a>Kann ich eine Mitarbeiteraktivität löschen?
-Ja, Sie können Personalaktivitäten löschen, die folgende Staus haben: **Entwurf**, **Fehler**, **Fehlgeschlagen** oder **Abgebrochen**.
+Ja, Sie können Personalaktivitäten löschen, die folgende Staus haben: **Entwurf**, **Fehler**, **Fehlgeschlagen** oder **Abgebrochen**. Sie können Personalaktivitäten, die den Status **Abgeschlossen** haben, nur löschen, wenn Sie die Option **Löschen abgeschlossener Arbeitskräfteaktivitäten zulassen** auf **Ja** auf der Seite **Freigegebene Personalverwaltungsparameter** eingestellt haben.
 
 ## <a name="what-is-the-fastest-way-to-check-the-status-of-a-personnel-action-request"></a>Was ist die schnellste Methode, um den Status einer Mitarbeiteraktionsaufforderung zu überprüfen?
 Öffnen Sie eine der Mitarbeiteraktivitätslistenseiten und wählen Sie eine Mitarbeiteraktivität aus.
@@ -68,7 +68,7 @@ Wenn eine Mitarbeiteraktionsaufforderung fehlschlägt, führen Sie die folgenden
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Was passiert mit einer Mitarbeiteraktivität, die Workflows verwendet, wenn die die endgültige Genehmigung abgeschlossen ist?
 Wenn keine Fehler vorhanden sind, wird die Mitarbeiteraktivität schreibgeschützt. (Sie können die Historie auf der Listenseite **Alle Arbeitskraftaktivitäten** anzeigen, aber Sie können die Personalaktivität nicht ändern.) Wenn der Status einer Personalaktivität **Abgeschlossen** ist, ist die Position bzw. der Arbeitskraftdatensatz bereits aktualisiert. Um die Änderungen anzeigen, die ausgeführt wurden, öffnen Sie die Listenseite **Positionen** oder **Arbeitskräfte**.
 
-## <a name="why-do-i-receive-the-following-error-when-i-enter-a-non-zero-value-in-the-pay-rate-field-the-value-is-out-of-its-valid-range--it-much-be-between-000-and-000"></a>Warum erhalte ich den folgenden Fehler, wenn ich einen Wert ungleich 0 im Lohnsatzfeld eingebe? „Der Wert befindet sich außerhalb des zulässigen Bereichs – er muss zwischen 0.00 und 0.00 liegen.“
+## <a name="why-do-i-receive-the-following-error-when-i-enter-a-non-zero-value-in-the-pay-rate-field-the-value-is-out-of-its-valid-range--it-much-be-between-000-and-000"></a>Warum erhalte ich den folgenden Fehler, wenn ich einen Wert ungleich 0 im Lohnsatzfeld eingebe? „Der Wert befindet sich außerhalb des zulässigen Bereichs – er muss zwischen 0,00 und 0,00 liegen.“
 Sie erhalten diese Nachricht, da das Feld „Ebene“ im Formular „Stelle“ für die Stelle leer ist, der der ausgewählten Position zugeordnet ist.
 
 Um diesen Fehler zu beheben, führen Sie folgende Schritte aus:
@@ -80,7 +80,7 @@ Um diesen Fehler zu beheben, führen Sie folgende Schritte aus:
 > 5. Wählen Sie im Feld „Ebene“ eine Ebene aus.
 > 6. Schließen Sie die Seite „Stelle“.
 > 7. Schließen Sie die Seite „Stelle“.
-> 8. Kehren Sie zurück zur Registerkarte „Vergütung“ auf der Seite „Arbeitskraft“, und wählen Sie „Feste Vergütung“.  Wählen Sie „Neu“ aus, und geben Sie die Position des Mitarbeiters im Feld „Position“ ein.  Geben Sie einen Wert in das Feld für den Plan ein und geben Sie im Feld „Lohnsatz“ die Mitarbeitervergütung ein.
+> 8. Kehren Sie zurück zur Registerkarte „Vergütung“ auf der Seite „Arbeitskraft“, und wählen Sie „Feste Vergütung“.  Wählen Sie „Neu“ aus und geben Sie die Position des Mitarbeiters im Feld „Position“ ein.  Geben Sie einen Wert in das Feld für den Plan ein und geben Sie im Feld „Lohnsatz“ die Mitarbeitervergütung ein.
 
 ## <a name="why-cant-i-change-the-effective-date-in-the-header-of-the-worker-action-form"></a>Warum kann ich das Gültigkeitsdatum in der Kopfzeile des Arbeitskraftaktivitätsformulars nicht ändern?
 Sie können das Gültigkeitsdatum nicht ändern, da das Feld mit dem logischsten Datum für den Aktivitätstyp ausgefüllt wird.
