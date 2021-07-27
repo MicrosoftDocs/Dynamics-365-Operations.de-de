@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 0956e7aa51973014ee474d97829d3d15dfdea3b3
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a641789adf27e51b7a3f8ab03269cc2e748eef96
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909942"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359810"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Arbeitsaufträge mit Projekt von Field Service mit Supply Chain Management synchronisieren
 
@@ -29,7 +29,7 @@ ms.locfileid: "5909942"
 
 Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Arbeitsaufträge in Dynamics 365 Field Service mit Aufträgen in Dynamics 365 Supply Chain Management zu synchronisieren.
 
-[![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
+[![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service.](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
 Die verwendete Vorlage **Arbeitsaufträge mit Projekt (Field Serivce zu Supply Chain Management)** basiert auf der Vorlage **Arbeitsaufträge (Field Service zu Supply Chain Management)**. Weitere Informationen finden Sie unter [Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management synchronisieren](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
@@ -61,19 +61,19 @@ Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheader"></a>Arbeitsaufträge mit Projekt (Field Service zu Supply Chain Management): WorkOrderHeader
 
-[![Vorlagenzuordnung in Datenintegration](./media/FSWOP1.png)](./media/FSWOP1.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/FSWOP1.png)](./media/FSWOP1.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheaderproject"></a>Arbeitsaufträge mit Projekt (Field Service zu Supply Chain Management): WorkOrderHeaderProject
 
-[![Vorlagenzuordnung in Datenintegration](./media/FSWOP2.png)](./media/FSWOP2.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/FSWOP2.png)](./media/FSWOP2.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderproduct"></a>Arbeitsaufträge mit Projekt (Field Service zu Supply Chain Management): WorkOrderProduct
 
-[![Vorlagenzuordnung in Datenintegration](./media/FSWOP3.png)](./media/FSWOP3.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/FSWOP3.png)](./media/FSWOP3.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Arbeitsaufträge mit Projekt (Field Service zu Supply Chain Management): WorkOrderService
 
-[![Vorlagenzuordnung in Datenintegration](./media/FSWOP4.png)](./media/FSWOP4.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/FSWOP4.png)](./media/FSWOP4.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

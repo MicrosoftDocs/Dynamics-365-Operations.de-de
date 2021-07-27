@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e4d18d6fcf54fc74382f0d7d344de2aa74252ae4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7ac1495f12a51d72a90ad88fc2d8e0a574418467
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796995"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345133"
 ---
 # <a name="install-the-pos-layout-designer"></a>POS-Layoutdesigner installieren
 
@@ -40,7 +40,7 @@ Der grafische Entwurf der Schnittstelle für MPOS oder Cloud-POS wird durch das 
 5. Nachdem die Installation abgeschlossen ist, geben Sie auf der Seite **Anmelden** den Commerce Benutzernamen und das Kennwort ein, und klicken Sie auf **Anmelden**, um den Designer zu starten.
 6. Nachdem die Anmeldeinformationen validiert und der Designer gestartet wurde, können Sie damit beginnen, Ihr eigenes Layout zu entwerfen oder ein vorhandenes Layout zu ändern.
 
-    [![Layout im One-Click Designer](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
+    [![Layout im One-Click Designer.](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
 
 ## <a name="troubleshoot-the-installation-of-the-layout-designer"></a>Lösen Sie Probleme bei der Installation des Layoutdesigners
 

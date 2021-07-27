@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
-ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
+ms.openlocfilehash: 460297651f2766f96c34b258edbe94a7114ee090
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6168728"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343957"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Anforderungen an die Hardwarekalkulation für lokale Umgebungen
 
@@ -36,7 +36,7 @@ Nachdem Sie die Dokumentation gelesen haben, können Sie damit beginnen, das Vol
 
 Alle in der folgenden Abbildungen gezeigten Faktoren wirken sich auf die Kalkulation aus. Je detailliertere Informationen erfasst werden, desto genauer können Sie die Kalkulation durchführen. Eine Hardwarekalkulation ohne zugrundeliegende Daten wird sehr wahrscheinlich unpräzise sein. Die absolute Mindestanforderung im Hinblick auf die benötigten Daten ist die Spitzentransaktionsleitungslast pro Stunde.
 
-[![Hardwarekalkulation für lokale Umgebungen](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Hardwarekalkulation für lokale Umgebungen.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Von links nach rechts betrachtet, ist der erste und wichtigste Faktor, den Sie brauchen, um eine präzise geschätzte Kalkulation durchzuführen, ein Transaktionsprofil oder eine Transaktionscharakterisierung. Es ist wichtig, immer das Spitzentransaktionsvolumen pro Stunde zu ermitteln. Wenn es mehrere Spitzenintervalle gibt, müssen diese Intervalle präzise definiert werden.
 

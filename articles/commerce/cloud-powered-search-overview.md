@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b5182df9d45a3b5d2572a5b6b391c924ef23bf9a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b7e8a37e31201845b94547850b8979a103f0729e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800420"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352663"
 ---
 # <a name="cloud-powered-search-overview"></a>Übersicht über die cloudbasierte Suche
 
@@ -41,7 +41,7 @@ Suchrelevanz und Leistung sind entscheidende Faktoren in der Omnikanal-Erfahrung
 
 Die folgende Abbildung zeigt ein Beispiel für typisches Durchsuchen und für Suchfunktionen.
 
-![Suchenangebotsseite](./media/SearchLanding.png)
+![Suchenangebotsseite.](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>Facettierte Navigations- und Auswahlzusammenfassung 
 
@@ -51,7 +51,7 @@ Wenn Sie facettierte Navigation verwenden, können Sie verschiedene Kriterien f�
 
 Die folgende Abbildung zeigt ein Beispiel an, wo facettierte Navigation bei einer Suche verwendet wird.
 
-![Auswahl-Zusammenfassung](./media/ChoiceSummary.png)
+![Auswahl-Zusammenfassung.](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Interaktive automatische Vorschläge
 
@@ -61,7 +61,7 @@ Dynamics 365 Commerce unterstützt auch Funktionen für Schlüsselwortabgleichun
 
 Die folgende Abbildung zeigt ein Beispiel an, wo interaktives automatisches Vorschlagen verwendet wird.
 
-![Umfassende automatische Vorschläge](./media/ImmersiveAutoSuggestUX.png)
+![Umfassende automatische Vorschläge.](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Sortieren
 
@@ -69,11 +69,11 @@ Verbessertes Sortieren in Dynamics 365 Commerce ermöglicht Kunden, Suchergebnis
 
 >[!NOTE]
 >Diese Cloud-betriebenen Suchfunktionen sind ab Version 10.0.8 verfügbar. Stellen Sie sicher, dass unter **Handelsparameter > Konfigurationsparameter** ein Eintrag für „ProductSearch.UseAzureSearch set to 'true'“ vorhanden ist. 
-![Konfigurationsparameter für die Cloud-betriebene Suche](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurationsparameter für die cloud-betriebene Suche.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Standard-Kategorie-Landingpage und Suchergebnisseite – Übersicht](category-search-page-overview.md)
+[Übersicht zur Zielseite der Standardkategorie und der Suchergebnisseite](category-search-page-overview.md)
 
 [Verwalten von SEO-Metadaten](manage-seo-metadata.md)
 

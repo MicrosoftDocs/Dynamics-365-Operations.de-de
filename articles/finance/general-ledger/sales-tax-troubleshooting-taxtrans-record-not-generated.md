@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 74987506699834d86703702106e5abf87bfa45da
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 284fd4047347386b3893684f077a5980f98a6788
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018780"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349999"
 ---
 # <a name="taxtrans-record-isnt-generated"></a>TaxTrans-Datensatz wird nicht generiert
 
@@ -26,7 +26,7 @@ ms.locfileid: "6018780"
 
 Wenn Sie **Gebuchte Mehrwertsteuer** für eine Transaktion wählen, aber die Seite **Gebuchte Mehrwertsteuer** entweder keine Steuerzeilen anzeigt oder eine Steuerzeile fehlt, wurde der **TaxTrans** Datensatz möglicherweise nicht erzeugt.
 
-[![Seite „Gebuchte Mehrwertsteuer“, die keine Zeilen enthält](./media/taxtrans-is-not-generated-Picture1.png)](./media/taxtrans-is-not-generated-Picture1.png)
+[![Seite „Gebuchte Mehrwertsteuer“, die keine Positionen enthält.](./media/taxtrans-is-not-generated-Picture1.png)](./media/taxtrans-is-not-generated-Picture1.png)
 
 Um dieses Problem zu beheben, führen Sie die Schritte in den folgenden Abschnitten wie erforderlich aus.
 
@@ -34,7 +34,7 @@ Um dieses Problem zu beheben, führen Sie die Schritte in den folgenden Abschnit
 
 1. Bevor Sie die Transaktion buchen, wählen Sie auf der Seite **Rechnung buchen** die Schaltfläche **Mehrwertsteuer**, um die Berechnung zu überprüfen.
 
-    [![Schaltfläche „Mehrwertsteuer“ auf der Seite „Rechnung buchen“](./media/taxtrans-is-not-generated-Picture2.png)](./media/taxtrans-is-not-generated-Picture2.png)
+    [![Schaltfläche „Mehrwertsteuer“ auf der Seite „Rechnung buchen“.](./media/taxtrans-is-not-generated-Picture2.png)](./media/taxtrans-is-not-generated-Picture2.png)
 
 2. Prüfen Sie auf der Seite **Vorläufige Transaktionen der Mehrwertsteuer** das Ergebnis der Berechnung. Wenn keine Steuer berechnet wird, siehe [Steuer wird nicht berechnet oder der Steuerbetrag ist Null](sales-tax-troubleshooting-tax-not-calculated-amount-zero.md).
 
@@ -44,16 +44,16 @@ Um dieses Problem zu beheben, führen Sie die Schritte in den folgenden Abschnit
 2. Wählen Sie in der Spaltenüberschrift **Beleg** das Filtersymbol, um den Datensatz **TaxTrans** zu finden.
 3. Wenn Sie die gesuchten Mehrwertsteuersätze finden, überprüfen Sie das Datum. Wenn das Datum von dem Datum der Journalüberschrift abweicht, erstellen Sie eine Microsoft-Serviceanfrage für zusätzliche Unterstützung.
 
-    [![Veröffentlichte Umsatzsteuer-Seite](./media/taxtrans-is-not-generated-Picture4.png)](./media/taxtrans-is-not-generated-Picture4.png)
+    [![Veröffentlichte Umsatzsteuer-Seite.](./media/taxtrans-is-not-generated-Picture4.png)](./media/taxtrans-is-not-generated-Picture4.png)
 
 ## <a name="debug-to-check-details"></a>Debuggen, um Details zu prüfen
 
 1. Informationen darüber, wie Sie Fehler beheben und feststellen können, ob **TmpTaxWorkTrans** und **TaxUncommitted** korrekt erzeugt werden, finden Sie unter [Feldwert in TaxTrans ist falsch](sales-tax-troubleshooting-field-value-taxtrans-incorrect.md).
-2. Wenn **TaxTmpWorkTrans** oder **TaxUncommitted** korrekt generiert wird, fügen Sie einen Haltepunkt bei **TaxPost ::SaveAndPost()** und **Tax ::SaveAndPost** ein, um den Grund zu debuggen, warum **TaxTrans** nicht eingefügt wird.
+2. Wenn **TaxTmpWorkTrans** oder **TaxUncommitted** korrekt generiert wird, fügen Sie einen Haltepunkt bei **TaxPost::SaveAndPost()** und **Tax::SaveAndPost** ein, um den Grund zu debuggen, warum **TaxTrans** nicht eingefügt wird.
 
-    [![Haltepunkte im Code hinzugefügt](./media/taxtrans-is-not-generated-Picture5.png)](./media/taxtrans-is-not-generated-Picture5.png)
+    [![Haltepunkte im Code hinzugefügt.](./media/taxtrans-is-not-generated-Picture5.png)](./media/taxtrans-is-not-generated-Picture5.png)
 
-    [![Ergebnisse der hinzugefügten Haltepunkte](./media/taxtrans-is-not-generated-Picture6.png)](./media/taxtrans-is-not-generated-Picture6.png)
+    [![Ergebnisse der hinzugefügten Haltepunkte.](./media/taxtrans-is-not-generated-Picture6.png)](./media/taxtrans-is-not-generated-Picture6.png)
 
 ## <a name="determine-whether-customization-exists"></a>Ermitteln Sie, ob eine Anpassung vorliegt
 

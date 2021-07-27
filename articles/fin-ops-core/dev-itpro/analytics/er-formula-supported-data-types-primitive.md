@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d5e6bb5e070ebbcdb7e99b1b70010acd5fca5ac
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 4e1c70dd0fa89c6cc5a8b4778b073d1cf4a3dadd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224093"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355321"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Unterstützte primitive Datentypen für elektronische Berichtsformeln
 
@@ -42,7 +42,7 @@ Dieses Thema enthält Informationen zu den primitiven Datentypen, die in Ausdrü
 
 Der primitive Datentyp *boolean* enthält einen Wert, der entweder als *wahr* oder *falsch* bewertet wird. Sie können die reservierten Literalschlüsselwörter **Wahr** und **Falsch** überall verwenden, wo ein *boolescher* Ausdruck erwartet wird. Der Standardwert ist *Falsch*.
 
-Die interne Darstellung eines *boolean* ist eine *Integer*. Der *Ganzzahl*-Wert 0 (Null) wird als *falsch* bewertet, und alle anderen *Ganzzahl*-Werte werden als *wahr* bewertet. Wenn Sie einen konfigurierten Ausdruck [bestätigen](general-electronic-reporting-formula-designer.md#TestFormula), der einen *boolean* im [ EB-Formeldesigner](er-advanced-formula-editor.md) zurückgibt, präsentiert das Testergebnisfenster *0* (null), wenn ein Ausdruck *falsch* zurückgibt. Andernfalls wird im Testergebnisbereich *1* angezeigt.
+Die interne Darstellung eines *boolean* ist eine *Integer*. Der *Ganzzahl*-Wert 0 (Null) wird als *falsch* bewertet, und alle anderen *Ganzzahl*-Werte werden als *wahr* bewertet. Wenn Sie einen konfigurierten Ausdruck [bestätigen](general-electronic-reporting-formula-designer.md#TestFormula), der einen *boolean* im [EB-Formeldesigner](er-advanced-formula-editor.md) zurückgibt, präsentiert das Testergebnisfenster *0* (null), wenn ein Ausdruck *falsch* zurückgibt. Andernfalls wird im Testergebnisbereich *1* angezeigt.
 
 Ein *boolean* hat keine impliziten Konvertierungen. Sie können jedoch die Funktion [TEXT](er-functions-text-text.md) zum expliziten Konvertieren von *boolean* zu einer *Zeichenfolge*:
 
@@ -106,19 +106,19 @@ Vergleichs [operatoren](er-formula-language.md#Operators) sind der einzige Opera
 
 ## <a name="enumeration"></a><a name="enumeration"></a>Aufzählung
 
-Der primitive Datentyp *Enumeration* ist eine Liste von Literalen. Sie können Aufzählungen verwenden, die in der Anwendung [Quellcode](../dev-ref/xpp-data-primitive.md#enum) definiert sind. Sie können auch Ihre eigenen Aufzählungen in die Komponenten EB-[Datenmodell](general-electronic-reporting.md#data-model-and-model-mapping-components) und EB-[ Format](general-electronic-reporting.md#FormatComponentOutbound) einführen.
+Der primitive Datentyp *Enumeration* ist eine Liste von Literalen. Sie können Aufzählungen verwenden, die in der Anwendung [Quellcode](../dev-ref/xpp-data-primitive.md#enum) definiert sind. Sie können auch Ihre eigenen Aufzählungen in die Komponenten EB-[Datenmodell](general-electronic-reporting.md#data-model-and-model-mapping-components) und EB-[Format](general-electronic-reporting.md#FormatComponentOutbound) einführen.
 
 Eine Anwendung *Enumeration* kann in Ausdrücken jedes EB-Modell-Mappings und EB-Formats verwendet werden.
 
 Die folgende Abbildung zeigt, wie Sie die Modellenumeration **CustVendCorrectiveReasonCode** zum bearbeitbaren EB-Datenmodell hinzufügen.
 
-[![Eine Modellenumeration im EB-Datenmodelldesigner konfigurieren](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
+[![Eine Modellenumeration im EB-Datenmodelldesigner konfigurieren.](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
 
 Eine Modell *enumeration* kann in Ausdrücken aller EB-Modellzuordnungen und EB-Formate verwendet werden, die unter einem Datenmodell erstellt wurden, in dem die *Enumeration* wurde vorgestellt.
 
 Die folgende Abbildung zeigt, wie Sie die Formatenumeration **Liste der Natura-Verlagerungsunterkategorien** in das bearbeitbare ER-Format.
 
-[![Eine Formatenumeration im EB-Formatdesigner konfigurieren](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
+[![Eine Formatenumeration im EB-Formatdesigner konfigurieren.](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
 
 Eine Format *enumeration* kann nur in Ausdrücken des EB-Formats verwendet werden, in denen die *Enumeration* wurde vorgestellt.
 
@@ -126,15 +126,15 @@ Sie müssen den entsprechenden Typ von EB-Datenquellen verwenden, um eine bestim
 
 - Auf Anwendungsenumeration kann zugegriffen werden, indem Sie die Datenquellen **Dynamics 365 for Operations \ Aufzählung** und **Allgemein \ Benutzereingabeparameter** Datenquellen verwenden. Die folgende Abbildung zeigt, wie Sie dem bearbeitbaren EB-Format die Datenquellen **BlinddarmNeinJa** und **uipNeinJa** hinzufügen, die sich auf die Anwendungsenumeration **NoYes** beziehen.
 
-    [![Hinzufügen von Anwendungsenumerationsdatenquellen im EB-Formatdesigner](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
+    [![Hinzufügen von Anwendungsenumerationsdatenquellen im EB-Formatdesigner.](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
 
 - Auf Datenmodellenumeration kann zugegriffen werden, indem Sie die Datenquellen **Datenmodell \ Enumeration** und **Datenmodell \ Enumerationsbenutzereingabeparameter** verwenden. Die folgende Abbildung zeigt, wie Sie dem bearbeitbaren EB-Format die Datenquelle **CustVendCorrectiveReasonCode** hinzufügen, die sich auf die Anwendungsenumeration **CustVendCorrectiveReasonCode** bezieht.
 
-    [![Hinzufügen von Modellenumerationsdatenquellen im EB-Formatdesigner](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
+    [![Hinzufügen von Modellenumerationsdatenquellen im EB-Formatdesigner.](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
 
 - Auf Formatenumeration kann zugegriffen werden, indem Sie die Datenquellen **Format \ Enumeration** und **Format \ Enumerationsbenutzereingabeparameter** verwenden. Die folgende Abbildung zeigt, wie Sie dem bearbeitbaren EB-Format die Datenquelle **NaturaReverseCharge** hinzufügen, die sich auf die Formatenumeration **Natura-Verlagerungsunterkategorien** bezieht.
 
-    [![Hinzufügen von Formatenumerationsdatenquellen im EB-Formatdesigner](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
+    [![Hinzufügen von Formatenumerationsdatenquellen im EB-Formatdesigner.](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
 
 Eine *Enumeration* hat keine impliziten Konvertierungen. Sie können jedoch die Konvertierungsfunktion [TEXT](er-functions-text-text.md) zum Konvertieren einer *Enumeration* zu einer Textzeichenfolge. Diese Konvertierung ist nicht sprachabhängig. Informationen dazu, wie Sie einen *Enumerations* wert einem entsprechenden sprachspezifischen Label zuordnen können, finden Sie in den Verwendungsbeispielen für die Funktionen [LISTOFFFIELDS](er-functions-list-listoffields.md) und [GETENUMVALUEBYNAME](er-functions-text-getenumvaluebyname.md).
 
@@ -212,7 +212,7 @@ Alle Vergleiche und mathematischen [Operatoren](er-formula-language.md#Operators
 
 Der primitive Datentyp *Zeichenfolge* stellt eine Folge von Zeichen dar, die als Texte, Kontonummern, Adressen und Telefonnummern verwendet werden.
 
-*Zeichenfolgen* literale sind Zeichen, die in Anführungszeichen ("") eingeschlossen sind. *Zeichenfolge* literale können überall verwendet werden, wo *Zeichenfolge* werte in EB-Ausdrücken erwartet werden. Sie können Zeichenfolgen in logischen Ausdrücken verwenden, z. B. in Vergleichen. Sie können auch *Zeichenfolge* werte  verketten, indem Sie den **\&** Operator oder die Funktion [CONCATENATE](er-functions-text-concatenate.md) verwenden.
+*Zeichenfolgen* literale sind Zeichen, die in Anführungszeichen ("") eingeschlossen sind. *Zeichenfolge* literale können überall verwendet werden, wo *Zeichenfolge* werte in EB-Ausdrücken erwartet werden. Sie können Zeichenfolgen in logischen Ausdrücken verwenden, z. B. in Vergleichen. Sie können auch *Zeichenfolge* werte verketten, indem Sie den **\&** Operator oder die Funktion [CONCATENATE](er-functions-text-concatenate.md) verwenden.
 
 > [!NOTE]
 > Wenn Sie zwei *Zeichenfolge* werte verketten, und Sie wollen, dass die resultierende *Zeichenfolge* mehr als eine Zeile umfassent, verwenden Sie das Zeilenumbruchtrennzeichen zwischen den Werten. Für die TEXT-Ausgabe kann dieses Trennzeichen ein Zeichen sein, das mit dem Ausdruck [CHAR](er-functions-text-char.md)(10) oder CHAR(13) generiert wird. Für HTML kann es das Tag **\<br\>** sein.

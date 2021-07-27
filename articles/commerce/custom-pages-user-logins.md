@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 214f99563f8bb08d8c051f904d0ca0a88267aa6b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936779"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349649"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Angepasste Seiten für die Benutzeranmeldung einrichten
 
@@ -40,7 +40,7 @@ Die benutzerdefinierten Handelsseiten können erstellt werden, indem Anmeldung, 
 
 Nachdem Sie den Mandanten Azure AD B2C eingerichtet haben und diesen der Handelsumgebung zugeordnet haen, wechseln Sie zu **Azure AD B2C** im Azure Portal und anschließend wählen Sie **Richtlinien**, **Benutzerfluss (Richtlinien)**.
 
-![Benutzerfluss (Richtlinien) Befehl im Menü](./media/B2C_CustomPage_PoliciesMenu.png)
+![Benutzerfluss (Richtlinien) Befehl im Menü.](./media/B2C_CustomPage_PoliciesMenu.png)
 
 Sie können jetzt Registrieren und Anmelden, Profilbearbeitung und Kennwortrücksetzung im Fluss konfigurieren.
 
@@ -54,13 +54,13 @@ Um die Richtlinie Registrieren und Anmelden zu konfigurieren führen Sie die fol
 1. In der Spalte **Attribut sammeln** aktivieren Sie die Kontrollkästchen für **E-Mail-Adresse**, **Vorname** und **Nachname** aus.
 1. In der Spalte **Rücknahme anfordern** aktivieren Sie die Kontrollkästchen für **E-Mail-Adressen**, **Vorname**, **Identitätsanbieter**, **Nachname** und **Objekt-ID des Benutzers**.
 
-    ![Attribute und Ansprüche ausgewählt](./media/B2C_SignInSignUp_Attributes.png)
+    ![Attribute und Ansprüche ausgewählt.](./media/B2C_SignInSignUp_Attributes.png)
 
 1. **OK** wählen, um die Richtlinie zu erstellen.
 1. Doppelklicken Sie auf den neuen Richtliniennamen, und wählen dann im Navigationsbereich **Eigenschaften**.
 1. Legen Sie **Aktivieren Sie JavaScript erzwingt Seitenlayout (Vorschau)** auf **Aktiviert** fest.
 
-    ![Eigenschaftenseite für die neue Richtlinie](./media/B2C_SignInSignUp_EnableJavascript.png)
+    ![Eigenschaftenseite für die neue Richtlinie.](./media/B2C_SignInSignUp_EnableJavascript.png)
 
 > [!NOTE]
 > Der Richtlinienname verweist ganz auf die Handelsumgebung. (Das Präfix **B2C\_1\_** ist in der Referenz enthalten.) Richtlinien können nicht umbenannt werden, nachdem sie erstellt wurden. Wenn Sie eine vorhandene Richtlinie für die Handelsumgebung ersetzen, können Sie die ursprüngliche Richtlinie löschen und eine neue Richtlinie erstellen, die denselben Namen hat. Falls die Umgebung bereits bereitgestellt wurde, können Sie den neuen Richtliniennamen durch eine Serviceanforderung senden.
@@ -150,7 +150,7 @@ Um die Richtlinie „registrieren und anmelden“ mit benutzerdefinierten Seiten
     1. Für die Attribute **E-Mail-Adresse** **Vorname** und **Nachname** wählen Sie **Nein** in der Spalte **Optional** aus.
 1. Wählen Sie **Speichern** aus.
 
-    ![Konfiguration der Richtlinie für die lokale Kontoanmeldeseite](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
+    ![Konfiguration der Richtlinie für die lokale Kontoanmeldeseite.](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### <a name="update-the-profile-editing-policy-with-custom-page-information"></a>Aktualisieren Sie die Richtlinie „Profil bearbeiten“ mit den benutzerdefinierten Seiteninformationen
 
@@ -188,11 +188,11 @@ In der Modulbibliothek sind die Anmeldungsmodule mit Standardtextzeichenfolgen f
 
 Beispielsweise ist der Standardtext für den Link Kennwort vergessenen **Vergessenes Kennwort?**. Nachfolgend wird der Standardtext auf der Anmeldeseite angezeigt.
 
-![Der Standardtext für den Link Kennwort vergessenen auf der Anmeldeseite](./media/B2C_SignUp_ModuleFace.png)
+![Der Standardtext für den Link Kennwort vergessenen auf der Anmeldeseite.](./media/B2C_SignUp_ModuleFace.png)
 
 Sie könnnen jedoch in der Datei global.json für das Anmeldungsmodul in der Modulbibliothek den Text zu **Kennwort vergessen?** ändern, wie in der folgenden Abbildung dargestellt.
 
-![Aktualisierter Hyperlinktext im Anmeldungsmodul global.json-Datei](./media/B2C_CustomizingStringsForModule.png)
+![Aktualisierter Hyperlinktext im Anmeldungsmodul global.json-Datei.](./media/B2C_CustomizingStringsForModule.png)
 
 Nachdem Sie die Datei global.json aktualisiert und die Änderungen veröffentlicht haben, wird der neue Hyperlinktext im Anmeldungsmodul in Commerce und auf der Liveanmeldeseite angezeigt.
 

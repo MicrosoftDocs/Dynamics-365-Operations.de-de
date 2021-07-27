@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ed9e62751b6be9fad6de3bf262d37d7977d192
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 2593f3128ec103248e109f3c80f48b9d7a035f54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224092"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355345"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Unterstützte zusammengesetzte Datentypen für elektronische Berichtsformeln
 
@@ -28,7 +28,7 @@ ms.locfileid: "6224092"
 
 Dieses Thema enthält Informationen zu den zusammengesetzte Datentypen, die in Ausdrücke für die [elektronische Berichterstellung (EB)](general-electronic-reporting.md) unterstützt werden. Die zusammengesetzten Datentypen sind [Klasse](#class), [Container](#container), [Datensatz](#record), [Datensatzliste](#record-list), und [Objekt](#object).
 
-## <a name="class"></a><a name="class"></a>Klasse 
+## <a name="class"></a><a name="class"></a>Klasse
 
 Der Datentyp *Klasse* bezieht sich auf eine öffentliche Anwendungsklasse. In ER wird es als [*Datensatz*](#record) dargestellt, der für jede öffentliche Methode der referenzierten Klasse ein eigenes Feld enthält. Wenn der Aufruf der Methode parametrisiert ist, müssen Sie auch die erforderlichen Argumente der entsprechenden Typen in einem ER-Ausdruck angeben, der für den Aufruf der Methode konfiguriert ist.
 
@@ -43,11 +43,11 @@ Der Standardwert einer *Klasse* ist **Null**.
 
 Die folgende Abbildung zeigt, wie die Datenquelle **Systeminformationen (xInfo)** des Typs **Klasse** hinzugefügt wird, um die Instanz der Anwendungsklasse **xInfo** und rufen Sie ihre Methode **Produktname()** auf, um den Namen der aktuellen Anwendung zu erhalten. Der Name der aktuellen Anwendung wird zur Laufzeit durch Ausführung der `xInfo.productName`-Bindung abgerufen, die für das Feld **Softwarename (Softwarename)** des EB-Datenmodells konfiguriert wurde. Diese Bindung ruft die `productName()`-Methode der Anwendungsklasse **xInfo**, die in der aktuellen Modellzuordnung als Datenquelle **Systeminformationen (xInfo)** dargestellt wird.
 
-[![Konfigurieren einer Klassendatenquelle im EB-Modellzuordnungsdesigner](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
+[![Konfigurieren einer Klassendatenquelle im EB-Modellzuordnungsdesigner.](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
 
 Die folgende Abbildung zeigt, wie das EB-Format konfiguriert ist, um den bereitgestellten Anwendungsnamen in generierte Dokumente einzufügen. Das Feld **Softwarename (Softwarename)** des verwendeten Datenmodells war an die Komponente **Zeichenfolge** geknüpft, die unter dem XML-Element **SoftwareGebraucht** des EB-Formats verschachtelt ist. Der Name der aktuellen Anwendung wird also zur Laufzeit an das XML-Element **softwareUsed** eines generierten Dokuments im XML-Format.
 
-[![Struktur eines elektronischen Ausgangsdokuments im EB-Formatdesigner konfigurieren](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
+[![Struktur eines elektronischen Ausgangsdokuments im EB-Formatdesigner konfigurieren.](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
 
 ## <a name="container"></a><a name="container"></a>Container
 
@@ -60,7 +60,7 @@ Der Standardwert einer *Container* ist **Null**.
 
 Die folgende Abbildung zeigt, wie das Feld **Bitmap(Bild)** vom Typ *Container* an das Datenmodellfeld **Logo** vom Typ **Container** in der Modellzuordnung **Verkaufsrechnung** gebunden ist. Diese Bindung macht das Firmenlogo für jedes EB-Format verfügbar, das für die **Verkaufsrechnung**-Root-Definition gedacht ist und verwendet diese Modellzuordnung zur Laufzeit.
 
-[![Binden eines Felds vom Typ Container an den EB-Modellzuordnungsdesigner](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
+[![Binden eines Felds vom Typ Container an den EB-Modellzuordnungsdesigner.](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
 
 ## <a name="record"></a><a name="record"></a>Aufzeichnen
 
@@ -109,7 +109,7 @@ Der Standardwert eines *Objekts* ist **Null**.
 
 Die folgende Abbildung zeigt, wie die Datenquelle **ReportDataContract** vom Typ *Objekt* hinzugefügt wird, um Informationen über eine generierte Rechnung aus dem Quellcode an die Modellzuordnung **Projektrechnung**. Beispielsweise wird der Rechnungsinstanztext als Teil des Ausführungskontexts übergeben. Dieser Text wird zur Laufzeit durch die Ausführung der `ReportDataContract.parmInvoiceInstanceText`-Bindung abgerufen, die für das Feld **Hinweis** des EB-Datenmodells konfiguriert wurde. Diese Bindung ruft die `parmInvoiceInstanceText()`-Methode der Anwendungsklasse **PSAProjInvoiceContract**, die in der aktuellen Modellzuordnung als Datenquelle **ReportDataContract** dargestellt wird.
 
-[![Konfigurieren einer Objektdatenquelle im EB-Modellzuordnungsdesigner](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
+[![Konfigurieren einer Objektdatenquelle im EB-Modellzuordnungsdesigner.](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
 
 Informationen zum Übergeben von Details des Ausführungskontexts vom Quellcode an die ausgeführte EB-Lösung finden Sie unter [Anwendungsartefakte entwickeln, um den entworfenen Bericht aufzurufen](er-quick-start1-new-solution.md#DevelopCustomCode).
 

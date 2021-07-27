@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fae899bcfa8bb2566d1a9aee3f0dbe22bc219edf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f49ae2a65bf590eea13265712621675da87dd621
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825637"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360076"
 ---
 # <a name="scheduled-execution"></a>Geplante Ausführung
 
@@ -37,9 +37,9 @@ Die Einrichtung der geplanten Ausführung, die sich auf Arbeitsaufträge bezieht
 3. Wählen Sie in den Feldern **Technischer Standort**, **Auftragsart**, **Assettyp**, **Hersteller**, **Modell**, **Wartungsauftragstyp Kategorie**, **Wartungsauftragstyp**, **Wartungsauftragstyp Variante** und **Wechseln** die gewünschten Werte aus.
 4. Wählen Sie im Feld **Service Level** ein Service Level für Arbeitsaufträge aus. Wenn Sie dieses Feld leer lassen, machen Sie den generischsten Typ der geplanten Ausführungslinie. Ein Beispiel für eine generische Zeile finden Sie im ersten Satz in der folgenden Abbildung. Diese Position ermöglicht es, alle Arbeitsaufträge, die keinen Servicegrad für Arbeitsaufträge haben, für ein bestimmtes Datum und eine bestimmte Uhrzeit zu planen.
 5. Wählen Sie im Feld **Geplante Ausführung** das Zeitintervall aus.
-6. Wählen Sie **Speichern**.
+6. Wählen Sie **Speichern** aus.
 
-![Geplante Ausführung](media/20-setup-for-work-orders.png)
+![Geplante Ausführung.](media/20-setup-for-work-orders.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

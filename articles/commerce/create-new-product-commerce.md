@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 44a58da0be280b06d96cdeae6929042bb50ed4a6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 057acf50f16bef3eea55e51571cb6f49b79c5ab1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795714"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352421"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Neues Produkt in Commerce erstellen
 
@@ -49,13 +49,13 @@ Ein Produkt wird hauptsächlich durch eine Produktnummer, einen Namen und eine B
 
 Das folgende Bild zeigt das Beispiel eines hinzugefügten Produkts.
 
-![Ein Produkt erstellen](media/create-new-product.png)
+![Ein Produkt erstellen.](media/create-new-product.png)
 
 Sobald ein Produkt hinzugefügt wurde, können zusätzliche Daten dafür festgelegt werden, zum Beispiel **Produktbeschreibung**, **Variantengruppen**, **Dimensionsgruppen**, **Produkteigenschaften** und **Verwandte Produkte**.
 
 Das folgende Bild zeigt die zusätzlichen Details eines Produkts.
 
-![Produktdetails](media/create-new-product-2.png)
+![Produktdetails.](media/create-new-product-2.png)
 
 ### <a name="create-product-variants"></a>Produktvarianten erstellen
 
@@ -74,23 +74,23 @@ Um ein Produkt zu verkaufen, muss es zunächst an eine juristische Person freige
 
 1. Wählen Sie auf der Produktseite **Produkte freigeben**.
 
-    ![Produkt freigeben](media/create-new-product-3.png)
+    ![Produkt freigeben.](media/create-new-product-3.png)
 
 1. Wählen Sie das freizugebende Produkt und anschließend **Nächste** aus.
 
-    ![Freizugebendes Produkt auswählen](media/create-new-product-4.png)
+    ![Freizugebendes Produkt auswählen.](media/create-new-product-4.png)
 
 1. Wählen Sie die freizugebende Produktsatzvarianten und anschließend **Nächste** aus.
 
-    ![Freizugebende Varianten auswählen](media/create-new-product-5.png)
+    ![Freizugebende Varianten auswählen.](media/create-new-product-5.png)
 
 1. Wählen Sie die juristische Person und dann **Nächste** aus.
 
-    ![Juristische Person auswählen](media/create-new-product-6.png)
+    ![Juristische Person auswählen.](media/create-new-product-6.png)
 
 1. Wählen Sie **Fertig stellen** aus.
 
-    ![Produktfreigabe abschließen](media/create-new-product-7.png)
+    ![Produktfreigabe abschließen.](media/create-new-product-7.png)
 
 ## <a name="configure-a-released-product"></a>Ein freigegebenes Produkt konfigurieren
 
@@ -105,11 +105,11 @@ Sobald ein Produkt freigegeben ist, ist eine weitere Konfiguration erforderlich,
 
 Das folgende Bild zeigt eine Beispielkonfiguration für ein freigegebenes Produkt.
 
-![Freigegebenes Produkt konfigurieren](media/create-new-product-8.png)
+![Freigegebenes Produkt konfigurieren.](media/create-new-product-8.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Erstellen juristischer Personen](channels-legal-entities.md)
+[Juristische Personen erstellen](channels-legal-entities.md)
 
 [Eine Variantengruppe erstellen](create-variant-group.md) 
 

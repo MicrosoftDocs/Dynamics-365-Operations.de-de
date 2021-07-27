@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 62bc6587ad80fd318038f5dfc5ff68821b2a65cd
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: baba699a1b8efc986b4b274b8faf143d24d69e96
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893931"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355780"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Benutzern ermöglichen, eine ER-Formatreferenz einzurichten, die ein Format aus dem globalen Repository abfragt
 
@@ -34,27 +34,27 @@ Beispiel: Wenn Sie [Außenhandelsparameter](../../../finance/localizations/emea-
 
 Wenn die aktuelle Finance-Instanz keine auf den Intrastat-Geschäftsprozess bezogenen EB-Formate enthält, ist dieses Suchfeld leer.
 
-[![Außenhandelsparameter-Seite](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+[![Außenhandelsparameter-Seite.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
 Wenn die aktuelle Finance-Instanz auf den Intrastat-Geschäftsprozess bezogenen ER-Formate enthält, bietet das Suchfeld die ER-Formate an.
 
-[![Außenhandelsparameter-Seite](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
+[![Außenhandelsparameter-Seite.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
 
 Diese Suche bietet nur die ER-Formate an, die bereits in die aktuelle Finance-Instanz importiert wurden. Zum [Importieren](./tasks/er-import-configuration-lifecycle-services.md) von ER-Lösungen in die aktuelle Finance-Instanz benötigen Sie Berechtigungen, um die entsprechende Funktion des ER-Frameworks auszuführen, die den [Lebenszyklus](general-electronic-reporting-manage-configuration-lifecycle.md) von ER-Lösungen unterstützt, die ER-Formate enthalten.
 
 Ab Finance-Version 10.0.9 (Release April 2020) wurde die Benutzeroberfläche der Suche im ER-Format, die mithilfe der ER-Framework-API implementiert wird, erweitert. Sie können weiterhin die vorhandenen ER-Formate auswählen, die auf dem Inforegister für **Formatkonfiguration auswählen** vorhanden sind. Darüber hinaus bietet die erweiterte Suche die neue Option, das globale Repository (GR) nach bestimmten EB-Formaten zu durchsuchen. Alle ER-Formate des GR werden auf dem Inforegister für **Aus globalem Repository importieren** angeboten.
 
-[![Außenhandelsparameter-Seite](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
+[![Außenhandelsparameter-Seite.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
 Ähnlich wie das Inforegister für **Formatkonfiguration auswählen** zeigt das Inforegister für **Aus globalem Repository importieren** nur die ER-Formate an, die für den Geschäftsprozess gelten, für den in diesem Suchfeld ein ER-Format ausgewählt wurde. In diesem Beispiel die Generierung der Intrastat-Meldung. Das ER-Format gilt für das Unternehmen, bei dem der Benutzer derzeit angemeldet ist, abhängig vom Kontext des Unternehmenslandes.
 
 Wenn Sie ein ER-Format auf dem Inforegister für **Aus globalem Repository importieren** auswählen, wird die ausgewählte ER-Format-[Konfiguration](general-electronic-reporting.md#Configuration) aus dem GR in die aktuelle Finance-Instanz importiert.
 
-[![Außenhandelsparameter-Seite](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
+[![Außenhandelsparameter-Seite.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
 Wenn der Import erfolgreich abgeschlossen wurde, wird der Verweis auf das importierte ER-Format in diesem Suchfeld gespeichert. Beim erstmaligen Zugriff auf das GR müssen Sie dem angegebenen Link folgen, um sich für den [Regulatory Configuration Service](https://aka.ms/rcs) (RCS) anzumelden, mit dem der Zugriff auf den GR-Speicher verwaltet wird.
 
-[![Außenhandelsparameter-Seite](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
+[![Außenhandelsparameter-Seite.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Standardmäßig zeigt das Inforegister für **Aus globalem Repository importieren** die Liste der ER-Formate aus dem temporären Speicher an, die basierend auf dem GR-Inhalt zur Leistungsverbesserung automatisch erstellt wird. Dies passiert, wenn das Inforegister für **Aus globalem Repository importieren** zum ersten Mal geöffnet wird, was einige Sekunden dauern kann.
 
@@ -64,7 +64,7 @@ Wenn Sie das erforderliche ER-Format auf dem Inforegister **Aus globalem Reposit
 
 Die Verfügbarkeit dieser Funktionalität wird von der Funktion für die **Erweiterte Suche nach ER-Formatkonfigurationen mit Abfrage des globalen Respository** in der **Funktionsverwaltung** gesteuert. Diese Funktion ist standardmäßig aktiviert.
 
-[![Funktionsverwaltung-Seite](./media/ER-ExtLookup-FeatureMngt.png)](./media/ER-ExtLookup-FeatureMngt.png)
+[![Funktionsverwaltung-Seite.](./media/ER-ExtLookup-FeatureMngt.png)](./media/ER-ExtLookup-FeatureMngt.png)
 
 ## <a name="security-considerations"></a>Sicherheitsaspekte
 
@@ -72,7 +72,7 @@ Das Recht **Verwalten von Konfigurations-Repositorys** (**ERMaintainSolutionRepo
 
 Der folgende Screenshot zeigt, wie dieses Recht Benutzern gewährt werden kann, die der **Buchhalter**-Rolle zugewiesen sind. Diese Rolle ermöglicht es Benutzern, Außenhandelsparameter zu konfigurieren und Verweise auf die EB-Formate in den Feldern **Dateiformatzuordnung** und **Berichtformatzuordnung** auf der Seite **Außenhandelsparameter** einzurichten.
 
-[![Sicherheitskonfiguration-Seite](./media/ER-ExtLookup-SecuritySetting.png)](./media/ER-ExtLookup-SecuritySetting.png)
+[![Sicherheitskonfiguration-Seite.](./media/ER-ExtLookup-SecuritySetting.png)](./media/ER-ExtLookup-SecuritySetting.png)
 
 ## <a name="limitations"></a>Einschränkungen
 

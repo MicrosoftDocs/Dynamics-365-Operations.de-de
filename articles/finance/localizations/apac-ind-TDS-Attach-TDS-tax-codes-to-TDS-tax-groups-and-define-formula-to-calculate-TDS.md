@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ec0d683153bd5ab731035159d32881fbdb352d70
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f681018c27afbef8d34c88a518941d45aa9d72df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023277"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358481"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>TDS-Steuercodes zu TDS-Steuergruppen hinzufügen und die Formel zur TDS-Berechnung festlegen
 
@@ -33,7 +33,7 @@ Gehen Sie wie folgt vor, um eine TDS-Steuergruppe einzurichten, TDS-Steuercodes 
 
 1. Gehen Sie zu **Steuer \> Indirekte Steuern \> Quellensteuer \> Quellensteuergruppen**.
 
-    [![Seite „Quellensteuergruppen“](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
+    [![Seite „Quellensteuergruppen“.](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
 
 2. Wählen Sie im Aktionsbereich die Option **Neu** aus, um eine Quellensteuergruppe für TDS zu erstellen und die erforderlichen Details einzugeben.
 3. Wählen Sie im Feld **Steuertyp** die Option **TDS** aus.
@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor, um eine TDS-Steuergruppe einzurichten, TDS-Steuercodes 
 7. Um zu verhindern, dass die Steuergruppe in Buchungen berechnet wird, aktivieren Sie **Befreit**.
 8. Wählen Sie im Aktionsbereich **Designer** aus, um den Formeldesigner zu öffnen, damit Sie die Formel zur Berechnung der TDS für die TDS-Steuergruppe festlegen können. Auf der Seite **Designer** werden unter der Registerkarte **Steuern** die TDS-Steuercodes angezeigt, die für die TDS-Steuergruppe ausgewählt wurden.
 
-    [![Designerseite](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
+    [![Designerseite.](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
 
 9. Wählen Sie auf der Registerkarte **Berechnung** **ALT + N** aus, um eine Position zu erstellen. Im Feld **Kennung** wird die automatisch generierte Prioritätskennung für die TDS-Berechnung.
 10. Wählen Sie im Feld **Steuercode** den TDS-Steuercode aus, für den Sie eine Formel festlegen möchten. In diesem Feld können alle TDS-Steuercodes ausgewählt werden, die für die TDS-Steuergruppe ausgewählt wurden.

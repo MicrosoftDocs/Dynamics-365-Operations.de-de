@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1392b767815722c17b1cc72d27fe2bb8a7c32281
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d562f97ecc3c442be4231470167a0aae86f84fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796365"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345159"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 
@@ -36,7 +36,7 @@ Standardmäßig werden Produktsuchen im Filialsortiment ausgeführt. Diese Form 
 
 Auf der Seite **Katalog ändern** können Mitarbeiter jeden beliebigen Shop auswählen oder Shop-übergreifend nach Produkten suchen.
 
-![Den Katalog ändern](./media/Changecatalog.png "Den Katalog ändern")
+![Den Katalog ändern.](./media/Changecatalog.png "Den Katalog ändern")
 
 Bei der lokalen Produktsuche wird in den folgenden Produkteigenschaften gesucht:
 
@@ -59,7 +59,7 @@ Bei der lokalen Produktsuche wird in den folgenden Produkteigenschaften gesucht:
 - Einzelhändler können die Produktsuche so konfigurieren, dass Suchvorschläge angezeigt werden, wenn Produktnamen eingegeben werden. Eine neue Einstellung für diese Funktion ist im POS-Funktionsprofil in einer Gruppe namens **Produktsuche** verfügbar. Die Einstellung hat die Bezeichnung **Beim Eingeben Vorschläge anzeigen**. Diese Funktion ermöglicht Mitarbeitern, schnell das gesuchte Produkt zu finden, da sie nicht den ganzen Namen eingeben müssen.
 - Der Produktsuchalgorithmus sucht nun auch in der **Suchbegriff**-Eigenschaft des Produkts nach den Suchbegriffen.
 
-![Produktvorschläge](./media/Productsuggestions.png "Produktvorschläge")
+![Produktvorschläge.](./media/Productsuggestions.png "Produktvorschläge")
 
 ## <a name="customer-search"></a>Debitorensuche
 
@@ -83,7 +83,7 @@ Für eine globale Suche können Mitarbeiter die Schaltfläche **Filterergebnisse
 
 Bei einer Remote-Debitorensuche wird die Debitorenkennung nicht für Debitoren angezeigt, die von anderen juristischen Personen abgefragt wurden, da für diese Parteien im aktuellen Unternehmen keine Debitorenkennung angelegt wurde. Wenn ein Mitarbeiter jedoch die Debitorendetailseite öffnet, generiert das System automatisch eine Debitorenkennung für die Partei und verknüpft das Debitorenadressbuch des Shops mit dem Debitor. Daher wird der Debitor bei späteren lokalen Shopsuchen angezeigt.
 
-![Globale Debitorensuche](./media/Globalcustomersearch.png "Globale Debitorensuche")
+![Globale Debitorensuche.](./media/Globalcustomersearch.png "Globale Debitorensuche")
 
 ### <a name="additional-local-customer-search-capabilities"></a>Zusätzliche Funktionen für die lokale Debitorensuche
 
@@ -94,11 +94,11 @@ Sucht ein Benutzer nach einer Telefonnummer, ignoriert das System Sonderzeichen 
 
 Die herkömmliche Debitorensuche kann zeitaufwendig sein, da sie über mehrere Felder hinweg sucht. Stattdessen können Kassierer in einer einzelnen benutzerdefinierten Eigenschaft, wie Name, E-Mail-Adresse oder Telefonnummer suchen. Die Eigenschaften, die der Debitorensuchalgorithmus verwendet, werden zusammen als *Debitorensuchkriterien* bezeichnet. Der Systemadministrator kann einfach ein oder mehrere Kriterien als Verknüpfungen konfigurieren, die in der POS angezeigt werden. Da die Suche auf ein einziges Kriterium eingeschränkt ist, werden nur die relevanten Suchergebnisse angezeigt, und die Leistung ist viel besser, als die Leistung bei einer standardmäßigen Debitorensuche. Die folgende Abbildung zeigt die Debitorensuchverknüpfungen in POS an.
 
-![Kundensuchkriterien Shortcuts](./media/SearchShortcutsPOS.png "Kundensuchkriterien Shortcuts")
+![Kundensuchkriterien Shortcuts.](./media/SearchShortcutsPOS.png "Kundensuchkriterien Shortcuts")
 
 Um Suchkriterien als Verknüpfungen festzulegen, muss der Administrator die Seite **Commerce Parameter** in Commerce öffnen und dann auf der Registerkarte **POS-Suchkriterien** alle Kriterien auswählen, die als Verknüpfungen angezeigt werden sollen.
 
-![Shortcuts für die Suche konfigurieren](./media/ConfigureShortcutsAX.png "Shortcuts für die Suche konfigurieren")
+![Shortcuts für die Suche konfigurieren.](./media/ConfigureShortcutsAX.png "Shortcuts für die Suche konfigurieren")
 
 > [!NOTE]
 > Wenn Sie zu viele Verknüpfungen hinzufügen, wird das Dropdownmenü in der Suchleiste in POS überladen, und die Sucherfahrung des Mitarbeiters kann beeinträchtigt werden. Es wird empfohlen, dass Sie nur so viele Verknüpfungen hinzufügen, wie Sie benötigen.

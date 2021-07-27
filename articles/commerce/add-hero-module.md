@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0a3fd442f20fd40cdf8b845d353ae5d61ce51e29
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 026a549bfb856abc56eeaab21c681a8271ce4f44
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797646"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347511"
 ---
 # <a name="content-block-module"></a>Inhaltsblockmodul
 
@@ -46,11 +46,11 @@ Zusätzlich kann das Design für jedes Layout unterschiedliche Eigenschaften auf
 
 Die folgende Abbildung zeigt das Beispiel eines Inhaltsblockmoduls mit einem Helden-Layout.
 
-![Beispiel eines Hero-Moduls](./media/Hero.PNG)
+![Beispiel eines Hero-Moduls.](./media/Hero.PNG)
 
 Die folgende Abbildung zeigt das Beispiel eines Inhaltsblockmoduls mit einem Funktions-Layout.
 
-![Beispiele für Funktionsmodule](./media/Feature.PNG)
+![Beispiele für Funktionsmodule.](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Eigenschaften eines Inhaltsblockmoduls
 
@@ -77,7 +77,7 @@ Um ein Heromodul einer neuen Seite hinzuzufügen und die erforderlichen Eigensch
 1. Im **Haupt-** Slot der Standardseite fügen Sie ein Heromodul hinzu.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Verwenden Sie das soeben erstellte Helden-Layout zur Erstellung einer Seite namens **Inhaltsblockseite**.
-1. Auf dem Seitenüberblick wählen Sie den Slot (**Haupt**) und wählen die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Auf dem Seitenüberblick wählen Sie den Slot **Haupt** und wählen die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
 1. Im Dialogfeld **Modul hinzufügen** unter **Modul wählen** wählen Sie das Heromodul, und wählen Sie dann **OK**.
 1. Wählen Sie im Gliederungsbaum links das Inhaltsblockmodul aus.
 1. Wählen Sie im Eigenschaftenbereich rechts und wählen Sie **Eine Bild hinzufügen** aus. Wählen Sie dann ein vorhandenes Bild aus oder laden Sie ein neues Bild hoch.

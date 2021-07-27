@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dd652af3100f8de59e06490443baeebca58a4dd3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7976a7d555c04cb2ea01a2dbe571f6b8b440b69a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838537"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347067"
 ---
 # <a name="maintenance-forecasts"></a>Wartungsprognose
 
@@ -102,7 +102,7 @@ Um einen Überblick darüber zu erhalten, wo der Artikel in der ausgewählten Po
 
 Die folgende Abbildung zeigt ein Beispiel für die Seite **Arbeitsauftrag – Wartungsprognose**.
 
-![Abbildung 1](media/06-work-orders.png)
+![Abbildung 1.](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>utomatische Aktualisierung von Arbeitsauftragsprognosen
@@ -120,7 +120,7 @@ Im Anlagenmanagement können Sie Änderungen an den Arbeitsauftragsprognosen fü
 
 Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Arbeitsauftragsplanung aktualisieren**.
 
-![Abbildung 2](media/07-work-orders.png)
+![Abbildung 2.](media/07-work-orders.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

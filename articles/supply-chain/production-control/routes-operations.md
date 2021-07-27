@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: bfcbeaa64aa00f19dc72cf5256ead47654808ed9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188933"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350497"
 ---
 # <a name="routes-and-operations"></a>Arbeitspläne und Arbeitsgänge
 
@@ -45,7 +45,7 @@ Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der verwendet wird
 
 Ein einfacher Arbeitsplan ist fortlaufend, und es ist nur einen Startpunkt für den Arbeitsplan definiert.  
 
-[![Einfache Arbeitspläne](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Einfache Arbeitspläne.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Wenn Sie nur einfache Arbeitspläne in den Produktionssteuerungsparametern aktivieren, generiert Supply Chain Management automatisch die Arbeitsgangnummern (10, 20, 30 usw.), wenn Sie den Arbeitsplan definieren.
 
@@ -53,7 +53,7 @@ Wenn Sie nur einfache Arbeitspläne in den Produktionssteuerungsparametern aktiv
 
 Wenn Sie die komplexeren Arbeitsplan-Netzwerke in den Produktionssteuerungsparametern aktivieren, können Sie Arbeitspläne definieren, die mehrere Startpunkte haben und Arbeitsgängen, die gleichzeitig ausgeführt werden können.  
 
-[![Arbeitsplan-Netzwerk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Arbeitsplan-Netzwerk.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Jeder Arbeitsgang kann nur einen Folgeaktivitätsarbeitsgang haben, und der gesamte Arbeitsplan muss in einem einzigen Arbeitsgang beendet werden.
@@ -64,7 +64,7 @@ Wenn Sie die komplexeren Arbeitsplan-Netzwerke in den Produktionssteuerungsparam
 
 Manchmal ist eine Kombination aus mehreren betrieblichen Ressourcen, die bestimmte Merkmale aufweisen, erforderlich, um einen Arbeitsgang auszuführen. Beispielsweise könnte ein Zusammenbauvorgang eine Maschine und ein Werkzeug erfordern, und eine Arbeitskraft, die zwei Maschinen beaufsichtigt für den Arbeitsgang. Dies kann z.B. modelliert werden, indem parallele Arbeitsgänge verwendet werden, bei denen ein Arbeitsgang ausgewählt ist, der der primäre Arbeitsgang ist und der andere der sekundäre ist.  
 
-[![Arbeitsplan mit primären und sekundären Arbeitsgängen](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Arbeitsplan mit primären und sekundären Arbeitsgängen.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 In der Regel stellt der primäre Arbeitsgang die Engpassressource dar, die die Bearbeitungszeit für die sekundären Arbeitsgänge definiert. Bei der Planung mit begrenzter Kapazität, muss die Ressourcen, für die geplant werden soll, für den primären Arbeitsgang und die sekundären Arbeitsgänge gleichzeitig verfügbar sein und die freie Kapazität haben.  
 

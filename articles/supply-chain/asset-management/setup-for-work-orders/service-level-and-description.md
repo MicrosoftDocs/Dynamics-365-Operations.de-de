@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb342e700c9390e1eb9f2a9e9d67b874b3e19b8e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d50955d510dca21c3de160fd280ff53ba54926a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808255"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356463"
 ---
 # <a name="service-level-and-description"></a>Service Level und Beschreibung
 
@@ -43,9 +43,9 @@ Wenn Sie einen Arbeitsauftrag anlegen, möchten Sie möglicherweise die Service 
 6. Um eine Startzeit für den Arbeitsauftrag festzulegen, stellen Sie zusätzlich zu einem Startdatum die Option **Startzeit einstellen** auf **Ja**. Geben Sie dann die Startzeit in das Feld **Startzeit** ein. Wenn Sie die Option auf **Nein** setzen, wird die aktuelle Tageszeit verwendet.
 7. Geben Sie im Feld **Endtag** eine Anzahl von Tagen ein, um den Zeitraum zu definieren, in dem der Arbeitsauftrag enden soll. Die Anzahl der Tage wird ab dem Startdatum des Arbeitsauftrags berechnet. Wenn der Arbeitsauftrag beispielsweise innerhalb einer Woche nach seinem Beginndatum enden soll, geben Sie **7** ein.
 8. Um eine Endzeit für den Arbeitsauftrag festzulegen, stellen Sie zusätzlich zu einem Enddatum die Option **Endzeit einstellen** auf **Ja**. Geben Sie dann die Endzeit in das Feld **Endzeit** ein. Wenn Sie die Option auf **Nein** setzen, wird die aktuelle Tageszeit verwendet.
-9. Wählen Sie **Speichern**.
+9. Wählen Sie **Speichern** aus.
 
-![Seite „Arbeitsauftrags-Leistungsebene“](media/19-setup-for-work-orders.png)
+![Seite „Arbeitsauftrags-Leistungsebene“.](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>Erstellen einer Beschreibung
 

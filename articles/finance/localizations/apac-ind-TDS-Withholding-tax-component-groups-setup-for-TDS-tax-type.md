@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 23124d36389b08726defbedbd1bab9a7eb43c197
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9ececb030432028512ff2d75a772761df4d416a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023279"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356608"
 ---
 # <a name="set-up-withholding-tax-component-groups-for-the-tds-tax-type"></a>Quellensteuererklärungskomponentengruppen für den Steuertyp „TDS“ einrichten
 
@@ -31,7 +31,7 @@ In diesem Thema wird erklärt, wie Sie Quellensteuerkomponentengruppen, wie **Re
 
 1. Gehen Sie zu **Steuer \> Setup \> Quellensteuer \> Quellensteuerkomponentengruppen**.
 
-    [![Seite „Quellensteuerkomponentengruppen“](./media/apac-ind-TDS-8.png)](./media/apac-ind-TDS-8.png)
+    [![Seite „Quellensteuerkomponentengruppen“.](./media/apac-ind-TDS-8.png)](./media/apac-ind-TDS-8.png)
 
 2. Wählen Sie im Feld **Steuertyp** **TDS** aus, um Quellensteuerkomponentengruppen für den Steuertyp „TDS“ einzurichten.
 3. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Position zu erstellen.

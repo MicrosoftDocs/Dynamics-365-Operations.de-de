@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e6c5081f71a18dfac83b7aea950395436b42f50e
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: e8a3782e5beb7d16accc0a56447d5db1f1376dd8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881035"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350183"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Benutzeroberfläche im Stil von Microsoft Office für Dokumente in der Geschäftsdokumentverwaltung
 
@@ -51,18 +51,18 @@ Befolgen Sie diese Schritte, um diese Funktion für alle juristischen Personen z
 
 1. Wählen Sie im Arbeitsbereich **Geschäftsdokumentverwaltung** **Neues Dokument** aus.
 
-    ![Arbeitsbereich Geschäftsdokumentenverwaltung](./media/BDM_overview_new_template1.png)
+    ![Arbeitsbereich Geschäftsdokumentenverwaltung.](./media/BDM_overview_new_template1.png)
 
 2. Wählen Sie in der Registerkarte **Auswählen** das Dokument aus, das als Vorlage verwendet werden soll, und wählen Sie **Dokument erstellen** aus.
 
-    ![Dialogfeld „Geschäftsdokumente“](./media/BDM_overview_new_template2.png)
+    ![Dialogfeld „Geschäftsdokumente“.](./media/BDM_overview_new_template2.png)
 
 3. Ändern Sie im neuen Dialogfeld im Feld **Titel** den Titel nach Bedarf. Der Titeltext wird zum Benennen der neuen ER-Formatkonfiguration verwendet, die automatisch erstellt wird. Die Entwurfsversion dieser Konfiguration (**Debitoren-FTI-Bericht (GER) – Kopie**) enthält die bearbeitete Vorlage und wird verwendet, um dieses ER-Format für den aktuellen Benutzer auszuführen. Die ursprüngliche Vorlage von der Basis-ER-Formatkonfiguration wird verwendet, um dieses ER-Format für jeden anderen Benutzer auszuführen.
 4. Ändern Sie im Feld **Name** den Namen der ersten Überarbeitung der bearbeitbaren Vorlage, die automatisch erstellt wird.
 5. Aktualisieren Sie im Feld **Kommentar** die Anmerkungen für die Überarbeitung der bearbeitbaren Vorlage, die automatisch erstellt wird.
 6. Wählen Sie **OK** aus, um den Beginn des Bearbeitungsprozesses zu bestätigen.
 
-    ![Dialogfeld zur Dokumentenerstellung](./media/BDM_overview_new_template3.png)
+    ![Dialogfeld zur Dokumentenerstellung.](./media/BDM_overview_new_template3.png)
 
 Die Schaltfläche **Neues Dokument** wird verwendet, um eine Vorlage in einer ER-Formatkonfiguration zu erstellen und zu bearbeiten, die von einem anderen Anbieter bereitgestellt wird. In diesem Beispiel ist der Anbieter Microsoft. Wenn Sie auf **Neues Dokument** klicken, sehen Sie alle Vorlagen, die sich im Besitz aktueller und anderer Anbieter befinden. Nachdem Sie die Vorlage ausgewählt haben, wird sie zur Bearbeitung geöffnet. Die bearbeitete Vorlage wird dann in einer neuen ER-Formatkonfiguration gespeichert, die automatisch generiert wird.
 
@@ -71,16 +71,16 @@ Gehen Sie wie folgt vor, um die erforderlichen Informationen bereitzustellen, be
 
 1. Wählen Sie im Arbeitsbereich **Geschäftsdokumentverwaltung** **Neues Dokument** aus.
 
-    ![Arbeitsbereich Geschäftsdokumentenverwaltung](./media/BDM_overview_new_template1.png)
+    ![Arbeitsbereich Geschäftsdokumentenverwaltung.](./media/BDM_overview_new_template1.png)
     
 2. Wählen Sie auf der Seite **Neue Vorlage erstellen** die Registerkarte **Hochladen**, dann die Registerkarte **Vorlage** und schließlich **Durchsuchen** aus, um die Excel-Datei zu finden und auszuwählen, die Sie als Vorlage verwenden möchten. Im Abschnitt **Vorlage** werden die Felder **Titel** und **Beschreibung** automatisch ausgefüllt. Sie geben den Namen und die Beschreibung der neuen EB-Formatkonfiguration an, die automatisch erstellt wird. Sie können diese Felder bei Bedarf bearbeiten.
 3. Im Abschnitt **Dokumenttyp** geben Sie im Feld **Name** den Typ des Geschäftsdokuments an. Dieser Wert wird verwendet, um die richtige Datenquelle (d. h. die EB-Modellkonfiguration) zu suchen.
 
-    ![Registerkarte „Vorlage“](./media/BDM_overview_new_UI_import_21.jpg)
+    ![Registerkarte „Vorlage“.](./media/BDM_overview_new_UI_import_21.jpg)
 
 4. Wählen Sie auf der Registerkarte **Datenquelle** das Inforegister **Filter** und dann **Filter anwenden** aus. Im Abschnitt **Datenquelle** wird das Feld **Name** automatisch ausgefüllt oder Sie können einen Wert manuell auswählen. Mit dem Filter können Sie nach der entsprechenden Datenquelle nach Name, Beschreibung, Länder-/Regionscode und Geschäftsdokumenttyp filtern.
 
-    ![Registerkarte „Datenquelle“](./media/BDM_overview_new_UI_import_31.jpg)
+    ![Registerkarte „Datenquelle“.](./media/BDM_overview_new_UI_import_31.jpg)
     
     > [!NOTE]
     > Das Inforegister **Filter** wird verwendet, um die richtige Datenquelle (d. h. die EB-Modellkonfiguration) zu suchen. Sie können alle Filterfelder bearbeiten, um die am besten geeignete Datenquelle für das Dokument zu finden, das Sie hochladen.
@@ -89,7 +89,7 @@ Gehen Sie wie folgt vor, um die erforderlichen Informationen bereitzustellen, be
     
 5. Auf der Registerkarte **Zuordnung** wählen Sie **Automatische Erkennung** aus. Das Feld **Stammdefinition** wird automatisch ausgefüllt oder Sie können einen Wert manuell auswählen. Diese Registerkarte zeigt die Endzuordnung für die Elemente aus der Vorlage und dem Modell.
 
-    ![Registerkarte „Zuordnung“](./media/BDM_overview_new_UI_import_41.jpg)
+    ![Registerkarte „Zuordnung“.](./media/BDM_overview_new_UI_import_41.jpg)
     
    > [!NOTE]
    > Die Zuordnung im Abschnitt **Vorlagenstruktur** verwendet die vollständige Übereinstimmung der Beschriftungen oder Beschreibungen in der Datenquelle in der Sprache des Benutzers und im Zellennamen in der Vorlage.
@@ -102,11 +102,11 @@ Wenn es in der elektronischen Berichterstellung keinen Anbieter gibt, können Si
 
 - Um einen Anbieter zu erstellen, ändern Sie den Namen des Anbieters im Feld **Name**, aktualisieren Sie die Internetadresse des neuen Anbieters im Feld **Internetadresse** und bestätigen Sie mit **OK**.
 
-    ![Einen neuen Anbieter in BDM erstellen](./media/bdm_create_provider.png)
+    ![Einen neuen Anbieter in BDM erstellen.](./media/bdm_create_provider.png)
     
 - Um einen vorhandenen Anbieter zu aktivieren, wählen Sie den Namen des Anbieters im Feld **Konfigurationsanbieter** aus und aktivieren Sie den Anbieter dann mit **OK**.
 
-    ![Einen Anbieter in BDM aktivieren](./media/bdm_choose_provider.png)
+    ![Einen Anbieter in BDM aktivieren.](./media/bdm_choose_provider.png)
 
 > [!NOTE]
 > Jede BDM-Vorlage verweist auf den Anbieter als Autor der Konfiguration. Aus diesem Grund ist für die Vorlage ein aktiver Anbieter erforderlich.

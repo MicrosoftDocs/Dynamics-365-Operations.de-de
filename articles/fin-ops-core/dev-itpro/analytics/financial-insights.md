@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 982d835c6c0d9bf6e19aa0ec1b03bce9aa7d2e5d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 90622bb8fb6452e4b4002fa5aab491112e98d923
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193749"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345811"
 ---
 # <a name="financial-analysis"></a>Finanzanalyse
 
@@ -60,7 +60,7 @@ Um in Finanzaufstellungen angezeigt zu werden und in verschiedene andere visuell
 ## <a name="entity-store"></a>Entitätsspeicher
 Die Daten für **Finanzanalyse** werden aus dem Entitätsspeicher entnommen (**Systemverwaltung** \> **Einrichtung** \> **Entitätsspeicher**). Wenn Sie den Arbeitsbereich **CFO-Überblick** oder **Finanzanalyse** öffnen und die folgende Warnmeldung in den visuellen Elementen angezeigt wird, müssen Sie die Entitäten aktualisieren.
 
-![Warnung](./media/Cantdisplay.png)
+![Warnung.](./media/Cantdisplay.png)
 
 Sie müssen die folgenden Entitäten aktualisieren, um sich Daten im Arbeitsbereich **Finanzanalyse** anzeigen zu lassen:
 
@@ -124,7 +124,7 @@ Benutzer können den Bericht filtern, indem sie den Bereich **Filter** links ver
 - **Filter auf der visuellen Ebene** – Diese Filter werden nur auf das ausgewählte visuelle Element angewendet. Diese Filter werden zusätzlich zu den Filtern auf Seitenebene angewendet.
 - **Drillthroughfilter** – Durch diesen Filter wird aus einem visuellen „Quell”-Element gefiltert, das auf das aktuelle visuelle Element angewendet wird, wenn Sie ein Drillthrough vom visuellen Quellelement bis zum aktuellen visuellen Element durchführen.
 
-![Filteroptionen](./media/filter.png)
+![Filteroptionen.](./media/filter.png)
 
 Um einen bestimmte Filterwert zu entfernen, wählen Sie das daneben angezeigte Radierersymbol aus. Entfernen Sie keinen Filter, indem Sie das X auswählen. Wenn Sie das X auswählen, wird das Feld, in dem Sie derzeit Filtern, als Filteroption entfernt. Wenn Sie aus Versehen ein Feld aus einem Filter entfernen, schließen Sie den Arbeitsbereich und öffnen Sie ihn dann erneut. Die Standardfiltereinstellungen werden erneut angewendet.
 
@@ -169,25 +169,25 @@ Verschiedene Ebenen von Drillvorgängen sind über Power BI verfügbar. Jede Ebe
 
 In der folgenden Abbildung ist die Aufstellung **Zwischenbilanz** auf die oberste Ebene der Zeilenhierarchie reduziert, nämlich dem Hauptkontotyp.
 
-![Aufstellung „Zwischenbilanz“](./media/trial-balance.png)
+![Aufstellung „Zwischenbilanz“.](./media/trial-balance.png)
 
 Um die nächste Ebene der Hierarchie anzuzeigen, nämlich die Hauptkontokategorien, können Sie das Feld **Drillvorgang für** auf **Zeilen** festlegen und dann die Schaltfläche **Erweitern** auswählen (die dritte Schaltfläche nach dem Feld „Drillvorgang für”). Jetzt sehen Sie alle Hauptkontokategorien erweitert. Aktuell können Sie mit Power BI nicht ausschließlich eine Zeile oder Spalte erweitern, aber immer noch alle anderen Zeilen oder Spalten sehen.
 
-![Drilldown der Zwischenbilanz für Reihen ausführen](./media/trial-balance2.png)
+![Drilldown der Zwischenbilanz für Reihen ausführen.](./media/trial-balance2.png)
 
 Um die Hauptkonten für alle Zeilen zu erweitern, können Sie erneut die Schaltfläche **Erweitern** verwenden. Um allerdings einen Drilldown zu den Hauptkonten für nur eine Zeile durchzuführen, wählen Sie zuerst die Schaltfläche **Detailinformationen anzeigen** aus (der einzelne nach unten gerichtete Pfeil auf der rechten Seite des Fensters), und wählen Sie dann die Zeile aus, zu der der Drilldown ausgeführt werden soll. Die folgende Abbildung zeigt die Ergebnisse, wenn die Zeile **Verkäufe** ausgewählt ist, nachdem die Schaltfläche **Detailinformationen anzeigen** ausgewählt ist.
 
-![Schaltfläche zum Erweitern der Zwischenbilanz](./media/trial-balance3.png)
+![Schaltfläche zum Erweitern der Zwischenbilanz.](./media/trial-balance3.png)
 
 Nachdem Sie ein Drilldown auf eine einzelne Zeile ausführen, werden mehrere Klicks benötigt, um zur vollständigen Zwischenbilanz zurückzukehren. Die Schaltfläche **Drillup** (die erste Schaltfläche nach dem Feld **Drillvorgang für**) führt nur einen Drillup im Kontext der Kategorie **Verkäufe** durch, wie in der folgenden Abbildung gezeigt.
 
-![Schaltfläche zum Drillup für Zwischenbilanz](./media/trial-balance4.png)
+![Schaltfläche zum Drillup für Zwischenbilanz.](./media/trial-balance4.png)
 
 Sie können weiterhin die Schaltfläche **Drillup** verwenden, um zur obersten Zusammenfassungsebene für die Zeilen zurückzukehren.
 
 Power BI hat auch eine Schaltfläche, mit der Sie zur nächsten Ebene in der Hierarchie wechseln können (die zweite Schaltfläche nach dem Feld **Drillvorgang für**). Die Auswirkung dieser Schaltfläche unterscheidet sich von der Auswirkung der Schaltfläche **Erweitern** (die dritte Schaltfläche nach dem Feld **Drillvorgang für**), die verwendet wird, um die Hierarchie zu erweitern. Wenn Sie die Hierarchie erweitern wird die Hierarchie im Bericht verwaltet. Wie beispielsweise zuvor gezeigt wurde, wenn Sie den Hauptkontotyp erweitern, sehen Sie immer noch den Hauptkontotyp im Bericht. Wenn Sie jedoch zur nächsten Ebene in der Hierarchie wechseln, zeigt der Bericht nicht mehr das übergeordnete Element in der Hierarchie an, wie in der folgenden Abbildung dargestellt.
 
-![Schaltfläche für Drillvorgang zurück für Zwischenbilanz](./media/trial-balance5.png)
+![Schaltfläche für Drillvorgang zurück für Zwischenbilanz.](./media/trial-balance5.png)
 
 Um die Transaktionsdetails hinter den zusammengefassten Salden anzuzeigen, können Sie einige Beträge auswählen, um einen Drillvorgang zu Financial and Operations auszuführen.
 
@@ -217,16 +217,16 @@ Wenn Sie in eine Zeile zu weit nach unten erweitern, werden die zusätzlichen Fi
 
 ## <a name="hierarchies"></a>Hierarchien
 
-Von den Standardfinanzaufstellungen werden zwei Hierarchien verwendet, um bei den Daten einen Drillvorgang durchzuführen oder sie zu erweitern. Eine Hierarchie ist für die Zeilen und die andere Hierarchie ist für die Spalten. Beide Hierarchien sind im Entwurf der Finanzaufstellung vordefiniert. Für die meisten Finanzaufstellungen ist die Zeilenhierarchie **Hauptkontotyp**\>**Hauptkontokategorien**\>**Hauptkonto**. Einige Berichte besitzen jedoch zusätzliche Felder, wie Land und Region. Die zusätzlichen Knoten der Hierarchie basieren auf Daten des untergeordneten Sachkontos für jede Transaktion.
+Von den Standardfinanzaufstellungen werden zwei Hierarchien verwendet, um bei den Daten einen Drillvorgang durchzuführen oder sie zu erweitern. Eine Hierarchie ist für die Zeilen und die andere Hierarchie ist für die Spalten. Beide Hierarchien sind im Entwurf der Finanzaufstellung vordefiniert. Für die meisten Finanzaufstellungen ist die Zeilenhierarchie **Hauptkontotyp** \> **Hauptkontokategorien** \> **Hauptkonto**. Einige Berichte besitzen jedoch zusätzliche Felder, wie Land und Region. Die zusätzlichen Knoten der Hierarchie basieren auf Daten des untergeordneten Sachkontos für jede Transaktion.
 
-Für die Spalten ist die Hierarchie auf die juristischen Personen und die Finanzzeiträume fokussiert. Für die meisten Finanzaufstellungen ist die Spaltenhierarchie **Juristische Person**\>**Steuerkalender**\>**Geschäftsjahr**\>**Quartal**\>**Periode**.
+Für die Spalten ist die Hierarchie auf die juristischen Personen und die Finanzzeiträume fokussiert. Für die meisten Finanzaufstellungen ist die Spaltenhierarchie **Juristische Person** \> **Steuerkalender** \> **Geschäftsjahr** \> **Quartal** \> **Periode**.
 
 Momentan unterstützen die Finanzaufstellungen nicht die Organisationshierarchien, mit denen Sie Daten aggregieren können.
 
 ## <a name="data-limitations"></a>Datenbegrenzungen
 Die visuellen Elemente der Finanzaufstellungen haben eine Begrenzung bei der Zahl der Zeilen, die angezeigt werden können. Aktuell ist die Begrenzung auf 30.000 festgelegt. Wenn Sie diese Begrenzung überschreiten, hat das visuelle Element ein Warnsymbol, um Sie über diese Situation zu benachrichtigen.
 
-![Datenbegrenzungen](./media/data-limit.png)
+![Datenbegrenzungen.](./media/data-limit.png)
 
 Wenn das Maximum überschritten wird, sind die Summen, die in der Finanzaufstellung angezeigt werden, nicht korrekt, da nicht alle Zeilen in das visuelle Element geladen wurden.
 

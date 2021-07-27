@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 81cbabb2499fc0fdf3c043c9b15e4429b036e3c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027938"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352035"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Übersicht zu Einkaufswagen und Seiten für den Bezahlvorgang
 
@@ -37,7 +38,7 @@ Die Einkaufskorbseite dient als Einkaufstasche und enthält alle Artikel, die de
 
 Die folgende Abbildung zeigt ein Beispiel für eine Einkaufskorbseite, die mit der Modulbibliothek und dem Design „Fabrikam“ erstellt wurde.
 
-![Beispiel einer Einkaufskorbseite](./media/cart2.PNG)
+![Beispiel einer Einkaufskorbseite.](./media/cart2.PNG)
 
 Der Hauptteil der Einkaufskorbseite zeigt alle Artikel, die der Kunde dem Warenkorb hinzugefügt hat. Alle anwendbaren Rabatte werden dargestellt. Diese Rabatte umfassen komplexe Rabatte. Zu den Beispielen zählen „3 Artikel kaufen und 10 % Rabatt erhalten“ oder „Flasche und Rucksack kaufen und 10 % Rabatt erhalten“. Das Bestellzusammenfassungsmodul zeigt den Betrag an, der fällig ist, nachdem Rabatte, Versand, Steuern usw. angewendet wurden. Es gibt auch ein Werbecode-Modul, mit dem der Kunde Werbecodes anwenden oder entfernen kann.
 
@@ -53,7 +54,7 @@ Auf der Auschecken-Seite geben Kunden die Informationen ein, die für den Auftra
 
 Die folgende Abbildung zeigt ein Beispiel für die Auschecken-Seite, die mit der Modulbibliothek erstellt wurde.
 
-![Beispiel der Auschecken-Seite](./media/Checkout.PNG)
+![Beispiel der Auschecken-Seite.](./media/Checkout.PNG)
 
 Im Hauptteil der Auschecken-Seite werden alle Auftragsinformationen gesammelt. Zu diesen Informationen gehören die Versandadresse, die Lieferoptionen und die Zahlungsinformationen. Das Auschecken wird schrittweise ausgeführt, da die Informationen in einer bestimmten Reihenfolge eingegeben werden müssen, um verarbeitet zu werden. Beispielsweise muss die Versandadresse eingegeben werden, bevor die Versandkosten berechnet und die Zahlung autorisiert werden kann.
 

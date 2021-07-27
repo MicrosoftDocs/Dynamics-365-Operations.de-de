@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 3b042374179de7aa5bbff73719cbe8546920132e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897307"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360687"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finanzdimensionen und Buchungen 
 
@@ -71,29 +71,29 @@ Personen haben häufig Fragen über den Auftrag, den die verschiedenen Komponent
 
 In der folgenden Abbildung wird die feste Standarddimension angezeigt, die im Hauptkonto 401100 festgelegt wird.
 
-[![Standardfinanzdimensionen](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Standardfinanzdimensionen.](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 Für dieses sehr grundlegende Beispiel geben Sie eine allgemeine Erfassung ein, in der die Abteilungsdimension auf den Standardwert **023** (Arbeitsgänge) festgelegt wird. Wir geben das Sachkonto ein und buchen es. Die folgende Abbildung zeigt die Standardfinanzdimension im Feld Hauptbuchkopf.
 
-[![Allgemeine Erfassungen](./media/general-journal.png)](./media/general-journal.png)
+[![Allgemeine Erfassungen.](./media/general-journal.png)](./media/general-journal.png)
 
 Die Standarddimension im Erfassungskopf hat zur Folge, dass Abteilung 023 Abteilung, als Standard für die Verkaufskontoposition verwendet wird. Die folgende Abbildung stellt die allgemeine Erfassungsposition an, in dem der **023** Standarddimensionswert vom Kopf angewendet wird.
 
-[![Alle Journale](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Alle Journale.](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 Wenn die Position gebucht wird, wird die feste Dimension angewendet, und die Position wird in Abteilung 022 gebucht. Die folgende Abbildung zeigt den gebuchten Beleg an, in der die feste Dimension für das Verkaufskonto verwendet wird.
 
-[![Belegtransaktionen mit angewendeter fester Dimension](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Belegtransaktionen mit angewendeter fester Dimension.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Beispiel 2
 
 Dieses Beispiel verwendet die gleiche Einstellung wie das erste Beispiel. Allerdings können wir eine zweite Komponente hinzufügen und die Abteilungsdimension als Ausgleichsdimension verwenden. In der folgenden Abbildung wird **Abteilung** als Ausgleichsfinanzdimension für das USMF-Sachkonto festgelegt.
 
-[![Abbildung mit Abteilung als ausgleichender Finanzdimension](./media/ledger.png)](./media/ledger.png)
+[![Abbildung mit Abteilung als ausgleichender Finanzdimension.](./media/ledger.png)](./media/ledger.png)
 
 Wenn eine Erfassungskopfeinstellung verwendet wird und die gleiche Buchung gebucht ist, wird zuerst die feste Dimension angewendet. Danach wird die Ausgleichslogik angewendet, die sicherstellt, dass jede Abteilung einen Eintrag ausgeglichenen hat. Die folgende Abbildung zeigt Belegbuchungen an, die die Gegenbuchung enthalten, nachdem die feste Dimension angewendet wurde.
 
-[![Belegtransaktionen nach Anwendung des ausgleichenden Eintrags](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Belegtransaktionen nach Anwendung des ausgleichenden Eintrags.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Beispiel 3
 
@@ -101,11 +101,11 @@ In diesem Beispiel werden wir eine erweiterte Regel hinzufügen. Die erweiterte 
 
 Dieses Beispiel ist wegen dem Auftrag wichtig. Die Kontostruktur wird bestimmt, wenn das Hauptkonto eingegeben wurde. Wenn Sie die Kontostruktureinstellung beziehen, kann das System erkennen, dass das Hauptkonto, Geschäftseinheit, die Abteilung und die Kostenstelle relevant sind. An diesem Punkt wurde die erweiterte Regel nicht gestartet, da feste Dimensionen nicht angewendet werden, bis für den Erfassungsbeleg Standarddimensionen für die Buchung angewendet wurden. In der folgenden Abbildung ist das Debitorensegment nicht vorhanden, da die Kriterien für die erweiterte Regel nicht ausgeführt wurden.
 
-[![Sachkonto](./media/drop-down.png)](./media/drop-down.png)
+[![Sachkonto.](./media/drop-down.png)](./media/drop-down.png)
 
 Die Buchung ist nicht erfolgreich, da die feste Dimension am Ende des Prozesses angewendet wurde. Die Dimensionsprüfungen bestimmt, dass das Debitorensegment erforderlich ist, wenn das Hauptkonto 401100 ist und die Abteilung 022 ist. Buchung kann aufgrund des Prüfungsfehlers nicht erfolgen. Die folgende Abbildung zeigt die Meldung an, die angezeigt wird, nachdem Dimensionsprüfungen bestimmt, dass ein Debitor ein Pflichtsegment ist.
 
-[![Meldungsdetails](./media/message.png)](./media/message.png)
+[![Meldungsdetails.](./media/message.png)](./media/message.png)
 
 In diesem Beispiel müssen Sie den Standardwert überschreiben, sodass die erweiterte Regel ausgelöst wurde und Sie das Debitorensegment eingeben können. Diese Lösung ist jedoch nicht immer möglich, und einige Benutzer kennen diese Buchungsregeln nicht einmal. Daher ist es wichtig, dass Sie den Auftrag verstehen, dass Standarddimensionen angewendet werden, wenn Sie den Kontenplan einrichten.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 203c9f0990051c1618660959dad0e184add68ffa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3419d328e84c199fa32aeb13b54425a31e96ce7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750483"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350255"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Struktur einer Geschäftsdokumentvorlage aktualisieren 
 
@@ -58,7 +58,7 @@ Führen Sie die folgenden Prozeduren in [Geschäftsdokumentverwaltung – Über
 
     Die neue Vorlage wird zur Bearbeitung in der eingebetteten Excel Online-Steuerung auf der Seite des Vorlagen-Editors geöffnet.
 
-[![Verwenden des Arbeitsbereichs zur Geschäftsdokumentverwaltung, um mit der Bearbeitung einer Geschäftsdokumentvorlage zu beginnen](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![Verwenden des Arbeitsbereichs zur Geschäftsdokumentverwaltung, um mit der Bearbeitung einer Geschäftsdokumentvorlage zu beginnen.](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### <a name="review-the-current-structure-of-the-editable-template"></a>Aktuelle Struktur der bearbeitbaren Vorlage überprüfen
 
@@ -68,7 +68,7 @@ Führen Sie die folgenden Prozeduren in [Geschäftsdokumentverwaltung – Über
 4. Erweitern Sie im Bereich **Vorlagenstruktur** die Struktur **Bericht \> Rechnung \> rptHeader \> rptHeaderPart1**.
 5. Beachten Sie, dass in der Vorlagenstruktur in Finance das Element **rptHeaderCompLogo** als untergeordnetes Element von **Bericht \> Rechnung \> rptHeader \> rptHeaderPart1** dargestellt wird.
 
-[![Verwenden des Arbeitsbereichs zur Verwaltung von Geschäftsdokumenten zum Überprüfen der aktuellen Struktur einer bearbeitbaren Vorlage](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![Verwenden des Arbeitsbereichs zur Verwaltung von Geschäftsdokumenten zum Überprüfen der aktuellen Struktur einer bearbeitbaren Vorlage.](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-deleting-a-picture"></a>Struktur einer Geschäftsdokumentvorlage durch Löschen eines Bilds aktualisieren
 
@@ -85,7 +85,7 @@ Führen Sie die folgenden Prozeduren in [Geschäftsdokumentverwaltung – Über
 4. Erweitern Sie im Bereich **Vorlagenstruktur** die Struktur **Bericht \> Rechnung \> rptHeader \> rptHeaderPart1**.
 5. Beachten Sie, dass das Element **rptHeaderCompLogo** in der Vorlagenstruktur in Finance nicht mehr enthalten ist.
 
-[![Verwenden des Arbeitsbereichs zur Geschäftsdokumentverwaltung, um ein Bild aus einer Geschäftsdokumentvorlage zu löschen](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![Verwenden des Arbeitsbereichs zur Geschäftsdokumentverwaltung, um ein Bild aus einer Geschäftsdokumentvorlage zu löschen.](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-adding-a-picture"></a>Struktur einer Geschäftsdokumentvorlage durch Hinzufügen eines Bilds aktualisieren
 
@@ -97,7 +97,7 @@ Führen Sie die folgenden Prozeduren in [Geschäftsdokumentverwaltung – Über
 6. Erweitern Sie im Bereich **Vorlagenstruktur** die Struktur **Bericht \> Rechnung \> rptHeader \> rptHeaderPart1**.
 7. Beachten Sie, dass das neue Bild jetzt als ein Element in der Vorlagenstruktur in Finance enthalten ist.
 
-[![Verwenden des Arbeitsbereichs zur Geschäftsdokumentverwaltung, um ein Bild zu einer Geschäftsdokumentvorlage hinzuzufügen](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![Verwenden des Arbeitsbereichs zur Geschäftsdokumentverwaltung, um ein Bild zu einer Geschäftsdokumentvorlage hinzuzufügen.](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## <a name="related-links"></a>Zugehörige Links
 

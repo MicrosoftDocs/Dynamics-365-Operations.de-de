@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 31798508e4cc71e31a30dc91acebfdde8226b16c
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: de8840b92307ba63d6d0c2cfa90536bd00696ec3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937061"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349673"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Ändern Sie die Sortierreihenfolge für Verkaufsentitäten
 
@@ -51,9 +51,9 @@ Bevor Sie dieses Verfahren ausführen können, müssen Demodaten in Ihrer Umgebu
 
 Der Anzeigereihenfolge für die Kanalnavigationshierarchie wird in HQ für die Produkthierarchie und freigegebene Produkte nach Kategorie angezeigt.
 
-![Produkthierarchie: Benutzerdefinierte Sortierung mit negativen Werten](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Produkthierarchie: Benutzerdefinierte Sortierung mit negativen Werten.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Freigegebene Produkte nach Kategorie: Benutzerdefinierte Sortierung auf Basis der Produkthierarchie](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Freigegebene Produkte nach Kategorie: Benutzerdefinierte Sortierung auf Basis der Produkthierarchie.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>Konfigurieren der Anzeigereihenfolge für Kategorien in der Kanalnavigationshierarchie
 
@@ -77,11 +77,11 @@ Bevor Sie dieses Verfahren ausführen können, müssen Demodaten in Ihrer Umgebu
 
 Der Anzeigereihenfolge für die Kanalnavigationshierarchie wird in HQ, im Katalog und in Kanälen angezeigt.
 
-![Kanalnavigationshierarchie: Benutzerdefinierte Sortierung](./media/ChannelNavCustomSorted.png)
+![Kanalnavigationshierarchie: Benutzerdefinierte Sortierung.](./media/ChannelNavCustomSorted.png)
 
-![Katalognavigationshierarchie: Benutzerdefinierte Sortierung auf Basis der Kanalnavigationshierarchie](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Katalognavigationshierarchie: Benutzerdefinierte Sortierung auf Basis der Kanalnavigationshierarchie.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![POS mit benutzerdefiniert sortierten Kategorien](./media/POSChannelCategoriesCustomSorted.png)
+![POS mit benutzerdefiniert sortierten Kategorien.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
 > Standardmäßig ist die Funktion für die benutzerdefinierte Sortierreihenfolge deaktiviert. Um zu erfahren, wie Sie diese Funktion und andere Funktionen aktivieren können, siehe [Funktionsverwaltung](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).

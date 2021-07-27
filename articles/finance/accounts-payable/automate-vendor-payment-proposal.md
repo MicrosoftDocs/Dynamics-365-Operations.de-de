@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 238123f59c3d85b2b2c64aed9d94c7d8af27eaf2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9f19a6ed70445791433c2db2559f6922b9715c5e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820810"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350645"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatisieren Sie Kreditorenzahlungsvorschläge
 
@@ -97,11 +97,11 @@ Wir empfehlen Ihnen, anhand Ihrer Anforderungen zu bewerten, ob die Automatisier
 
 Nachdem die Automatisierungsserie für Lieferantenzahlungsvorschläge erstellt wurde, werden die Vorkommen für jede Zahlung in der Wochenansicht der Prozessautomatisierung angezeigt. Für Lieferantenzahlungen wurde die Wochenansicht für die Prozessautomatisierung dem Arbeitsbereich **Lieferantenzahlungen** und die Seite **Prozessautomatisierung** hinzugefügt.
 
-[![Wochenansicht der Prozessautomatisierung im Arbeitsbereich Lieferantenzahlungen](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![Wochenansicht der Prozessautomatisierung im Arbeitsbereich Lieferantenzahlungen.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 Die Wochenansicht der Prozessautomatisierung im Arbeitsbereich **Lieferantenzahlungen** zeigt nur Automatisierungen von Lieferantenzahlungsvorschlägen an. Es werden alle Zahlungsvorgänge für die aktuelle Woche für alle juristischen Personen angezeigt, für die der angemeldete Benutzer Sicherheitsberechtigungen hat. Wenn der AP-Zahlungsangestellte beispielsweise für Zahlungen in den USMF- und USSI-Unternehmen verantwortlich ist, sieht er oder sie das Auftreten der Automatisierung des Lieferantenzahlungsvorschlags für diese beiden Unternehmen, jedoch nicht für andere Unternehmen.
 
-[![Wochenansicht der Prozessautomatisierung für die USMF- und USSI-Unternehmen](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Wochenansicht der Prozessautomatisierung für die USMF- und USSI-Unternehmen.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Jedes Ereignis zeigt dem Unternehmen an, in dem das Zahlungsjournal erstellt wurde oder wird. Wenn Zahlungen mithilfe zentraler Zahlungen erstellt werden, wird als Unternehmen das Unternehmen angezeigt, in dem Zahlungen erstellt werden. Das Ereignis zeigt nicht unbedingt an, welche Unternehmensrechnungen bezahlt werden.
 

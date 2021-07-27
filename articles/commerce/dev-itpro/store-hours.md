@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 862b032c75145594be78fb2f4e27ea5616605c4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6d8c1d4e7edc4b83e2489ac6a0bad18ab55c042b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792928"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348241"
 ---
 # <a name="create-and-update-store-hours"></a>Erstellen und Aktualisieren von Geschäftszeiten
 
@@ -49,14 +49,14 @@ Führen Sie diese Schritte aus, um die Geschäftszeiten zu konfigurieren.
     > [!NOTE]
     > Sie können mehrere Vorlagen erstellen, deren Start- und Enddatum sich überschneiden. So können Sie z.B. für Filialen in verschiedenen Zeitzonen Geschäftszeiten definieren.
 
-    ![Dialogfeld Bereich hinzufügen](../dev-itpro/media/Storehours1.png "Dialogfeld Bereich hinzufügen")
+    ![Dialogfeld „Bereich hinzufügen“.](../dev-itpro/media/Storehours1.png "Dialogfeld Bereich hinzufügen")
 
 4. Ordnen Sie die Ladenöffnungsvorlage den Filialen zu, in denen sie verwendet werden soll. Wählen Sie im Dialogfenster **Organisationsknoten auswählen** die Filialen, Regionen und Organisationen aus, denen die Vorlage zugeordnet werden soll.
 
     - Jeder Filiale kann nur eine Ladenöffnungsvorlage zugeordnet werden.
     - Verwenden Sie die Pfeiltasten, um Filialen, Regionen oder Organisationen auszuwählen. Der Kalender steht den Filialen oder Filialgruppen zur Verfügung und ist am POS als Referenz sichtbar.
 
-    ![Dialogfeld-Organisationsknoten auswählen](../dev-itpro/media/Storehours2.png "Auswählen des Organisationsknoten-Dialogfensters")
+    ![Auswählen des Organisationsknoten-Dialogfensters.](../dev-itpro/media/Storehours2.png "Auswählen des Organisationsknoten-Dialogfensters")
 
 5. Führen Sie auf der Seite **Verteilungsplan** die Jobs **1070** und **1090** aus, um die Geschäftszeiten für die Kasse verfügbar zu machen.
 
@@ -75,7 +75,7 @@ Führen Sie diese Schritte aus, um den gedruckten Kassenbelegen Geschäftszeiten
 
 Die Bons enthalten nun auch die Geschäftszeiten. Wenn in der Vorlage Feiertage enthalten waren, werden diese auf dem Beleg angezeigt.
 
-![Belegbeispiel](../dev-itpro/media/Storehours3.png "Belegbeispiel")
+![Belegbeispiel.](../dev-itpro/media/Storehours3.png "Belegbeispiel")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

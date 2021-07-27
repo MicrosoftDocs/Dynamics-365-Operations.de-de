@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 0af3e1d589fd99cc722d8aedeb9596388a9e2e8c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 629662d274d88d59c9b73a9d6b0d5c178331fe73
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018285"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351913"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurieren von EB-Formaten zur Verwendung von Parametern, die pro juristischer Person angegeben werden
 
@@ -78,17 +78,17 @@ In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen
 
     Das EB-Format **Format zum Ermitteln parametrisierter Anrufe** ist so gestaltet, dass ein Steuerauszug im XML-Format erzeugt wird, der verschiedene Besteuerungsstufen (regulär, reduziert und keine) enthält. Jede Stufe hat eine andere Anzahl von Details.
 
-    ![Mehrere Ebenen des ER-Formats, Format zum Erlernen parametrisierter Anrufe](./media/RCS-AppSpecParms-ReviewFormat.PNG)
+    ![Mehrere Ebenen des EB-Formats, Format zum Erlernen parametrisierter Anrufe.](./media/RCS-AppSpecParms-ReviewFormat.PNG)
 
 5.  Erweitern Sie auf der Registerkarte **Zuordnung** die Elemente **Modell**, **Daten** und **Zusammenfassung**.
 
     Die Datenquelle **Model.Data.Summary** gibt die Liste der Steuertransaktionen zurück. Diese Transaktionen werden anhand des Steuercodes zusammengefasst. Für diese Datenquelle wurde das berechnete Feld **Model.Data.Summary.Level** so konfiguriert, dass es den Code für die Besteuerungsstufe jedes zusammengefassten Datensatzes zurückgibt. Für jeden Steuercode, der zur Laufzeit aus der Datenquelle **Model.Data.Summary** abgerufen werden kann, gibt das berechnete Feld den Besteuerungsstufencode (**Regulär**, **Reduziert**, **Keine** oder **Sonstige**) als Textwert zurück. Das berechnete Feld **Model.Data.Summary.Level** wird verwendet, um Datensätze der Datenquelle **Model.Data.Summary** zu filtern, und geben Sie die gefilterten Daten in jedes XML-Element ein, das eine Besteuerungsstufe darstellt, indem Sie die Felder **Model.Data2.Level1**, **Model.Data2.Level2** und **Model.Data2.Level3** verwenden.
 
-    ![Die Model.Data.Summary-Datenquellenliste der Steuertransaktionen](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
+    ![Die Model.Data.Summary-Datenquellenliste der Steuertransaktionen.](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
     Das berechnete Feld **Model.Data.Summary.Level** wurde so konfiguriert, dass es einen EB-Ausdruck enthält. Steuercodes (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** und **InVAT0**) sind in dieser Konfiguration hartcodiert. Daher hängt dieses EB-Format von der juristischen Person ab, in der diese Steuercodes konfiguriert wurden.
 
-    ![Das berechnete Feld Model.Data.Summary.Level mit fest codierten Steuercodes](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
+    ![Das berechnete Feld Model.Data.Summary.Level mit fest codierten Steuercodes.](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
     Um einen andere Gruppe von Steuercodes für die einzelnen juristischen Person zu unterstützen, müssen die folgenden Schritte ausgeführt werden:
 
@@ -128,7 +128,7 @@ Danach fügen Sie eine neue EB-Formatenumeration hinzu. Die Werte dieser Formate
 12. Wählen Sie erneut **Hinzufügen** aus.
 13. Geben Sie im Feld **Name** **Sonstige** ein.
 
-    ![Neuer Datensatz auf der Seite „Formatenumerationen“](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
+    ![Neuer Datensatz auf der Seite „Formatenumerationen“.](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
 
     Da die geschäftlichen Benutzer möglicherweise unterschiedliche Sprachen verwenden, um Gruppen von Steuercodes anzugeben, die von der juristischen Person abhängig sind, empfiehlt es sich, die Werte dieser Enumeration in die Sprachen zu übersetzen, die als bevorzugte Sprachen für diese Benutzer in Finance konfiguriert werden.
 
@@ -141,7 +141,7 @@ Danach fügen Sie eine neue EB-Formatenumeration hinzu. Die Werte dieser Formate
 20. Geben Sie im Feld **Übersetzter Text** **Keine Besteuerung** ein.
 21. Wählen Sie **Übersetzen** aus.
 
-    ![Textübersetzungsauszug](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
+    ![Textübersetzungsauszug.](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
 
 22. Wählen Sie **Speichern** aus.
 23. Schließen Sie die Seite **Formatenumerationen**.
@@ -168,13 +168,13 @@ Danach fügen Sie eine neue Datenquelle hinzu, um anzugeben, wie geschäftliche 
 10. Wählen Sie das Element **Model.Data.Tax.Code** aus.
 11. Wählen Sie die Schaltfläche **Hinzufügen** (rechter Pfeil) aus.
 
-    ![Spaltenauszug](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
+    ![Spaltenauszug.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
 
     Sie haben gerade angegeben, dass geschäftliche Benutzer für jede in dieser Datenquelle für die Erkennung der Besteuerungsstufe angegebene Regel einen der Steuercodes als Bedingung auswählen müssen. Die Liste der Steuercodes, die geschäftliche Benutzer auswählen können, wird von der Datenquelle **Model.Data.Tax** zurückgegeben. Da diese Datenquelle das Feld **Name** enthält, wird der Name des Steuercodes für jeden Steuercodewert in der Suche angezeigt, der dem geschäftlichen Benutzer angezeigt wird.
     
-12. Wählen Sie **OK**.
+12. Wählen Sie **OK** aus.
 
-    ![Such-Designer-Seite](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
+    ![Such-Designer-Seite.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
 
     Geschäftliche Benutzer können mehrere Regeln als Datensätze dieser Datenquelle hinzufügen. Jeder Datensatz wird mithilfe eines Positionscodes nummeriert. Regeln werden mit zunehmender Positionsnummer ausgewertet.
 
@@ -188,13 +188,13 @@ Danach fügen Sie eine neue Datenquelle hinzu, um anzugeben, wie geschäftliche 
 
     Beachten Sie, dass Sie eine neue Datenquelle hinzugefügt haben, die die Besteuerungsstufe als Wert der Formatenumeration **Liste der Besteuerungsstufen** für jeden Steuercode zurückgibt, der an die Datenquelle als Argument des Parameters **Code** des Datentyps **Zeichenfolge** weitergegeben wird.
     
-    ![Format-Designer-Seite mit einer neuen Datenquelle](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
+    ![Format-Designer-Seite mit einer neuen Datenquelle.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
     Die Bewertung hängt von konfigurierten Regeln vom Datentyp der Felder ab, die ausgewählt wurden, um die Bedingungen dieser Regeln zu definieren. Wenn Sie ein Feld auswählen, das als Feld des Datentyps **Numerisch** oder **Datum** konfiguriert wird, weichen die Kriterien von den Kriterien ab, die zuvor für den Datentyp **Zeichenfolge** beschrieben wurden. Für die Felder **Numerisch** und **Datum** muss die Regel als Wertebereich angegeben werden. Die Bedingung der Regel wird dann als erfüllt angesehen, wenn ein Wert, der an die Datenquelle weitergegeben wird, sich im konfigurierten Bereich befindet.
     
     Die folgende Abbildung zeigt ein Beispiel für diesen Einrichtungstyp. Zusätzlich zu dem Feld **Model.Data.Tax.Code** des Datentyps **Zeichenfolge** wird das Feld **Model.Tax.Summary.Base** des Datentyps **Gleitkommazahl** verwendet, um die Bedingungen für eine Suchendatenquelle anzugeben.
     
-    ![Such-Designer-Seite mit zusätzlichen Spalten](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
+    ![Such-Designer-Seite mit zusätzlichen Spalten.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
 
     Da die Felder **Model.Data.Tax.Code** und **Model.Tax.Summary.Base** für diese Suchendatenquelle ausgewählt werden, wird jede Regel diese Datenquelle folgendermaßen konfiguriert:
     
@@ -221,9 +221,9 @@ Da die geschäftlichen Benutzer möglicherweise unterschiedliche Sprachen verwen
 7.  Wählen Sie im Feld **Sprache** **DE** aus.
 8.  Geben Sie im Feld **Übersetzter Text** **Steuerebene für Steuerkennzeichen auswählen** ein.
 9.  Wählen Sie **Übersetzen** aus.
-10. Wählen Sie **OK**.
+10. Wählen Sie **OK** aus.
 
-    ![Datenquelleneigenschaften-Auszug](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
+    ![Datenquelleneigenschaften-Auszug.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
 
 ### <a name="add-a-new-field-to-consume-the-configured-lookup"></a>Hinzufügen eines neues Felds, um die konfigurierte Suche zu verarbeiten
 
@@ -236,12 +236,12 @@ Da die geschäftlichen Benutzer möglicherweise unterschiedliche Sprachen verwen
 7.  Geben Sie im **Formularfeld** **Model.Selector(Model.Data.Summary.Code)** ein.
 8.  Wählen Sie **Speichern** aus.
 
-    ![Hinzufügen von Model.Selector(Model.Data.Summary.Code) zur Formel-Designer-Seite](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
+    ![Hinzufügen von Model.Selector(Model.Data.Summary.Code) zur Formel-Designer-Seite.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
 
 9.  Schließen Sie die Seite **Formel-Editor**.
-10. Wählen Sie **OK**.
+10. Wählen Sie **OK** aus.
 
-    ![Format-Designer-Seite mit neuer hinzugefügter Formel](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
+    ![Format-Designer-Seite mit neuer hinzugefügter Formel.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
 
     Beachten Sie, dass das berechnete Feld **LevelByLookup**, das Sie hinzugefügt haben, die Besteuerungsstufe als Wert der Formatenumeration **Liste der Besteuerungsstufen** für jeden zusammengefassten Steuertransaktionsdatensatz zurückgibt. Der Steuercode des Datensatzes wird an die Suchdatenquelle **Model.Selector** weitergegeben, und die Gruppe von Regeln für diese Datenquelle wird verwendet, um die korrekte Besteuerungsstufe auszuwählen.
 
@@ -269,7 +269,7 @@ Danach ändern Sie das vorhandene berechnete Feld, sodass es die konfigurierte S
 
 4.  Geben Sie im Feld **Formel** **CASE(@.LevelByLookup, TaxationLevel.'Reguläre Besteuerung', „Regulär“, TaxationLevel.'Reduzierte Besteuerung', „Reduziert“, TaxationLevel.'Keine Besteuerung', „Keine“, „Sonstige“)**.
 
-    ![Seite für EB-Arbeitsgangdesigner](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
+    ![Seite für EB-Arbeitsgangdesigner.](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
     
     Beachten Sie, dass der Ausdruck des Felds **Model.Data.Summary.Level** jetzt die Besteuerungsstufe zurückgibt, die auf dem Steuercode des aktuellen Datensatzes und der Gruppe von Regeln basiert, die ein geschäftlicher Benutzer in der Suchdatenquelle **Model.Data.Selector** konfiguriert.
     

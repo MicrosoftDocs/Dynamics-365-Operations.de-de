@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 15a61b1fe4a267552708fa02fe482f7702668e06
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fc656c6339da92deceff2f8861fd8570171b7a2d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824965"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345547"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management synchronisieren
 
@@ -31,7 +31,7 @@ ms.locfileid: "5824965"
 
 Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Arbeitsaufträge in Dynamics 365 Field Service mit Aufträgen in Dynamics 365 Supply Chain Management zu synchronisieren.
 
-[![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
@@ -245,31 +245,31 @@ Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
 
 Filter: (msdyn_systemstatus ne 690970005) and (msdyn_systemstatus ne 690970000) and (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Vorlagenzuordnung in Datenintegration](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Arbeitsaufträge zu Aufträgen (Field Service zu Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004)
 
-[![Vorlagenzuordnung in Datenintegration](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Arbeitsaufträge zu Aufträgen (Field Service zu Supply Chain Management): WorkOrderServiceLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and ((msdyn_linestatus eq 690970001) or (msdynce_headersystemstatus eq 690970004))
 
-[![Vorlagenzuordnung in Datenintegration](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Arbeitsaufträge zu Aufträgen (Field Service zu Supply Chain Management): WorkOrderProductLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004) and (msdyn_allocated eq true)
 
-[![Vorlagenzuordnung in Datenintegration](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Arbeitsaufträge zu Aufträgen (Field Service zu Supply Chain Management): WorkOrderProductLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and ((msdyn_linestatus eq 690970001) or (msdynce_headersystemstatus eq 690970004) or (msdyn_allocated ne true))
 
-[![Vorlagenzuordnung in Datenintegration](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

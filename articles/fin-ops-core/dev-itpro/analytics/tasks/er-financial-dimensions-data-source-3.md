@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2a3b9a8b5775d2001f3384480e2f9593f2dfa8b1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 74c845cf5ce361b0e9594863cdfca98d9cb9b0ca
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752411"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356318"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 3: Berichtsentwurf)
 
@@ -92,7 +92,7 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 59. Klicken Sie auf "Attribut hinzufügen".
 60. Geben Sie im Feld Name "Desc" ein.
 61. Klicken Sie auf "OK".
-![EB-Vorgangs-Designerseite](../media/er-financial-dimensions-guides-format1.png)
+![EB-Vorgangs-Designerseite.](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Zuweisen von Berichtselementen zu Datenquellen
 1. Klicken Sie auf die Registerkarte Zuordnung.
@@ -141,7 +141,7 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 44. Klicken Sie auf Binden.
 45. Klicken Sie auf Speichern.
 46. Schließen Sie die Seite.
-![EB-Vorgangs-Designerseite](../media/er-financial-dimensions-guides-format2.png)
+![EB-Vorgangs-Designerseite.](../media/er-financial-dimensions-guides-format2.png)
 
 
 

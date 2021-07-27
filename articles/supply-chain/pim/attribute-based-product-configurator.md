@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c42a11055e98da59e0428a156ca127529589abab
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1538b806a60a9a9950f54c29bd19447c66ac9ec2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812929"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359100"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Attributbasierte Verkaufspreise bei einschränkungsbasierter Produktkonfiguration
 
@@ -33,7 +33,7 @@ So legen Sie Ihre Standardwährung fest:
 1. Öffnen Sie die Registerkarte **Details zum einschränkungsbasierten Produktkonfigurationsmodell**.
 1. Öffnen Sie die Dropdownliste **Standardwährung** und wählen Sie Ihre Währung aus.
 
-    ![Festlegen der Standardwährung für die einschränkungsbasierte Produktkonfiguration](media/prod-config-currency.png "Festlegen der Standardwährung für die einschränkungsbasierte Produktkonfiguration")
+    ![Festlegen der Standardwährung für die einschränkungsbasierte Produktkonfiguration.](media/prod-config-currency.png "Festlegen der Standardwährung für die einschränkungsbasierte Produktkonfiguration")
 
 1. Wenn Sie für alle Auftrags- oder Bestellpositionen eine Excel-Datei mit einer Preisaufschlüsselung anhängen möchten, legen Sie im Bereich **Preismodell** die Option **Anhängen** auf *Ja* fest.
 
@@ -60,7 +60,7 @@ Das folgende Beispiel zeigt einen festen Grundpreis von 899,95 EUR an, der abh�
 - Für Rosenholzgehäuse 119,95 EUR addieren.
 - Für jede Einheit an Lautsprecherhöhe 12,95 EUR addieren.
 
-![Beispiel für ein Preismodell](media/prod-config-rules-example.png "Beispiel für ein Preismodell")
+![Beispiel für ein Preismodell.](media/prod-config-rules-example.png "Beispiel für ein Preismodell")
 
 ## <a name="add-support-for-multiple-currencies"></a>Hinzufügen von Support für mehrere Währungen
 
@@ -81,7 +81,7 @@ So fügen Sie explizite Preise in einer zusätzlichen Währung hinzu:
 
 Im folgenden Beispiel ist _EUR_ die Standardwährung und _USD_ wurde als zusätzliche Währung hinzugefügt.
 
-![Beispiel eines Modells mit mehreren Währungen](media/prod-config-rules-currency-example.png "Beispiel eines Modells mit mehreren Währungen")
+![Beispiel eines Modells mit mehreren Währungen.](media/prod-config-rules-currency-example.png "Beispiel eines Modells mit mehreren Währungen")
 
 > [!NOTE]
 > Sie können keine Ausdrucksregeln hinzufügen, die für eine nicht standardmäßige Währung eindeutig sind. Um Ausdrucksregeln zu erstellen, die nur für eine andere Währung als die Standardwährung relevant sind, legen Sie für den Preisausdruck für die Standardwährung den Wert „Null“ fest. Legen Sie dann den entsprechenden Ausdruck für die nicht standardmäßige Währung fest.
@@ -93,11 +93,11 @@ Um zu testen, wie die Verkaufspreise in einer Konfigurationssitzung funktioniere
 - Verwenden Sie die hier angebotenen Konfigurationseinstellungen, um Produktoptionen auszuwählen und dann zu beobachten, wie sie sich auf den für **Preis und Versanddatum** angezeigten Wert auswirken.
 - Wählen Sie **Preisaufschlüsselung anzeigen** aus, um ein Excel-Dokument herunterzuladen, das alle Details zur Kalkulation des Preises enthält.
 
-![Testen Ihres Produktmodells](media/prod-config-test.png "Testen Ihres Produktmodells")
+![Testen Ihres Produktmodells.](media/prod-config-test.png "Testen Ihres Produktmodells")
 
 Die heruntergeladene Tabelle zeigt für jedes aktive Preiselement sowohl den absoluten Wert als auch den Beitrag als Prozentsatz an. Wenn Sie die Preismodelloption **Anhängen** auf der Seite **Parameter für Produktinformationsverwaltung** ausgewählt haben, wird diese Excel-Tabelle an die Auftrags- oder Bestellposition angehängt.
 
-![Excel-Tabelle mit Preisaufschlüsselung](media/prod-config-excel-example.png "Excel-Tabelle mit Preisaufschlüsselung")
+![Excel-Tabelle mit Preisaufschlüsselung.](media/prod-config-excel-example.png "Excel-Tabelle mit Preisaufschlüsselung")
 
 ## <a name="set-up-selection-criteria-for-price-models"></a>Einrichten der Auswahlkriterien für Preismodelle
 
@@ -116,7 +116,7 @@ So richten Sie die Auswahlkriterien für Preismodelle ein:
     - **Gültig ab**: Geben Sie den ersten Tag an, ab dem die Abfrage angewendet werden soll.
     - **Ablaufzeitpunkt**: Geben Sie das Datum des letzten Tages an, an dem die Abfrage angewendet werden soll.
 
-    ![Preismodellkriterien](media/prod-config-price-model-criteria.png "Preismodellkriterien")
+    ![Preismodellkriterien.](media/prod-config-price-model-criteria.png "Preismodellkriterien")
 
 1. Wählen Sie die Zeile für die Abfrage aus, die Sie definieren möchten, und wählen Sie dann die Option **Bearbeiten** im **Aktivitätsbereich** aus. Der Abfragedesigner wird geöffnet. Er funktioniert wie die meisten Abfragedesigner in Supply Chain Management. Verwenden Sie ihn, um die Bedingungen zu definieren, unter denen das Preismodell für die ausgewählte Zeile angewendet werden soll.
 
@@ -137,7 +137,7 @@ Der letzte Schritt besteht darin, attributbasierte Verkaufspreise für die Produ
 1. Wählen Sie das Ziel-Produktkonfigurationsmodell aus.
 1. Öffnen Sie im Aktivitätsbereich die Registerkarte **Modell** und wählen Sie aus der Gruppe **Produktmodelldetails** die Option **Versionen** aus.
 1. Die Seite **Versionen** wird angezeigt. Stellen Sie sicher, dass **Preis** auf **Attributbasiert** festgelegt ist.
-    ![Festlegen des Preises auf attributbasiert](media/prod-config-versions.png "Festlegen des Preises auf attributbasiert")
+    ![Festlegen des Preises auf attributbasiert.](media/prod-config-versions.png "Festlegen des Preises auf attributbasiert")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

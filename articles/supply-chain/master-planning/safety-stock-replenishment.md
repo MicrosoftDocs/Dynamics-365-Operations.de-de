@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: d80c754b7aa154d9636bb0d9fbfb448987d01e48
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cc9273cc46e2549765dec4b2bbc9a3030753791d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841790"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353515"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Sicherheitslagerbestandserfüllung für Artikel
 
@@ -72,37 +72,50 @@ Das folgende Szenario veranschaulicht, wie dieser Parameter funktioniert und was
 > [!NOTE]
 > Für alle Abbildungen in diesem Thema, stellt die X-Achse den Bestand dar, die Y-Achse stellt die Tage dar, die Balken stellen den Lagerbestand dar, die Pfeile stellen Transaktionen dar, wie Auftragspositionen, Bestellpositionen oder Bestellvorschläge.
 
-[![Allgemeines Szenario für Sicherheitslagerbestandserfüllung](./media/Scenario1.png)](./media/Scenario1.png) Der Parameter **Mindestbestand auffüllen** kann die folgenden Werte haben:
+[![Allgemeines Szenario für die Sicherheitslagerbestandserfüllung.](./media/Scenario1.png)](./media/Scenario1.png)
+Der Parameter **Mindestbestand auffüllen** kann die folgenden Werte haben:
 ### <a name="todays-date"></a>Datum von heute 
 Die angegebene Mindestmenge wird am Datum erfüllt, wenn der Produktprogrammplan ausgeführt wird. Vom System wird versucht, die Sicherheitslagerbestandsgrenze sobald wie möglich aufzufüllen, obwohl es wegen der Lieferzeit unrealistisch sein kann. 
-[![Bedarf am heutigen Datum](./media/TodayReq.png)](./media/TodayReq.png) Bestellvorschlag P1 wird für das heutige Datum erstellt, damit der verfügbare Lagerbestand über den Sicherheitslagerbestand an diesem Datum gebracht wird. Die Auftragspositionen S1 bis S3 verringern weiterhin den Lagerbestand. Bestellvorschläge P2 bis P4 werden von dem Produktprogrammplan generiert, sodass der Lagerbestand nach jedem Auftragsbedarf wieder zum Sicherheitsbestand zurückversetzt wird.
+[![Bedarf am heutigen Datum.](./media/TodayReq.png)](./media/TodayReq.png)
+Bestellvorschlag P1 wird für das heutige Datum erstellt, damit der verfügbare Lagerbestand über den Sicherheitslagerbestand an diesem Datum gebracht wird. Die Auftragspositionen S1 bis S3 verringern weiterhin den Lagerbestand. Bestellvorschläge P2 bis P4 werden von dem Produktprogrammplan generiert, sodass der Lagerbestand nach jedem Auftragsbedarf wieder zum Sicherheitsbestand zurückversetzt wird.
 Wenn das Dispositionsverfahren **Bedarf** verwendet wird, werden mehrere Bestellvorschläge erstellt. Es empfiehlt sich immer, die Deckung **Periode** oder **Min/Max** für Artikel und Materialien zu verwenden, bei denen ein häufiger Bedarf besteht, um die Wiederbeschaffung zu bündeln. Die folgende Abbildung zeigt ein Beispiel des Dispositionsverfahrens für **Periode**.
-[![Periode. Heutiges Datum](./media/TodayPeriod.png)](./media/TodayPeriod.png) Die folgende Abbildung zeigt ein Beispiel des Dispositionsverfahren **Min/Max**.
-[![MinMax. Heutiges Datum](./media/TodayMinMax.png)](./media/TodayMinMax.png)
+[![Periode. Heutiges Datum.](./media/TodayPeriod.png)](./media/TodayPeriod.png)
+Die folgende Abbildung zeigt ein Beispiel des Dispositionsverfahrens für **Min./Max.**.
+[![MinMax. Heutiges Datum.](./media/TodayMinMax.png)](./media/TodayMinMax.png)
 ### <a name="todays-date--procurement-time"></a>Heutiges Datum + Beschaffungszeit 
 Die angegebene Mindestmenge wird am Datum erfüllt, an dem der Produktprogrammplan ausgeführt wird, zuzüglich der Durchlaufzeit für Einkauf oder Produktion. Dieses Datum beinhaltet mögliche Sicherheitszuschläge. Wenn eine Handelsvereinbarung für den Artikel besteht und das Kontrollkästchen **Handelsvereinbarungen suchen** auf der Seite **Produktprogrammplanungsparameter** aktiviert ist, wird die Lieferzeit aus der Handelsvereinbarung nicht berücksichtigt. Lieferzeiten werden aus den Artikeldeckungseinstellungen oder dem Artikel selbst übernommen.
 Durch diesen Erfüllungsmodus werden Pläne mit weniger Verzögerungen und weniger Bestellvorschlägen erstellt, ungeachtet der Deckungsgruppe, die für den Artikel eingerichtet ist. Die folgende Abbildung zeigt das Ergebnis des Plans, wenn das Dispositionsverfahren **Bedarf** oder **Periode** ist.  
-[![Bedarf. Periode. Heutiges Datum und Lieferzeit](./media/TodayPLTReq.png)](./media/TodayPLTReq.png) Die folgende Abbildung zeigt das Ergebnis des Plans, wenn das Dispositionsverfahren **Min/Max** ist.  
-[![MinMax. Heutiges Datum und Lieferzeit](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
+[![Bedarf. Periode. Heutiges Datum und Lieferzeit.](./media/TodayPLTReq.png)](./media/TodayPLTReq.png)
+Die folgende Abbildung zeigt das Ergebnis des Plans, wenn das Dispositionsverfahren **Min./Max.** ist.  
+[![MinMax. Heutiges Datum und Lieferzeit.](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
 ### <a name="first-issue"></a>Erster Abgang 
 Die angegebene Mindestmenge wird am Datum erfüllt, wenn der verfügbare Lagerbestand den Mindestbestand unterschreitet, wie in der folgenden Abbildung gezeigt. Selbst wenn der verfügbare Lagerbestand am Datum, an dem der Produktprogrammplan ausgeführt ist, unter dem Mindestbestand liegt, wird durch **Erster Abgang** nicht versucht, ihn zu decken, bis der nächste Bedarf eintrifft.
 Die folgende Abbildung zeigt ein Beispiel des Dispositionsverfahrens für **Bedarf**.
-[![Planung eines Artikels mit Dispositionsverfahren **Bedarf** und Erfüllung **Erster Abgang**](./media/FirstIssueReq.png)](./media/FirstIssueReq.png) Die folgende Abbildung zeigt ein Beispiel für das Dispositionsverfahren **Periode**.
-[![Planung eines Artikels mit Dispositionsverfahren **Periode** und Erfüllung **Erster Abgang**](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png) Die folgende Abbildung zeigt ein Beispiel für das Dispositionsverfahren **Min/Max**.
-[![Planung eines Artikel mit Dispositionsverfahren **MinMax** und Erfüllung **Erster Abgang**](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png) An dem Datum, wenn der Produktprogrammplan ausgeführt wird, wenn der verfügbare Lagerbestand bereits unter dem Sicherheitslagerbestandslimit liegt, löst **Heutiges Datum** und **Heutiges Datum + Beschaffungszeit** die Wiederbeschaffung sofort aus. **Erster Abgang** wartet, bis es eine weitere Abgangsbuchung gibt, wie einen Auftrag oder eine Stücklistenpositionsanforderung für den Artikel, und dann löst er die Wiederbeschaffung am Datum dieser Buchung aus. Am Datum, an dem der Produktprogrammplan ausgeführt wird, wenn der verfügbare Lagerbestand nicht unter dem Sicherheitslagerbestandslimit ist, liefern **Heutiges Datum** und **Erster Abgang** genau das gleiche Ergebnis, wie in der Abbildung unten dargestellt. 
+[![Planen eines Artikel mit Dispositionsverfahren **Bedarf** und Erfüllung **Erster Abgang**.](./media/FirstIssueReq.png)](./media/FirstIssueReq.png)
+Die folgende Abbildung zeigt ein Beispiel des Dispositionsverfahrens für **Periode**.
+[![Planen eines Artikel mit Dispositionsverfahren **Periode** und Erfüllung **Erster Abgang**.](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png)
+Die folgende Abbildung zeigt ein Beispiel des Dispositionsverfahrens für **Min./Max.**.
+[![Planen eines Artikel mit Dispositionsverfahren **MinMax** und Erfüllung **Erster Abgang**.](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png)
+An dem Datum, wenn der Produktprogrammplan ausgeführt wird, wenn der verfügbare Lagerbestand bereits unter dem Sicherheitslagerbestandslimit liegt, löst **Heutiges Datum** und **Heutiges Datum + Beschaffungszeit** die Wiederbeschaffung sofort aus. **Erster Abgang** wartet, bis es eine weitere Abgangsbuchung gibt, wie einen Auftrag oder eine Stücklistenpositionsanforderung für den Artikel, und dann löst er die Wiederbeschaffung am Datum dieser Buchung aus. Am Datum, an dem der Produktprogrammplan ausgeführt wird, wenn der verfügbare Lagerbestand nicht unter dem Sicherheitslagerbestandslimit ist, liefern **Heutiges Datum** und **Erster Abgang** genau das gleiche Ergebnis, wie in der Abbildung unten dargestellt. 
 
-[![NotUnderLimit](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png) An dem Datum, an dem der Produktprogrammplan ausgeführt wird, wenn der verfügbare Lagerbestand nicht unter dem Sicherheitslagerbestandslimit ist, liefern **Heutiges Datum + Beschaffungszeit** folgendes Ergebnis, weil dadurch die Erfüllung bis zum Ende der Beschaffungslieferzeit hinausgeschoben wird.
-![Planen eines Artikel mit Dispositionsverfahren **Bedarf** und Erfüllung **Erster Abgang**](./media/ReqTodayLT.png)
+[![NotUnderLimit.](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png)
+An dem Datum, an dem der Produktprogrammplan ausgeführt wird, wenn der verfügbare Lagerbestand nicht unter dem Sicherheitslagerbestandslimit ist, liefern **Heutiges Datum + Beschaffungszeit** folgendes Ergebnis, weil dadurch die Erfüllung bis zum Ende der Beschaffungslieferzeit hinausgeschoben wird.
+![Planen eines Artikel mit Dispositionsverfahren **Bedarf** und Erfüllung **Erster Abgang**.](./media/ReqTodayLT.png)
 ### <a name="coverage-time-fence"></a>Planungszeitraum
 Die angegebene Mindestmenge wird innerhalb des im Feld **Deckungszeitrahmen** angegebenen Zeitraums erreicht. Diese Option ist nützlich, wenn der Produktprogrammplan nicht zulässt, dass verfügbarer Bestand für tatsächliche Aufträge verwendet wird, wie beispielsweise Verkäufe oder Übertragungen, beim Versuch, den Sicherheitsbestand einzuhalten. Allerdings wird in einer zukünftigen Version dieser Wiederbeschaffungsmodus nicht mehr benötigt werden, und diese Option wird veraltet sein.
 ## <a name="plan-safety-stock-replenishment-for-first-expired-first-out-fefo-items"></a>Planen der Sicherheitsbestandswiederbeschaffung für „First Expired, First Out (FEFO)”-Artikel (FEFO auf Deutsch: zuerst abgelaufen, zuerst raus).
 Zu irgendeinem Zeitpunkt wird der Lagerzugang mit dem spätesten Ablaufdatum für den Sicherheitsbestand verwendet, damit realer Bedarf, wie Verkaufspositionen oder Stücklistenpositionen, in der FEFO-Reihenfolge (First Expired, First Out = zuerst abgelaufen, zuerst raus) erfüllt werden kann.
 Um zu zeigen, wie dies funktioniert, beachten Sie folgendes Szenario.
-[![FEFOScenario](./media/FEFOScenario.png)](./media/FEFOScenario.png) Wenn die Planung ausgeführt wird, umfasst sie den ersten Auftrag aus dem verfügbaren Lagerbestand und eine zusätzliche Bestellung für die Restmenge.
-[![FEFO1](./media/FEFO1.png)](./media/FEFO1.png) Ein Bestellvorschlag wird erstellt, um sicherzustellen, dass der verfügbare Lagerbestand zum Sicherheitsbestandslimit zurückversetzt wird.
-[![FEFO2](./media/FEFO2.png)](./media/FEFO2.png) Wenn der zweite Auftrag geplant wird, wird der zuvor erstellte Bestellvorschlag, der den Sicherheitsbestand abdeckt, verwendet, um diese Menge abzudecken. Der Sicherheitsbestand ist also ständig in Bewegung.
-[![FEFO3](./media/FEFO3.png)](./media/FEFO3.png) Schließlich wird ein anderer Bestellvorschlag erstellt, um den Sicherheitsbestand abzudecken.
-[![FEFO4](./media/FEFO4.png)](./media/FEFO4.png) Alle Chargen laufen entsprechend ab, und Bestellvorschläge werden erstellt, um den Sicherheitsbestand wieder aufzufüllen, nachdem er abgelaufen ist.
+[![FEFOSzenario.](./media/FEFOScenario.png)](./media/FEFOScenario.png)
+Wenn die Planung ausgeführt wird, umfasst sie den ersten Auftrag aus dem verfügbaren Lagerbestand und eine zusätzliche Bestellung für die Restmenge.
+[![FEFO1.](./media/FEFO1.png)](./media/FEFO1.png)
+Ein Bestellvorschlag wird erstellt, um sicherzustellen, dass der verfügbare Lagerbestand zum Sicherheitsbestandslimit zurückversetzt wird.
+[![FEFO2.](./media/FEFO2.png)](./media/FEFO2.png)
+Wenn der zweite Auftrag geplant wird, wird der zuvor erstellte Bestellvorschlag, der den Sicherheitsbestand abdeckt, verwendet, um diese Menge abzudecken. Der Sicherheitsbestand ist also ständig in Bewegung.
+[![FEFO3.](./media/FEFO3.png)](./media/FEFO3.png)
+Schließlich wird ein anderer Bestellvorschlag erstellt, um den Sicherheitsbestand abzudecken.
+[![FEFO4.](./media/FEFO4.png)](./media/FEFO4.png)
+Alle Chargen laufen entsprechend ab, und Bestellvorschläge werden erstellt, um den Sicherheitsbestand wieder aufzufüllen, nachdem er abgelaufen ist.
 
 ## <a name="how-master-planning-handles-the-safety-stock-constraint"></a>Wie der Produktprogrammplan die Sicherheitsbestandseinschränkung handhabt
 

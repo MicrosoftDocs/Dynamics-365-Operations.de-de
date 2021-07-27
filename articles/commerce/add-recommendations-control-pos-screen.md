@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 38099909f169391c17760ac381af07f0848fc384
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 219b82809087e3f5f185bc92836ca300d064fc71
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797478"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348343"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Empfehlungen dem Transaktionsbildschirm hinzufügen
 
@@ -43,7 +43,7 @@ Sie können Produktempfehlungen auf Ihrem POS-Gerät anzeigen, wenn Sie Commerce
 6. Wenn Sie sich anmelden, erscheint eine Seite, ähnlich jener unten. Das Layout ist verschieden, abhängig von den Anpassungen, die für Ihre Filiale vorgenommen wurden.
 
 
-    [![Layout-Designer](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Layout-Designer.](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Einen Anzeigeoption auswählen
 
@@ -58,15 +58,15 @@ Es stehen zwei Optionen für die Konfiguration zur Verfügung. Wählen Sie die O
 1. Reduzieren Sie die Höhe des Buchungspositionsdetailbereichs, so dass er die gleiche Höhe hat wie der Debitorenbereich links.
 
 
-    [![Höhe des Buchungspositionsdetail-Bereichs reduziert](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![Höhe des Buchungspositionsdetail-Bereichs reduziert.](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. Klicken Sie im Menü auf der linken Seite, und ziehen Sie das Empfehlungssteuerelement zwischen den Buchungspositionsdetailbereich und den Schaltflächenraster im mittleren unteren Transaktlions-Bildschirmrands. Ändern Sie die Steuerung, so dass die Größe in diesen Bereich passt.
 
-    [![Empfehlungssteuerelement dem Layout hinzugefügt](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Empfehlungssteuerelement dem Layout hinzugefügt.](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. Klicken Sie auf **X**, um zu speichern und den Layout-Designer zu beenden.
-4. In Commerce gehen Sie zu **Retail and Commerce** &gt; **Retail and Commerce IT** &gt;  **Verteilungszeitpläne** .
+4. In Commerce gehen Sie zu **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Verteilungszeitpläne**.
 5. Wählen Sie in der **1090 Anmelden**
 6. Klicken Sie auf **Jetzt ausführen**
 
@@ -77,19 +77,19 @@ Es stehen zwei Optionen für die Konfiguration zur Verfügung. Wählen Sie die O
 
 2. Klicken Sie auf **Anpassen**.
 
-    [![Anpassung – Registerkartensteuerelement-Dialogfeld](./media/pic-5.png)](./media/pic-5.png)
+    [![Anpassung – Registerkartensteuerelement-Dialogfeld.](./media/pic-5.png)](./media/pic-5.png)
 
 3. Klicken Sie auf **Neue Registerkarte**
 4. Suchen Sie die neue Registerkarte, die Sie hinzugefügt haben. Sie müssen möglicherweise einen Bildlauf nach unten machen.
 5. Wählen Sie im Dropdown-Menü unter **Inhalte** **Empfohlene Produkte**.
 
-    [![Auswählen empfohlener Produkte im Feld „Inhalte“](./media/pic-6.png)](./media/pic-6.png)
+    [![Auswählen empfohlener Produkte im Feld „Inhalte“.](./media/pic-6.png)](./media/pic-6.png)
 
 6. Wählen Sie im Feld **Beschriftung** einen Namen für die Registerkarte "Empfehlungen". Zum Beispiel Tpy 'Empfohlene Produkte'.
 7. Wählen Sie im Feld **Fild** das Bild, das auf der Registerkarte angezeigt werden soll.
 8. Klicken Sie auf **OK**. Die Registerkarte wird im neuen Schaltflächenraster angezeigt.
 9. Klicken Sie auf **X**, um zu speichern und den Layout-Designer zu beenden.
-10. In Commerce gehen Sie zu **Retail and Commerce** &gt; **Retail and Commerce IT** &gt;  **Verteilungszeitpläne** .
+10. In Commerce gehen Sie zu **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Verteilungszeitpläne**.
 11. Wählen Sie in der **1090 Anmelden**
 12. Klicken Sie auf **Jetzt ausführen**
 

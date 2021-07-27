@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 120a88790b7cdb6a8cfcf97cbafeced4685384f2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e4795d11ac370003e48dc845c86ec8a5ba22aa86
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744662"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348654"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Agnostische Datentests mit dem Regression Suite Automation Tool
 
@@ -30,7 +30,7 @@ Während die funktionale Prüfung einer ERP-Anwendung nicht vollständig datenag
 - ATL-Framework
 - Regression Suite Automation Tool (RSAT)
 
-[![Testklassifizierungspyramide](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Testklassifizierungspyramide.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>Übersicht
 -   **SysTest-Framework** – Das SysTest-Framework dient zum zuverlässigen Schreiben von Einheitentests. Da Einheitentests allgemein eine Methode oder eine Funktion testen, sollten sie immer datenagnostisch und nur von den Daten abhängig sein, die im Rahmen des Tests bereitgestellt werden.
@@ -42,7 +42,7 @@ Während die funktionale Prüfung einer ERP-Anwendung nicht vollständig datenag
     - o Geben Sie die eindeutigen Bezeichner, wie die Rechnungsnummern durch einen Nummernkreis ein oder indem Microsoft Excel-Funktionen verwenden, wie =TEXT(NOW(),"yyyymmddhhmm"). Diese Funktion stellt jede Minute eine eindeutige Zahl bereit, die es Ihnen ermöglicht, die Aktivität zu verfolgen. Dies kann für Variablen wie Produktzugangsnummern und Kreditorenrechnungsnummern verwendet werden. Diese Tests funktionieren immer wieder mit derselben Datenbank, ohne dass eine Wiederherstellung nötig ist.
     - Legen Sie den **Bearbeitungsmodus** der Umgebung immer auf **Lesen** oder **Bearbeiten** als ersten Testfall fest, da die Standardoption **Automatisch** ist. Die Optionen **Automatisch** verwenden immer die vorherige Einstellung und können zu unzuverlässigen Tests führen. 
  
-    [![Seite „Optionen“, Registerkarte „Leistung“](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Seite „Optionen“, Registerkarte „Leistung“.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Überprüfen Sie nur, wenn Sie eine bestimmte Buchung anstelle der generischen Prüfung filtern. Filtern Sie z. B. für die Anzahl von Datensätzen die Buchungsnummer oder das Buchungsdatum, damit die Überprüfung alle weiteren Buchungen ausschließt. 
     - Wenn Sie ein Debitorensaldo oder eine Budgetprüfung prüfen, speichern Sie den Wert zuerst und fügen Sie dann Ihren Buchungswert hinzu, um das erwartete Ergebnis anstelle eines erwarteten festen Werts zu prüfen. 

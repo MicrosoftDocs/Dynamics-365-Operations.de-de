@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b53ecec4bb7593cb0a0cae72e4132c49d6ec6a68
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bcb242214efab3fd632ea0b9e0f3329bb7821dc0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826010"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354760"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Workflows für die Genehmigung von Bestandserfassungen
 
@@ -55,7 +55,7 @@ Legen Sie Workflows für die Genehmigung von Bestandserfassungen wie folgt an:
     - **Bestandsstücklistenerfassung**
     - **Lagerregulierungserfassung**
 
-    ![Das Dialogfeld „Workflow erstellen“](media/journal-workflow-create-workflow.png "Das Dialogfeld „Workflow erstellen“")
+    ![Das Dialogfeld „Workflow erstellen“.](media/journal-workflow-create-workflow.png "Das Dialogfeld „Workflow erstellen“")
 
 1. Die Workflow-Editor-App wird auf Ihrem Computer gestartet. (Möglicherweise werden Sie aufgefordert, diese Aktion zu genehmigen.) Verwenden Sie den Editor, um Ihren Workflow nach Bedarf zu gestalten. Ausführliche Informationen zur Verwendung des Workflow-Editors finden Sie unter [Workflowsystem – Übersicht](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 1. Nach dem Speichern und Schließen der Workflow-Editor-App müssen Sie auswählen, ob diese Workflow-Version aktiviert werden oder inaktiv bleiben soll.
@@ -73,7 +73,7 @@ Um einem Bestandserfassungsworkflow einen Bestandserfassungsnamen zuzuweisen, ge
 1. Wählen Sie einen Erfassungsnamen aus der Listenspalte aus, um die Einstellungsseite zu öffnen.
 1. Auf dem Inforegister **Allgemein** stellen Sie die Option **Genehmigungsworkflow** auf **Ja**. Klicken Sie auf **Ja**, wenn Sie zum Bestätigen Ihrer Auswahl aufgefordert werden.
 
-    ![Einem Erfassungsnamen einen Workflow zuweisen](media/journal-workflow-journal-name.png "Einem Erfassungsnamen einen Workflow zuweisen")
+    ![Einem Erfassungsnamen einen Workflow zuweisen.](media/journal-workflow-journal-name.png "Einem Erfassungsnamen einen Workflow zuweisen")
 
 1. Öffnen Sie die **Workflow**-Drop-down-Liste und wählen Sie den gewünschten Workflow aus. Die Liste zeigt alle aktiven Workflows, die Sie mit der Workflow-Editor-App erstellt haben.
 
@@ -87,7 +87,7 @@ Nachdem Sie einen Bestandserfassungsnamen mit dem entsprechenden Workflow für d
 1. Füllen Sie die Erfassung wie erforderlich aus.
 1. Wenn Sie eine Bestandserfassung mit einem damit verbundenen Genehmigungsworkflow erstellen oder öffnen, wird die Schaltfläche **Workflow** im Aktionsbereich aktiviert. Wenn Sie bereit sind, die Erfassung zur Genehmigung einzureichen, wählen Sie die Schaltfläche **Workflow**, um ein Drop-down-Dialogfeld zu öffnen, und wählen Sie dann **Übermitteln**. Die Genehmigungsanforderung wird dann an den entsprechenden Genehmiger weitergeleitet, der mithilfe der für den Workflow konfigurierten Methode benachrichtigt wird.
 
-    ![Eine Erfassung zur Genehmigung übermitteln](media/journal-workflow-inventory-journal.png "Eine Erfassung zur Genehmigung übermitteln")
+    ![Eine Erfassung zur Genehmigung übermitteln.](media/journal-workflow-inventory-journal.png "Eine Erfassung zur Genehmigung übermitteln")
 
 Um eine Genehmigungsanforderung zurückzurufen, öffnen Sie die entsprechende Erfassung und wählen Sie die Schaltfläche **Workflow** und dann **Zurückrufen**. Dadurch wird der Workflow zurückgesetzt.
 

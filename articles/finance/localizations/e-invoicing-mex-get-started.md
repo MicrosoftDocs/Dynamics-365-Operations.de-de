@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c1112ba8394afb3aa9c9b4f68249524498bd8b32
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 26091a068ed15ec9ff14c9194c3e0e0ad0779351
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894882"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344781"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Erste Schritte mit der elektronischen Rechnungsstellung für Mexiko
 
@@ -56,7 +58,7 @@ Während der RCS-Einrichtung führen Sie folgende Aufgaben aus:
     > [!NOTE]
     > Wenn Sie die Funktion in der Liste nicht sehen können, wählen Sie **Synchronisieren** aus und wiederholen Sie Schritt 3.
 
-![Importieren der Funktion „CFDI-Rechnungen (MX)“](media/e-Invoicing-services-get-started-MEX-Select-Import-CFDI-feature.png)
+![Importieren der Funktion „CFDI-Rechnungen (MX)“.](media/e-Invoicing-services-get-started-MEX-Select-Import-CFDI-feature.png)
 
 Wenn Sie die Funktion **CFDI-Rechnungen (MX)** aus dem globalen Repository importieren, werden alle Funktionseinstellungen, einschließlich der Konfigurationen und Aktionen, ebenfalls importiert.
 
@@ -66,13 +68,13 @@ Sie können eine neue Version erstellen, wenn beispielsweise URLs aktualisiert w
 
 - Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Versionen** die Option **Neu** aus.
 
-![Hinzufügen einer neuen Version der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-MEX-Select-New-e-Invoicing-feature.png)
+![Hinzufügen einer neuen Version der Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-get-started-MEX-Select-New-e-Invoicing-feature.png)
 
 ### <a name="update-the-configuration-version"></a>Aktualisieren der Konfigurationsversion
 
 1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Konfigurationen** entweder **Hinzufügen** oder **Löschen** aus, um die Konfigurationsversionen (EB-Dateiformatkonfigurationen) zu verwalten.
 
-    ![Verwalten der Konfigurationen der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Configurations.png)
+    ![Verwalten der Konfigurationen der Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Configurations.png)
 
     Wenn Sie eine neue Version erstellen, werden alle Konfigurationen von der zuletzt veröffentlichten Version geerbt. Zur Verarbeitung von CFDI-Rechnungen sind folgende Konfigurationen erforderlich:
 
@@ -84,17 +86,17 @@ Sie können eine neue Version erstellen, wenn beispielsweise URLs aktualisiert w
 
 2. Wählen Sie in der Liste eine Konfigurationsversion aus und wählen Sie dann **Bearbeiten** oder **Anzeigen** aus, um die Seite **Formatdesigner** zu öffnen, auf der Sie die Konfiguration bearbeiten oder anzeigen können.
 
-    ![Öffnen der Seite „Formatdesigner“](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
+    ![Öffnen der Seite „Formatdesigner“.](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
 3. Verwenden Sie die Seite **Formatdesigner**, um die EB-Formatkonfigurationen für Dateien zu bearbeiten und anzuzeigen. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-    ![Formatdesignerseite](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
+    ![Formatdesignerseite.](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Verwalten der Einrichtungen der Funktion für die elektronische Rechnungsstellung
 
 - Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Einrichtungen** entweder **Hinzufügen**, **Löschen** oder **Bearbeiten** aus, um die Einrichtungen der Funktion für die elektronische Rechnungsstellung zu verwalten.
 
-![Verwalten der Einrichtungen der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
+![Verwalten der Einrichtungen der Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
 
 Um CFDI-Rechnungen zur Autorisierung zu übermitteln (generieren und übermitteln Sie die XML-Datei und verarbeiten Sie die Antwort), ist die Funktionseinrichtung **Verkaufsrechnung** erforderlich.
 
@@ -105,15 +107,15 @@ Um eine CFDI-Rechnungsstornierung zu übermitteln, sind die Funktionseinrichtung
 1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Einrichtungen** in der Spalte **Funktionseinrichtung** die Option **Verkaufsrechnung** aus.
 2. Wählen Sie **Bearbeiten** aus, um Aktionen, Anwendbarkeitsregeln und Variablen zu konfigurieren.
 
-    ![Bearbeiten der Einrichtung der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
+    ![Bearbeiten der Einrichtung der Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
 
 3. Wählen Sie auf der Seite **Einrichtung der Funktionsversion** die Registerkarte **Aktionen** aus, um die Liste der Aktionen zu verwalten. Aktionen definieren eine Liste von Vorgängen, die nacheinander ausgeführt werden müssen, um die vollständige Ausführung des Ereignisses zu erreichen.
 
-    ![Registerkarte „Aktionen“](media/e-Invoicing-services-get-started-MEX-Select-Actions.png)
+    ![Registerkarte „Aktivitäten“.](media/e-Invoicing-services-get-started-MEX-Select-Actions.png)
 
     | Aktivitätskennung | Vorgang                   | Aktivitätsname                                  | Aktivitätsbeschreibung                                          |
     |-----------|--------------------------|----------------------------------------------|-------------------------------------------------------------|
-    | 1         | Umwandeln des Dokuments       | Generieren einer CFDI-E-Rechnung ohne digitale Signatur | Generieren Sie die CFDI-E-Rechnung.                                |
+    | 1         | Dokument umwandeln       | Generieren einer CFDI-E-Rechnung ohne digitale Signatur | Generieren Sie die CFDI-E-Rechnung.                                |
     | 2         | Dokument signieren            | Digitale Signatur                                 | Unterzeichnen Sie die elektronische Rechnung zur Übermittlung digital.                |
     | 3         | Aufrufen des mexikanischen PAC-Service | Übermitteln der CFDI-E-Rechnung                        | Der WCF-Client (Windows Communication Foundation) übermittelt die CFDI-E-Rechnung. |
     | 4         | Verarbeiten der Antwort         | Analysieren der Antwort des Webdienstes                 | Analysieren Sie die Antwort des Webdienstes und geben Sie das Fehlerprotokoll zurück. |
@@ -133,12 +135,12 @@ Um eine CFDI-Rechnungsstornierung zu übermitteln, sind die Funktionseinrichtung
 3. Wählen Sie im Feld **Gültig ab** das Datum aus, an dem die Umgebung wirksam werden soll.
 3. Wählen Sie **Aktivieren** aus.
 
-![Aktivieren einer Umgebung für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-MEX-Enable-e-Invoicing-Environment.png)
+![Aktivieren einer Umgebung für die elektronische Rechnungsstellung.](media/e-Invoicing-services-get-started-MEX-Enable-e-Invoicing-Environment.png)
 
 ## <a name="change-the-version-status-to-completed"></a>Ändern des Versionsstatus in „Abgeschlossen“
 
 1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Versionen** die Version der Funktion für die elektronische Rechnungsstellung mit dem Status **Entwurf** aus.
-2. Wählen Sie **Status ändern \>Abschließen** aus.
+2. Wählen Sie **Status ändern \> Abschließen** aus.
 
 ## <a name="change-the-version-status-to-published"></a>Ändern des Versionsstatus in „Veröffentlicht“
 
@@ -149,7 +151,7 @@ Um eine CFDI-Rechnungsstornierung zu übermitteln, sind die Funktionseinrichtung
 1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** die Registerkarte **Versionen** aus, um den Status der Funktion **CFDI-Rechnungen (MX)** zu verwalten.
 2. Wählen Sie **Status ändern** aus, um den Status der Funktion zu ändern.
 
-![Ändern des Status der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
+![Ändern des Status der Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
 
 ## <a name="set-up-electronic-invoicing--integration-in-finance"></a>Einrichten der Integration für die elektronische Rechnungsstellung in Finance
 
@@ -171,7 +173,7 @@ Um die elektronische Rechnungsstellung in Finance einzurichten, führen Sie die 
 1. Navigieren Sie zu **Organisationsverwaltung \> Einrichtung \> Parameter elektronischer Dokumente**.
 2. Aktivieren Sie auf der Registerkarte **Funktionen** das Kontrollkästchen **Aktivieren** in den Zeilen für die Funktionsreferenzen **MX-00010** und **MX-00016**.
 
-![Aktivieren der Funktionen zur Verarbeitung von CDFI-Rechnungen](media/e-Invoicing-services-get-started-MEX-Enable-CFDI-feature.png)
+![Aktivieren der Funktionen zur Verarbeitung von CDFI-Rechnungen.](media/e-Invoicing-services-get-started-MEX-Enable-CFDI-feature.png)
 
 ### <a name="import-er-configurations-and-set-up-the-response-types-for-updating-cfdi-invoices"></a>Importieren der EB-Konfigurationen und Einrichten der Antworttypen zur Aktualisierung von CFDI-Rechnungen
 
@@ -221,7 +223,7 @@ Nachdem Sie die Funktion **Integration der konfigurierbaren elektronischen Rechn
 2. Legen Sie für die erste Übermittlung irgendeines Dokuments immer die Option **Dokumente erneut übermitteln** auf **Nein** fest. Wenn Sie ein Dokument erneut über den Service übermitteln müssen, legen Sie diese Option auf **Ja** fest.
 3. Wählen Sie auf dem Inforegister **Einzuschließende Datensätze** die Option **Filtern** aus, um das Dialogfeld **Anfrage** zu öffnen, in dem Sie eine Abfrage erstellen können, um Dokumente für die Übermittlung auszuwählen.
 
-![Übermitteln eines CFDI-Dokuments](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
+![Übermitteln eines CFDI-Dokuments.](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
 
 > [!NOTE]
 > Bei Ihrem ersten Versuch, ein Dokument über den Service zu übermitteln, werden Sie aufgefordert, die Verbindung mit der elektronischen Rechnungsstellung zu bestätigen. Wählen Sie **Hier klicken, um eine Verbindung mit dem Electronic Document Submission Service herzustellen** aus.
@@ -237,11 +239,11 @@ Nach dem Aktivieren der Funktion **Integration der konfigurierbaren elektronisch
 1. Navigieren Sie zu **Organisationsverwaltung \> Periodisch \> Elektronische Dokumente \> Übermittlungsprotokoll für elektronische Dokumente**.
 2. Wählen Sie im Feld **Dokumenttyp** die Option **Debitorenrechnungserfassung** aus, um nach den erforderlichen elektronischen Dokumenten zu filtern.
 
-    ![Auswählen eines Dokumenttyps, um die Übermittlungsprotokolle anzuzeigen](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
+    ![Auswählen eines Dokumenttyps, um die Übermittlungsprotokolle anzuzeigen.](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
 
 3. Wählen Sie im Aktivitätsbereich die Option **Anfragen \> Übermittlungsdetails** aus, um die Details der Ausführungsprotokolle für die Übermittlung anzuzeigen.
 
-    ![Anzeigen der Details des Übermittlungsprotokolls](media/e-Invoicing-services-get-started-MEX-View-submission-log-details.png)
+    ![Anzeigen der Details des Übermittlungsprotokolls.](media/e-Invoicing-services-get-started-MEX-View-submission-log-details.png)
 
 Die Informationen in den Übermittlungsprotokollen sind auf drei Inforegister aufgeteilt:
 
@@ -259,7 +261,7 @@ Nach dem Aktivieren der Funktion **Integration der konfigurierbaren elektronisch
 2. Wählen Sie eine CFDI-Rechnung aus, die nach dem Aktivieren der Funktion **Integration der konfigurierbaren elektronischen Rechnungsstellung** übermittelt wurde.
 3. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Verlauf** die Option **Elektronisches Dokumentenprotokoll** aus.
 
-![Anzeigen von Übermittlungsprotokollen über CFDI-Rechnungen](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
+![Anzeigen von Übermittlungsprotokollen über CFDI-Rechnungen.](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
 
 > [!NOTE]
 > Für CFDI-Rechnungen, die vor dem Aktivieren der Funktion **Integration der konfigurierbaren elektronischen Rechnungsstellung** übermittelt wurden, ist die Schaltfläche **Verlauf** verfügbar. Die Schaltfläche **Verlauf** ist für CFDI-Rechnungen, die nach dem Aktivieren der Funktion **Integration der konfigurierbaren elektronischen Rechnungsstellung** übermittelt wurden, nicht verfügbar.
@@ -282,11 +284,11 @@ Nachdem Sie die Funktion **Integration der konfigurierbaren elektronischen Rechn
 
     Die Seite **Zugehörige Übermittlungen** zeigt alle zugehörigen Übermittlungen und ihren Übermittlungsstatus für eine bestimmte CFDI-Rechnung an. In der folgenden Abbildung stellt die erste Zeile die Übermittlung dar, die die Genehmigung der CFDI-Rechnung beantragt hat. Die zweite Zeile stellt die Übermittlung dar, mit der diese CFDI-Rechnung storniert wurde.
 
-    ![Anzeigen der Übermittlungsprotokolle zu Stornierungen](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log.png)
+    ![Anzeigen der Übermittlungsprotokolle zu Stornierungen.](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log.png)
 
 4. Wählen Sie im Aktivitätsbereich die Option **Anfragen \> Übermittlungsdetails** aus, um die Details der Ausführungsprotokolle für die Übermittlung anzuzeigen.
 
-    ![Anzeigen der Details des Übermittlungsprotokolls zu Stornierungen](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
+    ![Anzeigen der Details des Übermittlungsprotokolls zu Stornierungen.](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Datenschutzhinweis
 Zur Aktivierung der Funktion für eine **Elektronische Rechnung CFDI für Mexiko (MX)** müssen möglicherweise nur begrenzte Daten gesendet werden, einschließlich der Steuerregistrierungskennung für die Organisation. Diese Daten werden an von der Steuerbehörde autorisierte Drittagenturen weitergeleitet, um elektronische Rechnungen in dem für die Integration in den Webdienst der Behörde erforderlichen Format an diese Steuerbehörde zu senden. Ein Administrator kann die Funktion für eine **Elektronische Rechnung CFDI für Mexiko (MX)** aktivieren und deaktivieren, indem er zu **Organisationsverwaltung \> Einrichtung \> Parameter elektronischer Dokumente** navigiert. Wählen Sie die Registerkarte **Funktionen** aus, wählen Sie die Zeilen mit der Funktion für **Elektronische Rechnung CFDI für Mexiko (MX)** aus und treffen Sie die entsprechende Auswahl. Daten, die aus diesen externen Systemen in diesen Dynamics 365-Onlinedienst importiert werden, unterliegen unseren [Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkId=512132). Weitere Informationen finden Sie in den Abschnitten zum Datenschutz in der landesspezifischen Funktionsdokumentation.

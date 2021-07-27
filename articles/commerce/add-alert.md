@@ -2,7 +2,7 @@
 title: Werbebanner-Modul
 description: Dieses Thema behandelt Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: be3cc9729b58fce9ebc9885d8cb20b63114362a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3158916f96522bec6e7511f2d9daf61d36ffe8c6
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796245"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479351"
 ---
 # <a name="promo-banner-module"></a>Werbebannermodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema behandelt Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
@@ -46,7 +47,7 @@ Für Thanksgiving SALE! shoppen
 
 Das folgende Bild zeigt ein Beispiel für eine Werbeanzeige.
 
-![Beispiel eines Werbe-Anzeige-Moduls](./media/ecommerce-Promobanner.PNG)
+![Beispiel eines Werbeanzeigenmoduls.](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>Eigenschaften von Werbebanner-Modulen
 
@@ -58,7 +59,11 @@ Das folgende Bild zeigt ein Beispiel für eine Werbeanzeige.
 | Ausblenden zulassen             | **True** oder **False**              | Wenn der Wert auf **True** gesetzt wird, können Debitoren die Warnung ablehnen. |
 | Karussellflipper anzeigen     | **True** oder **False**              | Ein Wert, der angibt, ob die Karussellflipper angezeigt werden sollen, damit Debitoren mehrere Bannerelemente manuell durchlaufen können. |
 | Textausrichtung            | **Rechts** **Links** **Zentriert** | Die Textausrichtung im Werbebanner-Modul. |
-| Verknüpfung                      | Eine URL                              | Die URL für einen optionalen Link. |
+| Verknüpfen                      | Eine URL                              | Die URL für einen optionalen Link. |
+|Textausrichtung             | **Rechts** **Links** **Zentriert** | Diese Eigenschaft ist als Designerweiterung im Adventure Works-Design verfügbar. Es erlaubt einem Benutzer, die Textausrichtung in der Werbeanzeige festzulegen. |
+
+> [!IMPORTANT]
+> Das Adventure Works-Design steht ab der Dynamics 365 Commerce-Version 10.0.20 zur Verfügung.
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>Ein Werbebanner-Modul einer neuen Seite hinzufügen 
 
@@ -78,7 +83,6 @@ Um ein Werbebanner-Modul einer neuen Seite hinzuzufügen und die erforderlichen 
 
 > [!NOTE]
 > Ein Werbebanner wird normalerweise im Seitenkopf- oder Untertitel-Slot verwendet.
-
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

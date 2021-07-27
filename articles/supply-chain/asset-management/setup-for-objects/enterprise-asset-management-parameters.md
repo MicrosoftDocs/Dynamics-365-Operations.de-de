@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8df8e6204e9c64305387e6aed304142d7f13b33a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6affcc20c2c2e2b8fa9e38cb523e172bb2a79f22
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808327"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349817"
 ---
 # <a name="asset-management-parameters"></a>Anlagenverwaltungsparameter
 
@@ -50,7 +50,7 @@ Die Registerkarte **Arbeitsaufträge** enthält die folgenden Einstellungen:
 - **Vorbeugender Arbeitsauftragstyp** definiert den Arbeitsauftragstyp, wenn Arbeitsaufträge von den Wartungsplänen verwendet werden. Wenn dieses Feld leer bleibt, wird der Arbeitsauftrag in dem Feld **Standardarbeitsauftragstyp** verwendet.  
 - Im Feld **Verwandte Arbeitsauftragsmaske** definieren die maximale Anzahl von Arbeitsaufträgen, die einem Arbeitsauftrag zugeordnet werden können. Mit ## können Sie zum Beispiel bis zu 99 Arbeitsaufträge miteinander in Beziehung setzen. Wenn Sie eine Maske wie hier beschrieben definieren, werden zugehörige Arbeitsaufträge [Arbeitsauftrag-Kennung des Arbeitsauftrags, auf die sich ein Arbeitsauftrag bezieht] nummeriert mit -01, -02, -03, usw. Wenn Sie keinerlei Maske in diesem Feld definieren, wird ein zugehöriger Arbeitsauftrag die darauf folgende Auftragsnummer die Arbeitsauftrags-Kennung.  
 - Wählen Sie **Ja** für **Fehler kopieren**, wenn Sie die auf den Arbeitsaufträgen registrierten Fehler automatisch in die zugehörigen Wartungsanforderungen kopieren möchten. 
-- Im Feld **Ebene** definieren Sie die funktionale Lagerplatzebene, die automatisch für einen Arbeitsauftrag eingefügt wird, wenn alle zugehörigen Arbeitsauftragseinzelvorgänge auf den funktionalen gleichen Speicherort verweisen. Wenn nicht alle Arbeitsauftragseinzelvorgänge derselben funktionalen Position auf der definierten Ebene zugeordnet werden, wird das Feld  **Funktionaler Lagerplatz** auf dem Arbeitsauftrag leer gelassen. Wenn Sie z.B. die Zahl „1“ in dieses Feld einfügen, ist das die oberste Ebene in einer funktionalen Standortstruktur. Wenn Sie die Nummer „0“ in diesem Feld einfügen, haben Sie keine bestimmte funktionale Lagerplatzebene definiert, nur dass alle Arbeitsauftragsstellen eines Arbeitsauftrags dem gleichen Standort zugeordnet sein müssen, damit der Lagerplatz dem Arbeitsauftrag funktionale hinzugefügt werden kann.  
+- Im Feld **Ebene** definieren Sie die funktionale Lagerplatzebene, die automatisch für einen Arbeitsauftrag eingefügt wird, wenn alle zugehörigen Arbeitsauftragseinzelvorgänge auf den funktionalen gleichen Speicherort verweisen. Wenn nicht alle Arbeitsauftragseinzelvorgänge derselben funktionalen Position auf der definierten Ebene zugeordnet werden, wird das Feld **Funktionaler Lagerplatz** auf dem Arbeitsauftrag leer gelassen. Wenn Sie z.B. die Zahl „1“ in dieses Feld einfügen, ist das die oberste Ebene in einer funktionalen Standortstruktur. Wenn Sie die Nummer „0“ in diesem Feld einfügen, haben Sie keine bestimmte funktionale Lagerplatzebene definiert, nur dass alle Arbeitsauftragsstellen eines Arbeitsauftrags dem gleichen Standort zugeordnet sein müssen, damit der Lagerplatz dem Arbeitsauftrag funktionale hinzugefügt werden kann.  
 - Die Erfassungen, die verwendet werden, wenn der Verbrauch in einem Arbeitsauftrag gebucht wird, kann auf dem Inforegister **Allgemein** in den Feldern **Stunde**, **Artikel** und **Ausgaben** ausgewählt werden.  
 - Wählen Sie im Feld **Produktsprachenquelle** die Sprache für die Produktnamen in Anlageverwaltungsberichten aus. Sie können die im Unternehmenskonto oder die für den derzeit angemeldeten Benutzer eingerichtete Sprache auswählen.  
 - Wählen Sie **Ja** für **Echtzeitaktualisierung**, wenn Sie Änderungen an den Arbeitsplatzvorgaben, Wartungsplänen und Wartungsrunden automatisch aktualisieren wollen.
@@ -68,7 +68,7 @@ Die Registerkarte **Arbeitsaufträge** enthält die folgenden Einstellungen:
 Die Registerkarte **Arbeitsauftrag und Planung** bietet die folgenden Einstellungen auf dem Inforegister **Allgemein**:
 
 - **Planungszeitraum planen** definiert den Zeitraum in Tagen, berechnet, nach dem erwarteten Startdatum des Arbeitsauftrags, während dem Arbeitsauftragsvorgänge geplant werden.  
-- **Produktprogrammplan** bezeieht sich auf die Ressourcen im Modul **Organisationsverwaltung**. Wenn Sie einen Produktprogrammplan in diesem Feld ausgewählt haben, sind Sie in der Lage, die Kapazitätsreservierungen zu sehen, die den Arbeitsaufträgen **Kapazitätsreservierungen** zugeordnet werden (**Organisationsverwaltung** > **Ressourcen** > **Ressourcen** > Ressource wählen > Registerkarte **Ressource** > Schaltfläche **Kapazitätsreservierungen**). Wenn Sie dieses Feld leer lassen, sehen Sie die Kapazitätsauslastung, die dem Arbeitsauftrag zugeordnet ist unter **Kapazitätsauslastung** (**Organisationsverwaltung** \>**Ressourcen** \> **Ressourcen** \> Ressource auswählen \> Registerkarte **Ressource** \> Schaltfläche **Kapazitätsauslastung**).  
+- **Produktprogrammplan** bezeieht sich auf die Ressourcen im Modul **Organisationsverwaltung**. Wenn Sie einen Produktprogrammplan in diesem Feld ausgewählt haben, sind Sie in der Lage, die Kapazitätsreservierungen zu sehen, die den Arbeitsaufträgen **Kapazitätsreservierungen** zugeordnet werden (**Organisationsverwaltung** > **Ressourcen** > **Ressourcen** > Ressource wählen > Registerkarte **Ressource** > Schaltfläche **Kapazitätsreservierungen**). Wenn Sie dieses Feld leer lassen, sehen Sie die Kapazitätsauslastung, die dem Arbeitsauftrag zugeordnet ist unter **Kapazitätsauslastung** (**Organisationsverwaltung** \> **Ressourcen** \> **Ressourcen** \> Ressource auswählen \> Registerkarte **Ressource** \> Schaltfläche **Kapazitätsauslastung**).  
 
 >[!NOTE]
 >Die Auswahl hinsichtlich der Verwendung eines Masterplans im Modul **Anlagenmanagement** und die damit verbundene Form, sich einen Überblick über Kapazitätsbuchungen oder Kapazitätsauslastung zu verschaffen, ist die Standardeinstellung. Abhängig von Ihren Einstellungen im Feld **Produktprogrammplan** sind Sie in der Lage, auf Kapazitätsinformationen entweder über **Kapazitätsreservierungen** oder **Kapazitätsauslastung** **Organisationsverwaltung** zuzugreifen. Es ist nicht möglich, eine Einstellung zu erstellen, in der die Kapazitätsreservierungen in beiden Ansichten dargestellt werden.  

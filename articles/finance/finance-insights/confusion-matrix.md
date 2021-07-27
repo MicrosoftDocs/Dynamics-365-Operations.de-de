@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 32561935958268f35acc24f1cfb823546636c1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193539"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349057"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Ergebnisse von Machine Learning-Modellen (Vorschau)
 
@@ -34,7 +34,7 @@ Nachdem ein überwachtes ML-Problem anhand einer Reihe historischer Daten traini
 
 Ihr Ziel ist es beispielsweise, anhand einiger körperlicher und Verhaltensmerkmale vorherzusagen, ob ein Haustier ein Hund oder eine Katze ist. Wenn Sie einen Testdatensatz haben, der 30 Hunde und 20 Katzen enthält, ähnelt die Verwirrungsmatrix möglicherweise der folgenden Abbildung.
 
-![Beispiel für die Vorhersage von Arten](media/species-prediction-matrix.png)
+![Beispiel für die Vorhersage von Arten.](media/species-prediction-matrix.png)
 
 Die Zahlen in den grünen Zellen repräsentieren korrekte Vorhersagen. Wie Sie sehen können, hat das Modell einen höheren Prozentsatz der tatsächlichen Katzen korrekt vorhergesagt. Die Gesamtgenauigkeit des Modells ist einfach zu berechnen. In diesem Fall ist es 42 ÷ 50 oder 0,84.
 
@@ -44,7 +44,7 @@ Die meisten Diskussionen über die Verwirrungsmatrix konzentrieren sich auf bin�
 
 Als Nächstes betrachten wir ein Klassifizierungsproblem für ein Finanzszenario mit drei Zuständen. Das Modell sagt voraus, ob eine Kundenrechnung pünktlich, verspätet oder sehr spät bezahlt wird. Beispielsweise werden von 100 Testrechnungen 50 pünktlich, 35 verspätet und 15 sehr spät bezahlt. In diesem Fall kann ein Modell eine Verwirrungsmatrix erzeugen, die der folgenden Abbildung ähnelt.
 
-![Modell 1](media/payment-prediction-matrix.png)]
+![Modell 1.](media/payment-prediction-matrix.png)]
 
 Eine Verwirrungsmatrix liefert wesentlich mehr Informationen als eine einfache Genauigkeitsmetrik. Sie ist jedoch immer noch relativ leicht zu verstehen. Eine Verwirrungsmatrix gibt an, ob Sie einen ausgeglichenen Datensatz haben, bei dem die Ausgabeklassen ähnliche Zählungen aufweisen. Für das Szenario mit mehreren Klassen wird angegeben, wie weit eine Vorhersage entfernt sein könnte, wenn die Ausgabeklassen ordinal sind, wie im vorherigen Beispiel zu Kundenzahlungen.
 
@@ -55,7 +55,7 @@ Da Genauigkeit eine leicht zu verstehende Metrik ist, ist sie ein guter Ausgangs
 
 Für ein gründlicheres Verständnis sollten jedoch einige Herausforderungen beachtet werden, die mit der Genauigkeit zusammenhängen. Der Nutzen der Metrik hängt vom Kontext des Problems ab. Eine Frage, die sich häufig in Bezug auf die Modellleistung stellt, lautet: „Wie gut ist das Modell?“ Die Antwort auf diese Frage ist jedoch nicht unbedingt einfach. Betrachten Sie die folgende Verwirrungsmatrix (Modell 2).
 
-![Beispiel für eine Zahlungsvorhersage mit einer größeren Stichprobe](media/payment-prediction-matrix-2.png)
+![Beispiel für eine Zahlungsvorhersage mit einer größeren Stichprobe.](media/payment-prediction-matrix-2.png)
 
 Eine schnelle Berechnung zeigt, dass die Genauigkeit dieses Modells (70 + 10 + 3) ÷ 100 oder 0,83 beträgt. Oberflächlich betrachtet scheint dieses Ergebnis besser zu sein als das Ergebnis des vorherigen Mehrklassenmodells (Modell 1) mit einer Genauigkeit von 0,73. Aber ist es besser?
 
@@ -87,7 +87,7 @@ Die letzte Überlegung in diesem Thema ist ein fortgeschritteneres Maß für die
 
 Bevor die F1-Genauigkeit definiert werden kann, müssen zwei zusätzliche Metriken eingeführt werden: Präzision und Erinnerung. Die Präzision gibt an, wie viele der insgesamt als positiv angegebenen Vorhersagen korrekt zugewiesen wurden. Diese Metrik wird auch als positiver Vorhersagewert bezeichnet. Erinnerung ist die Gesamtzahl der tatsächlich positiven Fälle, die korrekt vorhergesagt wurden. Diese Metrik wird auch als Empfindlichkeit bezeichnet.
 
-[![Wahre Ergebnisse im Vergleich zu falschen Ergebnissen](./media/tn-fn.png)](./media/tn-fn.png)
+[![Wahre Ergebnisse im Vergleich zu falschen Ergebnissen.](./media/tn-fn.png)](./media/tn-fn.png)
 
 In der Verwirrungsmatrix in der vorhergehenden Abbildung werden diese Metriken folgendermaßen berechnet:
 
@@ -100,7 +100,7 @@ Das F1-Maß kombiniert Präzision und Erinnerung. Das Ergebnis ist das harmonisc
 
 Schauen wir uns ein konkretes Beispiel an. Zu Beginn dieses Themas gab es ein Beispiel für ein Modell, das vorhersagte, ob es sich bei einem Tier um einen Hund oder eine Katze handelte. Die Abbildung wird hier wiederholt.
 
-[![Beispiel für die Vorhersage von Arten (wiederholt)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Beispiel für die Vorhersage von Arten (wiederholt).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Hier sind die Ergebnisse, wenn „Hund“ als positive Antwort verwendet wird.
 
@@ -114,9 +114,9 @@ Obwohl die F1-Genauigkeit nicht so einfach zu verstehen ist, fügt sie der Grund
 
 Im Abschnitt [Modellgenauigkeit](#model-accuracy) wurden die folgenden zwei Verwirrungsmatrizen verglichen. Obwohl das erste Modell eine geringere Genauigkeit aufwies, wurde es als nützlicheres Modell angesehen, da es eine größere Verbesserung aufwies als die Standardschätzung einer pünktlichen Zahlung.
 
-![Zahlungsvorhersage gegenüber Ist-Beispiel](media/payment-prediction-matrix.png)
+![Zahlungsvorhersage gegenüber Ist-Beispiel.](media/payment-prediction-matrix.png)
 
-![Beispiel für eine Zahlungsvorhersage mit einer größeren Stichprobe (wiederholt)](media/payment-prediction-matrix-2.png)
+![Beispiel für eine Zahlungsvorhersage mit einer größeren Stichprobe (wiederholt).](media/payment-prediction-matrix-2.png)
 
 Mal sehen, wie sich diese beiden Modelle vergleichen lassen, wenn der F1-Wert verwendet wird. Der F1-Wert berücksichtigt die Präzision und die Erinnerung für jeden Zustand, und die F1-Makroberechnung ermittelt dann den Durchschnitt des F1-Werts über die Zustände, um eine F1-Gesamtwert zu bestimmen. Es gibt andere F1-Varianten, aber es ist von größerem Interesse, die Makroversion zu berücksichtigen, da alle drei Zustände gleichermaßen berücksichtigt werden.
 

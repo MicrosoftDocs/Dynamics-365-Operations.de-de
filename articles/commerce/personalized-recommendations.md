@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dc0fbff437bfa948d70a03479561542106805bdb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b6d68d62636b5750cdcdca3f8ccbe155dc249b72
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804428"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352299"
 ---
 # <a name="enable-personalized-recommendations"></a>Personalisierte Empfehlungen aktivieren
 
@@ -50,7 +50,7 @@ Um die Personalisierung einzuschalten, führen Sie diese Schritte aus.
 1. Wählen Sie die Funktion **Personalisierte Produktempfehlungen** aus.
 1. Wählen sie im Eigenschaftsbereich **Personalisierte Produktempfehlungen** die Option **Jetzt aktivieren** aus.
 
-![Personalisierungen aktivieren](./media/FeatureManagement_Personalized.PNG)
+![Personalisierung aktivieren.](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > Wenn Sie die Personalisierung aktivieren, wird der Prozess zum Generieren personalisierter Produktempfehlungslisten gestartet. Es kann bis zu einem Tag dauern, bis diese Listen online und am POS verfügbar und sichtbar sind.
@@ -73,7 +73,7 @@ Bevor die Liste Tipps für Sie auf einer E-Commerce-Seite angezeigt werden kann,
 
 Die folgende Abbildung zeigt ein Beispiel für eine Liste Tipps für Sie auf einer Online-Shop-Seite.
 
-![Online Tipps für Sie Liste](./media/picksforyou.png)
+![Onlineliste „Tipps für Sie“.](./media/picksforyou.png)
 
 ### <a name="recommended-for-customer-lists-at-the-pos"></a>Empfohlen für Kunden-Listen am POS
 
@@ -81,7 +81,7 @@ Um das Kundenerlebnis zu verbessern, können Einzelhändler vorhandene Kundendet
 
 Die folgende Abbildung zeigt ein Beispiel für eine Liste Tipps für Sie auf einem POS-Terminal.
 
-![Empfohlen für Kunden-Liste am POS](./media/picksonpos.png)
+![Liste „Empfohlen für Kunden“ am POS.](./media/picksonpos.png)
 
 ## <a name="apply-personalization-to-existing-recommendation-lists"></a>Übernehmen Sie die Personalisierung für vorhandene Empfehlungslisten
 
@@ -89,7 +89,7 @@ Einzelhändler können vorhandene Empfehlungslisten wie Neu, Trend, Bestseller, 
 
 Ein angemeldeter Benutzer hat beispielsweise bereits die schwarze Uhr und die braunen Arbeitsstiefel gekauft, die in der Liste Trend – Standard in der folgenden Abbildung aufgeführt sind. Daher werden dem Benutzer anstelle dieser Produkte neue Produkte angezeigt, wie in der Liste Trend – personalisiert gezeigt.
 
-![Personalisierung anwenden](./media/applypersonalization.png)
+![Personalisierung anwenden.](./media/applypersonalization.png)
 
 Gehen Sie folgendermaßen vor, um eine vorhandene Empfehlungsliste in dem Commerce-Site-Generator zu personalisieren.
 
@@ -99,7 +99,7 @@ Gehen Sie folgendermaßen vor, um eine vorhandene Empfehlungsliste in dem Commer
 1. In dem **Produktlistenkonfiguration auswählen** Dialogfeld unter **Typ** wählen Sie den Listentyp.
 1. Wählen Sie das Kontrollkästchen **Personalisierung anwenden** und wählen Sie dann **OK** aus.
 
-    ![Anwenden der Personalisierung auf eine Trendliste](./media/ApplyPersonalizationToTrending.PNG)
+    ![Anwenden der Personalisierung auf eine Trendliste.](./media/ApplyPersonalizationToTrending.PNG)
 
 1. Speichern Sie das Seitenfragment, beenden Sie die Bearbeitung und veröffentlichen Sie sie. Nachdem die Seite veröffentlicht wurde, sehen angemeldete Benutzer personalisierte Trendlisten.
 

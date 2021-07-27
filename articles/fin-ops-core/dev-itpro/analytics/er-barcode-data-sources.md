@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: f72ef77a35c484a40e1384baf69001bba6a333f6
-ms.sourcegitcommit: ec272aa133189569abaf4c09b03230611b5a756f
+ms.openlocfilehash: e0ba43ff1bab391d141f28289144cc552ee28609
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "6274535"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351817"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Verwenden Sie Barcode-Datenquellen, um Barcode-Bilder zu generieren
 
@@ -130,7 +130,7 @@ Laden Sie außerdem die folgende Excel-Datei herunter, die die geänderte Vorlag
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationsanbieter**, ob der [Konfigurationsanbieter](general-electronic-reporting.md#Provider) für das Beispielunternehmen **Litware, Inc.** aufgeführt und als Aktiv markiert ist. Wenn dieser Konfigurationsanbieter nicht aufgeführt oder nicht als Aktiv markiert ist, befolgen Sie die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-![Einstellungen der Beispielfirma auf aktiv setzen auf der Seite „Lokalisierungskonfigurationen“](./media/er-barcode-data-source-active-provider.png)
+![Einstellungen der Beispielfirma auf aktiv setzen auf der Seite „Lokalisierungskonfigurationen“.](./media/er-barcode-data-source-active-provider.png)
 
 ### <a name="import-the-provided-er-solution"></a><a name="ExampleImportSolution"></a>Überprüfen der bereitgestellten EB-Lösung
 
@@ -160,14 +160,14 @@ Laden Sie außerdem die folgende Excel-Datei herunter, die die geänderte Vorlag
 7. Klicken Sie im Aktivitätsbereich auf **Drucktest**.
 8. Stellen Sie im Dialogfeld die Option **Verhandelbares Scheckformat** auf **Ja** und wählen dann **OK**.
 
-    ![Überprüfen Sie das Dialogfeld Layout – Drucktest](./media/er-barcode-data-source-check-layout.png)
+    ![Überprüfen Sie das Dialogfeld Layout – Drucktest.](./media/er-barcode-data-source-check-layout.png)
 
 ### <a name="review-the-generated-payment-check"></a><a name="ExampleReviewGeneratedCheque"></a>Prüfen Sie den generierten Zahlungscheck
 
 - Öffnen Sie den generierten Scheck in Excel.
 2. Generierten Scheck überprüfen.
 
-    ![Öffnen Sie den generierten Scheck in Excel](./media/er-barcode-data-source-cheque1.png)
+    ![Öffnen Sie den generierten Scheck in Excel.](./media/er-barcode-data-source-cheque1.png)
 
 ### <a name="modify-the-format-of-the-provided-er-solution"></a><a name="ExampleModifyFormat"></a>Ändern Sie das Format der bereitgestellten EB-Lösung
 
@@ -175,7 +175,7 @@ Laden Sie außerdem die folgende Excel-Datei herunter, die die geänderte Vorlag
 
 Sie können die Excel-Desktopanwendung verwenden, um die Datei **Scheck-Vorlage Excel.xlsx** zu öffnen, die Sie zuvor importiert haben. Beachten Sie, dass sich diese Vorlage von der Vorlage unterscheidet, mit der Sie in der bereitgestellten EB-Lösung einen Zahlungsscheck erstellt haben. Darüber hinaus enthält es ein Element **AmountBarcode** für das Barcode-Bild.
 
-![AmountBarcode-Element in der Excel-Vorlage](./media/er-barcode-data-source-cheque2.png)
+![AmountBarcode-Element in der Excel-Vorlage.](./media/er-barcode-data-source-cheque2.png)
 
 Sie müssen jetzt die EB-Lösung ändern und dann die geänderte Vorlage [erneut anwenden](modify-electronic-reporting-format-reapply-excel-template.md).
 
@@ -186,7 +186,7 @@ Sie müssen jetzt die EB-Lösung ändern und dann die geänderte Vorlage [erneut
 5. Wählen Sie im EB Vorgangs-Designer die Registerkarte **Zuordnung**. Wählen Sie die Registerkarte auf der rechten Seite der Seite aus, und wählen Sie dann im Formatbaumbereich auf der linken Seite die Option **Aufklappen/reduzieren**.
 6. Beachten Sie, dass alle Zellenformatelemente an die entsprechenden Datenquellen gebunden sind.
 
-    ![Binden von Zellenformatelementen an Datenquellen im EB Vorgangs-Designer](./media/er-barcode-data-source-cells-bound.png)
+    ![Binden von Zellenformatelementen an Datenquellen im EB-Vorgangsdesigner.](./media/er-barcode-data-source-cells-bound.png)
 
 7. Wählen Sie die Registerkarte **Format** auf der rechten Seite.
 8. Wählen Sie im Aktionsbereich die Auslassungspunkte aus (**...**) und wählen Sie dann **Importieren**.
@@ -195,7 +195,7 @@ Sie müssen jetzt die EB-Lösung ändern und dann die geänderte Vorlage [erneut
 11. Wählen Sie im EB Vorgangs-Designer die Registerkarte **Zuordnung**, wählen Sie die Registerkarte auf der rechten Seite der Seite aus, und wählen Sie dann im Formatbaumbereich auf der linken Seite die Option **Aufklappen/reduzieren**.
 12. Beachten Sie, dass das **AmountBarcode** Zellenelement dem Format hinzugefügt wurde. Dieses Element ist dem Element **AmountBarcode** zugeordnet, das der geänderten Excel-Vorlage als Platzhalter für ein Barcode-Bild hinzugefügt wurde.
 
-    ![AmountBarcode-Zellenelement, das dem Format im EB Vorgangs-Designer hinzugefügt wurde](./media/er-barcode-data-source-cell-added.png)
+    ![AmountBarcode-Zellenelement, das dem Format im EB-Vorgangsdesigner hinzugefügt wurde.](./media/er-barcode-data-source-cell-added.png)
 
 #### <a name="add-a-new-barcode-data-source"></a><a name="ExampleModifyFormatAddDataSource"></a>Hinzufügen einer neuen Barcode-Datenquelle
 
@@ -204,14 +204,14 @@ Als nächstes müssen Sie eine neue Datenquelle des Typs **Barcode** hinzufügen
 1. Im EB Vorgangs-Designer auf der Registerkarte **Zuordnung** wählen Sie auf der rechten Seite der Seite die Datenquelle **drucken** aus.
 2. Wählen Sie **Hinzufügen** und dann in der Gruppe **Funktionen** wählen Sie den Datenquellentyp **Barcode**.
 
-    ![Auswahl des Barcode-Datenquellentyps](./media/er-barcode-data-source-add.png)
+    ![Auswahl des Barcode-Datenquellentyps.](./media/er-barcode-data-source-add.png)
 
 3. Geben Sie im Drop-Down-Dialogfeld im Feld **Name** den **Barcode** ein.
 4. Wählen Sie im **Barcode-Format** **Code 128** aus.
 5. Geben Sie im Feld **Breite** den Wert **500** ein.
-6. Wählen Sie **OK**.
+6. Wählen Sie **OK** aus.
 
-    ![Dialogfeld „Datenquelleneigenschaften“](./media/er-barcode-data-source-add2.png)
+    ![Dialogfeld „Datenquelleneigenschaften“.](./media/er-barcode-data-source-add2.png)
 
 #### <a name="bind-a-new-format-element"></a><a name="ExampleModifyFormatBindFormatElement"></a>Binden Sie ein neues Formatelement
 
@@ -222,7 +222,7 @@ Als Nächstes müssen Sie das neue Formatelement an die gerade hinzugefügte Dat
 3. Wählen Sie im Aktivitätsbereich **Details anzeigen** aus.
 4. Beachten Sie, dass, weil die **Barcode** Datenquelle in der Bindung als eine Funktion dargestellt wird, die einen einzelnen Parameter enthält, der Name des gebundenen Formatelements automatisch als Argument für diesen Parameter verwendet wird.
 
-    ![Details zur Barcode-Datenquelle im EB Vorgangs-Designer](./media/er-barcode-data-source-bind1.png)
+    ![Details zur Barcode-Datenquelle im EB-Vorgangsdesigner.](./media/er-barcode-data-source-bind1.png)
 
 5. Wählen Sie **Formel bearbeiten**, um die Bindung anzupassen.
 
@@ -232,7 +232,7 @@ Als Nächstes müssen Sie das neue Formatelement an die gerade hinzugefügte Dat
 7. Schließen Sie die Seite **EB Formulardesigner** und wählen Sie [Speichern](general-electronic-reporting-formula-designer.md) aus.
 8. Beachten Sie, dass die Bindung angepasst wurde.
 
-    ![Angepasste Bindung im EB Vorgangs-Designer](./media/er-barcode-data-source-bind2.png)
+    ![Angepasste Bindung im EB-Vorgangsdesigner.](./media/er-barcode-data-source-bind2.png)
 
 9. Schließen Sie die Seite EB Vorgangsdesigner und wählen Sie **Speichern** aus.
 
@@ -277,7 +277,7 @@ Die Entwurfsversion des ausgewählten Formats wird als verfügbar markiert, wenn
 6. Wählen Sie **OK**.
 7. Generierten Scheck überprüfen. Beachten Sie, dass ein Barcode generiert wurde, um den zu zahlenden Betrag des Schecks zu codieren.
 
-    ![Generierter Zahlungsscheck mit Barcode in Excel](./media/er-barcode-data-source-cheque3.png)
+    ![Generierter Zahlungsscheck mit Barcode in Excel.](./media/er-barcode-data-source-cheque3.png)
 
 > [!IMPORTANT]
 > Eine Ausnahme wird ausgelöst, wenn das Argument von einer **Barcode** Datenquelle nicht den entsprechenden Anforderungen entspricht, die für das Barcode-Format spezifisch sind. Zum Beispiel, wenn die **Barcode** Datenquelle aufgerufen wird, um einen Barcode [EAN-8](https://wikipedia.org/wiki/EAN-8) für den bereitgestellten Text zu erstellen, wird eine Ausnahme ausgelöst, wenn die Länge des Textes sieben Zeichen überschreitet.
@@ -288,7 +288,7 @@ Wie im Thema [Generieren Sie druckbare FTI-Formulare](er-generate-printable-fti-
 
 Wenn Sie jedoch die Datenquelle **Barcode** verwenden, um Barcodes zu erstellen, hängt das Rendern dieser Barcodes von keiner Schriftart ab. Daher können Sie Dokumente, die Barcodes enthalten, problemlos in das PDF-Format konvertieren. Die folgende Abbildung zeigt die Vorschau eines generierten Zahlungsschecks [umgewandelt](electronic-reporting-destinations.md#OutputConversionToPDF) zu einem PDF, basierend auf der Einstellung der konfigurierten EB [Ziel](electronic-reporting-destinations.md).
 
-![Vorschau des PDF eines Zahlungsschecks](./media/er-barcode-data-source-cheque4.png)
+![Vorschau des PDF eines Zahlungsschecks.](./media/er-barcode-data-source-cheque4.png)
 
 ## <a name="limitations"></a>Einschränkungen
 
