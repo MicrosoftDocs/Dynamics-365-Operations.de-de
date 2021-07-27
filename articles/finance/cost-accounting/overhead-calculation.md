@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 09d4516c40833771d27db13eac8228bd8c5e0e4a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187996"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355034"
 ---
 # <a name="overhead-calculation"></a>Gemeinkostenberechnung
 
@@ -48,7 +48,7 @@ Gemeinkostenberechnung wird in der Kostenrechnungsmethoden in der korrekten Reih
 
 Die Gemeinkostenberechnung wird unabhängig von der Version ausgeführt. Daher können Sie die Budgetversion vor der tatsächlichen Version berechnen. Gemeinkostenberechnung besteht aus vier Schritten, wie in der folgenden Abbildung dargestellt. In jedem Schritt wird ein Erfassungskopf erstellt, der Journaleinträge hat. Dieser Erfassungskopf führt die Eingabedaten für jeden Berechnungsschritt aus. Richtlinien und Regeln werden für jede Erfassungsposition übernommen, und Kosteneinträge werden generiert. Deshalb ist die Nachweisbarkeit immer gegeben. 
 
-[![Gemeinkostenberechnung](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![Gemeinkostenberechnung.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Berechnen Sie die Elektrizitäts-Gemeinkosten und weisen Sie diese zu
 In der Finanzbuchhaltung werden einige Kosten wie Elektrizität als Pauschalbetrag erfasst. Daher wird ein detaillierter Verwaltungseinblick für Kostenrechnung nicht bereitgestellt. In der Kostenrechnung müssen die Kosten die Organisationseinheit durchlaufen, um auf allen Organisationsstufen und Ebenen korrekt dargestellt zu werden. Dieser Fluss muss entweder auf einem genauen Datensatz des Verbrauchs oder einer reellen Bewertung basieren. Im Hauptbuch können Stromkosten wie unten in der Tabelle dargelegt gebucht werden.
@@ -76,7 +76,7 @@ In der Finanzbuchhaltung werden einige Kosten wie Elektrizität als Pauschalbetr
 
 ### <a name="step-1-process-the-cost-behavior-calculation"></a>Schritt 1: Verarbeiten Sie die Kostenverhaltensberechnung
 
-Standardmäßig wenn Einträge mit Kosten von den Daten importiert werden, erhalten Sie die Verhaltensklassifizierung **Nicht klassifiziert** in der Kostenrechnung. Wenn Sie Kostenverhaltensrichtlinienregeln anwenden, können sie die Kosteneinträge entweder als  **Fixkosten** oder **Variable Kosten** neu klassifizieren.
+Standardmäßig wenn Einträge mit Kosten von den Daten importiert werden, erhalten Sie die Verhaltensklassifizierung **Nicht klassifiziert** in der Kostenrechnung. Wenn Sie Kostenverhaltensrichtlinienregeln anwenden, können sie die Kosteneinträge entweder als **Fixkosten** oder **Variable Kosten** neu klassifizieren.
 
 #### <a name="define-the-cost-behavior-rule"></a>Definieren Sie die Kostenverhaltensregel
 
@@ -257,7 +257,7 @@ Die folgende Tabelle zeigt das Ergebnis, wenn Stromverbrauch als Verrechnungsgru
 </tbody>
 </table>
 
-Die fixen Kosten sollten den jeweiligen Kostenträgern gleichmäßig aufgeteilt werden, die Elektrizität verbraucht haben. Sie können dieses Ergebnis erreichen, indem Sie das statistische Dimensionsmitglied in einer Formelverrechnungsgrundlage verwenden: (Elektrizität &gt;0,00) Die folgende Tabelle zeigt das Ergebnis an, wenn Stromverbrauch als Verrechnungsgrundlage für variable Kosten angewendet wird.
+Die fixen Kosten sollten den jeweiligen Kostenträgern gleichmäßig aufgeteilt werden, die Elektrizität verbraucht haben. Sie können dieses Ergebnis erreichen, indem Sie das statistische Dimensionsmitglied in einer Formelverrechnungsgrundlage verwenden: (Elektrizität &gt; 0,00) Die folgende Tabelle zeigt das Ergebnis an, wenn Stromverbrauch als Verrechnungsgrundlage für variable Kosten angewendet wird.
 
 <table>
 <thead>
@@ -618,7 +618,7 @@ Weitere Informationen finden Sie unter [Gemeinkostenberechnung ausführen](cost-
 
 Die Zuteilung wird verwendet, um den Saldo eines Kostenträgers zu anderen Kostenträgern zuweisen, indem eine Verrechnungsgrundlage angewendet wird. Finance unterstützt die gegenseitige Zuordnungsmethode. In der gegenseitigen Zuordnungsmethode werden die gegenseitigen Dienstleistungen, die Unterkostenobjekte austauschen, vollständig berücksichtigt werden. Das System bestimmt automatisch die korrekte Reihenfolge, in der die Zuordnungen ausgeführt werden. Der Saldo eines Kostenträgers wird durch eine einzelne Verrechnungsgrundlage zugewiesen. Zuweisungen für Kostenträgerdimensionen und ihre jeweiligen Mitglieder werden unterstützt. Der Zuweisungsauftrag wird durch die Kostenkontrollsteuereinheit gesteuert. 
 
-[![Reziproke Methode](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Reziproke Methode.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>Kostenzuteilung definieren
 

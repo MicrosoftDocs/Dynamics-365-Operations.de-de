@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7b5f8303ea23f4f38bf27d35de0fa91ab82f4b5b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028106"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354468"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Aufgabenaufzeichnung und Hilfe für Retail Modern POS (MPOS) und Cloud POS
 
@@ -55,14 +55,14 @@ Gehen Sie folgendermaßen vor, um eine neue Erfassung mithilfe der Aufgabenaufze
 1. Starten Sie Retail Modern POS oder Cloud POS, und melden Sie sich an.
 2. Auf der Seite **Einstellungen** im Abschnitt **Aufgabenaufzeichnung** klicken Sie auf **Aufgabenaufzeichnung öffnen**. Der Bereich **Aufgabenaufzeichnung** wird angezeigt. Sie können auf die Schaltfläche **Schließen** (**X**) in der oberen rechten Ecke klicken, um den Bereich **Aufgabenaufzeichnung** zu schließen, bevor Sie eine neue Aufzeichnung beginnen. Wiederholen Sie Schritt 2, um den Bereich erneut zu öffnen.
 
-    [![Aufgabenaufzeichnungsbereich](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
+    [![Aufgabenaufzeichnungsbereich.](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
 3. Geben Sie einen Namen und eine Beschreibung für die Aufzeichnung ein, und klicken Sie dann auf **Starten**. Die Aufzeichnungssitzung beginnt, sobald Sie auf **Starten** klicken.
 
     > [!NOTE]
     > Hinweis: Wenn Sie auf die Schaltfläche **Schließen** (**X**) in der oberen rechten Ecke klicken, während sich die Aufzeichnung in Bearbeitung befindet, wird der Bereich **Aufgabenaufzeichnung** geschlossen, aber die Aufzeichnungssitzung ist noch nicht beendet. Um den Aufgabenaufzeichnungsbereich erneut zu öffnen, klicken Sie auf die Schaltfläche **Hilfe** (Fragezeichen) am oberen Rand des Bildschirms.
     >
-    > [![Fragezeichen](./media/help.jpg)](./media/help.jpg)
+    > [![Fragezeichen.](./media/help.jpg)](./media/help.jpg)
 
 4. Nachdem Sie auf **Starten** klicken, tritt die Aufgabenaufzeichnung in den Aufzeichnungsmodus ein. Der Bereich **Aufgabenaufzeichnung** zeigt Informationen und Steuerelemente an, die dem Aufzeichnungsprozess zugeordnet sind.
 5. Führen Sie die Aktionen aus, die Sie in der Benutzeroberfläche (UI) von Retail Modern POS oder Cloud POS ausführen möchten.
@@ -72,7 +72,7 @@ Gehen Sie folgendermaßen vor, um eine neue Erfassung mithilfe der Aufgabenaufze
 
 Nachdem Sie die Aufzeichnungssitzung beenden, werden mehrere Optionen angezeigt, sodass Sie die Aufzeichnung herunterladen können.
 
-[![Downloadoptionen](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+[![Downloadoptionen.](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
 
 ### <a name="save-to-this-pc"></a>Auf diesem PC speichern
 
@@ -88,7 +88,7 @@ Die Rohdatendatei der Aufzeichnung wird für Entwicklerszenarien nützlich sein,
 
 ## <a name="recording-controls"></a>Aufzeichnungssteuerelemente
 
-[![Aufzeichnungssteuerelemente](./media/controls.jpg)](./media/controls.jpg)
+[![Aufzeichnungssteuerelemente.](./media/controls.jpg)](./media/controls.jpg)
 
 ### <a name="stop"></a>Stopp
 
@@ -117,13 +117,13 @@ Sie können den Beginn und das Ende eines Satzes gruppierter Schritte angeben, i
 
 Eine Anmerkung ist zusätzlicher Text, den Sie einem Schritt in einer Aufzeichnung hinzufügen. Beispielsweise können Sie Anmerkungen verwenden, um dem Benutzer mehr Kontext oder Anweisungen zu erteilen. Sie können Anmerkungen vor oder nach einem Schritt hinzufügen. Sie können eine Anmerkung jedem beliebigen Schritt hinzufügen, indem Sie auf die Schaltfläche **Bearbeiten** (Bleistiftsymbol) auf der rechten Seite des Schrittes klicken.
 
-[![Bearbeitungsschaltfläche für einen Schritt](./media/annotate.jpg)](./media/annotate.jpg)
+[![Bearbeitungsschaltfläche für einen Schritt.](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### <a name="texts-and-notes"></a>Texte und Hinweise
 
 Sie können die Felder **Texte** und **Hinweise** verwenden, um Text hinzuzufügen, der einem Schritt in einem Aufgabenleitfaden zugeordnet werden soll.
 
-[![Text- und Hinweisfelder](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
+[![Text- und Hinweisfelder.](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
 
 #### <a name="text"></a>Text
 
@@ -137,7 +137,7 @@ Text, den Sie in das Feld **Hinweise** eingeben, wird *unter* dem Schritttext im
 
 Damit Ihre eigenen benutzerdefinierten Aufgabenaufzeichnungen im Hilfebereich von Retail Modern POS und Cloud POS angezeigt werden, sodass sie als Text angezeigt werden können, müssen Sie die Aufgabenaufzeichnungen in Ihrer eigenen BPM-Bibliothek speichern und Ihre Hilfesystemparameter so aktualisieren, dass sie auf die BPM-Bibliothek verweisen. Weitere Informationen finden Sie unter [Hilfesystem verbinden.](../fin-ops-core/fin-ops/get-started/help-connect.md). Retail Modern POS und Cloud POS-Hilfe durchsucht LCS in Echtzeit. Es durchsucht alle BPM-Bibliotheken, die in den Commerce-Hilfesystemparametern ausgewählt sind, und zeigt die relevanten Ergebnisse an. Um auf das Menü **Hilfe** zuzugreifen, klicken Sie auf die Schaltfläche **Hilfe** (Fragezeichen) am oberen Rand des Bildschirms, und dann im Suchfeld geben Sie Ihren Prozessname ein und klicken auf die Suchschaltfläche.
 
-[![Schaltfläche "Hilfe"](./media/help.jpg)](./media/help.jpg)
+[![Schaltfläche „Hilfe“.](./media/help.jpg)](./media/help.jpg)
 
 Wenn Sie auf einen Aufgabenleitfaden in den Suchergebnissen klicken, können Sie entweder die Schritte als Hilfethema anzeigen oder die Schritte in ein Word-Dokument exportieren.
 

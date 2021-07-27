@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ed28928b0f07833d5906a68f780e3bb5bbe0bfe9
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 03c9406d295fb0dbd22e8072c2695dbef419b706
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921216"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353539"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Maßeinheitsumrechnungen für Produktvarianten
 
@@ -56,7 +56,7 @@ Führen Sie die folgenden Schritte aus, um einen Produktmaster für die Unterst�
     - **Produkt** – Wenn Sie diesen Wert auswählen, kann eine Einheitenumrechnung für den Produktmaster eingerichtet werden. Diese Einheitenumrechnung wird als Fallback für alle Produktvarianten verwendet, für die keine Einheitenumrechnung definiert ist.
     - **Produktvariante** – Wenn Sie diesen Wert auswählen, kann eine Einheitenumrechnung für eine spezifische Produktvariante eingerichtet werden. Verwenden Sie das Feld **Produktvariante** zur Auswahl der Variante.
 
-    ![Hinzufügen einer neuen Einheitenumrechnung](media/uom-new-conversion.png "Hinzufügen einer neuen Einheitenumrechnung")
+    ![Hinzufügen einer neuen Einheitenumrechnung.](media/uom-new-conversion.png "Hinzufügen einer neuen Einheitenumrechnung")
 
 1. Verwenden Sie die anderen verfügbaren Felder, um Ihre Einheitenumrechnung einzurichten.
 1. Wählen Sie **OK**, um die neue Einheitenumrechnung zu speichern.

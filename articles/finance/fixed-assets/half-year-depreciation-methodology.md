@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: d0e33128c37e970ebf5af87bd601ae30aef96952
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9a8dd3d8c6b92be9f22573f463aa96b13d9e3418
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818582"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355531"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Methodik der Abschreibungskonvention für ein halbes Jahr
 
@@ -36,7 +36,7 @@ Das erste Dienstjahr endet im Dezember 2020, d.h. die fünfjährige Nutzungsdaue
 > Jährliche Abschreibung 50.000/5 = 10.000 monatliche Abschreibung 10.000/12 = 833,33 <br>
 > Abschreibung im ersten Jahr 10.000/2 = 5.000 und die anschließende monatliche Abschreibung 5.000/9 = 555,56
 
-   [![Abschreibungsplan für die Halbjahresabschreibungskonvention](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
+   [![Abschreibungsplan für die Halbjahresabschreibungskonvention.](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 Die verlängerten Abschreibungszeiträume die durch die Halbjahreskonvention hinzugefügt werden, ermöglichen eine genauere Zuordnung der Abschreibungen. Die Sechsmonatsvereinbarung stellt die Abschreibungskosten gleichmäßiger dar, was für die Berichterstattung in der Gewinn- und Verlustrechnung nützlich ist.
 

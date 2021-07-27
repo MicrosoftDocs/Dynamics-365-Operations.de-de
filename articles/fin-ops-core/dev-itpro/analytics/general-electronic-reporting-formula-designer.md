@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dcede0818630329a5608c2d294c9c9f4f749f13
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3cbd4a034b89308c33651c5a923b67bc0eabf413
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750131"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345761"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner in der elektronischen Berichterstellung (EB)
 
@@ -58,11 +58,11 @@ Der EB-Formeldesigner kann verwendet werden, um einen Ausdruck zu definieren, de
 
 Die folgende Abbildung zeigt das Design eines Ausdrucks dieses Typs. In diesem Beispiel wird durch den Ausdruck der Wert des Felds **Intrastat.AmountMST** der Intrastat-Tabelle auf zwei Dezimalstellen gerundet und dann der gerundete Wert zurückgegeben.
 
-[![Datenbindungsausdruck](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
+[![Datenbindungsausdruck.](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
 Die folgende Abbildung zeigt, wie ein Ausdruck dieses Typs verwendet werden kann. In diesem Beispiel wird das Ergebnis des entworfenen Ausdrucks in die Komponente **Transaction.InvoicedAmount** des Datenmodells **Steuererklärungsmodell** eingegeben.
 
-[![Datenbindungausdruck, der verwendet wird](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
+[![Datenbindungausdruck, der verwendet wird.](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
 
 Zur Laufzeit rundet die entworfene Formel `ROUND (Intrastat.AmountMST, 2)` den Wert des Felds **AmountMST** für jeden Datensatz in der Intrastat-Tabelle auf zwei Dezimalstellen. Sie gibt dann den gerundeten Wert in der Komponente **Transaction.InvoicedAmount** des Datenmodells **Steuererklärung** ein.
 
@@ -72,17 +72,17 @@ Der ER-Formeldesigner kann verwendet werden, um einen Ausdruck zu definieren, de
 
 Die folgende Abbildung zeigt das Design einer Umwandlung dieses Typs. In diesem Beispiel kürzt die **TrimmedString**-Tansformation eingehende Daten des Datentyps *Zeichenfolge*, indem führende und nachfolgende Leerzeichen entfernt werden. Sie gibt dann einen gekürzten Zeichenfolgenwert zurück.
 
-[![Umwandlung](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
+[![Transformation.](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
 Die folgende Abbildung zeigt, wie die Umwandlung dieses Typs verwendet werden kann. In diesem Beispiel senden mehrere Formatkomponenten Text als Ausgabe an das generierende elektronische Dokument zur Laufzeit. Alle diese Formatkomponenten verweisen auf die Transformation **TrimmedString** nach Name.
 
-[![Transformation, die verwendet wird](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
+[![Transformation, die verwendet wird.](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
 
 Wenn Formatkomponenten, wie beispielsweise die Komponente **partyName** in der vorausgehenden Abbildung, auf die Transformation **TrimmedString** verweisen, übermittelt die Transformation Text als Ausgabe an das generierende elektronische Dokument. Dieser Text umfasst keine vor- und nachgestellten Leerzeichen.
 
 Wenn Sie eine Formatierung haben, die einzeln angewendet werden muss, kann sie als einzelner Ausdruck der Bindung einer bestimmten Formatkomponente eingeführt werden. Die folgende Abbildung zeigt einen Ausdruck dieses Typs. In diesem Beispiel wird die Formatkomponente **partyType** an die Datenquelle über einen Ausdruck gebunden, der die eingehenden Daten aus dem Feld **Model.Company.RegistrationType** in der Datenquelle in Text in Großbuchstaben konvertiert. Der Ausdruck sendet dann diesen Text als Ausgabe an das elektronische Dokument.
 
-[![Anwenden der Formatierung auf eine einzelne Komponente](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+[![Anwenden der Formatierung auf eine einzelne Komponente.](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ## <a name="process-flow-control"></a><a name="Validation"></a>Prozessflusssteuerung
 
@@ -98,7 +98,7 @@ Jede Regel der Prozessflusssteuerung ist als einzelne Prüfung entworfen. Die fo
 - Wenn die Transaktionsliste leer ist, stoppt die Überprüfung den Ausführungsprozess und gibt **FALSCH** zurück.
 - Die Prüfung gibt eine Fehlermeldung zurück, der den Text der Beschriftung SYS70894 in der bevorzugten Sprache des Benutzers umfasst.
 
-[![Überprüfung](./media/picture-validation.jpg)](./media/picture-validation.jpg)
+[![Prüfung.](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
 Der EB-Formeldesigner wird auch verwendet, um einen Dateinamen für ein generierendes elektronisches Dokument zu generieren und den Dateierstellungsprozess zu steuern. Die folgende Abbildung zeigt das Design einer Prozessablaufsteuerung dieses Typs. Ist hier eine Erläuterung der Konfiguration in diesem Beispiel:
 
@@ -107,7 +107,7 @@ Der EB-Formeldesigner wird auch verwendet, um einen Dateinamen für ein generier
 - Ein Ausdruck gibt einen Dateinamen für das Generieren von elektronischen Dokumenten zurück, indem er den Dateinamen und die Dateinamenerweiterung verkettet. Für die zweite und alle nachfolgenden Chargen enthält der Dateiname die Chargenkennung als Suffix.
 - Ein Ausdruck aktiviert (durch Rückgabe von **WAHR**) den Dateierstellungsprozess für Chargen, die mindestens einen Datensatz beinhalten.
 
-[![Prozessflusssteuerung](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+[![Prozessflusssteuerung.](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
 ## <a name="document-content-control"></a><a name="Enabled"></a>Inhaltskontrolle von Dokumenten
 
@@ -116,23 +116,23 @@ Der EB-Formeldesigner kann verwendet werden, um Ausdrücke zu konfigurieren, die
 - Wenn die Bedingung **True** zurückgibt, wird das aktuelle Formatelement ausgeführt.
 - Wenn die Bedingung **False** zurückgibt, wird das aktuelle Formatelement übersprungen.
 
-Die folgende Abbildung zeigt Ausdrücke dieses Typs. (Version 11.12.11 der Formatkonfiguration **ISO20022 Kreditübertragung (NO)**, die von Microsoft bereitgestellt wird, wird als Beispiel verwendet.) Die Formatkomponente **XMLHeader** ist so konfiguriert, dass sie die Struktur der Kreditübertragungsnachricht gemäß den XML-Nachrichtenstandards von ISO 20022 beschreibt. Die **XMLHeader/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd Dokument** Formatkomponente wird konfiguriert, um das **Ustrd** XML-Element zur generierten Nachricht hinzuzufügen und die Überweisungsinformationen in einem unstrukturierten Format als Text der folgenden XML-Elemente zu platzieren:
+Die folgende Abbildung zeigt Ausdrücke dieses Typs. (Version 11.12.11 der Formatkonfiguration **ISO20022 Kreditübertragung (NO)**, die von Microsoft bereitgestellt wird, wird als Beispiel verwendet.) Die Formatkomponente **XMLHeader** ist so konfiguriert, dass sie die Struktur der Kreditübertragungsnachricht gemäß den XML-Nachrichtenstandards von ISO 20022 beschreibt. Die **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** Formatkomponente wird konfiguriert, um das **Ustrd** XML-Element zur generierten Nachricht hinzuzufügen und die Überweisungsinformationen in einem unstrukturierten Format als Text der folgenden XML-Elemente zu platzieren:
 
 - Die Komponente **PaymentNotes** wird verwendet, um den Text von Zahlungshinweisen zu generieren.
 - Die Komponente **DelimitedSequence** generiert kommagetrennte Rechnungsnummern aus, die zur Abrechnung der aktuellen Überweisung verwendet werden.
 
-[![Komponenten PaymentNotes und DelimitedSequence](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+[![Komponenten PaymentNotes und DelimitedSequence.](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
 
 > [!NOTE]
 > Die Komponenten **PaymentNotes** und **DelimitedSequence** werden mithilfe eines Fragezeichens gekennzeichnet. Ein Fragezeichen zeigt an, dass die Verwendung einer Komponente an Bedingungen geknüpft ist. In diesem Fall basiert die Verwendung der Komponenten auf den folgenden Kriterien:
 >
 > - Der Ausdruck `@.PaymentsNotes <> ""`, der für die Komponente **PaymentNotes** (durch Zurückgeben von **TRUE**) definiert wird, ermöglicht, dass das **Ustrd** XML-Element mit dem Text zu Zahlungshinweisen ausgefüllt wird, wenn dieser Text für die aktuelle Überweisung nicht leer ist.
 >
->    [![Ausdruck für die PaymentNotes-Komponente](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+>    [![Ausdruck für die PaymentNotes-Komponente.](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
 >
 > - Der für die Komponente **DelimitedSequence** definierte Ausdruck `@.PaymentsNotes = ""` ermöglicht (durch Zurückgeben von **TRUE**) die Auffüllung des **Ustrd**-XML-Elements mit einer durch Kommata getrennten Liste mit Rechnungsnummern, die zur Abrechnung der aktuellen Überweisung verwendet werden, wenn der Text dieser Zahlungshinweise für diese Überweisung leer ist.
 >
->    [![Ausdruck für die DelimitedSequence-Komponente](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+>    [![Ausdruck für die DelimitedSequence-Komponente.](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
 > 
 > Basierend auf dieser Einstellung, die für jede Debitorenzahlung generiert wird, enthält das **Ustrd** XML-Element entweder den Text von Verwendungszwecken oder, wenn dieser Text leer ist, eine durch Kommata getrennte Liste mit Rechnungsnummern, die zur Begleichung dieser Zahlung verwendet werden.
 
@@ -140,7 +140,7 @@ Die folgende Abbildung zeigt Ausdrücke dieses Typs. (Version 11.12.11 der Forma
 
 Wählen Sie auf der Seite **Formel-Designer** die Option **Test** aus, um zu überprüfen, wie die konfigurierte Formel funktioniert.
 
-[![Wählen Sie Test, um eine Forumula zu validieren](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
+[![Wählen Sie Test, um eine Formel zu validieren.](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
 
 Wenn die Werte von Formelargumenten erforderlich sind, können Sie das Dialogfeld **Testausdruck** über die Seite **Formel-Designer** öffnen. In den meisten Fällen müssen diese Argumente manuell definiert werden, da die konfigurierten Bindungen zur Entwurfszeit nicht ausgeführt werden. Die Registerkarte **Testergebnis** auf der Seite **Formel-Designer** zeigt das Ergebnis der Ausführung der konfigurierten Formel an.
 
@@ -148,15 +148,15 @@ Das folgende Beispiel zeigt, wie Sie die für die Außenhandelsdomäne konfiguri
 
 Wenn Sie diese Formel testen, können Sie das Dialogfeld **Testausdruck** verwenden, um den Wert des Intrastat-Warencodes zum Testen anzugeben.
 
-[![Angabe des Intrastat-Warencodes zum Testen](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
+[![Angabe des Intrastat-Warencodes zum Testen.](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
 
 Nachdem Sie den Intrastat-Warencode angegeben und **OK** ausgewählt haben, wird auf der Registerkarte **Testergebnis** auf der Seite **Formel-Designer** das Ergebnis der Ausführung der konfigurierten Formel angezeigt. Sie können dann bewerten, ob das Ergebnis akzeptabel ist. Wenn das Ergebnis nicht akzeptabel ist, können Sie die Formel aktualisieren und erneut testen.
 
-[![Testergebnis](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
+[![Testergebnis.](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
 
 Einige Formeln können zur Entwurfszeit nicht getestet werden. Beispielsweise kann eine Formel ein Ergebnis eines Datentyps zurückgeben, der auf der Registerkarte **Testergebnis** nicht angezeigt werden kann. In diesem Fall erhalten Sie eine Fehlermeldung, die besagt, dass die Formel nicht getestet werden kann.
 
-[![Fehlermeldung](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
+[![Fehlermeldung.](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

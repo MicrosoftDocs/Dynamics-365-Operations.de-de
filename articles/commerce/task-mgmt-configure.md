@@ -13,12 +13,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 742d49b1b7b46952d0a8bb6c8a33cde2a35d124f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1abcc4befd1277d7f08d3dfa89cb76b0ee4a6178
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791701"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354564"
 ---
 # <a name="configure-task-management"></a>Aufgabenverwaltung konfigurieren
 
@@ -44,7 +44,7 @@ Führen Sie die folgenden Schritte aus, um Aufgabenverwaltungsberechtigungen fü
 
 Die folgende Abbildung zeigt, wie Sie Aufgabenverwaltungsberechtigungen für Filialleiter konfigurieren können.
 
-![Konfigurieren von Aufgabenverwaltungsberechtigungen für Filialleiter](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Konfigurieren von Aufgabenverwaltungsberechtigungen für Filialleiter.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Konfigurieren Sie Berechtigungen für Mitarbeiter
 
@@ -78,7 +78,7 @@ Um POS-Benachrichtigungen für Aufgaben zu konfigurieren, führen Sie folgende S
 
 Die folgende Abbildung zeigt die Operation **Aufgabenverwaltung** auf der Seite **POS-Operationen**.
 
-![Vorgang der Aufgabenverwaltung auf der Seite POS-Operationen](media/HQ-POS-Tasks-Notifications.png)
+![Vorgang der Aufgabenverwaltung auf der Seite POS-Operationen.](media/HQ-POS-Tasks-Notifications.png)
 
 Weitere Informationen über die Konfiguration von POS-Benachrichtigungen finden Sie unter [Bestellbenachrichtigungen in der Verkaufsstelle (POS)](notifications-pos.md) anzeigen.
 
@@ -95,11 +95,11 @@ Um die Kachel **Aufgaben** auf der Homepage einer POS-Anwendung zu konfigurieren
 
 Die folgende Abbildung zeigt ein Beispiel für eine Kachel **Aufgaben** auf einer POS-Homepage.
 
-![Aufgaben-Kachel auf einer POS-Homepage](media/POS-home-screen-tasks-button-image.png)
+![Aufgaben-Kachel auf einer POS-Homepage.](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über die Aufgabenverwaltung](task-mgmt-overview.md)
+[Aufgabenverwaltung – Übersicht](task-mgmt-overview.md)
 
 [Aufgabenlisten erstellen und Aufgaben hinzufügen](task-mgmt-create-lists.md)
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 8342afefa6eeda3a53decb39caddb62d1e4e1963
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: af8cd65565a50341b0bf2dba84204d010486532c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270860"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350449"
 ---
 # <a name="delivery-options-module"></a>Lieferoptionenmodul
 
@@ -29,7 +29,7 @@ Dieses Thema enthält Beschreibungen der Lieferoptionsmodule und Erklärungen zu
 
 Mit den Versandoptionsmodulen können Kunden eine Versandart auswählen, z. B. Versand oder Abholung für ihre Online-Bestellung. Eine Lieferadresse ist erforderlich, um die Lieferart zu bestimmen. Wenn sich die Versandadresse ändert, müssen die Lieferoptionen erneut abgerufen werden. Wenn ein Auftrag nur Artikel enthält, die in einem Shop abgeholt werden, wird dieses Modul automatisch ausgeblendet.
 
-Informationen zum Konfigurieren der Lieferarten finden Sie unter [Online-Kanaleinrichtung ](channel-setup-online.md)und [Zustellungsmodi einrichten](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+Informationen zum Konfigurieren der Lieferarten finden Sie unter [Online-Kanaleinrichtung](channel-setup-online.md) und [Zustellungsmodi einrichten](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Den einzelnen Lieferarten können jeweils Gebühren zugeordnet sein. Weitere Informationen zum Konfigurieren von Gebühren für einen Online-Shop finden Sie unter [Erweiterte automatische Omni-Channel-Belastungen](omni-auto-charges.md).
 
@@ -37,11 +37,11 @@ In der Commerce Version 10.0.13 wurde das Lieferoptionsmodul aktualisiert, damit
 
 Das Fabrikam-Design unterstützt eine gemischte Lieferart, bei der einige Artikel für den Versand ausgewählt werden, andere jedoch für die Abholung. In diesem Modus werden die Versandkosten für alle Artikel anteilig berechnet, die für die Lieferart ausgewählt wurden. Damit eine gemischte Lieferart funktioniert, müssen Sie zuerst die Funktion **Kopfzuschläge ohne Verrechnung** in der Commerce-Zentralverwaltung konfigurieren. Weitere Informationen zu dieser Konfiguration finden Sie unter [Kopfbelastungen auf übereinstimmende Verkaufspositionen aufteilen](pro-rate-charges-matching-lines.md).
 
-Wenn für Positionen Versandkosten anfallen, können diese für jeden Artikel in der Warenkorbposition angezeigt werden. Diese Funktionalität erfordert, dass die Eigenschaft **Versandkosten für Positionen anzeigen** für das Warenkorbmodul und das Checkout-Modul aktiviert ist. Weitere Informationen finden Sie unter [Einkaufswagenmodul ](add-cart-module.md)und [Checkout-Modul ](add-checkout-module.md).
+Wenn für Positionen Versandkosten anfallen, können diese für jeden Artikel in der Warenkorbposition angezeigt werden. Diese Funktionalität erfordert, dass die Eigenschaft **Versandkosten für Positionen anzeigen** für das Warenkorbmodul und das Checkout-Modul aktiviert ist. Weitere Informationen finden Sie unter [Einkaufswagenmodul](add-cart-module.md) und [Checkout-Modul](add-checkout-module.md).
 
 Das folgende Bild zeigt ein Beispiel eines Lieferoptionsmoduls auf einer Checkout-Seite.
 
-![Beispiel eines Lieferoptionsmoduls auf einer Checkout-Seite](./media/ecommerce-deliveryoptions.PNG)
+![Beispiel eines Lieferoptionsmoduls auf einer Checkout-Seite.](./media/ecommerce-deliveryoptions.PNG)
 
 ## <a name="delivery-options-module-properties"></a>Lieferoptionsmoduleigenschaften
 
@@ -54,7 +54,7 @@ Das folgende Bild zeigt ein Beispiel eines Lieferoptionsmoduls auf einer Checkou
 
 ## <a name="add-a-delivery-options-module-to-a-checkout-page-and-set-the-required-properties"></a>Fürgen Sie ein Lieferoptionsmodul in eine Checkout-Seite ein und bestimmen Sie die erforderlichen Eigenschaften
 
-Ein Lieferoptionsmodul kann nur zu einem Auschecken-Modul hinzugefügt werden. Weitere Informationen zum Konfigurieren des Lieferoptionsmoduls und zum Hinzufügen zu einer Checkout-Seite finden Sie unter [Checkout-Modul ](add-checkout-module.md).
+Ein Lieferoptionsmodul kann nur zu einem Auschecken-Modul hinzugefügt werden. Weitere Informationen zum Konfigurieren des Lieferoptionsmoduls und zum Hinzufügen zu einer Checkout-Seite finden Sie unter [Checkout-Modul](add-checkout-module.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

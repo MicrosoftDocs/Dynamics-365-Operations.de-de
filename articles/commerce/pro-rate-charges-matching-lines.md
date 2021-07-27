@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: c36948cc58291b56c1bbe8a3d5c3db52dccc8399
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: cca35be696c8dd9956176e54e77a60f0252e0760
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018605"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352179"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Kopfzuschläge auf entsprechende Bestellpositionen aufteilen
 
@@ -56,9 +56,9 @@ Dieses Szenario definiert das Verhalten, wenn die Option **Kopfzuschläge auf en
 
 In diesem Szenario hat die Organisation Belastungen auf Kopfebene für die Lieferartbeziehung **99** und Lieferartbeziehung **11** definiert. Es sind keine Auto-Belastungen für Lieferart **21** definiert.
 
-![Auto-Belastungen für Lieferart 99, wenn die entsprechende Zeilenverrechnung deaktiviert ist](media/99_disabled.png)
+![Auto-Belastungen für Lieferart 99, wenn die entsprechende Zeilenverrechnung deaktiviert ist.](media/99_disabled.png)
 
-![Auto-Belastungen für Lieferart 11, wenn die entsprechende Zeilenverrechnung deaktiviert ist](media/11_disabled.png)
+![Auto-Belastungen für Lieferart 11, wenn die entsprechende Zeilenverrechnung deaktiviert ist.](media/11_disabled.png)
 
 Ein Auftrag wird im Callcenter erstellt, und die Lieferart wird auf **99** festgelegt. Dieser Auftrag enthält fünf Artikel. Zwei Auftragspositionen wurde konfiguriert, um Lieferart **99** zu verwenden, zwei Positionen wurden konfiguriert, um Lieferart **11** zu verwenden, und eine Position wurde konfiguriert, um Lieferart **21** zu verwenden, wie in der folgenden Tabelle dargestellt.
 
@@ -78,9 +78,9 @@ In diesem Szenario wird bei einer Rücksendung einiger Artikel des Auftrags und 
 
 In diesem Szenario sind Belastungen auf Kopfebene für die Lieferartbeziehung **99** und Lieferartbeziehung **11** definiert. Allerdings wird die Option **Kopfzuschläge auf entsprechende Bestellpositionen aufteilen** für diese Auto-Belastungstabellen auf **Ja** festgelegt.
 
-![Auto-Belastungen für Lieferart 99, wenn die entsprechende Zeilenverrechnung aktiviert ist](media/99_enabled.png)
+![Auto-Belastungen für Lieferart 99, wenn die entsprechende Zeilenverrechnung aktiviert ist.](media/99_enabled.png)
 
-![Auto-Belastungen für Lieferart 11, wenn die entsprechende Zeilenverrechnung aktiviert ist](media/11_enabled.png)
+![Auto-Belastungen für Lieferart 11, wenn die entsprechende Zeilenverrechnung aktiviert ist.](media/11_enabled.png)
 
 Dieses Szenario verwendet denselben Auftrag, der fünf Positionen enthält. Die Lieferart im Auftragskopf wird auf **99** festgelegt, aber die Lieferart für jeden Artikel im Auftrag wird wie in der nachstehenden Tabelle gezeigt konfiguriert.
 
@@ -130,9 +130,9 @@ Da die Auto-Belastungskonfiguration festgelegt wird, um die entsprechenden Verka
     - Gesamt-Handelsproduktwert = $15
     - **Belastungswert = $0** (Keine Auto-Belastungen sind für diese Kombination aus Debitor und die Lieferart konfiguriert.)
 
-    ![Belastungen im Liefermodus 11 liegen in die hervorgehobenen Ebene](media/step2mode11.png)
+    ![Belastungen im Liefermodus 11 liegen in die hervorgehobenen Ebene.](media/step2mode11.png)
 
-    ![Belastungen im Liefermodus 99 liegen in die hervorgehobenen Ebene](media/step2mode99.png)
+    ![Belastungen im Liefermodus 99 liegen in die hervorgehobenen Ebene.](media/step2mode99.png)
 
 3. Das System berechnet den Belastungswert, der auf jede Position angewendet werden soll, basierend auf der Verrechnungslogik, die den proportionalen Wert der Position im Verhältnis zum gesamten Produktwert der Gruppe berücksichtigt.
 
@@ -163,7 +163,7 @@ Da die Auto-Belastungskonfiguration festgelegt wird, um die entsprechenden Verka
 
 Daher wird für dieses Beispiel Artikel 81334 eine Frachtkostenbelastung von $5,62 zugewiesen. Diese Belastungen können Sie auf der Seite **Belastungen verwalten** für die Auftragsposition anzeigen. Die folgende Abbildung zeigt, wie die Seite für Artikel 81334 aussieht.
 
-![Verrechnete Belastungen für Verkaufsposition für Artikel 81334](media/proratedlinecharge.png)
+![Verrechnete Belastungen für Verkaufsposition für Artikel 81334.](media/proratedlinecharge.png)
 
 Wenn diese Berechnungsmethode in einem teilweisen Rückerstattungsszenario verwendet wird und der Belastungscode rückvergütbar ist, wird nur der Teil der Belastung, der dieser Position zugewiesen ist, erstattet, wenn der Artikel zurückgegeben wird.
 

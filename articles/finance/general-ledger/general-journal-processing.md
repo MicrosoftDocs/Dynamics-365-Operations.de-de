@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76dbf5f8f2fc3b33077d559ffcef580a5295adb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 59dda2207f002402f5153f9c77206b6c644f2679
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815571"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352857"
 ---
 # <a name="general-journal-processing"></a>Allgemeine Erfassungsverarbeitung
 
@@ -42,14 +42,14 @@ Auf der Seite **Journale** können Sie folgende Elemente einrichten:
 
 Ein Journal kann nur für Regulierungen verwendet werden. In diesem Fall können Sie angeben, dass nur die **Sachkonto**-Kontenart für alle Unternehmen gültig ist. 
 
-[![Erfassungssteuerungs-Kontotypen](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Erfassungssteuerungs-Kontotypen.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 Ein Journal kann nur für ein bestimmtes Segment oder für einen Bereich für Hauptkonten verwendet werden. 
 
-[![Erfassungssteuerungssegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Erfassungssteuerungssegment.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Die Option **Automatische Rückbuchung** ist nur in allgemeinen Erfassungen verfügbar. Beispiel: Sie haben eine Abgrenzungsregulierung, in der das eigentliche Dokument noch nicht verarbeitet wurde, wie in der folgenden Abbildung dargestellt.
-[![Erfassungsrücksetzung](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Erfassungsrücksetzung.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 Das Microsoft Excel-Add-in für Journaleinträge bietet eine weitere Ebene der Automatisierung und erleichtert die Dateneingabe. Die **Positionen in Excel öffnen**-Aktivität ist auf den Seiten **Allgemeine Erfassung** und **Alle Journale** verfügbar. 
 
@@ -79,7 +79,7 @@ Die Hauptkontoeinstellung stellt viele Optionen zum Verarbeiten der allgemeinen 
 
 ### <a name="accounting-structures-and-advanced-rules-structures"></a>Buchhaltungsstrukturen und Strukturen für erweiterte Regeln
 
-Buchhaltungsstrukturen und Strukturen für die erweiterten Regeln sind sehr wichtig, um sicherzustellen, dass die Daten, die für die Finanzberichterstellung und die Leistungsnachverfolgung erforderlich sind, während der allgemeinen Erfassungsverarbeitung und in allen Dokumentationen erfasst werden. Mit Buchhaltungsstrukturen und Strukturen für erweiterten Regeln können Sie die Dateneingabeerfahrung anpassen. Sie können die Dateneingabe nur für Finanzdimensionen zulassen, die in jeder Situation relevant sind. Sie können auch die Anforderung erzwingen, dass die erforderlichen und korrekte  Daten immer erfasst werden.
+Buchhaltungsstrukturen und Strukturen für die erweiterten Regeln sind sehr wichtig, um sicherzustellen, dass die Daten, die für die Finanzberichterstellung und die Leistungsnachverfolgung erforderlich sind, während der allgemeinen Erfassungsverarbeitung und in allen Dokumentationen erfasst werden. Mit Buchhaltungsstrukturen und Strukturen für erweiterten Regeln können Sie die Dateneingabeerfahrung anpassen. Sie können die Dateneingabe nur für Finanzdimensionen zulassen, die in jeder Situation relevant sind. Sie können auch die Anforderung erzwingen, dass die erforderlichen und korrekte Daten immer erfasst werden.
 
 Weitere Informationen finden Sie in folgenden Themen:
 - [Kontenplan planen](plan-chart-of-accounts.md) 

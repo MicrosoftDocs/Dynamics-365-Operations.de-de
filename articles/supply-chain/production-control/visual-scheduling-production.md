@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 143aa5c3ba4d6064cde63f8e7ebeac0977b1325c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 97fc3c6bd096854b5aa72980dd2bd6f3a8a1ef9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908705"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353419"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Verwenden eines Gantt-Diagramms für die Feinterminierung
 
@@ -45,10 +45,10 @@ Das Gantt-Diagramm kann in zwei unterschiedlichen Ansichten geöffnet werden, **
 
 ## <a name="order-view"></a>Auftragsansicht
 
-[![Auftragsansicht](./media/orderview.png)](./media/orderview.png)
+[![Auftragsansicht.](./media/orderview.png)](./media/orderview.png)
 
 ## <a name="resource-view"></a>Ressourcenansicht
-[![Ressourcenansicht](./media/resview.png)](./media/resview.png)
+[![Ressourcenansicht.](./media/resview.png)](./media/resview.png)
 
 ## <a name="activities"></a>Aktivitäten
 Die Aktivitäten werden als Striche angezeigt und sind in einem Zeitskalaraster mit einer geplanten Start- und Endzeit organisiert und treffen die Länge für die Abwicklung, die sich auf die Zeit bezieht, die erforderlich ist, um die Aktivität zu beenden. Die Aktivitäten werden entsprechend einer Zeitskala angezeigt. Sie können die Zeitskala im Menü, wo Sie ein Start- und ein Enddatum und eine Zeiteinheit, beispielsweise, Stunden oder Tagen auswählen. Durch das Anpassen der Zeitskala können Sie das Ziel in einem Zeitintervall festlegen, in dem Sie Aktivitäten verwalten möchten. 
@@ -102,25 +102,25 @@ Es ist nicht möglich, einen Einzelvorgang außerhalb des definierten Zeitinterv
 
 In einem Netzwerk von Aktivitäten, wie Einzelvorgänge, die demselben Produktionsauftrag angehören, können Sie die Funktion **Vorherige Einzelvorgänge planen** verwenden, um vorherige Einzelvorgänge eines ausgewählten Einzelvorgangs im Netzwerk zu planen. Im folgenden Beispiel ist die markierte Aktivität der ausgewählte Einzelvorgang. Das Diagramm wird angezeigt, bevor ein vorheriger Einzelvorgang geplant wird und nachdem der vorherige Einzelvorgang geplant wird. 
 
-[![Vorherigen Einzelvorgang planen](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Vorherigen Einzelvorgang planen.](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### <a name="schedule-next-jobs"></a>Nächste Einzelvorgänge planen
 
 Sie können die Funktion **Nächste Einzelvorgänge planen** verwenden, um die folgenden Stellen in einem ausgewählten Einzelvorgang in einem Netzwerk von Aktivitäten zu planen. Im folgenden Beispiel ist die markierte Aktivität der ausgewählte Einzelvorgang. Das Diagramm wird angezeigt, bevor der nächste Einzelvorgang geplant wird und nachdem der nächste Einzelvorgang geplant wird. 
 
-[![Nächsten Einzelvorgang planen](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Nächsten Einzelvorgang planen.](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### <a name="schedule-around-job"></a>Um Einzelvorgang herum planen
 
 Sie können die Funktion **Nächste Einzelvorgänge planen** verwenden, um die folgenden Stellen in einem ausgewählten Einzelvorgang in einem Netzwerk von Aktivitäten zu planen. Im folgenden Beispiel ist die markierte Aktivität der ausgewählte Einzelvorgang. Das Diagramm wird angezeigt, bevor ein Einzelvorgang geplant wird und nachdem der Einzelvorgang geplant wird. 
 
-[![Um Einzelvorgang herum planen](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Um Einzelvorgang herum planen.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### <a name="arrange-jobs"></a>Einzelvorgänge anordnen
 
 Sie können die Funktion **Anordnen** verwenden, um die ausgewählten Aktivitäten auf der gleichen Ressource anzuordnen. Diese Aktivitäten werden im gleichen Netzwerk von Aktivitäten sein, können aber auch verschiedenen Netzwerken angehören. Wenn Sie die Anordnensfunktion verwenden, werden die Zeitlücken zwischen den ausgewählten Aktivitäten gelöscht. Sie können diese Funktion verwenden, um die Kapazitätsauslastung der Ressourcen zu optimieren. Das Diagramm wird angezeigt, bevor ein Einzelvorgang geplant wird und nachdem der Einzelvorgang geplant wird. 
 
-[![Einzelvorgang anordnen](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Einzelvorgang anordnen.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### <a name="reassign-activities-from-one-resource-to-another"></a>Einzelvorgänge zwischen Ressourcen neu zuweisen
 

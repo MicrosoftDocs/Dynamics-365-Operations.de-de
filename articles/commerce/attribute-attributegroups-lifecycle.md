@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dce26087a81e38c5618b07a9341fee195e3c98c9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936803"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346803"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Attribute und Attributgruppen verwalten
 
@@ -70,7 +70,7 @@ Attribute basieren auf *Attributtypen*. Der Attributtyp identifiziert die Art vo
     - Nennen Sie einen Attributtyp **Objektivform** und fügen Sie die folgenden Werte hinzu: **Oval**, **Quadrat** und **Rechteck**.
     - Nennen Sie den anderen Attributtyp **Sonnenbrillen-Marke** und fügen die folgenden Werte hinzu: **Rayban**, **Flieger** und **Oakley**.
 
-![Attributtypen](media/AttributeType.png)
+![Attributtypen.](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>Ein Attribut einrichten
 
@@ -79,7 +79,7 @@ Attribute basieren auf *Attributtypen*. Der Attributtyp identifiziert die Art vo
 3. Erstellt ein Attribut mit der Bezeichnung **Objektiv**.
 4. Legt das Feld **Attributtyp** auf **Objektivform** fest.
 
-![Attribute](media/Attribute.png)
+![Attribute.](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>Attributmetadaten
 
@@ -134,7 +134,7 @@ Die Seite **Filteranzeigeneinstellungen** enthält die folgenden Felder:
     - 200 – 500
     - 500 oder mehr
 
-![Attributfiltereinstellungen](media/AttributeFilterSettings.PNG)
+![Attributfiltereinstellungen.](media/AttributeFilterSettings.PNG)
 
 ## <a name="attribute-groups"></a>Attributgruppen
 
@@ -142,7 +142,7 @@ Nachdem Attribute definiert wurden, können sie den Attributgruppen zugewiesen w
 
 Sie können Standardwerte für Attribute auch festlegen, die in einer Attributgruppe enthalten sind. So fügen Sie ein Attribut für Farbe einer Attributgruppe hinzu und wählen **Blau** als standardmäßigen Attributwert aus. In diesem Fall, wenn die Attributgruppe zu einem Produkt hinzugefügt wird, das als Farbe eines der Attribute enthält, erscheint **Blau** als die Standardfarbe für dieses Produkt.
 
-![Attributgruppen](media/AttributeGroup.png)
+![Attributgruppen.](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>Eine Attributgruppe erstellen
 
@@ -155,7 +155,7 @@ Sie können Standardwerte für Attribute auch festlegen, die in einer Attributgr
 
 Mindestens eine Attributgruppe kann mit Kategorieknoten in den folgenden Arten von Kategoriehierarchien zugeordnet werden: Produkthierarchie (Commerce)-, Kanalnavigationskategoriehierarchie und ergänzende Produktkategorie der Hierarchie. Wenn Produkte kategorisiert wurden, erben sie die Attribute, die in den Attributgruppen enthalten sind.
 
-![Produkthierarchie – Produktattributgruppen](media/AGRetailProdHierarchy.PNG)
+![Produkthierarchie – Produktattributgruppen.](media/AGRetailProdHierarchy.PNG)
 
 Gehen Sie folgendermaßen vor, um Attributgruppen zu den Kategorien in der Produkthierarchie (Commerce) zuzuweisen.
 
@@ -200,7 +200,7 @@ Eine oder mehrere Attributgruppen kann zu einem oder mehreren Geschäften in der
     3. Wählen Sie **Modezubehör** und dann Kategorieknoten und dann **Modesonnenbrille** und dann auf der Registerkarte **Kanalproduktattribute** wählen Sie **Attribut einschließen** für jedes Attribut aus.
     4. Wählen Sie den **Herrenkleidung** Kategorieknoten und dann **Hosen** und dann auf der Registerkarte **Kanalproduktattribute** wählen Sie **Attribut einschließen** für jedes Attribut aus.
 
-![Kanalkategorien und Produktattribute – Attributgruppen](media/CCPAttrGrp.png)
+![Kanalkategorien und Produktattribute – Attributgruppen.](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Überschreiben von Attributwerten
 
@@ -214,7 +214,7 @@ Die Standardwerte von Attributen können auf der Produktebene überschrieben wer
 4. Wählen Sie das erforderliche Produkt im Raster aus. Klicken Sie anschließend im Aktivitätsbereich auf der Registerkarte **Produkt** in der Gruppe **Verwalten** auf **Produktattribut**.
 5. Wählen Sie ein Attribut im linken Bereich aus, und aktualisieren Sie anschließend den Wert im rechten Bereich.
 
-![Produkthierarchie – Produktattributgruppen](media/ProdDetailsProdAttrValues.png)
+![Produktdetailseite – Produktattributgruppen.](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Überschreiben Sie die Attributwerte eines Einzelprodukts in einem Katalog
 
@@ -233,7 +233,7 @@ Die Standardwerte von Attributen können auf der Produktebene überschrieben wer
     > [!NOTE]
     > Wenn Produktmedien freigegebene und freigegebene Produktattribute erstellt werden, gelten sie für alle Produkte.
 
-![Katalog-Produktattributwertgruppen](media/CatalogProdAttrValues.png)
+![Katalog-Produktattributwertgruppen.](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Überschreiben Sie die Attributwerte eines Einzelprodukts in einem Kanal
 

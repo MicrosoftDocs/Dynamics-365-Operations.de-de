@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0fe3ac2393e66a00e070d8cb6862c29625d39b53
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: b1386cca9fd39c2cf021e87fcc33da2bbda89630
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057163"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353589"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (16. September 2020)
 
@@ -99,9 +99,9 @@ Diese Funktion fördert auch die Workflow-Optionen, die in den Formularen für P
 
 - [Verbesserung der Workflow-Erfahrung in Organisation und Personalverwaltung](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) im Plan der Dynamics 365 2020 Versionswelle 2
 
-![Mir zugewiesene Arbeitsaufgaben](./media/hr-workflow-work-items-assigned-to-me.png)
+![Mir zugewiesene Arbeitsaufgaben.](./media/hr-workflow-work-items-assigned-to-me.png)
 
-![Schneller Zugriff auf Workflow-Elemente](./media/hr-workflow-quick-access.png)
+![Schneller Zugriff auf Workflow-Elemente.](./media/hr-workflow-quick-access.png)
 
 ### <a name="leave-and-absence-calendar"></a>Urlaubs- und Abwesenheitskalender
 

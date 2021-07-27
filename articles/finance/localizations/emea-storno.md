@@ -13,12 +13,12 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e1d5b0ae6191204b7dd3be4e9c446d704263e67
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 95a9969650e4b7f0feac38caa05d672fa72ee7b6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832673"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348870"
 ---
 # <a name="storno-accounting"></a>Stornobuchung
 
@@ -162,7 +162,7 @@ Finance verarbeitet negative Erfassungsbeträge auf besondere Weise. Der allgeme
 
 Sie können die Anzeige von Storno in Formularen, Tabellen, Spalten und Feldern anpassen. Beispielsweise können Sie die Anzeige des Vorzeichens deaktivieren oder den Zellenabstand für negative Beträge ändern. Außerdem können Sie das Feld **Korrektur** mit allen Anzeigeeinstellungen verwenden. Wenn das Feld **Korrektor** den Wert „Ja“ enthält, handelt es sich um einen Stornoeintrag.
 
-![Journaleintrag-Stornobeträge](./media/journal-storno.png)
+![Journaleintrag-Stornobeträge.](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Wie Dokumente Storno erstellen
 Bestimmte Dokumente erzeugen Stornierungstransaktionen. Beispielsweise stornieren die Fremdwährungsüberprüfung für das Sachkonto, Kreditoren- und Debitorendokumente nicht realisierte Gewinne und Verluste. Weitere Details finden Sie unter [Neubewertung der Fremdwährung für Hauptbuch](../general-ledger/foreign-currency-revaluation-general-ledger.md) oder [Neubewertung der Fremdwährung für Kreditorenkonten und Debitoren](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Nachdem eine Stornierungstransaktion erstellt wurde, werden neue Transaktionen mit nicht realisierten Gewinnen und Verlusten erstellt. Stornierungstransaktionen werden auch für Bestand erstellt. Weitere Informationen finden Sie unter [Bestandsabschluss](../../supply-chain/cost-management/inventory-close.md). Es gibt Dokumente, in denen Sie das zuvor gebuchte Dokument stornieren können. Beispielsweise kann der Benutzer eine Gutschriftanzeige erstellen, um eine zuvor erstellte Rechnung zu stornieren. Dokumente verwenden spezifische Parameter, um Gegenbuchungen oder Stornotransaktionen zu erstellen. Beispielsweise erzeugt die Fremdwährungsüberprüfung Gegenbuchungs- oder Stornotransaktionen basierend auf dem Korrekturparameter für das Sachkonto. Die Kundengutschriftanzeige erzeugt Gegenbuchungs- oder Stornotransaktionen basierend auf dem Korrekturparameter für die Debitorengutschriftsanzeige.

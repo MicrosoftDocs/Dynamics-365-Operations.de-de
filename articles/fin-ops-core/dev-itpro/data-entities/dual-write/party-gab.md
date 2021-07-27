@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: ce246a51c75cc322f1cfea70c47f00c7dd750ea2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216611"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346619"
 ---
 # <a name="party-and-global-address-book"></a>Partei und globales Adressbuch
 
@@ -41,7 +41,7 @@ Das Parteienmodell wird häufig verwendet, um mittlere bis komplexe Beziehungen 
 
 Die folgende Abbildung zeigt das Datenmodell für Partei.
 
-![Datenmodell für Partei](media/party-gab-image1.png)
+![Datenmodell für Partei.](media/party-gab-image1.png)
 
 > [!TIP]
 > Wenn Sie versuchen, einen neuen Kontodatensatz zu erstellen, verwenden Sie das Feld **Partei**, um den Datensatz nach Namen zu suchen. Wenn Sie auf diese Weise den Datensatz finden, müssen Sie ihn nur noch auswählen. Das System füllt dann automatisch alle Daten der Partei aus. Sie müssen nicht alle erforderlichen Felder manuell festlegen. Dieses Verhalten ist auf den Seiten **Konto**, **Kontakt** und **Kreditor** standardmäßig zu finden.
@@ -58,7 +58,7 @@ Je nach Geschäftskontext kann eine Person oder eine Organisation mehr als eine 
 
 Die folgende Abbildung zeigt das Datenmodell für das globale Adressbuch.
 
-![Datenmodell für das globale Adressbuch](media/party-gab-image2.png)
+![Datenmodell für das globale Adressbuch.](media/party-gab-image2.png)
 
 ## <a name="contact"></a>Kontakt
 
@@ -94,7 +94,7 @@ Diese Beziehungen werden in der Tabelle **Kontakt für Partei** gespeichert. Sie
     + Wenn Sie einen Wert im Feld **Zugehöriger Kontakt** auswählen, wählen Sie den zusammengefassten Kontakt vom Typ **Person**.
     + Wenn Sie einen Wert im Feld **Verbundenes Konto** oder **Verbundener Kreditor** auswählen, wählen Sie eine Organisation aus.
 
-    ![Registerkarte „Zugeordnete Organisationen“ auf der Seite „Kontakt“](media/party-gab-image3.png)
+    ![Registerkarte „Zugeordnete Organisationen“ auf der Seite „Kontakt“.](media/party-gab-image3.png)
 
     Unabhängig von Ihrer Auswahl wird die Zuordnung auf der Ebene der Partei erstellt, sie gilt für alle Rollen der Partei und wird in der Entität **Kontakt für Partei** gespeichert.
 
@@ -109,7 +109,7 @@ Wenn Sie eine Zeile **Kontakt** öffnen, in der entweder das Feld **Ist Debitor*
 
 Eine neue Registerkarte **Adressen** wurde auf den Seiten **Konto**, **Kontakt** und **Lieferant** eingeführt. Diese Registerkarte unterstützt mehrere postalische Adressen, indem sie ein Raster verwendet, wie in der folgenden Abbildung gezeigt.
 
-![Raster für postalische Adressen](media/party-gab-image4.png)
+![Raster für postalische Adressen.](media/party-gab-image4.png)
 
 Das Raster enthält die folgenden Spalten:
 
@@ -121,7 +121,7 @@ Sie können die Schaltfläche **Neue Adresse** oberhalb des Rasters verwenden, u
 
 Die Felder **Adresse 1** und **Adresse 2** auf der Registerkarte **Zusammenfassung** der Seite **Konto** entsprechen den Adressen **Lieferung** bzw. **Rechnung**.
 
-![Registerkarte Zusammenfassung für Postadressen](media/party-gab-image5.png)
+![Registerkarte Zusammenfassung für Postadressen.](media/party-gab-image5.png)
 
 Die Felder **Adresse 1**, **Adresse 2** und **Adresse 3** auf der Registerkarte **Zusammenfassung** der Seite **Kontakt** entsprechen den Adressen **Geschäft**, **Lieferung** bzw. **Rechnung**.
 
@@ -129,7 +129,7 @@ Die Felder **Adresse 1**, **Adresse 2** und **Adresse 3** auf der Registerkarte 
 
 Eine neue Registerkarte **Elektronische Adressen** wurde auf den Seiten **Konto**, **Kontakt** und **Lieferant** eingeführt. Diese Registerkarte unterstützt mehrere elektronische Adressen, indem sie ein Raster verwendet, wie in der folgenden Abbildung gezeigt.
 
-![Raster für elektronische Adressen](media/party-gab-image6.png)
+![Raster für elektronische Adressen.](media/party-gab-image6.png)
 
 Das Raster enthält die folgenden Spalten:
 
@@ -205,7 +205,7 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
     | Partei Id (Feld) | Genaue Übereinstimmung |
     | Auswählen (Feld) | (leer) |
 
-    ![Doppelte Regel für Konten](media/duplicate-rule-1.PNG)
+    ![Doppelte Regel für Konten.](media/duplicate-rule-1.PNG)
 
 10. Erweitern Sie die Regel zur Erkennung von Duplikaten für die Tabelle **Kontakte**, indem Sie die folgenden Felder festlegen.
 
@@ -221,7 +221,7 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
     | Partei Id (Feld) | Genaue Übereinstimmung |
     | Auswählen (Feld) | (leer) |
 
-    ![Duplizieren Sie die Regel für Kontakte](media/duplicate-rule-2.PNG)
+    ![Duplizieren Sie die Regel für Kontakte.](media/duplicate-rule-2.PNG)
 
 11. Wenn Sie ein bestehender Dual-Write-Benutzer sind, folgen Sie den Anweisungen unter [Upgrade auf das Modell Partei und globales Adressbuch](upgrade-party-gab.md) und aktualisieren Sie Ihre Daten.
 
@@ -300,11 +300,11 @@ Weitere Informationen finden Sie unter [Referenz für die Zuordnung von dualem S
 + Elektronische Adressen, die auf der Registerkarte „Elektronische Adresse“ der Formulare **Konto**, **Kontakt** und **Kreditor** festgelegt sind, stammen aus der Tabelle `msdyn_partyelectronicaddress`. Diese Informationen fließen nicht in die zugehörigen Transaktionen wie Verkaufsauftrag, Angebot und Einkaufsbestellung. Wir planen, dieses Problem in einem inkrementellen Release zu beheben. Die bestehenden Daten auf den elektronischen Adressfeldern auf den Konto- und Kontakt-Datensätzen werden weiterhin auf Transaktionen wie Verkaufsauftrag, Angebot und Einkaufsbestellung funktionieren.
 + In Finance and Operations-Apps können Sie einen Datensatz für einen Kontakt über das Formular **Kontakt hinzufügen** erstellen. Wenn Sie versuchen, einen neuen Kontakt über das Formular **Kontakt anzeigen** zu erstellen, schlägt die Aktion fehl. Dies ist ein bekanntes Problem.
 
-    ![Bekanntes Problem mit Kontakt hinzufügen](media/party-gab-contact-issue.png)
+    ![Bekanntes Problem mit Kontakt hinzufügen.](media/party-gab-contact-issue.png)
 
 + **Initial Sync** unterstützt nicht die Zeitfelder **Verfügbar von** und **Verfügbar bis** auf **KontaktfürPartei**, da DIXF den Wert in einen String statt in eine ganze Zahl umwandelt. Die Konvertierung löst den Fehler `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32` aus.
 + Wenn eine Postadresse für mehr als einen Grund verwendet wird, z.B. als geschäftliche Kommunikationsadresse und Rechnungsadresse, sollte sie als `Business;Invoice` erscheinen, wie im folgenden Bild gezeigt. Wenn Sie ein Leerzeichen zwischen den Werten einfügen, erhalten Sie einen Fehler.
 
-    ![Bekanntes Problem mit Adresse](media/party-gab-address-issue.png)
+    ![Bekanntes Problem mit Adresse.](media/party-gab-address-issue.png)
 
-+ Sie können keine in der Zukunft liegende Postadresse mit einer Finance and Operations-App mit Dual-Write eingeben, da Dataverse keine Datumswirksamkeit unterstützt. Wenn Sie eine in der Zukunft liegende Postadresse mit einer Finance and Operations-App eingeben, wird diese vollständig auf Dataverse synchronisiert und Sie sehen die Adresse sofort auf der Benutzeroberfläche. Finance and Operations 
++ Sie können keine in der Zukunft liegende Postadresse mit einer Finance and Operations-App mit Dual-Write eingeben, da Dataverse keine Datumswirksamkeit unterstützt. Wenn Sie eine in der Zukunft liegende Postadresse mit einer Finance and Operations-App eingeben, wird diese vollständig auf Dataverse synchronisiert und Sie sehen die Adresse sofort auf der Benutzeroberfläche. Alle Updates dieses Datensatzes führen zu einem Fehler als es erst in Zukunft herausgegeben wird und derzeit nicht in der Finance and Operations-App enthalten ist.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0d029773d9aa59b27f80d2f670984a352e163122
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6b8e3d129c40e33aeb91e823528a3bc89d2d9568
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743870"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351865"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisiertes Testen mit elektronischen Berichten
 
@@ -59,7 +59,7 @@ Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgend
 - Stellen Sie eine Topologie bereit, die Testautomatisierung unterstützt. Sie müssen Zugriff auf die Instanz dieser Topologie für die **Systemadministrator**-Rolle haben. Diese Topologie muss die Demodaten enthalten, die in diesem Beispiel verwendet werden. Weitere Informationen finden Sie unter [Bereitstellen und Verwenden von Umgebungen, die fortlaufende und Build- und Testautomatisierung unterstützen](../perf-test/continuous-build-test-automation.md).
 - Um Benutzerakzeptanz- und Integrationstests automatisch zu erstellen, müssen Sie RSAT in der Topologie installieren, die Sie verwenden und in der entsprechenden Art konfigurieren. Informationen darüber, wie Sie RSAT installieren und so konfigurieren, dass es mit den Finance and Operations-Apps und Azure DevOps funktioniert, finden Sie unter [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Beachten Sie die Voraussetzungen für die Verwendung des Tools. Die folgende Abbildung zeigt ein Beispiel der RSAT-Einstellungen. Das blaue Rechteck schließt die Parameter ein, die den Zugriff auf Azure DevOps angeben. Das grüne Rechteck schließt die Parameter ein, die den Zugriff auf die Instanz angeben.
 
-    ![RSAT-Einstellungen](media/GER-Configure.png "Screenshot des Dialogfelds „RSAT-Einstellungen“")
+    ![RSAT-Einstellungen.](media/GER-Configure.png "Screenshot des Dialogfelds „RSAT-Einstellungen“")
 
 - Um Testfälle in den Suiten zu organisieren, mit deren Hilfe die korrekte Ausführungssequenz sichergestellt wird, damit Sie Protokolle der Testausführungen für weitere Berichterstellung und Untersuchung erfassen können, müssen Sie über die bereitgestellte Topologie auf Azure DevOps zugreifen können.
 - Um das Beispiel in diesem Thema durchzuführen, sollten Sie [Er-Verwendung für RSAT-Tests](https://go.microsoft.com/fwlink/?linkid=874684) herunterladen. Diese ZIP-Datei enthält die folgenden Aufgaben-Guides:
@@ -78,7 +78,7 @@ Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgend
     - **Zahlungsmodellzuordnung 1611** ER-Modellzuordnungskonfiguration
     - **BACS (UK)**-ER-Formatkonfiguration
 
-    ![Elektronische Berichtskonfigurationen](media/GER-Configurations.png "Screenshot der Konfigurationsseite in der elektronischen Berichterstellung")
+    ![Elektronische Berichtskonfigurationen.](media/GER-Configurations.png "Screenshot der Konfigurationsseite in der elektronischen Berichterstellung")
 
 3. Wählen Sie die **GBSI**-Demodatunternehmen aus, das einen Land-/Regionskontext in Großbritannien hat.
 4. Kreditorenkontenparameter konfigurieren:
@@ -90,7 +90,7 @@ Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgend
         1. Legen Sie im Inforegister **Dateiformate** die Option **Generisches elektronisches Exportformat** auf **Ja** fest.
         2. Wählen Sie im Feld **Exportformatkonfiguration** **BACS (UK)** aus.
 
-    ![Seite für Zahlungsmethoden](media/GER-APParameters.png "Screenshot der Seite der Zahlungsmethode")
+    ![Seite für Zahlungsmethoden.](media/GER-APParameters.png "Screenshot der Seite der Zahlungsmethode")
 
     > [!NOTE]
     > Wenn Sie die abgeleitete Version dieses ER-Formats haben, die erstellt wurde, um Anpassungen zu unterstützen, können Sie diese Konfiguration in der Zahlungsmethode **Elektronisch** auswählen.
@@ -100,7 +100,7 @@ Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgend
     1. Wechseln Sie zu **Kreditorenkonten \> Zahlungen \> Zahlungserfassung**.
     2. Stellen Sie sicher, dass Sie nicht die Zahlungserfassung nicht gebucht haben.
 
-        ![Seite für Zahlungserfassung](media/GER-APJournal.png "Screenshot der Seite der Zahlungserfassung")
+        ![Seite für Zahlungserfassung.](media/GER-APJournal.png "Screenshot der Seite der Zahlungserfassung")
 
     3. Wählen Sie **Positionen** aus, und geben Sie eine Position ein, die die folgenden Informationen enthält.
 
@@ -113,16 +113,16 @@ Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgend
         | Gegenkonto      | GBSI OPER       |
         | Zahlungsmethode   | Elektronisch      |
 
-    ![Seite für Kreditorenzahlungen](media/GER-APJournalLines.png "Screenshot der Seite der Lieferantenzahlung")
+    ![Seite für Kreditorenzahlungen.](media/GER-APJournalLines.png "Screenshot der Seite der Lieferantenzahlung")
 
 ## <a name="prepare-the-er-framework-to-test-vendor-payment-processing"></a>Bereiten Sie das ER-Framework vor, um die Kreditorenzahlungsverarbeitung zu testen
 
 ### <a name="configure-er-parameters"></a>Parameter der elektronischen Berichterstellung konfigurieren
 
-1. Wechseln Sie zu **Organisationsverwaltung \>Elektronische Berichterstellung \> Parameter für elektronische Berichterstellung**.
+1. Wechseln Sie zu **Organisationsverwaltung \> Elektronische Berichterstellung \> Parameter für elektronische Berichterstellung**.
 2. Wählen Sie auf der Registerkarte **Anhänge** im Feld **Ausgangswert** **Datei** als den Dokumenttyp aus, das vom Dokumenteverwaltungs(DM)-Framework verwendet wird, um Dokumente zu behalten, die als DM-Anhänge der Ausgangswertefunktion zugeordnet sind.
 
-    ![Parameterseite der elektronischen Berichterstellung](media/GER-ERParameters.png "Screenshot der Seite der Parameter für elektronische Berichterstellung")
+    ![Parameterseite der elektronischen Berichterstellung.](media/GER-ERParameters.png "Screenshot der Seite der Parameter für elektronische Berichterstellung")
 
 ### <a name="generate-baseline-copies-of-vendor-paymentrelated-documents"></a>Generieren Sie Ausgangswertekopien von Kreditorzahlungen in Zusammenhang mit Dokumenten
 
@@ -139,7 +139,7 @@ Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgend
     - **Datei** Zahlungsdatei im Textformat
     - **ERVendOutPaymControlReport**-Kontrollberichtdatei in XLSX-Format
 
-    ![Extrahierte Dateien](media/GER-APJournalProcessed.png "Screenshot der extrahierten Dateinamen im Windows-Explorer")
+    ![Extrahierte Dateien.](media/GER-APJournalProcessed.png "Screenshot der extrahierten Dateinamen im Windows-Explorer")
 
 ### <a name="turn-on-the-er-baseline-feature"></a>Aktivieren Sie die ER-Ausgangswertefunktion
 
@@ -177,7 +177,7 @@ Wenn Sie den Parameter **In Debugmodus ausführen** aktivieren, möchten,zwingen
     3. Durchsuchen Sie sie, um die lokal gespeicherte Zahlungsdatei **ERVendOutPaymControlReport** im XLSSX-Format auszuwählen.
     4. Geben Sie im Feld **Beschreibung** **Zahlungs-XLSX-Kontrollbericht** ein.
 
-    ![Ausgangswere für die Kreditorenzahlungsdatei und den Kontrollbericht](media/GER-BaselineAttachments.png "Screenshot der Konfigurationsseite mit dem ausgewählten Zahlungs-XLSX-Kontrolblericht")
+    ![Ausgangswere für die Kreditorenzahlungsdatei und den Kontrollbericht.](media/GER-BaselineAttachments.png "Screenshot der Konfigurationsseite mit dem ausgewählten Zahlungs-XLSX-Kontrolblericht")
 
 8. Schließen Sie die Seite.
 9. Auf dem Inforegister **Ausgangswerte** wählen Sie **Neu** aus, um einen Ausgangswert für die Zahlungsdatei zu konfigurieren:
@@ -196,7 +196,7 @@ Wenn Sie den Parameter **In Debugmodus ausführen** aktivieren, möchten,zwingen
     4. Im Feld **Dateinamenmaske** geben Sie **\*.XLSX** ein, um den Ausgangswert nur auf Ausgaben der Formatkomponente **ERVendOutPaymControlReport** anzuwenden, die die **.xlsx**-Dateinamenserweiterung haben.
     5. Wählen Sie im Feld **Ausgangswert** **XLSX-Kontrollbericht für Zahlung** aus, damit dieser Ausgangswert für den Vergleich mit der generierten Ausgabe verwendet wird.
 
-    ![Inforegister „Grundlagen“ auf der Seite „Konfigurationen“](media/GER-BaselineRules.png "Screenshot des Inforegisters „Grundlagen“ auf der Seite „Konfigurationen“")
+    ![Inforegister „Grundlagen“ auf der Seite „Konfigurationen“.](media/GER-BaselineRules.png "Screenshot des Inforegisters „Grundlagen“ auf der Seite „Konfigurationen“")
 
 ## <a name="record-tests-to-validate-vendor-payment-processing"></a>Erfassen Sie Tests, um die Kreditorenzahlungsverarbeitung zu überprüfen
 
@@ -226,15 +226,15 @@ Diese Aufgabenaufzeichnung führt die folgenden Aktivitäten aus:
 
 1. Dden Status der verarbeiteten Zahlungsposition auf **Keiner** festlegen.
 
-    ![Aufgabenaufzeichnungsschritte 3 bis 4](media/GER-Recording1Review1.png "Screenshot der Aufgabenaufzeichnungsschritte 3 bis 4")
+    ![Aufgabenaufzeichnungsschritte 3 bis 4.](media/GER-Recording1Review1.png "Screenshot der Aufgabenaufzeichnungsschritte 3 bis 4")
 
 2. Schalten Sie den Benutzerparameter **In Debugmodus ausführen** ein.
 
-    ![Aufgabenaufzeichnungsschritte 9 bis 10](media/GER-Recording1Review2.png "Screenshot der Aufgabenaufzeichnungsschritte 9 bis 10")
+    ![Aufgabenaufzeichnungsschritte 9 bis 10.](media/GER-Recording1Review2.png "Screenshot der Aufgabenaufzeichnungsschritte 9 bis 10")
 
 3. Säubern Sie das ER-Debug-Protokoll, in dem die Ergebnisse des Vergleichs der generierten Dateien mit den Ausgangswerten enthalten sind.
 
-    ![Aufgabenaufzeichnungsschritte 13 bis 15](media/GER-Recording1Review3.png "Screenshot der Aufgabenaufzeichnungsschritte 13 bis 15")
+    ![Aufgabenaufzeichnungsschritte 13 bis 15.](media/GER-Recording1Review3.png "Screenshot der Aufgabenaufzeichnungsschritte 13 bis 15")
 
 ### <a name="record-the-steps-to-test-vendor-payment-processing"></a>Erfassen Sie die Schritte zum Testen der Kreditorenzahlungsverarbeitung
 
@@ -253,21 +253,21 @@ Diese Aufgabenaufzeichnung führt die folgenden Aktivitäten aus:
 1. Kreditorenzahlungsverarbeitung starten
 2. Legen Sie die richtigen Laufzeitparameter fest, und schalten Sie Generierung eines Kontrollberichts ein.
 
-    ![Aufgabenaufzeichnungsschritte 3 bis 8](media/GER-Recording2Review1.png "Screenshot der Aufgabenaufzeichnungsschritte 3 bis 8")
+    ![Aufgabenaufzeichnungsschritte 3 bis 8.](media/GER-Recording2Review1.png "Screenshot der Aufgabenaufzeichnungsschritte 3 bis 8")
 
 3. Greifen Sie auf das ER-Debug-Protokoll zu, um die Ergebnisse des Vergleichs der generierten Ausgaben mit den ensprechenden Ausgangswerten aufzuzeichnen.
 
     Im ER-Debug-Protokoll werden die Ergebnisse des Vergleichs im Feld **Generierter Text** angezeigt. Die Felder **Formatkomponente** und **Formatpfad, der einen Protokolleintrag verursacht hat** beziehen sich auf die Dateikomponente, mit dem die generierte Ausgabe des Ausgangswerts verglichen wurde.
 
-    ![Einträge auf der Seite für Elektronische Berichterstellungsausführungsprotokolle](media/GER-ERDebugLog.png "Screenshot der Einträge auf der Seite für Elektronische Berichterstellungsausführungsprotokolle")
+    ![Einträge auf der Seite für Elektronische Berichterstellungsausführungsprotokolle.](media/GER-ERDebugLog.png "Screenshot der Einträge auf der Seite für Elektronische Berichterstellungsausführungsprotokolle")
 
 4. Der Vergleich der aktuellen Ausgabe zu den Ausgangswerten wird aufgezeichnet, indem Sie die Aufgabenaufzeichnungsoption **Überprüfen** verwenden und **Aktueller Wert** auswählen.
 
-    ![Verwendung der Option „Überprüfen“ für den Vergleich mit dem aktuellen Wert](media/GER-TRRecordValidation.png "Screenshot der Verwendung der Option „Überprüfen“ für den Vergleich mit dem aktuellen Wert")
+    ![Verwendung der Option „Überprüfen“ für den Vergleich mit dem aktuellen Wert.](media/GER-TRRecordValidation.png "Screenshot der Verwendung der Option „Überprüfen“ für den Vergleich mit dem aktuellen Wert")
 
     Die folgende Abbildung zeigt, wie die aufgezeichneten Prüfungsschritte in der Aufgabenaufzeichnung aussehen.
 
-    ![Aufgabenaufzeichnungsschritte 13 und 15](media/GER-Recording2Review2.png "Screenshot der Aufgabenaufzeichnungsschritte 13 und 15")
+    ![Aufgabenaufzeichnungsschritte 13 und 15.](media/GER-Recording2Review2.png "Screenshot der Aufgabenaufzeichnungsschritte 13 und 15")
 
 ## <a name="add-the-recorded-tests-to-azure-devops"></a>Fügen Sie die aufgezeichneten Tests Azure DevOps hinzu
 
@@ -284,7 +284,7 @@ Diese Aufgabenaufzeichnung führt die folgenden Aktivitäten aus:
     1. Geben Sie dem Testfall den Namen **Testen der Verarbeitung von Kreditorenzahlungen unter Verwendung des ER-Format BACS (UK)**.
     2. Fügen Sie die Datei **Recording.xml** aus dem Ordner **Verarbeiten** an, den Sie zuvor heruntergeladen haben.
 
-    ![Neuen Testfälle für den ausgewählten Testplan](media/GER-RSAT-DevOps-Tests-Passed.png "Screenshot der neuen Testfälle für den ausgewählten Testplan")
+    ![Neuen Testfälle für den ausgewählten Testplan.](media/GER-RSAT-DevOps-Tests-Passed.png "Screenshot der neuen Testfälle für den ausgewählten Testplan")
 
 > [!NOTE]
 > Beachten Sie die korrekte Ausführungsreihenfolge der Tests, die hinzugefügt werden.
@@ -296,14 +296,14 @@ Diese Aufgabenaufzeichnung führt die folgenden Aktivitäten aus:
 1. Öffnen Sie die lokale RSAT-Anwendung in der aktuellen Topologie.
 2. Wählen Sie **Laden** aus, um die Tests zu laden, die sich derzeit in Azure DevOps befinden in RSAT.
 
-    ![In RSAT geladene Tests](media/GER-RSAT-RSAT-Tests-Loaded.png "Screenshot der in RSAT geladenen Tests")
+    ![In RSAT geladene Tests.](media/GER-RSAT-RSAT-Tests-Loaded.png "Screenshot der in RSAT geladenen Tests")
 
 ### <a name="create-automation-and-parameters-files"></a>Automatisierungs- und Parameterdateien erstellen
 
 1. Wählen Sie in RSAT die Tests aus, die Sie von Azure DevOps geladen haben.
 2. Wählen Sie **Neu** aus, um RAST-Automatisierungs- und -Parameterdateien zu erstellen.
 
-    ![In RAST erstellte RSAT-Automatisierungs- und -Parameterdateien](media/GER-RSAT-RSAT-Tests-Initiated.png "Screenshot der in RAST erstellten RSAT-Automatisierungs- und -Parameterdateien")
+    ![In RAST erstellte RSAT-Automatisierungs- und -Parameterdateien.](media/GER-RSAT-RSAT-Tests-Initiated.png "Screenshot der in RAST erstellten RSAT-Automatisierungs- und -Parameterdateien")
 
 ### <a name="modify-the-parameters-files"></a>Ändern der Parameterdateien
 
@@ -315,7 +315,7 @@ Diese Aufgabenaufzeichnung führt die folgenden Aktivitäten aus:
 6. In der Excel-Arbeitsmappe, die im Arbeitsblatt **Allgemein** geöffnet ist, ändern Sie den Unternehmenscode zu **GBSI**.
 7. Beachten Sie im Arbeitsblatt **ERFormatMappingRunLogTable**, dass die Zellen A :3 und C: 3 den Text der Felder in der ER-Debug-Protokolltabelle enthalten, die verwendet werden, um die Ergebnisse des Vergleichs der Ausgabe mit den Ausgangswerten zu prüfen. Diese Texte werden verwendet, um ER-Debug-Protokolldatensätze auszuwerten, die während der Testausführung erstellt werden.
 
-    ![ERFormatMappingRunLogTable-Arbeitsblatt](media/GER-RSAT-RSAT-ExcelParameters.png "Screenshot des ERFormatMappingRunLogTable-Arbeitsblatts")
+    ![ERFormatMappingRunLogTable-Arbeitsblatt.](media/GER-RSAT-RSAT-ExcelParameters.png "Screenshot des ERFormatMappingRunLogTable-Arbeitsblatts")
 
 ## <a name="run-the-tests-and-analyze-the-results"></a>Ausführen des Tests und Analysieren der Ergebnisse
 
@@ -330,11 +330,11 @@ Beachten Sie, dass Testfälle in der Anwendung automatisch ausgeführt werden, i
 
 Die Ergebnisse der Testausführung werden in RSAT gespeichert. Beachten Sie, dass beide Tests erfolgreich waren.
 
-![Tests, die in RSAT erfolgreich waren](media/GER-RSAT-RSAT-Tests-Passed.png "Screenshot der Tests, die in RSAT erfolgreich waren")
+![Tests, die in RSAT erfolgreich waren.](media/GER-RSAT-RSAT-Tests-Passed.png "Screenshot der Tests, die in RSAT erfolgreich waren")
 
 Beachten Sie, dass die Ergebnisse der Testausführung auch an Azure DevOps gesendet werden, damit Sie weitere Analysen ausführen können.
 
-![Ergebnisse der Testausführung in Azure DevOps](media/GER-RSAT-DevOps-Tests-Added.png "Screenshot der Ergebnisse der Testausführung in Azure DevOps")
+![Ergebnisse der Testausführung in Azure DevOps.](media/GER-RSAT-DevOps-Tests-Added.png "Screenshot der Ergebnisse der Testausführung in Azure DevOps")
 
 ### <a name="simulate-a-situation-where-tests-fail"></a>Simulieren einer Situation, in der der Test fehlschlägt
 
@@ -357,15 +357,15 @@ Beachten Sie, dass Testfälle in der Anwendung automatisch ausgeführt werden, i
 
 Die Ergebnisse der Testausführung werden in RSAT gespeichert. Beachten Sie, dass der zweite Test bei der zweiten Ausführung fehlschlug.
 
-![Fehlgeschlagene Testergebnisse in RSAT](media/GER-RSAT-RSAT-Tests-Failed.png "Screenshot der fehlgeschlagenen Testergebnisse in RSAT")
+![Fehlgeschlagene Testergebnisse in RSAT.](media/GER-RSAT-RSAT-Tests-Failed.png "Screenshot der fehlgeschlagenen Testergebnisse in RSAT")
 
 Beachten Sie, dass die Ergebnisse der Testausführung auch an Azure DevOps gesendet werden, damit Sie weitere Analysen ausführen können.
 
-![Fehlgeschlagene Testergebnisse in Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed.png "Screenshot der fehlgeschlagenen Testergebnisse in Azure DevOps")
+![Fehlgeschlagene Testergebnisse in Azure DevOps.](media/GER-RSAT-DevOps-Tests-Failed.png "Screenshot der fehlgeschlagenen Testergebnisse in Azure DevOps")
 
 Sie können auf den Status eines Tests zugreifen. Sie können auch auf das Ausführungsprotokoll zugreifen, um die Gründe für einen Fehler zu analysieren. In der folgenden Abbildung zeigt das Ausführungsprotokoll, dass der Fehler aufgetreten aufgrund des Unterschieds im Inhalt zwischen der generierten Zahlungsdatei und dem Ausgangswert aufgetreten ist.
 
-![Ausführungsprotokoll zum Analysieren des Fehlers in Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Screenshot des Ausführungsprotokolls zum Analysieren des Fehlers in Azure DevOps")
+![Ausführungsprotokoll zum Analysieren des Fehlers in Azure DevOps.](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Screenshot des Ausführungsprotokolls zum Analysieren des Fehlers in Azure DevOps")
 
 Daher kann die Funktion eines beliebigen ER-Formats, wie Sie gesehen haben, automatisch überprüft werden, indem RSAT als die Testplattform verwendet wird, und indem die auf die Aufgabenaufzeichnung basierenden Testfälle verwendet werden, die die ER-Ausgangswertefunktion verwenden.
 

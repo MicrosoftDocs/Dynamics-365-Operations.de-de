@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2fc57579f817d2735aaa94a5f6834185961dab39
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bd9b6239a8f5db51ab3f238593197408e641b782
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750227"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349107"
 ---
 # <a name="navigation-search"></a>Navigationssuche
 
@@ -34,7 +34,7 @@ Zur Verwendung dieser Funktion, klicken Sie auf das Symbol **Suche** um das Feld
 > [!NOTE]
 > Das Feld **Suchen** hilft Ihnen dabei, Seiten finden und zu navigieren. Es unterstützt Sie nicht dabei, bestimmte Daten oder Aktivitäten zu suchen.
 
-[![Suchfeld](media/navigation-search.png "Suchfeld")
+[![Suchfeld.](media/navigation-search.png "Suchfeld")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>Navigieren Sie schnell zu einer bestimmten Seite
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f94b054d213dc2b347f4e5a7b2f4c2a51d519f57
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 626393f0c07803eb944e9066c72a24d2cf9ea0ce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824003"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356220"
 ---
 # <a name="revenue-recognition-reallocation--scenario-1"></a>Neuzuweisung der Umsatzerkennung – Szenario 1
 
@@ -28,25 +28,25 @@ In diesem Artikel wird eine Neuzuweisung erläutert, bei der zwei Aufträge eing
 
 In diesem Fall ist die Option **Rechnungskorrekturen auf Debitorenkonten buchen** auf der Registerkarte **Umsatzerkennung** auf der Seite **Hauptbuchparameter** (**Umsatzerkennung \> Einrichtung \> Hauptbuchparameter**) auf **Nein** festgelegt.
 
-[![Option „Rechnungskorrekturen auf Debitorenkonten buchen“ auf „Nein“ festgelegt](./media/06_rev-rec-scenarios.png)](./media/06_rev-rec-scenarios.png)
+[![Option „Rechnungskorrekturen auf Debitorenkonten buchen“ auf „Nein“ festgelegt.](./media/06_rev-rec-scenarios.png)](./media/06_rev-rec-scenarios.png)
 
-Für den Kunden US\_SI\_0003 wird ein Auftrag angelegt. Der Kunde kauft einen Laptop (Artikelnummer S0012) und einen zugehörigen Supportplan (Artikelnummer S0008, „fortwährender Entwicklungsservice“). Der Umsatzerlös für den Laptop wird sofort erkannt (es gibt keinen Umsatzerkennungszeitplan). Der Umsatzerlös für den Supportplan wird über einen Zeitraum von zwölf Monaten verzögert und erfasst, wie durch den im Vertrag festgelegten Zeitraum festgelegt.
+Für den Kunden US\_SI\_0003 wird ein Auftrag angelegt. Der Kunde kauft einen Laptop (Artikelnummer S0012) und einen zugehörigen Supportplan (Artikelnummer S0008, „fortwährender Entwicklungsdienst“). Der Umsatzerlös für den Laptop wird sofort erkannt (es gibt keinen Umsatzerkennungszeitplan). Der Umsatzerlös für den Supportplan wird über einen Zeitraum von zwölf Monaten verzögert und erfasst, wie durch den im Vertrag festgelegten Zeitraum festgelegt.
 
-[![Auftragspositionen für Laptop und Supportplan](./media/07_rev-rec-scenarios.png)](./media/07_rev-rec-scenarios.png)
+[![Auftragspositionen für Laptop und Supportplan.](./media/07_rev-rec-scenarios.png)](./media/07_rev-rec-scenarios.png)
 
 Der Auftrag wird bestätigt. Weil bei beiden Artikeln die Umsatzerlöspreiszuteilung eingerichtet ist, wird der Umsatzerlöspreis im Zuge der Auftragsbestätigung berechnet. Den zu erfassenden Umsatzerlös können Sie auf der Seite **Umsatzerlöspreiszuteilung** anzeigen. (Wählen Sie dazu auf der Seite **Auftrag** im Aktionsbereich auf der Registerkarte **Verwalten** in der Gruppe **Umsatzerkennung** die Option **Umsatzerlöspreiszuteilung** aus.) Der Umsatzerlös für den Laptop wird in Höhe von 1.008,01 US-Dollar auf das Konto für Umsatzerlöse gebucht. Der Umsatzerlös für den Supportplan wird in Höhe von 190,99 US-Dollar auf das Konto für verzögerte Umsatzerlöse gebucht. Die Summe der Umsatzerlöspreise muss der Summe der Positionen entsprechen, die so eingerichtet wurden, dass die Umsatzerlöspreiszuteilung erfasst wird (1.199,00 US-Dollar).
 
-[![Seite mit der Umsatzerlöspreiszuteilung](./media/08_rev-rec-scenarios.png)](./media/08_rev-rec-scenarios.png)
+[![Seite mit der Umsatzerlöspreiszuteilung.](./media/08_rev-rec-scenarios.png)](./media/08_rev-rec-scenarios.png)
 
-Zum Zeitpunkt des Verkaufs wünschte der Kunde keinen Installationsservice (Artikelnummer S0001), änderte seine Meinung aber später. Daher wird für ihn ein zweiter Auftrag eingegeben.
+Zum Zeitpunkt des Verkaufs wünschte der Kunde keinen Installationsdienst (Artikelnummer S0001), änderte seine Meinung aber später. Daher wird für ihn ein zweiter Auftrag eingegeben.
 
-[![Auftragsposition über Installationsservice](./media/09_rev-rec-scenarios.png)](./media/09_rev-rec-scenarios.png)
+[![Auftragsposition über Installationsdienst.](./media/09_rev-rec-scenarios.png)](./media/09_rev-rec-scenarios.png)
 
 Der zweite Auftrag wird bestätigt. Weil dieser Auftrag nur eine Position enthält, erfolgt die Umsatzerlöspreiszuteilung nicht im Zuge der Auftragsbestätigung. Sie erfolgt nur, wenn mindestens zwei eindeutige Artikel vorhanden sind und bei diesen die Umsatzerlöspreiszuteilung eingerichtet ist.
 
 Wenn der neue Auftrag die einzige Vertragsänderung darstellt, kann die Neuzuteilung beginnen. Zum Öffnen der Seite **Preis mit neuen Auftragspositionen erneut zuteilen** wählen Sie in einem der Aufträge die Option **Preis mit neuen Auftragspositionen erneut zuteilen** aus. Alternativ wählen Sie **Umsatzerkennung \> Periodische Aufgaben \> Preis mit neuen Auftragspositionen erneut zuteilen** aus. Wählen Sie die beiden Aufträge und die entsprechenden Auftragspositionen und danach **Neuzuweisung aktualisieren** aus. In der Spalte **Neu zugewiesener Betrag** wird zu jeder Auftragsposition der neue Umsatzerlöspreis angezeigt.
 
-[![Neue Umsatzerlöspreise auf der Seite „Preis mit neuen Auftragspositionen erneut zuteilen“](./media/10_rev-rec-scenarios.png)](./media/10_rev-rec-scenarios.png)
+[![Neue Umsatzerlöspreise auf der Seite „Preis mit neuen Auftragspositionen erneut zuteilen“.](./media/10_rev-rec-scenarios.png)](./media/10_rev-rec-scenarios.png)
 
 Bei Auswahl von **Erwarteter Beleg** wird nichts angezeigt, weil keine Rechnungen gebucht wurden.
 
@@ -55,7 +55,7 @@ Schließen Sie die Neuzuweisung mit **Verarbeiten** ab. Sie werden aufgefordert,
 > [!TIP]
 > Um zu erklären, warum diese zusätzlichen Artikel angezeigt werden, können Sie das Raster mit weiteren Spalten ergänzen, wie z. B. **Neuzuweisungs-ID** und **Auftrag**.
 > 
-> [![Zusätzliche Spalten auf der Seite „Umsatzerlöspreiszuteilung“](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+> [![Zusätzliche Spalten auf der Seite „Umsatzerlöspreiszuteilung“.](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

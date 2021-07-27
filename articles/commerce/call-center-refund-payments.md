@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e3837ccebca0e6644ac5ded98344a5135cfb5d7a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 130f570646d73e37a790ab90ae9a1d6a48b0f8b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799588"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351368"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Abwicklung von Rückerstattungszahlungen in Callcentern
 
@@ -37,7 +37,7 @@ Das Callcenter verwendet die Zahlungsmethode des ursprünglichen Auftrags, um di
 
     Die folgende Abbildung zeigt die Konfiguration für ein Szenario, in dem ein Debitor Produkte aus einem Auftrag zurückgibt, der mit der USD-Währung verknüpft ist und ursprünglich mit der normalen oder Scheckzahlungsmethode bezahlt wurde. In diesem Szenario wird dem Debitor eine Rückerstattung über einen vom System generierten Rückerstattungsscheck ausgestellt. Die AR-Zahlungsmethode **REF-CHK** wurde als Zahlungsmethode für Rückerstattungsschecks konfiguriert.
 
-    ![Konfiguration von Callcenter-Rückerstattungsmethoden für ursprünglich normale und Scheckzahlungen](media/callcenterrefundmethods.png)
+    ![Konfiguration von Callcenter-Rückerstattungsmethoden für ursprünglich normale und Scheckzahlungen.](media/callcenterrefundmethods.png)
 
 - **Kreditkarte** – Wenn eine erstellte Rücklieferung auf einen ursprünglichen Auftrag verweist, der per Kreditkarte bezahlt wurde, verwendet die Callcenter-Logik für Rückerstattungszahlungen dieselbe ursprüngliche Kreditkarte für den Rückgabeauftrag.
 - **Treuekarte** – Wenn eine erstellte Rücklieferung auf einen ursprünglichen Auftrag verweist, der per Treuekarte bezahlt wurde, bucht die Callcenter-Logik für Rückerstattungszahlungen die Rückerstattung auf dieselbe Treuekarte.
@@ -48,7 +48,7 @@ Wenn die Zahlungsmethode des ursprünglichen Auftrags aus irgendeinem Grund unbe
 
 Die folgende Abbildung zeigt das Feld **Zahlungsmethode** auf der Registerkarte **RMA/Rückgabe** der Seite **Callcenter-Parameter**.
 
-![Feld „Zahlungsmethode“ auf der Registerkarte „RMA/Rückgabe“ der Seite „Callcenter-Parameter“](media/callcenterrefundparameters.png)
+![Feld „Zahlungsmethode“ auf der Registerkarte „RMA/Rückgabe“ der Seite „Callcenter-Parameter“.](media/callcenterrefundparameters.png)
 
 > [!NOTE]
 > Die zuvor beschriebenen Regeln für die Abwicklung von Rückerstattungen gelten auch für Aufträge oder Auftragspositionen, die ein Callcenterbenutzer in der Commerce-Zentralverwaltung storniert. Wenn die Stornierung eines Auftrags oder bestimmter Auftragspositionen zu Überzahlungen führt, werden dieselben Regeln verwendet, um Rückerstattungspositionen zu generieren.
@@ -82,7 +82,7 @@ Die Einstellung auf **Ja** für die Option **Gutschrift anwenden** ist nur anwen
 > [!NOTE]
 > Bei einer Rücklieferung ohne verknüpften Ersatzauftrag hat eine Einstellung auf **Ja** bei der Option **Gutschrift anwenden** keine Auswirkung auf die Zahlungslogik der Rücklieferung, da diese Einstellung nur für Ersatzaufträge gilt.
 
-![Feld „Gutschriftzahlungsmethode anwenden“ auf der Registerkarte „RMA/Rückgabe“ der Seite „Callcenter-Parameter“](media/callcenterrefundparameters1.png)
+![Feld „Gutschriftzahlungsmethode anwenden“ auf der Registerkarte „RMA/Rückgabe“ der Seite „Callcenter-Parameter“.](media/callcenterrefundparameters1.png)
 
 > [!IMPORTANT]
 > Wenn Benutzer, die Ersatzaufträge erstellen, die Verwendung der Option **Gutschrift anwenden** planen, sollten sie die Funktion **Abschließen** für die Rücklieferung erst ausführen, wenn sie die Option **Gutschrift anwenden** auf **Ja** gesetzt haben. Sobald die Funktion **Abschließen** ausgeführt wurde, wird die Rückerstattungszahlung berechnet und für den Rücklieferungsauftrag verwendet. Jeder Versuch, die Option **Gutschrift anwenden** auf **Ja** zu setzen, wenn eine Rückerstattungszahlung bereits berechnet und angewendet wurde, löst keine Neuberechnung der Rückerstattungszahlung aus, und die im Feld **Gutschriftzahlungsmethode anwenden** ausgewählte Zahlungsmethode wird nicht angewendet. Falls die Option **Gutschrift anwenden** in diesem Zusammenhang verwendet werden muss, muss der Benutzer den Ersatzauftrag und die RMA löschen und von Neuem beginnen und eine neue RMA erstellen. Diesmal muss der Benutzer sicherstellen, dass die Option **Gutschrift anwenden** auf **Ja** gesetzt ist, bevor die Funktion **Abschließen** ausgeführt wird.
@@ -91,14 +91,14 @@ Die Einstellung auf **Ja** für die Option **Gutschrift anwenden** ist nur anwen
 
 Obwohl die Callcenter-Logik die Zahlungsmethode für Rückerstattungen systematisch auf die zuvor in diesem Thema beschriebene Weise ermittelt, möchten Benutzer diese Zahlungen manchmal überschreiben. So möchte ein Benutzer beispielsweise vorhandene Rückerstattungspositionen bearbeiten oder entfernen und neue Zahlungspositionen anlegen. Vom System berechnete Rückerstattungszahlungen können nur von Benutzern geändert werden, die über die richtigen Überschreibungsberechtigungen verfügen. Diese Berechtigungen können auf der Seite **Berechtigung überschreiben** in Einzelhandel und Handel konfiguriert werden. Der Benutzer muss für die Überschreibung einer Erstattungszahlung mit einer Sicherheitsrolle verknüpft sein, in der die Option **Alternative Zahlung zulassen** auf der Seite **Berechtigung überschreiben** auf **Ja** gesetzt ist.
 
-![„Alternative Zahlung zulassen“-Option auf der Seite „Berechtigungen überschreiben“](media/overridepermissions.png)
+![„Alternative Zahlung zulassen“-Option auf der Seite „Berechtigungen überschreiben“.](media/overridepermissions.png)
 
 Alternativ kann eine Organisation die Option **Alternative Zahlung zulassen** auf der Registerkarte **RMA/Rückgabe** der Seite **Callcenter-Parameter** auf **Ja** setzen. In diesem Fall muss im Feld **Sicherheitsüberschreibungscode** ein Sicherheitsüberschreibungscode ausgewählt werden. Der Sicherheitsüberschreibungscode ist ein alphanumerischer Code, der extern verwaltet werden muss, da Benutzer ihn sich nach dem Festlegen nicht in der Commerce-Zentralverwaltung anzeigen lassen können. Der Sicherheitsüberschreibungscode sollte nur wenigen, wichtigen und vertrauenswürdigen Personen in einer Organisation bekannt sein. Wenn Benutzer, die nicht über die richtigen Rollenberechtigungen verfügen, versuchen, die Zahlungsmethode für eine Rücklieferung zu ändern, und die Option **Zahlungsüberschreibung zulassen** auf **Ja** gesetzt ist, haben sie die Möglichkeit, den Sicherheitsüberschreibungscode einzugeben. Wenn sie diesen nicht wissen, oder ein Manager oder Vorgesetzter ihn nicht auf der Seite für sie eingeben kann, können sie die Rückzahlungsmethode nicht überschreiben.
 
 > [!NOTE]
 > Wenn der Sicherheitsüberschreibungscode verloren geht oder vergessen wird, muss die Organisation ihn zurücksetzen, indem sie im Feld **Sicherheitsüberschreibungscode** auf der Registerkarte **RMA/Rückgabe** der Seite **Callcenter-Parameter** einen neuen Sicherheitsüberschreibungscode definiert.
 
-![Parameter zur Zahlungsüberschreibung auf der Registerkarte „RMA/Rückgabe“ der Seite „Callcenter-Parameter“](media/overridepaymentparameter.png)
+![Parameter zur Zahlungsüberschreibung auf der Registerkarte „RMA/Rückgabe“ der Seite „Callcenter-Parameter“.](media/overridepaymentparameter.png)
 
 > [!IMPORTANT]
 > Bevor Unternehmen versuchen, Rückerstattungszahlungen, die die Kreditkarten-Zahlungsmethode nutzen, zu überschreiben, sollten sie überprüfen, ob der Kreditkartendienstleister nicht verknüpfte Rückgaben zulässt. Viele Dienstleister verlangen, dass Rückerstattungen auf die Originalkarte zurückgebucht werden. Jeder Versuch, eine Rückerstattung auf eine Karte vorzunehmen, die keine vorherigen Eintragungen hat, kann zu Buchungsfehlern beim Dienstleister führen.

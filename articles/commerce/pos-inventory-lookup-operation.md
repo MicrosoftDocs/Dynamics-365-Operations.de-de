@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 873c6413c14d2ee8315c149ee9c495bb59dbd930
-ms.sourcegitcommit: 11ca5863175150b6c39f47a9322caa2186727a26
+ms.openlocfilehash: c0f753febb0d347015fde1374148835f90df55a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6025447"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353779"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Bestandssuchvorgänge in POS
 
@@ -45,7 +45,10 @@ Für ein einzelnes Produkt bietet der Bestandssuchvorgang eine Listenansicht fü
 
 Die Listenansicht der Standorte enthält alle Filialen und Lagerorte, die in den Erfüllungsgruppen konfiguriert sind, mit denen die aktuelle Filiale verknüpft ist, wie im folgenden Beispielbild dargestellt.
 
-![Listenansicht Bestandssuchvorgänge](media/inventory-lookup-list-view.png)
+![Listenansicht Bestandssuchvorgänge.](media/inventory-lookup-list-view.png)
+
+> [!NOTE]
+> Stellen Sie sicher, dass Ihre aktuelle Filiale in den zugehörigen Erfüllungsgruppen enthalten ist.
 
 Die folgenden Aktionen sind in der Leiste der POS-App verfügbar:
 
@@ -65,7 +68,7 @@ Die folgenden Aktionen sind in der Leiste der POS-App verfügbar:
 - **Zur Transaktion hinzufügen**: Diese Aktion fügt das Produkt dem Warenkorb hinzu und leitet den Benutzer zum Transaktionsbildschirm weiter.
 
 > [!NOTE]
-> Bei einer Sortierung nach Standort wird die Entfernung zwischen einem Standort und der aktuellen Filiale durch die Koordinaten (Breiten- und Längengrad) bestimmt, die in der Commerce-Zentralverwaltung festgelegt sind. Für eine Filiale werden die Standortinformationen in der primären Adresse der der Filiale zugeordneten Organisationseinheit festgelegt. Bei einem Lagerort, bei dem es sich nicht um eine Filiale handelt, werden die Standortinformationen in der Lagerortadresse festgelegt. Wenn für die aktuelle Filiale keine korrekten Koordinaten festgelegt sind, zeigt die Sortieroption nach Standort die aktuelle Filiale oben in der Liste an und sortiert dann andere Standorte nach Namen.
+> Bei einer Sortierung nach Standort wird die Entfernung zwischen einem Standort und der aktuellen Filiale durch die Koordinaten (Breiten- und Längengrad) bestimmt, die in der Commerce-Zentralverwaltung festgelegt sind. Für eine Filiale werden die Standortinformationen in der primären Adresse der der Filiale zugeordneten Organisationseinheit festgelegt. Bei einem Lagerort, bei dem es sich nicht um eine Filiale handelt, werden die Standortinformationen in der Lagerortadresse festgelegt. Wenn für die aktuelle Filiale keine Koordinaten festgelegt sind, zeigt die Sortieroption nach Standort die aktuelle Filiale oben in der Liste an und sortiert dann andere Standorte nach Namen.
 
 > [!NOTE]
 > Die Aktionen **Verfügbarkeit in Filiale anzeigen**, **Filialstandort anzeigen**, **Abholung im Shop** und **Produkt versenden** sind für Standorte, bei denen es sich nicht um eine Filiale handelt, nicht verfügbar.
@@ -76,7 +79,7 @@ Für ein Masterprodukt mit Varianten bietet der Bestandssuchvorgang auch eine Ma
 
 Das folgende Beispielbild zeigt die Matrixansicht der Bestandssuche in POS.
 
-![Matrixansicht Bestandssuchvorgänge](media/inventory-lookup-matrix-view.png)
+![Matrixansicht Bestandssuchvorgänge.](media/inventory-lookup-matrix-view.png)
 
 In der Matrixansicht stellt jede Zelle eine einzelne Variante dar und zeigt einen verfügbaren Bestand (physisch verfügbar) in der unteren rechten Ecke sowie Werte für **reserviert** (physisch reserviert) und **bestellt** (insgesamt bestellt) in der oberen linken Ecke an. In der folgenden Tabelle wird die Bedeutung der verschiedenen Werte für verfügbare Bestände erklärt.
 
@@ -103,7 +106,7 @@ POS-Benutzer können von anderen Seiten im POS auf die Bestandssuche zugreifen.
 
 Das folgende Beispielbild zeigt die Ergebnisse der Bestandssuche von einer PDP in POS.
 
-![Bestandssuche von der Produktdetailseite aus](media/inventory-lookup-from-product-details-page.png)
+![Bestandssuche von der Produktdetailseite aus.](media/inventory-lookup-from-product-details-page.png)
 
 Auf der PDP eines Masterprodukts können Sie die Aktion **Alle Varianten anzeigen** in der App-Leiste verwenden, um die Matrixansicht der Bestandssuche zu starten, in der Informationen zur Verfügbarkeit aller Varianten eines Produkts in der aktuellen Filiale angezeigt werden. Bei einem einzelnen Produkt zeigt die PDP den verfügbaren Bestand (physisch verfügbar) dieses Produkts für die aktuelle Filiale an. Zusätzlich können Sie den Link **Bestand in anderen Filialen** zum Starten der Bestandssuche auswählen, um die Verfügbarkeit eines Produkts in anderen Filialen oder Lagerorten zu überprüfen.
 

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7d338ba207c9a101f5e224ca66555b16a457bcbc
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 076d4a68362dbf11c5fcf223a836f075d07e27a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271400"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350327"
 ---
 # <a name="apply-unit-of-measure-settings"></a>Einstellungen für die Maßeinheit festlegen
 
@@ -32,7 +32,7 @@ Ein Produkt kann in verschiedenen Einheiten verkauft werden, z. B. „pro Stück
 
 Im Beispiel in der folgenden Abbildung wurde für ein Produkt in der Commerce-Zentrale eine Maßeinheit **ea** (pro Stück) konfiguriert.
 
-![Beispiel für ein Produkt, das mit einer Maßeinheit in der Commerce-Zentrale konfiguriert ist](./media/Productunit-headquarters.PNG)
+![Beispiel für ein Produkt, das mit einer Maßeinheit in der Commerce-Zentralverwaltung konfiguriert ist.](./media/Productunit-headquarters.PNG)
 
 > [!NOTE]
 > Unterstützung für die Anwendung und Anzeige der Maßeinheit ist ab der Commerce-Version 10.0.19 verfügbar.
@@ -54,11 +54,11 @@ Zu den Modulen, die die Einstellungen für die Maßeinheit verwenden, gehören d
 
 Im Beispiel in der folgenden Abbildung zeigt eine Produkt-Detailseite (PDP) die Maßeinheit (**ea**) für ein Produkt an.
 
-![Beispiel für ein PDP, das die Maßeinheit anzeigt](./media/Productunit-PDP.png)
+![Beispiel für ein PDP, das die Maßeinheit anzeigt.](./media/Productunit-PDP.png)
 
 In dem Beispiel in der folgenden Abbildung zeigt ein Produktsammlungsmodul die Maßeinheit (**ea**) für ein Produkt an.
 
-![Beispiel eines Produktsammlung-Moduls, das die Maßeinheit anzeigt](./media/Productunit-productcollection.png)
+![Beispiel eines Produktsammlung-Moduls, das die Maßeinheit anzeigt.](./media/Productunit-productcollection.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

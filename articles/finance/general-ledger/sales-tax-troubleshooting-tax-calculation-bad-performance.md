@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6fce4e2cb8c5507769533a875e23ccc4531abf51
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2bb1f22c33de52f9a7bc00b450ce131d4d58d200
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020138"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352833"
 ---
 # <a name="tax-calculation-performance-affects-transactions"></a>Leistung der Steuerberechnung beeinflusst Transaktionen
 
@@ -36,7 +36,7 @@ Als nächstes können Sie feststellen, ob eine der folgenden Bedingungen erfüll
 - Mehrere Sitzungen verarbeiten die gleiche Transaktion Steuerberechnung zur gleichen Zeit.
 - Die Transaktion hat mehrere Zeilen, und die Ansichten werden in Echtzeit aktualisiert. Zum Beispiel wird das Feld **Berechneter Mehrwertsteuerbetrag** auf der Seite **Allgemeines Journal** in Echtzeit aktualisiert, wenn die Felder einer Zeile geändert werden.
 
-   [![Feld „Berechneter Mehrwertsteuer-Betrag“ auf der Journal-Belegseite](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
+   [![Feld „Berechneter Mehrwertsteuer-Betrag“ auf der Journal-Belegseite.](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
 
 Wenn eine dieser Bedingungen erfüllt ist, verzögern Sie die Steuerberechnung.
 
@@ -53,11 +53,11 @@ Wenn eine dieser Bedingungen erfüllt ist, verzögern Sie die Steuerberechnung.
 
 - Die Transaktion bewirkt, dass das System nicht mehr reagiert, bis die Sitzung beendet ist. Daher kann die Transaktion das steuerliche Ergebnis nicht berechnen. Die folgende Abbildung zeigt das Nachrichtenfeld „Sitzung beendet“, das Sie erhalten.
 
-    [![Nachricht „Sitzung beendet“](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
+    [![Nachricht „Sitzung beendet“.](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
 
-- Die Methoden **TaxUncommitted** benötigen mehr Zeit als andere Methoden. In der folgenden Abbildung benötigt z. B. die Methode **TaxUncommitted ::updateTaxUncommitted()** 43.347,42 Sekunden, aber andere Methoden benötigen 0,09 Sekunden.
+- Die Methoden **TaxUncommitted** benötigen mehr Zeit als andere Methoden. In der folgenden Abbildung benötigt z. B. die Methode **TaxUncommitted::updateTaxUncommitted()** 43.347,42 Sekunden, aber andere Methoden benötigen 0,09 Sekunden.
 
-    [![Dauer der Methode](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
+    [![Dauer der Methode.](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
 
 ## <a name="customizing-and-calling-tax-calculation"></a>Anpassen und Aufruf der Steuerberechnung
 

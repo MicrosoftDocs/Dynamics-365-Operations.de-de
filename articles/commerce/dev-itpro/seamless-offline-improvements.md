@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 47867447e6d16a0fb4542c17ab184068300b2c1c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8f5c8f104d8304cf9a54efcdf6e22efbc3b356b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019956"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348267"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Nahtloser Offline-Schalter für Geschenkkarten- und Gutschriftsvorgänge
 
@@ -36,7 +36,7 @@ Verliert die Kasse jedoch die Verbindung, nachdem eine Geschenkkarte einer Trans
 
 Um die Funktionalität zum Abschluss von Geschenkkartentransaktionen nach dem Wechsel in den Offline-Modus zu aktivieren, gehen Sie auf die Registerkarte **Buchung** auf der Seite **Commerce-Parameter**. Suchen Sie auf dieser Registerkarte die Registerkarte **Geschenkkarte** und stellen Sie **Abschließen von Geschenkkartentransaktionen im Offline-Modus** auf **Ja** ein.
 
-![Offline-Geschenkkarteneinstellung](../media/gift.png)
+![Offline-Geschenkkarteneinstellung.](../media/gift.png)
 
 Commerce-Prameter werden normalerweise im Cache gespeichert. Daher kann es nach der Aktualisierung der Einstellung dieses Parameters und der Einleitung des Verteilungsplans zur Synchronisierung der Änderung mit dem Kanal bis zu 24 Stunden dauern, bis die Änderung wirksam wird. Um die Änderung sofort wirksam werden zu lassen, setzen Sie Microsoft Internet Information Services (IIS) zurück.
 
@@ -46,7 +46,7 @@ Wie die internen Geschenkkarten werden auch die Gutschriften zentral in Commerce
 
 Um die Funktionalität zum Abschluss von Gutschriftstransaktionen nach dem Wechsel in den Offline-Modus zu aktivieren, gehen Sie auf die Registerkarte **Posting** auf der Seite **Commerce-Parameter**. Suchen Sie auf dieser Registerkarte die Registerkarte **Gutschrift** und stellen Sie **Abschließen von Gutschriftstransaktionen im Offline-Modus** auf **Ja** ein.
 
-![Einstellung der Offline-Gutschrift](../media/creditmemo.png)
+![Einstellung der Offline-Gutschrift.](../media/creditmemo.png)
 
 Commerce-Prameter werden normalerweise im Cache gespeichert. Daher kann es nach der Aktualisierung der Einstellung dieses Parameters und der Einleitung des Verteilungsplans zur Synchronisierung der Änderung mit dem Kanal bis zu 24 Stunden dauern, bis die Änderung wirksam wird. Um die Änderung sofort wirksam werden zu lassen, setzen Sie den IIS zurück.
 

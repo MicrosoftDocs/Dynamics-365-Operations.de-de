@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 045d0bf11b11c9a353858ce3ca82c698dbceea7c
-ms.sourcegitcommit: 817716c2e96f24af0ef1d7d5323afdeccdc602f3
+ms.openlocfilehash: 4bebf35a8959d4f72d46d4b40e5487f499b2756d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "6028565"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356651"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>Fehlende Anfangssalden für den Jahresabschluss
 
@@ -46,15 +46,15 @@ Ich habe den Jahresabschluss durchgeführt, während die Option **Vorherigen Abs
 
 Prüfen Sie zunächst den Status des Stapelverarbeitungsauftrags. Der Jahresabschluss umfasst eine Reihe separater Aufgaben. Der wichtigste Schritt ist jedoch der Stapelverarbeitungsauftrag mit der Aufgabenbeschreibung **Schritt 5.0.0**. Während dieses Schritts erfolgt die Buchung der Primobuchungen und optional der Abschlussbuchungen im Hauptbuch. 
 
-[![Historie der Stapelverarbeitungen](./media/yec-mssng-open-blnces-01.png)](./media/yec-mssng-open-blnces-01.png)
+[![Historie der Stapelverarbeitungen.](./media/yec-mssng-open-blnces-01.png)](./media/yec-mssng-open-blnces-01.png)
 
-Wenn dieser Schritt erfolgreich beendet wurde jedoch keine Anfangssalden auf der Seite **Zwischenbilanzermittlung** (**Hauptbuch > Abfragen und Berichte > Zwischenbilanz**) angezeigt werden, überprüfen Sie die Ergebnisse des Stapelverarbeitungsauftrags zum Jahresabschluss, um festzustellen, ob der Schritt „Salden neu erstellen“ erfolgreich abgeschlossen wurde.
+Wenn dieser Schritt erfolgreich beendet wurde, jedoch keine Anfangssalden auf der Seite **Zwischenbilanzermittlung** (**Hauptbuch > Abfragen und Berichte > Zwischenbilanz**) angezeigt werden, überprüfen Sie die Ergebnisse des Batchauftrags zum Jahresabschluss, um festzustellen, ob der Schritt „Salden neu erstellen“ erfolgreich abgeschlossen wurde.
 
-[![Ergebnisse des Stapelverarbeitungsauftrags zum Jahresabschluss](./media/yec-mssng-open-blnces-02.png)](./media/yec-mssng-open-blnces-02.png)
+[![Ergebnisse des Batchauftrags zum Jahresabschluss.](./media/yec-mssng-open-blnces-02.png)](./media/yec-mssng-open-blnces-02.png)
 
 Wenn dieser Schritt aus irgendeinem Grund fehlgeschlagen ist, wurden die Primobuchungen (und optional Abschlussbuchungen) wahrscheinlich erfolgreich gebucht. Sie können überprüfen, ob die Hauptbuchbuchungen erfolgreich auf der Seite **Belegbuchungsabfrage** gebucht wurden, indem Sie die Belegnummer und das Datum angeben, die im Dialogfeld zum Jahresabschluss für das Jahr angegeben sind, das Sie abgeschlossen haben (**Hauptbuch > Abfragen und Berichte > Belegbuchungen**).
 
-[![Belegbuchungsabfrage](./media/yec-mssng-open-blnces-03.png)](./media/yec-mssng-open-blnces-03.png)
+[![Belegbuchungsabfrage.](./media/yec-mssng-open-blnces-03.png)](./media/yec-mssng-open-blnces-03.png)
 
 Wenn die Eröffnungsbelege (und optional Abschlussbelege) vorhanden sind, müssen Sie den Jahresabschluss nicht erneut ausführen. Informationen zum weiteren Vorgehen finden Sie im nächsten Abschnitt.
 
@@ -66,7 +66,7 @@ Der Schritt „Salden neu erstellen“ beim Jahresabschluss ist fehlgeschlagen. 
 
 Der Schritt „Salden neu erstellen“ aktualisiert die Hauptbuchsalden, die beim Generieren der Zwischenbilanzermittlung verwendet werden.  Dies ist der letzte Schritt im Jahresabschlussprozess.  Wenn dieser Schritt der einzige Schritt ist, der fehlgeschlagen ist, wurden die Hauptbuchbuchungen erfolgreich gebucht.  Sie müssen den Jahresendabschluss nicht erneut ausführen. Sie können den Prozess ausführen, um die Salden manuell über die Seite **Finanzdimensionssätze** (**Hauptbuch > Kontenplan > Dimensionen > Finanzdimensionssätze**) neu zu erstellen.
 
-[![Schaltfläche „Salden neu erstellen“ auf der Seite „Finanzdimensionssätze“](./media/yec-mssng-open-blnces-04.png)](./media/yec-mssng-open-blnces-04.png)
+[![Schaltfläche „Salden neu erstellen“ auf der Seite „Finanzdimensionssätze“.](./media/yec-mssng-open-blnces-04.png)](./media/yec-mssng-open-blnces-04.png)
 
 Wenn die Verarbeitung dieses Schritts lange dauert, empfehlen wir, die bewährten Methoden für Finanzdimensionssätze zu überprüfen, wie unter [Bewährte Methoden für die Aktualisierung von Finanzdimensionssätzen](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/best-practices-for-updating-financial-dimension-set-dimension-sets) beschrieben. 
 

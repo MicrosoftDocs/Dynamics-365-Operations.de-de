@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6f74602cafe3f0848a9e03f17300ca6242fe1545
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 53d01756d803a0ebc9eb366deded4bf3bef3b1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893979"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351745"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Laden Sie ER-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes herunter
 
@@ -40,7 +40,7 @@ In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporti
 3. Wählen Sie im Abschnitt **Konfigurationsanbieter** die Kachel **Microsoft** aus.
 3. Klicken Sie auf der Kachel **Microsoft** auf **Repositorys**.
 
-    ![Elektronische Berichterstellung – Arbeitsbereich](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Elektronische Berichterstellung – Arbeitsbereich.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. Auf der Seite **Konfigurationsrepositorys** wählen Sie im Raster ein vorhandenes Repository vom Typ **Global** aus. Wenn dieses Repository nicht im Raster angezeigt wird, führen Sie die folgenden Schritte aus:
 
@@ -52,7 +52,7 @@ In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporti
 
 5. Wählen Sie **Öffnen**, um die Liste der ER-Konfigurationen für das ausgewählte Repository anzuzeigen.
 
-    ![Konfigurationsrepository-Seite](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Konfigurationsrepository-Seite.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Einzelne Konfiguration importieren
 
@@ -63,7 +63,7 @@ In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporti
     > [!NOTE]
     > Die Schaltfläche **Importieren** ist nicht für ER-Konfigurationsversionen verfügbar, die in der aktuellen Instanz bereits vorhanden sind.
 
-    ![Konfigurationsrepository-Seite](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Konfigurationsrepository-Seite.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Importierte Konfigurationen filtern
 
@@ -77,7 +77,7 @@ In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporti
 4. Auf dem Inforegister **Konfigurationen** wählen Sie **Importieren**, um die gefilterten Konfigurationen aus dem globalen Repository auf die aktuelle Instanz herunterzuladen.
 5. Im Inforegister **Konfigurationen** wählen Sie **Filter zurücksetzen**, um die angegebenen Auswahlbedingungen zu bereinigen.
 
-    ![Konfigurationsrepository-Seite](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Konfigurationsrepository-Seite.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Abhängig von den ER-Einstellungen werden Konfigurationen überprüft, nachdem diese importiert wurden. Sie werden über alle Inkonsistenz-Probleme benachrichtigt, die ermittelt werden. Sie müssen diese Probleme beheben, bevor Sie die importierten Konfigurationsversionen verwenden können. Weitere Informationen finden Sie in der Liste der zugehörigen Ressourcen.

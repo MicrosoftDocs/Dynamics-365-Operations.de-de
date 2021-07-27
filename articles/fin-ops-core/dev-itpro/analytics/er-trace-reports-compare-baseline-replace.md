@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 49ca9a878b9289b02f9bb9346190425197e0ceea
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: f6eaf5f9cbc6eed09f6a3067826f7fa15fb94b2e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117034"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345863"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Verbesserungen bei der Nachverfolgung erstellter ER-Berichtsergebnisse und Vergleich mit Ausgangswerten
 
@@ -57,7 +57,7 @@ Um die Schritte dieses Beispiels abzuschließen, müssen Sie zunächst die Schri
 
 Der Grundwert wurde für das ausgewählte Format **Format zum erlernen der ER-Grundwerte** hinzugefügt, aber die Grundwertregeln für diesen Grundwert wurden noch nicht hinzugefügt.
 
-![Seite „Grundwerte“ des EB-Formats, noch keine Regeln](media/GER-BaselineSample-AddBaseline2.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
+![Seite „Grundwerte“ des EB-Formats, noch keine Regeln.](media/GER-BaselineSample-AddBaseline2.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
 
 ### <a name="make-a-new-baseline-rule"></a>Erstellen eines neuen Grundwertregel
 
@@ -70,7 +70,7 @@ Der Grundwert wurde für das ausgewählte Format **Format zum erlernen der ER-Gr
 7. Wählen Sie **OK**.
 8. Wählen Sie **Ausgangswerte** aus.
 
-    ![Seite mit Grundwerten des elektronischen Berichtsformats, Grundwerte ausgewählt](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
+    ![Seite mit Grundwerten des elektronischen Berichtsformats, Grundwerte ausgewählt.](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
 
     Die generierte ausgehende Datei wird dem Grundwert des ausgeführten ER-Formats automatisch angefügt. Die Grundwertregel wurde diesem Grundwert automatisch hinzugefügt und enthält auch die Referenz zur zugeordneten Datei.
 
@@ -101,23 +101,23 @@ Um die Schritte dieses Beispiels abzuschließen, müssen Sie zunächst die Schri
 4. Wählen Sie **Designer** aus.
 5. Wählen Sie in der Struktur **Ausgabe\\Dokument** aus.
 6. Wählen Sie **Hinzufügen** aus.
-7. Im Drop-Down-Dialogfeld in der Struktur, wählen Sie **XML \\ Attribut** aus.
+7. Im Drop-Down-Dialogfeld in der Struktur, wählen Sie **XML\\Attribut** aus.
 8. Geben Sie im Feld **Name** **ProcessingDateTime** ein.
 9. Wählen Sie **OK**.
-10. Wählen Sie auf der Registerkarte **Zuordnung** in der Struktur **Ausgabe \\Dokument\\ProcessingDateTime** aus.
+10. Wählen Sie auf der Registerkarte **Zuordnung** in der Struktur **Ausgabe\\Dokument\\ProcessingDateTime** aus.
 11. Wählen Sie **Formel bearbeiten** aus.
 12. Geben Sie im Feld **Formel** den folgenden Ausdruck ein: **DATETIMEFORMAT(NOW(), "O")**
 13. Wählen Sie **Speichern** und dann **Test** aus.
 14. Wählen Sie **Test** erneut aus, um den konfigurierten Ausdruck zu testen.
 
-    ![Formel-Designer-Seite](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Screenshot der Formel-Designer-Seite")
+    ![Seite „Formeldesigner“.](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Screenshot der Formel-Designer-Seite")
 
     > [!NOTE]
     > Die Registerkarte **Testergebnis** gibt an, dass der konfigurierte Ausdruck einen unterschiedlichen Datums-und Uhrzeitwert zurückgibt, wenn sie angerufen wird.
 
 15. Schließen Sie die Seite **Formeldesginer** und wählen Sie **Speichern** aus.
 
-    ![Formatdesignerseite](media/GER-BaselineSample-FormatMappingDesign2.PNG "Screenshot der Format Designer Seite")
+    ![Formatdesignerseite.](media/GER-BaselineSample-FormatMappingDesign2.PNG "Screenshot der Format Designer Seite")
 
 16. Seite **Format-Designer** schließen.
 
@@ -128,15 +128,15 @@ Um die Schritte dieses Beispiels abzuschließen, müssen Sie zunächst die Schri
 3. In der Liste der Ausgangswerte wählen Sie den Ausgangswert aus, der für das Format **Format zum erlernen von ER-Ausgangswerten** konfiguriert wird.
 4. Auf dem Inforegister **Ausgangswerte** wählen Sie **Löschen** aus, um die Ausgangswertregel zu entfernen, die Sie zuvor konfiguriert haben.
 
-![Seite mit Grundwerten des elektronischen Berichtsformats, gelöscht](media/GER-BaselineSample-AddBaseline3.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
+![Seite mit Grundwerten des elektronischen Berichtsformats, gelöscht.](media/GER-BaselineSample-AddBaseline3.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>Definieren Sie Ersatz für Bindungen eines entworfenen ER-Formats
 
 1. Wählen Sie auf der Seite **Konfigurationen** auf dem Inforegister **Ersatz** die Option **Komponenten auswählen** aus.
-2. In der Formatkomponentenstruktur erweitern Sie den Knoten **Ausgabe**, erweitern Sie **Ausgabe \\Dokument** und aktivieren Sie anschließend das Kontrollkästchen für **Ausgabe \\Dokument\\ProcessingDateTime**.
-3. Wählen Sie **OK**.
+2. In der Formatkomponentenstruktur erweitern Sie den Knoten **Ausgabe**, erweitern Sie **Ausgabe\\Dokument** und aktivieren Sie anschließend das Kontrollkästchen für **Ausgabe\\Dokument\\ProcessingDateTime**.
+3. Wählen Sie **OK** aus.
 
-![Seite mit Grundwerten des elektronischen Berichtsformats, Komponenten](media/GER-BaselineSample-AddBaseline4.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
+![Seite mit Grundwerten des elektronischen Berichtsformats, Komponenten.](media/GER-BaselineSample-AddBaseline4.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
 
 Die ausgewählte ER-Formatkomponente wurde der Liste der Komponenten auf dem Inforegister **Ersetzungen** hinzugefügt. Wenn das Basis-ER-Format in Debugmodus ausgeführt wird, wird die Bindung des Formats für jede Komponente durch die Bindung ersetzt, die in der Spalte **Binden** angezeigt wird. Um die Standardbindung für eine Komponente zu ändern, die im Inforegister **Ersetzungen** angezeigt wird, wählen Sie **Bearbeiten** aus.
 
@@ -144,7 +144,7 @@ Die ausgewählte ER-Formatkomponente wurde der Liste der Komponenten auf dem Inf
 
 Führen Sie die Schritte im Abschnitt „Beispiel: Automatisieren Sie die Struktur der Grundlagenregeln“ oben in diesem Thema aus. Eine Benachrichtigung warnt Sie, dass die ausgehende Datei mit Ausgangswerteinstellungen erstellt wurde, und dass eine erzwungene Ersetzung der Formatbindungen aufgetreten ist.
 
-![Benachrichtigung auf der Seite Konfigurationen](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Screenshot der Benachrichtigung auf der Seite Konfigurationen")
+![Benachrichtigung auf der Seite Konfigurationen.](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Screenshot der Benachrichtigung auf der Seite Konfigurationen")
 
 ### <a name="suppress-warnings-about-the-replacement-of-format-bindings"></a>Warnungen zur Ersetzung von Formatbindungen unterdrücken
 
@@ -192,11 +192,11 @@ Exportierte Ausgangswerteinstellungen können in eine andere Umgebung importiert
 
 Um Ausgangswerteinstellungen aus einer lokal gespeicherten XML-Datei zu importieren, wählen Sie auf der Seite **Formatausgangswerte für elektronische Berichterstellung** **Importieren** und anschließend **Durchsuchen** aus, um die XML-Datei auszuwählen.
 
-![Dialogfeld Baseline-Einstellungen importieren](media/GER-BaselineSample-ImportBaseline1.PNG "Screenshot des Dialogfeldes Baselines-Einstellungen importieren")
+![Dialogfeld Baseline-Einstellungen importieren.](media/GER-BaselineSample-ImportBaseline1.PNG "Screenshot des Dialogfeldes Baselines-Einstellungen importieren")
 
 Um Ausgangswerteinstellungen aus einer XML-Datei zu importieren, die auf dem Microsoft SharePoint-Server gespeichert ist, wählen Sie basierend auf den aktuellen Einstellungen der Dokumentverwaltung und dem ausgewählten Dokumenttyp, auf Basis der aktuellen Dokumentverwaltungseinstellungen gespeichert wird und den ausgewählten Dokumenttyp auf der Seite **Formatausgangswerte für elektronische Berichterstellung** **Importieren aus Quelle** aus. Wählen Sie dann den Dokumenttyp und die XML-Datei aus. Der erforderliche Dokumenttyp, um auf den SharePoint-Ordner zuzugreifen, muss zuvor bereits konfiguriert werden.
 
-![Importieren aus Quelldialogfeld](media/GER-BaselineSample-ImportBaseline2.PNG "Screenshot des Dialogfensters Import aus Quelle")
+![Importieren aus Quelldialogfeld.](media/GER-BaselineSample-ImportBaseline2.PNG "Screenshot des Dialogfensters Import aus Quelle")
 
 > [!NOTE]
 > Sie können die Aufgabenaufzeichnung verwenden, um die Schritte zum Auswählen des erforderlichen Dokumenttyps und des Dateinamens im Dialogfeld **Importieren aus Quelle** zu erfassen. Auf diese Weise können Sie erforderliche Ausgangswerteinstellungen auf dem SharePoint-Server behalten und anschließend automatisch importieren, indem Sie eine Aufgabenaufzeichnung wiedergeben, wenn Sie automatisierte Tests ausführen, indem Sie Regression Suite Automation Tool verwenden.

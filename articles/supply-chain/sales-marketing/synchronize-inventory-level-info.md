@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 15466699b94c284208330d50b840c874534b879c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ce5ddf863988475550584384f4cf26f1302768aa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910279"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355900"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Lagerebeneninformationen aus Supply Chain Management mit Field Service synchronisieren 
 
@@ -31,7 +31,7 @@ ms.locfileid: "5910279"
 
 In diesem Thema werden die Vorlagen und die zugrunde liegenden Aufgaben erläutert, die zur Synchronisierung von Bestandsinformationen von Dynamics 365 Supply Chain Management auf Dynamics 365 Field Service verwendet werden.
 
-[![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
+[![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service.](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
 Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um Bestandsdaten von Supply Chain Management auf Field Service zu synchronisieren.
@@ -42,7 +42,7 @@ Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um Be
 **Aufgaben im Datenintegrationsprojekt**
 - Produktbestand
 
-Die folgende Synchronisierung ist erforderlich, bevor die Synchronisierung von  Bestandlisten erfolgen kann:
+Die folgende Synchronisierung ist erforderlich, bevor die Synchronisierung von Bestandlisten erfolgen kann:
 - Lagerorte (Supply Chain Management zu Field Service) 
 - Field Service-Produkte mit Bestand (Supply Chain Management zu Sales) 
 
@@ -67,7 +67,7 @@ Supply Chain Management dient als Master für die Bestandebenen. Daher ist es wi
 Die Produkte und die Lagerorte, in denen Lagerbestände verwaltet werden von Supply Chain Management können mit der erweiterten Abfrage und Filterung (Power-Abfrage) gesteuert werden.
 
 > [!NOTE]
-> Es ist möglich, mehrere Lagerorte in Field Service zu erstellen (mit **wird extern verwaltet** = Nein) und diese zu einem bestimmten Lagerort in Supply Chain Management mit den erweiterten Abfragen und Filterfunktionen dann zugeordnet werden soll. Diese Aufgabe wird in von Fällen verwendet, in denen Sie Field Service verwenden, um die detaillierte Bestandebene zu steuern und Supply Chain Management zu aktualisieren. In diesem Fall erhält Field Service keine Bestandebenenaktualisierung von Supply Chain Management. Siehe zusätzliche Informationen unter [Synchronisierung von Bestandanpassungen von Field Service zu Supply Chain Management](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) und [Synchronisieren von Arbeitsaufträgen in Field Service zu Arbeitsaufträgen, die mit Projekten in Supply Chain Management verknüpft sind](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+> Es ist möglich, mehrere Lagerorte in Field Service zu erstellen (mit **wird extern verwaltet = Nein**) und diese zu einem bestimmten Lagerort in Supply Chain Management mit den erweiterten Abfragen und Filterfunktionen dann zugeordnet werden soll. Diese Aufgabe wird in von Fällen verwendet, in denen Sie Field Service verwenden, um die detaillierte Bestandebene zu steuern und Supply Chain Management zu aktualisieren. In diesem Fall erhält Field Service keine Bestandebenenaktualisierung von Supply Chain Management. Siehe zusätzliche Informationen unter [Synchronisierung von Bestandanpassungen von Field Service zu Supply Chain Management](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) und [Synchronisieren von Arbeitsaufträgen in Field Service zu Arbeitsaufträgen, die mit Projekten in Supply Chain Management verknüpft sind](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM-Lösung
 Die **externe Produktbestandslistenentität** ist eine neue Entität, die nur für Back-End der Integration verwendet wird. Sie erhalten die Lagerbestandswerte von Supply Chain Management in der Integdration und transformiert dann jene Werte manuell zur Bestanderfassung, welche dann die Bestandprodukte am Lagerort ändert.
@@ -89,7 +89,7 @@ Wenden Sie Filter mit der erweiterten Abfrage und Filterung an, um zu steuern, d
 
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Produktbestand (Supply Chain Management zu Field Service): Produktbestand
 
-[![Vorlagenzuordnung in Datenintegration](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

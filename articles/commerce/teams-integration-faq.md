@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3fc7cff0a3f8d0fbfb196ec5951b138088afece7
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 45decb55ce5cf3399f48034df367e1565ab689bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019469"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347439"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Integration von Dynamics 365 Commerce und Microsoft Teams – FAQ
 
@@ -45,7 +45,7 @@ Führen Sie die folgenden Schritte aus, um einem Mitarbeiter in der Commerce-Zen
 
 In der Commerce-Zentralverwaltung ist die Hierarchie jeder Organisation einem oder mehreren Zwecken zugeordnet. Stellen Sie sicher, dass der Hierarchie, die Sie in Microsoft Teams bereitstellen möchten, der Zweck **Einzelhandelsberichterstellung** wie im folgenden Beispielbild gezeigt zugeordnet ist. 
 
-![Beispiel für einen Organisationshierarchiezweck in der Commerce-Zentralverwaltung](media/d365-commerce-organization-hierarchies-purpose.png)
+![Beispiel für einen Organisationshierarchiezweck in der Commerce-Zentralverwaltung.](media/d365-commerce-organization-hierarchies-purpose.png)
 
 ### <a name="how-do-i-enable-retail-store-workers-to-sign-in-to-commerce-point-of-sale-pos-using-azure-active-directory-azure-ad"></a>Wie kann ich Mitarbeitern von Einzelhandelsgeschäften ermöglichen, sich bei Commerce Point of Sale (POS) mit Azure Active Directory (Azure AD) anzumelden?
 

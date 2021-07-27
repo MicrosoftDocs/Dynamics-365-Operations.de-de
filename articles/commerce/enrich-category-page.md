@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e18439fc0e91619cade33b83b87be0d5c4d1040
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d9470e4d517c5fb0b49ae2e26eb14220ea17aa3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799010"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349399"
 ---
 # <a name="enrich-a-category-landing-page"></a>Kategoriezielseite erweitern
 
@@ -31,7 +31,7 @@ Handel enthält eine Standardkategorieangebotsseite, die verwendet wird, wenn Ka
 
 Allerdings anstatt die Standardkategorieseite zu verwenden, sollten Sie eine angereicherte Kategorieangebotsseite verwenden, die mehr Inhalt und mehr bestimmte Projekte aufweist. Eine typische Bereicherung ist möglicherweise das Hinzufügen von kategoriespezifischen Marketings-Inhalt der Kategorieseite hinzuzufügen. Dieser Inhalt kann überkreuzte Kategorieproduktplatzierungen enthalten für Cross-Sell-Zwecke, redaktionelle Listen, Bilder, Videos und anderen Text. Sie können entweder die Standardkategorieseite ändern oder eine andere Kategorieseite für eine bestimmte Kategorie definieren.
 
-![Angereicherte Kategorie-Startseite](./media/CategoryLandingPages.png)
+![Angereicherte Kategorie-Startseite.](./media/CategoryLandingPages.png)
 
 Im Commerce Site Builder umfasst die Seite **Produkte** eine Liste der Kategorien vom Kanal, die dem Standort zugeordnet werden. Wenn der Status **Angereichert** für eine Kategorieseite aktiviert ist, ist diese Kategorieseite angereichert worden. Andernfalls werden die Standardkategorieseite und der Inhalt für die Kategorie verwendet. Sie können in der Vorschau angereicherte und nicht angereicherte Kategorieseiten für eine Kategorie anzeigen, wenn ein Kategoriename in der Liste ausgewählt ist.
 

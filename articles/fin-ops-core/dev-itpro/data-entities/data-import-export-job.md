@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 12de6d70243bdcda5fc7887f24eecb462de23683
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937329"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351018"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
@@ -106,7 +107,7 @@ Es gibt zwei zuzuordnende Ansichten: **Zuordnungsvisualisierung**, das die Stand
 
 Sie können auf der Seite eine Zuordnung generieren, indem Sie **Generieren Sie Quellzuordnung** auswählen. Eine generierte Zuordnung verhält sich wie eine automatische Zuordnung. Daher müssen Sie alle nicht zugeordneten Felder manuell zuordnen.
 
-![Datenzuordnung](./media/dixf-map.png)
+![Datenzuordnung.](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Überprüfen Sie die Sicherheit für den Export- oder Importvorgang.
 Der Zugriff auf den Arbeitsbereich **Datenverwaltung** kann eingeschränkt werden, damit Benutzer nur auf bestimmte Dateneneinzelvorgänge zugreifen können. Der Zugriff auf einen Dateneneinzelvorgang bedeutet Zugriff auf die Ausführungshistorie dieses Einzelvorgangs und Zugriff auf die Tabellen. Daher müssen Sie prüfen, ob übereinstimmende Zugriffssteuerungen vorhanden sind, wenn Sie einen Dateneneinzelvorgang erstellen.
@@ -132,7 +133,7 @@ Sie können einen Einzelvorgang gleichzeitig aktivieren, indem Sie **Importieren
 ## <a name="validate-that-the-job-ran-as-expected"></a>Überprüfen Sie, ob der Einzelvorgang wie erwartet ausgeführt wurde
 Die Einzelvorgangshistorie ist zur Problembehebung und Untersuchung auf Import- und Exporteinzelvorgängen verfügbar. Historische Einzelvorgangsausführungen werden nach Perioden sortiert.
 
-![Historie des Stapelverarbeitungsauftrags](./media/dixf-job-history.md.png)
+![Historie des Stapelverarbeitungsauftrags.](./media/dixf-job-history.md.png)
 
 Jede Einzelvorgangsausführung enthält die folgenden Details:
 

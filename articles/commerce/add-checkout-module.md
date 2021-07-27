@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b1e86cbe1c2b9247f902a8f5777e73f7a9b37929
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bda264a255a688d64e314d994dc281602c9324cc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797814"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347589"
 ---
 # <a name="checkout-module"></a>Auschecken-Modul
 
@@ -33,7 +33,7 @@ Ein Auscheckenmodul rendert Daten basierend auf der Warkenkorb-Kennung Diese Ken
 
 Das folgende Bild zeigt ein Beispiel eines Fabrikam-Checkoutmoduls auf einer Checkout-Seite.
 
-![Beispiel eines Checkout-Moduls](./media/Checkout.PNG)
+![Beispiel eines Checkout-Moduls.](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Checkoutmodul-Eigenschaften
 
@@ -52,13 +52,13 @@ Ein Checkout-Modul zeigt eine Bestellübersicht an und bietet die Funktionalitä
 
     Das folgende Bild zeigt ein Beispiel eines Versandadressenmoduls auf einer Checkout-Seite.
 
-    ![Beispiel eines Versandadressmoduls](./media/ecommerce-shippingaddress.PNG)
+    ![Beispiel eines Versandadressmoduls.](./media/ecommerce-shippingaddress.PNG)
 
 - **Lieferoptionen** – Dieses Modul ermöglicht einem Kunden, einen Liefermodus für einen Auftrag auszuwählen. Weitere Informationen zu diesem Modul finden Sie unter [Lieferoptionsmodul](delivery-options-module.md).
 
     Das folgende Bild zeigt ein Beispiel eines Lieferoptionsmoduls auf einer Kassenseite.
  
-    ![Beispiel eines Lieferoptionsmoduls](./media/ecommerce-deliveryoptions.PNG)
+    ![Beispiel eines Lieferoptionsmoduls.](./media/ecommerce-deliveryoptions.PNG)
 
 - **Containerabschnitt Auschecken** – Dieses Modul ist ein Container, der mehrere Module aufnehmen kann, um einen Bereich innerhalb des Auscheckflusses zu erstellen. So können Sie alle zahlungsrelevanten Module innerhalb dieses Containers speichern, damit diese in einem Bereich angezeigt werden. Dieses Modul wirkt sich nur auf das Layout des Flusses aus.
 
@@ -80,7 +80,7 @@ Ein Checkout-Modul zeigt eine Bestellübersicht an und bietet die Funktionalitä
 
     Das folgende Bild zeigt ein Beispiel für die allgemeinen Geschäftsbedingungen auf einer Checkout-Seite.
 
-    ![Beispiel für die allgemeinen Geschäftsbedingungen auf einer Checkout-Seite](./media/ecommerce-checkout-terms.PNG)
+    ![Beispiel für die allgemeinen Geschäftsbedingungen auf einer Checkout-Seite.](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-Interaktion
 

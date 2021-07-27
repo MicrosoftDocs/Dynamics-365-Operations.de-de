@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ae957f592ad9a1237817fec5d4172295f9a53020
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: a9b2e8d46debf8e065361d85f10162cda56b62e8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222584"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349033"
 ---
 # <a name="enable-customer-payment-predictions-preview"></a>Vorhersagen für Debitorenzahlungen aktivieren (Vorschau)
 
@@ -51,7 +51,7 @@ In diesem Thema wird erläutert, wie Sie die Funktion „Debitorenzahlungsvorher
 
     1. Gehen Sie zu **Kredit und Inkasso \> Einrichtung \> Finance Insights \> Parameter für Finance Insights**.
 
-        [![Seite der Parameter für Finance Insights, bevor die Funktion konfiguriert wird](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
+        [![Seite der Parameter für Finance Insights, bevor die Funktion konfiguriert wird.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
 
     2. Wählen Sie auf der **Parameter für Finance Insights**-Seite auf der **Debitorenzahlungseinblicke**-Registerkarte den Link **Die im Vorhersagemodell verwendeten Datenfelder anzeigen** an, um die **Datenfelder für das Vorhersagemodell**-Seite anzuzeigen. Dort können Sie die Standardliste der Felder anzeigen, die zum Erstellen des Vorhersagemodells für künstliche Intelligenz (KI) für Debitorenzahlungsvorhersagen verwendet werden.
 
@@ -77,7 +77,7 @@ In diesem Thema wird erläutert, wie Sie die Funktion „Debitorenzahlungsvorher
 
 Nachdem die Funktion aktiviert und konfiguriert und das Vorhersagemodell erstellt wurde und funktioniert, zeigt der **Vorhersagemodell**-Abschnitt der **Parameter für Finance Insights**-Seite die Genauigkeit des Modells, wie in der folgenden Abbildung gezeigt an.
 
-[![Genauigkeit des Vorhersagemodells auf der Seite Parameter für Financial Insights](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
+[![Genauigkeit des Vorhersagemodells auf der Seite Parameter für Financial Insights.](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
 
 ## <a name="release-details"></a>Freigabedetails
 

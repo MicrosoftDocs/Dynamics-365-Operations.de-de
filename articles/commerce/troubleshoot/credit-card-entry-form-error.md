@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ea9105481e6c5812565f0d3604906c905bcb5443
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 593c1bdb502330c5dc9f26254dbed809cea7651b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018505"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347391"
 ---
 # <a name="credit-card-entry-page-shows-an-error-at-checkout"></a>Auf der Kreditkarten-Eingabeseite wird beim Auschecken ein Fehler angezeigt
 
@@ -32,7 +32,7 @@ Dieses Thema enthält Anleitungen zur Problembehandlung, die hilfreich sein kön
 
 Wenn Sie die Checkout-Seite eines Onlineshops öffnen, wird der Abschnitt **Zahlungsmethode** nicht geladen und die folgende Fehlermeldung wird angezeigt: „Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.“
 
-![Zahlungsmodulfehler](media/payment-module-error.jpg)
+![Zahlungsmodulfehler.](media/payment-module-error.jpg)
 
 ## <a name="resolution"></a>Lösung
 

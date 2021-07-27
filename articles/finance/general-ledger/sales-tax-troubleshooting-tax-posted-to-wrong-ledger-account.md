@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 3d197046bd547757f32712a50949b41897f6fedf
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 6834b460d3a78e47edb2edb7a72651e8454bf0ac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020090"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343813"
 ---
 # <a name="tax-is-posted-to-the-wrong-ledger-account-in-the-voucher"></a>Die Steuer wird auf das falsche Sachkonto im Beleg gebucht
 
@@ -30,26 +30,26 @@ Während der Buchung wird die Steuer möglicherweise auf das falsche Sachkonto i
 
 1. Wählen Sie auf der Seite **Gutschein-Transaktionen** die Transaktion aus, mit der Sie arbeiten möchten, und wählen Sie dann **Gebuchte Mehrwertsteuer**.
 
-    [![Schaltfläche „Gebuchte Mehrwertsteuer“ auf der Seite „Gutscheintransaktionen“](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
+    [![Schaltfläche „Gebuchte Mehrwertsteuer“ auf der Seite „Gutscheintransaktionen“.](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
 
 2. Überprüfen Sie den Wert im Feld **Verkaufssteuer-Code**. In diesem Beispiel ist es **VAT 19**.
 
-    [![Umsatzsteuer-Codefeld auf der Seite „Gebuchte Umsatzsteuer“](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
+    [![Umsatzsteuer-Codefeld auf der Seite „Gebuchte Umsatzsteuer“.](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
 
 ## <a name="check-the-ledger-posting-group-of-the-tax-code"></a>Prüfen Sie die Buchungsgruppe des Sachkontos für das Steuerkennzeichen
 
 1. Wechseln Sie zu **Steuern** \> **Direkte Steuern** \> **Umsatzsteuer** \> **Umsatzsteuercodes**.
 2. Suchen und wählen Sie den Steuercode und überprüfen Sie den Wert im Feld **Sachkonto-Buchungsgruppe**. In diesem Beispiel ist es **Mehrwertsteuer**.
 
-    [![Feld „Buchungsgruppe des Sachkontos“ auf der Seite Mehrwertsteuer-Codes](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
+    [![Feld „Buchungsgruppe des Sachkontos“ auf der Seite „Mehrwertsteuer-Codes“.](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
 
 3. Der Wert im Feld **Sachkonto-Buchungsgruppe** ist eine Verknüpfung. Um die Details der Konfiguration der Gruppe zu sehen, wählen Sie den Link. Alternativ können Sie das Feld auswählen und halten (oder mit der rechten Maustaste darauf klicken) und dann **Details anzeigen** wählen.
 
-    [![Befehl „Details anzeigen“](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
+    [![Befehl „Details anzeigen“.](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
 
 4. Überprüfen Sie im Feld **Zahlbare Mehrwertsteuer**, ob die Kontonummer entsprechend der Art der Transaktion korrekt ist. Wenn dies nicht der Fall ist, wählen Sie das richtige Konto aus, auf das gebucht werden soll. In diesem Beispiel soll die Mehrwertsteuer des Verkaufsauftrags auf das Konto 222200 Umsatzsteuerverbindlichkeit gebucht werden.
 
-    [![Feld Umsatzsteuerverbindlichkeit auf der Seite Buchungsgruppen Sachkonto](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
+    [![Feld „Umsatzsteuerverbindlichkeit“ auf der Seite „Sachkontobuchungsgruppen“.](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
 
     Die folgende Tabelle enthält Informationen zu den einzelnen Feldern auf der Seite **Sachkonten-Buchungsgruppen**.
 
@@ -69,13 +69,13 @@ Während der Buchung wird die Steuer möglicherweise auf das falsche Sachkonto i
 
 Im Code wird das Buchungskonto durch die Dimension des Ledgers bestimmt. Die Ledger Dimension speichert die Datensatz-ID eines Kontos in der Datenbank.
 
-1. Fügen Sie für einen Verkaufsauftrag einen Haltepunkt bei den Methoden **Steuer ::saveAndPost()** und **Steuer ::post()** ein. Achten Sie auf den Wert von **\_ledgerDimension**.
+1. Fügen Sie für einen Verkaufsauftrag einen Haltepunkt bei den Methoden **Steuer::saveAndPost()** und **Steuer::post()** ein. Achten Sie auf den Wert von **\_ledgerDimension**.
 
-    [![Beispiel für einen Verkaufsauftragscode mit Haltepunkt](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
+    [![Beispiel für einen Verkaufsauftragscode mit Haltepunkt.](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
 
-    Fügen Sie für eine Einkaufsbestellung einen Haltepunkt bei den Methoden **TaxPost ::saveAndPost()** und **TaxPost ::postToTaxTrans()** ein. Achten Sie auf den Wert von **\_ledgerDimension**.
+    Fügen Sie für eine Einkaufsbestellung einen Haltepunkt bei den Methoden **TaxPost::saveAndPost()** und **TaxPost::postToTaxTrans()** ein. Achten Sie auf den Wert von **\_ledgerDimension**.
 
-    [![Beispiel für einen Code zur Einkaufsbestellung mit Haltepunkt](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
+    [![Beispiel für einen Code zur Einkaufsbestellung mit Haltepunkt.](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
 
 2. Führen Sie die folgende SQL-Abfrage aus, um den Anzeigewert des Kontos in der Datenbank zu finden, basierend auf der Datensatz-ID, die von der Dimension „Ledger“ gespeichert wird.
 
@@ -83,9 +83,9 @@ Im Code wird das Buchungskonto durch die Dimension des Ledgers bestimmt. Die Led
     select * from DIMENSIONATTRIBUTEVALUECOMBINATION where recid={the value of _ledgerDimension}
     ```
 
-    [![Anzeigewert der Datensatz-ID](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
+    [![Anzeigewert der Datensatz-ID.](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
 
-3. Untersuchen Sie den Callstack, um herauszufinden, wo der Wert **_ledgerDimension** zugewiesen ist. Normalerweise ist der Wert von **TmpTaxWorkTrans**. In diesem Fall sollten Sie einen Haltepunkt bei **TmpTaxWorkTrans ::insert()** und **TmpTaxWorkTrans ::update()** einfügen, um herauszufinden, wo der Wert zugeordnet wurde.
+3. Untersuchen Sie den Callstack, um herauszufinden, wo der Wert **_ledgerDimension** zugewiesen ist. Normalerweise ist der Wert von **TmpTaxWorkTrans**. In diesem Fall sollten Sie einen Haltepunkt bei **TmpTaxWorkTrans::insert()** und **TmpTaxWorkTrans::update()** einfügen, um herauszufinden, wo der Wert zugeordnet wurde.
 
 ## <a name="determine-whether-customization-exists"></a>Ermitteln Sie, ob eine Anpassung vorliegt
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9c19f999a94e6ad8451c208cf204d0b59306b77d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a447dee71e57df07d1e7709bc8e4d075fcc803b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837800"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343675"
 ---
 # <a name="schedule-maintenance-plans"></a>Wartungspläne terminieren
 
@@ -44,7 +44,7 @@ Die vorbeugende Wartungsplanung erzeugt Kalendereinträge auf Anlagen, basierend
 
 4. Es ist möglich, Kalendereinträge auf der Grundlage von Wartungsplänen (Uhrzeit oder Zähler), Anlagen, Anlagentypen, Anlagentypen, Technischen Standorte und Technischen Standortarten zu erzeugen. Klicken Sie auf die Schaltfläche **Filter** und treffen Sie bei Bedarf Ihre Auswahl.
 
-- Bezüglich der Terminierung von Wartungsplänen auf Technischen Standorten: Wenn Sie die Einrichtung von Anlagenarten, Herstellern und Modellen zu Wartungsplänen in **Alle Technischen Standorte** > **Wartungspläne** FastTab aktualisieren, nachdem Sie Wartungspläne terminiert haben, werden bestehende Wartungsplaneinträge zu diesem Technischen Standort automatisch gelöscht. Um neue Kalendereinträge anzulegen, die dem aktualisierten Wartungsplan auf dem Technischen Standort entsprechen, müssen Sie einen neuen Wartungsplanplan für diesen Technischen Standort erstellen. Weitere Informationen zur Einrichtung von Anlagentypen, Herstellern und Modellen auf Technischen Standorte finden Sie unter [Technische Standorte anlegen](../functional-locations/create-functional-locations.md).
+- Bezüglich der Terminierung von Wartungsplänen auf Technischen Standorten: Wenn Sie die Einrichtung von Anlagenarten, Herstellern und Modellen zu Wartungsplänen in **Alle Technischen Standorte** > **Wartungspläne**-FastTab aktualisieren, nachdem Sie Wartungspläne terminiert haben, werden bestehende Wartungsplaneinträge zu diesem Technischen Standort automatisch gelöscht. Um neue Kalendereinträge anzulegen, die dem aktualisierten Wartungsplan auf dem Technischen Standort entsprechen, müssen Sie einen neuen Wartungsplanplan für diesen Technischen Standort erstellen. Weitere Informationen zur Einrichtung von Anlagentypen, Herstellern und Modellen auf Technischen Standorte finden Sie unter [Technische Standorte anlegen](../functional-locations/create-functional-locations.md).
 
 >*Beispiel:* Sie möchten einen Wartungsplan für einen bestimmten Technischen Standort anlegen, d.h. alle Anlagen, die auf diesem Technischen Standort zu einem bestimmten Zeitpunkt angelegt wurden, werden bei der Terminierung des Wartungsplans berücksichtigt. In diesem Fall legen Sie einen Wartungsplan an und wählen den jeweiligen Technischen Standort aus, fügen aber keine Anlagen in den Wartungsplan ein. Das Ergebnis ist, dass bei der Terminierung dieses Wartungsplans Wartungseinteilungen für alle Anlagen angelegt werden, die zu diesem Zeitpunkt mit dem Technischen Standort zusammenhängen.
 
@@ -52,14 +52,14 @@ Die vorbeugende Wartungsplanung erzeugt Kalendereinträge auf Anlagen, basierend
 
 5. Klicken Sie auf **OK**, um die Generierung von Wartungsplaneinträgen für Anlagen zu starten. Die erzeugten Einträge werden auf der Listenseite **Alle Wartungspläne** angezeigt. Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Wartungspläne terminieren**.
 
-![Abbildung 1](media/09-preventive-maintenance.png)
+![Abbildung 1.](media/09-preventive-maintenance.png)
 
 - Im Dialog **Wartungspläne terminieren** können Sie Batch-Jobs auf der Seite **Ausführen im Hintergrund** FastTab einrichten, um in regelmäßigen Abständen automatisch Kalendereinträge zu erzeugen.  
 - Wenn Sie vorbeugende Wartung planen, werden keine Wartungseinteilungen mit einem erwarteten Startdatum und einer erwarteten Uhrzeit vor dem Systemdatum und der Systemzeit angelegt.  
 
 Die folgende Abbildung veranschaulicht eine zeitabhängige Wartungsplankalkulation.  
 
-![Abbildung 2](media/10-preventive-maintenance.jpg)
+![Abbildung 2.](media/10-preventive-maintenance.jpg)
 
 Bezüglich zählerabhängiger Wartungspläne: In den folgenden Abbildungen sind zwei verschiedene Zählerregistrierungszyklen dargestellt. Sie basieren auf einem Wartungsplan für die Anlage „V0001“, der eine monatliche Laufleistung der Anlage (eines Fahrzeugs) von ca. 2.000 km erwartet.
 
@@ -69,9 +69,9 @@ In der nächsten Abbildung werden jeden Monat 2.000 km oder mehr registriert. Da
 
 Die hier beschriebenen Beispiele zeigen, dass alle Zählerregistrierungen an einer Anlage einen Trend aufweisen, der die Abnutzung des Anlagenwertes beschreibt. Dieser Trend wird zum Zeitpunkt der Wartungsplanterminierung als Berechnungsgrundlage verwendet.
 
-![Abbildung 3](media/11-preventive-maintenance.png)
+![Abbildung 3.](media/11-preventive-maintenance.png)
 
-![Abbildung 4](media/12-preventive-maintenance.png)
+![Abbildung 4.](media/12-preventive-maintenance.png)
 
 
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: fb2651644efd2cadfccb91e48c34dfddc8383e1f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e813b4f0c6408a8046fa8203007a0a356ca2c794
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021415"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347807"
 ---
 # <a name="process-collection-letters-example"></a>Mahnschreiben verarbeiten – Beispiel
 
@@ -40,7 +40,7 @@ Wenn Sie fertig sind, führen Sie die folgenden Schritte aus.
 
 Die folgende Abbildung zeigt die Informationen in der Tabelle so, wie sie auf der Seite **Mahnschreiben** dargestellt würden. 
 
-[![Einrichten von Mahnschreibensequenzen](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
+[![Einrichten von Mahnschreibensequenzen.](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
 
  Sie müssen jetzt die beiden Parameter einstellen, die für dieses Beispiel erforderlich sind.
 
@@ -49,7 +49,7 @@ Die folgende Abbildung zeigt die Informationen in der Tabelle so, wie sie auf de
     1. Stellen Sie auf der Registerkarte **Inkasso** die Option **Zahlungen und Habenbuchungen für Berechnung des Mahnschreibencodes ignorieren** auf **Ja** ein.
     2. Vergewissern Sie sich, dass das Feld **Erstellen eines Mahnschreibens pro** auf **Debitor** eingestellt ist.
 
-    [![Einstellen von Debitorenparametern für Kredite und Inkassos](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
+    [![Einstellen von Debitorenparametern für Kredite und Inkassos.](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
 
 3. Rufen Sie **Debitoren \> Rechnungen \> Alle Freitextrechnungen** auf, wählen Sie **Neu** aus, und befolgen Sie dann diese Schritte:
 
@@ -74,7 +74,7 @@ Die folgende Abbildung zeigt die Informationen in der Tabelle so, wie sie auf de
 5. Wiederholen Sie Schritt 4, aber geben Sie **-200,00** im Feld **Preis je Einheit** ein.
 6. Rufen Sie **Debitorenkonten \> Debitoren \> Alle Debitoren** auf, und wählen Sie Debitor **US-045** aus. Wählen Sie dann im Aktionsbereich die Option **Transaktionen \> Transaktionen** aus, um die Debitortransaktionen zu überprüfen, die Sie zuvor gebucht haben.
 
-    [![Überprüfen der gebuchten Debitortransaktionen](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
+    [![Überprüfen der gebuchten Debitortransaktionen.](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
 
     Nun müssen Sie Mahnschreiben für Debitor US-045 erstellen.
 
@@ -93,7 +93,7 @@ Die folgende Abbildung zeigt die Informationen in der Tabelle so, wie sie auf de
 
     1. Beachten Sie, dass der Mahnschreibencode sowohl in der Kopfzeile als auch in den Transaktionspositionen **Mahnschreiben 1** lautet, da es sich bei diesem Mahnschreiben um das erste Mahnschreiben in der Sequenz handelt. (Um sich die Transaktionspositionen anzeigen zu lassen, müssen Sie möglicherweise das Inforegister **Transaktionen** auswählen.)
 
-   [![Sicherstellen, dass in der Kopfzeile und den Positionen derselbe Mahnschreibencode angezeigt wird](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
+   [![Sicherstellen, dass in der Kopfzeile und den Positionen derselbe Mahnschreibencode angezeigt wird.](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
 
     2. Wählen Sie im Aktionsbereich **Buchen** aus.
     3. Geben Sie im Feld **Buchungsdatum** den Wert **1/19/2021** ein.
@@ -115,7 +115,7 @@ Die folgende Abbildung zeigt die Informationen in der Tabelle so, wie sie auf de
 
     1. Beachten Sie, dass der Mahnschreibencode in der Kopfzeile **Mahnschreiben 1** lautet. Der Code in den Transaktionspositionen lautet jedoch **Mahnschreiben 2**.
 
-   [![Sicherstellen, dass in der Kopfzeile und den Positionen verschiedene Mahnschreibencodes angezeigt werden](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
+   [![Sicherstellen, dass in der Kopfzeile und den Positionen verschiedene Mahnschreibencodes angezeigt werden.](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
 
   Die Codes sind unterschiedlich, da die Option **Zahlungen und Habenbuchungen für Berechnung des Mahnschreibencodes ignorieren** auf **Ja** eingestellt ist.
 
@@ -123,7 +123,7 @@ Die folgende Abbildung zeigt die Informationen in der Tabelle so, wie sie auf de
 
 11. Rufen Sie **Kredit und Inkasso \> Einrichtung \> Debitorenparameter** auf, und stellen Sie dann auf der Registerkarte **Inkasso** die Option **Zahlungen und Habenbuchungen für Berechnung des Mahnschreibencodes ignorieren** auf **Nein** ein.
 
-    [![Einstellen der Option „Zahlungen und Habenbuchungen für Berechnung des Mahnschreibencodes ignorieren“ auf „Nein“](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
+    [![Einstellen der Option „Zahlungen und Habenbuchungen für Berechnung des Mahnschreibencodes ignorieren“ auf „Nein“.](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
 
     Nun müssen Sie erneut Mahnschreiben für Debitor US-045 erstellen.
 
@@ -140,6 +140,6 @@ Die folgende Abbildung zeigt die Informationen in der Tabelle so, wie sie auf de
 
 13. Rufen Sie **Kredit und Inkasso \> Mahnschreiben \> Mahnschreiben prüfen und verarbeiten** auf, und beachten Sie, dass der Mahnschreibencode sowohl in der Kopfzeile als auch in den Transaktionspositionen **Mahnschreiben 2** lautet.
 
-    [![Erneutes Anzeigen, dass in der Kopfzeile und den Positionen derselbe Mahnschreibencode angegeben ist](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
+    [![Erneutes Anzeigen, dass in der Kopfzeile und den Positionen derselbe Mahnschreibencode angegeben ist.](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
 
     Derselbe Code erscheint an beiden Stellen, da die Option **Zahlungen und Habenbuchungen für Berechnung des Mahnschreibencodes ignorieren** jetzt auf **Nein** eingestellt ist.

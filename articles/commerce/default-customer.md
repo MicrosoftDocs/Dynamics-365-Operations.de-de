@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de378edbd7d13626302c7129c605b1837ffb579e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799178"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349601"
 ---
 # <a name="create-a-default-customer"></a>Einen Standarddebitoren erstellen
 
@@ -47,7 +47,7 @@ Gehen Sie folgendermaßen vor, um eine Debitorengruppe zu erstellen.
 
 Das folgende Bild zeigt mehrere konfigurierte Kundengruppen.
 
-![Debitorengruppen](media/customer-groups.png)
+![Debitorengruppen.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Ein neues Debitorenadressbuch erstellen
 
@@ -63,7 +63,7 @@ Gehen Sie folgendermaßen vor, um ein Adressbuch zu erstellen.
 
 Das folgende Bild zeigt ein Beispiel für ein Adressbuch.
 
-![Adressbuch](media/address-book.png)
+![Adressbuch.](media/address-book.png)
 
 ## <a name="create-a-default-customer"></a>Einen Standarddebitoren erstellen
 
@@ -86,11 +86,11 @@ Gehen Sie folgendermaßen vor, um einen Standarddebitor zu erstellen.
 
 Die folgende Abbildung zeigt ein Beispiel für die Erstellung eines Debitors.
 
-![Erstellung eines Standarddebitors](media/default-customer-creation.png)
+![Erstellung eines Standarddebitors.](media/default-customer-creation.png)
 
 Das folgende Bild zeigt die Konfiguration eines Standarddebitors.
 
-![Beispieldebitorenkonfiguration](media/default-customer-configuration1.png)
+![Beispieldebitorenkonfiguration.](media/default-customer-configuration1.png)
 
 Die meisten Standardwerte auf dem Debitorendetailsbildschirm können beibehalten werden, es sollten jedoch zwei Werte geändert werden.
 
@@ -100,11 +100,11 @@ Die meisten Standardwerte auf dem Debitorendetailsbildschirm können beibehalten
 
 Die folgende Abbildung zeigt ein Beispiel für die Konfiguration eines Debitors.
 
-![Beispielkonfiguration eines Debitors](media/default-customer-configuration2.png)
+![Beispielkonfiguration eines Debitors.](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Kanäle – Übersicht](channels-overview.md)
+[Übersicht über Kanäle](channels-overview.md)
 
 [Kanaleinstellungen – Voraussetzungen](channels-prerequisites.md)
 

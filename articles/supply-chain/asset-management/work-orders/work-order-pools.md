@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f07415cc0e2ba80c332387ce86e09ba8aa840f8a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7b0e3e5b25a291517d5ccefa1ed25b20255be187
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839534"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356048"
 ---
 # <a name="work-order-pools"></a>Arbeitsauftragspools
 
@@ -85,7 +85,7 @@ Um alle Arbeitsauftragspositionen zu löschen, setzen Sie die Option **Arbeitsau
 
 In der folgenden Abbildung wird ein Beispiel der Listenseite **Arbeitsauftragspool** angezeigt.
 
-![Abbildung 1](media/22-work-orders.png)
+![Abbildung 1.](media/22-work-orders.png)
 
 
 ## <a name="add-a-work-order-to-a-work-order-pool"></a>Arbeitsauftrag zu einem Arbeitsauftragspool hinzufügen

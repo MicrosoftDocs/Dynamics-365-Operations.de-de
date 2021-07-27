@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: f57a20ed56a761894b2cedf8835310dac098b098
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750617"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346495"
 ---
 # <a name="integrated-vendor-master"></a>Integrierte Masterdaten von Kreditoren
 
@@ -39,11 +39,11 @@ In beiden Ansätzen werden die Lieferantendaten zwischen Dynamics 365 Supply Cha
 
 Wenn Sie Daten nicht in der Tabelle **Konto/Kontakt** in Dataverse speichern möchten, können Sie das neue Lieferantendesign verwenden.
 
-![Kreditorendatenfluss](media/dual-write-vendor-data-flow.png)
+![Kreditorendatenfluss.](media/dual-write-vendor-data-flow.png)
 
 Wenn Sie Daten weiterhin in der Tabelle **Konto/Kontakt** speichern möchten, können Sie das erweiterte Lieferantendesign verwenden. Um das erweiterte Lieferantendesign zu verwenden, müssen Sie die Herstellerworkflows im Lösungspaket für duales Schreiben konfigurieren. Weitere Informationen finden Sie unter [Wechsel zwischen Kreditorendesigns](vendor-switch.md).
 
-![Erweiterter Kreditorendatenfluss](media/dual-write-vendor-detail.jpg)
+![Erweiterter Kreditorendatenfluss.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
 > Wenn Sie Power Apps-Portale für Self-Service-Kreditoren verwenden, können die Kreditoreninformationen direkt an Finance and Operations-Apps weitergeleitet werden.

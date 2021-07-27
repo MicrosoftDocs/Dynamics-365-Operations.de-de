@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a774a0edf00a17be674b7a1bb07f6494e90554c3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 595de6292b81ca78bf08a66f61850c3b5a537396
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743678"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354390"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Mehrere abgeleitete Zuordnungen für einen einzelnen Modellstamm verwalten
 
@@ -55,7 +55,7 @@ Um Ihrer aktuellen Instanz von Finance die standardmäßigen EB-Konfigurationen 
 2. Auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationen** wählen Sie die Kachel **Berichterstellungskonfigurationen** aus.
 3. Erweitern Sie auf der Seite **Konfigurationen** in der Konfigurationsstruktur im linken Bereich den Punkt **Rechnungsmodell**.
 
-    ![Überprüfen der importierten Konfigurationen auf der Seite „Konfigurationen“](./media/er-multiple-model-mappings-image1.png)
+    ![Überprüfen der importierten Konfigurationen auf der Seite „Konfigurationen“.](./media/er-multiple-model-mappings-image1.png)
 
 4. Überprüfen Sie das Format **Freitextrechnung (Excel)**:
 
@@ -66,7 +66,7 @@ Um Ihrer aktuellen Instanz von Finance die standardmäßigen EB-Konfigurationen 
     
        Das aktuelle EB-Format ist für die Verwendung der Stammdefinition **InvoiceCustomer** von **Rechnungsmodell** konfiguriert. Wenn dieses Format ausgeführt wird und die Datenquelle **Modell** aufgerufen wrid, wird die Modellzuordnung verwendet, die für die Stammdefinition **InvoiceCustomer** konfiguriert ist, um auf Anwendungsdaten zuzugreifen und das Datenmodell auszufüllen.
 
-        ![Überprüfen der Modelldatenquelle auf der Seite „Format-Designer“](./media/er-multiple-model-mappings-image2.png)
+        ![Überprüfen der Modelldatenquelle auf der Seite „Formatdesigner“.](./media/er-multiple-model-mappings-image2.png)
 
     6. Seite **Format-Designer** schließen.
 
@@ -79,7 +79,7 @@ Um Ihrer aktuellen Instanz von Finance die standardmäßigen EB-Konfigurationen 
         + Die Modellzuordnung **Debitorenrechnung** ist für die Stammdefinition **InvoiceCustomer** von **Rechnungsmodell** konfiguriert. Wenn das EB-Format **Freitextrechnung (Excel)** ausgeführt wird, kann daher die Modellzuordnung **Debitorenrechnung** dieser EB-Konfiguration ausgewählt werden, um auf Anwendungsdaten zuzugreifen und das Datenmodell auszufüllen.
         + Die Modellzuordnung **Projektrechnung** ist für die Stammdefinition **InvoiceProject** von **Rechnungsmodell** konfiguriert. Wenn das EB-Format **Projektrechnung (Excel)** ausgeführt wird, kann daher die Modellzuordnung **Projektrechnung** dieser EB-Konfiguration ausgewählt werden, um auf Anwendungsdaten zuzugreifen und das Datenmodell auszufüllen.
 
-        ![Rechnungsmodellzuordnung auf der Seite „Zuordnung Modell zu Datenquelle“](./media/er-multiple-model-mappings-image3.png)
+        ![Rechnungsmodellzuordnung auf der Seite „Zuordnung Modell zu Datenquelle“.](./media/er-multiple-model-mappings-image3.png)
 
     4. Schließen Sie die Seite **Zuordnung Modell zu Datenquelle**.
     5. Auf dem Inforegister **Versionen** wählen Sie **Löschen** aus, um alle Versionen dieser EB-Konfiguration zu löschen, die neuer als die Version 240.175 sind.
@@ -90,7 +90,7 @@ Um Ihrer aktuellen Instanz von Finance die standardmäßigen EB-Konfigurationen 
     2. Wählen Sie im Aktivitätsbereich **Designer** aus.
     3. Beachten Sie auf der Seite **Zuordnung Modell zu Datenquelle**, dass die aktuelle EB-Modellzuordnungskonfiguration die Modellzuordnung **InvoiceProject** enthält und dass diese Modellzuordnung für die Stammdefinition **InvoiceProject** des **Rechnungsmodells** konfiguriert ist. Wenn das EB-Format **Projektrechnung (Excel)** ausgeführt wird, wählen Sie die Modellzuordnung **InvoiceProject** dieser EB-Konfiguration aus, um auf Anwendungsdaten zuzugreifen und das Datenmodell auszufüllen.
 
-        ![Projektrechnungsmodell-Zuordnung auf der Seite „Zuordnung Modell zu Datenquelle“](./media/er-multiple-model-mappings-image4.png)
+        ![Projektrechnungsmodell-Zuordnung auf der Seite „Zuordnung Modell zu Datenquelle“.](./media/er-multiple-model-mappings-image4.png)
 
     4. Schließen Sie die Seite **Zuordnung Modell zu Datenquelle**.
     5. Auf dem Inforegister **Versionen** wählen Sie **Löschen** aus, um alle Versionen dieser EB-Konfiguration zu löschen, die neuer als die Version 226.35 sind.
@@ -115,7 +115,7 @@ In diesem Abschnitt wird erklärt, wie die von Microsoft bereitgestellten Modell
 
 7. Wählen Sie im Aktivitätsbereich die Option **Designer** aus, um die Modellzuordnungen dieser Konfiguration zu überprüfen.
 
-    ![Überprüfen der Rechnungsmodellzuordnungen auf der Seite „Zuordnung Modell zu Datenquelle“](./media/er-multiple-model-mappings-image5.png)
+    ![Überprüfen der Rechnungsmodellzuordnungen auf der Seite „Zuordnung Modell zu Datenquelle“.](./media/er-multiple-model-mappings-image5.png)
 
     > [!TIP]
     > Sie können jetzt alle EB-Modellzuordnungskomponenten dieser EB-Konfiguration im Designer öffnen, um Ihre benutzerdefinierte Logik zu konfigurieren. Weitere Informationen finden Sie unter [Datenmodellkonfigurations-Zuordnung anpassen](er-quick-start3-customize-report.md#customize-the-model-mapping-configuration).
@@ -126,7 +126,7 @@ Sie haben jetzt die Konfigurationen **Rechnungsmodellzuordnung** und **Rechnungs
  
 > Es gibt mehr als eine Modellzuordnung für das Datenmodell '\<model name\> (\<root descriptor\>)' in den Konfigurationen \<configuration names separated by commas\>. Legen Sie eine der Konfigurationen als Standard fest.
 
-![Öffnen des Formats zum Bearbeiten auf der Seite „Konfigurationen“](./media/er-multiple-model-mappings-image6.gif)
+![Öffnen des Formats zum Bearbeiten auf der Seite „Konfigurationen“.](./media/er-multiple-model-mappings-image6.gif)
 
 ### <a name="customize-the-project-invoice-model-mapping-rdp-configuration"></a>Konfiguration der Projektrechnungsmodell-Zuordnung (RDP) anpassen
 
@@ -138,7 +138,7 @@ Sie haben jetzt die Konfigurationen **Rechnungsmodellzuordnung** und **Rechnungs
 6. Für die Konfiguration **Projektrechnungsmodell-Zuordnung Litware**, die derzeit in der Konfigurationsstruktur ausgewählt ist, setzen Sie die Option **Entwurf ausführen** auf **Ja**.
 7. Wählen Sie im Aktivitätsbereich die Option **Designer** aus, um die Modellzuordnungen dieser Konfiguration zu überprüfen.
 
-    ![Die angepassten Projektrechnungsmodell-Zuordnungen auf der Seite „Zuordnung Modell zu Datenquelle“ überprüfen](./media/er-multiple-model-mappings-image7.png)
+    ![Die angepassten Projektrechnungsmodell-Zuordnungen auf der Seite „Zuordnung Modell zu Datenquelle“ überprüfen.](./media/er-multiple-model-mappings-image7.png)
 
 8. Schließen Sie die Seite **Zuordnung Modell zu Datenquelle**.
 
@@ -149,7 +149,7 @@ Sie haben jetzt die Konfigurationen **Rechnungsmodellzuordnung**, **Projektrechn
 1. Wählen Sie auf der Seite **Konfigurationen** in der Konfigurationsstruktur im linken Bereich **Rechnungsmodellzuordnung Litware** aus.
 2. Hier können Sie die Option **Standard für Modellzuordnung** auf **Ja** festlegen.
 
-    ![Festlegen der Modellzuordnung als Standardmodellzuordnung auf der Seite „Konfigurationen“](./media/er-multiple-model-mappings-image8.png)
+    ![Festlegen der Modellzuordnung als Standardmodellzuordnung auf der Seite „Konfigurationen“.](./media/er-multiple-model-mappings-image8.png)
 
     Aufgrund dieser Einstellung wird die Modellzuordnung **Kopie der Kundenrechnung** verwendet, wenn Sie das Format **Freitextrechnung (Excel)** ausführen oder wenn Sie es bearbeiten oder validieren. Die Modellzuordnung **Kundenrechnung** aus der Konfiguration **Rechnungsmodellzuordnung** wird ignoriert.
 
@@ -167,7 +167,7 @@ Sie haben jetzt die Konfigurationen **Rechnungsmodellzuordnung**, **Projektrechn
 5. Auf der Seite **Zuordnung Modell zu Datenquelle** wählen Sie **Bearbeiten** aus, um die Seite nach Bedarf bearbeitbar zu machen.
 6. Wählen Sie die Modellzuordnung **Projektrechnungskopie** aus, und aktivieren Sie dann das Kontrollkästchen **Ist gelöscht** für sie.
 
-    ![Festlegen der Modellzuordnung als virtuell gelöscht auf der Seite „Zuordnung Modell zu Datenquelle“](./media/er-multiple-model-mappings-image9.png)
+    ![Festlegen der Modellzuordnung als virtuell gelöscht auf der Seite „Zuordnung Modell zu Datenquelle“.](./media/er-multiple-model-mappings-image9.png)
 
     Aufgrund dieser Einstellung wird die **Rechnungsmodellzuordnung Litware** so behandelt, als hätte sie keine Modellzuordnung für die Stammdefinition **InvoiceProject**. Die Modellzuordnung **InvoiceProject Kopie** wird standardmäßig ausgegeben. Die Konfiguration **Projektrechnungsmodell-Zuordnung Litware**, die diese Modellzuordnung enthält, wird als Standardkonfiguration markiert. Da sie als Standard markiert ist, hat sie eine höhere Priorität als die Modellzuordnung **InvoiceProject** aus der Konfiguration **Projektrechnungsmodell-Zuordnung (RDP)**.
 

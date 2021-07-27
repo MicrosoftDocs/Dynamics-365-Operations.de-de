@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a3da8e1b8176eb25fe4e0a320aa3e907c06e09c5
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: cdac52ed7f11f796b9559e5454456fb139c6ba00
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021391"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346397"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Datenfelder in die Steuerintegration mithilfe von Erweiterungen einfügen
 
@@ -41,15 +41,15 @@ Dies sind die wesentlichen Objekte:
 
 Die folgende Abbildung zeigt, wie diese Objekte zusammenhängen.
 
-[![Datenmodell-Objektbeziehung](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)
+[![Datenmodell-Objektbeziehung.](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)
 
 Ein **Dokument**-Objekt kann viele **Position**-Objekte enthalten. Jedes Objekt enthält Metadaten für den Steuerdienst.
 
 - `TaxIntegrationDocumentObject` hat `originAddress`-Metadaten, die Informationen zur Quelladresse enthalten, und `includingTax`-Metadaten, die angeben, ob der Positionsbetrag die Mehrwertsteuer enthält.
-- `TaxIntegrationLineObject`hat `itemId`-,`quantity`- und`categoryId`-Metadaten.
+- `TaxIntegrationLineObject` hat `itemId`-,`quantity`- und `categoryId`-Metadaten.
 
 > [!NOTE]
-> `TaxIntegrationLineObject`implementiert auch **Belastung**-Objekte.
+> `TaxIntegrationLineObject` implementiert auch **Belastung**-Objekte.
 
 ## <a name="integration-flow"></a>Integrationsflow
 

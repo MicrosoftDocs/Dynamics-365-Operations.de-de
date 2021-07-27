@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1fa55ab83562983273768895db61032ec7199fa6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 017cdc76368ae4f80131471a289aa03ab06c99bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793944"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350207"
 ---
 # <a name="work-with-fragments"></a>Arbeiten mit Fragmenten 
 
@@ -45,7 +45,7 @@ Alle Stellen, an denen das Fragment hinzugefügt wird, verweisen auf das von Ihn
 
 Die folgende Abbildung zeigt, wie Fragmente verwendet werden können, um das Authoring gemeinsam genutzter Modulkonfigurationen auf einer E-Commerce-Site zu zentralisieren.
 
-![Eine Abbildung, die zeigt, wie Fragmente zum Zentralisieren des Erstellens gemeinsam genutzter Modulkonfigurationen auf einer E-Commerce-Site verwendet werden können](./media/fragment-figure1.png)
+![Eine Abbildung, die zeigt, wie Fragmente zum Zentralisieren des Erstellens gemeinsam genutzter Modulkonfigurationen auf einer E-Commerce-Site verwendet werden können.](./media/fragment-figure1.png)
 
 ## <a name="create-a-fragment"></a>Fragment erstellen
 
@@ -62,7 +62,7 @@ Gehen Sie folgendermaßen vor, um ein zuvor konfiguriertes Modul in ein wiederve
 1. Geben Sie im Dialogfeld **Als Fragment speichern** einen Namen für das Fragment ein.
 1. Wählen Sie **OK** aus, um die Modulkonfiguration als Fragment zu speichern, das anderen Seiten hinzugefügt werden kann.
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Neues Fragment erstellen
 
@@ -73,7 +73,7 @@ Führen Sie die folgenden Schritte aus, um ein neues Fragmente im Commerce Site 
 1. Wählen Sie einen Modultyp für Ihr Fragment.
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Durch Auswahl eines generischen Containermodultyps erhalten Sie die größte Flexibilität, wenn Sie Ihr Fragment später aktualisieren und konfigurieren müssen.
 
@@ -88,14 +88,14 @@ Führen Sie die folgenden Schritte aus, um ein Fragmente im Commerce Site Builde
 1. Wählen Sie im Gliederungsbereich links oder direkt im Visual Page Builder einen Container oder Slot aus, zu dem untergeordnete Module hinzugefügt werden können.
 1. Wählen Sie die Auslassungspunkte (**...**) neben dem Namen des Containers oder Slots aus.  Wenn Sie alternativ Visual Page Builder verwenden, wählen Sie das Pluszeichen (**+**) aus.  
 1. Wählen Sie **Fragment hinzufügen**.
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Wenn der Container oder Slot keine neuen untergeordneten Module unterstützt, ist die Option **Fragment hinzufügen** nicht verfügbar.
     
 1. Suchen Sie im Dialogfeld **Fragment auswählen** nach einem Fragment, das Sie hinzufügen möchten, und wählen Sie es aus. Wenn keine verfügbaren Fragmente aufgelistet sind, müssen Sie möglicherweise zuerst ein Fragment aus einem Modultyp erstellen, den der ausgewählte Container oder Slot unterstützt.
 1. Wählen Sie Ihr gewünschtes Fragment aus, das dem Container oder Slot auf Ihrer Seite hinzugefügt werden soll.
-<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > Die Module, die in einem Container oder Slot zulässig sind, werden durch die Seitenvorlage oder die eigenen Definitionen der Module definiert.

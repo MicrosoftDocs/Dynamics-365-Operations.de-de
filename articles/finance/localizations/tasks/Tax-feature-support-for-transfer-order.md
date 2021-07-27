@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3a5c2b6fb48d98ba045c77ed034d976f7d89af98
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 7b97eca8c2d4fe9f71c3cd8f1e40a3bbb7ee4879
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021368"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348415"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Unterstützung für Steuerfunktionen für Umlagerungsaufträge
 
@@ -40,7 +40,7 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
 
 1. Wählen Sie auf der Seite **Steuerliche Merkmale** auf der Registerkarte **Versionen** den Entwurf der Funktionsversion aus und wählen Sie dann **Bearbeiten**.
 
-    ![Auswählen von „Bearbeiten“](../media/tax-feature-support-01.png)
+    ![Auswählen von „Bearbeiten“.](../media/tax-feature-support-01.png)
 
 2. Wählen Sie auf der Seite **Einrichtung der Steuerfunktionen** auf der **Steuercode**-Registerkarte **Hinzufügen** aus, um neue Steuercodes zu erstellen. In diesem Beispiel werden drei Steuercodes erstellt: **NL-befreit**, **BE-RC-21** und **BE-RC+21**.
 
@@ -53,7 +53,7 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         4. Wählen Sie **Hinzufügen** in der **Satz**-Tabelle.
         5. Schalten Sie **Ist befreit** auf **Ja** im Abschnitt **Allgemein** um.
 
-        ![NL-Steuerbefreiungscode](../media/tax-feature-support-02.png)
+        ![NL-Steuerbefreiungscode.](../media/tax-feature-support-02.png)
 
     - Wenn ein Umlagerungsauftrag in einem belgischen Lager eingeht, wird die Verlagerung der Steuerschuld mithilfe der Steuercodes **BE-RC-21** und **BE-RC+21** angewendet.
         
@@ -66,7 +66,7 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         6. Schalten Sie **Ist Verlagerung der Steuerschuld** auf **Ja** im Abschnitt **Allgemein** um.
         7. Wählen Sie **Speichern** aus.
 
-        ![BE-RC-21-Steuercode für Verlagerungen der Steuerschuld](../media/tax-feature-support-03.png)
+        ![BE-RC-21-Steuercode für Verlagerungen der Steuerschuld.](../media/tax-feature-support-03.png)
         
         Erstellen Sie den Steuercode **BE-RC+21**.
         1. Wählen Sie **Hinzufügen**, geben Sie **BE-RC-21** in dem **Steuercode**-Feld ein.
@@ -76,7 +76,7 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         5. Geben Sie **21** im Feld **Steuersatz** ein.
         6. Wählen Sie **Speichern** aus.
 
-        ![BE-RC+21-Steuercode für Verlagerungen der Steuerschuld](../media/tax-feature-support-04.png)
+        ![BE-RC+21-Steuercode für Verlagerungen der Steuerschuld.](../media/tax-feature-support-04.png)
 
 3. Definieren Sie die Anwendbarkeit der Steuercodes.
 
@@ -105,11 +105,11 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         6. Wählen Sie im **Steuercode**-Feld **BE-RC+21** und **BE-RC-21** aus.
         7. Geben Sie im **Steuergruppe**-Feld und in **Artikelsteuergruppe** die zugehörige Mehrwertsteuergruppe und Artikelmehrwertsteuergruppe ein, die in Ihrem Finance-System definiert sind.
 
-        ![Regeln für die Anwendbarkeit](../media/image5.png)
+        ![Regeln für die Anwendbarkeit.](../media/image5.png)
 
 4. Vervollständigen und veröffentlichen Sie die neue Steuerfunktionsversion.
 
-    [![Ändern des Status der neuen Version](../media/image6.png)](../media/image6.png)
+    [![Ändern des Status der neuen Version.](../media/image6.png)](../media/image6.png)
 
 ## <a name="set-up-finance-for-transfer-order-transactions"></a>Einrichten von Finance für Umlagerungsauftragstransaktionen
 
@@ -121,7 +121,7 @@ Führen Sie folgende Schritte aus, um Steuern für Umlagerungsaufträge zu aktiv
     > [!IMPORTANT]
     > Die Funktion **Steuer im Umlagerungsauftrag** ist vollständig vom Steuerdienst abhängig. Daher kann es erst aktiviert werden, nachdem Sie den Steuerdienst installiert haben.
 
-    ![Funktion „Steuer in Umlagerungsauftrag“](../media/image7.png)
+    ![Funktion „Steuer in Umlagerungsauftrag“.](../media/image7.png)
 
 3. Aktivieren Sie den Steuerdienst und wählen Sie den **Bestand**-Geschäftsprozess.
 
@@ -131,11 +131,11 @@ Führen Sie folgende Schritte aus, um Steuern für Umlagerungsaufträge zu aktiv
     1. Wechseln Sie zu **Steuer** \> **Einstellungen** \> **Steuerkonfiguration** \> **Steuerdiensteinrichtung**.
     2. Wählen Sie im **Geschäftsprozess**-Feld **Bestand** aus.
 
-    ![Festlegen des Felds „Geschäftsprozess“](../media/image8.png)
+    ![Festlegen des Felds „Geschäftsprozess“.](../media/image8.png)
 
 4. Stellen Sie sicher, dass der Mechanismus zur Verlagerung der Steuerschuld eingerichtet ist. Gehen Sie zu **Hauptbuch** \> **Einrichtung** \> **Parameter** und überprüfen Sie dann auf der Registerkarte **Verlagerung der Steuerschuld**, ob die Option **Verlagerung der Steuerschuld aktivieren** auf **Ja** gesetzt ist.
 
-    ![Aktivieren der Option zur Verlagerung der Steuerschuld](../media/image9.png)
+    ![Aktivieren der Option zur Verlagerung der Steuerschuld.](../media/image9.png)
 
 5. Stellen Sie sicher, dass die zugehörigen Steuercodes, Steuergruppen, Artikelsteuergruppen und Mehrwertsteuererfassungsnummern in Finance gemäß dem Steuerdienstleitfaden eingerichtet wurden.
 6. Richten Sie ein Zwischentransitkonto ein. Dieser Schritt ist nur erforderlich, wenn die Steuer, die auf einen Umlagerungsauftrag angewendet wird, nicht auf einen Mechanismus für Steuerbefreiung oder Verlagerung der Steuerschuld anwendbar ist.
@@ -143,7 +143,7 @@ Führen Sie folgende Schritte aus, um Steuern für Umlagerungsaufträge zu aktiv
     1. Wechseln Sie zu **Steuer** \> **Einstellungen** \> **Mehrwertsteuer** \> **Sachkontenbuchungsgruppen**.
     2. Wählen Sie im Feld **Zwischentransit** ein Sachkonto aus.
 
-    ![Auswählen eines Zwischentransitkontos](../media/image10.png)
+    ![Auswählen eines Zwischentransitkontos.](../media/image10.png)
 
 ## <a name="set-up-basic-inventory-for-transfer-order-transactions"></a>Einrichten von Basisbestand für Umlagerungsauftragstransaktionen
 
@@ -158,7 +158,7 @@ Befolgen Sie diese Schritte, um den Grundbestand einzurichten und Umlagerungsauf
     > [!NOTE]
     > Eine der von Ihnen erstellten Sites sollte **Transit** benannt werden. In späteren Schritten dieses Verfahrens ordnen Sie diese Site dem Transitlager zu, damit steuerliche Bestandsbelege in „Lieferung“- und „Empfang“-Transaktionen für Umlagerungsaufträge gebucht werden können. Die Adresse der Transit-Site spielt für die Steuerberechnung keine Rolle. Sie können es daher leer lassen.
 
-    ![Einrichten von Sites](../media/image11.png)
+    ![Einrichten von Sites.](../media/image11.png)
 
 2. Erstellen Sie „Lieferung von“-, „Transit“- und „Lieferung an“-Lagerorte. Alle Adressinformationen, die in einem Lagerhaus verwaltet werden, überschreiben die Site-Adresse bei der Steuerberechnung.
 
@@ -166,24 +166,24 @@ Befolgen Sie diese Schritte, um den Grundbestand einzurichten und Umlagerungsauf
     2. Wählen Sie **Neu**, um einen Lagerort zu erstellen und einer entsprechenden Site zuzuweisen.
     3. Wiederholen Sie Schritt 2, um nach Bedarf ein Lager für jede Site zu erstellen.
 
-    ![Einrichten von Lagerorten](../media/image12.png)
+    ![Einrichten von Lagerorten.](../media/image12.png)
 
     > [!NOTE]
     > Für ein „Lieferung von“-Lager muss ein Transitlager im Feld **Transitlager** für Umlagerungsauftragstransaktionen ausgewählt werden.
     >
-    > ![Transitlager auswählen](../media/image13.png)
+    > ![Transitlager auswählen.](../media/image13.png)
 
 3. Überprüfen Sie, ob die Bestandsbuchungskonfiguration für Umlagerungsauftragstransaktionen eingerichtet ist.
 
     1. Gehen Sie zu **Bestandsverwaltung** \> **Einrichtung** \> **Buchung** \> **Buchung**.
     2. Überprüfen Sie auf der Registerkarte **Bestand**, ob ein Sachkonto für beide Buchungen, **Lagerabgang** und **Lagerzugang**, eingerichtet ist.
 
-        ![Einrichten der Lagerabgang- und Lagerzugang-Buchung](../media/image14.png)
+        ![Einrichten der Lagerabgang- und Lagerzugang-Buchung.](../media/image14.png)
 
     3. Stellen Sie sicher, dass ein Sachkonto für die **Umlagerungszugang**-Buchung eingerichtet ist.
 
-        ![Einrichten der Umlagerungszugang-Buchung](../media/image15.png)
+        ![Einrichten der Umlagerungszugang-Buchung.](../media/image15.png)
 
     4. Stellen Sie sicher, dass ein Sachkonto für die **Umlagerungsabgang**-Buchung eingerichtet ist.
 
-        ![Einrichten der Umlagerungsabgang-Buchung](../media/image16.png)
+        ![Einrichten der Umlagerungsabgang-Buchung.](../media/image16.png)

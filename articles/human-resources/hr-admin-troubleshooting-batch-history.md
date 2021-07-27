@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 6a9e94e282aa8f101b42c1378ef21c6c1fe0477e
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 5a4749e3234288927a781106dd4becebd5260084
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053490"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344663"
 ---
 # <a name="optimize-performance-with-auto-cleanup-tasks"></a>Optimieren Sie die Leistung mit automatischen Bereinigungsaufgaben
 
@@ -41,25 +41,25 @@ Planen Sie eine automatische Aufgabe, um den Verlauf der Stapelverarbeitungsauft
 
 2. Geben Sie auf der Leiste **Suchen** **Verlauf der Stapelverarbeitungsaufträge bereinigen** ein.
 
-   ![Suche nach „Verlauf der Stapelverarbeitungsaufträge bereinigen“](media/talent-batch-history-cleanup-search-bar.png)
+   ![Suche nach „Verlauf der Stapelverarbeitungsaufträge bereinigen“.](media/talent-batch-history-cleanup-search-bar.png)
 
 3. In **Historienlimit (Tage)** geben Sie **30** ein.
 
-   ![Historienlimit auf 30 festlegen](media/talent-batch-history-cleanup-history-limit.png)
+   ![Historienlimit auf 30 festlegen.](media/talent-batch-history-cleanup-history-limit.png)
 
 4. Wählen Sie **Im Hintergrund ausführen** und **Wiederholung** aus.
 
-   ![Wiederholung festlegen](media/talent-batch-history-cleanup-recurrence.png)
+   ![Wiederholung festlegen.](media/talent-batch-history-cleanup-recurrence.png)
 
 5. Unter **Wiederholung definieren** legen Sie die Option **Startdatum** und **Startzeit** fest, um während der Arbeitszeit oder am Wochenende auszuführen, und wählen Sie dann **KEIN ENDDATUM** aus. 
 
-   ![Startdatum und -zeit der Wiederholung definieren](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Startdatum und -zeit der Wiederholung definieren.](media/talent-batch-history-cleanup-define-recurrence.png)
 
 6. Wählen Sie unter **WIEDERHOLUNGSMUSTER** die Option **Tage** aus und legen Sie **NACH DEM ANGEGEBENEN INTERVALL WIEDERHOLEN** auf **7** fest.
 
-   ![Legen Sie fest, dass die Bereinigung wöchentlich ausgeführt wird](media/talent-batch-history-cleanup-recurrence-pattern.png)
+   ![Legen Sie fest, dass die Bereinigung wöchentlich ausgeführt wird.](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
-7. Wählen Sie **OK**.
+7. Wählen Sie **OK** aus.
 
 8. Ändern Sie ggf. weitere Parameter unter **Im Hintergrund ausführen** und wählen Sie dann **OK** aus.
 

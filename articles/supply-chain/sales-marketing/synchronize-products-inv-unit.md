@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 0ecb03d7d826fc6d79f1df800da22dc913177ee4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b65f23516d6be3d5d942d787261f5b8394c9f9c5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824869"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356950"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a>Produkte mit Bestand von Supply Chain Management zu Field Service synchronisieren
 
@@ -29,7 +29,7 @@ ms.locfileid: "5824869"
 
 Dieses Thema beschreibt die Vorlagen und die zugrunde liegende Aufgabe, die verwendet werden, um die Produkte mit Bestandseinheit aus Dynamics 365 Supply Chain Management mit Dynamics 365 Field Service zu synchronisieren.
 
-[![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
+[![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service.](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
 Die verwendete Vorlage **Field Service Produkte mit Bestandeinheit (Supply Chain Management zu Field Service)** basiert auf der Vorlage **Field Service Produkte (Supply Chain Management zu Field Service)**. Weitere Informationen finden Sie unter [Produkte im Supply Chain Management mit Produkten im Field Service](field-service-product.md) synchronisieren.
 
@@ -59,7 +59,7 @@ Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
 
 ### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a>Field Service Produkte mit Bestandeinheit (Supply Chain Management zu Field Service): Produkte
 
-[![Vorlagenzuordnung in Datenintegration](./media/FSProduct1.png)](./media/FSProduct1.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/FSProduct1.png)](./media/FSProduct1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

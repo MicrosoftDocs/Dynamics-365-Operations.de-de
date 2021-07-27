@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 1e48c02ecc9d69cf14ed257aae56081925cedfe9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6223985"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355393"
 ---
 # <a name="electronic-reporting-formula-language"></a>Formelsprache in der elektronischen Berichterstellung
 
@@ -117,15 +117,15 @@ Wenn ein Ausdruck auf eine strukturierte Datenquelle verweist, können Sie die P
 
 Wenn der Pfad einer strukturierten Datenquelle mit einem „at“ -Zeichen (@) beginnt, handelt es sich um einen relativen Pfad. Das „at“ -Zeichen wird anstelle des verbleibenden Teils des absoluten Pfads der verwendeten hierarchischen Baumstruktur angezeigt. Die folgende Abbildung zeigt ein Beispiel. Hier gibt der absolute Pfad `Ledger.'accountingCurrency()'` an, dass der Buchhaltungswährungswert aus der Datenquelle **Sachkonto** im Feld **AccountingCurrency** des Datenmodells eingetragen ist.
 
-![Beispiel für einen absoluten Pfad auf der Designer-Seite für ER-Modellzuordnungen](./media/ER-FormulaLanguage-AbsolutePath.png)
+![Beispiel für einen absoluten Pfad auf der Seite „EB-Modellzuordnungsdesigner“.](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 Das Beispiel in der folgenden Abbildung zeigt, wie ein relativer Pfad verwendet wird. Der relative Pfad `@.AccountNum` zeigt an, dass das Feld **AccountNum** der Datenquelle **Intrastat** (die eine Ebene über dem Feld **AccountNum** im hierarchischen Baum des Datenmodells erscheint) verwendet wird, um die Debitoren- oder Kreditorenkontonummer in das Feld **AccountNum** des Datenmodells einzugeben.
 
-![Beispiel für einen relativen Pfad auf der Designer-Seite für ER-Modellzuordnungen](./media/ER-FormulaLanguage-RelativePath1.png)
+![Beispiel für einen relativen Pfad auf der Seite „EB-Modellzuordnungsdesigner“.](./media/ER-FormulaLanguage-RelativePath1.png)
 
 Der verbleibende Teil des absoluten Pfades wird auch im [ER Formeleditor](general-electronic-reporting-formula-designer.md) angezeigt.
 
-![Verbleibender Teil des absoluten Pfads auf der Designer-Seite für ER-Formeln](./media/ER-FormulaLanguage-RelativePath2.png)
+![Verbleibender Teil des absoluten Pfads auf der Seite „EB-Formeldesigner“.](./media/ER-FormulaLanguage-RelativePath2.png)
 
 Weitere Informationen finden Sie unter [Verwenden Sie einen relativen Pfad in den Datenbindungen von EB-Modellen und -Formaten](relative-path-data-bindings-er-models-format.md).
 

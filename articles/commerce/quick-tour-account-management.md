@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7efd9096a85ccafd114448f9ba7ca924c198aacb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027962"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352059"
 ---
 # <a name="account-management-pages-overview"></a>Übersicht zu Kontoverwaltungsseiten
 
@@ -35,7 +36,7 @@ Wenn ein Kunde sich anmeldet und **Mein Konto** auswählt, wird die Landingpage 
 
 Die folgende Abbildung zeigt ein Beispiel für die Landingpage der Kontoverwaltung.
 
-![Beispiel einer Landingpage für die Kontoverwaltung](./media/Account-Management.PNG)
+![Beispiel einer Landingpage für die Kontoverwaltung.](./media/Account-Management.PNG)
 
 ### <a name="my-profile-page"></a>Eigene Profilseite
 
@@ -43,7 +44,7 @@ Auf der Seite **Mein Profil** werden die Kontoinformationen des Kunden, wie Name
 
 Die folgende Abbildung zeigt ein Beispiel für die Seite **Mein Profil**, die mit der Modulbibliothek erstellt wurde.
 
-![Beispiel der Mein Profil-Seite](./media/Account-Management-MyProfile.PNG)
+![Beispiel der Mein Profil-Seite.](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>Adressenseite
 
@@ -51,7 +52,7 @@ Die folgende Abbildung zeigt ein Beispiel für die Seite **Mein Profil**, die mi
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Adressen**.
 
-![Beispiel einer Adressenseite](./media/Account-Management-Address.png)
+![Beispiel einer Adressenseite.](./media/Account-Management-Address.png)
 
 ### <a name="order-history-and-order-details-pages"></a>Auftragshistorien- und Bestelldetailseiten
 
@@ -59,11 +60,11 @@ Die Seite **Auftragshistorie** zeigt eine Zusammenfassung aller Bestellungen, di
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Auftragshistorie**.
 
-![Beispiel einer Auftragshistorienseite](./media/Account-Management-OrderHistory.PNG)
+![Beispiel einer Auftragshistorienseite.](./media/Account-Management-OrderHistory.PNG)
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Auftragsdetails**.
 
-![Beispiel einer Auftragsdetailseite](./media/Account-Management-OrderDetails.PNG)
+![Beispiel einer Auftragsdetailseite.](./media/Account-Management-OrderDetails.PNG)
 
 ### <a name="loyalty-program-page"></a>Treueprogramm-Seite
 
@@ -71,7 +72,7 @@ Auf der Seite **Treueprogramm** kann der Kunde Mitglied eines Treueprogramms wer
 
 Die folgende Abbildung zeigt das Beispiel einer **Treueprogramm**-Seite.
 
-![Beispiel einer Treueprogrammseite](./media/Account-Management-Loyalty.PNG)
+![Beispiel einer Treueprogrammseite.](./media/Account-Management-Loyalty.PNG)
 
 ### <a name="wishlist-page"></a>Wunschlistenseite
 
@@ -79,7 +80,7 @@ Die Seite **Wunschliste** zeigt eine Liste der Elemente, die der Kunde der Wunsc
 
 Die folgende Abbildung zeigt das Beispiel der Seite **Wunschliste**.
 
-![Beispiel der Seite Wunschliste](./media/Account-Management-Wishlist.PNG)
+![Beispiel der Seite Wunschliste.](./media/Account-Management-Wishlist.PNG)
 
 Weitere Informationen zu Kontoverwaltungsmodulen und zu deren Erstellung finden Sie unter [Kontoverwaltung](account-management.md).
 

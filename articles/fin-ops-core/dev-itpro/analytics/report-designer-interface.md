@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a20cd71c9729b492403f02f3b5576351169a6e2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0b2e2ead990332f1afd338a430406e6d1db95347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754349"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350135"
 ---
 # <a name="report-designer-interface"></a>Berichts-Designer-Schnittstelle
 
@@ -169,56 +169,56 @@ Die folgenden Tabellen beschreiben die Schaltflächen der Symbolleiste, die Sie 
 
 Die Standardsymbolleiste bietet schnellen Zugriff auf Datei- und Bearbeitungsbefehle. Diese Symbolleiste enthält die folgenden Schaltflächen.
 
-| Schaltfläche                                                                                       | Beschreibung |
+| Knopf                                                                                       | Beschreibung |
 |----------------------------------------------------------------------------------------------|-------------|
-| [![Neue Schaltfläche](./media/rowc130389.png)](./media/rowc130389.png)                              | Erstellen Sie eine neue (leere) Berichtsdefinition, Zeilendefinition, Spaltendefinition oder Berichtsbaumstruktur-Definition. |
-| [![Schaltfläche "Öffnen"](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Öffnen Sie eine vorhandene Zeilendefinition, Spaltendefinition, Berichtsbaumstruktur-Definition oder Berichtsdefinition. |
-| [![Schaltfläche "Speichern"](./media/savec130389.png)](./media/savec130389.png)                           | Speichern Sie die aktuelle Zeilendefinition, Spaltendefinition, Berichtsbaumstruktur-Definition oder Berichtsdefinition. |
-| [![Schaltfläche "Kopieren"](./media/copyc130389.png)](./media/copyc130389.png)                           | Kopieren Sie den markierten Text in die Zwischenablage. |
-| [![Schaltfläche "Ausschneiden"](./media/cutc130389.png)](./media/cutc130389.png)                              | Löschen Sie den markierten Text, und kopieren Sie ihn in die Zwischenablage. |
-| [![Schaltfläche "Einfügen"](./media/pastec130389.png)](./media/pastec130389.png)                        | Fügen Sie den Text aus der Zwischenablage ein. |
-| [![Schaltfläche "Rückgängig"](./media/undoc130389.png)](./media/undoc130389.png)                           | Machen Sie die letzte Aktion rückgängig. |
-| [![Schaltfläche "Wiederherstellen"](./media/redoc130389.png)](./media/redoc130389.png)                           | Stornieren die zuletzt rückgängig gemachte Aktion. |
-| [![Schaltfläche "Suchen"](./media/findc130389.png)](./media/findc130389.png)                           | Öffnen Sie das Dialogfeld **Suchen und ersetzen**, in dem Sie Text im aktiven Fenster suchen und ersetzen können. |
-| [![Schaltfläche "Zeile einfügen"](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Fügen Sie eine leere Zeile in die Zeilendefinition oder eine leere Überschriftszeile in die Spaltendefinition ein. Diese Schaltfläche ist in einer Zeilen- oder Spaltendefinition verfügbar. |
-| [![Schaltfläche "Spalte einfügen"](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Fügen Sie eine leere Spalte in die Spaltendefinition ein. Diese Schaltfläche ist in einer Spaltendefinition verfügbar. |
-| [![Schaltfläche "Sperren"](./media/lockc130389.png)](./media/lockc130389.png)                           | Wenden Sie ein Kennwort auf den aktuellen Baustein an. Diese Schaltfläche ist für Benutzer mit der **Designer**-Rolle oder der **Administrator**-Rolle verfügbar. |
-| [![Schaltfläche "Zeilenlink"](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Öffnen Sie das Dialogfeld **Zeilenlinks**, in dem Sie die Quellen für Datenverbindungen in Zeilendefinitionen und in den Berichtsbaumstruktur-Definitionen angeben können. Diese Schaltfläche ist in einer Zeilendefinition verfügbar. |
-| [![Schaltfläche "Höherstufen"](./media/promotec130389.png)](./media/promotec130389.png)                  | Stufen Sie eine Einheit der Berichtsbaumstruktur-Definition höher. Wenn Sie eine untergeordnete Einheit auswählen und dann auf **Höherstufen** klicken, wird die untergeordnete Einheit auf die Ebene der übergeordneten Einheit verschoben. |
-| [![Schaltfläche "Tieferstufen"](./media/demotec130389.png)](./media/demotec130389.png)                     | Stufen Sie eine Einheit der Berichtsbaumstruktur-Definition tiefer. Wenn Sie eine Einheit auswählen und dann auf **Tieferstufen** klicken, wird die Einheit zu einem untergeordneten Element der vorangehenden Einheit. |
-| [![Schaltfläche "Erweitern"](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Erweitern Sie alle Einheiten der Berichtsbaumstruktur-Definition auf der Ebene der ausgewählten Einheit. |
-| [![Schaltfläche "Reduzieren"](./media/collapsec130389.png)](./media/collapsec130389.png)               | Reduzieren Sie die Berichtsbaumstruktur. |
-| [![Schaltfläche "Hilfe"](./media/helpc130389.png)](./media/helpc130389.png)                           | Hilfe öffnen. |
+| [![Neue Schaltfläche.](./media/rowc130389.png)](./media/rowc130389.png)                              | Erstellen Sie eine neue (leere) Berichtsdefinition, Zeilendefinition, Spaltendefinition oder Berichtsbaumstruktur-Definition. |
+| [![Schaltfläche „Öffnen“.](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Öffnen Sie eine vorhandene Zeilendefinition, eine Spaltendefinition, eine Berichtsbaumstruktur-Definition oder eine Berichtsdefinition. |
+| [![Schaltfläche „Speichern“.](./media/savec130389.png)](./media/savec130389.png)                           | Speichern Sie die aktuelle Zeilendefinition, Spaltendefinition, Berichtsbaumstruktur-Definition oder Berichtsdefinition. |
+| [![Schaltfläche „Kopieren“.](./media/copyc130389.png)](./media/copyc130389.png)                           | Kopieren Sie den markierten Text in die Zwischenablage. |
+| [![Schaltfläche „Ausschneiden“.](./media/cutc130389.png)](./media/cutc130389.png)                              | Löschen Sie den markierten Text, und kopieren Sie ihn in die Zwischenablage. |
+| [![Schaltfläche „Einfügen“.](./media/pastec130389.png)](./media/pastec130389.png)                        | Fügen Sie den Text aus der Zwischenablage ein. |
+| [![Schaltfläche „Rückgängig“.](./media/undoc130389.png)](./media/undoc130389.png)                           | Machen Sie die letzte Aktion rückgängig. |
+| [![Schaltfläche „Wiederherstellen“.](./media/redoc130389.png)](./media/redoc130389.png)                           | Stornieren die zuletzt rückgängig gemachte Aktion. |
+| [![Schaltfläche „Suchen“.](./media/findc130389.png)](./media/findc130389.png)                           | Öffnen Sie das Dialogfeld **Suchen und ersetzen**, in dem Sie Text im aktiven Fenster suchen und ersetzen können. |
+| [![Schaltfläche „Zeile einfügen“.](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Fügen Sie eine leere Zeile in die Zeilendefinition oder eine leere Überschriftszeile in die Spaltendefinition ein. Diese Schaltfläche ist in einer Zeilen- oder Spaltendefinition verfügbar. |
+| [![Schaltfläche „Spalte einfügen“.](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Fügen Sie eine leere Spalte in die Spaltendefinition ein. Diese Schaltfläche ist in einer Spaltendefinition verfügbar. |
+| [![Schaltfläche „Sperren“.](./media/lockc130389.png)](./media/lockc130389.png)                           | Wenden Sie ein Kennwort auf den aktuellen Baustein an. Diese Schaltfläche ist für Benutzer mit der **Designer**-Rolle oder der **Administrator**-Rolle verfügbar. |
+| [![Schaltfläche „Zeilenlink“.](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Öffnen Sie das Dialogfeld **Zeilenlinks**, in dem Sie die Quellen für Datenverbindungen in Zeilendefinitionen und in den Berichtsbaumstruktur-Definitionen angeben können. Diese Schaltfläche ist in einer Zeilendefinition verfügbar. |
+| [![Schaltfläche „Höherstufen“.](./media/promotec130389.png)](./media/promotec130389.png)                  | Stufen Sie eine Einheit der Berichtsbaumstruktur-Definition höher. Wenn Sie eine untergeordnete Einheit auswählen und dann auf **Höherstufen** klicken, wird die untergeordnete Einheit auf die Ebene der übergeordneten Einheit verschoben. |
+| [![Schaltfläche „Tieferstufen“.](./media/demotec130389.png)](./media/demotec130389.png)                     | Stufen Sie eine Einheit der Berichtsbaumstruktur-Definition tiefer. Wenn Sie eine Einheit auswählen und dann auf **Tieferstufen** klicken, wird die Einheit zu einem untergeordneten Element der vorangehenden Einheit. |
+| [![Schaltfläche „Erweitern“.](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Erweitern Sie alle Einheiten der Berichtsbaumstruktur-Definition auf der Ebene der ausgewählten Einheit. |
+| [![Schaltfläche „Reduzieren“.](./media/collapsec130389.png)](./media/collapsec130389.png)               | Reduzieren Sie die Berichtsbaumstruktur. |
+| [![Schaltfläche „Hilfe“.](./media/helpc130389.png)](./media/helpc130389.png)                           | Hilfe öffnen. |
 
 ### <a name="formatting-toolbar"></a>Formatsymbolleiste
 
 Die Formatierungssymbolleiste bietet einfachen Zugriff auf Formatbefehle. Diese Symbolleiste enthält die folgenden Schaltflächen.
 
-| Schaltfläche                                                                                                       | Beschreibung                                             |
+| Knopf                                                                                                       | Beschreibung                                             |
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Schaltfläche "Schriftschnitt"](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Wenden Sie den ausgewählten Schriftschnitt auf den aktuellen Text an.      |
-| [![Schaltfläche "Schriftart"](./media/fonttype.png)](./media/fonttype.png)                                                 | Legen Sie für den aktuellen Text die ausgewählte Schriftart fest.              |
-| [![Schaltfläche "Schriftgröße"](./media/fontsize.png)](./media/fontsize.png)                                            | Legen Sie für den aktuellen Text den ausgewählten Schriftgrad fest. |
-| [![Schaltfläche "Fett"](./media/boldc130389.png)](./media/boldc130389.png)                                           | Formatieren Sie den aktuellen Text fett.                             |
-| [![Schaltfläche "Kursiv"](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Formatieren Sie den aktuellen Text kursiv.                           |
-| [![Schaltfläche "Unterstreichen"](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Unterstreichen Sie den aktuellen Text.                             |
-| [![Schaltfläche "Einrückung verringern"](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Verringern Sie den Einzug des aktuellen Textes.                |
-| [![Schaltfläche "Einrückung vergrößern"](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Vergrößern Sie den Einzug des aktuellen Textes.                |
-| [![Schaltfläche "Hintergrundfarbe"](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Ändern Sie die Hintergrundfarbe der aktuellen Zelle        |
-| [![Schaltfläche "Schriftfarbe"](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Ändern Sie die Farbe des aktuellen Texts.                   |
+| [![Schaltfläche „Schriftschnitt“.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Wenden Sie den ausgewählten Schriftschnitt auf den aktuellen Text an.      |
+| [![Schaltfläche „Schriftart“.](./media/fonttype.png)](./media/fonttype.png)                                                 | Legen Sie für den aktuellen Text die ausgewählte Schriftart fest.              |
+| [![Schaltfläche „Schriftgröße“.](./media/fontsize.png)](./media/fontsize.png)                                            | Legen Sie für den aktuellen Text den ausgewählten Schriftgrad fest. |
+| [![Schaltfläche „Fett“.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Formatieren Sie den aktuellen Text fett.                             |
+| [![Schaltfläche „Kursiv“.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Formatieren Sie den aktuellen Text kursiv.                           |
+| [![Schaltfläche „Unterstreichen“.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Unterstreichen Sie den aktuellen Text.                             |
+| [![Schaltfläche „Einrückung verringern“.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Verringern Sie den Einzug des aktuellen Textes.                |
+| [![Schaltfläche „Einrückung vergrößern“.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Vergrößern Sie den Einzug des aktuellen Textes.                |
+| [![Schaltfläche „Hintergrundfarbe“.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Ändern Sie die Hintergrundfarbe der aktuellen Zelle        |
+| [![Schaltfläche „Schriftfarbe“.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Ändern Sie die Farbe des aktuellen Texts.                   |
 
 ### <a name="report-designer-toolbar"></a>Symbolleisten des Bericht-Designers
 
 Die Berichtsdesigner-Symbolleiste bietet Schnellzugriff auf Befehle für das Navigieren innerhalb des Berichtsdesigners. Diese Symbolleiste enthält die folgenden Schaltflächen.
 
-| Schaltfläche                                                                                              | Beschreibung |
+| Knopf                                                                                              | Beschreibung |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Schaltfläche "Berichtsdefinition"](./media/reportc130389.png)](./media/reportc130389.png)                 | Hier wird die Berichtsdefinition angezeigt, die im Menü **Fenster** aufgeführt ist. |
-| [![Schaltfläche "Zeilendefinition"](./media/rowc130389.png)](./media/rowc130389.png)                          | Zeigen Sie die Zeilendefinition an, die der aktiven Berichtsdefinition zugewiesen ist. |
-| [![Schaltfläche "Spaltendefinition"](./media/columnc130389.png)](./media/columnc130389.png)                 | Zeigen Sie die Spaltendefinition an, die der aktiven Berichtsdefinition zugewiesen ist. |
-| [![Schaltfläche "Berichtsbaumstruktur-Definition"](./media/treec130389.png)](./media/treec130389.png)             | Zeigen Sie die Berichtsbaumstruktur-Definition an, die der aktiven Berichtsdefinition zugewiesen ist. |
-| [![Report-Viewer-Schaltfläche](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Starten Sie den Berichts-Viewer mit der aktuellen Version des generierten Berichts. Diese Schaltfläche ist in einer Berichtsdefinition verfügbar, nachdem mindestens ein Bericht generiert wurde. |
-| [![Schaltfläche "Bericht generieren"](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generieren Sie einen Bericht aus der aktiven Berichtsdefinition. Diese Schaltfläche ist in einer Berichtsdefinition verfügbar. |
+| [![Schaltfläche „Berichtsdefinition“.](./media/reportc130389.png)](./media/reportc130389.png)                 | Hier wird die Berichtsdefinition angezeigt, die im Menü **Fenster** aufgeführt ist. |
+| [![Schaltfläche „Zeilendefinition“.](./media/rowc130389.png)](./media/rowc130389.png)                          | Zeigen Sie die Zeilendefinition an, die der aktiven Berichtsdefinition zugewiesen ist. |
+| [![Schaltfläche „Spaltendefinition“.](./media/columnc130389.png)](./media/columnc130389.png)                 | Zeigen Sie die Spaltendefinition an, die der aktiven Berichtsdefinition zugewiesen ist. |
+| [![Schaltfläche „Berichtsbaumstruktur-Definition“.](./media/treec130389.png)](./media/treec130389.png)             | Zeigen Sie die Berichtsbaumstruktur-Definition an, die der aktiven Berichtsdefinition zugewiesen ist. |
+| [![Report-Viewer-Schaltfläche.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Starten Sie den Berichts-Viewer mit der aktuellen Version des generierten Berichts. Diese Schaltfläche ist in einer Berichtsdefinition verfügbar, nachdem mindestens ein Bericht generiert wurde. |
+| [![Schaltfläche „Bericht generieren“.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generieren Sie einen Bericht aus der aktiven Berichtsdefinition. Diese Schaltfläche ist in einer Berichtsdefinition verfügbar. |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

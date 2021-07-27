@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5917d3f6acf6db6b5e3ceee1b399839542ce1f6f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 99047bd30b04ccaaa24edbb2e28d5288ed2872f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811677"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350545"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Stücklisten- und Formelpositionen für den Lagerort freigeben
 
@@ -61,7 +61,7 @@ In der Abfrage für den Batchauftrag **Automatische Freigabe der Stücklisten- u
 
 Die folgende Abbildung zeigt einen Produktionsauftrag, der zwei Einzelvorgänge hat, 10 und 20, die die Zusammenstellung und Verpackung für den Produktionsauftrag abdecken. Jeder Einzelvorgang ist so eingerichtet, dass er eine Menge von Material verbraucht. In dieser Abbildung entspricht der Freigabezeitraum, der durch den grünen Pfeil unter der Zeitposition angezeigt wird der Anzahl der Tage, die im Kriterium **(LessThanDate())** festgelegt wurde. Beispielsweise gibt **(LessThanDate (2))** an, dass der Einzelvorgang nur innerhalb eines Zeitraums von zwei Tagen nach nicht freigegebenen Mengen suchen soll.
 
-![Beispiel eines Produktionsauftrags, der zwei Batchaufträge hat](media/bach-job-setup.PNG)
+![Beispiel eines Produktionsauftrags, der zwei Batchaufträge hat.](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Freigabe von Material pro Arbeitsgangnummer oder im Verhältnis zur Menge der Fertigartikel
 
@@ -78,7 +78,7 @@ Um die Arbeitsgänge zu steuern, zu denen Material freigegeben werden soll, verw
 
 Die folgende Abbildung zeigt einen Produktionsauftrag, der zwei Arbeitsgänge hat, 10 und 20. Wenn Sie in diesem Beispiel die Freigabe auf Arbeitsgang 10 einschränken, wird nur Material M9203 freigegeben.
 
-![Beispiel der Freigabe von Material pro Arbeitsgangnummer](media/two-operations.PNG)
+![Beispiel der Freigabe von Material pro Arbeitsgangnummer.](media/two-operations.PNG)
 
 Für eine rasche Demonstration zur Freigabe von Material in Relation zum Betrag von Endartikeln schauen Sie dieses kurze YouTube-Video an: [Erweiterungen für den Produktionsauftragsfreigabenprozess](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
 

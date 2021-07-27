@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b7050f954116213f700e4a2b3326547f4d070674
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022471"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353011"
 ---
 # <a name="e-commerce-site-overview"></a>E-Commerce-Site – Übersicht
 
@@ -47,27 +47,27 @@ Während der Initialisierung einer E-Commerce-Website werden Sie zur Eingabe ein
 
 Wenn Sie den Commerce-Website-Generator von LCS aus starten, wird die Seite **Websites** angezeigt. Diese Seite enthält zwei vorkonfigurierte Websites **Standard** und **fabrikam**, wie im Beispiel in der folgenden Abbildung gezeigt.
 
-![Seite „Websites“ im Commerce-Website-Generator](media/e-commerce-site-01.png)
+![Seite „Websites“ im Commerce-Website-Generator.](media/e-commerce-site-01.png)
 
 Wenn Sie eine dieser Websites auswählen, werden Sie aufgefordert, einen Domänennamen, einen standardmäßigen Online-Shop-Kanal, eine unterstützte Sprache für den ausgewählten Kanal und einen Pfad auszuwählen. Wenn nur ein Kanal verwendet wird, können Sie den Pfad leer lassen. Weitere Online-Shop-Kanäle oder -Sprachen können später im Commerce-Website-Generator konfiguriert werden. Jeder zusätzliche Kanal oder jede zusätzliche Sprache erfordert einen eindeutigen Pfad. Sie haben beispielsweise zwei Online-Kanäle, die einer einzigen Website zugeordnet sind, und der Domänenname für die Website lautet `www.fabrikam.com`. In diesem Fall kann der Pfad für einen Kanal der Standardwert sein, der keinen Pfad hat (`https://www.fabrikam.com`), und der zweite Kanal kann auf einen neuen Pfad festgelegt werden, wie z. B. **site2**, der dann die folgende URL `https://www.fabrikam.com/site2` hat. Die folgende Abbildung zeigt ein Beispiel für ein Dialogfeld zur Website-Initialisierung im Commerce-Website-Generator.
 
-![Dialogfeld „Website-Initialisierung“ im Commerce-Website-Generator](media/e-commerce-site-02.png)
+![Dialogfeld „Website-Initialisierung“ im Commerce-Website-Generator.](media/e-commerce-site-02.png)
 
 Die Seite **Websites** enthält auch eine Schaltfläche **Neue Website**. Das Dialogfeld, das angezeigt wird, wenn Sie diese Schaltfläche auswählen, ähnelt dem Dialogfeld für die Website-Initialisierung, wird jedoch zum Erstellen einer neuen Website verwendet. Neue Websites sind leer. Sie enthalten nicht dieselben Standardvorlagen, Fragmente, Seiten und Bilder, die mit den Websites **Standard** und **fabrikam** bereitgestellt werden. Bei Bedarf können Sie jedoch ein Supportticket öffnen, um das Hinzufügen einer Kopie des Standardinhalts zu einer neuen leeren Website anzufordern. Weitere Informationen finden Sie unter [Eine E-Commerce-Website erstellen](create-ecommerce-site.md).
 
 Nachdem eine neue Website initialisiert wurde, wird die **Start**-Seite des Commerce-Website-Generators angezeigt. Diese Seite enthält Links zu allgemeinen Aktionen und Anleitungsinhalten, wie im Beispiel in der folgenden Abbildung gezeigt.
 
-![Links auf der Startseite im Commerce-Website-Generator](media/e-commerce-site-03.png)
+![Links auf der Startseite im Commerce-Website-Generator.](media/e-commerce-site-03.png)
 
 ## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Online-Shop-Kanäle ändern oder Online-Shop-Kanäle zu einer E-Commerce-Website hinzufügen
 
 Nachdem eine E-Commerce-Website erstellt wurde, können Sie den Kanal ändern, dem sie zugeordnet ist, indem Sie den Schritten in [Eine E-Commerce-Website einem Online-Kanal zuordnen](associate-site-online-store.md) folgen. Das Beispiel in der folgenden Abbildung zeigt, wie eine Kanalvorgangseinheitsnummer (OUN) auf der Seite **Kanäle** geändert werden kann (**Website-Einstellungen \> Kanäle**). Nachdem Sie eine Änderung vorgenommen haben, vergessen Sie nicht, **Speicher und veröffentlichen** auszuwählen. Auf diese Weise stellen Sie sicher, dass die Änderung veröffentlicht wird.
 
-![Seite „Kanäle“ im Commerce-Website-Generator](media/e-commerce-site-04.png)
+![Seite „Kanäle“ im Commerce-Website-Generator.](media/e-commerce-site-04.png)
 
 Sie können neue Kanäle hinzufügen, indem Sie auswählen **Kanal hinzufügen** auswählen. Um einem Kanal neue Sprachen hinzuzufügen, wählen Sie den Kanal aus und wählen Sie dann **Gebietsschema hinzufügen** im angezeigten Kanaldialogfeld aus. Bevor Gebietsschemas im Dialogfeld angezeigt werden können, müssen sie für den Online-Shop-Kanal in der Commerce-Zentralverwaltung vorkonfiguriert sein.
 
-![Dialogfeld „Kanal“ im Commerce-Website-Generator](media/e-commerce-site-05.png)
+![Dialogfeld „Kanal“ im Commerce-Website-Generator.](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Azure B2C-Mandant einrichten
 

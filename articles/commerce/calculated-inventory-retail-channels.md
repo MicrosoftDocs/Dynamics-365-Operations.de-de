@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 96a600279b7a90d6626d23ee8868de13e9dd0f14
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2b6f9663ed08ab431ffc6ffe3154854250c1b092
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270884"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350473"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Lagerverfügbarkeit für Retail Channels berechnen
 
@@ -105,7 +105,7 @@ In der Commerce-Version 10.0.9 und früher verwendete der Vorgang **Nachschlagef
 
 Wenn die kanalseitige Berechnung richtig konfiguriert und verwaltet wird, kann sie eine zuverlässigere Schätzung des aktuellen Bestands im Lager liefern, da sie die Transaktionsdaten verwendet, die sich in der Datenbank des Commerce-Kanals befinden, über die die Zentrale aber möglicherweise noch keine Informationen hat. Wenn Sie z. B. den vorhandenen Echtzeit-Serviceaufruf für Nachschlagefelder im POS verwenden, hat die Zentrale wahrscheinlich noch keine Informationen über einen Cash-and-Carry-Verkauf, der gerade für ein Produkt stattgefunden hat. Daher wird der Wert des Lagerbestands, den die Zentrale für dieses Produkt zurückgibt, wahrscheinlich den tatsächlichen Lagerbestand der Filiale um eine Einheit übersteigen. Wenn Sie jedoch die kanalseitige Berechnung verwenden, kann der Mitnahmeverkauf in die Berechnung einbezogen und vom angezeigten Bestandswert abgezogen werden. Obwohl die Werte, die sowohl die kanalseitige Berechnung als auch der Echtzeit-Serviceabruf liefern, nur Schätzungen des aktuellen Bestands sind, ist der Wert, den die kanalseitige Berechnung liefert, für das aktuelle Geschäft viel wahrscheinlicher.
 
-So konfigurieren Sie den Vorgang POS **Nachschlagefeld** in der Zentrale, um die kanalseitige Berechnungslogik zu verwenden und den Echtzeit-Serviceaufruf zu deaktivieren.
+Um den Vorgang der POS-**Bestandssuche** in der Commerce-Zentralverwaltung zu konfigurieren, sodass Sie die kanalseitige Berechnungslogik und die Echtzeitserviceaufruf verwenden zu können, müssen Sie zuerst die Option **Optimierte Berechnung der Produktverfügbarkeit** über den Arbeitsbereich **Funktionsverwaltung** über die Commerce-Zentralverwaltung aktivieren und dann den folgenden Schritten folgen.
 
 1. Gehen Sie zu **Einzelhandel und Handel \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Funktionsprofile**.
 1. Wählen Sie ein Funktionsprofil aus.

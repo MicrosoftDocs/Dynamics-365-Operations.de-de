@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 056808b7d4d490bc4d60aa058108d159c1d4867c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b3a8fe37ae97cf3b14f5121274603cd30de3304b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826250"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356774"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Degressive Abschreibung nach einer Teilung reduzieren
 
@@ -37,7 +37,7 @@ Beispielsweise gelten die folgenden Bedingungen:
 - Die Abschreibung im ersten Geschäftsjahr beträgt 18.000 USD, die monatliche Abschreibung entspricht 150 USD, und die Anlage wird dann bis November 2019 in Höhe von 738,75 USD abgeschrieben.
 - Im November 2019 werden 80 Prozent der Anlage auf eine andere Anlage aufgeteilt.
 
-[![Degressive Abschreibung nach einer Teilung reduzieren](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
+[![Degressive Abschreibung nach einer Teilung reduzieren.](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
 
 Der für die ursprüngliche Anlage abzuschreibende Betrag beträgt 1.822,25 USD. Dieser Betrag entspricht dem NBV vor der Buchung der Aufteilungstransaktion (9.111,25 USD) zuzüglich der Anschaffungsregulierung, die während der Buchung der Aufteilungstransaktion generiert wird (-8.000 USD), zuzüglich der Abschreibungsregulierung, die während der Aufteilungstransaktion generiert wird (711 USD). Daher beträgt die Abschreibung für das zweite Jahr (1.822,25 × 18 Prozent) ÷ 12 = 27,33 USD.
 
