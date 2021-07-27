@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f15aea2f867de6f0bcf01ecfd046efc44581a1ec
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d1e8a3b34cb359b7ea7f7181d2308f8e021f3c95
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820441"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359124"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Die automatische Aktualisierung von Anlagenzählern
 
@@ -49,9 +49,9 @@ Wie bereits angegeben können automatische Zähler aus Produktionserfassungen ak
 
     In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Anlagenzähler aktualisieren** angezeigt.
 
-    ![Abbildung 1](media/12-work-orders.png)
+    ![Abbildung 1.](media/12-work-orders.png)
 
-5. Wählen Sie **OK**. 
+5. Wählen Sie **OK** aus. 
 
 Wenn die automatische Aktualisierung von Anlagenzählern erfolgt ist, können Sie die Zählererfassungen anzeigen, die auf die Anlage auf der Seite **Anlagenzähler** bezogen sind. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Anlagen** > **Alle Anlagen** aus, wählen Sie die Anlage aus, und wählen Sie dann im Aktivitätsbereich auf der **Anlage**-Registerkarte in der Gruppe **Vorbeugend** **Zähler** aus.
 
@@ -59,7 +59,7 @@ Auf der Seite **Aggregierter Wert für Anlage** können Sie einen Überblick der
 
 In der folgenden Abbildung wird ein Beispiel der Seite **Aggregierter Wert für Anlage** angezeigt.
 
-![Abbildung 2](media/13-work-orders.png)
+![Abbildung 2.](media/13-work-orders.png)
 
 Beachten Sie die folgenden Punkte:
 

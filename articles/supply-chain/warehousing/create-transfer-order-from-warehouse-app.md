@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d8bab58727a7031f122864cb7465d9bc5983b467
-ms.sourcegitcommit: 1f2394be857afaefa8749f607cda62dfa00ba2c5
+ms.openlocfilehash: fe5983d40033c0cd15674815067eaa969e97d38b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "6164845"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343624"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Umlagerungsaufträge aus der Lagerort-App erstellen
 
@@ -95,7 +95,7 @@ Neben dem Einrichten der Erstellung von Umlagerungsaufträgen in den Menüoption
 
 Sie sind Einzelhändler und haben mehrere Kennzeichen, die jeweils einen Mix von Artikeln enthalten, die an einem bestimmten Lagerplatz in einem Ihrer Lager platziert sind (*Lager 51*). Sie möchten den Prozess aktivieren, mit dem Arbeitskräfte für eine Auflistung gescannter Kennzeichen einen Umlagerungsauftrag in ein anderes Lager (*Lager 61*) erstellen können. Sie aktualisieren den Umlagerungsauftrag automatisch für die Auslieferung sobald das letzte Kennzeichen für den Auftrag identifiziert wurde.
 
-![Beispiel für einen automatisierten Umlagerungsauftragsprozess](media/create-transfer-order-from-app-example.png "Beispiel für einen automatisierten Umlagerungsauftragsprozess")
+![Beispiel für einen automatisierten Umlagerungsauftragsprozess.](media/create-transfer-order-from-app-example.png "Beispiel für einen automatisierten Umlagerungsauftragsprozess")
 
 ### <a name="create-a-mobile-device-menu-item-for-creating-transfer-orders"></a>Auf einem mobilen Gerät eine Menüoption zur Erstellung von Umlagerungsaufträgen einrichten
 

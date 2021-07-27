@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a26ee80eb52e40b60ace9b1494b3512d85f04cfe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 913e5cf8d39dfe36efea0526d84808e7d736b030
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837872"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361151"
 ---
 # <a name="asset-fault-analysis"></a>Anlagenfehleranalyse
 
@@ -60,7 +60,7 @@ Im Screenshot unten ist nur die Schaltfläche **Symptom** aktiviert.
 - Fehlererfassungen sind für drei Fehlersymptome erfolgt: „Luftdurchlässigkeit“, „durchgebrannte Sicherung“ und „Gerät gestört“.  
 - In der Spalte **Wahrscheinlichkeit %** summieren sich alle Prozentsätze auf 100 %. Die Wahrscheinlichkeit basiert auf allen **Symptom**-Erfassungen in dieser Fehleranalyse.
 
-![Abbildung 1](media/06-controlling-and-reporting.png)
+![Abbildung 1.](media/06-controlling-and-reporting.png)
 
 ### <a name="group-by-symptoms-and-time-period"></a>Nach Symptomen und Zeitperiode gruppieren
 
@@ -69,7 +69,7 @@ Im Screenshot unten wurden **Jahr** und **Monat** hinzugefügt, um anzuzeigen, w
 - Die Fehlersymptome werden nun als Erfassungen pro Monat/Jahr angezeigt.  
 - In der Spalte **Wahrscheinlichkeit %** ergeben alle Sie Prozentsätze für jeden Monat 100 %, wenn Sie addiert werden. Die Wahrscheinlichkeit basiert auf den **Symptom**-Erfassungen in dieser Fehleranalyse. Wenn Sie viele Positionen in einer Anlage haben, aber eine Position einen sehr hohen Prozentsatz aufweist, ist dies ein Hinweis darauf, dass ein Fehlersymptom sorgfältiger untersucht werden sollte, um die Anzahl von Erfassungen für dieses Fehlersymptom einzuschränken.
 
-![Abbildung 2](media/07-controlling-and-reporting.png)
+![Abbildung 2.](media/07-controlling-and-reporting.png)
 
 ### <a name="group-by-multiple-symptoms-and-assets"></a>Nach mehreren Symptomen und Anlagen gruppieren
 
@@ -84,7 +84,7 @@ Im Screenshot unten wurden **Anlage** und **Anlagentyp** hinzugefügt, um weiter
 - Die Fehlersymptome werden jetzt in Kombinationen **Anlage** / **Anlagentyp** / **Symptom** eingeteilt.  
 - Wenn Sie in der Spalte **Wahrscheinlichkeit %** alle Prozentsätze für die Kombination **Anlage** / **Anlagetyp** / **Symptom** jeweils addieren, ergeben sie jeweils 100 %. Die Wahrscheinlichkeit basiert auf den **Symptom**-Erfassungen in dieser Fehleranalyse. Wenn Sie viele Positionen in einer Anlage haben, aber eine Position einen sehr hohen Prozentsatz aufweist, ist dies ein Hinweis darauf, dass ein Fehlersymptom sorgfältiger untersucht werden sollte, um die Anzahl von Erfassungen für dieses Fehlersymptom einzuschränken.
 
-![Abbildung 3](media/08-controlling-and-reporting.png)
+![Abbildung 3.](media/08-controlling-and-reporting.png)
 
 **Nach zwei Symptomen, Anlage und Anlagentyp gruppieren**
 
@@ -92,7 +92,7 @@ Im Screenshot unten wurden **Bereich** zu **Symptom**, **Anlage** und **Anlagent
 
 - Wenn Sie in der Spalte **Wahrscheinlichkeit %** alle Prozentsätze für die Kombination **Anlage** / **Anlagetyp** / **Symptom** für eine Anlage addieren, ergeben sie jeweils 100 %. Die Wahrscheinlichkeit basiert auf der Kombination aus **Symptom** und **Bereich** in dieser Fehleranalyse. Wenn Sie viele Positionen in einer Anlage haben, aber eine Position einen sehr hohen Prozentsatz aufweist, ist dies ein Hinweis darauf, dass ein Fehlerbereich sorgfältiger untersucht werden sollte, um die Anzahl von Erfassungen für diesen Fehlerbereich einzuschränken.  
 
-![Abbildung 4](media/09-controlling-and-reporting.png)
+![Abbildung 4.](media/09-controlling-and-reporting.png)
 
 **Nach drei Symptomen, Anlage und Anlagentyp gruppieren**
 
@@ -100,7 +100,7 @@ Im Screenshot unten wurde **Typ** hinzugefügt, und in diesem Beispiel wird die 
  
 - Wenn Sie in der Spalte **Wahrscheinlichkeit %** alle Prozentsätze für die Kombination **Anlage** / **Anlagetyp** / **Symptom** für eine Anlage addieren, ergeben sie jeweils 100 %. Die Wahrscheinlichkeit basiert auf der Kombination aus **Symptom**, **Bereich** und **Typ** in dieser Fehleranalyse. Wenn Sie viele Positionen in einer Anlage haben, aber eine Position einen sehr hohen Prozentsatz aufweist, ist dies ein Hinweis darauf, dass ein Fehlertyp sorgfältiger untersucht werden sollte, um die Anzahl von Erfassungen für diesen Fehlertyp einzuschränken.
 
-![Abbildung 5](media/10-controlling-and-reporting.png)
+![Abbildung 5.](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]

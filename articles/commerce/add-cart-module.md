@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1ec8e89ed82bcdffdc21e62d24ad8c8a7d939cdf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 76d4bea9ad25494015a7bfeb324cb0e84dd024b7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797862"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346851"
 ---
 # <a name="cart-module"></a>Einkaufswagenmodul
 
@@ -35,11 +35,11 @@ Das Warenkorbmodul rendert Daten basierend auf der Warenkorb-ID, einem auf der g
 
 Das folgende Bild zeigt ein Beispiel einer Warenkorbseite auf der Fabrikam-Site.
 
-![Beispiel eines Einkaufskorbmoduls auf der Fabrikam-Site](./media/cart2.PNG)
+![Beispiel eines Einkaufskorbmoduls auf der Fabrikam-Site.](./media/cart2.PNG)
 
 Das folgende Bild zeigt ein Beispiel einer Warenkorbseite auf der Fabrikam-Site. In diesem Beispiel wird eine Bearbeitungsgebühr für eine Position fällig.
 
-![Beispiel eines Einkaufskorbmoduls mit einer Bearbeitungsgebühr für einen Positionsartikel](./media/ecommerce-handling-fee.png)
+![Beispiel eines Einkaufskorbmoduls mit einer Bearbeitungsgebühr für einen Positionsartikel.](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Einkaufswagenmodul-Eigenschaften und Slots
 

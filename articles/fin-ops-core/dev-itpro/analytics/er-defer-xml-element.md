@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 07b1d95572fb0b6bbfd34756bf1ecded7b9ff35c
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: f89c671ae012907a4c3e07c09bdc867c1d67a101
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944484"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348068"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Verzögern der Ausführung von XML-Elementen in ER-Formaten
 
@@ -90,14 +90,14 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
 6. Erweitern Sie in der Konfigurationsstruktur **Modell zum Erlernen verzögerter Elemente**.
 7. Überprüfen Sie die Liste der importierten ER-Konfigurationen in der Konfigurationsstruktur.
 
-    ![Importierte ER-Konfigurationen auf der Seite „Konfigurationen“](./media/ER-DeferredXml-Configurations.png)
+    ![Importierte EB-Konfigurationen auf der Seite „Konfigurationen“.](./media/ER-DeferredXml-Configurations.png)
 
 ### <a name="activate-a-configuration-provider"></a>Aktivieren eines Konfigurationsanbieters
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationsanbieter**, ob der [Konfigurationsanbieter](general-electronic-reporting.md#Provider) für das Beispielunternehmen Litware, Inc. (`http://www.litware.com`) aufgeführt und als „Aktiv“ markiert ist. Wenn dieser Konfigurationsanbieter nicht aufgeführt oder nicht als „Aktiv“ markiert ist, befolgen Sie die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-    ![Beispielfirma Litware, Inc. auf der Seite „Lokalisierungskonfigurationen“](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
+    ![Beispielfirma Litware, Inc. auf der Seite „Lokalisierungskonfigurationen“.](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
 
 ### <a name="review-the-imported-model-mapping"></a>Überprüfung der importierten Modellzuordnung
 
@@ -119,7 +119,7 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
     - Die Datenquelle **Gruppiert** vom Typ *Gruppieren nach* ist so konfiguriert, dass gefilterte Steuerbuchungen der Datenquelle **Gefiltert** gruppiert werden.
     - Das Aggregationsfeld **TotalSum** der Datenquelle **Gruppiert** ist so konfiguriert, dass Werte des Felds **\$TaxAmount** der Datenquelle **Gefiltert** für alle gefilterten Steuerbuchungen dieser Datenquelle zusammengefasst werden.
 
-        ![Aggregationsfeld „TotalSum“ auf der Bearbeitungsseite „'GroupBy' Parameter“](./media/ER-DeferredXml-GroupByParameters.png)
+        ![Aggregationsfeld „TotalSum“ auf der Bearbeitungsseite „‚GroupBy‘ Parameter“.](./media/ER-DeferredXml-GroupByParameters.png)
 
 9. Überprüfen Sie, wie die konfigurierten Datenquellen an das Datenmodell gebunden sind und wie sie aufgerufene Daten verfügbar machen, um sie in einem ER-Format verfügbar zu machen:
 
@@ -127,7 +127,7 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
     - Das Feld **\$TaxAmount** der Datenquelle **Gefiltert** ist an das Feld **Data.List.Value** des Datenmodells gebunden.
     - Das Feld **TotalSum** der Datenquelle **Gruppiert** ist an das Feld **Data.Summary.Total** es Datenmodells gebunden.
 
-    ![Modellzuordnungsdesigner – Seite](./media/ER-DeferredXml-ModelMapping.png)
+    ![Modellzuordnungsdesigner-Seite.](./media/ER-DeferredXml-ModelMapping.png)
 
 10. Schließen Sie die Seiten **Modellzuordnungsdesigner** und **Modellzuordnungen**.
 
@@ -143,7 +143,7 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
     - Das XML-Element **Bericht \\Nachricht\\Datensatz** ist so konfiguriert, dass es das ausgehende Dokument mit einem einzelnen Datensatzknoten füllt, der die Details einer einzelnen Steuerbuchung anzeigt.
     - Das XML-Element **Bericht\\Nachricht\\Zusammenfassung** ist so konfiguriert, dass das ausgehende Dokument mit einem einzelnen Zusammenfassungsknoten gefüllt wird, der die Summe der Steuerwerte aus den verarbeiteten Steuerbuchungen enthält.
 
-    ![Message XML-Element und verschachtelte XML-Elemente auf der Formatdesignerseite](./media/ER-DeferredXml-Format.png)
+    ![Nachrichten-XML-Element und verschachtelte XML-Elemente auf der Formatdesignerseite.](./media/ER-DeferredXml-Format.png)
 
 5. Überprüfen Sie auf der Registerkarte **Zuordnung** die folgenden Details:
 
@@ -157,14 +157,14 @@ Bevor Sie beginnen, müssen Sie auch die folgende Konfiguration der ER-Beispiell
     - Das **TotalTaxAmount**-Attribut ist an **model.Data.Summary.Total** gebunden, um die Summe der Steuerwerte der verarbeiteten Steuerbuchungen zu generieren.
     - Das **ExecutionDateTime**-Attribut generiert das Datum und die Uhrzeit (einschließlich Millisekunden), zu dem bzw. zu der der Zusammenfassungsknoten hinzugefügt wird.
 
-    ![Registerkarte „Zuordnung“ auf der Formatdesignerseite](./media/ER-DeferredXml-Format2.png)
+    ![Registerkarte „Zuordnung“ auf der Formatdesignerseite.](./media/ER-DeferredXml-Format2.png)
 
 ### <a name="run-the-imported-format"></a>Importiertes Format ausführen
 
 1. Wählen Sie auf der Seite **Formatdesigner** die Option **Ausführen** aus.
 2. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Datei des importierten Formats](./media/ER-DeferredXml-Run.png)
+    ![Heruntergeladene Datei des importierten Formats.](./media/ER-DeferredXml-Run.png)
 
 Beachten Sie, dass der Zusammenfassungsknoten die Summe der Steuerwerte für die verarbeiteten Transaktionen anzeigt. Weil das Format für die Verwendung der **model.Data.Summary.Total**-Bindung zum Zurückgeben der Summe konfiguriert ist, wird die Summe berechnet, indem die **TotalSum**-Aggregation der Datenquelle **Gruppiert** vom *GroupBy*-Typ in der Modellzuordnung aufgerufen wird. Um diese Aggregation zu berechnen, durchläuft die Modellzuordnung alle Transaktionen, die in der Datenquelle **Gefiltert** ausgewählt wurden. Durch Vergleichen der Ausführungszeiten des Zusammenfassungsknotens und des letzten Datensatzknotens können Sie feststellen, dass die Berechnung der Summe 12 Millisekunden (ms) gedauert hat. Durch Vergleichen der Ausführungszeiten des ersten und des letzten Datensatzknotens können Sie feststellen, dass die Generierung aller Datensatzknoten 9 ms gedauert hat. Daher waren insgesamt 21 ms erforderlich.
 
@@ -178,25 +178,25 @@ Wenn das Transaktionsvolumen viel größer als das Volumen im aktuellen Beispiel
 4. Konfigurieren Sie den Ausdruck **Gesammelter Datenschlüsselname** als `WsColumn`.
 5. Konfigurieren Sie den Ausdruck **Gesammelter Datenschlüsselwert** als `WsRow`.
 
-    ![Datensatz- XML-Element auf der Formatdesigner-Seite](./media/ER-DeferredXml-Format3.png)
+    ![Datensatz- XML-Element auf der Formatdesignerseite.](./media/ER-DeferredXml-Format3.png)
 
 6. Wählen Sie das Attribut **Bericht\\Nachricht\\Datensatz\\TaxAmount** aus.
 7. Konfigurieren Sie den Ausdruck **Gesammelter Datenschlüsselname** als `SummingAmountKey`.
 
-    ![TaxAmount-Attribut auf der Formatdesigner-Seite](./media/ER-DeferredXml-Format4.png)
+    ![TaxAmount-Attribut auf der Formatdesignerseite.](./media/ER-DeferredXml-Format4.png)
 
     Sie können diese Einstellung als Erfüllung eines virtuellen Arbeitsblatts betrachten, bei dem der Wert der Zelle A1 durch den Wert des Steuerbetrags aus jeder verarbeiteten Steuerbuchung ergänzt wird.
 
 8. Wählen Sie das **Bericht\\Nachricht\\Datensatz\\RunningTotal**-Attribut und dann **Formel bearbeiten** aus.
 9. Konfigurieren Sie den `SUMIF(SummingAmountKey, WsColumn, WsRow)`-Ausdruck durch Verwendung der integrierten [SUMIF](er-functions-datacollection-sumif.md)-ER-Funktion und wählen Sie dann **Speichern** aus.
 
-    ![SUMIF-Ausdruck](./media/ER-DeferredXml-FormulaDesigner.png)
+    ![SUMIF-Ausdruck.](./media/ER-DeferredXml-FormulaDesigner.png)
 
 10. Schließen Sie die Seite **Formeldesigner**.
 11. Wählen Sie **Speichern** und dann **Ausführen** aus.
 12. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Erstellte Liste der Steuerwerte mit ausgeführter Summe](./media/ER-DeferredXml-Run1.png)
+    ![Erstellte Liste der Steuerwerte mit ausgeführter Summe.](./media/ER-DeferredXml-Run1.png)
 
     Der letzte Datensatzknoten enthält die laufende Summe der Steuerwerte, die für alle verarbeiteten Transaktionen unter Verwendung der generierten Ausgabe als Datenquelle berechnet werden. Diese Datenquelle beginnt am Anfang des Berichts und geht bis zur letzten Steuerbuchung. Der Zusammenfassungsknoten enthält die Summe der Steuerwerte für alle verarbeiteten Transaktionen, die in der Modellzuordnung unter Verwendung der Datenquelle des Typs *GroupBy* berechnet werden. Beachten Sie, dass diese Werte gleich sind. Daher kann die ausgabenbasierte Summierung anstelle von **GroupBy** verwendet werden. Durch Vergleichen der Ausführungszeiten des ersten Datensatzknotens und des Zusammenfassungsknotens können Sie feststellen, dass die Generierung aller Datensatzknoten und das Summieren11 ms gedauert hat. Daher ist das geänderte Format hinsichtlich der Erzeugung von Datensatzknoten und der Summierung von Steuerwerten ungefähr zweimal schneller als das ursprüngliche Format.
 
@@ -205,7 +205,7 @@ Wenn das Transaktionsvolumen viel größer als das Volumen im aktuellen Beispiel
 15. Wählen Sie **Speichern** und dann **Ausführen** aus.
 16. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Erstellte Liste der Steuerwerte mit bearbeiteter Formel](./media/ER-DeferredXml-Run2.png)
+    ![Erstellte Liste der Steuerwerte mit bearbeiteter Formel.](./media/ER-DeferredXml-Run2.png)
 
     Beachten Sie, dass die laufende Summe der Steuerwerte im letzten Datensatzknoten jetzt der Summe im Zusammenfassungsknoten entspricht.
 
@@ -218,7 +218,7 @@ Wenn Sie beispielsweise die Summe der Steuerwerte in der Kopfzeile Ihres Bericht
 3. Wählen Sie **Speichern** und dann **Ausführen** aus.
 4. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Datei der Steuerwerte für den Berichtskopf](./media/ER-DeferredXml-Run3.png)
+    ![Heruntergeladene Datei der Steuerwerte für den Berichtskopf.](./media/ER-DeferredXml-Run3.png)
 
     Beachten Sie, dass die Summe der Steuerwerte im Zusammenfassungsknoten jetzt gleich 0 (Null) ist, da diese Summe jetzt auf der Grundlage der generierten Ausgabe berechnet wird. Wenn der erste Datensatzknoten generiert wird, enthält die generierte Ausgabe noch keine Datensatzknoten mit Transaktionsdetails. Sie können dieses Format so konfigurieren, dass die Ausführung des Elements **Bericht\\Nachricht\\Zusammenfassung** verzögert wird, bis das Element **Bericht\\Nachricht\\Datensatz** für alle Steuerbuchungen ausgeführt wurde.
 
@@ -227,12 +227,12 @@ Wenn Sie beispielsweise die Summe der Steuerwerte in der Kopfzeile Ihres Bericht
 1. Wählen Sie auf der Seite **Formatdesigner** auf der Registerkarte **Format** das XML-Element **Bericht\\Nachricht\\Zusammenfassung** aus.
 2. Legen Sie die Option **Verzögerte Ausführung** auf **Ja** fest.
 
-    ![Option für die verzögerte Ausführung des XML-Elements „Zusammenfassung“ auf der Seite „Formatdesigner“](./media/ER-DeferredXml-Format5.png)
+    ![Option für die verzögerte Ausführung des XML-Elements „Zusammenfassung“ auf der Seite „Formatdesigner“.](./media/ER-DeferredXml-Format5.png)
 
 3. Wählen Sie **Speichern** und dann **Ausführen** aus.
 4. Laden Sie die vom Webbrowser angebotene Datei herunter und öffnen Sie sie zur Überprüfung.
 
-    ![Heruntergeladene Datei der aufgeschobenen Ausführung](./media/ER-DeferredXml-Run4.png)
+    ![Heruntergeladene Datei der aufgeschobenen Ausführung.](./media/ER-DeferredXml-Run4.png)
 
     Das Element **Bericht\\Nachricht\\Zusammenfassung** wird jetzt nur dann ausgeführt, wenn alle Elemente unter dem übergeordneten Element, **Bericht\\Nachricht**, bereits ausgeführt wurden. Deshalb wird es nach Ausführung des Elements **Bericht\\Nachricht\\Datensatz** für alle Steuerbuchungen der Datenquelle **model.Data.List** ausgeführt. Die Ausführungszeiten des ersten und des letzten Datensatzknotens sowie die der Header- und Zusammenfassungs-Knoten machen diesen Fakt deutlich.
 

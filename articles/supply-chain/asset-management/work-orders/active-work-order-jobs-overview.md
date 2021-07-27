@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5ac36f536003b9945ffbdcae12de2582e80634a3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8642f7d92a9c0ca69ad4965fd3a8219e57278ed1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813362"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359172"
 ---
 # <a name="active-work-order-maintenance-jobs-overview"></a>Aktive Wartungsaufträge für Arbeitsaufträge – Übersicht
 
@@ -36,7 +36,7 @@ In der Spalte **%** gibt eine Zahl den Abschluss des Arbeitsauftrags in Prozent 
 
 Die folgende Abbildung zeigt ein Beispiel für die Listenseite **Aktive Wartungsaufträge für Arbeitsaufträge**.
 
-![Abbildung 1](media/23-work-orders.png)
+![Abbildung 1.](media/23-work-orders.png)
 
 Eine Kurzbeschreibung der Schaltflächen für die Listenseite **Aktive Wartungsaufträge für Arbeitsaufträge**, finden Sie unter [Einführung in Arbeitsaufträge](../work-orders/introduction-to-work-orders.md), wo identische Schaltflächen beschrieben werden.
 

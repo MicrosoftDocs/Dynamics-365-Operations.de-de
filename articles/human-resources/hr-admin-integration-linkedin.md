@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4b8c1467368cbcbed5049561b52b29388ec21a5f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e500125e1d96f6b595910e1168e2e1baeef0cd3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055099"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360591"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>In LinkedIn Talent Hub integrieren
 
@@ -48,7 +48,7 @@ Ein Systemadministrator muss Einrichtungs-Aufgaben ausführen, um die Integratio
 
 5. Auf der Seite **Dynamics 365 Human Resources** wählen Sie die Umgebung aus, mit der LinkedIn Talent Hub verknüpft werden soll, und wählen Sie dann **Verknüpfung**.
 
-    ![LinkedIn Talent Hub Onboarding](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![LinkedIn-Talent-Hub-Onboarding.](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > Sie können nur Links zu Umgebungen erstellen, in denen Ihr Benutzerkonto Administratorzugriff sowohl auf die Personalumgebung als auch auf die zugehörige Power Apps Umgebung hat. Wenn auf der Linkseite Personal keine Umgebungen aufgeführt sind, stellen Sie sicher, dass Sie für den Mandanten Personalumgebungen lizenziert haben und dass der Benutzer, den Sie auf der Linkseite angemeldet haben, über Administratorrechte sowohl für die Personalumgebung als auch für die Power Apps Umgebung verfügt.
@@ -91,7 +91,7 @@ Für den LinkedIn Talent Hub-Adapter muss ein Anwendungsbenutzer erstellt werden
 
 6. Verwenden Sie das Dropdown-Menü über der Liste, um die Ansicht von der Standardansicht **Aktivierte Benutzer** auf **Anwendungsbenutzer** zu ändern.
 
-    ![Anwendungsbenutzeransicht](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![Anwendungsbenutzeransicht.](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. Wählen Sie auf der Symbolleiste auf **Neu**.
 
@@ -163,7 +163,7 @@ Nachdem ein Kandidat den Rekrutierungsprozess durchlaufen hat und eingestellt wu
     - In dem Feld **Standort** geben Sie im Feld den Standort ein, an dem sich der Mitarbeiter befindet.
     - Geben Sie die E-Mail-Adresse des Mitarbeiters ein oder überprüfen Sie sie.
 
-![In den HRIS-Bereich in LinkedIn Talent Hub exportieren](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![In den HRIS-Bereich in LinkedIn Talent Hub exportieren.](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## <a name="complete-onboarding-in-human-resources"></a>Komplettes Onboarding in der Personalabteilung
 

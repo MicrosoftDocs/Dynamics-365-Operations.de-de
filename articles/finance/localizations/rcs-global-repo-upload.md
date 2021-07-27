@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: a138fd4b525077f12f6575f4b10f682728b71203
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b89c3feb9287b6f445b1dff7252899532df8819
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838718"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361214"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>ER-Konfigurationen in gesetzlichen Konfigurationsdiensten (Regulatory Configuration Services, RCS) erstellen und sie in das globale Repository hochladen
 
@@ -51,7 +51,7 @@ Wenn für Ihr Unternehmen bereits eine RCS-Umgebung bereitgestellt wurde, verwen
 5. Geben Sie einen Namen und eine Beschreibung ein und wählen Sie dann **Konfiguration erstellen** aus, um eine neue abgeleitete Version zu erstellen.
 6. Wählen Sie die neu abgeleitete Konfiguration aus, fügen Sie eine Beschreibung der Version hinzu, und wählen Sie dann **OK** aus. Der Status der Konfiguration in wird in **Abgeschlossen** geändert.
 
-![Neue Konfigurationsversion in RCS](media/RCS_CompleteConfig.JPG)
+![Neue Konfigurationsversion in RCS.](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > Wenn der Konfigurationsstatus geändert wird, wird möglicherweise eine Validierungsfehlermeldung angezeigt, die sich auf die verbundenen Anwendungen bezieht. Um die Validierung zu deaktivieren, klicken Sie im Aktionsbereich auf der Registerkarte **Konfigurationen** auf **Benutzerparameter**, und setzen Sie dann **Validierung bei der Statusänderung und Neubasis der Konfiguration überspringen** auf **Ja**. 
@@ -63,7 +63,7 @@ Um eine neue oder abgeleitete Konfiguration für Ihre Organisation freizugeben, 
 1. Wählen Sie die fertige Version der Konfiguration aus und wählen Sie dann **In das Repository hochladen**.
 2. Wählen Sie die Option **Global (Microsoft)** aus und dann **Hochladen**.
 
-    ![In Repository-Optionen hochladen](media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![In Repository-Optionen hochladen.](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. Wählen Sie im Benachrichtigungsfeld **Ja** aus. 
 4. Aktualisieren Sie die Beschreibung der Version nach Bedarf und wählen Sie dann **OK** aus. 
@@ -73,7 +73,7 @@ Der Status der Konfiguration wird auf **Teilen** aktualisiert, und die Konfigura
 - Sie in die Dynamics 365-Instanz importieren Weitere Informationen finden Sie unter [Elektronische Berichterstellungskonfigurationen (ER) aus RCS importieren](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - Teilen Sie die Version mit Dritten oder einer externen Organisation [RCS Share Electronic Reporting (ER) -Konfigurationen mit externen Organisationen teilen](rcs-global-repo-share-configuration.md)
 
-    ![Abgeleitete Intrastat Contoso-Konfigurationsversion im globalen Repository](media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Abgeleitete Intrastat Contoso-Konfigurationsversion im globalen Repository.](media/RCS_Config_upload_GlobalRepo.JPG)
 
 ## <a name="delete-a-configuration-from-the-global-repository"></a>Eine Konfiguration aus dem globalen Repository löschen
 Führen Sie die folgenden Schritte aus, um eine von Ihrer Organisation erstellte Konfiguration zu löschen.
@@ -84,11 +84,11 @@ Führen Sie die folgenden Schritte aus, um eine von Ihrer Organisation erstellte
 4. Suchen Sie im Inforegister **Filter** nach der Konfiguration, die Sie löschen möchten, indem Sie die **Filter**-Funktionalität verwenden.
 5. Im Inforegister **Version** wählen Sie die Version der Konfiguration aus, die Sie löschen möchten, und wählen dann **Löschen**:
 
-    ![Konfiguration aus dem globalen Repository löschen](media/RCS_Delete_from_GlobalRepo.JPG)
+    ![Konfiguration aus dem globalen Repository löschen.](media/RCS_Delete_from_GlobalRepo.JPG)
 
 6. Wählen Sie im Benachrichtigungsfeld **Ja** aus.
 
-    ![Bestätigungsmeldung zum Löschen der Konfigurationsversion](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+    ![Bestätigungsmeldung zum Löschen der Konfigurationsversion.](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
  
 Die Konfigurationsversion wird gelöscht und eine Bestätigungsmeldung angezeigt. 
 

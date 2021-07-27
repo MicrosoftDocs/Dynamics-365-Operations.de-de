@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 8709b91b354fa4e1319b406c009bfdadeef48a41
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017005"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358097"
 ---
 # <a name="inventory-visibility-add-in"></a>Inventory Visibility Add-in
 
@@ -143,7 +143,7 @@ Nachdem Sie die Voraussetzungen erfüllt haben, gehen Sie wie folgt vor, wenn Si
 
             Weitere Informationen über diese Variable finden Sie im Abschnitt [Integration der Bestandssichtbarkeit festlegen](#setup-inventory-visibility-integration) weiter unten in diesem Thema.
 
-        ![Konfiguration Auslöser](media/configuration-trigger.png "Konfiguration Auslöser")
+        ![Konfiguration Auslöser.](media/configuration-trigger.png "Konfiguration Auslöser")
 
     1. Wählen Sie **Einschalten**.
 
@@ -157,7 +157,7 @@ Um das Inventory Visibility Add-In zu installieren, gehen Sie wie folgt vor:
 1. Scrollen Sie auf der Umgebungsseite nach unten, bis Sie den Abschnitt **Umgebungs-Add-Ins** im Abschnitt **Power Platform-Integration** sehen, wo Sie den Umgebungsnamen Dataverse finden.
 1. Wählen Sie Im Abschnitt **Umgebungs-Add-Ins** die Option **Neues Add-In installieren** aus.
 
-    ![Die Umgebungsseite in LCS](media/inventory-visibility-environment.png "Die Seite „Umgebung“ in LCS")
+    ![Die Umgebungsseite in LCS.](media/inventory-visibility-environment.png "Die Seite „Umgebung“ in LCS")
 
 1. Wählen Sie den Link **Ein neues Add-In installieren**. Es öffnet sich eine Liste der verfügbaren Add-Ins.
 1. Wählen Sie **Bestandssichtbarkeit** in der Liste.
@@ -166,7 +166,7 @@ Um das Inventory Visibility Add-In zu installieren, gehen Sie wie folgt vor:
     - **AAD-Anwendung (Client) ID**
     - **AAD-Mandanten-ID**
 
-    ![Einrichtungsseite hinzufügen](media/inventory-visibility-setup.png "Seite zum Einrichten des Add-Ins")
+    ![Einrichtungsseite hinzufügen.](media/inventory-visibility-setup.png "Seite zum Einrichten des Add-Ins")
 
 1. Stimmen Sie den Bedingungen zu, indem Sie das Kontrollkästchen **Bedingungen und Konditionen** aktivieren.
 1. Wählen Sie **Installieren**. Der Status des Add-Ins wird als **Installation** angezeigt. Wenn es fertig ist, aktualisieren Sie die Seite, um den Status auf **Installiert** zu ändern.

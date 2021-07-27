@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
-ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
+ms.openlocfilehash: d68587a88b52e95d1e11c64b9a2d51dbc8b70561
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5963238"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357413"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Erstellen eines Azure-Speicherkontos und eines Schlüsseltresors
 
@@ -49,7 +49,7 @@ In diesem Thema führen Sie zwei Hauptschritte aus:
 5. Wählen Sie **Richtlinie hinzufügen** aus, um eine gespeicherte Zugriffsrichtlinie hinzuzufügen.
 6. Legen Sie die Felder **Bezeichner** und **Berechtigungen** nach Bedarf fest. Im Feld **Berechtigungen** sollten Sie alle Berechtigungen auswählen.
 
-    ![Erteilen der Blob-Speicherberechtigung](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
+    ![Erteilen der Blob-Storage-Berechtigung.](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
 
 7. Geben Sie das Start- und das Ablaufdatum ein. Das Ablaufdatum sollte in der Zukunft liegen.
 8. Wählen Sie **OK** aus, um die Richtlinie zu speichern. Anschließend speichern Sie Ihre Änderungen im Container.
@@ -57,7 +57,7 @@ In diesem Thema führen Sie zwei Hauptschritte aus:
 10. Klicken Sie mit der rechten Maustaste auf den Container und wählen Sie **Shared Access Signature abrufen** aus.
 11. Kopieren und speichern Sie im Dialogfeld **Shared Access Signatur** den Wert im Feld **URI**. Dieser Wert wird in der nächsten Prozedur verwendet und als *URI für die Shared Access Signature* bezeichnet.
 
-    ![Auswählen und Kopieren des URI-Werts](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
+    ![Auswählen und Kopieren des URI-Werts.](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Einrichten des Schlüsseltresor zum Speichern des Speicherkonto-URI
 
@@ -69,11 +69,11 @@ In diesem Thema führen Sie zwei Hauptschritte aus:
 6. Richten Sie die Zugriffsrichtlinie ein, um der elektronischen Rechnungsstellung die richtige Ebene für den sicheren Zugriff auf das von Ihnen erstellte Geheimnis zu gewähren. Navigieren Sie zu **Einstellungen \> Zugriffsrichtlinie** und wählen Sie **Zugriffsrichtlinie hinzufügen** aus.
 7. Legen Sie die geheimen Berechtigungen für die Vorgänge **Abrufen** und **Auflisten** fest.
 
-    ![Gewähren des Servicezugriffs](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
+    ![Gewähren des Servicezugriffs.](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
 
 8. Legen Sie die Zertifikatsberechtigungen für die Vorgänge **Abrufen** und **Auflisten** fest.
 
-    ![Gewähren der Zertifikatsberechtigung](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
+    ![Gewähren der Zertifikatsberechtigung.](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
 9. In dem **Prinzipal auswählen**-Feld wählen Sie **Nichts ausgewählt** aus.
 10. Wählen Sie im Dialogfeld **Prinzipal** den Prinzipal aus, indem Sie **E-Invoicing-Dienst** hinzufügen.

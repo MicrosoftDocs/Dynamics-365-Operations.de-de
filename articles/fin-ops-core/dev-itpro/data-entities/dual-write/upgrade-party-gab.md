@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: 6662b6cad53c832e15fb27b435e277840afd8097
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112672"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346545"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Auf das Partei- und globale Adressbuchmodell aktualisieren
 
@@ -89,7 +89,7 @@ Die folgenden Aktivitäten sind erforderlich, um das Upgrade vorzubereiten:
 
 10. Überprüfen Sie nach der Bereitstellung die Datensätze, den Datenfluss und den verknüpften Dienst der Data Factory.
 
-   ![Datensätze, Datenfluss und verknüpfter Dienst](media/data-factory-validate.png)
+   ![Datensätze, Datenfluss und verknüpfter Dienst.](media/data-factory-validate.png)
 
 11. Gehen Sie zu **Verwalten**. Wählen Sie unter **Verbindungen** **Verknüpfter Dienst** aus. Wählen Sie **DynamicsCrmLinkedService** aus. Geben Sie im Formular **Verknüpften Dienst bearbeiten (Dynamics CRM)** die folgenden Werte ein.
 
@@ -154,7 +154,7 @@ Die folgenden Aktivitäten sind erforderlich, um das Upgrade vorzubereiten:
 
 7. Führen Sie in der Data Factory die Vorlage aus, indem Sie **Jetzt auslösen** wie im folgenden Bild gezeigt auswählen. Dieser Prozess kann je nach Datenvolumen einige Stunden dauern.
 
-    ![Ausführung auslösen](media/data-factory-trigger.png)
+    ![Ausführung auslösen.](media/data-factory-trigger.png)
 
     > [!NOTE]
     > Wenn Sie Anpassungen für **Konto**, **Kontakt** und **Kreditor** vorgenommen haben, müssen Sie die Vorlage ändern.
@@ -164,7 +164,7 @@ Die folgenden Aktivitäten sind erforderlich, um das Upgrade vorzubereiten:
     + Laden Sie die Datei `FONewParty.csv` aus dem Azure Blob Storage herunter. Der Pfad lautet `partybootstrapping/output/FONewParty.csv`.
     + Konvertieren Sie die Datei `FONewParty.csv` in eine Excel-Datei und importieren Sie die Excel-Datei in die Finance and Operations App. Wenn der CSV-Import bei Ihnen funktioniert, können Sie die CSV-Datei direkt importieren. Das Importieren kann je nach Datenvolumen einige Stunden dauern. Weitere Informationen finden Sie unter [Übersicht über Datenimport- und -exportaufträge](../data-import-export-job.md).
 
-    ![Die Datavers-Partei-Datensätze importieren](media/data-factory-import-party.png)
+    ![Die Dataverse-Partei-Datensätze importieren.](media/data-factory-import-party.png)
 
 9. Aktivieren Sie in den Apps zur Kundenbindung die folgenden Plugin-Schritte:
 
@@ -199,7 +199,7 @@ Die folgenden Aktivitäten sind erforderlich, um das Upgrade vorzubereiten:
 3. Die Data Factory wird basierend auf durch Kommas getrennten CSV-Dateien ausgeführt. Wenn ein Feldwert ein Komma hat, kann dies die Ergebnisse beeinträchtigen. Sie müssen die Kommas entfernen.
 4. Die Registerkate **Überwachung** enthält Informationen zu allen Schritten und verarbeiteten Daten. Wählen Sie einen bestimmten Schritt zum Debuggen aus.
 
-    ![Registerkarte „Überwachung“](media/data-factory-monitor.png)
+    ![Registerkarte „Überwachung“.](media/data-factory-monitor.png)
 
 ## <a name="learn-more-about-the-template"></a>Mehr über die Vorlage
 

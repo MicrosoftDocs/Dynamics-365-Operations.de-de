@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 72d80fbb3b2448f4b89fa7d7fa580387e1a3621c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ffd426c893a93ffa02aa52a2d2bad39227f8dd35
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832945"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355106"
 ---
 # <a name="create-a-withholding-tax-payment"></a>Eine Quellensteuerzahlung erstellen
 
@@ -37,7 +37,7 @@ Die Einzelvorgangsprozedur zur Quellensteuerzahlung gleicht Quellensteuersalden 
 6. Wählen Sie **Aktualisieren** aus, um den Quellensteuerzahlungsbeleg auf das Quellensteuerverrechnungskonto zu buchen.
 7. Klicken Sie auf **OK**.
 
-![Parameter für die Quellensteuerzahlung](media/withholding-tax-payment.png)
+![Parameter für die Quellensteuerzahlung.](media/withholding-tax-payment.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

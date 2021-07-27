@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3ff7ac15a64196d7839177ded5515386184e268
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: c76919c6289fe0c2367cedecc64bbdae9ee86e63
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028226"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358510"
 ---
 # <a name="position-forecasting"></a>Positionsplanung
 
@@ -30,7 +30,7 @@ Ausgaben, die Arbeitskräften zugeordnet sind, machen häufig einem Großteil de
 
 ## <a name="position-forecasting-in-budget-planning"></a>Positionsplanung in der Budgetplanung
 
-[![Komponenten der Positionsprognose](./media/graphic-top.png)](./media/graphic-top.png) 
+[![Komponenten der Positionsprognose.](./media/graphic-top.png)](./media/graphic-top.png) 
 
 Die Positionsplanung verwendet drei Hauptkomponenten, um genaue Budgetbeträge für Positionsausgaben bereitzustellen. Diese Beträge können in einen Budgetplan für Budgetberechnungen einfließen. 
 
@@ -42,14 +42,14 @@ Eine **Vergütungsgruppe** ist eine optionale Einstellungskomponente, die verwen
 
 ### <a name="position-forecasting-processes"></a>Positionsplanungsprozesse
 
-[![Illustration von Positionsprognoseprozessen](./media/graphic1b.png)](./media/graphic1b.png) 
+[![Illustration von Positionsprognoseprozessen.](./media/graphic1b.png)](./media/graphic1b.png) 
 
 In einem typischen Prozess für die Positionsplanung erstellen Sie zunächst die Einstellungskomponenten (Budgetkostenelemente und Vergütungsgruppen). Planungspositionen werden dann anhand von vorhandenen Positionen generiert. Sie können Anpassungen nach Bedarf vornehmen. So können Sie Positionen hinzufügen oder beenden, Lohnsätze und Vorteilskosten ändern sowie Lohnerhöhungen hinzufügen. Sie können mehrere Versionen einer Planungsposition erstellen, um den Vergleich verschiedener Budgetszenarios zu vereinfachen. Danach können Sie die Planungspositionen in die Budgetpläne einfügen und die Kosten aus den Prognosepositionen als Budgetplanpositionen einführen.
 
 Sie können zusätzliche Planungspositionsversionen erstellen, während Budgetpläne überarbeitet werden. Diese neuen Versionen bieten eine Basis für die Überarbeitungen.
 
 ## <a name="position-forecasting-setup"></a>Einrichten der Positionsplanung
-[![Illustration mit Hervorhebung - Setup](./media/graphic2-1024x327.png)](./media/graphic2.png)
+[![Illustration mit Hervorhebung – Setup.](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
 ### <a name="budget-cost-elements"></a>Budgetkostenelemente
 
@@ -86,7 +86,7 @@ Die Felder **Zeitplan für Erhöhungen** und **Datum der Erhöhung** in der Verg
 Das Einkommenskostenelement, das für die Lohngruppe aktiviert ist, wird verwendet, wenn Sie Einkünfte für die Planungspositionen in der Gruppe erstellen, einschließlich ihres Grundlohns und aller Schritterhöhungen. Das Feld **Plan für feste Vergütung** verknüpft die Vergütungsgruppe mit einem Plan für feste Vergütung in der Personalverwaltung. Dieser Link kann Informationen bezüglich fester Vergütung einer Arbeitskraft einer Planungsposition zuweisen und kann das Budget genauer machen. Bedenken Sie, dass die Struktur für das Vergütungsraster (die Ebenen und die Schritte) für die Vergütungsgruppe mit der Struktur des festen Vergütungsplans übereinstimmen soll. Andernfalls kann das System die Vergütungsgruppe und den festen Vergütungsplan nicht ordnungsgemäß verknüpfen.
 
 ## <a name="creating-forecast-positions"></a>Planungspositionen erstellen
-[![Illustration mit Hervorhebung „Prognosepositionen erstellen“](./media/graphic3-1024x327.png)](./media/graphic3.png)
+[![Illustration mit Hervorhebung „Prognosepositionen erstellen“.](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Erstellen von Planungspositionen für vorhandene Positionen
 
@@ -115,7 +115,7 @@ Wenn eine Planungsposition aktiviert ist, wählen Sie **Ausgewählte Planungspos
 Sie können auch eine vollständig neue Planungsposition erstellen. Wählen Sie einen vorhandenen Einzelvorgang aus, und auch wählen Sie den Budgetplanungsprozess aus und das Budgetplanszenario. Sie können ggf. weitere Details hinzufügen, die Sie hinzufügen möchten. Noch einmal wird gleichzeitig eine neue Position in der Personalverwaltung erstellt.
 
 ## <a name="working-with-forecast-positions"></a>Arbeiten mit Planungspositionen
-[![Illustration mit Hervorhebung „Prognosepositionen ändern“](./media/graphic5-1024x327.png)](./media/graphic5.png)
+[![Illustration mit Hervorhebung „Prognosepositionen ändern“.](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
 ### <a name="multiple-versions-of-a-forecast-position"></a>Mehrere Versionen einer Planungsposition
 
@@ -171,7 +171,7 @@ Der Neuberechnungsvorgang wird automatisch auf jede Planungsposition angewendet,
 
 ## <a name="bringing-forecast-positions-into-budget-plans"></a>Einfügen von Planungspositionen in Budgetpläne
 
-[![Illustration mit Hervorhebung „Zum Budgetplan hinzufügen“](./media/graphic6-1024x327.png)](./media/graphic6.png)
+[![Illustration mit Hervorhebung „Zum Budgetplan hinzufügen“.](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 Der Zweck der Erstellung und Änderung von Planungspositionen ist, sie Budgetplänen hinzuzufügen, damit die Budgetpläne die genausten Budgetbeträge enthalten. Es gibt zwei Methoden zum Hinzufügen von Planungspositionen zu Budgetplänen. Sie können entweder einen Generierungs- oder einen Auswahlprozess im Budgetplan verwenden.
 

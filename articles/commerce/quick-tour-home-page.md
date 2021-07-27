@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f083115f5dc0cfe0e9ba4786bf79ec4083ab7e78
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3cd179483458dd3da3b69afaa464c21a11c3df8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792194"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352011"
 ---
 # <a name="home-page-overview"></a>Übersicht zur Startseite
 
@@ -31,7 +32,7 @@ Die Startseite ist die Standardseite, auf die Käufer beim Besuch einer E-Commer
 
 Die folgende Abbildung zeigt ein Beispiel für eine Startseite, die mit der Modulbibliothek und dem Design „Fabrikam“ erstellt wurde.
 
-![Beispiel einer Startseite](./media/Homepage2.PNG)
+![Beispiel einer Startseite.](./media/Homepage2.PNG)
 
 Oben auf der Startseite befindet sich eine Kopfzeile mit allen Produktkategorien und anderen Seiten, die der Einzelhändler für die Kunden verwenden möchte. Unten in der Startseite befindet sich eine Fußzeile mit Direktlinks zu verschiedenen Themen, die Kunden interessieren könnten.
 
@@ -41,13 +42,13 @@ Im Hauptbereich der Startseite können Produkte, Kategorien oder Werbeaktionen m
 
     Die folgende Abbildung zeigt ein Beispiel für eine Startseite, auf der das erste Element im Hauptabschnitt ein Hero-Layout eines Inhaltsblockmoduls mit der Bezeichnung „Neue Wareneingänge“ ist.
 
-    ![Beispiel eines Hero-Moduls](./media/Hero.PNG)
+    ![Beispiel eines Hero-Moduls.](./media/Hero.PNG)
 
 - **Funktion** – Ein Funktionslayout eines Inhaltsblockmoduls dient zur Vermarktung von Produkten oder Werbeaktionen mithilfe einer Kombination aus Bildern und Text. Funktionslayouts können unabhängig voneinander verwendet oder in einem Karussellmodul gehostet werden.
 
     Die folgende Abbildung zeigt ein Beispiel für Funktionslayouts eines Inhaltsblockmoduls auf einer Startseite.
 
-    ![Beispiele für Funktionsmodule](./media/Feature.PNG)
+    ![Beispiele für Funktionsmodule.](./media/Feature.PNG)
 
 - **Kachel** – Ein Kachellayout eines Inhaltsblockmoduls wird verwendet, um mehrere Produkte oder Produktkategorien mithilfe einer Kombination aus Bildern und Text in einem mehrspaltigen Layout zu präsentieren. In der Abbildung einer Startseite, die weiter oben in diesem Thema angezeigt wird, wird ein Kachellayout für das dreispaltige Rendering der Elemente **Shop für Frauen**, **Shop für Männer** und **Accessoire-Shop** verwendet.
 - **Video-Player** – Ein Video-Player-Modul kann verwendet werden, um Videoinhalte auf der Startseite zu präsentieren. Die Abbildung einer Startseite, die weiter oben in diesem Thema angezeigt wird, enthält ein Video-Player-Modul.
@@ -56,7 +57,7 @@ Im Hauptbereich der Startseite können Produkte, Kategorien oder Werbeaktionen m
 
     Die folgende Abbildung zeigt ein Beispiel für Produktempfehlunsmodule auf einer Startseite.
 
-    ![Beispiele für Produktempfehlungsmodule](./media/Recommendations.PNG)
+    ![Beispiele für Produktempfehlungsmodule.](./media/Recommendations.PNG)
 
 > [!NOTE]
 > Alle hier aufgelisteten Module können auf jeder Websiteseite verwendet werden. Ihre Platzierung auf der Startseite ist jedoch wichtig, da auf dieser Seite Kunden zum ersten Mal mit Ihrer Website interagieren.

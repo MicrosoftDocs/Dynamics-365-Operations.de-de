@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 3550b2b7b305702ffc337ba0a9bb79f60a9de120
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: db7bdfe102fa5e24816f2cfaf2b53351362cddd1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023265"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358193"
 ---
 # <a name="set-up-tds-registration-numbers-for-legal-entities"></a>TDS-Registrierungsnummern für juristische Personen einrichten
 
@@ -31,7 +31,7 @@ In diesem Thema wird erklärt, wie Sie Registrierungsnummern für die Quellenbes
 
 1. Gehen Sie zu **Organisationsverwaltung \> Organisationen \> Juristische Personen**.
 
-    [![Seite „Juristische Personen“](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
+    [![Seite „Juristische Personen“.](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
 
 2. Geben Sie im Inforegister **Steuerliche Angaben** im Feld **Permanente Kontonummer** die permanente Kontonummer (PAN) der juristischen Person ein.
 3. Geben Sie im Feld **Nummer des Kreises** die Nummer des Kreises der TDS-Behörde ein.
@@ -41,11 +41,11 @@ In diesem Thema wird erklärt, wie Sie Registrierungsnummern für die Quellenbes
 7. Wählen Sie im Aktionsbereich die **Registrierungskennung** aus, um die Seite **Adressen verwalten** aus.
 8. Wählen Sie im Inforegister **Steuerliche Angaben** **Hinzufügen** oder **Bearbeiten** aus, um die Seite **Steuerliche Angaben verwalten** zu öffnen, auf der Sie den Steuerregistrierungseintrag pflegen können.
 
-    [![Seite „Adressen verwalten“](./media/apac-ind-TDS-5.png)](./media/apac-ind-TDS-5.png)
+    [![Seite „Adressen verwalten“.](./media/apac-ind-TDS-5.png)](./media/apac-ind-TDS-5.png)
 
 9. Geben Sie im Inforegister **Quellensteuer** im Feld **Steuerkontonummer (TAN)** die Registrierungsnummer ein. Diese Nummer muss aus vier alphabetischen Zeichen, dann fünf numerischen Zeichen und dann einem alphabetischen Zeichen bestehen. Hier ist ein Beispiel: **AXDF87645F**.
 10. Geben Sie im Feld **Name oder Beschreibung** eine Beschreibung der Quellensteuerregistrierungsnummer ein.
 
-    [![Seite „Steuerliche Angaben verwalten“](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
+    [![Seite „Steuerliche Angaben verwalten“.](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
 
 11. Schließen Sie die Seite.

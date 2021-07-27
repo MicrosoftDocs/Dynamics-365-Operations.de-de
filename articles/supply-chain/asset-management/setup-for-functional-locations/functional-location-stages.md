@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1ab19358857440e46d3df2323fbcea19a476903
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837752"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360969"
 ---
 # <a name="functional-location-lifecycle-states"></a>Lebenszyklusstatus funktionaler Standorte
 
@@ -56,9 +56,9 @@ Wenn Sie die Lebenszyklusstatus erstellt haben, die für Ihre funktionalen Stand
 1. Wählen Sie **Anlagenverwaltung** > **Einstellungen** > **Funktionale Standorte** > **Lebenszyklusmodelle** aus.
 2. Wählen Sie **Neu** aus, um ein neues Lebenszyklusmodell zu erstellen.
 3. Fügen Sie die Lebenszyklusmodelle-ID in das Feld **Lebenszyklusmodell** ein, und geben Sie einen Namen für das Lebenszyklusmodell im Feld **Name** ein. In den Feldern **Funktionale Standorttypen** und **Lebenszyklusstatus** können Sie die Anzahl der funktionalen Standorttypen sehen, die das Lebenszyklusmodell verwenden, sowie die Anzahl der im Lebenszyklusmodell ausgewählten Status.
-4. Wählen Sie im Inforegister **Lebenszyklusstatus** die Status aus, die in das Modell einbezogen werden sollen. Dies erfolgt, indem Sie im Abschnitt **Verbleibende Lebenszyklusstatus** auf einen Status klicken und dann auf die Schaltfläche ![Vorwärtspfeil](media/02-setup-for-functional-locations.png) klicken.
-5. Wenn Sie alle verfügbaren Status für ein Modell auswählen möchten, klicken Sie auf die Schaltfläche ![Alle verfügbaren Phasen auswählen](media/03-setup-for-functional-locations.png). Alle Status werden in den Abschnitt **Ausgewählte Lebenszyklusstatus** übertragen.
-6. Wenn Sie einen ausgewählten Status aus dem Modell entfernen möchten, wählen Sie den Status im Abschnitt **Ausgewählte Lebenszyklusstatus** aus, und wählen Sie dann die Schaltfläche ![Zurück-Pfeil](media/04-setup-for-functional-locations.png) aus.
+4. Wählen Sie im Inforegister **Lebenszyklusstatus** die Status aus, die in das Modell einbezogen werden sollen. Dies erfolgt, indem Sie im Abschnitt **Verbleibende Lebenszyklusstatus** auf einen Status klicken und dann auf die ![Vorwärtspfeil](media/02-setup-for-functional-locations.png)- Schaltfläche.
+5. Wenn Sie alle verfügbaren Status für ein Modell auswählen möchten, klicken Sie auf die ![Alle verfügbaren Phasen auswählen](media/03-setup-for-functional-locations.png)- Schaltfläche. Alle Status werden in den Abschnitt **Ausgewählte Lebenszyklusstatus** übertragen.
+6. Wenn Sie einen ausgewählten Status aus dem Modell entfernen möchten, wählen Sie den Status im Abschnitt **Ausgewählte Lebenszyklusstatus** aus, und wählen Sie dann die ![Zurück-Pfeil](media/04-setup-for-functional-locations.png)- Schaltfläche.
 7. Wählen Sie **Lebenszyklusstatusaktualisierungen**, um festzulegen, welche Lebenszyklusstatus einem ausgewählten Status folgen können.
 
 

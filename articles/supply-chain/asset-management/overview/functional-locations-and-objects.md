@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e626daa89eecf838d7cda0663d00c1c2dbecb76
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa61f9ab9d38a748742733a4143e6d50b82caf4c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816748"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351584"
 ---
 # <a name="functional-locations-and-assets"></a>Funktionale Standorte und Anlagen
 
@@ -34,13 +34,13 @@ In diesem Thema werden funktionale Standorte und Anlagen in Asset Management bes
 
 Anlagenmanagement ist nahtlos in mehrere Module in anderen Finance and Operations Apps integriert. Die folgende Abbildung zeigt die Schnittstellen mit anderen Modulen.
 
-![Diagramm, das die Anlagenmanagement-Schnittstellen mit anderen Modulen zeigt](media/01-overview-image.png)
+![Diagramm, das die Anlagenmanagement-Schnittstellen mit anderen Modulen zeigt.](media/01-overview-image.png)
 
 Mit Asset Management können Sie effizient alle Aufgaben verwalten und ausführen, die mit dem Verwalten und der Wartung von viele Arten von Ausrüstung in Ihrem Unternehmen zusammenhängen. Zu diesen Ausrüstungsgegenständen zählen Maschinen, Produktionsanlagen und Fahrzeuge. Asset Management unterstützt außerdem Lösungen über zahlreiche Branchen hinweg.
 
 Die folgende Abbildung zeigt einen Überblick über die Hauptfunktionen von Asset Management.
 
-![Diagramm, das die Hauptfunktionen in Anlagenmanagement anzeigt](media/02-overview-image.png)
+![Diagramm, das die Hauptfunktionen in Anlagenmanagement anzeigt.](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Funktionale Standorte und Anlagen
 
@@ -50,11 +50,11 @@ Anlagenkosten folgen immer dem Standort der Anlage. Dies bedeutet Folgendes: Wen
 
 Die Art, wie Sie die Hierarchie der funktionalen Standorte erstellen, hängt von den Unternehmensanforderungen für die Verwaltung der internen Ausrüstung oder die Wartung der Ausrüstung von Kunden ab. Die folgende Abbildung zeigt ein Beispiel für funktionale Standorte, die auf geografischen Standorten basieren.
 
-![Diagramm, das die funktionalen Standorte auf Grundlage der geografischen Standorte anzeigt](media/03-overview-image.png)
+![Diagramm, das die funktionalen Standorte auf Grundlage der geografischen Standorte anzeigt.](media/03-overview-image.png)
 
 Die folgende Abbildung zeigt ein Beispiel für funktionale Standorte, die auf Kunden basieren.
 
-![Diagramm, das die funktionalen Standorte auf Grundlage der Kunden anzeigt](media/04-overview-image.png)
+![Diagramm, das die funktionalen Standorte auf Grundlage der Kunden anzeigt.](media/04-overview-image.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

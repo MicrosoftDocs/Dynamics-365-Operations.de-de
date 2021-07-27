@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 4003208a1f02db134bbec1ecf90c1cdd2973e67f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9276a633d560bc95c868b9c12438b4f625ed169a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751153"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351889"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Einrichten von Parametern eines EB-Formats pro juristischer Person
 
@@ -49,7 +49,7 @@ Um die Beispiele in diesem Thema abzuschließen, müssen Sie für eine der folge
     
     Die folgende Abbildung zeigt die Konfigurationen, die Sie haben müssen, wenn Sie fertig sind.
 
-    ![ER-Konfigurationsseite](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
+    ![EB-Konfigurationsseite.](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
 
 ## <a name="set-up-parameters-for-the-demf-company"></a>Einrichten von Parametern für das DEMF-Unternehmen
 
@@ -59,7 +59,7 @@ Sie können das EB-Framework verwenden, um anwendungsspezifische Parameter für 
 2.  Wählen Sie in der Konfigurationsstruktur das Format **Format zum Ermitteln der Vorgehensweise bei der Suche von Daten zu juristischen Personen** aus.
 3.  Wählen Sie im Aktivitätsbereich auf der Registerkarte **Konfigurationen** in der Gruppe **Anwendungsspezifische Parameter** die Option **Einrichten** aus.
 
-    ![Seite für anwendungsspezifische EB-Parameter](./media/GER-AppSpecParms-LookupForm.PNG)
+    ![Seite für anwendungsspezifische EB-Parameter.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     Auf der Seite **Anwendungsspezifische Parameter** können Sie die Regeln für die Datenquelle **Auswahl** des Formats **Format zum Ermitteln der Vorgehensweise bei der Suche von Daten zu juristischen Personen** konfigurieren.
     
@@ -75,14 +75,14 @@ Sie können das EB-Framework verwenden, um anwendungsspezifische Parameter für 
 
     Die Suche zeigt die Liste der Steuercodes für die Auswahl an. Diese Liste wird durch die Datenquelle **Model.Data.Tax** zurückgegeben, die im Basis-EB-Format konfiguriert wurde. Da diese Datenquelle das Feld **Name** enthält, wird der Name jedes Steuercodes in der Suche angezeigt.
 
-    ![Seite für anwendungsspezifische EB-Parameter](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![Seite für anwendungsspezifische EB-Parameter.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  Wählen Sie den Steuercode **VAT19** aus.
 8.  Wählen Sie im Feld **Suchergebnis** des neuen Datensatzes den Dropdown-Pfeil aus, um die Suche zu öffnen. Die Suche zeigt die Liste der Werte für die TaxationLevel-Formatenumeration zur Auswahl an.
 
     Hinweis: Wenn Deutsch als bevorzugte Sprache des Benutzers ausgewählt wird, als der Sie angemeldet sind, werden die Beschriftungen der Werte in der Suche auf Deutsch angezeigt, sofern sie im Basis-EB-Format übersetzt wurden. Darüber hinaus erscheint die Beschriftung in der bevorzugten Sprache des Benutzers auf der Registerkarte **Suchen**, wennn die Beschriftung einer Suchendatenquelle übersetzt wurde.
 
-    ![Seite für anwendungsspezifische EB-Parameter](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![Seite für anwendungsspezifische EB-Parameter.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  Wählen Sie den Wert **Reguläre Besteuerung** aus.
 
@@ -120,7 +120,7 @@ Sie können das EB-Framework verwenden, um anwendungsspezifische Parameter für 
     
     Wenn Sie diesen letzten Datensatz hinzufügen, legen Sie die folgende Regel fest: Sobald der Steuercode, der als Argument weitergegeben wird, keine der vorherigen Regeln erfüllt, gibt die Suchdatenquelle **Sonstige** als erforderliche Besteuerungsstufe zurück.
 
-    ![Seite für anwendungsspezifische EB-Parameter](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![Seite für anwendungsspezifische EB-Parameter.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. Wählen Sie im Feld **Status** die Option **Abgeschlossen** aus.
 
@@ -144,7 +144,7 @@ Sie können das EB-Framework verwenden, um anwendungsspezifische Parameter für 
 6.  Wählen Sie den Steuercode **InVAT7** aus.
 7.  Wählen Sie im Aktivitätsbereich auf der Registerkarte **Mehrwertsteuercode** in der Gruppe **Abfragen** die Option **Gebuchte Mehrwertsteuer** aus, um Informationen zum Steuerwert und dem angewendeten Steuersatz pro Steuercode anzuzeigen.
 
-    ![Veröffentlichte Umsatzsteuer-Seite](./media/GER-AppSpecParms-Statement.PNG)
+    ![Veröffentlichte Umsatzsteuer-Seite.](./media/GER-AppSpecParms-Statement.PNG)
 
 8.  Schließen Sie die Seite „Gebuchte Mehrwertsteuer“.
 
@@ -160,7 +160,7 @@ Sie können das EB-Framework verwenden, um anwendungsspezifische Parameter für 
 
     Die Suche zeigt nun die Liste der Steuercodes für die Steuer des **USMF**-Unternehmens zur Auswahl an.
 
-    ![Seite für anwendungsspezifische EB-Parameter](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![Seite für anwendungsspezifische EB-Parameter.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  Wählen Sie den Steuercode **BEFREIT** aus.
 9.  Wählen Sie im Feld **Suchergebnis** des neuen Datensatzes den Wert **Keine Besteuerung** aus.
@@ -168,9 +168,9 @@ Sie können das EB-Framework verwenden, um anwendungsspezifische Parameter für 
 11. Wählen Sie im Feld **Code** des neuen Datensatzes die Option **\*Nicht leer\*** aus.
 12. Wählen Sie im Feld **Suchergebnis** des neuen Datensatzes den Wert **Reguläre Besteuerung** aus.
 13. Wählen Sie im Feld **Status** die Option **Abgeschlossen** aus.
-14. Wählen Sie **Speichern**.
+14. Wählen Sie **Speichern** aus.
 
-    ![Seite für anwendungsspezifische EB-Parameter](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
+    ![Seite für anwendungsspezifische EB-Parameter.](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
     
 15. Schließen Sie die Seite **Anwendungsspezifische Parameter**.
 
@@ -187,7 +187,7 @@ Sie können das EB-Framework verwenden, um anwendungsspezifische Parameter für 
 
 ### <a name="export-parameters"></a>Exportieren von Parametern
 
-1.  Wechseln Sie zu **Organisationsverwaltung  \>Arbeitsbereiche \>  Elektronische Berichterstellung**.
+1.  Wechseln Sie zu **Organisationsverwaltung \> Arbeitsbereiche \> Elektronische Berichterstellung**.
 2.  Wählen Sie **Berichterstellungskonfigurationen** aus.
 3.  Wählen Sie in der Konfigurationsstruktur das Format **Format zum Ermitteln der Vorgehensweise bei der Suche von Daten zu juristischen Personen** aus.
 4.  Wählen Sie im Aktivitätsbereich auf der Registerkarte **Konfigurationen** in der Gruppe **Anwendungsspezifische Parameter** die Option **Einrichten** aus.
@@ -225,13 +225,13 @@ Im vorherigen Beispiel haben Sie auf anwendungsspezifische Parameter eines EB-Fo
 
 1.  Verwenden Sie entweder eine vorhandene Menüoption **ERSolutionAppSpecificParametersDesigner** erneut oder implementieren Sie Ihre eigene Menüoption **ERSolutionAppSpecificParametersDesigner**.
 
-    ![Visual Studio-Seite](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Visual Studio-Seite.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Führen Sie einen dieser Schritte aus:
 
     1.  Erstellen Sie eine neue Menüoptionsschaltfläche und verknüpfen Sie diese mit dem gewünschten Datensatz aus der Tabelle **ERSolutionTable**, indem Sie die Eigenschaft **Datenquelle** auf **ERSolutionTable** festlegen.
     
-        ![Visual Studio-Seite](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Visual Studio-Seite.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Erstellen Sie eine einfache Schaltfläche und überschreiben Sie die Methode **Geklickt** wie im folgenden Beispiel veranschaulicht.
     

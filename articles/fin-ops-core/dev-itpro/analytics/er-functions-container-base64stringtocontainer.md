@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6fd08d9a2522bdf497b1926c884a4583065d9f19
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01f7f032915a5e4170cae5e28a445081aef075fa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754373"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355369"
 ---
 # <a name="base64stringtocontainer-er-function"></a>EB-Funktion Base64StringToContainer
 
@@ -54,8 +54,8 @@ Die Ausnahme „Parameter ist ungültig“ wird ausgegeben, wenn die Eingabezeic
 
 Die folgenden Datenquellen definieren Sie in Ihrer Modellzuordnung:
 
-- Die Stammdatenquelle **DocuTypeGroupEnum** des Typs *Dynamics 365 for Operations/Aufzählung*, die sich auf die Anwendungsaufzählung **DocuTypeGroup** bezieht
-- Die Stammdatenquelle **Debitor** des Typs *Dynamics 365 for Operations/Tabellendatensätze*, die auf die Anwendungstabelle **CustTable** verweist
+- Die Stammdatenquelle **DocuTypeGroupEnum** des Typs *Dynamics 365 for Operations / Aufzählung*, die sich auf die Anwendungsaufzählung **DocuTypeGroup** bezieht
+- Die Stammdatenquelle **Debitor** des Typs *Dynamics 365 for Operations / Tabellendatensätze*, die auf die Anwendungstabelle **CustTable** verweist
 - Die Datenaquelle **\#Medien** des Typs *Berechnetes Feld*, die folgendermaßen konfiguriert ist:
 
     - Sie wird als untergeordnete Datenquelle der Datenquelle **Debitor** hinzugefügt.
@@ -73,7 +73,7 @@ Die folgenden Datenquellen definieren Sie in Ihrer Modellzuordnung:
 
 In diesem Beispiel codiert die Datenquelle **\#MediaAsBase64String** den binären Inhalt des aktuellen Medienanhangs als Text, der eine Base64-Gruppe von Binär-Text-Codierungsschemata darstellt. Die Datenquelle **\#BlobFomBase64** decodiert die Base64-Zeichenfolge und gibt einen Binärwert im BLOB-Format zurück.
 
-![Beispieldatenquelle auf der Seite des EB-Modellzuordnungsdesigners](./media/er-functions-container-base64stringtocontainer-1.png)
+![Beispieldatenquelle auf der Seite des EB-Modellzuordnungsdesigners.](./media/er-functions-container-base64stringtocontainer-1.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

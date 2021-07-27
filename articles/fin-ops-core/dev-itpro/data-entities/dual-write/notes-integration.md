@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 3ff40011ac60c47f6ed667adfcf01bc727334f13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186785"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358978"
 ---
 # <a name="note-integration"></a>Integration von Notizen
 
@@ -51,23 +51,23 @@ Befolgen Sie diese Schritte zum Erstellen einer Notiz in einer Kundenbindungs-Ap
 1. Öffnen Sie in der Kundenbindungs-App den Kontodatensatz eines Debitoren.
 2. Wählen Sie im Bereich **Zeitskala** das Pluszeichen (**+**) und anschließend **Notiz** aus, um eine Notiz zu erstellen.
 
-    ![Erstellen einer Notiz in der Kundenbindungs-App](media/notes-ce-1.png)
+    ![Erstellen einer Notiz in der Kundenbindungs-App.](media/notes-ce-1.png)
 
 3. Geben Sie einen Titel und eine Beschreibung ein, und wählen Sie anschließend **Notiz hinzufügen** aus.
 
-    ![Eingeben eines Titels und einer Beschreibung](media/notes-ce-2.png)
+    ![Eingeben eines Titels und einer Beschreibung.](media/notes-ce-2.png)
 
     Die neue Notiz wird der Debitorenzeitskala hinzugefügt.
 
-    ![Neuer Hinweis auf der Debitorenzeitskala](media/notes-ce-3.png)
+    ![Neuer Hinweis auf der Debitorenzeitskala.](media/notes-ce-3.png)
 
 4. Melden Sie sich bei der Finance and Operations-App, und öffnen Sie denselben Debitorendatensatz. Beachten Sie, dass die **Anhänge**-Schaltfläche (Büroklammersymbol) in der oberen rechten Ecke anzeigt, dass der Datensatz einen Anhang hat.
 
-    ![Benachrichtigung über einen Anhang](media/notes-ce-4.png)
+    ![Benachrichtigung über einen Anhang.](media/notes-ce-4.png)
 
 5. Wählen Sie die **Anhänge**-Schaltfläche zum Öffnen der **Anhänge**-Seite aus. Sie sollten nun die erstellte Notiz in der Kundenbindungs-App finden.
 
-    ![Notiz in der Kundenbindungs-App](media/notes-ce-5.png)
+    ![Notiz in der Kundenbindungs-App.](media/notes-ce-5.png)
 
 Alle Aktualisierungen der Notiz werden zwischen der Finance and Operations-App und der Kundenbindungs-App hin und her synchronisiert.
 
@@ -79,21 +79,21 @@ Befolgen Sie diese Schritte zum Erstellen einer Notiz in einer Finance and Opera
 
 1. Wählen Sie in der Finance and Operations-App auf der Seite **Anhänge** die Option **Neu** \> **Notiz** aus.
 
-    ![Erstellen einer Notiz in der Finance and Operations-App](media/notes-fo-1.png)
+    ![Erstellen einer Notiz in der Finance and Operations-App.](media/notes-fo-1.png)
 
 2. Geben Sie einen Titel und eine kurze Anleitung ein. Wählen Sie dann **Speichern** aus.
 
-    ![Eingeben eines Titels und einer Anleitung](media/notes-fo-2.png)
+    ![Eingeben eines Titels und einer Anleitung.](media/notes-fo-2.png)
 
 3. Aktualisieren Sie in der Kundenbindungs-App den Datensatz. Sie sollten die neue Notiz auf der Zeitskala finden.
 
-    ![Neue Notiz auf der Zeitskala in der Kundenbindungs-App](media/notes-fo-3.png)
+    ![Neue Notiz auf der Zeitskala in der Kundenbindungs-App.](media/notes-fo-3.png)
 
 Sie können eine Notiz entweder als intern oder als extern klassifizieren.
 
 - Öffnen Sie die Notiz in der Finance and Operations-App auf der Seite **Anhänge**, und wählen Sie anschließend im Feld **Einschränkung** die Option **Intern** oder **Extern** aus.
 
-    ![Einschränkungsfeld](media/notes-fo-4.png)
+    ![Einschränkungsfeld.](media/notes-fo-4.png)
 
 Sie können auch eine URL erstellen
 
@@ -101,13 +101,13 @@ Sie können auch eine URL erstellen
 2. Geben Sie einen Titel und die URL ein.
 3. Wählen Sie im Feld **Einschränkung** die Option **Intern** oder **Extern** aus.
 
-    ![Erstellen einer URL in der Finance and Operations-App](media/notes-fo-5.png)
+    ![Erstellen einer URL in der Finance and Operations-App.](media/notes-fo-5.png)
 
 4. Wählen Sie **Speichern** aus.
 
     Da Kundenbindungs-Apps keinen URL-Typ enthalten, wird die URL als Notiz über duales Schreiben integriert.
 
-    ![Als Notiz erscheinende URL in der Kundenbindungs-App](media/notes-ce-6.png)
+    ![Als Notiz erscheinende URL in der Kundenbindungs-App.](media/notes-ce-6.png)
 
 > [!NOTE]
 > Dateianhänge werden nicht unterstützt.

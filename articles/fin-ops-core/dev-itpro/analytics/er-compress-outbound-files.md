@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5b58a9345b83219296a3570e7bf653ef8624b7a1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894171"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357641"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimieren großer Dokumente, die in der elektronischen Berichterstellung generiert werden 
 
@@ -55,7 +55,7 @@ Bevor Sie die Prozeduren in diesem Thema abschließen können, müssen die folge
 1. [Führen Sie das importierte Format aus](er-defer-xml-element.md#run-the-imported-format).
 2. Beachten Sie, dass die Größe des generierten Dokuments im XML-Format 3 Kilobyte (KB) beträgt.
 
-    ![Vorschau des unkomprimierten ausgehenden Dokuments](./media/er-compress-outbound-files1.png)
+    ![Vorschau des unkomprimierten ausgehenden Dokuments.](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>Ändern des Formats, um die generierte Ausgabe zu komprimieren
 
@@ -80,7 +80,7 @@ Bevor Sie die Prozeduren in diesem Thema abschließen können, müssen die folge
     > [!NOTE] 
     > Die Komprimierungsrate der XML-Datei, die diese ZIP-Datei enthält, beträgt 87 Prozent. Die Komprimierungsrate hängt von den Daten ab, die komprimiert werden.
 
-    ![Vorschau des komprimierten ausgehenden Dokuments](./media/er-compress-outbound-files2.png)
+    ![Vorschau des komprimierten ausgehenden Dokuments.](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > Wenn das EB-[Ziel](electronic-reporting-destinations.md) für das Formatelement konfiguriert ist, das die Ausgabe generiert (in diesem Beispiel das Element **Bericht**), wird die Komprimierung der Ausgabe umgangen.

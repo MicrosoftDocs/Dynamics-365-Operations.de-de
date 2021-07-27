@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 106043
+ms.custom:
+- "106043"
+- intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2597dda47e3441d2c41497081849a2213974e55
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 9ced76e20a54d61fe96b5d2a5118adb0c5eb7ccf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187915"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355699"
 ---
 # <a name="budgeting-home-page"></a>Startseite der Budgetierung
 
@@ -32,7 +34,7 @@ Dieses Thema enthält eine Übersicht über die Budgetierungsfunktionskomponente
 
 Der Ressourcenplanungszyklus für ein Unternehmen besteht normalerweise aus folgenden Aktivitäten: Planung, Budgetierung und Prognose.
 
-[![Budgetfunktionskomponenten](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![Budgetfunktionskomponenten.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 Der Prozess sowohl für die langfristige strategische Planung als auch für die Jahresbudgetplanung werden von einem Budgetplandokument unterstützt. Budgetplandokumente sind eng in Microsoft Excel integriert. Benutzer können unbegrenzt monetäre und quantitative Szenarien konfigurieren sowie eine Budgetplanungs-Organisationshierarchie anlegen, um die Budgetplanungsmethoden Top-Down und Bottom-Up zu unterstützen. Nach dem Einrichten und Genehmigen eines Budgets in der Anwendung konvertieren Sie den Budgetplan in einen Budgetregistereintrag. Budgetregistereinträge enthalten Tools zur Verwaltung des Budgets und für die Nachverfolgung von Beträgen über Budgetcodes. Mit Budgetregistereinträgen können Sie ursprüngliche Budgets überarbeiten, Umbuchungen tätigen und Budgetbeträge vom Vorjahr übertragen. Auf Grundlage eines eingerichteten Budgets kann ein Unternehmen Budgetsteuerung aktivieren. Das Maß an Kontrolle hängt von der Kultur einer Organisation und vom Maturitätsgrad der Organisation ab. Organisationen mit einem niedrigen Reifegrad möchten das Budget möglicherweise nicht verändern und sind eher reaktiv als proaktiv, falls ein Budget nicht den Erwartungen entspricht. Andere Organisationen aktivieren möglicherweise Budgetsteuerungsrichtlinien, die Benutzer am Einkauf hindern, wenn keine Budgetmittel verfügbar sind.
 
@@ -46,7 +48,7 @@ Schließlich etablieren sehr erfahrene Organisationen möglicherweise eine Organ
 -   [Budgetplanungsvorlagen für Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budgetierungstools
-[![Budgetierungstools](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Budgetierungstools.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 Es sind zusätzliche Planungs- und Budgetierungsfunktionalitäten verfügbar und in Sachkontenbudgets integriert.
 

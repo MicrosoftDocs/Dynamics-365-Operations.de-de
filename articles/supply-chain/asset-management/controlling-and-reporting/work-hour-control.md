@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9ac64b0e40662f30cc615dfbd3f05aba5b37d862
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 88ae7faabe7af25f6e3b95c7217d91e440c94da2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838657"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346201"
 ---
 # <a name="work-hour-control"></a>Arbeitszeitsteuerung
 
@@ -42,7 +42,7 @@ Die Berechnungen für Anlagen, Technische Standorte und Arbeitsaufträge sind na
 
 4. Wählen Sie bei Bedarf ein **Finanzdimensionssatz**, das in die Berechnung einbezogen werden soll.
 
-5. Wählen Sie „Ja“ auf der Schaltfläche **Null überspringen** Umschalten, wenn Sie keine Ergebnisse mit Nullstunden anzeigen möchten.
+5. Wählen Sie „Ja“ auf der Schaltfläche **Null überspringen** umschalten, wenn Sie keine Ergebnisse mit Nullstunden anzeigen möchten.
 
 6. Im Feld **Stufe** können Sie angeben, wie detailliert die Stundenkontrollzeilen zu Technischen Standorten sein sollen. 
 
@@ -66,7 +66,7 @@ Die Abbildung zeigt ein Beispiel für eine Berechnung der **Anlagenstundensteuer
 - Das Feld **Iststunden** zeigt gebuchte Stunden auf Arbeitsaufträgen. 
 - Das Feld **Verpflichtete Stunden** zeigt die Gesamtzahl der Stunden, die Ihr Unternehmen in Bezug auf Arbeitsaufträge verpflichtet ist.
 
-![Beispiel der Berechnung der Anlagenstundensteuerung](media/04-controlling-and-reporting.png)
+![Beispiel der Berechnung der Anlagenstundensteuerung.](media/04-controlling-and-reporting.png)
 
 Eine weitere Möglichkeit, eine Stundenberechnung durchzuführen, besteht darin, Anlagen in **Alle Anlagen** oder **Aktive Anlagen** mehrfach auszuwählen. Dann klicken Sie auf die Schaltfläche **Stundensteuerung** auf dem Inforegister **Allgemein**. Die ausgewählten Anlagen werden automatisch in das Feld **Anlagen** auf der Seite **Einzubeziehende Anlagen** FastTab eingefügt. Klicken Sie im Dialog **Anlagenstundensteuerung** auf **OK**, und die Berechnung für die ausgewählten Anlagen wird angezeigt. Das gleiche Verfahren kann für Technische Standorte in **Alle Technischen Standorte** oder **Aktive Technische Standorte** und für Arbeitsaufträge in **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** durchgeführt werden.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b91b398c4ef864a92a5318b7e80f71a5a572844e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 75deb3dcca2c5a7fd7341b30411e04715bf27c29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836757"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361185"
 ---
 # <a name="create-maintenance-budgets"></a>Erstellen von Wartungsbudgets
 
@@ -50,7 +50,7 @@ Wartungsbudgets basieren auf den Kostentypen, die in der Anlagenverwaltung verwe
     > [!NOTE]
     > Nachdem Sie ein Wartungsbudget genehmigt haben, können Sie die zugehörigen Positionen der Seite **Wartungsbudgetpositionen** nicht neu berechnen oder anpassen, sofern Sie die Genehmigung nicht zunächst entfernen. Um die Genehmigung eines Wartungsbudgets zu entfernen, wählen Sie dieses auf der Seite **Wartungsbudgets** aus, und wählen Sie dann **Genehmigen** aus. Im Dialogfeld **Budget genehmigen** wählen Sie **OK** aus.
 
-![Wartungsbudgets](media/01-maintenance-budgets.png)
+![Wartungsbudgets.](media/01-maintenance-budgets.png)
 
 Sie können auch ein neues Wartungsbudget erstellen, indem Sie ein vorhandenes Budget kopieren. Wählen Sie auf der Seite **Wartungsbudgets** das zu kopierende Budget aus, und wählen Sie dann **Kopieren** aus. Dieser Ansatz ist hilfreich, wenn Sie z. B. ein Budget für einen Monat erstellt haben und dieses in andere Monate kopieren möchten.
 

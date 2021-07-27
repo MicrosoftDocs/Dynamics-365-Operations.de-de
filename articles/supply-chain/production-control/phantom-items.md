@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1118d7334602e450e5d503632895f73ba19066a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cb04502721740c48004b62bc96ff13ca063e06db
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814777"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360897"
 ---
 # <a name="phantom-items"></a>Phantomartikel
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird  ausführlich beschrieben, wie der Positionstyp "Phantom" für die Positionen einer Stückliste (BOM) und die Formel verwendet werden kann. In der folgenden Abbildung ist (a) die Stückliste für Produkt H und Teile F, G und und (b) ist der Arbeitsplan für Produkte H und Teil F.
+In diesem Thema wird ausführlich beschrieben, wie der Positionstyp "Phantom" für die Positionen einer Stückliste (BOM) und die Formel verwendet werden kann. In der folgenden Abbildung ist (a) die Stückliste für Produkt H und Teile F, G und und (b) ist der Arbeitsplan für Produkte H und Teil F.
 
-![Produkt H und Teil F](media/product-H-part-F.png)
+![Produkt H und Teil F.](media/product-H-part-F.png)
 
 
 Diese Abbildung zeigt ein Beispiel einer Stückliste in zwei Ebenen. Produkt H stellt ein Produkt für eine Maschinenzusammenstellung dar. Die Maschinenmontage besteht aus zwei Teilen, einer elektrische Einheit (F), die zwei Materialien hat (A und B) und eine Gruppe Verpackungsmaterialien (G), die auch zwei Materialien hat (C und D). Ein anderes Material (E) wird bei der allgemeinen Zusammenstellung der Maschine verwendet.
 
-![Produkt H und Teil F](media/product-H-part-B.png)
+![Produkt H und Teil F.](media/product-H-part-B.png)
 
 Die hier verwendete Darstellung zeigt die erstellte Stückliste für Produkt H. Diese Struktur bietet einen guten Überblick der Teile und Komponenten der gesamten Maschinenmontage. Aber Produktdesigner ziehen es möglicherweise vor, die Stückliste so zu sehen und diese Struktur wird vielleicht nicht korrekt so dargestellt, wie die Maschine im Fertigungsbereich erstellt wird. 
 
@@ -53,23 +53,23 @@ Der Übergang zwischen der Konstruktionsstückliste und der Produktionsstücklis
 ## <a name="multilevel-phantom-bom-structures"></a>Mehrstufige Phantomstücklistenstrukturen
 Die Phantompositionsart kann in mehrstufigen Stücklistenstrukturen wie in der folgenden Abbildung dargestellt verwendet werden. In dieser Grafik ist (a) die Stückliste für Produkt G und (b) ist der Arbeitsplan für Teile E und F und Produkt G. 
 
-![Produkt G und Teil F mit Begleitkarten](media/product-G-route-sheet-G.png)
+![Produkt G und Teil F mit Begleitkarten.](media/product-G-route-sheet-G.png)
 
 
-Die folgende Abbildung zeigt die resultierende Fertigungsstückliste und den Arbeitsplan, wenn die  Stücklistenpositionen für Teile E und F konfiguriert werden, sodass der Positionstyp Phantom ist. In dieser Grafik ist (a) die Stückliste für Produkt G und (b) ist der Arbeitsplan für Produkt G.
+Die folgende Abbildung zeigt die resultierende Fertigungsstückliste und den Arbeitsplan, wenn die Stücklistenpositionen für Teile E und F konfiguriert werden, sodass der Positionstyp Phantom ist. In dieser Grafik ist (a) die Stückliste für Produkt G und (b) ist der Arbeitsplan für Produkt G.
 
-![Produkt G](media/product-G.png)
+![Produkt G.](media/product-G.png)
 
 
 ## <a name="phantom-and-route-network"></a>Phantom und Arbeitsplan-Netzwerk
 Phantomstücklisten können für eine Stückliste verwendet werden, die auch ein Arbeitsplan-Netzwerk haben. In einem Arbeitsplannetzwerk können eine oder mehrere Arbeitsgänge gleichzeitig ausgeführt werden. Die folgende Abbildung zeigt ein Beispiel eines Routennetzes an, das in einer mehrere Ebenen umfassenden Stückliste verwendet wird. In dieser Grafik ist (a) die Stückliste für Produkt G und Teil F und (b) ist der Arbeitsplan für Produkt G und Teil F, die ein Arbeitsplannetzwerk haben.
 
-![Produkt G und Teil F](media/product-G-part-F.png)
+![Produkt G und Teil F.](media/product-G-part-F.png)
 
 
 In der folgenden Abbildung ist (a) die Stückliste für Produkt G und Teile F und (b) ist der Arbeitsplan für Produkte G und Teil F.
 
-![Produkt G und Teil F mit Begleitkarten](media/product-G-part-F-with-route-sheet.png)
+![Produkt G und Teil F mit Begleitkarten.](media/product-G-part-F-with-route-sheet.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e7d0f505ce49bc9be0d027cbb0d636c9de0600b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 75f41db74512ea758a83de56ffd2a9166712f5e2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804452"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352275"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Personalisierte Empfehlungen kündigen
 
@@ -44,11 +44,11 @@ In der Kontoverwaltung im Commerce-Backoffice können sich Einzelhändler für B
 1. Suchen Sie auf der Back-Office-Startseite nach **alle Kunden**.
 1. Suchen Sie nach einem Kunden und wählen Sie dann die Registerkarte **Einzelhandel**.
 
-    ![Registerkarte für den Einzelhandel](./media/Disablepersonalizationpart1.png)
+    ![Inforegister „Einzelhandel“.](./media/Disablepersonalizationpart1.png)
 
 1. Unter **Privatsphäre** stellen Sie die Option **Deaktivieren Sie die Personalisierung** auf **Ja** ein.
 
-    ![Datenschutzeinstellungen](./media/Disablepersonalizationpart2.png)
+    ![Datenschutzeinstellungen.](./media/Disablepersonalizationpart2.png)
 
 1. Klicken Sie auf **Speichern** und schließen Sie die Seite.
 
@@ -66,7 +66,7 @@ Kunden möchten möglicherweise eine digitale Kopie ihrer persönlichen Daten er
 
 Das folgende Beispiel zeigt, wie ein Einzelhändler diese Aufgabe ausführen kann.
 
-1. Der Einzelhändler erstellt eine benutzerdefinierte Erweiterung, um persönliche Empfehlungsdaten im Namen des Benutzers abzurufen. Informationen zum Erstellen von Modulen, zum Klonen vorhandener Module, zum Aufrufen von Retail Server-APIs und zum Aufrufen von Datenaktionen finden Sie unter [Online-Kanal-Erweiterbarkeit ](e-commerce-extensibility/overview.md).
+1. Der Einzelhändler erstellt eine benutzerdefinierte Erweiterung, um persönliche Empfehlungsdaten im Namen des Benutzers abzurufen. Informationen zum Erstellen von Modulen, zum Klonen vorhandener Module, zum Aufrufen von Retail Server-APIs und zum Aufrufen von Datenaktionen finden Sie unter [Online-Kanal-Erweiterbarkeit](e-commerce-extensibility/overview.md).
 2. Die benutzerdefinierte Nebenstelle ruft die **Empfehlungen abrufen** Kerndatenaktion ab und übergibt die erforderlichen Informationen an sie, basierend auf den Anforderungen der Liste. Im Falle der **Tipps für Sie** Liste muss die Erweiterung den richtigen Listennamen und die richtige Kunden-ID an die Datenaktion übergeben.
 
     Eine Möglichkeit zum Erstellen der benutzerdefinierten Erweiterung besteht darin, das vorhandene Produktsammlungsmodul zu klonen, das zum Zurückgeben von Empfehlungsergebnissen verwendet wird. Durch Klonen dieses vorhandenen Moduls kann ein Einzelhändler den vorhandenen Code ändern und eine neue Schaltfläche hinzufügen, mit der die Empfehlungsergebnisse in eine CSV-Datei exportiert werden. Weitere Informationen finden Sie unter [Klonen Sie eine Modulbibliothek](e-commerce-extensibility/clone-starter-module.md) und [Produktsammelmodule](product-collection-module-overview.md).

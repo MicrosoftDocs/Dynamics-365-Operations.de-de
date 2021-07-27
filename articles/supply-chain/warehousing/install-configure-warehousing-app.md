@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 913b20d73b87f03b4b1f80efdcf6e60bd07ce270
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909378"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359484"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Lagerort-App installieren und Verbindung herstellen
 
@@ -64,28 +64,28 @@ Sie müssen eine Webdienstanwendung für den Supply Chain Management-Mandanten i
 1. Geben Sie den Namen und das Kennwort des Benutzers ein, der Zugriff auf das Azure-Abonnement hat.
 1. Wählen Sie im linken Navigationsbereich des Azure-Portals **Azure Active Directory** aus.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Stellen Sie sicher, dass Sie mit der Azure AD-Instanz arbeiten, die von Supply Chain Management verwendet wird.
 1. Wählen Sie in der Liste **Verwalten** die Option **App-Registrierungen** aus.
 
-    ![App-Registrierungen](media/app-connect-azure-register.png "App-Registrierungen")
+    ![App-Registrierungen.](media/app-connect-azure-register.png "App-Registrierungen")
 
 1. Wählen Sie auf der Symbolleiste **Neue Registrierung** aus, um den Assistenten **Anwendung registrieren** zu öffnen.
 1. Geben Sie einen Namen für die Anwendung ein, wählen Sie die Option **Nur Konten in diesem organisatorischen Verzeichnis** und dann **Registrieren** aus.
 
-    ![Anwendungsassistenten registrieren](media/app-connect-azure-register-wizard.png "Anwendungsassistenten registrieren")
+    ![Anwendungsassistenten registrieren.](media/app-connect-azure-register-wizard.png "Anwendungsassistenten registrieren")
 
 1. Die neue App-Registrierung wird geöffnet. Notieren Sie sich den Wert der **Anwendungs(Client)-ID**, da Sie ihn zu einem späteren Zeitpunkt benötigen. Dies ID wird später in diesem Thema als *Client-ID* bezeichnet.
 
-    ![Anwendungs(client)-ID](media/app-connect-azure-app-id.png "Anwendungs(client)-ID")
+    ![Anwendungs-ID (Client).](media/app-connect-azure-app-id.png "Anwendungs(client)-ID")
 
 1. Wählen Sie in der Liste **Verwalten** **Zertifikat und geheime Schlüssel** aus. Wählen Sie dann eine der folgenden Schaltflächen aus, je nachdem, wie Sie die App für die Authentifizierung konfigurieren möchten. (Weitere Informationen finden Sie im Abschnitt [Mit einem Zertifikat oder geheimen Clientschlüssel authentifizieren](#authenticate) weiter unten in diesem Thema.)
 
     - **Zertifikat hochladen** – Laden Sie ein Zertifikat hoch, um es als geheimen Schlüssel zu verwenden. Wir empfehlen diese Methode, da sie sicherer ist und außerdem vollständig automatisiert werden kann. Wenn Sie die Warehouse-App auf Windows-Geräten ausführen, notieren Sie sich den **Fingerabdruck**-Wert, der nach dem Hochladen des Zertifikats angezeigt wird. Sie benötigen diesen Wert, wenn Sie das Zertifikat auf Windows-Geräten konfigurieren.
     - **Neuer geheimer Clientschlüssel** – Erstellen Sie einen Schlüssel, indem Sie eine Schlüsselbeschreibung und eine Dauer im Abschnitt **Passwörter** eingeben, und wählen Sie dann **Hinzufügen** aus. Erstellen Sie eine Kopie des Schlüssels, und bewahren Sie ihn sicher auf.
 
-    ![Zertifikat und geheime Schlüssel](media/app-connect-azure-authentication.png "Zertifikat und geheime Schlüssel")
+    ![Zertifikat und geheime Schlüssel.](media/app-connect-azure-authentication.png "Zertifikat und geheime Schlüssel")
 
 Weitere Informationen zum Einrichten von Webdienstanwendungen in Azure AD finden Sie in den folgenden Ressourcen:
 
@@ -105,7 +105,7 @@ Führen Sie die folgenden Schritte aus, um Supply Chain Management die Verwendun
     1. Erstellen Sie einen Benutzer.
     1. Weisen Sie den Benutzer des mobilen Geräts für Lagerhaltung zu.
 
-    ![Den Benutzer des mobilen Geräts für Lagerhaltung zuweisen](media/app-connect-app-users.png "Den Benutzer des mobilen Geräts für Lagerhaltung zuweisen")
+    ![Weisen Sie den Benutzer des mobilen Geräts für Lagerhaltung zu.](media/app-connect-app-users.png "Den Benutzer des mobilen Geräts für Lagerhaltung zuweisen")
 
 1. Ordnen Sie Ihre Azure AD-Anwendung dem Benutzer der Warehouse-App zu:
 
@@ -113,7 +113,7 @@ Führen Sie die folgenden Schritte aus, um Supply Chain Management die Verwendun
     1. Erstellen Sie eine Position.
     1. Geben Sie die Client-ID ein, die Sie sich im vorherigen Abschnitt notiert haben, geben Sie ihr einen Namen, und wählen Sie den Benutzer aus, den Sie gerade erstellt haben. Wir empfehlen, dass Sie alle Ihre Geräte markieren. Wenn sie dann verloren gehen, können Sie deren Zugriff auf Supply Chain Management einfach von dieser Seite entfernen.
 
-    ![Azure Active Directory-Anwendungen](media/app-connect-aad-apps.png "Azure Active Directory-Anwendungen")
+    ![Azure Active Directory-Anwendungen.](media/app-connect-aad-apps.png "Azure Active Directory-Anwendungen")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Sich mit einem Zertifikat oder einem geheimen Clientschlüssel authentifizieren
 
@@ -201,26 +201,26 @@ Führen Sie die folgenden Schritte aus, um die Verbindungseinstellungen aus eine
 1. Wechseln Sie zu **Verbindungseinstellungen**.
 1. Legen Sie die Option **Demomodus verwenden** auf _Nein_ fest.
 
-    ![Option „Demomodus“ verwenden](media/app-connect-app-demo-mode.png "Option „Demomodus“ verwenden")
+    ![Option „Demomodus“ verwenden.](media/app-connect-app-demo-mode.png "Option „Demomodus“ verwenden")
 
 1. Wählen Sie je nachdem, wie Sie die Einstellungen importieren möchten, **Datei auswählen** oder **QR-Code scannen** aus:
 
     - Wenn Sie die Verbindungseinstellungen aus einer Datei importieren, hat die App die Datei möglicherweise bereits gefunden, wenn beim Speichern der Standardname und der Standardspeicherort verwendet wurden. Wählen Sie andernfalls **Datei auswählen** aus, navigieren Sie zu der Datei auf Ihrem lokalen Gerät, und wählen Sie sie aus. Wenn Sie einen benutzerdefinierten Speicherort auswählen, speichert die App diesen und verwendet ihn beim nächsten Mal automatisch.
     - Wenn Sie die Verbindungseinstellungen durch Scannen eines QR-Codes importieren, wählen Sie **QR-Code scannen** aus. Die App fordert Sie auf, die Verwendung der Kamera des Geräts zu erlauben. Nachdem Sie die Erlaubnis erteilt haben, wird die Kamera gestartet, damit Sie sie zum Scannen verwenden können. Je nach Qualität der Kamera des Geräts und Komplexität des QR-Codes kann es schwierig sein, einen korrekten Scan zu erhalten. Versuchen Sie in diesem Fall, die Komplexität des QR-Codes zu verringern, indem Sie nur eine Verbindung pro QR-Code generieren. (Derzeit können Sie nur die Kamera des Geräts zum Scannen des QR-Codes verwenden.)
 
-    ![Verbindungseinstellungen importieren](media/app-connect-app-select-file.png "Verbindungseinstellungen importieren")
+    ![Verbindungseinstellungen importieren.](media/app-connect-app-select-file.png "Verbindungseinstellungen importieren")
 
 1. Wenn die Verbindungseinstellungen erfolgreich geladen wurden, wählen Sie in der oberen linken Ecke der Seite die Schaltfläche **Zurück** (linker Pfeil).
 
-    ![Verbindungseinstellungen wurden geladen](media/app-connect-app-settings-loaded.png "Verbindungseinstellungen wurden geladen")
+    ![Verbindungseinstellungen wurden geladen.](media/app-connect-app-settings-loaded.png "Verbindungseinstellungen wurden geladen")
 
 1. Wenn Sie ein Android-Gerät und ein Zertifikat zur Authentifizierung verwenden, fordert das Gerät Sie auf, das Zertifikat auszuwählen.
 
-    ![Eingabeaufforderung zum Auswählen eines Zertifikats auf einem Android-Gerät](media/app-connect-app-choose-cert.png "Eingabeaufforderung zum Auswählen eines Zertifikats auf einem Android-Gerät")
+    ![Eingabeaufforderung zum Auswählen eines Zertifikats auf einem Android-Gerät.](media/app-connect-app-choose-cert.png "Eingabeaufforderung zum Auswählen eines Zertifikats auf einem Android-Gerät")
 
 1. Die App stellt eine Verbindung zu Ihrem Supply Chain Management-Server her und zeigt die Anmeldeseite an.
 
-    ![Anmeldeseite](media/app-connect-sign-in.png "Anmeldeseite")
+    ![Anmeldeseite.](media/app-connect-sign-in.png "Anmeldeseite")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Anwendung manuell konfigurieren
 
@@ -230,11 +230,11 @@ Sie können die App manuell auf dem Gerät konfigurieren, sodass sie eine Verbin
 1. Wechseln Sie zu **Verbindungseinstellungen**.
 1. Legen Sie die Option **Demomodus verwenden** auf _Nein_ fest.
 
-    ![Demomodus deaktiviert](media/app-connect-app-select-file.png "Demomodus deaktiviert")
+    ![Demomodus deaktiviert.](media/app-connect-app-select-file.png "Demomodus deaktiviert")
 
 1. Tippen Sie auf das Feld **Verbindung auswählen**, um die Einstellungen zu erweitern, die zur manuellen Eingabe der Verbindungsdetails erforderlich sind.
 
-    ![Manuelle Verbindungsfelder](media/app-connect-manual-connect.png "Manuelle Verbindungsfelder")
+    ![Manuelle Verbindungsfelder.](media/app-connect-manual-connect.png "Manuelle Verbindungsfelder")
 
 1. Geben Sie die folgenden Informationen ein:
 

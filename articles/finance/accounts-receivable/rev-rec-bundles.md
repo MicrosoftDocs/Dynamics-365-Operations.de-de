@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: bce824267f435d9de0acd43ca145e0d148dfe67c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9afc7786de16cb1cada982f43beb956e062777a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816267"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347781"
 ---
 # <a name="revenue-recognition-bundles"></a>Umsatzerkennungsbündel
 
@@ -57,17 +57,17 @@ Für die Komponentenartikel sind folgende Basisverkaufspreise angegeben:
 - **S0021:** 150,00 US-Dollar
 - **Support:** 500,00 US-Dollar
 
-Für den Kunden US-004, Cave Wholesales, wird ein Auftrag eingegeben. Als einzige Position wird der Bündelartikel „Laptop“ eingegeben. Der Standardeinheitspreis für den übergeordneten Artikel ist an zahlreichen Stellen angegeben, so z. B. in der Handelsvereinbarung oder im Basisverkaufspreis. Bei diesem Beispiel wurden 2.300 US-Dollar manuell als Stückpreis eingegeben.
+Für den Kunden US-004, Cave Wholesales, wird ein Auftrag eingegeben. Als einzige Position wird der Bündelartikel „Laptop“ eingegeben. Der Standardeinheitspreis für den übergeordneten Artikel ist an zahlreichen Stellen angegeben, so z. B. in der Handelsvereinbarung oder im Basisverkaufspreis. Bei diesem Beispiel wurden 2.300 US-Dollar manuell als Einheitenpreis eingegeben.
 
-[![Bündelartikel „Laptop“ in einem Auftrag](./media/bundle-01.png)](./media/bundle-01.png)
+[![Bündelartikel „Laptop“ in einem Auftrag.](./media/bundle-01.png)](./media/bundle-01.png)
 
 Weil der Auftrag ein Bündel enthält, muss er bestätigt werden. Die Bestandteile des Bündels werden im Dialogfeld zur Bestätigung aufgeführt.
 
-[![Dialogfeld zur Bestätigung des Auftrags mit Komponentenartikeln](./media/bundle-02.png)](./media/bundle-02.png)
+[![Dialogfeld zur Bestätigung des Auftrags mit Komponentenartikeln.](./media/bundle-02.png)](./media/bundle-02.png)
 
 In der gedruckten Auftragsbestätigung ist allerdings nur der übergeordnete Bündelartikel vermerkt, weil das Dokument an den Kunden geht.
 
-[![Bestätigung mit nur dem übergeordneten Artikel](./media/bundle-03.png)](./media/bundle-03.png)
+[![Bestätigung mit nur dem übergeordneten Artikel.](./media/bundle-03.png)](./media/bundle-03.png)
 
 Nach Bestätigung des Auftrags wird der übergeordnete Artikel weiterhin im Auftrag angezeigt, sein Status wurde jedoch auf **Storniert** geändert. Zusätzlich wird der Nettobetrag im Feld **Bündelnettobetrag** angegeben. Dieser Betrag ist erforderlich, um die Rechnung zu drucken, denn auf der Rechnung ist der übergeordnete Artikel und nicht die Komponentenartikel aufgeführt.
 
@@ -85,7 +85,7 @@ Die Summe der Komponenten muss 2.300 US-Dollar entsprechen, was auch der Fall i
 
 Sind für alle Komponentenartikel Änderungen erforderlich, kann der übergeordnete Artikel gelöscht werden. In diesem Fall werden auch die Komponentenartikel gelöscht. Der übergeordnete Artikel kann dann erneut hinzugefügt werden, und die erforderlichen Änderungen können vor Bestätigung des Auftrags erfolgen.
 
-[![Bündelartikel mit Änderungen an den Komponentenartikeln](./media/bundle-04.png)](./media/bundle-04.png)
+[![Bündelartikel mit Änderungen an den Komponentenartikeln.](./media/bundle-04.png)](./media/bundle-04.png)
 
 Wenn der Auftrag kommissioniert und verpackt wird, sind in den Dokumenten nur die Bündelkomponenten angegeben. In Lieferschein und Rechnung muss das ganze Bündel aufgeführt werden. Andernfalls kann keine Buchung erfolgen. Als Beispiel sind im Dialogfeld drei Komponentenartikel angegeben. Wenn Sie versuchen, einen davon zu löschen, wird eine Fehlermeldung angezeigt, die besagt, dass alle Produkte im Bündel ausgeliefert werden müssen, bevor sie in Rechnung gestellt werden können.
 
@@ -95,19 +95,19 @@ Eine Teilmenge kann nur dann geliefert und in Rechnung gestellt werden, wenn die
 
 Im letzten Schritt wird der Auftrag in Rechnung gestellt. Bei der Rechnungsstellung werden im zugehörigen Dialogfeld die Komponentenartikel angezeigt.
 
-[![Dialogfeld zur Rechnungsstellung mit Komponentenartikeln](./media/bundle-06.png)](./media/bundle-06.png)
+[![Dialogfeld zur Rechnungsstellung mit Komponentenartikeln.](./media/bundle-06.png)](./media/bundle-06.png)
 
 Auf der gedruckten Rechnung steht aber nur der übergeordnete Artikel.
  
-[![Gedruckte Rechnung mit nur dem übergeordneten Artikel](./media/bundle-07.png)](./media/bundle-07.png)
+[![Gedruckte Rechnung mit nur dem übergeordneten Artikel.](./media/bundle-07.png)](./media/bundle-07.png)
 
-Das Rechnungsjournal, das nach dem Buchen erstellt wird, enthält nicht den übergeordneten Artikel aus dem Bündel, weil dieser im Status **Storniert** ist.
+Die Rechnungserfassung, die nach dem Buchen erstellt wird, enthält nicht den übergeordneten Artikel aus dem Bündel, weil dieser im Status **Storniert** ist.
 
-[![Rechnungsjournal ohne den übergeordneten Artikel](./media/bundle-08.png)](./media/bundle-08.png)
+[![Rechnungserfassung ohne den übergeordneten Artikel.](./media/bundle-08.png)](./media/bundle-08.png)
 
-Es ist wichtig, dass das Rechnungsjournal nicht den übergeordneten Bündelartikel enthält, weil alle Vorgänge, die nach Buchung der Rechnung erfolgen, auf dem Rechnungsjournal beruhen. Wenn Sie beispielsweise im Aktionsbereich auf der Registerkarte **Verkaufen** eine Gutschrift erstellen, enthält diese die Komponentenartikel, nicht aber den übergeordneten Artikel.
+Es ist wichtig, dass die Rechnungserfassung nicht den übergeordneten Bündelartikel enthält, weil alle Prozesse, die nach Buchung der Rechnung erfolgen, auf der Rechnungserfassung beruhen. Wenn Sie beispielsweise im Aktionsbereich auf der Registerkarte **Verkaufen** eine Gutschrift erstellen, enthält diese die Komponentenartikel, nicht aber den übergeordneten Artikel.
 
-[![Gutschrift mit Komponentenartikeln, aber ohne übergeordneten Artikel](./media/bundle-09.png)](./media/bundle-09.png)
+[![Gutschrift mit Komponentenartikeln, aber ohne übergeordneten Artikel.](./media/bundle-09.png)](./media/bundle-09.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

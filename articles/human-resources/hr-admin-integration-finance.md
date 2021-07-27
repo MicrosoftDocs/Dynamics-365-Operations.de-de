@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ed66bb2b2fce659e1e1f029fd60f74149b6526b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 81b65d1aeeff6c4459fe0b2637013009958cfd55
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055123"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360639"
 ---
 # <a name="configure-integration-with-finance"></a>Integration mit Finance konfigurieren
 
@@ -30,7 +30,7 @@ ms.locfileid: "6055123"
 
 Um Dynamics 365 Human Resources in Dynamics 365 Finance zu integrieren, können Sie die Vorlage „Human Resources to Finance“ in [Datenintegrator](/powerapps/administrator/data-integrator) verwenden. Die Vorlage „Human Resources to Finance“ ermöglicht den Datenfluss für Jobs, Positionen und Mitarbeiter. Die Vorlage ermöglicht den Datenfluss von der Personalabteilung in die Finanzabteilung, jedoch nicht den Datenfluss von der Finanzabteilung in die Personalabteilung.
 
-![Human Resources nach Finance – Integrationsfluss](./media/hr-admin-integration-finance-flow.png)
+![Human Resources nach Finance – Integrationsfluss.](./media/hr-admin-integration-finance-flow.png)
 
 Die Human Resources zu Finance-Lösung bietet die folgenden Arten der Datensynchronisierung:
 
@@ -141,7 +141,7 @@ In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in
 
 | Dataverse-Tabelle (Quelle)              | Finance-Entität (Ziel)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
-| cdm_jobpositionnumber  (Stellenpositionsnummer)                            | POSITIONID (POSITIONID)                             |
+| cdm_jobpositionnumber (Stellenpositionsnummer)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Stelle (Name))                                        | JOBID (JOBID)                                    |
 | cdm_description   (cdm_description)                                        | BESCHREIBUNG   (BESCHREIBUNG)                       |
 | cdm_departmentid.cdm_departmentnumber   (Abteilung (Abteilungsnummer)) | DEPARTMENTNUMBER   (DEPARTMENTNUMBER)             |
@@ -253,6 +253,6 @@ Die Lagerplatzkennung, die für die Arbeitskraftadresse verwendet wird, gehört 
 
 Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung im Datenintegrator. 
 
-![Vorlagenzuordnung](./media/IntegrationMapping.png)
+![Vorlagenzuordnung.](./media/IntegrationMapping.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Cookie-Compliance
 description: In diesem Thema werden Überlegungen zur Einhaltung von Cookies und zu den in Microsoft Dynamics 365 Commerce enthaltenen Standardrichtlinien beschrieben.
 author: BrianShook
-ms.date: 05/21/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
-ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
+ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6088386"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333068"
 ---
 # <a name="cookie-compliance"></a>Cookie-Compliance
 
@@ -33,26 +33,27 @@ Weitere Informationen zu den von Microsoft verwendeten Grundprinzipien zur Cooki
 
 Die folgende Tabelle zeigt die aktuelle Referenzliste der von Dynamics 365 Commerce Websites platzierten Cookies.
 
-| Cookie-Name                               | Verwendung                                                        |
-| ------------------------------------------- | ------------------------------------------------------------ |
-| .AspNet.Cookies                             | Speichern Sie Microsoft Azure Active Directory (Azure AD) Authentifizierungscookies für Single Sign-On (SSO). Speichert verschlüsselte Benutzerprinzipalinformationen (Name, Nachname, E-Mail). |
-| &#95;msdyn365___cart&#95;                           | Speichern Sie die Warenkorb-ID, mit der Sie eine Liste der Produkte erhalten, die der Warenkorbinstanz hinzugefügt wurden. |
-| &#95;msdyn365___ucc&#95;                            | Nachverfolgung der Zustimmung zur Cookie-Konformität.                          |
-| ai_session                                  | Erkennt, wie viele Sitzungen mit Benutzeraktivitäten bestimmte Seiten und Funktionen der App enthalten haben. |
-| ai_user                                     | Erkennt, wie viele Personen die App und ihre Funktionen verwendet haben. Benutzer werden mit anonymen IDs gezählt. |
-| b2cru                                       | Speichert die Umleitungs-URL dynamisch.                              |
-| JSESSIONID                                  | Wird vom Zahlungsconnector Adyen zum Speichern der Benutzersitzung verwendet.       |
-| OpenIdConnect.nonce.&#42;                       | Authentifizierung                                               |
-| x-ms-cpim-cache:.&#42;                          | Wird zur Aufrechterhaltung des Anforderungsstatus verwendet.                      |
-| x-ms-cpim-csrf                              | CRSF-Token (Cross-Site Request Forgery) zum Schutz vor CRSF.     |
-| x-ms-cpim-dc                                | Wird verwendet, um Anforderungen an die entsprechende Instanz des Produktionsauthentifizierungsservers weiterzuleiten. |
-| x-ms-cpim-rc.&#42;                              | Wird verwendet, um Anforderungen an die entsprechende Instanz des Produktionsauthentifizierungsservers weiterzuleiten. |
-| x-ms-cpim-slice                             | Wird verwendet, um Anforderungen an die entsprechende Instanz des Produktionsauthentifizierungsservers weiterzuleiten. |
-| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Wird zur Aufrechterhaltung der SSO-Sitzung verwendet.                        |
-| x-ms-cpim-trans                             | Wird zum Verfolgen von Transaktionen verwendet (Anzahl der offenen Registerkarten, die sich bei einer B2C-Site (Business-to-Consumer) authentifizieren), einschließlich der aktuellen Transaktion. |
-| \_msdyn365___muid_                            | Wird verwendet, wenn Experimentieren für die Umgebung aktiviert ist. Wird als Benutzer-ID für Experimentierzwecke verwendet. |
-| \_msdyn365___exp_                             | Wird verwendet, wenn Experimentieren für die Umgebung aktiviert ist. Wird verwendet, um die Leistung des Lastenausgleichs zu messen.         |
-| d365mkt                                       | Wird verwendet, wenn die standortbasierte Erkennung zum Verfolgen der IP-Adresse eines Benutzers für Standortvorschläge im Commerce Site Builder unter **Site-Einstellungen> Allgemein> Standortbasierte Speichererkennung aktivieren** aktiviert ist.      |
+| Cookie-Name                               | Verwendung                                                        | Lebensdauer |
+| ------------------------------------------- | ------------------------------------------------------------ |  ------- |
+| .AspNet.Cookies                             | Speichern Sie Microsoft Azure Active Directory (Azure AD) Authentifizierungscookies für Single Sign-On (SSO). Speichert verschlüsselte Benutzerprinzipalinformationen (Name, Nachname, E-Mail). | Sitzung |
+| \_msdyn365___cart_                           | Speichern Sie die Warenkorb-ID, mit der Sie eine Liste der Produkte erhalten, die der Warenkorbinstanz hinzugefügt wurden. | Sitzung |
+| \_msdyn365___checkout_cart_                           | Speichern Sie die Warenkorb-auschecken-ID, mit der Sie eine Liste der Produkte erhalten, die der Warenkorb-auschecken-Instanz hinzugefügt wurden. | Sitzung |
+| \_msdyn365___ucc_                            | Nachverfolgung der Zustimmung zur Cookie-Konformität.                          | 1 Jahr |
+| ai_session                                  | Erkennt, wie viele Sitzungen mit Benutzeraktivitäten bestimmte Seiten und Funktionen der App enthalten haben. | 30 Minuten |
+| ai_user                                     | Erkennt, wie viele Personen die App und ihre Funktionen verwendet haben. Benutzer werden mit anonymen IDs gezählt. | 1 Jahr |
+| b2cru                                       | Speichert die Umleitungs-URL dynamisch.                              | Sitzung |
+| JSESSIONID                                  | Wird vom Zahlungsconnector Adyen zum Speichern der Benutzersitzung verwendet.       | Sitzung |
+| OpenIdConnect.nonce.&#42;                       | Authentifizierung                                               | 11 Minuten |
+| x-ms-cpim-cache:.&#42;                          | Wird zur Aufrechterhaltung des Anforderungsstatus verwendet.                      | Sitzung |
+| x-ms-cpim-csrf                              | CRSF-Token (Cross-Site Request Forgery) zum Schutz vor CRSF.     | Sitzung |
+| x-ms-cpim-dc                                | Wird verwendet, um Anforderungen an die entsprechende Instanz des Produktionsauthentifizierungsservers weiterzuleiten. | Sitzung |
+| x-ms-cpim-rc.&#42;                              | Wird verwendet, um Anforderungen an die entsprechende Instanz des Produktionsauthentifizierungsservers weiterzuleiten. | Sitzung |
+| x-ms-cpim-slice                             | Wird verwendet, um Anforderungen an die entsprechende Instanz des Produktionsauthentifizierungsservers weiterzuleiten. | Sitzung |
+| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Wird zur Aufrechterhaltung der SSO-Sitzung verwendet.                        | Sitzung |
+| x-ms-cpim-trans                             | Wird zum Verfolgen von Transaktionen verwendet (Anzahl der offenen Registerkarten, die sich bei einer B2C-Site (Business-to-Consumer) authentifizieren), einschließlich der aktuellen Transaktion. | Sitzung |
+| \_msdyn365___muid_                            | Wird verwendet, wenn „Experimentieren“ für die Umgebung aktiviert ist. Wird als Benutzer-ID für Experimentierzwecke verwendet. | 1 Jahr |
+| \_msdyn365___exp_                             | Wird verwendet, wenn „Experimentieren“ für die Umgebung aktiviert ist. Wird verwendet, um die Leistung des Lastenausgleichs zu messen.         | 1 Stunde |
+| d365mkt                                       | Wird verwendet, wenn die standortbasierte Erkennung zum Verfolgen der IP-Adresse eines Benutzers für Standortvorschläge im Commerce-Website-Generator unter **Site-Einstellungen \> Allgemein \> Standortbasierte Speichererkennung aktivieren** aktiviert ist.      | 1 Stunde |
 
 Wenn ein Site-Benutzer in einer Site Links zu sozialen Medien auswählt, werden die Cookies in der folgenden Tabelle auch in seinem Browser verfolgt.
 

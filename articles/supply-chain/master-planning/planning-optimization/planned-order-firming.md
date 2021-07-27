@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 00cb05105c047989ea74bbba3360c067b1b98ce8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271207"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360375"
 ---
 # <a name="firm-planned-orders"></a>Fest geplante Aufträge
 
@@ -70,7 +70,7 @@ Um geplanter Aufträge manuell zu fixieren, suchen Sie die geplanter Aufträge, 
     - **Markierung aktualisieren** – Wählen Sie die Richtlinie für die Bestandsmarkierung, die verwendet werden soll, wenn geplanter Aufträge umgewandelt werden.
     - **Fixierung stoppen, wenn ein Fehler auftritt** – Legen Sie diese Option auf *Ja* fest, um die Umwandlung aller ausgewählten geplanten Aufträge zu stoppen, wenn ein Fehler in einem von ihnen auftritt. Diese Option muss auf *Nein* festgelegt werden, wenn die Option **Parallelisierung der Umwandlung** auf *Ja* festgelegt ist.
     - **Parallele Umwandlung** – Diese Option ist nur verfügbar, wenn die Funktion [*Parallele Umwandlung geplanter Aufträge* in Ihrem System eingeschaltet ist](#enable-features) und wenn Sie zwei oder mehr geplante Aufträge zur Umwandlung ausgewählt haben. Legen Sie es auf *Ja* fest, um die Umwandlungen parallel auszuführen. Die parallele Umwandlung kann zu einer Leistungssteigerung beitragen.
-    -  **Anzahl der Threads** – Diese Option ist nur verfügbar, wenn die [Funktion *Parallele Umwandlung geplanter Aufträge*](#enable-features) in Ihrem System eingeschaltet ist und wenn Sie die Option **Parallele Umwandlung** auf *Ja* festgelegt haben. Geben Sie die Anzahl der Threads ein, die zur Parallelisierung der Umwandlung verwendet werden sollen. Hinweise zur Verwendung dieser Option in der Produktprogrammplanung finden Sie unter [Verbessern der Leistung der Produktprogrammplanung](../master-planning-performance.md#number-of-threads).
+    - **Anzahl der Threads** – Diese Option ist nur verfügbar, wenn die [Funktion *Parallele Umwandlung geplanter Aufträge*](#enable-features) in Ihrem System eingeschaltet ist und wenn Sie die Option **Parallele Umwandlung** auf *Ja* festgelegt haben. Geben Sie die Anzahl der Threads ein, die zur Parallelisierung der Umwandlung verwendet werden sollen. Hinweise zur Verwendung dieser Option in der Produktprogrammplanung finden Sie unter [Verbessern der Leistung der Produktprogrammplanung](../master-planning-performance.md#number-of-threads).
 
         > [!NOTE]
         > Ein Wert von *0* (Null) für das Feld **Anzahl der Threads** erhöht die Laufzeit der Produktprogrammplanung. Wir empfehlen daher, dieses Feld immer auf einen Wert größer als 0 festzulegen.
@@ -81,7 +81,7 @@ Um geplanter Aufträge manuell zu fixieren, suchen Sie die geplanter Aufträge, 
     - **Gruppieren nach Periode** (im Abschnitt **Einkaufsbestellungen**) – Wählen Sie die Periode, nach der geplante Aufträge gruppiert werden sollen. Um diese Option zu verwenden, müssen Sie auch die Option **Gruppieren nach Kreditor** aktivieren.
     - **Gruppieren nach Periode** (im Bereich **Umlagerungsaufträge**) – Wählen Sie die Periode aus, nach der geplante Umlagerungsaufträge gruppiert werden sollen. Die Aufträge werden anhand der Werte **Vom Lagerort** und **Zum Lagerort** gruppiert.
 
-    ![Parameter Inforegister im Dialogfenster für die Umwandlung](./media/manual-firming.png "Parameter Inforegister in der Dialogbox Umwandlung")
+    ![Parameter Inforegister im Dialogfenster für die Umwandlung.](./media/manual-firming.png "Parameter Inforegister in der Dialogbox Umwandlung")
 
 1. Auf der Registerkarte **Im Hintergrund laufen lassen** Inforegister legen Sie den Job so fest, dass er im Batch-Modus ausgeführt wird. Es macht jedoch keinen Sinn, einen wiederkehrenden Zeitplan festzulegen, wenn Sie eine manuelle Umwandlung durchführen. Die Felder funktionieren genauso wie bei anderen Arten von [Hintergrund-Jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) im Supply Chain Management. Bei der manuellen Umwandlung verarbeitet der Batchauftrag jedoch nur die aktuell ausgewählten geplanter Aufträge. Es werden keine Bestellungen verarbeitet, die den Filtern entsprechen, die derzeit auf der Seite angewendet werden.
 1. Wählen Sie **OK**, um Ihre Einstellungen zu übernehmen und die umgewandelten Aufträge zu generieren.
@@ -140,15 +140,15 @@ Um einen geplanten Auftrag mit Hilfe der abfragebasierten Umwandlung zu fixieren
     - **Umwandlungszeitzaun Tage vorwärts** – Wählen Sie, wie weit in der Zukunft die verschiedenen Bedarfe und andere Überlegungen von der Produktprogrammplanung berechnet werden müssen.
     - **Umwandlung time fence days backward** – Wählen Sie, wie weit in die Vergangenheit die verschiedenen Bedarfe und andere Überlegungen von der Produktprogrammplanung berechnet werden müssen.
 
-    ![Parameter Inforegister im Dialogfenster „Geplanter Auftrag umwandeln“](./media/planned-order-firming-main-1.png "Parameter Inforegister im Dialogfenster „Geplanter Auftrag umwandeln“")
+    ![Parameter Inforegister im Dialogfenster „Geplanter Auftrag umwandeln“.](./media/planned-order-firming-main-1.png "Parameter Inforegister im Dialogfenster „Geplanter Auftrag umwandeln“")
 
 1. Um festzulegen, welche Datensätze in die Bestellung aufgenommen werden sollen, wählen Sie die Schaltfläche **Filter** auf dem Inforegister **Einzuschließende Datensätze**. Ein Standard-Abfragedialog wird angezeigt, in dem Sie Auswahlkriterien, Sortierkriterien und Joins definieren können. Die Felder funktionieren genauso wie bei anderen Arten von Abfragen im Supply Chain Management. Die Felder hier sind schreibgeschützt und zeigen Werte an, die mit Ihrer Abfrage in Zusammenhang stehen.
 
-    ![Datensätze, die in das Inforegister des Dialogs „Geplanter Auftrag umwandeln“ aufgenommen werden sollen](./media/planned-order-firming-main-2.png "Datensätze zum Einbinden von Inforegister in das Dialogfeld Geplanter Auftrag umwandeln")
+    ![Datensätze, die in das Inforegister des Dialogs „Geplanter Auftrag umwandeln“ aufgenommen werden sollen.](./media/planned-order-firming-main-2.png "Datensätze zum Einbinden von Inforegister in das Dialogfeld Geplanter Auftrag umwandeln")
 
 1. Wählen Sie **Vorschau**, um eine Vorschau des Inhalts Ihres umgewandelten Auftrags zu erhalten, basierend auf Ihren bisherigen Einstellungen. Die Liste der geplanten Aufträge, die umgewandelt werden sollen, wird als Nachricht angezeigt. Sie können dann Ihre Einstellungen nach Bedarf anpassen, bis die Vorschau den umgewandelten Auftrag so anzeigt, wie Sie ihn beabsichtigen.
 
-    ![Beispiel für eine Vorschau auf einen umgewandelten Auftrag](./media/planned-order-firming-preview.png "Beispiel für eine Vorschau eines umgewandelten Auftrags")
+    ![Beispiel für eine Vorschau auf einen umgewandelten Auftrag.](./media/planned-order-firming-preview.png "Beispiel für eine Vorschau eines umgewandelten Auftrags")
 
     > [!WARNING]
     > Diese Funktion fixiert alle geplanter Aufträge, die den Filterkriterien entsprechen. Unkritische Umwandlung von geplanten Aufträgen kann dazu führen, dass massenhaft unerwünschte Kauf-, Transport- und Produktionsaufträge erstellt werden. Bevor Sie fortfahren, verwenden Sie immer die Schaltfläche **Vorschau**, um die Datensätze zu überprüfen, die einbezogen werden sollen.

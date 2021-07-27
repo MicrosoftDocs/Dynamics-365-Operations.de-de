@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 09da3c3a79b5540670db25d5466023132d2848f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a9521d9be3c380795abf476646d2d0e1cd36e8e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832273"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354784"
 ---
 # <a name="moving-average-fallback-cost-sequence"></a>Flexible durchschnittliche Fallback-Kostensequenz
 
@@ -42,7 +42,7 @@ Führen Sie die folgenden Schritte aus, um die Fallback-Kostenfolge für Berechn
     - **Aktive Kosten – Letztes Problem**
     - **Aktive Kosten – Artikelpreis** – Organisationen können Leistungsprobleme haben, wenn sie Geschäftsprozesse verwenden, bei denen der Lagerbestand regelmäßig negativ wird und gleichzeitig das Transaktionsvolumen hoch ist. Diese Einstellung kann dazu beitragen, diese Leistungsprobleme zu verringern.
 
-![Bestandsbuchhaltungsparameter](media/inventory-accounting-parameters.png "Bestandsbuchhaltungsparameter")
+![Bestandsbuchhaltungsparameter.](media/inventory-accounting-parameters.png "Bestandsbuchhaltungsparameter")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

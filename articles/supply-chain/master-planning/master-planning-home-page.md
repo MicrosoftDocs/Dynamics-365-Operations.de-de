@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92dfb05addc1c791b24f129587b842d22423eb54
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 15fbab7d0260ed714edfbbb5ef54caddb69cae3c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908755"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360004"
 ---
 # <a name="master-planning-home-page"></a>Startseite für die Produktprogrammplanung
 
@@ -50,11 +50,11 @@ Produktprogrammpläne umfassen in der Regel das Kurzfristige mit ein, das alles 
 
 Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, die vom Framework des Modul "Masterplanung" bestehen. Klicken Sie auf die Links im [Direktlinks](#quick-links)-Abschnitt, um zu erfahren, wie das Modul verwendet wird.
 
-[![Lernkarte für die Masterplanung](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
+[![Lernkarte für die Masterplanung.](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>Direktlinks
 
-- [Hauptpläne – Übersicht](master-plans.md)  
+- [Übersicht über Produktprogrammpläne](master-plans.md)  
 - [Plan mit Einschränkungen erstellen](./tasks/constrained-plan.md)
 - [Materialplan für Co-Produkte erstellen](./tasks/create-material-plan-co-products.md)
 - [Hauptpläne und Funktion für mehrere Standorte – Übersicht](master-plan-multisite-functionality.md)
