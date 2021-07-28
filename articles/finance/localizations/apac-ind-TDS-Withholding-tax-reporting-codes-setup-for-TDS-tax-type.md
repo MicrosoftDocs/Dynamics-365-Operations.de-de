@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 1f9325d182f89b98e8b943ae047c55e7e1aeb02f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c74132af95f088ea88155b722a8270861fba50e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023278"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361285"
 ---
 # <a name="set-up-withholding-tax-reporting-codes-for-the-tds-tax-type"></a>Quellensteuererklärungscodes für den Steuertyp „TDS“ einrichten
 
@@ -31,7 +31,7 @@ Quellensteuererklärungscodes werden verwendet, um Erklärungen mit den Formular
 
 1. Wechseln Sie zu **Setup \> Quellensteuer \> Quellensteuer \> Quellensteuererklärungscodes**.
 
-    [![Seite „Quellensteuererklärungscodes“](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
+    [![Seite „Quellensteuererklärungscodes“.](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
 
 2. Wählen Sie im Feld **Steuertyp** **TDS** aus, um Quellensteuererklärungscodes für den Steuertyp „TDS“ festzulegen.
 3. Wählen Sie im Feld **Quellensteuerkomponente** die TDS-Komponente aus, für die Sie den Quellensteuererklärungscode festlegen. Das Feld **Quellensteuerkomponentengruppe** zeigt die TDS-Komponentengruppe an, die für die von Ihnen definierte TDS-Komponente festgelegt wurde.

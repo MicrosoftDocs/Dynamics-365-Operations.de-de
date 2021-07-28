@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 067d7035cdb9c8f4bcb2bdac9cf0a33cd4e01079
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2fa602d01cadecbf24c2433360f7b2a8ebb0854a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811436"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355154"
 ---
 # <a name="cost-element-dimensions"></a>Kostenelementdimensionen
 
@@ -63,7 +63,7 @@ Es gibt zwei Typen von Kostenelementen: primäre Kostenelemente und sekundäre K
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Kostenelementdimensionen und Kostenelement-Dimensionsmitglieder
 Kostenelemente werden als *Kostenelementdimensionen* bezeichnet. Die einzelnen Dimensionswerte werden *Kostenelement-Dimensionsmitglieder* genannt. Beispielsweise haben Sie eine US-Kontenplanstruktur (COA), die die Basis für ihre Offenlegungspflicht ist. Diese COA wird als Kostenelementdimension verwendet. Die Konten, die primäre Kostenelemente sind, werden als Kostenelement-Dimensionsmitglieder in der Kostenrechnung dargestellt. Das folgende Screenshot zeigt ein Beispiel der Hauptkonten als die Kostenelementdimension mit ihren tatsächlichen Hauptkonten als die Kostenelement-Dimensionsmitglieder an. 
 
-[![Screenshot von Hauptkonten als Kostenelementdimension](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![Screenshot von Hauptkonten als Kostenelementdimension.](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Kostenelement-Dimensionsmitglieder über Datenkonnektoren importieren
 Um die Einstellungen der Kostenelement-Dimensionsmitglieder in der Kostenrechnung zu vereinfachen, können Sie Datenkonnektoren verwenden, die entweder vorkonfiguriert sind oder Ihr benutzerdefinierter Build sind, um die primären Kostenelemente aus einem oder mehreren Quellsystemen abzurufen.

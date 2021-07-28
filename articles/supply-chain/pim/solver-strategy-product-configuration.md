@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82332a8ac8a68f5a9092ae08a094514827f39113
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d351066b0092318275491d933b7b90089c6855b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812714"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359932"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Solver-Strategie für Produktkonfiguration
 
@@ -50,7 +50,7 @@ Tatsächliche Kundenimplementierungsstudien haben gezeigt, dass eine Änderung d
 
 Um die Solver-Strategie auf der Seite **Produktkonfigurationsmodelle** im Aktivitätsbereich zu ändern, wählen Sie **Modelleigenschaften** aus. Wählen Sie dann im Dialogfeld **Modelldetails bearbeiten** eine Solver-Strategie aus.
 
-[![Ändern der Solver-Strategie](./media/solver-strategy.png)](./media/solver-strategy.png)
+[![Ändern der Solver-Strategie.](./media/solver-strategy.png)](./media/solver-strategy.png)
 
 Aktuell gibt es keine Logik, die automatisch feststellt, welche Solver-Strategie die effizienteste Strategie für eine einschränkungsbasierte Produktkonfiguration sein wird. Daher müssen Sie die Solver-Strategien einzeln nacheinander ausprobieren.
 

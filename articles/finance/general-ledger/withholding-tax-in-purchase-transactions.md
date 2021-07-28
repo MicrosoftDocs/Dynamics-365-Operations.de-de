@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: faeaf0746532875d3517a208c9c338c112bf2c77
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d605ac0b6e4190f0c0f576d402c9b101d754b347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816882"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356675"
 ---
 # <a name="withholding-tax-in-purchase-transactions"></a>Quellensteuer bei Kaufbuchungen
 
@@ -64,15 +64,15 @@ Die Standard-Quellensteuergruppe und die Artikel-Quellensteuergruppe werden beim
 
 Der vorübergehende Quellensteuerbetrag wird im Feld **Angepasste Quellensteuer** der Registerkarte **Summen** auf der Seite **Bestellung** angezeigt.
 
-![Die Quellensteuer ist in der Bestellung enthalten](media/withholding-tax-adjusted.png)
+![Die Quellensteuer ist in der Bestellung enthalten.](media/withholding-tax-adjusted.png)
 
 Die Quellensteuer wird in der **Kreditorenzahlungserfassung** berechnet. Sie können die entsprechenden Quellensteuercodes sowie die tatsächlichen Quellensteuerbeträge auf der Registerkarte **Quellensteuer** der Seite **Buchungen ausgleichen** manuell anpassen.
 
-![Die Quellensteuer kann auf der Seite „Buchungen ausgleichen“ manuell angepasst werden](media/withholding-tax-vendor-payment-tab.png)
+![Die Quellensteuer kann auf der Seite „Buchungen ausgleichen“ manuell angepasst werden.](media/withholding-tax-vendor-payment-tab.png)
 
 Der abgeleitete Quellensteuerbetrag wird von der Kreditorenzahlung abgezogen und auf das **Quellensteuerkonto** über einen dazugehörigen Beleg gebucht.
 
-![Das Quellensteuerkonto zeigt einen dazugehörigen Beleg an](media/withholding-tax-adjusted.png)
+![Das Quellensteuerkonto zeigt einen dazugehörigen Beleg an.](media/withholding-tax-adjusted.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

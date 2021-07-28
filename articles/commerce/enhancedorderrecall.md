@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2f7ad4f53917bb607afe84a2c457518c3f8f7a08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7a9507cd7f2a1612ab4063d6307b72d8522619ba
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799105"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349423"
 ---
 # <a name="recall-order-operation-in-pos"></a>Auftragsrückrufe in POS
 
@@ -29,7 +29,7 @@ Um diese Funktionalität zu aktivieren, schalten Sie die Funktion **Verbesserter
 
 Mit der Konfiguration der Schaltfläche **Auftrag zurückrufen** können Organisationen den Vorgang mit einer vordefinierten Anzeige bereitstellen.
 
-![Konfiguration des Schaltflächenrasters](media/recallorderbuttongrid.png)
+![Konfiguration des Schaltflächenrasters.](media/recallorderbuttongrid.png)
 
 Die Anzeigeoptionen sind wie folgt:
 - **Keine** – Diese Option stellt den Vorgang ohne spezifische Anzeige bereit. Wenn ein Benutzer den Vorgang mit dieser Konfiguration öffnet, wird er aufgefordert, Aufträge zu suchen und zu finden oder aus einem vordefinierten Auftragsfilter auszuwählen.
@@ -42,11 +42,11 @@ Beim Starten des Vorgangs **Auftrag zurückrufen** in POS, wenn das Display als 
 - Wählen Sie das Symbol **Aufträge durchsuchen** oder **Suchen und Filtern** in der AppBar aus, um mithilfe des Filtermechanismus Aufträge zu finden, die die Filterkriterien erfüllen.
 - Wählen Sie aus einem vordefinierten Filter aus dem Dropdown-Menü **Aufträge anzeigen** (zu erfüllende Aufträge, Aufträge zur Abholung oder Aufträge zum Versand).
 
-![RecallOrderMainMenu](media/recallordermain.png)
+![RecallOrderMainMenu.](media/recallordermain.png)
 
 Nachdem die Suchkriterien angewendet wurden, zeigt die Anwendung eine Liste der übereinstimmenden Kundenaufträge an. Es ist wichtig zu beachten, dass bei Verwendung der Such-/Filteroptionen die abgerufenen Aufträge keine Aufträge sein müssen, die mit dem aktuellen Shop des Benutzers verknüpft sind. Bei diesem Suchvorgang wird jeder Debitorauftrag abgerufen und angezeigt, der den Suchkriterien entspricht, auch wenn der Auftrag so erstellt oder festgelegt wurde, dass er von einem anderen Shop/Kanal oder Lagerort erfüllt wird.
 
-![RecallOrderDetail](media/orderrecalldetail.png)
+![RecallOrderDetail.](media/orderrecalldetail.png)
 
 Ein Benutzer kann einen Auftrag in der Liste auswählen, um zusätzliche Details anzuzeigen. Das Informationsfeld auf der rechten Seite des Bildschirms zeigt Einzelheiten zum ausgewählten Auftrag an, einschließlich Details zur Auftragsposition, Lieferdetails und Erfüllungsdetails.
 

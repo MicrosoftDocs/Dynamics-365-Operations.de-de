@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de317c2fae4607f5b8b887dd5e866d812043dcd3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5f35dc48dbdf89e963108e9e8ef6faec326f970
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799516"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349721"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Kanalübergreifende Freigabe aktivieren und verwenden
 
@@ -48,15 +48,15 @@ Führen Sie die folgenden Schritte aus, um die kanalübergreifende Freigabe im C
 1. Gehen Sie zu **Site-Einstellungen \> Funktionen**.
 1. Stellen Sie die Option für die **kanalübergreifende** Freigabe-Funktion auf **Ein**.
 
-    ![Die auf „Ein“ gesetzte Option „Kanalübergreifend“ im Commerce Site Builder](./media/enabling-cross-channel-sharing.png)
+    ![Die auf „Ein“ gesetzte Option „Kanalübergreifend“ im Commerce-Website-Generator.](./media/enabling-cross-channel-sharing.png)
 
 Nachdem Sie die kanalübergreifende Freigabe aktiviert haben, werden kanalübergreifende Informationen im Abschnitt **Kanäle** bei **Site-Einstellungen \> Funktionen** angezeigt, wie das Beispiel in der folgenden Abbildung zeigt.
 
-![Kanalinformationen, die nach der aktivierten kanalübergreifenden Freigabe sichtbar sind](./media/channels-cross-channel.png)
+![Kanalinformationen, die nach der aktivierten kanalübergreifenden Freigabe sichtbar sind.](./media/channels-cross-channel.png)
 
 Nachdem Sie die kanalübergreifende Freigabe aktiviert haben, enthält das Feld **Kanal** oben rechts im Commerce Site Builder eine Option **Kanalübergreifender Onlineshop**, mit der Sie kanalübergreifende Inhalte verwalten können, wie in der folgenden Abbildung dargestellt.
 
-![Option „Kanalübergreifender Onlineshop“ im Feld „Kanäle“, nachdem die kanalübergreifende Freigabe aktiviert wurde](./media/cross-channel-dropdown.png)
+![Option „Kanalübergreifender Onlineshop“ im Feld „Kanäle“, nachdem die kanalübergreifende Freigabe aktiviert wurde.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Erstellen und verwenden kanalübergreifender Inhalte
 

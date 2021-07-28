@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 73d20958d0efadefc709db524fe16ed85d1ea33a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ceb95198332d6a9da057d657771fe6fcca5c5b9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824893"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359604"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Übersicht über die Integration mit Microsoft Dynamics 365 Field Service
 
@@ -34,7 +34,7 @@ Standardvorlagen können verwendet werden, um benutzerdefinierte Integrationspro
 
 Die Field Service Integration erstellt die vorhandenen Interessent-zu-Bargeldfunktionen.
 
-![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service](./media/field-service-integration.png)
+![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service.](./media/field-service-integration.png)
 
 Die erste Phase der Integration zwischen Field Service und Supply Chain Management konzentriert sich darauf zu ermöglichen, dass Arbeitsaufträge und Vereinbarungen aus Field Service in Supply Chain Management fakturiert werden. Die unterstützten Flüsse beginnen in Field Service, wo Informationen aus Arbeitsaufträgen mit Supply Chain Management als Aufträge synchronisiert werden. In Supply Chain Management werden die Aufträge als Rechnungsdokumente generiert. Darüber hinaus werden die Informationen aus Field Service-Vereinbarungsrechnungen mit Supply Chain Management synchronisiert. Der Microsoft Dynamics 365-Datenenintegrator synchronisiert Daten mithilfe von anpassbaren Projekten. Standardvorlagen können verwendet werden, um benutzerdefinierte Integrationsprojekte zu erstellen, in denen zusätzliche standardmäßige und benutzerdefinierte Spalten sowie auch Tabellen zugeordnet werden können, um die Integration anzupassen und bestimmte Anforderungen zu erfüllen.
 
@@ -44,7 +44,7 @@ Die erste Phase der Integration zwischen Field Service und Supply Chain Manageme
 - [Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management synchronisieren](field-service-work-order.md)
 - [Vereinbarungsrechnungen in Field Service mit Freitextrechnungen in Supply Chain Management synchronisieren](field-service-invoice.md)
 
-Um ein Beispiel zu sehen, wie Sie einen Arbeitsauftrag zwischen Field Service und Supply Chain Management synchronisieren können, sehen Sie sich das kurze YouTube Video [Arbeitsaufträge zwischen Microsoft Dynamics 365 Integration ](https://www.youtube.com/watch?v=46ylO7raZAo) an.
+Um ein Beispiel zu sehen, wie Sie einen Arbeitsauftrag zwischen Field Service und Supply Chain Management synchronisieren können, sehen Sie sich das kurze YouTube Video [Arbeitsaufträge zwischen Microsoft Dynamics 365 Integration](https://www.youtube.com/watch?v=46ylO7raZAo) an.
 
 ## <a name="integration-with-field-service-including-inventory-and-project-information"></a>Integration mit Field Service (inkl. Bestand- und Projektinformationen)
 
@@ -58,7 +58,7 @@ Die zusätzlichen Funktionen in der zweiten Phase geben Feldtechnikern Einblicke
 - Supply Chain Management-Projekte verbunden mit Dynamics 365 Field Service-Arbeitsaufträgen
 - Mit Dynamics 365 Field Service-Arbeitsaufträge verbundene Supply Chain Management-Projekte übernehmen diese Projektnummer in den -Auftrag, um die Rechnungsstellung vom Projekt aus zu ermöglichen. 
 
-![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service](./media/FSv2overview.png)
+![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service.](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Die zweitee Phase der Integration zwischen Field Service und Supply Chain Management ermöglicht die Synchronisierung der folgenden Vorlagen:
 - Lagerorte (Supply Chain Management zu Field Service) - Lagerorte aus Supply Chain Management zu Field Service [Erweiterte Abfrage] 

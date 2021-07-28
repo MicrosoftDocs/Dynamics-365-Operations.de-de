@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 1c0dfebb3ef442f67d8489d7aed00305c02cf410
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748896"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350787"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Live-Synchronisierungsprobleme behandeln
 
@@ -73,21 +73,21 @@ Wenn auf beiden Seiten Daten vorhanden sind und Sie bestätigt haben, dass das P
 
 Möglicherweise wird eine Fehlermeldung Bad Request angezeigt, die dem folgenden Beispiel ähnelt, wenn Sie Daten in einer Finance and Operations App erstellen.
 
-![Beispiel für die Fehlermeldung Bad Request](media/error_record_id_source.png)
+![Beispiel für die Fehlermeldung „Ungültige Anforderung“.](media/error_record_id_source.png)
 
 Um das Problem zu beheben, müssen Sie dem Team der zugeordneten Geschäftseinheit Dynamics 365 Sales oder Dynamics 365 Customer Service die richtige Sicherheitsrolle zuweisen, um die fehlenden Berechtigungen zu aktivieren.
 
 1. In der Finance and Operations App finden Sie den Geschäftsbereich, der im Verbindungssatz Datenintegration zugeordnet ist.
 
-    ![Organisationszuordnung](media/mapped_business_unit.png)
+    ![Organisationszuordnung.](media/mapped_business_unit.png)
 
 2. Melden Sie sich in der modellgesteuerten App in Dynamics 365 bei der Umgebung an und navigieren Sie zu **Einstellungen \> Sicherheit** und finden Sie das Team der zugeordneten Geschäftseinheit.
 
-    ![Team des zugeordneten Geschäftsbereichs](media/setting_security_page.png)
+    ![Team des zugeordneten Geschäftsbereichs.](media/setting_security_page.png)
 
 3. Öffnen Sie die Seite für das Team zur Bearbeitung und wählen Sie dann **Rollen verwalten**, um das Dialogfeld **Teamrollen verwalten** zu öffnen.
 
-    ![Schaltfläche Rollen verwalten](media/manage_team_roles.png)
+    ![Schaltfläche Rollen verwalten.](media/manage_team_roles.png)
 
 4. Weisen Sie die Rolle zu, die über die Lese-/Schreibberechtigung für die relevanten Tabellen verfügt, und wählen Sie dann **OK** aus.
 

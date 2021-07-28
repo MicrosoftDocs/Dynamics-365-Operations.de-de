@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: a9fd5a90d59ec329f8d4a2515e657fb822c098b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d251eb02e7d9db1e61ba8bb6531c90e0e23717b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792846"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356877"
 ---
 # <a name="show-discounts-in-pos"></a>Rabatte im POS anzeigen
 
@@ -33,7 +33,7 @@ Werbeaktionen spielen eine wichtige Rolle bei der Motivation von Kunden, die Kau
 
 Der Handel umfasst einen Vorgang mit dem Namen „Alle Rabatte anzeigen“. Diese Operation zeigt alle Rabatte an, die derzeit in einem Geschäft laufen. Die Operation „Alle Rabatte anzeigen“ kann auf eine Schaltfläche in der Verkaufsstelle (POS) abgebildet werden, und diese Schaltfläche kann der Seite **Willkommen** oder der Seite **Transaktion** hinzugefügt werden. Die folgende Abbildung zeigt ein Beispiel für die geöffnete Seite **Alle Rabatte**.
 
-![Alle Rabatte Seite](./media/View_all_discounts.png "Alle Rabatte Seite")
+![Seite „Alle Rabatte“.](./media/View_all_discounts.png "Alle Rabatte Seite")
 
 Um die Rabatte anzuzeigen, sucht das System nach allen Rabatten, die eine oder mehrere der folgenden Bedingungen erfüllen:
 
@@ -61,11 +61,11 @@ Die folgenden Abbildungen zeigen die Logik, die bestimmt, welche Rabatte in fort
 
 Die folgende Abbildung zeigt die Logik, die verwendet wird, wenn die Steuerung der Rabattgleichzeitigkeit auf **Bester Preis und Verbindung innerhalb der Priorität, niemals Verbindung über die Prioritäten** gesetzt wird.
 
-![Logik für Bestpreis und Verbindung innerhalb der Priorität, niemals Verbindung über die Prioritäten](./media/Model_1.png "Logik für den besten Preis und die Verbindung innerhalb der Priorität, niemals über die Prioritäten hinweg").
+![Logik für „Bester Preis“ und Verbindung innerhalb der Priorität, niemals Verbindung über die Prioritäten.](./media/Model_1.png "Logik für den besten Preis und die Verbindung innerhalb der Priorität, niemals über die Prioritäten hinweg").
 
 Die folgende Abbildung zeigt die Logik, die verwendet wird, wenn die Steuerung der Rabattgleichzeitigkeit auf **Bester Preis nur innerhalb der Priorität, immer über die Prioritäten hinweg zusammengesetzt** gesetzt wird.
 
-![Logik für Bestpreis nur innerhalb der Priorität, immer über die Priorität zusammengesetzt](./media/Model_2.png "Logik für den besten Preis nur innerhalb der Priorität, immer zusammengesetzt über die Priorität").
+![Logik für „Bester Preis“ nur innerhalb der Priorität, immer über die Priorität zusammengesetzt.](./media/Model_2.png "Logik für den besten Preis nur innerhalb der Priorität, immer zusammengesetzt über die Priorität").
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

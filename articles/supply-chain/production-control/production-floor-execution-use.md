@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 0ece83a20a33a8f23e8700d1b5d680a11d64fea0
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: c8c50a9a6f9f3c6582e9fd0f28080a3259faab21
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907716"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349769"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
@@ -32,7 +32,7 @@ Bevor Arbeitskräfte das Gerät verwenden können, muss es von einem Vorgesetzte
 
 Nachdem das Gerät vorbereitet wurde, wird die Anmeldeseite darauf angezeigt. Diese Seite enthält Informationen zum Status von Einzelvorgängen für die lokale Arbeitsgruppe. Diese Informationen werden regelmäßig aktualisiert. Auf der Seite verwenden Mitarbeiter ihre Batch-IDs zum Signieren. Obwohl Mitarbeiter kein Benutzerkonto für Supply Chain Management haben müssen, müssen sie ein Konto *Zeit registrierte Arbeitskraft* haben, das sie beim Anmelden verwenden können.
 
-![Produktionsausführungsoberfläche Anmeldeseite](media/pfei-sign-in-page.png "Produktionsausführungsoberfläche Anmeldeseite")
+![Produktionsausführungsoberfläche Anmeldeseite.](media/pfei-sign-in-page.png "Produktionsausführungsoberfläche Anmeldeseite")
 
 In den verbleibenden Abschnitten dieses Themas wird beschrieben, wie Arbeitskräfte mit der Schnittstelle interagieren.
 
@@ -40,7 +40,7 @@ In den verbleibenden Abschnitten dieses Themas wird beschrieben, wie Arbeitskrä
 
 Die Registerkarte **Alle Einzelvorgänge** enthält eine Einzelauftragsliste, in der alle Produktionsjobs mit dem Status angezeigt werden *Nicht angefangen*, *Gestoppt*, oder *Gestartet*. (Dieser Registerkartenname ist anpassbar und kann für Ihr System unterschiedlich sein.)
 
-![Registerkarte alle Einzelvorgänge](media/pfei-all-jobs-tab.png "Registerkarte alle Einzelvorgänge")
+![Registerkarte alle Einzelvorgänge.](media/pfei-all-jobs-tab.png "Registerkarte alle Einzelvorgänge")
 
 Die Einzelvorgangsliste enthält die folgenden Spalten. Die Nummern entsprechen den Nummern in der vorherigen Abbildung.
 
@@ -59,7 +59,7 @@ Die Einzelvorgangsliste enthält die folgenden Spalten. Die Nummern entsprechen 
 
 Die Registerkarten **Aktive Aufträge** zeigen eine Liste aller Aufträge an, die die angemeldete Arbeitskraft bereits gestartet hat. (Dieser Registerkartenname ist anpassbar und kann für Ihr System unterschiedlich sein.)
 
-![Registerkarte Aktive Einzelvorgänge](media/pfei-active-jobs-tab.png "Registerkarte Aktive Einzelvorgänge")
+![Registerkarte „Aktive Einzelvorgänge“.](media/pfei-active-jobs-tab.png "Registerkarte Aktive Einzelvorgänge")
 
 Die Liste der aktiven Aufträge enthält die folgenden Spalten:
 
@@ -76,7 +76,7 @@ Die Liste der aktiven Aufträge enthält die folgenden Spalten:
 
 Auf der Registerkarte **Meine Maschine** können Arbeitskräfte eine Anlage auswählen, die mit einer Maschinenressource innerhalb des auf der Registerkarte **Alle Aufträge** festgelegten Filters liegt. Die Arbeitskraft kann dann den Status und den Zustand der ausgewählten Anlage anzeigen, indem sie Werte für bis zu vier ausgewählte Zähler und Listen der letzten Wartungsanfragen und registrierten Ausfallzeiten abliest. Die Arbeitskraft kann auch eine Wartung für die ausgewählte Anlage anfordern und Ausfallzeiten der Maschine registrieren und bearbeiten. (Dieser Registerkartenname ist anpassbar und kann für Ihr System unterschiedlich sein.)
  
-![Die Registerkarte „Meine Maschine“](media/pfei-my-machine-tab.png "Die Registerkarte „Meine Maschine“")
+![Die Registerkarte „Meine Maschine“.](media/pfei-my-machine-tab.png "Die Registerkarte „Meine Maschine“")
 
 Die Registerkarte **Meine Maschine** enthält die folgenden Spalten. Die Nummern entsprechen den Nummern in der vorherigen Abbildung.
 
@@ -87,7 +87,7 @@ Die Registerkarte **Meine Maschine** enthält die folgenden Spalten. Die Nummern
 
 1. **Einstellungen** – Wählen Sie das Zahnradsymbol aus, um ein Dialogfeld zu öffnen, in dem Sie auswählen können, welche Zähler für die ausgewählte Maschinenanlage angezeigt werden sollen. Die Werte für diese Zähler werden oben auf der Registerkarte **Anlagenverwaltung** angezeigt. Über das Menü **Einstellungen** (siehe den folgenden Screenshot) können Sie bis zu vier Zähler aktivieren. Verwenden Sie für jeden Zähler, den Sie aktivieren möchten, das Suchfeld oben auf der Kachel, um einen Zähler auszuwählen. Das Suchfeld listet alle Zähler auf, die der oben auf der Seite **Vermögensverwaltung** ausgewählten Anlage zugeordnet sind. Stellen Sie jeden Zähler so ein, dass für den Zähler entweder der Wert **Aggregiert** oder der aktuelle Wert **Tatsächlich** überwacht wird. Wenn Sie beispielsweise einen Zähler festlegen, der nachverfolgt, wie viele Stunden die Maschine gelaufen ist, sollten Sie ihn auf **Aggregiert** festlegen. Wenn Sie einen Zähler zum Messen der zuletzt aktualisierten Temperatur oder des zuletzt aktualisierten Drucks verwenden, sollten Sie ihn auf **Tatsächlich** festlegen. Wählen Sie **OK**, um Ihre Einstellungen zu speichern und das Dialogfeld zu schließen.
 
-    ![Einstellungen der Registerkarte „Meine Maschine“](media/pfei-my-machine-tab-settings.png "Einstellungen der Registerkarte „Meine Maschine“")
+    ![Einstellungen der Registerkarte „Meine Maschine“.](media/pfei-my-machine-tab-settings.png "Einstellungen der Registerkarte „Meine Maschine“")
 
 1. **Wartung anfordern** – Wählen Sie diese Schaltfläche aus, um ein Dialogfeld zu öffnen, in dem Sie eine Wartungsanfrage erstellen können. Sie können eine Beschreibung und eine Notiz angeben. Die Anfrage wird an einen Benutzer von Supply Chain Management weitergeleitet, der dann in der Lage ist, die Wartungsanfrage in einen Wartungsarbeitsauftrag umzuwandeln.
 1. **Ausfallzeiten erfassen** – Wählen Sie diese Schaltfläche aus, um ein Dialogfeld zu öffnen, in dem Sie Ausfallzeiten der Maschine erfassen können. Sie können einen Ursachencode auswählen und ein Datum bzw. eine Zeitspanne für die Ausfallzeit eingeben. Die Erfassung der Ausfallzeit der Maschine wird zur Berechnung der Effizienz des Maschinenanlage verwendet.
@@ -98,7 +98,7 @@ Die Registerkarte **Meine Maschine** enthält die folgenden Spalten. Die Nummern
 
 Arbeiter starten einen Produktions-Einzelvorgang, indem sie einen Einzelvorgang auf der Registerkarte **Alle Einzelvorgänge** auswählen und dann **Einzelvorgang starten** wählen und das Dialogfeld **Einzelvorgang starten** öffnen.
 
-![Dialogfeld Einzelvorgang starten](media/pfei-start-job-dialog.png "Dialogfeld Einzelvorgang starten")
+![Dialogfeld Einzelvorgang starten.](media/pfei-start-job-dialog.png "Dialogfeld Einzelvorgang starten")
 
 Arbeitskräfte benutzen das Dialogfeld **Einzelvorgang starten**, um die Produktionsmenge zu bestätigen und dann den Einzelvorgang zu starten. Arbeitskräfte können die Menge anpassen, indem sie das Feld **Menge** auswählen und dann die numerische Tastatur verwenden, die angezeigt wird. Arbeitskräfte wählen **Start**, um mit dem Einzelvorgang zu beginnen. Das Dialogfeld **Einzelvorgang starten** wird geschlossen und der Einzelvorgang zur Registerkarte **Aktive Einzelvorgänge** hinzugefügt.
 
@@ -108,13 +108,13 @@ Arbeitskräfte können einen Einzelvorgang starten, der sich in einem beliebigen
 
 Wenn ein Mitarbeiter einen Einzelvorgang abschließt oder teilweise abschließt, kann er gute Mengen melden, die durch Auswahl eines Einzelauftrages auf der Registerkarte **Aktive Einzelvorgänge** ausgewählt werden und dann **Fortschritt melden** auswählen. Im Dialogfeld **Fortschritt melden** gibt die Arbeitskraft dann die gute Menge über die Zifferntastatur ein. Die Menge ist standardmäßig leer. Nachdem eine Menge eingegeben wurde, kann die Arbeitskraft den Status des Einzelvorgangs auf *In Bearbeitung*, *Gestoppt*, oder *Abgeschlossen* aktualisieren.
 
-![Dialogfeld Fortschritt melden](media/pfei-report-progress-dialog.png "Dialogfeld Fortschritt melden")
+![Dialogfeld „Fortschritt melden“.](media/pfei-report-progress-dialog.png "Dialogfeld Fortschritt melden")
 
 ## <a name="reporting-scrap"></a>Schrott melden
 
 Wenn ein Mitarbeiter einen Einzelvorgang abschließt oder teilweise abschließt, kann er Schrott melden, indem er den Einzelvorgang auf der Registerkarte **Aktive Einzelvorgänge** auswählt und dann **Schrott melden** auswählt. Im Dialogfeld **Schrott melden** gibt die Arbeitskraft dann die Schrottmengen über die Zifferntastatur ein. Die Arbeitskraft wählt auch einen Grund aus (*Keiner*, *Maschine*, *Operator*, oder *Material*).
 
-![Dialogfeld Schrott melden](media/pfei-report-scrap-dialog.png "Dialogfeld Schrott melden")
+![Dialogfeld „Ausschuss melden“.](media/pfei-report-scrap-dialog.png "Dialogfeld Schrott melden")
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Einen Einzelvorgang abschließen und einen neuen Einzelvorgang beginnen
 

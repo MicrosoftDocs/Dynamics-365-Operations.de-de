@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1137ee7938b378e5212e355580d005cd49b31dbb
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 6eb052b640d2418f6ddd1a06b1b0d529074b7f89
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189044"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355058"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kostenaufschlüsselungsrichtlinie und Gemeinkostenberechnung 
 
@@ -44,13 +44,13 @@ Um diese Auswirkungen zu vermeiden, können Sie mit der Kostenrechnung die Koste
 
 Stellen Sie sich vor, dass eine Organisation die folgende Struktur mit 4 Kostenstellen hat.
 
-![Beispiel einer Organisationsstruktur](./media/dimension-hierarchy-org.png)
+![Beispiel einer Organisationsstruktur.](./media/dimension-hierarchy-org.png)
 
-**Kostenobjektdimension**
+**Kostenträgerdimension**
 
 | Kostenstellen | Beschreibung          |
 |--------------|-----------|
-| CC001        | Personalverwaltung        |
+| CC001        | HR        |
 | CC002        | Finanzen   |
 | CC003        | Montage  |
 | CC004        | Verpackung |

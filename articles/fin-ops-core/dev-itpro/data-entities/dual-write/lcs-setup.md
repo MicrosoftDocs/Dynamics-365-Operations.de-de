@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103568"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359362"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Einrichtung von dualem Schreiben aus Lifecycle Services
 
@@ -40,7 +40,7 @@ Befolgen Sie diese Schritte, um duales Schreiben von der LCS -Seite **Umgebungsd
 
 2. Wählen Sie die Schaltfläche **Duale Schreibanwendung** aus.
 
-    ![Power Platform-Integration](media/powerplat_integration_step2.png)
+    ![Power Platform-Integration.](media/powerplat_integration_step2.png)
 
 3. Lesen Sie die allgemeinen Geschäftsbedingungen und wählen Sie **Konfigurieren** aus.
 
@@ -52,7 +52,7 @@ Befolgen Sie diese Schritte, um duales Schreiben von der LCS -Seite **Umgebungsd
 
 7. Wählen Sie **Link zur Power Platform Umgebung**, um eine Verbindung zwischen Dataverse und der aktuellen Umgebung der Datenbank zu erstellen. Diese Einrichtung dauert normalerweise 5 Minuten oder weniger.
 
-    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link zur Power Platform Umgebung":::
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link zur Power Platform-Umgebung.":::
 
 8. Wenn die Verknüpfung abgeschlossen ist, wird ein Hyperlink angezeigt. Verwenden Sie den Link, um sich im Verwaltungsbereich mit zwei Schreibvorgängen in der Finance and Operations Umgebung zu registrieren. Von dort aus können Sie Entitätszuordnungen einrichten.
 

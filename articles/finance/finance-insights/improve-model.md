@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 184a1cb5d3851e26b41340b711c51ef38e06eb53
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 74005d17e2524b922b0fab1aab5350b85dfad771
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186641"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355675"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Vorhersagemodell verbessern (Vorschau)
 
@@ -33,7 +33,7 @@ In diesem Thema werden Funktionen beschrieben, mit denen Sie die Leistung von Vo
 
 Sie wählen zunächst eines oder mehrere der drei möglichen Ergebnisse für Rechnungen aus: **Pünktlich**, **Verspätet** und **Sehr spät**. Alle drei Ergebnisse sollten ausgewählt werden. Wenn Sie die Auswahl eines der Ergebnisse deaktivieren, werden Rechnungen aus dem Trainingsprozess herausgefiltert und die Genauigkeit der Vorhersage wird verringert.
 
-[![Ergebnisse bestätigen](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![Ergebnisse bestätigen.](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 Wenn Ihre Organisation nur zwei Ergebnisse benötigt, ändern Sie die **Verspätet**- und **Sehr spät**-Schwellenwerte auf 0 (Null) Tage. Auf diese Weise reduzieren Sie die Vorhersage effektiv auf einen binären Zustand von **Pünktlich** oder **Verspätet**.
 
@@ -51,7 +51,7 @@ In den folgenden Abschnitten werden die Felder angezeigt, die für die Rechnungs
 
 Die folgende Abbildung zeigt die Felder an, die für die Rechnungstabelle verfügbar sind.
 
-[![Verfügbare Felder für die Rechnungstabelle](./media/available-fields.png)](./media/available-fields.png)
+[![Verfügbare Felder für die Rechnungstabelle.](./media/available-fields.png)](./media/available-fields.png)
 
 Die folgenden Felder sollten nicht für das Training ausgewählt werden:
 
@@ -66,7 +66,7 @@ Die folgenden Felder sollten nicht für das Training ausgewählt werden:
 
 Die folgende Abbildung zeigt die Felder an, die für die Debitorentabelle verfügbar sind.
 
-[![Verfügbare Felder für die Debitorentabelle](./media/related-entities.png)](./media/related-entities.png)
+[![Verfügbare Felder für die Debitorentabelle.](./media/related-entities.png)](./media/related-entities.png)
 
 Das folgende Feld sollte nicht für das Training ausgewählt werden:
 
@@ -74,8 +74,8 @@ Das folgende Feld sollte nicht für das Training ausgewählt werden:
 
 ## <a name="filters"></a>Filter
 
-Die Filter unterstützen derzeit das Szenario des Debitorenzahlungsprädiktors nicht. Wählen Sie daher **Diesen Schritt überspringen** aus und fahren Sie mit der Übersichtsseite fort.
+Sie können die Rechnungen filtern, die für Trainings verwendet werden, indem Sie Filterkriterien für Felder auf der Rechnung oder in den Kundentabellen festlegen. Sie können beispielsweise einen Schwellenwert so festlegen, dass nur Rechnungen berücksichtigt werden, deren Gesamtsumme mindestens einen bestimmten Betrag erreicht. Alternativ können Sie Rechnungen ausschließen, die Kunden einer bestimmten Kundengruppe zugeordnet sind.
 
-[![Fokusmodell mit Filtern](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
+Weitere Informationen zum Filtern Ihrer Daten finden Sie unter [Ein Vorhersagemodell erstellen](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

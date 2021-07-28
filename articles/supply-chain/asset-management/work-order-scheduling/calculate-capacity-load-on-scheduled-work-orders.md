@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 09e0fc17a288a278b7b1feaba8c7b73425aa2d52
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 164ae10eef8ef3692cd3a8b5232de64ec3d83b1b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808159"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354179"
 ---
 # <a name="calculate-capacity-load-on-scheduled-work-orders"></a>Berechnen der Kapazitätsauslastung für geplante Arbeitsaufträge
 
@@ -48,7 +48,7 @@ Sie können die Kapazitätsauslastung für geplante Arbeitsaufträge berechnen, 
 
 Die Abbildung unten zeigt das Ergebnis einer Berechnung, die drei Wochen abdeckt, für den Auslastungstyp **Reserviert**.
 
-![Abbildung 1](media/08-work-order-scheduling.png)
+![Abbildung 1.](media/08-work-order-scheduling.png)
 
 [!NOTE]
 Wenn Sie Auslastungstypen **Kapazität** oder **Rest** für die Berechnung auswählen, wird dasselbe Ergebnis angezeigt, wenn keine Reservierungen für die Ressourcen in der ausgewählten Periode vorgenommen wurden.

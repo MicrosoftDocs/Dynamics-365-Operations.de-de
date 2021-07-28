@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: cbb1d9a53a7a09ab525532f08553898c4e40223a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7faa9a3cf6a29d8ed126cfcb0e2902b2016d03ff
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822780"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358145"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Services (RCS) – Globalisierungsfunktionen
 
@@ -53,7 +53,7 @@ In Ihren Finance and Operations Apps Instanzen befolgen Sie diese Schritte.
 1. Wählen Sie in Ihrer RCS-Instanz die Kachel **Funktionsverwaltung** aus.
 2. In dem **Funktionsverwaltung** Arbeitsbereich wählen Sie **Globalisierungsfunktionen** in der Liste und wählen Sie dann **Jetzt aktivieren**.
 
-    ![Globalisierungsfunktionen in der Funktionsverwaltung](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
+    ![Globalisierungsfunktionen in der Funktionsverwaltung.](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
 
 ## <a name="globalization-features"></a>Globalisierungsfunktionen
 
@@ -67,11 +67,11 @@ Um eine Globalisierungsfunktion zu verwenden, müssen Sie sie zuerst aus dem glo
 1. Stellen Sie sicher, dass die **Globalisierungsfunktionen** Funktion in der Funktionsverwaltung aktiviert ist wie weiter oben in diesem Thema beschrieben.
 2. Öffnen Sie den neuen Arbeitsbereich **Globalisierungsfunktionen** und dann unter **Eigenschaften** wählen Sie die Kachel **elektronische Rechnungsstellung** aus.
 
-    ![Arbeitsbereich für globale Funktionen](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
+    ![Arbeitsbereich für globale Funktionen.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
 
     Die Seite **Funktionen für die elektronische Rechnungsstellung** wird geöffnet.
 
-    ![Seite mit den Funktionen für die elektronische Rechnungsstellung](./media/RCS_GlobalF_3%20Feature%20form.JPG)
+    ![Seite mit den Funktionen für die elektronische Rechnungsstellung.](./media/RCS_GlobalF_3%20Feature%20form.JPG)
 
 ## <a name="add-a-derived-globalization-feature"></a>Fügen Sie eine abgeleitete Globalisierungsfunktion hinzu
 
@@ -79,27 +79,27 @@ Sie können eine neue Globalisierungsfunktion hinzufügen, indem Sie sie von ein
 
 1. Wählen Sie **Importieren**, um die Seite **Importfunktion aus dem globalen Repository** zu öffnen.
 
-    ![Funktion von der globalen Repository-Seite importieren](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
+    ![Funktion von der globalen Repository-Seite importieren.](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
 
 2. Wählen Sie **Synchronisieren**, um die neuesten Funktionen zu erhalten.
 
     Die synchronisierte Liste enthält Funktionen, die Ihnen entweder zur Verfügung stehen, weil sie von Microsoft veröffentlicht wurden oder weil sie von einem anderen Konfigurationsanbieter für Sie freigegeben wurden.
 
-    ![Synchronisierte Liste der Funktionen](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
+    ![Synchronisierte Liste der Funktionen.](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
 
 3. Wählen Sie in der Liste die zu importierenden Funktionen aus und wählen Sie dann **Importieren**. Sie erhalten eine Nachricht, wenn die ausgewählten Funktionen erfolgreich importiert wurden.
 
-    ![Meldung für erfolgreichen Import](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
+    ![Meldung für erfolgreichen Import.](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
 
 4. Wählen Sie **Hinzufügen** und dann im Dropdown-Dialogfeld die Option **Basierend auf der vorhandenen Version** aus.
 5. Geben Sie einen Namen und eine Beschreibung für die Funktion ein.
 6. Wählen Sie in der Liste der verfügbaren Funktionen die Basisversion der Funktion aus und wählen Sie dann **Funktion erstellen**.
 
-    ![Hinzufügen einer abgeleiteten Funktion](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
+    ![Hinzufügen einer abgeleiteten Funktion.](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
 
     Die von Ihnen hinzugefügte Funktion wird erstellt und hat den Status **Entwurf**.
 
-    ![Abgeleitete Funktion mit Entwurfsstatus](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
+    ![Abgeleitete Funktion mit Entwurfsstatus.](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
 
 7. Überprüfen Sie die Funktionskomponenten, um festzustellen, ob Aktualisierungen erforderlich sind:
 
@@ -120,7 +120,7 @@ Sie können eine neue Globalisierungsfunktion hinzufügen, indem Sie sie von Gru
 2. Geben Sie einen Namen und eine Beschreibung für die Funktion ein.
 3. Wählen Sie **Funktion erstellen**.
 
-    ![Hinzufügen einer neuen Funktion](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
+    ![Hinzufügen einer neuen Funktion.](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
 
 4. Auf der Registerkarte **Versionen** wählen Sie **Gültig ab** Datum und wählen Sie dann **Status ändern**, um die Funktion zu vervollständigen. Abgeschlossene Funktionen können für eine bestimmte Umgebung verfügbar gemacht werden, damit sie in Globalisierungsdiensten verwendet oder im globalen Repository veröffentlicht werden können.
 
@@ -176,7 +176,7 @@ Folgende Aktionen sind für die Funktionseinrichtung verfügbar:
     - Regeln für die Anwendbarkeit
     - Variable
 
-![Funktionsversion-Einrichtungsseite](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
+![Funktionsversion-Einrichtungsseite.](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
 
 ### <a name="environments"></a>Umgebungen
 
@@ -193,7 +193,7 @@ Befolgen Sie diese Schritte, um eine Globalisierungsfunktion für eine externe O
 2. Auf der **Organisationen** Registerkarte wählen Sie **Teilen mit** und geben Sie dann im Dropdown-Dialogfeld den Domänennamen der Organisation ein.
 3. Wählen Sie **Teilen**.
 
-    ![Teilen Sie eine Funktion mit einer Organisation](./media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG)
+    ![Teilen Sie eine Funktion mit einer Organisation.](./media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG)
 
 Die Funktion wird für die ausgewählte Organisation freigegeben und steht dieser Organisation im globalen Repository zur Verfügung. Von dort kann die Funktion in die Instanz der Organisation von RCS oder Dynamics 365 Finance importiert werden, damit sie verwendet werden kann.
 
@@ -201,7 +201,7 @@ Die Funktion wird für die ausgewählte Organisation freigegeben und steht diese
 
 Sie können eine zurückgesetzte Globalisierungsfunktion auf die neue oder aktualisierte Version der Basisfunktion zurücksetzen. Auf diese Weise können Änderungen, die in der Basisversion aufgetreten sind, automatisch aktualisiert werden. Die aktualisierte Version der Basisfunktion wird vom ursprünglichen Konfigurationsanbieter erstellt und dann veröffentlicht oder freigegeben.
 
-![Aktualisierte Version der Basisfunktion](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
+![Aktualisierte Version der Basisfunktion.](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
 
 Wenn Sie beispielsweise die abgeleitete Version einer von Ihnen erstellten Funktion neu erstellen möchten, erhalten Sie zuerst die neueste Version der Funktion, indem Sie sie aus dem globalen Repository importieren.
 
@@ -209,23 +209,23 @@ Wenn Sie beispielsweise die abgeleitete Version einer von Ihnen erstellten Funkt
 2. Wählen Sie **Synchronisieren**, um die neuesten Funktionen zu erhalten.
 3. Wählen Sie in der Liste der Funktionen die zu importierenden Funktionen aus und wählen Sie dann **Importieren**.
 
-    ![Importieren der neuesten Version einer Funktion](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
+    ![Importieren der neuesten Version einer Funktion.](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
 
 4. Wählen Sie in der Liste der Funktionen die Funktion aus, die neu erstellt werden soll.
 5. Auf der Registerkarte **Version** wählen Sie **Neu**, um eine Entwurfsversion zu erstellen.
 
-    ![Neue Entwurfsversion erstellt](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
+    ![Neue Entwurfsversion erstellt.](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
 
 6. Wählen Sie **Zurücksetzen**.
 7. In dem Dialogfeld **Zurücksetzen** wählen Sie die neueste Version der Funktion aus zum Zurücksetzen.
 
-    ![Dialogfeld zurücksetzen](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
+    ![Dialogfeld Zurücksetzen.](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
 
-8. Wählen Sie **OK**.
+8. Wählen Sie **OK** aus.
 9. Überprüfen Sie die Funktionskomponenten und nehmen Sie alle notwendigen Änderungen vor.
 10. Wählen Sie **Status ändern**, um die Funktion zurückzusetzen. Wenn die Zurücksetzung abgeschlossen ist, können Sie zusätzliche Aktionen ausführen. Sie können die Funktion beispielsweise veröffentlichen und für die Verwendung in Globalisierungsdiensten verfügbar machen.
 
-    ![Funktionsstatus auf Abgeschlossen aktualisiert](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
+    ![Funktionsstatus auf Abgeschlossen aktualisiert.](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
 
 ## <a name="configure-environments-for-globalization-features"></a><a name="configureenvironment"></a>Konfigurieren Sie Umgebungen für Globalisierungsfunktionen
 
@@ -233,13 +233,13 @@ Benutzer von Globalisierungsdiensten können die Umgebung verwalten, um eine Glo
 
 1. Öffnen Sie die Umgebung **Globalisierungsfunktionen** und dann unter **Eigenschaften** wählen Sie die Kachel **elektronische Rechnungsstellung** aus.
 
-    ![Arbeitsbereich für globale Funktionen](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
+    ![Arbeitsbereich für globale Funktionen.](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
 
 2. Wählen **Key Vault-Parameter** und dann **Neu**, um den Azure Key Vault-Schlüssel zu erstellen.
 3. Geben Sie einen Namen und eine Beschreibung für das Schlüsseldepot ein und geben dann in das Feld **Key Vault URI** die URL ein, die die Key Vault-Ressource in Azure identifiziert.
 4. Auf dem Inforegister **Zertifikate** wählen Sie **Hinzufügen**, um das Zertifikat hinzuzufügen, geben Sie einen Namen und eine Beschreibung für jedes Zertifikat ein.
 
-    ![Zertifikat hinzugefügt](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
+    ![Zertifikat hinzugefügt.](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
 
 5. Wählen Sie **Neu** aus, um eine neue Umgebung zu erstellen.
 6. Geben Sie einen Namen, eine Beschreibung und den für das Speichern erforderliche Signatur-Token-Schlüssel für den gemeinsamen Zugriff ein.
@@ -248,7 +248,7 @@ Benutzer von Globalisierungsdiensten können die Umgebung verwalten, um eine Glo
 9. Wiederholen Sie zum Hinzufügen weiterer Benutzer die Schritte 7 und 8.
 10. Wählen Sie **Veröffentlichen**, um die Umgebung zu veröffentlichen.
 
-    ![Veröffentlichte Umgebung](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+    ![Veröffentlichte Umgebung.](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

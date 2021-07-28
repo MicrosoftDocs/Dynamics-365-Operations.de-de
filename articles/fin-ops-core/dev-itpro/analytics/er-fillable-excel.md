@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1c8d939fef4fd0f9e189ca37318c2c0306511785
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 96e1575e2237cab481c368083da1e60fec612087
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893907"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359028"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -39,7 +39,7 @@ Wenn Sie eine neue EB-Formatkonfiguration hinzufügen, um ein ausgehendes Dokume
 
 Wählen Sie im Aktionsbereich **Designer** aus, und öffnen Sie die EB-Formatkomponente zur Bearbeitung im EB-Vorgangs-Designer aus, um die EB-Formatkomponente der Konfiguration zu konfigurieren.
 
-![Konfigurationsseite](./media/er-excel-format-add-format.png)
+![Seite „Konfigurationen“.](./media/er-excel-format-add-format.png)
 
 ## <a name="excel-file-component"></a>Komponente „Excel-Datei“
 
@@ -47,14 +47,14 @@ Wählen Sie im Aktionsbereich **Designer** aus, und öffnen Sie die EB-Formatkom
 
 Sie müssen dem konfigurierten EB-Format eine **Excel\\Datei-Komponente** hinzufügen, um ein ausgehendes Dokument im Excel-Format zu generieren.
 
-![Komponente „Excel\Datei“](./media/er-excel-format-add-file-component.png)
+![Komponente „Excel\Datei“.](./media/er-excel-format-add-file-component.png)
 
 Hängen Sie eine Excel-Arbeitsmappe mit der .xlsx-Erweiterung als Vorlage für ausgehende Dokumente an die **Excel\\Datei**-Komponente an, um das Layout des ausgehenden Dokuments festzulegen.
 
 > [!NOTE]
-> Wenn Sie eine Vorlage manuell anhängen, müssen Sie einen [Dokumententyp](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) verwenden, der zu diesem Zweck im [EB-Parameter ](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) konfiguriert wurde.
+> Wenn Sie eine Vorlage manuell anhängen, müssen Sie einen [Dokumententyp](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) verwenden, der zu diesem Zweck im [EB-Parameter](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) konfiguriert wurde.
 
-![Hinzufügen eines Anhangs zur Excel\Datei-Komponente](./media/er-excel-format-add-file-component2.png)
+![Hinzufügen eines Anhangs zur Excel-\Datei-Komponente.](./media/er-excel-format-add-file-component2.png)
 
 Wenn Sie das konfigurierte ER-Format ausführen, müssen Sie der **Excel\\Datei**-Komponente die Komponenten **Blatt**-, **Angebot** und **Zelle** hinzufügen, um festzulegen, wie die angehängte Vorlage ausgefüllt wird. Jede verschachtelte Komponente muss mit einem Excel-benannten Element verknüpft sein.
 
@@ -62,7 +62,7 @@ Wenn Sie das konfigurierte ER-Format ausführen, müssen Sie der **Excel\\Datei*
 
 Sie können auf der Registerkarte **Importieren** des Aktionsbereichs die Option **Aus Excel importieren** auswählen, um eine neue Vorlage in ein leeres EB-Format zu importieren. In diesem Beispiel wird automatisch eine **Excel\\Datei**-Komponente erstellt und die importierte Vorlage daran angehängt. Alle erforderlichen EB-Komponenten werden ebenfalls automatisch erstellt, basierend auf der Liste der erkannten Excel-benannten Elemente.
 
-![Auswählen von „Aus Excel importieren“](./media/er-excel-format-import-template.png)
+![Auswählen von „Aus Excel importieren“.](./media/er-excel-format-import-template.png)
 
 > [!NOTE]
 > Wenn Sie das optionale **Blatt**-Element im bearbeitbaren EB-Format erstellen möchten, legen Sie die Option **Excel-Arbeitsblattformat-Element erstellen** auf **Ja** fest.
@@ -79,7 +79,7 @@ Auf der Registerkarte **Zuordnung** des EB-Vorgangs-Designers können Sie die Ei
 - Wenn ein Ausdruck der Eigenschaft **Aktiviert** für die Rückgabe von **Wahr** zur Laufzeit oder wenn überhaupt kein Ausdruck konfiguriert ist, wird das entsprechende Arbeitsblatt im generierten Dokument ausgefüllt.
 - Wenn ein Ausdruck der Eigenschaft **Aktiviert** ist für die Rückgabe von **Falsch** zur Laufzeit konfiguriert ist, enthält das generierte Dokument kein Arbeitsblatt.
 
-![Beispiel einer Blatt-Komponente](./media/er-excel-format-sheet-component.png)
+![Beispiel einer Blatt-Komponente.](./media/er-excel-format-sheet-component.png)
 
 ## <a name="range-component"></a>Komponente „Bereich“
 
@@ -182,7 +182,7 @@ Sie können auf der Registerkarte **Importieren** des Aktionsbereichs die Option
 >
 > Wenn das bearbeitbare EB-Format ursprünglich **Blatt**-Elemente enthielt, wird empfohlen, dass Sie die Option **Excel-Arbeitsblattformat-Element erstellen** auf **Ja** festlegen, wenn Sie eine aktualisierte Vorlage importieren. Anderfalls werden alle verschachtelten Elemente des ursprünglichen **Blatt**-Elements von Grund auf neu erstellt. Daher gehen alle Bindungen der neu erstellten Formatelemente im aktualisierten EB-Format verloren.
 
-![Option „Excel-Arbeitsblattformat-Element erstellen“ im Dialogfeld „Aus Excel aktualisieren“](./media/er-excel-format-update-template.png)
+![Option „Excel-Arbeitsblattformat-Element erstellen“ im Dialogfeld „Aus Excel aktualisieren“.](./media/er-excel-format-update-template.png)
 
 Führen Sie die Schritte unter [Elektronische Berichterstellungsformate ändern, indem Microsoft Excel-Vorlagen erneut angewendet werden](modify-electronic-reporting-format-reapply-excel-template.md), um weitere Informationen zu dieser Funktion zu erhalten.
 
@@ -190,7 +190,7 @@ Führen Sie die Schritte unter [Elektronische Berichterstellungsformate ändern,
 
 Wenn Sie ein bearbeitbares EB-Format überprüfen, wird eine Konsistenzprüfung durchgeführt, um sicherzustellen, dass der Excel-Name in der aktuell verwendeten Excel-Vorlage vorhanden ist. Sie werden über etwaige Inkonsistenzen informiert. Bei einigen Inkonsistenzen ist die Option zur automatischen Behebung von Problemen verfügbar.
 
-![Meldung „Überprüfungsfehler“](./media/er-excel-format-validate.png)
+![Meldung „Überprüfungsfehler“.](./media/er-excel-format-validate.png)
 
 ## <a name="control-the-calculation-of-excel-formulas"></a>Berechnung von Excel-Formeln steuern
 
@@ -209,7 +209,7 @@ Wenn ein ausgehendes Dokument in einem Microsoft Excel-Arbeitsmappenformat gener
 1. Verwenden Sie die bereitgestellten EB-Konfigurationen, um ein druckbares Freitext-Dokument (Free Text Invoice, FTI) zu [generieren](er-generate-printable-fti-forms.md) .
 2. Überprüfen Sie die Fußzeile des generierten Dokuments. Beachten Sie, dass es Informationen zur aktuellen Seitenzahl und zur Gesamtzahl der Seiten im Dokument enthält.
 
-    ![Die Fußzeile eines generierten Dokuments im Excel-Format überprüfen](./media/er-fillable-excel-footer-1.gif)
+    ![Die Fußzeile eines generierten Dokuments im Excel-Format überprüfen.](./media/er-fillable-excel-footer-1.gif)
 
 3. [Öffnen](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) Sie im EB-Formatdesigner das Beispiel-EB-Format zur Überprüfung.
 
@@ -222,7 +222,7 @@ Wenn ein ausgehendes Dokument in einem Microsoft Excel-Arbeitsmappenformat gener
 
     - Die zweite **String**-Komponente füllt den Text aus, der die aktuelle Seitenzahl und die Gesamtzahl der Seiten im aktuellen Dokument enthält.
 
-    ![Die EB-Formatkomponente der Fußzeile auf der Seite „Formatdesigner“ überprüfen](./media/er-fillable-excel-footer-2.png)
+    ![Die EB-Formatkomponente der Fußzeile auf der Seite „Formatdesigner“ überprüfen.](./media/er-fillable-excel-footer-2.png)
 
 4. Passen Sie das Beispiel-EB-Format an, um die aktuelle Seitenfußzeile zu ändern:
 
@@ -237,20 +237,20 @@ Wenn ein ausgehendes Dokument in einem Microsoft Excel-Arbeitsmappenformat gener
         1. Fügen Sie eine **String**-Komponente hinzu, die das Verarbeitungsdatum rechts ausrichtet und in der Größe 8-Punkt in der Schriftart "Segoe UI Regular" (**"&L&"Segoe UI,Regular"&8"**) darstellt.
         2. Fügen Sie eine **String**-Komponente hinzu, die das Verarbeitungsdatum in einem benutzerdefinierten Format ausfüllt (**""&nbsp;"&DATEFORMAT(SESSIONTODAY(), "JJJJ-MM-TT")**).
 
-        ![Überprüfen der EB-Formatkomponente der Fußzeile auf der Seite „Formatdesigner“](./media/er-fillable-excel-footer-3.png)
+        ![Überprüfen der EB-Formatkomponente der Fußzeile auf der Seite „Formatdesigner“.](./media/er-fillable-excel-footer-3.png)
 
     4. [Vervollständigen](er-quick-start2-customize-report.md#CompleteDerivedFormat) Sie die Entwurfsversion des abgeleiteten **Freitextrechnung (Excel) benutzerdefiniert**-EB-Formats.
 
 5. [Konfigurieren](er-generate-printable-fti-forms.md#configure-print-management) Sie die Druckverwaltung zur Verwendung des abgeleiteten **Freitextrechnung (Excel) benutzerdefiniert**-EB-Formats anstelle des Beispiel-EB-Formats.
 6. Generieren Sie ein druckbares FTI-Dokument, und überprüfen Sie die Fußzeile des generierten Dokuments.
 
-    ![Überprüfen der Fußzeile eines generierten Dokuments im Excel-Format](./media/er-fillable-excel-footer-4.gif)
+    ![Überprüfen der Fußzeile eines generierten Dokuments im Excel-Format.](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
 
-[Entwerfen einer Konfiguration für das Erstellen von Berichten im OPENXML-Format](tasks\er-design-reports-openxml-2016-11.md)
+[Eine Konfiguration zum Generieren von Berichten im OpenXML-Format entwerfen](tasks\er-design-reports-openxml-2016-11.md)
 
 [Ändern von elektronisches Berichterstellungsformaten, indem Excel-Vorlagen erneut angewendet werden](modify-electronic-reporting-format-reapply-excel-template.md)
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f1a405f5bbf8728876213e6c726ae41ebf809626
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: acfde5961f481f5d939f0c6388b80edfd65ee339
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810485"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351416"
 ---
 # <a name="outbound-workload-visualization"></a>Ausgehende Workloadvisualisierung
 
@@ -60,7 +60,7 @@ Um eine Visualisierung der ausgehenden Arbeitsauslastung festzulegen, gehen Sie 
     - **Einzubeziehende Tage** - Geben Sie die Anzahl der Tage in der Vergangenheit ein, für die das Diagramm erstellt werden soll.
     - **Arbeitsauftragstyp** - Wählen Sie die Typen der ausgehenden Arbeitsaufträge, nach denen gefiltert werden soll.
 
-    ![Seite Filter konfigurieren](media/work-viz-filters-1.png "Seite Filter konfigurieren")
+    ![Seite Filter konfigurieren.](media/work-viz-filters-1.png "Seite Filter konfigurieren")
 
 1. Schließen Sie die Seite **Filter konfigurieren**, um zur Seite **Visualisierungen der ausgehenden Arbeitsauslastung** zurückzukehren.
 
@@ -70,11 +70,11 @@ Um eine Visualisierung der ausgehenden Arbeitsauslastung festzulegen, gehen Sie 
     - **Zuletzt aktualisiert** - Dieses Feld zeigt das Datum und die Uhrzeit an, zu der die Informationen im Diagramm zuletzt aktualisiert wurden.
     - **Geschätzte/Ist-Zeit** - Wenn in Ihrem System Arbeitsstandards festgelegt sind, legen Sie diese Option auf *Ja* fest, um die kumulierten geschätzten Kommissionierzeiten oben in jeder Spalte des Diagramms anzuzeigen. Wenn Sie keine Arbeitsstandards verwenden, ist diese Option nicht verfügbar.
 
-    ![Beispielvisualisierung](media/work-viz-chart.png "Beispiel-Visualisierung")
+    ![Beispielvisualisierung.](media/work-viz-chart.png "Beispiel-Visualisierung")
 
 1. Wählen Sie einen beliebigen Balken im Diagramm aus, um die zugehörigen Details zur Arbeitszeile anzuzeigen.
 
-    ![Arbeitspositionsdetails](media/work-viz-work-details.png "Arbeitspositionsdetails")
+    ![Arbeitspositionsdetails.](media/work-viz-work-details.png "Arbeitspositionsdetails")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Beispiel: Visualisierung der ausgehenden Arbeitsauslastung für Zonen
 
@@ -92,7 +92,7 @@ Für dieses Beispiel möchten Sie eine Visualisierung festlegen, die Arbeitszeil
 
 Die folgende Abbildung zeigt ein Beispiel für das resultierende Diagramm.
 
-![Visualisierung von Zone vs. Arbeitsstatus](media/work-viz-chart.png "Visualisierung von Zone vs. Arbeitsstatus")
+![Visualisierung von Zone vs. Arbeitsstatus.](media/work-viz-chart.png "Visualisierung von Zone vs. Arbeitsstatus")
 
 Dieses Diagramm zeigt zwei Zonen mit den Namen **FLOOR** und **BULK**, sowie eine Zone mit dem Namen **Blank**. Die Zone **Leer** repräsentiert alle Arbeitszeilen, die nicht Mitglied einer Zone sind. Das Diagramm zeigt immer alle nicht zugehörigen gefilterten Daten als **Leerzeichen** an, um eine möglichst gute Sichtbarkeit zu gewährleisten. In der Zone **FLOOR** zeigt das Diagramm drei geschlossene Zeilen und vier offene Zeilen. In der Zone **BULK** zeigt das Diagramm vier geschlossene Linien, eine offene Linie und 24 gelöschte Linien. Schließlich zeigt das Diagramm acht geschlossene Zeilen, die zu keiner Zone gehören und daher als **Leer** aufgeführt sind.
 

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b112bb453e0840120c63038bf8d6897fbf5ff288
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 637d8d211f59711aafe9357dcd48d48f861f722d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798752"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353107"
 ---
 # <a name="navigation-menu-module"></a>Navigationsmenümodul
 
@@ -33,7 +33,7 @@ Der Hauptzweck von Navigationsmenümodulen besteht darin, Website-Benutzern das 
 Das Navigationsmenümodul kann dem Header-Modul einer Seite hinzugefügt werden. Im Fabrikam-Design werden im Navigationsmenü standardmäßig zwei Ebenen angezeigt. Im Starter-Design werden im Navigationsmenü standardmäßig drei Ebenen angezeigt. Um die Anzahl der Ebenen zu ändern, ist eine Ansichtserweiterung für das Design erforderlich.
 
 Die folgende Abbildung zeigt ein Beispiel für ein Navigationsmenü für die Fabrikam-Website mit zwei Ebenen der Kategoriehierarchie und einigen statischen Menüelementen.
-![Beispiel eines Navigationsmenümoduls](./media/ecommerce-header.png)
+![Beispiel eines Navigationsmenümoduls.](./media/ecommerce-header.png)
 
 ## <a name="navigation-menu-module-properties"></a>Eigenschaften des Navigationsmenümoduls
 
@@ -50,7 +50,7 @@ Die folgende Abbildung zeigt ein Beispiel für ein Navigationsmenü für die Fab
 | Stamm-Menü | Zeichenfolge | Diese Eigenschaft kann verwendet werden, um Text für einen benutzerdefinierten Stamm zu definieren, wenn die **Stamm-Menü anzeigen** Eigenschaft ist auf **Wahr** festgelegt ist. |
 
 Die folgende Abbildung zeigt ein Beispiel für ein Kategoriebild, das im Navigationsmenü für die Fabrikam-Website angezeigt wird.
-![Beispiel eines Navigationsmoduls mit Kategoriebildern](./media/ecommerce-categoryimages.PNG)
+![Beispiel eines Navigationsmoduls mit Kategoriebildern.](./media/ecommerce-categoryimages.PNG)
 
 ## <a name="add-a-navigation-menu-module-to-a-header-module"></a>Hinzufügen eines Header-Moduls zu einem Navigationsmenümodul
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: e5fd7a9a9703f9ab6802def0aac096e29aa04f1a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1235f8fa64fbc87a4c22f4dcf0e9ddd4b4565b76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831385"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359762"
 ---
 # <a name="location-license-plate-positioning"></a>Standortkennzeichenpositionierung
 
@@ -88,7 +88,7 @@ Die Funktion muss im Lagerplatzprofil für jeden Lagerplatz aktiviert sein, an d
 1. Während **Kennzeichen** noch ausgewählt ist, wählen Sie **Tabellenverknüpfung hinzufügen** aus.
 1. Wählen Sie in der Liste der angezeigten Tabellen in der Spalte **Beziehung** die Option **Standortkennzeichenpositionierung (Kennzeichen)** aus. Wählen Sie dann **Auswählen** aus, um **Standortkennzeichenpositionierung** zur Tabellenverknüpfung **Lagerungsdimensionen** hinzuzufügen.
 
-    ![Tabellenverknüpfungen](media/LpTableJoin.png "Tabellenverknüpfungen")
+    ![Tabellenverknüpfungen.](media/LpTableJoin.png "Tabellenverknüpfungen")
 
 1. Wählen Sie **OK** aus, um die aktualisierten verknüpften Tabellen zu bestätigen und den Abfrageeditor zu schließen.
 1. Wählen Sie im Inforegister **Lagerplatzrichtlinienaktivitäten** erneut die Option **Abfrage bearbeiten** aus, um den Abfrageeditor erneut zu öffnen.
@@ -100,7 +100,7 @@ Die Funktion muss im Lagerplatzprofil für jeden Lagerplatz aktiviert sein, an d
     - **Feld:** *LP-Position*
     - **Kriterien:** *1*
 
-    ![Neuer Bereich](media/LpPositionCriteria.png "Neuer Bereich")
+    ![Neuer Bereich.](media/LpPositionCriteria.png "Neuer Bereich")
 
 1. Wählen Sie **OK** aus, um Ihre Änderungen zu bestätigen und den Abfrageeditor zu schließen.
 
@@ -275,7 +275,7 @@ Nun, da die Funktion *Standortkennzeichenpositionierung* eingerichtet und der La
 1. Wählen Sie auf der Seite **Arbeits-/Kennzeichen-ID scannen** das Feld **ID** aus, und geben Sie dann die Arbeits-ID aus der Verkaufsposition ein.
 1. Beachten Sie, dass Sie bei der Kommissionierung angewiesen werden, den Artikel *A0002* vom Lagerplatz *01A01R1S2B* zu kommissionieren. Sie erhalten diese Anweisung, weil sich Artikel *A0002* auf einem Kennzeichen befindet, das in Position *1* an diesem Lagerplatz ist.
 
-    ![Lagerplatz Position 1](media/LocationLicensePlatePositioning.png "Lagerplatz Position 1")
+    ![Lagerplatz Position 1.](media/LocationLicensePlatePositioning.png "Lagerplatz Position 1")
 
 1. Geben Sie die Kennzeichen-ID ein, die Sie für den Lagerplatz erstellt haben, und befolgen Sie die Anweisungen, um den Auftrag auszuwählen.
 

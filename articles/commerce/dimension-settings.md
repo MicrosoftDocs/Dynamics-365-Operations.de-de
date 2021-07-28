@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b901622bbfc8d6b3066879f6456a4ab618ca4076
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: d6854c11822e07ff06426b7a35eac86cdc0e9b06
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117225"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356901"
 ---
 # <a name="apply-display-settings-for-product-dimensions"></a>Wenden Sie Anzeigeeinstellungen für Produktabmessungen an
 
@@ -33,7 +33,7 @@ Dynamics 365 Commerce unterstützt die Verwendung von Größe, Stil und Farbabme
 
 Im Commerce Website-Generator werden Abmessungsinstellungen unter **Seiteneinstellungen \> Erweiterungen \> Abmessungsverwaltung** definiert. Die folgende Abbildung zeigt ein Beispiel für die Abmessungseinstellungen im Website-Generator.
 
-![Beispiel für Website-Einstellungen im Commerce Website-Generator](./dev-itpro/media/swatch_site_settings.PNG)
+![Beispiel für Website-Einstellungen im Commerce Website-Generator.](./dev-itpro/media/swatch_site_settings.PNG)
 
 Es stehen zwei Abmessungseinstellungen zur Verfügung:
 
@@ -41,13 +41,13 @@ Es stehen zwei Abmessungseinstellungen zur Verfügung:
 
     Die folgende Abbildung zeigt ein Beispiel, in dem ein PDP als E-Commerce Site einschließlich Farb- und Größenfelder angezeigt wird. In diesem Beispiel wird ein Hexadezimalcode für die Farbdimension konfiguriert. Daher werden Farbfelder als Farben angezeigt. Für die Größenabmessung ist jedoch weder ein Hexadezimalcode noch eine Bild-URL konfiguriert. Daher wird Text angezeigt.
 
-    ![Beispiel für die Farbabmessung, die auf einer E-Commerce-Produktdetailseite als Farbfelder angezeigt wird](./dev-itpro/media/swatch_pdp.png)
+    ![Beispiel für die Farbabmessung, die auf einer E-Commerce-Produktdetailseite als Farbfelder angezeigt wird.](./dev-itpro/media/swatch_pdp.png)
 
 - **Abmessungen, die auf der Produktkarte angezeigt werden sollen** – Geben Sie an, welche Abmessungen auf Produktkarten angezeigt werden sollen, die in Listen und auf Listenseiten angezeigt werden. Bevor eine Abmessung auf einer Produktkarte angezeigt werden kann, muss diese Einstellung für diese Abmessung aktiviert werden. Die Einstellung **Abmessungen, die als Bild angezeigt werden sollen** sollte auch aktiviert sein. Das Farbfeldauswahlverhalten auf Produktkarten ist für die Farbabmessung optimiert. Für andere Dimensionen ist möglicherweise eine Ansichtserweiterung erforderlich, um das Farbfeldauswahlverhalten anzupassen.
 
     Die folgende Abbildung zeigt ein Beispiel, in dem eine Listenseite auf einer E-Commerce-Website Produktkarten mit Farbfeldern enthält.
 
-    ![Beispiel für die Farbabmessung, die auf einer E-Commerce-Produktlistenseite als Farbfelder angezeigt wird](./dev-itpro/media/swatch_searchresults.PNG)
+    ![Beispiel für die Farbabmessung, die auf einer E-Commerce-Produktlistenseite als Farbfelder angezeigt wird.](./dev-itpro/media/swatch_searchresults.PNG)
 
 Informationen zum Konfigurieren der Produktabmessungen, sodass sie auf den Websiteseiten als Farbfelder angezeigt werden, finden Sie unter [Konfigurieren Sie Produktdimensionswerte so, dass sie als Farbfelder angezeigt werden](./dev-itpro/dimensions-swatch.md).
 

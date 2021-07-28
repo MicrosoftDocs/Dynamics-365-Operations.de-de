@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: InventParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2094
+ms.custom:
+- "2094"
+- intro-internal
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40d443e52a2b781a40e2db1dbccd2351405ffff1
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0a818173d902e846bc145b920003c73bc78b49f0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909742"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359628"
 ---
 # <a name="inventory-management-overview"></a>Bestandsverwaltung – Übersicht
 
@@ -40,11 +42,11 @@ Sie können mit Bestandsverwaltung folgende Aufgaben durchführen:
 Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, die vom Framework des Modul "Bestandsverwaltung" bestehen. Klicken Sie auf die Lernkarte unten, um sie zu erweitern. Diese Lernkarte hilft Ihnen anzufangen.
 
 
-[![Bestandslernkarte](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
+[![Bestandslernkarte.](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
+### <a name="whats-new-and-in-development"></a>Neuerungen und Entwicklungen
 Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neue Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden.
 
 ### <a name="inventory-accounting"></a>Bestandsbuchhaltung 

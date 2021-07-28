@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7ff6d8ee7e526e45975cfa500b5e6d6079054dc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f20b5c36b45fc0d242edb4e5305a4195d6dfbe94
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800686"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351224"
 ---
 # <a name="add-a-channel-to-an-organizational-hierarchy"></a>Einen Kanal zu einer Organisationshierarchie hinzufügen
 
@@ -44,7 +44,7 @@ Gehen Sie folgendermaßen vor, um eine Hierarchie auszuwählen.
 
 Das folgende Bild zeigt Details zur Organisationshierarchie für die ausgewählte Hierarchie.
 
-![Details zur Organisationshierarchie für die ausgewählte Hierarchie](media/channel-add-to-org-hierarchy-1.png)
+![Details zur Organisationshierarchie für die ausgewählte Hierarchie.](media/channel-add-to-org-hierarchy-1.png)
 
 ## <a name="add-a-channel-to-a-hierachy-node"></a>Einen Kanal zu einem Hierarchieknoten hinzufügen
 
@@ -58,17 +58,17 @@ Gehen Sie folgendermaßen vor, um einen Kanal zu einem Hierarchieknoten hinzuzuf
 
 Das folgende Bild zeigt, wie Sie einen Kanal auswählen, um ihn einem Hierarchieknoten hinzuzufügen.
 
-![Einen Kanal auswählen, um ihn einem Hierarchieknoten hinzuzufügen](media/channel-add-to-org-hierarchy-2.png)
+![Einen Kanal auswählen, um ihn einem Hierarchieknoten hinzuzufügen.](media/channel-add-to-org-hierarchy-2.png)
 
 Das folgende Bild zeigt eine Hierarchie mit verschiedenen hinzugefügten Kanälen.
 
-![Eine Hierarchie mit verschiedenen hinzugefügten Kanälen](media/channel-add-to-org-hierarchy-3.png)
+![Eine Hierarchie mit verschiedenen hinzugefügten Kanälen.](media/channel-add-to-org-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Kanalübersicht](channels-overview.md)
+[Übersicht über Kanäle](channels-overview.md)
 
-[Voraussetzungen der Kanaleinrichtung](channels-prerequisites.md)
+[Kanaleinstellungen – Voraussetzungen](channels-prerequisites.md)
 
 [Organisationen und Organisationshierarchien – Übersicht](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 

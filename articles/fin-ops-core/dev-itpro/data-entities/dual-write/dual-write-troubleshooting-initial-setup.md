@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9ffb1378eccf175fbb9bd84228f91ba606125a63
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753989"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350835"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Probleme bei der anfänglichen Einrichtung behandeln
 
@@ -42,7 +42,7 @@ Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegrat
 
 Fehler auf der Seite **Einrichtungs-Link für Dataverse** werden normalerweise durch unvollständige Setup- oder Berechtigungsprobleme verursacht. Stellen Sie sicher, dass die gesamte Integritätsprüfung die Seite **Einrichtungs-Link zu Dataverse** wie in der folgenden Abbildung gezeigt. Sie können Duales Schreiben nur verknüpfen, wenn die gesamte Integritätsprüfung bestanden wurde.
 
-![Erfolgreiche Integritätsprüfung](media/health_check.png)
+![Erfolgreiche Integritätsprüfung.](media/health_check.png)
 
 Sie müssen Azure AD Mandantenadministrator-Anmeldeinformationen haben, um Finance and Operations und Dataverse Umgebungen zu verknüpfen. Nachdem Sie die Umgebungen verknüpft haben, können sich Benutzer mit ihren Kontoanmeldeinformationen anmelden und eine vorhandene Tabellenzuordnung aktualisieren.
 
@@ -77,7 +77,7 @@ Um sicherzustellen, dass Duales Schreiben ordnungsgemäß funktioniert, werden d
 4. Wählen Sie die Firma aus, die bei der Konfiguration von Dualem Schreiben verknüpft war.
 5. Stellen Sie sicher, dass die Spalte **Standardbesitzerteam** einen Wert hat. In der folgenden Abbildung ist die Spalte **Standardbesitzerteam** auf **USMF – Duales Schreiben** festgelegt.
 
-    ![Überprüfen des Standardbesitzerteams](media/default_owning_team.png)
+    ![Überprüfen des Standardbesitzerteams.](media/default_owning_team.png)
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Finden Sie das Limit für die Anzahl der juristischen Tabellen oder Unternehmen, die für duales Schreiben verknüpft werden können
 

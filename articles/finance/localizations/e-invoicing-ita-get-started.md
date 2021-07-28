@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 8bbb78f0b20ec12fe59dfb3c656b3177b2464004
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894776"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356076"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Erste Schritte mit der elektronischen Rechnungsstellung für Italien
 
@@ -59,7 +61,7 @@ Während der RCS-Einrichtung führen Sie folgende Aufgaben aus:
 
 4. Wählen Sie die Funktion **Elektronische Rechnungen exportieren (IT)** aus und wählen Sie dann **Importieren** aus.
 
-![Importieren der Funktion „Elektronische Rechnungen exportieren (IT)“](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
+![Importieren der Funktion „Elektronische Rechnungen exportieren (IT)“.](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
 
 Wenn Sie die Funtion **Elektronische Rechnungen exportieren (IT)** aus dem globalen Repository importieren, werden auch alle Einstellungen importiert, die in den nächsten Abschnitten beschrieben werden.
 
@@ -67,13 +69,13 @@ Wenn Sie die Funtion **Elektronische Rechnungen exportieren (IT)** aus dem globa
 
 1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Versionen** die Option **Neu** aus. 
 
-    ![Hinzufügen einer neuen Version der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
+    ![Hinzufügen einer neuen Version der Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
 
     Als Nächstes konfigurieren Sie die EB-Formate (Elektronische Berichterstellung), die der Funktion für die elektronische Rechnungsstellung zugeordnet sind.
 
 2. Wählen Sie auf der Registerkarte **Konfigurationen** die Option **Hinzufügen** aus, um die Konfigurationsversionen zu verwalten.
 
-    ![Verwalten der Konfigurationsversionen der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
+    ![Verwalten der Konfigurationsversionen der Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
 
     In diesem Schritt fügen Sie die EB-Formate verschiedener Dateien hinzu, die zum Exportieren elektronischer Rechnungen in Italien verwendet werden, und konfigurieren sie. Verwenden Sie in Italien für elektronische Rechnungen im FatturaPA-Format entweder die folgenden Standardkonfigurationen oder die tatsächlich angepassten Konfigurationen, die Sie für die elektronische Rechnungsstellung verwenden:
 
@@ -85,17 +87,17 @@ Wenn Sie die Funtion **Elektronische Rechnungen exportieren (IT)** aus dem globa
 3. Wählen Sie eine bestimmte Dateikonfiguration im ER-Format aus.
 4. Wählen Sie **Bearbeiten** oder **Anzeigen** aus, um die Seite **Formatdesigner** zu öffnen.
 
-    ![Öffnen der Seite „Formatdesigner“](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
+    ![Öffnen der Seite „Formatdesigner“.](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
 
 5. Verwenden Sie die Seite **Formatdesigner**, um die EB-Formatkonfigurationen für Dateien zu bearbeiten und anzuzeigen.
 
-    ![Formatdesignerseite](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
+    ![Formatdesignerseite.](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Verwalten der Einrichtungen der Funktion für die elektronische Rechnungsstellung
 
 - Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Einrichtungen** entweder **Hinzufügen**, **Löschen** oder **Bearbeiten** aus, um die Einrichtungen der Funktion für die elektronische Rechnungsstellung zu verwalten.
 
-![Verwalten der Einrichtungen der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
+![Verwalten der Einrichtungen der Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
 In diesem Schritt konfigurieren Sie die Ereignisse, die für elektronische Rechnungen gelten, einschließlich der Generierung der XML-Ausgabedateien im Format **FatturaPA** und digitaler Signaturen (falls erforderlich).
 
@@ -105,20 +107,20 @@ In diesem Schritt konfigurieren Sie die Ereignisse, die für elektronische Rechn
 2. Wählen Sie **Bearbeiten** aus.
 3. Wählen Sie auf der Seite **Einrichtung der Funktionsversion** die Registerkarte **Aktionen** aus, um die Liste der Aktionen zu verwalten. Aktionen definieren eine Liste von Vorgängen, die nacheinander ausgeführt werden müssen, um die vollständige Ausführung des Ereignisses zu erreichen.
 
-    ![Registerkarte „Aktionen“](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
+    ![Registerkarte „Aktivitäten“.](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
 
     | Aktivitätskennung | Aktivitätsname        | Aktivitätsbeschreibung                                     |
     |-----------|--------------------|--------------------------------------------------------|
-    | 1         | Umwandeln des Dokuments | Erstellen Sie die XML-Datei der elektronischen Rechnung im Format **FatturaPA**. |
+    | 1         | Dokument umwandeln | Erstellen Sie die XML-Datei der elektronischen Rechnung im Format **FatturaPA**. |
     | 2         | Dokument signieren      | Wenden Sie die digitale Signatur auf die XML-Datei an.             |
 
 4. Wählen Sie die Registerkarte **Anwendbarkeitsregeln** aus, um die Anwendbarkeitsregeln anzuzeigen und zu verwalten. Anwendbarkeitsregeln definieren den Kontext, in dem die Aktion ausgeführt wird.
 
-    ![Registerkarte „Anwendbarkeitsregeln“](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
+    ![Registerkarte „Anwendbarkeitsregeln“.](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
 
 5. Wählen Sie die Registerkarte **Variablen** aus, um die Variablen anzuzeigen und zu verwalten.
 
-    ![Registerkarte „Variablen“](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
+    ![Registerkarte „Variablen“.](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
 
 6. Definieren Sie die öffentlichen Variablen, die zum Ausführen der Aktionen erforderlich sind.
 
@@ -133,7 +135,7 @@ Die Schritte und Einstellungen, die zum Konfigurieren der Funktionseinrichtung *
 3. Wählen Sie im Feld **Gültig ab** das Datum aus, an dem die Umgebung wirksam werden soll.
 4. Wählen Sie **Aktivieren** aus. 
 
-![Aktivieren der Umgebung für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
+![Aktivieren der Umgebung für die elektronische Rechnungsstellung.](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
 
 ## <a name="publish-the-e-invoicing-feature"></a>Veröffentlichen der Funktion für die elektronische Rechnungsstellung
 
@@ -142,14 +144,14 @@ Sie können die Funktion für die elektronische Rechnungsstellung veröffentlich
 ### <a name="change-the-version-status-to-completed"></a>Ändern des Versionsstatus in „Abgeschlossen“
 
 1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Versionen** die Version der Funktion für die elektronische Rechnungsstellung mit dem Status **Entwurf** aus.
-2. Wählen Sie **Status ändern \>Abschließen** aus. 
+2. Wählen Sie **Status ändern \> Abschließen** aus. 
 
 ### <a name="change-the-version-status-to-published"></a>Ändern des Versionsstatus in „Veröffentlicht“ 
 
 1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Versionen** die Version der Funktion für die elektronische Rechnungsstellung mit dem Status **Abgeschlossen** aus.
 2. Wählen Sie **Status ändern \> Veröffentlichen** aus.
 
-![Ändern des Status der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
+![Ändern des Status der Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
 ## <a name="set-up-electronic-invoicing-integration-in-finance"></a>Einrichten der Integration für die elektronische Rechnungsstellung in Finance
 
@@ -170,7 +172,7 @@ Während der Einrichtung von Finance führen Sie folgende Aufgaben aus:
 1. Navigieren Sie zu **Organisationsverwaltung \> Einrichtung \> Parameter elektronischer Dokumente**.
 2. Aktivieren Sie auf der Registerkarte **Funktionen** das Kontrollkästchen **Aktivieren** in der Zeile für Funktionsreferenz **IT00036**.
 
-![Aktivieren der FatturaPA-Funktion](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
+![Aktivieren der FatturaPA-Funktion.](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
 
 #### <a name="configure-electronic-documents"></a>Konfigurieren elektronischer Dokumente
 
@@ -185,7 +187,7 @@ Während der Einrichtung von Finance führen Sie folgende Aufgaben aus:
     - Wählen Sie für **Debitorenrechnungserfassung** die Option **Kontext Debitorenrechnung** aus.
     - Wählen Sie für **Projektrechnung** die Option **Kontext Projektrechnung** aus.
 
-![Einrichten von Antworttypen](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
+![Einrichten von Antworttypen.](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
 
 ## <a name="electronic-invoice-processing"></a>Verarbeitung der elektronischen Rechnung
 
@@ -207,13 +209,13 @@ Sie können die Dokumente manuell übermitteln, basierend auf Ihrer Nachfrage na
 2. Legen Sie für die erste Übermittlung irgendeines Dokuments die Option **Dokumente erneut übermitteln** auf **Nein** fest. Wenn Sie ein Dokument erneut über den Service übermitteln müssen, legen Sie diese Option auf **Ja** fest.
 3. Wählen Sie auf dem Inforegister **Einzuschließende Datensätze** die Option **Filtern** aus, um das Dialogfeld **Anfrage** zu öffnen, in dem Sie eine Abfrage erstellen können, um Dokumente für die Übermittlung auszuwählen.
 
-![Dialogfeld „Elektronische Dokumente übermitteln“](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
+![Dialogfeld „Elektronische Dokumente übermitteln“.](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
 
 #### <a name="filter-query"></a>Filterabfrage
 
 1. Konfigurieren Sie im Dialogfeld **Anfrage** die Filterbedingungen für Verkaufs- und Projektrechnungen oder lassen Sie die Bedingungen leer, um alle nicht übermittelten Rechnungen einzuschließen.
 
-    ![Einrichten von Filterkriterien für Übermittlungen](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
+    ![Einrichten von Filterkriterien für Übermittlungen.](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
 
 2. Wählen Sie **OK** aus, um das Dialogfeld **Anfrage** zu schließen.
 3. Wählen Sie **OK** aus, um die ausgewählten Dokumente zu übermitteln.
@@ -227,13 +229,13 @@ Sie können die Übermittlungsprotokolle für alle übermittelten Dokumente anze
 1. Navigieren Sie zu **Organisationsverwaltung \> Periodisch \> Elektronische Dokumente \> Übermittlungsprotokoll für elektronische Dokumente**.
 2. Wählen Sie im Feld **Dokumenttyp** entweder **Debitorenrechnungserfassung** oder **Projektrechnung** aus, um nach den erforderlichen elektronischen Dokumenten zu filtern.
 
-    ![Auswählen eines Dokumenttyps, um die Übermittlungsprotokolle anzuzeigen](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
+    ![Auswählen eines Dokumenttyps, um die Übermittlungsprotokolle anzuzeigen.](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
 
     Der Wert, der in der Spalte **Übermittlungsstatus** angezeigt wird, gibt den Status des Übermittlungsprozesses an. Er zeigt an, ob der Prozess wie konfiguriert ausgeführt wurde und ob zusätzliche Aktionen erforderlich sind.
 
 3. Wählen Sie im Aktivitätsbereich die Option **Anfragen \> Übermittlungsdetails** aus, um die Details der Ausführungsprotokolle für die Übermittlung anzuzeigen.
 
-    ![Anzeigen der Details des Übermittlungsprotokolls](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
+    ![Anzeigen der Details des Übermittlungsprotokolls.](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
 
 4. Auf dem Inforegister **Verarbeitungsaktivitäten** können Sie das Ausführungsprotokoll für die Aktionen anzeigen, die in der in RCS eingerichteten Funktionsversion konfiguriert sind. Die Spalte **Status** zeigt an, ob die Aktion erfolgreich ausgeführt wurde.
 5. Auf dem Inforegister **Aktionsdateien** können Sie die Zwischendateien anzeigen, die während der Ausführung der Aktionen generiert wurden. Sie können **Anzeigen** auswählen, um die ausgegebene-XML-Datei im Format **FatturaPA** herunterzuladen und ihren Inhalt anzuzeigen.

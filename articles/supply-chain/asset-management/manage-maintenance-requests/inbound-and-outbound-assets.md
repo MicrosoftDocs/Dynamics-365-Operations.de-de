@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1a2bac914330058400a7e4d7d355bd4a00a4522f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86d85d280b32834c36691535a019ef6d5141bf93
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816795"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356020"
 ---
 # <a name="inbound-and-outbound-assets"></a>Ein- und ausgehende Anlagen
 
@@ -42,7 +42,7 @@ Die Einrichtung von Asset Management bestimmt, ob Sie mit ein- und ausgehenden A
 3. Wählen Sie **Wartungsanforderungsstatus aktualisieren** aus.
 4. Wählen Sie **Eingehend** aus (oder einen anderen Lebenszyklusstatus, den Sie für eingehende Anlagen erstellt haben), und wählen Sie anschließend **OK**.
 
-![Erfassen von Anlagen als eingehend](media/07-manage-maintenance-requests.png)
+![Erfassen von Anlagen als eingehend.](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Erfassen von eingehenden Anlagen als empfangen
 
@@ -51,7 +51,7 @@ Die Einrichtung von Asset Management bestimmt, ob Sie mit ein- und ausgehenden A
 3. Wählen Sie **Anlagen entgegennehmen** aus.
 4. Geben Sie im Feld **Eingegangen** das Datum und die Uhrzeit ein. Wählen Sie dann **OK** aus. Der Datensatz wird von der Listenseite **Eingehende Anlagen** entfernt.
 
-![Erfassen von eingehenden Anlagen als empfangen](media/08-manage-maintenance-requests.png)
+![Erfassen von eingehenden Anlagen als empfangen.](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Erfassen von Anlagen als ausgehend
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097258"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356511"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Urlaubsanträge in Teams verwalten
 
@@ -61,7 +61,7 @@ Sie können den Bot bitten, die folgenden Aktionen durchzuführen:
 
 - Urlaubsanforderung für Sie starten Senden Sie beispielsweise eine Nachricht mit der Aufschrift Nehmen Sie sich frei oder Ich möchte nächsten Donnerstag und Freitag Urlaub machen, um genauer zu sagen, ob Sie Urlaub für den Urlaubstyp beantragen möchten. 
 
-  ![Starten Sie einen Urlaubsantrag im Teams-Chat](./media/hr-teams-leave-app-initiate.png)
+  ![Starten Sie einen Urlaubsantrag im Teams-Chat.](./media/hr-teams-leave-app-initiate.png)
 
 - Der Chat-Bot wird einen Urlaubsantrag für Sie ausfüllen. Wählen Sie **Abwesenheitsantrag** und bearbeiten Sie die Details für Ihren Antrag.
 
@@ -69,11 +69,11 @@ Sie können den Bot bitten, die folgenden Aktionen durchzuführen:
 
    Wenn Sie einen halbtägigen Urlaub auswählen, während die Urlaubsantragseinheit in Tagen angegeben ist, können Sie angeben, ob Sie eine Freistellung für den ersten halben Tag oder den zweiten halben Tag beantragen möchten, indem Sie die Option **Halbtagesdefinition** aus dem Menü **Mehr Optionen** auswählen.
    
-   ![Halbtagesdefinitionen](./media/HalfDayDefinitions.png)
+   ![Halbtagesdefinitionen.](./media/HalfDayDefinitions.png)
 
 - Wenn Sie mit der Bearbeitung der Details Ihres Urlaubsantrags fertig sind, wählen Sie **Senden**, um ihn zur Genehmigung zu senden.
 
-  ![Urlaubsantrag senden](./media/hr-teams-leave-app-submit.png)
+  ![Urlaubsantrag senden.](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Urlaub in Teams verwalten
 
@@ -93,7 +93,7 @@ Auf der Registerkarte **Arbeitsfreie Zeit** können Sie Folgendes anzeigen:
 
 2. Geben Sie den/die Tag(e) ein, den/die Sie sich frei nehmen möchten, und wählen Sie dann **Hinzufügen** aus.
 
-   ![Human Resources-App für Abwesenheiten in Teams – Arbeitsfreie Zeit hinzufügen](./media/TimeOffHours.png)
+   ![Human Resources-App für Abwesenheiten in Teams – arbeitsfreie Zeit hinzufügen.](./media/TimeOffHours.png)
 
 3. Geben Sie gegebenenfalls einen Ursachencode ein. Geben Sie auch Kommentare ein, und fügen Sie Anhänge hinzu.
 
@@ -123,7 +123,7 @@ Nachdem Sie die Human Resources-App für Teams installiert haben, können Sie Ih
 
 1. Wählen Sie in einem Team oder Chat in Teams die Schaltfläche Human Resources unter dem Chatfenster.
 
-   ![Schaltfläche „Human Resources“ unter dem Chatfenster](./media/hr-teams-leave-app-chat-button.png)
+   ![Schaltfläche „Human Resources“ unter dem Chatfenster.](./media/hr-teams-leave-app-chat-button.png)
 
 2. Wählen Sie die Urlaubsanfrage aus, die Sie teilen möchten. Wenn Sie einen Entwurf für einen Urlaubsantrag freigeben möchten, wählen Sie zuerst **Entwürfe**.
 
@@ -173,11 +173,11 @@ Wenn die Übersetzungen nicht wie erwartet angezeigt werden, stellen Sie sicher,
 
 In Teams sehen Sie sich **App-Sprache** in **Einstellungen** an.
 
-![Teams-Einstellungen](./media/hr-teams-leave-app-settings.png)
+![Teams-Einstellungen.](./media/hr-teams-leave-app-settings.png)
 
 Wählen Sie in Human Resources **Einstellungen** und wählen Sie dann **Benutzeroptionen**. Stellen Sie sicher, dass das Feld **Sprache** mit dem Feld **App-Sprache** in Teams übereinstimmt.
 
-![Human Resources Benutzeroptionen](./media/hr-teams-leave-app-user-options.png)
+![Human Resources-Benutzeroptionen.](./media/hr-teams-leave-app-user-options.png)
 
 Wenn Sie immer noch Übersetzungsprobleme haben, lassen Sie es uns wissen. Informationen finden Sie unter [Unterstützung für Finance and Operations-Apps oder Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 

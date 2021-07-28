@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3f3a02a369cab34b965b2443bb77053377a190e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838129"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353371"
 ---
 # <a name="work-policies"></a>Arbeitsrichtlinien
 
@@ -200,7 +200,7 @@ Die Bestellung ist jetzt eingegangen, aber es sind keine Arbeiten damit verbunde
 
 Im folgenden Beispiel gibt es zwei Produktionsaufträge, *PRD-001* und *PRD-002*. Produktionsauftrag *PRD-001* hat einen Arbeitsgang, der als *Montage* bezeichnet wird, wo Produkt *SC1* an Lagerplatz *001* als fertig gestellt gemeldet ist. Produktionsauftrag *PRD-002* hat einen Arbeitsgang, der als *Anstrich* bezeichnet wird und bei dem Produkt *SC1* von Lagerplatz *001* verbraucht wird. Produktionsauftrag *PRD-002* verbraucht auch Rohmaterial *RM1* von Lagerplatz *001*. Rohmaterial *RM1* wird an Lagerortplatz *BULK-001* gelagert und für Lagerplatz *001* durch Lagerortarbeit für Rohmaterialentnahme entnommen. Die Entnahmearbeit wird generiert, wenn die Produktion *PRD-002* freigegeben wird.
 
-[![Lagerortarbeitsrichtlinien](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Lagerortarbeitsrichtlinien.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 Wenn Sie planen, eine Lagerortarbeitsrichtlinie dieses Szenarios zu konfigurieren, sollten Sie die folgenden Punkte berücksichtigen:
 

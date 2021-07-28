@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 413be634e80b87781444e1c1445c78691f4b4b0b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: d152449b55ab111cf5bac363b38d32c3658a56e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944291"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359410"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>EB-Konfigurationen mit Excel-Vorlagen wiederverwenden, um Berichte im Word-Format zu erstellen
 
@@ -54,14 +54,14 @@ Diese Prozeduren gelten für eine Funktion, die Dynamics 365 for Operations Vers
 5. Wählen Sie **Designer** aus.
 6. Beachten Sie auf der Seite **Format-Designer**, dass der Titel des Stammformatelements angibt, dass derzeit eine Excel-Vorlage verwendet wird.
 
-![Auswählen der vorhandenen Konfiguration](../media/er-design-configuration-word-2016-11-image01.gif)
+![Auswählen der vorhandenen Konfiguration.](../media/er-design-configuration-word-2016-11-image01.gif)
 
 ## <a name="review-the-downloaded-word-template"></a>Überprüfen der heruntergeladenen Word-Vorlage
 
 1. Öffnen Sie in der Word-Desktopanwendung die Vorlagendatei **SampleVendPaymDocReport.docx**, die Sie zuvor heruntergeladen haben.
 2. Stellen Sie sicher, dass diese Vorlage nur das Layout des Dokuments beinhaltet, das Sie als EB-Ausgabe generieren möchten.
 
-![Das Layout der Word-Vorlage in der Desktop-Anwendung](../media/er-design-configuration-word-2016-11-image02.png)
+![Das Layout der Word-Vorlage in der Desktop-Anwendung.](../media/er-design-configuration-word-2016-11-image02.png)
 
 ## <a name="replace-the-excel-template-with-the-word-template-and-add-a-custom-xml-part"></a>Ersetzen Sie die Excel-Vorlage durch die Word-Vorlage, und fügen Sie einen benutzerdefinierten XML-Teil hinzu
 
@@ -84,7 +84,7 @@ Aktuell wird das Excel-Dokument als Vorlage verwendet, um die Ausgabe im OPENXML
 
 9. Beachten Sie, dass der Titel des Stammformatelements angibt, dass derzeit eine Word-Vorlage verwendet wird.
 
-    ![Ersetzen der Excel-Vorlage durch die Word-Vorlage und Hinzufügen eines benutzerdefinierten XML-Teils](../media/er-design-configuration-word-2016-11-image03.gif)
+    ![Ersetzen der Excel-Vorlage durch die Word-Vorlage und Hinzufügen eines benutzerdefinierten XML-Teils.](../media/er-design-configuration-word-2016-11-image03.gif)
 
 10. Auf der Registerkarte **Formate** wählen Sie **Anhänge** aus.
 
@@ -110,7 +110,7 @@ Wenn Sie mit dem Entwurf von Word-Dokumenten als Formulare vertraut sind, die [I
 1. Öffnen Sie in der Word-Desktopanwendung die Vorlagendatei **SampleVendPaymDocReportBounded.docx**.
 2. Stellen Sie sicher, dass diese Vorlage das Layout des Dokuments beinhaltet, das Sie als EB-Ausgabe generieren möchten. Die Inhaltssteuerelemente, die als Platzhalter für Daten verwendet werden, die EB zur Laufzeit in diese Vorlage eingibt, basieren auf den Zuordnungen, die zwischen Elementen des benutzerdefinierten XML-Teils **Bericht** und den Inhaltssteuerelemente des Word-Dokuments konfiguriert werden.
 
-![Vorschau der Word-Vorlage in der Desktop-Anwendung](../media/er-design-configuration-word-2016-11-image04.png)
+![Vorschau der Word-Vorlage in der Desktop-Anwendung.](../media/er-design-configuration-word-2016-11-image04.png)
 
 ## <a name="upload-the-word-template-where-the-custom-xml-part-is-mapped-to-content-controls"></a>Hochladen der Word-Vorlage, in der der benutzerdefinierte XML-Teil Inhaltssteuerelementen zugeordnet ist
 
@@ -144,7 +144,7 @@ Um die Entwurfsversion des bearbeitbaren Formats auszuführen, müssen Sie sie [
 3. Auf der Seite **Kreditorenzahlungen** wählen Sie alle Zeilen im Raster aus.
 4. Wählen Sie **Zahlungsstatus** \> **Keiner** aus.
 
-    ![Zahlrungen zur Verarbeitung auf der Seite „Kreditorenzahlungen“](../media/er-design-configuration-word-2016-11-image05.png)
+    ![Zahlungen zur Verarbeitung auf der Seite „Kreditorenzahlungen“.](../media/er-design-configuration-word-2016-11-image05.png)
 
 5. Wählen Sie im Aktivitätsbereich **Zahlungen generieren** aus.
 6. Führen Sie im angezeigten Dialogfeld die folgenden Schritte aus:
@@ -156,11 +156,11 @@ Um die Entwurfsversion des bearbeitbaren Formats auszuführen, müssen Sie sie [
 7. Wählen Sie im Dialogfeld **Elektronische Berichtsparameter** die Option **OK** aus.
 8. Die erstellte Ausgabe wird im Word-Format dargestellt und enthält die Details der verarbeiteten Zahlungen. Analysieren Sie das generierte Ergebnis.
 
-    ![Generierte Ausgabe im Word-Format](../media/er-design-configuration-word-2016-11-image06.png)
+    ![Generierte Ausgabe im Word-Format.](../media/er-design-configuration-word-2016-11-image06.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Eine neue EB-Konfiguration zum Generieren von Berichten im Word-Format erstellen](../er-design-configuration-word.md)
+- [ER-Konfigurationen zum Generieren von Berichten im Word-Format entwerfen](../er-design-configuration-word.md)
 - [Einbetten von Bildern und Formen in generierten Dokumenten mithilfe von ER](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
 
 

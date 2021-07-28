@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c1cceb15d64215cb8d5c996df792e863d466f87d
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 627883544f387e53920da268fa8d805c0074de47
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053562"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357360"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-App in Teams
 
@@ -28,11 +28,11 @@ ms.locfileid: "6053562"
 
 Mit der Microsoft Dynamics 365 Human Resources-App in Microsoft Teams können Mitarbeiter schnell arbeitsfreie Zeit beantragen und Informationen zu Salden arbeitsfreier Zeiten in Microsoft Teams anzeigen. Mitarbeiter können mit einem Bot interagieren, um Informationen anzufordern. Die Registerkarte **Arbeitsfreie Zeit** enthält detailliertere Informationen. Darüber hinaus können sie Personen Informationen über bevorstehende arbeitsfreie Zeit in Teams und Chats außerhalb der Human Resources-App senden.
 
-![Bot für Abwesenheiten der Human Resources-App in Teams](./media/hr-teams-leave-app-bot.png)
+![Bot für Abwesenheiten der Human Resources-App in Teams.](./media/hr-teams-leave-app-bot.png)
 
-![Human Resources-App für Abwesenheiten in Teams – Registerkarte „Arbeitsfreie Zeit“](./media/hr-teams-leave-app-timeoff-tab.png)
+![Human Resources-App für Abwesenheiten in Teams – Registerkarte „Arbeitsfreie Zeit“.](./media/hr-teams-leave-app-timeoff-tab.png)
 
-![Urlaubsantragskarte in Human Resources](./media/hr-teams-leave-app-chat-card.png)
+![Urlaubsantragskarte in Human Resources.](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>Installieren und einrichten
 
@@ -57,11 +57,11 @@ Wenn Sie möchten, dass Benutzer in der Teams App Benachrichtigungen über Abwes
 
 4. Legen Sie auf der **Allgemeines**-Registerkarte **Benachrichtigungen für Teams-App aktivieren** auf **Ja** fest.
 
-   ![Aktivieren von Teams-App-Benachrichtigungen in Systemparametern](./media/hr-admin-teams-leave-app-enable-notifications.png)
+   ![Aktivieren von Teams-App-Benachrichtigungen in Systemparametern.](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
 5. Um Teams-Benachrichtigungen für alle Benutzer zu aktivieren, wählen Sie in der Eingabeaufforderung **Ja** aus.
 
-   ![Aktivieren von Teams-Benachrichtigungen für alle Benutzer](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+   ![Aktivieren von Teams-Benachrichtigungen für alle Benutzer.](./media/hr-admin-teams-leave-app-notifications-all-users.png)
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Ein- und Ausschalten von Teams-Benachrichtigungen für einzelne Benutzer
 
@@ -77,7 +77,7 @@ Nachdem Sie die Benachrichtigungen für die Dynamics 365 Human Resources Teams A
 
 5. Legen Sie **Benachrichtigungen für die Teams-App aktivieren** auf **Ja** fest, um Benachrichtigungen für den Benutzer zu aktivieren oder auf **Nein**, um Benachrichtigungen für den Benutzer zu deaktivieren.
 
-   ![Aktivieren von Teams-App-Benachrichtigungen auf der Registerkarte „Benutzeroptionen-Workflow“](./media/hr-admin-teams-leave-app-notifications.png)
+   ![Aktivieren von Teams-App-Benachrichtigungen auf der Registerkarte „Benutzeroptionen-Workflow“.](./media/hr-admin-teams-leave-app-notifications.png)
 
 6. Wählen Sie **Speichern** aus.
 

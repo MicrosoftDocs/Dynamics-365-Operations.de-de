@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5a65f1884ea87bbf2519cc94e4c52a40ac1a91bd
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8a6b36314d9d98f971cd1619dd3604f20a3770b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193976"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360519"
 ---
 # <a name="enter-skills"></a>Geben Sie Fähigkeiten ein
 
@@ -45,17 +45,17 @@ Um Fähigkeiten einzugeben, ohne dass eine Genehmigung erforderlich ist, müssen
 
 4. In dem Bereich **Workflow erstellen** wählen Sie **Qualifikationen Arbeitskräfte**.
 
-   [![Wählen Sie Workflow für Arbeitskräfte-Qualifikationen aus](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
+   [![Wählen Sie Workflow für Arbeitskräfte-Qualifikationen aus.](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
 
 5. In dem Dialog **Diese Datei öffnen?** wählen Sie **Öffnen**. Geben Sie Ihre Anmeldeinformationen ein, wenn Sie dazu aufgefordert werden.
 
 6. Wählen Sie im Workflow-Editor das Workflowelement **Qualifikationen genehmigen** und ziehen Sie es auf den Canvas.
 
-   [![Wählen Sie das Workflowelement Qualifikationen genehmigen aus](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
+   [![Wählen Sie das Workflowelement Qualifikationen genehmigen aus.](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
 
 7. Verbinden Sie das Element **Start** mit dem Element **Qualifikationen genehmigen 1** und verbinden Sie dann das Element **Fähigkeiten genehmigen 1** mit dem Element **Ende**. Möglicherweise müssen Sie nach unten scrollen, um das Element **Ende** zu sehen. Sie können es näher an die anderen Elemente ziehen.
 
-   [![Workflow-Elemente verbinden](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
+   [![Workflow-Elemente verbinden.](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
 
 8. Doppelklicken Sie auf das Workflowelement **Qualifikationen 1 genehmigen** und klicken Sie dann mit der rechten Maustaste auf das Element **Schritt 1**. Klicken Sie mit der rechten Maustaste auf das Element **Schritt 1**, und klicken Sie anschließend auf **Eigenschaften**.
 
@@ -65,7 +65,7 @@ Um Fähigkeiten einzugeben, ohne dass eine Genehmigung erforderlich ist, müssen
 
 11. Wählen Sie **Bedingung hinzufügen**. Nach **Wo** wählen Sie **Self-Service-Fähigkeiten der Mitarbeiter** und dann **Mitarbeiter Self-Service-Fähigkeiten.Person**. Nach **ist** wählen Sie **Feld** und dann **Benutzer-zu-Person-Beziehung.Person**.
 
-    [![Bedingung angeben](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
+    [![Bedingung angeben.](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
 
 12. Wählen Sie **Zuweisung** auf der linken Navigationsleiste.
 
@@ -73,7 +73,7 @@ Um Fähigkeiten einzugeben, ohne dass eine Genehmigung erforderlich ist, müssen
 
 14. Auf der Registerkarte **Hierarchieauswahl** im Feld **Hierarchietyp:** wählen Sie **Führungshierarchie** aus.
 
-    [![Geben Sie die Führungshierarchie an](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
+    [![Geben Sie die Führungshierarchie an.](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
 
 15. Wählen Sie **Schließen** und wählen Sie **Workflow** im Canvas Breadcrumb, und wählen Sie dann **Speichern und schließen**.
 

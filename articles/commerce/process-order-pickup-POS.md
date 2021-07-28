@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b5c17a65a54ae88118bc5ecaa25cdadb67861129
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 037c9fb8dfc7aca4535540d92aae3e0ce0f8c638
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802766"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352155"
 ---
 # <a name="process-customer-order-pickups-in-pos"></a>Kundenbestellungsabholung am POS bearbeiten
 
@@ -32,7 +32,7 @@ Wenn Sie ein Ladenbenutzer sind, können Sie die Abholung entweder mit dem Vorga
 
 Wenn die ausgewählte Bestellung oder Bestellpositionen nicht für die Abholung in diesem bestimmten Geschäft konfiguriert sind oder wenn die Bestellung bereits vollständig abgeholt wurde, ist der **Abholen**-Vorgang ist nicht verfügbar.
 
-![Abholvorgang](media/pickupoperation.png)
+![Abholvorgang.](media/pickupoperation.png)
 
 In Microsoft Dynamics 365 Commerce Version 10.0.17 und höher kann die Funktion **Verbesserte Benutzererfahrung bei der Abwicklung der Bestellungsabholung am Point of Sale** über die Funktionsverwaltung in der Commerce-Zentralverwaltung aktiviert werden. Wenn diese Funktion deaktiviert ist, können Benutzer keine Abholmengen auswählen. Standardmäßig ist die volle für die Position bestellte Menge auch die Menge, die abgeholt wird. Diese Erfahrung kann problematisch sein, da Benutzer möglicherweise vergessen, einige Artikel zur Abholung auszuwählen, wenn sie die Abholung durch Auftragserfüllung durchführen.
 
@@ -40,13 +40,13 @@ Die Funktion **Verbesserte Benutzererfahrung bei der Abwicklung der Bestellungsa
 
 Wenn die Funktion **Verbesserte Benutzererfahrung bei der Abwicklung der Bestellungsabholung am Point of Sale** aktiviert ist und Sie wählen den **Abholen**-Vorgang, wird das **Abholen**-Dialogfeld angezeigt. Dort können Sie die Artikel und Mengen auswählen, die abgeholt werden sollen. Standardmäßig gilt jede bestellte Menge mit einem Lagerbestand in einem kommissionierten oder verpackten Zustand als abholfähig. Standardmäßig ist diese Menge als Abholmenge festgelegt. Sie können die eingegebene Menge ändern, vorausgesetzt, die Menge ist nicht 0 (Null) und überschreitet nicht die gesamte offene (d. h. nicht in Rechnung gestellte) Menge für die ausgewählte Position.
 
-![Abholen-Dialogfeld](media/pickupselect.png)
+![Abholen-Dialogfeld.](media/pickupselect.png)
 
 Nachdem Sie die Mengen ausgewählt haben, die abgeholt werden sollen, und dann **Abholen** auswählen, wird die Transaktionsseite angezeigt. Wenn die [Omni-Channel-Zahlungen](omni-channel-payments.md)-Funktion aktiviert ist und vorautorisierte Kreditkartenzahlungen gespeichert sind, müssen Sie die Zahlung anwenden.
 
 Auf der Transaktionsseite berechnet das System die fälligen Beträge, indem es den Gesamtbetrag berechnet, der für die ausgewählten Abholposten fällig ist, und anschließend alle zuvor angewendeten Einzahlungen oder autorisierten Kreditkartenzahlungen abzieht. Sie müssen die Zahlung verarbeiten, um die Abholung abzuschließen. Wenn die [Bildschirmgestaltung](pos-screen-layouts.md) der Transaktionsseite so konfiguriert ist, dass sie den Vorgang **Transaktion abschließen** enthält, wenn kein Betrag fällig ist, können Sie die Transaktion abschließen, ohne eine Zahlungsmethode auszuwählen. Wenn der Vorgang **Transaktion abschließen** nicht verfügbar ist, können Sie den Link **0,00 USD Betrag fällig** im **Summe**-Bereich auswählen, um die Transaktion abzuschließen, ohne eine Zahlungsmethode auswählen zu müssen.
 
-![Transaktionsseite für eine Kundenauftragsabholung](media/pickupcart.png)
+![Transaktionsseite für eine Kundenauftragsabholung.](media/pickupcart.png)
 
 ## <a name="changing-pickup-lines-or-quantities"></a>Abholpositionen oder -mengen ändern
 
@@ -54,7 +54,7 @@ Wenn Sie die Abholmenge ändern müssen, nachdem Sie die Artikel ausgewählt hab
 
 Wenn die **Verbesserte Benutzererfahrung bei der Abwicklung der Bestellungsabholung am Point of Sale**-Funktion aktiviert ist, können Organisationen eine Schaltfläche für den Vorgang **Abholpositionen ändern** dem Bildschirmlayout der Transaktionsseite hinzufügen. Nachdem Sie den Einkaufswagen der Transaktion am POS erstellt und Artikel ausgewählt haben, können Sie **Abholpositionen ändern** auswählen, wenn Sie die Abholartikel ändern müssen, aber nicht die gesamte Transaktion stornieren möchten. In dem **Abholpositionen ändern**-Dialogfeld, das angezeigt wird, können Sie die Abholpositionen und -mengen ändern. Der Einkaufswagen der Transaktion wird dann aktualisiert, um Ihre Änderungen widerzuspiegeln.
 
-![Dialogfeld „Abholartikel ändern“](media/pickupchange.png)
+![Dialogfeld „Abholartikel ändern“.](media/pickupchange.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

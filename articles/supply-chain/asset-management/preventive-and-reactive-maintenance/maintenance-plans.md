@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 435e4c0b7aac8a8dc179ee8e74b985a4c434b7ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839606"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361113"
 ---
 # <a name="maintenance-plans"></a>Wartungspläne
 
@@ -145,23 +145,23 @@ Nachfolgend finden Sie Beispiele für den Aufbau von zeit- und zählerbezogenen 
 
 **Beispiel 1 - Zeitabhängige Wartungsplanposition:** Ein Schmierungsauftrag kann in einem festen Intervall eingerichtet werden, das einmal pro Woche stattfindet. Wählen Sie dazu im Feld **Intervallart** „Wiederholt ab Plandatum“. Die folgende Abbildung zeigt ein Beispiel.
 
-![Ein Serviceauftrag, der in einem festgelegten Intervall eingerichtet und einmal pro Woche ausgeführt wird](media/02-preventive-maintenance.png "Ein Serviceauftrag, der in einem festgelegten Intervall eingerichtet und einmal pro Woche ausgeführt wird")
+![Ein Serviceauftrag, der in einem festgelegten Intervall eingerichtet und einmal pro Woche ausgeführt wird.](media/02-preventive-maintenance.png "Ein Serviceauftrag, der in einem festgelegten Intervall eingerichtet und einmal pro Woche ausgeführt wird")
 
 **Beispiel 2 - zeitbasierte Wartungsplanposition:** Es kann ein Prüfauftrag eingerichtet werden, der etwa einmal pro Woche durchgeführt wird. Wählen Sie dazu im Feld **Intervallart** „Wiederholt ab letztem Arbeitsauftrag“. Die folgende Abbildung zeigt ein Beispiel.
 
-![Ein Prüfauftrag, der ungefähr einmal pro Woche ausgeführt werden soll](media/03-preventive-maintenance.png "Ein Prüfauftrag, der ungefähr einmal pro Woche ausgeführt werden soll")
+![Ein Prüfauftrag, der ungefähr einmal pro Woche ausgeführt werden soll.](media/03-preventive-maintenance.png "Ein Prüfauftrag, der ungefähr einmal pro Woche ausgeführt werden soll")
 
 **Beispiel 3 - Zählerbasierte Wartungsplanzeile:** Die folgende grafische Darstellung zeigt einen Stundenzähler, bei dem nach Ablauf von 250 Stunden jeweils eine neue Wartungszeitplanposition angelegt wird. Der Intervalltyp für diese zählerabhängige Position ist „Wiederholung ab Startdatum“. Das Startdatum ist das Startdatum der zugehörigen Anlagen in der Detailansicht **Alle Anlagendetails** \> Inforegister **Anlagenwartungspläne** \> Feld **Startdatum** oder in der Detailansicht **Funktionaler Standort** \> Inforegister **Wartungspläne** \> Feld **Startdatum**. Dies ist ein Beispiel für einen *präventiven* Wartungsplan, da die Wartungszeitplanposition bei jedem Erreichen des Schwellenwerts (+ 250) automatisch angelegt wird.
 
-![Ein Stundenzähler, der regelmäßig Wartungsplanpositionen erstellt](media/04-preventive-maintenance.png "Ein Stundenzähler, der regelmäßig Wartungsplanpositionen erstellt")
+![Ein Stundenzähler, der regelmäßig Wartungszeitplanpositionen erstellt.](media/04-preventive-maintenance.png "Ein Stundenzähler, der regelmäßig Wartungsplanpositionen erstellt")
 
 **Beispiel 4 - Zählerbasierte Wartungsplanposition:** Die folgende grafische Darstellung zeigt eine Abnahme des Zählwertes, die den Verschleiß von Bremsbelägen misst. Eine Wartungszeitplanposition wird erstellt, wenn eine Zählererfassung unter 20 mm auf dem Bremsbelag angelegt wird. Der Intervalltyp für diese zählerabhängige Position ist „Einmal unterhalb erreicht“ oder „Einmal ab letzten Startdatum“. Dies ist ein Beispiel für einen *reaktiven* Wartungsplan, da die Wartungszeitplanposition erst angelegt wird, wenn ein Maß unter 20 mm registriert wird.
 
-![Eine Abnahme des Zählerwerts zur Messung des Bremsbelagverschleißes](media/05-preventive-maintenance.png "Eine Abnahme des Zählerwerts zur Messung des Bremsbelagverschleißes")
+![Eine Abnahme des Zählerwerts zur Messung des Bremsbelagverschleißes.](media/05-preventive-maintenance.png "Eine Abnahme des Zählerwerts zur Messung des Bremsbelagverschleißes")
 
 **Beispiel 5 - Zählerbasierte Wartungsplanposition:** Die folgende grafische Darstellung zeigt einen Zähler mit einem Schwellenwert von -18° Celsius. Eine Wartungszeitplanposition wird angelegt, wenn eine Zählerregistrierung über -18° Celsius erfolgt. Der Intervalltyp für diese zählerorientierte Position ist „Einmal oberhalb erreicht“. Dies ist ein Beispiel für einen *reaktiven* Wartungsplan, da die Wartungszeitplanposition erst angelegt wird, wenn eine Messung über -18° Celsius registriert wird.
 
-![Ein Zähler mit einem Schwellenwert von –18° Celsius](media/06-preventive-maintenance.png "Ein Zähler mit einem Schwellenwert von –18° Celsius")
+![Ein Zähler mit einem Schwellenwert von -18° Celsius.](media/06-preventive-maintenance.png "Ein Zähler mit einem Schwellenwert von –18° Celsius")
 
 - Wenn Sie eine neue Anlage anlegen und diese Anlage einen Anlagentyp verwendet, der sich auf einen Wartungsplan bezieht, wird der Wartungsplan automatisch in das Inforegister **Alle Objekte \> Anlagenwartungspläne** eingefügt. Außerdem werden in den **Anlagentypstandards** auf dem Inforegister **Wartungspläne** die zugehörigen Wartungspläne automatisch eingefügt.
 - Wenn Sie Anlagentypen oder funktionale Standorttypen in **Wartungsplänen** hinzufügen oder entfernen, wirkt sich diese Änderung nur auf neu angelegte Anlagen aus, nachdem Sie die Änderung vorgenommen haben.
@@ -169,7 +169,7 @@ Nachfolgend finden Sie Beispiele für den Aufbau von zeit- und zählerbezogenen 
 
 Die folgende Abbildung zeigt das Beispiel eines „LKW-Service“-Wartungsplans auf der Seite **Wartungspläne**.
 
-![Ein Beispiel für einen „LKW-Service“-Wartungsplan](media/07-preventive-maintenance.png "Ein Beispiel für einen „LKW-Service“-Wartungsplan")
+![Ein Beispiel für einen „LKW-Service“-Wartungsplan.](media/07-preventive-maintenance.png "Ein Beispiel für einen „LKW-Service“-Wartungsplan")
 
 ## <a name="add-a-maintenance-plan-to-an-asset"></a>Hinzufügen eines Wartungsplans zu einer Anlage
 
@@ -187,7 +187,7 @@ Die folgende Abbildung zeigt das Beispiel eines „LKW-Service“-Wartungsplans 
 
 Die folgende Abbildung zeigt das Beispiel eines Wartungsplans, der auf einer Anlage auf der Seite **Alle Anlagen** eingerichtet wurde.
 
-![Ein Beispiel für Wartungspläne, die für eine Anlage eingerichtet wurden](media/08-preventive-maintenance.png "Ein Beispiel für Wartungspläne, die für eine Anlage eingerichtet wurden")
+![Ein Beispiel für Wartungspläne, die für eine Anlage eingerichtet wurden.](media/08-preventive-maintenance.png "Ein Beispiel für Wartungspläne, die für eine Anlage eingerichtet wurden")
 
 <a id="counter-based-maintenance"></a>
 

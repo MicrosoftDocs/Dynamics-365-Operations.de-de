@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c813adb79ae1b78a052332e077393f125830633f
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 0ad2a86fbc17f107a065330a56da6cdcca69e172
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027721"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352565"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Mehrere B2C-Mandanten in einer Commerce-Umgebung konfigurieren
 
@@ -49,7 +49,7 @@ Wenn jeder Kanal oder jede Website als separates Unternehmen behandelt wird, ist
 
 Die folgende Abbildung zeigt mehrere B2C-Mieter in einer Commerce-Umgebung.
 
-![Mehrere B2C-Mandanten in einer Commerce-Umgebung](media/MultiB2C_In_Environment.png)
+![Mehrere B2C-Mandanten in einer Commerce-Umgebung.](media/MultiB2C_In_Environment.png)
 
 Wenn Sie entscheiden, dass Ihr Unternehmen unterschiedliche B2C-Mandanten pro Kanal in derselben Commerce-Umgebung benötigt, füllen Sie die Verfahren in den folgenden Abschnitten aus, um diese Funktion zu beantragen.
 

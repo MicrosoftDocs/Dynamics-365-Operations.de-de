@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4ee5a074c5c6d2e2144181e39917b1cc42dfc015
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: e3dc83b71300387c8123f5533522c5ead7d86333
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944835"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349183"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Verbessern Sie die Leistung von EB-Lösungen, indem Sie parametrisierte CALCULATED FIELD-Datenquellen hinzufügen
 
@@ -54,9 +54,9 @@ Der erste Schritt besteht darin, die Beispiel-EB-Lösung zu importieren, um eine
 
     1. Wählen Sie im Aktivitätsbereich **Austausch** \> **Aus XML-Datei laden** aus.
     2. Wählen Sie **Durchsuchen** aus, und wählen Sie die entsprechende Datei für die erforderliche EB-Konfiguration im XML-Format auszuwählen.
-    3. Wählen Sie **OK**.
+    3. Wählen Sie **OK** aus.
 
-![Importierte Konfigurationen auf der Seite „Konfigurationen“](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![Importierte Konfigurationen auf der Seite „Konfigurationen“.](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## <a name="review-the-sample-er-solution"></a>Die EB-Beispiellösung überprüfen
 
@@ -76,10 +76,10 @@ Der erste Schritt besteht darin, die Beispiel-EB-Lösung zu importieren, um eine
 
     Die Modellzuordnung in dieser Konfiguration implementiert das Basisdatenmodell für alle EB-Formate, für die dieses Modell erstellt und in Finance ausgeführt wird. Demzufolge wird der Inhalt der **Trans** -Datenquellen für EB-Formate wie abstrakte **Modell**-Datenquellen bereitgestellt.
 
-    ![Trans-Datenquelle auf der Modellzuordnungsdesigner-Seite](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![Trans-Datenquelle auf der Modellzuordnungsdesigner-Seite.](media/er-calculated-field-ds-performance-mapping-1.png)
 
 4. Schließen Sie die Seite **Modellzuordnungsdesigner**.
-5. Schließen Sie die Seite **Modell für Datenquellenzuordnung**.
+5. Schließen Sie die Seite **Zuordnung Modell zu Datenquelle**.
 
 ### <a name="review-format"></a>Überprüfen des Formats
 
@@ -90,7 +90,7 @@ Der erste Schritt besteht darin, die Beispiel-EB-Lösung zu importieren, um eine
 
     Dieses EB-Format dient zum Generieren eines Lieferantentransaktionsberichts im XML-Format.
 
-    ![Formatieren Sie Datenquellen und konfigurierte Bindungen von Formatelementen auf der Seite Format-Designer](media/er-calculated-field-ds-performance-format.png)
+    ![Formatieren Sie Datenquellen und konfigurierte Bindungen von Formatelementen auf der Seite Format-Designer.](media/er-calculated-field-ds-performance-format.png)
 
 5. Seite **Format-Designer** schließen.
 
@@ -103,7 +103,7 @@ Stellen Sie sich vor, dass Sie das Entwerfen der ersten Version der EB-Lösung b
 1. Wählen Sie das Unternehmen **DEMF** aus.
 2. Befolgen Sie die Schritte in [Aktivieren der EB-Leistungsverfolgung](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace), um eine Leistungsverfolgung zu generieren, während ein EB-Format ausgeführt wird.
 
-    ![Benutzerparameter-Dialogfeld](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![Benutzerparameter-Dialogfeld.](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
 ### <a name="run-the-er-format"></a><a id="run-format"></a>Das EB-Format ausführen
 
@@ -124,7 +124,7 @@ Neue Informationen sind jetzt für einige Datenquellelemente der aktuellen Model
 - Tatsächlicher Zeitaufwand für das Abrufen von Daten mithilfe der Datenquelle
 - Die gleiche Zeit, ausgedrückt als Prozentsatz der gesamten Zeit, die für das Ausführen der gesamten Modellzuordnung aufgewendet wurde
 
-![Details zur Ausführungszeit auf der Seite „Model Mapping Designer“](./media/er-calculated-field-ds-performance-mapping-2.png)
+![Details zur Ausführungszeit auf der Seite „Modellzuordnungsdesigner“.](./media/er-calculated-field-ds-performance-mapping-2.png)
 
 Das **Leistungsstatistik**-Raster zeigt, dass die **Trans**-Datenquelle die VendTrans-Tabelle einmal aufruft. Der Wert **\[265\]\[M: 265\]** der **Trans**-Datenquelle gibt an, dass 265 Lieferantentransaktionen aus der Anwendungstabelle abgerufen und an das Datenmodell zurückgegeben wurden.
 
@@ -137,7 +137,7 @@ Das **Leistungsstatistik**-Raster zeigt auch, dass die aktuelle Modellzuordnung 
 
 - Die Lieferantentabelle wird für jede durchlaufene Lieferantentransaktion aufgerufen, obwohl die abgerufenen Transaktionen nur für fünf Lieferanten gebucht wurden. Von den 530 Anrufen sind 525 Duplikate. Die folgende Abbildung zeigt die Nachricht, die Sie über doppelte Aufrufe (Datenbankanforderungen) erhalten.
 
-![Meldung zu doppelten Datenbankanforderungen auf der Seite Modellzuordnungsdesigner](./media/er-calculated-field-ds-performance-mapping-2a.png)
+![Meldung zu doppelten Datenbankanforderungen auf der Seite Modellzuordnungsdesigner.](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
 Beachten Sie, dass mehr als 80 Prozent (ungefähr sechs Sekunden) der Gesamtausführungszeit für die Modellzuordnung (ca. acht Sekunden) für das Abrufen von Werten aus der VendTable-Anwendungstabelle aufgewendet wurden. Dieser Prozentsatz ist zu groß für zwei Attribute von fünf Anbietern im Vergleich zum Informationsvolumen aus der VendTrans-Anwendungstabelle.
 
@@ -170,9 +170,9 @@ Befolgen Sie diese Schritte, um das Caching und eine Datenquelle des Typs **Bere
     1. Erweitern Sie im Bereich **Datenquellentypen** den Eintrag **Allgemein** und wählen Sie **Leerer Container** aus.
     2. Wählen Sie **Stamm hinzufügen** aus.
     3. Geben Sie im Drop-Down-Dialogfeld im Feld **Name** **Box** ein.
-    3. Wählen Sie **OK**.
+    3. Wählen Sie **OK** aus.
 
-    ![Box-Datenquelle auf der Modellzuordnungsdesigner-Seite](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![Box-Datenquelle auf der Seite „Modellzuordnungsdesigner“.](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. Befolgen Sie diese Schritte, um eine parametrisierte Datenquelle des Typs **Berechnetes Feld** hinzuzufügen:
 
@@ -208,7 +208,7 @@ Befolgen Sie diese Schritte, um das Caching und eine Datenquelle des Typs **Bere
 
 9. Wählen Sie **Speichern** aus.
 
-    ![Vend-Datenquelle auf der Modellzuordnungsdesigner-Seite](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![Vend-Datenquelle auf der Seite „Modellzuordnungsdesigner“.](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. Schließen Sie die Seite **Modellzuordnungsdesigner**.
 11. Schließen Sie die Seite **Modellzuordnungen**.
@@ -232,11 +232,11 @@ Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format
 
 Beachten Sie, dass die Regulierungen, die Sie an der Modellzuordnung vorgenommen haben, doppelte Abfragen an eine Datenbank beseitigt haben. Die Anzahl der Aufrufe an Datenbanktabellen und Datenquellen für diese Modellzuordnung ist auch reduziert worden.
 
-![Überwachungsinformationen auf der Modellzuordnungsdesigner-Seite 1](./media/er-calculated-field-ds-performance-mapping-5.png)
+![Überwachungsinformationen auf der Seite „Modellzuordnungsdesigner 1“.](./media/er-calculated-field-ds-performance-mapping-5.png)
 
 Die Gesamtausführungszeit wurde ungefähr 20 Mal reduziert (von ungefähr 8 Sekunden auf ungefähr 400 Millisekunden). Daher wurde die Leistung der gesamten EB-Lösung verbessert.
 
-![Überwachungsinformationen auf der Modellzuordnungsdesigner-Seite 2](./media/er-calculated-field-ds-performance-mapping-5a.png)
+![Überwachungsinformationen auf der Seite „Modellzuordnungsdesigner 2“.](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix-1-download-the-components-of-the-sample-microsoft-er-solution"></a><a name="appendix1"></a>Anhang 1: Laden Sie die Komponenten der Microsoft EB-Beispiellösung herunter
 
