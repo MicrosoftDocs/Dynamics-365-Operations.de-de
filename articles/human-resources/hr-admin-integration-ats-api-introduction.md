@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c043ac9c19a810d1718f0d4907cd5e9d651d778f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 5038a1a1b3fa4c32f54ea87b03f886504e0b004f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055291"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357387"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Einführung der API zur Integration des Bewerber-Tracking-Systems
 
@@ -26,7 +26,7 @@ ms.locfileid: "6055291"
 
 Dieses Thema beschreibt die Dynamics 365 Human Resources-API zur Integration des Bewerber-Tracking-System (ATS). Die Absicht der API ist es, optimierte Integrationen zwischen Dynamics 365 Human Resources und ATSs, die eine Partnerschaft eingehen, zu ermöglichen.
 
-![Flow der ATS-Integration](media/hr-admin-integration-ats-api-introduction-flow.png)
+![Flow der ATS-Integration.](media/hr-admin-integration-ats-api-introduction-flow.png)
 
 Die integrierte Erfahrung beginnt in der Personalabteilung, wenn ein Personalchef einen Personalbeschaffungsantrag erstellt. Wenn die Anfrage aktiviert ist, ruft der ATS die Details für die Anfrage ab, um ein Rekrutierungsprojekt zu erstellen. Anschließend folgt er die Rekrutierungspipeline, um einen Kandidaten für die Position(en) auszuwählen und einzustellen. Schließlich schließt der ATS die umfassende Integration ab, indem er den Datensatz des ausgewählten Kandidaten an die Personalabteilung sendet. Der Kandidatendatensatz kann dann weitere Onboarding-Validierungen und Workflows durchlaufen, um den Mitarbeiterdatensatz zu erstellen.
 
@@ -48,7 +48,7 @@ Weitere allgemeine Informationen zur Microsoft Dataverse-Web-API finden Sie unte
 - [Verwenden der Microsoft Dataverse-Web-API](/powerapps/developer/data-platform/webapi/overview)
 - [Microsoft Dataverse-Entwicklerhandbuch](/powerapps/developer/data-platform)
 
-Die obige Dokumentation enthält detaillierte und Entwickleranleitungen zur Verwendung der Dataverse-Web-API mit der API, z. B.[Authentifizierung verwalten](/powerapps/developer/data-platform/webapi/authenticate-web-api), [Vorgänge durchführen](/powerapps/developer/data-platform/webapi/perform-operations-web-api), [Postman mit der API verwenden](/powerapps/developer/data-platform/webapi/use-postman-web-api) und [Änderungsverfolgung oder Delta-Token verwenden](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems).
+Die obige Dokumentation enthält detaillierte und Entwickleranleitungen zur Verwendung der Dataverse-Web-API mit der API, z. B. [Authentifizierung verwalten](/powerapps/developer/data-platform/webapi/authenticate-web-api), [Vorgänge durchführen](/powerapps/developer/data-platform/webapi/perform-operations-web-api), [Postman mit der API verwenden](/powerapps/developer/data-platform/webapi/use-postman-web-api) und [Änderungsverfolgung oder Delta-Token verwenden](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems).
 
 ### <a name="option-sets"></a>Optionssätze
 
@@ -69,7 +69,7 @@ Das Datenmodell konzentriert sich auf zwei Hauptentitäten:
 
 Das folgende Diagramm veranschaulicht die Beziehungen innerhalb der API. Einige Typen verfügen über Fremdschlüssel für andere bereits vorhandene Entitäten in Human Resources, die hier nicht dargestellt sind. Dieses Dokument enthält Informationen zu Entitäten, die für die Rekrutierung von Integrationsszenarien spezifisch sind. Es gibt jedoch viele andere Entitäten in der Dataverse-Web-API für Dynamics 365 Human Resources, die auch für Ihre Integration relevant sein können. Beispielsweise benötigen Sie möglicherweise auch Details für Mitarbeiter, Stellen, Positionen oder andere Entitäten, die hier nicht definiert sind. Viele dieser Entitäten werden in Fremdschlüsselbeziehungen oder Navigationseigenschaften referenziert.
 
-![Datenmodell von ATS-Integrations-API](media/hr-admin-integration-ats-api-data-model.png)
+![Datenmodell von ATS-Integrations-API.](media/hr-admin-integration-ats-api-data-model.png)
 
 ## <a name="recruiting-request-and-related-entities-and-option-sets"></a>Personalbeschaffungsantrag und zugehörige Entitäten und Optionssätze
 

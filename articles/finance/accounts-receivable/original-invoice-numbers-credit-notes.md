@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8d7f32c5d3d29be8d1d2742c4017c1719cbd47a8
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 798e38d7fea53a13d713734dd0521552974176ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897331"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347833"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Verweise auf Originalrechnungen in Gutschriften
 
@@ -51,7 +51,7 @@ Befolgen Sie diese Schritte, um den Parameter festzulegen, der steuert, ob Verwe
 1. Gehen Sie zu **Debitoren** \> **Einrichtung** \> **Debitorenparameter**.
 2. Auf der **Updates**-Registerkarte auf im Inforegister **Rechnung** stellen Sie die Option **Das Layout für die Fakturierung von Gutschriften auf Verkaufs- und Projektrechnungsberichte anwenden** auf **Ja**.
 
-![Konfigurieren von Debitorenparametern](media/original-invoice-number-in-credit-note.jpg)
+![Konfigurieren von Debitorenparametern.](media/original-invoice-number-in-credit-note.jpg)
 
 ## <a name="define-references-to-original-invoices"></a>Verweise auf Originalrechnungen definieren
 
@@ -65,7 +65,7 @@ Verwenden Sie die folgenden Verfahren, um Verweise auf Originalrechnungen basier
 4. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Rechnung** in der Gruppe **Funktionen** **Fakturierung von Gutschriften** aus.
 5. Geben Sie den Verweis auf die Originalrechnung ein und wählen Sie den Grund für die Korrektur aus.
 
-![Definieren des Verweises für eine Freitextrechnung](media/reference-original-invoice-FTI.jpg)
+![Definieren des Verweises für eine Freitextrechnung.](media/reference-original-invoice-FTI.jpg)
 
 ### <a name="customer-credit-note"></a>Debitorengutschrift
 
@@ -74,7 +74,7 @@ Verwenden Sie die folgenden Verfahren, um Verweise auf Originalrechnungen basier
 3. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Verkaufen** in der Gruppe **Gutschrift** die Option **Gutschrift**.
 4. Geben Sie hier die Ursache für die Korrektur ein. Der Verweis auf die Originalrechnung wird automatisch hergestellt.
 
-![Definieren des Verweises für einen Auftrag](media/reference-original-invoice-SO.jpg)
+![Definieren des Verweises für einen Auftrag.](media/reference-original-invoice-SO.jpg)
 
 ### <a name="project-credit-note"></a>Projektgutschrift
 
@@ -84,13 +84,13 @@ Verwenden Sie die folgenden Verfahren, um Verweise auf Originalrechnungen basier
 4. Wählen Sie **Gutschriftenfakturierung** aus.
 5. Geben Sie hier die Ursache für die Korrektur ein. Der Verweis auf die Originalrechnung wird automatisch hergestellt.
 
-![Definieren des Verweises für eine Projektrechnung](media/reference-original-invoice-project.jpg)
+![Definieren des Verweises für eine Projektrechnung.](media/reference-original-invoice-project.jpg)
 
 ## <a name="printing-credit-notes"></a>Drucken von Gutschriften
 
 Wenn Sie Freitext-, Kunden- und Projektgutschriften drucken, enthalten diese den Verweis auf die Originalrechnung und den Korrekturgrund.
 
-![Gedruckte Gutschrift](media/credit-note-FTI.jpg)
+![Gedruckte Gutschrift.](media/credit-note-FTI.jpg)
 
 > [!NOTE]
 > Stellen Sie, davon ausgehend, dass Verweise auf Originalrechnungen gedruckt werden, sicher, dass die druckbaren Formate der Dokumente korrekt konfiguriert sind.

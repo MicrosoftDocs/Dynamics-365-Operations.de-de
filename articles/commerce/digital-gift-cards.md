@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 212f425dc3603f838ce030d9ed86f2e418bef29a
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 6c4cf4e94e6271843d55b4ca7a0fb3ffaffc9542
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019932"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344394"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitale E-Commerce-Geschenkkarten
 
@@ -34,13 +34,13 @@ Der Kauf digitaler Geschenkkarten wird in der Dynamics 365 Commerce-Version 10.0
 
 Die folgende Abbildung zeigt ein Beispiel für die Produktdetailseite (PDP) für eine digitale Geschenkkarte auf der Fabrikam-E-Commerce-Website.
 
-![Beispiel einer PDP für digitale Geschenkkarten auf der Fabrikam-E-Commerce-Website](./media/GiftcardPDP.PNG)
+![Beispiel einer PDP für digitale Geschenkkarten auf der Fabrikam-E-Commerce-Website.](./media/GiftcardPDP.PNG)
 
 ## <a name="turn-on-the-digital-gift-card-feature-in-commerce-headquarters"></a>Die Funktion für digitale Geschenkkarten in der Commerce-Zentralverwaltung aktivieren
 
 Damit der Kaufflow für digitale Geschenkkarten in Dynamics 365 Commerce funktioniert, muss die Funktion **Kauf einer Geschenkkarte über die E-Commerce-Funktion** in der Commerce-Zentralverwaltung aktiviert sein. Sie finden die Funktion im Arbeitsbereich **Funktionsverwaltung** in der Commerce-Zentralverwaltung, wie in der folgenden Abbildung dargestellt.
 
-![Arbeitsbereich für die Funktionsverwaltung in der Commerce-Zentralverwaltung](./media/Featureflag.PNG)
+![Arbeitsbereich für die Funktionsverwaltung in der Commerce-Zentralverwaltung.](./media/Featureflag.PNG)
 
 ## <a name="configure-a-digital-gift-card-in-commerce-headquarters"></a>Eine digitale Geschenkkarte in der Commerce-Zentralverwaltung konfigurieren
 
@@ -49,16 +49,16 @@ Digitale Geschenkkartenprodukte sollten in der Commerce-Zentralverwaltung konfig
 - Wenn Sie digitale Geschenkkartenprodukte im Dialogfeld **Neues Produkt** konfigurieren, setzen Sie das Feld **Produkttyp** auf **Service**. (Um das Dialogfeld zu öffnen, rufen Sie **Einzelhandel und Handel \> Produkte und Kategorien \> Produkte nach Kategorie** auf, und wählen Sie **Neu** aus.) Produkte des Typs **Service** werden nicht auf verfügbaren Bestand geprüft, bevor ein Auftrag erteilt wird. Weitere Informationen finden Sie unter [Ein neues Produkt erstellen](create-new-product-commerce.md#create-a-new-product).
 - Auf der Registerkarte **Buchung** der Seite **Commerce-Parameter** muss das Feld **Geschenkkartenprodukt** auf **Digitale Geschenkkarte** gesetzt sein, wie in der folgenden Abbildung dargestellt. Wenn es sich bei dem Produkt um eine externe Geschenkkarte handelt, finden Sie weitere Informationen unter [Unterstützung für externe Geschenkkarten](./dev-itpro/gift-card.md).
 
-    ![Geschenkkartenprodukt-Feld in der Commerce-Zentralverwaltung](./media/PostGiftcard.png)
+    ![Geschenkkartenprodukt-Feld in der Commerce-Zentralverwaltung.](./media/PostGiftcard.png)
 
 - Wenn eine Geschenkkarte mehrere vordefinierte Beträge unterstützen muss (z. B. 25, 50 und 100 US-Dollar), sollte die Dimension **Größe** verwendet werden, um diese vordefinierten Beträge einzurichten. Jeder vordefinierte Betrag ist eine Variante. Weitere Informationen finden Sie unter [Produktdimensionen](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
 - Wenn Kunden in der Lage sein müssen, einen benutzerdefinierten Betrag für eine Geschenkkarte zu bestimmen, richten Sie zunächst eine Variante ein, die einen benutzerdefinierten Betrag zulässt. Öffnen Sie anschließend das Produkt über die Seite **Freigegebene Produkte in Kategorie**, und setzen Sie dann im Inforegister **Commerce** das Feld **Preis eingeben** auf **Neuer Preis muss eingegeben werden**, wie in der folgenden Abbildung dargestellt. Diese Einstellung stellt sicher, dass Kunden einen Preis eingeben können, wenn sie nach dem Produkt auf einer PDP suchen.
 
-    ![„Preis eingeben“-Feld in der Commerce-Zentralverwaltung](./media/KeyInPrice.png)
+    ![„Preis eingeben“-Feld in der Commerce-Zentralverwaltung.](./media/KeyInPrice.png)
 
 - Die Lieferart für eine digitale Geschenkkarte muss auf **Elektronisch** eingestellt sein. Wählen Sie auf der Seite **Lieferarten** (**Einzelhandel und Handel \> Kanaleinstellung \> Lieferarten**) die Lieferart **Elektronisch** im Listenbereich aus, und fügen Sie dann das digitale Geschenkkartenprodukt dem Raster im Inforegister **Produkte** hinzu, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Lieferarten einrichten](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
-    ![Digitale Geschenkkartenprodukte auf der „Lieferart“-Seite in der Commerce-Zentralverwaltung](./media/ElectronicMode.PNG)
+    ![Digitale Geschenkkartenprodukte auf der „Lieferart“-Seite in der Commerce-Zentralverwaltung.](./media/ElectronicMode.PNG)
 
 - Vergewissern Sie sich, dass ein Onlinefunktionsprofil erstellt und Ihrem Onlineshop in der Commerce-Zentralverwaltung zugeordnet wurde. Stellen Sie im Funktionsprofil die Option **Aggregierte Produkte** auf **Ja** ein. Diese Einstellung stellt sicher, dass alle Artikel außer Geschenkkarten aggregiert werden. Weitere Informationen finden Sie unter [Ein Onlinefunktionsprofil erstellen](online-functionality-profile.md).
 - Erstellen Sie einen neuen E-Mail-Benachrichtigungstyp auf der Seite **E-Mail-Benachrichtigungsprofile**, und setzen Sie das Feld **E-Mail-Benachrichtigungstyp** auf **Geschenkkarte ausstellen**, um sicherzustellen, dass Kunden eine E-Mail erhalten, nachdem eine Geschenkkarte fakturiert wurde. Weitere Informationen finden Sie unter [Einen E-Mail-Benachrichtigungstyp einrichten](email-notification-profiles.md).

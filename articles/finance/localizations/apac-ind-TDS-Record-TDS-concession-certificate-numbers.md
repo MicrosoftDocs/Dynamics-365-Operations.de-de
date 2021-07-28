@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f543adc8bab5ca224bdb672d6b3c282c2d8531d8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 97fce25ea8c556f001c84f6836a0a270a9f3524f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023256"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358385"
 ---
 # <a name="record-tds-concession-certificate-numbers"></a>Nummern von TDS-Konzessionszertifikaten erfassen
 
@@ -33,7 +33,7 @@ In diesem Thema wird erklärt, wie die für Kreditoren ausgestellte Nummern von 
 2. Wählen Sie im Feld **Steuertyp** **TDS** aus, um Konzessionszertifikate für den Steuertyp „TDS“ zu erfassen.
 3. Wählen Sie auf der Registerkarte **Übersicht** **ALT + N** aus, um eine Position zu erstellen.
 
-    [![Kopfzeile der neuen Position](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
+    [![Kopfzeile der neuen Position.](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
 
 4. Wählen Sie im Feld **Quellensteuercode** den TDS-Steuercode aus, für den die Kreditorenkonzessionszertifikate ausgestellt werden. Im Feld **Quellensteuercodename** wird der Name des TDS-Steuercodes angezeigt.
 5. Legen Sie in den Feldern **Startdatum** und **Enddatum** den Gültigkeitszeitraum für das Konzessionszertifikat fest, das der TDS-Steuercode verwendet, um die TDS für den Kreditor auf Konzessionsbasis zu berechnen.
@@ -50,6 +50,6 @@ In diesem Thema wird erklärt, wie die für Kreditoren ausgestellte Nummern von 
 
 11. Geben Sie im Feld **Zertifikatnummer** die TDS-Konzessionszertifikatsnummer ein.
 
-    [![Inforegister „Zertifikat“](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
+    [![Inforegister „Zertifikat“.](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
 
 12. Schließen Sie die Seite.

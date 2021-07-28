@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f05f5af76aeb037d606d38a368a49d011f0d2bd6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 27a079e0fdc0fe1644e59a454659d77ec0eb416b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825565"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354203"
 ---
 # <a name="warranties-on-assets-and-asset-types"></a>Garantien auf Anlagen und Anlagearten
 
@@ -47,7 +47,7 @@ In diesem Abschnitt wird erläutert, wie Sie im Anlagenmanagement Garantien auf 
     > [!IMPORTANT]
     > Wenn bei einem Arbeitsauftrag im Feld **Gewährleistungsbeginn** ein Datum ausgewählt wird, gilt die Garantie für den Arbeitsauftrag zu diesem Datum. Wenn Sie einen Arbeitsauftrag anlegen, wird das Feld **Garantiebeginn** automatisch auf das Erstellungsdatum gesetzt. Sie können das Datum jedoch so ändern, dass es z.B. dem Startdatum einer Garantievereinbarung entspricht.
     >
-    > ![Arbeitsauftragsseite](media/02-warranty.png)
+    > ![Arbeitsauftragsseite.](media/02-warranty.png)
 
 > [!NOTE]
 > Wenn Sie einen Arbeitsauftrag für eine Anlage anlegen, die unter eine Lieferantengarantie fällt, erhalten Sie eine Benachrichtigung über die Garantievereinbarung, wenn der Arbeitsauftrag ein voraussichtliches Startdatum innerhalb der Garantiezeit hat. Anschließend können Sie den Arbeitsauftrag nach Bedarf stornieren.

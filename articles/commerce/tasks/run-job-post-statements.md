@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 52baa707c36f3468263782dc8ec735e44af88e38
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 422b1f7f8dc99e1c96da9e266cadcdc09e7aac71
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804232"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347465"
 ---
 # <a name="configure-and-run-job-to-post-statements"></a>Konfigurieren und Aktivieren eines Einzelvorgangs, um Auszüge zu buchen
 
@@ -31,9 +31,9 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Konfigurieren und Ausf�
 2. Klicken Sie auf „Aufstellungen in Charge buchen“.
     * Wählen Sie eine Organisationshierarchie und anschließend in der Organisationsknotenstruktur einen einzelnen Shop oder einen Knoten aus. Wählen Sie einen Knoten aus, wenn Sie den Batchauftrag für eine Gruppe von Shops erstellen möchten.  
     * Klicken Sie auf den Pfeil, um die Auswahl hinzuzufügen.  
-3. Klicken Sie auf die Registerkarte „Im Hintergrund ausführen“. ![Im Hintergrund ausführen](../dev-itpro/media/runbackground.png "Im Hintergrund ausführen") 
+3. Klicken Sie auf die Registerkarte „Im Hintergrund ausführen“. ![Im Hintergrund ausführen.](../dev-itpro/media/runbackground.png "Im Hintergrund ausführen") 
 4. Aktivieren oder deaktivieren Sie das Kontrollkästchen ''Stapelverarbeitung".
-![Stapelverarbeitung](../dev-itpro/media/batchprocessing.png "Stapelverarbeitung und Wiederholung") 
+![Stapelverarbeitung.](../dev-itpro/media/batchprocessing.png "Stapelverarbeitung und Wiederholung") 
 5. Klicken Sie auf "Wiederholung".
 6. Geben Sie im Feld "Startdatum" ein Datum ein.
 7. Geben Sie im Startzeit-Feld eine Zeit ein.

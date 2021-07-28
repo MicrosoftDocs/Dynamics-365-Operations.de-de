@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f38b01d94fd2efcce5de210f77124fdc24be6e39
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50ace9a2f8f5fa39dc927e11f0acd707167ef126
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837896"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346225"
 ---
 # <a name="register-consumption"></a>Verbrauch registrieren
 
@@ -54,7 +54,7 @@ In einigen Fällen können Sie einem Arbeitsauftrag Prognosezeile hinzufügen od
 
 Der folgende Screenshot zeigt ein Beispiel für Stunden- und Artikelregistrierungen auf einem Arbeitsauftrag in **Arbeitsauftragserfassungen**.
 
-![Abbildung 1](media/01-consumption.png)
+![Abbildung 1.](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>Teilzeitarbeitszeit auf Arbeitsaufträgen mit mehreren Arbeitsaufträgen
@@ -73,13 +73,13 @@ Wenn ein Arbeitsauftrag mehrere Arbeitsaufträge enthält, können Sie die Arbei
 
 6. Geben Sie in das Feld **Stunden** die Anzahl der zu teilenden Arbeitsstunden ein.
 
-    ![Abbildung 2](media/02-consumption.png)
+    ![Abbildung 2.](media/02-consumption.png)
 
 7. Klicken Sie auf **OK**.
 
 *Beispiel:* Im folgenden Screenshot werden Journalzeilen für einen Arbeitsauftrag mit drei Arbeitsaufträgen angezeigt. Die erste Zeile mit drei Arbeitsstunden wurde aufgeteilt, und für jeden Arbeitsauftrag wird eine Arbeitsstunde registriert. Nachdem die dreistündigen Registrierungszeilen erstellt wurden, entscheiden Sie, was mit der ursprünglichen Stundenregistrierungszeile (der ersten Zeile im Beispiel) geschehen soll. Sie können es so lassen, wie es ist, oder es löschen. 
 
-![Abbildung 3](media/03-consumption.png)
+![Abbildung 3.](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>Finanzielle Dimensionen der Verbrauchserfassung
 

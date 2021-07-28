@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 06b5721c423330b8840bb546bdb144c3189c25bb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c350e6d6bfd4e699c55a4c0a57695b1b718b7167
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795380"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357761"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Empfehlungen zu „Ähnliche Outfits kaufen“ aktivieren
 
@@ -68,7 +68,7 @@ Führen Sie die folgenden Schritte aus, um die Empfehlungsfunktion „Produkte m
 
 Die folgende Abbildung zeigt die Funktion **Produkte mit ähnlichem Aussehen kaufen** auf der Seite **Funktionsverwaltung** in der Commerce-Zentrale.
 
-![Die Funktion „Produkte mit ähnlichem Aussehen kaufen“ auf der Seite Funktionsverwaltung in der Commerce-Zentrale](./media/enableshopsimilarlooks.png)
+![Die Funktion „Produkte mit ähnlichem Aussehen kaufen“ auf der Seite Funktionsverwaltung in der Commerce-Zentralverwaltung.](./media/enableshopsimilarlooks.png)
 
 Nach Abschluss der vorhergehenden Aufgaben werden POS-Terminals automatisch um kontextabhängigen Bereich **Produkte mit ähnlichem Aussehen kaufen** erweitert. Durch die Auswahl **Weitere Details** können Benutzer von POS-Terminals zu einer speziellen Seite „Produkte mit ähnlichem Aussehen kaufen“ weitergeleitet werden, auf der weitere Filter angewendet werden können.
 
@@ -88,7 +88,7 @@ Gehen Sie folgendermaßen vor, um eine Schaltfläche **Produkte mit ähnlichem A
 
 Die folgende Abbildung zeigt das Kontrollkästchen **Links für „Produkte mit ähnlichem Aussehen kaufen“ aktivieren** und die Schaltfläche **Produkte mit ähnlichem Aussehen kaufen** auf einer Beispiel-PDP im Site Builder.
 
-![Das Kontrollkästchen „Link für Produkte mit ähnlichem Aussehen kaufen“ und die Schaltfläche „Ähnliches Aussehen“ kaufen auf einer Beispiel-PDP im Site Builder aktivieren](./media/SSLecomtooling.png)
+![Das Kontrollkästchen „Link für Produkte mit ähnlichem Aussehen kaufen“ und die Schaltfläche „Ähnliches Aussehen“ kaufen auf einer Beispiel-PDP im Site Builder aktivieren.](./media/SSLecomtooling.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

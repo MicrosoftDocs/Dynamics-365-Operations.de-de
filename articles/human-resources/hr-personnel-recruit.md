@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 529f419a4e3e4e8807c6938fd2425ae01ce282f9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: dc883606b832dc75b28f6209b05c0e35a51036b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051808"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359676"
 ---
 # <a name="recruit-job-candidates"></a>Kandidaten für Stellen anwerben
 
@@ -61,13 +61,13 @@ Wenn Ihre Organisation mehrere Standorte hat, können Sie diese hinzufügen, dam
 
 3. Im Feld **Standort für Personalbeschaffungsantrag** geben Sie den Standortnamen ein.
 
-   ![Einen Standort für den Personalbeschaffungsantrag hinzufügen](./media/hr-recruit-0a-add-location.png)
+   ![Einen Standort für den Personalbeschaffungsantrag hinzufügen.](./media/hr-recruit-0a-add-location.png)
 
 4. Geben Sie im Feld **Beschreibung** eine Beschreibung für den Standort ein.
 
 5. Wählen Sie unter **Standort** **Hinzufügen** aus. Geben Sie die Standortadresse ein, wenn das Popout **Neue Adresse** erscheint.
 
-   ![Adresse eingeben](./media/hr-recruit-0b-address.png)
+   ![Adresse eingeben.](./media/hr-recruit-0b-address.png)
 
 6. Geben Sie unter **Kontaktinformation** die Informationen für den Kontakt des Standorts ein.
 
@@ -83,11 +83,11 @@ Manager können Personalbeschaffungsanträge in Human Resources einreichen. Wenn
 
 3. Wählen Sie **Antrag auf Personalbeschaffung**.
 
-   ![Einen Personalbeschaffungsantrag starten](./media/hr-recruit-1-request-to-recruit.png)
+   ![Einen Personalbeschaffungsantrag starten.](./media/hr-recruit-1-request-to-recruit.png)
 
 4. Füllen Sie die Felder **Beschreibung**, **Stelle** und **Voraussichtliches Startdatum** aus.
 
-   ![Die Personalbeschaffungsanträge vervollständigen](./media/hr-recruit-2-request-to-recruit.png)
+   ![Die Personalbeschaffungsanträge vervollständigen.](./media/hr-recruit-2-request-to-recruit.png)
 
 5. Wählen Sie **Fortsetzen** aus. Der Personalbeschaffungsantrag für Ihre Stelle wird angezeigt.
 
@@ -95,7 +95,7 @@ Manager können Personalbeschaffungsanträge in Human Resources einreichen. Wenn
 
 7. Ändern Sie unter **Stelle** alle Informationen nach Bedarf und wählen Sie dann **Details aus Stelle erstellen**.
 
-   ![Details aus Stelle erstellen](./media/hr-recruit-3-create-details-from-job.png)
+   ![Details aus Stelle erstellen.](./media/hr-recruit-3-create-details-from-job.png)
 
    Der Rest des Personalbeschaffungsantrags wird mit den Standardinformationen für die von Ihnen eingegebene Stelle automatisch ausgefüllt.
 
@@ -103,13 +103,13 @@ Manager können Personalbeschaffungsanträge in Human Resources einreichen. Wenn
 
 9. Wählen Sie unter **Positionen** **Hinzufügen** aus und wählen Sie dann eine Position für diesen Personalbeschaffungsantrag aus.
 
-   ![Eine Position hinzufügen](./media/hr-recruit-4-select-position.png)
+   ![Eine Position hinzufügen.](./media/hr-recruit-4-select-position.png)
 
 10. Wählen Sie unter **Qualifikationen** **Hinzufügen** und dann eine Qualifikation aus.
 
 11. Unter **Ausbildungsanforderungen** wählen Sie **Hinzufügen** und dann die Werte aus den Dropdownlisten **Ausbildung** und **Bildungsgrad** aus.
 
-   ![Ausbildungsanforderungen hinzufügen](./media/hr-recruit-5-select-educational-requirements.png)
+   ![Ausbildungsanforderungen hinzufügen.](./media/hr-recruit-5-select-educational-requirements.png)
 
 12. Fügen Sie unter **Kommentar** notwendige Kommentare ein.
 
@@ -117,7 +117,7 @@ Manager können Personalbeschaffungsanträge in Human Resources einreichen. Wenn
 
 14. Wenn Ihr Personalbeschaffungsantrag fertig ist und Sie bereit sind, den Personalbeschaffungsprozess zu starten, wählen Sie in der Menüleiste **Aktivieren** aus.
 
-   ![Personalbeschaffungsantrag aktivieren](./media/hr-recruit-6-activate-recruit-request.png)
+   ![Personalbeschaffungsantrag aktivieren.](./media/hr-recruit-6-activate-recruit-request.png)
 
 15. Wählen Sie **Speichern** aus.
 
@@ -131,7 +131,7 @@ Wenn Sie ein Manager sind und sich Ihre eigenen Anträge anzeigen lassen möchte
 
 3. Wählen Sie unter **Meine Teaminformationen** die Registerkarte **Personalbeschaffungsanträge** aus.
 
-   ![Registerkarte Personalbeschaffungsantrag auswählen](./media/hr-recruit-7-recruiting-requests.png)
+   ![Registerkarte Personalbeschaffungsantrag auswählen.](./media/hr-recruit-7-recruiting-requests.png)
 
 4. Um einen Personalbeschaffungsantrag anzuzeigen oder zu bearbeiten, wählen Sie ihn im Raster aus.
 
@@ -141,7 +141,7 @@ Wenn Sie ein Mitarbeiter der Personalverwaltung sind und alle Personalbeschaffun
 
 2. Wählen Sie **Personalbeschaffungsantrag** aus.
 
-   ![Personalbeschaffungsanträge in der Personalverwaltung anzeigen](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
+   ![Personalbeschaffungsanträge in der Personalverwaltung anzeigen.](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
 
 3. Um einen Personalbeschaffungsantrag anzuzeigen oder zu bearbeiten, wählen Sie ihn im Raster aus.
 
@@ -155,7 +155,7 @@ Wenn Ihre Organisation für die Verwaltung von Personalbeschaffungsanträge eine
 
 3. Wählen Sie unter **Personalbeschaffung** **Kandidaten** aus.
 
-   ![Kandidaten anzeigen](./media/hr-recruit-9-candidates.png)
+   ![Kandidaten anzeigen.](./media/hr-recruit-9-candidates.png)
 
 4. Um einen Kandidaten hinzuzufügen, wählen Sie **Neu** aus. Um einen vorhandenen Bewerber zu bearbeiten, wählen Sie den Bewerber aus der Liste aus und klicken Sie dann auf **Bearbeiten**. Das Kandidatenprofil wird angezeigt.
 
@@ -163,7 +163,7 @@ Wenn Ihre Organisation für die Verwaltung von Personalbeschaffungsanträge eine
 
 6. Wählen Sie unter **Personalbeschaffungsantrag** einen Personalbeschaffungsantrag aus, mit dem der Kandidat verknüpft werden soll. Füllen Sie dann die Felder **Voraussichtliches Startdatum**, **Zukünftiger Vorgesetzter**, **Position** und **Beschreibung** entsprechend aus.
 
-   ![Personalbeschaffungsantrag verlinken](./media/hr-recruit-10-link-to-recruiting-request.png)
+   ![Personalbeschaffungsantrag verlinken.](./media/hr-recruit-10-link-to-recruiting-request.png)
 
 7. Füllen Sie alle Informationen in den folgenden Bereichen aus, die Sie in den Datensatz des Bewerbers aufnehmen möchten:
    - **Kommentare**
@@ -182,11 +182,11 @@ Wenn Sie bereit sind, einen Kandidaten einzustellen, machen Sie den Kandidaten w
 
 1. Wählen Sie im Kandidatenformular **Einstellen** aus.
 
-   ![Einen Kandidaten einstellen](./media/hr-recruit-11-hire.png)
+   ![Einen Kandidaten einstellen.](./media/hr-recruit-11-hire.png)
 
 2. Füllen Sie im Formular **Neue Arbeitskraft einstellen** alle Felder unter **Details** aus.
 
-   ![Details zum neuen Mitarbeiter eingeben](./media/hr-recruit-12-hire-new-worker.png)
+   ![Details zum neuen Mitarbeiter eingeben.](./media/hr-recruit-12-hire-new-worker.png)
 
 3. Überprüfen Sie unter **Positionsdetails** die Angaben und ändern Sie sie bei Bedarf.
 
@@ -203,11 +203,11 @@ Wenn Sie sich entscheiden, einen Kandidaten nicht einzustellen, entfernen Sie ih
 
 1. Wählen Sie im Kandidatenformular **Nicht einstellen** aus.
 
-   ![Kandidaten nicht einstellen](./media/hr-recruit-13-do-not-hire.png)
+   ![Kandidaten nicht einstellen.](./media/hr-recruit-13-do-not-hire.png)
 
 2. Wählen Sie einen **Ursachencode** aus und fügen Sie mögliche Kommentare hinzu.
 
-3. Wählen Sie **OK**.
+3. Wählen Sie **OK** aus.
 
 ## <a name="dismiss-a-candidate"></a>Kandidaten entlassen
 
@@ -215,7 +215,7 @@ Bei Bedarf können Sie einen Kandidaten nach der Einstellung wieder entlassen. E
 
 - Wählen Sie im Kandidatenformular **Kandidat entlassen** aus.
 
-  ![Kandidat ablehnen](./media/hr-recruit-14-dismiss-candidate.png)
+  ![Kandidat ablehnen.](./media/hr-recruit-14-dismiss-candidate.png)
 
 ## <a name="see-also"></a>Siehe auch
 

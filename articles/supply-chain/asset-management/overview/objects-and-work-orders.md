@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2fe5523edf46712b17aa7abcad50da44c3eaffd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4be7d3b77f72a9d79047d31b46dcabcb2bf09d12
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816765"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351560"
 ---
 # <a name="assets-and-work-orders"></a>Anlagen und Arbeitsaufträge
 
@@ -32,23 +32,23 @@ In diesem Thema werden Anlagen und Arbeitsaufträge in Asset Management beschrie
 
 Verschiedene Daten wie z. B. Produktinformationen und Anlagenspezifikationen sowie erforderliche Wartungspläne werden für jede Anlage eingerichtet. Die folgende Abbildung zeigt einen Überblick über Anlagendaten und die Zugehörigkeit von Anlagen zu Einzelvorgangstypen. Roter Text wird für Beispiele verwendet, die Vererbung und Abhängigkeiten zeigen.
 
-![Diagramm mit Anlagendaten, die Einzelvorgangstypen zugeordnet sind](media/05-overview-image.png)
+![Diagramm mit Anlagendaten, die Einzelvorgangstypen zugeordnet sind.](media/05-overview-image.png)
 
 Jeder Arbeitsauftrag hat einen Arbeitsauftragstyp, wie z. B. vorbeugende Wartung, korrektive Wartung oder Inspektion. Der Arbeitsauftrag enthält einen oder mehrere Arbeitsauftragseinzelvorgänge. Jeder Arbeitsauftragseinzelvorgang definiert einen Einzelvorgang, der für eine Anlage ausgeführt werden muss, und einen zugehörigen Einzelvorgangstyp. Beispiele für zugehörige Einzelvorgangstypen sind 10.000 km, 50.000 km, Überholung nach 1 Jahr und Sicherheitsprüfung. Ein Arbeitsauftrag kann mehreren Anlagen zugeordnet werden.
 
 Die folgende Abbildung zeigt einen Überblick über die wichtigsten Daten in einem Arbeitsauftrag.
 
-![Diagramm mit Schlüsseldaten, die einem Arbeitsauftrag zugeordnet sind](media/06-overview-image.png)
+![Diagramm mit Schlüsseldaten, die einem Arbeitsauftrag zugeordnet sind.](media/06-overview-image.png)
 
 Ein Arbeitsauftrag kann einem anderen Arbeitsauftrag zugeordnet werden, und Einzelvorgangstypen können aufeinander folgende Einzelvorgänge enthalten, die einen Arbeitsauftrag bilden. Im Allgemeinen gibt es keine Abhängigkeiten zwischen Arbeitsaufträgen. Daher kann sich ihr Arbeitsauftrags-Lebenszyklusstatus ändern und sie können unabhängig voneinander geplant werden.
 
 Arbeitsaufträge können auf verschiedene Weise erstellt werden, die der korrektiven, vorbeugenden oder reagierenden Wartung zugeordnet sind. Sie können Arbeitsaufträge auch manuell erstellen. Die folgende Abbildung zeigt einen Überblick über den Prozess der automatischen oder manuellen Erstellung von Arbeitsaufträgen.
 
-![Diagramm, das die automatische oder manuelle Erstellung von Arbeitsaufträgen zeigt](media/07-overview-image.png)
+![Diagramm, das die automatische oder manuelle Erstellung von Arbeitsaufträgen zeigt.](media/07-overview-image.png)
 
 Mehrere Schritte müssen ausgeführt werden, wenn Sie einen Wartungsauftrag für einen Arbeitsauftrag planen und ausführen möchten. Die folgende Abbildung zeigt einen Überblick über die Verarbeitung eines Arbeitsauftrags.
 
-![Diagramm, das einen Überblick über die Bearbeitung eines Arbeitsauftrags zeigt](media/08-overview-image.png)
+![Diagramm, das einen Überblick über die Bearbeitung eines Arbeitsauftrags zeigt.](media/08-overview-image.png)
 
 > [!NOTE]
 > Wenn Sie in Dynamics 365 Supply Chain Management und dem Modul **Asset Management** arbeiten, wählen Sie normalerweise **Neu**, um einen neuen Datensatz zu erstellen, **Bearbeiten**, um einen vorhandenen Datensatz zu aktualisieren, und **Speichern**, um die neuen oder bearbeiteten Daten zu speichern.

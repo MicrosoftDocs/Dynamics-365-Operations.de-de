@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 04e0bb3b1b99299c344a393e72cbe6f380e380af
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5facd333c9a76f391b36de71fa3a8e276fe2583f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825613"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350617"
 ---
 # <a name="work-order-lifecycle-states"></a>Lebenszykluszustände von Arbeitsaufträgen
 
@@ -31,11 +31,11 @@ ms.locfileid: "5825613"
 
 Arbeitsauftrags-Lebenszykluszustände definieren die Zustände, die ein Arbeitsauftrag durchlaufen kann. Beispiele sind **Erstellt**, **Planung**, **in Bearbeitung** und **Ende**. Lebenszykluszustände von Arbeitsaufträgen können manuell auf einem Arbeitsauftrag aktualisiert werden, oder sie können automatisch aktualisiert werden (z.B. bei der Arbeitsauftragsplanung).
 
-Die für Ihre Arbeitsaufträge erforderlichen Lebenszykluszustände der Arbeitsaufträge müssen auf der Seite **Projektmanagement- und Abrechnungsparameter** (**Projektmanagement und Abrechnung**) den entsprechenden Projektstufen zugeordnet werden (\> **Projektmanagement- und Abrechnungsparameter**). Sie richten zunächst Projektphasen im Projektmanagement und in der Buchhaltung ein. Anschließend richten Sie im Anlagenmanagement Arbeitsauftrags-Lebenszykluszustände und Arbeitsauftrags-Lebenszyklusmodelle ein.
+Die für Ihre Arbeitsaufträge erforderlichen Lebenszykluszustände der Arbeitsaufträge müssen auf der Seite **Projektmanagement- und Abrechnungsparameter** (**Projektmanagement und Abrechnung** \> **Projektmanagement- und Abrechnungsparameter**) den entsprechenden Projektstufen zugeordnet werden. Sie richten zunächst Projektphasen im Projektmanagement und in der Buchhaltung ein. Anschließend richten Sie im Anlagenmanagement Arbeitsauftrags-Lebenszykluszustände und Arbeitsauftrags-Lebenszyklusmodelle ein.
 
 Die folgende Tabelle beschreibt die Optionen in den Abschnitten **Arbeitsauftrag** und **Terminplan** auf der Seite **Allgemein** FastTab des **Lebenszykluszustand des Arbeitsauftrags** (**Assetmanagement** \> **Setup** \> **Arbeitsaufträge** \> **Lebenszykluszustände**).
 
-![Seite „Lebenszyklusstatus von Arbeitsaufträgen“](media/09-setup-for-work-orders.png)
+![Seite „Lebenszyklusstatus von Arbeitsaufträgen“.](media/09-setup-for-work-orders.png)
 
 | Optionsname                   | Beschreibung |
 |-------------------------------|-------------|
@@ -90,15 +90,15 @@ Die folgende Tabelle beschreibt die Optionen in den Abschnitten **Arbeitsauftrag
     - Die **Wartungsstillstandszeit**, **Wartungs-Checkliste**, **Fehlersymptom**, **Fehlerursache**, und **Fehlerbehebung** Optionen beziehen sich auf die Optionen im Abschnitt **Pflicht** auf der Seite **Auftragsarten** (**Anlagenmanagement** \> **Einrichtung** \> **Aufträge** \> **Auftragsarten**). Um diese Validierungen zu aktivieren, müssen die entsprechenden Optionen auch auf **Ja** für den Arbeitsauftragstyp eingestellt sein, der für den Arbeitsauftrag verwendet wird.
     - Wenn die Option **Wartungs-Checkliste** auf **Ja** für den Lebenszykluszustand gesetzt ist, in dem ein Arbeitsauftrag aktualisiert wird, wird eine Validierung durchgeführt, um sicherzustellen, dass Wartungs-Checklistenzeilen, die als **Pflicht** markiert sind, entweder als **Checked** oder **Nicht anwendbar** registriert wurden. Wenn keine dieser Registrierungen auf den Pflichtpositionen vorgenommen wurde, wird eine Informations-, Fehler- oder Warnmeldung angezeigt, wenn der Arbeitsauftrag in diesen Lebenszykluszustand aktualisiert wird.
     - Wenn die Option **Verpflichtete Kosten** auf **Ja** für den Lebenszykluszustand gesetzt ist, auf den ein Arbeitsauftrag aktualisiert wird, wird der Gesamtbetrag der verbuchten Kosten (d.h. der Gesamtbetrag der Ausgaben, zu deren Zahlung sich die juristische Person verpflichtet hat) für jeden Arbeitsauftrag berechnet. Eine Meldung wird angezeigt, wenn der zugesagte Kostenbetrag größer als 0 (Null) ist. Sie wählen die Arten der **Kostenverpflichtung**, die auf der Registerkarte **Kostenkontrolle** auf der Seite **Projektmanagement- und Abrechnungsparameter** enthalten sind (**Projektmanagement- und Abrechnungsparameter** \> **Einrichtung** \> **Projektmanagement- und Abrechnungsparameter**).
-    - Wenn die Option **Wartung Ausfallzeit** auf **Ja** für den Lebenszykluszustand gesetzt ist, in den ein Arbeitsauftrag aktualisiert wird, wird die Validierung der Wartungsstillstandszeit für die Anlage durchgeführt, die mit dem Arbeitsauftrag verknüpft ist. Wenn eine Wartungsstillstandsregistrierung durchgeführt wurde, es aber keine **Beendet** Registrierung gibt, wird eine Meldung angezeigt, wenn der Arbeitsauftrag in diesen Lebenszykluszustand aktualisiert wird.
+    - Wenn die Option **Wartung Ausfallzeit** auf **Ja** für den Lebenszykluszustand gesetzt ist, in den ein Arbeitsauftrag aktualisiert wird, wird die Validierung der Wartungsstillstandszeit für die Anlage durchgeführt, die mit dem Arbeitsauftrag verknüpft ist. Wenn eine Wartungsstillstandsregistrierung durchgeführt wurde, es aber keine **Beendet**-Registrierung gibt, wird eine Meldung angezeigt, wenn der Arbeitsauftrag in diesen Lebenszykluszustand aktualisiert wird.
     - Wenn die Standardprojektierung nicht alle Phasen umfasst, die Sie für Ihre Anlageverwaltungseinrichtung benötigen, können Sie benutzerdefinierte Projektphasen auf der Registerkarte **Projektphase** der Seite **Projektmanagement- und Abrechnungsparameter** einrichten. Die folgende Abbildung zeigt die Registerkarte **Projektphase** auf der Seite **Projektmanagement- und Abrechnungsparameter**.
 
-    ![Seite „Projektphasen für verschiedene Projekttypen einrichten“](media/10-setup-for-work-orders.png)
+    ![Seite „Projektphasen für verschiedene Projekttypen einrichten“.](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Wenn der Lebenszykluszustand, in dem Sie einen Arbeitsauftrag aktualisieren, inaktiv ist, werden Journale, die sich auf den Arbeitsauftrag beziehen, aber noch nicht gebucht wurden, automatisch gelöscht. Dieses Verhalten trägt dazu bei, die automatische Bereinigung unbenutzter Daten zu gewährleisten. (Ein Lebenszykluszustand ist inaktiv, wenn die Option **Aktiv** dafür auf **Nein** auf der Seite **Allgemein** FastTab des Lebenszykluszustand **Arbeitsauftrag** gesetzt ist.)
 >
-> Wenn Sie einen Arbeitsauftrag jedoch manuell so einstellen, dass er inaktiv ist, werden Journale, die sich auf den Arbeitsauftrag beziehen, aber noch nicht gebucht wurden, automatisch gelöscht **nicht**. (Um einen Arbeitsauftrag manuell zu deaktivieren, wählen Sie **Anlagenmanagement** \> **Allgemein** \> **Aufträge** \> **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**. Öffnen Sie den Arbeitsauftrag und wechseln Sie in die Ansicht **Kopf**. Wählen Sie auf der **Allgemein** FastTab **Bearbeiten**, und setzen Sie dann die Option **Aktiv** auf **Nein**.)
+> Wenn Sie einen Arbeitsauftrag jedoch manuell so einstellen, dass er inaktiv ist, werden Journale, die sich auf den Arbeitsauftrag beziehen, aber noch nicht gebucht wurden, automatisch gelöscht **nicht**. (Um einen Arbeitsauftrag manuell zu deaktivieren, wählen Sie **Anlagenmanagement** \> **Allgemein** \> **Aufträge** \> **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**. Öffnen Sie den Arbeitsauftrag und wechseln Sie in die Ansicht **Kopf**. Wählen Sie auf dem Inforegister **Allgemein** **Bearbeiten**, und setzen Sie dann die Option **Aktiv** auf **Nein**.)
 
 ## <a name="relations-among-work-order-lifecycle-models-work-order-types-and-work-order-lifecycle-states"></a>Beziehungen zwischen Arbeitsauftrags-Lebenszyklusmodellen, Arbeitsauftragsarten und Arbeitsauftrags-Lebenszykluszuständen
 
@@ -111,7 +111,7 @@ Der Grund für die Verwendung von Typen ist, dass bei der Definition eines Typs,
 
 Die folgende Abbildung zeigt den Zusammenhang zwischen Arbeitsauftragsarten, Lebenszyklusmodellen und Lebenszykluszuständen.
 
-![Vergleich der Seiten „Arbeitsauftrags-Phasenmodelle“ und „Arbeitsauftragstyp“](media/11-setup-for-work-orders.png)
+![Vergleich der Seiten „Arbeitsauftrags-Phasenmodelle“ und „Arbeitsauftragstyp“.](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Arbeitsauftrags-Phasenmodelle
 
@@ -126,16 +126,16 @@ Nachdem Sie die für Ihre Arbeitsaufträge erforderlichen Lebenszykluszustände 
 
 5. Wählen Sie auf dem Inforegister **Lebenszyklusstatus** die Lebenszyklusstatus aus, die in das Lebenszyklusmodell einbezogen werden sollen:
 
-    - Um einen Lebenszyklusstatus in das Lebenszyklusmodell einzuschließen, wählen Sie ihn im Bereich **Verbleibende Lebenszyklusstatus** aus, und klicken Sie dann auf die Schaltfläche mit dem Pfeil nach rechts ![Nach-Rechts-Pfeil](media/12-setup-for-work-orders.png), um ihn in den Bereich **Ausgewählte Lebenszyklusstatus** zu verschieben.
-    - Um alle verfügbaren Lebenszykluszustände in das Lebenszyklusmodell aufzunehmen, wählen Sie die Schaltfläche **Alle verfügbaren Phasen auswählen** Schaltfläche ![Alle verfügbaren Stufen auswählen ](media/13-setup-for-work-orders.png). Alle Lebenszyklusstatus werden in den Bereich **Ausgewählte Lebenszyklusstatus** verschoben.
-    - Um einen Lebenszyklusstatus aus dem Lebenszyklusmodell zu entfernen, wählen Sie ihn im Bereich **Ausgewählte Lebenszyklusstatus** aus, und klicken Sie dann auf die Schaltfläche mit dem Pfeil nach links ![Nach-Links-Pfeil](media/14-setup-for-work-orders.png), um ihn in den Bereich **Verbleibende Lebenszyklusstatus** zu verschieben.
+    - Um einen Lebenszyklusstatus in das Lebenszyklusmodell einzuschließen, wählen Sie ihn im Bereich **Verbleibende Lebenszyklusstatus** aus, und klicken Sie dann auf die Schaltfläche mit dem Pfeil nach rechts ![Nach-rechts-Pfeil,](media/12-setup-for-work-orders.png) um ihn in den Abschnitt **Ausgewählte Lebenszyklusstatus** zu verschieben.
+    - Um alle verfügbaren Lebenszyklusstatus in das Lebenszyklusmodell aufzunehmen, wählen Sie die Schaltfläche **Alle verfügbaren Phasen auswählen** Schaltfläche ![Alle verfügbaren Stufen auswählen](media/13-setup-for-work-orders.png). Alle Lebenszyklusstatus werden in den Bereich **Ausgewählte Lebenszyklusstatus** verschoben.
+    - Um einen Lebenszyklusstatus aus dem Lebenszyklusmodell zu entfernen, wählen Sie ihn im Bereich **Ausgewählte Lebenszyklusstatus** aus, und klicken Sie dann auf die Schaltfläche mit dem Pfeil nach links ![Nach-links-Pfeil,](media/14-setup-for-work-orders.png) um ihn in den Abschnitt **Verbleibende Lebenszyklusstatus** zu verschieben.
 
 6. Wählen Sie **Lebenszykluszustand-Updates**, um die Lebenszykluszustände zu definieren, die einem ausgewählten Lebenszykluszustand folgen können.
-7. Wählen Sie im Feld **Updates** FastTab im Feld **Geplanter Zustand** den Lebenszykluszustand aus, der immer für einen Arbeitsauftrag ausgewählt werden soll, für den Sie die Arbeitsvorbereitung abgeschlossen haben, unabhängig vom vorherigen Lebenszykluszustand des Arbeitsauftrags.Wählen Sie im Feld <1>Ungeplanter Lebenszykluszustand</1> den Lebenszykluszustand aus, der für einen Arbeitsauftrag immer ausgewählt werden soll, wenn die Arbeitsvorbereitung gelöscht wird.
+7. Wählen Sie im Feld **Updates** FastTab im Feld **Geplanter Zustand** den Lebenszykluszustand aus, der immer für einen Arbeitsauftrag ausgewählt werden soll, für den Sie die Arbeitsvorbereitung abgeschlossen haben, unabhängig vom vorherigen Lebenszykluszustand des Arbeitsauftrags.Wählen Sie im Feld Ungeplanter Lebenszykluszustand den Lebenszykluszustand aus, der für einen Arbeitsauftrag immer ausgewählt werden soll, wenn die Arbeitsvorbereitung gelöscht wird.
 8. Wählen Sie im Feld **Ungeplanter Lebenszyklusstatus** den Lebenszyklusstatus, der für einen Arbeitsauftrag immer ausgewählt werden soll, wenn die Arbeitsvorbereitung gelöscht wird.
 9. Speichern Sie das Arbeitsauftrags-Lebenszyklusmodell.
 
-![Seite „Arbeitsauftrags-Phasenmodelle“](media/15-setup-for-work-orders.png)
+![Seite „Arbeitsauftrags-Phasenmodelle“.](media/15-setup-for-work-orders.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c9dfad3615cfe4f9937f0dc30c4684cd14f420c1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894147"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348139"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Benutzerdefinierte Speicherorte für generierte Dokumente angeben
 
@@ -41,7 +41,7 @@ Alle Aufgaben in diesem Thema können im **USMF**-Unternehmen erledigt werden.
 
 Um die Dokumente zu generieren, für die Sie einen benutzerdefinierten Speicherort hinzufügen möchten, [importieren](er-download-configurations-global-repo.md) Sie das EB-Format **Rollforward für Anlagen** in die aktuelle Topologie.
 
-![Konfigurationsrepository-Seite](./media/er-custom-storage-generated-files-import-format.png)
+![Konfigurationsrepository-Seite.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Bericht „Rollforward für Anlagen“ ausführen
 
@@ -50,9 +50,9 @@ Um die Dokumente zu generieren, für die Sie einen benutzerdefinierten Speichero
 3. Geben Sie im Feld **Bis Datum** das Datum **1/31/2017** (31. Januar 2017) ein.
 4. Wählen Sie im Feld **Währung** die Option **Buchhaltungswährung** aus.
 5. Wählen Sie im Feld **Formatzuordnung** die Option **Rollforward für Anlagen** aus.
-6. Wählen Sie **OK**.
+6. Wählen Sie **OK** aus.
 
-![Dialogfeld „Laufzeit“ für den Bericht „Rollforward für Anlagen“](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Dialogfeld „Laufzeit“ für den Bericht „Rollforward für Anlagen“.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 Überprüfen Sie in Microsoft Excel das ausgehende Dokument, das generiert wurde und zum Download zur Verfügung steht. Dieses Verhalten ist das [Standardverhalten](electronic-reporting-destinations.md#default-behavior) für ein EB-Format, für das keine [Ziele](electronic-reporting-destinations.md) konfiguriert sind und das im interaktiven Modus ausgeführt wird.
 

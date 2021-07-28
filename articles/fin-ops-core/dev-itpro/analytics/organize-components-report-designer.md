@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cb3e09ad849b250ed3f1d7aec910b44d591cb88e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e1672ee1777150a7f78c03d07dc79df118a3632f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751631"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347875"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisieren von Berichtskomponenten im Berichtsdesigner
 
@@ -47,7 +47,7 @@ Sie können Berichtsdefinitionen gruppieren, um mehrere Berichte gleichzeitig zu
 ### <a name="create-a-report-group"></a>Erstellen einer Berichtsgruppe
 
 1. Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
-2. Klicken Sie im Menü **Datei** auf **Neu** &gt; **Berichtsgruppe**, um eine neue Berichtsgruppe im Viewer-Fenster öffnen. Klicken Sie alternativ auf die Schaltläche **Berichtsgruppe** ![Berichtsgruppe](media/report-group.gif "Berichtsgruppe") auf der Symbolleiste.
+2. Klicken Sie im Menü **Datei** auf **Neu** &gt; **Berichtsgruppe**, um eine neue Berichtsgruppe im Viewer-Fenster öffnen. Klicken Sie alternativ auf die Schaltfläche **Berichtsgruppe** ![Berichtsgruppe](media/report-group.gif "Berichtsgruppe") auf der Symbolleiste.
 3. Klicken Sie auf die Registerkarte **Gruppen-Bericht**. Um die Informationen zu den einzelnen Berichtsdefinitionen für die Generierung dieses Berichts zu überschreiben, aktivieren Sie das Kontrollkästchen **Überschreiben von Unternehmen**, Details und Datumseinstellungen von einzelnen Berichtsdefinitionen. Die Felder Unternehmensname, Detailebene, vorläufige Einstellungen und Datumsinformationen werden automatisch ausgefüllt, aber Sie können Aktualisierungen vornehmen.
 4. Um mehrere Berichte zu generieren, die die Berichtswährung anzeigen, aktivieren Sie das Kontrollkästchen **Alle Berichtswährungen einschließen**. Es sind mehrere Ansichten verfügbar, wenn Sie den Bericht anzeigen und auf die Schaltfläche **Währung** im Web-Viewer klicken.
 5. Klicken Sie im Feld **Berichte in Gruppe** auf **Hinzufügen**, um die Berichte zu wählen, die in die Berichtsgruppe einbezogen werden sollen. Um mehrere Berichte im Dialogfeld **Hinzufügen** auszuwählen, halten Sie STRG-Taste gedrückt, während Sie Berichte auswählen. Wenn Sie die Berichtsauswahl abgeschlossen haben, klicken Sie auf **OK**.
@@ -58,7 +58,7 @@ Sie können Berichtsdefinitionen gruppieren, um mehrere Berichte gleichzeitig zu
 1. Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
 2. Doppelklicken Sie auf die zu ändernde Berichtsgruppe.
 3. Nehmen Sie auf der Registerkarte **Berichtsgruppe** die gewünschten Änderungen vor.
-4. Klicken Sie im Menü **Datei** auf **Speichern**, um die geänderte Berichtsgruppe zu speichern. Alternativ klicken Sie auf die Schaltläche **Speichern** ![Speichern](media/save.gif "Speichern") in der Symbolleiste.
+4. Klicken Sie im Menü **Datei** auf **Speichern**, um die geänderte Berichtsgruppe zu speichern. Alternativ klicken Sie auf die Schaltfläche **Speichern** ![Speichern](media/save.gif "Speichern") auf der Symbolleiste.
 
 > [Hinweis] Wenn Sie geplant haben, Berichte in Zeitabständen zu erstellen, können Sie diese Einstellungen überschreiben und einen Bericht sofort generieren.
 
@@ -66,7 +66,7 @@ Sie können Berichtsdefinitionen gruppieren, um mehrere Berichte gleichzeitig zu
 
 1. Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
 2. Öffnen Sie die zu generierende Berichtsgruppe.
-3. Klicken Sie auf die Schaltläche **Bericht generieren** ![Bericht generieren](media/generate-report.gif "Bericht generieren"), um Berichte zu generieren.
+3. Klicken Sie auf die Schaltfläche **Bericht generieren** ![Bericht generieren](media/generate-report.gif "Bericht generieren"), um Berichte zu generieren.
 
 ### <a name="delete-a-report-group"></a>Löschen einer Berichtsgruppe
 

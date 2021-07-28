@@ -12,12 +12,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b59be8b395826914e8196009c339c2ced5a4debf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a537509fe034d85f8f4f441dc82d54efd3ed4f28
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818305"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348884"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanismus zur Verlagerung der Steuerschuld für USt./GST-Regelung
 
@@ -121,7 +121,7 @@ Wenn eine Einkaufsrechnung mit Verlagerung der Steuerschuld gebucht wird, werden
 
 Im folgenden Bildschirmfoto hat eine Buchung die Steuerart **Vorsteuer** und die andere Buchung weist die Steuerart **Mehrwertsteuer** auf. 
 
-![Gebuchte Mehrwertsteuer](media/apac-sau-posted-sales-tax.png)
+![Gebuchte Mehrwertsteuer.](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Mechanismus für Verlagerung der Steuerschuld für USt./GST-Regelung aktivieren
 Suchen Sie im Arbeitsbereich **Funktionsverwaltung** die Funktion **Aktivieren** und wählen Sie sie aus.

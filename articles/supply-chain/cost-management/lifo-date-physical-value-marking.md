@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6a9f21c6c329ef37d515fa0fbdaca57b4f3be0a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 744111a28256bb737246605ca8a259ff5a3d2b5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821536"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344567"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-Datum mit physischem Wert und Markierung
 
@@ -55,7 +55,7 @@ In diesem Beispiel ist die Artikelmodellgruppe so konfiguriert, dass der physisc
 
 Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig aktualisierten Buchungen in Höhe von EUR 15,00 berücksichtigt. 
 
-Die folgende Abbildung zeigt die Auswirkungen des Lagermodells LIFO-Datum an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird. ![LIFO-Datum mit "Physischen Wert einbeziehen"](./media/lifodatewithoutincludephysicalvalue.gif) 
+Die folgende Abbildung zeigt die Auswirkungen des Lagermodells LIFO-Datum an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird. ![LIFO-Datum mit „Physischen Wert einbeziehen“.](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 
@@ -90,7 +90,7 @@ Die folgende Abbildung zeigt diese Buchungen an:
 
 Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig aktualisierten Buchungen in Höhe von EUR 20,00 berücksichtigt. 
 
-Die folgende Abbildung zeigt die Auswirkungen des LIFO-Lagermodells LIFO an, wenn die Option **Physischen Wert einbeziehen** verwendet wird. ![LIFO-Datum mit "Physischen Wert einbeziehen"](./media/lifodatewithincludephysicalvalue.gif) 
+Die folgende Abbildung zeigt die Auswirkungen des LIFO-Lagermodells LIFO an, wenn die Option **Physischen Wert einbeziehen** verwendet wird. ![LIFO-Datum mit „Physischen Wert einbeziehen“.](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 
@@ -136,7 +136,7 @@ Die folgende Abbildung zeigt diese Buchungen an:
 
 Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. 
 
-Die folgende Abbildung gibt Aufschluss über die Auswirkungen der Auswahl des LIFO-Lagermodells mit markierten Ab- und Zugängen: ![LIFO-Datum mit Markierung](./media/lifodatewithmarking.gif) 
+Die folgende Abbildung gibt Aufschluss über die Auswirkungen der Auswahl des LIFO-Lagermodells mit markierten Ab- und Zugängen: ![LIFO-Datum mit Markierung.](./media/lifodatewithmarking.gif) 
 
 **Diagrammschlüssel**
 

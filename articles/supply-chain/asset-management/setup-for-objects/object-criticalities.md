@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb2da2d58b7f98fad80d0ea63bf4445ec4d08163
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: baf2c279a656bd67a0850ef9178e1bc984bb9b8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808351"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351488"
 ---
 # <a name="asset-criticality-types"></a>Typen kritischer Werte für Anlagen
 
@@ -40,7 +40,7 @@ Um kritische Anlagenzustände einzurichten, erstellen Sie zunächst die Typen de
 4. Geben Sie im Feld **Name** einen Namen für den Kritikalitätstyp ein.
 5. Geben Sie im Feld **Faktor** einen Faktor ein. Dieser Faktor wird bei der Berechnung der Arbeitsauftragsplanung verwendet, um den Kritikalitätsdatensatz zu bestimmen, der verwendet werden soll. (Es wird immer der Datensatz mit dem höchsten Faktor verwendet). Diese Einstellung ist relevant, wenn, wie in der folgenden Abbildung dargestellt, Kritikalitätspositionen erstellt werden, die den gleichen Kritikalitätswert haben.
 
-    ![Seite „Typen kritischer Werte“](media/23-setup-for-objects.png)
+    ![Seite „Typen kritischer Werte“.](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Kritische Anlagenzustände einrichten
 

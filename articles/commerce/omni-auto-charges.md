@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0eb1f112430005945b4f82b99ef9cc718c56de65
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0ff85acfbe16fc28afb2fbcee0baf4b12b1f3e9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022706"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353059"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Erweiterte automatische Omni-Channel-Belastungen
 
@@ -43,7 +43,7 @@ Bei der erweiterten automatische Belastungen-Funktion können POS-Benutzer syste
 
 Auf der Seite **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \>-Parameter \> Commerce-Parameter** wechseln Sie zur Registerkarte **Debitorenaufträge**. Legen Sie im Inforegister **Belastungen** die Option **Erweiterte automatische Belastungen verwenden** auf **Ja** fest.
 
-![Erweiterte automatische Belastungen-Parameter](media/advancedchargesparameter.png)
+![Erweiterte automatische Belastungen-Parameter.](media/advancedchargesparameter.png)
 
 Wenn erweiterte automatische Belastungen aktiviert sind, werden die Benutzer beim Erstellen eines Alles versenden- oder Auswahl versenden-Kundenauftrages nicht mehr aufgefordert, manuell eine Versandgebühr am POS-Terminal einzugeben. POS-Auftragszuschläge werden systematisch berechnet und der POS-Transaktion hinzugefügt (falls eine entsprechende Auto-Belastungstabelle gefunden wird, die dem Kriterium der zu erstellenden Bestellung entspricht). Benutzer können auch Kopf- oder Positionsebenengebühren durch neu hinzugefügte POS-Vorgänge, die den Layouts der POS-Bildschirme hinzugefügt werden können, manuell hinzufügen oder pflegen.
 
@@ -86,7 +86,7 @@ Konfigurieren Sie zwei verschiedene Auto-Zuschläge auf Kopfebene. Konfigurieren
 
 Definieren Sie für die Landweg-Lieferzuschläge im Positionsbereich der Seite **Auto-Belastungen** eine Gebühr, die für Bestellungen zwischen ,01 Euro und 100 Euro als 10,00 Euro berechnet wird. Erstellen Sie eine weitere Zuschlagsposition, um Aufträge ab 100,01 Euro ohne Zuschläge anzugeben.
 
-![Beispiel für zwei Auto-Belastungstabellen](media/headerchargesexample.png)
+![Beispiel für zwei Auto-Belastungstabellen.](media/headerchargesexample.png)
 
 Definieren Sie für die Luftfrachtkosten im Positionsbereich des Formulars für automatische Belastungen eine Gebühr von 20,00 Euro, die auf alle Aufträge angewendet wird (zwischen einem Wert von 0,01 Euro und 9.999.999 Euro).
 
@@ -116,7 +116,7 @@ Wechseln Sie zu **Debitoren \> Belastungen einrichten \> Auto-Belastungen**.
 
 Stellen Sie das Dropdown-Menü **Ebene** auf **Position** ein und erstellen Sie einen neuen automatischen Belastungsdatensatz für alle Kunden und für das spezifische Produkt oder die Produktgruppe, für die die Einrichtungsgebühren berechnet werden.
 
-![Beispiel für eine Auto-Belastungstabelle auf Positionsebene](media/linechargesexample.png)
+![Beispiel für eine Auto-Belastungstabelle auf Positionsebene.](media/linechargesexample.png)
 
 Senden Sie die Belastungen an die Commerce Scale Einheit/Kanal-DB, damit der POS sie nutzen kann, indem der Einzelvorgang **Vertriebsplan 1040** ausgeführt wird.
 
@@ -136,7 +136,7 @@ Ein Einzelhändler macht nun eine Ausnahme von typischen Prozessen, indem er anb
 
 Stellen Sie sicher, dass der Gebührencode, der in diesem Szenario verwendet wird, richtig konfiguriert wurde, indem Sie zu **Debitoren \> Belastungen einrichten \> Belastungen** gehen, um einen geeigneten Belastungscode für das Szenario zu definieren.
 
-![Beispiel für Belastungen](media/chargesexample.png)
+![Beispiel für Belastungen.](media/chargesexample.png)
 
 Wenn die Belastung als eine „versandbezogene“ Belastung angesehen werden sollte, um versandbezogene Rabatte oder Werbeaktionen zu ermöglichen, setzen Sie **Versandgebühr** auf dem Belastungscode auf **Ja**. Wenn diese Belastung auch während der Abwicklung einer Retourentransaktion in der POS-Anwendung systematisch erstattet werden darf, setzen Sie **Rückerstattungsfähig** auf **Ja**. Die Markierung **Rückerstattbar** gilt nur, wenn der Parameter **Erweiterte Auto-Belastungen verwenden** auf **Ja** gesetzt ist.
 

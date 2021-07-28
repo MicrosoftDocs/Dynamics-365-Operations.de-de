@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260624
+ms.custom:
+- "260624"
+- intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 598145bccadbeb44d33adb96388f6af5a8a45f5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937011"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352687"
 ---
 # <a name="clienteling-overview"></a>Übersicht zu Kundenaktionen
 
@@ -68,7 +70,7 @@ Um die Funktionen für Kundenaktionen in Ihrer Umgebung zu aktivieren, führen S
 
 1. Filtern Sie im Arbeitsbereich **Funktionsverwaltung** die Funktionen nach dem Modul **Einzelhandel und Handel**.
 
-    ![Kundenaktionen in der Funktionsliste für das Modul Commerce](./media/Enable_clienteling.png "Kundenaktionen in der Funktionsliste für das Modul „Einzelhandel und Handel“")
+    ![Kundenaktionen in der Funktionsliste für das Commerce-Modul.](./media/Enable_clienteling.png "Kundenaktionen in der Funktionsliste für das Modul „Einzelhandel und Handel“")
 
 2. Aktivieren Sie die Funktion **Kundenaktionen**, indem Sie **Jetzt aktivieren** auswählen.
 3. Wählen Sie auf der Seite **Commerce-Parameter** auf der Registerkarte **Nummernkreis** die Zeile **Kundenbuchbezeichner** aus. Wählen Sie dann im Feld **Nummernkreiscode** einen Nummernkreis aus. Das System verwendet diesen Nummernkreis, um Kundenbüchern eine ID zuzuweisen.
@@ -83,7 +85,7 @@ Um die Funktionen für Kundenaktionen in Ihrer Umgebung zu aktivieren, führen S
 
 6. Wählen Sie auf der Seite **Commerce-Parameter** auf der Registerkarte **Kundenaktionen** in der **Kundenbuchattributgruppe** die Attributgruppe aus, die Sie soeben erstellt haben.
 
-    ![Ausgewählte Kundenbuchattributgruppe](./media/Client%20book%20attributes.png "Ausgewählte Kundenbuchattributgruppe")
+    ![Ausgewählte Kundenbuchattributgruppe.](./media/Client%20book%20attributes.png "Ausgewählte Kundenbuchattributgruppe")
 
 7. Um die Aktivitäten aufzuzeichnen die am POS ausgeführt werden, definieren Sie die Aktivitätstypen der Seite auf **Aktivitätstypen** (**Einzelhandel und Handel \> Debitoren \>-Aktivitätstypen**).
 
@@ -95,7 +97,7 @@ Um die Funktionen für Kundenaktionen in Ihrer Umgebung zu aktivieren, führen S
 
 Nach Abschluss dieses Verfahrens können Verkäufer die Debitorendetailseite am POS öffnen und ihrem Kundenbuch Debitoren hinzufügen, Aktivitäten und Notizen für Debitoren hinzufügen und auf Debitoren abzielen, indem sie das Kundenbuch anhand von Debitoren- und Kundenbuchattributen filtern. Die folgende Abbildung zeigt ein Beispiel für ein Kundenbuch.
 
-![Beispiel für ein Kundenbuch](./media/client_book.png "Beispiel für ein Kundenbuch")
+![Beispiel für ein Kundenbuch.](./media/client_book.png "Beispiel für ein Kundenbuch")
 
 ## <a name="turn-on-the-integration-of-customer-insights-with-commerce"></a>Integration von Customer Insights in Commerce aktivieren
 

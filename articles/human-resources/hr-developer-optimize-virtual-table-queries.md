@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66fb9f2b50079b5eb4eb16da17b8a473d687d354
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 17316081501ab29aafac476d13947774ecbb61e5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054907"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346273"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Virtuelle Dataverse-Tabellenabfragen optimieren
 
@@ -50,11 +50,11 @@ Diese Auswirkungen treten zum Beispiel möglicherweise bei Abfragen an die Arbei
 - **Abfragetimeout**: Bei der Abfrage kann es zu einer Zeitüberschreitung kommen und der folgende Fehler wird zurückgeben: „Es wurde ein Token zum Aufrufen von Finance and Operations erhalten, aber Finance and Operations hat einen Fehler vom Typ InternalServerError zurückgegeben.“
 - **Unerwarteter Fehler**: Die Abfrage gibt möglicherweise einen Fehler vom Typ 400 mit der folgenden Meldung zurück: „Ein unerwarteter Fehler ist aufgetreten.“
 
-  ![Fehler vom Typ 400 bei der HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType400.png)
+  ![Fehler vom Typ 400 bei der HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
 - **Drosselung**: Die Abfrage kann die Serverressourcen überbeanspruchen, sodass es zu einer Drosselung kommt. In diesem Fall gibt die Abfrage den folgenden Fehler zurück: „Es wurde ein Token zum Aufrufen von Finance and Operations erhalten, aber Finance and Operations hat einen Fehler vom Typ 429 zurückgegeben.“ Weitere Informationen zur Drosselung in Humen Resources finden Sie unter [Drosselung – Häufig gestellte Fragen](./hr-admin-integration-throttling-faq.md).
 
-  ![Fehler vom Typ 429 bei der HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType429.png)
+  ![Fehler vom Typ 429 bei der HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
 ## <a name="resolution"></a>Lösung
 
@@ -96,7 +96,7 @@ Wenn Sie beim Erstellen eines Power BI-Bericht für eine virtuelle Dataverse-Tab
 2. Geben Sie in dem Fenster **Daten abrufen** **Common Data Service** in das Suchfeld ein, wählen Sie den Connector **Common Data Service** und dann **Verbinden** aus.
 3. Geben Sie im Feld **Server-URL** des Common Data Service-Fensters die Organisations-URI für Ihre Dataverse-Umgebung ein und wählen Sie **OK**.
   
-   ![Die URI für Ihre Dataverse-Umgebung eingeben](./media/PowerBIDataverseURLSetup.png)
+   ![Die URI für Ihre Dataverse-Umgebung eingeben.](./media/PowerBIDataverseURLSetup.png)
   
 4. Erweitern Sie im Navigator-Fenster den Knoten **Entitäten** aus.
 5. Geben Sie im Suchfeld **mshr_hcmworkerbaseentity** ein und wählen Sie die Entität aus.
@@ -113,7 +113,7 @@ Wenn Sie beim Erstellen eines Power BI-Bericht für eine virtuelle Dataverse-Tab
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![Die Abfrage im erweiterten Editor des Power Query-Editor aktualisieren](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![Die Abfrage im erweiterten Editor des Power Query-Editor aktualisieren.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. Wählen Sie **Fertig**.
 
@@ -138,7 +138,7 @@ Wenn beispielsweise eines der auf einer Seite in der App enthaltenen Datenfelder
 
 Sie können den [Power Apps-Monitor](/powerapps/maker/monitor-overview) benutzen, um sicherzustellen, dass nur die Spalten, die Sie benötigen, in die Abfrage aufgenommen werden, um die Daten für die Power App abzurufen. Sie können die für den getRows-Vorgang erstellte URL anzeigen lassen, um sicherzustellen, dass die für Ihre App ausgewählten Spalten für das Abrufen der Daten optimal sind.
 
-![Den Power Apps-Monitor benutzen, um den getData-Vorgang zu analysieren](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
+![Den Power Apps-Monitor benutzen, um den getData-Vorgang zu analysieren.](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
 
 ### <a name="filtering-the-data-query"></a>Die Datenabfrage filtern
 

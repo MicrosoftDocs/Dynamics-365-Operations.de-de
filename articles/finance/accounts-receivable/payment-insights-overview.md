@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: a1b3b6540a03dc85d5dcd813e8c41ac49ab36728
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82b301b4b8ba61375a53a8fe6220628500f6cf3d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822394"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359316"
 ---
 # <a name="customer-payment-insights-preview"></a>Debitorenzahlungseinblicke (Vorschau)
 
@@ -47,11 +49,11 @@ Für jede offene Rechnung kann Debitorenzahlungseinblicke (Vorschau) drei Zahlun
 
 Debuitorenzahlungseinblocke (Vorschau) bietet zudem eine aggregierten Ansicht der erwarteten Zahlungen. Dies kann Organisationen dabei helfen, den gesamten Zahlungsbetrag zu verstehen, den sie von einem Kunden in einem der drei Bereiche Pünktlich, Verspätet und sehr spät erwarten können.
 
-[![Aggregierte Ansicht der Zahlungsvorhersagen](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Aggregierte Ansicht der Zahlungsvorhersagen.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Außerdem wird jeder Rechnung eine Zahlungswahrscheinlichkeit zugeordnet. Wenn die Wahrscheinlichkeit einer rechtzeitigen Zahlung weniger als 50% beträgt, werden die Rechnungen mit einem roten Kreis markiert, um anzuzeigen, dass diese Rechnungen möglicherweise eine Inkassoaufsicht erfordern. 
 
-[![Liste der Zahlungswahrscheinlichkeiten](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Liste der Zahlungswahrscheinlichkeiten.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 Debitorenzahlungseinblicke (Vorschau) bietet auch Kontextinformationen zur Erläuterung der Vorhersage, wie z.B. die wichtigsten Faktoren, die die Vorhersage beeinflusst haben, den aktuellen Geschäftsgang mit dem Kunden und Details über das historische Zahlungsverhalten des Kunden. In vielen Unternehmen war der Inkassoprozess eine reaktive Tätigkeit; der Inkassoprozess beginnt erst mit der Fälligkeit der Rechnungen. 
 

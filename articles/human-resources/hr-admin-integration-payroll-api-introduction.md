@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6d8a1cb9619a863184460a74e472af3f06934b6
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058559"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360567"
 ---
 # <a name="payroll-integration-api-introduction"></a>Einführung Lohnintegrations-API
 
@@ -26,7 +26,7 @@ ms.locfileid: "6058559"
 
 Dieses Dokument beschreibt die Lohnintegrations-API in Dynamics 365 Human Resources. Die API ermöglicht eine optimierte End-to-End-Integration zwischen Human Resources und Partner-Lohnsystemen. Die integrierte Erfahrung beginnt in Human Resources mit dem Mitarbeiterprofil, dem Gehalt und dem Abzug sowie den Beitragsinformationen. Wenn Sie einen Mitarbeiter einstellen und das erforderliche Profil und die Zahlungsinformationen in Human Resources eingeben, ruft das Lohnsystem diese Informationen ab, um sie bei der Lohnabrechnung zu verwenden. Alle am Mitarbeiter oder den Gehaltsinformationen vorgenommenen Aktualisierungen werden auch zur Verwendung in späteren Zahlungsläufen abgerufen.
 
-![Lohnintegrations-Flow](media/hr-admin-integration-payroll-api-introduction-flow.png)
+[![Lohnintegrations-Flow.](media/hr-admin-integration-payroll-api-introduction-flow.png)](media/hr-admin-integration-payroll-api-introduction-flow-2.png#lightbox)
 
 Um die Integration zu ermöglichen, enthält Human Resources die folgenden Komponenten:
 
@@ -60,7 +60,7 @@ Informationen zum Generieren der virtuellen Tabellen für die API finden Sie unt
 
 Das folgende Diagramm veranschaulicht die Beziehungen innerhalb der API. Einige Typen verfügen über Fremdschlüssel für andere bereits vorhandene Entitäten in Human Resources, die hier nicht dargestellt sind. Dieses Dokument enthält Informationen zu Entitäten, die für die Lohnintegrationsszenarien spezifisch sind. Es gibt jedoch viele andere Entitäten in der Dataverse-Web-API für Human Resources, die auch für Ihre Integration relevant sein können. Einige dieser Entitäten werden in Fremdschlüsselbeziehungen oder Navigationseigenschaften referenziert.
 
-![Datenmodell der Lohnintegrations-API](media/hr-admin-payroll-api-data-model.png)
+[![Datenmodell der Lohnintegrations-API.](media/hr-admin-payroll-api-data-model.png)](media/hr-admin-payroll-api-data-model.png#lightbox)
 
 ## <a name="payroll-employee-and-related-entities"></a>Mitarbeiter der Lohnbuchhaltung und verbindene Entitäten
 
@@ -68,7 +68,8 @@ Entitäten:
 
 - [Mitarbeiter der Lohnbuchhaltung](hr-admin-integration-payroll-api-payroll-employee.md)
 - [Lohn – Adresse der Arbeitskraft](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [Fester Vergütungsplan für Lohnabrechnung](hr-admin-integration-ats-api-recruiting-request-education.md)
+- [Fester Vergütungsplan für Lohnabrechnung](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
+- [Variabler Vergütungsplan für Lohnabrechnung](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
 - [Lohnpositions-Einzelvorgang](hr-admin-integration-payroll-api-payroll-position-job.md)
 - [Lohnposition](hr-admin-integration-payroll-api-payroll-position.md)
 

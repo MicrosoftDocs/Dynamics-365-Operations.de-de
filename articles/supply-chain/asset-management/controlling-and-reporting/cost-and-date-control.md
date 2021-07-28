@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 4fd08d9eeb9bb6ac9e3c19ff3c8592086c050182
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6016131"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354952"
 ---
 # <a name="cost-and-date-control"></a>Kosten- und Datenkontrolle
 
@@ -58,7 +58,7 @@ Die Berechnungen für Anlagen, Technische Standorte und Arbeitsaufträge sind na
 
     In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Kostensteuerung für Anlagen** angezeigt.
 
-    ![Dialogfeld „Kostensteuerung für Anlagen“](media/01-controlling-and-reporting.png)
+    ![Dialogfeld „Kostensteuerung für Anlagen“.](media/01-controlling-and-reporting.png)
 
 10. Klicken Sie auf der Seite **Kostensteuerung für Anlagen** auf die **Gruppieren nach…**-Schaltflächen, um die erforderliche Detailebene der Berechnung anzuzeigen. Die ausgewählten **Gruppieren nach…**-Schaltflächen werden hervorgehoben. Klicken Sie auf eine Schaltfläche, um sie zu aktivieren oder zu deaktivieren.
 
@@ -71,7 +71,7 @@ Im folgenden Screenshot wird ein Beispiel der Berechnungsergebnisse in **Kostens
 - Das Feld **Offene zugesagte Kosten** zeigt die Zahlungszusagen für Artikel, Stunden und Dienstleistungen an, die Sie bestellt oder erhalten, aber noch nicht bezahlt haben. 
 - Wenn alle Verbrauchserfassungen gebucht wurden, werden die zugehörigen Kosten im Feld **Istkosten** angezeigt.
 
-![Beispiel Berechnungsergebnisse in Kostensteuerung für Anlagen](media/02-controlling-and-reporting.png)
+![Beispiel Berechnungsergebnisse in Kostensteuerung für Anlagen.](media/02-controlling-and-reporting.png)
 
 Eine weitere Möglichkeit der Erstellung einer Kostenberechnung ist die Mehrfachauswahl von Anlagen in **Alle Anlagen** oder **Aktive Anlagen**. Klicken Sie anschließend auf die Schaltfläche **Kostensteuerung** auf der Registerkarte **Allgemein** . Im Dialogfeld **Kostensteuerung für Anlagen** werden die ausgewählten Anlagen automatisch in das Feld **Anlage** auf dem Inforegister **Einzuschließende Datensätze** eingefügt. Klicken Sie auf **OK**, und eine Kostenberechnung für die ausgewählten Anlagen wird angezeigt. Das gleiche Verfahren kann für Technische Standorte in **Alle Technischen Standorte** oder **Aktive Technische Standorte** und für Arbeitsaufträge in **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** durchgeführt werden.
 
@@ -99,7 +99,7 @@ Im folgenden Screenshot wird ein Beispiel der Berechnungsergebnisse in **Datumsk
 - Das Feld **Durchschn. Endverzögerung** zeigt die Differenz in Tagen zwischen dem geplanten Enddatum für einen Arbeitsauftrag im Vergleich zum tatsächlichen Enddatum an. Wenn beispielsweise das tatsächliche Enddatum drei Tage nach dem geplanten Enddatum war, wird „3“ in diesem Feld angezeigt.  
 - Die Felder **Vorkommen** zeigen die Zahl der Häufigkeitsabweichungen in Bezug auf das geplante und das tatsächliche Startdatum und das geplante und tatsächliche Enddatum des Arbeitsauftrags an.
 
-![Beispiel Berechnungsergebnisse in Datumskontrolle für Arbeitsaufträge](media/03-controlling-and-reporting.png)
+![Beispiel Berechnungsergebnisse in Datumskontrolle für Arbeitsaufträge.](media/03-controlling-and-reporting.png)
 
 
 

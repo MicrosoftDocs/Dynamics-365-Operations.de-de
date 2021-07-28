@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 222bb25b6851fe60f3d872e5d7431094ac916dd4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 206f0096f481fc37d05a8258535c016e2834e732
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791005"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352203"
 ---
 # <a name="product-collection-modules"></a>Produktsammelmodule
 
@@ -40,7 +40,7 @@ Die Quelle für Produktsammlungen kann eine der vier folgenden Listentypen sein:
 
 Die folgende Abbildung zeigt die verschiedenen Arten von Produktsammlungen, die auf einer E-Commerce-Site verwendet werden.
 
-![Beispiel für die verschiedenen Arten von Produktsammlungen auf einer E-Commerce-Website](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Beispiel für die verschiedenen Arten von Produktsammlungen auf einer E-Commerce-Website.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Verwenden Sie immer Produktsammelmodule, um eine Gruppe von Produkten eines ähnlichen Typs anzuzeigen.

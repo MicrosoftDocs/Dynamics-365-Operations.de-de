@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: e0b0eb1466d962fb04566b936322db1e4c28f830
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103167"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359786"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerabwicklung eingehender Ladungen für Bestellungen
 
@@ -30,7 +30,7 @@ Für jede eingehende Ladung sollte Ihr System bereits einen zugehörigen Kundena
 
 Die folgende Abbildung zeigt den typischen Ablauf für die Bearbeitung eingehender Ladungen mit Bestellmengen, wenn diese in Ihrem Lager eintreffen.
 
-![Der Eingangsladebehandlungsprozess](media/inbound-process.png "Der Eingangsladebehandlungsprozess")
+![Der Eingangsladebehandlungsprozess.](media/inbound-process.png "Der Eingangsladebehandlungsprozess")
 
 1. **Der Lieferant bestätigt die Bestellung.**
 
@@ -293,7 +293,7 @@ In diesem Abschnitt erstellen Sie einen Menüpunkt für mobile Geräte und füge
 
     Sie können alle anderen Einstellungen auf ihren Standardwerten belassen.
 
-    ![Einstellungen von Menüelementen für ein mobiles Gerät](media/inbound-mobile-menu-items.png "Einstellungen von Menüelementen für ein mobiles Gerät")
+    ![Einstellungen von Menüelementen für ein mobiles Gerät.](media/inbound-mobile-menu-items.png "Einstellungen von Menüelementen für ein mobiles Gerät")
 
     Weitere Informationen zu, Einrichten von Menüelementen für Mobilgeräte finden Sie unter [Richten Sie mobile Geräte für die Lagerarbeit ein](configure-mobile-devices-warehouse.md).
 
@@ -328,7 +328,7 @@ In diesem Verfahren erstellen Sie manuell eine Bestellung und eine zugehörige L
     - Im Inforegister **Ladung** ist das Feld **Ladungsstatus** auf _Offen_ festgelegt.
     - Im Abschnitt **Ladungszeile** gibt es eine einzelne Zeile, in der das Feld **Menge** auf _10_ und das Feld **Aus Arbeit erstellt Menge** auf _0_ (Null) festgelegt ist.
 
-    ![Ladungsdetails](media/inbound-load-details.png "Ladungsdetails")
+    ![Ladungsdetails.](media/inbound-load-details.png "Ladungsdetails")
 
 1. Im Aktivitätsbereich auf der Registerkarte wählen Sie **Liefern und Empfangen** und wählen dann **Bestätigen \> Eingehende Lieferung**. Beachten Sie, dass der **Status der Ladung** auf _Versandt_ geändert hat.
 1. Notieren Sie sich den Wert der **Ladungs-ID**, damit Sie ihn in der nächsten Prozedur verwenden können.

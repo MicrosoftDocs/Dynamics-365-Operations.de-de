@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 3e72959d79e9b3b03e061a0f26750e3bd025219e
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d6b24446a5944eb82334dc5dc1f0b15656f83a12
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910208"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358025"
 ---
 # <a name="small-parcel-shipping"></a>Kleinpaketlieferung
 
@@ -274,7 +274,7 @@ Gehen Sie folgendermaßen vor, um die Lieferung zu verpacken.
 
     Das Adressetikett sollte jetzt auf dem zuvor ausgewählten ZPL-Drucker gedruckt werden. Es sollte dem folgenden Beispiel ähneln.
 
-    ![Beispieladressetikett](media/sps-label-example.png "Beispieladressetikett")
+    ![Beispieladressetikett.](media/sps-label-example.png "Beispieladressetikett")
 
 1. Beachten Sie, dass die Werte für **Containermanifestierungs-ID** und **Gesamtfracht** als vom Spediteur erhalten hinzugefügt wurden.
 

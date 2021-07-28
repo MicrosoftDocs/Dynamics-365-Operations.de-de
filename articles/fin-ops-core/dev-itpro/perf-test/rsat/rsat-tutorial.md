@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: a194e14c76827650e6752f331081ebe0c2130a13
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d932a0c10df72dbadcc65d7ef78eb8ad05645bd5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866155"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357517"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool-Tutorial
 
@@ -67,11 +67,11 @@ Mit RSAT können Sie dieselbe Aufgabenaufzeichnung mit mehreren Testfällen verw
 
 Diese Funktion kann verwendet werden, um zu überprüfen, ob eine Aktivität stattfand. Wenn ein Produktionsauftrag beispielsweise erstellt, vorkalkuliert und dann gestartet wird, zeigt die App eine „Produktion – Start“-Nachricht, die Sie darüber zu informieren, dass der Produktionsauftrag gestartet wurde.
 
-![Produktion – Start-Benachrichtigung](./media/use_rsa_tool_05.png)
+![Produktion – Start-Benachrichtigung.](./media/use_rsa_tool_05.png)
 
 Sie können diese Meldung über RSAT überprüfen, indem Sie den Nachrichtentext auf der Registerkarte **MessageValidation** der Excel-Parameterdatei für die entsprechende Erfassung eingeben.
 
-![Registerkarte Nachrichtenvalidierung](./media/use_rsa_tool_06.png)
+![Registerkarte „Nachrichtenvalidierung“.](./media/use_rsa_tool_06.png)
 
 Nachdem der Testfall ausgeführt wurde, wird die Nachricht in der Excel-Parameterdatei mit der Nachricht verglichen, die angezeigt wird. Wenn die Nachrichten nicht übereinstimmen, schlägt der Testfall fehl.
 
@@ -104,11 +104,11 @@ Wenn Sie den Testfall ausführen, generiert RSAT Snapshots (Bilder) der Schritte
 
 Die folgende Abbildung zeigt den Ablauf für dieses Szenario.
 
-![Ablauf für das Demoszenario](./media/use_rsa_tool_14.png)
+![Ablauf für das Demoszenario.](./media/use_rsa_tool_14.png)
 
 Die folgende Abbildung zeigt die Geschäftsprozesshierarchie für dieses Szenario im LCS Business Process Modeler.
 
-![Geschäftsprozesse für das Demoszenario](./media/use_rsa_tool_15.png)
+![Geschäftsprozesse für das Demoszenario.](./media/use_rsa_tool_15.png)
 
 ## <a name="strategy--key-learning"></a>Strategie – Wichtige Lernpunkte
 

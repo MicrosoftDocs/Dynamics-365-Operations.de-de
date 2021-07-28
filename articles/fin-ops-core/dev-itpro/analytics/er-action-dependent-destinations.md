@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: e9c9143bdbab450b1793b15937d123607361add6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893577"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358668"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Aktivitätsabhängige EB-Ziele konfigurieren
 
@@ -69,11 +69,11 @@ Zum Beispiel können Sie das EB-Format **Freitextrechnung (Excel)** verwenden, u
 
 Die folgende Abbildung zeigt, wie Sie diese Konfiguration von EB-Zielen als Satz einzelner Zieldatensätze erreichen können, wenn jeder Datensatz für eine einzelne Benutzeraktion konfiguriert ist:
 
-![Zielseite für die elektronische Berichterstellung mit aktivitätsabhängigen Zieleinstellungen für ein EB-Format, wenn jeder Zieldatensatz für eine einzelne Benutzeraktion konfiguriert ist](./media/er-destination-action-dependent-01.png)
+![Zielseite für die elektronische Berichterstellung mit aktivitätsabhängigen Zieleinstellungen für ein EB-Format, wenn jeder Zieldatensatz für eine einzelne Benutzeraktion konfiguriert ist.](./media/er-destination-action-dependent-01.png)
 
 Die folgende Abbildung zeigt, wie Sie das Gleiche erreichen können, indem Sie alternativ EB-Ziele als Satz einzelner Zieldatensätze konfigurieren, wenn jeder Datensatz für ein einzelnes Ziel konfiguriert ist:
 
-![Zielseite für die elektronische Berichterstellung mit aktivitätsabhängigen Zieleinstellungen für ein EB-Format, wenn jeder Zieldatensatz für ein einzelnes Ziel konfiguriert ist](./media/er-destination-action-dependent-01a.png)
+![Zielseite für die elektronische Berichterstellung mit aktivitätsabhängigen Zieleinstellungen für ein EB-Format, wenn jeder Zieldatensatz für ein einzelnes Ziel konfiguriert ist.](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > Wenn für das laufende EB-Format ein Aktionscode bereitgestellt wird, für diesen Aktionscode jedoch keine Ziele konfiguriert wurden, wird das [standardmäßige](electronic-reporting-destinations.md#default-behavior) Zielverhalten angewendet.
@@ -84,7 +84,7 @@ Wenn ein EB-Format ausgeführt wird und Benutzeraktionen von Benutzern bereitges
 
 Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Ziele für elektronisches Berichterstellungsformat**, das angezeigt wird, wenn eine Freitextrechnung [gebucht wird](../../../finance/accounts-receivable/create-free-text-invoice-new.md) und das EB-Format **Freitextrechnung (Excel)** ausgeführt wird, um dieses Dokument zu generieren, wenn die Aktion **Drucker** bereitgestellt wurde und EB-Ziele für dieses Format konfiguriert wurden (siehe weiter oben in diesem Thema).
 
-![Dialogfeld, in dem Sie die anfänglich konfigurierten EB-Ziele für das laufende EB-Format ändern können](./media/er-destination-action-dependent-02.gif)
+![Dialogfeld, in dem Sie die anfänglich konfigurierten EB-Ziele für das laufende EB-Format ändern können.](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > Wenn Sie EB-Ziele für mehrere Komponenten des laufenden EB-Formats konfiguriert haben, wird für jede konfigurierte Komponente des EB-Formats eine separate Option angeboten.
@@ -103,7 +103,7 @@ Befolgen Sie diese Schritte, um den bereitgestellten Benutzeraktionscode zu übe
 6. Auf der Seite **Konfigurations-Debug-Protokolle** filtern Sie die EB-Ausführungsprotokolle, um das Protokoll für Ihre EB-Formatausführung zu finden.
 7. Überprüfen Sie die Protokolleinträge, die den Datensatz enthalten müssen, der den bereitgestellten Benutzeraktionscode enthält, wenn für die EB-Formatausführung eine Aktion bereitgestellt wurde.
 
-    ![Protokollprotokollseite für elektronische Berichterstellung, die Informationen zum Benutzeraktionscode enthält, der für die gefilterte Ausführung eines EB-Formats bereitgestellt wurde](./media/er-destination-action-dependent-03.png)
+    ![Protokollprotokollseite für elektronische Berichterstellung, die Informationen zum Benutzeraktionscode enthält, der für die gefilterte Ausführung eines EB-Formats bereitgestellt wurde.](./media/er-destination-action-dependent-03.png)
 
 ## <a name=""></a><a name="reports-list-wave1">Liste der Geschäftsdokumente (Zyklus 1)</a>
 

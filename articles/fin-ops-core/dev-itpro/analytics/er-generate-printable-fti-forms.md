@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9e64899e0bbdb5a9d8899e865de9ee32aae59382
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f5556195a1a787420061fbcaef5d97ac47823221
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751655"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359004"
 ---
 # <a name="generate-printable-fti-forms"></a>Generieren von druckbaren FTI-Formularen
 
@@ -77,7 +77,7 @@ Um FTR-Formulare mithilfe eines EB-Frameworks zu generieren, können Sie EB-Form
 3. Wählen Sie die Dokumentebene aus, um den Bereich von Rechnungen für das Verarbeiten anzugeben.
 4. Wählen Sie das EB-Format für die angegebene Dokumentebene aus.
 
-![Druckverwaltungseinstellungen](media/FTIbyGER-PMSetting.png)
+![Druckverwaltungseinstellungen.](media/FTIbyGER-PMSetting.png)
 
 > [!NOTE]
 > Nur EB-Formate, die den Stammdeskriptor **FreeTextInvoice** des Datenmodells **CustomersInvoicing** verwenden, werden im Feld **Berichtsformatsuche** für das ausgewählte Format angezeigt.
@@ -87,9 +87,9 @@ FTR-Formulare werden im EB-Framework in gleicher Weise generiert wie SSRS-Berich
 
 Um FTR-Formulare zu generieren, können Sie Rechnungen entweder nach Bereich oder nach Auswahl auswählen. 
 
-![Rechnungsauswahl](media/FTIbyGER-InvoiceSelection.png)
+![Rechnungsauswahl.](media/FTIbyGER-InvoiceSelection.png)
 
-![Rechnungsvorschau](media/FTIbyGER-InvoiceExcelPreview.png)
+![Rechnungsvorschau.](media/FTIbyGER-InvoiceExcelPreview.png)
 
 Wenn Sie EB-Formate verwenden, um auf diese Weise FTR-Formulare zu drucken, werden die standardmäßigen EB-Dateiziele verwenden. Das Ziel kann nicht geändert werden. Weitere Informationen zur Konfiguration der ER-Ziele für ER-Formate finden Sie unter [Elektronische Berichtsziele (ER)](electronic-reporting-destinations.md).
 
@@ -101,9 +101,9 @@ Sie können auch FTR-Formulare generieren, wenn Sie eine FTR buchen, indem Sie *
 > - **Name:** ERFormatDestinationRuntimeMaintain
 > - **Bezeichnung:** Zielort für elektronisches Berichterstellungsformat zur Laufzeit verwalten
 
-![Zielort für elektronische Berichterstellung](media/FTIbyGER-ERFileDestinationSetting.png)
+![Zielort für elektronische Berichterstellung.](media/FTIbyGER-ERFileDestinationSetting.png)
 
-![Ziele für elektronisches Berichterstellungsformat](media/FTIbyGER-ERFileDestinationUsage.png)
+![Ziele für elektronisches Berichterstellungsformat.](media/FTIbyGER-ERFileDestinationUsage.png)
 
 Das EB-Framework unterstützt aktuell die folgenden Ziele für generierte Dokumente:
 
@@ -128,7 +128,7 @@ Sie können Beispiel-EB-Konfigurationen herunterladen, um sie als Vorlage für I
 ### <a name="features-that-are-implemented-in-the-sample-er-format"></a>Funktionen, die im Beispiel-ER-Format implementiert werden
 In der Beispiel-EB-Formatkonfiguration wird eine Excel-Datei als Vorlage verwendet, um FTR-Formulare zu generieren.
 
-![Formatdesigner](media/FTIbyGER-ERFormat.png)
+![Formatdesigner.](media/FTIbyGER-ERFormat.png)
 
 Momentan unterstützt dieses Beispiel-EB-Format die folgenden Funktionen, um FTR-Formulare zu generieren:
 
@@ -179,7 +179,7 @@ Außer dem generierten Rechnungsformular können Girogeldüberweisungsbeleg folg
 - Für die juristische Person, die den Landes-/Regionskontext für Finnland verwendet und mindestens ein Bankkonto hat, das als **Girokonto** und **Bankstrichcode** markiert ist. 
 - Für eine Rechnung, die für den zugeordneten Zahlungsanhang **Finnisch** als erforderlich markiert ist.
 
-![Girobeleg](media/FTIbyGER-GiroSlip.PNG)
+![Girobeleg.](media/FTIbyGER-GiroSlip.PNG)
 
 > [!NOTE]
 > Das Beispiel-EB-Format ist so konfiguriert worden, dass es optional die Girogeldüberweisungsbelege in einem getrennten Arbeitsblatt generiert.
@@ -194,7 +194,7 @@ Die folgenden Elemente des Beispiel-EB-Formats verwenden, um E-Mail-Ziele zu kon
 - Auf den E-Mail-Betrefftext kann über den folgenden EB-Ausdruck zugegriffen werden: **Emailing.TxtToUse.Subject**.
 - Auf den E-Mail-Textkörper kann über den folgenden EB-Ausdruck zugegriffen werden: **Emailing.TxtToUse.Body**.
 
-![Zielorteinstellungen](media/FTIbyGER-ERFileDestinationSettingEmail.png)
+![Zielorteinstellungen.](media/FTIbyGER-ERFileDestinationSettingEmail.png)
 
 Der Standardtext des Betreffs und des Textkörpers der E-Mail wird im Beispiel-EB-Format definiert. Die Sprache hängt von den Bezeichnungen des Formats ab. Dieser Standardtext wird für E-Mails verwendet, wenn eine benutzerdefinierte Organisations-E-Mail-Vorlage, die die vordefinierte **ERFTITMP**-Kennung aufweist, nicht hinzugefügt wurde.
 
@@ -203,9 +203,9 @@ Der Standardtext des Betreffs und des Textkörpers der E-Mail wird im Beispiel-E
 
 Wenn die Organisations-E-Mail-Vorlage, die die vordefinierte **ERFTITMP**-Kennung aufweist, für die juristische Person hinzugefügt wurde, für die Sie die Rechnung verarbeiten, wird die Vorlage für den E-Mail-Betreff und -Textkörper verwendet, um die E-Mail zu generieren. 
 
-![Organisations-E-Mail-Vorlagen](media/FTIbyGER-EmailTemplate.png)
+![Organisations-E-Mail-Vorlagen.](media/FTIbyGER-EmailTemplate.png)
 
-![E-Mail-Vorlage hochladen](media/FTIbyGER-EmailTemplateBody.png)
+![E-Mail-Vorlage hochladen.](media/FTIbyGER-EmailTemplateBody.png)
 
 Der EB-Ausdruck **Emailing.TxtToUse.Subject** des Beispiel-EB-Formats wird so konfiguriert, dass sämtliche Vorkommen des Platzhalters %1 durch die Kennung der verarbeitenden Rechnung ersetzt werden.
 
@@ -218,10 +218,10 @@ Der Ausdruck **Emailing.TxtToUse.Body** des Beispielformats wird für die folgen
 - "%5" wird durch den Stellentitel der Kontaktperson des Unternehmens ersetzt.
 - "%6" wird durch die E-Mail-Adresse der Kontaktperson des Unternehmens ersetzt.
 
-![E-Mail](media/FTIbyGER-Email.PNG)
+![E-Mail.](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-[Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)
+[Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

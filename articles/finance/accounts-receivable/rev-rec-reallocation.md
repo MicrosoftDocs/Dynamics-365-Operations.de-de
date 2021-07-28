@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2d961cb4eedda6265b4acd8dbd6f82e8026373fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 37c3da576b79d3ae9f6983b5046343a7c8120de6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820568"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356124"
 ---
 # <a name="revenue-recognition-reallocation"></a>Neuzuweisung der Umsatzerkennung
 
@@ -48,7 +48,7 @@ Weil Neuzuweisungen bei Aufträgen erfolgen können, die teilweise oder vollstä
 
 Jede Organisation muss entscheiden, ob durch die Korrektur nur das Hauptbuch aktualisiert werden soll oder auch die Debitorenkonten. Diese Entscheidung bestimmt, welche Einstellung für die Option **Rechnungskorrekturen auf Debitorenkonten buchen** auf der Registerkarte **Umsatzerkennung** der Seite **Hauptbuchparameter** (**Umsatzerkennung \> Einrichtung \> Hauptbuchparameter**) festzulegen ist. Die Einstellung richtet sich nach dem Anwendungsfall. Weitere Informationen zu möglichen Anwendungsfällen erhalten Sie an späterer Stelle in diesem Artikel über die Links im Abschnitt [Szenarien zur Neuzuweisung](#scenarios-for-reallocation).
 
-[![Registerkarte „Umsatzerkennung“ auf der Seite „Hauptbuchparameter“](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
+[![Registerkarte „Umsatzerlöserkennung“ auf der Seite „Hauptbuchparameter“.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
 Ist die Option **Rechnungskorrekturen auf Debitorenkonten buchen** auf **Ja** gesetzt, führt die Neuzuweisung zu folgendem Ergebnis:
 
@@ -74,9 +74,9 @@ Wie bereits erwähnt, kann nur das Hauptbuch oder sowohl das Hauptbuch als auch 
 
 ## <a name="run-the-reallocation-process"></a>Neuzuweisung ausführen
 
-Um eine Neuzuweisung auszuführen, wählen Sie in einem beliebigen Auftrag, bei dem eine Neuzuweisung erforderlich ist, die Option **Preis mit neuen Auftragspositionen erneut zuteilen** aus. Alternativ wählen Sie **Umsatzerkennung \> Periodische Aufgaben \> Preis mit neuen Auftragspositionen erneut zuteilen** aus, und geben Sie dann die entsprechenden Filter ein, z. B. das Debitorenkonto.
+Um eine Neuzuweisung auszuführen, wählen Sie in einem beliebigen Auftrag, bei dem eine Neuzuweisung erforderlich ist, die Option **Preis mit neuen Auftragspositionen erneut zuteilen** aus. Alternativ wählen Sie **Umsatzerlöserkennung \> Periodische Aufgaben \> Preis mit neuen Auftragspositionen erneut zuteilen** aus, und geben Sie dann die entsprechenden Filter ein, z. B. das Debitorenkonto.
 
-[![Seite „Preis mit neuen Auftragspositionen erneut zuteilen“](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
+[![Seite „Preis mit neuen Auftragspositionen erneut zuteilen“.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
 Das obere Raster auf der Seite **Preis mit neuen Auftragspositionen erneut zuteilen** heißt **Aufträge**. In ihm sind die Aufträge des Kunden aufgeführt. Wählen Sie die Aufträge aus, bei denen eine Neuzuweisung erforderlich ist. Projektaufträge können nicht ausgewählt werden, weil bei diesen keine Neuzuweisung möglich ist. Auch Aufträge, die bereits eine Neuzuweisungs-ID haben, können nicht ausgewählt werden, weil bei einem Auftrag immer nur eine Neuzuweisung möglich ist. Hat ein Auftrag eine Neuzuweisungs-ID, wurde er bereits von einem anderen Benutzer zwecks einer Neuzuweisung markiert.
 
@@ -86,11 +86,11 @@ Nach Auswahl der erforderlichen Auftragspositionen, verwenden Sie die Schaltflä
 
 - **Neuzuweisung aktualisieren**: Für die ausgewählten Auftragspositionen werden die neuen Umsatzerlöspreise berechnet. Wurde eine Position gelöscht oder storniert, erfolgt die Neuzuweisung nur bei den vorhandenen ausgewählten Positionen. Die folgende Abbildung zeigt ein Beispiel für Auftragspositionen vor Aktualisierung der Neuzuweisung.
 
-    [![Auftragspositionen vor Aktualisierung der Neuzuweisung](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
+    [![Auftragspositionen vor Aktualisierung der Neuzuweisung.](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
 
     Die neuen Umsatzerlöspreise werden im Raster **Positionen** in der Spalte **Neu zugewiesener Betrag** angezeigt. Zu diesem Zeitpunkt wurde die Neuzuweisung zwar verarbeitet, eine Berechnung hat aber noch nicht stattgefunden. Die folgende Abbildung zeigt ein Beispiel für Auftragspositionen nach Aktualisierung der Neuzuweisung.
 
-    [![Auftragspositionen nach Aktualisierung der Neuzuweisung](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
+    [![Auftragspositionen nach Aktualisierung der Neuzuweisung.](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
 
 - **Verarbeiten**: Die neu zugewiesenen Umsatzerlöspreise werden verarbeitet oder gebucht. Nach Betätigung dieser Schaltfläche kann die Neuzuweisung nicht mehr rückgängig gemacht werden. Wenn Sie vor Klicken auf **Verarbeiten** nicht auf **Neuzuweisung aktualisieren** geklickt haben, erfolgt die Neuzuweisung automatisch.
 
@@ -100,7 +100,7 @@ Nach Auswahl der erforderlichen Auftragspositionen, verwenden Sie die Schaltflä
 - **Erwarteter Beleg**: Die Buchungen zu allen in Rechnung gestellten Auftragspositionen werden in einer Vorschau angezeigt. Wurden keine Positionen in Rechnung gestellt, wird nichts angezeigt. Wenn Sie vor Klicken auf **Erwarteter Beleg** nicht auf **Neuzuweisung aktualisieren** geklickt haben, erfolgt die Neuzuweisung automatisch.
 - **Neuzuweisung des Umsatzerlöses**: Die Neuzuweisung des Umsatzerlöspreises aller ausgewählten Positionen wird auf einer Seite angezeigt. Die dort angegeben Informationen können nicht geändert werden. Vermerkt sind die Positionsbeträge, die zur Neuzuweisung herangezogen wurden.
 
-    [![Positionsbeträge, die zur Neuzuweisung herangezogen wurden](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
+    [![Positionsbeträge, die zur Neuzuweisung herangezogen wurden.](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
 
 - **Daten für ausgewählten Kunden zurücksetzen**: Wurde die Neuzuweisung begonnen, aber nicht abgeschlossen, werden die Daten aus der Neuzuweisungstabelle nur mit Bezug zum ausgewählten Kunden gelöscht. Wenn Sie beispielsweise mehrere Auftragspositionen zwecks einer Neuzuweisung markieren und die Seite ohne Auswahl von **Verarbeiten** geöffnet lassen, läuft das Zeitlimit der Seite ab. In diesem Fall bleiben die Auftragspositionen markiert, und ein anderer Benutzer kann sie nicht verwenden, um die Neuzuweisung abzuschließen. Die Seite ist beim Öffnen möglicherweise sogar leer. In diesem Fall können Sie mit der Schaltfläche **Daten für ausgewählten Kunden zurücksetzen** unverarbeitete Aufträge löschen, damit ein anderer Benutzer die Neuzuweisung beenden kann.
 

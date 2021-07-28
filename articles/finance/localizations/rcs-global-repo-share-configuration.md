@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ace62319bbfa38bcf4be7157882dd0c8989e25bc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 530cb77ccbca1b6946b5a96cee4e6226ed3467e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838744"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361257"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>ER-Konfigurationen (Electronic Reporting) in Microsoft Regulatory Configuration Services (RCS) /im globalen Repository mit externen Organisationen teilen
 
@@ -47,7 +47,7 @@ Führen Sie die folgenden Schritte aus, um sicherzustellen, dass die Konfigurati
 
 1. Wählen Sie im Arbeitsbereich **Elektronische Berichterstattung** **Repositorys** für Ihren Konfigurationsanbieter aus.
 
-    ![Konfigurationsanbieter](media/1_RCS_Repo_for_config_provider.JPG)
+    ![Konfigurationsanbieter.](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. Wählen Sie **Globales Repository** \> **Öffnen**.
 3. Konfiguration suchen, die Sie freigeben möchten Sie können das Filterfeld verwenden, um Ihre Suche einzugrenzen. Wenn Sie die Konfiguration nicht im globalen Repository finden können, führen Sie die Schritte in [Eine neue Version einer ER-Konfiguration (Electronic Reporting) erstellen und hochladen](rcs-global-repo-upload.md) aus.
@@ -61,11 +61,11 @@ Nachdem eine Konfiguration unter Ihrem Konfigurationsanbieter erstellt wurde, k�
 3. Konfiguration auswählen, die Sie freigeben möchten
 4. Wählen Sie auf dem Inforegister **Geteilt mit** eine **Organisation** aus.
 
-    ![Inforegister „Geteilt mit“](media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Inforegister „Geteilt mit“.](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. Geben Sie im Dialogfeld den Domänennamen für die externe Organisation ein und wählen Sie dann **OK**.
 
-    ![Dialogfeld „Konfigurationsversion für externes Organisation freigeben“](media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Dialogfeld „Konfigurationsversion für externes Organisation freigeben“.](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 Die Konfiguration wird für die externe Organisation freigegeben und steht dieser Organisation im globalen Repository zur Verfügung. Von dort kann es in die RCS-Instanz der Organisation oder in deren Instanzen von Finance and Operations-Apps importiert werden.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 60d566e3ef1fa4bc0cea960f7c75094f51823550
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4ff6b8495f3ef0d75ffc8f829a9f332f507789d0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838225"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358049"
 ---
 # <a name="quality-check"></a>Qualitätsprüfung
 
@@ -310,7 +310,7 @@ Nachdem die Bestellung erstellt wurde, kann sie über das Menüelement **PO-Posi
 
     Eine Seite **Qualitätsprüfung** öffnet sich, die aber keine Eingagefelder enthält. Sie hat nur die Bestätigungstaste (Häkchen) unten und die Menütaste (**≡**) oben. (Die Menütaste wird manchmal als Hamburger- oder Hamburgerschaltfläche bezeichnet.) Um den Qualitätsprüfungsprozess zu beschleunigen, bestätigt der Benutzer nur die Seite **Qualitätsprüfung**, wenn die Palette die Qualitätsprüfung passiert.
 
-    ![Qualitätsprüfungsseite](media/quality-check.png "Qualitätsprüfungsseite")
+    ![Qualitätsprüfungsseite.](media/quality-check.png "Qualitätsprüfungsseite")
 
 1. Wählen Sie die Bestätigungsschaltfläche, um die Qualitätsprüfung für Palette 1 aus Position 1 als bestanden zu kennzeichnen.
 

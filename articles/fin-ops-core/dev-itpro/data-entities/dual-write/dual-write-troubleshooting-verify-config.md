@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: af746d1d20ddd1552bce797288c6d62d69d7bd16
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d903d58fbd5e9d6bd9ecf7943d09525446721ba2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748848"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350763"
 ---
 # <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Überprüfen der Konfiguration von dualem Schreiben in Finance and Operations-Apps und Dataverse
 
@@ -39,11 +39,11 @@ Um festzustellen, ob die Fehler, die beim Speichern von Zeilen für die Aktualis
 
 + Wenn Sie Administratorrechte in der Finance and Operations App haben, gehen Sie zu **Arbeitsbereiche \> Datenmanagement** und wählen Sie die Kachel **Duales Schreiben**. Wenn die Details der verknüpften Umgebungen und die Liste der ausgeführten Tabellenzuordnungen angezeigt werden, ist Dual-Write konfiguriert.
 
-    ![Überprüfen der Finance and Operations App-Verbindung, wenn Sie über Administratorrechte verfügen](media/verify_fin_ops_1.png)
+    ![Überprüfen der Finance and Operations-App-Verbindung, wenn Sie über Administratorrechte verfügen.](media/verify_fin_ops_1.png)
 
 + Wenn Sie keine Administratorrechte haben, erhalten Sie eine Fehlermeldung: *Daten können nicht in die Entität geschrieben werden \<entity name\>*. Im Beispiel in der folgenden Abbildung können Sie keine Kundenzeile in der Finance and Operations-App erstellen, da Dual-Write konfiguriert ist, die Referenzdaten für die Kundengruppe und die Zahlungsbedingungen in Dataverse jedoch nicht vorhanden sind.
 
-    ![Überprüfen der Finance and Operations App-Verbindung, wenn Sie über keine Administratorrechte verfügen](media/verify_fin_ops_2.png)
+    ![Überprüfen der Finance and Operations-App-Verbindung, wenn Sie über keine Administratorrechte verfügen.](media/verify_fin_ops_2.png)
 
 Informationen zum Beheben von Problemen beim Erstellen von Daten in Finance and Operations Apps, siehe [Beheben Sie Probleme mit der Live-Synchronisierung](dual-write-troubleshooting-live-sync.md).
 
@@ -51,7 +51,7 @@ Informationen zum Beheben von Problemen beim Erstellen von Daten in Finance and 
 
 Wenn Sie Daten erstellen, sehen Sie die Spalte **Unternehmen** auf Seiten in Dataverse. Duales Schreiben ist konfiguriert.
 
-![Überprüfen der Dataverse Verbindung](media/verify_cds.png)
+![Überprüfen der Dataverse-Verbindung.](media/verify_cds.png)
 
 Informationen zum Beheben von Problemen beim Erstellen von Daten in Dataverse Apps, siehe [Beheben Sie Probleme mit der Live-Synchronisierung](dual-write-troubleshooting-live-sync.md).
 

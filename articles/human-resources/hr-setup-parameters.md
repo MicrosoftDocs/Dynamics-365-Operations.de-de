@@ -2,7 +2,7 @@
 title: Parameter in Human Resources konfigurieren
 description: Dieses Thema erklärt, wie Sie firmenspezifische Parameter in Dynamics 365 Human Resources festlegen.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4c93e3d2644a380e3d5d2247961a8b6fb34568
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 24d30aa06805b530cc069be0517279a11dff9ed4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052408"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356535"
 ---
 # <a name="configure-human-resources-parameters"></a>Parameter in Human Resources konfigurieren
 
@@ -30,7 +30,7 @@ Die Einstellungen einiger Human Resources-Parameter sind firmenübergreifend, w�
 
 Zum Festlegen der Human Resources-Parameter werden zwei Seiten verwendet. Für Parameter, die innerhalb des Unternehmens freigegeben werden, verwenden Sie die Seite **Freigegeben Parameter für Personalverwaltung**. Für Parameter, die unternehmensspezifisch sind (das heißt, die Einstellungen beziehen sich auf ein einzelnes Unternehmen), verwenden Sie die Seite **Personalverwaltungsparameter**.
 
-![Gehen Sie zu Human Resources-Parameter](./media/hr-employee-self-service-human-resources-parameters.png)
+![Gehen Sie zu Personalverwaltungsparameter.](./media/hr-employee-self-service-human-resources-parameters.png)
 
 Auf der Seite **Personalverwaltungsparameter** sind die Einstellungen in sechs Registerkarten unterteilt:
 
@@ -51,14 +51,15 @@ Jede Registerkarte enthält Informationen, die sich auf ein einzelnes Unternehme
 
 Die Einstellungen auf der Registerkarte **Allgemein** definieren die Darstellung von Informationen zu Abwesenheitszeiten, Verletzung und Krankheit und Neueinstellungen. Die Einstellungen in dieser Registerkarte können auch mehrere Standardeingaben definieren, die angezeigt werden, während Sie arbeiten. Auf dieser Registerkarte können Sie insbesondere:
 
-- Eine Farbe auswählen, die auf offene Transaktionen zur Abwesenheit angewendet werden soll
-- die Formatvorlage für die Berichte festlegen
-- die Integration zwischen Schulungskursen und Abwesenheitsregistrierung aktivieren
+- Eine Farbe auswählen, die auf offene Transaktionen zur Abwesenheit angewendet werden soll.
+- die Formatvorlage für die Berichte festlegen.
+- die Integration zwischen Schulungskursen und Abwesenheitsregistrierung aktivieren.
 - Den Abwesenheitscode auswählen, der zur Steuerung dieser Integration verwendet wird.
 - Geben Sie an, wie lange Fälle von Verletzungen und Krankheiten aufbewahrt werden sollen.
 - Legen Sie die Standard-Identifikationsnummer fest, die angezeigt wird, wenn eine neue Arbeitskraft eingestellt wird.
+- Geben Sie das Datum an, das zur Berechnung der Dienstjahre verwendet wird. 
 
-![Registerkarte „Allgemeines“](./media/hr-setup-parameters-general.png)
+![Registerkarte „Allgemeines“.](./media/hr-setup-parameters-general.png)
 
 ## <a name="recruitment"></a>Personalbeschaffung
 
@@ -76,7 +77,7 @@ In Human Resources können Sie auf der Registerkarte **Vergütung** wählen, ob 
 
 Weitere Informationen über Vergütungen finden Sie unter [Übersicht über Vergütungspläne](hr-compensation-overview.md).
 
-![Registerkarte „Vergütung“](./media/hr-setup-parameters-compensation.png)
+![Registerkarte „Vergütung“.](./media/hr-setup-parameters-compensation.png)
 
 ## <a name="number-sequences"></a>Nummernkreise
 
@@ -96,13 +97,13 @@ Weitere Informationen finden Sie unter [Übersicht über Nummernkreise](../fin-o
 > [!NOTE]
 > Die Anzahl der gearbeiteten Stunden kann 1,250 Stunden und eine Beschäftigungsdauer von 12 Monate nicht überschreiten. Diese maximalen Werte sind in Übereinstimmung mit dem Bundesgesetz in den USA festgelegt.
 
-![Registerkarte Nummernkreise](./media/hr-setup-parameters-number-sequences.png)
+![Registerkarte „Nummernkreise“.](./media/hr-setup-parameters-number-sequences.png)
 
 ## <a name="fmla"></a>FMLA
 
 Auf der Registerkarte FMLA legen Sie die FMLA-Berechtigungsvoraussetzungen und die FMLA-Anspruchsstunden fest. Weitere Informationen finden Sie unter [Urlaub- und Abwesenheitsparameter konfigurieren](hr-leave-and-absence-parameters.md).
 
-![Registerkarte FMLA](./media/hr-setup-parameters-fmla.png)
+![Registerkarte FMLA.](./media/hr-setup-parameters-fmla.png)
 
 ## <a name="employee-self-service"></a>Mitarbeiter-Self-Service
 
@@ -115,7 +116,7 @@ Die Einstellungen auf der Registerkarte **Mitarbeiter-Self-Service** beeinflusse
 
 Weitere Informationen zum Festlegen des Mitarbeiter-Self-Service finden Sie unter [Übersicht über den Mitarbeiter- und Manager-Self-Service](hr-employee-manager-self-service-overview.md).
 
-![Registerkarte Mitarbeiter-Self-Service](./media/hr-setup-parameters-employee-self-service.png)
+![Registerkarte Mitarbeiter-Self-Service.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Manager-Self-Service
 
@@ -129,13 +130,13 @@ Die Einstellungen auf der Registerkarte **Manager-Self-Service** beeinflussen, w
 
 Weitere Informationen zum Einrichten des Manager-Self-Service finden Sie unter [Übersicht über den Mitarbeiter- und Manager-Self-Service](hr-employee-manager-self-service-overview.md).
 
-![Registerkarte Manager-Self-Service](./media/hr-setup-parameters-manager-self-service.png)
+![Registerkarte Manager-Self-Service.](./media/hr-setup-parameters-manager-self-service.png)
 
-## <a name="benefits-management"></a>Vergütungsverwaltung
+## <a name="benefits-management"></a>Vorteilsverwaltung
 
 Auf der Registerkarte Manager-Selfservice können Sie E-Mail-Optionen für den Manager-Selfservice konfigurieren. Informationen zum Festlegen und Verwenden der Vorteilsverwaltung finden Sie unter [Übersicht zur Vorteilsverwaltung](hr-benefits-management-overview.md).
 
-![Registerkarte Vergütungsverwaltung](./media/hr-setup-parameters-benefits-management.png)
+![Registerkarte „Vorteilsverwaltung“.](./media/hr-setup-parameters-benefits-management.png)
 
 ## <a name="leave-and-absence"></a>Beurlaubung und Abwesenheit
 
@@ -145,7 +146,7 @@ Informationen zum Festlegen und Verwenden von Urlaub und Abwesenheit finden Sie 
 
 Auf der Registerkarte **Zahlungsmethoden** können Sie die von Ihrer Organisation unterstützten Zahlungsmethoden auswählen. Weitere Informationen zum Konfigurieren von Vergütungen finden Sie unter [Übersicht über Vergütungspläne](hr-compensation-overview.md).
 
-![Registerkarte Zahlungsarten](./media/hr-setup-parameters-payment-methods.png)
+![Registerkarte „Zahlungsmethoden“.](./media/hr-setup-parameters-payment-methods.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

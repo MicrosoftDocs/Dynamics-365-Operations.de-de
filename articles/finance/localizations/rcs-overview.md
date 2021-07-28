@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: RCS, Regulatory Configuration Services, Localization
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7f946988f124c814452e1774c700d5c7354f39b0
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 8d7020ff1ad1beb06ff7a9ce217f39993c6eceec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216561"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358121"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -41,7 +43,7 @@ RCS bietet folgende Funktionen:
 
 Sie können sich über die [Seite „Regulatory Configuration Service“](https://marketing.configure.global.dynamics.com/) für RCS anmelden oder sich bei RCS anmelden.
 
-![RCS-Registrierung/-Anmeldung](media/202103_RCS%20Marketing%20page_updated_1.jpg)
+![RCS-Registrierung/-Anmeldung.](media/202103_RCS%20Marketing%20page_updated_1.jpg)
 
 Überprüfen und akzeptieren Sie auf der Seite **Regulatory Configuration Service** die ergänzenden Nutzungsbedingungen für den Dienst und wählen Sie dann eine der folgenden Schaltflächen aus:
 
@@ -91,7 +93,7 @@ Weitere Informationen zu den zugehörigen Komponenten finden Sie in den folgende
 
 Wenn Sie sich über die Serviceseite bei RCS anmelden, tritt möglicherweise ein Problem auf, das mit Azure Active Directory (Azure AD) zusammenhängt. Die Fehlermeldung, die Sie erhalten, weist darauf hin, dass die Registrierung für RCS derzeit deaktiviert ist und aktiviert werden muss, bevor Sie den Registrierungsprozess abschließen können.
 
-![Fehlermeldung bei RCS-Registrierung](media/01_RCSSignUpError.jpg)
+![Fehlermeldung bei RCS-Registrierung.](media/01_RCSSignUpError.jpg)
 
 Das Problem tritt auf, weil Sie daran gehindert werden, sich für Ad-hoc-Abonnements anzumelden, und die Eigenschaft `AllowAdHocSubscriptions` in Ihrem Mandanten aktiviert sein muss. 
 

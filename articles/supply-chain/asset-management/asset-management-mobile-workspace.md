@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 98f935a11ad8a5272cde0270f9ae0471411b914a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fb4e2843ecb30b75d2a8d97ceff5b5825e0bd704
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837944"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360124"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Mobilen Arbeitsbereich für Anlagenverwaltung verwenden
 
@@ -60,7 +60,7 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
 1. Nachdem Sie sich angemeldet haben, werden verfügbare Arbeitsbereiche für Ihr Unternehmen angezeigt. Beachten Sie, dass Sie, wenn Ihr Systemadministrator einen neuen Arbeitsbereich später veröffentlicht, die Liste der mobilen Arbeitsbereiche aktualisieren müssen.
 
-    ![Arbeitsbereich auswählen](media/am-mobile-01.png "Arbeitsbereich auswählen")
+    ![Arbeitsbereich auswählen.](media/am-mobile-01.png "Arbeitsbereich auswählen")
 
 ## <a name="view-assigned-work-order-jobs-in-calendar-view"></a>Zugewiesene Arbeitsauftrageinzelaufträge in Kalenderansicht anzeigen
 
@@ -72,7 +72,7 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
 1. Wählen Sie einen Arbeitsauftragseinzelvorgang in der Liste aus, um Detail zum Einzelvorgang anzuzeigen: Details zu Anlage und funktionalem Standort sowie andere Navigationslinks, um **Anhänge**, **Prüflisten**, **Tools**, **Anlagenzähler**, **Notizen**, **Erfassungen** anzuzeigen.
 
-    ![Zugewiesene Arbeitsauftrageinzelaufträge in Kalenderansicht anzeigen](media/am-mobile-02.png "Zugewiesene Arbeitsauftrageinzelaufträge in Kalenderansicht anzeigen")
+    ![Zugewiesene Arbeitsauftrageinzelaufträge in Kalenderansicht anzeigen.](media/am-mobile-02.png "Zugewiesene Arbeitsauftrageinzelaufträge in Kalenderansicht anzeigen")
 
 ## <a name="create-a-work-order-job"></a>Arbeitsauftrageinzelvorgang erstellen
 
@@ -90,7 +90,7 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
 1. Wählen Sie **Fertig**.
 
-    ![Der Bildschirm „Position hinzufügen“](media/am-mobile-03.png "Der Bildschirm „Position hinzufügen“")
+    ![Der Bildschirm „Position hinzufügen“.](media/am-mobile-03.png "Der Bildschirm „Position hinzufügen“")
 
 
 ## <a name="add-attachment-to-a-work-order-job"></a>Einem Arbeitsauftragseinzelvorgang einen Anhang hinzufügen
@@ -112,7 +112,7 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
 1. Wählen Sie **Fertig**.
 
-    ![Anzeigen und Hinzufügen von Anhängen für einen Arbeitsauftrageinzelvorgang](media/am-mobile-04.png "Anzeigen und Hinzufügen von Anhängen für einen Arbeitsauftrageinzelvorgang")
+    ![Anzeigen und Hinzufügen von Anhängen für einen Arbeitsauftrageinzelvorgang.](media/am-mobile-04.png "Anzeigen und Hinzufügen von Anhängen für einen Arbeitsauftrageinzelvorgang")
 
 ## <a name="view-maintenance-checklist-on-a-work-order-job"></a>Wartungsprüfliste zu einem Arbeitsauftragseinzelvorgang anzeigen
 
@@ -129,7 +129,7 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
 1. Klicken Sie auf die Zurück-Schaltfläche (**<**), um zur vorherigen Seite zurückzugelangen.
 
-    ![Wartungsprüfliste und Positionsdetails](media/am-mobile-05.png "Wartungsprüfliste und Positionsdetails")
+    ![Wartungsprüfliste und Positionsdetails.](media/am-mobile-05.png "Wartungsprüfliste und Positionsdetails")
 
 ## <a name="view-and-update-asset-counters-on-a-work-order-job"></a>nlagenzähler zu einem Arbeitsauftragseinzelvorgang anzeigen und aktualisieren
 
@@ -146,7 +146,7 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
 1. Geben Sie einen neuen Gegenwert ein, und wählen Sie **Fertig** aus.
 
-    ![Anlagenzähler anzeigen und aktualisieren](media/am-mobile-06.png "Anlagenzähler anzeigen und aktualisieren")
+    ![Anlagenzähler anzeigen und aktualisieren.](media/am-mobile-06.png "Anlagenzähler anzeigen und aktualisieren")
 
 ## <a name="register-consumption-on-a-work-order-job"></a>Verbrauch in einem Arbeitsauftragseinzelvorgang erfassen
 
@@ -178,7 +178,7 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
     1. Geben Sie den **Einstandspreis** für die Ausgabenerfassung ein.
     1. Wählen Sie **Fertig**.
 
-    ![Arbeitsauftragserfassung aktualisieren](media/am-mobile-07.png "Arbeitsauftragserfassung aktualisieren")
+    ![Arbeitsauftragserfassung aktualisieren.](media/am-mobile-07.png "Arbeitsauftragserfassung aktualisieren")
 
 ## <a name="update-lifecycle-state-on-a-work-order"></a>Lebenszyklusstatus eines Arbeitsauftrags aktualisieren
 
@@ -194,7 +194,7 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
 1. Wählen Sie **Fertig**.
 
-    ![Lebenszyklusstatus eines Arbeitsauftrags aktualisieren](media/am-mobile-08.png "Lebenszyklusstatus eines Arbeitsauftrags aktualisieren")
+    ![Lebenszyklusstatus eines Arbeitsauftrags aktualisieren.](media/am-mobile-08.png "Lebenszyklusstatus eines Arbeitsauftrags aktualisieren")
 
 ## <a name="create-a-maintenance-request"></a>Eine Wartungsanfrage erstellen
 
@@ -216,7 +216,7 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
 1. Wählen Sie **Fertig**.
 
-    ![Eine Wartungsanfrage erstellen](media/am-mobile-09.png "Eine Wartungsanfrage erstellen")
+    ![Eine Wartungsanfrage erstellen.](media/am-mobile-09.png "Eine Wartungsanfrage erstellen")
 
 ## <a name="add-attachment-to-a-maintenance-request"></a>Einer Wartungsanforderung einen Anhang hinzufügen
 
@@ -236,7 +236,7 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
 1. Wählen Sie **Fertig**.
 
-    ![Einer Wartungsanfrage einen Anhang hinzufügen](media/am-mobile-10.png "Einer Wartungsanfrage einen Anhang hinzufügen")
+    ![Einer Wartungsanfrage einen Anhang hinzufügen.](media/am-mobile-10.png "Einer Wartungsanfrage einen Anhang hinzufügen")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

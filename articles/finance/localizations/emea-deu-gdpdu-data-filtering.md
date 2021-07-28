@@ -10,12 +10,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Austria, Germany
 ms.author: elgolu
-ms.openlocfilehash: b22fa7c9abffeeb007d00012636d50892c419502
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 7edeeb0a0a0955188f74a0d2d0b0af7bf99b8494
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020079"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349912"
 ---
 # <a name="add-filters-to-an-audit-file-configuration"></a>Hinzufügen von Filtern zu einer Audit-Datei-Konfiguration
 
@@ -34,15 +34,15 @@ Wie in [Übersicht über die deutsche Prüfdatei (GDPdU/GoBD)](emea-deu-gdpdu-au
   Die Datenquelle „$GeneralJournalEntry“ ist eine berechnete Datensatzliste, die Daten aus der Tabelle **GeneralJournalEntry** bezieht (dies können Sie an der Formel für „$GeneralJournalEntry“ erkennen).
   
 6. Suchen Sie im Bereich **Datenquellen** auf der Seite **Modellzuordnungsdesign** nach **GeneralJournalEntry** und wählen Sie diese Tabelle aus.
-7. Wählen Sie im Abschnitt **Datenquellen** die Option **Bearbeiten** und aktivieren Sie dann das Kontrollkästchen **Abfrage anfordern** für die Tabelle **GeneralJournalEntry**. Wählen Sie **OK**.
+7. Wählen Sie im Abschnitt **Datenquellen** die Option **Bearbeiten** und aktivieren Sie dann das Kontrollkästchen **Abfrage anfordern** für die Tabelle **GeneralJournalEntry**. Wählen Sie **OK** aus.
 
-![Aktivieren Sie das Kontrollkästchen Abfrage für die Tabelle Allgemeine Hauptbucheinträge](media/ask-for-query-gl-entries.png)
+![Aktivieren Sie das Kontrollkästchen „Abfrage“ für die Tabelle „Allgemeine Hauptbucheinträge“.](media/ask-for-query-gl-entries.png)
 
 8. Speichern, schließen und schließen Sie die Konfiguration ab.
 9. Deaktivieren Sie den Parameter **Standard für Modellzuordnung** für die übergeordnete Konfiguration, **Datenexportmodell**, falls er markiert war. Wählen Sie Ihre abgeleitete Konfiguration als **Standard für die Modellzuordnung**. 
 
 Mit dieser Änderung sehen Sie beim Ausführen von **Datenexport** periodischen Aufgaben **Einzuschließende Datensätze** auf der Inforegister-Registerkarte im Dialogfeld für den Bericht für die Tabelle **Allgemeine Erfassung**. Wählen Sie **Filter**, um Bedingungen für das Filtern von Hauptbucheinträgen festzulegen.
 
-![Filterbedingungen für den periodischen Datenexport einrichten](media/filter-setup.png)
+![Filterbedingungen für den periodischen Datenexport einrichten.](media/filter-setup.png)
 
 Um nach dem Feld **Buchungsebene** in der Tabelle **Allgemeine Erfassungsbuchung** zu filtern, wählen Sie **Buchungsebene** in der Spalte **Feld** und dann die erforderliche Buchungsebene in der Spalte **Kriterien**.

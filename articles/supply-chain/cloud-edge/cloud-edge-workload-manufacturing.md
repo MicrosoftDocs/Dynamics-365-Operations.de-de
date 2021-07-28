@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1e2006c0d9b9effe331a644aaaa9fa33ff2fb7c
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: da19066f647c17e934a11e4dab7cb370baabfb5c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270534"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352735"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Fertigungsausführung für Cloud- und Edge-Skalierungseinheiten
 
@@ -44,7 +44,7 @@ Dieses Thema beschreibt, wie Arbeitsauslastungen für die Fertigungsausführung 
 
 Wie die folgende Abbildung zeigt, ist der Fertigungslebenszyklus in drei Phasen unterteilt: *Planen*, *Ausführen* und *Fertigstellen*.
 
-[![Phasen der Fertigungsausführung bei Verwendung einer einzigen Umgebung](media/mes-phases.png "Phasen der Fertigungsausführung bei Verwendung einer einzigen Umgebung")](media/mes-phases-large.png)
+[![Phasen der Fertigungsausführung bei Verwendung einer einzigen Umgebung](media/mes-phases.png „Phasen der Fertigungsausführung bei Verwendung einer einzigen Umgebung.“](media/mes-phases-large.png)
 
 Die Phase _Planen_ umfasst Produktdefinition, Planung, Auftragserstellung und -terminierung sowie Freigabe. Der Freigabeschritt kennzeichnet den Übergang von der Phase _Planen_ zur Phase _Ausführen_. Wenn ein Produktionsauftrag freigegeben wird, sind die Produktionsaufträge auf der Produktionsfläche sichtbar und bereit zur Ausführung.
 
@@ -54,7 +54,7 @@ Wenn ein Produktionsauftrag als abgeschlossen markiert wird, wechselt er von der
 
 Wie die folgende Abbildung zeigt, wird bei Verwendung von Scale-Units die Phase _Ausführen_ als separate Arbeitsauslastung aufgeteilt.
 
-[![Ausführungsphasen, wenn Scale-Units verwendet werden](media/mes-phases-workloads.png "Fertigungsausführungsphasen bei Verwendung von Scale-Units")](media/mes-phases-workloads-large.png)
+[![Fertigungsausführungsphasen bei Verwendung von Scale-Units](media/mes-phases-workloads.png „Fertigungsausführungsphasen bei Verwendung von Scale-Units“.](media/mes-phases-workloads-large.png)
 
 Das Modell geht nun von einer Einzelinstanz-Installation zu einem Modell über, das auf dem Hub und Scale-Units basiert. Die Phasen _Planen_ und _Finalisieren_ laufen als Back-Office-Operationen auf dem Hub, und die Arbeitsauslastung der Fertigungsausführung läuft auf den Scale-Units. Die Daten werden asynchron zwischen dem Hub und den Scale-Units übertragen.
 
@@ -87,7 +87,7 @@ Obwohl der Job normalerweise automatisch läuft, können Sie ihn jederzeit manue
 
 Um das Protokoll der Registrierungsverarbeitung zu überprüfen, melden Sie sich beim Hub an und gehen Sie zu **Produktionssteuerung \> Periodische Aufgaben \> Backoffice Arbeitsauslastung \> Rohregistrierungsverarbeitungsprotokoll**. Die Seite **Rohregistrierungs-Verarbeitungsprotokoll** zeigt eine Liste der verarbeiteten Rohregistrierungen und den Status der einzelnen Registrierungen.
 
-![Rohregistrierungs-Verarbeitungsprotokoll-Seite](media/mes-processing-log.png "Rohregistrierungs-Verarbeitungsprotokollseite")
+![Rohregistrierungs-Verarbeitungsprotokoll-Seite.](media/mes-processing-log.png "Rohregistrierungs-Verarbeitungsprotokollseite")
 
 Sie können jede Registrierung in der Liste bearbeiten, indem Sie sie auswählen und dann eine der folgenden Schaltflächen im Aktivitätsbereich wählen:
 

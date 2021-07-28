@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 225fd6a07fee29414ac30a4602b4dfccdc4d742b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 698c556b8839ae1d657ef02796fe08ab9cd3621e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800613"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346033"
 ---
 # <a name="create-legal-entities"></a>Juristische Personen erstellen
 
@@ -42,9 +42,9 @@ Gehen Sie folgendermaßen vor, um eine neue juristische Person in Dynamics 365 C
 1. Geben Sie im Feld **Name** einen Wert ein.
 1. Geben Sie im Feld **Unternehmen** einen Wert ein.
 1. Wählen Sie im Feld **Land/Region** einen Wert aus, oder geben Sie einen Wert ein.
-1. Wählen Sie **OK**. 
+1. Wählen Sie **OK** aus. 
 
-   ![Erstellung einer juristischen Person](media/legal-entities.png)
+   ![Erstellung einer juristischen Person.](media/legal-entities.png)
 
 1. Stellen Sie im Abschnitt **Allgemein** die folgenden allgemeinen Informationen zur juristischen Person bereit: 
    1. Geben Sie einen Suchbegriff ein, falls erforderlich. Ein Suchbegriff ist ein alternativer Name, der verwendet werden kann, um nach dieser juristischen Person zu suchen. 
@@ -67,7 +67,7 @@ Gehen Sie folgendermaßen vor, um eine neue juristische Person in Dynamics 365 C
 
 Das folgende Bild zeigt die Details eines Beispiels für eine juristische Person.
 
-![Allgemeiner Teil der juristischen Person](media/legal-entities-general.png)
+![Allgemeiner Teil der juristischen Person.](media/legal-entities-general.png)
    
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

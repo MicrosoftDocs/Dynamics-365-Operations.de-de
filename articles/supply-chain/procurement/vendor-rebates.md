@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: e56bf86a11eb34679269eae5ca093d7cc379932b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42c35fcca90b7dc55c8ef2985283d2ce92c4c8bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822466"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344219"
 ---
 # <a name="vendor-rebates"></a>Kreditorenrückvergütungen
 
@@ -53,7 +53,7 @@ Eine Kreditorenrückvergütungsvereinbarung ist ein Datensatz eines Vertrags mit
 
 Um die Seite **Kreditorenrückvergütungsvereinbarungen** zu öffnen, wählen Sie **Beschaffung** &gt; **Kreditorenrückvergütungen** &gt; **Rückvergütungsvereinbarungen** aus.
 
-![Rahmenbestellung](media/purchase-agreement.PNG)
+![Rahmenbestellung.](media/purchase-agreement.PNG)
 
 Auf der Seite **Kreditorenrückvergütungsvereinbarungen** können Sie Details über die verhandelten Bedingungen einer Kreditorenvereinbarung anzeigen.
 
@@ -129,7 +129,7 @@ Wenn Ansprüche genehmigt wurden, können sie nach Kreditorenkonten bearbeitet w
 
     Eine Rückvergütungs-Abgrenzungserfassung wird für den Forderungsbetrag gebucht. Diese Buchung belastet das Konto der antizipierten Kreditorenrückvergütungsforderungen mit dem erwarteten Kreditorenkredit und schreibt dem Interimskonto für antizipierten Kreditorenrückvergütungsforderungen den erwarteten Gewinn gut.
 
-    ![Nachricht](media/message.png)
+    ![Meldung.](media/message.png)
 
 5. In der Rückvergütungsliste wählen Sie die Position aus, und wählen Sie dann im Aktionsbereich die Option **Rückvergütungsbuchungen** aus, um die Nummer der Stapelverarbeitungserfassung für diese Rückvergütungs-Abgrenzungsbuchung anzuzeigen und zu ihr zu navigieren.
 

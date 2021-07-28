@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e7cadc20cc8fd52ecc8c4ab5c2f6c9dc62c2f68b
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: b6feb5319290cc53d82feb28ffa8c049bfadd29b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897575"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355082"
 ---
 # <a name="dimension-hierarchy"></a>Dimensionshierarchie
 
@@ -72,7 +72,7 @@ Der Typ **Dimensionsklassifizierungshierarchie** wird zur Regeldefinition und zu
 
 Eine Dimensionshierarchie wird als Baumstruktur mit Knoten- und Blattknotenbeziehungen erstellt.
 
--  Ein Knoten kann 1:  Subknoten haben.
+-  Ein Knoten kann 1:_n_ Subknoten haben.
 -  Einem Knoten kann nicht gleichzeitig untergeordnete Knoten und Blattnoten zugewiesen werden.
 -  Ein Blattknoten kann nur der niedrigsten Ebene in der Hierarchie zugewiesen werden.
 
@@ -80,7 +80,7 @@ Eine Dimensionshierarchie wird als Baumstruktur mit Knoten- und Blattknotenbezie
 
 Ein Einzelhandelsunternehmen hat die folgende Organisationsstruktur: Finanzen und Personalverwaltung sind Abteilungen unter Verwaltung und Montage sowie Verpackung sind Abteilungen unter Produktion sind.
 
-![Beispiel einer Organisationsstruktur](./media/dimension-hierarchy-org.png)
+![Beispiel einer Organisationsstruktur.](./media/dimension-hierarchy-org.png)
 
 Eine Kostenobjektdimension stellt alle Kostenstellen in der Organisation dar.
 

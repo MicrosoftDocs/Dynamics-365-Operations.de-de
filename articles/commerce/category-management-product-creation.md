@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 678561856fbb5514ff954363a767091edac6dee2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 89237c830109e8cb304b2547230484f15b90d875
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794372"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351296"
 ---
 # <a name="manage-product-categories-and-products"></a>Verwalten von Produktkategorien und ‑produkten
 
@@ -35,17 +35,17 @@ Beachten Sie die erweiterte Struktur auf der Seite **Produkthierarchie (Commerce
 
 In der erweiterten Produktkategoriestruktur werden Produkteigenschaften logisch getrennt, basierend auf ihrer Anwendbarkeit in einer Gruppe, um die Struktur der Formularstruktur für freigegebene Produktdetails widerzuspiegeln.
 
-![Felder, die auf Grundlage des Umfangs der Anwendbarkeit der Eigenschaften gruppiert sind](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
+![Felder, die auf Grundlage des Umfangs der Anwendbarkeit der Eigenschaften gruppiert sind.](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
 Sie können zwischen dem Verwalten von Eigenschaften, die für juristische Personen spezifisch sind, über alle juristischen Personen hinweg und dem Verwalten davon für eine bestimmte juristische Person wechseln.
 
 Um Eigenschaften für alle juristischen Personen zu verwaltet, wählen Sie **Ansicht für alle juristischen Personen** (oder **Bearbeiten für alle juristischen Personen**) aus.
 
-![Anzeigen/Bearbeiten für alle juristische Personen](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+![Anzeigen/Bearbeiten für alle juristischen Personen.](media/ToggleBackToEditForSpecificLegalEntity.PNG)
 
 Um Eigenschaften für eine bestimmte juristische Person zu verwalten, wählen Sie **Ansicht für eine bestimmte juristische Person** (oder **Bearbeiten für eine bestimmte juristische Person**) aus.
 
-![Anzeigen/Bearbeiten für eine bestimmte juristische Person](media/ToggleToEditForAllLegalEntities.PNG)
+![Anzeigen/Bearbeiten für eine bestimmte juristische Person.](media/ToggleToEditForAllLegalEntities.PNG)
 
 In der erweiterten Produktkategoriestruktur kann darüber hinaus ein Verkaufsmanager jetzt Standardwerte für einen zusätzlichen Satz Produktattribute auf der Ebene einer einzelnen Kategorie definieren. Wenn dann die Produkte erstellt werden, erben sie die Standardwerte für ihre Produkteigenschaften basierend auf der Zuordnung dieser Eigenschaften mit einer einzelnen Kategorie in der Produkthierarchie. Diese geerbten Produkteigenschaften können auch für jedes Produkt geändert werden, um einzelnen geschäftlichen Bedarf abzudecken.
 
@@ -53,7 +53,7 @@ In der erweiterten Produktkategoriestruktur kann darüber hinaus ein Verkaufsman
 
 Sie können die neue erweiterte Struktur für Produkteigenschaften verwenden, um aktualisierte Produkteigenschaften auszuwählen, die an die zugeordneten Produkte mit Push übertragen werden müssen. Wählen Sie auf der Seite **Produkthierarchie (Commerce)** im Aktivitätsbereich die Option **Kategorie** aus, und wählen Sie dann **Produkte aktualisieren**, um das Dialogfeld **Produkte aktualisieren** zu öffnen.
 
-![Das Produktedialogfeld aktualisieren](media/NewUpdateProductsEnhancedView.PNG)
+![Das Produktedialogfeld aktualisieren.](media/NewUpdateProductsEnhancedView.PNG)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

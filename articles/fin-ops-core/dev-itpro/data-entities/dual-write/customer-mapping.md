@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 0015ca2ccbb0098a5a96bf56ff355fb2f9f8f626
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5af584eb0bdb65942921847219b46b8f93dae79d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748922"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350910"
 ---
 # <a name="integrated-customer-master"></a>Integrierte Masterdaten von Debitoren
 
@@ -36,7 +36,7 @@ Kundendaten können in mehr als einer Dynamics 365 Anwendung verwaltet werden. B
 
 *Debitor* ist ein gut definiertes Konzept in Anwendungen. Daher umfasst die Integration von Debitorendaten nur die Harmonisierung des Debitorenkonzepts zwischen den beiden Anwendungen. Die folgende Abbildung zeigt den Debitorendatenfluss.
 
-![Debitorendatenfluss](media/dual-write-customer-data-flow.png)
+![Debitorendatenfluss.](media/dual-write-customer-data-flow.png)
 
 Debitoren können in zwei Typen unterteilt werden: kommerzielle Debitoren/Unternehmensdebitoren und Verbraucher/Endbenutzer. Diese beiden Arten von Debitoren werden in Finance and Operations und Dataverse unterschiedlich gespeichert und verarbeitet.
 

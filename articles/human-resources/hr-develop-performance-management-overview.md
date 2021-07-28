@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: 221024
+ms.custom:
+- "221024"
+- intro-internal
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4276e33f3df60bedcd2b056dababc280ccb96b4a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: b1265c2ad63bffee055a925f9241a9df91a0bec9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058463"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360495"
 ---
 # <a name="performance-management"></a>Leistungsverwaltung
 
@@ -33,7 +35,7 @@ Wie das folgende Diagramm zeigt, gibt es drei Seiten für die Verwaltung dieses 
 -   Ziele
 -   Leistungsbeurteilung
 
-Im folgenden Diagramm wird dargestellt, wie die Hauptkomponenten der Leistungsverwaltung miteinander verbunden sind. [![Überblick über den Leistungsprozess](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+Im folgenden Diagramm wird dargestellt, wie die Hauptkomponenten der Leistungsverwaltung miteinander verbunden sind. [![Überblick über den Leistungsprozess.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Leistungserfassung
 

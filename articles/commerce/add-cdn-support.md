@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 85ca468fe6c440fb333b4c32f59f1d41eb89f4e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936829"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346827"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)
 
@@ -74,11 +74,11 @@ Um einen Back-End-Pool in Azure Front Door Service zu konfigurieren, folgen Sie 
 
 Die folgende Abbildung zeigt das Dialogfeld **Hinzufügen eines Back-End-Pools** in Azure Front Door Service mit dem eingegebenen Back-End-Hostnamen.
 
-![Hinzufügen eines Back-End-Pool Dialogfelds](./media/CDN_BackendPool.png)
+![Hinzufügen eines Back-End-Pool-Dialogfelds.](./media/CDN_BackendPool.png)
 
 Die folgende Abbildung zeigt das Dialogfeld **Hinzufügen eines Back-End-Pools** in Azure Front Door Service mit den Standardwerten des Lastenausgleichs.
 
-![Hinzufügen eines Back-End-Pool Dialogfelds – Fortsetzung](./media/CDN_BackendPool_2.png)
+![Hinzufügen eines Back-End-Pool-Dialogfelds – Fortsetzung.](./media/CDN_BackendPool_2.png)
 
 > [!NOTE]
 > Stellen Sie sicher, dass Sie **Integritätstests** beim Einrichten Ihres eigenen Azure Front Door Service für Commerce deaktivieren.
@@ -107,13 +107,13 @@ Wenn Ihre Domäne neu und keine bereits vorhandene aktive Domäne ist, können S
 
 Die folgende Abbildung zeigt das Dialogfeld **CNAME Konfiguration** in Azure Front Door Service an.
 
-![CNAME Konfigurationsdialogfeld](./media/CNAME_Configuration.png)
+![CNAME-Konfigurationsdialogfeld.](./media/CNAME_Configuration.png)
 
 Sie können Azure Front Door Service verwenden, um die Zertifikate zu verwalten, oder Sie können eine eigene Bescheinigung für die benutzerdefinierte Domäne verwenden.
 
 Die folgende Abbildung zeigt das Dialogfeld **Benutzerdefinierte Domäne HTTPS** in Azure Front Door Service an.
 
-![Benutzerdefiniertes Dialogfeld der Domäne HTTPS](./media/Custom_Domain_HTTPS.png)
+![Benutzerdefiniertes Dialogfeld der Domäne HTTPS.](./media/Custom_Domain_HTTPS.png)
 
 Ausführliche Anweisungen zum Hinzufügen einer benutzerdefinierten Domäne zu Ihrer Azure Front Door finden Sie unter [Benutzerdefinierte Domäne zu Front Door hinzufügen](/azure/frontdoor/front-door-custom-domain).
 

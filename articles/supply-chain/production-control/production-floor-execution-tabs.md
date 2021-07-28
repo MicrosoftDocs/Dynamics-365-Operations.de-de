@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 4e2b3746e690623e347e0319ab1b55f2645a5e23
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5bf8ce93d2c804325305672d79b633210a790cf0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814679"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347661"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Gestalten der Ausführungsschnittstelle auf Produktionsebene
 
@@ -32,7 +32,7 @@ Auf der Seite **Produktionsablauf konfigurieren** können Sie Registerkarten ers
 
 Jede Registerkarte ist in vier Abschnitte unterteilt, wie in der folgenden Abbildung gezeigt.
 
-![Registerkarten-Layout](media/pfe-tab-layout.png "Anordnung der Registerkarten")
+![Registerkarten-Layout.](media/pfe-tab-layout.png "Anordnung der Registerkarten")
 
 Die folgenden Elemente sind in der Abbildung zu sehen:
 
@@ -47,7 +47,7 @@ Um eine neue Registerkarte zu erstellen und zu konfigurieren, gehen Sie wie folg
 
 1. Wählen Sie **Design-Registerkarten** im Aktivitätsbereich, um die Seite **Design-Registerkarten** zu öffnen.
 
-    ![Die Seite Entwurfsregisterkarten](media/pfe-design-tabs.png "Die Seite Registerkarten Design")
+    ![Die Seite „Entwurfsregisterkarten“.](media/pfe-design-tabs.png "Die Seite Registerkarten Design")
 
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 
@@ -67,7 +67,7 @@ Nachdem Sie alle benötigten Registerkarten entworfen haben, können Sie diese m
 
 1. Gehen Sie zu **Produktionskontrolle \> Einrichtung \> Fertigungsausführung \> Ausführung in der Produktion**.
 
-    ![Produktionsausführung konfigurieren](media/pfe-config-prod-floor-execution.png "Produktionsausführung konfigurieren")
+    ![Produktionsausführung konfigurieren.](media/pfe-config-prod-floor-execution.png "Produktionsausführung konfigurieren")
 
 1. Wählen Sie auf dem Inforegister **Registerauswahl** **Hinzufügen**.
 

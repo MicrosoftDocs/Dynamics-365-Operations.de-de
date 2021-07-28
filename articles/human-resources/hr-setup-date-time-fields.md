@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b7e5726f7e4beea1584b9a8e142212531ba1db56
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e87781762112955902d8a5807092a842f53f6af
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051736"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356559"
 ---
 # <a name="understand-date-and-time-fields"></a>Datums- und Zeitfelder verstehen
 
@@ -36,13 +36,13 @@ ms.locfileid: "6051736"
 
 Wenn Daten in einem Feld **Datum und Uhrzeit** angezeigt werden, wird Human Resources das Datum und die Uhrzeit auf der Zeitzone des Benutzers anpassen, die im Formular **Benutzeroptionen** eingestellt sind (**Allgemein > Einstellungen > Benutzeroptionen**). Die Datums- und Uhrzeitinformationen, die Sie im Feld eingeben, sind die gleichen wie die Informationen, die in die Datenbank geschrieben werden.
 
-[![Formular Benutzeroptionen](./media/useroptionsform.png)](./media/useroptionsform.png)
+[![Formular Benutzeroptionen.](./media/useroptionsform.png)](./media/useroptionsform.png)
 
 ## <a name="understanding-date-and-time-fields-in-forms"></a>Datums- und Zeitfelder in Formularen verstehen 
 
 **Datum und Uhrzeit**-Daten, die auf dem Bildschirm angezeigt werden, sind nicht die gleichen wie die Daten, die in der Datenbank gespeichert werden, wenn die Zeitzone des Benutzers nicht in der koordinierten Weltzeit (UTC) festgelegt wird. Daten in **Datum und Uhrzeit** Felder werden immer als UTC gespeichert.
 
-[![Arbeitskraftformular UTC](./media/worker-form.png)](./media/worker-form.png)
+[![Arbeitskraftformular UTC.](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>Datums- und Zeitfelder in Formularen verstehen 
 
@@ -52,7 +52,7 @@ Im Beispiel oben ist die Startzeit ein Zeitpunkt, kein bestimmtes Datum. Durch d
   
 Im Beispiel weiter unten wird das Beschäftigungsverhältnis des Mitarbeiters 000724 aktiv, unabhängig von der Zeitzone. Der Mitarbeiter wird auf 04/30/2019 in der GMT-Zeitzone aktiv, die gleich ist wie 05/01/2019 in GMT+12:00 Zeitzone. Beide beziehen sich auf den gleichen Zeitpunkt und nicht auf ein bestimmtes Datum. 
 
-[![Arbeitskraftformular GMT](./media/worker-form2.png)](./media/worker-form2.png)
+[![Arbeitskraftformular GMT.](./media/worker-form2.png)](./media/worker-form2.png)
 
 ## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>Datums- und Uhrzeitdaten im Datenverwaltungsframework, Excel, Dataverse und Power BI 
 
@@ -68,27 +68,27 @@ Wenn externe Quellen wie DMF verwendet werden, um Daten anzuzeigen oder zu erste
 
 **Human Resources mit Benutzerzeitzone ist auf UTC festgelegt**
 
-[![Auf UTC festgelegtes Arbeiterformular](./media/worker-form3.png)](./media/worker-form3.png)
+[![Auf UTC festgelegtes Arbeitskraftformular.](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Human Resources mit Benutzerzeitzone ist auf GMT + 12.00 festgelegt** 
 
-[![Auf GMT festgelegtes Arbeiterformular](./media/worker-form4.png)](./media/worker-form4.png)
+[![Auf GMT festgelegtes Arbeitskraftformular.](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel über ODaten**
 
-[![Excel über ODaten](./media/Excelviaodata.png)](./media/Excelviaodata.png)
+[![Excel über OData.](./media/Excelviaodata.png)](./media/Excelviaodata.png)
 
 **D;F Staging:-**
 
-[![DMF Staging:-](./media/DMFStaging.png)](./media/DMFStaging.png)
+[![DMF-Staging.](./media/DMFStaging.png)](./media/DMFStaging.png)
 
 **DMF Export**
 
-[![DMF-Export](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF-Export.](./media/DMFexport.png)](./media/DMFexport.png)
 
 **Excel zu Dataverse**
 
-[![Excel zu Dataverse](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel über Dataverse.](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## <a name="see-also"></a>Siehe auch
 
