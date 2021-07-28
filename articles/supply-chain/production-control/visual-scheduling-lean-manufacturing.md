@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c94834a491877a69a206f827ad60f12455456e3f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: c91de72f32f70fba09c6b7e3ca284553d0c858b1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188847"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353443"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuelle Zeitplanung für Lean Manufacturing
 
@@ -31,7 +31,7 @@ Dieses Thema enthält Informationen zur Behandlung der Kanban-Zeitplanübersicht
 
 Dieses Thema enthält Informationen zur Behandlung der Kanban-Zeitplanübersicht, die der Produktionsplaner verwenden kann, um den Produktionsplan für Kanban-Einzelvorgänge zu steuern und zu optimieren.
 
-Die Kanban-Zeitplanübersicht ermöglicht dem Produktionsplaner den Produktionsplan für Kanban-Einzelvorgänge zu steuern und zu optimieren. Er macht den Ausstoßes der Kanban-Einzelvorgänge transparent  nd gibt dem Produktionsplaner ein Tool, das die Produktionsplanung auf die Produktionsfertigungszelle optimiert und anhält.
+Die Kanban-Zeitplanübersicht ermöglicht dem Produktionsplaner den Produktionsplan für Kanban-Einzelvorgänge zu steuern und zu optimieren. Er macht den Ausstoßes der Kanban-Einzelvorgänge transparent und gibt dem Produktionsplaner ein Tool, das die Produktionsplanung auf die Produktionsfertigungszelle optimiert und anhält.
 
 ## <a name="visual-scheduling-of-kanban-jobs"></a>Visuelle Planung von Kanban-Einzelvorgängen
 Ein Kanban-Einzelvorgang kann aus einem oder vielen Kanban-Einzelvorgängen bestehen. Die Buchungen können in zwei Typen unterteilt werden:
@@ -47,7 +47,7 @@ Es können nur Ursachencodes vom Typ **Prozess** ausgewählt werden. Der Kanban-
 ## <a name="kanban-schedule-board"></a>Kanban-Zeitplanübersicht
 Die Seite **Kanban-Zeitplanübersicht** enthält sieben wichtige Elemente, wie in der folgenden Abbildung dargestellt. 
 
-![Kanban-Zeitplanübersicht](./media/kanban-schedule-board-1024x554.png)
+![Kanban-Zeitplanübersicht.](./media/kanban-schedule-board-1024x554.png)
 1.  Aktivitätsbereich
 2.  Filter (Felder)
 3.  Schaltfläche für ungeplante Einzelvorgänge
@@ -71,7 +71,7 @@ Um den Überblick zu erhöhen, den die Kanban-Zeitplanübersicht bereitstellt, k
 ## <a name="plan-unplanned-jobs"></a>Nicht geplante Einzelvorgänge planen
 Sie können ungeplante Kanban-Einzelvorgänge planen im Dialogfeld **Ungeplante Einzelvorgänge des Plans**. Zum Öffnen dieses Dialogfelds klicken Sie auf die Schaltfläche **Ungeplante Einzelvorgänge**, die die aktuelle Anzahl nicht geplanter Einzelvorgänge anzeigt. Alternativ klicken Sie **Ungeplante Einzelvorgänge planen** auf der Registerkarte **Karte** im Aktivitätsbereich. Das Dialogfeld zeigt eine Liste der nicht geplanter Kanban-Einzelvorgänge für die Fertigungszelle an. Sie können das Feld **Filtern** verwenden, um alle Felder im Raster zu filtern. So können Sie auf Kanban-Einzelvorgängen für ein bestimmtes Produkt filtern. Nachdem Sie eine gefilterten Liste der Einzelvorgänge haben, die Sie einplanen möchten, wählen Sie sie in der Liste aus, und klicken Sie dann **OK**. Um die automatische Planung für die Einzelvorgänge zu planen, legen Sie die Option **Automatische Planung** auf **Ja** fest. In diesem Fall werden die Einzelvorgänge in einer Periode gemäß den jeweiligen Fälligkeitsdaten geplant. Sie können die Einzelvorgänge auch nach Periode planen. Wählen Sie im Feld **Periode** einen Periodencode aus. In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Ungeplante Einzelvorgänge des Plans** angezeigt. 
 
-![Dialogfeld nicht geplante Einzelvorgänge planen](./media/plan-unplanned-jobs-1024x564.png)
+![Dialogfeld nicht geplante Einzelvorgänge planen.](./media/plan-unplanned-jobs-1024x564.png)
 
 ## <a name="sequence-kanban-jobs-within-the-same-period"></a>Nummernkreiskanbaneinzelvorgänge in derselben Periode
 Sie können den Nummernkreis von einem oder mehreren ausgewählten Einzelvorgängen in eine Periode ändern. Diese Funktion ist hilfreich, wenn Sie mehrere Einzelvorgänge, die in der Periode vorgenommen wurden, priorisieren möchten. Vielleicht möchten Sie zu den Nummernkreiseinzelvorgängen dieselben Produktattribute haben, um die Einzelvorgangsausführung zu optimieren. Sie können die Reihenfolge ändern durch Ziehen mit der Maus oder die Menüoptionen **Rückwärts** und **Vorwärts** auf der Registerkarte **Karte** im Aktivitätsbereich verwenden.

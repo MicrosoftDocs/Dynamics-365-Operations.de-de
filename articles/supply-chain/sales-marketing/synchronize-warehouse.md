@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f302f780fa8ba3d387a71770024a1bf7ad42c4ef
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: e69c35745959c6f3a90a7c597d37316e9da5358e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910256"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359556"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Lagerorte von Supply Chain Management zu Field Service synchronisieren
 
@@ -31,7 +31,7 @@ ms.locfileid: "5910256"
 
 Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Lager aus Dynamics 365 Supply Chain Management mit Dynamics 365 Field Service zu synchronisieren.
 
-[![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
+[![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service.](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
 Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um Lagerorte von Supply Chain Management auf Field Service zu synchronisieren.
@@ -58,7 +58,7 @@ Um die Integration zwischen Field Service und Supply Chain Management zu unterst
 Die Spalte **Wird extern verwaltet** hilft, die Synchronisierung von Bestandsebenen, Regulierungen, Überträgen und der Verwendung von Arbeitsaufträgen zu steuern. Nur Lagerorte mit **Werden exern verwaltet** = **Ja** können verwendet werden, um direkt den gleichen Lagerort im anderen System zu synchronisieren. 
 
 > [!NOTE]
-> Es ist möglich, mehrere Lagerorte in Field Service zu erstellen (mit **wird extern verwaltet** = Nein) und diese zu einem bestimmten Lagerort mit den erweiterten Abfragen und Filterfunktionen zuzuordnen. Dies wird in Fällen verwendet, in denen Sie Field Service verwenden, um die detaillierte Bestandebene zu steuern und Supply Chain Management zu aktualisieren. In diesem Fall erhält Field Service keine Bestandebenenaktualisierung von Supply Chain Management. Siehe zusätzliche Informationen unter Synchronisierung von Bestandanpassungen von Field Service zu [Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) und [Synchronisieren von Arbeitsaufträge in Field Service zu Arbeitsaufträgen, die mit Projekten in Finance and Operations verknüpft sind](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+> Es ist möglich, mehrere Lagerorte in Field Service zu erstellen (mit **wird extern verwaltet** = Nein) und diese zu einem bestimmten Lagerort mit den erweiterten Abfragen und Filterfunktionen zuzuordnen. Dies wird in Fällen verwendet, in denen Sie Field Service verwenden, um die detaillierte Bestandebene zu steuern und Supply Chain Management zu aktualisieren. In diesem Fall erhält Field Service keine Bestandebenenaktualisierung von Supply Chain Management. Siehe zusätzliche Informationen unter [Synchronisierung von Bestandanpassungen von Field Service zu Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) und [Synchronisieren von Arbeitsaufträge in Field Service zu Arbeitsaufträgen, die mit Projekten in Finance and Operations verknüpft sind](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="prerequisites-and-mapping-setup"></a>Voraussetzungen und Zuordnungseinrichtung
 ### <a name="data-integration-project"></a>Datenenintegrationsprojekt
@@ -77,7 +77,7 @@ Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
 
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Lagerorte (Supply Chain Management zu Field Service): Lagerort
 
-[![Vorlagenzuordnung in Datenintegration](./media/Warehouse1.png)](./media/Warehouse1.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/Warehouse1.png)](./media/Warehouse1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

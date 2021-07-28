@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4cf5a5fc2d40e66d189d281b343d1525edf7e8c5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5e9d1f33102ed08d9e5c486d4d1490d4b278a28e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744122"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360296"
 ---
 # <a name="accessibility-features"></a>Eingabehilfefunktionen
 
@@ -52,13 +52,13 @@ Jede Aktivität, die auf einer Seite angegeben wird, kann über eine Tastatur ü
 
 Sie möchten die Aktivität **E-Mail-Benachrichtigungsprotokoll** ausführen, die in der Gruppe **E-Mail-Benachrichtigung** auf der Registerkarte **Auftrag** im Aktivitätsbereich angezeigt wird.
 
-![E-Mail-Benachrichtigungs-Protokollaktivität im Aktivitätsbereich](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "'E-Mail-Benachrichtigungs-Protokollaktivität' im Aktivitätsbereich")
+![E-Mail-Benachrichtigungs-Protokollaktivität im Aktivitätsbereich.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "'E-Mail-Benachrichtigungs-Protokollaktivität' im Aktivitätsbereich")
 
 Eine Option ist, die Tastatur zu verwenden. Drücken Sie STRG+F6, um den Fokus im Aktivitätsbereich zu verschieben, und die Registerkarte der Verschiebung von allen Registerkarten und Aktivitäten wiederholt zu übertragen, nachdem die Aktivität **E-Mail-Benachrichtigungsprotokoll** im Fokus liegt.
 
 Sie können jedoch auch die Aktivität direkt ausführen. Von Überall auf der Seite klicken Sie Ctrl+Apostrophe ('), um das Suchfeld für Aktivitäten anzuzeigen.
 
-![Suchfeld für Aktivitäten](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Suchfeld für Aktivitäten")
+![Suchfeld für Aktivitäten.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Suchfeld für Aktivitäten")
 
 Im Suchfeld tippen Sie Wörter ein, die die Aktion beschreiben. Die Aktivität wird für Sie verfügbar gemacht, und Sie können sie direkt ausführen. Beispielsweise indem Sie **E-Mail**, **benachrich** (ein Teil eines Worts) oder **Protokoll** eingeben, können Sie zur E-Mail-Benachrichtigungs-Protokollfunktionen springen.
 

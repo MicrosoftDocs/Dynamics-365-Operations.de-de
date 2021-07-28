@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8961b7156f52e48dbfcf7efb14e50316e81fcfff
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053682"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360148"
 ---
 # <a name="copy-an-instance"></a>Instanz kopieren
 
@@ -71,11 +71,11 @@ Um diese Aufgabe abzuschließen, kopieren Sie zuerst eine Instanz und melden sic
 
 4. Wählen Sie im Aufgabenbereich **Instanz kopieren** die zu überschreibende Instanz und anschließend **Kopieren** aus. Warten Sie, bis der Wert des Felds **Kopierstatus** zu **Abgeschlossen** aktualisiert wird.
 
-   ![[Zu überschreibende Instanz auswählen](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Zu überschreibende Instanz auswählen.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Wählen Sie **Power Platform** aus und melden Sie sich im Microsoft Power Platform Admin Center an.
 
-   ![[Power Platform auswählen](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Power Platform auswählen.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Wählen Sie die zu kopierende Power Apps-Umgebung aus und wählen Sie dann **Kopieren**.
 

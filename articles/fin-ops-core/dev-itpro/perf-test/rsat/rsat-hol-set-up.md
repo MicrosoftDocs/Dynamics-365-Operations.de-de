@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 7c6e4dcbd854cfadbc34f0040dcffd277d32a8d9
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: fc9b330926dfc12890d0bc32e68b4b531616fc2b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909033"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357551"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool-Tutorial einrichten und installieren
 
@@ -42,7 +42,7 @@ Dieses Thema ist ein Tutorial, mit dem Sie RSAT sowie die Tools einrichten und v
 
 - Eine Umgebung, die Microsoft Dynamics 365 for Finance and Operations Version 10.0 (April 2019 ) oder höher ausführt ist für dieses Lernprogramm erforderlich. Für Kunden, die Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3 verwenden, wird auch Plattform-Update 20 (PU20) oder später unterstützt.
 - Der Benutzer muss über Administratorrechte für die Umgebung verfügen.
-- Sie müssen Zugriff auf den Debitorenmandant LCS und Azure DevOps (zuvor Microsoft Visual StudioTeam- Services\[VSTS\]) haben.
+- Sie müssen Zugriff auf den Debitorenmandant LCS und Azure DevOps (zuvor Microsoft Visual Studio Team- Services\[VSTS\]) haben.
 - Der Benutzer, der Testsuites erstellt und verwaltet muss über eine Azure DevOps Test Plans oder Test Manager-Lizenz verfügen. Die folgenden Lizenzen geben ebenfalls Zugriff auf Test Plans:
     - Visual Studio Enterprise Lizenz
     - Visual Studio Test Professional-Lizenz
@@ -67,22 +67,22 @@ RSAT verwendet Azure Devops für Testfall- und Testsuiteverwaltungs, -berichters
 - Löschen Sie keinen Status eines Arbeitsaufgabentyps.
 - Fügen Sie keine erforderlichen Arbeitsaufgabentypen hinzu.
 
-![Fehlermeldung mit einer Liste der bewährten Methoden](./media/setup_rsa_tool_02.png)
+![Fehlermeldung mit einer Liste der bewährten Methoden.](./media/setup_rsa_tool_02.png)
 
 Andernfalls wird für dieses Lernprogramm empfohlen, dass Sie ein neues Azure DevOps-Projekt erstellen. Weitere Informationen finden Sie unter [Probleme bei der Synchronisierung zu BPM mithilfe einer benutzerdefinierten Azure DevOps (VSTS) Prozessvorlage](https://blogs.msdn.microsoft.com/lcs/2018/11/28/issues-when-syncing-to-bpm-using-a-custom-azure-devops-vsts-process-template/).
 
 1. Öffnen Sie die Azure DevOps-URL (`https://dev.azure.com/<Azure DevOps Name>`).
 2. Wählen Sie in der rechten oberen Ecke der Azure DevOps-Seite **Projekt erstellen** aus.
 
-    ![Schalfläche „Projekt erstellen“](./media/setup_rsa_tool_03.png)
+    ![Schaltfläche „Projekt erstellen“.](./media/setup_rsa_tool_03.png)
 
 3. Füllen Sie die folgenden Felder aus, und wählen Sie dann **Erstellen** aus:
 
-    - **Projektname**
+    - **Projektbezeichnung**
     - **Versionskontrolle** – Wählen Sie **Team Foundation-Versionskontrolle** aus. Beachten Sie, dass die Standardoption **Git** nicht unterstützt wird.
     - **Arbeitsaufgabenprozess**
 
-    ![Erstellen eines neuen Projektdialogfelds](./media/setup_rsa_tool_04.png)
+    ![Erstellen eines neuen Projektdialogfelds.](./media/setup_rsa_tool_04.png)
 
 ### <a name="create-a-personal-access-token"></a>Erstellen eines persönlichen Zugangstokens
 
@@ -90,11 +90,11 @@ In diesem Lernprogramm verwenden Sie den LCS-Geschäftsprozessmodellierer (BPM),
 
 1. Wählen Sie das Profilsymbol in der rechten oberen Ecke der Seite für Ihr Azure DevOps-Projekt aus, und wählen Sie dann **Sicherheit** aus.
 
-    ![Sicherheitsbefehl](./media/setup_rsa_tool_05.png)
+    ![Sicherheitsbefehl.](./media/setup_rsa_tool_05.png)
 
 2. Im linken Bereich unter **Sicherheit** wählen Sie **Persönliches Zugriffstoken** aus. Wählen Sie dann **Neues Token** aus.
 
-    ![Scheinschaltfläche „Neues Token“ auf der Registerkarte „Persönliches Zugangstoken“ in den Benutzereinstellungen](./media/setup_rsa_tool_06.png)
+    ![Schaltfläche „Neues Token“ auf der Registerkarte „Persönliches Zugriffstoken“ in den Benutzereinstellungen.](./media/setup_rsa_tool_06.png)
 
 3. Füllen Sie die folgenden Felder aus, und wählen Sie dann **Erstellen** aus:
 
@@ -102,12 +102,12 @@ In diesem Lernprogramm verwenden Sie den LCS-Geschäftsprozessmodellierer (BPM),
     - **Ablauf (UTC)** – Wählen Sie **Benutzerdefiniert** aus und verwenden Sie dann die Datumsauswahl, um das letzte verfügbare Datum auszuwählen.
     - **Bereiche** – Wählen Sie die Option **Vollzugriff** aus.
 
-    ![Dialogfeld „Neues Zugriffstoken erstellen“](./media/setup_rsa_tool_07.png)
+    ![Dialogfeld „Neues persönliches Zugriffstoken erstellen“.](./media/setup_rsa_tool_07.png)
 
     > [!NOTE]
     > Notieren Sie das persönliche Zugriffstoken, das erstellt wird. Sie benötigen es später, wenn Sie die RSAT-Konfiguration einrichten.
 
-    ![Persönliches Zugangstoken](./media/setup_rsa_tool_08.png)
+    ![Persönliches Zugriffstoken.](./media/setup_rsa_tool_08.png)
 
 ## <a name="configure-the-lcs-project"></a>Konfigurieren des LCS-Projekts
 
@@ -123,11 +123,11 @@ Für das LCS-Projekt können Sie eine vorhandene Benutzerimplementierung oder ei
 1. Gehen Sie zum LCS-Implementierungsprojekt.
 2. Wählen Sie die Schaltfläche **Einstellungen** (das Rad-Symbol) in der rechten oberen Ecke der Seite aus, und wählen Sie dann **Spracheinstellungen**.
 
-    ![Aktualisieren der Spracheinstellung](./media/setup_rsa_tool_09.png)
+    ![Aktualisieren der Spracheinstellung.](./media/setup_rsa_tool_09.png)
 
 3. Im Feld **Bevorzugte Sprache** wählen Sie **Englisch (USA)** und **Speichern** aus.
 
-    ![Registerkarte „Spracheneinstellung“ in den Benutzereinstellungen](./media/setup_rsa_tool_10.png)
+    ![Registerkarte „Spracheneinstellung“ in den Benutzereinstellungen.](./media/setup_rsa_tool_10.png)
 
 ### <a name="configure-lcs-to-connect-to-the-azure-devops-project"></a>Konfigurieren von LCS, um eine Verbindung mit dem Azure DevOps-Projekt herzustellen
 
@@ -136,67 +136,67 @@ Wenn Sie zuvor ein neues Azure DevOps-Projekt erstellt haben, konfigurieren Sie 
 1. Gehen Sie zum LCS-Implementierungsprojekt.
 2. Aktivieren Sie die Schaltfläche **Menü**, und wählen Sie dann **Projekteinstellungen** aus.
 
-    ![Befehl „Projekteinstellungen“](./media/setup_rsa_tool_11.png)
+    ![Befehl „Projekteinstellungen“.](./media/setup_rsa_tool_11.png)
 
 3. Wählen Sie im linken Bereich **Visual Studio Team Services** aus und wählen Sie dann **Einstellungen Visual Studio Team Services** aus.
 
-    ![Registerkarten Visual Studio-Projekteinstellungen in den Projekteinstellungen](./media/setup_rsa_tool_12.png)
+    ![Registerkarte „Visual Studio Team Services“ in den Projekteinstellungen.](./media/setup_rsa_tool_12.png)
 
-4. Geben Sie im Feld **Azure DevOpsWebsite-URL** die URL der Azure DevOps-Website ein. Wählen Sie im Feld **Persönliches Zugriffstoken** das persönliche Zugriffstoken aus, das zuvor erstellt wurde.
+4. Geben Sie im Feld **Azure DevOps-Website-URL** die URL der Azure DevOps-Website ein. Wählen Sie im Feld **Persönliches Zugriffstoken** das persönliche Zugriffstoken aus, das zuvor erstellt wurde.
 
     > [!NOTE]
     > Obwohl VSTS nun als Azure DevOps bezeichnet wird, verwenden Sie die alte URL, um LCS mit Ihrem Azure DevOps-Projekt zu verbinden. Beispielsweise lautet die Azure DevOps-URL, die in diesem Lernprogramm verwendet wird `https://dev.azure.com/D365FOFastTrack/`. In der folgenden Abbildung wird sie allerdings als `https://D365FOFastTrack.visualstudio.com/` eingegeben.
 
-    ![Schritt 1 in „Einrichten von Visual Studio Team Services“](./media/setup_rsa_tool_13.png)
+    ![Schritt 1 in „Einrichten von Visual Studio Team Services“.](./media/setup_rsa_tool_13.png)
 
 5. Wählen Sie **Fortsetzen** aus.
-6. Wählen Sie im Feld **Visual Studio Team Services-Projekt** das VSTS-Projekt auf der ausgewählten Website aus, die mit dem LCS-Projekt verknüpft werden soll. Das Feld **Vorlage verarbeiten** wird standardmäßig auf **Agile** festgelegt. Für eine benutzerdefinierte Vorlage überprüfen Sie den Leitfaden zu bewährten Methoden im Abschnitt [Neues Azure DevOps-Projekt erstellen ](#create-a-new-azure-devops-project). Wählen Sie dann **Fortsetzen** aus.
+6. Wählen Sie im Feld **Visual Studio Team Services-Projekt** das VSTS-Projekt auf der ausgewählten Website aus, die mit dem LCS-Projekt verknüpft werden soll. Das Feld **Vorlage verarbeiten** wird standardmäßig auf **Agile** festgelegt. Für eine benutzerdefinierte Vorlage überprüfen Sie den Leitfaden zu bewährten Methoden im Abschnitt [Neues Azure DevOps-Projekt erstellen](#create-a-new-azure-devops-project). Wählen Sie dann **Fortsetzen** aus.
 
-    ![Schritt 2 in „Einrichten von Visual Studio Team Services“](./media/setup_rsa_tool_14.png)
+    ![Schritt 2 in „Einrichten von Visual Studio Team Services“.](./media/setup_rsa_tool_14.png)
 
 7. Überprüfen Sie die Einstellungen, und wählen Sie dann **Speichern** aus.
 
-    ![Schritt 3 in „Einrichten von Visual Studio Team Services“](./media/setup_rsa_tool_15.png)
+    ![Schritt 3 in „Einrichten von Visual Studio Team Services“.](./media/setup_rsa_tool_15.png)
 
 8. Wählen Sie **Autorisieren** aus, um LCS zu autorisieren, um auf die konfigurierten Azure DevOps-Website in Ihrem Auftrag zuzugreifen und Funktionen zu aktivieren, die mit VSTS integrieren.
 
-    ![Schaltfläche „Autorisieren“](./media/setup_rsa_tool_16.png)
+    ![Schaltfläche „Autorisieren“.](./media/setup_rsa_tool_16.png)
 
 9. Ein Nachrichtenfeld mit folgender Meldung wird angezeigt: „Sie werden auf eine externe Website weitergeleitet, um LCS zu autorisieren, und in Ihrem Namen eine Verbindung mit Visual Studio-Team Services herzustellen. Fortfahren?“ Wählen Sie **Ja** aus.
 
-    ![Meldungsfeld](./media/setup_rsa_tool_17.png)
+    ![Meldungsfeld.](./media/setup_rsa_tool_17.png)
 
 10. Wählen Sie **Akzeptieren** aus.
 
-    ![Autorisieren des Zugriffs](./media/setup_rsa_tool_18.png)
+    ![Autorisieren des Zugriffs.](./media/setup_rsa_tool_18.png)
 
 11. Wenn Sie als Benutzer berechtigt sind, sollte Sie die Benutzeroberfläche zur LCS-Projekteinstellungsseite zurückbringen.
 
-    ![Autorisierter Benutzer](./media/setup_rsa_tool_19.png)
+    ![Autorisierter Benutzer.](./media/setup_rsa_tool_19.png)
 
 ### <a name="create-a-new-bpm-library"></a>Eine neue BPM-Bibliothek erstellen
 
 1. Gehen Sie zum LCS-Implementierungsprojekt.
 2. Aktivieren Sie die Schaltfläche **Menü**, und wählen Sie dann **Geschäftsprozessmodellierer** aus.
 
-    ![Befehl „Geschäftsprozessmodellierer“](./media/setup_rsa_tool_20.png)
+    ![Befehl „Geschäftsprozessmodellierer“.](./media/setup_rsa_tool_20.png)
 
 3. Wählen Sie **Neue Bibliothek** aus.
 
-    ![Schaltfläche „Neue Bibliothek“](./media/setup_rsa_tool_21.png)
+    ![Schaltfläche „Neue Bibliothek“.](./media/setup_rsa_tool_21.png)
 
 4. Geben Sie im Feld **Bibliotheksname** einen Namen ein, und wählen Sie dann **Erstellen** aus. Nennen Sie die BPM-Bibliothek in diesem Lernprogramm **RSAT**.
 
-    ![Dialogfeld „Neue Bibliothek erstellen“](./media/setup_rsa_tool_22.png)
+    ![Dialogfeld „Neue Bibliothek erstellen“.](./media/setup_rsa_tool_22.png)
 
 5. Öffnen Sie die neue BPM-Bibliothek **RSAT**.
 6. Wählen Sie den Prozess **Beispielkerngeschäftsprozess** und dann auf der rechten Seite die Option **Bearbeitungsmodus** aus.
 
-    ![Schaltfläche „Bearbeitungsmodus“](./media/setup_rsa_tool_23.png)
+    ![Schaltfläche „Bearbeitungsmodus“.](./media/setup_rsa_tool_23.png)
 
 7. Ändern Sie den Wert der beiden Felder **Name** und **Beschreibung** zu **Ein Produkt erstellen**. Wählen Sie dann **Speichern** aus.
 
-    ![Die Felder „Name“ und „Beschreibung“](./media/setup_rsa_tool_24.png)
+    ![Die Felder „Name“ und „Beschreibung“.](./media/setup_rsa_tool_24.png)
 
 ## <a name="environment"></a>Umgebung
 
@@ -219,14 +219,14 @@ Dieser Schritt ist erforderlich, um eine Verbindung mit LCS herzustellen, damit 
 2. Gehen Sie zu **Systemadministration \> Einrichten \> Systemparameter**.
 3. Wählen Sie auf der Registerkarte **Hilfe** im Feld **Lifecycle Services-Hilfekonfiguration** das betreffende LCS-Projekt (**RSAT** für dieses Lernprogramm) aus.
 
-    ![Feld „Lifecycle Services-Hilfekonfiguration“ auf der Registerkarte „Hilfe“](./media/setup_rsa_tool_25.png)
+    ![Feld „Lifecycle Services-Hilfekonfiguration“ auf der Registerkarte „Hilfe“.](./media/setup_rsa_tool_25.png)
 
     BPM-Bibliotheken werden im entsprechenden LCS-Projekt ausgefüllt.
 
 4. Wählen Sie **Speichern**.
 5. Möglicherweise müssen Sie den Browser aktualisieren, um den aktualisierten Hilfeinhalt anzuzeigen.
 
-    ![Benachrichtigung zum Aktualisieren des Browsers](./media/setup_rsa_tool_26.png)
+    ![Benachrichtigung zum Aktualisieren des Browsers.](./media/setup_rsa_tool_26.png)
 
 ## <a name="task-recordings"></a>Aufgabenaufzeichnung
 
@@ -244,15 +244,15 @@ Erstellen Sie eine entsprechende Aufgabenaufzeichnung, die Sie dem einfachen Ges
 
 3. Wählen Sie **Aufzeichnung erstellen** aus.
 
-    ![Schaltfläche „Aufzeichnung erstellen“](./media/setup_rsa_tool_28.png)
+    ![Schaltfläche „Aufzeichnung erstellen“.](./media/setup_rsa_tool_28.png)
 
 4. Füllen Sie die Felder **Aufzeichnungsname** und **Aufzeichnungsbeschreibung** aus, und wählen Sie dann **Starten** aus.
 
-    ![Felder „Aufzeichnungsname“ und „Aufzeichnungsbeschreibung“](./media/setup_rsa_tool_29.png)
+    ![Felder „Aufzeichnungsname“ und „Aufzeichnungsbeschreibung“.](./media/setup_rsa_tool_29.png)
 
 5. Erfassen Sie die Schritte zum Erstellen eines Produkts. Wenn Sie fertig sind, wählen Sie **Beenden** aus, um die Erfassung zu beenden.
 
-    ![Schritte zum Erstellen eines Produkts](./media/setup_rsa_tool_30.png)
+    ![Schritte zum Erstellen eines Produkts.](./media/setup_rsa_tool_30.png)
 
 6. Wählen Sie **In Lifecycle Services speichern** aus.
 
@@ -260,34 +260,34 @@ Erstellen Sie eine entsprechende Aufgabenaufzeichnung, die Sie dem einfachen Ges
 
     Bibliotheksinformationen werden aus LCS geladen.
 
-    ![Laden von Bibliotheksinformationen](./media/setup_rsa_tool_32.png)
+    ![Laden von Bibliotheksinformationen.](./media/setup_rsa_tool_32.png)
 
 7. Wählen Sie die BPM-Bibliothek aus, die der Aufgabenaufzeichnung zugeordnet werden soll. In diesem Lernprogramm wählen Sie die **RSAT**-BPM-Bibliothek aus, die zuvor erstellt wurde, und den Geschäftsprozess **Ein Produkt erstellen** darunter. Wählen Sie dann **OK** aus.
 
-    ![Die Aufgabenaufzeichnung einer BPM-Bibliothek und einem Geschäftsprozess zuordnen](./media/setup_rsa_tool_33.png)
+    ![Die Aufgabenaufzeichnung einer BPM-Bibliothek und einem Geschäftsprozess zuordnen.](./media/setup_rsa_tool_33.png)
 
     Die Meldung „Das Speichern in Lifecycle Services war erfolgreich“ erscheint.
 
-    ![Meldung einer erfolgreichen Speicherung in LCS](./media/setup_rsa_tool_34.png)
+    ![Meldung einer erfolgreichen Speicherung in LCS.](./media/setup_rsa_tool_34.png)
 
 8. Wenn Sie die Aufgabenaufzeichnung lokal speichern und dann durch LCS zu BPM hochladen möchten, führen Sie die folgenden Schritte aus:
 
     1. Nachdem die Aufzeichnung abgeschlossen ist, wählen Sie **Auf diesem PC speichern** aus.
 
-        ![Auf diesem PC speichern](./media/setup_rsa_tool_35.png)
+        ![Auf diesem PC speichern.](./media/setup_rsa_tool_35.png)
 
     2. In der Benachrichtigungsleiste des Browsers wählen Sie **Speichern** oder **Speichern unter** aus, um die Datei auf dem lokalen Computer zu speichern.
 
-        ![Benachrichtigungsleiste](./media/setup_rsa_tool_36.png)
+        ![Benachrichtigungsleiste.](./media/setup_rsa_tool_36.png)
 
     3. Wechseln Sie zur BPM-Bibliothek **RSAT**, und wählen Sie den Geschäftsprozess aus, für den die Aufgabenaufzeichnung gespeichert wird.
     4. Auf der Registerkarte **Überblick** wählen Sie **Hochladen** aus.
 
-        ![Schaltfläche „Hochladen“](./media/setup_rsa_tool_37.png)
+        ![Schaltfläche „Hochladen“.](./media/setup_rsa_tool_37.png)
 
     5. Wählen Sie **Durchsuchen** und dann die .axtr-Datei aus, die Sie zuvor gespeichert haben. Wählen Sie dann **Hochladen** aus.
 
-        ![Auswählen der .axtr-Datei zum Hochladen](./media/setup_rsa_tool_38.png)
+        ![Auswählen der .axtr-Datei zum Hochladen.](./media/setup_rsa_tool_38.png)
 
 ### <a name="test-the-synchronization-from-bpm-to-azure-devops"></a>Testen der Synchronisierung von BPM zu Azure DevOps
 
@@ -299,36 +299,36 @@ Da jetzt eine Aufgabenaufzeichnung dem Geschäftsprozess zugeordnet ist, müssen
 1. Wechseln Sie zur BPM-Bibliothek und öffnen Sie die **RSAT**-Bibliothek, die Sie zuvor erstellt haben.
 2. Aktivieren Sie die Ellipsen-Schaltfläche (**…**), und wählen Sie **VSTS-Synchronisierung** aus.
 
-    ![Befehl „VSTS-Synchronisierung“ im Ellipsen-Menü](./media/setup_rsa_tool_39.png)
+    ![Befehl „VSTS-Synchronisierung“ im Ellipsen-Menü.](./media/setup_rsa_tool_39.png)
 
     Nachdem die VSTS-Synchronisierung abgeschlossen ist, wird auf der linken Seite die Registerkarte **Anforderungen** angezeigt, die die entsprechende Azure DevOps-Arbeitsaufgabe enthält.
 
     > [!NOTE]
     > Die Arbeitsaufgabe, die in Azure DevOps erstellt wird, weist den BPM-Bibliotheksnamen als Titelpräfix vor.
 
-    ![Registerkarte „Anforderungen“](./media/setup_rsa_tool_40.png)
+    ![Registerkarte „Anforderungen“.](./media/setup_rsa_tool_40.png)
 
 3. Aktualisieren Sie die Seite.
 4. Wählen Sie die Elipsen-Schaltfläche (**...**) aus. Es wird die Zusatzfunktion **Testfälle synchronisieren** angezeigt. Wählen Sie diese Option aus.
 
-    ![Befehl „Testfälle synchronisieren“ im Ellipsen-Menü](./media/setup_rsa_tool_41.png)
+    ![Befehl „Testfälle synchronisieren“ im Ellipsen-Menü.](./media/setup_rsa_tool_41.png)
 
     > [!NOTE]
     > Wenn die Option **Testfälle synchronisieren** nicht verfügbar ist, nachdem Sie die Seite aktualisieren, wechseln zur Hauptseite für BPM, und wählen Sie **Testfälle synchronisieren** für die gesamte Bibliothek aus. Hierdurch erzwingen Sie eine Synchronisierung für die gesamte Bibliothek.
     >
-    > ![Auswählen der Synchronisierung von Testfällen für die gesamte Bibliothek](./media/setup_rsa_tool_42.png)
+    > ![Auswählen der Synchronisierung von Testfällen für die gesamte Bibliothek.](./media/setup_rsa_tool_42.png)
 
     Nachdem die Synchronisierung der Testfälle abgeschlossen ist, wird auf der Registerkarte **Anforderungen** ein neuer Testfall erstellt.
 
-    ![Neuer Testfall auf der Registerkarte „Anforderungen“](./media/setup_rsa_tool_43.png)
+    ![Neuer Testfall auf der Registerkarte „Anforderungen“.](./media/setup_rsa_tool_43.png)
 
 5. Wechseln Sie zu Ihrem Azure DevOps-Projekt, und wählen Sie **Übersichten \> Arbeitsaufgaben** aus.
 
-    ![Befehl „Arbeitsaufgaben“ unter „Übersichten“](./media/setup_rsa_tool_44.png)
+    ![Befehl „Arbeitsaufgaben“ unter „Übersichten“.](./media/setup_rsa_tool_44.png)
 
 6. Überprüfen Sie, ob die Arbeitsaufgabe und der Testfall, die Sie durch BPM-Synchronisierung erstellt haben, vorhanden sind.
 
-    ![Arbeitsaufgabe und Testfall](./media/setup_rsa_tool_45.png)
+    ![Arbeitsaufgabe und Testfall.](./media/setup_rsa_tool_45.png)
 
 ## <a name="install-and-configure-rsat"></a>RSAT installieren und konfigurieren
 
@@ -354,16 +354,16 @@ Um die Authentifizierung zu aktivieren, müssen Sie ein Zertifikat auf dem gleic
     > [!NOTE]
     > Stellen Sie sicher, dass Sie **certlm.msc** und nicht **certmgr.msc** eingeben, da die Zertifikate auf dem lokalen Computer gespeichert werden.
 
-    ![Zertifikat „D365 Automated-Testzertifikat“](./media/setup_rsa_tool_46.png)
+    ![Zertifikat „Automatisiertes D365-Testzertifikat“.](./media/setup_rsa_tool_46.png)
 
 3. Klicken Sie mit der rechten Maustaste auf das Zertifikat, und wählen Sie dann **Kopieren** aus.
 4. Wechseln Sie zu **Vertrauenswürdige Stammzertifizierungsstellen \> Zertifikate**.
 
-    ![Zertifikatsordner unter dem Ordner „Vertrauenswürdige Stammzertifizierungsstellen“](./media/setup_rsa_tool_47.png)
+    ![Zertifikatsordner unter dem Ordner „Vertrauenswürdige Stammzertifizierungsstellen“.](./media/setup_rsa_tool_47.png)
 
 5. Wählen Sie im Menü **Aktivität** **Einfügen** aus, um das Zertifikat in den Speicherort der **Vertrauenswürdigen Stammzertifizierungsstellen** zu kopieren.
 
-    ![Befehl „Einfügen“ im Menü „Aktivität“](./media/setup_rsa_tool_48.png)
+    ![Befehl „Einfügen“ im Menü „Aktivität“.](./media/setup_rsa_tool_48.png)
 
 6. Um die Fingerabdruck des installierten Zertifikats zu erhalten, aber ohne Leerzeichen und Sonderzeichen, öffnen Sie ein Windows PowerShell-Fenster als Administrator und führen die folgenden Befehle aus.
 
@@ -384,11 +384,11 @@ Um die Authentifizierung zu aktivieren, müssen Sie ein Zertifikat auf dem gleic
 1. Stellen Sie eine Remote Desktop Protocol (RDP)-Verbindung mit dem AOS-Computer her. Anmeldungsdetails sind auf der Umgebungsdetailseite in LCS verfügbar.
 2. Öffnen Sie Microsoft-Internetinformationsdienste (IIS) und navigieren Sie zu **AOSService** in der Website-Liste.
 
-    ![AOSService in der Website-Liste](./media/setup_rsa_tool_49.png)
+    ![AOSService in der Website-Liste.](./media/setup_rsa_tool_49.png)
 
 3. Klicken Sie mit der rechten Maustaste auf **Erkunden**, um den Ordner **\<Drive\>: \\AosService\\Webroot** zu öffnen. Suchen Sie die Datei **wif.config**.
 
-    ![Wif.config-Datei im Webroot-Ordner](./media/setup_rsa_tool_50.png)
+    ![Wif.config-Datei im Webroot-Ordner.](./media/setup_rsa_tool_50.png)
 
 4. Aktualisieren Sie die Datei **wif.config**, indem Sie einen neuen Zertifikatseintrag für Ihr Zertifikat und den Behördennamen hinzufügen, wie im folgenden Beispiel dargestellt.
 
@@ -434,11 +434,11 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 1. Wechseln Sie zu <https://www.microsoft.com/download/details.aspx?id=57357> und wählen Sie **Download** aus.
 2. Wählen Sie alle Dateien aus, und wählen Sie dann **Weiter** aus.
 
-    ![Auswählen aller Dateien](./media/setup_rsa_tool_51.png)
+    ![Auswählen aller Dateien.](./media/setup_rsa_tool_51.png)
 
 3. Doppelklicken Sie auf das .msi-Paket, um das Installationsprogramm auszuführen. Wenn die Installation abgeschlossen ist, wählen Sie **Fertig stellen** aus.
 
-    ![RSAT-Installationsprogrammdatei](./media/setup_rsa_tool_52.png)
+    ![RSAT-Installationsprogrammdatei.](./media/setup_rsa_tool_52.png)
 
 ### <a name="install-selenium-and-browser-drivers"></a>Einrichten von Selenium- und Browsertreibern
 
@@ -453,46 +453,46 @@ In den Vorgängerversionen von RSAT mussten Sie Selenium- und Browsertreiber ein
 
 1. Wechseln Sie zum Azure DevOps-Projekt, und wählen Sie **Testpläne** aus.
 
-    ![Befehl „Testpläne“](./media/setup_rsa_tool_53.png)
+    ![Befehl „Testpläne“.](./media/setup_rsa_tool_53.png)
 
 2. Wählen Sie **Neuer Testplan** aus.
 
-    ![Schaltfläche „Neuer Testplan“](./media/setup_rsa_tool_54.png)
+    ![Schaltfläche „Neuer Testplan“.](./media/setup_rsa_tool_54.png)
 
 3. Füllen Sie das Feld **Name** aus, und wählen Sie dann **Erstellen** aus. In diesem Lernprogramm geben Sie dem Testplan den Namen **RSAT-Testplan**.
 
-    ![Dialogfeld „Neuer Testplan“](./media/setup_rsa_tool_55.png)
+    ![Dialogfeld „Neuer Testplan“.](./media/setup_rsa_tool_55.png)
 
 4. Wählen Sie das Pluszeichen (**+**) aus, und wählen Sie dann **Statische Suite** aus, um eine statische Suite unterhalb des neuen Testplans zu erstellen. Nennen Sie die neue Testsuite **T01 – Fertigung auf Lager**
 
     > [!NOTE]
     > Sie können auch eine abfragebasierte Suite erstellen, wenn die neuen Testfälle von BPM automatisch in die RSAT-Testsuite gezogen werden sollen.
 
-    ![Erstellen einer statischen Suite](./media/setup_rsa_tool_56.png)
+    ![Erstellen einer statischen Suite.](./media/setup_rsa_tool_56.png)
 
 ### <a name="attach-test-cases-to-test-suites"></a>Anfügen von Testfällen an Testsuiten
 
 1. Wählen Sie rechts **Vorhandenes Element hinzufügen** aus, um vorhandene Testfälle der Testsuite hinzuzufügen.
 
-    ![Schaltfläche „Vorhandenes Element hinzufügen“](./media/setup_rsa_tool_57.png)
+    ![Schaltfläche „Vorhandenes Element hinzufügen“.](./media/setup_rsa_tool_57.png)
 
 2. Auf der Seite **Testfälle der Suite hinzufügen** wählen Sie **Abfrage ausführen** aus, und dann wählen Sie den Testfall aus, der der Testsuite hinzugefügt werden soll. In diesem Lernprogramm wählen Sie den Testfall **Neues Produkt erstellen** aus. Wählen Sie dann in der unteren rechten Ecke der Seite **Testfälle hinzufügen** aus (diese Schaltfläche wird in der folgenden Abbildung nicht dargestellt).
 
-    ![Schalfläche „Abfrage ausführen“](./media/setup_rsa_tool_58.png)
+    ![Schaltfläche „Abfrage ausführen“.](./media/setup_rsa_tool_58.png)
 
     Der Testfall wird der Testsuite **T01-Fertigung auf Lager** hinzugefügt.
 
-    ![Testfall der Testsuite hinzugefügt](./media/setup_rsa_tool_59.png)
+    ![Testfall der Testsuite hinzugefügt.](./media/setup_rsa_tool_59.png)
 
 ### <a name="configure-rsat"></a>RSAT konfigurieren
 
 1. RSAT öffnen
 
-    ![RSAT-Symbol](./media/setup_rsa_tool_60.png)
+    ![RSAT-Symbol.](./media/setup_rsa_tool_60.png)
 
 2. Andernfalls wird folgende Warnung angezeigt: „Regression Suite Automation Tool benötigt Selenium. Soll es jetzt automatisch heruntergeladen und installiert werden?“ Wählen Sie **Ja** aus.
 
-    ![Warnmeldung, dass Regression Suite Automation Tool Selenium benötigt](./media/setup_rsa_tool_61.png)
+    ![Warnmeldung, dass Regression Suite Automation Tool Selenium benötigt.](./media/setup_rsa_tool_61.png)
 
 3. Wählen Sie die Schaltfläche **Einstellungen** (das Zahnradsymbol) in der oberen rechten Ecke aus, und füllen Sie dann im angezeigten Dialogfeld die folgenden Felder aus:
 
@@ -506,7 +506,7 @@ In den Vorgängerversionen von RSAT mussten Sie Selenium- und Browsertreiber ein
         > [!NOTE]
         > Um den Hostnamen und den SOAP-Hostnamen zu finden, öffnen Sie den IIS-Manager, klicken Sie mit der rechten Maustaste auf **Websites \> AOSService**, und wählen Sie dann **Bindungen bearbeiten** aus. Die Werte in der Spalte **Hostname** geben Ihnen den Hostnamen und den SOAP-Hostnamen (der SOAP-Hostname hat das Suffix **soap** in der URL).
 
-        ![Hostname und SOAP-Hostname in der Spalte „Hostname“](./media/setup_rsa_tool_63.png)
+        ![Hostname und SOAP-Hostname in der Spalte „Hostname“.](./media/setup_rsa_tool_63.png)
 
     - **Benutzername des Administrators** – Geben Sie die E-Mail-Adresse des Administratorbenutzers in der Testumgebung ein.
     - **Fingerabdruck** – Geben Sie den Fingerabdruck für das Authentifizierungszertifikat ein, wie zuvor in diesem Lernprogramm beschrieben.
@@ -520,7 +520,7 @@ In den Vorgängerversionen von RSAT mussten Sie Selenium- und Browsertreiber ein
     - **Testaktion-Timeout** – Dieses Feld steuert den Timeout-Zeitraum für Serveranforderungen der Finance and Operation-Umgebung in Minuten. Normalerweise sollte der Standardwert (2 Minuten) ausreichen. Bei langsameren Umgebungen können Sie den Wert ggf. erhöhen wollen, falls Fehler in Zusammenhang mit Timeouts auftreten.
     - **Unternehmensname** – Geben Sie den Unternehmensnamen zur Verwendung als Standardunternehmen ein, wenn Excel-Parameterdateien erstellt werden. Sie können das Unternehmen später ändern, indem Sie die Excel-Parameterdatei bearbeiten.
 
-    ![Dialogfeld „Einstellungen“](./media/setup_rsa_tool_62.png)
+    ![Dialogfeld „Einstellungen“.](./media/setup_rsa_tool_62.png)
 
 4. Wählen Sie **Übernehmen** aus, um die Einstellungen anzuwenden und zu speichern.
 
@@ -532,15 +532,15 @@ In den Vorgängerversionen von RSAT mussten Sie Selenium- und Browsertreiber ein
 
 1. Wählen Sie **Laden** aus, um den Testplan **RSAT-Testplan** aus dem Azure DevOps-Projekt zu laden.
 
-    ![Schaltfläche „Laden“](./media/setup_rsa_tool_64.png)
+    ![Schaltfläche „Laden“.](./media/setup_rsa_tool_64.png)
 
-2. Wählen Sie den Testfall **Neues Produkt erstellen** aus der Testsuite aus, und wählen Sie dann **Neu \>Testausführung und Parameterdateien generieren** aus.
+2. Wählen Sie den Testfall **Neues Produkt erstellen** aus der Testsuite aus, und wählen Sie dann **Neu \> Testausführung und Parameterdateien generieren** aus.
 
-    ![Befehl „Testausführung und Parameterdateien generieren“ im Menü „Neu“](./media/setup_rsa_tool_65.png)
+    ![Befehl „Testausführung und Parameterdateien generieren“ im Menü „Neu“.](./media/setup_rsa_tool_65.png)
 
-    Die Excel-Parameterdatei wird im lokalen Ordner erstellt, den Sie in der RSAT-Konfiguration angegeben haben (z. B. **C:\\Temp \\RegressionTool**).
+    Die Excel-Parameterdatei wird im lokalen Ordner erstellt, den Sie in der RSAT-Konfiguration angegeben haben (z. B. **C:\\Temp\\RegressionTool**).
 
-    ![Excel-Parameterdatei erstellt](./media/setup_rsa_tool_66.png)
+    ![Excel-Parameterdatei erstellt.](./media/setup_rsa_tool_66.png)
 
 3. Wenn Sie die Parameterdateien speichern möchten, wählen Sie **Hochladen** aus. Testautomatisierungsdateien aller ausgewählten Testfälle werden für künftige Verwendung in Azure DevOps hochgeladen. (Diese Dateien enthalten Excel-Testparameterdateien.)
 
@@ -553,33 +553,33 @@ In den Vorgängerversionen von RSAT mussten Sie Selenium- und Browsertreiber ein
     - **.xlsx** – Excel-Parameterdatei
     - **.xml** – Aufzeichnungsdatei
 
-    ![Dateien auf der Registerkarte „Anhänge“](./media/setup_rsa_tool_67.png)
+    ![Dateien auf der Registerkarte „Anhänge“.](./media/setup_rsa_tool_67.png)
 
 5. Wählen Sie den Testfall aus, der ausgeführt werden soll, und wählen Sie dann **Ausführen** aus.
 
     > [!NOTE]
     > Bevor Sie Testfälle ausführen, wenn Sie Internet Explorer als Browser verwenden, stellen Sie sicher, dass die Desktop-Auflösung unter **Windows-Anzeigeeinstellungen \> Maßstab und Layout** auf **100 %** festgelegt ist. Wenn Sie diese Einstellungen auf einem virtuellen Computer (VM) nicht ändern können, ändern Sie ihn auf dem Client (Laptop), von dem Sie auf die WM zuzugreifen versuchen. Die Auflösungseinstellungen werden dann von den VM-Anzeigeeinstellungen geerbt.
 
-    ![Desktopauflösung auf 100 % eingestellt](./media/setup_rsa_tool_68.png)
+    ![Desktopauflösung auf 100 % eingestellt.](./media/setup_rsa_tool_68.png)
 
 6. Wenn die Browsertreiber nicht im System installiert sind, erhalten Sie folgende Warnmeldung: „Dieser Vorgang erfordert den Treiber für \<browser name\>. Möchten Sie ihn jetzt automatisch herunterladen und installieren?“ Wählen Sie **Ja** aus.
 
-    ![Warnmeldung für Internet Explorer](./media/setup_rsa_tool_69.png)
+    ![Warnmeldung für Internet Explorer.](./media/setup_rsa_tool_69.png)
 
-    ![Warnmeldung für Chrome](./media/setup_rsa_tool_70.png)
+    ![Warnmeldung für Chrome.](./media/setup_rsa_tool_70.png)
 
     > [!NOTE]
-    > Wenn Sie Chrome als Browser verwenden und eine Fehlermeldung erhalten, die angibt, dass die Sitzung nicht erstellt wurde, da die Chrome-Version falsch ist, laden Sie den letzten Chrome-Treiber von <http://chromedriver.chromium.org/downloads> in den Ordner **C:\\Programme (x86)\\Regression Suite Automation Tool\\Allgemein\\Extern\\ Selenium** herunter.
+    > Wenn Sie Chrome als Browser verwenden und eine Fehlermeldung erhalten, die angibt, dass die Sitzung nicht erstellt wurde, da die Chrome-Version falsch ist, laden Sie den letzten Chrome-Treiber von <http://chromedriver.chromium.org/downloads> in den Ordner **C:\\Programme (x86)\\Regression Suite Automation Tool\\Allgemein\\Extern\\Selenium** herunter.
 
-    ![Fehlermeldung für Chrome](./media/setup_rsa_tool_71.png)
+    ![Fehlermeldung für Chrome.](./media/setup_rsa_tool_71.png)
 
     Der Testfall wird ausgeführt und das Feld **Ergebnis** wird aktualisiert.
 
-    ![Feld „Ergebnis“ wurde aktualisiert](./media/setup_rsa_tool_72.png)
+    ![Feld „Ergebnis“ wurde aktualisiert.](./media/setup_rsa_tool_72.png)
 
     Wenn Sie diesem Lernprogramm folgen, schlägt der **Neues Produkt erstellen**-Testfall fehlt, da die Aufgabenaufzeichnung für das Erstellen eines Produkts den Produktname als hartcodierten Wert gespeichert hat. Wenn Sie den gleichen Testfall wiederholen, sollten Sie eine Fehlermeldung erhalten, da das Produkt bereits vorhanden ist.
 
-    ![Auf „Fehlgeschlagen“ festgelegtes Ergebnisfeld](./media/setup_rsa_tool_72.png)
+    ![Auf „Fehlgeschlagen“ festgelegtes Ergebnisfeld.](./media/setup_rsa_tool_72.png)
 
 ### <a name="view-the-test-results"></a>Anzeigen des Testergebnisses
 
@@ -587,38 +587,38 @@ In den Vorgängerversionen von RSAT mussten Sie Selenium- und Browsertreiber ein
 
     Es wird eine Fehlermeldung angezeigt.
 
-    ![Fehlermeldung](./media/setup_rsa_tool_73.png)
+    ![Fehlermeldung.](./media/setup_rsa_tool_73.png)
 
 2. Wählen Sie **Detail**, um die gesamten Fehlermeldung anzuzeigen.
 
-    ![Die ganze Fehlermeldung](./media/setup_rsa_tool_74.png)
+    ![Die ganze Fehlermeldung.](./media/setup_rsa_tool_74.png)
 
 3. Um eine ausführliche Version eine Fehlermeldung in Azure DevOps anzuzeigen, wählen Sie **In Azure DevOps öffnen** aus. In Azure DevOps können Sie den Status des Testfalls und die detaillierte Fehlermeldung anzeigen.
 
-    ![Detaillierte Fehlermeldung in Azure DevOps](./media/setup_rsa_tool_75.png)
+    ![Detaillierte Fehlermeldung in Azure DevOps.](./media/setup_rsa_tool_75.png)
 
 4. Um die Testergebnisse direkt im Azure DevOps-Projekt anzuzeigen, navigieren Sie zu **Testpläne \> Testpläne \> Ausführungen**. Doppelklicken Sie auf den Test, für den weitere Details angezeigt werden sollen.
 
-    ![Liste der Testläufe in Azure DevOps](./media/setup_rsa_tool_76.png)
+    ![Liste der Testläufe in Azure DevOps.](./media/setup_rsa_tool_76.png)
 
 5. Die Registerkarte **Ausführungszusammenfassung** gibt an, dass der Testfall fehlgeschlagen ist, aber die tatsächliche Fehlermeldung wird nicht bereitgestellt. Um die detaillierten Fehlermeldung anzuzeigen, wählen Sie die Registerkarte **Testergebnisse** aus.
 
-    ![Registerkarte „Ausführungszusammenfassung“](./media/setup_rsa_tool_77.png)
+    ![Registerkarte „Ausführungszusammenfassung“.](./media/setup_rsa_tool_77.png)
 
     Die Registerkarte **Testergebnisse** enthält die Testfallinformationen, zusammen mit dem Ergebnis und die Fehlermeldung.
 
-    ![Registerkarte „Testergebnis“](./media/setup_rsa_tool_78.png)
+    ![Registerkarte „Testergebnis“.](./media/setup_rsa_tool_78.png)
 
 6. Doppelklicken Sie auf den entsprechenden Datensatz, um die detaillierte Fehlermeldung anzuzeigen.
 
-    ![Detaillierter Fehlermeldung](./media/setup_rsa_tool_79.png)
+    ![Detaillierte Fehlermeldung.](./media/setup_rsa_tool_79.png)
 
     > [!NOTE]
     > Alle Fehlermeldungen sind auch lokal in **C:\\Benutzer\\\$YourUserName\\AppData\\Roaming\\regressionTool\\errormsg-.txt** verfügbar.
 
 7. Sie können die Testlaufergebnisse auch von der Testplanebene exportieren, indem Sie **Exportieren** auswählen.
 
-    ![Exportieren eines Testplans](./media/setup_rsa_tool_80.png)
+    ![Exportieren eines Testplans.](./media/setup_rsa_tool_80.png)
 
 ### <a name="modify-the-excel-parameter-file"></a>Ändern Sie die Excel-Parameterdatei.
 
@@ -636,23 +636,23 @@ In den Vorgängerversionen von RSAT mussten Sie Selenium- und Browsertreiber ein
     > [!NOTE]
     > Zusätzlich zur Registerkarte **Allgemein** enthält die Excel-Parameterdatei eine Datenregisterkarte für jede Formularseite, die der Testfall besucht.
 
-    ![Produktnummernfeld](./media/setup_rsa_tool_81.png)
+    ![Produktnummernfeld.](./media/setup_rsa_tool_81.png)
 
 4. Wählen Sie **Speichern** aus und schließen die Excel-Arbeitsmappe.
 5. Wählen Sie **Hochladen** aus, um die Excel-Parameterdatei in Azure DevOps zu speichern.
 
-    ![Meldung für erfolgreichen Upload](./media/setup_rsa_tool_82.png)
+    ![Meldung für erfolgreichen Upload.](./media/setup_rsa_tool_82.png)
 
     > [!NOTE]
     > Um Testfälle in einem bestimmten Benutzerkontext auszuführen, geben Sie die E-Mail-Kennung des Benutzers im Feld **Testbenutzer** auf der Registerkarte **Allgemein** der Excel-Parameterdatei ein. In der neuesten Version von RSAT wurde das Layout der Felder in der Excel-Parameterdatei aktualisiert, das Konzept bleibt jedoch gleich.
     >
-    > ![Feld „Testbenutzer“](./media/setup_rsa_tool_83.png)
+    > ![Feld „Testbenutzer“.](./media/setup_rsa_tool_83.png)
 
 ### <a name="validate-the-results"></a>Das Ergebnis validieren
 
 - Wählen Sie **Ausführen** aus, um den Testfall erneut auszuführen, und überprüfen Sie, ob der Testfall erfolgreich war. Sie können die Testergebnisse wie im Abschnitt [Anzeigen der Testergebnisse](#view-the-test-results) beschrieben anzeigen.
 
-    ![Auf „Erfolgreich“ festgelegtes Ergebnisfeld](./media/setup_rsa_tool_84.png)
+    ![Auf „Erfolgreich“ festgelegtes Ergebnisfeld.](./media/setup_rsa_tool_84.png)
 
 ### <a name="chaining-of-test-cases"></a>Verketten von Testfällen
 
@@ -666,27 +666,27 @@ In diesem Abschnitt erstellen Sie eine gespeicherte Variable im ersten Testfall.
 2. Wählen Sie die Schaltfläche **Einstellungen** (das Zahnradsymbol) aus, und wählen Sie dann **Aufgabenaufzeichnung** aus.
 3. Wählen Sie **Aufzeichnung bearbeiten** aus.
 
-    ![Schalfläche „Aufzeichnung bearbeiten“](./media/setup_rsa_tool_85.png)
+    ![Schaltfläche „Aufzeichnung bearbeiten“.](./media/setup_rsa_tool_85.png)
 
 4. Wählen Sie **In Lifecycle Services öffnen** aus.
 
-    ![Schalfläche „In Lifecycle Services öffnen“](./media/setup_rsa_tool_86.png)
+    ![Schaltfläche „In Lifecycle Services öffnen“.](./media/setup_rsa_tool_86.png)
 
 5. Wählen Sie **Lifecycle Services-Bibliothek auswählen** aus.
 
-    ![Schaltfläche „Lifecycle Services-Bibliothek auswählen“](./media/setup_rsa_tool_87.png)
+    ![Schaltfläche „Lifecycle Services-Bibliothek auswählen“.](./media/setup_rsa_tool_87.png)
 
     BPM-Bibliotheken werden aus LCS geladen.
 
-    ![Laden von BPM-Bibliotheken](./media/setup_rsa_tool_88.png)
+    ![Laden von BPM-Bibliotheken.](./media/setup_rsa_tool_88.png)
 
 6. Nachdem die BPM-Bibliotheken aus LCS geladen wurden, wählen Sie die BPM-Bibliothek **RSAT** und den Geschäftsprozess **Neues Produkt erstellen** aus, dem die Aufgabenaufzeichnung zugeordnet wurde. Wählen Sie dann **OK** aus.
 
-    ![Auswählen einer BPM-Bibliothek und eines Geschäftsprozesses](./media/setup_rsa_tool_89.png)
+    ![Auswählen einer BPM-Bibliothek und eines Geschäftsprozesses.](./media/setup_rsa_tool_89.png)
 
 7. Der Name der entsprechenden Aufgabenaufzeichnung wird im Feld **Aufzeichnungsname** eingegeben. Wählen Sie **Starten** aus.
 
-    ![Name der Aufgabenaufzeichnung im Feld „Aufzeichnungsname“](./media/setup_rsa_tool_90.png)
+    ![Name der Aufgabenaufzeichnung im Feld „Aufzeichnungsname“.](./media/setup_rsa_tool_90.png)
 
 8. Navigieren Sie zu **Produktinformationsverwaltung \> Produkte**, und wählen Sie **Neu** aus, um die Seite zu öffnen, in der die ursprüngliche Aufgabenaufzeichnung **Ein Produkt erstellen** aufgezeichnet wurde.
 9. Wählen Sie **Schritt einfügen** aus.
@@ -694,15 +694,15 @@ In diesem Abschnitt erstellen Sie eine gespeicherte Variable im ersten Testfall.
     > [!NOTE]
     > Der neue Schritt wird **nach** dem Schritt eingefügtes, den Sie im Bereich ausgewählt haben.
 
-    ![Schaltfläche „Schritt einfügen“](./media/setup_rsa_tool_91.png)
+    ![Schaltfläche „Schritt einfügen“.](./media/setup_rsa_tool_91.png)
 
 10. Klicken Sie mit der rechten Maustaste auf das Feld **Produktnummer**, und wählen Sie dann **Aufgabenaufzeichnung \> Kopieren** aus.
 
-    ![Kopieren-Befehl](./media/setup_rsa_tool_92.png)
+    ![Kopieren-Befehl.](./media/setup_rsa_tool_92.png)
 
 11. Ein neuer Schritt wird dem Bereich hinzugefügt. Notieren Sie sich den Wert im Feld **Produktnummer**, da Sie ihn zu einem späteren Zeitpunkt benötigen.
 
-    ![Neuer Schritt hinzugefügt](./media/setup_rsa_tool_93.png)
+    ![Neuer Schritt hinzugefügt.](./media/setup_rsa_tool_93.png)
 
 12. Wählen Sie **Bearbeitung beendet** aus.
 13. Wählen Sie **In Lifecycle Services speichern** aus, und ordnen Sie die neue Aufgabenaufzeichnung der gleichen BPM-Bibliothek und demselben Geschäftsprozess zu, der die ursprüngliche Aufgabenaufzeichnung zugeordnet war. Weitere Informationen finden Sie im Abschnitt [Erstellen einer Aufgabenaufzeichnung und Speichern in der BPM-Bibliothek](#create-a-task-recording-and-save-it-to-the-bpm-library).
@@ -714,7 +714,7 @@ In diesem Abschnitt erstellen Sie eine gespeicherte Variable im ersten Testfall.
 
 16. Wählen Sie **Bearbeiten** aus, um die neue Excel-Parameterdatei zu öffnen. Sie finden einen neuen **Gespeicherte Variable**-Eintrag in Zeile 9. Diese Variable, **{{EcoResProductCreate\_Identification\_ProductNumber\_Copy}}** wird in der XML-Datei der Aufgabenaufzeichnung gespeichert und kann in folgenden Tests verwendet werden.
 
-    ![Eintrag der gespeicherten Variable](./media/setup_rsa_tool_94.png)
+    ![Eintrag der gespeicherten Variable.](./media/setup_rsa_tool_94.png)
 
 #### <a name="create-a-new-test-case"></a>Neuen Testfall erstellen
 
@@ -722,7 +722,7 @@ In diesem Abschnitt erstellen Sie eine gespeicherte Variable im ersten Testfall.
 2. Wählen Sie den Prozess **Beispiel-Support-Geschäftsprozess** und dann auf der rechten Seite die Option **Bearbeitungsmodus** aus.
 3. Ändern Sie den Wert der beiden Felder **Name** und **Beschreibung** zu **Ein Produkt veröffentlichen**. Wählen Sie dann **Speichern** aus.
 
-    ![Name und Beschreibung geändert, um ein Produkt zu veröffentlichen](./media/setup_rsa_tool_95.png)
+    ![Name und Beschreibung geändert, um ein Produkt zu veröffentlichen.](./media/setup_rsa_tool_95.png)
 
 #### <a name="create-a-new-task-recording-that-has-a-validate-function"></a>Erstellen einer neuen Aufgabenaufzeichnung, die eine Validierungsfunktion hat
 
@@ -731,11 +731,11 @@ In diesem Abschnitt erstellen Sie eine gespeicherte Variable im ersten Testfall.
     > [!NOTE]
     > Für verkettete Testfälle wird immer empfohlen, dass Sie den erforderlichen Datensatz suchen oder danach filtern, indem Sie *den Wert des Felds manuell eingeben*. Auf diese Weise kann das Tool den Datensatz bestimmen, für den die Aktion im folgenden Testfall ausgeführt werden muss.
 
-    ![Neue Aufgabenaufzeichnung, die eine Validierungsfunktion hat](./media/setup_rsa_tool_96.png)
+    ![Neue Aufgabenaufzeichnung, die eine Validierungsfunktion hat.](./media/setup_rsa_tool_96.png)
 
     Für die vorherige Darstellung zeigt, validieren Sie den Wert des Felds **Produktnummer** nachdem das Produkt mit dem Schnellfilter gefunden wurde, aber bevor Sie **Produkte veröffentlichen** auswählen, um sicherzustellen, dass es sich bei der Produktkennung um die von zuvor handelt. Um den Wert zu überprüfen, klicken Sie mit der rechten Maustaste auf das Feld **Produktnummer**, und wählen Sie dann **Aufgabenaufzeichnung \> Überprüfen \> Aktueller Wert** aus.
 
-    ![Validieren des aktuellen Werts](./media/setup_rsa_tool_97.png)
+    ![Validieren des aktuellen Werts.](./media/setup_rsa_tool_97.png)
 
 #### <a name="save-the-task-recording-to-bpm"></a>Aufgabenaufzeichnung in BPM speichern
 
@@ -745,7 +745,7 @@ In diesem Abschnitt erstellen Sie eine gespeicherte Variable im ersten Testfall.
 
 2. Bibliotheksinformationen werden aus LCS geladen.
 
-    ![Laden von Bibliotheksinformationen aus LCS](./media/setup_rsa_tool_99.png)
+    ![Laden von Bibliotheksinformationen aus LCS.](./media/setup_rsa_tool_99.png)
 
 3. Wählen Sie die BPM-Bibliothek aus, die der Aufgabenaufzeichnung zugeordnet werden soll. In diesem Lernprogramm wählen Sie die **RSAT**-BPM-Bibliothek aus, die zuvor erstellt wurde, und den Geschäftsprozess **Ein Produkt veröffentlichen** darunter. Wählen Sie dann **OK** aus.
 
@@ -763,7 +763,7 @@ In diesem Abschnitt erstellen Sie eine gespeicherte Variable im ersten Testfall.
 3. Wählen Sie auf der Seite **Testfällen der Suite hinzufügen** **Abfrage ausführen** aus.
 4. Wählen Sie den neuen Testfall aus, der für **Produkt veröffentlichen** erstellt wurde, und wählen Sie dann **Testfälle hinzufügen** in der unteren rechten Ecke der Seite aus (diese Schaltfläche wird in der folgenden Abbildung nicht dargestellt).
 
-    ![Seite „Testfällen der Suite hinzufügen“](./media/setup_rsa_tool_100.png)
+    ![Seite „Testfällen der Suite hinzufügen“.](./media/setup_rsa_tool_100.png)
 
     Die Testsuite besitzt nun zwei Testfälle.
 
@@ -778,7 +778,7 @@ In diesem Abschnitt erstellen Sie eine gespeicherte Variable im ersten Testfall.
 
     Beide Testfälle werden geladen, zusammen mit der Excel-Parameterdatei für den ersten Testfall. Da Sie bei der letzten Ausführung **Hochladen** ausgewählt haben, werden die Parameterdateien von Azure DevOps gezogen.
 
-    ![Testfälle geladen](./media/setup_rsa_tool_103.png)
+    ![Testfälle geladen.](./media/setup_rsa_tool_103.png)
 
 3. Wählen Sie nur den zweiten Testfall, und wählen Sie dann **Neu \> Testausführungs- und Parameterdateien generieren** aus.
 
@@ -787,7 +787,7 @@ In diesem Abschnitt erstellen Sie eine gespeicherte Variable im ersten Testfall.
 1. Wählen Sie nur den zweiten Testfall aus, und wählen Sie dann **Bearbeiten** aus, um die entsprechenden Excel-Parameterdatei zu öffnen.
 2. Kopieren Sie die gespeicherte Variable **{{EcoResProductCreate\_Identification\_ProductNumber\_Copy}}** (weitere Informationen im Abschnitt [Ändern einer vorhandenen Aufgabenaufzeichnung, um einer gespeicherte Variablen zu erstellen](#modify-an-existing-task-recording-to-create-a-saved-variable)) aus dem ersten Testfall in alle Felder, in denen die Produktnummer verwendet wird. In diesem Fall kopieren Sie die Variable in die Felder **Produktnummer** und **Produktnummer prüfen** im Arbeitsblatt **EcoResProductListPage**.
 
-    ![Felder „Produktnummer und Produktnummer prüfen“](./media/setup_rsa_tool_104.png)
+    ![Felder „Produktnummer“ und „Produktnummer prüfen“.](./media/setup_rsa_tool_104.png)
 
     > [!NOTE]
     > Variablen können nur zwischen Tests für den gleichen Testlauf übergeben werden. Die Namen der Variablen müssen genau übereinstimmen.
@@ -800,7 +800,7 @@ In diesem Abschnitt erstellen Sie eine gespeicherte Variable im ersten Testfall.
 1. Wählen Sie beide Testfälle aus, die ausgeführt werden sollen, und wählen Sie dann **Ausführen** aus.
 2. Überprüfen Sie, dass beide Testfälle erfolgreich waren.
 
-    ![Auf „Erfolgreich“ festgelegtes Ergebnisfeld für beide Testfälle](./media/setup_rsa_tool_105.png)
+    ![Auf „Erfolgreich“ festgelegtes Ergebnisfeld für beide Testfälle.](./media/setup_rsa_tool_105.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

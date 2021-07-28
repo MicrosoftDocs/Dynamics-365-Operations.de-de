@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ac3d540ee3d1737e4e8be45394cd5807ae4a8d6f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9636348e7840206ad1ef5669eae7f553231cadf1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796147"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352613"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurieren von Callcenter-Lieferarten und -Belastungen
 
@@ -65,11 +65,11 @@ Im Abschnitt **Positionen** können Sie je nach Bedarf eine oder mehrere Gebühr
 
 Unternehmen konfigurieren oft gestaffelte Gebühren. In diesem Fall richtet sich der Betrag, den der Kunde für die Lieferung bezahlt, nach dem Auftragswert. Um abgestufte Gebühren zu konfigurieren, geben Sie Werte in die Felder **Von-Betrag** und **Bis-Betrag** ein, zusätzlich zur Definition der Gebühr selbst im Feld **Wert der sonstigen Zuschläge**. Zum Beispiel, für Aufträge, die einen Wert von weniger als $50 haben, berechnet ein Einzelhändler $5.95 für den Bodenversand. Für Aufträge, deren Wert gleich oder größer als $50, aber kleiner als $100 ist, berechnet der Einzelhändler $7,95. Für Aufträge, deren Wert gleich oder höher als $100 ist, bietet der Händler kostenlosen Versand an. Die folgende Abbildung zeigt die Konfiguration dieser Gebühren.
 
-![Beispiel für feste abgestufte Gebühren](media/fixedtieredcharges.png)
+![Beispiel für feste abgestufte Gebühren.](media/fixedtieredcharges.png)
 
 Sie können eine Mischung aus Kategorien für Gebühren verwenden, je nach Ihren geschäftlichen Anforderungen. Zum Beispiel, für alle Aufträge, die einen Wert von weniger als $100 haben, gibt es eine feste Gebühr von $9.95 für den Versand. Für Aufträge, deren Wert gleich oder größer als $100 ist, werden die Versandkosten in Höhe von 5 Prozent des Auftragswertes berechnet. Die folgende Abbildung zeigt die Konfiguration dieser Gebühren.
 
-![Beispiel für gemischte abgestufte Gebühren](media/mixedtieredcharges.png)
+![Beispiel für gemischte abgestufte Gebühren.](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Lieferarten bei der Auftragserfassung in einem Callcenter anwenden
 

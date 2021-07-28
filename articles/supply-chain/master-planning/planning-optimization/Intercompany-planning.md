@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e6fff06cb6194f17444025f7ea1f9dbb46e4f3ea
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a3b48667bb266fec082c48e777fd71d8e5ef6dae
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907642"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357022"
 ---
 # <a name="intercompany-planning"></a>Intercompany-Planung
 
@@ -76,7 +76,7 @@ In diesem Beispiel wird in der Firma USMF ein geplanter Fertigungsauftrag erstel
 
 Die folgende Abbildung zeigt, wie dieses Beispiel auf der Seite **Multilevel Bedarfsverursacher** für den geplanten Produktionsauftrag erscheinen könnte.
 
-![Intercompany-Beispiel, an dem zwei Firmen beteiligt sind](media/IntercompanyPlanning1.png)
+![Intercompany-Beispiel, an dem zwei Firmen beteiligt sind.](media/IntercompanyPlanning1.png)
 
 ### <a name="intercompany-example-that-involves-three-companies"></a>Intercompany-Beispiel, an dem drei Firmen beteiligt sind
 
@@ -84,7 +84,7 @@ Für dieses Beispiel wird eine geplante Einkaufsbestellung in der USMF-Firma ers
 
 Die folgende Abbildung zeigt, wie dieses Beispiel auf der Seite **Multilevel Bedarfsverursacher** für den geplanten Produktionsauftrag erscheinen könnte.
 
-![Intercompany-Beispiel, an dem drei Firmen beteiligt sind](media/IntercompanyPlanning2.png)
+![Intercompany-Beispiel, an dem drei Firmen beteiligt sind.](media/IntercompanyPlanning2.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

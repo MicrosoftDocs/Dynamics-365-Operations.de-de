@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fe387631a1716c6612f9d475faff56d0aef3fdc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f23b4c15937a0e61eb64b25eadef58c1fda231e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791678"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354612"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronisieren von Produktbewertungen in Dynamics 365 Commerce
 
@@ -59,7 +59,7 @@ Um sicherzustellen, dass der Unterauftrag **RetailProductRating** vorhanden ist,
 
 Die folgende Abbildung zeigt ein Beispiel der Seite Unterauftragsdetails in Commerce.
 
-![Details des Unterauftrags RetailProductRating](media/rnr-hq-ratings-sub-job.png)
+![Details des Unterauftrags RetailProductRating.](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > Wenn Sie den Unterauftrag **RetailProductRating** nicht finden, haben Sie vielleicht den Auftrag **Synchronisieren von Produktbewertungen** und den Auftrag **1040 CDX** ausgeführt, bevor Sie den Commerce-Planer initialisiert haben. Befolgen Sie in diesem Fall die Schritte, um den Auftrag **Vollständige Datensynchronisierung** auszuführen.
@@ -83,7 +83,7 @@ Führen Sie die folgenden Schritte aus, um Produktbewertungen aus dem Bewertungs
 
 Die folgende Abbildung zeigt ein Beispiel der Batchauftragskonfiguration in Commerce.
 
-![Konfiguration des Batchauftrags zum Synchronisieren von Produktbewertungen](media/rnr-hq-batchjob-recurrence.png)
+![Konfiguration des Batchauftrags zum Synchronisieren von Produktbewertungen.](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>Sicherstellen, dass der Batchauftrag für die Produktbewertungssynchronisierung erfolgreich war
 
@@ -95,7 +95,7 @@ Um sicherzustellen, dass der Batchauftrag **Produktbewertungen synchronisieren**
 
 Die folgende Abbildung zeigt ein Beispiel für die Batchauftragsdetails in Commerce, wenn die Ausführung des Batchauftrags in zweistündigen Intervallen geplant ist.
 
-![Details des Batchauftrags zum Synchronisieren von Produktbewertungen](media/rnr-hq-batchjob-status-checking.png)
+![Details des Batchauftrags zum Synchronisieren von Produktbewertungen.](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>Bereitstellen von Produktbewertungen am POS
 
@@ -113,21 +113,21 @@ Gehen Sie folgendermaßen vor, um Produktbewertungen am POS zu aktivieren.
 
 Die folgende Abbildung zeigt ein Beispiel für die Konfiguration der Commerce-Parameter zum Aktivieren der Produktbewertungen am POS.
 
-![Konfiguration der Commerce-Parameter für Produktbewertungen am POS](media/rnr-hq-enable-ratings-in-pos.png)
+![Konfiguration der Commerce-Parameter für Produktbewertungen am POS.](media/rnr-hq-enable-ratings-in-pos.png)
 
 Die folgende Abbildung zeigt ein Beispiel für Produktbewertungen am POS.
 
-![Produktbewertungen am POS](media/rnr-pos-catalog-ratings.png)
+![Produktbewertungen am POS.](media/rnr-pos-catalog-ratings.png)
 
 Die folgende Abbildung zeigt ein Beispiel für Produktbewertungen in Callcenter-Kanälen.
 
-![Produktbewertungen in einem Callcenterkanal](media/rnr-call-center-ratings.png)
+![Produktbewertungen in einem Callcenterkanal.](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über Bewertungen und Prüfungen](ratings-reviews-overview.md)
 
-[Abonnieren zum Verwenden von Bewertungen und Prüfungen](opt-in-ratings-reviews.md)
+[Nutzung von Bewertungen und Prüfungen aktivieren](opt-in-ratings-reviews.md)
 
 [Verwalten von Bewertungen und Prüfungen](manage-reviews.md)
 

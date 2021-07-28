@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f15831f11dc9fdcada9639858fd3b18cdc7503
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 35fd48ef300d46d00c07f3231d780d1ba431d8ef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271100"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350569"
 ---
 # <a name="message-processor-messages"></a>Nachrichtenverarbeitungsmeldungen
 
@@ -88,15 +88,15 @@ In diesem Beispiel verwenden Sie **Wenn ein Ereignis eintritt** mit *Microsoft P
 
 1. Erstellen Sie in [Power Automate](https://preview.flow.microsoft.com) einen neuen automatisierten Cloud-Flow für den Flow-Auslöser **Wenn ein Geschäftsereignis eintritt – Fin & Ops App (Dynamics 365)**, gefolgt von den Schritten **JSON auslesen** und **E-Mail senden**, wie in der folgenden Abbildung dargestellt.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate Automatisierter Cloud-Flow":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate Automatisierter Cloud-Flow.":::
 
 1. Im Schritt **Wenn ein Ereignis eintritt** können Sie den Hub **Instanz** nachschlagen oder eingeben, gefolgt von der **Kategorie** und dann dem **Geschäftsereignis** *Nachrichtenprozessor Nachricht verarbeitet*, wie in der folgenden Abbildung gezeigt.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Wenn ein Ereignis eintritt Schritt":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate-Schritt „Wenn ein Ereignis eintritt“.":::
 
 1. Geben Sie für den Schritt **Parse JSON** ein **Schema** ein, das die erweiterten Felder definiert. Sie können die Option *Schema herunterladen* auf der Seite **Terminkatalog** im Supply Chain Management verwenden oder mit dem Einfügen des Beispiel-Schematextes beginnen. Dieser Beispieltext wird nach der folgenden Illustration bereitgestellt.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Schritt „JSON parsen“":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate-Schritt „JSON parsen“.":::
 
     ```json
     {
@@ -183,7 +183,7 @@ In diesem Beispiel verwenden Sie **Wenn ein Ereignis eintritt** mit *Microsoft P
 
 1. Im Schritt **E-Mail senden** können Sie die einzelnen Felder auswählen oder mit dem Einfügen des Beispiels für den E-Mail-Text in das Feld **Körper** beginnen. Dieses Beispiel wird nach der folgenden Abbildung dargestellt.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate Eine E-Mail senden Schritt":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate-Schritt „Eine E-Mail senden“.":::
 
     ```plaintext
     Message queue: @{body('Parse_JSON')?['MessageQueue']}

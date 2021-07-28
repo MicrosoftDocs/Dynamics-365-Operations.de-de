@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 94d38c5c3a091263b310f346f839e1a67d6c0609
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 79054573fa6f86bea5c4fe014233d71c01020348
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796123"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352589"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Einen Kanal zur Verwendung einer Kanalnavigationshierarchie konfigurieren
 
@@ -45,7 +45,7 @@ Gehen Sie folgendermaßen vor, um einen Kanal für die Verwendung einer Kanalnav
 
 Das folgende Bild zeigt, wie Sie einen Kanal für die Verwendung einer Kanalnavigationshierarchie konfigurieren.
 
-![Beispiel Kanalkonfiguration](media/configure-channel-hierarchy-1.png)
+![Beispiel Kanalkonfiguration.](media/configure-channel-hierarchy-1.png)
 
 ## <a name="set-attribute-metadata"></a>Attributmetadaten festlegen
 
@@ -61,7 +61,7 @@ Führen Sie die folgenden Schritte aus, um Attributmetadaten festzulegen.
 
 Die folgende Abbildung zeigt ein Beispiel für eine Reihe von Kanalproduktattributen, die auf einem Kanalkategorieknoten konfiguriert sind.
 
-![Kanalattribute auf einem Kanalkategorieknoten](media/configure-channel-hierarchy-2.png)
+![Kanalattribute auf einem Kanalkategorieknoten.](media/configure-channel-hierarchy-2.png)
 
 ## <a name="publish-changes"></a>Änderungen veröffentlichen
 
@@ -74,7 +74,7 @@ Führen Sie folgende Schritte aus, um die Änderungen zu veröffentlichen.
 
 Das folgende Bild zeigt, wie Kanalaktualisierungen veröffentlicht werden.
 
-![Kanalupdates veröffentlichen](media/configure-channel-hierarchy-3.png)
+![Kanalupdates veröffentlichen.](media/configure-channel-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

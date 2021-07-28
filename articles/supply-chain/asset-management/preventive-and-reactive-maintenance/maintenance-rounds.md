@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62f812c7c7fa06deb5f41508044b029e6c5ca4a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 24f019547b9edc932c203d5dc8c73013007af599
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825733"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361041"
 ---
 # <a name="maintenance-rounds"></a>Wartungsdurchgänge
 
@@ -80,7 +80,7 @@ In **Asset Management** können Sie für verschiedene Anlagen Wartungsdurchgäng
 
 Die folgende Abbildung zeigt das Beispiel einer Wartungsdurchführung mit drei Anlagen.
 
-![Abbildung 1](media/13-preventive-maintenance.png)
+![Abbildung 1.](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>Wartungsdurchgänge terminieren
@@ -106,9 +106,9 @@ Wenn Sie einen Wartungsdurchgang eingerichtet haben, führen Sie einen Zeitplana
 
 Die zwei folgenden Abbildungen zeigen einen Zeitplaneinzelvorgang im Dialog **Wartungszeitplan anzeigen** und die Wartungsplanpositionen, die in **Alle Wartungszeitpläne** erstellt werden, die auf diesem Zeitplaneinzelvorgang basieren.
 
-![Abbildung 2](media/14-preventive-maintenance.png)
+![Abbildung 2.](media/14-preventive-maintenance.png)
 
-![Abbildung 3](media/15-preventive-maintenance.png)
+![Abbildung 3.](media/15-preventive-maintenance.png)
 
 - Wenn Arbeitsaufträge für Anlagen, die unter eine Lieferantengarantie fallen, manuell erstellt werden, erscheint ein Dialogfenster, um den Benutzer auf die Garantie aufmerksam zu machen Die Erstellung des Arbeitsauftrags kann dann abgebrochen werden. Bei Arbeitsaufträgen, die automatisch angelegt werden, entfällt die Prüfung auf eine Garantiebeziehung.  
 - Sie können einen Batchauftrag auf dem Inforegister **Im Hintergrund ausführen** einrichten, um Durchgänge in regelmäßigen Abständen einzuplanen.  

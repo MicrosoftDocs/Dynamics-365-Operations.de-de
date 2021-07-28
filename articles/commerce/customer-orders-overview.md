@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260594
+ms.custom:
+- "260594"
+- intro-internal
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936729"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349625"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundenaufträge in Point of Sale (POS)
 
@@ -44,7 +46,7 @@ Bevor Sie versuchen, die Kundenbestellfunktion in POS zu verwenden, stellen Sie 
 
 Um Kundenbestellungen verwenden zu können, müssen Sie die Lieferarten konfigurieren, die der Ladenkanal verwenden kann. Sie müssen mindestens eine Lieferart definieren, die verwendet werden kann, wenn Bestellpositionen aus einem Laden an einen Kunden versendet werden. Sie müssen zudem mindestens eine Abholart definieren, die verwendet werden kann, wenn Bestellpositionen im Laden abgeholt werden. Lieferarten sind auf Seite **Versandarten** in der Commerce-Zentralverwaltung definiert. Einzelheiten zum Einrichten der Lieferarten für Commerce-Kanäle finden Sie unter [Lieferarten definieren](./configure-call-center-delivery.md#define-delivery-modes).
 
-![Seite „Lieferarten“](media/customer-order-modes-of-delivery.png)
+![Seite „Lieferarten“.](media/customer-order-modes-of-delivery.png)
 
 
 ### <a name="set-up-fulfillment-groups"></a>Erfüllungsgruppen einrichten
@@ -53,7 +55,7 @@ Einige Läden oder Lagerorte sind möglicherweise nicht in der Lage, Kundenauftr
 
 In Commerce Version 10.0.12 und höher können Organisationen definieren, ob die in Erfüllungsgruppen definierten Lagerort- oder Lagerort und Shop-Kombinationen für den Versand, die Abholung oder sowohl für den Versand als auch für die Abholung verwendet werden können. Dies ermöglicht dem Unternehmen zusätzliche Flexibilität bei der Bestimmung, welche Lagerorte beim Erstellen eines Debitorenauftrags für zu versendende Artikel und welche Shops beim Erstellen eines Debitorenauftrags für die Abholung von Artikeln ausgewählt werden können. Aktivieren Sie zur Nutzung dieser Konfigurationsoptionen die Funktion **Möglichkeit, die in der Erfüllungsgruppe aktivierten Standorte als „Versand“ oder „Abholung“ anzugeben** aktivieren. Wenn ein Lagerort, der mit einer Erfüllungsgruppe verknüpft ist, kein Geschäft ist, kann es nur als Versandort konfiguriert werden. Es kann nicht verwendet werden, wenn Bestellungen für die Abholung am POS konfiguriert sind.
 
-![Seite „Erfüllungsgruppen“](media/customer-order-fulfillment-group.png)
+![Seite „Erfüllungsgruppen“.](media/customer-order-fulfillment-group.png)
 
 ### <a name="configure-channel-settings"></a>Kanaleinstellungen konfigurieren
 
@@ -65,7 +67,7 @@ Wenn Sie mit Kundenbestellungen am POS arbeiten, müssen Sie einige Einstellunge
 - **Zielbasierte Steuer verwenden** – Diese Option gibt an, ob die Lieferadresse verwendet wird, um die Steuergruppe zu bestimmen, die auf Bestellpositionen angewendet wird, die an die Adresse des Kunden versendet werden.
 - **Debitorenbasierte Steuer verwenden** – Diese Option gibt an, ob die Steuergruppe, die für die Lieferadresse des Kunden definiert ist, zur Besteuerung von Kundenbestellungen verwendet wird, die am POS für den Versand zum Kunden nach Hause erstellt wurden.
 
-![Shopkanal auf der Seite „Shops“ einrichten](media/customer-order-all-stores.png)
+![Shopkanal auf der Seite „Shops“ einrichten.](media/customer-order-all-stores.png)
 
 ### <a name="set-up-customer-order-parameters"></a>Einrichten von Parametern für Kundenaufträge
 
@@ -80,7 +82,7 @@ Bevor Sie versuchen, Kundenaufträge am POS zu erstellen, müssen Sie die entspr
 - **Versandkostencode** – Wenn die Option **Erweiterte automatische Gebühren verwenden** auf gesetzt **Ja** festgelegt ist, hat diese Parametereinstellung keine Auswirkung. Wenn diese Option auf **Nein** festgelegt ist, werden Benutzer aufgefordert, manuell eine Versandkostenpauschale einzugeben, wenn sie Kundenbestellungen am POS erstellen. Verwenden Sie diesen Parameter, um einen Debitorengebührencode zuzuordnen, der auf Bestellungen angewendet wird, wenn Benutzer eine Versandgebühr eingeben. Der Gebührencode definiert die Logik der Finanzbuchung für die Versandgebühr.
 - **Erweiterte automatische Gebühren verwenden** – Legen Sie diese Option auf **Ja** fest, um vom System berechnete automatische Gebühren zu verwenden, wenn Kundenaufträge am POS erstellt werden. Diese automatischen Gebühren können zur Berechnung von Versandkosten oder anderen bestell- oder artikelspezifischen Gebühren verwendet werden. Weitere Informationen zum Einrichten und Verwenden der erweiterten automatischen Gebühren finden Sie unter [Erweiterte automatische Omni-Channel-Gebühren](./omni-auto-charges.md).
 
-![Registerkarte „Kundenbestellungen“ auf der Seite „Commerce-Parameter“](media/customer-order-parameters.png)
+![Registerkarte „Kundenbestellungen“ auf der Seite „Commerce-Parameter“.](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Aktualisieren der Layouts des Transaktionsbildschirms am POS
 
@@ -95,7 +97,7 @@ Stellen Sie sicher, dass der POS [Bildschirmlayout](./pos-screen-layouts.md) so 
 - **Lieferart ändern** – Mit diesem Vorgang können Sie die Lieferart für Positionen, die bereits für den Versand konfiguriert sind, schnell ändern, ohne dass Benutzer erneut den Flow „Alle Produkte versenden“ oder „Ausgewählte Produkte versenden“ erneut durchlaufen müssen.
 - **Einzahlung überschreiben** – Mit diesem Vorgang können Sie den Einzahlungsbetrag ändern, den der Kunde für die ausgewählte Kundenbestellung bezahlt.
 
-![Vorgänge auf dem POS-Transaktionsbildschirm](media/customer-order-screen-layout.png)
+![Vorgänge auf dem POS-Transaktionsbildschirm.](media/customer-order-screen-layout.png)
 
 ## <a name="work-with-customer-orders-in-pos"></a>Mit Kundenaufträgen in POS arbeiten
 

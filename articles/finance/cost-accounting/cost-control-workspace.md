@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4c5528545e0215b3a3f92b7bd5b492f82274d35a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6fd2a8548d4929a7a3b3b6d20adbc230c5edf6ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833041"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355226"
 ---
 # <a name="cost-control-workspace"></a>Kostensteuerungs-Arbeitsbereich 
 
@@ -116,7 +116,7 @@ Der Arbeitsbereich **Kostensteuerung** ist als Internet-Bericht vorgesehen. Dahe
 
 Die Liste der Berichte, die für Benutzer, z. B. Manager, verfügbar sind, wird von der Einstellung der Option **Veröffentlicht** auf der Seite **Konfigurationen des Kostensteuerungs-Arbeitsbereichs** gesteuert.
 
-![Ein Bericht, den Benutzer im Kostensteuerungs-Arbeitsbereichs finden können](./media/report-cost-control.png)
+![Ein Bericht, den Benutzer im Kostensteuerungs-Arbeitsbereichs finden können.](./media/report-cost-control.png)
 
 Ein Manager kann die anzuzeigende Steuerkalenderperiode auswählen. Das Sitzungsdatum wird verwendet, um die standardmäßige aktuelle Periode zu bestimmen.
 
@@ -136,11 +136,11 @@ Das Raster zeigt jedes Kostenelement, das dem Kostenelement-Dimensionshierarchie
 
 Zwei Diagramme zeigen eine Zusammenfassung der Istwerte im vgl. zu Budget und Budgetabweichung nach Zeitraum.
 
-![Diagramme, die eine Zusammenfassung der Istwerte im vgl. zu Budget und Budgetabweichung nach Zeitraum anzeigen](./media/cost-element-details-operations.png)
+![Diagramme, die eine Zusammenfassung der Istwerte im Vergleich zu Budget und Budgetabweichung nach Zeitraum anzeigen.](./media/cost-element-details-operations.png)
 
 Benutzer können auf **Kosteneinträge** klicken, um bei Bedarf die Detailinformationen zu den Eintragsdetails anzuzeigen.
 
-![Kosteneinträge](./media/cost-entries.png)
+![Kosteneinträge.](./media/cost-entries.png)
 
 Beispielsweise ist Miete eine Aufwendung, die zu Kostenstellen verteilt wird. Ein Benutzer, der die Mietkosten verstehen möchte, die in der Kostenstelle enthalten sind, kann Detailinformationen anzeigen, um zu sehen, wie die Miete berechnet wurde.
 
@@ -148,7 +148,7 @@ Wenn Benutzer auf **Verteilschlüssel** auf der Seite **Kosteneinträge** klicke
 
 Im folgenden Beispiel hat der Verteilschlüssel den Typ **Formelzuteilungsbasis**, und die Formel wird angezeigt. Die Faktoren, die die Formel definieren, werden aufgelistet. Darüber hinaus zeigt ein Raster die Berechnung an, die pro Kostenobjekt durchgeführt wird.
 
-![Berechnungen pro Kostenobjekt](./media/cost-entries-allocation-base.png)
+![Berechnungen pro Kostenobjekt.](./media/cost-entries-allocation-base.png)
 
 Zusätzliche Ressourcen 
 

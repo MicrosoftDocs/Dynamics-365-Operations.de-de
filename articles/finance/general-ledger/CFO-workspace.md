@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b42fc4f0e299dc785ef465efc54286effccfb92b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e44e0ff5c36190d0f66afb6a59389fee826d8214
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823835"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360711"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Hinzufügen von Finanzdimensionen zum CFO-Arbeitsbereich
 
@@ -33,7 +33,7 @@ In diesem Thema wird erläutert, wie der CFO-Arbeitsbereich Finanzdimensionen hi
 3. Unter **Ressourcen** öffnen Sie **LedgerCFOWorkspacePBIX**.
 4. Wenn die Ressource im Microsoft Power BI Desktop geöffnet wird, wählen Sie **Daten abrufen**, **SQL Server-Datenbank** und dann **Verbinden** aus.
 5. Geben Sie den Server mit der Berichtsdatenbank **AxDW** als Datenbank ein. Wählen Sie zunächst **Direct Query** und dann **OK** aus.
-6. Suchen und wählen Sie **LedgerActivityMeasure \_DimensionCombination** aus und anschließend **Laden** aus.
+6. Suchen und wählen Sie **LedgerActivityMeasure\_DimensionCombination** aus und anschließend **Laden** aus.
 
     > [!TIP]
     > In der Liste **Felder** benennen Sie die Tabelle **Finanzdimensionen** um, sodass sie einfach zu u identifizieren ist.
@@ -42,17 +42,17 @@ In diesem Thema wird erläutert, wie der CFO-Arbeitsbereich Finanzdimensionen hi
 8. Wählen Sie im ersten Feld **Hauptbuch-Aktivitäten** und **LedgerDimension** aus.
 9. Im zweiten Feld geben Sie **LedgerActivityMeasure\_DimensionCombination** (oder **Financial dimensions** wenn Sie die Tabelle umbenannt haben). Wählen Sie die Überschrift **DimensionCombinationRECID** aus.
 10. Wählen Sie im Feld **Kardinalität** **Viele bis ein** aus.
-11. Ändern Sie den Wert **Filterrichtung kreuzen** auf  **Einzeln**.
+11. Ändern Sie den Wert **Filterrichtung kreuzen** auf **Einzeln**.
 12. Wählen Sie **Führen Sie diese Beziehung aktiv** und **Nehmen Sie referenzielle Integrität an** aus, wählen Sie **OK** und **Schließen** aus.
 
-    [![Eine Beziehung erstellen](./media/Create-relationship.png)](./media/Create-relationship.png)
+    [![Eine Beziehung erstellen.](./media/Create-relationship.png)](./media/Create-relationship.png)
 
 13. In der Liste **Felder** können Sie die Tabelle sowie die verfügbaren Finanzdimensionen finden. Ziehen Sie die gewünschten Finanzdimensionen in die Berichtsebenenfilter.
 14. Speichern Sie die Änderungen.
 15. In der Entwicklungsumgebung (AOT), klicken Sie auf das Projekt mit der rechten Maustaste, und wählen Sie dann **Synchronisieren** aus.
 16. Stellen Sie das Projekt zusammen und öffnen Sie dann die Anwendung, um die Ergebnisse anzeigen.
 
-    [![Arbeitsabereich abgeschlossen](./media/workspace.png)](./media/workspace.png)
+    [![Arbeitsbereich abgeschlossen.](./media/workspace.png)](./media/workspace.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

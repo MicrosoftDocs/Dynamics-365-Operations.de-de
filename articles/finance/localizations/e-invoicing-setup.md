@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9aac18155fbc7a87554ac0521cd9f40d11eba9e2
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 35a2abaa2165288097bc07b47320e002efc290e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890830"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348485"
 ---
 # <a name="set-up-electronic-invoicing"></a>Elektronische Rechnungsstellung einrichten
 
@@ -37,7 +37,7 @@ Die Konfigurierbarkeit basiert auf der Konfiguration des Formats der elektronisc
 
 Die folgende Abbildung zeigt die Hauptkomponenten einer Funktion für die elektronische Rechnungsstellung.
 
-![Übersicht über die Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Übersicht über die Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 Aufgrund unterschiedlicher Rechnungsformate und Aktivitätsabläufe kann die Einrichtung der Funktionen je nach Land oder Region oder je nach Geschäftsanforderungen variieren.
 
@@ -50,7 +50,7 @@ Der Einrichtungsprozess muss in Ihrer RCS-Umgebung abgeschlossen sein. Befolgen 
 3. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** die Option **Importieren** aus, um die ER-Datenmodellkonfiguration aus dem globalen Repository zu importieren.
 4. Wählen Sie **Hinzufügen** aus, um eine Funktion für die elektronische Rechnungsstellung zu erstellen. Sie können die Funktion entweder von Grund auf neu erstellen oder aus einer vorhandenen Funktion für die elektronische Rechnungsstellung ableiten.
 
-    ![Hinzufügen einer Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Hinzufügen einer Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
 > Wenn Sie eine neue Funktion für die elektronische Rechnungsstellung erstellen, hat diese eine Versionsnummer und der Standardstatus ist auf **Entwurf** festgelegt.
@@ -63,21 +63,21 @@ Befolgen Sie diese Schritte, um der Funktion für die elektronische Rechnungsste
 
 1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Konfigurationen** die Option **Hinzufügen** aus, um ER-Dateiformatkonfigurationen für die Funktion für die elektronische Rechnungsstellung hinzuzufügen.
 
-    ![Hinzufügen von Konfigurationen für die Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Hinzufügen von Konfigurationen für die Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Wenn Sie eine Funktion für die elektronische Rechnungsstellung von Grund auf neu erstellen, müssen Sie alle ER-Dateiformatkonfigurationen manuell hinzufügen. Wenn Sie eine Funktion für die elektronische Rechnungsstellung von einer vorhandenen Funktion ableiten, werden die ER-Dateiformatkonfigurationen automatisch erstellt, da sie von der ursprünglichen Funktion für die elektronische Rechnungsstellung geerbt werden.
 
 2. Wählen Sie **Bearbeiten** aus, um die Seite **Formatdesigner** zu öffnen, auf der Sie die Konfiguration des EB-Dateiformats bearbeiten können.
 
-    ![Bearbeiten von Konfigurationen für die Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Bearbeiten von Konfigurationen für die Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Während Sie das Format bearbeiten, wird der Status der Konfigurationsversion auf **Entwurf** festgelegt.
 
 3. Verwenden Sie die Seite **Formatdesigner**, um die Dateiformatkonfiguration zu bearbeiten. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-    ![Formatdesignerseite](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
+    ![Formatdesignerseite.](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
 ### <a name="feature-setups"></a>Funktionseinrichtungen
 
@@ -87,18 +87,18 @@ Befolgen Sie diese Schritte, um der Funktion für die elektronische Rechnungsste
 
 1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Einrichtungen** die Option **Hinzufügen** aus, um Funktionseinrichtungen zur Funktion für die elektronische Rechnungsstellung hinzuzufügen.
 
-    ![Hinzufügen von Einrichtungen der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Hinzufügen von Einrichtungen der Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
     > Wenn Sie eine Funktion für die elektronische Rechnungsstellung von Grund auf neu erstellen, müssen Sie alle erforderlichen Funktionseinrichtungen manuell hinzufügen. Wenn Sie eine Funktion für die elektronische Rechnungsstellung von einer vorhandenen Funktion ableiten, werden alle Funktionseinrichtungen automatisch erstellt, da sie von der ursprünglichen Funktion für die elektronische Rechnungsstellung geerbt werden.
 
 2. Wählen Sie **Bearbeiten** aus, um die Einrichtung der Funktionsversion zu bearbeiten.
 
-    ![Bearbeiten von Einrichtungen der Funktion für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Bearbeiten von Einrichtungen der Funktion für die elektronische Rechnungsstellung.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. Verwenden Sie die Seite **Einrichtung der Funktionsversion** zum Konfigurieren von Aktionen, Anwendbarkeitsregeln und Variablen.
 
-    ![Aktionen, Anwendbarkeitsregeln und Variablen](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
+    ![Aktionen, Anwendbarkeitsregeln und Variablen.](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
 
 ### <a name="actions"></a>Aktionen
 
@@ -113,7 +113,7 @@ Führen Sie auf der Seite **Einrichtung der Funktionsversionen** auf der Registe
 - Wählen Sie **Neu** oder **Löschen** aus, um neue Aktionen hinzuzufügen oder vorhandene Aktionen zu löschen.
 - Wählen Sie **Nach oben** oder **Nach unten** aus, um ausgewählte Aktionen im Raster nach oben oder unten zu verschieben und dadurch die Reihenfolge zu ändern, in der sie ausgeführt werden. Aktionen werden in der Reihenfolge ausgeführt, in der sie im Raster von oben nach unten angezeigt werden.
 
-![Aktionen verwalten](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
+![Aktionen verwalten.](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
 In der folgenden Tabelle werden die Felder beschrieben, die auf dem Inforegister **Aktionen** verfügbar sind.
 
@@ -129,7 +129,7 @@ In der folgenden Tabelle werden die Felder beschrieben, die auf dem Inforegister
 
 Das Inforegister **Parameter** enthält die Parameter für die Aktion, die auf dem Inforegister **Aktionen** ausgewählt ist.
 
-![Inforegister „Parameter“](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
+![Inforegister „Parameter“.](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
 
 In der folgenden Tabelle werden die Felder beschrieben, die auf dem Inforegister **Parameter** verfügbar sind.
 
@@ -259,20 +259,20 @@ Mit den Anwendbarkeitsregeln können Sie logische Regeln erstellen, die den Nutz
 
 1. Wählen Sie auf der Seite **Einrichtung der Funktionsversion** auf der Registerkarte **Anwendbarkeitsregeln** die Option **Neu** aus, um eine Anwendbarkeitsregel hinzuzufügen.
 
-    ![Verwalten von Anwendbarkeitsregeln](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
+    ![Verwalten von Anwendbarkeitsregeln.](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
 2. Wählen Sie im Raster die Klauseln aus, die gruppiert werden sollen.
 3. Wählen Sie **Klausel gruppieren** aus.
 
-    ![Gruppierung von Klauseln](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
+    ![Gruppierung von Klauseln.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
 
     Wenn Klauseln gruppiert werden, wird dem Raster eine neue Spalte hinzugefügt. Diese Spalte gibt den logischen Operator für die gruppierten Klauseln an.
 
-    ![Logischer Operator für gruppierte Klauseln](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
+    ![Logischer Operator für gruppierte Klauseln.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
 
 Um die Gruppierung von Klauseln aufzuheben, wählen Sie die gruppierten Klauseln aus, für die die Gruppierung aufgehoben werden soll, und wählen Sie dann **Gruppierung für Klausel aufheben**.
 
-![Gruppierung für Klauseln aufheben](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
+![Gruppierung für Klauseln aufheben.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
 
 > [!NOTE]
 > Wenn Sie die Gruppierung für eine Klausel aufheben, beginnen Sie immer mit der innersten Gruppierungsebene.
@@ -294,7 +294,7 @@ Sie können Variablen erstellen und diese dann als Eingabewert für einen Parame
 
 - Wählen Sie auf der Seite **Einrichtung der Funktionsversion** auf der Registerkarte **Variablen** entweder **Neu** oder **Löschen** aus, um Variablen zu verwalten.
 
-    ![Verwalten von Variablen](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
+    ![Verwalten von Variablen.](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
 In der folgenden Tabelle werden die Felder beschrieben, die auf der Registerkarte **Variablen** verfügbar sind.
 
@@ -310,7 +310,7 @@ In der folgenden Tabelle werden die Felder beschrieben, die auf der Registerkart
 
 - Wählen Sie auf der Seite **Einrichtung der Funktionsversion** im Aktivitätsbereich die Option **Überprüfen** aus, um die Einrichtung der Funktionsversion zu überprüfen.
 
-   ![Auswählen der Schaltfläche „Überprüfen“](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
+   ![Auswählen der Schaltfläche „Überprüfen“.](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
 
 Die Validierung überprüft die Konsistenz der gesamten Konfiguration. Wenn beispielsweise ein bestimmter Parameter für eine Aktion obligatorisch ist, sein Wert jedoch leer bleibt, erkennt die Validierung diese Inkonsistenz und Sie erhalten eine Warnung.
 
@@ -323,7 +323,7 @@ Befolgen Sie diese Schritte, um eine Umgebung für die elektronische Rechnungsst
 1. Wählen Sie auf der Seite **Funktionen für die elektronische Rechnungsstellung** auf der Registerkarte **Umgebungen** die Option **Aktivieren** aus, um eine Umgebung für die elektronische Rechnungsstellung hinzuzufügen.
 2. Wählen Sie im Feld **Gültig ab** das Datum aus, an dem die neue Umgebung wirksam wird.
 
-![Aktivieren einer Umgebung für die elektronische Rechnungsstellung](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Aktivieren einer Umgebung für die elektronische Rechnungsstellung.](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>Organisation
 

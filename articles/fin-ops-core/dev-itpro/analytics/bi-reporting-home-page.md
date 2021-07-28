@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 27681
+ms.custom:
+- "27681"
+- intro-internal
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e20b6d586e4effbb56d476504a679c3b0b8adb3c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0389ed6ca7926a4981029f6e91be2d1be4b8618e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754493"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354414"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Berichterstellung und Analysen mit der Power BI-Startseite
 
@@ -37,11 +39,11 @@ Arbeitsbereiche können umfangreiche Infografiken und visuelle Elemente verwende
 
 Benutzer können mit Daten interagieren, indem Sie auf visuelle Elemente auf der Seite klicken oder diese berühren. Sie können, ohne den Arbeitsbereich zu verlassen, Ursache und Wirkung sehen und einfache Was-wäre-wenn-Vorgänge ausführen. Dank beeindruckender interaktiver visueller Elemente, werden Ihre Benutzer Freude daran haben, Daten zu erkunden und versteckte Trends zu entdecken.
 
-![Beispiel von Power BI in einem Arbeitsbereich](./media/Power-BI-in-D365-Workspace.png)
+![Beispiel für Power BI in einem Arbeitsbereich.](./media/Power-BI-in-D365-Workspace.png)
 
 Weitere Informationen finden Sie in folgenden Themen:
 
-- [Eingebettetes Power BI in Arbeitsbereichen](embed-power-bi-workspaces.md)
+- [Eingebettete Power BI in Arbeitsbereichen](embed-power-bi-workspaces.md)
 - [Power BI Embedded-Integration](power-bi-embedded-integration.md)
 - [Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen](add-analytics-tab-workspaces.md)
 - [Analysearbeitsbereiche und -berichte mit Power BI Embedded schützen](secure-analytical-workspaces.md)
@@ -50,29 +52,29 @@ Weitere Informationen finden Sie in folgenden Themen:
 ## <a name="business-documents-and-printing"></a>Geschäftsdokumente und Drucken
 Berichterstellungslösungen werden häufig verwendet, um die Details von Geschäftstransaktionen zu erfassen und zu kommunizieren. Daher muss eine Berichterstellungslösung in der Lage sein, physische Darstellungen von Geschäftsdaten mithilfe vorhandener Geräte zu erzeugen, wie beispielsweise Netzwerkdruckern. Beispiele von Geschäftsdokumenten umfassen Verkaufsrechnungen, Debitorenaufstellungen und Schecks.
 
-[![Beispiel von Geschäftsdokumenten](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
+[![Beispiel für Geschäftsdokumente.](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
 Weitere Informationen finden Sie in folgenden Themen:
 
-- [Dokumenterstellungsservices](document-reporting-services.md)
+- [Dokumenterstellungsdienste](document-reporting-services.md)
 - [Übersicht zum Dokumentendruck](print-documents.md)
 - [Dokumentweiterleitungsagent für Netzwerkdruck installieren](install-document-routing-agent.md)
 
 ## <a name="electronic-reporting"></a>Elektronische Berichterstellung
 „Elektronische Berichterstellung” (ER) ist das Tool, mit dem Sie elektronische Dokumentformate konfigurieren, die die gesetzlichen Anforderungen verschiedener Länder oder Regionen erfüllen. Die Anwendungen der elektronischen Berichterstellung umfassen Finanzüberwachung, Steuererklärung und elektronische Rechnungsstellung.
 
-[![Beispiel für die elektronische Berichterstellung](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
+[![Beispiel für die elektronische Berichterstellung.](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
 Weitere Informationen finden Sie in folgenden Themen:
 
-- [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
+- [Übersicht über die elektronische Berichterstellung (EB)](general-electronic-reporting.md)
 - [Den Lebenszyklus der elektronischen Berichterstellungskonfiguration (ER) verwalten](general-electronic-reporting-manage-configuration-lifecycle.md)
 - [Eine Elektronische Berichterstellungskonfiguration (ER) erstellen](electronic-reporting-configuration.md)
 
 ## <a name="financial-reporting"></a>Finanzberichterstellung
 Standardfinanzberichte werden bereitgestellt, bei denen die standardmäßigen Hauptkontenkategorien verwendet werden. Sie können den Berichts-Designer verwenden, um traditionelle Finanzaufstellungen, wie beispielsweise Gewinn- & Verlustrechnungen und Bilanzen, zu erstellen oder zu ändern. Sie können die Ergebnisse dann für andere Mitglieder Ihrer Organisation freigeben. Beispiele für die Finanzberichterstellung umfassen Bilanzen, Cashflow und zusammenfassende Zwischenbilanzen im Vergleich zum Vorjahr.
 
-[![Finanzberichterstellungsbeispiel](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
+[![Beispiel für Finanzberichterstellung.](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 
 Weitere Informationen finden Sie in folgenden Themen:
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f50bc2828df19062a6bdced6faaa7b4d66c38bed
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 52d8b1055517bc544eea6a8e405a8b6d5c0eee0a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792774"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356853"
 ---
 # <a name="distributed-order-management-dom"></a>Verteilte Auftragsverwaltung (DOM)
 
@@ -34,9 +34,9 @@ In einem komplexen Netzwerk von Systemen und Prozessen optimiert DOM die Auftrag
 
 Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System für die verteilte Auftragsverwaltung.
 
-![Lebenszyklus eines Auftrags im DOM-Kontext](./media/flow.png "Lebenszyklus eines Auftrags im DOM-Kontext")
+![Lebenszyklus eines Auftrags im Kontext einer verteilten Auftragsverwaltung (Distributed Order Management, DOM).](./media/flow.png "Lebenszyklus eines Auftrags im DOM-Kontext")
 
-## <a name="set-up-dom"></a>DOM einrichten
+## <a name="set-up-dom"></a>Verteilte Auftragsverwaltung einrichten
 
 1. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**.
 2. Erweitern Sie auf der Registerkarte **Konfigurationsschlüssel** den Knoten **Handel**, aktivieren Sie anschließend das Kontrollkästchen **Verteilte Auftragsverwaltung**.
@@ -98,7 +98,7 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
 9. Um Regeln definieren, gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Einstellungen \> Regeln verwalten**. Die folgenden DOM-Regeln werden derzeit unterstützt:
 
     - **Mindestlagerbestandsregel** – Durch diesen Regeltyp können Organisationen für andere Zwecke als die Auftragserfüllung "Umzäunungen" für eine bestimmte Menge eines Produkts festlegen. Beispielsweise können Organisationen wünschen, dass DOM nicht den gesamten Bestand berücksichtigt, der in einem Geschäft zur Auftragserfüllung verfügbar ist. Stattdessen müssen Sie einen Lagerbestand für die Laufkundschaft reservieren. Wenn dieser Regeltyp verwendet wird, können Sie beispielsweise den Mindestlagerbestand definieren, der für eine Produktgruppe, ein Einzelprodukt oder eine Produktvariante pro Standort oder Standortgruppe behalten werden soll.
-    - **Prioritätsregel für Erfüllungsstandort** – Durch diesen Regeltyp können Organisationen eine Hierarchie der Standorte definieren, um eine Priorität festzulegen, nach der das OM-Modul versucht, Erfüllungsstandorte für bestimmte Produkte zu finden. Der gültige Prioritätsbereich ist 1 bis 10, wobei 1 die höchste Priorität und 10 die niedrigste Priorität hat. Standorte, die höhere Priorität aufweisen, werden vor Standorten berücksichtigt, die niedrigere Priorität haben. Wenn die Regel als uneingeschränkte Einschränkungsregel definiert wird, werden Aufträge nur an Standorte vermittelt, für die Prioritäten definiert wurden.
+    - **Prioritätsregel für Erfüllungsstandort** – Durch diesen Regeltyp können Organisationen eine Hierarchie der Standorte definieren, um eine Priorität festzulegen, nach der das Modul für die verteilte Auftragsverwaltung versucht, Erfüllungsstandorte für bestimmte Produkte zu finden. Der gültige Prioritätsbereich ist 1 bis 10, wobei 1 die höchste Priorität und 10 die niedrigste Priorität hat. Standorte, die höhere Priorität aufweisen, werden vor Standorten berücksichtigt, die niedrigere Priorität haben. Wenn die Regel als uneingeschränkte Einschränkungsregel definiert wird, werden Aufträge nur an Standorte vermittelt, für die Prioritäten definiert wurden.
     - **Partielle Auftragsregel** – Mit dieser Regel können Organisationen definieren, ob ein Auftrag oder Auftragspositionen ein Auftrag teilweise werden kann bzw. können. Folgende Parameter sind verfügbar:
 
         - **Partielle Aufträge erfüllen?** – Ist die Option auf **Ja** festgelegt, kann DOM nur ein Teil der Menge in einer Auftragsposition erfüllen. Diese teilweise Erfüllung wird erreicht, indem die Auftragsposition aufgeteilt wird.
@@ -160,13 +160,13 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
     7. Aktivieren Sie auf dem Inforegister **Regeln** die Option **Hinzufügen**, und wählen Sie dann die Regel aus, die mit dem Profil verknüpft werden soll.
     8. Wiederholen Sie die obigen zwei Schritte, bis dem Profil alle erforderlichen Regeln zugeordnet sind.
     9. Wählen Sie **Speichern**.
-    10. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Einstellungen**, und wählen Sie **Lieferarten** aus.
+    10. Klicken Sie im Aktionsbereich auf die Registerkarte **Einstellungen**, und wählen Sie **Lieferarten** aus.
     11. Wählen Sie auf der Seite **Lieferarten** die Option **Neu** aus.
     12. Wählen Sie im Feld **Unternehmen** aus, die juristische Person aus. Die Liste der Unternehmen wird auf die juristischen Personen beschränkt, die Sie zuvor hinzugefügt haben.
     13. Im Feld **Lieferart** wählen Sie die Lieferart aus, die diesem Profil zugeordnet werden soll. Eine Lieferart kann nicht mehreren aktiven Profilen zugeordnet werden.
     14. Wiederholen Sie die obigen beiden Schritte, bis dem Profil alle erforderlichen Lieferarten zugeordnet sind.
     15. Schließen Sie die Seite **Lieferarten**.
-    16. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Einstellungen**, und wählen Sie **Auftragsursprünge** aus.
+    16. Klicken Sie im Aktionsbereich auf die Registerkarte **Einstellungen**, und wählen Sie **Auftragsursprünge** aus.
     17. Wählen Sie auf der Seite **Auftragsursprünge** die Option **Neu** aus.
     18. Wählen Sie im Feld **Unternehmen** aus, die juristische Person aus. Die Liste der Unternehmen wird auf die juristischen Personen beschränkt, die Sie zuvor hinzugefügt haben.
     19. Wählen Sie im Feld **Auftragsursprung** den Auftragsursprung aus, der diesem Profil zugeordnet werden soll. Ein Auftragsursprung kann nicht mehreren aktiven Profilen zugeordnet werden.
@@ -198,13 +198,13 @@ Zum Zeitpunkt des Verarbeitung berücksichtigt DOM die Reihenfolge und die Auftr
 
 - Aufträge sind nicht gesperrt
 
-Nach der Anwendung der Regeln, der Bestandseinschränkungen und der Optimierung wählt DOM den Standort aus, der der Lieferadresse des Kunden Debitors am nächsten ist.
+Nach der Anwendung der Regeln, der Bestandseinschränkungen und der Optimierung wählt die verteilte Auftragsverwaltung den Standort aus, der der Lieferadresse des Kunden am nächsten ist.
 
-![Kriterien für Verkaufsaufträge](./media/ordercriteria.png "Kriterien für Verkaufsaufträge")
+![Kriterien für Verkaufsaufträge.](./media/ordercriteria.png "Kriterien für Verkaufsaufträge")
 
-## <a name="results-of-dom-runs"></a>Ergebnisse von DOM-Ausführungen
+## <a name="results-of-dom-runs"></a>Ergebnisse von Ausführungen der verteilten Auftragsverwaltung
 
-Wenn das Erfüllungsprofil auf **Automatisch übernehmen** festgelegt ist, werden die Ergebnisse des Durchlaufs automatisch in die Auftragspositionen übernommen, und der Erfüllungsplan kann separat angezeigt werden. Ist das Erfüllungsprofil nicht auf **Automatisch übernehmen** festgelegt, können nur die Ergebnisse des Durchlaufs nur in der Erfüllungsplanansicht angezeigt werden. 
+Wenn das Erfüllungsprofil auf **Automatisch übernehmen** festgelegt ist, werden die Ergebnisse des Durchlaufs automatisch in die Auftragspositionen übernommen, und der Auftragserfüllungsplan kann separat angezeigt werden. Ist das Erfüllungsprofil nicht auf **Automatisch übernehmen** festgelegt, können nur die Ergebnisse des Durchlaufs nur in der Erfüllungsplanansicht angezeigt werden. 
 
 Um alle erzeugten Erfüllungspläne anzuzeigen, führen Sie die folgenden Schritte aus.
 

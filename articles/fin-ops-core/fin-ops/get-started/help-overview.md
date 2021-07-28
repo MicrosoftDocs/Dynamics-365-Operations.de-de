@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom: 16381
+ms.custom:
+- "16381"
+- intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d88801baafb9a6decfb6c04f708b3f7e1257b487
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: c6f4c9ad36eb2f1abfc9225f1e62e635cebacd47
+ms.sourcegitcommit: 42a93a96565c56c9c64642ed6e6e302b3fbfcd85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923445"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "6373366"
 ---
 # <a name="help-system"></a>Hilfesystem
 
@@ -35,7 +37,7 @@ Benutzer der folgenden Apps können auf kontextsensitive Hilfe und andere Inhalt
 
 In all diesen Apps können Sie die produktspezifische Hilfe über den Bereich **Hilfe** aufrufen.
 
-![Hilfebereich](./media/help-pane-ops-help.png)
+![Hilfebereich.](./media/help-pane-ops-help.png)
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hilfe auf docs.microsoft.com
 
@@ -46,12 +48,23 @@ Die Website docs.microsoft.com ([docs.microsoft.com/dynamics365/](/dynamics365/)
 
 Sie können Inhalte auf docs.microsoft.com mit jeder Suchmaschine finden. Für optimale Ergebnisse empfiehlt sich die Verwendung einer Websitesuche, z. B. **Website: docs.microsoft.com dynamics 365 "Suchbegriff"**.
 
-## <a name="get-notified-about-changes-through-an-rss-feed"></a>Benachrichtigungen zu Änderungen über einen RSS-Feed erhalten
+<!--## Get notified about changes through an RSS feed
 
-Verwenden Sie den folgenden Link, um einen RSS-Feed (Really Simple Syndication) aller Updates zu abonnieren, die den Inhalt von docs.microsoft.com betreffen:
+To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
 
-[RSS-Feed](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
+[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
+> [!NOTE]
+> The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.  
+
+Alternatively, you can subscribe to an RSS feed by app:
+
+- [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
+- [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
+- [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
+- [Supply Chain](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
+- [Talent](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
+COMMENTED OUT UNTIL THE CONTNT HAS BEEN INDEXED BY THE SEARCH API-->
 ### <a name="leave-us-feedback"></a>Feedback senden
 
 Wenn Sie zu Fragen oder Feedback zu einem Thema haben, lassen Sie uns stattdessen einen Kommentar am unteren Seitenrand.
@@ -60,7 +73,7 @@ Wenn Sie zu Fragen oder Feedback zu einem Thema haben, lassen Sie uns stattdesse
 
 2. Geben Sie zunächst Ihre Kommentare ein, und wählen Sie dann **Feedback senden** aus.
 
-    ![Kommentar veröffentlichen](./media/feedback.png)
+    ![Kommentar veröffentlichen.](./media/feedback.png)
 
 > [!NOTE]
 > Wenn Sie Feedback zur Dokumentation senden möchten, müssen Sie sich mit einem GitHub-Konto anmelden. Weitere Informationen finden Sie unter [Ihr GitHub-Profil einrichten und verwalten](https://help.github.com/github/setting-up-and-managing-your-github-profile).
@@ -84,11 +97,11 @@ Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, 
 
 Microsoft hat Aufgabenleitfadenbibliotheken für Produktversionen bis zur Veröffentlichung der Dynamics 365 for Finance and Operations-Version von Dezember 2017 freigegeben. Im Abschnitt [Zugreifen auf Aufgabenleitfäden über den Hilfebereich](#accessing-task-guides-from-the-help-pane) dieses Themas wird beschrieben, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden.
 
-![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops.png)
+![Leseansicht des Aufgabenleitfadens.](./media/task-guide-ops.png)
 
 Wählen Sie **Aufgabenleitfaden starten** unten im Bereich **Hilfe** aus, um die geführte, interaktive Umgebung zu starten. Ein schwarzer Mauszeiger zeigt Ihnen, wohin Sie zuerst gehen müssen. Folgen Sie den Anweisungen, die in der Benutzeroberfläche angezeigt werden, und geben Sie Daten ein, wie vorgesehen.
 
-![Schrittanleitung des Aufgabenleitfadens](./media/task-guide-step-1-ops.png)
+![Schrittanleitung des Aufgabenleitfadens.](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT]
 > Die Daten, die Sie eingeben, wenn Sie einen Aufgabenleitfaden wiedergeben, sind real. In einer Produktionsumgebung werden die Daten in das Unternehmen eingegeben, das Sie derzeit verwenden.
@@ -101,7 +114,7 @@ Einige Felder verfügen über Feldbeschreibungen, damit Benutzer entsperrt werde
 
 Wählen Sie die Schaltfläche **Hilfe** (**?**) und dann **Hilfe** aus, um auf den Hilfeinhalt zuzugreifen. Drücken Sie alternativ die Tastenkombination **STRG+UMSCHALT+?** In beiden Fällen wird der Bereich **Hilfe** angezeigt. Über den Bereich **Hilfe** können Sie auf grundlegende Themen oder Aufgabenleitfäden zugreifen, die für den Bereich des Produkts relevant sind, in dem Sie sich gerade befinden.
 
-![Hilfebereich](./media/help-pane-ops-help.png)
+![Hilfebereich.](./media/help-pane-ops-help.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Auf Hilfethemen über den Hilfebereich zugreifen
 
@@ -118,13 +131,13 @@ Bevor Sie auf Aufgabenleitfäden aus dem Bereich **Hilfe** zugreifen können, mu
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
 > - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
-![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
+![System Parameters form with Help settings.](./media/system-parameters_ops-1024x437.png)
 
 On the **System parameters** page, follow these steps:
 
 1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
 
-    ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
+    ![Connect to LCS.](./media/connect-to-lcs-crop-1024x365.png)
 
 2. Select the Lifecycle Services project to connect to.
 3. Select BPM libraries (within the selected project) to retrieve task recordings from.
@@ -132,7 +145,7 @@ On the **System parameters** page, follow these steps:
 
 Nachdem ein Systemadministrator diese Schritte eingerichtet hat, können Sie den Bereich **Hilfe** öffnen und die Registerkarte **Aufgabenleitfäden** auswählen. Dort werden nun die Aufgabenleitfäden angezeigt, die für die Seite gelten, auf der Sie sich aktuell befinden. Wenn keine Aufgabenhandbücher gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren. Nachdem Sie einen Aufgabenleitfaden im Bereich **Hilfe** ausgewählt haben, werden im Bereich **Hilfe** die schrittweisen Anleitungen angezeigt, und Sie können den Aufgabenleitfaden wiedergeben.
 
-![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops.png)
+![Leseansicht des Aufgabenleitfadens.](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Wo sind die übersetzten Aufgabenleitfäden für Microsoft-Bibliotheken?
 

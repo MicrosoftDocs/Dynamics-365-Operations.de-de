@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c31564fdc40cb0cba82b9ab8fbfdfee7adf4f4ee
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 579f2946bceceaacc3e4f1d664a5211ce40f705e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053008"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353685"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Definieren und Verwalten eines Vergütungsprogramms
 
@@ -32,7 +32,7 @@ Die Personalverwaltung stellt eine Reihe von Tools bereit, die verwendet werden 
 
 Damit eine Arbeitskraft für Vorteile registriert werden kann, müssen Sie die Elemente jedes Vorteils erstellen. Diese Elemente kombinieren ähnliche Vorteilspläne und definieren Standardeinstellungen, wie Rabattsätze und Buchhaltungsdetails. Viele dieser Einstellungen können angepasst werden, wenn Arbeitskräfte später für den Vorteil registriert werden. Für jeden Vorteilsplan kann eine Organisation mehrere Registrierungssoptionen anbieten, oder eine Arbeitskraft kann die Registrierung für den Plan erlassen. 
 
-[![Vorteilsprozessfluss](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
+[![Vorteilsprozessfluss.](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## <a name="benefit-elements"></a>Vergütungselemente
 
@@ -44,7 +44,7 @@ Bevor Sie damit beginnen, Vorteile zu erstellen und Arbeitskräfte dafür zu reg
 
 Für jeden Vorteilstyp, wie Augen- oder Zahnmedizin, kann eine Organisation den Arbeitskräften eine oder mehrere Pläne anbieten. Für jeden Plan kann die Organisation unterschiedliche Optionen anbieten. So können Arbeitskräfte z. B. Zusatzlebensversicherungsschutz zum einfachen, doppelten oder dreifachen jährlichen Gehalt kaufen. Jede Kombination eines Plans und der Optionen wird zu einem Vorteil, für den die Arbeitskräfte sich registrieren können. 
 
-[![Vergütungsplan](./media/benefit-pic.png)](./media/benefit-pic.png)
+[![Vergütungsplan.](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>Berechtigung
 Viele Faktoren bestimmen die Eignung der Arbeitskraft für unterschiedliche Arten von Vorteil, die ein Arbeitgeber anbietet. Wenn Sie einen Vorteil in Dynamics 365 Human Resources erstellen, können Sie den Typ der Berechtigung festlegen, der für diesen Vorteil gilt. 

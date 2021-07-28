@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 9a4f03d8cf6696b7e449448704e5360f2ef585b7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 38386087a74a0881867df89bbe26453dff740be3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803704"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350303"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsistenzprüfung für Einzelhandelstransaktionen
 
@@ -38,7 +38,7 @@ Wenn inkonsistente Transaktionen durch den Aufstellungsbuchungsprozess verarbeit
 
 Das folgende Diagramm veranschaulicht den Buchungsprozess mit Transaktionskonsistenzprüfung.
 
-![Aufstellungsbuchungsprozess mit der Transaktionskonsistenzprüfung](./media/validchecker.png "Aufstellungsbuchungsprozess mit der Konsistenzprüfung für Einzelhandelstransaktionen")
+![Aufstellungsbuchungsprozess mit der Transaktionskonsistenzprüfung.](./media/validchecker.png "Aufstellungsbuchungsprozess mit der Konsistenzprüfung für Einzelhandelstransaktionen")
 
 Der Stapelverarbeitungsvorgang **Geschäftsbuchungen überprüfen** prüft die Konsistenz der Handelstransaktionstabellen in folgenden Szenarien.
 

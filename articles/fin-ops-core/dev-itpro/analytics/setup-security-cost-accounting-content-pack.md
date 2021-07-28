@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 32093f4e47fe3d9ca691b70e15adfc3199e65beb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2e51c6914aab7261862a7ce180376b67d01711e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754263"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359458"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Sicherheit für den Power BI-Inhalt zur Kostenrechnungsanalyse einrichten
 
@@ -42,11 +42,11 @@ Um die Zugriffebenensicherheit für Power BI zu nutzen, muss der Eigentümer der
 3. Suchen Sie das Dataset für den **Kostenrechnungsanalyse** Power BI-Inhalt
 4. Öffnet Sie die Sicherheitsseite.
 
-    ![Sicherheitsseite öffnen](./media/CA-picture-1.png)
+    ![Sicherheitsseite öffnen.](./media/CA-picture-1.png)
 
 5. Die **Kostenträgercontroller** Rolle ist bereits erstellt. Fügen Sie andere Mitglieder hinzufügen, die Teil der Kostenrechnungs-Zugriffebenenorganisationshierarchie sind.
 
-    ![Mitglieder hinzufügen](./media/CA-picture-2.png)
+    ![Mitglieder hinzufügen.](./media/CA-picture-2.png)
 
 Benutzer, die zur Rolle **Kostenträgercontroller** hinzugefügt werden, finden nur die Daten, um die ihnen zulässig sind, um festzustellen, entsprechend der Definition im Formular Kostenrechnungs-Zugriffebenenorganisationshierarchie.
 

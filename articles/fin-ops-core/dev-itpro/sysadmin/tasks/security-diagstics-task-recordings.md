@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: cb4d544d8d74ad10432901381253f84ec9331ae7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cb14a22a231d3fcc139228b59af00d405626cd2c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745764"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358548"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Sicherheitsdiagnose für Aufgabenaufzeichnungen
 
@@ -39,7 +39,7 @@ Dieses Thema enthält Informationen zum Analysieren und Verwalten von Sicherheit
 
 4. Im Feld **Benutzer-ID** wählen Sie einen Benutzer aus. Wenn der Benutzer für einige Menüelemente keine Berechtigungen hat, wird das Feld **Fehlende Berechtigungen** auf **Ja** aktualisiert.
   
-  ![Seite „Sicherheitsmenüelement-Details“](../media/Security-Menu-Item-Details.png)
+  ![Seite „Sicherheitsmenüelement-Details“.](../media/Security-Menu-Item-Details.png)
 
 5. Wählen Sie **Referenz hinzufügen**, um eine Liste der Sicherheitsobjekte anzuzeigen, einschließlich Rollen, Aufgaben und Berechtigungen, die die fehlende Berechtigung erteilen.
 6. Wählen Sie ein Sicherheitsobjekt aus der Liste aus:
