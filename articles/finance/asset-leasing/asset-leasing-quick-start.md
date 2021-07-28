@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 4464
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f0d39e5a3a1a70f57d305da67e160b0b20cedf4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892432"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360735"
 ---
 # <a name="asset-leasing-get-started"></a>Erste Schritte mit dem Anlagen-Leasing
 
@@ -35,7 +37,7 @@ Weitere Informationen zu Rechnungslegungsstandards finden Sie in der Standarddok
 ## <a name="asset-leasing-elements"></a>Analgen-Leasing-Elemente
 Das folgende Diagramm zeigt die Hauptelemente des Geschäftsprozesses für Leasingverhältnisse.
 
-[![Analgen-Leasing-Elemente](./media/overview-01.png)](./media/overview-01.png)
+[![Anlagen-Leasing-Elemente.](./media/overview-01.png)](./media/overview-01.png)
 
 Ein Leasingobjekt enthält folgende Hauptkomponenten:
 
@@ -54,7 +56,7 @@ Assetleasing ordnet Leasinginformationen, Zahlungspläne, Start- und Enddaten so
 
 Das folgende Diagramm zeigt das Leasingbuch, das Leasingverhältnis, den berechneten Zahlungsplan, die Klassifizierungstests für Leasingverhältnisse und -bücher sowie die entsprechenden Buchhaltungsbuchungen.
 
-[![Leasing, Leasingbuch und Zahlungsplan](./media/overview-02.png)](./media/overview-02.png)
+[![Leasing, Leasingbuch und Zahlungsplan.](./media/overview-02.png)](./media/overview-02.png)
 
 - **Leasingbuch**: Das Leasingbuch enthält alle Informationen zum Leasingvertrag wie Leasingbestimmungen, Zeitwert und Leasingzahlungen. Es enthält auch den Rechnungslegungsstandard, den Sie befolgen, die Leasingart und die Schwellenwerte, die im Klassifizierungstest für das Leasingverhältnis berücksichtigt werden. Das Leasingbuch enthält auch die Leasingbuchungen, die im Hauptbuch gebucht wurden. 
   
@@ -117,7 +119,7 @@ Der erste Zeitraum beginnt mit dem Zeitraum Null, wenn der Annuitätstyp „Annu
 
 Zu den Klassifizierungstests gehören Eigentumsübertragung, Kaufoption, Mietdauer, Nettobarwert und Einmalige Anlage. Das folgende Diagramm zeigt die Klassifizierungstests für Leasingverhältnisse.
 
-[![Klassifizierungstests für Leasingverhältnisse](./media/overview-03.png)](./media/overview-03.png)
+[![Klassifizierungstests für Leasingverhältnisse.](./media/overview-03.png)](./media/overview-03.png)
 
 Jede Leasingart geht bei der Buchhaltung für unterschiedliche Leasingbuchungen anders vor. Die Buchungen umfassen erstmalige Erfassung, Zinsaufwand, fällige Leasingzahlungen und Leasingabschreibungen und basieren auf den von Ihnen befolgten Rechnungslegungsstandards (IFRS 16 oder ASC 842). Sachkonten werden unter dem Buchungsprofil des Leasingverhältnisses für jede Buchungsart und jeden Rechnungslegungsrahmen definiert.
 
@@ -232,7 +234,7 @@ Führen Sie die folgenden Schritte aus, um ein neues Leasing zu erstellen.
 
    Die Seite **Zahlungsplan** listet zukünftige Zahlungspläne für eine Leasing-ID auf. Wählen Sie **Zeitplan bestätigen** aus, um die Transaktionen **Erstmalige Erfassung** buchen zu können. 
 
-[![Funktion „Erstmalige Erfassung“](./media/overview-13.png)](./media/overview-13.png)
+[![Funktion „Erstmalige Erfassung“.](./media/overview-13.png)](./media/overview-13.png)
 
 8. Wählen Sie **Erstmalige Erfassung** aus, um die erste Erfassung zu erstellen. 
 
@@ -246,7 +248,7 @@ Führen Sie die folgenden Schritte aus, um ein neues Leasing zu erstellen.
 
    Die Seite **Abschreibungsplan für die Anlage** zeigt die Abschreibungstransaktionen für die ausgewählte Leasing-ID an. 
 
-   [![Seite „Transaktionen für das Nutzungsrecht am Leasingobjekt“](./media/overview-20.png)](./media/overview-20.png)
+   [![Seite „Transaktionen für das Nutzungsrecht am Leasingobjekt“.](./media/overview-20.png)](./media/overview-20.png)
 
    Die Seite **Transaktionen für das Nutzungsrecht am Leasingobjekt** zeigt die erstmalige Erfassung, die kumulierten Abschreibungen und das Anlagensaldo an. 
 

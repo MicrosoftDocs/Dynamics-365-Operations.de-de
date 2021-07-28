@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: beacff21c6468e9c4b387a654e95f25572c0ede9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831985"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348367"
 ---
 # <a name="visibility-into-material-exceptions"></a>Sichtbarkeit von Materialausnahmen
 
@@ -37,7 +37,7 @@ Eine unveröffentlichte Stücklistenposition oder Formelposition erfordert auße
 
 In der folgenden Abbildung stellt der blaue Balken einen Produktionseinzelvorgang dar, der zu einer Ressource geplant wurde. Der Einzelvorgang beginnt planmäßig am 1. Mai 2017 (01.05.2017). Dieses Datum ist das Rohmaterialdatum. In anderen Worten, die Materialien, die diesem Einzelvorgang in den Stücklisten- und den Formelpositionen zugewiesen sind, müssen an diesem Datum fertig sein. Das andere Datum in der Abbildung, der 6. Mai 2017 (06.05.2017) stellt das Arbeitsbereichsdatum dar. In diesem Beispiel liegt das Rohmaterialdatum vor dem Arbeitsbereichsdatum. Das Datum, an dem der Verbrauch des Rohmaterials hätte anfangen sollen, ist deshalb verstrichen, und die Stücklisten- und Formelpositionen erfüllen die Kriterien, dass sie die Aufmerksamkeit erfordern.
 
-![Beispiel eines Produktionseinzelvorgangs, bei dem das Rohmaterialdatum vor dem Arbeitsbereichsdatum liegt](./media/improved-visibility.png)
+![Beispiel eines Produktionseinzelvorgangs, bei dem das Rohmaterialdatum vor dem Arbeitsbereichsdatum liegt.](./media/improved-visibility.png)
 
 ## <a name="unreleased-material-lines-needing-attention"></a>Nicht freigegebene Materialpositionen, die Aufmerksamkeit erfordern
 

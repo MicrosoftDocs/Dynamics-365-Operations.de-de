@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: c019c597f4734f92f5d9aacdff1cbb30f9fb0a60
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937305"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358832"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Mehrwertsteuerberechnung für allgemeine Erfassungspositionen
 [!include [banner](../includes/banner.md)]
@@ -55,7 +55,7 @@ Andernfalls ist die Mehrwertsteuerart Vorsteuer.
 
 Das folgende Diagramm veranschaulicht diese Regel grafisch.
 
-![Steuerartmöglichkeiten für Projektkonten](media/Sales-Tax-Direction-Vendor.jpg)
+![Steuerartmöglichkeiten für Projektkonten.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>Der Kontentyp ist Kreditor.
 
@@ -73,7 +73,7 @@ Andernfalls ist die Mehrwertsteuerart Vorsteuer.
 
 Das folgende Diagramm veranschaulicht diese Regel grafisch.
 
-![Steuerartmöglichkeiten für Kreditorenkonten](media/Sales-Tax-Direction-Vendor.jpg)
+![Steuerartmöglichkeiten für Kreditorenkonten.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>Kontotyp ist Debitor
 
@@ -89,7 +89,7 @@ Andernfalls ist die Mehrwertsteuerart Mehrwertsteuer.
 
 Das folgende Diagramm veranschaulicht diese Regel grafisch.
 
-![Steuerartmöglichkeiten für Debitorenkonten](media/Sales-Tax-Direction-Customer.jpg)
+![Steuerartmöglichkeiten für Debitorenkonten.](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>Kontentyp ist Sachkonto
 
@@ -103,7 +103,7 @@ Wenn der Erfassungsbetrag andernfalls Soll (positiv) ist, ist die Mehrwertsteuer
 
 Das folgende Diagramm veranschaulicht diese Regel grafisch.
 
-![Steuerartmöglichkeiten für Sachkonten](media/Sales-Tax-Direction-Ledger.jpg)
+![Steuerartmöglichkeiten für Sachkonten.](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>Überschreiben der Mehrwertsteuerart
 
@@ -115,7 +115,7 @@ Navigieren Sie zu **Hauptbuch \> Kontenplan \> Konten \> Hauptkonten** und wähl
 
 Dieser Abschnitt beschreibt, wie das Vorzeichen des Mehrwertsteuerbetrags berechnet wird.
 
-![Seite „Mehrwertsteuerbuchungen“](media/sales-tax-amount-sign.jpg)
+![Seite „Mehrwertsteuerbuchungen“.](media/sales-tax-amount-sign.jpg)
 
 Die folgende Tabelle zeigt die generische Richtlinie zur Bestimmung der Umsatzsteuer-Richtung und des Vorzeichens von Umsatzsteuer-Beträgen in der temporären Umsatzsteuer-Tabelle.
 

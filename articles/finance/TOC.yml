@@ -684,15 +684,23 @@
               href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/finance/toc.json
             - name: Inhaltspaket für Microsoft Power BI-Berichterstellung verwenden
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/finance/toc.json
-            - name: Verwenden des Kostensteuerungsarbeitsbereichs für die mobile Anwendung
+            - name: Kostensteuerungsarbeitsbereich für die mobile Anwendung verwenden
               href: cost-accounting/cost-controlling-mobile-workspace.md
         - name: Elektronische Nachrichten
-          href: general-ledger/electronic-messaging.md
+          items:
+            - name: Übersicht über elektronische Nachrichten
+              href: general-ledger/electronic-messaging.md
+            - name: Elektronische Nachrichten einrichten
+              href: general-ledger/electronic-messaging-setup.md
+            - name: Mit Funktionen der elektronischen Nachrichten arbeiten
+              href: general-ledger/electronic-messaging-work-with-em.md
+            - name: 'Einfaches EB-Exportformat aufrufen, um einen Excel-Bericht zu erstellen'
+              href: general-ledger/electronic-messaging-example.md
         - name: Ausgabenverwaltung
           items:
-            - name: Ausgabenverwaltung – Übersicht
+            - name: Übersicht über die Ausgabenverwaltung
               href: /dynamics365/project-operations/prod-exp/expense-management
-            - name: Überarbeitete Spesenabrechnungen
+            - name: Überarbeitete Ausgabenberichte
               href: /dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew
             - name: Planen der Ausgabenverwaltung
               href: /dynamics365/project-operations/prod-exp/plan-expense-management
@@ -1206,17 +1214,17 @@
               href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
             - name: Wann muss ein Datamart zurückgesetzt werden?
               href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
-            - name: Häufig gestellte Fragen zur Finanzberichterstellung
+            - name: FAQ zum Financial Reporting
               href: general-ledger/financial-reporting-faq.md
         - name: Finance Insights
           items:
             - name: Startseite von Finance Insights
               href: finance-insights/finance-insights-home-page.md
-            - name: Konfiguration und Administration
+            - name: Einrichtung und Verwaltung
               items:
                 - name: Finance Insights für die öffentliche Vorschauversion konfigurieren
                   href: finance-insights/configure-for-fin-insites-PubPrvw.md
-                - name: Finance Insights konfigurieren
+                - name: Finance Insights für die private Vorschauversion konfigurieren
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Vorhersagen für Kundenzahlungen aktivieren
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1226,13 +1234,23 @@
                   href: finance-insights/enable-budget-proposal.md
                 - name: Datenintegratorprojekt erstellen
                   href: finance-insights/create-data-integrate-project.md
+                - name: Vorhersagen verfeinern und verbessern
+                  items:
+                    - name: Ergebnisse von Machine Learning-Modellen
+                      href: finance-insights/confusion-matrix.md
+                    - name: Das anfängliche Vorhersagemodell für Kundenzahlung bewerten
+                      href: finance-insights/evaluate-payment-prediction.md
+                    - name: Vorhersagemodell verbessern
+                      href: finance-insights/improve-model.md
+                    - name: Modellverwaltungslebenszyklus
+                      href: finance-insights/model-manage-lifecycle.md
             - name: Finance Insights verwenden
               items:
                 - name: Budgetvorschläge
                   href: finance-insights/budget-proposals.md
                 - name: Bargeldposition
                   href: finance-insights/cash-position.md
-                - name: Cashflow-Planung
+                - name: Cashflow-Planungen
                   href: finance-insights/cash-flow-forecast-intro.md
                 - name: Externe Daten in Cashflow-Planungen verwenden
                   href: finance-insights/external-data-in-cash-flow.md
@@ -1240,17 +1258,11 @@
                   href: finance-insights/payment-insights-overview.md
                 - name: Vorhersagen für Kundenzahlungen verwenden
                   href: finance-insights/use-customer-payment-predictions.md
-                - name: "Momentaufnahmen\_– Übersicht"
+                - name: Übersicht über Momentaufnahmen
                   href: finance-insights/payment-snapshots.md
-                - name: Ergebnisse von Machine Learning-Modellen
-                  href: finance-insights/confusion-matrix.md
-                - name: Das anfängliche Vorhersagemodell für Kundenzahlung bewerten
-                  href: finance-insights/evaluate-payment-prediction.md
-                - name: Vorhersagemodell verbessern
-                  href: finance-insights/improve-model.md
         - name: Projektverwaltung und -buchhaltung
           items:
-            - name: Projektverwaltung und Buchhaltung – Übersicht
+            - name: Übersicht über Projektverwaltung und Buchhaltung
               href: /dynamics365/project-operations/prod-pma/overview-project-management-accounting
             - name: Intercompany-Rechnungsstellung
               href: /dynamics365/project-operations/prod-pma/intercompany-invoicing
@@ -1492,8 +1504,6 @@
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Erste Schritte mit der elektronischen Rechnungsstellung in Ägypten
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: Erste Schritte mit der elektronischen Rechnungsstellung in Italien
-                          href: localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Erste Schritte mit der elektronischen Rechnungsstellung in Mexiko
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Elektronische Rechnungsstellung einrichten
@@ -2198,45 +2208,47 @@
                   href: localizations/apac-ind-scope.md
                 - name: Neuerungen oder Änderungen bei der Lokalisierung für Indien
                   items:
-                    - name: Neuerungen oder Änderungen in 10.0.0
-                      href: localizations/apac-ind-news-letter-10-0-00.md
-                    - name: Neuerungen oder Änderungen in 10.0.01
-                      href: localizations/apac-ind-news-letter-10-0-01.md
-                    - name: Neuerungen oder Änderungen in 10.0.02
-                      href: localizations/apac-ind-news-letter-10-0-02.md
-                    - name: Neuerungen oder Änderungen in 10.0.03
-                      href: localizations/apac-ind-news-letter-10-0-03.md
-                    - name: Neuerungen oder Änderungen in 10.0.04
-                      href: localizations/apac-ind-news-letter-10-0-04.md
-                    - name: Neuerungen oder Änderungen in 10.0.05
-                      href: localizations/apac-ind-news-letter-10-0-05.md
-                    - name: Neuerungen oder Änderungen in 10.0.06
-                      href: localizations/apac-ind-news-letter-10-0-06.md
-                    - name: Neuerungen oder Änderungen in 10.0.07
-                      href: localizations/apac-ind-news-letter-10-0-07.md
-                    - name: Neuerungen oder Änderungen in 10.0.08
-                      href: localizations/apac-ind-news-letter-10-0-08.md
-                    - name: Neuerungen oder Änderungen in 10.0.09
-                      href: localizations/apac-ind-news-letter-10-0-09.md
-                    - name: Neuerungen oder Änderungen in 10.0.10
-                      href: localizations/apac-ind-news-letter-10-0-10.md
-                    - name: Neuerungen oder Änderungen in 10.0.11
-                      href: localizations/apac-ind-news-letter-10-0-11.md
-                    - name: Neuerungen oder Änderungen in 10.0.12
-                      href: localizations/apac-ind-news-letter-10-0-12.md
-                    - name: Neuerungen oder Änderungen in 10.0.13
-                      href: localizations/ind-news-letter-10-0-13.md
+                    - name: Neuerungen oder Änderungen in 10.0.15–10.0.19
+                      href: localizations/ind-news-letter-10-0-15-19.md
                     - name: Neuerungen oder Änderungen in 10.0.14
                       href: localizations/apac-ind-news-letter-10-0-14.md
+                    - name: Neuerungen oder Änderungen in 10.0.13
+                      href: localizations/ind-news-letter-10-0-13.md
+                    - name: Neuerungen oder Änderungen in 10.0.12
+                      href: localizations/apac-ind-news-letter-10-0-12.md
+                    - name: Neuerungen oder Änderungen in 10.0.11
+                      href: localizations/apac-ind-news-letter-10-0-11.md
+                    - name: Neuerungen oder Änderungen in 10.0.10
+                      href: localizations/apac-ind-news-letter-10-0-10.md
+                    - name: Neuerungen oder Änderungen in 10.0.09
+                      href: localizations/apac-ind-news-letter-10-0-09.md
+                    - name: Neuerungen oder Änderungen in 10.0.08
+                      href: localizations/apac-ind-news-letter-10-0-08.md
+                    - name: Neuerungen oder Änderungen in 10.0.07
+                      href: localizations/apac-ind-news-letter-10-0-07.md
+                    - name: Neuerungen oder Änderungen in 10.0.06
+                      href: localizations/apac-ind-news-letter-10-0-06.md
+                    - name: Neuerungen oder Änderungen in 10.0.05
+                      href: localizations/apac-ind-news-letter-10-0-05.md
+                    - name: Neuerungen oder Änderungen in 10.0.04
+                      href: localizations/apac-ind-news-letter-10-0-04.md
+                    - name: Neuerungen oder Änderungen in 10.0.03
+                      href: localizations/apac-ind-news-letter-10-0-03.md
+                    - name: Neuerungen oder Änderungen in 10.0.02
+                      href: localizations/apac-ind-news-letter-10-0-02.md
+                    - name: Neuerungen oder Änderungen in 10.0.01
+                      href: localizations/apac-ind-news-letter-10-0-01.md
+                    - name: Neuerungen oder Änderungen in 10.0.0
+                      href: localizations/apac-ind-news-letter-10-0-00.md
                 - name: Indirekte Steuern
                   items:
                     - name: Indien GST
                       items:
-                        - name: Indien GST – Übersicht
+                        - name: Übersicht über Indien GST
                           href: localizations/apac-ind-gst.md
                         - name: Steuermodul
                           items:
-                            - name: Informationen zum Steuermodul
+                            - name: Übersicht über das Steuermodul
                               href: general-ledger/tax-engine.md
                             - name: Konfiguration importieren
                               href: general-ledger/tax-engine-import-configuration.md
@@ -2288,6 +2300,8 @@
                               href: localizations/apac-ind-gst-reference-groups.md
                         - name: Steuerbuchungen
                           items:
+                            - name: GST-TDS für die Zahlung von Waren und Dienstleistungen
+                              href: localizations/ind-gst-tds-payment-goods-services.md
                             - name: Einkaufsbuchungen
                               items:
                                 - name: Käufe von nicht registrierten Kreditoren
@@ -2438,11 +2452,13 @@
                               href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
                             - name: Fehler in der Absetzungsregel bei Ausführung eines Steuerausgleichs
                               href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
+                            - name: Der Standardfeldwert in den Steuerinformationen entspricht nicht den Erwartungen
+                              href: localizations/apac-ind-GST-troubleshooting-default-value-in-tax-information-not-expected.md
                 - name: Direkte Steuern
                   items:
                     - name: Quellensteuer Indien
                       items:
-                        - name: Häufig gestellte Fragen zu Steuerschwellenwerten
+                        - name: FAQ zu Steuerschwellenwerten
                           href: localizations/apac-ind-tax-thresholds.md
                         - name: Indien TCS
                           items:
@@ -2456,6 +2472,10 @@
                               href: localizations/apac-ind-TDS-India-TDS-overview.md
                             - name: GST bei der Berechnung von Steuerabzügen berücksichtigen
                               href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                            - name: TDS auf Käufe von Waren gemäß 194Q
+                              href: localizations/ind-tds-purchases-goods.md
+                            - name: 'TDS/TCS für Personen oder Unternehmen, die ihre Steuererklärung nicht fristgerecht eingereicht haben, mit einem höheren Steuersatz buchen'
+                              href: localizations/post-tds-tcs-non-filers-higher-tax.md
                             - name: Grundeinstellungen für TDS
                               items:
                                 - name: TDS-Parameter festlegen
@@ -3330,7 +3350,7 @@
               items:
                 - name: Belegschaft organisieren
                   href: ../human-resources/hr-personnel-departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
-                - name: Komponenten eines Einzelvorgangs einrichten
+                - name: Komponenten einer Stelle einrichten
                   href: ../human-resources/hr-personnel-jobs.md?toc=/dynamics365/finance/toc.json
                 - name: Abteilungen definieren
                   href: ../human-resources/hr-personnel-define-departments.md?toc=/dynamics365/finance/toc.json
@@ -4329,7 +4349,7 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/finance/toc.json
             - name: Workflow-System
               items:
-                - name: Workflowsystem – Übersicht
+                - name: Übersicht über das Workflowsystem
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/finance/toc.json
                 - name: Workflow-Systemarchitektur
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/finance/toc.json
@@ -4347,13 +4367,15 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurieren von automatisierten Aufgaben
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurieren von Genehmigungsprozessen
+                    - name: Genehmigungsprozesse konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurieren von Genehmigungsschritten
+                    - name: Genehmigungsschritte konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurieren von manuellen Entscheidungen
+                    - name: Aufwendungsprüfer konfigurieren
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/finance/toc.json
+                    - name: Manuellen Entscheidungen konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurieren von bedingten Entscheidungen
+                    - name: Bedingte Entscheidungen konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurieren von parallelen Aktivitäten
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/finance/toc.json

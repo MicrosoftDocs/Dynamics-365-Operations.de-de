@@ -2,7 +2,7 @@
 title: Kopfzeilenmodul
 description: In diesem Thema werden Kopfzeilenmodule behandelt und die Erstellung von Kopfzeilen in Microsoft Dynamics 365 Commerce beschrieben.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b14178431b281daa827749781dd16481f8bfb74
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 21bf454e57c62a2542ed055bb0913c48ab70e235
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799909"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479255"
 ---
 # <a name="header-module"></a>Kopfzeilenmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 In diesem Thema werden Kopfzeilenmodule behandelt und die Erstellung von Kopfzeilen in Microsoft Dynamics 365 Commerce beschrieben.
 
@@ -33,7 +34,7 @@ Das Kopfzeilenmodul enthält ein Site-Logo, Links zur Navigationshierarchie, Lin
 
 Das folgende Bild zeigt ein Beispiel eines Kopfzeilenmoduls, das auf einer Startseite verwendet wird.
 
-![Beispiel eines Kopfzeilenmoduls](./media/ecommerce-header.png)
+![Beispiel eines Kopfzeilenmoduls.](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Eigenschaften eines Kopfmoduls
 
@@ -58,9 +59,16 @@ Die folgenden Module können im Kopfzeilenmodul verwendet werden:
 - **Selektor speichern** – Das Store Selector-Modul kann in den Store Selector-Slot eines Header-Moduls aufgenommen werden. Hier können Benutzer Geschäfte in der Nähe durchsuchen und finden. Benutzer können auch einen bevorzugten Store angeben. Dieser Store wird dann in der Kopfzeile angezeigt. Wenn das Store-Selector-Modul im Header-Modul enthalten ist, wird die **Modus** Eigenschaft auf **Store finden** festgelegt. Weitere Informationen finden Sie unter [Store-Auswahl-Modul](store-selector.md).
 
 > [!NOTE]
-> - Hilfe für das Modul Warenkorbsymbol im Header-Modul finden Sie in Dynamics 365 Commerce Release 10.0.11.
-> - Hilfe für das Modul Site-Selektor im Header-Modul finden Sie in Dynamics 365 Commerce Release 10.0.14.
-> - Hilfe für das Modul Store-Selektor im Header-Modul finden Sie in Dynamics 365 Commerce Release 10.0.15.
+> - Hilfe zur Verwendung des Warenkorbsymbolmoduls im Kopfzeilenmodul steht ab Dynamics 365 Commerce-Version 10.0.11 zur Verfügung.
+> - Hilfe zur Verwendung des Site-Auswahlmoduls im Kopfzeilenmodul steht ab Dynamics 365 Commerce-Version 10.0.14 zur Verfügung.
+> - Hilfe zur Verwendung des Store-Auswahlmoduls im Kopfzeilenmodul steht ab Dynamics 365 Commerce-Version 10.0.15 zur Verfügung.
+
+## <a name="header-module-in-the-adventure-works-theme"></a>Kopfzeilenmodul im Adventure Works-Design
+
+Im Adventure Works-Design unterstützt das Kopfzeilenmodul die Eigenschaft **Mobiles Logo**. Diese Eigenschaft ermöglicht die Angabe eines Logos für mobile Viewports. Die Eigenschaft **Mobiles Logo** ist als Moduldefinitionserweiterung verfügbar.
+
+> [!IMPORTANT]
+> Das Adventure Works-Design steht ab der Dynamics 365 Commerce-Version 10.0.20 zur Verfügung.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Erstellen eines Kopfzeilenfragment für eine Seite
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
-ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
+ms.openlocfilehash: 115eaad4f11fc4fb5321f0d8bb9d4f5a9f2f2c7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306388"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358592"
 ---
 # <a name="unified-product-experience"></a>Einheitliche Produktumgebung
 
@@ -33,15 +33,15 @@ Wenn ein Geschäftsökosystem aus Dynamics 365-Anwendungen besteht, wie Finance,
 
 Hier ist das Produktdatenmodell aus Sales.
 
-![Datenmodell für Produkte in CE](media/dual-write-product-4.jpg)
+![Datenmodell für Produkte in CE.](media/dual-write-product-4.jpg)
 
 Hier ist das Produktdatenmodell aus Finance and Operations-Apps.
 
-![Datenmodell für Produkte in Finance and Operations](media/dual-write-products-5.jpg)
+![Datenmodell für Produkte in Finance and Operations.](media/dual-write-products-5.jpg)
 
 Diese beiden Produktdatenmodelle wurden wie unten dargestellt in Dataverse integriert.
 
-![Datenmodell für Produkte in Dynamics 365-Apps](media/dual-write-products-6.jpg)
+![Datenmodell für Produkte in Dynamics 365-Apps.](media/dual-write-products-6.jpg)
 
 Die Tabellenzuordnungen für duales Schreiben sind so konzipiert, dass Daten nur unidirektional weitergeleitet werden. Dies erfolgt nahezu in Echtzeit von Finance and Operations-Apps nach Dataverse. Allerdings wurde die Produktinfrastruktur offen gestaltet, um sie bei Bedarf auch bidirektional nutzen zu können. Obwohl Sie sie auf eigene Gefahr anpassen können, empfiehlt Microsoft diese Methode nicht.
 
@@ -86,7 +86,7 @@ Da das Produkt als SKU dargestellt wird, können die Konzepte von eindeutig iden
 - **Produktmaster** werden als generische Produkte verwendet, die die Definition und die Regeln verwenden, mit denen das Verhalten in Geschäftsprozessen bestimmt wird. Auf Grundlage dieser Definitionen können eindeutig identifizierbare Produkte, bekannt als Produktvarianten, generiert werden. Beispielsweise ist das T-Shirt der Produktmaster, und es kann Farbe und Größe als Dimensionen haben. Varianten können freigegeben werden, die unterschiedliche Kombinationen dieser Dimensionen aufweisen, z. B. ein kleines blaues T-Shirt oder ein mittelgroßes grünes T-Shirt. In der Integration wird eine Zeile pro Variante in der Produkttabelle erstellt. Diese Zeile enthält die variantenspezifischen Informationen, wie beispielsweise die verschiedenen Dimensionen. Die allgemeinen Informationen für das Produkt werden in der Tabelle **msdyn\_sharedproductdetails** gespeichert. (Diese allgemeinen Informationen werden im Produktmaster gespeichert.) Die Produktmasterinformationen werden mit Dataverse synchronisiert, sobald der freigegebene Produktmaster erstellt wird (aber bevor die Varianten freigegeben werden).
 - **Eindeutig identifizierbare Produkte** verweisen auf alle Produktuntertypprodukte und alle Produktvarianten an. 
 
-![Datenmodell für Produkte](media/dual-write-product.png)
+![Datenmodell für Produkte.](media/dual-write-product.png)
 
 Wenn die Dual-Write-Funktionalität aktiviert ist, werden die Produkte aus Finance and Operations in anderen Dynamics 365-Produkten im Zustand **Entwurf** synchronisiert. Sie werden der ersten Preisliste mit derselben Währung hinzugefügt. Das bedeutet, sie werden der ersten Preisliste in einer Dynamics 365-App hinzugefügt, die mit der Währung Ihrer juristischen Tabelle übereinstimmt, in der das Produkt in einer Finance and Operations-App freigegeben wird. Wenn für die angegebene Währung keine Preisliste vorhanden ist, wird automatisch eine Preisliste erstellt und das Produkt dieser zugewiesen. 
 
@@ -112,7 +112,7 @@ Die Synchronisierung der Produkte erfolgt von den Finance and Operations-Apps na
 
 Produktdimensionen sind Merkmale, die eine Produktvariante identifizieren. Die vier Produktdimensionen (Farbe, Größe, Stil und Konfiguration) werden auch Dataverse zugeordnet, um die Produktvarianten zu definieren. Die folgende Abbildung zeigt das Datenmodell für die Produktdimension „Farbe”. Dasselbe Modell wird auf die Größen, Stile und Konfigurationen angewendet. 
 
-![Datenmodell für Produktdimensionen](media/dual-write-product-two.png)
+![Datenmodell für Produktdimensionen.](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -148,7 +148,7 @@ Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Arti
 
 Die Maßeinheiten und die jeweilige Umrechung sind in Dataverse entsprechend dem im Diagramm angezeigten Datenmodell verfügbar.
 
-![Datenmodell für Maßeinheit](media/dual-write-product-three.png)
+![Datenmodell für Maßeinheit.](media/dual-write-product-three.png)
 
 Das Maßeinheitskonzept wird in Finance and Operations-Apps und anderen Dynamics 365-Apps integriert. Für jede Einheitenklasse in einer Finance and Operations-App wird eine Einheitengruppe in einer Dynamics 365-App erstellt, die die Einheiten enthält, die zur Einheitenklasse gehören. Eine Standardbasiseinheit wird auch für jede Einheitsgruppe erstellt. 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6e8fb2baf85be0eaecfffcc7ec6cbb457c3bb04
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021889"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351248"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Implementierungsoptionen für das Content Delivery Network
 
@@ -40,7 +40,7 @@ Alle drei CDN-Implementierungsoptionen liefern nur dynamischen HTML-Inhalt aus b
 
 Die folgende Abbildung zeigt eine Übersicht über die Commerce-Architektur.
 
-![Commerce – Architekturübersicht](media/Commerce_CDN-Option_ComparisonModels.png)
+![Commerce – Architekturübersicht.](media/Commerce_CDN-Option_ComparisonModels.png)
 
 Weitere Informationen zum Einrichten einer Instanz von Azure Front Door für Ihre Commerce-Site finden Sie unter [CDN-Unterstützung hinzufügen](add-cdn-support.md).
 
@@ -54,7 +54,7 @@ In der folgenden Tabelle sind die Vor- und Nachteile der Verwendung der von Comm
 
 Die folgende Abbildung zeigt die Architektur der von Commerce bereitgestellten Azure Front Door-Instanz.
 
-![Von Commerce bereitgestellte Azure Front Door-Instanz](media/Commerce_CDN-Option_CommerceFrontDoor.png)
+![Von Commerce bereitgestellte Azure Front Door-Instanz.](media/Commerce_CDN-Option_CommerceFrontDoor.png)
 
 ## <a name="use-a-customer-owned-azure-front-door-instance"></a>Kundeneigene Azure Front Door-Instanz verwenden
 
@@ -66,7 +66,7 @@ In der folgenden Tabelle sind die Vor- und Nachteile der Verwendung der kundenei
 
 Die folgende Abbildung zeigt eine Commerce-Infrastruktur, die eine kundeneigene Azure Front Door-Instanz enthält.
 
-![Commerce-Infrastruktur, die eine kundeneigene Azure Front Door-Instanz enthält](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
+![Commerce-Infrastruktur, die eine kundeneigene Azure Front Door-Instanz enthält.](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
 
 ## <a name="use-an-external-cdn-service"></a>Externen CDN-Dienst verwenden
 
@@ -78,7 +78,7 @@ In der folgenden Tabelle sind die Vor- und Nachteile der Verwendung eines extern
 
 Die folgende Abbildung zeigt eine Commerce-Infrastruktur, die einen externen CDN-Dienst enthält.
 
-![Commerce-Infrastruktur mit einem externen CDN-Dienst](media/Commerce_CDN-Option_ExternalFrontDoor.png)
+![Commerce-Infrastruktur mit einem externen CDN-Dienst.](media/Commerce_CDN-Option_ExternalFrontDoor.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

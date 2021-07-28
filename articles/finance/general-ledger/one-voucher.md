@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 8229dc84040b1f3bd46d75c13795f0dc9b7e71f1
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 105fdc1b8e8c9e30c0d305894910194591707193
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897767"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356702"
 ---
 # <a name="one-voucher"></a>Ein Beleg
 
@@ -31,20 +31,20 @@ ms.locfileid: "5897767"
 
 Die vorhandene Funktion für Finanzerfassungen (allgemeine Erfassung, Anlagenerfassung, Kreditorenzahlungserfassung usw.) ermöglicht es Ihnen, mehrere untergeordnete Sachkontotransaktionen im Kontext eines einzelnen Belegs einzugeben (Kunden, Lieferant, Anlage, Projekt und Ban). Microsoft bezeichnet diese Funktionalität als *Ein Beleg*. Sie können einen einzelnen Beleg erstellen, indem Sie eine der folgenden Methoden verwenden:
 
-- Richten Sie den Erfassungsnamen (**Hauptbuch** \> **Erfassungseinstellungen** \>**Erfassungsnamen**) ein, damit das Feld **Neuer Beleg** auf **Nur eine Belegnummer** festgelegt ist. Jede Position, die Sie der Erfassung hinzufügen, ist nun im selben Beleg einbezogen. Da jede Position demselben Beleg hinzugefügt wird, kann der Beleg als Beleg, Sammelrabatt als Konto/Gegenkonto der gleichen Position oder einer Kombination eingegeben werden.
+- Richten Sie den Erfassungsnamen (**Hauptbuch** \> **Erfassungseinstellungen** \> **Erfassungsnamen**) ein, damit das Feld **Neuer Beleg** auf **Nur eine Belegnummer** festgelegt ist. Jede Position, die Sie der Erfassung hinzufügen, ist nun im selben Beleg einbezogen. Da jede Position demselben Beleg hinzugefügt wird, kann der Beleg als Beleg, Sammelrabatt als Konto/Gegenkonto der gleichen Position oder einer Kombination eingegeben werden.
 
-    [![Einzelposition](./media/same-line.png)](./media/same-line.png)
+    [![Einzelposition.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > Beachten Sie, dass die Definition von „Ein Beleg” **nicht** Fälle abdeckt, bei denen der Erfassungsname als **Nur eine Beleg-Nummer** eingerichtet ist, aber der Benutzer dann einen Beleg eingibt, der nur Sachkontentypen umfasst. In diesem Dokument bedeutet „Ein Beleg”, dass es einen Beleg gibt, der mehr als einen Lieferanten, Debitor, Bank, Anlage oder Projekt enthält.
 
 - Geben Sie einen mehrzeiligen Beleg ein, wo es kein Gegenkonto gibt.
 
-    [![" Sammelrabatt-Beleg](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Sammelrabatt-Beleg.](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Geben Sie einen Beleg ein, bei dem das Konto und das Gegenkonto eine Kontenart für untergeordnete Sachkonten enthält, beispielsweise **Lieferant**/**Lieferant**, **Debitor**/**Debitor**, **Lieferant**/**Debitor** oder **Bank**/**Bank**.
 
-    [![Beleg für untergeordnetes Sachkonto](./media/subledger.png)](./media/subledger.png)
+    [![Beleg für untergeordnetes Sachkonto.](./media/subledger.png)](./media/subledger.png)
 
 ## <a name="issues-with-one-voucher"></a>Abgänge mit einem Beleg
 
@@ -52,11 +52,11 @@ Die Funktion „Ein Beleg” verursacht Probleme beim Ausgleich bei der Steuerbe
 
 Angenommen, Sie haben die folgenden mehrzeiligen Beleginformationen.
 
-[![Beispiel eines mehrzeiligen Belegs](./media/example.png)](./media/example.png)
+[![Beispiel eines mehrzeiligen Belegs.](./media/example.png)](./media/example.png)
 
 Dann generieren Sie den Bericht **Ausgaben nach Kreditor** im Arbeitsbereich **Finanzinformationen**. Auf diesem Bericht sind Ausgabenkontosalden nach Lieferantengruppe und dann nach LIeferant gruppiert. Wenn der Bericht generiert wird, kann das System nicht bestimmen, bei welchen Kreditorengruppen/Kreditoren die Ausgabe von 250,00 anfiel. Da Buchungsdetails fehlen, geht das System davon aus, dass die gesamte Ausgabe von 250,00 vom ersten Lieferant angefallen ist, der im Beleg gefunden wurden. Deshalb wird die Ausgabe von 250,00, die im Saldo für das Hauptkonto 600120 enthalten ist, unter dieser Lieferantengruppe/diesem Lieferanten angezeigt. Es ist aber außerordentlich wahrscheinlich, dass der erste Lieferant im Beleg nicht der korrekte Lieferant ist. Deshalb ist der Bericht wahrscheinlich falsch.
 
-[![Ausgaben nach Lieferantenbericht](./media/expenses.png)](./media/expenses.png)
+[![Ausgaben nach Lieferantenbericht.](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Die Zukunft von „Ein Beleg”
 
@@ -79,7 +79,7 @@ Auf Grundlage von Unterhaltungen mit Debitoren, hat Microsoft die folgende Liste
 
 ### <a name="scenarios-that-require-one-voucher"></a>Szenarien, die nicht „Ein Beleg” erfordern
 
-Die folgenden Szenarien können nur mithilfe der Funktionalität „Ein Beleg” ausgeführt werden. Wenn Ihre Organisation eines dieser Szenarien hat, müssen Sie mehrere Transaktionen aktivieren, um sie in einen Beleg einzugeben, indem sie die Einstellungen  **Mehrere Transaktionen in einem Beleg zulassen** auf der Seite **Hauptbuchparameter** ändern. Diese Funktionslücken werden in späteren Versionen durch andere Funktionen ausgefüllt.
+Die folgenden Szenarien können nur mithilfe der Funktionalität „Ein Beleg” ausgeführt werden. Wenn Ihre Organisation eines dieser Szenarien hat, müssen Sie mehrere Transaktionen aktivieren, um sie in einen Beleg einzugeben, indem sie die Einstellungen **Mehrere Transaktionen in einem Beleg zulassen** auf der Seite **Hauptbuchparameter** ändern. Diese Funktionslücken werden in späteren Versionen durch andere Funktionen ausgefüllt.
 
 > [!Note]
 > [Für jedes der folgenden Szenarien muss das Feld **Mehrere Transaktionen innerhalb eines Belegs zulassen** im Feld **Allgemein** Inforegister auf der Seite **Hauptbuchparameter** auf Ja gesetzt sein.]
@@ -125,7 +125,7 @@ Mit den folgenden Anlagenbuchungen werden auch mehrere Transaktionen innerhalb e
 > [!Note]
 > Achten Sie bei der Erfassung von Transaktionen darauf, dass alle Transaktionen auf dieselbe Anlage zutreffen. Der Beleg wird nicht gebucht, wenn er mehr als eine Anlage enthält, auch wenn das Feld **Neuer Beleg** auf eine Belegnummer nur auf der Seite **Journalnamen** im Hauptbuch gesetzt ist. Wenn Sie mehr als eine Anlage in den Beleg aufnehmen, erscheint die Meldung **Es kann nur eine Anlagenbewegung pro Beleg** und Sie können den Beleg nicht buchen.  
 
-### <a name="bills-of-exchange-and-promissory-notes"></a> Wechsel und Solawechsel
+### <a name="bills-of-exchange-and-promissory-notes"></a>Wechsel und Solawechsel
 Wechsel und Solawechsel verlangen, dass ein Beleg verwendet wird, da die Transaktion den Debitoren- bzw. Kreditorensaldo von einem Debitoren-/Kreditorsachkonto auf ein anderes verschiebt, basierend auf dem Status der Zahlung.
 
 ## <a name="scenarios-that-dont-require-one-voucher"></a>Szenarien, die nicht „Ein Beleg” erfordern

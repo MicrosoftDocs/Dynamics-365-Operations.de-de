@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a1a25e3d5bc1cc5c1c7509186451fdfef50dd6cf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c8a22a356053789f97fd4f3f9437d57978a67943
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792338"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352131"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Produktempfehlungen im POS hinzufügen
 
@@ -39,7 +39,7 @@ Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind 
 
     - Wenn ein Filialmitarbeiter eine **Produktdetails** Seite besucht, wenn er frühere Transaktionen über verschiedene Kanäle betrachtet, schlägt der Empfehlungsdienst zusätzliche Artikel vor, die wahrscheinlich zusammen gekauft werden.
 
-    [![Empfehlungen zur Produktdetailseite](./media/proddetails.png)](./media/proddetails.png)
+    [![Empfehlungen zur Produktdetailseite.](./media/proddetails.png)](./media/proddetails.png)
 
 2. Auf der **Transaktionen** Seite:
 
@@ -48,7 +48,7 @@ Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind 
     > [!NOTE]
     > Zum Anzeigen von Empfehlungen auf der Seite **Buchung** muss der Einzelhändler das Bildschirmlayout in Dynamics 365 Commerce aktualisieren. Das Steuerelement **Empfehlungen** muss auf der Seite **Buchung** abgelegt werden.
 
-    [![Empfehlungen auf de Seite „Transaktion“](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Empfehlungen auf der Seite „Transaktion“.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
 ## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurieren Sie Commerce, um POS-Empfehlungen zu aktivieren
 

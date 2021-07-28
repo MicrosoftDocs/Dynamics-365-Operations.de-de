@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-18
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: eaf6264f060d33575740ad38e7a65158baba296b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f0806a5b36b04e77a5a6d10f3c2eb3d7ba680e75
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829617"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356415"
 ---
 # <a name="product-configuration-model-calculations"></a>Berechnungen für Produktkonfigurationsmodelle
 
@@ -70,7 +70,7 @@ In diesem Beispiel wird das Textattribut `textFixedList` als Zielattribut verwen
 
 Der folgende Screenshot zeigt, wie die Einstellungen für dieses Attribut in Ihrem System aussehen könnten.
 
-![Attributtypeinstellungen für Beispiel 2](media/model-calculations-example2.png "Attributtypeinstellungen für Beispiel 2")
+![Attributtypeinstellungen für Beispiel 2.](media/model-calculations-example2.png "Attributtypeinstellungen für Beispiel 2")
 
 Das Attribut wird in der folgenden Bedingungsanweisung verwendet:
 
@@ -92,7 +92,7 @@ In diesem Beispiel wird das Zielattribut `textFixedList` aus dem letzten Beispie
 
 Der folgende Screenshot zeigt, wie die Einstellungen für dieses Attribut in Ihrem System aussehen könnten.
 
-![Attributtypeinstellungen für Beispiel 3](media/model-calculations-example3.png "Attributtypeinstellungen für Beispiel 3")
+![Attributtypeinstellungen für Beispiel 3.](media/model-calculations-example3.png "Attributtypeinstellungen für Beispiel 3")
 
 Der Wert für das Attribut `textFixedList` wird unter Verwendung der folgenden Bedingungsanweisung berechnet:
 

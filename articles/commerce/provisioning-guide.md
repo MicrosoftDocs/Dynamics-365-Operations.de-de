@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b675d4af6fb9a080f3f3a13e64b2c5b6ad4b783
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8b288a0d6b7516faf635486fbaad885344d2cc6f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022421"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352083"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Eine Dynamics 365 Commerce-Evaluierungsumgebung bereitstellen
 
@@ -90,16 +90,16 @@ Gehen Sie folgendermaßen vor, um die Umgebung bereitzustellen.
 1. Wählen Sie im Feld **Anwendungsversion** die aktuellste Version aus. Wenn Sie aus einem bestimmten Grund eine andere Anwendungsversion als die aktuellste auswählen müssen, wählen Sie keine Version vor **10.0.14** aus.
 1. Verwenden Sie im Feld **Plattformversion** die Plattformversion, die automatisch für die von Ihnen ausgewählte Anwendungsversion ausgewählt wird. 
 
-    ![Auswählen von Anwendungs- und Plattformversionen](./media/project1.png)
+    ![Auswählen von Anwendungs- und Plattformversionen.](./media/project1.png)
 
 1. Wählen Sie **Weiter**.
 1. Wählen Sie **Demo** als Umgebungstopologie aus.
 
-    ![Auswählen der Umgebungstopologie 1](./media/project2.png)
+    ![Auswählen der Umgebungstopologie 1.](./media/project2.png)
 
 1. Geben Sie auf der Seite **Umgebung bereitstellen** einen Umgebungsnamen ein. Lassen Sie die erweiterten Einstellungen unverändert.
 
-    ![Bereitstellen der Umgebungsseite](./media/project4.png)
+    ![Bereitstellen der Umgebungsseite.](./media/project4.png)
 
 1. Passen Sie die VM-Größe nach Bedarf an. (Wir empfehlen die VM-Lagermengeneinheit \[SKU\] **D13 v2**.)
 1. Überprüfen Sie die Preis- und Lizenzbedingungen und aktivieren Sie das Kontrollkästchen, um anzuzeigen, dass Sie diesen zustimmen.

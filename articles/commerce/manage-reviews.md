@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 60ad0dd821dc91576a59cf73ec46da4aefd34a2f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94abcf7189dc7c1f5587eb06d47650dc707c5007
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794258"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352397"
 ---
 # <a name="manage-ratings-and-reviews"></a>Bewertungen und Prüfungen verwalten
 
@@ -45,7 +45,7 @@ Um eine Überprüfung in den Commerce Site Builder hochzuladen, folgen Sie diese
 
 Mit zusätzlichen Filtern können Sie die Überprüfungen nach Zeitraum, Bewertung, Kanal oder Anliegenstatus einschränken (deaktiviert, beantwortet oder gemeldet).
 
-![Moderations-Startseite](media/rnr-moderation-home.png) 
+![Moderations-Startseite.](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>Auf Bewertung antworten 
 
@@ -59,7 +59,7 @@ Um auf eine Überprüfung im Commerce Site Builder zu antworten, folgen Sie dies
 1. Geben Sie den Antworttext und den Namen ein, der für den Antwortenden angezeigt werden soll. Der Standardname des Antwortenden lautet **Moderator**.
 1. Wählen Sie abschließend **Antwort senden** aus.
 
-![Beantworten einer Bewertung](media/rnr-moderation-response.png) 
+![Beantworten einer Bewertung.](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>Entfernen einer Bewertung 
 
@@ -82,7 +82,7 @@ Führen Sie die folgenden Schritte aus, um Kundendaten im Commerce Site Builder 
 1. Wenn der Kunde eine Überprüfungsaktivität hat (z. B. Überprüfungsbeiträge, Abstimmungen zur Nützlichkeit der Bewertungen eines anderen Kunden oder Kommentare zur Bewertung eines anderen Kunden), werden die Ergebnisse angezeigt. Für jedes Element gibt es die Schaltfläche **Löschen**.
 1. Wählen Sie für jedes Element, das gelöscht werden muss, **Löschen** aus. Wenn Sie zur Bestätigung aufgefordert werden, wählen Sie **Ja** aus. 
     
-![Löschen von Kundendaten](media/rnr-moderation-delete-reviews.png) 
+![Löschen von Kundendaten.](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - Es kann bis zu sieben Tage dauern, bis die Daten vollständig aus dem System entfernt wurden. Moderatoren sollten Kunden über diese Verzögerung informieren.
@@ -106,25 +106,25 @@ Führen Sie die folgenden Schritte aus, um Bewertungs- und Prüfdaten im Commerc
 1. Navigieren Sie zu **Start \> Bewertungen \> Berichterstellung**.
 1. Wählen Sie **PowerBI-Vorlage** aus, um die Vorlage herunterzuladen.
 
-    ![Laden Sie die Power BI-Vorlage herunter](media/rnr-moderation-reports.png) 
+    ![Laden Sie die Power BI-Vorlage herunter.](media/rnr-moderation-reports.png) 
 
 1. Öffnen Sie die heruntergeladene Vorlage durch Verwendung der Power BI-App. Schließen Sie das Dialogfeld **Zugriff auf Webinhalt**, das angezeigt wird, und schließen Sie dann die angezeigte Fehlermeldung „Aktualisieren“.
 1. Navigieren Sie zu **Startseite**, wählen Sie **Abfragen bearbeiten** und dann **Datenquelleneinstellungen** aus.
 1. Wählen Sie im Dialogfeld **Datenquelleneinstellungen** die Option **Quelle ändern** aus.
 1. Geben Sie im Feld **URL** den Pfad der Prüfdaten ein, die Sie in der vorherigen Prozedur (Beispiel: **c:\\reviews\\ReviewsData.csv**) heruntergeladen haben.
 
-    ![URL-Feld im Dialogfeld „Kommagetrennte Werte“](media/rnr-powerbi-datasource-settings.png) 
+    ![URL-Feld im Dialogfeld „Kommagetrennte Werte“.](media/rnr-powerbi-datasource-settings.png) 
 
 1. Wählen Sie **OK** und dann **Änderungen anwenden** aus. Es dauert ein bis zwei Minuten, um Ihre Änderungen auf die Datenquelle anzuwenden.
 1. Wählen Sie **Trendbilanz** aus, um die Trends für Bewertungen und Prüfungen anzuzeigen.
 
-    ![Trends für Bewertungen und Prüfungen](media/rnr-powerbi-dashboard-template.png) 
+    ![Trends für Bewertungen und Prüfungen.](media/rnr-powerbi-dashboard-template.png) 
     
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über Bewertungen und Prüfungen](ratings-reviews-overview.md)
 
-[Abonnieren zum Verwenden von Bewertungen und Prüfungen](opt-in-ratings-reviews.md)
+[Nutzung von Bewertungen und Prüfungen aktivieren](opt-in-ratings-reviews.md)
 
 [Konfigurieren von Bewertungen und Prüfungen](configure-ratings-reviews.md)
 

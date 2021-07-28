@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: c4f663ae36f7d4ea3db9888e618f2fe3bf8c3256
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 073f89b5ae44e20d1d2e854341afaa176f9b6280
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748946"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350934"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migration vom Währungsdatentyp für duales Schreiben
 
@@ -82,13 +82,13 @@ Im Folgenden finden Sie einige Beschränkungen:
 
 Nach Abschluss der Migration können Administratoren die Währungsgenauigkeit festlegen. Gehen Sie zu **Einstellungen \> Verwaltung** und wählen Sie **Systemeinstellungen**. Dann auf der Registerkarte **Allgemein** ändern Sie den Wert der Spalte **Legen Sie die Währungsgenauigkeit fest, die für die Preisgestaltung im gesamten System verwendet wird** wie in der folgenden Abbildung gezeigt.
 
-![Systemeinstellungen für Währung](media/currency-system-settings.png)
+![Systemeinstellungen für Währung.](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Geschäftsdokumentverwaltung: Währungen
 
 Wenn Sie verlangen, dass die Währungsgenauigkeit für eine bestimmte Währung von der Währungsgenauigkeit abweicht, die für die Preisgestaltung verwendet wird, können Sie sie ändern. Gehen Sie zu **Einstellungen \> Geschäftsführung**, wählen **Währungen** und wählen die zu ändernde Währung aus. Dann stellen Sie die Spalte **Währungspräzision** auf die Anzahl der gewünschten Dezimalstellen ein, wie in der folgenden Abbildung gezeigt.
 
-![Währungseinstellungen für ein bestimmtes Gebietsschema](media/specific-currency.png)
+![Währungseinstellungen für ein bestimmtes Gebietsschema.](media/specific-currency.png)
 
 ### <a name="tables-currency-column"></a>Tabellen: Währungsspalte
 

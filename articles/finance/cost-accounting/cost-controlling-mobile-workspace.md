@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 569f932b256054f2d93a6d699ca5d5af3da08ca6
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: df727f3e66691409b98d2f74f78329b03e638959
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897935"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355202"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Mobiler Arbeitsbereich für die Kostensteuerung
 
@@ -70,7 +70,7 @@ Der mobile Arbeitsbereich **Kostensteuerung** bietet folgende Aktivitäten, Ansi
 
     Wenn Sie eine Verknüpfung aktivieren, wird für jeden Ausgaben eine Karte angezeigt. Die folgenden Beträge werden in den jeweiligen Karten angezeigt: Ist, Budget, Planabweichung, Planabweichung %, überarbeitetes Budget, Abweichung vom überarbeiteten Budget und Abweichung vom überarbeiteten Budget %.
     
-    [![Karte für ein Kostenelement](./media/Cost-controlling.png)](./media/Cost-controlling.png)
+    [![Karte für ein Kostenelement.](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Die Voraussetzungen unterscheiden sich basierend auf der Version von Microsoft Dynamics 365, die für Ihre Organisation bereitgestellt wurde.
@@ -125,7 +125,7 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 3.  Bei der erstmaligen Anwendung werden Sie nach Ihrem Benutzernamen und dem Kennwort gefragt. Geben Sie Ihre Anmeldeinformationen ein.
 4.  Nachdem Sie sich angemeldet haben, werden verfügbare Arbeitsbereiche für Ihr Unternehmen angezeigt. Beachten Sie, dass Sie, wenn Ihr Systemadministrator einen neuen Arbeitsbereich später veröffentlicht, die Liste der mobilen Arbeitsbereiche aktualisieren müssen.
 
-[![Zum Aktualisieren ziehen](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Zum Aktualisieren nach unten ziehen.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>Hier können Sie die Leistungsfähigkeit der Kostenstellen sehen, indem Sie den mobilen Arbeitsbereich Kostensteuerung verwenden
 

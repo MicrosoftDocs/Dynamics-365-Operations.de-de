@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 18556e35d63ea20b181c525b758788dc0f89f701
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f3e01dd85cbe8e2b2c9095431f3e0aead817a5a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842224"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352761"
 ---
 # <a name="procurement"></a>Beschaffung
 
@@ -36,7 +36,7 @@ Auf der Listenseite **Arbeitsauftragsbestellanforderung** (**Anlagenmanagement**
 
 In der folgenden Abbildung wird ein Beispiel der Listenseite **Arbeitsauftragsbestellanforderung** angezeigt.
 
-![Abbildung 1](media/08-work-orders.png)
+![Abbildung 1.](media/08-work-orders.png)
 
 
 Auf der Listenseite **Arbeitsauftragsbestellanforderung** (**Anlagenmanagement** > **Allgemein** > **Beschaffung** > **Arbeitsauftragsbestellung**) wird eine Liste von Bestellungen zu Arbeitsaufträgen angezeigt. Wenn Sie einen Arbeitsauftragseinzelvorgang auf dieser Seite auswählen, können Sie die Schaltflächen in der Gruppe **Anzeigen** auf der Registerkarte **Arbeitsauftragsbestellung** des Aktivitätsbereichs verwenden, um verschiedene Aktionen auszuführen:
@@ -47,7 +47,7 @@ Auf der Listenseite **Arbeitsauftragsbestellanforderung** (**Anlagenmanagement**
 
 In der folgenden Abbildung wird ein Beispiel der Listenseite **Arbeitsauftragsbestellung** angezeigt.
 
-![Abbildung 2](media/09-work-orders.png)
+![Abbildung 2.](media/09-work-orders.png)
 
 
 Auf der Listenseite **Arbeitsauftragsbestellung** und der Listenseite **Arbeitsauftragsbestellanforderung** der Listenseite wird ein Symbol angezeigt, das zu dem Lieferdatumsteuerelement rechts neben jeder Position gehört. Wenn das Symbol ein Ausrufezeichen in einem roten Kreis anzeigt, bedeutet dies, dass sich die Lieferung der zugehörigen Bestellanforderung oder Bestellung verzögern kann.
@@ -93,7 +93,7 @@ Um die Aktivitätsnummer einzugeben oder anzuzeigen, die zu einer Bestellpositio
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Bestellung** mit Fokus auf der **Aktivitätsnummer**.
 
-![Abbildung 3](media/10-work-orders.png)
+![Abbildung 3.](media/10-work-orders.png)
 
 Um die Aktivitätsnummer einzugeben oder anzuzeigen, die zu der Bestellposition eines Arbeitsauftrags gehört, wählen Sie auf der Listenseite **Arbeitsauftragsbestellanforderung** den Bestellanforderungsdatensatz und dann in der Spalte **Bestellanforderung** den Link für die Bestellanforderung aus. Sie können das Feld **Aktivitätsnummer** auf der Registerkarte **Projekt** im Inforegister **Positionsdetails** finden.
 

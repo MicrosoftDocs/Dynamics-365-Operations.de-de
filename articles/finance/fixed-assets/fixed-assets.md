@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 21481
+ms.custom:
+- "21481"
+- intro-internal
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0356837b96fd21f763c9a60926ba1bc982cf2024
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 62b4285f2f5ad93e0a888dd47d22ab5f2caa184c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897987"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355555"
 ---
 # <a name="fixed-assets-home-page"></a>Startseite für Anlagen
 
@@ -28,9 +30,9 @@ ms.locfileid: "5897987"
 
 Anlagen sind Wertgegenstände, die einer Einzelperson oder Organisation gehören. Darunter fallen Gebäude, Fahrzeuge, Grundstücke und Ausrüstung. 
 
-Zu Anlagen können Anschaffungsinformationen festgelegt und eingegeben werden. Anschließend können die Anlagen verwaltet werden, indem sie abgeschrieben werden und ein Aktivierungsschwellenwert zur Bestimmung der Abschreibung festgesetzt wird. Für die Anlagen können Regulierungen berechnet werden und sie können verschrottet werden. Wenn Sie das Hauptbuch gemeinsam mit Anlagen verwenden, können Sie den aktuellen Wert aller Anlagen anzeigen. Die Art und Weise, wie Anlagen verwaltet werden, muss sowohl internationalen Buchführungsstandards auch den Buchführungsgesetzen des jeweiligen Landes/der jeweiligen Region entsprechen. Anforderungen in Bezug auf Anschaffungs- und Abgangsbuchungen, Abschreibung, Nutzungsdauer sowie Höher- und Niedrigerbewertung von Anlagen sind Beispiele für solche Regeln. Viele dieser Standards und Regeln sind Bestandteil der Anlagenverwaltungsfunktionen.
+Zu Anlagen können Anschaffungsinformationen festgelegt und eingegeben werden. Anschließend können die Anlagen verwaltet werden, indem sie abgeschrieben werden und ein Aktivierungsschwellenwert zur Bestimmung der Abschreibung festgesetzt wird. Für die Anlagen können Regulierungen berechnet werden und sie können verschrottet werden. Wenn Sie das Hauptbuch gemeinsam mit Anlagen verwenden, können Sie den aktuellen Wert aller Anlagen anzeigen. Die Art und Weise, wie Anlagen verwaltet werden, muss sowohl internationalen Buchführungsstandards auch den Buchführungsgesetzen des jeweiligen Landes/der jeweiligen Region entsprechen. Anforderungen in Bezug auf Anschaffungs- und Abgangsbuchungen, Abschreibung, Nutzungsdauer sowie Höher- und Niedrigerbewertung von Anlagen sind Beispiele für solche Regeln. Viele dieser Standards und Regeln sind Bestandteil der Anlagenfunktionen.
 
-[![Geschäftsprozess](./media/FA-process.PNG)](./media/FA-process.PNG)
+[![Geschäftsprozess.](./media/FA-process.PNG)](./media/FA-process.PNG)
 
 
 

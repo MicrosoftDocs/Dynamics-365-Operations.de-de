@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: bdb90f8d629a026a84f8c65e7e95b589169a3e4d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a9e5204c2bb9c0a58b2e4e223a4a3d2d09d53659
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752335"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356262"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsschlüssel und Datenentitäten
 
@@ -52,24 +52,24 @@ In der folgenden Tabelle wird zusammengefasst, wie Konfigurationsschlüsselwerte
 ### <a name="entity-list-refresh"></a>Entitätslistenaktualisierung
 Wenn die Entitätsliste aktualisiert wird, werden vom Datenverwaltungsframework die Konfigurationsschlüsselmetadaten für die Laufzweitverwendung erstellt. Diese Metadaten werden mithilfe der oben beschriebenen Logik erstellt. Vor der Verwendung von Einzelvorgängen und Entitäten im Datenverwaltungsframework wird dringend empfohlen, dass Sie warten, bis die Entitätslistenaktualisierung abgeschlossen ist. Wenn Sie nicht warten, sind die Konfigurationsschlüsselmetadaten möglicherweise nicht auf dem neuesten Stand und könnten unerwartete Ergebnisse hervorrufen. Wenn die Entitätsliste aktualisiert wird, wird die folgende Nachricht in der Entitätslistenseite angezeigt.
 
-![Entitätslistenaktualisierung](./media/Entity_refresh_list.png)
+![Entitätslistenaktualisierung.](./media/Entity_refresh_list.png)
 
 ### <a name="data-entity-list-page"></a>Datenentitätslistenseite
 Die Datenentitätslistenseite im Datenverwaltungsarbeitsbereich zeigt die Konfigurationsschlüsseleinstellungen für die Entitäten an. Beginnen Sie von dieser Seite, um die Auswirkungen von Konfigurationsschlüsseln auf die Datenentität zu verstehen.
 
 Diese Informationen werden mithilfe der Metadaten angezeigt, die während der Entitätsaktualisierung erstellt werden. Die Konfigurationsschlüsselspalte zeigt den Namen des Konfigurationsschlüssels an, der der Datenentität zugeordnet ist. Wenn diese Spalte leer ist, bedeutet dies, dass es keinen Konfigurationsschlüssel gibt, der der Datenentität zugeordnet ist. Die Konfigurationsschlüssel-Statusspalte zeigt den Status des Konfigurationsschlüssels an. Wenn sie ein Häkchen hat, bedeutet dies, dass der Schlüssel aktiviert ist. Wenn sie leer ist, bedeutet dies, dass entweder der Schlüssel deaktiviert ist, oder dass kein Schlüssel zugeordnet ist.
 
-![Entitätslistenseite](./media/Data_entity_list_page.png)
+![Entitätslistenseite.](./media/Data_entity_list_page.png)
 
 ### <a name="target-fields"></a>Zielfelder
 Im nächsten Schritt wird ein Drillinto in die Datenentität ausgeführt, um die Auswirkung der Konfigurationsschlüssel auf Tabellen und Felder anzuzeigen. Das Zielfelderformular für eine Datenentität zeigt Konfigurationsschlüssel und Schlüsselstatusinformationen für die zugeordneten Tabellen und Felder in der Datenentität an. Wenn bei der Datenentität selbst ihr Konfigurationsschlüssel deaktiviert ist, wird eine Warnmeldung angezeigt, um zu informieren, dass die Tabellen und Felder im Zielfelderformular für diese Entität überhaupt nicht verfügbar sein werden, ungeachtet ihres Konfigurationsschlüsselstatus.
 
-![Zielfelder](./media/Target_fields_1.png)
+![Zielfelder.](./media/Target_fields_1.png)
 
 ### <a name="child-entities"></a>Untergeordnete Entitäten 
 Bestimmte Entitäten haben andere Entitäten als Datenquellen oder sind zusammengesetzte Datenentitäten: Konfigurationsschlüsselinformationen für diese Entitäten werden im Formular für untergeordnete Entitäten angezeigt. Verwenden Sie dieses Formular in ähnlicher Weise wie die oben beschriebene Entitätenlistenseite. Das Zielfelderformular für die untergeordnete Entität verhält sich auch wie das, was oben beschrieben wird.
 
-![Zielfelder](./media/Target_fields_2.png)
+![Zielfelder.](./media/Target_fields_2.png)
 
 ### <a name="using-data-entities"></a>Datenentitäten verwenden
 Nachdem Sie die gesamte Auswirkung – sofern es eine gibt – von Konfigurationsschlüsseln auf die Datenentitäten verstehen, die Sie verwenden möchten, können Sie jetzt damit fortfahren, die Datenentitäten zu verwenden, indem Sie diese zu Datenprojekten hinzufügen. 
@@ -91,7 +91,7 @@ Mithilfe der Konfigurationsschlüsselmetadaten, die während der Entitätsaktual
 ### <a name="managing-configuration-key-changes"></a>Konfigurationsschlüsseländerungen verwalten
 Immer wenn Sie Konfigurationsschlüssel auf der Entitäts-, Tabellen- oder Feldebene aktualisieren, muss die Entitätsliste im Datenverwaltungsframework aktualisiert werden. Durch diesen Prozess wird sichergestellt, dass der Framework die aktuellsten Konfigurationsschlüsseleinstellungen auswählt. Bis die Entitätsliste aktualisiert ist, wird die folgende Warnung in der Entitätslistenseite angezeigt. Die aktualisierten Konfigurationsschlüsseländerungen treten sofort in Kraft, nachdem die Entitätsliste aktualisiert ist. Es wird empfohlen, dass Sie die vorhandenen Datenprojekte und Einzelvorgänge überprüfen, um sicherzustellen, dass sie erwartungsgemäß funktionieren, nachdem die Konfigurationsschlüsseländerungen wirksam werden.
 
-![Zielfelder](./media/Target_fields_3.png)
+![Zielfelder.](./media/Target_fields_3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

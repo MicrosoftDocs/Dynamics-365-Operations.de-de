@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 0a494a36d1d8fa55521c416efd4262d860e1a708
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: fb010f5cb70668913b937b73ba05144f0b99549a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022835"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356829"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domänen in Dynamics 365 Commerce
 
@@ -38,7 +38,7 @@ Bei der Bereitstellung einer E-Commerce-Umgebung in [Microsoft Dynamics Lifecycl
 
 Die folgende Abbildung zeigt den LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**. 
 
-![LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![LCS-E-Commerce-Bereitstellungsbildschirm mit hervorgehobenem Feld **Unterstützte Hostnamen**.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Sie können eine Serviceanforderung erstellen, um einer Umgebung zusätzliche Domänen hinzuzufügen, wenn die Bereitstellung bereits erfolgt ist. Um in LCS eine Serviceanforderung zu erstellen, wechseln Sie in Ihrer Umgebung zu **Support \> Support-Probleme** und wählen Sie **Einen Vorfall einreichen**.
 
@@ -56,7 +56,7 @@ Wenn Sie zum ersten Mal eine Website im Site Builder einrichten, wird das **Ihre
 
 Die folgende Abbildung zeigt das **Ihre Website einrichten**-Dialogfeld für eine Website mit dem Namen „Standard“ an, wenn Sie zum ersten Mal im Site Builder auf die Website zugreifen.
 
-![**Ihre Website einrichten**-Dialogfeld](./media/Domains_SetupyoursiteScreen.png)
+![**Ihre Website einrichten**-Dialogfeld.](./media/Domains_SetupyoursiteScreen.png)
 
 Mit dem Feld **Eine Domäne auswählen** können Sie einen der unterstützten Hostnamen, die für Ihre Website in LCS bereitgestellt wurden, im Site Builder Ihrer Website zuordnen.
 
@@ -79,11 +79,11 @@ Nachdem Ihre Website mit einem Pfad eingerichtet wurde, bauen alle URLs, die Sei
 
 Die folgende Abbildung zeigt das Dialogfeld **Neue URL** im Site Builder mit einem hervorgehobenen Beispiel-URL-Pfad. 
 
-![Dialogfeld **Neue URL** im Site Builder](./media/Domains_PageSetup2a.png)
+![Dialogfeld **Neue URL** im Site Builder.](./media/Domains_PageSetup2a.png)
 
 Die folgende Abbildung zeigt die Seite **URLs** im Site Builder mit einer hervorgehobenen Beispiel-URL in der Liste.
 
-![Führen Sie die Benutzerflussoption im Richtlinienfluss aus](./media/Domains_URLsInSiteBuilder2a.png)
+![Führen Sie die Benutzerflussoption im Richtlinienfluss aus.](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>Domänen im Site Builder
 

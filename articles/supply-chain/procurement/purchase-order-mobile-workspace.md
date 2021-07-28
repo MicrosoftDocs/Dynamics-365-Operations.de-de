@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 26f0dc3b128daf8c7d8a05d6f3cacc5b7de0c756
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 964c54ba85f585bc90c5f7d78b2393195dd664bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909107"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353491"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobiler Arbeitsbereich für Bestellungsgenehmigung
 
@@ -83,7 +83,7 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 3. Bei der erstmaligen Anwendung werden Sie nach Ihrem Benutzernamen und dem Kennwort gefragt. Geben Sie Ihre Anmeldeinformationen ein.
 4. Nachdem Sie sich angemeldet haben, werden verfügbare Arbeitsbereiche für Ihr Unternehmen angezeigt. Beachten Sie, dass Sie, wenn Ihr Systemadministrator einen neuen Arbeitsbereich später veröffentlicht, die Liste der mobilen Arbeitsbereiche aktualisieren müssen.
 
-![Bestellungsgenehmigungsarbeitsbereich in der Liste verfügbarer Arbeitsbereiche](./media/po-workspaces.png)
+![Bestellungsgenehmigungsarbeitsbereich in der Liste verfügbarer Arbeitsbereiche.](./media/po-workspaces.png)
 
 ## <a name="view-orders-that-are-assigned-to-you"></a>Anzeigen der Ihnen zugewiesenen Aufträge
 1. Wählen Sie auf Ihrem mobilen Gerät den Arbeitsbereich **Bestellungsgenehmigung**.

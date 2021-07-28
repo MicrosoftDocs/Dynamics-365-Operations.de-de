@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f7f80928e1d3f5d4892f72d4bd2fd09b70a26c1f
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: ddee15c28455dc1736e37ff6132e1360e2d135ac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270706"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351939"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Erweiterter Formeleditor für elektronische Berichterstellung
 
@@ -45,7 +45,7 @@ Führen Sie die folgenden Schritte aus, um den erweiterten Formeleditor in Ihrer
 2.  Auf der Seite **Konfigurationen** im Aktivitätsbereich, auf der Registerkarte **Konfigurationen** in der Gruppe **Erweiterte Einstellungen** wählen Sie **Benutzerparameter** aus.
 3.  Setzen Sie im Dialogfeld **Benutzerparameter** im Abschnitt **Ausführungsnachverfolgung** den Parameter **Erweiterten Formeleditor aktivieren** auf **Ja**.
 
-[![Dialogfeld „Benutzerparameter“, Parameter „Erweiterten Formeleditor aktivieren“ hervorgehoben](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
+[![Dialogfeld „Benutzerparameter“, Parameter „Erweiterten Formeleditor aktivieren“ hervorgehoben.](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
 
 > [!NOTE]
 > Beachten Sie, dass dieser Parameter benutzerspezifisch und unternehmensspezifisch ist.
@@ -58,7 +58,7 @@ Ab Microsoft Dynamics 365 Finance-Version 10.0.19 können Sie steuern, welcher E
 4.  Auf der Seite **Konfigurationen** im Aktivitätsbereich, auf der Registerkarte **Konfigurationen** in der Gruppe **Erweiterte Einstellungen** wählen Sie **Benutzerparameter** aus.
 5.  Suchen Sie im Dialogfeld **Benutzerparameter** den Parameter **Erweiterten Formeleditor deaktivieren** und überprüfen Sie, dass er auf **Nein** festgelegt ist.
 
-[![Dialogfeld „Benutzerparameter“, Parameter „Erweiterten Formeleditor deaktivieren“ hervorgehoben](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
+[![Dialogfeld „Benutzerparameter“, Parameter „Erweiterten Formeleditor deaktivieren“ hervorgehoben.](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
 
 > [!NOTE]
 > Die Werte der Parameter **Erweiterten Formeleditor aktivieren** und **Erweiterten Formeleditor deaktivieren** werden für jeden Benutzer getrennt gehalten und im Dialogfeld **Benutzerparameter** in Abhängigkeit vom Status der Funktion **Erweiterten Formeleditor als Standard für alle Benutzer festlegen** angeboten.
@@ -67,7 +67,7 @@ Ab Microsoft Dynamics 365 Finance-Version 10.0.19 können Sie steuern, welcher E
 
 Wenn Sie einen komplexen Ausdruck schreiben, der aus mehreren Codezeilen besteht, erfolgt die Einrückung einer neuen eingegebenen Zeile automatisch anhand der Einrückung der vorherigen Zeile. Sie können Zeilen auswählen und deren Einrückung durch Eingabe von **TAB** oder **UMSCHALT + TAB** ändern.
 
-[![ER-Formel-Editor-Gif mit Zeilenauswahl und Änderung der Einrückung](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
+[![EB-Formel-Editor-Gif mit Zeilenauswahl und Änderung der Einrückung.](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
 
 Mit der automatischen Formatierung können Sie den gesamten Ausdruck gut formatieren, um die weitere Verwaltung sowie das Verständnis der konfigurierten Logik zu vereinfachen.
 
@@ -75,7 +75,7 @@ Mit der automatischen Formatierung können Sie den gesamten Ausdruck gut formati
 
 Der Editor bietet eine Wortvervollständigung, um das Schreiben von Ausdrücken zu beschleunigen und Tippfehler zu vermeiden. Wenn Sie mit dem Hinzufügen von neuem Text beginnen, bietet der Editor automatisch eine Liste von Funktionen an, die von ER-Funktionen unterstützt werden, die die von Ihnen eingegebenen Zeichen enthalten. Sie können IntelliSense auch an einer beliebigen Stelle eines konfigurierten Ausdrucks durch Eingabe von **STRG + LEERZEICHEN** auslösen.
 
-[![ER Formel-Editor gif zeigt das Auslösen von IntelliSense](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
+[![EB Formel-Editor-Gif zeigt das Auslösen von IntelliSense.](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
 
 ## <a name=""></a><a name="CodeCompletion">Code-Abschluss</a>
 
@@ -85,7 +85,7 @@ Der Editor unterstützt den Codeabschluss automatisch durch:
 - Einfügen des zweiten Anführungszeichens bei der Eingabe des ersten, wobei der Cursor innerhalb der Anführungszeichen bleibt.
 - Einfügen des zweiten doppelten Anführungszeichens bei der Eingabe des ersten, wobei der Cursor innerhalb der Anführungszeichen bleibt.
 
-[![ER Formel-Editor gif zeigt, dass der Editor automatisch Code-Vervollständigung anbietet](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
+[![EB-Formel-Editor-Gif zeigt, dass der Editor automatisch Code-Vervollständigung anbietet.](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
 
 Wenn Sie auf die eingegebene Klammer zeigen, wird die zweite Klammer dieses Paares automatisch markiert, um das von ihnen unterstützte Konstrukt anzuzeigen.
 
@@ -101,7 +101,7 @@ Beispiel: Gehen Sie wie folgt vor, um zur Zeile **8** zu springen:
 
 - Drücken Sie **F1**, geben Sie **G** ein, wählen Sie **Gehe zu Position** aus, geben Sie **8** ein und drücken Sie die **Eingabetaste**.
 
-[![ER Formeleditor gif zeigt, wie man Teile eines Ausdrucks mit Hilfe der Befehlspalette lokalisiert](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
+[![EB-Formel-Editor-Gif zeigt, wie man Teile eines Ausdrucks mit Hilfe der Befehlspalette lokalisiert.](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
 
 ## <a name=""></a><a name="CodeStructuring">Code-Strukturierung</a>
 
@@ -123,7 +123,7 @@ Gehen Sie folgendermaßen, um alle Regionen aufzufalten:
   
 - Drücken Sie **F1** geben Sie **UN** ein, wählen Sie **Alle auffalten** aus und drücken Sie die **Eingabetaste**
 
-[![ER formula editor gif zeigt, wie der Code aufgefaltet wird](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
+[![EB-Formel-Editor-Gif zeigt, wie der Code aufgefaltet wird.](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
 
 ## <a name=""></a><a name="FindAndReplace">Suchen und ersetzen</a>
 
@@ -151,13 +151,13 @@ Um alle Vorkommen eines bestimmten Texts zu ändern, wählen Sie den Text in Ihr
   
 - Drücken Sie **F1**, geben Sie **C** ein und wählen Sie anschließend die erforderliche Option aus, um den ausgewählten Text zu ändern. Geben Sie den alternativen Text ein.
 
-[![ER Formel-Editor gif zeigt das Suchen und Ersetzen](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
+[![EB.Formel-Editor-Gif zeigt das Suchen und Ersetzen.](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
 
 ## <a name=""></a><a name="DataPasting">Einfügen von Datenquellen und Funktionen</a>
 
 Sie können **Datenquelle hinzufügen** auswählen, sodass beim aktuellen Ausdruck eine Datenquelle eingefügt wird, die derzeit im linken **Datenquelle**-Bereich auswählt ist. Sie können auch **Funktion hinzufügen** auswählen, sodass beim aktuellen Ausdruck eine Funktion eingefügt wird, die derzeit im rechten **Funktionen**-Bereich auswählt ist. Wenn Sie den ER-Formeleditor verwenden, wird eine ausgewählte Funktion oder ausgewählte Datenquelle immer an das Ende des konfigurierten Ausdrucks angefügt. Wenn Sie den erweiterten ER-Formeleditor verwenden, kann eine ausgewählte Funktion oder ausgewählte Datenquelle an einen beliebigen Teil des konfigurierten Ausdrucks angefügt werden. Sie müssen den Cursor verwenden, um anzugeben, wo Sie die Daten einfügen möchten.
 
-[![ER Formeleditor gif zeigt das Hinzufügen einer Datenquelle und das Einfügen einer Funktion](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
+[![EB-Formel-Editor-Gif zeigt das Hinzufügen einer Datenquelle und das Einfügen einer Funktion.](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
 
 ## <a name=""></a><a name="SyntaxColorization">Syntaxfärbung</a>
 
@@ -165,7 +165,7 @@ Gegenwärtig werden verschiedene Farben verwendet, um die folgenden Teile von Au
 
 - Der Text in doppelten Klammern, der eine Beschriftungs-ID einer Textkonstante darstellen kann.
 
-[![ER-Formeleditor](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
+[![EB-Formel-Editor.](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
 
 ## <a name="limitations"></a>Einschränkungen
 

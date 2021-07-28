@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1417232baeaf03721bd0b25cc3f9fd5f750c65d5
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: b8a83982ad36abfe9032cae50fe4f09339985dc8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052263"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353661"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>ACA-Berichte in der Vorteilsverwaltung generieren
 
@@ -48,11 +48,11 @@ Mit Affordable Care-Dispositionssteuerungsgruppen können Sie diese Informatione
 
 1. Im **Vorteilsverwaltung**-Arbeitsbereich wählen Sie **Affordable Care-Dispositionssteuerungsgruppe**.
 
-    ![Affordable Care-Dispositionssteuerungsgruppe auswählen](./media/hr-benefits-management-aca-coverage-group.png)
+    ![Affordable Care-Dispositionssteuerungsgruppe auswählen.](./media/hr-benefits-management-aca-coverage-group.png)
 
 2. Wählen Sie **Neu** aus, um eine neue Affordable Care-Dispositionssteuerungsgruppe zu erstellen, oder **Bearbeiten**, um eine vorhandene Gruppe zu ändern.
 
-    ![„Neu“ oder „Bearbeiten“ auswählen](./media/hr-benefits-management-aca-new.png)
+    ![„Neu“ oder „Bearbeiten“ auswählen.](./media/hr-benefits-management-aca-new.png)
 
 3. Stellen Sie die folgenden Felder ein.
 
@@ -67,7 +67,7 @@ Mit Affordable Care-Dispositionssteuerungsgruppen können Sie diese Informatione
     | Gruppe gültig ab | Das erste Datum, an dem dieser Datensatz gültig ist. |
     | Gruppe gültig bis | Das letzte Datum, an dem dieser Datensatz gültig ist. Wenn es kein Ablaufdatum gibt, geben Sie ein **Niemals** ein. |
 
-    ![Erstellen einer Dispositionssteuerungsgruppe](./media/hr-benefits-management-aca-new-group.png)
+    ![Erstellen einer Dispositionssteuerungsgruppe.](./media/hr-benefits-management-aca-new-group.png)
 
 4. Wählen Sie **Speichern** aus.
 
@@ -77,11 +77,11 @@ Mit Affordable Care-Dispositionssteuerungsgruppen können Sie diese Informatione
 2. Wählen Sie die Gruppe aus, der Mitarbeiter zugewiesen werden sollen.
 3. Wählen Sie **Massen-Zuweisung** aus.
 
-    ![Auswählen Sie Massen-Zuweisung](./media/hr-benefits-management-aca-mass-assignment.png)
+    ![Massen-Zuweisung auswählen.](./media/hr-benefits-management-aca-mass-assignment.png)
 
 4. Wählen Sie Mitarbeiter in der Liste aus und wählen Sie dann **Zuordnen**.
 
-    ![Zuweisen der ausgewählten Mitarbeiter zu einer Gruppe](./media/hr-benefits-management-aca-assign-coverage-group.png)
+    ![Zuweisen der ausgewählten Mitarbeiter zu einer Gruppe.](./media/hr-benefits-management-aca-assign-coverage-group.png)
 
 ## <a name="maintain-multiple-versions-of-coverage-options"></a>Mehrere Versionen von Dispositionsoptionen beibehalten
 
@@ -111,12 +111,12 @@ Führen Sie die folgenden Schritte aus, um Ausnahmen für Werte einer Affordable
 2. Wählen Sie den Mitarbeiter in der Liste aus.
 3. Auf der **Beschäftigung**-Registerkarte im **Mehr Informationen**-Abschnitt wählen Sie **Affordable Care-Dispositionssteuerungsgruppe**.
 
-    ![Optionen für einen Mitarbeiter ändern](./media/hr-benefits-management-aca-change-single-employee.png)
+    ![Optionen für einen Mitarbeiter ändern.](./media/hr-benefits-management-aca-change-single-employee.png)
 
 4. Wählen Sie **Bearbeiten** aus.
 5. Aktivieren Sie für jeden Monat, für den Änderungen erforderlich sind, das Kontrollkästchen **Standard überschreiben** und ändern Sie die anderen Werte nach Bedarf.
 
-    ![Standardwerte überschreiben](./media/hr-benefits-management-aca-override-default.png)
+    ![Standardwerte überschreiben.](./media/hr-benefits-management-aca-override-default.png)
 
 6. Wählen Sie **Speichern** aus.
 
@@ -131,7 +131,7 @@ Befolgen Sie diese Schritte, um anzugeben, ob ein Vorteilsplan gemeldet werden m
 3. Wählen Sie **Bearbeiten** aus.
 4. Legen Sie die Option **Gemäß Affordable Care Act gemeldet** auf **Ja** fest.
 
-    ![Melden von Gesundheitsvorsorgeabdeckung](./media/hr-benefits-management-aca-report-coverage.png)
+    ![Melden von Gesundheitsvorsorgeabdeckung.](./media/hr-benefits-management-aca-report-coverage.png)
 
 5. Wählen Sie **Speichern** aus.
 
@@ -147,23 +147,23 @@ Sie können ACA-Formulare 1095-B und 1095-C generieren und dann an jeden der Mit
     > [!NOTE]
     > Wenn Sie 1095-C Formulare für mehr als 500 Mitarbeiter drucken, erhalten Sie mehr als eine PDF-Datei. Wir empfehlen Ihnen, den Wert des Felds **Maximale Dateigröße in Megabyte** auf der Seite **Parameter für die Dokumentenverwaltung** auf **150** zu erhöhen. (Um diese Seite schnell zu öffnen, können Sie das Suchfeld in der Navigationsleiste verwenden.)
     >
-    > ![Ändern der maximalen Dateigröße](./media/hr-benefits-management-aca-maximum-file-size.png)
+    > ![Ändern der maximalen Dateigröße.](./media/hr-benefits-management-aca-maximum-file-size.png)
 
 3. Verwenden Sie das Suchfeld in der Navigationsleiste, um den Status Ihrer Berichte zu überprüfen und anzuzeigen und die Seite **Elektronische Berichterstattung** zu öffnen.
 
-    ![Suchen nach der Seite „Elektronische Berichterstattung“](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
+    ![Suchen nach der Seite „Elektronische Berichterstattung“.](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
 
 4. Wählen Sie den anzuzeigenden Bericht aus und wählen Sie dann **Dateien anzeigen**.
 
-    ![Anzeigen von Dateien](./media/hr-benefits-management-aca-show-files.png)
+    ![Anzeigen von Dateien.](./media/hr-benefits-management-aca-show-files.png)
 
 5. Wählen Sie **Öffnen**.
 
-    ![Öffnen einer Datei](./media/hr-benefits-management-aca-open-file.png)
+    ![Öffnen einer Datei.](./media/hr-benefits-management-aca-open-file.png)
 
 6. Öffnen Sie in der Benachrichtigungsleiste am unteren Rand des Browserfensters die Zip-Datei und wählen Sie den Bericht aus. Sie können die PDF-Datei anzeigen oder drucken.
 
-    ![1095-C-Beispielformular](./media/hr-benefits-management-aca-1095-c-form.png)
+    ![1095-C-Beispielformular.](./media/hr-benefits-management-aca-1095-c-form.png)
 
 ## <a name="view-aca-coverage-information"></a>Informationen zur ACA-Disposition anzeigen
 
@@ -178,7 +178,7 @@ Führen Sie die folgenden Schritte aus, um diese Informationen anzuzeigen.
 1. Im **Vorteilsverwaltung**-Arbeitsbereich wählen Sie **Disposition für Affordable Care Act für Arbeitskraft**.
 2. Wählen Sie im Feld **Gruppenname** eine Gruppe aus.
 
-    ![Anzeigen der ACA-Disposition](./media/hr-benefits-management-aca-view-coverage.png)
+    ![Anzeigen der ACA-Disposition.](./media/hr-benefits-management-aca-view-coverage.png)
 
 Wenn beliebige Standardwerte der Affordable Care-Dispositionssteuerungsgruppe überschrieben wurden, wird ein Sternchen neben dem geänderten Wert angezeigt. Wenn die Werte für alle 12 Monate identisch sind und nicht überschrieben wurden, wird der Wert in der Spalte **Alle 12 Monate** angezeigt.
 
@@ -198,11 +198,11 @@ Befolgen Sie diesen Schritten, um eine der Listen nach Microsoft Excel zu export
 
 Wenn Sie versicherte Personen melden müssen, weil Sie selbstversicherten Versicherungsschutz bieten, können Sie Unterhaltsberechtigte anzeigen, die im Rahmen von Vorteilsplänen versichert sind, die als **ACA-meldepflichtig** gekennzeichnet sind. Wählen Sie im Aktionsbereich **Disposition für Unterhaltsberechtigte anzeigen** aus.
 
-![Anzeigen der Disposition für Unterhaltsberechtigte](./media/hr-benefits-management-aca-view-dependent-coverage.png)
+![Anzeigen der Disposition für Unterhaltsberechtigte.](./media/hr-benefits-management-aca-view-dependent-coverage.png)
 
 Dispositionsinformationen für Unterhaltsberechtigte des Mitarbeiters werden angezeigt.
 
-![Abdeckung für Unterhaltsberechtigte](./media/hr-benefits-management-aca-dependents.png)
+![Deckung für Unterhaltsberechtigte.](./media/hr-benefits-management-aca-dependents.png)
 
 > [!NOTE]
 > Auf der Seite werden nur Vorteilspläne angezeigt, die als **ACA-meldepflichtig** gekennzeichnet sind.

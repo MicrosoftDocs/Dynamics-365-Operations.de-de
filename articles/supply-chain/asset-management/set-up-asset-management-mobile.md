@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bc170df2fc58ae6b42fbc8834caad0bb7cd16f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9c8f202a813520129867b57e660e8d995c20ed87
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837776"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351512"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Mobilen Arbeitsbereich für die Anlagenverwaltung einrichten
 
@@ -47,7 +47,7 @@ Um Funktionen für das Anlagenmanagement in der mobilen Finance and Operations-A
 1. Wählen Sie in Supply Chain Management die Schaltfläche **Einstellungen** aus (das Zahnradsymbol oben rechts) und wählen Sie dann im Menü **Mobile App** aus.
 1. Suchen Sie im Dialogfeld **Mobile App verwalten** die Kachel **Anlagenverwaltung**. Wenn sie den Text „In Metadaten – nicht veröffentlicht“ enthält, wurde der Arbeitsbereich noch nicht veröffentlicht. Wenn sie den Text „In Metadaten – veröffentlicht“ enthält, wurde der Arbeitsbereich bereits veröffentlicht und Sie können den Rest dieser Prozedur überspringen.
 
-    ![Das Dialogfeld „Mobile App verwalten“](media/mobile-workspaces.png "Das Dialogfeld „Mobile App verwalten“")
+    ![Das Dialogfeld „Mobile App verwalten“.](media/mobile-workspaces.png "Das Dialogfeld „Mobile App verwalten“")
 
 1. Wähle Sie die Kachel **Anlagenverwaltung** aus und wählen Sie dann auf der Symbolleiste **Veröffentlichen** aus. Nach einigen Sekunden sollten Sie eine Benachrichtigung erhalten, dass der Arbeitsbereich erfolgreich veröffentlicht wurde. Außerdem sollte sich der Text auf der Kachel in „In Metadaten – veröffentlicht“ ändern.
 
@@ -60,22 +60,22 @@ Um Funktionen für das Anlagenmanagement in der mobilen Finance and Operations-A
 
 1. Öffnen Sie die Finance and Operations-App (Dynamics 365). Die Anmeldeseite sollte angezeigt werden. Geben Sie im Feld **Anmelden** Ihre Supply Chain Management-URL ein oder wählen Sie in der Liste **Letzte Umgebungen** eine aktuelle URL aus und tippen Sie dann auf **Verbinden**.
 
-    ![Anmeldeseite](media/mobile-app-sign-in.png "Anmeldeseite")
+    ![Anmeldeseite.](media/mobile-app-sign-in.png "Anmeldeseite")
 
 1. Wenn Sie aufgefordert werden, die Verbindung zu bestätigen, aktivieren Sie das Kontrollkästchen **Verstanden** und tippen Sie anschließend auf **Verbinden**.
 1. Verwenden Sie auf der Seite **Konto auswählen** Ihr Microsoft-Konto aus, um sich bei der mobilen Anwendung anzumelden.
 
     Die Seite **Arbeitsbereiche** wird angezeigt. Sie listet jeden mobilen Arbeitsbereich auf, der von Ihrer Supply Chain Management-Instanz veröffentlicht wurde.
 
-    ![Liste der Arbeitsbereiche](media/mobile-app-workspaces.png "Liste der Arbeitsbereiche")
+    ![Liste der Arbeitsbereiche.](media/mobile-app-workspaces.png "Liste der Arbeitsbereiche")
 
 1. Wenn Sie die juristische Person (Firma) ändern müssen, tippen Sie oben links auf die Menütaste (manchmal auch als Hamburger oder Hamburgertaste bezeichnet) und anschließend auf **Firma ändern**.
 
-    ![Ändern der juristischen Person](media/mobile-app-change-comp.png "Ändern der juristischen Person")
+    ![Ändern der juristischen Person.](media/mobile-app-change-comp.png "Ändern der juristischen Person")
 
 1. Wählen Sie auf der Seite **Arbeitsbereiche** den Arbeitsbereich aus, mit dem Sie arbeiten möchten, um ihn zu öffnen.
 
-    ![Mobiler Arbeitsbereich für Anlagenverwaltung](media/mobile-app-asset-workspace.png "Mobiler Arbeitsbereich für Anlagenverwaltung")
+    ![Mobiler Arbeitsbereich für Anlagenverwaltung.](media/mobile-app-asset-workspace.png "Mobiler Arbeitsbereich für Anlagenverwaltung")
 
 ## <a name="work-with-the-asset-management-mobile-workspace"></a>Arbeiten mit dem mobilen Arbeitsbereich für die Anlagenverwaltung
 

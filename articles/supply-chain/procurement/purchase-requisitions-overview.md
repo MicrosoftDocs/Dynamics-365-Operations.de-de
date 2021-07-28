@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2174
+ms.custom:
+- "2174"
+- intro-internal
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e067c9df91894c5d2ce05a6afb92d1fadc954531
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: d8bde73d424e72ad66c27decd11a3b866d02b48c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188196"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349793"
 ---
 # <a name="purchase-requisition-overview"></a>Übersicht über Bestellanforderung
 
@@ -47,7 +49,7 @@ Der Workflowprozess für Bestellanforderungen kann so konfiguriert werden, dass 
 
 Das folgende Diagramm zeigt die Statuswerte an, die einer Bestellanforderung und einer Bestellanforderungsposition zugewiesen werden, wenn diese den Workflowprozess durchlaufen.  
 
-[![Statuswerte von Bestellanforderungskopf und -position](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Statuswerte von Bestellanforderungskopfzeile und -position.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Statusbeziehungen von Bestellanforderungskopf und -position
 
@@ -179,7 +181,7 @@ Um eine Bestellung für Bestellanforderungspositionen zu erstellen, die nicht f�
 
 Der Prozess für die Bedarfskonsolidierung beginnt, wenn eine Bestellanforderung in einem Workflow genehmigt wird und wenn die Budgetsteuerung für Ihre Organisation konfiguriert wird, wenn die Budgetreservierungen und Vorabbelastungen erfasst worden sind. Das folgende Diagramm zeigt den Prozessfluss für die Bedarfskonsolidierung an.  
 
-[![Ablaufdiagramm zur Bedarfskonsolidierung](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Ablaufdiagramm zur Bedarfskonsolidierung.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Um genehmigte Bestellanforderungspositionen zu konsolidieren, führen Sie folgende Schritte aus:
 

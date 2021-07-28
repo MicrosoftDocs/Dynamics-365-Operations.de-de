@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: dabourq
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8f6affd05e658f39d567f7512c71d944636588ff
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ad4ba2781c1b1086f2b554ec1db0f0f970d2d671
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907938"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351440"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
 
@@ -120,12 +120,12 @@ Herunterladen und Installieren der Finance and Operations mobilen App:
 4.  Bei der erstmaligen Anwendung werden Sie nach Ihrem Benutzernamen und dem Kennwort gefragt. Geben Sie Ihre Anmeldeinformationen ein.
 5.  Nachdem Sie sich angemeldet haben, werden verfügbare Arbeitsbereiche für Ihr Unternehmen angezeigt. Beachten Sie, dass Sie, wenn Ihr Systemadministrator einen neuen Arbeitsbereich später veröffentlicht, die Liste der mobilen Arbeitsbereiche aktualisieren müssen.
 
-    [![Zum Aktualisieren ziehen](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Zum Aktualisieren nach unten ziehen.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Mobiler Arbeitsbereich für Kreditorenzusammenarbeit nutzen
 Wenn Sie **Kreditorenzusammenarbeit** auswählen, finden Sie folgende Optionen.
 
-![Mobiler Arbeitsbereich für Kreditorenzusammenarbeit](./media/vendor-collaboration-mobile-app.png)
+![Mobiler Arbeitsbereich für Kreditorenzusammenarbeit.](./media/vendor-collaboration-mobile-app.png)
 
 Der Arbeitsbereich **Kreditorenzusammenarbeit** enthält die folgenden Seiten.
 

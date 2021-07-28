@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-ms.openlocfilehash: dd07c9c95639c8e69e1013fd7da283cf51b60ed0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4d4f2ee97db52c055136912b237412b1148c26bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804526"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352347"
 ---
 # <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Zahlungsmethoden für Retouren ohne Beleg beschränken
 
@@ -38,7 +38,7 @@ Zum Einrichten von Zahlungsmethoden müssen die folgenden Aufgaben abgeschlossen
 3. Einrichten von Shopzahlungsmethoden. Ordnen Sie die Zahlungsmethoden den einzelnen Shops zu, und geben Sie dann für jede Zahlungsmethode shopspezifische Einstellungen ein.
 4. Einrichten von Kartenzahlungsmethoden für Shops Schließen Sie für alle Zahlungsmittel vom Typ "Karte", die im Shop akzeptiert werden, die Karteneinrichtung ab.
 
-![Geschäft einrichten](media/NoReceiptReturns1.png "Retail-Setup bei Shop") 
+![Shop einrichten.](media/NoReceiptReturns1.png "Retail-Setup bei Shop") 
 
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Zahlungsmethoden für Retouren ohne Beleg beschränken
@@ -49,12 +49,12 @@ Der Standardwert des Umschalters ist **Nein**, wodurch sichergestellt wird, dass
 
 Wenn **Beschränkung für Rückerstattungen ohne Beleg** auf **Ja** gesetzt ist, wird die gewählte Zahlungsmethode für Rückerstattungen nicht zugelassen. 
 
-![Zahlungsmethoden im Shop](media/NoReceiptReturns3.png "Retail-Zahlungsmethode in Shop") 
+![Zahlungsmethoden im Shop.](media/NoReceiptReturns3.png "Retail-Zahlungsmethode in Shop") 
 
 > [!NOTE]
 > Wenn ein Kassierer eine Zahlungsmethode auswählt, die ohne Beleg für die Rückerstattung eingeschränkt ist, wird eine Meldung angezeigt, um die zulässigen Zahlungsmethoden zu überprüfen.
 
-![Zulässige Zahlungsmethoden](media/NoReceiptReturns4.png "Zulässige Zahlungsmethoden") 
+![Zulässige Zahlungsmethoden.](media/NoReceiptReturns4.png "Zulässige Zahlungsmethoden") 
 
 Wenn eine Transaktion sowohl eine quittierte Rücksendung als auch eine Rücksendung ohne Beleg hat, werden die Einschränkungsbedingungen nicht durchgesetzt, da es sich bei der Transaktion um einen Rückgabe-Workflow mit Beleg handelt. 
 

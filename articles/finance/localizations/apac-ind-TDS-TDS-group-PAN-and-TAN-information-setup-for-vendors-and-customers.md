@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fd33b1775afefed798f1e9bb7601f4112222c430
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f4add6d32c34993338b0e587723df12d0a33ce43
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023269"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358265"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>Angaben zur TDS-Gruppe, PAN und TAN für Debitoren und Kreditoren einrichten
 
@@ -31,7 +31,7 @@ In diesem Thema wird Erklärt, wie Sie Angaben zur Gruppe im Rahmen der Quellenb
 
 1. Gehen Sie zu **Kreditorenkonten \> Kreditoren \> Alle Kreditoren** oder **Debitorenkonten \> Debitoren \> Alle Debitoren**.
 
-    [![Seite „Alle Kreditoren“](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
+    [![Seite „Alle Kreditoren“.](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
 
 2. Wählen Sie im Aktionsbereich die Option **Neu** aus, um einen Kreditor oder Debitor zu erstellen und die erforderlichen Details einzugeben. Alternativ können Sie einen vorhandenen Kreditor oder Debitor auswählen.
 3. Setzen Sie im Inforegister **Rechnung und Lieferung** im Abschnitt **Quellensteuer** die Option **Quellensteuer berechnen** auf **Ja**, um für den Kreditor oder Debitor Quellensteuern, TDS oder TCS zu berechnen.
@@ -60,7 +60,7 @@ In diesem Thema wird Erklärt, wie Sie Angaben zur Gruppe im Rahmen der Quellenb
     - Gemeinde
     - Andere
 
-    [![Inforegister „Steuerliche Angaben“](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
+    [![Inforegister „Steuerliche Angaben“.](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
 
 9. Wählen Sie dann im Aktivitätsbereich auf der Registerkarte **Kreditor** in der Gruppe **Registrierung** **Registrierungskennungen** aus, um die Seite **Adressen verwalten** zu öffnen.
 10. Wählen Sie auf der Seite **Adressen verwalten** im Inforegister **Steuerliche Angaben** **Hinzufügen** oder **Bearbeiten** aus, um die Seite **Steuerliche Angaben verwalten** zu öffnen, auf der Sie den Steuerregistrierungseintrag pflegen können.

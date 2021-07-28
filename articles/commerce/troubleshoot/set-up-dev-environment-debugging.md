@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 38a616c418c3b32490c9adaf69a69af0d47d3478
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 892f8001c52cd40d748c81f27c2f83618b84e5c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019445"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350401"
 ---
 # <a name="set-up-an-e-commerce-development-environment-to-debug-against-a-tier-1-retail-server-virtual-machine"></a>Eine E-Commerce-Entwicklungsumgebung für das Debuggen auf einer virtuellen Ebene 1 einer Retail Server-Maschine einrichten
 
@@ -38,11 +38,11 @@ Wenn Sie in einer Ebene 1-Umgebung debuggen, da die Website jetzt einen anderen
 
 Die folgende Abbildung zeigt ein Beispiel für einen Fehler, der auftreten kann, wenn eine Variante auf einer Produktdetailseite ausgewählt wird.
 
-![Fehler beim Auswählen einer Variante auf einer Produktdetailseite](media/unhandled-rejection-error.jpg)
+![Fehler beim Auswählen einer Variante auf einer Produktdetailseite.](media/unhandled-rejection-error.jpg)
 
 Die folgende Abbildung zeigt ein Beispiel für einen ähnlichen Fehler in den Debugger-Tools eines Browsers (F12-Entwicklertools). In der Fehlermeldung wird ein Verstoß gegen die Inhaltssicherheitsrichtlinie erwähnt.
 
-![Debugger-Tool-Fehler](media/debugger-tools-error.JPG)
+![Debugger-Tool-Fehler.](media/debugger-tools-error.JPG)
 
 ## <a name="resolution"></a>Lösung
 

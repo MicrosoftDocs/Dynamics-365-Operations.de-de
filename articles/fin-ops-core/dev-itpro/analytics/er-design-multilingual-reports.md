@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50156b8c6b3553b02d092fad9c72e90c1f70ff78
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: 48e54c0f7d4bd1b4e1661a5bd1d4c11fd9cec986
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5951984"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351120"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Entwerfen Sie mehrsprachige Berichte in der elektronischen Berichterstellung
 
@@ -54,11 +54,11 @@ Wenn Sie ein ER-Datenmodell, eine ER-Modellzuordnung oder ein ER-Format entwerfe
 
 Die folgende Abbildung zeigt, wie diese Übersetzung in einem bearbeitbaren ER-Datenmodell durchgeführt wird. In diesem Beispiel ist die **Beschreibung** Attribut des Felds **Bestellung** für das bearbeitbare **Rechnungsmodell** in die Sprachen Deutsch für Österreich (DE-AT) und Japanisch (JA) übersetzt.
 
-![Bereitstellung der Übersetzung eines ER-Etiketts im ER-Datenmodelldesigner](./media/er-multilingual-labels-refer.png)
+![Bereitstellung der Übersetzung eines EB-Etiketts im EB-Datenmodelldesigner.](./media/er-multilingual-labels-refer.png)
 
 Es kann nur Beschriftungstext für Beschriftungen übersetzt werden, die sich in einer bearbeitbaren ER-Komponente befinden. Zum Beispiel, wenn Sie **Übersetzen** auswählen für das Beschriftungs-Attribut einer ER-Modellzuordnungsdatenquelle und dann eine ER-Beschriftung auswählen, das sich im übergeordneten ER-Datenmodell befindet, wird der Inhalt der Beschriftung angezeigt, Sie können diese aber nicht ändern. In diesen Fällen ist das Feld **Übersetzter Text** nicht verfügbar, wie in der folgenden Abbildung gezeigt.
 
-![Überprüfung der bereitgestellten Übersetzung eines ER-Modellzuordnungsdesigners](./media/er-multilingual-labels-refer-mapping.png)
+![Überprüfung der bereitgestellten Übersetzung eines EB-Modellzuordnungsdesigners.](./media/er-multilingual-labels-refer-mapping.png)
 
 > [!NOTE]
 > Sie können die Designer nicht zum Löschen von Beschriftungen verwenden, die in eine bearbeitbare ER-Komponente eingegeben wurden.
@@ -71,19 +71,19 @@ ER-Beschriftungen können in mehreren übersetzbaren Attributen von ER-Komponent
 
 Wenn Sie ein ER-Datenmodell konfigurieren, können Sie ER-Beschriftungen hinzufügen. Die Attribute **Beschriftung** und **Beschreibung** des Modellelements, jedes Modellfeld und jeder <a id="LinkModelEnum"></a>Modellaufzählungswert kann mit einer ER-Beschriftung verknüpft werden, das dem ER-Datenmodell hinzugefügt wird.
 
-![Bereitstellung der Übersetzung für die Attributbeschreibung im ER-Datenmodelldesigner](./media/er-multilingual-labels-refer.png)
+![Bereitstellung der Übersetzung für die Attributbeschreibung im EB-Datenmodelldesigner.](./media/er-multilingual-labels-refer.png)
 
 Wenn ein ER-Datenmodell auf diese Weise konfiguriert wird, wird sein Inhalt den Benutzern des ER-Datenmodelldesigners in der von jedem Benutzer bevorzugten Sprache angezeigt. Daher wird die Modellwartung vereinfacht. Die folgenden Abbildungen zeigen, wie diese Funktionalität für Benutzer funktioniert, für die DE-AT und JA als bevorzugte Sprache festgelegt sind.
 
-![Layout des EB-Datenmodelldesigners für einen Benutzer, für den DE-AT als bevorzugte Sprache festgelegt wurde](./media/er-multilingual-labels-refer-de.png)
+![Layout des EB-Datenmodelldesigners für einen Benutzer, für den DE-AT als bevorzugte Sprache festgelegt wurde.](./media/er-multilingual-labels-refer-de.png)
 
-![Layout des EB-Datenmodelldesigners für einen Benutzer, für den JA als bevorzugte Sprache festgelegt wurde](./media/er-multilingual-labels-refer-ja.png)
+![Layout des EB-Datenmodelldesigners für einen Benutzer, für den JA als bevorzugte Sprache festgelegt wurde.](./media/er-multilingual-labels-refer-ja.png)
 
 ### <a name="model-mapping-component"></a>Modellzuordnungskomponente
 
 Da die ER-Modellzuordnung auf einem ER-Datenmodell basiert, werden die Beschriftungen der Datenmodellelemente, auf die verwiesen wird, in der vom Benutzer bevorzugten Sprache im Modellzuordnungsdesigner angezeigt. Die folgende Abbildung zeigt, wie die Bedeutung des Felds **Bestellung** in der bearbeitbaren Modellzuordnung anhand der Bezeichnung des Attributs **Beschreibung** erläutert wird, das dem konfigurierten Datenmodell hinzugefügt wurde. Beachten Sie, dass diese Beschriftung in der vom Benutzer bevorzugten Sprache angezeigt wird (in diesem Beispiel DE-AT).
 
-![Layout des EB-Modellzuordnungsdesigners für einen Benutzer, für den DE-AT als bevorzugte Sprache festgelegt wurde](./media/er-multilingual-labels-show-mapping.png)
+![Layout des EB-Modellzuordnungsdesigners für einen Benutzer, für den DE-AT als bevorzugte Sprache festgelegt wurde.](./media/er-multilingual-labels-show-mapping.png)
 
 Wenn das Attribut **Beschriftung** der **Benutzereingabeparameter** Datenquelle so konfiguriert ist, dass sie mit einer ER-Beschriftung verknüpft ist, wird das Parameterfeld für diese Datenquelle den Benutzern zur Laufzeit im Benutzerdialogfeld in ihrer bevorzugten Sprache angezeigt.
 
@@ -100,21 +100,21 @@ Da ein ER-Format auf einem ER-Datenmodell basiert, werden die Beschriftungen der
 
 Wenn das Attribut **Beschriftung** der **Benutzereingabeparameter** Datenquelle so konfiguriert ist, dass sie mit einer ER-Beschriftung verknüpft ist, wird das Parameterfeld für diese Datenquelle den Benutzern zur Laufzeit im Benutzerdialogfeld in ihrer bevorzugten Sprache angezeigt. Die folgenden Abbildungen zeigen, wie Sie das Attribut **Beschriftung** der **Benutzereingabeparameter** Datenquelle zur Entwurfszeit für eine ER-Beschriftung verknüpfen, sodass Benutzer zur Laufzeit zur Eingabe des Parameters in verschiedenen vom Benutzer bevorzugten Sprachen (angezeigt für Englisch in den USA (EN-US) und DE-AT) aufgefordert werden.
 
-![Bereitstellung der Übersetzung von Attributen eines Benutzereingabeparameters im ER Operation Designer](./media/er-multilingual-labels-refer-format.png)
+![Bereitstellung der Übersetzung von Attributen eines Benutzereingabeparameters im EB Operation Designer.](./media/er-multilingual-labels-refer-format.png)
 
-![Zahlungsabwicklung des ER-Anbieters zur Laufzeit für die vom Benutzer bevorzugte Sprache EN-US](./media/er-multilingual-labels-show-runtime-en.png)
+![Zahlungsabwicklung des EB-Anbieters zur Laufzeit für die vom Benutzer bevorzugte Sprache EN-US.](./media/er-multilingual-labels-show-runtime-en.png)
 
-![Zahlungsabwicklung des ER-Anbieters zur Laufzeit für die vom Benutzer bevorzugte Sprache DE-AT](./media/er-multilingual-labels-show-runtime-de.png)
+![Zahlungsabwicklung des EB-Anbieters zur Laufzeit für die vom Benutzer bevorzugte Sprache DE-AT.](./media/er-multilingual-labels-show-runtime-de.png)
 
 ### <a name="expressions"></a>Ausdrücke
 
 Um eine Beschriftung in einem ER [Ausdruck](er-formula-language.md) zu verwenden, müssen Sie die Syntax verwenden **@„\_LABEL: X“**, wobei das Präfix **@** angibt an, dass der Operand auf eine Bezeichnung verweist, **GER\_ETIKETTE** zeigt an, dass ein ER-Etikett beteiligt ist, und **X** ist die ER-Label-ID.
 
-![Konfigurieren eines EB-Ausdrucks, der einen Verweis auf eine EB-Beschritung im EB-Formel-Designer enthält](./media/er-multilingual-labels-expression1.png)
+![Konfigurieren eines EB-Ausdrucks, der einen Verweis auf eine EB-Beschriftung im EB-Formel-Designer enthält.](./media/er-multilingual-labels-expression1.png)
 
 Verwenden Sie die Syntax, um auf eine Systembezeichnung (Anwendung) zu verweisen **@„“**, wo das Präfix **@** angibt, dass der Operand auf eine Bezeichnung verweist, und **X** die Systembezeichnungs-ID ist.
 
-![Konfigurieren eines EB-Ausdrucks, der einen Verweis auf eine Anwendungsbeschriftung im EB-Formular-Designer enthält](./media/er-multilingual-labels-expression2.png)
+![Konfigurieren eines EB-Ausdrucks, der einen Verweis auf eine Anwendungsbeschriftung im EB-Formular-Designer enthält.](./media/er-multilingual-labels-expression2.png)
 
 #### <a name="model-mapping"></a>Modellzuordnung
 
@@ -126,19 +126,19 @@ Wenn eine Beschriftung, auf die verwiesen wird, keine Übersetzung für die Spra
 
 Ein Ausdruck eines EB-Formats kann mithilfe einer Beschriftung konfiguriert werden. Wenn diese Zuordnung von einem EB-Format aufgerufen wird, das zum Generieren eines ausgehenden Dokuments ausgeführt wird, enthält der Kontext der Ausführung einen Sprachcode. Eine konfigurierte Ausdrucksbezeichnung wird mit dem Beschriftungstext ausgefüllt, der für die Sprache dieses Kontexts konfiguriert wurde.
 
-![Bereitstellung der Übersetzung einer EB-Beschriftungs des bearbeitbaren EB-Ausdrucks im EB-Formel-Designer](./media/er-multilingual-labels-refer-in-expression.png)
+![Bereitstellung der Übersetzung einer EB-Beschriftungs des bearbeitbaren EB-Ausdrucks im EB-Formel-Designer.](./media/er-multilingual-labels-refer-in-expression.png)
 
-![Beispiel für eine Datenbindung, die sich auf eine EB-Beschriftung im EB Operation Designer bezieht](./media/er-multilingual-labels-refer-in-binding.png)
+![Beispiel für eine Datenbindung, die sich auf eine EB-Beschriftung im EB Operation Designer bezieht.](./media/er-multilingual-labels-refer-in-binding.png)
 
 Sie können die **DATEI** Komponente eines EF-Formats zum Generieren des Berichts in der vom Benutzer bevorzugten Sprache konfigurieren.
 
-![Richten Sie die DATEI-Komponente im EB Vorgangs-Designer ein, um den Bericht in der vom Benutzer bevorzugten Sprache zu generieren](./media/er-multilingual-labels-language-context-user.png)
+![Richten Sie die DATEI-Komponente im EB Vorgangs-Designer ein, um den Bericht in der vom Benutzer bevorzugten Sprache zu generieren.](./media/er-multilingual-labels-language-context-user.png)
 
 Wenn Sie ein EB-Format auf diese Weise konfigurieren, wird der Bericht unter Verwendung des entsprechenden Textes der EB-Beschriftungen erstellt. Die folgenden Abbildungen zeigen Beispiele für Berichte für die Benutzersprachen EN-US und DE-AT.
 
-![Vorschau des Berichts, der in der bevorzugten Sprache des EN-US-Benutzers erstellt wurde](./media/er-multilingual-labels-report-preview-en.png)
+![Vorschau des Berichts, der in der bevorzugten Sprache des EN-US-Benutzers erstellt wurde.](./media/er-multilingual-labels-report-preview-en.png)
 
-![Vorschau des Berichts, der in der bevorzugten Sprache des DE-AT-Benutzers erstellt wurde](./media/er-multilingual-labels-report-preview-de.png)
+![Vorschau des Berichts, der in der bevorzugten Sprache des DE-AT-Benutzers erstellt wurde.](./media/er-multilingual-labels-report-preview-de.png)
 
 Wenn eine Beschriftung, auf die verwiesen wird, keine Übersetzung für die Sprache des Formatausführungskontexts enthält, der eine Modellzuordnung aufruft, wird stattdessen ein Beschriftungstext in der Sprache EN-US verwendet.
 
@@ -148,41 +148,41 @@ EB unterstützt verschiedene Möglichkeiten, eine Sprache für einen generierten
 
 - **Firmenpräferenz** – Erstellen Sie einen Bericht in einer vom Unternehmen angegebenen Sprache.
 
-    ![Geben Sie im EB Vorgangs-Designer eine vom Unternehmen bevorzugte Sprache als Sprache für einen generierten Bericht an](./media/er-multilingual-labels-language-context-company.png)
+    ![Geben Sie im EB Operation Designer eine vom Unternehmen bevorzugte Sprache als Sprache für einen generierten Bericht an.](./media/er-multilingual-labels-language-context-company.png)
 
 - **Benutzerpräferenz** – Erstellen Sie einen Bericht in der vom Benutzer bevorzugten Sprache.
 - **Explizit definiert** – Generieren Sie einen Bericht in einer Sprache, die zur Entwurfszeit angegeben wurde.
 
-    ![Geben Sie im EB Vorgangs-Designer eine Entwurfszeit in der vom Unternehmen bevorzugte Sprache als Sprache für einen generierten Bericht an](./media/er-multilingual-labels-language-context-fixed.png)
+    ![Geben Sie im EB Operations Designer eine Entwurfszeit in der vom Unternehmen bevorzugte Sprache als Sprache für einen generierten Bericht an.](./media/er-multilingual-labels-language-context-fixed.png)
 
 - **Definiert zu Runtime** – Generieren Sie einen Bericht in einer Sprache, die zur Runtime angegeben wurde. Wenn Sie diesen Wert auswählen, konfigurieren Sie einen EB-Ausdruck im Feld **Sprache**, der den Sprachcode für die Sprache zurückgibt, z. B. die Sprache des entsprechenden Kunden.
 
-    ![Geben Sie im EB Vorgangs-Designer eine Runtime definierte Sprache als Sprache für einen generierten Bericht an](./media/er-multilingual-labels-language-context-runtime.png)
+    ![Geben Sie im EB Operation Designer eine Runtime definierte Sprache als Sprache für einen generierten Bericht an.](./media/er-multilingual-labels-language-context-runtime.png)
 
 ## <a name="culture-specific-formatting"></a>Kulturspezifische Formatierung
 
-ER unterstützt verschiedene Möglichkeiten, die Kultur für einen generierten Bericht anzugeben. Daher kann die richtige kulturspezifische Formatierung für Datum, Uhrzeit und numerische Werte verwendet werden. Wenn Sie ein ER-Format entwerfen, können Sie auf der Registerkarte **Format** im Feld **Kultureinstellungen** für jede Formatkomponente vom Typ **Gemeinsam \\Datei**, **Excel \\Datei**, **PDF \\Datei** oder **PDF \\Zusammenführung** einen der folgenden Werte auswählen:
+ER unterstützt verschiedene Möglichkeiten, die Kultur für einen generierten Bericht anzugeben. Daher kann die richtige kulturspezifische Formatierung für Datum, Uhrzeit und numerische Werte verwendet werden. Wenn Sie ein ER-Format entwerfen, können Sie auf der Registerkarte **Format** im Feld **Kultureinstellungen** für jede Formatkomponente vom Typ **Gemeinsam\\Datei**, **Excel\\Datei**, **PDF\\Datei** oder **PDF\\Zusammenführung** einen der folgenden Werte auswählen:
 
 - **Benutzerpräferenz** – Formatieren Sie die Werte entsprechend der bevorzugten Kultur des Benutzers. Diese Kultur wird im Feld **Datum, Uhrzeit und Zahlenformat** auf der Registerkarte **Einstellungen** der Seite **Benutzeroptionen** definiert.
 
-    ![Festlegen der bevorzugten Kultur des Benutzers als Kultur eines generierten Berichts im ER Operation Designer](./media/er-multilingual-labels-culture-context-user-preferred.png)
+    ![Festlegen der bevorzugten Kultur des Benutzers als Kultur eines generierten Berichts im EB Operation Designer.](./media/er-multilingual-labels-culture-context-user-preferred.png)
 
 - **Explizit definiert** – Formatieren Sie die Werte entsprechend der Kultur, die zur Entwurfszeit angegeben ist.
 
-    ![Definieren der Kultur, die zur Entwurfszeit als Kultur eines generierten Reports im ER Operation Designer festgelegt wird](./media/er-multilingual-labels-culture-context-fixed.png)
+    ![Definieren der Kultur, die zur Entwurfszeit als Kultur eines generierten Reports im EB Operation Designer festgelegt wird.](./media/er-multilingual-labels-culture-context-fixed.png)
 
 - **Zur Laufzeit definiert** – Formatieren Sie die Werte entsprechend der Kultur, die zur Laufzeit angegeben wird. Wenn Sie diesen Wert wählen, konfigurieren Sie auf der Registerkarte **Zuordnung** im Feld **Datums-, Zeit- und Zahlenformat** einen ER-Ausdruck, der den Kulturcode für die Kultur liefert, z. B. die Kultur des entsprechenden Debitors.
 
-    ![Definieren der Kultur, die zur Laufzeit als Kultur eines generierten Reports im ER-Vorgangsdesigner festgelegt wird](./media/er-multilingual-labels-culture-context-runtime.png)
+    ![Definieren der Kultur, die zur Laufzeit als Kultur eines generierten Reports im EB Operation Designer festgelegt wird.](./media/er-multilingual-labels-culture-context-runtime.png)
 
 > [!NOTE]
 > Eine ER-Komponente, für die Sie eine bestimmte Kultur definieren, kann untergeordnete ER-Komponenten enthalten, die so konfiguriert wurden, dass sie einen Textwert ausfüllen. Standardmäßig wird die Kultur der übergeordneten Komponente verwendet, um die Werte dieser Komponenten zu formatieren. Sie können die folgenden integrierten ER-Funktionen verwenden, um Bindungen für diese Komponenten zu konfigurieren und eine alternative Kultur für die Werteformatierung anzuwenden:
 >
-> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2).
+> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
 > - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
 > - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
 >
-> Ab Version 10.0.20 wird das Gebietsschema von Formatkomponenten der Typen **Allgemein \\Datei** und **Excel \\Datei** zur Formatierung von Werten während der [PDF-Konvertierung](electronic-reporting-destinations.md#OutputConversionToPDF) eines generierten Dokuments verwendet.
+> Ab Version 10.0.20 wird das Gebietsschema von Formatkomponenten der Typen **Allgemein\\Datei** und **Excel\\Datei** zur Formatierung von Werten während der [PDF-Konvertierung](electronic-reporting-destinations.md#OutputConversionToPDF) eines generierten Dokuments verwendet.
 
 ## <a name="translation"></a>Übersetzung
 
@@ -196,19 +196,19 @@ Wenn Sie eine EB-Beschriftung im **Textübersetzung** [Bereich](#TextTranslation
 
 Die Konfiguration einer EB-Komponente erfolgt in der Entwurfsversion der EB-Konfiguration, in der sich die bearbeitbare EB-Komponente befindet.
 
-![Die Seite EB-Konfigurationen mit Zugriff auf die Konfigurationsversion im Entwurfsstatus](./media/er-multilingual-labels-configurations.png)
+![Die Seite EB-Konfigurationen mit Zugriff auf die Konfigurationsversion im Entwurfsstatus.](./media/er-multilingual-labels-configurations.png)
 
 Wie weiter oben in diesem Thema beschrieben, können Sie einer bearbeitbaren EB-Komponente die erforderlichen EB-Beschriftungen hinzufügen. Auf diese Weise können Sie den Text der EB-Beschriftung in der Sprache EN-US angeben. Anschließend können Sie die Beschriftungen der EB-Komponente mithilfe der integrierten EB-Funktion exportieren. Wählen Sie die Entwurfsversion einer EB-Konfiguration aus, die die bearbeitbare EB-Komponente enthält, und wählen Sie dann **Austausch \> Beschrichtung exportieren**.
 
-![Auf der Seite EB-Konfigurationen können Sie EB-Beschriftungen aus der ausgewählten Konfigurationsversion exportieren](./media/er-multilingual-labels-export.png)
+![Auf der Seite EB-Konfigurationen können Sie EB-Beschriftungen aus der ausgewählten Konfigurationsversion exportieren.](./media/er-multilingual-labels-export.png)
 
 Sie können entweder alle Beschriftungen oder die Beschriftungen für eine einzelne Sprache exportieren, die Sie zu Beginn des Exports angegeben haben. Beschriftungen werden als Zip-Datei exportiert, die XML-Dateien enthält. Jede XML-Datei enthält Beschriftungen für eine einzelne Sprache.
 
-![Beispiel der exportierten Datei mit EB-Beschriftungen die Sprache DE-AT](./media/er-multilingual-labels-in-xml.png)
+![Beispiel der exportierten Datei mit EB-Beschriftungen die Sprache DE-AT.](./media/er-multilingual-labels-in-xml.png)
 
 Dieses Format wird für die automatische Übersetzung von Beschriftungen durch externe Übersetzungsdienste wie [Dynamics 365 Translation service](../lifecycle-services/translation-service-overview.md) verwendet. Wenn Sie die übersetzten Beschriftungen erhalten, können Sie sie wieder in die Entwurfsversion einer EB-Konfiguration importieren, die die EB-Komponenten enthält, denen diese Beschriftung gehören. Wählen Sie die Entwurfsversion einer EB-Konfiguration aus, die die bearbeitbare EB-Komponente enthält, und wählen Sie dann **Austausch \> Beschriftung laden**.
 
-![Auf der Seite EB-Konfigurationen können Sie EB-Beschriftungen aus der ausgewählten Konfigurationsversion importieren](./media/er-multilingual-labels-load.png)
+![Auf der Seite EB-Konfigurationen können Sie EB-Beschriftungen aus der ausgewählten Konfigurationsversion importieren.](./media/er-multilingual-labels-load.png)
 
 Übersetzte Beschriftungen werden in die ausgewählte EB-Konfiguration importiert. Übersetzte Beschriftungen, die in dieser EB-Konfiguration vorhanden sind, werden ersetzt. Wenn eine übersetzte Beschriftung in der EB-Konfiguration fehlt, wird sie angehängt.
 

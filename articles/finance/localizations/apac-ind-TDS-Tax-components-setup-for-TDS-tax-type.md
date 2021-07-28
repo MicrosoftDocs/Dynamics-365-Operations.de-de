@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6e0a6a05fcb4afb8c8965e25c3089bc1b3d98431
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 70e57a928ecd3f5d10ebd3d0fc3f52870d40fcd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023263"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358169"
 ---
 # <a name="set-up-tax-components-for-the-tds-tax-type"></a>Steuerkomponenten für den Steuertyp „TDS“ einrichten
 
@@ -33,7 +33,7 @@ Gehen Sie folgendermaßen vor, um TDS-Komponenten einzurichten.
 
 1. Gehen Sie zu **Steuer \> Setup \> Quellensteuer \> Quellensteuerkomponenten**.
 
-    [![Seite „Quellensteuerkomponenten“](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
+    [![Seite „Quellensteuerkomponenten“.](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
 
 2. Wählen Sie im Feld **Steuertyp** **TDS** aus, um Quellensteuerkomponenten für den Steuertyp TDS einzurichten.
 3. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Position zu erstellen.
@@ -50,7 +50,7 @@ Gehen Sie folgendermaßen vor, um TDS-Komponenten einzurichten.
 
     Wenn der Ausnahmeschwellenwert beispielsweise 5.000 beträgt, wird die TDS für eine bestimmte Rechnungsposition berechnet, wenn der Betrag der Rechnungsposition 5.000 überschreitet (mit anderen Worten, wenn er mindestens 5.001 beträgt).
 
-    [![Seite „Schwellenseite“](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
+    [![Seite „Schwellenwerte“.](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
 
     > [!NOTE]
     > Der Ausnahmeschwellenwert muss kleiner oder gleich dem Schwellenwert sein.
@@ -66,6 +66,6 @@ Gehen Sie folgendermaßen vor, um TDS-Komponenten einzurichten.
 
 14. Wählen Sie **OK**, um TDS-Komponenten für die andere TDS-Komponentengruppe auf der Seite **Quellensteuerkomponenten** zu kopieren und die erstellen.
 
-    [![Dialogfeld „Quellensteuerkomponenten kopieren“](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
+    [![Dialogfeld „Quellensteuerkomponenten kopieren“.](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
 
 15. Schließen Sie die Seite.

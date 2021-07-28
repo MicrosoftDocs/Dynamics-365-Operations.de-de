@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 279212d05615805dd74c702b2b98c344c87fdc78
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944532"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348678"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
@@ -85,7 +85,7 @@ Einige der typischsten und wichtigsten Änderungen, die Sie an einer Seite vorne
 
 Darüber hinaus sind die Typen der grundlegendsten Personalisierungen verfügbar, indem Sie auf ein Element mit der rechten Maustaste klicken und dann **Anpassen** auswählen. (Beachten Sie, dass nicht alle Elemente auf der Seite personalisiert werden können.) Wenn Sie diese Methode der Personalisierung auswählen, wird das *Eigenschaftenfenster* des Elements angezeigt.
 
-![Personalisieren der Eigenschaften eines Elements](./media/cli-element-property-window.png)
+![Personalisieren der Eigenschaften eines Elements.](./media/cli-element-property-window.png)
 
 Sie können das Eigenschaftenfenster verwenden, um ein Element in folgender Hinsicht zu personalisieren:
 
@@ -107,7 +107,7 @@ Wenn Sie mehrere Änderungen auf einer Seite oder Änderungen vornehmen möchten
 - Wählen Sie im Aktivitätsbereich einer Seite in der Registerkarte **Optionen** in der Gruppe **Personalisieren** die Option **Diese Seite personalisieren** aus.
 - Wählen Sie die Schaltfläche **Einstellungen** (Zahnradsymbol) auf der Navigationsleiste und wählen Sie dann **Anpassen**.
 
-[![Personalisierungssymbolleiste](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Personalisierungssymbolleiste.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigieren auf de Seite
 
@@ -147,7 +147,7 @@ Für mehrere Seiten, die Listen enthalten, ist die Personalisierungsfunktion **Z
 > [!NOTE]
 > Wenn die Funktion [Gespeicherte Ansichten](saved-views.md)-aktiviert wird, wird der Inhalt, den Sie an einen Arbeitsbereich übertragen, direkt mit einer Ansicht verknüpft. Die Abfrage der Ansicht wird verwendet, um Daten in den Arbeitsbereich abzurufen, und die entsprechende Kachel oder der Link im Arbeitsbereich öffnet die Seite zu dieser Ansicht, sodass die Abfrage und die Personalisierungen der Ansicht auf sie angewendet werden. Wenn die Ansicht aktualisiert wird, werden die entsprechenden Arbeitsbereichselemente an die neue Ansichtsdefinition angepasst.
 
-[![Zum Arbeitsbereich hinzufügen](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Zum Arbeitsbereich hinzufügen.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Um eine Liste einem Arbeitsbereich hinzuzufügen, sortieren oder filtern Sie zuerst die Liste auf der Seite, sodass die Informationen so angezeigt werden, wie Sie sie im Arbeitsbereich wünschen. (Wenn die Funktion **Gespeicherte Ansichten** aktiviert ist, können Sie nicht fortfahren, bis Sie eine Ansicht speichern, die den angegebenen Bedingungen entspricht.) Wählen Sie dann **Zum Arbeitsbereich hinzufügen** aus. Wählen Sie einen Arbeitsbereich und dann im Feld **Präsentation** wählen Sie **Liste** aus. Nachdem Sie **Konfigurieren** auswählen, wird ein Dialogfeld angezeigt, wo Sie die Spalten auswählen können, die in der Liste im Arbeitsbereich angezeigt werden sollen. Sie können auch die Beschriftung definieren, die für die Liste im Arbeitsbereich verwendet wird.
 - Um eine Kachel zu einem Arbeitsbereich hinzuzufügen, filtern Sie zuerst die Liste auf der Seite, um die Daten darzustellen, die Sie zusammenfassen möchten (oder auf die Sie schnellen Zugriff wünschen). (Wenn die Funktion **Gespeicherte Ansichten** aktiviert ist, können Sie nicht fortfahren, bis Sie eine Ansicht speichern, die den angegebenen Bedingungen entspricht.) Wählen Sie dann **Zum Arbeitsbereich hinzufügen** aus. Wählen Sie einen Arbeitsbereich und dann im Feld **Präsentation** wählen Sie **Kachel** aus. Nachdem Sie **Konfigurieren** auswählen, wird ein Dialogfeld angezeigt, in dem Sie die Beschriftung angeben können, die für die Kachel im Arbeitsbereich zu verwenden ist. Sie können auch angeben, ob die Kachel eine Anzahl anzeigen soll. Nachdem Sie die Kachel dem Arbeitsbereich hinzugefügt haben, können Sie sie auswählen, um die aktuelle Seite über den Arbeitsbereich zu öffnen. Sie können anschließend die gefilterte Liste anzeigen, die der Kachel zugeordnet ist.

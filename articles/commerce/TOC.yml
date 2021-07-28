@@ -932,6 +932,8 @@
                   href: manage-ecommerce-users-roles.md
                 - name: Bestandseinstellungen anwenden
                   href: inventory-settings.md
+                - name: Einstellungen zum Hinzufügen von Produkten in den Einkaufswagen anwenden
+                  href: add-cart-settings.md
                 - name: Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Site
                   href: search-engine-optimization-considerations.md
                 - name: Richtlinie zur Sicherheit von Inhalten (CSP) verwalten
@@ -1010,15 +1012,19 @@
                       href: verify-accessibility.md
                     - name: Dynamische E-Commerce-Seiten anhand von URL-Parametern erstellen
                       href: create-dynamic-pages.md
-                - name: Navigation auf der Website
+                - name: Sitenavigation
                   items:
-                    - name: Navigation auf der Website anpassen
+                    - name: Sitenavigation anpassen
                       href: customize-site-navigation.md
                     - name: Seiten-URL erstellen
                       href: create-page-URL.md
+                - name: Adventure Works-Design
+                  items:
+                    - name: Übersicht über das Adventure Works-Design
+                      href: adventure-works-theme.md
             - name: Digitale Anlagen verwalten
               items:
-                - name: Überblick über die Verwaltung digitaler Anlagen
+                - name: Übersicht über die Verwaltung digitaler Anlagen
                   href: dam-overview.md
                 - name: Bilder hochladen
                   href: dam-upload-images.md
@@ -1070,6 +1076,16 @@
                       href: add-hero-module.md
                     - name: Video-Player-Modul
                       href: add-video-player.md
+                    - name: Aktives Bildmodul
+                      href: active-image-module.md
+                    - name: Bildlistenmodul
+                      href: image-list-module.md
+                    - name: Interaktives Funktionsmodul
+                      href: interactive-feature-module.md
+                    - name: Modul abonnieren
+                      href: subscribe-module.md
+                    - name: Kachellistenmodul
+                      href: tile-list-module.md
                 - name: Kopf- und Fußzeilenmodule
                   items:
                     - name: Kopfzeilenmodul
@@ -1314,6 +1330,10 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: Bereitstellungsrichtlinien für Kassen
                   href: localizations/emea-nor-loc-deployment-guidelines.md
+            - name: Russland
+              items:
+                - name: Lokalisierung von Commerce für Russland
+                  href: localizations/rus-commerce-localization.md
             - name: Schweden
               items:
                 - name: Kassenfunktionen
@@ -2124,7 +2144,7 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/commerce/toc.json
             - name: Workflow-System
               items:
-                - name: Workflowsystem – Übersicht
+                - name: Übersicht über das Workflowsystem
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/commerce/toc.json
                 - name: Workflow-Systemarchitektur
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/commerce/toc.json
@@ -2142,13 +2162,15 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurieren von automatisierten Aufgaben
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurieren von Genehmigungsprozessen
+                    - name: Genehmigungsprozesse konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurieren von Genehmigungsschritten
+                    - name: Genehmigungsschritte konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurieren von manuellen Entscheidungen
+                    - name: Aufwendungsprüfer konfigurieren
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/commerce/toc.json
+                    - name: Manuelle Entscheidungen konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurieren von bedingten Entscheidungen
+                    - name: Bedingte Entscheidungen konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurieren von parallelen Aktivitäten
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/commerce/toc.json
@@ -2180,9 +2202,9 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/commerce/toc.json
                     - name: Eine SubmitToWorkflow-Klasse erstellen
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Eine Workflow-Dokumentenklasse einem Workflow-Typ zuordnen
+                    - name: Workflow-Dokumentenklasse einem Workflow-Typ zuordnen
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/commerce/toc.json
-                - name: Bericht zu Workflow-Typen
+                - name: Bericht zu Workflowtypen
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/commerce/toc.json
                 - name: Workflow-FAQ
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/commerce/toc.json
@@ -2558,6 +2580,8 @@
                   href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Kanaldatenbankerweiterungen
                   href: dev-itpro/channel-db-extensions.md
+                - name: Erweiterungen für Cloud-Skalierungseinheiten entfernen
+                  href: dev-itpro/retail-sdk/remove-csu-package.md
                 - name: Benutzerdefinierte CDX-Synchronisierung per Erweiterung aktivieren
                   href: dev-itpro/cdx-extensibility.md
                 - name: Definieren und Festlegen von Auftragsattributen

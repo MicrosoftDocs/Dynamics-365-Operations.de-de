@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f380f3f56727d927d7cd328fef3c9d999afa2873
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f9fffb5b4f51c86076d62ac2a44bdc779490c7bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794348"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351272"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Übersicht über die Standard-Kategorie-Landingpage und die Suchergebnisseite
 
@@ -31,7 +31,7 @@ Dieses Thema gibt eine Übersicht über die Standard-Kategorie-Startseite und Su
 
 Die Standardkategoriestartseite ist die Seite, zu der die Websitebenutzer in der Regel gelangen, wenn sie eine Kategorie in der Navigationshierarchie auswählen. Mit der Kategorieseite können Sie durchsuchen, und Sie können die kategorisierten Produkte auch sortieren und verfeinern.
 
-![Standard-Kategorie Startseite](./media/SimpleCategoryLandingDressCategory.png)
+![Standardkategorie-Startseite.](./media/SimpleCategoryLandingDressCategory.png)
 
 Oben auf der Seite befindet sich eine Kopfzeile mit allen Produktkategorien und anderen Seiten, die Verkaufsmanager kategorisiert haben. Konfiguration wird als Teil der Konfiguration der Kanalnavigationshierarchie ausgeführt. Unten auf der Startseite befindet sich eine Fußzeile mit Direktlinks zu verschiedenen Themen, die Kunden interessieren könnten.
 
@@ -43,8 +43,8 @@ Die folgenden Komponenten sind für eine Kategorie zentral:
 
     - Preis - niedrig bis hoch.
     - Preis - hoch bis niedrig
-    - Produktname - \[A-Z\] 
-    - Produktname - \[Z-A\] 
+    - Produktname - \[A-Z\]
+    - Produktname - \[Z-A\]
     - Bewertung - tief bis hoch
     - Bewertung - hoch bis tief
 
@@ -55,7 +55,7 @@ Die folgenden Komponenten sind für eine Kategorie zentral:
 
 Wenn Sie für eine Kategorieangebotsseite eine angepasste Erfahrung für eine bestimmte Kategorie möchten, können Sie die Kategoriestartseite für diese Kategorie „anreichern“. So können Sie ein Marketings-Video und Geschichten zu den Kategorien hinzufügen, um die Aufmerksamkeit des Käufers abzurufen. Weitere Informationen finden Sie unter [Reichern Sie eine Kategorieangebotsseite an](enrich-category-page.md).
 
-![Angereicherte Kategorie-Startseite](./media/CategoryLandingPages.png)
+![Angereicherte Kategorie-Startseite.](./media/CategoryLandingPages.png)
 
 ## <a name="auto-suggest-and-search-results-pages"></a>Ergebnisseite automatisch vorschlagen und suchen
 
@@ -69,11 +69,11 @@ Nachfolgend sind einige Vorschlagstypen, die angezeigt werden können:
 - **Produkte** beinhalten direkte Links zu Produktdetailseiten bereit.
 - **Bewertete Kategoriesuchvorschläge** führt verschiedene Kategorien auf und lässt Benutzer nach Schlüsselwörtern in einer bestimmten Kategorie suchen.
 
-![Umfassende automatische Vorschläge](./media/ImmersiveAutoSuggestUX.png)
+![Umfassende automatische Vorschläge.](./media/ImmersiveAutoSuggestUX.png)
 
 Wenn Benutzer eines der Schlüsselwörter oder eine bewertete der Kategorie aus den Suchvorschlägen auswählt oder wenn es keine Vorschläge für den Suchbegriff gibt, den sie eingeben, werden sie zu einer Suchergebnisseite umgeleitet. Die Benutzer kann dann die Suchergebnisse durchsuchen, sortieren und verfeinern, um den gewünschten Artikel zu finden.
 
-![Suchenangebote](./media/SearchLanding.png)
+![Suchenangebote.](./media/SearchLanding.png)
 
 Die folgenden Komponenten sind für eine Suchergebnisseite zentral:
 
@@ -83,8 +83,8 @@ Die folgenden Komponenten sind für eine Suchergebnisseite zentral:
 
     - Preis - niedrig bis hoch.
     - Preis - hoch bis niedrig
-    - Produktname - \[A-Z\] 
-    - Produktname - \[Z-A\] 
+    - Produktname - \[A-Z\]
+    - Produktname - \[Z-A\]
     - Bewertung - tief bis hoch
     - Bewertung - hoch bis tief
     - Standard
@@ -94,13 +94,13 @@ Die folgenden Komponenten sind für eine Suchergebnisseite zentral:
 
 >[!NOTE]
 >Diese Cloud-betriebenen Suchfunktionen sind ab Version 10.0.8 verfügbar. Stellen Sie sicher, dass unter **Handelsparameter > Konfigurationsparameter** ein Eintrag für „ProductSearch.UseAzureSearch set to 'true'“ vorhanden ist. 
-![Konfigurationsparameter für die Cloud-betriebene Suche](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurationsparameter für die cloud-betriebene Suche.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Übersicht über die Cloud-basierte Suche](cloud-powered-search-overview.md)
+[Übersicht über die cloudbasierte Suche](cloud-powered-search-overview.md)
 
-[Übersicht der Startseite](quick-tour-home-page.md)
+[Übersicht zur Startseite](quick-tour-home-page.md)
 
 [Übersicht der Produktdetailseiten](quick-tour-pdp.md)
 

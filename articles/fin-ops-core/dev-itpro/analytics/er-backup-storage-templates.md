@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b41760bb58cbef66146b3f1af6f30c6a35a18727
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 305576b79fdb11f29de9207662de0fe4b4dd6eb5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743846"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351841"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sicherungsspeicher von ER-Vorlagen
 
@@ -65,19 +65,19 @@ Um den Parameter **Prozedur zur Wiederherstellung der fehlerhaften Vorlagen auto
 > [!NOTE]
 > Dieser Parameter ist als Anwendungsbenutzer definiert und als unternehmensspezifisch protokolliert.
 
-![ER-Konfigurationsseite](./media/GER-BackupTemplates-1.png)
+![EB-Konfigurationsseite.](./media/GER-BackupTemplates-1.png)
 
 Die folgende Abbildung zeigt ein Beispiel der Meldung an, die angezeigt wird, wenn der Parameter **Prozedur zur Wiederherstellung der fehlerhaften Vorlagen automatisch im Stapelverarbeitungsmodus ausführen** auf **Aktiviert** festgelegt ist.
 
-![Seite „Kreditorenzahlungserfassung“](./media/GER-BackupTemplates-2.png)
+![Seite „Kreditorenzahlungserfassung“.](./media/GER-BackupTemplates-2.png)
 
 Die folgende Abbildung zeigt den Stapelverarbeitungsvorgang **Fehlerhafte Vorlagen aus interner Datenbanksicherung wiederherstellen** auf der Seite **Stapelverarbeitungsauftrag**.
 
-![Seite „Batchaufträge“](./media/GER-BackupTemplates-3.png)
+![Seite „Batchaufträge“.](./media/GER-BackupTemplates-3.png)
 
 Das Ausführungsprotokoll des abgeschlossenen Stapelverarbeitungsvorgangs **Fehlerhafte Vorlagen aus interner Datenbanksicherung wiederherstellen** enthält Informationen zu den Vorlagen, die aus dem Sicherungsspeicherort im primären Speicherort wiederhergestellt wurden.
 
-![Seite „Historie des Stapelverarbeitungsauftrags“](./media/GER-BackupTemplates-4.png)
+![Seite „Historie des Stapelverarbeitungsauftrags“.](./media/GER-BackupTemplates-4.png)
 
 Die automatische Erstellung von Sicherungskopien, die sich in ER-Formatkonfigurationen befinden, ist standardmäßig aktiviert. Um die Erstellung von Sicherungskopien von Vorlagen zu beenden, legen Sie die Option **Erstellung von Sicherungskopien von Vorlagen beenden** auf der Registerkarte **Anhänge** der Seite **Elektronische Berichterstellungsparameter** auf **Ja** fest. Sie können diese Seite über den Arbeitsbereich **Elektronische Berichterstellung** öffnen.
 
@@ -85,7 +85,7 @@ Wenn Sie die Option **Erstellung von Sicherungskopien von Vorlagen beenden** auf
 
 Wenn Sie Ihre Umgebung auf Finance and Operations 10.0.5 (Oktober 2019)aktualisiert haben und zu einer neuen Umgebung migrieren möchten, die EB-Formatkonfigurationen enthält, die ausgeführt werden können, wählen Sie **Sicherungsspeicher füllen** auf der Seite **Elektronische Berichterstellungsparameter** aus, bevor die Migration ausgeführt wird. Mit dieser Schaltfläche wird die Erstellung von Sicherungskopien aller verfügbaren Vorlagen gestartet, sodass sie im ER-Sicherungsspeicherort für Vorlagen gespeichert werden können.
 
-![Parameterseite der elektronischen Berichterstellung](./media/GER-BackupTemplates-5.png)
+![Parameterseite der elektronischen Berichterstellung.](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>Manuelle Wiederherstellung
 

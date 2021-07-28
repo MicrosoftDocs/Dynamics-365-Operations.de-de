@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8c2ae3368db47363a65e8ecd6317bb0432829802
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ccad9c55c0200d008525c7d3fdaeeef99b7eecfb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748824"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350739"
 ---
 # <a name="general-troubleshooting"></a>Allgemeine Problembehandlung
 
@@ -44,16 +44,16 @@ Installieren Sie nach der Installation des Package Deployer Tools das Lösungspa
 
 1. Laden Sie die neueste Lösungspaketdatei von Yammer .com herunter. Nachdem die Paket-Zip-Datei heruntergeladen wurde, klicken Sie mit der rechten Maustaste darauf und wählen Sie **Eigenschaften**. Wählen Sie das Kontrollkästchen **Sperrung aufheben** und wählen Sie dann **Anwenden** aus. Wenn Sie das Kontrollkästchen **Entsperren** nicht sehen, ist die Zip-Datei bereits entsperrt, und Sie können diesen Schritt überspringen.
 
-    ![Dialogfeld Eigenschaften](media/unblock_option.png)
+    ![Dialogfeld „Eigenschaften“.](media/unblock_option.png)
 
 2. Extrahieren Sie die Paket-Zip-Datei und kopieren Sie alle Dateien in die **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438** Mappe.
 
-    ![Inhalt des Ordners Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438](media/extract_package.png)
+    ![Inhalt des Ordners Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438.](media/extract_package.png)
 
 3. Fügen Sie alle kopierten Dateien in den Ordner **Werkzeuge** im Package Deployer hinzu. 
 4. Führen Sie **PackageDeployer.exe** aus, um die Dataverse Umgebung auszuwählen und installieren Sie die Lösungen.
 
-    ![Inhalt des Tools-Ordners](media/paste_copied_files.png)
+    ![Inhalt des Tools-Ordners.](media/paste_copied_files.png)
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Aktivieren und Anzeigen des Plug-In-Überwachungsprotokolls in Dataverse, um Fehlerdetails anzuzeigen
 
@@ -104,7 +104,7 @@ Um die Nachverfolgung anzuzeigen, führen Sie diese Schritte aus.
 **Erforderliche Rolle zum Aufheben der Umgebungsverknüpfung:** Systemadministrator für die Finance and Operations-App oder Dataverse.
 
 1. Bei der Finance and Operations App anmelden.
-2. Gehe zu **Arbeitsbereiche \>Datenmanagement** und wählen Sie die Kachel **Duales Schreiben**.
+2. Gehe zu **Arbeitsbereiche \> Datenmanagement** und wählen Sie die Kachel **Duales Schreiben**.
 3. Wählen Sie alle ausgeführten Zuordnungen aus, und wählen Sie **Beenden**.
 4. Wählen Sie **Verknüpfung für Umgebung aufheben** aus.
 5. Wählen Sie **Ja** aus, um den Vorgang zu bestätigen.

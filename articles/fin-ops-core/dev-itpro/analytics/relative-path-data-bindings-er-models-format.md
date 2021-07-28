@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 141d58c2183c386584b0b974f4997e7a81ef3109
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b9d072914b5effdd733ec2c18e4ada877f932ba8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749985"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350159"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Verwenden Sie einen relativen Pfad in den Datenbindungen von ER-Modellen und -Formaten
 
@@ -31,20 +31,20 @@ Mit dem Tool für die elektronische Berichterstellung (ER) können Benutzer elek
 
 Um die Benutzerfreundlichkeit der EB-Zuordnungs-Designer zu verbessern, ist die Funktion [relativer Pfad](er-formula-language.md#relative-path) freigegeben worden. Standardmäßig wird die Darstellungsoption des relativen Pfades für jede neue Instanz der Anwendung aktiviert, wenn die ER-Designerfahrung aktiviert ist (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Wir haben die relativen Pfadparameter implementiert, damit die Benutzer den vollständigen Pfad weiterhin verwenden können, wenn sie mit dieser Darstellung der ER-Bindungen arbeiten.
 
-[![Benuitzer-Parameter](./media/relative-path-01.png)](./media/relative-path-01.png)
+[![Benutzer-Parameter.](./media/relative-path-01.png)](./media/relative-path-01.png)
 
  
 Wenn der verwendet Parameter des relativen Pfades aktiviert ist, ersetzt ein einzelnes @-Zeichen den Pfad zum übergeordneten Artikel in der aktuellen Bindung des Modellelements. Der vollständige Bindungspfad wird kürzer, wodurch die gesamte Zuordnung einfacher, offensichtlicher und einfacher zum Verstehen wird. In den meisten Fällen wird kein zusätzlicher Bildlauf erforderlich sein im ER-Designer, um alle Berichtsbeziehungen des Datenmodells anzuzeigen.
 
-[![Modellzuordnungsdesigner](./media/relative-path-02.png)](./media/relative-path-02.png)
+[![Modellzuordnungsdesigner.](./media/relative-path-02.png)](./media/relative-path-02.png)
  
 Wenn Sie beginnen, einen neuen ER-Ausdruck zu entwerfen, müssen Sie nur einem Zeichen eingeben, um eine Bindung für ein Feld des übergeordneten Artikels zu definieren.
 
-[![Formeldesigner](./media/relative-path-03.png)](./media/relative-path-03.png)
+[![Formeldesigner.](./media/relative-path-03.png)](./media/relative-path-03.png)
  
 Wenn Sie sich dazu entschließen, die Datenquelle des übergeordneten Modellartikels mit der Nutzung des absoluten Pfades zu ändern, müssen Sie diesen Modellartikel sowie alle geschachtelten Artikel manuell auf eine neue Datenquelle binden. Wenn die Verwendung des relativen Pfades aktiviert ist und Sie eine neue Datenquelle auswählen, die an das übergeordnete Element gebunden wird, erhalten Sie eine Option, um alle geschachtelten Elemente dieses übergeordneten Elements mit einem Klick erneut zu binden.
 
-[![Ersetzen der vorhandenen Pfadnachricht](./media/relative-path-04.png)](./media/relative-path-04.png)
+[![Ersetzen der vorhandenen Pfadnachricht.](./media/relative-path-04.png)](./media/relative-path-04.png)
  
 Wenn Sie das erneute Binden geschachtelter Artikel bestätigen, wird das übergeordnete Element neu dem Pfad vo jedem geschachtelten Artikel hinzugefügt, das das vorhandenen übergeordneten Element enthält.
 Diese Funktion bricht die Abwärtskompatibilität des ER-Frameworks nicht. Alle zuvor entworfenen ER-Konfigurationen arbeiten mit dieser neuen Funktionen, und Aktualisierungen oder Umwandlungen sind erforderlich.

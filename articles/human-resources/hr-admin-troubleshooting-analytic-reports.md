@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8dab12213e9730e72aede70c5b5d1368ef77664e
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 382780405b2496cc655451790ef4a99ef60ba129
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053538"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354251"
 ---
 # <a name="troubleshoot-analytic-reports"></a>Problembehandlung bei analytischen Berichten
 
@@ -41,7 +41,7 @@ Dieses Problem ist möglicherweise nur eine Frage der Zeitmessung. Gehen Sie fol
 1. Suchen Sie den Einzelvorgang **Messung bereitstellen** in der Liste.
 1. Wählen Sie **Bearbeiten** am oberen Seitenrand aus, und legen Sie das geplante Startdatum/Uhrzeit auf einen Wert fest, durch den die Analyse näher an der aktuellen Uhrzeit aktualisiert wird.
 
-![Batchaufträge](media/batch-jobs.png)
+![Batchaufträge.](media/batch-jobs.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

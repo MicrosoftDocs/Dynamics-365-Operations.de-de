@@ -13,12 +13,12 @@ ms.search.region: Germany
 ms.author: v-lenest
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: dce942bdacba2efd3d6a966d5c787b3c44e03c82
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0ce5fd170c81fe91977f90afbb2620352920f835
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890315"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349914"
 ---
 # <a name="vat-declaration-for-germany"></a>Umsatzsteuererklärung für Deutschland
 
@@ -760,7 +760,7 @@ Richten Sie die Codes für die Mehrwertsteuererklärung ein, indem Sie die Anwei
 
 8. Wählen Sie **OK**. Auf der **Elektronisches Steuererklärungsprotokoll**-Seite (**Steuer** \> **Meldungen** \> **Mehrwertsteuer** \> **Protokoll der elektronischen Steuererklärung**) wird eine neue Zeile erstellt.
 
-![Seite „Protokoll der elektronischen Steuererklärung“](media/1_Electronic_tax_declaration_log.png)
+![Seite „Protokoll der elektronischen Steuererklärung“.](media/1_Electronic_tax_declaration_log.png)
 
 ## <a name="preview-the-xml-file"></a>Vorschau der XML-Datei
 
@@ -835,16 +835,16 @@ Die folgende Tabelle zeigt, wie Sie die Mehrwertsteuer-Berichtscodes den Mehrwer
 11. Wechseln Sie zu **Steuer** \> **Meldungen** \> **Mehrwertsteuer** \> **Protokoll der elektronischen Steuererklärung**, und wählen Sie die erforderliche Position aus.
 12. Auf der **Protokoll der elektronischen Steuererklärung**-Seite, wählen Sie die **Allgemein**-Registerkarte und überprüfen die allgemeinen Informationen.
 
-![Seite „Protokoll der elektronischen Steuererklärung“, Registerkarte „Allgemein“](media/2_Electronic_tax_declaration_log.png)
+![Seite „Protokoll der elektronischen Steuererklärung“, Registerkarte „Allgemein“.](media/2_Electronic_tax_declaration_log.png)
 
 13. Wählen Sie **Vorschau** aus, klicken Sie auf die Registerkarte und überprüfen Sie die gemeldeten Werte.
 
-![Vorschau des Protokolls der elektronischen Steuererklärung](media/3_Electronic_tax_declaration_log.png)
+![Vorschau des Protokolls der elektronischen Steuererklärung.](media/3_Electronic_tax_declaration_log.png)
 
 14. Wählen Sie das Büroklammersymbol in der oberen rechten Ecke.
 15. Wählen Sie **Öffnen** und überprüfen Sie die XML-Datei oben auf der Seite.
 
-![XML-Datei](media/4_XML_file.png)
+![XML-Datei.](media/4_XML_file.png)
 
 ### <a name="correction-transactions"></a>Korrekturtransaktionen
 
@@ -866,14 +866,14 @@ Die folgende Tabelle zeigt, wie Sie die Mehrwertsteuer-Berichtscodes den Mehrwer
 7. Wechseln Sie zu **Steuer** \> **Meldungen** \> **Mehrwertsteuer** \> **Protokoll der elektronischen Steuererklärung**, und wählen Sie die erforderliche Position aus.
 8. Wählen Sie **Vorschau** aus, klicken Sie auf die Registerkarte und überprüfen Sie die gemeldeten Werte.
 
-    ![Vorschau des Protokolls der elektronischen Steuererklärung](media/5_Electronic_tax_declaration_log.png)
+    ![Vorschau des Protokolls der elektronischen Steuererklärung.](media/5_Electronic_tax_declaration_log.png)
 
     Eine Korrekturbuchung ist der Erklärung anhand der Codes **86** und **83** hinzugefügt worden.
 
 9. Wählen Sie das Büroklammersymbol in der oberen rechten Ecke.
 10. Wählen Sie **Öffnen** und überprüfen Sie die XML-Datei oben auf der Seite.
 
-    ![Zu überprüfende XML-Datei](media/6_XML_file.png)
+    ![Zu überprüfende XML-Datei.](media/6_XML_file.png)
 
     Eine Korrekturbuchung ist der Erklärung anhand der Codes **86** und **83** hinzugefügt worden.
 
@@ -899,9 +899,9 @@ Berechnen Sie am Ende des MwSt.-Berichtszeitraums die Mehrwertsteuerbeträge fü
 
 Wenn Sie Transaktionen wie in Schritt 5 des [Beispiels](#example) zu Beginn dieses Themas buchen, werden die folgenden Daten angezeigt.
 
-![Generierter deutscher Mehrwertsteuerbericht, Seite 1](media/7_Sales_tax_reporting.png)
+![Generierter deutscher Mehrwertsteuerbericht, Seite 1.](media/7_Sales_tax_reporting.png)
 
-![Generierter deutscher Mehrwertsteuerbericht, Seite 2](media/8_Sales_tax_reporting.png)
+![Generierter deutscher Mehrwertsteuerbericht, Seite 2.](media/8_Sales_tax_reporting.png)
 
 ### <a name="print-a-sales-tax-payment-report-from-a-sales-tax-payment"></a>Drucken Sie einen Mehrwertsteuerzahlungsbericht aus einer Mehrwertsteuerzahlung
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37efef723a7ca5e5f2333ff41cdf8351156e9bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 393239571de8a8d845107a8a8a151748c6b963c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821608"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355996"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO mit physischem Wert und Markierung
 
@@ -51,7 +51,7 @@ In diesem Beispiel ist die Artikelmodellgruppe so konfiguriert, dass der physisc
 
 In dem neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig aktualisierten Buchungen berücksichtigt. Die folgenden Abbildungen zeigen die Auswirkungen des Lagermodells FIFO auf diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird. 
 
-![FIFO ohne Einbeziehung des physischen Werts](./media/fifowithoutincludephysicalvalue.gif) 
+![FIFO ohne Einbeziehung des physischen Werts.](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 
@@ -83,7 +83,7 @@ Wenn auf der Seite **Artikelmodellgruppe** das Kontrollkästchen **Physischen We
 
 Die Buchung "5b" wird mit der Zugangsbuchung "1b" ausgeglichen. Dabei erfolgt für die Abgangsbuchung eine Regulierung in Höhe von EUR –11,25. Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. Die folgende Abbildung zeigt die Auswirkungen des Lagermodells FIFO für diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** verwendet wird. 
 
-![FIFO mit "Physischen Wert einbeziehen"](./media/fifowithincludephysicalvalue.gif) 
+![FIFO mit „Physischen Wert einbeziehen“.](./media/fifowithincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 
@@ -115,7 +115,7 @@ Der Begriff "Markierung" bezeichnet ein Verfahren zum Verknüpfen (oder Markiere
 
 Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. Die folgende Abbildung gibt Aufschluss über die Auswirkungen des FIFO-Lagermodells auf diese Reihe von Buchungen, die bei markierten Ab- und Zugängen anfallen. 
 
-![FIFO mit Markierung](./media/fifowithmarking.gif) 
+![FIFO mit Markierung.](./media/fifowithmarking.gif) 
 
 **Diagrammschlüssel**
 

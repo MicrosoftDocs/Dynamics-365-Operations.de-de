@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 64b228954c040050f605d60cd416c112f3b12e25
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f00ca2748c3c8f7ec839069f21a5846377b6be04
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802044"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349551"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Peripheriegeräte mit der Verkaufsstelle (POS) verbinden
 
@@ -78,7 +78,7 @@ Während die Hardwarestation selbst auf der Kanalebene unter Einbeziehung Instan
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS mit verbundenen Peripheriegeräten
 
-[![Herkömmlich, feste Verkaufsstelle](./media/traditional-300x279.png)](./media/traditional.png)
+[![Herkömmlich, feste Verkaufsstelle.](./media/traditional-300x279.png)](./media/traditional.png)
 
 Um MPOS mit POS-Peripheriegeräte in einem herkömmlichen, festen POS-Szenario zu verbinden, navigieren Sie zuerst zum Register selbst und weisen Sie dann ein Hardwareprofil zu. Sie finden die POS-Register unter **Retail nd Commerce** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**. 
 
@@ -97,7 +97,7 @@ Abschließend verwenden Sie den Vorgang **Hardwarestation auswählen** in MPOS u
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS oder Cloud POS mit eigenständiger Hardwarestation
 
-[![Freigegebene Peripheriegeräte](./media/shared-300x254.png)](./media/shared.png)
+[![Freigegebene Peripheriegeräte.](./media/shared-300x254.png)](./media/shared.png)
 
 In diesem Szenario ist eine eigenständige Hardwarestation für MPO- und Cloud POS-Kunden freigegeben. Dieses Szenario erfordert die Erstellung eines Hardwarestationsprofils zum Spezifizieren des Download-Pakets, des Ports und des Hardwareprofils, das die Hardwarestation verwendet. Sie können die Hardwarestationsprofile unter **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwarestationsprofile** finden. 
 

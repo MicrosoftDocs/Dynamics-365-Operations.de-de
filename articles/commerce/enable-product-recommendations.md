@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 873266405638cd277eb748ad7e966ba8a4976b13
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0a94a74f4eb00c24142f0390bcf352db0594ca0b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019858"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349471"
 ---
 # <a name="enable-product-recommendations"></a>Produktempfehlungen aktivieren
 
@@ -68,7 +68,7 @@ Um Produktempfehlungen zu aktivieren, gehen Sie folgendermaßen vor:
 1. Wählen Sie die Funktion **Produktempfehlungen** aus.
 1. Wählen sie im Eigenschaftsbereich **Produktempfehlungen** die Option **Jetzt aktivieren** aus.
 
-![Aktivieren von Empfehlungen](./media/FeatureManagement_Recommendations.PNG)
+![Aktivieren von Empfehlungen.](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
 > Diese Verfahren startet den Vorgang zum Generieren von Produktempfehlungslisten. Es kann bis zu mehreren Stunden dauern, bis die Listen an der Verkaufsstelle (POS) oder in Dynamics 365 Commerce angezeigt werden.

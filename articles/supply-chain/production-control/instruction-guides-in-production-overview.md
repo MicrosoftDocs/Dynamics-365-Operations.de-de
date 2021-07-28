@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: WorkGuidesManufacturing
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 61943
+ms.custom:
+- "61943"
+- intro-internal
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 15595c46f9d6ff91f6fd618859e9f059ae88bd78
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d172e3dfcb9ca70e1047a174040e7940bdd25296
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910088"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354011"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Bereitstellung von Anleitungen mit gemischter Realität für Arbeiter in der Produktion
 
@@ -38,7 +40,7 @@ Dynamics 365 Guides kann helfen, Ihre Mitarbeiter durch praktisches Lernen zu be
 Sie können Anleitungen zu verschiedenen Aspekten der Produktionssteuerung anhängen, darunter:
 
 - [Ressourcen](#resources)
-- [Ressourcengruppen ](#resource-groups)
+- [Ressourcengruppen](#resource-groups)
 - [Freigegebene Produkte](#released-products)
 - [Formeln](#formulas)
 - [Formelversionen](#formula-versions)
@@ -57,7 +59,7 @@ In den folgenden Unterabschnitten werden einige ausgewählte Szenarien beschrieb
 
 ### <a name="assembly"></a>Assembly
 
-![Verwenden Sie Guides für Montageaufgaben](media/instruction-guides-hero-assembly.png "Verwenden Sie Guides für Dienstleistungsaufgaben")
+![Verwenden Sie Guides für Montageaufgaben.](media/instruction-guides-hero-assembly.png "Verwenden Sie Guides für Dienstleistungsaufgaben")
 
 Anweisungen für Montagevorgänge zeigen den Mitarbeitern die Werkzeuge und Teile, die sie benötigen, und wie sie in realen Arbeitssituationen eingesetzt werden können.
 
@@ -65,7 +67,7 @@ Produktionsleiter können Guides erstellen und zuweisen, zum Beispiel für [Prod
 
 ### <a name="service"></a>Dienstleistung
 
-![Verwenden Sie Guides für Dienstleistungsaufgaben](media/instruction-guides-hero-service.png "Verwenden Sie Guides für Dienstleistungsaufgaben")
+![Verwenden Sie Guides für Dienstleistungsaufgaben.](media/instruction-guides-hero-service.png "Verwenden Sie Guides für Dienstleistungsaufgaben")
 
 Rüsten Sie die Techniker auf der Baustelle mit geführten Anweisungen aus, sodass keine zusätzlichen Besuche geplant werden müssen.
 
@@ -73,7 +75,7 @@ Serviceleiter können Guides beispielsweise bestimmten [Produkten](../../commerc
 
 ### <a name="quality"></a>Qualität
 
-![Verwenden Sie Guides für Qualitätssicherungsaufgaben](media/instruction-guides-hero-quality.png "Verwenden Sie Guides für Qualitätssicherungsaufgaben")
+![Verwenden Sie Guides für Qualitätssicherungsaufgaben.](media/instruction-guides-hero-quality.png "Verwenden Sie Guides für Qualitätssicherungsaufgaben")
 
 Führen Sie neue Prozesse ein und sorgen Sie für mehr Konsistenz, indem Sie das Wissen der Mitarbeiter in ein wiederholbares Werkzeug verwandeln.
 
@@ -81,13 +83,13 @@ Qualitätssicherungsleiter können Guides beispielsweise bestimmten [Produkten](
 
 ### <a name="certifications"></a>Bescheinigungen
 
-![Verwenden Sie Anleitungen für zertifizierungsbezogene Aufgaben](media/instruction-guides-hero-certification.png "Verwenden Sie Guides für zertifizierungsbezogene Aufgaben")
+![Verwenden Sie Anleitungen für zertifizierungsbezogene Aufgaben.](media/instruction-guides-hero-certification.png "Verwenden Sie Guides für zertifizierungsbezogene Aufgaben")
 
 Stellen Sie sicher, dass jeder Mitarbeiter hohe Standards erfüllt, indem Sie schnell erkennen, wer wo Hilfe benötigt.
 
 ### <a name="safety"></a>Sicherheit
 
-![Verwenden Sie Guides in Arbeitsschutzanweisungen](media/instruction-guides-hero-safety.png "Verwenden Sie Guides in Arbeitsschutzanweisungen")
+![Verwenden Sie Guides in Arbeitsschutzanweisungen.](media/instruction-guides-hero-safety.png "Verwenden Sie Guides in Arbeitsschutzanweisungen")
 
 Geben Sie Anweisungen, die gefährliche Vorgänge virtuell durchlaufen, bevor Sie es in der physischen Umgebung versuchen. Mit einem Mixed-Reality-Ansatz können Mitarbeiter gefährliche Verfahren virtuell erleben.
 
@@ -119,7 +121,7 @@ Um die Funktion auf Ihrem System verfügbar zu machen, müssen Sie dessen Konfig
 
 Um zu konfigurieren, wie Guides in der Werkstatt angezeigt werden, gehen Sie zu **Mixed Reality \> Dynamics 365 Guides \>, Guides-Integration konfigurieren**.
 
-![Konfigurieren Sie die Guide-Integration für die Fertigung](media/instruction-guides-configure-integration.png "Konfigurieren Sie die Guide-Integration für die Fertigung")
+![Konfigurieren Sie die Guide-Integration für die Fertigung.](media/instruction-guides-configure-integration.png "Konfigurieren Sie die Guide-Integration für die Fertigung")
 
 Stellen Sie die folgenden Felder ein:
 
@@ -136,7 +138,7 @@ Stellen Sie die folgenden Felder ein:
 
 Verwenden Sie die Seite **Alle Guides**, um eine Liste aller verfügbaren Guides in Ihrer Organisation sowie alle Zuordnungen zu Ihren Produktionsprozessen und Ressourcen zu sehen.. Zum Öffnen der Liste gehen Sie zu **Mixed Reality \> Guides \> Alle Guides**. Die Liste oben zeigt alle verfügbaren Guides. Sie können das Feld hier verwenden, um die Liste zu filtern. Die Liste unten zeigt alle Guide-Zuweisungen und bietet eine Symbolleiste für deren Verwaltung.
 
-![Guides verwalten](media/instruction-guides-allguides.png "Guides verwalten")
+![Guides verwalten.](media/instruction-guides-allguides.png "Guides verwalten")
 
 In den folgenden Abschnitten werden die Objekttypen beschrieben, denen Sie Guides zuweisen können. Jede zugewiesene Anleitung enthält Anweisungen, die automatisch den jeweiligen Produktionsaufträgen beigefügt werden und in der Werkstatt verfügbar sind.
 
@@ -157,7 +159,7 @@ So fügen Sie einen Guide einer Ressource hinzu:
 1. Erweitern Sie das Inforegister **Zugehörige Guides**.
 1. Wählen Sie **Hinzufügen** von der Symbolleiste **Zugehörige Guides**. Dem Raster wird eine neue Zeile hinzugefügt.
 1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten. Wenn Sie eine große Anzahl von Guides haben, können Sie die Liste filtern, um den gesuchten zu finden.
-    ![Guides verwalten](media/instruction-guides-allguides.png "Guides verwalten")
+    ![Guides verwalten.](media/instruction-guides-allguides.png "Guides verwalten")
 
 ## <a name="associate-a-guide-to-a-resource-group"></a><a name="resource-groups"></a>Verknüpfen Sie einen Guide mit einer Ressourcengruppe
 
@@ -178,7 +180,7 @@ So fügen Sie einen Guide einer Ressourcengruppe hinzu:
 1. Erweitern Sie das Inforegister **Zugehörige Guides**.
 1. Wählen Sie **Hinzufügen** von der Symbolleiste **Zugehörige Guides**. Dem Raster wird eine neue Zeile hinzugefügt.
 1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten. Wenn Sie eine große Anzahl von Guides haben, können Sie die Liste filtern, um den gesuchten zu finden.
-    ![Hinzufügen eines Guide zu einer Ressourcengruppe](media/instruction-guides-resourcegroup.png "Hinzufügen eines Guide zu einer Ressourcengruppe")
+    ![Hinzufügen eines Guide zu einer Ressourcengruppe.](media/instruction-guides-resourcegroup.png "Hinzufügen eines Guide zu einer Ressourcengruppe")
 
 ## <a name="associate-a-guide-to-a-released-product"></a><a name="released-products"></a>Verknüpfen eines Guide mit einem freigegebenen Produkt
 
@@ -198,7 +200,7 @@ So fügen Sie einen Guide einem freigegebenen Produkt hinzu:
 1. Die Seite **Zugehörige Guides** wird für Ihr ausgewähltes Produkt geöffnet.
 1. Wählen Sie im Aktivitätsbereich **Hinzufügen** aus, um eine neue Position zum Raster hinzuzufügen. 
 1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
-    ![Hinzufügen eines Guides zu einem freigegebenen Produkt](media/instruction-guides-ReleasedProduct-AddGuides.png "Hinzufügen eines Guides zu einem freigegebenen Produkt")
+    ![Hinzufügen eines Guides zu einem freigegebenen Produkt.](media/instruction-guides-ReleasedProduct-AddGuides.png "Hinzufügen eines Guides zu einem freigegebenen Produkt")
 
 ## <a name="associate-a-guide-to-a-formula"></a><a name="formulas"></a>Verknüpfen eines Guides mit einer Formel
 
@@ -223,7 +225,7 @@ So fügen Sie einen Guide einer Formel hinzu:
 1. Erweitern Sie das Inforegister **Zugehörige Guides**.
 1. Wählen Sie **Hinzufügen** von der Symbolleiste **Zugehörige Guides**. Dem Raster wird eine neue Zeile hinzugefügt.
 1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
-    ![Hinzufügen eines Guides zu einer Formel](media/instruction-guides-Formula.png "Hinzufügen eines Guides zu einer Formel")
+    ![Hinzufügen eines Guides zu einer Formel.](media/instruction-guides-Formula.png "Hinzufügen eines Guides zu einer Formel")
 
 ## <a name="associate-a-guide-to-a-formula-version"></a><a name="formula-versions"></a>Verknüpfen eines Guides mit einer Formelversion
 
@@ -248,11 +250,11 @@ So fügen Sie einen Guide einer Formelversion hinzu:
 1. Öffnen Sie die Registerkarte **Überschrift** über dem oberen Inforegister.
 1. Auf dem Inforegister **Formelversionen** wählen Sie die Version aus, der Sie einen Guide zuweisen möchten.
 1. Auf der Symbolleiste **Formelversionen** wählen Sie **Zugehörige Guides** aus.
-    ![Öffnen Sie die Guides, die einer ausgewählten Formelversion zugeordnet sind](media/instruction-guides-FormulaVersion.png "Öffnen Sie die Guides, die einer ausgewählten Formelversion zugeordnet sind")
+    ![Öffnen Sie die Guides, die einer ausgewählten Formelversion zugeordnet sind.](media/instruction-guides-FormulaVersion.png "Öffnen Sie die Guides, die einer ausgewählten Formelversion zugeordnet sind")
 1. Die Seite **Zugehörige Guides** wird für Ihre Formelversion geöffnet.
 1. Wählen Sie im Aktivitätsbereich **Hinzufügen** aus, um eine neue Position zum Raster hinzuzufügen. 
 1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
-    ![Hinzufügen eines Guides zu einer Formelversion](media/instruction-guides-FormulaVersionAddGuide.png "Hinzufügen eines Guides zu einer Formelversion")
+    ![Hinzufügen eines Guides zu einer Formelversion.](media/instruction-guides-FormulaVersionAddGuide.png "Hinzufügen eines Guides zu einer Formelversion")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials"></a><a name="bom"></a>Verknüpfen eines Guides mit einer Stückliste
 
@@ -275,7 +277,7 @@ So fügen Sie einen Guide einer Stückliste hinzu:
 1. Erweitern Sie das Inforegister **Zugehörige Guides**.
 1. Wählen Sie **Hinzufügen** von der Symbolleiste **Zugehörige Guides**. Dem Raster wird eine neue Zeile hinzugefügt.
 1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
-    ![Hinzufügen eines Guides zu einer Stückliste](media/instruction-guides-BOM.png "Hinzufügen eines Guides zu einer Stückliste")
+    ![Hinzufügen eines Guides zu einer Stückliste.](media/instruction-guides-BOM.png "Hinzufügen eines Guides zu einer Stückliste")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials-version"></a><a name="bom-versions"></a>Verknüpfen eines Guides mit einer Stücklistenversion
 
@@ -297,11 +299,11 @@ So fügen Sie einen Guide einer Stücklistenversion hinzu:
 1. Öffnen Sie die Registerkarte **Überschrift** über dem oberen Inforegister.
 1. Auf dem Inforegister **Stücklistenversionen** wählen Sie die Version aus, der Sie einen Guide zuweisen möchten.
 1. Auf der Symbolleiste **Stücklistenversionen** wählen Sie **Zugehörige Guides** aus.
-    ![Öffnen Sie die Guides, die einer ausgewählten Stücklistenversion zugeordnet sind](media/instruction-guides-BOMVersion.png "Öffnen Sie die Guides, die einer ausgewählten Stücklistenversion zugeordnet sind")
+    ![Öffnen Sie die Guides, die einer ausgewählten Stücklistenversion zugeordnet sind.](media/instruction-guides-BOMVersion.png "Öffnen Sie die Guides, die einer ausgewählten Stücklistenversion zugeordnet sind")
 1. Die Seite **Zugehörige Guides** wird für Ihre Stücklistenversion geöffnet.
 1. Wählen Sie im Aktivitätsbereich **Hinzufügen** aus, um eine neue Position zum Raster hinzuzufügen.
 1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
-    ![Hinzufügen eines Guides zu einer Stücklistenversion](media/instruction-guides-BOMVersionAddGuide.png "Hinzufügen eines Guides zu einer Stücklistenversion")
+    ![Hinzufügen eines Guides zu einer Stücklistenversion.](media/instruction-guides-BOMVersionAddGuide.png "Hinzufügen eines Guides zu einer Stücklistenversion")
 
 ## <a name="associate-a-guide-to-a-route"></a><a name="routes"></a>Verknüpfen eines Guides mit einem Arbeitsplan
 
@@ -322,7 +324,7 @@ So fügen Sie einen Guide einem Arbeitsplan hinzu:
 1. Erweitern Sie das Inforegister **Zugehörige Guides**.
 1. Wählen Sie **Hinzufügen** von der Symbolleiste **Zugehörige Guides**. Dem Raster wird eine neue Zeile hinzugefügt.
 1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
-    ![Hinzufügen eines Guides zu einem Arbeitsplan](media/instruction-guides-Route.png "Hinzufügen eines Guides zu einem Arbeitsplan")
+    ![Hinzufügen eines Guides zu einem Arbeitsplan.](media/instruction-guides-Route.png "Hinzufügen eines Guides zu einem Arbeitsplan")
 
 ## <a name="associate-a-guide-to-a-route-version"></a><a name="route-versions"></a>Verknüpfen eines Guides mit einer Arbeitsplanversion
 
@@ -340,11 +342,11 @@ So fügen Sie einen Guide einer Arbeitsplanversion hinzu:
 1. Öffnen Sie den Arbeitsplan, dem Sie einen Guide zuweisen möchten.
 1. Auf dem Inforegister **Versionen** wählen Sie die Version aus, der Sie einen Guide zuweisen möchten.
 1. Auf der Symbolleiste **Versionen** wählen Sie **Zugehörige Guides** aus.
-    ![Öffnen Sie die Guides, die einer ausgewählten Arbeitsplanversion zugeordnet sind](media/instruction-guides-RouteVersion.png "Öffnen Sie die Guides, die einer ausgewählten Arbeitsplanversion zugeordnet sind")
+    ![Öffnen Sie die Guides, die einer ausgewählten Arbeitsplanversion zugeordnet sind.](media/instruction-guides-RouteVersion.png "Öffnen Sie die Guides, die einer ausgewählten Arbeitsplanversion zugeordnet sind")
 1. Die Seite **Zugehörige Guides** wird für Ihre Stücklistenversion geöffnet.
 1. Wählen Sie im Aktivitätsbereich **Hinzufügen** aus, um eine neue Position zum Raster hinzuzufügen.
 1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten.
-    ![Hinzufügen eines Guides zu einer Arbeitsplanversion](media/instruction-guides-RouteVersionAddGuide.png "Hinzufügen eines Guides zu einer Arbeitsplanversion")
+    ![Hinzufügen eines Guides zu einer Arbeitsplanversion.](media/instruction-guides-RouteVersionAddGuide.png "Hinzufügen eines Guides zu einer Arbeitsplanversion")
 
 ## <a name="associate-a-guide-to-a-route-operation-relation"></a><a name="route-operation-relations"></a>Verknüpfen eines Guides mit einer Arbeitsplanvorgangsbeziehung
 
@@ -367,8 +369,8 @@ So fügen Sie einen Guide zu einer Arbeitsplanvorgangsbeziehung hinzu:
 1. Die Seite **Arbeitsplandetails** wird für Ihren ausgewählten Arbeitsplan geöffnet.
 1. Wählen Sie im oberen Raster den Vorgang aus, für den Sie eine Anleitung bereitstellen möchten.
 1. Wählen Sie im unteren Raster eine bestimmte Beziehung (oder die generische Beziehung **Alle**) aus.
-    ![Wählen Sie einen Vorgang und dann eine Beziehung aus](media/instruction-guides-RouteOperationRelation.png "Wählen Sie einen Vorgang und dann eine Beziehung aus")
-1. Öffnen Sie über dem unteren Raster die Registerkarte **Zugehörige Guides** aus.  ![Die Registerkarte Zugehörige Guides](media/instruction-guides-RouteOperationRelation-AddGuide.png "Die Registerkarte Zugehörige Guides")
+    ![Wählen Sie einen Vorgang und dann eine Beziehung aus.](media/instruction-guides-RouteOperationRelation.png "Wählen Sie einen Vorgang und dann eine Beziehung aus")
+1. Öffnen Sie über dem unteren Raster die Registerkarte **Zugehörige Guides** aus.  ![Die Registerkarte Zugehörige Guides.](media/instruction-guides-RouteOperationRelation-AddGuide.png "Die Registerkarte Zugehörige Guides")
 1. Wählen Sie **Hinzufügen** in der Symbolleiste oben im unteren Raster aus, um dem Raster eine neue Position hinzuzufügen.
 1. Verwenden Sie für die neue Zeile die Dropdown-Liste in der Spalte **Name**, um den Guide auszuwählen, den Sie zuweisen möchten. Aktivieren Sie im Rest der Zeile das Kontrollkästchen für jeden Kontext, in dem der ausgewählte Guide verfügbar sein soll.
 
@@ -379,18 +381,18 @@ So fügen Sie einen Guide zu einer Arbeitsplanvorgangsbeziehung hinzu:
 
 Wenn ein Mitarbeiter eine Einzelvorgangsliste auf der Fertigungsausführungsoberfläche öffnet, findet Supply Chain Management die relevanten Guides für die angezeigten Einzelvorgänge. Verwenden Sie die **Anleitungen**-Schaltfläche, um die entsprechenden Anleitungen anzuzeigen.
 
-![Schaltfläche Guides auf der Fertigungsausführungsoberfläche](media/instruction-guides-Shopfloor1.png "Schaltfläche Guides auf der Fertigungsausführungsoberfläche")
+![Schaltfläche Guides auf der Fertigungsausführungsoberfläche.](media/instruction-guides-Shopfloor1.png "Schaltfläche Guides auf der Fertigungsausführungsoberfläche")
 
 Ziehen Sie dann eine HoloLens an und greifen Sie auf die jeweilige Anleitung zu, indem Sie einen Blick auf den QR-Code werfen und den entsprechenden Guide aktivieren.
 
-![QR-Code für den Zugriff auf Anleitungen mit einer HoloLens](media/instruction-guides-Shopfloor2.png "QR-Code für den Zugriff auf Guides mit einer HoloLens")
+![QR-Code für den Zugriff auf Anleitungen mit einer HoloLens.](media/instruction-guides-Shopfloor2.png "QR-Code für den Zugriff auf Guides mit einer HoloLens")
 
 ## <a name="resolving-the-logic-for-selecting-guides"></a><a name="logic"></a>Auflösen der Logik zur Auswahl von Guides
 
 Sie können den folgenden Produktionsdaten Guides hinzufügen:
 
 - [Ressourcen](#resources)
-- [Ressourcengruppen ](#resource-groups)
+- [Ressourcengruppen](#resource-groups)
 - [Freigegebene Produkte](#released-products)
 - [Formeln](#formulas)
 - [Formelversionen](#formula-versions)
@@ -406,7 +408,7 @@ Wenn das Supply Chain Management die Einzelvorgänge für die Produktion generie
 - Wenn Sie eine Arbeitsplanversion an einen Produktionsauftrag anhängen, werden alle an diese Version angehängten Guides und auch die Guides, die an den übergeordneten Arbeitsplan dieser Version angehängt sind, im Einzelvorgang angezeigt.
 - Wenn Sie mehrere Arbeitsplanvorgangsbeziehungen definieren, die die Beziehung *Alle* enthalten, und ihnen Guides zuordnen, werden nur die Guides aus der spezifischsten Beziehung für den Einzelvorgang angezeigt.  
 
-![Diagramm zum Auflösen der relevanten Guides](media/instruction-guides-Resolve.png "Diagramm zum Auflösen der relevanten Guides")
+![Diagramm zum Auflösen der relevanten Guides.](media/instruction-guides-Resolve.png "Diagramm zum Auflösen der relevanten Guides")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

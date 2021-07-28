@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3982232e5008d6f8c283d6cecfaf2fa6e66150a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d2fe07790f64f7e7f672980f80a3e56804cefd66
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836733"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351536"
 ---
 # <a name="creating-work-orders"></a>Erstellen von Arbeitsaufträgen
 
@@ -48,7 +48,7 @@ Führen Sie die folgenden Schritte aus, um Arbeitsaufträge zu erstellen, die au
 
     Das Dialogfeld **Arbeitsaufträge erstellen** wird angezeigt. Die Gesamtanzahl von Planungsstunden für die ausgewählten Positionen wird im Feld **Wartungsprognosestunden** angezeigt.
 
-    ![Das Dialogfeld „Arbeitsaufträge erstellen“](media/18-preventive-maintenance.png)
+    ![Das Dialogfeld „Arbeitsaufträge erstellen“.](media/18-preventive-maintenance.png)
 
 1. Im Abschnitt **Parameter** geben Sie die Anzahl der Arbeitsaufträge an, die erstellt werden sollen. Folgende Optionen stehen zur Auswahl:
 

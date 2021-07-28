@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 71ec26bea2063bcf8b6d302a7ece804b3ac934b3
-ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
+ms.openlocfilehash: 94ecd623d445e23cc41829c51429e4783daa49f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304366"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355972"
 ---
 # <a name="view-manage-and-approve-planned-orders"></a>Geplante Aufträge anzeigen, verwalten und genehmigen
 
@@ -65,7 +65,7 @@ Die Genehmigung geplanter Aufträge ist ein optionaler Schritt im Prozess der Er
 
 Die folgende Abbildung zeigt, wie Sie den Wert **Status**, der jedem geplanten Auftrag zugeordnet ist, zur Implementierung eines Genehmigungs-Workflows verwenden können. Um einen Genehmigungsprozess zu implementieren, passen Sie den **Status**-Wert für jeden geplanten Auftrag manuell an, wie im vorherigen Abschnitt beschrieben.
 
-![Flow des Bestellvorschlags](media/approved-planned-orders-1.png)
+![Flow des Bestellvorschlags.](media/approved-planned-orders-1.png)
 
 > [!TIP]
 > Wir empfehlen, dass Sie alle geänderten geplanten Aufträge genehmigen. Andernfalls werden die Bearbeitungen ignoriert und beim nächsten Planungslauf überschrieben.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: b52331bb1c7a1bc2c764008112f3df9cc0385995
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9213827ea1ad342beb7ac2fe586606651cfdcfa1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023283"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358433"
 ---
 # <a name="set-up-payment-fees-for-tds-authority-payments"></a>Einrichten einer Zahlungsgebühr für TDS-Behördenzahlungen
 
@@ -31,7 +31,7 @@ In diesem Thema wird erläutert, wie Sie Zahlungsgebühren einrichten, die für 
 
 1. Gehen Sie zu **Kreditorenkonten \> Zahlungseinstellungen \> Zahlungsgebühr**.
 
-    [![Seite „Zahlungsgebühr“](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
+    [![Seite „Zahlungsgebühr“.](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
 
 2. Wählen Sie **Neu** aus, um eine Zahlungsgebühr zu erstellen, und geben Sie die erforderlichen Details ein.
 3. Wählen Sie im Feld **Gebührentyp** den Typ der Zahlungsgebühr aus:
@@ -46,7 +46,7 @@ In diesem Thema wird erläutert, wie Sie Zahlungsgebühren einrichten, die für 
 5. Geben Sie die weiteren erforderlichen Informationen ein.
 6. Wählen Sie im Aktionsbereich die Option **Zahlungsgebühreinstellungen** aus, um die Seite **Zahlungsgebühreinstellungen** zu öffnen, auf der Sie Zahlungsgebühren für verschiedene Kombinationen von Banken, Zahlungsmethoden, Zahlungsspezifikationen, Währungen und Datumsintervallen einrichten können.
 
-    [![Seite „Zahlungsgebühreinstellungen“](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
+    [![Seite „Zahlungsgebühreinstellungen“.](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
 
 7. Legen Sie auf der Registerkarte **Übersicht** im Feld **Gruppierungen** fest, für welche Banken Sie die Zahlungsgebühr einrichten:
 
@@ -64,7 +64,7 @@ In diesem Thema wird erläutert, wie Sie Zahlungsgebühren einrichten, die für 
 15. Wählen Sie im Feld **Gebührenwährung** den Währungscode für die Gebühr aus.
 16. Wählen Sie die Registerkarte **Allgemein** aus, um die Details des ausgewählten Bankkontos anzuzeigen oder zu ändern.
 
-    [![Registerkarte „Allgemeines“](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
+    [![Registerkarte „Allgemeines“.](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
 
 16. Geben Sie im Feld **Minimum** den Mindestbuchungsbetrag an, der die Gebühr aktiviert.
 17. Geben Sie im Feld **Maximum** den Höchstbuchungsbetrag an, der die Gebühr aktiviert.
@@ -74,7 +74,7 @@ In diesem Thema wird erläutert, wie Sie Zahlungsgebühren einrichten, die für 
 21. Wählen Sie im Feld **Artikel-Mehrwertsteuergruppe** die Artikel-Mehrwertsteuergruppe aus, anhand der die Artikel-Mehrwertsteuer für den Gebührenbetrag berechnet werden soll.
 22. Wählen Sie die Registerkarte **Intervall** aus. 
 
-    [![Registerkarte „Intervall“](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
+    [![Registerkarte „Intervall“.](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
 
 23. Geben Sie im Feld **Tage** die Anzahl der Tage zwischen dem Buchungsdatum (Skontodatum) der Zahlung und dem Fälligkeitsdatum des Solawechsels ein.
 24. Wählen Sie im Feld **Prozentsatz/Betrag** aus, ob es sich bei der Spezifikation um einen Prozentsatz oder einen festen Betrag handelt.

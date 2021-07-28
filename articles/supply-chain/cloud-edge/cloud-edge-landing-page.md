@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261745"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354808"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Cloud- und Edge-Skalierungseinheiten für Workloads in der Fertigungs- und Lagerortverwaltung
 
@@ -41,7 +41,7 @@ Die Arbeitsauslastungsfunktionen werden kontinuierlich durch schrittweise Verbes
 
 Skalierungseinheiten erweitern Ihre zentrale Supply Chain Management Hub-Umgebung, indem sie dedizierte Verarbeitungskapazität hinzufügen. Skalierungseinheiten können in der Cloud laufen. Alternativ können sie auf dem Edge in Ihrer lokalen Einrichtung laufen.
 
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 mit Skalierungseinheiten":::
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 mit Skalierungseinheiten.":::
 
 Skalierungseinheiten bieten Resilienz, Zuverlässigkeit und Skalierbarkeit für die zugewiesenen Arbeitsauslastungen. Edge-Skalierungseinheiten können vorübergehend von der Cloud-Hub-Umgebung getrennt werden, und die Mitarbeiter arbeiten weiterhin in den zugewiesenen Arbeitsauslastungen am Edge.
 
@@ -157,7 +157,7 @@ Skalierungseinheiten werden in mehreren Lagermengeneinheiten (SKUs) und Preisopt
 
 Die Einstiegs-SKU heißt *Basic* und die leistungsfähigere SKU *Standard*. In jeder SKU ist eine bestimmte Anzahl monatlicher Transaktionen vorinstalliert. Sie können das monatliche Transaktionsbudget jedoch erhöhen, indem Sie für jede SKU Überschreitungs-Add-Ins hinzufügen.
 
-:::image type="content" source="media/SKUs-highlevel.png" alt-text="Add-Ins für Cloud-Skalierungseinheiten":::
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Add-Ins für Cloud-Skalierungseinheiten.":::
 
 > [!TIP]
 > Um die Größe zu ermitteln, die Ihren Anforderungen am besten entspricht, arbeiten Sie mit Ihrem Partner und Microsoft zusammen, um die monatliche Transaktionsgröße zu ermitteln, die Sie benötigen.
@@ -181,11 +181,11 @@ Wenn der gesuchte Mandant nicht in der Liste enthalten ist, gehen Sie zu [LCS](h
 
 Für jeden Mandanten zeigt die Liste den Onboardingstatus an.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Liste der Mandanten in der Registerkarte „Dynamics 365-Mandanten“":::
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Liste der Mandanten in der Registerkarte „Dynamics 365-Mandanten“,":::
 
 Wählen Sie **Zum Anfangen hier klicken**, um das Onboarding für den LCS-Mandanten anzufordern. Sie müssen die Bedingungen akzeptieren. Sie müssen auch eine geschäftliche E-Mail-Adresse angeben, an die Microsoft Mitteilungen senden kann, die mit dem Onboardingprozess zusammenhängen.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Sign-up-Antrag für einen Mandanten":::
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Sign-up-Antrag für einen Mandanten.":::
 
 Microsoft prüft Ihren Antrag und informiert Sie über eine E-Mail an die Adresse, die Sie im Anmeldeformular angegeben haben, über die nächsten Schritte. Microsoft arbeitet eng mit Ihnen zusammen, um Skalierungseinheiten in der Hybridtopologie für Ihr Geschäftsszenario zu aktivieren.
 
@@ -195,13 +195,13 @@ Nach Abschluss des Onboarding können Sie über den Port Skalierungseinheiten un
 
 Gehen Sie zum [Scale Unit Manager-Portal](https://aka.ms/SCMSUM), und melden Sie sich mit Ihrem Mandanten-Konto an. Auf der Seite **Skalierungseinheiten konfigurieren** können Sie eine Hub Umgebung hinzufügen, wenn sie nicht bereits aufgelistet ist. Sie können dann den Hub auswählen, den Sie mit Skalierungseinheiten und Arbeitsauslastungen konfigurieren möchten.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Erfahrung mit Skalierungseinheiten und Arbeitsauslastung":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Erfahrung mit Skalierungseinheiten und Arbeitsauslastung.":::
 
 Um eine oder mehrere Skalierungseinheiten hinzuzufügen, die in Ihrem Abonnement verfügbar sind, wählen Sie **Skalierungseinheiten hinzufügen**.
 
 Verwenden Sie auf der Registerkarte **Definierte Arbeitsauslastungen** die Schaltfläche **Arbeitsauslastung erstellen**, um einer Ihrer Skalierungseinheiten eine Arbeitsauslastung hinzuzufügen. Für jede Arbeitsauslastung müssen Sie den Kontext der Prozesse angeben, die zur Arbeitsauslastung gehören sollen. Bei Arbeitsauslastungen für die Lagerortverwaltung ist der Kontext ein bestimmtes Lager an einem bestimmten Standort und einer bestimmten juristischen Entität.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Erstellung von Arbeitsauslastung":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Erstellung von Arbeitsauslastung.":::
 
 > [!TIP]
 > Im Laufe der Zeit werden der Scale Unit Manager-Umgebung schrittweise Verbesserungen hinzugefügt, um das Lebenszyklusverwaltung zu vereinfachen. Die spezifischen Funktionen für die aktuelle Version sind in einem Onboarding-Handbuch dokumentiert, das Kunden zur Verfügung steht, die gerade das Onboarding der verteilten Hybridtopologie für Supply Chain Management durchführen. <!-- KFM: Add a link to the handbook when it is published -->

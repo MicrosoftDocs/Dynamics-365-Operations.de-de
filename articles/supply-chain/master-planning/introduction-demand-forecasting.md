@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 72004
+ms.custom:
+- "72004"
+- intro-internal
 ms.assetid: 916707c9-1333-460f-a0fa-4e95f6fda2ad
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e00c980183708c5b9e995fb2a26d45baf13ca14
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cd029ae873ee604beb841568ce7f15b2e1575060
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829737"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348780"
 ---
 # <a name="demand-forecasting-overview"></a>Bedarfsplanung – Überblick
 
@@ -61,7 +63,7 @@ Drei wichtige Themen wurden in die Bedarfsplanung implementiert:
 
 Das folgende Diagramm zeigt den grundlegenden Ablauf in der Bedarfsplanung.
 
-[![Einführung in die Bedarfsplanung](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
+[![Diagramm zur Einführung in die Bedarfsplanung.](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
 Bedarfsplanungsgenerierung beginnt mit Supply Chain Management. Historische transaktionsbezogene Daten aus der Supply Chain Management-Transaktionsdatenbank werden gesammelt und in einer Stagingtabelle angezeigt. Diese Staging-Tabelle wird später an den Machine Learning-Service übergeben. Durch minimale Anpassungen können Sie verschiedene Datenquellen mit der Stagingtabelle verbinden. Die Datenquellen können Microsoft Excel-Dateien, kommagetrennte Wert (CSV)-Dateien und Daten von Microsoft Dynamics AX 2009 und Microsoft Dynamics AX 2012 einschließen. Sie können deshalb Bedarfsplanungen generieren, die historische Daten entscheiden, die von mehreren Systemen beschränkt wird. Allerdings müssen die Masterdaten, wie Artikelnamen und Maßeinheiten, in den unterschiedlichen Datenquellen übereinstimmen.
 

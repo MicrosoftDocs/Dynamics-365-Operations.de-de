@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: f0e26c63635179dc4c145f8d08e85fd110d9caac
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 63363678cb34af97781830d36d94fac1a7415394
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817772"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360873"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synchronisieren von Aufträgen direkt zwischen Sales und Supply Chain Management
 
@@ -35,7 +35,7 @@ Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwend
 
 Die Lösung Interessent nach Bargeld verwendet die Datenenintegrationsfunktion, um Daten über Instanzen von Supply Chain Management und Sales hinweg zu synchronisieren. Die „Interessent zu Bargeld“-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Supply Chain Management und Sales. Die folgende Abbildung zeigt, wie Daten zwischen Supply Chain Management und Sales synchronisiert werden.
 
-[![Datenfluss in Interessent nach Bargeld](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Datenfluss in Interessent nach Bargeld.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
 
@@ -189,23 +189,23 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Dat
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Aufträge (Supply Chain Management zu Sales) – Direkt: OrderHeader
 
-[![Vorlagenzuordnung in Datenintegration](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderline"></a>Aufträge (Supply Chain Management zu Sales) – Direkt: OrderLine
 
-[![Vorlagenzuordnung in Datenintegration](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderheader"></a>Aufträge (Sales zu Supply Chain Management) – Direkt: OrderHeader
 
-[![Vorlagenzuordnung in Datenintegration](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderline"></a>Aufträge (Sales zu Supply Chain Management) – Direkt: OrderLine
 
-[![Vorlagenzuordnung in Datenintegration](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![Vorlagenzuordnung in Datenintegration.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Interessent zu Bargeld](prospect-to-cash.md)
+[Prospect-to-Cash](prospect-to-cash.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

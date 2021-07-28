@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 08564ce7af7412f2501b917b3496942004402611
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 513ec2f48a3c7c81a41fd64a9752067d12eb4ec8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117224"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353861"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Konfigurieren Sie Produktdimensionswerte so, dass sie als Farbfelder angezeigt werden
 
@@ -39,11 +39,11 @@ Mit der Funktion Abmessungen als Farbfelder anzeigen kann Commerce hexadezimale 
 
 Die folgende Abbildung zeigt ein Beispiel, in dem Farben auf einem Commerce-PDP als Farbfelder angezeigt werden.
 
-![Beispiel für Farben, die auf einer Produktdetailseite als Farbfelder angezeigt werden](../dev-itpro/media/swatch_pdp.png)
+![Beispiel für Farben, die auf einer Produktdetailseite als Farbfelder angezeigt werden.](../dev-itpro/media/swatch_pdp.png)
 
 Die folgende Abbildung zeigt ein Beispiel, in dem Farben auf einer Commerce Suchergebnis-Listenseite als Farbfelder angezeigt werden.
 
-![Beispiel für Farben, die auf einer Suchergebnislistenseite als Farbfelder angezeigt werden](../dev-itpro/media/swatch_searchresults.PNG)
+![Beispiel für Farben, die auf einer Suchergebnislistenseite als Farbfelder angezeigt werden.](../dev-itpro/media/swatch_searchresults.PNG)
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Aktivieren Sie die Anzeigeabmessungen als Farbfelder in der Commerce-Zentralverwaltung
 
@@ -57,15 +57,15 @@ Die Konfiguration kann auf einer der folgenden Ebenen erfolgen:
 
 - **Abmessungen** – Öffnen Sie in der Commerce-Zentralverwaltung die Seite für eine Dimension, indem Sie nach **Farbe**, **Größe**, oder **Stil** suchen. Auf jeder Seite führt ein Raster die Dimensionswerte auf. Sie können die Anzeigereihenfolge, den Hexadezimalcode und die Bild-URL-Werte verwalten. Die folgende Abbildung zeigt eine Beispielkonfiguration der Seite **Farben**.
 
-    ![Beispiel für die Bemeßungskonfiguration auf der Seite Farben](../dev-itpro/media/swatch_Color.PNG)
+    ![Beispiel für die Bemessungskonfiguration auf der Seite Farben.](../dev-itpro/media/swatch_Color.PNG)
 
-- **Dimensionsgruppe** – In Dynamics 365 Commerce können Sie die Eigenschaft **RefinerGroup** verwenden, um die  Dimensionsgruppen zu erstellen. Wenn Dimensionsgruppen definiert sind, öffnen Sie die entsprechende Seite, indem Sie nach **Farbgruppe**, **Größengruppe** oder **Stilgruppe** suchen. Auf jeder Seite können Sie Hexadezimalcode, Bild-URL und Refiner-Gruppenwerte verwalten. Die folgende Abbildung zeigt eine Beispielkonfiguration der Seite **Farbgruppen**.
+- **Dimensionsgruppe** – In Dynamics 365 Commerce können Sie die Eigenschaft **RefinerGroup** verwenden, um die Dimensionsgruppen zu erstellen. Wenn Dimensionsgruppen definiert sind, öffnen Sie die entsprechende Seite, indem Sie nach **Farbgruppe**, **Größengruppe** oder **Stilgruppe** suchen. Auf jeder Seite können Sie Hexadezimalcode, Bild-URL und Refiner-Gruppenwerte verwalten. Die folgende Abbildung zeigt eine Beispielkonfiguration der Seite **Farbgruppen**.
 
-    ![Beispiel für die Bemeßungskonfiguration auf der Seite Farbgruppen](../dev-itpro/media/swatch_colorGroup.PNG)
+    ![Beispiel für die Bemessungskonfiguration auf der Seite Farbgruppen.](../dev-itpro/media/swatch_colorGroup.PNG)
 
 - **Produktdimension (während der Produkterstellung)** – Wenn Sie ein neues Produkt erstellen, können Sie die Seite **Produktabmessungen** verwenden, um die Bemeßungswerte einzugeben. Für bestehende Produkte sind die Felder **Hexcode**, **URL** (für Bilder) und **RefinerGroup** möglicherweise bereits festgelegt. Allerdings können Sie die Werte in diesem Feld ändern. Die folgende Abbildung zeigt eine Beispielkonfiguration der Seite **Produktdimensionen**.
 
-    ![Beispiel für die Bemeßungskonfiguration auf der Seite Produktdimensionen](../dev-itpro/media/swatch_product_dimensions.PNG)
+    ![Beispiel für die Bemessungskonfiguration auf der Seite Produktdimensionen.](../dev-itpro/media/swatch_product_dimensions.PNG)
 
 > [!NOTE]
 > Der Prozess zum Verwalten von Hexadezimalcode- und Bild-URL-Konfigurationen folgt demselben Muster, das zum Verwalten der Anzeigereihenfolge von Dimensionen verwendet wird.
@@ -76,7 +76,7 @@ Für die meisten Farbdimensionen sollte auf den Dimensionsseiten in der Commerce
 
 Die folgende Abbildung zeigt ein Beispiel, in dem Farbabmessungen mithilfe von Hexadezimalcode-Werten konfiguriert werden.
 
-![Beispiel für die Bemeßungskonfiguration, die Hexadezimalcodes verwendet](../dev-itpro/media/swatch_color_hexcode.png)
+![Beispiel für die Bemessungskonfiguration, die Hexcodes verwendet.](../dev-itpro/media/swatch_color_hexcode.png)
 
 ## <a name="configure-dimension-values-by-using-image-urls"></a>Konfigurieren Sie Bemeßungswerte mithilfe der Bild-URLs
 
@@ -86,13 +86,13 @@ Sie müssen jedes Bild in den Commerce Site Builder hochladen und veröffentlich
 
 Die folgende Abbildung zeigt eine Beispielkonfiguration, bei der Bild-URLs für die Konfiguration auf der Seite **Farben** verwendet wird.
 
-![Beispiel für die Bemeßungskonfiguration, die Bild-URLs verwendet](../dev-itpro/media/swatch_color_urls.PNG)
+![Beispiel für die Bemessungskonfiguration, die Bild-URLs verwendet.](../dev-itpro/media/swatch_color_urls.PNG)
 
 Sie können eine Medienvorlage verwenden, um Bild-URLs zu definieren, genau wie Sie es für Produkt- und Kategoriebilder tun können. Wenn Sie Bilder in den Site Builder hochladen, müssen die Dateinamenkonventionen und Dateipfade konsistent sein.
 
 Die folgende Abbildung zeigt eine Beispielkonfiguration, bei der Bild-URLs für die Konfiguration von Medienvorlagen verwendet werden.
 
-![Beispiel für die Konfiguration von Medienvorlagen](../dev-itpro/media/swatch_media_template.PNG)
+![Beispiel für die Konfiguration von Medienvorlagen.](../dev-itpro/media/swatch_media_template.PNG)
 
 ## <a name="configure-dimension-values-by-using-both-hex-codes-and-image-urls"></a>Konfigurieren Sie Bemeßungswerte mithilfe von Hexadezimalcodes und Bild-URLs
 
@@ -100,7 +100,7 @@ Für die meisten Farbabmessungen können Sie sowohl Hexadezimalcodes als auch Bi
 
 Die folgende Abbildung zeigt eine Beispielkonfiguration, bei der Hexadezimalcodes und Bild-URLs für die Konfiguration auf der Seite **Farben** verwendet wird.
 
-![Beispiel für die Bemeßungskonfiguration, die Bild-URLs und Hexadezimalcodes verwendet](../dev-itpro/media/swatch_color_hexandimage.png)
+![Beispiel für die Bemessungskonfiguration, die Bild-URLs und Hexcodes verwendet.](../dev-itpro/media/swatch_color_hexandimage.png)
 
 ## <a name="configure-refiner-groups"></a>Konfigurieren Sie Verfeinerungs-Gruppen
 
@@ -110,7 +110,7 @@ Wenn Ihre Farbdimensionswerte beispielsweise blau, blau kariert, blau gewaschen 
 
 Das Beispiel in der folgenden Abbildung zeigt die Beziehung zwischen den Eigenschaften **Farbe** und **RefinerGroup** in der Commerce Zentralverwaltung.
 
-![Beispiel für die Verwaltung von Verfeinerungs-Gruppen](../dev-itpro/media/swatch_refiner_group.png)
+![Beispiel für die Verwaltung von Verfeinerungsgruppen.](../dev-itpro/media/swatch_refiner_group.png)
 
 ## <a name="manage-images-in-commerce-site-builder"></a>Bilder im Commerce-Website-Generator verwalten
 
@@ -118,7 +118,7 @@ Wenn Bild-URLs für Dimensionswerte verwendet werden, müssen die entsprechenden
 
 Die folgende Abbildung zeigt ein Beispiel, in dem das Dialogfeld **Daten hochladen** verwendet wird, um Bilder in die Website-Generator-Medienbibliothek hochzuladen. Es hebt die Kategorien **Größe**, **Farbe** und **Stil** hervor, die zur Auswahl stehen.
 
-![Beispiel für Bilddateikategorien beim Hochladen in die Website-Generator-Medienbibliothek](../dev-itpro/media/swatch_sitebuilder.png)
+![Beispiel für Bilddateikategorien beim Hochladen in die Website-Generator-Medienbibliothek.](../dev-itpro/media/swatch_sitebuilder.png)
 
 ## <a name="enable-swatch-display-on-e-commerce-site-pages"></a>Aktivieren Sie die Farbfeldanzeige auf E-Commerce-Webseiten
 

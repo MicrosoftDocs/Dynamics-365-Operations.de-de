@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df08bdffb2bda67269eec9f1572bd76af9ae1e11
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2da54d147c7e9c8a42ef9de94abcbe7f36c98295
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747176"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355747"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Aktivitäten in Workflow-Genehmigungsprozessen
 
@@ -29,7 +29,7 @@ Dieser Artikel beschreibt die Aktivitäten, die jeder Teilnehmer an einen Workfl
 
 Ein Workflow kann mehrere Personengruppen umfassen: den Ersteller, Beauftragte für Aufgaben, Entscheidungsträger und genehmigende Personen. Im folgenden Workflow für Spesenabrechnungen ist z. B. Steffen der Ersteller, die Mitglieder der Warteschlange sind Beauftragte für Aufgaben, Jens ein Entscheidungsträger, während Frank, Saskia und Anne genehmigende Personen sind.
 
-[![Workflow\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
+[![Workflow\_WithManualDecision.](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
 
 In den folgenden Abschnitten werden die Workflowaktivitäten erläutert, die von jeder Gruppe ausgeführt werden können.
 

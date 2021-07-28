@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5161755b9e15e93fbb5eeb6404ea0820f7068ea7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 09930af8b6ce78a2a88382772a44de173875856a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796074"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352541"
 ---
 # <a name="configure-ratings-and-reviews"></a>Bewertungen und Prüfungen konfigurieren
 
@@ -46,7 +46,7 @@ Um eine Site zu konfigurieren, damit Bewertungen und Prüfungen angezeigt werden
 
 Die folgende Abbildung zeigt, wie diese Kongiguration aussieht in Dynamics 365 Commerce.
 
-![Konfigurieren einer Site, die Bewertungen und Prüfungen anzeigt](media/rnr-eCommerce-site-appsettings.png)
+![Konfigurieren einer Site, die Bewertungen und Prüfungen anzeigt.](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>Verknüpfen Sie eine Produktbewertung mit dem Bewertungsbereich auf einer PDP
 
@@ -60,7 +60,7 @@ Wenn Sie eine Produktbewertung mit dem Abschnitt **Bewertung** des PDP bewerten,
 
 Die folgende Abbildung zeigt, wie diese Kongiguration aussieht in Dynamics 365 Commerce.
 
-![Verknüpfen Sie eine Produktbewertung mit dem Bewertungsbereich auf einer PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Verknüpfen Sie eine Produktbewertung mit dem Bewertungsbereich auf einer PDP.](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>Konfigurieren Sie den Link für die Datenschutz- und Richtlinienseite
 
@@ -75,7 +75,7 @@ Um den Link für die Datenschutz- und Richtlinienseite zu konfigurieren, gehen S
 
 Die folgende Abbildung zeigt, wie diese Kongiguration aussieht in Dynamics 365 Commerce.
 
-![Konfigurieren Sie den Link für die Datenschutz- und Richtlinienseite](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Konfigurieren Sie den Link für die Datenschutz- und Richtlinienseite.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a>Konfigurieren Sie Bewertungen und Rezensionsmodule auf den Produktdetailseiten
 

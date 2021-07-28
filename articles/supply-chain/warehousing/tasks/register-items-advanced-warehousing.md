@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c58aa1cec6c0bfe33fa1ef90267dcd8ac1218157
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: af427e8df2ac7a3a3b5a7fd6edb740400f6bbeaf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830833"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358001"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Artikel für einen für die erweiterte Lagerhaltung aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
 
@@ -53,14 +53,14 @@ Das folgende Szenario zeigt, wie Sie eine Wareneingangserfassungs-Kopfzeile erst
 1. Setzen Sie **Kontonummer** auf *1001*.
 1. Setzen Sie **Nummer** auf die Nummer der Bestellung, die Sie für diese Übung ausgewählt haben.
 
-    ![Wareneingangserfassung](../media/item-arrival-journal-header.png "Wareneingangserfassung")
+    ![Wareneingangserfassung.](../media/item-arrival-journal-header.png "Wareneingangserfassung")
 
 1. Wählen Sie **OK**, um die Erfassungkopfzeile zu erstellen.
 1. Im Abschnitt **Erfassungspositionen** wählen Sie **Position hinzufügen** aus und geben Sie folgende Daten ein:
     - **Artikelnummer** – *M9200*. **Standort**, **Lagerort** und **Menge** werden basierend auf den Bestandstransaktionsdaten für die 10 Paletten (1.000 Stück) festgelegt.
     - **Standort** – Stellen Sie *001* ein. Dieser spezielle Standort verfolgt Ladungsträger nicht nach.
 
-    ![Wareneingangserfassungsposition](../media/item-arrival-journal-line.png "Wareneingangserfassungsposition")
+    ![Wareneingangserfassungsposition.](../media/item-arrival-journal-line.png "Wareneingangserfassungsposition")
 
     > [!NOTE]
     > Das Feld **Datum** bestimmt das Datum, an dem die verfügbare Menge dieses Artikels im Bestand erfasst wird.  

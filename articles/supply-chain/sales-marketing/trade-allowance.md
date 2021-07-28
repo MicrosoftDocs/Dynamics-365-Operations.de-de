@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 51b734e6a94ffdfabb218a19986f1bec65b839e7
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 35ceb14d4d048959ae6a1740791bd4d57f33b34c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102805"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359532"
 ---
 # <a name="trade-allowance-management"></a>Handelsvergütungsverwaltung
 
@@ -59,7 +59,7 @@ Ein Handelsvergütungsvertrag ist ein Anreizprogramm, bei dem Kunden, die bestim
 
 Mittel, die dem Durchschnitt, die den Handelsvergütungsverträgen zugewiesen sind, werden auf der Seite **Geldmittel** erfasst. Um die Seite **Geldmittel** zu öffnen, wählen Sie **Vertrieb und Marketing** \> **Handelsvergütungen** \> **Geldmittel** \> **Geldmittel** aus.
 
-![Fonds Seite](./media/trade-allowance-management-funds-page.png "Fonds-Seite")
+![Seite „Geldmittel“.](./media/trade-allowance-management-funds-page.png "Fonds-Seite")
 
 Auf der Seite **Geldmittel** können Sie die Details der verkaufsfördernden Mittel anzeigen.
 
@@ -75,9 +75,9 @@ Nachdem die Mitteldefinition durchgeführt wurde, werden im nächsten Schritt de
 
 Handelsvergütungsverträge werden auf der Seite **Handelsvergütungsverträge** erfasst. Um die Seite **Handelsvergütungsverträge** zu öffnen, wählen Sie **Vertrieb und Marketing** \> **Händlervergütung** \> **Handelsvergütungsverträge** aus.
 
-![Handelszulassungsabkommen Seite](./media/trade-allowance-management-agreements-page.png "Seite Handelszulassungsabkommen")
+![Seite „Handelszulassungsabkommen“.](./media/trade-allowance-management-agreements-page.png "Seite Handelszulassungsabkommen")
 
-#### <a name="header"></a>Header
+#### <a name="header"></a>Übergeordnet
 
 Wählen Sie **Kopfzeile** aus, um in die Kopfzeilenansicht zu wechseln.
 
@@ -103,7 +103,7 @@ Die Registerkarte **Verkaufereignisse** enthält die Ereignistypen, die durch vo
 
 Wenn Sie das Verkaufsereignis auswählen und dann auf die Registerkarte **Beträge** auswählen, werden die Details für das Ereignis angezeigt.
 
-![Handelszulagen-Abkommenszeilen](./media/trade-allowance-management-agreements-lines.png "Zeilen des Handelszulassungsabkommens")
+![Handelszulagen-Abkommenspositionen.](./media/trade-allowance-management-agreements-lines.png "Zeilen des Handelszulassungsabkommens")
 
 Im Abschnitt **Handelsvergütungspositionen** geben Sie die Mengen- oder Betragsbereiche an, die der Debitor als Definition erreichen muss, um die Belohnungen zu erhalten.
 
