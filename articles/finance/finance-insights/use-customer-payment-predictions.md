@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 1349521d65511864747de6c2fed3a904dea8917e
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 873a11f3151344de63ee0b01b586ccbffe0df51b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186563"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355625"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Verwenden der Zahlungsvorhersagen für Debitoren (Vorschau)
 
@@ -38,13 +38,13 @@ Der **Debitorenkredite und -inkasso verwalten**-Arbeitsbereich enthält zwei neu
 - Die Kachel **Zahlungsvorhersage pro Transaktion** zeigt die Anzahl der offenen Debitorentransaktionen mit einer Zahlungswahrscheinlichkeit von weniger als 50 Prozent im Bucket **Pünktlich** an. Sie können diese Kachel auswählen, um die Listenseite **Zahlungsvorhersagen pro Transaktion** zu öffnen.
 - Die Kachel **Debitoren mit prognostizierten sehr späten Salden** zeigt die Anzahl der Kunden, für die mehr als die Hälfte (50 Prozent) des Gesamtbetrags voraussichtlich verspätet und/oder sehr spät bezahlt wird. Sie können diese Kachel auswählen, um die Listenseite **Zahlungsvorhersagen pro Debitor** zu öffnen.
 
-[![Debitorenkredit und -inkasso-Arbeitsbereich verwalten](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
+[![Debitorenkredit und -inkasso-Arbeitsbereich verwalten.](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
 
 ### <a name="payment-predictions-per-transaction-list-page"></a>Zahlungsvorhersagen pro Transaktionslistenseite
 
 Auf der Listenseite **Zahlungsvorhersagen pro Transaktion** können Sie die Zahlungswahrscheinlichkeit für offene Transaktionen im Bucket **Pünktlich**, **Verspätet** und **Sehr spät** anzeigen. Für jede Transaktion im Raster wird zeigt die Spalte **Pünktliche Wahrscheinlichkeit** die Wahrscheinlichkeit, dass die Rechnung am oder vor dem Fälligkeitsdatum bezahlt wird. Wenn die Wahrscheinlichkeit einer pünktlichen Zahlung weniger als 50 Prozent beträgt, wird neben dem Prozentsatz in der Spalte **Pünktliche Wahrscheinlichkeit** ein roter Kreis angezeigt, um das Risiko einer verspäteten Zahlung anzuzeigen.
 
-[![Listenseite für Zahlungsvorhersagen pro Transaktion](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
+[![Listenseite für Zahlungsvorhersagen pro Transaktion.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
 Der Bereich **Verwandte Informationen** auf der rechten Seite zeigt weitere Details zu den Vorhersagen:
 
@@ -54,13 +54,13 @@ Der Bereich **Verwandte Informationen** auf der rechten Seite zeigt weitere Deta
 
 Die Daten im Abschnitt **Wichtigsten Faktoren** und auf den Inforegistern **Customer Insights** und **Debitorenverlauf** helfen bei der Erläuterung der Zahlungsvorhersagen. Dies kann dazu beitragen, Ihr Vertrauen in die Wirksamkeit der Vorhersagen zu stärken.
 
-[![Grafische Indikatoren für Zahlungsvorhersagen im Bereich „Verwandte Informationen“](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
+[![Grafische Indikatoren für Zahlungsvorhersagen im Bereich „Verwandte Informationen“.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
 ### <a name="payment-prediction-per-customer-list-page"></a>Listenseite der Zahlungsvorhersage pro Debitor
 
 Die Listenseite **Zahlungsvorhersage pro Debitor** zeigt in den Buckets **Pünktlich**, **Verspätet** und **Sehr spät** den gesamten offenen Kontostand und den Betrag, der voraussichtlich gezahlt wird.
 
-[![Seite der Zahlungsvorhersagen pro Debitor](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
+[![Seite der Zahlungsvorhersagen pro Debitor.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
 Der Zahlungsbetrag in jedem Bucket wird als Summe des gewichteten Durchschnitts des Transaktionssaldos berechnet. Dieser Betrag wird basierend auf den Zahlungswahrscheinlichkeiten in jedem Bucket berechnet.
 
@@ -92,11 +92,11 @@ Die Daten im Abschnitt **Wichtigsten Faktoren** und auf den Inforegistern **Cust
 
 Sie können die Genauigkeit der Zahlungsvorhersagen anzeigen, indem Sie zu **Kredit und Inkasso \> Einstellungen \> Finance insights \> Parameter für Finance insights** wechseln. Auf der **Debitorenzahlungseinblicke in die Kundenzahlung**-Registerkarte zeigt der **Vorhersagemodell**-Abschnitt die Genauigkeit des Vorhersagemodells in Prozent.
 
-[![Genauigkeit von Zahlungsvorhersagen](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+[![Genauigkeit von Zahlungsvorhersagen.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
 Wenn Sie mit der Genauigkeit nicht zufrieden sind, wählen Sie den **Modellgenauigkeit verbessern**-Link zum Öffnen der AI Builder-Erweiterungserfahrung. In der AI Builder-Erweiterungserfahrung können Sie die Feldauswahl auswählen oder abbrechen, bis Sie die Felder ausgewählt haben, die Ihrer Meinung nach für die genaue Vorhersage von Zahlungswahrscheinlichkeiten am wichtigsten sind. Wenn Sie fertig sind, können Sie das Vorhersagemodell einfach neu trainieren und Ihre Änderungen veröffentlichen. Das neu trainierte Vorhersagemodell wird automatisch für Vorhersagen in Dynamics 365 Finance aufgenommen.
 
-[![AI Builder-Erweiterungserfahrung](./media/ai-builder.png)](./media/ai-builder.png)
+[![AI Builder-Erweiterungserfahrung.](./media/ai-builder.png)](./media/ai-builder.png)
 
 ## <a name="release-details"></a>Freigabedetails
 

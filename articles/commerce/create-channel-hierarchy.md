@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5df46de9dadfa0b7160a9b340ef36fdf963a0ad3
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: e43c4c00545dfecb2f9a2192f81cd25300e3d6e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5951907"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352469"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Eine Kanalnavigationshierarchie erstellen
 
@@ -49,7 +49,7 @@ Um eine Kanalnavigationshierarchie zu erstellen, führen Sie die folgenden Schri
 
 Die folgende Abbildung zeigt einen beispielhaften Stammknoten.
 
-![Beispiel für einen Stammknoten](media/create-channel-hierarchy-1.png)
+![Beispiel für einen Stammknoten.](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Navigationskategorieknoten erstellen
 
@@ -65,7 +65,7 @@ Gehen Sie folgendermaßen vor, um zusätzliche Navigationskategorieknoten zu ers
 
 Das folgende Bild zeigt ein Beispiel einer vollständigen Kanalnavigationshierarchie.
 
-![Beispiel einer Kanalhierarchie](media/create-channel-hierarchy-2.png)
+![Beispiel einer Kanalhierarchie.](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Produkte zu Kategorieknoten hinzufügen
 
@@ -81,7 +81,7 @@ Gehen Sie folgendermaßen vor, um Produkte zu Kategorieknoten hinzuzufügen.
 
 Das folgende Bild zeigt einen Beispielknoten mit hinzugefügten Produkten.
 
-![Produkte zu einem Kategorieknoten hinzufügt](media/create-channel-hierarchy-3.png)
+![Produkte zu einem Kategorieknoten hinzufügt.](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Produktattributgruppen zu Kategorieknoten hinzufügen
 
@@ -97,7 +97,7 @@ Befolgen Sie diese Schritte, um ein Produkt einer Attributgruppe zu einem Katego
 
 Das folgende Bild zeigt einen Beispielknoten mit hinzugefügten Produktattributgruppen.
 
-![Produktattributgruppen auf einem Knoten](media/create-channel-hierarchy-4.png)
+![Produktattributgruppen auf einem Knoten.](media/create-channel-hierarchy-4.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

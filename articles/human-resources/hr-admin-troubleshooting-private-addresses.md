@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2edcef338f0ff8fcf231d4314fc972284397d000
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 15616a9b3673a4c1842e389b976a80d599e2e77f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053322"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346321"
 ---
 # <a name="access-to-private-addresses-by-security-role"></a>Zugriff auf private Adressen nach Sicherheitsrolle
 
@@ -35,9 +35,9 @@ Um das Problem zu beheben, muss der Kunde diese Schritte für die duplizierte Si
 
 1. Wechseln Sie zu **Organisationsverwaltung \> Globales Adressbuch \> Parameter für das globale Adressbuch**.
 2. Auf der Registerkarte **Sicherheit für private Standorte** verschieben Sie die neue Sicherheitsrolle von der Liste **Verfügbare Rollen** in die Liste **Ausgewählte Rollen**.
-3. Wählen Sie **Speichern**.
+3. Wählen Sie **Speichern** aus.
 
-![Seite „Parameter des globalen Adressbuchs”](media/GAD-parameters.png)
+![Seite „Parameter des globalen Adressbuchs“.](media/GAD-parameters.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

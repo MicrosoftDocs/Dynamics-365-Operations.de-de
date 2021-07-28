@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: fe6262fa8a7fb27fda7642180f605376af726e54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937533"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346057"
 ---
 # <a name="set-up-a-retail-channel"></a>Einen Retail Channel einrichten
 
@@ -33,7 +33,7 @@ Stellen Sie vor dem Erstellen eines Retail Channel sicher, dass Sie die folgende
 
 ## <a name="create-and-configure-a-new-retail-channel"></a>Einen neuen Retail Channel erstellen und konfigurieren
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Kanäle \> Geschäfte \>Alle Geschäfte**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Kanäle \> Geschäfte \> Alle Geschäfte**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie im Feld **Name** einen Namen für den neuen Kanal ein.
 1. Wählen Sie im Feld **Shopnummer** eine einmalige Shopnummer aus. Die Nummer kann alphanumerisch mit maximal 10 Zeichen sein.
@@ -50,21 +50,21 @@ Stellen Sie vor dem Erstellen eines Retail Channel sicher, dass Sie die folgende
 
 Das folgende Bild zeigt die Erstellung eines neuen Retail Channel.
 
-![Neuer Retail Channel](media/channel-setup-retail-1.png)
+![Neuer Retail Channel.](media/channel-setup-retail-1.png)
 
 Das folgende Bild zeigt ein Beispiel für einen Retail Channel.
 
-![Beispiel für einen Retail Channel](media/channel-setup-retail-2.png)
+![Beispiel für einen Retail Channel.](media/channel-setup-retail-2.png)
 
 ## <a name="other-settings"></a>Andere Einstellungen
 
 Es gibt zahlreiche andere optionale Einstellungen, die in den Abschnitten **Auszug/Abschluss** und **Sonstiges** basierend auf den Bedürfnissen des Einzelhandelsgeschäfts eingestellt werden können.
 
-Darüber hinaus siehe [Bildschirmlayouts für den Point of Sale (POS)](pos-screen-layouts.md)für Informationen zum Einrichten des Standard-Bildschirmlayouts im Abschnitt **Bildschirmlayout** und [konfigurieren und installieren Sie die Retail Hardware station](retail-hardware-station-configuration-installation.md) für Informationen zum Einrichten über den Abschnitt **Hardwarestationen**.
+Darüber hinaus siehe [Bildschirmlayouts für den Point of Sale (POS)](pos-screen-layouts.md) für Informationen zum Einrichten des Standard-Bildschirmlayouts im Abschnitt **Bildschirmlayout** und [konfigurieren und installieren Sie die Retail Hardware station](retail-hardware-station-configuration-installation.md) für Informationen zum Einrichten über den Abschnitt **Hardwarestationen**.
 
 Das folgende Bild zeigt ein Beispiel für einen Retail Channel-Einrichtungskonfiguration.
 
-![Retail Channel-Beispielkonfiguration](media/channel-setup-retail-3.png)
+![Retail Channel-Beispielkonfiguration.](media/channel-setup-retail-3.png)
 
 ## <a name="additional-channel-set-up"></a>Einrichtung eines zusätzlichen Kanals
 
@@ -74,7 +74,7 @@ Zusätzliche Aufgaben, die für das Einrichten des Onlinekanals erforderlich sin
 
 Das folgende Bild zeigt verschiedene zusätzliche Optionen zum Einrichten von Retail Channels auf der Registerkarte **Einrichten**.
 
-![Kanal einrichten](media/channel-setup-retail-4.png)
+![Kanal einrichten.](media/channel-setup-retail-4.png)
 
 ### <a name="set-up-payment-methods"></a>Einrichten von Zahlungsmethoden
 
@@ -89,7 +89,7 @@ Führen Sie die folgenden Schritte aus, um die Zahlungsmethoden für jede auf di
 
 Das folgende Bild zeigt ein Beispiel für eine Bargeldzahlungsmethode.
 
-![Beispielzahlungsmethoden](media/channel-setup-retail-5.png)
+![Beispielzahlungsmethoden.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>Bargelddeklaration einrichten
 
@@ -98,7 +98,7 @@ Das folgende Bild zeigt ein Beispiel für eine Bargeldzahlungsmethode.
 
 Das folgende Bild zeigt ein Beispiel für eine Bargelddeklaration.
 
-![Bargelddeklarationen einrichten](media/channel-setup-retail-6.png)
+![Bargelddeklarationen einrichten.](media/channel-setup-retail-6.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Lieferarten einrichten
 
@@ -112,7 +112,7 @@ Gehen Sie folgendermaßen vor, um eine Lieferart zu ändern oder hinzuzufügen.
 
 Das folgende Bild zeigt ein Beispiel für eine Lieferart.
 
-![Lieferarten einrichten](media/channel-setup-retail-7.png)
+![Lieferarten einrichten.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-incomeexpense-account"></a>Einnahmen-/Aufwandskonto einrichten
 
@@ -129,7 +129,7 @@ Gehen Sie zum Einrichten eines Einnahmen-/Aufwandskontos folgendermaßen vor:
 
 Die folgende Abbildung zeigt ein Beispiel für ein Einnahmen-/Ausgabenkonto.
 
-![Einnahmen-/Aufwandskonten einrichten](media/channel-setup-retail-8.png)
+![Einnahmen-/Aufwandskonten einrichten.](media/channel-setup-retail-8.png)
 
 ### <a name="set-up-sections"></a>Abschnitte einrichten
 
@@ -155,7 +155,7 @@ Gehen Sie zum Einrichten einer Erfüllungsgruppe folgendermaßen vor:
 
 Die folgende Abbildung zeigt ein Beispiel für die Einrichtung einer Erfüllungsgruppenzuweisung.
 
-![Erfüllungsgruppenzuweisung einrichten](media/channel-setup-retail-9.png)
+![Erfüllungsgruppenzuweisung einrichten.](media/channel-setup-retail-9.png)
 
 ### <a name="set-up-safes"></a>Safes einrichten
 

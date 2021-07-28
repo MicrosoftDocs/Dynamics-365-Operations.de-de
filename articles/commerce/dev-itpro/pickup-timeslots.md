@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: c3da7474f9a61e97ee11688a18cb91a5ad1ccb5c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e2369b17244525023541cdbd0a0da3f2a2a09b30
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791164"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355450"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Zeitfenster für die Kundenabholung erstellen und aktualisieren
 
@@ -34,7 +34,7 @@ Mit der Zeitfensterfunktion können Einzelhändler ein Zeitfenster für Artikel 
 
 Die folgende Abbildung zeigt ein Beispiel für die Auswahl eines Zeitfensters während eines E-Commerce-Auftragsabschlusses.
 
-![Beispiel für die Zeitfensterauswahl während des E-Commerce-Auftragsabschlusses](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Beispiel für die Zeitfensterauswahl während des E-Commerce-Auftragsabschlusses.](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="time-slot-properties"></a>Zeitfenstereigenschaften
 
@@ -60,7 +60,7 @@ Ein Zeitfenster wird mithilfe der folgenden Eigenschaften definiert:
 - **Aktive Tage** – Geben Sie die Wochentage an, an denen die Abholzeitfenster aktiv sind. Mit dieser Eigenschaft kann der Einzelhändler die Tage definieren, an denen er Abholaufträge unterstützen möchte.
 - **Retail Channels** – Geben Sie die Retail Channels an. Jedes Zeitfenster kann einem oder mehreren Einzelhandelsgeschäften zugeordnet werden. Abhängig von den Öffnungszeiten der einzelnen Geschäfte können ein oder mehrere Zeitfenstereinträge erstellt und einem Kanal zugeordnet werden. 
 
-<!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+<!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 Pro Kanal kann nur eine Zeitschlitzvorlage konfiguriert werden. Zu diesen Kanälen gehören Filialen, Call Center, mobile Geräte und E-Commerce-Sites.
 
@@ -85,14 +85,14 @@ Um die Zeitfensterfunktion in der Commerce-Zentralverwaltung zu konfigurieren, f
     > [!NOTE]
     > Sie können mehrere Vorlagen erstellen, aber nur eine Vorlage kann einem einzelnen Kanal oder Geschäft zugeordnet werden.
 
-    ![Auftragsabholung – Dialogfeld „Zeiteinstellungen“](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
+    ![Auftragsabholung – Dialogfeld „Zeiteinstellungen“.](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
 
 1. Wählen Sie abschließend **OK** aus.
 1. Wenn die Zeitfenster an einem Tag variieren, erstellen Sie zusätzliche Einträge im Inforegister **Auftragsabholung – Zeiteinstellungen**, um sicherzustellen, dass sich Datum und Uhrzeit nicht überschneiden.
 1. Im Inforegister **Retail Channels** wählen Sie **Hinzufügen** aus, um die Zeitfenstervorlage den Geschäften oder Kanälen zuzuordnen, in denen sie verwendet wird.
 1. Verwenden Sei im Dialogfenster **Organisationsknoten auswählen** die Pfeilschaltflächen, um die Geschäfte, Regionen und Organisationen auszuwählen (oder die Auswahl von ihnen aufzuheben), denen Vorlagen zugeordnet werden sollen.
 
-    <!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+    <!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 1. Wählen Sie abschließend **OK** aus.
 1. Führen Sie auf der Seite **Verteilungsplan** die Einzelvorgänge **1070** und **1135** aus, um die Daten mit den Kanälen zu synchronisieren.
@@ -103,7 +103,7 @@ Wenn in der POS ein Auftrag oder eine Auftragsposition für die Abholung identif
 
 Die folgende Abbildung zeigt ein Beispiel für die Auswahl eines Zeitfensters für einen POS-Auftrag.
 
-![Ein Beispiel für die Zeitfensterauswahl für einen POS-Auftrag](../dev-itpro/media/Curbside_timeslot_POS.png)
+![Ein Beispiel für die Zeitfensterauswahl für einen POS-Auftrag.](../dev-itpro/media/Curbside_timeslot_POS.png)
 
 ## <a name="time-slot-selection-for-e-commerce-orders"></a>Zeitfensterauswahl für E-Commerce-Aufträge
 
@@ -114,13 +114,13 @@ Informationen zum Bereitstellen der Zeitfensterauswahl für E-Commerce-Aufträge
 
 Die folgende Abbildung zeigt ein Beispiel für einen E-Commerce-Auftrag, bei dem ein Abholzeitfenster ausgewählt wurde.
 
-![Beispiel für einen E-Commerce-Auftrag, bei dem ein Abholzeitfenster ausgewählt wurde](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Beispiel für einen E-Commerce-Auftrag, bei dem ein Abholzeitfenster ausgewählt wurde.](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="time-slot-selection-for-call-center-orders"></a>Zeitfensterauswahl für Callcenter-Aufträge
 
 In der Callcenter-App können Callcenter-Agenten das Abholgeschäft oder den Abholort sowie einen Datums- und Zeitfenster auswählen, wie in der folgenden Abbildung hervorgehoben.
 
-![Beispiel für einen Callcenter-Auftrag, bei dem ein Abholzeitfenster ausgewählt wurde](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+![Beispiel für einen Callcenter-Auftrag, bei dem ein Abholzeitfenster ausgewählt wurde.](../dev-itpro/media/Curbside_timeslot_callcenter.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

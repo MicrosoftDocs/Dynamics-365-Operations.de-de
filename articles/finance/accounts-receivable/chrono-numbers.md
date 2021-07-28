@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: fe533052b0e5b04a7d27b954ba644761c631d6d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1bddb76d17b65e3485680675b77750fca714407d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838860"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350071"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Chronologisches Nummerieren von Dokumenten und Belegen
 
@@ -69,7 +69,7 @@ Rufen Sie zur Definition von Nummernkreisen **Organisationsverwaltung** > **Numm
 
 Geben Sie für jeden Nummernkreis ein Unternehmen an. Die Segmente der Nummernkreise müssen so definiert werden, dass sie eine chronologische Reihenfolge für Perioden liefern. Beispielsweise können die Segmentnamen ein spezielles Präfix enthalten, das eine bestimmte Periode identifiziert.
 
-![Nummernkreiseinrichtung](media/chrono-num-sequence.jpg)
+![Nummernkreiseinrichtung.](media/chrono-num-sequence.jpg)
 
 ### <a name="configure-number-sequence-groups"></a>Nummernkreisgruppen konfigurieren
 
@@ -77,7 +77,7 @@ Rufen Sie **Debitorenkonten** > **Einrichtung** > **Debitorenkontenparameter** a
 
 Wählen Sie für jede Gruppe im Abschnitt **Referenz** eine der unterstützten Dokumentreferenzen aus, und beziehen Sie sich im Feld **Nummernkreiscode** auf einen Nummernkreis, der zuvor für die zugehörige Periode erstellt wurde.
 
-![Nummernkreisgruppeneinrichtung](media/chrono-num-sequence-group.jpg)
+![Nummernkreisgruppeneinrichtung.](media/chrono-num-sequence-group.jpg)
 
 Konfigurieren Sie in ähnlicher Weise Nummernkreisgruppen in **Kreditorenkonten**- und **Projektverwaltung und -buchhaltung**-Modulen.
 
@@ -85,7 +85,7 @@ Konfigurieren Sie in ähnlicher Weise Nummernkreisgruppen in **Kreditorenkonten*
 
 Rufen Sie **Organisationsverwaltung** > **Nummernkreise** > **Chronologische Nummernkreisgruppen** auf, um die Chronologie der Nummernkreisgruppen zu konfigurieren. Definieren Sie die Anwendbarkeitsbedingungen für Nummernkreisgruppen.
 
-![Chronologische Nummerneinrichtung](media/chrono-num-sequence-group-period.jpg)
+![Chronologische Nummerneinrichtung.](media/chrono-num-sequence-group-period.jpg)
 
 | Feld            | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -98,7 +98,7 @@ Rufen Sie **Organisationsverwaltung** > **Nummernkreise** > **Chronologische Num
 ## <a name="document-posting"></a>Dokumentbuchung
 Wenn Sie ein Dokument buchen, wird dem Dokument die entsprechende Nummernkreisgruppe basierend auf dem Buchungsdatum des Dokuments zugewiesen und anschließend zum Generieren einer Dokumentnummer basierend auf dem erkannten Nummernkreis verwendet. Das System gibt eine Meldung zur Zuweisung der Nummernkreisgruppen aus.
 
-![Dokumentnummer](media/chrono-num-sequence-fti.jpg)
+![Dokumentnummer.](media/chrono-num-sequence-fti.jpg)
 
 > [!NOTE]
 > Für einige Länder gibt es bereits eine spezifische Logik für die Nummerierung von Dokumenten. In diesem Fall überschreibt die länderspezifische Logik die Funktion **Chronologische Nummerierung**.

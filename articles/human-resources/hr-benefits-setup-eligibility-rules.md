@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
-ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
+ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6093919"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351656"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Berechtigungsregeln und -optionen konfigurieren
 
@@ -137,20 +137,20 @@ Sie können Regeln definieren, die mehrere Kriterien haben. Wenn Sie innerhalb e
 
 Zum Beispiel setzt sich die Regel **Aktive Mitarbeiter** aus den folgenden Kriterien zusammen. Damit der Mitarbeiter aufgrund der Regel **Aktive Mitarbeiter** bereichtigt ist, muss der Mitarbeiter in der juristischen Person USMF beschäftigt sein *und* einen Positionstyp Vollzeit haben.  
 
-![Kriterien innerhalb einer Zulassungsregel](media/CriteriaWithinAnEligibilityRule.png) 
+![Kriterien innerhalb einer Zulassungsregel.](media/CriteriaWithinAnEligibilityRule.png) 
  
 ### <a name="multiple-conditions-within-criteria"></a>Mehrere Bedingungen innerhalb von Kriterien
 
 Regeln können weiter erweitert werden, um mehrere Bedingungen innerhalb eines einzigen Kriteriums zu verwenden. Der Mitarbeiter muss mindestens eine Bedingung erfüllen, um berechtigt zu sein. Um auf dem obigen Beispiel aufzubauen, kann die Regel **Aktive Mitarbeiter** weiter ausgebaut werden, um Mitarbeiter einzubeziehen, die auch Teilzeitbeschäftigte sind. Infolgedessen muss der Mitarbeiter jetzt ein Mitarbeiter in USMF sein *und* entweder ein Vollzeit- oder ein Teilzeitbeschäftigter sein.  
 
-![Mehrere Bedingungen innerhalb von Kriterien](media/MultipleConditionsWithinCriteria.png) 
+![Mehrere Bedingungen innerhalb von Kriterien.](media/MultipleConditionsWithinCriteria.png) 
  
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Teilnahmebedingungen innerhalb eines benutzerdefinierten Feldkriteriums 
 Ähnlich wie oben können benutzerdefinierte Felder beim Erstellen von Berechtigungsregeln verwendet werden und auf dieselbe Weise funktionieren. Beispielsweise möchten Sie den Mitarbeitern von Fargo und Kopenhagen, die von zu Hause aus arbeiten, eine Internet-Rückerstattung anbieten, da die Internetkosten an diesen Standorten höher sind. Erstellen Sie dazu zwei benutzerdefinierte Felder: **Bürostandort** (Auswahlliste) und **Von zu Hause aus arbeiten** (Kontrollkästchen). Erstellen Sie dann eine Regel mit dem Namen **WFH-Mitarbeiter**. Das Kriterium für die Regel ist wo **Bürostandort = Fargo** oder **Kopenhagen** *und* wo **Von zu Hause aus arbeiten = Ja**.
 
 Die benutzerdefinierten Berechtigungsregeln müssten wie in der folgenden Abbildung angegeben eingerichtet werden. 
 
-![Teilnahmebedingungen innerhalb eines benutzerdefinierten Feldkriteriums](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+![Teilnahmebedingungen innerhalb eines benutzerdefinierten Feldkriteriums.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
 ## <a name="configure-bundles"></a>Bündel konfigurieren
 
@@ -222,7 +222,7 @@ Sie können Flexguthabenprogramme verwenden, um Mitarbeiter für Vorteile gemä�
 
 ## <a name="configure-programs"></a>Programme konfigurieren
 
-Bei Programmen handelt es sich um eine Reihe von Vorteilsplänen, für die gemeinsame Berechtigungsregeln gelten. Sie können Berechtigungsregeln für das gesamte Programm anstatt für jeden einzelnen Plan definieren. Beispiel: ein Programm für Vollzeitmitarbeiter von Contoso Kanada oder ein Programm auf Führungsebene von  Contoso Europa. 
+Bei Programmen handelt es sich um eine Reihe von Vorteilsplänen, für die gemeinsame Berechtigungsregeln gelten. Sie können Berechtigungsregeln für das gesamte Programm anstatt für jeden einzelnen Plan definieren. Beispiel: ein Programm für Vollzeitmitarbeiter von Contoso Kanada oder ein Programm auf Führungsebene von Contoso Europa. 
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellung** die Option **Berechtigungsregeln und -optionen**.
 

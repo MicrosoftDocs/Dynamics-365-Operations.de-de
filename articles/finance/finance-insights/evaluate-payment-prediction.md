@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 872f4cfd968b70cb8a2087822870dcc76e83e92b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186737"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349009"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Bewerten des anfänglichen Kundenzahlungsvorhersagemodells (Vorschau)
 
@@ -33,32 +33,32 @@ In diesem Thema wird erläutert, wie Sie ein Vorhersagemodell bewerten, nachdem 
 
 Auf der **Finance Insights-Parameter**-Seite in Microsoft Dynamics 365 Finance wird ein **Modellgenauigkeit verbessern**-Link neben der Genauigkeitsbewertung angezeigt.
 
-[![Link „Verbessern der Modellgenauigkeit“](./media/prediction-model.png)](./media/prediction-model.png)
+[![Link „Verbessern der Modellgenauigkeit“.](./media/prediction-model.png)](./media/prediction-model.png)
 
 Über diesen Link gelangen Sie zum AI Builder, wo Sie mehr über das aktuelle Modell erfahren und Schritte unternehmen können, um es zu verbessern. Die folgende Abbildung zeigt die Seite, die geöffnet wird.
 
-[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 Die Seite, die geöffnet wird, zeigt die Folgenden Informationen:
 
 - Im Abschnitt **Leistung** bietet der Modellleistungsgrad einen Überblick über die Qualität des Modells. Weitere Informationen zu dieser Klasse finden Sie unter [Leistung des Vorhersagemodells](/ai-builder/prediction-performance) in der AI Builder-Dokumentation.
 - Der Abschnitt **Die einflussreichsten Daten** zeigt, wie wichtig verschiedene Eingabetypen für Ihr Modell waren. Sie können diese Liste und die entsprechenden Prozentsätze auswerten, um festzustellen, ob die Informationen mit Ihren Kenntnissen über Ihr Unternehmen und Ihren Markt übereinstimmen.
 
-    [![Die Abschnitte zur Leistung und zu den einflussreichsten Daten für das Vorhersagemodell](./media/models.png)](./media/models.png)
+    [![Die Abschnitte zur Leistung und zu den einflussreichsten Daten für das Vorhersagemodell.](./media/models.png)](./media/models.png)
 
 - Wählen Sie im Abschnitt **Leistung** **Siehe Einzelheiten** aus, um mehr über den Grad und andere Überlegungen zu erfahren. In der folgenden Abbildung zeigen die Details, dass das Modell weniger Informationen verwendet als empfohlen. Daher hat das System eine Warnmeldung generiert.
 
-    [![Warnungen zur Leistung des Modells](./media/details.png)](./media/details.png)
+    [![Warnungen zur Leistung des Modells.](./media/details.png)](./media/details.png)
 
 ## <a name="digging-deeper"></a>Tiefergehen
 
 Obwohl Genauigkeit ein guter Ausgangspunkt für die Bewertung eines Modells ist und die Leistungsstufe eine Perspektive bietet, bietet AI Builder detailliertere Metriken, die Sie für Ihre Bewertung verwenden können. Um die Details herunterzuladen, wählen Sie im Abschnitt **Leistung** die Schaltfläche mit den Auslassungspunkten (**...**) neben der **Modell verwenden**-Schaltfläche und dann **Detaillierte Messdaten herunterladen** aus.
 
-[![Befehl für detaillierte Metriken herunterladen](./media/performance.png)](./media/performance.png)
+[![Befehl für detaillierte Metriken herunterladen.](./media/performance.png)](./media/performance.png)
 
 Die folgende Abbildung zeigt das Format, in dem Sie die Daten herunterladen können.
 
-[![Format der heruntergeladenen Daten](./media/data-format.png)](./media/data-format.png)
+[![Format der heruntergeladenen Daten.](./media/data-format.png)](./media/data-format.png)
 
 Für eine eingehendere Analyse der Ergebnisse ist es ein guter Ausgangspunkt, die Metrik „Verwirrungsmatrix“ zu überprüfen. Hier sind beispielsweise die Daten, die für diese Metrik in der vorherigen Abbildung gezeigt wurden.
 

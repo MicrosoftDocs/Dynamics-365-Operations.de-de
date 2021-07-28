@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 9afa64df73aa17e7a15a0ee4f4529ac74bcd3c67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a1f85c100f1d062517c14d31a19838cc4af18f10
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750713"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346569"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Zuordnung für die Kundenauftragsstatusspalten einrichten
 
@@ -100,7 +100,7 @@ Um das **IsSOPIntegrationEnabled**-Attribut zu aktivieren, führen Sie die folge
 1. Gehen Sie in einem Webbrowser zu `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Ersetzen Sie **\<test-name\>** durch den Link Ihres Unternehmens zu Sales.
 2. Suchen Sie auf der geöffneten Seite **organisationid** und notieren Sie sich den Wert.
 
-    ![Suchen von organizationid](media/sales-map-orgid.png)
+    ![Suchen von organizationid.](media/sales-map-orgid.png)
 
 3. Öffnen Sie in Sales die Browserkonsole und führen Sie das folgende Skript aus. Verwenden Sie den **organisationid**-Wert aus Schritt 2.
 
@@ -119,33 +119,33 @@ Um das **IsSOPIntegrationEnabled**-Attribut zu aktivieren, führen Sie die folge
     );
     ```
 
-    ![JavaScript-Code in der Browserkonsole](media/sales-map-script.png)
+    ![JavaScript-Code in der Browserkonsole.](media/sales-map-script.png)
 
 4. Überprüfen Sie, ob **IsSOPIntegrationEnabled** auf **true** festgelegt ist. Verwenden Sie die URL aus Schritt 1, um den Wert zu überprüfen.
 
-    ![Auf true festgelegtes IsSOPIntegrationEnabled](media/sales-map-integration-enabled.png)
+    ![Auf „wahr“ festgelegtes IsSOPIntegrationEnabled.](media/sales-map-integration-enabled.png)
 
 Um das **isIntegrationUser**-Attribut zu aktivieren, führen Sie die folgenden Schritte aus.
 
 1. Wechseln Sie in Sales zu **Einstellung \> Anpassung \> System anpassen**, wählen Sie **Benutzertabelle** aus und öffnen Sie dann **Formular \> Benutzer**.
 
-    ![Öffnen des Benutzerformulars](media/sales-map-user.png)
+    ![Öffnen des Benutzerformulars.](media/sales-map-user.png)
 
 2. Suchen Sie im Feld-Explorer **Integrationsbenutzermodus** und klicken Sie zweimal darauf, um es dem Formular hinzuzufügen. Speichern Sie die Änderung.
 
-    ![Hinzufügen der Spalte „Integrationsbenutzermodus“ zum Formular](media/sales-map-field-explorer.png)
+    ![Hinzufügen der Spalte „Integrationsbenutzermodus“ zum Formular.](media/sales-map-field-explorer.png)
 
 3. Gehen Sie in Sales zu **Einstellung \> Sicherheit \> Benutzer** und ändern Sie die Ansicht von **Aktivierte Benutzer** zu **Anwendungsbenutzer**.
 
-    ![Ändern der Ansicht von „Aktivierte Benutzer“ zu „Anwendungsbenutzer“](media/sales-map-enabled-users.png)
+    ![Ändern der Ansicht von „Aktivierte Benutzer“ zu „Anwendungsbenutzer“.](media/sales-map-enabled-users.png)
 
 4. Wählen Sie die beiden Einträge für **DualWrite IntegrationUser** aus.
 
-    ![Liste der Anwendungsbenutzer](media/sales-map-user-mode.png)
+    ![Liste der Anwendungsbenutzer.](media/sales-map-user-mode.png)
 
 5. Ändern Sie den Wert der Spalte **Integrationsbenutzermodus** in **Ja**.
 
-    ![Ändern des Werts der Spalte „Integrationsbenutzermodus“](media/sales-map-user-mode-yes.png)
+    ![Ändern des Werts der Spalte „Integrationsbenutzermodus“.](media/sales-map-user-mode-yes.png)
 
 Ihre Aufträge sind jetzt zugeordnet.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0e4bba6524f225d614ffdab370f2a1993cb3a29
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9fe3a1b0c278839069ebd3d047f8052e9da25203
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754679"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348580"
 ---
 # <a name="view-and-export-field-descriptions"></a>Feldbeschreibungen anzeigen und exportieren
 
@@ -43,7 +43,7 @@ Sie können Felder anzeigen, indem Sie über ein Feld fahren. Ist keine Beschrei
 
 Die folgende Abbildung zeigt die Feldbeschreibung, die angezeigt wird, wenn Sie mit den Mauszeiger über das Feld **Artikel während der Inventur sperren** bewegen.
 
-[![Beispiel einer Feldbeschreibung](./media/field-description.png)](./media/field-description.png)
+[![Beispiel einer Feldbeschreibung.](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Verwenden Sie die Seite "Feldbeschreibung", um Feldhilfe anzuzeigen und zu exportieren.
 

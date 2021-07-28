@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 709a3c332bb6d086910b257fee9cdec8d2bc81a2
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 9a6be5f4e08a92171892549c017c15c66b1bde2e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941054"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350811"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Probleme bei der anfänglichen Synchronisierung behandeln
 
@@ -38,7 +38,7 @@ Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegrat
 
 Nachdem Sie die Zuordnungsvorlagen aktiviert haben, sollte der Status der Zuordnungen lauten **Laufen**. Wenn der Status ist **Nicht ausgeführt** angezeigt wird, sind bei der ersten Synchronisierung Fehler aufgetreten. Um die Fehler anzuzeigen, wählen Sie die **Anfängliche Synchronisierungsdetail** Registerkarte auf der **Duales Schreiben** Seite.
 
-![Fehler auf der Registerkarte Details zur Erstsynchronisierung](media/initial_sync_status.png)
+![Fehler auf der Registerkarte Details zur Erstsynchronisierung.](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>Sie können die anfängliche Synchronisierung nicht abschließen: 400 Bad Request
 
@@ -85,7 +85,7 @@ Führen Sie folgende Schritte aus, um das Problem zu beheben.
 1. Bei der Finance and Operations App anmelden.
 2. Auf der **Azure Active Directory Anwendungen** Seite löschen Sie den **DtAppID** Client, und fügen Sie ihn dann erneut hinzu.
 
-![DtAppID-Client in der Liste von Azure AD Anwendungen](media/aad_applications.png)
+![DtAppID-Client in der Liste von Azure AD Anwendungen.](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>Selbstreferenzfehler oder Zirkelreferenzfehler während der ersten Synchronisation
 
@@ -115,11 +115,11 @@ Wenn Sie Zeilen mit Werten in der Kreditorentabelle in den Spalten **PrimaryCont
     2. Suchen Sie nach **primarycontactperson**, um das Quellfeld **PrimaryContactPersonId** zu finden.
     3. Wählen Sie **Aktionen** und dann **Löschen**.
 
-        ![Löschen der Spalte „PrimaryContactPersonId“](media/vend_selfref3.png)
+        ![Löschen der Spalte „PrimaryContactPersonId“.](media/vend_selfref3.png)
 
     4. Wiederholen Sie diese Schritte, um die Spalte **InvoiceVendorAccountNumber** zu löschen.
 
-        ![Löschen des Feldes „InvoiceVendorAccountNumber“](media/vend-selfref4.png)
+        ![Löschen des Feldes „InvoiceVendorAccountNumber“.](media/vend-selfref4.png)
 
     5. Speichern Sie Ihre Änderungen am Mapping.
 
@@ -129,11 +129,11 @@ Wenn Sie Zeilen mit Werten in der Kreditorentabelle in den Spalten **PrimaryCont
     2. Wählen Sie die Tabelle **Kreditoren V2** aus.
     3. Wählen Sie im Aktionsbereich **Optionen** und wählen Sie dann **Änderungsnachverfolgung**.
 
-        ![Auswahl der Option Änderungsnachverfolgung ändern](media/selfref_options.png)
+        ![Auswahl der Option Änderungsnachverfolgung ändern.](media/selfref_options.png)
 
     4. Wählen Sie **Änderungsverfolgung deaktivieren**.
 
-        ![Wählen Sie Änderungsverfolgung deaktivieren](media/selfref_tracking.png)
+        ![Wählen Sie Änderungsnachverfolgung deaktivieren.](media/selfref_tracking.png)
 
 3. Führen Sie die erste Synchronisierung erneut für die **Anbieter V2** (msdyn\_vendors) Zuordnung aus. Die erstmalige Synchronisierung sollte ohne Fehler erfolgreich ausgeführt werden.
 4. Führen Sie die erste Synchronisierung für **CDS-Kontakte V2 (Kontakte)** Zuordnung aus. Sie müssen diese Zuordnung synchronisieren, wenn Sie die Spalte des primären Kontakts in der Tabelle der Kreditoren synchronisieren möchten, da die Kontaktzeilen zunächst synchronisiert werden müssen.
@@ -162,11 +162,11 @@ Wenn Sie Zeilen mit Werten in der Debitorentabelle in den Spalten **ContactPerso
     2. Suchen Sie nach **contactperson**, um die Quellspalte **ContactPersonID** zu finden.
     3. Wählen Sie **Aktionen** und dann **Löschen**.
 
-        ![Löschen der Spalte „ContactPersonID“](media/cust_selfref3.png)
+        ![Löschen der Spalte „ContactPersonID“.](media/cust_selfref3.png)
 
     4. Wiederholen Sie diese Schritte, um die Spalte **InvoiceAccount** zu löschen.
 
-        ![Löschen der Spalte „InvoiceAccount“](media/cust_selfref4.png)
+        ![Löschen der Spalte „InvoiceAccount“.](media/cust_selfref4.png)
 
     5. Speichern Sie Ihre Änderungen am Mapping.
 
@@ -176,17 +176,17 @@ Wenn Sie Zeilen mit Werten in der Debitorentabelle in den Spalten **ContactPerso
     2. Wählen Sie die Tabelle **Debitoren V3** aus.
     3. Wählen Sie im Aktionsbereich **Optionen** und wählen Sie dann **Änderungsnachverfolgung**.
 
-        ![Auswahl der Option Änderungsnachverfolgung ändern](media/selfref_options.png)
+        ![Auswahl der Option Änderungsnachverfolgung ändern.](media/selfref_options.png)
 
     4. Wählen Sie **Änderungsverfolgung deaktivieren**.
 
-        ![Wählen Sie Änderungsverfolgung deaktivieren](media/selfref_tracking.png)
+        ![Wählen Sie Änderungsnachverfolgung deaktivieren.](media/selfref_tracking.png)
 
 3. Führen Sie die erste Synchronisierung nochmals für die **Debitoren V3 (Konten)** Zuordnung aus. Die erstmalige Synchronisierung sollte ohne Fehler erfolgreich ausgeführt werden.
 4. Führen Sie die erste Synchronisierung für **CDS-Kontakte V2 (Kontakte)** Zuordnung aus.
 
     > [!NOTE]
-    > Es gibt zwei Karten mit demselben Namen. Stellen Sie sicher, dass Sie jene Zuordnung mit der folgenden Beschreibung auf der Registerkarte **Details** auswählen: Duales Schreiben für die Synchronisierung zwischen FO.CDS-Kontakten V2 und CDS.Contacts.  Benötigt neues Paket \[**Dynamics365SupplyChainExtended\].**
+    > Es gibt zwei Karten mit demselben Namen. Stellen Sie sicher, dass Sie jene Zuordnung mit der folgenden Beschreibung auf der Registerkarte **Details** auswählen: **Duales Schreiben für die Synchronisierung zwischen FO.CDS-Kontakten V2 und CDS.Contacts. Benötigt neues Paket \[Dynamics365SupplyChainExtended\]**.
 
 5. Fügen Sie die Spalten **InvoiceAccount** und **ContactPersonID** wieder der Zuordnung **Debitoren V3 (Konten)** hinzu, und speichern Sie dann die Zuordnung. Jetzt sind die Spalte **InvoiceAccount** und die Spalte **ContactPersonID** wieder Teil des Live-Synchronisationsmodus. Im nächsten Schritt machen Sie die anfängliche Synchronisierung für diese Spalten.
 6. Führen Sie die erste Synchronisierung noch einmal für die **Debitoren V3 (Konten)** Zuordnung aus. Da die Änderungsverfolgung deaktiviert ist, werden die Daten für **InvoiceAccount** und **ContactPersonId** von der Finance and Operations App zu Dataverse synchronisiert.
@@ -196,7 +196,7 @@ Wenn Sie Zeilen mit Werten in der Debitorentabelle in den Spalten **ContactPerso
 
         Das folgende Illustration zeigt ein Projekt, das **Kundenkonto** und **ContactPersonId** aktualisiert.
 
-        ![Datenintegrationsprojekt zum Aktualisieren von CustomerAccount und ContactPersonId](media/cust_selfref6.png)
+        ![Datenintegrationsprojekt zum Aktualisieren von CustomerAccount und ContactPersonId.](media/cust_selfref6.png)
 
     2. Fügen Sie die Firmenkriterien im Filter auf der Seite von Dataverse ein, da nur die Zeilen, die den Filterkriterien entsprechen, in der Finance and Operations-App aktualisiert werden. Wählen Sie zum Hinzufügen die Schaltfläche Filter. In dem Dialog **Abfrage bearbeiten** können Sie eine Filterabfrage hinzufügen wie **\_msdyn\__company\_value eq\<guid\>**. 
 
@@ -204,7 +204,7 @@ Wenn Sie Zeilen mit Werten in der Debitorentabelle in den Spalten **ContactPerso
 
         Wenn Sie keine Filterabfrage für **\_msdyn\_company\_value** eingeben, werden alle Zeilen synchronisiert.
 
-        ![Hinzufügen einer Filterabfrage](media/cust_selfref7.png)
+        ![Hinzufügen einer Filterabfrage.](media/cust_selfref7.png)
 
     Die anfängliche Synchronisierung der Zeilen ist nun abgeschlossen.
 

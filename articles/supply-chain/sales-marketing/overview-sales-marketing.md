@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 92303
+ms.custom:
+- "92303"
+- intro-internal
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42934a88065da015334455b6c37f57591611360f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 92077c0d8a9c9f3820171fd4ffd8aedb02f59602
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188124"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359860"
 ---
 # <a name="sales-and-marketing-overview"></a>Vertriebs- und Marketingübersicht
 
@@ -29,18 +31,18 @@ Im Vertriebs- und Marketingmodul können verschiedene Arten von Daten im Verkauf
 
 ## <a name="marketing"></a>Marketing
 
-Marketingkampagnen und -aktivitäten dienen der Suche und dem Aufbau von Beziehungen mit potenziellen Kunden, sodass sich Erstkontakte zu Geschäftsbeziehungen entwickeln können. Im folgenden Ablaufdiagramm werden die Geschäftsprozesse für das Marketing dargestellt. [![Geschäftsprozess für Marketing](./media/marketing01.jpg)](./media/marketing01.jpg)
+Marketingkampagnen und -aktivitäten dienen der Suche und dem Aufbau von Beziehungen mit potenziellen Kunden, sodass sich Erstkontakte zu Geschäftsbeziehungen entwickeln können. Im folgenden Ablaufdiagramm werden die Geschäftsprozesse für das Marketing dargestellt. [![Geschäftsprozess für Marketing.](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Beziehungen
 
-In Vertrieb und Marketing können die Erstkontakte mit potenziellen Kunden in unterschiedlichen Situationen auftreten. Beispielsweise entdecken Sie einen künftigen Kunden bei einem Messebesuch oder einen potentiellen Kunden nachdem Ihre Organisation eine Massenmail-Kampagne ausgeführt hat. Es ist sehr wichtig, dass Sie den Fluss der Entität einer Partei überblicken bevor diese Partei ein Kunde wird. Die folgende Grafik zeigt den Verlauf der Entitätsbeziehungen vom potenziellen Kunden zum Kunden. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+In Vertrieb und Marketing können die Erstkontakte mit potenziellen Kunden in unterschiedlichen Situationen auftreten. Beispielsweise entdecken Sie einen künftigen Kunden bei einem Messebesuch oder einen potentiellen Kunden nachdem Ihre Organisation eine Massenmail-Kampagne ausgeführt hat. Es ist sehr wichtig, dass Sie den Fluss der Entität einer Partei überblicken bevor diese Partei ein Kunde wird. Die folgende Grafik zeigt den Verlauf der Entitätsbeziehungen vom potenziellen Kunden zum Kunden. [![SalesandMarketing01.](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>Kampagnen
 
 Eine Kampagne wird auf die Kontakte für Interessenten, potenzielle Kunden, Verkaufschancen und Debitoren ausgerichtet, die als Kampagnenteilnehmer ausgewählt wurden. In Supply Chain Management können Sie verschiedene Kampagnentypen wie Telemarketing, Mailings und E-Mail-Kampagnen erstellen, um Ihr Kundenpotential zu maximieren. Wenn Ihre Kampagne fortschreitet und Sie positive Antworten erhalten, können Sie mit dem Verkaufsprozess bei den Empfängern beginnen, die positiv auf die Kampagne reagiert haben.
 
 ## <a name="sales"></a>Vertrieb
-Die Verkaufsfunktionalität wird verwendet, um Angebote zu erstellen, den weiteren und ergänzenden Verkauf an neue und vorhandene Kunden durchzuführen und um Aufträge und Rechnungen für Kunden zu erstellen. Im folgenden Ablaufdiagramm werden die Geschäftsprozesse für den Verkauf dargestellt. [![Geschäftsprozess für Verkauf](./media/sales01.jpg)](./media/sales01.jpg)
+Die Verkaufsfunktionalität wird verwendet, um Angebote zu erstellen, den weiteren und ergänzenden Verkauf an neue und vorhandene Kunden durchzuführen und um Aufträge und Rechnungen für Kunden zu erstellen. Im folgenden Ablaufdiagramm werden die Geschäftsprozesse für den Verkauf dargestellt. [![Geschäftsprozess für Verkauf.](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Verkaufsangebote
 

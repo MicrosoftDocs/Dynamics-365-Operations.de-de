@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 724048991fc8864ef72a5155af66b9c709f4b875
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5f7ae0888656dd452af17e33d600f7894b801b1d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893955"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351721"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Importieren von aktualisierten Versionen von EB-Konfigurationen
 
@@ -41,11 +41,11 @@ In diesem Thema wird erläutert, wie Sie aktualisierte Versionen von EB-Konfigur
 2. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
 3. Auf der Seite **Lokalisierungskonfigurationen** wählen Sie im Bereich **Zugehörige Links** die Option **Aktualisierte Versionen von Konfigurationen importieren** aus.
 
-    ![Seite „Lokalisierungskonfigurationen“](./media/er-download-updated-versions-global-repo1.png)
+    ![Seite „Lokalisierungskonfigurationen“.](./media/er-download-updated-versions-global-repo1.png)
 
 4. Wählen Sie im Dialogfeld **Aktualisierte Versionen von elektronischen Berichtskonfigurationen importieren** im Feld **Ausführungsmodus** die Option **Nur verfügbare Updates anzeigen** aus. Wählen Sie dann **OK** aus. 
 
-    ![Feld „Ausführungsmodus“ auf „Nur verfügbare Updates anzeigen“ eingestellt](./media/er-download-updated-versions-global-repo2.png)
+    ![Feld „Ausführungsmodus“ auf „Nur verfügbare Updates anzeigen“ eingestellt.](./media/er-download-updated-versions-global-repo2.png)
 
 5. Überprüfen Sie die Meldungen, die angezeigt werden. Diese Meldungen enthalten die folgenden Informationen zu den EB-Konfigurationen in der aktuellen Finance-Instanz und zu Unterschieden zum Inhalt des globalen Repositorys:
 
@@ -72,14 +72,14 @@ In diesem Thema wird erläutert, wie Sie aktualisierte Versionen von EB-Konfigur
 4. Wählen Sie im Dialogfeld **Aktualisierte Versionen von elektronischen Berichtskonfigurationen importieren** im Feld **Ausführungsmodus** die Option **Neueste Updates importieren** aus, um die neuesten Versionen von EB-Konfigurationen aus dem globalen Repository in die aktuelle Finance-Instanz zu importieren.
 5. Um einen Batchauftrag für den Import zu planen, legen Sie auf dem Inforegister **Im Hintergrund ausführen** die Option **Batchverarbeitung** auf **Ja** fest. Wenn Sie den Import regelmäßig wiederholen möchten, konfigurieren Sie die erforderliche Wiederholung.
 
-    ![Feld „Ausführungsmodus“ ist auf „Neueste Updates importieren“ festgelegt](./media/er-download-updated-versions-global-repo5.png)
+    ![Feld „Ausführungsmodus“ ist auf „Neueste Updates importieren“ festgelegt.](./media/er-download-updated-versions-global-repo5.png)
 
-6. Wählen Sie **OK**.
+6. Wählen Sie **OK** aus.
 7. Führen Sie einen der folgenden Schritte aus, um zu erfahren, welche Konfigurationsversionen importiert wurden:
 
     - Wenn Sie den Import interaktiv ausführen und keinen Batchauftrag verwenden, überprüfen Sie die angezeigten Meldungen.
 
-        ![Während einer interaktiven Importausführung eingehende Meldungen](./media/er-download-updated-versions-global-repo6.png)
+        ![Während einer interaktiven Importausführung eingehende Meldungen.](./media/er-download-updated-versions-global-repo6.png)
 
     - Wenn Sie den Import im Batchmodus ausführen, gehen Sie folgendermaßen vor:
 
@@ -87,7 +87,7 @@ In diesem Thema wird erläutert, wie Sie aktualisierte Versionen von EB-Konfigur
         2. Suchen Sie den Auftrag **Aktualisierte Versionen von elektronischen Berichtskonfigurationen importieren** und wählen Sie ihn aus. Wählen Sie dann im Aktivitätsbereich auf der Registerkarte **Batchauftrag** die Option **Batchauftrag-Historie** aus, um die Historie des Auftrags anzuzeigen.
         3. Wählen Sie auf der Seite **Batchauftrag-Historie** die Option **Protokoll** aus. Wählen Sie dann in der angezeigten Meldung den Link **Meldungsdetails** aus, um das Auftragsprotokoll anzuzeigen.
 
-        ![Auftragsprotokoll](./media/er-download-updated-versions-global-repo7.png)
+        ![Auftragsprotokoll.](./media/er-download-updated-versions-global-repo7.png)
 
 > [!IMPORTANT]
 > Es wird nicht empfohlen, einen sich wiederholenden Batchauftrag zu planen, um aktualisierte Versionen von EB-Konfigurationen direkt aus dem globalen Repository in eine Produktionsumgebung zu importieren, da die importierten Versionen sofort zur Verwendung verfügbar sind. Verwenden Sie diesen Ansatz stattdessen, um Versionen von EB-Konfigurationen in einer Sandbox-Umgebung bereitzustellen. Sie können dann vor der Bereitstellung in einer Produktionsumgebung in der Sandbox-Umgebung ausgewertet werden.

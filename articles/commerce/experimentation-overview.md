@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7e415bc0a4ced11c5bb8393fe5dfe03a5f7cdd6c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 658396e87b3007216f6fa11c6ad3923daeb8a67d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798986"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349327"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Experimentieren in Dynamics 365 Commerce
 Verwenden Sie Experimente in Dynamics 365 Commerce, um Hypothesen über die Effektivität Ihrer E-Commerce-Seiten zu validieren und Entscheidungen mit datengesteuertem Vertrauen zu treffen. Commerce unterstützt A/B-Tests auf Seiten, in Modulen und Fragmenten und ermöglicht es Ihnen, die Auswirkungen vorgeschlagener Änderungen an Ihrer Website zu messen.
@@ -39,7 +39,7 @@ Sie können Seiten- und Inhaltsbehandlungen erstellen, bearbeiten und verwalten,
 ## <a name="experimentation-lifecycle"></a>Experimentierlebenszyklus
 Das Einrichten eines Experiments, das Erstellen von Variationen und das Ausführen eines Experiments ist ein iterativer Prozess. Das folgende Diagramm zeigt den Experimentierlebenszyklus in Commerce und dem Drittanbieterdienst. 
 
-[ ![Experimentierlebenszyklus](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![Experimentierlebenszyklus.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 Weitere Informationen zu den einzelnen Schritten des Experimentierprozesses finden Sie in den folgenden Themen.
 - [Eine Hypothese identifizieren und Metriken für ein Experiment bestimmen](experimentation-identify.md)

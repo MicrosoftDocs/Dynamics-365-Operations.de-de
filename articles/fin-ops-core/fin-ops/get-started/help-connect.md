@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82bb9a09e6d302b0d453ceb5131da039769b58fb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1a70a9771d5f9c1acea9274b8454a23c8dd7c1ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745688"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343933"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Hilfeumgebung für Finance and Operations-Apps konfigurieren
 
@@ -32,7 +32,7 @@ In diesem Thema finden Sie eine Übersicht über die Komponenten des Hilfesystem
 
 Finance and Operations-Apps enthalten konzeptionelle Übersichten und andere Themen, die auf der Website [https://docs.microsoft.com/dynamics365](/dynamics365/) veröffentlicht werden. Auf diesen Inhalt kann dann über den Bereich **Hilfe** des Produkts zugegriffen werden. Die folgende Abbildung zeigt Teile des Hilfesystems.
 
-[![Hilfearchitektur](./media/help-architecture.png)](./media/help-architecture.png)
+[![Hilfearchitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
 Das Hilfesystem ruft Artikel von docs.microsoft.com und anderen verbundenen Websites ab. Außerdem werden Aufgabenleitfäden abgerufen, die im Business Process Modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS) gespeichert sind.
 
@@ -47,14 +47,14 @@ Auf der Seite **Systemparameter** können Systemadministratoren den Zugriff auf 
 > - Zum Konfigurieren der Hilfe müssen Sie sich mit einem Konto des Mandanten anmelden, für den die App bereitgestellt ist.
 > - Eine LCS-Bibliothek kann nicht aus einer Instanz der App verbunden werden, die auf einer lokalen virtuellen Festplatte (VHD) ausgeführt wird.
 
-[![Systemparameterformular mit Hilfe-Einstellungen](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Systemparameterformular mit Hilfe-Einstellungen.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 Führen Sie die folgenden Schritte auf der Seite **Systemparameter** aus, um Aufgabenleitfäden für eine Lösung zu konfigurieren.
 
 > [!IMPORTANT]
 > Beim erstmaligen Öffnen der Registerkarte **Hilfe** müssen Sie die Verbindung zu den Lifecycle Services herstellen. Wählen Sie den Link in der Mitte des Formulars aus, warten Sie, bis die Verbindung hergestellt wurde, schließen Sie das Dialogfeld, und wählen Sie dann **OK** aus, um zur Seite **Systemparameter** zu gelangen.
 >
-> [![Mit LCS verbinden](./media/connect-to-lcs-crop-1024x365.png "Mit LCS verbinden")](./media/connect-to-lcs-crop.png)
+> [![Mit LCS verbinden](./media/connect-to-lcs-crop-1024x365.png „Mit LCS verbinden.“](./media/connect-to-lcs-crop.png)
 
 1. Wählen Sie das Projekt Lifecycle Services, um eine Verbindung herzustellen.
 2. Wählen Sie die BPM-Bibliotheken (innerhalb des ausgewählten Projekts) aus, von denen Sie die Aufgabenaufzeichnungen abrufen wollen.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 9430bc1386f127d02b598d6cad1b53f66e0cf2ba
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 12ba639ccf670997d4f16325172aa351732a5722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023255"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348908"
 ---
 # <a name="set-up-withholding-tax-settlement-periods-for-the-tds-tax-type"></a>Quellensteuerausgleichsperioden für den Steuertyp „TDS“
 
@@ -31,7 +31,7 @@ In diesem Thema wird erklärt, wie Sie Ausgleichsperioden für die Quellenbesteu
 
 1. Gehen Sie zu **Steuer \> Indirekte Steuern \> Quellensteuer \> Quellensteuerausgleichsperioden**.
 
-    [![Seite „Quellensteuerausgleichsperioden“](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
+    [![Seite „Quellensteuerausgleichsperioden“.](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
 
 2. Wählen Sie im Feld **Steuertyp** **TDS** aus, um Quellensteuerausgleichsperioden für den Steuertyp „TDS“ einzurichten.
 3. Wählen Sie **Neu**, um eine Position zu erstellen.
@@ -47,6 +47,6 @@ In diesem Thema wird erklärt, wie Sie Ausgleichsperioden für die Quellenbesteu
     > [!NOTE]
     > Um den periodischen TDS-Ausgleichsprozess auszuführen, gehen Sie zu **Hauptbuch \> Periodisch \> Quellensteuer \> Quellensteuerzahlung**.
 
-    [![Seite „Quellensteuerzahlung“](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
+    [![Seite „Quellensteuerzahlung“.](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
 
 12. Schließen Sie die Seite.

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 84a2342d76dc309fa1fd3de7b2c3de60e62e4d72
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 64b03faa76e16a4e587f26ec2fb9bf1e34d226df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186395"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355651"
 ---
 # <a name="customer-payment-predictions-preview"></a>Zahlungsvorhersagen für Debitoren (Vorschau)
 
@@ -53,11 +55,11 @@ Für jede offene Rechnung weist die Funktion drei Zahlungswahrscheinlichkeiten z
 
 Die Funktion bietet auch eine aggregierte Ansicht der erwarteten Zahlungen.
 
-[![Aggregierte Ansicht der Zahlungsvorhersagen](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Aggregierte Ansicht der Zahlungsvorhersagen.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Jeder Rechnung wird eine Wahrscheinlichkeit für rechtzeitige Zahlung zugeordnet. Rechnung mit einer Wahrscheinlichkeit von weniger als 50 Prozent für eine rechtzeitige Zahlung werden mit einem roten Kreis markiert, um anzuzeigen, dass diese Rechnungen möglicherweise eine Inkassobeauftragten erfordern.
 
-[![Liste der Zahlungswahrscheinlichkeiten](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Liste der Zahlungswahrscheinlichkeiten.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 Die Debitorzahlungsvorhersage-Funktion bietet auch Kontextinformationen zur Erläuterung der Vorhersage. Diese Informationen umfassen die wichtigsten Faktoren, die die Vorhersage beeinflusst haben, den aktuellen Geschäftszustand mit dem Debitor und Details zum historischen Zahlungsverhalten des Debitors.
 

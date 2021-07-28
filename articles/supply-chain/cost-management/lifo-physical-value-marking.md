@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 294c7bbb328c31c6c3fdc16a72267224d7c71b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dcac72a60eac6abb29a017eb4ce02a71dca572d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809733"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344543"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO mit physischem Wert und Markierung
 
@@ -53,7 +53,7 @@ In diesem Beispiel ist die Artikelmodellgruppe so konfiguriert, dass der physisc
 
 Der neue laufende Durchschnittseinstandspreis stellt den Durchschnitt der wertmäßig aktualisierten Buchungen in Höhe von EUR 15,00 dar. Die folgende Abbildung zeigt die Auswirkungen des Lagermodells LIFO auf diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird. 
 
-![LIFO ohne Einbeziehung des physischen Werts](./media/lifowithoutincludephysicalvalue.gif) 
+![LIFO ohne Einbeziehung des physischen Werts.](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 
@@ -89,7 +89,7 @@ Die Buchung 6a wird mit der Zugangsbuchung 4b reguliert. Diese Buchungen werden 
 
 Die folgende Abbildung zeigt die Auswirkungen des Lagermodells LIFO für diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** verwendet wird. 
 
-![LIFO mit "Physischen Wert einbeziehen"](./media/lifowithincludephysicalvalue.gif) 
+![LIFO mit „Physischen Wert einbeziehen“.](./media/lifowithincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 
@@ -133,7 +133,7 @@ Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmä�
 
 Die folgende Abbildung gibt Aufschluss über die Auswirkungen des LIFO-Lagermodells auf diese Reihe von Buchungen, die bei markierten Ab- und Zugängen anfallen. 
 
-![LIFO mit Markierung](./media/lifowithmarking.gif) 
+![LIFO mit Markierung.](./media/lifowithmarking.gif) 
 
 **Diagrammschlüssel**
 

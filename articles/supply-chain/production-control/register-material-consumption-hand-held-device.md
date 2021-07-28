@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0313bd1a5adc0fdb7a4958c5dfa013cfdc51491a
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 2c70b6ecd284acc8817970e090583603d1b8e110
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189641"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345403"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Materialverbrauch mithilfe eines mobilen Geräts registrieren
 
@@ -30,7 +30,7 @@ In diesem Thema wird ein Workflow beschrieben, der die Erfassung des Rohmaterial
 
 ## <a name="introduction"></a>Einführung
 
-Dieser Workflow ist relevant, wenn es eine stringente Anforderung für die Nachverfolgbarkeit des Materials gibt. In diesen Fällen muss die exakte Zeit und die Menge für den der Verbrauch gemeldet werden, um die Nachweisbarkeit der Materialien zu gewährleisten. Dieser Prozess kann im Vergleich zu den vor- oder Arbeitsgängen Rückfluss angezeigt werden, in denen ein Gegenkonto zwischen dem Zeitpunkt der Erfassung und dem Zeitpunkt vorhanden ist, ab der tatsächliche Verbrauch erfolgt. Dies erläutert, weshalb eine Strategie des automatischen Verbrauch für einige Materialien mit Nachweisbarkeitsanforderungen nicht verwendet werden kann. Betrachten wir ein einfaches Szenario, das erklärt, wie Sie einen Workflow einrichten, um die Erfassung des Rohmaterialverbrauchs in der Produktion mithilfe eines Handgeräts zu aktivieren. [![Einrichten eines Workflows zur Aktivierung der Erfassung des Rohmaterialverbrauchs mit einem Handgerät](./media/scenario3.png)](./media/scenario3.png)
+Dieser Workflow ist relevant, wenn es eine stringente Anforderung für die Nachverfolgbarkeit des Materials gibt. In diesen Fällen muss die exakte Zeit und die Menge für den der Verbrauch gemeldet werden, um die Nachweisbarkeit der Materialien zu gewährleisten. Dieser Prozess kann im Vergleich zu den vor- oder Arbeitsgängen Rückfluss angezeigt werden, in denen ein Gegenkonto zwischen dem Zeitpunkt der Erfassung und dem Zeitpunkt vorhanden ist, ab der tatsächliche Verbrauch erfolgt. Dies erläutert, weshalb eine Strategie des automatischen Verbrauch für einige Materialien mit Nachweisbarkeitsanforderungen nicht verwendet werden kann. Betrachten wir ein einfaches Szenario, das erklärt, wie Sie einen Workflow einrichten, um die Erfassung des Rohmaterialverbrauchs in der Produktion mithilfe eines Handgeräts zu aktivieren. [![Einrichten eines Workflows zur Aktivierung der Erfassung des Rohmaterialverbrauchs mit einem Handgerät.](./media/scenario3.png)](./media/scenario3.png)
 
 ### <a name="scenario-details"></a>Szenariodetails
 
@@ -60,7 +60,7 @@ Der Produktionsauftrag ist **Vorkalkuliert** und **Freigegeben** und Lagerortarb
 
 Dadurch wird das Material vom Sammellagerplatz zum Lagerplatz für Produktions-Wareneingang PIL-01 verschoben. Nachdem die Arbeit abgeschlossen wurde, verfügt das Material über den Status **Am Lagerplatz für den Produktions-Wareneingang entnommen**. Der Status nach der Arbeit wird entweder als **Entnommen** oder **Physisch reserviert** verarbeitet. Diese wird mit dem Parameter **Status, nachdem es auf dem Lagerhausformular erfasst wurde** konfiguriert.
 
-5.  Startet den Produktionsauftrag entweder vom Client oder dem tragbaren Gerät, indem Sie  **Produktionsanfang** verwenden.
+5.  Startet den Produktionsauftrag entweder vom Client oder dem tragbaren Gerät, indem Sie **Produktionsanfang** verwenden.
 
 Nachdem der Produktionsauftrag gestartet wurde, können Sie mit Materialentnahme den Workflow zum tragbaren Gerät erfassen. Beginnen wir mit der Erfassung des Verbrauchs von 25 Kilogramm von Charge B1.
 

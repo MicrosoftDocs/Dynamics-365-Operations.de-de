@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 8c99203110cfdc7f8123c30488611d55f48e8f67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e6ab75c970c6c14d4977b6c739ba46e33f4962e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753599"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348043"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Steuerelemente für Word-Inhalte in generierten Berichten unterdrücken
 
@@ -63,7 +63,7 @@ Außerdem müssen Sie die folgende Vorlage für den Beispielbericht herunterlade
     > [!NOTE]
     > Das sich wiederholende Inhaltssteuerelement wird durch den Schlüssel **SummaryLines** gekennzeichnet, der dem Feld des benutzerdefinierten XML-Teils entspricht, dem es zugeordnet wurde.
 
-    ![Layout der Word-Vorlage](./media/er-design-configuration-word-suppress-controls-image1.gif)
+    ![Layout der Word-Vorlage.](./media/er-design-configuration-word-suppress-controls-image1.gif)
 
 ## <a name="select-the-existing-er-report-configuration"></a>Wählen Sie die vorhandene ER-Berichtskonfiguration aus
 
@@ -98,7 +98,7 @@ Aktuell wird die Datei „SampleVendPaymDocReportBounded.docx“ als Vorlage ver
 7. Wählen Sie **OK**.
 8. Wählen Sie im Dialogfeld **Elektronische Berichtsparameter** die Option **OK** aus, und analysieren Sie die generierte Ausgabe.
 
-    ![Zahlrungen zur Verarbeitung auf der Seite „Kreditorenzahlungen“](./media/er-design-configuration-word-suppress-controls-image2.gif)
+    ![Zahlungen zur Verarbeitung auf der Seite „Kreditorenzahlungen“.](./media/er-design-configuration-word-suppress-controls-image2.gif)
 
     Die Ausgabe wird im Word-Format dargestellt und enthält den Zusammenfassungsabschnitt.
 
@@ -149,7 +149,7 @@ Wenn Sie den Zusammenfassungsabschnitt in einem generierten Dokument auf Anforde
 
 9. Wählen Sie **Speichern** aus, um Ihre Änderungen im bearbeitbaren Format zu speichern.
 
-    ![Die generierte Ausgabe im Word-Format](./media/er-design-configuration-word-suppress-controls-image3.gif)
+    ![Die generierte Ausgabe im Word-Format.](./media/er-design-configuration-word-suppress-controls-image3.gif)
 
 ## <a name="run-the-modified-format-to-create-word-output"></a>Das geänderte Format zum Erstellen der Word-Ausgabe ausführen
 
@@ -163,7 +163,7 @@ Wenn Sie den Zusammenfassungsabschnitt in einem generierten Dokument auf Anforde
 8. Wählen Sie im Dialogfeld **Elektronische Berichtsparameter** im Feld **Zusammenfassungsabschnitt unterdrücken** die Option **Ja** aus.
 9. Wählen Sie **OK** aus, und analysieren Sie die generierte Ausgabe.
 
-    ![Generierte Ausgabe im Word-Format](./media/er-design-configuration-word-suppress-controls-image4.gif)
+    ![Generierte Ausgabe im Word-Format.](./media/er-design-configuration-word-suppress-controls-image4.gif)
 
     Beachten Sie, dass die Ausgabe den Zusammenfassungsabschnitt nicht enthält, da er unterdrückt wurde.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4a8e3378a1d31101d111673cf66f75e807cd05a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188172"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353467"
 ---
 # <a name="purchase-requisition-workflow"></a>Bestellanforderungsworkflow
 
@@ -51,7 +51,7 @@ Die folgende Abbildung zeigt, wie eine Bestellanforderung als einzelnes Dokument
 -   **Einkaufsvertreter** – Der Benutzer, der die Beschaffungsprüfung durchführt und das Dokument genehmigen kann.
 -   **Der Vorgesetzte der anfordernden Person** – Der Benutzer, der die Prüfung auf Managerebene durchführt und das Dokument genehmigen kann.
 
-![Workflowüberprüfungsprozess für Bestellanforderungen](./media/purchreqworkflowoverview_submission.gif)  
+![Workflowüberprüfungsprozess für Bestellanforderungen.](./media/purchreqworkflowoverview_submission.gif)  
 In diesem Beispiel umfasst der Workflowprozess für die Bestellanforderung die folgenden Schritte:
 
 1.  Der Antragsteller übermittelt eine Bestellanforderung zur Prüfung.
@@ -74,7 +74,7 @@ In diesem Beispiel umfasst der Workflowprozess die folgenden Rollen:
 -   **Abteilungsleiter** – Der Benutzer, der eine Aufwendungsprüfung durchführt und das Dokument genehmigen kann.
 -   **Gruppenleiter** – Der Benutzer, der eine Prüfung als Unterzeichnungsberechtigter durchführt und das Dokument genehmigen kann.
 
-![Workflowüberprüfungsprozess für Bestellanforderungspositionen](./media/purchreqlineworkflowoverview.gif)  
+![Workflowüberprüfungsprozess für Bestellanforderungspositionen.](./media/purchreqlineworkflowoverview.gif)  
 In diesem Beispiel umfasst der Workflowprozess für die Bestellanforderungspositionen die folgenden Schritte:
 
 1.  Der Antragsteller übermittelt eine Bestellanforderung zur Prüfung. Jede Position wird an den Prüfer weitergeleitet, der im Workflowprozess als Empfänger konfiguriert ist.

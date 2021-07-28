@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a6a8ea3fcad980dc02f489e07a7b21fe1c1b5a5a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c3a0cc24a77b29cedaa10ebb4d6e2ad2a4cbf629
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839979"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344757"
 ---
 # <a name="electronic-invoicing-overview"></a>Informationen zur elektronischen Rechnungsstellung
 
@@ -98,7 +100,7 @@ Wenn die elektronische Rechnungsstellung über LCS installiert wird und die erfo
 
 Die folgende Abbildung zeigt, wie Daten zu und von der elektronischen Rechnungsstellung fließen.
 
-![Datenfluss für die elektronische Rechnungsstellung](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Datenfluss für die elektronische Rechnungsstellung.](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Datenschutzhinweis
 Für die Aktivierung und Verwendung der elektronischen Rechnungsstellung müssen möglicherweise nur begrenzte Daten gesendet werden, einschließlich der Steuerregistrierungskennung für die Organisation. Diese Daten werden an von den Steuerbehörden autorisierte Drittagenturen weitergeleitet, um elektronische Rechnungen in den für die Integration in den Webdienst der Behörde erforderlichen Formaten zu senden. Daten, die aus diesen externen Systemen in diesen Dynamics 365-Onlinedienst importiert werden, unterliegen unseren [Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkId=512132). Weitere Informationen finden Sie in den Abschnitten zum Datenschutz in der landesspezifischen Funktionsdokumentation.

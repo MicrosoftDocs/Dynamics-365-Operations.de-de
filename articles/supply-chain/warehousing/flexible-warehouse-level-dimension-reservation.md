@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ed90e773e1b8c90afc119a471cf844941ad19226
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: eca0b61e1fa6760bfed1a9f9979deddccf6fb1a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103045"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343773"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 
@@ -58,7 +58,7 @@ Obwohl die Reservierungshistorie *Charge unterhalb\[Lagerort\]* den Geschäftszi
 
 Um der gewünschten Flexibilität bei der Chargenreservierung für Artikel, die mit einer *Charge unterhalb\[Lagerplatz\]*-Bestandsreservierungshistorie verknüpft sind, gerecht zu werden, müssen Bestandsverwalter das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** für die **Chargennummer**-Ebene auf der Seite **Bestandsreservierungshierarchien** aktivieren.
 
-![Bestandreservierungshierarchie flexibler machen](media/Flexible-inventory-reservation-hierarchy.png)
+![Bestandreservierungshierarchie flexibler machen.](media/Flexible-inventory-reservation-hierarchy.png)
 
 Wenn die **Chargennummer**-Ebene in der Hierarchie ausgewählt wird, werden alle Dimensionen über dieser Ebene und bis zur **Lagerort**-Ebene wird automatisch ausgewählt. (Standardmäßig sind alle Dimensionen über der **Lagerort**-Ebene ausgewählt.) Dieses Verhalten spiegelt eine Logik wider, bei der alle Dimensionen im Bereich zwischen Chargennummer und Lagerort automatisch reserviert werden, nachdem Sie eine bestimmte Chargennummer aus der Auftragsposition reserviert haben.
 
@@ -145,7 +145,7 @@ Für dieses Beispielmüssen Demodaten eingerichtet werden, und Sie müssen das *
 
 6. Auf der Seite **Chargenreservierung** wählen Sie die Position für Charge **B11** sowie **Position reservieren** aus. Es gibt keine festgelegte Logik zum Zuweisen von Lagerorten und Ladungsträgern während der automatischen Reservierung. Sie können die Menge manuell in das Feld **Reservierung** eingeben. Beachten Sie, dass auf dem Inforegister **Chargennummern für Quellposition zugesagt** die Charge **B11** als **Zugesagt** angezeigt wird.
 
-    ![Festlegen einer bestimmten Chargennummer für eine Auftragsposition auf der Seite „Chargenreservierung“](media/Batch-reservation-form-with-order-committed-reservation.png)
+    ![Festlegen einer bestimmten Chargennummer für eine Auftragsposition auf der Seite „Chargenreservierung“.](media/Batch-reservation-form-with-order-committed-reservation.png)
 
     > [!NOTE]
     > Die Reservierung der Menge auf einer Auftragsposition kann über mehrere Chargen hinweg erfolgen. Ebenso kann die Reservierung der gleichen Charge für mehrere Lagerorte und Ladungsträger erfolgen (sofern Ladungsträger für die Lagerorte aktiviert sind).
@@ -154,7 +154,7 @@ Für dieses Beispielmüssen Demodaten eingerichtet werden, und Sie müssen das *
 
 7. Wechseln Sie zu **Produktinformationsverwaltung** \> **Produkte** \> **Freigegebene Produkte**. Wählen Sie Ihren Artikel und dann **Lagerbestand verwalten** \> **Ansicht** \> **Transaktionen** aus.
 
-    ![Auftragsgebundene Reservierung als Lagerbuchungstyp](media/Inventory-transactions-for-order-committed-reservation.png)
+    ![Auftragsgebundene Reservierung als Lagerbuchungstyp.](media/Inventory-transactions-for-order-committed-reservation.png)
 
 8. Überprüfen Sie die Lagerbuchungen, die mit der Reservierung der Auftragsposition verknüpft sind.
 
@@ -172,7 +172,7 @@ Für dieses Beispielmüssen Demodaten eingerichtet werden, und Sie müssen das *
     - Das System verwendet Arbeitsvorlagen, jedoch keine Lagerplatzrichtlinien, um Arbeit zu generieren. Alle Standardeinstellungen, die für Arbeitsvorlagen definiert sind, z. B. eine maximale Anzahl von Entnahmepositionen oder eine bestimmte Maßeinheit, werden angewendet, um festzulegen, wann neue Arbeit angelegt werden sollte. Die Regeln, die mit Lagerplatzrichtlinien zum Identifizieren von Entnahmepositionen verknüpft sind, werden nicht berücksichtigt, da die auftragsgebundene Reservierung bereits alle Bestandsdimensionen angibt. Diese Bestandsdimensionen enthalten Dimensionen auf Lagerortebene. Daher erbt die Arbeit diese Dimensionen, ohne dass Lagerplatzrichtlinien berücksichtigt werden müssen.
     - Die Chargennummer wird nicht an der Entnahmeposition angezeigt (im Gegensatz zur Arbeitsposition, die für einen Artikel mit verknüpfter *Charge oberhalb\[Lagerplatz\]*-Reservierungshierarchie erstellt wird.) Stattdessen werden die von-Chargennummer und alle anderen Lagerdimensionen in der Lagerbuchung der Arbeitsposition angezeigt, auf die von den verknüpften Lagerbuchungen verwiesen wird.
 
-        ![Lagerort-Lagerbuchungen für Arbeit, die aus einer auftragsgebundenen Reservierung stammt](media/Work-inventory-transactions-for-order-committed-reservation.png)
+        ![Lagerort-Lagerbuchungen für Arbeit, die aus einer auftragsgebundenen Reservierung stammt.](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
     - Nachdem die Arbeit erstellt wurde, wird die Lagerbuchung, bei der das Feld **Referenz** auf **Auftragsgebundene Reservierung** gesetzt ist, entfernt. Die Lagerbuchung, bei das Feld **Referenz** auf **Arbeit** gesetzt ist, enthält nun die physische Reservierung für alle Lagerdimensionen der Menge.
 
@@ -207,7 +207,7 @@ Bevor Sie die flexible Ladungsträgerreservierung verwenden können, müssen zwe
 
 Um die Ladungsträgerresevierung für eine Bestellung zu aktivieren, müssen Sie das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** für die Ebene **Ladungsträger** auf der Seite **Bestandsreservierungshierarchien** für die Hierarchie auswählen, die dem entsprechenden Artikel zugeordnet ist.
 
-![Seite „Bestandsreservierungshierachien“ für eine flexible Ladungsträgerreservierungshierarchie](media/Flexible-LP-reservation-hierarchy.png)
+![Seite „Bestandsreservierungshierachien“ für eine flexible Ladungsträgerreservierungshierarchie.](media/Flexible-LP-reservation-hierarchy.png)
 
 Sie können die Ladungsträgerreservierungshierarchie für den Auftrag zu jedem Zeitpunkt Ihrer Bereitstellung aktivieren. Diese Änderung wirkt sich nicht auf Reservierungen oder offene Lagerarbeiten aus, die vor der Änderung erstellt wurden. Sie können jedoch das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** nicht deaktivieren, wenn offene ausgehende Lagerbuchungen den Abgangsstatus *Bestellt*, *Bestellt reserviert* oder *Physisch reserviert* für mindestens einen Artikel haben, der mit der Reservierungshierarchie verknüpft ist.
 
@@ -227,7 +227,7 @@ Wenn die Auftragsposition, die eine auftragsgebundene Ladungsträgerreservierung
 
 Wenn eine Lagerarbeitsaufgabe aus Positionen besteht, die einer vollständigen Palette entsprechen und ladungsträgergebundene Mengen haben, können Sie den Kommissionierprozess mithilfe eines Menüelements für mobile Geräte optimieren, bei denen die Option **Mit Ladungsträger handhaben** auf *Ja* gesetzt ist. Ein Lagerarbeiter kann dann einen Ladungsträger scannen, um eine Kommissionierung abzuschließen, anstatt die Artikel aus der Arbeit einzeln scannen zu müssen.
 
-![Menüpunkt für mobiles Gerät, bei dem die Option „Mit Ladungsträger handhaben“ auf „Ja“ gesetzt ist](media/Handle-by-LP-menu-item.png)
+![Menüpunkt für mobiles Gerät, bei dem die Option „Mit Ladungsträger handhaben“ auf „Ja“ gesetzt ist.](media/Handle-by-LP-menu-item.png)
 
 Da die Funktionalität **Mit Ladungsträger handhaben** keine Arbeit unterstützt, die mehrere Paletten abdeckt, ist es besser, für verschiedene Ladungsträger separate Arbeitsaufgaben zu nutzen. Um diesen Ansatz zu verwenden, fügen Sie das Feld **Auftragsgebundene Ladungsträger-ID** als Arbeitskopfzeilenumbruch auf der Seite **Arbeitsvorlage** hinzu.
 
@@ -249,8 +249,8 @@ Dieses Szenario verweist auf Werte und Datensätze, die in den für das Supply C
 1. Geben Sie im Feld **Name** einen Wert ein (beispielsweise *Flexibler LP*).
 1. Geben Sie im Feld **Beschreibung** einen Wert ein (beispielsweise *Flexible LP-Reservierung*).
 1. Wählen Sie in der Liste **Ausgewählt** die **Chargennummer**, **Seriennummer** und den **Besitzer**.
-1. Wählen Sie die Schaltfläche **Entfernen** aus ![Rückwärtspfeil](media/backward-button.png), um die Auswahl in die Liste **Verfügbar** zu verschieben.
-1. Wählen Sie **OK**.
+1. Wählen Sie die Schaltfläche **Entfernen** aus, den ![Rückwärtspfeil](media/backward-button.png), um die ausgewählten Datensätze in die Liste **Verfügbar** zu verschieben.
+1. Wählen Sie **OK** aus.
 1. In der Zeile mit der **Ladungsträger**-Dimensionsebene aktivieren Sie das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen**. Die Ebene **Lagerplatz** wird automatisch ausgewählt und Sie können das Kontrollkästchen für diese nicht deaktivieren.
 1. Wählen Sie **Speichern** aus.
 

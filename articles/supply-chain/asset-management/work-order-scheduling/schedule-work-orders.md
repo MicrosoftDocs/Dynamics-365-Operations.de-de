@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5f5cfdcb5e930d2dc5830ad7cd9c85c88b3d40f7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7fa0b6f315008e6af774470c775bd34106201b16
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813748"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347115"
 ---
 # <a name="schedule-work-orders"></a>Arbeitsaufträge terminieren
 
@@ -56,9 +56,9 @@ Es können nur Arbeitsaufträge mit einem Arbeitsauftragslebenszyklusstatus term
 
 *Beispiel:* In der folgenden Abbildung wird die Formel, die in das Feld **Erwarteter Start** eingefügt wird, eine Arbeitsauftragsplanung für alle Arbeitsaufträge mit erwartetem Startdatum in einer Woche von heute und später erzeugen. Diese Formel kann nützlich sein, wenn Sie die Arbeitsauftragsplanung fortlaufend durchführen, aber Sie möchten sicherstellen, dass die für die nächsten 5-6 Tage geplanten Arbeitsaufträge nicht verschoben werden.
 
-![Abbildung 1](media/03-work-order-scheduling.png)
+![Abbildung 1.](media/03-work-order-scheduling.png)
 
-Die auf Arbeitsaufträge bezogene Arbeitsauftragsart kann die Terminierung für einen Wartungsmitarbeiter einrichten (**Anlagenmanagement** > **Einrichtung** > **Aufträge** > **Auftragsarten** > **Ein Wartungsmitarbeiter** Umschalttaste auf „Ja“ eingestellt). Das bedeutet, dass, wenn die Auftragsart auf einem Arbeitsauftrag verwendet wird, die Umschalttaste **Ein Wartungsarbeiter** automatisch auf „Ja“ auf der Seite **Alle Arbeitsaufträge** Detailseite > **Kopf** Ansicht > **Terminplan** FastTab gesetzt wird. Bei der Arbeitsauftragsplanung werden alle auf dem Arbeitsauftrag erstellten Arbeitsaufträge anschließend auf den gleichen Instandhalter eingeplant. Bei Bedarf können Sie die Auswahl über die Schaltfläche **Ein Wartungsarbeiter** Umschalten in **Alle Arbeitsaufträge** bearbeiten, um die Planung mehrerer Mitarbeiter oder eines Mitarbeiters auf den Arbeitsaufträgen zu ermöglichen.
+Die auf Arbeitsaufträge bezogene Arbeitsauftragsart kann die Terminierung für einen Wartungsmitarbeiter einrichten (**Anlagenmanagement** > **Einrichtung** > **Aufträge** > **Auftragsarten** > **Ein Wartungsmitarbeiter** Umschalttaste auf „Ja“ eingestellt). Das bedeutet, dass, wenn die Auftragsart auf einem Arbeitsauftrag verwendet wird, die Umschalttaste **Ein Wartungsarbeiter** automatisch auf „Ja“ auf der Seite **Alle Arbeitsaufträge** Detailseite > **Kopf** Ansicht > **Terminplan** FastTab gesetzt wird. Bei der Arbeitsauftragsplanung werden alle auf dem Arbeitsauftrag erstellten Arbeitsaufträge anschließend auf den gleichen Instandhalter eingeplant. Bei Bedarf können Sie die Auswahl über die Schaltfläche **Ein Wartungsarbeiter** umschalten in **Alle Arbeitsaufträge** bearbeiten, um die Planung mehrerer Mitarbeiter oder eines Mitarbeiters auf den Arbeitsaufträgen zu ermöglichen.
 
 Der Terminierungsprozess im Anlagenmanagement berücksichtigt mehrere Faktoren in der Terminberechnung:
 

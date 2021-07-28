@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e119eee82b1438dd8c3ccbaf2d54962b59fe6ae3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 47fd386875e3000d579890ae58a462b643ef1876
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808399"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360921"
 ---
 # <a name="counters"></a>Zähler
 
@@ -62,7 +62,7 @@ Eine Zählererfassung kann auf der Grundlage der Produktionsstunden oder produzi
 
 Wenn Anlagentypen zu einem Zählertyp unter **Zähler** hinzugefügt werden, wird dieser Zähler automatisch zu den Anlagentypen auf dem Inforegister **Zähler** unter [Anlagentypen](../setup-for-objects/object-types.md) hinzugefügt.
 
-![Abbildung 1](media/071-setup-for-objects.png)
+![Abbildung 1.](media/071-setup-for-objects.png)
 
 
 

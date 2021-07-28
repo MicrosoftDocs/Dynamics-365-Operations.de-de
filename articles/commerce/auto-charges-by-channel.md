@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 23d02cf96faf3753303435acc148bf71e487d791
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c38717ca9c57913ea22f2dd7712b49f39d2e556e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799910"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349697"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Automatische Belastungen nach Kanal aktivieren und konfigurieren
 
@@ -44,7 +44,7 @@ Führen Sie die folgenden Schritte aus, um automatische Gebühren nach Kanal in 
 1. Auf der Registerkarte **Nicht aktiviert** in der Liste **Funktionsname** finden und wählen Sei **Aktivieren Sie die automatische Filterladung nach Kanal**.
 1. Wählen Sie in der unteren rechten Ecke **Jetzt aktivieren**. Nachdem die Funktion aktiviert wurde, wird sie in der Liste auf der Registerkarte **Alle** angezeigt.
 1. Gehen Sie zu **Retail and Commerce \> Retail and Commerce IT \> Vertriebsplan**.
-1. Suchen und wählen Sie im linken Bereich den Auftrag **1110** ( **Globale Konfiguration**).
+1. Suchen und wählen Sie im linken Bereich den Auftrag **1110** (**Globale Konfiguration**).
 1. Wählen Sie im Aktionsbereich **jetzt ausführen**, um die Konfigurationsänderungen zu verbreiten.
 
 > [!WARNING]
@@ -66,7 +66,7 @@ Führen Sie die folgenden Schritte aus, um einem Organisationshierarchiezweck in
 1. Wählen Sie im Aktivitätsbereich **Jetzt ausführen** aus.
 1. Wiederholen Sie die beiden vorherigen Schritte, um Aufträge **1070** (**Kanalkonfiguration**) und **1110** (**Globale Konfiguration**) auszuführen.
 
-![Konfiguration des Hierarchiezwecks der automatischen Organisation für den Einzelhandel](media/Auto-charges-org-hierarchy-purpose.png)
+![Konfiguration des Hierarchiezwecks der automatischen Organisation für den Einzelhandel.](media/Auto-charges-org-hierarchy-purpose.png)
 
 ## <a name="define-auto-charges-by-channel"></a>Definieren Sie automatische Gebühren nach Kanal
 
@@ -86,7 +86,7 @@ Führen Sie die folgenden Schritte aus, um automatische Gebühren nach Kanal in 
 1. Wählen Sie im Aktivitätsbereich **Jetzt ausführen** aus.
 1. Wiederholen Sie die beiden vorherigen Schritte, um Aufträge **1070** (**Kanalkonfiguration**) und **1110** (**Globale Konfiguration**) auszuführen.
     
-![Automatische Gebühren nach Kanal definiert](media/Auto-charges-line-charge-by-channel.png)
+![Automatische Gebühren nach Kanal definiert.](media/Auto-charges-line-charge-by-channel.png)
 
 ## <a name="example-scenario"></a>Beispielszenario
 
@@ -94,7 +94,7 @@ Im folgenden Beispiel werden die Schritte beschrieben, die zum Konfigurieren ein
 
 Die Organisation definiert einen Gebührencode, der **RECYCELN** benannt wird, wie in der folgenden Abbildung gezeigt.
 
-![RECYCLE berechnet den Code](media/Auto-charges-charge-code.png)
+![RECYCLE berechnet den Code.](media/Auto-charges-charge-code.png)
 
 Eine automatische Belastung wird auf Positionsebene erstellt. Es weist die folgenden Konfigurationen auf:
 
@@ -112,13 +112,13 @@ Eine automatische Gebührenzeile wird erstellt. Es weist die folgenden Konfigura
 - Das Feld **Kategorie** ist auf **Fest** festgelegt.
 - Das Feld **Belastung** wird mit auf **$6.25** festgelegt.
 
-![Konfiguration der Zeile automatischen Belastungsebene und automatische Belastung](media/Auto-charges-recyclingfee-line-fee.png)
+![Konfiguration der Zeile automatischen Belastungsebene und automatische Belastung.](media/Auto-charges-recyclingfee-line-fee.png)
 
 In der POS-Anwendung wird ein Auftrag im Shopkanal **San Francisco** erstellt. Die Position **Belastungen** zeigen die Recyclinggebühr von **6,25 $**.
 
 Durch die Auswahl von **Transaktionsoptionen \> Gebühren \> Gebühren verwalten** in der POS-Anwendung können Sie den Gebührencode und die Beschreibung der Recyclinggebühr anzeigen.
 
-![Recyclinggebühr in der POS-Anwendung](media/pos-auto-charges-recyclingfee-line-fee.png)
+![Recyclinggebühr in der POS-Anwendung.](media/pos-auto-charges-recyclingfee-line-fee.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 563fa291754f7f795fa64d530de49b9fe4083c56
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9990df3e57d65c77a75913efaf30675528d411b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821296"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343699"
 ---
 # <a name="weighted-average-date"></a>Gewichteter Durchschnitt (Datum)
 
@@ -39,7 +39,7 @@ Gewichteter Durchschnitt = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) �
 
 Während des Lagerabschlusses wird die Berechnung innerhalb der Abschlussperiode täglich ausgeführt (siehe folgende Grafik). 
 
-![Gewichteter Durchschnitt – Modell für tägliche Berechnung](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Gewichteter Durchschnitt – Modell für tägliche Berechnung.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Lagerbuchungen für Lagerabgänge – einschließlich Aufträge, Lagererfassungen und Produktionsaufträge – werden zu einem vorkalkulierten Einstandspreis zum Buchungsdatum ausgeführt. Dieser vorkalkulierte Einstandspreis wird auch als laufender Durchschnittseinstandspreis bezeichnet. Zum Zeitpunkt des Lagerabschlusses werden die Lagerbuchungen vom System für die vorangegangenen Perioden und Tage sowie für den aktuellen Tag analysiert. Mithilfe dieser Analyse wird ermittelt, welches der folgenden Abschlussprinzipien verwendet werden soll:
 
@@ -72,7 +72,7 @@ Die folgende Abbildung zeigt diese Buchungen an:
 -   2b. Der wertmäßige Lagerabgang wird für die Menge "2" zu jeweils EUR 10,00 (Kosten) aktualisiert.
 -   3. Der Lagerabschluss erfolgt unter Verwendung der Methode für den direkten Ausgleich, um den wertmäßigen Lagerzugang mit dem wertmäßigen Lagerabgang auszugleichen.
 
-![Direkter Ausgleich mit Datum für den gewichteten Durchschnitt und ohne die Option "Physischen Wert einbeziehen"](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Direkter Ausgleich mit Datum für den gewichteten Durchschnitt und ohne die Option „Physischen Wert einbeziehen“.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Schlüssel der Abbildung:**
 
@@ -126,7 +126,7 @@ Das System generiert und bucht die zusammengefasste Umlagerungsbuchung. Darüber
 
 Die folgende Abbildung zeigt eine Reihe von Transaktionen und die Auswirkungen der Verwendung des Lagermodells mit gewichtetem Durchschnitt und des Prinzips des zusammengefassten Ausgleichs, aber ohne Verwendung der Option **Physischen Wert einbeziehen**. 
 
-![Zusammengefasster Ausgleich mit Datum für den gewichteten Durchschnitt und ohne die Option "Physischen Wert einbeziehen"](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Zusammengefasster Ausgleich mit Datum für den gewichteten Durchschnitt und ohne die Option „Physischen Wert einbeziehen“.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Schlüssel der Abbildung:**
 
@@ -175,7 +175,7 @@ Sie können vor der Ausführung der Buchung eine Abgangsbuchung für einen Zugan
 
 Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. Die folgende Abbildung zeigt eine Reihe von Transaktionen und die Auswirkungen der Verwendung des Lagermodells für das Datum des gewichteten Durchschnitts sowie der Verwendung der Markierung.
 
-![Datum für den gewichteten Durchschnitt mit Markierung](./media/weightedaveragedatewithmarking.gif) 
+![Datum für den gewichteten Durchschnitt mit Markierung.](./media/weightedaveragedatewithmarking.gif) 
 
 **Schlüssel der Abbildung:**
 

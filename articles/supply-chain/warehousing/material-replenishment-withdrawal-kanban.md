@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 1c8a6b4152215bc912d99f2f4c250defa75278c3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189943"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356926"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Wiederbeschaffung mit Entnahme-Kanbans
 
@@ -35,7 +35,7 @@ Der Entnahme-Kanban kann verwendet werden, um einen Kanban eines einzelnen Artik
 
 Im folgenden Szenario wird ein entnahmebasierten Wiederbeschaffungssystem gezeigt, bei dem das Entnahmesignal die Erstellung eines Kanbans auslöst, um Material für einen Produktionsprozess zu ergänzen. 
 
-[![Entnahmesignal löst die Erstellung eines Kanban aus, um Material für einen Produktionsprozess wiederzubeschaffen](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![Entnahmesignal löst die Erstellung eines Kanban aus, um Material für einen Produktionsprozess wiederzubeschaffen.](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  Entnahme-Kanban
 2.  Kanban "von" Lagerplatz und Einlieferungslagerplatz für Lagerortarbeit
@@ -72,7 +72,7 @@ Wenn der Abstand zwischen den Lagerort-Lagerplätzen und dem Lagerplatz für Pro
 
 Im folgenden Szenario wird die Umlagerungsaktivität des Entnahme-Kanban für die Umlagerung zwischen zwei Lagerplätzen am selben Lagerort konfiguriert. Die Umlagerungsaktivität des Entnahme-Kanbank ist so eingerichtet, dass diese automatisch abgeschlossen wird. 
 
-[![Automatischer Abschluss der Umlagerungsaktivität nach Verarbeitung der Kanban-Entnahmearbeit](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![Automatischer Abschluss der Umlagerungsaktivität nach Verarbeitung der Kanban-Entnahmearbeit.](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  Gemeinsamer Lagerort für Rohmaterialen und Produktion
 2.  Lagerortlagerplätze für Rohmaterialen

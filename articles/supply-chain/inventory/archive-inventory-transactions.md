@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 8b61e65d3a641a1e3d73192853c832d57ed17401
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 23da08f982639c9ba0ef847990979f73b96cac22
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021270"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345523"
 ---
 # <a name="archive-inventory-transactions"></a>Archivieren von Bestandstransaktionen
 
@@ -64,7 +64,7 @@ Gehen Sie folgendermaßen vor, um Transaktionen im Bestand zu archivieren.
 
     Die Seite **Bestandstransaktionen Archiv** erscheint und zeigt eine Liste der archivierten Prozessdatensätze.
 
-    ![Seite Archiv Bestandstransaktionen](media/archive-inventory-empty.png "Archivseite für Bestandstransaktionen")
+    ![Seite „Bestandstransaktionen-Archiv“.](media/archive-inventory-empty.png "Archivseite für Bestandstransaktionen")
 
 1. Wählen Sie im Aktivitätsbereich **Archiv für Bestandstransaktionen**, um ein Archiv für Bestandstransaktionen zu erstellen.
 1. Legen Sie im Dialogfeld **Archiv für Bestandstransaktionen** auf der Registerkarte **Parameter** die folgenden Felder fest:
@@ -72,7 +72,7 @@ Gehen Sie folgendermaßen vor, um Transaktionen im Bestand zu archivieren.
     - **Ab-Datum in geschlossener Sachkontoperiode** - Wählen Sie das früheste Datum der Transaktion, die in das Archiv aufgenommen werden soll.
     - **Bis-Datum in geschlossener Sachkontoperiode** - Wählen Sie das späteste Transaktionsdatum, das in das Archiv aufgenommen werden soll.
 
-    ![Dialogfenster „Bestandstransaktionen archivieren“](media/archive-inventory-dates.png "Dialogfenster Archiv für Bestandstransaktionen")
+    ![Dialogfenster „Bestandstransaktionen archivieren“.](media/archive-inventory-dates.png "Dialogfenster Archiv für Bestandstransaktionen")
 
     > [!NOTE]
     > Nur Perioden, die die [Voraussetzungen](#prerequisites) erfüllen, stehen zur Auswahl.
@@ -87,7 +87,7 @@ Gehen Sie folgendermaßen vor, um Transaktionen im Bestand zu archivieren.
 
 Die Seite **Bestandstransaktionen archivieren** zeigt Ihre komplette Archivierungshistorie. Jede Zeile im Raster zeigt Informationen wie das Datum, an dem das Archiv erstellt wurde, den Benutzer, der es erstellt hat, und seinen Status.
 
-![Archivierungsverlauf auf der Seite Archiv für Bestandstransaktionen](media/archive-inventory-full.png "Archivierung der Historie auf der Seite Archiv für Bestandstransaktionen")
+![Archivierungsverlauf auf der Seite „Bestandstransaktionen-Archiv“.](media/archive-inventory-full.png "Archivierung der Historie auf der Seite Archiv für Bestandstransaktionen")
 
 Wählen Sie in der Dropdown-Liste oben auf der Seite einen der folgenden Werte, um die Archive zu filtern, die im Raster angezeigt werden:
 
@@ -109,7 +109,7 @@ Die Symbolleiste oberhalb des Rasters bietet die folgenden Schaltflächen, mit d
 
 - **Archivierte Transaktionen** - Zeigt die vollständigen Details des ausgewählten Archivs an. Die Seite **Archivierte Transaktionen**, die angezeigt wird, zeigt alle Transaktionen im Archiv.
 
-    ![Archivierte Transaktionen Seite](media/archive-inventory-transactions.png "Seite für archivierte Transaktionen")
+    ![Seite „Archivierte Transaktionen“.](media/archive-inventory-transactions.png "Seite für archivierte Transaktionen")
 
     Um weitere Informationen über eine bestimmte Transaktion auf der Seite **Archivierte Transaktionen** anzuzeigen, wählen Sie sie im Raster aus und wählen dann im Aktivitätsbereich **Details zu archivierten Transaktionen**. Die angezeigte Seite **Details archivierter Transaktionen** zeigt Informationen wie die Ledger-Buchung, zugehörige Nebenbuch-Referenzen und finanzielle Dimensionen.
 

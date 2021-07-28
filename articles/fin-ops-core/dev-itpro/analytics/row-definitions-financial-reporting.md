@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5204fb80dcf3dc2342e9d37f18b9d4f587de1808
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e84f882f69fbc7fceae8a6e0332716a82830dfdc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754293"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344047"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Zeilendefinitionen im Finanzberichtdesigner
 
@@ -38,7 +38,7 @@ Eine Zeilendefinition ist eine Berichtkomponente oder ein Baustein, die den Inha
 2. Doppelklicken Sie auf den Namen der Zeilendefinition.
 3. Um alle Bausteine anzuzeigen, die der Zeilendefinition zugeordnet sind, klicken Sie mit der rechten Maustaste auf die Zeilendefinition, und wählen Sie dann **Zuordnungen** aus.
 
-## <a name="contents-of-a-row-definition"></a> Inhalt einer Zeilendefinition
+## <a name="contents-of-a-row-definition"></a>Inhalt einer Zeilendefinition
 Eine Zeilendefinition kann bis zu 20,000 Finanzdimensionszeilen und die folgenden Informationen enthalten:
 
 - Beschreibender Text, der dem Bericht Bedeutung verleiht, indem Abschnittsüberschriften, Positionen und Leerzeichen hinzugefügt werden, wie z. B. **Bargeld** oder **Gesamtumsatz**
@@ -60,7 +60,7 @@ Es gibt zwei Methoden zur Eingabe von Informationen in einer Zeilendefinition:
 - Geben Sie Zeileninformationen manuell in die neue Zeilendefinition ein. Weitere Informationen finden Sie unter [Ändern von Zeilendefinitionszellen](modify-row-definition-cells-financial-reporting.md).
 - Verwenden Sie den Berichts-Designer, um Zeileninformationen direkt aus den Finanzdimensionen abzurufen. Weitere Informationen finden Sie im Abschnitt "Verwandte Formeln/Zeilen/Einheiten" in [Ändern von Zeilendefinitionszellen](modify-row-definition-cells-financial-reporting.md).
 
-## <a name="add-dimensions-in-a-row-definition"></a> Hinzufügen einer Dimensionen zu einer Zeilendefinizion
+## <a name="add-dimensions-in-a-row-definition"></a>Hinzufügen einer Dimensionen zu einer Zeilendefinizion
 Eine Dimension stellt eine Schnittstelle von Daten und Werten dar. Sie können Daten und Werte im Berichtsdesigner gruppieren. Sie können dann Transaktionen klassifizieren und genauer analysieren. Sie können das **Dimensionen aus Zeilen einfügen**- Dialogfeld verwenden, um gleichzeitig mehrere Zeilen einer Zeilendefinition hinzuzufügen. Im Dialogfeld wird eine Spalte für jede Dimension angezeigt. In der folgenden Tabelle werden Informationen beschrieben, die Sie für die einzelnen Dimensionen angeben können.
 
 | Mit der folgenden Option...                | Beschreibung |
@@ -77,13 +77,13 @@ Um Dimensionen einer Zeilendefinition hinzuzufügen, führen Sie die folgenden S
 4. Um die Zeilendefinition auf einen bestimmten Bereich von Dimensionswerten einzuschränken, geben Sie den Dimensionsstartwert in der Zelle **Dimensionsbereichsanfang** ein, und geben Sie dann den Enddimensionswert in der Zelle **Dimensionssbereichsende** ein. Wenn Sie alle Werte für die ausgewählte Dimension einschließen möchten, lassen Sie diese Zellen leer.
 
     > [!NOTE]
-    > Wenn Sie Platzhalterzeichen (\*oder ?) zur Angabe von Dimensionsbereichen verwenden, werden möglicherweise nicht alle gewünschten Ergebnisse zurückgegeben. Dies hängt von der Sortierung der Daten in der ERP-Datenbank ab.
+    > Wenn Sie Platzhalterzeichen (\* oder ?) zur Angabe von Dimensionsbereichen verwenden, werden möglicherweise nicht alle gewünschten Ergebnisse zurückgegeben. Dies hängt von der Sortierung der Daten in der ERP-Datenbank ab.
 
 5. Wählen Sie einen Wert im Feld **Anfangszeilencode** aus, um den Zeilencode für den ersten Dimensionswert anzugeben, der der Zeilendefinition hinzugefügt wird.
 6. Geben Sie im Feld **Jede Zeile inkrementieren um** die Lücke zwischen aufeinanderfolgenden Zeilencodes an. Wenn beispielsweise der erste Zeilencode ist 100, und der Inkrementwert ist 30, die ersten neuen Zeilen weisen die Codes 100,130,160,190 und 220. Verwenden Sie einen Inkrementwert, der genügend Platz enthält, der Anwerbung neuer Format- und Formelzeilen einzufügen.
 7. Klicken Sie auf **OK**. Für jeden der ausgewählten Dimensionswerte wird der Zeilendefinition eine Position hinzugefügt.
 
-## <a name="adjust-rounding-in-a-row-definition"></a> Anpassen der Rundung in einer Zeilendefinition
+## <a name="adjust-rounding-in-a-row-definition"></a>Anpassen der Rundung in einer Zeilendefinition
 Wenn Sie eine Bilanz haben, in der die Beträge gerundet werden, sind die Summen ggf. nicht gleich. Dieses Problem kann auftreten, wenn Sie beispielsweise die Rundungsoption in einem Bilanzbericht verwenden und die Berichtsdefinition ebenfalls Rundung angibt. Verwenden Sie die Option **Rundungsregulierung** in der Zeilendefinition, um die Beträge in der Bilanz auszugleichen. Sie können Rundung auf der Registerkarte **Einstellungen** der Berichtsdefinition deaktivieren oder ändern. Die folgende Tabelle zeigt, wie Beträge gerundet werden. In dieser Tabelle weichen die Summen der Zeilen 100 und 200 ab, wenn "Runden" aktiviert ist.
 
 | Zeilencode | Nicht gerundete Beträge | Auf ganze Tausend gerundeter Betrag |
@@ -158,7 +158,7 @@ Die Formatierung, die in der Zeilendefinition angegeben wird, überschreibt jede
 
 1. Öffnen Sie im Berichts-Designer die zu bearbeitende Zeilendefinition.
 2. Wählen Sie die Zellen aus, die formatiert werden sollen. Um mehrere Zellen auszuwählen, halten Sie die STRG-Taste gedrückt, während Sie die Zelle auswählen.
-3. Klicken Sie auf die Symbolleistenschaltfläche des Formats, das übernommen werden soll. Um beispielsweise eine Zeile einzurücken, wählen Sie die Zeile aus und klicken Sie anschließend auf **Einrückung erhöhen** ![Einrückung erhöhen](media/indent.gif "Einzug vergrößern") in der Symbolleiste.
+3. Klicken Sie auf die Symbolleistenschaltfläche des Formats, das übernommen werden soll. Um beispielsweise eine Zeile einzurücken, wählen Sie die Zeile aus und klicken Sie anschließend auf **Einrückung erhöhen** ![Einrückung erhöhen](media/indent.gif "Einzug vergrößern") auf der Symbolleiste.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Anpassen der Spalten, während des Berichtentwurfs
 

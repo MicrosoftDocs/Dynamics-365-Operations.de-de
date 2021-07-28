@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5e0e671e624de2646a47647ef08d3567599b884
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: d693d306929140c9640ed34d756399d70b81a12f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261695"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347757"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Methoden der Wiederbeschaffung und Mengenänderung
 
@@ -34,15 +34,15 @@ Die folgenden Reichweitencodes können in der Planungsoptimierung verwendet werd
 
 - **Periode** – Die Wiederbeschaffungsmethode fasst den gesamten Bedarf für eine Periode in einem Auftrag für das Produkt zusammen. Der Auftrag wird für den ersten Tag der Periode geplant, und seine Menge erfüllt den Nettobedarf während des festgelegten Zeitraums. Die Periode beginnt mit dem ersten Bedarf des Produkts und umfasst die festgelegte Zeitspanne. Die nächste Periode beginnt mit dem nächsten Bedarf des Produkts. Der *Perioden*-Deckungscode wird häufig für nicht vorhersagbare Bestandsziehung, saisonabhängige Produkte oder Produkte mit hohen Kosten verwendet. Die folgende Abbildung zeigt ein Beispiel.
 
-    ![Beispiel für die Verwendung des periodischen Abdeckungscodes](./media/coverage-code-period.png "Beispiel für die Verwendung des periodischen Abdeckungscodes")
+    ![Beispiel für die Verwendung des periodischen Abdeckungscodes.](./media/coverage-code-period.png "Beispiel für die Verwendung des periodischen Abdeckungscodes")
 
 - **Bedarf** – Bei der Wiederbeschaffungsmethode erstellt das System eine geplante Einkaufs-, Transport- oder Produktionsbestellung pro Bedarf für das Produkt. Diese Methode wird für teure Produkte verwendet, die einen intermittierenden Bedarf haben. Der *Bedarfsdeckungscode* wird häufig für konfigurierbare Produkte oder Make-to-Order-Szenarien verwendet. Die folgende Abbildung zeigt ein Beispiel.
 
-    ![Beispiel für die Verwendung des Anforderungsabdeckungscodes](./media/coverage-code-requirement.png "Beispiel für die Verwendung des Anforderungsabdeckungscodes")
+    ![Beispiel für die Verwendung des Anforderungsabdeckungscodes.](./media/coverage-code-requirement.png "Beispiel für die Verwendung des Anforderungsabdeckungscodes")
 
 - **Min./Max.** - Die Methode der Wiederbeschaffung basiert auf dem Bestand. Sie definiert die Wiederbeschaffung des Bestands bis zu einem bestimmten Niveau, wenn der vorhergesagte Lagerbestand unter einem bestimmten Schwellenwert liegt. Die Wiederbeschaffungsmenge ist die Differenz zwischen dem maximalen Leven und dem Level der vorhergesagten Verfügbarkeit. Der *Min./Max.* Abdeckungscode wird häufig für vorhersagbare Bestandsentnahmen, hohe Läufer oder weniger teure Produkte verwendet. Die folgende Abbildung zeigt ein Beispiel.
 
-    ![Beispiel für die Verwendung des Min./Max.Deckungscodes](./media/coverage-code-min-max.png "Beispiel für die Verwendung des Min./Max.Deckungscodes")
+    ![Beispiel für die Verwendung des Min./Max.-Abdeckungscodes.](./media/coverage-code-min-max.png "Beispiel für die Verwendung des Min./Max.Deckungscodes")
 
 - **Manuell** – Bei der Wiederbeschaffung schlägt das System keine Einkaufs-, Transport- oder Produktionsaufträge für das Produkt vor. Stattdessen erstellt der Planer für das Produkt die erforderlichen Aufträge für die Wiederbeschaffung des Produkts. Der Deckungscode *Manuell* wird häufig für Produkte verwendet, für die systemgenerierte geplante Aufträge nicht erwünscht sind.
 

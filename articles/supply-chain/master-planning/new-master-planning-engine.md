@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e227cabdd205b7a0c1fe784fc719b538e6ea4443
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: e9aa911ca22ca2beeffe6bec95f17f94142065e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907690"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348756"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migration zur Planungsoptimierung für die Produktprogrammplanung
 
@@ -65,7 +65,7 @@ Nachdem die erforderlichen Funktionen verfügbar sind, gewährt Microsoft eine G
 
 Das folgende Flussdiagramm fasst die Informationen in diesem Thema zusammen, damit Sie schnell herausfinden können, ob Sie eine Ausnahme anfordern sollten. Wenn Sie eine Ausnahme anfordern müssen, füllen Sie bitte den [Fragebogen zur Migration und zu Ausnahmen zur Planungsoptimierung](https://go.microsoft.com/fwlink/?linkid=2144962) aus und senden Sie ihn ab.
 
-![Ausnahmenflussdiagramm](media/exception-diagram.png "Ausnahmenflussdiagramm")
+![Ausnahmenflussdiagramm.](media/exception-diagram.png "Ausnahmenflussdiagramm")
 
 > [!NOTE]
 > Sie können eine Ausnahme nur für Mandanten anfordern, die derzeit eine Produktionsumgebung enthalten oder enthalten werden, nicht nur für Mandanten mit Sandbox-Umgebungen. Wenn Sie den Ausnahmefehler für die Planungsoptimierung in einer Infrastruktur-as-a-Service (IaaS)-Sandbox-Umgebung deaktivieren müssen, führen Sie die SQL-Abfrage aus, die unter [Sandbox-Umgebungen](#faq-sandbox) bereitgestellt wird.

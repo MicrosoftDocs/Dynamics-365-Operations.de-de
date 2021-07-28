@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 47551f52f35fec5ae49d696e3f4027b7d2eb2e19
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 27f6750dd91a211ad12a1bd5d9c4ab9a2e1e4a79
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023276"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358409"
 ---
 # <a name="set-up-payment-schedules-with-tds-allocation"></a>Zahlungsplänen mit TDS-Zuteilung einrichten
 
@@ -31,7 +31,7 @@ In diesem Thema wird erklärt, wie Zahlungspläne mit Zuteilung für die Quellen
 
 1. Gehen Sie zu **Kreditorenkonten \> Zahlungseinstellungen \> Zahlungspläne**.
 
-    [![Seite „Zahlungspläne“](./media/apac-ind-TDS-27.png)](./media/apac-ind-TDS-27.png)
+    [![Seite „Zahlungspläne“.](./media/apac-ind-TDS-27.png)](./media/apac-ind-TDS-27.png)
 
 2. Wählen Sie im Aktionsbereich die Option **Neu** aus, um einen Zahlungsplan zu erstellen und die erforderlichen Details einzugeben.
 3. Wählen Sie im Feld **Zuteilung** die Methode aus, mit der die Zahlung dem Zahlungsplan zugeteilt werden soll:

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: f9953d1a996f6f68600a7fd04719e9b112494175
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186613"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349896"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>MwSt.-Erklärung für Ägypten (EG-00002)
 
@@ -77,7 +77,7 @@ Mit den anwendungsspezifischen Parametern können Sie die Kriterien festlegen, n
 
 Die Verkaufs- und Einkaufsbuchberichte für Ägypten enthalten eine Reihe von Spalten, die bestimmten Transaktionsklassifizierungen als Arten von Vorgängen, Produkten und Dokumenten entsprechen, die für Ägypten spezifisch sind. Anstatt diese neuen Klassifizierungen als neue Eintragsdaten einzuschließen, wenn die Transaktionen gebucht werden, werden die Klassifizierungen basierend auf den verschiedenen in **Konfigurationen** > **Anwendungsspezifische Parameter einrichten** > **Einrichten** eingeführten Suchvorgängen bestimmt, um die Anforderungen der Mehrwertsteuerberichte für Ägypten zu erfüllen. 
 
-![Seite für anwendungsspezifische Parameter](media/egypt-vat-declaration-setup1.png)
+![Seite für anwendungsspezifische Parameter.](media/egypt-vat-declaration-setup1.png)
 
 Diese folgenden Suchkonfigurationen werden verwendet, um die Transaktionen in Berichten über Vorsteuer- und Ausgangssteuerbücher zu klassifizieren:
 
@@ -206,7 +206,7 @@ Um den MwSt.-Rückgabeformularbericht im Microsoft Excel-Format zu generieren, d
 2. Auf der **Mehrwertsteuer**-Registerkarte im Abschnitt **Steueroptionen** im Feld **MwSt.-Abrechnungs-Formatzuordnung** wählen Sie **MwSt.-Erklärung Excel (EG)** aus. Wenn Sie das Feld leer lassen, wird der Standardmehrwertsteuerbericht im SSRS-Format erstellt.
 3. Wählen Sie die **Kategoriehierarchie** aus. Diese Kategorie aktiviert den Warencode in Transaktionen auf der Außenhandel-Registerkarte , damit Benutzer Waren und Dienstleistungen auswählen und klassifizieren können. Die Beschreibung dieser Klassifizierung finden Sie in Verkaufs- und Einkaufstransaktionsberichten. Diese Konfiguration ist optional.
 
-![Erklärungsformular](media/egypt-vat-declaration-setup2.png)
+![Erklärungsformular.](media/egypt-vat-declaration-setup2.png)
 
 
 ## <a name="generate-a-vat-return-report"></a>MwSt.-Rückgabebericht generieren

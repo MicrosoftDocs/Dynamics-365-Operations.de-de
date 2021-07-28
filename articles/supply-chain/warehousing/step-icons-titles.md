@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9523492d766669e6c38579fba7b5ddd6b3d282fc
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: a74847b50512d2f712e5a9a5125e520afc732591
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049363"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344494"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Weisen Sie der mobilen Warehouse Management-App Schrittsymbole und -titel zu
 
@@ -25,7 +25,7 @@ In diesem Thema wird beschrieben, wie Sie Schrittsymbole und Schritttitel für n
 
 Die folgenden Abbildungen zeigen, wie Schrittsymbole und -titel in der mobilen Warehouse Management-App angezeigt werden.
 
-![Beispiel für ein Schrittsymbol und einen Schritttitel in der mobilen Warehouse Management-App](media/step-icon-example.png "Beispiel für ein Schrittsymbol und einen Schritttitel in der mobilen Warehouse Management-App")
+![Beispiel für ein Schrittsymbol und einen Schritttitel in der mobilen Warehouse Management-App.](media/step-icon-example.png "Beispiel für ein Schrittsymbol und einen Schritttitel in der mobilen Warehouse Management-App")
 
 ## <a name="turn-on-this-feature-in-your-system"></a>Diese Funktion in Ihrem System aktivieren
 
@@ -342,7 +342,7 @@ Die folgende Tabelle zeigt alle derzeit verfügbaren Standardschrittsymbole und 
 
 ## <a name="example-assign-step-icons-and-titles-for-a-custom-flow"></a><a name="example"></a>Beispiel: Weisen Sie Schrittsymbole und -titel für einen benutzerdefinierten Ablauf zu
 
-In diesem Beispiel wird erläutert, wie Sie Schrittsymbole und -titel für einen benutzerdefinierten Aufgabenablauf einrichten. Das Szenario basiert auf einem Beispiel für einen benutzerdefinierten Aufgabenablauf, der im folgenden Blogbeitrag ausführlicher vorgestellt und untersucht wird: [ Anpassen der Mobile App Lager](https://cloudblogs.microsoft.com/dynamics365/it/2017/07/06/customizing-the-warehousing-mobile-app). Der Aufgabenfluss funktioniert folgendermaßen:
+In diesem Beispiel wird erläutert, wie Sie Schrittsymbole und -titel für einen benutzerdefinierten Aufgabenablauf einrichten. Das Szenario basiert auf einem Beispiel für einen benutzerdefinierten Aufgabenablauf, der im folgenden Blogbeitrag ausführlicher vorgestellt und untersucht wird: [Anpassen der Mobile App Lager](https://cloudblogs.microsoft.com/dynamics365/it/2017/07/06/customizing-the-warehousing-mobile-app). Der Aufgabenfluss funktioniert folgendermaßen:
 
 1. Die App zeigt eine Seite an, auf der der Mitarbeiter aufgefordert wird, eine Container-ID anzugeben (z. B. durch Scannen eines Barcodes).
 1. Wenn die Container-ID gültig ist, öffnet die App eine neue Seite, auf der die Arbeitskraft zur Eingabe des Gewichts aufgefordert wird. (Wenn die Container-ID nicht gültig ist, kehrt die Arbeitskraft zur ersten Seite zurück.)
@@ -350,13 +350,13 @@ In diesem Beispiel wird erläutert, wie Sie Schrittsymbole und -titel für einen
 
 Die folgende Abbildung zeigt diesen Aufgabenfluss.
 
-![Aufgabenflussdiagramm](media/step-icons-example-task-flow.png "Aufgabenflussdiagramm")
+![Aufgabenflussdiagramm.](media/step-icons-example-task-flow.png "Aufgabenflussdiagramm")
 
 ### <a name="create-a-step-class-for-the-container-input-page"></a>Erstellen Sie eine Schrittklasse für die Containereingabeseite
 
 Auf der Containereingabeseite kann der Mitarbeiter eine Container-ID scannen oder eingeben.
 
-![Containereingabeseite](media/step-icons-example-container-input.png "Containereingabeseite")
+![Containereingabeseite.](media/step-icons-example-container-input.png "Containereingabeseite")
 
 Auf der Containereingabeseite lautet der Kontrollname des Eingabefelds `ContainerId`. Weil dieser Kontrollname nicht in der [Liste der Schritt-IDs](#step-ids-classes) enthalten ist, finden Sie keinen vorhandenen Schritt, der darauf basiert. Daher müssen Sie eine Schrittklasse erstellen, die den Schritt darstellt. Hier ist ein Beispiel.
 
@@ -382,7 +382,7 @@ Um ein Schrittsymbol zuzuweisen, setzen Sie `defaultStepIcon` zu einer der Symbo
 
 Auf der Seite zur Gewichtseingabe kann der Mitarbeiter ein Gewicht eingeben.
 
-![Gewichtseingabeseite](media/step-icons-example-weight-input.png "Gewichtseingabeseite")
+![Gewichtseingabeseite.](media/step-icons-example-weight-input.png "Gewichtseingabeseite")
 
 Auf der Gewichtseingabeseite lautet der Kontrollname des Eingabefelds `Weight`, der in der [Liste der Schritt-IDs](#step-ids-classes) ist. Wenn das Schrittsymbol und der Titel, die in der `WHSMobileAppStepWeight` Klasse definiert sind, akzeptabel sind, müssen Sie für diesen Schritt nichts ändern.
 

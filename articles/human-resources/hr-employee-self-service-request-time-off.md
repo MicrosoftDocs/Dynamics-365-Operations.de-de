@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 445360659e993451b1289091e43e4fc64e0ad228
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: 86a0c659c8b586912ee848aa5f233f2e16f05fd4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303219"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357190"
 ---
 # <a name="request-time-off"></a>Arbeitsfreie Zeit anfordern
 
@@ -68,7 +68,7 @@ Wenn Sie eine vorhandene Freizeitanforderung aktualisieren, können Sie einen An
 
 4. Geben Sie im Bereich **Stornierungsdetails** einen Kommentar ein und wählen Sie dann **Senden**.
 
-   ![Stornieren von Urlaubsanträgen](media/hr-leave-and-absence-cancel.png)
+   ![Stornieren von Urlaubsanträgen.](media/hr-leave-and-absence-cancel.png)
 
 ## <a name="see-also"></a>Siehe auch
 

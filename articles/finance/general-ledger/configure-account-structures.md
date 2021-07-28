@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22123eb7a46910a2bc68a85b57271cfa2f3eb41e
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8d4d3ebed7cf3f006672454e086fc0f918f2418d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193805"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360663"
 ---
 # <a name="configure-account-structures"></a>Kontostrukturen konfigurieren
 
@@ -65,7 +65,7 @@ Der Abschnitt **Segmente** und **Details zu zulässigem Wert** bietet eine Raste
 
 Der Abschnitt **Details zu zulässigem Wert** führt Sie durch das Erstellen von Kriterien mit **Operatoren** wie z.B. Beginnt mit, ist zwischen, umfasst und viele andere.
 
-[![Werte zulassen](./media/account.png)](./media/account.png) 
+[![Werte zulassen.](./media/account.png)](./media/account.png) 
 
 Zulässige Werte werden standardmäßig auf einer Erfassungs- oder Buchhaltungsverteilungseintrags-Seite angezeigt, wenn gemäß der Kontostruktureinrichtung keine anderen möglichen Werte gibt, die ausgewählt werden können
 
