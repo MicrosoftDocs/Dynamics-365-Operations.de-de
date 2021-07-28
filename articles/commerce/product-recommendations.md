@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 044a5c21e4ebf1bf83edc74335e655b9388bc1d4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fc7d47897d1a332ba1af7305525f9e75bca12afd
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795596"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337502"
 ---
 # <a name="product-recommendations-overview"></a>Überblick über Produktempfehlungen
 
@@ -32,6 +32,9 @@ Microsoft Dynamics 365 Commerce kann verwendet werden, um Produktempfehlungen au
 Mit Produktempfehlungen können Kunden einfach und schnell die gewünschten Produkte finden, während sie eine Erfahrung erhalten, die ihnen gute Dienste leistet. Cross-Selling und Upselling können Kunden sogar dabei unterstützen, zusätzliche Produkte zu finden, deren Kauf sie ursprünglich nicht eingeplant hatten. Wenn Empfehlungen zur Unterstützung der Produktfindung verwendet werden, können sie mehr Conversion-Möglichkeiten schaffen, den Umsatz steigern und sogar die Kundenzufriedenheit und Kundenbindung verbessern.
 
 In E-Commerce basieren Produktempfehlungen in großem Umfang auf maschinellen Lerntechnologien von Microsoft Recommendations.
+
+Dieser Service ist ein Add-On zu Dynamics 365 Commerce. Für weitere Informationen laden Sie die neueste Version des [Microsoft Dynamics 365-Lizenzierungshandbuchs](https://go.microsoft.com/fwlink/?LinkId=866544) herunter.
+
 
 ## <a name="recommendation-service"></a>Empfehlungsdienstleistung
 

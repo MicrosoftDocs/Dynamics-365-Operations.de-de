@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a575c04a5042e4db08f387bc7bce46225c109844
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f2d8d441ad742252f3be7dc207544387f5224c37
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753503"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347995"
 ---
 # <a name="email-er-destination-type"></a>E-Mail-ER-Zieltyp
 
@@ -48,13 +48,13 @@ Um eine Ausgabedatei oder mehrere Ausgabedateien per E-Mail zu senden, wählen S
 
 Sie könnne E-Mail-Adressen für ER auf zwei Arten konfigurieren. Die Konfiguration kann auf dieselbe Weise abgeschlossen werden wie es auch für die Druckverwaltungsfunktion geschieht. Sie können auch eine E-Mail-Adresse auflösen, indem Sie einen direkten Verweis auf die EB-Konfiguration über eine Formel erstellen.
 
-[![Festlegen der Option „Aktiviert“ für ein E-Mail-Ziel auf „Ja“](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+[![Festlegen der Option „Aktiviert“ für ein E-Mail-Ziel auf „Ja“.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
 ## <a name="email-address-types"></a>E-Mail-Adressen-Arten
 
 Wenn Sie **Bearbeiten** neben dem Feld **An** oder **CC** im Dialogfeld **Zieleinstellungen** auswählen, wird das Dialogfeld **E-Mail an** angezeigt. Wählen Sie **Hinzufügen** aus und wählen Sie dann den Typ der zu verwendenden E-Mail-Adresse aus. Derzeit werden zwei Typen unterstützt: **Druckverwaltung** und **Konfiguration**.
 
-[![Typ der E-Mail-Adresse auswählen](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
+[![Typ der E-Mail-Adresse auswählen.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>Verwaltungs-E-Mail ausdrucken
 
@@ -84,7 +84,7 @@ Nachdem Sie die gewünschte Rolle ausgewählt haben, wählen Sie die Schaltfläc
 
 Geben Sie auf der Seite **Formeldesigner** in das Feld **Formel** einen dokumentspezifischen Verweis auf eine unterstützte Rolle ein. Anstatt die Referenz einzugeben, suchen Sie im Bereich **Datenquelle** den Datenquellenknoten, der ein Konto der konfigurierten Rolle darstellt, und wählen ihn aus. Wählen Sie dann **Datenquelle hinzufügen** aus, um die Formel zu aktualisieren. Wenn Sie beispielsweise das E-Mail-Ziel für die Konfiguration **Kreditübertragung (ISO 20022)** konfigurieren, die zur Verarbeitung von Lieferantenzahlungen verwendet wird, ist es der Knoten `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`, der ein Lieferantenkonto darstellt.
 
-![Ein E-Mail-Quellkonto konfigurieren](./media/er_destinations-emaildefineaddresssource.gif)
+![Ein E-Mail-Quellkonto konfigurieren.](./media/er_destinations-emaildefineaddresssource.gif)
 
 Wenn die Kontonummern der konfigurierten Rolle für die gesamte Instanz von Microsoft Dynamics 365 Finance eindeutig sind, kann das Feld **Unternehmen aus der E-Mail-Quelle** im Dialogfeld **E-Mail an** leer bleiben.
 
@@ -108,7 +108,7 @@ Um den Typ der E-Mail-Adressen anzugeben, die zur Laufzeit verwendet werden müs
 
 Wählen Sie **Konfigurations-E-Mail** als E-Mail-Adresstyp aus, wenn die von Ihnen verwendete Konfiguration einen Knoten in den Datenquellen enthält, der entweder eine einzelne E-Mail-Adresse oder mehrere E-Mail-Adressen zurückgibt, die durch Semikolons (;) getrennt sind. Sie können [Datenquellen](general-electronic-reporting.md#FormatComponentOutbound) und [Funktionen](er-formula-language.md#functions) im Formeldesigner verwenden, um eine korrekt formatierte E-Mail-Adresse oder korrekt formatierte E-Mail-Adressen zu erhalten, die durch Semikolons getrennt sind. Wenn Sie beispielsweise die Konfiguration **Kreditübertragung (ISO 20022)** verwenden, ist es der Knoten `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`, der die primäre E-Mail-Adresse eines Lieferanten aus den Kontaktdaten des Lieferanten darstellt, an die das Anschreiben gesendet werden soll.
 
-[![Eine Quelle für E-Mail-Adressen konfigurieren](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
+[![Eine Quelle für E-Mail-Adressen konfigurieren.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
 ## <a name="group-format-components"></a><a id="grouping"></a>Formatkomponenten gruppieren
 
@@ -126,11 +126,11 @@ Um die Gruppierung von Formatkomponenten aufzuheben, wählen Sie im Inforegister
 
 Die folgende Abbildung zeigt die Struktur eines EB-Formats, das so konfiguriert wurde, dass eine komprimierte ausgehende Datei erstellt wird, die ein Mahnschreiben und entsprechende Kundenrechnungen im PDF-Format enthält.
 
-[![Struktur eines EB-Formats, das ausgehende Dokumente generiert](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
+[![Struktur eines EB-Formats, das ausgehende Dokumente generiert.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
 Die folgende Abbildung zeigt, wie einzelne Komponenten entsprechend der Beschreibung in diesem Thema gruppiert werden und wie das **E-Mail**-Ziel für die neue Gruppe aktiviert wird, sodass ein Mahnschreiben zusammen mit den entsprechenden Kundenrechnungen als E-Mail-Anhang gesendet wird.
 
-[![Einzelne Komponenten gruppieren und das E-Mail-Ziel aktivieren](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
+[![Einzelne Komponenten gruppieren und das E-Mail-Ziel aktivieren.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

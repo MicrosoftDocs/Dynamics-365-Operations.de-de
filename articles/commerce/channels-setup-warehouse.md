@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 154ec719e16e4826b0e24deb5ecadf587d938e3c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1fce2570e1b0cc334fc0e92e5e83c53a4566b4a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800494"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345983"
 ---
 # <a name="warehouse-set-up"></a>Lagerort einrichten
 
@@ -45,7 +45,7 @@ Gehen Sie folgendermaßen vor, um den Standort eines Lagerorts zu konfigurieren.
 
 Das folgende Bild zeigt ein Beispiel für den Standort eines Lagerorts.
 
-![Beispiel: Standort eines Lagerorts](media/warehouse-site.png)
+![Beispiel: Standort eines Lagerorts.](media/warehouse-site.png)
 
 ## <a name="set-up-a-warehouse"></a>Einen Lagerort einrichten
 
@@ -98,7 +98,7 @@ Führen Sie die folgenden Schritte aus, um Lagerorte für Standard-, beschädigt
     
 Die folgende Abbildung zeigt eine Einrichtung eines Lagerort-Standorts in San Francisco.
 
-![Beispiel für die Einrichtung des Standorts eines Lagerorts](media/warehouse-inventory-locations.png)
+![Beispiel für die Einrichtung des Standorts eines Lagerorts.](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Vollständige Einrichtung eines Lagerorts
 
@@ -121,13 +121,13 @@ Führen Sie zum Abschließen der Einrichtung eines Lagerorts die folgenden Schri
 
 Das folgende Bild zeigt Details für einen konfigurierten Lagerort.
 
-![Beispiel für einen konfigurierten Lagerort](media/warehouse-sample.png)
+![Beispiel für einen konfigurierten Lagerort.](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Lagerortverwaltung – Übersicht](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
+[Übersicht über die Lagerortverwaltung](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
-[Kanalübersicht](channels-overview.md)
+[Übersicht über Kanäle](channels-overview.md)
 
 [Voraussetzungen der Kanaleinrichtung](channels-prerequisites.md)
 

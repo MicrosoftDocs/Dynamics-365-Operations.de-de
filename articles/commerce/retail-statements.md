@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 8d6687ddaae28ebf278aca6a78ba798e2e79edd8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 41d135af00618dbe4046338c8d0e6f5a01f33892
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791920"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345005"
 ---
 # <a name="retail-statements"></a>Einzelhandelsaufstellungen
 
@@ -31,7 +31,7 @@ In Dynamics 365 Commerce wird der Auszugsbuchungsprozess verwendet, um die Buchu
 
 Das folgende Abbildung zeigt den Auszugsbuchungsprozess. In diesem Vorgang werden Transaktionen, die im POS erfasst werden, mit dem Commerce-Steuerprogramm an den Client gesendet. Nachdem der Client die Buchungen erhält, können Sie den Buchungsauszug für die Filialen erstellen, berechnen und buchen.
 
-[![Auszugsbuchungsprozess](./media/retail-statements.png)](./media/retail-statements.png)
+[![Auszugsbuchungsprozess.](./media/retail-statements.png)](./media/retail-statements.png)
 
 ## <a name="creating-and-posting-statements"></a>Auszüge erstellen und buchen
 

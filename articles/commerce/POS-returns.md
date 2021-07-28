@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 496c4fe5230a599acf60fac39e51c43db372f92c
-ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
+ms.openlocfilehash: c7be9e2d32384df23a4609d82216804fc945061a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129810"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345183"
 ---
 # <a name="create-returns-in-pos"></a>Erträge in POS erstellen
 
@@ -48,7 +48,7 @@ Wird eine Transaktion oder Bestellung gefunden, die den Suchkriterien entspricht
 
 Für jede Bestellposition in der Liste der Rückgabeprodukte zeigt POS Informationen über die ursprüngliche Einkaufsmenge und die Mengen aus allen zuvor bearbeiteten Retouren an. Die Rücksendemenge, die ein Benutzer für eine Auftragsposition eingibt, muss kleiner oder gleich dem Wert im Feld **Zur Rückgabe verfügbar** sein.
 
-![Seite für retournierbare Produkte](media/returnslist.png)
+![Seite für retournierbare Produkte.](media/returnslist.png)
 
 Wenn ein Benutzer während der Retourenbearbeitung das physische Produkt besitzt und dieses Produkt einen Strichcode hat, kann der Benutzer den Strichcode scannen, um die Rücksendung zu registrieren. Jeder Scan des Barcodes erhöht die Retourenmenge um eine Position. Wenn das Strichcode-Etikett jedoch eine eingebettete Menge enthält, wird diese Menge in das Feld **Wird zurückgegeben** eingegeben.
 
@@ -97,6 +97,13 @@ Wenn die kanalseitigen Informationen aus irgendeinem Grund nicht aktuell sind un
 
 > [!NOTE]
 > Wenn die Funktion **Einheitliche Retourenbearbeitungserfahrung in POS** aktiviert ist, stehen neue optionale Funktionen zur Verfügung, die die Validierung von Produktrücksendungen mit Seriennummer unterstützen. Weitere Informationen finden Sie unter [Seriennummergesteuerte Produkte am Point of Sale (POS) zurückgeben](POS-serial-returns.md).
+
+## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Richtige Steuerberechnung für Retouren mit Teilmengen aktivieren
+
+Diese Funktion stellt sicher, dass bei der Retoure eines Auftrags über mehrere Rechnungen die Steuern letztendlich dem ursprünglich berechneten Steuerbetrag entsprechen.
+1.  Wechseln Sie zum Arbeitsbereich **Funktionsverwaltung** und suchen Sie nach **Richtige Steuerberechnung für Retouren mit Teilmengen aktivieren**.
+2.  Wählen Sie **Richtige Steuerberechnung für Retouren mit Teilmengen aktivieren** aus und klicken Sie dann auf **Aktivieren**.
+
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

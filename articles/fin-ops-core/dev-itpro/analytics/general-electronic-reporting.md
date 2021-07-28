@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
+ms.custom:
+- "58941"
+- intro-internal
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26088a01b0e849a5df559631591ec65d7885452b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 05c77b913c1c2281ca45a3dea8fef2223a1dcfbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944364"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345689"
 ---
 # <a name="electronic-reporting-er-overview"></a>Überblick über die elektronische Berichterstellung (ER)
 
@@ -101,7 +103,7 @@ Mit einer Formatkomponente können Sie bestimmte Dateien anzufügen, die in der 
 
 Die folgende Abbildung zeigt, wie die Daten für diese Formate fließen.
 
-[![Datenfluss für ausgehende Formatkomponenten](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+[![Datenfluss für ausgehende Formatkomponenten.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
 Um eine einzelne ER-Formatkonfiguration ausführen und ein ausgehendes elektronisches Dokument zu generieren, müssen Sie die Zuordnung der Formatkonfiguration identifizieren.
 
@@ -115,7 +117,7 @@ Eine Formatkomponente ist das Schema des eingehenden Dokuments, das zur Laufzeit
 
 Die folgende Abbildung zeigt, wie die Daten für diese Formate fließen.
 
-[![Datenfluss für eingehende Formatkomponenten](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Datenfluss für eingehende Formatkomponenten.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 Um eine einzelne ER-Formatkonfiguration auszuführen, um Daten von einem eingehenden elektronischen Dokument zu importieren, müssen Sie die gewünschte Zuordnung einer Formatkonfiguration und auch den Integrationspunkt einer Modellzuordnung identifizieren. Sie können dieselbe Modellzuordnung und Ziele zusammen mit verschiedenen Formaten für unterschiedliche Arten von eingehenden Dokumenten verwenden.
 
@@ -191,7 +193,7 @@ Ein **Globales** Repository bietet Zugriff auf die Liste der Konfigurationen inn
 
 Weitere Informationen unter [Importieren von elektronischen Berichtstellungskonfigurationen aus dem globalen Repository der Konfigurationsdienste](./er-download-configurations-global-repo.md).
 
-Ein **Betrieblichees Ressourcen** Repository bietet Zugriff auf die Liste der Konfigurationen, die Microsoft als ER-Konfigurationsanbieter bereitstellt, die ursprünglich als Teil der Anwendungslösung freigegeben wurden. Diese Konfigurationen können in die aktuelle Instanz importiert und für die elektronische Berichtserstellung verwendet werden oder als Muster-Aufgabenleitfaden abgespielt werden. Sie können auch für zusätzliche Lokalisierungen und Anpassungen verwendet werden. Beachten Sie, dass die neuesten Versionen, die von der Microsoft ER Konfigurationen bereitgestellt werden, von der Bibliothek der LCS-freigegebenen  Anlagen importiert werden müssen, indem das ER-Repository entsprechend verwendet wird.
+Ein **Betriebliches Ressourcen**-Repository bietet Zugriff auf die Liste der Konfigurationen, die Microsoft als ER-Konfigurationsanbieter bereitstellt, die ursprünglich als Teil der Anwendungslösung freigegeben wurden. Diese Konfigurationen können in die aktuelle Instanz importiert und für die elektronische Berichtserstellung verwendet werden oder als Muster-Aufgabenleitfaden abgespielt werden. Sie können auch für zusätzliche Lokalisierungen und Anpassungen verwendet werden. Beachten Sie, dass die neuesten Versionen, die von der Microsoft ER Konfigurationen bereitgestellt werden, von der Bibliothek der LCS-freigegebenen Anlagen importiert werden müssen, indem das ER-Repository entsprechend verwendet wird.
 
 Benötigte **LCS-Projekt**-, **Dateisystem**- und **Gesetzliche Konfigurationsdienste (RCS)**-Repositorys können einzeln für jeden Konfigurationsanbieter der aktuellen Instanz registriert werden. Jedes Repository kann für einen bestimmten Konfigurationsanbieter dediziert werden.
 
@@ -290,7 +292,7 @@ ER ermöglicht die automatische Übernahme von Änderungen der neuesten Version 
 
 Die Liste der EB-Konfigurationen für Finance wird ständig aktualisiert. Öffnen Sie das [globale Repository](er-download-configurations-global-repo.md), um die Liste der derzeit unterstützten EB-Konfigurationen zu überprüfen. Auf dem Inforegister **Details zur Einstellung** können Sie Informationen zu Konfigurationen überprüfen, die eingestellt wurden oder nicht mehr verwaltet werden. 
 
-![Inhalt des globalen Repositorys auf der Konfigurationsrepository-Seite](./media/er-overview-03.gif)
+![Inhalt des globalen Repositorys auf der Konfigurationsrepository-Seite.](./media/er-overview-03.gif)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

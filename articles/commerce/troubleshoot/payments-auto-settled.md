@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b4fd37a3c45f2559c9659f072ca0b6f02e712f53
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 79300c84b07db23ad387e0f3e475ca1707c79548
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018259"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347367"
 ---
 # <a name="payments-are-automatically-settled-before-orders-are-invoiced-or-shipped"></a>Zahlungen werden automatisch abgerechnet, bevor Aufträge fakturiert oder versendet werden
 
@@ -43,12 +43,12 @@ Befolgen Sie diese Schritte, um die manuelle Erfassung für E-Commerce-Zahlungen
 1. Wählen Sie in der oberen Navigationsleiste **Konto** und dann **Einstellungen** aus.
 1. Wählen Sie im Feld **Verzögerung erfassen** die Option **Manuell** aus.
 
-    ![„Verzögerung erfassen“-Einstellung im Adyen-Portal](media/adyen-capture-delay.jpg)
+    ![„Verzögerung erfassen“-Einstellung im Adyen-Portal.](media/adyen-capture-delay.jpg)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Adyen-Zahlungserfassung](https://docs.adyen.com/point-of-sale/capturing-payments)
 
-[Zahlungskonnektor von Dynamics 365 für Adyen](../dev-itpro/adyen-connector.md)
+[Dynamics 365 Payment Connector für Adyen](../dev-itpro/adyen-connector.md)
 
 [Adyen-Zahlungskonnektor für Dynamics 365 einrichten](https://docs.adyen.com/plugins/microsoft-dynamics)

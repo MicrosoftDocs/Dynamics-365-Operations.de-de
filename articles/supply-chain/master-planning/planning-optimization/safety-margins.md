@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9dc305f46dad6b372721805669529bbc9ac554e8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 428de5304b3f6f9b861e765d5084d5573b79df90
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908292"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347733"
 ---
 # <a name="safety-margins"></a>Sicherheitszuschläge
 
@@ -41,7 +41,7 @@ Es gibt drei Typen von Sicherheitszuschlägen:
 
 Die folgende Abbildung zeigt, wie diese Sicherheitszuschläge im Laufe der Zeit gelten.
 
-![Sicherheitszuschläge](media/safety-margins-1.png)
+![Sicherheitszuschläge.](media/safety-margins-1.png)
 
 Alle Zuschläge werden in Tagen definiert. Der Standardwert von *0* (Null) gibt an, dass der kein Zuschlag angewendet wird. Wenn Sie mehrere Zuschläge einrichten, addieren sich alle zur Gesamtzeit ab Lieferung *Auftragsdatum* auf die Nachfrage *Anforderungsdatum*. Beispielsweise hat eine Einrichtung keine Vorlaufzeit und alle drei Zuschlagstypen sind auf einen Tag festgelegt. In diesem Fall liegen zwischen dem Bestelldatum der Lieferung und dem Datum der Bedarfsanforderung drei Tage. Wenn das Bestelldatum also der 1. Juli ist, ist das Anforderungsdatum der 4. Juli.
 
@@ -51,7 +51,7 @@ Die Sicherheitszuschlag für den Warenzugang ist wahrscheinlich die am häufigst
 
 Die folgende Abbildung zeigt den Sicherheitszuschlag für den Warenzugang.
 
-![Sicherheitszuschlag für Warenzugang](media/safety-margins-2.png)
+![Sicherheitszuschlag für Warenzugang.](media/safety-margins-2.png)
 
 Der Sicherheitszuschlag für den Warenzugang wird normalerweise als Puffer verwendet, um die Zeit für die Lagerregistrierung oder andere zeitaufwändige Prozesse sicherzustellen, die nicht als Teil der allgemeinen Vorlaufzeit im System erfasst werden. Für Einkäufe ist ein Vorteil, dass das *Lieferdatum* der Bestellung entsprechend nach vorne geschoben wird. Wenn Sie die Vorlaufzeit verlängern, anstatt einen Sicherheitszuschlag zu verwenden, wird der Anbieter weiterhin gebeten, in letzter Minute zu liefern.
 
@@ -66,7 +66,7 @@ Beachten Sie, dass kein Sicherheitszuschlag für den Warenzugang angewendet wird
 
 Die folgende Abbildung zeigt den Sicherheitszuschlag für den Wiederbestellung.
 
-![Sicherheitszuschlag für Wiederbestellung](media/safety-margins-3.png)
+![Sicherheitszuschlag für Wiederbestellung.](media/safety-margins-3.png)
 
 Der Sicherheitszuschlag für die Wiederbestellung wird bei Produktplanung für alle Bestellvorschläge vor der Vorlaufzeit des Artikels hinzugefügt. Dadurch wird zusätzliche Zeit für die Bestellung eines Lieferauftrags sichergestellt. Dieser Zuschlag wird normalerweise als Puffer verwendet, um Zeit für Genehmigungsprozesse oder andere interne Prozesse zu gewährleisten, die bei der Erstellung von Lieferaufträgen erforderlich sind. Der Sicherheitszuschlag für den Wiederbestellung wird zwischen das *Auftragsdatum* und *Anfangsdatum* des Angebots gesetzt.
 
@@ -77,7 +77,7 @@ Der Sicherheitszuschlag für die Wiederbestellung wird bei Produktplanung für a
 
 Die folgende Abbildung zeigt den Sicherheitszuschlag für den Warenabgang.
 
-![Sicherheitszuschlag für Warenabgang](media/safety-margins-4.png)
+![Sicherheitszuschlag für Warenabgang.](media/safety-margins-4.png)
 
 Der Sicherheitszuschlag für Warenabgang wird bei der Produktplanung vom Bedarfsanforderungsdatum abgezogen. Dies hilft sicherzustellen, dass Sie Zeit haben, um auf eingehende Nachfrageaufträge zu reagieren und diese zu versenden. Dieser Zuschlag wird normalerweise als Puffer verwendet, um die Zeit für den Versand und die damit verbundenen ausgehenden Lagerprozesse sicherzustellen.
 
@@ -165,7 +165,7 @@ Die folgende Abbildung zeigt eine Matrix, die zusammenfasst, welche Kalender bei
 - **Lagerort (WH):** Gelb
 - **Lieferant (V):** Blau
 
-[![Übersichtsmatrix für die Kalendereinrichtung](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Übersichtsmatrix für die Kalendereinrichtung.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Berechnungstage
 
@@ -173,7 +173,7 @@ Alle drei Arten von Sicherheitszuschlägen werden berücksichtigt, wenn das Syst
 
 Beispielsweise hat ein Artikel eine Vorlaufzeit von einem Tag und einen Sicherheitszuschlag für den Warenzugang von drei Tagen. Ein Auftrag für diesen Artikel wird heute wie erforderlich festgelegt. In diesem Fall wird die Verzögerung als *Vorlaufzeit* + *Sicherheitszuschlag für den Warenzugang* = vier Tage berechnet. Wenn also heute der 14. August ist, führen die vier Tage Verzögerung zu einer Lieferung am 18. August. Die folgende Abbildung zeigt dieses Beispiel.
 
-![Beispiel der Verzögerungsberechnung](media/safety-margins-delays.png)
+![Beispiel der Verzögerungsberechnung.](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

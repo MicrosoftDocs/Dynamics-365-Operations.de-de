@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.custom: intro-internal
 ms.search.region: Austria
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1cfe5d99f5078a4d2ce843532e511d4a89baf8fd
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 46cb65fd398a0397c131165104597bcbd1c3611c
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893826"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6339178"
 ---
 # <a name="austria-overview"></a>Österreich – Übersicht
 

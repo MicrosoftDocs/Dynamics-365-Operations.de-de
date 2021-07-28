@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 84c97bdbe00285d7992a25edbf5d42ffe9b58903
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a8ddc7022a1e9a7db14aaa67efcd442025b0f9d8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814511"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344471"
 ---
 # <a name="replenishment-strategies"></a>Strategien für die Wiederbeschaffung
 
@@ -45,7 +45,7 @@ Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert wer
 
 Um auf die Vorlagen zuzugreifen, gehen Sie zu **Lagerortverwaltung \> Einrichten \> Wiederbeschaffung \> Wiederbeschaffungsvorlagen**. Wählen oder erstellen Sie im Abschnitt **Übersicht** eine Wiederbeschaffungsvorlage, bei der das Feld **Wiederbeschaffungstyp** auf *Wellenbedarf* festgelegt ist. Legen Sie dann die Zeilen der Wiederbeschaffungsvorlage im Abschnitt **Details der Wiederbeschaffungsvorlage** fest. Wählen Sie für jede Zeile im Feld **Nachschubstrategie** die Wiederbeschaffungsstrategie, die Sie verwenden möchten.
 
-![Nachschubvorlagen Seite](media/ReplenTempWaveDmdMaxLocCap.png "Seite Wiederbeschaffung Vorlagen")
+![Nachschubvorlagen-Seite.](media/ReplenTempWaveDmdMaxLocCap.png "Seite Wiederbeschaffung Vorlagen")
 
 Wenn die Spalte **Wiederbeschaffungsstrategie** nicht im Raster im Abschnitt **Details der Wiederbeschaffungsvorlagen** erscheint, stellen Sie sicher, dass die Funktion eingeschaltet ist und dass die ausgewählte Wiederbeschaffungsvorlage einen Wiederbeschaffungstyp *Wellenbedarf* hat.
 
@@ -85,7 +85,7 @@ Wenn Sie stattdessen die Wiederbeschaffungsstrategie auf *Maximale Kapazität de
 - **Nachschubarbeit 1:** Entnehmen Sie 4 Kartons aus dem Bulk-Lagerplatz und lagern Sie sie in Lagerplatz pick-001 ein.
 - **Nachschubarbeit 2:** Entnehmen Sie 5 Kartons aus dem Bulk-Lagerplatz und lagern Sie sie in Lagerplatz pick-002 ein.
 
-[![Beispiel 1](media/ReplenTemp_example_1.png "Beispiel 1")](media/ReplenTemp_example_1_large.png)
+[![Beispiel 1.](media/ReplenTemp_example_1.png "Beispiel 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>Beispiel 2
 
@@ -109,7 +109,7 @@ Abhängig von der Einstellung der Option **Teilen zulassen** in den Lagerplatzri
 
 Die Ergebnisse unterscheiden sich aufgrund der Informationen, die beim Erstellen der Arbeit verfügbar sind. Wenn die Option **Teilen zulassen** bei den Lagerplatzrichtlinien für die Wiederbeschaffung auf *Ja* festgelegt ist, wissen Sie, dass Sie 160 Stk entnehmen konnten. Daher können Sie Arbeit für diese Menge erstellen. Wenn jedoch die Option **Aufteilung zulassen** auf *Nein* festgelegt ist, wissen Sie nicht, dass die 160 Stk. vorhanden sind. Da es sich bei der zusätzlichen Menge, die Sie wiederbeschaffen wollten, um 3 Kartons handelte, lassen Sie diese zusätzliche Menge fallen und versuchen es erneut mit der ursprünglichen Menge.
 
-[![Beispiel 2](media/ReplenTemp_example_2.png "Beispiel 2")](media/ReplenTemp_example_2_large.png)
+[![Beispiel 2.](media/ReplenTemp_example_2.png "Beispiel 2")](media/ReplenTemp_example_2_large.png)
 
 Um die maximale Menge an den aufgefüllten Lagerplätzen zu erhalten, sollten Sie daher in den Lagerplatzrichtlinien für die Wiederbeschaffung die Option **Aufteilung zulassen** auf *Ja* festlegen.
 

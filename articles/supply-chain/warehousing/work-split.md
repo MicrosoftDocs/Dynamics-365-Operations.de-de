@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6844f3962562a02609333ef7d6963801852af4b0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830761"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344145"
 ---
 # <a name="work-split"></a>Arbeitsaufteilung
 
@@ -51,7 +51,7 @@ Die Funktion *Arbeit teilen* fügt dem Reiter **Arbeit** im Aktivitätsbereich d
 - **Arbeit aufteilen** - Die aktuelle Arbeits-ID in mehrere kleinere Arbeits-IDs aufteilen, die von separaten Arbeitskräften bearbeitet werden können.
 - **Arbeitsteilung abbrechen** - Bricht die Arbeitsteilung ab und stellt die Arbeit für die Verarbeitung zur Verfügung.
 
-![Schaltflächen „Arbeit teilen“ und „Arbeitsteilung aufheben“](media/Work_split_buttons.png "Schaltflächen Arbeit teilen und Arbeitsteilung abbrechen")
+![Schaltflächen „Arbeit teilen“ und „Arbeitsteilung aufheben“.](media/Work_split_buttons.png "Schaltflächen Arbeit teilen und Arbeitsteilung abbrechen")
 
 > [!IMPORTANT]
 > Die Schaltfläche **Arbeitsteilung** ist nicht verfügbar, wenn eine der folgenden Bedingungen erfüllt ist:
@@ -94,7 +94,7 @@ Gehen Sie folgendermaßen vor, um Arbeit zu teilen.
 
     Das Feld **Arbeitssperrgrund** für die aktuelle Arbeit wird auf *Arbeit teilen* festgelegt, und die Arbeit wird gesperrt.
 
-    ![Blockiergrund](media/Blocking_reason.png "Grund der Sperrung")
+    ![Blockiergrund.](media/Blocking_reason.png "Grund der Sperrung")
 
 1. Wählen Sie die Zeilen aus, die aus der aktuellen Arbeits-ID entfernt und zu einer neuen Arbeits-ID hinzugefügt werden sollen. Folgende Ereignisse treten auf:
 

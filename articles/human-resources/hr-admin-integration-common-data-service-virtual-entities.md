@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c2e207efe0eeec6fc7e679a6ae12edcb21b291f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: f0dac25ede6c9b9dfcfa1be1f1a5f4d7a7752112
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058583"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344713"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Virtuelle Dataverse-Tabellen konfigurieren
 
@@ -41,7 +41,7 @@ Alle Open Data Protocol (OData)-Entitäten in Human Resources sind als virtuelle
 
 Sie können die Liste der in der Umgebung aktivierten virtuellen Tabellen anzeigen und mit den Tabellen in [Power Apps](https://make.powerapps.com) in der Lösung **Virtuelle Tabellen von Dynamics 365 HR** arbeiten.
 
-![Dynamics 365 HR virtuelle Tabellen in Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+![Dynamics 365 HR virtuelle Tabellen in Power Apps.](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
 ## <a name="virtual-tables-versus-native-tables"></a>Virtuelle Tabellen gegenüber nativen Tabellen
 
@@ -147,7 +147,7 @@ Der nächste Schritt besteht darin, die Datenquelle der virtuellen Tabelle in de
 
    - **AAD-Anwendungs-Geheimnis**: Das Kundengeheimnis, das für die im Microsoft Azure-Portal registrierte Anwendung erstellt wurde. Sie haben diese Informationen früher während des Schritts [Registrieren Sie die App in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) erhalten.
 
-   ![Microsoft HR-Datenquelle](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+   ![Microsoft HR-Datenquelle.](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 9. Wählen Sie **Speichern & Schließen** aus.
 
@@ -187,7 +187,7 @@ Nach Abschluss des Setups können Sie die virtuellen Tabellen auswählen, die Si
 
 4. Wählen Sie **Generieren/Aktualisieren**.
 
-![Dataverse Integration](./media/hr-admin-integration-dataverse-integration.png)
+![Dataverse-Integration.](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>Überprüfen Sie den Status der Tabellengenerierung
 

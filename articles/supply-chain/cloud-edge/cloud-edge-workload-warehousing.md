@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
-ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
+ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6184021"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345499"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -73,7 +73,7 @@ Der Hub besitzt die folgenden Daten:
 
 Die Scale-Units besitzen die eigentliche Wellenverarbeitung (z. B. Arbeitszuweisung, Wiederbeschaffung und Bedarfserstellung) nach der Freigabe der Welle. Daher können die Arbeitskräfte im Lagerort ausgehende Arbeit mithilfe einer Warehouse Management Mobile App verarbeiten, die mit der Skalierungseinheit verbunden ist.
 
-![Wellenverarbeitungs-Flow](./media/wes-wave-processing-ga.png "Ablauf der Wellenverarbeitung")
+![Wellenverarbeitungs-Flow.](./media/wes-wave-processing-ga.png "Ablauf der Wellenverarbeitung")
 
 ### <a name="process-work-and-ship"></a>Arbeit verarbeiten und versenden
 
@@ -81,7 +81,7 @@ Sobald der letzte Arbeitsprozess den Bestand an einem endgültigen Lagerplatz (B
 
 Sobald der Hub die Transaktionen auf *Kommissioniert* aktualisiert hat, kann er die ausgehende Versandbestätigung und den zugehörigen Lieferschein oder Umlagerungsauftrag für die Ladung verarbeiten.
 
-![Ausgehende Verarbeitung Flow](./media/WES-outbound-processing-19.png "Ausgehender Verarbeitungsflow")
+![Ausgehende-Verarbeitung-Flow.](./media/WES-outbound-processing-19.png "Ausgehender Verarbeitungsflow")
 
 ## <a name="inbound-process-flow"></a>Eingehender Prozessflow
 
@@ -107,11 +107,11 @@ Die Arbeitskraft kann den Empfangsprozess über eine Warehouse Management Mobile
 
 Wenn Sie nicht den Prozess *Freigabe an Lager* und damit auch nicht *Lageraufträge* verwenden, kann der Hub den Lagereingang und die Arbeitsaufträge unabhängig von Scale-Units verarbeiten.
 
-![Eingangs-Prozessablauf](./media/wes-inbound-ga.png "Eingehender Prozessflow")
+![Eingangs-Prozess-Flow.](./media/wes-inbound-ga.png "Eingehender Prozessflow")
 
 Wenn eine eingehende Registrierung über einen Lagerort-App-Empfangsprozess gegen die Scale-Unit-Lagerort-Bestellung durchgeführt wird, signalisiert der Scale-Unit-Workload dem Hub, die zugehörigen Transaktionen der Einkaufsbestellung auf *Registriert* zu aktualisieren. Sobald dies abgeschlossen ist, können Sie auf dem Hub eine Einkaufsbestellung Wareneingang ausführen.
 
-![Eingehender Verarbeitungsflow](./media/WES-inbound-processing-19.png "Eingehender Verarbeitungs-Flow")
+![Eingehender Verarbeitungsflow.](./media/WES-inbound-processing-19.png "Eingehender Verarbeitungs-Flow")
 
 ## <a name="supported-processes-and-roles"></a>Unterstützte Prozesse und Rollen
 

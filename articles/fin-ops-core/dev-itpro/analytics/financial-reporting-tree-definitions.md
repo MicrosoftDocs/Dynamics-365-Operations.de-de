@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 97ecd7996ed2d8fb12c1038aa296450d3481e6fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866301"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345785"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definitionen für Berichtsbaumstrukturen in Finanzberichten
 
@@ -170,23 +170,23 @@ Die Berichtseinheitenstruktur in der folgenden Berichtstruktur ist wie folgt:
 - Die Detailberichtseinheiten der niedrigsten Ebene (Home Sales, Auto Sales, Client Services, und Operations) stellen Abteilungen in den Finanzdaten dar. Diese Berichtseinheiten befinden sich im schattierten Bereich des Diagramms.
 - Die zusammengefassten Einheiten auf höherer Ebene fassen Informationen aus den Detaileinheiten zusammen.
 
-[![Contoso-Zusammenfassungsberichtsstruktur – Beispiel 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso-Zusammenfassungsberichtsstruktur – Beispiel 1.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Berichtseinheitsstruktur - Beispiel 2
 
 Das folgende Diagramm zeigt eine Berichtstruktur mit eine Organisationsstruktur, die nach Unternehmensfunktion aufgeteilt ist.
 
-[![Contoso-Zusammenfassungsberichtsstruktur – Beispiel 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso-Zusammenfassungsberichtsstruktur – Beispiel 2.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Beispiel für das Dialogfeld "Berichtseinheiten aus Dimensionen einfügen"
 
 Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Berichtseinheiten aus Dimensionen einfügen**. In diesem Beispiel ist das Ergebnis eine Kombination aus Unternehmenseinheiten, Kostenstellen und Abteilungen.
 
-[![Berichtseinheiten einfügen](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Berichtseinheiten einfügen.](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Die resultierende Berichtstruktur-Definition ist nach Geschäftseinheit, dann nach Kostenstelle und dann nach Abteilung sortiert. Die Dimension für die fünfte Berichtseinheit ist **Unternehmenseinhet = \[001\] Kostenstelle =\[\], Abteilung = \[022\]**, und identifiziert eine Berichtseinheit für Konten die spezifisch für die Unternehmenseinheit 001 und Abteilung 022 sind.
 
-[![Abbildung des Berichtsbaums](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Abbildung des Berichtsbaums.](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Beispiele für Daten-Rollup
 
@@ -194,11 +194,11 @@ Die folgenden Beispiele zeigen mögliche Informationen an, die in einer Berichts
 
 #### <a name="example-1"></a>Beispiel 1
 
-[![Roll-up für mehrere Unternehmen](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Roll-up für mehrere Unternehmen.](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Beispiel 2
 
-[![Abteilungsübergreifendes Roll-up](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Abteilungsübergreifendes Roll-up.](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

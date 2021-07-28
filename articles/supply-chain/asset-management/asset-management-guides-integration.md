@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3793dca681e28b90e96469256f368620393704f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908566"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344269"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrieren von Dynamics 365 Supply Chain Management (Anlagenverwaltung) in Dynamics 365 Guides
 
@@ -56,38 +56,38 @@ Um eine Anleitung einer Wartungsprüflistenvorlage zuzuordnen, folgen Sie diesen
     1. Im Inforegister **Wartungsprüflistenpositionen** wählen Sie die Position aus, der Sie die Anleitung zuordnen möchten.
     1. Wählen Sie im Inforegister **Zugeordnete Anleitungen** die Option **Anleitung hinzufügen** aus.
 
-        ![Eine Anleitung einer Wartungsprüflistenposition zuordnen](media/am-guides-integration-add-guide.png "Eine Anleitung einer Wartungsprüflistenposition zuordnen")
+        ![Eine Anleitung einer Wartungsprüflistenposition zuordnen.](media/am-guides-integration-add-guide.png "Eine Anleitung einer Wartungsprüflistenposition zuordnen")
 
     1. Wählen Sie im Feld **Name** eine Anleitung aus, und wählen Sie dann **Speichern** aus.
 
-        ![Eine Anleitung im Feld „Name“ auswählen](media/am-guides-integration-select-guide.png "Eine Anleitung im Feld „Name“ auswählen")
+        ![Eine Anleitung im Feld „Name“ auswählen.](media/am-guides-integration-select-guide.png "Eine Anleitung im Feld „Name“ auswählen")
 
 1. Ordnen Sie die Wartungsprüflistenvorlage einem Auftragstyp zu:
 
     1. [Erstellen Sie einen Wartungsauftragstyp](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type), oder wählen Sie einen vorhandenen Wartungsauftragstyp aus.
     1. Wählen Sie im Aktionsbereich **Standardeinstellungen für den Wartungsauftragstyp** aus.
 
-        ![Schaltfläche für Wartungsauftragstyp-Standardwerte](media/am-guides-integration-job-defaults.png "Schaltfläche für Wartungsauftragstyp-Standardwerte")
+        ![Schaltfläche für Wartungsauftragstyp-Standardwerte.](media/am-guides-integration-job-defaults.png "Schaltfläche für Wartungsauftragstyp-Standardwerte")
 
     1. Erstellen Sie eine Position, und wählen Sie dann **Speichern** aus.
 
-        ![Eine Position erstellen](media/am-guides-integration-add-line.png "Eine Position erstellen")
+        ![Erstellen Sie eine Position.](media/am-guides-integration-add-line.png "Eine Position erstellen")
 
     1. Wählen Sie im Aktionsbereich **Wartungsprüfliste** aus.
 
-        ![Schaltfläche „Wartungsprüfliste“](media/am-guides-integration-maintenance-checklist.png "Schaltfläche „Wartungsprüfliste“")
+        ![Schaltfläche „Wartungsprüfliste“.](media/am-guides-integration-maintenance-checklist.png "Schaltfläche „Wartungsprüfliste“")
 
     1. In der Registerkarte **Wartungsprüflistenpositionen** fügen Sie eine Position hinzu, und ändern Sie dann den Wert des Felds **Typ** zu **Vorlage**.
 
-        ![Den Wert „Typ“ ändern](media/am-guides-integration-checklist-lines.png "Den Wert „Typ“ ändern")
+        ![Den Wert „Typ“ ändern.](media/am-guides-integration-checklist-lines.png "Den Wert „Typ“ ändern")
 
     1. In der Registerkarte **Positionsdetails** im Feld **Vorlage** wählen Sie die Vorlage aus, der Sie die Anleitung zugeordnet haben, und wählen Sie dann **Speichern** aus.
 
-        ![Die Vorlage auswählen](media/am-guides-integration-checklist-line-details.png "Die Vorlage auswählen")
+        ![Die Vorlage auswählen.](media/am-guides-integration-checklist-line-details.png "Die Vorlage auswählen")
 
 1. [Erstellen Sie einen Arbeitsauftrag](work-orders/manually-created-workorders.md#create-work-order), und wählen Sie dann den Wartungsauftragstyp aus, der die Wartungsprüflistenvorlage verwendet, der Sie die Anleitung zugeordnet haben. Die Anleitung wird automatisch dem Arbeitsauftrag zugeordnet.
 
-    ![Einen Wartungsauftragstyp auswählen](media/am-guides-integration-create-work-order.png "Einen Wartungsauftragstyp auswählen")
+    ![Einen Wartungsauftragstyp auswählen.](media/am-guides-integration-create-work-order.png "Einen Wartungsauftragstyp auswählen")
 
 1. Zeigen Sie die Anleitung an, die dem Arbeitsauftrag und den Arbeitskräften zugeordnet ist:
 
@@ -95,11 +95,11 @@ Um eine Anleitung einer Wartungsprüflistenvorlage zuzuordnen, folgen Sie diesen
     1. [Öffnen Sie die Wartungsprüfliste](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job) für den Arbeitsauftrag.
     1. Wählen Sie eine Prüflistenposition aus, um die zugeordnete Anleitung anzuzeigen.
 
-        ![Einer Prüflistenposition zugeordnete Anleitung](media/am-guides-integration-show-guide.png "Einer Prüflistenposition zugeordnete Anleitung")
+        ![Einer Prüflistenposition zugeordnete Anleitung.](media/am-guides-integration-show-guide.png "Einer Prüflistenposition zugeordnete Anleitung")
 
     1. Öffnen Sie die Anleitung in HoloLens.
 
-        ![Öffnen Sie die Anleitung in HoloLens](media/am-guides-integration-hololens-select.png "Die Anleitung in HoloLens öffnen")
+        ![Öffnen Sie die Anleitung in HoloLens.](media/am-guides-integration-hololens-select.png "Die Anleitung in HoloLens öffnen")
 
 > [!NOTE]
 > Sie können einen Leitfaden auch direkt in der Wartungsprüfliste eines Arbeitsauftrags oder eines Auftragstyps zuordnen.

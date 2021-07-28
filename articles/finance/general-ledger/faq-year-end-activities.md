@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 379bb8a1f969a74618db0e57c84c2038db1b631c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ceacdbe36cc946b64d13b3faff2b3b1ca59afbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822830"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345475"
 ---
 # <a name="year-end-activities-faq"></a>Häufig gestellte Fragen zu Aktivitäten am Jahresende 
 
@@ -27,9 +27,9 @@ ms.locfileid: "5822830"
 In diesem Artikel finden Sie Informationen über die Aktivitäten zum Jahresende. Es geht überwiegend um Fragen zum Jahresabschluss von Hauptbuch und Kreditorenkonten.
 
 ## <a name="general-ledger-how-do-i-know-that-were-running-year-end-close-and-not-undoing-year-end-close"></a>Hauptbuch: Woher weiß ich, dass wir den Jahresendabschluss durchführen und nicht rückgängig machen?
-Wir wissen, das Unternehmen versucht haben, den Jahresendabschluss durchzuführen, ihn stattdessen aber rückgängig gemacht haben. Wenn der Jahresendabschluss sehr schnell endet oder keine Anfangssalden ergibt, überprüfen Sie unter **Jahresendabschluss** die Einstellung **Vorherigen Abschluss rückgängig machen** (**Hauptbuch > Jahresendabschluss > Geschäftsjahresabschluss ausführen**). 
+Wir wissen, das Unternehmen versucht haben, den Jahresendabschluss durchzuführen, ihn stattdessen aber rückgängig gemacht haben. Wenn der Jahresendabschluss sehr schnell endet oder keine Anfangssalden ergibt, überprüfen Sie unter **Jahresendabschluss** die Einstellung **Vorherigen Abschluss rückgängig machen** (**Hauptbuch > Periodenabschluss > Jahresendabschluss > Geschäftsjahresabschluss ausführen**). 
 
-[![Durchführung des Jahresendabschlusses im Vergleich zum Rückgängigmachen des Jahresendabschlusses](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
+[![Durchführung des Jahresendabschlusses im Vergleich zum Rückgängigmachen des Jahresendabschlusses.](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
 
 Ist **Vorherigen Abschluss rückgängig machen** auf **Ja** eingestellt, wird der vorherige Abschluss rückgängig gemacht. Beim Rückgängigmachen werden alle Abschluss- und Anfangssalden gelöscht, als wäre der Jahresendabschluss nie erfolgt. Belege werden gelöscht. Der Jahresendabschluss wird nicht automatisch erneut ausgeführt. Vielmehr muss der Vorgang manuell erneut gestartet werden, indem **Vorherigen Abschluss rückgängig machen** auf **Nein** gesetzt wird. 
 
@@ -39,11 +39,11 @@ Ist **Vorherigen Abschluss rückgängig machen** auf **Ja** eingestellt, wird de
 ## <a name="general-ledger-what-is-the-difference-between-undo-and-delete-gl-parameter-for-year-end-close"></a>Hauptbuch: Was ist der Unterschied zwischen dem Rückgängigmachen und dem Löschen des Hauptbuchparameters beim Jahresendabschluss?
 Eventuell bestehen Unklarheiten bezüglich des Parameters **Vorherigen Abschluss rückgängig machen** aus dem Dialogfeld **Jahresendabschluss** und des Parameters **Jahresabschlussbuchungen bei Umbuchung löschen** aus dem Hauptbuch (**Hauptbuch > Periodenabschluss > Jahresendabschluss > Geschäftsjahresabschluss ausführen**).  
 
-[![Unterschied zwischen dem Rückgängigmachen und Löschen des Hauptbuchparameters](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
+[![Unterschied zwischen dem Rückgängigmachen und Löschen des Hauptbuchparameters.](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
 
 Sollen alle Abschluss- und Anfangssalden gelöscht werden, so als ob der Jahresendabschluss nie erfolgt wäre, wählen Sie bei Durchführung des Jahresendabschlusses im Dialogfeld im Dropdownmenü die Option **Vorherigen Abschluss rückgängig machen** aus. Die Belege werden gelöscht. Der Jahresendabschluss wird nicht automatisch erneut ausgeführt. Um den Jahresendabschluss durchzuführen, müssen Sie diesen Prozess erneut starten, wobei Sie die Option **Vorherigen Abschluss rückgängig machen** (**Hauptbuch > Einrichten des Hauptbuchs > Hauptbuchparameter**) auf **Nein** setzen. 
 
-[![Einstellung des Hauptbuchparameters](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
+[![Einstellung des Hauptbuchparameters.](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
 
 Der Parameter **Jahresabschlussbuchungen bei Umbuchung löschen** aus dem Hauptbuch wird nur verwendet, wenn der Jahresendabschluss ausgeführt wird (nicht, wenn er rückgängig gemacht wird. Die Option **Vorherigen Abschluss rückgängig machen** ist auf **Nein** eingestellt). Ist dieser Parameter auf **Ja** eingestellt, werden alle Abschluss- und Anfangssalden gelöscht, und der Jahresendabschluss wird erneut ausgeführt. Dieser Vorgang wird verwendet, wenn das Unternehmen möchte, dass alle Transaktionen, einschließlich Anpassungen seit dem letzten Jahresendabschluss, für Abschluss- und Anfangssaldo in einer einzigen Buchung gebucht werden sollen. 
 
@@ -60,10 +60,10 @@ Bei Durchführung des Jahresendabschlusses wird der Saldo jedes Dimensionssatzes
 
 Unnötige Dimensionssätze wirken sich auch auf den Batchauftrag **BudgetDimensionFocusInitializeBalance** (**Hauptbuch > Kontenplan > Dimensionen > Finanzdimensionssätze**) aus.
 
-[![Finanzdimensionssätze](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
+[![Finanzdimensionssätze.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Konfiguration der Vorlage zum Jahresendabschluss
-Mit der Vorlage zum Jahresendabschluss können Unternehmen das Finanzdimensionsniveau auswählen, das bei der Übertragung von Gewinn- und Verlustsalden auf einbehaltene Gewinne beibehalten werden soll. Mit den Einstellungen können Unternehmen die genauen Finanzdimensionen (**Alle abschließen**) beibehalten, wenn die Salden in einbehaltene Gewinne verschoben oder die Beträge zu einem eindimensionalen Dimensionswert zusammengefasst werden (**Einzeln abschließen**). Dies kann für jede Finanzdimension festgelegt werden. Weitere Informationen zu diesen Einstellungen erhalten Sie im Artikel [Jahresendabschluss](year-end-close.md).
+Mit der Vorlage zum Jahresendabschluss können Organisationen das Finanzdimensionsniveau auswählen, das bei der Übertragung von Gewinn- und Verlustsalden auf einbehaltene Gewinne beibehalten werden soll. Mit den Einstellungen können Unternehmen die genauen Finanzdimensionen (**Alle abschließen**) beibehalten, wenn die Salden in einbehaltene Gewinne verschoben oder die Beträge zu einem eindimensionalen Dimensionswert zusammengefasst werden (**Einzeln abschließen**). Dies kann für jede Finanzdimension festgelegt werden. Weitere Informationen zu diesen Einstellungen erhalten Sie im Artikel [Jahresendabschluss](year-end-close.md).
 
 Wir empfehlen, dass Sie die Anforderungen Ihres Unternehmens genau betrachten und mit der Option **Einzeln abschließen** so viele Dimensionen wie möglich abschließen, um die Leistung zu verbessern. Durch den Abschluss auf einen einzelnen Dimensionswert (der auch leer sein kann) fällt die systeminterne Berechnung der Salden des Kontos für einbehaltene Gewinne weniger ausführlich aus.
 
@@ -72,14 +72,14 @@ Wenn Sie seit dem letzten Jahresendabschluss auf Version 10.0.13 oder höher ak
  
 ## <a name="general-ledger--what-does-the-period-close--year-end-close-do"></a>Hauptbuch: Was geschieht beim Periodenabschluss und beim Jahresendabschluss?
  
-[![Periodenabschluss, Jahresendabschluss](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
+[![Periodenabschluss, Jahresendabschluss.](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
 
 ### <a name="performance-improvements-for-rebuilding-financial-dimension-sets-new-feature"></a>Leistungsverbesserungen bei der Neuerstellung von Finanzdimensionssätzen (neue Funktion)
 Eine neue Funktion, die in Version 10.0.16 ergänzt wurde, verbessert die Leistung bei Jahresendabschluss und Konsolidierung. Bei dieser Funktion handelt es sich um Leistungsverbesserungen bei der Neuerstellung von Finanzdimensionssätzen. Im Zuge dieser Verbesserungen werden Dimensionssätze nur über einen relevanten Zeitraum neu erstellt. In den Vorgängerversionen wurden die Dimensionssätze zu sämtlichen Datumsangaben neu erstellt. Wenn Sie beispielsweise das Jahr 2020 abschließen, erstellt das System nur die Salden für Transaktionen im Geschäftsjahr 2020 neu. Erfolgt die Konsolidierung über den Zeitraum vom 1. November bis zum 30. November 2020, erstellt das System die Salden nur über diesen Zeitraum neu.
 
-Weil diese Funktion eine erhebliche Veränderung darstellt, muss sie im Arbeitsbereich **Funktionsverwaltung** aktiviert werden.
+Da diese Funktion eine erhebliche Veränderung darstellt, muss sie im Arbeitsbereich **Funktionsverwaltung** aktiviert werden.
  
-[![Jahresendabschluss](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
+[![Jahresendabschluss.](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
 
 ## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2020"></a>Kreditorenkonten: Welche Änderungen wurden zugunsten der Jahresendsteuererklärung (US 1099) für das Jahr 2020 vorgenommen?
 
@@ -112,17 +112,17 @@ Verwenden Sie die Funktionen zum Aktualisieren von 1099 (**Kreditorenkonten > Kr
 Nein. Die Funktion zum Aktualisieren von 1099 muss für jeden Kreditor einzeln ausgeführt werden. Wenn eine massenweise Aktualisierung in Ihrem Unternehmen erforderlich sein sollte, stimmen Sie bitte für die Idee [Batchverarbeitung zur Aktualisierung der Steuerdaten (US 1099) von Kreditoren](https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8).
 
 ## <a name="accounts-payable-1099--recalculate-existing-1099-amounts-vs-update-all-in-the-update-1099-utility"></a>Kreditorenkonten: 1099 – „Bestehende 1099-Beträge neu berechnen“ im Vergleich zu „Alle aktualisieren“ aus dem Dienstprogramm zur Aktualisierung von 1099.
-Mit dem Kontrollkästchen **Bestehende 1099-Beträge neu berechnen** wird der Steuerbetrag (US 1099) auf die insgesamt bezahlte Summe zurückgesetzt, wenn dies zusammen mit dem Kontrollkästchen **Alle aktualisieren** verwendet wird. 
+Mit dem Kontrollkästchen **Bestehende 1099-Beträge neu berechnen** wird der Steuerbetrag (US 1099) auf die insgesamt bezahlte Summe zurückgesetzt, wenn dies zusammen mit dem Kontrollkästchen **Alle aktualisieren** verwendet wird. 
 
-[![Steuerbuchungen (US 1099): Vor Ausführung der Aktualisierung](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
+[![Steuerbuchungen (US 1099): Vor Ausführung der Aktualisierung.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
 
-Das Kontrollkästchen **Bestehende 1099-Beträge neu berechnen** wird nur verwendet, wenn die Rechnung partielle 1099-Werte aufweist oder wenn Sie im Formular zur Steuererklärung (US 1099) geändert wurde. Angenommen, Sie haben eine Rechnung im Wert von 1.000,00 US-Dollar, aber der Benutzer gibt auf der Rechnung manuell einen 1099-Betrag von 500,00 US-Dollar ein.
+Das Kontrollkästchen **Bestehende 1099-Beträge neu berechnen** wird nur verwendet, wenn die Rechnung partielle 1099-Werte aufweist oder wenn Sie im Formular zur Steuererklärung (US 1099) geändert wurde. Angenommen, Sie haben eine Rechnung im Wert von 1.000,00 US-Dollar, aber der Benutzer gibt auf der Rechnung manuell einen 1099-Betrag von 500,00 US-Dollar ein.
 
-[![Steuerbuchungen (US 1099): Markierung von sowohl „Alle aktualisieren“ als auch „Bestehende 1099-Beträge neu berechnen“](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
+[![Steuerbuchungen (US 1099): Markierung von sowohl „Alle aktualisieren“ als auch „Bestehende 1099-Beträge neu berechnen“.](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
 
-Bei Bezahlung entspricht der Betrag von 500,00 US-Dollar dem gezahlten Betrag im Formular 1099. Wird eine Neuberechnung durchgeführt, ändert das System den 1099-Betrag in 1.000,00 US-Dollar, was der insgesamt bezahlten Summe entspricht.
+Bei Bezahlung entspricht der Betrag von 500,00 US-Dollar dem gezahlten Betrag im Formular 1099. Wird eine Neuberechnung durchgeführt, ändert das System den 1099-Betrag in 1.000,00 US-Dollar, was der insgesamt bezahlten Summe entspricht.
 
-[![Steuerbuchungen (US 1099): Nach Ausführung des 1099-Vorgangs](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
+[![Steuerbuchungen (US 1099): Nach Ausführung des 1099-Vorgangs.](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
 
 ## <a name="accounts-payable-1099--manually-create-1099-transactions"></a>Kreditorenkonten: 1099 – Buchungen (US 1099) manuell erstellen
 Eventuell müssen in einem Unternehmen Buchungen (US 1099), die keiner Rechnung zugeordnet sind, manuell erstellt werden. Dies ist möglich unter **Kreditorenkonten > Periodische Aufgaben > Steuererklärung (US 1099) > Kreditorenausgleich für Steuerformulare (US 1099)**. Wählen Sie die Schaltfläche **Manuelle US 1099-Buchungen** aus. 

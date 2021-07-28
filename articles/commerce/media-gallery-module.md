@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e9af56a8a82938fa7d23e8096db2c59ed5fcb517
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271279"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346715"
 ---
 # <a name="media-gallery-module"></a>Mediengaleriemodul
 
@@ -41,7 +41,7 @@ Hier sind einige Anwendungsbeispiele für Mediengaleriemodule:
 
 In dem Beispiel der folgenden Abbildung werden in einem Kauffeld auf einer PDP Produktbilder mithilfe eines Mediengaleriemoduls gehostet.
 
-![Beispiel für ein Kauffeld auf einer Produktdetailseite, auf der Produktbilder mithilfe eines Mediengaleriemoduls gehostet werden](./media/ecommerce-pdp-buybox.PNG)
+![Beispiel für ein Kauffeld auf einer Produktdetailseite, auf der Produktbilder mithilfe eines Mediengaleriemoduls gehostet werden.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Eigenschaften der Mediengalerie
 
@@ -59,11 +59,11 @@ In dem Beispiel der folgenden Abbildung werden in einem Kauffeld auf einer PDP P
 
 Die folgende Abbildung zeigt ein Beispiel eines Mediengaleriemoduls, in dem die Vollbild- und Zoomoptionen verfügbar sind.
 
-![Beispiel eines Mediengaleriemoduls, in dem die Vollbild- und Zoomoptionen verfügbar sind](./media/ecommerce-media-zoom.png)
+![Beispiel eines Mediengaleriemoduls, in dem die Vollbild- und Zoomoptionen verfügbar sind.](./media/ecommerce-media-zoom.png)
 
 Die folgende Abbildung zeigt ein Beispiel eines Mediengaleriemoduls mit kuratierten Bildern (d. h. die angegebenen Bilder hängen nicht von der Produkt-ID oder dem Seitenkontext ab).
 
-![Beispiel eines Mediengaleriemoduls mit kuratierten Bildern](./media/ecommerce-media-curated.PNG)
+![Beispiel eines Mediengaleriemoduls mit kuratierten Bildern.](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-Interaktion
 

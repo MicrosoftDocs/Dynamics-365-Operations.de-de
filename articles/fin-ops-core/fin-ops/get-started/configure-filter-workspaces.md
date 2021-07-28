@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d92427c1aeee92921b5b817b67530cf8aeddbbfb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 29b9e920744296d458e74ff3990191bde72b9e58
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744026"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344296"
 ---
 # <a name="configure-and-filter-workspaces"></a>Arbeitsbereiche konfigurieren und Filtern
 
@@ -32,11 +32,11 @@ Dieser Artikel gibt einen Überblick darüber, wie Arbeitsbereiche konfiguriert 
 
 Sie können die Darstellungsweise und das Verhalten von einigen Arbeitsbereichen ändern, indem Sie Einstellungen aktualisieren, die für den gesamten Arbeitsbereich gelten. Wenn ein Arbeitsbereich konfiguriert werden kann, enthält der Aktivitätsbereich eine Schaltfläche, die Sie anklicken können, um Konfigurationsänderungen vorzunehmen. In der folgenden Abbildung wird die Schaltfläche **Meinen Arbeitsbereich konfigurieren** benannt.
 
-[![Konfigurieren und Filtern von Arbeitsbereichen](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
+[![Konfigurieren und Filtern von Arbeitsbereichen.](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
 
 Wenn Sie auf die Schaltfläche klicken, erscheint ein Dialogfeld, mit dem Sie die vordefinierten Einstellungen des Arbeitsbereichs ändern können. Die Einstellungen, die Sie in diesem Dialogfeld sehen, variieren mit jedem Arbeitsbereich und hängen von den Steuerelementen und Daten ab, die für den Arbeitsbereich verfügbar sind.
 
-[![Meinen Arbeitsbereich konfigurieren](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
+[![Meinen Arbeitsbereich konfigurieren.](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
 
 ## <a name="filtering-a-workspace"></a>Filtern eines Arbeitsbereichs
 
@@ -46,11 +46,11 @@ Viele Arbeitsbereiche lassen Sie den Inhalt filtern, der angezeigt wird. Die Ste
 
 Sie können den gesamten Arbeitsbereich filtern, indem Sie einen Filter über den gesamten Arbeitsbereich verwenden. Arbeitsbereich weite Filter finden Sie in der linken oberen Ecke des Arbeitsbereichs. Das Auswählen eines bestimmten Werts in der Filterdropdown-Liste sorgt dafür, dass der Inhalt des Arbeitsbereichs basierend auf dieser Auswahl gefiltert wird.
 
-[![Arbeitsbereich-Filter](./media/workspace-filter.png)](./media/workspace-filter.png)
+[![Arbeitsbereich-Filter.](./media/workspace-filter.png)](./media/workspace-filter.png)
 
 Wenn Sie den Filter mit einem Klick öffnen, werden mehrere Optionen dargestellt.
 
-[![Arbeitsbereich-Filter](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
+[![Arbeitsbereich-Filter.](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
 
 Wählen Sie eine Option, um den Arbeitsbereich basierend auf dieser Option zu filtern.
 
@@ -58,7 +58,7 @@ Wählen Sie eine Option, um den Arbeitsbereich basierend auf dieser Option zu fi
 
 Wenn einzelne Bereiche des Arbeitsbereichs Filter haben, können Sie jeden Abschnitt separat filtern. In der nachfolgenden Darstellung sehen Sie den Filter (das Feld, das den Text "Filter" enthält) als Beispiel für ein Freitext-Filterfeld.
 
-[![Arbeitsbereich-Abschnitts-Filter](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
+[![Arbeitsbereich-Abschnitts-Filter.](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Wie bei einem Arbeitsbereich-weiten Filter wählen Sie den gewünschten Filterwert aus oder geben ihn ein, um die angezeigten Inhalte des Bereichs einzugrenzen.
 

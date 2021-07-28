@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf211e9f256a7489cdc3c38ed2d2198bd1dd6789
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86474d22f7a1426ed1c8f61c346ac7a6f67173f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813820"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345427"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Planungen, Arbeitsaufträge und Projekte
 
@@ -58,13 +58,13 @@ Einige dieser Informationen sind auf einem Arbeitsauftrag nicht zu finden. Daher
 
 Beispiel: In der folgenden Abbildung ist jeder Arbeitsauftragseinzelvorgang, der mit dem Anlagentyp **Lkw-MMotor** erstellt wurde, aufgrund der Art und Weise, wie der **Lkw-Motor**-Anlagentyp eingerichtet wird, ein Unterprojekt der Projektkennung 000186.
 
-![Abbildung 1](media/01-integration-to-pma.png)
+![Abbildung 1.](media/01-integration-to-pma.png)
 
 Zweck der Projektkennung auf dem Arbeitsauftragseinzelvorgang und die zugeordnete Aktivitätsnummer ist es, Kosten im Zusammenhang mit dem Arbeitsauftragseinzelvorgang und der darin ausgewählten Anlage im Modul **Projektverwaltung und Buchhaltung** nachzuverfolgen. (Wählen Sie **Asset-Management** > **Gemeinsam** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** und dann den Arbeitsauftrag aus, um die Projektkennung und die Aktivitätsnummer anzuzeigen. Auf dem Inforegister **Positionsdetails** wird im Feld **Projektkennung** die Projektkennung angezeigt, und das Feld **Aktivitätsnummer** zeigt die Aktivitätsnummer an.) Weitere Informationen zur Kostenkontrolle im Asset-Management finden Sie unter [Kosten- und Datumskontrolle](../controlling-and-reporting/cost-and-date-control.md) Sie unter.
 
 Die folgende Abbildung zeigt eine grafische Übersicht der Arbeitsauftragsprojekte und zugehöriger Projektaktivitäten.
 
-![Abbildung 2](media/02-integration-to-pma.png)
+![Abbildung 2.](media/02-integration-to-pma.png)
 
 Wenn ein neuer Arbeitsauftragseinzelvorgang für einen Arbeitsauftrag erstellt wird, wird automatisch ein Arbeitsauftragsprojekt für den Einzelvorgang erstellt. Die Finanzdimensionen für die Anlage im Zusammenhang mit dem Arbeitsauftragseinzelvorgang werden automatisch an das Arbeitsauftragsprojekt übertragen.
 
@@ -86,17 +86,17 @@ Zur richtigen Verwendung von Arbeitsauftrags-Lebenszyklusstatus und zugehörigen
 
 Die folgenden Abbildungen zeigen die Zuordnungen zwischen Arbeitsauftragsprojektgruppen, zugehörigen Projekttypen, Projektphasen und Arbeitsauftrags-Lebenszyklusstatus.
 
-![Abbildung 3](media/03-integration-to-pma.png)
+![Abbildung 3.](media/03-integration-to-pma.png)
 
-![Abbildung 4](media/04-integration-to-pma.png)
+![Abbildung 4.](media/04-integration-to-pma.png)
 
-![Abbildung 5](media/05-integration-to-pma.png)
+![Abbildung 5.](media/05-integration-to-pma.png)
 
 Weitere Informationen zum Einrichten von Arbeitsauftragsprojekten finden Sie unter [Arbeitsauftragsprojekteinrichtung](../setup-for-work-orders/work-order-project-setup.md). Weitere Informationen zur Erstellung des Lebenszyklus von Arbeitsaufträgen finden Sie unter [Lebenszykluszustand von Arbeitsaufträgen](../setup-for-work-orders/work-order-lifecycle-states.md).
 
 Die folgende Abbildung zeigt einen grafischen Überblick der verschiedenen Projekte, die im Modul **Asset-Management** erstellt werden, um die Integration in das Modul **Projektverwaltung und Buchhaltung** zu aktivieren. Sie zeigt außerdem die Arbeitsverfahren, denen die Projekte zugeordnet sind.
 
-![Abbildung 6](media/06-integration-to-pma.png)
+![Abbildung 6.](media/06-integration-to-pma.png)
 
 
 

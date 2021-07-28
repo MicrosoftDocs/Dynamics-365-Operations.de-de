@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 11124
+ms.custom:
+- "11124"
+- intro-internal
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 158d96e748b982c87be3f8b08f68d1fdb919aeeb
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 03732ecd5a0cd59d15fa1f9f0691571bd0a19606
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897161"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346449"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Überblick zur SEPA-Kreditübertragung
 
@@ -30,7 +32,7 @@ Dieser Artikel stellt allgemeine Informationen zu ISO 20022-Banküberweisungen b
 
 ## <a name="what-is-a-credit-transfer-message"></a>Was ist eine SEPA-Mitteilung?
 Die Banküberweisungsnachricht ist eine Anforderung, die eine initiierende Partei (Ihr Unternehmen) zum Verschieben von einem separaten Konto zu einem Kreditgeber sendet. Es gibt viele länder-/regionsspezifische und bankspezifisch Implementierungen von Banküberweisungsnachrichten. Viele hiervon werden innerhalb eines Landes/Regionen verwendet, und werden Standards. Ein Standard ist globaler ISO 20022 und seine Startnachrichten, z.B. Banküberweisung. Die folgende Abbildung zeigt die Beziehungen und Disposition für die ausgewählte Banküberweisungsnachrichten angezeigt. 
-![Credit tansfer](./media/credit-transfer.jpg) Kreditübertragungsnachrichten 
+![Kreditübertragung.](./media/credit-transfer.jpg) Kreditübertragungsnachrichten 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Was sind ISO 20022 SEPA-Zahlungen?
 Single Euro Payments Area (SEPA) wurde von der Europäischen Kommission eingerichtet und schreibt vor, dass alle elektronischen Zahlungen als Inlandszahlungen gelten, unabhängig vom Land/von der Region in der sich die Person, das Unternehmen oder die Organisation und die Bank befindet. Es gibt keine Differenz zwischen nationalen und grenzüberschreitenden Zahlungen. Zu SEPA zählen die 28 Mitgliedsstaaten der Europäischen Union (EU) sowie Island, Liechtenstein, Norwegen, die Schweiz, Monaco und San Marino. SEPA hilft dabei, einen gemeinsamen Markt für Zahlungsbuchungen innerhalb des europäischen Wirtschaftsraums (EEA) zu bilden. Letztlich wird von SEPA erwartet, die Anzahl von Zahlungsformaten zu reduzieren, mit denen Banken, Unternehmen und Personen arbeiten müssen. Die Europäische Kommission hat die Rechtsgrundlage für SEPA-Zahlungen über die Payment Services-Direktive (PSD) definiert. Der European Payments Council (EPC) unterstützt SEPA durch die folgenden Aktivitäten:

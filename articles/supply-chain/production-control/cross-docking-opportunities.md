@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 32a1acba8b4ca9484cbbc4b23ba496521ec4f61b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190087"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347685"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Crossdocking von Produktionsaufträgen zu Ausgangsrampen
 
@@ -42,7 +42,7 @@ Ein Produkt wird dem Warenausgangslagerplatz (3) als fertig gemeldet und ein Gab
 -   Wenn der Frachttür bereits ein Anhänger zugewiesen ist, wird der LKW-Fahrer aufgefordert, das Produkt direkt auf den Anhänger zu laden.
 -   Wenn keine Aktivität für die Umlagerung des Produkts geplant ist, wird der Staplerfahrer angewiesen, das Produkt zu einem Lagerplatz am internen Lagerort (5) zu bringen.
 
-[![Opportunistisches Crossdocking](./media/scenario1.png)](./media/scenario1.png)
+[![Opportunistisches Crossdocking.](./media/scenario1.png)](./media/scenario1.png)
 
 ## <a name="configure-cross-docking"></a>Konfigurieren von Crossdocking
 Sie konfigurieren den Crossdocking-Prozess in **Arbeitsrichtlinien** Eine Arbeitsrichtlinie enthält einen Arbeitsauftragstyp, einen Lagerplatz und ein Produkt. Im folgenden Beispiel wird Crossdocking für Produkt X und Lagerplatz Y konfiguriert.

@@ -7,16 +7,17 @@ ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f481f6ca047ee0285fe0e81d8fa96665e9d27cee
-ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
+ms.openlocfilehash: d39283dea37c0e0fbf432aae8b1a30a87198f9f0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "6292760"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343723"
 ---
 # <a name="container-packing-strategies"></a>Container-Packstrategien
 
@@ -24,7 +25,7 @@ Eine *Behälter-Packstrategie* ist eine Strategie, die Sie verwenden können, um
 
 - **In alle offenen Container packen** – Das System muss alle offenen Container prüfen, die während des Containerisierungszyklus bereits erstellt wurden, um sicherzustellen, dass das Element in einen von ihnen passt. Während des Packens prüft das System jedes Element, um festzustellen, ob es in einen der zuvor erstellten Container passen wird. Wenn das Element nicht in einen vorhandenen Container passt, erstellt das System einen neuen Container und fährt fort, bis es den gesamten Auftrag gepackt hat.
 
-    Zum Beispiel erfordern *n* bestellte Elemente eine Containerisierung. Im schlimmsten Fall führt das System jedes Mal, wenn es ein Element verarbeitet, das in keinen vorhandenen Container passt, insgesamt (\[(*n* – 1) × (*n* + 1) \] ÷ 2) Überprüfungen durch, um festzustellen, ob das Element in die vorhandenen Container passt.
+    Zum Beispiel erfordern *n* bestellte Elemente eine Containerisierung. Im schlimmsten Fall führt das System jedes Mal, wenn es ein Element verarbeitet, das in keinen vorhandenen Container passt, insgesamt (\[(*n* – 1) × (*n* + 1)\] ÷ 2) Überprüfungen durch, um festzustellen, ob das Element in die vorhandenen Container passt.
 
 - **Nur in aktuellen Container packen** – Das System muss nur den zuletzt erstellten Container prüfen, um sicherzustellen, dass das Element in diesen passt. Während des Packens prüft das System jedes Element, um festzustellen, ob es in den zuletzt erstellten Container passt. Wenn das Element nicht in diesen Container passt, erstellt das System einen neuen Container und fährt fort, bis es den gesamten Auftrag gepackt hat.
 
@@ -251,7 +252,7 @@ Um eine Richtlinie zur Sendungskonsolidierung festzulegen, gehen Sie folgenderma
 1. Wählen Sie die Richtlinie **Standard** in der Liste aus.
 1. Wählen Sie im Aktionsbereich **Bearbeiten** aus.
 1. Wählen Sie im Inforegister **Konsolidierungsfelder** in der Liste **Ausgewählte Felder** die Zeile, in der das Feld **Feldname** auf *Auftragsnummer* festgelegt ist.
-1. Wählen Sie die Schaltfläche **Entfernen** ![Linker Pfeil ](media/backward-button.png), um das Feld in die Liste **Restliche Felder** zu verschieben.
+1. Wählen Sie die Schaltfläche **Entfernen** aus, ![Links-Pfeil](media/backward-button.png), um das Feld in die Liste **Verbleibende Felder** zu verschieben.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 
 ### <a name="set-up-physical-dimensions-for-the-product"></a>Festlegen der physikalischen Dimensionen für das Produkt

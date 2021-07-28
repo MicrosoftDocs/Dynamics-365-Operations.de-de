@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
-ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
+ms.openlocfilehash: 23b965bb51a4323164ae52bf70050133c9c9c9da
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6295572"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344881"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Ausführung von EB-Formaten nachverfolgen, um Leistungsprobleme zu behandeln
 
@@ -56,14 +56,14 @@ Sie müssen auch die folgenden Dateien herunterladen und lokal speichern.
 
 Jede EB-Leistungsablaufverfolgung, die in der Anwendung generiert wird, wird als Anhang des Ausführungsprotokoll-Datensatzes gespeichert. Das Dokumentenverwaltungs-(DM)-Framework wird verwendet, um diese Anhänge zu verwalten. Sie müssen EB-Parameter im Voraus konfigurieren, um den DM-Dokumenttyp anzugeben, der verwendet werden soll, um Leistungsnachverfolgungen anzufügen. Klicken Sie im Arbeitsbereich **Elektronische Berichterstellung** auf den Link **Parameter der elektronischen Berichterstellung**. Wählen Sie anschließend auf der Seite **Elektronische Berichterstellungsparameter** unter der Registerkarte **Anhänge** im Feld **Andere** den DM-Dokumenttyp aus, der für Leistungsnachverfolgungen zu verwenden ist.
 
-![Parameterseite der elektronischen Berichterstellung](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
+![Parameterseite der elektronischen Berichterstellung.](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
 
 Um im Suchfeld **Andere** verfügbar zu sein, muss ein DM-Dokumenttyp in folgender Weise auf der Seite **Dokumenttypen** konfiguriert sein (**Organisationsverwaltung \> Dokumentenverwaltung \> Dokumenttypen**):
 
 - **Klasse:** Datei anfügen
 - **Gruppe:** Datei
 
-![Seite „Dokumenttypen”](./media/GER-PerfTrace-DM-DocumentType.png)
+![Seite „Dokumenttypen“.](./media/GER-PerfTrace-DM-DocumentType.png)
 
 > [!NOTE]
 > Der ausgewählte Dokumenttyp muss in jedem Unternehmen der aktuellen Instanz verfügbar sein, da DM-Anhänge unternehmensspezifisch sind.
@@ -72,7 +72,7 @@ Um im Suchfeld **Andere** verfügbar zu sein, muss ein DM-Dokumenttyp in folgend
 
 EB-Leistungsnachverfolgungen, die generiert werden, werden in RCS zur Analyse importiert, indem der EB-Format-Designer und der EB-Zuordnungs-Designer verwendet wird. Da EB-Leistungsnachverfolgungen als Anlagen des Ausführungsprotokoll-Datensatzes gespeichert werden, der dem EB-Format zugeordnet ist, müssen Sie RCS-Parameter im Voraus konfigurieren, um den DM-Dokumenttyp anzugeben, der verwendet werden soll, um Leistungsablaufverfolgungen anzufügen. In der Instanz von RCS, der für Ihr Unternehmen im Arbeitsbereich **Elektronische Berichterstellung** bereitgestellt wurde, wählen Sie **Elektronische Berichterstellungsparameter** aus. Wählen Sie anschließend auf der Seite **Elektronische Berichterstellungsparameter** unter der Registerkarte **Anhänge** im Feld **Andere** den DM-Dokumenttyp aus, der für Leistungsnachverfolgungen zu verwenden ist.
 
-![Seite der elektronischen Berichterstellungsparameter in RCS](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
+![Seite der elektronischen Berichterstellungsparameter in RCS.](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
 
 Um im Suchfeld **Andere** verfügbar zu sein, muss ein DM-Dokumenttyp in folgender Weise auf der Seite **Dokumenttypen** konfiguriert sein (**Organisationsverwaltung \> Dokumentenverwaltung \> Dokumenttypen**):
 
@@ -90,9 +90,9 @@ Nehmen Sie an, Sie haben mit dem Entwurf einer neuen EB-Lösung begonnen, um ein
 
     1. Wählen Sie im Aktivitätsbereich **Austausch \> Aus XML-Datei laden** aus.
     2. Wählen Sie **Durchsuchen** aus, um die entsprechende Datei für die erforderliche EB-Konfiguration im XML-Format auszuwählen.
-    3. Wählen Sie **OK**.
+    3. Wählen Sie **OK** aus.
 
-    ![Konfigurationsseite in RCS](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
+    ![Konfigurationsseite in RCS.](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
 
 ## <a name="run-the-er-solution-to-trace-execution"></a>Ausführen der EB-Lösung, um Ausführung nachzuverfolgen
 
@@ -109,7 +109,7 @@ Gehen Sie davon aus, dass Sie das Entwerfen der ersten Version der EB-Lösung be
     3. Im Inforegister **Konfigurationen** wählen Sie die Konfiguration **Leistungsnachverfolgungsformat** aus.
     4. Wählen Sie im Inforegister **Versionen** die Version **1.1** der ausgewählten Konfiguration aus, und wählen Sie dann **Importieren** aus.
 
-    ![Konfigurationsrepository-Seite](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
+    ![Konfigurationsrepository-Seite.](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
 
 Die entsprechenden Versionen der Datenmodell- und Modellzuordnungskonfigurationen werden automatisch als Voraussetzungen für die importierte EB-Formatkonfiguration importiert.
 
@@ -156,7 +156,7 @@ Die entsprechenden Versionen der Datenmodell- und Modellzuordnungskonfiguratione
     > [!NOTE]
     > Die Parameter im Dialogfeld **Benutzerparameter** sind für den Benutzer und das aktuelle Unternehmen spezifisch.
 
-    ![Benutzerparameter-Dialogfeld](./media/GER-PerfTrace-GER-UserParameters.png)
+    ![Benutzerparameter-Dialogfeld.](./media/GER-PerfTrace-GER-UserParameters.png)
 
 ### <a name="run-the-er-format"></a><a id='run-format'></a>Das EB-Format ausführen
 
@@ -177,11 +177,11 @@ Leistungsnachverfolgungen werden vom Quell-EB-Format entkoppelt und können in e
 2. Auf der Seite **Elektronische Berichterstellungs-Ausführungsprotokolle** im linken Bereich im Feld **Konfigurationsname** wählen Sie **Leistungsnachverfolgungsformat** aus, um die Protokolldatensätze zu suchen, die durch die Ausführung der Konfiguration **Leistungsnachverfolgungsformat** generiert wurden.
 3. Wählen Sie die Schaltfläche **Anhänge** aus (das Büroklammersymbol) in der oberen rechten Ecke der Seite, oder drücken Sie **Strg+Umschalt+A**.
 
-    ![Anhangschaltfläche auf der Seite für Elektronische Berichterstellungsausführungsprotokolle](./media/GER-PerfTrace-GER-DebugLog.png)
+    ![Anhangschaltfläche auf der Seite für Elektronische Berichterstellungsausführungsprotokolle.](./media/GER-PerfTrace-GER-DebugLog.png)
 
 4. Auf der Seite **Anhänge für elektronische Berichterstellungsausführungsprotokolle** im Aktivitätsbereich wählen Sie **Öffnen** aus, um die Leistungsnachverfolgung als ZIP-Datei abzurufen und sie lokal zu speichern.
 
-    ![Anhänge für elektronische Berichterstellungsausführungsprotokolle](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
+    ![Anhänge für elektronische Berichterstellungsausführungsprotokolle.](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
 
 > [!NOTE]
 > Die Nachverfolgung, die generiert wird, hat eine Referenz auf den Quell-EB-Bericht über einen eindeutigen Berichtsbezeichner ausschließlich im **GUID**-Format. Die Versionsnummerierung des Formats wird nicht berücksichtigt.
@@ -196,9 +196,9 @@ Beachten Sie, dass die Zuordnung zwischen der Leistungsnachverfolgung, die für 
 4. Auf der Seite **Format-Designer** im Aktivitätsbereich wählen Sie **Leistungsnachverfolgung** aus.
 5. Im Dialogfeld **Leistungsnachverfolgungs-Ergebniseinstellungen** wählen Sie **Leistungsnachverfolgung importieren** aus.
 6. Wählen Sie **Durchsuchen**, um die ZIP-Datei auszuwählen, die Sie zuvor exportiert haben.
-7. Wählen Sie **OK**.
+7. Wählen Sie **OK** aus.
 
-    ![Leistungsnachverfolgungsergebnis-Einstellungen-Dialogfeld in RCS](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
+    ![Leistungsnachverfolgungsergebnis-Einstellungen-Dialogfeld in RCS.](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--format-execution"></a>Verwenden Sie die Leistungsnachverfolgung zur Analyse in RCS – Formatausführung
 
@@ -209,7 +209,7 @@ Beachten Sie, dass die Zuordnung zwischen der Leistungsnachverfolgung, die für 
     - Tatsächlicher Zeitaufwand für die Eingabe von Daten in der generierten Ausgabe mithilfe des Formatelements
     - Die gleiche Zeit, ausgedrückt als Prozentsatz der gesamten Zeit, die für das Generieren der gesamten Ausgabe aufgewendet wurde
 
-    ![Format-Designer-Seite in RCS](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
+    ![Format-Designer-Seite in RCS.](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
 
 2. Seite **Format-Designer** schließen.
 
@@ -240,7 +240,7 @@ Es wird empfohlen, dass Sie das Zwischenspeichern für die Datenquelle VendTable
 
 Es kann außerdem hilfreich sein, die Anzahl von Aufrufen zu reduzieren, die an die Datenquelle LedgerTransTypeList vorgenommen werden. Diese Datenquelle wird verwendet, um jeden Wert der Enumeration **LedgerTransType** seiner Beschriftung zuzuordnen. Indem Sie diese Datenquelle verwenden, können Sie eine entsprechende Beschriftung finden und sie in das Datenmodell für jede Kreditorentransaktion eingeben. Die aktuelle Anzahl von Aufrufen an diese Datenquelle (9.027) ist ziemlich hoch für 265 Buchungen.
 
-![Modellzuordnungsdesigner-Seite in RCS, die 9.027 Aufrufe an die Datenquelle zeigt](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
+![Modellzuordnungsdesigner-Seite in RCS, die 9.027 Aufrufe an die Datenquelle zeigt.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
 
 ## <a name="improve-the-model-mapping-based-on-information-from-the-execution-trace"></a>Verbessern der Modellzuordnung auf der Grundlage von Informationen aus der Ausführungsnachverfolgung
 
@@ -253,7 +253,7 @@ Es kann außerdem hilfreich sein, die Anzahl von Aufrufen zu reduzieren, die an 
     3. Erweitern Sie das Element **VendTable**, erweitern Sie die Liste der 1:n-Beziehungen für die Datenquelle VendTable (das Element **\<Relations**), und wählen Sie das Element **VendTrans.VendTable\_AccountNum** aus.
     4. Wählen Sie **Cache** aus.
 
-    ![Zwischenspeicherungseinstellung, um doppelte Aufrufe zu verhindern](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
+    ![Zwischenspeicherungseinstellung, um doppelte Aufrufe zu verhindern.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
 
 2. Gehen Sie folgendermaßen vor, um die Datenquelle LedgerTransTypeList in den Bereich der Datenquelle VendTable zu bringen.
 
@@ -274,7 +274,7 @@ Es kann außerdem hilfreich sein, die Anzahl von Aufrufen zu reduzieren, die an 
     3. Wählen Sie das Element **VendTable.\$TransType** aus.
     4. Wählen Sie **Cache** aus.
 
-    ![Zwischenspeicherungseinstellung für das Feld $TransType](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
+    ![Zwischenspeicherungseinstellung für das Feld $TransType.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
 
 4. Gehen Sie folgendermaßen vor, um das Feld **\$TransTypeRecord** zu ändern, sodass es damit beginnt, das zwischengespeicherte Feld **\$TransType** zu verwenden:
 
@@ -329,19 +329,19 @@ Wiederholen Sie die Schritte im Abschnitt [Verwenden der Leistungsnachverfolgung
 
 Beachten Sie, dass die Regulierungen, die Sie an der Modellzuordnung vorgenommen haben, doppelte Abfragen an eine Datenbank beseitigt haben. Die Anzahl der Aufrufe an Datenbanktabellen und Datenquellen für diese Modellzuordnung ist auch reduziert worden. Daher wurde die Leistung der gesamten EB-Lösung verbessert.
 
-![Nachverfolgungsinformationen für die VendTable-Datenquelle auf der Seite Modellzuordnungsdesigner in RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
+![Nachverfolgungsinformationen für die VendTable-Datenquelle auf der Seite Modellzuordnungsdesigner in RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
 
 In den Nachverfolgungsinformationen gibt der Wert **\[12\]** für die Datenquelle VendTable an, dass diese Datenquelle 12 Mal aufgerufen wurde. Der Wert **\[Q:6\]** gibt an, dass sechs Aufrufe in Datenbankaufrufe an die Tabelle VendTable übersetzt wurden. Der Wert **\[C:6\]** gibt an, dass die Datensätze, die aus der Datenbank abgerufen wurden, zwischengespeichert wurden, und sechs weitere Aufrufe wurden mithilfe des Cache verarbeitet.
 
 Beachten Sie, dass die Anzahl der Aufrufe an die LedgerTransTypeList-Datenquelle von 9.027 auf 240 verringert wurde.
 
-![Nachverfolgungsinformationen für die LedgerTransTypeList-Datenquelle auf der Seite Modellzuordnungsdesigner in RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
+![Nachverfolgungsinformationen für die LedgerTransTypeList-Datenquelle auf der Seite Modellzuordnungsdesigner in RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
 
 ## <a name="review-the-execution-trace-in-the-application"></a>Wiederholen Sie die Ausführungsablaufverfolgung in der Anwendung
 
 Neben RCS bieten manche Versionen möglicherweise Funktionen für die Funktionalität eines EB-Framework-Designers. Diese Versionen von haben eine Option **Entwurfsmodus aktivieren**, die aktiviert werden kann. Sie können diese Option unter der Registerkarte **Allgemein** der Seite **Elektronische Berichterstellungsparameter** finden, die Sie vom Arbeitsbereich **Elektronische Berichterstellung** aus öffnen können.
 
-![Aktivieren Sie die Entwurfsmodusoption auf der elektronischen Berichterstellungsparameterseite](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
+![Aktivieren Sie die Entwurfsmodusoption auf der elektronischen Berichterstellungsparameterseite.](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
 
 Wenn Sie eine dieser Versionen verwenden, können Sie die Details von generierten Leistungsnachverfolgungen direkt in der Anwendung analysieren. Sie müssen sie nicht aus der Anwendung exportieren und nach RCS importieren.
 
@@ -359,7 +359,7 @@ Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format
 
 Beachten Sie, dass der Webbrowser eine ZIP-Datei zum Herunterladen anbietet. Diese Datei beinhaltet die Leistungsnachverfolgung im PerfView-Format. Sie können dann das PerfView-Leistungsanalysetool verwenden, um die Details der EB-Formatausführung zu analysieren.
 
-![Informationen zur Leistungsnachverfolgung im PerfView-Format](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Informationen zur Leistungsnachverfolgung im PerfView-Format.](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Nutzen Sie externe Tools, um eine Ausführungsablaufverfolgung zu prüfen, die Datenbankabfragen enthält
 
@@ -375,7 +375,7 @@ Aufgrund der Verbesserungen, die vorgenommen wurden, zeigt die Leistungsablaufve
     - Legen Sie die Option **Sammeln Sie Abfragestatistik** auf **Ja** fest.
     - Legen Sie die Option **Abfrage nachverfolgen** auf **Ja** fest.
 
-    ![Abschnitt zur Ablaufverfolgung der Ausführung, Benutzerparameter-Dialogfeld](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Abschnitt zur Ablaufverfolgung der Ausführung, Benutzerparameter-Dialogfeld.](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>Das EB-Format ausführen
 
@@ -383,7 +383,7 @@ Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format
 
 Beachten Sie, dass der Webbrowser eine ZIP-Datei zum Herunterladen anbietet. Diese Datei beinhaltet die Leistungsnachverfolgung im PerfView-Format. Sie können dann das PerfView-Leistungsanalysetool verwenden, um die Details der EB-Formatausführung zu analysieren. Diese Ablaufverfolgung umfasst jetzt die Details von SQL-Datenbankzugriff bei der Ausführung des ER-Formats.
 
-![Verfolgt die Informationen für das ausgeführte ER-Format in PerfView nach](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+![Verfolgt die Informationen für das ausgeführte ER-Format in PerfView nach.](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

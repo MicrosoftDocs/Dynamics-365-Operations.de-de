@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 424917f98ec7c4c044fb5cdae78133d1529aefd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894123"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348163"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Angeben eines benutzerdefinierten Speicherorts für generierte Dokumente
 
@@ -39,7 +39,7 @@ Sie müssen zudem Zugriff auf die Entwicklungsumgebung für diese Topologie habe
 
 In der aktuellen Topologie [erstellen Sie ein neues ER-Format](tasks/er-format-configuration-2016-11.md), um Dokumente zu generieren, für die Sie einen benutzerdefinierten Speicherort hinzuzufügen möchten. Alternativ [importieren Sie ein vorhandenes ER-Format in diese Topologie](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Formatdesignerseite](media/er-extend-file-storages-format.png)
+![Formatdesignerseite.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > Das ER-Format, das Sie erstellen oder importieren, muss mindestens eines der folgenden Formatelemente enthalten:
@@ -58,7 +58,7 @@ Um festzulegen, wie Dokumente, die von einem ER-Format erzeugt werden, weitergel
 3. Geben Sie im Feld **Klasse** die Option **Datei zuordnen** an.
 4. Geben Sie im Feld **Gruppe** die Option **Datei** an.
 
-![Seite „Dokumenttypen”](media/er-extend-file-storages-document-type.png)
+![Seite „Dokumenttypen“.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Dokumenttypen sind unternehmensspezifisch Zur Verwendung eines ER-Formats mit einem konfigurierten Ziel in mehreren Unternehmen müssen Sie einen separaten Dokumenttyp für jedes Unternehmen konfigurieren.
@@ -113,14 +113,14 @@ Das Ereignis **AttachingFile()** wird ausgelöst, wenn die folgenden ER-Ziele ve
 - **Archiv** – Wenn das Ziel verwendet wird, wird ein neuer Datensatz für das ER-Format, das ausgeführt wird, in der ERFormatMappingRunJobTable-Tabelle erstellt. Das Feld **Archiviert** in diesem Datensatz wird auf **Falsch** festgelegt. Wenn das ER-Format erfolgreich ausgeführt wird, wird das generierte Dokument an diesen Datensatz angefügt, und das Ereignis **AttachingFile()** wird verwendet. Der Dokumenttyp, der in diesem ER-Ziel ausgewählt wird, bestimmt den Speicherort für die angefügte Datei (Microsoft Azure-Speicher oder ein Microsoft SharePoint-Ordner).
 - **Einzelvorgangsarchiv** – Wenn dieses Ziel verwendet wird, wird ein neuer Datensatz für das ER-Formular, das ausgeführt wird, in der ERFormatMappingRunJobTable-Tabelle erstellt. Das Feld **Archiviert** in diesem Datensatz wird auf **Wahr** festgelegt. Wenn das ER-Format erfolgreich ausgeführt wird, wird das generierte Dokument an diesen Datensatz angefügt, und das Ereignis **AttachingFile()** wird verwendet. Der Dokumenttyp, der in den ER-Parametern konfiguriert wird, bestimmt den Speicherort für die angefügte Datei (Azure-Speicher oder ein SharePoint-Ordner).
 
-![Parameterseite der elektronischen Berichterstellung](media/er-extend-file-storages-parameters.png)
+![Parameterseite der elektronischen Berichterstellung.](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Das Ziel einer elektronischen Berichterstellung konfigurieren
 
 1. Konfigurieren Sie das archivierte Ziel für eines der zuvor genannten Elemente (Datei, Ordner, Merger-Programm oder Anhang) des ER-Formats, das von Ihnen erstelltoder importiert wurde. Eine Anleitung finden Sie unter [ER-Konfigurationsziele](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Verwenden Sie den Dokumenttyp, den Sie zuvor für das konfigurierte Ziel hinzugefügt haben. (Im Beispiel in diesem Thema lautet der Dokumenttyp **FileX**.)
 
-![Dialogfeld" Zieleinstellungen"](media/er-extend-file-storages-destination.png)
+![Dialogfeld „Zieleinstellungen“.](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Quellcode ändern
 
@@ -166,7 +166,7 @@ Das Ereignis **AttachingFile()** wird ausgelöst, wenn die folgenden ER-Ziele ve
 ## <a name="run-the-er-format-that-you-created-or-imported"></a>Ausführen des erstellten oder importierten ER-Formats
 
 1. Führen Sie das ER-Format aus, das von Ihnen erstellt oder importiert wurde.
-2. Wechseln Sie zu **Organisationsverwaltung \>Elektronische Berichterstellung \> Einzelvorgänge für elektronische Berichterstellung**. Suchen Sie den Datensatz, der für diesen Ausführungseinzelvorgang erstellt wurde, und dem die generierte Datei angehängt wurde.
+2. Wechseln Sie zu **Organisationsverwaltung \> Elektronische Berichterstellung \> Einzelvorgänge für elektronische Berichterstellung**. Suchen Sie den Datensatz, der für diesen Ausführungseinzelvorgang erstellt wurde, und dem die generierte Datei angehängt wurde.
 3. Untersuchen Sie den lokalen **C:\\0**-Ordner, um dieselbe generierte Datei zu finden.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

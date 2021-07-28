@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 5a18fed2eac4c120dca20a1d7797d047639275b9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 70904ee716aabd019210e92895a894810bde27fb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750593"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346519"
 ---
 # <a name="switch-between-vendor-designs"></a>Wechsel zwischen Kreditorendesigns
 
@@ -48,14 +48,14 @@ Um neue Workflowprozesse mithilfe der Workflowprozessvorlagen zu erstellen, befo
 
 1. Erstellen Sie einen Workflowprozess für die Tabelle **Lieferant** und wählen Sie die Workflowprozessvorlage **Lieferanten in der Kontotabelle erstellen** aus. Wählen Sie dann **OK** aus. Dieser Workflow verarbeitet das Lieferantenerstellungsszenario für die Tabelle **Konto**.
 
-    ![Workflowprozess „Lieferanten in der Kontotabelle erstellen“](media/create_process.png)
+    ![Workflowprozess „Lieferanten in der Kontotabelle erstellen“.](media/create_process.png)
 
 2. Erstellen Sie einen Workflowprozess für die Tabelle **Lieferant** und wählen Sie die Workflowprozessvorlage **Lieferanten in der Kontotabelle aktualisieren** aus. Wählen Sie dann **OK** aus. Dieser Workflow verarbeitet das Lieferantenaktualisierungsszenario für die Tabelle **Konto**.
 3. Erstellen Sie einen Workflowprozess für die Tabelle **Konto** und wählen Sie die Workflowprozessvorlage **Lieferanten in der Lieferantentabelle erstellen** aus.
 4. Erstellen Sie einen Workflowprozess für die Tabelle **Konto** und wählen Sie die Workflowprozessvorlage **Lieferanten in der Lieferantentabelle aktualisieren** aus.
 5. Sie können die Workflow entweder als Echtzeit- oder Hintergrundworkflows je nach Ihren Anforderungen konfigurieren. Wählen Sie **In einen Hintergrundworkflow konvertieren** aus, um einen Workflow als Hintergrundworkflow zu konfigurieren.
 
-    ![Schaltfläche „In einen Hintergrundworkflow konvertieren“](media/background_workflow.png)
+    ![Schaltfläche „In einen Hintergrundworkflow konvertieren“.](media/background_workflow.png)
 
 6. Aktivieren Sie die Workflows, die Sie für die Tabellen **Konto** und **Lieferant** erstellt haben, um die Tabelle **Konto** für das Speichern von Informationen vom Typ **Organisation** zu verwenden.
 

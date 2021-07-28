@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2b26e31748f97603b0b175f79a8daae2650261d7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893275"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345887"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Entwerfen von EB-Konfigurationen, um Zeichen von Bytereihenfolge-Marken in generierten Dateien zu unterdrücken
 
@@ -29,14 +29,14 @@ Sie können eine [EB-](general-electronic-reporting.md)[Lösung](er-quick-start1
 > [!NOTE]
 > Wenn das Format einen falschen Codierungsnamen enthält, wird ein Fehler ausgegeben, wenn Sie Ihre Änderungen an den Einstellungen des Formats speichern.
 
-![Hinzufügen eines Stammelements auf der Seite „Formatdesigner“](./media/er-suppress-bom-characters-image1.gif)
+![Hinzufügen eines Stammelements auf der Seite „Formatdesigner“.](./media/er-suppress-bom-characters-image1.gif)
 
 Wenn Sie **UTF-8**, **UTF-16** oder **UTF-32** als Codierung angeben, wird die Option **Zeichen von Bytereihenfolge-Marken unterdrücken** verfügbar. Setzen Sie diese Option auf **Ja**, um [Zeichen von Bytereihenfolge-Marken](/globalization/encoding/byte-order-mark) in ausgehenden Dateien zu unterdrücken, die zur Laufzeit generiert werden, wenn das bearbeitbare ER-Format ausgeführt wird.
 
 > [!NOTE]
 > Wenn Sie das Feld **Codierung** leer lassen, wird die Standardcodierung **UTF-8** verwendet.
 
-![Festlegen der Option „Zeichen von Bytereihenfolge-Marken unterdrücken“ auf der Seite „Format-Designer“](./media/er-suppress-bom-characters-image2.gif)
+![Festlegen der Option „Stücklistenzeichen unterdrücken“ auf der Seite „Formatdesigner“.](./media/er-suppress-bom-characters-image2.gif)
 
 Führen Sie die entsprechenden Schritte aus, um die Funktionalität zur Laufzeit zu überprüfen. Führen Sie beispielsweise die Schritte im Thema [Ausführung von XML-Elementen in ER-Formaten verzögern](er-defer-xml-element.md) aus. Nachdem Sie die Schritte im Abschnitt [Ändern des Formats, sodass die Berechnung auf der generierten Ausgabe basiert](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) dieses Themas abgeschlossen haben, befolgen Sie diese zusätzlichen Schritte.
 
@@ -59,7 +59,7 @@ Führen Sie die entsprechenden Schritte aus, um die Funktionalität zur Laufzeit
 
     Der erste Unterschied, den Sie bemerken werden, liegt in der Dateikopfzeile. Die Datei „SampleXmlReport.xml“ enthält ein Zeichen von Bytereihenfolge-Marke, die Datei „SampleXmlReport(1).xml“ nicht.
 
-    ![Vergleichen der generierten Dateien in einem Dienstprogramm zum Dateivergleich](./media/er-suppress-bom-characters-image3.png)
+    ![Vergleichen der generierten Dateien in einem Dienstprogramm zum Dateivergleich.](./media/er-suppress-bom-characters-image3.png)
 
 ## <a name="see-also"></a>Siehe auch
 

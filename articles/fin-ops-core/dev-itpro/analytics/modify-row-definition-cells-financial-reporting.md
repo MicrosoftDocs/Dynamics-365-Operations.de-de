@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c3827c5cff009453c820e70f00bfa4f36d78973f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3bf1c8081eea86fd14600174d843447b727d0226
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755251"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347947"
 ---
 # <a name="modify-row-definition-cells"></a>Ändern von Zeilendefinitionszellen
 
@@ -174,7 +174,7 @@ In der Spalte **Formatcode** in einer Zeilendefinition wird Formatierung mit den
 
 Im folgenden Beispiel möchte ein Benutzer die Überschrift und die Unterstriche in der Zeile **Bargeld gesamt** des Berichts nicht drucken, da es in keiner der Kassenkonten Aktivitäten gab. Daher gibt der Benutzer in Zeile 220 (die, wie der Formatcode **---** angibt, eine Formatierungszeile ist) in der Zelle **Verwandte Formeln/Zeilen/Einheiten** den Wert **250** ein. Dies ist der Zeilencode der Betragszeile, die der Benutzer unterdrücken möchte.
 
-[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition.](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>Auswählen der Basiszeile für eine Spaltenberechnung
 In der relationalen Berichterstellung weisen Sie eine oder mehrere Basiszeilen der Zeilendefinition zu, indem Sie den Formatcode **CBR** (Basiszeile ändern) verwenden. Von einer Berechnung in der Spaltendefinition wird dann auf eine Basiszeile verwiesen. Nachfolgend einige typische Beispiele für ÄBZ-Berechnungen:
@@ -399,7 +399,7 @@ Die Zelle **Mit Finanzdimensionen verknüpfen** enthält Verknüpfungen zu den F
 2. Doppelklicken Sie auf eine Zelle in der Spalte **Verknüpfen mit Finanzdimensionen**.
 3. Doppelklicken Sie im Dialogfeld **Dimensionen** auf eine Zelle unter dem Dimensionsnamen.
 4. Wählen Sie im Dialogfeld für die Dimension **Einzelwert oder Bereich** aus.
-5. Geben Sie im Feld **Von** die erste Dimension ein oder klicken Sie auf ![Durchsuchen](media/browse.gif "Durchsuchen"), um nach verfügbaren Dimensionen zu suchen. Um einen Bereich von Dimensionen eingeben, geben Sie die Enddimension im Feld **Bis** ein.
+5. Geben Sie im Feld **Von** die Anfangsdimension ein oder klicken Sie auf ![Durchsuchen](media/browse.gif "Durchsuchen"), um nach verfügbaren Dimensionen zu suchen. Um einen Bereich von Dimensionen eingeben, geben Sie die Enddimension im Feld **Bis** ein.
 6. Klicken Sie auf **OK**, um das Dialogfeld für die Dimension zu schließen. Im Dialogfeld **Dimensionen** wird die aktualisierte Dimension oder der Bereich angezeigt.
 7. Klicken Sie auf **OK**, um das Dialogfelds **Dimensionen** zu schließen.
 

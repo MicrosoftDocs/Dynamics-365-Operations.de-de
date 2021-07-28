@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52aba53b5323a9c6c4331cd8de7e932bb9c3547e
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: bb7844a009bc35f7151827b8e675cb39f71459fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893200"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345737"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Den Lebenszyklus der elektronischen Berichterstellungskonfiguration (ER) verwalten
 
@@ -80,7 +80,7 @@ Bei den folgenden EB-bezogenen Gründen empfehlen wir, Ihre EB-Konfigurationen i
 
 EB-Konfigurationen, die in der Testumgebung entworfene wurden, können in die Testumgebung [hochgeladen](#data-persistence-consideration) werden, um eine Konfigurationsauswertung (korrekte Prozessintegration, Korrektheit der Ergebnisse, Leistung) vorzunehmen und das Qualitätsmanagement (Korrektheit der Rollen getriebener Zugriffsrechts, Aufgabentrennung usw.) sicherzustellen. Die Funktionen, die den EB-Konfigurationsaustausch ermöglichen, können zu diesem Zweck verwendet werden. Nachgewiesene EB-Konfigurationen können außerdem entweder zu LCS hochgeladen werden, um sie mit Dienstabonnenten zu teilen, oder in die Produktionsumgebung für den internen Gebrauch [importiert](#data-persistence-consideration) werden.
 
-![EB-Konfiguration Lebenszyklus](./media/ger-configuration-lifecycle.png)
+![EB-Konfigurationslebenszyklus.](./media/ger-configuration-lifecycle.png)
 
 ## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" />Berücksichtigung der Datenpersistenz
 

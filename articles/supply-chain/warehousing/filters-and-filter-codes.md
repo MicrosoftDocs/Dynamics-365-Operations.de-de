@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: c3648a2d9df300ecd0c26a12db8093babb3db48f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c5574efeb1dee372a8ecf8ddb1d1710f63b73a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838249"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345233"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Produktfilter für Lagertransaktionen konfigurieren
 
@@ -46,11 +46,11 @@ Produktfilter bieten bis zu 10 Merkmalen von **Filtertiteln**, bei denen es sich
 1. Wählen Sie im Feld **Filtertitel** einen Wert aus.
 1. Geben Sie im Feld **Filtercode** einen Wert ein.
 
-    ![Einrichten eines Produktfilters](media/Product_Filters10.png "Einrichten eines Produktfilters")
+    ![Einrichten eines Produktfilters.](media/Product_Filters10.png "Einrichten eines Produktfilters")
 
 1. Geben Sie im Feld **Beschreibung** einen Namen für den Code ein. Beispielsweise könnte *Code 2* Kreditoren darstellen. Anschließend können Sie einen Produktfilter für einen bestimmten Kreditor oder eine bestimmte Gruppe von Kreditoren erstellen. Weitere Informationen finden Sie im Abschnitt [Einrichten von Kreditorenfiltercodes](#vendor-product-filters) weiter unten in diesem Thema.
 
-    ![Produktfilter einrichten](media/Product_Filters.png "Produktfilter einrichten")
+    ![Produktfilter einrichten.](media/Product_Filters.png "Produktfilter einrichten")
 
 ## <a name="set-up-product-filter-groups"></a>Produktfiltergruppen einrichten
 
@@ -69,7 +69,7 @@ Gehen Sie zum Einrichten von Filtergruppen folgendermaßen vor.
 1. In dem Feld **Artikelgruppe** wählen Sie die Artikelgruppe aus, auf die der Produktfilter angewendet werden soll.
 1. In den Feldern **Code 1** bis **Code 10** Wählen Sie die Filtercodes aus, die nach Bedarf in die Gruppe aufgenommen werden sollen.
 
-    ![Artikelgruppe](media/ProdFilterGroup.png "Artikelgruppe")
+    ![Artikelgruppe.](media/ProdFilterGroup.png "Artikelgruppe")
 
 > [!NOTE]
 > Wenn Sie eine Fehlermeldung erhalten, wenn Sie die Seite schließen, fehlt möglicherweise eine Codeeinstellung. Auf der Seite **Artikelgruppen** können Sie die Codes für eine Artikelgruppe obligatorisch machen, indem Sie die Kontrollkästchen **Filtercode 1 für Artikelgruppe zuweisen**, **Filtercode 2 für Artikelgruppe zuweisen** usw. aktivieren.
@@ -88,7 +88,7 @@ Um Filtercodes für Artikelgruppen einzurichten, führen Sie folgende Schritte a
 
     Um ein freigegebenes Produkt zu aktualisieren, öffnen Sie dessen Seite **Details für freigegebene Produkte**, und wählen Sie dann im Aktionsbereich die Option **Bearbeiten** aus. Die Filter, die den Codes zugeordnet sind, werden dann im Inforegister **Lagerort** verfügbar.
 
-    ![Artikelgruppen](media/ItemGroup10.png "Artikelgruppen")
+    ![Artikelgruppen.](media/ItemGroup10.png "Artikelgruppen")
 
 1. In dem Abschnitt **Artikelgruppenfilter** aktivieren Sie die Kontrollkästchen für die Filter, die übereinstimmen müssen, damit die Filtergruppe die Standardfiltergruppe für einen Artikel ist.
 

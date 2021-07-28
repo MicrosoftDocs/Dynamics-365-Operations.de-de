@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 37a82a2bf9fc73b81e5a61b120e7bed73b8c4521
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825181"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346129"
 ---
 # <a name="subcontracting"></a>Fremdarbeit
 
@@ -39,9 +39,9 @@ In der HQUS-juristischen Person sind Spitzenlautsprecher hergestellt. Während d
 
 Die folgende Abbildung zeigt die drei Arbeitsgängen und das Material an, das sie brauchen.
 
-![Vormontage-, Beschichtungs- und Endarbeitsgänge und das Material, das sie verbrauchen](./media/subcontract01_operations-materials.png)
+![Vormontage-, Beschichtungs- und Endarbeitsgänge und das Material, das sie verbrauchen.](./media/subcontract01_operations-materials.png)
 
-## <a name="setup"></a>Einrichten
+## <a name="setup"></a>Einstellung
 
 Damit Sie die exemplarischen Vorgehensweise beginnen können, müssen Sie die Daten einrichten.
 
@@ -52,41 +52,41 @@ Diese Verfahren führt Sie durch das Einrichten des freigegebenen Produkts D8100
 1. Wählen Sie **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**, um die Seite **Details für freigegebene Produkte** zu öffnen.
 2. Im Schnellfilterfeld geben Sie **D8100** ein, um das vorhandene freigegebene Produkt zu suchen.
 
-    ![Filter für D8100 freigegebenes Produkt auf der Seite der Details für freigegebene Produkte](./media/subcontract02_filtering-released-products.png)
+    ![Filter für D8100 freigegebenes Produkt auf der Seite der Details für freigegebene Produkte.](./media/subcontract02_filtering-released-products.png)
 
 3. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Entwickler**, wählen Sie **Arbeitsplan**, um die Seite **Arbeitsplan** zu öffnen.
 
     Die Seite **Arbeitsplan** enthält die acht Arbeitsplanversionen für D8100 freigegebenes Produkt. Die acht Arbeitsplanversionen werden auf vier Arbeitsplänen auf Standort 1 und 5. Standort aufgeteilt. Arbeitsplan 000400 wird für die Nachkalkulation verwendet, Arbeitsplan 00041 wird verwendet, wenn der Beschichtungsarbeitsgang ein interner Arbeitsgang und Arbeitsplan 00042 wird verwendet, wenn der Beschichtungsarbeitsgang eine externe Verarbeitung ist.
 
-    ![Acht Arbeitsplanversionen auf der Arbeitsplanseite](./media/subcontract03_route-page.png)
+    ![Acht Arbeitsplanversionen auf der Arbeitsplanseite.](./media/subcontract03_route-page.png)
 
 4. Im oberen Bereich im Raster **Versionen**, wählen Sie **00042** Arbeitsplanversion für Standort **5** aus.
 5. Im unteren Bereich auf der Registerkarte **Überblick**, Auswahloperation **20** (**Cbnt CtSc**) im Raster.
 
-    ![Arbeitsgang 20 für Arbeitsplanversion 00042 für den Standort 5 ausgewählt.](./media/subcontract04_route-version-operation.png)
+    ![Arbeitsgang 20 für Arbeitsplanversion 00042 für den Standort 5 ausgewählt.](./media/subcontract04_route-version-operation.png)
 
 6. Wählen Sie die Registerkarte **Allgemein**.
 
     Beachten Sie, dass das Feld Feld **Arbeitsplantyp** auf **Lieferant** festgelegt ist. Dieser Wert gibt an, dass Arbeitsgang 20 (Cbnt CtSc) ein geregelter Arbeitsgang ist.
 
-    ![Führen Sie den Feldtyp auf den Lieferant in der Registerkarte "Allgemeines"](./media/subcontract05_general-tab.png)
+    ![Führen Sie den Feldtyp auf den Lieferant in der Registerkarte „Allgemeines“.](./media/subcontract05_general-tab.png)
 
 7. Wählen Sie die Registerkarte **Ressourcenanforderung**.
 
     Funktionen werden verwendet, um eine zutreffender Ressource bei der Produktionsplanung zu finden. Für Arbeitsgang 20 (Cbnt CtSc) beachten Sie, dass eine Ressource zwei Funktionen erfordert, nämlich **Beschichten** und **Überzogene Gehäuse**.
 
-    ![Beschichten und überzogene Gehäusefunktionen auf der Ressourcenanforderungsregisterkarte](./media/subcontract06_resource-requirements-tab.png)
+    ![Beschichten und überzogene Gehäusefunktionen auf der Ressourcenanforderungsregisterkarte.](./media/subcontract06_resource-requirements-tab.png)
 
 8. Wählen Sie **Anwendbare Ressourcen**, um das Dialogfeld **Anwendbare Ressourcen** zu öffnen.
 
     Drei Ressourcen werden gesucht, die mit den Ressourcenanforderungen für den Arbeitsgang übereinstimmen Beachten Sie, dass Ressource 8851 und 8852 vom Typ **Kreditor** sind.
 
-    ![Drei entsprechende Ressourcen im Dialogfeld Anwendbare Ressourcen](./media/subcontract07_applicable-resources-dialog.png)
+    ![Drei entsprechende Ressourcen im Dialogfeld „Anwendbare Ressourcen“.](./media/subcontract07_applicable-resources-dialog.png)
 
 9. Wählen Sie **OK**, um das Dialogfeld **Anwendbare Ressourcen** zu schließen und zur Seite **Arbeitsplan** zurückzukehren.
 10. Schließen Sie die Seite **Arbeitsplan**, um zur Seite **Details für freigegebene Produkte** zurückzukehren.
 
-    ![Seite für freigegebene Produkte](./media/subcontract08_released-product-details-page.png)
+    ![Seite für freigegebene Produkte.](./media/subcontract08_released-product-details-page.png)
 
 11. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Entwickler**, wählen Sie **Stücklisten-Versionen**, um die Seite **Stücklisten-Versionen** zu öffnen.
 
@@ -94,7 +94,7 @@ Diese Verfahren führt Sie durch das Einrichten des freigegebenen Produkts D8100
 
     Beachten Sie, dass Artikel S8050 ein Produkt vom Artikeltyp **Dienstleistung** ist. Dieser Artikel stellt die Fremdarbeit dar.
 
-    ![Vier Stücklistenversionen auf der Stücklistenversionsseite](./media/subcontract09_bom-versions-page.png)
+    ![Vier Stücklistenversionen auf der Stücklistenversionsseite.](./media/subcontract09_bom-versions-page.png)
 
 12. Auf dem Inforegister **Stücklistenpositionen** aktivieren Sie **Bearbeiten**, um das Dialogfeld **Stücklistenposition bearbeiten** zu öffnen.
 
@@ -102,7 +102,7 @@ Diese Verfahren führt Sie durch das Einrichten des freigegebenen Produkts D8100
 
     Beachten Sie, ob die Stücklistenposition mit dem Beschichtungsarbeitsgang durch die Arbeitsgangnummer verbunden ist (in diesem Fall 20).
 
-    ![Bearbeiten Sie das Stücklistenpositionsdialogfeld](./media/subcontract10_edit-bom-line-dialog.png)
+    ![Bearbeiten Sie das Stücklistenpositionsdialogfeld.](./media/subcontract10_edit-bom-line-dialog.png)
 
 ### <a name="create-a-password-for-warehouse-workers"></a>Erstellen Sie ein Kennwort für Lagerarbeiter
 
@@ -111,7 +111,7 @@ Sie müssen ein Kennwort für die Lagerarbeiter definieren, die das tragbare Ger
 1. Wählen Sie **Lagerortverwaltung \> Einstellungen \> Arbeitskraft**, um die Seite **Arbeitsbenutzer** zu öffnen.
 2. Auf dem Inforegister **Benutzer** aktivieren Sie die Zeile für Benutzer **51** aus.
 
-    ![Arbeitsbenutzer-Seite](./media/subcontract11_work-users-page.png)
+    ![Arbeitsbenutzer-Seite.](./media/subcontract11_work-users-page.png)
 
 3. **Kennwortzurücksetzung** auswählen.
 4. Wählen Sie in den Feldern **Kennwort** und **Kennwort bestätigen** und geben Sie **1** ein.
@@ -126,14 +126,14 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
 1. Wählen Sie **Produktionssteuerung \> Produktionsaufträge \> Alle Produktionsaufträge**, um die Seite **Alle Produktionsaufträge** zu öffnen.
 2. Klicken Sie im Aktivitätsbereich und wählen Sie **Neuer Produktionsauftrag**, um das Dialogfeld **Produktionsauftrag erstellen** zu öffnen.
 
-    ![Dialogfeld "Geplanten Produktionsauftrag erstellen".](./media/subcontract12_create-production-order-dialog.png)
+    ![Dialogfeld „Geplanten Produktionsauftrag erstellen“.](./media/subcontract12_create-production-order-dialog.png)
 
 3. Wählen Sie im Feld **Artikelnummer** die Option **D8100** aus.
 4. Das Feld "Lagerungsdimensionen" wird angezeigt, wenn Sie die Artikelnummer auswählen. Im Feld **Farbe** wählen Sie **Chrome** aus.
 
     Ein Meldungsfeld angezeigt wird, die fragt, ob die aktive Versionen für die Stückliste und den Arbeitsplan eingefügt werden sollen.
 
-    ![Meldungsfeld](./media/subcontract13_message-box.png)
+    ![Meldungsfeld.](./media/subcontract13_message-box.png)
 
 5. Wählen Sie **Ja** aus. 
 
@@ -149,15 +149,15 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
     > [!NOTE]
     > Für die Stückliste und den Arbeitsplan wird Version 000042 verwendet, um die Beschichtung des Gehäuses für Lieferant US-801 zu regeln.
 
-    ![Werte festgelegt im Dialogfeld Produktionsauftrag](./media/subcontract14_create-production-order-dialog-set.png)
+    ![Werte festgelegt im Dialogfeld Produktionsauftrag.](./media/subcontract14_create-production-order-dialog-set.png)
 
 9. Wählen Sie **Erstellen**, um den Produktionsauftrag zu erstellen und zur Seite **Alle Produktionsaufträge** zurückzukehren.
 
-    ![Neuer Produktionsauftrag auf der Seite alle Produktionsaufträge](./media/subcontract15_new-production-order.png)
+    ![Neuer Produktionsauftrag auf der Seite alle Produktionsaufträge.](./media/subcontract15_new-production-order.png)
 
 10. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Produktionsauftrag** und wählen **Schätzung**, um das Dialogfeld **Schätzung** zu öffnen.
 
-    ![Dialogfeld Vorkalkulation](./media/subcontract16_estimate-dialog.png)
+    ![Dialogfeld Vorkalkulation.](./media/subcontract16_estimate-dialog.png)
 
 11. Wählen Sie **Ok**, um die Vorkalkulation zu bestätigen und kehren Sie zur Seite **Alle Produktionsaufträge** zurück.
 
@@ -168,7 +168,7 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
 
     Für Dienstleistungsartikel S8050 beachten Suem, dass es eine Referenz zur Bestellung gibt, die erstellt wurde, als der Produktionsauftrag vorkalkuliert wurde.
 
-    ![Produktionsauftrags-Stücklistenposition auf der Seite Stückliste](./media/subcontract17_production-order-bom-lines.png)
+    ![Produktionsauftrags-Stücklistenposition auf der Seite Stückliste.](./media/subcontract17_production-order-bom-lines.png)
 
 13. Schließen Sie die Seite **Stückliste**, um zur Seite **Alle Produktionsaufträge** zurückzukehren.
 14. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Zeitplan** und wählen **Aufträge planen**, um das Dialogfeld **Auftragsplanung** zu öffnen.
@@ -177,24 +177,24 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
     - Wählen Sie im Feld **Planungsrichtung** **Vorwärts ab Lieferdatum** aus.
     - Hier können Sie die Option **Begrenzte Kapazität** auf **Ja** festlegen.
 
-    ![Dialogfeld Feinterinierung](./media/subcontract18_job-scheduling-dialog.png)
+    ![Dialogfeld Feinterminierung.](./media/subcontract18_job-scheduling-dialog.png)
 
 16. Wählen Sie **OK**, um das Dialogfeld **Feinterminierung** zu schließen und zur Seite **Alle Produktionsaufträge** zurückzukehren.
 17. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Planung**, wählen Sie **Gantt**, um die Seite **Gantt-Diagramm - Ressourcenansicht** zu öffnen.
 
     Im Gantt-Diagramm wird eine visuelle Übersicht bereitgestellt, die zeigt, wie Produktions-Einzelvorgänge für die Ressourcen geplant werden. Beachten Sie, dass der externe Beschichtungsarbeitsgang aus drei Einzelvorgängen besteht: Ein Bearbeitungseinzelvorgänge, ein Abschluss und ein Wartezeiteinzelvorgang.
 
-    ![Gantt-Diagramm auf der Gantt-Diagramm-Ressourcenansichtsseite](./media/subcontract19_gantt-chart.png)
+    ![Gantt-Diagramm auf der Gantt-Diagramm-Ressourcenansichtsseite.](./media/subcontract19_gantt-chart.png)
 
 18. Schließen Sie die Seite **Gantt-Diagramm - Ressourcenansicht**, um zur Seite **Alle Produktionsaufträge** zurückzukehren.
 19. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Produktionsauftrag** und wählen **Freigabe**, um das Dialogfeld **Freigabe** zu öffnen.
 
-    ![Dialogfeld Freigabe](./media/subcontract20_release-dialog.png)
+    ![Dialogfeld Freigabe.](./media/subcontract20_release-dialog.png)
 
 20. Klicken Sie auf **OK**, um das Dialogfeld **Freigabe** zu schließen.
 21. Wählen Sie **Produktionssteuerung \> Periodische Aufgaben \> Freigabe Lagerort \> Automatische Version der Stückliste und der Formelpositionen**, um das Dialogfeld **Automatische Version der Stückliste und der Formelpositionen** zu öffnen.
 
-    ![Dialogfeld automatische Freigabe von Stücklisten- und Formelpositionen](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
+    ![Dialogfeld automatische Freigabe von Stücklisten- und Formelpositionen.](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
 
 22. Wählen Sie **OK** aus, um die automatische Freigabe des Stücklisten- und Formelpositionseinzelvorgangs auszuführen.
 
@@ -206,7 +206,7 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
 
     Beachten Sie, dass die Seite zwei Sätze Arbeit für Rohmaterialentnahmen anzeigt. Die erste Arbeit ist für Material M8100 und M8101. Deise Materialien werden auch vom Vorgang 10 verbraucht. Die zweite Arbeit ist für Material M8202 und M8250. Diese Materialien werden von Arbeitsgang 20 verbraucht, welcher ein geregelter Arbeitsgang ist.
 
-    ![Zwei Sätze Arbeit für Rohmaterialentnahmen auf der Seite Arbeit](./media/subcontract22_work-page.png)
+    ![Zwei Sätze Arbeit für Rohmaterialentnahmen auf der Seite Arbeit.](./media/subcontract22_work-page.png)
 
 26. Starten Sie die Warehouse Management Mobile App, um die Lagerortarbeit für Arbeitsgang 10 zu verarbeiten.
 
@@ -220,7 +220,7 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
     - Im **Von Arbeitsgangnr.** Feld wählen Sie **10**.
     - Im **Zu Arbeitsgangnr.** Feld wählen Sie **10**.
 
-    ![Werte festgelegt auf der Registerkarte 1 „Allgemeines“](./media/subcontract23_start-dialog.png)
+    ![Werte festgelegt auf der Registerkarte 1 „Allgemeines“.](./media/subcontract23_start-dialog.png)
 
 31. Wählen Sie **OK**, um das Dialogfeld **Start** zu schließen und zur Seite **Alle Produktionsaufträge** zurückzukehren.
 
@@ -238,7 +238,7 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
     - Geben Sie im Feld **Menge** den Wert **10** ein.
     - Wählen Sie im Feld **Kommissionierliste jetzt buchen** die Antwort **Nein** aus.
 
-    ![Werte festgelegt auf der Registerkarte 2 „Allgemeines“](./media/subcontract24_general-tab.png)
+    ![Werte festgelegt auf der Registerkarte 2 „Allgemeines“.](./media/subcontract24_general-tab.png)
 
 35. Wählen Sie **OK**, um das Dialogfeld **Start** zu schließen und zur Seite **Alle Produktionsaufträge** zurückzukehren.
 
@@ -247,57 +247,57 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
 36. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Ansicht**, wählen Sie **Kommissionierliste**, um die Seite **Kommissionierliste** zu öffnen.
 37. Wählen Sie die Kommissionierliste, die nicht gebucht wurde, und wählen Sie dann die Erfassungsnummer aus, um die Erfassungspositionen anzuzeigen.
 
-    ![Erfassungsposition auf der Seite Kommissionierliste](./media/subcontract25_picking-list.png)
+    ![Erfassungsposition auf der Seite Kommissionierliste.](./media/subcontract25_picking-list.png)
 
 38. Klicken Sie im Aktivitätsbereich **Drucken** \> wählen Sie **Kommissionierlistenbericht**, um das Dialogfeld **Kommissionierlistenbericht** zu öffnen.
 39. Hier können Sie die Option **Lieferscheinlayout verwenden** auf **Ja** festlegen.
 
-    ![Dialogfeld Kommissionierlistenbericht](./media/subcontract26_picking-list-report-dialog.png)
+    ![Dialogfeld Kommissionierlistenbericht.](./media/subcontract26_picking-list-report-dialog.png)
 
 40. Wählen Sie **OK**, um den **Kommissionierlisten**-Bericht zu erstellen.
 
     In diesem Fall wird ein Lieferschein des Kreditors aus der Produktionskommissionierlistenerfassung gedruckt. Der Lieferschein zeigt die Materialien an, die an den Kreditor gesendet werden, der den Beschichtungsarbeitsgang durchführt.
 
-    ![Bericht 'Kommissionierliste'](./media/subcontract27_picking-list-report.png)
+    ![Bericht „Kommissionierliste“.](./media/subcontract27_picking-list-report.png)
 
 41. Beenden Sie den Bericht **Kommissionierliste**, um zur Seite **Kommissionierliste** zurückzukehren.
 42. Im Aktivitätsbereich wählen Sie **Buchen**, um das Dialogfeld **Erfassung buchen** zu öffnen.
 
-    ![Dialogfeld Erfassung buchen](./media/subcontract28_post-journal-dialog.png)
+    ![Dialogfeld „Erfassung buchen“.](./media/subcontract28_post-journal-dialog.png)
 
 43. Klicken Sie auf **OK**, um das Dialogfeld **Erfassung buchen** zu schließen.
 44. Bestellpositionen öffnen.
 
-    ![Seite Bestellungen](./media/subcontract29_purchase-order-page.png)
+    ![Seite Bestellungen.](./media/subcontract29_purchase-order-page.png)
 
 45. Klicken Sie im Aktivitätsbereich auf der Registerkarte auf **Einkauf** und wählen Sie **Bestätigen**.
 46. Klicken Sie auf **Buchen**, um das Dialogfeld **Erfassung buchen** zu schließen.
 47. Wählen Sie **OK**, um das Dialogfeld **Erfassung buchen** zu schließen und zur Seite **Alle Bestellungen** zurückzukehren.
 48. Ändern Sie den Preis je Einheit von **33** in **40**.
 
-    ![Preis je Einheit auf der Bestellungsseite geändert](./media/subcontract30_unit-price.png)
+    ![Preis je Einheit auf der Bestellungsseite geändert.](./media/subcontract30_unit-price.png)
 
 49. Dient zur erneuten Bestätigung der Bestellung.
 50. Produktzugang.
 
-    ![Dialogfeld Buchen des Produktzugangs](./media/subcontract31_posting-product-receipt-dialog.png)
+    ![Dialogfeld Buchen des Produktzugangs.](./media/subcontract31_posting-product-receipt-dialog.png)
 
 51. Rechnung Bestellung
 52. Status des Abgleichs aktualisieren.
 
-    ![Seite Kreditorenrechnung](./media/subcontract32_vendor-invoice-page.png)
+    ![Seite Kreditorenrechnung.](./media/subcontract32_vendor-invoice-page.png)
 
 53. Fertigmeldung.
 
-    ![Dialogfeld Fertigmeldung](./media/subcontract33_report-as-finished-dialog.png)
+    ![Dialogfeld Fertigmeldung.](./media/subcontract33_report-as-finished-dialog.png)
 
 54. Beenden.
 
-    ![Dialogfeld beenden](./media/subcontract34_end-dialog.png)
+    ![Dialogfeld beenden.](./media/subcontract34_end-dialog.png)
 
 55. Kostenvergleich.
 
-    ![Diagramme Kostenvergleich](./media/subcontract35_cost-comparison-charts.png)
+    ![Diagramme Kostenvergleich.](./media/subcontract35_cost-comparison-charts.png)
 
 Fehlende Daten in Unternehmensdaten.
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12e9446c145752cd74fb71884fcabe9d4bd03c68
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4d0a298a8f782ae318971e99c03e864fa5a4ef88
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187697"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343649"
 ---
 # <a name="production-order-cost-analysis"></a>Kostenanalyse für Produktionsauftrag
 
@@ -41,12 +41,12 @@ Bei den Produktionsabweichungen handelt es sich um das Ergebnis des Vergleichs z
 
 Das folgende Diagramm zeigt die vier Abweichungen zur Erfassung der Differenz zwischen den tatsächlichen Kosten eines Produktionsauftrags und den berechneten Kosten aus dem Kostendatensatz des Artikels am Ende des Produktionsauftrags: 
 
-![Abweichungen, die Unterschiede bei einem abgeschlossenen Produktionsauftrag berücksichtigen](./media/control.jpg) 
+![Abweichungen, die Unterschiede bei einem abgeschlossenen Produktionsauftrag berücksichtigen.](./media/control.jpg) 
 
 Sie können Produktionsabweichungen analysieren, indem Sie die Seite **Abweichung** oder den Bericht **Produktionsabweichung** verwenden. Verwenden Sie die Anzeigeoptionen, um ausführliche Abweichungen nach Artikel und betrieblichen Ressourcen oder nach Kostengruppe anzuzeigen. Die Richtlinie für die Kostenaufschlüsselung in den Lagerparametern bestimmt, ob die Abweichungen nach Kostengruppe verfolgt werden. Sie können auch die Anzeigeoptionen **Einzeln**, **Mehrere** und **Summe** verwenden, um zusammengefasste Abweichungen anzuzeigen. Die Informationen zu detaillierten Abweichungen können helfen, die Quelle der einzelnen Abweichungen zu erkennen. Um Abweichungen vor dem Ende eines Produktionsauftrags vorhersagen zu können, analysieren Sie die ausführlichen Informationen des Berichts **Vor- und Nachkalkulation**.
 
 ## <a name="cost-analysis-for-current-production-orders"></a>Kostenanalyse für aktuelle Produktionsaufträge
-Separate Berichte enthalten Informationen zu den einzelnen Buchungstypen. Diese Berichte dienen zum Analysieren der Kosten für gemeldete Produktionsaktivitäten. Die Informationen werden ausschließlich für aktuelle Produktionsaufträge mit dem Status **Gestartet** oder  **Als fertig gemeldet** angezeigt.
+Separate Berichte enthalten Informationen zu den einzelnen Buchungstypen. Diese Berichte dienen zum Analysieren der Kosten für gemeldete Produktionsaktivitäten. Die Informationen werden ausschließlich für aktuelle Produktionsaufträge mit dem Status **Gestartet** oder **Als fertig gemeldet** angezeigt.
 
 -   **Material in Bearbeitung** − In diesem Bericht sind die Kommissionierlistenbuchungen aufgeführt, die für die aktuellen Produktionsaufträge ab dem angegebenen Buchungsdatum gemeldet wurden. Der Bericht gibt Aufschluss über die ausgegebene Menge der Komponente sowie über den Einstandsbetrag für die einzelnen Buchungen. Verwenden Sie die Auswahlkriterien für einen einzelnen Komponentenartikel. Sie können beispielsweise Informationen zur Ausgabemenge der Komponente für entsprechende Produktionsaufträge ausdrucken. Die Ausgabemenge wird nicht anhand der fertig gemeldeten Mengen des übergeordneten Artikels aktualisiert. Dadurch kann sich eine Überbewertung der Istmenge von Rohmaterialien ergeben.
 -   **Arbeit in Verarbeitung** − In diesem Bericht sind Arbeitsplanbuchungen (oder Einzelvorgangsbuchungen) aufgeführt, die für die aktuellen Produktionsaufträge ab dem angegebenen Buchungsdatum gemeldet wurden. Im Bericht werden die Stunden, der Betrag und die Menge angegeben (sowohl Gutmenge als auch Ausschussmenge) die für jede Buchung gemeldet werden. Er umfasst auch Informationen wie Vorgangsnummer, die Vorgangskennung und die betriebliche Ressource. In diesem Bericht werden auch Gesamtzeit und -betrag für alle Buchungen des Produktionsauftrags und die fertig gemeldete Menge angezeigt.

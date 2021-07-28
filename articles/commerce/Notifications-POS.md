@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7b28a33dff4af6bf2b97db825a5a8304213f3a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 57f5d23533c2fd17593648a15745fa770fc01dc4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796485"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345207"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Auftragsbenachrichtigungen in der Verkaufsstelle (POS) anzeigen
 
@@ -72,14 +72,14 @@ POS-Schaltflächen können jetzt eine Anzahl anzeigen, damit Arbeitskräfte einf
 
 Die folgende Abbildung zeigt die Inhaltseinstellungen, die im Schaltflächenrasterdesigner angezeigt werden.
 
-![Einstellungen für Live-Inhalte in der Schaltfläche Raster-Designer](./media/ButtonGridDesigner.png "Einstellungen für Live-Inhalte in der Schaltfläche Raster-Designer")
+![Einstellungen für Live-Inhalte in der Schaltfläche Raster-Designer.](./media/ButtonGridDesigner.png "Einstellungen für Live-Inhalte in der Schaltfläche Raster-Designer")
 
 Um die Benachrichtigungsanzahl auf einer Schaltfläche anzuzeigen, müssen Sie sicherstellen, dass das korrekte Bildschirmlayout aktualisiert wird. Um das Bildschirmlayout zu bestimmen, das vom POS verwendet wird, wählen Sie das Symbol **Einstellungen** in der oberen rechten Ecke aus und beachten Sie die **Bildschirmlayoutkennung** und die **Layoutlösung**. Wechseln Sie jetzt mithilfe des Edge-Browsers zur Seite **Bildschirmlayout**, suchen Sie die oben identifizierte **Bildschirmlayoutkennung** und **Layoutauflösung** und aktivieren Sie das Kontrollkästchen **Liveinhalt aktivieren**. Wechseln Sie zu **Einzelhandel und Handel \> Einzelhandel und Handel IT \> Vertriebsplan** und führen Sie den Einzelvorgang 1090 (Register) aus, um Layoutänderungen zu synchronisieren.
 
-![Suchen Sie das Bildschirmlayout, das vom POS verwendet wird](./media/Choose_screen_layout.png "Bildschirmlayouts suchen")
+![Suchen Sie das Bildschirmlayout, das vom POS verwendet wird.](./media/Choose_screen_layout.png "Bildschirmlayouts suchen")
 
 Die folgende Abbildung zeigt die Auswirkungen der Auswahl **Oben rechts** versus **Mitte** im Feld **Inhalts-Ausrichtung** für Schaltflächen für verschiedene Mengen an.
 
-![Liveinhalt auf POS-Schaltflächen](./media/ButtonsWithLiveContent.png "Liveinhalt auf POS-Schaltflächen")
+![Liveinhalt auf POS-Schaltflächen.](./media/ButtonsWithLiveContent.png "Liveinhalt auf POS-Schaltflächen")
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
