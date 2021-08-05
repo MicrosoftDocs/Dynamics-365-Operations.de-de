@@ -3,8 +3,10 @@
   items:
     - name: Neuerungen
       items:
-        - name: Welche Neuerungen oder Änderungen bietet Human Resources?
+        - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: "12.\_Juli\_2021"
+          href: hr-whats-new-2021-07-12.md
         - name: "22.\_Juni\_2021"
           href: hr-whats-new-2021-06-22.md
         - name: "20.\_Mai\_2021"
@@ -253,8 +255,10 @@
           href: hr-admin-teams-leave-app.md
         - name: Liveschaltung vorbereiten
           href: hr-admin-go-live-prepare.md
-        - name: FAQ live schalten
+        - name: Häufig gestellte Fragen zur Liveschaltung
           href: hr-admin-go-live-faq.md
+        - name: Häufig gestellte Fragen zur Zusammenführung der Infrastruktur von Human Resources
+          href: hr-infrastructure-merge-faq.md
         - name: Dokumentationsressourcen
           items:
             - name: Hilfesystem
@@ -585,7 +589,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
                     - name: Eine SubmitToWorkflow-Klasse erstellen
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Eine Workflowdokumenten-Klasse einem Workflowtyp zuordnen
+                    - name: Workflow-Dokumentenklasse einem Workflow-Typ zuordnen
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
                 - name: Bericht zu Workflowtypen
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
@@ -687,15 +691,17 @@
               href: hr-compensation-enroll-employees-fixed.md
             - name: Mitarbeiter in einen Plan mit variabler Vergütung aufnehmen
               href: hr-compensation-enroll-employees-variable.md
-            - name: Vergütungsprozess definieren und Ergebnisse berechnen
+            - name: Vergütungsprozess bestimmen und Ergebnisse berechnen
               href: hr-compensation-define-process.md
             - name: Vergütungspläne verarbeiten
               href: hr-compensation-process.md
+            - name: Mitarbeiter als zahlungsbereit kennzeichnen
+              href: hr-compensation-payroll.md
         - name: Vorteile verwalten
           items:
             - name: Vorteilsverwaltung
               items:
-                - name: Vorteilsverwaltung – Übersicht
+                - name: Übersicht über die Vorteilsverwaltung
                   href: hr-benefits-management-overview.md
                 - name: Arbeitsbereich „Vorteilsverwaltung“
                   href: hr-benefits-management-workspace.md
@@ -715,7 +721,7 @@
                       href: hr-benefits-setup-payment-frequencies.md
                     - name: Lebensereignistypen konfigurieren
                       href: hr-benefits-setup-life-event-types.md
-                    - name: Plantypen erstellen
+                    - name: Übersicht über den Plantyp
                       href: hr-benefits-setup-plan-types.md
                     - name: Ursachencodes einrichten
                       href: hr-benefits-setup-reason-codes.md
@@ -807,6 +813,8 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Team- und Unternehmenskalender anzeigen
               href: hr-employee-self-service-calendar.md
+            - name: Rolle des Abwesenheitsmanagers konfigurieren
+              href: hr-configure-absence-manager.md
             - name: Kauf- und Verkaufsurlaubsrichtlinien verwalten
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
             - name: Workflows zum Kaufen und Verkaufen von Urlaub erstellen

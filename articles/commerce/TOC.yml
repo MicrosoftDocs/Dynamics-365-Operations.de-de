@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: "Commerce\_10.0.19 (Juni\_2021)"
                       href: get-started/whats-new-commerce-10-0-19.md
-                    - name: "Commerce\_10.0.18 (Mai\_2021)"
-                      href: get-started/whats-new-commerce-10-0-18.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -208,7 +206,7 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
                 - name: Liveschaltung vorbereiten
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: FAQ live schalten
+                - name: Häufig gestellte Fragen zur Liveschaltung
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
                 - name: Serviceanforderung senden
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
@@ -898,8 +896,10 @@
                   href: upload-bulk-redirects.md
                 - name: B2C-Mandanten in Commerce einrichten
                   href: set-up-B2C-tenant.md
-                - name: Angepasste Seiten für die Benutzeranmeldung einrichten
+                - name: Benutzerdefinierte Seiten für Benutzeranmeldungen einrichten
                   href: custom-pages-user-logins.md
+                - name: Automatische Verknüpfung von Identitätsdatensätzen mit Kundenkonten aktivieren
+                  href: identity-record-linking.md
                 - name: Mehrere B2C-Mandanten in einer Commerce-Umgebung konfigurieren
                   href: configure-multi-B2C-tenants.md
                 - name: Domänen in Dynamics 365 Commerce
@@ -1022,6 +1022,8 @@
                   items:
                     - name: Übersicht über das Adventure Works-Design
                       href: adventure-works-theme.md
+                    - name: Adventure Works-Design installieren
+                      href: install-adventure-works.md
             - name: Digitale Anlagen verwalten
               items:
                 - name: Übersicht über die Verwaltung digitaler Anlagen

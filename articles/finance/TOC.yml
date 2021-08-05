@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: "Finance\_10.0.19 (Juni\_2021)"
                       href: get-started/whats-new-changed-10-0-19.md
-                    - name: "Finance\_10.0.18 (Mai\_2021)"
-                      href: get-started/whats-new-changed-10-0-17.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -186,7 +184,7 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/finance/toc.json
                 - name: Liveschaltung vorbereiten
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/finance/toc.json
-                - name: FAQ live schalten
+                - name: Häufig gestellte Fragen zur Liveschaltung
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Serviceanforderung senden
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
@@ -1566,9 +1564,11 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Bericht zu grenzüberschreitenden Dienstleistungen
                   href: localizations/emea-aut-cross-border-services-report.md
+                - name: Einkaufsaufgaben
+                  href: localizations/emea-aut-purchase-duties.md
             - name: Bahrain
               items:
-                - name: Bahrain – Übersicht
+                - name: Übersicht zu Bahrain
                   href: localizations/bahrain.md
                 - name: Rechnungslayout für Bahrain konfigurieren
                   href: localizations/emea-bhr-invoice-layout.md
@@ -1992,6 +1992,10 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: EU-Intrastat-Meldung generieren
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
+                    - name: Intrastat (Frankreich)
+                      href: localizations/emea-fra-intrastat.md
+                    - name: Intrastat (Italien)
+                      href: localizations/emea-ita-intrastat.md
                 - name: Lagererfassungsberichte
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Rechnungsabgangsfristen
@@ -2062,7 +2066,7 @@
                       href: localizations/emea-vat-register-transactions.md
                     - name: Steuerleistungsdatum (Datum des MwSt.-Registers)
                       href: localizations/emea-tax-point-date.md
-                    - name: MwSt.-Abrechnung
+                    - name: MwSt.-Meldung
                       href: localizations/emea-vat-reporting.md
                     - name: MwSt.-Erklärung erstellen und übermitteln
                       href: localizations/tasks/create-submit-vat-report.md
@@ -2968,13 +2972,19 @@
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
                 - name: 'Mehrwertsteuererklärung mit Registern (JPK_V7M, VDEK)'
                   href: localizations/emea-pol-vdek.md
+                - name: Auf JPK-V7M-Meldung vorbereiten
+                  href: localizations/emea-pol-vdek-setup.md
+                - name: JPK-V7M-Meldung
+                  href: localizations/emea-pol-vdek-reporting.md
+                - name: Informationen zu bestimmten Geschäftsszenarien im JPK-V7M-Bericht
+                  href: localizations/emea-pol-vdek-scenarios.md
             - name: Katar
               items:
-                - name: "Katar\_– Übersicht"
+                - name: Übersicht zu Katar
                   href: localizations/qatar.md
             - name: Russland
               items:
-                - name: Überblick über Russland
+                - name: Übersicht zu Russland
                   href: localizations/russia.md
                 - name: Hauptbuch
                   items:
@@ -3200,17 +3210,19 @@
                       href: localizations/rus-cash-flow-tax-registers.md
                     - name: Bewertete Ausgabenregister
                       href: localizations/rus-rated-expenses-registers.md
-                    - name: Verbindlichkeiten von Kreditorenkonten und Schuldenabschreibungen
+                    - name: 'Verbindlichkeiten von Kreditorenkonten, Steuerregister und Schuldenabschreibungen'
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
                     - name: Uneinbringliche Außenstandsrückstellungen für Debitoren
                       href: localizations/rus-bad-debts.md
+                    - name: Berechnung von Steuerguthaben- und Steuerverbindlichkeitsregistern
+                      href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
             - name: Saudi-Arabien
               items:
-                - name: Saudi-Arabien – Übersicht
+                - name: Übersicht zu Saudi-Arabien
                   href: localizations/saudi-arabia.md
                 - name: Mehrwertsteuer
                   href: localizations/apac-sau-sales-tax.md
-                - name: Zakat-Berichterstellung für Saudi-Arabien
+                - name: Zakat-Meldung für Saudi-Arabien
                   href: localizations/emea-sau-zakat-reporting.md
                 - name: Einer Lieferung Bankdokumentbelastungen zuordnen
                   href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
@@ -3424,7 +3436,7 @@
                   href: ../human-resources/hr-compensation-enroll-employees-fixed.md?toc=/dynamics365/finance/toc.json
                 - name: Mitarbeiter in einen Plan mit variabler Vergütung aufnehmen
                   href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
-                - name: Vergütungsprozess definieren und Ergebnisse berechnen
+                - name: Vergütungsprozess bestimmen und Ergebnisse berechnen
                   href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
                 - name: Vergütungspläne verarbeiten
                   href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
@@ -3997,6 +4009,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Berichte in Office-Formaten mit eingebetteten Bildern erstellen
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: 'Ein EB-Format entwerfen, um einen Bericht im Excel-Format mit eingebetteten Bildern in den Kopf- oder Fußzeilen einer Seite zu erstellen'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Erstellte XML-Dateien auf Grundlage von Dateigröße und Inhaltsmenge teilen
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: Stücklistenzeichen in generierten Dateien unterdrücken
@@ -4373,7 +4387,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/finance/toc.json
                     - name: Aufwendungsprüfer konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/finance/toc.json
-                    - name: Manuellen Entscheidungen konfigurieren
+                    - name: Manuelle Entscheidungen konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/finance/toc.json
                     - name: Bedingte Entscheidungen konfigurieren
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/finance/toc.json
@@ -4407,9 +4421,9 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/finance/toc.json
                     - name: Eine SubmitToWorkflow-Klasse erstellen
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Eine Workflow-Dokumentenklasse einem Workflow-Typ zuordnen
+                    - name: Workflow-Dokumentenklasse einem Workflow-Typ zuordnen
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/finance/toc.json
-                - name: Bericht zu Workflow-Typen
+                - name: Bericht zu Workflowtypen
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/finance/toc.json
                 - name: Workflow-FAQ
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/finance/toc.json

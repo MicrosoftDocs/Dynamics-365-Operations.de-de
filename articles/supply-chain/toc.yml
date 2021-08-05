@@ -76,8 +76,6 @@
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: "Supply Chain Management\_10.0.19 (Juni 2021)"
                       href: get-started/whats-new-scm-10-0-19.md
-                    - name: "Supply Chain Management\_10.0.18 (Mai 2021)"
-                      href: get-started/whats-new-scm-10-0-18.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -188,7 +186,7 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Liveschaltung vorbereiten
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
-                - name: FAQ live schalten
+                - name: Häufig gestellte Fragen zur Liveschaltung
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Serviceanforderung senden
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
@@ -276,7 +274,7 @@
                   href: ../finance/localizations/apac-ind-stock-transfer.md
             - name: Russland
               items:
-                - name: Überblick über Russland
+                - name: Übersicht zu Russland
                   href: ../finance/localizations/russia.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Bestand
                   items:
@@ -2001,9 +1999,7 @@
                   href: procurement/tasks/create-purchase-order-delivery-schedule.md
                 - name: Eine Bestellung für einen einmaligen Lieferanten erstellen
                   href: procurement/tasks/create-purchase-order-one-time-supplier.md
-                - name: 'Einen Freigabeauftrag für den Einkauf erstellen, wenn Sie die Bestellung erstellen'
-                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
-                - name: Einen Freigabeauftrag für den Einkauf aus einem Kaufvertrag erstellen
+                - name: Beim Anlegen einer Bestellung einen Kaufvertrag anwenden
                   href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
                 - name: Einkaufsrücklieferung erstellen
                   href: procurement/tasks/create-purchase-return-order.md

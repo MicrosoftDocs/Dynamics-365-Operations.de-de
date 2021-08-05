@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Plattformupdates für 10.0.19 (Juni 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
-                - name: Plattformupdates für 10.0.18 (Mai 2021)
-                  href: get-started/whats-new-platform-updates-10-0-18.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -362,11 +360,13 @@
                       href: deployment/maintenanceoperationsguide-newinfrastructure.md
                     - name: Eine Umgebung aktualisieren
                       href: deployment/updateenvironment-newinfrastructure.md
-                    - name: 'Probleme bei Umgebungen behandeln, die durch Self-Service-Bereitstellung verfügbar sind'
+                    - name: 'Probleme in Umgebungen behandeln, die durch Self-Service-Bereitstellung bereitgestellt wurden'
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Häufig gestellte Fragen zu geplanten Wartungsarbeiten in Self-Service-Umgebungen
                       href: deployment/plannedmaintenance-selfservice.md
-                - name: Azure Resource Manager – Vollständiges Onboarding
+                    - name: Business Continuity & Disaster Recovery
+                      href: sysadmin/business-continuity-disaster-recovery.md
+                - name: Onboarding von Azure Resource Manager abschließen
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute und Finance and Operations
                   href: deployment/expressroute.md
@@ -376,6 +376,8 @@
                   href: deployment/apply-deployable-package-system.md
                 - name: Updates und Erweiterungen auf Commerce Scale Unit (Cloud) anwenden
                   href: deployment/Update-retail-channel.md
+                - name: Automatische Aktualisierung für Commerce Scale Unit (Cloud)
+                  href: deployment/Auto-Update-Commerce-Scale-Unit.md
                 - name: Commerce Scale Unit (Cloud) initialisieren
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Kanäle auf eine andere Commerce Scale Unit migrieren
@@ -388,10 +390,12 @@
                   href: deployment/on-premises-deployment-landing-page.md
                 - name: Lokale Bereitstellungen vorbereiten
                   items:
-                    - name: Übersicht über lokale Bereitstellungen
+                    - name: Übersicht über lokale Bereitstellung
                       href: deployment/on-premises-overview.md
                     - name: Lokale Bereitstellungen planen und vorbereiten
                       href: deployment/plan-onprem-deployment.md
+                    - name: Von Microsoft Dynamics 365 Finance + Operations (on-premises) unterstützte Software
+                      href: deployment/onprem-compatibility.md
                     - name: Anforderungen zur Hardwaregrößenanpassung
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                     - name: Authentifizierung in Dynamics 365 Finance + Operations (on-premises)
@@ -498,13 +502,11 @@
               href: dev-tools/sign-up-preview-subscription.md
             - name: Bereitstellen und Zugreifen auf Entwicklungsumgebungen
               items:
-                - name: Entwicklungsumgebung
+                - name: Entwicklungsumgebungen
                   href: dev-tools/access-instances.md
-                - name: Konfigurieren von One-Box-Entwicklungsumgebungen
+                - name: One-Box-Entwicklungsumgebungen konfigurieren
                   href: dev-tools/configure-developer-vm.md
-                - name: Erstellen neuer Benutzer auf Entwicklungscomputern
-                  href: dev-tools/enable-development-machine.md
-                - name: 'Entwicklungs- und Build-VMs, die keinen Administratorzugriff ermöglichen – FAQ'
+                - name: 'Häufig gestellte Fragen zu Entwicklungs- und Build-VMs, die keinen Administratorzugriff ermöglichen'
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Umbenennen lokaler Umgebungen für den Zugriff Azure DevOps
                   href: migration-upgrade/vso-machine-renaming.md
@@ -1116,7 +1118,7 @@
                       href: data-entities/dual-write/integrated-hr.md
                     - name: Partei und globales Adressbuch
                       href: data-entities/dual-write/party-gab.md
-                    - name: Verwenden von Power Portal mit dem Partei-Datenmodell
+                    - name: Verwenden von Microsoft Power Apps-Portalen mit dem Parteidatenmodell
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Auf das Partei- und globale Adressbuchmodell aktualisieren
                       href: data-entities/dual-write/upgrade-party-gab.md
@@ -1598,15 +1600,17 @@
                   href: migration-upgrade/upgrade-cutover-testing.md
                 - name: AX 2012 Upgrade – Aufgaben nach dem Upgrade
                   href: migration-upgrade/app-validation-process.md
-                - name: AX 2012 Upgrade – Funktionsprüfungen erfolgreich
+                - name: "AX 2012 Upgrade\_– Funktionsprüfungen bestanden"
                   href: migration-upgrade/upgrade-functional-validation.md
                 - name: AX 2012 Upgrade – Vorbereitung zur Liveschaltung
                   href: migration-upgrade/upgrade-go-live-prep.md
                 - name: AX 2012-Upgrade – Liveschaltung
                   href: migration-upgrade/2012-upgrade-cutover.md
-                - name: 'Änderungen, die sich auf Upgrade von AX 2012 auswirken'
+                - name: Upgrade von AX 2012 – häufig gestellte Fragen zur Datenaktualisierung
+                  href: migration-upgrade/upgrade-faq.md
+                - name: 'Änderungen, die sich auf das Upgrade von AX 2012 auswirken'
                   items:
-                    - name: Erstellen eines eindeutigen Trennzeichens für den Kontenplan
+                    - name: Eindeutiges Trennzeichen für den Kontenplan erstellen
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
                     - name: Aktualisieren von Einzelbelegerfassungen und Währungsneubewertungen
                       href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
