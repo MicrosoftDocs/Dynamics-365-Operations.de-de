@@ -1,7 +1,7 @@
 ---
 title: Buchhaltungsquellen-Explorer
 description: Dieser Artikel enthält Informationen zum Buchhaltungsquellexplorer, den Sie für die detaillierte Analyse der Quellinformationen hinter den Hauptbuchbuchhaltungseinträgen verwenden können.
-author: ShylaThompson
+author: rcarlson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4624a740538493c247b6c3a0f051ed6208c52504
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f1ab7cb7f8f9a42d5f311f8760ff2463055dc178
+ms.sourcegitcommit: f2dfec2f4c427e37a574e6acdfaaf150bc92ebb6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820930"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661036"
 ---
 # <a name="accounting-source-explorer"></a>Buchhaltungsquellen-Explorer
 
@@ -46,8 +46,10 @@ Für Quelldokumente, die das Konzept der Quelldokument-Referenzidentitäten verw
 
 Für diese Dokumente können Sie vom Buchhaltungsquellen-Explorer aus auch zum ursprünglichen Quelldokument navigieren.
 
-
-
-
+> [!NOTE]
+> Ab Version 10.0.20 bietet die **Aktualisieren** Schaltfläche zwei zusätzliche Bereiche, um die anfängliche Abfrage einzuschränken, die ausgeführt wird, um Daten auf der Seite einzugeben. Diese zusätzlichen Bereiche sind auch in der Version 10.0.19 als Service-Update verfügbar. Di folgenden Felder wurden hinzugefügt:
+>
+> - Vom Gutschein, zum Gutschein
+> - Vom Hauptkonto, Zum Hauptkonto
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

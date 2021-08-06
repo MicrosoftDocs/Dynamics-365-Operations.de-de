@@ -2,7 +2,7 @@
 title: Sätze konfigurieren
 description: Sätze in Microsoft Dynamics 365 Human Resources definieren, wie viel Arbeitgeber und Mitarbeiter für einen Vorteil beitragen.
 author: andreabichsel
-ms.date: 06/15/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 85cf561828aa8ef9d80df31436f473b29406e2fd
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266656"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558344"
 ---
 # <a name="configure-rates"></a>Sätze konfigurieren
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Sätze in Microsoft Dynamics 365 Human Resources definieren, wie viel Arbeitgeber und Mitarbeiter für einen Vorteil beitragen. Der Wert kann abhängig von Ihrer Konfiguration ein Betrag oder ein Flexguthaben sein.
+Sätze definieren, wie viel Arbeitgeber und Mitarbeiter für einen Vorteil beitragen. Der Wert kann abhängig von Ihrer Konfiguration ein Betrag oder eine Zahl sein.
 
 Bestimmen Sie mithilfe der Sätze, wie viel Arbeitnehmer und Mitarbeiter basierend auf mehreren Faktoren für jeden Vorteil zahlen. Deckungssätze haben ein Gültigkeitsdatum, deshalb können Sie einen historischen Datensatz für die Sätze führen. 
 
@@ -42,10 +42,10 @@ Bestimmen Sie mithilfe der Sätze, wie viel Arbeitnehmer und Mitarbeiter basiere
    | --- | --- |
    | **Satz** | Ein eindeutiger Name, der den Vergütungssatz identifiziert. |
    | **Beschreibung** | Eine Beschreibung des Vergütungssatzes. |
-   | **Gültig** | Das Datum, an dem der Satz gültig ist. Das aktuelle Systemdatum ist der Standardwert. 
+   | **In Kraft** | Das Datum, an dem dieser Satz wirksam wird. Das aktuelle Systemdatum ist der Standardwert. Dieses Datum sollte auf oder vor Ihrem Leistungszeitraum liegen. Es empfiehlt sich, dieses Datum auf das Datum des Leistungsplans zu setzen. |
    | **Ablaufdatum** | Das Enddatum des Satzes. Der Standardwert lautet 12/31/2154 (stellvertretend für nie). |
-   | **Ebenen verwenden** | Die Stufe, die zur Berechnung des Vergütungssatzes verwendet werden soll. Für den Vergütungssatz kann entweder eine einfache oder eine zweifache Stufe verwendet werden. Ein Beispiel für eine zweifache Stufe ist eine Stufe, die auf Geschlecht und Alter basiert. |
-   | **Zahlungshäufigkeit** | Die Zahlungshäufigkeit bestimmt, wie oft der Vergütungsprämiensatz an den Vorteilsanbieter ausgezahlt wird. Wenn die Auszahlung beispielsweise monatlich erfolgt, entspricht der Vergütungssatz dem monatlichen Zahlungsbetrag. |
+   | **Ebenen verwenden** |  Verwenden Sie dieses Feld, wenn Sie über eine Logik verfügen, die verwendet werden muss, um einen Tarif zu bestimmen. Wenn ein Satz beispielsweise aufgrund des Alters steigen muss, wählen Sie hier einen Wert aus. Für den Vergütungssatz kann entweder eine **einfache** oder eine **zweifache Stufe** verwendet werden. Ein Beispiel für eine zweifache Stufe ist eine Stufe, die auf Geschlecht und Alter basiert. Nachdem Sie einen Wert ausgewählt haben, wählen Sie **Aktionen**, und wählen Sie dann **Stufensatz**. Wenn Sie eine Pauschale haben, die sich nicht ändert, lassen Sie dieses Feld leer. |
+   | **Zahlungshäufigkeit** | Geben Sie an, wie oft der Leistungsprämiensatz an den Leistungserbringer gezahlt werden soll. Die Preise, die Sie auf der Seite eingeben, die weiter unten in diesem Thema beschrieben wird, basieren auf der hier angegebenen Zahlungshäufigkeit. Wenn Sie beispielsweise in dieses Feld **Monatlich** eingeben und Sie geben einen Mitarbeitersatz von **$100** eib, wird davon ausgegangen, dass die Leistung den Mitarbeiter $100 pro Monat kostet. Ein Mitarbeiter kann jedoch zweimal pro Monat bezahlt werden, basierend auf der Häufigkeit der Leistungszahlung, die im Mitarbeiterdatensatz festgelegt ist. Wenn sich der Mitarbeiter in diesem Fall beim Mitarbeiter-Selbstservice anmeldet, beträgt der Betrag, den er zahlt, $50, da der Tarif, den der Mitarbeiter-Selbstservice anzeigt, auf der Zahlungshäufigkeit des Mitarbeiters basiert. |
    | **Rundung des Zahlungshäufigkeitssatzes** | Die Methoden zur Rundung des Satzes sind: Standard, Abgeschnitten, Normal, Abwärts und Aufrunden. </br></br><ul><li>**Standard** – Rundet immer auf. Zum Beispiel wird 10,611 auf 10,62 gerundet. -10,231 rundet auf -10,23. </li><li>**Abgeschnitten** – Rundet immer ab. Beispiel: 10,619 rundet auf 10,61. -10,231 rundet auf -10,24. </li><li>**Normal** – Dezimalwerte, die auf oder größer als 5 enden, werden von Null abgerundet. Dezimalwerte, die auf oder kleiner als 4 enden, werden gegen Null gerundet. Beispiel: 10,615 wird auf 10,62 gerundet. -10,235 rundet auf -10,24. 10,614 rundet auf 10,61. -10,234 rundet auf -10,23. </li><li>**Abwärts** – Rundet gegen Null. Beispiel: 10,619 rundet auf 10,61. -10,231 rundet auf -10,23. </li><li>**Aufrunden** – Rundet weg von Null. Zum Beispiel wird 10,619 auf 10,62 gerundet. -10,231 rundet auf -10,24. |
    | **Mitarbeiterbetrag für Nichtraucher** | Der Betrag, den der Vorteilsanbieter für einen nicht rauchenden Mitarbeiter berechnet. Dies ist der Betrag, den der Arbeitgeber an den Vorteilsanbieter zahlt und der auf der Zahlungshäufigkeit für die Vergütungssatzeinstellung basieren sollte. |
    | **Arbeitgeberbetrag für Nichtraucher** | Der Betrag, den der Vorteilsanbieter für einen nicht rauchenden Mitarbeiter berechnet. Dies ist der Betrag, den der Arbeitgeber an den Vorteilsanbieter zahlt und der auf der Zahlungshäufigkeit für die Vergütungssatzeinstellung basieren sollte. |
@@ -53,7 +53,7 @@ Bestimmen Sie mithilfe der Sätze, wie viel Arbeitnehmer und Mitarbeiter basiere
    | **Arbeitgeberbetrag für Raucher** | Der Betrag, den der Vorteilsanbieter für einen rauchenden Mitarbeiter berechnet. Dies ist der Betrag, den der Arbeitgeber an den Vorteilsanbieter zahlt und der auf der Zahlungshäufigkeit für die Vergütungssatzeinstellung basieren sollte. |
    | **Verwaltungsbetrag** | Der von einem Drittanbieteradministrator in Rechnung gestellte Verwaltungsbetrag. Dies ist der Betrag, den der Arbeitgeber an den Drittanbieteradministrator zahlt und der auf der Zahlungshäufigkeit für die Vergütungssatzeinstellung basieren sollte. |
    | **Flexibler Gutschriftensatz** | Die Höhe des Flexguthabens, den der Vorteil kostet. Dies gilt nur für Sätze, die für Vergütungspläne gelten, die mit Flexguthabenprogrammen verbunden sind. Wenn Sie Stufensätze verwenden, wird der Flexguthabensatz unter Aktionen > Stufensätze definiert. |
-   | **Gültigkeitsdatum ändern** | Das Datum, an dem der Vergütungssatz wirksam wird. Das System ändert automatisch den Vergütungssatz und aktualisiert alle Vergütungspläne, die mit diesem Satz verbunden sind, solange Sie die Verarbeitung von aktualisierten Satzänderungen ausführen. Sie sollten dieses Datum nicht festlegen, es sei denn, Sie möchten, dass das System die Personalvergütungspläne basierend auf diesem Satz automatisch aktualisiert. Das ist normalerweise der automatischen Verarbeitung zukünftiger Änderungen des Vergütungssatzes vorbehalten. Das Datum des Inkrafttretens der Änderung muss innerhalb des Datums des Inkrafttretens und des Ablaufs des Vergütungssatzes liegen. |
+   | **Gültigkeitsdatum ändern** | Das Datum, an dem der Vergütungssatz wirksam wird. Das System ändert automatisch den Vergütungssatz und aktualisiert alle Vergütungspläne, die mit diesem Satz verbunden sind, sofern Sie die Verarbeitung von aktualisierten Satzänderungen ausführen. Sie sollten dieses Datum nicht festlegen, es sei denn, Sie möchten, dass das System die Personalvergütungspläne basierend auf diesem Satz automatisch aktualisiert. Das ist normalerweise der automatischen Verarbeitung zukünftiger Änderungen des Vergütungssatzes vorbehalten. Das Datum des Inkrafttretens der Änderung muss innerhalb des Datums des Inkrafttretens und des Ablaufs des Vergütungssatzes liegen. |
    | **Satzänderung abgeschlossen** | Das Kontrollkästchen **Satzänderung abgeschlossen** wird automatisch aktiviert, nachdem die Änderungen des Satzes durch die Verarbeitung von aktualisierten Satzänderungen abgeschlossen wurden. |
 
 4. Um Änderungen an der Vorteilssatzeinstellung zu verfolgen und beizubehalten, wählen Sie **Aktionen** und dann **Versionen verwalten** aus.
@@ -66,6 +66,9 @@ Sie können Stufensätze in Ihrer Vergütungssatzeinstellung verwenden, wenn der
 
 Sie können auch doppelte Stufen verwenden. Wenn Sie **Zweifache Stufe** für den Wert **Stufen verwenden** im Formular **Vergütungssatzeinstellung** auswählen, können Sie Sätze definieren, die auf zwei Dimensionen basieren. Sie können ein zweistufiges System beispielsweise so konfigurieren, dass der Nichtraucherbetrag für Männer bis zu einem Alter von 34,99 Jahren 2 beträgt. Wenn Sie ein Mann sind, gilt bis zu einem Alter von 39,99 Jahren ein Nichtraucherbetrag von 3. Wenn Sie eine Frau sind, gilt bis zu einem Alter von 34,99 Jahren ein Nichtraucherbetrag von 1,8. Wenn Sie eine Frau sind, gilt bis zu einem Alter von 39,99 Jahren ein Nichtraucherbetrag von 2,8.
 
+> [!IMPORTANT]
+> Eine Option unter **Persönliche Angaben** in der Arbeitskraftakte wird verwendet, um anzugeben, ob der Arbeitnehmer Raucher ist. Wenn der Mitarbeiter als Raucher registriert ist, wird der Rauchertarif verwendet. (Der Raucherhinweis wird dem Mitarbeiter nie angezeigt.)
+   
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellungen** die Option **Sätze** aus.
 
 2. Wählen Sie zuerst einen oder mehrere Sätze aus der Liste aus. Anschließend wählen Sie **Aktionen** und dann **Stufensätze** aus.
@@ -92,6 +95,7 @@ Sie können auch doppelte Stufen verwenden. Wenn Sie **Zweifache Stufe** für de
    | **Rauchersatz für Flexguthaben** | Die Höhe des Flexguthabens, den der Vorteil kostet, basierend auf der Berechnung, die für die Stufenebene für Raucher definiert wurde. |
 
 5. Wählen Sie **Speichern**. 
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Berechtigungsregeln und -optionen konfigurieren
 description: Legen Sie die Berechtigungsregeln und ‑optionen in der Vorteilsverwaltung von Microsoft Dynamics 365 Human Resources fest.
 author: andreabichsel
-ms.date: 05/20/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 25593bc4d136e403c7ba87e044c95f4fae1e7db9
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351656"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558368"
 ---
-# <a name="configure-eligibility-rules-and-options"></a>Berechtigungsregeln und -optionen konfigurieren
+# <a name="configure-eligibility-rules-and-options"></a>Berechtigungsregeln und -optionen konfigurieren 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Nachdem Sie die erforderlichen Parameter für die Vorteilsverwaltung in Microsoft Dynamics 365 Human Resources konfiguriert haben, können Sie Berechtigungsregeln, Bündel, Perioden und Programme erstellen, die Sie mit Ihren Vorteilsplänen verknüpfen.
+Nachdem Sie die erforderlichen Parameter für die Vorteilsverwaltung konfiguriert haben, können Sie Berechtigungsregeln, Bündel, Perioden und Programme erstellen, die Sie mit Ihren Vorteilsplänen verknüpfen.
+
+Berechtigungsregeln werden verwendet, um zu bestimmen, ob Mitarbeiter für einen Plan in Frage kommen. Arbeitnehmer müssen die Bedingung von mindestens einer Regel erfüllen, um als anspruchsberechtigt zu gelten. Sie haben beispielsweise zwei Regeln für einen Plan. Die erste Regel (Zeile 1) besagt, dass der Mitarbeitertyp **Mitarbeiter** sein muss. Die zweite Regel (Zeile 2) besagt, dass der Mitarbeiter ein Vollzeitmitarbeiter ist. Daher sind Arbeitnehmer, die Regel 1 erfüllen, berechtigt, auch wenn sie nur in Teilzeit beschäftigt sind.
+
+Sie können jedoch eine einzelne Regel mit mehreren Bedingungen einrichten. In diesem Fall müssen Arbeitnehmer alle Bedingung derr Regel erfüllen, um als anspruchsberechtigt zu gelten. Sie haben beispielsweise eine Regel mit dem Namen **Angestellter in Vollzeit**. Diese Regel besagt, dass der Mitarbeitertyp **Mitarbeiter** *und* in Vollzeit beschäftigt sein muss. Daher müssen Arbeitnehmer beide Bedingungen der Regel erfüllen, um berechtigt zu sein.
+
+> [!IMPORTANT]
+> Jedem Leistungsplan muss mindestens eine Anspruchsberechtigungsregel zugeordnet sein. Sie können einem Vorteil mehrere Regeln zuordnen.
 
 ## <a name="create-an-eligibility-rule"></a>Berechtigungsregel erstellen
 
@@ -72,7 +79,7 @@ Während der offenen Registrierung können Mitarbeiter Vorteilspläne auswählen
    | **Zulässiger Positionstyp** | Gibt den Positionstyp oder die Positionstypen an, die die Berechtigungsregel erfüllen. Beispiel: Vollzeit. |
    | **Zulässigers** | Gibt die Bundesländer oder Kantone an, die die Berechtigungsregel erfüllen. Beispiel: Sachsen, Deutschland oder Wallis, Schweiz. |
    | **Zulässige Beschäftigungsbedingungen** | Gibt die Beschäftigungsbedingung an, die die Berechtigungsregel erfüllt. Beispiel: beliebig oder Gruppenvertrag. |
-   | **Zulässige Gewerkschaft** | Gibt die Mitgliedschaft bei Gewerkschaften an, die die Berechtigungsregel erfüllen. Beispiel: IG Metall. </br></br>Bei Verwendung einer gewerkschaftsbasierten Berechtigungsregel muss das Enddatum des Gewerkschaftsdatensatzes der Arbeitskraft angegeben werden. Sie können es nicht leer lassen. |
+   | **Zulässige Gewerkschaft** | Gibt die Mitgliedschaft bei Gewerkschaften an, die die Berechtigungsregel erfüllen. Beispiel: IG Metall.</br></br>Bei Verwendung einer gewerkschaftsbasierten Berechtigungsregel muss das Enddatum des Gewerkschaftsdatensatzes der Arbeitskraft angegeben werden. Sie können es nicht leer lassen. |
    | **Zulässige Postleitzahl** | Gibt die Postleitzahlen an, die die Berechtigungsregel erfüllen. Beispiel: 58104. |
 
 5. Unter **Zusätzliches Detail** können Sie die folgenden zusätzlichen Details anzeigen.
@@ -218,7 +225,7 @@ Sie können Flexguthabenprogramme verwenden, um Mitarbeiter für Vorteile gemä�
    | Regel zur anteiligen Verrechnung | Die Regel zur anteiligen Verrechnung von Flexguthaben, wenn ein Mitarbeiter in der Mitte der Flexguthabenperiode eingestellt wird. </br></br><ul><li>**Kein** – Der Mitarbeiter erhält kein Flexguthaben, wenn er nach dem Start des Flexguthabenprogramms eingestellt wird.</li><li>**Volles Guthaben** – Der Mitarbeiter erhält die volle Höhe des Flexguthabens, unabhängig davon, wann er eingestellt wird.</li><li>**Anteilige Verrechnung** – Der Mitarbeiter erhält einen Anteil des Flexguthabens, das auf seinem Startdatum basiert.</li></ul> |
    | Formel für anteilige Berechnung des Flexguthabens | Die Regel zur anteiligen Verrechnung von Flexguthaben, wenn Mitarbeiter in der Mitte der Flexguthabenperiode eingestellt werden. Die anteilige Verrechnung basiert auf dem Einstellungsbeginn. Dieses Feld wird nur verwendet, wenn im Feld **Regel zur anteiligen Verrechnung** die Option **Anteilige Verrechnung** ausgewählt wird. </br></br><ul><li>**Täglich** – Teilt die Höhe des Flexguthabens, die ein Mitarbeiter erhält, auf dem Tageslevel. Die Gesamthöhe des Flexguthabens wird durch die Anzahl der Tage in der Periode geteilt. Wenn Ihre Vorteilsperiode beispielsweise 400 Tage beträgt, dividiert das System die Gesamthöhe des Flexguthabens durch 400, um die Höhe des Flexguthabens zu berechnen, das ein Mitarbeiter pro Tag erhält.</li><li>**Aktueller Monat** – Teilt die Höhe des Flexguthabens, die ein Mitarbeiter erhält, auf dem Monatslevel, auf den aktuellen Monat gerundet. Die Gesamthöhe des Flexguthabens wird durch die Anzahl der Monate in der Periode geteilt. Wenn Ihre Vorteilsperiode beispielsweise 15 Monate beträgt, dividiert das System die Gesamthöhe des Flexguthabens durch 15, um die Höhe des Flexguthabens zu berechnen, das ein Mitarbeiter pro Monat erhält.</li><li>**Folgender Monat** – Teilt die Höhe des Flexguthabens, die ein Mitarbeiter erhält, auf dem Monatslevel, auf den nächsten Monat gerundet. Die Gesamthöhe des Flexguthabens wird durch die Anzahl der Monate in der Periode geteilt. Wenn Ihre Vorteilsperiode beispielsweise 15 Monate beträgt, dividiert das System die Gesamthöhe des Flexguthabens durch 15, um die Höhe des Flexguthabens zu berechnen, das ein Mitarbeiter pro Monat erhält.</li></ul> |
    
-   Stellen Sie sicher, dass jeder Vorteilsplan nur für ein Flexguthabenprogramm pro Vorteilsperiode registriert ist. Andernfalls weiß das System nicht, mit welchem Flexguthabenprogramm das Flexguthaben vergeben werden soll und es treten Probleme auf. 
+   Stellen Sie sicher, dass jeder Vorteilsplan nur für ein Flexguthabenprogramm pro Vorteilsperiode registriert ist. Sonst weiß das System nicht, mit welchem Flexguthabenprogramm das Flexguthaben vergeben werden soll und es treten Probleme auf. 
 
 ## <a name="configure-programs"></a>Programme konfigurieren
 

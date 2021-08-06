@@ -16,17 +16,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 341312758e0a6da2e918406e09df618e2475811f
-ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
+ms.openlocfilehash: b054101d6d177018e54162537cfd756c84b11ae3
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6479375"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638879"
 ---
 # <a name="store-selector-module"></a>Shopauswahlmodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema enthält das Siteauswahlmodul und es wird beschrieben, wie Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 

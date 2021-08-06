@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e7316d7749566b74835acded0addb2fa4b0e858
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350835"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542414"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Probleme bei der anfänglichen Einrichtung behandeln
 
@@ -71,7 +71,7 @@ Führen Sie die folgenden Schritte aus, um die App-Zustimmung zu erteilen.
 
 Um sicherzustellen, dass Duales Schreiben ordnungsgemäß funktioniert, werden die Unternehmen, die Sie während der Konfiguration auswählen, in der Liste Dataverse Umgebung erstellt. Standardmäßig sind diese Unternehmen schreibgeschützt und die **IsDualWriteEnable** Eigenschaft ist auf **Wahr** festgelegt. Darüber hinaus werden der Eigentümer und das Team der Geschäftseinheit mit Standardbesitz erstellt und enthalten den Firmennamen. Stellen Sie vor dem Aktivieren der Karten sicher, dass der Standardteambesitzer angegeben ist. Um die Tabelle **Unternehmen (CDM\_Unternehmen)** zu finden, folgen Sie diesen Schritten.
 
-1. Wählen Sie in der modellgesteuerten App in Dynamics 365 den Filter in der oberen rechten Ecke aus.
+1. Wählen Sie in der Kundenbindungs-App den Filter in der oberen rechten Ecke aus.
 2. Wählen Sie in der Dropdownliste **Unternehmen** aus.
 3. Wählen **Ausführen**, um die Ergebnisse zu sehen.
 4. Wählen Sie die Firma aus, die bei der Konfiguration von Dualem Schreiben verknüpft war.

@@ -2,7 +2,7 @@
 title: Urlaubs- und Abwesenheitstypen konfigurieren
 description: Einrichten von Abwesenheitstypen, die Mitarbeiter in Anspruch nehmen können in Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 06/15/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 39e4c4b9c83ca648c21ac20bd20b739af8a6b9ed
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 63970f69a437864675eada975c54446325fb60e2
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271126"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639581"
 ---
 # <a name="configure-leave-and-absence-types"></a>Urlaubs- und Abwesenheitstypen konfigurieren
 
@@ -73,6 +73,37 @@ Abwesenheitstypen in Dynamics 365 Human Resources definieren die verschiedenen A
  
 4. Definieren von **Ablaufregeln** für den Urlaubstyp. Wenn Sie diese Option konfigurieren, können Sie die Einheit Tage oder Monate wählen und die Dauer für den Verfall festlegen. Das Gültigkeitsdatum der Verfallsregel wird verwendet, um zu bestimmen, wann der Batchauftrag ausgeführt wird, der den Urlaubsverfall verarbeitet, oder das Datum, an dem die Regel in Kraft tritt. Der Verfall selbst findet immer am Startdatum der Abgrenzungsperiode statt. Wenn z. B. das Abgrenzungszeitraum-Startdatum der 3. August 2021 ist und die Verfallsregel auf 6 Monate festgelegt wurde, wird die Regel basierend auf dem Verfalls-Offset vom Abgrenzungszeitraum-Startdatum verarbeitet, so dass sie am 3. Februar 2022 ausgeführt würde. Zum Zeitpunkt des Ablaufs vorhandene Urlaubsguthaben werden von der Urlaubsart abgezogen und im Urlaubsguthaben ausgewiesen.
  
+## <a name="configure-the-required-attachment-per-leave-type"></a>Anhangsanforderung pro Urlaubsart konfigurieren
+
+> [!NOTE]
+> Um das Feld **Anhang erforderlich** müssen Sie zuerst die Funktion **(Vorschau) erforderlichen Anhang für Abwesenheitsanträge konfigurieren** in der Funktionsverwaltung aktivieren. Weitere Informationen zur Aktivierung von Vorschaufunktionen finden Sie unter [Funktionen verwalten](hr-admin-manage-features.md).
+
+1. Auf der **Urlaub und Abwesenheit** Seite, auf der **Verknüpfungen** Registerkarte, unter **Installieren** wählen Sie **Urlaubs- und Abwesenheitsarten**.
+
+2. Wählen Sie in der Liste einen Urlaubs- und Abwesenheitstyp aus. Dann verwenden Sie im Abschnitt **Allgemein** das Feld **Anhang erforderlich**, um anzugeben, ob ein Anhang hochgeladen werden muss, wenn ein Mitarbeiter einen neuen Urlaubsantrag für die ausgewählte Urlaubsart stellt. 
+
+Mitarbeiter müssen einen Anhang hochladen, wenn sie einen neuen Urlaubsantrag mit einer Urlaubsart einreichen, in der das Feld **Anhang erforderlich** aktiviert ist. Um den Anhang anzuzeigen, der als Teil eines Abwesenheitsantrags hochgeladen wurde, können Abwesenheitsantragsgenehmiger die **Anhänge** Option für die ihnen zugeordneten Arbeitselemente nutzen. Wenn auf einen Urlaubsantrag über die Personal-App in Microsoft Teams zugegriffen wird, kann die Option **Details anzeigen** für den Abwesenheitsantrag verwendet werden, um dessen Details und eventuelle Anhänge anzuzeigen.
+
+## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Konfigurieren von Einheiten (Stunden/Tage) pro Urlaubsart
+
+> [!NOTE]
+> Um die Abwesenheitseinheiten pro Abwesenheitsart zu verwenden, müssen Sie zuerst die Funktion **(Vorschau) Urlaubseinheiten pro Urlaubsart konfigurieren** in der Funktionsverwaltung aktivieren. Weitere Informationen zur Aktivierung von Vorschaufunktionen finden Sie unter [Funktionen verwalten](hr-admin-manage-features.md).
+
+> [!IMPORTANT]
+> Standardmäßig verwenden die Urlaubsarten in einer juristischen Person die Urlaubseinheiten aus der Konfiguration der Urlaubsparameter auf Ebene der juristischen Person.
+> 
+> Die Urlaubseinheit einer Urlaubs- und Abwesenheitsart kann nur geändert werden, wenn für diese Urlaubsart keine Urlaubsbuchungen vorhanden sind.
+> 
+> Nachdem die Funktion aktiviert wurde, kann sie nicht wieder deaktiviert werden.
+
+1. Auf der **Urlaub und Abwesenheit** Seite, auf der **Verknüpfungen** Registerkarte, unter **Installieren** wählen Sie **Urlaubs- und Abwesenheitsarten**.
+
+2. Wählen Sie in der Liste einen Urlaubs- und Abwesenheitstyp aus. Dann wählen Sie im Abschnitt **Allgemein** im Feld **Einheit** die Urlaubseinheit aus. Sie können **Stunden** oder **Tage** auswählen.
+
+3. Optional: Wenn Sie **Stunden** in dem Feld **Einheit** ausgewählt haben, können Sie das Feld **Halbtagesdefinition aktivieren** verwenden, um anzugeben, ob Mitarbeiter den ersten halben Tag oder den zweiten halben Tag frei wählen können, wenn sie einen halben Tag Urlaub beantragen.
+
+Mitarbeiter, die einen neuen Urlaubsantrag stellen, können verschiedene Urlaubsarten auswählen, um ihren Urlaubsantrag zu erstellen. Alle Urlaubsarten, die im Rahmen eines einzigen Urlaubsantrags ausgewählt werden, sollten jedoch dieselbe Urlaubseinheit haben. Mitarbeiter können die Urlaubseinheit jede Urlaubsart im **Freizeit anfordern** anzeigen.
+
 ## <a name="see-also"></a>Siehe auch
 
 - [Urlaubs- und Abwesenheitsübersicht](hr-leave-and-absence-overview.md)

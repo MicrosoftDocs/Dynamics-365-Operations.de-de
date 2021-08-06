@@ -2,24 +2,24 @@
 title: Geschäftspartnerbenutzer auf B2B-E-Commerce-Websites verwalten
 description: In diesem Thema wird beschrieben, wie Administratoren Geschäftspartnerbenutzer auf Business-to-Business(B2B)-E-Commerce-Websites hinzufügen, bearbeiten und löschen können.
 author: josaw1
-ms.date: 01/20/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailOperations
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 88f613be59a0c7b0d5efcdc0bef2c5a54506f9eb
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936655"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655605"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Geschäftspartnerbenutzer auf B2B-E-Commerce-Websites verwalten
 
@@ -67,7 +67,7 @@ Führen Sie die folgenden Schritte aus, um einen Administratorbenutzer eines Ges
 
 1. Wechseln Sie zu **Einzelhandel und Handel IT \> Verteilungsplan** und führen Sie den **1010** (**Kunden**)-Auftrag zum pushen der neu erstellten Kunden- und Kundenhierarchiedatensätze in die Kanaldatenbank aus.
 
-Nachdem die Anfrage genehmigt und die Kunden- und Kundenhierarchiedatensätze mit der Kanaldatenbank synchronisiert wurden, kann sich der Anforderer unter Verwendung der E-Mail-Adresse, die er bei der Übermittlung der Anfrage angegeben hat, bei der B2B-E-Commerce-Website anmelden. Benutzer können den Anmelde-Flow verwenden, um das Kennwort für ihr Konto zu definieren.
+Nachdem die Anfrage genehmigt und die Kunden- und Kundenhierarchiedatensätze mit der Kanaldatenbank synchronisiert wurden, kann sich der Anforderer unter Verwendung der E-Mail-Adresse, die er bei der Übermittlung der Anfrage angegeben hat, bei der B2B-E-Commerce-Website anmelden. Benutzer können den Anmelde-Flow verwenden, um das Kennwort für ihr Konto zu definieren. Um den Identitätsanbieter zu aktivieren (Azure AD B2C)-Datensatz, der mit dem B2B-Kundendatensatz verknüpft werden soll, der bei der Anmeldung oder Anmeldung erstellt wurde, folgen Sie den Anweisungen in [Aktivieren Sie die automatische Verknüpfung von Identitätsdatensätzen mit Kundenkonten](../identity-record-linking.md).
 
 ## <a name="onboard-additional-business-partner-users"></a>Onboarding zusätzlicher Geschäftspartnerbenutzer durchführen
 
@@ -83,7 +83,7 @@ Führen Sie die folgenden Schritte aus, um weitere Geschäftspartnerbenutzer in 
 
 1. Führen Sie den Auftrag **1010** (**Kunden**) aus, um den neuen Geschäftspartnerbenutzer mit der Kanaldatenbank zu synchronisieren.
 
-Nach der Synchronisierung des Kundendatensatzes wird der Status des Benutzers auf der B2B-E-Commerce-Website auf **Aktiv** festgelegt und der neue Benutzer kann sich unter Verwendung seiner E-Mail-Adresse bei der B2B-E-Commerce-Website anmelden. Benutzer können den Anmelde-Flow verwenden, um das Kennwort für ihr Konto zu definieren.
+Nach der Synchronisierung des Kundendatensatzes wird der Status des Benutzers auf der B2B-E-Commerce-Website auf **Aktiv** festgelegt und der neue Benutzer kann sich unter Verwendung seiner E-Mail-Adresse bei der B2B-E-Commerce-Website anmelden. Benutzer können den Anmelde-Flow verwenden, um das Kennwort für ihr Konto zu definieren. Um den Identitätsanbieter zu aktivieren (Azure AD B2C)-Datensatz, der mit dem B2B-Kundendatensatz verknüpft werden soll, der bei der Anmeldung oder Anmeldung erstellt wurde, folgen Sie den Anweisungen in [Aktivieren Sie die automatische Verknüpfung von Identitätsdatensätzen mit Kundenkonten](../identity-record-linking.md).
 
 ## <a name="edit-business-partner-user-details"></a>Die Benutzerdetails des Geschäftspartners bearbeiten
 

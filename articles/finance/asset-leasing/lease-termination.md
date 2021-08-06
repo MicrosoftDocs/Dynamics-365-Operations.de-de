@@ -2,7 +2,7 @@
 title: Beendigungsvorschlag des Leasingvertrags
 description: In diesem Thema wird erläutert, wie Sie einen Mietvertrag zur Kündigung vorschlagen.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6b32f9e8f80827e04269ac8cb6a4fbb5a13af8bc
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 003eaa3f9e5ad653daed2e973044f384972b0331
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881107"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638487"
 ---
 # <a name="propose-a-lease-for-termination"></a>Einen Mietvertrag zur Kündigung vorschlagen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Wenn ein Mietvertag vorzeitig gekündigt wird, kann das Anlagenleasing einen Journaleintrag Eintrag erfassen, um die Leasingverbindlichkeit, das Nutzungsrecht (ROU) und die kumulierten Abschreibungen abzuschreiben und einen Gewinn oder Verlust zu verbuchen. Der Prozess der vorzeitigen Kündigung eines Mietvertrags und die zugehörigen Leasingbücher. Einzelne Leasingbücher werden nicht beendet. In diesem Thema wird die Funktionalität beschrieben, mit der Sie einen Mietvertrag zur Kündigung vorschlagen und den Journaleintrag für die Kündigung des Mietvertrags verarbeiten können.
 

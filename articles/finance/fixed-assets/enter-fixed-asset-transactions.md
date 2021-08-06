@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3540cf17050a953a97c7291a1bcbe5ebf6fb670e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2f9cd8846688e6b70f3ac2034caa1a9e3015355e
+ms.sourcegitcommit: f9b40df70a77136529fbc790325ed657eb203731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815715"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6645371"
 ---
 # <a name="fixed-asset-transaction-options"></a>Anlagenbuchungsoptionen
 
@@ -46,7 +46,7 @@ Wird für die Anschaffung von Anlagen die Bestellungserfassung oder die Erfassun
 ## <a name="general-ledger"></a>Hauptbuch
 Jede Anlagenbuchungsart kann auf der Seite "Allgemeine Erfassung" gebucht werden. Sie können auch Erfassungen in Anlagen verwenden, um Anlagenbuchungen vorzunehmen.
 
-## <a name="options-for-entering-fixed-asset-transaction-types"></a>Eingabeoptionen für Anlagenbuchungsarten
+### <a name="options-for-entering-fixed-asset-transaction-types"></a>Eingabeoptionen für Anlagenbuchungsarten
 
 
 | Transaktionstyp                    | Modul                   | Optionen                                   |
@@ -61,10 +61,20 @@ Jede Anlagenbuchungsart kann auf der Seite "Allgemeine Erfassung" gebucht werden
 | ** **                               | Hauptbuch           | Allgemeine Erfassung                           |
 | ** **                               | Debitorenkonten      | Freitextrechnung                         |
 
-
 Der Wert der verbleibenden Abschreibungsperioden der Anlage wird nicht aktualisiert, wenn eine Erfassungsposition für einen Abschreibungstransaktionstyp manuell erstellt oder über eine Datenentität importiert wird. Dieser Wert wird aktualisiert, wenn der Abschreibungsvorschlagprozess verwendet wird, um die neue Erfassungsposition zu erstellen.
 
 Weitere Informationen finden Sie unter [Anlage-Integration](fixed-asset-integration.md).
 
+### <a name="transactions-that-require-different-voucher-numbers"></a>Transaktionen, die unterschiedliche Gutscheinnummern erfordern
+
+Die folgenden Anlagentransaktionen verwenden unterschiedliche Belegnummern:
+
+- Eine zusätzliche Anschaffung wird in einer Anlage vorgenommen und die "Ausgleichs" Abschreibung wird berechnet.
+- Eine Anlage wird aufgeteilt.
+- Ein Parameter, um die Abschreibung nach Verwendung zu berechnen wird aktiviert und anschließend wird die Anlage abgeschafft.
+- Ein Anlage-Servicedatum liegt vor dem Anschaffungsdatum. Daher wird einer Abschreibungsregulierung gebucht.
+
+> [!NOTE]
+> Achten Sie bei der Eingabe von Transaktionen darauf, dass alle Transaktionen auf dieselbe Anlage zutreffen. Der Beleg wird nicht gebucht, wenn er mehr als eine Anlage enthält, auch wenn das Feld **Neuer Beleg** auf **eine Belegnummer** nur auf der Seite **Journalnamen** im Hauptbuch gesetzt ist. Wenn Sie mehr als eine Anlage in den Beleg aufnehmen, erscheint die Meldung Es kann nur eine Anlagenbewegung pro Beleg und Sie können den Beleg nicht buchen.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

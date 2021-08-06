@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 57501d07f6b9cffdff9f37737df8c278c574cf30
-ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
+ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
+ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314284"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "6538853"
 ---
 # <a name="payroll-employee"></a>Mitarbeiter der Lohnbuchhaltung
 
@@ -32,15 +32,19 @@ Physischer Name: mshr_payrollemployeeentity.
 
 Diese Entität stellt Informationen über den Mitarbeiter bereit. Sie müssen die [Lohnintegrationsparameter](hr-admin-integration-payroll-api-parameters.md) festlegen, bevor Sie diese Entität verwenden.
 
+>[!IMPORTANT] 
+>**Vorname**, **Zweiter Vorname**, **Nachname**, **NameGültigVon**, und **NameGültigbis** Felder sind für diese Entität nicht mehr verfügbar. Damit soll sichergestellt werden, dass diese Entität nur von einer datumswirksamen Datenquelle unterstützt wird, nämlich **Hcm-Beschäftigung** mit den **Beschäftigung-Startdatum** und **Beschäftigungsende** Felder.
+
+>Diese Felder werden auf der **DirPersonNameHistoricalEntity** verfügbar sein, die im Plattform-Update 43 veröffentlicht wurde. Es gibt eine OData-Relation von **PayrollEmployeeEntity** zu **DirPersonNameHistoricalEntity** im **Person** Feld. Alternativ kann die **DirPersonNameHistoricalEntity** Entität direkt über OData unter Verwendung des öffentlichen Namens **PersonHistoricalNames** abgefragt werden.
+
+
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft<br>**Physikalischer Name**<br>**_Typ_** | Verwenden | Beschreibung |
 | --- | --- | --- |
 | **Personalnummer**<br>mshr_personnelnumber<br>*Zeichenfolge* | Schreibgeschützt<br>Erforderlich | Die eindeutige Personalnummer des Mitarbeiters. |
 | **Primärfeld**<br>mshr_primaryfield<br>*Zeichenfolge* | Erforderlich<br>Vom System generiert |  |
-| **Nachname**<br>mshr_lastname<br>*Zeichenfolge* | Schreibgeschützt<br>Erforderlich | Nachname des Mitarbeiters. |
 | **Kennung der juristischen Person**<br>mshr_legalentityID<br>*Zeichenfolge* | Schreibgeschützt<br>Erforderlich | Gibt die juristische Person (Firma) an. |
-| **Gültig ab**<br>mshr_namevalidfrom<br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt <br>Erforderlich | Datum, ab dem die Mitarbeiterinformationen gültig sind.  |
 | **Geschlecht**<br>mshr_gender<br>[mshr_hcmpersongender-Optionssatz](hr-admin-integration-payroll-api-gender.md) | Schreibgeschützt<br>Erforderlich | Das Geschlecht des Mitarbeiters. |
 | **ID der Entität „Mitarbeiter der Lohnbuchhaltung“**<br>mshr_payrollemployeeentityid<br>*GUID* | Erforderlich<br>Vom System generiert | Ein vom System generierter GUID-Wert zur eindeutigen Identifizierung des Mitarbeiters. |
 | **Datum des Beschäftigungsbeginns**<br>mshr_employmentstartdate<br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt<br>Erforderlich | Das Startdatum der Anstellung des Mitarbeiters. |
@@ -50,8 +54,6 @@ Diese Entität stellt Informationen über den Mitarbeiter bereit. Sie müssen di
 | **Gültig bis**<br>mshr_namevalidto<br>*Datum-/Uhrzeit-Offset* |  Schreibgeschützt<br>Erforderlich | Datum, bis zu dem die Mitarbeiterinformationen gültig sind. |
 | **Geburtstag**<br>mshr_birthdate<br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt <br>Erforderlich | Das Geburtsdatum des Mitarbeiters |
 | **Kennungsnummer**<br>mshr_identificationnumber<br>*Zeichenfolge* | Schreibgeschützt <br>Erforderlich |Die für den Mitarbeiter festgelegte Kennungsnummer.  |
-| **Vorname**<br>mshr_firstname<br>*Zeichenfolge* | Schreibgeschützt<br>Erforderlich | Vorname des Mitarbeiters. |
-| **Zweiter Vorname**<br>mshr_middlename<br>*Zeichenfolge* | Schreibgeschützt<br>Erforderlich |Zweiter Vorname des Mitarbeiters.  |
 
 ## <a name="example-query-for-payroll-employee"></a>Beispielabfrage für Mitarbeiter der Lohnbuchhaltung
 
@@ -69,11 +71,6 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
     "mshr_personnelnumber": "000041",
     "mshr_employmentstartdate": "2011-04-05T07:00:00Z",
     "mshr_employmentenddate": "2154-12-31T23:59:59Z",
-    "mshr_firstname": "Cassie",
-    "mshr_middlename": "Lassie",
-    "mshr_lastname": "Hicks",
-    "mshr_namevalidfrom": "2021-03-12T20:34:25Z",
-    "mshr_namevalidto": "2154-12-31T23:59:59Z",
     "mshr_birthdate": "1987-09-12T00:00:00Z",
     "mshr_gender": 200000002,
     "mshr_identificationtypeid": "SSN",

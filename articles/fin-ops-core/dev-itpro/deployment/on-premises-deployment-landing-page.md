@@ -2,7 +2,7 @@
 title: Startseite der lokalen Bereitstellung
 description: Dieses Thema liefert Informationen und Links zu Inhalten über lokale Bereitstellungen.
 author: sericks007
-ms.date: 03/22/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: ef19a154b4e18246c88adea48ee2709af17f039f
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: f5ecc71326892683e0a49685262aae0db4a49ea9
+ms.sourcegitcommit: 41a5d18552bcc94cb1ddbbe3f3278eaf9d05f418
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338929"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "6617069"
 ---
 # <a name="on-premises-deployment-home-page"></a>On-Premises-Bereitstellung – Startseite
 
@@ -31,8 +31,9 @@ Sie können Dynamics 365 Finance und Operations (on-premises) bereitstellen. Wen
 
 ## <a name="get-started"></a>Erste Schritte
 - [On-Premises-Bereitstellung – Übersicht](on-premises-overview.md)
-- [Planen und Vorbereiten von On-Premises-Bereitstellungen](plan-onprem-deployment.md)
+- [Lokale Bereitstellungen planen und vorbereiten](plan-onprem-deployment.md)
 - [Systemanforderungen für On-Premises-Bereitstellungen](../../fin-ops/get-started/system-requirements-on-prem.md)
+- [Microsoft Dynamics 365 Finance + Vorgang (lokal) unterstützte Software](onprem-compatibility.md)
 - [Anforderungen an die Hardwarekalkulation für lokale Umgebungen](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Finance and Operations (On-Premises) kaufen](../../fin-ops/get-started/purchase-on-premises.md)
 - [Vergleich von Cloud- und On-Premises-Funktionen](../../fin-ops/get-started/cloud-prem-comparison.md)

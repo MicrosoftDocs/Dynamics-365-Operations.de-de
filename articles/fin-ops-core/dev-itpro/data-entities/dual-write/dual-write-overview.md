@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6fb4e91f00163f5280d2c767843afd5c7a33712d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 951136a6a5197d2ec081b325df2980ad2fcf6e42
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350884"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542711"
 ---
 # <a name="dual-write-overview"></a>Duales Schreiben – Übersicht
 
@@ -84,7 +84,7 @@ Duales Schreiben erstellt eine Zuordnung zwischen Konzepten in Finance and Opera
 
 Dual-Write bietet Datenintegration über Microsoft Dynamics 365 Apps hinweg. Dieser robuste Rahmen verbindet Umgebungen und ermöglicht die Zusammenarbeit verschiedener Geschäftsanwendungen. Hier sind die wichtigsten Gründe, warum Sie Dual-Write verwenden sollten:
 
-+ Dual-Write bietet eine eng gekoppelte, echtzeitnahe und bidirektionale Integration zwischen Finance and Operations-Anwendungen und modellgesteuerten Anwendungen in Dynamics 365. Diese Integration macht Microsoft Dynamics 365 zum One-Stop-Shop für alle Ihre Geschäftslösungen. Kunden, die Dynamics 365 Finance und Dynamics 365 Supply Chain Management verwenden, aber für das Kundenbeziehungsmanagement (CRM) Nicht-Microsoft-Lösungen einsetzen, entscheiden sich für Dynamics 365 wegen der Unterstützung von Dual-Write.
++ Duales Schreiben bietet eine eng gekoppelte, echtzeitnahe und bidirektionale Integration zwischen Finance and Opertions Apps und Kundenbindungsapps. Diese Integration macht Microsoft Dynamics 365 zum One-Stop-Shop für alle Ihre Geschäftslösungen. Kunden, die Dynamics 365 Finance und Dynamics 365 Supply Chain Management verwenden, aber für das Kundenbeziehungsmanagement (CRM) Nicht-Microsoft-Lösungen einsetzen, entscheiden sich für Dynamics 365 wegen der Unterstützung von Dual-Write.
 + Daten von Kunden, Produkten, Operationen, Projekten und dem Internet der Dinge (Internet of Things, IoT) fließen automatisch durch Dual-Write zu Dataverse. Diese Verbindung ist nützlich für Unternehmen, die an Power Platform-Erweiterungen interessiert sind.
 + Die Dual-Write-Infrastruktur folgt dem No-Code/Low-Code-Prinzip. Es ist nur ein minimaler technischer Aufwand erforderlich, um die Standard-Tabelle-zu-Tabelle-Zuordnungen zu erweitern und um benutzerdefinierte Zuordnungen aufzunehmen.
 + Dual-Write unterstützt sowohl den Online- als auch den Offline-Modus. Microsoft ist das einzige Unternehmen, das Unterstützung für den Online- und Offline-Modus bietet.

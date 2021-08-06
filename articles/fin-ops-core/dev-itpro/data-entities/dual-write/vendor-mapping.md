@@ -4,24 +4,17 @@ description: In diesem Thema wird die Integration von Lieferantendaten zwischen 
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 36cfed92535c1df3ba55fd56bc8aa2f9eccf3003
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346495"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542438"
 ---
 # <a name="integrated-vendor-master"></a>Integrierte Masterdaten von Kreditoren
 
@@ -29,9 +22,7 @@ ms.locfileid: "6346495"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
-Der Begriff *Lieferant* bezieht sich auf eine Lieferantenorganisation oder einen Einzelunternehmer, der Waren oder Dienstleistungen an ein Unternehmen liefert. Der Begriff *Lieferant* ist zwar in Microsoft Dynamics 365 Supply Chain Management ein etabliertes Konzept, in in modellgesteuerten Apps in Dynamics 365 gibt es dieses Konzept aber nicht. Sie können jedoch die Tabelle **Konto/Kontakt** zum Speichern von Lieferantendaten überladen. Die integrierten Masterdaten von Kreditoren führen ein explizites Kreditorenkonzept in modellgesteuerten Apps in Dynamics 365 ein. Sie können entweder das neue Lieferantendesign verwenden oder Lieferantendaten in der Tabelle **Konto/Kontakt** speichern. Duales Schreiben unterstützt beide Ansätze.
+Der Begriff *Lieferant* bezieht sich auf eine Lieferantenorganisation oder einen Einzelunternehmer, der Waren oder Dienstleistungen an ein Unternehmen liefert. Der Begriff *Lieferant* ist zwar in Microsoft Dynamics 365 Supply Chain Management ein etabliertes Konzept, in Kundenbindungsapps gibt es dieses Konzept aber nicht. Sie können jedoch die Tabelle **Konto/Kontakt** zum Speichern von Lieferantendaten überladen. Die integrierten Masterdaten von Lieferanten führen ein explizites Lieferantenkonzept in Kundenbindungsapps ein. Sie können entweder das neue Lieferantendesign verwenden oder Lieferantendaten in der Tabelle **Konto/Kontakt** speichern. Duales Schreiben unterstützt beide Ansätze.
 
 In beiden Ansätzen werden die Lieferantendaten zwischen Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service, und Power Apps-Portalen integriert . In Supply Chain Management stehen die Daten für Workflows wie Bestellanforderungen und Bestellungen zur Verfügung.
 
@@ -52,27 +43,17 @@ Wenn Sie Daten weiterhin in der Tabelle **Konto/Kontakt** speichern möchten, k�
 
 Kreditorendaten enthalten alle Informationen über den Kreditor, z. B. die Kreditorengruppe, Adressen, Kontaktinformationen, das Zahlungsprofil und das Rechnungsprofil. Eine Sammlung von Tabellenzuordnungen arbeitet während der Interaktion der Kreditorendaten zusammen, wie in der folgenden Tabelle dargestellt.
 
-Finance and Operations Apps | Sonstige Dynamics 365-Apps     | Beschreibung
+Finance and Operations-Apps | Customer Engagement-Apps     | Beschreibung
 ----------------------------|-----------------------------|------------
-Kreditor V2                   | Konto                     | Unternehmen, die die Tabelle „Konto“ verwenden, um Lieferantendaten zuspeichern, können diese weiterhin auf die gleiche Weise verwenden. Sie können auch die explizite Lieferantenfunktion nutzen, die dank der Integration von Finance and Operations Apps zur Verfügung stehen.
-Kreditor V2                   | Msdyn\_vendors              | Unternehmen, die eine benutzerdefinierte Lösung für Lieferanten verwenden, können das vordefinierte Lieferantenkonzept nutzen, das in Dataverse durch die Integration von Finance and Operations Apps eingeführt wird. 
-Kreditorengruppen               | msdyn\_vendorgroups         | Diese Vorlage synchronisiert Lieferantengruppeninformationen.
-Kreditorzahlungsmethode       | msdyn\_vendorpaymentmethods | Diese Vorlage synchronisiert Informationen zu den Zahlungsmethoden für Lieferanten.
-CDS-Kontakte V2             | Kontakte                    | Die Vorlage [Kontakte](customer-mapping.md#cds-contacts-v2-to-contacts) synchronisiert alle primären, sekundären und tertiären Kontaktinformationen für Kunden und Lieferanten.
-Zahlungsplanpositionen      | msdyn\_paymentschedulelines | Diese Vorlage [Zahlungsplanpositionen](customer-mapping.md#payment-schedule-lines-to-msdyn_paymentschedulelines) synchronisiert die Referenzdaten für Kunden und Lieferanten.
-Zahlungsplan            | msdyn\_paymentschedules     | Die Vorlage [Zahlungspläne](customer-mapping.md#payment-schedule-to-msdyn_paymentschedules) synchronisiert die Referenzdaten für Zahlungspläne sowohl für Kunden als auch für Lieferanten.
-Zahlungstagpositionen CDS V2    | msdyn\_paymentdaylines      | Die Vorlage [Zahlungstagpositionen](customer-mapping.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) synchronisiert die Referenzdaten für Zahlungstagpositionen für Kunden und Lieferanten.
-Zahlungstage CDS            | msdyn\_paymentdays          | Die Vorlage [Zahlungstage](customer-mapping.md#payment-days-cds-to-msdyn_paymentdays) synchronisiert die Referenzdaten für Zahlungstage sowohl für Kunden als auch für Lieferanten.
-Zahlungsbedingungen            | msdyn\_paymentterms         | Die Vorlage [Zahlungsbedingungen](customer-mapping.md#terms-of-payment-to-msdyn_paymentterms) synchronisiert die Referenzdaten für Zahlungsbedingungen sowohl für Kunden als auch für Lieferanten.
-Namensaffixe                | msdyn\_nameaffixes          | Die Vorlage [Namensaffixe](customer-mapping.md#name-affixes-to-msdyn_nameaffixes) synchronisiert die Referenzdaten für Namensaffixe sowohl für Kunden als auch für Lieferanten.
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [Vendors](includes/VendorsV2-msdyn-vendors.md)]
-
-[!include [Vendor groups](includes/VendVendorGroup-msdyn-vendorgroups.md)]
-
-[!include [Vendor payment methods](includes/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
-
+[CDS-Kontakte V2](mapping-reference.md#115) | Kontakte | Diese Vorlage synchronisiert alle primären, sekundären und tertiären Kontaktinformationen für Debitoren und Kreditoren.
+[Namensaffixe](mapping-reference.md#155) | msdyn_nameaffixes | Diese Vorlage synchronisiert die Referenzdaten für Namensaffixe sowohl für Debitoren als auch für Kreditoren.
+[Zahlungstagpositionen CDS V2](mapping-reference.md#157) | msdyn_paymentdaylines | Diese Vorlage synchronisiert die Referenzdaten für Zahlungstagpositionen sowohl für Debitoren als auch für Kreditoren.
+[Zahlungstage CDS](mapping-reference.md#158) | msdyn_paymentdays | Diese Vorlage synchronisiert die Referenzdaten für Zahlungstage sowohl für Debitoren als auch für Kreditoren.
+[Zahlungsplanpositionen](mapping-reference.md#159) | msdyn_paymentschedulelines | Diese Vorlage synchronisiert die Referenzdaten für Zahlungsplanpositionen sowohl für Debitoren als auch für Kreditoren.
+[Zahlungszeitplan](mapping-reference.md#160) | msdyn_paymentschedules | Diese Vorlage synchronisiert die Referenzdaten für Zahlungspläne sowohl für Debitoren als auch für Kreditoren.
+[Zahlungsbedingungen](mapping-reference.md#161) | msdyn_paymentterms | Diese Vorlage synchronisiert die Referenzdaten für Zahlungsbedingungen sowohl für Debitoren als auch für Kreditoren.
+[Kreditoren V2](mapping-reference.md#202) | msdyn_vendors | Unternehmen, die eine benutzerdefinierte Lösung für Lieferanten verwenden, können das vordefinierte Lieferantenkonzept nutzen, das in Dataverse durch die Integration von Finance and Operations Apps eingeführt wird.
+[Kreditorengruppen](mapping-reference.md#200) | msdyn_vendorgroups | Diese Vorlage synchronisiert Lieferantengruppeninformationen.
+[Kreditorzahlungsmethode](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Diese Vorlage synchronisiert Informationen zu den Zahlungsmethoden für Lieferanten.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

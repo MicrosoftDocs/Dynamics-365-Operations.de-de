@@ -2,7 +2,7 @@
 title: Zurücksetzen von Data Marts FAQ
 description: In diesem Thema finden Sie Antworten auf einige häufig gestellte Fragen zum Zurücksetzen des Data Marts.
 author: jinniew
-ms.date: 06/09/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7cd96c7bc698986ef1ef07ca88479a3d49f22924
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 90abe1fc3e84e0a9777f3eabd790a4b7e9b509c5
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266608"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638266"
 ---
 # <a name="data-mart-resets-faq"></a>Zurücksetzen von Data Marts FAQ
 
@@ -37,6 +37,9 @@ Wenn eine oder mehrere der folgenden Aussagen auf Ihre Situation zutreffen, kann
 
 - Die Anwendungsdatenbank wurde wiederhergestellt.
 - Sie haben ein Support-Ticket geöffnet, und ein Support-Techniker hat Sie angewiesen, den Data Mart als Teil einer Fehlerbehebung zurückzusetzen.
+ 
+> [!NOTE]
+> Der Vorgang des Zurücksetzens eines Data Mart wird von der Anzahl der Hauptbuch- und Budgetbuchungen in Ihrer Datenbank beeinflusst. Abhängig von der Anzahl der Transaktionen in Ihrem System kann ein Zurücksetzen des Data Mart in nur 15 Minuten abgeschlossen sein oder bis zu vier Stunden dauern. Sollte Ihr Zurücksetzen jedoch länger als vier Stunden dauern, empfehlen wir Ihnen, sich an den Support zu wenden.
  
 ## <a name="when-is-a-data-mart-reset-inappropriate"></a>Wann ist ein Data Mart-Reset unangebracht?
 

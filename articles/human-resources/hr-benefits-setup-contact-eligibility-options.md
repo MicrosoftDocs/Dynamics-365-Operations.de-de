@@ -2,7 +2,7 @@
 title: Berechtigungsoptionen für persönliche Kontakte konfigurieren
 description: Konfigurieren Sie Berechtigungsoptionen für persönliche Kontakte in Microsoft Dynamics 365 Human Resources. Persönliche Kontakte können Begünstigte oder Unterhaltsberechtigte sein.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d85677973f67f0c68de6c5ede62c142524939833
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 071523e2a1e9de6f0ed2b77e4ad6802efb0073f7
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054403"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558248"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>Berechtigungsoptionen für persönliche Kontakte konfigurieren
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Artikel erfahren Sie, wie Sie Typen für persönliche Kontakte für die Verwendung von Vorteilen in Microsoft Dynamics 365 Human Resources konfigurieren. Persönliche Kontakte können Begünstigte oder Unterhaltsberechtigte sein. 
+In diesem Thema erfahren Sie, wie Sie Typen für persönliche Kontakte für die Verwendung von Vorteilen in Microsoft Dynamics 365 Human Resources konfigurieren. Persönliche Ansprechpartner sind die Personen, die von Ihren Plänen abgedeckt werden (abhängige Objekte) oder die von Ihren Plänen profitieren (Begünstigte). Angehörige sind in der Regel Ehepartner oder Kinder. Begünstigte können Ehepartner, Kinder, Trusts oder Eltern sein.
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellung** die Option **Berechtigungsoptionen für persönliche Kontakte**.
 

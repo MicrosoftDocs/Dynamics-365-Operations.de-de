@@ -2,7 +2,7 @@
 title: Erstellen und Aktualisieren einer Rücklieferungs- und Rückerstattungsrichtlinie für einen Kanal
 description: In diesem Thema wird erläutert, wie Sie eine Rücklieferungs- und Rückerstattungsrichtlinie für einen Kanal einrichten.
 author: ShalabhjainMSFT
-ms.date: 07/02/2021
+ms.date: 07/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 6cb2bb77a62ee9fc2ea6115949e30496bf3365c4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca5797cfc2d92c4cbc98d3f64d60e1fd260f0418
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345107"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558296"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Retouren- und Rückerstattungsrichtlinie für einen Kanal erstellen und aktualisieren
 
@@ -36,12 +36,21 @@ Der Geltungsbereich der Richtlinie beschränkt sich derzeit auf die Festlegung d
 
 ## <a name="enable-return-policy"></a>Aktivieren der Rücklieferungsrichtlinie
 
-Gehen Sie wie folgt vor, um die Funktion der Kanal-Rücklieferungsrichtlinie zu aktivieren:
+Führen Sie die folgenden Schritte aus, um die Rückgaberichtlinienfunktionalität in der Commerce-Zentralverwaltung zu aktivieren.
 
 1. Gehen Sie in Dynamics 365 Commerce zum Arbeitsbereich **Funktionsverwaltung**.
 1. Suchen Sie in der Liste der Funktionsnamen nach der Funktion **Aktivieren der Kanal-Rücklieferungsrichtlinien**.
 1. Wählen Sie **Jetzt aktivieren**.
-1. Führen Sie auf der Seite **Verteilungsplan** den Vorgang **1110** (globale Konfiguration) zum Verteilen der Funktionsänderung aus. 
+1. Führen Sie auf der Seite **Verteilungsplan** den Vorgang **1110** (globale Konfiguration) zum Verteilen der Funktionsänderung aus.
+
+## <a name="initialize-the-commerce-scheduler"></a>Commerce-Planer initialisieren
+
+Nach dem Aktivieren der **Richtlinien zur Kanalrückgabe aktivieren** müssen Sie den Commerce-Planer initialisieren, um sicherzustellen, dass neue Änderungen der Funktionsdatenbank über Commerce Data Exchange (CDX)-Synchronisierung hinzugefügt werden. 
+
+Um den Commerce-Planer in der Commerce-Zentralverwaltung zu initialisieren, folgen Sie diesen Schritten.
+
+- Gehen Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Commerce-Planer \> Commerce-Planer initialisieren**. Suchen Sie alternativ nach „Commerce-Planer initialisieren“.
+- Stellen Sie im Dialogfeld **Commerce-Planer initialisieren** sicher, dass die Option **Vorhandene Konfiguration löschen** auf **Nein** gesetzt ist, und wählen Sie dann **OK** aus.
 
 ## <a name="configure-return-policy"></a>Konfigurieren der Rücklieferungsrichtlinie
 

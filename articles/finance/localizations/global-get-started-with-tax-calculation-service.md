@@ -2,7 +2,7 @@
 title: Erste Schritte mit der Steuerberechnung
 description: In diesem Thema wird erläutert, wie Steuerberechnungen eingerichtet werden.
 author: wangchen
-ms.date: 05/17/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 454608c2c3a86b71cf181129c762c837c5165902
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: b76184b3f1a97941fea7539aa3fac2c11b1f59b1
+ms.sourcegitcommit: cef2986e24d0510957b5db742545c266dec4275c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336655"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6644973"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Erste Schritte mit der Steuerberechnung (Vorschau)
 
@@ -58,15 +58,16 @@ Bevor Sie die Vorgehensweisen in diesem Thema abschließen können, müssen die 
 Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristische Person. Sie müssen dieses Verfahren nur einmal ausführen und können es in jeder juristischen Person in RCS ausführen.
 
 1. Melden Sie sich bei [RCS](https://marketing.configure.global.dynamics.com/) an.
-2. Fügen Sie im Arbeitsbereich **Elektronische Berichterstattung** einen neuen Konfigurationsanbieter hinzu. Verwenden Sie Ihren Firmennamen als Namen des Anbieters. Weitere Informationen finden Sie unter [Konfigurationsanbieter erstellen und als aktiv markieren](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-3. Wählen Sie den Konfigurationsanbieter aus, den Sie gerade erstellt haben, und wählen Sie dann **Aktivieren** aus.
-4. Wählen Sie den **Microsoft**-Konfigurationsanbieter und dann **Repositorys** aus.
-5. Wählen Sie im Feld **Typ** **Global** aus.
-6. Wählen Sie **Öffnen**.
-7. Gehen Sie zu **Steuerdatenmodell**, erweitern Sie den Dateibaum und wählen Sie dann **Steuerkonfiguration** aus.
-8. Wählen Sie die neueste Version aus und wählen Sie dann **Importieren**.
-9. Gehen Sie zurück zum Arbeitsbereich **Globalisierungsfunktionen (Vorschau)**, wählen Sie **Funktionen** aus, wählen Sie die Kachel **Steuerberechnung** und dann **Hinzufügen** aus.
-10. Wählen Sie eine der folgenden Funktionstypen aus:
+2. Suchen Sie im Arbeitsbereich **Funktionsverwaltung** die Funktion **Globalisierungsfunktionen** und aktivieren Sie sie.
+3. Fügen Sie im Arbeitsbereich **Elektronische Berichterstattung** einen neuen Konfigurationsanbieter hinzu. Verwenden Sie Ihren Firmennamen als Namen des Anbieters. Weitere Informationen finden Sie unter [Konfigurationsanbieter erstellen und als aktiv markieren](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+4. Wählen Sie den Konfigurationsanbieter aus, den Sie gerade erstellt haben, und wählen Sie dann **Aktivieren** aus.
+5. Wählen Sie den **Microsoft**-Konfigurationsanbieter und dann **Repositorys** aus.
+6. Wählen Sie im Feld **Typ** **Global** aus.
+7. Wählen Sie **Öffnen**.
+8. Gehen Sie zu **Steuerdatenmodell**, erweitern Sie den Dateibaum und wählen Sie dann **Steuerkonfiguration** aus.
+9. Wählen Sie die neueste Version aus und wählen Sie dann **Importieren**.
+10. Gehen Sie zurück zum Arbeitsbereich **Globalisierungsfunktionen**, wählen Sie **Funktionen** aus, wählen Sie die Kachel **Steuerberechnung** und dann **Hinzufügen** aus.
+11. Wählen Sie eine der folgenden Funktionstypen aus:
 
     - **Neue Funktion** – Erstellen Sie eine Funktionseinrichtung mit leerem Inhalt.
     - **Auf vorhandener Funktion basierend** – Erstellen Sie eine Funktion aus einer vorhandenen Funktion und kopieren Sie den Inhalt aus der vorhandenen Funktionseinrichtung.

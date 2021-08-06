@@ -2,7 +2,7 @@
 title: Vorhersagen für Debitorenzahlungen aktivieren (Vorschau)
 description: In diesem Thema wird erläutert, wie Sie die Funktion „Debitorenzahlungsvorhersagen“ in Finance Insights aktivieren und konfigurieren.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a9b2e8d46debf8e065361d85f10162cda56b62e8
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 03320aa925ae94ef39d54e64701846089ec66084
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349033"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638583"
 ---
 # <a name="enable-customer-payment-predictions-preview"></a>Vorhersagen für Debitorenzahlungen aktivieren (Vorschau)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie Sie die Funktion „Debitorenzahlungsvorhersagen“ in Finance Insights aktivieren und konfigurieren. Sie aktivieren die Funktion im Arbeitsbereich **Funktionsverwaltung** und geben die Konfigurationseinstellungen auf der Seite **Parameter für Finance Insights** ein. Dieses Thema enthält auch Informationen, mit denen Sie die Funktion effektiv nutzen können.
 

@@ -2,7 +2,7 @@
 title: Urlaubs- und Abwesenheitsübersicht
 description: In Dynamics 365 Human Resources bietet der Arbeitsbereich „Urlaub und Abwesenheit“ ein flexibles Framework zum Erstellen neuer Urlaubspläne. Er bietet außerdem Workflows zum Verwalten von Anforderungen und eine intuitive Self-Service-Seite, auf der Mitarbeiter arbeitsfreie Zeit anfordern können.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b41838b447dcbffc656ab759fcc4746abb620661
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 7a3c305910f41ebd775292dee91a6044c2cdb244
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339714"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639485"
 ---
 # <a name="leave-and-absence-overview"></a>Urlaubs- und Abwesenheitsübersicht
 
@@ -35,6 +35,7 @@ Bevor Sie Urlaubspläne für Ihre Mitarbeiter erstellen, müssen Sie einige Einr
 - [Urlaub- und Abwesenheitsparameter konfigurieren](hr-leave-and-absence-parameters.md)
 - [Einen Arbeitszeitkalender erstellen](hr-leave-and-absence-working-time-calendar.md)
 - [Einen Urlaubsanforderungsworkflow erstellen](hr-leave-and-absence-workflow.md)
+- [Konfigurieren Sie die Rolle des Abwesenheitsmanagers](hr-configure-absence-manager.md)
 
 ## <a name="create-and-manage-leave-plans"></a>Dient zum Erstellen und Verwalten von Abwesenheitsplänen
 
@@ -50,8 +51,9 @@ Bevor Sie Urlaubspläne für Ihre Mitarbeiter erstellen, müssen Sie Urlaubs- un
 
 Ihre Mitarbeiter können Freizeitanträge einreichen und Sie können sie im Arbeitsbereich **Mitarbeiter Selbstservice** verwalten.
 
-[Arbeitsfreie Zeit anfordern](hr-employee-self-service-request-time-off.md)
-[Urlaubs- und Abwesenheitsanforderungen verwalten](hr-employee-self-service-manage-requests.md)
+- [Arbeitsfreie Zeit anfordern](hr-employee-self-service-request-time-off.md)
+- [Urlaubs- und Abwesenheitsanforderungen verwalten](hr-employee-self-service-manage-requests.md)
+- [Die Rolle des Abwesenheitsmanagers konfigurieren](hr-configure-absence-manager.md)
 
 
 

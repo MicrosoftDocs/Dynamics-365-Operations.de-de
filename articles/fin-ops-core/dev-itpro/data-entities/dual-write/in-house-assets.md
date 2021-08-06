@@ -4,30 +4,21 @@ description: Dieses Thema beschreibt, wie Sie Microsoft Dynamics 365 Field Servi
 author: RamaKrishnamoorthy
 ms.date: 01/27/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: ebda6b5679ec601513fb6d046725b396e69fe0f3
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 9ba92b9bf0e35aa812fc7077d998c8779ebe622e
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941413"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542342"
 ---
 # <a name="in-house-assets-for-servicing"></a>Interne Anlagen für Wartungsarbeiten
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Microsoft Dynamics 365 Field Service wurde entwickelt, um Kundenanlagen zu unterstützen. Asset Management für Dynamics 365 Supply Chain Management wurde entwickelt, um das interne Vermögen zu erhalten. Durch die Integration dieser beiden Apps können Sie Field Service verwenden, um sowohl Kunden- als auch interne Assets zu warten. Sie können die Assets auch anhand des Funktionsstandorts oder der Hierarchie klassifizieren und die Wartung auf einer detaillierten Ebene verfolgen.
 
@@ -37,43 +28,18 @@ Weitere Informationen finden Sie unter [Integrieren Dynamics 365 Field Service u
 
 Hausinterne Anlagen enthalten eine Sammlung von wichtigen Tabellenzuordnungen, die während der Dateninteraktion zusammenarbeiten, wie in der folgenden Tabelle dargestellt.
 
-| Finance and Operations Apps | Modellgesteuerte Anwendungen in Dynamics 365 | Beschreibung |
+| Finance and Operations-Apps | Customer Engagement-Apps | Beschreibung |
 |-----------------------------|-----------------------------------|-------------|
-| Wählen Sie Anlagenverwaltung Anlagen Lebenszyklusmodelle | Msdyn\_AssetLifecyclemodels | |
-| Wählen Sie Anlagenverwaltung Anlagen Lebenszyklusstatus | msdyn\_assetlifecyclestates | |
-| Anlagenverwaltungs-Anlagen | msdyn\_customerassets | |
-| Anlagenverwaltungs-Anlagentypen | msdyn\_customerassetcategories | |
-| Anlagenverwaltung funktionale StandortevLebenszyklusmodelle | Msdyn \_functionallocationlifecyclemodels | |
-| Anlagenverwaltung funktionale Standorte Lebenszyklusstatus | msdyn\_functionallocationlifecyclestates | |
-| Anlageverwaltung und funktionale Standorte | msdyn\_functionallocations | |
-| Anlageverwaltung und funktionale Standorttypen | msdyn\_functionallocationtypes | |
-| Anlagenverwaltungshersteller | Msdyn \_Hersteller | |
-| Anlagenverwaltungsmodelle | msdyn\_models | |
-| Anlagenverwaltungsgarantie | msdyn\_warranties | |
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [lifecycle models](includes/AssetManagementAssetLifecycleModels-msdyn-assetlifecyclemodels.md)]
-
-[!include [lifecycle states](includes/AssetManagementAssetLifecycleStates-msdyn-assetlifecyclestates.md)]
-
-[!include [assets](includes/AssetManagementAssets-msdyn-customerassets.md)]
-
-[!include [asset types](includes/AssetManagementAssetTypes-msdyn-customerassetcategories.md)]
-
-[!include [functional location lifecycle models](includes/AssetManagementFunctionalLocationLifecycleModels-msdyn-functionallocationlifecyclemodels.md)]
-
-[!include [functional location lifecycle states](includes/AssetManagementFunctionalLocationLifecycleStates-msdyn-functionallocationlifecyclestates.md)]
-
-[!include [functional locations](includes/AssetManagementFunctionalLocations-msdyn-functionallocations.md)]
-
-[!include [functional location types](includes/AssetManagementFunctionalLocationTypes-msdyn-functionallocationtypes.md)]
-
-[!include [manufacturers](includes/AssetManagementManufacturers-msdyn-manufacturers.md)]
-
-[!include [models](includes/AssetManagementModels-msdyn-models.md)]
-
-[!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
-
+[Wählen Sie Anlagenverwaltung Anlagen Lebenszyklusmodelle](mapping-reference.md#119) | msdyn_assetlifecyclemodels | |
+[Wählen Sie Anlagenverwaltung Anlagen Lebenszyklusstatus](mapping-reference.md#120) | msdyn_assetlifecyclestates | |
+[Anlagenverwaltungs-Anlagentypen](mapping-reference.md#124) | msdyn_customerassetcategories | |
+[Anlagenverwaltungs-Anlagen](mapping-reference.md#125) | msdyn_customerassets | |
+[Anlagenverwaltung funktionale StandortevLebenszyklusmodelle](mapping-reference.md#134) | msdyn_functionallocationlifecyclemodels | |
+[Anlagenverwaltung funktionale Standorte Lebenszyklusstatus](mapping-reference.md#135) | msdyn_functionallocationlifecyclestates | |
+[Anlageverwaltung und funktionale Standorttypen](mapping-reference.md#137) | msdyn_functionallocationtypes | |
+[Anlageverwaltung und funktionale Standorte](mapping-reference.md#136) | msdyn_functionallocations | |
+[Anlagenverwaltungshersteller](mapping-reference.md#153) | msdyn_manufacturers | |
+[Anlagenverwaltungsmodelle](mapping-reference.md#154) | msdyn_models | |
+[Anlagenverwaltungsgarantie](mapping-reference.md#209) | msdyn_warranties | |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

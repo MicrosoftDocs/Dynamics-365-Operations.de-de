@@ -2,7 +2,7 @@
 title: Abdeckungsoptionen erstellen
 description: Abdeckungsoptionen in Microsoft Dynamics 365 Human Resources sind Deckungsgrade für die Wahl eines Teilnehmers in einem Leistungsplan oder -programm.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,21 +15,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d9f67a97ec57bade840e1035c6011b94427a77c4
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 1e8f13075a9835963c231a8e4e8a737368a952ba
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055579"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558224"
 ---
 # <a name="create-coverage-options"></a>Abdeckungsoptionen erstellen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Abdeckungsoptionen in Microsoft Dynamics 365 Human Resources sind Deckungsgrade für die Wahl eines Teilnehmers in einem Leistungsplan oder -programm. Zu den Deckungsoptionen könnten beispielsweise gehören **Nur für Mitarbeiter** für einen medizinischen Plan oder **2x Gehalt** für eine Lebensversicherung. Nach der Definition können Sie die Optionen für die Leistungsdeckung wiederverwenden. Sie können eine Option einem oder mehreren Plänen zuordnen.
+Die Deckungsoptionen bestimmen, wer versichert werden soll oder wie viel Deckung in einem Versicherungsplan verfügbar ist. Für einen medizinischen Plan könnten Sie beispielsweise eine **nur für Angestellte** Option, und **Angestellter + 1** Option und eine Option **Familie** haben. Für Lebensversicherungen bieten Sie möglicherweise Deckung für **1x Gehalt** oder **2x Gehalt**.
 
-Nachdem Sie die Abdeckungsoptionen definiert haben, hängen Sie die Abdeckungsoptionen an einen Vorteilsplantyp an. Der Plantyp wird dann einem Vorteilsplan oder ‑programm zugeordnet. Abdeckungsoptionen, die einem Plantyp zugeordnet sind, sind für alle Pläne verfügbar, die mit diesem Plantyp erstellt wurden. 
+Nachdem die Optionen für die Leistungsdeckung definiert sind, können Sie diese wiederverwenden. Sie können eine Option einem oder mehreren Plänen zuordnen.
 
+> [!IMPORTANT]
+> Nachdem Sie die Abdeckungsoptionen definiert haben, hängen Sie die Abdeckungsoptionen an einen Vorteilsplantyp an. Der Plantyp wird dann einem Vorteilsplan oder ‑programm zugeordnet. Abdeckungsoptionen, die einem Plantyp zugeordnet sind, sind für alle Pläne verfügbar, die mit diesem Plantyp erstellt wurden.
+
+## <a name="create-coverage-options"></a>Abdeckungsoptionen erstellen
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellung** die Option **Abdeckungsoptionen**.
 
 2. Wählen Sie **Neu** aus.
@@ -40,7 +44,7 @@ Nachdem Sie die Abdeckungsoptionen definiert haben, hängen Sie die Abdeckungsop
    | --- | --- |
    | **Abdeckungsoption** | Ein eindeutiger Name für die Abdeckungsoption. |
    | **Beschreibung** | Eine Beschreibung der Abdeckungsoption. |
-   | **Abdeckungscode** | Abdeckungscodes weisen Mindest‑ und Höchstbeträge für jede berechtigten abgedeckten Personentyp zu. Ein Abdeckungscode gibt an, wer abgedeckt ist oder was die zulässige Abdeckungssumme für einen Plantyp ist. Sie können die Abdeckungssumme als Dollarbetrag oder als Prozentsatz ausdrücken. Beispiel:</br></br>- **MA+1** – Um qualifiziert zu sein, muss für den Mitarbeiter ein Unterhaltsberechtigter ausgewählt sein (wenn mehr als einer ausgewählt ist, sind sie nicht mehr qualifiziert).</br></br>- **MA+Familie** – Um qualifiziert zu sein, müssen für den Mitarbeiter mindestens zwei Unterhaltsberechtigte ausgewählt werden. |
+   | **Abdeckungscode** | Abdeckungscodes weisen Mindest‑ und Höchstbeträge für jede berechtigten abgedeckten Personentyp zu. Ein Abdeckungscode gibt an, wer abgedeckt ist oder was die zulässige Abdeckungssumme für einen Plantyp ist. Sie können die Abdeckungssumme als Dollarbetrag oder als Prozentsatz ausdrücken. Beispiel:<ul><li>**MA+1** – Um qualifiziert zu sein, muss für den Mitarbeiter ein Unterhaltsberechtigter ausgewählt sein (wenn mehr als einer ausgewählt ist, sind sie nicht mehr qualifiziert).</li><li>**MA+Familie** – Um qualifiziert zu sein, müssen für den Mitarbeiter mindestens zwei Unterhaltsberechtigte ausgewählt werden.</li></ul> |
    | **Maximale Anzahl** | Die Höchstzahl der Unterhaltsberechtigten. |
    | **Status** | Der Status der Abdeckungsoption. Wenn der Status der Abdeckungsoption auf „Inaktiv“ gesetzt ist, kann die Abdeckungsoption für die Plantypen nicht ausgewählt werden. |
    | **Prozentsatz** | Der Prozentbetrag. Dieses Feld ist nur aktiv, wenn im Feld „Abdeckungscode“ die Option „%% x Gehalt“ ausgewählt wurde. |

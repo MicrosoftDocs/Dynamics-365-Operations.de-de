@@ -2,7 +2,7 @@
 title: Momentaufnahmenübersicht (Vorschau)
 description: In diesem Thema wird die Momentaufnahmefunktion beschrieben, mit der Sie eine Cashflow-Planung zur späteren Analyse oder zum Vergleich mit Istdaten speichern können. Wenn Sie eine Cashflow-Planung erstellen, können Sie diese Prognose als „Momentaufnahme“ speichern. Mit dieser Momentaufnahme können Sie dann die Konten bearbeiten, die in der Prognose enthalten waren, oder die Prognose in der Momentaufnahme mit den Istwerten vergleichen.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23df01603e74847f6f01a1eaa84b8fd3bb1d6e59
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: cf39e5233b2ef4d50d6c5ace57ba2574ed5fe6fe
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337207"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638343"
 ---
 # <a name="snapshots-overview-preview"></a>Momentaufnahmenübersicht (Vorschau)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Mit Momentaufnahmen können Unternehmen Informationen zu ihrer Bargeldposition und Bargeldplanungen zu einem bestimmten Zeitpunkt bearbeiten und speichern. Sie können die Momentaufnahme mit den Ist-Finanzdaten vergleichen, die Abweichung untersuchen und diese Informationen verwenden, um die Cashflow-Planung im Laufe der Zeit zu verbessern. Genauer können Momentaufnahmen folgendermaßen verwendet werden:
 

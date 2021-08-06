@@ -2,7 +2,7 @@
 title: Urlaubsanträge in Teams verwalten
 description: In diesem Thema wird beschrieben, wie Sie arbeitsfreie Zeit in der Dynamics 365 Human Resources-App in Microsoft Teams beantragen.
 author: andreabichsel
-ms.date: 05/25/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2a74b895052d017ccbe397bfb9a45609646b2f93
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356511"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639437"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Urlaubsanträge in Teams verwalten
 
@@ -166,6 +166,10 @@ Wenn Sie Probleme bei der Anmeldung oder Verwendung der Dynamics 365 Human Resou
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Sie können sich nicht in Teams bei der Human Resources-App anmelden
 
 Wenn Sie sich nicht bei der App anmelden können, ist es möglich, dass das Konto, das Sie zur Anmeldung bei Microsoft Teams verwenden, keinem Mitarbeiterdatensatz in Dynamics 365 Human Resources zugeordnet ist. Wenden Sie sich an Ihren Systemadministrator, um sicherzustellen, dass Ihr Mitarbeiterdatensatz korrekt zugeordnet ist.
+
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Kann das die Dynamics 365 Human Resources Umgebung in den Einstellungen nicht finden
+
+Wenn Sie nicht die richtige Dynamics 365-Umgebung auswählen können, wurde der Benutzerdatensatz möglicherweise nicht korrekt synchronisiert. Wenden Sie sich an Ihren Systemadministrator, um den Benutzerdatensatz neu zu erstellen und ihn mit den Benutzeranmeldeinformationen zu verknüpfen. Dann versuchen Sie, sich in ein paar Minuten bei der Human Resources App für Microsoft Teams anzumelden.
 
 ### <a name="translations-dont-display-correctly"></a>Übersetzungen werden nicht korrekt angezeigt
 

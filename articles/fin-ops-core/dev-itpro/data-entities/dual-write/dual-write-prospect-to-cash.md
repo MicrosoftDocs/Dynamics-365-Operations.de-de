@@ -4,30 +4,21 @@ description: Dieses Thema bietet Informationen über die Prospect-to-Cash iDual-
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7554189c779404559187ecd99f4bca4636054446
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0fcbc5b0f571e9f2cf7f1ad7c1e976d022199b47
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361392"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542270"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospect-to-cash in Dual-write
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Ein wichtiges Ziel der meisten Unternehmen ist es, Interessenten in Kunden umzuwandeln und dann eine kontinuierliche Geschäftsbeziehung mit diesen Kunden aufrechtzuerhalten. In Microsoft Dynamics 365 Apps erfolgt der Prospect-to-Cash-Prozess durch Angebots- oder Auftragsbearbeitungs-Workflows, und die Finanzzahlen werden abgestimmt und anerkannt. Durch die Integration von Prospect-to-Cash mit Dual-Write wird ein Workflow erstellt, der ein Angebot und einen Auftrag, die entweder aus Dynamics 365 Sales oder Dynamics 365 Supply Chain Management stammen, aufnimmt und das Angebot und den Auftrag in beiden Anwendungen verfügbar macht.
 
@@ -70,6 +61,7 @@ Angebote können entweder im Vertrieb oder im Supply Chain Management erstellt w
 + Die Spalten **Frachtkonditionen**, **Lieferbedingungen**, **Versandmethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Spalten zuzuordnen, müssen Sie eine Wertzuordnung, die für die Daten in den Organisationen, zwischen denen die Tabelle synchronisiert wird, spezifisch ist.
 
 Wenn Sie auch die Field Service-Lösung verwenden, müssen Sie den **Angebotsanforderungspositions-Erstellungs**-Parameter erneut aktivieren. Durch erneutes Aktivieren des Parameters können Sie mit der Schnellerstellungsfunktion weiterhin Angebotspositionen erstellen.
+
 1. Navigieren Sie zu Ihrer Dynamics 365 Sales-Anwendung.
 2. Wählen Sie das Einstellungssymbol in der oberen Navigationsleiste.
 3. Wählen Sie **Erweiterte Einstellungen**.
@@ -121,43 +113,25 @@ Prospect-to-Cash umfasst eine Sammlung von Kerntabellenzuordnungen, die während
 
 | Finance and Operations Apps | Customer Engagement-Apps | Beschreibung |
 |-----------------------------|-----------------------------------|-------------|
-| Verkaufsrechnungskopfzeilen V2    | Rechnungen                          | Die Tabelle „Verkaufsrechnungskopfzeilen V2“ in der Finance and Operations-App enthält Rechnungen für Aufträge und Freitextrechnungen. Ein Filter wird in Dataverse für duales Schreiben angewendet, der alle Freitext-Rechnungsdokumente herausfiltert. |
-| Verkaufsrechnungspositionen V2      | Rechnungsdetails                    |             |
-| Auftragskopfzeilen CDS     | salesorders                       |             |
-| CDS-Auftragspositionen       | salesorderdetails                 |             |
-| Auftragsgrundlagencodes    | msdyn\_salesorderorigins          |             |
-| CDS-Verkaufsangebotskopf  | Angebote                            |             |
-| CDS-Verkaufsangebotspositionen   | quotedetails                      |             |
+[Alle Produkte](mapping-reference.md#138) | msdyn_globalproducts | |
+[Debitoren V3](mapping-reference.md#101) | Konten | |
+[Debitoren V3](mapping-reference.md#116) | Kontakte | |
+[Kontakte V2](mapping-reference.md#221) | msdyn_contactforparties | |
+[Auftragskopfzeilen CDS](mapping-reference.md#217) | salesorders | |
+[CDS-Auftragspositionen](mapping-reference.md#216) | salesorderdetails | |
+[CDS-Verkaufsangebotskopf](mapping-reference.md#215) | Angebote | |
+[CDS-Verkaufsangebotspositionen](mapping-reference.md#214) | quotedetails | |
+[Freigegebene Produkte V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
+[Verkaufsrechnungskopfzeilen V2](mapping-reference.md#118) | Rechnungen | Die Tabelle „Verkaufsrechnungskopfzeilen V2“ in der Finance and Operations-App enthält Rechnungen für Aufträge und Freitextrechnungen. Ein Filter wird in Dataverse für duales Schreiben angewendet, der alle Freitext-Rechnungsdokumente herausfiltert. |
+[Verkaufsrechnungspositionen V2](mapping-reference.md#117) | Rechnungsdetails | |
+[Auftragsgrundlagencodes](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
-Hier sind die zugehörigen Kerntabellenzuordnungen für Prospect-to-Cash:
-
-+ [Debitoren V3 zu Konten](customer-mapping.md#customers-v3-to-accounts)
-+ [CDS-Kontakte V2 zu Kontakten](customer-mapping.md#cds-contacts-v2-to-contacts)
-+ [Debitoren V3 zu Kontakten](customer-mapping.md#customers-v3-to-contacts)
-+ [Freigegebene Produkte V2 zu msdyn_sharedproductdetails](product-mapping.md#released-products-v2-to-msdyn_sharedproductdetails)
-+ [Alle Produkte zu msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
-+ [Preisliste](product-mapping.md)
+Informationen zu Preislisten finden Sie unter [Einheitliche Produktumgebung](product-mapping.md).
 
 ## <a name="limitations"></a>Einschränkungen
+
 - Rücklieferungen werden nicht unterstützt.
 - Gutschriften werden nicht unterstützt.
-- Für die Stammdaten müssen Finanzdimensionen festgelegt werden, z. B. Debitor und Kreditor. Wenn ein Kunde zu einem Angebot oder Auftrag hinzugefügt wird, fließen die mit dem Kundendatensatz verknüpften Finanzdimensionen automatisch in den Auftrag ein. Derzeit enthält duales Schreiben keine Daten zu Finanzdimensionen für Stammdaten. 
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
-
-[!include [sales invoice line](includes/SalesInvoiceLineV2Entity-invoicedetail.md)]
-
-[!include [sales order header](includes/SalesOrderHeaderCDSEntity-salesorder.md)]
-
-[!include [sales order line](includes/SalesOrderLineCDSEntity-salesorderdetails.md)]
-
-[!include [sales order origin](includes/SalesOrderOriginEntity-msdyn-salesorderorigin.md)]
-
-[!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
-
-[!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
-
+- Für die Stammdaten müssen Finanzdimensionen festgelegt werden, z. B. Debitor und Kreditor. Wenn ein Kunde zu einem Angebot oder Auftrag hinzugefügt wird, fließen die mit dem Kundendatensatz verknüpften Finanzdimensionen automatisch in den Auftrag ein. Derzeit enthält duales Schreiben keine Daten zu Finanzdimensionen für Stammdaten.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
-title: Plantypen erstellen
+title: Übersicht über den Plantyp
 description: Ein Plantyp in Microsoft Dynamics 365 Human Resources ist eine übergeordnete Gruppierung bestimmter Vorteilstypen. Jeder Plantyp verfügt über einen Plantypcode, der Regeln für den Plantyp festlegt.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,34 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: eb4746425c2faa3c0b1bd3940bf2e03cf7f9595c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 806b3839feb1e1bf889747986388a56113c3ebe1
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057861"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558272"
 ---
-# <a name="create-plan-types"></a>Plantypen erstellen
+# <a name="plan-type-overview"></a>Übersicht über den Plantyp
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ein Plantyp in Microsoft Dynamics 365 Human Resources ist eine übergeordnete Gruppierung bestimmter Vorteilstypen. Jeder Plantyp verfügt über einen Plantypcode, der Regeln für den Plantyp festlegt. Zum Beispiel würde der Plantyp „Leben – Basis“ den Plantypcode „Leben“ haben, da er eine Art von Lebensversicherung ist und den Regeln entsprechen muss, die für den Lebensplantypcode festgelegt wurden. Ein anderer Plantyp könnte „Leben – zusätzlich“ sein, ebenfalls mit dem Plantypcode „Leben“.
+Ein Plantyp ist eine übergeordnete Gruppierung bestimmter Vorteilstypen. Jeder Plantyp verfügt über einen Plantypcode, der Regeln für den Plantyp festlegt. Zum Beispiel würde der Plantyp **Leben – Basis** den Plantypcode **Leben** haben, da er eine Art von Lebensversicherung ist und den Regeln entsprechen muss, die für den **Lebens** plantypcode festgelegt wurden. Ein anderer Plantyp könnte **Zusätzliches Leben** sein. Dieser Plantyp hat auch den **Leben** Typenplancode.
 
 Jeder Plantyp gibt an, ob ein Mitarbeiter sich für einen oder mehrere Pläne dieses Typs registrieren kann. Zum Beispiel könnte sich ein Mitarbeiter vermutlich sowohl für die Policen „Leben – Basis“ als auch „Leben – zusätzlich“ des Plantyps „Leben“ registrieren. Ein Mitarbeiter darf sich vermutlich nur für eine Police vom Typ „Medizinisch“ registrieren.
 
 Wenn ein Plantyp Kontakte umfasst, gibt der Plantyp an, ob Kontakte Begünstigte oder Unterhaltsberechtigte sind. Zum Beispiel würde ein Planty „Leben – Basis“ Begünstigte haben, während ein Plantyp „Medizinisch – Basis“ Unterhaltsberechtigte haben würde. In einigen Fällen hat ein Plan möglicherweise keine persönlichen Kontakte. Beispiel: ein flexibles Ausgabenkonto oder Parkgebühr.
 
 Ein Plantyp kann Abdeckungsoptionen definieren. Die Abdeckungsoptionen werden im Formular „Abdeckungsoptionen“ definiert. Eine Abdeckungsoption kann die Höhe des Vorteils oder die Kontakte angeben, die für den Plantyp berechtigt sind. Wenn der Kontakttyp beispielsweise „Begünstigter“ ist, sollten in der Abdeckungsoption die Bedingungen festgelegt werden, die definieren, zum Erhalt welcher Vorteile der Begünstigte berechtigt ist. Wenn der Kontakttyp „Unterhaltsberechtigt“ ist, sollte die Abdeckungsoption die Beziehung zwischen dem Unterhaltsberechtigten und dem Mitarbeiter definieren. 
+
+> [!IMPORTANT]
+> Das Formular enthält wichtige Daten, die sich auf die Optionen auswirken, die bei der Erstellung eines neuen Leistungsplans zur Verfügung stehen:
+>
+> - **Plantypcode** – Dieses Feld beeinflusst, was auf der **Konfiguration** Registerkarte angezeigt wird, wenn der eigentliche Leistungsplan eingerichtet ist.  
+> - **Gleichzeitige Registrierung** – Dieses Feld legt fest, ob Mehrfachregistrierungen zulässig sind. (Bei einem medizinischen Plan ist dieses Feld normalerweise auf **Eine Einschreibung** festegelegt.)
+> - **Kontaktart** – Dieses Feld ermöglicht das Hinzufügen von Angehörigen oder Begünstigten zu einem Plan. Wenn es auf **Keiner** festgelegt ist, haben Mitarbeiter, die Leistungen in Anspruch nehmen, nicht die Möglichkeit, entweder einen Begünstigten oder einen Angehörigen auszuwählen.
+> - **Deckungsoptionen** – Verwenden Sie dieses Feld, um die Deckungsoptionen mit den Planarten zu verknüpfen. Sie definiert entweder die Personen, die von dieser Planart abgedeckt werden, oder die Deckungssummen, die für diese Planart zur Verfügung stehen. Sie können beispielsweise festlegen, dass nur der Mitarbeiter, der Mitarbeiter und eine weitere Person oder der Mitarbeiter und seine Familie versichert sind.
+
+## <a name="create-plan-types"></a>Plantypen erstellen
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellung** die Option **Plantypen**.
 

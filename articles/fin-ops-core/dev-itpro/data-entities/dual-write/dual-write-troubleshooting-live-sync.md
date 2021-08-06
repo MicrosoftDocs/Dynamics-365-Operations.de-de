@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a0a14c87af7f0d2372d752233f21d9accbca58a8
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350787"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542514"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Live-Synchronisierungsprobleme behandeln
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-
 
 Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Dataverse. Dieses Thema enthält speziell Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit der Live-Synchronisierung zusammenhängen.
 
@@ -81,7 +79,7 @@ Um das Problem zu beheben, müssen Sie dem Team der zugeordneten Geschäftseinhe
 
     ![Organisationszuordnung.](media/mapped_business_unit.png)
 
-2. Melden Sie sich in der modellgesteuerten App in Dynamics 365 bei der Umgebung an und navigieren Sie zu **Einstellungen \> Sicherheit** und finden Sie das Team der zugeordneten Geschäftseinheit.
+2. Melden Sie sich in der Kundenbindungs-App an und navigieren Sie zu **Einstellungen \> Sicherheit** und finden Sie das Team der zugeordneten Geschäftseinheit.
 
     ![Team des zugeordneten Geschäftsbereichs.](media/setting_security_page.png)
 
@@ -99,7 +97,7 @@ Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie Daten in ein
 
 *{„entityName“:„CustCustomerV3Entity“,„executeStatus“:2,„fieldResponses“:\[\],„recordResponses“:\[{„Fehlermeldung“:„**Nutzdaten für die Entität CustCustomerV3Entity können nicht generiert werden**“,„logDateTime“:„2019-08-27T18:51:52.5843124Z“,„verboseError“:„Die Erstellung der Nutzdaten ist mit dem Fehler fehlgeschlagen. Ungültiger URI: URI ist leer.“}\],„isErrorCountUpdated“: true}*
 
-So sieht der Fehler in der modellgesteuerten App in Dynamics 365 aus:
+So sieht der Fehler in der Kundenbindungs-App aus:
 
 *Ein unerwarteter Fehler ist im ISV-Code aufgetreten. (ErrorType = ClientError) Unerwartete Ausnahme vom Plug-In (Ausführen): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: Entitätskonto konnte nicht verarbeitet werden – (Ein Verbindungsversuch ist fehlgeschlagen, da die verbundene Partei nach a nicht ordnungsgemäß geantwortet hat Zeitraum oder Verbindungsaufbau fehlgeschlagen hat, da der verbundene Host nicht reagiert hat*
 
@@ -125,6 +123,5 @@ Führen Sie folgende Schritte aus, um das Problem zu beheben.
 
 3. Stellen Sie sicher, dass die **externalenvironmentURL** Spalte die richtige Dataverse oder App-URL hat. Löschen Sie doppelte Zeilen, die auf die falsche Dataverse-URL verweisen. Löschen Sie die entsprechenden Zeilen in den Tabellen DUALWRITEPROJECTFIELDCONFIGURATION und DUALWRITEPROJECTCONFIGURATION.
 4. Stoppen Sie die Tabellenzuordnung und starten Sie sie neu.
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

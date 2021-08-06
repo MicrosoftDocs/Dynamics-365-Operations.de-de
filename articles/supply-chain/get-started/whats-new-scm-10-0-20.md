@@ -1,5 +1,5 @@
 ---
-title: Vorschau von Dynamics 365 Supply Chain Management 10.0.20 (August 2021)
+title: Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.20 (August 2021)
 description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Supply Chain Management 10.0.20 neu oder geändert wurden.
 author: kamaybac
 ms.date: 05/28/2021
@@ -10,30 +10,28 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a782416bdb12a8ac7f1ba807452ca54072af3ab5
-ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
+ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
+ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301745"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6641055"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10020-august-2021"></a>Vorschau von Dynamics 365 Supply Chain Management 10.0.20 (August 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.20 (August 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-In diesem Thema werden die Funktionen aufgeführt, die in der Microsoft Dynamics 365 Supply Chain Management Vorschauversion 10.0.20 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.886 und ist wie folgt verfügbar:
+In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365 Supply Chain Management  Version 10.0.20 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.886 und ist wie folgt verfügbar:
 
 - **Vorschau auf die Veröffentlichung:** Mai 2021
 - **Allgemeine Verfügbarkeit der Freigabe (Selbst-Update):** Juli 2021
 - **Allgemeine Verfügbarkeit der Version (Auto-Update):** August 2021
 
-
 ## <a name="features-included-in-this-release"></a>In dieser Version enthaltene Funktionen
 
 Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten sind. Die Spalte *Funktion* bietet Links zum [Release-Plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), wo Sie die offiziellen Release-Termine für jede Funktion sehen können. Die Spalte *Weitere Informationen* enthält weitere Informationen und/oder Links zur zugehörigen Dokumentation.
 
-Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können. Einige der aufgelisteten Funktionen befinden sich noch in der Vorschau, während andere möglicherweise bereits allgemein verfügbar sind.
+Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können.
 
 | Funktionsbereich | Funktion | Weitere Informationen |
 |---|---|---|
@@ -75,7 +73,7 @@ Wir haben die folgenden Hilfethemen kürzlich hinzugefügt oder erheblich aktual
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdate für Finance and Operations Apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.20 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.20 von Finance and Operations Apps (Juli 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.20 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattform-Updates für Version 10.0.20 von Finance and Operations Apps (Juli 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 

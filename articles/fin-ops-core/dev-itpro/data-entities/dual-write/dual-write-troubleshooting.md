@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: ccad9c55c0200d008525c7d3fdaeeef99b7eecfb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b4de461d26fc6d5c39c1ac0c49201f265f562f5a
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350739"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542490"
 ---
 # <a name="general-troubleshooting"></a>Allgemeine Problembehandlung
 
@@ -61,14 +61,14 @@ Installieren Sie nach der Installation des Package Deployer Tools das Lösungspa
 
 Um die Nachverfolgung einzuschalten, führen Sie diese Schritte aus.
 
-1. Melden Sie sich bei der modellgesteuerten App in Dynamics 365 an, öffnen Sie die Seite **Einstellungen** und dann unter **System** wählen Sie **Verwaltung** aus.
+1. Melden Sie sich bei der Kundenbindungs-App an, öffnen Sie die Seite **Einstellungen** und dann unter **System**, wählen Sie **Verwaltung**.
 2. Wählen Sie auf der Seite **Verwaltung** die Option **Systemeinstellungen** aus.
 3. Auf der Registerkarte **Anpassung** wählen Sie in der Spalte **Plug-In und benutzerdefinierte Workflow-Aktivitätsverfolgung** **Alle** aus, um das Plug-Trace-Protokoll zu aktivieren. Wenn Sie Ablaufverfolgungsprotokolle nur protokollieren möchten, wenn Ausnahmen auftreten, können Sie stattdessen **Ausnahme** auswählen.
 
 
 Um die Nachverfolgung anzuzeigen, führen Sie diese Schritte aus.
 
-1. Melden Sie sich bei der modellgesteuerten App in Dynamics 365 an, öffnen Sie die Seite **Einstellungen** und dann unter **Anpassung** wählen Sie **Plug-In-Nachverfolgungsprotokoll** aus.
+1. Melden Sie sich bei der Kundenbindungs-App an, öffnen Sie die Seite **Einstellungen** und dann unter **Anpassung**, wählen Sie **Plug-In-Ablaufverfolgungsprotokoll**.
 2. Suchen Sie die Ablaufverfolgungsprotokolle, in denen die Spalte **Typname** auf **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin** festgelegt ist.
 3. Doppelklicken Sie auf ein Element, um das vollständige Protokoll anzuzeigen, und klicken Sie dann auf das Inforegister **Ausführung** und üerrprüfen Sie den Text **Nachrichtenblock**.
 

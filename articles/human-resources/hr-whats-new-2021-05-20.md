@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-05-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: afa64474e8eaf4c7b73e4f76d85e379f77b570a7
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: c7b7f71cf084a05bb0278f5df4ddb022ef3d640f
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111566"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6560049"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-20-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources 20. Mai 2021
 
@@ -70,7 +70,7 @@ Die folgenden neuen Funktionen stehen in der Vorschau zur Verfügung. Weitere In
 | Arbeitsbereich „Vorteilsverwaltung“ | [Arbeitsbereich für die Verwaltung von Zusatzleistungen (Vorschau)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Arbeitsbereich „Vorteilsverwaltung“](hr-benefits-management-workspace.md) |
 | Verbesserungen des Workflows für Urlaub und Abwesenheit | [Erweiterungen im Workflow für Abwesenheit und Urlaub](https://go.microsoft.com/fwlink/?linkid=2147528) | [Arbeitsfreie Zeit anfordern](hr-employee-self-service-request-time-off.md)|
 | Ermöglicht eine vereinfachte Integration der Gehaltsabrechnung (APIs zur Integration der Gehaltsabrechnung) | [Ermöglichen Sie eine vereinfachte Integration mit Gehaltsabrechnungsanbietern](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Lohnintegrations-API](hr-admin-integration-payroll-api-introduction.md)|
-| Überwachung von Urlaubsabgrenzungstransaktionen | - | [Überwachung von Urlaubsabgrenzungstransaktionen](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
+| Überwachung von Urlaubsabgrenzungstransaktionen | - | [Überwachung von Urlaubsabgrenzungstransaktionen](hr-leave-and-absence-accrue.md)|
 
 ## <a name="coming-soon"></a>Demnächst
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4da23ff0dc8858558df3111b90159e43bd5fdccf
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e00748fc9629d7ecfa91701002d3d2d7dda0a86f
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056323"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639413"
 ---
 # <a name="request-a-leave-of-absence"></a>Urlaubs- und Abwesenheitsanträge beantragen
 
@@ -48,6 +48,10 @@ Sie können einen Antrag auf Urlaub stellen und den Status Ihrer Urlaubsanträge
 1. In dem **Mitarbeiter Selbstservice** Arbeitsbereich wählen Sie **Mehr** (...) in der Kachel **Freizeitguthaben**.
 
 2. Um einen Antrag auf Urlaubung anzuzeigen, wählen Sie **Urlaub anzeigen**.
+
+## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Import von Urlaubsanträgen aus anderen Systemen oder älteren Systemen
+
+Um Urlaubsanträge aus einem anderen System zu importieren, müssen Sie den regulären Workflow durchlaufen, um die entsprechenden Urlaubsvorgänge zu erstellen. Alternativ können Sie die Abwesenheitsbanktransaktionen und die Abwesenheitsanträge im abgeschlossenen Zustand importieren. Beachten Sie, dass die Abwesenheitsbanktransaktionen nicht automatisch erstellt werden, wenn Sie nur die Abwesenheitsanträge importieren.
 
 ## <a name="see-also"></a>Siehe auch
 

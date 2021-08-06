@@ -2,7 +2,7 @@
 title: Cashflow-Planung (Vorschau)
 description: In diesem Thema wird die Funktion zur Cashflow-Planung beschrieben.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3f16c8471123969443af52ff9bed7fc017b8e9c2
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: f4b48122ea54c201888d71afb5fb731ebcab230d
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339214"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638775"
 ---
 # <a name="cash-flow-forecast-preview"></a>Cashflow-Planung (Vorschau)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Der Cashflow ist für jedes Unternehmen von entscheidender Bedeutung. Selbst profitable Unternehmen können insolvent werden, wenn sie den Cashflow nicht aufrechterhalten, um den unmittelbaren Bedarf zu decken. Die Funktion zur Cashflow-Planung in Finance Insights kann Unternehmen dabei helfen, ihre Bargeldbilanz effektiv zu überwachen und zu verwalten. Diese Funktion verwendet Machine Learning, um Unternehmen dabei zu helfen, Cashflows genauer als bisher vorherzusagen. Es kann Managern auch dabei helfen, Entscheidungen zu treffen, die die Chancen im Kontext ihrer aktuellen Bargeldposition optimieren. 
 

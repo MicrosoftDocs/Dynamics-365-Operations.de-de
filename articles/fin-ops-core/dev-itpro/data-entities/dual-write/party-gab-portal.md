@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Power Portal mit dem Partei-Datenmodell
-description: In diesem Thema werden die Änderungen an den Power Portal-Webrollen aufgrund des Partei-Datenmodells in Duales Schreiben beschrieben.
+title: Verwenden von Microsoft Power Apps Portalen mit dem Partei-Datenmodell
+description: In diesem Thema werden die Änderungen an den Webrollen für Microsoft Power Apps Portale aufgrund des Partei-Datenmodells in Duales Schreiben beschrieben.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca9d4ad1efa128ba274cd84b1c2f672fe70975a5
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358616"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542562"
 ---
-# <a name="using-power-portal-with-the-party-data-model"></a>Verwenden von Power Portal mit dem Partei-Datenmodell
+# <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Verwenden von Microsoft Power Apps Portalen mit dem Partei-Datenmodell
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
@@ -44,13 +44,13 @@ Gehen Sie folgendermaßen vor, um diese neuen Tabellenberechtigungen zu erstelle
 
     Sie müssen drei neue Berechtigungen erstellen:
 
-    + Kontakt-zu-Partei-Verbindung
-    + Partei-zu-Konto-Verbindung
-    + Konto-zu-Auftrag-Verbindung
+    + **Konakt** zu **Partei** Tabellenverbindung
+    + **Partei** zu **Konto** Tabellenverbindung
+    + **Konto** zu **Auftrag** Tabellenverbindung
 
 4. Erstellen und speichern Sie eine neue Berechtigung für die Kontakt-zu-Partei-Verbindung, indem Sie die folgenden Parameter festlegen:
 
-    + **Name**: Partei-zu-Konto-Verbindung (oder Ihre Wahl)
+    + **Name**: **Partei** zu **Konto** Tabellenverbindung (oder Ihre Wahl)
     + **Tabellenname**: msdyn_contactforparty
     + **Website**: Kundenportal
     + **Umfang**: Kontakt
