@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c53d28192c5bf673baccd76e4cfb6e0453fe29d
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: e155263daf2f33531abefdc45c5046a5ab5bca11
+ms.sourcegitcommit: 787c94b35f343f4c38fc8efaaa0cfaf20a846368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337928"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "6647205"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Beschaffungs-Startseite
 
@@ -77,10 +77,9 @@ Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung f
 -   [Erstellen einer Bestellung auf Grundlage eines Auftrags](../sales-marketing/tasks/create-purchase-order-sales-order.md)
 -   [Eine Bestellung für einen einmaligen Lieferanten erstellen](tasks/create-purchase-order-one-time-supplier.md)
 -   [Eine Bestellung mit einem Lieferzeitplan erstellen](tasks/create-purchase-order-delivery-schedule.md)
--   [Eine Einkaufsreklamation erstellen](tasks/create-purchase-return-order.md)
--   [Einen Freigabeauftrag für den Einkauf aus einem Kaufvertrag erstellen](tasks/create-purchase-release-order-purchase-agreement.md)
--   [Einen Freigabeauftrag für den Einkauf erstellen, wenn Sie die Bestellung erstellen](tasks/create-purchase-release-order-creating-purchase-order.md)
--   [Neuen Unterlieferungs-Wiederbeschaffungsauftrag erstellen](../inventory/tasks/create-consignment-replenishment-order.md)
+-   [Einkaufsrücklieferung erstellen](tasks/create-purchase-return-order.md)
+-   [Einen Freigabeauftrag für den Einkauf aus einem Kaufvertrag anwenden](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [Unterlieferungs-Wiederbeschaffungsauftrag erstellen](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## <a name="prices-and-discounts"></a>Preise und Rabatte
 -   [Kaufverträge](purchase-agreements.md)

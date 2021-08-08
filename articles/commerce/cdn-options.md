@@ -2,7 +2,7 @@
 title: Implementierungsoptionen für das Content Delivery Network
 description: In diesem Thema werden die verschiedenen Optionen für die Implementierung des Content Delivery Network (CDN) zur Verwendung mit Microsoft Dynamics 365 Commerce-Umgebungen beschrieben. Diese Optionen umfassen native, von Commerce bereitgestellte Instanzen von Azure Front Door und kundeneigene Instanzen von Azure Front Door.
 author: BrianShook
-ms.date: 03/11/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e6425d7e473d1d1c263624599d54c6b040d90cb
+ms.sourcegitcommit: a52ad281071b3a49c461e5853e82f302dd33095a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351248"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6657118"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Implementierungsoptionen für das Content Delivery Network
 
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Vor- und Nachteile der Verwendung der von Comm
 
 | Vorteile | Nachteile |
 |------|------|
-| <ul><li>Die Instanz ist in den Commerce-Kosten enthalten.</li><li>Da die Instanz vom Commerce-Team verwaltet wird, ist weniger Wartung erforderlich und es gibt gemeinsame Einrichtungsschritte.</li><li>Die von Azure gehostete Infrastruktur ist skalierbar, sicher und zuverlässig.</li><li>Das SSL-Zertifikat (Secure Sockets Layer) erfordert eine einmalige Einrichtung und wird automatisch erneuert.</li><li>Die Instanz wird vom Commerce-Team auf Fehler und Anomalien überwacht.</li></ul> | <ul><li>Eine WAF wird nicht unterstützt.</li><li>Es gibt keine spezifischen Anpassungen oder Einstellungsregulierungen.</li><li>Die Instanz hängt vom Commerce-Team für Aktualisierungen oder Änderungen ab.</li><li>Für Apex-Domänen ist eine separate Azure Front Door-Instanz erforderlich, und für die Integration von Apex-Domänen in Azure DNS ist zusätzliche Arbeit erforderlich.</li><li>Dem Kunden wird keine Telemetrie über Antworten pro Sekunde (RPS) oder die Fehlerrate zur Verfügung gestellt.</li></ul> |
+| <ul><li>Die Instanz ist in den Commerce-Kosten enthalten.</li><li>Da die Instanz vom Commerce-Team verwaltet wird, ist weniger Wartung erforderlich und es gibt gemeinsame Einrichtungsschritte.</li><li>Die von Azure gehostete Infrastruktur ist skalierbar, sicher und zuverlässig.</li><li>Das SSL-Zertifikat (Secure Sockets Layer) erfordert eine einmalige Einrichtung und wird automatisch erneuert.</li><li>Die Instanz wird vom Commerce-Team auf Fehler und Anomalien überwacht.</li></ul> | <ul><li>Ein WAF wird nicht unterstützt.</li><li>Es gibt keine spezifischen Anpassungen oder Einstellungsregulierungen.</li><li>Die Instanz hängt vom Commerce-Team für Aktualisierungen oder Änderungen ab.</li><li>Für Apex-Domänen ist eine separate Azure Front Door-Instanz erforderlich, und für die Integration von Apex-Domänen in Azure DNS ist zusätzliche Arbeit erforderlich.</li><li>Dem Kunden wird keine Telemetrie über Antworten pro Sekunde (RPS) oder die Fehlerrate zur Verfügung gestellt.</li></ul> |
 
 Die folgende Abbildung zeigt die Architektur der von Commerce bereitgestellten Azure Front Door-Instanz.
 
@@ -74,7 +74,7 @@ In der folgenden Tabelle sind die Vor- und Nachteile der Verwendung eines extern
 
 | Vorteile | Nachteile |
 |------|------|
-| <ul><li>Diese Option ist nützlich, wenn die vorhandene Domäne bereits auf einem externen CDN gehostet ist.</li><li>Mitbewerber-CDNs (z. B. Akamai) verfügen möglicherweise über mehr WAF-Funktionen.</li></ul> | <ul><li>Ein separater Vertrag und zusätzliche Kosten sind erforderlich.</li><li>SSL kann zusätzliche Kosten verursachen.</li><li>Da der Dienst von der Azure-Cloud-Struktur getrennt ist, muss zusätzliche Infrastruktur verwaltet werden.</li><li>Der Dienst erfordert möglicherweise längere Zeitinvestitionen in Endpunkt- und Sicherheitseinstellungen.</li><li>Der Dienst ist selbstverwaltet.</li><li>Der Dienst ist selbstüberwacht.</li></ul> |
+| <ul><li>Diese Option ist nützlich, wenn die vorhandene Domäne bereits auf einem externen CDN gehostet ist.</li><li>WAF: Abhängig vom externen Anbieter.</li></ul> | <ul><li>Ein separater Vertrag und zusätzliche Kosten sind erforderlich.</li><li>SSL kann zusätzliche Kosten verursachen.</li><li>Da der Dienst von der Azure-Cloud-Struktur getrennt ist, muss zusätzliche Infrastruktur verwaltet werden.</li><li>Der Dienst erfordert möglicherweise längere Zeitinvestitionen in Endpunkt- und Sicherheitseinstellungen.</li><li>Der Dienst ist selbstverwaltet.</li><li>Der Dienst ist selbstüberwacht.</li></ul> |
 
 Die folgende Abbildung zeigt eine Commerce-Infrastruktur, die einen externen CDN-Dienst enthält.
 

@@ -2,7 +2,7 @@
 title: Bargeldposition (Vorschau)
 description: In diesem Thema wird beschrieben, wie die Funktion zur Cashflow-Planung die Bargeldposition eines Unternehmens für bestimmte Zeiten vorhersagt. Außerdem werden die Optionen beschrieben, mit denen Prognosen für verschiedene Zeiträume angezeigt werden können.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: b3b32bac436dc0be7ae4c072f4e560ad6d8b6d81
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 1935be3b2d52e19b764e6afdf00a8bc546f801df
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186491"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638751"
 ---
 # <a name="cash-position-preview"></a>Bargeldposition (Vorschau)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Die Bargeldposition ist die Projektion des Cashflows, die für die nahe Zukunft prognostiziert wird. Sie basiert auf der Projektion von Geldeingängen von Debitoren, die ausstehende Rechnungen und Bestellungen bezahlen, sowie auf der Projektion von Barauszahlungen, die an Kreditoren für Kaufrechnungen und Bestellungen gezahlt werden.
 

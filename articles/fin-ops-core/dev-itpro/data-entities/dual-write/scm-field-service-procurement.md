@@ -1,23 +1,21 @@
 ---
 title: Integrieren der Beschaffung zwischen Supply Chain Management und Field Service
 description: In diesem Thema wird beschrieben, wie die Dual-Write-Integration die Erstellung und Aktualisierung von Bestellungen sowohl über Supply Chain Management als auch Field Service unterstützt.
-author: RichardLuan
+author: RamaKrishnamoorthy
 ms.date: 11/11/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: d61fdbb8efd8251cac6db7d5acab3caeb03f7879
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c29efb885babea833e3c3fde0155e3722f8b77e9
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346593"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542390"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrieren der Beschaffung zwischen Supply Chain Management und Field Service
 

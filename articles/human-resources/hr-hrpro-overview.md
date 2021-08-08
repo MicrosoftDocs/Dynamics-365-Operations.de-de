@@ -2,7 +2,7 @@
 title: Übersicht
 description: Das Dynamics 365 Human Resources Benutzerhandbuch enthält Anweisungen zum Einrichten der Personalabteilung, zum Einrichten von Vergütungen und Leistungen für Ihre Mitarbeiter und zum Verwalten Ihrer Belegschaft.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8595bbbce9ab39893b67ee142bcb71996ccd6994
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 8b03865c1e53f943989437ed4839474e37419f2e
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338053"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639509"
 ---
 # <a name="overview"></a>Übersicht
 
@@ -102,8 +102,9 @@ Das Dynamics 365 Human Resources Benutzerhandbuch enthält Anweisungen zum Einri
 [Urlaubs- und Abwesenheitsanforderungen verwalten](hr-employee-self-service-manage-requests.md)</br>
 [Arbeitsfreie Zeit anfordern](hr-employee-self-service-request-time-off.md)</br>
 [Team- und Unternehmenskalender anzeigen](hr-employee-self-service-calendar.md)</br>
+[Konfigurieren Sie die Rolle des Abwesenheitsmanagers](hr-configure-absence-manager.md)</br>
 
-## <a name="develop-employees"></a>Mitarbeiter entwickeln
+## <a name="develop-employees"></a>Mitarbeiter weiterbilden
 
 [Übersicht über die Leistungsverwaltung](hr-develop-performance-management-overview.md)</br>
 [Mitarbeiterqualifikationen ausrichten](hr-develop-skills.md)</br>

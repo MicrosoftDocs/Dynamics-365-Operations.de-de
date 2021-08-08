@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a1e94067e2dcca59f03e01520f16a09da1bd4f52
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360567"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6559989"
 ---
 # <a name="payroll-integration-api-introduction"></a>Einführung Lohnintegrations-API
 
@@ -30,8 +30,8 @@ Dieses Dokument beschreibt die Lohnintegrations-API in Dynamics 365 Human Resour
 
 Um die Integration zu ermöglichen, enthält Human Resources die folgenden Komponenten:
 
-- Funktionalität, um einen Mitarbeiter als „Bereit für Zahlung“ zu kennzeichnen
-- Eine Integrations-API öffnet die neue Funktionalität für die Integration von Anwendungen
+- [Funktionalität, um einen Mitarbeiter als „Bereit für Zahlung“ zu kennzeichnen.](hr-compensation-payroll.md)
+- Eine Integrations-API öffnet die neue Funktionalität für die Integration von Anwendungen.
 
 ## <a name="microsoft-dataverse"></a>Microsoft Dataverse
 
