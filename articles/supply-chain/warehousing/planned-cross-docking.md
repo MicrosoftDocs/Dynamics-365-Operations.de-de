@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 9c31b8dd7d69fee40ecefb6c6bc81c9c2dd17ef7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 81888e0703c53333ab9697c0445270f2f40c7b9ba02f3ba5fa728aef0b78b3a6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730009"
 ---
 # <a name="planned-cross-docking"></a>Geplantes Crossdocking
 
@@ -117,6 +117,9 @@ Das geplante Crossdocking wird als Ladebuchungsmethode implementiert. Nachdem Si
     - **Sequenznummer:** *1*
     - **Bezugsquelle:** *Bestellung*
 
+> [!NOTE]
+> Sie können eine Abfrage einrichten, um zu steuern, wann eine bestimmte Crossdocking-Vorlage verwendet wird. Die Abfrage nach Crossdocking-Vorlagen hat nur die (Artikel-)Tabelle *InventTable* und die innere verknüpfte (WHS-Artikel-)Tabelle *WHSInventTable*. Wenn Sie der Abfrage weitere Tabellen hinzufügen möchten, können Sie sie nur mit *Bestehende Verknüpfungen* oder *Nicht bestehende Verknüpfungen* verknüpfen. Wenn Sie nach den verknüpften Tabellen filtern, wird für jeden übereinstimmenden Datensatz in der verknüpften Tabelle ein Datensatz aus der Haupttabelle abgerufen. Wenn der Verknüpfungstyp *Verknüpfung besteht* ist, endet die Suche, nachdem die erste Übereinstimmung gefunden wurde. Wenn Sie beispielsweise die Auftragspositionstabelle mit der Artikeltabelle verknüpfen, validiert das System Artikel und gibt sie zurück, für die mindestens eine Kundenauftragsposition die definierte Bedingung aufweist. Im Wesentlichen werden die Daten aus der übergeordneten (Artikel-)Tabelle (Artikel) abgerufen, nicht aus der untergeordneten (Auftragspositions-)Tabelle. Daher ist das Filtern nach Quelldokumenten wie Auftragspositionen oder Debitoren nicht sofort möglich.
+
 ### <a name="create-a-work-class"></a>Eine Arbeitsklasse erstellen
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Arbeit \> Arbeitsklassen**.
@@ -151,6 +154,9 @@ Das geplante Crossdocking wird als Ladebuchungsmethode implementiert. Nachdem Si
     - **Arbeitsklassen-ID:** *CrossDock*
 
 1. Wählen Sie **Speichern** aus, und bestätigen Sie, dass das Kontrollkästchen **Gültig** für die Vorlage *51 Crossdocking* ausgewählt ist.
+1. Optional: Wählen Sie **Abfrage bearbeiten**, wenn Sie Kriterien festlegen möchten, um zu steuern, wann und wo die Arbeitsvorlage verwendet wird.
+
+    Sie können eine Abfrage einrichten, um zu steuern, wann eine spezifische Arbeitsvorlage verwendet wird. Sie können beispielsweise festlegen, dass eine Vorlage nur für die Arbeit an einem bestimmten Lagerplatz verwendet werden kann. Wenn Sie möchten, dass die Crossdocking-Arbeitsvorlage an einem bestimmten Lagerplatz angewendet wird, müssen Sie nach dem Feld **Ausgangslagerplatz** nicht dem Feld **Lagerplatz** filtern, da die Arbeitserstellung für die eingehenden Prozesse (Kauf, Crossdocking und Wiederbeschaffung) von der Einlagerungsposition aus beginnt. Wenn Arbeit erstellt wird, legt die Lagerplatzrichtlinie das Feld **Lagerplatz** auf den Einlagerungslagerplatz festlegt. Der Entnahmelagerplatz wird jedoch im Feld **Ausgangslagerort** gespeichert.
 
 > [!NOTE]
 > Die Arbeitsklassen-IDs für die Arbeitstypen *Entnehmen* und *Einlagern* müssen gleich sein.
