@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 577d48e207c8ce5911d104e657101a8557100064
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 136e528093e6e73ffe090cea0c02a4cdbf787c5efc3d9c0664869c995a682daa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339993"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720251"
 ---
 # <a name="rebate-management-module-overview"></a>Übersicht über das Modul zur Rückvergütungsverwaltung
 
@@ -91,10 +91,9 @@ Benutzer müssen Deals oder Rückstellungen nicht mehr in zwei Schritten abwicke
 
 Wenn Rückvergütungen berechnet werden, erstellt der Prozess Transaktionen, die vor der Buchung überprüft werden können. Ein separater Prozess bucht Transaktionen der Bonusverwaltung. Bei der Buchung kann dann eine Erfassung, eine Gutschrift oder eine Lastschrifttransaktion für vorgeschlagene Transaktionen erstellt werden. Berichtserklärungen und Transaktionslisten können abgerufen werden, um Compliance, Effektivität und Transparenz sicherzustellen.
 
-
 ## <a name="guaranteed-royalty-payments"></a>Garantierte Lizenzgebührzahlungen
 
-In der Rückvergütungsverwaltung ermöglicht die automatische Zahlungsgenerierung die schnelle und einfache Abwicklung von Lizenzgebühren, selbst wenn garantierte Mindestbeträge gelten. 
+In der Rückvergütungsverwaltung ermöglicht die automatische Zahlungsgenerierung die schnelle und einfache Abwicklung von Lizenzgebühren, selbst wenn garantierte Mindestbeträge gelten.
 
 ## <a name="maximizing-spend-versus-rebates"></a>Maximierung der Ausgaben im Vergleich zu Rückvergütungen
 

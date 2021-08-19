@@ -2,7 +2,7 @@
 title: Was ist neu oder geändert in der Warehouse Management Mobile-App
 description: Dieses Thema listet die neuen und geänderten Funktionen für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
 author: ivanv-microsoft
-ms.date: 06/07/2021
+ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,38 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 61124728942c0b8162de9f687ae752773c47d07e
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261778"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720083"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Was ist neu oder geändert in der Warehouse Management Mobile-App
 
 [!include [banner](../includes/banner.md)]
 
 Dieses Thema listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+
+## <a name="2070"></a>2.0.7.0
+
+### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Neue Funktionen, Fehlerbehebungen und Verbesserungen in Version 2.0.7.0
+
+- Einen Abschnitt zur Seite **Über** hinzugefügt, die die neueste veröffentlichte Version der App überprüft.
+- Das Blättern und Wischen zwischen den Seiten wurde einfacher.
+- Das Symbol für die Schaltfläche „In aufsteigender/absteigender Reihenfolge“ in der Arbeitsliste wurde geändert.
+- Die Ränder auf der Karte **Details** wurden reduziert, damit sie mehr Informationen aufnehmen kann.
+- Es wurden verschiedene Leistungsverbesserungen angewendet, um das Problem zu verringern, dass die App im Laufe der Zeit langsamer wird.
+- Wenn mehr Steuerelemente vorhanden sind, als auf den Bildschirm passen, was zu einem Seitenwechsel führt, scrollt das Wartekreisel-Steuerelement nicht mehr wie die Seite.
+- Priorisieren Sie die Anzeige des zuletzt gescannten Werts gegenüber der Anzeige des Aufgabentitels, sodass der Aufgabentitel abgeschnitten wird, wenn sie sich überschneiden.
+- Verschiedene Probleme behoben, die dazu führten, dass das System nicht mehr reagierte, wurden behoben.
+- Text an verschiedenen Stellen wird in einigen Sprachen nicht mehr abgeschnitten.
+- Die App läuft nun standardmäßig im Vollbildmodus.
+- Es wurde ein Problem behoben, das bei bestimmten Geräten gelegentlich dazu führte, dass Scans auf der Hauptseite ignoriert wurden.
+
+### <a name="known-issues-in-version-2070"></a>Bekannte Probleme in Version 2.0.7.0
+
+- Auf einigen Geräten erhalten Sie beim Starten der App oder beim Starten einer Aufgabe folgende Fehlermeldung: „Es konnte keine passende Ansicht für die angegebene Größe gefunden werden.“ Wenn diese Fehlermeldung auf einem Ihrer Geräte angezeigt wird, müssen Sie die mobile Warehouse Management-App auf diesem Gerät auf Version 2.0.6.0 herabstufen und mit dem Upgrade warten, bis die nächste Version der App veröffentlicht wird.
 
 ## <a name="version-2060"></a>Version 2.0.6.0
 
