@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d8c88b742c1dccb169e47fe96a5c9d9aac35e605be685cc1a0f010826c959db5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823286"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712861"
 ---
 # <a name="put-to-wall---put-to-store"></a>Put-to-Wall - Put-to-Store
 
@@ -42,9 +42,9 @@ Die Funktion *Ausgangssortierung* kann in Verbindung mit der Funktion *Organisat
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Organisationsweiter Wellenschrittcode*
 
-## <a name="setup"></a>Einstellung
+## <a name="setup"></a>Einrichtung
 
-Für diese Demo werden Standard-Contoso-Daten und Lagerotz *62* verwendet. Einige Ergänzungen, die später erwähnt werden, werden ebenfalls verwendet.
+Für diese Demo werden Standard-Contoso-Daten und Lagerort *62* verwendet. Einige Ergänzungen, die später erwähnt werden, werden ebenfalls verwendet.
 
 ### <a name="location-type"></a>Lagerplatztyp
 

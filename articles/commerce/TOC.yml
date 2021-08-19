@@ -94,6 +94,8 @@
                   items:
                     - name: Neuerungen oder Änderungen auf der Startseite von Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.21 (Oktober 2021)
+                      href: get-started/whats-new-commerce-10-0-21.md
                     - name: "Commerce 10.0.20 (August\_2021)"
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: "Commerce\_10.0.19 (Juni\_2021)"
@@ -512,13 +514,21 @@
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
                     - name: Bargeld-Denominationen für den POS konfigurieren
                       href: cash-denominations.md
-                    - name: Verarbeitung der Kreditkartendaten konfigurieren
+                    - name: Verarbeitung von Kreditkartendaten konfigurieren
                       href: tasks/configure-credit-card-processing.md
                     - name: Dialogfeld „Änderung fällig“ in POS überspringen
                       href: dev-itpro/skip-change-due.md
-                    - name: Connector für Adyen-Zahlungen
-                      href: dev-itpro/adyen-connector.md
-                    - name: Online-Zahlungsmittel mit dem Adyen-Connector speichern
+                    - name: Dynamics 365 Payment Connector für Adyen
+                      items:
+                        - name: Übersicht über den Dynamics 365 Payment Connector für Adyen
+                          href: dev-itpro/adyen-connector.md
+                        - name: Dynamics 365 Payment Connector für Adyen einrichten
+                          href: dev-itpro/adyen-connector-setup.md
+                        - name: "Häufig gestellte Fragen zum Dynamics\_365 Payment Connector für Adyen"
+                          href: dev-itpro/adyen-connector-faq.md
+                        - name: "Fehler im Zusammenhang mit dem Dynamics\_365 Payment Connector für Adyen beheben"
+                          href: dev-itpro/adyen-connector-troubleshoot.md
+                    - name: Onlinezahlungsmittel mit dem Adyen-Connector speichern
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Starke Kundenauthentifizierung (SCA) mit dem Adyen-Connector
                       href: adyen_redirect.md
@@ -730,7 +740,7 @@
                       href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
                     - name: Produktpakete für Bestellungen erstellen
                       href: tasks/create-product-packages-purchase-orders.md
-        - name: Ihre Aufträge verwalten
+        - name: Aufträge verwalten
           items:
             - name: Debitorenaufträge
               items:
@@ -1182,9 +1192,13 @@
               items:
                 - name: Onlinekanalberichte generieren
                   href: generate-reports.md
-            - name: Experimentieren
+            - name: Ausrichtung
               items:
-                - name: Experimentieren in Dynamics 365 Commerce
+                - name: 'Ausrichtung auf Geräte, Märkte und geografische Standorte'
+                  href: targeting-overview.md
+            - name: Experimente
+              items:
+                - name: Experimente mit Dynamics 365 Commerce
                   href: experimentation-overview.md
                 - name: Hypothese und Messwerte für ein Experiment bestimmen
                   href: experimentation-identify.md
@@ -1336,6 +1350,10 @@
               items:
                 - name: Lokalisierung von Commerce für Russland
                   href: localizations/rus-commerce-localization.md
+                - name: Lokalisierung von Commerce für Russland einrichten
+                  href: localizations/rus-commerce-setup.md
+                - name: Vorauszahlungen in Commerce für Russland
+                  href: localizations/rus-commerce-prepayments.md
             - name: Schweden
               items:
                 - name: Kassenfunktionen
