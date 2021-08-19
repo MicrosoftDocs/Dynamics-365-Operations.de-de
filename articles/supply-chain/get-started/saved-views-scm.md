@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2544591773bea7d54b4da4ac25ed3fed3f9e3594c5f791a0975c0349583b695c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728626"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Gespeicherte Standardansichten für Supply Chain Management
 
@@ -77,6 +77,18 @@ In der folgenden Tabelle werden die gespeicherten Ansichten beschrieben, die fü
 | Bestellungsdetails | Finanzverwaltung | Diese vereinfachte Ansicht ist für die Durchführung finanzbezogener Aktivitäten optimiert, wie beispielsweise die Fakturierung und die Überprüfung von Preisen, Gesamtbeträgen und Gebühren. | Gespeicherte Ansichten für Bestellungen |
 | Bestellungsdetails | Auftragsgenehmigung | Diese vereinfachte Ansicht ist für die Genehmigung neuer Aufträge optimiert. | Gespeicherte Ansichten für Bestellungen |
 
+## <a name="saved-views-for-the-product-information-management-module"></a>Gespeicherte Ansichten für das Modul „Produktinformationsverwaltung“
+
+In der folgenden Tabelle werden die gespeicherten Ansichten beschrieben, die für das Modul „Produktinformationsverwaltung“ verfügbar sind.
+
+| Seite | Ansichtsname | Ansichtsbeschreibung | Funktionsname |
+|---|---|---|---|
+| Liste „Freigegebene Produkte“ | Produkterstellung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Erstellen von Produkten verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte |
+| Details für freigegebene Produkte | Produkterstellung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Erstellen von Produkten verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte |
+| Details für freigegebene Produkte | Logistikinformationsverwaltung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Verwalten logistischer Informationen für Produkte verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte |
+| Details für freigegebene Produkte | Kaufinformationsverwaltung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Verwalten von Kaufinformationen für Produkte verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte |
+| Details für freigegebene Produkte | Verkaufsinformationsverwaltung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Verwalten verkaufsbezogener Informationen für Produkte verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte |
+
 ## <a name="saved-views-for-the-production-control-module"></a>Gespeicherte Ansichten für das Modul „Produktionssteuerung“
 
 In der folgenden Tabelle werden die gespeicherten Ansichten beschrieben, die für das Modul „Produktionssteuerung“ verfügbar sind.
@@ -110,7 +122,7 @@ In der folgenden Tabelle werden die gespeicherten Ansichten beschrieben, die fü
 | Alle Lieferungen | Verarbeitung eingehender Vorgänge | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten zur Verarbeitung eingehender Sendungen verwendet werden. | Gespeicherte Ansichten für die Lieferungsverarbeitung |
 | Alle Lieferungen | Verarbeitung ausgehender Vorgänge | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten zur Verarbeitung ausgehender Sendungen verwendet werden. | Gespeicherte Ansichten für die Lieferungsverarbeitung |
 | Alle Wellen | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansicht für die Zyklusverarbeitung |
-| Ladungsplanungsworkbench | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansicht für die Arbeitsplanungs-Workbench |
+| Ladungsplanungsworkbench | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansicht für Ladungsplanungsworkbench |
 | Arbeitsdetails | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansicht für die Seite mit den Arbeitsdetails |
 
 
