@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ecf8caa7f31c560af2cbc929a37f3ca02bd0da44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744797"
 ---
 # <a name="goods-in-transit-processing"></a>Waren in Zustellung
 
@@ -104,6 +104,7 @@ Sie können Waren auch empfangen, indem Sie eine Wareneingangserfassung erstelle
 1. Öffnen Sie die Fahrt, den Container oder die Palette.
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Verwalten** in der Gruppe **Funktionen** die Option **Ankunftserfassung erstellen**.
 1. Legen Sie in der Dialogbox **Wareneingangserfassung erstellen** die folgenden Werte fest:
+
     - **Menge initialisieren** - Setzen Sie diese Option auf *Ja*, um die Menge aus der in Zustellung befindlichen Menge festzulegen. Wenn diese Option auf *Nein* gesetzt ist, wird keine Standardmenge aus den Waren in Zustellung festgelegt.
     - **Erstellen aus Waren in Zustellung** - Legen Sie diese Option auf *Ja* fest, um Mengen aus den ausgewählten Zeilen in Zustellung für die ausgewählte Fahrt, den ausgewählten Container oder die ausgewählte Palette zu nehmen.
     - **Erstellen aus Bestellzeilen** - Setzen Sie diese Option auf *Ja*, um die Standardmenge in der Wareneingangserfassung aus den Zeilen der Einkaufsbestellung festzulegen. Die Standardmenge in der Wareneingangserfassung kann auf diese Weise nur festgelegt werden, wenn die Menge in der Zeile der Einkaufsbestellung mit der Menge in der Waren in Zustellung übereinstimmt.
@@ -140,4 +141,21 @@ Gesamttransportkosten fügt eine neue Arbeitsauftragsart mit dem Namen *Waren in
 
 ### <a name="work-templates"></a>Arbeitsvorlagen
 
+In diesem Abschnitt werden Funktionen beschrieben, die das Modul **Gesamttransportkosten** Arbeitsvorlagen hinzufügt.
+
+#### <a name="goods-in-transit-work-order-type"></a>Arbeitsauftragstyp „Waren in Zustellung“
+
 Gesamttransportkosten fügt einen neuen Arbeitsauftragstyp mit dem Namen *Waren in Zustellung* auf der Seite **Arbeitsvorlagen** hinzu. Dieser Arbeitsauftragstyp sollte auf die gleiche Weise konfiguriert werden wie die [Arbeitsvorlagen für Einkaufsbestellungen](/dynamicsax-2012/appuser-itpro/create-a-work-template).
+
+#### <a name="work-header-breaks"></a>Arbeitskopfzeilenumbrüche
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Arbeitsvorlagen mit dem Arbeitsauftragstyp *Waren in Zustellung* können so konfiguriert werden, dass Arbeitkopfzeilen geteilt werden. Führen Sie auf der Seite **Arbeitsvorlagen** die folgenden Schritte aus:
+
+- Legen Sie auf der Registerkarte **Allgemein** die Höchstwerte für die Arbeitskopfzeile fest. Diese Höchstwerte funktionieren auf die gleiche Weise wie bei Arbeitsvorlagen für Bestellungen. (Weitere Informationen finden Sie in [Arbeitsvorlagen für Einkaufsbestellungen](/dynamicsax-2012/appuser-itpro/create-a-work-template).)
+- Verwenden Sie die Schaltfläche **Arbeitskopfzeilenumbrüche**, um festzulegen, wann das System neue Arbeitskopfzeilen basierend auf den zum Sortieren verwendeten Feldern erstellen soll. Um z.B. für jede Container-ID eine Arbeitskopfzeile zu erstellen, wählen Sie **Abfrage bearbeiten** im Aktivitätsbereich und fügen dann das Feld **Container-ID** auf der Registerkarte **Sortierung** des Abfrage-Editors hinzu. Felder, die der Registerkarte **Sortierung** hinzugefügt werden, stehen als *Gruppierungsfelder* zur Auswahl. Um Gruppierungsfelder festzulegen, wählen Sie **Arbeitskopfzeilenumbrüche** im Aktivitätsbereich und aktivieren dann für jedes Feld, das Sie als Gruppierungsfeld verwenden wollen, das Kontrollkästchen in der Spalte **Nach diesem Feld gruppieren**.
+
+Gesamttransportkosten [erzeugt eine Überbuchung](over-under-transactions.md), wenn die registrierte Menge die ursprüngliche Auftragsmenge überschreitet. Wenn eine Arbeitskopfzeile abgeschlossen ist, aktualisiert das System den Status der Bestandsbuchungen für die Hauptauftragsmenge. Es aktualisiert jedoch erst die Menge, die mit der Überbuchung verknüpft ist, nachdem der Hauptauftrag vollständig gekauft wurde.
+
+Wenn Sie eine Arbeitskopfzeile für einen bereits registrierten Überbuchung stornieren, wird die Überbuchung zunächst um die stornierte Menge reduziert. Nachdem die Überbuchung auf eine Menge von 0 (Null) reduziert wurde, wird der Datensatz entfernt und alle zusätzlichen Mengen werden gegenüber der Hauptauftragsmenge abgebucht.
