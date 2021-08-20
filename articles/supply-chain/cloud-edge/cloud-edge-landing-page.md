@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354808"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780673"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Cloud- und Edge-Skalierungseinheiten für Workloads in der Fertigungs- und Lagerortverwaltung
 
@@ -102,7 +102,7 @@ Ihre aktuelle Produktionsumgebung muss den in LCS als Typ **Self-Service** geken
 > [!IMPORTANT]
 > Umgebungstypen, die als Infrastructure-as-a-Service (IaaS) ausgeführt werden, werden nicht unterstützt. Diese Umgebungen sind normalerweise mit dem Typ **Von Microsoft verwaltet** in LCS gekennzeichnet. Wenn Sie über Umgebungen dieses Typs verfügen, informieren Sie sich bei Ihrem Ansprechpartner bei Microsoft über den Migrationszeitplan zum Typ **Self-Service**.
 
-Microsoft ist dabei, alle Cloud-Umgebungen von Supply Chain Management von einem IaaS-Modell auf eine Topologie umzustellen, die in Service Fabric gehostet wird. Dieser Schritt bringt eine bessere Skalierbarkeit und erleichtert die Dienstverwaltung. Daher sind Bereitstellungs- und Wartungsvorgänge schneller. Ebenso werden Dienstkomponenten auf das Konzept der Microservices migriert und das Dienst-Hosting-Modell wird von einem VM-Modell (virtuelle Maschine) auf eine schlanke Containerarchitektur [umgestellt](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm).
+Microsoft ist dabei, alle Cloud-Umgebungen von Supply Chain Management von einem IaaS-Modell auf eine Topologie umzustellen, die in Service Fabric gehostet wird. Dieser Schritt bringt eine bessere Skalierbarkeit und erleichtert die Dienstverwaltung. Daher sind Bereitstellungs- und Wartungsvorgänge schneller. Ebenso werden Dienstkomponenten auf das Konzept der Microservices migriert und das Dienst-Hosting-Modell wird von einem VM-Modell (virtuelle Maschine) auf eine schlanke Containerarchitektur [umgestellt](/virtualization/windowscontainers/about/containers-vs-vm).
 
 Letztendlich versorgt dieselbe Service-Fabric-basierte containerisierte Dienstinfrastruktur sowohl Cloud- als auch Edge-Instanzen des Dienstes, unabhängig davon, ob eine Instanz ein Hub in der Cloud oder eine Skalierungseinheit in der Cloud oder am Edge ist.
 

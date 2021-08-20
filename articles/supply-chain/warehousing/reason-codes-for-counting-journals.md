@@ -1,8 +1,8 @@
 ---
 title: Ursachencodes für Bestandszählungen anzeigen
 description: In diesem Thema wird beschrieben, wie Ursachencodes für Inventuraufgaben eingerichtet werden.
-author: Mirzaab
-ms.date: 03/15/2017
+author: perlynne
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,22 @@ ms.reviewer: kamaybac
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: perlynne
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a6b8a686b6aee6b52b3f43caf8acae9f371f8804
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: 4510ed7033e7c4e5187905906dcbef63f05a130bafcb7d9f19bbb360a7298119
+ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838201"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "7012090"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Ursachencodes für Bestandszählungen anzeigen
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-Ursachencodes lassen Sie die Ergebnisse einer Inventur und sämtliche Abweichungen analysieren, die während dieses Vorgangs auftreten. Sie können den Grund für das Treffen der Anzahl, wie eine angebrochenes Palette oder einen vordefinierten Regulierung angeben, die auf Grundlage der Bestandsbeispiele liegt.
+Ursachencodes lassen Sie die Ergebnisse einer Inventur und sämtliche Abweichungen analysieren, die während dieses Vorgangs auftreten. Sie können den Grund für das Treffen der Anzahl, wie eine angebrochenes Palette oder einen vordefinierten Regulierung angeben, die auf Grundlage der Bestandsbeispiele liegt. Gleichzeitig können Sie die Regulierungsfunktion verwenden, um den Wert der Anpassungen am verfügbaren Lagerbestand basierend auf dem Grund für jede Bestandsregulierung auf das entsprechende Gegenkonto zu buchen.
 
 ## <a name="recommendation"></a>Empfehlung
 
@@ -35,17 +36,32 @@ Bevor Sie das System so einrichten, wird empfohlen, dass Sie eine Strategie für
 - Müssen für Lagerorte Ursachencodes erforderlich sein?
 - Müssen Ursachencodes für mehrere Artikel obligatorisch oder optional sein?
 - Wie viele Ursachencodes brauchen Sie?
+- Müssen Sie eine begrenzte Liste von Ursachencodes für Regulierungen vorab auswählen?
 - Wie sollen Benutzer von Strichcodescannern Ursachencodes verwenden? Müssen die Ursachencodes vorgewählt, erforderlich oder nicht bearbeitbar sein?
 - Brauchen Lagerarbeiter anderes Ursachencodeverhalten auf mobile Scannern? Wenn die Antwort ja ist, können Sie keine weiteren Menüoptionen erstellen und diese unterschiedlichen Person zuweisen.
+- Sollten die Ursachencodes die Buchung auf finanziellen Gegenkonten steuern?
 
-## <a name="where-reason-codes-apply"></a>Wo Ursachencodes gelten
+## <a name="turn-on-reason-code-features-in-your-system"></a>Ursachencodefunktionen in Ihrem System aktivieren
 
-Sie können mehrere Ursachencoderichtlinien erstellen, und jede Ursachencoderichtlinie kann zwei zählende Ursachencoderichtlinien haben. Die Inventurursachenrichtlinien können verschiedene Lagerortebene oder Artikelebenen verwenden.
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
-## <a name="set-up-reason-code-policies"></a>Richten Sie Ursachencodes ein.
+Wenn in Ihrem System nicht alle in diesem Thema beschriebenen Funktionen angezeigt werden, müssen Sie wahrscheinlich die Funktion *Regulierungen des verfügbaren Lagerbestands mit konfigurierbaren Ursachencodes buchen, die mit Ausgleichskonten verbunden sind* aktivieren. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 
-1. Wählen Sie **Lagerverwaltung** \> **Einstellungen** \> **Lager** \> **Richtlinien Inventurursachencodes** aus, und erstellen Sie eine neue Ursachencoderichtlinie.
-2. Im Feld **Inventurursachencodetyp** wählen Sie entweder **Obligatorisch** oder **Fakultativ**, um anzugeben, ob die Auswahl eines Ursachencodes eine optionale oder erforderliche Aktivität in einer der folgenden Inventurerfassungen sollen:
+- **Module:** *Lagerortverwaltung*
+- **Funktionsname:** *Regulierungen des verfügbaren Lagerbestands mit konfigurierbaren Ursachencodes buchen, die mit Ausgleichskonten verbunden sind*
+
+## <a name="set-up-reason-codes"></a>Ursachencodes einrichten
+
+### <a name="set-up-reason-code-policies"></a>Richten Sie Ursachencodes ein.
+
+Sie können mehrere Ursachencoderichtlinien erstellen, um zu steuern, wann und wie Ursachencodes für Zählungen angewendet werden. Jede Ursachencoderichtlinie kann einen von zwei Ursachencodetypen für Zählungen haben (*Optional* oder *Obligatorisch*). Die Richtlinien zu Ursachencodes für Zählungen können verschiedene Lagerortebenen oder Artikelebenen verwenden.
+
+Führen Sie die folgenden Schritte aus, um eine Ursachencoderichtlinie zu erstellen.
+
+1. Gehen Sie zu **Bestandsverwaltung** \> **Setup** \> **Bestand** \> **Richtlinien zu Ursachencodes für Zählungen**.
+1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Richtlinie zum Raster hinzuzufügen.
+1. Legen Sie das Feld **Name** für die neue Richtlinie fest.
+1. Im Feld **Ursachencodetyp für Zählungen** wählen Sie entweder *Obligatorisch* oder *Optional*, um anzugeben, ob die Auswahl eines Ursachencodes eine optionale oder erforderliche Aktivität in den folgenden Prozessen zur Lagerregulierung sein soll:
 
     - Inventur (mobilen Gerät)
     - Lagerplatzinventur (mobile Gerät)
@@ -53,34 +69,63 @@ Sie können mehrere Ursachencoderichtlinien erstellen, und jede Ursachencoderich
     - Regulierung in (mobiles Gerät)
     - Regulierung aus (mobiles Gerät)
     - Inventurerfassung (Rich Client)
+    - Mengenregulierungen/Online-Inventur (Rich-Client)
 
-Sie können Ursachencodes für einzelne Lagerorte und für Produkte einrichten. Die Ursachencodeeinstellung für Produkte Einstellung kann für Lagerorte missachten.
+Sie können Ursachencoderichtlinien sowohl für einzelne Lagerorte als auch für Produkte einrichten. Die Einrichtung des Ursachencodes für ein Produkt kann die Einrichtung für den Lagerort des Produkts außer Kraft setzen.
 
-## <a name="mandatory-reason-codes"></a>Obligatorische Ursachencodes
+> [!NOTE]
+> Bei Lagerorten und Artikeln, wo das Feld **Richtlinie zu Ursachencodes für Zählungen** auf *Obligatorisch* gesetzt ist, kann die Inventurerfassung nicht abgeschlossen und geschlossen werden, bis ein Ursachencode angegeben wird. Weitere Informationen finden Sie im nächsten Abschnitt.
 
-Wenn der Parameter **Obligatorisch** in der Konfiguration von Ursachencodes für Lagerorte oder Artikel festgelegt ist, kann die Inventurerfassung nicht abgeschlossen werden, bis ein Ursachencode angegeben wird.
+### <a name="assign-counting-reason-code-policies-to-warehouses"></a>Lagerorten Richtlinien zu Ursachencodes für Zählungen zuweisen
 
-### <a name="set-up-reason-codes-for-warehouses"></a>Ursachencodes für Lagerorte einrichten
+Führen Sie die folgenden Schritte aus, um einem Lagerort eine Richtlinie zu Ursachencodes für Zählungen zuzuweisen.
 
-1. Klicken Sie auf **Lagerverwaltung** \> **Einstellungen** \> **Lageraufschlüsselung** \> **Lagerorte**
-2. Auf der Registerkarte **Lagerort** im Feld **Inventurursachencoderichtlinie**, wählen Sie eine der folgenden Optionen aus:
+1. Gehen Sie zu **Lagerverwaltung** \> **Setup** \> **Lageraufschlüsselung** \> **Lagerorte**.
+1. Wählen Sie im Listenbereich einen Lagerort aus.
+1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** in der Gruppe **Setup** **Richtlinie zu Ursachencodes für Zählungen** aus. Führen Sie dann im Dropdown-Dialogfeld **Richtlinie zu Ursachencodes für Zählungen zuweisen** einen der folgenden Schritte aus:
 
-    - **Leer** – Parameter, der der für den Artikel eingerichtet wurde, wird verwendet, um zu bestimmen, ob das Produkt für Inventurerfassungen erforderlich sind.
-    - **Obligatorisch** – Ein Ursachencode ist immer auf für Inventurerfassungen für den Lagerort erforderlich.
-    - **Obligatorisch** – Ein Ursachencode ist immer für Inventurerfassungen für den Lagerort erforderlich.
+    - Um die Richtlinieneinrichtung für jeden Artikel zu verwenden, um zu bestimmen, ob Inventurerfassungen dafür obligatorisch sind, geben Sie keinen Wert ein (oder löschen Sie den vorhandenen Wert).
+    - Um einen Ursachencode für Inventurerfassungen für den Lagerort anzufordern, wählen Sie eine Ursachenrichtlinie aus, bei der das Feld **Ursachencodetyp für Zählungen** auf *Obligatorisch* gesetzt ist.
+    - Wenn ein Ursachencode für Inventurerfassungen für den Lagerort optional ist, wählen Sie eine Ursachenrichtlinie aus, bei der das Feld **Ursachencodetyp für Zählungen** auf *Optional* gesetzt ist.
 
-### <a name="set-up-reason-codes-for-products"></a>Ursachencodes für Lagerorte einrichten
+### <a name="assign-counting-reason-code-policies-to-products"></a>Produkten Richtlinien zu Ursachencodes für Zählungen zuweisen
 
-1. Wechseln Sie **Produktinformationsverwaltung** \> **Produkte** \> **Freigegebene Produkte**.
-2. Auf der Registerkarte **Lagerort** im Feld **Inventurursachencoderichtlinie** wählen Sie eine der folgenden Optionen aus:
+Führen Sie die folgenden Schritte aus, um einem Produkt eine Richtlinie zu Ursachencodes für Zählungen zuzuweisen.
 
-    - **Leer** – Parameter, der für den Artikel eingerichtet wurde, wird verwendet, um zu bestimmen, ob das Produkt für Inventurerfassungen erforderlich ist.
-    - **Obligatorisch** – Ein Ursachencode ist immer auch für Inventurerfassungen für das Produkt erforderlich. Diese Einstellung hat Priorität gegenüber Ursachencodeeinstellungen auf Lagerortebene.
-    - **Obligatorisch** – Ein Ursachencode ist immer für Inventurerfassungen für das Produkt erforderlich. Diese Einstellung hat Priorität gegenüber Ursachencodeeinstellungen auf Lagerortebene.
+1. Wechseln Sie zu **Produktinformationsverwaltung** \> **Produkte** \> **Freigegebene Produkte**.
+1. Wählen Sie im Raster ein Produkt aus.
+1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Produkt** in der Gruppe **Setup** **Richtlinie zu Ursachencodes für Zählungen** aus. Führen Sie dann im Dropdown-Dialogfeld **Richtlinie zu Ursachencodes für Zählungen zuweisen** einen der folgenden Schritte aus:
 
-### <a name="use-reason-codes-in-counting-journals"></a>Verwenden von Ursachencodes in den Inventurerfassungen
+    - Um die Richtlinieneinrichtung für den Lagerort zu verwenden, um zu bestimmen, ob Inventurerfassungen für das Produkt obligatorisch sind, geben Sie keinen Wert ein (oder löschen Sie den vorhandenen Wert).
+    - Um einen Ursachencode für Inventurerfassungen für das Produkt anzufordern, wählen Sie eine Ursachenrichtlinie aus, bei der das Feld **Ursachencodetyp für Zählungen** auf *Obligatorisch* gesetzt ist. Diese Einstellung hat Priorität gegenüber Ursachencodeeinstellungen auf Lagerortebene.
+    - Wenn ein Ursachencode für Inventurerfassungen für das Produkt optional ist, wählen Sie eine Ursachenrichtlinie aus, bei der das Feld **Ursachencodetyp für Zählungen** auf *Optional* gesetzt ist. Diese Einstellung hat Priorität gegenüber Ursachencodeeinstellungen auf Lagerortebene.
 
-In einer Inventurerfassung können Sie Ursachencodes für viele der folgenden Typen hinzufügen:
+### <a name="set-up-counting-reason-codes"></a>Ursachencodes für Zählungen einrichten
+
+Gehen Sie zum Einrichten Ihrer Urschencodes für Zählungen folgendermaßen vor.
+
+1. Gehen Sie zu **Bestandsverwaltung** \> **Setup** \> **Bestand** \> **Ursachencodes für Zählungen**.
+1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zum Raster hinzuzufügen.
+1. Legen Sie die Felder **Ursachencode für Zählungen** und **Beschreibung** für die neue Zeile fest.
+1. Um ein Gegenkonto zuzuweisen, geben Sie einen Wert in das Feld **Gegenkonto** ein oder wählen Sie ihn aus.
+
+    > [!NOTE]
+    > Wenn ein Gegenkonto einem Ursachencode für Zählungen zugeordnet ist, wird der Wert beim Buchen einer Inventurerfassung mit diesem Ursachencode für Zählungen gegen das zugeordnete Gegenkonto gebucht und nicht gegen das Standardkonto des Lagerbuchungsprofils.
+
+### <a name="set-up-counting-reason-code-groups"></a><a name="reason-groups"></a>Ursachencodegruppen für Zählungen einrichten
+
+*Ursachencodegruppen für Zählungen* können als Teil der Menüelemente *Regulierung eingehend* und *Regulierung ausgehend* mobilen Warehouse Management-App, um die Liste der Ursachencodes für Zählungen einzuschränken. (Weitere Informationen zu Ursachencodegruppen für Zählungen finden Sie im Abschnitt [Die Menüelemente des mobilen Geräts für ein- und ausgehende Regulierung einrichten](#setup-adjustment-in-out) weiter unten in diesem Thema.)
+
+1. Gehen Sie zu **Bestandsverwaltung** \> **Setup** \> **Bestand** \> **Ursachencodegruppen für Zählungen**.
+1. Wählen Sie im Aktionsbereich **Neu** aus, um eine Gruppe hinzuzufügen.
+1. Legen Sie die Felder **Ursachencodegruppe** und **Gruppenbeschreibung** für die neue Gruppe fest.
+1. Wählen Sie im Aktionsbereich **Speichern** aus.
+1. Öffnen Sie im Abschnitt **Details** und wählen Sie **Neu** in der Symbolleiste, um dem Raster eine Zeile hinzuzufügen. Legen Sie dann das Feld **Ursachencode für Zählungen** für die neue Zeile fest. 
+1. Wiederholen Sie den vorherigen Schritt, um nach Bedarf weitere Codes zuzuweisen. Wenn Sie einen Code aus der Gruppe entfernen müssen, wählen Sie ihn aus und wählen Sie dann **Löschen** auf der Symbolleiste.
+
+### <a name="set-up-reason-codes-for-mobile-device-menu-items"></a>Ursachencodes für Menüelemente für das mobile Gerät einrichten
+
+Sie können Ursachencodes für die folgenden Arten von verfügbaren Regulierungen konfigurieren:
 
 - Inventurzählung
 - Stellen-Anzahl
@@ -88,59 +133,92 @@ In einer Inventurerfassung können Sie Ursachencodes für viele der folgenden Ty
 - Regulierung eingehend
 - Regulierung ausgehend
 
-Ursachencodes werden für Inventurerfassungen ine Erfassungspositionen im Typ **Inventurerfassung** hinzugefügt.
-
-1. Wechseln Sie zu **Lagerverwaltung** \> **Erfassungseinträge** \> **Artikelinventur** \> **Inventur**.
-2. In den Positionsdetails in der Inventurerfassung im Feld **Inventurursachencode** wählen Sie eine Option aus.
-
-### <a name="view-the-counting-history-as-its-recorded-by-reason-codes"></a>Die Inventurerfassung annzeigen, da diese nach Ursachencodes erfasst ist.
-
-- Wählen Sie **Lagerverwaltung** \> **Abfragen und Berichte** \> **Inventurerfassung**, aus, und klicken Sie dann im Feld **Inventurursachencode** aus, geben die Inventurerfassung angezeigt, die über einen Ursachencode erfasst wurde.
-
-### <a name="use-a-reason-code-for-a-quantity-adjustment"></a>Verwenden Sie einen Ursachencode für eine Mengenanpassung
-
-1. Wählen Sie auf der Seite **Verfügbarer Lagerbestand** **Menge anpassen** aus. Sie können die Seite **Verfügbarer Lagerbestand** auf mehrere Arten öffnen Wechseln Sie zu **Lagerverwaltung** \> **Abfragen und Berichte** \> **Verfügbarer Lagerbestand**.
-2. Wählen Sie **Menge anpassen**, und dann, im Feld **Inventurursachencode** wählen Sie einen Ursachencode aus.
-
-### <a name="configure-reason-codes-for-mobile-device-menu-items"></a>Konfigurieren Sie Ursachencodes für Menüoptionen für das mobile Gerät
-
-Sie können Ursachencodes für alle Anzahlarten für eine Menüoption des mobilen Geräts konfigurieren. Die Variante der Menüoption des mobilen Geräts enthält die folgenden Informationen:
+In den meisten Fällen können Sie für jedes relevante Menüelement des mobilen Geräts die folgenden Informationen festlegen:
 
 - Ob der Ursachencode des mobilen Geräts während des Zählens angezeigt wird.
 - Der Standardursachencode ein, der für eines Menüelements des mobilen Geräts angezeigt wird.
 - Ob der Benutzer den Ursachencode arbeiten kann.
 
-### <a name="set-up-reason-codes-on-a-mobile-device"></a>Einstellungsursachencodes auf einem mobilen Gerät
+#### <a name="set-up-mobile-device-menu-items-for-a-counting-process"></a>Menüelemente für einen Inventurprozess für das mobile Gerät einrichten
 
-1. Wählen Sie **Lagerortverwaltung** \> **Setup** \> **Mobiles Gerät** \> **Menüoptionen für mobiles Gerät** aus.
-2. Auf der Registerkarte **Inventuren** wählen Sie **Zykluszählung** aus.
-3. Wählen Sie im Feld **Standardinventurursachencode** Sie legen den Standardursachencode ein, der beim Melden Inventurauftrag erfasst werden soll, jedoch wird, indem die Menüoption des mobilen Geräts verwendet.
-4. Wählen Sie im Feld **Hier werden Inventurursachencode an** **Position**, um die Ursachencodes anzeigen, nachdem eine Abweichung erfasst ist. Aktivieren Sie **Ausblenden** wenn der Ursachencode nicht angezeigt wird.
-5. Hier können Sie die Option **Bearbeiten Sie Inventurursachencode** auf entweder **Ja** oder **Nein** festlegen. Wenn Sie Option auf **Ja** setzen, kann die Arbeitskraft den Ursachencode bearbeiten, wenn er im mobilen Gerät während des Zählens dargestellt wird.
+Um eine Menüelement für mobile Geräte für einen Inventurprozess einzurichten, führen Sie diese Schritte aus.
+
+1. Gehen Sie zu **Lagerortverwaltung** \> **Setup** \> **Mobiles Gerät** \> **Menüelemente für mobiles Gerät**.
+1. Wählen Sie das entsprechende Menüelement im Listenbereich aus oder erstellen Sie eine neues Menüelement.
+1. Wählen Sie im Aktionsbereich **Zykluszählung**.
+1. Wählen Sie im Feld **Standardursachencode für Zählungen** den Standardursachencode aus, der erfasst werden soll, wenn das Menüelement des mobilen Geräts für die Inventur verwendet wird.
+1. Wählen Sie im Feld **Ursachencode für Zählungen anzeigen** einen der folgenden Werte aus:
+
+    - *Position*: Zeigen Sie den Ursachencode an, nachdem jede Abweichung erfasst wurde.
+    - *Ausblenden*: Den Ursachencode nicht anzeigen.
+
+1. Setzen Sie die Option **Ursachencode für Zählungen bearbeiten** auf *Ja*, damit die Arbeitskraft den Ursachencode bearbeiten kann, wenn er im mobilen Gerät während des Zählens dargestellt wird. Setzen Sie sie auf *Nein*, um zu verhindern, dass die Arbeitskraft den Code bearbeitet.
 
 > [!NOTE]
-> Die Schaltfläche **Zykluszählung** kann auf einer beliebigen Menüoption des mobilen Geräts, die in die Inventur aktiviert werden ausgeführt werden kann. Beispiele umfassen die Menüoptionen für Stellenanzahlen, Benutzer-verwiesene Arbeit und System-verwiesene Arbeit.
+> Die Schaltfläche **Zykluszählung** kann auf einer beliebigen Menüoption des mobilen Geräts, die in die Inventur aktiviert werden ausgeführt werden kann. Beispiele umfassen die Menüoptionen für Stellenanzahlen, benutzergesteuerte Arbeit und systemgesteuerte Arbeit.
 
-## <a name="cycle-count-approvals"></a>Inventur-Zykluszählungen
+#### <a name="set-up-mobile-device-menu-items-for-adjustment-in-and-adjustment-out"></a><a name="setup-adjustment-in-out"></a>Die Menüelemente des mobilen Geräts für ein- und ausgehende Regulierung einrichten
 
-Bevor eine Anzahl genehmigt wurde, kann der Benutzer den Ursachencodes ändern, der der Anzahl zugeordnet ist. Wenn die Anzahl genehmigt wird, wird der eingegebene Ursachencode für die Inventurerfassungspositionen.
+Um ein Menüelement für mobile Geräte für eine ein- oder ausgehende Regulierung einzurichten, führen Sie diese Schritte aus.
 
-### <a name="modify-cycle-count-approvals"></a>Inventur-Zykluszählungen bearbeiten
+1. Gehen Sie zu **Lagerortverwaltung** \> **Setup** \> **Mobiles Gerät** \> **Menüelemente für mobiles Gerät**.
+1. Wählen Sie im Aktivitätsbereich **Neu** aus, um ein Menüelement zu erstellen.
+1. Legen Sie die Felder **Name des mobilen Elements** und **Titel** für das neue Menüelement fest.
+1. Legen Sie das Feld **Modus** auf *Arbeit* fest.
+1. Legen Sie die **Vorhandene Arbeit verwenden**-Option mit *Nein* fest.
+1. Wählen Sie im Feld **Arbeitserstellungsprozess** *Regulierung eingehen* oder *Regulierung ausgehend* aus.
+1. Legen Sie im Inforegister **Allgemein** die folgenden Felder fest. (Alle diese Felder werden hinzugefügt, wenn Sie *Regulierung eingehend* oder *Regulierung ausgehend* im Feld **Arbeitserstellungsprozess** auswählen.)
 
-1. Wählen Sie **Lagerortverwaltung** \> **Zykluszählung** \> **Schwebende Prüfung der Gangzählungs-Arbeit** aus.
-2. Wählen Sie **Zykluszählung**, und dann, im Feld **Inventurursachencode** wählen Sie einen Ursachencode aus.
+    - **Prozessleitfaden verwenden**: Wenn Sie einen *Regulierung ausgehend*-Prozess erstellen, stellen Sie diese Option unbedingt auf *Ja*. Wenn Sie einen *Regulierung ausgehend*-Prozess erstellen, steht diese Option immer auf *Ja*.
+    - **Standardursachencode für Zählungen**: Legen Sie den Standardursachencode fest, der erfasst werden soll, wenn das Menüelement des mobilen Geräts für die Inventur verwendet wird.
+    - **Ursachencode für Zählungen anzeigen**: Wählen Sie einen der folgenden Werte aus:
 
-### <a name="modify-the-mobile-device-menu-item-for-adjustment-in-and-adjustment-out"></a>Ändern Sie die Menüoption des mobilen Geräts für ein- und ausgehende Regulierung
+        - *Position*: Zeigen Sie den Ursachencode an, nachdem jede Abweichung erfasst wurde.
+        - *Ausblenden*: Den Ursachencode nicht anzeigen.
 
-1. Wählen Sie **Lagerortverwaltung** \> **Einstellungen** \> **Mobiles Gerät** \> **Menüoptionen des mobilen Geräts**, und wählen Sie dann **Regulierung in und** aus.
-2. Legen Sie die **Vorhandene Arbeit verwenden**-Option mit **Nein** fest.
-3. Wählen Sie im Feld **Bearbeiten Erstellungsprozess** **Regulierung in** aus.
+    - **Ursachencode für Zählungen bearbeiten**: Setzen Sie die Option auf *Ja*, damit die Arbeitskraft den Ursachencode bearbeiten kann, wenn er im mobilen Gerät während des Zählens dargestellt wird. Setzen Sie sie auf *Nein*, um zu verhindern, dass die Arbeitskraft den Code bearbeitet.
+    - **Ursachencodegruppe für Zählungen**: Wählen Sie eine Ursachencodegruppe aus, wenn Sie die Liste der Optionen einschränken möchten, die den Arbeitskräften angezeigt wird. Informationen zum Einrichten von Ursachencodegruppen finden Sie im Abschnitt [Ursachencodegruppen für Zählungen einrichten](#reason-groups) weiter oben in diesem Thema. 
 
-Die folgenden Felder werden der Menüoption des mobilen Geräts hinzugefügt, wenn **Regulierung in** oder **Regulierung aus** für den Arbeitserstellungsprozesses aktiviert ist:
+> [!NOTE]
+> Wenn Sie eine Ursachencodegruppen für Zählungen den Menüelementen *Regulierung eingehend* und *Regulierung ausgehend* zuweisen, bei denen die Option **Prozessleitfaden verwenden** auf *Ja* steht, können Sie im Rahmen der Verarbeitung in der mobilen Warehouse Management-App eine eingeschränkte Liste der Ursachencodes für Zählungen abrufen.
+>
+> Die Option **Prozessleitfaden verwenden** kann auch dazu beitragen, dass nicht versehentlich große Anpassungsmengen auftreten. (Zum Beispiel könnte eine Arbeitskraft versehentlich einen Strichcode einer Artikelnummer anstelle eines Mengenwertes scannen.) Um diese Funktion einzurichten, stellen Sie die Option **Prozessleitfaden verwenden** für jedes relevante Menüelement auf *Ja*. Gehen Sie dann zu **Lagerortverwaltung \> Setup \> Arbeitskraft** und legen Sie das Feld **Regulierungsmengenbeschränkung** für jeden relevanten Lagerarbeiter fest, um die maximale Regulierungsmenge anzugeben, die die Arbeitskraft erfassen kann.
 
-- Standardursachencode für Zählungen
-- Ursachencode für Zählungen anzeigen
-- Ursachencode für Zählungen bearbeiten
+## <a name="processing-that-uses-counting-reason-codes"></a>Verarbeitungen, die Ursachencodes für Zählungen verwenden
 
+Wenn Arbeitskräfte die mobile Warehouse Management-App verwenden, werden die Ursachencodes aufgezeichnet. Sofern kein Inventurgenehmigungsprozess definiert wurde, werden die erfassten Ursachencodes sofort als Teil der folgenden Inventurerfassungsbuchung verwendet.
+
+### <a name="cycle-count-approvals"></a>Inventur-Zykluszählungen
+
+Bevor eine Anzahl genehmigt wurde, kann die Arbeitskraft den Ursachencodes ändern, der der Anzahl zugeordnet ist. Wenn die Anzahl genehmigt wird, wird der eingegebene Ursachencode für die Inventurerfassungspositionen.
+
+#### <a name="modify-reason-codes-for-cycle-count-approvals"></a>Ursachencodes für Zyklusanzahlgenehmigungen ändern
+
+Gehen Sie wie folgt vor, um eine Zyklusanzahlgenehmigung zu ändern.
+
+1. Gehen Sie zu **Lagerortverwaltung** \> **Zykluszählung** \> **Ausstehende Prüfung der Zykluszählarbeit** aus.
+1. Wählen Sie im Raster eine Zyklusanzahl aus.
+1. Wählen Sie im Aktionsbereich auf der Registerkarte **Arbeit** die Option **Zykluszählung**. Wählen Sie dann im Feld **Ursachencode** einen neuen Ursachencode aus.
+
+Ursachencodes werden für Inventurerfassungen ine Erfassungspositionen im Typ *Inventurerfassung* hinzugefügt.
+
+1. Gehen Sie zu **Lagerverwaltung** \> **Erfassungseinträge** \> **Artikelinventur** \> **Inventur**.
+2. Wählen Sie in den Positionsdetails der Inventurerfassung im Feld **Ursachencode für Zählungen** den Ursachencode aus, der Ihrer aktuellen Situation entspricht.
+
+### <a name="view-the-reason-codes-recorded-in-the-counting-history"></a>Die in der Inventurhistorie erfassten Ursachencodes anzeigen
+
+Gehen Sie folgendermaßen vor, um die Ursachencodes anzuzeigen, die in der Inventurhistorie erfasst wurden.
+
+1. Wechseln Sie zu **Lagerverwaltung** \> **Anfragen und Berichte** \> **Inventurhistorie**.
+1. Wählen Sie im Listenbereich einen Elementanzahldatensatz aus.
+1. Sehen Sie sich im Feld **Ursachencode für Zählungen** die Inventurhistorie an, die über einen Ursachencode aufgezeichnet wurde.
+
+### <a name="use-reason-codes-for-quantity-adjustment-or-online-counting"></a>Ursachencodes für die Mengenregulierung oder Online-Inventur
+
+Gehen Sie wie folgt vor, um einen Ursachencode für eine Mengenregulierung oder Online-Inventur zu verwenden.
+
+1. Wechseln Sie zu **Bestandsverwaltung \> Anfragen und Berichte \> Bestandsliste**.
+1. Wählen Sie im Aktivitätsbereich **Mengenregulierung** aus.
+1. Wählen Sie **Mengeregulierung** und dann im Feld **Ursachencode für Zählungen** einen Ursachencode aus.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

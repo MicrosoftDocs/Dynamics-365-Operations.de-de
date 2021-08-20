@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 07d3222680d9d9bff639f34eca5fea64d753ffd1
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 90fcbdc5c9dd4301225952d885794bd4d03ef825fd5590896be13eacfad1f979
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773295"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Einstieg in die Globale Bestandsbuchhaltung
 
@@ -42,7 +42,7 @@ Die Globale Bestandsbuchhaltung unterstützt derzeit nicht alle Funktionen der K
 > [!IMPORTANT]
 > Um die Globale Bestandsbuchhaltung zu verwenden, müssen Sie über eine LCS-fähige Hochverfügbarkeitsumgebung verfügen (keine OneBox-Umgebung). Außerdem müssen Sie Supply Chain Management Version 10.0.19 oder höher ausführen.
 
-Um sich für die öffentliche Vorschau der Globalen Bestandsbuchhaltung anzumelden, senden Sie Ihre LCS Umgebungs-ID per E-Mail an das [Globale Bestandsbuchhaltung Team](mailto:GlobalInventoryAccounting@service.microsoft.com). Nachdem Sie für das Programm genehmigt wurden, sendet Ihnen das Team eine Nachverfolgungs-E-Mail, die einen Beta-Schlüssel für die Globale Bestandsbuchhaltung und Ihre Service-Endpunkte enthält. Nachdem Sie den Beta-Schlüssel erhalten haben, können Sie [das Add-In installieren](#install).
+Um sich für die öffentliche Vorschau der Globalen Bestandsbuchhaltung anzumelden, senden Sie Ihre LCS Umgebungs-ID per E-Mail an das [Globale Bestandsbuchhaltung Team](mailto:GlobalInvAccount@microsoft.com). Nachdem Sie für das Programm genehmigt wurden, sendet Ihnen das Team eine Nachverfolgungs-E-Mail, die einen Beta-Schlüssel für die Globale Bestandsbuchhaltung und Ihre Service-Endpunkte enthält. Nachdem Sie den Beta-Schlüssel erhalten haben, können Sie [das Add-In installieren](#install).
 
 ## <a name="licensing"></a>Lizenzierung
 
