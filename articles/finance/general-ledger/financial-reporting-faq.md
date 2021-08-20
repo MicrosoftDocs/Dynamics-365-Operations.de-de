@@ -2,7 +2,7 @@
 title: Häufig gestellte Fragen zur Finanzberichterstellung
 description: Dieser Artikel gibt Antwort auf einige häufig gestellte Fragen zur Finanzberichterstellung.
 author: jiwo
-ms.date: 01/13/2021
+ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e1b67f86446403933005008a9a1e2cc6739dc516
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733610"
 ---
 # <a name="financial-reporting-faq"></a>Häufig gestellte Fragen zur Finanzberichterstellung
 
@@ -76,6 +76,30 @@ Nun sollten sich die Daten aus dem Excel-Bericht in Financial Reporter in den Be
 Die Nachricht weist darauf hin, dass ein Fehler aufgetreten ist, als das System versucht hat, Finanzmetadaten aus dem Data Mart abzurufen, während Sie die Finanzberichterstellung verwendet haben. Es gibt zwei Möglichkeiten, auf dieses Problem zu reagieren:
 
 - Überprüfen Sie den Integrationsstatus der Daten, indem Sie in Report Designer zu **Extras \> Integrationsstatus** wechseln. Wenn die Integration unvollständig ist, warten Sie, bis sie abgeschlossen ist. Wiederholen Sie dann den Vorgang, bei dem Sie die Nachricht erhalten haben.
-- Wenden Sie sich an den Support, um das Problem zu identifizieren und zu beheben. Möglicherweise sind inkonsistente Daten im System vorhanden. Supporttechniker können Ihnen helfen, dieses Problem auf dem Server zu identifizieren und die spezifischen Daten zu finden, die möglicherweise aktualisiert werden müssen.
+- Wenden Sie sich an den Support, um das Problem zu identifizieren und zu beheben. Möglicherweise sind inkonsistente Daten im System vorhanden. Supporttechniker können Ihnen helfen, das Problem auf dem Server zu ermitteln und die Daten zu finden, die ggf. aktualisiert werden müssen.
+
+## <a name="how-does-the-selection-of-historical-rate-translation-affect-report-performance"></a>Wie wirkt sich die Auswahl der Umrechnung historischer Kurse auf die Leistung bei der Berichterstellung aus?
+
+Historische Kurse werden in der Regel bei Konten im Zusammenhang mit einbehaltenen Gewinnen, Liegenschaften, Werken und Maschinen sowie Eigenkapital verwendet. Je nach den Richtlinien des US-amerikanischen Financial Accounting Standards Board (FASB) oder den US-amerikanischen Rechnungslegungsvorschriften (US-GAAP) können historische Kurse erforderlich sein. Weitere Informationen finden Sie unter [Währungsfunktionen in der Finanzberichterstellung](financial-reporting-currency-capability.md).
+
+## <a name="how-many-types-of-currency-rate-are-there"></a>Wie viele Währungskurstypen gibt es?
+
+Es gibt drei Typen:
+
+- **Aktueller Kurs**: Dieser Typ wird üblicherweise bei Bilanzkonten verwendet. Er ist auch als *Devisenkassakurs* bekannt und kann der Kurs am letzten Tag des Monats oder der Kurs zu einem anderen vorab festgelegten Datum sein.
+- **Durchschnittskurs**: Dieser Typ wird üblicherweise bei Gewinn- und Verlustkonten verwendet. Der Durchschnittskurs kann entweder als einfacher Durchschnitt oder gewichteter Durchschnitt festgelegt werden.
+- **Historischer Kurs**: Dieser wird in der Regel bei Konten im Zusammenhang mit einbehaltenen Gewinnen, Liegenschaften, Werken und Maschinen sowie Eigenkapital verwendet. Diese Konten können je nach den Richtlinien von FASB oder US-GAAP erforderlich sein.
+
+## <a name="how-does-historical-currency-translation-work"></a>Wie funktioniert die historische Währungsumrechnung?
+
+Kurse hängen vom Transaktionsdatum ab. Das heißt, jede Transaktion wird individuell anhand des nächsten Wechselkurses umgerechnet.
+
+Bei der historischen Währungsumrechnung können anstelle individueller Transaktionsangaben die vorab berechneten Periodensalden verwendet werden. Diese Funktionsweise unterscheidet sich von der Umrechnung aktueller Kurse.
+
+## <a name="how-does-historical-currency-translation-affect-performance"></a>Wie wirkt sich die historische Währungsumrechnung auf die Leistung aus?
+
+Bei der Aktualisierung von Berichtsdaten kann es zu Verzögerungen kommen, weil die Beträge durch Überprüfung der Transaktionsangaben erneut berechnet werden müssen. Diese Verzögerung tritt immer dann auf, wenn Kurse aktualisiert oder weitere Transaktionen gebucht werden. Werden beispielsweise tausende Konten mehrmals am Tag zur historischen Umrechnung eingerichtet, kann es zu einer Verzögerung von bis zu einer Stunde kommen, bevor die Berichtsdaten aktualisiert werden. Bei weniger Konten dauert die Verarbeitung von Änderungen im Bericht mitunter nur wenige Minuten.
+
+Auch bei der Erstellung von Berichten mithilfe der Währungsumrechnung bei Konten mit historischem Typ kommt es zu zusätzlichen Berechnungen pro Transaktion. Je nach Anzahl der Konten kann die Berichterstellung doppelt so lange dauern.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
