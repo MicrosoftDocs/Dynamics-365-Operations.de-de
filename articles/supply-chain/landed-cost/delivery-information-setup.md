@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 5d20f732f02140204d67e5602acaf42f9d9df424
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c9e36bef0b4cf87fa3fbad5d191731b48221a41e9d92241733e1bc3edb2ca838
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021587"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747010"
 ---
 # <a name="delivery-information-setup"></a>Einstellungen für Lieferinformationen
 
@@ -55,7 +55,7 @@ Die folgende Tabelle zeigt die Felder, die für alle drei Erstellungsarten im Tr
 | Quelltabelle, Quellfeld | Diese Felder identifizieren eine Quelltabelle und ein Quellfeld in der Datenbank. Die Regel lädt den Wert in das Feld und verwendet ihn dann auf die Weise, die durch andere Einstellungen der Regel festgelegt ist. |
 | Zieltabelle, Zielfeld | Diese Felder identifizieren eine Zieltabelle und ein Zielfeld in der Datenbank. Die Regel lädt den Wert in das Feld und verwendet (oder überschreibt) ihn dann auf die Weise, die durch andere Einstellungen der Regel festgelegt ist. |
 | Aktivität | Dieses Feld identifiziert die Art der Aktivität, die auf einen Transportcontainer angewendet werden soll, auf den eine Regel zutrifft. |
-| Passende Kriterien | Dieses Feld bestimmt, wie das System eine Übereinstimmung für eine Regel identifiziert. In jedem Fall überprüft das System die Daten in den Quell- und Zieltabellen, um zu bestimmen, ob und wann ein Feld in der Zieltabelle aktualisiert werden soll.<p>Zum Beispiel ist die Quelltabelle *Fahrtn* und die Zieltabelle ist *Kauf Kopfzeile* oder *Kauf Zeilen*. Die Tabelle *Fahrtn* hat einen **Von Hafen**-Wert von *Hongkong*, und die Tabelle *Kauf Kopfzeile* hat einen **Von Hafen**-Wert von *Shanghai*. Dann wird eine Regel erstellt, die *Hongkong* als Von Hafen hat. In diesem Fall funktionieren die Werte des Feldes **Übereinstimmende Kriterien** folgendermaßen:</p><ul><li>**Beide** - Das Zielfeld wird nicht aktualisiert, weil einer der beiden Häfen nicht übereinstimmt.</li><li>**Quelle** - Das Zielfeld wird aktualisiert, weil der „Von“-Hafen der Quelltabelle *Hongkong* ist.</li><li>**Ziel** - Das Zielfeld wird nicht aktualisiert, weil der „Von“-Hafen der Zieltabelle *Shanghai* ist (nicht *Hongkong*).</li></ul> |
+| Passende Kriterien | Dieses Feld bestimmt, wie das System eine Übereinstimmung für eine Regel identifiziert. In jedem Fall überprüft das System die Daten in den Quell- und Zieltabellen, um zu bestimmen, ob und wann ein Feld in der Zieltabelle aktualisiert werden soll.<p>Zum Beispiel ist die Quelltabelle *Fahrtn* und die Zieltabelle ist *Kauf Kopfzeile* oder *Kauf Zeilen*. Die Tabelle *Fahrten* hat einen **Von Hafen**-Wert von *Hongkong*, und die Tabelle *Kauf Kopfzeile* hat einen **Von Hafen**-Wert von *Shanghai*. Dann wird eine Regel erstellt, die *Hongkong* als Von Hafen hat. In diesem Fall funktionieren die Werte des Feldes **Übereinstimmende Kriterien** folgendermaßen:</p><ul><li>**Beide** - Das Zielfeld wird nicht aktualisiert, weil einer der beiden Häfen nicht übereinstimmt.</li><li>**Quelle** - Das Zielfeld wird aktualisiert, weil der „Von“-Hafen der Quelltabelle *Hongkong* ist.</li><li>**Ziel** - Das Zielfeld wird nicht aktualisiert, weil der „Von“-Hafen der Zieltabelle *Shanghai* ist (nicht *Hongkong*).</li></ul> |
 | Aktivität kopieren | Die verfügbaren Werte sind *Kopieren* und *Standard*. Wählen Sie *Kopieren*, um den Wert im Quellfeld in das Zielfeld zu kopieren. Wählen Sie *Vorgabe*, um einen statischen Wert für das Zielfeld festzulegen. |
 | Standard | Wenn das Feld **Kopieraktion** auf *Standard* festgelegt ist, definiert das Feld **Standard** den Standardwert für das Zielfeld. Wenn sich die Aktion beispielsweise auf eine Hafenaktualisierung bezieht und das Feld **Aktion kopieren** auf *Vorgabe* festgelegt ist, identifiziert das Feld **Vorgabe** einen Hafen. |
 | Teilstrecke | Dieses Feld identifiziert den Abschnitt der Route, für den die angegebene Aktion stattfindet, z. B. Ladung oder Zoll. |
