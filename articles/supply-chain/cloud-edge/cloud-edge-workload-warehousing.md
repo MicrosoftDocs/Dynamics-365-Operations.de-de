@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 725b6dea98805baaf3f4d60b3922543067a205bc7196a05f33af21a6cd680a37
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345499"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740694"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -142,8 +142,8 @@ Die folgenden Arbeitsauftragstypen werden derzeit für WES-Arbeitsauslastungen b
 
 - Aufträge
 - Umlagerungsproblem
-- Wiederbeschaffung
-- Bestandsumlagerung
+- Wiederbeschaffung (ohne Rohmaterial für die Produktion)
+- Lagerbestandsumlagerung
 - Permanente Inventur
 - Einkaufsbestellungen (mit Lagerortaufträge verknüpft)
 
@@ -298,6 +298,7 @@ Die folgende Tabelle fasst zusammen, welche Produktionsszenarien der Lagerortver
 | Fertig melden und Fertigerzeugnisse einlagern | Ja | Ja |
 | Einlagerung von Co- und Nebenprodukten | Ja | Ja |
 | <p>Alle anderen Lagerortverwaltungsprozesse, die mit der Produktion zusammenhängen, einschließlich:</p><li>An Lagerort freigeben</li><li>Verarbeitung von Produktionswellen</li><li>Rohmaterialentnahme</li><li>Kanban-Einlagerung</li><li>Kanban-Entnahme</li><li>Produktionsauftrag starten</li><li>Produktionsausschuss</li><li>Letzte Palette der Produktion</li><li>Materialverbrauch registrieren</li><li>Kanban leeren</li></ul> | Ja | Nr. |
+| Rohmaterialwiederbeschaffung | Nr. | Nr. |
 
 ## <a name="maintaining-scale-units-for-wes"></a>Pflege von Scale-Units für WES
 
