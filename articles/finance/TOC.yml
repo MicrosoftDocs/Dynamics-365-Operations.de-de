@@ -72,6 +72,8 @@
                   items:
                     - name: Neuerungen oder Änderungen auf der Startseite von Finance
                       href: get-started/whats-new-home-page.md
+                    - name: "Finance 10.0.21 (Oktober\_2021)"
+                      href: get-started/whats-new-changed-10-0-21.md
                     - name: "Finance 10.0.20 (August\_2021)"
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: "Finance\_10.0.19 (Juni\_2021)"
@@ -1168,6 +1170,8 @@
                   href: general-ledger/yec-mssng-open-blnces.md
                 - name: Finanzerfassungsvorlagen in Office öffnen
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Warum lässt sich diese Buchung nicht stornieren?
+                  href: general-ledger/cant-reverse-transctns.md
         - name: Finanzberichterstellung
           items:
             - name: Erste Schritte mit der Finanzberichterstellung
@@ -1498,12 +1502,16 @@
                           href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
                         - name: Erste Schritte mit der elektronischen Rechnungsstellung
                           href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Neue Funktion zur elektronischen Rechnungsstellung erstellen
+                          href: localizations/e-invoicing-create-new-e-invoicing-feature.md
                         - name: Erste Schritte mit der elektronischen Rechnungsstellung in Brasilien
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Erste Schritte mit der elektronischen Rechnungsstellung in Ägypten
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Erste Schritte mit der elektronischen Rechnungsstellung in Mexiko
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Kreditorenrechnungen mit der elektronischen Rechnungsstellung importieren
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Elektronische Rechnungsstellung einrichten
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
                     - name: Häufig gestellte Fragen zur elektronischen Rechnungsstellung
@@ -1514,9 +1522,13 @@
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Erste Schritte mit der Steuerberechnung
                       href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-                    - name: Steuerfunktionsunterstützung für Umlagerungsaufträge
+                    - name: Logik zur Anwendbarkeit der Mehrwertsteuer und der Bestimmung von Mehrwertsteuergruppen
+                      href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                    - name: Unterstützung der Steuerfunktion bei Umlagerungsaufträgen
                       href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
-                    - name: Datenfelder in Steuerkonfigurationen hinzufügen
+                    - name: 'Steuer auf Preise berechnen, wenn die Option „Preise inkl. Steuer“ aktiviert ist'
+                      href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
+                    - name: Datenfelder in Steuerkonfigurationen ergänzen
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Datenfelder mithilfe von Erweiterungen der Steuerintegration hinzufügen
                       href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
@@ -1524,17 +1536,21 @@
                       href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Mehrere MwSt.-Registrierungsnummern
                       href: localizations/emea-multiple-vat-registration-numbers.md
-                    - name: Berichterstellung für mehrere MwSt.-Registrierungen
+                    - name: Berichterstellung bei mehreren MwSt.-Registrierungen
                       items:
-                        - name: Berichterstellung für mehrere MwSt.-Registrierungen
+                        - name: Berichterstellung bei mehreren MwSt.-Registrierungen
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
-                        - name: Berichterstellung für die Niederlande
+                        - name: Berichterstellung in Frankreich
+                          items:
+                            - name: MwSt.-Erklärung
+                          href: localizations/emea-fra-VAT-declaration-preview-France.md
+                        - name: Berichterstellung in den Niederlanden
                           items:
                             - name: MwSt.-Erklärung
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Zusammenfassende Meldung
                               href: localizations/emea-nl-eu-sales-list.md
-                        - name: Berichterstellung für das Vereinigte Königreich
+                        - name: Berichterstellung im Vereinigten Königreich
                           items:
                             - name: Vorbereitung der Integration mit MTD für MwSt.
                               href: localizations/emea-gbr-mtd-vat-integration.md
@@ -1544,17 +1560,21 @@
               items:
                 - name: Informationen zu Australien
                   href: localizations/australia.md
-                - name: 'Australischer Geschäftsvorgangsbericht (Business Activity Statement, BAS)'
+                - name: Bankdateiformate australischer Banken
+                  href: localizations/apac-aus-bank-file-formats.md
+                - name: Australischer Geschäftsvorgangsbericht (BAS)
                   href: localizations/apac-aus-business-activity-statement.md
-                - name: Berichtsfelder hinzufügen und Geschäftsvorgangsbericht generieren
+                - name: Berichtsfelder hinzufügen und BAS generieren
                   href: localizations/tasks/add-bas-report-boxes.md
                 - name: Low-Value-Poolabschreibung (AU)
                   href: localizations/apac-aus-low-value-pool-depreciation.md
-                - name: Ursachencodes für Geschäftsvorgangsbericht einrichten
+                - name: Ursachencodes für BAS einrichten
                   href: localizations/tasks/set-up-reason-codes-australia-bas.md
+                - name: Schema zur Meldung von Zahlungszeiten
+                  href: localizations/apac-aus-payment-times-report.md
             - name: Österreich
               items:
-                - name: Österreich – Übersicht
+                - name: Informationen zu Österreich
                   href: localizations/austria.md
                 - name: Halbjährliche Abschreibung sonstiger Anschaffungen
                   href: localizations/emea-aut-half-year-depreciation.md
@@ -1798,10 +1818,12 @@
                   href: localizations/can-gst-hst-internet-file-transfer.md
             - name: China
               items:
-                - name: China – Übersicht
+                - name: Informationen zu China
                   href: localizations/china.md
-                - name: Finance and Operations – bearbeitet von 21Vianet in China
+                - name: Finance and Operations betrieben von 21Vianet in China
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
+                - name: Kontogruppenauswahl bei chinesischen Belegtypen
+                  href: localizations/apac-chn-account-groups-selection.md
                 - name: Stücklistenvergleich
                   href: localizations/apac-chn-bom-comparison.md
                 - name: Chinesische Hierarchie des Kontenplans
@@ -1864,19 +1886,23 @@
                   href: localizations/emea-set-up-signers-for-printing-forms.md
                 - name: Perioden in periodischen Erfassungen teilen
                   href: localizations/emea-create-post-periodic-journals.md
-                - name: Anzeige von Beträgen in Berichten und Dokumenten aktualisieren
+                - name: Anzeige von Beträgen in Berichten und Dokumenten ändern
                   href: localizations/emea-amount-printing-forms.md
                 - name: MwSt.-Abrechnung
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: MwSt.-Erklärung (Tschechische Republik)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+                - name: Banksymbole für Bankkonten
+                  href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
+                - name: Innergemeinschaftliche MwSt.
+                  href: localizations/emea-cze-intra-community-VAT.md
                 - name: Jahresendabschluss
                   href: localizations/emea-cze-hun-year-end.md
             - name: Dänemark
               items:
-                - name: Dänemark – Übersicht
+                - name: Informationen zu Dänemark
                   href: localizations/denmark.md
-                - name: Zahlungsbelegformat zu einem Debitorenkonto zuweisen
+                - name: Zahlungsbelegformat einem Debitorenkonto zuweisen
                   href: localizations/tasks/assign-payment-slip-format-customer-account.md
                 - name: Eine Kundenrechnung für einen Debitor des öffentlichen Sektors erstellen und buchen
                   href: localizations/tasks/create-post-customer-invoice-public-sector-customer.md
@@ -1992,10 +2018,6 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: EU-Intrastat-Meldung generieren
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
-                    - name: Intrastat (Frankreich)
-                      href: localizations/emea-fra-intrastat.md
-                    - name: Intrastat (Italien)
-                      href: localizations/emea-ita-intrastat.md
                 - name: Lagererfassungsberichte
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Rechnungsabgangsfristen
@@ -2048,7 +2070,7 @@
                   href: localizations/emea-storno.md
                 - name: Steuerrichtlinien
                   href: localizations/emea-tax-directives.md
-                - name: Anzeige von Beträgen in Berichten und Dokumenten aktualisieren
+                - name: Anzeige von Beträgen in Berichten und Dokumenten ändern
                   href: localizations/emea-amount-printing-forms.md
                 - name: Steuerdaten aus einem Rechnungskonto verwenden
                   href: localizations/use-fiscal-data-from-invoice-account.md
@@ -2120,6 +2142,8 @@
                   href: localizations/emea-fra-derogatory-depreciation.md
                 - name: Französische Wechsel und Solawechsel
                   href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+                - name: Intrastat (Frankreich)
+                  href: localizations/emea-fra-intrastat.md
                 - name: NAF-Codes und SIRET-Nummern
                   href: localizations/emea-fra-naf-codes-siret-numbers.md
                 - name: NAF-Codes und SIRET-Nummern einrichten
@@ -2136,13 +2160,15 @@
                   href: localizations/emea-fra-rbsl-depreciation.md
                 - name: Zahlungsmethode einrichten
                   href: localizations/tasks/fr-00004-setup-method-payment.md
-                - name: Zahlungsmethode für Debitor aktualisieren
+                - name: Zahlungsmethode bei Debitor aktualisieren
                   href: localizations/tasks/fr-00004-update-method-payment-customer.md
+                - name: MwSt.-Erklärung
+                  href: localizations/emea-fra-VAT-declaration-preview-France.md
                 - name: DAS-2-Bericht
                   href: localizations/emea-fra-das2-report.md
             - name: Deutschland
               items:
-                - name: Deutschland – Übersicht
+                - name: Informationen zu Deutschland
                   href: localizations/germany.md
                 - name: Zusätzliche Anschaffungsabschreibung
                   href: localizations/emea-deu-additional-acquisition-depreciation.md
@@ -2162,6 +2188,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: Intrastat (Deutschland)
+                  href: localizations/emea-deu-intrastat.md
                 - name: Umsatzsteuererklärung für Deutschland
                   href: localizations/emea-de-vat-declaration.md
                 - name: Bericht über elektronische Rechnungen für Kunden
@@ -2170,9 +2198,11 @@
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Elektronische Steuererklärungen einrichten
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
+                - name: 'Eigene Beschriftung für Gutschriften drucken, die aus Umsatz stammen'
+                  href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
             - name: Ungarn
               items:
-                - name: Ungarn – Übersicht
+                - name: Informationen zu Ungarn
                   href: localizations/hungary.md
                 - name: Durchschnittliche und tägliche Wechselkursberechnung
                   href: localizations/emea-hun-average-daily-exchange-rate-calculation.md
@@ -2616,6 +2646,8 @@
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Verbesserung der Benutzerfreundlichkeit von Bankdaten
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
+                - name: Intrastat (Italien)
+                  href: localizations/emea-ita-intrastat.md
                 - name: Sonstige Belastungen pro Kilogramm in einer Intrastat-Erklärung
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Absichtserklärungen – Fakturierung der üblichen Exporteure
@@ -2836,11 +2868,13 @@
                   href: localizations/emea-ltu-isaf.md
                 - name: Standardprotokolldatei für Steuer (SAF-T) für Litauen
                   href: localizations/emea-ltu-saf-t.md
+                - name: Umlagerungsdokument für Warenbewegung innerhalb eines Unternehmens einrichten
+                  href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
             - name: Malaysia
               items:
-                - name: Malaysia – Übersicht
+                - name: Informationen zu Malaysia
                   href: localizations/malaysia.md
-                - name: Debitorenkredit für Projektverkäufe generieren
+                - name: Debitorengutschrift bei Projektverkäufen generieren
                   href: localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
                 - name: Kundenbelastung für Projektverkäufe generieren
                   href: localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
@@ -2970,14 +3004,18 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: Geteilte Kreditoren/Debitoren-Wechselkursdifferenz
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
-                - name: 'Mehrwertsteuererklärung mit Registern (JPK_V7M, VDEK)'
-                  href: localizations/emea-pol-vdek.md
-                - name: Auf JPK-V7M-Meldung vorbereiten
-                  href: localizations/emea-pol-vdek-setup.md
-                - name: JPK-V7M-Meldung
-                  href: localizations/emea-pol-vdek-reporting.md
-                - name: Informationen zu bestimmten Geschäftsszenarien im JPK-V7M-Bericht
-                  href: localizations/emea-pol-vdek-scenarios.md
+                - name: PKWiU-Codes für Polen einrichten und verwenden
+                  href: localizations/emea-pol-pkwiu-code.md
+                - name: 'MwSt.-Erklärung mit Registern (JPK_V7M, VDEK)'
+                  items:
+                    - name: 'Überblick über MwSt.-Erklärung mit Registern (JPK_V7M, VDEK)'
+                      href: localizations/emea-pol-vdek.md
+                    - name: Auf JPK-V7M-Meldung vorbereiten
+                      href: localizations/emea-pol-vdek-setup.md
+                    - name: JPK-V7M-Meldung
+                      href: localizations/emea-pol-vdek-reporting.md
+                    - name: Informationen zu bestimmten Geschäftsszenarien im JPK-V7M-Bericht
+                      href: localizations/emea-pol-vdek-scenarios.md
             - name: Katar
               items:
                 - name: Übersicht zu Katar
@@ -3196,10 +3234,12 @@
                       href: localizations/rus-dispose-deferrals.md
                     - name: Stundungen zählen
                       href: localizations/rus-counting-deferrals.md
-                    - name: Berichterstellung für Stundungen
+                    - name: Berichterstellung bei Stundungen
                       href: localizations/rus-reporting-deferrals.md
                 - name: Steuerbuchhaltung
                   items:
+                    - name: Steuerregister und Steuerregistererfassung erstellen
+                      href: localizations/rus-profit-tax-registers.md
                     - name: Ausgaben- oder Einnahmencodes
                       href: localizations/rus-expense-and-income-codes.md
                     - name: Anlagensteuerregister
@@ -3212,17 +3252,21 @@
                       href: localizations/rus-rated-expenses-registers.md
                     - name: 'Verbindlichkeiten von Kreditorenkonten, Steuerregister und Schuldenabschreibungen'
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
-                    - name: Uneinbringliche Außenstandsrückstellungen für Debitoren
+                    - name: Uneinbringliche Außenstandsrückstellungen bei Debitoren
                       href: localizations/rus-bad-debts.md
                     - name: Berechnung von Steuerguthaben- und Steuerverbindlichkeitsregistern
                       href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
+                    - name: Steuerregister für Warenbewegungen
+                      href: localizations/rus-goods-movement-tax-registers.md
+                    - name: Sonstige Steuerregister
+                      href: localizations/rus-other-tax-registers.md
             - name: Saudi-Arabien
               items:
-                - name: Übersicht zu Saudi-Arabien
+                - name: Informationen zu Saudi-Arabien
                   href: localizations/saudi-arabia.md
                 - name: Mehrwertsteuer
                   href: localizations/apac-sau-sales-tax.md
-                - name: Zakat-Meldung für Saudi-Arabien
+                - name: Zakat-Berichterstellung für Saudi-Arabien
                   href: localizations/emea-sau-zakat-reporting.md
                 - name: Einer Lieferung Bankdokumentbelastungen zuordnen
                   href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
@@ -3298,14 +3342,12 @@
                   href: localizations/apac-tha-substitution-and-adjustment-invoices.md
                 - name: Nicht realisierte Vorsteuer
                   href: localizations/apac-tha-unrealized-vat.md
-                - name: Durchschnittliche MwSt. für Kauftransaktionen
+                - name: Durchschnittliche MwSt. bei Kauftransaktionen
                   href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Steuerfilialdimensionen
                   href: localizations/apac-tha-tax-branch-dimensions.md
-                - name: Ausgangssteuerbericht
+                - name: MwSt.-Bericht
                   href: localizations/apac-tha-sales-vat-report.md
-                - name: Durchschnittliche MwSt. für Kauftransaktionen
-                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Quellensteuer
                   href: localizations/apac-tha-withholding-tax.md
             - name: Vereinigte Arabische Emirate (VAE)

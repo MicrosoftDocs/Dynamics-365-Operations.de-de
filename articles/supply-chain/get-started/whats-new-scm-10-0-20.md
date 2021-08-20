@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: 1aada0d3ebe80e1efb92815c6d429ed5638dabdbac165aa09be1ca281c51b255
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641055"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773512"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.20 (August 2021)
 
@@ -47,7 +47,6 @@ Die folgende Tabelle listet die Funktionsverbesserungen auf, die in dieser Versi
 
 | Funktionsbereich | Funktion&nbsp;Name&nbsp;in Funktion&nbsp;Verwaltung | Weitere Informationen |
 |---|---|---|
-| Produktprogrammplanung | Negative Tage für die Planungsoptimierung | Mit dieser Vorschaufunktion kann die Planungsoptimierung die Verzögerungstoleranz basierend auf dem Parameter **Negative Tage** in Abdeckungsgruppen definiert werden. |
 | Produktprogrammplanung | Parallele Autorisierung der angepassten Bedarfsplanung | Diese Funktion ermöglicht die parallele Autorisierung der angepassten Bedarfsprognose aus der Seite **Angepasste Nachfrageprognose**. Mit dieser Funktion soll die Leistung gesteigert werden, wenn eine große Anzahl von Prognosen genehmigt wird. Bei der Autorisierung kann der Benutzer die **Anzahl der Themen** im Autorisierungsdialog angeben. |
 | Produktprogrammplanung | (Vorschau) Chargenfähige Umwandlung und Konsolidierung für geplante Sammel- und Verpackungschargenaufträge | Mit dieser Funktion können Sie Batchaufträge verwenden, um geplante Sammel- und Verpackungsaufträge zu konsolidieren. |
 | Produktionssteuerung | Generische Arbeitspläne kopieren | Diese Funktion erweitert die Funktion zum Kopieren von Routen, sodass Benutzer Routen kopieren können, die nicht objektspezifisch sind. Es ermöglicht dem System, alle relevanten Informationen (wie Standort, Routengruppe, Ressourcenanforderungen und verschiedene Zeiten) zu aktualisieren, nachdem die Funktion zum Kopieren von Routen zum Überschreiben einer Route verwendet wurde, die noch keinem Element zugewiesen ist. |

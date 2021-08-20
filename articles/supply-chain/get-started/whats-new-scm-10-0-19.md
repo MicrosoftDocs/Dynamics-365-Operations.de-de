@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 98f9fffcbf93871de302a0d8b4b9675889ef5e40
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: c1930a47bc133c411a0e6054aa766322a261064a06ac4cec8dcdd12c126dc7cd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641127"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773536"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management Version 10.0.19 (Juni 2021)
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365 Supply Chain Management  Version 10.0.19 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.837 und ist wie folgt verfügbar:
+In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365 Supply Chain Management Version 10.0.19 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.837 und ist wie folgt verfügbar:
 
 - **Vorschau auf die Veröffentlichung:** April 2021
 - **Allgemeine Verfügbarkeit der Freigabe (Selbst-Update):** Juni 2021
@@ -35,6 +35,7 @@ Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsve
 
 | Funktionsbereich | Funktion | Weitere Informationen |
 |---|---|---|
+| Bestand&nbsp;und&nbsp;Logistik | [Die vom Kreditor übermittelte Bankverbindung genehmigen und speichern](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) | [Kontoinformationen von Kreditoren pflegen](../../finance/accounts-payable/maintain-vendor-bank-info.md) |
 | Bestand und Logistik | [Optimierung beim Export von Datenentitäten der Kontaktperson](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | Wenn diese Funktion aktiviert ist, werden zugehörige Aufträge (oder Positionen) nicht aufgrund von Änderungen an referenzierten Daten im nächsten inkrementellen Export berücksichtigt. Wenn diese Funktion deaktiviert ist, werden zugehörige Aufträge (oder Positionen) nicht aufgrund von Änderungen an referenzierten Daten im nächsten inkrementellen Export berücksichtigt. |
 | Bestand und Logistik | [Erweiterungen der Funktionalitäten für die Lagerort-Ausführung mit Scale-Units](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Nachrichtenverarbeitungsmeldungen](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Lagerregulierung des Lagerorts](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Bestand und Logistik | [Nachschlagefeld für die Felder Belegeinleitung und Belegabschluss auf der Angebotsseite](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Diese Funktion fügt das Nachschlagefeld für die Felder **Belegeinleitung** und **Belegabschluss** auf der Seite **Verkaufsangebot** hinzu.<br><br>Diese Funktion ist standardmäßig aktiviert. |
