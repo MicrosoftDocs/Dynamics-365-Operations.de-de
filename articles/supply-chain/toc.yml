@@ -72,6 +72,8 @@
                   items:
                     - name: Neuerungen oder Änderungen auf der Startseite von Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: "Supply Chain Management 10.0.21 (Oktober\_2021)"
+                      href: get-started/whats-new-scm-10-0-21.md
                     - name: "Supply Chain Management\_10.0.20 (August\_2021)"
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: "Supply Chain Management\_10.0.19 (Juni 2021)"
@@ -256,9 +258,9 @@
                       href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Erste Schritte mit der Steuerberechnung
                       href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Steuerfunktionsunterstützung für Umlagerungsaufträge
+                    - name: Unterstützung der Steuerfunktion bei Umlagerungsaufträgen
                       href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Datenfelder in Steuerkonfigurationen hinzufügen
+                    - name: Datenfelder in Steuerkonfigurationen ergänzen
                       href: ../finance/localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Datenfelder mithilfe von Erweiterungen der Steuerintegration hinzufügen
                       href: ../finance/localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/supply-chain/toc.json
@@ -1601,9 +1603,11 @@
                   href: master-planning/planning-optimization/planning-optimization-overview.md
                 - name: Erste Schritte mit der Planungsoptimierung
                   href: master-planning/planning-optimization/get-started.md
-                - name: Passanalyse zu Planungsoptimierung
+                - name: Freigabeverfahren und Versionsverlauf der Planungsoptimierung
+                  href: master-planning/planning-optimization/release-process.md
+                - name: Passanalyse zur Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
-                - name: 'Parameter, die von der Planungsoptimierung nicht verwendet werden'
+                - name: In der Planungsoptimierung nicht verwendete Parameter
                   href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Filter auf einen Plan anwenden
                   href: master-planning/planning-optimization/plan-filters.md
@@ -1631,11 +1635,13 @@
                   href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Planungszeiträume
                   href: master-planning/planning-optimization/coverage-time-fence.md
+                - name: Nettobedarf und Informationen zum Bedarfsverursacher in der Planungsoptimierung
+                  href: master-planning/planning-optimization/net-requirements.md
                 - name: Auftragsvorschläge genehmigen
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Fest geplante Aufträge
                   href: master-planning/planning-optimization/planned-order-firming.md
-                - name: Planen mit negativen Vorgabemengen
+                - name: Mit negativen Vorgabemengen planen
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Planhistorie und Planungsprotokolle einsehen
                   href: master-planning/planning-optimization/plan-history-logs.md
@@ -1709,6 +1715,8 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Mit internen Supply Chain Management-Kunden zusammenarbeiten
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+                - name: Nettobedarf und Informationen zum Bedarfsverursacher in der integrierten Produktprogrammplanung
+                  href: master-planning/net-requirements-built-in-master-planning.md
             - name: Planung
               items:
                 - name: Bedarfs- und Beschaffungsplanung
@@ -1963,10 +1971,12 @@
                   href: procurement/purchase-requisitions-workflow.md
             - name: Angebotsanforderungen
               items:
-                - name: Angebotsanforderungen – Übersicht
+                - name: Überblick über Angebotsanforderungen
                   href: procurement/request-quotations.md
                 - name: Eine Angebotsanforderung erstellen
                   href: procurement/tasks/create-request-quotation.md
+                - name: Versiegeltes Angebot bei Angebotsanforderungen
+                  href: procurement/sealed-bidding.md
                 - name: 'Eine Anforderung erstellen, die eine Angebotsanforderung verwendet'
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Eine Bewertungsmethode für Angebotsanforderungen erstellen
@@ -2281,7 +2291,9 @@
               href: engineering-change-management/product-readiness.md
             - name: Produktstruktur freigeben
               href: engineering-change-management/release-product-structure.md
-            - name: Häufig gestellte Fragen zur Verwaltung für technische Änderungen
+            - name: Varianten von Konstruktionsprodukten erstellen
+              href: engineering-change-management/engineering-variants.md
+            - name: Häufig gestellte Fragen zur Verwaltung technischer Änderungen
               href: engineering-change-management/change-management-faq.md
         - name: Produktionssteuerung
           items:
@@ -2603,9 +2615,11 @@
               href: rebate-management/rebate-management-overview.md
             - name: Rückvergütungsverwaltungsmodul einrichten und konfigurieren
               items:
-                - name: Rückvergütungsverwaltungsparameter
+                - name: Modul für die Rückvergütungsverwaltung im System einschalten
+                  href: rebate-management/rebate-management-enable.md
+                - name: Parameter der Rückvergütungsverwaltung
                   href: rebate-management/rebate-management-parameters.md
-                - name: Workflows für Rückvergütungsverwaltungsgeschäfte
+                - name: Workflows bei Rückvergütungsverwaltungsgeschäften
                   href: rebate-management/rebate-management-workflows.md
                 - name: Prinzipien zur Rückvergütungsreduzierung
                   href: rebate-management/rebate-reduction-principle.md
@@ -2619,9 +2633,11 @@
               href: rebate-management/rebate-management-deals.md
             - name: 'Rückvergütungen verarbeiten, überprüfen und veröffentlichen'
               href: rebate-management/process-review-post.md
+            - name: Abzüge in der Abzugsworkbench verwalten
+              href: rebate-management/deduction-workbench.md
         - name: Vertrieb und Marketing
           items:
-            - name: Vertrieb und Marketing – Übersicht
+            - name: Übersicht über Vertrieb und Marketing
               href: sales-marketing/overview-sales-marketing.md
             - name: Aufträge
               items:
@@ -3057,9 +3073,11 @@
               href: landed-cost/in-transit-processing.md
             - name: Über-/Unter-Transaktionen verarbeiten
               href: landed-cost/over-under-transactions.md
-            - name: Abfragen der Gesamttransportkosten
+            - name: Nachverfolgung bei Einlagerung aktualisieren
+              href: landed-cost/update-tracking-putaway.md
+            - name: Abfragen von Gesamttransportkosten
               href: landed-cost/landed-cost-inquiries.md
-            - name: Berichte der Gesamttransportkosten
+            - name: Berichte zu Gesamttransportkosten
               href: landed-cost/landed-cost-reports.md
         - name: Lagerortverwaltung
           items:
@@ -3117,6 +3135,8 @@
                       href: warehousing/cluster-position-full.md
                     - name: Systemgeleitete Clusterkommissionierung
                       href: warehousing/system-directed-cluster-pick.md
+                    - name: Überkommissionierung bei Aufträgen und Umlagerungsaufträgen
+                      href: warehousing/over-picking-for-sales-and-transfer-orders.md
                     - name: Unterschiedliche Dimensionen für Verpackung und Lagerung festlegen
                       href: warehousing/packing-vs-storage-dimensions.md
                     - name: Chargen- und Kennzeichenbestätigung
@@ -3509,7 +3529,13 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerortverwaltung
               items:
-                - name: Der Transaktionsstatus wird für stornierte Produkteingänge nicht auf „Registriert“ aktualisiert.
+                - name: Lieferung kann aufgrund Debitorensperrung nicht bestätigt werden
+                  href: troubleshooting/warehousing/customer-is-on-hold.md
+                - name: Lieferung kann aufgrund von Ladungspositionen mit der Menge null nicht bestätigt werden
+                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
+                - name: 'Ladungsposition kann nicht aktualisiert werden, weil die freigegebene Menge negativ wäre'
+                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
+                - name: Transaktionsstatus ändert sich bei stornierten Produkteingängen nicht auf „Registriert“
                   href: troubleshooting/warehousing/canceled-product-receipts.md
                 - name: Dezimalrundung der physikalischen Fortschreibungsgröße ist falsch.
                   href: troubleshooting/warehousing/decimal-rounding-of-quantity.md

@@ -2,7 +2,7 @@
 title: Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
 description: In diesem Thema wird erläutert, wie Sie einen Austausch für eine Rücklieferung im Dynamics 365 Commerce konfigurieren.
 author: josaw1
-ms.date: 11/12/2018
+ms.date: 07/28/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 46d6e912aca64951da2865f5609a9dc22fbbcbe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 488f6fb5af6451bc462566a9714054b49eb1a80b8264528778797f6a39647764
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804600"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758335"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
 
@@ -28,13 +28,16 @@ ms.locfileid: "5804600"
 
 In älteren Versionen von Dynamics 365 Commerce werden Rücklieferungen für Kundenaufträge mithilfe des Rücklieferungsdokuments in der Zentralverwaltung verarbeitet. Doch das Rücklieferungsdokument kann auch ausschließlich für die Bearbeitung von Produkten verwendet werden, die zurückgegeben werden. Die zurückgelieferten Produkte werden durch eine negative Menge in den Rücklieferungspositionen angegeben. Dagegen wird im Umsatz eine positive Menge angegeben. Das Rücklieferungsdokument unterstützt jedoch keine positiven Mengen. Aufgrund dieser Einschränkung wurden in früheren Versionen der App keine Szenarien unterstützt, in denen Produktumtauschaktivitäten mithilfe des Rücklieferungsdokuments durchgeführt wurden.
 
-Allerdings wurden Funktionen hinzugefügt, die Szenarien unterstützen, in denen der Umtausch mithilfe von Rücklieferungen erfolgt. Commerce verwendet nun das Auftragsdokument anstelle des Rücklieferungsdokuments, um die Transaktionsarten zu verarbeiten.
+Allerdings wurden Funktionen hinzugefügt, die Szenarien unterstützen, in denen der Umtausch mithilfe von Rücklieferungen erfolgt. Zur Verarbeitung dieser Transaktionsarten wird in Commerce anstelle des Rücklieferungsdokuments nun das Auftragsdokument verwendet.
 
-## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>Konfigurieren von Commerce für die Unterstützung von Rücklieferungen
+## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>Commerce zur Unterstützung von Rücklieferungen konfigurieren
 
-Gehen Sie folgendermaßen vor, um das System so zu konfigurieren, dass Umtausch mit Rücklieferungen unterstützt wird.
+> [!NOTE]
+> Ab Commerce 10.0.20 gibt es die neue Funktion „Vereinheitlichte Rückgabeverarbeitungsumgebung in POS“. Wird diese aktiviert, sind die nachstehenden Einrichtungsschritte nicht erforderlich. **Rückgaben als Aufträge verarbeiten** wird eine dauerhaft konfigurierte und unveränderliche Einstellung.
 
-1. Gehen Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Handelsparameter**. Legen Sie im Inforegister **Kundenaufträge** die Option **Rücklieferungen als Aufträge verarbeiten** auf **Ja** fest.
+Soll bei Rückgaben ein Umtausch möglich sein (wenn die Funktion **Vereinheitlichte Rückgabeverarbeitungsumgebung in POS** nicht aktiviert ist), konfigurieren Sie das System wie folgt:
+
+1. Gehen Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Commerce-Parameter**. Legen Sie im Inforegister **Kundenaufträge** die Option **Rücklieferungen als Aufträge verarbeiten** auf **Ja** fest.
 2. Führen Sie den Auftrag **Globaler Konfigurationsverteilungszeitplan** (**1110**) aus.
 
 ## <a name="make-an-exchange"></a>Durchführen eines Umtauschs
