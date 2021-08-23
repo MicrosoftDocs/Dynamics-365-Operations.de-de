@@ -2,7 +2,7 @@
 title: Geschenkkartenmodul
 description: Dieses Thema behandelt Geschenkkartenmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 04/29/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7fc35c67a2d9b641f03f11ed5d06913e10d8e25b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 5a4aaf8e072f6547fe1dcf6fa156d2e144fd03ed806a2dc809a2cedb991461f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347493"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728338"
 ---
 # <a name="gift-card-module"></a>Geschenkkartenmodul
 
@@ -48,11 +48,17 @@ Das folgende Bild zeigt ein Beispiel eines Geschenkkartenmoduls, das auf einer A
 
 - **Zusätzliche Felder anzeigen** – Diese Eigenschaft definiert, welche Felder bei Geschenkkarten zusätzlich zur Geschenkkartennummer angezeigt werden sollen, die standardmäßig immer angezeigt wird. Beispielsweise unterstützen einige Geschenkkarten die Anzeige einer persönlichen Identifikationsnummer (PIN), andere die Anzeige einer PIN und eines Ablaufdatums. Alternativ könnte diese Eigenschaft auf Keine gesetzt werden, wodurch nur die Geschenkkartennummer und keine zusätzlichen Felder angezeigt werden.
 
-Unterstützte Werte:
--   PIN
--   Ablaufdatum
--   Pin und Ablaufdatum festlegen 
--   Keiner
+    Folgende Werte werden unterstützt:
+
+    - PIN
+    - Ablaufdatum
+    - Pin und Ablaufdatum festlegen 
+    - Ohne
+
+- **Für Gastbenutzer aktivieren**: Wenn diese Eigenschaft aktiviert ist, können Gastbenutzer Guthaben auf Geschenkkarten einlösen oder überprüfen. Diese Eigenschaft erfordert, dass der anonyme (Gast-)Zugriff für Geschenkkarten in der Commerce-Zentralverwaltung aktiviert ist. Weitere Informationen finden Sie unter [Aktivieren von Geschenkkarten-Zahlungen für Bezahlung als Gast](#enable-gift-card-payments-for-guest-checkout).
+
+> [!IMPORTANT]
+> Die Eigenschaft **Für Gastbenutzer aktivieren** ist ab der Commerce-Version 10.0.21 verfügbar. Es erfordert, dass das Commerce-Modulbibliothekspaket in der Version 9.31 installiert ist.
 
 ## <a name="site-settings-for-gift-card-modules"></a>Site-Einstellungen für Geschenkkartenmodule
 

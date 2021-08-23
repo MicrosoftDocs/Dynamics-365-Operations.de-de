@@ -14,12 +14,12 @@ ms.search.region: Austria
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 15dc9862a70b323ef648051818d5ec28d9a7d630
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6a96818fba1505ed26802a41258e48933415a75e11b8f859251c5e94ca72d1a9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839916"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744291"
 ---
 # <a name="vat-statement-details-for-austria"></a>MwSt-Berichtdetails für Österreich
 

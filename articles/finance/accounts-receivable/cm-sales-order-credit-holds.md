@@ -1,8 +1,8 @@
 ---
 title: Kreditsperren für Aufträge verwalten
 description: In diesem Thema wird das Einrichten von Regeln beschrieben, mit denen ein Debitorenauftrag auf Kredit gehalten wird.
-author: mikefalkner
-ms.date: 01/25/2019
+author: JodiChristiansen
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d94b19061838f9bb2552c3c91c6b3591040ccf52
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 14cafa69e75d7e8a0f08fb385a8c364c0162da1ec609a4e0b3cad6178ec3f716
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827649"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723966"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kreditsperren für Aufträge verwalten
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema wird das Einrichten von Regeln beschrieben, mit denen ein Debitorenauftrag auf Kredit gehalten wird. Die Sperrregeln für das Kreditmanagement können für einen einzelnen Debitor oder eine Gruppe von Debitoren gelten. Sperrregeln definieren Reaktionen auf die folgenden Umstände:
 
@@ -41,6 +42,11 @@ Darüber hinaus gibt es zwei Parameter, die zusätzliche Szenarien steuern, die 
 
 Wenn ein Debitor eine Verkaufstransaktion einleitet, werden die Informationen im Auftrag anhand einer Reihe von Sperrregeln überprüft, anhand derer entschieden wird, ob dem Debitor ein Guthaben gewährt und der Verkauf fortgesetzt werden soll. Sie können auch Ausschlüsse definieren, die die Sperrregeln außer Kraft setzen und die Verarbeitung eines Auftrags ermöglichen. Sie können Sperr- und Ausschlussregeln auf der Seite **Kreditmanagement > Einstellungen > Einstellung des Kreditmanagements > Sperrregeln** einrichten.
 
+Ab Version 10.0.21 wurden die Sperrregeln im Kreditmanagement wie folgt umgestaltet, um mehr Flexibilität zu bieten:
+
+- Erweiterbarkeitsanforderungen wurden aktiviert, sodass Sie Ihre eigenen Sperrregeln erstellen können.
+- Das Kontrollkästchen **Auftrag freigeben** ist jetzt für alle Sperrregeln verfügbar. Zuvor war es nur für die Auftragssperrregel verfügbar. Wenn dieses Kontrollkästchen ausgewählt ist, gibt die Ausschlussregel den Auftrag frei, ohne andere Regeln zu berücksichtigen, die Aufträge sperren können. Dieses Kontrollkästchen ist nur verfügbar für Regel vom Typ **Ausschluss**.
+
 ### <a name="days-overdue"></a>Überfällige Tage
 
 Öffnen Sie die Registerkarte **Tage überfällig**, wenn die Sperrregel für Debitoren mit einer oder mehreren Rechnungen gilt, die für eine bestimmte Anzahl von Tagen überfällig sind.
@@ -57,7 +63,7 @@ Wenn ein Debitor eine Verkaufstransaktion einleitet, werden die Informationen im
 5. Wählen Sie einen **Werttyp** aus. Der Standardeintrag ist eine feste Anzahl von Tagen. Wenn Sie einen Ausschluss erstellen, können Sie stattdessen eine feste Anzahl von Tagen oder einen Betrag angeben. 
 6. Geben Sie die Anzahl der Tage **Überfällig** ein, die für die ausgewählte Sperrregel zulässig sind, bevor eine Bestellung zur Überprüfung in die Warteschleife für das Kreditmanagement gestellt wird. Die Anzahl der überfälligen Tage entspricht einer zusätzlichen Anzahl von Kulanztagen, die zu der Anzahl von Tagen nach dem Fälligkeitsdatum hinzuaddiert werden, die die Rechnung haben kann, bevor sie als überfällig angesehen wird. Wenn Sie den **Werttyp** als Betrag für einen Ausschluss angegeben haben, dann geben Sie einen Betrag und eine Währung für diesen Betrag ein.
 
-### <a name="accounts-status"></a>Kontostatus
+### <a name="account-status"></a>Kontostatus
 
 Öffnen Sie die Registerkarte **Kontostatus**, wenn die Sperrregel für einen Debitoren mit dem ausgewählten Kontostatus gilt.
 1. Wählen Sie die Art der Regel aus, die Sie einrichten.  Die **Sperrung** erstellt eine Regel, die eine Bestellung sperrt. Die Option **Ausschluss** erstellt eine Regel, die eine Regel vom Sperren einer Bestellung ausschließt. 
@@ -102,7 +108,7 @@ Wählen Sie **Zahlungsbedingungen**, wenn die Sperrregel für die ausgewählte Z
    - Wählen Sie **Sperrung**, um eine Regel zu erstellen, die eine Bestellung sperrt. 
    - Wählen Sie **Ausschluss**, um eine Regel zu erstellen, die eine andere Regel vom Sperren einer Bestellung ausschließt. 
 5. Geben Sie **Überfälliger Betrag** für die ausgewählte Sperrregel an, bevor eine Bestellung im Kreditmanagement zur Überprüfung gehalten wird. 
-6. Wählen Sie den **Werttyp**, der die Art des Werts festgelegt, mit dem auch geprüft wird, wie viel von dem Kreditlimit verwendet wurde. Sperrregeln erfordern einen Prozentsatz, aber ein Ausschluss kann einen festen Betrag oder Prozentsatz haben. Die Schwelle bezieht sich auf das Kreditlimit.
+6. Wählen Sie den **Werttyp**, der die Art des Werts festgelegt, mit dem auch geprüft wird, wie viel von dem Kreditlimit verwendet wurde. Sperrregeln und Ausschlussregeln erlauben nur für **Überfälliger Betrag** einen Prozentsatz. Die Schwelle bezieht sich auf das Kreditlimit.
 7. Geben Sie den Wert **Kreditlimitschwelle** für die ausgewählte Regel ein, bevor ein Kunde das Kreditmanagement einstellt. Dies kann ein Betrag oder ein Prozentsatz sein, der auf dem im Wertetyp ausgewählten Wertetyp basiert.
 8. Die Regel prüft, ob der **Überfällige Betrag** und die **Kreditlimitschwelle** überschritten ist. 
 
@@ -122,8 +128,6 @@ Wählen Sie **Auftrag**, wenn die Sperrregel für den Wert des Auftrags gilt.
    - Wählen Sie **Sperrung**, um eine Regel zu erstellen, die eine Bestellung sperrt. 
    - Wählen Sie **Ausschluss**, um eine Regel zu erstellen, die eine andere Regel vom Sperren einer Bestellung ausschließt. 
 5. Geben Sie den **Auftragsbetrag** für die ausgewählte Sperrregel an, bevor eine Bestellung im Kreditmanagement gehalten wird. 
-
-Die Auftragsregel enthält eine zusätzliche Einstellung, die alle anderen Regeln außer Kraft setzt. Um einen Ausschluss zu erstellen, durch den der Auftrag freigegeben wird, ohne dass andere Regeln wirksam werden, markieren Sie das Kontrollkästchen **Auftragskommissionierung** in der Ausschlusszeile.
 
 ### <a name="credit-limit-used"></a>Verwendetes Kreditlimit
 

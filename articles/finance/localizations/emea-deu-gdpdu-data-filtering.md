@@ -10,12 +10,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Austria, Germany
 ms.author: elgolu
-ms.openlocfilehash: 7edeeb0a0a0955188f74a0d2d0b0af7bf99b8494
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 368afdb0002d9a2f699ac1b32f914959d90b704bc0ecee64ac35a8cdca899f74
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768255"
 ---
 # <a name="add-filters-to-an-audit-file-configuration"></a>Hinzufügen von Filtern zu einer Audit-Datei-Konfiguration
 

@@ -2,7 +2,7 @@
 title: Validierung von benutzerdefinierten NF-e-Zertifikaten
 description: Dieses Thema enthält Informationen zum Aktivieren und Verwenden des benutzerdefinierten NF-e-Zertifikats.
 author: gionoder
-ms.date: 10/06/2020
+ms.date: 07/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,19 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 895513f51798a797ebf59f8a5be4f5cde006726d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8144e16b127bdbe954ef44f52c5ac71689a2036e6085e9a4ccc8bb17f91ae9b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755590"
 ---
 # <a name="nf-e-custom-certificate-validation"></a>Validierung von benutzerdefinierten NF-e-Zertifikaten
 
 [!include [banner](../includes/banner.md)]
 
-Wenn Sie die Funktion zur Überprüfung benutzerdefinierter NF-e-Zertifikate aktivieren, ermöglicht die benutzerdefinierte Validierung eine Verbindung mit den Webdiensten. Diese Verbindung ist erforderlich, um NF-e zu senden und eine Autorisierung von SEFAZ zu erhalten.
+Die Eigenschaft **Zweck der Serverauthentifizierung** aus den von der brasilianischen Stammzertifizierungsstelle ausgestellten Zertifikaten ist standardmäßig deaktiviert und muss manuell aktiviert werden. Unter bestimmten Umständen kann die automatische Zertifikataktualisierung dazu führen, dass diese Eigenschaft nicht mehr aktiviert wird. In diesem Fall ist die TLS-Verbindung betroffen und ihr kann nicht mehr vertraut werden. Die Möglichkeit, das brasilianische elektronische Steuerdokument vom Modell 55 (NF-e) in Produktionsumgebungen für die Bundesstaaten Minas Gerais (MG) und Paraná (PR) auszugeben, ist ebenfalls betroffen.
 
-Die Eigenschaft **Zweck der Serverauthentifizierung** aus dem Zertifikat V5 wird von der brasilianischen Stammzertifizierungsstelle ausgestellt. Diese Eigenschaft ist standardmäßig deaktiviert und muss manuell aktiviert werden. Unter bestimmten Umständen kann die automatische Zertifikataktualisierung dazu führen, dass diese Eigenschaft nicht mehr aktiviert wird. In diesem Fall ist die TLS-Verbindung betroffen und nicht mehr vertrauenswürdig. Die Möglichkeit, NF-e in Produktionsumgebungen für die Bundesstaaten Minas Gerais (MG) und Paraná (PR) auszugeben, ist ebenfalls betroffen.
-
-Dieses Update ermöglicht eine alternative Lösung für die Zertifikatvalidierung, sodass eine sichere Kommunikation hergestellt werden kann.
-
-
-
+Um die Fehlerbehebung für **Überprüfung von benutzerdefinierten NF-e-Zertifikaten** zu aktivieren, gehen Sie zu **Funktionsverwaltung**. Diese Funktion ermöglicht eine alternative Lösung für die Überprüfung der V5- und V10-Zertifikate und ermöglicht eine vertrauenswürdige Verbindung mit den Webdiensten, die für die sichere Übertragung der NF-e und den Erhalt der Autorisierung von SEFAZ erforderlich ist.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

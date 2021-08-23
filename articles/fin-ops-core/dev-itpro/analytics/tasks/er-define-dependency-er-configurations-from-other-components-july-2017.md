@@ -2,7 +2,7 @@
 title: Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen
 description: In diesem Thema wird beschrieben, wie Sie eine EB-Konfiguration (elektronische Berichterstellung) entwerfen und ihre Abhängigkeit von anderen Softwarekomponenten angeben.
 author: NickSelin
-ms.date: 06/23/2017
+ms.date: 07/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4aef052a77428bb783a3a098754ca4dcc1b4296
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755105"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717593"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen
 
@@ -138,5 +138,8 @@ Wir werden erstellte Konfigurationen löschen und laden sie erneut vom LCS-Repos
     * Beachten Sie, dass die vorbildliche Beispielzuordnung Zuordnungskonfiguration zusammen mit der gewählten Datenmodellkonfiguration heruntergeladen wurde. Die zwei Dateien werden zusammen heruntergeladen, da die „Beispielzuordnung“ als Implementierung des ausgewählten Datenmodells definiert wurde und weil sie für die Anwendung anwendbar ist. Die Variante Beispielzuordnung (Alternative) ist nicht heruntergeladen worden, da die Bedingung für die erforderliche Anwendungsversion nicht erfüllt ist.   
     * Wenn Sie sich bei Finance and Operations anmelden, registrieren Sie den gleichen Anbieter, greifen auf das gleiche LCS-Projekt zu und laden die gleiche Datenmodellkonfiguration, die Beispielzuordnung (Alternative) herunter, während die Beispielzuordnung-Konfiguration übersprungen wird.  
 
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Den Lebenszyklus der elektronischen Berichterstellungskonfiguration (ER) verwalten](../general-electronic-reporting-manage-configuration-lifecycle.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 52ae36f499871087cc086bcaf8c345af41d06943
-ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
+ms.openlocfilehash: ccbf12d4dcc75e22fc62c356653a91b9a8a8d1761ccefb18c93e65f343250830
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6639389"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744225"
 ---
 # <a name="view-team-and-company-calendars"></a>Team- und Unternehmenskalender anzeigen
 
@@ -47,7 +47,7 @@ Manager können auch über **Ausstehende Anfragen meines Teams**, **Genehmigte F
 
 Benutzer in der Rolle des Abwesenheitsmanagers können Urlaubsanträge in ihrem Kalender anzeigen. Wenn Sie auf den Kalender zugreifen wollen, führen sie die folgenden Schritte aus.
 
-1. Im **Mitarbeiter Selbstservice** Arbeitsbereich **Abwesenheitsmanager** und dann **Kalender des Abwesenheitsmanagers** auswählen.
+1. Wählen Sie im Arbeitsbereich **Mitarbeiter-Self-Service** **Abwesenheitsverwaltung** und dann **Kalender für Abwesenheitsmanager** aus.
 
 2. Geben Sie im Feld **Datum** die gewünschten Daten ein.
 

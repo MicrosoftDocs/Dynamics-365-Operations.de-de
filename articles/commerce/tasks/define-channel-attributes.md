@@ -1,5 +1,5 @@
 ---
-title: " Kanalattribute definieren"
+title: Kanalattribute definieren
 description: Erweitern Sie den Kanal, indem Sie Kanal- und Produktattribute hinzufügen.
 author: jashanno
 ms.date: 08/29/2018
@@ -14,14 +14,14 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c7f70e20dfc2eb8608c5dfae027c87dc457eb842
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e99c59eba133427dad6d6a27a96b64f06621c932924293e3978d7f540e86153e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726406"
 ---
-# <a name="define-channel-attributes"></a> Kanalattribute definieren
+# <a name="define-channel-attributes"></a>Kanalattribute definieren
 
 [!include [banner](../includes/banner.md)]
 
@@ -30,8 +30,8 @@ Erweitern Sie den Kanal, indem Sie Kanal- und Produktattribute hinzufügen. Sie 
 
 ## <a name="define-channel-product-attribute"></a>Definieren Sie die Kanalproduktattribute.
 1. Wählen Sie Einzelhandel und Handel > Kanaleinstellung > Kanalkategorien und Produktattribute.
-2. In der Struktur wählen Sie "Contoso Einzelhandel\Mode\Houston".
-3. Klicken Sie auf "Bearbeiten".
+2. In der Struktur wählen Sie „Contoso Einzelhandel\Mode\Houston“.
+3. Klicken Sie auf Bearbeiten.
 4. Geben Sie im Feld "Kategoriehierarchie" einen Wert ein oder wählen Sie einen Wert aus.
     * Die Navigationshierarchie wird für das Navigieren des Produkts in Ihren Kanäle verwendet.  
 5. Erweitern Sie den Abschnitt "Attributgruppe".
