@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: db75b09f1ae1f83a88a5e5eaef0c8c1b8eab5901
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 27dc29109693c06913c8107e27e79a48cf2c9db7146ff3a5919305366641af3d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774460"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Generieren und Ausführung von Fertigberichten
 
@@ -36,7 +36,7 @@ Das Demodatenunternehmen, das verwendet wird, um diese Aufzeichnung zu erstellen
 4. Geben Sie in das Feld "Von Datum" ein Datum ein.
 5. Geben Sie in das Feld "Bis Datum" ein Datum ein.
 6. Klicken Sie im Feld "Kanal" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-7. Wählen Sie in der Struktur "Contoso Retail\Contoso Retail USA\Central\Houston" aus.
+7. Wählen Sie in der Struktur „Contoso Retail\Contoso Retail USA\Central\Houston“ aus.
     * Hier wird die standardmäßige Organisationshierarchie für Commerce-Berichterstellungszwecke angezeigt.   Wechseln Sie zu Organisationsverwaltung > Organisationen > Organisationshierarchiezwecke und wählen Sie „Berichterstellung in Commerce“ aus. Aktivieren Sie unter „Zugewiesene Hierarchien“ den Hierarchienamen, für den die Standard-Spalte aktiviert ist. Im Rahmen der Demodaten (für diese Aufgabenaufzeichnung) ist „Filialen nach Region“ die standardmäßige Organisationshierarchie für Berichterstellungszwecke.     
 8. Klicken Sie auf "OK".
 9. Wählen Sie im Feld "Ansicht" eine Option aus.
@@ -48,7 +48,7 @@ Das Demodatenunternehmen, das verwendet wird, um diese Aufzeichnung zu erstellen
 2. Geben Sie in das Feld "Von Datum" ein Datum ein.
 3. Geben Sie in das Feld "Bis Datum" ein Datum ein.
 4. Klicken Sie im Feld "Kanal" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-5. Wählen Sie in der Struktur "Contoso Retail\Contoso Retail USA\West\Seattle" aus.
+5. Wählen Sie in der Struktur „Contoso Retail\Contoso Retail USA\West\Seattle“ aus.
     * Hier wird die standardmäßige Organisationshierarchie für Commerce-Berichterstellungszwecke angezeigt. Wechseln Sie zu Organisationsverwaltung > Organisationen > Organisationshierarchiezwecke und wählen Sie „Berichterstellung in Commerce“ aus. Aktivieren Sie unter „Zugewiesene Hierarchien“ den Hierarchienamen, für den die Standard-Spalte aktiviert ist. Im Rahmen der Demodaten (für diese Aufgabenaufzeichnung) ist „Filialen nach Region“ die standardmäßige Organisationshierarchie für Berichterstellungszwecke.     
 6. Klicken Sie auf "OK".
 7. Klicken Sie auf "OK".

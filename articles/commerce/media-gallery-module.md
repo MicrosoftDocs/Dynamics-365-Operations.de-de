@@ -2,7 +2,7 @@
 title: Mediengaleriemodul
 description: Dieses Thema befasst sich mit Mediengaleriemodulen und beschreibt, wie diese Seiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733196"
 ---
 # <a name="media-gallery-module"></a>Mediengaleriemodul
 
@@ -56,6 +56,10 @@ In dem Beispiel der folgenden Abbildung werden in einem Kauffeld auf einer PDP P
 | Bilder | Bilder, die aus der Site-Builder-Medienbibliothek ausgewählt wurden | Bilder können nicht nur aus einem Produkt gerendert, sondern auch für ein Mediengaleriemodul kuratiert werden. Diese Bilder werden an alle verfügbaren Produktbilder angehängt. Diese Funktion steht in der Commerce-Version 10.0.12 zur Verfügung. |
 | Ausrichtung der Miniaturansicht | **Vertikal** oder **horizontal** | Diese Eigenschaft gibt an, ob Miniaturansichten in einem vertikalen oder horizontalen Streifen angezeigt werden sollen. |
 | Master-Produktbilder für Variante ausblenden | **True** oder **False** | Wenn diese Eigenschaft auf **True** festgelegt ist, werden bei Auswahl einer Variante die Bilder des Masterprodukts ausgeblendet, es sei denn, die Variante hat keine Bilder. Diese Eigenschaft wirkt sich nicht auf Produkte aus, die keine Varianten haben. |
+| Medien bei Dimensionsauswahl aktualisieren | **True** oder **False** | Wenn diese Eigenschaft auf **Wahr** gesetzt ist, werden Bilder in der Medienbibliothek aktualisiert, wenn irgendeine Dimension (wie Farbe, Stil oder Größe) ausgewählt wird und ein Bild verfügbar ist. Diese Eigenschaft trägt dazu bei, das Browsing-Erlebnis zu vereinfachen, da nicht jede Produktvariantendimension ausgewählt werden muss, damit das entsprechende Bild aktualisiert wird. Diese Eigenschaft ist auf der Registerkarte **Erweitert** verfügbar. |
+
+> [!IMPORTANT]
+> Die Eigenschaft **Medien bei Dimensionsauswahl aktualisieren** ist ab dem Release der Commerce-Version 10.0.21 verfügbar. Es erfordert, dass das Commerce-Modulbibliothekspaket in der Version 9.31 installiert ist.
 
 Die folgende Abbildung zeigt ein Beispiel eines Mediengaleriemoduls, in dem die Vollbild- und Zoomoptionen verfügbar sind.
 

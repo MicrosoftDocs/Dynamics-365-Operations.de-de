@@ -2,7 +2,7 @@
 title: Einzelhandelspreisverwaltung
 description: In diesem Thema werden die Konzepte für das Erstellen und Verwalten von Verkaufspreisen in Dynamics 365 Commerce behandelt.
 author: ShalabhjainMSFT
-ms.date: 05/28/2020
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2811e61045c0a830d1c814d760820a364893efcc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6352227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759284"
 ---
 # <a name="retail-sales-price-management"></a>Verwaltung von Einzelhandelsverkaufspreisen
 
@@ -40,21 +40,21 @@ Die folgenden Begriffe werden in diesem Thema erläutert.
 
 ## <a name="price-groups"></a>Preisgruppen
 
-Preisgruppen sind zentral in der Preis- und Rabattverwaltung in Commerce. Preisgruppen werden verwendet, um Preise und Rabatte den Handelseinheiten (d.h. Kanälen, Katalogen, Mitgliedschaften und Treueprogrammen) zuzuordnen. Da Preisgruppen für alle Preise und Rabatte verwendet werden, ist es sehr wichtig, dass Sie planen, wie Sie diese verwenden, bevor Sie beginnen.
+Preisgruppen sind zentral in der Preis- und Rabattverwaltung in Commerce. Preisgruppen werden verwendet, um Preise und Rabatte den Commerce-Entitäten (d. h. Kanälen, Katalogen, Mitgliedschaften und Treueprogrammen) zuzuordnen. Da Preisgruppen für alle Preise und Rabatte verwendet werden, ist es sehr wichtig, dass Sie planen, wie Sie diese verwenden, bevor Sie beginnen.
 
-An sich ist eine Preisgruppe derzeit ein Name, Beschreibung und optional eine Preiskalkulationspriorität. Der Hauptpunkt, den man sich bei Preisgruppen merken sollte, ist, dass sie zur Verwaltung der Viel-zu-Viel- Beziehungen verwendet werden, die Rabatte und Preise mit Handelseinheiten haben.
+An sich ist eine Preisgruppe derzeit ein Name, Beschreibung und optional eine Preiskalkulationspriorität. Der Hauptpunkt, den man sich bei Preisgruppen merken sollte, ist, dass sie zur Verwaltung der Viel-zu-Viel- Beziehungen verwendet werden, die Rabatte und Preise mit Commerce-Entitäten haben.
 
-Die folgende Abbildung zeigt, wie Preisgruppen verwendet werden. In dieser Grafik beachten Sie, dass "Preisgruppe" buchstäblich in der Mitte der Preiskalkulations- und Rabattverwaltung ist. Die Handelseinheiten, mit denen Sie Differenzpreise und Rabatte verwalten können, befinden sich auf der linken Seite, und die tatsächlichen Preis- und Rabattsätze befinden sich auf der rechten Seite.
+Die folgende Abbildung zeigt, wie Preisgruppen verwendet werden. In dieser Grafik beachten Sie, dass "Preisgruppe" buchstäblich in der Mitte der Preiskalkulations- und Rabattverwaltung ist. Die Commerce-Entitäten, mit denen Sie Differenzpreise und Rabatte verwalten können, befinden sich auf der linken Seite, und die tatsächlichen Preis- und Rabattsätze befinden sich auf der rechten Seite.
 
 ![Preisgruppen.](./media/PriceGroups.png "Preisgruppen")
 
-Wenn Sie Preisgruppen anlegen, sollten Sie nicht eine einzige Preisgruppe für mehrere Arten von Handelseinheiten verwenden. Andernfalls kann es schwierig sein zu ermitteln, warum ein bestimmter Preis oder ein Rabatt auf eine Buchung angewendet wird.
+Wenn Sie Preisgruppen anlegen, sollten Sie nicht eine einzige Preisgruppe für mehrere Arten von Commerce-Entitäten verwenden. Andernfalls kann es schwierig sein zu ermitteln, warum ein bestimmter Preis oder ein Rabatt auf eine Buchung angewendet wird.
 
 Wie die rot gestrichelte Linie in der Abbildung zeigt, unterstützt Commerce die zentralen Microsoft Dynamics 365 Funktionen einer Preisgruppe, die direkt auf einen Kunden festgelegt wird. Jedoch in diesem Fall erhalten Sie nur Handelsvereinbarungen. Falls Sie benutzerdefinierte Preise anwenden möchten, sollten Sie nicht festgelegte Preisgruppen direkt für den Debitor definieren. Stattdessen können Sie Zuordnungen verwenden. 
 
 Beachten Sie, dass, wenn die Preisgruppe für den Kunden festgelegt ist, diese Preisgruppe dem Kundenauftragskopf der für diesen Kunden erstellten Aufträge zugeordnet wird. Wenn der Benutzer die Preisgruppe im Auftragskopf ändert, wird die alte Preisgruppe nur für die aktuelle Bestellung durch die neue Preisgruppe ersetzt. Beispielsweise wirkt sich die alte Preisgruppe nicht auf die aktuelle Bestellung aus, wird jedoch für zukünftige Bestellungen dem Kunden zugeordnet.
 
-In den folgenden Abschnitten finden Sie weitere Informationen über die Handelseinheiten, mit denen Sie bei der Verwendung der Preisgruppen unterschiedliche Preise festlegen können. Die Variante von Preisen und Rabatten für alle diese Entitäten ist ein Prozess in zwei Schritten. Diese Schritte können in jedem Auftrag vorgenommen werden. Allerdings besteht die logische Reihenfolge darinm, Preisgruppen auf die Entitäten zuerst festzulegen, da dieser Schritt nicht wahrscheinlich eine einmalige Einstellung ist, die bei der Implementierung geleistet wird. Anschließend wenn Preise und Rabatte erstellt werden, können Sie Preisgruppen die auf diesen Preisen und Rabatten basieren, einzeln festlegen.
+In den folgenden Abschnitten finden Sie weitere Informationen über die Commerce-Entitäten, mit denen Sie bei der Verwendung der Preisgruppen unterschiedliche Preise festlegen können. Die Variante von Preisen und Rabatten für alle diese Entitäten ist ein Prozess in zwei Schritten. Diese Schritte können in jedem Auftrag vorgenommen werden. Allerdings besteht die logische Reihenfolge darinm, Preisgruppen auf die Entitäten zuerst festzulegen, da dieser Schritt nicht wahrscheinlich eine einmalige Einstellung ist, die bei der Implementierung geleistet wird. Anschließend wenn Preise und Rabatte erstellt werden, können Sie Preisgruppen die auf diesen Preisen und Rabatten basieren, einzeln festlegen.
 
 ### <a name="channels"></a>Benachrichtigungskanäle
 
@@ -214,29 +214,30 @@ Wenn Sie Verkaufspreise in Dynamics 365 festlegen, definieren Sie nicht, ob der 
 
 Wenn Sie mit den Arten der inklusiven und exklusive Steuern arbeiten, ist es für Sie für Preise ordnungsgemäß außerordentlich wichtig, da der Gesamtbetrag, der vom Debitor bezahlt wird, ändert, wenn die Einstellung **Preis enthält Mehrwertsteuer** im Kanal geändert wird.
 
-## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Unterschiede zwischen der Festsetzung von Enzelhandelspreisen und Nicht-Einzelhandelpreiskalkulation
+## <a name="differences-between-commerce-pricing-and-non-commerce-pricing"></a>Unterschiede zwischen der Festsetzung von Commerce-Preisen und Nicht-Commerce-Preisen
 
-Eine einzelne Modul-Preiskalkulation wird verwendet, um Einzelhandelspreise über alle Kanäle zu berechnen: Callcenter, Einzelhandelsgeschäft und Onlineshops. Das hilft bei der Aktivierung der einheitlichen Geschäftsszenarien.
+Ein einzelnes Preiskalkulationsmodul wird verwendet, um Einzelhandelspreise über alle Kanäle zu berechnen: Callcenter, Einzelhandelsgeschäft und Onlineshops. Das hilft bei der Aktivierung der einheitlichen Commerce-Szenarien.
 
-Die Preisgestaltung ist so konzipiert, dass sie mit Einzelhandelseinheiten statt mit Nicht-Einzelhandelseinheiten funktioniert. Speziell wurde diese so entworfen, dass Preise nach Filiale, nicht nach Lagerort festgelegt werden.
+Die Preisgestaltung ist so konzipiert, dass sie mit Commerce-Entitäten statt mit Nicht-Commerce-Entitäten funktioniert. Speziell wurde diese so entworfen, dass Preise nach Filiale, nicht nach Lagerort festgelegt werden.
 
-Die Preisfindungs-Engine **unterstützt nicht** die folgenden Preisfindungsfunktionen:
+Das Commerce-Preismodul **unterstützt nicht** die folgenden Preisfunktionen:
 
 - Das Festlegen von Preisen nach Standort oder Standort- und Lagerspeicherdimensionen wird nicht unterstützt. Wenn Sie in den Handelsvereinbarungen nur die Standortdimension angeben, ignoriert die Preisfindungsmaschine den Standort und wendet die Handelsvereinbarung auf alle Standorte an. Wenn Sie sowohl Site als auch Warehouse angeben, ist das Verhalten undefiniert/nicht getestet, da erwartet wird, dass Einzelhändler die Store-Preisgruppen verwenden, um die Preise für jedes Store/Warehouse zu steuern.
 - Attributbasierte Preisgestaltung wird nicht unterstützt.
 - Lieferantenrabatt-Pass-Through wird nicht unterstützt.
+- Die generische Währungsfunktion wird nicht unterstützt, d. h. selbst wenn bei einer Handelsvereinbarung das Toggle **Allgemeine Währung einbeziehen** aktiviert ist, wird diese Handelsvereinbarung dennoch nur für die in der Handelsvereinbarung definierte Währung als gültig betrachtet.
 - Die Standard-Pricing-Engine für das Supply Chain Management unterstützt die Preisberechnung basierend auf dem Angeforderten Versanddatum und dem Angeforderten Empfangsdatum zusammen mit dem aktuellen Datum. Die Einzelhandelspreise unterstützen diese Werte derzeit jedoch nicht. Der Grund dafür ist, dass Kunden in B2C-Szenarien nicht erwarten, dass der angeforderte Liefertermin den Artikelpreis beeinflusst. In einigen Fällen sind Einzelhändler sowohl im B2B- als auch im B2C-Bereich tätig. Für B2B-Operationen ist es üblich, die Preise basierend auf den Lieferterminen zu ändern. Diese Einzelhändler können Supply Chain Management-Preise für ihr B2B-Geschäft und Einzelhandelspreise für ihr B2C-Geschäft verwenden. Die Einzelhandelspreise werden nur aktiviert, wenn der Anwendungsbenutzer als Callcenter-Benutzer hinzugefügt wird, sodass die Einzelhändler bestimmte Benutzer zuweisen können, die mit der Supply Chain Management Preisgestaltung arbeiten, und einige Benutzer zuweisen können, die mit der Einzelhandelspreisgestaltung funktionieren, d.h. diese Benutzer sollte als Callcenter-Benutzer hinzugefügt werden. Darüber hinaus muss die Eigenschaft **Verwenden Sie das heutige Datum zur Berechnung der Preise** im Abschnitt **Handelsparameter > Preise und Rabatte > Verschiedenes** eingeschaltet sein. Auf diese Weise können sie den Wert des verwendeten Debitorenparameters für das angeforderte Versanddatum oder das angeforderte Empfangsdatum für die Supply Chain Management-Preisgestaltung beibehalten. Die Einzelhandelspreise verwenden jedoch weiterhin das heutige Datum für die Preisberechnung.
 
-Außerdem unterstützt **nur** das Preisfindungssystem die folgenden Preisfindungsfunktionen:
+Das Commerce-Preismodul unterstützt zudem **nur** die folgenden Preiskalkulationsfunktionen:
 
-- Der Preis wird auf Grundlage der Produktdimensionen im Auftrag der verschiedenen Preis von der spezifischsten Preisvariante bis zur am wenigsten spezifischen Preisvariante im Produktmaster-Preis festgelegt. Ein Preis, der festgelegt wird, indem zwei Produktdimensionen verwendet werden (beispielsweise Gesamtlayout, Farbe und Größe), die vor einem Preis verwendet werden, der festgelegt wird, indem nur eine Produktdimension verwendet wird (beispielsweise Gesamtlayout, Größe).
+- Der Preis wird auf Grundlage der Produktdimensionen im Auftrag der verschiedenen Preis von der spezifischsten Preisvariante bis zur am wenigsten spezifischen Preisvariante im Produktmaster-Preis festgelegt. Ein Preis, der festgelegt wird, indem zwei Produktdimensionen verwendet werden (beispielsweise Farbe und Größe), die vor einem Preis verwendet werden, der festgelegt wird, indem nur eine Produktdimension verwendet wird (beispielsweise Größe).
 - Dieselbe Preisgruppe kann verwendet werden, um Preiskalkulation und Rabatte zu steuern.
 
 ## <a name="pricing-api-enhancements"></a>Preisberechnung für API-Erweiterungen
 
 Der Preis ist einer der wichtigsten Faktoren, die bei der Einkaufsentscheidung vieler Kunden entscheidend sind. Viele Kunden vergleichen Preise auf verschiedenen Websites, bevor sie einen Kauf tätigen. Zur Sicherstellung dass sie konkurrenzfähige Preise bereitstellen, behalten die Einzelhändler ihre Konkurrenten genau im Blick und führen oft Verkaufsförderungsmaßnahmen durch. Um diese Einzelhändler bei ihrer Kundengewinnung zu unterstützen, ist es sehr wichtig, dass die Produktsuche, die Funktion fürs Durchsuchen und die Seite für Produktdetails die genauesten Preise anzeigen.
 
-In einer bevorstehenden Version von Commerce wird die Anwendungsprogrammierungsschnittstelle (API) **GetActivePrices** Preise zurückgeben, die einfache Rabatte enthalten (z. B. Einzelpositionsrabatte, die nicht von anderen Artikeln im Warenkorb abhängen). Auf diese Weise sind die Preise, die angezeigt werden, dem tatsächlichen Betrag ziemlich nahe, den Kunden für Artikel bezahlen werden. Diese API wird alle Typen einfacher Rabatte umfassen: zugehörigkeitsbasierte, treuebasierte, katalogbasierte sowie kanalbasierte Rabatte. Darüber hinaus wird die API die Namen und Gültigkeitsinformationen für die angewendeten Rabatte zurückgeben, sodass Einzelhändler eine ausführlichere Beschreibung des Preises bereitstellen können und einen Eindruck der Dringlichkeit vermitteln können, wenn die Gültigkeit des Rabatts bald abläuft.
+Die Anwendungsprogrammierungsschnittstelle (API) **GetActivePrices** in Commerce gibt Preise zurück, die einfache Rabatte enthalten (z. B. Einzelpositionsrabatte, die nicht von anderen Artikeln im Warenkorb abhängen). Auf diese Weise sind die Preise, die angezeigt werden, dem tatsächlichen Betrag ziemlich nahe, den Kunden für Artikel bezahlen werden. Diese API umfasst alle Typen einfacher Rabatte: zugehörigkeitsbasierte, treuebasierte, katalogbasierte sowie kanalbasierte Rabatte. Darüber hinaus gibt die API die Namen und Gültigkeitsinformationen für die angewendeten Rabatte zurück, sodass Einzelhändler eine ausführlichere Beschreibung des Preises bereitstellen können und einen Eindruck der Dringlichkeit vermitteln können, wenn die Gültigkeit des Rabatts bald abläuft.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

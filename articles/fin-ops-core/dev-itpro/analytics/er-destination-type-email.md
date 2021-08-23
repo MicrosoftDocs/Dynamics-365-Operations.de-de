@@ -2,7 +2,7 @@
 title: E-Mail-ER-Zieltyp
 description: In diesem Thema wird erläutert, wie für jede FOLDER- oder FILE-Komponente eines EB-Formats (elektronische Berichterstellung) ein E-Mail-Ziel konfiguriert wird.
 author: NickSelin
-ms.date: 12/03/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f2d8d441ad742252f3be7dc207544387f5224c37
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769318"
 ---
 # <a name="email-er-destination-type"></a>E-Mail-ER-Zieltyp
 
@@ -42,23 +42,43 @@ Auch die [Gruppierung](#grouping) mehrerer **Ordner**- oder **Datei**-Komponente
 
 Für eine einzelne EB-Formatkonfiguration können mehrere Gruppen von Komponenten konfiguriert werden. Auf diese Weise können Sie für jede Gruppe von Komponenten sowie für jede Komponente ein E-Mail-Ziel konfigurieren.
 
-## <a name="configure-an-email-destination"></a>Ein E-Mail-Ziel konfigurieren
+## <a name="enable-an-email-destination"></a>Ein E-Mail-Ziel aktivieren
 
-Um eine Ausgabedatei oder mehrere Ausgabedateien per E-Mail zu senden, wählen Sie auf der Seite **Ziel der elektronischen Berichterstellung** im Inforegister **Dateiziel** im Raster eine Komponente oder eine Gruppe von Komponenten aus. Wählen Sie dann **Einstellungen** aus. Legen Sie im daraufhin angezeigten Dialogfeld **Zieleinstellungen** auf der Registerkarte **E-Mail** die Option **Aktiviert** auf **Ja** fest. Anschließend können Sie den E-Mail-Empfänger festlegen und Betreff und Text der E-Mail bearbeiten. Sie können für die E-Mail und den E-Mail-Betreff entweder konstante Texte einrichten, oder Sie können EB-[Formeln](er-formula-language.md) verwenden, um E-Mail-Texte dynamisch zu erstellen.
+Gehen Sie folgendermaßen vor, um eine oder mehrere Ausgabedateien per E-Mail zu senden.
 
-Sie könnne E-Mail-Adressen für ER auf zwei Arten konfigurieren. Die Konfiguration kann auf dieselbe Weise abgeschlossen werden wie es auch für die Druckverwaltungsfunktion geschieht. Sie können auch eine E-Mail-Adresse auflösen, indem Sie einen direkten Verweis auf die EB-Konfiguration über eine Formel erstellen.
+1. Auf der Seite **Ziel der elektronischen Berichterstellung** wählen Sie im Inforegister **Dateiziel** im Raster eine Komponente oder Gruppe von Komponenten aus.
+2. Wählen Sie **Einstellungen** und setzen Sie dann im Dialogfeld **Zieleinstellungen** auf der Registerkarte **E-Mail** die Option **Aktiviert** auf **Ja** fest.
 
 [![Festlegen der Option „Aktiviert“ für ein E-Mail-Ziel auf „Ja“.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
+## <a name="configure-an-email-destination"></a>Ein E-Mail-Ziel konfigurieren
+
+Sie können die E-Mail-Sender- und -Empfänger angeben und den Betreff und den Text der E-Mail-Botschaft bearbeiten. Sie können für die E-Mail und den E-Mail-Betreff einen konstanten Text einrichten, oder Sie können EB-[Formeln](er-formula-language.md) verwenden, um E-Mail-Texte dynamisch zu erstellen.
+
+Standardmäßig wird eine E-Mail im Namen des aktuellen Benutzers gesendet. Um einen anderen E-Mail-Sender anzugeben, müssen Sie das Feld **Von** konfigurieren.
+
+> [!NOTE]
+> Wenn ein E-Mail-Ziel konfiguriert ist, ist das Feld **Von** nur für Benutzer sichtbar, die über das `ERFormatDestinationSenderEmailConfigure`-Sicherheitsprivileg **Die Sender-E-Mail-Adresse für EB-Formatziele konfigurieren** verfügen.
+>
+> Wenn ein E-Mail-Ziel zur Änderung bei der [Runtime](electronic-reporting-destinations.md#security-considerations) angeboten wird, ist das Feld **Von** nur für Benutzer sichtbar, die über das `ERFormatDestinationSenderEmailMaintain`-Sicherheitsprivileg **Die Sender-E-Mail-Adresse für EB-Formatziel beibehalten** verfügen.
+>
+> Wenn das Feld **Von** so konfiguriert ist, dass eine andere E-Mail-Adresse als die des aktuellen Benutzers verwendet wird, muss entweder die **Senden als**- oder **Senden im Auftrag von**-Berechtigung im Voraus richtig [eingestellt](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) sein. Andernfalls wird zur Runtime die folgende Ausnahme geworfen: „E-Mail konnte nicht als \<from email account\> von dem \<current user account\>-Konto gesendet werden. Bitte überprüfen Sie die ‚Senden als‘-Berechtigungen auf dem \<from email account\>.“
+
+Sie können das Feld **Von** konfigurieren, um mehr als eine E-Mail-Adresse zurückzugeben. In diesem Fall wird die erste Adresse in der Liste als E-Mail-Senderadresse verwendet.
+
+Um E-Mail-Empfänger anzugeben, müssen Sie die (optionalen) Felder **An** und **CC**.
+
+Sie könnne E-Mail-Adressen für ER auf zwei Arten konfigurieren. Die Konfiguration kann auf dieselbe Weise abgeschlossen werden wie die Druckverwaltungsfunktion. Sie können auch eine E-Mail-Adresse auflösen, indem Sie einen direkten Verweis auf die EB-Konfiguration über eine Formel erstellen.
+
 ## <a name="email-address-types"></a>E-Mail-Adressen-Arten
 
-Wenn Sie **Bearbeiten** neben dem Feld **An** oder **CC** im Dialogfeld **Zieleinstellungen** auswählen, wird das Dialogfeld **E-Mail an** angezeigt. Wählen Sie **Hinzufügen** aus und wählen Sie dann den Typ der zu verwendenden E-Mail-Adresse aus. Derzeit werden zwei Typen unterstützt: **Druckverwaltung** und **Konfiguration**.
+Wenn Sie **Bearbeiten** neben dem Feld **Von**, **An** oder **CC** im Dialogfeld **Zieleinstellungen** auswählen, wird das entsprechende Dialogfeld **E-Mail von**, **E-Mail an** oder **E-Mail CC** angezeigt. Dort können Sie den E-Mail-Sender und E-Mail-Empfänger konfigurieren. Wählen Sie **Hinzufügen** aus und wählen Sie dann den Typ der zu verwendenden E-Mail-Adresse aus. Derzeit werden zwei Typen unterstützt: **Druckverwaltung** und **Konfiguration**.
 
 [![Typ der E-Mail-Adresse auswählen.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>Verwaltungs-E-Mail ausdrucken
 
-Wenn Sie **Druckverwaltung** als Typ der E-Mail-Adresse auswählen, können Sie im Dialogfeld **E-Mail an** feste E-Mail-Adressen eingeben, indem Sie folgende Felder festlegen:
+Wenn Sie **Druckverwaltung-E-Mail** als Typ der E-Mail-Adresse auswählen, können Sie im Dialogfeld **E-Mail von**, **E-Mail an** oder **E-Mail CC** als feste E-Mail-Adressen eingeben, indem Sie folgende Felder festlegen:
 
 - Wählen Sie im Feld **E-Mail-Quelle** die Option **Keine** aus.
 - Geben Sie im Feld **Zusätzliche E-Mail-Adressen, getrennt durch ";"** die festen E-Mail-Adressen ein.
@@ -74,6 +94,7 @@ Alternativ können Sie E-Mail-Adressen aus den Kontaktdaten der Partei beziehen,
 - Bewerber
 - Künftiger Kreditor
 - Unzulässiger Kreditor
+- Juristische Person
 
 Um beispielsweise ein E-Mail-Ziel für ein EB-Format zu konfigurieren, das zur Verarbeitung von Lieferantenzahlungen verwendet wird, wählen Sie die Rolle **Lieferant** aus.
 
@@ -106,7 +127,7 @@ Um den Typ der E-Mail-Adressen anzugeben, die zur Laufzeit verwendet werden müs
 
 ### <a name="configuration-email"></a>Konfigurations-E-Mail
 
-Wählen Sie **Konfigurations-E-Mail** als E-Mail-Adresstyp aus, wenn die von Ihnen verwendete Konfiguration einen Knoten in den Datenquellen enthält, der entweder eine einzelne E-Mail-Adresse oder mehrere E-Mail-Adressen zurückgibt, die durch Semikolons (;) getrennt sind. Sie können [Datenquellen](general-electronic-reporting.md#FormatComponentOutbound) und [Funktionen](er-formula-language.md#functions) im Formeldesigner verwenden, um eine korrekt formatierte E-Mail-Adresse oder korrekt formatierte E-Mail-Adressen zu erhalten, die durch Semikolons getrennt sind. Wenn Sie beispielsweise die Konfiguration **Kreditübertragung (ISO 20022)** verwenden, ist es der Knoten `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`, der die primäre E-Mail-Adresse eines Lieferanten aus den Kontaktdaten des Lieferanten darstellt, an die das Anschreiben gesendet werden soll.
+Wählen Sie **Konfigurations-E-Mail** als E-Mail-Adresstyp aus, wenn die von Ihnen verwendete Konfiguration einen Knoten in den Datenquellen enthält, der entweder eine einzelne E-Mail-Adresse oder mehrere E-Mail-Adressen zurückgibt, die durch Semikolons (;) getrennt sind. Sie können [Datenquellen](general-electronic-reporting.md#FormatComponentOutbound) und [Funktionen](er-formula-language.md#Functions) im Formeldesigner verwenden, um eine korrekt formatierte E-Mail-Adresse oder korrekt formatierte E-Mail-Adressen zu erhalten, die durch Semikolons getrennt sind. Wenn Sie beispielsweise die Konfiguration **Kreditübertragung (ISO 20022)** verwenden, ist es der Knoten `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`, der die primäre E-Mail-Adresse eines Lieferanten aus den Kontaktdaten des Lieferanten darstellt, an die das Anschreiben gesendet werden soll.
 
 [![Eine Quelle für E-Mail-Adressen konfigurieren.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 48fef68dc3e5935f0032ca006840202b53d577e06e5376ead0b66eca2a9c36bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360148"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740838"
 ---
 # <a name="copy-an-instance"></a>Instanz kopieren
 
@@ -52,9 +52,9 @@ Die folgenden Ereignisse treten auf, wenn Sie eine Human Resources-Datenbank kop
 
 - Dokumente im Microsoft Azure Blob-Speicher werden nicht von einer Umgebung in eine andere kopiert. Als Ergebnis werden angehängte Dokumente und Vorlagen nicht kopiert und verbleiben in der Quellumgebung.
 
-- Bis auf den Administrator und andere interne Servicebenutzer werden alle Benutzer deaktiviert. Der Administrator kann Daten löschen oder verschleiern, bevor andere Benutzer wieder Zugriff auf das System erhalten.
+- Alle Benutzer außer denen mit der Sicherheitsrolle „Systemadministrator“ und andere interne Dienstbenutzerkonten sind nicht verfügbar. Der Administrator kann Daten löschen oder verschleiern, bevor andere Benutzer wieder Zugriff auf das System erhalten.
 
-- Der Administrator muss die erforderlichen Konfigurationsänderungen vornehmen, z. B. das erneute Verbinden von Integrationsendpunkten mit bestimmten Diensten oder URLs.
+- Ein Benutzer mit der Sicherheitsrolle „Systemadministrator“ muss die erforderlichen Konfigurationsänderungen vornehmen, z. B. das erneute Verbinden von Integrationsendpunkten mit bestimmten Diensten oder URLs.
 
 ## <a name="copy-the-human-resources-database"></a>Human Resources-Datenbank kopieren
 
@@ -111,7 +111,7 @@ Einige dieser Elemente werden nicht kopiert, da sie umgebungsspezifisch sind. Da
 
 Außerdem ändern sich die folgenden Status beim Kopieren einer Instanz:
 
-- Alle Benutzer außer Administratoren werden auf **Deaktiviert** gestellt.
+- Alle Benutzer außer denen mit der Sicherheitsrolle „Systemadministrator“ sind **Deaktiviert**.
 
 - Alle Batchaufträge außer einigen Systemaufträgen werden auf **Zurückhalten** gesetzt.
 

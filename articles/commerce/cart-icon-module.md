@@ -2,7 +2,7 @@
 title: Symbol Einkaufswagenmodul
 description: Dieses Thema behandelt das Warenkorbsymbolmodul und es wird beschrieben, wie es Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt wird.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9e3850d98e716d1bbea2017f6e8c9d75f19adc9
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: 5cf86876ba03d510b03237c9c89a1fc069a73482b755a1d72227037c91439e86
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638000"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735677"
 ---
 # <a name="cart-icon-module"></a>Modul für Einkaufswagensymbol
 
@@ -35,9 +35,14 @@ Das folgende Bild zeigt ein Beispiel für ein Warenkorbsymbolmodul, das einen Mi
 
 ## <a name="module-properties"></a>Moduleigenschaften
 
-- **Mini-Warenkorb anzeigen** – Wenn true, kann mit dieser Eigenschaft eine Warenkorbübersicht (Mini-Warenkorb) angezeigt werden, wenn Sie den Mauszeiger über das Warenkorbsymbol bewegen. Diese Funktionalität wird nur für Desktop-Ansichtsports unterstützt.
+- **Mini-Warenkorb anzeigen**: Wenn diese Eigenschaft auf **wahr** gesetzt ist, wird eine Warenkorbübersicht (Mini-Warenkorb) angezeigt, wenn Benutzer den Mauszeiger über das Warenkorbsymbol bewegen. Diese Funktionalität wird nur für Desktop-Ansichtsports unterstützt.
+- **Anonymes Zurkassegehen erlauben**: Wenn diese Eigenschaft auf **Wahr** gesetzt ist, erlaubt der Mini-Warenkorb Benutzern, die nicht abgemeldet sind, als Gast zur Kasse zu gehen. Diese Eigenschaft ist in der Commerce-Version 10.0.21 als Teil des Commerce-Modulbibliothekspakets verfügbar.
+- **Artikelreihenfolge**: Diese Eigenschaft steuert die Reihenfolge, in der Artikel im Mini-Warenkorb erscheinen. Wenn die Option **Neue Artikel am Anfang der Liste hinzufügen** ausgewählt ist, werden neue Artikel, die dem Warenkorb hinzugefügt werden, oben in der Liste der Artikel des Mini-Warenkorbs angezeigt. Wenn die Standardoption **Neue Artikel am Ende der Liste hinzufügen** ausgewählt ist, werden neue Artikel, die dem Warenkorb hinzugefügt werden, unten in der Liste der Artikel des Mini-Warenkorbs angezeigt. Diese Eigenschaft ist ab Commerce-Version 10.0.21 als Teil des Commerce-Modulbibliothekspakets verfügbar.
 
-## <a name="module-properties-in-the-adventure-works-theme"></a>Moduleigenschaften im Adventure Works-Design
+> [!IMPORTANT]
+> Die Eigenschaft **Anonymes Zurkassegehen erlauben** und **Artikelreihenfolge** sind ab der Commerce-Version 10.0.21 verfügbar. Sie erfordern, dass das Commerce-Modulbibliothekspaket in der Version 9.31 installiert ist.
+
+## <a name="module-properties-and-slots-in-the-adventure-works-theme"></a>Moduleigenschaften und Slots im Adventure Works-Design
 
 Im Adventure Works-Design enthält das Warenkorbsymbolmodul zwei zusätzliche Slots für den Mini-Warenkorb. Diese Slots sind als Erweiterung der Moduldefinition enthalten.
 

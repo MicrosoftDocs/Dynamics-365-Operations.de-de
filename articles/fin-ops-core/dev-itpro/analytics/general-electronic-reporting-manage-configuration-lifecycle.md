@@ -2,7 +2,7 @@
 title: Den Konfigurationslebenszyklus der elektronischen Berichterstellung (EB) verwalten
 description: In diesem Thema wird beschrieben, wie Sie den Lebenszyklus von Konfigurationen für die elektronische Berichterstellung (EB) für Dynamics 365 Finance verwalten.
 author: NickSelin
-ms.date: 04/13/2021
+ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb7844a009bc35f7151827b8e675cb39f71459fd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b8b61082cf17707c952b6e07613769a671c349bb8fa92c21e3fe8524ef62dcb2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767778"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Den Lebenszyklus der elektronischen Berichterstellungskonfiguration (ER) verwalten
 
@@ -82,20 +82,34 @@ EB-Konfigurationen, die in der Testumgebung entworfene wurden, können in die Te
 
 ![EB-Konfigurationslebenszyklus.](./media/ger-configuration-lifecycle.png)
 
-## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" />Berücksichtigung der Datenpersistenz
+## <a name="data-persistence-consideration"></a>Berücksichtigung der Datenpersistenz
 
 Sie können verschiedene [Versionen](general-electronic-reporting.md#component-versioning) einer EB-[Konfiguration](general-electronic-reporting.md#Configuration) einzeln in Ihre Instanz von Finance [importieren](tasks/er-import-configuration-lifecycle-services.md). Wenn eine neue Version einer EB-Konfiguration importiert wird, steuert das System den Inhalt der Entwurfsversion dieser Konfiguration:
 
-   - Wenn die importierte Version niedriger als die höchste Version dieser Konfiguration in der aktuellen Instanz von Finance ist, bleibt der Inhalt der Entwurfsversion dieser Konfiguration unverändert.
-   - Wenn die importierte Version höher ist als jede andere Version dieser Konfiguration in der aktuellen Instanz von Finance, wird der Inhalt der importierten Version in die Entwurfsversion dieser Konfiguration kopiert, damit Sie die letzte abgeschlossene Version weiter bearbeiten können.
+- Wenn die importierte Version niedriger als die höchste Version dieser Konfiguration in der aktuellen Instanz von Finance ist, bleibt der Inhalt der Entwurfsversion dieser Konfiguration unverändert.
+- Wenn die importierte Version höher ist als jede andere Version dieser Konfiguration in der aktuellen Instanz von Finance, wird der Inhalt der importierten Version in die Entwurfsversion dieser Konfiguration kopiert, damit Sie die letzte abgeschlossene Version weiter bearbeiten können.
 
 Wenn diese Konfiguration dem [Konfigurationsanbieter](general-electronic-reporting.md#Provider) gehört, der derzeit aktiviert ist, ist die Entwurfsversion dieser Konfiguration für Sie im Inforegister **Versionen** der Seite **Konfigurationen** (**Organisationsverwaltung** > **Elektronische Berichterstattung** > **Konfigurationen**) sichtbar. Sie können die Entwurfsversion der Konfiguration auswählen und ihren Inhalt unter Verwendung des entsprechenden EB-Designers [ändern](er-quick-start2-customize-report.md#ConfigureDerivedFormat). Wenn die Entwurfsversion einer EB-Konfiguration bearbeitet haben, passt ihr Inhalt nicht mehr zur höchsten VErsion dieser Konfiguration in der aktuellen Instanz von Finance. Um den Verlust Ihrer Änderungen zu verhindern, zeigt das System einen Fehler an, dass der Import nicht fortgesetzt werden kann, da die Version dieser Konfiguration höher ist als die höchste Version dieser Konfiguration in der aktuellen Instanz von Finance. Wenn dies zum Beispiel bei der Formatkonfiguration **X** passiert, wird der Fehler **Format-„X“-Version nicht abgeschlossen** angezeigt.
 
 Um die Änderungen rückgängig zu machen, die Sie in der Entwurfsversion vorgenommen haben, wählen Sie die höchste abgeschlossene oder freigegebene Version Ihrer EB-Konfiguration in Finance auf dem Inforegister **Versionen** und dann die Option **Diese Version abrufen** aus. Der Inhalt der ausgewählten Version wird in die Entwurfsversion kopiert.
 
+## <a name="applicability-consideration"></a>Überlegungen zur Anwendbarkeit
+
+Wenn Sie eine neue Version einer EB-Konfiguration entwerfen, können Sie deren [Abhängigkeit](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md) auf anderen Softwarekomponenten festlegen. Dieser Schritt gilt als eine Voraussetzung für das Steuern des Downloads der Version dieser Konfiguration von einem EB-Repository oder einer externen XML-Datei und für jede weitere Nutzung der Version. Wenn Sie versuchen, eine neue Version einer EB-Konfiguration zu importieren, verwendet das System die konfigurierten Voraussetzungen, um zu steuern, ob die Version importiert werden kann.
+
+In einigen Fällen kann es erforderlich sein, dass das System die konfigurierten Voraussetzungen ignoriert, wenn Sie neue Versionen von EB-Konfigurationen importieren. Gehen Sie folgendermaßen vor, damit das System die Voraussetzungen beim Import ignoriert.
+
+1. Wechseln Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurationen**.
+2. Auf der Seite **Konfigurationen** im Aktivitätsbereich, auf der Registerkarte **Konfigurationen** in der Gruppe **Erweiterte Einstellungen** wählen Sie **Benutzerparameter** aus.
+3. Stellen Sie die Option **Produktaktualisierungen und Prüfung der Versionsvoraussetzungen während des Imports überspringen** auf **Ja**.
+
+    > [!NOTE]
+    > Dieser Parameter ist benutzerspezifisch und unternehmensspezifisch.
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über die elektronische Berichterstellung (EB)](general-electronic-reporting.md)
+[Übersicht über die elektronische Berichterstellung (EB)](general-electronic-reporting.md)
 
+[Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

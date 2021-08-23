@@ -2,7 +2,7 @@
 title: Rasterfunktionen
 description: In diesem Thema werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Sie müssen die neue Rasterfunktion aktivieren, damit auf diese Fähigkeiten zugegriffen werden kann.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 08/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b7a1809a3012af86ad9ba39da8721c63b3c4b885
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775241"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
@@ -158,6 +158,13 @@ Wenn Ihre Organisation eine Seite entdeckt, bei der Probleme bei der Verwendung 
  ```this.forceLegacyGrid();```
 
 Diese API wird bis zur Veröffentlichung im Oktober 2021 durchgeführt, danach wird die neue Rastersteuerung obligatorisch. Wenn Probleme die Verwendung dieser API erfordern, melden Sie diese an Microsoft.
+
+### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Erzwingen, dass eine Seite das neue Raster verwendet, nachdem das Raster zuvor deaktiviert wurde
+Wenn Sie eine einzelne Seite von der Verwendung des neuen Rasters abgemeldet haben, möchten Sie das neue Raster möglicherweise später wieder aktivieren, nachdem die zugrunde liegenden Probleme behoben wurden. Dazu müssen Sie lediglich den Aufruf von `forceLegacyGrid()` entfernen. Die Änderung wird erst wirksam, wenn eine der folgenden Bedingungen eintritt:
+
+- **Erneute Bereitstellung der Umgebung**: Wenn eine Umgebung aktualisiert und erneut bereitgestellt wird, wird die Tabelle, die die Seiten speichert, die sich aus dem neuen Raster abgemeldet haben (FormControlReactGridState), automatisch gelöscht.
+
+- **Manuelles Löschen der Tabelleninhalte**: Für Entwicklungsszenarien müssen Sie SQL verwenden, um die Inhalte der FormControlReactGridState-Tabelle zu löschen und dann den AOS neu zu starten. Diese Kombination von Aktivitäten setzt die Zwischenspeicherung von Seiten zurück, die sich vom neuen Raster abgemeldet haben.  
 
 ## <a name="developer-size-to-available-width-columns"></a>[Entwickler] Spalten mit bis zur verfügbaren Breite angepasster Größe
 Wenn ein Entwickler die **WidthMode**-Eigenschaft bei Spalten innerhalb des neuen Rasters auf **SizeToAvailable** festlegt, haben diese Spalten zunächst dieselbe Breite wie bei einer Einstellung der Eigenschaft **SizeToContent**. Sie dehnen sich jedoch, um jede zusätzliche verfügbare Breite innerhalb des Rasters zu nutzen. Wenn die Eigenschaft bei mehreren Spalten auf **SizeToAvailable** festgelegt ist, teilen sich alle diese Spalten die zusätzliche verfügbare Breite innerhalb des Rasters. Wenn ein Benutzer jedoch die Größe einer dieser Spalten manuell ändert, wird die Spalte statisch. Sie bleibt auf dieser Breite und wird nicht mehr gedehnt, um die zusätzliche verfügbare Rasterbreite einzunehmen.  

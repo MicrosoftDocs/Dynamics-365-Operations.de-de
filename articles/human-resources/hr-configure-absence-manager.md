@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8a8250b36d2774ac308637253b780592df316cd
-ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
+ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6639605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732344"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurieren Sie die Rolle des Abwesenheitsmanagers
 
@@ -64,7 +64,7 @@ Nachdem der Hierarchietyp definiert wurde, muss der Planstellenhierarchiebericht
 
 5. Wählen Sie im Feld **Positionsberichte** eine Position aus. Der Name des Arbeiters wird automatisch ausgefüllt, nachdem Sie eine Position ausgewählt haben.
 
-## <a name="assign-the-absence-manager-role-to-a-user"></a>Weisen Sie einem Benutzer die Rolle des Benutzers  zu
+## <a name="assign-the-absence-manager-role-to-a-user"></a>Weisen Sie einem Benutzer die Rolle des Benutzers zu
 
 Die Rolle des Abwesenheitsmanagers muss Mitarbeitern zugewiesen werden, damit sie Abwesenheitsanträge genehmigen oder ablehnen können.
 
@@ -89,16 +89,21 @@ Die Rolle des Abwesenheitsmanagers muss Mitarbeitern zugewiesen werden, damit si
 
 ## <a name="absence-manager-workspace"></a>Arbeitsbereich des Abwesenheitsmanagers
 
-Im **Mitarbeiter Selbstservice** Arbeitsbereich der **Abwesenheitsmanager** Registerkarte werden die Abwesenheitsinformationen der Mitarbeiter angezeigt, die dem Abwesenheitsmanager in der Abwesenheitshierarchie zugeordnet sind.
+Im **Mitarbeiter-Self-Service** Arbeitsbereich der Registerkarte **Abwesenheitsverwaltung** werden die Abwesenheitsinformationen der Mitarbeiter angezeigt, die dem Abwesenheitsmanager in der Abwesenheitshierarchie zugeordnet sind. Dem Abwesenheitsmanager stehen einige Optionen zur Verfügung: 
+ - Abwesenheitsanträgen überprüfen.</br>
+ - Im Namen eines Mitarbeiters einen Abwesenheitsantrag einreichen.</br>
+ - Alle ihnen als Teil der Abwesenheitshierarchie zugewiesenen Mitarbeiter anzeigen.</br>
+ - Kalender für Abwesenheitsmanager anzeigen.</br>
 
-Auf der **Urlaub und Abwesenheit** Registerkarte stehen für jeden Mitarbeiter folgende Optionen zur Verfügung:
-
-- **Freizeit** – Zeigen Sie Salden, genehmigte Freizeit und Urlaubsanträge für den ausgewählten Mitarbeiter an.
-- **Urlaubssaldi** – Zeigen Sie eine Liste der Salden für die verschiedenen Urlaubspläne für den ausgewählten Mitarbeiter an.
+Der Arbeitsbereich **Abwesenheitsverwaltung** hat zwei Registerkarten:
+ - **Abwesenheitsanträge**: Auf dieser Registerkarte werden alle ausstehenden Abwesenheitsanträge aufgelistet, die der Abwesenheitsmanager genehmigen kann. Der Abwesenheitsmanager kann mehrere Datensätze gleichzeitig auswählen und darauf reagieren. Wenn die firmenübergreifende Abwesenheitsansicht aktiviert ist, werden in dieser Liste ausstehende Abwesenheitsanträge für alle juristischen Personen angezeigt, auf die er Zugriff hat. Andernfalls werden die ausstehenden Abwesenheitsanträge für die derzeit ausgewählte juristische Person angezeigt. </br>
+ - **Alle Mitarbeiter**: Auf dieser Registerkarte werden alle Mitarbeiter aufgelistet, die dem Abwesenheitsmanager in der Abwesenheitshierarchie zugeordnet sind. Für jeden Mitarbeiter stehen mehrere Optionen zur Verfügung:
+    - **Abwesenheit anfordern**: Senden Sie einen neuen Abwesenheitsantrag für den ausgewählten Mitarbeiter.</br>
+    - **Freizeit** – Zeigen Sie Salden, genehmigte Freizeit und Urlaubsanträge für den ausgewählten Mitarbeiter an.</br>
 
 ## <a name="approve-time-off-requests"></a>Abwesenheitsanträge genehmigen
 
-Abwesenheitsmanager können Urlaubsanträge für Mitarbeiter genehmigen oder ablehnen. Sie können bei Bedarf auch Anfragen im Namen von Mitarbeitern erstellen.
+Abwesenheitsmanager können Urlaubsanträge für Mitarbeiter genehmigen oder ablehnen. 
 
 > [!IMPORTANT]
 > Bevor Abwesenheitsmanager Urlaubsanträge genehmigen oder ablehnen können, muss der Abwesenheitsantrag für Arbeitselemente so konfiguriert werden, dass ihnen Urlaubsantrags-Arbeitselemente zur Überprüfung zugewiesen werden.
@@ -109,15 +114,13 @@ Abwesenheitsmanager können Urlaubsanträge für Mitarbeiter genehmigen oder abl
 >
 > Weitere Informationen zum Erstellen von Workflows für Urlaubsanträge finden Sie unter [Erstellen eines Workflows für Urlaubsanträge](hr-leave-and-absence-workflow.md).
 
-1. Wählen Sie im Arbeitsbereich **Mitarbeiter Selbstservice** die Registerkarte **Abwesenheitsmanager** aus.
+1. Wählen Sie im Arbeitsbereich **Mitarbeiter-Self-Service** die Registerkarte **Abwesenheitsverwaltung** aus.
 
-2. Auf der Registerkarte **Abwesenheitsmanager** wählen Sie den gewünschten Mitarbeiter aus.
+2. Wählen Sie auf der Registerkarte **Abwesenheitsanträge** die Abwesenheitsanträge aus, für die Sie Maßnahmen ergreifen möchten. Sie können in dieser Listenansicht mehrere Datensätze auswählen.
 
-3. Wählen Sie **Einzelheiten** und dann **Freizeit**.
+3. Verwenden Sie die interaktiven Schaltflächen oben im Raster, um den Abwesenheitsantrag zu genehmigen, abzulehnen oder zu delegieren. 
 
-4. Suchen Sie den Urlaubsantrag und wählen Sie die Option **Genehmigung**. Sie können dann eine Option zum Genehmigen oder Stornieren des Urlaubsantrags auswählen.
-
-Ein Status **Abbrechen** zeigt an, dass die Anfrage abgelehnt wurde. Ein Status **Abgeschlossen** zeigt an, dass die Anfrage genehmigt wurde.
+Alternativ kann der Benutzer auch die Kachel **Abwesenheitsanträge** auf der linken Seite verwenden, um zur Liste aller Arbeitsaufgaben für Abwesenheitsanträge zu navigieren. 
 
 ## <a name="view-time-off-in-the-calendar"></a>Freizeit im Kalender anzeigen
 
@@ -126,7 +129,7 @@ Benutzer in der Rolle des Abwesenheitsmanagers können Urlaubsanträge in ihrem 
 > [!IMPORTANT]
 > Ein Systemadministrator muss die Ansichtsoptionen für den Kalender des Abwesenheitsmanagers konfigurieren. Auf der **Urlaubs- und Abwesenheitsparameter** Seite, auf der **Kalender** Registerkarte gibt es Optionen zum Ein- und Ausblenden von Geburtstagen, Abwesenheiten ohne Details, Beurlaubungen und ausstehenden Urlaubsanträgen. Es gibt auch eine Option zum Filtern der Kalenderansichtsoption nach Arbeitskrafttyp.
 
-1. Im **Mitarbeiter Selbstservice** Arbeitsbereich **Abwesenheitsmanager** und dann **Kalender des Abwesenheitsmanagers** auswählen.
+1. Wählen Sie im Arbeitsbereich **Mitarbeiter-Self-Service** **Abwesenheitsverwaltung** und dann **Kalender für Abwesenheitsmanager** aus.
 
 2. Geben Sie im Feld **Datum** die gewünschten Daten ein.
 
