@@ -2,7 +2,7 @@
 title: Mail-Vorlagen für Transaktionsereignisse erstellen
 description: In diesem Thema wird beschrieben, wie Sie E-Mail-Vorlagen für Transaktionsereignisse in Microsoft Dynamics 365 Commerce erstellen, hochladen und konfigurieren.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bfc773bec035ceee151e2e2dd8925aa772747452
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2da1044cd332d841a8c18f7139d0d8c09bad95f446494034060e59416b4018b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718706"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Mail-Vorlagen für Transaktionsereignisse erstellen
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie E-Mail-Vorlagen für Transaktionsereignisse in Microsoft Dynamics 365 Commerce erstellen, hochladen und konfigurieren.
-
-## <a name="overview"></a>Übersicht
 
 Dynamics 365 Commerce bietet eine sofort einsatzbereite Lösung zum Senden von E-Mails, die Kunden über Transaktionsereignisse informieren (z. B. wenn eine Bestellung aufgegeben wird, eine Bestellung zur Abholung bereit ist oder eine Bestellung versandt wurde). In diesem Thema werden die Schritte zum Erstellen, Hochladen und Konfigurieren der E-Mail-Vorlagen beschrieben, die zum Senden von Transaktions-E-Mails verwendet werden.
 
@@ -79,26 +77,33 @@ Die folgenden Platzhalter rufen Daten ab und zeigen sie an, die auf Kundenauftra
 | Platzhaltername     | Platzhalterwert                                            |
 | -------------------- | ------------------------------------------------------------ |
 | customername         | Der Name des Debitors, der die Bestellung platziert hat.               |
-| salesid              | Die Auftragskennung des Auftrags.                                   |
-| deliveryaddress      | Die Lieferadresse für versandte Bestellungen.                     |
 | customeraddress      | Die Debitorenadresse.                                 |
 | customeremailaddress | Die E-Mail-Adresse, die der Kunde an der Kasse eingegeben hat.     |
+| salesid              | Die Auftragskennung des Auftrags.                                   |
+| orderconfirmationid  | Die kanalübergreifende Kennung, die bei der Auftragserstellung generiert wurde. |
+| channelid            | Die Kennung des Einzelhandels- oder Online-Kanals, über den der Auftrag aufgegeben wurde. |
+| deliveryname         | Der Name, der für die Lieferadresse spezifiziert ist.        |
+| deliveryaddress      | Die Lieferadresse für versandte Bestellungen.                     |
 | deliverydate         | Das Lieferdatum.                                           |
 | shipdate             | Das Versanddatum.                                               |
 | modeofdelivery       | Der Versandmodus der Bestellung.                              |
+| ordernetamount       | Der Gesamtbetrag für die Bestellung abzüglich der Gesamtsteuer.         |
+| Rabatt             | Die Gesamtrabatt für die Bestellung.                            |
 | Zuschläge              | Die Gesamtkosten für die Bestellung.                             |
 | Steuer                  | Die Gesamtsteuern für die Bestellung.                                 |
 | Gesamt                | Der Gesamtbetrag für die Bestellung.                              |
-| ordernetamount       | Der Gesamtbetrag für die Bestellung abzüglich der Gesamtsteuer.         |
-| Rabatt             | Die Gesamtrabatt für die Bestellung.                            |
 | storename            | Der Name des Shops, bei dem die Bestellung platziert wurde.            |
 | storeaddress         | Die Adresse des Shops, der die Bestellung platziert hat.              |
 | storeopenfrom        | Die Öffnungszeiten des Shops, der die Bestellung platziert hat.         |
 | storeopento          | Die Schließzeiten des Shops, der die Bestellung platziert hat.         |
-| pickupstorename      | Der Name des Shops, bei dem die Bestellung abgeholt wird.     |
-| pickupstoreaddress   | Die Adresse des Shops, bei dem die Bestellung abgeholt wird.  |
-| pickupopenstorefrom  | Die Öffnungszeiten des Shops, bei dem die Bestellung abgeholt wird. |
-| pickupopenstoreto    | Die Schließzeiten des Shops, bei dem die Bestellung abgeholt wird. |
+| pickupstorename      | Der Name des Shops, bei dem die Bestellung abgeholt wird.\* |
+| pickupstoreaddress   | Die Adresse des Shops, bei dem die Bestellung abgeholt wird.\* |
+| pickupopenstorefrom  | Die Öffnungszeiten des Shops, bei dem die Bestellung abgeholt wird.\* |
+| pickupopenstoreto    | Die Schließzeiten des Shops, bei dem die Bestellung abgeholt wird.\* |
+| pickupchannelid      | Die Kanalkennung des Geschäfts, die für eine die Lieferart der Abholung angegeben ist.\* |
+| packingslipid        | Die Kennung des Lieferscheins, der beim Verpacken von Positionen eines Auftrags generiert wurde.\* |
+
+\*Diese Platzhalter geben nur dann Daten zurück, wenn sie für den Benachrichtigungstyp **Bestellung zur Abholung bereit** verwendet werden. 
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Auftragspositionsplatzhalter (Verkaufspositionsebene)
 
@@ -106,7 +111,10 @@ Die folgenden Platzhalter rufen Daten für einzelne Produkte (Positionen) im Kun
 
 | Platzhaltername               | Platzhalterwert |
 |--------------------------------|-------------------|
-| productid                      | Die Produkt-ID für die Linie. |
+| productid                      | <p>Die Kennung des Produkts. Diese Kennung berücksichtigt Varianten.</p><p><strong>Hinweis:</strong> Dieser Platzhalter wurde zugunsten von **lineproductrecid** eingestellt.</p> |
+| lineproductrecid               | Die Kennung des Produkts. Diese Kennung berücksichtigt Varianten. Er identifiziert einen Artikel eindeutig auf Variantenebene. |
+| lineitemid                     | Die Kennung des Produkts auf Produktebene. (Diese Kennung berücksichtigt keine Varianten.) |
+| lineproductvariantid           | Die Kennung der Produktvariante. |
 | lineproductname                | Der Name des Produkts. |
 | lineproductdescription         | Die Beschreibung des Produkts. |
 | linequantity                   | Die Anzahl der Einheiten, die für die Position bestellt wurden, plus die Maßeinheit (z. B. **ea** oder **Paar**). |
@@ -125,6 +133,8 @@ Die folgenden Platzhalter rufen Daten für einzelne Produkte (Positionen) im Kun
 | linedeliverydate               | Das Lieferdatum für die Position. |
 | linedeliverymode               | Der Liefermodus für die Position. |
 | linedeliveryaddress            | Die Lieferadresse für die Position. |
+| linepickupdate                 | Das vom Kunden angegebene Abholdatum für Bestellungen mit der Lieferart Abholung. |
+| linepickuptimeslot             | Das vom Kunden angegebene Abholdzeitraum für Bestellungen mit der Lieferart Abholung. |
 | giftcardnumber                 | Die Geschenkkartennummer für Produkte vom Typ Geschenkkarte. |
 | giftcardbalance                | Der Geschenkkartensaldo für Produkte vom Typ Geschenkkarte. |
 | giftcardmessage                | Die Geschenkkartennachricht für Produkte vom Typ Geschenkkarte. |

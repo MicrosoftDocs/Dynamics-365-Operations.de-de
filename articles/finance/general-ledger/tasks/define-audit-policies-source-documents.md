@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 62ebe3d6ba1208bd5f9a2082969b1960c413c152
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0779589a3583909984e35014a2ec0e86455cd30a3833110556f095241e7172ca
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836960"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722670"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Überwachungsrichtlinien für Quelldokumente definieren
 
@@ -39,9 +39,9 @@ Dieses Thema erklärt, wie und Überwachungsrichtlinienregeln eingerichtet und a
 11. Wählen Sie **Neu** aus.
 12. Geben Sie im Feld **Name** einen Wert ein.
 13. Erweitern Sie den Abschnitt **Richtlinienorganisationen**.
-14. Wählen Sie in der Struktur **Contoso Unterhaltungsanlagen USA** aus, und wählen Sie dann **Hinzufügen** aus.
-15. Wählen Sie in der Struktur **Contoso Beratung USA** aus, und wählen Sie dann **Hinzufügen** aus.
-16. Wählen Sie in der Struktur **Contoso Einzelhandel USA** aus, und wählen Sie dann **Hinzufügen** aus.
+14. Wählen Sie in der Struktur **Contoso Entertainment System USA** aus, und wählen Sie dann **Hinzufügen** aus.
+15. Wählen Sie in der Struktur **Contoso Consulting USA** aus, und wählen Sie dann **Hinzufügen** aus.
+16. Wählen Sie in der Struktur **Contoso Retail USA** aus, und wählen Sie dann **Hinzufügen** aus.
 17. Reduzieren Sie den Abschnitt **Richtlinienorganisationen**.
 18. Erweitern Sie den Abschnitt **Richtlinienregeln**.
 19. Suchen Sie in der Liste die zuvor erstellte "Richtlinienregel" und wählen Sie diese aus.

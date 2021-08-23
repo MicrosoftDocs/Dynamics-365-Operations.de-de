@@ -1,8 +1,8 @@
 ---
-title: Kundenaufträge in Point of Sale (POS)
-description: Dieses Thema enthält Informationen zu Kundenaufträgen in Point of Sale (POS). Debitorenaufträge sind auch Sonderauftrag. Das Thema enthält eine Diskussion zu zugehörigen Parametern und Buchungsflüssen.
+title: Debitorenaufträge an der Verkaufsstelle (POS)
+description: Dieses Thema enthält Informationen zu Kundenaufträgen an der Verkaufsstelle (POS). Debitorenaufträge sind auch Sonderauftrag. Das Thema enthält eine Diskussion zu zugehörigen Parametern und Buchungsflüssen.
 author: josaw1
-ms.date: 01/06/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 44beb4515bf0d2f8fc7ad75feb3164bf1c7c2d5737552b1a06ce59c2edcaf8fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349625"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755082"
 ---
-# <a name="customer-orders-in-point-of-sale-pos"></a>Kundenaufträge in Point of Sale (POS)
+# <a name="customer-orders-in-point-of-sale-pos"></a>Debitorenaufträge an der Verkaufsstelle (POS)
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Informationen zur Erstellung und Verwaltung von Kundenaufträgen in Point of Sale (POS). Kundenaufträge können verwendet werden, um dort Verkäufe zu erfassen, wo Käufer Produkte zu einem späteren Zeitpunkt oder von einem anderen Standort abholen oder Artikel gesendet bekommen möchten. 
+Dieses Thema enthält Informationen zur Erstellung und Verwaltung von Kundenaufträgen in der Verkaufsstellen-App (POS-App). Kundenaufträge können verwendet werden, um dort Verkäufe zu erfassen, wo Käufer Produkte zu einem späteren Zeitpunkt oder von einem anderen Standort abholen oder Artikel gesendet bekommen möchten. 
 
 In einer Omni-Channel-Commerce-Welt stellen viele Einzelhändler von Debitorenaufträgen als Option oder Sonderaufträge, um die verschiedenen Produkt- und Erfüllungsbedingungen zu erfüllen. Nachfolgend sind einige typische Szenarios:
 
@@ -132,6 +132,10 @@ Einzelhandelsaufträge, die entweder im Online- oder im Shop-Kanal erstellt wurd
 > [!IMPORTANT]
 > Nicht alle Einzelhandelsaufträge können über die POS-Anwendung bearbeitet werden. Aufträge, die in einem Call Center-Kanal erstellt werden, können nicht über POS bearbeitet werden, wenn die Einstellung [Auftragsabschluss aktivieren](./set-up-order-processing-options.md#enable-order-completion) für den Call Center-Kanal aktiviert ist. Um eine korrekte Zahlungsabwicklung sicherzustellen, müssen Aufträge, die aus einem Callcenter-Kanal stammen und die Funktion „Auftragsabschluss aktivieren“ verwenden, über die Callcenter-Anwendung in der Commerce-Zentrale bearbeitet werden.
 
+> [!NOTE]
+> Wir empfehlen, dass Sie keine Aufträge und Angebote in POS bearbeiten, die von einem Nicht-Callcenter-Benutzer in der Commerce-Zentralverwaltung erstellt wurden. Diese Aufträge und Angebote verwenden nicht das Commerce-Preismodul. Wenn sie also in POS bearbeitet werden, berechnet das Commerce-Preismodul die Preise neu.
+
+
 In Version 10.0.17 und höher können Benutzer berechtigte Aufträge über die POS-Anwendung bearbeiten, auch wenn die Bestellung teilweise erfüllt ist. Bestellungen, die vollständig in Rechnung gestellt werden, können jedoch immer noch nicht über den POS bearbeitet werden. Aktivieren Sie die Funktion **Teilweise erfüllte Aufträge in der Verkaufsstelle bearbeiten** im Arbeitsbereich **Funktionsverwaltung**, um diese Funktionalität zu aktivieren. Wenn diese Funktion nicht aktiviert ist oder wenn Sie Version 10.0.16 oder früher verwenden, können Benutzer Debitorenaufträge nur in POS bearbeiten, wenn der Auftrag noch vollständig offen ist. Außerdem können Sie, wenn die Funktion aktiviert ist, einschränken, in welchen Shops teilweise erfüllte Aufträge bearbeitet werden können. Die Option zum Deaktivieren dieser Funktion für bestimmte Shops kann über das **Funktionsprofil** im Inforegister **Allgemein** konfiguriert werden.
 
 
@@ -142,7 +146,23 @@ In Version 10.0.17 und höher können Benutzer berechtigte Aufträge über die 
 5. Schließen Sie den Bearbeitungsvorgang ab, indem Sie einen Zahlungsvorgang auswählen.
 6. Um den Bearbeitungsprozess zu beenden, ohne Änderungen zu speichern, können Sie die Operation **Transaktion stornieren** verwenden.
 
+#### <a name="pricing-impact-when-orders-are-edited"></a>Auswirkungen auf die Preise, wenn Aufträge bearbeitet werden
 
+Wenn Aufträge an der POS oder auf einer E-Commerce-Site von Commerce aufgegeben werden, verpflichten sich Kunden zu einem Betrag. Dieser Betrag beinhaltet einen Preis und kann auch einen Rabatt enthalten. Ein Kunde, der einen Auftrag aufgibt und später das Callcenter kontaktiert, um diesen Auftrag zu ändern (z. B. um einen weiteren Artikel hinzuzufügen), hat bestimmte Erwartungen an die Anwendung von Rabatten. Auch wenn die Werbeaktionen für die bestehenden Auftragspositionen abgelaufen sind, erwartet der Kunde, dass die Rabatte, die ursprünglich auf diese Positionen angewendet wurden, in Kraft bleiben. Wenn jedoch bei dem ursprünglichen Auftrag kein Rabatt gültig war, aber seitdem ein Rabatt in Kraft getreten ist, erwartet der Kunde, dass der neue Rabatt auf den geänderten Auftrag angewendet wird. Andernfalls kann der Kunde den bestehenden Auftrag einfach stornieren und dann einen neuen Auftrag erstellen, bei dem der neue Rabatt angewendet wird. Wie dieses Szenario zeigt, müssen Preise und Rabatte, zu denen sich Kunden verpflichtet haben, beibehalten werden. Gleichzeitig müssen POS- und Callcenter-Benutzer die Flexibilität haben, Preise und Rabatte für Kundenauftragspositionen nach Bedarf neu zu berechnen.
+
+Wenn Aufräge im POS zurückgerufen und bearbeitet werden, gelten die Preise und Rabatte der bestehenden Bestellpositionen als „gesperrt“. Mit anderen Worten, sie ändern sich nicht, selbst wenn einige Auftragspositionen storniert oder geändert werden oder neue Auftragspositionen hinzugefügt werden. Um die Preise und Rabatte bestehender Auftragspositionen zu ändern, muss der POS-Benutzer **Neu berechnen** auswählen. Die Preissperre wird dann aus den bestehenden Auftragspositionen entfernt. Vor der Commerce-Version 10.0.21 war diese Funktion jedoch im Callcenter nicht verfügbar. Stattdessen führten alle Änderungen an Auftragspositionen dazu, dass Preise und Rabatte neu berechnet wurden.
+
+In der Commerce-Version 10.0.21 wird eine neue Funktion mit dem Namen **Unbeabsichtigte Preisberechnungen für Commerce-Aufträge verhindern** im Arbeitsbereich **Funktionsverwaltung** zur Verfügung gestellt. Diese Funktion ist standardmäßig aktiviert. Wenn sie aktiviert ist, steht ein neuen **Preis gesperrt**-Merkmal steht für alle E-Commerce-Aufträge zur Verfügung. Nachdem die Auftragserfassung für Aufträge, die von einem beliebigen Kanal aufgegeben wurden, abgeschlossen ist, wird diese Eigenschaft automatisch für alle Auftragspositionen aktiviert (d. h. das Kontrollkästchen ist ausgewählt). Das Commerce-Preismodul schließt diese Auftragspositionen dann von allen Preis- und Rabattberechnungen aus. Wenn der Auftrag bearbeitet wird, werden die Auftragspositionen daher standardmäßig von der Preis- und Rabattberechnung ausgeschlossen. Callcenterbenutzer können jedoch die Eigenschaft für jede Auftragsposition deaktivieren (d. h. das Kontrollkästchen leeren) und dann **Neu berechnen** auswählen, um die vorhandenen Auftragspositionen in die Preisberechnungen einzubeziehen.
+
+Auch wenn sie einen manuellen Rabatt auf eine bestehende Auftragsposition anwenden, müssen Callcenterbenutzer die Eigenschaft **Preis gesperrt** der Auftragsposition deaktivieren, bevor sie den manuellen Rabatt anwenden.
+
+Callcenterbenutzer können die Eigenschaft **Preis gesperrt** für mehrere Auftragspositionen gleichzeitig deaktivieren, indem sie **Preissperre entfernen** in der Gruppe **Berechnen** auf der Registerkarte **Verkaufen** im Aktivitätsbereich der Seite **Auftrag** auswählen. In diesem Fall wird die Preissperre von allen Auftragspositionen entfernt, mit Ausnahme von Positionen, die nicht bearbeitet werden können (d. h. Positionen mit dem Status **Teilweise fakturiert** oder **Fakturiert**). Nachdem die Änderungen an dem Auftrag abgeschlossen und übermittelt wurden, wird die Preissperre erneut auf alle Auftragspositionen angewendet.
+
+> [!IMPORTANT]
+> Wenn die Funktion **Unbeabsichtigte Preisberechnungen für Commerce-Aufträge verhindern** aktiviert ist, werden die Einstellungen der Handelsvereinbarungsbewertung in den Preisworkflows ignoriert. Mit anderen Worten: In den Dialogfeldern zur Bewertung von Handelsvereinbarungen werden der Abschnitt **Preisbezogen** nicht angezeigt. Dieses Verhalten tritt auf, weil sowohl die Einrichtung der Handelsvereinbarungsbewertung als auch die Preissperrfunktion einen ähnlichen Zweck haben: unbeabsichtigte Preisänderungen zu verhindern. Die Benutzerumgebung für die Bewertung von Handelsvereinbarungen lässt sich jedoch nicht gut für große Aufträge skalieren, bei denen Benutzer eine oder mehrere Auftragspositionen für die Neupreisberechnung auswählen müssen.
+
+> [!NOTE]
+> Die Eigenschaft **Preis gesperrt** kann für eine oder mehrere ausgewählte Positionen nur deaktiviert werden, wenn das Modul **Callcenter** verwendet wird. Das Verhalten von POS bleibt unverändert. Mit anderen Worten: Der POS-Benutzer kann die Preise für ausgewählte Auftragspositionen nicht entsperren. Sie können jedoch **Neu berechnen** auswählen, um die Preissperre von allen bestehenden Auftragspositionen entfernen.
 
 ### <a name="cancel-a-customer-order"></a>Stornieren eines Debitorenauftrags
 

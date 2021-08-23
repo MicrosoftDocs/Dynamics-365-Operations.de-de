@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96c1cccccd2b20626dba14d9b0cb97bef10732fd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c13169ab05dd506f75b2c9d28f05fcf4471f5a7c8f0a563c974bc38949993295
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749703"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724442"
 ---
 # <a name="view-and-design-financial-reports"></a>Finanzberichte entwerfen und verwalten
 
@@ -51,7 +51,7 @@ In dieser Übung generieren und untersuchen Sie einen vorhandenen Standardberich
     > [!NOTE]
     > Sie werden aufgefordert, den Ein-Klick-Berichts-Designer herunterzuladen und sich anzumelden. Verwenden Sie die Anmeldeinformationen, um sich anzumelden. Melden Sie sich mit Ihren Anmeldeinformationen an.
 
-7. Ändern Sie das Basisjahr auf 2012, und wählen Sie **Generieren** aus. Wenn ein Bericht im Berichts-Designer generiert wird, wird er in einer neuen Browserregisterkarte geöffnet. Sie können den Bericht in der neuen Browserregisterkarte oder in Ihrer ursprünglichen Browserregisterkarte anzeigen und den Bericht dort öffnen, indem Sie ihn aus der Liste  **Finanzberichte** auswählen.
+7. Ändern Sie das Basisjahr auf 2012, und wählen Sie **Generieren** aus. Wenn ein Bericht im Berichts-Designer generiert wird, wird er in einer neuen Browserregisterkarte geöffnet. Sie können den Bericht in der neuen Browserregisterkarte oder in Ihrer ursprünglichen Browserregisterkarte anzeigen und den Bericht dort öffnen, indem Sie ihn aus der Liste **Finanzberichte** auswählen.
 8. Wählen Sie im geöffneten Bericht einen der Beträge zur Anzeige der Kontodetails für den Bericht aus.
 9. Sobald die Kontodetails angezeigt werden, wählen Sie ein Konto mit Daten aus und rufen Sie die **Berichtbuchungs-Drillstufe** auf. Auf der Berichtsbuchungsstufe können Sie die Eigenschaften (Attribute) anzeigen, die im Entwurf dieses Berichts enthalten sind. Je nach Transaktion und Konto werden möglicherweise einige oder alle Attribute angezeigt.
 10. Schließen Sie die Berichtbuchungsstufe.
@@ -148,7 +148,7 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden eine 
 1. Wechseln Sie zu **Finanzberichte** unter "Abfragen und Berichte" im Hauptbuch.
 2. Wählen Sie die Zeile für den Bericht namens **Bilanz und Einkommensaufstellung parallel - Standard** aus.
 3. Wählen Sie **Bearbeiten** aus. **Bilanz und Einkommensaufstellung parallel - Standard** wird im Bericht-Designer geöffnet.
-4. Wählen Sie **Datei** &gt; **Speichern unter**  aus und benennen Sie den Bericht **Konsolidierte Bilanz und Einkommensaufstellung paralle**.
+4. Wählen Sie **Datei** &gt; **Speichern unter** aus und benennen Sie den Bericht **Konsolidierte Bilanz und Einkommensaufstellung paralle**.
 5. Ändern Sie das Basisjahr zu 2012.
 6. Klicken Sie auf den Strukturtyp-Dropdownpfeil, und wählen Sie **Organisationshierarchien** aus.
 7. Klicken Sie auf den Strukturtyp-Dropdownpfeil, und wählen Sie **Contoso Holdings** aus.

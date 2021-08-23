@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: ef556c44ac0241f19e9e1891fb3ce32294667827
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0218dd93440c3cd76f16ac954dd7956998873931444fa1334e7382a177ff3fc9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909862"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757194"
 ---
 # <a name="before-you-buy"></a>Vor dem Kauf
 
@@ -86,7 +86,7 @@ Für zusätzliche Ressourcen siehe:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Schritt 4: Planen der Bereitstellung und Informationen über FastTrack
 
-Microsoft-FastTrack für Dynamics 365 ist unser Kundenerfolgsservice, der Ihnen dabei hilft, sich in Dynamics 365 problemlos und sicher zurechtzufinden, sodass Sie rascher Unternehmenserfolg haben. Wenn Sie am FastTrack-Programm teilnehmen, erhalten Sie Informationen zu bewährten Methoden und wie Sie die Ausweitung erfolgreich planen. Sie lernen auch Methoden, neue Benutzer zu aktivieren und Funktionen zu erweitern – alles in Ihrem eigenen Tempo. Außerdem haben Sie Zugriff auf die Microsoft-Technikressourcen, damit Ihre Erfahrungen mit Dynamics 365 erfolgreich sind. Für weitere Informationen siehe [Microsoft FastTrack](/dynamics365/fasttrack/).
+Microsoft FastTrack for Dynamics 365 ist unser Kundenerfolgsservice, der Ihnen dabei hilft, sich in Dynamics 365 problemlos und sicher zurechtzufinden, sodass Sie rascher Unternehmenserfolg haben. Wenn Sie am FastTrack-Programm teilnehmen, erhalten Sie Informationen zu bewährten Methoden und wie Sie die Ausweitung erfolgreich planen. Sie lernen auch Methoden, neue Benutzer zu aktivieren und Funktionen zu erweitern – alles in Ihrem eigenen Tempo. Außerdem haben Sie Zugriff auf die Microsoft-Technikressourcen, damit Ihre Erfahrungen mit Dynamics 365 erfolgreich sind. Für weitere Informationen siehe [Microsoft FastTrack](/dynamics365/fasttrack/).
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Falls Sie ein Upgrade von Dynamics AX 2012 vornehmen oder von AX 2009 migrieren
 
