@@ -1,8 +1,8 @@
 ---
 title: Einrichtung von dualem Schreiben aus Lifecycle Services
 description: In diesem Thema wird erläutert, wie Sie eine Verbindung für duales Schreiben über Microsoft Dynamics Lifecycle Services (LCS) einrichten.
-author: RamaKrishnamoorthy
-ms.date: 05/11/2021
+author: laneswenka
+ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 060734154607263b5fed80b21fc9355b513ea26e3b1be88498310905531dceaa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729042"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Einrichtung von dualem Schreiben aus Lifecycle Services
 
@@ -66,5 +66,18 @@ Um duales Schreiben für eine vorhandene Dataverse Umgebung einzurichten, müsse
 
 > [!NOTE]
 > Sie können die Verknüpfung von Umgebungen mit LCS nicht aufheben. Um die Verknüpfung einer Umgebung aufzuheben, öffnen Sie den **Datenintegration** Arbeitsbereich in der Finance and Operations Umgebung und wählen Sie dann **Verknüpfung aufheben**.
+
+## <a name="linking-mismatch"></a>Verknüpfungskonflikt
+
+Es ist möglich, dass Ihre LCS-Umgebung mit einer Dataverse-Instanz verknüpft ist, während Ihre Umgebung für duales Schreiben mit einer anderen Dataverse-Instanz verknüpft ist. Dieser Verknüpfungskonflikt kann zu unerwartetem Verhalten und dazu führen, dass Daten an die falsche Umgebung gesendet werden. Die empfohlene Umgebung für duales Schreiben ist diejenige, die im Rahmen der Power Platform-Integration erstellt wird. Langfristig wird dies die einzige Möglichkeit sein, eine Verbindung zwischen den Umgebungen herzustellen.
+
+Wenn Ihre Umgebung einen Verknüpfungskonflikt aufweist, zeigt LCS auf Ihrer Umgebungsdetailseite eine Warnung an wie: „Microsoft hat festgestellt, dass Ihre Umgebung über duales Schreiben mit einem anderen Ziel verknüpft ist als in der Power Platform-Integration angeben. Dies wird nicht empfohlen“:
+
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform-Integrationslink stimmt nicht überein.":::
+
+Wenn dieser Fehler auftritt, gibt es je nach Bedarf zwei Möglichkeiten:
+
++ Sie können [Umgebungen für duales Schreiben trennen und erneut verknüpfen (Verknüpfung zurücksetzen oder ändern)](relink-environments.md#scenario-reset-or-change-linking), wie auf der Detailseite Ihrer LCS-Umgebung angegeben. Dies ist die ideale Option, da Sie sie ohne den Microsoft-Support ausführen können.  
++ Wenn Sie Ihren Link im dualen Schreiben beibehalten möchten, können Sie den Microsoft-Support um Hilfe bitten, um die Power Platform-Integration zu ändern und Ihre bestehende Dataverse-Umgebung zu nutzen, wie im vorherigen Abschnitt dokumentiert.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

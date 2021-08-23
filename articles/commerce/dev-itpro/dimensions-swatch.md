@@ -2,7 +2,7 @@
 title: Konfigurieren Sie Produktdimensionswerte so, dass sie als Farbfelder angezeigt werden
 description: In diesem Thema wird beschrieben, wie Sie Produktdimensionswerte als Farbfelder in der Microsoft Dynamics 365 Commerce Zentralverwaltung konfigurieren.
 author: anupamar-ms
-ms.date: 05/28/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 4ffbb6a162e87fd19cdb44224adc8c223ba8e903
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638293"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764613"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Konfigurieren Sie Produktdimensionswerte so, dass sie als Farbfelder angezeigt werden
 
@@ -46,7 +46,7 @@ Die folgende Abbildung zeigt ein Beispiel, in dem Farben auf einer Commerce Such
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Aktivieren Sie die Anzeigeabmessungen als Farbfelder in der Commerce-Zentralverwaltung
 
-Um die Anzeigeabmessungen als Farbfelder in der Commerce-Zentralverwaltung zu aktivieren, gehen Sie zu **Arbeitsbereiche \> Funktionsverwaltung** und aktivieren Sie die Funktion **Aktivieren Sie die Bildunterstützung für Produktdimensionswerte**. Wenn dieses Funktionsflag aktiviert ist, werden drei neue Felder für jede Dimension in den entsprechenden Tabellen in der Commerce-Zentraverwaltung hinzugefügt: **Hexcode**, **URL** (für Bilder) und **RefinerGroup**.
+Um die Anzeigeabmessungen als Muster in der Commerce-Zentralverwaltung zu aktivieren, gehen Sie zu **Arbeitsbereiche \> Funktionsverwaltung** und aktivieren Sie die Funktion **Mechanismus zur Darstellung von Dimensionen als Muster aktivieren**. Wenn dieses Funktionsflag aktiviert ist, werden drei neue Felder für jede Dimension in den entsprechenden Tabellen in der Commerce-Zentraverwaltung hinzugefügt: **Hexcode**, **URL** (für Bilder) und **RefinerGroup**.
 
 ## <a name="configure-dimension-values-in-commerce-headquarters"></a>Konfigurieren Sie Dimensionswerte in der Commerce-Zentralverwaltung
 
@@ -125,9 +125,22 @@ Bevor Farbfelder auf E-Commerce-Webseiten angezeigt werden können, für die ein
 
 Außerdem sollten Sie die Eigenschaft **Produktattribute in Suchergebnisse aufnehmen** für Suchergebnismodule aktivieren. Wenn Ihre Website angepasste Kategorieseiten verwendet, sollten Sie die auf diesen Seiten verwendeten Suchergebnismodule aktualisieren, damit die Eigenschaft **Produktattribute in Suchergebnisse aufnehmen** aktiviert ist. Weitere Informationen finden Sie unter [Modul Suchergebnisse](../search-result-module.md).
 
+## <a name="inventory-awareness-on-swatches"></a>Bestandsinformationen auf Mustern
+
+Muster haben eine optionale Funktion, um die Bestandsverfügbarkeit einer Produktvariantenfarbe oder -dimension anzuzeigen. Zum Beispiel: Ein Produkt wird in mehreren Größen verkauft, einige Größen sind jedoch nicht auf Lager. In diesem Fall werden die Muster für die vergriffenen Produkte anders dargestellt, um anzuzeigen, dass sie nicht verfügbar sind. Diese Funktion trägt dazu bei, die Anzahl der Kundenklicks zu reduzieren, die erforderlich sind, um die Produktverfügbarkeit zu bestimmen.
+
+Die Funktion zur Musterbestandsverfügbarkeit kann für die Verwendung sowohl auf PDPs als auch auf Such- oder Kategorielistenseiten konfiguriert werden, auf denen Muster angezeigt werden. Um es zu aktivieren, müssen Sie die Eigenschaft **Medien bei Dimensionsauswahl aktualisieren** auf **Wahr** im [Mediengaleriemodul](../media-gallery-module.md) setzen. Diese Einstellung ermöglicht die Aktualisierung von Mediengaleriebildern, wenn Dimensionen ausgewählt werden. 
+
+> [!IMPORTANT]
+> Die Funktion zur Musterbestandsverfügbarkeit ist ab der Commerce-Version 10.0.21 verfügbar. Es erfordert, dass das Commerce-Modulbibliothekspaket in der Version 9.31 installiert ist.
+
+Die folgende Abbildung zeigt ein Beispiel für die Bestandsinformationen auf den Größenmustern einer PDP.
+
+![Beispiel für Bestandsinformationen auf den Größenmustern eines PDP](../dev-itpro/media/swatch_inventory.png)
+
 ## <a name="display-swatches-in-pos-and-other-channels"></a>Zeigen Sie Farbfelder am POS und in anderen Kanälen an
 
-Commerce verfügt derzeit nicht über eine sofort einsatzbereite Implementierung, die die Anzeige von Farbfeldern in POS (Point of Sale) und anderen Kanälen unterstützt. Sie können jedoch die Farbfeld-Anzeigefunktion als Erweiterung implementieren, mit der Kanal-APIs die Hexadezimalcodes und Bild-URLs zurückgeben, zum Rendern von Farbfeldern erforderlich sind.
+Commerce verfügt derzeit nicht über eine sofort einsatzbereite Implementierung, die die Anzeige von Mustern in Verkaufszellen (POS) und anderen Kanälen unterstützt. Sie können jedoch die Musteranzeigefunktion als Erweiterung implementieren, da Kanal-APIs die Hexadezimalcodes und Bild-URLs zurückgeben, zum Rendern von Mustern erforderlich sind.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
