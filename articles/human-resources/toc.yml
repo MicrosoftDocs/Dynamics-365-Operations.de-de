@@ -3,8 +3,10 @@
   items:
     - name: Neuerungen
       items:
-        - name: Neuerungen oder Änderungen in Human Resources
+        - name: Welche Neuerungen oder Änderungen bietet Human Resources?
           href: hr-admin-whats-new.md
+        - name: "09.\_August\_2021"
+          href: hr-whats-new-2021-08-09.md
         - name: "26.\_Juli\_2021"
           href: hr-whats-new-2021-07-26.md
         - name: "12.\_Juli\_2021"
@@ -127,7 +129,7 @@
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Entitätsdaten in Excel aktualisieren
                   href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: Möglichkeit „In Excel öffnen“ schaffen
+                - name: FAQ zu „In Excel öffnen“
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Problembehandlung bei der Office-Integration
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json

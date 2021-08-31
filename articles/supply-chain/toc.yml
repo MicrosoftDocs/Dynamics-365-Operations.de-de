@@ -222,6 +222,26 @@
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
                     - name: "Regulatory Configuration Service\_– Einstellung des Speichers von Lifecycle Services"
                       href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-Konfigurationen in Supply Chain Management herunterladen
+                      items:
+                        - name: Konfigurationen von RCS herunterladen
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurationen aus RCS importieren
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Globales Repository (GR)
+                      items:
+                        - name: Konfigurationen aus dem GR importieren
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Aktualisierte Versionen von ER-Konfigurationen importieren
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Verbesserte Filterung für die Konfigurationssuche im GR
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurationen zum GR hochladen
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+                        - name: Konfigurationen im GR freigeben
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurationen im globalen RCS-Repository einstellen
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elektronische Rechnungsstellung
                   items:
                     - name: Übersicht über die elektronische Rechnungsstellung
@@ -1237,30 +1257,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurationen importieren (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: Globalisierungsfunktionen in RCS
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: ER-Konfigurationen in Supply Chain Management herunterladen
-                      items:
-                        - name: Konfigurationen von RCS herunterladen
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Konfigurationen aus RCS importieren
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Globales Repository (GR)
-                      items:
-                        - name: Konfigurationen aus dem GR importieren
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Aktualisierte Versionen von ER-Konfigurationen importieren
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Verbesserte Filterung für die Konfigurationssuche im GR
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Konfigurationen zum GR hochladen
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
-                        - name: Konfigurationen im GR freigeben
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Konfigurationen im globalen RCS-Repository einstellen
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
             - name: Schnellstartanleitungen
               items:
                 - name: ER-Format zur Erstellung eines benutzerdefinierten elektronischen Dokuments anpassen
@@ -1574,8 +1570,20 @@
             - name: Lagerbuchungen archivieren
               href: inventory/archive-inventory-transactions.md
             - name: Add-In Bestandstransparenz
-              href: inventory/inventory-visibility.md
-        - name: IoT-Intelligenz
+              items:
+                - name: Übersicht über Add-In Bestandstransparenz
+                  href: inventory/inventory-visibility.md
+                - name: Bestandstransparenz einrichten
+                  href: inventory/inventory-visibility-setup.md
+                - name: Bestandstransparenz konfigurieren
+                  href: inventory/inventory-visibility-configuration.md
+                - name: Bestandstransparenzreservierungen
+                  href: inventory/inventory-visibility-reservations.md
+                - name: Die Inventartransparenz-Power App
+                  href: inventory/inventory-visibility-power-platform.md
+                - name: Öffentliche Inventartransparenz-APIs
+                  href: inventory/inventory-visibility-api.md
+        - name: "IoT\_Intelligenz"
           items:
             - name: IoT-Intelligenz – Startseite
               href: iot/iot-intelligence-home-page.md
@@ -1607,6 +1615,8 @@
                   href: master-planning/planning-optimization/release-process.md
                 - name: Passanalyse zur Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Unterschiede zwischen integrierter Masterplanung und Planungsoptimierung
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: In der Planungsoptimierung nicht verwendete Parameter
                   href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Filter auf einen Plan anwenden
@@ -1795,9 +1805,9 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Öffnen von Entitätsdaten in Excel und Aktualisieren mithilfe des Excel-Add-Ins
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Möglichkeit „In Excel öffnen“ schaffen
+            - name: FAQ zu „In Excel öffnen“
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Vorlagen zum Menü „Positionen in Excel öffnen” hinzufügen
+            - name: Vorlagen zum Menü „Positionen in Excel öffnen“ hinzufügen
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
             - name: Menü „In Microsoft Office öffnen“ anpassen
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -1971,12 +1981,10 @@
                   href: procurement/purchase-requisitions-workflow.md
             - name: Angebotsanforderungen
               items:
-                - name: Überblick über Angebotsanforderungen
+                - name: Angebotsanforderungen – Übersicht
                   href: procurement/request-quotations.md
                 - name: Eine Angebotsanforderung erstellen
                   href: procurement/tasks/create-request-quotation.md
-                - name: Versiegeltes Angebot bei Angebotsanforderungen
-                  href: procurement/sealed-bidding.md
                 - name: 'Eine Anforderung erstellen, die eine Angebotsanforderung verwendet'
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Eine Bewertungsmethode für Angebotsanforderungen erstellen
@@ -3301,6 +3309,8 @@
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: Lagerort-App installieren und verbinden
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: Strichcodeunterstützung für Mobilgeräte
+                      href: warehousing/mobile-barcode-support.md
                     - name: Barcodes mit einer Kamera in die mobile Warehouse Management-App scannen
                       href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Problembehandlung bei Verbindungsproblemen der mobilen Warehouse Management-App
@@ -3311,6 +3321,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Mobile Geräte für Lagerarbeiten einrichten
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Schritttitel und Anweisungen für die mobile Warehouse Management-App anpassen
+                      href: warehousing/mobile-app-titles-instructions.md
                     - name: Kennzeicheneingang über die mobile Warehouse Management-App
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Auf einem mobilen Gerät eine Menüoption zur Fertigstellung von Arbeiten in einer Bestellung einrichten
@@ -3331,7 +3343,7 @@
                   href: warehousing/mobile-device-user-settings.md
                 - name: Verarbeitung von Ereignissen der Lagerort-App
                   href: warehousing/warehouse-app-events.md
-                - name: Die Lagerort-App anpassen
+                - name: Mobile Lagerortprozesse erweitern
                   items:
                     - name: Framework zur Prozessanleitung
                       href: warehousing/process-guide-framework.md
@@ -3403,8 +3415,8 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Dokumentweiterleitungs-Layout für Kennzeichenbeschriftungen
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Strichcodeunterstützung für Mobilgeräte
-                      href: warehousing/mobile-barcode-support.md
+                    - name: GS1-Barcodes und QR-Codes
+                      href: warehousing/gs1-barcodes.md
                     - name: Lagerort für Umlagerungsaufträge einrichten
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Problembehandlung bei der Lagerortkonfiguration
