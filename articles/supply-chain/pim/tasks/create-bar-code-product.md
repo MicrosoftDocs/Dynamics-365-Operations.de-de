@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ff86677aa8fe24c72936df86dfc11559afd47ccb07dbd2de66c127c54d2cc566
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aad6d7ba412d3e822303d380e466608cbe7d9546
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742679"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344915"
 ---
 # <a name="create-a-bar-code-for-a-product"></a>Strichcode für ein Produkt erstellen
 
@@ -32,7 +32,7 @@ In diesem Thema wird beschrieben, wie Sie manuell einen Strichcode mithilfe der 
 1. Wählen Sie **Strichcodes** aus.
 1. Wählen Sie **Neu** aus.
 1. Markieren Sie die ausgewählte Zeile, die unten in der Liste erstellt wird.
-1. Geben Sie im Feld **Strichcodeeinstellung** einen Wert ein, oder wählen Sie einen Wert aus.
+1. Geben Sie im Feld **Barcode-Einrichtung** einen Wert ein oder wählen Sie ihn aus.
 1. Geben Sie im Feld **Strichcode** einen Wert ein, oder wählen Sie einen Wert aus.
 1. Geben Sie im Feld **Strichcode** einen Wert ein.  
 1. Geben Sie im Feld **Menge** eine Zahl ein.

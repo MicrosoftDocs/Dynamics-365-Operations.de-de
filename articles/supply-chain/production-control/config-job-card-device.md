@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 9da14c22b0ab62a8384fbe76918cc19da0205cdbbf2f4fd2ef8e7aec57b264ee
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bead8a80110df174c094d0729fbde3d96b230cbf
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781013"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343996"
 ---
 # <a name="configure-job-card-for-devices"></a>Einzelvorgangsliste für Geräte konfigurieren
 
@@ -65,7 +65,7 @@ Mit dem Inforegister **Allgemein** können Sie die verschiedenen Optionen konfig
 
 - **Menge beim Ausstempeln melden** – Stellen Sie dies auf **Ja** ein, um die Mitarbeiter aufzufordern, beim Ausstempeln Feedback zu laufenden Vorgängen zu melden. Wird **Nein** eingestellt, werden Arbeiter nicht dazu aufgefordert.
 - **Mitarbeiter sperren** – Wenn diese Option auf **Nein** eingestellt ist, wird jeder Mitarbeiter sofort nach der Registrierung abgemeldet (z. B. ein neuer Auftrag), und das Gerät kehrt zur Anmeldeseite zurück. Wenn diese Option auf **Ja** eingestellt ist, bleibt jeder Mitarbeiter am Einzelvorgangsgerät angemeldet. Der Mitarbeiter kann sich jedoch weiterhin manuell abmelden, damit sich ein anderer Mitarbeiter anmelden kann, während das Einzelvorgangsgerät weiterhin unter demselben Systembenutzerkonto ausgeführt wird. Weitere Informationen zu diesen Arten von Konten finden Sie unter [Zugewiesene Benutzer](#assigned-users).
-- **Barcodelesegerät** – Stellen Sie dies auf **Ja** ein, um dem Einzelvorgangsgerät eine Option bereitzustellen, mit der Mitarbeiter den Start eines neuen Vorgangs durch Scannen eines Barcodes registrieren können.
+- **Barcode-Scanner** - Legen Sie dies auf **Ja** fest, um eine Option auf dem Jobkartengerät bereitzustellen, die es den Arbeitskräften erlaubt, den Beginn eines neuen Auftrags durch Scannen eines Barcodes zu registrieren.
 - **Verwenden Sie den tatsächlichen Zeitpunkt der Registrierung** – Stellen Sie dies auf **Ja** ein, um die Zeit für jede neue Registrierung so festzulegen, dass sie genau der Zeit entspricht, zu der die Registrierung von einem Arbeitnehmer eingereicht wurde. Auf **Nein** einstellen, um stattdessen die Anmeldezeit zu verwenden. Normalerweise möchten Sie diese auf **Ja** einstellen, wenn Sie die Optionen **Mitarbeiter sperren** und/oder **Einzelner Arbeiter** aktiviert haben, bei denen Mitarbeiter häufig länger angemeldet bleiben.
 - **Einzelne Arbeitskraft** – Setzen Sie diese Option auf **Ja**, wenn nur ein Mitarbeiter jedes Einzelvorgangsgerät verwendet, auf dem diese Konfiguration aktiv ist. Wenn diese Option ausgewählt ist, wird die Option **Mitarbeiter sperren** automatisch auf **Ja** festgelegt. Darüber hinaus entfällt mit dieser Option die Anforderung (und Fähigkeit), dass sich der Mitarbeiter mit einer Ausweis-ID (oder ähnlichem) anmelden muss. Stattdessen meldet sich der Mitarbeiter bei Supply Chain Management mit einem Systembenutzerkonto an, das mit einer *Zeit registrierten Arbeitskraft* (von der *Arbeitskräfte* Tabelle) verknüpft ist und gleichzeitig als diese Arbeitskraft am Einzelvorgangsgerät angemeldet wird.  Weitere Informationen zu diesen Arten von Konten finden Sie unter [Zugewiesene Benutzer](#assigned-users).
 - **Ermöglichen Sie den Mitarbeitern, persönliche Filter festzulegen** – Setzen Sie diese Option auf **Ja** damit Mitarbeiter die Vorgänge filtern können, die ihnen auf dem Gerät angezeigt werden. Die Arbeitskraft kann Werte für eines der drei Filterkriterien ändern: **Produktionseinheit**, **Ressourcengruppe** und **Ressource**. Auf dem Gerät werden nur Vorgänge angezeigt, die für Ressourcen geplant sind, die den ausgewählten Filterkriterien entsprechen. Sie können auch Standardwerte für eines oder alle dieser Kriterien zuweisen. Diese gelten auch dann, wenn diese Option nicht ausgewählt ist.

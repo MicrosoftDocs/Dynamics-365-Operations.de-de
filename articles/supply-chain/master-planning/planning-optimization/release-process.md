@@ -2,7 +2,7 @@
 title: Releaseprozess und Releaseverlauf der Planungsoptimierung
 description: Dieses Thema enthält Informationen zum Releaseprozess und zum Releaseverlauf für Planungsoptimierung.
 author: crytt
-ms.date: 7/28/2021
+ms.date: 8/17/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 64c8cd3ed6ff522a9ef90831ae502c5d50fbc05816aaa764d2a8e122934fc2bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcd18341629afcf3092a457ae711e27b0bbfeb2a
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722390"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394413"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Releaseprozess und Releaseverlauf der Planungsoptimierung
 
@@ -33,7 +33,8 @@ Da keine Benachrichtigungen angezeigt werden, wenn die Planungsoptimierung in Ih
 
 | Änderungen | Funktionsverwaltungsdetails | Freigabedatum |
 |---|---|---|
-| <p>Ressourcentypanforderungen für die Zeitplanung mit unbegrenzter Kapazität</p><p>Ressourceneffizienz und Kalendereffizienz für die Zeitplanung mit unbegrenzter Kapazität</p><p>Weitere Informationen finden Sie unter [Zeitplanung mit unbegrenzter Kapazität](infinite-capacity-planning.md). | <p>Verfügbar in der Funktionsverwaltung ab Version 10.0.20.</p><p>Funktionsname: *Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung*</p> | 6. Juli 2021 |
-| Allgemeine Qualitätsverbesserungen | Es ist keine Funktionsverwaltung erforderlich. | 6. Juli 2021 |
+| <p>Das Feld **Vorlaufzeit** wurde zu geplanten Aufträgen hinzugefügt.</p><p>Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen.</p> | Es ist keine Funktionsverwaltung erforderlich. | 16. August 2021 |
+| <p>Anforderungen an den Ressourcentyp für die Terminierung mit unendlicher Kapazität hinzugefügt.</p><p>Verbesserte Ressourceneffizienz und Kalendereffizienz für unendliche Kapazitätsterminierung.</p><p>Weitere Informationen finden Sie unter [Zeitplanung mit unbegrenzter Kapazität](infinite-capacity-planning.md). | <p>Verfügbar in der Funktionsverwaltung ab Version 10.0.20.</p><p>Funktionsname: *Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung*</p> | 6. Juli 2021 |
+| Allgemeine Qualitätsverbesserungen. | Es ist keine Funktionsverwaltung erforderlich. | 6. Juli 2021 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

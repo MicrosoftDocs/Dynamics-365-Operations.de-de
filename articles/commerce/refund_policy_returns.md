@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 5c32156aea5f43d41b51f34b45b5b6dfedb5cad0f948924ecea9b3d89e6bb402
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
+ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763691"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7388932"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Retouren- und Rückerstattungsrichtlinie für einen Kanal erstellen und aktualisieren
 
@@ -42,15 +42,6 @@ Führen Sie die folgenden Schritte aus, um die Rückgaberichtlinienfunktionalit�
 1. Suchen Sie in der Liste der Funktionsnamen nach der Funktion **Aktivieren der Kanal-Rücklieferungsrichtlinien**.
 1. Wählen Sie **Jetzt aktivieren**.
 1. Führen Sie auf der Seite **Verteilungsplan** den Vorgang **1110** (globale Konfiguration) zum Verteilen der Funktionsänderung aus.
-
-## <a name="initialize-the-commerce-scheduler"></a>Commerce-Planer initialisieren
-
-Nach dem Aktivieren der **Richtlinien zur Kanalrückgabe aktivieren** müssen Sie den Commerce-Planer initialisieren, um sicherzustellen, dass neue Änderungen der Funktionsdatenbank über Commerce Data Exchange (CDX)-Synchronisierung hinzugefügt werden. 
-
-Um den Commerce-Planer in der Commerce-Zentralverwaltung zu initialisieren, folgen Sie diesen Schritten.
-
-- Gehen Sie zu **Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Commerce-Planer \> Commerce-Planer initialisieren**. Suchen Sie alternativ nach „Commerce-Planer initialisieren“.
-- Stellen Sie im Dialogfeld **Commerce-Planer initialisieren** sicher, dass die Option **Vorhandene Konfiguration löschen** auf **Nein** gesetzt ist, und wählen Sie dann **OK** aus.
 
 ## <a name="configure-return-policy"></a>Konfigurieren der Rücklieferungsrichtlinie
 

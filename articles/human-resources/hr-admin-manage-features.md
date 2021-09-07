@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Funktionen in der Personalverwaltung
-description: Erfahren Sie, wie Sie neue Funktionen in Dynamics 365 Human Resources aktivieren oder deaktivieren.
-author: andreabichsel
-ms.date: 04/06/2020
+description: In diesem Thema werden die Funktionsverwaltungsfunktion und deren Verwendung beschrieben.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a9c459b2b34164a9be3ed609a99deb4c5b710d340ef560e6f991e760375d6146
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 61e40f7177a1c8cf3d60a9a991ecbb0ed4d93aa1
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738366"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414632"
 ---
 # <a name="manage-features-in-human-resources"></a>Verwalten von Funktionen in der Personalverwaltung
 
@@ -69,7 +69,7 @@ Vorteilsverwaltung ersetzt die Funktionalität im Arbeitsbereich **Vorteile**. W
 - **Vorteilsberechtigungsrichtlinien**
 - **Berechtigungsereignisse**
 
-Sie können die Informationen in diesen Formularen im schreibgeschützten Modus anzeigen. Wenn Sie die Informationen bearbeiten möchten, müssen Sie zuerst die Vorschaufunktion für die Vorteilsverwaltung deaktivieren (gilt nur für **Sandkasten** Umgebungen).
+Sie können die Informationen auf diesen Seiten im schreibgeschützten Modus anzeigen. Wenn Sie die Informationen bearbeiten möchten, müssen Sie zuerst die Vorschaufunktion für die Vorteilsverwaltung deaktivieren (gilt nur für **Sandkasten** Umgebungen).
 
 ## <a name="enable-or-disable-leave-and-absence"></a>Urlaub und Abwesenheit aktivieren oder deaktivieren
 

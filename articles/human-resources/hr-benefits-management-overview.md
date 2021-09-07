@@ -1,8 +1,8 @@
 ---
-title: Vorteilsverwaltung – Übersicht
-description: Übersicht über die Vorschaufunktion für die Vorteilsverwaltung in Dynamics 365 Human Resources. Bieten Sie Ihren Mitarbeitern erweiterte Vorteilsoptionen mit einer benutzerfreundlichen Online-Erfahrung.
-author: andreabichsel
-ms.date: 07/13/2021
+title: Vorteilsverwaltung – Übersicht
+description: Dieses Thema bietet einen Überblick über die Funktion "Benefits management" in Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1e00bb3fa227eab62b6e530a32f0eae0bd871c1cfe5bb3d29e09a06a707ce17
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719142"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417391"
 ---
-# <a name="benefits-management-overview"></a>Vorteilsverwaltung – Übersicht
+# <a name="benefits-management-overview"></a>Vorteilsverwaltung – Übersicht
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Um wettbewerbsfähig zu bleiben, müssen Sie zahlreiche Vorteile bieten, um die besten Mitarbeiter anzuwerben und zu halten. Zusätzlich zu den Standardleistungen wie Kranken‑ und Zahnzusatzversicherung möchten Sie möglicherweise auch erweiterte Dienstleistungen wie Adoptionsunterstützung, Freizeitprogramme und Aufwandsentschädigungen anbieten. Die Leistungsverwaltung in Microsoft Dynamics 365 Human Resources bietet Ihnen eine flexible Lösung, die eine Vielzahl von Vorteilsoptionen unterstützt. Human Resources umfasst auch eine benutzerfreundliche Mitarbeitererfahrung, die Ihre Angebote vorstellt.
+Um wettbewerbsfähig zu bleiben, müssen Sie zahlreiche Vorteile bieten, um die besten Mitarbeiter anzuwerben und zu halten. Zusätzlich zu den Standardleistungen wie Kranken‑ und Zahnzusatzversicherung möchten Sie möglicherweise auch erweiterte Dienstleistungen wie Adoptionsunterstützung, Freizeitprogramme und Aufwandsentschädigungen anbieten. Das Leistungsmanagement in Microsoft Dynamics 365 Human Resources bietet eine flexible Lösung, die eine Vielzahl von Leistungsoptionen unterstützt. Human Resources umfasst auch eine benutzerfreundliche Mitarbeitererfahrung, die Ihre Angebote vorstellt.
 
 - Mit erweiterten Vorteilsplänen können Sie einzigartige Vorteilspläne erstellen und verwalten sowie komplexe Vorteilssatztabellen und verschachtelte Stufen unterstützen. Sie können auf einfache Weise Vorteilsprogramme, Bündel und Regeln für die automatische Registrierung erstellen, um die Mitarbeitererfahrung zu vereinfachen.
 - Mit Flexguthabenprogrammen können Sie die Altersvorsorge und andere Lebensereignisse anteilig unterstützen.
@@ -37,13 +37,13 @@ Um wettbewerbsfähig zu bleiben, müssen Sie zahlreiche Vorteile bieten, um die 
 Wenn Sie auf die Demodaten zugreifen möchten, müssen Sie Ihre Sandkastenumgebung erneut bereitstellen.
 
 > [!NOTE]
-> Sie können jetzt Formulare für die Verwaltung von Leistungen anpassen. Sie können dem Formular **Deckungsoption** für Leistungspläne jetzt angepasste Felder in Bezug auf die Sätze hinzufügen. Weitere Informationen zum Arbeiten mit angepassten Feldern finden Sie unter [Benutzerdefinierte Felder](hr-developer-custom-fields.md).
+> Sie können jetzt die Seiten der Leistungsverwaltung anpassen. Angepasste Felder, die sich auf die Sätze der Deckung beziehen, können auf der Seite **Deckungsoption** für Leistungspläne hinzugefügt werden. Weitere Informationen zum Arbeiten mit angepassten Feldern finden Sie unter [Benutzerdefinierte Felder](hr-developer-custom-fields.md).
 >
 > ![Angepasste Felder für die Verwaltung von Leistungen ](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Vorteilsverwaltung aktivieren
 
-Dieses Thema beschreibt, wie Sie die Vorschaufunktionen in Human Resources aktivieren. Er zeigt auch, welche vorhandenen Funktionen in Human Resources die Vorteilsverwaltung ersetzt oder welche deaktiviert werden, sobald Sie die Vorteilsverwaltung aktivieren.
+Dieses Thema beschreibt, wie Sie die Vorschaufunktionen in Human Resources aktivieren. Außerdem wird erklärt, welche bestehenden Funktionen in Human Resources durch die Leistungsverwaltung ersetzt werden und welche Funktionen deaktiviert werden, nachdem Sie die Leistungsverwaltung eingeschaltet haben.
 
 > [!IMPORTANT]
 > Nachdem Sie die Leistungsverwaltung in einer **Produktions** Umgebung aktiviert haben, können Sie diese nicht mehr deaktivieren. Wir empfehlen, das Leistungsmanagement in einer **Sandkasten** Umgebung zu aktivieren und zu testen, bevor Sie es in einer aktivieren **Produktion** Umgebung aktivieren. Es gibt erhebliche Unterschiede zwischen der alten Leistungs-Funktionalität und der neuen Leistungsverwaltungs-Funktionalität, die zusätzliche Einstellungen erfordern und vor der Inbetriebnahme getestet werden sollten.

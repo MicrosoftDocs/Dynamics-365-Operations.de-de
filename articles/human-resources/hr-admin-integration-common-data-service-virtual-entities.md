@@ -1,8 +1,8 @@
 ---
 title: Virtuelle Dataverse-Tabellen konfigurieren
-description: In diesem Thema wird gezeigt, wie virtuelle Tabellen für Dynamics 365 Human Resources konfiguriert werden. Generieren und aktualisieren Sie vorhandene virtuelle Tabellen und analysieren Sie generierte und verfügbare Tabellen.
-author: andreabichsel
-ms.date: 01/25/2021
+description: Dieses Thema zeigt, wie Sie virtuelle Tabellen konfigurieren, generieren, aktualisieren und generierte und verfügbare Tabellen für Dynamics 365 Human Resources analysieren.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4461b072c12848220c48d3a711cc2d4991c98f068e1ba477becf6d0be068fca8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721606"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414663"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Virtuelle Dataverse-Tabellen konfigurieren
 
@@ -140,6 +140,9 @@ Der nächste Schritt besteht darin, die Datenquelle der virtuellen Tabelle in de
 
      >[!NOTE]
      >Vergessen Sie das „**/**“-Zeichen am Ende der URL nicht, um einen Fehler zu vermeiden.
+
+     >[!NOTE]
+     >Die Ziel-URL bestimmt die Human Resources Umgebung, auf die virtuelle Tabellen für Daten verweisen werden. Wenn Sie eine Sandbox-Umgebung erstellen, indem Sie eine Kopie Ihrer Produktionsumgebung erstellen, aktualisieren Sie diesen Wert auf die Namespace-URL Ihrer neuen Sandbox-Umgebung. Dadurch wird sichergestellt, dass die virtuellen Tabellen mit den Daten der Sandbox-Umgebung verbunden sind und nicht weiterhin auf die Produktionsumgebung zeigen.
 
    - **Mandanten-ID**: Die Azure Active Directory (Azure AD)-Mandanten-ID.
 

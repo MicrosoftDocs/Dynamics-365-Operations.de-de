@@ -4,24 +4,17 @@ description: Dieses Thema enthält Informationen zur Fehlerbehebung, mit denen S
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0fe319f4c8edd54700b2b32ef80539a8d0ff793aa815cef3813af4c63fd1b0d3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 985825d3a205f566a94ac7532e45895e7060edf5
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736373"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416980"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Probleme bei der anfänglichen Synchronisierung behandeln
 
@@ -46,7 +39,7 @@ Nachdem Sie die Zuordnungsvorlagen aktiviert haben, sollte der Status der Zuordn
 
 Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie versuchen, das Mapping und die anfängliche Synchronisierung auszuführen:
 
-*(\[Unzulässige Anforderung\], der Remote-Server hat einen Fehler zurückgegeben: (400) Unzulässige Anforderung), AX beim Export ist ein Fehler aufgetreten*
+*(\[Bad Request \], Der Remote-Server hat einen Fehler zurückgegeben: (400) Bad Request.), AX Export ist auf einen Fehler gestoßen.*
 
 Hier ist ein Beispiel für die vollständige Fehlernachricht.
 
@@ -198,7 +191,7 @@ Wenn Sie Zeilen mit Werten in der Debitorentabelle in den Spalten **ContactPerso
 
         ![Datenintegrationsprojekt zum Aktualisieren von CustomerAccount und ContactPersonId.](media/cust_selfref6.png)
 
-    2. Fügen Sie die Firmenkriterien im Filter auf der Seite von Dataverse ein, da nur die Zeilen, die den Filterkriterien entsprechen, in der Finance and Operations-App aktualisiert werden. Wählen Sie zum Hinzufügen die Schaltfläche Filter. In dem Dialog **Abfrage bearbeiten** können Sie eine Filterabfrage hinzufügen wie **\_msdyn\__company\_value eq\<guid\>**. 
+    2. Fügen Sie die Firmenkriterien im Filter auf der Seite von Dataverse ein, da nur die Zeilen, die den Filterkriterien entsprechen, in der Finance and Operations-App aktualisiert werden. Wählen Sie zum Hinzufügen die Schaltfläche Filter. In dem Dialog **Abfrage bearbeiten** können Sie eine Filterabfrage hinzufügen wie **\_msdyn\__company\_value eq\<guid\>**.
 
         > [HINWEIS] Wenn die Schaltfläche Filter nicht vorhanden ist, erstellen Sie ein Support-Ticket, um das Datenintegrationsteam zu bitten, die Filterfunktion für Ihren Mandanten zu aktivieren.
 
@@ -210,5 +203,36 @@ Wenn Sie Zeilen mit Werten in der Debitorentabelle in den Spalten **ContactPerso
 
 8. Aktivieren Sie die Änderungsnachverfolgung in Finance and Operations für die Tabelle **Debitoren V3**.
 
+## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Anfängliche Sync-Fehler bei Zuordnungen mit mehr als 10 Nachschlagefeldern
+
+Sie erhalten möglicherweise die folgende Fehlermeldung, wenn Sie versuchen, eine anfängliche Synchronisierung für **Kunden V3 - Konten**, **Verkaufsaufträge**-Zuordnungen oder eine beliebige Zuordnung mit mehr als 10 Nachschlagefeldern auszuführen:
+
+*CRMExport: Paketausführung abgeschlossen. Fehlerbeschreibung 5 Versuche, Daten von https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc schlug fehl.*
+
+Aufgrund der Nachschlagefeld-Beschränkung der Abfrage schlägt die anfängliche Synchronisierung fehl, wenn die Zuordnung der Entitäten mehr als 10 Nachschlagefelder enthält. Weitere Informationen finden Sie unter [Abrufen von Datensätzen der Bezugstabelle mit einer Abfrage](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query).
+
+Um dieses Problem zu beheben, führen Sie die folgenden Schritte aus:
+
+1. Entfernen Sie optionale Nachschlagefelder aus der Dual-Write-Entitätszuordnung, so dass die Anzahl der Nachschlagefelder 10 oder weniger beträgt.
+2. Speichern Sie die Zuordnung und führen Sie die erste Synchronisierung durch.
+3. Wenn die initiale Synchronisierung für den ersten Schritt erfolgreich ist, fügen Sie die restlichen Nachschlagefelder hinzu und entfernen die Nachschlagefelder, die Sie im ersten Schritt synchronisiert haben. Stellen Sie sicher, dass die Anzahl der Nachschlagefelder 10 oder weniger beträgt. Speichern Sie die Zuordnung und führen Sie die erste Synchronisierung aus.
+4. Wiederholen Sie diese Schritte, bis alle Nachschlagefelder synchronisiert sind.
+5. Fügen Sie alle Nachschlagefelder wieder zur Zuordnung hinzu, speichern Sie die Zuordnung und führen Sie die Zuordnung mit **Anfangssynchronisation überspringen** aus.
+
+Durch diesen Vorgang wird die Zuordnung für den Live-Sync-Modus aktiviert.
+
+## <a name="known-issue-during-initial-sync-of-party-postal-addresses-and-party-electronic-addresses"></a>Bekanntes Problem bei der Erstsynchronisation von postalischen Adressen der Partei und elektronischen Adressen der Partei
+
+Wenn Sie versuchen, die initiale Synchronisation von Postadressen der Partei und elektronischen Adressen der Partei auszuführen, erhalten Sie möglicherweise die folgende Fehlermeldung:
+
+*Partei-Nummer konnte nicht in Dataverse gefunden werden.*
+
+Es gibt einen auf **DirPartyCDSEntity** festgelegten Bereich in Finance and Operations Apps, der Parteien vom Typ **Person** und **Organisation** filtert. Infolgedessen wird eine anfängliche Synchronisierung der Zuordnung **CDS-Parteien - msdyn_parties** keine Parteien anderer Typen zuordnen, einschließlich **Juristische Entität** und **Betriebseinheit**. Wenn die anfängliche Synchronisierung für **CDS Partei Postadressen (msdyn_partypostaladdresses)** oder **Partei Kontakte V3 (msdyn_partyelectronicaddresses)** ausgeführt wird, erhalten Sie möglicherweise den Fehler.
+
+Wir arbeiten an einer Korrektur, um den Parteitypenbereich auf der Entität Finance and Operations zu entfernen, so dass Parteien aller Typen erfolgreich auf Dataverse synchronisiert werden können.
+
+## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Gibt es Leistungsprobleme beim Ausführen der anfänglichen Synchronisierung für Kunden oder Kontakte?
+
+Wenn Sie die Erstsynchronisation für **Kunden**-Daten ausgeführt haben und die **Kunden**-Zuordnungen laufen haben und dann die Erstsynchronisation für **Kontakte**-Daten ausführen, kann es zu Leistungsproblemen beim Einfügen und Aktualisieren der **LogistikPostalAdresse**- und **LogistikElektronischeAdresse**-Tabellen für **Kontakte**-Adressen kommen. Die gleichen globalen Postadress- und elektronischen Adresstabellen werden für **CustomerV3Entity** und **VendVendorV2Entity** verfolgt und Dual-Write versucht, weitere Abfragen zu erstellen, um Daten auf die andere Seite zu schreiben. Wenn Sie die initiale Synchronisierung für **Debitor** bereits ausgeführt haben, dann stoppen Sie die entsprechende Zuordnung, während Sie die initiale Synchronisierung für **Kontakte**-Daten ausführen. Machen Sie das Gleiche für die **Kreditor**-Daten. Wenn die initiale Synchronisierung beendet ist, können Sie alle Zuordnungen ausführen, indem Sie die initiale Synchronisierung überspringen.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

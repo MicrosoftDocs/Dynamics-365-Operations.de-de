@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da812bcc7d31db25abc0ed7e6c1a7f9e5433f80bfdfc5421e4e18d6b8af68884
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1374a451c65b4bafdc6efeb10949d1f6eceb4758
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738914"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343917"
 ---
 # <a name="lean-manufacturing-overview"></a>Übersicht über Lean Manufacturing
 
@@ -66,7 +66,7 @@ Lean Manufacturing stellt Transparenz für den aktuellen Status der Produktions-
 In der folgenden Liste werden die speziellen Kanban-Übersichten beschrieben:
 -   Kanban-Einzelvorgangs-Planung – Bietet eine Übersicht der Kanban-Einzelvorgänge. In der Übersicht werden Kanban-Einzelvorgänge und deren Status für eine oder mehrere Arbeitsgruppen angezeigt. Die Einzelvorgänge sind nach Planungsperioden (Tage oder Wochen) aufgelistet, die im Produktionsflussmodell definiert sind. Die Übersicht zeigt außerdem den Kapazitätsverbrauch für jede Planungsperiode an, sodass Sie die geplante Auslastung überwachen können. Sie können den Status von Kanban-Einzelvorgängen ändern, Kanban-Einzelvorgänge für verschiedene Planungsperioden neu planen und andere Aufgaben ausführen.
 -   Kanban-Übersicht für Umlagerungseinzelvorgänge – Diese Übersicht stellt einen Überblick über die aktuellen Umlagerungseinzelvorgänge bereit. Sie können Entnahmelisten aktualisieren und erfassen, Umlagerungseinzelvorgänge starten und abschließen und andere Aufgaben ausführen.
--   Kanban-Übersicht für Bearbeitungs-Einzelvorgänge – Diese Übersicht wurde entworfen, um den normalen Produktionsfluss zu unterstützen und einen Überblick über den aktuellen Status in einer oder mehreren Arbeitsgruppen zu geben. Mit dieser Übersicht können Kanbans priorisiert, entnommen oder produziert werden. Die Übersicht wurde auch entworfen, um Scannen von Strichcodes für die Berichterstellung von Kanbans zu unterstützen.
+-   Kanban-Übersicht für Bearbeitungs-Einzelvorgänge – Diese Übersicht wurde entworfen, um den normalen Produktionsfluss zu unterstützen und einen Überblick über den aktuellen Status in einer oder mehreren Arbeitsgruppen zu geben. Mit dieser Übersicht können Kanbans priorisiert, entnommen oder produziert werden. Die Karte ist außerdem so konzipiert, dass sie Barcode-Scans für die Meldung von Kanbans unterstützt.
 
 ## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-Einzelvorgänge und Integration in Supply Chain Management-Prozesse
 Kanban-Einzelvorgänge sind vollständig in aktuelle Prozesse für Lagerbuchungen in Supply Chain Management integriert.

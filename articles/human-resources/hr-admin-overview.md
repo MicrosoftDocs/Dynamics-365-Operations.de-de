@@ -1,8 +1,8 @@
 ---
-title: Verwaltungsüberblick
-description: Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung und Problembehandlung von Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Überblick über die Verwaltung
+description: Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen, um Dynamics 365 Human Resources festzulegen, zu verwalten und Probleme zu beheben.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,27 +12,27 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b2cefd0281abfc94df05a1ae929e0b65bc533b292a6c4779a4fbc7ba1134a0e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4ceba9f071f73813eb9e79c5d8e2a00779c915
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765613"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393570"
 ---
-# <a name="administration-overview"></a>Verwaltungsüberblick
+# <a name="administration-overview"></a>Überblick über die Verwaltung
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung und Problembehandlung von Dynamics 365 Human Resources.
+Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen, um Dynamics 365 Human Resources festzulegen, zu verwalten und Probleme zu beheben.
 
 - [Systemanforderungen](hr-admin-system-requirements.md)
 
-- Instanzen einrichten und verwalten
+- Kategorien einrichten und Instanzen verwalten
   - [Human Resources bereitstellen](hr-admin-setup-provision.md)
   - [Eine Instanz kopieren](hr-admin-setup-copy-instance.md)
   - [Eine Instanz entfernen](hr-admin-setup-remove-instance.md)
@@ -92,13 +92,22 @@ Dieses Administratorhandbuch unterstützt Sie bei der Einrichtung, Verwaltung un
   - [Vergütungsprozesses ausführen](hr-admin-troubleshooting-compensation.md)
   - [Aufgabenleitfaden in LCS speichern](hr-admin-troubleshooting-task-guide.md)
   - [Auf private Adressen nach Sicherheitsrolle zugreifen](hr-admin-troubleshooting-private-addresses.md)
-  - [Human Resources wird nicht in Dynamics 365-Apps angezeigt](hr-admin-troubleshooting-not-in-apps.md)
-  - [Sonstige Berichtsoptionen](hr-admin-troubleshooting-reporting.md)
-  - [FAQs zur Integration](hr-admin-troubleshooting-integration.md)
+  - [Human Resources wird in Dynamics 365-Apps nicht angezeigt](hr-admin-troubleshooting-not-in-apps.md)
+  - [Berichtsoptionen](hr-admin-troubleshooting-reporting.md)
+  - [Häufig gestellte Fragen zur Integration](hr-admin-troubleshooting-integration.md)
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+### <a name="elearning-courses"></a>E-Learning-Schulungen
+Informationen zu Onlinetrainings und Schulungen finden Sie bei [Microsoft Learn unter Dynamics 365 Human Resources](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+### <a name="videos"></a>Videos
+
+Sehen Sie in den Videos nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)
+- [Welche Neuerungen oder Änderungen bietet Human Resources?](hr-admin-whats-new.md)
 - [Entwicklerhandbuch](hr-developer-overview.md)
 - [Benutzerhandbuch](hr-hrpro-overview.md)
 

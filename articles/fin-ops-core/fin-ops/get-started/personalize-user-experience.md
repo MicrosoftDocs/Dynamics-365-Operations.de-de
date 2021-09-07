@@ -2,7 +2,7 @@
 title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie die App personalisieren können.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f71a94a6a5780f8a59590008f6370cb6897fa644e7fd826bacd0fb6206d159c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719300"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344373"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
@@ -169,7 +169,7 @@ Das Dashboard ist oftmals die erste Seite, die beim Öffnen der App angezeigt wi
 Eine einzigartige Personalisierungsfunktion, die im Dashboard verfügbar ist, ist das Hinzufügen von Kacheln. 
 
 - Wenn die Funktion **Ganzseitige Apps** deaktiviert ist, fügen Sie eine neue Kachel hinzu, indem Sie mit der rechten Maustaste auf ein Element im Dashboard klicken und dann **Arbeitsbereich hinzufügen** personalisiert werden. Eine neue Arbeitsbereichkachel wird am unteren Rand das Dashboard erstellt. Sie können diese neue Arbeitsbereichkachel umbenennen, wenn Sie dies wünschen. Sie können dem Arbeitsbereich Kacheln, Listen und Links hinzufügen wie im Abschnitt [Hinzufügen von Kacheln, Listen und Links zu Arbeitsbereichen](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) beschrieben.
-- Wenn die Funktion **Ganzseitige Apps** aktiviert ist, fügen Sie eine neue Kachel hinzu, indem Sie mit der rechten Maustaste auf ein Element im Dashboard klicken und dann **App hinzufügen** auswählen. Wählen Sie im Dialogfeld aus, ob Sie eine Kachel für einen neuen Arbeitsbereich oder eine Kachel mit Inhalt aus Power Apps oder einer Website hinzufügen möchten. Führen Sie dann die Schritte zur Konfiguration der ausgewählten Option aus. Eine neue Kachel wird am unteren Rand des Dashboards erstellt. 
+- Wenn die Funktion **Ganzseitige Apps** aktiviert ist, fügen Sie eine neue Kachel hinzu, indem Sie mit der rechten Maustaste auf ein Element im Dashboard klicken und dann **App hinzufügen** auswählen. Wählen Sie im Dialogfeld aus, ob Sie eine Kachel für einen neuen Arbeitsbereich oder eine Kachel mit Inhalt aus Power Apps oder einer Website hinzufügen möchten. Führen Sie dann die Schritte zur Konfiguration der ausgewählten Option aus. Eine neue Kachel wird am unteren Rand des Dashboards erstellt. Weitere Informationen über das Hinzufügen, Bearbeiten, Löschen und Freigeben dieser eingebetteten Apps finden Sie unter [Einbetten von Canvas-Apps von Power Apps](embed-power-apps.md) und [Einbetten von Apps von Drittanbietern](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Personalisierungen freigeben
 

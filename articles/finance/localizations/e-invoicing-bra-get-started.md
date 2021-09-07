@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fd37c98b64e6074d54b40e20f87f24912abcdd75575aa92e1e2b7345d3cce5a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ccf2a78a5ffdb95b334f751944fdd010bf8cbf01
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730476"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345196"
 ---
 # <a name="get-started-with-electronic-invoicing-for-brazil"></a>Erste Schritte mit der elektronischen Rechnungsstellung für Brasilien 
 
@@ -55,7 +55,7 @@ Führen Sie diese Schritte aus, bevor Sie die Anwendungseinrichtung für Ihre mi
 
 Dieser Abschnitt ergänzt den Abschnitt **Länderspezifische Konfiguration der Anwendungseinrichtung** im Thema [Erste Schritte mit der elektronischen Rechnungsstellung](e-invoicing-get-started.md).
 
-1. Wählen Sie in RCS im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Elektronische Rechnungsstellung* aus.
+1. Wählen Sie in RCS im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Elektronische Rechnungsstellung** aus.
 2. Auf der Seite **Funktionen für die elektronische Rechnungsstellung** überprüfen Sie, ob die elektronische Fakturierungsfunktion **Brasilianisches NF-e (BR)** ausgewählt ist.
 3. Überprüfen Sie auf der Registerkarte **Versionen**, ob die **Entwurf**-Version ausgewählt ist.
 4. Wählen Sie auf der **Einrichtungen**-Registerkarte **Anwendungseinrichtung** und im Feld **Verbundene Anwendung** die Anwendung aus, in der Sie bereitstellen möchten.

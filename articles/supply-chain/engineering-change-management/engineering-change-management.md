@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 55952a9b1c25b806ee4a21ef1982c5b15a41adeb9c9bfdf2fccb8c9da242ffdb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714329"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384584"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Änderungen an Verwaltung für technische Änderung verwalten
 
@@ -113,16 +113,16 @@ Zum Überprüfen von betroffenen Transaktionen, zum Blockieren ausgewählter Tra
     - **Transaktion anzeigen** – Öffnen Sie den ausgewählten Transaktionsdatensatz.
     - **Blockreihenfolge** – Diese Schaltfläche ist nur auf der Registerkarte **Kundenaufträge** verfügbar. Wählen Sie diese Option aus, um den ausgewählten Kundenauftrag zu blockieren.
     - **Zeile blockieren** – Diese Schaltfläche ist nur auf der Registerkarte **Bestellungen** verfügbar. Wählen Sie diese Option aus, um die ausgewählte Bestellzeile zu blockieren.
-    - **Verantwortliche benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Aufträge** verfügbar. Wählen Sie diese Option aus, um eine Änderungsbenachrichtigung an den Benutzer zu senden, der für den ausgewählten Auftrag verantwortlich ist.
-    - **Besteller benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Bestellung** verfügbar. Wählen Sie diese Option aus, um eine Änderungsbenachrichtigung an den Besteller zu senden, der für die ausgewählte Bestellung verantwortlich ist.
-    - **Produktion benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Produktionsaufträge** verfügbar. Im Gegensatz zu Bestellungen und Aufträgen haben Produktionsaufträge keinen einzigen Benutzer, der von  Anfang bis Ende für sie verantwortlich ist. Stattdessen übernehmen verschiedene Vorgesetzte oder Planer normalerweise die Verantwortung für einen bestimmten Standort oder einen bestimmten Teil der Produktion (z. B. für bestimmte Ressourcen oder Ressourcengruppen). Wenn Sie diese Schaltfläche auswählen, erhalten daher alle Benutzer, die für Ressourcen verantwortlich sind, auf die sich der ausgewählten Produktionsauftrag bezieht, eine Änderungsbenachrichtigung.
-    - **Antragstellerr benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Bestellanforderung** verfügbar. Wählen Sie diese Option aus, um eine Änderungsbenachrichtigung an den Besteller zu senden, der für die ausgewählte Bestellanforderung verantwortlich ist.
-    - **Vertriebsverantwortliche benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Angebote** verfügbar. Wählen Sie diese Option aus, um eine Änderungsbenachrichtigung an den Benutzer zu senden, der für das ausgewählte Angebot verantwortlich ist.
+    - **Verantwortliche benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Aufträge** verfügbar. Wählen Sie diese Option aus, um eine Änderungsbenachrichtigung an den Benutzer zu senden, der für den ausgewählten Auftrag verantwortlich ist. Weitere Informationen darüber, wer die Benachrichtigungen sehen kann und wie, finden Sie unter [Änderungsbenachrichtigungen für Transaktionen prüfen und verarbeiten](#review-notifications).
+    - **Besteller benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Bestellung** verfügbar. Wählen Sie diese Option aus, um eine Änderungsbenachrichtigung an den Besteller zu senden, der für die ausgewählte Bestellung verantwortlich ist. Weitere Informationen darüber, wer die Benachrichtigungen sehen kann und wie, finden Sie unter [Änderungsbenachrichtigungen für Transaktionen prüfen und verarbeiten](#review-notifications).
+    - **Produktion benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Produktionsaufträge** verfügbar. Im Gegensatz zu Bestellungen und Aufträgen haben Produktionsaufträge keinen einzigen Benutzer, der von  Anfang bis Ende für sie verantwortlich ist. Stattdessen übernehmen verschiedene Vorgesetzte oder Planer normalerweise die Verantwortung für einen bestimmten Standort oder einen bestimmten Teil der Produktion (z. B. für bestimmte Ressourcen oder Ressourcengruppen). Wenn Sie diese Schaltfläche auswählen, erhalten daher alle Benutzer, die für Ressourcen verantwortlich sind, auf die sich der ausgewählten Produktionsauftrag bezieht, eine Änderungsbenachrichtigung. Weitere Informationen darüber, wer die Benachrichtigungen sehen kann und wie, finden Sie unter [Änderungsbenachrichtigungen für Transaktionen prüfen und verarbeiten](#review-notifications).
+    - **Antragstellerr benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Bestellanforderung** verfügbar. Wählen Sie diese Option aus, um eine Änderungsbenachrichtigung an den Besteller zu senden, der für die ausgewählte Bestellanforderung verantwortlich ist. Weitere Informationen darüber, wer die Benachrichtigungen sehen kann und wie, finden Sie unter [Änderungsbenachrichtigungen für Transaktionen prüfen und verarbeiten](#review-notifications).
+    - **Vertriebsverantwortliche benachrichtigen** – Diese Schaltfläche ist nur auf der Registerkarte **Angebote** verfügbar. Wählen Sie diese Option aus, um eine Änderungsbenachrichtigung an den Benutzer zu senden, der für das ausgewählte Angebot verantwortlich ist. Weitere Informationen darüber, wer die Benachrichtigungen sehen kann und wie, finden Sie unter [Änderungsbenachrichtigungen für Transaktionen prüfen und verarbeiten](#review-notifications).
     - **Schrott** – Diese Schaltfläche ist nur auf der Registerkarte **Inventar** verfügbar. Wählen Sie sie aus, um das ausgewählte Inventar zu verschrotten.
     - **Verlauf anzeigen** – Öffnen Sie den Verlauf der Aktionen, die für die ausgewählte Transaktion ausgeführt wurden, mithilfe des Dialogfeldes **Geschäftliche Auswirkungen auf offene Transaktionen**. (Der Verlauf zeigt beispielsweise an, ob Benachrichtigungen gesendet oder Transaktionen blockiert wurden.) 
     - **Alle Transaktionen anzeigen** – Öffnen Sie die vollständige Liste aller Transaktionen, nicht nur der offenen Transaktionen.
 
-#### <a name="review-and-process-change-notifications-for-transactions"></a>Überprüfen und verarbeiten Sie Änderungsbenachrichtigungen für Transaktionen
+#### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Überprüfen und verarbeiten Sie Änderungsbenachrichtigungen für Transaktionen
 
 Sie können die Änderungsbenachrichtigungen, die Sie erhalten, folgendermaßen lesen und verarbeiten:
 

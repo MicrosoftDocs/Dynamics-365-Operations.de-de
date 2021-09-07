@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Commerce.
 author: josaw
-ms.date: 01/11/2021
+ms.date: 08/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: aa6030468259069cf031feb8df48d6710e1160f310a1d82c1034afe69249f00f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740406"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386740"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
 
@@ -32,6 +32,55 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > [!NOTE]
 > Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Entfernte oder veraltete Funktionen in Commerce Version 10.0.21
+
+[!include [banner](../includes/preview-banner.md)]
+
+### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Retail SDK wird über Lifecycle Services verteilt
+
+Das Retail SDK wird in Lifecycle Services (LCS) ausgeliefert. Diese Art der Verteilung ist in Version 10.0.21 veraltet. Zukünftig werden Retail SDK-Referenzpakete, Bibliotheken und Beispiele in öffentlichen Repositories auf GitHub veröffentlicht.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Das Retail SDK wird in LCS ausgeliefert. Der LCS-Prozess nimmt einige Stunden in Anspruch und muss für jedes Update wiederholt werden. Zukünftig werden Retail SDK-Referenzpakete, Bibliotheken und Beispiele in öffentlichen Repositories auf GitHub veröffentlicht. Erweiterungsbeispiele und Referenzpakete können einfach konsumiert werden, und die Updates sind in wenigen Minuten abgeschlossen. |
+| **Ersetzt durch eine andere Funktion?**   |  [Laden Sie Beispiele und Referenzpakete für das Retail SDK von GitHub herunter NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
+| **Betroffene Produktbereiche**         | Retail SDK |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Außer Betrieb genommen: Ab Version 10.0.21 wird das SDK, das über die LCS-VMs ausgeliefert wird, im Oktober 2022 entfernt. |
+
+### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Im Einzelhandel bereitzustellende Pakete und kombinierte Installer für POS-, Hardware-Station- und Cloud Scale-Einheiten
+
+Retail-bereitstellbare Pakete, die mit dem Retail SDK MSBuild erzeugt wurden, sind in 10.0.21 veraltet. Verwenden Sie in Zukunft das Cloud Scale-Unit (CSU)-Paket für Cloud Scale-Unit-Erweiterungen (Commerce Runtime, Channel-Datenbank, Headless Commerce APIs, Payments und Cloud Point of Sale (POS)). Verwenden Sie die reinen Erweiterungs-Installationspakete für POS, Hardware-Station und Cloud Scale-Unit self-hosted.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Ein für den Einzelhandel bereitstellbares Paket ist ein kombiniertes Paket, das einen kompletten Satz von Erweiterungspaketen und Installern enthält. Dieses kombinierte Paket macht die Bereitstellung komplex, da die CSU-Erweiterungen in die Cloud Scale-Unit gehen und die Installer in den Geschäften bereitgestellt werden. Die Installer enthalten die Erweiterung und das Basisprodukt, was die Updates schwierig macht. Bei jedem Upgrade ist ein Code Merge und eine Paketgenerierung erforderlich. Um diesen Prozess zu vereinfachen, werden die Erweiterungspakete jetzt in Komponenten aufgeteilt, um das Bereitstellen und Verwalten zu erleichtern. Mit dem neuen Ansatz sind Erweiterungen und Basisprodukt-Installer getrennt und können unabhängig voneinander gewartet und aktualisiert werden, ohne dass ein Code-Merge oder eine Neu-Paketierung erforderlich ist.|
+| **Ersetzt durch eine andere Funktion?**   | CSU-Erweiterungen, POS-Erweiterungs-Installer, Hardware-Stations-Erweiterungs-Installer |
+| **Betroffene Produktbereiche**         | Dynamics 365 Commerce Erweiterung und Bereitstellung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Außer Betrieb genommen: Ab der Version 10.0.21 wird die Unterstützung für das Bereitstellen von RetailDeployablePackage in LCS im Oktober 2022 entfernt. |
+
+Weitere Informationen finden Sie hier:
+
++ [Erzeugen eines separaten Pakets für Commerce Cloud Scale-Unit (CSU)](../dev-itpro/retail-sdk/retail-sdk-packaging.md#generate-a-separate-package-for-commerce-cloud-scale-unit-csu)
++ [Modern POS-Erweiterungspaketprojekt erstellen](../dev-itpro/pos-extension/mpos-extension-packaging.md)
++ [Integrieren Sie den POS mit einem neuen Hardware-Gerät](../dev-itpro/hardware-device-extension.md)
++ Code-Beispiele.
+    + [Cloud Scale-Unit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
+    + [POS, CSU und Hardware-Station](https://github.com/microsoft/Dynamics365Commerce.InStore)
+
+### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln und CloudPOs.sln im Retail SDK
+
+Die Entwicklung von POS-Erweiterungen mit ModernPos.sln, CloudPOs.sln, POS.Extension.csproj und dem POS-Ordner ist in Version 10.0.21 außer Betrieb genommen. Verwenden Sie in Zukunft das POS-unabhängige Paketierungs-SDK für POS-Erweiterungen.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | In früheren Versionen des Retail-SDK ist bei POS-Erweiterungen ein Code-Merge und ein Repackaging erforderlich, um auf die neueste Version des POS zu aktualisieren. Das Code Merge war ein zeitaufwändiger Upgrade-Prozess und Sie mussten das komplette Retail SDK im Repository pflegen. Außerdem mussten Sie das Kernprojekt POS.App kompilieren. Durch die Verwendung des unabhängigen Paketierungsmodells müssen Sie nur Ihre Erweiterung pflegen. Der Prozess der Aktualisierung auf die neueste Version der POS-Erweiterungen ist so einfach wie die Aktualisierung der Version des NuGet-Pakets, das Ihr Projekt konsumiert. Die Erweiterungen können unabhängig voneinander bereitgestellt werden, und die Dienste verwenden die Installationsprogramme für die Erweiterungen. Das Basis-POS kann separat bereitgestellt und gewartet werden, und es ist kein Code-Merge oder Repackaging mit dem Basis-Installer oder Code erforderlich. |
+| **Ersetzt durch eine andere Funktion?**   | [POS-unabhängiges Paketierungs-SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
+| **Betroffene Produktbereiche**         | Dynamics 365 Commerce POS-Erweiterung und -Einsatz |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Außer Betrieb genommen: Ab Version 10.0.21 wird die Unterstützung für kombinierte POS-Pakete und das Erweiterungsmodell unter Verwendung der ModernPos.Sln, CloudPOs.sln und POS.Extensons.csproj im Retail SDK im Oktober 2022 entfernt. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Entfernte oder veraltete Funktionen in Commerce Version 10.0.17
 

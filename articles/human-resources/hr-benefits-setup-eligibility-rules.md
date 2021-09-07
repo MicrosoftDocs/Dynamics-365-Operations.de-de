@@ -1,8 +1,8 @@
 ---
 title: Berechtigungsregeln und -optionen konfigurieren
-description: Legen Sie die Berechtigungsregeln und ‑optionen in der Vorteilsverwaltung von Microsoft Dynamics 365 Human Resources fest.
-author: andreabichsel
-ms.date: 06/25/2021
+description: In diesem Thema wird beschrieben, wie Sie Anspruchsberechtigungsregeln und Optionen in der Verwaltung von Leistungen in Microsoft Dynamics 365 Human Resources festlegen können.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3aae50b8f7fac6991f187ced44f7d122eb7ed40824bd2d53265fa06bfa87dd6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 034957628580c468ed00b14afeb7e49af15c45cc
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756123"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423470"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Berechtigungsregeln und -optionen konfigurieren 
 
@@ -155,7 +155,7 @@ Regeln können weiter erweitert werden, um mehrere Bedingungen innerhalb eines e
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Teilnahmebedingungen innerhalb eines benutzerdefinierten Feldkriteriums 
 Ähnlich wie oben können benutzerdefinierte Felder beim Erstellen von Berechtigungsregeln verwendet werden und auf dieselbe Weise funktionieren. Beispielsweise möchten Sie den Mitarbeitern von Fargo und Kopenhagen, die von zu Hause aus arbeiten, eine Internet-Rückerstattung anbieten, da die Internetkosten an diesen Standorten höher sind. Erstellen Sie dazu zwei benutzerdefinierte Felder: **Bürostandort** (Auswahlliste) und **Von zu Hause aus arbeiten** (Kontrollkästchen). Erstellen Sie dann eine Regel mit dem Namen **WFH-Mitarbeiter**. Das Kriterium für die Regel ist wo **Bürostandort = Fargo** oder **Kopenhagen** *und* wo **Von zu Hause aus arbeiten = Ja**.
 
-Die benutzerdefinierten Berechtigungsregeln müssten wie in der folgenden Abbildung angegeben eingerichtet werden. 
+Die angepassten Anspruchsberechtigungsregeln müssten wie in der folgenden Abbildung festgelegt werden. 
 
 ![Teilnahmebedingungen innerhalb eines benutzerdefinierten Feldkriteriums.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
@@ -217,13 +217,13 @@ Sie können Flexguthabenprogramme verwenden, um Mitarbeiter für Vorteile gemä�
 
    | Feld | Beschreibung |
    | --- | --- |
-   | Vergütungsgutschriftenkennung | Der eindeutige Bezeichner des Flexguthabenprogramms. |
-   | Beschreibung | Eine Beschreibung des Flexguthabenprogramms. | 
-   | Anfangsdatum | Das Datum, an dem das Flexguthabenprogramm aktiv wird. |
-   | Enddatum | Das Enddatum des Flexguthabenprogramms. Sie können den Standardwert (31.12.2154) beibehalten, um anzugeben, dass für das Flexguthabenprogramm kein geplanter Ablauf festgelegt ist. |
-   | Guthabenwert gesamt | Die Höhe des Guthabens, das jeder Mitarbeiter für seine Vorteile verwenden muss. |
-   | Regel zur anteiligen Verrechnung | Die Regel zur anteiligen Verrechnung von Flexguthaben, wenn ein Mitarbeiter in der Mitte der Flexguthabenperiode eingestellt wird. </br></br><ul><li>**Kein** – Der Mitarbeiter erhält kein Flexguthaben, wenn er nach dem Start des Flexguthabenprogramms eingestellt wird.</li><li>**Volles Guthaben** – Der Mitarbeiter erhält die volle Höhe des Flexguthabens, unabhängig davon, wann er eingestellt wird.</li><li>**Anteilige Verrechnung** – Der Mitarbeiter erhält einen Anteil des Flexguthabens, das auf seinem Startdatum basiert.</li></ul> |
-   | Formel für anteilige Berechnung des Flexguthabens | Die Regel zur anteiligen Verrechnung von Flexguthaben, wenn Mitarbeiter in der Mitte der Flexguthabenperiode eingestellt werden. Die anteilige Verrechnung basiert auf dem Einstellungsbeginn. Dieses Feld wird nur verwendet, wenn im Feld **Regel zur anteiligen Verrechnung** die Option **Anteilige Verrechnung** ausgewählt wird. </br></br><ul><li>**Täglich** – Teilt die Höhe des Flexguthabens, die ein Mitarbeiter erhält, auf dem Tageslevel. Die Gesamthöhe des Flexguthabens wird durch die Anzahl der Tage in der Periode geteilt. Wenn Ihre Vorteilsperiode beispielsweise 400 Tage beträgt, dividiert das System die Gesamthöhe des Flexguthabens durch 400, um die Höhe des Flexguthabens zu berechnen, das ein Mitarbeiter pro Tag erhält.</li><li>**Aktueller Monat** – Teilt die Höhe des Flexguthabens, die ein Mitarbeiter erhält, auf dem Monatslevel, auf den aktuellen Monat gerundet. Die Gesamthöhe des Flexguthabens wird durch die Anzahl der Monate in der Periode geteilt. Wenn Ihre Vorteilsperiode beispielsweise 15 Monate beträgt, dividiert das System die Gesamthöhe des Flexguthabens durch 15, um die Höhe des Flexguthabens zu berechnen, das ein Mitarbeiter pro Monat erhält.</li><li>**Folgender Monat** – Teilt die Höhe des Flexguthabens, die ein Mitarbeiter erhält, auf dem Monatslevel, auf den nächsten Monat gerundet. Die Gesamthöhe des Flexguthabens wird durch die Anzahl der Monate in der Periode geteilt. Wenn Ihre Vorteilsperiode beispielsweise 15 Monate beträgt, dividiert das System die Gesamthöhe des Flexguthabens durch 15, um die Höhe des Flexguthabens zu berechnen, das ein Mitarbeiter pro Monat erhält.</li></ul> |
+   | **Vergütungsgutschriftenkennung** | Der eindeutige Bezeichner des Flexguthabenprogramms. |
+   | **Beschreibung** | Eine Beschreibung des Flexguthabenprogramms. | 
+   | **Anfangsdatum** | Das Datum, an dem das Flexguthabenprogramm aktiv wird. |
+   | **Enddatum** | Das Enddatum des Flexguthabenprogramms. Sie können den Standardwert (31.12.2154) beibehalten, um anzugeben, dass für das Flexguthabenprogramm kein geplanter Ablauf festgelegt ist. |
+   | **Guthabenwert gesamt** | Die Höhe des Guthabens, das jeder Mitarbeiter für seine Vorteile verwenden muss. |
+   | **Regel zur anteiligen Verrechnung** | Die Regel zur anteiligen Verrechnung von Flexguthaben, wenn ein Mitarbeiter in der Mitte der Flexguthabenperiode eingestellt wird. </br></br><ul><li>**Kein** – Der Mitarbeiter erhält kein Flexguthaben, wenn er nach dem Start des Flexguthabenprogramms eingestellt wird.</li><li>**Volles Guthaben** – Der Mitarbeiter erhält die volle Höhe des Flexguthabens, unabhängig davon, wann er eingestellt wird.</li><li>**Anteilige Verrechnung** – Der Mitarbeiter erhält einen Anteil des Flexguthabens, das auf seinem Startdatum basiert.</li></ul> |
+   | **Formel für anteilige Berechnung des Flexguthabens** | Die Regel zur anteiligen Verrechnung von Flexguthaben, wenn Mitarbeiter in der Mitte der Flexguthabenperiode eingestellt werden. Die anteilige Verrechnung basiert auf dem Einstellungsbeginn. Dieses Feld wird nur verwendet, wenn im Feld **Regel zur anteiligen Verrechnung** die Option **Anteilige Verrechnung** ausgewählt wird. </br></br><ul><li>**Täglich** – Teilt die Höhe des Flexguthabens, die ein Mitarbeiter erhält, auf dem Tageslevel. Die Gesamthöhe des Flexguthabens wird durch die Anzahl der Tage in der Periode geteilt. Wenn Ihre Vorteilsperiode beispielsweise 400 Tage beträgt, dividiert das System die Gesamthöhe des Flexguthabens durch 400, um die Höhe des Flexguthabens zu berechnen, das ein Mitarbeiter pro Tag erhält.</li><li>**Aktueller Monat** – Teilt die Höhe des Flexguthabens, die ein Mitarbeiter erhält, auf dem Monatslevel, auf den aktuellen Monat gerundet. Die Gesamthöhe des Flexguthabens wird durch die Anzahl der Monate in der Periode geteilt. Wenn Ihre Vorteilsperiode beispielsweise 15 Monate beträgt, dividiert das System die Gesamthöhe des Flexguthabens durch 15, um die Höhe des Flexguthabens zu berechnen, das ein Mitarbeiter pro Monat erhält.</li><li>**Folgender Monat** – Teilt die Höhe des Flexguthabens, die ein Mitarbeiter erhält, auf dem Monatslevel, auf den nächsten Monat gerundet. Die Gesamthöhe des Flexguthabens wird durch die Anzahl der Monate in der Periode geteilt. Wenn Ihre Vorteilsperiode beispielsweise 15 Monate beträgt, dividiert das System die Gesamthöhe des Flexguthabens durch 15, um die Höhe des Flexguthabens zu berechnen, das ein Mitarbeiter pro Monat erhält.</li></ul> |
    
    Stellen Sie sicher, dass jeder Vorteilsplan nur für ein Flexguthabenprogramm pro Vorteilsperiode registriert ist. Sonst weiß das System nicht, mit welchem Flexguthabenprogramm das Flexguthaben vergeben werden soll und es treten Probleme auf. 
 

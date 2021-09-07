@@ -1,5 +1,5 @@
 ---
-title: Momentaufnahmenübersicht (Vorschau)
+title: Übersicht über Momentaufnahmen
 description: In diesem Thema wird die Momentaufnahmefunktion beschrieben, mit der Sie eine Cashflow-Planung zur späteren Analyse oder zum Vergleich mit Istdaten speichern können. Wenn Sie eine Cashflow-Planung erstellen, können Sie diese Prognose als „Momentaufnahme“ speichern. Mit dieser Momentaufnahme können Sie dann die Konten bearbeiten, die in der Prognose enthalten waren, oder die Prognose in der Momentaufnahme mit den Istwerten vergleichen.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: dcdc7bfbf88acca3f74b2cc57e5caf38cea43a833f12e6ec40eebcb9b249b059
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bcaaa9fe13e36bbe71e29d82c9f22a4fff9248ef
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765027"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386562"
 ---
-# <a name="snapshots-overview-preview"></a>Momentaufnahmenübersicht (Vorschau)
+# <a name="snapshots-overview"></a>Übersicht über Momentaufnahmen
 
 [!include [banner](../includes/banner.md)]
 

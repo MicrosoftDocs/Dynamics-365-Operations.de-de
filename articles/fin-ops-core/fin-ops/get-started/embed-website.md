@@ -2,7 +2,7 @@
 title: Apps von Drittanbietern einbetten
 description: Dieses Thema erklärt, wie Sie Apps von Drittanbietern einbinden können, um die Funktionalität des Produkts zu erweitern.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f47fb6a2fdb586fbc9f25938c3b9c1cfc16ddc1af432b91621421bd829b23925
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737798"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345409"
 ---
 # <a name="embed-third-party-apps"></a>Apps von Drittanbietern einbetten
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Viele Debitor verwenden eine Reihe von Anwendungen, um ihr Geschäft auszuführen. Einige dieser Anwendungen sind Web-Apps von Drittanbietern, die in Verbindung mit Finance and Operations-Apps arbeiten. Um eine nahtlosere Benutzererfahrung zu bieten, können Sie die Funktion **(Vorschau) Ganzseitige Apps** verwenden, um diese Apps von Drittanbietern direkt in Ihre Finance and Operations-Apps einzubetten (vorausgesetzt, die Apps von Drittanbietern lassen die Einbettung zu). Auf diese Weise können Benutzer auf die von ihnen benötigten Websites und Apps zugreifen, ohne die Registerkarten oder Fenster wechseln zu müssen.
+Viele Debitor verwenden eine Reihe von Anwendungen, um ihr Geschäft auszuführen. Einige dieser Anwendungen sind Web-Apps von Drittanbietern, die in Verbindung mit Finance and Operations-Apps arbeiten. Um eine nahtlosere Benutzererfahrung zu bieten, können Sie die Funktion **Full Page Apps** verwenden, um diese Apps von Drittanbietern direkt in Ihre Finance and Operations-Apps einzubetten (vorausgesetzt, die Apps von Drittanbietern lassen die Einbettung zu). Auf diese Weise können Benutzer auf die von ihnen benötigten Websites und Apps zugreifen, ohne die Registerkarten oder Fenster wechseln zu müssen.
 
-Bevor Sie Apps von Drittanbietern in das Produkt einbetten können, müssen Sie die Funktion **(Vorschau) Ganzseitige Apps** in der Funktionsverwaltung einschalten. Sie können dann eine der folgenden Methoden verwenden, um eine App oder Website eines Drittanbieters einzubinden. Diese Methoden sind analog zu den Methoden, die zum Einbetten von Canvas-Apps aus Microsoft Power Apps in Finance and Operations-Apps verwendet werden.
+Bevor Sie Apps von Drittanbietern in das Produkt einbetten können, müssen Sie die Funktion **Vollständige Seite Apps** in der Funktionsverwaltung einschalten. Sie können dann eine der folgenden Methoden verwenden, um eine App oder Website eines Drittanbieters einzubinden. Diese Methoden sind analog zu den Methoden, die zum Einbetten von Canvas-Apps aus Microsoft Power Apps in Finance and Operations-Apps verwendet werden.
 
 - Einbetten der App oder Website auf einer bestehenden Seite als neue Registerkarte (Pivot-Tab, Inforegister, Blade oder Arbeitsbereich).
 - Erstellen Sie eine neue ganzseitige Erfahrung für die App oder Website vom Dashboard aus.
@@ -64,7 +64,7 @@ Verwenden Sie dieses Verfahren, wenn Sie eine bestehende Seite im System mit ein
 Verwenden Sie dieses Verfahren, wenn die App, die Sie einbetten möchten, nicht mit einer bestehenden Seite zusammenhängt, oder wenn Sie nur eine ganzseitige Darstellung der App innerhalb der Finance and Operations-App wünschen.
 
 1. Öffnen Sie das Dashboard.
-2. Wählen und halten Sie die Seite (oder klicken Sie mit der rechten Maustaste), wählen Sie **Personalisieren** und wählen Sie dann **Seite hinzufügen**.
+2. Wählen und halten Sie (oder klicken Sie mit der rechten Maustaste) auf dem Dashboard, wählen Sie **Personalisieren**, und wählen Sie dann **Seite hinzufügen**.
 3. Wählen Sie im Bereich **Seite hinzufügen** die Option **Website**.
 4. Die eingebettete App konfigurieren:
 
@@ -76,15 +76,15 @@ Verwenden Sie dieses Verfahren, wenn die App, die Sie einbetten möchten, nicht 
     > - Die App oder Website muss so konfiguriert sein, dass sie das Einbetten zulässt.
 
 5. Wählen Sie **Speichern**, um die App dem Dashboard als neue Kachel hinzuzufügen.
-6. Wählen Sie die neue Kachel auf dem Dashboard und bestätigen Sie, dass die App wie erwartet angezeigt wird. Wenn die App nicht gerendert wird, lesen Sie den Abschnitt [Fehlerbehebung](#troubleshooting) weiter unten in diesem Thema.
+6. Wählen Sie die neue Kachel auf dem Dashboard und bestätigen Sie, dass die App wie erwartet angezeigt wird. Wenn die App nicht gerendert wird, lesen Sie den Abschnitt [Problembehandlung](#troubleshooting) weiter unten in diesem Thema.
 
 ## <a name="sharing-embedded-apps"></a>Gemeinsame Nutzung eingebetteter Apps
 
 Nachdem Sie eine App mit Hilfe einer der in den vorherigen Abschnitten beschriebenen Methoden eingebettet haben, möchten Sie die Ansicht vielleicht für andere Benutzer im System freigeben. Um eine eingebettete App freizugeben, verwenden Sie eine der folgenden Methoden:
 
-- **Die Ansicht veröffentlichen (empfohlen):** Wenn die eingebettete App in einer Ansicht gespeichert wurde, ist die empfohlene und bevorzugte Art der Freigabe, die Ansicht für Benutzer zu veröffentlichen, die über die entsprechenden Sicherheitsrollen verfügen. Dann sehen alle Benutzer, die über die Sicherheitsrollen verfügen, auf die die veröffentlichte Ansicht abzielt, die App in Finance and Operations Apps. Weitere Informationen über das Veröffentlichen einer Ansicht finden Sie unter [Veröffentlichen von Ansichten](saved-views.md#publishing-views).
+- **Veröffentlichen Sie die Ansicht (empfohlen):** Wenn die eingebettete App in einer Ansicht gespeichert wurde, ist der empfohlene und bevorzugte Weg, sie zu teilen, die Ansicht für Benutzer zu veröffentlichen, die die entsprechenden Sicherheitsrollen in den angestrebten juristischen Entitäten haben. In diesem Fall werden nur die gewünschten Benutzer die eingebettete App auf dieser Seite sehen. Weitere Informationen über das Veröffentlichen einer Ansicht finden Sie unter [Veröffentlichen von Ansichten](saved-views.md#publishing-views).
 
-    Sie können auch eine App veröffentlichen, die als ganzseitige Erfahrung vom Dashboard aus eingebettet wurde. Wählen und halten Sie auf dem Dashboard die Kachel, die mit der App verknüpft ist (oder klicken Sie mit der rechten Maustaste), wählen Sie **Personalisieren** und dann **Seite veröffentlichen**. Derzeit können Sie nur an Sicherheitsrollen veröffentlichen. Die Funktionalität zum Publizieren für juristische Entitäten wird jedoch noch hinzugefügt, bevor die Funktion allgemein verfügbar ist.
+    Sie können auch eine App veröffentlichen, die als ganzseitige Erfahrung vom Dashboard aus eingebettet wurde. Wählen und halten Sie auf dem Dashboard die Kachel, die mit der App verknüpft ist (oder klicken Sie mit der rechten Maustaste), wählen Sie **Personalisieren** und dann **Seite veröffentlichen**. Es wird ein Erlebnis angezeigt, das dem *Veröffentlichen von Ansichten* ähnelt, und Sie können die Sicherheitsrollen auswählen, an die veröffentlicht werden soll. Wenn in Update 10.0.21 oder später die Funktion **Verbesserte Unterstützung juristischer Entitäten für gespeicherte Ansichten** aktiviert ist, können Sie die App auch für die gewünschten juristischen Entitäten veröffentlichen.
 
 - **Kopieren Sie die Personalisierung:** Für Seiten, die keine Ansichten unterstützen (z. B. Dialogfelder oder Arbeitsbereiche), oder für das ganzseitige App-Erlebnis können Sie die Personalisierung auf die entsprechenden Benutzer kopieren. Weitere Informationen finden Sie unter [Freigeben von Personalisierungen](personalize-user-experience.md#sharing-personalizations).
 

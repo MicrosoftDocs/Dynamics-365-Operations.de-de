@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4811c65a32e27668d1247086d962366eb8369d5e9fe28a105e1d6a020bca325d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd55d433b0961b8b210b9c28d7340ff880635a85
+ms.sourcegitcommit: 3af457fc216bd0020843291ca57fd379acb53c96
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737748"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7392473"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Anlagevermögen mit einem Mietvertrag verknüpfen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie Sie eine vorhandene Anlage einem neuen Mietvertrag zuordnen. Wenn Sie eine Anlage einem Mietvertrag verknüpfen, entspricht der Wert des Nutzungsrechts am Leasingobjekt bei der erstmaligen Erfassung den Anschaffungskosten der Anlage.
 
@@ -49,8 +50,18 @@ Nachdem Sie den Journaleintrag der erstmaligen Erfassung gebucht haben, wird die
 
 Die Anlage kann jetzt mithilfe der Standardabschreibungsfunktion im Anlagevermögen abgeschrieben werden. Weitere Informationen zur Abschreibung finden Sie untere [Abschreibungsmethoden und - konventionen](../fixed-assets/depreciation-methods-conventions.md).
 
+Wenn ein Leasingvertrag mit einer Anlage verbunden ist, wird das Feld **Nutzungsdauer** im Anlagenbuch so aktualisiert, dass es dem kleinsten Wert aus den folgenden Kriterien entspricht: 
+
+ - Die Nutzungsdauer der Anlage
+ - Die Leasingdauer aus dem zugehörigen Leasingbuch
+
+Wenn das Feld **Eigentumsübergang** für das Leasingbuch auf **Ja** festgelegt ist, entspricht der Wert im Feld **Nutzungsdauer** immer der Nutzungsdauer der Anlage. 
+ 
+Die Nutzungsdauer wird bei jeder Anpassung des Leasingvertrags aktualisiert, um sicherzustellen, dass das Nutzungsrecht über die Laufzeit des Leasingvertrags abgeschrieben wird, als ob es im Anlagenleasing abgeschrieben würde.
+
 > [!NOTE]
 > Wenn Sie eine Anlage mit einem Mietvertrag verknüpfen, wird die **Anlagenabschreibung** und **Leasingminderung** Schaltflächen im Anlagenvermögen deaktiviert. Sie können Transaktionen zur Anlagenabschreibung und zur Leasingminderung im Anlagevermögen anzeigen. Die **Anlagentransaktionen**-Schaltfläche, mit der ein Anfrageformular geöffnet wird, ist ebenfalls deaktiviert. Sie können auch das **Anlagentransaktionen** -Anfrageformular im Anlagevermögen öffnen.  
 
+Auf den Seiten **Anlagen** und **Anlagenbuch** wird die Leasing-ID angezeigt, die mit einer Anlage verbunden ist. Wenn eine Anlage mit einem Leasingvertrag verbunden ist, werden die Leasing-ID und die Leasing-Beschreibung auf dem Inforegister **Leasinginformationen** auf der Seite **Anlagen** angezeigt. Bei Anlagenbüchern, die mit Leasingbüchern verknüpft sind, werden in den Feldern **Leasing-ID**, **Leasingbeschreibung** und **Buchtyp** auf dem Inforegister **Leasinginformationen** Informationen für das ausgewählte Anlagenbuch angezeigt, um anzuzeigen, dass es mit einem Leasingbuch verknüpft ist.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

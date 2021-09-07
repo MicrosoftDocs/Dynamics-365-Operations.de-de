@@ -1,8 +1,8 @@
 ---
 title: Berichte zum Affordable Care Act in der Vorteilsverwaltung generieren
-description: In diesem Thema wird beschrieben, wie Sie mit der Vorteilsverwaltung Informationen nachverfolgen können, die auf Formular 1095-B und Formular 1095-C für das Arbeitgebermandat des Affordable Care Act (ACA) angegeben sind.
-author: andreabichsel
-ms.date: 12/28/2020
+description: Dieses Thema beschreibt, wie das Benefits Management Informationen verfolgt, die auf den Formularen 1095-B und 1095-C für das Affordable Care Act (ACA) Arbeitgebermandat gemeldet werden.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: d681514f53dbaf4aafce33722d0c1837c3d270407c19d629c3383ff1a2472d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99ac67795cd3f587e54a84361dd4744b79b4dbbd
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727064"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416253"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>ACA-Berichte in der Vorteilsverwaltung generieren
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Mit der Vorteilsverwaltung können Sie Informationen nachverfolgen, die auf Formular 1095-B und Formular 1095-C für das Arbeitgebermandat des Affordable Care Act (ACA) angegeben sind. Wie die ACA-Berichtsfunktion im alten **Vorteils**-Arbeitsbereich gilt diese Funktionalität nur für juristische Personen in den USA.
+Das Benefits Management verfolgt Informationen, die auf den Formularen 1095-B und 1095-C für das Affordable Care Act (ACA)-Arbeitgebermandat gemeldet werden. Wie die ACA-Berichtsfunktion im alten **Vorteils**-Arbeitsbereich gilt diese Funktionalität nur für juristische Personen in den USA.
 
 Um diese Funktionalität nutzen zu können, müssen Sie zuerst **Erweiterte Vorteilsverwaltung** aktivieren. Weitere Informationen, einschließlich wichtiger Vorbehalte zur Vorteilsverwaltung finden Sie unter [Aktivieren oder Deaktivieren der Vorteilsverwaltung](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
@@ -145,7 +145,7 @@ Sie können ACA-Formulare 1095-B und 1095-C generieren und dann an jeden der Mit
 2. Ändern Sie die Parameter nach Bedarf und wählen Sie dann **OK**.
 
     > [!NOTE]
-    > Wenn Sie 1095-C Formulare für mehr als 500 Mitarbeiter drucken, erhalten Sie mehr als eine PDF-Datei. Wir empfehlen Ihnen, den Wert des Felds **Maximale Dateigröße in Megabyte** auf der Seite **Parameter für die Dokumentenverwaltung** auf **150** zu erhöhen. (Um diese Seite schnell zu öffnen, können Sie das Suchfeld in der Navigationsleiste verwenden.)
+    > Wenn Sie 1095-C Formulare für mehr als 500 Mitarbeiter drucken, erhalten Sie mehr als eine PDF-Datei. Wir empfehlen Ihnen, den Wert des Felds **Maximale Dateigröße in Megabyte** auf der Seite **Parameter für die Dokumentenverwaltung** auf **150** zu erhöhen. (Um diese Seite schnell zu öffnen, verwenden Sie das Suchfeld in der Navigationsleiste).
     >
     > ![Ändern der maximalen Dateigröße.](./media/hr-benefits-management-aca-maximum-file-size.png)
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 81aac53cca91a75cde811c314bd6f7039852d32505fe6540921e17f3d1bbc7ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98d6ceb794716f39c6ae47b300bdb7618a8e688b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739309"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345227"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>TDS-Steuercodes zu TDS-Steuergruppen hinzufügen und die Formel zur TDS-Berechnung festlegen
 
@@ -55,7 +55,7 @@ Gehen Sie wie folgt vor, um eine TDS-Steuergruppe einzurichten, TDS-Steuercodes 
     > [!NOTE]
     > Das Feld **Bemessungsgrundlage** kann nicht auf **Ohne Bruttobetrag** gesetzt werden, wenn der Steuercode die Prioritätskennung **1** hat.
 
-12. Die TDS-Berechnung basiert auf der Formel, die im Feld **Berechnungsausdruck** für jeden Steuercode festgelegt ist, der der TDS-Steuergruppe zugeordnet ist. Wählen Sie das Pluszeichen (**+**), Minuszeichen (**-**), Multiplikationszeichen (**\**_) oder Divisonszeichen (_*/**), um den Berechnungsausdruck für den ausgewählten TDS-Steuercode in das Feld **Berechnungsausdruck** einzugeben.
+12. Die TDS-Berechnung basiert auf der Formel, die im Feld **Berechnungsausdruck** für jeden Steuercode festgelegt ist, der der TDS-Steuergruppe zugeordnet ist. Wählen Sie die Schaltfläche mit dem Pluszeichen (+), dem Minuszeichen (-), dem Multiplikationszeichen (\*) oder dem Divisionszeichen (/), um den Berechnungsausdruck für den gewählten TDS-Steuercode in das Feld **Berechnungsausdruck** einzugeben.
 
     > [!NOTE]
     > Für den TDS-Steuercode mit der Prioritätskennung **1** kann kein Berechnungsausdruck definiert werden.

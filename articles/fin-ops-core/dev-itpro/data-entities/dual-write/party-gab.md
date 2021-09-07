@@ -2,19 +2,19 @@
 title: Partei und globales Adressbuch
 description: In diesem Thema wird die Partei- und globale Adressbuchfunktionalität von Duales Schreiben beschrieben.
 author: RamaKrishnamoorthy
-ms.date: 02/22/2021
+ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 3cb4cdaefe7bd82dec612a11d75aeedb77bce152a00ff90fb0095f75b23a4bbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729775"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386684"
 ---
 # <a name="party-and-global-address-book"></a>Partei und globales Adressbuch
 
@@ -139,9 +139,12 @@ Das Raster enthält die folgenden Spalten:
 
 Mit der Schaltfläche **Neue elektronische Adresse** über dem Raster können Sie so viele Adressen erstellen, wie Sie möchten.
 
-Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Versionen werden alle Felder für die Postanschrift und die elektronische Adresse aus anderen Registerkarten entfernt (z.B. aus den Registerkarten **Zusammenfassung** und **Details**).
+Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Versionen werden alle Felder für Postanschrift und elektronische Adresse aus anderen Registerkarten entfernt, z.B. aus den Registerkarten **Zusammenfassung** und **Details**. Kontaktdetails, die auf der Registerkarte **Details** angezeigt werden, sind schreibgeschützte Kopien der primären elektronischen Adresse, wie primäre Telefonnummer, primäre E-Mail, primäres Telefon, primäres Fax und primäre Twitter-ID. Während des Lead-Qualifizierungsprozesses können Sie sowohl eine geschäftliche Telefonnummer als auch eine Mobiltelefonnummer angeben. Die geschäftliche Telefonnummer wird als primäres Telefon betrachtet, wenn **IsMobile=No** und die Mobiltelefonnummer wird als sekundäres Telefon betrachtet, wenn **IsMobile=Yes**.
 
-## <a name="setup"></a>Einstellung
+> [!TIP]
+> Verwenden Sie die Registerkarten **Adressen** und **Elektronische Adressen** in den Formularen **Konto** und **Kontakte**, um postalische und elektronische Adressen zu verwalten. Dadurch wird sichergestellt, dass Adressdaten mit Finance and Operations-Apps synchronisiert werden.
+
+## <a name="setup"></a>Einrichtung
 
 1. Öffnen Sie Ihre Kundenbindungs-App-Umgebung.
 
@@ -249,13 +252,11 @@ Elektronische Adressen sind nur in diesem Raster verfügbar. In zukünftigen Ver
     [Auftragskopfzeilen CDS](mapping-reference.md#217) | salesorders
     [Verkaufsrechnungskopfzeilen V2](mapping-reference.md#118) | Rechnungen
 
-> [!Note]
+> [!NOTE]
 > Die Zuordnung `CDS Contacts V2 (contacts)` ist die Zuordnung, die Sie in Schritt 1 angehalten haben. Wenn Sie versuchen, andere Zuordnungen auszuführen, können diese 2 Zuordnungen in der Liste der Abhängigen erscheinen. Führen Sie diese Zuordnungen nicht aus.
-
-> [!Note]
+>
 > Wenn die Lösung für das Partei- und globale Adressbuch installiert ist, müssen Sie die Steckung mit der Bezeichnung `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead` deaktivieren. Wenn Sie die Lösung für das Partei- und globale Adressbuch deinstallieren, müssen Sie das Plugin wieder aktivieren.
-
-> [!Note]
+>
 > Das Feld `msdyn_*partynumber` (ein einzeiliges Textfeld), das in den Tabellen **Konto**, **Kontakt** und **Kreditor** enthalten ist, sollte in Zukunft nicht mehr verwendet werden. Der Name des Labels hat aus Gründen der Übersichtlichkeit das Präfix **(Veraltet)**. Verwenden Sie stattdessen das Feld **msdyn_partyid**. Das Feld ist ein Nachschlagefeld in der Tabelle **msdyn_party**.
 
 > Tabellenname | Altes Feld | Neues Feld
@@ -296,7 +297,6 @@ Weitere Informationen finden Sie unter [Referenz für die Zuordnung von dualem S
 
 + Wenn Sie in Finance and Operations-Apps einen Debitor zusammen mit einer Adresse erstellen und speichern, wird die Adresse möglicherweise nicht mit der Tabelle **Adresse** synchronisiert. Der Grund dafür ist ein Problem mit der Sequenzierung der Dual-Write-Plattform. Als Workaround erstellen Sie den Kunden zuerst und speichern ihn. Fügen Sie dann die Adresse hinzu.
 + Wenn in Finance and Operations-Apps ein Datensatz eines Debitors eine primäre Adresse hat und Sie einen neuen Kontakt für diesen Debitor erstellen, erbt der Kontakt-Datensatz eine primäre Adresse vom zugehörigen Debitor-Datensatz. Dies gilt auch für den Kreditor-Kontakt. Dataverse unterstützt dieses Verhalten derzeit nicht. Wenn Dual-Write aktiviert ist, wird ein Debitor-Kontakt, der mit einer primären Adresse aus der App Finance and Operations geerbt wurde, zusammen mit seiner Adresse nach Dataverse synchronisiert.
-+ Elektronische Adressen aus der Tabelle `msdyn_partyelectronicaddress` fließen nicht in die elektronischen Adressfelder in den Tabellen **Konto** und **Kontakt**. Wir planen, dieses Problem in einem inkrementellen Release zu beheben. Die vorhandenen Daten auf den elektronischen Adressfeldern in den Tabellen **Konto** und **Kontakt** werden nicht überschrieben.
 + Elektronische Adressen, die auf der Registerkarte „Elektronische Adresse“ der Formulare **Konto**, **Kontakt** und **Kreditor** festgelegt sind, stammen aus der Tabelle `msdyn_partyelectronicaddress`. Diese Informationen fließen nicht in die zugehörigen Transaktionen wie Verkaufsauftrag, Angebot und Einkaufsbestellung. Wir planen, dieses Problem in einem inkrementellen Release zu beheben. Die bestehenden Daten auf den elektronischen Adressfeldern auf den Konto- und Kontakt-Datensätzen werden weiterhin auf Transaktionen wie Verkaufsauftrag, Angebot und Einkaufsbestellung funktionieren.
 + In Finance and Operations-Apps können Sie einen Datensatz für einen Kontakt über das Formular **Kontakt hinzufügen** erstellen. Wenn Sie versuchen, einen neuen Kontakt über das Formular **Kontakt anzeigen** zu erstellen, schlägt die Aktion fehl. Dies ist ein bekanntes Problem.
 

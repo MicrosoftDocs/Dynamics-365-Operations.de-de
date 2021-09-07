@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
+ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720083"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386098"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Was ist neu oder geändert in der Warehouse Management Mobile-App
 
@@ -23,7 +23,23 @@ ms.locfileid: "6720083"
 
 Dieses Thema listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
 
-## <a name="2070"></a>2.0.7.0
+## <a name="version-2090"></a>Version 2.0.9.0
+
+Diese Version behebt ein Problem, bei dem die App nicht mehr reagieren konnte, wenn Benutzer vom Anfang einer Liste nach oben blättern.
+
+## <a name="version-2080"></a>Version 2.0.8.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+
+- Unterstützung für die Funktion [Schrittanweisungen](mobile-app-titles-instructions.md) hinzugefügt, die in Supply Chain Management Version 10.0.21 eingeführt wurde.
+- Hinweis-Animation hinzugefügt, um Benutzern zu zeigen, dass sie Overlays durch Wischen nach unten schließen können.
+- Unterstützung für Funktionstasten in Aktionslisten und Menüs wurde hinzugefügt. Benutzer können eine beliebige Funktionstaste drei Sekunden lang gedrückt halten, um eine Liste der verfügbaren Befehle zu erhalten.
+- Es wurde ein Problem behoben, das auf einigen Geräten die folgende Fehlermeldung anzeigte: "Es konnte keine passende Ansicht für die angegebene Größe gefunden werden."
+- Es wurde ein Problem behoben, bei dem der Vollbildmodus nicht immer funktionierte, wenn die Bildschirmtastatur verwendet wurde.
+- Es wurde ein Problem behoben, bei dem das Wischen über die Seite auf Windows-Geräten nicht funktionierte.
+- Verschiedene Probleme behoben, die dazu führten, dass das System nicht mehr reagierte, wurden behoben.
+
+## <a name="version-2070"></a>Version 2.0.7.0
 
 ### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Neue Funktionen, Fehlerbehebungen und Verbesserungen in Version 2.0.7.0
 

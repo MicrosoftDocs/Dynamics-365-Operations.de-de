@@ -1,8 +1,8 @@
 ---
 title: Mitarbeiter-Self-Service konfigurieren
 description: In Microsoft Dynamics 365 Human Resources können Sie Kacheln für die Navigation auf oberster Ebene in Mitarbeiter-Self-Service konfigurieren.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cafd89d30ca3876953df099e2e7b7cc9c3e1fdc0f69bb039310434f8d770f6f1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 92a788dd436f4efc16946a47731c9dbce36ab0e9
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721582"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423303"
 ---
 # <a name="configure-employee-self-service"></a>Mitarbeiter-Self-Service konfigurieren
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In Microsoft Dynamics 365 Human Resources können Sie Kacheln für die Navigation auf oberster Ebene in Mitarbeiter-Self-Service konfigurieren. Vorteilsplan-Kacheln führen Benutzer zu Vorteilsplänen, auf die Sie Anrecht haben.
+In Microsoft Dynamics 365 Human Resources können Sie Kacheln für die Navigation auf oberster Ebene im **Mitarbeiter-Self-Service** konfigurieren. Vorteilsplan-Kacheln führen Benutzer zu Vorteilsplänen, auf die Sie Anrecht haben.
 
 ## <a name="set-up-a-benefit-plans-tile"></a>Vorteilsplan-Kachel einrichten
 
@@ -39,9 +39,9 @@ In Microsoft Dynamics 365 Human Resources können Sie Kacheln für die Navigatio
    | Feld | Beschreibung |
    | --- | --- |
    | **Kachelkennung** | Der eindeutige Bezeichner für die Kachel. |
-   | **Beschriftungstext für Kacheln** | Der Text, der auf der Kachel im Self-Service angezeigt wird. |
+   | **Beschriftungstext für Kacheln** | Der Text, der für die Kachel in **Mitarbeiter-Self-Service** erscheinen soll. |
    | **Beschreibung** | Eine Beschreibung der Kachel. |
-   | **Internetadresse** | Geben Sie die URL zur Mitarbeiter-Self-Service-Seite ein. |
+   | **Internetadresse** | Geben Sie die URL zu der Seite **Mitarbeiter-Self-Service** ein. |
    | **Kachelgröße** | Die Größe der Kachel: Klein, Mittel oder Groß. |
    | **Vorgabe** | Gibt an, ob die Seite in einem neuen Fenster oder im aktuellen Fenster geöffnet werden soll. |
    | **Kachelhintergrundbild** | Die URL des Bildes, das für die Kachel verwendet werden soll (optional). |
@@ -61,9 +61,9 @@ In Microsoft Dynamics 365 Human Resources können Sie Kacheln für die Navigatio
    | Feld | Beschreibung |
    | --- | --- |
    | **Kachelkennung** | Der eindeutige Bezeichner für die Kachel. |
-   | **Beschriftungstext für Kacheln** | Der Text, der auf der Kachel im Self-Service angezeigt wird. |
+   | **Beschriftungstext für Kacheln** | Der Text, der für die Kachel in **Mitarbeiter-Self-Service** erscheinen soll. |
    | **Beschreibung** | Eine Beschreibung der Kachel. |
-   | **Internetadresse** | Geben Sie die URL zur Mitarbeiter-Self-Service-Seite ein. |
+   | **Internetadresse** | Geben Sie die URL zu der Seite **Mitarbeiter-Self-Service** ein. |
    | **Kachelgröße** | Die Größe der Kachel: Klein, Mittel oder Groß. |
    | **Vorgabe** | Gibt an, ob die Seite in einem neuen Fenster oder im aktuellen Fenster geöffnet werden soll. |
    | **Kachelhintergrundbild** | Die URL des Bildes, das für die Kachel verwendet werden soll (optional). |

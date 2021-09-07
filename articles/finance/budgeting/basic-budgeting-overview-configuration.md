@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f2144d2ca9b2f5e06f0a21f6f97b7ca6440ffe8ce300bdbf329279505059459
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 849b1202ea2c0080f5fc5bacba1f95180fc4008a
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720597"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343655"
 ---
 # <a name="budgeting-overview"></a>Budgetierungsüberblick
 
@@ -38,7 +38,7 @@ Es gibt mehrere Möglichkeiten zum Erstellen von Budgetregistereinträgen:
 
 -   Geben Sie die Dokumentinformationen auf der Seite **Budgeterfassungseinträge** manuell ein.
 -   Verwenden Sie die Microsoft Excel-Vorlage, die geöffnet werden kann, indem Sie auf der Seite **Budgeterfassungseinträge** auf die Schaltfläche **In Excel öffnen** klicken.
--   Verwenden Sie die **Budgetkontoeinträge** Datenentität in der Datenverwaltung, um Budgetregistereinträge zu importieren. Sie sollten in Betracht ziehen, diese Methode anzuwenden und den **Prozessparameter** **Set-basiert** setzen,  wenn viele Budgetkontoeinträge in das System importiert werden müssen.
+-   Verwenden Sie die **Budgetkontoeinträge** Datenentität in der Datenverwaltung, um Budgetregistereinträge zu importieren. Sie sollten in Betracht ziehen, diese Methode zu verwenden und den Parameter **Basierte Verarbeitung festlegen** einzuschalten, wenn Sie viele Budgetkonteneinträge in das System importieren müssen.
 -   Wenn das Unternehmen Planungsfunktionen plant, um Budgetdaten vorzubereiten, können Sie den periodischen Prozess **Budgetregistereintrag erstellen** verwenden.
 
 Der Budgetregistereintrag wird als abgeschlossen betrachtet, wenn die Budgetsalden aktualisiert wurden. Auf der Seite **Budgeterfassungseinträge** klicken Sie auf **Budgetsalden aktualisieren**, um ausgewählte Budgeteinträge oder Mehrfacheinträge zu machen. Nachdem Sie die Budgetsalden aktualisiert haben, wird der Status des Budgetregistereintrags auf **Abgeschlossen** gesetzt. Ein abgeschlossener Budgetregistereintrag kann nicht erneut zum Bearbeiten geöffnet werden. Wenn die Budgetdaten angepasst werden müssen, müssen Sie einen neuen Budgetregistereintrag erstellen, anstatt die Daten im abgeschlossenen Budgetregistereintrag zu korrigieren.
@@ -50,7 +50,7 @@ Wenn es Richtlinien gibt, die die Genehmigung von Budgetregistereinträgen basie
 
 Wählen Sie auf der Seite **Budgetierungsdimensionen** Finanzdimensionen, die für die Budgetierung basierend auf den im Kontenplan verwendeten Dimensionen verwendet werden. Sie können für die Budgetierung alle Finanzdimensionen oder eine Auswahl davon auswählen.
 
-Definieren Sie ein *Budgetmodell*, das allen oder einigen Budgets entspricht. Sie können ein einziges Budgetmodell für alle Budgetregistereinträge verwenden. Alternativ können Sie separate Modelle erstellen, die auf dem Budgettyp, dem geografischen Standort oder einen beliebigen anderen Methode, mit der ein Budget klassifiziert werden kann, basiert. 
+Definieren Sie ein *Budgetmodell*, das allen oder einigen der Budgets entspricht. Sie können ein einziges Budgetmodell für alle Budgetregistereinträge verwenden. Alternativ können Sie separate Modelle erstellen, die auf dem Budgettyp, dem geografischen Standort oder einen beliebigen anderen Methode, mit der ein Budget klassifiziert werden kann, basiert. 
 
 > [!NOTE] 
 > Wenn die Budgetsteuerung verwendet wird, können Sie nur ein Budgetmodell einer bestimmten Zeitspanne für den Budgetzyklus zuordnen. 

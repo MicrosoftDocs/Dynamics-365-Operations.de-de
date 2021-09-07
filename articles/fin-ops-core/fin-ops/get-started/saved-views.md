@@ -2,7 +2,7 @@
 title: Gespeicherte Ansichten
 description: In diesem Thema wird beschrieben, wie Sie die gespeicherten Ansichtsfunktionen verwenden.
 author: jasongre
-ms.date: 05/17/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: dd658aeb8964907fe9f950fe2a6474c5df7e80b74986ddf332286a2f89bc0aeb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9cca56a108177520f4aebea03f7f4d776f46fa3f
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752300"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344343"
 ---
 # <a name="saved-views"></a>Gespeicherte Ansichten
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Einführung
 
@@ -48,6 +48,8 @@ Es gibt zwei Größenvarianten der Ansichts-Auswahl:
  
 Wenn Sie den Ansichtsnamen auswählen, wird die Ansichtsauswahl geöffnet und zeigt die Liste der verfügbaren Ansichten für diese Seite an.
 
+**Version 10.0.21 oder höher:** Wenn die Funktion **Verbesserte Unterstützung juristischer Entitäten für gespeicherte Ansichten** eingeschaltet ist, zeigt der Ansichten-Selektor die verfügbaren Ansichten in zwei Abschnitten an. Der erste Abschnitt zeigt alle Ansichten, die spezifisch für die aktuelle juristische Entität sind, und der zweite zeigt Ansichten, die für alle juristischen Entitäten verfügbar sind. Der erste Abschnitt ist nur sichtbar, wenn es für die Seite juristische Entitäten-spezifische Ansichten gibt.
+
 - **Standardansicht** – Die Ansicht **Standard** ist die einsatzbereite Ansicht der Seite, auf der keine Personalisierungen angewendet werden.
 - **Persönliche Ansichten** – Die Ansichten ohne Vorhängeschlösser stellen Ihre persönlichen Ansichten dar. Dies sind Ansichten, die Sie entweder erstellt haben oder die IHnen ein Administrator zugewiesen hat.
 - **Gesperrte Ansichten** – Neben einigen Ansichten (wie die Ansicht **Standard** und Ansichten, die für Ihre Rolle veröffentlicht werden) wird ein Vorhängeschlosssymbol in der Ansichtsauswahl angezeigt. Dieses Symbol zeigt an, dass Sie die Ansichten nicht bearbeiten können. Allerdings werden Änderungen, die die Seitenverwendung widerspiegeln, automatisch gespeichert. Diese Änderungen umfassen Änderungen an der Breite einer Rasterspalte und Änderungen am erweiterten oder reduzierten Status eines Inforegisters. Wenn Sie Personalisierungsrechte haben, können Sie die Aktion **Speichern unter** verwenden, um eine persönliche Ansicht zu erstellen, die auf einer gesperrten Ansicht basiert.
@@ -68,15 +70,18 @@ Wenn Sie die diese Änderungen speichern möchten, führen Sie die folgenden Sch
 3. Um eine neue Ansicht zu erstellen.
 
     1. Wählen Sie **Speichern unter**. 
-    2. Geben Sie einen Namen und eine (optionale) Beschreibung ein.
-    3. Wählen Sie **Speichern**.
+    2. Geben Sie im Bereich **Ansicht speichern unter** einen Namen und optional eine Beschreibung für die Ansicht ein.
+    3. Wenn diese Ansicht Ihre Standardansicht sein soll, wählen Sie **Als Standard speichern**. Weitere Informationen über Standardansichten finden Sie im folgenden Abschnitt [Ändern der Standardansicht](#changing-the-default-view). 
+    4. **Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung für juristische Entitäten bei gespeicherten Ansichten** eingeschaltet ist, können Sie auswählen, ob diese Ansicht für alle juristischen Entitäten oder nur für eine Teilmenge von ihnen verfügbar sein soll.
+    5. Wählen Sie **Speichern** aus.
 
 ## <a name="changing-the-default-view"></a>Die Standardansicht ändern
 
 Die Standardansicht ist die Ansicht, die das System beim ersten Öffnen der Seite zu öffnen versucht. Sie sollten die Standardansicht auf jene Ansicht festlegen, die Sie voraussichtlich am häufigsten verwenden werden. 
 
 > [!NOTE]
-> Es gibt eine einzige globale Standardansicht für alle Unternehmen. Wenn Sie die Standardansicht ändern, wird diese Ansicht standardmäßig geöffnet, unabhängig von der juristischen Person, in der Sie sich gerade befinden. 
+> - In der Basisfunktion **Gespeicherte Ansichten** gibt es eine einzige, globale Standardansicht für alle juristischen Entitäten. Wenn Sie die Standardansicht ändern, wird diese Ansicht standardmäßig geöffnet, unabhängig von der juristischen Person, in der Sie sich gerade befinden.
+> - **Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung für juristische Entitäten für gespeicherte Ansichten** eingeschaltet ist, kann jede juristische Entität ihre eigene Standardansicht pro Seite haben.
 
 Um die Standardansicht für eine Seite zu ändern, führen Sie die folgenden Schritte aus:
 
@@ -86,20 +91,23 @@ Um die Standardansicht für eine Seite zu ändern, führen Sie die folgenden Sch
 
 Möchten Sie eine neue Ansicht (mithilfe der Aktivität **Speichern unter**) erstellen, können Sie diese neue Ansicht zur Standardansicht machen, indem Sie die Option **Als Standard festsetzen** festlegen, bevor Sie die Ansicht speichern.
 
-Beachten Sie, dass in einigen Fällen die der Standardansicht zugeordnete Abfrage beim ersten Öffnen einer Seite nicht ausgeführt wird. Wenn Sie also beispielsweise über eine Kachel die Seite öffnen, wird die Abfrage der Kachel unabhängig von der Abfrage, die der Standardansicht zugeordnet ist, ausgeführt. Wenn Sie darüber hinaus eine Seite öffnen, die eine **Standard**-Ansicht aufweist, für die bereits eine Abfrage definiert ist, wird die ursprüngliche Abfrage anstelle der Abfrage der Standardansicht ausgeführt. In diesem Fall erhalten Sie beim Laden der Ansicht eine Informationsnachricht. Wenn Sie die Ansicht wechseln, nachdem die Seite geladen wurde, sollte die Ansichtsabfrage wie erwartet ausgeführt werden können. In Version 10.0.10 und höher enthält die Informationsnachricht, die Sie erhalten, eine eingebettete Aktion, mit der Sie die Abfrage der Standardansicht direkt laden können.
+> [!WARNING]
+> In einigen Fällen wird die Abfrage, die mit der Standardansicht verbunden ist, nicht ausgeführt, wenn Sie eine Seite zum ersten Mal öffnen. Wenn Sie also beispielsweise über eine Kachel die Seite öffnen, wird die Abfrage der Kachel unabhängig von der Abfrage, die der Standardansicht zugeordnet ist, ausgeführt. Wenn Sie außerdem eine Seite öffnen, die eine **Standardansicht** hat, die bereits eine definierte Abfrage hat, wird die ursprüngliche Abfrage anstelle der Abfrage der Standardansicht ausgeführt. In diesem Fall erhalten Sie beim Laden der Ansicht eine Informationsnachricht. Wenn Sie die Ansicht wechseln, nachdem die Seite geladen wurde, sollte die Ansichtsabfrage wie erwartet ausgeführt werden können. In Version 10.0.10 und höher enthält die Informationsnachricht, die Sie erhalten, eine eingebettete Aktion, mit der Sie die Abfrage der Standardansicht direkt laden können.
 
 ## <a name="managing-personal-views"></a>Verwalten von persönlichen Ansichten
 
 Das Dialogfeld **Verwalten Sie meine Ansichten** bietet grundlegende Verwaltungsfunktionen für Ihre persönlichen Ansichten und die Reihenfolge in der Ansichts-Auswahl. Um diese Seite zu öffnen, wählen Sie den Ansichtsnamen, um das Ansichtsauswahl-Dropdownmenü zu öffnen, wählen Sie **Weiter** und anschließend **Verwalten meiner Ansichten** aus.
 
+**Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung juristischer Entitäten für gespeicherte Ansichten** eingeschaltet ist, zeigt der Abschnitt **Meine Ansichten** der Dialogbox **Meine Ansichten verwalten** die verfügbaren Ansichten für die Seite in Abschnitten an. Alle Ansichten, die spezifisch für die aktuelle juristische Entität sind, werden in einem eigenen Abschnitt angezeigt. Der Abschnitt **Globale Ansichten** wird immer angezeigt, so dass Sie die Ansichten verwalten können, die für die Seite in allen juristischen Entitäten verfügbar sind. 
+
 Für eine Liste der verfügbaren Ansichten für diese Seite sind die folgenen Aktivitäten verfügbar.
 
-- **Standardansicht ändern** – Verwenden Sie die Aktion **Als Standard festlegen**, um die derzeit ausgewählte Ansicht als Standardansicht für diese Seite festzulegen.
+- **Standardansicht ändern** – Verwenden Sie die Aktion **Als Standard festlegen**, um die derzeit ausgewählte Ansicht als Standardansicht für diese Seite festzulegen. Wenn die Funktion **Unterstützung für gespeicherte Ansichten für juristische Entitäten importieren** eingeschaltet ist, können Sie im Abschnitt **Globale Ansichten** eine Ansicht zur Standardansicht für die aktuelle juristische Entität oder für alle juristischen Entitäten machen.
 - **Ansichten neu ordnen** – Nutzen Sie die Aktionen **Nach oben** und **Nach unten**, um die Ansichten in einer bestimmten Reihenfolge neu anzuordnen.
 - **Ansicht umbenennen** – Verwenden Sie die Aktion **Umbenennen**, um den Namen der momentan ausgewählten persönlichen Ansicht zu ändern. Diese Aktion wird für die gesperrte Ansichten deaktiviert. 
 - **Ansicht löschen** – Verwenden Sie die Aktion **Löschen**, um die zurzeit ausgewählte Ansicht dauerhaft von der Seite zu löschen. Es gibt keine Möglichkeit, eine Ansicht wieder herzustellen, nachdem sie gelöscht wurde.
 
-Sämtliche Änderungen, die an diesem Dialogfeld vorgenommen werden, treten in Kraft, wenn Sie die Schaltfläche **Speichern** auswählen.
+Alle Änderungen, die Sie in diesem Dialogfeld vornehmen, werden wirksam, nachdem Sie die Schaltfläche **Aktualisieren** gewählt haben.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Verwalten von Personalisierungen auf Organisationsebene mit Ansichten
 
@@ -128,24 +136,28 @@ Führen Sie folgende Schritte aus, um eine Ansicht zu veröffentlichen.
 6. Legen Sie fest, ob die Ansicht als Standardansicht für die ausgewählten Benutzer veröffentlicht werden soll. Wenn eine Ansicht zur Standardansicht gemacht wird, wird sie beim nächsten Öffnen der Zielseite angezeigt. Die einzelne globale Standardansicht jedes Zielbenutzers wird geändert. Benutzer können jedoch ihre Standardansicht nach dem Veröffentlichen weiterhin ändern.
 
     > [!NOTE]
-    > Beachten Sie Folgendes, wenn Sie eine Ansicht als Standardansicht veröffentlichen: 
-    > -  Wenn Sie eine Ansicht als Standardansicht für alle oder gewisse juristische Personen veröffentlichen, können Sie die einzelne **globale** Standardansicht jedes Zielbenutzers ändern. 
-    > -  Wenn ein Benutzer Rollen hat, in denen mehrere Ansichten als Standardansicht veröffentlicht werden, wird die zuletzt veröffentlichte Ansicht als Standardansicht des Benutzers verwendet. 
+    > Beachten Sie das folgende Verhalten, wenn Sie eine Ansicht als Standardansicht veröffentlichen:
+    >
+    > - Wenn Sie eine Ansicht als Standardansicht für einige oder alle juristischen Entitäten veröffentlichen, tritt das folgende Verhalten auf:
+    >
+    >    - Wenn nur die Basisfunktion **Gespeicherte Ansichten** eingeschaltet ist, wird die einzelne, globale Standardansicht für jeden anvisierten Benutzer geändert. 
+    >    - **Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung von juristischen Entitäten für gespeicherte Ansichten** eingeschaltet ist und Sie die Ansicht für eine Untergruppe von juristischen Entitäten veröffentlichen, wird die Standardansicht für diese juristischen Entitäten für jeden gezielten Benutzer geändert.
+    >
+    > - Wenn ein Benutzer Rollen hat, in denen mehrere Ansichten als Standardansicht veröffentlicht werden, wird die zuletzt veröffentlichte Ansicht als Standardansicht des Benutzers verwendet. 
 
 8. Fügen Sie die Sicherheitsrollen hinzu, die den Benutzer entsprechen, auf die diese Ansicht ausgerichtet ist. 
 9. Bestimmen Sie, ob Sie die Ansicht in den untergeordneten Rollen jeder ausgewählten Sicherheitsrolle veröffentlichen möchten. Wenn Sie dies tun, aktivieren Sie das Kontrollkästchen **Untergeordnete Rollen einschließen** in der Zeile für die entsprechenden Sicherheitsrollen. Beachten Sie, dass dieses Kontrollkästchen für Rollen ohne untergeordnete Rollen nicht verfügbar ist.
 10. Fügen Sie juristische Personen hinzu, für die diese Ansicht verfügbar sein sollte. 
 
     > [!NOTE]
-    > Beachten Sie die folgenden Erwartungen, wenn Sie eine Ansicht für eine juristische Person veröffentlichen.
-    > 
-    > Wenn Sie eine Ansicht für eine juristische Person veröffentlichen, diese jedoch nicht als Standardansicht veröffentlichen, wird den Benutzern die Ansicht in der Ansichtsauswahl zunächst nur für die angegebenen juristischen Personen angezeigt. Nachdem die Ansicht zum ersten Mal geladen wurde, befindet sie sich unabhängig von der juristischen Person immer in der Ansichtsauswahl des Benutzers für diese Seite.
+    > Beachten Sie das folgende Verhalten, wenn Sie eine Ansicht für eine bestimmte juristische Entität veröffentlichen, aber diese Ansicht nicht als Standardansicht veröffentlichen:
+    >
+    > - Wenn nur die Basisfunktion **Gespeicherte Ansichten** eingeschaltet ist, zeigt die Ansichtsauswahl des Benutzers für die Seite die Ansicht zunächst nur für die angegebenen juristischen Entitäten an. Nachdem die Ansicht jedoch zum ersten Mal geladen wurde, zeigt der Ansichts-Selektor für die Seite diese immer an, unabhängig von der juristischen Entität.
+    > - **Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung von juristischen Entitäten für gespeicherte Ansichten** eingeschaltet ist, zeigt der Ansichtsselektor die Ansicht immer nur für die angegebenen juristischen Entitäten an.
 
 11. Wählen Sie **Veröffentlichen** aus.
 
 Beachten Sie, dass es in einer Umgebung einige Zeit in Anspruch nehmen kann (bis zu einer Stunde) bis Benutzer die veröffentlichte Ansicht sehen.
-
- 
 
 ## <a name="modifying-a-published-view"></a>Ändern einer veröffentlichten Ansicht
 
@@ -193,6 +205,7 @@ Obwohl auf jeder Seite einige Verwaltungsfunktionen angezeigt werden, wie in die
 Benutzer, die Zugriff auf die Seite **Personalisierung** haben, können die persönlichen oder Organisationsansichten auch importieren, indem sie die Schaltfläche **Ansichten importieren** im Aktivitätsbereich verwenden. Für Organisationsansichten können Sie **Sofort veröffentlichen** auswählen, um die Ansichten für Benutzer ohne zusätzliche explizite Veröffentlichung verfügbar zu machen.
 
 ## <a name="known-issues"></a>Bekannte Probleme
+
 Eine Liste bekannter Probleme mit gespeicherten Ansichten finden Sie unter [Formulare, die gespeicherte Ansichten vollständig verwenden, erstellen](../../dev-itpro/user-interface/understanding-saved-views.md).
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
@@ -232,5 +245,11 @@ Bei Seiten mit Auswahlmöglichkeiten für große Ansichten (sowohl Personalisier
 - Wenn Sie also beispielsweise über eine Kachel zu einer Seite navigieren, wird die Abfrage für die Kachel unabhängig von der Abfrage, die der Standardansicht zugeordnet ist, ausgeführt. Wenn Sie diese Kachel erstellt haben, nachdem Ansichten aktiviert wurden, wird durch Auswahl einer Kachel die Seite mit der dieser Kachel zugeordneten Ansicht geöffnet.
 - Wenn Sie zu einer Seite navigieren und dieser Eingangspunkt bereits eine definierte Abfrage besitzt, wird die ursprüngliche Abfrage anstelle der Abfrage der Standardansicht ausgeführt. Wenn dies der Fall ist, sollten Sie beim Laden der Ansicht durch eine Informationsmeldung benachrichtigt werden. Sie können auch prüfen, indem Sie zu dieser Ansicht wechseln, nachdem die Seite geladen wird, damit sollte die Ansichtsabfrage unabhängig ausgeführt werden.
 
+### <a name="why-is-a-view-that-was-published-for-a-specific-legal-entity-visible-in-all-legal-entities"></a>Warum ist eine Ansicht, die für eine bestimmte juristische Entität veröffentlicht wurde, in allen juristischen Entitäten sichtbar?
+
+Wenn Sie eine Ansicht für eine bestimmte juristische Entität veröffentlichen, aber diese Ansicht nicht als Standardansicht veröffentlichen, tritt folgendes Verhalten auf:
+
+- Wenn nur die Basisfunktion **Gespeicherte Ansichten** eingeschaltet ist, zeigt die Ansichtsauswahl des Benutzers für die Seite die Ansicht zunächst nur für die angegebenen juristischen Entitäten an. Nachdem die Ansicht jedoch zum ersten Mal geladen wurde, zeigt der Ansichts-Selektor für die Seite diese immer an, unabhängig von der juristischen Entität. Dieses Verhalten tritt auf, weil Benutzer ihre eigene persönliche Kopie der veröffentlichten Ansicht erhalten, wenn diese geladen wird, und persönliche Ansichten global sind.
+- **Version 10.0.21 oder später:** Wenn die Funktion **Verbesserte Unterstützung von juristischen Entitäten für gespeicherte Ansichten** eingeschaltet ist, zeigt der Ansichtsselektor die Ansicht immer nur für die angegebenen juristischen Entitäten an. Dieses Verhalten tritt auf, weil die Funktion ermöglicht, dass Ansichten (einschließlich persönlicher Ansichten) mit bestimmten juristischen Entitäten verknüpft werden können.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

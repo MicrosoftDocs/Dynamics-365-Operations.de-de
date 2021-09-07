@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 3040406af731e2e35fff456804f893108e7eb896bfa0132082986c09ad128952
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b75dcb7d56648f3be291cb1c09ec57a53477ec0
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777670"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344173"
 ---
 # <a name="wave-label-printing"></a>Zyklusbeschriftungsdruck
 
@@ -506,7 +506,7 @@ Sie können diese Wellenetiketten erneut drucken, indem Sie zu **Lagerortverwalt
 
 ## <a name="scenario-3-wave-label-printing-for-multi-tiered-labels"></a>Szenario 3: Wellenetikettendruck für mehrstufige Etiketten
 
-Dieses Szenario zeigt, wie die Funktion zum Drucken von Wellenetiketten verwendet wird, wenn für die Lagerhaltungsprozesse mehrere Ebenen von Adressetiketten erforderlich sind. Beispielsweise müssen möglicherweise separate Etiketten für Kartons und Paletten gedruckt werden, und ein Unterbrechungsetikett muss möglicherweise für eine gesamte Lieferung gedruckt werden. Unterbrechungsetiketten sind separate Typen von Etiketten, die als Trennmarke zwischen Rollen und Containern verwendet werden können, z. B. Etiketten für die Lieferungs-ID und einen Strichcode, damit die Etiketten nach dem Drucken leicht sortiert werden können.
+Dieses Szenario zeigt, wie die Funktion zum Drucken von Wellenetiketten verwendet wird, wenn für die Lagerhaltungsprozesse mehrere Ebenen von Adressetiketten erforderlich sind. Beispielsweise müssen möglicherweise separate Etiketten für Kartons und Paletten gedruckt werden, und ein Unterbrechungsetikett muss möglicherweise für eine gesamte Lieferung gedruckt werden. Unterbrechungsetiketten sind ein separater Etikettentyp, der als Trenner zwischen Rollen und Containern verwendet werden kann, z. B. Etiketten für die Sendungs-ID und einen Barcode, so dass die Etiketten nach dem Druck leicht sortiert werden können.
 
 Der Hauptunterschied zwischen der Konfiguration dieses Szenarios und der Konfiguration von Szenario 1 besteht neben der Tatsache, dass Unterbrechungsetiketten aktiviert sind, darin, dass mehrere Wellenetikettentypen den Wellenetikettenvorlagen und Einheitsnummernkreisgruppen-Positionen zugeordnet werden müssen. Um diese Konfiguration durchzuführen, richten Sie die folgenden Elemente für dieses Szenario ein:
 

@@ -1,8 +1,8 @@
 ---
 title: Systemanforderungen
-description: Dieser Artikel beschreibt die Anforderungen für Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+description: In diesem Thema werden die Systemanforderungen für Microsoft Dynamics 365 Human Resources aufgeführt.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 52ef0176926fd6c5c5d2bc852080dde5273d05d0f2edd20e091d97c71e503dce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 15770595a0639c03df1138ec25010ca8168bd9a8
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761091"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393472"
 ---
 # <a name="system-requirements"></a>Systemanforderungen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dieser Artikel beschreibt die Anforderungen für Microsoft Dynamics 365 Human Resources. Es werden auch die Länder und Regionen beschrieben, in denen Human Resources verfügbar ist, außerdem werden Informationen zu Sprachen und zur Lokalisierung für Human Resourcessdaten bereitgestellt.
+In diesem Thema werden die Systemanforderungen für Microsoft Dynamics 365 Human Resources aufgeführt. Es werden auch die Länder und Regionen beschrieben, in denen Human Resources verfügbar ist, außerdem werden Informationen zu Sprachen und zur Lokalisierung für Human Resourcessdaten bereitgestellt.
 
 ## <a name="supported-web-browsers"></a>Unterstützte Webbrowser
 
-Human Resources kann in den folgenden Webbrowsern ausgeführt werden, die auf den angegebenen Betriebssysteme ausgeführt werden: 
+Benutzer können auf Microsoft Dynamics 365 Human Resources mit jedem der folgenden Webbrowser zugreifen, die auf den angegebenen Betriebssystemen ausgeführt werden: 
 
 *   Microsoft Edge (letzte öffentlich verfügbare Version) unter Windows 10
 *   Internet Explorer 11 unter Windows 10, Windows 8.1 oder Windows 7
@@ -39,14 +39,17 @@ Human Resources kann in den folgenden Webbrowsern ausgeführt werden, die auf de
 
 Um die neueste Version für jeden Webbrowser zu suchen, wechseln Sie zur Website des Softwareherstellers. 
 
-> [!NOTE]
-> * Wenn Sie Bilder aufzuzeichnen, die über die Aufgabenaufzeichnung generiert wurden, und diese in Microsoft Word-Dokumente aufnehmen, müssen Sie eine Chrome-Erweiterung installiert haben. 
-> * Der Workflow-Editor wird als ClickOnce-Anwendung gestartet. Nur Microsoft Edge und Internet Explorer (auf einer unterstützten Version von Microsoft WindowsClickOnce-Bewerbungen) unterstützen. Die Workflow-Editor-ClickOnce-Anwendung erfordert ein kompatibles 64-Bit-Betriebssystem.
-> * Um PDF-Dateien in der Vorschau anzeigen, sollten Sie moderne Browser wie Microsoft Edge verwenden (aktuellste verfügbare Version) unter Windows 10 oder Google Chrome (aktuellste verfügbare Version) unter Windows 10, 8,1, Windows 8, Windows 7 oder Google Nexus-10 Tablet.
->   Netzwerkanforderungen
-> * Human Resources wurde für Netzwerke mit eine Latenzzeit von 250-300 Millisekunden (ms) oder weniger entwickelt. Diese Latenzzeit ist die Latenzzeit von einem Browser-Client zum Microsoft Azure-Rechenzentrum, das Human Resources hostet. Wir empfehlen, die Netzwerklatenz unter [www.azurespeed.com](https://www.azurespeed.com "Azure Latenztest") zu testen.
-> * Bandbreitenanforderungen für Human Resources hängen vom Szenario ab. In den meisten Fällen wird eine Bandbreite von mehr als 50 Kilobytes pro Sekunde (kbps) benötigt.
-> 
+## <a name="special-considerations"></a>Besondere Überlegungen
+
+* Damit Task Recorder Screenshots erfassen und in erzeugte Microsoft Word-Dokumente einfügen kann, müssen Sie eine Vorabversion der Chrome-Erweiterung installieren
+* Der Workflow-Editor wird als ClickOnce-Anwendung gestartet. Nur Microsoft Edge und Internet Explorer (auf einer unterstützten Version von Microsoft WindowsClickOnce-Bewerbungen) unterstützen. Die Workflow-Editor-ClickOnce-Anwendung erfordert ein kompatibles 64-Bit-Betriebssystem.
+* Um PDF-Dateien in der Vorschau anzeigen, sollten Sie moderne Browser wie Microsoft Edge verwenden (aktuellste verfügbare Version) unter Windows 10 oder Google Chrome (aktuellste verfügbare Version) unter Windows 10, 8,1, Windows 8, Windows 7 oder Google Nexus-10 Tablet.
+
+## <a name="network-requirements"></a>Netzwerkanforderungen
+
+* Human Resources wurde für Netzwerke mit eine Latenzzeit von 250-300 Millisekunden (ms) oder weniger entwickelt. Diese Latenzzeit ist die Latenzzeit von einem Browser-Client zum Microsoft Azure-Rechenzentrum, das Human Resources hostet. Wir empfehlen, die Netzwerklatenz unter [www.azurespeed.com](https://www.azurespeed.com "Azure Latenztest") zu testen.
+* Bandbreitenanforderungen für Human Resources hängen vom Szenario ab. Typische Szenarien erfordern eine Bandbreite von mehr als 50 Kilobytes pro Sekunde (KBps).
+ 
 > [!WARNING]
 > Berechnen Sie Bandbreitenanforderungen von einem Clientstandort nicht, indem Sie die Anzahl der Benutzer mit den Mindestbandbreitenanforderungen multiplizieren. Die gleichzeitige Nutzung eines bestimmten Standorts ist schwierig zu berechnen. Kunden, die sich Gedanken machen über die Bandbreitenanforderungen, sollten eine Testversion von Human Resources verwenden.
 
@@ -63,6 +66,5 @@ Sie können eine PDF-Datei der Länder, Regionen der und der von Human Resources
 > Auch wenn die Benutzeroberfläche in andere Sprachen lokalisiert ist, werden alle Benutzerdaten in der Sprache gespeichert, in der sie eingegeben wurden. Sie können E-Mails und Vorlagen in anderen Sprachen erstellen, aber Daten wie Planungsinformationen sind derzeit nur auf Englisch verfügbar.
 
 Wenn Sie Entwickler sind, der an dem Erstellen länder- oder regionsspezifischer Anpassungen interessiert ist, oder an der Erstellung einer Lösung für ein Land oder eine Region, die derzeit nicht von Microsoft unterstützt wird, finden weitere Informationen unter [Globalisierung](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -10,20 +10,19 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 51f0ab8f76fe3bce91d6e4ed56bdfa8529c1aacbd326a8b4b3d80615f872f8c6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729550"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403890"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Quellensteuererklärung für Ägypten (EG-00005)
 
 [!include[banner](../includes/banner.md)]
-
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Übersicht
@@ -113,7 +112,7 @@ Führen Sie die folgenden Schritte zum Generieren des Steuererklärungsberichts 
 1. Gehen Sie zu **Steuer** > **Erklärungen** > **Quellensteuer** > **Quellensteuerzahlung*.
 2. Wählen Sie den Abrechnungszeitraum und dann das Anfangsdatum für den Bericht aus. 
 3. Geben Sie Transaktionsdatum ein, und wählen Sie **OK** aus.
-4. Wählen Sie im daraufhin angezeigten Dialogfeld einen oder mehrere der Formulartypen **Formular Nr. 41**, **Formular Nr. 11** oder **Keiner** aus. Wenn Sie **Keiner** auswählen, wird der Standardbericht generiert. 
+4. Wählen Sie in dem sich öffnenden Dialogfeld eines oder mehrere der Formulare **Formular Nr. 41**, **Formular Nr. 11** oder **Keine**. Wenn Sie **Keiner** auswählen, wird der Standardbericht generiert. 
 5. Wählen Sie die Sprache aus. Alle Berichte werden in **en-us** und **ar-eg** übersetzt.
 6. Geben Sie die Filiale und den Namen der Bank ein, bei der die Steuerzahlung erfolgen soll.
 7. Wählen Sie den Geschäftstyp aus und geben Sie die Scheck- und Belegnummern ein. 

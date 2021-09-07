@@ -8,14 +8,13 @@ audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 060734154607263b5fed80b21fc9355b513ea26e3b1be88498310905531dceaa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2cfe6d882c5de763164ddb4a344cba2991c88783
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729042"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416650"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Einrichtung von dualem Schreiben aus Lifecycle Services
 
@@ -69,7 +68,7 @@ Um duales Schreiben für eine vorhandene Dataverse Umgebung einzurichten, müsse
 
 ## <a name="linking-mismatch"></a>Verknüpfungskonflikt
 
-Es ist möglich, dass Ihre LCS-Umgebung mit einer Dataverse-Instanz verknüpft ist, während Ihre Umgebung für duales Schreiben mit einer anderen Dataverse-Instanz verknüpft ist. Dieser Verknüpfungskonflikt kann zu unerwartetem Verhalten und dazu führen, dass Daten an die falsche Umgebung gesendet werden. Die empfohlene Umgebung für duales Schreiben ist diejenige, die im Rahmen der Power Platform-Integration erstellt wird. Langfristig wird dies die einzige Möglichkeit sein, eine Verbindung zwischen den Umgebungen herzustellen.
+Es ist möglich, dass Ihre LCS-Umgebung mit einer Dataverse-Instanz verknüpft ist, während Ihre Umgebung für duales Schreiben mit einer anderen Dataverse-Instanz verknüpft ist. Dieser Verknüpfungskonflikt kann zu unerwartetem Verhalten und dazu führen, dass Daten an die falsche Umgebung gesendet werden. Es wird empfohlen, die Umgebung zu verwenden, die im Rahmen der Power Platform-Integration erstellt wurde. Langfristig wird dies die einzige Möglichkeit sein, eine Verknüpfung zwischen den Umgebungen herzustellen.
 
 Wenn Ihre Umgebung einen Verknüpfungskonflikt aufweist, zeigt LCS auf Ihrer Umgebungsdetailseite eine Warnung an wie: „Microsoft hat festgestellt, dass Ihre Umgebung über duales Schreiben mit einem anderen Ziel verknüpft ist als in der Power Platform-Integration angeben. Dies wird nicht empfohlen“:
 
@@ -78,6 +77,6 @@ Wenn Ihre Umgebung einen Verknüpfungskonflikt aufweist, zeigt LCS auf Ihrer Umg
 Wenn dieser Fehler auftritt, gibt es je nach Bedarf zwei Möglichkeiten:
 
 + Sie können [Umgebungen für duales Schreiben trennen und erneut verknüpfen (Verknüpfung zurücksetzen oder ändern)](relink-environments.md#scenario-reset-or-change-linking), wie auf der Detailseite Ihrer LCS-Umgebung angegeben. Dies ist die ideale Option, da Sie sie ohne den Microsoft-Support ausführen können.  
-+ Wenn Sie Ihren Link im dualen Schreiben beibehalten möchten, können Sie den Microsoft-Support um Hilfe bitten, um die Power Platform-Integration zu ändern und Ihre bestehende Dataverse-Umgebung zu nutzen, wie im vorherigen Abschnitt dokumentiert.  
++ Wenn Sie Ihre Verknüpfung bei Dual-Write beibehalten möchten, können Sie den Microsoft Support um Hilfe bitten, um die Power Platform-Integration zu ändern, damit Ihre bestehende Dataverse-Umgebung verwendet wird, wie im vorherigen Abschnitt belegt.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

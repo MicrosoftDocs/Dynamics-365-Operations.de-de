@@ -2,7 +2,7 @@
 title: Bilder hochladen
 description: In diesem Thema wird beschrieben, wie Sie Bilder in Microsoft Dynamics 365 Commerce Site Builder hochladen können.
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5f4f84c41e6af23483ccb74a9189cb713016f4ac9d0d9981bf918ca8a71743eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a5607fa70f5d5d28d10bcbd50da11bb96cbf75de
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757397"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423254"
 ---
 # <a name="upload-images"></a>Bilder hochladen
 
@@ -52,10 +52,17 @@ Die Standardnamenskonvention variiert je nach Kategorie:
 - Kategoriebilder sollten „**/Categories/\{CategoryName\}.png**“ genannt werden
 - Kundenbilder sollten „**/Customers/\{CustomerNumber\}.jpg**“ genannt werden
 - Bilder von Mitarbeitern sollten „**/Workers/\{WorkerNumber\}.jpg**“ genannt werden
-- Produktbilder sollten „**/Products/\{ProductNumber\}_000_001.png**“ genannt werden
+- Produktbilder sollten "**/Products/\{ProductNumber\}\_000_001.png**" genannt werden.
     - 001 ist die Bildfolge und kann 001, 002, 003, 004 oder 005 sein
 - Produktvariantenbilder sollten „**/Produkte/\{Produktnummer\} \^ \{Stil\} \^ \{Größe\} \^ \{Farbe\} \^\_000_001.png**“ benannt werden.
-    - Zum Beispiel: 93039 \^ \^ 2 \^ Schwarz \^_000_001.png
+    - Zum Beispiel: 93039 \^ &nbsp;\^ 2 \^ Schwarz \^\_000_001.png
+- Bilder von Produktvarianten mit Dimensionen der Konfiguration sollten "**/Products/\{ProductNumber\} \^ \{Configuration\}\_000_001.png**" genannt werden
+    - Zum Beispiel: 93039 \^ LB8017_000_001.png
+
+> [!NOTE]
+> Bei Bildern von Produktvarianten müssen, wenn der Wert für die Dimensionen leer ist, zwei Leerzeichen zwischen den Carets im Dateinamen stehen.
+
+Die obigen Beispiele verwenden die Standardkonfiguration. Das Trennzeichen und die Dimensionen sind konfigurierbar und die genaue Benennung kann zwischen den Bereitstellungen variieren. Eine Methode, die genaue erforderliche Namenskonvention zu ermitteln, ist die Verwendung der Entwicklerkonsole des Browsers, um die Bildanfragen für die Produktvariante zu untersuchen, während die Produktdimensionen auf der Produktdetailseite (PDP) der Storefront geändert werden.
 
 ## <a name="upload-an-image"></a>Ein Bild hochladen
 

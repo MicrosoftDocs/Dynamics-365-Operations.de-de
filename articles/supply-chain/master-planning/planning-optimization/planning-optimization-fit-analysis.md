@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 52048ea6cced6f670faf13ef07f1288183e6d9b67a016608030f9e192a98faa7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd0fdd677824db823f9bc42f0ad1bdd90cf3b16d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751097"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344977"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Passanalyse zu Planungsoptimierung
 
@@ -51,6 +51,9 @@ Um das Ergebnis der Planungsoptimierungs-Passanalyse anzuzeigen, gehen Sie zu **
 ## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Übersicht möglicher Ergebnisse aus der Fit-Analyse
 
 Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassungsanalyse angezeigt werden können. Nummernzeichen (_\#_) werden durch eine Zahl ersetzt, die die Anzahl der Datensätze angibt, bei denen das Problem aufgetreten ist. Unterstützte Funktionen oder Funktionen in der Vorschau sind ab Version 10.0.9 verfügbar (es sei denn, in der Spalte „Erwartete Verfügbarkeit“ ist eine höhere Versionsnummer aufgeführt).
+
+> [!NOTE]
+> Einige Inkonsistenzen können von der Fit-Analyse der Planungsoptimierung nicht erkannt werden. Weitere Informationen finden Sie unter [Unterschiede zwischen klassischer Produktprogrammplanung und Planungsoptimierung](planning-optimization-differences-with-built-in.md).
 
 | Funktion | Gelistetes Problem | Erläuterung | Erwartete Verfügbarkeit |
 | --- | --- | --- | --- |
@@ -106,7 +109,11 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 
 [Erste Schritte mit der Planungsoptimierung](get-started.md)
 
-[Planhistorie und Planungsprotokolle anzeigen](plan-history-logs.md)
+[Unterschiede zwischen der klassischen Masterplanplanung und der Planungsoptimierung](planning-optimization-differences-with-built-in.md)
+
+[In der Planungsoptimierung nicht verwendete Parameter](not-used-parameters.md)
+
+[Planhistorie und Planungsprotokolle einsehen](plan-history-logs.md)
 
 [Filter auf einen Plan anwenden](plan-filters.md)
 

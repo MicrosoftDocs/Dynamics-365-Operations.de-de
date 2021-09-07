@@ -1,6 +1,6 @@
 ---
 title: Anlagen von "Kreditoren" erstellen und anschaffen
-description: Diese Aufgabenanleitung führt Sie Schritt für Schritt durch die Erstellung und Anschaffung einer Anlage mit dem Einkaufsprozess.
+description: Diese Prozedur führt Sie durch die Erstellung und den Erwerb einer Anlage mit dem Kaufprozess.
 author: saraschi2
 ms.date: 08/13/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 035fa86f0ff09faaa21c561cf7934455a6883cd8a7f917ac95bc7d096294d824
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dbac069362a15b5ab1d2dbf88a732a14a3cf709d
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743000"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394657"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Anlagen von "Kreditoren" erstellen und anschaffen
 
 [!include [banner](../../includes/banner.md)]
 
-Diese Aufgabenanleitung führt Sie Schritt für Schritt durch die Erstellung und Anschaffung einer Anlage mit dem Einkaufsprozess.  Dabei werden der "Buchhalter" und die "Sachbearbeiter Kreditorenkonten" und das Demo-Unternehmen USMF verwendet.
+Diese Prozedur führt Sie durch die Erstellung und den Erwerb einer Anlage mit dem Kaufprozess.  Dabei werden der "Buchhalter" und die "Sachbearbeiter Kreditorenkonten" und das Demo-Unternehmen USMF verwendet.
 
 
 ## <a name="set-fixed-assets-parameters"></a>Anlagenparametern festlegen

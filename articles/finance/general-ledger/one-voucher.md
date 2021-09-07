@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 08ece85c773538283fa31ed72e8af61e2da03845fbaa4e6b0507a65626bce803
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720525"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344057"
 ---
 # <a name="one-voucher"></a>Ein Beleg
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## <a name="what-is-one-voucher"></a>Was ist ein Beleg?
@@ -81,7 +82,7 @@ Auf Grundlage von Unterhaltungen mit Debitoren, hat Microsoft die folgende Liste
 
 Die folgenden Szenarien können nur mithilfe der Funktionalität „Ein Beleg” ausgeführt werden. Wenn Ihre Organisation eines dieser Szenarien hat, müssen Sie mehrere Transaktionen aktivieren, um sie in einen Beleg einzugeben, indem sie die Einstellungen **Mehrere Transaktionen in einem Beleg zulassen** auf der Seite **Hauptbuchparameter** ändern. Diese Funktionslücken werden in späteren Versionen durch andere Funktionen ausgefüllt.
 
-> [!Note]
+> [!NOTE]
 > [Für jedes der folgenden Szenarien muss das Feld **Mehrere Transaktionen innerhalb eines Belegs zulassen** im Feld **Allgemein** Inforegister auf der Seite **Hauptbuchparameter** auf Ja gesetzt sein.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Formular Beitragsdebitorenzahlungszusammenfassung vom Bankkonto
@@ -115,15 +116,7 @@ In diesem Szenario sind die Debitoren im einzelnen Voucher derselbe Debitor, da 
 Wenn die periodische Aufgabe die Preiserstattung vom Debitorenmodul ausgeführt wird, erstellt sie eine Buchung, um den Saldo von einem Debitor zu einem Kreditor zu verschieben. Für dieses Szenario muss ein Beleg verwendet werden, um dem Debitor die Rückerstattung zu geben.
 
 ### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>Erhaltung des Anlagenbestandes: Ausgleichsabschreibung, geteilte Anlage, berechnen der Abschreibung für Abgang
-Mit den folgenden Anlagenbuchungen werden auch mehrere Transaktionen innerhalb eines Einzelbelegs erstellt:
-
-- Eine zusätzliche Anschaffung wird in einer Anlage vorgenommen und die "Ausgleichs" Abschreibung wird berechnet.
-- Eine Anlage wird aufgeteilt.
-- Ein Parameter, um die Abschreibung nach Verwendung zu berechnen wird aktiviert und anschließend wird die Anlage abgeschafft.
-- Ein Anlage-Servicedatum liegt vor dem Anschaffungsdatum. Daher wird einer Abschreibungsregulierung gebucht.
-
-> [!Note]
-> Achten Sie bei der Erfassung von Transaktionen darauf, dass alle Transaktionen auf dieselbe Anlage zutreffen. Der Beleg wird nicht gebucht, wenn er mehr als eine Anlage enthält, auch wenn das Feld **Neuer Beleg** auf eine Belegnummer nur auf der Seite **Journalnamen** im Hauptbuch gesetzt ist. Wenn Sie mehr als eine Anlage in den Beleg aufnehmen, erscheint die Meldung **Es kann nur eine Anlagenbewegung pro Beleg** und Sie können den Beleg nicht buchen.  
+Ab Version 10.0.21 werden Transaktionen für Anlagen zum Nachholen der Abschreibung, zum Splitten einer Anlage und zum Berechnen der Abschreibung für den Abgang einer Anlage mit unterschiedlichen Belegnummern erstellt.
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a>Wechsel und Solawechsel
 Wechsel und Solawechsel verlangen, dass ein Beleg verwendet wird, da die Transaktion den Debitoren- bzw. Kreditorensaldo von einem Debitoren-/Kreditorsachkonto auf ein anderes verschiebt, basierend auf dem Status der Zahlung.

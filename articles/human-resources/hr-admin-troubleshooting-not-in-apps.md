@@ -1,8 +1,8 @@
 ---
 title: Human Resources wird nicht in Microsoft Dynamics 365-Apps angezeigt
-description: In diesem Artikel wird erklärt, was zu tun ist, wenn der Kunde die Microsoft Dynamics 365 Human Resources-App nicht unter den Microsoft Dynamics 365-Apps sieht.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Dieses Thema erklärt, was zu tun ist, wenn Microsoft Dynamics 365 Human Resources nicht unter den Microsoft Dynamics 365 Apps aufgeführt ist.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,21 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f90af26483cf82de57cbe8dd4237b39b281786804557319d5f6a7fc407027523
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dfed82463eece882bed66c7b2dac1dd30e04720e
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782119"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413400"
 ---
-# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources wird nicht in Microsoft Dynamics 365-Apps angezeigt
+# <a name="human-resources-app-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Die Human Resources App erscheint nicht unter den Microsoft Dynamics 365 Apps
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-**Abgang**
+**Problem**
 
 Der Kunde sieht Dynamics 365 Human Resources nicht bei den Microsoft Dynamics 365-Apps.
 

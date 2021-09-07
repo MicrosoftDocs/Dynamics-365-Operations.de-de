@@ -2,26 +2,19 @@
 title: Probleme mit dem dualen Scheiben in Finance and Operations-Apps behandeln
 description: Dieses Thema enthält Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit dem Modul Duales Schreiben in der Finance and Operations App zusammenhängen.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 08/10/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6689fae215937f58c93cce72df3fa0a1b5aecd3a5ac9913981b253344a1ba13f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90ff55540c153ef4f3ac07bf5316a3abb4755f2c
+ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720735"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380139"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Probleme mit dem dualen Scheiben in Finance and Operations-Apps behandeln
 
@@ -44,8 +37,7 @@ Wenn Sie die Seite **Duales Schreiben** nicht öffnen können durch Auswahl der 
 
 Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie versuchen, eine neue Tabelle für Duales Schreiben zu konfigurieren. Der einzige Benutzer, der eine Karte erstellen kann, ist der Benutzer, der die duale Schreibverbindung eingerichtet hat.
 
-*Der Antwortstatuscode zeigt keinen Erfolg an: 401 (Nicht erlaubt)*
-
+*Antwort-Statuscode zeigt keinen Erfolg an: 401 (Unautorisiert).*
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Fehler beim Öffnen der Benutzeroberfläche Duales Schreiben
 
@@ -61,7 +53,11 @@ Um das Problem zu beheben, melden Sie sich über ein InPrivate-Fenster bei Micro
 
 Beim Verknüpfen oder Erstellen von Zuordnungen kann der folgende Fehler auftreten:
 
-*Antwortstatuscode zeigt keinen Erfolg an: 403 (Token-Austausch).<br> Sitzungs-ID: \<your session id\><br> Stammaktivitäts-ID: \<your root activity id\>*
+```dos
+Response status code does not indicate success: 403 (tokenexchange).
+Session ID: \<your session id\>
+Root activity ID: \<your root activity\> id
+```
 
 Dieser Fehler kann auftreten, wenn Sie nicht über ausreichende Berechtigungen verfügen, um Duales Schreiben zu verknüpfen oder Zuordnungen zu erstellen. Dieser Fehler kann auch auftreten, wenn die Dataverse-Umgebung zurückgesetzt wurde, ohne die Verknüpfung zum dualen Schreiben aufzuheben. Jeder Benutzer mit Systemadministratorrolle in Finance and Operations-Apps und Dataverse kann die Umgebungen verbinden. Nur der Benutzer, der die duale Schreibverbindung eingerichtet hat, kann neue Tabellenzuordnungen hinzufügen. Nach dem Setup kann jeder Benutzer mit Systemadministratorrolle den Status überwachen und die Zuordnungen bearbeiten.
 
@@ -75,16 +71,29 @@ Dieser Fehler tritt auf, wenn die verknüpfte Dataverse Umgebung nicht verfügba
 
 Erstellen Sie ein Ticket für das Datenintegrationsteam, um das Problem zu beheben. Fügen Sie die Netzwerkablaufverfolgung hinzu, damit das Datenintegrationsteam die Zuordnung als **wird nicht ausgeführt** im hinteren Ende markieren kann.
 
-## <a name="error-while-trying-to-start-a-table-mapping"></a>Fehler beim Versuch, eine Tabellenzuordnung zu starten
+## <a name="errors-while-trying-to-start-a-table-mapping"></a>Fehler beim Versuch, eine Tabellenzuordnung zu starten
 
-Möglicherweise wird eine Fehlermeldung wie die folgende angezeigt, wenn Sie versuchen, den Status einer Zuordnung auf **Laufend** festzulegen:
+### <a name="unable-to-complete-initial-data-sync"></a>Die anfängliche Datensynchronisation konnte nicht abgeschlossen werden
+
+Möglicherweise erhalten Sie einen Fehler wie den folgenden, wenn Sie versuchen, die anfängliche Datensynchronisierung auszuführen:
 
 *Die anfängliche Datensynchronisierung kann nicht abgeschlossen werden. Fehler: Dualer Schreibfehler – Plugin-Registrierung fehlgeschlagen: Suchmetadaten für duales Schreiben können nicht erstellt werden. Fehlerobjektreferenz nicht auf eine Instanz eines Objekts festgelegt.*
 
-Die Behebung dieses Fehlers hängt von der Fehlerursache ab:
+Wenn Sie versuchen, den Status einer Zuordnung auf **Laufend** festzulegen, erhalten Sie möglicherweise diesen Fehler. Die Behebung hängt von der Ursache des Fehlers ab:
 
 + Wenn die Zuordnung abhängige Zuordnungen enthält, müssen Sie die abhängigen Zuordnungen dieser Tabellenzuordnung aktivieren.
 + In der Zuordnung fehlen möglicherweise Quell- oder Zielspalten. Wenn eine Spalte in der Finance and Operations-App fehlt, dann befolgen Sie die Schritte im Abschnitt [Fehlende Tabellenspalten treten in Zuordnungen auf](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Wenn eine Spalte in Dataverse fehlt, klicken Sie in der Zuordnung auf die Schaltfläche **Tabellen aktualisieren**, damit die Spalten automatisch wieder in die Zuordnung eingefügt werden.
 
+### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Fehler bei der Versionsübereinstimmung und Upgrade von Dual-Write-Lösungen
+
+Möglicherweise erhalten Sie folgende Fehlermeldungen, wenn Sie versuchen, die Zuordnungen der Tabellen auszuführen:
+
++ *Kundengruppen (msdyn_customergroups) : Dual-Write-Fehler - Dynamics 365 for Sales Lösung 'Dynamics365Company' hat eine Versionsabweichung. Version: '2.0.2.10' Erforderliche Version: '2.0.133'*
++ *Dynamics 365 for Sales Lösung 'Dynamics365FinanceExtended' hat Versionsabweichung. Version: '1.0.0.0' Erforderliche Version: '2.0.227'*
++ *Dynamics 365 for Sales Lösung 'Dynamics365FinanceAndOperationsCommon' hat Versionsinkongruenz. Version: '1.0.0.0' Erforderliche Version: '2.0.133'*
++ *Dynamics 365 for Sales Lösung 'CurrencyExchangeRates' hat eine Versionsabweichung. Version: '1.0.0.0' Erforderliche Version: '2.0.133'*
++ *Dynamics 365 for Sales Lösung 'Dynamics365SupplyChainExtended' hat eine Versionsabweichung. Version: '1.0.0.0' Erforderliche Version: '2.0.227'*
+
+Um die Probleme zu beheben, aktualisieren Sie die Dual-Write-Lösungen in Dataverse. Stellen Sie sicher, dass Sie auf die neueste Lösung aktualisieren, die mit der erforderlichen Lösungsversion übereinstimmt.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

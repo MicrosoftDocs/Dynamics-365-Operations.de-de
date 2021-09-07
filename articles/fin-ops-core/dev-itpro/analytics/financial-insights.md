@@ -2,7 +2,7 @@
 title: Finanzanalyse
 description: Finanzanalyse nutzt Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen.
 author: kweekley
-ms.date: 04/22/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4937235dddaf5c1c8d6d504542f161fa232c86213eb6ac4274349e02d18fb8b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767826"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416304"
 ---
 # <a name="financial-analysis"></a>Finanzanalyse
 
@@ -36,9 +36,9 @@ ms.locfileid: "6767826"
 > - **Seite** – Eine Registerkarte in einer einzelnen .pbix-Datei. Jeder Seite kann ein oder mehrere visuelle Elemente enthalten.
 > - **Visual** – Eine einzelne Datenquelle, wie eine Karte, KPI, Diagramm, Graph, Matrix oder Finanzaufstellung. Eine Seite, die eine Finanzaufstellung als ein visuelles Element hat, kann keine anderen visuellen Elemente haben wegen der Größe der Daten, über die berichtet wird.
 
-Aktuell wird **Finanzanalyse** verwendet, um Daten entweder für die aktive juristische Person oder für alle juristischen Personen anzuzeigen. In künftigen Versionen wird sich der Arbeitsbereich zu einem Ort entwickeln, an dem Sie Power BI verwenden können, um visuelle Elemente zu bearbeiten und zu erstellen.
+Der **Arbeitsbereich für die Finanzanalyse** konzentriert sich darauf, dass Sie die Daten in bestehenden Berichten anzeigen und filtern können. Sie können dem Arbeitsbereich **Finanzanalyse** neue Visualisierungen hinzufügen. Der Arbeitsbereich **Finanzanalyse** ist sowohl für die aktuelle Firma als auch für alle Firmen verfügbar, um Daten für alle juristischen Entitäten anzuzeigen, unabhängig von den juristischen Entitäten, auf die die Rolle Zugriff hat.
 
-Der Arbeitsbereich **CFO-Überblick** zeigt dieselben visuellen Elemente an wie **Finanzanalyse**, fokussiert sich aber darauf, Sie die Daten zu vorhandenen Berichten anzeigen und filtern zu lassen. In künftigen Versionen sind Sie in der Lage, dem Arbeitsbereich **Finanzanalyse** neue visuelle Elemente hinzuzufügen. Die neuen visuellen Elemente sind möglicherweise ebenfalls in Arbeitsbereichen verfügbar, die auf andere Rollen fokussiert sind, wie beispielsweise Projektmanager oder Kreditorenkontenleiter. Der Arbeitsbereich **CFO-Überblick** zeigt weiterhin Daten für alle juristischen Personen an, ungeachtet der juristischen Personen, auf die die Rolle Zugriff hat.
+- [Hinzufügen oder Bearbeiten von Power BI-Visualisierungen auf Ihrem Dashboard](/powerapps-docs/user/add-powerbi-dashboards.md)
 
 ## <a name="dynamics-365-finance-setup"></a>Einrichten von Dynamics 365 Finance
 **Hauptbuch**

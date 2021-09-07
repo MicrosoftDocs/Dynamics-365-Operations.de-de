@@ -2,7 +2,7 @@
 title: Hilfeumgebung für Finance and Operations-Apps konfigurieren
 description: Dieses Thema enthält Informationen zu den Komponenten des Hilfesystems für einige Microsoft Dynamics 365-Apps.
 author: margoc
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8481a2ba54b88f0911436f352b901cde55924e2ccc15a381b8742abe85d972
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714522"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343811"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Hilfeumgebung für Finance and Operations-Apps konfigurieren
 
@@ -54,7 +54,7 @@ Führen Sie die folgenden Schritte auf der Seite **Systemparameter** aus, um Auf
 > [!IMPORTANT]
 > Beim erstmaligen Öffnen der Registerkarte **Hilfe** müssen Sie die Verbindung zu den Lifecycle Services herstellen. Wählen Sie den Link in der Mitte des Formulars aus, warten Sie, bis die Verbindung hergestellt wurde, schließen Sie das Dialogfeld, und wählen Sie dann **OK** aus, um zur Seite **Systemparameter** zu gelangen.
 >
-> [![Mit LCS verbinden](./media/connect-to-lcs-crop-1024x365.png „Mit LCS verbinden.“](./media/connect-to-lcs-crop.png)
+> [![Mit LCS verbinden](./media/connect-to-lcs-crop-1024x365.png "Mit LCS verbinden.")](./media/connect-to-lcs-crop.png)
 
 1. Wählen Sie das Projekt Lifecycle Services, um eine Verbindung herzustellen.
 2. Wählen Sie die BPM-Bibliotheken (innerhalb des ausgewählten Projekts) aus, von denen Sie die Aufgabenaufzeichnungen abrufen wollen.

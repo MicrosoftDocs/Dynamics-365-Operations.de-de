@@ -1,8 +1,8 @@
 ---
 title: Wertmodelle einrichten
 description: Die folgende Prozedur zeigt, wie Sie ein neues Abschreibungsbuch erstellen und es einer Anlagengruppe zuordnen.
-author: saraschi2
-ms.date: 08/29/2018
+author: moaamer
+ms.date: 08/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,19 +13,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 923c3d0c7a2d54f616452a8b927681603f4955c2d7e5ff306971561b73355743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 46c26e5fad3c5c60d87c2fea2b29043c69b82b5d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741535"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344657"
 ---
 # <a name="set-up-value-models"></a>Wertmodelle einrichten
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
+
 
 Die folgende Prozedur zeigt, wie Sie ein neues Abschreibungsbuch erstellen und es einer Anlagengruppe zuordnen. Dabei werden die Buchhalterrolle und die Demodaten für die juristische Person USMF verwendet.
-
 
 ## <a name="create-a-book"></a>Buch erstellen
 1. Wechseln Sie zu "Anlagen" > "Einstellungen" > "Bücher".
@@ -48,9 +49,10 @@ Die folgende Prozedur zeigt, wie Sie ein neues Abschreibungsbuch erstellen und e
 1. Klicken Sie auf "Anlagengruppen".
 2. Geben Sie im Feld "Anlagengruppe" einen Wert ein oder wählen Sie einen Wert aus.
 3. Geben Sie im Feld "Nutzungsdauer" eine Zahl ein.
-    * Beachten Sie, dass Abschreibungszeiträume nach der Festlegung der Nutzungsdauer berechnet wird.  
-    * Sie können die Abschreibungskonvention für Steuerzwecke bei Bedarf festlegen.  
 
+  - Periodische Abschreibungen werden berechnet, nachdem die Nutzungsdauer der Anlage eingegeben wurde.  
+  - Die Abschreibungskonvention kann wie für Steuerzwecke erforderlich festgelegt werden.
+  - Bei Anlagen, die mit Leasingverträgen verbunden sind, wird der Wert im Feld **Nutzungsdauer** durch den kleineren Wert von entweder der Leasingdauer im Anlagenbuch oder der Nutzungsdauer der Anlage außer Kraft gesetzt. Wenn das Feld **Eigentumsübergang** für das Leasingbuch auf **Ja** festgelegt ist, entspricht der Wert im Feld **Nutzungsdauer** immer der Nutzungsdauer der Anlage.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

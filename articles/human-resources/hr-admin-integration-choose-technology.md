@@ -1,8 +1,8 @@
 ---
 title: Eine Datenintegrationstechnologie auswählen
-description: Dieser Artikel enthält Informationen zur Integration mit Daten, die von der Personalabteilung verwaltet werden. Es werden verschiedene Integrationstechnologien beschrieben, mit denen Sie entscheiden können, welche Technologien Ihren Anforderungen am besten entsprechen.
-author: andreabichsel
-ms.date: 02/28/2020
+description: Dieses Thema enthält Informationen zur Integration mit Daten, die von Human Resources verwaltet werden.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7942d08459455192f816b2a06251d0f756b8de521d958eb38a84fa2e5616d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720467"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414713"
 ---
 # <a name="choose-a-data-integration-technology"></a>Eine Datenintegrationstechnologie auswählen
 
@@ -28,14 +28,13 @@ ms.locfileid: "6720467"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dieser Artikel enthält Informationen zur Integration mit Daten, die von Dynamics 365 Human Resources verwaltet werden. Es werden verschiedene Integrationstechnologien beschrieben, mit denen Sie entscheiden können, welche Technologien Ihren Anforderungen am besten entsprechen.
+Dieses Thema bietet Informationen für die Integration mit Daten, die von Dynamics 365 Human Resources verwaltet werden. Es werden verschiedene Integrationstechnologien beschrieben, mit denen Sie entscheiden können, welche Technologien Ihren Anforderungen am besten entsprechen.
 
 ## <a name="data-integration-background"></a>Hintergrund der Datenintegration
 
 Geschäftsdaten als Schlüsselelemente, die ein Unternehmen einzigartig machen. Die Daten Ihres Unternehmens sind sehr wertvoll. Sie können die Beziehungen zwischen den in Ihrem Unternehmen gesammelten Daten verwenden, um Geschäftsprozesse und Business Intelligence in Ihrem Unternehmen zu verbessern. Wir bemühen uns um einen einfachen, sicheren und stabilen Zugriff auf Ihre Geschäftsdaten, unabhängig davon, von welchem System sie stammen.
 
-In der Vergangenheit war die Integration von Daten zwischen mehreren Systemen schwierig.
-Microsoft unternimmt Schritte, um die Datenintegration zu vereinfachen, und ein großer Schritt in Richtung dieses Ziels wird durch den [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) verwirklicht.
+In der Vergangenheit war die Integration von Daten zwischen mehreren Systemen schwierig. Microsoft unternimmt Schritte, um die Datenintegration zu vereinfachen, und ein großer Schritt in Richtung dieses Ziels wird durch den [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) verwirklicht.
 
 Zukünftig macht Human Resources Dataverse zur bevorzugten öffentlichen Schnittstelle für Human Resources-Daten. Im Laufe der Zeit erwarten wir, dass alle wichtigen Daten, die von Human Resources verwaltet werden, in Dataverse veröffentlicht werden. Wir empfehlen Dataverse als Technologie der Wahl für die meisten integrierenden Anwendungen.
 
@@ -47,7 +46,7 @@ In den folgenden Abschnitten werden die verschiedenen Datenintegrationstechnolog
 
 ### <a name="dataverse-tables"></a>Dataverse-Tabellen
 
-Dataverse ist die bevorzugte öffentliche Datenschnittstelle für Human Resources. Es ist aus der Dynamics 365 XRM-Plattform hervorgegangen, die von [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps) Lösungen verwendet wird.
+Dataverse ist die bevorzugte öffentliche Datenschnittstelle für Human Resources. Es ist aus der Dynamics 365 XRM-Plattform hervorgegangen, die von [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps)-Lösungen verwendet wird.
 
 Dataverse bietet eine Plattform und API für Datentabellen. Wenn Sie Human Resources bereitstellen, wird eine Verbindung zu einer Dataverse Instanz hergestellt. Darin werden die Entitäten für Personaldaten in einer Dataverse Instanz bereitgestellt. Die Tabellen und ihre Daten stehen jeder Anwendung zur Verfügung, die eine Verbindung zur Dataverse Instanz herstellen können. Die Personalabteilung synchronisiert Daten zu und von Dataverse-Tabellen.
 

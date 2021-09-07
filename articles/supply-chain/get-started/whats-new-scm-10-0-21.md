@@ -2,7 +2,7 @@
 title: Vorschauversion von Dynamics 365 Supply Chain Management 10.0.21 (Oktober 2021)
 description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Supply Chain Management 10.0.21 neu oder geändert wurden.
 author: kamaybac
-ms.date: 08/02/2021
+ms.date: 08/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 517411512760374f1d1fd3b8ea3615563c47202c2e847569d00cb17a94657630
-ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
+ms.openlocfilehash: 42d296cb0402b5e96f23d628f08a28fb35683d5f
+ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "7012036"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7391207"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10021-october-2021"></a>Vorschauversion von Dynamics 365 Supply Chain Management 10.0.21 (Oktober 2021)
 
@@ -29,17 +29,18 @@ In diesem Thema werden die Funktionen aufgeführt, die in der Microsoft Dynamics
 - **Allgemeine Verfügbarkeit des Release (automatisches Update):** Oktober 2021
 
 ## <a name="known-deployment-issue"></a>Bekanntes Bereitstellungsproblem
+
 Bei der Bereitstellung von Version 10.0.21 auf IaaS erhalten Sie möglicherweise die folgende Bereitstellungswarnung:
 
 **Warnungscode:** 95017
 
-**Warnmeldung:** Ausführung von Skript [SetupDiagnostics] gegen VM fehlgeschlagen
+**Warnmeldung:** Skript \[SetupDiagnostics\] konnte nicht gegen VM ausgeführt werden
 
-Die Bereitstellung funktioniert trotz der Warnung, jedoch können die folgenden bekannten Probleme in Lifecycle Services (LCS) auftreten:
+Die Bereitstellung wird trotz der Warnung funktionieren. Allerdings können die folgenden bekannten Probleme in den Lifecycle Services (LCS) auftreten:
 
--   Auf der Seite **Umgebungsüberwachung** erscheint der Link **Detaillierte Versionsinformationen anzeigen** nicht, sodass Sie die spezifischen Versionen der in Ihrer Umgebung installierten Module nicht sehen können. Ohne diese Daten können nachfolgende Hotfixes fehlschlagen, da der Prozess, der Hotfixes anwendet, diese Daten verwendet, um zu überprüfen, ob die Voraussetzungen für die Modulversion erfüllt sind. Da es nicht möglich ist, den PEAP/Vorschauversion in der Produktion zu verwenden oder Hotfixes anzuwenden, sollten die Auswirkungen minimal sein.
--   Die Registerkarten **Leistungsmetriken** und **Indexanalyse** auf der Seite **Umgebungsüberwachung** Seite unter Einblicke in SQL zeigen keine Daten an. Alle anderen Funktionen der **Umgebungsüberwachung** funktionieren wie gewünscht.
--   Die Seite **Vollständige Systemdiagnose** wird nicht zugänglich sein. Die zugehörigen Daten über den Status der nächtlichen Collector-Läufe und die von den Regeln erkannten Probleme werden ebenfalls nicht angezeigt.
+- Auf der Seite **Umgebungsüberwachung** erscheint der Link **Detaillierte Versionsinformationen anzeigen** nicht, sodass Sie die spezifischen Versionen der in Ihrer Umgebung installierten Module nicht sehen können. Ohne diese Daten können nachfolgende Hotfixes fehlschlagen, da der Prozess, der Hotfixes anwendet, diese Daten verwendet, um zu überprüfen, ob die Voraussetzungen für die Modulversion erfüllt sind. Da es nicht möglich ist, den PEAP/Vorschauversion in der Produktion zu verwenden oder Hotfixes anzuwenden, sollten die Auswirkungen minimal sein.
+- Die Registerkarten **Leistungsmetriken** und **Indexanalyse** auf der Seite **Umgebungsüberwachung** Seite unter Einblicke in SQL zeigen keine Daten an. Alle anderen Funktionen der **Umgebungsüberwachung** funktionieren wie gewünscht.
+- Die Seite **Vollständige Systemdiagnose** wird nicht zugänglich sein. Die zugehörigen Daten über den Status der nächtlichen Collector-Läufe und die von den Regeln erkannten Probleme werden ebenfalls nicht angezeigt.
 
 ## <a name="features-included-in-this-release"></a>In dieser Version enthaltene Funktionen
 
@@ -52,10 +53,10 @@ Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsve
 | Bestand&nbsp;und&nbsp;Logistik | [Die Globale Bestandsbuchhaltung ist ein Add-In für Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Startseite für die globale Bestandsbuchhaltung](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Regulierungen des verfügbaren Lagerbestands mit Codes buchen, die mit Gegenkonten verbunden sind](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Ursachencodes für Lagerinventuren anzeigen](../warehousing/reason-codes-for-counting-journals.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Datenexportrichtlinie für referenziertes Verkaufsangebot](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Wählen Sie, ob Änderungen an Daten, auf die Angebote verweisen, dazu führen, dass diese Angebote (oder Positionen) im nächsten inkrementellen Export berücksichtigt werden. Ihre inkrementellen Exporte werden schneller ausgeführt, wenn Sie solche Angebote oder Positionen nicht berücksichtigen.<br><br>Diese Funktion fügt eine Einstellung namens **Von Verkaufsangeboten referenzierte Daten während der Änderungsnachverfolgung überspringen** zur Seite **Debitorenparameter** hinzu. |
-| Bestand&nbsp;und&nbsp;Logistik | [Barcodes im Lagerort mit GS1-Formatstandards scannen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | *Demnächst*<!-- KFM: Add doc link when ready. --> |
-| Bestand&nbsp;und&nbsp;Logistik | Versiegelte Angebote <!-- KFM: Add RP link when available --> | *Demnächst*<!-- KFM: Add doc link when ready. --> |
+| Bestand&nbsp;und&nbsp;Logistik | [Barcodes im Lagerort mit GS1-Formatstandards scannen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-Barcodes und QR-Codes](../warehousing/gs1-barcodes.md) |
+| Bestand&nbsp;und&nbsp;Logistik | [Soft-Reservierung für das Inventory Visibility-Add-In](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Bestandstransparenzreservierungen](../inventory/inventory-visibility-reservations.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Abzugs- und Artikelgewichterweiterungen für das Rückvergütungsmanagement](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Verwalten von Abzügen mit der Abzugsworkbench](../rebate-management/deduction-workbench.md )<br><br>[Rückvergütungen verarbeiten, überprüfen und veröffentlichen](../rebate-management/process-review-post.md)<br><br>[Rückvergütungsverwaltungsgeschäfte](../rebate-management/rebate-management-deals.md) |
-| Bestand&nbsp;und&nbsp;Logistik | [Schrittanweisungen für die Lagerort-App](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | *Demnächst*<!-- KFM: Add doc link when ready --> |
+| Bestand&nbsp;und&nbsp;Logistik | [Schrittanweisungen für die Lagerort-App](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Schritttitel und Anweisungen für die mobile Warehouse Management-App anpassen](../warehousing/mobile-app-titles-instructions.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Arbeitspausen und Nachverfolgungsaktualisierungen für Gesamttransportkosten](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/work-breaks-tracking-updates-landed-cost) | [Nachverfolgung für Einlagerung aktualisieren](../landed-cost/update-tracking-putaway.md )<br><br>[Waren in Zustellung bearbeiten](../landed-cost/in-transit-processing.md) |
 | Produktprogrammplanung | [Negative Tage für die Planungsoptimierung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/negative-days-support-planning-optimization) | [Verzögerungstoleranz (negative Tage)](../master-planning/planning-optimization/delay-tolerance.md) |
 
@@ -66,9 +67,9 @@ Die folgende Tabelle listet die Funktionsverbesserungen auf, die in dieser Versi
 | Funktionsbereich | Funktion&nbsp;Name&nbsp;in Funktion&nbsp;Verwaltung | Weitere Informationen |
 |---|---|---|
 | Kostenverwaltung | Fortschrittdetails zum Lagerabschluss | Diese Vorschaufunktion ermöglicht eine detaillierte Ansicht des Lagerabschlussfortschritts. |
-| Produktprogrammplanung | (Vorschau) Prioritätsgesteuerte MRP-Unterstützung für die Planungsoptimierung | Diese Vorschaufunktion für die Planungsoptimierung ermöglicht eine Masterprogrammplanung, die von der Planungspriorität mit Neubestellungspunkt gesteuert wird. Zu den hervorgehobenen Änderungen gehören: Feld **Planungspriorität** in Auftragspositionen, Bestellpositionen, Bedarfsplanung und geplante Aufräge; eine neue Dispositionesverfahrenoption; Feld **Artikelabdeckung** für Neubestellungspunkt; Produktprogrammplanungs-Setup-Formulare zur Steuerung der Planungsprioritäts-Setup; und Berechnungslogik für die Planungsoptimierung, um die Planungspriorität festzulegen und zu respektieren. |
 | Beschaffung | Übermäßige Inanspruchnahme von allgemeinen Budgetreservierungen verhindern, wenn mehrere Bestellanforderungen im Workflow sind | Diese Vorschaufunktion verbessert die Fehlerprüfung, wenn Benutzer Bestellanforderungen einreichen und genehmigen, die den verbleibenden Saldo einer allgemeinen Budgetreservierungsposition überschreiten. Dies trägt dazu bei, einen übermäßigen Verbrauch allgemeiner Budgetreservierungen zu verhindern, wenn mehrere Bestellanforderungen im Workflow sind. |
 | Produktionssteuerung | Vollständige Serien-, Chargen- und Kennzeichennummern in der Produktionsausführungsoberfläche anzeigen | Diese Funktion bietet eine verbesserte Erfahrung beim Anzeigen von Listen von Serien-, Chargen- und Kennzeichennummern in der Produktionsausführungsoberfläche. Die Anzeige wechselt von einer Kartenansicht mit begrenzter Zeichenanzahl in eine Listenansicht, die genügend Platz bietet, um die vollständigen Werte anzuzeigen. Die Liste bietet auch die Möglichkeit, nach bestimmten Nummern zu suchen. |
+| Vertrieb und Marketing | Begrenzen Sie die Anzahl der Verkaufsaufträge, die für die Buchung ausgewählt werden können | Mit dieser Funktion können Sie die maximale Anzahl von Verkaufsaufträgen festlegen, die beim Buchen von Bestätigungen, Kommissionierlisten, Lieferscheinen und Rechnungen auf der Seite mit den Verkaufsaufträgen ausgewählt werden können. Sie wird automatisch aktiviert. Die Funktion fügt eine Einstellung namens **Max. Anzahl von Verkaufsaufträgen für die Buchung** auf der Seite **Parameter für Debitoren** hinzu. Die neue Einstellung ist standardmäßig auf einen Wert von *100* festgelegt. Die Funktion trägt dazu bei, die Leistung der Seite mit den Verkaufsaufträgen zu verbessern, wenn eine erhebliche Anzahl von Verkaufsaufträgen ausgewählt ist. Sie hat keinen Einfluss auf die Anzahl der Verkaufsaufträge, die von einer periodischen Aufgabe verarbeitet werden können. |
 | Lagerortverwaltung | Einlagerungsarbeit von ASNs entkoppeln | Diese Funktion ist zum Senden und Empfangen von Vorabliefernotizen (ASN) erforderlich, wenn Sie einen Lagerverwaltungs-Workload auf einer Saklierungseinheit ausführen (als Teil einer verteilten Hybridtopologie). Es fügt eine neue dedizierte Datenbanktabelle für das Speichern von Informationen über Einlagerungsarbeiten hinzu. Bisher wurden diese Informationen in Tabellen gespeichert, die auch für die Vorabliefernotizen verwendet werden. |
 | Lagerortverwaltung | Gemischte Einheiten platzieren | Ermöglicht dem System, Artikel an Lagerplätzen zu platzieren, die gemischte Einheiten enthalten (z. B. Behälter und Kisten). Für jede Position in der Zuteilungsvorlage können Sie mit dieser Funktion auswählen, ob die Position Artikel Lagerplätzen mit gemischten oder einzelnen Einheiten zuteilen soll. |
 | Lagerortverwaltung | Schnellere API für das Schließen/erneute Öffnen von Containern auf Verpackungsstation verwenden | Wenn diese Vorschaufunktion aktiviert ist, werden Bestandstransaktionen in Bezug auf Behälter mithilfe eines neuen, leichtgewichtigen Prozesses erstellt, der die Leistung beim Schließen oder Wiederöffnen von Behältern während der manuellen Verarbeitung an der Verpackungsstation verbessert. |

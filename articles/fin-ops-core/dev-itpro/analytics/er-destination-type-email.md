@@ -2,7 +2,7 @@
 title: E-Mail-ER-Zieltyp
 description: In diesem Thema wird erläutert, wie für jede FOLDER- oder FILE-Komponente eines EB-Formats (elektronische Berichterstellung) ein E-Mail-Ziel konfiguriert wird.
 author: NickSelin
-ms.date: 07/27/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769318"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343859"
 ---
 # <a name="email-er-destination-type"></a>E-Mail-ER-Zieltyp
 
@@ -53,9 +53,22 @@ Gehen Sie folgendermaßen vor, um eine oder mehrere Ausgabedateien per E-Mail zu
 
 ## <a name="configure-an-email-destination"></a>Ein E-Mail-Ziel konfigurieren
 
-Sie können die E-Mail-Sender- und -Empfänger angeben und den Betreff und den Text der E-Mail-Botschaft bearbeiten. Sie können für die E-Mail und den E-Mail-Betreff einen konstanten Text einrichten, oder Sie können EB-[Formeln](er-formula-language.md) verwenden, um E-Mail-Texte dynamisch zu erstellen.
+### <a name="email-content"></a>Inhalt der E-Mail
 
-Standardmäßig wird eine E-Mail im Namen des aktuellen Benutzers gesendet. Um einen anderen E-Mail-Sender anzugeben, müssen Sie das Feld **Von** konfigurieren.
+Sie können den Betreff und den Textkörper der E-Mail-Nachricht bearbeiten.
+
+Geben Sie in das Feld **Betreff** den Text des E-Mail-Betreffs ein, der im Betreff-Feld einer elektronischen Nachricht erscheinen soll, die zur Laufzeit erzeugt wird. Geben Sie in das Feld **Body** den Text des E-Mail-Bodys ein, der im Body-Feld einer elektronischen Nachricht erscheinen soll. Sie können einen konstanten Text für den E-Mail-Betreff und den Textkörper festlegen, oder Sie können ER [Formeln](er-formula-language.md) verwenden, um den E-Mail-Text dynamisch zur Laufzeit zu erstellen. Die konfigurierte Formel muss einen Wert vom Typ [String](er-formula-supported-data-types-primitive.md#string) zurückgeben.
+
+Der Textkörper Ihrer E-Mail wird im TEXT- oder HTML-Format verfasst, je nach E-Mail Client. Sie können jedes für HTML- und Inline-Cascading Style Sheets verwenden (CSS) zulässige Layout, Stilelement und Branding.
+
+> [!NOTE]
+> E-Mail-Clients legen Layout- und Stilbeschränkungen fest, die möglicherweise Anpassungen an HTML und CSS erfordern, die Sie für den Nachrichtentext verwenden. Wir empfehlen Ihnen, sich mit den bewährten Verfahren zum Erstellen von HTML vertraut zu machen, die von den gängigsten E-Mail-Clients unterstützt werden.
+>
+> Verwenden Sie die richtige Kodierung, um einen Wagenrücklauf zu implementieren, abhängig von der Formatierung des Textkörpers. Weitere Informationen finden Sie in der Definition des Datentyps [String](er-formula-supported-data-types-primitive.md#string).
+
+### <a name="email-addresses"></a>E-Mail-Adressen
+
+Sie können den E-Mail-Absender und die E-Mail-Empfänger angeben. Standardmäßig wird die E-Mail im Namen des aktuellen Benutzers gesendet. Um einen anderen E-Mail-Sender anzugeben, müssen Sie das Feld **Von** konfigurieren.
 
 > [!NOTE]
 > Wenn ein E-Mail-Ziel konfiguriert ist, ist das Feld **Von** nur für Benutzer sichtbar, die über das `ERFormatDestinationSenderEmailConfigure`-Sicherheitsprivileg **Die Sender-E-Mail-Adresse für EB-Formatziele konfigurieren** verfügen.

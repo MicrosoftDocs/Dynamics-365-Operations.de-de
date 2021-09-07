@@ -2,7 +2,7 @@
 title: Suchdatenquellen für die Verwendung anwendungsspezifischer EB-Parameter konfigurieren
 description: In diesem Thema wird erläutert, wie Sie Suchdatenquellen in elektronische Berichterstellungsformate (EB-Formate) konfigurieren können, um für anwendungsspezifische EB-Parameter zu verwenden.
 author: NickSelin
-ms.date: 04/02/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2849df85c37c4ed00754be91b9a9708db1bb16b7d0eb49d3a61d169037687196
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c028b01aa2889a517bee69de46411ada12d6fe25
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723188"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343428"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Suchdatenquellen für die Verwendung anwendungsspezifischer EB-Parameter konfigurieren 
 
@@ -69,7 +69,7 @@ Sie können die Suchregeln für das ausgewählte EB-Format mithilfe der Benutzer
 Die folgende Abbildung zeigt, wie `Model.Data.Summary.LevelByLookup`-Datenquelle vom Typ **Berechnetes Feld** konfiguriert werden kann, um die konfigurierte **Such**-Datenquelle mit den erforderlichen Parametern aufzurufen. Um diesen Aufruf zur Laufzeit zu verarbeiten, durchsucht EB die Liste der konfigurierten Regeln in der definierten Reihenfolge, um die erste Regel zu finden, die die angegebenen Bedingungen erfüllt. In diesem Beispiel enthält die Regel den Steuercode, der mit dem angegebenen übereinstimmt. Als Ergebnis wird die am besten geeignete Regel gefunden und der für die gefundene Regel konfigurierte Aufzählungswert wird von dieser Datenquelle zurückgegeben.
 
 > [!NOTE]
-> Eine Ausnahme wird ausgelöst, wenn keine zutreffende Regel gefunden wird. Um diese Ausnahmen zu vermeiden, konfigurieren Sie zusätzliche Regeln am Ende der Regelliste, um Fälle zu behandeln, in denen ein nicht konfigurierter oder kein Wert angegeben wird. Verwenden Sie entsprechend die Optionen **\*Nicht leer\*** und **\*Leer\***.  
+> Eine Ausnahme wird ausgelöst, wenn keine zutreffende Regel gefunden wird. Um diese Ausnahmen zu vermeiden, konfigurieren Sie zusätzliche Regeln am Ende der Regelliste, um Fälle zu behandeln, in denen ein nicht konfigurierter oder kein Wert angegeben wird. Verwenden Sie die Optionen **\*Nicht leer**\* und **\*Leer**\* entsprechend.  
 >
 > ![Fügen Sie eine Datenquelle hinzu, um die konfigurierte Suchdatenquelle aufzurufen.](./media/er-lookup-data-sources-img7.png)
 

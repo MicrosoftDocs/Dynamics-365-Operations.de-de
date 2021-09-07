@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 844e54caa072eef3481e094ef296a82fa099a68bb806d763baa550b1a2226347
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2bf3d41e94e741b628002768f9d6825219666ed
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762697"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343893"
 ---
 # <a name="warehouse-management-overview"></a>Lagerortverwaltung – Übersicht
 
@@ -49,7 +49,7 @@ Sie müssen Komponenten für ein- und ausgehende Lagerortprozess-Workflows entsp
 - Vollständige Chargen- und Serienartikelunterstützung
 - Verschiedene Funktionen zum Empfang von Artikeln
 - Mehrere Entnahmestrategien
-- Vorkonfigurierte Unterstützung für die nächste Generation von Strichcodescannern
+- Standardmäßige Unterstützung für die nächste Generation von Barcode-Scannern
 - Paletten-/Containertypen für Lagerortprozesse
 - Erweiterte Inventurfunktionen
 - Beschriftungsdruck und Beschriftungsrouting mit Zebra ZPL-Unterstützung

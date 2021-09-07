@@ -1,6 +1,6 @@
 ---
 title: Unterstützung der Kanban-Übertragungskarte für Strichcodescanner
-description: Die Kanban-Umlagerungsübersicht unterstützt die Scanner-Eingabe von einem Widgetstrichcodescanner bei der Auswahl, dem Starten, dem Abschluss und dem Leeren eines Kanban-Einzelvorgangs.
+description: Die Kanban-Übertragungstafel unterstützt die Scanner-Eingabe von einem Widget-Barcodescanner, um einen Kanban-Auftrag auszuwählen, zu starten, abzuschließen und zu leeren.
 author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 973c9f4c6960d5e263ee06bd665c94f770696d0dd5a7cdfad8471687054d57f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1316c4f77cabf0184ec01b64d0c6a86830e2675d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736015"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343941"
 ---
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Unterstützung der Kanban-Übertragungskarte für Strichcodescanner
+# <a name="kanban-transfer-board-support-for-bar-code-scanners"></a>Unterstützung der Kanban-Übertragungskarte für Strichcodescanner
 
 [!include [banner](../includes/banner.md)]
 
-Die Kanban-Umlagerungsübersicht unterstützt die Scanner-Eingabe von einem Widgetstrichcodescanner bei der Auswahl, dem Starten, dem Abschluss und dem Leeren eines Kanban-Einzelvorgangs.
+Die Kanban-Übertragungstafel unterstützt die Scanner-Eingabe von einem Widget-Barcodescanner, um einen Kanban-Auftrag auszuwählen, zu starten, abzuschließen und zu leeren.
 
 ## <a name="registration-modes"></a>Erfassungsmodi
 

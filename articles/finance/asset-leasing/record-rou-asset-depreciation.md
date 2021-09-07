@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 40af957582f9cdf4e1caf3ab03ead41f2823b42d59d427c7e7623cd8688e1827
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02364a0871e9a54f52c7c526cd1897165d52ec68
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778361"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345369"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Abschreibung des Nutzungsrechts am Leasingobjekt erfassen (Vorschau)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Bei Mietverträgen, die in der Bilanz eines Unternehmens erfasst werden, wird das Nutzungsrecht am Leasingobjekt monatlich abgeschrieben. In diesem Thema wird erläutert, wie Sie den Journaleintrag für die Amortisierung erstellen. Die Amortisierung belastet das Ausgabensachkonto und schreibt das kumulierte Abschreibungssachkonto gut, basierend auf der Einrichtung Ihres Buchungsprofils und der Mietvertragsart. Diese Einträge können für jeden Mietvertrag oder für mehrere Mietverträge mithilfe der Batch-Erfassungsfunktion erstellt werden.
 
@@ -36,6 +38,9 @@ Bei Mietverträgen, die in der Bilanz eines Unternehmens erfasst werden, wird da
 
 2. Wählen Sie den Abschreibungszeitraum aus und wählen Sie dann **Erfassung erstellen**. Sie erhalten eine Nachricht, die besagt, dass die Erfassung erstellt wurde, in dem die Abschreibung erfasst wird.
 3. Wählen Sie **Erfassungen \> Anlagenleasingerfassungen**, um die **Anlagenleasingerfassung**-Seite zu öffnen, auf der Sie den erstellten Abschreibungskostenjournaleintrag anzeigen können.
+
+   Das System sperrt bestimmte Finanzfelder für die Bearbeitung, um Abweichungen zwischen den Transaktionen und den Zeitplänen zu verhindern. Einige Felder, die gesperrt sind, sind: **Konto**, **Beträge**, **Finanzielle Dimensionen**, **Währung** und **Transaktionstyp**. Außerdem können Sie in den Journaleinträgen des Anlagenleasings keine Zeilen für Journaleinträge hinzufügen oder löschen, da dies zu Abweichungen zwischen den Zeitplänen und den Transaktionen führen kann.
+
 4. Wählen Sie den Journaleintrag aus und wählen Sie dann **Buchen**, um den Abschreibungseintrag im Hauptbuch zu erfassen.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-operating-leases"></a>Berechnung des Amortisierungsaufwands für das Nutzungsrecht am Leasingobjekt für Ausrüstungs-Leasingverträge

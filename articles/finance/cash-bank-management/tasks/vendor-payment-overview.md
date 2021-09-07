@@ -1,6 +1,6 @@
 ---
-title: Übersicht Kreditorenzahlung
-description: Dieses Aufgabenhandbuch läuft Sie nach den verschiedenen Methoden durch, die verwendet werden, um die Kreditorenzahlungen, umfasst, wie ein Zahlungsvorschlag oder manuell erfolgt eine einmalige Zahlung zu erstellen verwendet.
+title: Übersicht über Kreditorenzahlungen
+description: Dieses Verfahren führt Sie durch verschiedene Methoden zum Erstellen von Kreditor-Zahlungen, einschließlich der Verwendung eines Zahlungsvorschlags oder der manuellen Eingabe einer einmaligen Zahlung.
 author: kweekley
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 997d505cc89eaa39b2bac273a5ae381c1c892a9537cbaa9b45156ecbb6fd237c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 73fd1b46bbf73bb3e65f381289e0b3efa12392b4
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721826"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394437"
 ---
-# <a name="vendor-payment-overview"></a>Übersicht Kreditorenzahlung
+# <a name="vendor-payment-overview"></a>Übersicht über Kreditorenzahlungen
 
 [!include [banner](../../includes/banner.md)]
 
-Dieses Aufgabenhandbuch läuft Sie nach den verschiedenen Methoden durch, die verwendet werden, um die Kreditorenzahlungen, umfasst, wie ein Zahlungsvorschlag oder manuell erfolgt eine einmalige Zahlung zu erstellen verwendet. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
+Dieses Verfahren führt Sie durch verschiedene Methoden zum Erstellen von Kreditor-Zahlungen, einschließlich der Verwendung eines Zahlungsvorschlags oder der manuellen Eingabe einer einmaligen Zahlung. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 
 1. Wechseln Sie zu **Navigationsbereich > Module > Kreditorenkonten > Zahlungen > Zahlungserfassung**.
 2. Klicken Sie auf **Neu**.
 3. Wählen Sie die Zahlungserfassung aus, in der die Kreditorenzahlungen zu speichern sind. 
 4. Wählen Sie die Erfassung aus, oder geben Sie sie manuell ein.
 5. Klicken Sie auf **Positionen**.
-6. Klicken im **Aktivitätsbereich** auf **Zahlungsvorschlag**.
+6. Klicken Sie im **Aktionsbereich** auf **Zahlungsvorschlag**.
 7. Klicken Sie auf **Zahlungsvorschlag erstellen**. Der Zahlungsvorschlag ist eine Abfrage, die verwendet wird, um Rechnungen für die Zahlung auszuwählen. Sie können die Liste der Rechnungen bearbeiten, die gezahlt werden sollen, bevor Sie die Kreditorenzahlungen erstellen oder generieren.
 8. Wählen Sie Rechnungen für die Zahlung nach Fälligkeitsdatum, Skonto oder beides aus. 
 9. Geben Sie das Datum für das Vergleichen zum Fälligkeitsdatum oder zum Skonto ein. 

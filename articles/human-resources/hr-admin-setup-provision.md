@@ -1,8 +1,8 @@
 ---
 title: Human Resources bereitstellen
-description: Dieses Thema führt Sie durch den Prozess des Bereitstellens einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/14/2021
+description: Dieses Thema erklärt den Prozess der Bereitstellung einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58ffce072c8b73f4907b18c6c60b022f9a3b55f26cb785238367254021afdc28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756147"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393522"
 ---
 # <a name="provision-human-resources"></a>Human Resources bereitstellen
 
@@ -28,9 +28,15 @@ ms.locfileid: "6756147"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dieses Thema führt Sie durch den Prozess des Bereitstellens einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources. Dieses Thema setzt voraus, dass Sie Human Resources über einen Cloud Solution Provider (CSP) oder einen Enterprise Architecture (EA)-Vertrag gekauft haben. Wenn Sie eine vorhandene Microsoft Dynamics 365 Lizenz haben, die den Human Resources-Service-Plan bereits beinhaltet, und Sie die Schritte in diesem Artikel nicht ausführen können, kontaktieren Sie den Support.
+Dieses Thema erklärt den Prozess der Bereitstellung einer neuen Produktionsumgebung für Microsoft Dynamics 365 Human Resources. 
 
-Um zu beginnen, sollte der globale Administrator sich bei [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) anmelden und ein neues Human Resources-Projekt erstellen. Solange kein Lizenzierungsproblem die Bereitstellung von Human Resources verhindert, ist keine Hilfe von Support oder dem Dynamics Engineering (DSE) erforderlich.
+## <a name="prerequisites"></a>Voraussetzungen
+
+Bevor Sie mit der Bereitstellung einer neuen Produktionsumgebung beginnen, müssen die folgenden Voraussetzungen gegeben sein:
+
+- Sie haben Human Resources über einen Cloud Solution Provider (CSP) oder einen Enterprise Architecture (EA)-Vertrag gekauft. Wenn Sie eine bestehende Microsoft Dynamics 365-Lizenz haben, die bereits den Serviceplan für Human Resources enthält, und Sie die Schritte in diesem Thema nicht ausführen können, wenden Sie sich an den Support.
+
+- Der globale Administrator hat sich bei [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) angemeldet und ein neues Human Resources Projekt erstellt. 
 
 ## <a name="provision-a-human-resources-trial-environment"></a>Bereitstellen einer Human Resources-Testumgebung
 
@@ -42,7 +48,7 @@ Test-Umgebungen sind nicht für die Verwendung als Produktionsumgebung vorgesehe
 
 Bevor Sie Ihre erste Human Resources-Umgebung erstellen, sollten Sie die Umgebungsanforderungen für Ihr Projekt sorgfältig planen. Ein Basisabonnement für Human Resources umfasst zwei Umgebungen: eine Produktionsumgebung und eine Sandboxumgebung. Abhängig von der Komplexität Ihres Projekts müssen Sie möglicherweise zusätzliche Sandboxumgebungen erwerben, um Projektaktivitäten zu unterstützen. 
 
-Zu den Überlegungen für zusätzliche Umgebungen gehören unter anderem:
+Überlegungen für weitere Umgebungen:
 
 - **Datenmigration**: Möglicherweise müssen Sie eine zusätzliche Umgebung für Datenmigrationsaktivitäten in Betracht ziehen, damit Ihre Sandboxumgebung während des gesamten Projekts zu Testzwecken verwendet werden kann. Durch eine zusätzliche Umgebung können Datenmigrationsaktivitäten fortgesetzt werden, während Test- und Konfigurationsaktivitäten gleichzeitig in einer anderen Umgebung ausgeführt werden.
 - **Integration**: Möglicherweise müssen Sie eine zusätzliche Umgebung in Betracht ziehen, um Integrationen zu konfigurieren und zu testen. Dies kann native Integrationen wie die Ceridian Dayforce LinkedIn Talent Hub-Integrationen oder benutzerdefinierte Integrationen wie die für die Lohn- und Gehaltsabrechnung, Bewerber-Nachverfolgungssysteme oder Vorteilssysteme und -anbieter umfassen.
@@ -50,10 +56,11 @@ Zu den Überlegungen für zusätzliche Umgebungen gehören unter anderem:
 - **Mehrphasenprojekt**: Möglicherweise benötigen Sie eine zusätzliche Umgebung, um Konfiguration, Datenmigration, Tests oder andere Aktivitäten in einer Projektphase zu unterstützen, die nach der ersten Inbetriebnahme des Projekts geplant ist.
 
  > [!IMPORTANT]
- > Wir empfehlen, dass Sie Ihre Produktionsumgebung während Ihres gesamten Projekts als GOLD-Konfigurationsumgebung verwenden. Dies ist wichtig, da Sie eine Sandboxumgebung nicht in eine Produktionsumgebung kopieren können. Wenn Sie live gehen, ist Ihre GOLD-Umgebung daher Ihre Produktionsumgebung, und Sie werden Ihre Umstellungsaktivitäten in dieser Umgebung abschließen.</br></br>
- > Wir empfehlen, dass Sie Ihre Sandbox- oder eine andere Umgebung verwenden, um vor Ihrer Inbetriebnahme ein Pseudoumstellung durchzuführen. Sie können dies tun, indem Sie die Produktionsumgebung mit Ihrer GOLD-Konfiguration in Ihrer Sandboxumgebung aktualisieren.</br></br>
- > Wir empfehlen, dass Sie eine detaillierte Checkliste für die Umstellung führen, die alle Datenpakete enthält, die für die Migration der endgültigen Daten in die Produktionsumgebung während der Umstellung erforderlich sind.</br></br>
- > Wir empfehlen außerdem, dass Sie Ihre Sandboxumgebung während Ihres gesamten Projekts als TEST-Umgebung verwenden. Wenn Sie zusätzliche Umgebungen benötigen, kann Ihre Organisation diese gegen eine zusätzliche Gebühr erwerben.</br></br>
+ > Wenn Sie Ihre Umgebung betrachten, empfehlen wir Folgendes:
+ > - Verwenden Sie Ihre Produktionsumgebung während des gesamten Projekts als Ihre GOLD-Konfigurationsumgebung. Dies ist wichtig, da Sie eine Sandboxumgebung nicht in eine Produktionsumgebung kopieren können. Wenn Sie live gehen, ist Ihre GOLD-Umgebung daher Ihre Produktionsumgebung, und Sie werden Ihre Umstellungsaktivitäten in dieser Umgebung abschließen.</br></br>
+ > - Verwenden Sie Ihre Sandbox oder eine andere Umgebung, um vor dem Go-Live einen Probelauf des Cutover durchzuführen. Sie können dies tun, indem Sie die Produktionsumgebung mit Ihrer GOLD-Konfiguration in Ihrer Sandboxumgebung aktualisieren.</br></br>
+ > - Führen Sie eine detaillierte Cutover-Checkliste, die alle Datenpakete enthält, die für die Migration der endgültigen Daten in die Produktionsumgebung während des Go-Live-Cutovers erforderlich sind.</br></br>
+ > - Verwenden Sie Ihre Sandbox-Umgebung während des gesamten Projekts als TEST-Umgebung. Wenn Sie zusätzliche Umgebungen benötigen, kann Ihre Organisation diese gegen eine zusätzliche Gebühr erwerben.</br></br>
 
 ## <a name="create-an-lcs-project"></a>LCS Projekt erstellen
 
@@ -86,7 +93,7 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Human Resources in einer
     > Der Instanztyp „Human Ressource“ kann nach dem Festlegen nicht mehr geändert werden. Überprüfen Sie, ob der richtige Instanztyp ausgewählt ist, bevor Sie fortfahren.</br></br>
     > Der Human Resources-Instanztyp ist von dem Instanztyp der Microsoft Power Apps-Umgebung getrennt, die Sie im Power Apps-Admin Center festlegen.
     
-3. Wählen Sie die Option **Demo-Daten einbeziehen**, wenn Sie möchten, dass Ihre Umgebung den gleichen Demo-Datensatz enthält, der auch in der Human Resources Test Drive Erfahrung verwendet wird. Demodaten sind vorteilhaft für langfristige Demo- oder Schulungsumgebungen und sollten niemals für Produktionsumgebungen verwendet werden. Sie müssen diese Option nach der ersten Bereitstellung auswählen. Sie können eine vorhandene Bereitstellung später nicht aktualisieren.
+3. Wählen Sie die Option **Demo-Daten einbeziehen**, wenn Ihre Umgebung dasselbe Demo-Dataset enthalten soll, das in der Human Resources Test-Umgebung verwendet wird. Demodaten sind vorteilhaft für langfristige Demo- oder Schulungsumgebungen und sollten niemals für Produktionsumgebungen verwendet werden. Sie müssen diese Option nach der ersten Bereitstellung auswählen. Sie können eine vorhandene Bereitstellung später nicht aktualisieren.
 
 4. Human Resources wird immer in einer Microsoft Power Apps-Umgebung bereitgestellt, um Power Apps-Integration und Erweiterbarkeit zu aktivieren. Lesen Sie den Abschnitt „Power Apps-Umgebung auswählen“ in diesem Artikel, bevor Sie fortfahren. Wenn Sie noch keine Power Apps-Umgebung haben, wählen Sie Umgebung verwalten in LCS oder navigieren zum Power Apps-Administratorcenter. Folgen Sie dann den Schritten zum [Erstellen der Power Apps-Umgebung](/powerapps/administrator/create-environment).
 
@@ -115,7 +122,7 @@ Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche Power Apps-U
 
 4. Datenenintegrations- und -Testsstrategien sollten berücksichtigt werden : z. B. Sandbox, UAT oder Produktion. Wir empfehlen daher, dass Sie die verschiedenen Auswirkungen für Ihre Bereitstellung sorgfältig beachten, da es nicht leicht ist, später zu ändern, welche Personalverwaltungsumgebung einer Power Apps-Umgebung zugeordnet ist.
 
-5. Sie können die folgenden Power Apps-Umgebungen nicht für die Personalverwaltung verwenden. Sie werden aus der Auswahlliste in LCS herausgefiltert:
+5. Die folgenden Power Apps-Umgebungen können nicht für Human Resources verwendet werden. Sie werden aus der Auswahlliste in LCS herausgefiltert:
  
     - **Standard-Power Apps-Umgebungen** – Auch wenn jeder Mandant automatisch mit einer Standard-Power Apps-Umgebung versehen wird, empfehlen wir nicht, sie mit der Personalverwaltung zu verwenden. Alle Mandantenbenutzer können auf die Power Apps-Umgebung zugreifen und unbeabsichtigt Produktionsdaten beim Testen und Erkunden mit Power Apps- oder Power Automate-Integrationen beschädigen.
    
@@ -147,7 +154,7 @@ Die Daten für die Human Resources Umgebung werden immer in der Azure-Geografie 
 
 ## <a name="grant-access-to-the-environment"></a>Zugriff auf die Umgebung gewähren
 
-Standardmäßig besitzt nur der globale Administrator, von dem Enterprise Portal installiert wurde, Zugriff auf diese Anwendung. Allerdings muss zusätzliche Bewerbungsbenutzern explizit Zugriff gewährt werden. Um Zugriff zu gewähren, müssen Sie Benutzer hinzufügen und ihnen die entsprechenden Rollen in der Human Resources-Umgebung zuweisen. Der globale Administrator, der Human Resources eingesetzt hat, muss auch Attract und Onboard starten, um die Initialisierung abzuschließen und den Zugriff für andere Mieter zu ermöglichen. Bis dies geschieht, können andere Benutzer nicht auf Attract und Onboard zugreifen und erhalten Zugriffsverletzungsfehler. Weitere Informationen finden Sie unter [Neue Benutzer erstellen](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) und [Weisen Sie Benutzer Sicherheitsrollen zu](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Standardmäßig besitzt nur der globale Administrator, von dem Enterprise Portal installiert wurde, Zugriff auf diese Anwendung. Allerdings muss zusätzliche Bewerbungsbenutzern explizit Zugriff gewährt werden. Um Zugriff zu gewähren, müssen Sie Benutzer hinzufügen und ihnen die entsprechenden Rollen in der Human Resources-Umgebung zuweisen. Weitere Informationen finden Sie unter [Neue Benutzer erstellen](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) und [Weisen Sie Benutzer Sicherheitsrollen zu](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

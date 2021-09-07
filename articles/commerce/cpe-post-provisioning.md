@@ -2,7 +2,7 @@
 title: Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
 description: In diesem Thema wird erläutert, wie eine Microsoft Dynamics 365 Commerce-Auswertungsumgebung nach ihrer Bereitstellung konfiguriert wird.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87933c57ee5f626b224b1edc92da13906e3edc2613f61c5b4a917d8cc5d1dcd3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742439"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416478"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Eine Dynamics 365 Commerce-Evaluierungsumgebung konfigurieren
 
@@ -128,7 +128,7 @@ Um die vollständige Datensynchronisierung in Commerce auszuführen, führen Sie
 Um Testtransaktionen auf der Site durchzuführen, können Sie diese Testkreditkartendaten verwenden:
 
 - **Kartennummer:** 4111-1111-1111-1111
-- **Ablaufdatum:** 10/20
+- **Ablaufdatum:** 10/30
 - **Kartenprüfwert-Code (CVV):** 737
 
 > [!IMPORTANT]
@@ -140,9 +140,12 @@ Nachdem die Bereitstellungs- und Konfigurationsschritte abgeschlossen sind, kön
 
 Informationen zum Konfigurieren optionaler Funktionen für Ihre Commerce-Auswertungsumgebung erhalten Sie unter [Optionale Funktionen für eine Commerce-Auswertungsumgebung konfigurieren](cpe-optional-features.md).
 
+> [!NOTE]
+> Commerce-Evaluierungsumgebungen werden mit einem vorinstallierten Azure Active Directory (Azure AD) business-to-consumer (B2C) Mandant zu Demonstrationszwecken geliefert. Die Konfiguration eines eigenen Azure AD B2C-Mandanten ist für Evaluierungsumgebungen nicht erforderlich. Wenn Sie jedoch die Evaluierungsumgebung so konfigurieren, dass Sie Ihren eigenen Azure AD B2C-Mandanten verwenden, stellen Sie bitte sicher, dass Sie ``https://login.commerce.dynamics.com/_msdyn365/authresp`` als Antwort-URL in der Azure AD B2C-Anwendung über das Azure-Portal hinzufügen.
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Dynamics 365 Commerce-Auswertungsumgebung – Übersicht](cpe-overview.md)
+[Dynamics 365 Commerce-Evaluierungsumgebung – Übersicht](cpe-overview.md)
 
 [Bereitstellen einer Dynamics 365 Commerce-Auswertungsumgebung](provisioning-guide.md)
 
@@ -159,6 +162,8 @@ Informationen zum Konfigurieren optionaler Funktionen für Ihre Commerce-Auswert
 [Microsoft Azure-Portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite)
+
+[B2C-Mandanten in Commerce einrichten](set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

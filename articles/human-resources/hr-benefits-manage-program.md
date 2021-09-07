@@ -1,8 +1,8 @@
 ---
 title: Definieren und verwalten eines Vorteilprogramms
 description: Die Personalverwaltung stellt eine Reihe von Tools bereit, die verwendet werden können, um Vorteile, Abzüge und die Vergütungspläne der Arbeitskräfte einzurichten und zu verwalten, die eine Organisation für seine Arbeitskräfte anbietet oder verarbeitet. Dieser Artikel bietet Informationen dazu, wie Vorteile eingerichtet und verwaltet werden.
-author: andreabichsel
-ms.date: 02/03/2020
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1e2a43b0c08cadebd6181991ddb3aa46ce63b4388768de400ab43ef77bf4ecd6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9f2cc35086e788e10543e54bb93909f8a4f50d47
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727088"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416502"
 ---
-# <a name="define-and-manage-a-benefits-program"></a>Definieren und Verwalten eines Vergütungsprogramms
+# <a name="define-and-manage-a-benefits-program"></a>Vergütungsprogramm festlegen und verwalten
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

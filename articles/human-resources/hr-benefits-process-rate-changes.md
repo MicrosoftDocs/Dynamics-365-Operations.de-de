@@ -1,8 +1,8 @@
 ---
-title: Vergütungssatzänderungen verarbeiten
-description: Vergütungssatzänderungen verarbeiten in Microsoft Dynamics 365 Human Resources, wenn ein neuer oder bestehender Vorteilsplan eine Änderung an den Einstellungen der Berechtigungsregel aufweist.
-author: andreabichsel
-ms.date: 04/06/2020
+title: Satzänderungen verarbeiten
+description: Dieses Thema erklärt, wie Sie Änderungen von Leistungssätzen in Microsoft Dynamics 365 Human Resources verarbeiten können.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: eb9206df990fa8980c4c641b565203828715ada9f1d2f2107a7bb707f545e225
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fa94584749e72cab7aa3466814ed8ea9d59665da
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718130"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417447"
 ---
-# <a name="process-rate-changes"></a>Vergütungssatzänderungen verarbeiten
+# <a name="process-rate-changes"></a>Satzänderungen verarbeiten
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Vergütungssatzänderungen verarbeiten in Microsoft Dynamics 365 Human Resources, wenn ein neuer oder bestehender Vorteilsplan eine Änderung an den Einstellungen der Berechtigungsregel aufweist. Wenn eine neue Berechtigungsregel erstellt und dem Plan zugewiesen wird, fordert dies das System auf, die Berechtigung der Mitarbeiter erneut auszuführen, um zu prüfen, ob die Mitarbeiter nun aufgrund der neuen Berechtigungsoptionen für den Plan berechtigt sind. 
+In diesem Thema wird erklärt, wie Sie Änderungen von Leistungssätzen in Microsoft Dynamics 365 Human Resources verarbeiten, wenn ein neuer oder bestehender Leistungsplan eine Änderung der Einstellungen für die Berechtigungsregeln aufweist. Wenn eine neue Berechtigungsregel erstellt und dem Plan zugewiesen wird, fordert dies das System auf, die Berechtigung der Mitarbeiter erneut auszuführen, um zu prüfen, ob die Mitarbeiter nun aufgrund der neuen Berechtigungsoptionen für den Plan berechtigt sind. 
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Bearbeitung** die Option **Verarbeitung von aktualisierten Satzänderungen**.
 

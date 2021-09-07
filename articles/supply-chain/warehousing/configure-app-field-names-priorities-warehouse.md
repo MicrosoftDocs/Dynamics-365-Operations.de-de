@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 31b1d9e26a5c21a6be5fd89992316e1d6e657c183a71d5155d8d76e83362c845
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e9f9504ec87fd58bbf685519108477a48055da93
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721150"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344149"
 ---
 # <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Felder für die mobile Warehouse Management Mobile App konfigurieren
 
@@ -50,7 +50,7 @@ Wenn Sie Arbeitsgänge für Warehousing auf Ihrem mobilen Gerät nutzen, können
 <tbody>
 <tr class="odd">
 <td>Bevorzugter Eingabemodus</td>
-<td>Mit dieser Option wird definiert, ob eine Bildfläche oder ein Eingabefeld oder eine manuelle Eingabe für den Feldnamen ausgewählt und angezeigt werden sollen. Dies ist nützlich, um Felder entsprechend den Strichcodes zu unterscheiden, wenn solche für das Feld verwendet werden. <strong>Hinweis:</strong> Für Feldnamen mit bevorzugtem Eingabemodus wählen Sie <strong>Durchsuchen</strong>. Sie können Informationen manuell eingeben, wenn der Strichcode nicht lesbar oder beschädigt wird.</td>
+<td>Mit dieser Option wird definiert, ob eine Bildfläche oder ein Eingabefeld oder eine manuelle Eingabe für den Feldnamen ausgewählt und angezeigt werden sollen. Dies ist nützlich, um Felder zu unterscheiden, je nachdem, ob Barcodes für das Feld verwendet werden. <strong>Hinweis:</strong> Für Feldnamen, bei denen der bevorzugte Eingabemodus auf <strong>Scannen</strong> festgelegt ist, können Sie Informationen manuell eingeben, wenn der Barcode unlesbar oder beschädigt ist.</td>
 </tr>
 <tr class="even">
 <td>Eingabetyp</td>

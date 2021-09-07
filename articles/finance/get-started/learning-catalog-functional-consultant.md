@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5a0ea3efc08ac9305887727c57a3821c694d6b25d3355edb6a60a6348967842c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b2efa7021c302e771f36179be690fc1c8653a07
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763093"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402372"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-functional-consultants"></a>Lernkatalog für funktionale Dynamics 365 Finance-Berater
 
@@ -34,6 +34,7 @@ Für funktionale Berater zeigt unsere Arbeitsaufgabenanalysestudie, dass jeder d
 | [Kennenlernen des Handelswerts von Microsoft Dynamics 365 und Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Vielleicht wissen Sie nicht, wo Sie anfangen sollen, Microsoft Dynamics 365- und Power Platform-Anwendungen zu verwenden? Erfahren Sie, wie die Leistungsfähigkeit von Geschäftsanwendungen Ihr Unternehmen verändern kann. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 7 Stunden |
 | [Dynamics 365 und Power Platform-Grundlagen](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Beginnen Sie mit diesem Lernpfad, um zu sehen, wie Dynamics 365-Apps verwendet werden. Informieren Sie sich über Cloudkonzepte, Power Platform und die ersten Schritte mit Dynamics 365-Apps. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 5.5 Stunden |
 | [Erste Schritte mit Finance and Operations-Apps](/learn/paths/get-started-finance-operations/) | Erfahren Sie, wie Finance and Operations-Apps Unternehmen unterstützen, um ihre globalen Finanzsysteme, betrieblichen Geschäftsprozesse und optimierten Lieferketten zu verwalten, damit Personen schnelle, informierten Entscheidungen treffen können. Als erster Schritt in Ihrer Karriere bei der Arbeit mit Finance and Operations-Apps müssen Sie sich unabhängig von der gewünschten Rolle mit den Funktionen vertraut machen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden |
+| [Erste Schritte mit Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Mit Dynamics 365 Intelligent Order Management können Kunden die Orchestrierung von Aufträgen bis hin zur Auftragserfüllung verwalten. Diese Funktionen ermöglichen es Unternehmen, Auftragsflows über verschiedene Plattformen und Apps hinweg zu orchestrieren. | Kostenloses Online-Lernmodul in der eigenen Geschwindigkeit | 30 Minuten |
 | [Vor dem Kauf](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | Wir haben eine Schritt-für-Schritt-Anleitung zusammengestellt, egal, ob Sie Finance and Operations noch auswerten oder einen Kauf tätigen wollen. | Dokumentation | |
 | [Freigabeplan](/dynamics365/release-plans/) | Informieren Sie sich über die neuesten Funktionen und Erweiterungen in Dynamics 365 | Dokumentation | |
 
@@ -41,6 +42,7 @@ Für funktionale Berater zeigt unsere Arbeitsaufgabenanalysestudie, dass jeder d
 
 | Inhalt  | Beschreibung | Formate  | Länge    |
 |----------|-------------|---------|-----------|
+| [Verwenden Sie Success by Design for Dynamics 365-Lösungen](/learn/paths/use-success-design/) | FastTrack for Dynamics 365 wurde entwickelt, um Kunden und Partnern zu helfen, eine erfolgreiche Bereitstellung von Dynamics 365-Lösungen zu erreichen. Um diesen Service bereitzustellen, sollten Lösungsarchitekten Success by Design verwenden. In diesem Lernpfad werden die Success by Design-Konzepte besprochen. | Kostenloses Online-Lernmodul in der eigenen Geschwindigkeit | 12 Stunden |
 | [Verwenden von Lifecycle Services für den Entwurf und die Planung einer Implementierung von Finance and Operations-Apps](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) ist ein kooperativer Arbeitsbereich, den Debitoren und deren Partner nutzen, um Finance and Operations-Apps vom Presales zur Implementierungsphase und schließlich zur Produktionsumgebung. Es bietet Prüflisten und Tools, die Ihnen dabei helfen, das Projekt zu verwalten, einschließlich vorerstellter Methodiken, um bei der Implementierung und periodisch aktualisierten Diensten zu helfen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden |
 | [Konfigurieren Ihrer Organisation in Finance and Operations-Apps](/learn/paths/configure-your-organization-finance-ops/) | Als funktionaler Berater, der mit Finance and Operations-Apps arbeitet, müssen verstehen, wir Sie eine Organisation für den Debitor einrichten. Dieser Lernpfad zeigt Ihnen unter anderen Aufgaben, wie Sie juristischen Personen einrichten, Sicherheitseinstellungen implementieren, die Benutzeroberfläche für Benutzer personalisieren, mobile Apps entwerfen und erstellen und allgemeine Integrationen implementieren. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 12 Stunden |
 | [Migrieren von Daten und Marktbereitstellung mit Finance and Operations-Apps](/learn/paths/migrate-data-go-live-finance-operations/) | Als Funktionsberater müssen Sie verstehen, wie Sie die Daten Ihres Debitors auf die Migration vorbereiten, mit der Datenverwaltung arbeiten und Benutzerakzeptanztests durchführen, um mit Finance and Operations-Apps auf den Markt zu gehen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 4 Stunden |
@@ -102,6 +104,5 @@ Für funktionale Berater zeigt unsere Arbeitsaufgabenanalysestudie, dass jeder d
 | [Microsoft-zertifiziert: Dynamics 365 for Finance and Operations, Funktioneller Beraterexperte für Finanzdaten](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft-zertifiziert: Dynamics 365 for Finance and Operations, Funktionelle Berater für Finanzen vereinheitlichen globale Finanzdaten und Arbeitsgänge und automatisieren Aufgaben und Workflows, optimieren die Debitorenreihenfolge, den Verkauf, die Rechnungsstellung und die Berichterstellung. | Zertifizierung, Kosten variieren nach Regionen |
 | [Prüfung MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Diese Prüfung ermittelt Ihre Fähigkeit, die folgenden technischen Aufgaben zu erfüllen: allgemeine Funktions- und Implementierungstools verwenden; Sicherheit, Prozesse und Optionen konfigurieren, Datenmigration ausführen und die Lösung validieren und unterstützen. | Prüfung; Kosten variieren nach Regionen |
 | [Prüfung MB-310: Microsoft Dynamics 365 for Finance and Operations, Finanzdaten](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Diese Prüfung ermittelt Ihre Fähigkeit, die folgenden technischen Aufgaben zu erfüllen: Einrichten und Konfigurieren der Finanzverwaltung; Verwalten und Anwenden von allgemeinen Prozessen; Implementieren des und Verwalten von Kreditorenkonten und Debitoren; und Verwalten der Budgetierung und Anlagen. | Prüfung; Kosten variieren nach Regionen |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

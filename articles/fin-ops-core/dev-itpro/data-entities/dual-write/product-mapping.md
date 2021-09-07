@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 328791cc321eeaf8f032a1eecedbe50cf9498eccd442c718d2e44e246915bc9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2f4aeefe5fe7698d9dfaf80619102f2b753e52b
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726186"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423446"
 ---
 # <a name="unified-product-experience"></a>Einheitliche Produktumgebung
 
@@ -81,9 +81,9 @@ Da das Produkt als SKU dargestellt wird, können die Konzepte von eindeutig iden
 
 ![Datenmodell für Produkte.](media/dual-write-product.png)
 
-Wenn die Dual-Write-Funktionalität aktiviert ist, werden die Produkte aus Finance and Operations in anderen Dynamics 365-Produkten im Zustand **Entwurf** synchronisiert. Sie werden der ersten Preisliste mit derselben Währung hinzugefügt. Das bedeutet, sie werden der ersten Preisliste in einer Dynamics 365-App hinzugefügt, die mit der Währung Ihrer juristischen Tabelle übereinstimmt, in der das Produkt in einer Finance and Operations-App freigegeben wird. Wenn für die angegebene Währung keine Preisliste vorhanden ist, wird automatisch eine Preisliste erstellt und das Produkt dieser zugewiesen.
+Wenn die Dual-Write-Funktionalität aktiviert ist, werden die Produkte aus Finance and Operations in anderen Dynamics 365-Produkten im Zustand **Entwurf** synchronisiert. Sie werden der ersten Preisliste mit der gleichen Währung hinzugefügt, die in der Customer-Engagement-App verwendet wird, und unter Verwendung der alphabetischen Sortierung des Preislistennamens. Das bedeutet, sie werden der ersten Preisliste in einer Dynamics 365-App hinzugefügt, die mit der Währung Ihrer juristischen Tabelle übereinstimmt, in der das Produkt in einer Finance and Operations-App freigegeben wird. Wenn für die angegebene Währung keine Preisliste vorhanden ist, wird automatisch eine Preisliste erstellt und das Produkt dieser zugewiesen.
 
-Die aktuelle Implementierung der Plugins für duales Schreiben, die der Einheit die Standardpreisliste zuordnet, nach der mit der Finance and Operations-App verknüpften Währung sucht und die erste Preisliste in der Kundenbindungs-App mithilfe alphabetischer Sortierung der Preislistennamen findet. Wenn Sie mehrere Preislisten für eine Währung haben und eine Standardpreisliste für diese Währung festlegen möchten, müssen Sie den Preislistennamen auf einen Namen aktualisieren, der in der alphabetischen Reihenfolge früher erscheint als alle anderen Preislisten derselben Währung.
+Die aktuelle Implementierung der Plugins für duales Schreiben, die der Einheit die Standardpreisliste zuordnet, nach der mit der Finance and Operations-App verknüpften Währung sucht und die erste Preisliste in der Kundenbindungs-App mithilfe alphabetischer Sortierung der Preislistennamen findet. Wenn Sie mehrere Preislisten für eine Währung haben und eine Standardpreisliste für diese Währung festlegen möchten, müssen Sie den Preislistennamen auf einen Namen aktualisieren, der in der alphabetischen Reihenfolge früher erscheint als alle anderen Preislisten derselben Währung. Wenn es keine Preisliste für die angegebene Währung gibt, wird eine neue erstellt.
 
 Produkte aus Finance and Operations-Apps werden standardmäßig mit anderen Dynamics 365-Apps im Status **Entwurf** synchronisiert. Um das Produkt mit dem Status **Aktiv** zu synchronisieren, können Sie es direkt in Auftragsangeboten verwenden, beispielsweise muss die folgende Einstellung ausgewählt werden. Wechseln Sie dazu zur Registerkarte **System > Verwaltung > Systemverwaltung > Systemeinstellungen > Verkauf**, und wählen Sie **Produkte im Status „Aktiv“ erstellen = ja** aus.
 

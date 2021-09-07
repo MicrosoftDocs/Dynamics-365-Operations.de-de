@@ -2,7 +2,7 @@
 title: Einen B2C Mandanten in Commerce einrichten
 description: In diesem Thema wird beschrieben, wie Sie Ihren Azure Active Directory (Azure AD) Business-to-Consumer-Mandanten (B2C) für die Authentifizierung von Benutzerseiten in Dynamics 365 Commerce einrichten.
 author: BrianShook
-ms.date: 03/17/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 13dad5f3b82914514688bfa0c7e4f82b8b85b8dd73458618d2fcfddb169927c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 107e06d44d159152b260897dfba456a525f19e27
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772251"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344497"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Einen B2C Mandanten in Commerce einrichten
 
@@ -34,6 +34,9 @@ Dynamics 365 Commerce Verwendet Azure AD B2C zur Unterstützung von Benutzeranme
  
  > [!NOTE]
  > Commerce-Evaluierungsumgebungen sind zu Demonstrationszwecken mit einem vorinstallierten Azure AD B2C-Mandanten ausgestattet. Für Evaluierungsumgebungen müssen Sie Ihren eigenen Azure AD B2C-Mandanten nicht wie unten beschrieben herunterladen.
+
+> [!TIP]
+> Mit Azure AD Identitätsschutz und bedingtem Zugriff können Sie die Benutzer Ihrer Website weiter schützen und die Sicherheit Ihrer Azure AD B2C Mandanten erhöhen. Um die Funktionalitäten zu überprüfen, die für Azure AD B2C Premium P1 und Premium P2 Mandanten verfügbar sind, siehe [Identitätsschutz und bedingter Zugriff für Azure AD B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Erstellen oder Verknüpfen eines vorhandenen AAD B2C-Mandanten im Azure-Portal
 

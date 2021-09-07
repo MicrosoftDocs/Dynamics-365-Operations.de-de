@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 94657a1c423fafb89d2fe2c16937947e0d898771ddb30a029d0938cc17aaf7d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc87c329f6f5dd9532b1319f8d88fbc41dcd4d14
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716668"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344319"
 ---
 # <a name="create-payment-invoices"></a>Zahlungsrechnungen erstellen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Sie können monatliche Rechnungen für einzelne Mietverträge erstellen oder sie mithilfe eines Stapelverarbeitungsprozesses für mehrere Mietverträge erstellen. Das folgende Verfahren zeigt, wie Sie einen individuellen Mietzahlungseintrag erstellen, wenn der **An Kreditor bezahlen**-Parameter auf der **Leasingbuch-Einrichtung**-Seite eingeschaltet ist.
 
@@ -39,6 +41,8 @@ Sie können monatliche Rechnungen für einzelne Mietverträge erstellen oder sie
 5. Wählen Sie die korrekte Erfassung und dann die Rechnung aus, die bezahlt werden muss.
 
     Für dieses Beispiel ist der **An den Kreditor bezahlen**-Parameter im Leasingbuch aktiviert. Daher befindet sich die Rechnung in der Rechnungserfassung. Der **Übersicht**-Abschnitt zeigt eine Zusammenfassung des Journaleintrags, und der **Zeilen**-Abschnitt zeigt Details der tatsächlichen Erfassungszeilen.
+    
+   Das System sperrt bestimmte Finanzfelder für die Bearbeitung, um Abweichungen zwischen den Transaktionen und den Zeitplänen zu verhindern. Einige Felder, die gesperrt sind, sind: **Konto**, **Beträge**, **Finanzielle Dimensionen**, **Währung** und **Transaktionstyp**. Außerdem können Sie in den Journaleinträgen des Anlagenleasings keine Zeilen für Journaleinträge hinzufügen oder löschen, da dies zu Abweichungen zwischen den Zeitplänen und den Transaktionen führen kann.
 
     > [!NOTE]
     > Wenn der **An den Kreditor bezahlen**-Parameter deaktiviert ist, werden die Einträge in der Zahlungserfassung auf der **Anlagenleasing**-Seite für das Leasingbuch aufgeführt, und das System erstellt anstelle einer Rechnung einen Eintrag für das Anlagenleasing. Der Eintrag für die Mietzahlung wird auf den Erfassungsnamen gebucht, der im Feld **Monatliches Mieterfassung** angegeben ist.

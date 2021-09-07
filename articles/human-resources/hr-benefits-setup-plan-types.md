@@ -1,8 +1,8 @@
 ---
 title: Übersicht über den Plantyp
-description: Ein Plantyp in Microsoft Dynamics 365 Human Resources ist eine übergeordnete Gruppierung bestimmter Vorteilstypen. Jeder Plantyp verfügt über einen Plantypcode, der Regeln für den Plantyp festlegt.
-author: andreabichsel
-ms.date: 06/25/2021
+description: Ein Plantyp in Microsoft Dynamics 365 Human Resources ist eine übergeordnete Gruppierung bestimmter Vorteilstypen.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8966b0aa01795ff00832e480a186c05fa129e7c728112f81cf4f78b6b0915463
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732728"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423343"
 ---
 # <a name="plan-type-overview"></a>Übersicht über den Plantyp
 
@@ -32,10 +32,10 @@ Jeder Plantyp gibt an, ob ein Mitarbeiter sich für einen oder mehrere Pläne di
 
 Wenn ein Plantyp Kontakte umfasst, gibt der Plantyp an, ob Kontakte Begünstigte oder Unterhaltsberechtigte sind. Zum Beispiel würde ein Planty „Leben – Basis“ Begünstigte haben, während ein Plantyp „Medizinisch – Basis“ Unterhaltsberechtigte haben würde. In einigen Fällen hat ein Plan möglicherweise keine persönlichen Kontakte. Beispiel: ein flexibles Ausgabenkonto oder Parkgebühr.
 
-Ein Plantyp kann Abdeckungsoptionen definieren. Die Abdeckungsoptionen werden im Formular „Abdeckungsoptionen“ definiert. Eine Abdeckungsoption kann die Höhe des Vorteils oder die Kontakte angeben, die für den Plantyp berechtigt sind. Wenn der Kontakttyp beispielsweise „Begünstigter“ ist, sollten in der Abdeckungsoption die Bedingungen festgelegt werden, die definieren, zum Erhalt welcher Vorteile der Begünstigte berechtigt ist. Wenn der Kontakttyp „Unterhaltsberechtigt“ ist, sollte die Abdeckungsoption die Beziehung zwischen dem Unterhaltsberechtigten und dem Mitarbeiter definieren. 
+Ein Plantyp kann Abdeckungsoptionen definieren. Die Deckungsoptionen werden auf der Seite **Deckungsoption** definiert. Eine Abdeckungsoption kann die Höhe des Vorteils oder die Kontakte angeben, die für den Plantyp berechtigt sind. Wenn der Kontakttyp beispielsweise „Begünstigter“ ist, sollten in der Abdeckungsoption die Bedingungen festgelegt werden, die definieren, zum Erhalt welcher Vorteile der Begünstigte berechtigt ist. Wenn der Kontakttyp „Unterhaltsberechtigt“ ist, sollte die Abdeckungsoption die Beziehung zwischen dem Unterhaltsberechtigten und dem Mitarbeiter definieren. 
 
 > [!IMPORTANT]
-> Das Formular enthält wichtige Daten, die sich auf die Optionen auswirken, die bei der Erstellung eines neuen Leistungsplans zur Verfügung stehen:
+> Die Seite enthält Schlüsseldaten, die die Optionen beeinflussen, die beim Erstellen eines neuen Leistungsplans verfügbar sind:
 >
 > - **Plantypcode** – Dieses Feld beeinflusst, was auf der **Konfiguration** Registerkarte angezeigt wird, wenn der eigentliche Leistungsplan eingerichtet ist.  
 > - **Gleichzeitige Registrierung** – Dieses Feld legt fest, ob Mehrfachregistrierungen zulässig sind. (Bei einem medizinischen Plan ist dieses Feld normalerweise auf **Eine Einschreibung** festegelegt.)

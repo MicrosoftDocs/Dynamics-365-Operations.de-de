@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 223ad9b5a297a5bcdbb0314d406f64d5de2b239431c6df21299ddebd9e47b8a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a37e3463273d1ffd35b267b36dfbd6fd92bb255
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738268"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343476"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Verbessern der Leistung des Planungsmoduls
 
@@ -70,7 +70,7 @@ Betrachten Sie als Beispiel einen Arbeitsplan, der in der folgenden Tabelle und 
 
 Wenn Sie dies an das Modul senden, wird es in acht Einzelvorgänge aufgeteilt, wie in der folgenden Abbildung gezeigt (wählen Sie das Bild aus, um es zu vergrößern).
 
-[![Planen von Moduleinzelvorgängen](media/scheduling-engine-jobs.png „Planen von Moduleinzelvorgängen.“](media/scheduling-engine-jobs-large.png)
+[![Planen von Moduleinzelvorgängen](media/scheduling-engine-jobs.png "Planen von Moduleinzelvorgängen")](media/scheduling-engine-jobs-large.png)
 
 Die Standardverbindung zwischen zwei Einzelvorgängen ist `FinishStart`. Dies bedeutet, dass die Endzeit eines Einzelvorgangs vor der Startzeit eines anderen Einzelvorgangs liegen muss. Da das Setup von derselben Ressource ausgeführt werden muss, die später den Prozess ausführt, gibt es `OnSameResource`-Einschränkungen zwischen ihnen. Zwischen den Einzelvorgängen für den primären und den sekundären Betrieb für 10 gibt es `StartStart`- und `FinishFinish`-Links, was bedeutet, dass die Einzelvorgänge gleichzeitig beginnen und enden müssen, und es gibt `NotOnSameResource`-Einschränkungen, die verhindern, dass die gleiche Ressource für primäre und sekundäre Arbeitsvorgänge verwendet wird.
 

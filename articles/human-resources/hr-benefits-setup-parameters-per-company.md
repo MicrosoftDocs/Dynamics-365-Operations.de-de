@@ -1,8 +1,8 @@
 ---
-title: Parameter für die Vorteilsverwaltung je Unternehmen konfigurieren
-description: Konfigurieren Sie Parameter für die Vorteilsverwaltung je Unternehmen in Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 12/07/2020
+title: Vorteilsverwaltungsparameter pro Unternehmen konfigurieren
+description: In diesem Thema wird beschrieben, wie Sie die Parameter für die Verwaltung der Vorteile pro Firma in Microsoft Dynamics 365 Human Resources konfigurieren.
+author: twheeloc
+ms.date: 8/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c0f9f31006ca83082ddc61da5927841855077737289e31f66708ade6d66acaf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2d0bc8d511126901be09028dc3c10636f2902e79
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732800"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423283"
 ---
 # <a name="configure-benefits-management-parameters-per-company"></a>Parameter für die Vorteilsverwaltung je Unternehmen konfigurieren
 
@@ -36,7 +36,7 @@ Für jede Organisation, die Vorteile bereitstellt, müssen Sie Einstellungen fü
 
    | Feld | Beschreibung |
    | --- | --- |
-   | **Bestätigungs-E-Mail senden** | Wenn diese Funktion aktiviert ist, wird eine Bestätigungs-E-Mail an die Mitarbeiter gesendet, wenn sie sich aus der Umgebung zur Vorteilsregistrierung im Mitarbeiter-Self-Service abmelden. |
+   | **Bestätigungs-E-Mail senden** | Wenn diese Funktion aktiviert ist, wird eine Bestätigungs-E-Mail an die Mitarbeiter gesendet, wenn sie sich von der Anmeldung für die Vorteile in **Mitarbeiter-Self-Service** abmelden. |
    | **E-Mail-Vorlage für Bestätigung** | Wählen Sie die E-Mail-Vorlage der Organisation aus, die beim Senden der Anmeldebestätigung verwendet werden soll. Wenn Sie keine Vorlage auswählen, wird die folgende allgemeine E-Mail gesendet:<br><br>%EmployeeFirstName%,<br><br>Herzlichen Glückwunsch! Sie haben sich erfolgreich für Vorteile angemeldet.<br><br>Vielen Dank,<br>Vorteil <Name des Unternehmens/der Organisation>. |
    | **Standard-E-Mail-Adresse des Absenders** | Die E-Mail-Adresse, die beim Senden der Bestätigungs-E-Mail verwendet werden soll. |
 

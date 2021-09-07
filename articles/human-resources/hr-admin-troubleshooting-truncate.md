@@ -1,8 +1,8 @@
 ---
 title: Vermeiden Sie abgeschnittenen Text in der Positionshierarchie und beim Exportieren in Visio
-description: In diesem Artikel wird erläutert, wie ein Problem gelöst wird, bei dem Namen von Einzelpersonen und Positionen abgeschnitten werden, wenn Kunden die Positionshierarchie in Microsoft Dynamics 365 Human Resources anzeigen. Das Abschneiden von Text erschwert das Erstellen von Screenshots oder das Drucken der Hierarchie.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Dieses Thema erklärt, wie Sie das Problem der abgeschnittenen Namen von Personen und Positionen in der Positionshierarchie in Microsoft Dynamics 365 Human Resources beheben können.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,17 +11,17 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36fc7684cf0351a10ab5910d46f6d56d46d78921143c537269699c11a38ae12b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a9a8d22df0416ef417a6216c3131bfb6d40d200
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779325"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413534"
 ---
-# <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Vermeiden Sie das Abschneiden von Text in der Positionshierarchie und beim Export nach Visio
+# <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Vermeiden Sie abgeschnittenen Text in der Positionshierarchie und beim Exportieren in Visio
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -43,7 +43,7 @@ Gehen Sie folgendermaßen vor beim Export nach Visio.
 
 1. Öffnen Sie in Human Resources die Listenseite **Positionen**.
 
-    Um weitere Informationen im Organisationsstrukturdiagramm einzubeziehen, fügen Sie der Liste **Positionen** Felder hinzu, damit sie verfügbar sind, wenn Sie den Assistenten später in dieser Prozedur verwenden.
+    Um mehr Informationen in das Organisationsstrukturdiagramm aufzunehmen, fügen Sie der Liste **Positionen** Felder hinzu, so dass diese verfügbar sind, wenn Sie später in dieser Prozedur den **Organigramm-Assistenten** verwenden.
 
 2. Wählen Sie im Aktionsbereich die Schaltfläche **In Microsoft Office öffnen** aus, und wählen Sie dann unter **Nach Excel exportieren** die Option **Positionen** aus. Alternativ drücken Sie STRG+T.
 

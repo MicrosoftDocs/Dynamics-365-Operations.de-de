@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 053e73d9291ffce0d0a1d0b07b980f23d1b6f713f12ea38c22bdac9389c628bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e806be95947988f6a612ddbc1efb0b72cf971806
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724867"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402322"
 ---
 # <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-supply-chain-management"></a>Lernkatalog für Vertriebs- und Marketingrollen von Microsoft Partnern in Dynamics 365 Supply Chain Management
 
@@ -27,8 +27,8 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 
 ## <a name="get-started"></a>Erste Schritte<a name="get-started"></a>
 
-| Inhalt  | Beschreibung  | Formate  | Länge    |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
+| Inhalt | Beschreibung | Formate | Länge |
+|---------|-------------|--------|--------|
 | [Kennenlernen des Handelswerts von Microsoft Dynamics 365 und Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Vielleicht wissen Sie nicht, wo Sie anfangen sollen, Microsoft Dynamics 365- und Power Platform-Anwendungen zu verwenden? Erfahren Sie, wie die Leistungsfähigkeit von Geschäftsanwendungen Ihr Unternehmen verändern kann. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 7 Stunden |
 | [Dynamics 365 und Power Platform-Grundlagen](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Beginnen Sie mit diesem Lernpfad, um zu sehen, wie Dynamics 365-Apps verwendet werden. Informieren Sie sich über Cloudkonzepte, Power Platform und die ersten Schritte mit Dynamics 365-Apps. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 5.5 Stunden |
 | [Erste Schritte mit Finance and Operations-Apps](/learn/paths/get-started-finance-operations/) | Erfahren Sie, wie Finance and Operations-Apps Unternehmen unterstützen, um ihre globalen Finanzsysteme, betrieblichen Geschäftsprozesse und optimierten Lieferketten zu verwalten, damit Personen schnelle, informierten Entscheidungen treffen können. Als erster Schritt in Ihrer Karriere bei der Arbeit mit Finance and Operations-Apps müssen Sie sich unabhängig von der gewünschten Rolle mit den Funktionen vertraut machen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden |
@@ -37,8 +37,7 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 ## <a name="exam"></a>Prüfung<a name="exam"></a>
 
 | Inhalt  | Beschreibung  | Formate |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+|----------|--------------|--------|
 | [Dynamics 365-Grundlagen](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Beweisen Sie, dass Sie Microsoft Dynamics 365 verstehen: Power Platform; Cloudkonzepte; Lizenzierungsoptionen und Bereitstellung sowie Freigabenoptionen. | Prüfung; Kosten variieren nach Regionen |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

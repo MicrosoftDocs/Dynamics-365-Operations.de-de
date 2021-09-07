@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: cfe473f39ee729957924fd7c161aed01138cd507eea56766af35177891676f65
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fde81efed6b8a72e2149056f0196e4f9d60e59f2
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778892"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345518"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>TDS auf Rechnungen mithilfe von Erfassungen berechnen
 
@@ -65,6 +65,6 @@ Dieses Thema erklärt die Schritte zur Berechnung der Quellenbesteuerung (TDS) f
 
 8. Geben Sie die weiteren erforderlichen Informationen ein. Prüfen und buchen Sie die Erfassung. Der auf Einkaufrechnungen berechnete TDS-Betrag wird auf das Kreditorenkonto gebucht. Der auf Einkaufsrechnungen berechnete TDS-Betrag wird auf das zu Debitorenkonto gebucht, das für den jeweiligen TDS-Steuercode in der TDS-Gruppe festgelegt ist. Die Kreditorenkonten für TDS-Steuercodes sind auf der Seite **Quellensteuercodes** festgelegt.
 
-9. Wählen Sie **Gebuchte Quellensteuer** aus, um die Seite **Quellensteuerbuchungen** zu öffnen. Im Feld **Wert** wird der Gesamtprozentsatz angezeigt, der zur Berechnung der TDS für die Buchung verwendet wurde.
+9. Wählen Sie die **Gebuchte Quellensteuer**, um die Seite **Quellensteuerbuchungen** zu öffnen. Im Feld **Wert** wird der Gesamtprozentsatz angezeigt, der zur Berechnung der TDS für die Buchung verwendet wurde.
 
    Die Felder in den Registerkarten **Übersicht**, **Allgemein** und **Betrag** auf der Seite „Quellensteuerbuchungen“ zeigen den berechneten TDS-Betrag und die Details des angepassten TDS-Betrags für jeden TDS-Steuercode an, der der TDS-Gruppe zugeordnet ist.
