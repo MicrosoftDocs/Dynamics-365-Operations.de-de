@@ -12,8 +12,10 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Neuerungen oder Änderungen in Plattformupdates
               items:
-                - name: Neuerungen oder Änderungen auf der Startseite von Plattformupdates
+                - name: Neuerungen oder Änderungen in Plattformupdates – Startseite
                   href: get-started/whats-new-home-page.md
+                - name: "Plattformupdates für Version 10.0.22 (November\_2021)"
+                  href: get-started/whats-new-platform-updates-10-0-22.md
                 - name: "Plattformupdates für Version 10.0.21 (Oktober\_2021)"
                   href: get-started/whats-new-platform-updates-10-0-21.md
                 - name: Plattformupdates für Version 10.0.20 (August 2021)
@@ -72,7 +74,7 @@
           items:
             - name: Kontinuierliche Zustellung – Startseite
               href: dev-tools/continuous-delivery-home-page.md
-            - name: FAQ zu Entwicklung und kontinuierlicher Zustellung
+            - name: Häufig gestellte Fragen zu Entwicklung und kontinuierlicher Zustellung
               href: dev-tools/continuous-delivery-faq.md
             - name: Testpakete aus Build-Ausgabe ausschließen
               href: dev-tools/exclude-test-packages.md
@@ -88,7 +90,7 @@
               href: data-entities/integration-overview.md
             - name: Prioritätsbasierte Einschränkung
               hreF: data-entities/priority-based-throttling.md
-            - name: FAQ zur prioritätsbasierten Einschränkung
+            - name: Häufig gestellte Fragen zur prioritätsbasierten Einschränkung
               href: data-entities/throttling-faq.md
             - name: Datenintegrations-APIs
               items:
@@ -352,7 +354,7 @@
                       href: deployment/infrastructure-stack.md
                     - name: Eine neue Umgebung bereitstellen
                       href: deployment/deployenvironment-newinfrastructure.md
-                    - name: Bereitstellung – FAQ
+                    - name: Bereitstellung – Häufig gestellte Fragen
                       href: deployment/deploymentFAQ.md
                     - name: Bekannte Probleme bei der Self-Service-Bereitstellung
                       href: deployment/known-issues-new-deployment-experience.md
@@ -502,7 +504,7 @@
               href: dev-tools/application-stack-server-architecture.md
             - name: Abrufen von Evaluierungsversionen
               href: dev-tools/get-evaluation-copy.md
-            - name: Anmelden für Vorschauabonnement
+            - name: Für Vorschauabonnement anmelden
               href: dev-tools/sign-up-preview-subscription.md
             - name: Bereitstellen und Zugreifen auf Entwicklungsumgebungen
               items:
@@ -590,24 +592,22 @@
                   href: dev-tools/update-development-tools.md
             - name: Programmiersprache X++
               items:
-                - name: X++ und Debugger-Funktionen
-                  href: dev-tools/new-x-debugger-features.md
-                - name: Visual Studio 2017-Anforderungen für X++
-                  href: dev-tools/developer-tools-vs2017.md
-                - name: X++-Code debuggen
-                  href: dev-tools/debug-xpp.md
-                - name: EventHandlerResult-Klassen in Anforderungs- oder Antwortszenarien
-                  href: dev-tools/event-handler-result-class.md
-                - name: Mithilfe von Quellcode in C# und X++ Geschäftslogik schreiben
-                  href: dev-tools/write-business-logic.md
-                - name: Änderungen in X++ und im X++-Compiler
-                  href: dev-tools/programming-language-support.md
-                - name: LINQ-Anbieter für C#
-                  href: dev-tools/linq-provider-c.md
-                - name: Schreiben von Regeln für bewährte Methoden
-                  href: dev-tools/author-best-practice-rules.md
-                - name: Eigenschaften des Anwendungs-Explorers
-                  href: dev-ref/application-explorer-aot-properties.md
+                - name: Sprachunterstützung für X++
+                  items:
+                    - name: Visual Studio 2017-Anforderungen für X++
+                      href: dev-tools/developer-tools-vs2017.md
+                    - name: X++-Code debuggen
+                      href: dev-tools/debug-xpp.md
+                    - name: EventHandlerResult-Klassen in Anforderungs- oder Antwortszenarien
+                      href: dev-tools/event-handler-result-class.md
+                    - name: Mithilfe von Quellcode in C# und X++ Geschäftslogik schreiben
+                      href: dev-tools/write-business-logic.md
+                    - name: LINQ-Anbieter für C#
+                      href: dev-tools/linq-provider-c.md
+                    - name: Schreiben von Regeln für bewährte Methoden
+                      href: dev-tools/author-best-practice-rules.md
+                    - name: Eigenschaften des Anwendungs-Explorers
+                      href: dev-ref/application-explorer-aot-properties.md
                 - name: Sprachreferenz für X++
                   items:
                     - name: Sprachreferenz für X++ – Übersicht
@@ -652,7 +652,7 @@
                           href: dev-ref/xpp-interfaces.md
                         - name: Bibliotheken
                           href: dev-ref/xpp-library-objects.md
-                        - name: Ereignisse
+                        - name: Ereignisse und Stellvertretungen
                           href: dev-ref/xpp-events.md
                     - name: X++-Datenauswahl und ‑änderung
                       items:
@@ -726,7 +726,7 @@
                       href: extensibility/extensibility-roadmap.md
                     - name: Erweiterbarkeitsanforderungen
                       href: extensibility/extensibility-requests.md
-                    - name: Erweiterbarkeit – FAQ
+                    - name: Erweiterbarkeit – Häufig gestellte Fragen
                       href: extensibility/app-sealing-faq.md
                     - name: Von Überlagerung zu Erweiterungen migrieren
                       href: extensibility/migrate-overlayer-extension.md
@@ -906,6 +906,8 @@
               href: dev-tools/date-effectivity.md
             - name: Entwicklung für unabhängige Softwareanbieter
               items:
+                - name: ISV-Entwicklung – Startseite
+                  href: dev-tools/isv-dev-home-page.md
                 - name: X++-Module über ISV Studio mit Paketen verknüpfen
                   href: dev-tools/isv-studio-solutions.md
                 - name: ISV-Lizenzierung
@@ -1002,7 +1004,7 @@
                   href: lifecycle-services/cloud-operations-servicing.md
                 - name: Anfragen an das Service-Technikteam von Dynamics senden
                   href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-                - name: Geplantes Wartungsfenster – FAQ
+                - name: Geplantes Wartungsfenster – Häufig gestellte Fragen
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Überwachung und Diagnose
               href: lifecycle-services/monitoring-diagnostics.md
@@ -1018,6 +1020,8 @@
               href: lifecycle-services/performancetroubleshooting.md
             - name: Cookbook für Abfragen
               href: lifecycle-services/querycookbook.md
+            - name: Abgelaufene Abonnements und Datenlöschung
+              href: lifecycle-services/expired-subscription-data-deletion.md
             - name: Microsoft Dynamics 365 – Translation Service
               items:
                 - name: Dynamics 365 Translation Service – Übersicht
@@ -1048,6 +1052,8 @@
                       href: data-entities/dual-write/connection-setup.md
                     - name: Überlegungen zur anfänglichen Synchronisierung
                       href: data-entities/dual-write/initial-sync-guidance.md
+                    - name: Grenzwerte für die Live-Synchronisierung
+                      href: data-entities/dual-write/sync-limits.md
                     - name: Einrichtung von dualem Schreiben aus Lifecycle Services
                       href: data-entities/dual-write/lcs-setup.md
                     - name: Duales Schreiben für vorhandene Finance and Operations-Apps aktivieren
@@ -1798,7 +1804,7 @@
                   href: user-interface/slider-messagebox.md
                 - name: 'Nachrichtencenter, Statusleiste und Nachrichtendetails-API'
                   href: user-interface/messaging-api-center-bar-details.md
-                - name: 'Nachrichtencenter, Statusleiste und Nachrichtendetails-FAQ'
+                - name: 'Häufig gestellte Fragen zu Nachrichtencenter, Statusleiste und Nachrichtendetails'
                   href: user-interface/messaging-user.md
             - name: Formularmusterrichtlinien
               items:
