@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: defbcdc7ada4471345f8c728522e15f16a8bec8f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 644eb0d682c35bd604c188aa02e4a6c69b3ff209
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344287"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474987"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Übersicht über Add-In Bestandstransparenz
 
@@ -31,22 +31,20 @@ Als Microservice, der auf Microsoft Dataverse aufgebaut ist, bietet Inventory Vi
 
 Sie können Inventory Visibility mit mehreren Systemen von Drittanbietern integrieren, indem Sie Konfigurationsoptionen für standardisierte Bestandsdimensionen festlegen und Transaktionstypen einrichten. Inventory Visibility unterstützt auch angepasste Erweiterbarkeit durch konfigurierbare berechnete Mengen.
 
-## <a name="supported-features"></a>Unterstützte Funktionen
+## <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Inventory Visibility-Integration mit Dynamics 365 Supply Chain Management
 
-### <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Inventory Visibility-Integration mit Dynamics 365 Supply Chain Management
+Die integrierte Lösung zieht Bestandsdaten von Dynamics 365 Supply Chain Management und verfolgt kontinuierlich Bestandsänderungen. Weitere Informationen finden Sie unter [Bestandsanzeige installieren und einrichten](inventory-visibility-setup.md) und [Bestandsanzeige konfigurieren](inventory-visibility-configuration.md).
 
-Die integrierte Lösung zieht Bestandsdaten von Dynamics 365 Supply Chain Management und verfolgt kontinuierlich Bestandsänderungen. Weitere Informationen finden Sie unter [Set up Inventory Visibility](inventory-visibility-setup.md).
+## <a name="get-a-global-view-of-inventory"></a>Globale Ansicht des Bestands erhalten
 
-### <a name="get-a-global-view-of-inventory"></a>Globale Ansicht des Bestands erhalten
-
-Mit der integrierten Lösung können Sie Ihre eigenen Datenquellen definieren und die Bestandsdaten zentralisieren. Weitere Informationen finden Sie unter [Inventory Visibility konfigurieren](inventory-visibility-configuration.md).
+Mit der integrierten Lösung können Sie Ihre eigenen Datenquellen definieren und die Bestandsdaten zentralisieren. Weitere Informationen finden Sie unter [Bestandsanzeige konfigurieren](inventory-visibility-configuration.md).
 
 Es gibt zwei Ansätze, um Ihren Bestand einzusehen:
 
 - Senden Sie eine Abfrage über die Hochleistungs-API. Diese API kann Bestandsdaten nahezu in Echtzeit direkt von einer zwischengespeicherten Instanz zurückgeben. Verträge und Beispiele finden Sie unter [Öffentliche APIs für Inventory Visibility](inventory-visibility-api.md).
 - Zeigen Sie die rohe Lagerbestandsliste an. Diese Liste wird periodisch von einer zwischenspeichernden Instanz synchronisiert und ist in Bestand in Dataverse zu sehen. Weitere Informationen finden Sie unter [Inventory Visibility App](inventory-visibility-power-platform.md).
 
-### <a name="soft-reservations"></a>Soft-Reservierungen
+## <a name="soft-reservations"></a>Soft-Reservierungen
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 

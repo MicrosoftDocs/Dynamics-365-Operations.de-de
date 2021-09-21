@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 71e651afc83e0c2ea147a4657c0f2ce1865ec50efcd932127b4918266d3d7cd8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778675"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474843"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Produktprogrammplanung mit Bedarfsprognosen
 
@@ -137,32 +137,85 @@ Wenn Sie die Umsatzplanungslauf am 1. Januar ausführen, wird die Bedarfsplanung
 
 #### <a name="transactions--reduction-key"></a>Transaktionen – Planzahlenverrechnungsschlüssel
 
-Wenn Sie **Transaktionen - Planzahlenverrechnungsschlüssel** wählen wird der Planungsbedarf um die Transaktion reduziert, die während der im Planzahlenverrechnungsschlüssel definierten Zeitperioden stattfinden.
+Wenn Sie das Feld **Methode zur Reduzierung des Planungsbedarfs** auf *Buchungen – Planzahlenverrechnungsschlüssel* festlegen, werden die Planungsbedarfe um die qualifizierten Bedarfsbuchungen reduziert, die in den durch den Planzahlenverrechnungsschlüssel definierten Zeiträumen anfallen.
+
+Der qualifizierte Bedarf wird durch das Feld **Planungswert verringern um** auf der Seite **Dispositionssteuerungsgruppen** definiert. Wenn Sie das Feld **Planungswert verringern um** auf *Aufträge* festlegen, werden nur Auftragsbuchungen als qualifizierter Bedarf betrachtet. Wenn Sie es auf *Alle Buchungen* festlegen, werden alle abgehenden Nicht-Intercompany-Bestandsbuchungen als qualifizierter Bedarf betrachtet. Falls Intercompany-Aufträge ebenfalls als qualifizierter Bedarf berücksichtigt werden sollen, legen Sie die Option **Intercompany-Aufträge einschließen** auf *Ja* fest.
+
+Die Prognoseverrechnung beginnt mit dem ersten (frühesten) Bedarfsplanungsdatensatz im Planzahlenverrechnungsschlüssel-Zeitraum. Wenn die Menge der qualifizierten Bestandsbuchungen größer ist als die Menge der Bedarfsplanungspositionen im selben Planzahlenverrechnungsschlüssel-Zeitraum, wird der Saldo der Bestandsbuchungsmenge verwendet, um die Bedarfsplanungsmenge im vorherigen Zeitraum zu reduzieren (sofern nicht verbrauchte Planungsmengen vorhanden sind).
+
+Wenn im vorherigen Planzahlenverrechnungsschlüssel-Zeitraum keine nicht verbrauchten Planungsmengen verbleiben, wird der Saldo der Bestandsbuchungsmenge verwendet, um die Planungsmenge im nächsten Monat zu reduzieren (sofern nicht verbrauchte Planungsmengen vorhanden sind).
+
+Der Wert im Feld **Prozent** in den Planzahlenverrechnungsschlüssel-Positionen wird nicht verwendet, wenn das Feld **Methode zur Reduzierung des Planungsbedarfs** auf *Buchungen – Planzahlenverrechnungsschlüssel* festgelegt ist. Nur die Daten werden verwendet, um den Planzahlenverrechnungsschlüssel-Zeitraum zu definieren.
+
+> [!NOTE]
+> Alle Planungen, die am oder vor dem heutigen Datum gebucht werden, werden ignoriert und nicht zum Erstellen von Planaufträgen verwendet. Wenn Ihre Bedarfsplanung für den Monat beispielsweise am 1. Januar generiert wird und Sie eine Masterplanung mit Bedarfsplanung am 2. Januar ausführen, ignoriert die Berechnung die Bedarfsplanungsposition vom 1. Januar.
 
 ##### <a name="example-transactions--reduction-key"></a>Beispiel: Transaktionen – Planzahlenverrechnungsschlüssel
 
 Dieses Beispiel verdeutlicht, wie tatsächliche Aufträge, die in den vom Planzahlenverrechnungsschlüssel definierten Perioden anfallen, den Bedarf der Bedarfsplanung verringern.
 
-Für dieses Beispiel wählen Sie auf der Seite **Produktprogrammpläne** im Feld **Verwendete Methode, um den Planungsbedarfe zu reduzieren** **Transaktion - Planzahlenverrechnungsschlüssel** aus.
+[![Tatsächliche Aufträge und Planung vor dem Ausführen der Masterplanung.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-Am 1. Januar lagen die folgenden Aufträge vor.
+Für dieses Beispiel wählen Sie auf der Seite *Produktprogrammpläne* im Feld **Verwendete Methode, um den Planungsbedarfe zu reduzieren** **Transaktion - Planzahlenverrechnungsschlüssel** aus.
 
-| Monat    | Bestellte Stückzahl |
-|----------|--------------------------|
-| Januar  | 956                      |
-| Februar | 1.176                    |
-| März    | 451                      |
-| April    | 119                      |
+Die folgenden Bedarfsplanungspositionen sind am 1. April vorhanden.
 
-Wenn Sie die selbe Bedarfsplanung von 1000 Stück pro Monat verwenden, die im vorherigen Beispiel verwendet wurde, werden die folgenden Bedarfsmengen in den Produktprogrammplan übertragen.
+| Datum     | Geplante Stückzahl |
+|----------|-----------------------------|
+| April 5  | 100                         |
+| April 12 | 100                         |
+| April 19 | 100                         |
+| April 26 | 100                         |
+| Mai 3    | 100                         |
+| Mai 10   | 100                         |
+| Mai 17   | 100                         |
 
-| Monat                | Erforderliche Stückzahl |
-|----------------------|---------------------------|
-| Januar              | 44                        |
-| Februar             | 0                         |
-| März                | 549                       |
-| April                | 881                       |
-| Mai - Dezember | 1.000                     |
+Die folgenden Auftragspositionen sind im April vorhanden.
+
+| Datum     | Angeforderte Stückzahl |
+|----------|----------------------------|
+| April 27 | 240                        |
+
+[![Geplante Lieferung, die basierend auf den Aufträgen für April generiert wurde.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+Die folgenden Bedarfsmengen werden in den Masterplan übertragen, wenn die Masterplanung am 1. April ausgeführt wird. Wie Sie sehen, wurden die Planungsbuchungen für April um die Bedarfsmenge von 240 nacheinander reduziert, beginnend mit der ersten dieser Buchungen.
+
+| Datum     | Erforderliche Stückzahl |
+|----------|---------------------------|
+| April 5  | 0                         |
+| April 12 | 0                         |
+| April 19 | 60                        |
+| April 26 | 100                       |
+| April 27 | 240                       |
+| Mai 3    | 100                       |
+| Mai 10   | 100                       |
+| Mai 17   | 100                       |
+
+Nehmen wir nun an, dass für den Zeitraum Mai neue Aufträge importiert wurden.
+
+Die folgenden Auftragspositionen sind im Mai vorhanden.
+
+| Datum   | Angeforderte Stückzahl |
+|--------|----------------------------|
+| Mai 4  | 80                         |
+| Mai 11 | 130                        |
+
+[![Geplante Lieferung, die basierend auf den Aufträgen für April und Mai generiert wurde.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+Die folgenden Bedarfsmengen werden in den Masterplan übertragen, wenn die Masterplanung am 1. April ausgeführt wird. Wie Sie sehen, wurden die Planungsbuchungen für April um die Bedarfsmenge von 240 nacheinander reduziert, beginnend mit der ersten dieser Buchungen. Die Planungsbuchungen für Mai wurden jedoch um insgesamt 210 reduziert, beginnend mit der ersten Bedarfsplanungsbuchung im Mai. Die Gesamtmengen pro Zeitraum bleiben jedoch erhalten (400 im April und 300 im Mai).
+
+| Datum     | Erforderliche Stückzahl |
+|----------|---------------------------|
+| April 5  | 0                         |
+| April 12 | 0                         |
+| April 19 | 60                        |
+| April 26 | 100                       |
+| April 27 | 240                       |
+| Mai 3    | 0                         |
+| Mai 4    | 80                        |
+| Mai 10   | 0                         |
+| Mai 11   | 130                       |
+| Mai 17   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Transaktionen – dynamische Periode
 

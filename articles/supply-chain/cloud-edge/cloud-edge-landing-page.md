@@ -1,5 +1,5 @@
 ---
-title: Cloud- und Edge-Skalierungseinheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung
+title: Skalierungseinheiten in einer verteilten Hybridtopologie
 description: Dieses Thema enthält Informationen über Cloud- und Edge-Scale-Einheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung.
 author: cabeln
 ms.date: 04/22/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780673"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471739"
 ---
-# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Cloud- und Edge-Skalierungseinheiten für Workloads in der Fertigungs- und Lagerortverwaltung
+# <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skalierungseinheiten in einer verteilten Hybridtopologie
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,11 +26,11 @@ ms.locfileid: "6780673"
 >
 > Wenn Sie Cloud- und Edge-Scale-Einheiten aktivieren, werden Sie aufgefordert, zu bestätigen, dass Sie verstehen, dass einige Daten, die mit der Konfiguration und Verarbeitung von Cloud- und Edge-Scale-Einheiten zusammenhängen, möglicherweise in einem Rechenzentrum gespeichert werden, das sich in den USA befindet. Weitere Informationen zur Datenverarbeitung für Cloud- und Edge-Skalierungseinheiten finden Sie weiter unten in diesem Thema im Abschnitt [Datenverarbeitung während der Verwaltung von Skalierungseinheiten](#data-processing-management).
 
-## <a name="core-value-proposition-for-scale-units"></a>Kernwertversprechen für Skalierungseinheiten
+## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Kernwertversprechen für eine verteilte Hybridtopologie
 
-Unternehmen, die mit Fertigung und Vertrieb arbeiten, müssen in der Lage sein, wichtige Geschäftsprozesse rund um die Uhr, ohne Unterbrechung und in großem Umfang auszuführen. Cloud- und Edge-Scale-Einheiten ermöglichen es Unternehmen, wichtige geschäftskritische Fertigungs- und Lagerort-Prozesse ohne Unterbrechung laufen zu lassen, selbst bei gelegentlichen Problemen mit der Netzwerkkonnektivität oder Latenz.
+Unternehmen, die mit Fertigung und Vertrieb arbeiten, müssen in der Lage sein, wichtige Geschäftsprozesse rund um die Uhr, ohne Unterbrechung und in großem Umfang auszuführen. Eine verteilte Hybridtopologie ermöglicht es Unternehmen, wichtige geschäftskritische Fertigungs- und Lagerortprozesse ohne Unterbrechung laufen zu lassen, selbst bei gelegentlichen Problemen mit der Netzwerkkonnektivität oder Latenz.
 
-Cloud- und Edge-Scale-Einheiten ermöglichen die Verteilung von Arbeitsauslastungen in der Fertigung und im Lagerort auf verschiedene Umgebungen. Diese Funktionalität kann dazu beitragen, die Leistung zu verbessern, Serviceunterbrechungen zu verhindern und die Betriebszeit zu maximieren. Skalierungseinheiten werden über die folgenden Add-Ins für Ihr Supply Chain Management-Abonnement bereitgestellt:
+Eine verteilte Hybridtopologie führt das Konzept von *Skalierungseinheiten* ein, die in der Werkstatt und am Lagerort eine Verteilung der Arbeitslasten auf verschiedene Umgebungen ermöglichen. Diese Funktionalität kann dazu beitragen, die Leistung zu verbessern, Serviceunterbrechungen zu verhindern und die Betriebszeit zu maximieren. Skalierungseinheiten werden über die folgenden Add-Ins für Ihr Supply Chain Management-Abonnement bereitgestellt:
 
 - Cloud Scale Unit Add-In für Dynamics 365 Supply Chain Management (*verfügbar ab April 2021*)
 - Edge Scale Unit Add-In für Dynamics 365 Supply Chain Management (*demnächst verfügbar*)

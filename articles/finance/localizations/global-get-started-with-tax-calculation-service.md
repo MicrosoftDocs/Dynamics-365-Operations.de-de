@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1ddbb22d4f7c6108ca93b415276c53794b5450dd
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: b180a8cee1c5b7e9dda837915e6fdf94af30d06a
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394508"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465076"
 ---
 # <a name="get-started-with-tax-calculation"></a>Erste Schritte mit der Steuerberechnung
 
@@ -49,13 +49,9 @@ Für eine produktive Umgebung müssen die folgenden Voraussetzungen erfüllt sei
 - Sie müssen eine RCS-Umgebung für Ihre Organisation erstellen und Sie müssen Zugriff auf Ihr Konto haben. Weitere Informationen über das Erstellen einer RCS-Umgebung finden Sie unter [Regulatory Configuration Service Übersicht](rcs-overview.md).
 - Die folgenden Funktionen müssen im Arbeitsbereich **Funktionsverwaltung** Ihrer bereitgestellten Finance- oder Supply Chain Management-Umgebung aktiviert sein, je nach Ihren geschäftlichen Anforderungen:
 
-    - Steuerberechnung
+    - Dienst für Steuerberechnungen
     - Mehrere MwSt.-Registrierungsnummern unterstützen
     - Steuer im Umlagerungsauftrag
-    - EU-Verkaufslistenübertragung nur auf der Grundlage von Steuerbuchungen
-    - Intrastat-Berichterstattung nach mehreren Steuer-IDs
-    - EU-Verkaufslisten-Berichterstattung nach Mehrfach-Steuer-ID
-    - Mehrwertsteuer-Erklärung nach Mehrfach-Steuer-ID
 
 - Die folgenden Funktionen müssen im Arbeitsbereich **Funktionsverwaltung** Ihrer bereitgestellten RCS Umgebung aktiviert sein.
 
@@ -65,18 +61,14 @@ Für eine produktive Umgebung müssen die folgenden Voraussetzungen erfüllt sei
 
 Für eine Testumgebung müssen die folgenden Voraussetzungen erfüllt sein:
 
-- Sie müssen Zugriff auf Ihr LCS-Konto haben, und Sie müssen ein bereitgestelltes LCS-Projekt mit einer Umgebung der Stufe 2 oder höher haben, die Dynamics 365 Version 10.0.18 mit KB4616360 oder einer späteren Version ausführt.
+- Sie müssen Zugriff auf Ihr LCS-Konto haben, und Sie müssen ein LCS-Projekt bereitstellen, das über eine Umgebung der Stufe 2 oder höher verfügt, die Dynamics 365 Version 10.0.21 oder eine höhere Version ausführt.
 - Sie müssen eine RCS-Umgebung für Ihre Organisation erstellen und Sie müssen Zugriff auf Ihr Konto haben. Weitere Informationen über das Erstellen einer RCS-Umgebung finden Sie unter [Regulatory Configuration Service Übersicht](rcs-overview.md).
 - Sie müssen sich mit Microsoft in Verbindung setzen, indem Sie eine E-Mail an <taxcalc@microsoft.com> senden, um das Flighting in Ihrer bereitgestellten Finance- oder Supply Chain Management-Umgebung zu aktivieren.
 - Die folgenden Funktionen müssen im Arbeitsbereich **Funktionsverwaltung** Ihrer bereitgestellten Finance- oder Supply Chain Management-Umgebung aktiviert sein, je nach Ihren geschäftlichen Anforderungen:
 
-    - Steuerberechnung
+    - Dienst für Steuerberechnungen
     - Mehrere MwSt.-Registrierungsnummern unterstützen
     - Steuer im Umlagerungsauftrag
-    - EU-Verkaufslistenübertragung nur auf der Grundlage von Steuerbuchungen
-    - Intrastat-Berichterstattung nach mehreren Steuer-IDs
-    - EU-Verkaufslisten-Berichterstattung nach Mehrfach-Steuer-ID
-    - Mehrwertsteuer-Erklärung nach Mehrfach-Steuer-ID
 
 - Die folgenden Funktionen müssen im Arbeitsbereich **Funktionsverwaltung** Ihrer bereitgestellten RCS Umgebung aktiviert sein.
 
@@ -103,12 +95,12 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
 7. Gehen Sie zu **Steuerdatenmodell**, erweitern Sie den Dateibaum und wählen Sie dann **Steuerkonfiguration** aus.
 8. Wählen Sie die richtige Steuerkonfigurationsversion, basierend auf Ihrer Finance-Version, und wählen Sie dann **Importieren**.
 
-    | Version freigeben | Steuerkonfiguration                       | Modellzuordnung                   |
-    | --------------- | --------------------------------------- | ------------------------------- |
-    | 10.0.18         | Steuerkonfiguration - Europa 30.12.82     |                                 |
-    | 10.0.19         | Steuerberechnungs-Konfiguration 36.38.193 |                                 |
-    | 10.0.20         | Steuerberechnungs-Konfiguration 40.43.208 |                                 |
-    | 10.0.21         | Steuerberechnungs-Konfiguration 40.46.212 | Dataverse Modell Zuordnung 40.46.9 |
+    | Version freigeben | Steuerkonfiguration                       |
+    | --------------- | --------------------------------------- |
+    | 10.0.18         | Steuerkonfiguration - Europa 30.12.82     |
+    | 10.0.19         | Steuerberechnungs-Konfiguration 36.38.193 |
+    | 10.0.20         | Steuerberechnungs-Konfiguration 40.43.208 |
+    | 10.0.21         | Steuerberechnungs-Konfiguration 40.46.212 |
 
 9. Wählen Sie im Arbeitsbereich **Globalisierungsfunktionen** die Funktion **Funktionen**, wählen Sie die Kachel **Steuerberechnung** und wählen Sie dann **Hinzufügen**.
 10. Wählen Sie eine der folgenden Funktionstypen aus:

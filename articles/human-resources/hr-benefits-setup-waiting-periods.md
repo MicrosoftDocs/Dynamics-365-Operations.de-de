@@ -1,8 +1,8 @@
 ---
 title: Wartezeiträume konfigurieren
 description: In Microsoft Dynamics 365 Human Resources legen Wartezeiten einen Meilenstein zur Verwendung für Vergütungspläne fest.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8e928987a8e25de9c0c5429af1a305ad20b9892d9d3617482ea209af181e3227
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 537ca48e819f047f2095bd5d9337ac7d80e49c5f
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732584"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431064"
 ---
 # <a name="configure-waiting-periods"></a>Wartezeiträume konfigurieren
 
@@ -38,7 +38,7 @@ In Microsoft Dynamics 365 Human Resources legen Wartezeiten einen Meilenstein zu
    | --- | --- |
    | **Wartecode** | Ein eindeutiger Bezeichner für die Wartezeit. |
    | **Beschreibung** | Eine kurze Beschreibung der Wartezeit. |
-   | **Wartemethode** | Wählen Sie aus der Dropdownliste der Werte die entsprechende Wartemethode aus. Die Optionen sind „Netto“, „Aktueller Monat“, „Aktuelles Quartal“, „Aktuelles Jahr“ und „Aktuelle Woche“ |
+   | **Wartemethode** | Wählen Sie aus der Dropdownliste der Werte die entsprechende Wartemethode aus. Die Optionen sind **Netto**, **Aktueller Monat**, **Aktuelles Quartal**, **Aktuelles Jahr** und **Aktuelle Woche**. |
    | **Monate** | Geben Sie hier die Anzahl der Monate ein, die zum Berechnen des Wartedatums zur Wartemethode addiert werden sollen. |
    | **Tage** | Geben Sie hier die Anzahl der Tage ein, die zum Berechnen des Wartedatums zur Wartemethode addiert werden sollen. |
    | **Wartetag** | Wählen Sie einen Wartetag zum Berechnen des Wartedatums aus. |

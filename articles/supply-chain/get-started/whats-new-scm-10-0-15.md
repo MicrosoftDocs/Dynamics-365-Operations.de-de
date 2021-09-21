@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: da097f99eda239377b56e9ad35f658b3b408b5d588d82e0ec2759e6fbe72b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 18408e64bd06db2e05038d14f284b799b6c19e68
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751145"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471811"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management 10.0.15 (Januar 2021)
 
@@ -35,7 +35,7 @@ In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365
 
 Die folgenden Funktionen sind in diesem Release enthalten. Folgen Sie den Links zu [Release-Plan](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features), um die offiziellen Veröffentlichungstermine für jede Funktion anzuzeigen.
 
-- Verwaltung von Cloud- und Edge-Scale-Einheiten mit Arbeitsauslastungen für Fertigung und Lagerausführung<br> - Weitere Informationen finden Sie unter [Cloud- und Edge-Scale-Einheiten für Arbeitsauslastungen in der Fertigung und Lagerortverwaltung](../cloud-edge/cloud-edge-landing-page.md).
+- Verwaltung von Cloud- und Edge-Scale-Einheiten mit Arbeitsauslastungen für Fertigung und Lagerausführung<br> - Weitere Informationen finden Sie unter [Einheiten in einer verteilten Hybridtopologie skalieren](../cloud-edge/cloud-edge-landing-page.md).
 
 - [Umlagerungsaufträge aus der Lagerort-App erstellen und verarbeiten](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Weitere Informationen finden Sie unter [Erstellen von Umlagerungsaufträgen aus der Lager-App](../warehousing/create-transfer-order-from-warehouse-app.md).
 

@@ -1,8 +1,8 @@
 ---
 title: Benutzerdefinierte Links in Manager-Self-Service erstellen
 description: In diesem Thema wird beschrieben, wie Sie benutzerdefinierte Links im Manager Self-Service in Dynamics 365 Human Resources erstellen.
-author: andreabichsel
-ms.date: 11/30/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,25 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bca6d5f079a0b356e9ec2a3c40a34ace5b49be5f268b846ff596489a95275f47
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1aac3c50cbe40d65abc9bedcdd2a64a6e5a1c1ad
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713053"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431183"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Benutzerdefinierte Links in Manager-Self-Service erstellen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Sie können benutzerdefinierte Links auf der Registerkarte **Mein Team** im Manager Self-Service hinzufügen. Mit dieser Funktion können Sie schnell auf wichtige Informationen zugreifen. Es ähnelt dem Hinzufügen von benutzerdefinierten Links in der **Meine Information** Registerkarte im Mitarbeiter-Self Service.
+Sie können benutzerdefinierte Links auf der Registerkarte **Mein Team** im **Manager Self-Service** hinzufügen. Mit dieser Funktion können Sie schnell auf wichtige Informationen zugreifen. Es ähnelt dem Hinzufügen von benutzerdefinierten Links auf der Registerkarte **Meine Information** im **Mitarbeiter-Self Service**.
 
-## <a name="enable-the--feature"></a>Die Funktion aktivieren
+## <a name="enable-the-feature"></a>Die Funktion aktivieren
 
-Um diese Funktion zu verwenden, aktivieren Sie **Benutzerdefinierte Links in Manager-Self-Service** im Arbeitsbereich **Funktionsverwaltung**. Weitere Informationen zum Aktivieren der Vorschaufunktionen finden Sie unter [Funktonen verwalten](hr-admin-manage-features.md).
+Um diese Funktion zu verwenden, aktivieren Sie **Benutzerdefinierte Links in Manager-Self-Service** im Arbeitsbereich **Funktionsverwaltung**. Weitere Informationen zur Aktivierung der Vorschaufunktionen finden Sie unter [Funktonen verwalten](hr-admin-manage-features.md).
 
 ## <a name="set-up-custom-links"></a>Richten Sie benutzerdefinierte Links ein
 

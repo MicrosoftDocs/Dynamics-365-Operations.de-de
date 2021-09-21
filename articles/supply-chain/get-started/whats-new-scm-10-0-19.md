@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 74720e387d5db7de841228e6573fb40c5d22588b
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: bd82ad9a0eb2f8f85bc7dad0ae174726234ad84f
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384658"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474891"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management Version 10.0.19 (Juni 2021)
 
@@ -67,8 +67,7 @@ Wir haben die folgenden Hilfethemen kürzlich hinzugefügt oder erheblich aktual
 | Produktinformationsverwaltung | [Maßeinheit verwalten](../pim/tasks/manage-unit-measure.md)<br><br>[Berechnungen für Produktkonfigurationsmodelle](../pim/config-model-calculations.md) |
 | Produktionssteuerung | [Vereinheitlichte Nummernkreise für Einzelvorgangskennungen](../production-control/unified-job-ids.md) |
 | Transportverwaltung | [LTL-Klassen](../transportation/ltl-class.md)<br><br>[NMFC-Codes](../transportation/nmfc-codes.md) |
-| Lagerortverwaltung | [Fehlerbehebung bei Chargen- und Serienreservierungshierarchien für Lagerorte](../warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md) |
-| Lagerortverwaltung, Wellenerstellung und -verarbeitung | [Wellenerstellung und -verarbeitung](../warehousing/wave-processing.md)<br><br>[Lagerparameter für Wellenverarbeitung](../warehousing/wave-warehouse-parameters.md)<br><br>[Wellenvorlagen](../warehousing/wave-templates.md)<br><br>[Wellenzuteilung](../warehousing/wave-allocation-method.md)<br><br>[Arbeitserstellung während Welle planen](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Containerisierung](../warehousing/wave-containerization.md)<br><br>[Zyklusausführungsbenachrichtigungen](../warehousing/wave-execution-notifications.md) |
+| Lagerortverwaltung, Wellenerstellung und -verarbeitung | [Zykluserstellung und -verarbeitung](../warehousing/wave-processing.md)<br><br>[Lagerparameter für Wellenverarbeitung](../warehousing/wave-warehouse-parameters.md)<br><br>[Wellenvorlagen](../warehousing/wave-templates.md)<br><br>[Wellenzuteilung](../warehousing/wave-allocation-method.md)<br><br>[Arbeitserstellung während Welle planen](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Containerisierung](../warehousing/wave-containerization.md)<br><br>[Zyklusausführungsbenachrichtigungen](../warehousing/wave-execution-notifications.md) |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 555f75df1b28d374f2a46481857902c2f9315809c082699355190c54e856899b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32d1c7efaefaecae12031073d67b0e4c2cf78a78
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736622"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474771"
 ---
 # <a name="forecast-reduction-keys"></a>Planzahlenverrechnungsschlüssel vorhersagen
 
@@ -86,7 +86,18 @@ Wenn Sie die Umsatzplanungslauf am 1. Januar ausführen, wird die Bedarfsplanung
 
 ### <a name="transactions--reduction-key"></a>Transaktionen – Planzahlenverrechnungsschlüssel
 
-Wenn Sie **Transaktionen - Planzahlenverrechnungsschlüssel** wählen wird der Planungsbedarf um die Transaktion reduziert, die während der im Planzahlenverrechnungsschlüssel definierten Zeitperioden stattfinden.
+Wenn Sie das Feld **Methode zur Reduzierung des Planungsbedarfs** auf *Buchungen – Planzahlenverrechnungsschlüssel* festlegen, werden die Planungsbedarfe um die qualifizierten Bedarfsbuchungen reduziert, die in den durch den Planzahlenverrechnungsschlüssel definierten Zeiträumen anfallen.
+
+Der qualifizierte Bedarf wird durch das Feld **Planungswert verringern um** auf der Seite **Dispositionssteuerungsgruppen** definiert. Wenn Sie das Feld **Planungswert verringern um** auf *Aufträge* festlegen, werden nur Auftragsbuchungen als qualifizierter Bedarf betrachtet. Wenn Sie es auf *Alle Buchungen* festlegen, werden alle abgehenden Nicht-Intercompany-Bestandsbuchungen als qualifizierter Bedarf betrachtet. Falls Intercompany-Aufträge ebenfalls als qualifizierter Bedarf berücksichtigt werden sollen, legen Sie die Option **Intercompany-Aufträge einschließen** auf *Ja* fest.
+
+Die Prognoseverrechnung beginnt mit dem ersten (frühesten) Bedarfsplanungsdatensatz im Planzahlenverrechnungsschlüssel-Zeitraum. Wenn die Menge der qualifizierten Bestandsbuchungen größer ist als die Menge der Bedarfsplanungspositionen im selben Planzahlenverrechnungsschlüssel-Zeitraum, wird der Saldo der Bestandsbuchungsmenge verwendet, um die Bedarfsplanungsmenge im vorherigen Zeitraum zu reduzieren (sofern nicht verbrauchte Planungsmengen vorhanden sind).
+
+Wenn im vorherigen Planzahlenverrechnungsschlüssel-Zeitraum keine nicht verbrauchten Planungsmengen verbleiben, wird der Saldo der Bestandsbuchungsmenge verwendet, um die Planungsmenge im nächsten Monat zu reduzieren (sofern nicht verbrauchte Planungsmengen vorhanden sind).
+
+Der Wert im Feld **Prozent** in den Planzahlenverrechnungsschlüssel-Positionen wird nicht verwendet, wenn das Feld **Methode zur Reduzierung des Planungsbedarfs** auf *Buchungen – Planzahlenverrechnungsschlüssel* festgelegt ist. Nur die Daten werden verwendet, um den Planzahlenverrechnungsschlüssel-Zeitraum zu definieren.
+
+> [!NOTE]
+> Alle Planungen, die am oder vor dem heutigen Datum gebucht werden, werden ignoriert und nicht zum Erstellen von Planaufträgen verwendet. Wenn Ihre Bedarfsplanung für den Monat beispielsweise am 1. Januar generiert wird und Sie eine Masterplanung mit Bedarfsplanung am 2. Januar ausführen, ignoriert die Berechnung die Bedarfsplanungsposition vom 1. Januar.
 
 #### <a name="example-transactions--reduction-key"></a>Beispiel: Transaktionen – Planzahlenverrechnungsschlüssel
 

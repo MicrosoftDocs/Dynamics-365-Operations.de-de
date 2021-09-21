@@ -2,7 +2,7 @@
 title: Erste Schritte mit der elektronischen Rechnungsstellung
 description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management erleichtern.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3a62f68718a9bd46cdf15146bbb6a4e5166bfcc7abcf99b24d3fbc7e3e6c94ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732980"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463839"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Erste Schritte mit der elektronischen Rechnungsstellung
 
@@ -40,14 +40,14 @@ Bevor Sie die Vorgehensweisen in diesem Thema abschließen, müssen die folgende
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Eine elektronische Rechnungsstellungsfunktion über den Microsoft-Konfigurationsanbieter importieren 
 
 1. Melden Sie sich bei Ihrem RCS-Konto (Regulatory Configuration Service) an.
-2. Wählen Sie im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Elektronische Rechnungsstellung** aus.
+2. Wählen Sie im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktionen** die Kachel **Elektronische Rechnungsstellung** aus.
 3. Wählen Sie **Importieren** und anschließend **Synchronisieren** aus.
 4. Filtern Sie die Spalte **Konfigurationsanbieter** nach dem Begriff **Microsoft**.
-5. Wählen Sie den Namen einer elektronischen Rechnungsstellungsfunktion aus der Tabelle am Anfang dieses Themas und anschließend **Importieren** aus.
+5. Wählen Sie den Namen einer Funktion zur elektronischen Rechnungsstellung aus der Tabelle aus und wählen Sie dann **Importieren** aus.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Eine elektronische Rechnungsstellungsfunktion unter Ihrem Organisationsanbieter erstellen
 
-1. Wählen Sie in RCS im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktion** die Kachel **Elektronische Rechnungsstellung** aus.
+1. Wählen Sie in RCS im Abschnitt **Funktionen** des Arbeitsbereichs **Globalisierungsfunktionen** die Kachel **Elektronische Rechnungsstellung** aus.
 2. Wählen Sie **Hinzufügen** > **Auf vorhandener Funktion basierend** aus, und geben Sie im Feld **Name** den Namen der elektronischen Rechnungsstellungsfunktion ein.
 3. Geben Sie im Feld **Beschreibung** eine Beschreibung der Funktion ein.
 4. Wählen Sie im **Basisfunktionsfeld** die importierte elektronische Rechnungsstellungsfunktion des Microsoft-Konfigurationsanbieters aus.
@@ -113,7 +113,7 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
     | Elektronische Rechnungen für Spanien (ES)      | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Debitorenrechnungserfassung</p><p>Projektrechnung</p> |
     | Elektronische Rechnungen im PEPPOL-Format            | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Debitorenrechnungserfassung</p><p>Projektrechnung</p> |
 
-7. Für jeden Tabellennamen, den Sie erstellen, wählen Sie einen Kontextwert gemäß folgender Tabelle aus und geben ihn ein.
+6. Für jeden Tabellennamen, den Sie erstellen, wählen Sie einen Kontextwert gemäß folgender Tabelle aus und geben ihn ein.
 
     | Funktionsname                         | Geschäftsdokument | Kontext |
     |--------------------------------------|-------------------|---------|
@@ -134,7 +134,7 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
     | Elektronische Rechnungen für Spanien (ES)      | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Kontextmodell Debitorenrechnung – Kontext Debitorenrechnung</p><p>Kontextmodell Debitorenrechnung – Kontext Projektrechnung</p> |
     | Elektronische Rechnungen im PEPPOL-Format            | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Kontextmodell Debitorenrechnung – Kontext Debitorenrechnung</p><p>Kontextmodell Debitorenrechnung – Kontext Projektrechnung</p> |
 
-8. Wählen Sie gemäß folgender Tabelle für jeden Tabellennamen und Kontext einen Geschäftsdokumentzuordnungswert aus, und geben Sie ihn ein.
+7. Wählen Sie gemäß folgender Tabelle für jeden Tabellennamen und Kontext einen Geschäftsdokumentzuordnungswert aus, und geben Sie ihn ein.
 
     | Funktionsname                         | Geschäftsdokument | Geschäftsdokumentzuordnungen |
     |--------------------------------------|-------------------|---------------------------|
@@ -177,11 +177,11 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
 ## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Bereitstellen der Funktion für die elektronische Rechnungsstellung in der verbundenen Anwendung
 
 1. Wählen Sie auf der Registerkarte **Versionen** eine Funktionsversion für die elektronische Rechnungsstellung aus, die Sie bereitstellen möchten.
-4. Wählen Sie **Bereitstellen** aus.
-5. Stellen Sie die Option **In verbundener Anwendung bereitstellen** auf **Ja** ein.
-6. Wählen Sie im Feld **Anwendung verbinden** die Verbindung aus, die Ihrer Instanz von Finance oder Supply Chain Management zugeordnet ist.
-7. Stellen Sie die Option **In Service-Umgebung bereitstellen** auf **Nein** ein.
-10. Wählen Sie **OK**.
+2. Wählen Sie **Bereitstellen** aus.
+3. Stellen Sie die Option **In verbundener Anwendung bereitstellen** auf **Ja** ein.
+4. Wählen Sie im Feld **Anwendung verbinden** die Verbindung aus, die Ihrer Instanz von Finance oder Supply Chain Management zugeordnet ist.
+5. Stellen Sie die Option **In Service-Umgebung bereitstellen** auf **Nein** ein.
+6. Wählen Sie **OK**.
 
 ## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Die elektronische Rechnungsstellungsfunktion in Finance oder Supply Chain Management aktivieren
 
@@ -213,7 +213,7 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
 ## <a name="issue-electronic-invoices"></a>Elektronische Rechnungen ausstellen
 
 1. Navigieren Sie zu **Organisationsverwaltung** \> **Periodisch** \> **Elektronische Dokumente** \> **Elektronische Dokumente übermitteln**.
-2. Wählen Sie im Inforegister **Einzuschließende Datensätze** die Option **Filtern** aus.
+2. Wählen Sie auf der Seite **Einschließende Datensätze** Inforegister die Option **Filter**.
 3. Wählen Sie **Hinzufügen** aus, um dem Abfragefilter einen Tabellennamen hinzuzufügen.
 4. Wählen Sie die Tabelle aus, die die Rechnungen enthält.
 

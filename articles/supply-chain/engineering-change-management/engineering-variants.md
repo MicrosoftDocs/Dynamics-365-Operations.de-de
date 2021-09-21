@@ -10,18 +10,29 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 57eda6a833df6ff8e91c006bbc5096554eff6c503a8b7ba2bd0b13e2f8e98f56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4e2133263f4bee09a3365236601e0d2fdd08a7ae
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766146"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471835"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Varianten für technische Produkte genieren
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Varianten für technische Produkte generieren.
+
+## <a name="turn-on-variant-generation-for-engineering-products"></a>Variantengenerierung für technische Produte aktivieren
+
+Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+
+- **Modul:** *Verwaltung technischer Änderungen*
+- **Funktionsname:** *Variantengenerierung für technische Produte*
+
+> [!IMPORTANT]
+> Die Funktion *Variantengenerierung für technische Produkte* ist in Ihrem System erst sichtbar, nachdem Sie den Konfigurationsschlüssel *Verwaltung für technische Änderungen* aktiviert haben. Entsprechende Anweisungen finden Sie unter [Übersicht über die Verwaltung für technische Änderungen](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Generieren Sie eine oder mehrere neue Varianten eines technischen Produkts
 
@@ -38,10 +49,15 @@ Das folgende Prozedur bietet ein Beispiel für die Erstellung mehrerer Varianten
 1. Fügen Sie der Variante bei Bedarf eine Stückliste und einen Arbeitsplan hinzu.
 1. Öffnen Sie im Aktivitätsbereich auf der Registerkarte **Produkt** in der Gruppe **Produktmaster** die Option **Produktdimensionen**.
 1. Die Seite **Produktdimensionen** wird geöffnet. Diese Seite enthält eine Registerkarte für jede verfügbare Dimension. Fügen Sie auf jeder Registerkarte eine Zeile für jeden Wert hinzu, den Sie für jede relevante Dimension unterstützen. (In diesem Beispiel könnten Sie Zeilen in der Registerkarte **Farbe** für *Weiß*, *Gelb* und *Grün* zufügen).
-1. Schließen Sie die Seite und wählen Sie **Freigegebene Produktvarianten**. Beachten Sie, dass die zuerst erstellte Variante (weißes V-1) angezeigt wird.
-1. Wählen Sie **Variantenvorschläge** aus.
-1. Das System schlägt Varianten mit den angelegten Farbwerten vor (z. B. weißes V-1, gelbes V-1 und grünes V-1).
-1. Wählen Sie die vorgeschlagenen Varianten aus und wählen Sie **OK** aus, um die Varianten an das technische Unternehmen freizugeben. Beachten Sie, dass die folgenden Bedingungen gelten: 
+1. Schließen Sie die Seite und wählen Sie dann **Freigegebene Produktvarianten** aus. Beachten Sie, dass die erste von Ihnen erstellte Variante (blaues V-1) angezeigt wird.
+1. Klicken Sie im Aktionsbereich auf die Registerkarte **Produktvariante** und wählen Sie **Variantenvorschläge** aus.
+1. Führen Sie im Dialogfeld **Variantenvorschläge** einen der folgenden Schritte aus:
+
+    - Oben im Dialogfeld gibt es einen Bereich für jede verfügbare Dimension. Aktivieren Sie für jede Dimension das Kontrollkästchen für jeden Wert, für den Sie einen Variantenvorschlag generieren möchten, und wählen Sie dann in der Symbolleiste **Vorschlagen** aus. Relevante Vorschläge werden dem Bereich **Vorgeschlagene Varianten** hinzugefügt.
+    - Wählen Sie in der Symbolleiste **Alle vorschlagen** aus, um Variantenvorschläge für alle verfügbaren Kombinationen von Dimensionswerten zu generieren. Die Vorschläge werden dem Bereich **Vorgeschlagene Varianten** hinzugefügt.
+
+1. Aktivieren Sie im Bereich **Vorgeschlagene Varianten** das Kontrollkästchen für jede Variante, die Sie erstellen möchten. Wählen Sie dann **Erstellen** aus, um die ausgewählten Varianten zu erzeugen und an das technische Unternehmen freizugeben. Dabei gelten folgende Bedingungen:
+
     - Keine der erstellten Varianten hat eine Stückliste oder einen Arbeitsplan.
     - Die Attribute für diese Varianten stammen standardmäßig aus der technischen Kategorie und werden nicht aus der vorherigen Variante kopiert.
 

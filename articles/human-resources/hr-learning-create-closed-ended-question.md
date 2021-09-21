@@ -1,8 +1,8 @@
 ---
 title: Eine Frage mit vordefinierten Antworten erstellen
 description: Fragen mit vordefinierten Antworten ermöglichen die Angabe von Optionen, aus denen der Befragte auswählen kann.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion, HcmLearningWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b4daa277ba1b71238314de975c1e8a54f9ece408d6fc2a314828bc0592129af2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8758b74f9ce7c8687b7c2925ccd04cd512602db0
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731960"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465172"
 ---
 # <a name="create-a-closed-ended-question"></a>Eine Frage mit vordefinierten Antworten erstellen
 
@@ -30,42 +30,42 @@ Fragen mit vordefinierten Antworten ermöglichen die Angabe von Optionen, aus de
 
 
 ## <a name="create-an-answer-group"></a>Erstellen einer Antwortgruppe
-1. Wechseln Sie zu "Fragebogen" > "Entwurf" > "Antwortgruppen"
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Antwortgruppe" einen Wert ein.
-4. Geben Sie im Feld "Beschreibung" einen Wert ein.
+1. Gehen Sie zu **Fragebogen** > **Entwurf** > **Antwortgruppen**.
+2. Klicken Sie auf **Neu**.
+3. Geben Sie im Feld **Antwortgruppe** einen Wert ein.
+4. Geben Sie im Feld **Beschreibung** einen Wert ein.
     * Verwenden Sie die Randomisierungsfunktionen, um die Antworten bei jeder Verwendung der Antwortgruppe für eine Frage zufällig in einen anderen Reihenfolge anzuordnen.  
-5. Klicken Sie auf "Antwort".
-6. Klicken Sie auf "Neu".
+5. Klicken Sie auf **Antwort**.
+6. Klicken Sie auf **Neu**.
     * "Sequenznummer" steuert die Reihenfolge, in der die Antworten angezeigt werden, es sei denn, "Zufällig festlegen" wird für die Antwortgruppe ausgewählt.  
     * Punkte können zu den Antworten für den Fragebogen vergeben werden.  
-7. Geben Sie im Feld "Punkte" eine Zahl ein.
+7. Geben Sie im Feld **Punkte** eine Zahl ein.
     * Die richtige Antwort kann markiert werden, um anzugeben, dass die ausgewählte Antwort richtig ist. Dies kann auch für die Punktzahl im Fragebogen verwendet werden.  
-8. Geben Sie im Feld "Antwort" einen Wert ein.
+8. Geben Sie im Feld **Antwort** einen Wert ein.
     * Fahren Sie fort, Antwortauswahloptionen für die Antwortgruppe zu erstellen.  
-9. Klicken Sie auf "Neu".
-10. Geben Sie im Feld "Punkte" eine Zahl ein.
-11. Geben Sie im Feld "Antwort" einen Wert ein.
-12. Klicken Sie auf Neu.
-13. Geben Sie im Feld "Punkte" eine Zahl ein.
-14. Geben Sie im Feld "Antwort" einen Wert ein.
-15. Klicken Sie auf Neu.
-16. Geben Sie im Feld "Punkte" eine Zahl ein.
-17. Geben Sie im Feld "Antwort" einen Wert ein.
-18. Klicken Sie auf Neu.
-19. Geben Sie im Feld "Punkte" eine Zahl ein.
-20. Geben Sie im Feld "Antwort" einen Wert ein.
+9. Klicken Sie auf **Neu**.
+10. Geben Sie im Feld **Punkte** eine Zahl ein.
+11. Geben Sie im Feld **Antwort** einen Wert ein.
+12. Klicken Sie auf **Neu**.
+13. Geben Sie im Feld **Punkte** eine Zahl ein.
+14. Geben Sie im Feld **Antwort** einen Wert ein.
+15. Klicken Sie auf **Neu**.
+16. Geben Sie im Feld **Punkte** eine Zahl ein.
+17. Geben Sie im Feld **Antwort** einen Wert ein.
+18. Klicken Sie auf **Neu**.
+19. Geben Sie im Feld **Punkte** eine Zahl ein.
+20. Geben Sie im Feld **Antwort** einen Wert ein.
 21. Schließen Sie die Seite.
 22. Schließen Sie die Seite.
 
 ## <a name="create-the-question"></a>Frage erstellen
-1. Wechseln Sie zu "Fragebogen" > "Entwerfen" > "Fragen".
-2. Klicken Sie auf "Neu".
+1. Gehen Sie zu **Fragebogen** > **Entwerfen** > **Fragen**.
+2. Klicken Sie auf **Neu**.
 3. Verwenden Sie das Feld "Typ", um zusammenhängende Fragen zu gruppieren.
     * Sie können Kontrollkästchen, alternative Schaltflächen oder Kombinationsfelder für Fragen mit vordefinierten Antworten als Eingabetypen verwenden.  
-4. Wählen Sie im Feld "Eingabetyp" eine Option aus.
-5. Geben Sie im Feld "Antwortgruppe" einen Wert ein oder wählen Sie einen Wert aus.
-6. Geben Sie im Feld "Text" einen Wert ein.
+4. Wählen Sie im Feld **Eingabetyp** eine Option aus.
+5. Geben Sie im Feld **Antwortgruppe** einen Wert ein oder wählen Sie einen Wert aus.
+6. Geben Sie im Feld **Text** einen Wert ein.
 
 
 

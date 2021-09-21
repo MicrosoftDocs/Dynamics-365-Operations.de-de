@@ -2,7 +2,7 @@
 title: Einen B2C Mandanten in Commerce einrichten
 description: In diesem Thema wird beschrieben, wie Sie Ihren Azure Active Directory (Azure AD) Business-to-Consumer-Mandanten (B2C) für die Authentifizierung von Benutzerseiten in Dynamics 365 Commerce einrichten.
 author: BrianShook
-ms.date: 08/11/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 107e06d44d159152b260897dfba456a525f19e27
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: d54de9025926d2c1908ce29d2b680a48172f46a4
+ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344497"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466267"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Einen B2C Mandanten in Commerce einrichten
 
@@ -37,6 +37,26 @@ Dynamics 365 Commerce Verwendet Azure AD B2C zur Unterstützung von Benutzeranme
 
 > [!TIP]
 > Mit Azure AD Identitätsschutz und bedingtem Zugriff können Sie die Benutzer Ihrer Website weiter schützen und die Sicherheit Ihrer Azure AD B2C Mandanten erhöhen. Um die Funktionalitäten zu überprüfen, die für Azure AD B2C Premium P1 und Premium P2 Mandanten verfügbar sind, siehe [Identitätsschutz und bedingter Zugriff für Azure AD B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
+
+## <a name="dynamics-environment-prerequisites"></a>Voraussetzungen für die dynamische Umgebung
+
+Bevor Sie beginnen, stellen Sie sicher, dass Ihre Dynamics 365 Commerce Umgebung und der E-Commerce-Kanal entsprechend konfiguriert werden, indem die folgenden Voraussetzungen erfüllt sind.
+
+- Legen Sie die POS-Operationen **AllowAnonymousAccess** Wert auf 1 in der Commerce-Zentrale fest:
+    1. Gehen Sie zu **POS Vorgänge**.
+    1. Im Vorgangsraster klicken Sie mit der rechten Maustaste auf das Raster und wählen **Personalisieren**.
+    1. Wählen Sie **Feld hinzufügen zu**.
+    1. Wählen Sie in der Liste der verfügbaren Spalten die **AllowAnonymousAccess** Spalte, um es hinzuzufügen.
+    1. Wählen Sie **Aktualisieren**.
+    1. Für den **612** Vorgang Kunden hinzufügen ändern Sie **AllowAnonymousAccess** auf 1.
+    1. Führen Sie den **1090 (Register)** Einzelvorgang aus.
+- Legen Sie das Nummernkreis-Kundenkonto Attribut **Manuell** auf **Nein** in der Handelszentrale fest:
+    1. Gehen Sie zu **Einzelhandel und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Commerce-Parameter**.
+    1. Wählen Sie **Nummernkreise**.
+    1. In der **Kundenkonto** Zeile, doppelklicken Sie auf den **Nummernfolgecode** Wert.
+    1. Im Inforegister **Allgemein** der Zahlenfolge legen Sie **Manuell** auf **Nein** fest.
+
+Nach der Bereitstellung Ihrer Dynamics 365 Commerce Umgebung wird auch empfohlen, in der Umgebung die [ Seed-Daten zu initialisieren](enable-configure-retail-functionality.md).
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Erstellen oder Verknüpfen eines vorhandenen AAD B2C-Mandanten im Azure-Portal
 

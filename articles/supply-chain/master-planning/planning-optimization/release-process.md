@@ -2,20 +2,20 @@
 title: Releaseprozess und Releaseverlauf der Planungsoptimierung
 description: Dieses Thema enthält Informationen zum Releaseprozess und zum Releaseverlauf für Planungsoptimierung.
 author: crytt
-ms.date: 8/17/2021
+ms.date: 09/02/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
-ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: fcd18341629afcf3092a457ae711e27b0bbfeb2a
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: d0f7a9f59d1034451c5c2dec1150c017bda27ad4
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394413"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474699"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Releaseprozess und Releaseverlauf der Planungsoptimierung
 
@@ -31,10 +31,11 @@ Umgebungen, die die Planungsoptimierung verwenden, erhalten automatisch die neue
 
 Da keine Benachrichtigungen angezeigt werden, wenn die Planungsoptimierung in Ihrer Umgebung aktualisiert wird, können Sie die Versionshinweise in der folgenden Tabelle überprüfen, um festzustellen, wann Änderungen veröffentlicht wurden und welche Funktionen sie eingeführt haben. Diese Tabelle zeigt die Änderungen, die für die Planungsoptimierung freigegeben wurden, ob diese Änderungen einer Funktion aus der Funktionsverwaltung zugeordnet sind und das Datum des Release.
 
-| Änderungen | Funktionsverwaltungsdetails | Freigabedatum |
+| Änderungen | Funktionsverwaltungsdetails | Erscheinungsdaten |
 |---|---|---|
-| <p>Das Feld **Vorlaufzeit** wurde zu geplanten Aufträgen hinzugefügt.</p><p>Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen.</p> | Es ist keine Funktionsverwaltung erforderlich. | 16. August 2021 |
-| <p>Anforderungen an den Ressourcentyp für die Terminierung mit unendlicher Kapazität hinzugefügt.</p><p>Verbesserte Ressourceneffizienz und Kalendereffizienz für unendliche Kapazitätsterminierung.</p><p>Weitere Informationen finden Sie unter [Zeitplanung mit unbegrenzter Kapazität](infinite-capacity-planning.md). | <p>Verfügbar in der Funktionsverwaltung ab Version 10.0.20.</p><p>Funktionsname: *Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung*</p> | 6. Juli 2021 |
-| Allgemeine Qualitätsverbesserungen. | Es ist keine Funktionsverwaltung erforderlich. | 6. Juli 2021 |
+| Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen. | Es ist keine Funktionsverwaltung erforderlich. | 25.-30. August 2021 |
+| <p>Das Feld **Vorlaufzeit** wurde zu geplanten Aufträgen hinzugefügt.</p><p>Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen.</p> | Es ist keine Funktionsverwaltung erforderlich. | 12.-17. August 2021 |
+| <p>Anforderungen an den Ressourcentyp für die Terminierung mit unendlicher Kapazität hinzugefügt.</p><p>Verbesserte Ressourceneffizienz und Kalendereffizienz für unendliche Kapazitätsterminierung.</p><p>Weitere Informationen finden Sie unter [Zeitplanung mit unbegrenzter Kapazität](infinite-capacity-planning.md). | <p>Verfügbar in der Funktionsverwaltung ab Version 10.0.20.</p><p>Funktionsname: *Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung*</p> | 6.-12. Juli 2021 |
+| Allgemeine Qualitätsverbesserungen. | Es ist keine Funktionsverwaltung erforderlich. | 6.-12. Juli 2021 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

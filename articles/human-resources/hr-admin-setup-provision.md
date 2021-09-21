@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393522"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441164"
 ---
 # <a name="provision-human-resources"></a>Human Resources bereitstellen
 
@@ -43,6 +43,11 @@ Bevor Sie mit der Bereitstellung einer neuen Produktionsumgebung beginnen, müss
 Bevor Sie Ihre erste Sandbox- oder Produktionsumgebung bereitstellen, möchten Sie möglicherweise eine [Human Resources Testumgebung](https://go.microsoft.com/fwlink/p/?LinkId=2115962) bereitstellen, um die Human Resources-Funktionalität zu validieren. Probeumgebung enthält fiktive Daten, die verwendet werden können, um das Programm in einem sicheren Verfahren zu untersuchen. Obwohl eine Probeumgebung dem Benutzer gehört, der sie angefordert hat, können andere Benutzer durch die Systemverwaltungserfahrung für Human Resources eingeladen werden. 
 
 Test-Umgebungen sind nicht für die Verwendung als Produktionsumgebung vorgesehen. Sie sind auf einen Testzeitraum von 60 Tagen beschränkt. Nach Ablauf des Testzeitraums werden die Umgebung und alle darin befindlichen Daten gelöscht und können nicht wiederhergestellt werden. Die Umgebung kann nicht in eine Sandbox- oder Produktionsumgebung umgewandelt werden. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
+
+Wenn Sie eine Human-Resources-Testumgebung erstellen, wird zusätzlich eine Power Apps-Testumgebung auf dem Mandanten erstellt und mit der Human-Resources-Umgebung verknüpft. Die Power Apps-Umgebung mit dem Namen „TestDrive“ hat den gleichen Testzeitraum wie die Human-Resources-Umgebung.
+
+> [!NOTE]
+> Die Bereitstellung einer Human-Resources-Testumgebung schlägt fehl, wenn der authentifizierte Benutzer keine Berechtigung zum Erstellen von Power Apps-Testumgebungen hat. Der Benutzer muss in die Benutzergruppe aufgenommen werden, die Testumgebungen im Power Platform Admin Center erstellen darf. Weitere Informationen finden Sie unter [Kontrollieren Sie, wer Umgebungen im Power Platform AdminCenter erstellen und verwalten kann](//power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Human Resources-Umgebungen planen
 
@@ -69,7 +74,7 @@ Um LCS für die Human Resources-Umgebung zu verwalten, müssen Sie zuerst ein LC
 1. Melden Sie sich an bei [LCS](https://lcs.dynamics.com/Logon/Index), indem Sie das Konto verwenden, das Sie verwenden, um Human Resources zu abonnieren.
 
    > [!NOTE]
-   > Um eine erfolgreiche Bereitstellung zu gewährleisten, muss das Konto, das Sie für die Bereitstellung der Human Resources-Umgebung verwenden, entweder der Rolle **Systemadministrator** oder **System-Anpasser** in der Power Apps-Umgebung zugewiesen sein, die mit der Human Resources-Umgebung verbunden ist. Siehe [Konfigurieren Sie die Benutzersicherheit für Ressourcen](/power-platform/admin/database-security) für weitere Informationen über die Zuweisung von Sicherheitsrollen an Benutzer in der Power Platform.
+   > Um eine erfolgreiche Bereitstellung zu gewährleisten, muss das Konto, das Sie für die Bereitstellung der Human Resources-Umgebung verwenden, entweder der Rolle **Systemadministrator** oder **System-Anpasser** in der Power Apps-Umgebung zugewiesen sein, die mit der Human Resources-Umgebung verbunden ist. Weitere Informationen über die Zuweisung von Sicherheitsrollen an Benutzer in Power Platform finden Sie unter [Konfigurieren Sie die Benutzersicherheit für Ressourcen](/power-platform/admin/database-security).
 
 2. Wählen Sie das Pluszeichen (**+**) aus, um ein Projekt zu erstellen.
 

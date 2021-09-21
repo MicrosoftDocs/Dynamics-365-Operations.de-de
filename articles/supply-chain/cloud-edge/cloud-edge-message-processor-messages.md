@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 76a3cc316da322c7997072c00780f2fc133bfd2a02274b1e53f5cd06cfb1277e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748858"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471643"
 ---
 # <a name="message-processor-messages"></a>Nachrichtenverarbeitungsmeldungen
 
@@ -44,7 +44,7 @@ Sie können die Felder oben auf der Seite **Nachrichtenprozessor-Meldungen** ver
   - *Warteschlange* – Die Nachricht ist bereit, vom Nachrichtenprozessor verarbeitet zu werden.
   - *Verarbeitet* – Die Nachricht wurde erfolgreich vom Nachrichtenprozessor verarbeitet.
   - *Abgebrochen* – Die Nachricht wurde verarbeitet, aber die Verarbeitung ist fehlgeschlagen.
-- **Nachrichteninhalt** – Dieser Filter führt eine Volltextsuche im Inhalt der Nachricht durch. (Der Inhalt von Nachrichten wird im Raster nicht angezeigt.) Der Filter behandelt die meisten Sonderzeichen (z. B. „-“) als Leerzeichen und behandelt alle Leerzeichen als boolesche ODER-Operatoren. T=Wenn Sie z.B. nach einem bestimmten `journalid`-Wert gleich „USMF-123456“ suchen, findet das System alle Nachrichten, die „USMF“ oder „123456“ enthalten, was wahrscheinlich eine lange Liste sein wird. Daher wäre es besser, nur „123456“ einzugeben, weil das spezifischere Ergebnisse liefert.
+- **Nachrichteninhalt** – Dieser Filter führt eine Volltextsuche im Inhalt der Nachricht durch. (Der Inhalt von Nachrichten wird im Raster nicht angezeigt.) Der Filter behandelt die meisten Sonderzeichen (z. B. „-“) als Leerzeichen und behandelt alle Leerzeichen als boolesche ODER-Operatoren. Wenn Sie z. B. nach einem bestimmten `journalid`-Wert gleich „USMF-123456“ suchen, findet das System alle Nachrichten, die „USMF“ oder „123456“ enthalten, was wahrscheinlich eine lange Liste sein wird. Daher wäre es besser, nur „123456“ einzugeben, weil das spezifischere Ergebnisse liefert.
 
 ## <a name="example-message-type-request-inventory-adjustment-financial-update"></a>Beispiel Nachrichtentyp: Finanzaktualisierung der Bestandsanpassung anfordern
 
@@ -65,7 +65,7 @@ Die Symbolleiste auf der Registerkarte **Protokoll** enthält die folgenden Scha
 
 ## <a name="message-processor-batch-job"></a>Nachrichten-Prozessor Batchauftrag
 
-Wenn Sie eine Cloud- und Edge-Bereitstellung ausführen, wird der Batchauftrag *Nachrichtenprozessor* automatisch aufgerufen, wenn eine neue Nachricht zur Verarbeitung erstellt wird, so dass Sie diesen Auftrag nicht manuell planen müssen.
+Wenn Sie eine verteilte Hybridtopologie mit Skalierungseinheiten ausführen, wird der Batchauftrag *Nachrichtenprozessor* automatisch aufgerufen, wenn eine neue Nachricht zur Verarbeitung erstellt wird, so dass Sie diesen Auftrag nicht manuell planen müssen.
 
 Falls nötig, können Sie auf den Batch-Auftrag zugreifen, indem Sie zu **Systemadministration > Nachrichtenprozessor > Nachrichtenprozessor** gehen.
 

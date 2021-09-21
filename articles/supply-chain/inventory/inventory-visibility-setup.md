@@ -1,5 +1,5 @@
 ---
-title: Bestandstransparenz einrichten
+title: Installieren Sie das Inventory Visibility Add-In
 description: In diesem Thema wird beschrieben, wie Sie das Bestandssichtbarkeit-Add-In für Microsoft Dynamics 365 Supply Chain Management installieren.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8573fe01abb1c6092012baf85e8b7df40b74a31f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343583"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474819"
 ---
-# <a name="set-up-inventory-visibility"></a>Bestandstransparenz einrichten
+# <a name="install-and-set-up-inventory-visibility"></a>Bestandsanzeige installieren und einrichten
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
@@ -41,7 +41,7 @@ Bevor Sie die Inventory Visibility installieren, müssen Sie die folgenden Aufga
     - `Inventory Visibility Integration.zip` (wenn die Version von Supply Chain Management, die Sie verwenden, älter ist als Version 10.0.18)
 
 > [!NOTE]
-> Zu den Ländern und Regionen, die derzeit unterstützt werden, gehören Kanada (CCA, ECA), die Vereinigten Staaten (WUS, EUS), die Europäische Union (NEU, WEU), das Vereinigte Königreich (SUK, WUK) und Australien (EAU, SEAU).
+> Zu den Ländern und Regionen, die derzeit unterstützt werden, gehören Kanada (CCA, ECA), die Vereinigten Staaten (WUS, EUS), die Europäische Union (NEU, WEU), das Vereinigte Königreich (SUK, WUK), Australien (EAU, SEAU), Japan (EJP, WJP) und Brasilien (SBR, SCUS).
 
 Wenn Sie Fragen zu diesen Voraussetzungen haben, wenden Sie sich an das Inventory Visibility Produktteam.
 
@@ -119,6 +119,9 @@ Nachdem Sie eine Anwendung registriert und ein Client-Geheimnis zu Azure AD hinz
 1. Stimmen Sie den Bedingungen zu, indem Sie das Kontrollkästchen **Geschäftsbedingungen** aktivieren.
 1. Wählen Sie **Installieren**. Der Status des Add-Ins wird als **Installation** angezeigt. Wenn die Installation abgeschlossen ist, aktualisieren Sie die Seite. Der Status sollte sich auf **Installiert** ändern.
 
+> [!IMPORTANT]
+> Wenn Sie mehr als eine LCS-Umgebung haben, erstellen Sie für jede Umgebung eine andere Azure AD-Anwendung. Wenn Sie dieselbe Anwendungs-ID und Mandanten-ID verwenden, um das Bestandsanzeige-Add-In für verschiedene Umgebungen zu installieren, tritt in älteren Umgebungen ein Tokenproblem auf. Nur die zuletzt installierte Version ist gültig.
+
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Deinstallieren des Inventory Visibility-Add-Ins
 
 Um das Bestandssichtbarkeits-Add-In zu deinstallieren, wählen Sie **Deinstallieren** auf der LCS-Seite. Der Deinstallationsvorgang beendet das Inventory Visibility-Add-In, hebt die Registrierung des Add-Ins im LCS auf und löscht alle temporären Daten, die im Daten-Cache des Inventory Visibility-Add-Ins gespeichert sind. Die primären Bestandsdaten, die in Ihrem Dataverse-Abonnement gespeichert sind, werden jedoch nicht gelöscht.
@@ -133,7 +136,7 @@ Um Bestandsdaten zu deinstallieren, die in Ihrem Dataverse-Abonnement gespeicher
 
 Nachdem Sie diese Lösungen gelöscht haben, werden auch die Daten, die in Tabellen gespeichert sind, gelöscht.
 
-## <a name="set-up-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Setup Supply Chain Management festlegen
+## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Einrichten der Bestandssichtbarkeit im Supply Chain Management
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Bereitstellen des Integrationspakets für die Bestandssichtbarkeit
 
@@ -153,8 +156,23 @@ Stellen Sie sicher, dass die folgenden Funktionen in Ihrer Supply Chain Manageme
 
 ### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Integration der Bestandssichtbarkeit einrichten
 
-1. Öffnen Sie im Supply Chain Management den Arbeitsbereich **[Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** und schalten Sie die Funktion *Bestandssichtbarkeit-Integration* ein.
-1. Gehen Sie zu **Bestandsverwaltung \> Parameter für die \>-Bestandssichtbarkeits-Integration festlegen** und geben Sie die URL der Umgebung ein, in der Sie die Bestandssichtbarkeit ausführen. Weitere Informationen finden Sie unter [Finden Sie den Dienst-Endpunkt](inventory-visibility-power-platform.md#get-service-endpoint).
+Nachdem Sie das Add-In installiert haben, bereiten Sie Ihr Supply Chain Management-System vor, indem Sie die folgenden Schritte ausführen.
+
+1. Öffnen Sie im Supply Chain Management den Arbeitsbereich **[Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** und aktivieren Sie die folgenden Funktionen:
+    - *Integration der Bestandssichtbarkeit* – Erforderlich.
+    - *Integration der Bestandssichtbarkeit mit Reservierungsversatz* – Empfohlen, aber optional. Erfordert Version 10.0.22 oder höher. Weitere Informationen finden Sie unter [Reservierungen in Inventory Visibility](inventory-visibility-reservations.md).
+
+1. Gehen Sie zu **Bestandsverwaltung \> Einrichtung \> Bestandssichtbarkeit-Integrationsparameter**.
+1. Öffnen Sie die Registerkarte **Allgemein** und nehmen Sie die folgenden Einstellungen vor:
+    - **Bestandssichtbarkeit Endpunkt** – Geben Sie die URL der Umgebung ein, in der Sie die Bestandssichtbarkeit ausführen. Weitere Informationen finden Sie unter [Finden Sie den Dienst-Endpunkt](inventory-visibility-configuration.md#get-service-endpoint).
+    - **Maximale Anzahl von Datensätzen in einer einzigen Anforderung** – Legen Sie die maximale Anzahl von Datensätzen fest, die in eine einzelne Anforderung aufgenommen werden sollen. Sie müssen eine positive Ganzzahl kleiner oder gleich 1.000 eingeben. Der Standardwert ist "512". Wir empfehlen dringend, den Standardwert beizubehalten, es sei denn, Sie wurden vom Microsoft-Support beraten oder sind sich anderweitig sicher, dass Sie ihn ändern müssen.
+
+1. Wenn Sie die optionale Funktion *Integration der Bestandssichtbarkeit mit Reservierungsversatz* aktiviert haben, öffnen Sie die Registerkarte **Reservierungsversatz** und nehmen Sie die folgenden Einstellungen vor:
+    - **Reservierungsversatz aktivieren** – Auf *Ja* festlegen, um diese Funktion zu aktivieren.
+    - **Modifikator für Reservierungsversatz** – Wählen Sie den Bestandstransaktionsstatus aus, der Reservierungen verrechnet, die in der Bestandsanzeige vorgenommen wurden. Diese Einstellung legt die Auftragsbearbeitungsstufe fest, die einen Versatz auslöst. Die Stufe wird durch den Status der Bestandstransaktion des Auftrags nachverfolgt. Wählen Sie eine der folgenden Optionen:
+        - *Bei Bestellung* - Für den Status *Bei Transaktion* sendet eine Bestellung eine Offset-Anforderung, wenn sie erstellt wird. Die Versatzmenge ist die Menge des erstellten Auftrags.
+        - *Reservieren* - Für den Status *Bestellte Transaktion reservieren* sendet eine Bestellung eine Offset-Anfrage, wenn sie reserviert, kommissioniert, mit Lieferschein gebucht oder in Rechnung gestellt wird. Die Anfrage wird nur einmal ausgelöst, und zwar für den ersten Schritt, wenn der genannte Vorgang stattfindet. Die Versatzmenge ist die Menge, um die sich der Bestandstransaktionsstatus von *In Auftrag* zu *Bestellt reserviert* (oder zu einem späteren Status) für die entsprechende Auftragsposition geändert hat.
+
 1. Gehen Sie zu **Bestandsverwaltung \> Periodisch \> Bestandssichtbarkeit-Integration**, und aktivieren Sie den Auftrag. Alle Ereignisse zu Bestandsänderungen aus dem Supply Chain Management werden nun in die Bestandssichtbarkeit übernommen.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

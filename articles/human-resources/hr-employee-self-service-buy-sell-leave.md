@@ -1,8 +1,8 @@
 ---
 title: Urlaub kaufen und verkaufen
-description: In Dynamics 365 Human Resources können Sie Anfragen zum Kauf und Verkauf von Urlaub auf der Grundlage der von Ihrem Unternehmen eingerichteten Richtlinien für den Kauf und Verkauf von Urlaub stellen.
-author: andreabichsel
-ms.date: 08/20/2020
+description: In diesem Thema wird beschrieben, wie Sie Anfragen zum Kaufen und Verkaufen von Urlaub in Dynamics 365 Human Resources übermitteln.
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1225bcfd0c7c9dfecde2aec54983fca8a298f1cf92d2929d8b1fbe2bdf05e5f9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 716afdc4e52c3e4a0432b987cb82077012d4d0c2
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779733"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431509"
 ---
 # <a name="buy-and-sell-leave"></a>Urlaub kaufen und verkaufen
 
@@ -51,7 +51,7 @@ Ihre Guthaben werden entweder automatisch aktualisiert oder durchlaufen vor der 
 
 ## <a name="troubleshooting"></a>Problembehandlung 
 
-Wenn ein Workflow für eine Kauf- oder Verkaufsabwesenheitsanforderung fehlschlägt, können Benutzer mit der Berechtigung **EssLeaveBuySellRequestApprover** das Nachrichtenprotokoll für alle Kauf- und Verkaufsabwesenheitsanforderungen überprüfen. Gehen Sie dazu auf **Urlaub und Abwesenheit > Link > Urlaubskäufe und -verkäufe > Meldungsprotokoll** (links oben). Das **Meldungsprotokoll** zeigt dem Benutzer, wie die Transaktionen verarbeitet wurden und die dazugehörige Workflow-Historie.
+Wenn ein Workflow für eine Kauf- oder Verkaufsabwesenheitsanforderung fehlschlägt, können Benutzer mit der Berechtigung **EssLeaveBuySellRequestApprover** das Nachrichtenprotokoll für alle Kauf- und Verkaufsabwesenheitsanforderungen überprüfen. Gehen Sie hierfür zu **Urlaub und Abwesenheit > Links > Urlaubskäufe und -verkäufe > Meldungsprotokoll** (links oben). Das **Meldungsprotokoll** zeigt dem Benutzer, wie die Transaktionen verarbeitet wurden und die dazugehörige Workflow-Historie.
 
 
 ## <a name="see-also"></a>Siehe auch

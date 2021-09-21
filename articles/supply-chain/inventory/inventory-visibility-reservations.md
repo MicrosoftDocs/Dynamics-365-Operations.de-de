@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6c87018cbfbe22fbbc441a1a23aee0ac44af9ddc
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: acc5d5f93f3f625892aac37780a44e221b6eb5ac
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345148"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475035"
 ---
 # <a name="inventory-visibility-reservations"></a>Bestandstransparenzreservierungen
 
@@ -32,19 +32,20 @@ Optional können Sie Microsoft Dynamics 365 Supply Chain Management (und andere 
 
 Wenn Sie die Reservierungsfunktion einschalten, ist Supply Chain Management automatisch bereit, Reservierungen zu verrechnen, die über Inventory Visibility vorgenommen wurden.
 
-> [!NOTE]
-> Die Offset-Funktionalität erfordert Supply Chain Management Version 10.0.22 oder höher. Wenn Sie Reservierungen mit Inventory Visibility verwenden möchten, empfehlen wir Ihnen zu warten, bis Sie Supply Chain Management auf Version 10.0.22 oder höher aktualisiert haben.
-
-## <a name="turn-on-the-reservation-feature"></a>Einschalten der Reservierungsfunktion
+## <a name="turn-on-and-set-up-the-reservation-feature"></a><a name="turn-on"></a>Einschalten und Einrichten der Reservierungsfunktion
 
 Um die Funktion "Reservierung" einzuschalten, gehen Sie folgendermaßen vor.
 
-1. Öffnen Sie in Power Apps **Inventory Visibility**.
+1. Melden Sie sich bei Power Apps an und öffnen Sie die **Bestandsanzeige**.
 1. Öffnen Sie die Seite **Konfiguration**.
 1. Schalten Sie auf der Registerkarte **Funktionsverwaltung** die Funktion *OnHandReservierung* ein.
 1. Melden Sie sich im Supply Chain Management an.
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichtung \> Bestandssichtbarkeit-Integrationsparameter**.
-1. Legen Sie unter **Reservierungsversatz** die Option **Reservierungsversatz aktivieren** auf *Ja* fest.
+1. Gehen Sie zum Arbeitsbereich **[Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** und aktivieren Sie die Funktion *Integration der Bestandssichtbarkeit mit Reservierungsversatz* (erfordert Version 10.0.22 oder höher).
+1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Bestandssichtbarkeit-Integrationsparameter**, öffnen Sie die Registerkarte **Reservierungsversatz** und nehmen Sie die folgenden Einstellungen vor:
+    - **Reservierungsversatz aktivieren** – Auf *Ja* festlegen, um diese Funktion zu aktivieren.
+    - **Modifikator für Reservierungsversatz** – Wählen Sie den Bestandstransaktionsstatus aus, der Reservierungen verrechnet, die in der Bestandsanzeige vorgenommen wurden. Diese Einstellung legt die Auftragsbearbeitungsstufe fest, die einen Versatz auslöst. Die Stufe wird durch den Status der Bestandstransaktion des Auftrags nachverfolgt. Wählen Sie eine der folgenden Optionen:
+        - *Bei Bestellung* - Für den Status *Bei Transaktion* sendet eine Bestellung eine Offset-Anforderung, wenn sie erstellt wird. Die Versatzmenge ist die Menge des erstellten Auftrags.
+        - *Reservieren* - Für den Status *Bestellte Transaktion reservieren* sendet eine Bestellung eine Offset-Anfrage, wenn sie reserviert, kommissioniert, mit Lieferschein gebucht oder in Rechnung gestellt wird. Die Anfrage wird nur einmal ausgelöst, und zwar für den ersten Schritt, wenn der genannte Vorgang stattfindet. Die Versatzmenge ist die Menge, um die sich der Bestandstransaktionsstatus von *In Auftrag* zu *Bestellt reserviert* (oder zu einem späteren Status) für die entsprechende Auftragsposition geändert hat.
 
 ## <a name="use-the-reservation-feature-in-inventory-visibility"></a>Verwenden Sie die Funktion "Reservierung" in Inventory Visibility
 
@@ -56,13 +57,21 @@ Die Reservierungshierarchie beschreibt die Sequenz von Dimensionen, die bei der 
 
 Die Reservierungshierarchie kann sich von der Indexhierarchie unterscheiden. Diese Unabhängigkeit ermöglicht die Implementierung einer Kategorieverwaltung, bei der Benutzer die Dimensionen in Details aufschlüsseln können, um die Anforderungen für genauere Reservierungen zu spezifizieren.
 
-Um eine Soft-Reservierungshierarchie in Power Apps zu konfigurieren, öffnen Sie die Seite **Konfiguration** und legen dann auf der Registerkarte **Soft-Reservierungszuordnung** die Reservierungshierarchie fest, indem Sie Dimensionen und ihre Hierarchieebenen hinzufügen und/oder ändern.
+Um eine Soft-Reservierungshierarchie in Power Apps zu konfigurieren, öffnen Sie die Seite **Konfiguration** und legen dann auf der Registerkarte **Soft-Reservierungshierarchie** die Reservierungshierarchie fest, indem Sie Dimensionen und ihre Hierarchieebenen hinzufügen und/oder ändern.
+
+Die Hierarchie Ihrer Soft-Reservierung sollte `SiteId` und `LocationId` als Komponenten enthalten, da sie die Partitionskonfiguration aufbauen.
+
+Weitere Informationen über die Konfiguration von Reservierungen finden Sie unter [Reservierungskonfiguration](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="call-the-reservation-api"></a>Aufrufen der Reservierungs-API
 
 Reservierungen werden im Inventory Visibility-Dienst vorgenommen, indem Sie eine POST-Anfrage an die URL des Dienstes senden, z. B. `/api/environment/{environment-ID}/onhand/reserve`.
 
 Für eine Reservierung muss der Anfragekörper eine Organisations-ID, eine Produkt-ID, reservierte Mengen und Dimensionen enthalten. Die Anfrage generiert eine eindeutige Reservierungs-ID für jeden Reservierungsdatensatz. Der Reservierungsdatensatz enthält die eindeutige Kombination aus der Produkt-ID und den Dimensionen.
+
+Wenn Sie die Reservierungs-API aufrufen, können Sie die Reservierungsvalidierung steuern, indem Sie den booleschen `ifCheckAvailForReserv`-Parameter im Anforderungstext angeben. Der Wert `True` bedeutet, dass die Validierung erforderlich ist, während der Wert `False` bedeutet, dass die Validierung nicht erforderlich ist. Der Standardwert ist `True`.
+
+Wenn Sie eine Reservierung stornieren oder die Reservierung bestimmter Bestandsmengen aufheben möchten, setzen Sie die Menge auf einen negativen Wert und legen Sie den `ifCheckAvailForReserv`-Parameter auf `False` fest, um die Validierung zu überspringen.
 
 Hier ist ein Beispiel für den Anforderungskörper, als Referenz.
 
@@ -108,18 +117,9 @@ Für Bestandstransaktionsstatus, die einen bestimmten Reservierungs-Offset-Modif
 
 Die Offset-Menge folgt der Bestandsmenge, die auf Bestandstransaktionen angegeben ist. Der Offset wird nicht wirksam, wenn keine reservierte Menge im Inventory Visibility-Dienst verbleibt.
 
-> [!NOTE]
-> Die Offset-Funktionalität ist ab der Version 10.0.22 verfügbar
+### <a name="set-up-the-reservation-offset-modifier"></a>Einrichten des Modifikators für den Reservierungsversatz
 
-### <a name="set-up-the-reserve-offset-modifier"></a>Festlegen des Reserve-Offset-Modifikators
-
-Der Reserve-Offset-Modifikator bestimmt die Stufe der Auftragsverarbeitung, die Auslöser für Offsets ist. Die Stufe wird durch den Status der Bestandstransaktion des Auftrags nachverfolgt. Um den Reserve-Offset-Modifikator festzulegen, gehen Sie wie folgt vor.
-
-1. Gehen Sie zu **Bestandsverwaltung \> Einrichtung \> Inventory Visibility-Integrationsparameter \> Reservierungsoffset**.
-1. Legen Sie das Feld **Reserveoffset-Modifikator** auf einen der folgenden Werte fest:
-
-    - *Bei Bestellung* - Für den Status *Bei Transaktion* sendet eine Bestellung eine Offset-Anforderung, wenn sie erstellt wird.
-    - *Reservieren* - Für den Status *Bestellte Transaktion reservieren* sendet eine Bestellung eine Offset-Anfrage, wenn sie reserviert, kommissioniert, mit Lieferschein gebucht oder in Rechnung gestellt wird. Die Anfrage wird nur einmal ausgelöst, und zwar für den ersten Schritt, wenn der genannte Vorgang stattfindet.
+Falls noch nicht geschehen, richten Sie den Reservierungsmodifikator wie in [Einschalten und Einrichten der Reservierungsfunktion](#turn-on) beschrieben ein.
 
 ### <a name="set-up-reservation-ids"></a>Reservierungs-IDs festlegen
 

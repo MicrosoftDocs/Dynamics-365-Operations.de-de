@@ -2,7 +2,7 @@
 title: Lagerverfügbarkeit für Retail Channels berechnen
 description: In diesem Thema wird beschrieben, wie ein Unternehmen Microsoft Dynamics 365 Commerce verwenden kann, um die geschätzte Verfügbarkeit von Produkten im Online- und Shop-Kanal anzuzeigen.
 author: hhainesms
-ms.date: 04/23/2021
+ms.date: 09/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: da79aadace09ad480fa34bc03220831023e469645bb7d53af1647bd2d35af0ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3cfd8c2f0b88a4e634cee0398283a51eddf60b2
+ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741811"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7472170"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Lagerverfügbarkeit für Retail Channels berechnen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 In diesem Thema wird beschrieben, wie ein Unternehmen Microsoft Dynamics 365 Commerce verwenden kann, um die geschätzte Verfügbarkeit von Produkten im Online- und Shop-Kanal anzuzeigen.
 
@@ -43,6 +44,21 @@ Die folgenden Bestandsänderungen werden derzeit in der kanalseitigen Bestandsbe
 - Bestand, der durch Kundenbestellungen im Geschäft oder im Online-Kanal verkauft wurde
 - Bestand zurück in die Filiale
 - Erfüllter Bestand (entnehmen, verpacken, versenden) vom Lagerort der Filiale
+
+Um die kanalseitige Bestandsberechnung zu verwenden, müssen Sie die Funktion **Optimierte Produktverfügbarkeitsberechnung** aktivieren.
+
+Wenn sich Ihre Commerce-Umgebung in Version **10.0.8 bis 10.0.11** befindet, führen Sie die folgenden Schritte aus.
+
+1. Gehen Sie in der Commerce-Zentralverwaltung zu **Retail und Commerce** \> **Gemeinsame Commerce-Parameter**.
+1. Wählen Sie auf der Registerkarte **Bestand** im Feld **Produktverfügbarkeitsjob** die Option **Optimiertes Verfahren für Produktverfügbarkeitsjob verwenden** aus.
+
+Wenn sich Ihre Commerce-Umgebung in Version **10.0.12 oder höher** befindet, führen Sie die folgenden Schritte aus.
+
+1. Gehen Sie in der Commerce-Zentralverwaltung zu **Arbeitsbereiche \> Funktionsverwaltung** und aktivieren Sie die Funktion **Optimierte Produktverfügbarkeitsberechnung**.
+1. Wenn Ihre Online- und Store-Kanäle dieselben Lagerorte für die Auftragserfüllung verwenden, müssen Sie auch die Funktion **Erweiterte kanalseitige E-Commerce-Bestandsberechnungslogik** aktivieren. Auf diese Weise berücksichtigt die kanalseitige Berechnungslogik die nicht gebuchten Transaktionen, die im Store-Kanal erstellt werden. (Bei diesen Transaktionen kann es sich um Abholungstransaktionen, Debitorenaufträge und Rücksendungen handeln.)
+1. Führen Sie den Job **1070** (**Kanalkonfiguration**) aus.
+
+Wenn Ihre Commerce-Umgebung von einer früheren Commerce-Version als 10.0.8 aktualisiert wurde, müssen Sie nach dem Aktivieren der Funktion **Optimierte Produktverfügbarkeitsberechnung** außerdem **Commerce-Planer initialisieren** ausführen, damit die Funktion wirksam wird. Um die Initialisierung auszuführen, gehen Sie zu **Retail und Commerce** \> **Zentralverwaltungseinrichtung** \> **Commerce-Planer**.
 
 Um die kanalseitige Bestandsberechnung zu verwenden, muss als Voraussetzung eine periodische Momentaufnahme der Bestandsdaten aus der Zentrale, erstellt durch den Job **Produktverfügbarkeit**, an die Kanaldatenbanken gesendet werden. Die Momentaufnahme stellt die Informationen dar, die die Zentrale über die Verfügbarkeit des Bestands für eine bestimmte Kombination aus einem Produkt oder einer Produktvariante und einem Lagerort hat. Sie enthält nur die Bestandstransaktionen, die zum Zeitpunkt der Momentaufnahme in der Zentrale verarbeitet und gebucht wurden, und ist aufgrund der konstanten Verkaufsverarbeitung, die auf verteilten Servern stattfindet, in Echtzeit möglicherweise nicht zu 100 Prozent genau.
 
@@ -73,9 +89,7 @@ Commerce bietet die folgenden APIs für E-Commerce-Szenarien, um die Bestandsver
 
 Beide APIs verwenden intern die kanalseitige Berechnungslogik und geben die geschätzte **physikalisch verfügbare** Menge, **gesamte verfügbare** Menge, **Maßeinheit (UoM)** und **Bestand** für das angefragte Produkt und Lagerort zurück. Die zurückgegebenen Werte können auf Ihrer E-Commerce-Site angezeigt werden, wenn Sie dies wünschen, oder sie können verwendet werden, um andere Geschäftslogiken auf Ihrer E-Commerce-Site auszulösen. Sie können z. B. den Kauf von Produkten verhindern, deren Bestand „nicht vorrätig“ ist.
 
-Obwohl andere APIs, die in Commerce verfügbar sind, direkt zur Zentrale gehen können, um Lagerbestände für Produkte abzurufen, empfehlen wir nicht, diese in einer E-Commerce Umgebung zu verwenden, wegen möglicher Leistungsprobleme und der Auswirkungen, die diese häufigen Anfragen auf die Server Ihrer Zentrale haben können. Zusätzlich können die beiden oben genannten APIs mit der kanalseitigen Berechnung eine genauere Schätzung der Verfügbarkeit eines Produkts liefern, indem sie die Transaktionen berücksichtigen, die in den Kanälen erstellt wurden, die der Zentrale noch nicht bekannt sind.
-
-Um die beiden APIs zu verwenden, müssen Sie die Funktion **Optimierte Produktverfügbarkeitsberechnung** über den Arbeitsbereich **Funktionsverwaltung** in der Zentrale aktivieren. Wenn Ihre Online- und Store-Kanäle dieselben Lagerorte für die Abwicklung verwenden, müssen Sie auch die Funktion **Erweiterte kanal-seitige E-Commerce-Bestandsberechnungslogik** aktivieren, damit die kanal-seitige Berechnungslogik innerhalb der beiden APIs die im Store-Kanal erstellten ungebuchten Transaktionen (Nachnahme, Kundenbestellungen, Rücklieferungen) berücksichtigt. Sie müssen den Job **1070** (**Kanalkonfiguration**) ausführen, nachdem Sie diese Funktionen aktiviert haben.
+Obwohl andere APIs, die in Commerce verfügbar sind, direkt zur Zentrale gehen können, um Lagerbestände für Produkte abzurufen, empfehlen wir nicht, diese in einer E-Commerce Umgebung zu verwenden, wegen möglicher Leistungsprobleme und der Auswirkungen, die diese häufigen Anfragen auf die Server Ihrer Zentrale haben können. Zusätzlich können die beiden oben genannten APIs mit der kanalseitigen Berechnung eine genauere Schätzung zur Verfügbarkeit eines Produkts liefern, indem sie die Transaktionen berücksichtigen, die in den der Zentrale noch nicht bekannten Kanälen erstellt wurden.
 
 Um zu definieren, wie die Produktmenge in der API-Ausgabe zurückgegeben werden soll, führen Sie diese Schritte aus.
 
@@ -85,17 +99,17 @@ Um zu definieren, wie die Produktmenge in der API-Ausgabe zurückgegeben werden 
 
 Die Einstellung **Quantität in API-Ausgabe** bietet drei Optionen:
 
-- **Bestandsmenge zurückgeben** – Physisch verfügbare und insgesamt verfügbare Menge eines angeforderten Produkts werden in der API-Ausgabe zurückgegeben.
-- **Rückgabe Bestandsmenge abzüglich Bestandspuffer** – Die in der API-Ausgabe zurückgegebene Menge wird durch Subtraktion des Bestandspufferwerts angepasst. Weitere Informationen über den Bestandspuffer finden Sie unter [Konfigurieren von Bestandspuffern und Bestandsebenen](inventory-buffers-levels.md).
-- **Bestandsmenge nicht zurückgeben** – Nur der Bestand wird in der API-Ausgabe zurückgegeben. Weitere Informationen über Bestände finden Sie unter [Konfigurieren von Bestandspuffern und Beständen](inventory-buffers-levels.md).
+- **Bestandsmenge zurückgeben** – Physisch verfügbare und insgesamt verfügbare Menge eines angeforderten Produkts werden in der API-Ausgabe zurückgegeben.
+- **Rückgabe Bestandsmenge abzüglich Bestandspuffer** – Die in der API-Ausgabe zurückgegebene Menge wird durch Subtraktion des Bestandspufferwerts angepasst. Weitere Informationen über den Bestandspuffer finden Sie unter [Konfigurieren von Bestandspuffern und Bestandsebenen](inventory-buffers-levels.md).
+- **Bestandsmenge nicht zurückgeben** – Nur der Bestand wird in der API-Ausgabe zurückgegeben. Weitere Informationen über Bestände finden Sie unter [Konfigurieren von Bestandspuffern und Beständen](inventory-buffers-levels.md).
 
 Sie können den API-Parameter `QuantityUnitTypeValue` verwenden, um die Art der Einheit anzugeben, in der die APIs die Menge zurückgeben sollen. Dieser Parameter unterstützt die Optionen **Bestand Einheit** (Standard), **Kauf Einheit** und **Verkauf Einheit**. Die zurückgegebene Menge wird auf die definierte Genauigkeit der entsprechenden Maßeinheit (UOM) in der Zentrale gerundet.
 
 Die **GetEstimatedAvailability** API bietet die folgenden Eingabeparameter, um verschiedene Abfrageszenarien zu unterstützen:
 
-- `DefaultWarehouseOnly` – Verwenden Sie diesen Parameter, um den Bestand für ein Produkt im Standardlagerort des Online-Kanals abzufragen. 
-- `FilterByChannelFulfillmentGroup` und `SearchArea` – Verwenden Sie diese beiden Parameter, um den Bestand für ein Produkt von allen Abholplätzen innerhalb eines bestimmten Suchbereichs abzufragen, basierend auf `longitude`, `latitude` und `radius`. 
-- `FilterByChannelFulfillmentGroup` und `DeliveryModeTypeFilterValue` – Verwenden Sie diese beiden Parameter, um den Bestand für ein Produkt von bestimmten Lagerorten abzufragen, die mit der Fulfillment-Gruppe eines Online-Kanals verknüpft sind und die so konfiguriert sind, dass sie bestimmte Lieferarten unterstützen. Der Parameter `DeliveryModeTypeFilterValue` unterstützt die Optionen **Alle** (Standard), **Versand** und **Abholung**. In einem Szenario, in dem eine Online-Bestellung von mehreren Versandlagern aus erfüllt werden kann, können Sie diese beiden Parameter verwenden, um die Verfügbarkeit des Bestands eines Produkts in allen diesen Versandlagern abzufragen. Die API gibt in diesem Fall den Lagerbestand des Produkts und den Lagerbestand in jedem der Versandlager zurück, plus eine aggregierte Menge und einen aggregierten Bestand aus allen Versandlagern im Abfragebereich.
+- `DefaultWarehouseOnly` – Verwenden Sie diesen Parameter, um den Bestand für ein Produkt am Standardlagerort des Online-Kanals abzufragen. 
+- `FilterByChannelFulfillmentGroup` und `SearchArea` – Verwenden Sie diese beiden Parameter, um den Bestand für ein Produkt von allen Abholorten innerhalb eines bestimmten Suchbereichs abzufragen, basierend auf `longitude`, `latitude` und `radius`. 
+- `FilterByChannelFulfillmentGroup` und `DeliveryModeTypeFilterValue` – Verwenden Sie diese beiden Parameter, um den Bestand für ein Produkt von bestimmten Lagerorten abzufragen, die mit der Erfüllungsgruppe eines Online-Kanals verknüpft und so konfiguriert sind, dass sie bestimmte Lieferarten unterstützen. Der Parameter `DeliveryModeTypeFilterValue` unterstützt die Optionen **Alle** (Standard), **Versand** und **Abholung**. In einem Szenario, in dem eine Online-Bestellung von mehreren Versandlagern aus erfüllt werden kann, können Sie diese beiden Parameter verwenden, um die Verfügbarkeit des Bestands eines Produkts in allen diesen Versandlagern abzufragen. Die API gibt in diesem Fall den Lagerbestand des Produkts und den Lagerbestand in jedem der Versandlager zurück, plus eine aggregierte Menge und einen aggregierten Bestand aus allen Versandlagern im Abfragebereich.
  
 Die Commerce-Module „Buy Box“, „Store Selector“, „Wishlist“, „Cart“ und „Cart Symbol“ verwenden die oben genannten APIs und Parameter, um Nachrichten über den Bestand auf der E-Commerce-Website anzuzeigen. Commerce Site Builder bietet verschiedene Einstellungen für den Bestand, um das Verhalten beim Verkauf und Kauf festzulegen. Weitere Informationen finden Sie unter [Bestandeinstellungen anwenden](inventory-settings.md).
 
@@ -136,6 +150,5 @@ Um die bestmögliche Schätzung des Bestands zu gewährleisten, ist es wichtig, 
 > - Aus Leistungsgründen wird bei kanal-seitigen Bestandsverfügbarkeitsberechnungen für eine Bestandsverfügbarkeitsabfrage über die E-Commerce API's oder die kanal-seitige POS-Bestandslogik ein Zwischenspeicher verwendet, um festzustellen, ob genug Zeit vergangen ist, um ein erneutes Ausführen der Berechnungslogik zu rechtfertigen. Der Standard-Cache ist auf 60 Sekunden eingestellt. Sie haben beispielsweise die kanalseitige Berechnung für Ihr Geschäft aktiviert und den verfügbaren Bestand für ein Produkt auf der Seite **Bestandssuche** angezeigt. Wenn dann eine Einheit des Produkts verkauft wird, zeigt die Seite **Bestandsabfrage** den reduzierten Bestand erst dann an, wenn der Cache geleert wurde. Nachdem Benutzer Transaktionen in POS gebucht haben, sollten sie 60 Sekunden warten, bevor sie überprüfen, ob der verfügbare Bestand reduziert wurde.
 
 Wenn Ihr Unternehmensszenario eine kleinere Zwischenspeicherzeit erfordert, wenden Sie sich an Ihren Produkt-Support-Mitarbeiter, um Unterstützung zu erhalten.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

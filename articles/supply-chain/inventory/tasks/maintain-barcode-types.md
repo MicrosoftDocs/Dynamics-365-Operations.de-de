@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 052311e15aeb20b927cbed217a2bda600dad60a5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4102f8036c0aede7c8a2adcaa9b8799a71ac7ada
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345649"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441288"
 ---
 # <a name="maintain-bar-code-types"></a>Strichcodetypen verwalten
 
@@ -32,7 +32,8 @@ Dieses Verfahren zeigt Ihnen, wie Sie eine neue Barcode-Definition festlegen, di
 1. Geben Sie im Feld **Barcode-Einrichtung** einen Wert ein.
 1. Geben Sie im Feld **Beschreibung** einen Wert ein.
 1. Wählen Sie im Feld **Barcode-Typ** eine Option.
-    * Wenn Sie USMF verwenden, können Sie "Code 39" auswählen.  
+    * Wenn Sie USMF verwenden, können Sie "Code 39" auswählen.
+1. Geben Sie im Feld **Maskenkennung** die Kennung der Strichcodemaske an. Strichcodemasken werden verwendet, um Strichcodes erstellen und Strichcodes schnell erkennen, die in einem Verkaufsstellensystem (POS) gescannt werden. Einzelheiten finden Sie unter [Barcodemasken einrichten](../../../commerce/set-up-bar-code-masks.md).
 1. Geben Sie im Feld **Größe** eine Zahl ein.
 1. Geben Sie in das Feld **Maximale Länge** eine Zahl ein.
 1. Wählen Sie **Speichern** aus.

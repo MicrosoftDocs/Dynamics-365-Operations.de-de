@@ -2,7 +2,7 @@
 title: Verwaltungskomponenten der elektronischen Rechnungsstellung
 description: Dieses Thema enthält Informationen zu den Komponenten, die sich auf die Verwaltung der elektronischen Rechnungsstellung beziehen.
 author: gionoder
-ms.date: 04/29/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6582a0a9eda19fe69ead853ea5d79d763afcb8a468717fde84a32146fd0f79af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d187e8a03552258099d7021ff056d0726ea60ca1
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721725"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463880"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Verwaltungskomponenten der elektronischen Rechnungsstellung
 
@@ -31,14 +31,14 @@ Dieses Thema enthält Informationen zu den Komponenten, die sich auf die Verwalt
 
 ## <a name="azure"></a>Azure
 
-Verwenden Sie Microsoft Azure, um die Geheimnisse für den Key Vault und das Speicherkonto zu erstellen. Verwenden Sie dann die Geheimnisse in der Konfiguration der elektronischen Rechnungsstellung.
+Verwenden Sie Microsoft Azure, um die Geheimnisse für den Schlüsseltresor zu erstellen und das Speicherkonto einzurichten. Verwenden Sie die Schlüsseltresorgeheimnisse und das SAS-Token des Speicherkontos zur Konfiguration der elektronischen Rechnungsstellung.
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
-Verwenden Sie Microsoft Dynamics Lifecycle Services (LCS), um die Microservices für Ihr LCS-Bereitstellungsprojekt zu aktivieren.
+Verwenden Sie Microsoft Dynamics Lifecycle Services (LCS), um das Add-In für die elektronische Rechnungsstellung für Ihr LCS-Bereitstellungsprojekt zu aktivieren.
 
 > [!NOTE]
-> Für die Installation des Microservices in LCS ist mindestens ein virtueller Tier 2-Computer erforderlich. Weitere Informationen zur Umgebungsplanung finden Sie unter [Umgebungsplanung](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+> Für die Installation des Add-Ins in LCS ist mindestens eine **Tier-2-Umgebung** erforderlich. Weitere Informationen zur Umgebungsplanung finden Sie unter [Umgebungsplanung](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
  
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
@@ -53,20 +53,21 @@ Weitere Informationen zu RCS finden Sie unter [Regulatory Configuration Services
 
 Bevor Sie RCS zum Konfigurieren elektronischer Rechnungen verwenden können, müssen Sie RCS konfigurieren, um die Kommunikation mit der elektronischen Rechnungsstellung zu ermöglichen. Diese Konfiguration führen Sie auf der Registerkarte **Elektronische Rechnungsstellung** der Seite **Parameter für elektronische Berichterstellung** durch.
 
-#### <a name="service-endpoint"></a>Dienstendpunkt
+#### <a name="service-endpoint"></a><a id='svc-endpoint-uris'></a>Dienstendpunkt
 
 Die elektronische Rechnungsstellung ist in mehreren Azure-Rechenzentrumsregionen verfügbar. In der folgenden Tabelle ist die Verfügbarkeit pro Region aufgeführt.
 
-| Azure-Rechenzentrumgeografie |
-|----------------------------|
-| Vereinigte Staaten              |
-| Europa                     |
-| Vereinigtes Königreich             |
-| Asien                       |
+
+| Azure-Rechenzentrumgeografie | Dienst-Endpunkt-URI                                                       |
+|----------------------------|----------------------------------------------------------------------------|
+| USA              | <p>https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing</p> |
+| Europa                     | <p>https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| Vereinigtes Königreich             | <p>https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| Asien                       | <p>https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
 
 ### <a name="service-environments"></a>Dienstumgebungen
 
-Service-Umgebungen sind logische Partitionen, die erstellt werden, um die Ausführung der Funktionen für die elektronische Rechnungsstellung in der elektronischen Rechnungsstellung zu unterstützen. Die Sicherheitsgeheimnisse und digitalen Zertifikate sowie die Governance (d. h. Zugriffsberechtigungen) müssen auf der Ebene der Service-Umgebung konfiguriert werden.
+Service-Umgebungen sind logische Partitionen, die erstellt werden, um die Ausführung der Funktionen für die Globalisierung in der elektronischen Rechnungsstellung zu unterstützen. Die Sicherheitsgeheimnisse und digitalen Zertifikate sowie die Governance (d. h. Zugriffsberechtigungen) müssen auf der Ebene der Service-Umgebung konfiguriert werden.
 
 Kunden können beliebig viele Service-Umgebungen erstellen. Alle von einem Kunden erstellten Service-Umgebungen sind voneinander unabhängig.
 
@@ -84,8 +85,8 @@ Service-Umgebungen können über den Status verwaltet werden. Mögliche Optionen
 
 Der Dienst für die elektronische Rechnungsstellung ist verantwortlich für die Speicherung aller Ihrer Geschäftsdaten in den Azure-Ressourcen, die Ihrem Unternehmen gehören. Um sicherzustellen, dass der Service ordnungsgemäß funktioniert und auf alle Geschäftsdaten, die für die elektronische Rechnungsstellung erforderlich sind und von ihr generiert werden, ordnungsgemäß zugegriffen wird, müssen Sie zwei Azure-Hauptressourcen erstellen:
 
-- ein Azure-Speicherkonto (Blob-Speicher) zum Speichern elektronischer Rechnungen
-- Ein Azure Key Vault, der Zertifikate und den Uniform Resource Identifier (URI) des Speicherkontos speichert
+- Ein Azure-Speicherkonto (Blob Storage), das elektronische Dokumente speichert, einschließlich elektronischer Rechnungen, Ergebnisse von Dokumentumwandlungen und Antworten von externen Webdiensten.
+- Ein Azure Key Vault, der Zertifikate und den Uniform Resource Identifier (URI) des Speicherkontos (SAS-Token) speichert.
 
 
 Ein dediziertes Key Vault- und Kunden-Speicherkonto muss speziell für die Elektronische Rechnungsstellung zugewiesen werden. Weitere Informationen finden Sie unter [Erstellen eines Azure-Speicherkontos und eines Key Vaults](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -122,13 +123,13 @@ Um die Kommunikation zwischen Finance und Supply Chain Management sowie der elek
 
 Der Dienstendpunkt ist die URL, unter der sich die elektronische Rechnungsstellung befindet. Bevor elektronische Rechnungen ausgestellt werden können, muss der Dienstendpunkt in Finance und Supply Chain Management konfiguriert werden, um die Kommunikation mit dem Dienst zu ermöglichen.
 
-Rufen Sie **Organisationsverwaltung \> Einrichtung \> Parameter elektronischer Dokumente** auf, um den Dienstendpunkt zu konfigurieren. Geben Sie anschließend auf der Registerkarte **Übermittlungsdienste** im Feld **URL für die elektronische Rechnungsstellung** die URL ein – wie in der Tabelle im Abschnitt **Dienstendpunkt** beschrieben.
+Gehen Sie zu **Organisationsverwaltung \> Einrichtung \> Parameter elektronischer Dokumente**, um den Dienstendpunkt zu konfigurieren. Geben Sie anschließend auf der Registerkarte **Elektronische Rechnungsstellung** im Feld **Endpunkt-URL** die entsprechende URL aus der Tabelle im Abschnitt [Dienstendpunkt](#svc-endpoint-uris) ein.
 
 #### <a name="environments"></a>Umgebungen
 
 Der Umgebungsname, der in Finance und Supply Chain Management eingegeben wird, bezieht sich auf den Namen der Umgebung, die in RCS erstellt und in der elektronischen Rechnungsstellung veröffentlicht wird.
 
-Die Umgebung muss auf der Registerkarte **Übermittlungsdienste** der Seite **Parameter elektronischer Dokumente** konfiguriert werden, sodass jede Anfrage zur Ausstellung elektronischer Rechnungen die Umgebung enthält, in der die elektronische Rechnungsstellung bestimmen kann, welche elektronische Rechnungsfunktion die Anfrage verarbeiten muss.
+Die Umgebung muss auf der Registerkarte **Elektronische Rechnungsstellung** der Seite **Parameter elektronischer Dokumente** konfiguriert sein. Auf diese Weise enthält jede Anforderung zur Ausstellung elektronischer Rechnungen die Umgebung, in der die elektronische Rechnungsstellung bestimmen kann, welche elektronische Rechnungsfunktion die Anforderung verarbeiten muss.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

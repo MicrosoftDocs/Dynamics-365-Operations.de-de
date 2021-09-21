@@ -1,8 +1,8 @@
 ---
 title: Ursachencodes einrichten
 description: Dynamics 365 Human Resources erläutert anhand von Ursachencodes, warum sich die Vorteile eines Mitarbeiters ändern.
-author: andreabichsel
-ms.date: 01/25/2021
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd7c5a35a6d4b40eb376eee2580af681f7bfd7f8f93aab8aad67f238fc40470b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5f89d6158f351e30376fc3f80c793f29734cdcbb
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732680"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431341"
 ---
 # <a name="set-up-reason-codes"></a>Ursachencodes einrichten
 
@@ -29,11 +29,11 @@ ms.locfileid: "6732680"
 Dynamics 365 Human Resources erläutert anhand von Ursachencodes, warum sich die Vorteile eines Mitarbeiters ändern.
 
 > [!NOTE]
-> Ab Januar 2021 werden Ursachencodes zum **Personalverwaltung**-Arbeitsbereich statt zum **Vorteilsverwaltung**-Arbeitsbereich migriert. Weitere Informationen finden Sie unter [Ursachencodes manuell in die Personalverwaltung migrieren](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
+> Seit Januar 2021 werden Ursachencodes zum Arbeitsbereich **Personalverwaltung** statt zum Arbeitsbereich **Vorteilsverwaltung** migriert. Weitere Informationen finden Sie unter [Ursachencodes manuell in die Personalverwaltung migrieren](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
 
 ## <a name="create-reason-codes"></a>Erstellen von Ursachencodes
 
-1. In dem **Personalverwaltung**-Arbeitsbereich (oder, wenn Ihre Ursachencodes noch nicht migriert wurden, im **Vorteilsverwaltung**-Arbeitsbereich) wählen Sie **Links** und dann **Ursachencodes** aus.
+1. Im Arbeitsbereich **Personalverwaltung** (oder, wenn Ihre Ursachencodes noch nicht migriert wurden, im Arbeitsbereich **Vorteilsverwaltung**) wählen Sie **Links** und dann **Ursachencodes** aus.
 
 2. Wählen Sie **Neu** aus.
 
@@ -44,13 +44,13 @@ Dynamics 365 Human Resources erläutert anhand von Ursachencodes, warum sich die
    | **Ursachencode** | Ein eindeutiger Name, der den Grund angibt, aus dem ein Mitarbeiter die Registrierung eines Vergütungsplans ändern würde. |
    | **Beschreibung** | Eine Beschreibung des Ursachencodes. |
 
-4. Legen Sie unter **Zutreffende Szenarios** die Option **Vorteilsverwaltung** auf **Ja** fest. (Gilt nicht, wenn Ihre Ursachencodes noch nicht auf den **Personalverwaltung**-Arbeitsbereich migriert wurden.)
+4. Legen Sie unter **Zutreffende Szenarios** die Option **Vorteilsverwaltung** auf **Ja** fest. (Gilt nicht, wenn Ihre Ursachencodes noch nicht zum Arbeitsbereich **Personalverwaltung** migriert wurden.)
 
 5. Wählen Sie **Speichern** aus.
 
 ## <a name="manually-migrate-reason-codes-to-personnel-management"></a>Ursachencodes manuell in die Personalverwaltung migrieren
 
-Im Januar 2021 werden Ursachencodes zum **Personalverwaltung**-Arbeitsbereich statt zum **Vorteilsverwaltung**-Arbeitsbereich migriert. Die meisten Ursachencodedaten werden automatisch in Ihre Umgebung migriert. Einige Ursachencodedaten werden möglicherweise nicht migriert. Beispielsweise haben Ursachencodes jetzt ein Maximum von 15 Zeichen, sodass Ursachencodes, die länger als 15 Zeichen sind, nicht automatisch migriert werden.
+Seit Januar 2021 werden Ursachencodes zum Arbeitsbereich **Personalverwaltung** statt zum Arbeitsbereich **Vorteilsverwaltung** migriert. Die meisten Ursachencodedaten werden automatisch in Ihre Umgebung migriert. Einige Ursachencodedaten werden möglicherweise nicht migriert. Beispielsweise haben Ursachencodes jetzt ein Maximum von 15 Zeichen, sodass Ursachencodes, die länger als 15 Zeichen sind, nicht automatisch migriert werden.
 
 Sie sehen ein Banner auf der **Links**-Seite des **Vorteilsverwaltung**-Arbeitsbereichs, das Sie über die Migration informiert und darüber, ob Ursachencodes nicht migriert wurden.
 

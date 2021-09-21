@@ -1,8 +1,8 @@
 ---
 title: Persönliche Daten bearbeiten
 description: In diesem Artikel wird beschrieben, wie Sie persönliche Informationen im Self-Service für Mitarbeiter und Manager bearbeiten.
-author: andreabichsel
-ms.date: 03/19/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80b4537601491c97c24cfa1fef5088cbf1ac276df76534034117161b0fe79dc2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715894"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431461"
 ---
-# <a name="edit-personal-information"></a>Persönliche Daten bearbeiten
+# <a name="edit-personal-information"></a>Persönliche Informationen bearbeiten
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Sie können Ihre persönlichen Daten in Dynamics 365 Human Resources im **Self-Service-Arbeitsbereich für Mitarbeiter** bearbeiten.
+Sie können Ihre persönlichen Daten in Dynamics 365 Human Resources im Arbeitsbereich **Mitarbeiter-Self-Service** bearbeiten.
 
 Die persönlichen Informationen, die Sie bearbeiten können, umfassen:
 
@@ -40,7 +40,7 @@ Die persönlichen Informationen, die Sie bearbeiten können, umfassen:
 >[!NOTE]
 >Möglicherweise können Sie bestimmte Arten von persönlichen Informationen nicht bearbeiten, z. B. geschäftliche Kontaktdaten. Weitere Informationen finden Sie unter [Bearbeiten von persönlichen Informationen einschränken](hr-employee-self-service-restrict-editing.md).
 
-Die im globalen Adressbuch festgelegten Parameter bestimmen die Rollen, in denen Ihre persönlichen Daten angezeigt werden können.
+Die auf der Seite **Parameter des globalen Adressbuchs** festgelegten Parameter bestimmen die Rollen, in denen Ihre persönlichen Daten angezeigt werden können.
 
 1. Wählen Sie in der Personalabteilung **Mitarbeiter-Self-Service** aus.
 

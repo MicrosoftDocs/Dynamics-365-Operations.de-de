@@ -2,7 +2,7 @@
 title: Elektronisches Messaging
 description: Dieses Thema enthält eine Übersicht und Einrichtungsinformationen für elektronisches Messaging in Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 08/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 191abc37b7c349aaf3c9e871fe2f1885eec9fc896271d6fac27e5caa0b0fe3b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16b0e0fa74109f1c63ed47606bebe2fefc604fc5
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768338"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478723"
 ---
 # <a name="electronic-messaging"></a>Elektronische Nachrichten
 
@@ -57,6 +57,16 @@ Die EN-Funktionalität unterstützt die folgenden Szenarien:
 - Speichern und Überprüfen aller Berichte, die generiert werden.
 - Speichern und Überprüfen aller Protokollinformationen, die Aktivitäten zugeordnet sind, die für die eine Nachricht oder ein Nachrichtenelement ausgeführt werden.
 - Steuern der Verarbeitung durch verschiedene Nachrichtenstatus und Nachrichtenelementstatus.
+
+## <a name="security-privileges"></a>Sicherheitsrechte
+
+Die folgenden Sicherheitsrechte sind für elektronische Nachrichten verfügbar.
+
+| Sicherheitsrecht           | Zugriffsebene | Zuordnung |
+|------------------------------|--------------|-------------|
+| Elektronische Nachrichten verwalten | Dieses Recht gewährt vollen Zugriff auf die EM-Funktionalität. Wenn Sie über dieser Recht verfügen, können Sie die elektronische Nachrichtenübermittlung einrichten und die gesamte Verarbeitung ausführen. | Dieses Recht ist in der Sicherheitspflicht **Mehrwertsteuerbuchungen verwalten** enthalten. Diese Pflicht wiederum ist in der Sicherheitsrolle **Buchhalter** enthalten. |
+| Elektronische Nachrichten anzeigen     | Dieses Recht gewährt Lesezugriff auf die EM-Funktionalität. Wenn Sie über dieser Recht verfügen, können Sie die Einstellungen für elektronische Nachrichten sowie die Nachrichten selbst anzeigen. Sie können jedoch nichts einrichten oder ausführen. | Dieses Recht ist in der Sicherheitspflicht **Status von Mehrwertsteuerbuchungen abfragen** enthalten. Diese Pflicht wiederum ist in den folgenden Sicherheitsrollen enthalten:<ul><li>Leiter Inkasso</li><li>Sachbearbeiter Debitorenkonten</li><li>Leiter Debitorenkonten</li><li>Steuerberater</li><li>Sachbearbeiter Buchhaltung</li><li>Leiter Buchhaltung</li><li>Supervisor Buchhaltung</li><li>Verkaufsleiter</li><li>Sachbearbeiter Kreditorenkonten</li></ul> |
+| Elektronische Nachrichten verarbeiten  | Dieses Recht gewährt nur Zugriff auf die Seiten **Elektronische Nachrichten** und **Elektronische Nachrichtenelemente**. Wenn Sie über dieses Recht verfügen, können Sie die gesamte Verarbeitung ausführen, die über diese Seiten aufgerufen wird. | Dieses Recht ist in der Sicherheitspflicht **Elektronische Nachrichten betreiben** enthalten. Diese Pflicht wiederum ist in der Sicherheitsrolle **Operator elektronische Nachrichten** enthalten. |
 
 ## <a name="country-specific-regulatory-features-supported-by-the-em-functionality"></a>Länderspezifische rechtliche Funktionen, die von der EN-Funktionalität unterstützt werden
 

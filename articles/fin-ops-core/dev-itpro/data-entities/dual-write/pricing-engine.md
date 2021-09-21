@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c9f94ec35ebed5a14252377fb543de09cb994ffd
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: f84a81444e6d5ce9a0d2da4c9a60b1ae3478ee2f
+ms.sourcegitcommit: 2d8035f8bb75957c793c0d293c079a792595eeaf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416179"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7481314"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>On-Demand-Synchronisierung mit dem Preisgestaltungsmodul von Supply Chain Management
 
@@ -38,10 +38,10 @@ Microsoft Dynamics 365 Supply Chain Management enthält ein Preisgestaltungsmodu
     + Skonto
     + Vorfrachtbetrag
     + Frachtbetrag
-    + Gesamte Steuern
+    + Gesamtsteuer
     + Gesamtbetrag
     
-5. Stellen Sie sicher, dass das System Handelsvereinbarungen und Kaufverträge zur Berechnung des Preises berücksichtigt:
+5. Stellen Sie sicher, dass das System Handelsvereinbarungen zur Berechnung des Preises berücksichtigt:
     1. Navigieren Sie zu Ihrer Supply Chain Management-Umgebung.
     2. Navigieren Sie zu **Debitoren \> Einrichtung \> Debitorenparameter**.
     3. Wählen Sie in der seitlichen Navigationsleiste die Registerkarte **Preise** aus.
@@ -51,7 +51,7 @@ Microsoft Dynamics 365 Supply Chain Management enthält ein Preisgestaltungsmodu
 
 Wenn Sie in Sales **Preis für Auftrag** auswählen, wird die Funktion **Summen** in der Registerkarte **Auftrag \> Anzeigen** in Supply Chain Management für den zugehörigen Kundenauftrag aufgerufen. Die Werte in der Auftragssumme in Sales werden verwendet, um die entsprechenden Spalten in Supply Chain Management auszufüllen.
 
-Wenn die Kundenauftragssumme im Supply Chain Management berechnet wird, wertet die Berechnung die vorhandenen Handelsvereinbarungen und Verkaufsvereinbarungen für den Kunden und die im Kundenauftrag aufgeführten Produkte aus. Diese Daten werden zum Berechnen der Summen verwendet. Wenn die Option **Preis für Auftrag** ausgewählt ist, spiegelt Sales automatisch alle Einstellungen wider, die im Supply Chain Management vorgenommen wurden.
+Wenn die Kundenauftragssumme im Supply Chain Management berechnet wird, wertet die Berechnung die vorhandenen Handelsvereinbarungen für den Kunden und die im Kundenauftrag aufgeführten Produkte aus. Diese Daten werden zum Berechnen der Summen verwendet. Wenn die Option **Preis für Auftrag** ausgewählt ist, spiegelt Sales automatisch alle Einstellungen wider, die im Supply Chain Management vorgenommen wurden.
 
 ## <a name="limitations"></a>Einschränkungen
 

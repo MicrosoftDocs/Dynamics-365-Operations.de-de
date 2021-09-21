@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4a77b157e9dd5ee1f551cbb59abbc89aaa28d325cc74a77e6624f25902c5b19e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731888"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471691"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Lagerortaufträge für Cloud- und Edge-Skalierungseinheiten
 
@@ -27,16 +27,18 @@ ms.locfileid: "6731888"
 
 ## <a name="what-are-warehouse-orders"></a>Was sind Lagerortaufträge?
 
-*Lagerortaufträge* sind ein Auftragstyp, der erstellt wurde, um Lagerortbereitstellungen von Hubs und Skalierungseinheiten zu unterstützen. Mit ihnen können Sie Bestand erhalten, wenn Sie eine Arbeitsauslastung des Lagerorts auf einer Skalierungseinheit ausführen. Sie werden derzeit nur bei Bestellungen verwendet.
+*Lagerortaufträge* sind ein Auftragstyp, der verwendet wird, um Lagerortbereitstellungen von Hubs und Skalierungseinheiten zu unterstützen. Mit ihnen können Sie Bestand erhalten und versenden, wenn Sie eine Arbeitsauslastung des Lagerorts auf einer Skalierungseinheit ausführen.
 
-Lagerortaufträge werden im Rahmen der Lagerverwaltungsverarbeitung verwendet, z. B. wenn die Warehouse Management Mobile App zum Registrieren des physischen Lagerbestands während der Verarbeitung einer eingehenden Bestellung verwendet wird. Lagerortaufträge werden im Rahmen des Prozesses *Freigabe an Lager* erstellt, der für Bestellungen verfügbar ist, die einen Lagerort mit Skalierungseinheit angeben, und Artikel, die für die Verwendung von Lagerverwaltungsprozessen aktiviert sind.
+Lagerortaufträge werden sowohl bei der eingehenden als auch bei der ausgehenden Verarbeitung der Lagerortverwaltung verwendet. Sie werden im Rahmen des Prozesses *Für Lagerort freigeben* erstellt, der auf dem Hub initialisiert wird.
+Für die Eingangsverarbeitung wird die mobile Warehouse Management-App verwendet, um den physischen Bestand während der Verarbeitung von Eingangsaufträgen zu erfassen. Dies ist für Bestellungen und Produktionsaufträge verfügbar, die einen Lagerort mit Skalierungseinheit angeben, sowie für Artikel, die für die Verwendung von Prozessen der Lagerortverwaltung aktiviert sind.
+Die ausgehenden Lagerortaufträge werden als Teil des Wellenprozesses der Lieferung für Umlagerungs- und Verkaufsaufträge verwendet.
 
 > [!IMPORTANT]
 > Lagerortaufträge sind nur in Bereitstellungen verfügbar, die [Arbeitsauslastungen in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](cloud-edge-workload-warehousing.md).
 
-## <a name="create-a-warehouse-order"></a>Einen Lagerortauftrag erstellen
+## <a name="create-an-inbound-warehouse-order"></a>Einen eingehenden Lagerortauftrag erstellen
 
-Gehen Sie folgendermaßen vor, um einen Lagerortauftrag zu erstellen.
+Gehen Sie folgendermaßen vor, um einen eingehenden Lagerortauftrag für einen Bestellvorgang zu erstellen.
 
 1. Melden Sie sich auf der Instanz von Microsoft Dynamics 365 Supply Chain Management an, die auf dem Hub ausgeführt wird. (Sie müssen den Prozess *Freigabe an Lager* initiieren, während Sie am Hub angemeldet sind.)
 1. Wechseln Sie zu **Beschaffung \> Bestellungen \> Alle Bestellungen**.

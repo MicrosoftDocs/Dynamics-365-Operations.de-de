@@ -2,7 +2,7 @@
 title: Fester Vergütungsplan für Lohnabrechnung
 description: Dieses Thema enthält Details und eine Beispielabfrage für die Entität „Fester Vergütungsplan für Lohnabrechnung“ in Dynamics 365 Human Resources.
 author: jcart
-ms.date: 04/07/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f1e5345d9f27106bdf3a3a60cb0480a9b072e340c01236e4d48c5e2ae592ddbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dcb253fabbb183003048119c7a627bf0ab960050
+ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738390"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7429227"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Fester Vergütungsplan für Lohnabrechnung
 
@@ -34,18 +34,27 @@ Physischer Name: mshr_payrollfixedcompensationplanentity.
 
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaft<br>**Physikalischer Name**<br>**_Typ_** | Verwenden | Beschreibung |
+| Eigenschaft</br>**Physikalischer Name**</br>**_Typ_** | Verwenden | Beschreibung |
 | --- | --- | --- |
-| **Mitarbeiterkennung**<br>mshr_fk_employee_id_value<br>*GUID* | Schreibgeschützt<br>Erforderlich<br>Fremdschlüssel: mshr_Employee_id von mshr_payrollemployeeentity entity  | Mitarbeiterkennung |
-| **Lohnsatz**<br>mshr_payrate<br>*Dezimal* | Schreibgeschützt<br>Erforderlich | Im festen Vergütungsplan definierter Lohnsatz. |
-| **Plankennung**<br>mshr_planid<br>*Zeichenfolge* | Schreibgeschützt<br>Erforderlich |Gibt den Vergütungsplan an.  |
-| **Gültig ab**<br>mshr_validfrom<br>*Datum-/Uhrzeit-Offset* |  Schreibgeschützt<br>Erforderlich |Datum, ab dem der feste Vergütungsplan für den Mitarbeiter gültig sind.  |
-| **Entität „Fester Vergütungsplan für Lohnabrechnung“**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Erforderlich<br>Vom System generiert | Ein vom System generierter GUID-Wert zur eindeutigen Identifizierung des Vergütungsplans. |
-| **Lohnzahlungshäufigkeit**<br>mshr_payfrequency<br>*Zeichenfolge* | Schreibgeschützt<br>Erforderlich |Die Häufigkeit, mit der der Mitarbeiter bezahlt wird.  |
-| **Gültig bis**<br>mshr_validto<br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt <br>Erforderlich | Datum, bis zu dem der feste Vergütungsplan für den Mitarbeiter gültig ist. |
-| **Positionskennung**<br>mshr_positionid<br>*Zeichenfolge* | Schreibgeschützt <br>Erforderlich | Positionskennung, die mit dem Mitarbeiter und dem Beitritt zum festen Vergütungsplan verknüpft ist. |
-| **Währung**<br>mshr_currency<br>*Zeichenfolge* | Schreibgeschützt <br>Erforderlich |Die für den festen Vergütungsplan definierte Währung   |
-| **Personalnummer**<br>mshr_personnelnumber<br>*Zeichenfolge* | Schreibgeschützt<br>Erforderlich |Die eindeutige Personalnummer des Mitarbeiters.  |
+| **Plankennung**</br>mshr_planid</br>*Zeichenfolge* | Schreibgeschützt | Gibt den Vergütungsplan an.  |
+| **Personalnummer**</br>mshr_personnelnumber</br>*Zeichenfolge* | Schreibgeschützt | Die eindeutige Personalnummer des Mitarbeiters. |
+| **Lohnsatz**</br>mshr_payrate</br>*Dezimal* | Schreibgeschützt | Im festen Vergütungsplan definierter Lohnsatz. |
+| **Positionskennung**</br>mshr_positionid</br>*Zeichenfolge* | Schreibgeschützt | Positionskennung, die mit dem Mitarbeiter und dem Beitritt zum festen Vergütungsplan verknüpft ist. |
+| **Gültig ab**</br>mshr_validfrom</br>*Datum-/Uhrzeit-Offset* |  Schreibgeschützt | Datum, ab dem der feste Vergütungsplan für den Mitarbeiter gültig sind.  |
+| **Gültig bis**</br>mshr_validto</br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt | Datum, bis zu dem der feste Vergütungsplan für den Mitarbeiter gültig ist. |
+| **Lohnzahlungshäufigkeit**</br>mshr_payfrequency</br>*Zeichenfolge* | Schreibgeschützt | Die Häufigkeit, mit der der Mitarbeiter bezahlt wird.  |
+| **Währung**</br>mshr_currency</br>*Zeichenfolge* | Schreibgeschützt | Die für den festen Vergütungsplan definierte Währung. |
+| **Entität „Fester Vergütungsplan für Lohnabrechnung“**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | Vom System generiert | Ein vom System generierter GUID-Wert zur eindeutigen Identifizierung des Vergütungsplans. |
+
+## <a name="relations"></a>Referenzen
+
+|Eigenschaftswert | Zugehörige Entität | Navigationseigenschaft | Erfassungstyp |
+| --- | --- | --- | --- |
+| _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_FixedCompPlan |
+| _mshr_fk_job_id_value | [mshr_payrollpositionjobentity](hr-admin-integration-payroll-api-payroll-position-job.md) | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_FixedCompPlan |
+| _mshr_fk_payrollposition_id_value | [mshr_payrollpositionentity](hr-admin-integration-payroll-api-payroll-position.md) | mshr_FK_PayrollPosition_id | mshr_FK_PayrollPositionEntity_FixedCompPlan |
+| _mshr_fk_plan_id_value | mshr_hcmcompfixedplantableentity | mshr_FK_Plan_id | - |
+| _mshr_fk_variablecompaward_id_value | [mshr_payrollvariablecompensationawardentity](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md) | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_FixedComp |
 
 ## <a name="example-query"></a>Beispielabfrage
 

@@ -2,7 +2,7 @@
 title: Entwerfen Sie mehrsprachige Berichte in der elektronischen Berichterstellung
 description: In diesem Thema wird erläutert, wie Sie mithilfe von Electronic Reporting (ER) mehrsprachige Berichte erstellen und erstellen können.
 author: NickSelin
-ms.date: 04/21/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86facc26f57b3ab166d6274689d774adbac50e46aa7759cfd079a0ef5a45456e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e199b350101e10ba3e424894f4dc9881d05c9558
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718404"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473404"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Entwerfen Sie mehrsprachige Berichte in der elektronischen Berichterstellung
 
 [!include[banner](../includes/banner.md)]
+
+[!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Übersicht
 
@@ -229,10 +231,14 @@ Wie weiter oben in diesem Thema beschrieben, können die Attribute **Beschriftun
 - Der Wert einer EB-Beschriftung ist mit den Attributten der **Beschriftung** verknüpft, die im Feld **Beschriftung** des zurückgegebenen Datensatzes gespeichert sind.
 - Der Wert einer EB-Beschriftung ist mit den Attributten der **Beschreibung** verknüpft, die im Feld **Beschreibung** des zurückgegebenen Datensatzes gespeichert sind.
 
+## <a name="performance"></a><a name=performance></a>Leistung
+
+Wenn Sie eine ER-Formatkomponente konfigurieren, um einen Bericht in Ihrer bevorzugten [Sprache](#language) zu generieren oder um ein eingehendes Dokument zu importieren, dessen Inhalt auf die von Ihnen bevorzugte Sprache hin analysiert wird, empfehlen wir, dass Sie die Funktion **Bevorzugte Sprache des aktuellen Benutzers für ER-Ausführungen zwischenspeichern** im Arbeitsbereich [Funktionsverwaltung](../../fin-ops/get-started/feature-management/feature-management-overview.md) aktivieren. Diese Funktion trägt zur Verbesserung der Leistung bei, insbesondere für ER-Formatkomponenten, die mehrere Verweise auf Beschriftungen in ER-Formeln und -Bindungen enthalten sowie zahlreiche [Validierungsregeln](general-electronic-reporting-formula-designer.md#TestFormula) zum Generieren von Benutzernachrichten in Ihrer bevorzugten Sprache.
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
-- [Elektronische Berichterstellungsfunktion erweitern](er-formula-language.md#functions)
+- [Elektronische Berichterstellungsfunktion erweitern](er-formula-language.md#Functions)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

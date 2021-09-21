@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 58a69907bdd1b03ea2e025b736dbbf84eed73c76d54bd5c93386ba8a627f095f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712048"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474915"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.16 (Februar 2021)
 
@@ -54,36 +54,12 @@ Wir haben die folgenden Hilfethemen kürzlich hinzugefügt oder erheblich aktual
 - [Attributbasierte Verkaufspreise bei einschränkungsbasierter Produktkonfiguration](../pim/attribute-based-product-configurator.md)
 - [Automatische Zuteilung von Gebühren](../procurement/automatic-charges-allocation.md)
 - [Übersicht über gefährliche Materialien](../pim/hazmat-overview.md) (und verwandte Themen)
-- [Migration zur Planungsoptimierung für die Produktprogrammplanung](../master-planning/new-master-planning-engine.md)
+- [Migration zur Planungsoptimierung der Produktprogrammplanung](../master-planning/new-master-planning-engine.md)
 - [Einkaufen von cXML-Erweiterungen](../procurement/purchasing-cxml-enhancements.md)
-- [Fehlersuche bei der Kostenverwaltung](../cost-management/troubleshoot-costmanagement.md)
-- [Fehlersuche bei eingehenden Lagerort-Operationen](../warehousing/troubleshoot-warehouse-inbound.md)
-- [Fehlersuche Ladungserstellung und Transporte](../warehousing/troubleshoot-warehouse-loads-shipments.md)
-- [Problembehandlung Produktprogrammplanung](../master-planning/troubleshoot-masterplanning.md)
-- [Problembehandlung für ausgehende Lagerorte](../warehousing/troubleshoot-warehouse-outbound.md)
-- [Fehlerbehebung bei Teilfreigaben und Teillieferungen](../warehousing/troubleshoot-warehouse-partial-release-shipment.md)
-- [Fehlerbehebung im Produktkonfigurator](../pim/troubleshooting-productconfigurator.md)
-- [Fehlersuche bei Produkt-Informationen](../pim/troubleshooting-productinformation.md)
-- [Problembehandlung bei Beschaffungsworkflows](../procurement/troubleshoot-procurementworkflows.md)
-- [Problembehandlung bei Bestellungen](../procurement/troubleshoot-purchaseorders.md)
-- [Problembehandlung bei Preisen, Rabatten, Vereinbarungen und Rückvergütungen](../procurement/troubleshooting-pricediscountagreements.md)
-- [Problembehandlung bei Produktzugängen und Rechnungsstellung](../procurement/troubleshooting-productreceiptinvoicing.md)
-- [Fehlersuche diskrete Fertigung](../production-control/troubleshoot-discretemanufacturing.md)
-- [Fehlersuche beim Entnehmen und Verpacken](../warehousing/troubleshoot-warehouse-picking-packing.md)
-- [Fehlersuche bei der Prozessfertigung](../production-control/troubleshoot-processmanufacturing.md)
-- [Fehlersuche bei Reservierungen in der Lagerortverwaltung](../warehousing/troubleshoot-warehouse-reservations.md)
-- [Problembehandlung bei Kundenaufträgen](../sales-marketing/troubleshooting-sales.md)
-- [Problembehandlung bei Verkaufsangeboten](../sales-marketing/troubleshooting-salesquotation.md)
-- [Problembehandlung bei Aktualisierung und Migration auf erweiterte Lagerortverwaltung](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Problembehandlung bei Verbindungsproblemen der mobilen Warehouse Management Mobile App](../warehousing/troubleshoot-warehouse-app-connection.md)
-- [Fehlerbehebung Lagerort-Konfiguration](../warehousing/troubleshoot-warehouse-configuration.md)
-- [Problembehandlung Lagerort Wiederbeschaffung](../warehousing/troubleshoot-warehouse-replenishment.md)
-- [Problemlösung Lagerort einrichten](../warehousing/troubleshoot-warehouse-setup.md)
-- [Fehlerbehebung Lagerort Arbeit](../warehousing/troubleshoot-warehouse-work.md)
-- [Clustereinlagerung](../warehousing/putaway-clusters.md)
-- [Wiederbeschaffungsstrategien](../warehousing/replenishment-strategies.md)
+- [Einlagerungscluster](../warehousing/putaway-clusters.md)
+- [Beschaffungsstrategien](../warehousing/replenishment-strategies.md)
 - [Arbeitsaufteilung](../warehousing/work-split.md)
-- [Arbeiten mit Lagerplatzrichtlinien](../warehousing/create-location-directive.md)
+- [Mit Lagerplatzrichtlinien arbeiten](../warehousing/create-location-directive.md)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

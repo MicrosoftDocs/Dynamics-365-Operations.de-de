@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 2eb8ecdd849aa2f583202ac2ec7c3e1bb06698a1
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423343"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431391"
 ---
 # <a name="plan-type-overview"></a>Übersicht über den Plantyp
 
@@ -28,14 +28,15 @@ ms.locfileid: "7423343"
 
 Ein Plantyp ist eine übergeordnete Gruppierung bestimmter Vorteilstypen. Jeder Plantyp verfügt über einen Plantypcode, der Regeln für den Plantyp festlegt. Zum Beispiel würde der Plantyp **Leben – Basis** den Plantypcode **Leben** haben, da er eine Art von Lebensversicherung ist und den Regeln entsprechen muss, die für den **Lebens** plantypcode festgelegt wurden. Ein anderer Plantyp könnte **Zusätzliches Leben** sein. Dieser Plantyp hat auch den **Leben** Typenplancode.
 
-Jeder Plantyp gibt an, ob ein Mitarbeiter sich für einen oder mehrere Pläne dieses Typs registrieren kann. Zum Beispiel könnte sich ein Mitarbeiter vermutlich sowohl für die Policen „Leben – Basis“ als auch „Leben – zusätzlich“ des Plantyps „Leben“ registrieren. Ein Mitarbeiter darf sich vermutlich nur für eine Police vom Typ „Medizinisch“ registrieren.
+Jeder Plantyp gibt an, ob ein Mitarbeiter sich für einen oder mehrere Pläne dieses Typs registrieren kann. Zum Beispiel könnte sich ein Mitarbeiter vermutlich sowohl für die Policen **Leben – Basis** als auch **Leben – zusätzlich** des Plantyps „Leben“ registrieren. Ein Mitarbeiter darf sich vermutlich nur für eine Police vom Typ „Medizinisch“ registrieren.
 
-Wenn ein Plantyp Kontakte umfasst, gibt der Plantyp an, ob Kontakte Begünstigte oder Unterhaltsberechtigte sind. Zum Beispiel würde ein Planty „Leben – Basis“ Begünstigte haben, während ein Plantyp „Medizinisch – Basis“ Unterhaltsberechtigte haben würde. In einigen Fällen hat ein Plan möglicherweise keine persönlichen Kontakte. Beispiel: ein flexibles Ausgabenkonto oder Parkgebühr.
+Wenn ein Plantyp Kontakte umfasst, gibt der Plantyp an, ob Kontakte Begünstigte oder Unterhaltsberechtigte sind. Zum Beispiel würde ein Plantyp **Leben – Basis** Begünstigte haben, während ein Plantyp „Medizinisch – Basis“ Unterhaltsberechtigte haben würde. In einigen Fällen hat ein Plan möglicherweise keine persönlichen Kontakte. Beispiel: ein flexibles Ausgabenkonto oder Parkgebühr.
 
-Ein Plantyp kann Abdeckungsoptionen definieren. Die Deckungsoptionen werden auf der Seite **Deckungsoption** definiert. Eine Abdeckungsoption kann die Höhe des Vorteils oder die Kontakte angeben, die für den Plantyp berechtigt sind. Wenn der Kontakttyp beispielsweise „Begünstigter“ ist, sollten in der Abdeckungsoption die Bedingungen festgelegt werden, die definieren, zum Erhalt welcher Vorteile der Begünstigte berechtigt ist. Wenn der Kontakttyp „Unterhaltsberechtigt“ ist, sollte die Abdeckungsoption die Beziehung zwischen dem Unterhaltsberechtigten und dem Mitarbeiter definieren. 
+
+Ein Plantyp kann Abdeckungsoptionen definieren. Die Deckungsoptionen werden auf der Seite **Deckungsoptionen** definiert. Eine Abdeckungsoption kann die Höhe des Vorteils oder die Kontakte angeben, die für den Plantyp berechtigt sind. Wenn der Kontakttyp beispielsweise **Begünstigter** ist, sollten in der Abdeckungsoption die Bedingungen festgelegt werden, die definieren, zum Erhalt welcher Vorteile der Begünstigte berechtigt ist. Wenn der Kontakttyp **Unterhaltsberechtigt** ist, sollte die Abdeckungsoption die Beziehung zwischen dem Unterhaltsberechtigten und dem Mitarbeiter definieren. 
 
 > [!IMPORTANT]
-> Die Seite enthält Schlüsseldaten, die die Optionen beeinflussen, die beim Erstellen eines neuen Leistungsplans verfügbar sind:
+> Die Seite **Plantypen** enthält Schlüsseldaten, die die Optionen beeinflussen, die beim Erstellen eines neuen Leistungsplans verfügbar sind:
 >
 > - **Plantypcode** – Dieses Feld beeinflusst, was auf der **Konfiguration** Registerkarte angezeigt wird, wenn der eigentliche Leistungsplan eingerichtet ist.  
 > - **Gleichzeitige Registrierung** – Dieses Feld legt fest, ob Mehrfachregistrierungen zulässig sind. (Bei einem medizinischen Plan ist dieses Feld normalerweise auf **Eine Einschreibung** festegelegt.)

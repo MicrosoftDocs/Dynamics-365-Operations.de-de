@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 2fe94ea1afb74520ee97268f62d42832bad5c3df
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384584"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467421"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Änderungen an Verwaltung für technische Änderung verwalten
 
@@ -122,6 +122,9 @@ Zum Überprüfen von betroffenen Transaktionen, zum Blockieren ausgewählter Tra
     - **Verlauf anzeigen** – Öffnen Sie den Verlauf der Aktionen, die für die ausgewählte Transaktion ausgeführt wurden, mithilfe des Dialogfeldes **Geschäftliche Auswirkungen auf offene Transaktionen**. (Der Verlauf zeigt beispielsweise an, ob Benachrichtigungen gesendet oder Transaktionen blockiert wurden.) 
     - **Alle Transaktionen anzeigen** – Öffnen Sie die vollständige Liste aller Transaktionen, nicht nur der offenen Transaktionen.
 
+> [!IMPORTANT]
+> Die Schaltfläche **Produktion benachrichtigen** ist nur verfügbar, wenn die Funktion *Technische Benachrichtigungen für die Produktion* in Ihrem System aktiviert ist. Entsprechende Anweisungen finden Sie unter [Übersicht über die Verwaltung für technische Änderungen](product-engineering-overview.md).
+
 #### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Überprüfen und verarbeiten Sie Änderungsbenachrichtigungen für Transaktionen
 
 Sie können die Änderungsbenachrichtigungen, die Sie erhalten, folgendermaßen lesen und verarbeiten:
@@ -131,6 +134,9 @@ Sie können die Änderungsbenachrichtigungen, die Sie erhalten, folgendermaßen 
 - Bei Produktionsaufträgen können Sie festlegen, dass nur die Änderungsbenachrichtigungen überprüft werden, die für die von Ihnen verwalteten Produktionsressourcen gelten. In dem Arbeitsbereich **Produktionsflächenmanagement** im Aktionsbereich wählen Sie die Option **Meinen Arbeitsbereich konfigurieren** aus, um die Seite so zu filtern, dass nur Informationen zu den von Ihnen verwalteten Produktionseinheiten, Gruppen und/oder Ressourcen angezeigt werden. In dem Abschnitt **Zusammenfassung** zeigt eine Kachel, die als **Produktionsaufträge mit geänderten Produkten** gekennzeichnet ist, eine Anzahl von Benachrichtigungen an, die Ihren Filtereinstellungen entsprechen. Wählen Sie diese Kachel aus, um die Seite **Technische Benachrichtigungen** zu öffnen, auf der die vollständige Liste der Transaktionen angezeigt wird, die die Kriterien Ihres Filters erfüllen.
 
 Während Sie die Produktionsbenachrichtigungen auf der Seite **Technische Benachrichtigungen** überprüfen, können Sie Links zu zugehörigen Änderungsaufträgen oder Produktionsaufträgen folgen, indem Sie Spaltenwerte auswählen oder die zugehörigen Befehle im Aktivitätenbereich verwenden. Nachdem Sie eine Änderung ausgewertet und Produktionsaufträge nach Bedarf storniert oder geändert haben, können Sie eine Benachrichtigung als gelöst markieren. Wählen Sie die Benachrichtigung aus und wählen Sie dann im Aktivitätsbereich **Gelöst**. Die Benachrichtigung wird aus den Ansichten aller Benutzer entfernt.
+
+> [!IMPORTANT]
+> Das Versenden von Benachrichtigungen für Produktionsaufträge setzt voraus, dass die Funktion *Technische Benachrichtigungen für die Produktion* in Ihrem System aktiviert ist. Entsprechende Anweisungen finden Sie unter [Übersicht über die Verwaltung für technische Änderungen](product-engineering-overview.md).
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Erzeugen eines Änderungsauftrags aus einer Änderungsanforderung
 

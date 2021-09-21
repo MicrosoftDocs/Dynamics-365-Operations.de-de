@@ -2,7 +2,7 @@
 title: Erstellen eines Azure-Speicherkontos und eines Schlüsseltresors
 description: In diesem Thema wird erläutert, wie Sie ein Azure-Speicherkonto und einen Schlüsseltresor erstellen.
 author: gionoder
-ms.date: 04/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a0fe265c75138f3ecfbf08de3c30b2c824463afc35414986e21c4a27bf84bb61
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 23fec7a00d800719e1a7d2c90f9d0977d56be038
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770535"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463856"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Erstellen eines Azure-Speicherkontos und eines Schlüsseltresors
 
@@ -43,9 +43,9 @@ In diesem Thema führen Sie zwei Hauptschritte aus:
 ## <a name="set-up-the-azure-storage-account-to-get-the-storage-account-uri"></a>Einrichten des Azure-Speicherkontos, um den URI des Speicherkontos abzurufen
 
 1. Öffnen Sie das Speicherkonto, das Sie mit der elektronischen Rechnungsstellung verwenden möchten.
-2. Navigieren Sie zu **Blob-Dienst** \> **Container** und erstellen Sie einen neuen Container.
+2. Gehen Sie zu **Datenspeicher** > **Container** und erstellen Sie einen neuen Container.
 3. Geben Sie einen Namen für den Container ein und legen Sie das Feld **Öffentliche Zugriffsebene** auf **Privat (kein anonymer Zugriff)** fest.
-4. Öffnen Sie den Container und navigieren Sie zu **Einstellungen \> Zugriffsrichtlinie**.
+4. Öffnen Sie den Container und gehen Sie zu **Einstellungen** > **Zugriffsrichtlinie**.
 5. Wählen Sie **Richtlinie hinzufügen** aus, um eine gespeicherte Zugriffsrichtlinie hinzuzufügen.
 6. Legen Sie die Felder **Bezeichner** und **Berechtigungen** nach Bedarf fest. Im Feld **Berechtigungen** sollten Sie alle Berechtigungen auswählen.
 
@@ -53,11 +53,11 @@ In diesem Thema führen Sie zwei Hauptschritte aus:
 
 7. Geben Sie das Start- und das Ablaufdatum ein. Das Ablaufdatum sollte in der Zukunft liegen.
 8. Wählen Sie **OK** aus, um die Richtlinie zu speichern. Anschließend speichern Sie Ihre Änderungen im Container.
-9. Kehren Sie zum Speicherkonto zurück und öffnen Sie **Storage-Explorer (Vorschau)**.
-10. Klicken Sie mit der rechten Maustaste auf den Container und wählen Sie **Shared Access Signature abrufen** aus.
-11. Kopieren und speichern Sie im Dialogfeld **Shared Access Signatur** den Wert im Feld **URI**. Dieser Wert wird in der nächsten Prozedur verwendet und als *URI für die Shared Access Signature* bezeichnet.
-
-    ![Auswählen und Kopieren des URI-Werts.](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
+9. Gehen Sie zu **Einstellungen** > **Gemeinsame Zugriffstoken** und legen Sie die Feldwerte fest. 
+10. Geben Sie das Start- und das Enddatum ein. Das Enddatum sollte in der Zukunft liegen.
+11. Wählen Sie im Feld **Berechtigungen** die folgenden Berechtigungen aus: **Lesen**, **Hinzufügen**, **Erstellen**, **Schreiben**, **Löschen** und **Auflisten**. 
+12. Wählen Sie **SAS-Token und URL erzeugen** aus.
+13. Kopieren und speichern Sie den Wert im Feld **Blob-SAS-URL**. Dieser Wert wird in der nächsten Prozedur verwendet und als *URI für die Shared Access Signature* bezeichnet.
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Einrichten des Schlüsseltresor zum Speichern des Speicherkonto-URI
 
@@ -65,7 +65,7 @@ In diesem Thema führen Sie zwei Hauptschritte aus:
 2. Navigieren Sie zu **Einstellungen** \> **Geheimnisse** und wählen Sie dann **Generieren/Importieren** aus, um ein neues Geheimnis zu erstellen.
 3. Wählen Sie auf der Seite **Geheimnis erstellen** im Feld **Uploadoptionen** die Option **Manuell** aus.
 4. Geben Sie den Namen für das Geheimnis ein. Dieser Name wird während der Einrichtung des Service im Regulatory Configuration Service (RCS) verwendet und als *geheimer Name des Schlüsseltresors* bezeichnet.
-5. Wählen Sie im Feld **Wert** die Option **URI für die Shared Access Signature** aus und wählen Sie dann **Erstellen** aus.
+5. Geben Sie im Feld **Wert** die URI für die Shared Access Signature ein, die Sie in der vorherigen Prozedur kopiert haben, und wählen Sie dann **Erstellen** aus.
 6. Richten Sie die Zugriffsrichtlinie ein, um der elektronischen Rechnungsstellung die richtige Ebene für den sicheren Zugriff auf das von Ihnen erstellte Geheimnis zu gewähren. Navigieren Sie zu **Einstellungen \> Zugriffsrichtlinie** und wählen Sie **Zugriffsrichtlinie hinzufügen** aus.
 7. Legen Sie die geheimen Berechtigungen für die Vorgänge **Abrufen** und **Auflisten** fest.
 
@@ -77,7 +77,7 @@ In diesem Thema führen Sie zwei Hauptschritte aus:
 
 9. In dem **Prinzipal auswählen**-Feld wählen Sie **Nichts ausgewählt** aus.
 10. Wählen Sie im Dialogfeld **Prinzipal** den Prinzipal aus, indem Sie **E-Invoicing-Dienst** hinzufügen.
-11. Wählen Sie **Hinzufügen** aus und wählen Sie dann **Änderungen am Schlüsseltresor speichern** aus.
+11. Wählen Sie **Hinzufügen** und dann **Speichern** aus.
 12. Kopieren Sie auf der Seite **Übersicht** den Wert von **DNS-Name** für den Schlüsseltresor. Dieser Wert wird während der Einrichtung des Service in RCS verwendet und als *Schlüsseltresor-URI* bezeichnet.
 
 > [!NOTE]

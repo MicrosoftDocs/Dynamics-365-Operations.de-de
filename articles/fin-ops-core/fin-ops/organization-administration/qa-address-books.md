@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5809d4a29c4209d8fb42bdfd441a3a4fb201ca6c6318abc0315a02ead7c551de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d429639f52c745a737567419b6012884ab20d43d
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759160"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463620"
 ---
 # <a name="address-books-faq"></a>FAQs zu Adressbüchern
 
@@ -66,10 +66,12 @@ Sie können Parteidatensätze entweder im globalen Adressbuch oder auf der entsp
 
 Sie können Übersetzungen von Adressinformationen einrichten, damit die Information in Ihrem Programm in der Sprache des Benutzers (Systemsprache) und in anderen Dokumenten, wie z. B. Aufträgen, in einer anderen Sprache angezeigt wird. Sie können Übersetzungen für Namen von Ländern/Regionen, zu Adresszwecken und Namensfolgen eingeben. Ihre Systemsprache ist z. B. Dänisch, und Sie erstellen einen Auftrag für einen Kunden in Frankreich. In diesem Fall können Sie den Debitorendatensatz auf Dänisch im Programm anzeigen, die Adressinformationen jedoch in dem gedruckten Auftrag auf französisch anzeigen. Wenn Sie Übersetzungen einrichten, sollten Sie eine Übersetzung für jeden Artikel in der Liste eingegeben. Alle Artikel, für die Sie keine Übersetzung eingeben, werden in der Systemsprache angezeigt. Ihre Systemsprache ist z. B. Dänisch, und Sie senden ein Dokument an einen Kunden in Spanien. Wenn Sie keine spanischen (ESP) Übersetzungen für die Adressdaten eingegeben haben, werden die Informationen im System und auf gedruckten Materialien auf Dänisch angezeigt.
 
-## <a name="after-importing-addresses-when-i-access-the-records-why-am-i-unable-to-edit-imported-addresses"></a>Warum kann ich, wenn ich nach dem Importieren von Adressen auf die Datensätze zugreife, importierte Adressen nicht bearbeiten?
+## <a name="after-i-import-addresses-why-cant-i-edit-the-records"></a>Warum kann ich die Datensätze nach dem Importieren von Adressen nicht bearbeiten?
 
-Beim Importieren von Adressen wird ein Feld mit der Bezeichnung **IsLocationOwner** angezeigt. Dies gibt an, ob die Partei, die dem Standort (der Adresse) zugeordnet ist, der Eigentümer der Adresse ist. Wenn die Partei der Eigentümer der Adresse ist, kann die Adresse beim Zugriff über die Partei im globalen Adressbuch oder über das Masterdatensatzformular (z. B. Debitor, Kreditor oder Arbeitskraft) bearbeitet werden. Wenn die Partei nicht der Eigentümer der Adresse ist, kann der Datensatz nicht über die zuvor aufgelisteten Formulare bearbeitet werden. Beim Importieren von Adressen sollte **IsLocationOwner** auf **Ja** eingestellt werden, wenn Sie möchten, dass die Adresse über die zugeordnete Partei bearbeitet werden kann. Es gibt jedoch Situationen, in denen dieses Feld falsch importiert wird. Um dieses Problem zu beheben, kann der Standorteigentümer im globalen Adressbuch über den Datensatz der Partei oder über die Seite **Standorteigentümer bestätigen** aktualisiert werden. Um einen einzelnen Parteidatensatz zu aktualisieren, rufen Sie **Globales Adressbuch > Adresse** auf. Wählen Sie **Bearbeiten** aus, um die Seite **Adresse bearbeiten** zu starten und den Standorteigentümer zu ändern. Wählen Sie **Standorteigentümer ändern** aus, um den vorherigen Standorteigentümer anzuzeigen, wobei die aktuell ausgewählte Partei der neue Standorteigentümer ist. Wenn kein vorheriger Standorteigentümer angegeben ist, bedeutet dies, dass kein Standorteigentümer eingerichtet wurde. Wird die Option **Erweitert** ausgewählt, öffnet sich die Seite **Adressen verwalten**, auf der der Standorteigentümer ebenfalls festgelegt werden kann. Wählen Sie den zu aktualisierenden Standort aus, und wählen Sie anschließend im Menü **Standorteigentümer festlegen** aus. Um den Standorteigentümer für mehrere Datensätze zu aktualisieren, rufen Sie **Globales Adressbuch > Standorte > Standorteigentümer bestätigen** auf. Die Liste enthält Standorte, die mit einer einzelnen Partei verknüpft sind. Diese Partei ist jedoch nicht der Eigentümer. Die Auswahl der Option **Eigentümer bestätigen** legt die **ID der vorgeschlagenen Eigentümerpartei** als den Eigentümer der verknüpften Adresse fest. Sobald die Partei als Eigentümer festgelegt wurde, kann die verknüpfte Adresse über den Datensatz der Partei bearbeitet werden. Um den Standorteigentümer ändern zu können, muss Ihnen die Berechtigung für **Standortbesitzer festlegen** auf der Seite **Sicherheitskonfiguration** zugewiesen werden.  Standardmäßig wird dem Systemadministrator diese Berechtigung gewährt.
+Wenn Sie Adressen importieren, gibt es ein Feld mit dem Namen **IsLocationOwner**. Dieses Feld zeigt an, ob die Partei, die dem Standort (Adresse) zugeordnet ist, der Besitzer der Adresse ist. Wenn die Partei der Besitzer der Adresse ist, kann die Adresse bearbeitet werden, wenn die Partei im globalen Adressbuch oder über die Masterdatensatzseite (z. B. Debitor, Kreditor oder Arbeitskraft) verwendet wird. Wenn die Partei nicht der Besitzert der Adresse ist, kann der Datensatz nicht bearbeitet werden. 
 
+Beim SIe Adressen importieren sollte das Feld **IsLocationOwner** auf **Ja** eingestellt werden, wenn Sie möchten, dass die Adresse über die zugeordnete Partei bearbeitet werden kann. Wird dieses Feld falsch importiert, kann der Standortbesitzer im globalen Adressbuch aktualisiert werden.
+
+Weitere Informationen zum Ändern des Standortbesitzers einer importierten Adresse finden Sie unter [Standortbistzer verwalten](./global-address-book-location-owner.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

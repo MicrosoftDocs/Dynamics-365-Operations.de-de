@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0919706ddcc70fecd15df6bf1cbdd58fe9a8e337b2d45cd61a4fb9d821e4114
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: b9c82f28dcc7ebd223b2483ca257ba934024d755
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757805"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475083"
 ---
 # <a name="inventory-forecasts"></a>Bestandsprognosen
 
@@ -94,7 +94,7 @@ Die folgende Tabelle beschreibt die Befehle, die in der Symbolleiste auf der Reg
 
 | Befehl | Beschreibung |
 |---|---|
-| Planung zuordnen | Wenn Sie eine Verrechnungsmethode verwenden, generieren Sie die einzelnen Einteilungen für den Prognosetransaktion. Die Menge der Position wird dann nach Datum (entsprechend den ausgewählten Zeitintervallen), Menge und Betrag für den gesamten Zeithorizont verteilt. |
+| Planung zuordnen | Wenn Sie eine Verrechnungsmethode verwenden, generieren Sie die einzelnen Einteilungen für den Prognosetransaktion. Die Menge der Position wird dann nach Datum (entsprechend den ausgewählten Zeitintervallen), Menge und Betrag für den gesamten Zeithorizont verteilt. (Siehe den Abschnitt [Planung zuordnen](#allocate-forecast) weiter unten in diesem Thema.) |
 | Sammelaktualisierung | Öffnen Sie die Seite **Planungsbuchungen bearbeiten**. (Siehe den Abschnitt [Planungsbuchungen im Bulk aktualisieren](#bulk-update) weiter unten in diesem Thema.) |
 | Planzahlenergebnis | Öffnen Sie eine Ansicht der Seite **Bestandsplanung**, die nach der ausgewählten Artikel-/Modellkombination gefiltert wird. (Siehe den Abschnitt [Bestandsplanunf](#inventory-forecast) weiter unten in diesem Thema.) |
 | Artikelbedarf erstellen | Öffnen Sie ein Dialogfeld, in dem Sie Artikelbedarfe und Kundenauftrags- oder Artikelerfassungszeilen für projektbezogene Planungsbuchungen erstellen können. Obwohl dieser Befehl sowohl für Beschaffungsplanung als auch für Bedarfsplanung verfügbar ist, kann er nicht für die Seite **Beschaffungsplanung** verwendet werden. |
@@ -201,7 +201,7 @@ Die folgende Tabelle beschreibt die Befehle, die in der Symbolleiste auf der Reg
 
 | Befehl | Beschreibung |
 |---|---|
-| Planung zuordnen | Wenn Sie eine Verrechnungsmethode verwenden, generieren Sie die einzelnen Einteilungen für den Prognosetransaktion. Die Menge der Position wird dann nach Datum (entsprechend den ausgewählten Zeitintervallen), Menge und Betrag für den gesamten Zeithorizont verteilt. |
+| Planung zuordnen | Wenn Sie eine Verrechnungsmethode verwenden, generieren Sie die einzelnen Einteilungen für den Prognosetransaktion. Die Menge der Position wird dann nach Datum (entsprechend den ausgewählten Zeitintervallen), Menge und Betrag für den gesamten Zeithorizont verteilt. (Siehe den Abschnitt [Planung zuordnen](#allocate-forecast) weiter unten in diesem Thema.)|
 | Sammelaktualisierung | Öffnen Sie die Seite **Planungsbuchungen bearbeiten**. (Siehe den Abschnitt [Planungsbuchungen im Bulk aktualisieren](#bulk-update) weiter unten in diesem Thema.) |
 | Planzahlenergebnis | Öffnen Sie eine Ansicht der Seite **Bestandsplanung**, die nach der ausgewählten Artikel-/Modellkombination gefiltert wird. (Siehe den Abschnitt [Bestandsplanunf](#inventory-forecast) weiter unten in diesem Thema.) |
 | Artikelbedarf erstellen | Öffnen Sie ein Dialogfeld, in dem Sie Artikelbedarfe und Kundenauftrags- oder Artikelerfassungszeilen für projektbezogene Planungsbuchungen erstellen können. |
@@ -296,7 +296,7 @@ Die Registerkarte **Bestandsdimensionen** zeigt alle Bestandsdimensionswerte fü
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Das Zuteilungsraster auf der Seite „Bedarfsplanung“
 
-Wenn Sie einen Artikelzuordnungsschlüssel verwenden oder eine Artikelprognose für eine oder mehrere zukünftige Perioden eingegeben haben, können Sie die Prognose zuordnen, indem Sie **Planung zuordnen** in der Symbolleiste auf der Registerkarte **Übersicht** auswählen. Die Menge wird dann so verteilt, wie es durch die Positionen im Raster **Zuteilung** angezeigt wird.
+Wenn Sie einen Artikelzuordnungsschlüssel verwenden oder eine Artikelprognose für eine oder mehrere zukünftige Perioden eingegeben haben, können Sie die Prognose zuordnen, indem Sie **Planung zuordnen** in der Symbolleiste auf der Registerkarte **Übersicht** auswählen. Die Menge wird dann so verteilt, wie es durch die Positionen im Raster **Zuteilung** angezeigt wird. (Siehe den Abschnitt [Planung zuordnen](#allocate-forecast) weiter unten in diesem Thema.)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Planzahlenergebnis
 
@@ -328,6 +328,25 @@ Die folgende Tabelle beschreibt die Felder im Raster auf der Seite **Bestandspla
 | **Unterstückliste** | Die Stücklistennummer einer bestimmten untergeordneten Stückliste. |
 | **Teilstrecke** | Die Arbeitsplannummer eines bestimmten untergeordneten Arbeitsplans. |
 | (Andere Dimensionen) | Zusätzliche Dimensionen können als Spalten im Raster angezeigt werden. Wählen Sie im Aktivitätsbereich **Bestand \> Dimensionen anzeigen**, um die zusätzlichen Dimensionen auszuwählen, die angezeigt werden sollen. |
+
+## <a name="allocate-forecast"></a><a name="allocate-forecast"></a>Planung zuordnen
+
+Die folgende Prozedur dient zum Verarbeiten ausgewählter Buchungspositionen. Wenn Sie eine Planung zuordnen, wird die Menge wie durch die Positionen im Raster **Zuteilung** angegeben verteilt.
+
+1. Öffnen Sie je nach Art der Entität, für die Sie eine Planung erstellen möchten, und der Art der Planung, die Sie erstellen möchten, eine Beschaffungs- oder Bedarfsplanungsseite, wie unter [Planungspositionen anzeigen und manuell eingeben](#manual-entry) beschrieben.
+1. Wählen Sie auf der Seite „Beschaffungs- oder Bedarfsplanungspositionen“ eine Planungsposition aus. Wählen Sie dann auf der Registerkarte **Übersicht** auf der Symbolleiste **Planung zuordnen** aus.
+1. Legen Sie im Dialogfeld **Planung zuordnen** die Felder fest, die in der folgenden Tabelle beschrieben werden. (Der Wert, den Sie im Feld **Methode** auswählen, legt die anderen verfügbaren Felder fest.)
+
+    | Feld | Beschreibung |
+    |---|---|
+    | Methode | <p>Wählen Sie die Methode aus, die verwendet wird, um die Planungsbuchung zuzuordnen:</p><ul><li>**Keine** – Es findet keine Zuweisung statt.</li><li>**Zeitraum** – Für jede Periode die gleiche Menge prognostizieren. Wenn Sie diesen Wert auswählen, geben Sie eine Menge im Feld **Pro** Feld und eine Zeiteinheit im Feld **Einheit** ein.</li><li>**Schlüssel** – Die Planungsmenge wird entsprechend dem Planzahlenverteilungsschlüssel zugeordnet, den Sie im Feld **Periodenschlüssel** angegeben haben. Sie können diese Methode verwenden, wenn saisonale Schwankungen berücksichtigt werden sollen.</li><ul>|
+    | Pro | <p>Geben Sie die Anzahl von Zeitintervallen ein, um die die Planung in die Zukunft reicht. Dieses Feld ist nur verfügbar, wenn im Feld *Zeitraumtyp* **Methode** ausgewählt wird.</p><p>Wenn Sie zum Beispiel *Period* im Feld **Methode** auswählen, geben Sie im Feld *Pro* **1** ein und wählen Sie *Monate* im Feld **Einheit** aus. Geben Sie dann im Feld **Ende** ein Enddatum an, das ein Jahr in die Zukunft reicht. In diesem Fall wird für jeden Monat des kommenden Jahrs basierend auf den Artikel- und Mengenangaben in der Kopfzeile eine Planungsposition erstellt. |
+    | Einheit | Wählen Sie die Einheit des Zeitintervalls: *Tage*, *Monate*, oder *Jahre*. Zuteilung entspricht dann der Anzahl von Tagen, Monaten oder Jahren, die Sie im Feld **Pro** festgelegt haben.|
+    | Periodenschlüssel | Geben Sie den Periodenzuordnungsschlüssel an, der für die Zuordnung der Planung verwendet wird. Weitere Informationen finden Sie unter [Zuteilung von Budgetplanungsdaten](../../finance/budgeting/budget-planning-data-allocation.md). |
+    | Beenden | Geben Sie das Enddatum an, das für Ihre Einstellungen in den Feldern **Pro** und **Einheit** gilt. |
+
+1. Wählen Sie **OK** aus, um Ihre Einstellungen zu bestätigen.
+1. Sie können die Ergebnisse auf der Registerkarte **Zuteilung** für die gleiche Position überprüfen.
 
 ## <a name="bulk-update-forecast-transactions"></a><a name="bulk-update"></a>Planungsbuchungen im Bulk aktualisieren
 

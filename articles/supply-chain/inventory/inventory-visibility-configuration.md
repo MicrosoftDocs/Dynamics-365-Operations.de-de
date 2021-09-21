@@ -1,5 +1,5 @@
 ---
-title: Konfiguration der Inventory Visibility
+title: Bestandstransparenz konfigurieren
 description: In diesem Thema wird beschrieben, wie Sie Inventory Visibility konfigurieren.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 92e42b22d424ab80303d771f760cfcf0599b9f4c
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345032"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474675"
 ---
-# <a name="inventory-visibility-configuration"></a>Konfiguration der Inventory Visibility
+# <a name="configure-inventory-visibility"></a>Bestandstransparenz konfigurieren
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Inventory Visibility konfigurieren.
+In diesem Thema wird beschrieben, wie Sie die Bestandsanzeige mit der Bestandsanzeige-App in Power Apps konfigurieren.
 
 ## <a name="introduction"></a><a name="introduction"></a>Einführung
 
@@ -35,27 +35,58 @@ Bevor Sie mit Inventory Visibility arbeiten können, müssen Sie die folgende Ko
 - [Reservierungskonfiguration (optional)](#reservation-configuration)
 - [Beispiel für die Standardkonfiguration](#default-configuration-sample)
 
-> [!NOTE]
-> Sie können Konfigurationen für Inventory Visibility in [Microsoft Power Apps](./inventory-visibility-power-platform.md#configuration) ansehen und bearbeiten. Nachdem die Konfiguration abgeschlossen ist, wählen Sie **Konfiguration aktualisieren** in der App.
+## <a name="prerequisites"></a>Voraussetzungen
 
-## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Datenquellenkonfiguration
+Bevor Sie beginnen, installieren Sie das Bestandsanzeige-Add-In und richten es wie in [Bestandsanzeige installieren und einrichten](inventory-visibility-setup.md) beschrieben ein.
 
-Die Datenquelle steht für das System, aus dem Ihre Daten stammen. Beispiele sind `fno` (was für "Dynamics 365 Finance and Operations Apps" steht) und `pos` (was für "Point of Sale" steht).
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Aktivieren Sie die Bestandsanzeigefunktionen in der Funktionsverwaltung von Power Apps
 
-Die Datenquellenkonfiguration umfasst die folgenden Teile:
+Das Bestandsanzeige-Add-In fügt Ihrer Power Apps-Installation mehrere neue Funktionen hinzu. Standardmäßig sind diese Funktionen ausgeschaltet. Um sie zu verwenden, öffnen Sie die Seite **Konfiguration** in Power Apps und aktivieren Sie dann auf der Registerkarte **Funktionsverwaltung** die folgenden Funktionen.
 
-- Dimension (Zuordnung von Dimensionen)
-- Physikalische Messung
-- Berechnete Messung
+- *OnHandReservation*
+- *OnHandMostSpecificBackgroundService*
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finden Sie den Dienst-Endpunkt
+
+Wenn Sie den richtigen Dienst-Endpunkt für Inventory Visibility nicht kennen, öffnen Sie die Seite **Konfiguration** in Power Apps und wählen Sie dann **Dienst-Endpunkt anzeigen** in der oberen rechten Ecke. Die Seite zeigt den korrekten Dienst-Endpunkt an.
+
+## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Die Konfigurationsseite der Bestandsanzeige-App
+
+In Power Apps hilft Ihnen die Seite **Konfiguration** der [Bestandsanzeige-App](inventory-visibility-power-platform.md) beim Festlegen der Konfiguration des Lagerbestands und der Softreservierung. Nach der Installation des Add-Ins enthält die Standardkonfiguration den Wert von Microsoft Dynamics 365 Supply Chain Management (die Datenquelle `fno`). Sie können die Standardeinstellungen überprüfen. Zusätzlich können Sie die Konfiguration basierend auf Ihren geschäftlichen Anforderungen und den Bestandsbuchungsanforderungen Ihres externen Systems ändern, um die Art und Weise zu standardisieren, in der Bestandsänderungen in den verschiedenen Systemen gebucht, organisiert und abgefragt werden können. In den verbleibenden Abschnitten dieses Themas wird erläutert, wie die einzelnen Teile der Seite **Konfiguration** zu verwenden sind.
+
+Nachdem die Konfiguration abgeschlossen ist, wählen Sie in der App unbedingt **Konfiguration aktualisieren** aus.
+
+## <a name="data-source-configuration"></a>Konfiguration der Datenquelle
+
+Jede Datenquelle steht für ein System, aus dem Ihre Daten stammen. Beispielnamen für Datenquellen sind `fno` (steht für „Dynamics 365 Finance and Operations-Apps“) und `pos` (steht für „Point of Sale“). Standardmäßig ist das Supply Chain Management als Standard-Datenquelle (`fno`) in Inventory Visibility festgelegt.
 
 > [!NOTE]
 > Die Datenquelle `fno` ist für Dynamics 365 Supply Chain Management reserviert.
 
-### <a name="dimension-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Dimension (Dimension Zuordnung)
+Um eine Datenquelle hinzuzufügen, führen Sie die folgenden Schritte aus.
 
-Der Zweck der Dimensionskonfiguration ist die Standardisierung der Multisystem-Integration für Buchungsereignisse und Abfragen, basierend auf Dimensionskombinationen.
+1. Melden Sie sich in Ihrer Power Apps-Umgebung an und öffnen Sie **Inventory Visibility**.
+1. Öffnen Sie die Seite **Konfiguration**.
+1. Wählen Sie auf der Registerkarte **Datenquelle** die Option **Neue Datenquelle**, um eine Datenquelle hinzuzufügen.
 
-Inventory Visibility unterstützt die folgenden allgemeinen Basisdimensionen.
+> [!NOTE]
+> Wenn Sie eine Datenquelle hinzufügen, stellen Sie sicher, dass Sie den Namen der Datenquelle, die physikalischen Kennzahlen und die Zuordnungen der Dimensionen überprüfen, bevor Sie die Konfiguration für den Dienst "Inventory Visibility" aktualisieren. Sie können diese Einstellungen nicht mehr ändern, nachdem Sie **Konfiguration aktualisieren** gewählt haben.
+
+Die Datenquellenkonfiguration umfasst die folgenden Teile:
+
+- Dimensionen (Zuordnung von Dimensionen)
+- Physikalische Messungen
+- Berechnete Messungen
+
+### <a name="dimensions-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Dimensionen (Zuordnung von Dimensionen)
+
+Der Zweck der Dimensionskonfiguration ist die Standardisierung der Multisystem-Integration für Buchungsereignisse und Abfragen, basierend auf Dimensionskombinationen. Inventory Visibility bietet eine Liste von Basisdimensionen, die den Dimensionen Ihrer Datenquelle zugeordnet werden können. Dreiunddreißig Dimensionen sind für die Zuordnung verfügbar.
+
+- Wenn Sie Supply Chain Management als eine Ihrer Datenquellen verwenden, werden standardmäßig 13 Dimensionen den Supply Chain Management Standarddimensionen zugeordnet. Zwölf weitere Dimensionen (`inventDimension1` bis `inventDimension12`) sind angepassten Dimensionen im Supply Chain Management zugeordnet. Die restlichen acht Dimensionen sind erweiterte Dimensionen, die Sie externen Datenquellen zuordnen können.
+- Wenn Sie Supply Chain Management nicht als eine Ihrer Datenquellen verwenden, können Sie die Dimensionen frei zuordnen. Die folgende Tabelle zeigt die vollständige Liste der verfügbaren Dimensionen.
+
+> [!NOTE]
+> Wenn Ihre Dimension nicht in der Liste der Standarddimensionen enthalten ist und Sie eine externe Datenquelle verwenden, empfehlen wir Ihnen, die Zuordnung mit `ExtendedDimension1` bis `ExtendedDimension8` vorzunehmen.
 
 | Dimensionstyp | Basis-Dimensionen |
 |---|---|
@@ -70,10 +101,11 @@ Inventory Visibility unterstützt die folgenden allgemeinen Basisdimensionen.
 | Bestandsstatus | `StatusId` |
 | Lagerspezifisch | `WMSLocationId` |
 | Lagerspezifisch | `WMSPalletId` |
-| Lager spezifisch | `LicensePlateId` |
+| Lagerspezifisch | `LicensePlateId` |
 | Andere | `VersionId` |
 | Bestand (angepasst) | `InventDimension1` bis `InventDimension12` |
-| Erweiterung | `ExtendedDimension1` bis `ExtendedDimension8` |
+| Erweiterung | `ExtendedDimension1` durch `ExtendedDimension8` |
+| System | `Empty` |
 
 > [!NOTE]
 > Die Dimensionen, die in der vorangehenden Tabelle aufgeführt sind, dienen nur als Referenz. Sie müssen sie nicht in Inventory Visibility definieren.
@@ -92,11 +124,24 @@ Externe Systeme können über die RESTful-APIs von Inventory Visibility zugreife
 
 Indem Sie eine Zuordnung von Dimensionen konfigurieren, können Sie die externen Dimensionen direkt an Inventory Visibility senden. Inventory Visibility wandelt dann die externen Dimensionen automatisch in Basisdimensionen um.
 
+Um Zuordnungen von Dimensionen hinzuzufügen, gehen Sie wie folgt vor.
+
+1. Melden Sie sich in Ihrer Power Apps-Umgebung an und öffnen Sie **Inventory Visibility**.
+1. Öffnen Sie die Seite **Konfiguration**.
+1. Wählen Sie auf der Registerkarte **Datenquelle** im Abschnitt **Dimensions-Zuordnungen** die Option **Hinzufügen**, um Dimensions-Zuordnungen hinzuzufügen.
+    ![Hinzufügen von Zuordnungen von Dimensionen](media/inventory-visibility-dimension-mapping.png "Hinzufügen von Zuordnungen von Dimensionen")
+
+1. Geben Sie im Feld **Dimensionsname** die Quelldimension an.
+1. Wählen Sie im Feld **Zur Basisdimension** die Dimension in Inventory Visibility, die Sie zuordnen möchten.
+1. Wählen Sie **Speichern** aus.
+
+Wenn Ihre Datenquelle z. B. eine Produktfarbendimension enthält, können Sie diese der Basisdimension `ColorId` zuordnen, um eine angepasste Dimension `ProductColor` in der Datenquelle `exterchannel` hinzuzufügen. Sie wird dann der Basisdimension `ColorId` zugeordnet.
+
 ### <a name="physical-measures"></a>Physikalische Messungen
 
-Physikalische Messungen verändern die Menge und spiegeln den Status des Bestands wider. Sie können Ihre eigenen physikalischen Messungen, basierend auf Ihren Anforderungen, definieren.
+Wenn eine Datenquelle eine Bestandsänderung an Inventory Visibility sendet, sendet sie diese Änderung unter Verwendung von *physikalischen Messungen*. Physikalische Messungen verändern die Menge und spiegeln den Status des Bestands wider. Sie können Ihre eigenen physikalischen Messungen, basierend auf Ihren Anforderungen, definieren. Abfragen können auf den physikalischen Kennzahlen basieren.
 
-Inventory Visibility bietet eine Liste von standardmäßigen physikalischen Messungen, die mit Supply Chain Management (der Datenquelle `fno`) verknüpft sind. Die folgende Tabelle enthält ein Beispiel für physikalische Messungen.
+Inventory Visibility bietet eine Liste von standardmäßigen physikalischen Messungen, die mit Supply Chain Management (der Datenquelle `fno`) verknüpft sind. Diese voreingestellten physikalischen Kennzahlen werden aus den Status der Transaktionen im Lagerbestand auf der Seite **Bestandsliste** im Supply Chain Management (**Bestandsverwaltung \> Abfragen und Bericht \> Bestandsliste**) übernommen. Die folgende Tabelle enthält ein Beispiel für physikalische Messungen.
 
 | Name der physikalischen Messung | Beschreibung |
 |---|---|
@@ -117,11 +162,33 @@ Inventory Visibility bietet eine Liste von standardmäßigen physikalischen Mess
 | `ReservOrdered` | Bestellt reserviert |
 | `ReservPhysical` | Physisch reserviert |
 
-### <a name="calculated-measures"></a><a name="data-source-configuration-calculated-measure"></a>Berechnete Messungen
+Wenn die Datenquelle Supply Chain Management ist, müssen Sie die standardmäßigen physikalischen Messungen nicht neu erstellen. Für externe Datenquellen können Sie jedoch neue physikalische Messungen erstellen, indem Sie die folgenden Schritte ausführen.
 
-Berechnete Maße bieten eine angepasste Berechnungsformel, die aus einer Kombination von physikalischen Messungen besteht. Mit dieser Funktionalität können Sie eine Reihe von physikalischen Kennzahlen festlegen, die addiert werden, und/oder eine Reihe von physikalischen Kennzahlen, die subtrahiert werden, um das Formular für die angepasste Messung zu bilden.
+1. Melden Sie sich in Ihrer Power Apps-Umgebung an und öffnen Sie **Inventory Visibility**.
+1. Öffnen Sie die Seite **Konfiguration**.
+1. Wählen Sie auf der Registerkarte **Datenquelle** im Abschnitt **Physikalische Messungen** die Option **Hinzufügen**, geben Sie einen Namen für die Quelle der Messungen an und speichern Sie die Änderungen.
 
-Sie haben zum Beispiel das folgende Abfrageergebnis.
+### <a name="calculated-measures"></a>Berechnete Messungen
+
+Sie können Inventory Visibility verwenden, um sowohl physische Messungen im Bestand als auch *angepasste berechnete Kennzahlen* abzufragen. Berechnete Maße bieten eine angepasste Berechnungsformel, die aus einer Kombination von physikalischen Messungen besteht. Mit dieser Funktionalität können Sie eine Reihe von physikalischen Kennzahlen festlegen, die addiert werden, und/oder eine Reihe von physikalischen Kennzahlen, die subtrahiert werden, um das Formular für die angepasste Messung zu bilden.
+
+In der Konfiguration können Sie eine Reihe von Modifikatoren festlegen, die addiert oder subtrahiert werden, um die gesamte aggregierte Ausgabemenge zu erhalten.
+
+Um eine angepasste berechnete Messung festzulegen, befolgen Sie diese Schritte.
+
+1. Melden Sie sich in Ihrer Power Apps-Umgebung an und öffnen Sie **Inventory Visibility**.
+1. Öffnen Sie die Seite **Konfiguration**.
+1. Auf der Registerkarte **Berechnete Messung** wählen Sie **Neue berechnete Messung**, um eine berechnete Messung hinzuzufügen. Legen Sie dann die Felder wie in der folgenden Tabelle beschrieben fest.
+
+    | Feld | Wert |
+    |---|---|
+    | Name der neuen berechneten Messung | Geben Sie den Namen der berechneten Messung ein. |
+    | Datenquelle | Das abfragende System ist eine Datenquelle. |
+    | Modifier-Datenquelle | Geben Sie die Datenquelle des Modifikators ein. |
+    | Modifizierer | Geben Sie den Namen des Modifikators ein. |
+    | Modifikator-Typ | Wählen Sie den Modifikatortyp (*Addition* oder *Subtraktion*). |
+
+Sie erhalten zum Beispiel das folgende Abfrageergebnis.
 
 ```json
 [
@@ -202,7 +269,7 @@ Wenn diese Berechnungsformel verwendet wird, wird das neue Abfrageergebnis die a
 ]
 ```
 
-Die `MyCustomAvailableforReservation` Ausgabe, basierend auf der Berechnungseinstellung in den angepassten Messungen, ist 100 + 50 + 80 + 90 + 30 - 10 - 20 - 60 - 40 = 220.
+Die Ausgabe von `MyCustomAvailableforReservation` lautet basierend auf der Berechnungseinstellung in den angepassten Messungen 100 + 50 – 10 + 80 – 20 + 90 + 30 – 60 – 40 = 220.
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Partitionskonfiguration
 
@@ -230,11 +297,21 @@ Inventory Visibility bietet Flexibilität, indem Sie die _Indizes_ festlegen kö
 | Dimensionen | Basisdimensionen, über die das Abfrageergebnis aggregiert wird. |
 | Hierarchie | Die Hierarchie wird verwendet, um die unterstützten Dimensionen-Kombinationen zu definieren, die abgefragt werden können. Sie legen z. B. ein Dimensionen-Set fest, das eine Hierarchie-Sequenz von `(ColorId, SizeId, StyleId)` hat. In diesem Fall unterstützt das System Abfragen auf vier Dimensionen-Kombinationen. Die erste Kombination ist leer, die zweite ist `(ColorId)`, die dritte ist `(ColorId, SizeId)` und die vierte ist `(ColorId, SizeId, StyleId)`. Die anderen Kombinationen werden nicht unterstützt. Weitere Informationen finden Sie im folgenden Beispiel. |
 
+Um Ihren Produkthierarchie-Index festzulegen, gehen Sie wie folgt vor.
+
+1. Melden Sie sich in Ihrer Power Apps-Umgebung an und öffnen Sie **Inventory Visibility**.
+1. Öffnen Sie die Seite **Konfiguration**.
+1. Wählen Sie auf der Registerkarte **Produkthierarchie-Index** im Abschnitt **Dimensions-Zuordnungen** die Option **Hinzufügen**, um Zuordnungen von Dimensionen hinzuzufügen.
+1. Standardmäßig wird eine Liste von Indizes bereitgestellt. Um einen vorhandenen Index zu ändern, wählen Sie **Bearbeiten** oder **Hinzufügen** im Abschnitt für den betreffenden Index. Um einen neuen Indexsatz zu erstellen, wählen Sie **Neuer Indexsatz**. Wählen Sie für jede Zeile in jedem Indexsatz im Feld **Dimension** aus der Liste der Basisdimensionen aus. Die Werte für die folgenden Felder werden automatisch generiert:
+
+    - **Set-Nummer** - Dimensionen, die zur gleichen Gruppe (Index) gehören, werden zusammen gruppiert, und ihnen wird die gleiche Set-Nummer zugewiesen.
+    - **Hierarchie** - Die Hierarchie wird verwendet, um die unterstützten Dimensionskombinationen zu definieren, die in einer Dimensionsgruppe (Index) abgefragt werden können. Wenn Sie z. B. eine Dimensionsgruppe festlegen, die eine Hierarchie-Sequenz von *Stil*, *Farbe* und *Größe* hat, unterstützt das System das Ergebnis von drei Abfragegruppen. Die erste Gruppe ist nur Stil. Die zweite Gruppe ist eine Kombination aus Stil und Farbe. Und die dritte Gruppe ist eine Kombination aus Stil, Farbe und Größe. Die anderen Kombinationen werden nicht unterstützt.
+
 ### <a name="example"></a>Beispiel
 
 In diesem Abschnitt finden Sie ein Beispiel, das zeigt, wie die Hierarchie funktioniert.
 
-Sie haben die folgenden Elemente in Ihrem Bestand.
+Die folgende Tabelle zeigt eine Liste der verfügbaren Bestände für dieses Beispiel.
 
 | Artikel | ColorId | SizeId | StyleId | Leistung |
 |---|---|---|---|---|
@@ -246,7 +323,7 @@ Sie haben die folgenden Elemente in Ihrem Bestand.
 | T-Shirt | Red | Klein | Regelmäßig | 6 |
 | T-Shirt | Red | Groß | Regelmäßig | 7 |
 
-Hier ist der Index.
+Die folgende Tabelle zeigt, wie die Indexhierarchie festgelegt wird.
 
 | Nummer festlegen | Dimensionen | Hierarchie |
 |---|---|---|
@@ -284,6 +361,8 @@ Mit dem Index können Sie den Lagerbestand auf die folgenden Arten abfragen:
 
 > [!NOTE]
 > Basisdimensionen, die in der Partitionskonfiguration definiert sind, sollten nicht in Indexkonfigurationen definiert werden.
+> 
+> Wenn Sie nur Bestand abfragen müssen, der durch alle Dimensionskombinationen aggregiert wird, können Sie einen einzelnen Index einrichten, der die Basisdimension `Empty` enthält.
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Reservierungskonfiguration (optional)
 
@@ -296,22 +375,37 @@ Die Reservierungskonfiguration ist erforderlich, wenn Sie die Funktion der Soft-
 
 ### <a name="soft-reservation-mapping"></a>Zuordnung der Soft-Reservierung
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Wenn Sie eine Reservierung vornehmen, möchten Sie vielleicht wissen, ob der Lagerbestand aktuell für die Reservierung verfügbar ist. Die Validierung ist mit einer berechneten Messung verknüpft, die eine Berechnungsformel aus einer Kombination von physikalischen Messungen darstellt.
 
-Zum Beispiel basiert eine Reservierungsmaßnahme auf der physikalischen Messung `SoftReservOrdered` aus der Datenquelle `iv` (Inventory Visibility). In diesem Fall können Sie die berechnete Kennzahl `AvailableToReserve` der Datenquelle `iv` wie hier gezeigt festlegen.
+Indem Sie die Zuordnung von der physikalischen Messung zur berechneten Messung festlegen, ermöglichen Sie dem Dienst Inventory Visibility, die Verfügbarkeit von Reservierungen automatisch zu überprüfen, basierend auf der physikalischen Messung.
 
-| Berechnungstyp | Datenquelle | Physikalische Messung |
-|---|---|---|
-| Addition | `fno` | `AvailPhysical` |
-| Addition | `pos` | `Inbound` |
-| Subtraktion | `pos` | `Outbound` |
-| Subtraktion | `iv` | `SoftReservOrdered` |
+Bevor Sie diese Zuordnung festlegen, müssen die physikalischen Messungen, die berechneten Messungen und ihre Datenquellen auf den Registerkarten **Datenquelle** und **Berechnete Messung** der Seite **Konfiguration** in Power Apps definiert werden (wie zuvor in diesem Thema beschrieben).
 
-Legen Sie dann eine weiche Reservierungszuordnung fest, um eine Zuordnung von der `SoftReservOrdered`-Reservierungskennzahl zur `AvailableToReserve`-berechneten Kennzahl herzustellen.
+Um die Zuordnung der Soft-Reservierung zu definieren, gehen Sie wie folgt vor.
 
-| Datenquelle für physikalische Messungen | Physikalische Messung | Verfügbar für Reservierungsdatenquelle | Verfügbar für die berechnete Messung der Reservierung |
-|---|---|---|---|
-| `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+1. Definieren Sie die physikalische Kennzahl, die als Soft-Reservierungsmaßnahme dient (zum Beispiel `SoftReservOrdered`).
+1. Definieren Sie auf der Registerkarte **Berechnete Kennzahl** der Seite **Konfiguration** die *zur Reservierung verfügbare* (AFR) berechnete Kennzahl, die die AFR-Berechnungsformel enthält, die Sie der physikalischen Messung zuordnen möchten. Sie könnten z.B. `AvailableToReserve` (verfügbar für Reservierung) so festlegen, dass sie der zuvor definierten physikalischen Messung `SoftReservOrdered` zugeordnet wird. Auf diese Weise können Sie feststellen, welche Mengen, die den Bestandsstatus `SoftReservOrdered` haben, für die Reservierung verfügbar sind. Die folgende Tabelle zeigt die AFR-Berechnungsformel.
+
+    | Berechnungstyp | Datenquelle | Physikalische Messung |
+    |---|---|---|
+    | Addition | `fno` | `AvailPhysical` |
+    | Addition | `pos` | `Inbound` |
+    | Subtraktion | `pos` | `Outbound` |
+    | Subtraktion | `iv` | `SoftReservOrdered` |
+
+    Wir empfehlen, die berechnete Messung so einzurichten, dass sie die physikalische Messung enthält, auf der die Reservierungsmessung basiert. Auf diese Weise wird die berechnete Messungsmenge durch die Reservierungsmessungsmenge beeinflusst. Daher sollte in diesem Beispiel die für `AvailableToReserve` berechnete Messung der `iv`-Datenquelle die physikalische Messung für `SoftReservOrdered` aus `iv` als Komponente enthalten.
+
+1. Öffnen Sie die Seite **Konfiguration**.
+1. Legen Sie auf der Registerkarte **Zuordnung von Soft-Reservierungen** die Zuordnung von der physischen Messung zur berechneten Kennzahl fest. Für das vorherige Beispiel könnten Sie die folgenden Einstellungen verwenden, um `AvailableToReserve` der zuvor definierten physikalischen Messung `SoftReservOrdered` zuzuordnen.
+
+    | Datenquelle für physikalische Messungen | Physikalische Messung | Verfügbar für Reservierungsdatenquelle | Verfügbar für die berechnete Messung der Reservierung |
+    |---|---|---|---|
+    | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+
+    > [!NOTE]
+    > Wenn Sie die **Zuordnung von Soft-Reservierungen** nicht bearbeiten können, müssen Sie eventuell die Funktion *OnHandReservation* auf der Registerkarte **Funktionsverwaltung** einschalten.
 
 Wenn Sie nun eine Reservierung für `SoftReservOrdered` vornehmen, findet Inventory Visibility automatisch `AvailableToReserve` und die zugehörige Berechnungsformel, um die Reservierungsvalidierung durchzuführen.
 
@@ -348,15 +442,20 @@ In diesem Fall gilt die folgende Berechnung:
 
 Wenn Sie also versuchen, eine Reservierung für `iv.SoftReservOrdered` vorzunehmen, und die Menge kleiner oder gleich `AvailableToReserve` (10) ist, können Sie die Reservierung durchführen.
 
-### <a name="soft-reservation-hierarchy"></a>Weiche Reservierungshierarchie
+> [!NOTE]
+> Wenn Sie die Reservierungs-API aufrufen, können Sie die Reservierungsvalidierung steuern, indem Sie den booleschen `ifCheckAvailForReserv`-Parameter im Anforderungstext angeben. Der Wert `True` bedeutet, dass die Validierung erforderlich ist, während der Wert `False` bedeutet, dass die Validierung nicht erforderlich ist. Der Standardwert ist `True`.
+
+### <a name="soft-reservation-hierarchy"></a>Soft-Reservierungs-Hierarchie
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Die Reservierungshierarchie beschreibt die Sequenz von Dimensionen, die bei der Reservierung angegeben werden müssen. Sie funktioniert genauso wie die Produktindexhierarchie bei Lagerbestandsabfragen.
 
-Die Reservierungshierarchie ist unabhängig von der Produktindexhierarchie. Diese Unabhängigkeit ermöglicht die Implementierung einer Kategorieverwaltung, bei der Benutzer die Dimensionen in Details aufschlüsseln können, um die Anforderungen für genauere Reservierungen zu spezifizieren.
+Die Reservierungshierarchie ist unabhängig von der Produktindexhierarchie. Diese Unabhängigkeit ermöglicht die Implementierung einer Kategorieverwaltung, bei der Benutzer die Dimensionen in Details aufschlüsseln können, um die Anforderungen für genauere Reservierungen zu spezifizieren. Die Hierarchie Ihrer Soft-Reservierung sollte `SiteId` und `LocationId` als Komponenten enthalten, da sie die Partitionskonfiguration aufbauen. Bei der Reservierung müssen Sie eine Partition für das Produkt angeben.
 
 Hier ist ein Beispiel für eine weiche Reservierungshierarchie.
 
-| Basis-Dimension | Hierarchie |
+| Basis-Dimensionen | Hierarchie |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
@@ -364,10 +463,8 @@ Hier ist ein Beispiel für eine weiche Reservierungshierarchie.
 | `SizeId` | 4 |
 | `StyleId` | 5 |
 
-In diesem Beispiel können Sie Reservierungen in den folgenden Sequenzen von Dimensionen vornehmen:
+In diesem Beispiel können Sie Reservierungen in den folgenden Sequenzen von Dimensionen vornehmen: Bei der Reservierung müssen Sie eine Partition für das Produkt angeben. Daher ist `(SiteId, LocationId)` die grundlegende Hierarchie, die Sie verwenden können.
 
-- `()` - Es ist keine Dimension angegeben.
-- `(SiteId)`
 - `(SiteId, LocationId)`
 - `(SiteId, LocationId, ColorId)`
 - `(SiteId, LocationId, ColorId, SizeId)`
@@ -375,9 +472,24 @@ In diesem Beispiel können Sie Reservierungen in den folgenden Sequenzen von Dim
 
 Eine gültige Sequenz von Dimensionen sollte strikt der Reservierungshierarchie folgen, Dimension für Dimension. Die Hierarchiesequenz `(SiteId, LocationId, SizeId)` ist z. B. nicht gültig, weil `ColorId` fehlt.
 
+## <a name="complete-and-update-the-configuration"></a>Abschließen und Aktualisieren der Konfiguration
+
+Nachdem Sie die Konfiguration abgeschlossen haben, müssen Sie alle Änderungen an Inventory Visibility festschreiben. Um die Änderungen zu bestätigen, wählen Sie **Konfiguration aktualisieren** in der oberen rechten Ecke der Seite **Konfiguration** in Power Apps.
+
+Wenn Sie zum ersten Mal **Konfiguration aktualisieren** wählen, fordert das System Ihre Anmeldeinformationen an.
+
+- **Client Id** - Die Azure-Anwendungs-ID, die Sie für Inventory Visibility erstellt haben.
+- **Mandanten-ID** - Ihre Azure-Mandanten-ID.
+- **Client Secret** - Das Azure-Anwendungsgeheimnis, das Sie für Inventory Visibility erstellt haben.
+
+Nachdem Sie sich angemeldet haben, wird die Konfiguration im Inventory Visibility-Dienst aktualisiert.
+
+> [!NOTE]
+> Stellen Sie sicher, dass Sie den Namen der Datenquelle, die physikalischen Messungen und die Zuordnungen der Dimensionen überprüfen, bevor Sie die Konfiguration für den Inventory Visibility-Dienst aktualisieren. Sie können diese Einstellungen nicht mehr ändern, nachdem Sie **Konfiguration aktualisieren** gewählt haben.
+
 ## <a name="default-configuration-sample"></a><a name="default-configuration-sample"></a>Standardkonfigurationsbeispiel
 
-Inventory Visibility legt bei seiner Initialisierung eine Standardkonfiguration fest. Sie können die Konfiguration nach Bedarf ändern.
+Die Bestandsanzeige legt bei der Initialisierung eine Standardkonfiguration fest, die hier angegeben ist. Sie können diese Konfiguration nach Bedarf ändern.
 
 ### <a name="data-source-configuration"></a>Konfiguration der Datenquelle
 
