@@ -102,8 +102,6 @@
                       href: get-started/whats-new-commerce-10-0-21.md
                     - name: "Commerce 10.0.20 (August\_2021)"
                       href: get-started/whats-new-commerce-10-0-20.md
-                    - name: "Commerce\_10.0.19 (Juni\_2021)"
-                      href: get-started/whats-new-commerce-10-0-19.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -668,6 +666,8 @@
                   href: tasks/base-price-trade-agreements.md
                 - name: Handelsvereinbarungen anhand von Kategoriepreisgestaltungsregeln erstellen
                   href: tasks/category-pricing-rules-trade-agreements.md
+                - name: Genaue Preis- und Rabattberechnung verzögern
+                  href: delayed-price-calculation.md
             - name: Empfehlungen
               items:
                 - name: Überblick über Produktempfehlungen
@@ -1328,6 +1328,8 @@
                   href: localizations/latam-bra-nfce-contingency-mode.md
                 - name: Brasilianische Steuerdokumente über Einzelhandelsauszüge in der Commerce-Zentralverwaltung veröffentlichen
                   href: localizations/latam-bra-retail-statements.md
+                - name: Dynamics 365 Payment Connector für Adyen in Commerce POS für Brasilien
+                  href: localizations/latam-bra-adyen.md
             - name: Osteuropa
               items:
                 - name: Allgemein
@@ -1838,9 +1840,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
                         - name: Formate zur dynamischen Ergänzung von Excel-Berichten mit Spalten ausführen
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurationen zum Generieren von Berichten im Word-Format entwerfen
+                - name: Konfigurationen zur Anfertigung von Berichten im Word-Format entwerfen
                   items:
-                    - name: ER-Konfigurationen zum Generieren von Berichten im Word-Format entwerfen
+                    - name: EB-Konfigurationen zur Anfertigung von Berichten im Word-Format entwerfen
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/commerce/toc.json
                     - name: ER-Konfigurationen mit Excel-Vorlagen erneut zur Erstellung von Berichten im Word-Format verwenden
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/commerce/toc.json
@@ -2430,17 +2432,17 @@
                       href: e-commerce-extensibility/data-action-cache.md
                     - name: Datenaktivitäten mit Pseudodaten testen
                       href: e-commerce-extensibility/test-data-action-mocks.md
-                    - name: Seitenauslastungs-Datenaktivitäten
+                    - name: Datenaktivitäten seitenweise laden
                       href: e-commerce-extensibility/page-load-data-action.md
                     - name: Ereignisbasierte Datenaktivitäten
                       href: e-commerce-extensibility/event-based-data-actions.md
                     - name: Kerndatenaktivitäten
                       href: e-commerce-extensibility/core-data-actions.md
-                    - name: Retail Server-APIs aufrufen
+                    - name: APIs von Commerce Scale Unit aufrufen
                       href: e-commerce-extensibility/call-retail-server-apis.md
-                    - name: Retail Server-Erweiterungs-APIs aufrufen
+                    - name: APIs zur Erweiterung von Retail Server aufrufen
                       href: e-commerce-extensibility/call-retail-extension-api.md
-                - name: Weitere Themen zu Datenaktivitäten
+                - name: Artikel zu erweiterten Datenaktivitäten
                   items:
                     - name: Datenaktivitäten verketten
                       href: e-commerce-extensibility/chain-data-actions.md
@@ -2514,8 +2516,6 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Buildpipeline für das unabhängige Verpackungs-SDK einrichten
                   href: dev-itpro/build-pipeline.md
-                - name: Buildsysteme für Commerce und Finance and Operations zusammenführen
-                  href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Retail SDK von Visual Studio 2015 nach Visual Studio 2017 migrieren
                   href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: "Beispiele für Erweiterbarkeit des Retail\_SDK"
@@ -2628,8 +2628,6 @@
                               href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: "Erweiterbarkeit von Hardware\_Station"
               items:
-                - name: "Hardware\_Station und Erweiterbarkeit"
-                  href: dev-itpro/hardware-station-extensibility.md
                 - name: POS mit einem neuen Hardwaregerät integrieren
                   href: dev-itpro/hardware-device-extension.md
             - name: Erweiterbarkeit von Retail Server

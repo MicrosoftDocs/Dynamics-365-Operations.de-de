@@ -1004,10 +1004,14 @@
                   href: lifecycle-services/cloud-operations-servicing.md
                 - name: Anfragen an das Service-Technikteam von Dynamics senden
                   href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-                - name: Geplantes Wartungsfenster – Häufig gestellte Fragen
+                - name: Häufig gestellte Fragen zu geplanten Wartungsfenstern
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Überwachung und Diagnose
-              href: lifecycle-services/monitoring-diagnostics.md
+              items:
+                - name: Tools zur Überwachung und Diagnose
+                  href: lifecycle-services/monitoring-diagnostics.md
+                - name: Protokolle mit Rohinformationen mittels Azure Data Explorer abfragen
+                  href: lifecycle-services/azure-data-explorer.md
             - name: Umgebungsdienste neu starten
               href: lifecycle-services/restart-environment-services.md
             - name: Produktionsausfall melden

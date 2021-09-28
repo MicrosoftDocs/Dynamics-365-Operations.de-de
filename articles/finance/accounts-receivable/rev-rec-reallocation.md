@@ -2,7 +2,7 @@
 title: Neuzuweisung der Umsatzerkennung
 description: In diesem Artikel geht es darum, wie Unternehmen mit der Neuzuweisung die Umsatzerlöspreise neu berechnen können, wenn sich die Vertragsbedingungen für einen Verkauf ändern. Im Artikel enthaltene Links verweisen auf andere Artikel, in denen erläutert wird, wie Umsatzerlöse in verschiedenen Fällen erkennt werden.
 author: kweekley
-ms.date: 12/21/2020
+ms.date: 09/09/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 50ae395c370947e348714ce5685123328849966f3a67903e9ddf8c27dee42f5f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53304842bdbe7dadb435ab3a0381f3835c2c443a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745036"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487017"
 ---
 # <a name="revenue-recognition-reallocation"></a>Neuzuweisung der Umsatzerkennung
 
@@ -35,10 +35,22 @@ Ihre Organisation muss selbst entscheiden, ob eine Neuzuweisung erforderlich ist
 Bei Neuzuweisungen gibt es einige wichtige Einschränkungen:
 
 - Eine Neuzuweisung kann nur einmal ausgeführt werden. Daher darf sie erst erfolgen, nachdem alle Änderungen vorgenommen wurden.
+
+    - Diese Einschränkung wird ab Version 10.0.17 aufgehoben.
+
 - Eine Neuzuweisung darf nicht bei Projektaufträgen erfolgen.
+
+    - Diese Einschränkung wird ab Version 10.0.17 aufgehoben.
+
 - Sind mehrere Aufträge betroffen, müssen sich diese auf dasselbe Kundenkonto beziehen.
 - Alle Aufträge, die neu zugewiesen werden, müssen dieselbe Transaktionswährung haben.
 - Einmal erfolgt, kann eine Neuzuweisung weder storniert noch rückgängig gemacht werden.
+
+    - Diese Einschränkung wird ab Version 10.0.17 aufgehoben.
+
+- Eine Neuzuweisung kann nur bei Debitoren- oder Projektaufträgen erfolgen. Sie ist nicht möglich bei einer Kombination aus Debitoren- und Projektaufträgen.
+
+    - Diese Einschränkung wird ab Version 10.0.17 aufgehoben.
 
 ## <a name="set-up-reallocation"></a>Neuzuweisung einrichten
 
@@ -78,7 +90,7 @@ Um eine Neuzuweisung auszuführen, wählen Sie in einem beliebigen Auftrag, bei 
 
 [![Seite „Preis mit neuen Auftragspositionen erneut zuteilen“.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-Das obere Raster auf der Seite **Preis mit neuen Auftragspositionen erneut zuteilen** heißt **Aufträge**. In ihm sind die Aufträge des Kunden aufgeführt. Wählen Sie die Aufträge aus, bei denen eine Neuzuweisung erforderlich ist. Projektaufträge können nicht ausgewählt werden, weil bei diesen keine Neuzuweisung möglich ist. Auch Aufträge, die bereits eine Neuzuweisungs-ID haben, können nicht ausgewählt werden, weil bei einem Auftrag immer nur eine Neuzuweisung möglich ist. Hat ein Auftrag eine Neuzuweisungs-ID, wurde er bereits von einem anderen Benutzer zwecks einer Neuzuweisung markiert.
+Das obere Raster auf der Seite **Preis mit neuen Auftragspositionen erneut zuteilen** heißt **Aufträge**. In ihm sind die Aufträge des Kunden aufgeführt. Wählen Sie die Aufträge aus, bei denen eine Neuzuweisung erforderlich ist. Hat ein Auftrag eine Neuzuweisungs-ID, wurde er bereits von einem anderen Benutzer zwecks einer Neuzuweisung markiert. Wurden zuvor ein oder mehrere Debitorenaufträge neu zugewiesen und müssen bei einer anderen Neuzuweisung berücksichtigt werden, muss die Neuzuweisung dieser Debitorenaufträge zunächst rückgängig gemacht werden. Anschließend kann sie bei einer neuen Neuzuweisung berücksichtigt werden. Ausführliche Informationen finden Sie weiter unten unter [Neuzuweisung rückgängig machen](#undo-a-reallocation) und [Mehrfach neu zuweisen](#reallocate-multiple-times).
 
 Das untere Raster auf der Seite heißt **Positionen**. Nachdem Sie im Raster **Aufträge** einen oder mehrere Aufträge ausgewählt haben, werden im Raster **Positionen** die Auftragspositionen aufgeführt. Wählen Sie die Auftragspositionen aus, bei denen eine Neuzuweisung erforderlich ist. Wird nur eine Auftragsposition ausgewählt, müssen die Positionen aus demselben Auftrag neu zugewiesen werden. Dieser Fall kann auftreten, wenn eine der Auftragspositionen zuvor in Rechnung gestellt wurde und dann eine neue Position ergänzt oder eine vorhandene Position gelöscht oder storniert wurde. Gelöschte Positionen werden nicht im Raster angezeigt. Insofern können sie auch nicht ausgewählt werden. Dennoch werden sie bei der Neuzuweisung berücksichtigt.
 
@@ -104,14 +116,33 @@ Nach Auswahl der erforderlichen Auftragspositionen, verwenden Sie die Schaltflä
 
 - **Daten für ausgewählten Kunden zurücksetzen**: Wurde die Neuzuweisung begonnen, aber nicht abgeschlossen, werden die Daten aus der Neuzuweisungstabelle nur mit Bezug zum ausgewählten Kunden gelöscht. Wenn Sie beispielsweise mehrere Auftragspositionen zwecks einer Neuzuweisung markieren und die Seite ohne Auswahl von **Verarbeiten** geöffnet lassen, läuft das Zeitlimit der Seite ab. In diesem Fall bleiben die Auftragspositionen markiert, und ein anderer Benutzer kann sie nicht verwenden, um die Neuzuweisung abzuschließen. Die Seite ist beim Öffnen möglicherweise sogar leer. In diesem Fall können Sie mit der Schaltfläche **Daten für ausgewählten Kunden zurücksetzen** unverarbeitete Aufträge löschen, damit ein anderer Benutzer die Neuzuweisung beenden kann.
 
+## <a name="undo-a-reallocation"></a>Neuzuweisung rückgängig machen
+
+Eine Neuzuweisung wird rückgängig gemacht, indem eine weitere Neuzuweisung durchgeführt wird. Die Neuzuweisung erfolgt erneut, und der Benutzer wählt verschiedene Kundenauftragspositionen aus, die bei der zweiten Neuzuweisung berücksichtigt werden sollen.
+
+Erfolgte eine Neuzuweisung über zwei oder mehr separate Debitorenaufträge, kann sie aus jedem Debitorenauftrag, der in der Neuzuordnung enthalten ist, durch Auswahl von **Preis mit neuen Auftragspositionen erneut zuteilen** rückgängig gemacht werden. Die Neuzuweisung kann nicht mit **Umsatzerkennung \> Periodische Aufgaben \> Preis mit neuen Auftragspositionen erneut zuteilen** erfolgen, weil auf der damit geöffneten Seite nur Aufträge ohne Neuzuweisungs-ID enthalten sind. Die Neuzuweisungs-ID wird erst nach Neuzuweisung des Dokuments zugewiesen.
+
+Heben Sie auf der Seite **Preis mit neuen Auftragszeilen erneut zuteilen** die Markierung sämtlicher Aufträge auf, die aus der Vereinbarung ausgeschlossen werden sollen. Verarbeiten Sie die Neuzuweisung mit den Schaltflächen aus dem Aktivitätsbereich, wie z. B. **Neuzuweisung aktualisieren** und **Verarbeiten**. Wird die Auswahl sämtlicher Debitorenaufträge mit Ausnahme des aktiven Debitorenauftrags aufgehoben, wird die Neuzuweisungs-ID nach Verarbeitung der Änderung entfernt.
+
+Wurde eine Neuzuweisung durch Ergänzung einer neuen Position in einem komplett oder teilweise berechneten Auftrag vorgenommen, lässt sich die Neuzuweisung nur rückgängig machen, indem diese Position aus dem Auftrag gelöscht und die Neuzuweisung anschließend erneut durchgeführt wird. Die Position muss gelöscht werden, weil davon ausgegangen wird, dass alle Positionen in einem Auftrag Teil desselben Vertrags sind. Solange Sie sich auf der Seite **Preis mit neuen Auftragspositionen erneut zuteilen** befinden, kann die Auswahl von Auftragspositionen nicht aufgehoben werden.
+
+## <a name="reallocate-multiple-times"></a>Mehrfach neu zuweisen
+
+Wurde ein Vertrag mehrfach geändert, können für ein- und denselben Auftrag mehrere Neuzuweisungen erfolgen. Bei jeder Neuzuweisung wird die Vergabe einer Neuzuweisungs-ID an den Auftrag oder die Auftragsgruppe ausgelöst, um die Änderungen zusammenzufassen. Im Falle mehrerer Neuzuweisungen erhält jede weitere Neuzuweisung die gleiche Neuzuweisungs-ID wie die erste Neuzuweisung.
+
+Beispiel: Auftrag 00045 hat mehrere Positionen. Nachdem der Auftrag vollständig in Rechnung gestellt wurde, wird er mit einer neuen Auftragsposition ergänzt. Die Neuzuweisung erfolgt dann durch Öffnen der Seite **Preis mit neuen Auftragspositionen erneut zuteilen** – entweder direkt aus Kundenauftrag 00045 oder durch Auswahl von **Umsatzerkennung \> Periodische Aufgaben \> Preis mit neuen Auftragspositionen erneut zuteilen**. Der Auftrag erhält die Neuzuweisungs-ID **Reall000001**.
+
+Zum selben Vertrag wird ein zweiter Auftrag mit der Nummer 00052 erstellt. Die Neuzuweisung kann wiederum durch Öffnen der Seite **Preis mit neuen Auftragspositionen erneut zuteilen** aus Auftrag 00045 erfolgen, nicht aber aus Auftrag 00052. Wird die Seite **Preis mit neuen Auftragspositionen erneut zuteilen** aus Auftrag 00052 geöffnet, wird Auftrag 00045 nicht angezeigt, weil für ihn eine Neuzuweisungs-ID vergeben wurde. Auf der Seite werden nur Aufträge ohne Neuzuweisungs-ID angezeigt.
+
+Zur Durchführung der zweiten Neuzuweisung gibt es zwei Möglichkeiten: Die Neuzuweisung von Auftrag 00045 kann rückgängig gemacht werden. In diesem Fall wird die Neuzuweisungs-ID gelöscht, und Sie können die Neuzuweisung dann entweder aus Auftrag 00045 oder 00052 durchführen. Alternativ können Sie die Seite **Preis mit neuen Auftragspositionen erneut zuteilen** aus Auftrag 00045 öffnen und den zweiten Auftrag hinzufügen. Nach erfolgter Neuzuweisung erhalten sowohl Auftrag 00045 als auch 00052 die Neuzuweisungs-ID **Reall000001**.
+
 ## <a name="scenarios-for-reallocation"></a>Anwendungsfälle von Neuzuweisungen
 
-Im folgenden werden diverse Fälle von Umsatzerkennung aufgezeigt:
+Im Folgenden werden diverse Fälle von Umsatzerkennung erläutert:
 
 - [Neuzuweisung der Umsatzerkennung – Szenario 1](rev-rec-reallocation-scenario-1.md) – Es werden zwei Aufträge eingegeben, die aber nur bestätigt werden. Liegen mehr als zwei Aufträge mit dem Status „Bestätigt“ vor, ist das Ergebnis ähnlich.
 - [Neuzuweisung der Umsatzerkennung – Szenario 2](rev-rec-reallocation-scenario-2.md) –Zwei Aufträge werden eingegeben. Nachdem der erste Auftrag in Rechnung gestellt wurde, ergänzt der Kunde den Vertrag mit einem Artikel.
 - [Neuzuweisung der Umsatzerkennung – Szenario 3](rev-rec-reallocation-scenario-3.md) – Einem bestehenden und in Rechnung gestellten Auftrag wird eine neue Position hinzugefügt.
 - [Neuzuweisung der Umsatzerkennung – Szenario 4](rev-rec-reallocation-scenario-4.md) – Aus einem bestehenden und teilweise in Rechnung gestellten Auftrag wird eine Position gelöscht.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

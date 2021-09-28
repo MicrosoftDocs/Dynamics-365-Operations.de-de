@@ -80,8 +80,6 @@
                       href: get-started/whats-new-changed-10-0-21.md
                     - name: "Finance 10.0.20 (August\_2021)"
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: "Finance\_10.0.19 (Juni\_2021)"
-                      href: get-started/whats-new-changed-10-0-19.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -448,11 +446,13 @@
                   href: accounts-receivable/set-up-collections.md
                 - name: Inkassoinformationen überprüfen
                   href: accounts-receivable/tasks/review-collections-information.md
-                - name: Automatisierung des Inkasso-Prozesses
+                - name: Automatisierung des Inkassoverfahrens
                   href: accounts-receivable/collections-process-automate.md
+                - name: Parameter zur Automatisierung des Inkassoverfahrens konfigurieren
+                  href: accounts-receivable/config-paramtrs-collections-proc-automate.md
                 - name: Kreditverwaltungseinstellungen
                   href: accounts-receivable/cm-credit-mgmt-setup.md
-                - name: Informationen der Kreditverwaltungseinstellungen
+                - name: Informationen zu Kreditverwaltungseinstellungen
                   href: accounts-receivable/cm-setup-information.md
                 - name: Kreditverwaltungsinformationen für einen Debitor hinzufügen
                   href: accounts-receivable/cm-add-credit-mgmt-information-customer.md
@@ -1635,7 +1635,9 @@
                 - name: MwSt.-Abrechnung
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Bericht zu grenzüberschreitenden Dienstleistungen
-                  href: localizations/emea-aut-cross-border-services-report.md
+                  href: localizations/emea-aut-vat-statement-details.md
+                - name: Intrastat-Bericht
+                  href: localizations/emea-aut-intrastat.md
                 - name: Einkaufsaufgaben
                   href: localizations/emea-aut-purchase-duties.md
             - name: Bahrain
@@ -1664,13 +1666,15 @@
                   href: localizations/emea-bel-reconciliation-reports.md
                 - name: Erfassungsberichte
                   href: localizations/emea-bel-journal-reports.md
-                - name: Berichterstellung zu Zahlungssaldo einrichten
+                - name: Zahlungssaldoberichte einrichten
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: PRODCOM einrichten und verwalten
                   href: localizations/emea-bel-prodcom-report.md
+                - name: Jährliche MwSt.-Auflistung der Inlandsverkäufe
+                  href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
             - name: Brasilien
               items:
-                - name: Brasilien – Übersicht
+                - name: Übersicht zu Brasilien
                   href: localizations/brazil.md
                 - name: Lokalisierungsumfang
                   href: localizations/latam-bra-scope.md
@@ -2974,6 +2978,8 @@
                   href: localizations/tasks/mx-00010-e-invoicing-cfdi.md
                 - name: Elektronische Rechnungen
                   href: localizations/latam-mex-CFDI-electronic-invoices.md
+                - name: Ergänzung zum Frachtbrief (Version 1.0)
+                  href: localizations/latam-mex-carta-de-porte.md
                 - name: Elektronische Sachkonto-Kostenrechnungsauszüge
                   href: localizations/latam-mex-electronic-ledger-accounting-statements.md
                 - name: Steuerregistrierungskennungen für mexikanische juristische Personen eingeben
@@ -2994,12 +3000,6 @@
                   href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: Lieferantenregistrierungskennungen
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
-            - name: Oman
-              items:
-                - name: Oman – Übersicht
-                  href: localizations/oman.md
-                - name: MwSt.-Erklärung für Oman (OM-00003)
-                  href: localizations/emea-oma-vat-declaration.md
             - name: Niederlande
               items:
                 - name: Niederlande – Übersicht
@@ -3016,9 +3016,13 @@
                   href: localizations/emea-nl-vat-declaration-netherlands.md
                 - name: Zusammenfassende Meldung
                   href: localizations/emea-nl-EU-sales-list.md
+            - name: Neuseeland
+              items:
+                - name: GST-Erklärungsformular GST101A für Neuseeland (NZ-00003)
+                  href: localizations/apac-nzl-gst-declaration.md
             - name: Norwegen
               items:
-                - name: Norwegen – Übersicht
+                - name: Übersicht zu Norwegen
                   href: localizations/norway.md
                 - name: Zahlungsformate für Debitoren und Kreditoren
                   href: localizations/tasks/no-00003-customer-vendor-payment-formats.md
@@ -3032,13 +3036,19 @@
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Elektronische Rechnungen für Kunden in Norwegen
                   href: localizations/emea-nor-e-invoices.md
+            - name: Oman
+              items:
+                - name: Übersicht zu Oman
+                  href: localizations/oman.md
+                - name: MwSt.-Erklärung für Oman (OM-00003)
+                  href: localizations/emea-oma-vat-declaration.md
             - name: Polen
               items:
-                - name: Polen – Übersicht
+                - name: Übersicht zu Polen
                   href: localizations/poland.md
                 - name: Stornobuchung aktivieren
                   href: localizations/emea-pol-red-storno.md
-                - name: Berechnen von Positionsrabatten anhand des Artikelpreises
+                - name: Positionsrabatte anhand des Artikelpreises berechnen
                   href: localizations/emea-pol-line-discount-calculation-from-unit-price.md
                 - name: Korrekturhinweise
                   href: localizations/emea-pol-correction-notes.md
@@ -3450,25 +3460,25 @@
                           href: localizations/emea-gbr-mtd-vat-integration.md
                         - name: Die Umgebung auf Interoperabilität mit dem MTD-MwSt.-Webservice von HMRC vorbereiten
                           href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: Die Finance-Umgebung für Interoperabilität mit dem MTD-MwSt.-Webservice von HMRC autorisieren
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: Die Interoperabilität mit der MTD-MwSt.-Sandbox testen
+                        - name: Checkliste zur Einrichtung elektronischer Nachrichten für MTD-MwSt.
+                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+                        - name: Interoperabilität mit der MTD-MwSt.-Sandbox testen
                           href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                        - name: Finance-Umgebung zwecks Interoperabilität mit dem MTD-MwSt.-Webservice von HMRC autorisieren
+                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
                         - name: MwSt.-Erklärung an den MTD-Webservice von HMRC senden
                           href: localizations/emea-gbr-mtd-vat-integration-submission.md
-                        - name: Checkliste für die Einrichtung elektronischer Nachrichten für MTD-MwSt.
-                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: MwSt.-Erklärung in Papierform (MwSt.-Bericht „100“)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
-                        - name: Details zur MwSt.-Einrichtung für MwSt.-Erklärungen im Vereinigten Königreich
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
                         - name: Informationen zu MwSt.-Zahlungen und -Verbindlichkeiten von HMRC abrufen
                           href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                        - name: Informationen zur MwSt.-Einrichtung für MwSt.-Erklärungen im Vereinigten Königreich
+                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: MwSt.-Erklärung in Papierform (MwSt.-Bericht „100“)
+                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Statistiken zu Bericht über Zahlungsmethoden
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
-            - name: Vereinigte Staaten
+            - name: USA
               items:
-                - name: Vereinigte Staaten – Übersicht
+                - name: Übersicht über die USA
                   href: localizations/united-states.md
                 - name: Jahresendsteuererklärung (US 1099) für die Vereinigten Staaten
                   href: localizations/noam-usa-year-end-1099-reporting.md
@@ -4119,9 +4129,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                         - name: Formate zur dynamischen Ergänzung von Excel-Berichten mit Spalten ausführen
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurationen zum Generieren von Berichten im Word-Format entwerfen
+                    - name: EB-Format zur Paginierung erstellter Dokumente in Excel entwerfen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurationen zur Anfertigung von Berichten im Word-Format entwerfen
                   items:
-                    - name: ER-Konfigurationen zum Generieren von Berichten im Word-Format entwerfen
+                    - name: EB-Konfigurationen zur Anfertigung von Berichten im Word-Format entwerfen
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
                     - name: ER-Konfigurationen mit Excel-Vorlagen erneut zur Erstellung von Berichten im Word-Format verwenden
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json

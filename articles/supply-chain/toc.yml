@@ -80,8 +80,6 @@
                       href: get-started/whats-new-scm-10-0-21.md
                     - name: "Supply Chain Management\_10.0.20 (August\_2021)"
                       href: get-started/whats-new-scm-10-0-20.md
-                    - name: "Supply Chain Management\_10.0.19 (Juni 2021)"
-                      href: get-started/whats-new-scm-10-0-19.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -1189,9 +1187,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Formate zur dynamischen Ergänzung von Excel-Berichten mit Spalten ausführen
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurationen zum Generieren von Berichten im Word-Format entwerfen
+                - name: Konfigurationen zur Anfertigung von Berichten im Word-Format entwerfen
                   items:
-                    - name: ER-Konfigurationen zum Generieren von Berichten im Word-Format entwerfen
+                    - name: EB-Konfigurationen zur Anfertigung von Berichten im Word-Format entwerfen
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/supply-chain/toc.json
                     - name: ER-Konfigurationen mit Excel-Vorlagen erneut zur Erstellung von Berichten im Word-Format verwenden
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
@@ -1669,6 +1667,8 @@
                   href: master-planning/planning-optimization/production-planning.md
                 - name: Zeitplanung mit unbegrenzter Kapazität
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
+                - name: Zeitplanung mit Ressourcenauswahl anhand der Fähigkeit
+                  href: master-planning/planning-optimization/capability-based-scheduling.md
                 - name: Bestandsmarkierung mit Planungsoptimierung
                   href: master-planning/planning-optimization/marking.md
                 - name: Intercompany-Planung
@@ -2013,10 +2013,12 @@
                   href: procurement/purchase-requisitions-workflow.md
             - name: Angebotsanforderungen
               items:
-                - name: Angebotsanforderungen – Übersicht
+                - name: Überblick über Angebotsanforderungen
                   href: procurement/request-quotations.md
                 - name: Eine Angebotsanforderung erstellen
                   href: procurement/tasks/create-request-quotation.md
+                - name: Versiegeltes Angebot bei Angebotsanforderungen
+                  href: procurement/sealed-bidding.md
                 - name: 'Eine Anforderung erstellen, die eine Angebotsanforderung verwendet'
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Eine Bewertungsmethode für Angebotsanforderungen erstellen
