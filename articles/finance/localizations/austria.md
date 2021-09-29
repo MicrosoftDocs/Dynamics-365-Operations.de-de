@@ -13,12 +13,12 @@ ms.search.region: Austria
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 994397c735d85dfa2daab7a1138c597da00992d6ff5b184f45f487a6a9f4d50c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c40c76a85ac04532aa3431f69603c6a2690ae569
+ms.sourcegitcommit: 59d507c0dd6f0bec3ab72034e12d582133ab2a52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762051"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "7496640"
 ---
 # <a name="austria-overview"></a>Österreich – Übersicht
 
@@ -56,6 +56,7 @@ Weitere Informationen zu den Einstellungen des MwSt. -Auszugs finden Sie unter [
 | Bericht                     | Bericht abrufen | Weitere Informationen                 |
 |----------------------------|--------------------------|----------------------------------------|
 |Bericht "Grenzüberschreitende Dienstleistungen"|**Hauptbuch** > **Berichte** > **Extern** > **Grenzüberschreitende Dienstleistungen**|Mit diesem Bericht wird eine Zusammenfassung der eingehenden und ausgehenden grenzübergreifenden Dienstleistungen, der Länder, die Anbieter oder Empfänger grenzübergreifender Dienstleistungen sind, sowie Nettobeträge, die für die Dienstleistungen bezahlt werden, gedruckt. Dieser Bericht wird in der Regel von Buchhaltungsleitern, Buchhaltern und Vertriebsleitern verwendet, um sich über den Status von Verkaufstransaktionen zu erkundigen. Weitere Informationen finden Sie unter [Bericht zu grenzüberschreitenden Dienstleistungen](emea-aut-cross-border-services-report.md).|
+|Intrastat-Bericht|**Steuer** > **Meldungen** > **Außenhandel** > **Intrastat**|Sie können die Intrastat-Seite verwenden, um Informationen zum Handel zwischen EU-Ländern/Regionen zu generieren und zu melden. Die österreichische Intrastat-Meldung enthält Informationen über die Inzahlungnahme von Waren zur Meldung. Weitere Informationen finden Sie unter [Österreichisches Intrastat](emea-aut-intrastat.md).|
 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

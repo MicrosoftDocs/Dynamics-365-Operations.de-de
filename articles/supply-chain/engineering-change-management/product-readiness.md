@@ -12,22 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
-ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
+ms.openlocfilehash: 12707774c780a0f805deed532af27c3705ea1f55
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7415320"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500597"
 ---
 # <a name="product-readiness"></a>Produktbereitschaft
 
 [!include [banner](../includes/banner.md)]
 
-Sie können Bereitschaftsprüfungen verwenden, um sicherzustellen, dass alle erforderlichen Stammdaten für ein Produkt angegeben wurden, bevor es in Transaktionen verwendet wird. Wenn Bereitschaftsprüfungen verwendet werden, wird ein Benutzer oder ein Team für die Validierung bestimmter vordefinierter produktbezogener Daten verantwortlich gemacht. Wenn es eine offene Bereitschaftsprüfung für ein Produkt gibt, kann das Produkt nicht in Transaktionen verwendet werden.
+Sie können Bereitschaftsprüfungen verwenden, um sicherzustellen, dass alle erforderlichen Stammdaten für ein Produkt angegeben wurden, bevor es in Transaktionen verwendet wird. Wenn Bereitschaftsprüfungen verwendet werden, wird ein Benutzer oder ein Team für die Validierung bestimmter vordefinierter produktbezogener Daten verantwortlich gemacht.
 
-Das Kontrollkästchen **Aktiv** für ein Engineering-Produkt, eine Variante oder eine Version ist erst verfügbar, nachdem alle erforderlichen Daten eingegeben und überprüft wurden und alle Bereitschaftsprüfungen abgearbeitet wurden. Zu diesem Zeitpunkt kann das Produkt, die Version oder die Variante in Transaktionen verwendet werden. Sie können Bereitschaftsprüfungen für neue Produkte, neue Varianten und neue Entwicklungsversionen erstellen.
+Sie können das Kontrollkästchen **Aktiv** für ein technisches Produkt, eine Variante oder eine Version aktivieren, nachdem alle erforderlichen Daten eingegeben und überprüft wurden und alle Bereitschaftsprüfungen verarbeitet wurden. Wenn Sie versuchen, das Kontrollkästchen **Aktiv** zu aktivieren, wenn eine oder mehrere Prüfungen für das Produkt, die Version oder die Variante nicht durchgeführt wurden, erhalten Sie eine Warnmeldung, dass noch nicht alle Prüfungen abgeschlossen sind.
 
-Sie können Bereitschaftsprüfungen auch auf Standardprodukte (nicht technische Produkte) anwenden. Weitere Informationen finden Sie im Abschnitt [Bereitschaftsprüfungen bei Standardprodukten](#standard-products) weiter unten in diesem Thema.
+Sie können Bereitschaftsprüfungen für neue technische Produkte, Varianten und Versionen erstellen. Sie können Bereitschaftsprüfungen auch auf Standardprodukte (nicht technisch) anwenden (siehe auch [Bereitschaftsprüfungen von Standardprodukten](#standard-products)). 
+
+Sie können Standardprodukte in Transaktionen verwenden, auch wenn noch nicht alle Bereitschaftsprüfungen abgeschlossen sind. Wenn Sie die Verwendung eines Produkts in Transaktionen blockieren müssen, verwenden Sie seinen Lebenszyklusstatus. Sie können einen Lebenszyklusstatus zuweisen, der die Verwendung eines Produkts in Transaktionen blockiert, und dann, nachdem alle Bereitschaftsprüfungen abgeschlossen sind, einen neuen Lebenszyklusstatus zuweisen, der die erforderlichen Transaktionen zulässt.
 
 ## <a name="types-of-readiness-checks"></a>Arten von Bereitschaftsprüfungen
 

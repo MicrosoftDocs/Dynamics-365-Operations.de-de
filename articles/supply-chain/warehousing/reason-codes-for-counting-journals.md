@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 95f7ceb39d2afef1871f395ed562632865022b39
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345265"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500589"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Ursachencodes für Bestandszählungen anzeigen
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Ursachencodes lassen Sie die Ergebnisse einer Inventur und sämtliche Abweichungen analysieren, die während dieses Vorgangs auftreten. Sie können den Grund für das Treffen der Anzahl, wie eine angebrochenes Palette oder einen vordefinierten Regulierung angeben, die auf Grundlage der Bestandsbeispiele liegt. Gleichzeitig können Sie die Regulierungsfunktion verwenden, um den Wert der Anpassungen am verfügbaren Lagerbestand basierend auf dem Grund für jede Bestandsregulierung auf das entsprechende Gegenkonto zu buchen.
 
@@ -42,8 +41,6 @@ Bevor Sie das System so einrichten, wird empfohlen, dass Sie eine Strategie für
 - Sollten die Ursachencodes die Buchung auf finanziellen Gegenkonten steuern?
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Ursachencodefunktionen in Ihrem System aktivieren
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Wenn in Ihrem System nicht alle in diesem Thema beschriebenen Funktionen angezeigt werden, müssen Sie wahrscheinlich die Funktion *Regulierungen des verfügbaren Lagerbestands mit konfigurierbaren Ursachencodes buchen, die mit Ausgleichskonten verbunden sind* aktivieren. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie gegebenenfalls aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
 

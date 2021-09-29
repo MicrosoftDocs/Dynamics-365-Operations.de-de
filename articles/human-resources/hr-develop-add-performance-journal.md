@@ -1,8 +1,8 @@
 ---
-title: Leistungserfassung hinzufügen und Lob an eine Person senden
-description: Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele erreichen oder wie Ihre Leistung für einen bestimmten Zeitraum aussieht.
-author: andreabichsel
-ms.date: 08/29/2018
+title: Hinzufügen von Leistungserfassung und Senden von Lob an eine Person
+description: Die Leistungserfassung enthält Informationen dazu, wie Mitarbeiter ihre Ziele erreicht bzw. welche Leistung sie in einem bestimmten Zeitraum erbracht haben.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,48 +10,47 @@ ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPrai
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b147ee6cd2b674d6d251230420929dff948c6203ec015833396ab1ec468c0573
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fe20b5a5e30ff91f787cc6ac23781adc8cc35119
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732272"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483975"
 ---
-# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Leistungserfassung hinzufügen und Lob an eine Person senden
+# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Hinzufügen von Leistungserfassung und Senden von Lob an eine Person
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele erreichen oder wie Ihre Leistung für einen bestimmten Zeitraum aussieht. Sie können außerdem Aktivitäten von Mitarbeitern aus der Erfassung loben. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
-1. Wechseln Sie zu Alle Arbeitsbereiche > Mitarbeiter-Self-Service.
-2. Klicken Sie auf "Leistungserfassung".
-3. Klicken Sie auf "Neu".
-4. Geben Sie im Feld "Titel" einen Wert ein.
-5. Geben Sie im Feld "Beschreibung" einen Wert ein.
+1. Navigieren Sie zu **Alle Arbeitsbereiche** > **Mitarbeiter-Self-Service**.
+2. Klicken Sie auf **Leistungserfassung**.
+3. Klicken Sie auf **Neu**.
+4. Geben Sie im Feld **Titel** einen Wert ein.
+5. Geben Sie im Feld **Beschreibung** einen Wert ein.
     * Das Leistungserfassungsdatum ist das Datum, an dem die Erfassung erstellt wurde.  
-    * Die Quelle zeigt an, woher die Leistungserfassung kam. Wenn Sie eine erstellen, kommt sie aus "Meine Erfassung". Wenn Ihr Manager eine erstellt, Kommt diese aus der Managererfassung.  
-    * Sie können dieser Erfassung mit Ihrem Manager teilen oder sie nur für sich anzeigen.  
-6. Geben Sie im Feld "Startdatum" ein Datum ein.
-7. Geben Sie im Feld "Abschlussdatum" ein Datum ein.
-8. Wählen Sie im Feld "Entwicklungsplan" "Ja" aus.
-9. Geben Sie im Feld "Schlüsselwörter" einen Wert ein.
-10. Klicken Sie auf "Externen Link hinzufügen".
-11. Geben Sie im Feld "Beschreibung" die Bezeichnung "Envision" ein.
-12. Geben Sie im Feld „Internetadresse” „https://www.microsoft.com/en/envision/default” ein.
-13. Klicken Sie auf die Bezeichnung mit dem Namen "Leistungserfassung" unter der "Speichern"-Schaltfläche, um zum Raster zurückzukehren.
-    * Sie können die ausgewählte Erfassung oder Erfassungen einem Ziel hinzufügen, um es anzuzeigen, wenn Sie das Ziel öffnen. Ein Link wird im Inforegistername Link hinzugefügt. Wenn Sie eine Erfassung einem Ziel hinzufügen und dann das Ziel einer Überprüfung hinzufügen, wird die Erfassung automatisch bei der Überprüfung angezeigt.  
-    * Sie können die ausgewählte Erfassung oder Erfassungen einer Überprüfung hinzufügen, um sie anzuzeigen, wenn Sie die Überprüfung öffnen.    Ein Link wird in dem Links-Inforegister hinzugefügt.  
-14. Klicken Sie auf "Schnell hinzufügen".
-15. Geben Sie im Feld "Titel" einen Wert ein.
-16. Geben Sie im Feld "Beschreibung" einen Wert ein.
-17. Klicken Sie auf Speichern.
-18. Kicken Sie auf "Lob versenden".
+    * Die Quelle zeigt an, woher die Leistungserfassung kam. Wenn Sie eine erstellen, kommt sie aus "Meine Erfassung". Wenn Ihr Manager eine erstellt, Kommt diese aus der Managererfassung.      * Sie können diese Erfassung mit Ihrem Manager teilen oder sie nur für sich anzeigen.  
+6. Geben Sie im Feld **Startdatum** ein Datum ein.
+7. Geben Sie im Feld **Abschlussdatum** ein Datum ein.
+8. Wählen Sie im Feld **Entwicklungsplan** **Ja** aus.
+9. Geben Sie im Feld **Schlüsselwörter** einen Wert ein.
+10. Klicken Sie auf **Externen Link hinzufügen**.
+11. Geben Sie im Feld **Beschreibung** die Bezeichnung „Vorstellen“ ein.
+12. Geben Sie im Feld **Internetadresse** den Link „https://www.microsoft.com/en/envision/default“ ein.
+13. Klicken Sie auf die Bezeichnung mit dem Namen **Leistungserfassung** unter der Schaltfläche **Speichern**, um zum Raster zurückzukehren.
+    * Sie können die ausgewählte Erfassung oder Erfassungen einem Ziel hinzufügen, um es anzuzeigen, wenn Sie das Ziel öffnen. Ein Link wird im Inforegister **Links** hinzugefügt. Wenn Sie eine Erfassung einem Ziel hinzufügen und dann das Ziel einer Überprüfung hinzufügen, wird die Erfassung automatisch bei der Überprüfung angezeigt.  
+    * Sie können die ausgewählte Erfassung oder Erfassungen einer Überprüfung hinzufügen, um sie anzuzeigen, wenn Sie die Überprüfung öffnen. Ein Link wird in dem Inforegister **Links** hinzugefügt.  
+14. Klicken Sie auf **Schnell hinzufügen**.
+15. Geben Sie im Feld **Titel** einen Wert ein.
+16. Geben Sie im Feld **Beschreibung** einen Wert ein.
+17. Klicken Sie auf **Speichern**.
+18. Kicken Sie auf **Lob versenden**.
 19. Wählen Sie eine Person aus der Liste der Mitarbeiter aus.
-20. Geben Sie im Textfeld "Danke für die Hilfe bei der Konferenz" ein.
-21. Klicken Sie auf Senden.
+20. Geben Sie im Feld **Beschreibung** die Option **Danke für die Hilfe bei der Konferenz!** ein.
+21. Klicken Sie auf **Senden**.
 
 
 

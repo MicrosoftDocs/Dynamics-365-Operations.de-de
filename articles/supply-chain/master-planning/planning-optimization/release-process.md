@@ -2,7 +2,7 @@
 title: Releaseprozess und Releaseverlauf der Planungsoptimierung
 description: Dieses Thema enthält Informationen zum Releaseprozess und zum Releaseverlauf für Planungsoptimierung.
 author: crytt
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d0f7a9f59d1034451c5c2dec1150c017bda27ad4
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 1bf08fc75aa2c05b2f2974ee46ec16609505f696
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474699"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506782"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Releaseprozess und Releaseverlauf der Planungsoptimierung
 
@@ -33,6 +33,7 @@ Da keine Benachrichtigungen angezeigt werden, wenn die Planungsoptimierung in Ih
 
 | Änderungen | Funktionsverwaltungsdetails | Erscheinungsdaten |
 |---|---|---|
+| <p>Hinzugefügte Unterstützung für Produktprogrammpläne, bei der die **Planungsmethode** auf *Grobterminierung* festgelegt ist.</p><p>Beachten Sie auf der Seite **Arbeitsplangruppen** die Einstellungen für die Kontrollkästchen **Aktivierung**, **Arbeitszeit** und **Kapazität** bei Zeilen mit einem **Arbeitsplan/Einzelvorgangstyp** von *Setup* oder *Prozess*. </p><p>Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen. | <p>Die Grobterminierung ist in der Funktionsverwaltung ab Version 10.0.20 verfügbar.</p><p>Funktionsname: *Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung*</p>  | 09. bis 17. September 2021 |
 | Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen. | Es ist keine Funktionsverwaltung erforderlich. | 25.-30. August 2021 |
 | <p>Das Feld **Vorlaufzeit** wurde zu geplanten Aufträgen hinzugefügt.</p><p>Allgemeine Leistungs-, Qualitäts- und Stabilitätsverbesserungen.</p> | Es ist keine Funktionsverwaltung erforderlich. | 12.-17. August 2021 |
 | <p>Anforderungen an den Ressourcentyp für die Terminierung mit unendlicher Kapazität hinzugefügt.</p><p>Verbesserte Ressourceneffizienz und Kalendereffizienz für unendliche Kapazitätsterminierung.</p><p>Weitere Informationen finden Sie unter [Zeitplanung mit unbegrenzter Kapazität](infinite-capacity-planning.md). | <p>Verfügbar in der Funktionsverwaltung ab Version 10.0.20.</p><p>Funktionsname: *Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung*</p> | 6.-12. Juli 2021 |

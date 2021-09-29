@@ -2,7 +2,7 @@
 title: Bonformate einrichten und entwerfen
 description: Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um zu steuern, wie Bons, Rechnungen und andere Dokumente gedruckt werden. Dynamics 365 Commerce umfasst einen Formularlayout-Designer, mit dem Sie einfach verschiedene Formularlayouts erstellen und ändern können.
 author: rubencdelgado
-ms.date: 06/20/2017
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7f70918e6fd274ac8e3476d6c309eac40744b0dd24a8b79f531d8627bb4a68e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2107670cb5dbac3b8f28c4e3caa357102932291
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715357"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500169"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Bonformate einrichten und entwerfen
 
@@ -46,7 +46,12 @@ Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um
 
 ## <a name="print-images"></a>Bilder drucken
 
-Der Belegdesigner enthält eine **Logo**-Variable, mit der Bilder angegeben werden können, die auf der Quittung gedruckt werden sollen. Bilder, die in Quittungen enthalten sind und die **Logo**-Variable nutzen, sollten ein monochromer Bitmap-Dateityp (.bmp) sein. Wenn im Belegdesigner ein BMP-Bild angegeben ist, das jedoch beim Senden an den Drucker nicht gedruckt wird, ist die Dateigröße möglicherweise zu groß oder die Pixelabmessungen auf dem Bild sind nicht mit dem Drucker kompatibel. Versuchen Sie in diesem Fall, die Auflösung der Bilddatei zu verringern.   
+Der Belegdesigner enthält eine **Logo**-Variable. Sie können diese Variable verwenden, um ein Bild anzugeben, das auf Belegen gedruckt werden soll. Bilder, die durch die **Logo**-Variable auf Belegen gedruckt werden, sollten ein monochromer Bitmap-Dateityp (.bmp) sein. Wenn im Belegdesigner ein Bitmap-Bild angegeben ist, aber beim Senden des Belegs an den Drucker nicht gedruckt wird, kann eines der folgenden Probleme die Ursache sein:
+
+- Die Dateigröße ist zu groß oder die Pixelabmessungen des Bildes sind nicht mit dem Drucker kompatibel. Versuchen Sie in diesem Fall, die Auflösung oder die Abmessungen der Bilddatei zu reduzieren.
+- Einige Object Linking and Embedding for Point of Sale (OPOS)-Druckertreiber implementieren die **PrintMemoryBitmap**-Methode, die Hardwarestationen zum Drucken von Logobildern verwenden. Versuchen Sie in diesem Fall, der Datei **HardwareStation.Extension.config** die folgende Markierung Ihrer dedizierten oder gemeinsam genutzten Hardwarestation hinzuzufügen:
+
+    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Entwerfen eines Bonformats
 

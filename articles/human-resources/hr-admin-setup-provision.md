@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441164"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488082"
 ---
 # <a name="provision-human-resources"></a>Human Resources bereitstellen
 
@@ -41,6 +41,8 @@ Bevor Sie mit der Bereitstellung einer neuen Produktionsumgebung beginnen, müss
 ## <a name="provision-a-human-resources-trial-environment"></a>Bereitstellen einer Human Resources-Testumgebung
 
 Bevor Sie Ihre erste Sandbox- oder Produktionsumgebung bereitstellen, möchten Sie möglicherweise eine [Human Resources Testumgebung](https://go.microsoft.com/fwlink/p/?LinkId=2115962) bereitstellen, um die Human Resources-Funktionalität zu validieren. Probeumgebung enthält fiktive Daten, die verwendet werden können, um das Programm in einem sicheren Verfahren zu untersuchen. Obwohl eine Probeumgebung dem Benutzer gehört, der sie angefordert hat, können andere Benutzer durch die Systemverwaltungserfahrung für Human Resources eingeladen werden. 
+
+Testumgebungen bieten die Möglichkeit, Personalwesenfunktionen für Personen zu bewerten, die noch keinen Zugriff auf eine Personalwesenumgebung haben. Wenn Sie eine Testumgebung bereitstellen und der authentifizierte Benutzer bereits Zugriff auf eine oder mehrere vorhandene Umgebungen des Personalwesens hat, wird der Benutzer an die vorhandene Umgebung oder Liste der Umgebungen umgeleitet.
 
 Test-Umgebungen sind nicht für die Verwendung als Produktionsumgebung vorgesehen. Sie sind auf einen Testzeitraum von 60 Tagen beschränkt. Nach Ablauf des Testzeitraums werden die Umgebung und alle darin befindlichen Daten gelöscht und können nicht wiederhergestellt werden. Die Umgebung kann nicht in eine Sandbox- oder Produktionsumgebung umgewandelt werden. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
 
@@ -135,7 +137,12 @@ Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche Power Apps-U
    
     - **Unterstützte Geografien** – Die Umgebung muss sich in einer unterstützten Geografie befinden. Weitere Informationen finden Sie unter [Unterstützte Geografien](hr-admin-setup-provision.md#supported-geographies).
 
-6. Nachdem Sie die korrekte Umgebung bestimmt haben, die verwendet werden soll, können Sie mit dem Bereitstellungsprozess fortfahren. 
+6. Funktionen für duales Schreiben zur Integration von Daten der Personalverwaltung in der Power Apps-Umgebung können nur verwendet werden, wenn die Option **Dynamics 365-Apps** für die Umgebung ausgewählt ist. Weitere Informationen zum dualen Schreiben finden Sie auf der [Startseite für duales Schreiben](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
+
+    > [!NOTE]
+    > Die Option **Dynamics 365-Apps aktivieren** muss beim Erstellen der Power Apps-Umgebung ausgewählt werden. Wenn die Option zum Zeitpunkt der Bereitstellung nicht ausgewählt ist, können Sie das duale Schreiben nicht verwenden, um Daten zwischen Dynamics 365 Human Resources und der Power Apps-Umgebung zu integrieren, oder keine Dynamics 365-Apps wie Dynamics 365 Sales und Field Service in der Umgebung installieren. Diese Option kann nicht rückgängig gemacht werden. Weitere Informationen finden Sie unter [Einige wichtige Überlegungen beim Erstellen einer neuen Umgebung](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) auf der Power Platform-Dokumentationsseite.
+
+7. Nachdem Sie die korrekte Umgebung bestimmt haben, die verwendet werden soll, können Sie mit dem Bereitstellungsprozess fortfahren. 
 
 ### <a name="supported-geographies"></a>Unterstützte Geografien
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 6fc4b9d0a0f5319c8a75e7d687ee82ea81497844
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c4aac62b36cd271e1c5fc3bcbbfdd785963fc368
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471859"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484071"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>Vorschau auf Dynamics 365 Supply Chain Management 10..22 (November 2021)
 
@@ -34,7 +34,7 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 
 | Funktionsbereich | Funktion | Mehr erfahren | Aktiviert von   |
 |---|---|---|---|
-| Planung | [Planungsoptimierungsunterstützung für die fähigkeitsbasierte Ressourcenzuweisung](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [Zeitplanung mit unbegrenzter Kapazität](../master-planning/planning-optimization/infinite-capacity-planning.md) | Funktionsverwaltung (*Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung*) |
+| Planung | [Planungsoptimierungsunterstützung für die fähigkeitsbasierte Ressourcenzuweisung](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [Planung mit Ressourcenauswahl basierend auf der Funktion](../master-planning/planning-optimization/capability-based-scheduling.md) | Funktionsverwaltung (*Zeitplanung mit unbegrenzter Kapazität für Planungsoptimierung*) |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsverbesserungen In dieser Version enthalten
 

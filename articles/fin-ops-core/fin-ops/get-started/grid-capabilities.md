@@ -2,7 +2,7 @@
 title: Rasterfunktionen
 description: In diesem Thema werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Sie müssen die neue Rasterfunktion aktivieren, damit auf diese Fähigkeiten zugegriffen werden kann.
 author: jasongre
-ms.date: 08/04/2021
+ms.date: 09/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775241"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483853"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
@@ -30,7 +30,7 @@ Die neue Rastersteuerung bietet eine Reihe nützlicher und leistungsfähiger Fun
 -  Summen berechnen
 -  Type-ahead
 -  Auswerten von mathematischen Ausdrücken 
--  Gruppieren von Tabellendaten (separat mit der **(Vorschau) Gruppierung in Rastern**-Funktion aktiviert)
+-  Gruppieren von Tabellendaten (separat mit der Funktion **Gruppierung in Rastern** aktiviert)
 -  Spalten fixieren
 
 ## <a name="calculating-totals"></a>Summen berechnen
@@ -93,7 +93,7 @@ Als Produktivitätssteigerung können Benutzer mathematische Formeln in numerisc
 Damit das System einen Wert als Ausdruck erkennt, müssen Sie vor dem Wert ein Gleichheitszeichen (**=**) angeben. Mehr Informationen zu den unterstützten Operatoren und zur Syntax finden Sie unter [Unterstützte mathematische Symbole](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppieren von Tabellendaten
-Geschäftsanwender müssen häufig Ad-hoc-Datenanalysen durchführen. Während dies durch das Exportieren von Daten nach Microsoft Excel und die Nutzung von Pivot-Tabellen geschehen kann, ermöglicht die Funktion **Gruppierung in Rastern**, die im Allgemeinen in Version 10.0.16/Plattform-Update 40 erhältlich ist und die von der neuen Rastersteuerungsfunktion abhängt, Benutzern auf effektive Weise die Organisation ihrer Tabellendaten in Finance and Operations-Apps. Da diese Funktion die **Summen**-Funktion erweitert, ermöglicht die Funktion **Gruppieren** wichtige Einblicke in die Daten zu gewinnen, indem Zwischensummen auf Gruppenebene bereitgestellt werden.
+Geschäftsanwender müssen häufig Ad-hoc-Datenanalysen durchführen. Während dies durch das Exportieren von Daten nach Microsoft Excel und der Nutzung von Pivot-Tabellen geschehen kann, ermöglicht die Funktion **Gruppierung in Rastern**, die von der neuen Rastersteuerungsfunktion abhängt, Benutzern, ihre Tabellendaten auf effektive Weise in Finance and Operations-Apps zu organisieren. Da diese Funktion die **Summen**-Funktion erweitert, ermöglicht die Funktion **Gruppieren** wichtige Einblicke in die Daten zu gewinnen, indem Zwischensummen auf Gruppenebene bereitgestellt werden.
 
 Um diese Funktion zu verwenden, klicken Sie mit der rechten Maustaste auf die Spalte, nach der Sie gruppieren möchten, und wählen die Option für **Nach dieser Spalte gruppieren** aus. Diese Aktion sortiert die Daten nach der ausgewählten Spalte, fügt eine neue Spalte **Gruppieren nach** am Anfang des Rasters hinzu und fügt „Kopfzeilen“ am Anfang jeder Gruppe ein. Diese Kopfzeilen enthalten die folgenden Informationen zu jeder Gruppe: 
 -  Datenwert für die Gruppe 
@@ -108,9 +108,6 @@ Nachdem Sie Daten nach einer einzelnen Spalte gruppiert haben, können Sie die D
 
 Sie können die Gruppierung für jede Spalte jederzeit entfernen, indem Sie mit der rechten Maustaste auf diese Spalte klicken und **Gruppierung aufheben** auswählen. Sie können die Gruppierung auch für alle Spalten entfernen, indem Sie **Rasteroptionen** und dann **Gruppierung für alle aufheben** auswählen.   
 
-Beachten Sie, dass vor Version 10.0.16/Plattform-Update 40 nur eine Gruppierungsebene unterstützt wird. In diesen Versionen wird die ursprüngliche Gruppierung ersetzt, wenn die Daten gruppiert sind und Sie **Nach dieser Spalte gruppieren** für eine andere Spalte auswählen.  
-
-
 ### <a name="expanding-and-collapsing-groups"></a>Gruppen erweitern und reduzieren
 Bei der anfänglichen Gruppierung von Daten werden alle Gruppen erweitert. Sie können zusammengefasste Ansichten der Daten erstellen, indem Sie einzelne Gruppen reduzieren, oder Sie können das Erweitern und Reduzieren von Gruppen verwenden, um die Navigation durch die Daten zu erleichtern. Um eine Gruppe zu erweitern oder zu reduzieren, wählen Sie die Schaltfläche Chevron (>) in der entsprechenden Gruppenkopfzeile. Beachten Sie: Der Status zum Erweitern/Reduzieren einzelner Gruppen lautet: **nicht** in der Personalisierung gespeichert.
 
@@ -118,10 +115,10 @@ Bei der anfänglichen Gruppierung von Daten werden alle Gruppen erweitert. Sie k
 Auf die gleiche Weise, wie Sie alle Zeilen im Raster auswählen (oder die Auswahl aufheben) können, indem Sie das Kontrollkästchen oben in der ersten Spalte des Rasters aktivieren, können Sie auch alle Zeilen in einer Gruppe schnell auswählen (oder die Auswahl aufheben), indem Sie das Kontrollkästchen in der entsprechenden Gruppenkopfzeile auswählen. Das Kontrollkästchen in der Gruppenkopfzeile gibt immer den aktuellen Auswahlstatus der Zeilen in dieser Gruppe wieder, unabhängig davon, ob alle Zeilen ausgewählt sind, keine Zeilen ausgewählt sind oder nur einige Zeilen ausgewählt sind.
 
 ### <a name="hiding-column-names"></a>Spaltennamen ausblenden
-Beim Gruppieren von Daten wird standardmäßig der Spaltenname in der Gruppenkopfzeile angezeigt. Ab Version 10.0.14/Plattform-Update 38 können Sie den Spaltennamen in Gruppenkopfzeilen unterdrücken, indem Sie **Rasteroptionen** > **Gruppenspaltennamen ausblenden** auswählen.
+Beim Gruppieren von Daten wird standardmäßig der Spaltenname in der Gruppenkopfzeile angezeigt. Sie können den Spaltennamen in Gruppenkopfzeilen unterdrücken, indem Sie **Rasteroptionen** > **Gruppenspaltennamen ausblenden** auswählen.
 
 ## <a name="freezing-columns"></a>Spalten fixieren
-Einige Spalten in einem Raster sind möglicherweise sehr wichtig für den Kontext, sodass sie nicht möchten, dass sie nicht mehr angezeigt werden. Stattdessen möchten Sie, dass die Werte in diesen Spalten immer sichtbar sind. In Version 10.0.17 bietet die Funktion **Spalten im Raster fixieren** Benutzern diese Flexibilität. 
+Einige Spalten in einem Raster sind möglicherweise sehr wichtig für den Kontext, sodass sie nicht möchten, dass sie nicht mehr angezeigt werden. Stattdessen möchten Sie möglicherweise, dass die Werte in diesen Spalten immer sichtbar sind. Die Funktion **Spalten im Raster fixieren** bietet Benutzern diese Flexibilität. 
 
 Um eine Spalte zu fixieren, klicken Sie mit der rechten Maustaste in die Spaltenüberschrift und wählen Sie dann **Spalte fixieren**. Wenn Sie diesen Schritt zum ersten Mal ausführen, wird die ausgewählte Spalte zur ersten Spalte und wird nicht mehr aus der Ansicht gescrollt. Jede nachfolgende Spalte, die Sie fixieren, wird rechts von der letzten fixierten Spalte hinzugefügt. Sie können die Standardfunktion zum Verschieben verwenden, um fixierte Spalten nach Bedarf neu anzuordnen. Fixierte Spalten können jedoch nicht verschoben werden, sodass sie in der Gruppe der nicht fixierten Spalten angezeigt werden. Ebenso können nicht fixierte Spalten nicht verschoben werden, sodass sie in der Gruppe der fixierten Spalten angezeigt werden.
 
@@ -132,32 +129,16 @@ Beachten Sie, dass die Zeilenauswahl- und Zeilenstatusspalten im neuen Raster im
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Wie aktiviere ich die neue Rastersteuerung in meiner Umgebung? 
 
-**10.0.9/Plattformupdate 33 und später**
+Die Funktion **Neue Rastersteuerung** ist in jeder Umgebung direkt in der Funktionsverwaltung verfügbar. Nachdem die Funktion in der Funktionsverwaltung aktiviert wurde, verwenden alle nachfolgenden Benutzersitzungen die neue Rastersteuerung. 
 
-Die Funktion **Neue Rastersteuerung** ist in jeder Umgebung direkt in der Funktionsverwaltung verfügbar. Wie andere öffentliche Vorschaufunktionen unterliegt auch die Aktivierung dieser Funktion in der Produktion den [Zusätzlichen Nutzungsbedingungen](public-preview-terms.md).  
-
-**10.0.8/Plattform-Update 32 und 10.0.7/Plattform-Update 31**
-
-Die Funktion **Neue Rastersteuerung** kann in Stufe 1 (Dev/Test)- und Stufe 2 (Sandbox)-Umgebungen aktiviert werden, um zusätzliche Test- und Entwurfsänderungen bereitzustellen, indem die folgenden Schritte ausgeführt werden.
-
-1.  **Flight aktivieren**: Führen Sie die folgende SQL-Anweisung aus: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
-
-2. **Reset IIS** zum Leeren des statischen Flighting-Cache. 
-
-3.  **Finden Sie die Funktion**: Gehen Sie zum Arbeitsbereich **Feature-Management**. Wenn **Neue Rastersteuerung** nicht in der Liste aller Funktionen erscheint, wählen Sie **Auf Updates prüfen**.   
-
-4.  **Aktivieren Sie die Funktion**: Suchen Sie die Funktion **Neue Rastersteuerung** in der Liste der Funktionen und wählen Sie **Jetzt aktivieren** im Detailbereich. Beachten Sie, dass eine Browseraktualisierung erforderlich ist. 
-
-Alle folgenden Benutzersitzungen beginnen mit der aktivierten neuen Rastersteuerung.
+Diese Funktion ist ab Version 10.0.21 standardmäßig aktiviert und soll mit Version 10.0.25 obligatorisch werden. 
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Entwickler] Deaktivierung einzelner Seiten für die Verwendung des neuen Rasters 
-Wenn Ihre Organisation eine Seite entdeckt, bei der Probleme bei der Verwendung des neuen Rasters auftreten, steht ab Version 10.0.13/Plattform-Update 37 eine API zur Verfügung, mit der ein einzelnes Formular die Vorgängerrastersteuerung und der Rest des Systems weiterhin die neue Rastersteuerung verwenden kann. Fügen Sie den folgenden Aufruf `super()` in die `run()` Methode für das Formular ein, um das Raster für eine einzelne Seite zu deaktivieren.
+Wenn Ihre Organisation eine Seite entdeckt, bei der Probleme bei der Verwendung des neuen Rasters auftreten, steht eine API zur Verfügung, mit der ein einzelnes Formular die Vorgängerrastersteuerung und der Rest des Systems weiterhin die neue Rastersteuerung verwenden kann. Fügen Sie den folgenden Aufruf `super()` in die `run()` Methode für das Formular ein, um das Raster für eine einzelne Seite zu deaktivieren.
 
  ```this.forceLegacyGrid();```
 
-Diese API wird bis zur Veröffentlichung im Oktober 2021 durchgeführt, danach wird die neue Rastersteuerung obligatorisch. Wenn Probleme die Verwendung dieser API erfordern, melden Sie diese an Microsoft.
+Diese API wird berücksichtigt, bis die neue Rastersteuerung obligatorisch wird, die derzeit für April 2022 vorgesehen ist. Wenn Probleme die Verwendung dieser API erfordern, melden Sie diese an Microsoft.
 
 ### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Erzwingen, dass eine Seite das neue Raster verwendet, nachdem das Raster zuvor deaktiviert wurde
 Wenn Sie eine einzelne Seite von der Verwendung des neuen Rasters abgemeldet haben, möchten Sie das neue Raster möglicherweise später wieder aktivieren, nachdem die zugrunde liegenden Probleme behoben wurden. Dazu müssen Sie lediglich den Aufruf von `forceLegacyGrid()` entfernen. Die Änderung wird erst wirksam, wenn eine der folgenden Bedingungen eintritt:

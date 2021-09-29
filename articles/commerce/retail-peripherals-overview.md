@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a57b51870d5738d906ca779474e0591dc16395cc992b3f79d37d1f45782bf66a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b240038a946a7f34a3c69df18329edbe1df6be0
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715333"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500302"
 ---
 # <a name="peripherals"></a>Peripheriegeräte
 
@@ -562,7 +562,7 @@ Diese Konfiguration kann für alle Modern POS-Clients verwendet werden, die die 
 > Wenn Geräte oft unterschiedliche Hardwarestationen verwenden, empfiehlt es sich, Modern POS zu konfigurieren, um den Kassierer zur Auswahl einer Hardwarestation aufzufordern, wenn sie den Zahlungsmittelprozess starten. Klicken Sie auf **Retail and Commerce** &gt; **Kanal-Einrichtung** &gt; **POS-Einrichtung** &gt; **Registrierungen**. Wählen Sie das Register aus, und legen Sie dann die Option **Bei Angebot auswählen** auf **Ja** fest. Verwenden Sie den Verteilungszeitplan **1090**, um Änderungen an der Kanaldatenbank zu synchronisieren.
 
 ## <a name="extensibility"></a>Erweiterbarkeit
-Informationen zu Erweiterbarkeitsszenarien für die Hardwarestation finden Sie unter [Hardwarestationserweiterbarkeit](dev-itpro/hardware-station-extensibility.md).
+Informationen zu Erweiterbarkeitsszenarien für die Hardwarestation finden Sie unter [Den POS mit einem neuen Hardwaregerät integrieren und Installationsprogramm für die Erweiterung generieren](dev-itpro/hardware-device-extension.md).
 
 ## <a name="security"></a>Sicherheit
 Entsprechend aktuellen Sicherheitsstandards sollten die folgenden Einstellungen in einer Produktionsumgebung verwendet werden: 

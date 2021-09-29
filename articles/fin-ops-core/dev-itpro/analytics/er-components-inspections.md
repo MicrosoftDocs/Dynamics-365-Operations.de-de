@@ -2,7 +2,7 @@
 title: Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 description: In diesem Thema wird erläutert, wie Sie die konfigurierten EB-Komponenten (Elektronische Berichterstellung) überprüfen, um mögliche Laufzeitprobleme zu vermeiden.
 author: NickSelin
-ms.date: 03/04/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd4f2b00dd7634a44b75c76753f5d864b039391f4fcb29e750fb17e8a03e9b77
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718622"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488113"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Konfigurierte EB-Komponente überprüfen, um Laufzeitprobleme zu vermeiden
 
@@ -229,6 +229,12 @@ Die folgende Tabelle enthält eine Übersicht der Inspektionen, die die EB biete
 <p>Kopf-/Fußzeilen (&lt;Komponententyp: Kopf- oder Fußzeile&gt;) sind inkonsistent</p>
 <p><b>Laufzeit:</b> Die zuletzt konfigurierte Komponente wird während der Laufzeit verwendet, wenn die Entwurfsversion des konfigurierten EB-Formats ausgeführt wird.</p>
 </td>
+</tr>
+<tr>
+<td><a href='#i17'>Inkonsistente Einstellung der Seitenkomponente</a></td>
+<td>Datenintegrität</td>
+<td>Fehler</td>
+<td>Es gibt mehr als zwei Bereichskomponenten ohne Replikation. Bitte entfernen Sie nicht benötigte Komponenten.</td>
 </tr>
 </tbody>
 </table>
@@ -866,6 +872,26 @@ Es ist keine Option verfügbar, um dieses Problem automatisch zu beheben.
 #### <a name="option-2"></a>Option 2
 
 Ändern Sie den Wert der Eigenschaft **Kopf-/Fußzeile** für eine der inkonsistenten **Excel\\Kopfzeile**- oder **Excel\\Fußzeile**-Komponenten.
+
+## <a name="inconsistent-setting-of-page-component"></a><a id="i17"></a>Inkonsistente Einstellung der Seitenkomponente
+
+Wenn Sie eine ER-Formatkomponente [konfigurieren](er-fillable-excel.md) zur Verwendung einer Excel-Vorlage zum Generieren eines ausgehenden Dokuments generieren, können Sie die Komponente **Excel\\Seite** hinzufügen, um ein generiertes Dokument mithilfe von ER-Formeln zu paginieren. Für jede **Excel\\Seite**-Komponente, die Sie hinzufügen, können Sie zahlreiche verschachtelte [Bereich](er-fillable-excel.md#range-component)-Komponenten hinzufügen und dennoch die folgende [Struktur](er-fillable-excel.md#page-component-structure) einhalten:
+
+- Die erste verschachtelte **Bereich**-Komponente kann so konfiguriert werden, dass die Eigenschaft **Replikationsrichtung** auf **Keine Replikation** eingestellt ist. Dieser Bereich wird verwendet, um Seitenüberschriften in generierten Dokumenten zu erstellen.
+- Sie können zahlreiche andere verschachtelte **Bereich**-Komponenten hinzufügen, bei denen die Eigenschaft **Replikationsrichtung** auf **Vertikal** eingestellt ist. Diese Bereiche werden verwendet, um generierte Dokumente auszufüllen.
+- Die letzte verschachtelte **Bereich**-Komponente kann so konfiguriert werden, dass die Eigenschaft **Replikationsrichtung** auf **Keine Replikation** eingestellt ist. Dieser Bereich wird verwendet, um Seitenfußzeilen in generierten Dokumenten zu erstellen und die erforderlichen Seitenumbrüche hinzuzufügen.
+
+Wenn Sie diese Struktur für ein ER-Format im ER-Formatdesigner zur Entwurfszeit nicht befolgen, tritt ein Validierungsfehler auf und Sie erhalten folgende Fehlermeldung: „Es gibt mehr als zwei Bereichskomponenten ohne Replikation. Bitte entfernen Sie nicht benötigte Komponenten.“
+
+### <a name="automatic-resolution"></a>Automatische Lösung
+
+Es ist keine Option verfügbar, um dieses Problem automatisch zu beheben.
+
+### <a name="manual-resolution"></a>Manuelle Lösung
+
+#### <a name="option-1"></a>Option 1
+
+Ändern Sie das konfigurierte Format, indem Sie die Eigenschaft **Replikationsrichtung** für alle inkonsistenten **Excel\\Bereich**-Komponenten ändern.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

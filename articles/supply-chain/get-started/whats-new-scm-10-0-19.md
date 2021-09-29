@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd82ad9a0eb2f8f85bc7dad0ae174726234ad84f
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 86735065864149df27cd3d8b03451ace773af048
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474891"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506854"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management Version 10.0.19 (Juni 2021)
 
@@ -40,8 +40,7 @@ Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsve
 | Bestand und Logistik | [Erweiterungen der Funktionalitäten für die Lagerort-Ausführung mit Scale-Units](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Nachrichtenverarbeitungsmeldungen](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Lagerregulierung des Lagerorts](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Bestand und Logistik | [Nachschlagefeld für die Felder Belegeinleitung und Belegabschluss auf der Angebotsseite](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Diese Funktion fügt das Nachschlagefeld für die Felder **Belegeinleitung** und **Belegabschluss** auf der Seite **Verkaufsangebot** hinzu.<br><br>Diese Funktion ist standardmäßig aktiviert. |
 | Bestand und Logistik | [Lagerort-Ausführung mit Edge Scale-Einheiten auf Ihrer angepassten Hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Skalierte Einheiten auf angepasster Hardware mit LBD bereitstellen](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Fertigung | [Fertigungsausführung mit Scale-Einheiten auf Ihrer angepassten Hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Edge-Skalierungseinheiten mithilfe von LBD auf benutzerdefinierter Hardware bereitstellen](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Planung | [Endloskapazitätsplanung zur Planungsoptimierung](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Zeitplanung mit unbegrenzter Kapazität](../master-planning/planning-optimization/infinite-capacity-planning.md) |
+| Fertigung | [Fertigungsausführung mit Scale-Einheiten auf Ihrer angepassten Hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Skalierte Einheiten auf angepasster Hardware mit LBD bereitstellen](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
 | Planung | Abfragebasierte geplanter Auftrag umwandeln | [Fest geplante Aufträge](../master-planning/planning-optimization/planned-order-firming.md) |
 | Produktinformationsverwaltung | [Verbesserungen an der Seite mit Variantenvorschlägen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Vordefinierte Produktvarianten erstellen](../pim/tasks/create-predefined-product-variants.md) |
 

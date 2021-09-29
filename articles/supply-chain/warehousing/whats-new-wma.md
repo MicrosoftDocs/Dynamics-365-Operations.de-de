@@ -1,27 +1,39 @@
 ---
 title: Was ist neu oder geändert in der Warehouse Management Mobile-App
 description: Dieses Thema listet die neuen und geänderten Funktionen für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
-author: ivanv-microsoft
-ms.date: 07/30/2021
+author: MarkusFogelberg
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: ivanv
+ms.author: mafoge
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
-ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
+ms.openlocfilehash: ac3ea6a088b2086054eb692cd0688b269dafca51
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386098"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485621"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Was ist neu oder geändert in der Warehouse Management Mobile-App
 
 [!include [banner](../includes/banner.md)]
 
 Dieses Thema listet neue Funktionen, Korrekturen, Verbesserungen und bekannte Probleme für jede freigegebene Version der Warehouse Management Mobile-App für Microsoft Dynamics 365 Supply Chain Management auf.
+
+## <a name="version-20100"></a>Version 2.0.10.0
+
+Diese Version führt die folgenden neuen Funktionen, Korrekturen und Verbesserungen ein:
+
+- Animation beim Wischen durch Listen und Seiten hinzugefügt
+- Der Text wird jetzt auf der Seite für Verbindungsfehler korrekt umbrochen.
+- Kombinationsfelder ohne Standardwerte werden jetzt korrekt angezeigt.
+- Informationen im Unterüberschriftbereich werden jetzt nur noch auf der vollständigen Detailseite angezeigt.
+- Leere Eingabefelder werden auf der Detailkarte nicht mehr angezeigt.
+- Bestätigungsfelder werden auf der Detailkarte nicht mehr dupliziert.
+- Verschiedene Probleme behoben, die dazu führten, dass das System nicht mehr reagierte, wurden behoben.
 
 ## <a name="version-2090"></a>Version 2.0.9.0
 

@@ -1,8 +1,8 @@
 ---
 title: Entwicklung einer Vergütungsstruktur
-description: Dieser Artikel führt Sie durch die Erstellung eines festen Vergütungsplans und die Anmeldung von Mitarbeitern in den Plan durch die Regeln für die Anspruchsberechtigung.
-author: andreabichsel
-ms.date: 02/10/2020
+description: In diesem Thema wird erklärt, wie Sie einen festen Vergütungsplan erstellen und Mitarbeiter für den Plan durch die Regeln für die Anspruchsberechtigung registrieren.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,21 +10,21 @@ ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPar
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2649a392b5c8bb2482622eba22b0b2f458058314dce25a8b9032eb2ef518240c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec30d6259b755bf7c304e8796b32d373027ce7ff
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732368"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483951"
 ---
 # <a name="develop-a-compensation-structure"></a>Entwicklung einer Vergütungsstruktur
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dieser Artikel führt Sie durch die Erstellung eines festen Vergütungsplans und die Anmeldung von Mitarbeitern in den Plan durch die Regeln für die Anspruchsberechtigung. Dieser Artikel verwendet die USMF-Demodaten und gilt für Vergütungs- und Leistungsmanager.
+In diesem Thema wird beschrieben, wie Sie einen festen Vergütungsplan erstellen und Mitarbeiter für den Plan durch die Regeln für die Anspruchsberechtigung registrieren. Dieses Thema verwendet die USMF-Demodaten und gilt für Vergütungs- und Leistungsmanager.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Erstellen eines festen Vergütungsplans
 
@@ -42,7 +42,7 @@ Dieser Artikel führt Sie durch die Erstellung eines festen Vergütungsplans und
 
 7. Wählen Sie im Feld **Typ** aus, ob es sich bei dem festen Vergütungsplan um einen Plan **Band**, **Grad** oder **Schritt** handelt.
 
-8. Das Ankreuzfeld **Empfehlung erlaubt** dient als Standardwert für alle Maßnahmen, die diesem Plan in einem Prozessereignis hinzugefügt werden. Das Zulassen von Empfehlungen bietet Ihnen die Möglichkeit, den berechneten Richtbetrag zu überschreiben, wenn die Vergütung verarbeitet wird.
+8. Das Kontrollkästchen **Empfehlung erlaubt** dient als Standardwert für alle Maßnahmen, die diesem Plan in einem Prozessereignis hinzugefügt werden. Das Zulassen von Empfehlungen bietet Ihnen die Möglichkeit, den berechneten Richtbetrag zu überschreiben, wenn die Vergütung verarbeitet wird.
 
 9. Mit dem Feld **Bereichstoleranz außerhalb des Bereichs** können Sie angeben, wie Sie Vergütungsbeträge behandeln wollen, die außerhalb des für die gegebene Ebene angegebenen Bereichs der Vergütungsstruktur liegen. Wenn Sie das Feld **Bereichstoleranz außerhalb des Bereichs** auf **Keine** setzen, können Sie jeden beliebigen Vergütungsbetrag verwenden. **Weiche Toleranz** warnt die Benutzer, wenn der Ausgleichsbetrag unter dem Minimum oder über den maximalen Bezugspunktbeträgen für diese Ebene liegt. Benutzer können die Warnung ignorieren und fortfahren. **Harte Toleranz** erzeugt einen Fehler, wenn die Vergütung eines Mitarbeiters außerhalb des minimalen und maximalen Bezugspunktbetrags für diese Stufe liegt, und passt die Vergütung des Mitarbeiters automatisch so an, dass sie in den Bereich fällt.
 

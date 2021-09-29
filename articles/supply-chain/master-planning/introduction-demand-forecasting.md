@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99248a1bc231cfe58270b043827cde00a520f872658217b85dffd810bed391c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 984669d5e4bde4bd967bf0a181d1b45df16ee569
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736670"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484048"
 ---
 # <a name="demand-forecasting-overview"></a>Bedarfsplanung – Überblick
 
@@ -34,7 +34,9 @@ Die Bedarfsplanung wird verwendet, um unabhängigen Bedarf aus Aufträgen und ab
 Um die Grundplanung zu generieren, wird eine Zusammenfassung mit historischen Transaktionen an Microsoft Azure Machine Learning übergeben, das auf Azure gehostet wird. Da dieser Dienst nicht unter Benutzern freigegeben wird, kann er problemlos angepasst werden, um den branchenspezifischen Anforderungen zu entsprechen. Sie können Supply Chain Management verwenden, um die Planung zu visualisieren, die Planung anzupassen und KPIs (Key Performance Indicators) zur Planungsgenauigkeit anzuzeigen.
 
 > [!NOTE]
-> Microsoft Azure Machine Learning Studio (klassisch) ist für die Prognoseerstellung mit maschinellem Lernen erforderlich. Ab Januar 2021 ist es in Ost-Japan, Süd-Zentral-USA, Südostasien, West-Zentral-USA und Westeuropa erhältlich. Aktualisierte Informationen zur aktuellen Verfügbarkeit finden Sie unter [Azure-Produkte nach Region.](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=machine-learning-studio)
+> Microsoft Azure Machine Learning Studio (klassisch) ist für die Prognoseerstellung mit maschinellem Lernen erforderlich. Ab dem 1. Dezember 2021 können Sie keine neuen Machine Learning Studio-Ressourcen (klassisch) erstellen. Sie können jedoch bis zum 31. August 2024 weiterhin Ihre vorhandenen (klassischen) Ressourcen des Machine Learning Studio verwenden. Aktualisierte Informationen finden Sie unter [Azure Machine Learning Studio](/azure/machine-learning/overview-what-is-machine-learning-studio#ml-studio-classic-vs-azure-machine-learning-studio).
+> 
+> Dynamics 365 Supply Chain Management Version 10.0.23 und höher unterstützen das neue Azure Machine Learning Studio.
 
 ## <a name="key-features-of-demand-forecasting"></a>Wichtigste Funktionen der Bedarfsplanung
 

@@ -1,8 +1,8 @@
 ---
 title: Urlaubs- und Abwesenheitstypen konfigurieren
 description: Einrichten von Abwesenheitstypen, die Mitarbeiter in Anspruch nehmen können in Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ca474fe12867ae767db936ad0b2995c4437bdf0ee94831450fda825b9e075dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b616d1f2c8b0bc8131045424b01dbfaa82f41f84
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730417"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485806"
 ---
 # <a name="configure-leave-and-absence-types"></a>Urlaubs- und Abwesenheitstypen konfigurieren
 
@@ -65,9 +65,9 @@ Abwesenheitstypen in Dynamics 365 Human Resources definieren die verschiedenen A
 
 1. Stellen Sie Rundungsoptionen für die Urlaubsart ein. Optionen umfassen **Keine**, **Oben**, **Unten**, und **Nächste**. Sie können auch die Rundungsgenauigkeit für den Urlaubstyp festlegen.
 
-2. Stellen **Urlaubskorrekturen** für den Abwesenheitstyp ein. Wenn Sie diese Option auswählen, verwendet die Personalabteilung die Anzahl der Feiertage, die auf einen Arbeitstag fallen, um zu bestimmen, wie Freizeit für die Urlaubsart angesammelt werden soll. Wenn beispielsweise der Weihnachtstag auf einen Montag fällt, zieht die Personalabteilung bei der Verarbeitung von Rückstellungen einen Tag von der Urlaubsart ab.
+2. Stellen **Urlaubskorrekturen** für den Abwesenheitstyp ein. Wenn Sie diese Option auswählen, wird die Anzahl der Feiertage verwendet, die auf einen Arbeitstag fallen, um zu bestimmen, wie Freizeit für die Urlaubsart angesammelt werden soll. Wenn beispielsweise der Weihnachtstag auf einen Montag fällt, zieht die Personalabteilung bei der Verarbeitung von Rückstellungen einen Tag von der Urlaubsart ab.
 
-   Sie legen den Urlaub im Arbeitszeitkalender fest. Weitere Informationen finden Sie unter [Einen Arbeitszeitkalender erstellen](hr-leave-and-absence-working-time-calendar.md)
+   Sie legen den Urlaub im Arbeitszeitkalender fest. Weitere Informationen finden Sie unter [Einen Arbeitszeitkalender erstellen](hr-leave-and-absence-working-time-calendar.md).
    
  3. Einstellen des **Vortragstyps** für den Urlaubstyp. Wenn Sie diese Option auswählen, werden alle Vortragsguthaben auf die angegebene Urlaubsart übertragen. Die Art des Vortragstyps für den Urlaub muss ebenfalls in den Urlaubs- und Abwesenheitsplan aufgenommen werden. 
  
@@ -76,7 +76,7 @@ Abwesenheitstypen in Dynamics 365 Human Resources definieren die verschiedenen A
 ## <a name="configure-the-required-attachment-per-leave-type"></a>Anhangsanforderung pro Urlaubsart konfigurieren
 
 > [!NOTE]
-> Um das Feld **Anhang erforderlich** müssen Sie zuerst die Funktion **(Vorschau) erforderlichen Anhang für Abwesenheitsanträge konfigurieren** in der Funktionsverwaltung aktivieren. Weitere Informationen zur Aktivierung von Vorschaufunktionen finden Sie unter [Funktionen verwalten](hr-admin-manage-features.md).
+> Um das Feld **Anhang erforderlich** zu verwenden, müssen Sie zuerst die Funktion **Erforderlichen Anhang für Abwesenheitsanträge konfigurieren** in der Funktionsverwaltung aktivieren. Weitere Informationen zur Aktivierung von Funktionen finden Sie unter [Funktionen verwalten](hr-admin-manage-features.md).
 
 1. Auf der **Urlaub und Abwesenheit** Seite, auf der **Verknüpfungen** Registerkarte, unter **Installieren** wählen Sie **Urlaubs- und Abwesenheitsarten**.
 
@@ -87,7 +87,7 @@ Mitarbeiter müssen einen Anhang hochladen, wenn sie einen neuen Urlaubsantrag m
 ## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Konfigurieren von Einheiten (Stunden/Tage) pro Urlaubsart
 
 > [!NOTE]
-> Um die Abwesenheitseinheiten pro Abwesenheitsart zu verwenden, müssen Sie zuerst die Funktion **(Vorschau) Urlaubseinheiten pro Urlaubsart konfigurieren** in der Funktionsverwaltung aktivieren. Weitere Informationen zur Aktivierung von Vorschaufunktionen finden Sie unter [Funktionen verwalten](hr-admin-manage-features.md).
+> Um die Abwesenheitseinheiten pro Abwesenheitsart zu verwenden, müssen Sie zuerst die Funktion **Urlaubseinheiten pro Urlaubsart konfigurieren** in der Funktionsverwaltung aktivieren. Weitere Informationen zur Aktivierung von Funktionen finden Sie unter [Funktionen verwalten](hr-admin-manage-features.md).
 
 > [!IMPORTANT]
 > Standardmäßig verwenden die Urlaubsarten in einer juristischen Person die Urlaubseinheiten aus der Konfiguration der Urlaubsparameter auf Ebene der juristischen Person.

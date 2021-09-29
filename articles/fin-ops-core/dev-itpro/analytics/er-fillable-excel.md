@@ -2,7 +2,7 @@
 title: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 description: Dieses Thema enthält Informationen zum Entwerfen eines Formats für die elektronische Berichterstellung (EB), um eine Excel-Vorlage auszufüllen und ausgehende Dokumente im Excel-Format zu generieren.
 author: NickSelin
-ms.date: 03/10/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d737c3a58bf94079b8b674238ed7dd651e238752a2bd992f57c9be4b95aedae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748471"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488137"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -138,6 +138,55 @@ Weitere Informationen zum Einbetten von Bildern und Shapes finden Sie unter [Bil
 
 Die Komponente **PageBreak** erzwingt das Starten einer neuen Seite in Excel. Diese Komponente ist nicht erforderlich, wenn Sie das Standard-Paging von Excel verwenden möchten, aber Sie sollten sie verwenden, wenn Sie möchten, dass Excel Ihrem ER-Format folgt, um das Paging zu strukturieren.
 
+## <a name="page-component"></a><a name="page-component"></a>Seitenkomponente
+
+### <a name="overview"></a>Übersicht
+
+Sie können die **Seiten**-Komponente verwenden, wenn Sie möchten, dass Excel Ihr ER-Format befolgt und die Paginierung in einem generierten ausgehenden Dokument strukturiert. Wenn ER-Formatkomponenten ausgeführt werden, die sich unter der **Seiten**-Komponente befinden, werden die erforderlichen Seitenumbrüche automatisch hinzugefügt. Dabei werden die Größe des generierten Inhalts, der Seitenaufbau der Excel-Vorlage und das in der Excel-Vorlage gewählte Papierformat berücksichtigt.
+
+Wenn Sie ein generiertes Dokument in verschiedene Abschnitte aufteilen müssen, von denen jeder eine andere Paginierung besitzt, können Sie mehrere **Seiten**-Komponenten in jeder [Blatt](er-fillable-excel.md#sheet-component)-Komponente konfigurieren.
+
+### <a name="structure"></a><a name="page-component-structure"></a>Struktur
+
+Wenn die erste Komponente unter der Komponente **Seite** eine [Bereich](er-fillable-excel.md#range-component)-Komponente ist, bei der die Eigenschaft **Replikationsrichtung** auf **Keine Replikation** gesetzt ist, wird dieser Bereich als Seitenkopf für die Paginierung betrachtet, die auf den Einstellungen der aktuellen **Seiten**-Komponente basiert. Der dieser Formatkomponente zugeordnete Excel-Bereich wird oben auf jeder Seite wiederholt, die mit den Einstellungen der aktuellen **Seiten**-Komponente generiert wird.
+
+> [!NOTE]
+> Für eine korrekte Paginierung, wenn der Bereich [Oben zu wiederholenden Zeilen](https://support.microsoft.com/office/repeat-specific-rows-or-columns-on-every-printed-page-0d6dac43-7ee7-4f34-8b08-ffcc8b022409) in Ihrer Excel-Vorlage konfiguriert ist, muss die Adresse dieses Excel-Bereichs mit der Adresse des Excel-Bereichs übereinstimmen, der mit der zuvor beschriebenen **Bereich**-Komponente verknüpft ist.
+
+Wenn die letzte Komponente unter der Komponente **Seite** eine **Bereich**-Komponente ist, bei der die Eigenschaft **Replikationsrichtung** auf **Keine Replikation** gesetzt ist, wird dieser Bereich als Seitenfußzeile für die Paginierung betrachtet, die auf den Einstellungen der aktuellen **Seiten**-Komponente basiert. Der dieser Formatkomponente zugeordnete Excel-Bereich wird unten auf jeder Seite wiederholt, die mit den Einstellungen der aktuellen **Seiten**-Komponente generiert wird.
+
+> [!NOTE]
+> Für eine korrekte Paginierung darf die Größe der Excel-Bereiche, die den **Bereich**-Komponenten zugeordnet sind, während der Runtime nicht geändert werden. Es wird nicht empfohlen, Zellen dieses Bereichs mit den Optionen **Text in eine Zelle umbrechen** und **Zeilenhöhe automatisch anpassen** [in Excel](https://support.microsoft.com/office/wrap-text-in-a-cell-2a18cff5-ccc1-4bce-95e4-f0d4f3ff4e84) zu formatieren.
+
+Sie können mehrere andere **Bereich**-Komponenten zwischen den optionalen **Bereich**-Komponenten hinzufügen, um anzugeben, wie ein generiertes Dokument ausgefüllt wird.
+
+Wenn der Satz der verschachtelten **Bereich**-Komponenten unter der **Seite**-Komponente nicht mit der zuvor beschriebenen Struktur übereinstimmt, tritt ein [Validierungsfehler](er-components-inspections.md#i17) zur Entwurfszeit im ER-Formatdesigner auf. Die Fehlermeldung weist Sie darauf hin, dass das Problem zur Runtime zu Problemen führen kann.
+
+> [!NOTE]
+> Um eine korrekte Ausgabe zu generieren, geben Sie keine Bindung für eine **Bereich**-Komponente unter der **Seite**-Komponente an, wenn die Eigenschaft **Replikationsrichtung** für diese **Bereich**-Komponente auf **Keine Replikation** festgelegt ist, und der Bereich so konfiguriert ist, um Seitenkopfzeilen oder Seitenfußzeilen zu generieren.
+
+Wenn Sie eine paginierungsbezogene Summierung und Zählung wünschen, um laufende Summen und Summen pro Seite zu berechnen, empfehlen wir Ihnen, die erforderliche Datenquelle [Datensammlung](er-data-collection-data-sources.md) zu konfigurieren. Um zu lernen, wie man die **Seite**-Komponente verwendet, um ein generiertes Excel-Dokument zu paginieren, führen Sie die Verfahren in [Ein ER-Format verwenden, um ein generiertes Dokument im Excel-Format zu paginieren](er-paginate-excel-reports.md) aus.
+
+### <a name="limitations"></a><a name="page-component-limitations"></a>Einschränkungen
+
+Wenn Sie die **Seite**-Komponente für die Excel-Paginierung verwenden, wissen Sie die endgültige Seitenzahl in einem generierten Dokument erst, wenn die Paginierung abgeschlossen ist. Daher können Sie die Gesamtseitenzahl nicht mithilfe von ER-Formeln berechnen und die richtige Seitenzahl eines generierten Dokuments auf einer Seite vor der letzten Seite drucken.
+
+> [!TIP]
+> Um dieses Ergebnis in einer Excel-Kopf- oder Fußzeile zu erreichen, verwenden Sie die spezielle Excel-[Formatierung](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) für Kopf- und Fußzeilen.
+
+Konfigurierte **Seite**-Komponenten werden nicht berücksichtigt, wenn Sie eine Excel-Vorlage im bearbeitbaren Format in der Dynamics 365 Finance-Version 10.0.22 aktualisieren. Diese Funktionalität wird für weitere Versionen von Finance in Betracht gezogen.
+
+Wenn Sie Ihre Excel-Vorlage zur Verwendung der [bedingten Formatierung](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting) konfigurieren, funktioniert sie in manchen Fällen möglicherweise nicht wie erwartet.
+
+### <a name="applicability"></a>Anwendbarkeit
+
+Die **Seite**-Komponente funktioniert für das Format [Excel-Datei](er-fillable-excel.md#excel-file-component) nur, wenn diese Komponente zur Verwendung einer Vorlage in Excel konfiguriert ist. Wenn Sie die Excel-Vorlage durch eine Word-Vorlage [ersetzen](tasks/er-design-configuration-word-2016-11.md) und dann das bearbeitbare ER-Format ausführen, wir die **Seite**-Komponente ignoriert.
+
+Die **Seite**-Komponente funktioniert nur, wenn die Funktion **Aktivieren Sie die Verwendung der EPPlus-Bibliothek im Rahmen für elektronische Berichte** aktiviert ist. Zur Laufzeit wird eine Ausnahme ausgelöst, wenn ER versucht, die **Seite**-Komponente zu verarbeiten, während diese Funktion deaktiviert ist.
+
+> [!NOTE]
+> Zur Laufzeit wird eine Ausnahme ausgelöst, wenn ein ER-Format die **Seite**-Komponente für eine Excel-Vorlage verarbeitet, die mindestens eine Formel enthält, die auf eine ungültige Zelle verweist. Um Laufzeitfehler zu vermeiden, korrigieren Sie die Excel-Vorlage wie in [So korrigieren Sie einen #REF!-Fehler beschrieben](https://support.microsoft.com/office/how-to-correct-a-ref-error-822c8e46-e610-4d02-bf29-ec4b8c5ff4be).
+
 ## <a name="footer-component"></a>Fußzeilenkomponente
 
 Die **Fußzeile**-Komponente wird verwendet, um Fußzeilen am unteren Rand eines generierten Arbeitsblatts in einer Excel-Arbeitsmappe auszufüllen.
@@ -197,9 +246,12 @@ Wenn Sie ein bearbeitbares EB-Format überprüfen, wird eine Konsistenzprüfung 
 Wenn ein ausgehendes Dokument in einem Microsoft Excel-Arbeitsmappenformat generiert wird, enthalten einige Zellen dieses Dokuments möglicherweise Excel-Formeln. Wenn die Funktion **Aktivieren Sie die Verwendung der EPPlus-Bibliothek im Rahmen für elektronische Berichte** aktiviert ist, können Sie steuern, wann die Formeln berechnet werden, indem Sie den Wert des [Parameters](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) **Berechnungsoptionen** in der verwendeten Excel-Vorlage ändern:
 
 - Wählen Sie **Automatisch** aus, um alle abhängigen Formeln jedes Mal neu zu berechnen, wenn ein generiertes Dokument an neue Bereiche, Zellen usw. angehängt wird.
+
     >[!NOTE]
     > Dies kann zu Leistungsproblemen bei Excel-Vorlagen führen, die mehrere verwandte Formeln enthalten.
+
 - Wählen Sie **Manuell** aus, um eine Neuberechnung der Formel beim Generieren eines Dokuments zu vermeiden.
+
     >[!NOTE]
     > Die Neuberechnung der Formel wird manuell erzwungen, wenn ein generiertes Dokument in Excel zur Vorschau geöffnet wird.
     > Verwenden Sie diese Option nicht, wenn Sie ein EB-Ziel konfigurieren, das die Verwendung eines generierten Dokuments ohne Vorschau in Excel (PDF-Konvertierung, E-Mail usw.) voraussetzt, da das generierte Dokument möglicherweise keine Werte in Zellen enthält, die Formeln enthalten.

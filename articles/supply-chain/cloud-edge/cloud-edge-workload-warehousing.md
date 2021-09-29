@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3de160cb4e62f9b30c01c56fa6fe5a4dfad5229
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471715"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500426"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -157,6 +157,7 @@ Die folgenden Funktionen der Lagerortverwaltung werden derzeit für Arbeitsausla
 
 - Eingangsverarbeitung von Bestellpositionen, die einer Ladung zugeordnet sind.
 - Eingangsverarbeitung von Bestellungen für ein Projekt.
+- Verwaltung der Gesamttransportkosten, Nutzung von Fahrten und Verfolgung von Waren während des Transports
 - Eingangs- und Ausgangsbearbeitung für Elemente mit den aktiven Rückverfolgungsangaben **Besitzer** und/oder **Seriennummer**.
 - Verarbeitung von Beständen, die einen Sperrstatuswert haben.
 - Ändern eines Bestandsstatus während eines Arbeitsbewegungsprozesses.
@@ -187,6 +188,7 @@ Die folgende Tabelle zeigt, welche Funktionen im Outbound unterstützt werden un
 |--------------------------------------------------------------|-----|------------------------------|
 | Quellbeleg-Verarbeitung                                   | Ja | Nr. |
 | Last- und Transportverwaltungs-Verarbeitung                | Ja, aber nur die Ladungsplanungsprozesse. Verarbeitung der Transportverwaltung wird nicht unterstützt  | Nr. |
+| Gesamttransportkosten und Waren in Zustellung                                         | Ja | Nr. |
 | Für Lagerort freigeben                                         | Ja | Nr. |
 | Geplantes Crossdocking                                        | Nr.  | Nr. |
 | Lieferungskonsolidierung                                       | Ja, bei Verwendung der Ladungsplanung | Ja |

@@ -1,8 +1,8 @@
 ---
 title: Vergütungspläne
-description: Manager Vergütungen und Leistungen können die Vergütungsverwaltung verwenden, um die festen und variablen Vergütungspläne für die Mitarbeiter der Organisation verwalten und verarbeiten.
-author: andreabichsel
-ms.date: 06/20/2017
+description: In diesem Thema wird beschrieben, wie Sie mit der Vergütungsverwaltung Vergütungspläne verwalten und verarbeiten.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: dafba542ec1421a6ef3437d9c2f22e0c363e557d7f5b6410af36fc7cb8d4be7d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64169ebc5bbd2f0a9b4be3d4ec076c8814e6eb97
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732440"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483807"
 ---
 # <a name="compensation-plans"></a>Vergütungspläne
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Manager Vergütungen und Leistungen können die Vergütungsverwaltung verwenden, um die festen und variablen Vergütungspläne für die Mitarbeiter der Organisation verwalten und verarbeiten.
+Manager für Vergütungen und Leistungen können die **Vergütungsverwaltung** verwenden, um die festen und variablen Vergütungspläne für die Mitarbeiter der Organisation zu verwalten und zu verarbeiten.
 
 ### <a name="introduction"></a>Einführung
 
@@ -42,8 +42,8 @@ Die folgende Tabelle listet Komponenten des Vergütungsprozess auf, die Bestandt
 <table>
 <thead>
 <tr class="header">
-<th>Komponente</th>
-<th>Weitere Informationen...</th>
+<th>Bestandteil</th>
+<th>Mehr erfahren</th>
 </tr>
 </thead>
 <tbody>
@@ -89,7 +89,7 @@ Die folgende Tabelle listet Komponenten des Vergütungsprozess auf, die Bestandt
 </tr>
 <tr class="even">
 <td>Kontrollpunkt</td>
-<td>Der Kontrollpunkt definiert, wie der ideale Lohnsatz für alle Mitarbeiter einer Vergütungsstufe aussieht. Bei bewerteten Planungsstrukturen stellen die Kontrollpunkte üblicherweise die Bereichsmitte dar. Bei flexiblen Strukturen wird nur selten auf Kontrollpunkte zurückgegriffen. Sie können den Kontrollpunkt für einen Plan für feste Vergütung im Formular "Pläne für feste Vergütung" angeben.</td>
+<td>Der Kontrollpunkt definiert, wie der ideale Lohnsatz für alle Mitarbeiter einer Vergütungsstufe aussieht. Bei bewerteten Planungsstrukturen stellen die Kontrollpunkte üblicherweise die Bereichsmitte dar. Bei flexiblen Strukturen wird nur selten auf Kontrollpunkte zurückgegriffen. Sie können den Kontrollpunkt für einen Plan für feste Vergütung auf der Seite **Pläne für feste Vergütung** angeben.</td>
 </tr>
 <tr class="odd">
 <td>Stellenfunktionen</td>

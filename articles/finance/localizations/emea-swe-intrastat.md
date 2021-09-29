@@ -9,12 +9,12 @@ ms.reviewer: kfender
 ms.search.region: Global
 ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 404fb8dff1519aefb2f4af25eb95dfa6fce75b7c
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 152bfd24843867685b1d303484ed61ad98ec652a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417081"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486945"
 ---
 # <a name="swedish-intrastat"></a>Schwedisches Intrastat
 
@@ -48,7 +48,7 @@ Weitere Informationen finden Sie unter [Herunterladen von ER-Konfigurationen aus
 3. Im Feld **Berichtformatzuordnung** **Intrastatbericht** auswählen.
 4. Auf dem Inforegister **Warencodehierarchie** im Feld **Kategoriehierarchie** wählen Sie **Intrastat**.
 5. Wählen Sie im Feld **Art des Geschäfts** die Art des Geschäfts für Eigentumsübertragungen aus. Sie verwenden diesen Code für Transaktionen, die tatsächliche oder geplante Eigentumsübertragungen gegen Vergütung (finanziell oder anderweitig) zur Folge haben. Sie verwenden ihn auch für Korrekturen. Unternehmen in Schweden verwenden einstellige Transaktionscodes.
-6. Wählen Sie im Feld **Gutschrift** die Art des Geschäfts für die Warenrücksendung aus. Sie verwenden diesen Code für die Rücksendung von Waren, die ursprünglich Transaktion unter der Art des Geschäfts erfasst wurde. Unternehmen in Schweden verwenden einstellige Transaktionscodes.
+6. Wählen Sie im Feld **Gutschrift** die Art des Geschäfts für die Warenrücksendung aus.
 7. Auf der Registerkarte **Länder-/Regionseigenschaften** führen Sie im Feld **Land/Region** alle Länder oder Regionen auf, mit denen Ihre Unternehmen Geschäfte macht. Für jedes Land, das Teil der EU ist, wählen Sie im Feld **Land/Regionstyp** die Option **EU**, damit das Land in Ihrem Intrastat-Bericht erscheint.
 
 ## <a name="set-up-the-product-parameters-for-the-intrastat-declaration"></a>Legen Sie die Produktparameter für die Intrastat-Meldung fest

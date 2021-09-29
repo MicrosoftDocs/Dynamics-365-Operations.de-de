@@ -2,7 +2,7 @@
 title: Apps von Drittanbietern einbetten
 description: Dieses Thema erklärt, wie Sie Apps von Drittanbietern einbinden können, um die Funktionalität des Produkts zu erweitern.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345409"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488233"
 ---
 # <a name="embed-third-party-apps"></a>Apps von Drittanbietern einbetten
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Viele Debitor verwenden eine Reihe von Anwendungen, um ihr Geschäft auszuführen. Einige dieser Anwendungen sind Web-Apps von Drittanbietern, die in Verbindung mit Finance and Operations-Apps arbeiten. Um eine nahtlosere Benutzererfahrung zu bieten, können Sie die Funktion **Full Page Apps** verwenden, um diese Apps von Drittanbietern direkt in Ihre Finance and Operations-Apps einzubetten (vorausgesetzt, die Apps von Drittanbietern lassen die Einbettung zu). Auf diese Weise können Benutzer auf die von ihnen benötigten Websites und Apps zugreifen, ohne die Registerkarten oder Fenster wechseln zu müssen.
 

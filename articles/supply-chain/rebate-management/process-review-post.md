@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 1a9603df8fd3b2c81c37ca95fd1b13d0b6f4004a38b0cf86846486e3b5d41bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db3c7561a7249930def2e519f3b6718c429fa3ba
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729409"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500474"
 ---
 # <a name="process-review-and-post-rebates"></a>Rückvergütungen verarbeiten, überprüfen und buchen
 
@@ -43,8 +43,6 @@ Die periodische Aufgabe **FIFO-Einkaufspreis berechnen** muss ausgeführt werden
 Gehen Sie zu **Rückvergütungsverwaltung \> Periodische Aufgaben \> FIFO-Einkaufspreise berechnen**. Wählen Sie im angezeigten Dialogfeld **OK** aus, um die Berechnung auszuführen.
 
 ## <a name="create-source-transactions"></a>Quellentransaktionen erstellen
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Sie können die Aufträge oder Bestellungen mit Quellentransaktionen entweder vor oder nach dem Erstellen eines entsprechenden Rückvergütungsverwaltungsdeals erstellen.
 
@@ -158,8 +156,6 @@ Anstatt bestimmte Deals oder Deal-Positionen zu verarbeiten, können Sie eine St
 
 ### <a name="process-deals-by-using-the-rebate-workbench"></a>Deals mit der Rückvergütungsworkbench verarbeiten
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Anstatt bestimmte Deals oder Deal-Positionen zu verarbeiten, können Sie mit der *Rückvergütungsworkbench* mehrere Deals gleichzeitig verarbeiten. Sie können optional Datensatzfilter anwenden und/oder einen wiederkehrenden Zeitplan einrichten. Sie müssen keine Zeilen auswählen. Das System verarbeitet alle Positionen, die die von Ihnen eingerichteten Datums- und Filteranforderungen erfüllen.
 
 Gehen Sie wie folgt vor, um Deals mit der Rückvergütungsworkbench zu verarbeiten.
@@ -213,8 +209,6 @@ Um Rückvergütungsverwaltungstransaktionen mit der Listenseite mit den Rückver
 > Wenn Sie einen Anspruchsprozess verwenden, enthält die Transaktionsliste bei der Verarbeitung der nächsten Periode alle nicht beanspruchten Transaktionen der vorherigen Buchung sowie alle neuen Transaktionen für die ausgewählte Periode.
 
 ### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-workbench"></a>Rückvergütungsverwaltungstransaktionen mit der Rückvergütungsworkbench anzeigen und bearbeiten
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Um Rückvergütungsverwaltungstransaktionen mit der Rückvergütungsworkbench anzuzeigen und zu bearbeiten, gehen Sie wie folgt vor.
 
@@ -295,8 +289,6 @@ Anstatt bestimmte Transaktionen für spezifische Deals oder Deal-Positionen zu b
 
 ### <a name="post-transactions-by-using-the-rebate-workbench"></a>Transaktionen mit der Rückvergütungsworkbench buchen
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Nachdem Sie Bereitstellungs-, Rückvergütungs- oder Abschreibungstransaktionen verarbeitet haben, führen Sie diese Schritte aus, um die Rückvergütungsworkbench zum Überprüfen und Buchen der generierten Transaktionen für eine oder mehrere spezifische Transaktionspositionen für alle Deals zu verwenden.
 
 1. Gehen Sie zu **Rückvergütungsverwaltung \> Rückvergütungsverwaltungsdeals \> Rückvergütungsworkbench**.
@@ -332,8 +324,6 @@ Führen Sie die folgenden Schritte aus, um die Journaleinträge zu überprüfen,
 
 ### <a name="review-journals-by-using-the-rebate-workbench"></a>Erfassungen mit der Rückvergütungsworkbench überprüfen
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Gehen Sie wie folgt vor, um Erfassungen mit der Rückvergütungsworkbench zu überprüfen.
 
 1. Gehen Sie zu **Rückvergütungsverwaltung \> Rückvergütungsverwaltungsdeals \> Rückvergütungsworkbench**.
@@ -342,8 +332,6 @@ Gehen Sie wie folgt vor, um Erfassungen mit der Rückvergütungsworkbench zu üb
 1. Eine Liste relevanter Erfassungen, Dokumente oder Artikel wird angezeigt. Um weitere Informationen zu einer Erfassung, einem Dokument oder Artikel anzuzeigen, wählen Sie dessen Zeile und dann im Aktivitätsbereich die Option **Details anzeigen**.
 
 ## <a name="rebate-management-transactions-on-the-deduction-workbench"></a>Rückvergütungsverwaltungstransaktionen auf der Abzugsworkbench
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Wenn Sie eine Rückvergütungsverwaltungstransaktion buchen, die eine der folgenden **Zahlungstypen** hat, erstellt das System eine Debitorenabzugserfassung oder eine Freitextrechnung für das entsprechende Debitorenkonto:
 
@@ -358,8 +346,6 @@ Weitere Informationen finden Sie unter [Verwalten von Abzügen mit der Abzugswor
 
 ## <a name="purge-unposted-transactions"></a>Nicht gebuchte Transaktionen löschen
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Nachdem Sie Bereitstellungs-, Rückvergütungs- oder Abschreibungstransaktionen verarbeitet haben, führen Sie diese Schritte aus, um ausgewählte nicht gebuchte Transaktionen zu löschen.
 
 1. Gehen Sie zu **Rückvergütungsverwaltung \> Rückvergütungsverwaltungsdeals \> Rückvergütungsworkbench**.
@@ -368,8 +354,6 @@ Nachdem Sie Bereitstellungs-, Rückvergütungs- oder Abschreibungstransaktionen 
 4. Wählen Sie **OK**, um die nicht gebuchten Transaktionen zu löschen.
 
 ## <a name="cancel-a-posted-provision"></a>Eine gebuchte Bereitstellung abbrechen
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Nachdem Sie eine Bereitstellung verarbeitet und gebucht haben, führen Sie diese Schritte aus, um die gebuchten Bereitstellungstransaktionen abzubrechen.
 

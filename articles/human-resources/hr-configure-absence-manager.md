@@ -2,7 +2,7 @@
 title: Konfigurieren Sie die Rolle des Abwesenheitsmanagers
 description: In diesem Thema wird erläutert, wie Sie die Rolle Abwesenheitsmanager für die Verwaltung von Mitarbeiterurlaub einrichten.
 author: hasrivas
-ms.date: 07/19/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7f2a2fd0a1ad1cca19625ff1029962f608251f1d
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732344"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485753"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurieren Sie die Rolle des Abwesenheitsmanagers
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 In einigen Organisationen verwalten Personalmanager den Urlaub für ihr Team möglicherweise nicht. Stattdessen könnte ein Abwesenheitsmanager diesen Prozess für Teammitglieder über mehrere Abteilungen und Teams hinweg abwickeln. Abwesenheitsmanager verfügen über die folgenden Funktionen für das Urlaubsmanagement:
 
@@ -38,7 +36,7 @@ In einigen Organisationen verwalten Personalmanager den Urlaub für ihr Team mö
 
 1. Wechseln Sie zu **Systemverwaltung** Arbeitsbereiche **Funktionsverwaltung**.
 
-2. Auf der **Funktionsverwaltung** Registerkarte, aktivieren Sie die **(Vorschau) Abwesenheitsmanager zur Verwaltung des Urlaubs** darstellen.
+2. Aktivieren Sie auf der Registerkarte **Funktionsverwaltung** die Funktion **Abwesenheitsmanager zur Verwaltung des Urlaubs**.
 
 ## <a name="define-a-custom-hierarchy"></a>Definieren Sie eine benutzerdefinierte Hierarchie
 
@@ -89,7 +87,7 @@ Die Rolle des Abwesenheitsmanagers muss Mitarbeitern zugewiesen werden, damit si
 
 ## <a name="absence-manager-workspace"></a>Arbeitsbereich des Abwesenheitsmanagers
 
-Im **Mitarbeiter-Self-Service** Arbeitsbereich der Registerkarte **Abwesenheitsverwaltung** werden die Abwesenheitsinformationen der Mitarbeiter angezeigt, die dem Abwesenheitsmanager in der Abwesenheitshierarchie zugeordnet sind. Dem Abwesenheitsmanager stehen einige Optionen zur Verfügung: 
+Im Arbeitsbereich **Mitarbeiter-Self-Service** der Registerkarte **Abwesenheitsverwaltung** werden die Abwesenheitsinformationen der Mitarbeiter angezeigt, die dem Abwesenheitsmanager in der Abwesenheitshierarchie zugeordnet sind. Dem Abwesenheitsmanager stehen einige Optionen zur Verfügung: 
  - Abwesenheitsanträgen überprüfen.</br>
  - Im Namen eines Mitarbeiters einen Abwesenheitsantrag einreichen.</br>
  - Alle ihnen als Teil der Abwesenheitshierarchie zugewiesenen Mitarbeiter anzeigen.</br>

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2fd3d2e4f4c3e53913bd811728b0950c63b38bc5afe6fe5282b4cfb05f414619
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45c5774ac1f6db5845d6be6bf2f5d8f99063ea07
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744177"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488201"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Änderungsmanagement für vorhandene Produkte aktivieren
 
@@ -47,7 +47,9 @@ Wenn Sie also ein eindeutiges Produkt haben, können Sie es nur in ein technisch
 
 Jedem technischen Produkt muss eine *Technische Produktkategorie* zugewiesen werden. Diese Zuordnung nehmen Sie vor, wenn Sie den **Assistenten zur Konvertierung in technische Produkte** ausführen. Technische Produktkategorien müssen für alle relevanten Standardprodukte vorhanden sein, *bevor* Sie diese Produkte konvertieren können.
 
-Die technische Produktkategorie bietet eine Grundlage für das Erstellen eines technischen Produkts und legt eine Reihe von Standardwerten und Richtlinien fest. Die technische Produktkategorie muss mit dem Produkt übereinstimmen, dem Sie sie zuweisen. Zum Beispiel müssen der Produkttyp und die Dimensionsgruppe sowohl mit dem Produkt als auch mit seiner technischen Produktkategorie übereinstimmen. Weitere Informationen finden Sie unter [Engineering-Versionen und Engineering-Produktkategorien](engineering-versions-product-category.md).
+Die technische Produktkategorie bietet eine Grundlage für das Erstellen eines technischen Produkts und legt eine Reihe von Standardwerten und Richtlinien fest. Technische Attribute und ihre Standardwerte (wie für die technische Kategorie definiert) werden auch auf das resultierende technische Produkt angewendet. Sie können die Attributwerte bearbeiten und/oder dem resultierenden Produkt nach Bedarf weitere technische Attribute hinzufügen.
+
+Die technische Produktkategorie muss mit dem Produkt übereinstimmen, dem Sie sie zuweisen. Zum Beispiel müssen der Produkttyp und die Dimensionsgruppe sowohl mit dem Produkt als auch mit seiner technischen Produktkategorie übereinstimmen. Weitere Informationen finden Sie unter [Engineering-Versionen und Engineering-Produktkategorien](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
 > Der **Assistent zur Konvertierung in technisches Produkt** kann nur Produkte in technische Produkte konvertieren, bei denen die Version nicht in Transaktionen verfolgt wird. Daher muss die Option **Version in Transaktionen verfolgen** für technische Produktkategorien, die Sie zum Konvertieren bestehender Produkte erstellen, auf *Nein* festgelegt werden.

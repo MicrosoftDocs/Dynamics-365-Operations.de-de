@@ -2,7 +2,7 @@
 title: Einbetten von Canvas-Apps aus Power Apps
 description: In diesem Thema wird erläutert, wie Canvas-Apps aus Microsoft Power Apps in den Client eingebettet werden, um die Funktionalität des Produkts zu erhöhen.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 37ef6101a5a69e9c820347dd6f61c987467d40b3
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 32bf477bb42657b06f22f7677dcb580b38f0a55c
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344528"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488053"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Einbetten von Canvas-Apps aus Power Apps
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Power Apps ist ein Dienst, mit dem Entwickler und nicht technische Benutzer benutzerdefinierte Geschäftsanwendungen für Mobilgeräte, Tablets und das Web erstellen können, ohne Code schreiben zu müssen. Finance and Operations-Anwendungen unterstützen die Integration in Power Apps. Canvas-Apps, die Sie, Ihre Organisation oder das breitere Ökosystem entwickeln, können dann in Finance and Operations-Apps eingebettet werden, um die Funktionalität des Produkts zu erhöhen. Wenn Sie beispielsweise eine Canvas-App über Power Apps erstellen, die eine Finance and Operations-App mit Informationen ergänzen soll, die aus einem anderen System abgerufen werden.
 
