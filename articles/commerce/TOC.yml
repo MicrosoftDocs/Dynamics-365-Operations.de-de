@@ -1398,12 +1398,16 @@
               items:
                 - name: Lokalisierung von Commerce für Russland
                   href: localizations/rus-commerce-localization.md
-                - name: Vereinfachtes Kundenadressformat in Commerce POS für Russland
-                  href: localizations/rus-simplified-address.md
                 - name: Lokalisierung von Commerce für Russland einrichten
                   href: localizations/rus-commerce-setup.md
                 - name: Vorauszahlungen in Commerce für Russland
                   href: localizations/rus-commerce-prepayments.md
+                - name: Vereinfachtes Kundenadressformat in Commerce POS für Russland
+                  href: localizations/rus-simplified-address.md
+                - name: Beispiel für Belegdruckerintegration für Russland
+                  href: localizations/rus-fpi-sample.md
+                - name: Kundeninformationsmanagement für Russland
+                  href: localizations/rus-customer-information.md
             - name: Schweden
               items:
                 - name: Kassenfunktionen
@@ -1514,7 +1518,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/commerce/toc.json
             - name: Konfigurationen
               items:
-                - name: Erstellen von Konfigurationen
+                - name: Konfigurationen erstellen
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/commerce/toc.json
                 - name: Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
@@ -2216,15 +2220,17 @@
               items:
                 - name: Überblick über globale Adressbücher
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/commerce/toc.json
-                - name: Planen für das globale Adressbuch und andere Adressbücher
+                - name: Für das globale Adressbuch und andere Adressbücher planen
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurieren des globalen Adressbuchs
+                - name: Das globale Adressbuch konfigurieren
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
+                - name: Adresseinstellungen
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
                 - name: Häufig gestellte Fragen zu Adressbüchern
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurieren von Adressbüchern
+                - name: Adressbücher konfigurieren
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/commerce/toc.json
-            - name: Workflow-System
+            - name: Workflowsystem
               items:
                 - name: Übersicht über das Workflowsystem
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/commerce/toc.json
@@ -2328,8 +2334,12 @@
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
         - name: Erweiterbarkeit
           items:
-            - name: Handelsentwicklung und -erweiterbarkeit
-              href: dev-itpro/dev-retail-home-page.md
+            - name: Commerce-Entwicklung und -Erweiterbarkeit
+              items:
+                - name: Commerce für IT-Experten und Entwickler
+                  href: dev-itpro/dev-retail-home-page.md
+                - name: Lokale Entwicklungsumgebung einrichten
+                  href: dev-itpro/setup-local-dev-env.md
             - name: Onlinekanalerweiterbarkeit
               items:
                 - name: "Onlinekanalerweiterbarkeit\_– Übersicht"

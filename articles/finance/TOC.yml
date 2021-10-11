@@ -284,6 +284,8 @@
               href: accounts-payable/broker-contract.md
             - name: Lizenzvertragsmanagement
               href: accounts-payable/royalty-contract.md
+            - name: Verweise auf Originalrechnungen in Gutschriften (Kreditorenrechnungen)
+              href: accounts-payable/gbl-original-invoice-numbers-credit-notes-ap.md
             - name: Zahlungen und Ausgleiche
               items:
                 - name: Zentralisierte Zahlungen für Kreditorenkonten
@@ -1272,6 +1274,8 @@
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Übersicht über Momentaufnahmen
                   href: finance-insights/payment-snapshots.md
+            - name: Häufig gestellte Fragen zur Problembehandlung bei Finance Insights
+              href: finance-insights/finance-insights-troubleshooting-faq.md
         - name: Projektverwaltung und -buchhaltung
           items:
             - name: Übersicht über Projektverwaltung und Buchhaltung
@@ -1574,6 +1578,10 @@
                           href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: Berichterstellung bei mehreren MwSt.-Registrierungen
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Berichterstellung für Österreich
+                          items:
+                            - name: MwSt.-Erklärung
+                              href: localizations/emea-aut-vat-declaration-austria.md
                         - name: Berichterstellung in Frankreich
                           items:
                             - name: MwSt.-Erklärung
@@ -1636,10 +1644,12 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Bericht zu grenzüberschreitenden Dienstleistungen
                   href: localizations/emea-aut-vat-statement-details.md
-                - name: Intrastat-Bericht
+                - name: Intrastat (Österreich)
                   href: localizations/emea-aut-intrastat.md
                 - name: Einkaufsaufgaben
                   href: localizations/emea-aut-purchase-duties.md
+                - name: MwSt.-Erklärung
+                  href: localizations/emea-aut-vat-declaration-austria.md
             - name: Bahrain
               items:
                 - name: Übersicht zu Bahrain
@@ -2676,8 +2686,6 @@
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Vierteljährlicher MwSt.-Kommunikationsbericht
                   href: localizations/emea-ita-quarterly-vat-communication.md
-                - name: Bericht zur schwarzen Liste
-                  href: localizations/emea-ita-black-list-report.md
                 - name: Fälligkeitsdatum und Steuererfassung
                   href: localizations/emea-ita-competence-date.md
                 - name: Anlagenabschreibung
@@ -3801,9 +3809,11 @@
           items:
             - name: Überblick über die elektronische Berichterstellung
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Elektronische Meldekomponenten
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurationen
               items:
-                - name: Erstellen von Konfigurationen
+                - name: Konfigurationen erstellen
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
                 - name: Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
@@ -4505,15 +4515,17 @@
               items:
                 - name: Überblick über globale Adressbücher
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/finance/toc.json
-                - name: Planen für das globale Adressbuch und andere Adressbücher
+                - name: Für das globale Adressbuch und andere Adressbücher planen
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurieren des globalen Adressbuchs
+                - name: Das globale Adressbuch konfigurieren
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
+                - name: Adresseinstellungen
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/finance/toc.json
                 - name: Häufig gestellte Fragen zu Adressbüchern
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurieren von Adressbüchern
+                - name: Adressbücher konfigurieren
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/finance/toc.json
-            - name: Workflow-System
+            - name: Workflowsystem
               items:
                 - name: Übersicht über das Workflowsystem
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/finance/toc.json

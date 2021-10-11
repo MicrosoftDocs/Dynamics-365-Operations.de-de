@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-21.md
                 - name: Plattformupdates für Version 10.0.20 (August 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
-                - name: Plattformupdates für 10.0.19 (Juni 2021)
-                  href: get-started/whats-new-platform-updates-10-0-19.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -1080,6 +1078,8 @@
                   items:
                     - name: Entitäts- und Feldzuordnungen anpassen
                       href: data-entities/dual-write/customizing-mappings.md
+                    - name: Anleitung zum Anpassen des dualen Schreibens
+                      href: data-entities/dual-write/custom-best-practices.md
                     - name: Umgang mit mehreren Entitätszuordnungen
                       href: data-entities/dual-write/multiple-entity-maps.md
                     - name: Juristische Person nach Einrichtung des dualen Schreibens bearbeiten

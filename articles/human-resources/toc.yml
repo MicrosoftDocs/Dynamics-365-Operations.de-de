@@ -5,6 +5,8 @@
       items:
         - name: Neuerungen und Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: 20. September 2021
+          href: hr-whats-new-2021-09-20.md
         - name: 6. September 2021
           href: hr-whats-new-2021-09-06.md
         - name: "23.\_August\_2021"
@@ -287,10 +289,12 @@
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
             - name: Leistung durch Einplanung von Batchaufträgen nach Stunden verbessern
               href: hr-admin-troubleshooting-batch-jobs.md
-            - name: Leistung mit automatischen Bereinigungsaufgaben optimieren
+            - name: Leistung durch automatische Bereinigungsaufgaben optimieren
               href: hr-admin-troubleshooting-batch-history.md
             - name: Steckengebliebene Batchaufträge zurücksetzen
               href: hr-admin-troubleshooting-batch-execution.md
+            - name: Dataverse-Synchronisierung zurücksetzen
+              href: hr-admin-troubleshooting-dataverse-sync.md
             - name: Analyseberichte werden nicht aktualisiert
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Erstellen einer Umgebung im Power Apps Admin Center nicht möglich
@@ -485,6 +489,12 @@
               items:
                 - name: Vergütungsplan für Lohnarbeitskräfte
                   href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
+            - name: Andere Entitäten
+              items:
+                - name: Verlauf des Personennamens
+                  href: hr-admin-integration-payroll-api-person-name-history.md
+                - name: Wechselkurs
+                  href: hr-admin-integration-payroll-api-compensation-pay-frequency.md
             - name: Optionssätze
               items:
                 - name: Geschlecht
@@ -539,17 +549,19 @@
               items:
                 - name: Überblick über globale Adressbücher
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/human-resources/toc.json
-                - name: Planen für das globale Adressbuch und andere Adressbücher
+                - name: Für das globale Adressbuch und andere Adressbücher planen
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
-                - name: Konfigurieren des globalen Adressbuchs
+                - name: Das globale Adressbuch konfigurieren
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Adresseinstellungen
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/human-resources/toc.json
                 - name: Häufig gestellte Fragen zu Adressbüchern
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
-                - name: Konfigurieren von Adressbüchern
+                - name: Adressbücher konfigurieren
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
-                - name: Standorteigentümer verwalten
+                - name: Standortbesitzer verwalten
                   href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-location-owner.md?toc=/dynamics365/human-resources/toc.json
-            - name: Workflow-System
+            - name: Workflowsystem
               items:
                 - name: Übersicht über das Workflowsystem
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
@@ -781,6 +793,8 @@
                       href: hr-benefits-process-rate-changes.md
                 - name: ACA-Berichterstellung
                   href: hr-benefits-management-aca-reports.md
+                - name: Leistungsnachweis
+                  href: hr-benefits-statement.md
             - name: Vergütungsprogramm festlegen und verwalten
               href: hr-benefits-manage-program.md
             - name: Richtlinien zur Vorteilsberechtigung

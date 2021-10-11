@@ -861,7 +861,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/supply-chain/toc.json
             - name: Konfigurationen
               items:
-                - name: Erstellen von Konfigurationen
+                - name: Konfigurationen erstellen
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
@@ -1647,10 +1647,12 @@
                   href: master-planning/planning-optimization/release-process.md
                 - name: Passanalyse zur Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
-                - name: Unterschiede zwischen integrierter Masterplanung und Planungsoptimierung
+                - name: Unterschiede zwischen integrierter Produktprogrammplanung und Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: In der Planungsoptimierung nicht verwendete Parameter
                   href: master-planning/planning-optimization/not-used-parameters.md
+                - name: Beschaffungsplan
+                  href: master-planning/supply-schedule.md
                 - name: Filter auf einen Plan anwenden
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Produktprogrammplanung mit Bedarfsplanung
@@ -1759,8 +1761,6 @@
                   href: master-planning/tasks/create-intercompany-plan.md
                 - name: Ausgehenden geplanten Intercompany-Bedarf anzeigen
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: Mit internen Supply Chain Management-Kunden zusammenarbeiten
-                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
                 - name: Nettobedarf und Informationen zum Bedarfsverursacher in der integrierten Produktprogrammplanung
                   href: master-planning/net-requirements-built-in-master-planning.md
             - name: Planung
@@ -1881,15 +1881,15 @@
               items:
                 - name: Überblick über globale Adressbücher
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Planen für das globale Adressbuch und andere Adressbücher
+                - name: Für das globale Adressbuch und andere Adressbücher planen
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurieren des globalen Adressbuchs
+                - name: Das globale Adressbuch konfigurieren
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Häufig gestellte Fragen zu Adressbüchern
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurieren von Adressbüchern
+                - name: Adressbücher konfigurieren
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Workflow-System
+            - name: Workflowsystem
               items:
                 - name: Übersicht über das Workflowsystem
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/supply-chain/toc.json
@@ -2037,8 +2037,12 @@
                   href: procurement/purchase-order-approval-confirmation.md
                 - name: Mobiler Arbeitsbereich für Bestellungsbestätigung
                   href: procurement/purchase-order-mobile-workspace.md
+                - name: Eine Intercompany-Bestellung zur internen Verwendung erstellen und abrechnen
+                  href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                - name: Abweichungen der Intercompany-Auftragspreise überprüfen
+                  href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: Den Warenzugang auf der Bestellung erfassen
-                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                  href: procurement/tasks/record-receipt-goods-purchase-order.md
             - name: Bestellungserstellung
               items:
                 - name: Bestellungen manuell erstellen
@@ -2729,13 +2733,69 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Verkaufsangebote erstellen und bearbeiten
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
-            - name: Retouren
+            - name: Intercompany-Handel
               items:
-                - name: Verkaufsretouren
+                - name: Intercompany-Handel einrichten
+                  items:
+                    - name: Intercompany-Handel einrichten
+                      href: sales-marketing/intercompany-trade-set-up.md
+                    - name: Intercompany-Parameter
+                      href: sales-marketing/intercompany-parameters.md
+                    - name: 'Kreditoren, Debitoren und Artikel für den Intercompany-Handel einrichten'
+                      href: sales-marketing/intercompany-set-up-vendors-customers-items.md
+                    - name: Belastungen für Intercompany-Aufträge einrichten
+                      href: sales-marketing/intercompany-set-up-charges.md
+                    - name: Parameter zum Buchen eines Intercompany-Auftrags einrichten
+                      href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
+                - name: Intercompany-Informationen synchronisieren
+                  items:
+                    - name: Intercompany-Preise und -Rabatte synchronisieren
+                      href: sales-marketing/intercompany-sync-prices-discounts.md
+                    - name: Intercompany-Kosten synchronisieren
+                      href: sales-marketing/intercompany-sync-charges.md
+                    - name: Intercompany-Debitoreninformationen synchronisieren
+                      href: sales-marketing/intercompany-synch-customer-information.md
+                    - name: Intercompany-Dispositionscodes synchronisieren
+                      href: sales-marketing/intercompany-synchronize-disposition-codes.md
+                - name: Intercompany-Aufträge und -Rechnungen
+                  items:
+                    - name: Intercompany-Bestellungen und -Aufträge in mehreren Unternehmen erstellen
+                      href: sales-marketing/intercompany-orders-in-several-companies.md
+                    - name: Intercompany-Aufträge und -Rücklieferungsaufträge
+                      href: sales-marketing/intercompany-orders-and-return-orders.md
+                    - name: Einen Intercompany-Auftrag zur internen Verwendung erstellen
+                      href: sales-marketing/intercompany-sales-order-for-internal-use.md
+                    - name: Einen Intercompany-Auftrag für einen externen Debitor erstellen und abrechnen
+                      href: sales-marketing/intercompany-sales-order-for-external-customer.md
+                    - name: Intercompany-Reservierungen
+                      href: sales-marketing/intercompany-reservations.md
+                    - name: Einen ursprünglichen Intercompany-Auftrag ändern oder löschen
+                      href: sales-marketing/intercompany-change-delete-original-sales-order.md
+                    - name: Intercompany-Aufträge ändern
+                      href: sales-marketing/intercompany-change-orders.md
+                    - name: Intercompany-Batch- und -Seriennummern
+                      href: sales-marketing/intercompany-batch-serial-numbers.md
+                    - name: Intercompany-Lieferscheine
+                      href: sales-marketing/intercompany-packing-slips.md
+                    - name: Zahlungen für Intercompany-Debitorenrechnungen automatisch erfassen
+                      href: sales-marketing/intercompany-register-customer-payments-automatically.md
+                - name: Intercompany-Bestellungen
+                  items:
+                    - name: Eine Intercompany-Bestellung zur internen Verwendung erstellen und abrechnen
+                      href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                    - name: Abweichungen der Intercompany-Auftragspreise überprüfen
+                      href: sales-marketing/intercompany-check-price-discrepancies.md
+                - name: Intercompany-Währungsumrechnungen
+                  href: sales-marketing/intercompany-currency-conversions.md
+                - name: Intercompany-Produktprogrammplanungslauf
+                  href: sales-marketing/intercompany-master-scheduling.md
+            - name: Rücklieferungen
+              items:
+                - name: Retouren
                   href: warehousing/sales-returns.md
             - name: Provision
               items:
-                - name: Umsatzprovisionen registrieren
+                - name: Umsatzprovisionen erfassen
                   href: sales-marketing/tasks/register-sales-commissions.md
                 - name: Vertriebsprovisionsregeln festlegen
                   href: sales-marketing/tasks/set-up-sales-commission-rules.md
@@ -3067,6 +3127,8 @@
               href: landed-cost/landed-cost-vs-tms.md
             - name: Gesamttransportkosten-Modul einrichten und konfigurieren
               items:
+                - name: Modul für Gesamttransportkosten im System aktivieren
+                  href: landed-cost/landed-cost-enable.md
                 - name: Gesamttransportkosten-Parameter
                   href: landed-cost/landed-cost-parameters.md
                 - name: Beschaffungsparameter Gesamttransportkosten
@@ -3181,13 +3243,15 @@
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Gruppierung von Kommissionierpositionen
                       href: warehousing/pick-line-grouping.md
-                    - name: Zeitfenster für Lagerort zuweisen
+                    - name: Zuteilung von Zeitfenstern für Lagerort
                       href: warehousing/warehouse-slotting.md
                     - name: Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme
                       href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Verankerung
+                      href: warehousing/anchoring.md
                     - name: Ausgangssortierung
                       href: warehousing/outbound-sorting.md
-                    - name: Put-to-Wall - Put-to-Store
+                    - name: Put-to-Wall – Put-to-Store
                       href: warehousing/put-to-wall-put-to-store.md
                     - name: Ausgehende Workloadvisualisierung
                       href: warehousing/outbound-workload-visualization.md
@@ -3337,10 +3401,12 @@
                       href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
                     - name: Gemischter Ladungsträger – Empfang auf einem mobilen Gerät
                       href: warehousing/mixed-license-plate-receiving.md
-                    - name: Konfigurieren der Anzeige von älteren Chargen am Lagerort auf einem mobilen Gerät
+                    - name: Anzeige von älteren Chargen am Lagerort auf einem mobilen Gerät konfigurieren
                       href: warehousing/display-older-batches-within-warehouses.md
-                    - name: Entnahme der ältesten Charge mit einem mobilen Gerät
+                    - name: Älteste Charge mit einem mobilen Gerät entnehmen
                       href: warehousing/pick-oldest-batch.md
+                - name: Globale Parameter für mobile Geräte
+                  href: warehousing/mobile-device-parameters.md
                 - name: Benutzereinstellungen für mobile Geräte
                   href: warehousing/mobile-device-user-settings.md
                 - name: Verarbeitung von Ereignissen der Lagerort-App
