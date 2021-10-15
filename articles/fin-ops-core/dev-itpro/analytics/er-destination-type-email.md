@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: dc89e7ff43e5df358f6d41bd295e981c883085bc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343859"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595202"
 ---
 # <a name="email-er-destination-type"></a>E-Mail-ER-Zieltyp
 
@@ -75,7 +75,7 @@ Sie können den E-Mail-Absender und die E-Mail-Empfänger angeben. Standardmäß
 >
 > Wenn ein E-Mail-Ziel zur Änderung bei der [Runtime](electronic-reporting-destinations.md#security-considerations) angeboten wird, ist das Feld **Von** nur für Benutzer sichtbar, die über das `ERFormatDestinationSenderEmailMaintain`-Sicherheitsprivileg **Die Sender-E-Mail-Adresse für EB-Formatziel beibehalten** verfügen.
 >
-> Wenn das Feld **Von** so konfiguriert ist, dass eine andere E-Mail-Adresse als die des aktuellen Benutzers verwendet wird, muss entweder die **Senden als**- oder **Senden im Auftrag von**-Berechtigung im Voraus richtig [eingestellt](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) sein. Andernfalls wird zur Runtime die folgende Ausnahme geworfen: „E-Mail konnte nicht als \<from email account\> von dem \<current user account\>-Konto gesendet werden. Bitte überprüfen Sie die ‚Senden als‘-Berechtigungen auf dem \<from email account\>.“
+> Wenn das Feld **Von** so konfiguriert ist, dass eine andere E-Mail-Adresse als die des aktuellen Benutzers verwendet wird, muss entweder die **Senden als**- oder **Senden im Auftrag von**-Berechtigung im Voraus richtig [eingestellt](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) sein. Andernfalls wird zur Runtime die folgende Ausnahme geworfen: „E-Mail konnte nicht als \<from email account\> von dem \<current user account\>-Konto gesendet werden. Bitte überprüfen Sie die ‚Senden als‘-Berechtigungen auf dem \<from email account\>.“
 
 Sie können das Feld **Von** konfigurieren, um mehr als eine E-Mail-Adresse zurückzugeben. In diesem Fall wird die erste Adresse in der Liste als E-Mail-Senderadresse verwendet.
 

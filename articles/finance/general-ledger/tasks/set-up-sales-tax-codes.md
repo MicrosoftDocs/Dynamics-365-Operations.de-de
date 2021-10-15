@@ -2,7 +2,7 @@
 title: Mehrwertsteuercodes einrichten
 description: In diesem Thema wird erläutert, wie Mehrwertsteuercodes in Dynamics 365 Finance eingerichtet werden.
 author: twheeloc
-ms.date: 08/29/2018
+ms.date: 09/27/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f5ce2c8d9a117871191dd1c2d32d822bcc72d76fabaec146d9b8c27fc85dc058
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2539d701dda4ef5e1484d095b2d86d1f68a0dc98
+ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719197"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7562101"
 ---
 # <a name="set-up-sales-tax-codes"></a>Mehrwertsteuercodes einrichten
 
@@ -38,11 +38,19 @@ Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 8. Wählen Sie im **Aktivitätsbereich** oben in der Benutzeroberfläche **Mehrwertsteuercode** aus.
 9. Wählen Sie **Werte** aus.
 10. Geben Sie den Wert für diesen Steuercode in der Spalte **Wert** ein.
-    - Wenn auf dem Inforegister **Berechnung** im Feld „Ursprung“ die Option „Betrag pro Einheit“ ausgewählt ist, wird der Wert mit der Menge in der Transaktion multipliziert, um den Mehrwertsteuerbetrag zu berechnen.  Wenn der Steuercode keine auf Einheiten basierte Steuer ist, ist der Wert ein Prozentsatz, der auf den "Ursprung" für diesen Steuercode angewendet wird, um den Mehrwertsteuerbetrag zu berechnen.     
-11. Wählen Sie **Speichern**.
+
+    Wenn auf dem Inforegister **Berechnung** im Feld **Ursprung** die Option **Betrag pro Einheit** ausgewählt ist, wird der Wert mit der Menge in der Transaktion multipliziert, um den Mehrwertsteuerbetrag zu berechnen.  Wenn der Steuercode keine auf Einheiten basierte Steuer ist, ist der Wert ein Prozentsatz, der auf den „Ursprung“ für diesen Steuercode angewendet wird, um den Mehrwertsteuerbetrag zu berechnen.     
+
+11. Wählen Sie **Speichern** aus.
 12. Schließen Sie die Seite.
-13. Wählen Sie **Speichern**.
+13. Wählen Sie **Speichern** aus.
 
+Ab Version 10.0.22 von Microsoft Dynamics 365 Finance können Sie mit dem Feld **Steuertyp** den Typ des Steuercodes festlegen, wenn Sie den [Steuerservice](../../localizations/global-tax-calcuation-service-overview.md) verwenden und die Funktion [**Mehrere MwSt.-Registrierungsnummern unterstützen**](../../localizations/emea-multiple-vat-registration-numbers.md) im Arbeitsbereich **Funktionsverwaltung** aktiviert ist. Folgende Werte sind verfügbar:
 
+- Standard-MwSt.
+- Reduzierte MwSt.
+- MwSt. 0%
+- Verbrauchssteuer
+- Sonstige
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

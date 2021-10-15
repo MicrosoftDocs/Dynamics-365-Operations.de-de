@@ -1,8 +1,8 @@
 ---
 title: Cashflowplanung
 description: Dieses Thema bietet einen Überblick über den Cashflow-Planungsprozess. Es wird auch erklärt, wie Cashflow-Planung in andere Module im System integriert wird.
-author: JodiChristiansen
-ms.date: 12/16/2020
+author: panolte
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9455d132a928185bdfeb49c01c141b4c9b2c52e3b3beb9f8a3c96a38238f296
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779445"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7547954"
 ---
 # <a name="cash-flow-forecasting"></a>Cashflowplanung
 
@@ -83,7 +83,10 @@ Sie können die standardmäßige Einstellung für das Feld **Liquiditätskonto**
 
 ### <a name="budgeting"></a>Budgetierung
 
-Budgets, die aus den Budgetmodellen erstelllt werden, können in Cashflowplanungen einbezogen werden. Auf der Registerkarte **Budgetierung** der Seite **Cashflowplanungseinstellung** wählen Sie die Budgetmodelle aus, die in die Planung einbezogen werden sollen. Standardmäßig werden neue Budgetregistereinträge in der Planungen einbezogen, nachdem das Budgetmodell für Cashflowplanung aktiviert wurde. Das Einbeziehen in der Cashflow-Planung kann für einzelne Budgetregistereinträge überschrieben werden.
+Budgets, die aus den Budgetmodellen erstelllt werden, können in Cashflowplanungen einbezogen werden. Wählen Sie auf der Registerkarte **Budgetierung** der Seite **Cashflowplanungseinstellung** die Budgetmodelle aus, die in die Planung einbezogen werden sollen. Standardmäßig werden neue Budgetregistereinträge in der Planungen einbezogen, nachdem das Budgetmodell für Cashflowplanung aktiviert wurde.
+
+Budgetregistereinträge können durch Personalisierung individuell in die Cashflow-Prognose einbezogen werden. Wenn Sie der Seite **Budgetregistereintrag** die Spalte „In Cashflow-Prognosen einbeziehen“ hinzufügen, überschreibt das System die Einstellungen auf der Seit **Cashflow-Planungssetup**, um einen individuellen Budgetregistereintrag in die Prognose aufzunehmen.
+
 
 ### <a name="inventory-management"></a>Lagerverwaltung
 
@@ -144,7 +147,7 @@ Der Arbeitsbereich **Bargeldüberblick – alle Unternehmen** zeigt die Cashflow
 
 Der Arbeitsbereich **Bargeldüberblick – aktuelles Unternehmen** zeigt Cashflowplanungsanalysen in der definierten Buchhaltungswährung des Unternehmens. Die Buchhaltungswährung, die zur Analyse verwendet wird, wird auf der Seite **Sachkonto** definiert. Der Arbeitsbereich zeigt einen Überblick der Cashflowplanung und Bankkontosalden für das aktuelle Unternehmen an. Ein Diagramm aus Barzu- und -ausflüssen bietet eine Übersicht der künftigen Geldbewegungen und Salden in der Buchhaltungswährung, zusammen mit detaillierten Informationen zu den Planungsbuchungen. Sie können auch die folgenden Währungssalden sehen.
 
-Weitere Informationen zur Cashflowplanungsanalyse finden Sie im Thema [Power BI-Inhalt Bargeldübersicht](./cash-overview-power-bi-content.md).
+Weitere Informationen zur Cashflowplanungsanalyse finden Sie unter [Power BI-Inhalt – Bargeldübersicht](Cash-Overview-Power-BI-content.md).
 
 Darüber hinaus können Sie Cashflowplanungsdaten für bestimmte Konten, Aufträge und Artikel auf den folgenden Seiten anzeigen:
 

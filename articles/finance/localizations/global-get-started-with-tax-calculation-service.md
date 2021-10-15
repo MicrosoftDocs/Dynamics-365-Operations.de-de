@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b180a8cee1c5b7e9dda837915e6fdf94af30d06a
-ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
+ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
+ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465076"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7562125"
 ---
 # <a name="get-started-with-tax-calculation"></a>Erste Schritte mit der Steuerberechnung
 
@@ -100,7 +100,7 @@ Die Schritte in diesem Abschnitt beziehen sich nicht auf eine bestimmte juristis
     | 10.0.18         | Steuerkonfiguration - Europa 30.12.82     |
     | 10.0.19         | Steuerberechnungs-Konfiguration 36.38.193 |
     | 10.0.20         | Steuerberechnungs-Konfiguration 40.43.208 |
-    | 10.0.21         | Steuerberechnungs-Konfiguration 40.46.212 |
+    | 10.0.21         | Steuerberechnungs-Konfiguration 40.48.215 |
 
 9. Wählen Sie im Arbeitsbereich **Globalisierungsfunktionen** die Funktion **Funktionen**, wählen Sie die Kachel **Steuerberechnung** und wählen Sie dann **Hinzufügen**.
 10. Wählen Sie eine der folgenden Funktionstypen aus:

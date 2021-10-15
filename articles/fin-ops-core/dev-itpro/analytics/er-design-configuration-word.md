@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7040a74fbb08bed0b0c2808784d9c0b70f2adf96bef28783102c7eb117eeb851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a351567e0ed61fac040a6209a221833ab73a242a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718356"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595261"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Eine neue EB-Konfiguration zum Generieren von Berichten im Word-Format erstellen
 
@@ -46,7 +46,7 @@ Sie können verschachtelte **Excel\\Bereich**- und **Excel\\Zelle**-Elemente fü
 
 ![Hinzufügen der verschachtelten Elemente auf der Seite „Formatdesigner“.](./media/er-design-configuration-word-image4.gif)
 
-Wenn Sie Ihre Änderungen am EB-Format zur Entwurfszeit speichern, wird die hierarchische Formatstruktur in der angehängten Word-Vorlage als [benutzerdefinierter XML-Teil](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) gespeichert, der **Bericht** heißt. Sie müssen auf die geänderte Vorlage zugreifen, sie von Finance herunterladen, lokal speichern und in der Word-Desktopanwendung öffnen. Die folgende Abbildung zeigt die lokal gespeicherte Beispielvorlage für den Kontrollbericht, der den benutzerdefinierten XML-Teil **Bericht** enthält.
+Wenn Sie Ihre Änderungen am EB-Format zur Entwurfszeit speichern, wird die hierarchische Formatstruktur in der angehängten Word-Vorlage als [benutzerdefinierter XML-Teil](/visualstudio/vsto/custom-xml-parts-overview) gespeichert, der **Bericht** heißt. Sie müssen auf die geänderte Vorlage zugreifen, sie von Finance herunterladen, lokal speichern und in der Word-Desktopanwendung öffnen. Die folgende Abbildung zeigt die lokal gespeicherte Beispielvorlage für den Kontrollbericht, der den benutzerdefinierten XML-Teil **Bericht** enthält.
 
 ![Anzeige der Beispielberichtsvorlage in der Word-Desktopanwendung.](./media/er-design-configuration-word-image5.gif)
 

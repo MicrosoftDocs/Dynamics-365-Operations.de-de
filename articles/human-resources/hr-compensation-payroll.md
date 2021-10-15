@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: b9536a6e12b4037458910b7a2d27450ac175fd9d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483781"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559606"
 ---
 # <a name="ready-to-pay"></a>Für Zahlung bereit
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 > [!NOTE]
 > Wenn Sie einen Mitarbeiter als zahlungsbereit kennzeichnen möchten, müssen Sie zunächst die **(Vorschau-) Integration der Gehaltsabrechnung** Funktionalität in der Funktionsverwaltung aktivieren. Weitere Informationen zur Aktivierung der Vorschaufunktionen finden Sie unter [Funktonen verwalten](hr-admin-manage-features.md).
@@ -72,10 +70,9 @@ Schlägt eine dieser Validierungen fehl, können Sie den Mitarbeiter nicht als z
 
 Wenn das Feld **Zahlungsbereit** **Nein** ist, ist dies ein Hinweis darauf, dass Sie eine Aktion ausführen müssen, um sicherzustellen, dass das Arbeitskraft-Profil vollständig ist. Dies verhindert nicht, dass die Daten in einer Datenentität verfügbar gemacht werden. 
 
-## <a name="known-issues"></a>Bekannte Probleme
+## <a name="process-automation"></a>Prozessautomatisierung
 
-- Sie müssen die Funktion **Optimierter Mitarbeitereinstieg** in der Funktionsveraltung deaktivieren. Die Kacheln im Arbeitsbereich Vergütungsverwaltung funktionieren nicht richtig, wenn Sie diese Funktion verwenden.
-- Auf der Seite **Arbeitskraft** ist die Gruppe **Registerkarte Gehaltsabrechnung**, **Zahlungsbereit** für jede Benutzerrolle verfügbar. 
+Sie können die Validierung aller Mitarbeiter mit der [Prozessautomatisierung](/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation) automatisieren. Wechseln Sie im Arbeitsbereich **Vergütungsverwaltung** zu **Links** \> **Parameter** \> **Prozessautomatisierungen**.
 
 ## <a name="see-also"></a>Siehe auch
 

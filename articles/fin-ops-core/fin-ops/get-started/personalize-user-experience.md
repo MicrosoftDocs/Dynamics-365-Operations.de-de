@@ -2,7 +2,7 @@
 title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie die App personalisieren können.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344373"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581064"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
@@ -119,7 +119,8 @@ Folgende Tools sind auf der Symbolleiste **Benutzereinstellungen** verfügbar:
 
 - Nutzen Sie das Werkzeug **Auswählen**, um Eigenschaften eines Elements auszuwählen und zu ändern. Um dieses Tool zu verwenden, aktivieren Sie die Schaltfläche **Auswählen** auf der Symbolleiste, und wählen Sie dann das gewünschte Element aus. Das Eigenschaftenfenster des Elements wird geöffnet, von dem aus Sie beliebige Eigenschaften für dieses Element ändern können. Sie können den Prozess für andere Elemente auf der Seite wiederholen, die personalisierbar sind. Beachten Sie, dass einige Personalisierungseigenschaften möglicherweise nicht in einigen Szenarien verfügbar sind. Sie können beispielsweise kein Feld sperren, das erforderlich ist.
 - Wählen Sie das Tool **Ausblenden**, um ein Element auf der Seite auszublenden. Um dieses Tool zu verwenden, aktivieren Sie die Schaltfläche **Ausblenden** auf der Symbolleiste, und wählen Sie dann das gewünschte Element aus, das ausgeblendet werden soll. Wenn Sie das Tool **Ausblenden** verwenden, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können anschließend ein Element sichtbar machen, indem Sie es auswählen. Um zu sehen, wie die Seite aussehen wird, wenn Elemente ausgeblendet sind, wechseln Sie zu einem anderen Personalisierungstool oder schließen Sie die Personalisierungssymbolleiste.
-- Wählen Sie das Tool **Felder hinzufügen**, um Felder zur Seite hinzuzufügen. Wenn Sie dieses Tool verwenden, können Sie nur Felder hinzufügen, die Teil der Seitendefinition sind. Informationen zum Erstellen neuer Felder, die nicht Teil der aktuellen Seitendefinition sind, finden Sie unter [Erstellen und Arbeiten mit benutzerdefinierten Feldern](user-defined-fields.md). Nachdem Sie die Schaltfläche **Felder hinzufügen** auf der Symbolleiste ausgewählt haben, müssen Sie das Raster oder den Bereich zunächst aktivieren, dem Sie ein Feld hinzufügen möchten. Ein Dialogfeld wird in der Liste der Felder angezeigt, die dem Raster oder Bereich zugeordnet sind, das/den Sie ausgewählt haben. Wählen Sie im Dialogfeld mindestens ein Feld aus und wählen Sie **Aktualisieren**. Wenn Sie ein Feld entfernen, das Sie zuvor hinzugefügten haben, wiederholen Sie den Vorgang aber deaktivieren Sie die Option im Dialogfeld.
+- Wählen Sie das Tool **Felder hinzufügen**, um Felder zur Seite hinzuzufügen. Wenn Sie dieses Tool verwenden, können Sie nur Felder hinzufügen, die Teil der Seitendefinition sind. Informationen zum Erstellen neuer Felder, die nicht Teil der aktuellen Seitendefinition sind, finden Sie unter [Erstellen und Arbeiten mit benutzerdefinierten Feldern](user-defined-fields.md). Nachdem Sie die Schaltfläche **Felder hinzufügen** auf der Symbolleiste ausgewählt haben, müssen Sie das Raster oder den Bereich zunächst aktivieren, dem Sie ein Feld hinzufügen möchten. Ein Dialogfeld wird in der Liste der Felder angezeigt, die dem Raster oder Bereich zugeordnet sind, das/den Sie ausgewählt haben. Wählen Sie im Dialogfeld mindestens ein Feld aus, das über die Liste **Empfohlene Felder** oder **Alle Felder** hinzugefügt werden soll. Wählen Sie **Aktualisieren** aus, nachdem Sie die gewünschten Felder ausgewählt haben. Wenn Sie ein Feld entfernen, das Sie zuvor hinzugefügten haben, wiederholen Sie den Vorgang aber deaktivieren Sie die Option im Dialogfeld.
+    - Die Liste **Empfohlene Felder** zeigt Felder an, die zuvor von anderen Benutzern in Ihrer Organisation hinzugefügt wurden. Diese Liste von Feldern wird basierend auf der Wiederholungshäufigkeit des **Empfehlungs-Batchauftrags** aktualisiert. Eine ähnliche Erfahrung besteht beim Hinzufügen neuer Filterfelder mithilfe des Filterbereichs auf einer Seite.
 - Wählen Sie das Tool **Umlagern** aus, wenn Sie ein Element auswählen und an einen anderen Lagerplatz innerhalb der aktuellen Elementgruppe umlagern möchten. Sie können kein Element außerhalb seiner übergeordneten Gruppe verschieben. Um dieses Tool zu verwenden, aktivieren Sie die Schaltfläche **Umlagern** auf der Symbolleiste, und wählen Sie dann das gewünschte Element aus, das umgelagert werden soll. Wenn Sie ein Element auswählen, überprüft die App die Standorte, an die das Element verschoben werden kann. Diese Lagerplätze werden als *Abstiegszonen* bezeichnet. Da Sie das Element innerhalb der aktuellen Gruppe ziehen, wird jede Abstiegszone als farbige, fette Position neben dem Bereich angezeigt, in dem das Element abgelegt werden kann.
 - Wählen Sie das **Überspringen** Tool, um ein Element aus der Tastaturtabulatorsequenz der Seite zu entfernen. Wenn Sie die Schaltfläche **Überspringen** auf der Symbolleiste auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können Felder der Tabulatorsequenz interaktiv entfernen oder hinzufügen.
 - Verwenden Sie das Tool **In Kopfzeile anzeigen**, wenn ein Feld im Zusammenfassungsbereich des Inforegisters angezeigt werden soll. Wenn Sie die Schaltfläche **In Kopfzeile anzeigen** auf der Symbolleiste auswählen, werden alle Felder, die als Zusammenfassungsfelder ausgewählt wurden, in einem schattierten Container angezeigt. Sie können Felder der Inforegisterzusammenfassung interaktiv hinzufügen und Felder aus der Zusammenfassung entfernen, indem Sie die Felder auswählen.

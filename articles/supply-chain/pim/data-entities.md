@@ -1,7 +1,7 @@
 ---
 title: Produktdatenentitäten
 description: Dieses Thema enthält Informationen zu den verschiedenen Entitäten, die zum Importieren und Exportieren von Produktdaten verwendet werden können.
-author: cvocph
+author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2019-12-1
-ms.openlocfilehash: cf23284729cd10569ceb320d5fd30f8429974c3d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 2784e552d7984bbea9c74ad800c6305ab2a216e9
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344757"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567150"
 ---
 # <a name="product-data-entities"></a>Produktdatenentitäten
 
@@ -42,7 +42,7 @@ Sie müssen neue Datenentitäten verwenden, um Produktdaten zu importieren und e
 | Freigegebene eindeutig identifizierbare Produkte V2 | `EcoResDistinctProductV2Entity` | Diese Entität wird verwendet, um eindeutig identifizierbare Produkte zu exportieren. Diese eindeutig identifizierbaren Produkte können Produkte, Produktuntertypprodukte und alle Produktvarianten sein. |
 | Freigegebene Produktmaster V2 | `EcoResProductMasterV2Entity` | Diese Entität wird zum Importieren und Exportieren von Produktmaster verwendet. Sie ist nicht für die Datenverwaltung aktiviert. |
 | Element - Barcode | `EcoResProductBarcodeEntityV3` | Diese Entität wird verwendet, um Produkte und Barcodes zu exportieren. Diese Entität erlaubt keine Änderungsverfolgung, keine Aktualisierungen und keine Löschungen. Um die Änderungsverfolgung, Aktualisierungen oder Löschungen von Strichcodes zu verwenden, verwenden Sie die Entität **Artikel - Strichcode-Zuordnung**. |
-| Artikel-Strichcode-Zuordnung | `EcoResProductBarcodeAssociationEntity` | Diese Entität wird verwendet, um Produkte und Barcodes zu exportieren. Sie erlaubt Änderungsverfolgung, Aktualisierungen und Löschungen. Um die Entität zu verwenden, muss die Funktion *Element - Barcode-Verbesserungen* in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiviert sein. Ihr Entitätsschlüssel ist `AssociationID`, der die Assoziation zwischen dem Barcode und dem Produkt erstellt. Um diesen Schlüssel zu unterstützen, wird die Tabelle `InventitemBarcodeAssociation` für vorhandene Element-Strichcode-Daten aufgefüllt, wenn Sie die Funktion einschalten. Die Tabelle wird mit Hilfe eines Batch-Auftrags aufgefüllt und wenn Ihre Barcode-Tabelle eine große Anzahl von Datensätzen hat, kann das Ausführen des Batch-Auftrags viel Zeit in Anspruch nehmen. Daher empfehlen wir Ihnen, die Aktivierung der Funktion (und damit die Ausführung des Batch-Jobs) zu einem Zeitpunkt zu planen, der in Ihren Geschäftsplan passt. |
+| Artikel-Strichcode-Zuordnung | `EcoResProductBarcodeAssociationEntity` | Diese Entität wird verwendet, um Produkte und Barcodes zu exportieren. Sie erlaubt Änderungsverfolgung, Aktualisierungen und Löschungen. Um die Entität zu verwenden, muss die Funktion *Element - Barcode-Verbesserungen* in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiviert sein. Ihr Entitätsschlüssel ist `AssociationID`, der die Assoziation zwischen dem Barcode und dem Produkt erstellt. Um diesen Schlüssel zu unterstützen, wird die Tabelle `InventitemBarcodeAssociation` für vorhandene Element-Strichcode-Daten aufgefüllt, wenn Sie die Funktion einschalten. Die Tabelle wird mit Hilfe eines Batchauftrags aufgefüllt und wenn Ihre Barcode-Tabelle eine große Anzahl von Datensätzen hat, kann das Ausführen des Batchauftrags viel Zeit in Anspruch nehmen. Daher empfehlen wir Ihnen, die Aktivierung der Funktion (und damit die Ausführung des Batch-Jobs) zu einem Zeitpunkt zu planen, der in Ihren Geschäftsplan passt. |
 | Produktlebenszyklusstatus | `EcoResProductLifecycleSateEntity` | Diese Entität wird zum Importieren und Exportieren der verschiedenen Produktlebenszykluszustände verwendet, die einem Produkt zugewiesen werden können. |
 
 > [!NOTE]

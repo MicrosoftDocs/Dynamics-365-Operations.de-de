@@ -1,7 +1,7 @@
 ---
 title: Einkaufen von cXML-Erweiterungen
 description: Die Funktion „Einkaufen von cXML-Erweiterungen“ baut auf der vorhandenen externen Katalogfunktion PunchOut auf, die für Bestellanforderungen verwendet wird.
-author: dasani-madipalli
+author: Henrikan
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-08-03
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: d61087d21035e532ad86b6669626f55e8411a6f421bf69f817199e9063417761
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: f4a7ee091d73e2104571ac9134a9de9bab0a7074
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779613"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575463"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Einkaufen von cXML-Erweiterungen
 
@@ -40,7 +40,7 @@ Die folgende Abbildung fasst diese Konfiguration zusammen.
 
 ![Bereiche zum Einrichten von cXML-Funktionen.](media/cxml-settings-areas.png "Bereiche zum Einrichten von cXML-Funktionen")
 
-Außerdem müssen Sie [Batch-Auftrag für Bestellanforderungen](#po-batch) einrichten. Dieser Batch-Auftrag wird verwendet, um die bestätigten Bestellungen zu senden.
+Außerdem müssen Sie [Batchauftrag für Bestellanforderungen](#po-batch) einrichten. Dieser Batchauftrag wird verwendet, um die bestätigten Bestellungen zu senden.
 
 ## <a name="set-up-global-cxml-parameters"></a><a name="cxml-parameters"></a>Einrichten globaler cXML-Parameter
 
@@ -50,9 +50,9 @@ Verwenden Sie die Seite **cXML-Parameter**, um einige globale Einstellungen vorz
 
 Gehen Sie zu **Beschaffung \> Konfiguration \> cXML-Verwaltung \> cXML-Parameter** und stellen Sie die folgenden Parameter ein:
 
-- **cXML-Testmodus** – Dieser globale Parameter wirkt sich auf die Art und Weise aus, wie Bestellungen physisch vom Batch-Auftrag gesendet werden. Wählen Sie einen der folgenden Werte aus:
+- **cXML-Testmodus** – Dieser globale Parameter wirkt sich auf die Art und Weise aus, wie Bestellungen physisch vom Batchauftrag gesendet werden. Wählen Sie einen der folgenden Werte aus:
 
-    - **Test** – In diesem Modus kann der Batch-Auftrag ausgeführt werden und das XML-Dokument für die Nachricht wird generiert, aber nicht gesendet. Stattdessen wird es zu Überprüfungszwecken in der Bestellanforderung gespeichert. Dieser Modus ist hilfreich, wenn Sie sich in einer ersten Implementierung befinden und sehen möchten, wie Daten in die cXML-Nachricht eingegeben werden. Möglicherweise möchten Sie auch Beispielnachrichten generieren, die Sie zur Erstvalidierung an Lieferanten senden können.
+    - **Test** – In diesem Modus kann der Batchauftrag ausgeführt werden und das XML-Dokument für die Nachricht wird generiert, aber nicht gesendet. Stattdessen wird es zu Überprüfungszwecken in der Bestellanforderung gespeichert. Dieser Modus ist hilfreich, wenn Sie sich in einer ersten Implementierung befinden und sehen möchten, wie Daten in die cXML-Nachricht eingegeben werden. Möglicherweise möchten Sie auch Beispielnachrichten generieren, die Sie zur Erstvalidierung an Lieferanten senden können.
     - **Live** – In diesem Modus verwendet die Funktion die [externen Katalogeinstellungen](#external-catalog-setup), um jedes Dokument physisch an den Lieferanten zu übertragen.
 
 - **Aktualisierungen der Kaufanforderung senden** – Legen Sie diese Option auf *Ja* fest, um eine Aktualisierungsnachricht für Bestellungen zu senden. Legen Sie sie auf *Nein* fest, um zu verhindern, dass die Nachricht gesendet wird. Die meisten Lieferanten ziehen es vor, keine Aktualisierungsnachrichten zu erhalten. Stattdessen müssen Kunden sie per Telefon oder E-Mail kontaktieren, wenn eine Bestellung geändert werden soll. Dieser Parameter ist ein globaler Parameter, und im externen Katalog kann keine Überschreibung für jeden Lieferanten angegeben werden. Eine Bestellung wird als aktualisiert markiert, wenn Sie eine zweite Bestätigung auf einer Bestellung buchen, die erste Bestätigung jedoch bereits vom Lieferanten gesendet und bestätigt wurde. Wenn eine zweite Bestätigung vorliegt, die erste jedoch nicht gesendet wurde, wird die zweite Bestätigung als neues Dokument behandelt. Sie können eine Bestellung so oft bestätigen, wie Sie möchten, bis eine Bestätigung gesendet wird. Die nächste Bestätigung wird dann als Aktualisierungsnachricht behandelt.
@@ -208,13 +208,13 @@ Die **Bestellanforderung**-Seite enthält zwei Raster. Das Raster im oberen Teil
 
 ![Seite „Bestellanforderung“.](media/cxml-po-request.png "Seite „Bestellanforderung“")
 
-Wenn der Batch-Auftrag eingerichtet ist und ausgeführt wird, wird das Dokument gesendet. Sie können die Statusänderung anzeigen, nachdem das Dokument gesendet wurde. In der folgenden Abbildung ist das **Sendestatus der Bestellung**-Feld auf _Gesendet_ festgelegt. Das **Lieferantenstatus der Bestellanforderung**-Feld ist auf _Anerkannt_ festgelegt, um anzuzeigen, dass der Lieferant das Dokument erhalten hat und es lesen und in seinem System speichern konnte. Das Raster auf der **Bestellanforderungsverlauf**-Registerkarte zeigt die Zeit an, zu der das Dokument gesendet wurde. Weitere Informationen zu den verschiedenen Statuswerten, die möglicherweise auf dieser Seite angezeigt werden, finden Sie im [Überwachen von Bestellanforderungen](#monitor-po-requests)-Abschnitt.
+Wenn der Batchauftrag eingerichtet ist und ausgeführt wird, wird das Dokument gesendet. Sie können die Statusänderung anzeigen, nachdem das Dokument gesendet wurde. In der folgenden Abbildung ist das **Sendestatus der Bestellung**-Feld auf _Gesendet_ festgelegt. Das **Lieferantenstatus der Bestellanforderung**-Feld ist auf _Anerkannt_ festgelegt, um anzuzeigen, dass der Lieferant das Dokument erhalten hat und es lesen und in seinem System speichern konnte. Das Raster auf der **Bestellanforderungsverlauf**-Registerkarte zeigt die Zeit an, zu der das Dokument gesendet wurde. Weitere Informationen zu den verschiedenen Statuswerten, die möglicherweise auf dieser Seite angezeigt werden, finden Sie im [Überwachen von Bestellanforderungen](#monitor-po-requests)-Abschnitt.
 
 ![Statusmeldungen auf der Seite „Bestellanforderung“.](media/cxml-po-request-2.png "Statusmeldungen auf der Seite „Bestellanforderung“")
 
-## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Planen des Batch-Auftrags für Bestellanforderungen
+## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Planen des Batchauftrags für Bestellanforderungen
 
-Um den Batch-Auftrag zum Senden von Bestellanforderungen zu aktivieren, gehen Sie zu **Beschaffung \> Einrichtung \> cXML-Verwaltung \> Bestellanfrage** und wählen dann im Aktionsbereich auf der **Bestellanforderung**-Registerkarte in der **Batch**-Gruppe **Auftrag senden**, um das Dialogfeld **Kaufanforderung vorbereiten und senden** zu öffnen. In diesem Dialogfeld können Sie die Serie einrichten, wie Sie es normalerweise für Batch-Aufträge in Supply Chain Management tun. Wählen Sie ein Intervall basierend auf Ihrem Bestellvolumen. Obwohl Sie den Batch-Auftrag jede Minute ausführen können, ist es wahrscheinlich am besten, Batches während des gesamten Geschäftstages zu senden, basierend auf Auftragsbelegfenstern, die den Zeitplänen Ihrer Lieferanten entsprechen.
+Um den Batchauftrag zum Senden von Bestellanforderungen zu aktivieren, gehen Sie zu **Beschaffung \> Einrichtung \> cXML-Verwaltung \> Bestellanfrage** und wählen dann im Aktionsbereich auf der **Bestellanforderung**-Registerkarte in der **Batch**-Gruppe **Auftrag senden**, um das Dialogfeld **Kaufanforderung vorbereiten und senden** zu öffnen. In diesem Dialogfeld können Sie die Serie einrichten, wie Sie es normalerweise für Batch-Aufträge in Supply Chain Management tun. Wählen Sie ein Intervall basierend auf Ihrem Bestellvolumen. Obwohl Sie den Batchauftrag jede Minute ausführen können, ist es wahrscheinlich am besten, Batches während des gesamten Geschäftstages zu senden, basierend auf Auftragsbelegfenstern, die den Zeitplänen Ihrer Lieferanten entsprechen.
 
 Beispielsweise hat Ihr Lieferant eine Richtlinie, die besagt, dass alle Bestellungen, die bis 13.00 Uhr eingehen, am selben Tag versendet werden. In diesem Fall müssen Sie den Batch möglicherweise nur einige Male am Morgen ausführen, um Ihre Bestellungen mitzuteilen. Die restlichen Bestellungen werden dann am nächsten Tag versandt. Diese Entscheidung ist eine reine Geschäftsentscheidung. Sie können es überprüfen und die Parameter dafür entsprechend einstellen.
 

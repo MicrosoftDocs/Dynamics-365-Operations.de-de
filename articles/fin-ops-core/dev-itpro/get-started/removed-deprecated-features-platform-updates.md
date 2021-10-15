@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Plattformfunktionen
 description: Dieses Thema beschreibt Funktionen, die in den Plattform-Updates von Finance and Operations-Anwendungen entfernt wurden oder deren Entfernung geplant ist.
 author: sericks007
-ms.date: 09/17/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500108"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595144"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
@@ -32,14 +32,26 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
 
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.21 von Finance and Operations Apps
+
+### <a name="skype-for-business-online-support"></a>Skype for Business Online-Support
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Skype for Business Online wurde eingestellt. Weitere Informationen finden Sie unter [Der Skype for Business Online-Dienst wurde eingestellt](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/the-skype-for-business-online-service-has-retired/ba-p/2596601). |
+| **Ersetzt durch eine andere Funktion?**   | Derzeit nicht, obwohl wir möglicherweise in Betracht ziehen, in Zukunft die Präsenz von Teams hinzuzufügen.|
+| **Betroffene Produktbereiche**         | Webclient |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet. Die Einstellung **Skype-fähig** wurde ab Version 10.0.21 deaktiviert. Die Entfernung dieser Einstellung ist für April 2022 vorgesehen und die Funktion ist nicht mehr verfügbar, nachdem das Skype-Team den Dienst beendet hat. |
+ 
 ## <a name="feature-deprecation-effective-august-2021"></a>Hinweis auf Funktionsminderung mit Wirkung zum August 2021
 
 ### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL Berichte in  Lifecycle Services (LCS)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** |   Alle Aktivitäten und Überwachungen werden intern von der Plattform durch Automatisierung durchgeführt. Dies erfordert keinen manuellen Eingriff.|
-| **Ersetzt durch eine andere Funktion?**   | Nr. |
+| **Grund für veralteten Zustand/Entfernung** | Alle Aktivitäten und Überwachungen werden intern von der Plattform durch Automatisierung durchgeführt. Dies erfordert keinen manuellen Eingriff.|
+| **Ersetzt durch eine andere Funktion?**   | Ja, es gibt jetzt ein automatisiertes System, das diese Funktionen überflüssig macht. |
 | **Betroffene Produktbereiche**         | SQL-Berichte: Aktuelle DTU, aktuelle DTU-Details, Sperrdetails abrufen, Liste der aktuellen Plananleitung, Liste der Abfrage-IDs abrufen, SQL-Abfrageplan für eine bestimmte Plan-ID abrufen, Abfragepläne und Ausführungsstatus abrufen, Drosselungskonfiguration abrufen, Wartezeit abrufen Statistiken, Liste der teuersten Abfragen |
 | **Bereitstellungsoption**              | Cloud-Bereitstellung: Wirkt sich auf von Microsoft verwaltete Produktionsumgebungen und Sandbox-Umgebungen der Stufen 2 bis 5 aus. |
 | **Status**                         | Veraltet: Geplantes Entfernungsdatum im Oktober 2021. |
@@ -48,8 +60,8 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Wir stellen einige SQL-Aktionen in LCS als veraltet ein.  |
-| **Ersetzt durch eine andere Funktion?**   | Nr. |
+| **Grund für veralteten Zustand/Entfernung** | Wir stellen einige SQL-Aktionen in LCS als veraltet ein. Alle Aktivitäten und Überwachungen werden intern von der Plattform durch Automatisierung durchgeführt. Dies erfordert keinen manuellen Eingriff. |
+| **Ersetzt durch eine andere Funktion?**   | Ja, es gibt jetzt ein automatisiertes System, das diese Funktionen überflüssig macht. |
 | **Betroffene Produktbereiche**         | SQL-Aktionen: Planhinweis erstellen, um Plan-ID zu erzwingen, Planhinweis zum Hinzufügen von Tabellenhinweisen erstellen, Planhinweis entfernen, Seitensperren deaktivieren/aktivieren und Eskalation sperren, Statistik für eine Tabelle aktualisieren, Index neu erstellen, Index erstellen |
 | **Bereitstellungsoption**              | Cloud-Bereitstellung: Wirkt sich auf von Microsoft verwaltete Produktionsumgebungen und Sandbox-Umgebungen der Stufen 2 bis 5 aus. |
 | **Status**                         | Veraltet: Geplantes Entfernungsdatum im Oktober 2021. |
@@ -158,7 +170,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Im Allgemeinen bietet benutzerdefinierter Code nur begrenzte Vorteile und erfordert gleichzeitig erhebliche Ressourcen und Rechenleistung für den Support. Benutzerdefinierter Code wird hauptsächlich von Berichtsautoren verwendet, um öffentliche Methoden aus einer benutzerdefinierten Codeassembly aufzurufen. Der in der Cloud gehostete Dienst unterstützt jedoch keine Verweise auf benutzerdefinierte Assemblys für SSRS-Berichte. |
-| **Ersetzt durch eine andere Funktion?**   | Berichtsautoren können weiterhin öffentliche .NET-APIs für Mathematik‑, Konvertierungs‑ und Formatierungsvorgänge aus einem beliebigen Textfeldausdruck referenzieren. Weitere Informationen finden Sie unter [Code zu einem Bericht (SSRS) hinzufügen](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Ersetzt durch eine andere Funktion?**   | Berichtsautoren können weiterhin öffentliche .NET-APIs für Mathematik‑, Konvertierungs‑ und Formatierungsvorgänge aus einem beliebigen Textfeldausdruck referenzieren. Weitere Informationen finden Sie unter [Code zu einem Bericht (SSRS) hinzufügen](/sql/reporting-services/report-design/add-code-to-a-report-ssrs).  |
 | **Betroffene Produktbereiche**         | Teilmenge der in RDL definierten Anwendungsberichtsentwürfe, die benutzerdefinierten Code enthalten. |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Ab Version 10.0.13 gibt der Compiler eine Warnung für Fälle aus, in denen benutzerdefinierter Code in einer SSRS-Berichtsdefinition erkannt wird. Öffnen Sie die Berichtsentwurfsdefinition und entfernen Sie alle benutzerdefinierten Codeartefakte, um das Problem zu beheben. Diese Warnung wird in einem zukünftigen Update durch einen Compiler-Fehler ersetzt.   |

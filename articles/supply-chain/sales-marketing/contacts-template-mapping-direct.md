@@ -1,7 +1,7 @@
 ---
 title: Kontakte direkt von Sales mit Kontakten oder Debitoren in Supply Chain Management synchronisieren
 description: Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Entitäten „Kontakt (Kontakte)“ und „Kontakt (Debitoren)“ aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management zu synchronisieren.
-author: ChristianRytt
+author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 084030ab6ff06a1140621bb91435edf6cff4f82cc4bbc13813ab46f76e42174d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef51a97c38f446cd267ac8a621ce2a1f66efad18
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756846"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579039"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Kontakte direkt von Sales mit Kontakten oder Debitoren in Supply Chain Management synchronisieren
 
@@ -117,13 +117,13 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Dat
 > [!NOTE]
 > Die Zuordnung zeigt, welche Spalteninformationen von Sales zu Supply Chain Management synchronisiert werden.
 
-### <a name="contact-to-contact"></a>Kontakt zu Kontakt
+### <a name="contact-to-contact-example"></a>Beispiel für „Kontakt zu Kontakt“
 
-![Vorlagenzuordnung im Datenintegrator.](./media/contacts-direct-template-mapping-data-integrator-1.png)
+![Zuordnung der Vorlage „Kontakt zu Kontakt“ im Datenintegrator.](./media/contacts-direct-template-mapping-data-integrator-1.png)
 
-### <a name="contact-to-customer"></a>Kontakt zu Kunde
+### <a name="contact-to-customer-example"></a>Beispiel für „Kontakt zu Kunde“
 
-![Vorlagenzuordnung im Datenintegrator.](./media/contacts-direct-template-mapping-data-integrator-2.png)
+![Zuordnung der Vorlage „Kontakt zu Kunde“ im Datenintegrator.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
 ## <a name="related-topics"></a>Verwandte Themen

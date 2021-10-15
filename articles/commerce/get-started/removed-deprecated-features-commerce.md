@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Commerce.
 author: josaw
-ms.date: 08/16/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386740"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559558"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
 
@@ -37,6 +37,18 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 [!include [banner](../includes/preview-banner.md)]
 
+### <a name="overlapping-discounts-handling-setting-in-commerce-parameters"></a>Einstellung „Verarbeitung überlappender Rabatte“ in Commerce-Parametern
+
+Die Einstellung **Verarbeitung überlappender Rabatte** auf der Seite **Commerce-Parameter** ist in der Commerce-Version 10.0.21 eingestellt. In Zukunft wird die Commerce-Preis-Engine einen einzigen Algorithmus verwenden, um die optimale Kombination überlappender Rabatte zu bestimmen.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | <p>Die Einstellung **Verarbeitung überlappender Rabatte** in den Commerce-Parametern steuert, wie das Commerce-Preisgestaltungsmodul die optimale Kombination überlappender Rabatte sucht und bestimmt. Derzeit werden sind drei Optionen verfügbar:<p><ul><li> **Optimale Leistung** – Diese Option verwendet einen erweiterten Heuristikalgorithmus und die Methode [Schwellenwertklassifizierung](../optimal-combination-overlapping-discounts.md), um die beste Rabattkombination rechtzeitig zu priorisieren, zu bewerten und zu bestimmen.</li><li>**Ausgeglichene Kalkulation** – In der aktuellen Codebasis funktioniert diese Option genauso wie die Option **Optimale Leistung**. Daher ist es im Wesentlichen eine duplizierte Option.</li><li>**Umfassende Kalkulation** – Diese Option verwendet einen alten Algorithmus, der bei der Preisberechnung alle möglichen Rabattkombinationen durchläuft. Bei Aufträgen mit großen Positionen und Mengen kann diese Option zu Leistungsproblemen führen.</li></ul><p>Um die Konfiguration zu vereinfachen, die Leistung zu verbessern und Vorfälle zu reduzieren, die durch den alten Algorithmus verursacht werden, werden wir die Einstellung **Verarbeitung überlappende Rabatte** vollständig entfernen und die interne Logik des Preisgestaltungsmoduls von Commerce aktualisieren, sodass sie jetzt nur den erweiterten Algorithmus verwendet (d. h. den Algorithmus hinter der Option **Optimale Leistung**).</p> |
+| **Ersetzt durch eine andere Funktion?**   | Nein. Wir empfehlen Organisationen, die die Option **Ausgeglichene Kalkulation** oder **Umfassende Kalkulation** verwenden, zur Option **Optimale Leistung** zu wechseln, bevor diese Funktion entfernt wird. |
+| **Betroffene Produktbereiche**         | Preise und Rabatte |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Ab Version 10.0.21 wird die Einstellung **Verarbeitung überlappender Rabatte** im Oktober 2022 aus den Commerce-Parametern entfernt. |
+
 ### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Retail SDK wird über Lifecycle Services verteilt
 
 Das Retail SDK wird in Lifecycle Services (LCS) ausgeliefert. Diese Art der Verteilung ist in Version 10.0.21 veraltet. Zukünftig werden Retail SDK-Referenzpakete, Bibliotheken und Beispiele in öffentlichen Repositories auf GitHub veröffentlicht.
@@ -55,7 +67,7 @@ Retail-bereitstellbare Pakete, die mit dem Retail SDK MSBuild erzeugt wurden, si
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Ein für den Einzelhandel bereitstellbares Paket ist ein kombiniertes Paket, das einen kompletten Satz von Erweiterungspaketen und Installern enthält. Dieses kombinierte Paket macht die Bereitstellung komplex, da die CSU-Erweiterungen in die Cloud Scale-Unit gehen und die Installer in den Geschäften bereitgestellt werden. Die Installer enthalten die Erweiterung und das Basisprodukt, was die Updates schwierig macht. Bei jedem Upgrade ist ein Code Merge und eine Paketgenerierung erforderlich. Um diesen Prozess zu vereinfachen, werden die Erweiterungspakete jetzt in Komponenten aufgeteilt, um das Bereitstellen und Verwalten zu erleichtern. Mit dem neuen Ansatz sind Erweiterungen und Basisprodukt-Installer getrennt und können unabhängig voneinander gewartet und aktualisiert werden, ohne dass ein Code-Merge oder eine Neu-Paketierung erforderlich ist.|
+| **Grund für veralteten Zustand/Entfernung** | Ein für den Einzelhandel bereitstellbares Paket ist ein kombiniertes Paket, das einen kompletten Satz von Erweiterungspaketen und Installern enthält. Dieses kombinierte Paket macht die Bereitstellung komplex, da die CSU-Erweiterungen in die Cloud Scale-Unit gehen und die Installer in den Geschäften bereitgestellt werden. Die Installer enthalten die Erweiterung und das Basisprodukt, was die Updates schwierig macht. Bei jedem Upgrade sind ein Code Merge und eine Paketgenerierung erforderlich. Um diesen Prozess zu vereinfachen, werden die Erweiterungspakete jetzt in Komponenten aufgeteilt, um das Bereitstellen und Verwalten zu erleichtern. Mit dem neuen Ansatz sind Erweiterungen und Basisprodukt-Installer getrennt und können unabhängig voneinander gewartet und aktualisiert werden, ohne dass ein Code-Merge oder eine Neu-Paketierung erforderlich ist.|
 | **Ersetzt durch eine andere Funktion?**   | CSU-Erweiterungen, POS-Erweiterungs-Installer, Hardware-Stations-Erweiterungs-Installer |
 | **Betroffene Produktbereiche**         | Dynamics 365 Commerce Erweiterung und Bereitstellung |
 | **Bereitstellungsoption**              | Alle |
@@ -100,7 +112,7 @@ Die Entwicklung von POS-Erweiterungen mit ModernPos.sln, CloudPOs.sln, POS.Exten
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Ab Dezember 2020 wird die Unterstützung von Microsoft Internet Explorer 11 für alle Dynamics 365-Produkte veraltet sein und Internet Explorer 11 wird nach August 2021 nicht mehr unterstützt werden.<br><br>Dies wirkt sich auf Kunden aus, die Dynamics 365-Produkte verwenden, die für die Verwendung über eine Internet Explorer 11-Schnittstelle entworfen wurden. Nach August 2021 wird Internet Explorer 11 für solche Dynamics 365-Produkte nicht mehr unterstützt. |
+| **Grund für veralteten Zustand/Entfernung** | Ab Dezember 2020 wird die Unterstützung von Microsoft Internet Explorer 11 für alle Dynamics 365-Produkte eingestellt und Internet Explorer 11 wird nach August 2021 nicht mehr unterstützt.<br><br>Dies wirkt sich auf Kunden aus, die Dynamics 365-Produkte verwenden, die für die Verwendung über eine Internet Explorer 11-Schnittstelle entworfen wurden. Nach August 2021 wird Internet Explorer 11 für solche Dynamics 365-Produkte nicht mehr unterstützt. |
 | **Ersetzt durch eine andere Funktion?**   | Wir empfehlen den Kunden den Übergang zu Microsoft Edge.|
 | **Betroffene Produktbereiche**         | Alle Dynamics 365-Produkte |
 | **Bereitstellungsoption**              | Alle|

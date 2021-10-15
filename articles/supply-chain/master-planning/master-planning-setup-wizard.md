@@ -1,7 +1,7 @@
 ---
-title: Produktprogrammplanungs-Setup-Assistent
-description: Dieses Thema beschreibt die verschiedenen wichtigen Strategien und Parameter, die zum Einrichten der Produktprogrammpläne verwendet werden.
-author: t-benebo
+title: Einrichtungsassistent für Produktprogrammpläne
+description: In diesem Thema wird beschrieben, wie Sie den Einrichtungsassistent für Produktprogrammpläne ausführen, um die Masterplanung einzurichten.
+author: ChristianRytt
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
@@ -16,14 +16,14 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 26dea90a208eddc39b9a92d534fbc3a5242da29f4839a7f0e427b0efb03701b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b825858653599e8474a6fbd54b682c4fa0118053
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767459"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577503"
 ---
-# <a name="master-planning-setup-wizard"></a>Produktprogrammplanungs-Setup-Assistent
+# <a name="master-planning-setup-wizard"></a>Einrichtungsassistent für Produktprogrammpläne
 
 [!include [banner](../includes/banner.md)]
 
@@ -125,9 +125,9 @@ Wenn Sie **Fertig stellen** auswählen, wird die neue Konfiguration angewendet. 
 
 In diesem Abschnitt wird die Einrichtung der zwei fiktiven Unternehmen beschrieben, um anzuzeigen, wie die Einstellungen gemäß den Anforderungen jedes Unternehmens geändert werden kann.
 
-### <a name="example-1-contoso-manufacturer"></a>Beispiel 1: Contoso-Hersteller
+### <a name="example-1-contoso-manufacturer"></a>Beispiel 1: Contoso-Hersteller
 
-Der Contoso-Hersteller ist ein Unternehmen, das Lautsprecher erzeugt. Es kauft die verschiedenen Rohmaterialien und Komponenten, die für verschiedene Lieferanten für die endgültigen Lautsprecher verwendet werden. Nachfolgend sind einige der Merkmale der Lieferung und Fertigung:
+Contoso-Hersteller ist ein Unternehmen, das Lautsprecher erzeugt. Es kauft die verschiedenen Rohmaterialien und Komponenten, die für verschiedene Lieferanten für die endgültigen Lautsprecher verwendet werden. Nachfolgend sind einige der Merkmale der Lieferung und Fertigung:
 
 - Die letzten Artikel, die das Unternehmen erstellt hat, hat eine Stückliste (BOM)- Struktur.
 - Alle Artikel und endgültigen Komponenten werden von der Produktprogrammplanung geplant. Manuelle Planung wird nicht ausgeführt.
@@ -135,7 +135,7 @@ Der Contoso-Hersteller ist ein Unternehmen, das Lautsprecher erzeugt. Es kauft d
 - Die Produktionseinrichtung produkziert die letzten Artikel. Es wurde eine definierte Nummer von Mahl- und Bohrmaschinen bestimmt, die verwendet wird, um die Komponenten zu verarbeiten. Die verschiedenen Komponenten müssen von diesen Maschinen verarbeitet werden.
 - Es gibt viele Lieferanten. Die durchschnittliche Durchlaufzeit für Artikel ist eine Woche. Eine Gruppe Artikel vom gleichen Lieferanten hat eine Lieferzeit von sieben Wochen.
 
-Im Assistenten werden die folgenden Werte für den Contoso-Hersteller eingegeben:
+Im Assistenten werden die folgenden Werte für Contoso-Hersteller eingegeben:
 
 - **Disposition:**
 
@@ -153,7 +153,7 @@ Im Assistenten werden die folgenden Werte für den Contoso-Hersteller eingegeben
     - **Frage:** „Müssen Tätigkeiten in einzelne Aufgaben aufgeteilt geplant werden?“
     - **Antwort:** „Ja.“
 
-    Der Contoso-Hersteller muss für einzelne Aufgabengebiete planen und geplant werden, die im Fertigungsbereich ausgeführt werden. Daher wird die Feinterminierung verwendet.
+    Contoso-Fertigung muss für einzelne Aufgabengebiete planen und geplant werden, die im Fertigungsbereich ausgeführt werden. Daher wird die Feinterminierung verwendet.
 
 - **Kapazität:**
 
@@ -176,15 +176,15 @@ Im Assistenten werden die folgenden Werte für den Contoso-Hersteller eingegeben
 
     Alle Artikel, die für die Produktion verwendet werden, müssen geplant werden. Da die Artikel verschiedene Lieferzeiten haben, hat die Produktprogrammplanung eine bessere Leistung, wenn sie die Dispositionssteuerungsgruppen verwendet. Wieder kann eine Marge für eine Woche eingegeben werden, und die Auflösung kann gleichzeitig wie die Disposition ausgeführt werden.
 
-### <a name="example-2-contoso-retailer"></a>Beispiel 2: Contoso-Einzelhändler
+### <a name="example-2-contoso-retailer"></a>Beispiel 2: Contoso-Einzelhändler
 
-Der Contoso-Einzelhändler ist ein Vertriebsunternehmen in der Modeindustrie. Es verwendet Produktprogrammplanung, wenn Bestellungen hinzugefügt werden sollen, basierend auf den geplanten Verkäufen. Nachfolgend sind einige der Merkmale:
+Contoso-Einzelhändler ist ein Vertriebsunternehmen in der Modeindustrie. Es verwendet Produktprogrammplanung, wenn Bestellungen hinzugefügt werden sollen, basierend auf den geplanten Verkäufen. Nachfolgend sind einige der Merkmale:
 
-- Der Contoso-Einzelhändler verwendet eine Bedarfsplanung, um Verkäufe vorherzusagen. Bestellungen werden entsprechend der Planung geplant.
+- Contoso-Einzelhändler verwendet eine Bedarfsplanung, um Verkäufe vorherzusagen. Bestellungen werden entsprechend der Planung geplant.
 - Geschäfte verwenden Anforderungen für die Wiederbeschaffung.
 - Die Lieferzeit vom Hauptlagerort in jedes Geschäft dauert ungefähr zwei Wochen für alle Artikel.
 
-Im Assistenten werden die folgenden Werte für den Contoso-Einzelhändler eingegeben:
+Im Assistenten werden die folgenden Werte für Contoso-Einzelhändler eingegeben:
 
 - **Geplanter Bedarf:**
 
@@ -198,7 +198,7 @@ Im Assistenten werden die folgenden Werte für den Contoso-Einzelhändler eingeg
     - **Frage:** „Soll die Produktprogrammplanung automatisch die geplanten Aufträgen fest einplanen, z.B. in die Produktion oder in Bestellungen?“
     - **Antwort:** „Ja, wie in diesem Produktprogrammplan definiert.“ **1 Tag** wird eingegeben.
 
-    Da der Contoso-Einzelhändler Bestellungen direkt aus der geplanten Einkaufsbestellungen erstellt wird, ist es von Vorteil, wenn die geplanten Einkaufsbestellungen automatisch umgewandelt werden. Da das Unternehmen die Produktprogrammplanung jeden Tag ausführt, wird ein Sofortanlagezeitraum von einem Tag automatisch alle Aufträge umwandeln, die für den nächsten Tag benötigt werden.
+    Da Contoso-Einzelhändler Bestellungen direkt aus der geplanten Einkaufsbestellungen erstellt wird, ist es von Vorteil, wenn die geplanten Einkaufsbestellungen automatisch umgewandelt werden. Da das Unternehmen die Produktprogrammplanung jeden Tag ausführt, wird ein Sofortanlagezeitraum von einem Tag automatisch alle Aufträge umwandeln, die für den nächsten Tag benötigt werden.
 
 - **Genehmigte Anforderungen:**
 
