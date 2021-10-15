@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Zeitfenstern
-description: Sie können Zeitfenster verwenden, um die Planung von Serviceauftragspositionen zu optimieren.
-author: ShylaThompson
+description: Dieses Thema enthält ein Verfahren, das zeigt, wie Zeitfenster erstellt werden.
+author: kamaybac
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: ''
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e88277181a00479af85561f078803ec495a94a50ef1cbd4059f594709b47a7d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 93c8426fd03a849cf8c241d694507bd033fb34c5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775530"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571425"
 ---
-# <a name="create-time-windows"></a>Erstellen von Zeitfenstern   
+# <a name="create-time-windows"></a>Erstellen von Zeitfenstern
 
 [!include [banner](../includes/banner.md)]
 
 Sie können Zeitfenster verwenden, um die Planung von Serviceauftragspositionen zu optimieren.
 
-1. Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Servicevereinbarungen** \> **Zeitfenster**.
+1. Wechseln Sie zu **Serviceverwaltung** \> **Einstellungen** \> **Servicevereinbarungen** \> **Zeitfenster**.
 2. Erstellen Sie durch Drücken von **STRG+N** ein neues Zeitfenster.
 3. Geben Sie im Feld **Zeitfenster** einen Namen für das Zeitfenster ein.
 4. Geben Sie im Feld **Beschreibung** eine Beschreibung für das Zeitfenster ein.

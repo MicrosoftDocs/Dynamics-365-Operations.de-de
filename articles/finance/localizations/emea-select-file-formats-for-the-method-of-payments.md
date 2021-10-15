@@ -1,7 +1,7 @@
 ---
 title: Dateiformate für Zahlungsmethoden
 description: In diesem Thema werden die zwei Methoden für das Zuweisen von Dateiformaten, die für Zahlungsmethoden verwendet werden können, beschrieben.
-author: ShylaThompson
+author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.custom: 262514
 ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f1a90fc649cb8c27902c0492d96417c70c13580c3a4eede68f154df40e5b88a9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca396424256660f251d6889afffb3e90bb76fd54
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715918"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592558"
 ---
 # <a name="file-formats-for-methods-of-payment"></a>Dateiformate für Zahlungsmethoden
 

@@ -4,18 +4,18 @@ description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 
 author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f586a00943e23b458ede1470b353d7c018ba923
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 894686446436a390ec2d019672e3a2b8b0e5f5ef
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500554"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579735"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.21. (Oktober 2021)
 
@@ -26,20 +26,6 @@ Dieses Thema listet Funktionen auf, die in Microsoft Dynamics 365 Supply Chain M
 - **Vorschauversion für Release:** August 2021
 - **Allgemeine Verfügbarkeit des Release (manuelles Update):** September 2021
 - **Allgemeine Verfügbarkeit des Release (automatisches Update):** Oktober 2021
-
-## <a name="known-deployment-issue"></a>Bekanntes Bereitstellungsproblem
-
-Bei der Bereitstellung von Version 10.0.21 auf IaaS erhalten Sie möglicherweise die folgende Bereitstellungswarnung:
-
-**Warnungscode:** 95017
-
-**Warnmeldung:** Skript \[SetupDiagnostics\] konnte nicht gegen VM ausgeführt werden
-
-Die Bereitstellung wird trotz der Warnung funktionieren. Allerdings können die folgenden bekannten Probleme in den Lifecycle Services (LCS) auftreten:
-
-- Auf der Seite **Umgebungsüberwachung** erscheint der Link **Detaillierte Versionsinformationen anzeigen** nicht, sodass Sie die spezifischen Versionen der in Ihrer Umgebung installierten Module nicht sehen können. Ohne diese Daten können nachfolgende Hotfixes fehlschlagen, da der Prozess, der Hotfixes anwendet, diese Daten verwendet, um zu überprüfen, ob die Voraussetzungen für die Modulversion erfüllt sind. Da es nicht möglich ist, den PEAP/Vorschauversion in der Produktion zu verwenden oder Hotfixes anzuwenden, sollten die Auswirkungen minimal sein.
-- Die Registerkarten **Leistungsmetriken** und **Indexanalyse** auf der Seite **Umgebungsüberwachung** Seite unter Einblicke in SQL zeigen keine Daten an. Alle anderen Funktionen der **Umgebungsüberwachung** funktionieren wie gewünscht.
-- Die Seite **Vollständige Systemdiagnose** wird nicht zugänglich sein. Die zugehörigen Daten über den Status der nächtlichen Collector-Läufe und die von den Regeln erkannten Probleme werden ebenfalls nicht angezeigt.
 
 ## <a name="features-included-in-this-release"></a>In dieser Version enthaltene Funktionen
 

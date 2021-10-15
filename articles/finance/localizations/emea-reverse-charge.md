@@ -12,12 +12,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9996b4d6ab84070cc3e9863a454c4fd8ed14091490273cde0eec1ea2bc508fc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756225"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594718"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanismus zur Verlagerung der Steuerschuld für USt./GST-Regelung
 
@@ -45,7 +45,6 @@ Um die Verlagerung der Steuerschuld anzuwenden, müssen Sie die folgende Einrich
 Es wird empfohlen, dass Sie separate Mehrwertsteuercodes für Verkaufs- und Einkaufsvorgänge verwenden.
 
 <table>
-<body>
 <tr>
 <td><strong>Mehrwertsteuercode für Umsätze</strong></td>
 <td>Erstellen Sie einen Mehrwertsteuercode für Verkaufsvorgänge mit Verlagerung der Steuerschuld (<strong>Steuer</strong> &gt; <strong>Indirekte Steuern</strong> &gt; <strong>Mehrwertsteuer</strong> &gt; <strong>Mehrwertsteuercodes</strong>).
@@ -62,7 +61,6 @@ Sie müssen diesen negativen Mehrwertsteuercode einer Artikel-Mehrwertsteuergrup
 <p>Weitere Informationen finden Sie im nächsten Abschnitt &quot;Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen einrichten&quot;.</p>
 </td>
 </tr>
-</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen einrichten

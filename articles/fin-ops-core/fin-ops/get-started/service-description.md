@@ -2,19 +2,19 @@
 title: Servicebeschreibung für die Finance and Operations Apps
 description: Dieses Thema enthält die Servicebeschreibung für die Finance and Operations Apps.
 author: tomhig
-ms.date: 09/03/2021
+ms.date: 09/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 4df681641490fe3b43f4d927ad09e43007f83367
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472504"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581815"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Servicebeschreibung für die Finance and Operations Apps
 
@@ -28,7 +28,7 @@ Finance and Operations Apps sind Enterprise Resource Planning (ERP) Software-as-
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Zusammen mit [Business Intelligence](/power-bi/fundamentals/power-bi-service-overview), [Infrastruktur](https://azure.microsoft.com/global-infrastructure/), [Computer](/azure/service-fabric/service-fabric-overview), und [Datenbankdienste](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview), ermöglichen diese Apps Unternehmen die Ausführung branchenspezifischer und operativer Geschäftsprozesse. Mit Unterstützung ihres Implementierungspartners bestimmen Kunden die Konfiguration der Geschäftsanwendungslogik, die am besten zu ihren individuellen Geschäftsprozessen passt. Funktionalität und Geschäftsprozesse können durch eine oder eine Kombination der folgenden Lösungen erweitert oder erweitert werden:
+Zusammen mit [Business Intelligence](/power-bi/fundamentals/power-bi-service-overview), [Infrastruktur](https://azure.microsoft.com/global-infrastructure/), [Computer](/azure/service-fabric/service-fabric-overview), und [Datenbankdienste](https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/), ermöglichen diese Apps Unternehmen die Ausführung branchenspezifischer und operativer Geschäftsprozesse. Mit Unterstützung ihres Implementierungspartners bestimmen Kunden die Konfiguration der Geschäftsanwendungslogik, die am besten zu ihren individuellen Geschäftsprozessen passt. Funktionalität und Geschäftsprozesse können durch eine oder eine Kombination der folgenden Lösungen erweitert oder erweitert werden:
 
 - Erstellt in [Personalisierungserfahrung](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md)-Tools
@@ -197,17 +197,17 @@ In der folgenden Tabelle werden einige typische Szenarien und Aktivitäten für 
 | Stellen Sie alle Produktionsinstanzen und Nichtproduktionsinstanzen bereit. | X | |
 | Validieren Sie die bereitgestellten Produktionsinstanzen und Nichtproduktionsinstanzen bereit. | | X |
 | **Dienstupdates** | |
-| Microsoft wendet Dienstupdates auf bestimmte Nicht-Produktions- und Produktionsinstanzen an. | X | X |
-| Laden Sie das Update von LCS herunter, definieren, entwickeln und testen Sie das Update und stellen Sie das Code-Update-Paket zurück an LCS. | | X |
-| Fordern Sie an, dass Erweiterungsupdates auf die Produktionsinstanz angewendet werden. | | X |
+| Wenden Sie Dienstupdates auf bestimmte Nicht-Produktions- und Produktionsinstanzen an. | X | |
+| Wenden Sie Dienstaktualisierungen von LCS manuell auf Sandbox-Instanzen an. Definieren, entwickeln, testen Sie das Update, und stellen Sie das Code-Update-Paket wieder an LCS bereit. | | X |
+| Fordern Sie an, dass Erweiterungsupdates auf die Produktionsinstanz angewendet werden, und planen Sie sie. | | X |
 | Erstellen Sie eine Code- und Datensicherung für die Produktionsinstanz, bevor Updates angewendet werden. | X | |
 | Falls ein Fehler auftritt, setzen Sie die Produktionsinstanz auf die Code- und Datensicherung zurück. | X | |
 | **Datenverwaltung (Sichern, Wiederherstellen und Aktualisieren)** | | |
 | Sichern Sie die Datenbank. | X | |
 | Bestimmen Sie hohe Verfügbarkeit und einen Notfallwiederherstellungsplan. | X | |
-| Überwachen Sie die Leistung der Produktionsinstanzdatenbank. | X | X |
-| Steuern Sie die Leistung der Produktionsinstanzdatenbank. | X | X |
-| Initiieren Sie das Kopieren der Produktionsinstanzdatenbank in eine Nichtproduktionsinstanz. | | X |
+| Überwachen Sie die Leistung der Produktionsinstanzdatenbank. | X | |
+| Steuern Sie die Leistung der Produktionsinstanzdatenbank. | X | |
+| Führen Sie eine Point-in-Time-Aktualisierung der Produktionsinstanzdatenbank auf eine Nicht-Produktionsinstanz durch. | | X |
 | **Aktualisierung der Infrastruktur** | | |
 | Planen Sie regelmäßige Infrastruktur-Updates. | X | |
 | **Hoch- und Runterskalieren (Benutzer, Speicher und Instanzen)** | | |
@@ -215,7 +215,7 @@ In der folgenden Tabelle werden einige typische Szenarien und Aktivitäten für 
 | Aktualisieren Sie Nutzungsänderungen im LCS Subscription Estimator-Tool. | | X |
 | Melden Sie alle wesentlichen Leistungsprobleme, die sich auf die Nutzung des Dienstes auswirken. | | X |
 | Verwalten Sie proaktiv die Ressourcen, die für den jeweiligen Dienst erforderlich sind. | X | |
-| Untersuchen und beheben Sie Vorfälle. | X | X |
+| Untersuchen und beheben Sie Vorfälle. | X | |
 | **Sicherheit (Benutzerzugriff)** | | |
 | Gewähren Sie Benutzerzugriff auf den Dienst. | | X |
 | Bieten Sie LCS-Projektzugriff für die Verwaltung und den Betrieb von Instanzen, die über LCS bereitgestellt wurden. | | X |

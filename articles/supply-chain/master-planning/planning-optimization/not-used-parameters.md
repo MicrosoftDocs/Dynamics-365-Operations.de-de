@@ -1,7 +1,7 @@
 ---
 title: Von der Planungsoptimierung nicht verwendete Parameter
 description: In diesem Thema werden die Parameter aufgelistet, welche die Planungsoptimierung derzeit während des Betriebs nicht berücksichtigt.
-author: crytt
+author: ChristianRytt
 ms.date: 09/02/2021
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 52cfe5be60e5a04ce2e2239574d7fedc83e7cff0
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 61cdbe3d966d06193b1dc5c145233e53be3946ff
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474795"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571064"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Von der Planungsoptimierung nicht verwendete Parameter
 

@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 70ebe47997f3b5945a433150ae66de6eb41ff12acf4f4f3c8268351116bdd313
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767950"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592627"
 ---
 # <a name="confirm-and-transfer"></a>Bestätigen und übertragen
 
@@ -45,8 +45,8 @@ Sie können nur Ladungen aufteilen, die alle der folgenden Kriterien erfüllen:
 
 - Einer oder mehrerer Ladungspositionen wurden Mengen entnommen.
 - Der Ladungsstatus ist geringer als geladen.
-- Es gibt keine Ladungspositionsdaten. (Diese Daten werden durch Ladungsträger-Konsolidierung am Bereitstellungslagerplatz erstellt und die Funktion *Bestätigen und übertragen* unterstützt keine Ladungsträger-Konsolidierung.)
-- Derzeit wartet kein Bestand auf das Verpacken an einem Verpackungslagerplatz. (Die Funktion *Bestätigen und übertragen* unterstützt keinen bereits für die Packstation entnommenen Bestand, der noch nicht verpackt wurde.)
+- Es gibt keine Ladungspositionsdaten. (Diese Daten werden durch Ladungsträger-Konsolidierung am Bereitstellungslagerplatz erstellt und die Funktion Bestätigen und übertragen unterstützt keine Ladungsträger-Konsolidierung.)
+- Derzeit wartet kein Bestand auf das Verpacken an einem Verpackungslagerplatz. (Die Funktion *Bestätigen und übertragen* unterstützt keinen für die Packstation entnommenen Bestand, der noch nicht verpackt wurde, es sei denn, verpackte Container werden an Staginglagerplätze mit erstellter Ladearbeit platziert.)
 
 > [!NOTE]
 > Diese Funktion unterscheidet sich von der Transportladungsfunktion, die an Lagerorten verwendet werden sollte, die vor der Entnahme niemals Ladungen planen und erstellen können, sondern die stattdessen den verfügbaren Transportraum nach Abschluss der Entnahme laden.

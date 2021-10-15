@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4b64863c668b71335b8935037cc1c2de1fcc620e0f3f91e97ca38614334e6cc9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e1dbb97ba56b5910dda368b9ec15e27a683dde5
+ms.sourcegitcommit: 5c0a0adeb859cc1ade6f067444f3bf08a895b35a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774968"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7557391"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Startseite der Globalen Bestandsbuchhaltung
 
@@ -41,13 +41,16 @@ Eine Konvention ist eine Sammlung von Richtlinien für die Bestandsbuchhaltung, 
 
 Die Globale Bestandsbuchhaltung ist derzeit in den folgenden geografischen Regionen von Azure verfügbar:
 
-- Vereinigte Staaten
+- USA
 - Europa
 - Vereinigtes Königreich
 - Australien
 - Kanada
+- Südamerika
 
 Wenn Sie versuchen, das Add-In von einer anderen geografischen Region aus zu installieren, wird Microsoft Dynamics Lifecycle Services (LCS) eine Nachricht anzeigen, dass Ihre geografische Region nicht unterstützt wird. Die Globale Bestandsbuchhaltung unterstützt keine lokalen Bereitstellungen von Supply Chain Management.
+
+Bei Problemen mit der Aktivierung von Global Inventory Accounting in einer der hier aufgeführten unterstützten geografischen Regionen senden Sie eine E-Mail mit Ihrer Umgebungs-ID an das [Team der Globalen Bestandsbuchhaltung](mailto:GlobalInvAccount@microsoft.com) zur Validierung.
 
 ## <a name="licensing"></a>Lizenzierung
 

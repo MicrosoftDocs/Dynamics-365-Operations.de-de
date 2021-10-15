@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 898ca7b33e39ec33990fecc4c3a7229620fbfddd5ce8ad14423af38047187e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf3fc5f333333b9a832ecb9c185473e476ac231d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761973"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559508"
 ---
 # <a name="payroll-worker-address"></a>Lohn – Adresse der Arbeitskraft
 
@@ -36,20 +36,26 @@ Diese Entität gibt die Anschrift und den Arbeitsplatz für die Gehaltsabrechnun
 
 | Eigenschaft</br>**Physikalischer Name**</br>**_Typ_** | Verwenden | Beschreibung |
 | --- | --- | --- |
-| **Ort**</br>mshr_city</br>*Zeichenfolge* | Schreibgeschützt</br>Erforderlich | Die für die Adresse festgelegte Stadt.   |
-| **Personalnummer**</br>mshr_personnelnumber</br>*Zeichenfolge* | Schreibgeschützt</br>Erforderlich | Die eindeutige Personalnummer des Mitarbeiters.  |
-| **Land bzw Region**</br>mshr_countryregionid</br>*Zeichenfolge* | Schreibgeschützt</br>Erforderlich | Das für die Adresse festgelegte Land bzw. die Region.  |
-| **Gültig ab**</br>mshr_postaladdressvalidfrom</br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt </br>Erforderlich | Das Datum, ab dem die Adresse gültig ist. |
-| **Arbeitsadresse** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes-Optionssatz](hr-admin-integration-payroll-api-no-yes.md)* | Schreibgeschützt</br>Erforderlich | Gibt an, ob die Adresse der Ort ist, an dem der Mitarbeiter arbeitet. |
-| **Landkreis**</br>mshr_county</br>*Zeichenfolge* | Schreibgeschützt</br>Erforderlich | Der für die Adresse festgelegte Landkreis.  |
-| **ID der Adresse der Arbeitskraft**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Erforderlich</br>Vom System generiert | Ein vom System generierter GUID-Wert zur eindeutigen Identifizierung der Adresse.  |
-| **Primärfeld**</br>mshr_primaryfield</br>*Zeichenfolge* | Schreibgeschützt</br>Erforderlich |  |
-| **Straße**</br>mshr_street</br>*Zeichenfolge* | Schreibgeschützt</br>Erforderlich | Der für die Adresse festgelegte Straße. |
-| **Gültig bis**</br>mshr_postaladdressvalidto</br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt </br>Erforderlich | Das Datum, bis zu dem die Adresse gültig ist.  |
-| **Lagerplatzkennung**</br>mshr_locationidbr>*Zeichenfolge* | Schreibgeschützt <br>Erforderlich | Die Kennung für Adresse.  |
-| **PLZ**</br>mshr_zipcode<br>*Zeichenfolge* | Schreibgeschützt <br>Erforderlich |Die für den Mitarbeiter festgelegte Kennungsnummer.  |
-| **Wohnadresse**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes-Optionssatz](hr-admin-integration-payroll-api-no-yes.md)* | Schreibgeschützt</br>Erforderlich | Gibt an, ob die Adresse der Ort ist, an dem der Mitarbeiter wohnt. |
-| **Bundesstaat**</br>mshr_state</br>*Zeichenfolge* | Schreibgeschützt</br>Erforderlich | Der für die Adresse festgelegte Bundesstaat.  |
+| **Personalnummer**</br>mshr_personnelnumber</br>*Zeichenfolge* | Schreibgeschützt | Die eindeutige Personalnummer des Mitarbeiters. |
+| **Lagerplatzkennung**</br>mshr_locationidbr>*Zeichenfolge* | Schreibgeschützt | Die Kennung für Adresse. |
+| **Wohnadresse**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes-Optionssatz](hr-admin-integration-payroll-api-no-yes.md)* | Schreibgeschützt | Ein Wert, der angibt, ob die Adresse der Ort ist, an dem der Mitarbeiter wohnt. |
+| **Arbeitsadresse** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes-Optionssatz](hr-admin-integration-payroll-api-no-yes.md)* | Schreibgeschützt | Ein Wert, der angibt, ob die Adresse der Ort ist, an dem der Mitarbeiter arbeitet. |
+| **Land bzw Region**</br>mshr_countryregionid</br>*Zeichenfolge* | Schreibgeschützt</br>Erforderlich | Das Land oder die Region, das/die für die Adresse definiert ist. |
+| **Postleitzahl**</br>mshr_zipcode<br>*Zeichenfolge* | Schreibgeschützt | Die für den Mitarbeiter festgelegte Identifikationsnummer. |
+| **Straße**</br>mshr_street</br>*Zeichenfolge* | Schreibgeschützt | Die für die Adresse definierte Straße. |
+| **Ort**</br>mshr_city</br>*Zeichenfolge* | Schreibgeschützt | Die für die Adresse definierte Stadt. |
+| **Bundesstaat**</br>mshr_state</br>*Zeichenfolge* | Schreibgeschützt | Das Bundesland oder der Kanton, das/die für die Adresse definiert ist. |
+| **Verwaltungsbezirk**</br>mshr_county</br>*Zeichenfolge* | Schreibgeschützt | Das für die Adresse definierte Land. |
+| **Gültig ab**</br>mshr_postaladdressvalidfrom</br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt | Das Datum, ab dem die Adresse gültig ist. |
+| **Gültig bis**</br>mshr_postaladdressvalidto</br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt | Das Datum, bis zu dem die Adresse gültig ist. |
+| **Primärfeld**</br>mshr_primaryfield</br>*Zeichenfolge* | Schreibgeschützt | Das Primärfeld. |
+| **ID der Adresse der Arbeitskraft**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Vom System generiert | Ein vom System generierter GUID-Wert (Global Unique Identifier) zum eindeutigen Identifizieren der Adresse. |
+
+## <a name="relations"></a>Referenzen
+
+| Eigenschaftswert | Zugehörige Entität | Navigationseigenschaft | Erfassungstyp |
+| --- | --- | --- | --- |
+| _mshr_fk_worker_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Worker_id | mshr_FK_PayrollEmployeeEntity_Address |
 
 ## <a name="example-query"></a>Beispielabfrage
 

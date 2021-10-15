@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 83b2d3c35e3e68aaad22bc03a46b17abc1526073895057717fd055dacdfbee5c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718476"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594908"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Benutzerdefinierte Speicherorte für generierte Dokumente angeben
 
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Ändern Sie die vorhandene Klasse `AssetRollForwardService` und schreiben Sie Code, um ein benutzerdefiniertes Empfängerwerk für die Berichtsausführung einzurichten. Beachten Sie, dass beim Erstellen eines benutzerdefinierten Empfängerwerks der anwendungsgesteuerte Parameter, der einen Zielordner angibt, übergeben wird. Auf diese Weise wird dieser Zielordner zum Speichern generierter Dateien verwendet.
 
     > [!NOTE] 
-    > Stellen Sie sicher, dass der angegebene Ordner (in diesem Beispiel **c:\\0**) im lokalen Dateisystem des Servers vorhanden ist, auf dem der AOS-Dienst ausgeführt wird. Ansonsten wird zur Laufzeit eine [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-Ausnahme ausgelöst.
+    > Stellen Sie sicher, dass der angegebene Ordner (in diesem Beispiel **c:\\0**) im lokalen Dateisystem des Servers vorhanden ist, auf dem der AOS-Dienst ausgeführt wird. Ansonsten wird zur Laufzeit eine [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception)-Ausnahme ausgelöst.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

@@ -3,7 +3,7 @@ title: Übersicht über die Steuerintegration für Commerce-Kanäle
 description: Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Commerce verfügbar sind.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/10/2021
+ms.date: 09/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 35612714f9443f1f37b744d87eda373df84aaadd
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 323d9f4816a4f622143692ead3d1871980b19b52
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343286"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512579"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Übersicht über die Steuerintegration für Commerce-Kanäle
 
@@ -141,6 +141,7 @@ Die folgenden Beispiele für die Fiskalintegration sind derzeit im Commerce SDK 
 - [Integrationsbeispiel für Steuererfassungsdienst für Tschechische Republik](./emea-cze-fi-sample.md)
 - [Beispiel zur Integration der Kontrolleinheit für Schweden](./emea-swe-fi-sample.md)
 - [Integrationsbeispiel für Steuererfassungsdienst für Deutschland](./emea-deu-fi-sample.md)
+- [Beispiel für Belegdruckerintegration für Russland](./rus-fpi-sample.md)
 
 Die folgende Fiskalintegrationsfunktionalität wird auch durch die Verwendung des Fiskalintegrations-Frameworks implementiert, ist aber "out of the box" verfügbar und ist nicht im Commerce SDK enthalten:
 

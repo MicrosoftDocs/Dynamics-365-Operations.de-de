@@ -1,7 +1,7 @@
 ---
 title: Qualitätsprüfungsaufträge
 description: Dieses Thema beschreibt, wie Sie manuell oder automatisch Qualitätsprüfungsaufträge erstellen und wie Sie damit arbeiten, um in Microsoft Dynamics 365 Supply Chain Management Inspektionen durchzuführen und Testergebnisse zu erfassen.
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d06cd7766f4445a248e0394e75ae390314762cf211a2780da76b4f52aa5bccd4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69a4a61a599f1279ec7ad68ebb20c7b4b0f37005
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739801"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571856"
 ---
 # <a name="quality-orders"></a>Qualitätsprüfungsaufträge
 
@@ -56,7 +56,7 @@ Um einen Qualitätsprüfungsauftrag manuell zu erstellen, folgen Sie diesen Schr
     - Wenn Sie **Produktion**, **Quarantäne** oder **Kuppelprodukt-Produktion** gewählt haben, referenzieren Sie im Feld **Referenznummer** die Produktionsauftrags-, Batch- oder Quarantäneauftragsnummer.
     - Wenn Sie **Arbeitsplanvorgang** gewählt haben, geben Sie die folgenden Informationen an:
 
-        - **Referenznummer** – Verweist auf die Produktionsauftrags- oder Batch-Auftragsnummer.
+        - **Referenznummer** – Verweist auf die Produktionsauftrags- oder Batchauftragsnummer.
         - **Betriebsnr.** - Verweisen Sie auf die spezifische Nummer des Arbeitsplanvorgangs.
         - **Vorgang** – Verweisen Sie auf den spezifischen Arbeitsplanvorgang.
         - **Ressource** – Verweisen Sie auf die spezifische Ressource, die mit dem Arbeitsplanvorgang verwendet werden muss.
@@ -78,7 +78,7 @@ Qualitätsprüfungsaufträge werden verwendet, um die Details zu Inspektionen un
 - **Produktion** – Dieser Referenztyp zeigt an, dass Sie einen Bestand inspizieren, der mit einem Produktionsauftrag zusammenhängt. Inspektionen dieses Typs werden oft verwendet, um fertige Waren zu prüfen, bevor sie in den Bestand aufgenommen werden.
 - **Quarantäne** – Dieser Referenztyp zeigt an, dass Sie Bestände prüfen, die mit einem Quarantäneauftrag verbunden sind. Quarantäneaufträge sind ein spezieller Auftragstyp, der den Bestand in einem abgetrennten Lagerort oder einem abgetrennten Bereich in Ihrem Lager verfolgt. Inspektionen dieses Typs werden oft verwendet, um Waren zu inspizieren, die ein Debitor zurückgegeben hat oder die zur weiteren Analyse in Quarantäne gestellt wurden. Quarantäneaufträge können aus Qualitätsprüfungsaufträgen generiert werden. Alternativ können sie aus anderen Quellen erzeugt werden, und dann können Qualitätsprüfungsaufträge mit den Quarantäneaufträgen verknüpft werden.
 - **Arbeitsplanvorgang** – Dieser Referenztyp zeigt an, dass Sie Bestände prüfen, die sich auf einen bestimmten Schritt des Arbeitsplans für einen Produktionsauftrag beziehen. Inspektionen dieses Typs werden typischerweise verwendet, um die Ressource in Fertigung (RIF) eines Produkts zu analysieren, bevor es in den nächsten Schritt des Produktionsprozesses übergeht.
-- **Kuppelprodukt-Produktion** – Dieser Referenztyp zeigt an, dass Sie einen Bestand prüfen, der sich auf ein Kuppelprodukt eines Produktionsauftrags bezieht. Inspektionen dieses Typs werden typischerweise verwendet, um das Kuppelprodukt eines Batch-Auftrags zu prüfen, bevor das Kuppelprodukt in den Bestand aufgenommen wird.
+- **Kuppelprodukt-Produktion** – Dieser Referenztyp zeigt an, dass Sie einen Bestand prüfen, der sich auf ein Kuppelprodukt eines Produktionsauftrags bezieht. Inspektionen dieses Typs werden typischerweise verwendet, um das Kuppelprodukt eines Batchauftrags zu prüfen, bevor das Kuppelprodukt in den Bestand aufgenommen wird.
 
 ## <a name="view-and-create-quality-orders-from-various-parts-of-the-system"></a>Qualitätsprüfungsaufträge aus verschiedenen Teilen des Systems anzeigen und erstellen
 

@@ -13,12 +13,12 @@ ms.search.region: Austria
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c40c76a85ac04532aa3431f69603c6a2690ae569
-ms.sourcegitcommit: 59d507c0dd6f0bec3ab72034e12d582133ab2a52
+ms.openlocfilehash: c81445b1ed85ee52e4f1e9b2f5dba84fbe25ac11
+ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "7496640"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7562190"
 ---
 # <a name="austria-overview"></a>Österreich – Übersicht
 
@@ -51,12 +51,16 @@ Informationen zum Einrichten des Mehrwertsteuer (VAT)- Auszugs für juristische 
 
 Weitere Informationen zu den Einstellungen des MwSt. -Auszugs finden Sie unter [MwSt-Berichterstattung für Europa](emea-vat-reporting.md).
 
+## <a name="new-vat-declaration-u30"></a>Neue MwSt.-Erklärung U30
+Weitere Informationen zum neuen Design der MwSt.-Erklärung U30 für Österreich finden Sie unter [MwSt.-Erklärung (Österreich)](emea-aut-vat-declaration-austria.md).
+
 ## <a name="reports-for-austria"></a>Berichte für Österreich
 
-| Bericht                     | Bericht abrufen | Weitere Informationen                 |
+| Bericht                     | Bericht abrufen | Zusätzliche Informationen                 |
 |----------------------------|--------------------------|----------------------------------------|
 |Bericht "Grenzüberschreitende Dienstleistungen"|**Hauptbuch** > **Berichte** > **Extern** > **Grenzüberschreitende Dienstleistungen**|Mit diesem Bericht wird eine Zusammenfassung der eingehenden und ausgehenden grenzübergreifenden Dienstleistungen, der Länder, die Anbieter oder Empfänger grenzübergreifender Dienstleistungen sind, sowie Nettobeträge, die für die Dienstleistungen bezahlt werden, gedruckt. Dieser Bericht wird in der Regel von Buchhaltungsleitern, Buchhaltern und Vertriebsleitern verwendet, um sich über den Status von Verkaufstransaktionen zu erkundigen. Weitere Informationen finden Sie unter [Bericht zu grenzüberschreitenden Dienstleistungen](emea-aut-cross-border-services-report.md).|
 |Intrastat-Bericht|**Steuer** > **Meldungen** > **Außenhandel** > **Intrastat**|Sie können die Intrastat-Seite verwenden, um Informationen zum Handel zwischen EU-Ländern/Regionen zu generieren und zu melden. Die österreichische Intrastat-Meldung enthält Informationen über die Inzahlungnahme von Waren zur Meldung. Weitere Informationen finden Sie unter [Österreichisches Intrastat](emea-aut-intrastat.md).|
+
 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

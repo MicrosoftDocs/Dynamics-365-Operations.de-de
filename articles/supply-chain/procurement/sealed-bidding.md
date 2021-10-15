@@ -1,22 +1,22 @@
 ---
 title: Versiegeltes Angebot für Angebotsanforderungen
 description: In diesem Thema wird beschrieben, wie Sie versiegelte Angebote einrichten, um die Angebotsantworten von Kreditoren geheim zu halten, bis die Versiegelung vom Einkaufspersonal aufgehoben wird.
-author: yanansong
+author: Henrikan
 ms.date: 08/02/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yanansong
+ms.author: henrikan
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 02cbe9d6a6d157208d73ed756efae24df2a082de
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 96549b6053ba75f2d5b9a85bcd5b7feb006f0f1b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500633"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578079"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Versiegeltes Angebot für Angebotsanforderungen
 
@@ -53,7 +53,11 @@ Bevor Sie mit der Einrichtung oder Verwendung dieser Funktion beginnen, müssen 
 Supply Chain Management verwendet Verschlüsselungsschlüssel, um alle versiegelten Angebote zu schützen und sie bis zum entsprechenden Zeitpunkt geheim zu halten. Es nutzt die Funktionen von Key Vault, um die erforderlichen Schlüssel zu generieren und zu verwalten. Daher müssen Sie eine Verbindung von Supply Chain Management zu einem Schlüsseltresor einrichten, um das System zu aktivieren.
 
 > [!IMPORTANT]
-> Der Schlüsseltresor muss in einem Azure-Abonnement erstellt werden, das sich im Besitz Ihrer Organisation befindet (nicht das Abonnement, in dem Sie Supply Chain Management ausführen).
+> Die Schlüsseltresore, die Sie für versiegelte Gebote verwenden, müssen die folgenden Anforderungen erfüllen:
+>
+> - Wenn Sie eine Sandbox zum Entwickeln und Testen verwenden, benötigen Sie einen dedizierten Schlüsseltresor für die Sandbox und einen separaten für die Produktion.
+> - Jeder Schlüsseltresor muss in einem Azure-Abonnement erstellt werden, das sich im Besitz Ihrer Organisation befindet (nicht das Abonnement, in dem Sie Supply Chain Management ausführen).
+> - Jeder Schlüsseltresor darf ausschließlich für versiegelte Gebote verwendet werden. Sie dürfen Ihre versiegelten Gebotsschlüsseltresore nicht für andere Zwecke verwenden.
 
 Jedes Angebot ruft seinen eigenen geheimen Schlüssel ab. Dieser Schlüssel wird jedes Mal verwendet, wenn ein Benutzer das Angebot anzeigt, aktualisiert oder die Versiegelung aufhebt.
 

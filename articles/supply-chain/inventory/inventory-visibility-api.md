@@ -2,7 +2,7 @@
 title: Öffentliche Inventartransparenz-APIs
 description: Dieses Thema beschreibt die öffentlichen APIs, die von Inventory Visibility bereitgestellt werden.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 09/30/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6dff54f54a495c2b4a7837f3a41f410d418cf12b
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: 43fa94118c4d76e021bb635d720208d5f971db19
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474651"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592487"
 ---
 # <a name="inventory-visibility-public-apis"></a>Öffentliche Inventartransparenz-APIs
 
@@ -82,6 +82,8 @@ Microsoft hat eine Benutzeroberfläche (UI) in Power Apps eingebaut, so dass Sie
 
 Das Sicherheits-Token der Plattform wird für den Aufruf der öffentlichen API von Inventory Visibility verwendet. Daher müssen Sie ein _Azure Active Directory (Azure AD) Token_ generieren, indem Sie Ihre Azure AD Anwendung verwenden. Sie müssen dann das Azure AD-Token verwenden, um das _Zugriffstoken_ vom Sicherheitsdienst zu erhalten.
 
+Microsoft stellt eine standardmäßige *Postman*-Token-Abfragesammlung bereit. Sie können diese Sammlung in Ihre *Postman*-Software importieren, indem Sie den folgenden gemeinsamen Link verwenden: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
+
 Gehen Sie folgendermaßen vor, um ein Sicherheitsdienst-Token zu erhalten.
 
 1. Melden Sie sich am Azure-Portal an und suchen Sie dort die `clientId`- und `clientSecret`-Werte für Ihre Dynamics 365 Supply Chain Management-App.
@@ -131,7 +133,7 @@ Gehen Sie folgendermaßen vor, um ein Sicherheitsdienst-Token zu erhalten.
    - Der Wert von `context` muss die LCS-Umgebungs-ID sein, unter der Sie das Add-In bereitstellen möchten.
    - Legen Sie alle anderen Werte fest, wie im Beispiel gezeigt.
 
-1. Senden Sie eine HTTP-Anforderung, die die folgenden Eigenschaften hat:
+1. Rufen Sie einen Zugriffstoken (`access_token`) ab, indem Sie eine HTTP-Anforderung mit den folgenden Eigenschaften senden:
 
    - **URL:** `https://securityservice.operations365.dynamics.com/token`
    - **Methode:** `POST`
@@ -148,7 +150,8 @@ Gehen Sie folgendermaßen vor, um ein Sicherheitsdienst-Token zu erhalten.
    }
    ```
 
-In späteren Abschnitten werden Sie `$access_token` verwenden, um das Token darzustellen, das im letzten Schritt abgeholt wurde.
+> [!IMPORTANT]
+> Wenn Sie die *Postman*-Anforderungssammlung zum Aufrufen öffentlicher APIs für die Inventarsichtbarkeit anfordern, müssen Sie für jede Anforderung ein Bearertoken hinzufügen. Um Ihren Bearertoken zu finden, wählen Sie die Registerkarte **Autorisierung** unter der Anforderungs-URL und den **Bearertoken**-Typ aus, und kopieren Sie das Zugriffstoken, das im letzten Schritt abgerufen wurde. In späteren Abschnitten dieses Themas werden `$access_token` verwendet, um das Token darzustellen, das im letzten Schritt abgerufen wurde.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Erstellen von Ereignissen bei Lagerbestandsänderungen
 
@@ -508,7 +511,7 @@ Im Hauptteil dieser Anforderung ist `dimensionDataSource` immer noch ein optiona
 
 - `organizationId` sollte nur einen Wert enthalten, ist jedoch nach wie vor ein Array.
 - `productId` kann einen oder mehrere Werte enthalten. Wenn es sich um ein leeres Array handelt, werden alle Produkte zurückgegeben.
-- `siteId` und `locationId` werden in der Bestandsanzeige für die Partitionierung verwendet.
+- `siteId` und `locationId` werden in der Bestandsanzeige für die Partitionierung verwendet. Sie in einer *Lagerbestand abfragen*-Anforderung mehr als einen Wert für `siteId` und `locationId` angeben. In der aktuellen Version müssen Sie die beiden Werte `siteId` und `locationId` angeben.
 
 Der `groupByValues`-Parameter sollte Ihrer Konfiguration für die Indizierung folgen. Weitere Informationen finden Sie unter [Produktindex-Hierarchie-Konfiguration](./inventory-visibility-configuration.md#index-configuration).
 

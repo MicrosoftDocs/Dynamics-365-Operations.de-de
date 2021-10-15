@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dcb253fabbb183003048119c7a627bf0ab960050
-ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
+ms.openlocfilehash: a3cc431307d840d393a454e91f202c07c38d2512
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7429227"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559338"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Fester Vergütungsplan für Lohnabrechnung
 
@@ -42,7 +42,7 @@ Physischer Name: mshr_payrollfixedcompensationplanentity.
 | **Positionskennung**</br>mshr_positionid</br>*Zeichenfolge* | Schreibgeschützt | Positionskennung, die mit dem Mitarbeiter und dem Beitritt zum festen Vergütungsplan verknüpft ist. |
 | **Gültig ab**</br>mshr_validfrom</br>*Datum-/Uhrzeit-Offset* |  Schreibgeschützt | Datum, ab dem der feste Vergütungsplan für den Mitarbeiter gültig sind.  |
 | **Gültig bis**</br>mshr_validto</br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt | Datum, bis zu dem der feste Vergütungsplan für den Mitarbeiter gültig ist. |
-| **Lohnzahlungshäufigkeit**</br>mshr_payfrequency</br>*Zeichenfolge* | Schreibgeschützt | Die Häufigkeit, mit der der Mitarbeiter bezahlt wird.  |
+| **Lohnzahlungshäufigkeit**</br>mshr_payfrequency</br>*Zeichenfolge* | Schreibgeschützt | Die ID der [Häufigkeit der Vergütungszahlung](hr-admin-integration-payroll-api-compensation-pay-frequency.md) für den angegebenen Lohnsatz. |
 | **Währung**</br>mshr_currency</br>*Zeichenfolge* | Schreibgeschützt | Die für den festen Vergütungsplan definierte Währung. |
 | **Entität „Fester Vergütungsplan für Lohnabrechnung“**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | Vom System generiert | Ein vom System generierter GUID-Wert zur eindeutigen Identifizierung des Vergütungsplans. |
 

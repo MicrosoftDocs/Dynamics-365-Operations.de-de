@@ -1,7 +1,7 @@
 ---
 title: Übersicht über die Integration mit Microsoft Dynamics 365 Field Service
 description: Dieser Artikel enthält eine Übersicht über die Integration mit Microsoft Dynamics 365 Field Service
-author: ChristianRytt
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: ecfd19cf79b9547c67b5bb90cef451d4aeab8f5ee775e50578161783e370462f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 23661bca91ccd7b7a04c763e60cfca9a99d62bfa
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761757"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566454"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Übersicht über die Integration mit Microsoft Dynamics 365 Field Service
 
@@ -58,7 +58,7 @@ Die zusätzlichen Funktionen in der zweiten Phase geben Feldtechnikern Einblicke
 - Supply Chain Management-Projekte verbunden mit Dynamics 365 Field Service-Arbeitsaufträgen
 - Mit Dynamics 365 Field Service-Arbeitsaufträge verbundene Supply Chain Management-Projekte übernehmen diese Projektnummer in den -Auftrag, um die Rechnungsstellung vom Projekt aus zu ermöglichen. 
 
-![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service.](./media/FSv2overview.png)
+![Synchronisation von Geschäftsprozessen zwischen Supply Chain Management und Field Service, einschließlich Bestands- und Projektinformationen.](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Die zweitee Phase der Integration zwischen Field Service und Supply Chain Management ermöglicht die Synchronisierung der folgenden Vorlagen:
 - Lagerorte (Supply Chain Management zu Field Service) - Lagerorte aus Supply Chain Management zu Field Service [Erweiterte Abfrage] 

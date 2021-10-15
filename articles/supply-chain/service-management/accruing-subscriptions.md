@@ -1,7 +1,7 @@
 ---
 title: Antizipieren von Daueraufträgen
 description: Mithilfe von Servicedaueraufträgen werden Umsatzerlöse ab dem Datum, an dem eine Gebührenbuchung fakturiert wurde, manuell abgegrenzt.
-author: ShylaThompson
+author: kamaybac
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d51bcdcc268cf0662ef3d82e6cc8581fd4894bba4b2f1f905b9dfd324cce98
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d17737c415f6204359dae3ea4b2a0cb4ebb5d65
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719574"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580479"
 ---
 # <a name="accruing-subscriptions"></a>Antizipieren von Daueraufträgen 
 
@@ -65,7 +65,7 @@ Damit Umsatzerlöse für Daueraufträge abgegrenzt werden können, muss das Kont
 
 ## <a name="enable-revenue-accrual-on-a-subscription-group"></a>Aktivieren der Abgrenzung von Umsatzerlösen für eine Dauerauftragsgruppe
 
-1.  Klicken Sie auf **Servicemanagement** \> **Einrichtung** \> **Daueraufträge** \> **Dauerauftragsgruppen**.
+Klicken Sie auf **Servicemanagement** \> **Einrichtung** \> **Daueraufträge** \> **Dauerauftragsgruppen**.
 
 ## <a name="periods"></a>Perioden
 
@@ -75,8 +75,8 @@ Die folgenden Tabellen bieten einen Überblick über die Abgrenzungsperioden, di
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">

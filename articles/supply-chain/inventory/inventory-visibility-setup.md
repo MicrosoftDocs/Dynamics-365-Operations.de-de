@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474819"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581864"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Bestandsanzeige installieren und einrichten
 
@@ -35,63 +35,11 @@ Bevor Sie die Inventory Visibility installieren, müssen Sie die folgenden Aufga
 
 - Besorgen Sie sich ein LCS-Implementierungsprojekt, in dem mindestens eine Umgebung bereitgestellt ist.
 - Stellen Sie sicher, dass die Voraussetzungen für das Einrichten von Add-Ins erfüllt sind. Informationen zu diesen Voraussetzungen finden Sie unter [Übersicht Add-Ins](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Bestandssichtbarkeit erfordert keine Dual-Write-Verknüpfung.
-- Wenden Sie sich an das Inventory Visibility Produktteam unter [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), um die folgenden erforderlichen Dateien zu erhalten:
-
-    - `InventoryServiceApplication.PackageDeployer.zip`
-    - `Inventory Visibility Integration.zip` (wenn die Version von Supply Chain Management, die Sie verwenden, älter ist als Version 10.0.18)
 
 > [!NOTE]
 > Zu den Ländern und Regionen, die derzeit unterstützt werden, gehören Kanada (CCA, ECA), die Vereinigten Staaten (WUS, EUS), die Europäische Union (NEU, WEU), das Vereinigte Königreich (SUK, WUK), Australien (EAU, SEAU), Japan (EJP, WJP) und Brasilien (SBR, SCUS).
 
-Wenn Sie Fragen zu diesen Voraussetzungen haben, wenden Sie sich an das Inventory Visibility Produktteam.
-
-## <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Einrichten von Dataverse
-
-Um Dataverse so festzulegen, dass es mit Inventory Visibility verwendet werden kann, verwenden Sie das Package Deployer Tool, um das Inventory Visibility Paket bereitzustellen. In den folgenden Unterabschnitten wird beschrieben, wie Sie die einzelnen Aufgaben ausführen.
-
-> [!NOTE]
-> Derzeit werden nur Dataverse-Umgebungen unterstützt, die mit LCS erstellt wurden. Wenn Ihre Dataverse-Umgebung auf andere Weise erstellt wurde (z. B. mit dem Power Apps-Admin Center) und mit Ihrer Supply Chain Management-Umgebung verknüpft ist, müssen Sie sich zunächst an das Inventory Visibility Produktteam wenden, um das Zuordnungsproblem zu beheben. Anschließend können Sie Inventory Visibility installieren.
-
-### <a name="migrate-from-an-old-version-of-the-dataverse-solution"></a>Migrieren Sie von einer alten Version der Dataverse-Lösung
-
-Wenn Sie eine ältere Version der Inventory Visibility Dataverse-Lösung installiert haben, verwenden Sie diese Anweisungen, um Ihre Version zu aktualisieren. Es gibt zwei Fälle:
-
-- **Fall 1:** Wenn Sie Dataverse manuell festgelegt haben, indem Sie die `Inventory Visibility Dataverse Solution_1_0_0_2_managed.zip`-Lösung importiert haben, folgen Sie diesen Schritten:
-
-    1. Laden Sie die folgenden drei Dateien herunter:
-
-        - `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip`
-        - `InventoryServiceBase_managed.cab`
-        - `InventoryServiceApplication.PackageDeployer.zip`
-
-    1. Importieren Sie `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip` und `InventoryServiceBase_managed.cab` manuell in Dataverse, indem Sie die folgenden Schritte ausführen:
-
-        1. Öffnen Sie die URL Ihrer Dataverse-Umgebung.
-        1. Öffnen Sie die Seite **Lösungen**.
-        1. **Import** auswählen
-
-    1. Verwenden Sie das Package Deployer Tool, um das `InventoryServiceApplication.PackageDeployer.zip`-Paket bereitzustellen. Anweisungen dazu finden Sie im Abschnitt [Benutzen Sie das Package Deployer Tool, um das Paket bereitzustellen](#deploy-package) weiter unten in diesem Thema.
-
-- **Fall 2:** Wenn Sie Dataverse mit dem Package Deployer Tool festgelegt haben, bevor Sie das ältere `.*PackageDeployer.zip`-Paket installiert haben, laden Sie `InventoryServiceApplication.PackageDeployer.zip` herunter und führen Sie ein Update durch. Anweisungen dazu finden Sie im Abschnitt [Benutzen Sie das Package Deployer Tool, um das Paket bereitzustellen](#deploy-package).
-
-### <a name="use-the-package-deployer-tool-to-deploy-the-package"></a><a name="deploy-package"></a>Benutzen Sie das Package Deployer Tool, um das Paket bereitzustellen
-
-1. Installieren Sie die Entwickler-Tools wie in [Download von Tools aus NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget) beschrieben.
-1. Heben Sie die Sperrung der Datei `InventoryServiceApplication.PackageDeployer.zip` auf, die Sie aus der Gruppe Teams heruntergeladen haben, indem Sie die folgenden Schritte ausführen:
-
-    1. Wählen und halten Sie die Datei (oder klicken Sie mit der rechten Maustaste) und wählen Sie dann **Eigenschaften**.
-    1. Suchen Sie im Dialogfeld **Eigenschaften** auf der Registerkarte **Allgemein** den Abschnitt **Sicherheit**, wählen Sie **Entsperren** und übernehmen Sie die Änderung. Wenn auf der Registerkarte **Allgemein** kein Abschnitt **Sicherheit** vorhanden ist, ist die Datei nicht blockiert. Fahren Sie in diesem Fall mit dem nächsten Schritt fort.
-
-    ![Entblockieren der heruntergeladenen Datei](media/unblock-file.png "Entblockieren der heruntergeladenen Datei")
-
-1. Entpacken Sie `InventoryServiceApplication.PackageDeployer.zip`, um die folgenden Artikel zu finden:
-
-    - `InventoryServiceApplication`-Ordner
-    - `[Content_Types].xml`-Datei
-    - `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`-Datei
-
-1. Kopieren Sie jedes dieser Elemente in das Verzeichnis `.\Tools\PackageDeployment`. (Dieses Verzeichnis wurde erstellt, als Sie die Entwickler-Tools installiert haben.)
-1. Führen Sie `.\Tools\PackageDeployment\PackageDeployer.exe` aus, und folgen Sie den Anweisungen auf dem Bildschirm, um die Lösungen zu importieren.
+Wenn Sie Fragen zu diesen Voraussetzungen haben, wenden Sie sich an das Inventory Visibility-Produktteam unter [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Installieren Sie das Inventory Visibility Add-In
 
@@ -102,7 +50,11 @@ Nachdem Sie eine Anwendung registriert und ein Client-Geheimnis zu Azure AD hinz
 1. Melden Sie sich bei [LCS](https://lcs.dynamics.com/Logon/Index) an.
 1. Wählen Sie auf der Startseite das Projekt aus, in dem Ihre Umgebung bereitgestellt ist.
 1. Wählen Sie auf der Projektseite die Umgebung aus, in der Sie das Add-In installieren möchten.
-1. Scrollen Sie auf der Umgebungsseite nach unten, bis Sie im Abschnitt **Power Platform-Integration** den Abschnitt **Umgebungs-Add-ins** finden. Dort finden Sie den Namen der Dataverse-Umgebung.
+1. Scrollen Sie auf der Umgebungsseite nach unten, bis Sie im Abschnitt **Power Platform-Integration** den Abschnitt **Umgebungs-Add-ins** finden. Dort finden Sie den Namen der Dataverse-Umgebung. Bestätigen Sie, dass Sie den Namen der Dataverse-Umgebung für die Inventarsichtbarkeit verwenden möchten.
+
+    > [!NOTE]
+    > Derzeit werden nur Dataverse-Umgebungen unterstützt, die mit LCS erstellt wurden. Wenn Ihre Dataverse-Umgebung auf andere Weise erstellt wurde (z. B. mit dem Power Apps Admin Center) und mit Ihrer Supply Chain Management-Umgebung verknüpft ist, müssen Sie sich zunächst an das Inventory Visibility Produktteam unter [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) wenden, um das Zuordnungsproblem zu beheben. Anschließend können Sie Inventory Visibility installieren.
+
 1. Wählen Sie Im Abschnitt **Umgebungs-Add-Ins** die Option **Neues Add-In installieren** aus.
 
     ![Umgebungsseite in LCS](media/inventory-visibility-environment.png "Umgebungsseite in LCS")
@@ -118,6 +70,7 @@ Nachdem Sie eine Anwendung registriert und ein Client-Geheimnis zu Azure AD hinz
 
 1. Stimmen Sie den Bedingungen zu, indem Sie das Kontrollkästchen **Geschäftsbedingungen** aktivieren.
 1. Wählen Sie **Installieren**. Der Status des Add-Ins wird als **Installation** angezeigt. Wenn die Installation abgeschlossen ist, aktualisieren Sie die Seite. Der Status sollte sich auf **Installiert** ändern.
+1. Wählen Sie in Dataverse den Abschnitt **Apps** Abschnitt im linken Navigationsbereich aus, und stellen Sie die erfolgreiche Installation von **Bestandsanzeige**-Power Apps sicher. Wenn der Abschnitt **Apps** nicht vorhanden ist, wenden Sie sich an das Produktteam für Bestandsanzeige unter [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
 > [!IMPORTANT]
 > Wenn Sie mehr als eine LCS-Umgebung haben, erstellen Sie für jede Umgebung eine andere Azure AD-Anwendung. Wenn Sie dieselbe Anwendungs-ID und Mandanten-ID verwenden, um das Bestandsanzeige-Add-In für verschiedene Umgebungen zu installieren, tritt in älteren Umgebungen ein Tokenproblem auf. Nur die zuletzt installierte Version ist gültig.
@@ -126,13 +79,13 @@ Nachdem Sie eine Anwendung registriert und ein Client-Geheimnis zu Azure AD hinz
 
 Um das Bestandssichtbarkeits-Add-In zu deinstallieren, wählen Sie **Deinstallieren** auf der LCS-Seite. Der Deinstallationsvorgang beendet das Inventory Visibility-Add-In, hebt die Registrierung des Add-Ins im LCS auf und löscht alle temporären Daten, die im Daten-Cache des Inventory Visibility-Add-Ins gespeichert sind. Die primären Bestandsdaten, die in Ihrem Dataverse-Abonnement gespeichert sind, werden jedoch nicht gelöscht.
 
-Um Bestandsdaten zu deinstallieren, die in Ihrem Dataverse-Abonnement gespeichert sind, öffnen Sie [Power Apps](https://make.powerapps.com), wählen Sie **Umgebung** in der Navigationsleiste und wählen Sie die Dataverse-Umgebung, die mit Ihrer LCS-Umgebung verbunden ist. Gehen Sie dann zu **Lösungen**, und löschen Sie die folgenden fünf Lösungen:
+Um Bestandsdaten zu deinstallieren, die in Ihrem Dataverse-Abonnement gespeichert sind, öffnen Sie [Power Apps](https://make.powerapps.com), wählen Sie **Umgebung** in der Navigationsleiste und wählen Sie die Dataverse-Umgebung, die mit Ihrer LCS-Umgebung verbunden ist. Gehen Sie dann zu **Lösungen**, und löschen Sie die folgenden fünf Lösungen in dieser Reihenfolge:
 
-- Ankerlösung für Inventory Visibility-Anwendung in Dynamics 365-Lösungen
-- Dynamics 365 FNO SCM Inventory Visibility-Anwendungslösung
-- Bestandsservice-Konfiguration
-- Eigenständige Inventory Visibility-Anwendung
-- Dynamics 365 FNO SCM Inventory Visibility-Basislösung
+1. Ankerlösung für Inventory Visibility-Anwendung in Dynamics 365-Lösungen
+1. Dynamics 365 FNO SCM Inventory Visibility-Anwendungslösung
+1. Bestandsservice-Konfiguration
+1. Eigenständige Inventory Visibility-Anwendung
+1. Dynamics 365 FNO SCM Inventory Visibility-Basislösung
 
 Nachdem Sie diese Lösungen gelöscht haben, werden auch die Daten, die in Tabellen gespeichert sind, gelöscht.
 

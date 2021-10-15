@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 28a5451f4932669fb66d5e47fd2f574eb3648428
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 0b16cfdce801e8a63b47397526b47995018b99c9
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386337"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594830"
 ---
 # <a name="model-management-lifecycle"></a>Modellverwaltungslebenszyklus
 
@@ -32,4 +32,4 @@ Wir empfehlen, dass Sie das KI-Modell in einer Sandbox-Umgebung trainieren und d
 
 Da das KI-Modell auf den verfügbaren Rechnungs- und Kundendaten basiert, ist es wichtig, dass die Sandbox-Umgebung über eine aktuelle Kopie der Produktionsdaten verfügt. Sie können mit dem Trainieren Ihres Modells beginnen, indem Sie die Schritte in [Vorhersagen für Kundenzahlungen verwenden](use-customer-payment-predictions.md) befolgen. Nachdem das Modell neu trainiert wurde, bewerten Sie die Ergebnisse wie in [Bewerten des anfänglichen Kundenzahlungsvorhersagemodells](evaluate-payment-prediction.md) beschrieben. Verwenden Sie die Informationen in [Vorhersagemodell verbessern](improve-model.md), um mit Funktions- und Filterkombinationen zu experimentieren, die zur Verbesserung des Modells beitragen können.
 
-Wenn Sie mit den Trainingsergebnissen zufrieden sind, befolgen Sie die Schritte in [Verteilen Ihres KI-Modells](https://docs.microsoft.com/ai-builder/distribute-model), um das Modell in Ihre Produktionsumgebung zu übertragen.
+Wenn Sie mit den Trainingsergebnissen zufrieden sind, befolgen Sie die Schritte in [Verteilen Ihres KI-Modells](/ai-builder/distribute-model), um das Modell in Ihre Produktionsumgebung zu übertragen.

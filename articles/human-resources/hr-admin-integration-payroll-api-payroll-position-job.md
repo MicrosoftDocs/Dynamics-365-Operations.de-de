@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d5f84a1a6ff794cdc8b4b81e8518983789a0b33f1708719906f6ad094d9c4285
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0b70411e6535b22d698545438dcb0b16935e731
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722630"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559582"
 ---
 # <a name="payroll-position-job"></a>Lohnpositions-Einzelvorgang
 
@@ -34,16 +34,22 @@ Physischer Name: mshr_payrollpositionjobentity.
 
 ## <a name="properties"></a>Eigenschaften
 
-| Eigenschaft<br>**Physikalischer Name**<br>**_Typ_** | Verwenden | Beschreibung |
+| Eigenschaft</br>**Physikalischer Name**</br>**_Typ_** | Verwenden | Beschreibung |
 | --- | --- | --- |
-| **Einzelvorgangskennung**<br>mshr_jobid<br>*Zeichenfolge* | Schreibgeschützt<br>Erforderlich |Der ID der Stelle. |
-| **Gültig ab**<br>mshr_validto<br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt <br>Erforderlich | Datum, ab dem die Position und das Arbeitsverhältnis gültig sind. |
-| **Gültig bis**<br>mshr_validto<br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt <br>Erforderlich | Datum, bis zu dem die Position und das Arbeitsverhältnis gültig sind.  |
-| **Positionskennung**<br>mshr_positionid<br>*Zeichenfolge* | Schreibgeschützt<br>Erforderlich | Die Kennung der Position. |
-| **Primärfeld**<br>mshr_primaryfield<br>*Zeichenfolge* | Erforderlich<br>Vom System generiert |  |
-| **Stellen-ID-Wert der Position**<br>_mshr_fk_positionjob_id_value<br>*GUID* | Schreibgeschützt<br>Erforderlich<br>Fremdschlüssel: mshr_PayrollPositionJobEntity der mshr_payrollpositionjobentity |Die Kennung der Stelle, die der Position zugeordnet ist.|
-| **ID-Wert für festen Vergütungsplan**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | Schreibgeschützt<br>Erforderlich<br>Fremdschlüssel: mshr_FixedCompPlan_id von mshr_payrollfixedcompensationplanentity  | Die Kennung des festen Vergütungsplans, der der Position zugeordnet ist. |
-| **ID der Entität „Lohnpositions-Stelle“**<br>mshr_payrollpositionjobentityid<br>*Guid* | Erforderlich<br>Vom System generiert. | Ein vom System generierter GUID-Wert zur eindeutigen Identifizierung der Stelle.  |
+| **Positionskennung**</br>mshr_positionid</br>*Zeichenfolge* | Schreibgeschützt | Die Kennung der Position. |
+| **Gültig ab**</br>mshr_validto</br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt | Das Datum, ab dem die Position und das Arbeitsverhältnis gültig sind. |
+| **Gültig bis**</br>mshr_validto</br>*Datum-/Uhrzeit-Offset* | Schreibgeschützt | Das Datum, bis zu dem die Position und das Arbeitsverhältnis gültig sind. |
+| **Einzelvorgangskennung**</br>mshr_jobid</br>*Zeichenfolge* | Schreibgeschützt | Der ID der Stelle. |
+| **Primärfeld**</br>mshr_primaryfield</br>*Zeichenfolge* | Vom System generiert | Das Primärfeld. |
+| **ID der Entität „Lohnpositions-Stelle“**</br>mshr_payrollpositionjobentityid</br>*Guid* | Vom System generiert. | Ein vom System generierter GUID-Wert (Global Unique Identifier) zum eindeutigen Identifizieren des Einzelvorgangs. |
+
+## <a name="relations"></a>Referenzen
+
+| Eigenschaftswert | Zugehörige Entität | Navigationseigenschaft | Erfassungstyp |
+| --- | --- | --- | --- |
+| _mshr_fk_fixedcompplan_id_value | mshr_payrollfixedcompensationplanentity | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Job |
+| _mshr_fk_jobdetail_id_value | mshr_hcmjobdetailentity | mshr_FK_JobDetail_id | Nicht zutreffend |
+| _mshr_fk_payroll_id_value | mshr_payrollpositionentity | mshr_FK_Payroll_id | mshr_FK_PayrollPositionEntity_Job |
 
 ## <a name="example-query"></a>Beispielabfrage
 

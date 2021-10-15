@@ -1,7 +1,7 @@
 ---
-title: Übersicht der Serviceobjekte
-description: Serviceobjekte sind die Anlagen und Produkte eines Debitors, für die Sie eine Dienstleistung durchführen können.
-author: ShylaThompson
+title: Serviceobjekte – Übersicht
+description: Dieses Thema gibt einen Überblick über das Arbeiten mit Serviceobjekten.
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 161d17d14af6351409e2405ae104f2b87e363ce349dd9b8e26d2c14e5fb9fa14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9cf5e146bb7eab4df5807c6a55f773bfb31a4c5e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770167"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571376"
 ---
-# <a name="service-objects-overview"></a>Übersicht der Serviceobjekte
+# <a name="service-objects-overview"></a>Serviceobjekte – Übersicht
 
 [!include [banner](../includes/banner.md)]
 

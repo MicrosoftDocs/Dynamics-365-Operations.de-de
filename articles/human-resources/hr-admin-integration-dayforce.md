@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 255cc612ef727153be70b755745eed9ad679b839
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: f92850a741f2a0d4d1c2636cbbdf21fe95f307df
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414583"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559460"
 ---
 # <a name="configure-integration-with-dayforce"></a>Integration mit Dayforce konfigurieren
 
@@ -64,7 +64,6 @@ Die Aktivierung von Lohnintegration hat zwei primäre Auswirkungen:
 
 > [!NOTE]
 > Das Datenpaket, das zum SFTP-Endpunkt übertragen wird, wird mit einem Schlüssel verschlüsselt, für das Paket eindeutig ist. Der Schlüssel befindet sich in einer Azure Key Vault, auf den nur durch Ceridian zugegriffen werden kann. Es ist nicht möglich, die Datenpaketinhalte zu entschlüsseln und zu überprüfen. Wenn Sie den Inhalt des Datenpakets überprüfen möchten, müssen Sie das Datenprojekt „Lohnintegrationsexport“ manuell exportieren, herunterladen und dann öffnen. Beim manuellen Export wird keine Verschlüsselung angewendet oder das Paket übertragen.
-> Für Fälle, in denen die Integrationsdateien von einer Dynamics 365 Human Resources-UAT- oder Sandbox-Umgebung für eine Ceridian Dayforce-Testumgebung gesendet werden, können Sie die folgende URL des Schlüsseltresors verwenden: https://payrollintegrationprod.vault.azure.net.
 
 ## <a name="configure-your-data"></a>Ihre Daten konfigurieren 
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e29a5295cd3c334aef88dc7a2a36b2eb8a6f636b159c0f69874fc51298a1ab7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772277"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581136"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Ausgehender Bestandsvorgang in POS
 
@@ -116,7 +116,7 @@ In der Ansicht **Vollständige Auftragsliste** können Sie eine Zeile in der Lis
 
 ### <a name="over-delivery-shipping-validations"></a>Überlieferungs-Versandvalidierungen
 
-Validierungen erfolgen während des Empfangsprozesses für die Belegzeilen. Dazu gehören auch Validierungen für Überlieferungen. Wenn ein Benutzer versucht, mehr Bestand zu erhalten, als in einer Bestellung bestellt wurde, aber entweder keine Überlieferung konfiguriert ist oder die erhaltene Menge die Überlieferungstoleranz überschreitet, die für die Bestellzeile konfiguriert ist, erhält der Benutzer einen Fehler und darf die überschüssige Menge nicht erhalten.
+Validierungen erfolgen während des Erfüllungsprozesses für die Belegzeilen. Dazu gehören auch Validierungen für Überlieferungen. Wenn ein Benutzer versucht, mehr Bestand zu versenden, als in einem Umlagerungsauftrag bestellt wurde, aber entweder keine Überlieferung konfiguriert ist oder die versendete Menge die Überlieferungstoleranz überschreitet, die für den Umlagerungsauftrag konfiguriert ist, erhält der Benutzer eine Fehlermeldung und darf die überschüssige Menge nicht versenden.
 
 ### <a name="underdelivery-close-lines"></a>Unterlieferung schließen-Positionen
 

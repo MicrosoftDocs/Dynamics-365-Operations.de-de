@@ -1,7 +1,7 @@
 ---
 title: Beispielkreditorenschecks bei der elektronischen Berichterstellung
 description: In diesem Thema werden allgemeine Informationen zur Verwendung der Beispielscheckformate bei der elektronischen Berichterstellung bereitgestellt.
-author: ShylaThompson
+author: sunfzam
 ms.date: 06/14/2017
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7cfb883ed779d25f5a05f1fc6b93530ff7c5f333744db6988072294990dc01fe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e1aa349b505713d0502aa90ddd5c3caff1f083c
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737405"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595178"
 ---
 # <a name="electronic-reporting-sample-vendor-checks"></a>Beispielkreditorenschecks bei der elektronischen Berichterstellung
 
