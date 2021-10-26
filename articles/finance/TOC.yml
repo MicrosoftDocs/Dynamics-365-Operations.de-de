@@ -1190,10 +1190,12 @@
               href: general-ledger/financial-reporting-getting-started.md
             - name: Finanzberichterstellung – Übersicht
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
-            - name: Finanzberichtkomponenten
+            - name: Finanzberichtskomponenten
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
             - name: Währungsfunktionen in der Finanzberichterstellung
               href: general-ledger/financial-reporting-currency-capability.md
+            - name: Berechnung einbehaltener Gewinne in Financial Reporting
+              href: general-ledger/retained-earnings-enhancements.md
             - name: Bilanzfinanzberichte
               href: general-ledger/balance-sheet-financial-reports.md
             - name: Finanzberichte generieren

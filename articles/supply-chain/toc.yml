@@ -2807,17 +2807,19 @@
                   href: sales-marketing/customer-portal-setup.md
                 - name: Erstellen und Verwalten von Debitorenportalbenutzern
                   href: sales-marketing/customer-portal-user-admin.md
-                - name: Das Debitorenportal anpassen und verwenden
+                - name: Debitorenportal anpassen und verwenden
                   href: sales-marketing/customer-portal-customize.md
             - name: Handelsvergütung
               href: sales-marketing/trade-allowance.md
             - name: Eine neue Handelsvereinbarung erstellen
               href: sales-marketing/tasks/create-new-trade-agreement.md
+            - name: Leistungsverbesserungen bei der Vertriebsverlaufsbereinigung
+              href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: Serviceverwaltung
           items:
             - name: Servicemanagement – Übersicht
               href: service-management/service-management-home-page.md
-            - name: Kundendienst einrichten
+            - name: Kundenservice einrichten
               items:
                 - name: Servicevereinbarungen einrichten
                   items:
@@ -3707,10 +3709,12 @@
                   href: troubleshooting/production/the-warehouse-in-pic.md
             - name: Rückvergütungsverwaltung
               items:
-                - name: Es ist ein Fehler beim Kumulieren von Debitorenrabatten mithilfe von Artikelrabattgruppen aufgetreten.
+                - name: Fehler beim Kumulieren von Debitorenrabatten mithilfe von Artikelrabattgruppen
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: Vertrieb und Marketing
               items:
+                - name: Der Auftrag zur Bereinigung des Vertriebsaktualisierungsverlaufs schlägt fehl oder weist Leistungsprobleme auf.
+                  href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
                 - name: Ein Bündelartikel wird in einem Intercompany-Prozess nicht unterstützt.
                   href: troubleshooting/sales/bundle-item-intercompany-process.md
                 - name: 'Eine Intercompany-Bestellung, die mit einem Auftrag verknüpft ist, kann nicht storniert werden.'

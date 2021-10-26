@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3690a541b503281f204221a72bfb5a371984d9e4
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733610"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605278"
 ---
 # <a name="financial-reporting-faq"></a>Häufig gestellte Fragen zur Finanzberichterstellung
 
@@ -101,5 +101,28 @@ Bei der historischen Währungsumrechnung können anstelle individueller Transakt
 Bei der Aktualisierung von Berichtsdaten kann es zu Verzögerungen kommen, weil die Beträge durch Überprüfung der Transaktionsangaben erneut berechnet werden müssen. Diese Verzögerung tritt immer dann auf, wenn Kurse aktualisiert oder weitere Transaktionen gebucht werden. Werden beispielsweise tausende Konten mehrmals am Tag zur historischen Umrechnung eingerichtet, kann es zu einer Verzögerung von bis zu einer Stunde kommen, bevor die Berichtsdaten aktualisiert werden. Bei weniger Konten dauert die Verarbeitung von Änderungen im Bericht mitunter nur wenige Minuten.
 
 Auch bei der Erstellung von Berichten mithilfe der Währungsumrechnung bei Konten mit historischem Typ kommt es zu zusätzlichen Berechnungen pro Transaktion. Je nach Anzahl der Konten kann die Berichterstellung doppelt so lange dauern.
+
+## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Was sind die geschätzten Data Mart-Integrationsintervalle?
+
+Financial Reporter verwendet 16 Aufgaben, um Daten von Dynamics 365 Finance in die Financial Reporter-Datenbank zu kopieren. Die folgende Tabelle listet diese 16 Aufgaben auf und zeigt das Intervall an, das angibt, wie oft jede Aufgabe ausgeführt wird. Die Intervalle können nicht geändert werden.
+
+| Name                                                       | Intervall | Intervallzeitmessung |
+|------------------------------------------------------------|----------|-----------------|
+| AX 2012 Kontokategorien nach Kontokategorie            | 41       | Minuten         |
+| AX 2012-Konten nach Konto                                | 7        | Minuten         |
+| AX 2012-Unternehmen nach Unternehmen                               | 300      | Sekunden         |
+| AX 2012-Unternehmen nach Organisation                          | 23       | Minuten         |
+| AX 2012-Dimensionskombinationen nach Dimensionskombination    | 1        | Minuten         |
+| AX 2012-Dimensionswerte nach Dimensionswert                | 11       | Minuten         |
+| AX 2012-Dimensionen nach Dimension                            | 31       | Minuten         |
+| AX 2012-Wechselkurse nach Wechselkurs                    | 17       | Minuten         |
+| AX 2012-Geschäftsjahr nach Geschäftsjahr                        | 13       | Minuten         |
+| AX 2012-Hauptbuchtransaktionen nach Fakt                | 1        | Minuten         |
+| AX 2012-Organisationshierarchien nach Struktur                   | 3.600    | Sekunden         |
+| AX 2012-Szenarien nach Szenario                              | 29       | Minuten         |
+| AX 2012-Transaktionstyp-Qualifizierer nach Faktentyp-Qualifizierer | 19       | Minuten         |
+| Wartungsaufgabe                                           | 1        | Minuten         |
+| MR-Berichtsdefinitionen nach AX7-Finanzberichten             | 45       | Sekunden         |
+| MR-Berichtsversionen nach AX-Finanzberichtsversionen         | 45       | Sekunden         |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
