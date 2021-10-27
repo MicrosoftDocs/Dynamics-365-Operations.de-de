@@ -2,7 +2,7 @@
 title: Einzelvorgänge für Datenimport und ‑export – Übersicht
 description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
 author: peakerbl
-ms.date: 04/22/2021
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f9ae06893a8247828fa4d3c2cb40b9155043c87
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
+ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404033"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "7612363"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
@@ -198,16 +198,10 @@ Wenn Sie den Bereinigungsprozess planen, müssen die folgenden Parameter angegeb
 > [!NOTE]
 > Wenn Sätze in den Staging-Tabellen nicht vollständig bereinigt werden, stellen Sie sicher, dass der Bereinigungsjob für die Ausführung in Wiederholung eingeplant wird. Wie oben erläutert, wird der Job bei jeder Bereinigungsausführung nur so viele Ausführungs-IDs bereinigen, wie innerhalb der vorgegebenen maximalen Stunden möglich sind. Um mit der Bereinigung der verbleibenden Staging-Datensätze fortzufahren, muss der Job für eine periodische Ausführung eingeplant werden.
 
-## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Bereinigen und Archivieren des Einzelvorgangsverlaufs (verfügbar zur Vorschau in Plattformupdate 39 oder Version 10.0.15)
+## <a name="job-history-clean-up-and-archival"></a>Bereinigung und Archivierung des Einzelvorgangsverlaufs 
 Die Funktionen zum Bereinigen und Archivieren des Einzelvorgangsverlaufs ersetzen die vorherigen Versionen der Bereinigungsfunktion. In diesem Abschnitt werden diese neuen Funktionen erläutert.
 
-Eine der wichtigsten Änderungen an der Bereinigungsfunktion ist die Verwendung eines System-Batchauftrags zum Bereinigen des Verlaufs. Die Verwendung von System-Batchaufträgen ermöglicht Finance and Operations-Apps die automatische Planung und Ausführung des Batchauftrags zur Bereinigung, sobald das System bereit ist. Es ist nicht mehr erforderlich, den Batchauftrag manuell zu planen. In diesem Standardausführungsmodus wird der Batchauftrag ab Mitternacht jede Stunde ausgeführt und der Ausführungsverlauf für die letzten 7 Tage beibehalten. Der gelöschte Verlauf wird für den zukünftigen Abruf archiviert.
-
-> [!NOTE]
-> Da sich diese Funktion in der Vorschau befindet, löscht der System-Batchauftrag keinen Ausführungsverlauf, bevor er nicht über den Flight DMFEnableExecutionHistoryCleanupSystemJob aktiviert wird. Sobald die Funktion in einer zukünftigen Version allgemein verfügbar sein wird, wird dieser Flight nicht mehr erforderlich sein und der System-Batchauftrag wird, wie oben beschrieben, basierend auf dem definierten Zeitplan mit der Bereinigung und der Archivierung beginnen, wenn das System bereit ist. 
-
-> [!NOTE]
-> In einer zukünftigen Version werden die vorherigen Versionen der Bereinigungsfunktion aus den Finance and Operations-Apps entfernt.
+Eine der wichtigsten Änderungen an der Bereinigungsfunktion ist die Verwendung des System-Batchauftrags zum Bereinigen des Verlaufs. Die Verwendung des System-Batchauftrags ermöglicht Finance and Operations-Apps die automatische Planung und Ausführung des Batchauftrags zur Bereinigung, sobald das System bereit ist. Es ist nicht mehr erforderlich, den Batchauftrag manuell zu planen. In diesem Standardausführungsmodus wird der Batchauftrag ab Mitternacht jede Stunde ausgeführt und der Ausführungsverlauf für die letzten 7 Tage beibehalten. Der gelöschte Verlauf wird für den zukünftigen Abruf archiviert. Ab Version 10.0.20 ist diese Funktion immer aktiviert.
 
 Die zweite Änderung am Bereinigungsprozess ist die Archivierung des gelöschten Ausführungsverlaufs. Der Bereinigungsauftrag archiviert die gelöschten Datensätze im Blob Storage, den DIXF für regelmäßige Integrationen verwendet. Die archivierte Datei liegt im DIXF-Paketformat vor und ist 7 Tage lang im Blob verfügbar. Während dieser Zeit kann sie heruntergeladen werden. Die Standardlebensdauer von 7 Tagen für die archivierte Datei kann in den Parametern auf maximal 90 Tage geändert werden.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 28fea4a09d7c105096859495d9b4a43f4c86c834184809827fe77ce1bbff5b84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: baa3cab78574ac3779aaea000f0b2b88ff625c37
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749823"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605254"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Einrichten von Parametern eines EB-Formats pro juristischer Person
 
@@ -58,8 +58,6 @@ Sie können das EB-Framework verwenden, um anwendungsspezifische Parameter für 
 1.  Wählen Sie die juristische Person **DEMF** aus.
 2.  Wählen Sie in der Konfigurationsstruktur das Format **Format zum Ermitteln der Vorgehensweise bei der Suche von Daten zu juristischen Personen** aus.
 3.  Wählen Sie im Aktivitätsbereich auf der Registerkarte **Konfigurationen** in der Gruppe **Anwendungsspezifische Parameter** die Option **Einrichten** aus.
-
-    ![Seite für anwendungsspezifische EB-Parameter.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     Auf der Seite **Anwendungsspezifische Parameter** können Sie die Regeln für die Datenquelle **Auswahl** des Formats **Format zum Ermitteln der Vorgehensweise bei der Suche von Daten zu juristischen Personen** konfigurieren.
     
@@ -75,14 +73,14 @@ Sie können das EB-Framework verwenden, um anwendungsspezifische Parameter für 
 
     Die Suche zeigt die Liste der Steuercodes für die Auswahl an. Diese Liste wird durch die Datenquelle **Model.Data.Tax** zurückgegeben, die im Basis-EB-Format konfiguriert wurde. Da diese Datenquelle das Feld **Name** enthält, wird der Name jedes Steuercodes in der Suche angezeigt.
 
-    ![Seite für anwendungsspezifische EB-Parameter.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![Seite für anwendungsspezifische ER-Parameter, Codefeldsuche.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  Wählen Sie den Steuercode **VAT19** aus.
 8.  Wählen Sie im Feld **Suchergebnis** des neuen Datensatzes den Dropdown-Pfeil aus, um die Suche zu öffnen. Die Suche zeigt die Liste der Werte für die TaxationLevel-Formatenumeration zur Auswahl an.
 
     Hinweis: Wenn Deutsch als bevorzugte Sprache des Benutzers ausgewählt wird, als der Sie angemeldet sind, werden die Beschriftungen der Werte in der Suche auf Deutsch angezeigt, sofern sie im Basis-EB-Format übersetzt wurden. Darüber hinaus erscheint die Beschriftung in der bevorzugten Sprache des Benutzers auf der Registerkarte **Suchen**, wennn die Beschriftung einer Suchendatenquelle übersetzt wurde.
 
-    ![Seite für anwendungsspezifische EB-Parameter.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![Seite für anwendungsspezifische ER-Parameter, Suchergebnisse werden in der bevorzugten Sprache Deutsch angezeigt.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  Wählen Sie den Wert **Reguläre Besteuerung** aus.
 
@@ -120,7 +118,7 @@ Sie können das EB-Framework verwenden, um anwendungsspezifische Parameter für 
     
     Wenn Sie diesen letzten Datensatz hinzufügen, legen Sie die folgende Regel fest: Sobald der Steuercode, der als Argument weitergegeben wird, keine der vorherigen Regeln erfüllt, gibt die Suchdatenquelle **Sonstige** als erforderliche Besteuerungsstufe zurück.
 
-    ![Seite für anwendungsspezifische EB-Parameter.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![Seite für anwendungsspezifische ER-Parameter, Inforegister „Bedingungen“ mit letztem Datensatz von „Sonstige“.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. Wählen Sie im Feld **Status** die Option **Abgeschlossen** aus.
 
@@ -160,7 +158,7 @@ Sie können das EB-Framework verwenden, um anwendungsspezifische Parameter für 
 
     Die Suche zeigt nun die Liste der Steuercodes für die Steuer des **USMF**-Unternehmens zur Auswahl an.
 
-    ![Seite für anwendungsspezifische EB-Parameter.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![Seite für anwendungsspezifische ER-Parameter, Codefeldsuche mit Liste der Steuercodes für das USMF-Unternehmen.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  Wählen Sie den Steuercode **BEFREIT** aus.
 9.  Wählen Sie im Feld **Suchergebnis** des neuen Datensatzes den Wert **Keine Besteuerung** aus.
@@ -225,13 +223,13 @@ Im vorherigen Beispiel haben Sie auf anwendungsspezifische Parameter eines EB-Fo
 
 1.  Verwenden Sie entweder eine vorhandene Menüoption **ERSolutionAppSpecificParametersDesigner** erneut oder implementieren Sie Ihre eigene Menüoption **ERSolutionAppSpecificParametersDesigner**.
 
-    ![Visual Studio-Seite.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Visual Studio-Seite, Bereich „Eigenschaften“.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Führen Sie einen dieser Schritte aus:
 
     1.  Erstellen Sie eine neue Menüoptionsschaltfläche und verknüpfen Sie diese mit dem gewünschten Datensatz aus der Tabelle **ERSolutionTable**, indem Sie die Eigenschaft **Datenquelle** auf **ERSolutionTable** festlegen.
     
-        ![Visual Studio-Seite.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Visual Studio-Seite, Designbereiche.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Erstellen Sie eine einfache Schaltfläche und überschreiben Sie die Methode **Geklickt** wie im folgenden Beispiel veranschaulicht.
     

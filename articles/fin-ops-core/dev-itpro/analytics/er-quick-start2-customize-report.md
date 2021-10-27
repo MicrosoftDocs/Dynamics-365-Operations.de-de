@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ec7f5bcf9f01512d22f502a4b512f2919b3caf348eb1f5c4365238d6fd3f476
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47d8091e9199597857791f58f14587e2dea027e0
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770019"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605229"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Anpassen eines EB-Formats, um ein benutzerdefiniertes elektronisches Dokument zu generieren
 
@@ -160,7 +160,7 @@ Um Ihrer aktuellen Instanz von Microsoft Dynamics 365 Finance die standardmäßi
     - **Zahlungsmodellzuordnung 1611**: Diese Konfiguration enthält die EB-Komponente [Modellzuordnung](general-electronic-reporting.md#data-model-and-model-mapping-components), die beschreibt, wie das Datenmodell zur Laufzeit mit Anwendungsdaten gefüllt wird.
     - **BACS (UK)**: Diese Konfiguration enthält die EB-Komponenten [Format](general-electronic-reporting.md#FormatComponentOutbound) und Formatzuordnung. Die Formatkomponente legt das Berichtslayout fest. Die Formatzuordnungskomponente enthält die Modelldatenquelle und legt fest, wie das Berichtslayout mithilfe dieser Datenquelle zur Laufzeit ausgefüllt wird.
 
-![Seite „Konfigurationen“.](./media/er-quick-start2-imported-solution1.png)
+![Konfigurationsseite mit angegebenen ER-Konfigurationen, die in der Baumstruktur verfügbar sind.](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a>Vorbereiten einer Kreditorenzahlung zur Verarbeitung
 
@@ -222,7 +222,7 @@ Sie müssen die elektronische Zahlungsmethode so konfigurieren, dass sie die imp
 4. Legen Sie auf dem Inforegister **Dateiformate** die Option **Allgemeines elektronisches Exportformat** auf **Ja** fest.
 5. Wählen Sie im Feld **Formatkonfiguration exportieren** die Formatkonfiguration **BACS (UK)** aus.
 
-    ![Seite „Zahlungsmethoden – Kreditoren“.](./media/er-quick-start2-method-of-payment1.png)
+    ![Zahlungsmethoden – Anbieterseite zum Einrichten einer elektronischen Zahlungsmethode für die Verarbeitung von Lieferantenzahlungen in einem Standardformat.](./media/er-quick-start2-method-of-payment1.png)
 
 6. Wählen Sie **Speichern** aus.
 
@@ -273,7 +273,7 @@ In diesem Fall müssen Sie als Vertreter von Litware, Inc. eine neue EB-Formatko
 
 Version 1.1.1 der EB-Formatkonfiguration **BACS (UK, benutzerdefiniert)** wird erstellt. Diese Version hat den [Status](general-electronic-reporting.md#component-versioning) **Entwurf** und kann bearbeitet werden. Der aktuelle Inhalt Ihres benutzerdefinierten EB-Formats entspricht dem Inhalt des von Microsoft bereitgestellten Formats.
 
-![Seite „Konfigurationen“.](./media/er-quick-start2-derived-format-configuration1.png)
+![Konfigurationsseite mit Version 1.1.1 der EB-Formatkonfiguration BACS (UK, benutzerdefiniert).](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a>Bearbeiten eines benutzerdefinierten Formats
 
@@ -349,7 +349,7 @@ Sie müssen die elektronische Zahlungsmethode so konfigurieren, dass Ihr benutze
 4. Legen Sie auf dem Inforegister **Dateiformate** die Option **Allgemeines elektronisches Exportformat** auf **Ja** fest.
 5. Wählen Sie im Feld **Formatkonfiguration exportieren** die Formatkonfiguration **BACS (UK, benutzerdefiniert)** aus.
 
-    ![Seite „Zahlungsmethoden – Kreditoren“.](./media/er-quick-start2-method-of-payment2.png)
+    ![Zahlungsmethoden – Anbieterseite zum Einrichten einer elektronischen Zahlungsmethode für die Verarbeitung von Lieferantenzahlungen in einem benutzerdefinierten Format.](./media/er-quick-start2-method-of-payment2.png)
 
 6. Wählen Sie **Speichern** aus.
 
@@ -378,7 +378,7 @@ Sie müssen die elektronische Zahlungsmethode so konfigurieren, dass Ihr benutze
 
         Beachten Sie, dass gemäß der Struktur Ihres benutzerdefinierten EB-Formats die Zahlungsposition in der generierten Datei jetzt mit dem SWIFT-Code [beginnt](#PositionSWIFTCode), der für das Bankkonto des Kreditors [eingegeben](#DefineSWIFTCode) wurde, dessen Zahlung verarbeitet wurde.
 
-        ![Zahlungsdatei im TXT-Format.](./media/er-quick-start2-payment-file2.png)
+        ![Zahlungsdatei im TXT-Format, die zur Verarbeitung der Kreditorenzahlung verwendet wird.](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a>Importieren neuer Versionen der standardmäßigen EB-Formatkonfigurationen
 
@@ -395,7 +395,7 @@ Um neue Versionen der EB-Konfigurationen zur aktuellen Finance-Instanz hinzuzuf�
 5. Wählen Sie auf dem Inforegister **Versionen** die Version **3.3** der ausgewählten EB-Formatkonfiguration aus.
 6. Wählen Sie **Importieren** aus, um die ausgewählte Version aus dem globalen Repository auf die aktuelle Finance-Instanz herunterzuladen.
 
-![Konfigurationsrepository-Seite.](./media/er-quick-start2-import-solution2.png)
+![Seite „Konfigurations-Repository“, Inforegister „Versionen“, Schaltfläche „Importieren“.](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > Wenn Sie Probleme beim Zugriff auf das [globale Repository](er-download-configurations-global-repo.md) haben, können Sie für das [Herunterladen von Konfigurationen](download-electronic-reporting-configuration-lcs.md) stattdessen LCS verwenden.
@@ -507,7 +507,7 @@ Um die neuen Funktionen von Version 3.3 des Formats **BACS (UK)** in Ihrer Anpa
 
         Beachten Sie, dass die Zahlungsposition in der generierten Datei mit dem SWIFT-Code beginnt, der für das Bankkonto eines Kreditors eingegeben wurde, dessen Zahlung verarbeitet wurde.
 
-        ![Zahlungsdatei im TXT-Format.](./media/er-quick-start2-payment-file3.png)
+        ![Zahlungsdatei im TXT-Format, die zur Verarbeitung der Kreditorenzahlung mit einem zurückgesetzten EB-Format verwendet wird.](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>Zusätzliche Ressourcen
 

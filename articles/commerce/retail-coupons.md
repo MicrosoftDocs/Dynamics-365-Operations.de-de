@@ -1,8 +1,8 @@
 ---
 title: Einrichten von Coupons für Einzelhandelsverkäufe
-description: Dieses Thema gibt einen Überblick über die Coupons und erklärt, wie sie eingerichtet werden.
-author: scott-tucker
-ms.date: 06/04/2020
+description: Dieses Thema gibt einen Überblick über die Coupons und erklärt, wie sie in Dynamics 365 Commerce eingerichtet werden.
+author: josaw1
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: josaw
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bc79970528e23397b756fa15a715fba834edcc06e4522c6c35b64aede4976300
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
+ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745307"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7603122"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Einrichten von Coupons für Einzelhandelsverkäufe
 
@@ -40,6 +40,8 @@ Um einen Coupon zu erstellen, stellen Sie den Rabatt und den Coupon getrennt her
 > Nachdem ein Coupon mit einem Rabatt verknüpft ist, sind einige Felder auf der Rabattseite in Commerce schreibgeschützt, da sie durch die Einstellungen des Coupons verwaltet werden. Diese Felder enthalten die Felder für die Standarddatumsbereiche.
 > 
 > Während Sie den Coupon im Callcenterkanal verwenden, müssen Sie die Schaltfläche **Neu berechnen** auswählen **(Registerkarte Verkaufen > Berechnen > Neu berechnen)**, damit der mit dem Coupon verbundene Rabatt angewendet wird. Dieser zusätzliche Schritt wird in einem zukünftigen Release entfernt.
+
+Um einen Coupon auf eine Verkaufstransaktion am Point of Sale (POS) anzuwenden, können Sie **Couponcode** oder **Couponstrichcode** verwenden. Um **Couponcode** zu verwenden, muss der Vorgang **Couponcode hinzufügen** in der POS-**Transaktion** [Bildschirmlayout](pos-screen-layouts.md) konfiguriert werden. Wählen Sie **Couponcode hinzufügen** aus, und geben Sie den Couponcode ein. Um **Couponstrichcode** zu verwenden, können Sie alternativ den Strichcode scannen oder den Strichcode über die Zifferntastatur auf dem **Transaktion**-Bildschirm eingeben.
 
 ### <a name="limited-use-coupons"></a>Begrenzte Nutzung der Coupons
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
+ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488082"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7644526"
 ---
 # <a name="provision-human-resources"></a>Human Resources bereitstellen
 
@@ -49,7 +49,7 @@ Test-Umgebungen sind nicht für die Verwendung als Produktionsumgebung vorgesehe
 Wenn Sie eine Human-Resources-Testumgebung erstellen, wird zusätzlich eine Power Apps-Testumgebung auf dem Mandanten erstellt und mit der Human-Resources-Umgebung verknüpft. Die Power Apps-Umgebung mit dem Namen „TestDrive“ hat den gleichen Testzeitraum wie die Human-Resources-Umgebung.
 
 > [!NOTE]
-> Die Bereitstellung einer Human-Resources-Testumgebung schlägt fehl, wenn der authentifizierte Benutzer keine Berechtigung zum Erstellen von Power Apps-Testumgebungen hat. Der Benutzer muss in die Benutzergruppe aufgenommen werden, die Testumgebungen im Power Platform Admin Center erstellen darf. Weitere Informationen finden Sie unter [Kontrollieren Sie, wer Umgebungen im Power Platform AdminCenter erstellen und verwalten kann](//power-platform/admin/control-environment-creation).
+> Die Bereitstellung einer Human-Resources-Testumgebung schlägt fehl, wenn der authentifizierte Benutzer keine Berechtigung zum Erstellen von Power Apps-Testumgebungen hat. Der Benutzer muss in die Benutzergruppe aufgenommen werden, die Testumgebungen im Power Platform Admin Center erstellen darf. Weitere Informationen finden Sie unter [Kontrollieren Sie, wer Umgebungen im Power Platform AdminCenter erstellen und verwalten kann](/power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Human Resources-Umgebungen planen
 

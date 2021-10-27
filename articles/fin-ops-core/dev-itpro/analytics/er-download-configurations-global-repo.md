@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6923954e2d287a16425a9f823e8f8800503735ec0b3837cff764cf8d6e752039
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724416"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605330"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Laden Sie ER-Konfigurationen aus dem globalen Repository des Konfigurationsdienstes herunter
 
@@ -63,7 +63,7 @@ In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporti
     > [!NOTE]
     > Die Schaltfläche **Importieren** ist nicht für ER-Konfigurationsversionen verfügbar, die in der aktuellen Instanz bereits vorhanden sind.
 
-    ![Konfigurationsrepository-Seite.](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Seite „Konfigurations-Repository“, Inforegister „Konfigurationen“.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Importierte Konfigurationen filtern
 
@@ -77,7 +77,7 @@ In diesem Thema wird erläutert, wie Sie [ER-Konfigurationen (Electronic Reporti
 4. Auf dem Inforegister **Konfigurationen** wählen Sie **Importieren**, um die gefilterten Konfigurationen aus dem globalen Repository auf die aktuelle Instanz herunterzuladen.
 5. Im Inforegister **Konfigurationen** wählen Sie **Filter zurücksetzen**, um die angegebenen Auswahlbedingungen zu bereinigen.
 
-    ![Konfigurationsrepository-Seite.](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Seite „Konfigurations-Repository“, Inforegister „Versionen“, Schaltfläche „Importieren“.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Abhängig von den ER-Einstellungen werden Konfigurationen überprüft, nachdem diese importiert wurden. Sie werden über alle Inkonsistenz-Probleme benachrichtigt, die ermittelt werden. Sie müssen diese Probleme beheben, bevor Sie die importierten Konfigurationsversionen verwenden können. Weitere Informationen finden Sie in der Liste der zugehörigen Ressourcen.

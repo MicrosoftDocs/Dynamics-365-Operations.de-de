@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 61cdbe3d966d06193b1dc5c145233e53be3946ff
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eb7e1b4e6df2c514b55ec101c0edf22590041628
+ms.sourcegitcommit: fcb1aa39e933216dea9e586b552bce6057f416a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571064"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645757"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Von der Planungsoptimierung nicht verwendete Parameter
 
@@ -53,18 +53,6 @@ Die Planungsoptimierung verwendet die folgenden Parameter oder Optionen auf der 
   - **Zugangszeit** – Unterstützung *Terminplanung* steht aus.
   - **Produktion** – Unterstützung *Terminplanung* steht aus.
   - Felder im Abschnitt **Projekt** – Unterstützung *Terminplanung* steht aus.
-
-- Registerkarte **Standardaktualisierung**:
-
-  - **Markierung aktualisieren** – Unterstützung *Umwandeln* steht aus.
-  - **Umwandlung bei Fehler abbrechen** – Unterstützung *Umwandeln* steht aus.
-  - **Nach Kreditor gruppieren** – Unterstützung *Umwandeln* steht aus.
-  - **Nach Einkäufergruppe gruppieren** – Unterstützung *Umwandeln* steht aus.
-  - **Nach Kaufvertrag gruppieren** – Unterstützung *Umwandeln* steht aus.
-  - **Nach Zeitraum gruppieren** – Unterstützung *Umwandeln* steht aus.
-  - **Kaufvertrag finden** – Unterstützung *Umwandeln* steht aus.
-  - **Nach Planungspriorität gruppieren** – Unterstützung *Umwandeln* steht aus.
-  - **Nach Zeitraum gruppieren** – Unterstützung *Umwandeln* steht aus.
 
 ## <a name="coverage-groups-page"></a>Seite „Dispositionssteuerungsgruppen“
 

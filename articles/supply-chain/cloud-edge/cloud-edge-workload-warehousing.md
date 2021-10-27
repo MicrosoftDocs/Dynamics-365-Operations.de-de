@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500426"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641159"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -171,7 +171,8 @@ Die folgenden Funktionen der Lagerortverwaltung werden derzeit für Arbeitsausla
 - Verarbeitung mit negativem Bestand.
 - Lagerort-Arbeitsverarbeitung mit Versandschein.
 - Lagerort-Arbeitsverarbeitung mit Materialhandhabung/Lagerortautomatisierung.
-- Verwendung des Produktmasterdaten-Image (z. B. in der mobilen Warehouse Management-App).
+- Produktmasterdaten-Images (z. B. in der mobilen Warehouse Management-App).
+- Unternehmensübergreifende Datenfreigabe für Produkte.
 
 > [!WARNING]
 > Einige Lagerortfunktionen sind für Lageorte, in denen die Arbeitsauslastungen für die Lagerortverwaltung auf einer Skalierungseinheit ausgeführt werden, nicht verfügbar und werden auch auf dem Hub oder der Arbeitsauslastung der Skalierungseinheit nicht unterstützt.
@@ -188,7 +189,6 @@ Die folgende Tabelle zeigt, welche Funktionen im Outbound unterstützt werden un
 |--------------------------------------------------------------|-----|------------------------------|
 | Quellbeleg-Verarbeitung                                   | Ja | Nr. |
 | Last- und Transportverwaltungs-Verarbeitung                | Ja, aber nur die Ladungsplanungsprozesse. Verarbeitung der Transportverwaltung wird nicht unterstützt  | Nr. |
-| Gesamttransportkosten und Waren in Zustellung                                         | Ja | Nr. |
 | Für Lagerort freigeben                                         | Ja | Nr. |
 | Geplantes Crossdocking                                        | Nr.  | Nr. |
 | Lieferungskonsolidierung                                       | Ja, bei Verwendung der Ladungsplanung | Ja |
@@ -224,6 +224,7 @@ Die folgende Tabelle zeigt, welche Funktionen im Eingang unterstützt werden und
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
 | Quelle&nbsp;Dokument&nbsp;Verarbeitung                             | Ja | Nr. |
 | Last- und Transportverwaltungs-Verarbeitung                    | Ja | Nr. |
+| Gesamttransportkosten und Waren in Zustellung                       | Ja | Nr. |
 | Bestätigung eingehender Lieferungen                                    | Ja | Nr. |
 | Freigabe der Einkaufsbestellung an den Lagerort (Lagerbestandsverarbeitung) | Ja | Nr. |
 | Stornierung von Lagerortauftragspositionen<p>Beachten Sie, dass dies nur unterstützt wird, wenn keine Registrierung für die Position erfolgt ist</p> | Ja | Nr. |

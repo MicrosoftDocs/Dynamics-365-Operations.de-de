@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e4e3322bbeb64472bdcd27f9ff571fe45ef87d1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
+ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574112"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "7599347"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren
 
@@ -33,7 +33,7 @@ Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen W
 2. Klicken Sie auf **Neu**.
 3. Geben Sie im Feld **Lagerort** einen Wert ein.
 4. Geben Sie im Feld **Name** einen Wert ein.
-5. Geben Sie in das Feld **Lagerort** einen Wert ein.
+5. Wählen Sie im **Site**-Feld einen vorhandenen Site-Wert aus oder geben Sie ihn ein.
 6. Erweitern Sie den Abschnitt **Lagerort**.
 7. Setzen Sie die Option **Benutzerfehlerprotokoll für Lagerortverwaltungsprozesse verwenden** auf „Ja“. Bei dieser Einstellung können Sie weitere Lagerortprozesse mithilfe von Lagerortarbeit und mobilen Geräten auszuführen.
 8. Schließen Sie die Seite.

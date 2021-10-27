@@ -1,8 +1,8 @@
 ---
 title: Finanzielle Konsolidierungen und Währungsumrechnung – Übersicht
 description: In diesem Thema wird die Finanzkonsolidierungen und Währungsumrechnung im Hauptbuch behandelt.
-author: aprilolson
-ms.date: 07/25/2019
+author: jiwo
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0df16db842c159b4db469139a0b5463a82e3fe07b4e23f8f7cf0272caaf23602
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9ec8e6a371f08ad7eab0d133e1b71861943274e
+ms.sourcegitcommit: f76fecbc28c9a6048366e8ead70060b1f5d21a97
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748979"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7615934"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Finanzielle Konsolidierungen und Währungsumrechnung – Übersicht
 
@@ -182,5 +182,17 @@ Nachfolgend sind einige der Konsolidierungsszenarien, die Finanzberichterstattun
 ## <a name="generating-consolidated-financial-statements"></a>Konsolidierte Finanzaufstellungen erstellen
 Informationen zum Szenarien, in denen Sie möglicherweise Finanzaufstellungen generieren können, finden Sie unter [Konsolidierte Finanzaufstellungen erstellen](./generating-consolidated-financial-statements.md).
 
+## <a name="performance-enhancement-for-large-consolidations"></a>Leistungsoptimierung bei großen Konsolidierungen
+
+Umgebungen mit vielen Hauptbuchtransaktionen werden möglicherweise langsamer als optimal ausgeführt. Um dieses Problem zu beheben, können Sie die parallele Verarbeitung von Batches einrichten, die eine benutzerdefinierte Anzahl von Daten verwendet. Um sicherzustellen, dass die Lösung wie beabsichtigt funktioniert, fügen Sie der Konsolidierung einen Erweiterungspunkt hinzu, um einen Container mit Datumsbereichen zurückzugeben. Die Basisimplementierung sollte einen Datumsbereich für den Startstatus und das Enddatum der Konsolidierung enthalten. Datumsbereiche in der Basisimplementierung werden validiert, um sicherzustellen, dass sie keine Lücken oder Überschneidungen enthalten. Die Datumsbereiche werden verwendet, um parallele Batch-Bundles für jedes Unternehmen zu erstellen.
+
+Sie können die Anzahl der Datumsbereiche an die Anforderungen Ihrer Organisation anpassen. Durch Anpassen der Anzahl der Datumsbereiche können Sie das Testen vereinfachen und die Auswirkungen auf vorhandenen Code minimieren, da keine Zuordnungslogik vorhanden ist. Die einzigen neuen Tests, die erforderlich sind, validieren die Erstellung von Batch-Bundles, validieren Datumsbereiche und testen eine Teilmenge von Datumsbereichen, um zu überprüfen, ob die Batches für die letzte Batch-Aufgabe zusammengeführt werden können. 
+
+Diese Funktion verbessert den Konsolidierungsprozess im Hauptbuch, wenn der Prozess in einem Batch ausgeführt wird. Die Erweiterung verbessert die Leistung des Hauptbuchkonsolidierungsprozesses, indem die Konsolidierung in mehrere parallel verarbeitbare Aufgaben aufgeteilt wird. Bei der Standardmethode zum Ausführen einer Konsolidierung verarbeitet jede Aufgabe die Hauptbuchaktivität von acht Tagen. Es wurde jedoch ein Erweiterungspunkt hinzugefügt, mit dem Sie die Anzahl der erstellten Aufgaben anpassen können.
+
+Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit der Einstellung **Funktionsverwaltung** den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
+
+- **Modul:** Hauptbuch
+- **Funktionsname:** Leistungssteigerung für große Konsolidierungen
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
