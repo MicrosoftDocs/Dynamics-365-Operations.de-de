@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c395aabfc8705b4713cf1041b5644ac478d8c1a4c4c211334aea3572f1618b84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759016"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675177"
 ---
 # <a name="revenue-recognition-setup"></a>Umsatzerkennungseinstellungen
 [!include [banner](../includes/banner.md)]
@@ -26,26 +26,30 @@ ms.locfileid: "6759016"
 Es wurde ein neues Modul **Umsatzerkennung** hinzugefügt, das Menüoptionen für alle erforderlichen Einstellungen enthält. In diesem Thema werden die Einrichtungsoptionen und deren Auswirkungen behandelt.
 
 > [!NOTE]
-> Die Funktion zur Umsatzerkennung kann nicht mithilfe der Funktionsverwaltung aktiviert werden. Derzeit erfolgt die Aktivierung mit Konfigurationsschlüsseln.
-
-> Die Umsatzerkennung, einschließlich Bündelfunktion, wird in Commerce-Kanälen (E-Commerce, POS, Callcenter) nicht unterstützt. Mit Umsatzerkennung konfigurierte Artikel dürfen nicht in Bestellungen oder Transaktionen ergänzt werden, die in Commerce-Kanälen erstellt wurden.
+> Die Umsatzerkennungsfunktion ist nun über die Funktionsverwaltung standardmäßig aktiviert. Wenn Ihre Organisation diese Funktion nicht nutzt, können Sie sie im Arbeitsbereich **Funktionsverwaltung** ausschalten.
+>
+> Die Umsatzerkennung, einschließlich Bündelfunktion, wird in Commerce-Kanälen (E-Commerce, POS und Callcenter) nicht unterstützt. Für die Umsatzerkennung konfigurierte Artikel dürfen nicht in Bestellungen oder Transaktionen ergänzt werden, die in Commerce-Kanälen erstellt wurden.
 
 Das Modul **Umsatzerkennung** hat folgende Einrichtungsoptionen:
 
 - Umsatzerkennungserfassungen
 - Parameter für die Umsatzerkennung
 - Umsatzerlöszeitpläne 
-- Lagereinrichtung
+- Bestandseinrichtung
 
     - Artikelgruppen und freigegebene Produkte
     - Umsatzerlöszeitplan definieren
     - Umsatzerlöspreis definieren
+    - Bestandseinrichtung
 
-        - Buchungsprofile
-        - Bündel
+        - Umsatzerlöszeitplan definieren
+        - Umsatzerlöspreis definieren
 
-    - Bündelkomponenten
-    - Bündelartikel
+    - Buchungsprofile
+    - Bündel
+
+        - Bündelkomponenten
+        - Bündelartikel
 
 - Projekteinstellungen
 
@@ -91,20 +95,27 @@ Geben Sie in den Feldern **Umsatzerlöszeitplan** und **Beschreibung** beschreib
 - **Automatische Vertragsbedingungen** – Aktivieren Sie dieses Kontrollkästchen, wenn das Vertragsstart-und -enddatum automatisch festgelegt werden soll. Diese Daten werden nur automatisch für freigegebene Produkte des Umsatzerlöstyps **Unterstützung nach Vertragsabschluss** festgelegt. Das Vertragsstartdatum wird automatisch auf das angeforderte Lieferdatum des Auftrags festgelegt, und das Vertragsenddatum wird automatisch auf das Startdatum zuzüglich der Anzahl der Monate oder Vorkommen festgelegt, die in den Einstellungen des Umsatzerlöszeitplans definiert sind. Beispielsweise ist das Produkt in der Auftragsposition einer einjährigen Gewährleistung zugeordnet. Der Standard-Umsatzerlöszeitplan ist **12M** (12 Monate), und das Kontrollkästchen **Automatische Vertragsbedingungen** ist für diesen Umsatzerlöszeitplan aktiviert. Wenn die Auftragsposition ein angefordertes Versanddatum vom 16. Dezember 2019 hat, wird das Standard-Vertragsstartdatum auf den 16. Dezember 2019 und das Standard-Vertragsenddatum auf den 15. Dezember 2020 festgelegt.
 - **Erkennungsgrundlage** – Die Erkennungsgrundlage bestimmt, wie der Umsatzerlöspreis auf die Vorkommen verteilt wird.
 
-    - **Monatlich nach Datum** – Der Betrag wird auf Grundlage der tatsächlichen Tage der einzelnen Monate zugewiesen.
+    - **Monatlich nach Tagen** – Der Betrag wird auf Grundlage der tatsächlichen Tage der einzelnen Kalendermonate zugewiesen.
     - **Monatlich** – Der Betrag wird gleichmäßig auf die Anzahl der Monate zugewiesen, die in den Vorkommen definiert sind.
     - **Vorkommen** – Der Betrag wird gleichmäßig auf die Vorkommen verteilt, kann jedoch eine zusätzliche Periode enthalten, wenn Sie **Tatsächliches Startdatum** als Erkennungskonvention auswählen.
+    - **Buchhaltungsperiode nach Tagen** – Der Betrag wird auf Grundlage der tatsächlichen Tage der einzelnen Buchhaltungsperioden zugewiesen. 
 
-- **Erkennungskonvention** – Die Erkennungskonvention bestimmt die Standarddaten, die auf den Umsatzerlöszeitplan für die Rechnung angegeben sind.
+    Die Ergebnisse von **Monatlich nach Tagen** und **Buchhaltungsperiode nach Tagen** sind gleich, wenn die Buchhaltungsperioden Kalendermonaten entsprechen. Die einzige Ausnahme besteht, wenn die Erkennungskonvention auf **Ende des Monat/Zeitraums** eingestellt ist und die Felder **Vertragsstartdatum** und **Enddatum** in einer Auftragsposition leer gelassen wurden.
+
+- **Erkennungskonvention** – Die Erkennungskonvention bestimmt die Daten, die auf den Umsatzerlöszeitplan für die Rechnung angegeben sind.
 
     - **Tatsächliches Startdatum** – Der Zeitplan wird erstellt, indem Sie entweder das Vertragsstartdatum (für \[PCS\]-Artikel und „Unterstützung nach Vertragsabschluss“) oder das Rechnungsdatum (für wesentliche und nicht-wesentliche Artikel) verwenden.
-    - **1. des Monats** – Das Datum der ersten Zeitplanposition ist das Vertragsstartdatum (oder das Rechnungsdatum). Allerdings werden alle folgenden Zeitplanpositionen für den ersten Tag des Monats erstellt.
+    - **1. Tag des Monats/Zeitraums** – Das Datum der ersten Zeitplanposition ist das Vertragsstartdatum (oder das Rechnungsdatum). Allerdings werden alle folgenden Zeitplanpositionen für den ersten Tag des Monats bzw. der Buchaltungsperiode erstellt.
     - **Teilung in der Monatsmitte** – Das Datum der ersten Zeitplanposition hängt vom Rechnungsdatum ab. Wenn die Rechnung zwischen dem 1. und dem 15. des Monats gebucht wird, wird der Umsatzerlöszeitplan unter Verwendung des ersten Tag des Monats erstellt. Wenn die Rechnung zwischen dem 16. oder einem späteren Tag des Monats gebucht wird, wird der Umsatzerlöszeitplan unter Verwendung des ersten Tag des folgenden Monats erstellt.
-    - **1. des nächsten Monats** – Das Datum auf dem Zeitplan ist der erste Tag des nächsten Monats.
 
-Wählen Sie die Schaltfläche **Umsatzerlöszeitplandetails** aus, um die allgemeinen Perioden und die Prozentsätze anzuzeigen, die in den einzelnen Perioden berücksichtigt werden. Standardmäßig wird der Wert **Erkennungsprozentsatz** auf eine gleichmäßig festgelegte Anzahl von Perioden aufgeteilt. Wenn die Erkennungsgrundlage auf **Monatlich** oder **Vorkommen** festgelegt ist, kann der Erkennungsprozentsatz geändert werden. Wenn Sie den Erkennungsprozentsatz ändern, wird eine Warnmeldung angezeigt, dass die Summe nicht 100 Prozent entspricht. Wenn die Meldung angezeigt wird, können Sie die Positionen weiter bearbeiten. Zuvor muss der Gesamtprozentsatz jedoch 100 entsprechen, damit Sie die Seite schließen können.
+        **Teilung in der Monatsmitte** kann nicht ausgewählt werden, wenn die Erkennungsgrundlage auf **Buchhaltungsperiode nach Tagen** festgelegt ist.
 
-[![Umsatzerlöszeitplandetails.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+    - **1. Tag des nächsten Monats/Zeitraums** – Das Datum, zu dem der Zeitplan beginnt, ist der erste Tag des nächsten Monats bzw. der Buchhaltungsperiode.
+    - **Ende des Monats/Zeitraums** – Das Datum der ersten Zeitplanposition ist das Vertragsstartdatum (oder das Rechnungsdatum). Allerdings werden alle folgenden Zeitplanpositionen für den letzten Tag des Monats bzw. der Buchhaltungsperiode erstellt. 
+
+Wählen Sie die Schaltfläche **Umsatzerlöszeitplandetails** aus, um die allgemeinen Perioden und die Prozentsätze anzuzeigen, die in den einzelnen Perioden berücksichtigt werden. Standardmäßig wird der Wert **Erkennungsprozentsatz** auf eine gleichmäßig festgelegte Anzahl von Perioden aufgeteilt. Wenn die Erkennungsgrundlage auf **Monatlich** festgelegt ist, kann der Erkennungsprozentsatz geändert werden. Wenn Sie den Erkennungsprozentsatz ändern, wird eine Warnmeldung angezeigt, dass die Summe nicht 100 Prozent entspricht. Wenn diese Meldung angezeigt wird, können Sie die Positionen weiter bearbeiten. Zuvor muss der Gesamtprozentsatz jedoch 100 entsprechen, damit Sie die Seite schließen können.
+
+[![Umsatzerlöszeitplandetails.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
 
 ## <a name="inventory-setup"></a>Bestandseinrichtung
 

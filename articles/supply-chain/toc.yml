@@ -72,14 +72,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Neuerungen oder Änderungen in Supply Chain Management
                   items:
-                    - name: Neuerungen oder Änderungen auf der Startseite von Supply Chain Management
+                    - name: Neuerungen oder Änderungen auf der Supply Chain Management-Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.23
+                      href: get-started/whats-new-scm-10-0-23.md
                     - name: Supply Chain Management 10.0.22 (November 2021)
                       href: get-started/whats-new-scm-10-0-22.md
                     - name: "Supply Chain Management 10.0.21 (Oktober\_2021)"
                       href: get-started/whats-new-scm-10-0-21.md
-                    - name: "Supply Chain Management\_10.0.20 (August\_2021)"
-                      href: get-started/whats-new-scm-10-0-20.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -1659,6 +1659,8 @@
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Produktprogrammplanung mit Handelsvereinbarungen für den Einkauf
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: In der Planungsoptimierung verwendete Datums- und Zeitparameter
+                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Sicherheitszuschläge
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Verzögerungstoleranz (negative Tage)
@@ -1885,6 +1887,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Das globale Adressbuch konfigurieren
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Adresseinstellungen
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Häufig gestellte Fragen zu Adressbüchern
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Adressbücher konfigurieren
@@ -2423,22 +2427,10 @@
                           href: production-control/tasks/report-production-order-finished.md
                         - name: Produktionsauftrag beenden
                           href: production-control/tasks/end-production-order.md
-                    - name: Produktionsaufträge freigeben
+                    - name: Freigeben von Produktionsaufträgen
                       href: production-control/release-production-orders.md
                     - name: Fertigmeldung für Produktionsaufträge
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Produktionsausführungsoberfläche einrichten und verwenden
-                      items:
-                        - name: Produktionsausführungsoberfläche konfigurieren
-                          href: production-control/production-floor-execution-configure.md
-                        - name: Produktionsausführungsoberfläche entwerfen
-                          href: production-control/production-floor-execution-tabs.md
-                        - name: Gerät zum Ausführen der Produktionsausführungsoberfläche einrichten
-                          href: production-control/production-floor-execution-setup.md
-                        - name: Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
-                          href: production-control/production-floor-execution-use.md
-                        - name: Produktionsausführungsoberfläche entwerfen
-                          href: production-control/production-floor-execution-styles.md
                     - name: Einzelvorgangsliste für Geräte konfigurieren
                       href: production-control/config-job-card-device.md
                     - name: Vom Einzelvorgangskartengerät als erledigt melden
@@ -2645,6 +2637,18 @@
                       href: production-control/consumption.md
                     - name: Produktionsbuchungen
                       href: cost-management/production-posting.md
+            - name: Produktionsausführungsoberfläche einrichten und verwenden
+              items:
+                - name: Produktionsausführungsoberfläche konfigurieren
+                  href: production-control/production-floor-execution-configure.md
+                - name: Produktionsausführungsoberfläche entwerfen
+                  href: production-control/production-floor-execution-tabs.md
+                - name: Gerät zum Ausführen der Produktionsausführungsoberfläche einrichten
+                  href: production-control/production-floor-execution-setup.md
+                - name: Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
+                  href: production-control/production-floor-execution-use.md
+                - name: Produktionsausführungsoberfläche entwerfen
+                  href: production-control/production-floor-execution-styles.md
         - name: Rückvergütungsverwaltung
           items:
             - name: Übersicht über das Modul für Rückvergütungsverwaltung
@@ -3391,6 +3395,10 @@
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Schritttitel und Anweisungen für die mobile Warehouse Management-App anpassen
                       href: warehousing/mobile-app-titles-instructions.md
+                    - name: Gewünschte Felder für Schritte auf dem mobilen Gerät konfigurieren
+                      href: warehousing/warehouse-app-promoted-fields.md
+                    - name: Umgehungen für Schritte in den Menüoptionen für mobile Geräte konfigurieren
+                      href: warehousing/warehouse-app-detours.md
                     - name: Kennzeicheneingang über die mobile Warehouse Management-App
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Auf einem mobilen Gerät eine Menüoption zur Fertigstellung von Arbeiten in einer Bestellung einrichten
@@ -3409,6 +3417,8 @@
                       href: warehousing/pick-oldest-batch.md
                 - name: Globale Parameter für mobile Geräte
                   href: warehousing/mobile-device-parameters.md
+                - name: Benutzerkonten für mobile Geräte
+                  href: warehousing/mobile-device-work-users.md
                 - name: Benutzereinstellungen für mobile Geräte
                   href: warehousing/mobile-device-user-settings.md
                 - name: Verarbeitung von Ereignissen der Lagerort-App
@@ -3733,11 +3743,17 @@
                   href: troubleshooting/sales/system-administrator.md
             - name: Transportverwaltung
               items:
-                - name: Das Hauptkonto kann nur aus Abstimmungsgründen als Habenkonto hinzugefügt werden.
+                - name: Das Hauptkonto kann nur aus Abstimmungsgründen als Habenkonto hinzugefügt werden
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerortverwaltung
               items:
-                - name: Die Aufforderung zur automatischen Reservierung für die Chargennummer wird auch bei verfügbarem Inventar angezeigt.
+                - name: Warehouse Mobile App
+                  items:
+                    - name: Der Vertrauensanker für den Zertifizierungspfad wurde beim Einrichten der App-Verbindung nicht gefunden
+                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
+                    - name: Der Vertrauensanker für den Zertifizierungspfad wurde beim Aktualisieren und Migrieren nach WMS nicht gefunden.
+                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+                - name: Die Aufforderung zur automatischen Reservierung für die Chargennummer wird auch bei verfügbarem Inventar angezeigt
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Entnahmearbeit kann wegen nicht abgeschlossener Wiederbeschaffungsarbeiten nicht entsperrt werden.
                   href: troubleshooting/warehousing/blocked-unfinished-replenishment-work.md
@@ -3745,13 +3761,11 @@
                   href: troubleshooting/warehousing/cancel-posted-packing-slip.md
                 - name: 'Kennzeichen kann nicht verschoben werden, wenn die Seriennummer eine leere Ausgabe und eine leere Quittung erlaubt.'
                   href: troubleshooting/warehousing/cant-move-license-plate.md
-                - name: 'Der Bestand kann nicht an einen Lagerplatz verschoben werden, der von Ladungsträgern kontrolliert wird.'
+                - name: 'Der Bestand kann nicht an einen Lagerplatz verschoben werden, der von Ladungsträgern kontrolliert wird'
                   href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-                - name: Der Vertrauensanker für den Zertifizierungspfad wurde beim Einrichten der App-Verbindung nicht gefunden.
-                  href: troubleshooting/warehousing/certification-path-app-connection-error.md
-                - name: Clusterprofil kann nicht gefunden werden.
+                - name: Clusterprofil kann nicht gefunden werden
                   href: troubleshooting/warehousing/cluster-profile-not-found-error.md
-                - name: Lieferscheinkorrektur kann nicht bearbeitet werden.
+                - name: Lieferscheinkorrektur kann nicht bearbeitet werden
                   href: troubleshooting/warehousing/delivery-note-correction.md
                 - name: Ein Fehler ist beim Bestätigen des Versands nach dem Anlegen eines Transportauftrags für einen Serienartikel aufgetreten.
                   href: troubleshooting/warehousing/dimension-location-left-blank.md
@@ -3815,15 +3829,13 @@
                   href: troubleshooting/warehousing/slotting-templates-inventory-batch-above.md
                 - name: Eine Ladung kann für eine Teilmenge mit „Charge oberhalb“ der Reservierungshierarchie nicht freigegeben werden.
                   href: troubleshooting/warehousing/specify-dimensions-above-location.md
-                - name: Unbestätigte Bestellungen werden nach dem Ausführen von „Produktzugänge aktualisieren“ bestätigt.
+                - name: Unbestätigte Bestellungen werden nach dem Ausführen von „Produktzugänge aktualisieren“ bestätigt
                   href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
-                - name: Die Reservierung von Inventar in einer Auftragsposition kann nicht aufgehoben werden.
+                - name: Die Reservierung von Inventar in einer Auftragsposition kann nicht aufgehoben werden
                   href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: Der Vertrauensanker für den Zertifizierungspfad wurde beim Aktualisieren und Migrieren nach WMS nicht gefunden.
-                  href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
-                - name: Lieferung kann aufgrund Debitorensperrung nicht bestätigt werden.
+                - name: Lieferung kann aufgrund Debitorensperrung nicht bestätigt werden
                   href: troubleshooting/warehousing/customer-is-on-hold.md
-                - name: Lieferung kann aufgrund von Ladungspositionen mit der Menge null nicht bestätigt werden.
+                - name: Lieferung kann aufgrund von Ladungspositionen mit der Menge null nicht bestätigt werden
                   href: troubleshooting/warehousing/load-line-quantity-is-zero.md
                 - name: 'Ladungsposition kann nicht aktualisiert werden, weil die freigegebene Menge negativ wäre'
                   href: troubleshooting/warehousing/released-qty-cannot-be-negative.md

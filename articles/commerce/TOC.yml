@@ -94,14 +94,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Neuerungen oder Änderungen in Commerce
                   items:
-                    - name: Neuerungen oder Änderungen in Commerce – Startseite
+                    - name: Neuerungen oder Änderungen auf der Commerce-Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.23
+                      href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (November 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
                     - name: Commerce 10.0.21 (Oktober 2021)
                       href: get-started/whats-new-commerce-10-0-21.md
-                    - name: "Commerce 10.0.20 (August\_2021)"
-                      href: get-started/whats-new-commerce-10-0-20.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -938,6 +938,8 @@
                   href: enable-store-detection.md
                 - name: Digitale E-Commerce-Geschenkgutscheine
                   href: digital-gift-cards.md
+                - name: Ein Produkt für den kostenlosen Erwerb konfigurieren
+                  href: configure-free-product.md
                 - name: Browseranforderungen für Dynamics 365 Commerce-Websites
                   href: browser-requirements.md
             - name: Übersicht zur Beispielwebsite
@@ -1518,6 +1520,8 @@
           items:
             - name: Überblick über die elektronische Berichterstellung
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/commerce/toc.json
+            - name: Elektronische Meldekomponenten
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/commerce/toc.json
             - name: Konfigurationen
               items:
                 - name: Konfigurationen erstellen
@@ -1582,6 +1586,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/commerce/toc.json
                         - name: AddDays
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/commerce/toc.json
+                        - name: ChangeTimeZone
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/commerce/toc.json
                         - name: DateFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/commerce/toc.json
                         - name: DateTimeFormat
@@ -1726,6 +1732,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/commerce/toc.json
                         - name: Mid
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/commerce/toc.json
+                        - name: NewGUID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/commerce/toc.json
                         - name: NumberFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
                         - name: NumeralsToText
@@ -1832,12 +1840,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
             - name: ER-Formate zum Generieren ausgehender Dokumente in unterschiedlichen Formaten erstellen
               items:
+                - name: Eine Konfiguration zum Generieren von Berichten im OpenXML-Format entwerfen
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurationen zur Generierung ausgehender Dokumente im Excel-Format entwerfen
                   items:
                     - name: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/commerce/toc.json
-                    - name: Beispiel für die Erstellung von Berichten im OPENXML-Format
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Elektronische Berichterstellungsformate durch erneute Anwendung von Excel-Vorlagen ändern
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
                     - name: Excel-Berichten dynamisch Spalten als horizontal erweiterbare Bereiche hinzufügen
@@ -1846,6 +1854,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
                         - name: Formate zur dynamischen Ergänzung von Excel-Berichten mit Spalten ausführen
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
+                    - name: EB-Format zur Paginierung erstellter Dokumente in Excel entwerfen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurationen zur Anfertigung von Berichten im Word-Format entwerfen
                   items:
                     - name: EB-Konfigurationen zur Anfertigung von Berichten im Word-Format entwerfen
@@ -1868,6 +1878,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/commerce/toc.json
                         - name: Berichte in Office-Formaten mit eingebetteten Bildern erstellen
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Ein EB-Format entwerfen, um einen Bericht im Excel-Format mit eingebetteten Bildern in den Kopf- oder Fußzeilen einer Seite zu erstellen'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Erstellte XML-Dateien auf Grundlage von Dateigröße und Inhaltsmenge teilen
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
                 - name: Stücklistenzeichen in generierten Dateien unterdrücken
@@ -2004,8 +2016,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Datenquellen debuggen
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
-                    - name: Mit STRICHCODE Strichcodebilder erzeugen
-                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Modellzuordnungen konfigurieren
                   items:
                     - name: Auf Länderkontext beruhende ER-Modellzuordnungen konfigurieren
@@ -2123,19 +2133,23 @@
                     - name: "Anwendungsupdate\_10.0.19"
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
                     - name: "Anwendungsupdate\_10.0.21"
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.jso
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
+                    - name: "Anwendungsupdate\_10.0.23"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
                 - name: Benutzerdefinierten Speicherort für generierte Dokumente angeben
                   items:
                     - name: 'Ein Ereignis abonnieren, um eine Antwort vom abonnierenden Handler anzufordern'
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
                     - name: Erstellung eines ER-Ziels an ein benutzerdefiniertes Empfängerwerk delegieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
-                - name: Benutzerdefiniertes Ziel für generierte Dokumente implementieren
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
+                    - name: Benutzerdefiniertes Ziel für generierte Dokumente implementieren
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
                 - name: Datenquellenwerte vom Typ USER INPUT PARAMETER aus dem Quellcode initiieren
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Code ändern, damit Benutzer benannte ER-Ziele konfigurieren und verwenden können'
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/commerce/toc.json
+                - name: Eine benutzerdefinierte ER-Quelle für eingehende Dokumente implementieren
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/commerce/toc.json
         - name: Mobile Finance and Operations-App (Dynamics 365)
           items:
             - name: Startseite der mobilen App

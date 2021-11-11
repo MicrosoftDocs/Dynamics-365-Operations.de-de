@@ -72,14 +72,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
                 - name: Neuerungen oder Änderungen in Finance
                   items:
-                    - name: Neuerungen oder Änderungen in Finance – Startseite
+                    - name: Neuerungen oder Änderungen auf der Finance-Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.23
+                      href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (November 2021)
                       href: get-started/whats-new-changed-10-0-22.md
                     - name: "Finance 10.0.21 (Oktober\_2021)"
                       href: get-started/whats-new-changed-10-0-21.md
-                    - name: "Finance 10.0.20 (August\_2021)"
-                      href: get-started/whats-new-changed-10-0-20.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -240,6 +240,10 @@
                   href: accounts-payable/auto-vendr-invc-process.md
                 - name: Einrichtungsoptionen zur Automatisierung von Kreditorenrechnungen
                   href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Automatisches Anwenden von Vorauszahlungen auf Kreditorenrechnungen – Übersicht
+                  href: accounts-payable/apply-prepymnts-overview.md
+                - name: Beim Importieren von Kreditorenrechnungen Rechnungspositionen generieren
+                  href: accounts-payable/auto-create-invc-lines-at-import.md
                 - name: Rechnungen beim Workflowsystem einreichen und Produktzugangspositionen abgleichen
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Ergebnisse der Automatisierung von Kreditorenrechnungen anzeigen
@@ -272,6 +276,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Kreditoren-Buchungsprofile
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Daten von Kreditorenrechnungen
+              href: accounts-payable/vendor-invoice-dates.md
             - name: Neubewertung der Fremdwährung für Kreditorenkonten und Debitoren
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: Mobile Rechnungsgenehmigungen
@@ -990,6 +996,8 @@
                   href: general-ledger/tasks/create-main-account.md
                 - name: Kontenplan planen
                   href: general-ledger/plan-chart-of-accounts.md
+                - name: Lokalen Kontenplan planen
+                  href: general-ledger/plan-local-chart-of-accounts.md
                 - name: Buchungen zwischen Sachkonten ausgleichen
                   href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
                 - name: Einen Sachkontoalias einrichten
@@ -1104,6 +1112,8 @@
                   href: general-ledger/enable-delayed-tax-calculation.md
                 - name: Eine Mehrwertsteuerzahlung erstellen
                   href: general-ledger/tasks/create-sales-tax-payment.md
+                - name: Steuerausgleich auf der Grundlage benutzerdefinierter Dezimalstellen runden
+                  href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
                 - name: Mehrwertsteuerbuchungen in Dokumenten erstellen
                   href: general-ledger/tasks/create-sales-tax-transactions-documents.md
                 - name: Sachkontobuchungsgruppen für Mehrwertsteuer einrichten
@@ -1546,6 +1556,8 @@
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Erste Schritte mit der elektronischen Rechnungsstellung in Mexiko
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Erste Schritte mit der elektronischen Rechnungsstellung in Saudi-Arabien
+                          href: localizations/e-invoicing-sa-get-started.md
                         - name: Kreditorenrechnungen mit der elektronischen Rechnungsstellung importieren
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Elektronische Rechnungsstellung einrichten
@@ -1568,7 +1580,9 @@
                           href: localizations/tax-calculation-data-model-overview.md
                         - name: Logik zur Anwendbarkeit der Mehrwertsteuer und der Bestimmung von Mehrwertsteuergruppen
                           href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
-                    - name: Herstellkostenkalkulation
+                        - name: Verwenden von Steuerzuständigkeitsparametern für die Einrichtung der Skontoberechnung
+                          href: localizations/global-tax-jurisdiction-cash-discount-setup.md?toc=/dynamics365/finance/toc.json
+                    - name: Steuerberechnung
                       items:
                         - name: 'Steuer auf Preise berechnen, wenn die Option „Preise inkl. Steuer“ aktiviert ist'
                           href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
@@ -1594,6 +1608,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Zusammenfassende Meldung
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Berichterstellung in Spanien
+                          items:
+                            - name: 'Sofortige Bereitstellung von Informationen zur MwSt. (Suministro Inmediato de Información del IVA, SII)'
+                              href: localizations/emea-esp-sii-spain.md
                         - name: Berichterstellung in Schweden
                           items:
                             - name: MwSt.-Erklärung
@@ -1604,18 +1622,24 @@
                               href: localizations/emea-che-vat-declaration-switzerland.md
                         - name: Berichterstellung im Vereinigten Königreich
                           items:
-                            - name: Vorbereitung der Integration mit MTD für MwSt.
-                              href: localizations/emea-gbr-mtd-vat-integration.md
+                            - name: MwSt.-Erklärung
+                              href: localizations/emea-gbr-vat-declaration.md
                     - name: Steuerberechnung für Überweisungsauftrag aktivieren
                       items:
                         - name: Unterstützung der Steuerfunktion bei Umlagerungsaufträgen
                           href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                        - name: Steuerinformationen auf Überweisungen drucken
+                          href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?toc=/dynamics365/finance/toc.json
                     - name: Erweiterung
                       items:
                         - name: Datenfelder in Steuerkonfigurationen ergänzen
                           href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Datenfelder mithilfe von Erweiterungen der Steuerintegration hinzufügen
                           href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
+                        - name: Steuerkonfigurationen für die Masterdatensuche anpassen
+                          href: localizations/customize-tax-configurations-master-data-lookup.md
+                    - name: Häufig gestellte Fragen zur Steuerberechnung
+                      href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: Neues zu rechtlichen Bestimmungen
               href: localizations/regulatory-updates.md
             - name: Australien
@@ -1684,9 +1708,11 @@
                   href: localizations/emea-bel-prodcom-report.md
                 - name: Jährliche MwSt.-Auflistung der Inlandsverkäufe
                   href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
+                - name: Intrastat (Belgien)
+                  href: localizations/emea-bel-intrastat.md
             - name: Brasilien
               items:
-                - name: Übersicht zu Brasilien
+                - name: Informationen zu Brasilien
                   href: localizations/brazil.md
                 - name: Lokalisierungsumfang
                   href: localizations/latam-bra-scope.md
@@ -2312,6 +2338,8 @@
                   href: localizations/apac-ind-scope.md
                 - name: Neuerungen oder Änderungen bei der Lokalisierung für Indien
                   items:
+                    - name: Neuerungen oder Änderungen in 10.0.20–10.0.22
+                      href: localizations/ind-news-letter-10-0-20-22.md
                     - name: Neuerungen oder Änderungen in 10.0.15–10.0.19
                       href: localizations/ind-news-letter-10-0-15-19.md
                     - name: Neuerungen oder Änderungen in 10.0.14
@@ -2680,9 +2708,15 @@
                           href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
                         - name: Zertifikatsnummern und -daten für TDS-Buchungen aktualisieren
                           href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+            - name: Indonesien
+              items:
+                - name: Informationen zu Indonesien
+                  href: localizations/indonesia.md
+                - name: MwSt.-Erklärung für Indonesien
+                  href: localizations/apac-idn-ppn-declaration.md
             - name: Italien
               items:
-                - name: Italien – Übersicht
+                - name: Informationen zu Italien
                   href: localizations/italy.md
                 - name: MwSt.-Abrechnungsdetails
                   href: localizations/emea-ita-vat-statements-details.md
@@ -3024,6 +3058,8 @@
                   href: localizations/emea-nl-audit-file.md
                 - name: MwSt.-Erklärung (Niederlande)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: Intrastat (Niederlande)
+                  href: localizations/emea-nl-intrastat.md
                 - name: Zusammenfassende Meldung
                   href: localizations/emea-nl-EU-sales-list.md
             - name: Neuseeland
@@ -3348,13 +3384,15 @@
                   href: localizations/saudi-arabia.md
                 - name: Mehrwertsteuer
                   href: localizations/apac-sau-sales-tax.md
-                - name: Zakat-Berichterstellung für Saudi-Arabien
+                - name: Zakat-Meldung für Saudi-Arabien
                   href: localizations/emea-sau-zakat-reporting.md
                 - name: Einer Lieferung Bankdokumentbelastungen zuordnen
                   href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
+                - name: Elektronische Rechnungen für Kunden in Saudi-Arabien
+                  href: localizations/emea-sau-e-invoices.md
             - name: Singapur
               items:
-                - name: Singapur – Übersicht
+                - name: Informationen zu Singapur
                   href: localizations/singapore.md
                 - name: GST-05-Bericht generieren
                   href: localizations/apac-sgp-generate-gst-05-report.md
@@ -3378,6 +3416,8 @@
                   href: localizations/emea-esp-fixed-asset-group-revaluation.md
                 - name: Innergemeinschaftliche MwSt.
                   href: localizations/emea-esp-intra-community-vat.md
+                - name: Intrastat (Spanien)
+                  href: localizations/emea-esp-intrastat.md
                 - name: Einmalige Debitoren
                   href: localizations/emea-esp-no-one-time-customer-for-project-contracts.md
                 - name: Schecks mit spanischem Layout drucken
@@ -3462,28 +3502,26 @@
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: Mehrwertsteuergruppen für die Verlagerung der Steuerschuld festlegen
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Berichterstellung im Vereinigten Königreich
+                - name: Digitale Steuer (MTD) für MwSt.
                   items:
-                    - name: Digitale Steuer (MTD) für MwSt.
-                      items:
-                        - name: Einreichung der MwSt.-Erklärung (MTD) im Vereinigten Königreich
-                          href: localizations/emea-gbr-mtd-vat-integration.md
-                        - name: Die Umgebung auf Interoperabilität mit dem MTD-MwSt.-Webservice von HMRC vorbereiten
-                          href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: Checkliste zur Einrichtung elektronischer Nachrichten für MTD-MwSt.
-                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: Interoperabilität mit der MTD-MwSt.-Sandbox testen
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: Finance-Umgebung zwecks Interoperabilität mit dem MTD-MwSt.-Webservice von HMRC autorisieren
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: MwSt.-Erklärung an den MTD-Webservice von HMRC senden
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
-                        - name: Informationen zu MwSt.-Zahlungen und -Verbindlichkeiten von HMRC abrufen
-                          href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
-                        - name: Informationen zur MwSt.-Einrichtung für MwSt.-Erklärungen im Vereinigten Königreich
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
-                        - name: MwSt.-Erklärung in Papierform (MwSt.-Bericht „100“)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+                    - name: Einreichung der MwSt.-Erklärung (MTD) im Vereinigten Königreich
+                      href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: Die Umgebung auf Interoperabilität mit dem MTD-MwSt.-Webservice von HMRC vorbereiten
+                      href: localizations/emea-gbr-mtd-vat-integration-setup.md
+                    - name: Checkliste zur Einrichtung elektronischer Nachrichten für MTD-MwSt.
+                      href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+                    - name: Interoperabilität mit der MTD-MwSt.-Sandbox testen
+                      href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                    - name: Finance-Umgebung zwecks Interoperabilität mit dem MTD-MwSt.-Webservice von HMRC autorisieren
+                      href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                    - name: MwSt.-Erklärung an den MTD-Webservice von HMRC senden
+                      href: localizations/emea-gbr-mtd-vat-integration-submission.md
+                    - name: Informationen zu MwSt.-Zahlungen und -Verbindlichkeiten von HMRC abrufen
+                      href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                    - name: Informationen zur MwSt.-Einrichtung für MwSt.-Erklärungen im Vereinigten Königreich
+                      href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                    - name: MwSt.-Erklärung in Papierform (MwSt.-Bericht „100“)
+                      href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Statistiken zu Bericht über Zahlungsmethoden
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: USA
@@ -3877,6 +3915,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
                         - name: AddDays
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
+                        - name: ChangeTimeZone
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/finance/toc.json
                         - name: DateFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
                         - name: DateTimeFormat
@@ -4021,6 +4061,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/finance/toc.json
                         - name: Mid
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/finance/toc.json
+                        - name: NewGUID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/finance/toc.json
                         - name: NumberFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
                         - name: NumeralsToText
@@ -4421,6 +4463,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                     - name: "Anwendungsupdate\_10.0.21"
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
+                    - name: "Anwendungsupdate\_10.0.23"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
                 - name: Benutzerdefinierten Speicherort für generierte Dokumente angeben
                   items:
                     - name: 'Ein Ereignis abonnieren, um eine Antwort vom abonnierenden Handler anzufordern'
@@ -4433,6 +4477,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
                 - name: 'Code ändern, damit Benutzer benannte ER-Ziele konfigurieren und verwenden können'
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
+                - name: Eine benutzerdefinierte ER-Quelle für eingehende Dokumente implementieren
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/finance/toc.json
         - name: Mobile App
           items:
             - name: Startseite der mobilen App
