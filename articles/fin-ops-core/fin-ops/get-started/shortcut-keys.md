@@ -2,7 +2,7 @@
 title: Tastenkombinationen
 description: Dieses Thema bietet einen Überblick über die Tastenkombinationen, die Sie in Finance and Operations-Apps verwenden können.
 author: jasongre
-ms.date: 10/05/2020
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 749fc3655b1ad41fbe7dd4794fc4ca907f1c86b9ee4e92e2415e924058191ffa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743170"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647535"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Mit den folgenden Tastaturkombinationen können Sie Daten in Finance and Operations-Apps schnell und effizient eingeben.
 
@@ -147,15 +148,16 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Die Standardaktivität in einem Raster ausführen<blockquote>[!NOTE] Die Tastenkombination wird aktiviert, wenn der Fokus auf einer Zelle liegt, die einen Link enthält und alle Zellen in dieser Spalte Links haben</blockquote> | EINGABETASTE                           |
 | Fokus zwischen ausgewählter Zeile und Kopfzeile umschalten                                                               | ALT+UMSCHALT+H                     |
 | Die aktuelle Spalte vergrößern/verkleinern (mit Fokus in der Kopfzeile)                                                  | NACH-RECHTS-TASTE / NACH-LINKS-TASTE        |
-| Rasterfilterung für die aktuelle Spalte öffnen (mit Fokus in der Kopfzeile)                                              | EINGABETASTE                           |
+| Rasterfilterung für die aktuelle Spalte öffnen (mit Fokus in der Kopfzeile)                                              | Eingeben                           |
+| Größe der aktuellen Spalte an den Inhalt anpassen (mit Fokus in der Kopfzeile)                                           | K                               |
 
 ## <a name="input-control-shortcuts"></a>Eingabesteuerungsverknüpfungen
 
-| Aktion                                                                   | Taste(n)                         |
+| Aktion                                                                   | Drücken Sie folgende Taste: .                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Den Link öffnen                                                           | STRG+EINGABETASTE                    |
-| Sitzungsdatum in ein Datumsfeld eingeben                                       | S                         |
-| Aktuelles Datum in ein Datumsfeld eingeben                                       | Di                         |
+| Sitzungsdatum in ein Datumsfeld eingeben                                       | S                             |
+| Aktuelles Datum in ein Datumsfeld eingeben                                       | Di                             |
 | Suche, Kombinationsfeld, Datumsauswahl, Ablagedialogfeld öffnen                         | ALT+NACH-UNTEN-TASTE                |
 | Suche, Kombinationsfeld, Datumsauswahl, Ablagedialogfeld schließen                        | ESC                           |
 | Fokus in eine Suche verschieben (wenn die Suche bereits offen ist)                   | ALT+NACH-UNTEN-TASTE                |
@@ -202,8 +204,8 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Das Tool „Verschieben” verwenden (wenn im Personalisierungsmodus)                                                                       | M                                   |
 | Das aktuelle Steuerelemente als das zu verschiebende auswählen (wenn das Tool „Verschieben” verwendet wird und noch kein Steuerelement zum Verschieben ausgewählt ist)  | LEERTASTE oder EINGABETASTE                      |
 | Das Steuerelement zum Verschieben deaktivieren (wenn das Tool „Verschieben” verwendet wird)                                                                   | ESC                                 |
-| Zur nächsten Position für das ausgewählte Steuerelement wechseln (wenn das Tool „Verschieben” verwendet wird)                                          | Registerkarte oder NACH-RECHTS-TASTE oder NACH-UNTEN-TASTE    |
-| Zur vorherigen Position für das ausgewählte Steuerelement wechseln (wenn das Tool „Verschieben” verwendet wird)                                      | UMSCHALT+TAB oder NACH-LINKS-TASTE oder NACH-OBEN-TASTE |
+| Zur nächsten Position für das ausgewählte Steuerelement wechseln (wenn das Tool „Verschieben“ verwendet wird)                                              | Registerkarte oder NACH-RECHTS-TASTE oder NACH-UNTEN-TASTE    |
+| Zur vorherigen Position für das ausgewählte Steuerelement wechseln (wenn das Tool „Verschieben“ verwendet wird)                                          | UMSCHALT+TAB oder NACH-LINKS-TASTE oder NACH-OBEN-TASTE |
 | Das Tool „Ausblenden” verwenden (wenn im Personalisierungsmodus)                                                                       | H                                   |
 | Wechseln, ob das aktuelle Steuerelement sichtbar oder ausgeblendet ist (wenn das Tool „Ausblenden” verwendet wird)                                     | LEERTASTE oder EINGABETASTE                      |
 | Das Tool „Überspringen” verwenden (wenn im Personalisierungsmodus)                                                                       | K                                   |

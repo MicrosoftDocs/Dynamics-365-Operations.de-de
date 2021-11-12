@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: db1d9d2cddfab5ca5abb50cc3ecb9c841e06b8b7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a8f46165a89f064878d2e8af1b0b174b04eca37e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580983"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647313"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.20 (August 2021)
 
@@ -46,7 +46,7 @@ Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsve
 
 Die folgende Tabelle listet die Funktionsverbesserungen auf, die in dieser Version enthalten sind. Jede dieser Funktionen bietet eine schrittweise Verbesserung einer vorhandenen Funktion. Da es sich nur um Verbesserungen handelt, sind sie nicht in der Liste [Releaseplan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) aufgeführt. Um jedoch sicherzustellen, dass diese Verbesserungen nicht mit Ihren vorhandenen Anpassungen oder Einstellungen in Konflikt stehen, ist jede standardmäßig deaktiviert (sofern nicht anders angegeben). Wenn Sie eine dieser Funktionen verwenden möchten, müssen Sie sie explizit aktivieren unter [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Funktionsbereich | Funktion&nbsp;Name&nbsp;in Funktion&nbsp;Verwaltung | Weitere Informationen |
+| Modul | Funktion&nbsp;Name&nbsp;in Funktion&nbsp;Verwaltung | Mehr erfahren |
 |---|---|---|
 | Produktprogrammplanung | Parallele Autorisierung der angepassten Bedarfsplanung | Diese Funktion ermöglicht die parallele Autorisierung der angepassten Bedarfsprognose aus der Seite **Angepasste Nachfrageprognose**. Mit dieser Funktion soll die Leistung gesteigert werden, wenn eine große Anzahl von Prognosen genehmigt wird. Bei der Autorisierung kann der Benutzer die **Anzahl der Themen** im Autorisierungsdialog angeben. |
 | Produktprogrammplanung | (Vorschau) Chargenfähige Umwandlung und Konsolidierung für geplante Sammel- und Verpackungschargenaufträge | Mit dieser Funktion können Sie Batchaufträge verwenden, um geplante Sammel- und Verpackungsaufträge zu konsolidieren. |

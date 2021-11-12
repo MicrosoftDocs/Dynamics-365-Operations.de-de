@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
-ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
+ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463839"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7700378"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Erste Schritte mit der elektronischen Rechnungsstellung
 
@@ -84,6 +84,7 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
 | Elektronische Rechnungen für Norwegen (NO)    | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
 | Elektronische Rechnungen für Spanien (ES)      | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
 | Elektronische Rechnungen im PEPPOL-Format            | <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
+| Saudi-arabische elektronische Rechnung (SA)| <p>Kontextmodell Debitorenrechnung</p><p>Rechnungsmodell</p> |
 
 
 ## <a name="configure-the-application-setup"></a>Anwendungseinrichtung konfigurieren
@@ -112,6 +113,7 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
     | Elektronische Rechnungen für Norwegen (NO)    | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Debitorenrechnungserfassung</p><p>Projektrechnung</p> |
     | Elektronische Rechnungen für Spanien (ES)      | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Debitorenrechnungserfassung</p><p>Projektrechnung</p> |
     | Elektronische Rechnungen im PEPPOL-Format            | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Debitorenrechnungserfassung</p><p>Projektrechnung</p> |
+    | Saudi-arabische elektronische Rechnung (SA)| <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Debitorenrechnungserfassung</p><p>Projektrechnung</p> |
 
 6. Für jeden Tabellennamen, den Sie erstellen, wählen Sie einen Kontextwert gemäß folgender Tabelle aus und geben ihn ein.
 
@@ -133,6 +135,7 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
     | Elektronische Rechnungen für Norwegen (NO)    | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Kontextmodell Debitorenrechnung – Kontext Debitorenrechnung</p><p>Kontextmodell Debitorenrechnung – Kontext Projektrechnung</p> |
     | Elektronische Rechnungen für Spanien (ES)      | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Kontextmodell Debitorenrechnung – Kontext Debitorenrechnung</p><p>Kontextmodell Debitorenrechnung – Kontext Projektrechnung</p> |
     | Elektronische Rechnungen im PEPPOL-Format            | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Kontextmodell Debitorenrechnung – Kontext Debitorenrechnung</p><p>Kontextmodell Debitorenrechnung – Kontext Projektrechnung</p> |
+    | Saudi-arabische elektronische Rechnung (SA)| <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Kontextmodell Debitorenrechnung – Kontext Debitorenrechnung</p><p>Kontextmodell Debitorenrechnung – Kontext Projektrechnung</p> |
 
 7. Wählen Sie gemäß folgender Tabelle für jeden Tabellennamen und Kontext einen Geschäftsdokumentzuordnungswert aus, und geben Sie ihn ein.
 
@@ -154,6 +157,7 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
     | Elektronische Rechnungen für Norwegen (NO)    | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Rechnungsmodellzuordnung – Debitorenrechnung</p><p>Rechnungsmodellzuordnung – Projektrechnung</p> |
     | Elektronische Rechnungen für Spanien (ES)      | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Rechnungsmodellzuordnung – Debitorenrechnung</p><p>Rechnungsmodellzuordnung – Projektrechnung</p> |
     | Elektronische Rechnungen im PEPPOL-Format            | <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Rechnungsmodellzuordnung – Debitorenrechnung</p><p>Rechnungsmodellzuordnung – Projektrechnung</p> |
+    | Saudi-arabische elektronische Rechnung (SA)| <p>Verkaufsrechnung</p><p>Projektrechnung</p> | <p>Rechnungsmodellzuordnung – Debitorenrechnung</p><p>Rechnungsmodellzuordnung – Projektrechnung</p> |
 
 
 ## <a name="country-specific-configuration-of-application-setup"></a>Länderspezifische Konfiguration der Anwendungseinrichtung
@@ -207,6 +211,8 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
     | Elektronische Rechnungen für Norwegen (NO)                     | Norwegen          |
     | Elektronische Rechnungen im PEPPOL-Format                             | Global          |
     | Elektronische Rechnungen für Spanien (ES)                       | Spanien           |
+    | Saudi-arabische elektronische Rechnung (SA)                 | Saudi-Arabien    |
+    
 
 4. Wählen Sie **Speichern** aus.
 
@@ -242,8 +248,9 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
 - [Erste Schritte mit der Dienstverwaltung für die elektronische Rechnungsstellung](e-invoicing-get-started-service-administration.md)
 - [Erste Schritte mit der elektronischen Rechnungsstellung für Brasilien](e-invoicing-bra-get-started.md)
 - [Erste Schritte mit der elektronischen Rechnungsstellung für Mexiko](e-invoicing-mex-get-started.md)
-- [Erste Schritte mit der elektronischen Rechnungsstellung für Italien](e-invoicing-ita-get-started.md)
+- [Erste Schritte mit der elektronischen Rechnungsstellung in Italien](e-invoicing-ita-get-started.md)
 - [Elektronische Rechnungen für Debitoren in Ägypten](emea-egy-e-invoices.md)
+- [Elektronische Rechnungen für Kunden in Saudi-Arabien](emea-sau-e-invoices.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
-title: Übersicht zum Abschreibungsbuchupgrade
-description: In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen, Wertmodelle und Abschreibungsbücher.
-author: ShylaThompson
+title: Upgradeübersicht für Abschreibungsbuch
+description: In diesem Thema wird die aktuelle Buchfunktion in Anlagen beschrieben. Diese neue Buchfunktionalität basiert auf der Wertmodellfunktionalität, die in früheren Versionen verfügbar war, aber sie umfasst auch die gesamte Funktionalität, die zuvor nur in Abschreibungsbüchern bereitgestellt wurde.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,25 +13,25 @@ ms.custom:
 - intro-internal
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b1d14154cd2e9bd18a886ba490891a02afeb0b05
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: c36e0ab53f8a10e81e1bed207417861066dd6917
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344713"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675151"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Upgradeübersicht für Abschreibungsbuch
 
 [!include [banner](../includes/banner.md)]
 
-In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 for Operations (1611) wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als Buch bekannt ist. Dieses Thema bietet mehrere Dinge, die für das Upgrade zu berücksichtigen sind. 
+In diesem Thema wird die aktuelle Buchfunktion in Anlagen beschrieben. Diese neue Buchfunktionalität basiert auf der Wertmodellfunktionalität, die in früheren Versionen verfügbar war, aber sie umfasst auch die gesamte Funktionalität, die zuvor nur in Abschreibungsbüchern bereitgestellt wurde. Die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität wurden zu einem einzigen Konzept zusammengeführt, das als Buch bekannt ist. Mit der Buchfunktion können Sie einen einzigen Satz von Seiten, Abfragen und Berichten für alle Anlageprozesse Ihres Unternehmens verwenden. Dieses Thema enthält einige Dinge, die Sie vor dem Upgrade berücksichtigen sollten. 
 
-Durch den Upgradeprozess werden Ihre vorhandenen Einstellungen und alle Ihre vorhandenen Transaktionen zur neuen Buchstruktur verschoben. Wertmodelle bleiben, wie sie zurzeit sind, als Buch, das zum Hauptbuch bucht. Abschreibungsbücher werden zu einem Buch verschoben, bei dem die Option **Ins Hauptbuch buchen** auf **Nein** festgelegt ist. Abschreibungsbuch-Erfassungsnamen werden zu einem Hauptbuch-Erfassungsnamen verschoben, bei dem die Buchungsebene auf **Keine** festgelegt ist. Abschreibungsbuchtransaktionen werden auf eine Anlagenbuchung verschoben. 
+Durch den Upgradeprozess werden Ihre vorhandenen Einstellungen und alle Ihre vorhandenen Transaktionen zur neuen Buchstruktur verschoben. Wertmodelle bleiben, wie sie zurzeit sind, als Buch, das zum Hauptbuch bucht. Abschreibungsbücher werden zu einem Buch verschoben, bei dem die Option Ins Hauptbuch buchen auf Nein festgelegt ist. Abschreibungsbuch-Erfassungsnamen werden zu einem Hauptbuch-Erfassungsnamen verschoben, bei dem die Buchungsebene auf Keine festgelegt ist. Abschreibungsbuchtransaktionen werden auf eine Anlagenbuchung verschoben.
 
-Bevor Sie das Datenupgrade ausführen, sollten Sie die zwei Optionen verstehen, die für die Aktualisierung der Abschreibungsbuch-Erfassungspositionen zu Buchungsbelegen verfügbar sind, sowie der Nummernkreis, der für Belegreihen verwendet wird. 
+Bevor Sie das Datenupgrade ausführen, sollten Sie die zwei Optionen verstehen, die für die Aktualisierung der Abschreibungsbuch-Erfassungspositionen zu Buchungsbelegen verfügbar sind, sowie der Nummernkreis, der für Belegreihen verwendet wird.
 
 Option 1:  **Systemdefinierter Nummernkreis** – Dies ist die Standardoption, um die Aktualisierungsleistung zu optimieren. Beim Upgrade wird nicht das Nummernkreis-Framework verwendet. Statt dessen werden Belege mit einem satzbasierten Ansatz zugeteilt. Nach Abschluss der Aktualisierung wird der neue Nummernkreis mit **Nächste Nummer festgelegt** basierend auf den aktualisierten Buchungen erstellt. Standardmäßig ist der verwendete Nummernkreis im Format FADBUpgr\#\#\#\#\#\#\#\#\# angezeigt. Es gibt einige Parameter, die Ihnen zur Verfügung stehen, um das Format anzupassen, wenn dieser Ansatz verwendet wird:
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dfc1bc0d457d0b0b2632aa2e2e5ba6a3c2f3fae7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1ea1d8c1b0e8c996ead8461005960fa756ce6ca7
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575170"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678908"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Übersicht über Add-In Bestandstransparenz
 
@@ -45,8 +45,6 @@ Es gibt zwei Ansätze, um Ihren Bestand einzusehen:
 - Zeigen Sie die rohe Lagerbestandsliste an. Diese Liste wird periodisch von einer zwischenspeichernden Instanz synchronisiert und ist in Bestand in Dataverse zu sehen. Weitere Informationen finden Sie unter [Inventory Visibility App](inventory-visibility-power-platform.md).
 
 ## <a name="soft-reservations"></a>Soft-Reservierungen
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Soft-Reservierungen werden angewendet, wenn ein Unternehmen eine bestimmte Menge an Produkten reservieren muss, um z. B. die Erfüllung von Verkaufsaufträgen zu unterstützen, die einen Überverkauf vermeiden. Wenn ein Verkaufsauftrag im Supply Chain Management oder anderen Auftragsverwaltungssystemen erstellt und bestätigt wird, wird eine Anfrage zur Reservierung der Menge an Inventory Visibility gesendet. Mit Inventory Visibility können Sie Produkte reservieren, die Details zu Dimensionen und bestimmten Bestandstransaktionen haben. (Weitere Informationen finden Sie unter [Inventory Visibility App](inventory-visibility-power-platform.md).) Nachdem die Menge erfolgreich reserviert wurde, wird eine Reservierungs-ID zurückgegeben. Sie können diese Reservierungs-ID verwenden, um im Supply Chain Management oder in anderen Auftragsverwaltungssystemen eine Verknüpfung zurück zur ursprünglichen Bestellung herzustellen.
 

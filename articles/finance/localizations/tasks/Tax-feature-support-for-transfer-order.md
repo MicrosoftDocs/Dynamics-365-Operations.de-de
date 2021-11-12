@@ -2,7 +2,7 @@
 title: Unterstützung für Steuerfunktionen für Umlagerungsaufträge
 description: In diesem Thema wird die neue Steuerfunktionsunterstützung für Umlagerungsaufträge mithilfe des Steuerberechnungsdienstes erläutert.
 author: Kai-Cloud
-ms.date: 09/15/2021
+ms.date: 10/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 01bf7c251fe57072f042c9187b9f5b6b6687ab0f
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2f68a3d7ed4384fe5a97f1e59903e3191df6b741
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500075"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647712"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Unterstützung für Steuerfunktionen für Umlagerungsaufträge
 
@@ -31,7 +31,7 @@ Dieses Thema enthält Informationen zur Steuerberechnung und Buchungsintegration
 Um diese Funktionalität zu konfigurieren und zu verwenden, müssen Sie drei Hauptschritte ausführen:
 
 1. **RCS-Einrichtung:** Richten Sie im Regulatory Configuration Service die Steuerfunktion, Steuercodes und die Anwendbarkeit von Steuercodes für die Ermittlung des Steuercodes in Umlagerungsaufträgen ein.
-2. **Finance-Einrichtung:** Aktivieren Sie in Microsoft Dynamics 365 Finance die Funktion **Steuer im Umlagerungsauftrag**, richten Sie die Steuerdienstparameter für den Bestand ein und richten Sie die wichtigsten Steuerparameter ein.
+2. **Dynamics 365 Finance-Einrichtung:** Aktivieren Sie in Finance die Funktion **Steuer im Umlagerungsauftrag**, richten Sie die Berechnungsdienstparameter für den Bestand ein und richten Sie die wichtigsten Steuerparameter ein.
 3. **Bestandseinrichtung:** Richten Sie die Bestandskonfiguration für Umlagerungsauftragstransaktionen ein.
 
 ## <a name="set-up-rcs-for-tax-and-transfer-order-transactions"></a>Einrichten von RCS für Steuer- und Umlagerungsauftragstransaktionen
@@ -39,8 +39,6 @@ Um diese Funktionalität zu konfigurieren und zu verwenden, müssen Sie drei Hau
 Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerungsauftrag enthalten ist. In dem hier gezeigten Beispiel erfolgt der Umlagerungsauftrag von den Niederlanden nach Belgien.
 
 1. Wählen Sie auf der Seite **Steuerliche Merkmale** auf der Registerkarte **Versionen** den Entwurf der Funktionsversion aus und wählen Sie dann **Bearbeiten**.
-
-    ![Auswählen von „Bearbeiten“.](../media/tax-feature-support-01.png)
 
 2. Wählen Sie auf der Seite **Einrichtung der Steuerfunktionen** auf der **Steuercode**-Registerkarte **Hinzufügen** aus, um neue Steuercodes zu erstellen. In diesem Beispiel werden drei Steuercodes erstellt: **NL-befreit**, **BE-RC-21** und **BE-RC+21**.
 
@@ -51,9 +49,8 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         2. Wählen Sie **Nach Nettobetrag** in dem **Steuerkomponente**-Feld.
         3. Wählen Sie **Speichern** aus.
         4. Wählen Sie **Hinzufügen** in der **Satz**-Tabelle.
-        5. Schalten Sie **Ist befreit** auf **Ja** im Abschnitt **Allgemein** um.
-
-           ![NL-Steuerbefreiungscode.](../media/tax-feature-support-02.png)
+        5. Stellen Sie **Ist befreit** auf **Ja** im Abschnitt **Allgemein** ein.
+        6. Geben Sie im Feld **Befreiungscode** **C** ein.
 
     - Wenn ein Umlagerungsauftrag in einem belgischen Lager eingeht, wird die Verlagerung der Steuerschuld mithilfe der Steuercodes **BE-RC-21** und **BE-RC+21** angewendet.
         
@@ -63,10 +60,8 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         3. Wählen Sie **Speichern** aus.
         4. Wählen Sie **Hinzufügen** in der **Satz**-Tabelle.
         5. Geben Sie **-21** im Feld **Steuersatz** ein.
-        6. Schalten Sie **Ist Verlagerung der Steuerschuld** auf **Ja** im Abschnitt **Allgemein** um.
+        6. Stellen Sie **Ist Verlagerung der Steuerschuld** auf **Ja** im Abschnitt **Allgemein** ein.
         7. Wählen Sie **Speichern** aus.
-
-           ![BE-RC-21-Steuercode für Verlagerungen der Steuerschuld.](../media/tax-feature-support-03.png)
         
         Erstellen Sie den Steuercode **BE-RC+21**.
         1. Wählen Sie **Hinzufügen**, geben Sie **BE-RC-21** in dem **Steuercode**-Feld ein.
@@ -76,16 +71,26 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         5. Geben Sie **21** im Feld **Steuersatz** ein.
         6. Wählen Sie **Speichern** aus.
 
-           ![BE-RC+21-Steuercode für Verlagerungen der Steuerschuld.](../media/tax-feature-support-04.png)
-
-3. Definieren Sie die Anwendbarkeit der Steuercodes.
+3. Definieren Sie die Steuergruppe.
+    1. Wählen Sie **Spalten verwalten**, und wählen Sie dann das Zeilenfeld **Steuergruppe**.
+    2. Wählen Sie **->** und dann **OK** aus.
+    3. Wählen Sie zum Hinzufügen einer Steuergruppe **Hinzufügen**.
+    4. Geben Sie in der Spalte **Steuergruppe** **AR-EU** ein und wählen Sie dann den Steuercode **NL-Befreit**.
+    5. Wählen Sie zum Hinzufügen einer Steuergruppe **Hinzufügen**.
+    6. Geben Sie in der Spalte **Steuergruppe** **RC-VAT** ein und wählen Sie dann die Steuercodes **BE-RC-21** und **BE-RC+21**.
+4. Definieren Sie die Artikelsteuergruppe.
+    1. Wählen Sie **Spalten verwalten**, und wählen Sie dann das Zeilenfeld **Artikelsteuergruppe**.
+    2. Wählen Sie **->** und dann **OK** aus.
+    3. Wählen Sie zum Hinzufügen einer Artikelsteuergruppe **Hinzufügen**.
+    4. Geben Sie **VOLL** in der Spalte **Artikelsteuergruppe** ein. Wählen Sie die Steuercodes **BE-RC-21**, **BE-RC+21**, und **NL-Befreit** aus.
+5. Definieren Sie die Anwendbarkeit der Steuergruppe.
 
     1. Wählen Sie **Spalten verwalten** und dann Spalten aus, die zum Erstellen der Anwendbarkeitstabelle verwendet werden sollen.
 
         > [!NOTE]
         > Stellen Sie sicher, dass Sie die Spalten **Geschäftsprozess** und **Steuerarten** zur Tabelle hinzufügen. Beide Spalten sind für die Steuerfunktionalität in Umlagerungsaufträgen von wesentlicher Bedeutung.
 
-    2. Fügen Sie Anwendbarkeitsregeln hinzu. Lassen Sie nicht die Felder **Steuercode**, **Steuergruppe** und **Artikelsteuergruppe** leer.
+    2. Fügen Sie Anwendbarkeitsregeln hinzu. Lassen Sie das Feld **Steuergruppe** nicht leer.
         
         Fügen Sie eine neue Regel für die Lieferung von Umlagerungsaufträgen hinzu.
         1. Wählen Sie **Hinzufügen** in der **Anwendbarkeitsregeln**-Tabelle.
@@ -93,8 +98,7 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         3. Geben Sie im **Lieferung von Land/Region**-Feld **NLD** ein.
         4. Geben Sie im **Lieferung an Land/Region**-Feld **BEL** ein.
         5. Wählen Sie im **Steuerart**-Feld **Ausgabe** aus, um die Regel für die Lieferung eines Umlagerungsauftrags anwendbar zu machen.
-        6. Wählen Sie im **Steuercodes**-Feld **NL-befreit** aus.
-        7. Geben Sie im **Steuergruppe**-Feld und in **Artikelsteuergruppe** die zugehörige Mehrwertsteuergruppe und Artikelmehrwertsteuergruppe ein, die in Ihrem Finance-System definiert sind.
+        6. Wählen Sie im Feld **Steuergruppe** **AR-EU**.
         
         Fügen Sie eine weitere Regel für den Empfang von Umlagerungsaufträgen hinzu.
         
@@ -103,14 +107,19 @@ Befolgen Sie diese Schritte, um die Steuer einzurichten, die in einem Umlagerung
         3. Geben Sie im **Lieferung von Land/Region**-Feld **NLD** ein.
         4. Geben Sie im **Lieferung an Land/Region**-Feld **BEL** ein.
         5. Wählen Sie im **Steuerart**-Feld **Eingabe** aus, um die Regel für den Empfang eines Umlagerungsauftrags anwendbar zu machen.
-        6. Wählen Sie im **Steuercode**-Feld **BE-RC+21** und **BE-RC-21** aus.
-        7. Geben Sie im **Steuergruppe**-Feld und in **Artikelsteuergruppe** die zugehörige Mehrwertsteuergruppe und Artikelmehrwertsteuergruppe ein, die in Ihrem Finance-System definiert sind.
+        6. Wählen Sie im Feld **Steuergruppe** **RC-VAT**.
 
-           ![Regeln für die Anwendbarkeit.](../media/image5.png)
+6. Definieren Sie die Anwendbarkeit der Artikelsteuergruppe.
 
-4. Vervollständigen und veröffentlichen Sie die neue Steuerfunktionsversion.
+    1. Wählen Sie **Spalten verwalten** und dann Spalten aus, die zum Erstellen der Anwendbarkeitstabelle verwendet werden sollen.
+    2. Fügen Sie Anwendbarkeitsregeln hinzu. Lassen Sie das Feld **Artikelsteuergruppe** nicht leer.
+        
+        Fügen Sie eine neue Regel für die Lieferung un den Empfang von Umlagerungsaufträgen hinzu.
+        1. Wählen Sie auf der Seite **Anwendbarkeitsregeln** die Option **Hinzufügen**.
+        2. Wählen Sie im **Geschäftsprozess**-Feld **Bestand** aus, um die Regel für den Umlagerungsauftrag anwendbar zu machen.
+        3. Wählen Sie im Feld **Artikelsteuergruppe** **VOLL**.
+7. Vervollständigen und veröffentlichen Sie die neue Steuerfunktionsversion.
 
-    [![Ändern des Status der neuen Version.](../media/image6.png)](../media/image6.png)
 
 ## <a name="set-up-finance-for-transfer-order-transactions"></a>Einrichten von Finance für Umlagerungsauftragstransaktionen
 
@@ -120,28 +129,26 @@ Führen Sie folgende Schritte aus, um Steuern für Umlagerungsaufträge zu aktiv
 2. Suchen und wählen Sie in der Liste die Funktion **Steuer im Umlagerungsauftrag** und dann **Jetzt aktivieren** aus, um sie einzuschalten.
 
     > [!IMPORTANT]
-    > Die Funktion **Steuer im Umlagerungsauftrag** ist vollständig vom Steuerdienst abhängig. Daher kann es erst aktiviert werden, nachdem Sie den Steuerdienst installiert haben.
+    > Die Funktion **Steuer im Umlagerungsauftrag** ist vollständig vom Berechnungsdienst abhängig. Daher kann es erst aktiviert werden, nachdem Sie den Berechnungsdienst installiert haben.
 
     ![Funktion „Steuer in Umlagerungsauftrag“.](../media/image7.png)
 
-3. Aktivieren Sie den Steuerdienst und wählen Sie den **Bestand**-Geschäftsprozess.
+3. Aktivieren Sie den Steuerberechnungsdienst und wählen Sie den **Bestand**-Geschäftsprozess.
 
     > [!IMPORTANT]
-    > Sie müssen diesen Schritt für jede juristische Person in Finance ausführen, für die der Steuerdienst und die Funktionalität für Steuern in Umlagerungsaufträgen verfügbar sein sollen.
+    > Sie müssen diesen Schritt für jede juristische Person in Finance ausführen, für die der Steuerberechnungsdienst und die Funktionalität für Steuern in Umlagerungsaufträgen verfügbar sein sollen.
 
-    1. Navigieren Sie zu **Steuer** > **Einstellungen** > **Steuerkonfiguration** > **Steuerdiensteinrichtung**.
+    1. Gehen Sie zu **Steuern** > **Einrichtung** > **Steuerkonfiguration** > **Steuerberechnungsparameter**.
     2. Wählen Sie im **Geschäftsprozess**-Feld **Bestand** aus.
-
-      ![Festlegen des Felds „Geschäftsprozess“.](../media/image8.png)
 
 4. Stellen Sie sicher, dass der Mechanismus zur Verlagerung der Steuerschuld eingerichtet ist. Gehen Sie zu **Hauptbuch** \> **Einrichtung** \> **Parameter** und überprüfen Sie dann auf der Registerkarte **Verlagerung der Steuerschuld**, ob die Option **Verlagerung der Steuerschuld aktivieren** auf **Ja** gesetzt ist.
 
     ![Aktivieren der Option zur Verlagerung der Steuerschuld.](../media/image9.png)
 
-5. Stellen Sie sicher, dass die zugehörigen Steuercodes, Steuergruppen, Artikelsteuergruppen und Mehrwertsteuererfassungsnummern in Finance gemäß dem Steuerdienstleitfaden eingerichtet wurden.
+5. Stellen Sie sicher, dass die zugehörigen Steuercodes, Steuergruppen, Artikelsteuergruppen und Mehrwertsteuererfassungsnummern in Finance gemäß dem Steuerberechnugsdienstleitfaden eingerichtet wurden.
 6. Richten Sie ein Zwischentransitkonto ein. Dieser Schritt ist nur erforderlich, wenn die Steuer, die auf einen Umlagerungsauftrag angewendet wird, nicht auf einen Mechanismus für Steuerbefreiung oder Verlagerung der Steuerschuld anwendbar ist.
 
-    1. Navigieren Sie zu **Steuer** > **Einstellungen** > **Mehrwertsteuer** \ **Sachkontenbuchungsgruppen**.
+    1. Navigieren Sie zu **Steuer** > **Einstellungen** > **Mehrwertsteuer** > **Sachkontenbuchungsgruppen**.
     2. Wählen Sie im Feld **Zwischentransit** ein Sachkonto aus.
 
        ![Auswählen eines Zwischentransitkontos.](../media/image10.png)

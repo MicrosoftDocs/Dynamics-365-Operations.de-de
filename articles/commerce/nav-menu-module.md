@@ -2,7 +2,7 @@
 title: Navigationsmenümodul
 description: Dieses Thema enthält Navigationsmenümodule und es wird beschrieben, wie diese Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 486f20c26f97c236dfde2cbaedd8df434fe762947a6caa1c7cc03e4d244f4d47
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5379aa4496c1c448d147bb260689ebe38aaf903f
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761585"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713851"
 ---
 # <a name="navigation-menu-module"></a>Navigationsmenümodul
 
@@ -41,8 +41,8 @@ Die folgende Abbildung zeigt ein Beispiel für ein Navigationsmenü für die Fab
 |---------------------------|-----------------------|-------------|
 | Grundlage                  | **Retail**, **Manuelle Dokumenterstellung**, **Retail und manuelle Dokumenterstellung** | Der **Retail**-Wert ermöglicht der Kanalnavigationshierarchie der Commerce-Zentralverwaltung im Navigationsmenü angezeigt zu werden. Der Wert **Manuelle Dokumenterstellung** ermöglicht das Kuratieren statische Menüelemente. Der Wert **Retail und manuelle Dokumenterstellung** ermöglicht eine Mischung aus beiden. |
 | Kategoriebilder anzeigen | **True** oder **False**    | Wenn diese Eigenschaft aktiviert ist, werden Kategoriebilder so im Navigationsmenü angezeigt, wie Sie in der Commerce-Zentralverwaltung für jede Kategorie definiert sind. Hinzugefügt in Commerce-Version 10.0.14. |
-| Aktionen anzeigen | **True** oder **False** | Wenn diese Eigenschaft aktiviert ist, können Aktionen mithilfe von Bildern, Links und Text konfiguriert werden. Diese Eigenschaft wurde in der Commerce-Version 10.0.17 hinzugefügt. |
-| Aktionen hinzufügen | Text, Bild oder Link | Wenn die **Aktionen anzeigen**-Eigenschaft aktiviert ist, können Sie Text, ein Bild oder einen Link als Aktionsinhalt im Navigationsmenü hinzufügen. |
+| Aktionsbilder anzeigen | **True** oder **False** | Wenn diese Eigenschaft aktiviert ist, können Aktionen mithilfe von Bildern, Links und Text konfiguriert werden. Diese Eigenschaft wurde in der Commerce-Version 10.0.17 hinzugefügt. |
+|Kategorieaktionsinhalt hinzufügen | Text, Bild oder Link | Wenn die **Aktionsbilder anzeigen**-Eigenschaft aktiviert ist, können Sie Text, ein Bild oder einen Link als Aktionsinhalt im Navigationsmenü hinzufügen. |
 | Aktivieren Sie das mehrstufige Navigationsmenü | **True** oder **False** | Wenn diese Eigenschaft aktiviert ist, kann das Navigationsmenü mehrere Ebenen der Navigationshierarchie anzeigen. Diese Funktion ist in der Commerce Version 10.0.15 verfügbar. |
 | Anzahl der Ebenen | Integer | Diese Eigenschaft definiert die Anzahl der Ebenen, die angezeigt werden sollen, wenn die Eigenschaft **Aktivieren Sie das mehrstufige Navigationsmenü** auf **Wahr** festgelegt ist. |
 | Statisches Menüelement| Wertearray| Statische Menüelemente, die einen Menüelementnamen mit einem Link zu einer statischen Website-Seite verknüpfen. Sie können Menüelemente unter anderen Menüelementen erstellen. Standardmäßig werden statische Menüs auf der Stammebene angezeigt und an die Kanalnavigationshierarchie angehängt, falls diese vorhanden ist. |

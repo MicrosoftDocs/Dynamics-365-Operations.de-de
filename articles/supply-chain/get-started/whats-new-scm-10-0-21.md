@@ -2,7 +2,7 @@
 title: Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.21. (Oktober 2021)
 description: In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Supply Chain Management 10.0.21 neu oder geändert wurden.
 author: kamaybac
-ms.date: 08/09/2021
+ms.date: 10/28/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 894686446436a390ec2d019672e3a2b8b0e5f5ef
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 64abe953f42519d508f547f22f1f2b94a7fa16ab
+ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579735"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7715253"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.21. (Oktober 2021)
 
@@ -38,7 +38,7 @@ Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsve
 | Bestand&nbsp;und&nbsp;Logistik | [Die Globale Bestandsbuchhaltung ist ein Add-In für Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Startseite für die globale Bestandsbuchhaltung](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Regulierungen des verfügbaren Lagerbestands mit Codes buchen, die mit Gegenkonten verbunden sind](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Ursachencodes für Lagerinventuren anzeigen](../warehousing/reason-codes-for-counting-journals.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Datenexportrichtlinie für referenziertes Verkaufsangebot](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Wählen Sie, ob Änderungen an Daten, auf die Angebote verweisen, dazu führen, dass diese Angebote (oder Positionen) im nächsten inkrementellen Export berücksichtigt werden. Ihre inkrementellen Exporte werden schneller ausgeführt, wenn Sie solche Angebote oder Positionen nicht berücksichtigen.<br><br>Diese Funktion fügt eine Einstellung namens **Von Verkaufsangeboten referenzierte Daten während der Änderungsnachverfolgung überspringen** zur Seite **Debitorenparameter** hinzu. |
-| Bestand&nbsp;und&nbsp;Logistik | Versiegelte Angebote <!-- KFM: Add RP link when available --> | [Versiegeltes Angebot bei Angebotsanforderungen](../procurement/sealed-bidding.md) |
+| Bestand&nbsp;und&nbsp;Logistik | [Versiegelte Angebote](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sealed-bidding) | [Versiegeltes Angebot bei Angebotsanforderungen](../procurement/sealed-bidding.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Barcodes im Lagerort mit GS1-Formatstandards scannen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-Barcodes und QR-Codes](../warehousing/gs1-barcodes.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Soft-Reservierung für das Inventory Visibility-Add-In](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Bestandstransparenzreservierungen](../inventory/inventory-visibility-reservations.md) |
 | Bestand&nbsp;und&nbsp;Logistik | [Abzugs- und Artikelgewichterweiterungen für das Rückvergütungsmanagement](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Verwalten von Abzügen mit der Abzugsworkbench](../rebate-management/deduction-workbench.md )<br><br>[Rückvergütungen verarbeiten, überprüfen und veröffentlichen](../rebate-management/process-review-post.md)<br><br>[Rückvergütungsverwaltungsgeschäfte](../rebate-management/rebate-management-deals.md) |
@@ -50,7 +50,7 @@ Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsve
 
 Die folgende Tabelle listet die Funktionsverbesserungen auf, die in dieser Version enthalten sind. Jede dieser Funktionen bietet eine schrittweise Verbesserung einer vorhandenen Funktion. Da es sich nur um Verbesserungen handelt, sind sie nicht in der Liste [Releaseplan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features) aufgeführt. Um jedoch sicherzustellen, dass diese Verbesserungen nicht mit Ihren vorhandenen Anpassungen oder Einstellungen in Konflikt stehen, ist jede standardmäßig deaktiviert (sofern nicht anders angegeben). Wenn Sie eine dieser Funktionen verwenden möchten, müssen Sie sie explizit aktivieren unter [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Funktionsbereich | Funktion&nbsp;Name&nbsp;in Funktion&nbsp;Verwaltung | Weitere Informationen |
+| Modul | Funktion&nbsp;Name&nbsp;in Funktion&nbsp;Verwaltung | Mehr erfahren |
 |---|---|---|
 | Kostenverwaltung | Fortschrittdetails zum Lagerabschluss | Diese Vorschaufunktion ermöglicht eine detaillierte Ansicht des Lagerabschlussfortschritts. |
 | Beschaffung | Übermäßige Inanspruchnahme von allgemeinen Budgetreservierungen verhindern, wenn mehrere Bestellanforderungen im Workflow sind | Diese Vorschaufunktion verbessert die Fehlerprüfung, wenn Benutzer Bestellanforderungen einreichen und genehmigen, die den verbleibenden Saldo einer allgemeinen Budgetreservierungsposition überschreiten. Dies trägt dazu bei, einen übermäßigen Verbrauch allgemeiner Budgetreservierungen zu verhindern, wenn mehrere Bestellanforderungen im Workflow sind. |
@@ -59,6 +59,64 @@ Die folgende Tabelle listet die Funktionsverbesserungen auf, die in dieser Versi
 | Lagerortverwaltung | Einlagerungsarbeit von ASNs entkoppeln | Diese Funktion ist zum Senden und Empfangen von Vorabliefernotizen (ASN) erforderlich, wenn Sie einen Lagerverwaltungs-Workload auf einer Saklierungseinheit ausführen (als Teil einer verteilten Hybridtopologie). Es fügt eine neue dedizierte Datenbanktabelle für das Speichern von Informationen über Einlagerungsarbeiten hinzu. Bisher wurden diese Informationen in Tabellen gespeichert, die auch für die Vorabliefernotizen verwendet werden. |
 | Lagerortverwaltung | Gemischte Einheiten platzieren | Ermöglicht dem System, Artikel an Lagerplätzen zu platzieren, die gemischte Einheiten enthalten (z. B. Behälter und Kisten). Für jede Position in der Zuteilungsvorlage können Sie mit dieser Funktion auswählen, ob die Position Artikel Lagerplätzen mit gemischten oder einzelnen Einheiten zuteilen soll. |
 | Lagerortverwaltung | Schnellere API für das Schließen/erneute Öffnen von Containern auf Verpackungsstation verwenden | Wenn diese Vorschaufunktion aktiviert ist, werden Bestandstransaktionen in Bezug auf Behälter mithilfe eines neuen, leichtgewichtigen Prozesses erstellt, der die Leistung beim Schließen oder Wiederöffnen von Behältern während der manuellen Verarbeitung an der Verpackungsstation verbessert. |
+
+## <a name="features-turned-on-by-default-in-this-release"></a>Diese Funktionen sind in dieser Version standardmäßig aktiviert.
+
+Die folgende Tabelle listet die Funktionen auf, die in 10.0.21 standardmäßig aktiviert sind. Die meisten Funktionen, die atomatisch aktiviert wurden, können in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) deaktiviert werden.
+
+| Funktionsname | Datum aktivieren | Funktion hinzugefügt am | Status der Funktion | Modul |
+| :--- | :--- | :--- | :--- | :--- |
+| Speicher für den Bericht zum verfügbaren Lagerbestand | 9/1/2021 | 4/1/2020 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Umlagerungsauftragsstornierung | 9/1/2021 | 7/13/2020 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Bestandserfassung entsperren | 9/1/2021 | 8/17/2020 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Gespeicherte Ansichten für die Lagerverwaltung | 9/1/2021 | 30.09.2020 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Navigation zur Stücklistenversion aus Stücklistenpositionen. | 9/1/2021 | 11/11/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Maßeinheit und Einheitsmenge in Lagererfassungen verwenden | 9/1/2021 | 11/11/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Leere Stapelverarbeitungsattributwerte zulassen | 9/1/2021 | 11/11/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Positionsnummer von Bestandsübertragungsauftragpositionen automatisch erhöhen. | 9/1/2021 | 10/11/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Lagerbestandserfassungs-Genehmigungsworkflow | 9/1/2021 | 1/6/2020 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Warnfunktion für die Parameter des Bestandsqualitätsmanagements aktivieren | 9/1/2021 | 10/7/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Umlagerungsauftrag aus der Verkaufsposition erstellen | 9/1/2021 | 8/31/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Prognosemodellauswahl auf der Seite mit den Informationen zur Bedarfsplanung | 9/1/2021 | 10/11/2019 | Standardmäßig aktiviert | Produktprogrammplanung |
+| Visualisierung des Produktprogrammplanfortschritts | 9/1/2021 | 10/7/2019 | Standardmäßig aktiviert | Produktprogrammplanung |
+| Automatische Umwandlung für die Planungsoptimierung | 9/1/2021 | 10/11/2019 | Standardmäßig aktiviert | Produktprogrammplanung |
+| Parallele Umwandlung von Auftragsvorschlägen | 9/1/2021 | 8/31/2019 | Standardmäßig aktiviert | Produktprogrammplanung |
+| Erfolgsmeldung zur Angebotsübermittlung | 9/1/2021 | 5/15/2019 | Standardmäßig aktiviert | Beschaffung |
+| Zur Bestellung hinzugefügter Angebotsanforderungsverweis-Link | 9/1/2021 | 8/31/2019 | Standardmäßig aktiviert | Beschaffung |
+| Möglichkeit, angenommene Bestellungen aus der Kreditor-Kooperationen als Stapel zu bestätigen | 9/1/2021 | 9/10/2019 | Standardmäßig aktiviert | Beschaffung |
+| cXML-Einkaufserweiterungen | 9/1/2021 | 11/11/2019 | Standardmäßig aktiviert | Beschaffung |
+| Link &quot;Offene veröffentlichte Angebotsanforderungen&quot; als Kachel anzeigen | 9/1/2021 | 30.09.2020 | Standardmäßig aktiviert | Beschaffung |
+| Fragen und Antworten zur Angebotsanforderung | 9/1/2021 | 2/19/2020 | Standardmäßig aktiviert | Beschaffung |
+| Gefahrengüter-Produktinformationen und Versanddokumentation | 9/1/2021 | 6/14/2020 | Standardmäßig aktiviert | Produktinformationsverwaltung |
+| Strenge Überprüfung auf Standardauftragsmengen | 9/1/2021 | 6/24/2020 | Standardmäßig aktiviert | Produktinformationsverwaltung |
+| Herkunftsland-Verwaltungsfunktion | 9/1/2021 | 7/13/2020 | Standardmäßig aktiviert | Produktinformationsverwaltung |
+| Gespeicherte Ansichten für freigegebene Produkte | 9/1/2021 | 30.09.2020 | Standardmäßig aktiviert | Produktinformationsverwaltung |
+| Verbesserungen der Dialogfelder „Genehmigen“ und „Einzelvorgänge übertragen“ | 9/1/2021 | 10/11/2019 | Standardmäßig aktiviert | Produktionssteuerung |
+| Das Kennzeichen für Fertigmeldung wurde zum Einzelvorgangslistengerät hinzugefügt. | 9/1/2021 | 8/31/2019 | Standardmäßig aktiviert | Produktionssteuerung |
+| Eine neue Schaltfläche „Pause stoppen“ wurde zur Seite „Einzelvorgangskarten-Terminal“ hinzugefügt. | 9/1/2021 | 2/19/2020 | Standardmäßig aktiviert | Produktionssteuerung |
+| Teilweisen Zugang von Artikeln aus Fremdarbeit aktivieren und ein Problem bei der Berechnung von Ausschuss für Stücklistenpositionen vom Typ „Lieferant“ beheben. | 9/1/2021 | 11/11/2019 | Standardmäßig aktiviert | Produktionssteuerung |
+| Gespeicherte Ansichten zur Produktionssteuerung | 9/1/2021 | 8/17/2020 | Standardmäßig aktiviert | Produktionssteuerung |
+| Dynamics 365 Guides für die Herstellung | 9/1/2021 | 7/13/2020 | Standardmäßig aktiviert | Produktionssteuerung |
+| Produktionsumgebungsausführung | 9/1/2021 | 30.09.2020 | Standardmäßig aktiviert | Produktionssteuerung |
+| Funktion zum Sperren des Einzelvorgangs-Kartengeräts und des Einzelvorgangs-Kartenterminals zur Desinfektion. | 9/1/2021 | 5/10/2020 | Standardmäßig aktiviert | Produktionssteuerung |
+| Gebührenzuteilung für einen Auftrag | 9/1/2021 | 30.09.2020 | Standardmäßig aktiviert | Vertrieb und Marketing |
+| Begrenzen Sie die Anzahl der Verkaufsaufträge, die für die Buchung ausgewählt werden können | 9/1/2021 | 9/1/2021 | Standardmäßig aktiviert | Vertrieb und Marketing |
+| Aktualisierungshistorie für Auftrag bereinigen | 9/1/2021 | 9/1/2021 | Standardmäßig aktiviert | Vertrieb und Marketing |
+| Nummernkreis für Zykluszählung-Arbeit ändern | 9/1/2021 | 10/7/2019 | Standardmäßig aktiviert | Lagerortverwaltung |
+| Aufgabenbasierte Wellenbedarfswiederbeschaffung | 9/1/2021 | 10/7/2019 | Obligatorisch | Lagerortverwaltung |
+| Feld „Gesamtwert“ auf den Seiten &quot;Alle Ladungen&quot; und &quot;Ladungsdetails&quot; ausblenden | 9/1/2021 | 10/7/2019 | Standardmäßig aktiviert | Lagerortverwaltung |
+| Zyklusbeschriftungsdruck | 9/1/2021 | 2/19/2020 | Obligatorisch | Lagerortverwaltung |
+| Zuordnung von Bestellbestandsbuchungen zur Ladung | 9/1/2021 | 1/6/2020 | Obligatorisch | Lagerortverwaltung |
+| Erweiterte Layouts für Kennzeichenbeschriftung | 9/1/2021 | 2/19/2020 | Standardmäßig aktiviert | Lagerortverwaltung |
+| Organisationsweite Arbeitssperrung | 9/1/2021 | 2/19/2020 | Obligatorisch | Lagerortverwaltung |
+| Arbeitspositionsdetails | 9/1/2021 | 10/11/2019 | Standardmäßig aktiviert | Lagerortverwaltung |
+| Feld „Lagerbestandsumlagerungsstatus“ des mobilen Geräts bearbeitbar machen | 9/1/2021 | 10/16/2019 | Standardmäßig aktiviert | Lagerortverwaltung |
+| Ausgehende Lieferungen aus Batchaufträgen bestätigen | 9/1/2021 | 7/13/2020 | Standardmäßig aktiviert | Lagerortverwaltung |
+| Steuern, ob eine Empfangszusammenfassungsseite auf mobilen Geräten angezeigt wird | 9/1/2021 | 4/1/2020 | Standardmäßig aktiviert | Lagerortverwaltung |
+| Aufforderung zum Auflösen mehrdeutiger Namen für &#39;Lagerplatz/Kennzeichen&#39; | 9/1/2021 | 4/1/2020 | Standardmäßig aktiviert | Lagerortverwaltung |
+| Produktvarianten und Rückverfolgungsangaben in der Lagerhaltungs-App beim Artikelempfang aus Ladung erfassen | 9/1/2021 | 5/10/2020 | Standardmäßig aktiviert | Lagerortverwaltung |
+| Es ist nicht zulässig, Ladungen zu erstellen, die nicht den Anforderungen der Vorlage für die Wellenladungserstellung entsprechen. | 9/1/2021 | 8/17/2020 | Standardmäßig aktiviert | Lagerortverwaltung |
+| Alle Aktivitäten für Mehrfach-SKU-Lagerplatzrichtlinien auswerten | 9/1/2021 | 30.09.2020 | Standardmäßig aktiviert | Lagerortverwaltung |
 
 ## <a name="new-and-updated-documentation-resources"></a>Neue und aktualisierte Dokumentationsressourcen
 

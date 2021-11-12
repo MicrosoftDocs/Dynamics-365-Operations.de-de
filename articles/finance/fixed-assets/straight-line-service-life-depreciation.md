@@ -1,7 +1,7 @@
 ---
-title: Abschreibungsmethode "Lineare Nutzungsdauer"
-description: Dieser Artikel gibt eine Übersicht über die Abschreibungsmethode "Lineare verbleibende Nutzungsdauer".
-author: ShylaThompson
+title: Abschreibungsmethode „Lineare Nutzungsdauer“
+description: Dieses Thema gibt eine Übersicht über die Abschreibungsmethode „Lineare Nutzungsdauer“.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 3341
 ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 985a1a23510a2cc698eb496cf9f3db2427d21119c1586ed69cf7e5ffd3d08867
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b34cdf9485d38cdbf1362bd605841201a4295f26
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752198"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675270"
 ---
-# <a name="straight-line-service-life-depreciation"></a>Abschreibungsmethode "Lineare Nutzungsdauer"
+# <a name="straight-line-service-life-depreciation"></a>Abschreibungsmethode „Lineare Nutzungsdauer“
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel gibt eine Übersicht über die Abschreibungsmethode "Lineare verbleibende Nutzungsdauer".
+Dieses Thema gibt eine Übersicht über die Abschreibungsmethode „Lineare Nutzungsdauer“.
 
 Wenn Sie ein Abschreibungsprofil für Anlagen erstellen und auf der Seite Abschreibungsprofile im Feld Methode den Eintrag "Lineare Nutzungsdauer" auswählen, werden die Anlagen, denen dieses Abschreibungsprofil zugeordnet ist, auf Basis der gesamten Nutzungsdauer der jeweiligen Anlage abgeschrieben. Hierbei wird im Allgemeinen in jeder Abschreibungsperiode der gleiche Abschreibungsbetrag angewendet. 
 
@@ -44,11 +44,11 @@ Bei Auswahl der Option "Kalender" wird von einem Jahr mit Beginn 1. Januar und E
 Mit der Option "Kalender" wird die Abschreibungsbasis – in der Regel der Nettobuchwert abzüglich des Schrottwerts – am 1. Januar jedes Jahres aktualisiert. In den Beispielen weiter unten in diesem Thema ist der Zähler im ersten Ausdruck in Berechnungen in der Spalte "Berechnung" die Abschreibungsbasis. 
 
 Bei Auswahl der Option Kalender stehen im Feld Periodenhäufigkeit die folgenden Optionen zur Verfügung. Dieses Feld dient zum Definieren der Abgrenzung der Buchungsdaten und Beträge für Abschreibungen im Laufe des Kalenderjahrs:
--   Bei Auswahl von Jährlich wird ein Betrag am 31. Dezember gebucht.
--   Bei Auswahl von Monatlich wird ein monatlicher Betrag am Ende eines jeden Kalendermonats gebucht.
--   Bei Auswahl von Vierteljährlich wird ein Quartalsbetrag am Ende eines jeden Quartals (31. März, 30. Juni, 30. September und 31. Dezember) gebucht.
--   Bei Auswahl von Halbjährlich wird am Ende jedes Kalenderhalbjahrs (30. Juni und 31. Dezember) ein Halbjahresbetrag gebucht.
--   Bei Auswahl von Täglich wird der Abschreibungsbetrag für die Abschreibungsmethode "Täglich" unter Verwendung einer Buchung für jeden Tag gebucht.
+- Bei Auswahl von Jährlich wird ein Betrag am 31. Dezember gebucht.
+- Bei Auswahl von Monatlich wird ein monatlicher Betrag am Ende eines jeden Kalendermonats gebucht.
+- Bei Auswahl von Vierteljährlich wird ein Quartalsbetrag am Ende eines jeden Quartals (31. März, 30. Juni, 30. September und 31. Dezember) gebucht.
+- Bei Auswahl von Halbjährlich wird am Ende jedes Kalenderhalbjahrs (30. Juni und 31. Dezember) ein Halbjahresbetrag gebucht.
+- Bei Auswahl von Täglich wird der Abschreibungsbetrag für die Abschreibungsmethode "Täglich" unter Verwendung einer Buchung für jeden Tag gebucht.
 
 Wenn Sie z. B. Jährlich auswählen, wird die jährliche Abschreibung nur einmal am 31. Dezember eines Jahres gebucht. Bei Auswahl von Monatlich wird die monatliche Abschreibung jeden Monat als 1/12 des jährlichen Abschreibungsbetrags gebucht.
 
@@ -59,14 +59,14 @@ Wenn Sie im Feld "Steuer" die Option "Abschreibungsjahr" auswählen, wird Abschr
 Für ein Geschäftsjahr vom 1. Juli bis zum 30. Juni beginnt die Abschreibungsberechnung am 1. Juli. Das Geschäftsjahr kann länger oder kürzer als 12 Monate sein. Die Abschreibung wird automatisch für jede Steuerperiode angepasst. Die Länge des nächsten Geschäftsjahres basiert auf den Steuerperioden, die Sie beim Erstellen eines neuen Geschäftsjahres im Formular "Steuerkalender" einrichten. 
 
 Bei Auswahl der Option Steuerlich stehen im Feld Periodenhäufigkeit die folgenden Optionen zur Verfügung:
--   Bei Auswahl von Jährlich wird der Gesamtbetrag der Abschreibung, der für das Geschäftsjahr berechnet wird, am letzten Tag des Geschäftsjahrs als einzelner Betrag gebucht.
--   Bei Auswahl von "Steuerperiode" wird der Gesamtbetrag der Abschreibung für das Geschäftsjahr berechnet und in Steuerperioden aufgeteilt, die im Formular "Steuerkalender" für jedes Geschäftsjahr definiert werden.
+- Bei Auswahl von Jährlich wird der Gesamtbetrag der Abschreibung, der für das Geschäftsjahr berechnet wird, am letzten Tag des Geschäftsjahrs als einzelner Betrag gebucht.
+- Bei Auswahl von "Steuerperiode" wird der Gesamtbetrag der Abschreibung für das Geschäftsjahr berechnet und in Steuerperioden aufgeteilt, die im Formular "Steuerkalender" für jedes Geschäftsjahr definiert werden.
 
 ## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Beispiel: Lineare Abschreibung einer unveränderten Anlage
 Angenommen, eine Anlage weist die folgenden Merkmale auf.
 
 | Merkmal      | Wert  |
-|---------------------|--------|
+|:---------------------|--------:|
 | Anschaffungskosten    | 11,000 |
 | Schrottwert       | 1.000  |
 | Abschreibungsgrundlage   | 10.000 |
@@ -76,7 +76,7 @@ Angenommen, eine Anlage weist die folgenden Merkmale auf.
 In jedem Jahr wird der gleiche Betrag abgeschrieben. (Anschaffungskosten - Schrottwert) / Nutzungsdauer (Jahre)
 
 | Periode | Berechnung des jährlichen Abschreibungsbetrags | Nettobuchwert am Ende des Jahres |
-|--------|-------------------------------------------|---------------------------------------|
+|:--------:|:-------------------------------------------|---------------------------------------:|
 | Jahr 1 | (11.000 - 1.000) / 5 = 2.000              | 9.000                                 |
 | Jahr 2 | (11.000 - 1.000) / 5 = 2.000              | 7.000                                 |
 | Jahr 3 | (11.000 - 1.000) / 5 = 2.000              | 5.000                                 |
@@ -90,7 +90,7 @@ Angenommen, dass Sie in Jahr 2 eine Anschaffungsänderung von 4.000 an der Anla
 Die Nutzungsdauer der Anschaffungsänderung ist die gleiche wie die der Anlage selbst und beginnt mit dem Zeitpunkt der Anschaffung. Am Ende von Jahr 5 verbleibt ein Nettobuchwert entsprechend dem Nettobuchwert der Anschaffungsänderung. Die Abschreibung nach Perioden wird wie in der nachstehenden Tabelle gezeigt berechnet.
 
 | Periode | Berechnung des jährlichen Abschreibungsbetrags | Nettobuchwert am Ende des Jahres |
-|--------|-------------------------------------------|---------------------------------------|
+|:--------:|:-------------------------------------------|---------------------------------------:|
 | Jahr 1 | 10.000 / 5 = 2.000                        | 11.000 - 2.000 = 9.000                |
 | Jahr 2 | 4.000 (Anschaffungsänderung)            | 9.000 + 4.000 =13.000                 |
 | Jahr 2 | 14.000 / 5 = 2.800                        | 13.000 - 2.800 = 10.200               |

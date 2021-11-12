@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474675"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678470"
 ---
 # <a name="configure-inventory-visibility"></a>Bestandstransparenz konfigurieren
 
@@ -366,16 +366,12 @@ Mit dem Index können Sie den Lagerbestand auf die folgenden Arten abfragen:
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Reservierungskonfiguration (optional)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Die Reservierungskonfiguration ist erforderlich, wenn Sie die Funktion der Soft-Reservierung verwenden möchten. Die Konfiguration besteht aus zwei grundlegenden Teilen:
 
 - Soft-Reservierungs-Zuordnung
 - Soft-Reservierungs-Hierarchie
 
 ### <a name="soft-reservation-mapping"></a>Zuordnung der Soft-Reservierung
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Wenn Sie eine Reservierung vornehmen, möchten Sie vielleicht wissen, ob der Lagerbestand aktuell für die Reservierung verfügbar ist. Die Validierung ist mit einer berechneten Messung verknüpft, die eine Berechnungsformel aus einer Kombination von physikalischen Messungen darstellt.
 
@@ -446,8 +442,6 @@ Wenn Sie also versuchen, eine Reservierung für `iv.SoftReservOrdered` vorzunehm
 > Wenn Sie die Reservierungs-API aufrufen, können Sie die Reservierungsvalidierung steuern, indem Sie den booleschen `ifCheckAvailForReserv`-Parameter im Anforderungstext angeben. Der Wert `True` bedeutet, dass die Validierung erforderlich ist, während der Wert `False` bedeutet, dass die Validierung nicht erforderlich ist. Der Standardwert ist `True`.
 
 ### <a name="soft-reservation-hierarchy"></a>Soft-Reservierungs-Hierarchie
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Die Reservierungshierarchie beschreibt die Sequenz von Dimensionen, die bei der Reservierung angegeben werden müssen. Sie funktioniert genauso wie die Produktindexhierarchie bei Lagerbestandsabfragen.
 
@@ -747,8 +741,6 @@ Die folgende Tabelle zeigt die Standard-Indexkonfiguration.
 Dieser Abschnitt beschreibt die standardmäßige Reservierungskonfiguration.
 
 #### <a name="reservation-mapping"></a>Zuordnung der Reservierung
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Die folgende Tabelle zeigt die standardmäßige Zuordnung von Reservierungen.
 

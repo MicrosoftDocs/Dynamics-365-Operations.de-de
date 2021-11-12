@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e20367f4261d0112855f36c69c25cd732c78be7bb23d7c6333aea84db437d735
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51c530fd0043a4ec5a82660af72c001be25b7e62
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769418"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647484"
 ---
 # <a name="mobile-device-user-settings"></a>Benutzereinstellungen für das mobile Gerät
 
@@ -54,7 +54,7 @@ Sie können auch ein Einstellungsprofil festlegen, das für alle Marken, Geräte
 
 Folgen Sie diesen Schritten, um Benutzereinstellungen für Ihre mobilen Geräte zu erstellen und zu verwalten.
 
-1. Gehen Sie zu **Lagerortverwaltung \> Mobilgerät \> Benutzereinstellungen für Mobilgeräte**.
+1. Gehen Sie zu **Warehouse Management \> Einrichtung \> Mobilgerät \> Benutzereinstellungen für Mobilgeräte**.
 1. Wählen Sie ein bestehendes Benutzereinstellungsprofil im Listenbereich, um dessen Datensatz zu öffnen. Wählen Sie alternativ **Neu** im Aktivitätsbereich, um ein neues Profil zu erstellen.
 
     Jedes Profil im Listenbereich ist mit einem Label versehen, um die Marke, das Modell und/oder die Benutzer-ID anzugeben, für die das Profil gilt. Allgemeinere Profile haben einen Wert von *Alle* für einige oder alle dieser Merkmale.
@@ -83,7 +83,7 @@ Verwenden Sie die Seite **Mobilgerätemarken**, um die Gerätemarken und -modell
 
 Folgen Sie diesen Schritten, um Ihre Marken und Modelle für mobile Geräte zu erstellen und zu verwalten.
 
-1. Gehen Sie zu **Lagerortverwaltung \> Mobilgerät \> Marken für Mobilgeräte**.
+1. Gehen Sie zu **Warehouse Management \> Einrichtung \> Mobiles Gerät \> Mobiles Gerät Marken**.
 1. Wählen Sie im Listenbereich eine Marke für ein mobiles Gerät aus, um ihren Datensatz zu öffnen. Wählen Sie alternativ **Neu** im Aktivitätsbereich, um eine neue Marke zu erstellen.
 1. Legen Sie im Kopfbereich des Datensatzes für die neue oder ausgewählte Gerätemarke die folgenden Felder fest:
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 63e26004b28f1ff6c760476933e1d524c0b40451
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 72fe7f8a6b05bd7c6fa242ef599e506a1178d913
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569336"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678688"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
 
@@ -93,7 +93,6 @@ Die Registerkarte **Meine Maschine** enthält die folgenden Spalten. Die Nummern
 1. **Ausfallzeiten erfassen** – Wählen Sie diese Schaltfläche aus, um ein Dialogfeld zu öffnen, in dem Sie Ausfallzeiten der Maschine erfassen können. Sie können einen Ursachencode auswählen und ein Datum bzw. eine Zeitspanne für die Ausfallzeit eingeben. Die Erfassung der Ausfallzeit der Maschine wird zur Berechnung der Effizienz des Maschinenanlage verwendet.
 1. **Anzeigen oder bearbeiten** – Wählen Sie diese Schaltfläche aus, um ein Dialogfeld zu öffnen, in dem Sie vorhandene Ausfallzeitdatensätze bearbeiten oder anzeigen können.
 
-
 ## <a name="starting-and-completing-production-jobs"></a>Einzelvorgänge starten und abschließen
 
 Arbeiter starten einen Produktions-Einzelvorgang, indem sie einen Einzelvorgang auf der Registerkarte **Alle Einzelvorgänge** auswählen und dann **Einzelvorgang starten** wählen und das Dialogfeld **Einzelvorgang starten** öffnen.
@@ -109,6 +108,32 @@ Arbeitskräfte können einen Einzelvorgang starten, der sich in einem beliebigen
 Wenn ein Mitarbeiter einen Einzelvorgang abschließt oder teilweise abschließt, kann er gute Mengen melden, die durch Auswahl eines Einzelauftrages auf der Registerkarte **Aktive Einzelvorgänge** ausgewählt werden und dann **Fortschritt melden** auswählen. Im Dialogfeld **Fortschritt melden** gibt die Arbeitskraft dann die gute Menge über die Zifferntastatur ein. Die Menge ist standardmäßig leer. Nachdem eine Menge eingegeben wurde, kann die Arbeitskraft den Status des Einzelvorgangs auf *In Bearbeitung*, *Gestoppt*, oder *Abgeschlossen* aktualisieren.
 
 ![Dialogfeld „Fortschritt melden“.](media/pfei-report-progress-dialog.png "Dialogfeld Fortschritt melden")
+
+## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Melden von Gutmengen bei Chargenaufträgen mit Kuppel- und Nebenprodukten
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] <!--KFM: GA with 10.0.23 -->
+
+Mitarbeiter können die Ausführungsschnittstelle der Produktionshalle verwenden, um den Fortschritt von Batchaufträgen zu melden. Diese Berichte umfassen Kuppel- und Nebenprodukten.
+
+Einige Hersteller, insbesondere in der Prozessindustrie, verwenden Chargenaufträge, um ihre Produktionsprozesse zu verwalten. Chargenaufträge werden aus Formeln erstellt, und diese Formeln können so definiert werden, dass sie Kuppel- und Nebenprodukte als Ausgabe haben. Wenn Rückmeldungen zu diesen Chargenaufträgen gemeldet werden, muss die Produktionsmenge sowohl auf der Formelposition als auch auf den Kuppel- und Nebenprodukten registriert werden.
+
+Wenn eine Arbeitskraft einen Auftrag in einem Chargenauftrag abschließt oder teilweise abschließt, kann sie Gut- oder Ausschussmengen für jedes Produkt melden, das als Output für den Auftrag definiert ist. Produkte, die als Output für einen Chargenauftrag definiert sind, können folgende sein: *Formel*, *Kuppelprodukt*, oder *Nebenprodukt* Typ.
+
+Um gute Mengen an den Produkten zu melden, wählt ein Arbeiter einen Job auf der Registerkarte **Aktive Jobs** und wählt dann **Fortschritt melden**.
+
+Im Dialogfenster **Fortschritt melden** kann die Arbeitskraft dann unter den Produkten auswählen, die als Ausgabe für den Chargenauftrag definiert sind, über die er berichten soll. Der Arbeiter kann ein oder mehrere Produkte in der Liste auswählen und dann **Fortschritt melden** auswählen. Für jedes Produkt ist die Menge standardmäßig leer, und der Arbeiter kann die numerische Tastatur verwenden, um die Menge einzugeben. Der Arbeiter kann die Schaltflächen **Vorherige** und **Nächste** auswählen, um zwischen den ausgewählten Produkten zu wechseln. Nachdem die Menge für jedes Produkt eingegeben wurde, kann die Arbeitskraft den Status des Einzelvorgangs auf *In Bearbeitung*, *Gestoppt*, oder *Abgeschlossen* aktualisieren.
+
+![Kuppel- und Nebenprodukte melden.](media/report-co-by-products.png "Kuppel- und Nebenprodukte melden")
+
+### <a name="reporting-on-batch-orders-for-planning-items"></a>Berichte zu Chargenaufträgen für Planungsartikel
+
+Wenn eine Arbeitskraft einen Auftrag für einen Chargenauftrag für einen Planungsartikel abschließt, meldet sie Mengen nur für Kuppel- und Nebenprodukte, da Planungsartikel keinen Artikel der *Formel* Typ.
+
+### <a name="reporting-co-product-variation"></a>Kuppelproduktvariation melden
+
+Wenn ein Chargenauftrag aus einer Formelversion erstellt wird, in der die Option **Kuppelproduktvarianten** auf *Ja* eingestellt ist, kann die Arbeitskraft Kuppelprodukte melden, die nicht Teil der Definition für die Chargenaufträge sind. Diese Funktionalität wird in Szenarien verwendet, in denen unerwartete Produktausgaben im Produktionsprozess auftreten können.
+
+In diesem Fall kann die Arbeitskraft das Kuppelprodukt und die zu meldende Menge angeben, indem sie **Kuppelproduktvarianten** im Dialogfeld Berichtsfortschritt auswählt. Die Arbeitskraft kann dann aus allen freigegebenen Produkten auswählen, die als Kuppelprodukte definiert sind.
 
 ## <a name="reporting-scrap"></a>Schrott melden
 

@@ -10,17 +10,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 2d629b082b423edf417714b8362be3364bc861e78f62d430a4d7083b8c49611a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 97c27006ce95d0cd4551fec209f40328779b435b
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773416"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678590"
 ---
 # <a name="conventions"></a>Konventionen
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 Eine Konvention ist ein Container für eine Reihe von Richtlinien, die das Systemverhalten beeinflussen. Basierend auf Ihren geschäftlichen Anforderungen müssen Sie Konventionen definieren, indem Sie eine Kombination der verschiedenen Richtlinien verwenden, die festlegen, wie Kosten in der Globalen Bestandsbuchhaltung kalkuliert werden sollen. Sie können jede Konvention mit einem oder mehreren Sachkonten verknüpfen, um die Konsistenz der Richtlinien zu gewährleisten, die in allen Sachkonten angewendet werden.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0b39c3eee84a66082f1785f7f4d8a6d7dd96b63d
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 2c14101099473025f88632245553da0bf50d4622
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7638469"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647214"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Was ist neu oder geändert in Dynamics 365 Supply Chain Management Version 10.0.19 (Juni 2021)
 
@@ -48,7 +48,7 @@ Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsve
 
 Die folgende Tabelle listet die Funktionsverbesserungen auf, die in dieser Version enthalten sind. Jede dieser Funktionen bietet eine schrittweise Verbesserung einer vorhandenen Funktion. Da es sich nur um Verbesserungen handelt, sind sie nicht in der Liste [Releaseplan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) aufgeführt. Um jedoch sicherzustellen, dass diese Verbesserungen nicht mit Ihren vorhandenen Anpassungen oder Einstellungen in Konflikt stehen, ist jede standardmäßig deaktiviert (sofern nicht anders angegeben). Wenn Sie eine dieser Funktionen verwenden möchten, müssen Sie sie explizit aktivieren unter [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Funktionsbereich | Funktion&nbsp;Name&nbsp;in Funktion&nbsp;Verwaltung | Weitere Informationen |
+| Modul | Funktion&nbsp;Name&nbsp;in Funktion&nbsp;Verwaltung | Mehr erfahren |
 |---|---|---|
 | Vertrieb und Marketing | Leistungsverbesserungen bei der Bereinigung des Verkaufsverlaufs | Die Bereinigung des Verkaufsverlaufs kann lange dauern, wenn sie in Umgebungen mit einem hohen Volumen an Verkaufsaktualisierungen nur selten ausgeführt wird. Um die Dauer zu verringern und die Zuverlässigkeit zu verbessern, teilt diese Funktion die Bereinigung in Stapel auf, die für eine begrenzte Dauer ausgeführt werden. Wenn möglich werden Datenbankfunktionen genutzt, um das Sperren zu minimieren und das Verbinden von Transaktionstabellen während der Bereinigung zu vermeiden. Weitere Informationen finden Sie unter [Verbesserungen an der Leistung der Verkaufshistorienbereinigung](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Vertrieb und Marketing | Angefordertes Wareneingangsdatum mit bestätigtem Datum bei Intercompany-Aufträgen aktualisieren | Mit dieser Funktion können Sie steuern, was mit den Feldwerten für Verkaufs- und Kaufdatum geschieht, wenn Sie die konzerninterne Direktlieferung verwenden. Sie können wählen, ob das System die angeforderten Daten aktualisiert oder die Aktualisierung überspringt. Wenn Sie die Aktualisierung überspringen, entsprechen die angeforderten Daten den Anforderungen des Kunden. Wenn Sie die Aktualisierung aktivieren, stellen die angeforderten Daten (bei Verwendung der Lieferterminsteuerung) zunächst nur das dar, was der Kunde angefordert hat. Kontrolle des Liefertermins, falls abweichend von *Keiner* wird außer Kraft setzen, was ursprünglich angefordert wurde. Sie können diese Option mit der neuen Option **Aktualisieren Sie das angeforderte Empfangsdatum mit dem bestätigten Datum** in den Einstellungen des konzerninternen Anbieters oder Kunden einstellen.<br><br>Wenn die Funktion deaktiviert ist, überschreibt das System das angeforderte Empfangsdatum für ursprüngliche Kundenaufträge basierend auf der Regel zur Kontrolle des Lieferdatums. Das angeforderte Versanddatum bleibt jedoch unverändert. |

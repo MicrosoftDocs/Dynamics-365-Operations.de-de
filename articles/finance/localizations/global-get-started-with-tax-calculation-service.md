@@ -2,7 +2,7 @@
 title: Erste Schritte mit der Steuerberechnung
 description: In diesem Thema wird erläutert, wie Steuerberechnungen eingerichtet werden.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562125"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647433"
 ---
 # <a name="get-started-with-tax-calculation"></a>Erste Schritte mit der Steuerberechnung
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Dieses Thema enthält Informationen zu den ersten Schritten mit der Steuerberechnung. Sie führt Sie durch die Konfigurationsschritte in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance und Dynamics 365 Supply Chain Management. Anschließend wird der allgemeine Prozess für die Verwendung der Steuerberechnungsfunktion für Transaktionen in Finance und Supply Chain Management überprüft.
 
@@ -41,29 +39,10 @@ Die Einrichtung besteht aus vier Hauptschritten:
 
 Bevor Sie die Verfahren in diesem Thema abschließen können, müssen die Voraussetzungen für jeden Umgebungstyp vorhanden sein.
 
-### <a name="for-a-production-environment"></a>Für eine Produktionsumgebung
-
-Für eine produktive Umgebung müssen die folgenden Voraussetzungen erfüllt sein:
+Folgende Voraussetzungen müssen erfüllt sein:
 
 - Sie müssen Zugriff auf Ihr LCS-Konto haben, und Sie müssen ein LCS-Projekt bereitstellen, das über eine Umgebung der Stufe 2 oder höher verfügt, die Dynamics 365 Version 10.0.21 oder höher ausführt.
 - Sie müssen eine RCS-Umgebung für Ihre Organisation erstellen und Sie müssen Zugriff auf Ihr Konto haben. Weitere Informationen über das Erstellen einer RCS-Umgebung finden Sie unter [Regulatory Configuration Service Übersicht](rcs-overview.md).
-- Die folgenden Funktionen müssen im Arbeitsbereich **Funktionsverwaltung** Ihrer bereitgestellten Finance- oder Supply Chain Management-Umgebung aktiviert sein, je nach Ihren geschäftlichen Anforderungen:
-
-    - Dienst für Steuerberechnungen
-    - Mehrere MwSt.-Registrierungsnummern unterstützen
-    - Steuer im Umlagerungsauftrag
-
-- Die folgenden Funktionen müssen im Arbeitsbereich **Funktionsverwaltung** Ihrer bereitgestellten RCS Umgebung aktiviert sein.
-
-    - Globalisierungsfunktionen
-
-### <a name="for-a-test-environment-public-preview"></a>Für eine Testumgebung (Public Vorschau)
-
-Für eine Testumgebung müssen die folgenden Voraussetzungen erfüllt sein:
-
-- Sie müssen Zugriff auf Ihr LCS-Konto haben, und Sie müssen ein LCS-Projekt bereitstellen, das über eine Umgebung der Stufe 2 oder höher verfügt, die Dynamics 365 Version 10.0.21 oder eine höhere Version ausführt.
-- Sie müssen eine RCS-Umgebung für Ihre Organisation erstellen und Sie müssen Zugriff auf Ihr Konto haben. Weitere Informationen über das Erstellen einer RCS-Umgebung finden Sie unter [Regulatory Configuration Service Übersicht](rcs-overview.md).
-- Sie müssen sich mit Microsoft in Verbindung setzen, indem Sie eine E-Mail an <taxcalc@microsoft.com> senden, um das Flighting in Ihrer bereitgestellten Finance- oder Supply Chain Management-Umgebung zu aktivieren.
 - Die folgenden Funktionen müssen im Arbeitsbereich **Funktionsverwaltung** Ihrer bereitgestellten Finance- oder Supply Chain Management-Umgebung aktiviert sein, je nach Ihren geschäftlichen Anforderungen:
 
     - Dienst für Steuerberechnungen

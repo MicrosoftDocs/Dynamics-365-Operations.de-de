@@ -2,7 +2,7 @@
 title: Suchergebnismodul
 description: Dieses Thema behandelt Suchergebnismodule und erläutert, wie diese Websiteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
-ms.date: 05/28/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c3fce73b1827de12bc8d40e1abb43ad000b8aa1c38812221dfae95010513ede1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dc4a01e520379a74ca3b21c1d588531412e762be
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712404"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647511"
 ---
 # <a name="search-results-module"></a>Suchergebnismodul
 
@@ -83,6 +83,58 @@ Führen Sie folgende Schritte aus, um ein Suchergebnismodul einer Kategorieseite
 1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
 1. Wählen Sie im Dialogfeld **Vorlage auswählen** die zuvor erstellte **Suchergebnis**-Vorlage aus. Geben Sie als **Seitenname** **Kategorieseite** ein, und wählen Sie dann **OK** aus. Da alle Werte in der Vorlage festgelegt sind, kann die Seite veröffentlicht werden.
 1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
+
+## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Bestandserkennung für das Suchergebnismodul aktivieren
+
+Kunden erwarten im Allgemeinen, dass eine E-Commerce-Site während des gesamten Surferlebnisses den Inventar berücksichtigt, damit sie entscheiden können, was zu tun ist, wenn für ein Produkt kein Inventar vorhanden ist. Das Suchergebnismodul kann so erweitert werden, dass es Bestandsdaten einbezieht und folgende Erfahrungen bietet:
+
+- Zeigen Sie zusammen mit den Produkten ein Inventarverfügbarkeitsetikett an.
+- Ausverkaufte Produkte ausblenden.
+- Nicht vorrätige Produkte am Ende der Suchergebnisliste anzeigen.
+    
+Um diese Erfahrungen zu aktivieren, müssen Sie die folgenden vorausgesetzten Einstellungen in der Commerce-Zentrale konfigurieren.
+
+### <a name="enable-the-enhanced-e-commerce-product-discovery-to-be-inventory-aware-feature"></a>Funktion „Erweiterte E-Commerce-Produktermittlung zur Bestandserfassung“ aktivieren
+
+> [!NOTE]
+> Die Funktion **Verbesserte E-Commerce-Produkterkennung, um den Bestand zu berücksichtigen** ist ab der Commerce-Version 10.0.20 verfügbar.
+
+Um die Funktion **Verbesserte E-Commerce-Produkterkennung, um den Bestand zu berücksichtigen** in der Commerce-Zentrale zu aktivieren, führen Sie diese Schritte aus.
+
+1. Wechseln Sie zu **Arbeitsbereiche \> Verwaltung von Funktionen**.
+1. Suchen Sie nach der Funktion **Verbesserte E-Commerce-Produkterkennung, um den Bestand zu berücksichtigen** und aktivieren Sie sie.
+
+### <a name="configure-the-populate-product-attributes-with-inventory-level-job"></a>Produktattribute mit Lagerebenenauftrag auffüllen konfigurieren
+
+Der Job **Produktattribute mit Inventarebene auffüllen** erstellt ein neues Produktattribut, um die Inventarverfügbarkeit zu erfassen, und setzt dieses Attribut dann auf den neuesten Inventarwert für jedes Masterprodukt. Da sich die Lagerverfügbarkeit eines verkauften Produkts oder Sortiments ständig ändert, empfehlen wir dringend, den Job als Batch-Prozess einzuplanen.
+
+Um den Job **Produktattribute mit Inventarebene auffüllen** in der Commerce-Zentrale zu konfigurieren, befolgen Sie diese Schritte.
+
+1. Gehen Sie zu **Retail und Commerce \> Retail und Commerce IT \> Produkte und Bestand**.
+1. Wählen Sie **Produktattribute mit Lagerbestand auffüllen**.
+1. Befolgen Sie folgende Schritte im Dialogfeld **Produktattribute mit Inventarebene auffüllen**:
+
+    1. Unter **Parameter** im Feld **Produktattribut und Typname**, geben Sie einen Namen für das dedizierte Produktattribut ein, das erstellt wird, um die Inventarverfügbarkeit zu erfassen.
+    1. Unter **Parameter** im Feld **Inventarverfügbarkeit basierend auf** wählen Sie die Menge aus, auf der die Berechnung des Lagerbestands basieren soll (z. B. **Verfügbar physisch**).
+    1. Unter **Im Hintergrund ausführen** konfigurieren Sie den Job so, dass er im Hintergrund ausgeführt wird, und aktivieren Sie optional die Option **Stapelverarbeitung**. 
+
+> [!NOTE]
+> Für eine konsistente Berechnung des Lagerbestands über PDPs und Produktlistenseiten auf Ihrer E-Commerce-Site sollten Sie für die Einstellung **Inventarverfügbarkeit basierend auf** in der Commerce-Zentrale und die Einstellung **Lagerbestand basierend auf** im Commerce Site Builder auswählen. Weitere Informationen zum Anwenden von Bestandeinstellungen in Site Builder finden Sie unter [Bestandseinstellungen anwenden](inventory-settings.md).
+
+### <a name="configure-the-new-product-attribute"></a>Das neue Produktattribut konfigurieren
+
+Nachdem der Job **Produktattribute mit Inventarebene auffüllen** ausgeführt wird, müssen Sie das neu erstellte Produktattribut auf der E-Commerce-Site konfigurieren, auf der Sie die Inventarerkennung für das Suchergebnismodul aktivieren möchten.
+
+Um das neue Produktattribut in der Commerce-Zentralverwaltung zu konfigurieren, folgen Sie diesen Schritten.
+
+1. Wählen Sie **Retail und Commerce \> Kanaleinstellung \> Kanalkategorien und Produktattribute** und wählen Sie eine e-Commerce-Seite aus.
+1. Wählen und öffnen Sie eine zugehörige Attributgruppe, fügen Sie ihr das neu erstellte Produktattribut hinzu und schließen Sie dann die Seite.
+1. Wählen Sie **Attributmetadaten festlegen**, wählen Sie das neu hinzugefügte Produktattribut aus und aktivieren Sie dann die Optionen **Attribut auf Kanal anzeigen**, **Abrufbar**, **Kann verfeinert werden**, und **Kann abgefragt werden**.
+
+> [!NOTE]
+> Bei Produkten, die im Suchergebnismodul angezeigt werden, wird die Bestandsebene auf Masterproduktebene anstelle der Einzelvariantenebene eingegeben. Es gibt nur zwei mögliche Werte: „verfügbar“ und „nicht auf Lager“. Der eigentliche Text für die Werte wird aus der Definition [Profil auf Lagerbestandsebene](inventory-buffers-levels.md) abgerufen. Ein Masterprodukt gilt nur dann als ausverkauft, wenn alle seine Varianten ausverkauft sind. Der Lagerbestand einer Variante wird basierend auf der Lagerbestandsprofildefinition des Produkts bestimmt. 
+
+Nachdem alle vorherigen Konfigurationsschritte abgeschlossen sind, zeigen die Einschränkungen auf den Suchergebnisseiten einen inventarbasierten Filter an, und das Suchergebnismodul ruft Inventardaten hinter den Kulissen ab. Anschließend können Sie die Einstellung **Inventareinstellungen für Produktlistenseiten** im Commerce Site Builder konfigurieren, um zu steuern, wie das Suchergebnismodul nicht vorrätige Produkte anzeigt. Weitere Informationen finden Sie unter [Bestandeinstellungen anwenden](inventory-settings.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

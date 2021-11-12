@@ -2,7 +2,7 @@
 title: Wenden Sie Inventareinstellungen an
 description: Dieses Thema behandelt Inventareinstellungen und beschreibt, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f57f1f941fe0c0c70394d1ecbf8d88a13c7a3682fdfa8b5439a4f3830f616876
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765265"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647583"
 ---
 # <a name="apply-inventory-settings"></a>Bestandseinstellungen anwenden
 
@@ -39,7 +39,7 @@ In Commerce Site Builder können Bestandsschwellenwerte und -bereiche für ein P
 
 ## <a name="inventory-settings"></a>Bestandeinstellungen
 
-In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiterungen \> Bestandsverwaltung** im Site Builder definiert. Es gibt fünf Bestandseinstellungen, von denen eine veraltet ist (außer Betrieb genommen):
+In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiterungen \> Bestandsverwaltung** im Site Builder definiert. Es gibt sechs Bestandseinstellungen, von denen eine veraltet ist (außer Betrieb genommen):
 
 - **Bestandsüberprüfung in App aktivieren** – Diese Einstellung aktiviert eine Produktbestandsüberprüfung. Wenn Sie Box-, Warenkorb- und Abholmodule kaufen, wird der Produkbestand überprüft und das Hinzufügen eines Produkts zum Warenkorb nur dann ermöglicht, wenn Bestand verfügbar ist.
 - **Lagerbestand basierend auf** – Diese Einstellung definiert, wie die Lagerbestände berechnet werden. Die verfügbaren Werte sind **Insgesamt verfügbar**, **Physisch verfügbar** und **Nicht verfügbar**. In Commerce Site Builder können die Bestandsschwellenwerte und -bereiche für ein Produkt oder eine Kategorie definiert werden. Die Inventar-APIs geben Produktbestandinformationen für die Eigenschaft **Insgesamt verfügbar** und **Physisch verfügbar** zurück. Der Händler entscheidet, ob der Wert **Insgesamt verfügbar** oder **Physisch verfügbar** verwendet wird, um die Anzahl der Bestände und die entsprechenden Bereiche für den Status Lagerbestand verfügbar und Lagerbestand nicht verfügbar zu bestimmen.
@@ -48,8 +48,13 @@ In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiteru
 
 - **Bestand für mehrere Lagerorte** – Mit dieser Einstellung kann der Bestand gegen den Standardlagerort oder mehrere Lagerorte berechnet werden. Die Option **Basierend auf individuellem Lagerort** wird die Bestände basierend auf dem Standardlagerort berechnen. Alternativ kann eine E-Commerce-Seite auf mehrere Lagerorte verweisen, um die Erfüllung zu erleichtern. In diesem Fall wird die Option **Basierend auf Aggregat für Versand und Abholung Lagerorte** verwendet, um die Verfügbarkeit des Bestands anzuzeigen. Wenn ein Debitor z. B. ein Element kauft und „Versand“ als Liefermodus auswählt, kann das Element von jedem Lagerort in der Erfüllungsgruppe versendet werden, der über einen verfügbaren Bestand verfügt. Auf der Produktdetailseite (PDP) wird für den Versand die Nachricht „Auf Lager“ angezeigt, wenn ein verfügbares Versandlager in der Erfüllungsgruppe über Bestand verfügt. 
 
-> [!IMPORTANT] 
-> Die Einstellung **Bestandsebene für mehrere Lagerorte** ist ab der Commerce-Version 10.0.19 verfügbar. Wenn Sie ein Update von einer älteren Version von Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen finden Sie unter [SDK- und Modulbibliotheks-Updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+    > [!IMPORTANT] 
+    > Die Einstellung **Bestandsebene für mehrere Lagerorte** ist ab der Commerce-Version 10.0.19 verfügbar. Wenn Sie ein Update von einer älteren Version von Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen finden Sie unter [SDK- und Modulbibliotheks-Updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+- **Inventareinstellungen für Produktlistenseiten** – Diese Einstellung definiert, wie nicht vorrätige Produkte in Produktlisten angezeigt werden, die von Produktsammlungs- und Suchergebnismodulen gerendert werden. Die verfügbaren Werte sind **In der Reihenfolge mit anderen Produkten anzeigen**, **Nicht vorrätige Produkte aus der Liste ausblenden** und **Nicht vorrätige Produkte am Ende der Liste anzeigen**. Um diese Einstellung zu verwenden, müssen Sie zunächst einige erforderliche Einstellungen in der Commerce-Zentrale konfigurieren. Weitere Informationen finden Sie unter [Inventarerkennung für das Suchergebnismodul aktivieren](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+
+    > [!IMPORTANT] 
+    > Die Einstellung **Bestandseinstellungen für Produktlistenseiten** ist ab der Commerce-Version 10.0.20 verfügbar. Wenn Sie ein Update von einer älteren Version von Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen finden Sie unter [SDK- und Modulbibliotheks-Updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Bestandsbereiche** – Diese Einstellung definiert die Bestandbereiche, für die die Meldung vor Ort angezeigt wird. Er ist nur anwendbar, wenn entweder der **Insgesamt verfügbar** oder der Wert **Physisch verfügbar** ausgewählt für die Einstellung **Lagerbestand basierend auf**. Die verfügbaren Werte sind **Alle**, **Niedrig und vergriffen** und **Ausverkauft**.
 

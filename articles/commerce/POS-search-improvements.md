@@ -2,7 +2,7 @@
 title: Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 description: Dieses Thema bietet einen Überblick über die Verbesserungen der Produkt- und Debitorensuchfunktion in Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 03/10/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 043a630408d6b03e528f0afd5443de73ad5f3802c968b9d9bd7a5c51bfe1fb03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716394"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700088"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 
@@ -47,7 +47,7 @@ Bei der lokalen Produktsuche wird in den folgenden Produkteigenschaften gesucht:
 - Strichcode
 - Suchbegriff
 
-### <a name="additional-local-product-search-capabilities"></a>Zusätzliche Funktionen für die lokale Produktsuche
+### <a name="additional-local-product-search-capabilities-conventional-sql-full-text-search"></a>Zusätzliche Funktionen für die lokale Produktsuche (herkömmliche SQL-Volltextsuche) 
 
 - Für Suchen mit mehreren Schlüsselwörtern (also Suchen mit Suchbegriffen) können Einzelhändler konfigurieren, ob die Suchergebnisse Ergebnisse enthalten, die mit *irgendeinem* Suchbegriff oder mit *allen* Suchbegriffen übereinstimmen. Die Einstellung für diese Funktion ist im POS-Funktionsprofil in einer neuen Gruppe namens **Produktsuche** verfügbar. Die Standardeinstellung ist **Alle beliebigen Suchbegriffe abgleichen**. Diese Einstellung ist auch die empfohlene Einstellung. Wenn die Einstellung **Jeden beliebigen Suchbegriff abgleichen** verwendet wird, werden alle Produkte, die vollständige oder teilweise mit einem oder mehreren Suchbegriffen übereinstimmen als Ergebnisse zurückgegeben. Diese Ergebnisse werden automatisch in aufsteigender Reihenfolge von Produkten sortiert, die die meisten Schlüsselwortübereinstimmungen haben (vollständig oder teilweise).
 
@@ -55,6 +55,8 @@ Bei der lokalen Produktsuche wird in den folgenden Produkteigenschaften gesucht:
 
     - Die Suche wird auf Basis einzelner Produkteigenschaften durchgeführt. Beispielsweise werden nur Produkte zurückgegeben, die alle Suchbegriffe in mindestens einer Produkteigenschaft haben.
     - Dimensionen werden nicht durchsucht.
+> [!NOTE]
+> Die folgenden Konfigurationen von **Übereinstimmung mit jedem Suchbegriff**/**Übereinstimmung mit allen Suchbegriffen** in POS-Funktionsprofilen gelten nur für **lokale** Produktsuchen (herkömmliche SQL-Volltextsuche) Erfahrungen. Diese Konfiguration hat keine Auswirkungen auf cloudbasierte Sucherlebnisse. Die neue Suchmaschine verfügt über einen eigenen fortschrittlichen Algorithmus, der die Suchrelevanz für Produktsuchergebnisse steigert. 
 
 - Einzelhändler können die Produktsuche so konfigurieren, dass Suchvorschläge angezeigt werden, wenn Produktnamen eingegeben werden. Eine neue Einstellung für diese Funktion ist im POS-Funktionsprofil in einer Gruppe namens **Produktsuche** verfügbar. Die Einstellung hat die Bezeichnung **Beim Eingeben Vorschläge anzeigen**. Diese Funktion ermöglicht Mitarbeitern, schnell das gesuchte Produkt zu finden, da sie nicht den ganzen Namen eingeben müssen.
 - Der Produktsuchalgorithmus sucht nun auch in der **Suchbegriff**-Eigenschaft des Produkts nach den Suchbegriffen.
@@ -147,7 +149,5 @@ Die folgende Liste zeigt, wie sich die cloudbasierte Debitorensuchfunktion von d
 > Die Debitorensuchfunktion mit dem Azure Cognitive Search-Dienst ist in begrenzten Regionen für die Vorschauversion verfügbar. Die Debitorensuchfunktion ist *nicht* in folgenden Regionen verfügbar:
 > - Brasilien
 > - Indien
-> - Kanada
-> - Vereinigtes Königreich
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

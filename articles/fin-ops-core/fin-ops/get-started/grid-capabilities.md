@@ -2,7 +2,7 @@
 title: Rasterfunktionen
 description: In diesem Thema werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Sie müssen die neue Rasterfunktion aktivieren, damit auf diese Fähigkeiten zugegriffen werden kann.
 author: jasongre
-ms.date: 09/08/2021
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483853"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700136"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 Die neue Rastersteuerung bietet eine Reihe nützlicher und leistungsfähiger Funktionen, mit denen Sie die Benutzerproduktivität steigern, interessantere Ansichten Ihrer Daten erstellen und aussagekräftige Einblicke in Ihre Daten gewinnen können. Dieser Artikel deckt die folgenden Funktionen ab: 
@@ -32,6 +33,8 @@ Die neue Rastersteuerung bietet eine Reihe nützlicher und leistungsfähiger Fun
 -  Auswerten von mathematischen Ausdrücken 
 -  Gruppieren von Tabellendaten (separat mit der Funktion **Gruppierung in Rastern** aktiviert)
 -  Spalten fixieren
+-  Spaltenbreite automatisch anpassen
+-  Dehnbare Spalten
 
 ## <a name="calculating-totals"></a>Summen berechnen
 In Finance and Operations-Apps haben Benutzer die Möglichkeit, Summen am unteren Rand numerischer Spalten in Rastern anzuzeigen. Diese Summen werden in einem Fußzeilenbereich am unteren Rand des Rasters angezeigt. 
@@ -43,7 +46,7 @@ In den Finance and Operations-Apps gibt es am unteren Rand jedes Tabellenrasters
 - Gesamtsummen am unteren Ende konfigurierter, numerischer Spalten
 - Die Anzahl von Reihen in einem Dataset 
 
-Diese Fußzeile ist standardmäßig ausgeblendet, kann jedoch auch aktiviert werden. Um die Fußzeile für ein Raster anzuzeigen, klicken Sie mit der rechten Maustaste auf eine Spaltenüberschrift im Raster und wählen **Fußzeile anzeigen** aus. Nachdem Sie die Fußzeile für ein bestimmtes Raster aktiviert haben, wird diese Einstellung gespeichert, bis der Benutzer die Fußzeile ausblendet. Um die Fußzeile auszublenden, klicken Sie mit der rechten Maustaste auf eine Spaltenüberschrift, und wählen Sie **Fußzeile ausblenden**.  (Die Position der **Fußzeile anzeigen/Fußzeile ausblenden**-Aktion wird in zukünftigen Versionen vermutlich geändert.) 
+Diese Fußzeile ist standardmäßig ausgeblendet, kann jedoch auch aktiviert werden. Um die Fußzeile für ein Raster anzuzeigen, wählen Sie die Schaltfläche **Rasteroptionen** in der Rasterübeschrift aus und wählen Sie dann die Option **Fußzeile anzeigen** aus. Nachdem Sie die Fußzeile für ein bestimmtes Raster aktiviert haben, wird diese Einstellung gespeichert, bis der Benutzer die Fußzeile ausblendet. Um die Fußzeile auszublenden, wählen Sie **Fußzeile ausblenden** im Menü **Rasteroptionen** aus.  
 
 ### <a name="specifying-columns-with-totals"></a>Angeben von Spalten mit Summen
 Derzeit werden in keiner Spalte standardmäßig Summen angezeigt. Stattdessen wird dies als einmalige Einrichtungsaktivität betrachtet, ähnlich wie das Anpassen der Spaltenbreiten in Rastern. Wenn Sie festlegen, dass für eine Spalte Summen angezeigt werden sollen, wird diese Einstellung für den nächsten Besuch der Seite gespeichert.  
@@ -82,7 +85,7 @@ Um dieses neue Verhalten zu unterstützen, wurde rechts von der Zeilenauswahlspa
 Wenn Benutzer Daten vor dem Serverstandort eingeben, können sie einige Beeinträchtigungen der Dateneingabe erwarten, z. B. fehlende Suchvorgänge, Validierung auf Steuerungsebene und Eingabe von Standardwerten. Benutzer, die eine Dropdown-Liste benötigen, um einen Wert zu finden, sollten warten, bis der Server die aktuelle Zeile erreicht hat. Die Validierung auf Kontrollebene und die Eingabe von Standardwerten erfolgt auch, wenn der Server diese Zeile verarbeitet.   
 
 ### <a name="pasting-from-excel"></a>Einfügen aus Excel
-Benutzer konnten immer Daten aus Rastern in Finance and Operations-Apps mit dem **Nach Excel exportieren**-Mechanismus nach Excel exportieren. Die Möglichkeit, Daten vor dem System einzugeben, ermöglicht es dem neuen Raster jedoch, das Kopieren von Tabellen aus Excel und das direkte Einfügen in Tabellen in Raster in Finance and Operations-Apps zu unterstützen. Die Rasterzelle, von der aus der Einfügevorgang initiiert wird, bestimmt, wo die kopierte Tabelle eingefügt wird. Der Inhalt des Rasters wird durch den Inhalt der kopierten Tabelle überschrieben, außer in zwei Fällen:
+Benutzer konnten immer Daten aus Rastern in Finance and Operations-Apps mit dem **Nach Excel exportieren**-Mechanismus nach Microsoft Excel exportieren. Die Möglichkeit, Daten vor dem System einzugeben, ermöglicht es dem neuen Raster jedoch, das Kopieren von Tabellen aus Excel und das direkte Einfügen in Tabellen in Raster in Finance and Operations-Apps zu unterstützen. Die Rasterzelle, von der aus der Einfügevorgang initiiert wird, bestimmt, wo die kopierte Tabelle eingefügt wird. Der Inhalt des Rasters wird durch den Inhalt der kopierten Tabelle überschrieben, außer in zwei Fällen:
 
 - Wenn die Anzahl der Spalten in der kopierten Tabelle die Anzahl der im Raster verbleibenden Spalten überschreitet, wird der Benutzer benachrichtigt, dass die zusätzlichen Spalten ignoriert wurden. 
 - Wenn die Anzahl der Zeilen in der kopierten Tabelle die Anzahl der Zeilen im Raster überschreitet, beginnend mit der Einfügeposition, werden die vorhandenen Zellen durch den eingefügten Inhalt überschrieben, und alle zusätzlichen Zeilen aus der kopierten Tabelle werden unten im raster als neue Zeilen eingefügt. 
@@ -125,6 +128,9 @@ Um eine Spalte zu fixieren, klicken Sie mit der rechten Maustaste in die Spalten
 Um die Fixierung einer Spalte aufzuheben, klicken Sie mit der rechten Maustaste in die Überschrift der fixierten Spalte, und wählen Sie dann **Spaltenfixierung aufheben**. 
 
 Beachten Sie, dass die Zeilenauswahl- und Zeilenstatusspalten im neuen Raster immer als die ersten beiden Spalten fixiert werden. Wenn diese Spalten in einem Raster enthalten sind, sind sie für Benutzer unabhängig von der horizontalen Bildlaufposition im Raster immer sichtbar. Diese beiden Spalten können nicht neu angeordnet werden.
+
+## <a name="autofit-column-width"></a>Spaltenbreite automatisch anpassen
+Ähnlich wie in Excel können Benutzer automatisch die Größenänderung einer Spalte basierend auf dem aktuell in dieser Spalte angezeigten Inhalt erzwingen. Doppelklicken Sie dazu auf die Ziehpunkte in der Spalte, oder setzen Sie den Fokus auf die Spaltenüberschrift und drücken Sie **A** (für automatische Anpassung). Diese Funktion ist ab Version 10.0.23 verfügbar.  
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Wie aktiviere ich die neue Rastersteuerung in meiner Umgebung? 

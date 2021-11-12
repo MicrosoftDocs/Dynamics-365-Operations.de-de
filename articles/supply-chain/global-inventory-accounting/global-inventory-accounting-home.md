@@ -10,17 +10,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3e1dbb97ba56b5910dda368b9ec15e27a683dde5
-ms.sourcegitcommit: 5c0a0adeb859cc1ade6f067444f3bf08a895b35a
+ms.openlocfilehash: 954a3bcdf6ad163afd2596227ce2c8548fe37027
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7557391"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678494"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Startseite der Globalen Bestandsbuchhaltung
 
-[!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 Internationale Organisationen stehen unter zunehmendem Druck von Behörden, lokale und globale Buchhaltungsstandards einzuhalten. Die Bewertung von Beständen spielt eine wichtige Rolle bei der Einhaltung dieser Standards. Das Add-In Globale Bestandsbuchhaltung für Microsoft Dynamics 365 Supply Chain Management bietet eine umfassende Lösung, die es Organisationen (insbesondere internationalen Organisationen) ermöglicht, mehrere Sachkonten für die Kalkulation des Bestands zu verwenden. Daher können diese Organisationen mehrere Buchhaltungsstandards und die interne Buchhaltung gleichzeitig einhalten.
 

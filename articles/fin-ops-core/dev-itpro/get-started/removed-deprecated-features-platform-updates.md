@@ -2,7 +2,7 @@
 title: Entfernte oder veraltete Plattformfunktionen
 description: Dieses Thema beschreibt Funktionen, die in den Plattform-Updates von Finance and Operations-Anwendungen entfernt wurden oder deren Entfernung geplant ist.
 author: sericks007
-ms.date: 09/27/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 0065f5c101237de49ae362ecd3378ec5046dbf4b
+ms.sourcegitcommit: c4500b626667185643b3a2e7fc3a004d42198d07
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595144"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7725048"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
@@ -31,6 +31,64 @@ Dieses Thema beschreibt Funktionen, die in den Plattform-Updates von Finance and
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
 Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](/dynamics/s-e/global/axtechrefrep_61). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+
+## <a name="feature-removal-effective-october-2021"></a>Entfernung der Funktion ab Oktober 2021
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL Berichte in  Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Alle Aktivitäten und Überwachungen werden intern von der Plattform durch Automatisierung durchgeführt. Dies erfordert keinen manuellen Eingriff.|
+| **Ersetzt durch eine andere Funktion?**   | Ja, es gibt jetzt ein automatisiertes System, das diese Funktionen überflüssig macht. |
+| **Betroffene Produktbereiche**         | SQL-Berichte: Aktuelle DTU, aktuelle DTU-Details, Sperrdetails abrufen, Liste der aktuellen Plananleitung, Liste der Abfrage-IDs abrufen, SQL-Abfrageplan für eine bestimmte Plan-ID abrufen, Abfragepläne und Ausführungsstatus abrufen, Drosselungskonfiguration abrufen, Wartezeit abrufen Statistiken, Liste der teuersten Abfragen |
+| **Bereitstellungsoption**              | Cloud-Bereitstellung: Wirkt sich auf von Microsoft verwaltete Produktionsumgebungen und Sandbox-Umgebungen der Stufen 2 bis 5 aus. |
+| **Status**                         | Entfernt |
+
+### <a name="azure-sql-actions-in-lcs"></a>Azure SQL-Aktionen in LCS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Wir stellen einige SQL-Aktionen in LCS als veraltet ein. Alle Aktivitäten und Überwachungen werden intern von der Plattform durch Automatisierung durchgeführt. Dies erfordert keinen manuellen Eingriff. |
+| **Ersetzt durch eine andere Funktion?**   | Ja, es gibt jetzt ein automatisiertes System, das diese Funktionen überflüssig macht. |
+| **Betroffene Produktbereiche**         | SQL-Aktionen: Planhinweis erstellen, um Plan-ID zu erzwingen, Planhinweis zum Hinzufügen von Tabellenhinweisen erstellen, Planhinweis entfernen, Seitensperren deaktivieren/aktivieren und Eskalation sperren, Statistik für eine Tabelle aktualisieren, Index neu erstellen, Index erstellen |
+| **Bereitstellungsoption**              | Cloud-Bereitstellung: Wirkt sich auf von Microsoft verwaltete Produktionsumgebungen und Sandbox-Umgebungen der Stufen 2 bis 5 aus. |
+| **Status**                         | Entfernt |
+
+
+## <a name="feature-deprecation-effective-october-2021"></a>Hinweis auf Funktionsminderung mit Wirkung zum Oktober 2021
+
+### <a name="show-related-document-attachments-feature"></a>Funktion „Zugehörige Dokumentanhänge anzeigen“
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Die Funktion gab unerwartete Ergebnisse zurück. |
+| **Ersetzt durch eine andere Funktion?**   | Nein. Alle weiteren Pläne in Bezug auf diese Funktionalität werden über unseren Standard-Veröffentlichungsprozess für die Veröffentlichungswelle kommuniziert. |
+| **Betroffene Produktbereiche**         | Web-Client – Erfahrung mit Dokumentanhängen |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet  |
+
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.23 von Finance and Operations Apps
+
+### <a name="ondbsynchronize-event"></a>OnDBSynchronize-Ereignis
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Es gibt keine Steuerung zum Ausführen dieses Ereignisses. |
+| **Ersetzt durch eine andere Funktion?**   | Ja, vorhandene Methoden verschieben, die vom **OnDBSynchronize**-Ereignis in eine erweiterte SysSetup-Klasse abonniert wurden. |
+| **Betroffene Produktbereiche**         | Datenbanksynchronisierung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet. Geplanter Entfernungstermin ist Oktober 2022. |
+
+
+### <a name="systemnotificationsmanageraddnotification-api"></a>SystemNotificationsManager.AddNotification API
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Microsoft erfordert beim Hinzufügen von Benachrichtigungen zusätzliche Parameter. |
+| **Ersetzt durch eine andere Funktion?**   | Ja, die **SystemNotificationsManager.AddSystemNotification()**-API. Diese API erfordert, dass Sie ExpirationDateTime und RuleID für generierte Benachrichtigungen explizit festlegen. |
+| **Betroffene Produktbereiche**         | Webclient |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet. Geplanter Entfernungstermin ist April 2023. |
 
 ## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.21 von Finance and Operations Apps
 
@@ -54,7 +112,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Ersetzt durch eine andere Funktion?**   | Ja, es gibt jetzt ein automatisiertes System, das diese Funktionen überflüssig macht. |
 | **Betroffene Produktbereiche**         | SQL-Berichte: Aktuelle DTU, aktuelle DTU-Details, Sperrdetails abrufen, Liste der aktuellen Plananleitung, Liste der Abfrage-IDs abrufen, SQL-Abfrageplan für eine bestimmte Plan-ID abrufen, Abfragepläne und Ausführungsstatus abrufen, Drosselungskonfiguration abrufen, Wartezeit abrufen Statistiken, Liste der teuersten Abfragen |
 | **Bereitstellungsoption**              | Cloud-Bereitstellung: Wirkt sich auf von Microsoft verwaltete Produktionsumgebungen und Sandbox-Umgebungen der Stufen 2 bis 5 aus. |
-| **Status**                         | Veraltet: Geplantes Entfernungsdatum im Oktober 2021. |
+| **Status**                         | Veraltet: Geplantes Entfernungsdatum ist Oktober 2021. |
 
 ### <a name="azure-sql-actions-in-lcs"></a>Azure SQL-Aktionen in LCS
 
@@ -64,7 +122,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Ersetzt durch eine andere Funktion?**   | Ja, es gibt jetzt ein automatisiertes System, das diese Funktionen überflüssig macht. |
 | **Betroffene Produktbereiche**         | SQL-Aktionen: Planhinweis erstellen, um Plan-ID zu erzwingen, Planhinweis zum Hinzufügen von Tabellenhinweisen erstellen, Planhinweis entfernen, Seitensperren deaktivieren/aktivieren und Eskalation sperren, Statistik für eine Tabelle aktualisieren, Index neu erstellen, Index erstellen |
 | **Bereitstellungsoption**              | Cloud-Bereitstellung: Wirkt sich auf von Microsoft verwaltete Produktionsumgebungen und Sandbox-Umgebungen der Stufen 2 bis 5 aus. |
-| **Status**                         | Veraltet: Geplantes Entfernungsdatum im Oktober 2021. |
+| **Status**                         | Veraltet: Geplantes Entfernungsdatum ist Oktober 2021. |
 
 ## <a name="feature-deprecation-effective-may-2021"></a>Hinweis auf Funktionsminderung mit Wirkung zum Mai 2021
 
@@ -76,7 +134,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Ersetzt durch eine andere Funktion?**   | Ja, diese Funktion wird durch LCS [Problemsuche](../lifecycle-services/issue-search-lcs.md) und [Dynamic Regulatory Warnungsübermittlungsservice](../lcs-solutions/submit-localization-alerts.md) ersetzt.. |
 | **Betroffene Produktbereiche**         | Globalisierungsportal in LCS|
 | **Bereitstellungsoption**              | Cloudbereitstellung |
-| **Status**                         | Veraltet: Geplanter Umzugstermin im Mai 2022. |
+| **Status**                         | Veraltet: Geplanter Umzugstermin ist Mai 2022. |
 
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Die Funktion wurde mit Wirkung zum 28. Januar 2021 entfernt.

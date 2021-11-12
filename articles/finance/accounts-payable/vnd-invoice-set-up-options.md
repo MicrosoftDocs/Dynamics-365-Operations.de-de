@@ -1,8 +1,8 @@
 ---
 title: Einrichtungsoptionen für die Automatisierung von Lieferantenrechnungen (Vorschau)
 description: In diesem Thema werden die Optionen beschrieben, die zum Einrichten und Konfigurieren der Automatisierung von Lieferantenrechnungen verfügbar sind.
-author: abruer
-ms.date: 10/16/2020
+author: sunfzam
+ms.date: 10/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32f105ffcf41f5e39ec34ec6500040e28673086d25196a32690975ee0234ab43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8e5aac8f108cf9a46c80c61891b057b8dc2b4672
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724278"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675468"
 ---
 # <a name="setup-options-for-vendor-invoice-automation"></a>Einrichtungsoptionen zur Automatisierung von Kreditorenrechnungen
 
@@ -27,12 +27,18 @@ ms.locfileid: "6724278"
 
 In diesem Thema werden die Optionen beschrieben, die zum Einrichten und Konfigurieren der Automatisierung von Lieferantenrechnungen verfügbar sind. Die Funktionen zur Rechnungsautomatisierung verwenden die folgenden Arten von Einrichtungsparametern:
 
+- Parameter für die automatische Anwendung von Vorauszahlungen in importierten Rechnungen.
 - Parameter zum Übermitteln importierter Lieferantenrechnungen an das Workflow-System und Abgleichen der gebuchten Produktzugangspositionen mit ausstehenden Lieferantenrechnungspositionen.
 - Parameter für die Verarbeitung der Automatisierung von Hintergrundaufgaben. Das Prozessautomatisierungsframework wird verwendet, um importierte Lieferantenrechnungen an das Workflow-System zu übermitteln. Dies wird auch dazu verwendet, um gebuchte Produktbelegzeilen automatisch mit ausstehenden Kreditorenrechnungszeilen abzugleichen und eine Validierung der Rechnungsübereinstimmung für manuelle Rechnungen durchzuführen, die automatisch mit Produktbelegzeilen abgeglichen wurden. Verschiedene Geschäftsprozesse verwenden dieses Framework, um zu definieren, wie oft der ausgewählte Prozess ausgeführt wird. Die verfügbaren Frequenzen für die Hintergrundprozesse **Produktzugangspositionen mit Rechnungspositionen abgleichen** und **Kreditorenrechnungen an Workflow einreichen** umfassen **Stunde** und **Täglich**.
 
 Um Informationen zu einer Hintergrundaufgabe einzurichten oder anzuzeigen, gehen Sie zu **Systemadministration \> Setup \> Prozessautomatisierungen** und wählen Sie die Registerkarte **Hintergrundaufgabe**.
 
 Um eine berührungslose Automatisierung des Importprozesses durch Buchung von Kreditorenrechnungen zu erreichen, müssen Sie einen Kreditorenrechnungsworkflow einrichten. Um einen Workflow einzurichten gehen Sie zu **Kreditorenkonten > Setup > Kreditorenkontenworkflows**. Um sicherzustellen, dass die Rechnung ohne manuellen Eingriff von Anfang bis Ende verarbeitet werden kann, müssen Sie eine automatisierte Buchungsaufgabe in Ihre Workflow-Konfiguration aufnehmen.
+
+## <a name="parameters-for-automatically-applying-prepayments-in-imported-invoices"></a>Parameter für die automatische Anwendung von Vorauszahlungen in importierten Rechnungen
+
+- **Automatisch Vorauszahlung für importierte Rechnungen anwenden** – Wenn diese Option auf **Ja** eingestellt ist, sucht das System beim Importieren von Kreditorenrechnungen automatisch vorhandene Vorauszahlungen zu einer entsprechenden Bestellung. Wenn anwendbare Vorauszahlungen gefunden werden, wird eine zusätzliche Zeile hinzugefügt, um die Vorauszahlungen in den importierten Kreditorenrechnungen anzuwenden.
+- **Blockieren Sie den Folgeautomatisierungsprozess für den Fall, dass der Antrag auf Vorauszahlung fehlschlägt** – Wenn diese Option auf **Jaw** eingestellt ist, werden Rechnungen gesperrt, wenn eine Vorauszahlung nicht möglich ist. Wie andere automatisierte Prozesse, z. B. der Quittungsabgleich und die Übermittlung an einen Workflow-Prozess, nimmt der Rechnungsautomatisierungsprozess gesperrte Rechnungen erst dann auf, wenn die Vorauszahlung manuell angewendet wird. 
 
 ## <a name="parameters-for-submitting-imported-vendor-invoices-to-the-workflow-system"></a>Parameter zum Senden importierter Kreditorenrechnungen an das Workflow-System
 

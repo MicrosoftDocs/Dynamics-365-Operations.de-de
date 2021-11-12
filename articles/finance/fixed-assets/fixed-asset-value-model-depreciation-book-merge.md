@@ -1,8 +1,8 @@
 ---
 title: Anlagewertmodel und Abschreibungsbuchzusammenführung
 description: 'In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In der Microsoft Dynamics 365 for Operations-Version 1611 wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als Buch bekannt ist.'
-author: ShylaThompson
-ms.date: 06/20/2017
+author: moaamer
+ms.date: 10/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,30 +11,31 @@ ms.reviewer: roschlom
 ms.custom: 221564
 ms.assetid: 7c68eb7c-8b1a-4dd9-afb8-04b4040e305e
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a8e04f89673b3e0eb07e19aa1e14276f1f22c25b9aaabc91e2919892f74ed985
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9b11edcbf03b0917e35d9cef03834629b7b67fad
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727982"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674925"
 ---
-# <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Anlagewertmodel und Abschreibungsbuchzusammenführung
+# <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Anlagewertmodell und Abschreibungsbuchzusammenführung
 
 [!include [banner](../includes/banner.md)]
 
-In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In der Microsoft Dynamics 365 for Operations-Version 1611 wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als Buch bekannt ist.
+In diesem Thema wird die aktuelle Buchfunktion in Anlagen beschrieben. Diese neue Buchfunktionalität basiert auf der Wertmodellfunktionalität, die in früheren Versionen verfügbar war, aber sie umfasst auch die gesamte Funktionalität, die zuvor nur in Abschreibungsbüchern bereitgestellt wurde.
 
-Die neue Buchfunktionalität basiert auf einer früheren Wertmodellfunktionalität, aber sie umfasst auch die gesamte Funktionalität, die zuvor nur in Abschreibungsbüchern bereitgestellt wurde. [![Buch als eine Zusammenführung von Wertmodell- und Abschreibungsbuchfunktionalität.](./media/fixed-assets.png)](./media/fixed-assets.png) Wegen dieser Zusammenführung können Sie jetzt einen einzigen Satz von Seiten, Abfragen und Berichten für alle Ihre Anlagenprozesse verwenden. Die Tabellen in diesem Thema beschrieben die vorhergehende Funktionalität für Abschreibungsbücher und Wertmodelle, zusammen mit der neuen Funktionalität für Bücher.
+Mit der Buchfunktion können Sie einen einzigen Satz von Seiten, Abfragen und Berichten für alle Anlageprozesse Ihres Unternehmens verwenden. Die Tabellen in diesem Thema beschrieben die vorhergehende Funktionalität für Abschreibungsbücher und Wertmodelle, zusammen mit der aktuellen Funktionalität für Bücher.
 
-## <a name="setup"></a>Einstellung
+## <a name="setup"></a>Einrichtung
 Standardmäßig buchen Bücher sowohl in das Hauptbuch als auch in das untergeordnete Anlagensachkonto. Bücher haben eine neue Option **Ins Hauptbuch buchen**. Mit ihr können Sie Buchungen in das Hauptbuch deaktivieren und nur in das untergeordnete Anlagensachkonto buchen. Diese Funktionalität ähnelt dem früheren Buchungsverhalten für Abschreibungsbücher. Das Erfassungsnamenssetup hat eine neue Buchungsebene mit der Bezeichnung „Keine”. Diese Buchungsebene wurde speziell für Anlagenbuchungen hinzugefügt. Um Buchungen für Bücher zu buchen die nicht auf das Hauptkonto buchen, müssen Sie einen Erfassungsnamen verwenden, bei dem die Buchungsebene auf **Keine** festgelegt ist.
+
 
 | &nbsp;                                           | Abschreibungsbuch               | Wertmodell                     | Buch (neu)                                              |
 |--------------------------------------------------|---------------------------------|---------------------------------|---------------------------------------------------------|
-| Zum Hauptbuch buchen                                   | Nie                           | Immer                          | Option, zum Hauptbuch zu buchen                                |
+| In Hauptbuch buchen                                   | Nie                           | Immer                          | Option zum Buchen ins Hauptbuch                                |
 | Buchungsebenen                                   | Nicht zutreffend                  | 3: Aktuell, Vorgänge und Steuer | 11: Aktuell, Vorgänge, Steuern, 7 benutzerdefinierte Ebenen und Keine |
 | Journale                                    | Abschreibungsbuch-Journale | Hauptbuch – Erfassungsnamen              | Hauptbuch – Erfassungsnamen                                      |
 | Abgeleitete Bücher                                    | Nicht zulässig                     | Zulässig                         | Zulässig                                                 |

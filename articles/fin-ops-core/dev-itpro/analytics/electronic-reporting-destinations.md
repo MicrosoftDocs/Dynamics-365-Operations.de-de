@@ -2,7 +2,7 @@
 title: Zielorte für elektronische Berichterstellung (ER)
 description: Dieses Thema enthält Informationen zur Verwaltung von EB-Zielen (Electronic Reporting), zu den unterstützten Zieltypen und zu Sicherheitsaspekten.
 author: nselin
-ms.date: 05/19/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: df617ad476d8210c658f60569656292df22670df44cc094bf0d61b4ee6a19775
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743310"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647092"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Zielorte für elektronische Berichterstellung (ER)
 
@@ -164,12 +164,12 @@ Um die PDF-Konvertierungsoption in der aktuellen Finance-Instanz verfügbar zu m
 
 ### <a name="applicability"></a>Anwendbarkeit
 
-Die PDF-Konvertierungsoption kann nur für Dateikomponenten aktiviert werden, in denen die Ausgabe im Office-Format (Excel oder Word) (**Excel-Datei**) generiert wird. Wenn diese Option aktiviert ist, wird die im Office-Format generierte Ausgabe automatisch in PDF-Format konvertiert. In Versionen von Finance **vor der Version 10.0.18** können Sie diese Option nur für Komponenten des Typs **Excel\\Datei** aktivieren, die zum Generieren der Ausgabe im [Excel](er-fillable-excel.md)- oder [Word](er-design-configuration-word.md)-Format verwendet werden. In **Version 10.0.18 und höher** können Sie diese Option jedoch auch für Komponenten des Typs **Allgemein\\Datei** aktivieren.
+In Versionen von Finance **vor der Version 10.0.18** kann die PDF-Konvertierungsoption nur für Komponenten **Excel \\ Datei** aktiviert werden, die zum Generieren der Ausgabe in Office-Format (Excel oder Word)verwendet werden. Wenn diese Option aktiviert ist, wird die im Office-Format generierte Ausgabe automatisch in PDF-Format konvertiert. In **Version 10.0.18 und höher** können Sie diese Option jedoch auch für Komponenten des Typs **Allgemein\\Datei** aktivieren.
 
 > [!NOTE]
 > Beachten Sie die Warnmeldung, die Sie erhalten, wenn Sie die PDF-Konvertierungsoption für eine ER-Komponente des Typs **Allgemein\\Datei** aktivieren. Diese Meldung informiert Sie darüber, dass zur Entwurfszeit nicht garantiert werden kann, dass die ausgewählte Dateikomponente den Inhalt im PDF-Format oder den PDF-konvertierbaren Inhalt zur Laufzeit verfügbar macht. Daher sollten Sie die Option nur aktivieren, wenn Sie sicher sind, dass die ausgewählte Dateikomponente so konfiguriert wurde, dass der Inhalt im PDF-Format oder der PDF-konvertierbare Inhalt zur Laufzeit verfügbar gemacht wird.
 > 
-> Wenn Sie die PDF-Konvertierungsoption für eine Komponente des Typs **Excel\\Datei** aktivieren: Wenn diese Komponente Inhalte in einem anderen Format als PDF verfügbar macht und der exponierte Inhalt nicht in das PDF-Format konvertiert werden kann, tritt zur Laufzeit eine Ausnahme auf. Die Nachricht, die Sie erhalten, informiert Sie darüber, dass der generierte Inhalt nicht in das PDF-Format konvertiert werden kann.
+> Wenn Sie die PDF-Konvertierungsoption für eine Formatkomponente aktivieren: Wenn diese Komponente Inhalte in einem anderen Format als PDF verfügbar macht und der exponierte Inhalt nicht in das PDF-Format konvertiert werden kann, tritt zur Laufzeit eine Ausnahme auf. Die Nachricht, die Sie erhalten, informiert Sie darüber, dass der generierte Inhalt nicht in das PDF-Format konvertiert werden kann.
 
 ### <a name="limitations"></a>Einschränkungen
 
@@ -189,16 +189,26 @@ Um die PDF-Konvertierung für ein Dateiziel zu aktivieren, aktivieren Sie das Ko
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Wählen Sie eine Seitenausrichtung für die PDF-Konvertierung</a>
 
-Wenn Sie eine EB-Konfiguration im Excel-Format generieren und in das PDF-Format konvertieren möchten, können Sie die Seitenausrichtung der PDF-Datei angeben. Wenn Sie **In PDF konvertieren** auswählen, aktivieren Sie das Kontrollkästchen, um die PDF-Konvertierung für ein Dateiziel zu aktivieren, das eine Ausgabedatei im Excel-Format erstellt. Das Feld **Seitenausrichtung** wird auf dem Inforegister **PDF-Konvertierungseinstellungen** verfügbar. In dem Feld **Seitenausrichtung** können Sie eine bevorzugte Seitenausrichtung auswählen.
+Wenn Sie eine EB-Konfiguration im Excel-Format generieren und in das PDF-Format konvertieren möchten, können Sie die Seitenausrichtung der PDF-Datei explizit angeben. Wenn Sie **In PDF konvertieren** auswählen, aktivieren Sie das Kontrollkästchen, um die PDF-Konvertierung für ein Dateiziel zu aktivieren, das eine Ausgabedatei im Excel-Format erstellt. Das Feld **Seitenausrichtung** wird auf dem Inforegister **PDF-Konvertierungseinstellungen** verfügbar. In dem Feld **Seitenausrichtung** können Sie eine bevorzugte Seitenausrichtung auswählen.
 
 [![Wählen Sie eine Seitenausrichtung für die PDF-Konvertierung.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
-> [!NOTE]
-> Um die PDF-Seitenausrichtung auswählen zu können, müssen Sie Finance Version 10.0.10 oder höher installieren.
->
-> Die ausgewählte Seitenausrichtung wird auf alle ER-Konfigurationen angewendet, die im Excel-Format generiert und dann in das PDF-Format konvertiert werden.
->
-> Wenn eine ER-Konfiguration im Word-Format in das PDF-Format konvertiert wird, wird die Seitenausrichtung der PDF-Datei aus dem Word-Dokument übernommen.
+Um die PDF-Seitenausrichtung auswählen zu können, installieren Sie Finance Version 10.0.10 oder höher. In Versionen von Finance **vor Version 10.0.23** bietet diese Option die folgenden Seitenausrichtungsoptionen:
+
+- Hochformat
+- Querformat
+
+Die ausgewählte Seitenausrichtung wird auf alle Seite eines ausgehenden Dokuments angewendet, das im Excel-Format generiert und dann in das PDF-Format konvertiert wird.
+
+Allerdings wurde die Liste der Seitenausrichtungsoptionen in **Version 10.0.23 und höher** wie folgt erweitert:
+
+- Hochformat
+- Querformat
+- Arbeitsblattspezifisch
+
+Wenn Sie die Option **Arbeitsblattspezifisch** auswählen, wird jedes Arbeitsblatt einer generierten Excel-Arbeitsmappe in PDF konvertiert, indem die Seitenausrichtung verwendet wird, die für dieses Arbeitsblatt in der verwendeten Excel-Vorlage konfiguriert wurde. Möglicherweise haben Sie also ein endgültiges PDF-Dokument mit Seiten im Hoch- und Querformat. 
+
+Wenn eine ER-Konfiguration im Word-Format in das PDF-Format konvertiert wird, wird die Seitenausrichtung der PDF-Datei aus dem Word-Dokument immer übernommen.
 
 ## <a name="output-unfolding"></a>Ausgabe entfaltet sich
 

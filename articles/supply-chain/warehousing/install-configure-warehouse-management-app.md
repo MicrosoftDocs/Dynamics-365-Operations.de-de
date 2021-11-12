@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 3a0a8555ac7c523af03401ab84af30f577777995
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384610"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647619"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installieren und Verbinden der mobilen Lagerortverwaltungs-App
 
@@ -109,7 +109,7 @@ Weitere Informationen zum Einrichten von Webdienstanwendungen in Azure AD finden
     - [Schnellstart: Eine Anwendung bei der Microsoft Identity Platform registrieren](/azure/active-directory/develop/quickstart-register-app)
     - [Vorgehensweise: Das Portal verwenden, um eine Azure AD-Anwendung- und einen -Dienstprinzipal zu erstellen, die auf Ressourcen zugreifen können](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Erstellen und Konfigurieren eines Benutzerkontos in Supply Chain Management
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Erstellen und Konfigurieren eines Benutzerkontos in Supply Chain Management
 
 Führen Sie die folgenden Schritte aus, um Supply Chain Management die Verwendung Ihrer Azure AD-Anwendung zu ermöglichen.
 
@@ -117,17 +117,24 @@ Führen Sie die folgenden Schritte aus, um Supply Chain Management die Verwendun
 
     1. Wechseln Sie in Supply Chain Management zu **Systemverwaltung \> Benutzer \> Benutzer**.
     1. Erstellen Sie einen Benutzer.
-    1. Weisen Sie den Benutzer des mobilen Geräts für Lagerhaltung zu.
+    1. Weisen Sie den Benutzer die Benutzerrolle *Mobiles Geräts für Lagerhaltung zu*.
 
     ![Weisen Sie den Benutzer des mobilen Geräts für Lagerhaltung zu.](media/app-connect-app-users.png "Den Benutzer des mobilen Geräts für Lagerhaltung zuweisen")
 
 1. Ordnen Sie Ihre Azure AD-Anwendung dem Benutzer der mobilen Lagerortverwaltungs-App zu:
 
     1. Gehen Sie zu **Systemadministration \> Einrichtung \> Azure Active Directory-Anwendungen**.
-    1. Erstellen Sie eine Position.
-    1. Geben Sie die Client-ID ein, die Sie sich im vorherigen Abschnitt notiert haben, geben Sie ihr einen Namen, und wählen Sie den Benutzer aus, den Sie gerade erstellt haben. Wir empfehlen, dass Sie alle Ihre Geräte markieren. Wenn ein Gerät dann verloren gehen, können Sie seinen Zugriff auf Supply Chain Management einfach von dieser Seite entfernen.
+    1. Wählen Sie im Aktivitätsbereich **Neu** aus, um eine Zeile zu erstellen.
+    1. Geben Sie im Feld **Client-ID** die Client-ID ein, den Sie sich im vorherigen Abschnitt notiert haben.
+    1. Geben Sie im Feld **Name** einen Namen ein.
+    1. Wählen Sie im Feld **Benutzer-ID** die Benutzer-ID aus, dass Sie gerade erstellt haben.
 
     ![Azure Active Directory-Anwendungen.](media/app-connect-aad-apps.png "Azure Active Directory-Anwendungen")
+
+> [!TIP]
+> Eine Möglichkeit, diese Einstellungen zu verwenden, besteht darin, für jedes Ihrer physischen Geräte eine Client-ID in Azure zu erstellen und dann jede Client-ID zur **Azure Active Directory-Anwendungen**-Seite hinzuzufügen. Wenn ein Gerät dann verloren gehen, können Sie seinen Zugriff auf Supply Chain Management einfach eentfernen, indem Sie dessen Client-ID von dieser Seite entfernen. (Dieser Ansatz funktioniert, weil die auf jedem Gerät gespeicherten Verbindungsanmeldeinformationen auch eine Client-ID angeben, wie weiter unten in diesem Thema beschrieben.)
+>
+> Darüber hinaus werden die Standardeinstellungen für Sprache, Zahlenformat und Zeitzone für jede Client-ID durch die Einstellungen festgelegt, die für den **Benutzer-ID**-Wert, der hier zugeordnet ist, festgelegt wird. Daher können Sie diese Einstellungen verwenden, um basierend auf der Client-ID Standardeinstellungen für jedes Gerät oder jede Gerätesammlung festzulegen. Diese Standardeinstellungen werden jedoch überschrieben, wenn sie auch für das *Benutzerkonto der Lager-App*, die ein Mitarbeiter verwendet, um sich auf dem Gerät anzumelden, definiert sind. (Weitere Informationen finden Sie unter [Benutzerkonten für mobile Geräte](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Sich mit einem Zertifikat oder einem geheimen Clientschlüssel authentifizieren
 

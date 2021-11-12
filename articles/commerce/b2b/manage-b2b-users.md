@@ -2,7 +2,7 @@
 title: Geschäftspartnerbenutzer auf B2B-E-Commerce-Websites verwalten
 description: In diesem Thema wird beschrieben, wie Administratoren Geschäftspartnerbenutzer auf Business-to-Business(B2B)-E-Commerce-Websites hinzufügen, bearbeiten und löschen können.
 author: josaw1
-ms.date: 07/22/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6cc1d5dfeb48fd00216fc1908e9e8be24f07131b3e5f1eaeefb10396efbebc3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 090dc9af49840e559b4c1ad1500718fde9764aa2
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734942"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713692"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Geschäftspartnerbenutzer auf B2B-E-Commerce-Websites verwalten
 
@@ -68,6 +68,18 @@ Führen Sie die folgenden Schritte aus, um einen Administratorbenutzer eines Ges
 1. Wechseln Sie zu **Einzelhandel und Handel IT \> Verteilungsplan** und führen Sie den **1010** (**Kunden**)-Auftrag zum pushen der neu erstellten Kunden- und Kundenhierarchiedatensätze in die Kanaldatenbank aus.
 
 Nachdem die Anfrage genehmigt und die Kunden- und Kundenhierarchiedatensätze mit der Kanaldatenbank synchronisiert wurden, kann sich der Anforderer unter Verwendung der E-Mail-Adresse, die er bei der Übermittlung der Anfrage angegeben hat, bei der B2B-E-Commerce-Website anmelden. Benutzer können den Anmelde-Flow verwenden, um das Kennwort für ihr Konto zu definieren. Um den Identitätsanbieter zu aktivieren (Azure AD B2C)-Datensatz, der mit dem B2B-Kundendatensatz verknüpft werden soll, der bei der Anmeldung oder Anmeldung erstellt wurde, folgen Sie den Anweisungen in [Aktivieren Sie die automatische Verknüpfung von Identitätsdatensätzen mit Kundenkonten](../identity-record-linking.md).
+
+## <a name="notify-b2b-prospects-when-they-are-approved-or-rejected"></a>Benachrichtigen von B2B-Interessenten, wenn sie genehmigt oder abgelehnt werden
+
+Wenn Sie eine Onboarding-Anfrage eines B2B-Interessenten genehmigen oder ablehnen, können Sie automatisch eine E-Mail-Benachrichtigung an den Interessenten senden. 
+
+Führen Sie die folgenden Schritte aus, um E-Mail-Benachrichtigungen in der Commerce-Zentrale für Ereignisse der Benachrichtigungsart B2B-Interessent genehmigt oder B2B-Interessent abgelehnt einzurichten.
+
+1. Erstellen Sie E-Mail-Vorlagen für E-Mails, die an potenzielle Kunden gesendet werden, wenn der Benachrichtigungstyp B2B-Interessent genehmigt oder B2B-Interessent abgelehnt ausgelöst wird.
+
+    Informationen zu den Platzhaltern, die von Benachrichtigungstypen B2B-Interessenten genehmigt und vom B2B-Interessenten abgelehnt unterstützt werden, finden Sie unter [Benachrichtigungsarten](../email-templates-transactions.md#notification-types). Informationen zum Erstellen von E-Mail-Vorlagen finden Sie unter [Erstellen einer E-Mail-Vorlage](../email-templates-transactions.md#create-an-email-template). 
+
+1. Fügen Sie die Benachrichtigungstypen B2B-Interessenten genehmigt und B2B-Interessenten abgelehnt Ihrem E-Mail-Benachrichtigungsprofil hinzu und ordnen Sie sie den von Ihnen erstellten E-Mail-Vorlagen zu. Weitere Informationen zu E-Mail-Benachrichtigungsprofilen finden Sie unter [Richten Sie ein E-Mail-Benachrichtigungsprofil ein](../email-notification-profiles.md). 
 
 ## <a name="onboard-additional-business-partner-users"></a>Onboarding zusätzlicher Geschäftspartnerbenutzer durchführen
 

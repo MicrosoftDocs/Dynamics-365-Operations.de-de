@@ -2,7 +2,7 @@
 title: Übersicht über die Steuerberechnung
 description: In diesem Thema werden der Gesamtumfang und die Funktionen der Steuerberechnung erläutert.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394585"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647056"
 ---
 # <a name="tax-calculation-overview"></a>Übersicht über die Steuerberechnung
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Die Steuerberechnung ist ein hyperskalierbarer mandantenfähiger Dienst, mit dem die Global Tax Engine den Steuerermittlungs- und -berechnungsprozess automatisieren und vereinfachen kann. Das Steuermodul ist vollständig konfigurierbar. Zu den Elementen, die konfiguriert werden können, gehören unter anderem das steuerpflichtige Datenmodell, der Steuercode, die Steueranwendbarkeitsmatrix und die Steuerberechnungsformel. Das Steuermodul läuft auf der Microsoft Azure-Hauptserviceplattform und bietet moderne Technologie und exponenzielle Skalierbarkeit.
 
@@ -120,6 +118,10 @@ Die folgenden Transaktionen werden in Version 10.0.21 unterstützt:
     - Umlagerungsauftrag – versenden
     - Umlagerungsauftrag – empfangen
 
+Die folgenden Transaktionen werden in Version 10.0.23 unterstützt: 
+
+- Freitextrechnung
+
 ## <a name="supported-countriesregions"></a>Unterstützte Länder/Regionen
 
 Die Steuerberechnung kann für juristische Entitäten aktiviert werden. 
@@ -145,6 +147,28 @@ Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität
 - Schweiz
 - Vereinigtes Königreich
 - USA
+
+Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität werden in Version 10.0.22 unterstützt:
+
+- Australien
+- Bahrain
+- Kanada
+- Ägypten
+- Hongkong (SAR)
+- Kuwait
+- Neuseeland
+- Oman
+- Katar
+- Saudi-Arabisch
+- Südafrika
+- Vereinigte Arabische Emirate
+
+Die folgenden Länder/Regionen für die Hauptadresse einer juristischen Entität werden in Version 10.0.23 unterstützt:
+
+- Thailand
+- Japan
+- Malaysia
+- Singapur
 
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 

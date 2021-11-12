@@ -2,7 +2,7 @@
 title: Einzelvorgänge für Datenimport und ‑export – Übersicht
 description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
 author: peakerbl
-ms.date: 10/07/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
-ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
+ms.openlocfilehash: 51c7d678017bdd9388767500735e21e5374c9f29
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "7612363"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675368"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
@@ -68,6 +68,9 @@ Wenn Sie eine Einheit auswählen, müssen Sie die Verpackungseinheiten das Forma
 | Excel                  | Excel                                      | \-k. A.-                     |
 | XML                    | \-k. A.-                                      | XML-Element XML-Attribut |
 | Mit Trennzeichen, fest mit | Komma, Semikolon, Registerkarte, senkrechter Strich, Doppelpunkt | \-k. A.-                     |
+
+> [!NOTE]
+> Es ist wichtig, den richtigen Wert für **Zeilentrennzeichen**, **Spaltentrennzeichen** und **Textqualifizierer** auszuwählen, wenn die **Datei Format**-Option auf **Getrennt** eingestellt ist. Stellen Sie sicher, dass Ihre Daten nicht das als Trennzeichen oder Qualifizierer verwendete Zeichen enthalten, da dies beim Import und Export zu Fehlern führen kann.
 
 ### <a name="sequence-the-entities"></a>Sequenz der Entitäten
 Entitäten können in einer Datenvorlage in den Serverkonfigurationsdateien oder im Import- und Exporteinzelvorgang sequenziert werden. Wenn Sie einen Einzelvorgang ausführen, der mehr als eine Datenentität enthält, müssen Sie prüfen, ob die Datenentitäten ordnungsgemäß geordnet werden. Sie ordnen die Entitäten hauptsächlich so, dass Sie beliebige funktionalen Abhängigkeiten unter den Entitäten adressieren können. Wenn Entitäten keine funktionalen Abhängigkeiten haben, können Sie diese für Parallelimport oder Export planen.

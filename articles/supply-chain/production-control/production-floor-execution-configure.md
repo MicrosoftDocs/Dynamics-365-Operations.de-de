@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 15fcfd72027e081e633fe68209cf85f528ff02d7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576927"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647188"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -74,6 +74,12 @@ Diese Funktion fügt der Produktionsausführungsoberfläche eine Registerkarte f
 Diese Funktion ermöglicht das Hinzufügen eines Suchfelds zur Einzelvorgangsliste. Mitarbeiter können einen bestimmten Einzelvorgang finden, indem sie die Job-ID eingeben, oder alle Jobs für einen bestimmten Auftrag finden, indem sie die Auftrags-ID eingeben. Arbeitskräfte können die ID über eine Tastatur oder durch Scannen eines Barcodes eingeben. Wenn Sie diese Funktion nutzen möchten, aktivieren Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Einzelvorgangssuche für die Produktionsausführungsoberfläche
+
+### <a name="enable-reporting-on-co-products-and-by-products"></a>Berichte zu Kuppel- und Nebenprodukten aktivieren
+
+Mit dieser Funktion können Mitarbeiter die Ausführungsschnittstelle der Produktionshalle verwenden, um den Fortschritt von Batchaufträgen zu melden. Diese Berichte umfassen Kuppel- und Nebenprodukten. Um diese Funktion zu nutzen, aktivieren Sie die folgenden Funktionen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Bericht zu Co- und Nebenprodukten von der Produktionsausführungsoberfläche
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeiten mit Produktionsausführungsoberflächen-Konfigurationen
 

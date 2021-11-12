@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3fac6a0232f7e51e859fcc5b23244be092ce8d76123ec42f586063a02abab603
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e846cde14fe078d6675ec31d1a3271f751dd6468
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722790"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647139"
 ---
 # <a name="vendor-invoices-overview"></a>Kreditorenrechnungen – Übersicht
 
@@ -72,12 +72,9 @@ Möglicherweise werden in der Organisation Workflows zur Verwaltung des Prüfpro
 Im Folgenden finden Sie verschiedene Möglichkeiten, wie Sie verhindern können, dass eine Rechnung an einen Workflow gesendet wird.
 
 - **Rechnungssumme und registrierte Summe sind nicht gleich.** Die Person, die die Rechnung übermittelt hat, erhält eine Warnung, wenn die Gesamtsummen nicht gleich sind. Die Warnung bietet die Möglichkeit, die Salden zu korrigieren, bevor die Rechnung erneut an den Workflow gesendet wird. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn die Rechnungssumme und die registrierte Rechnungssumme nicht gleich sind** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist. 
-
 - **Die Rechnung enthält nicht zugeordnete Gebühren.** Die Person, die die Rechnung eingereicht hat, erhält eine Benachrichtigung, dass die Rechnung nicht zugewiesene Belastungen enthält, sodass sie die Salden korrigieren kann, bevor sie die Rechnung erneut an den Workflow sendet. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn nicht zugewiesene Belastungen auf einer Kreditorenrechnung sind** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist.
-
 - **Die Rechnung enthält dieselbe Rechnungsnummer wie eine andere gebuchte Rechnung.** Die Person, die die Rechnung eingereicht hat, erhält eine Nachricht, dass eine Rechnung mit einer doppelten Nummer gefunden wurde. Die doppelte Nummer kann korrigiert werden, bevor die Rechnung erneut an den Workflow gesendet wird. Diese Warnung wird angezeigt, wenn der Parameter **Die verwendete Rechnungsnummer überprüfen** im Kreditorenkonto verwendet wird und auf **Duplikat ablehnen** eingestellt ist. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn die Rechnungsnummer bereits auf einer gebuchten Rechnung vorhanden ist und Ihr System nicht für die Annahme doppelter Rechnungsnummern eingerichtet ist** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist.
-
-- **Rechnung enthält eine Zeile, in der die Rechnungsmenge geringer ist als die übereinstimmende Produktbelegmenge.** Die Person, die die Rechnung einreicht oder versucht zu buchen, erhält eine Nachricht, dass die Mengen nicht gleich sind. Die Meldung bietet die Möglichkeit, die Werte zu korrigieren, bevor die Rechnung erneut an den Workflow gesendet wird. Diese Funktion ist verfügbar, wenn die Parameter **Buchung und Übermittlung von Lieferantenrechnungen an den Workflow blockieren** auf der Seite **Funktionsverwaltung** eingeschaltet ist und die Parameter **Buchung und Übermittlung an den Workflow blockieren** auf der Seite **Kreditorenbuchhaltungsparameter** eingeschaltet sind.  
+- **Rechnung enthält eine Zeile, in der die Rechnungsmenge geringer ist als die übereinstimmende Produktbelegmenge.** Die Person, die die Rechnung einreicht oder versucht zu buchen, erhält eine Nachricht, dass die Mengen nicht gleich sind. Die Meldung bietet die Möglichkeit, die Werte zu korrigieren, bevor die Rechnung erneut an den Workflow gesendet wird. Diese Funktion ist verfügbar, wenn die Parameter **Buchung und Übermittlung von Lieferantenrechnungen an den Workflow blockieren** auf der Seite **Funktionsverwaltung** eingeschaltet ist und die Parameter **Buchung und Übermittlung an den Workflow blockieren** auf der Seite **Kreditorenbuchhaltungsparameter** eingeschaltet sind.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Abgleichen von Kreditorenrechnungen mit Produktzugängen
 
@@ -122,9 +119,32 @@ Eine Workflowinstanz, die aufgrund eines nicht behebbaren Fehlers beendet wurde,
 Sie können die Seite **Workflowhistorie** verwenden, um den Workflowstatus auf **Entwurf** zurückzusetzen. Sie können diese Seite über **Kreditorenrechnung** oder die Navigation **Allgemein > Abfragen > Workflow** öffnen. Um den Workflowstatus auf **Entwurf** zurückzusetzen, wählen Sie **Rückruf** aus. Sie können den Workflowstatus auch auf „Entwurf“ zurücksetzen, indem Sie die Aktivität **Rückruf** auf der Seite **Kreditorenrechnung** oder **Ausstehende Kreditorenrechnungen** auswählen. Nachdem der Workflowstatus auf **Entwurf** zurückgesetzt ist, wird er zur Verarbeitung auf der Seite **Kreditorenrechnung** verfügbar.
 
 ## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Anzeigen der Rechnungssumme auf der Seite Ausstehende Lieferantenrechnungen
+
 Sie können die Rechnungssumme auf der **Ausstehende Lieferantenrechnungen**-Seite durch Aktivieren der **Rechnungssumme in Kreditorenrechnungsliste anzeigen**-Parameter auf der **Kreditorenparameter**-Seite anzeigen. 
 
+## <a name="vendor-open-transactions-report"></a>Bericht „Offene Kreditorenbuchungen“
 
+Der Bericht **Offene Transaktionen des Kreditors** liefert detaillierte Informationen zu den offenen Transaktionen für jeden Kreditor ab dem von Ihnen angegebenen Datum. Dieser Bericht wird häufig während des Prüfverfahrens verwendet, um Salden zwischen Kreditorenbuchtransaktionen und Sachkontotransaktionen zu überprüfen.
+
+Für jede Transaktion enthält der Bericht die folgenden Details:
+
+- Rechnungsnummer
+- Transaktionsdatum
+- Belegnummer
+- Transaktionsbetrag in Transaktionswährung und Abrechnungswährung
+- Kreditsaldo in Transaktionswährung und Abrechnungswährung
+- Debitsaldo in Transaktionswährung und Abrechnungswährung
+- Zwischensummenbetrag in der Buchhaltungswährung
+- Zahlungsfälligkeitsdatum
+
+### <a name="filter-the-data-on-the-report"></a>Filtern der Daten im Bericht
+
+Wenn der Bericht **Offene Transaktionen des Kreditors** generiert wird, werden die folgenden Parameter verfügbar. Sie können mit deren Hilfe die Daten filtern, die im Bericht enthalten sein werden.
+
+- **Zukünftige Abrechnung ausschließen** – Markieren Sie dieses Ankreuzfeld, um Transaktionen auszuschließen, die nach dem Datum abgerechnet werden, das im Feld **Offene Transaktionen pro** eingegeben wird.
+- **Offene Transaktionen pro** – Geben Sie ein Datum ein, um Transaktionen einzuschließen, die an diesem Datum offen sind. Wenn Sie kein Datum eingeben, wird dieses Feld auf das maximale Datum gesetzt. (Das maximale Datum ist das späteste Datum, das das System akzeptiert, der 31. Dezember 2154.) Standardmäßig wird dieses Feld bei der nächsten Ausführung des Berichts auf das letzte Datum gesetzt, das darin eingegeben wurde.
+
+Sie können die Filter unter dem Feld **Datensatz zum Einschließen** verwenden, um die Transaktionsdaten, die im Bericht enthalten sind, weiter einzuschränken.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

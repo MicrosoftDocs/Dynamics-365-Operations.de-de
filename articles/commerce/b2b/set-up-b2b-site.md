@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d77e1f3b5f8d558643b078dbe8e829e62f85120e4931d60224116a33f171fab3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721006"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713747"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Website für B2B-E-Commerce einrichten
 
@@ -37,7 +37,7 @@ Business-to-Business-E-Commerce-Websites (B2B) bieten einige wichtige Funktionen
 
 Sie können auf die Einstellungen auf Site-Ebene im Site Builder unter **Site-Einstellungen \> Erweiterungen** zugreifen. Die folgenden zwei Einstellungen auf Site-Ebene gelten für B2B-Szenarien:
 
-- **Debitorenkontozahlungen aktivieren** – Mithilfe dieser Eigenschaft können Benutzer Bestellungen über Debitorenkonten bezahlen. Die verfügbaren Werte sind **Für B2B-Kunden aktiviert**, **Für B2C-Kunden aktiviert**, **Für alle Kunden aktiviert** und **Für alle Kunden deaktiviert**. Wenn Ihre B2B-Website Debitorenkonten unterstützt, sollten Sie **Für B2C-Kunden aktiviert** auswählen.
+- **Debitorenkontozahlungen aktivieren** – Mithilfe dieser Eigenschaft können Benutzer Bestellungen über Debitorenkonten bezahlen. Die verfügbaren Werte sind **Für B2B-Kunden aktiviert**, **Für B2C-Kunden aktiviert**, **Für alle Kunden aktiviert** und **Für alle Kunden deaktiviert**. Wenn Ihre B2B-Website Debitorenkonten unterstützt, sollten Sie **Für B2B-Kunden aktiviert** auswählen.
 - **Auftragsmengenbeschränkungen aktivieren** – Mithilfe dieser Eigenschaft können Sie die Anzahl der Artikel begrenzen, die für jedes Produkt oder jede Kategorie bestellt werden können. Die verfügbaren Werte sind **Für B2B-Kunden aktiviert**, **Für B2C-Kunden aktiviert**, **Für alle Kunden aktiviert** und **Für alle Kunden deaktiviert**.
 
 > [!NOTE]

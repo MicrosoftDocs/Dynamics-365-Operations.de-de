@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a60fc00642a77d3dc595a6222727637f0d7cd588
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 0457190f2fc8cd0ed39e109e6720509b77b83566
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7475059"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678518"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Die Bestandsanzeige-App verwenden
 
@@ -63,8 +63,6 @@ Um eine Lagerbestand-Abfrage zu stellen, geben Sie die Abfrage in den Anfragekö
 ![Einstellungen für die On-Hand-Abfrage](media/inventory-visibility-query-settings.png "Einstellungen für die On-Hand-Abfrage")
 
 ### <a name="reservation-posting"></a>Reservierungsbuchung
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Verwenden Sie die Registerkarte **Reservierungsbuchung**, um eine Reservierungsanfrage zu buchen. Bevor Sie eine Reservierungsanfrage buchen können, müssen Sie die Funktion *OnHandReservation* einschalten. Weitere Informationen zu dieser Funktion finden Sie unter [Inventory Visibility Reservierungen](inventory-visibility-reservations.md).
 

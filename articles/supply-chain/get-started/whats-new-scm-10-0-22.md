@@ -1,5 +1,5 @@
 ---
-title: Vorschau auf Dynamics 365 Supply Chain Management 10..22 (November 2021)
+title: Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.22. (November 2021)
 description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Supply Chain Management 10.0.22 entweder neu oder geändert sind.
 author: kamaybac
 ms.date: 08/09/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 3f5166338aebe784fe7f95372a437d4ed660de77
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a4f9e5a4a318ceaa45b6919e394e1ff335bfb193
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579711"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678834"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>Vorschau auf Dynamics 365 Supply Chain Management 10..22 (November 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.22. (November 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-In diesem Thema werden die Funktionen aufgeführt, die in der Microsoft Dynamics 365 Supply Chain Management Vorschauversion 10.0.22 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.995 und ist wie folgt verfügbar:
+Dieses Thema listet Funktionen auf, die in Microsoft Dynamics 365 Supply Chain Management-Version 10.0.22 entweder neu sind oder geändert wurden. Diese Version hat die Build-Nummer 10.0.995 und ist wie folgt verfügbar:
 
 - **Vorschauversion:** September 2021
 - **Allgemeine Verfügbarkeit des Release (manuelles Update):** Oktober 2021
@@ -40,13 +39,12 @@ Die folgende Tabelle listet die Funktionen auf, die in dieser Version enthalten 
 
 Die folgende Tabelle listet die Funktionsverbesserungen auf, die in dieser Version enthalten sind. Jede dieser Funktionen bietet Verbesserungen einer vorhandenen Funktion. Da es sich nur um Verbesserungen handelt, sind sie nicht in der Liste [Releaseplan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features) aufgeführt. Um jedoch sicherzustellen, dass diese Verbesserungen nicht mit Ihren vorhandenen Anpassungen oder Einstellungen in Konflikt stehen, ist jede standardmäßig deaktiviert (sofern nicht anders angegeben). Wenn Sie eine dieser Funktionen verwenden möchten, müssen Sie sie explizit aktivieren unter [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Funktionsbereich | Funktion Name in FunktionVerwaltung | Mehr erfahren |
+| Modul | Funktion Name in FunktionVerwaltung | Mehr erfahren |
 |---|---|---|
 | Kostenverwaltung | Erstellen Sie zugehörige Belege für Neubewertungen der Standardkostenrundung | <p>Wenn eine Bestandsfinanzbuchung (z. B. eine Kundenauftragsrechnung oder eine Bestandsbuchung) vorgenommen wird, veranlasst diese Funktion das System, einen separaten Beleg für alle zugehörigen Standardkostenrundungs-Neubewertungen zu erstellen und diesen als zugehörigen Beleg an den Finanzbuchungsbeleg anzuhängen.</p><p>Ohne diese Funktion zeichnet das System die Neubewertungen der Standardkostenrundung auf derselben Belegbuchung auf. Dieses Verhalten kann manchmal zu widersprüchlichen Datumsangaben führen, da die Neubewertungen das Sitzungs- oder Systemdatum verwenden, während Finanzbuchungen das Buchungsdatum verwenden.</p> |
 | Verteilte Hybridtopologie | *(Es ist keine Funktionsverwaltung erforderlich.)* | <p>Diese Version erweitert die Ladungsplanungsfunktionen der Lagerverwaltungs-Workload für Cloud- und Edge-Skalierungs-Einheiten.</p><p>Weitere Informationen finden Sie unter [Arbeitsauslastungen in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Verwaltung für technische Änderung | Variantengenerierung für technische Produkte | <p>Mit dieser Funktion können Sie basierend auf Farbe, Größe, Stil oder Konfigurationsabmessungen mehrere Varianten für ein technisches Produkt generieren.</p><p>Weitere Informationen finden Sie unter [Generieren Sie Varianten für Engineering-Produkte](../engineering-change-management/engineering-variants.md).</p> |
 | Lager- und Lagerortverwaltung | Integration der Bestandssichtbarkeit mit Reservierungsversatz | <p>Diese Funktion kann erst aktiviert werden, nachdem die *Integration der Inventarsichtbarkeit* Funktion aktiviert ist. Es bietet Funktionen zum Ausgleichen von Reservierungen, die in der Inventarsichtbarkeit vorgenommen werden.</p><p>Weitere Informationen finden Sie unter [Reservierungen in Inventory Visibility](../inventory/inventory-visibility-reservations.md).</p> |
-| Vertrieb und Marketing | Begrenzen Sie die Anzahl der Verkaufsaufträge, die für die Buchung ausgewählt werden können | <p>Diese Funktion ist automatisch aktiviert. Sie fügt eine Einstellung namens **Max. Anzahl von Verkaufsaufträgen für die Buchung** auf der Seite **Parameter für Debitoren** hinzu. Mit diesem Feld können Sie die maximale Anzahl von Verkaufsaufträgen festlegen, die beim Buchen von Bestätigungen, Kommissionierlisten, Lieferscheinen und Rechnungen auf der Seite mit den Verkaufsaufträgen ausgewählt werden können. Der Standardwert ist *100*.</p><p>Diese Funktion trägt dazu bei, die Leistung der Seite mit den Aufträgen zu verbessern, wenn eine erhebliche Anzahl von Verkaufsaufträgen ausgewählt ist. Sie hat keinen Einfluss auf die Anzahl der Verkaufsaufträge, die von einer periodischen Aufgabe verarbeitet werden können.</p> |
 
 ## <a name="new-and-updated-documentation-resources"></a>Neue und aktualisierte Dokumentationsressourcen
 
@@ -63,7 +61,7 @@ Wir haben die folgenden Hilfethemen kürzlich hinzugefügt oder erheblich aktual
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformupdate für Finance and Operations Apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.22 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattformupdates für Version 10.0.22 von Finance and Operations-Apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.22 enthält das Plattform-Update. Weitere Informationen finden Sie unter [Plattformupdates für Version 10.0.22 von Finance and Operations-Apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 

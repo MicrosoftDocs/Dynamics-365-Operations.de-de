@@ -1,7 +1,7 @@
 ---
 title: Buchungskonten für Anlagenveräußerung
 description: Dieser Artikel beschreibt, wie Buchungskonten im Hauptbuch für den Abgang von Anlagen eingerichtet werden.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,27 +12,27 @@ ms.reviewer: roschlom
 ms.custom: 3461
 ms.assetid: dfdc0730-e030-48cc-8d93-15bdc7b23776
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4313cb2029fc94d292abcf36eb01becb00869fa41dbda794b91d6c8f4bc5b9da
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c82cb8b82f2cc8424675f76c68613a2b5aa76745
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778289"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675517"
 ---
 # <a name="fixed-asset-disposal-posting-accounts"></a>Buchungskonten für Anlagenveräußerung
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel beschreibt, wie Buchungskonten im Hauptbuch für den Abgang von Anlagen eingerichtet werden.
+Dieser Artikel beschreibt, wie Buchungskonten im Hauptbuch eingerichtet werden, wenn Sie einen Abgang vbon Anlagen duchführen.
 
-Wählen Sie auf der Seite "Anlagenbuchungsprofile" im Inforegister "Sachkonten" die Optionen "Abgang – Verkauf" und "Abgang – Ausschuss" aus, um Buchungen im Sachkonto einzurichten.
+Um Hauptbuch-Buchungskonten einzurichten, die bei der Veräußerung eines Vermögenswerts verwendet werden sollen, wählen Sie **Abgang – Verkauf** und **Abgang – Ausschuss** in dem **Sachkonten**-Inforregister auf der **Buchungsprofile für Anlagen**-Seite.
 
-Für beide Buchungsarten wird der Abgangswert der Anlage dem Sachkonto gutgeschrieben. Das Soll wird in einem Gegenkonto gebucht, das beispielsweise ein Bankkonto sein kann. Bei Veräußerung einer Anlage an einen Debitor wird anstelle des Gegenkontos das Debitorenkonto verwendet.
+Für beide Buchungsarten (Abgang einer Anlage durch Verkauf oder Ausschuss) wird der Abgangswert der Anlage dem Sachkonto gutgeschrieben. Das Soll wird in einem Gegenkonto gebucht, das (beispielsweise) ein Bankkonto sein kann. Bei Veräußerung einer Anlage an einen Debitor wird anstelle des Gegenkontos das Debitorenkonto verwendet. Weitere Informationen finden Sie unter [Abgang einer Anlage als Ausschuss](dispose-of-a-fixed-asset-as-scrap.md).
 
-Klicken Sie auf "Abgang" und anschließend auf "Verkauf" oder "Ausschuss", und richten Sie dann detaillierte Konten ein, um eine Rückbuchung des Nettobuchwerts der Anlage auszuführen. Sie können auch Informationen in die Felder "Buchungswert" und "Verkaufswert" auf der Seite "Abgangsparameter" eingeben. 
+Klicken Sie auf **Abgang** und anschließend auf **Verkauf** oder **Ausschuss**, und richten Sie dann detaillierte Konten ein, um eine Rückbuchung des Nettobuchwerts der Anlage auszuführen. Sie können auch Informationen in die Felder **Buchungswert** und **Verkaufswert** auf der Seite **Abgangsparameter** eingeben. 
 
 Durch die Abgangsbuchung für eine Anlage in einem Low-Value-Pool verringert sich der Nettobuchwert des Low-Value-Pools lediglich um den Abgangsbetrag. Übersteigt allerdings der Verkaufswert einer Anlage den Nettobuchwert des Low-Value-Pools, verringert sich der Nettobuchwert auf Null.
 

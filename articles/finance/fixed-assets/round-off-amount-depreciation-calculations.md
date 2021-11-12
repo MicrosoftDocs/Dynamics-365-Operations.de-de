@@ -1,7 +1,7 @@
 ---
-title: Betrag der Rundung für Abschreibungsberechnungen
-description: Dieser Artikel erläutert das Feld "Rundungsart Abschreibung", das Sie im Wertmodell und auf den Einstellungsseiten des Abschreibungsbuchs finden.
-author: ShylaThompson
+title: Rundungsbetrag für Abschreibungsberechnungen
+description: Dieses Thema erläutert das Feld „Rundungsart Abschreibung“, das Sie im Wertmodell und auf den Einstellungsseiten des Abschreibungsbuchs finden.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13931
 ms.assetid: faf7db87-046f-41d1-9baf-0df66e373e97
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a99a55e58294f765b606aaabb373cc3f72415ef4ed94c213ebc8cd58af6157ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3df48fc7bb092b0257c4652a8c67d1d740dbcfe
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719755"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674332"
 ---
-# <a name="round-off-amount-for-depreciation-calculations"></a>Betrag der Rundung für Abschreibungsberechnungen
+# <a name="round-off-amount-for-depreciation-calculations"></a>Rundungsbetrag für Abschreibungsberechnungen
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel erläutert das Feld "Rundungsart Abschreibung", das Sie im Wertmodell und auf den Einstellungsseiten des Abschreibungsbuchs finden.
+Dieses Thema erläutert das Feld **Rundungsart Abschreibung**, das Sie im Wertmodell und auf den **Einstellungsseiten** des Abschreibungsbuchs finden.
 
 Rundungsart Abschreibungbeträge werden für jedes Buch festgelegt. Gerundete Abschreibungsbeträge werden im Anlagenabschreibungsprofil, das die zukünftige Abschreibung und den Wert der Anlage anzeigt, sowie in den Abschreibungsvorschlägen verwendet. Den niedrigsten Abschreibungsbetrag eingeben, der für dieses Buch zulässig ist. 
 

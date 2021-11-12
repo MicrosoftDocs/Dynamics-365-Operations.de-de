@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 90fcbdc5c9dd4301225952d885794bd4d03ef825fd5590896be13eacfad1f979
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfba2b8320399cc2eb3f2231e8a172d902633f16
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773295"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678858"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Einstieg in die Globale Bestandsbuchhaltung
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 Mit der Globalen Bestandsbuchhaltung können Sie mehrere Bestandsbuchhaltungen in den von Ihnen festgelegten Sachkonten der Globalen Bestandsbuchhaltung durchführen. Sie müssen jedes Sachkonto der Globalen Bestandsbuchhaltung mit einer *Konvention* verknüpfen. Eine Konvention ist eine Sammlung der folgenden Arten von Rechnungslegungsgrundsätzen:
 
@@ -60,9 +60,9 @@ Bevor Sie die Add-In-Funktionalität aktivieren können, müssen Sie die Microso
 1. Aktivieren Sie im Dialogfeld **Einrichten der Power Platform Umgebung** das Kontrollkästchen und wählen Sie dann **Einrichten**. In der Regel dauert das Einrichten zwischen 60 und 90 Minuten.
 1. Nachdem das Einrichten der Microsoft Power Platform-Umgebung abgeschlossen ist, wird auf der Seite der Name Ihrer Umgebung angezeigt. Außerdem wird im Abschnitt **Power Platform-Integration** die Aussage „Power Platform-Umgebung einrichten ist abgeschlossen.“ Für die Globale Bestandsbuchhaltung ist keine Dual-Write-Anwendung erforderlich.
 
-Weitere Informationen finden Sie unter [Einrichten nach Bereitstellen der Umgebung](../../fin-ops-core/dev-itpro/power-platform/overview.md#set-up-after-environment-deployment).
+Weitere Informationen finden Sie unter [Nach Bereitstellen der Umgebung aktivieren](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-### <a name="set-up-dataverse"></a>Festlegen von Dataverse
+### <a name="set-up-dataverse"></a>Dataverse einrichten
 
 Bevor Sie Dataverse festlegen, fügen Sie die Serviceprinzipien der Globalen Bestandsbuchhaltung zu Ihrem Mandant hinzu, indem Sie die folgenden Schritte ausführen.
 

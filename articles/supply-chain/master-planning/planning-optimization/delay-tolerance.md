@@ -10,17 +10,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cb03ccb208f19f540fefafd9964f74309736dc05
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ccf827983694eab2037c73aa3251846b051e66f1
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577479"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678566"
 ---
 # <a name="delay-tolerance-negative-days"></a>Verzögerungstoleranz (negative Tage)
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Die Verzögerungstoleranz-Funktionalität ermöglicht der Planungsoptimierung, den Wert **Negative Tage** zu berücksichtigen, der für Deckungsgruppen festgelegt ist. Sie wird verwendet, um die Verzögerungstoleranz zu verlängern, die während der Produktprogrammplanung angewendet wird. Auf diese Weise können Sie vermeiden, neue Vorräte zu erstellen, wenn der vorhandene Vorrat den Bedarf nach einer kurzen Verzögerung decken kann. Der Zweck der Funktionalität besteht darin, festzustellen, ob es sinnvoll ist, einen neuen Vorrat für einen bestimmten Bedarf zu erstellen.
 
