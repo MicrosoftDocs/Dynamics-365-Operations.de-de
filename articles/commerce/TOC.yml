@@ -2050,7 +2050,7 @@
               items:
                 - name: Framework konfigurieren
                   items:
-                    - name: Rahmen für die elektronische Berichterstellung konfigurieren
+                    - name: Framework für die elektronische Berichterstellung konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/commerce/toc.json
                     - name: ER-Vorlagen sichern und wiederherstellen
                       items:
@@ -2538,6 +2538,8 @@
                       href: e-commerce-extensibility/debugging-best-practices.md
             - name: Retail SDK
               items:
+                - name: Zu Commerce SDK migrieren
+                  href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
                 - name: Architektur von Retail SDK
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Buildpipeline für das unabhängige Verpackungs-SDK einrichten
@@ -2588,7 +2590,7 @@
                   href: dev-itpro/pos-handler.md
                 - name: Verpackungsinformationen zu POS-Erweiterungen anzeigen
                   href: dev-itpro/view-pos-extension-package-details.md
-                - name: Aufzeichnung und Regression Suite Automation Tool für Cloud POS testen
+                - name: Aufzeichnung und Regression Suite Automation für Cloud POS testen
                   href: dev-itpro/pos-rsat.md
                 - name: Benutzerdefinierte Felder dem POS-Summenbereich hinzufügen
                   href: dev-itpro/custom-field-pos-totals.md

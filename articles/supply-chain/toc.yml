@@ -713,8 +713,10 @@
                   href: cost-management/inventory-close.md
                 - name: Einstandswerte für verfügbaren Bestand anpassen
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Lagerbericht zum Bestandswert
+                - name: Lagerwertberichte
                   href: cost-management/inventory-value-report-storage.md
+                - name: Beispiele und Logik für Bestandswertberichte
+                  href: cost-management/inventory-value-report-examples.md
                 - name: Bestandsfälligkeitsbericht
                   href: cost-management/inventory-aging-report-storage.md
                 - name: Beispiele und Logik für Bestandsfälligkeitsberichte
@@ -1379,7 +1381,7 @@
               items:
                 - name: Framework konfigurieren
                   items:
-                    - name: Rahmen für die elektronische Berichterstellung konfigurieren
+                    - name: Framework für die elektronische Berichterstellung konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
                     - name: ER-Vorlagen sichern und wiederherstellen
                       items:
@@ -1673,6 +1675,8 @@
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Zeitplanung mit Ressourcenauswahl anhand der Fähigkeit
                   href: master-planning/planning-optimization/capability-based-scheduling.md
+                - name: Prioritätsbasierte Planung
+                  href: master-planning/planning-optimization/priority-based-planning.md
                 - name: Bestandsmarkierung mit Planungsoptimierung
                   href: master-planning/planning-optimization/marking.md
                 - name: Intercompany-Planung
@@ -1715,10 +1719,12 @@
                   href: master-planning/tasks/constrained-plan.md
                 - name: Materialplan für Co-Produkte erstellen
                   href: master-planning/tasks/create-material-plan-co-products.md
-                - name: Bestellvorschläge verwalten
+                - name: Auftragsvorschläge verwalten
                   href: master-planning/maintain-planned-orders.md
                 - name: Sicherheitslagerbestandserfüllung für Artikel
                   href: master-planning/safety-stock-replenishment.md
+                - name: 'Sicherheitsbestandserfassung verwenden, um die Mindestdeckung für Artikel zu aktualisieren'
+                  href: master-planning/safety-stock-journal.md
                 - name: Verzögerungen
                   href: master-planning/delays.md
                 - name: Abbrechen eines Masterplanungsvorgangs
@@ -2351,6 +2357,8 @@
               href: production-control/unified-job-ids.md
             - name: 'Prozessautomatisierungsflows aufrufen, um Qualitätsprüfungsaufträge zu erstellen'
               href: production-control/process-automation-quality-orders.md
+            - name: Integration mit Fertigungssteuerungssystemen von Drittanbietern
+              href: production-control/mes-integration.md
             - name: Einzelfertigung
               items:
                 - name: Produktionsmasterdaten verwalten
@@ -2649,6 +2657,8 @@
                   href: production-control/production-floor-execution-use.md
                 - name: Produktionsausführungsoberfläche entwerfen
                   href: production-control/production-floor-execution-styles.md
+                - name: Produktionsausführungsoberfläche anpassen
+                  href: production-control/production-floor-execution-customize.md
         - name: Rückvergütungsverwaltung
           items:
             - name: Übersicht über das Modul für Rückvergütungsverwaltung

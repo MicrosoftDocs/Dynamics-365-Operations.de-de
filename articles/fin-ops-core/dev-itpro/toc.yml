@@ -1172,6 +1172,8 @@
               items:
                 - name: Übersicht über Geschäftsereignisse
                   href: business-events/home-page.md
+                - name: Verwalten von Geschäftsereignisendpunkten
+                  href: business-events/managing-business-event-endpoints.md
                 - name: Anwendungs-Geschäftsereignisse
                   href: business-events/app-business-events.md
                 - name: Workflow-Geschäftsereignisse
@@ -1196,14 +1198,18 @@
                       href: business-events/how-to/how-to-flow.md
                     - name: Geschäftsereignisse und Azure Event Grid
                       href: business-events/how-to/how-to-eventgrid.md
-                    - name: Geschäftsereignisse und Azure Service-Bus
+                    - name: Geschäftsereignisse und Azure Service Bus
                       href: business-events/how-to/how-to-servicebus.md
+                    - name: Geschäftsereignisse und Azure Service Bus-Warteschlange
+                      href: business-events/how-to/how-to-servicebus-queue.md
                     - name: Geschäftsereignisse Workflowgenehmigungen
                       href: business-events/how-to/how-to-workflow.md
                     - name: Geschäftsereignisse und Microsoft Forms Pro
                       href: business-events/how-to/FormsPro.md
                     - name: Geschäftsereignisse und Azure Event Hubs
                       href: business-events/how-to/event-hub.md
+                    - name: Ereignisse in Dataverse abonnieren
+                      href: business-events/how-to/how-to-dataverse-events.md
                     - name: Geschäftsereignisse beim Finanzperiodenabschluss
                       href: business-events/how-to/period-close.md
             - name: Add-Ins
@@ -1654,8 +1660,6 @@
                   items:
                     - name: Eindeutiges Trennzeichen für den Kontenplan erstellen
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
-                    - name: Aktualisieren von Einzelbelegerfassungen und Währungsneubewertungen
-                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
                     - name: Datenmodell der Projektressourcenplanung
                       href: migration-upgrade/data-model-changes-resource-management.md
                     - name: Änderungen bei Workflow-Subsystem

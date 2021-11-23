@@ -708,48 +708,6 @@
               href: general-ledger/electronic-messaging-work-with-em.md
             - name: 'Einfaches EB-Exportformat aufrufen, um einen Excel-Bericht zu erstellen'
               href: general-ledger/electronic-messaging-example.md
-        - name: Ausgabenverwaltung
-          items:
-            - name: Übersicht über die Ausgabenverwaltung
-              href: /dynamics365/project-operations/prod-exp/expense-management
-            - name: Überarbeitete Ausgabenberichte
-              href: /dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew
-            - name: Planen der Ausgabenverwaltung
-              href: /dynamics365/project-operations/prod-exp/plan-expense-management
-            - name: Ausgabenverwaltungsparameter
-              href: /dynamics365/project-operations/prod-exp/Expense-Management-Parameters
-            - name: Mobiler Arbeitsbereich für Ausgabenverwaltung
-              href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace
-            - name: Workflows für die Ausgabenverwaltung einrichten
-              href: /dynamics365/project-operations/prod-exp/expense-workflows
-            - name: Spesenverwaltungsworkflow
-              href: /dynamics365/project-operations/prod-exp/expense-workflow
-            - name: Ausgabendelegierung verwalten
-              href: /dynamics365/project-operations/prod-exp/manage-expense-delegation
-            - name: Verarbeitung von Ausgabenbelegen
-              href: /dynamics365/project-operations/prod-exp/expense-receipt-processing
-            - name: Kreditkartenbuchungen importieren und verwalten
-              href: /dynamics365/project-operations/prod-exp/import-credit-card
-            - name: Verteilungen auf einer Spesenabrechnung
-              href: /dynamics365/project-operations/prod-exp/expense-report-distributions
-            - name: Intercompany-Ausgaben
-              href: /dynamics365/project-operations/prod-exp/intercompany-expense
-            - name: Ausgabenrichtlinien definieren
-              href: /dynamics365/project-operations/prod-exp/travel-expense-policies
-            - name: Anzeigen einer Spesenabrechnung
-              href: /dynamics365/project-operations/prod-exp/view-expense-report
-            - name: Buchen einer Spesenabrechnung
-              href: /dynamics365/project-operations/prod-exp/post-expense
-            - name: Spesenabrechnungen und mehrere Genehmiger
-              href: /dynamics365/project-operations/prod-exp/expense-report-multiple-approvers
-            - name: MwSt.-Rückerstattung in der Ausgabenverwaltung
-              href: /dynamics365/project-operations/prod-exp/VAT-expense-report
-            - name: Tagessatzregeln
-              href: /dynamics365/project-operations/prod-exp/per-diem
-            - name: Reiseanforderungen
-              href: /dynamics365/project-operations/prod-exp/travel-req
-            - name: Persönliche Spesen in einer Spesenabrechnung
-              href: /dynamics365/project-operations/prod-exp/personal-expenses
         - name: Anlagen
           items:
             - name: Startseite für Anlagen
@@ -1248,9 +1206,7 @@
               href: finance-insights/finance-insights-home-page.md
             - name: Einrichtung und Verwaltung
               items:
-                - name: Finance Insights für die öffentliche Vorschauversion konfigurieren
-                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
-                - name: Finance Insights für die private Vorschauversion konfigurieren
+                - name: Finance Insights konfigurieren
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Vorhersagen für Kundenzahlungen aktivieren
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1288,88 +1244,6 @@
                   href: finance-insights/payment-snapshots.md
             - name: Häufig gestellte Fragen zur Problembehandlung bei Finance Insights
               href: finance-insights/finance-insights-troubleshooting-faq.md
-        - name: Projektverwaltung und -buchhaltung
-          items:
-            - name: Übersicht über Projektverwaltung und Buchhaltung
-              href: /dynamics365/project-operations/prod-pma/overview-project-management-accounting
-            - name: Intercompany-Rechnungsstellung
-              href: /dynamics365/project-operations/prod-pma/intercompany-invoicing
-            - name: Intercompany-Projektrechnungsstellung konfigurieren
-              href: /dynamics365/project-operations/prod-pma/configure-intercompany-project-invoicing
-            - name: Standardkosten für Arbeit und Ausgaben konfigurieren
-              href: /dynamics365/project-operations/prod-pma/configure-standard-costs-labor-expenses
-            - name: Zahlungsaufbewahrungsbedingungen für Lieferanten erstellen und anwenden
-              href: /dynamics365/project-operations/prod-pma/create-and-apply-vendor-payment-retention-terms
-            - name: Kreditorenzahlungen des Typs „Zahlung bei Zahlungsempfang“ einrichten und verwenden
-              href: /dynamics365/project-operations/prod-pma/setup-manage-vendor-payments
-            - name: Projektkostenabgrenzung für Einkaufslieferungen
-              href: accounts-payable/project-cost-accrual-purchase-receipts.md
-            - name: Projektrechnungsstellung
-              href: accounts-payable/project-invoicing.md
-            - name: Projektverträge
-              href: /dynamics365/project-operations/prod-pma/project-contracts
-            - name: Erweiterte Verträge für Abrechnung nach Arbeitsstatus erstellen
-              href: /dynamics365/project-operations/prod-pma/project-create-advanced-contracts-for-billing-based-progress
-            - name: Projektplanungen und -budgets
-              href: /dynamics365/project-operations/prod-pma/project-forecasts-budgets
-            - name: Planzahlenmodelle für Projektbudgets erstellen
-              href: /dynamics365/project-operations/prod-pma/create-forecast-models-project-budgets
-            - name: Projektbudget zum Ende des Geschäftsjahres übertragen
-              href: /dynamics365/project-operations/prod-pma/process-project-budgets-for-fiscal-year-end
-            - name: Projektaufträge
-              href: /dynamics365/project-operations/prod-pma/project-sales-orders
-            - name: Bestellungen für ein Projekt
-              href: /dynamics365/project-operations/prod-pma/project-purchase-orders
-            - name: Projektangebote
-              href: /dynamics365/project-operations/prod-pma/project-quotations
-            - name: 'Ein Projektangebot bestätigen, aktualisieren und senden'
-              href: /dynamics365/project-operations/prod-pma/confirm-update-send-project-quotation
-            - name: Ein Angebot zu einem Projekt übertragen
-              href: /dynamics365/project-operations/prod-pma/transfer-quote-new-existing-project
-            - name: Projektressourcenzuordnung
-              items:
-                - name: Übersicht über Projektressourcenzuordnung
-                  href: /dynamics365/project-operations/prod-pma/project-resourcing
-                - name: Projektressourcen einrichten
-                  href: /dynamics365/project-operations/prod-pma/set-up-project-resources
-                - name: Ressourcenkompetenzen verwalten
-                  href: /dynamics365/project-operations/prod-pma/manage-resource-competencies
-                - name: Neues Projekt erstellen
-                  href: /dynamics365/project-operations/prod-pma/create-new-project
-                - name: Rollenbasierte Preisgestaltung einrichten
-                  href: /dynamics365/project-operations/prod-pma/set-up-role-based-pricing
-                - name: Projektteam erstellen
-                  href: /dynamics365/project-operations/prod-pma/create-project-team
-                - name: Ressourcenkapazität synchronisieren
-                  href: /dynamics365/project-operations/prod-pma/synchronize-resource-capacity
-                - name: Leistung der Projektressourcenplanung
-                  href: /dynamics365/project-operations/prod-pma/project-scheduling-performance
-                - name: Rollen in Vorlagen für Projektstrukturpläne einrichten
-                  href: /dynamics365/project-operations/prod-pma/set-up-roles-wbs-template
-                - name: Ressourcenerfüllung für geplante Ressourcen
-                  href: /dynamics365/project-operations/prod-pma/resource-fulfillment-planned-resources
-            - name: Artikel zu Bestellung aus Artikelbedarf empfangen
-              href: /dynamics365/project-operations/prod-pma/receive-items-purchase-order-item-requirement
-            - name: Projektstrukturpläne
-              items:
-                - name: Projektstrukturpläne – Übersicht
-                  href: /dynamics365/project-operations/prod-pma/work-breakdown-structures
-                - name: Microsoft Project Client-Integration
-                  href: /dynamics365/project-operations/prod-pma/project-integration
-                - name: Überblick über mobile Projektanwendungen
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview
-                - name: Mobiler Arbeitsbereich für Projektzeiterfassung
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace
-                - name: Mobile Projektarbeitszeitnachweis-App
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet
-                - name: Projektarbeitszeitnachweise auf einem mobilen Gerät
-                  href: /dynamics365/project-operations/prod-pma/Mobile-timesheets
-                - name: Benutzerdefinierte Felder für die mobile Projektarbeitszeitnachweis-App implementieren
-                  href: /dynamics365/project-operations/prod-pma/custom-fields-mobile
-            - name: Projektzuschüsse
-              href: /dynamics365/project-operations/prod-pma/project-grants
-            - name: Eine Projektvorkalkulation beseitigen
-              href: /dynamics365/project-operations/prod-pma/eliminate-project-estimate
         - name: Öffentlicher Sektor
           items:
             - name: Startseite für den öffentlichen Sektor
@@ -1804,6 +1678,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: NF-e-Parameter für steuerliche Einrichtung einrichten
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NF-e XML-Dateien als Anhänge verschieben
+                      href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
                     - name: NT2020.005 – Layout- und Validierungsaktualisierungen im elektronischen Steuerdokument (NF-e)
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – Digitale Zwischenverkaufsplattform für NF-e
@@ -2190,6 +2066,8 @@
                       href: localizations/tasks/create-submit-vat-report.md
                 - name: Buchungen zum Ausgleich anzeigen
                   href: localizations/emea-transactions-settlement-form.md
+                - name: Finanzielle Ursache
+                  href: localizations/emea-financial-reason.md
             - name: Finnland
               items:
                 - name: Finnland – Übersicht
@@ -2750,10 +2628,14 @@
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Verbesserung der Benutzerfreundlichkeit von Bankdaten
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
-                - name: Intrastat (Italien)
-                  href: localizations/emea-ita-intrastat.md
-                - name: Eingänge und Versendungen für Intrastat buchen
-                  href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                - name: Intrastat
+                  items:
+                    - name: Intrastat (Italien)
+                      href: localizations/emea-ita-intrastat.md
+                    - name: Eingänge und Versendungen für Intrastat buchen
+                      href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                    - name: Intrastat (IT) Dateiformat
+                      href: /dynamics/s-e/365business/dynamices365finance_itintrastatfile
                 - name: Sonstige Belastungen pro Kilogramm in einer Intrastat-Erklärung
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Absichtserklärungen – Fakturierung der üblichen Exporteure
@@ -3110,6 +2992,8 @@
                   href: localizations/emea-pol-returnable-packages.md
                 - name: Mehrwertsteuerberichte
                   href: localizations/emea-pol-sales-tax-reports.md
+                - name: Intrastat (Polen)
+                  href: localizations/emea-pol-intrastat.md
                 - name: Einrichten von Nummernkreisen nach Lager
                   href: localizations/emea-pol-number-sequence-warehouses.md
                 - name: Standardprotokolldatei
@@ -4375,11 +4259,13 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
                 - name: Relativer Pfad in Datenbindungen
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
+                - name: 'Ausdrücke entwerfen, um Anwendungsklassenmethoden aufzurufen'
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/design-expressions-app-class-er.md?toc=/dynamics365/finance/toc.json
             - name: ER-Lösungen in Finance einsetzen
               items:
                 - name: Framework konfigurieren
                   items:
-                    - name: Rahmen für die elektronische Berichterstellung konfigurieren
+                    - name: Framework für die elektronische Berichterstellung konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
                     - name: ER-Vorlagen sichern und wiederherstellen
                       items:
