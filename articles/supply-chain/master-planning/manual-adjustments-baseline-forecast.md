@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37d78e97a6c7f9152ab0b893a35a3ae70d5adabc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579639"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778032"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Manuelle Anpassungen an der Grundplanung
 
@@ -67,7 +67,7 @@ Auf der Seite **Bedarfsplanungsdetails** werden die folgenden Informationen in g
 
 **Hinweise:**
 
--   Wenn Sie **Auswahl des Prognosemodells bei Bedarfsplanungsdetails** über die Funktionsverwaltung aktivieren, können Sie die Prognosemodelle, die für die historische Prognose einbezogen werden sollen, auf der Seite **Bedarfsplanungsdetails** auswählen.
+-   Wenn Sie **Auswahl des Prognosemodells bei Bedarfsplanungsdetails** über die Funktionsverwaltung aktivieren, können Sie die Prognosemodelle, die für die historische Prognose einbezogen werden sollen, auf der Seite **Bedarfsplanungsdetails** auswählen. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
 -   Das Zuverlässigkeitsintervall, das im Abschnitt **Planung** der Seite angezeigt wird, stellt die Differenz zwischen der Obergrenze des Zuverlässigkeitsintervalls und der Untergrenze des Zuverlässigkeitsintervalls dar. Um die Werte für den oberen und unteren Grenzwert anzuzeigen, bewegen Sie die Maus über das Diagramm im Abschnitt **Historische(r) Bedarf und Planung, grafisch**.
 -   Wenn Sie den Microsoft Azure Machine Learning-Dienst der Bedarfsplanung verwenden, können Sie die Zuverlässigkeitsstufe angeben, die die generierte Planung haben soll. Eine Zuverlässigkeitsintervall besteht aus einem Wertebereich, der eine gute Einschätzung der Bedarfsplanung ermöglicht. Eine Zuverlässigkeitsstufe von 95 % bedeutet beispielsweise, dass die Bedarfsplanung mit einer Chance von 5 % aus dem Intervallbereich der Zuverlässigkeit fällt.
 

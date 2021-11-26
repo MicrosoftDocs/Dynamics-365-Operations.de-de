@@ -88,9 +88,9 @@ Die folgende Tabelle zeigt, welche Kundenaufträge die Benutzer in jeder Webroll
 
 | Auftrag | Administrator | Kundenvertreter für Kunde&nbsp;X | Autorisierter Benutzer: Jane | Autorisierter Benutzer: Sam | Nicht autorisierte Benutzer: May |
 |---|---|---|---|---|---|
-| Kunde&nbsp;X Besteller:&nbsp;Jane | Ja | Ja | Ja | Nr. | Nr. |
-| Kunde&nbsp;X Besteller:&nbsp;Sam | Ja | Ja | Nr. | Ja | Nr. |
-| Kunde&nbsp;Y Besteller:&nbsp;May | Ja | Nr. | Nr. | Nr. | Nr. |
+| Kunde&nbsp;X Besteller:&nbsp;Jane | Ja | Ja | Ja | Nein | Nein |
+| Kunde&nbsp;X Besteller:&nbsp;Sam | Ja | Ja | Nein | Ja | Nein |
+| Kunde&nbsp;Y Besteller:&nbsp;May | Ja | Nein | Nein | Nein | Nein |
 
 > [!NOTE]
 > Obwohl sowohl Sam als auch Jane Kontakte sind, die für Kunde X arbeiten, können sie nur die Bestellungen sehen, die sie selbst aufgegeben haben, und sonst nichts. Obwohl May eine Bestellung im System hat, kann sie diese Bestellung nicht im Kundenportal sehen, da sie eine nicht autorisierte Benutzerin ist. (Außerdem muss sie die Bestellung über einen anderen Kanal als das Kundenportal aufgegeben haben.)

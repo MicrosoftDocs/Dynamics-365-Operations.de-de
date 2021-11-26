@@ -2,7 +2,7 @@
 title: EB-Ausdrücke entwerfen, um Anwendungsklassenmethoden aufzurufen
 description: Dieses Thema enthält Informationen darüber, wie die vorhandene Anwendungslogik in Konfigurationen der elektronischen Berichterstellung (EB) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen aufgerufen werden.
 author: NickSelin
-ms.date: 12/12/2017
+ms.date: 11/02/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -12,149 +12,180 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 78e7596760c4707578e2458a93631b571a7bfec86b9c51d877502ba04ed843a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
+ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726284"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7751705"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>EB-Ausdrücke entwerfen, um Anwendungsklassenmethoden aufzurufen
 
 [!include [banner](../../includes/banner.md)]
 
-Dieser Leitfaden enthält Informationen darüber, wie die vorhandene Anwendungslogik in Konfigurationen der elektronischen Berichterstellung (EB) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen in EB-Ausdrücken aufgerufen werden. Werte von Argumenten zum Aufrufen von Klassen können dynamisch zur Laufzeit definiert werden: beispielsweise basierend auf Informationen im Analysedokument, um dessen Richtigkeit sicherzustellen. In diesem Handbuch erstellen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen, Litware, Inc. Dieses Verfahren wird für Benutzer mit der zugewiesenen Rolle des Systemadministrators oder elektronischer Berichterstellungsentwicklers erstellt. 
+Dieses Thema beschreibt, wie die vorhandene Anwendungslogik in Konfigurationen der [Elektronischen Berichterstellung (EB)](../general-electronic-reporting.md) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen in EB-Ausdrücken aufgerufen werden. Werte von Argumenten zum Aufrufen von Klassen können zur Runtime dynamisch definiert werden. Werte können beispielsweise auf Informationen im Analysedokument basieren, um deren Korrektheit sicherzustellen.
 
-Die Schritte können abgeschlossen werden, indem Sie einen beliebigen Dataset verwenden. Sie müssen auch folgende Datei herunterladen und lokal speichern: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
+In dem Beispiel in diesem Thema entwerfen Sie einen Prozess, der eingehender Bankauszüge für eine Anwendungsdatenaktualisierung analysiert. Sie erhalten die eingehenden Bankauszüge als Textdateien (.txt), die die Codes der internationalen Bankkontonummer (IBAN) enthalten. Als Teil des Importprozesses für Bankauszüge müssen Sie die Korrektheit des IBAN-Codes mithilfe der Logik überprüfen, die bereits verfügbar ist.
 
-Um diese Schritte auszuführen, müssen Sie zunächst die Schritte in der Prozedur „EB Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen.
+## <a name="prerequisites"></a>Voraussetzungen
 
-1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Sollten Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen.   
-    * Sie entwerfen einen Prozess für die Analyse von eingehenden Bankauszügen für eine Anwendungsdatenaktualisierung. Sie erhalten die eingehenden Bankauszüge als TXT-Dateien, die IBAN-Codes enthalten. Als Teil des Bankauszug-Importprozesses müssen Sie die Korrektheit dieser IBAN-Codes mithilfe der Logik überprüfen, die bereits verfügbar ist.   
+Die Prozeduren in diesem Thema sind für die Benutzer bestimmt, die die Rolle des **Systemadministrators** oder des **Entwicklers für elektronische Berichterstellung** haben.
+
+Die Prozeduren können abgeschlossen werden, indem Sie einen beliebigen Dataset verwenden.
+
+Um sie abzuschließen, müssen Sie auch folgende Datei herunterladen: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
+
+In diesem Thema erstellen Sie die erforderlichen EB-Konfigurationen für das Beispielunternehmen Litware, Inc. Bevor Sie daher die Prozeduren in diesem Thema abschließen können, müssen sie die folgenden Schritte abschließen.
+
+1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
+2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen**, dass der Konfigurationsanbieter für das Beispielunternehmen **Litware, Inc.** verfügbar und als „aktiv“ gekennzeichnet ist. Sollten Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in [Erstellen von Konfigurationsanbietern und Markieren als aktiv](er-configuration-provider-mark-it-active-2016-11.md) bearbeiten.
 
 ## <a name="import-a-new-er-model-configuration"></a>Neue EB-Modellkonfiguration importieren
-1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wählen Sie die Microsoft-Anbieterkachel aus.  
-2. Klicken Sie auf Repositorys.
-3. Klicken Sie auf "Filter anzeigen".
-4. Fügen Sie ein Filterfeld Typname ein. Geben Sie im Feld „Name“ den Wert „Ressourcen“ ein, wählen Sie dann den Filteroperator „enthält“ aus, und klicken Sie dann auf „Übernehmen“.
-5. Klicken Sie auf "Öffnen".
-6. Wählen Sie in der Struktur die Option "Zahlungsmodell" aus.
-    * Wenn die Schaltfläche „Importieren“ im Inforegister „Versionen“ nicht aktiviert ist, haben Sie die Version 1 der EB-Konfiguration „Zahlungsmodell“ bereits importiert. Sie können die übrigen Schritte in dieser Unteraufgabe überspringen.   
-7. Klicken Sie auf Import.
-8. Klicken Sie auf "Ja".
-9. Schließen Sie die Seite.
-10. Schließen Sie die Seite.
+
+1. Auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationsanbieter** wählen Sie die Kachel für den Konfigurationsanbieter **Microsoft** aus.
+2. Wählen Sie **Repositorys** aus.
+3. Wählen Sie auf der Seite **Lokalisierungs-Repositorys** **Filter anzeigen**.
+4. Um den globalen Repository-Datensatz auszuwählen, fügen Sie ein Filterfeld **Name** ein.
+5. Geben Sie im Feld **Name** **Global** ein. Wählen Sie dann den Filteroperator **Enthält** aus.
+6. Wählen Sie **Anwenden** aus.
+7. Wählen Sie **[Öffnen](../er-download-configurations-global-repo.md#open-configurations-repository)**, um die Liste der EB-Konfigurationen im ausgewählten Repository zu überprüfen.
+8. Wählen Sie auf der Seite **Konfigurationsrepository** in der Konfigurationsstruktur **Zahlungsmodell** aus.
+9. Wählen Sie im Inforegister **Versionen**, wenn die Schaltfläche **Importieren** verfügbar ist, **Ja** aus.
+
+    Wenn die Schaltfläche **Importieren** nicht verfügbar ist, haben Sie die ausgewählte Version der EB-Konfiguration **Zahlungsmodell** bereits importiert.
+
+10. Schließen Sie die Seite **Konfigurationsrepository** und schließen Sie dann die Seite **Lokalisierungsrepositorys**.
 
 ## <a name="add-a-new-er-format-configuration"></a>Neues ER-Modellformat hinzufügen
-1. Klicken Sie auf "Berichterstellungskonfigurationen".
-    * Fügen Sie ein neues EB-Format hinzu, um eingehende Bankauszüge im TXT-Format zu analysieren.  
-2. Wählen Sie in der Struktur die Option "Zahlungsmodell" aus.
-3. Klicken Sie auf „Konfiguration erstellen”, um das Dropdown-Menü zu öffnen.
-4. Wählen Sie im neuen Feld geben Sie "Format auf Grundlage Datenmodell PaymentModel" ein.
-5. Geben Sie im Feld „Name” die Bezeichnung „Bankauszug-Importformat (Beispiel)” ein.
-    * Bankauszug-Importformat (Beispiel)  
-6. Wählen Sie die Option „Ja” im Feld „Unterstützt Datenimport” aus.
-7. Klicken Sie auf Konfiguration erstellen.
 
-## <a name="design-the-er-format-configuration---format"></a>Die Formatkonfiguration für die elektronische Berichterstellung (EB) entwerfen – Format
-1. Klicken Sie auf Designer.
-    * Das entworfene Format stellt die erwartete Struktur der externen Datei im TXT-Format dar.  
-2. Klicken Sie auf „Stamm hinzufügen”, um das Dialogmenü zu öffnen.
-3. Wählen Sie in der Struktur 'Text\Sequence'..
-4. Geben Sie im Feld Name "Root" ein.
-    * Stamm  
-5. Wählen Sie im Feld "Sonderzeichen" "Neue Zeile - Windows (CR LF)".
-    * Die Option „Neue Postion – Windows (CR LF)“ wurde im Feld „Sonderzeichen“ ausgewählt. Basierend auf dieser Einstellung wird jede Position in der Analysedatei als ein separater Datensatz behandelt.  
-6. Klicken Sie auf "OK".
-7. Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".
-8. Wählen Sie in der Struktur 'Text\Sequence'..
-9. Geben Sie im Feld „Name” die Bezeichnung „Zeilen” ein.
-    * Zeilen  
-10. Wählen Sie im Vielfältigkeitsgebiet wählen Sie "viele" aus.
-    * Die Option „viele“ wurde im Feld „Multiplizität“ ausgewählt. Basierend auf dieser Einstellung wird erwartet, dass mindestens eine Position in der Analysedatei dargestellt wird.  
-11. Klicken Sie auf "OK".
-12. Wählen Sie in der Struktur „Stamm\Zeilen” aus.
-13. Klicken Sie auf „Nummernkreis hinzufügen”.
-14. Geben Sie im Feld „Name” die Bezeichnung „Felder” ein.
-    * Felder  
-15. Wählen Sie im Vielfältigkeitsgebiet wählen Sie "Genau eines" aus.
-16. Klicken Sie auf "OK".
-17. Wählen Sie in der Struktur „Stamm\Zeilen\Felder”.
-18. Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".
-19. Wählen Sie in der Struktur 'Text\String' aus.
-20. Geben Sie im Feld "Name" "IBAN" ein.
-    * IBAN  
-21. Klicken Sie auf "OK".
-    * Es wurde so konfiguriert, dass jede Position in der Analysedatei den einzigen IBAN-Code enthält.  
-22. Klicken Sie auf "Speichern".
+Fügen Sie ein neues EB-Format hinzu, um eingehende Bankauszüge im TXT-Format zu analysieren.
 
-## <a name="design-the-er-format-configuration--mapping-to-data-model"></a>Die EB-Formatkonfiguration entwerfen – Zuordnung zu Datenmodell
-1. Klicken Sie auf „Format zu Modell zuordnen”.
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld „Definition” die Bezeichnung „BankToCustomerDebitCreditNotificationInitiation” ein.
-    * BankToCustomerDebitCreditNotificationInitiation  
-4. ResolveChanges die Definition.
-5. Geben Sie im Feld „Name” die Bezeichnung „Zuordnung zu Datenmodell” ein.
-    * Zu Datenmodell zuordnen  
-6. Klicken Sie auf "Speichern".
-7. Klicken Sie auf Designer.
-8. Wählen Sie in der Struktur "Dynamics 365 for Operations\Klasse" aus.
-9. Klicken Sie auf "Stamm hinzufügen".
-    * Fügen Sie eine neue Datenquelle hinzu, um die vorhandene Anwendungslogik für die IBAN-Codeprüfung aufzurufen.  
-10. Geben Sie im Feld „Name” die Bezeichnung „Codes überprüfen” ein.
-    * Code prüfen  
-11. Geben Sie im Feld „Klasse” den Wert „ISO7064” ein.
-    * ISO7064  
-12. Klicken Sie auf "OK".
-13. Erweitern Sie in der Struktur Format.
-14. Erweitern Sie in der Struktur „Format\Stamm: Nummernkreis(Stamm)”.
-15. Wählen Sie in der Struktur „Format\Stamm: Nummernkreis(Stamm)\Zeilen: Nummernkreis 1..* (Zeilen)” aus.
-16. Klicken Sie auf Binden.
-17. Erweitern Sie in der Struktur „Format\Stamm: Nummernkreis(Stamm)\Zeilen: Nummernkreis 1..* (Zeilen)”.
-18. Erweitern Sie in der Struktur „Format\Stamm: Nummernkreis(Stamm)\Zeilen: Nummernkreis 1..* (Zeilen)Felder: Nummernkreis 1..1 (Felder)”.
-19. Wählen Sie in der Struktur „Format\Stamm: Nummernkreis(Stamm)\Zeilen: Nummernkreis 1..* (Zeilen)Felder: Nummernkreis 1..1 (Felder)\IBAN: Zeichenfolge(IBAN)” aus.
-20. Erweitern Sie in der Struktur „Zahlungen = format.Root.Rows”.
-21. In der Struktur erweitern Sie „Zahlungen = format.Root.Rows\Kreditorenkonto (CreditorAccount)”.
-22. In der Struktur erweitern Sie „Zahlungen = format.Root.Rows\Kreditorenkonto (CreditorAccount)\Identifizierung”.
-23. In der Struktur wählen Sie „Zahlungen = format.Root.Rows\Kreditorenkonto (CreditorAccount)\Identifizierung\IBAN” aus.
-24. Klicken Sie auf Binden.
-25. Klicken Sie auf die Registerkarte „Überprüfungen”.
-26. Klicken Sie auf "Neu".
-    * Fügen Sie eine neue Überprüfungsregel hinzu, die in der Analysedatei für jede Position einen Fehler anzeigt, die ungültigen IBAN-Code enthält.  
-27. Klicken Sie auf "Bedingung bearbeiten".
-28. Erweitern Sie in der Struktur „check_codes”.
-29. Wählen Sie in der Struktur „check_codes\verifyMOD1271_36” aus.
-30. Klicken Sie auf Datenquelle hinzufügen.
-31. Im Feld „Formel” geben Sie „check_codes.verifyMOD1271_36(” ein.
-    * check_codes.verifyMOD1271_36(  
-32. Erweitern Sie in der Struktur Format.
-33. Erweitern Sie in der Struktur „Format\Stamm: Nummernkreis(Stamm)”.
-34. Erweitern Sie in der Struktur „Format\Stamm: Nummernkreis(Stamm)\Zeilen: Nummernkreis 1..* (Zeilen)”.
-35. Erweitern Sie in der Struktur „Format\Stamm: Nummernkreis(Stamm)\Zeilen: Nummernkreis 1..* (Zeilen)Felder: Nummernkreis 1..1 (Felder)”.
-36. Wählen Sie in der Struktur „Format\Stamm: Nummernkreis(Stamm)\Zeilen: Nummernkreis 1..* (Zeilen)Felder: Nummernkreis 1..1 (Felder)\IBAN: Zeichenfolge(IBAN)” aus.
-37. Klicken Sie auf Datenquelle hinzufügen.
-38. Im Feld „Formel” geben Sie „check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)” ein.
-    * check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)  
-39. Klicken Sie auf "Speichern".
-40. Schließen Sie die Seite.
-    * Die Überprüfungsbedingung wurde so konfiguriert, dass sie FALSE für jeden ungültigen IBAN-Code zurückgibt, indem die vorhandene Methode „verifyMOD1271_36“ von der Anwendungsklasse „ISO7064“ aufgerufen wird. Beachten Sie, dass der Wert des IBAN-Codes dynamisch zur Laufzeit als Argument der aufrufenden Methode basierend auf dem Inhalt der analysierenden TXT-Datei definiert wird.   
-41. Klicken Sie auf „Nachricht bearbeiten”.
-42. Geben Sie im Feld „Formel” die Zeichenfolge „CONCATENATE("ungültiger IBAN-Code wurde gefunden: ", format.Root.Rows.Fields.IBAN)” ein.
-    * CONCATENATE("Ungültiger IBAN-Code wurde gefunden: ", format.Root.Rows.Fields.IBAN)  
-43. Klicken Sie auf "Speichern".
-44. Schließen Sie die Seite.
-45. Klicken Sie auf "Speichern".
-46. Schließen Sie die Seite.
+1. Wählen Sie auf der Seite **Lokalisierungskonfigurationen** die Kachel **Berichterstellungskonfigurationen** aus.
+2. Wählen Sie auf der Seite **Konfigurationen** in der Konfigurationsstruktur im linken Bereich **Zahlungsmodell** azus.
+3. Wählen Sie **Konfiguration erstellen**. 
+4. Führen Sie im Drop-Down-Dialogfeld die folgenden Schritte aus:
+
+    1. Im **neuen** Feld geben Sie **Format auf Grundlage Datenmodell PaymentModel** ein.
+    2. Geben Sie im Feld **Name** die Bezeichnung **Bankauszug-Importformat (Beispiel)** ein.
+    3. Wählen Sie im Feld **Unterstützt Datenimport** **Ja** aus.
+    4. Wählen Sie **Konfiguration erstellen** aus, um die Konfiguration fertigzustellen.
+
+## <a name="design-the-er-format-configuration--format"></a>Die Formatkonfiguration für die elektronische Berichterstellung (EB) entwerfen – Format
+
+Erstellen sie ein EB-Format, dass die erwartete Struktur der externen Datei im TXT-Format darstellt.
+
+1. Wählen Sie in der Formatkonfiguration **Bankauszug-Importformat (Beispiel)**, die Sie hinzugefügt haben, **Designer** aus.
+2. Wählen Sie auf der Seite **Formatdesigner** in der Formatstrukturdarstellung im linken Bereich **Stamm hinzufügen** aus.
+3. Führen Sie im angezeigten Dialogfeld die folgenden Schritte aus:
+
+    1. Wählen Sie in der Strukturdarstellung **Text\\Reihenfolge** aus, um die Formatkomponente **Reihenfolge** hinzuzufügen.
+    2. Geben Sie im Feld **Name** die Bezeichnung **Stamm** ein.
+    3. Wählen Sie im Feld **Sonderzeichen** **Neue Zeile – Windows (CR LF)** aus. Basierend auf dieser Einstellung wird jede Position in der Analysedatei als ein separater Datensatz behandelt.
+    4. Wählen Sie **OK** aus.
+
+4. Wählen Sie **Hinzufügen** aus.
+5. Führen Sie im angezeigten Dialogfeld die folgenden Schritte aus:
+
+    1. Wählen Sie in der Struktur **Text\\Reihenfolge** aus.
+    2. Geben Sie im Feld **Name** **Zeile** ein.
+    3. Wählen Sie im **Vielfältigkeitsgebiet** **viele** aus. Basierend auf dieser Einstellung wird erwartet, dass in der Analysedatei mindestens eine Position dargestellt wird.
+    4. Wählen Sie **OK** aus.
+
+6. Wählen Sie in der Struktur **Stamm\\Zeilen** und dann **Reihenfolge hinzufügen** aus.
+7. Führen Sie im angezeigten Dialogfeld die folgenden Schritte aus:
+
+    1. Geben Sie im Feld **Name** die Bezeichnung **Felder** ein.
+    2. Wählen Sie im Feld **Multiplizität** wählen Sie **Genau eines** aus.
+    3. Wählen Sie **OK** aus.
+
+8. Wählen Sie in der Struktur **Stamm\\Stamm\\Felder** und dann **Hinzufügen** aus.
+9. Führen Sie im angezeigten Dialogfeld die folgenden Schritte aus:
+
+    1. Wählen Sie in der Struktur **Text\\String** aus.
+    2. Geben Sie im Feld **Name** **IBAN** ein.
+    3. Wählen Sie **OK** aus.
+
+10. Wählen Sie **Speichern** aus.
+
+Die Konfiguration ist jetzt eingerichtet, sodass jede Position in der Analysedatei nur den IBAN-Code enthält.
+
+![Wählen Sie auf der Formatdesignerseite in der Formatkonfiguration Bankauszug-Importformat (Beispiel) aus.](../media/design-expressions-app-class-er-01.png)
+
+## <a name="design-the-er-format-configuration--mapping-to-a-data-model"></a>Die EB-Formatkonfiguration entwerfen – Zuordnung zu einem Datenmodell
+
+Erstellen Sie eine EB-Formatzuordnung, die Informationen aus der Analysedatei verwendet, um ein Datenmodell auszufüllen.
+
+1. Wählen Sie auf der Seite **Formatdesigner** im Aktivitätsbereich **Format zu Modell zuordnen** aus.
+2. Wählen Sie auf der Seite **Modell für Datenquellenzuordnung** im Aktivitätsbereich **Neu** aus.
+3. Wählen Sie im Feld **Definition** die Bezeichnung **BankToCustomerDebitCreditNotificationInitiation** aus.
+4. Geben Sie im Feld **Name** **Zuordnung zu Datenmodell** ein.
+5. Wählen Sie **Speichern** aus.
+6. Wählen Sie **Designer** aus.
+7. Wählen Sie auf der Seite **Modellzuordnungsdesigner** in der Struktur **Datenquellentypen** **Dynamics 365 for Operations\\Klasse** aus.
+8. Wählen Sie im Abschnitt **Datenquellen** **Stamm hinzufügen** aus, um eine Datenquelle hinzuzufügen, die die vorhandene Anwendungslogik für die IBAN-Code-Prüfung aufruft.
+9. Führen Sie im angezeigten Dialogfeld die folgenden Schritte aus:
+
+    1. Geben Sie im Feld **Name** **Prüfung\_Codes** ein.
+    2. Geben Sie im Feld **Klasse** den Wert **ISO7064** ein oder wählen Sie ihn aus.
+    3. Wählen Sie **OK** aus.
+
+10. Führen Sie in der Struktur **Datenquellentypen** folgende Schritte aus:
+
+    1. Erweitern Sie die Datenquelle **Format** aus.
+    2. Erweitern Sie **Format\\Stamm: Reihenfolge(Stamm)**.
+    3. Erweitern Sie **Format\\Stamm: Reihenfolge(Stamm)\\Zeilen: Reihenfolge 1..\* (Zeilen)**.
+    4. Erweitern Sie **Format\\Stamm: Reihenfolge(Stamm)\\Zeilen: Reihenfolge 1..\* (Zeilen)\\Felder: Reihenfolge 1..1 (Felder)**.
+
+11. Führen Sie in der Struktur **Datenmodell** folgende Schritte aus:
+
+    1. Erweitern Sie das Feld **Zahlungen** des Datenmodells.
+    2. Erweitern Sie **Zahlungen\\Kreditorenkonto(CreditorAccount)**.
+    3. Erweitern Sie **Zahlungen\\Kreditorenkonto(CreditorAccount)\\Kennung**.
+    4. Erweitern Sie **Zahlungen\\Kreditorenkonto(CreditorAccount)\\Kennung\\IBAN**.
+
+12. Führen Sie diese Schritte aus, um Komponenten des konfigurierten Formats an Datenmodellfelder zu binden:
+
+    1. Wählen Sie **Format\\Stamm: Reihenfolge(Stamm)\\Zeilen: Reihenfolge 1..\* (Zeilen)** aus.
+    2. Wählen Sie **Zahlungen** aus.
+    3. Wählen Sie **Bindung** aus. Basierend auf dieser Einstellung wird jede Position in der Analysedatei als eine einzige Zahlung behandelt.
+    4. Wählen Sie **Format\\Stamm: Reihenfolge(Stamm)\\Zeilen: Reihenfolge 1..\* (Zeilen)\\Felder: Reihenfolge 1..1 (Felder)\\IBAN: Zeichenfolge(IBAN)** aus.
+    5. Wählen Sie **Zahlungen\\Kreditorenkonto(CreditorAccount)\\Kennung\\IBAN** aus.
+    6. Wählen Sie **Bindung** aus. Basierend auf dieser Einstellung wird das Feld **IBAN** des Datenmodells wird mit dem Wert aus der Analysedatei gefüllt.
+
+    ![Bindung von Formatkomponenten an Datenmodellfelder auf der Seite „Modellzuordnungsdesigner“.](../media/design-expressions-app-class-er-02.png)
+
+13. Führen Sie auf der Registerkarte **Überprüfungen** diese Schritte aus, um eine Regel für die [Überprüfung](../general-electronic-reporting-formula-designer.md#Validation) hinzufügen, die eine Fehlermeldung für jede Zeile in der Analysedatei anzeigt, die einen ungültigen IBAN-Code enthält:
+
+    1. Wählen Sie **Neu** und dann **Bedingung bearbeiten** aus.
+    2. Erweitern Sie auf der Seite **Formeldesigner** in der Struktur **Datenquelle** die Datenquelle **Prüfen\_Codes** aus, die für die Anwendungsklasse **ISO7064**, um die verfügbaren Methoden dieser Klasse anzuzeigen.
+    3. Wählen Sie **Prüfen\_Codes\\verifyMOD1271\_36**.
+    4. Wählen Sie **Datenquelle hinzufügen** aus:
+    5. Geben Sie im Feld **Formel** den folgenden [Ausdruck](../general-electronic-reporting-formula-designer.md#Binding) ein: **Check\_codes.verifyMOD1271\_36(format.Root.Rows.Fields.IBAN)** ein.
+    6. Klicken Sie auf **Speichern** und schließen Sie die Seite.
+    7. Wählen Sie **Meldung bearbeiten** aus.
+    8. Geben Sie auf der Seite **Formeldesigner** im Feld **Formel** **CONCATENATE("Invalid IBAN code has been found:&nbsp;", format.Root.Rows.Fields.IBAN)** ein.
+    9. Klicken Sie auf **Speichern** und schließen Sie die Seite.
+
+    Aufgrund dieser Einstellungen gibt die Überprüfungsbedingung *[FALSCH](../er-formula-supported-data-types-primitive.md#boolean)* für jeden ungültigen IBAN-Code zurück, indem die vorhandene Methode **verifyMOD1271\_36** von der Anwendungsklasse **ISO7064** aufgerufen wird. Beachten Sie, dass der Wert des IBAN-Codes dynamisch zur Runtime als Argument der aufrufenden Methode basierend auf dem Inhalt der analysierenden Textdatei definiert wird.
+
+    ![Überprüfungsregel auf der Seite „Modellzuordnungsdesigner“.](../media/design-expressions-app-class-er-03.png)
+
+14. Wählen Sie **Speichern** aus.
+15. Schließen Sie die Seite **Modellzuordnungsdesigner** und schließen Sie dann die Seite **Modell für Datenquellenzuordnung**.
 
 ## <a name="run-the-format-mapping"></a>Die Formatzuordnung ausführen
-Zu Textwecken führen Sie die Formatzuordnung mithilfe der Datei SampleIncomingMessage.txt aus, die Sie zuvor heruntergeladen haben. Die generierte Ausgabe umfasst Daten, die aus der ausgewählten TXT-Datei importiert werden und im benutzerdefinierte Datenmodell während des tatsächlichen Imports aufgefüllt werden.   
-1. Klicken Sie auf "Ausführen".
-    * Klicken Sie auf „Durchsuchen”, und navigieren Sie zur Datei SampleIncomingMessage.txt, die Sie bereits zuvor heruntergeladen haben.  
-2. Klicken Sie auf "OK".
-    * Überprüfen Sie die Ausgabe im XML-Format, das die Daten darstellt, die aus der ausgewählten Datei importiert wurden und in das Datenmodell übertragen wurden. Beachten Sie, dass nur 3 Positionen der importierten TXT-Datei verarbeitet wurden. Der IBAN-Code in Position 4, der ungültig ist, wurde übersprungen, und eine Fehlermeldung wird im Infolog bereitgestellt.  
 
+Führen Sie zu Textzwecken die Formatzuordnung mithilfe der Datei SampleIncomingMessage.txt aus, die Sie zuvor heruntergeladen haben. Die generierte Ausgabe enthält Daten, die aus der ausgewählten Textdatei importiert werden und im benutzerdefinierte Datenmodell während des tatsächlichen Imports übertragen werden.
 
+1. Wählen Sie auf der Seite **Modell für Datenquellenzuordnung** **Ausführen** aus.
+2. Wählen Sie auf der Seite **Elektronische Berichtsparameter** **Durchsuchen** aus, blättern Sie zur Datei **SampleIncomingMessage.txt**, die Sie heruntergeladen haben, und wählen Sie sie aus.
+3. Wählen Sie **OK** aus.
+4. Beachten Sie, dass die Seite **Modell für Datenquellenzuordnung** eine Fehlermeldung über einen ungültigen IBAN-Code anzeigt.
+
+    ![Ergebnis der Ausführung der Formatzuordnung auf der Seite „Modell für Datenquellenzuordnung“.](../media/design-expressions-app-class-er-04.png)
+
+5. Überprüfen Sie die Ausgabe im XML-Format, das die Daten darstellt, die aus der ausgewählten Datei importiert wurden und in das Datenmodell übertragen wurden. Beachten Sie, dass nur drei Zeilen der importierten Textdatei fehlerfrei verarbeitet wurden. Der IBAN-Code von Position 4 ist ungültig und wurde übersprungen.
+
+    ![XML-Ausgabe.](../media/design-expressions-app-class-er-05.png)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

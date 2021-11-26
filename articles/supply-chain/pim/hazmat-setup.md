@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ac6a9b4316fa260a86c124f86d04645625e9b808
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577431"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778008"
 ---
 # <a name="set-up-hazardous-materials"></a>Gefahrengüter einrichten
 
@@ -27,7 +27,7 @@ Um die Gefahrstofffunktionalität nutzen zu können, müssen Sie zunächst die D
 
 ## <a name="turn-on-the-hazardous-materials-feature-for-your-system"></a>Aktivieren Sie die Gefahrstofffunktion für Ihr System
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren oder zu deaktivieren. Hier wird die Funktion als aufgeführt:
 
 - **Modul:** *Produktinformationsverwaltung*
 - **Funktionsname:** *Produktinformationen zu Gefahrstoffen und Versanddokumentation*
@@ -176,7 +176,7 @@ Um Gefahrstoffsparten einzurichten, wechseln Sie zu **Produktinformationsverwalt
 |---|---|
 | Division | Geben Sie einen Code ein, der als Referenznummer für die Sparte verwendet werden soll. |
 | Beschreibung | Geben Sie eine Beschreibung der Sparte ein. |
-| Klasse  | Suchen Sie nach der Klasse, zu der die Sparte gehört, und weisen Sie sie zu. |
+| Klasse | Suchen Sie nach der Klasse, zu der die Sparte gehört, und weisen Sie sie zu. |
 
 ## <a name="hazardous-material-compatibility-groups"></a><a name="compatibility-groups"></a>Gefahrstoffkompatibilitätsgruppen
 
@@ -201,7 +201,7 @@ Jede Kompatibilitätsgruppe legt eine Liste von Klassen und Sparten von Gefahrst
 
 | Feld | Beschreibung |
 |---|---|
-| Klasse  | Wählen Sie eine Gefahrstoffklasse aus, die mit allen anderen Klassen in der Gruppe kompatibel ist. |
+| Klasse | Wählen Sie eine Gefahrstoffklasse aus, die mit allen anderen Klassen in der Gruppe kompatibel ist. |
 | Division | Wählen Sie eine Gefahrstoffsparte aus, die zur ausgewählten Klasse gehört. |
 
 ## <a name="hazardous-material-specification-values"></a>Werte der Gefahrstoffspezifikation

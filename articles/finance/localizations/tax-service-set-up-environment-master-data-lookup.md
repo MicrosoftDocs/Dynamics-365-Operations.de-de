@@ -1,8 +1,8 @@
 ---
-title: Eine Umgebung für die Masterdatensuche einrichten
-description: In diesem Thema wird erläutert, wie Sie Ihre Umgebung für die Verwendung der Masterdaten-Suchfunktion für die Steuerberechnung einrichten.
+title: Masterdatensuche für die Steuerberechnungskonfiguration aktivieren
+description: In diesem Thema wird erläutert, wie Sie Masterdaten-Suchfunktion für die Steuerberechnung einrichten und aktivieren.
 author: kai-cloud
-ms.date: 10/26/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 901f8bcb0220355866952b68e92bc2dd906bb430
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: dafeac01aaff62cbbd5ce6ecb0af0ef111f513b2
+ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700403"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "7749509"
 ---
-# <a name="set-up-an-environment-for-master-data-lookup"></a>Eine Umgebung für die Masterdatensuche einrichten
+# <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Masterdatensuche für die Steuerberechnungskonfiguration aktivieren 
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Ihre Umgebung für die Verwendung der Masterdaten-Suchfunktion für die Steuerberechnung einrichten.
+In diesem Thema wird erläutert, wie Sie Masterdaten-Suchfunktion für die Steuerberechnung einrichten und aktivieren. Es steht eine Dropdown-Liste zur Auswahl von Werten in der Steuerberechnungskonfiguration für Felder wie **Kreditorenkonto**, **Artikelcode** und **Lieferbedingungen** zur Verfügung. Diese Werte stammen von der verbundenen Microsoft Dynamics 365 Finance-Umgebung mit der Microsoft Dataverse-Datenquelle.
 
 1. Richten Sie die Microsoft Power Platform-Integration in Microsoft Dynamics Lifecycle Services (LCS) ein. Weitere Informationen finden Sie unter [Integration von Microsoft Power Platform – Übersicht über Add-Ins](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Nachdem Sie diesen Schritt abgeschlossen haben, wird der Name einer Microsoft Power Platform-Umgebung im Abschnitt **Power Platform-Integration** angezeigt.
 2. Gehen Sie zum [Microsoft Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments), und wählen Sie den Umgebungsnamen aus. Die Umgebungs-URL wird bereitgestellt.

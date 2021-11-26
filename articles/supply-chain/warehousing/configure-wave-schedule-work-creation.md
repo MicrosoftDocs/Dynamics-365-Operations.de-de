@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 358f5a87cdb42f0ff646948da8d38475cf49e3f2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5e9dc9b7cf33f9393f408d8f8a458e9b0ea47639
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577911"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778376"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Planen Sie der Arbeitserstellung während der Welle
 
@@ -33,7 +33,7 @@ Wenn die Funktionalität aktiviert ist, werden geplante Arbeiten automatisch ers
 
 Um die in diesem Thema beschriebenen Funktionen nutzen zu können, müssen sie für Ihr System aktiviert sein. Benutzen Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die folgenden Funktionen in der folgenden Reihenfolge zu aktivieren:
 
-1. **Organisationsweite Arbeitssperre** – Erforderlich für die manuelle und automatische Konfiguration der geplanten Arbeitserstellung.
+1. **Organisationsweite Arbeitssperre** – Erforderlich für die manuelle und automatische Konfiguration der geplanten Arbeitserstellung. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
 1. **Arbeitserstellung planen** – Erforderlich für die manuelle und automatische Konfiguration der geplanten Arbeitserstellung.
 1. **Organisationsweite Wellenmethode „Arbeitserstellung planen“**  – Erforderlich für die manuelle und automatische Konfiguration der geplanten Arbeitserstellung. Sie benötigen diese Funktion nicht, wenn Sie nur die manuelle Konfiguration verwenden.
 
@@ -65,7 +65,7 @@ Wenn Sie die [Funktion *Organisationsweite Wellenmethode „Arbeitserstellung pl
 
 Um eine parallele asynchrone Methode zum Erstellen von Lagerarbeiten nutzen zu können, muss Ihr Wellenprozess im Stapel ausgeführt werden. So richten Sie dies ein:
 
-1. Wechseln Sie zu  **Lagerortverwaltung \>  Einstellungen \> Lagerortverwaltungsparameter**.
+1. Wechseln Sie zu  **Lagerortverwaltung\> Einstellungen \> Lagerortverwaltungsparameter**.
 1. Setzen Sie auf der Registerkarte **Allgemein** die Option **Wellen in einem Stapel verarbeiten** auf *Ja*. Optional können Sie auch eine dedizierte **Stapelverarbeitungsgruppe Wellenverarbeitung** auswählen, um zu verhindern, dass Ihre Stapelwarteschlangenverarbeitung gleichzeitig mit anderen Prozessen ausgeführt wird.
 1. Stellen Sie die Zeit von **Auf Sperre warten (ms)** ein, die gilt, wenn das System mehrere Wellen gleichzeitig verarbeitet. Für die meisten größeren Wellenprozesse empfehlen wir einen Wert von *60000*.
 

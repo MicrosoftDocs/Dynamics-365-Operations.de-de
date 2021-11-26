@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 0fce566bea6340b4016e559b1f5f1764a6881e28
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 9b57c6165e5de4a115818a135ed1455e3b05e3f0
+ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675392"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7733462"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Einrichten von Parametern eines EB-Formats pro juristischer Person
 
@@ -226,15 +226,6 @@ Sie können diesen Export/Import-Ansatz auch verwenden, um EB-Format-zugehörige
 Wenn Sie anwendungsspezifische Parameter für eine Version eines ER-Formats konfigurieren und dann eine spätere Version desselben Formats in die aktuelle Finance-Instanz importieren, werden die vorhandenen anwendungsspezifischen Parameter nicht auf die importierte Version angewendet, es sei denn, Sie verwenden die **Anwendungsspezifische Parameter aus früheren Versionen von ER-Formaten verwenden**-Funktion. Weitere Informationen finden Sie im Abschnitt [Vorhandene Parameter wiederverwenden](#reuse-existing-parameters) weiter unten in diesem Thema.
 
 Wenn Sie eine Datei für den Import auswählen, wird die Struktur der anwendungsspezifischen Parameter in dieser Datei mit der Struktur der entsprechenden Datenquellen des Typs **Suche** im ER-Format verglichen, die für den Import ausgewählt wird. Standardmäßig ist der Import nur abgeschlossen, wenn die Struktur jedes anwendungsspezifischen Parameters mit der Struktur der entsprechenden Datenquelle im ER-Format übereinstimmt, die für den Import ausgewählt ist. Wenn die Strukturen nicht übereinstimmen, informiert Sie eine Warnmeldung, dass der Import nicht abgeschlossen werden kann. Wenn Sie den Import erzwingen, werden die vorhandenen anwendungsspezifischen Parameter für das ausgewählte ER-Format bereinigt, und Sie müssen Sie noch einmal neu einrichten.
-
-Ab Dynamics 365 Finance Version 10.0.23 können Sie das Standardverhalten ändern und das Erhalten einer Warnmeldung vermeiden, indem Sie die **Anwendungsspezifische ER-Parameter beim Importieren ausrichten**-Funktion im **Funktionsverwaltung**-Arbeitsbereich aktivieren. Wenn diese Funktion aktiviert ist, sofern die Struktur der anwendungsspezifischen Parameter, die Sie importieren, sich von der Struktur der entsprechenden Datenquellen im Ziel ER-Format unterscheiden, das für den Import ausgewählt wird, ist der Import in folgenden Fällen erfolgreich:
-
-- Die Struktur des Ziel-ER-Formats wurde geändert, indem allen vorhandenen Datenquellen des Typs **Suche** neue Bedingungsspalten hinzugefügt wurden. Wenn der Import abgeschlossen ist, werden die anwendungsspezifischen Parameter aktualisiert. In allen importierten Datensätzen anwendungsspezifischer Parameter werden die Werte in jeder hinzugefügten Bedingungsspalte mit dem Standardwert für den [Datentyp](er-formula-supported-data-types-primitive.md) dieser Spalte initialisiert.
-- Die Struktur des Ziel-ER-Formats wurde geändert, indem einige Bedingungsspalten von allen vorhandenen Datenquellen des Typs **Suche** entfernt wurden. Wenn der Import abgeschlossen ist, werden die anwendungsspezifischen Parameter aktualisiert. In allen importierten Datensätzen anwendungsspezifischer Parameter werden die Werte in jeder entfernten Bedingungsspalte gelöscht.
-- Die Struktur des Ziel-ER-Formats wurde geändert, indem neue Datenquellen des Typs **Suche** hinzugefügt wurden. Wenn der Import abgeschlossen ist, werden hinzugefügte Suchen den anwendungsspezifischen Parametern angefügt.
-- Die Struktur des Ziel-ER-Formats wurde geändert, indem einige der vorhandenen Datenquellen des Typs **Suche** entfernt wurden. Wenn der Import abgeschlossen ist, werden alle Artefakte, die sich auf die Datenquellen des **Suche**-Typs beziehen, die aus dem Ziel-ER-Format entfernt wurden, aus den importierten anwendungsspezifischen Parametern gelöscht.
-
-Nach Abschluss des Imports wird zusätzlich zu den eben beschriebenen Änderungen der Zustand der importierten anwendungsspezifischen Parameter auf **In Bearbeitung** geändert. Eine Warnmeldung weist Sie darauf hin, dass die automatisch angepassten anwendungsspezifischen Parameter manuell bearbeitet werden müssen.
 
 ### <a name="reuse-existing-parameters"></a>Vorhandene Parameter wiederverwenden
 

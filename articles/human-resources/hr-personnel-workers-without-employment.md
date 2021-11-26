@@ -1,8 +1,8 @@
 ---
 title: Arbeitskräfte ohne Beschäftigung
-description: Arbeitskräfte, die nicht in der Zukunft, aktiv oder in der Vergangenheit bei Ihrer Organisation beschäftigt waren, erscheinen im Formular Arbeitskräfte ohne Beschäftigung.
-author: andreabichsel
-ms.date: 04/06/2021
+description: Arbeitskräfte, die nicht in der Zukunft, aktiv oder in der Vergangenheit bei Ihrer Organisation beschäftigt waren, erscheinen auf der Seite „Arbeitskräfte ohne Beschäftigung“.
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: ''
 ms.prod: ''
 ms.technology: ''
@@ -10,23 +10,23 @@ ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelMa
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2021-04-06
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 45841c35780960f524cc232dad16f94dbc8ec1c2df75fa2a5c2520e5522d4e3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d282c0fac00d6bc410717dd156aef9ffce352c6d
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724963"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771289"
 ---
 # <a name="workers-without-employment"></a>Arbeitskräfte ohne Beschäftigung
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Arbeitskräfte, die keine zukünftige, aktive oder historische Beschäftigung bei Ihrer Organisation haben, erscheinen im Formular **Arbeiter ohne Beschäftigung**. Arbeitskräfte mit diesem Status können erscheinen, wenn Sie Arbeitskräfte ohne Datensatz importieren, oder wenn Sie die Beschäftigung einer Arbeitskraft über **Arbeiter > Beschäftigungshistorie** löschen.
+Arbeitskräfte, die keine zukünftige, aktive oder historische Beschäftigung bei Ihrer Organisation haben, erscheinen auf der Seite **Arbeiter ohne Beschäftigung**. Arbeitskräfte mit diesem Typ können erscheinen, wenn Sie Arbeitskräfte importieren, die keinen Beschäftigungsdatensatz haben, oder wenn Sie die Beschäftigung einer Arbeitskraft über **Arbeiter \> Beschäftigungshistorie löschen**.
 
-Standardmäßig ist das Formular **Worker ohne Beschäftigung** für die folgenden Rollen verfügbar:
+Standardmäßig ist die Seite **Arbeitskraft ohne Beschäftigung** für die folgenden Rollen verfügbar:
 
 - Personalassistent
 - Personalmanager

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 259ed49b9bdfb70ea357a7d20ea7ae8b141978cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576951"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777739"
 ---
 # <a name="configure-job-card-for-devices"></a>Einzelvorgangsliste für Geräte konfigurieren
 
@@ -34,19 +34,19 @@ Einige der in diesem Thema beschriebenen Einstellungen müssen auf Ihrem System 
 
 Um diese Funktion verfügbar zu machen, aktivieren Sie die folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (um):
 
-1. Das Kennzeichen für Fertigmeldung wurde zum Einzelvorgangslistengerät hinzugefügt.
+1. Kennzeichen für die Meldung als fertig zum Einzelvorgangslistengerät hinzugefügt (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
 1. Aktivieren Sie die automatische Generierung der Kennzeichennummer, wenn die Berichtserstellung im Einzelvorgangskartengerät abgeschlossen wurde
 
 ### <a name="print-label"></a>Etikett drucken
 
 Um diese Funktion verfügbar zu machen, aktivieren Sie die folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (um):
 
-1. Das Kennzeichen für Fertigmeldung wurde zum Einzelvorgangslistengerät hinzugefügt.
+1. Kennzeichen für die Meldung als fertig zum Einzelvorgangslistengerät hinzugefügt (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
 1. Beschriftung vom Einzelvorgangs-Kartengerät aus drucken
 
 ### <a name="allow-locking-of-touch-screen"></a>Sperren des Touchscreens zulassen
 
-Um diese Funktion verfügbar zu machen, aktivieren Sie die folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Wenn Sie es nutzen möchten, überprüfen Sie, ob die folgende Funktion in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiviert ist:
 
 - Funktion zum Sperren von Jobkartengerät und Jobkartenterminal, damit sie saniert werden können
 

@@ -170,7 +170,7 @@ Wählen Sie auf der Seite **Berechnungsparameter** **Überstunden** als Profil-S
 
 | Erfassungs-Spezifikation | Profilspezifikationstyp | Herstellkostenkalkulation   | Einstellung | Kostenpflichtig         | Einstellung |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Arbeitszeit       | Überstunden                   | Standardzeit | Ja | Entlohnte Zeit     | Nr.  |
+| Arbeitszeit       | Überstunden                   | Standardzeit | Ja | Entlohnte Zeit     | Nein  |
 |                    |                            | Entlohnte Zeit      | Ja | Entlohnte Überstundenzeit | Ja |
 
 Nachdem Sie die Berechnungsparameter anpassen, werden folgende Lohnelement generiert.

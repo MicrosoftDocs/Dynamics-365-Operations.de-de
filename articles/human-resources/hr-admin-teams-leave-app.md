@@ -1,8 +1,8 @@
 ---
 title: Human Resources-App in Teams
 description: Dieses Thema enthält Informationen zur Microsoft Dynamics 365 Human Resources-App in Microsoft Teams.
-author: andreabichsel
-ms.date: 02/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f3b717cf2fb8663ed8e4981981d563672c9e645c4f9b592ee1896cfef4236396
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e44b9fa40971710d8316c055c4d2ac51f9ab266
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772716"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771505"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-App in Teams
 
@@ -106,7 +106,7 @@ Die folgenden Artikel sind für zukünftige Versionen vorgesehen:
 | --- | --- |
 | Der Saldo ist falsch, wenn arbeitsfreie Zeit für ein zukünftiges Datum eingereicht wird. | Es ist noch keine Planungsfunktion verfügbar. Der Saldo wird für das aktuelle Datum angezeigt. |
 | Eine **Wird überprüft**-Anforderung kann nicht abgebrochen werden. | Diese Funktion wird derzeit nicht unterstützt und wird in einer zukünftigen Version hinzugefügt. |
-| Die Saldoinformationen werden ab heute berechnet. | Das System zeigt derzeit keine Salden ab dem Abgrenzungszeitraum an, auch wenn dies in den Urlaub- und Abwesenheitsparameter konfiguriert ist. |
+| Die Saldoinformationen werden ab heute berechnet. | Das System zeigt derzeit keine Salden ab dem Abgrenzungszeitraum an, auch wenn dies auf der Seite **Urlaub- und Abwesenheitsparameter** konfiguriert ist. |
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
@@ -118,7 +118,7 @@ Wenn ein Benutzer Sie kontaktiert, weil er sich nicht bei der App anmelden kann,
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Fehler beim Genehmigen von Urlaubsanträgen in der Human Resources-App in Teams
 
-Wenn ein Benutzer einen Fehler erhält, während er versucht, Abwesenheitsanträge in der App Teams zu genehmigen, versuchen Sie die folgenden Schritte zur Fehlerbehebung:
+Wenn ein Benutzer einen Fehler erhält, während er versucht, Abwesenheitsanträge in der Teams App zu genehmigen, versuchen Sie die folgenden Schritte zur Fehlerbehebung:
 
 1. Stellen Sie sicher, dass das Teamkonto dasselbe ist, das sie für den Zugriff auf die Personalverwaltung verwenden.
 
@@ -130,7 +130,7 @@ Wenn ein Benutzer einen Fehler erhält, während er versucht, Abwesenheitsanträ
 
 2. Stellen Sie sicher, dass die Benutzer auf der Registerkarte **Chats** mit denselben Anmeldeinformationen angemeldet sind, die sie für die Genehmigung von Urlaubsanträgen verwenden. Verwenden Sie die Nachrichten „Abmelden“ und dann „Anmelden“, um sich mit den richtigen Anmeldeinformationen anzumelden.
 
-3. Wenn das Problem weiterhin besteht, überprüfen Sie als Systemadministrator den Status des Batchauftrags für das System Business Events. Wenn es sich in einer Warte- oder Ausführungsphase befindet, schauen Sie in ein paar Minuten noch einmal nach. Wenn der Status unverändert bleibt, protokollieren Sie ein Support-Ticket, damit unser Team das Problem beheben kann.
+3. Wenn das Problem weiterhin besteht, überprüfen Sie als Systemadministrator den Status des Batchauftrags für das **Geschäftsereignissesystem**. Wenn es sich in einer **Warte-** oder **Ausführungsphase** befindet, schauen Sie in ein paar Minuten wieder nach. Wenn der Status unverändert bleibt, protokollieren Sie ein Support-Ticket, sodass unser Team helfen kann, das Problem zu beheben.
 
 ## <a name="privacy-notice"></a>Datenschutzhinweis
 
@@ -146,7 +146,7 @@ Wechseln Sie zum [Microsoft Teams Admin Center](https://admin.teams.microsoft.co
 
 ### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure Event Grid und Azure Cosmos DB
 
-Bei Verwendung der Dynamics 365 Human Resources-App in Microsoft Teams fließen möglicherweise bestimmte Kundendaten außerhalb der geografischen Region, in der der Human Resources-Dienst Ihres Mandanten bereitgestellt wird.
+Bei Verwendung der Dynamics 365 Human Resources-App in Microsoft Teams fließen möglicherweise bestimmte Kundendaten außerhalb der geografischen Region, in welcher der Human Resources-Dienst Ihres Mandanten bereitgestellt wird.
 
 Dynamics 365 Human Resources überträgt die Urlaubsantrags- und Workflow-Aufgabendetails des Mitarbeiters an Microsoft Azure Event Grid und Microsoft Teams. Diese Daten können bis zu 24 Stunden in Microsoft Azure Event Grid gespeichert werden und werden in den USA verarbeitet, werden während des Transports und als Daten in Ruhe verschlüsselt und werden von Microsoft oder seinen untergeordneten verarbeitenden Betrieben nicht für Schulungen oder Serviceverbesserungen verwendet. Um zu verstehen, wo Ihre Daten in Teams gespeichert sind, lesen Sie bitte: [Speicherort von Daten in Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
 

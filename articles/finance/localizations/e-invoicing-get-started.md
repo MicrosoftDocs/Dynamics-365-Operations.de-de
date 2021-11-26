@@ -2,7 +2,7 @@
 title: Erste Schritte mit der elektronischen Rechnungsstellung
 description: Dieses Thema enthält Informationen, die Ihnen den Einstieg in die elektronische Rechnungsstellung in Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management erleichtern.
 author: gionoder
-ms.date: 08/17/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: ebef9cf97f7a91e0a2fd45f5e0e0fc620070b42a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700378"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779693"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Erste Schritte mit der elektronischen Rechnungsstellung
 
@@ -57,7 +57,12 @@ Bevor Sie die Vorgehensweisen in diesem Thema abschließen, müssen die folgende
 
 Je nach Land oder Region benötigt die elektronische Rechnungsstellungsfunktion möglicherweise eine spezielle Konfiguration. 
 
-Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „Erste Schritte“, die für Ihr Land oder Ihre Region verfügbar ist.
+> [!NOTE]
+> Wenn Sie die Funktion für die elektronische Rechnungsstellung für Finnland aktivieren, werden anwendungsspezifische Parameter in Suchen nicht unterstützt. Um dieses Problem zu umgehen, überprüfen Sie im Modul **Elektronische Berichterstellung** die Konfigurationen für die Verkaufsrechnungs- und Projektrechnungsformate. Richten Sie das berechnete Feld manuell für das **$PaymentMethodSubstitution**-Mapping ein, und binden Sie dann dieses Feld an das **EpiPaymentMeansCode**-Feld aus den Verkaufsrechnungs- und Projektrechnungsformaten.
+>
+> Wenn Sie die Funktion für die elektronische Rechnungsstellung für Italien aktivieren, werden anwendungsspezifische Parameter in Suchen nicht unterstützt. Um dieses Problem zu umgehen, richten Sie im Modul **Elektronische Berichterstellung** manuell das berechnete Feld für das **$NaturaReverseCharge**-Mapping ein.
+>
+> Informationen zu den spezifischen Schritten, die mit anderen Orten verknüpft sind, finden Sie in der Dokumentation „Erste Schritte“, die für Ihr Land oder Ihre Region verfügbar ist.
 
 ## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Importieren von Modellzuordnungskonfigurationen für elektronische Berichterstellung
 
@@ -241,6 +246,14 @@ Informationen zu den spezifischen Schritten finden Sie in der Dokumentation „E
 
 3. Wählen Sie im Raster eine Rechnung und anschließend **Abfragen** \> **Übermittlungsdetails** aus.
 
+## <a name="download-an-electronic-document-file"></a>Eine elektronische Dokumentendatei herunterladen
+
+1. Navigieren Sie zu **Organisationsverwaltung** \> **Periodisch** \> **Elektronische Dokumente** \> **Übermittlungsprotokoll für elektronische Dokumente**.
+2. Wählen Sie im Feld **Dokumenttyp** die Tabelle aus, die die Rechnungen enthält.
+3. Wählen Sie ein Dokument im Raster aus und wählen Sie dann **Elektronisches Dokument** \> **Datei herunterladen**. Zum Download wird ein Archiv vorgeschlagen, das die elektronische Dokumentenakte enthält.
+
+> [!NOTE]
+> Bevor Sie Dateien herunterladen können, muss die Option **Ergebnis exportieren** für die entsprechende Aktion in der Funktion der elektronischen Rechnungsstellung in RCS aktiviert sein.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

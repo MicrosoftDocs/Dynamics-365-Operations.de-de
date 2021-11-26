@@ -34,7 +34,7 @@ Diese Aufzählung bietet einen Optionssatz für Ja/Nein-Eigenschaften, die auch 
 | --- | --- | --- |
 | 200000000 | Leer | Es wurde kein Wert ausgewählt. |
 | 200000001 | Ja | Ja. |
-| 200000002 | Nr. | Nr. |
+| 200000002 | Nein | Nein |
 
 ## <a name="see-also"></a>Siehe auch
 

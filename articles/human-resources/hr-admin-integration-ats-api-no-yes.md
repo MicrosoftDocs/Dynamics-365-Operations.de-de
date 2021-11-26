@@ -34,7 +34,7 @@ Diese Aufzählung bietet einen Optionssatz für typische boolesche Eigenschaften
 
 | Wert | Etikett | Beschreibung |
 | --- | --- | --- |
-| 200000000 | Nr. | Nr. |
+| 200000000 | Nein | Nein |
 | 200000001 | Ja | Ja. |
 
 ## <a name="see-also"></a>Siehe auch

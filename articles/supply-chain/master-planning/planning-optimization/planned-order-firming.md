@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 966a878a7e5b0a92d6d53e67bea19c50274087a4416980859175b12c6fdfbcdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764835"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778520"
 ---
 # <a name="firm-planned-orders"></a>Fest geplante Aufträge
 
@@ -39,7 +39,7 @@ Die meisten Funktionen für geplante Aufträge sind in allen Standardinstallatio
 
 Die Parallelisierung der Firmung hilft, den Umwandlungsprozess zu beschleunigen, indem er über mehrere Threads parallelisiert wird. Diese Vorgehensweise kann sinnvoll sein, wenn viele geplante Aufträge umgewandelt werden.
 
-Um diese Funktion in Ihrem System verfügbar zu machen, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), und schalten Sie die Funktion *Parallele Umwandlung geplanter Aufträge* ein.
+Um diese Funktion in Ihrem System verfügbar zu machen, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), und schalten Sie die Funktion *Parallele Umwandlung geplanter Aufträge* ein. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Ermöglicht das Umwandeln geplanter Aufträge mit Filterung
 
@@ -51,7 +51,7 @@ Um diese Funktion in Ihrem System verfügbar zu machen, gehen Sie zu [Funktionsv
 
 Mit der automatischen Fixierung können Sie geplanter Aufträge als Teil der Produktprogrammplanung während des Fixierungszeitfensters fixieren. Die automatische Umwandlung wird immer für die in Supply Chain Management eingebaute Planungs-Engine unterstützt. Um sie jedoch auch mit der Planungsoptimierung zu verwenden, müssen Sie die Funktion einschalten.
 
-Um diese Funktion in Ihrem System verfügbar zu machen, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Automatische Umwandlung für Planungsoptimierung* ein.
+Um diese Funktion in Ihrem System verfügbar zu machen, gehen Sie zu [Funktionsverwaltung](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) und schalten Sie die Funktion *Automatische Umwandlung für Planungsoptimierung* ein. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
 
 ## <a name="manually-firm-planned-orders"></a>Geplante Aufträge manuell umwandeln
 

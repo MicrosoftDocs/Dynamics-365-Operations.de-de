@@ -201,7 +201,7 @@ Die Einrichtung in diesem Abschnitt erfolgt nach juristischer Person. Sie müsse
 3. Definieren Sie auf der Registerkarte **Berechnung** die erwartete Rundungsregel für die juristische Person. Weitere Informationen über die Rundungslogik finden Sie unter [Steuerberechnungs-Rundungsregeln](https://go.microsoft.com/fwlink/?linkid=2166988).
 4. Definieren Sie auf der Registerkarte **Fehlerbehandlung** die erwartete Fehlerbehandlungsmethode für die juristische Person. Es stehen drei Optionen zur Verfügung:
 
-    - Nr.
+    - Nein
     - Achtung
     - Fehler
 

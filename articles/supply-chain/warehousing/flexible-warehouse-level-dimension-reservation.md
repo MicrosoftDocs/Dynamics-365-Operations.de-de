@@ -421,7 +421,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nicht zutreffend</td>
 </tr>
 <tr>
-<td>Nr.</td>
+<td>Nein</td>
 <td>
 <ol>
 <li>Wählen Sie das Menüelement <strong>Lagerplatz überschreiben</strong> in der Warehouse Management Mobile App aus, wenn Sie mit der Entnahmearbeit beginnen.</li>
@@ -719,7 +719,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 </tr>
 <tr>
 <td>Eine Arbeitsausnahme vom Typ <strong>Kurzentnahme</strong> wird eingerichtet, wenn <strong>Artikelneuzuteilung</strong> = <strong>Manuell</strong>, <strong>Bestandsregulierung</strong> = <strong>Ja</strong> und <strong>Reservierungen entfernen</strong> = <strong>Nein</strong> ist. Zusätzlich wird die Option <strong>Manuelle Artikelneuzuordnung zulassen</strong> für die Arbeitskraft aktiviert.</td>
-<td>Nr.</td>
+<td>Nein</td>
 <td>
 <ol>
 <li>Wählen Sie das Menüelement <strong>Entnahme mit unzureichender Menge</strong> in der Warehouse Management Mobile App aus, wenn Sie die Entnahmearbeit durchführen.</li>
@@ -732,7 +732,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 </tr>
 <tr>
 <td>Eine Arbeitsausnahme vom Typ <strong>Kurzentnahme</strong> wird eingerichtet, wenn <strong>Artikelneuzuteilung</strong> = <strong>Manuell</strong>, <strong>Bestandsregulierung</strong> = <strong>Ja</strong> und <strong>Reservierungen entfernen</strong> = <strong>Ja</strong> ist. Zusätzlich wird die Option <strong>Manuelle Artikelneuzuordnung zulassen</strong> für die Arbeitskraft aktiviert.</td>
-<td>Nr.</td>
+<td>Nein</td>
 <td>
 <ol>
 <li>Wählen Sie das Menüelement <strong>Entnahme mit unzureichender Menge</strong> in der Warehouse Management Mobile App aus, wenn Sie die Entnahmearbeit durchführen.</li>

@@ -2,7 +2,7 @@
 title: Problembehandlung beim Einrichten von Finance Insights
 description: In diesem Thema werden Probleme aufgelistet, die auftreten können, wenn Sie die Funktionen von Finance Insights verwenden. Außerdem wird erläutert, wie Sie diese Probleme beheben können.
 author: panolte
-ms.date: 08/20/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7ff42ffc334147c1a4c6b6349c86580df7f1955b
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512889"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752616"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Problembehandlung beim Einrichten von Finance Insights
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema werden Probleme aufgelistet, die auftreten können, wenn Sie die Funktionen von Finance Insights verwenden. Außerdem wird erläutert, wie Sie diese Probleme beheben können.
 
@@ -53,6 +54,12 @@ Führen Sie diese Schritte im [Power Platform Admin-Center](https://admin.powerp
 
 1. Wenn Sie eine Vorschauversion von Finance Insights verwenden, entfernen Sie das DI-Projekt, das der Vorlage **Ergebnisse der Kundenzahlungserkenntnisse (CDS zu Fin und Ops)** zugeordnet ist.
 2. Führen Sie die Schritte unter [Datenintegratorprojekt erstellen](create-data-integrate-project.md) aus. Verwenden Sie die Vorlage **Ergebnisse der Customer Payment Insights (CDS für Fin and Ops 10.0.17 und höher)** verwenden.
+
+## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>Symptom: Warum erhalte ich die folgende Fehlermeldung, wenn ich versuche, AI Builder über die Links auf der Einrichtungsseite für Vorhersagen für Kundenzahlungen zu öffnen: „Entschuldigung, die Verbindung wurde unterbrochen“?
+
+### <a name="resolution"></a>Lösung
+
+Dynamics 365 Finance Benutzer müssen ein Microsoft Power Apps Benutzerkonto für die Umgebung haben, und dieses Benutzerkonto muss die Rolle Systemanpasser haben. Der Microsoft Power Apps Systemadministrator kann das Benutzerkonto erstellen und die Rolle zuweisen. Dann können Sie zu <https://make.preview.powerapps.com/> gehen, sich mit diesem Benutzerkonto anmelden und es erneut mit den Links versuchen.
 
 ## <a name="symptom-why-doesnt-the-cash-forecast-tab-in-the-cash-flow-forecast-workspace-show-any-data"></a>Symptom: Warum zeigt die Registerkarte „Bargeldplanung“ im Arbeitsbereich „Cashflow-Planungen“ keine Daten an?
 

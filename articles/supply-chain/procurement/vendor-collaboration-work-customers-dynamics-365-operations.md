@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 024bbaad45f320b8c82b20a52ced05322371e337
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9ad7f116f979d571a5e34eee67beb7218a271522
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575386"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777593"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Kreditorenzusammenarbeit mit Debitoren
 
@@ -102,7 +102,7 @@ Personen, die im öffentlichen Sektor arbeiten, können offene und abgelaufene A
 
     Wenn Sie eingeladen wurden, ein Angebot zu unterbreiten, können Sie die gleiche Angebotsanforderung auf der Seite **Neue Angebotseinladungen** finden. Manchmal möchten Sie vielleicht auf eine offene Angebotsanforderung hin ein Angebot unterbreiten, aber Sie sind nicht zum bieten eingeladen worden. In diesem Fall könnten Sie möglicherweise sich selbst einladen, vorausgesetzt der Debitor hat die Selbsteinladung für die Angebotsanforderungsanfrage aktiviert.
 
-    Erhöhen Sie den Zugriff auf den Link **Veröffentlichte Ausschreibungen öffnen**, indem Sie die Funktion **Link „Veröffentlichte Ausschreibungen öffnen“ als Kachel anzeigen** einschalten. Diese Funktion wandelt den Link in eine Kachel um und verschiebt ihn an einen prominenten Lagerplatz, sodass er leicht zu finden ist.
+    Erhöhen Sie den Zugriff auf den Link **Veröffentlichte Ausschreibungen öffnen**, indem Sie die Funktion **Link „Veröffentlichte Ausschreibungen öffnen“ als Kachel anzeigen** einschalten. Diese Funktion wandelt den Link in eine Kachel um und verschiebt ihn an einen prominenten Lagerplatz, sodass er leicht zu finden ist. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
 
 - Wählen Sie den Link **Geschlossene veröffentlichte Angebotsanforderungen** aus, um eine Liste geschlossener Angebotsanforderungen anzuzeigen, die für die Öffentlichkeit verfügbar sind. Eine geschlossene Angebotsanforderung ist eine Angebotsanforderung, die abgelaufen ist. Sie können das Ablaufdatum und -uhrzeit im Kopf der Angebotsanforderung finden.
 

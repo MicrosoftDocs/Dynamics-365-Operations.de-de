@@ -101,7 +101,7 @@ Die Entwicklung von POS-Erweiterungen mit ModernPos.sln, CloudPOs.sln, POS.Exten
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Ab dieser Version in wird das **Commerce-Scheduler-Parameter**-Formular in der Dynamics 365-Zentralverwaltung das Feld **Vollständiges Intervall für die Datensatzgenerierung in Tagen** veraltet sein. Ab dieser Version wird das Feld auch visuell entfernt, sodass der Wert nicht bearbeitet werden kann. Dies bleibt als Wert **0** erhalten. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. |
+| **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Dynamics 365 Commerce |
 | **Bereitstellungsoption**              | Alle|
 | **Status**                         | Veraltet. Verwenden Sie dieses Feld nicht und ändern Sie den Wert darin nicht.|

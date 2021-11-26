@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 503ba8ae95119f3ce9533f81cdd16c34cf3a9223
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574544"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752831"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Gerät zum Ausführen der Produktionsausführungsoberfläche einrichten
 
@@ -28,9 +28,9 @@ Die Produktionsausführungsschnittstelle wird für jedes Gerät in der Produktio
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Stellen Sie die Konfiguration und Filter für ein bestimmtes Gerät ein
 
-Um die Konfigurations- und Auftragsfilter für ein Gerät festzulegen, melden Sie sich bei der Seite **Ausführung in der Produktion** mit einem Konto an, das eine Sicherheitsrolle hat, die die Aufgabe *Zeitüberwachung pflegen* enthält. Unter den sofort einsatzbereiten Sicherheitsrollen hat nur der *Werkstattleiter* diese Aufgabe. Dann folgen Sie diesen Schritten.
+Um die Konfigurations- und Auftragsfilter für ein Gerät festzulegen, melden Sie sich bei der Seite **Produktionsumgebungsausführung** mit einem Konto an, das eine Sicherheitsrolle hat, die die Aufgabe *Zeitkontrolle verwalten* enthält. Unter den sofort einsatzbereiten Sicherheitsrollen hat nur der *Werkstattleiter* diese Aufgabe. Dann folgen Sie diesen Schritten.
 
-1. Wechseln Sie zu dem Gerät, das Sie einrichten möchten, und melden Sie sich bei Microsoft Dynamics 365 Supply Chain Management als Werkstattleiter an. (Verwenden Sie ein Konto, das die Aufgabe *Zeitüberwachung pflegen* enthält.)
+1. Wechseln Sie zu dem Gerät, das Sie einrichten möchten, und melden Sie sich bei Microsoft Dynamics 365 Supply Chain Management als Werkstattleiter an. (Verwenden Sie ein Konto, das die Aufgabe *Zeitkontrolle verwalten* enthält.)
 1. Stellen Sie sicher, dass eine Konfiguration für das Gerät verfügbar ist, das Sie einrichten. Wenn noch keine Konfiguration vorhanden ist, wird eine Standardkonfiguration bereitgestellt. Weitere Informationen zum Einrichten einer Konfiguration finden Sie unter [Konfigurieren Sie die Produktionsausführungsschnittstelle](production-floor-execution-configure.md).
 1. Gehen Sie zu **Produktionskontrolle \> Fertigungsausführung \> Ausführung in der Produktion**.
 

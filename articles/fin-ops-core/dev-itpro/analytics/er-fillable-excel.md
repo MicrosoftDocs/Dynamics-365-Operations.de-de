@@ -2,7 +2,7 @@
 title: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 description: Dieses Thema enthält Informationen zum Entwerfen eines Formats für die elektronische Berichterstellung (EB), um eine Excel-Vorlage auszufüllen und ausgehende Dokumente im Excel-Format zu generieren.
 author: NickSelin
-ms.date: 09/14/2021
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488137"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731637"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
 
@@ -85,6 +85,8 @@ Auf der Registerkarte **Zuordnung** des EB-Vorgangs-Designers können Sie die Ei
 
 Die Komponente **Bereich** gibt einen Excel-Bereich an, der von dieser EB-Komponente gesteuert werden muss. Der Name des Bereichs ist in der Eigenschaft **Excel-Bereich** dieser Komponente definiert.
 
+### <a name="replication"></a>Wiederholung
+
 Die Eigenschaft **Replikationsrichtung** gibt an, ob und wie der Bereich in einem generierten Dokument wiederholt wird:
 
 - Wenn die Eigenschaft **Replikationsrichtung** auf **Keine Replikation** festgelegt ist, wird der entsprechende Excel-Bereich nicht im generierten Dokument wiederholt.
@@ -92,6 +94,8 @@ Die Eigenschaft **Replikationsrichtung** gibt an, ob und wie der Bereich in eine
 - Wenn die Eigenschaft **Replikationsrichtung** auf **Horizontal** festgelegt ist, wird der entsprechende Excel-Bereich im generierten Dokument wiederholt. Jeder replizierte Bereich wird in einer Excel-Vorlage rechts neben dem ursprünglichen Bereich eingefügt. Die Anzahl der Wiederholungen wird durch die Anzahl der Datensätze in einer Datenquelle des Typs **Datensatzliste** definiert, der an diese EB-Komponente gebunden ist.
 
 Führen Sie die Schritte unter [Horizontal erweiterbare Bereiche verwenden, um Spalten in Excel-Berichten dynamisch hinzuzufügen](tasks/er-horizontal-1.md) aus, um weitere Informationen zu erhalten.
+
+### <a name="nested-components"></a>Verschachtelte Komponenten
 
 Die Komponente **Bereich** kann andere verschachtelte EB-Komponenten aufweisen, die zur Eingabe von Werten in die entsprechenden benannten Excel-Bereiche verwendet werden.
 
@@ -105,11 +109,40 @@ Die Komponente **Bereich** kann andere verschachtelte EB-Komponenten aufweisen, 
     > [!NOTE]
     > Verwenden Sie dieses Muster, damit die Excel-Anwendung eingegebene Werte basierend auf dem Gebietsschema des lokalen Computers formatieren kann, der das ausgehende Dokument öffnet.
 
+### <a name="enabling"></a>Wird aktiviert
+
 Auf der Registerkarte **Zuordnung** des EB-Vorgangs-Designers können Sie die Eigenschaft **Aktiviert** für eine **Bereich**-Komponente konfigurieren, um anzugeben, ob die Komponente in ein generiertes Dokument eingefügt werden muss:
 
 - Wenn ein Ausdruck der Eigenschaft **Aktiviert** für die Rückgabe von **Wahr** zur Laufzeit oder wenn überhaupt kein Ausdruck konfiguriert ist, wird der entsprechende Bereich im generierten Dokument ausgefüllt.
 - Wenn ein Ausdruck der Eigenschaft **Aktiviert** für die Rückgabe von **Falsch** zur Laufzeit konfiguriert ist und dieser Bereich nicht sämtliche Zeilen oder Spalten darstellt, wird der entsprechende Bereich nicht im generierten Dokument ausgefüllt.
 - Wenn ein Ausdruck der Eigenschaft **Aktiviert** für die Rückgabe von **Falsch** zur Laufzeit konfiguriert ist und dieser Bereich sämtliche Zeilen oder Spalten darstellt, enthält das Dokument diese Zeilen und Spalten als ausgeblendete Zeilen und Spalten.
+
+### <a name="resizing"></a>Ändern der Größe
+
+Sie können Ihre Excel-Vorlage so konfigurieren, dass Zellen zur Darstellung von Textdaten verwendet werden. Um sicherzustellen, dass der gesamte Text in einer Zelle in einem generierten Dokument sichtbar ist, können Sie diese Zelle so konfigurieren, dass der Text darin automatisch umgebrochen wird. Sie können die Zeile, die diese Zelle enthält, auch so konfigurieren, dass ihre Höhe automatisch angepasst wird, wenn der umgebrochene Text nicht vollständig sichtbar ist. Weitere Informationen finden Sie im Abschnitt „Text in einer Zelle umbrechen“ in [Korrigieren von unvollständig angezeigten Daten in Zellen](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e).
+
+> [!NOTE]
+> Wegen einer bekannten [Excel-Einschränkung](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), selbst wenn Sie Zellen so konfigurieren, dass Text umgebrochen wird, und Sie die Zeilen, die diese Zellen enthalten, so konfigurieren, dass ihre Höhe automatisch an den umgebrochenen Text angepasst wird, können Sie die Excel-Funktionen **AutoFit** und **Zeilenumbruch** für verbundene Zellen und die Zeilen, die sie enthalten, eventuell nicht verwenden. 
+
+Ab Dynamics 365 Finance-Version 10.0.23 können Sie EB zwingen, in einem generierten Dokument die Höhe jeder Zeile zu berechnen, die so konfiguriert wurde, dass ihre Höhe automatisch an den Inhalt verschachtelter Zellen angepasst wird, wenn diese Zeile mindestens eine verbundene Zelle enthält, die zum Umbrechen des Texts in der Zelle konfiguriert war. Die berechnete Höhe wird dann verwendet, um die Größe der Zeile zu ändern, um sicherzustellen, dass alle Zellen in der Zeile im generierten Dokument sichtbar sind. Gehen Sie folgendermaßen vor, um diese Funktion beim Ausführen von EB-Formaten zu verwenden, die für die Verwendung von Excel-Vorlagen zum Generieren ausgehender Dokumente konfiguriert wurden.
+
+1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
+2. Wählen Sie auf der Seite **Lokalisierungskonfigurationen** im Bereich **Zugehörige Links** die Option **Parameter für elektronische Berichterstellung** aus.
+3. Auf der Seite **Parameter für elektronische Berichterstellung** legen Sie auf der Registerkarte **Runtime** die Option **Zeilenhöhe automatisch anpassen** auf **Ja** fest.
+
+Wenn Sie diese Regel für ein einzelnes EB-Format ändern möchten, aktualisieren Sie die Entwurfsversion dieses Formats, indem Sie wie folgt vorgehen.
+
+1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
+2. Auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationen** wählen Sie die Kachel **Berichterstellungskonfigurationen**.
+3. Wählen Sie auf der Seite **Konfigurationen** in der Konfigurationsstruktur im linken Bereich eine EB-Konfiguration aus, die für die Verwendung einer Excel-Vorlage zum Generieren ausgehender Dokumente ausgelegt ist.
+4. Wählen Sie im Inforegister **Versionen** die Konfigurationsversion mit dem Status **Entwurf** aus.
+5. Wählen Sie im Aktivitätsbereich **Designer** aus.
+6. Wählen Sie auf der Seite **Formatdesigner** in der Formatstruktur im linken Bereich die Excel-Komponente aus, die mit einer Excel-Vorlage verknüpft ist.
+7. Wählen Sie auf der Registerkarte **Format** im Feld **Zeilenhöhe anpassen** einen Wert aus, um anzugeben, ob EB zur Runtime gezwungen werden soll, die Zeilenhöhe in einem ausgehenden Dokument zu ändern, das vom bearbeiteten EB-Format generiert wird:
+
+    - **Standard**: Verwenden Sie die allgemeine Einstellung, die im Feld **Zeilenhöhe automatisch anpassen** auf der Seite **Parameter der elektronischen Berichterstellung**.
+    - **Ja**: Die allgemeinen Einstellungen werden überschrieben und die Zeilenhöhe zur Runtime geändert.
+    - **Nein**: Die allgemeinen Einstellungen werden überschrieben und die Zeilenhöhe zur Runtime nicht geändert.
 
 ## <a name="cell-component"></a>Komponente „Zelle“
 

@@ -128,7 +128,7 @@ Die meisten Quellsysteme können Daten bereitstellen, die mindestens mit einer D
 |---|---|---|---|
 | Kostenelement-Dimensionsmitglieder  |  Ja | Ja  | Ja  |
 |  Mitglieder der Kostenobjektdimension |  Ja | Ja  | Ja  |
-|  Mitglieder der statistischen Dimension | Ja  | Nr.  | Nr.  |
+|  Mitglieder der statistischen Dimension | Ja  | Nein  | Nein  |
 |  Hauptbuch | Ja  | Ja  | Ja  |
 |  Budgeteinträge  | Ja  | Ja  | Ja  |
 |  Statistische Kennzahlen | Ja  | Ja  | Ja  |

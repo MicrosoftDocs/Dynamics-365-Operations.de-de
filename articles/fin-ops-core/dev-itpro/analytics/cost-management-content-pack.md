@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78be9c67eeac1307d67d70ef75751adebbc246ee69e093b1b9dbc8f408d63258
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9fbdc6addc820aadc1f5469cb059a62724cfe905
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726332"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752639"
 ---
 # <a name="cost-management-power-bi-content"></a>Power BI-Inhalt zur Kostenverwaltung
 
@@ -30,11 +30,6 @@ ms.locfileid: "6726332"
 ## <a name="overview"></a>Übersicht
 
 Der Microsoft Power BI-Inhalt für **Kostenmanagement** ist für Bestandsbuchhalter oder Einzelpersonen in der Organisation bestimmt, die für den Status „Bestand“ oder „Ressource in Bearbeitung (RIF)“ zuständig oder daran interessiert sind oder die für die Analyse von standardmäßigen Kostenabweichungen zuständig oder daran interessiert sind.
-
-> [!NOTE]
-> Der Power BI-Inhalt zur **Kostenverwaltung**, der in diesem Thema beschrieben wird, gilt für Dynamics 365 Finance and Operations 8.0.
-> 
-> Das Power BI-Inhaltspaket zur **Kostenverwaltung**, das auf der AppSource-Site verfügbar ist, ist veraltet. Weitere Informationen zu dieser Veraltung finden Sie unter [Entfernte oder veraltete Funktionen für Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Dieser Power BI-Inhalt bietet ein kategorisiertes Format, mit dessen Hilfe Sie die Leistung von Beständen überwachen können und visuell darstellen können, wie Kosten durch sie fließen. Sie können Verwaltungseinblicke erhalten, wie das Umsatzverhältnis, die Anzahl von Tagen, während der der Bestand verfügbar ist, die Genauigkeit sowie die „ABC-Klassifizierung” auf Ihrer bevorzugten aggregierten Ebene (Untenehmen, Artikel, Artikelgruppe oder Standort). Die verfügbar gemachten Informationen können auch als detaillierte Ergänzung der Finanzaufstellung verwendet werden.
 

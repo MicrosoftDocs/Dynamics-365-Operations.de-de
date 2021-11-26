@@ -88,21 +88,21 @@ Die folgende Tabelle enthält einen Überblick über die verschiedenen Kombinati
 | Systemstatus <br>(Field Service) | Positionsstatus <br>(Field Service) | Zugeordnet <br>(Field Service) |Synchronisierter Wert <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Offen – geplant   | Vorkalkuliert   | Ja       | Vorkalkuliert                       |
-| Offen – geplant   | Vorkalkuliert   | Nr.        | Verwendet                            |
+| Offen – geplant   | Vorkalkuliert   | Nein        | Verwendet                            |
 | Offen – geplant   | Verwendet        | Ja       | Verwendet                            |
-| Offen – geplant   | Verwendet        | Nr.        | Verwendet                            |
+| Offen – geplant   | Verwendet        | Nein        | Verwendet                            |
 | Offen – in Bearbeitung | Vorkalkuliert   | Ja       | Vorkalkuliert                       |
-| Offen – in Bearbeitung | Vorkalkuliert   | Nr.        | Verwendet                            |
+| Offen – in Bearbeitung | Vorkalkuliert   | Nein        | Verwendet                            |
 | Offen – in Bearbeitung | Verwendet        | Ja       | Verwendet                            |
-| Offen – in Bearbeitung | Verwendet        | Nr.        | Verwendet                            |
+| Offen – in Bearbeitung | Verwendet        | Nein        | Verwendet                            |
 | Offen – abgeschlossen   | Vorkalkuliert   | Ja       | Vorkalkuliert                       |
-| Offen – abgeschlossen   | Vorkalkuliert   | Nr.        | Verwendet                            |
+| Offen – abgeschlossen   | Vorkalkuliert   | Nein        | Verwendet                            |
 | Offen – abgeschlossen   | Verwendet        | Ja       | Verwendet                            |
-| Offen – abgeschlossen   | Verwendet        | Nr.        | Verwendet                            |
+| Offen – abgeschlossen   | Verwendet        | Nein        | Verwendet                            |
 | Geschlossen – gebucht    | Vorkalkuliert   | Ja       | Verwendet                            |
-| Geschlossen – gebucht    | Vorkalkuliert   | Nr.        | Verwendet                            |
+| Geschlossen – gebucht    | Vorkalkuliert   | Nein        | Verwendet                            |
 | Geschlossen – gebucht    | Verwendet        | Ja       | Verwendet                            |
-| Geschlossen – gebucht    | Verwendet        | Nr.        | Verwendet                            |
+| Geschlossen – gebucht    | Verwendet        | Nein        | Verwendet                            |
 
 Die folgende Tabelle enthält einen Überblick über die verschiedenen Kombinationen für Servicepositionen.
 

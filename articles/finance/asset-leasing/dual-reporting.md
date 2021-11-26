@@ -47,7 +47,7 @@ Das IFRS 16-Buch ist so angelegt, dass es dem Rechnungslegungsstandard IFRS 16 e
 | Einrichtung von Barwert/Anlagenzeitwert | 0,00           |
 | Kurzfristiger Schwellenwert                    | 12             |
 | Schwellenwert für geringen Wert                     | 5,000.00       |
-| An Kreditor bezahlen                           | Nr.             |
+| An Kreditor bezahlen                           | Nein             |
 
 **Gesetzliches Buch**
 
@@ -64,7 +64,7 @@ Das gesetzliche Buch ist ein Cash-Basis-Buch, in dem das Unternehmen die Mietkos
 | Einrichtung von Barwert/Anlagenzeitwert | 0,00        |
 | Kurzfristiger Schwellenwert                    | 0           |
 | Schwellenwert für geringen Wert                     | 0           |
-| An Kreditor bezahlen                           | Nr.          |
+| An Kreditor bezahlen                           | Nein          |
 
 **Gesetzliches Stornobuch**
 
@@ -81,7 +81,7 @@ Das gesetzliche Stornobuch ist wie das gesetzliche Buch aufgebaut.
 | Einrichtung von Barwert/Anlagenzeitwert | 0,00                           |
 | Kurzfristiger Schwellenwert                    | 0                              |
 | Schwellenwert für geringen Wert                     | 0                              |
-| An Kreditor bezahlen                           | Nr.                             |
+| An Kreditor bezahlen                           | Nein                             |
 
 In diesem Beispiel wurde ein Mietvertrag mit den folgenden Einstellungen auf den Registerkarten **Allgemein** und **Zahlungspläne** erstellt.
 

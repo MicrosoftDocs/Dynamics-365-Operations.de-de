@@ -1,8 +1,8 @@
 ---
 title: Arbeitsfreie Zeit anfordern
 description: Arbeitsfreie Zeit anfordern in Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f8fead1105412e5fe967a19632e1875058f4026c722140eaed056c5412c6558f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e12ac21e80c46f5cb5f231aadab7272fc279194
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756099"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771411"
 ---
 # <a name="request-time-off"></a>Arbeitsfreie Zeit anfordern
 
@@ -42,7 +42,7 @@ Sie können Anträge auf Freizeit stellen, Ihren Urlaub und Ihr Urlaubsguthaben 
 
 6. Wählen **einreichen**, wenn Sie bereit sind, Ihre Anfrage einzureichen. Andernfalls wählen Sie **Entwurf speichern**.
 
-Mitarbeiter, die einen neuen Urlaubsantrag stellen, können verschiedene Urlaubsarten auswählen, um ihren Urlaubsantrag zu erstellen. Alle Urlaubsarten, die im Rahmen eines einzigen Urlaubsantrags ausgewählt werden, sollten jedoch dieselbe Urlaubseinheit haben. Mitarbeiter können die Urlaubseinheit jede Urlaubsart im **Freizeit anfordern** anzeigen.
+Mitarbeiter, die einen neuen Urlaubsantrag stellen, können verschiedene Urlaubsarten auswählen, um ihren Urlaubsantrag zu erstellen. Alle Urlaubsarten, die im Rahmen eines einzigen Urlaubsantrags ausgewählt werden, sollten jedoch dieselbe Urlaubseinheit haben. Mitarbeiter können die Urlaubseinheit jede Urlaubsart auf der Seite **Freizeit anfordern** anzeigen.
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Fügen Sie einer vorhandenen Anforderung einen Anhang hinzu
 
@@ -64,7 +64,7 @@ Wenn Sie eine vorhandene Freizeitanforderung aktualisieren, können Sie einen An
 
 1. Wählen Sie im Arbeitsbereich **Mitarbeiter-Self-Service** in der Kachel **Zeitsalden** die Option **Zeitsalden anzeigen**.
 
-2. Wählen Sie auf dem Formular **Auszeit** eine oder mehrere Auszeitanforderungen aus, die Sie stornieren möchten.
+2. Wählen Sie auf der Seite **Auszeit** eine oder mehrere Auszeitanforderungen aus, die Sie stornieren möchten.
 
 3. Wählen Sie die Schaltfläche **Abbrechen**.
 

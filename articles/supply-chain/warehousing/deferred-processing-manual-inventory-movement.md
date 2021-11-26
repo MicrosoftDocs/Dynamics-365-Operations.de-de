@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a15c913c876e961c6824c1e8812ab2be2d6ffa4333cd0d4e6f80cae8bac79394
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5c9ba7079895feeb0c171f2021479587aa13cc9
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746746"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777665"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Aufgeschobene Verarbeitung von manuellen Bestandsbewegungen
 
@@ -32,10 +32,10 @@ Die Verarbeitung im Hintergrund wird durch die Funktion [Verarbeiten von Lageror
 
 Um diese Funktion verfügbar zu machen, schalten Sie die folgenden Funktionen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein. Sie müssen sie in dieser Reihenfolge einschalten:
 
-1. Organisationsweite Arbeitssperrung
+1. Organisationsweite Arbeitssperrung (Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
 1. Lagerort-App-Ereignisse verarbeiten
 1. Verzögerte Put-Vorgänge
-1. Verzögerte Verarbeitung des manuellen Bestandsumlagerungsvorgangs
+1. Verzögerte Verarbeitung des manuellen Lagerbestandsumlagerungsvorgangs
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurieren Sie die Richtlinien für die Verarbeitung von Arbeit
 

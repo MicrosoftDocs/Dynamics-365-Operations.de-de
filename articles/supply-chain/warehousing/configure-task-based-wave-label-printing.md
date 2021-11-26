@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-obaranov
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 652e6fb3f586fc873ffabf2c741e5c99216931461f159a42f08f9922e756280f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735895"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777864"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planen des Wellenetikettendrucks während der Welle
 
@@ -33,7 +33,7 @@ Wenn Sie die Funktion *Aufgabenbasierter Wellenetikettendruck* verwenden, erstel
 Um die Funktionen zu verwenden, die in diesem Thema beschrieben werden, müssen sie für Ihr System eingeschaltet werden. Verwenden Sie den Arbeitsbereich [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die Funktionen in der folgenden Reihenfolge zu aktivieren:
 
 1. *Wellenetikettendruck* – Diese Funktion ist erforderlich, um das Wellenprozessverfahren für den Wellenetikettendruck zu aktivieren.
-1. *Organisationsweite Arbeitssperrung* – Diese Funktion ist sowohl für die manuelle als auch für die automatische Konfiguration der geplanten Arbeitserstellung erforderlich.
+1. *Organisationsweite Arbeitssperrung* – Diese Funktion ist sowohl für die manuelle als auch für die automatische Konfiguration der geplanten Arbeitserstellung erforderlich. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden.)
 1. *Aufgabenbasierter Wellenetikettendruck* – Diese Funktion ist erforderlich, um den Wellenetikettendruck in einen separaten Transaktionsbereich abzuspalten.
 
 ## <a name="manually-enable-the-new-wave-step-method"></a>Manuelles Aktivieren der neuen Wellenschrittmethode

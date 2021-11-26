@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 39f462ae325aa1104a25a8290daed70388e624ec
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 074be71d7b6ec1acab6307a79e397c2a2a045c39
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7476425"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778424"
 ---
 # <a name="the-unit-and-unit-quantity-arent-working-correctly-in-the-inventory-journal"></a>Die Einheit und die Stückzahl funktionieren in der Bestandserfassung nicht richtig.
 
@@ -31,7 +31,7 @@ Bei der Arbeit mit Einheiten und Mengen in einer Bestandserfassung können eines
 
 Führen Sie folgende Schritte aus, um dieses Problem zu beheben.
 
-1. Stellen Sie im Arbeitsbereich **Funktionsverwaltung** sicher, dass die Funktion *Maßeinheit und Stückzahl in Bestandserfassungen* verwenden aktiviert ist. Diese Funktion fügt die Felder **Einheit** und **Stückzahl** zur Erfassung hinzu.
+1. Stellen Sie im Arbeitsbereich **Funktionsverwaltung** sicher, dass die Funktion *Maßeinheit und Stückzahl in Bestandserfassungen* verwenden aktiviert ist. Diese Funktion fügt die Felder **Einheit** und **Stückzahl** zur Erfassung hinzu. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
 1. Verwenden Sie nach dem Einschalten der Funktion die Felder **Menge**, **Stückzahl** und **Einheit** wie folgt:
 
     - **Menge** – Geben Sie die Menge unter Verwendung der Standardeinheit an, die für das freigegebene Produkt definiert ist. Die Standardeinheit selbst wird hier jedoch nicht angezeigt. Wenn eine Umrechnung zwischen der Standardeinheit und der im Feld **Einheit** ausgewählten Einheit eingerichtet ist, wird das Feld **Menge** basierend auf der Auswahl in den Feldern **Stückzahl** und **Einheit** automatisch aktualisiert.

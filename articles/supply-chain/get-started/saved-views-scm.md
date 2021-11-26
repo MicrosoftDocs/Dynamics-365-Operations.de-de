@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2544591773bea7d54b4da4ac25ed3fed3f9e3594c5f791a0975c0349583b695c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 943eee819c08704212ceb5e02921c36e7f1032dc
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728626"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777838"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Gespeicherte Standardansichten für Supply Chain Management
 
@@ -47,15 +47,15 @@ In der folgenden Tabelle werden die gespeicherten Ansichten beschrieben, die fü
 
 | Seite | Ansichtsname | Ansichtsbeschreibung | Funktionsname |
 |---|---|---|---|
-| Bestandsliste | Finanzdaten | In dieser vereinfachten Ansicht können Sie sich auf Finanzinformationen konzentrieren, während Sie den vorhandenen Bestand verwalten. | Gespeicherte Ansichten für die Lagerverwaltung |
-| Bestandsliste | Qualitätskontrolle | In dieser vereinfachten Ansicht können Sie sich auf die Qualitätskontrolle konzentrieren, während Sie den vorhandenen Bestand verwalten. | Gespeicherte Ansichten für die Lagerverwaltung |
-| Bestandsliste | Empfang | In dieser vereinfachten Ansicht können Sie sich auf Empfangsvorgänge konzentrieren, während Sie den vorhandenen Bestand verwalten. | Gespeicherte Ansichten für die Lagerverwaltung |
-| Bestandsliste | Versand | In dieser vereinfachten Ansicht können Sie sich auf Versandvorgänge konzentrieren, während Sie den vorhandenen Bestand verwalten. | Gespeicherte Ansichten für die Lagerverwaltung |
-| Buchungen | Vereinfacht | Mit dieser vereinfachten Ansicht können Sie den Bestandsstatus überprüfen, ohne von Finanzinformationen und anderen Feldern abgelenkt zu werden, die weniger häufig verwendet werden. | Gespeicherte Ansichten für die Lagerverwaltung |
-| Umlagerungsaufträge | Versand | In dieser vereinfachten Ansicht können Sie sich auf Versandvorgänge konzentrieren, während Sie Umlagerungsaufträge verwalten. | Gespeicherte Ansichten für die Lagerverwaltung |
-| Umlagerungsaufträge | Empfang | In dieser vereinfachten Ansicht können Sie sich auf Empfangsvorgänge konzentrieren, während Sie Umlagerungsaufträge verwalten. | Gespeicherte Ansichten für die Lagerverwaltung |
-| Umlagerungsaufträge | Qualitätskontrolle | In dieser vereinfachten Ansicht können Sie sich auf die Qualitätskontrolle konzentrieren, während Sie Umlagerungsaufträge verwalten. | Gespeicherte Ansichten für die Lagerverwaltung |
-| Umlagerungsaufträge | Finanzdaten | In dieser vereinfachten Ansicht können Sie sich auf Finanzinformationen konzentrieren, während Sie Umlagerungsaufträge verwalten. | Gespeicherte Ansichten für die Lagerverwaltung |
+| Bestandsliste | Finanzdaten | In dieser vereinfachten Ansicht können Sie sich auf Finanzinformationen konzentrieren, während Sie den vorhandenen Bestand verwalten. | Gespeicherte Ansichten für die Bestandsverwaltung (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Bestandsliste | Qualitätskontrolle | In dieser vereinfachten Ansicht können Sie sich auf die Qualitätskontrolle konzentrieren, während Sie den vorhandenen Bestand verwalten. | Gespeicherte Ansichten für die Bestandsverwaltung (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Bestandsliste | Empfang | In dieser vereinfachten Ansicht können Sie sich auf Empfangsvorgänge konzentrieren, während Sie den vorhandenen Bestand verwalten. | Gespeicherte Ansichten für die Bestandsverwaltung (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Bestandsliste | Versand | In dieser vereinfachten Ansicht können Sie sich auf Versandvorgänge konzentrieren, während Sie den vorhandenen Bestand verwalten. | Gespeicherte Ansichten für die Bestandsverwaltung (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Transaktionen | Vereinfacht | Mit dieser vereinfachten Ansicht können Sie den Bestandsstatus überprüfen, ohne von Finanzinformationen und anderen Feldern abgelenkt zu werden, die weniger häufig verwendet werden. | Gespeicherte Ansichten für die Bestandsverwaltung (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Umlagerungsaufträge | Versand | In dieser vereinfachten Ansicht können Sie sich auf Versandvorgänge konzentrieren, während Sie Umlagerungsaufträge verwalten. | Gespeicherte Ansichten für die Bestandsverwaltung (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Umlagerungsaufträge | Empfang | In dieser vereinfachten Ansicht können Sie sich auf Empfangsvorgänge konzentrieren, während Sie Umlagerungsaufträge verwalten. | Gespeicherte Ansichten für die Bestandsverwaltung (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Umlagerungsaufträge | Qualitätskontrolle | In dieser vereinfachten Ansicht können Sie sich auf die Qualitätskontrolle konzentrieren, während Sie Umlagerungsaufträge verwalten. | Gespeicherte Ansichten für die Bestandsverwaltung (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Umlagerungsaufträge | Finanzdaten | In dieser vereinfachten Ansicht können Sie sich auf Finanzinformationen konzentrieren, während Sie Umlagerungsaufträge verwalten. | Gespeicherte Ansichten für die Bestandsverwaltung (Ab Version 10.0.21 standardmäßig aktiviert.) |
 
 ## <a name="saved-views-for-the-master-planning-module"></a>Gespeicherte Ansichten für das Modul „Masterplanung“
 
@@ -83,11 +83,11 @@ In der folgenden Tabelle werden die gespeicherten Ansichten beschrieben, die fü
 
 | Seite | Ansichtsname | Ansichtsbeschreibung | Funktionsname |
 |---|---|---|---|
-| Liste „Freigegebene Produkte“ | Produkterstellung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Erstellen von Produkten verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte |
-| Details für freigegebene Produkte | Produkterstellung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Erstellen von Produkten verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte |
-| Details für freigegebene Produkte | Logistikinformationsverwaltung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Verwalten logistischer Informationen für Produkte verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte |
-| Details für freigegebene Produkte | Kaufinformationsverwaltung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Verwalten von Kaufinformationen für Produkte verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte |
-| Details für freigegebene Produkte | Verkaufsinformationsverwaltung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Verwalten verkaufsbezogener Informationen für Produkte verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte |
+| Liste „Freigegebene Produkte“ | Produkterstellung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Erstellen von Produkten verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Details für freigegebene Produkte | Produkterstellung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Erstellen von Produkten verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Details für freigegebene Produkte | Logistikinformationsverwaltung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Verwalten logistischer Informationen für Produkte verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Details für freigegebene Produkte | Kaufinformationsverwaltung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Verwalten von Kaufinformationen für Produkte verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Details für freigegebene Produkte | Verkaufsinformationsverwaltung | Eine vereinfachte Seitenansicht, die nur die Felder umfasst, die am häufigsten beim Verwalten verkaufsbezogener Informationen für Produkte verwendet werden. | Gespeicherte Ansichten für freigegebene Produkte (Ab Version 10.0.21 standardmäßig aktiviert.) |
 
 ## <a name="saved-views-for-the-production-control-module"></a>Gespeicherte Ansichten für das Modul „Produktionssteuerung“
 
@@ -95,10 +95,10 @@ In der folgenden Tabelle werden die gespeicherten Ansichten beschrieben, die fü
 
 | Seite | Ansichtsname | Ansichtsbeschreibung | Funktionsname |
 |---|---|---|---|
-| Stücklistenseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansichten für die Produktionssteuerung |
-| Detailseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansichten für die Produktionssteuerung |
-| Kommissionierlistenseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansichten für die Produktionssteuerung |
-| Listenseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansichten für die Produktionssteuerung |
+| Stücklistenseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansichten für die Produktionssteuerung (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Detailseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansichten für die Produktionssteuerung (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Kommissionierlistenseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansichten für die Produktionssteuerung (Ab Version 10.0.21 standardmäßig aktiviert.) |
+| Listenseite für den Produktionsauftrag | Vereinfacht | Diese vereinfachte Ansicht enthält nur die Felder, die am häufigsten verwendet werden. Auf diese Weise erhalten Sie einen schnelleren Überblick und einen optimierten Arbeitsprozess. | Gespeicherte Ansichten für die Produktionssteuerung (Ab Version 10.0.21 standardmäßig aktiviert.) |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Gespeicherte Ansichten für das Modul „Vertrieb und Marketing“
 

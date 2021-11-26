@@ -89,16 +89,16 @@ Das folgende Vergleichsdiagramm hilft, die zwei Optionen zu unterscheiden:
 
 | Funktion                                                   | Financial Reporting                                               | Finanzanalyse |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| **Standardberichte bearbeiten**                                 | Ja                                                               | Nr. |
-| **Neue Berichte erstellen**                                   | Ja                                                               | Nr. |
-| **Berichte drucken**                                        | Ja                                                               | Nr. |
+| **Standardberichte bearbeiten**                                 | Ja                                                               | Nein |
+| **Neue Berichte erstellen**                                   | Ja                                                               | Nein |
+| **Berichte drucken**                                        | Ja                                                               | Nein |
 | **Nach Excel exportieren**                                      | Ja                                                               | Begrenzte Exportrohdaten in Excel, kein formatierter Bericht |
-| **Berichterstellungshierarchie unterstützen/Organisationshierarchie**   | Ja                                                               | Nr. |
+| **Berichterstellungshierarchie unterstützen/Organisationshierarchie**   | Ja                                                               | Nein |
 | **Bericht zu Daten von untergeordneten Sachkonten**                             | Ja, beschränkt auf nur einen Kreditor, Debitor                              | Ja, Kreditor, Debitor, Kreditoren-/Debitorengruppen, Kreditoren-/Debitorenadressen, usw. |
 | **Berichtswährung**                                   | Ja, Buchhaltungswährung und in Berichtswährung übersetzen       | Nein, nur Buchhaltungswährung |
 | **Sicherheit**                                             | Ja, erfüllt Financ-Berichterstellungsstruktur-Sicherheit | „Begrenzte Anzeige“-Berichte für alle Unternehmen (ungeachtet der Finance and Operations-Sicherheit) oder nur aktives Unternehmen |
-| **Unterschiedlichen Kontenplan und Geschäftsjahre unterstützen** | Ja                                                               | Nr. |
-| **Bericht zu externen Daten**                              | Nr.                                                                | Nr. |
+| **Unterschiedlichen Kontenplan und Geschäftsjahre unterstützen** | Ja                                                               | Nein |
+| **Bericht zu externen Daten**                              | Nein                                                                | Nein |
 | **Konsolidierungen unterstützen**                               | Ja                                                               | Begrenzter Möglichkeitenbericht zu mehreren Unternehmen, aber nur Verwendung der Buchhaltungswährung |
 
 Folgende Finanzaufstellungen sind verfügbar:

@@ -47,11 +47,11 @@ Die folgende Tabelle zeigt einige typische Beispiele für Einstellungen mit Prin
 
 | Prinzip der Rückvergütungsminderung | Beschreibung | Reduzierung anwenden | Reduzierungsbasis | Von Reduzierung ausschließen |
 |---|---|---|---|---|
-| Verzögert | Rückvergütung reduzieren | Ja | Beides | Nr. |
+| Verzögert | Rückvergütung reduzieren | Ja | Beides | Nein |
 | Exclreb | Rückvergütung ausschließen | Ja | Rückvergütung | Ja |
 | Mehrfach | Mehrere Rückvergütungen | Ja | Beides | Ja |
-| Keines | Nur Rückstellungen und Rückvergütungen | Nr. | Beides | Ja |
-| Bereitstellung | Nur Rückstellung | Ja | Bereitstellung | Nr. |
+| Keines | Nur Rückstellungen und Rückvergütungen | Nein | Beides | Ja |
+| Bereitstellung | Nur Rückstellung | Ja | Bereitstellung | Nein |
 | Rückvergütung | Nur Rückvergütung | Ja | Rückvergütung | Ja |
 
 ## <a name="examples-of-rebate-reduction-principle-calculations"></a>Beispiele für Berechnungen von Prinzipien zur Rückvergütungsreduzierung

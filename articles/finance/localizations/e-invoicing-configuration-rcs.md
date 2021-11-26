@@ -2,7 +2,7 @@
 title: Elektronische Rechnungsstellung in Regulatory Configuration Services (RCS) konfigurieren
 description: In diesem Thema wird erläutert, wie Sie die elektronische Rechnungsstellung in Dynamics 365 Regulatory Configuration Services (RCS) konfigurieren.
 author: gionoder
-ms.date: 07/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 98ba40da7b365e46e1c624ba70c7dc048144e2c7137e8fd8eb5abe348028ce35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757973"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779669"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Elektronische Rechnungsstellung in Regulatory Configuration Services (RCS) konfigurieren
 
@@ -73,6 +73,7 @@ Die folgende Tabelle zeigt die Funktionen für die elektronische Rechnungsstellu
 | Spanien          | Elektronische Rechnungen für Spanien (ES)      | Verkaufs- und Projektrechnungen |
 | Europa         | Elektronische Rechnungen im PEPPOL-Format            | PEPPOL Verkaufs- und Projektrechnungen |
 | Europa         | PEPPOL-Kreditorenrechnung                | PEPPOL-Kreditorenrechnungen importieren |
+| Saudi-Arabien   | Saudi-arabische elektronische Rechnung (SA)| Verkaufs- und Projektrechnungen |
 
 ### <a name="preview-features"></a>Vorschaufunktionen
 
@@ -196,6 +197,11 @@ Die folgenden Listen zeigen die ER-Formatkonfigurationen, die für die Funktione
 
 - Vertriebsrechnung (ES)
 - Projektrechnung (ES)
+
+#### <a name="saudi-arabian-sa-electronic-invoice-sales-and-project-invoices-for-saudi-arabia"></a>Saudi-arabische (SA) elektronische Rechnung: Verkaufs- und Projektrechnungen für Saudi-Arabien
+
+- E-Verkaufsrechnung (SA)
+- E-Projektrechnung (SA)
 
 Zusätzlich zu den ER-Formatkonfigurationen, die standardmäßig für den elektronischen Rechnungsstellungsservice verfügbar sind, können Sie auch Ihre eigenen ER-Formatkonfigurationen erstellen. Die Formatkonfigurationen, die für die Verwendung mit Funktionen für die elektronische Rechnungsstellung erstellt wurden, unterstützen jedoch keinen direkten Verweis auf Tabellen für Finance oder Supply Chain Management oder die entsprechenden Metadaten. Es werden nur Referenzen auf die ER-Modellzuordnung unterstützt.
 

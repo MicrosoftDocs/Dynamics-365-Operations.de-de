@@ -1,6 +1,6 @@
 ---
 title: LinkedIn-Integration-FAQs
-description: 'Dieses Thema beantwortet Fragen, die Sie möglicherweise zur Integration zwischen LinkedIn und Microsoft Microsoft Dynamics 365 Talent: Attract haben.'
+description: Dieses Thema beantwortet Fragen, die Sie möglicherweise zur Integration zwischen LinkedIn und Microsoft Microsoft Microsoft Dynamics 365 Talent – Attract haben.
 author: hasrivas
 manager: AnnBe
 ms.date: 07/08/2019
@@ -117,6 +117,3 @@ Die folgende Tabelle beschreibt die verschiedenen Optionen für das Buchen von S
 [Kandidaten mithilfe von LinkedIn Recruiter in Microsoft Dynamics 365 Talent - Attract anwerben](./attract-linkedin-recruiter.md)
 
 [Problembehandlungsintegration mit LinkedIn und Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
-title: Organisieren der Mitarbeiter anhand von Abteilungen, Stellen und Positionen
-description: Abteilungen, Stellen und Positionen sind Organisationselemente, die innerhalb der Personalverwaltung verwaltet werden. Dieser Artikel behandelt die grundlegenden Informationen zu diesen Elementen.
-author: andreabichsel
-ms.date: 06/20/2017
+title: Verwalten der Belegschaft mittels Abteilungen, Stellen und Positionen
+description: Dieses Thema beschreibt grundlegende Informationen über Abteilungen, Stellen und Positionen, die innerhalb der Personalverwaltung als Organisationselemente verwaltet werden.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: cd50bf7e8e03d72d6d0e1e2b0b065a5d9c7a3ef44e96f92a5fc342a0d820d8e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778795"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731807"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Verwalten der Belegschaft mittels Abteilungen, Stellen und Positionen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Abteilungen, Stellen und Positionen sind Organisationselemente, die innerhalb der Personalverwaltung verwaltet werden. Dieser Artikel behandelt die grundlegenden Informationen zu diesen Elementen. 
+Abteilungen, Stellen und Positionen sind Organisationselemente, die innerhalb der Personalverwaltung verwaltet werden. Dieses Thema behandelt die grundlegenden Informationen zu diesen Elementen. 
 
 Im folgenden Beispiel werden die Konzepte veranschaulicht, die in diesem Artikel beschrieben werden.
 
@@ -49,7 +49,6 @@ Eine Abteilung ist eine Organisationseinheit, die eine Kategorie oder einen Funk
 ## <a name="jobs-and-positions"></a>Stellen und Positionen
 Ein Einzelvorgang ist eine Sammlung von Aufgaben und Zuständigkeiten, die für eine Person, die eine Tätigkeit ausführt, obligatorisch sind. Eine Position ist eine einzelne Instanz eines Einzelvorgangs. Zuständigkeitsbereiche, Arbeitsaufgaben, Stellenfunktionen, Qualifikationen, Bescheinigungen und Ausbildungsinformationen, die für eine Stelle erforderlich sind, sind auch für Positionen erforderlich, die einer Stelle zugeordnet sind.
 ### <a name="job-tasks"></a>Arbeitsaufgaben
-
 Sie können Arbeitsaufgaben erstellen, die die grundlegenden Aufgaben beschreiben, die eine Arbeitskraft in einer Position für diesen Einzelvorgang ausführen muss. Die gleiche Arbeitsaufgabe kann mehreren Einzelvorgängen hinzugefügt werden, und Positionen für diese Einzelvorgänge erben die Arbeitsaufgaben. Beispiele für Stellenaufgaben sind in der folgenden Tabelle aufgeführt.
 
 <table>
@@ -106,24 +105,21 @@ Positionen ist ein wichtiges Element der untergeordneten Ebene einer Organisatio
 -   Sie können den Workflow so einrichten, dass Positionshinzufügungen und -änderungen Genehmigung erfordern können.
 
 ### <a name="position-duration"></a>Positionsdauer
-
 Jede Position hat einen Zeitraum, in dem die Position gültig ist. Diese Zeit wird als Dauer bezeichnet. Beispielsweise haben Sommerpositionen eine Dauer vom 1. Mai 2015 bis zum 31. August 2015.
 
 ### <a name="worker-assignments"></a>Arbeitskraftzuweisungen
-
 Wenn Sie eine Arbeitskraft einer Position zuweisen, füllen Sie diese Position aus. Sie können Arbeitskräfte mehreren Positionen zuordnen, aber nur eine Arbeitskraft gleichzeitig kann einer Position zugewiesen werden.
 
 ### <a name="reporting-relationships"></a>Berichtsbeziehungen
+Positionen sind wichtiges Elemente der untergeordneten Ebene einer Organisationshierarchie. Auf der Seite **Position** können Sie die Position angeben, der eine Position untergeordnet ist. Wenn Sie eine Arbeitskraft einer Position zuweisen, die einer andere Position untergeben ist, erstellen Sie Berichtbeziehung zwischen den Arbeitskräften, die den beiden Positionen zugewiesen werden. Beispielsweise ist Stellung "Buchhalter-A" der Stellung "Buchhaltungs-Vorgesetzter" untergeben. Ana Bowman wird der Position „Buchhaltungs-Vorgesetzter“ zugewiesen und Felix Hendersen wird der Position „Buchhalter-A“ zugewiesen. Das bedeutet, dass Felix Henderson Ana Bowman unterstellt ist. 
 
-Positionen sind wichtiges Elemente der untergeordneten Ebene einer Organisationshierarchie. Im Formular "Position" können Sie die Position angeben, der eine Position untergeordnet ist. Wenn Sie eine Arbeitskraft einer Position zuweisen, die einer andere Position untergeben ist, erstellen Sie Berichtbeziehung zwischen den Arbeitskräften, die den beiden Positionen zugewiesen werden. Beispielsweise ist Stellung "Buchhalter-A" der Stellung "Buchhaltungs-Vorgesetzter" untergeben. Kim Akers wird der Position "Buchhaltungs-Vorgesetzter" zugewiesen und Sanjay Patel wird der Position "Buchhalter-A" zugewiesen. Das bedeutet, dass Sanjay Patel an Kim Akers berichtet. 
+Wenn Ihre Organisation eine Matrixhierarchie oder eine andere benutzerdefinierte Hierarchie verwendet, können Sie Positionshierarchietypen einrichten und dann Berichtsbeziehungen zu den Positionen für jede Hierarchie hinzufügen, Sie einrichten. Beispielsweise ist Olivia Wilson eine Generaldirektorin bei Adventure Works und wird der Position „Generaldirektor“ zugewiesen. Olivia verwaltet die Entwicklung eines Produkts, das verwendet wird, um Produkte zu säubern. Olivia fordert jemanden von der Buchhaltung an, um mit den Finanzen zum Entwickeln des Produkts zu helfen. Daher hat sie Felix Henderson herangezogen, um dies zu übernehmen. Felix ist direkt Ana Bowman unterstellt, arbeitet aber auch mit Olivia Wilson an der Arbeit, die den Finanzen zum Entwickeln des Gerätereinigers zugeordnet ist. 
 
-Wenn Ihre Organisation eine Matrixhierarchie oder eine andere benutzerdefinierte Hierarchie verwendet, können Sie Positionshierarchietypen einrichten und dann Berichtsbeziehungen zu den Positionen für jede Hierarchie hinzufügen, Sie einrichten. Beispielsweise ist Lori Penor ein Generaldirektor bei Adventure Works und wird der Position "Generaldirektor" zugewiesen. Lori verwaltet die Entwicklung eines Produkts, das verwendet wird, um Produkte zu säubern. Lori fordert jemanden von der Buchhaltung an, um mit den Finanzen zum Entwickeln des Produkts zu helfen. Daher hat sie Sanjay Patel herangezogen, um dies zu übernehmen. Sanjay ist direkt Kim Akers unterstellt, arbeitet aber auch mit Lori Penor an der Arbeit, die den Finanzen zum Entwickeln des Gerätereinigers zugeordnet ist. 
-
-Für das vorherige Beispiel würden Sie die folgenden Aufgaben ausführen, um das Arbeitsverhältnis zwischen Sanjay Patel und Lori Penor einzurichten:
+Für das vorherige Beispiel würden Sie die folgenden Aufgaben ausführen, um das Arbeitsverhältnis zwischen Felix Henderson und Ana Bowman einzurichten:
 1.  Erstellen Sie einen benutzerdefinierten Positionshierarchietyp mit der Bezeichnung "Gerät" erstellt, um eine Hierarchie zu erstellen, die die Positionen enthält, die für die Arbeit an dem Gerätereinigerprodukt zuständig sind.
 2.  Weisen Sie die Generaldirektorposition als die Position zu, der die Buchhalter-A-Position in der Hierarchie "Geräte" unterstellt sein soll.
 
-Verwenden Sie die Positionshierarchie, um die Berichtstruktur von Positionen anzuzeigen. Wenn Sie mehrere Positionshierarchien haben, können Sie die Hierarchie für jeden Hierarchietyp in der Positionshierarchie anzeigen. Sie können auch nach einer Position mit der Positionskennung oder dem Namen der Arbeitskraft, die der Position zugeordnet ist, suchen. Die Positionshierarchie ist eine Organisationshierarchie.
+Verwenden Sie die Seite **Positionshierarchie**, um die Berichtstruktur von Positionen anzuzeigen. Wenn Sie mehrere Positionshierarchien haben, können Sie die Hierarchie für jeden Hierarchietyp in der **Positionshierarchie** anzeigen. Sie können auch nach einer Position mit der Positionskennung oder dem Namen der Arbeitskraft, die der Position zugeordnet ist, suchen. Die **Positionshierarchie** ist eine Organisationshierarchie.
 
 ## <a name="date-effective-records"></a>Gültigkeitsdatum (Datensätze)
 Für einige Datensätze können Sie zukünftige Änderungen am Datensatz angeben. Die folgenden Informationen haben ein Gültigkeitsdatum.
@@ -155,13 +151,5 @@ Für einige Datensätze können Sie zukünftige Änderungen am Datensatz angeben
 </tr>
 </tbody>
 </table>
-
-Sie können die in der vorherigen Tabelle für eine Position oder Einzelvorgangs aufgeführten Informationen ändern und das Datum angeben, an dem die Änderungen an der Position oder dem Einzelvorgang wirksam werden sollen. Zum Beispiel kann eine Position nur einer Arbeitskraft zugewiesen sein, aber Sanjay Patel, dem die Position Buchhalter-A zugewiesen ist, wird in zwei Wochen gehen. Jens Healy ersetzt Sanjay Patel, wenn Sanjay geht. Obwohl Sanjay noch seiner Position zugeordnet ist, können Sie Jens Healy der gleichen Position zuweisen, sodass die Zuweisung erst nach Sanjays letzten Tag gültig ist.
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

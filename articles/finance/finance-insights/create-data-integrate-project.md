@@ -1,8 +1,8 @@
 ---
-title: Erstellen Sie ein Datenintegratorprojekt
-description: In diesem Thema wird erläutert, wie Sie ein Datenintegratorprojekt erstellen.
+title: Erstellen Sie ein Datenintegrationsprojekt
+description: In diesem Thema wird erläutert, wie Sie ein Datenintegrationsprojekt erstellen.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,25 +15,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b08af906c18f6c0790ca56c69a833733f48cd88c
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 7841f8b31e0ac1a40dce9acaac747f5f378236e0
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386361"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752663"
 ---
-# <a name="create-a-data-integrator-project"></a>Erstellen Sie ein Datenintegratorprojekt
+# <a name="create-a-data-integration-project"></a>Erstellen Sie ein Datenintegrationsprojekt
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-In diesem Thema wird erläutert, wie Sie ein Datenintegratorprojekt erstellen.
+In diesem Thema wird erläutert, wie Sie ein Datenintegrationsprojekt erstellen.
 
 1. Melden Sie sich bei Microsoft Dynamics 365 Finance an.
 2. Wechseln Sie zu **Arbeitsbereiche \> Datenverwaltung** und wählen Sie **Datenentitäten**. Warten Sie, bis alle Datenentitäten aktualisiert wurden, bevor Sie mit dem nächsten Schritt fortfahren.
 3. Öffnen Sie das [Power Apps-Portal](https://make.powerapps.com/) und befolgen Sie diese Schritte:
 
     1. Wählen Sie die entsprechende Umgebung aus.
-    2. Wählen Sie im linken Navigationsbereich **Daten \> Verbindungen** aus.
+    2. Wählen Sie im linken Navigationsbereich **Dataverse \> Verbindungen** aus.
     3. Stellen Sie eine Verbindung zu geeigneten Instanzen der folgenden Elemente her:
 
         - Dynamics 365
@@ -41,7 +42,7 @@ In diesem Thema wird erläutert, wie Sie ein Datenintegratorprojekt erstellen.
 
 4. Öffnen Sie die [Power Apps-Umgebungen](https://admin.powerapps.com/environments) und befolgen Sie diese Schritte:
 
-    1. Wählen Sie **Datenintegrator**.
+    1. Wählen Sie **Datenintegration**.
     2. Wählen Sie **Verbindungssätze**.
     3. Wählen Sie **Neuer Verbindungssatz**.
     4. Geben Sie einen Namens für die Verbindung ein.
@@ -57,8 +58,7 @@ In diesem Thema wird erläutert, wie Sie ein Datenintegratorprojekt erstellen.
 
     1. Erstellen Sie Datenintegrationsprojekte für die folgenden Vorlagen mit dem soeben erstellten Verbindungssatz:
 
-        - Ergebnisse der Debitorenzahlungserkenntnisse (CDS an Finance and Operations)
-            - Wenn Sie Version 10.0.17 oder höher verwenden, müssen Sie die Vorlage mit dem Namen „Ergebnisse der Debitorenzahlungserkenntnisse (CDS an Finance and Operations 10.0.17+)“ verwenden.
+        - Ergebnis der Debitorenzahlungserkenntnisse (CDS an Finance and Operations 10.0.17 oder höher)
         - Ergebnisse der Cashflow-Zeitreihen (CDS an Finance and Operations)
         - Ergebnisse der Budget-Zeitreihen (CDS an Finance and Operations)
 

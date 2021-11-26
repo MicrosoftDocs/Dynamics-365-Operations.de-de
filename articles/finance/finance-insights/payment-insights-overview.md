@@ -2,7 +2,7 @@
 title: Vorhersagen für Kundenzahlungen
 description: In diesem Thema werden die Funktionen für Zahlungsvorhersagen beschrieben, die Ihnen helfen können, die typischen Zahlungsmethoden eines Debitors besser zu verstehen. Diese Funktion kann auch helfen, die Umstände zu identifizieren, die das Einleiten eines Mahnprozesses verursachen können.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 21a773b37020aeff969469e29be68e7f7ef44d93
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386660"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752735"
 ---
 # <a name="customer-payment-predictions"></a>Vorhersagen für Kundenzahlungen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema werden die Funktionen für Zahlungsvorhersagen beschrieben, die Ihnen helfen können, die typischen Zahlungsmethoden eines Debitors besser zu verstehen. Diese Funktion kann auch helfen, die Umstände zu identifizieren, die das Einleiten eines Mahnprozesses verursachen können.
 
@@ -67,11 +68,5 @@ In vielen Unternehmen war der Inkassoprozess eine reaktive Aktivität. Mit ander
 ## <a name="methodology"></a>Methodik
 
 In der Vergangenheit war es normalerweise schwierig, eine Lösung für künstliche Intelligenz (KI) zu entwickeln und einzusetzen. Der Prozess erforderte ein Team mit Datenwissenschaftlern, Fachexperten und Ingenieuren, die über einige Zeit an der Formulierung, Entwicklung, Bereitstellung und Wartung einer brauchbaren KI-Lösung arbeiteten. Debitorzahlungsvorhersagen erleichtern die Bereitstellung und Verwendung einer KI-Lösung in Microsoft Dynamics 365 Finance. Microsoft bietet KI-Lösungen an, die auf Microsoft AI Builder basieren. Daher können Benutzer die KI-Lösung mit einem einzigen Mausklick bereitstellen, um die Vorteile intelligenter Vorhersagen zu nutzen. Wenn Sie mit der Genauigkeit von Vorhersagen nicht zufrieden ist, kann ein Power-User (wiederum mit einem einzigen Mausklick) die Erweiterung von AI Builder aufrufen und dann die Felder auswählen oder löschen, die zur Erstellung von Vorhersagen verwendet werden. Wenn Sie bereit sind, können Sie das Modell „trainieren“ und die Änderungen veröffentlichen. Das neu trainierte Modell wird automatisch für die Generierung von Vorhersagen in Dynamics 365 Finance aufgenommen.
-
-## <a name="release-details"></a>Freigabedetails
-
-Die öffentliche Finance Insights-Vorschau ist für Testbereitstellungen in den Vereinigten Staaten von Amerika, Europa und Großbritannien verfügbar. Microsoft fügt schrittweise Unterstützung für weitere Regionen hinzu.
-
-Öffentliche Vorschaufunktionen sollten nur in Sandbox-Umgebungen der Stufe 2 aktiviert werden. Einrichtungs- und KI-Mopelle, die in einer Sandbox-Umgebung erstellt werden, können möglicherweise nicht in der Produktionsumgebung migriert werden. Weitere Informationen finden Sie unter [Ergänzende Nutzungsbedingungen für Microsoft Dynamics 365 Vorschauen](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

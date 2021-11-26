@@ -75,14 +75,14 @@ Die folgende Tabelle enthält Beispiele, die zeigen, wie sich verschiedene Einst
 
 | Freigegebenes Produkt: Lieferant | Standardmäßige Auftragseinstellung: Vorlaufzeit | Artikelabdeckung: Lieferant überschreiben | Artikelabdeckung: Vorlaufzeit überschreiben | Kaufvertrag: Lieferant | Kaufvertrag: Lieferzeit | Kaufvertrag: Vorlaufzeit ignorieren | Resultierender Anbieter | Resultierende Vorlaufzeit |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001** _ | _*_1_*_ | Nr. | Nr. | US003 | 3 | Nr. | _ *US001** | **1** |
-| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Nr. | _ *US002** | **2** |
-| *(Leer)* | 1 | Nr. | Nr. | ***US003** _ | _*_3_*_ | Nr. | _ *US003** | **3** |
-| *(Leer)* | ***1** _ | Nr. | Nr. | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
-| *(Leer)* | ***1** _ | _*_Ja: US002_*_ | Nr. | US003 | 3 | Nr. | _ *US002** | **1** |
-| *(Leer)* | ***1** _ | _*_Ja: US002_*_ | Nr. | US003 | 3 | Nr. | _ *US002** | **1** |
-| *(Leer)* | 1 | Nr. | Ja: 2 | ***US003** _ | _*_3_*_ | Nr. | _ *US003** | **3** |
-| *(Leer)* | 1 | Nr. | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | _ *US003** | **2** |
+| ***US001** _ | _*_1_*_ | Nein | Nein | US003 | 3 | Nein | _ *US001** | **1** |
+| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Nein | _ *US002** | **2** |
+| *(Leer)* | 1 | Nein | Nein | ***US003** _ | _*_3_*_ | Nein | _ *US003** | **3** |
+| *(Leer)* | ***1** _ | Nein | Nein | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
+| *(Leer)* | ***1** _ | _*_Ja: US002_*_ | Nein | US003 | 3 | Nein | _ *US002** | **1** |
+| *(Leer)* | ***1** _ | _*_Ja: US002_*_ | Nein | US003 | 3 | Nein | _ *US002** | **1** |
+| *(Leer)* | 1 | Nein | Ja: 2 | ***US003** _ | _*_3_*_ | Nein | _ *US003** | **3** |
+| *(Leer)* | 1 | Nein | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

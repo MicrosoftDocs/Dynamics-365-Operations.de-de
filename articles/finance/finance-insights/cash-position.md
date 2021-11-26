@@ -2,7 +2,7 @@
 title: Bargeldposition
 description: In diesem Thema wird beschrieben, wie die Funktion zur Cashflow-Planung die Bargeldposition eines Unternehmens für bestimmte Zeiten vorhersagt. Außerdem werden die Optionen beschrieben, mit denen Prognosen für verschiedene Zeiträume angezeigt werden können.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: e54caee1e7d703bb134593412bdad77b3af5ab38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386313"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752879"
 ---
 # <a name="cash-position"></a>Bargeldposition
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Die Bargeldposition ist die Projektion des Cashflows, die für die nahe Zukunft prognostiziert wird. Sie basiert auf der Projektion von Geldeingängen von Debitoren, die ausstehende Rechnungen und Bestellungen bezahlen, sowie auf der Projektion von Barauszahlungen, die an Kreditoren für Kaufrechnungen und Bestellungen gezahlt werden.
 
@@ -44,8 +45,5 @@ Der untere Teil der Registerkarte **Bargeldposition** zeigt Details zur Position
 - Das **Bankkonto**-Raster zeigt die Auswirkungen der erwarteten Geldein- und -abgänge auf den Banksaldo.
 
 Erstellen Sie eine Momentaufnahme, um die Bargeldposition zu speichern und zu bearbeiten. Weitere Informationen zum Arbeiten mit Momentaufnahmen, finden Sie unter [Übersicht über Momentaufnahmen](payment-snapshots.md).
-
-#### <a name="privacy-notice"></a>Datenschutzhinweis
-Vorschauen (1) wenden möglicherweise weniger Datenschutz- und Sicherheitsmaßnahmen an als der Dynamics 365 Finance and Operations-Dienst, (2) sind nicht in der Service Level Agreement (SLA) für diesen Dienst enthalten, (3) sollten nicht zur Verarbeitung personenbezogener Daten oder anderer Daten verwendet werden, die gesetzlichen oder behördlichen Compliance-Anforderungen unterliegen, und (4) hat begrenzten Support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

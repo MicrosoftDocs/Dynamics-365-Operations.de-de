@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 986abfaef81474571de7db179253c4d76f65d4bec180fa9f355f3218ddbb96ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ceedd8b42383dc1334f472ba754ac3e18261b9d
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746818"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777814"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Umlagerungsaufträge aus der Lagerort-App erstellen
 
@@ -36,7 +36,7 @@ Bevor Sie diese Funktion nutzen können, müssen Sie die Funktion und ihre Vorau
 1. Aktivieren Sie dann die Funktion *Umlagerungsaufträge aus der Lagerort-App erstellen*, die wie folgt aufgeführt ist:
     - **Module** ‑ Lagerortverwaltung
     - **Funktionsname**: Erstellen und Verarbeiten von Umlagerungsaufträgen über die Lagerort-App
-1. Um die Verarbeitung der ausgehenden Lieferungen zu automatisieren, müssen Sie auch die Funktion [Ausgehende Lieferungen aus Batchverarbeitungsaufträgen bestätigen](confirm-outbound-shipments-from-batch-jobs.md) aktivieren. Diese Funktion ist aufgeführt als:
+1. Um die Verarbeitung der ausgehenden Lieferungen zu automatisieren, müssen Sie auch die Funktion [Ausgehende Lieferungen aus Batchverarbeitungsaufträgen bestätigen](confirm-outbound-shipments-from-batch-jobs.md) aktivieren. Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren oder zu deaktivieren. Hier wird die Funktion als aufgeführt:
     - **Module** ‑ Lagerortverwaltung
     - **Funktionsname**: Ausgehende Lieferungen aus Batchverarbeitungsaufträgen bestätigen
 

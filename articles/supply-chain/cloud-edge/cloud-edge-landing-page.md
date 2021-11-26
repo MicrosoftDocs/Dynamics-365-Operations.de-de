@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
+ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471739"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7733438"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skalierungseinheiten in einer verteilten Hybridtopologie
 
@@ -32,8 +32,8 @@ Unternehmen, die mit Fertigung und Vertrieb arbeiten, müssen in der Lage sein, 
 
 Eine verteilte Hybridtopologie führt das Konzept von *Skalierungseinheiten* ein, die in der Werkstatt und am Lagerort eine Verteilung der Arbeitslasten auf verschiedene Umgebungen ermöglichen. Diese Funktionalität kann dazu beitragen, die Leistung zu verbessern, Serviceunterbrechungen zu verhindern und die Betriebszeit zu maximieren. Skalierungseinheiten werden über die folgenden Add-Ins für Ihr Supply Chain Management-Abonnement bereitgestellt:
 
-- Cloud Scale Unit Add-In für Dynamics 365 Supply Chain Management (*verfügbar ab April 2021*)
-- Edge Scale Unit Add-In für Dynamics 365 Supply Chain Management (*demnächst verfügbar*)
+- Cloud Scale Unit Add-in für Dynamics 365 Supply Chain Management
+- Edge Scale Einheit Add-in für Dynamics 365 Supply Chain Management
 
 Die Arbeitsauslastungsfunktionen werden kontinuierlich durch schrittweise Verbesserungen freigegeben.
 
@@ -51,21 +51,12 @@ Sie können Ihre Hub-Umgebung und Cloud-Skalierungseinheiten für ausgewählte A
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedizierte Arbeitsauslastungen für die Lagerortverwaltung in einer Scale Unit
 
-Die Arbeitsauslastung der Lagerortverwaltung ist die erste verteilte Arbeitsauslastung für Skalierungseinheiten, die allgemein verfügbar gemacht wurde.
-
-Für die Lagerortverwaltung bieten Skalierungseinheiten die folgenden Funktionen:
-
-- Das System kann ausgewählte Wellenmethoden für Verkaufsaufträge und Wiederbeschaffung von Bedarfen verarbeiten.
-- Lagerort-Mitarbeiter können den Verkauf und die Wiederbeschaffung von Waren über die Warehouse Management Mobile App abwickeln.
-- Lagerort-Mitarbeiter können über die Warehouse Management Mobile App den Bestand abfragen.
-- Lagerort-Mitarbeiter können mit der Warehouse Management Mobile App Bestandsbewegungen erstellen und ausführen.
-- Lagerort-Mitarbeiter können mit der Warehouse Management Mobile App Einkaufsbestellungen registrieren und Einlagerungen vornehmen.
-
+Die Arbeitsauslastung der Lagerortverwaltung ermöglicht es Ihnen, Lagerortverwaltungsprozesse in einer isolierten Bereitstellung auszuführen.
 Weitere Informationen finden Sie unter [Arbeitsauslastungen in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedizierte Funktionalitäten für die Arbeitsauslastung bei der Fertigungsausführung in einer Skalierungseinheit
 
-Die erste Version der Fertigungsarbeitsauslastung befindet sich derzeit in der Vorschau und bietet die folgenden Funktionen:
+Die Fertigungsarbeitsauslastung bietet die folgenden Fähigkeiten:
 
 - Maschinenbediener und Werkstattleiter können auf den operativen Produktionsplan zugreifen.
 - Maschinenbediener können den Plan auf dem neuesten Stand halten, indem sie diskrete und Prozessfertigungsaufträge ausführen.
@@ -191,17 +182,33 @@ Microsoft prüft Ihren Antrag und informiert Sie über eine E-Mail an die Adress
 
 Nach Abschluss des Onboarding können Sie über den Port Skalierungseinheiten und Arbeitsauslastungen konfigurieren.
 
-### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Verwalten Sie Cloud-Skalierungseinheiten und Arbeitsauslastungen mithilfe des Scale Unit Manager-Portals
+### <a name="manage-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Verwalten Sie Skalierungseinheiten und Arbeitsauslastungen mithilfe des Scale Unit Manager-Portals
 
 Gehen Sie zum [Scale Unit Manager-Portal](https://aka.ms/SCMSUM), und melden Sie sich mit Ihrem Mandanten-Konto an. Auf der Seite **Skalierungseinheiten konfigurieren** können Sie eine Hub Umgebung hinzufügen, wenn sie nicht bereits aufgelistet ist. Sie können dann den Hub auswählen, den Sie mit Skalierungseinheiten und Arbeitsauslastungen konfigurieren möchten.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Erfahrung mit Skalierungseinheiten und Arbeitsauslastung.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale Unit Manager Portal, Seite „Skalierungseinheiten konfigurieren“.":::
 
 Um eine oder mehrere Skalierungseinheiten hinzuzufügen, die in Ihrem Abonnement verfügbar sind, wählen Sie **Skalierungseinheiten hinzufügen**.
 
 Verwenden Sie auf der Registerkarte **Definierte Arbeitsauslastungen** die Schaltfläche **Arbeitsauslastung erstellen**, um einer Ihrer Skalierungseinheiten eine Arbeitsauslastung hinzuzufügen. Für jede Arbeitsauslastung müssen Sie den Kontext der Prozesse angeben, die zur Arbeitsauslastung gehören sollen. Bei Arbeitsauslastungen für die Lagerortverwaltung ist der Kontext ein bestimmtes Lager an einem bestimmten Standort und einer bestimmten juristischen Entität.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Erstellung von Arbeitsauslastung.":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Dialogfeld „Arbeitsauslastungen definieren“.":::
+
+#### <a name="manage-workloads"></a>Arbeitsauslastungen verwalten
+
+Wenn eine oder mehrere Arbeitsauslastungen aktiviert sind, verwenden Sie die Option **Arbeitsauslastungen verwalten** zum Initiieren und Verwalten von Prozessen, wie sie in der folgenden Tabelle aufgeführt sind.
+
+| Bearbeiten | Description |
+|---|---|
+| Skalierungseinheitenkommunikation anhalten | Pipelinenachrichten zwischen dem Hub und einer Skalierungseinheit anhalten. Dieser Prozess stoppt die Kommunikation und entleert die Datenpipeline zwischen dem Hub und den Skalierungseinheiten. Sie müssen diesen Prozess ausführen, bevor Sie einen Supply Chain Management-Wartungsvorgang entweder auf dem Hub oder der Skalierungseinheit ausführen, aber Sie können dies auch in anderen Situationen verwenden. |
+| Skalierungseinheitenkommunikation fortsetzen | Pipelinenachrichten zwischen dem Hub und einer Skalierungseinheit fortsetzen. Möglicherweise müssen Sie diesen Prozess verwenden, nachdem Sie beispielsweise einen Supply Chain Management-Wartungsvorgang auf dem Hub oder der Skalierungseinheit ausgeführt haben. |
+| Arbeitsauslastungen aktualisieren | Synchronisieren Sie neue Funktionen zwischen den Arbeitsauslastungen von Hub und Skalierungseinheiten. Sie müssen diesen Prozess beispielsweise verwenden, wenn die Wartung dazu geführt hat, dass sich die Datenaustauschabfragen geändert haben und/oder der Arbeitsauslastung neue Tabellen oder Felder hinzugefügt wurden. |
+| Arbeitsauslastung auf eine Skalierungseinheit übertragen | Planen Sie die Verschiebung einer Arbeitsauslastung, die derzeit auf dem Hub ausgeführt wird, in eine Skalierungseinheit. Wenn dieser Prozess ausgeführt wird, erfolgt die Synchronisierung der Daten, und sowohl der Hub als auch die Skalierungseinheit werden so eingestellt, dass sie die Eigentümerschaft der Arbeitsauslastung ändern. |
+| Skalierungseinheit zu Hub übertragen | Planen Sie die Verschiebung einer Arbeitsauslastung, die derzeit auf der Skalierungseinheit ausgeführt wird, in die Hub. Wenn dieser Prozess ausgeführt wird, erfolgt die Synchronisierung der Daten, und sowohl der Hub als auch die Skalierungseinheit werden so eingestellt, dass sie die Eigentümerschaft der Arbeitsauslastung ändern.
+| Notfallübergang zum Hub | <p>Übertragen Sie sofort eine vorhandene Arbeitsauslastung an den Hub. *Dieser Prozess ändert nur die Eigentümerschaft der Daten, die derzeit auf dem Hub verfügbar sind.*</p><p><strong>Warnung:</strong> Dieser Prozess kann zu Datenverlust bei nicht synchronisierten Daten und zum Ausfall der Geschäftsverarbeitung führen. Daher sollte er nur in Notfällen verwendet werden, wenn Geschäftsprozesse auf dem Hub verarbeitet werden müssen, da es in der Skalierungseinheit einen Ausfall gibt, der nicht innerhalb einer angemessenen Zeit behoben werden kann.</p> |
+| Nutzung der verteilten Topologie einstellen | Entfernen Sie eine Skalierungseinheitenbereitstellung und führen Sie sie nur auf dem Hub aus, ohne Verarbeitung der Arbeitsauslastung. |
+
+:::image type="content" source="media/sum-manage-workloads.png" alt-text="Erfahrung mit Skalierungseinheiten und Arbeitsauslastung.":::
 
 > [!TIP]
 > Im Laufe der Zeit werden der Scale Unit Manager-Umgebung schrittweise Verbesserungen hinzugefügt, um das Lebenszyklusverwaltung zu vereinfachen. Die spezifischen Funktionen für die aktuelle Version sind in einem Onboarding-Handbuch dokumentiert, das Kunden zur Verfügung steht, die gerade das Onboarding der verteilten Hybridtopologie für Supply Chain Management durchführen. <!-- KFM: Add a link to the handbook when it is published -->

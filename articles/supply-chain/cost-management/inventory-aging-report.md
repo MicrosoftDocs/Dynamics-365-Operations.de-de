@@ -42,7 +42,7 @@ Das Beispielsystem enthält die folgenden Einstellungen für die Speicherabmessu
 | Name      | Aktiv | Physischer Bestand | Wertmäßiger Bestand |
 |-----------|--------|--------------------|---------------------|
 | Site      | Ja    | Ja                | Ja                 |
-| Lagerort | Ja    | Ja                | Nr.                  |
+| Lagerort | Ja    | Ja                | Nein                  |
 
 ### <a name="inventory-model"></a>Lagermodell
 

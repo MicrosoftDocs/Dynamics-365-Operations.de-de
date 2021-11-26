@@ -178,7 +178,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die mit Dynamicse AX 2012 Enterprise Portal (EP) verknüpften Metadatenartefakt sind veraltet, da EP in den Finance and Operations-Apps nie unterstützt wurde. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. |
+| **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Webclient |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Der gesamte EP-Code soll in der Version vom Oktober 2021 entfernt werden. |
@@ -335,7 +335,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Navigations-URLs, die in vom Dienst gerenderte Dokumente eingebettet sind, können vertrauliche Geschäftsdaten enthalten. Wir entfernen die Unterstützung für eingebettete Drillthrough-Links in Dokumenten als Sicherheitsmaßnahme, um die Kundendaten weiter zu schützen. Durch diese Änderung profitieren Benutzer auch von einer verbesserten Leistung bei der interaktiven Erstellung von Dokumenten.  |
-| **Ersetzt durch eine andere Funktion?**   | Nr. |
+| **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Bericht |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Diese Funktion wird aktiv aus dem Dienst entfernt.<br><br>Der moderne Client bietet zahlreiche Optionen zum Erstellen von Ansichten, einschließlich automatisch generierter Links zur Unterstützung der Navigation in der Anwendung. Vom Dienst bereitgestellte paginierte Dokumente werden für externe Kommunikation empfohlen, die per E-Mail gesendet, archiviert und für Empfänger gedruckt werden. Wir haben die Vorschau von Dokumenten direkt im Browser verbessert, der direkten Zugriff auf lokale Drucker bietet. Weitere Informationen finden Sie unter [Vorschau von PDF-Dokumenten mit einem eingebetteten Viewer](../analytics/preview-pdf-documents.md). |

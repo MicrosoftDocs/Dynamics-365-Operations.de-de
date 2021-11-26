@@ -1,8 +1,8 @@
 ---
 title: Parameter in Human Resources konfigurieren
 description: Dieses Thema erklärt, wie Sie firmenspezifische Parameter in Dynamics 365 Human Resources festlegen.
-author: andreabichsel
-ms.date: 06/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 476f44c665adb2918e7cd882d4ea873b4b4f94fa33a74dc96d3eccc74b676ce5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739250"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771434"
 ---
 # <a name="configure-human-resources-parameters"></a>Parameter in Human Resources konfigurieren
 
@@ -65,7 +65,7 @@ Die Einstellungen auf der Registerkarte **Allgemein** definieren die Darstellung
 
 Die Einstellungen auf der Registerkarte **Rekrutierung** legen die Dokumenttypen fest, die für die Korrespondenz verwendet werden, die automatisch an Bewerber gesendet wird. Sie können auch das Rekrutierungsprojekt angeben, das für Spontanbewerbungen verwendet wird.
 
-Der für die Alterung der Rekrutierungsprojekte definierte Zeitraum bestimmt die Rekrutierungsprojekte, die auf der Kachel **Alterungsprojekte** im Arbeitsbereich **Rekrutierungsmanagement** enthalten sind. Der für die Bewerbungsfrist-Warnung definierte Zeitraum wird verwendet, um Rekrutierungsprojekte, die sich ihrer Bewerbungsfrist nähern, auf der Kachel **Bewerbungsfrist nähert sich** im Arbeitsbereich **Rekrutierung** anzuzeigen.
+Die Periode, die für die **Personalbeschaffungsprojektfälligkeit** definiert wird, bestimmt die Personalbeschaffungsprojekte, die auf der Kachel **Fälligkeitsdatum-Projekte** im Arbeitsbereich **Einstellungsverwaltung** eingeschlossen wird. Die Periode, die für die Bewerbungsfristwarnung definiert ist, wird verwendet, um Personalbeschaffungsprojekte, deren Bewerbungsfrist demnächst abläuft im Arbeitsbereich **Personalbeschaffung** auf der Kachel **Bewerbungsfrist läuft demnächst ab** anzuzeigen.
 
 Weitere Informationen zur Rekrutierung finden Sie unter [Bewerbung von Kandidaten](hr-personnel-recruit.md).
 
@@ -107,20 +107,20 @@ Auf der Registerkarte FMLA legen Sie die FMLA-Berechtigungsvoraussetzungen und d
 
 ## <a name="employee-self-service"></a>Mitarbeiter-Self-Service
 
-Die Einstellungen auf der Registerkarte **Mitarbeiter-Self-Service** beeinflussen, wie der Mitarbeiter-Self-Service den Mitarbeitern erscheint. Auf dieser Registerkarte können Sie:
+Die Einstellungen auf der Registerkarte **Mitarbeiter-Self-Service** beeinflussen, wie der **Mitarbeiter-Self-Service** den Mitarbeitern erscheint. Auf dieser Registerkarte können die folgenden Aufgaben ausgeführt werden:
 
-- Einen Namen für den Arbeitsbereich des Mitarbeiter-Self-Service eingeben
+- Einen Namen für den Arbeitsbereich des **Mitarbeiter-Self-Service** eingeben
 - auswählen, welche Informationen ein Manager für Mitarbeiter eingeben kann
 - Nützliche Links für Mitarbeiter hinzufügen
 - Mitarbeitern das Hinzufügen oder Bearbeiten von geschäftlichen Kontaktdetails verbieten. Weitere Informationen finden Sie unter [Bearbeiten von persönlichen Informationen einschränken](hr-employee-self-service-restrict-editing.md).
 
-Weitere Informationen zum Festlegen des Mitarbeiter-Self-Service finden Sie unter [Übersicht über den Mitarbeiter- und Manager-Self-Service](hr-employee-manager-self-service-overview.md).
+Weitere Informationen zum Festlegen des **Mitarbeiter-Self-Service** finden Sie unter [Übersicht über den Mitarbeiter- und Manager-Self-Service](hr-employee-manager-self-service-overview.md).
 
 ![Registerkarte Mitarbeiter-Self-Service.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Manager-Self-Service
 
-Die Einstellungen auf der Registerkarte **Manager-Self-Service** beeinflussen, was Manager im Manager-Self-Service sehen. Auf dieser Registerkarte können Sie die folgenden Optionen konfigurieren:
+Die Einstellungen auf der Registerkarte **Manager-Self-Service** beeinflussen, was Manager im **Manager-Self-Service** sehen. Auf dieser Registerkarte können Sie die folgenden Optionen konfigurieren:
 
 - Der Bereich für auslaufende Datensätze
 - Informationen, die Manager in auslaufenden Datensätzen sehen können
@@ -128,13 +128,13 @@ Die Einstellungen auf der Registerkarte **Manager-Self-Service** beeinflussen, w
 - Ansichten von auslaufenden Arbeitskräften
 - Nützliche Links für Manager
 
-Weitere Informationen zum Einrichten des Manager-Self-Service finden Sie unter [Übersicht über den Mitarbeiter- und Manager-Self-Service](hr-employee-manager-self-service-overview.md).
+Weitere Informationen zum Einrichten des **Manager-Self-Service** finden Sie unter [Übersicht über den Mitarbeiter- und Manager-Self-Service](hr-employee-manager-self-service-overview.md).
 
 ![Registerkarte Manager-Self-Service.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Vorteilsverwaltung
 
-Auf der Registerkarte Manager-Selfservice können Sie E-Mail-Optionen für den Manager-Selfservice konfigurieren. Informationen zum Festlegen und Verwenden der Vorteilsverwaltung finden Sie unter [Übersicht zur Vorteilsverwaltung](hr-benefits-management-overview.md).
+Auf der Registerkarte **Vorteilsverwaltung** können Sie E-Mail-Optionen für den die Vorteilsverwaltung konfigurieren. Informationen zum Einrichten und Verwenden der Vorteilsverwaltung finden Sie unter [Übersicht zur Vorteilsverwaltung](hr-benefits-management-overview.md).
 
 ![Registerkarte „Vorteilsverwaltung“.](./media/hr-setup-parameters-benefits-management.png)
 

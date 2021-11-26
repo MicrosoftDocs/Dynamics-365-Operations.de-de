@@ -92,8 +92,8 @@ Die folgenden Tabellen zeigen die Werte, die auf den Registerkarten **Allgemeine
     | Transaktionsdatum       | 01.01.2022 |
     | Verbleibende Perioden      | 84       |
     | Buchen                   | Ja      |
-    | Vorschau vor dem Buchen anzeigen | Nr.       |
-    | Buch schließen             | Nr.       |
+    | Vorschau vor dem Buchen anzeigen | Nein       |
+    | Buch schließen             | Nein       |
 
 6. Ein Journaleintrag für Wertminderungsaufwand wurde erstellt und gebucht. Um diesen anzuzeigen, gehen Sie zur Leasingerfassung der Anlage im Leasingbuch. Beachten Sie, dass der Betrag der Wertminderung dem Buchungskonto für Wertminderungsaufwendungen belastet und das Buchungskonto für Nutzungsrecht am Leasingobjekt gutgeschrieben wurde.
 7. Um den Nettoeffekt der Wertminderung anzuzeigen, gehen Sie zu den Tabellen für Verbindlichkeiten und Anlagentransaktionen. Beachten Sie, dass der Wertminderungsaufwand das Nutzungsrecht am Leasingobjekt verringert hat, der Buchwert der Leasingverbindlichkeit sich jedoch nicht geändert hat.

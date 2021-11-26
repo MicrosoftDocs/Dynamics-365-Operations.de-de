@@ -344,7 +344,7 @@ In der Produktion, wenn Sie das Feld **Ereignistyp** auf *Fertigmeldung* und das
 </tr>
 <tr>
 <td>Feste Menge: 1</td>
-<td>Nr.</td>
+<td>Nein</td>
 <td>
 <p>Chargennummer: Nein</p>
 <p>Seriennummer: Nein</p>
@@ -399,7 +399,7 @@ In der Produktion, wenn Sie das Feld **Ereignistyp** auf *Fertigmeldung* und das
 </tr>
 <tr>
 <td>Feste Menge: 2</td>
-<td>Nr.</td>
+<td>Nein</td>
 <td>
 <p>Chargennummer: Ja</p>
 <p>Seriennummer: Ja</p>

@@ -2,7 +2,7 @@
 title: Cashflowplanung
 description: Dieses Thema bietet einen Überblick über den Cashflow-Planungsprozess. Es wird auch erklärt, wie Cashflow-Planung in andere Module im System integriert wird.
 author: panolte
-ms.date: 09/23/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 5ad3b2444f194f8324a309df32612a5377851995
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7547954"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752903"
 ---
 # <a name="cash-flow-forecasting"></a>Cashflowplanung
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Mit den Tools für die Cashflow-Planung können Sie kommenden Cashflow- und Währungsbedarf analysieren, damit Sie eine Vorkalkulation des künftigen Bargeldbedarfs des Unternehmens durchführen können. Um eine zuverlässige Cashflow-Planung zu erhalten, müssen Sie folgende Aufgaben vollständig ausführen:
 
@@ -93,9 +94,12 @@ Budgetregistereinträge können durch Personalisierung individuell in die Cashfl
 Bestandslieferungs- und Bedarfsplanung kann in die Cashflowplanung einbezogen werden. Auf der Registerkarte **Bestandverwaltung** der Seite **Cashflow-Planungssetup** wählen Sie das Planungsmodell aus, das in die Caschflow-Planung einbezogen werden sollen. Das Einbeziehen in der Cashflow-Planung kann für einzelne Lieferungs- und Bedarfsplanungspositionen überschrieben werden.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Einrichten von Dimensionen für die Cashflow-Planung
-Auf der neuen Registerkarte auf der **Einrichtung der Cashflow-Planung** Seite können Sie steuern, welche Finanzdimensionen für die Filterung im **Cashflow-Planung**-Arbeitsbereich verwendet werden sollen. Diese Registerkarte wird nur angezeigt, wenn die Cashflow-Planungsfunktion aktiviert ist. 
+Auf der neuen Registerkarte auf der **Einrichtung der Cashflow-Planung** Seite können Sie steuern, welche Finanzdimensionen für die Filterung im Arbeitsbereich **Cashflow-Planung** verwendet werden sollen. Diese Registerkarte wird nur angezeigt, wenn die Cashflow-Planungsfunktion in Finance Insights aktiviert ist. 
 
 Wählen Sie auf der Registerkarte **Dimensionen** aus der Liste der zur Filterung verwendeten Dimensionen aus und verschieben Sie sie mit den Pfeiltasten in die rechte Spalte. Zum Filtern von Cashflow-Planungsdaten können nur zwei Dimensionen ausgewählt werden. 
+
+### <a name="setting-up-external-source"></a>Externe Quelle einrichten
+Externe Daten können eingegeben oder in Cashflow-Planungen importiert werden. Bevor externe Daten eingegeben oder importiert werden, müssen externe Quellen eingerichtet werden. Richten Sie auf der Registerkarte **Externe Quelle** externe Cashflow-Kategorien ein. Eine Kategorie kann entweder **ausgehend** oder **eingehend** sein. **Liquidität** sollte als Buchungsart gewählt werden. Wählen Sie im Raster **Einstellungen juristische Person** wählen Sie die juristischen Personen und die entsprechenden Hauptkonten aus, für die die externen Cashflow-Kategorien gelten.
 
 ### <a name="project-management-and-accounting"></a>Projektverwaltung und -buchhaltung
 

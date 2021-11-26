@@ -1,8 +1,8 @@
 ---
 title: Beurlaubungs- und Abwesenheitsparameter konfigurieren
-description: Definieren Sie Personalparameter für Urlaub und Abwesenheit in Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 11/02/2020
+description: In diesem Thema wird beschrieben, wie Sie Personalverwaltungsparameter für Urlaub und Abwesenheit in Dynamics 365 Human Resources definieren.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab4b2b3adefa388acfadc77c7b25a6b47d01571f0e58f6ab81101e25d1b548e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d89c4b22d71057fd3b398c91e1fbf04112e4a9
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777958"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728856"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Beurlaubungs- und Abwesenheitsparameter konfigurieren
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Bevor Sie Urlaubs- und Abwesenheitspläne einrichten in Dynamics 365 Human Resourcesi st es eine gute Idee, die Einstellungen für alle zugehörigen Personalparameter zu überprüfen, einschließlich:
+Bevor Sie Urlaubs- und Abwesenheitspläne in Dynamics 365 Human Resources einrichten, ist es eine gute Idee, die Einstellungen für alle zugehörigen **Personalverwaltungsparameter** zu überprüfen, einschließlich:
 
 - Nummernfolge für Urlaubsanträge
 - Family and Medical Leave Act (FMLA) Einstellungen
@@ -74,7 +74,7 @@ Bevor Sie Urlaubs- und Abwesenheitspläne einrichten in Dynamics 365 Human Resou
 
     - Wählen Sie **Bilanzberechnung** aus, um Salden anzuzeigen, die ab heute oder ab dem Abgrenzungszeitraum angezeigt werden. Wenn Sie **Saldo ab heute** in der Bilanz auswählen, wird die Summe aller Rückstellungen, Anpassungen und Anforderungen bis heute angezeigt. Wenn Sie **Saldo zum Abgrenzungszeitraum** auswählen, zeigt der Saldo die Summe aller Rückstellungen, Anpassungen und Anforderungen ab dem Abgrenzungszeitraum an, der durch die Häufigkeit im Urlaubsplan definiert ist. 
 
-    - Legen Sie die Startzeit für den Vortragsablaufuhrzeit-Batchauftrag fest.  
+    - Legen Sie die **Startzeit** für den **Vortragsablaufuhrzeit**-Batchauftrag fest.  
     
     - Wählen Sie **Ja** für **Mitarbeitern erlauben, Urlaub zu kaufen** und **Mitarbeitern erlauben, Urlaub zu verkaufen** aus. Wenn Sie für diese Optionen **Ja** auswählen, können Sie Richtlinien zum Kauf und Verkauf von Urlaub erstellen und es Mitarbeitern ermöglichen, Anforderungen zum Kaufen und Verkaufen von Urlaubsanforderungen einzureichen.
 

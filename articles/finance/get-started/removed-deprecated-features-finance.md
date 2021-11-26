@@ -40,7 +40,7 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Ausgenommen von der Verarbeitung elektronischer Nachrichten für die Zusammenarbeit mit dem ungarischen Online-Abrechnungssystem |
-| **Ersetzt durch eine andere Funktion?**   | Nr. |
+| **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Bewerbung |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Bis zum 15. April 2022 planen wir, die Konfiguration des Formats „RTIR-Abfrage von Rechnungsdatenanforderungen (HU)“ nicht mehr zu unterstützen. |

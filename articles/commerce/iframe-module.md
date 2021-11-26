@@ -2,7 +2,7 @@
 title: IFrame-Modul
 description: Dieses Thema behandelt das iFrame-Modul und beschreibt, wie es Webseiten in Microsoft Dynamics 365 Commerce hinzugefügt wird.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 570901e3afca82abd21172df4c0b6fc575b57262f2b5d1decad11cabc00db31d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767289"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754013"
 ---
 # <a name="iframe-module"></a>Iframe-Modul
 
@@ -66,10 +66,13 @@ Gehen Sie wie folgt vor, um einer Seite ein iFrame-Modul hinzuzufügen und ein e
 1. Legen Sie weitere benötigte Eigenschaften fest, wie **Überschrift** und **Höhe**.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Gehen Sie zur Marketingseite Ihrer Website. Sie sollten sehen, dass das Video im iFrame-Modul gerendert wird.
- 
+
+> [!NOTE]
+> Da das iFrame-Modul externe Inhalte hostet, müssen Site-Autoren sicherstellen, dass die in einem iFrame-Modul gehosteten Inhalte nicht gegen die Richtlinien zur Inhaltseinschränkung des jeweiligen Marktes verstoßen. Wenn auf einer Seite, die das iFrame-Modul verwendet, eine Verletzung der Inhaltsrichtlinien vorliegt, kann der Site-Autor das iFrame-Modul entfernen, indem er die Seite im Site-Builder öffnet und **Modul entfernen** im iFrame-Modulsteckplatz auswählt, speichern Sie die Seite und veröffentlichen Sie sie erneut.
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Übersicht über die Modulbibliothek](starter-kit-overview.md)
+[Informationen zur Modulbibliothek](starter-kit-overview.md)
 
 [Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) verwalten](manage-csp.md)
 

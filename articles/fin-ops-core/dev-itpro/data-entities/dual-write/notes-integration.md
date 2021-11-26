@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e850b44479d36c16db3c993e196cd6bfdbc52ee7
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: d52ff69cfd7a81eb9f19a0ef498c6ceeea77b360
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416600"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782355"
 ---
 # <a name="note-integration"></a>Integration von Notizen
 
@@ -26,9 +26,9 @@ Im Verlauf von Geschäftsprozessen sammeln Benutzer von Microsoft Dynamics 365 
 
 Informationen über Kunden können folgendermaßen klassifiziert werden:
 
-+ **Umsetzbare Informationen, die ein Dynamics 365-Benutzer im Auftrag eines Kunden bearbeitet** – Contoso (ein Dynamics 365-Benutzer) führt beispielsweise eine Spielshow durch. Ein Kunde von Contoso (ein Debitor) möchte an der Spielshow teilnehmen. Der Kunde bittet einen Contoso-Mitarbeiter, einen Platz in der Spielshow für ihn zu buchen. Die Buchung erfolgt im Veranstaltungskalender von Contoso.
++ **Umsetzbare Informationen, die ein Dynamics 365-Benutzer im Auftrag eines Kunden bearbeitet** – Contoso (ein Dynamics 365-Benutzer) führt beispielsweise eine Spielshow durch. Ein Kunde von Contoso (ein Debitor) möchte an der Spielshow teilnehmen. Der Kunde bittet einen Contoso-Mitarbeiter, einen Platz in der Spielshow für ihn zu buchen. Die Buchung erfolgt im Veranstaltungskalender von Contoso.
 + **Umsetzbare Informationen für einen Dynamics 365-Benutzer** – Ein Kunde, der eine Surface-Einheit kauft, gibt beispielsweise spezielle Anweisungen ein, die darauf hinweisen, dass das Gerät vor der Lieferung in Geschenkverpackung verpackt werden sollte. Diese Anweisungen sind umsetzbare Informationen, die von dem Contoso-Mitarbeiter bearbeitet werden sollten, der für die Verpackung verantwortlich ist.
-+ **Nicht umsetzbare Informationen** – Ein Kunde besucht beispielsweise das Contoso-Geschäft und zeigt während seines Gesprächs mit einem Shopmitarbeiter Interesse an *Halo*-Games und Gamingzubehör. Der Shopmitarbeiter notiert diese Informationen. Die Produktempfehlungsmodul nutzt sie dann, um dem Kunden Empfehlungen zu geben.
++ **Nicht umsetzbare Informationen** – Ein Kunde besucht beispielsweise das Contoso-Geschäft und zeigt während seines Gesprächs mit einem Shopmitarbeiter Interesse an *Halo* Games und Spielezubehör. Der Shopmitarbeiter notiert diese Informationen. Die Produktempfehlungsmodul nutzt sie dann, um dem Kunden Empfehlungen zu geben.
 
 Im Allgemeinen werden umsetzbare Informationen als *Aktivitäten* in Finance and Operations- und Kundenbindungs-Apps erfasst. Nicht umsetzbare Informationen werden in Finance and Operations-Apps als *Notizen* und in Kundenbindungs-Apps als *Anmerkungen* erfasst.
 

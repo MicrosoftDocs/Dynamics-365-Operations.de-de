@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c2d7f140c0199b4b81a7b42220d5800d427be680
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577839"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778058"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerabwicklung eingehender Ladungen für Bestellungen
 
@@ -205,7 +205,7 @@ Die folgende Tabelle fasst die Auswirkungen der Einstellung **Mehrere Produktein
 | Mehrere Produkteingänge pro Ladung zulassen | Mengen laden | Ladungsstatus | Notiz |
 |---|---|---|---|
 | Wenn dieses Feld nicht verfügbar ist (Versionen vor 10.0.10) | <p>Die Lademenge wird so eingestellt, dass sie der registrierten Menge entspricht.</p><p>Wenn die Lademenge auf 0 (Null) aktualisiert wird, bedeutet das, dass keine Registrierung durchgeführt wurde und die Ladezeile gelöscht wurde.</p><p>Wenn die Last keine Lastlinien enthält, wird die Last gelöscht.</p> | _Eingegangen_ | Wenn für die registrierte Menge der Bestellposition mehrere Ladungen vorhanden sind, wird nur der Status der Ladung auf _Empfangen_ aktualisiert, von der aus der Beleg gebucht wurde. |
-| Nr. | <p>Die Lademenge wird so eingestellt, dass sie der registrierten Menge entspricht, die der Lade-ID zugeordnet ist.</p><p>Wenn für die Inventurtransaktion keine Lade-ID aufgezeichnet wurde, entspricht das Verhalten dem Verhalten in Versionen vor 10.0.10.</p> | _Eingegangen_ | |
+| Nein | <p>Die Lademenge wird so eingestellt, dass sie der registrierten Menge entspricht, die der Lade-ID zugeordnet ist.</p><p>Wenn für die Inventurtransaktion keine Lade-ID aufgezeichnet wurde, entspricht das Verhalten dem Verhalten in Versionen vor 10.0.10.</p> | _Eingegangen_ | |
 | Ja | Keine Aktualisierungen | _Empfangen_, wenn die gesamte registrierte Ladungsmenge gleich oder größer als die Ladungsmenge ist | |
 | Ja | Keine Aktualisierungen | _Empfangen_ oder _In Verarbeitung_, wenn die gesamte registrierte Ladungsmenge kleiner als die Ladungsmenge ist | |
 
@@ -267,7 +267,7 @@ Diese Szenarien erfordern die Funktion _Mehrere Produktbelegbuchungen pro Ladung
 
 1. Öffnen Sie den Arbeitsbereich **Funktionsverwaltung**. (Ausführliche Informationen zum Suchen und Verwenden dieses Arbeitsbereichs finden Sie unter [Funktionsverwaltungsübersicht](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Aktivieren Sie die Funktion _Ordnen Sie Bestelltransaktionen der Bestellung zu_, die wie folgt aufgelistet ist:
+1. Stellen Sie sicher, dass die Funktion _Zuordnung von Bestellbestandsbuchungen zur Ladung_ aktiviert ist. Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden. Die Funktion ist jedoch immer noch in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aufgeführt:
 
     - **Module:** _Lagerortverwaltung_
     - **Funktionsname:** _Ordnen Sie Bestelltransaktionen der Bestellung zu_

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfd1906200038c27e63f9434bba27e7146f4c80c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f1438ed6bcec485ff9665ffd9659c938f5cac478
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575607"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778130"
 ---
 # <a name="monitor-a-master-planning-run"></a>Einen Produktprogrammplanungslauf überwachen
 
@@ -33,7 +33,7 @@ Auf der Seite **Masterplanungsfortschritt anzeigen** können Sie Details zu hist
 Um diese Funktionalität zu nutzen, führen Sie die folgenden Schritte aus.
 
 1. Wählen Sie im Arbeitsbereich **Feature-Management** auf der Registerkarte **Neu** **Masterplanung Fortschrittsvisualisierung** in der Liste. Wenn die Funktion nicht auf der Registerkarte **Neu** erscheint, schauen Sie auf die Registerkarten **Nicht aktiviert** und **Alle**.
-1. Wählen Sie **Jetzt aktivieren**. Alternativ können Sie auch **Terminplanung** wählen und dann die Zeit auswählen, zu der die Funktion eingeschaltet werden soll.
+1. Wählen Sie **Jetzt aktivieren**. Alternativ können Sie auch **Terminplanung** wählen und dann die Zeit auswählen, zu der die Funktion eingeschaltet werden soll. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
 
 Auf der Seite **Masterplanungsfortschritt anzeigen** können sowohl historische Planungsaufträge als auch aktive Planungsaufträge angezeigt werden. 
 

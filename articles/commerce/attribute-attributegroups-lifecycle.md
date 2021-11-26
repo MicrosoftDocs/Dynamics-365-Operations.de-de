@@ -43,7 +43,7 @@ So kann beispielsweise ein Fernsehprodukt folgende Attribute haben.
 |            | Zusammengesetzte Eingaben         | 0 – 10                        | 2             |
 |            | Komponenten-Eingaben         | 0 – 10                        | 1             |
 | LCD        | 3D-fähig                 | Ja oder Nein                   | Ja           |
-|            | 3D-aktiviert               | Ja oder Nein                   | Nr.            |
+|            | 3D-aktiviert               | Ja oder Nein                   | Nein            |
 | Plasma     | Betriebstemperatur von      | 32–110 Grad              | 32            |
 |            | Betriebstemperatur bis        | 32–110 Grad              | 100           |
 | Projektion | Projektionstubus-Garantie | 6, 12 oder 18 Monate         | 12            |

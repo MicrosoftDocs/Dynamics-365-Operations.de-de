@@ -1,26 +1,26 @@
 ---
-title: Einrichten von Komponenten eines Einzelvorgangs
-description: In diesem Artikel werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können.
-author: andreabichsel
-ms.date: 06/24/2021
+title: Komponenten einer Stelle einrichten
+description: In diesem Thema werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 55f3edb53236734045e94ddd71461c739d3b5a8e0a2ac07a804dc2dfafabda57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754775"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731539"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Einrichten von Komponenten eines Einzelvorgangs
 
@@ -60,7 +60,7 @@ Stellenfunktionen beschreiben funktionale übergeordnete Kategorien und ordnen �
 Verwalten Sie Stellenfunktionen mithilfe der Seite **Stellenfunktionen**. Geben Sie auf der Seite **Stellenarten** einen Namen und eine kurze Beschreibung des Positionstyps ein.
 
 ## <a name="compensation"></a>Vergütung
-Um einem Mitarbeiter, der eine Position in einer Stelle hat, einen festen Vergütungsplan zuzuweisen, müssen Sie die Vergütungsstufen für die Stelle festlegen. Die Vergütungsstufe wird verwendet, wenn Mindest-, Mittel- und Höchstbeträge in einer Vergütungsstruktur (Vergütungsraster) festgelegt sind. Beim Anlegen eines festen Vergütungsplans wird die Vergütungsstruktur ausgewählt. Die Vergütungsstruktur enthält auch die Vergütungsstufe. Wenn Sie einen festen Vergütungsplan für einen Mitarbeiter auswählen, hängen die zur Auswahl stehenden Vergütungsstufen von der Stelle ab, der die Position des Mitarbeiters zugeordnet ist. Weitere Informationen über das Einrichten von Vergütungen finden Sie unter [Vergütungspläne](hr-compensation-overview.md).
+Um einem Mitarbeiter, der eine Position in einer Stelle hat, einen festen Vergütungsplan zuzuweisen, müssen Sie die Vergütungsstufen für die Stelle festlegen. Die **Vergütungsstufe** wird verwendet, wenn Mindest-, Mittel- und Höchstbeträge in einer Vergütungsstruktur (Vergütungsraster) festgelegt sind. Beim Anlegen eines festen Vergütungsplans wird die Vergütungsstruktur ausgewählt. Die Vergütungsstruktur enthält auch die Vergütungsstufe. Wenn Sie einen festen Vergütungsplan für einen Mitarbeiter auswählen, hängen die zur Auswahl stehenden Vergütungsstufen von der Stelle ab, der die Position des Mitarbeiters zugeordnet ist. Weitere Informationen über das Einrichten von Vergütungen finden Sie unter [Vergütungspläne](hr-compensation-overview.md).
 
 ## <a name="job-skills"></a>Stellenqualifikationen
 Stellenqualifikationen beschreiben die Fähigkeiten, die zur Ausübung einer Stelle erforderlich sind. Jeder Stellenqualifikation muss eine Qualifikationsstufe zugeordnet werden. Die Qualifikationsstufen sind benutzerdefiniert. Sie geben an, welches Wissen oder Können für die Qualifikation erforderlich ist. Unternehmen können beispielsweise numerische Stufen wie 1 bis 5 einrichten, wobei **1** auf einen Anfänger hinweist und **5** auf einen Experten hinweist. Alternativ können Unternehmen Stufen einrichten, die als **Anfänger**, **Mittelstufe** oder **Experte** gekennzeichnet sind. Nachdem die Qualifikationsstufe festgelegt wurde, kann auch die Wichtigkeit der Qualifikation eingestellt werden. Wenn zum Beispiel ein Buchhalter über solide Kenntnisse in Microsoft Excel verfügt, kann eine Qualifikation, die **Excel-Kenntnisse** genannt wird, erstellt werden. Die Qualifikationsstufe kann dann auf **Mittelstufe** und die Wichtigkeit kann auf **Am wichtigsten** eingestellt werden.

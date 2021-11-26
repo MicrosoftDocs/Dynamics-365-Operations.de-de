@@ -1,8 +1,8 @@
 ---
-title: Verteilen und Planen von Fragebögen
-description: In diesem Artikel wird beschrieben, wie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen.
-author: andreabichsel
-ms.date: 04/04/2017
+title: Fragebögen verteilen und planen
+description: In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,25 @@ ms.search.scope: Human Resources
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60354a3e7fed5403321d5ec4440cece84b13233bef80fcd5c5f61d72e5e3aa85
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a13f699c8c0951b32f7826e8cfe8d7dcf02a7f55
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755514"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729002"
 ---
-# <a name="distribute-and-schedule-questionnaires"></a>Verteilen und Planen von Fragebögen
+# <a name="distribute-and-schedule-questionnaires"></a>Fragebögen verteilen und planen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Artikel wird beschrieben, wie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen. 
+In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen. 
 
 Es gibt mehrere Möglichkeiten, einen Fragebogen zu verteilen:
 
--   Markieren Sie den Fragebogen als aktiv. Der Fragebogen ist für alle Mitarbeiter verfügbar, sofern keine Fragebogengruppe eingerichtet wird, um den Zugriff auf den Fragebogen zu beschränken.
+-   Markieren Sie den Fragebogen als **Aktiv**. Der Fragebogen ist für alle Mitarbeiter verfügbar, sofern keine Fragebogengruppe eingerichtet wird, um den Zugriff auf den Fragebogen zu beschränken.
 -   Zuweisen von Rechten zu einer Fragebogengruppe. Der Fragebogen ist dann für alle Mitglieder der ausgewählten Gruppe verfügbar.
 -   Erstellen von geplanten Antwortsitzungen. Der Fragebogen steht dann für eine bestimmte Person zur Verfügung.
 -   Zeitplan erstellen. Der Fragebogen kann dann für mehrere Personen verfügbar sein.

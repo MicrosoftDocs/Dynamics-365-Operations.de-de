@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: e3f14dd25a60f8d185f0e58a0612a322c5175ab2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579879"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778256"
 ---
 # <a name="work-split"></a>Arbeitsaufteilung
 
@@ -33,7 +33,7 @@ Mit der Arbeitsaufteilungsfunktion können Sie große Arbeitsaufträge (d.h. Arb
 
 Bevor Sie die Arbeitsteilungsfunktionalität verwenden können, müssen Sie die Funktion und ihre voraussetzende Funktion in Ihrem System einschalten. Administratoren können die [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktionen zu prüfen und sie bei Bedarf einzuschalten.
 
-Schalten Sie zuerst die vorausgesetzte *Organisationsweite Arbeitssperre* Funktion ein, wenn sie nicht bereits eingeschaltet ist. Im Arbeitsbereich **Funktionsverwaltung** ist diese Funktion wie folgt aufgeführt:
+Schalten Sie zuerst die vorausgesetzte *Organisationsweite Arbeitssperre* Funktion ein, wenn sie nicht bereits eingeschaltet ist. Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden. Die Funktion ist jedoch immer noch in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aufgeführt:
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Organisationsweite Arbeitssperre*

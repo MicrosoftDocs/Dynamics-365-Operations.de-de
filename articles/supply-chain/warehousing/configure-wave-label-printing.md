@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6b75dcb7d56648f3be291cb1c09ec57a53477ec0
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344173"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778082"
 ---
 # <a name="wave-label-printing"></a>Zyklusbeschriftungsdruck
 
@@ -53,7 +53,7 @@ Diese Verbesserungen machen es effizienter, Kartons zu etikettieren, bevor sie a
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Funktion für Wellenetikettendruck aktivieren
 
-Bevor Sie die Funktion *Wellenetikettendruck* verwenden können, muss sie in Ihrem System aktiviert sein. Administratoren können mit der Einstellung [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und ggf. aktivieren. Dort wird die Funktion folgendermaßen aufgelistet:
+Ab Supply Chain Management Version 10.0.21 ist diese Funktion obligatorisch, daher ist sie standardmäßig aktiviert und kann nicht wieder deaktiviert werden. Die Funktion ist jedoch immer noch in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aufgeführt:
 
 - **Module:** *Lagerortverwaltung*
 - **Funktionsname:** *Wellenetikettendruck*

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 64abe953f42519d508f547f22f1f2b94a7fa16ab
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.openlocfilehash: 3b5f0c6947944ec875c30fa912f830f245b5a48e
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715253"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777936"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.21. (Oktober 2021)
 
@@ -70,10 +70,10 @@ Die folgende Tabelle listet die Funktionen auf, die in 10.0.21 standardmäßig a
 | Umlagerungsauftragsstornierung | 9/1/2021 | 7/13/2020 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
 | Bestandserfassung entsperren | 9/1/2021 | 8/17/2020 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
 | Gespeicherte Ansichten für die Lagerverwaltung | 9/1/2021 | 30.09.2020 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
-| Navigation zur Stücklistenversion aus Stücklistenpositionen. | 9/1/2021 | 11/11/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
-| Maßeinheit und Einheitsmenge in Lagererfassungen verwenden | 9/1/2021 | 11/11/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Navigation zur Stücklistenversion aus Stücklistenpositionen | 9/1/2021 | 11/11/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Maßeinheit und Einheitsmenge in Bestandserfassungen verwenden | 9/1/2021 | 11/11/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
 | Leere Stapelverarbeitungsattributwerte zulassen | 9/1/2021 | 11/11/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
-| Positionsnummer von Bestandsübertragungsauftragpositionen automatisch erhöhen. | 9/1/2021 | 10/11/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
+| Positionsnummer von Bestandsübertragungsauftragpositionen automatisch erhöhen | 9/1/2021 | 10/11/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
 | Lagerbestandserfassungs-Genehmigungsworkflow | 9/1/2021 | 1/6/2020 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
 | Warnfunktion für die Parameter des Bestandsqualitätsmanagements aktivieren | 9/1/2021 | 10/7/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
 | Umlagerungsauftrag aus der Verkaufsposition erstellen | 9/1/2021 | 8/31/2019 | Standardmäßig aktiviert | Lager- und Lagerortverwaltung |
@@ -93,12 +93,12 @@ Die folgende Tabelle listet die Funktionen auf, die in 10.0.21 standardmäßig a
 | Gespeicherte Ansichten für freigegebene Produkte | 9/1/2021 | 30.09.2020 | Standardmäßig aktiviert | Produktinformationsverwaltung |
 | Verbesserungen der Dialogfelder „Genehmigen“ und „Einzelvorgänge übertragen“ | 9/1/2021 | 10/11/2019 | Standardmäßig aktiviert | Produktionssteuerung |
 | Das Kennzeichen für Fertigmeldung wurde zum Einzelvorgangslistengerät hinzugefügt. | 9/1/2021 | 8/31/2019 | Standardmäßig aktiviert | Produktionssteuerung |
-| Eine neue Schaltfläche „Pause stoppen“ wurde zur Seite „Einzelvorgangskarten-Terminal“ hinzugefügt. | 9/1/2021 | 2/19/2020 | Standardmäßig aktiviert | Produktionssteuerung |
+| Eine neue Schaltfläche „Pause stoppen“ wurde zur Seite „Einzelvorgangskarten-Terminal“ hinzugefügt | 9/1/2021 | 2/19/2020 | Standardmäßig aktiviert | Produktionssteuerung |
 | Teilweisen Zugang von Artikeln aus Fremdarbeit aktivieren und ein Problem bei der Berechnung von Ausschuss für Stücklistenpositionen vom Typ „Lieferant“ beheben. | 9/1/2021 | 11/11/2019 | Standardmäßig aktiviert | Produktionssteuerung |
 | Gespeicherte Ansichten zur Produktionssteuerung | 9/1/2021 | 8/17/2020 | Standardmäßig aktiviert | Produktionssteuerung |
 | Dynamics 365 Guides für die Herstellung | 9/1/2021 | 7/13/2020 | Standardmäßig aktiviert | Produktionssteuerung |
 | Produktionsumgebungsausführung | 9/1/2021 | 30.09.2020 | Standardmäßig aktiviert | Produktionssteuerung |
-| Funktion zum Sperren des Einzelvorgangs-Kartengeräts und des Einzelvorgangs-Kartenterminals zur Desinfektion. | 9/1/2021 | 5/10/2020 | Standardmäßig aktiviert | Produktionssteuerung |
+| Funktion zum Sperren von Jobkartengerät und Jobkartenterminal, damit sie saniert werden können | 9/1/2021 | 5/10/2020 | Standardmäßig aktiviert | Produktionssteuerung |
 | Gebührenzuteilung für einen Auftrag | 9/1/2021 | 30.09.2020 | Standardmäßig aktiviert | Vertrieb und Marketing |
 | Begrenzen Sie die Anzahl der Verkaufsaufträge, die für die Buchung ausgewählt werden können | 9/1/2021 | 9/1/2021 | Standardmäßig aktiviert | Vertrieb und Marketing |
 | Aktualisierungshistorie für Auftrag bereinigen | 9/1/2021 | 9/1/2021 | Standardmäßig aktiviert | Vertrieb und Marketing |

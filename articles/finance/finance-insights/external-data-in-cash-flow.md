@@ -1,8 +1,8 @@
 ---
 title: Externe Daten in Cashflow-Planungen verwenden
-description: In diesem Thema werden die Einrichtungsschritte beschrieben, die Sie ausführen müssen, damit externe Daten eingegeben oder in Cashflow-Planungen importiert werden können.
+description: In diesem Thema werden die Einrichtungsschritte beschrieben, die Sie durchführen müssen, damit externe Daten eingegeben oder in Cashflow-Planungen importiert werden können.
 author: rcarlson
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,30 +15,35 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 855f428ae8ce79f2b7ce9a6f3347cd454bad9566
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: dbfa04228cf63c0874a7d69af4e2b932544c0d7f
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386461"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753001"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts"></a>Externe Daten in Cashflow-Planungen verwenden
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Externe Daten können eingegeben oder in Cashflow-Planungen importiert werden. In diesem Thema werden die Einrichtungsschritte beschrieben, die für die Verwendung externer Daten spezifisch sind und die es ermöglichen, die externen Daten in eine Cashflow-Planung aufzunehmen.
 
 ## <a name="external-data-setup"></a>Externe Daten einrichten
 
-Verwenden Sie die **Externe Quelle**-Registerkarte auf der **Einrichtung der Cashflow-Planung**-Seite (**Bargeld- und Bankverwaltung \> Cashflow-Planung**), um Einstellungen einzugeben, die die Verwendung externer Daten in Cashflow-Planungen unterstützen.
+Verwenden Sie die **Externe Quelle**-Registerkarte auf der Einrichtung der **Cashflow-Planung**-Seite (**Bargeld- und Bankverwaltung \> Cashflow-Planung \> Cashflow-Planungssetup**), um Einstellungen einzugeben, die die Verwendung externer Daten in Cashflow-Planungen unterstützen.
 
-Weitere Informationen zum Einrichten finden Sie unter [Cashflow-Planung](../cash-bank-management/cash-flow-forecasting.md).
+Externe Daten können eingegeben oder in Cashflow-Planungen importiert werden. Bevor externe Daten eingegeben oder importiert werden, müssen externe Quellen eingerichtet werden. Richten Sie auf der Registerkarte **Externe Quelle** externe Cashflow-Kategorien ein. Eine Kategorie kann entweder **ausgehend** oder **eingehend** sein. **Liquidität** sollte als Buchungsart gewählt werden. Wählen Sie im Raster **Einstellungen juristische Person** wählen Sie die juristischen Personen und die entsprechenden Hauptkonten aus, für die die externen Cashflow-Kategorien gelten.
 
-Um externe Daten für Cashflow-Planungen einzugeben, können Sie die Erfahrung zum Öffnen in Excel zum Eingeben und Ändern externer Daten verwenden. Wählen Sie die Schaltfläche **Externe Daten** und dann entweder **Externe Daten hinzufügen** oder **Vorhandene externe Daten bearbeiten** aus. Wenn die Microsoft Excel-Datei geöffnet ist, können Sie Informationen in die folgenden Felder eingeben:
+Weitere Informationen dazu, wie Cashflow-Planungen eingerichtet wird, finden Sie unter [Cashflow-Planung](../cash-bank-management/cash-flow-forecasting.md).
 
-- **Eintragskennung**
+## <a name="enter-external-data"></a>Externe Daten eingeben
+
+Um externe Daten für Cashflow-Planungen einzugeben und zu ändern, können Sie die Umgebung zum **Öffnen in Excel** verwenden. Wählen Sie die Schaltfläche **Externe Daten** auf der Seite **Cashflow-Planungseinstellung** und dann entweder **Externe Daten hinzufügen** oder **Vorhandene externe Daten bearbeiten** aus. Wenn die Microsoft Excel-Datei geöffnet ist, können Sie Informationen in die folgenden Felder eingeben:
+
+- **Eintragskennung** (eindeutig)
 - **Beschreibung** (optional)
-- **Name der externen Quelle** – Wählen Sie einen der Werte in der Liste aus, die Sie beim Einrichten von Finance Insights definiert haben.
+- **Name der externen Quelle**: Wählen Sie einen der Werte in der Liste aus, die Sie beim Einrichten von Finance Insights definiert haben.
 - **Juristische Person**
 - **Datum**
 - **Betrag in Buchungswährung**

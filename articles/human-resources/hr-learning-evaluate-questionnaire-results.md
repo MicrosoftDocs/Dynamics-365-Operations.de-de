@@ -1,8 +1,8 @@
 ---
-title: Anzeigen und Auswerten der Ergebnisse eines Fragebögen
-description: In diesem Artikel wird beschrieben, wie Sie die Ergebnisse von Fragebögen anzeigen und bewerten können, die die Befragten abgeschlossen haben.
-author: andreabichsel
-ms.date: 06/20/2017
+title: Die Ergebnisse von Fragebögen anzeigen und auswerten
+description: In diesem Thema wird beschrieben, wie Sie die Ergebnisse von Fragebögen anzeigen und bewerten können, die die Befragten abgeschlossen haben.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,26 +12,26 @@ ms.search.scope: Human Resources
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e2241c2ade361631228cf721b18adabcb1fbc091c8949d47727bb89f0f67bdb6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8265b6b2269822bcae6d573091d2994e25826d1a
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755490"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729122"
 ---
-# <a name="view-and-evaluate-the-results-of-questionnaires"></a>Anzeigen und Auswerten der Ergebnisse eines Fragebögen
+# <a name="view-and-evaluate-the-results-of-questionnaires"></a>Die Ergebnisse von Fragebögen anzeigen und auswerten
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In diesem Artikel wird beschrieben, wie Sie die Ergebnisse von Fragebögen anzeigen und bewerten können, die die Befragten abgeschlossen haben. 
+In diesem Thema wird beschrieben, wie Sie die Ergebnisse von Fragebögen anzeigen und bewerten können, die die Befragten abgeschlossen haben. 
 
 Nachdem die Befragungsteilnehmer einen Fragebogen ausgefüllt haben, können Sie die Fragebogenergebnisse folgendermaßen anzeigen und auswerten:
 
 -   **Ausgefüllte Antwortsitzungen** – Anzeigen von Details zu ausgefüllten Fragebögen der Befragten und Generieren von Berichten, um Antworten zusammenzufassen, auch zu den erworbenen Punkten.
--   **Ergebnisgruppen** - Anzeigen von Ergebnisgruppedetails und -statistiken für Fragebögen. Die Ergebnisgruppenstatistik kann für eine einzelne Antwortsitzung oder für alle Beantwortungssitzungen eines Fragebogens generiert werden.
+-   **Ergebnisgruppen** - Anzeigen von Ergebnisgruppedetails und -statistiken für Fragebögen. Die Ergebnisgruppenstatistik kann für eine einzelne Antwortsitzung oder für alle Antwortungssitzungen eines Fragebogens generiert werden.
 -   **Fragebogenstatistik** - Angeben von Kriterien für die Berechnung von Statistiken für eine bestimmte Gruppe von Teilnehmern.
 
 Es können auch verschiedene Berichte generiert werden, um Ergebnisse nach Person, Antwortsitzung oder Ergebnisgruppe sortiert anzuzeigen. Die folgenden Berichte zu ausgefüllten Fragebögen sind verfügbar:

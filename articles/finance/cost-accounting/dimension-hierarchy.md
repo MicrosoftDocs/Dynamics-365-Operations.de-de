@@ -118,7 +118,7 @@ Eine Dimensionshierarchie, die die Meldeanforderungen der Organisation erfüllt,
 
 | Dimensionshierarchiename | Dimensionen    | Dimensionshierarchie-Typname      | Zugriffslistenhierarchie |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisation             | Kostenstellen | Dimensionsklassifizierungshierarchie | Nr.                    |
+| Organisation             | Kostenstellen | Dimensionsklassifizierungshierarchie | Nein                    |
 
 Die Dimensionshierarchie für die Berichtserstellung kann beispielsweise wir hier angezeigt eingerichtet werden.
 

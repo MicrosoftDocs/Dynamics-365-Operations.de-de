@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7d1bd846dae767b47280310fc8d9ca5ee82337ad
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568854"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778304"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Workflows für die Genehmigung von Bestandserfassungen
 
@@ -31,7 +31,7 @@ In diesem Thema wird beschrieben, wie Sie Workflows für die Genehmigung von Bes
 
 ## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Funktion für Workflows zur Genehmigung von Lagererfassungen aktivieren
 
-Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Administratoren können die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) verwenden, um den Status der Funktion zu überprüfen und sie bei Bedarf zu aktivieren oder zu deaktivieren. Hier wird die Funktion als aufgeführt:
 
 - **Modul:** *Bestands- und Lagerortverwaltung*
 - **Funktionsname:** *Workflow für die Genehmigung von Bestandserfassungen*

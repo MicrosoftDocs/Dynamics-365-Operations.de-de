@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 127b4092ad3c5e8737aff43f503e0a8f36ff1ec8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386684"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781343"
 ---
 # <a name="party-and-global-address-book"></a>Partei und globales Adressbuch
 
@@ -30,14 +30,14 @@ Eine Partei ist eine Person oder eine Organisation, die an einem Geschäft betei
 
 + **Arbeitskraft** – Ein Mitarbeiter. Ein Beispiel ist ein Mitarbeiter von Contoso.
 + **Lieferant** – Eine Lieferantenorganisation oder ein Einzelunternehmer, der Waren oder Dienstleistungen an ein Unternehmen liefert. Wenn Fabrikam zum Beispiel Verbrauchsmaterial an Contoso verkauft, ist Fabrikam ein Kreditor von Contoso.
-+ **Ansprechpartner** – Eine Person, die zu kontaktieren ist. Wenn z. B. Contoso Verbrauchsmaterial bei Fabrikam kauft, wenden sich die Mitarbeiter von Contoso an den Kontakt bei Fabrikam.
-+ **Kunde** – Eine Person oder Firma, die Dinge von einer Firma kauft. Wenn z. B. Contoso Vorräte bei Fabrikam kauft, ist Contoso ein Debitor von Fabrikam.
++ **Ansprechpartner** – Eine Person, die zu kontaktieren ist. Wenn Contoso beispielsweise Verbrauchsmaterialien von Fabrikam kauft, kontaktieren Mitarbeiter von Contoso den Kontakt von Fabrikam.
++ **Kunde** – Eine Person oder Firma, die Dinge von einer Firma kauft. Wenn Contoso beispielsweise Verbrauchsmaterialien von Fabrikam kauft, ist Contoso ein Kunde von Fabrikam.
 
 Das Parteienmodell wird häufig verwendet, um mittlere bis komplexe Beziehungen zwischen Organisationen und Personen darzustellen, insbesondere wenn eine Partei mehr als eine Rolle spielt. Im Folgenden finden Sie einige allgemeine Beispiele hierfür:
 
-+ Eine Partei kann sowohl Kunde als auch Verkäufer sein. Zum Beispiel verkauft Fabrikam in Nordamerika elektrische Drähte an Contoso und kauft montierte Lautsprecher von Contoso. In Europa verkauft Fabrikam Teile an Contoso, aber es kauft nichts von Contoso.
-+ Eine Partei kann sowohl Mitarbeiter als auch Kunde sein. Zum Beispiel kauft ein Mitarbeiter von Contoso Elektronik von Contoso für den persönlichen Gebrauch.
-+ Es kann eine many-to-many (N:N) Beziehung zwischen einer Person und einer Organisation bestehen. Beispiel: Fabrikam stellt Servicespezialisten zur Verfügung und beschäftigt einen Vermittlungskoordinator. Der Vermittlungskoordinator gleicht Service-Spezialisten mit Arbeitsanforderungen von mehreren Debitor von Fabrikam ab. Contoso ist einer der Kunden von Fabrikam. Wenn Contoso einen Service-Spezialisten benötigt, kontaktiert es den Vermittlungskoordinator, der dann die Anfrage vermittelt. Da der Platzierungskoordinator Anfragen für alle Kunden bearbeitet, handelt es sich um eine N:N-Beziehung.
++ Eine Partei kann sowohl Kunde als auch Verkäufer sein. In Nordamerika verkauft Fabrikam beispielsweise elektrische Kabel an Contoso und kauft montierte Lautsprecher von Contoso. In Europa verkauft Fabrikam Teile an Contoso, kauft aber nichts von Contoso.
++ Eine Partei kann sowohl Mitarbeiter als auch Kunde sein. Beispielsweise kauft ein Mitarbeiter von Contoso Elektronik von Contoso für den persönlichen Gebrauch.
++ Es kann eine many-to-many (N:N) Beziehung zwischen einer Person und einer Organisation bestehen. Beispiel: Fabrikam stellt Servicespezialisten zur Verfügung und beschäftigt einen Vermittlungskoordinator. Der Vermittlungskoordinator gleicht Service-Spezialisten mit Arbeitsanforderungen von mehreren Debitor von Fabrikam ab. Contoso ist einer der Kunden von Fabrikam. Wenn Contoso einen Service-Spezialisten benötigt, kontaktiert es den Vermittlungskoordinator, der dann die Anfrage unterstützt. Da der Platzierungskoordinator Anfragen für alle Kunden bearbeitet, handelt es sich um eine N:N-Beziehung.
 
 Die folgende Abbildung zeigt das Datenmodell für Partei.
 

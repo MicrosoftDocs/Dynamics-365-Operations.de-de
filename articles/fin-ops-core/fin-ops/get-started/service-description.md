@@ -333,9 +333,9 @@ Microsoft bietet Finance and Operations Kunden drei Supportpläne an: Premier, P
 | Unbegrenzte Einreichung von Break/Fix-Vorfällen | Ja | Ja | Ja |
 | 24/7-Zugriff über LCS | Ja | Ja | Ja |
 | Reaktionszeit bei Vorfällen | Weniger als eine Stunde | Weniger als eine Stunde | Nächster Arbeitstag |
-| Beratungszeiten | Pools werden nach Vereinbarung erworben. | Nr. | Nr. |
-| Dedizierter Support Account Manager | Ja | Nr. | Nr. |
-| Dedizierter Support-Ingenieur | Im Rahmen einer gesonderten Vereinbarung | Nr. | Nr. |
+| Beratungszeiten | Pools werden nach Vereinbarung erworben. | Nein | Nein |
+| Dedizierter Support Account Manager | Ja | Nein | Nein |
+| Dedizierter Support-Ingenieur | Im Rahmen einer gesonderten Vereinbarung | Nein | Nein |
 
 Weitere Informationen finden Sie unter [Support-Übersicht](/power-platform/admin/support-overview).
 

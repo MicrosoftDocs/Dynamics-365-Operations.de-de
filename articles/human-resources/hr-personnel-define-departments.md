@@ -1,8 +1,8 @@
 ---
 title: Neue Abteilungen definieren
 description: Abteilungen sind Organisationseinheiten, die einen Funktionsbereich eines Unternehmens, beispielsweise Vertrieb oder Buchhaltung darstellen.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPu
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 68e925e0aad2bc5e60bfef0479a6eb7247a1a186ebe25c1eaf6afc4715d163f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb83ab1839e5610731afc7073c9d94e34f31bc07
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726968"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731701"
 ---
 # <a name="define-new-departments"></a>Neue Abteilungen definieren
 
@@ -28,28 +28,28 @@ ms.locfileid: "6726968"
 
 Abteilungen sind Organisationseinheiten, die einen Funktionsbereich eines Unternehmens, beispielsweise Vertrieb oder Buchhaltung darstellen. Viele Unternehmen besitzen Organisationshierarchien, die verschiedene Abteilungen innerhalb eines Unternehmens anzeigen. Diese Prozedur führt Sie Schritt für Schritt durch den Prozess der Erstellung von Abteilungen sowie das Hinzufügen dieser Abteilungen zu einer Organisationsabteilungshierarchie. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 
-1. Wechseln Sie zu "Personalverwaltung" > "Abteilungen" > "Abteilungen".
-2. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-3. Geben Sie im Feld "Name" einen Wert ein.
+1. Wechseln Sie zu **Personalverwaltung** > **Abteilungen** > **Abteilungen**.
+2. Klicken Sie auf **Neu** zum Öffnen des Ablagedialogfeld.
+3. Geben Sie im Feld **Name** einen Wert ein.
     * Beispiel: Projekt fakturieren  
-4. Geben Sie im Feld "Memo" einen Wert ein.
+4. Geben Sie im Feld **Memo** einen Wert ein.
     * Beispiel: Projekt fakturieren  
-5. Geben Sie im Feld "Vorgesetzter" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Beispiel: Jodi Christiansen  
-6. Klicken Sie auf "Speichern".
+5. Geben Sie im Feld **Vorgesetzter** einen Wert ein, oder wählen Sie einen Wert aus.
+    * Beispiel: Ana Bowman  
+6. Klicken Sie auf **Speichern**.
 7. Schließen Sie die Seite.
-8. Wechseln Sie zu "Personalverwaltung" > "Abteilungen" > "Abteilungshierarchie".
-9. Klicken Sie auf "Bearbeiten".
-10. Klicken Sie auf Einfügen.
-11. Klicken Sie auf "Abteilung"
+8. Wechseln Sie zu **Personalverwaltung** > **Abteilungen** > **Abteilungshierarchie**.
+9. Klicken Sie auf **Bearbeiten**.
+10. Klicken Sie auf **Einfügen**.
+11. Klicken Sie auf **Abteilung**.
 12. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
     * Beispiel: Projekt fakturieren  
-13. Klicken Sie auf "OK".
-14. Klicken Sie auf "Veröffentlichen", um das Ablagedialogfeld zu öffnen.
-15. Geben Sie im Feld "Gültigkeitsdatum" ein Datum und eine Uhrzeit ein.
+13. Klicken Sie auf **OK**.
+14. Klicken Sie auf **Veröffentlichen**, um das Ablagedialogfeld zu öffnen.
+15. Geben Sie im Feld **Gültigkeitsdatum** ein Datum und eine Uhrzeit ein.
     * Wenn Sie die Abteilungshierarchie veröffentlichen, können Sie festlegen, wann die Änderungen wirksam werden. Änderungen können zukünftig datiert werden. Beispielsweise wissen Sie, dass Sie am Anfang des Geschäftsjahrs eine zusätzliche Abteilung hinzufügen werden. Sie können Ihr Gültigkeitsdatum auf den Beginn des Geschäftsjahrs festlegen, und die Änderungen an der Hierarchie werden zu diesem Datum wirksam.  
-16. Geben Sie im Feld "Änderungen beschreiben" einen Wert ein.
-17. Klicken Sie auf "Veröffentlichen".
+16. Geben Sie im Feld **Änderungen beschreiben** einen Wert ein.
+17. Klicken Sie auf **Veröffentlichen**.
 
 
 

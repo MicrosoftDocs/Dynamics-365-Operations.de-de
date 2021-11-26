@@ -1,27 +1,27 @@
 ---
 title: Arbeitsbereich „Personalverwaltung“
 description: In diesem Thema werden die konzeptionellen Elemente des Arbeitsbereichs „Personalverwaltung“ beschrieben.
-author: andreabichsel
-ms.date: 07/01/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.author: anbichse
-ms.reviewer: anbichse
+ms.author: twheeloc
+ms.reviewer: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 923d4a980c3f8f9b3bf5be1f77d8910081123fa08b068f1fd8fa935312d3a101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4332be972ab3dc81e7e4f3cc297a91cd247e721e
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754816"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771337"
 ---
 # <a name="personnel-management-workspace"></a>Arbeitsbereich „Personalverwaltung“
 
@@ -33,11 +33,11 @@ Der Arbeitsbereich **Personalverwaltung** enthält eine große Menge an Inhalten
 
 Die Registerkarte **Aktivität** enthält Abschnitte, die Arbeitnehmer nach ihrer Phase im Beschäftigungsprozess gruppieren:
 
-- Kandidaten, die eingestellt werden können
-- Beginnt in Kürze
-- Aktuellste Einstellungen
-- Wird beendet.
-- Ausgetreten
+- **Kandidaten, die eingestellt werden können**
+- **Beginnt in Kürze**
+- **Aktuellste Einstellungen**
+- **Wird beendet.**
+- **Ausgetreten**
 
 Wenn sich ein Arbeiter in einer dieser Phasen befindet, sind bestimmte Aktionen als Schaltfläche auf der Karte oder im Menü verfügbar, das angezeigt wird, wenn Sie die Auslassungspunkte (**...**) in der oberen rechten Ecke auswählen. Die folgenden Unterabschnitte beschreiben die Abschnitte der Registerkarte **Aktivität** und listen Sie die verfügbaren Aktionen auf.
 
@@ -51,9 +51,9 @@ Der Abschnitt **Kandidaten zum Einstellen** des Arbeitsbereichs wird aus mehrere
 
 Wenn Kandidaten im Abschnitt **Kandidaten zum Abschnitt** erscheinen, können Sie die folgenden Aktionen ausführen, indem Sie die Auslassungspunkte auf der Kandidatenkarte auswählen:
 
-- Kandidat ablehnen
-- Nicht einstellen
-- Einstellen
+- **Kandidat ablehnen**
+- **Nicht einstellen**
+- **Einstellen**
 
 > [!NOTE]
 > Wenn die Kandidatenliste aus Microsoft Dataverse befüllt wird, werden dieselben Kandidaten für alle juristischen Personen angezeigt, da dem Kandidaten keine juristische Person zugeordnet wurde.
@@ -65,7 +65,7 @@ Der Abschnitt **Beginnt bald** listet Arbeiter auf, deren Startdatum in der Zuku
 Wenn der Vorgesetzte nicht auf der Karte erscheint, wurde der Arbeitskraft keine Position zugewiesen.
 
 > [!NOTE] 
-> Sie sollten einer Arbeitskraft eine Position zuweisen, bevor Sie eine Checkliste anwenden, da Onboarding-Aufgaben manchmal dem Vorgesetzten eines neu eingestellten Mitarbeiters zugewiesen werden. Wenn jedoch keine Position zugewiesen ist, kann der Vorgesetzte des neuen Mitarbeiters nicht ermittelt werden. In diesem Fall werden die Onboarding-Aufgaben, die für den Vorgesetzten bestimmt sind, stattdessen dem Checklisten-Besitzer zugewiesen.
+> Wir empfehlen Ihnen, einer Arbeitskraft eine Position zuzuweisen, bevor Sie eine Checkliste anwenden. Manchmal werden Onboarding-Aufgaben dem Vorgesetzten eines neu eingestellten Mitarbeiters zugewiesen. Wenn jedoch keine Position zugewiesen ist, kann der Vorgesetzte des neuen Mitarbeiters nicht ermittelt werden. In diesem Fall werden die Onboarding-Aufgaben, die für den Vorgesetzten bestimmt sind, stattdessen dem Checklisten-Besitzer zugewiesen.
 
 Wenn Arbeitskräfte im Abschnitt **Beginnt bald** erscheinen, stehen folgende Aktionen zur Verfügung:
 
@@ -85,7 +85,7 @@ Der Abschnitt **Neueinstellungen** enthält Arbeitskräfte, deren Startdatum in 
 Standardmäßig zeigt die Liste Arbeitskräfte an, die in den letzten sieben Tagen eingestellt wurden. Um diese Einstellung zu ändern, legen Sie auf der Seite **Personalverwaltungsparameter** auf der Registerkarte **Allgemein** einen Zeitrahmen für **Neueinstellungen** fest. Die Daten im Abschnitt **Neueinstellungen** können als Tage, Monate oder Jahre angezeigt werden. Um zum Beispiel die Liste der Arbeitskräfte anzuzeigen, die in den letzten 14 Tagen eingestellt wurden, stellen Sie das Feld **Zeitraum** auf **14** und **Einheit** auf **Tage** ein.
 
 > [!NOTE]
-> Die Einstellungen auf der Seite **Personalverwaltungsparameter** sind unternehmensspezifisch. Daher kann der Zeitrahmen, für den Sie die Neueinstellungen anzeigen, je nach Unternehmen variieren. Im USMF-Unternehmen möchten Sie beispielsweise alle Neueinstellungen der letzten sieben Tage anzeigen. Im USSI-Unternehmen möchten Sie jedoch alle Neueinstellungen der letzten 14 Tage anzeigen. In diesem Fall müssen Sie die Seite **Personalverwaltungsparameter** in jedem Unternehmen und stellen Sie die Parameter nach Bedarf ein.
+> Die Einstellungen auf der Seite **Personalverwaltungsparameter** sind unternehmensspezifisch. Daher kann der Zeitrahmen, für den Sie die Neueinstellungen anzeigen, je nach Unternehmen variieren. Im USMF-Unternehmen möchten Sie beispielsweise alle Neueinstellungen der letzten sieben Tage anzeigen. Im USSI-Unternehmen können Sie, falls gewünscht, jedoch alle Neueinstellungen der letzten 14 Tage anzeigen. In diesem Fall öffnen Sie die Seite **Personalverwaltungsparameter** in jedem Unternehmen und stellen Sie die Parameter nach Bedarf ein.
 
 Wenn der Vorgesetzte nicht auf der Karte erscheint, wurde der Arbeitskraft keine Position zugewiesen.
 
@@ -132,13 +132,9 @@ Wenn Arbeitskräfte im Abschnitt **Ausgeschieden** erscheinen, stehen folgende A
 
 Die Registerkarte **Mitarbeiteränderungen** enthält eine Liste aller Personalaktivitäten der Arbeitskraft. Diese Liste ist nicht standardmäßig verfügbar. Um die Funktionalität zu aktivieren, setzen Sie auf der Seite **Freigegebene Personalverwaltungsparameter** auf der Registerkarte **Personalaktivitäten** die Option **Arbeitskraftaktionen aktivieren** auf **Ja**.
 
-Weitere Informationen zu Personalaktivitäten finden Sie unter (Link zur Seite „Personalaktivitäten“).
-
 ## <a name="position-changes-tab"></a>Registerkarte „Positionsänderungen“
 
 Die Registerkarte **Positionsänderungen** enthält eine Liste aller Personalaktivitäten der Position. Diese Liste ist nicht standardmäßig verfügbar. Um die Funktionalität zu aktivieren, setzen Sie auf der Seite **Freigegebene Personalverwaltungsparameter** auf der Registerkarte **Personalaktivität** die Option **Positionsaktivität aktivieren** auf **Ja**.
-
-Weitere Informationen zu Personalaktivitäten finden Sie unter (Link zur Seite „Personalaktivitäten“).
 
 ## <a name="open-positions-tab"></a>Registerkarte „Offene Positionen“
 
@@ -151,11 +147,11 @@ In der Registerkarte **Offene Positionen** sind alle offenen Stellen aufgeführt
 
 Die Registerkarte **Ablaufende Datensätze** listet alle Elemente auf, die für die Mitarbeiter des Unternehmens, dem der Benutzer zugeordnet ist, abgelaufen sind oder ablaufen werden. Die Liste umfasst die folgenden Elemente:
 
-- Bescheinigungen
-- Kennung
-- Proben
-- Prüfungen
-- Tests
+- **Bescheinigungen**
+- **Kennung**
+- **Proben**
+- **Prüfungen**
+- **Tests**
 
 Um anzugeben, ob die Liste abgelaufene oder ablaufende Datensätze anzeigt, legen Sie auf der Seite **Personalverwaltungsparameter** auf der Registerkarte **Allgemein** einen Zeitrahmen für **Ablaufende Datensätze** oder **Abgelaufene Datensätze** fest. Die Daten auf der Registerkarte **Ablaufende Datensätze** können für eine bestimmte Anzahl von Tagen angezeigt werden. Um beispielsweise die Liste der Datensätze anzuzeigen, die in den nächsten 14 Tagen ablaufen, stellen Sie das Feld **Anzahl der Tage** auf **14**.
 

@@ -2,7 +2,7 @@
 title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie die App personalisieren können.
 author: jasongre
-ms.date: 09/27/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 6256765c41ff128b067cda9107c790691c5b376a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581064"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777984"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
@@ -220,7 +220,10 @@ Wenn gespeicherte Ansichten nicht aktiviert sind, führen Sie diese Schritte aus
 
 Eine andere Möglichkeit, Personalisierungen gemeinsam zu nutzen, ist über Export und Import. Einzelne Benutzer oder ein Admin, der in ihrem Namen handelt, können diese Methode verwenden, um ihre Personalisierungen oder Ansichten zu exportieren und die exportierte Datei dann anderen Benutzern zum Importieren zu geben. Alternativ können Benutzer ihre exportierten Personalisierungen einem Benutzer mit Admin-Rechten übergeben, und dieser Benutzer kann dann die Verwaltungsseite **Personalisierung** verwenden, um die Personalisierungsdatei auf viele Benutzer gleichzeitig anzuwenden.
 
-#### <a name="export"></a>Warenexport
+> [!IMPORTANT]
+> Da Personalisierungen über Updates hinweg bestehen bleiben, ist es unnötig, alle Personalisierungen nach einem Service-Update oder zu einem anderen Zeitpunkt erneut zu importieren, und es wird dringend davon abgeraten.   
+
+#### <a name="export"></a>Exportieren
 
 Allgemein können Sie eine Ihrer eigenen Ansichten oder Personalisierungen exportieren, indem Sie die entsprechende Seite öffnen, die Werkzeugleiste **Personalisierung** öffnen und dann **Exportieren** wählen. Weitere Informationen über die Symbolleiste finden Sie im Abschnitt [Personalisierungs-Symbolleiste](#personalization-toolbar) weiter oben in diesem Thema. Alternativ können Sie, wenn [Gespeicherte Ansichten](saved-views.md) aktiviert sind, zu **Einstellungen \> Benutzeroptionen \> Personalisierung** gehen, um eine Liste aller Ihrer Personalisierungen im System anzuzeigen. Von dort aus können Sie die Ansichten oder Personalisierungen auswählen, die exportiert werden sollen, und dann **Exportieren** wählen.
 

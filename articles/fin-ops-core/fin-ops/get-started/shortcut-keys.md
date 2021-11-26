@@ -2,7 +2,7 @@
 title: Tastenkombinationen
 description: Dieses Thema bietet einen Überblick über die Tastenkombinationen, die Sie in Finance and Operations-Apps verwenden können.
 author: jasongre
-ms.date: 10/12/2021
+ms.date: 11/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
+ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647535"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7800192"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
@@ -128,8 +128,10 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 
 ## <a name="grid-shortcuts"></a>Rasterverknüpfungen
 
-| Aktion                                                                                                             | Taste(n)                           |
+| Aktion                                                                                                             | Drücken Sie folgende Taste: .                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Vertikales Scrollen                                                                                                     | Mausrad                     |
+| Horizontales Scrollen                                                                                                   | Umschalt + Mausrad             |
 | Zur nächsten/vorherigen Spalte wechseln                                                                                       | Registerkarte / UMSCHALT+TAB                 |
 | Zur nächsten/vorherigen Zeile wechseln                                                                                          | NACH-UNTEN-TASTE / NACH-OBEN-TASTE           |
 | Ohne Auswahl zur nächsten/vorherigen Zeile wechseln<blockquote>[!NOTE] Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.</blockquote> | STRG+NACH-OBEN-TASTE / STRG+NACH-UNTEN-TASTE |
@@ -141,15 +143,15 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Zum ersten Datensatz wechseln                                                                                               | STRG+POS1                       |
 | Zum letzten Datensatz wechseln                                                                                                | STRG+ENDE                        |
 | Alle Zeilen auswählen oder löschen                                                                                               | STRG+UMSCHALT+M                    |
-| Zur ersten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, F                    |
-| Zur nächsten markieren Zeile wechseln                                                                                            | ALT+UMSCHALT+M, L                    |
-| Zur vorherigen markieren Zeile wechseln                                                                                        | ALT+UMSCHALT+M, P                    |
-| Zur letzten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, N                    |
+| Zur ersten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, F                  |
+| Zur nächsten markieren Zeile wechseln                                                                                            | ALT+UMSCHALT+M, L                  |
+| Zur vorherigen markieren Zeile wechseln                                                                                        | ALT+UMSCHALT+M, P                  |
+| Zur letzten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, N                  |
 | Die Standardaktivität in einem Raster ausführen<blockquote>[!NOTE] Die Tastenkombination wird aktiviert, wenn der Fokus auf einer Zelle liegt, die einen Link enthält und alle Zellen in dieser Spalte Links haben</blockquote> | EINGABETASTE                           |
 | Fokus zwischen ausgewählter Zeile und Kopfzeile umschalten                                                               | ALT+UMSCHALT+H                     |
 | Die aktuelle Spalte vergrößern/verkleinern (mit Fokus in der Kopfzeile)                                                  | NACH-RECHTS-TASTE / NACH-LINKS-TASTE        |
 | Rasterfilterung für die aktuelle Spalte öffnen (mit Fokus in der Kopfzeile)                                              | Eingeben                           |
-| Größe der aktuellen Spalte an den Inhalt anpassen (mit Fokus in der Kopfzeile)                                           | K                               |
+| Größe der aktuellen Spalte an den Inhalt anpassen (mit Fokus in der Kopfzeile)                                           | A (oder doppelklicken Sie auf den Ziehpunkt für die Spaltengröße) |
 
 ## <a name="input-control-shortcuts"></a>Eingabesteuerungsverknüpfungen
 

@@ -1,8 +1,8 @@
 ---
 title: Eine Frage stellen, die von der Antwort auf die vorherige Frage abhängt
 description: Bedingte Fragen bieten die Möglichkeit, basierend auf der vorhergehenden Antwort anzugeben, welche nachfolgende Frage einem Befragungsteilnehmer angezeigt wird.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: KMCollection, KMCollectionQuestion, KMCollectionQuestionTree, Hc
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9397b3dfa353398a5d326ae68ec8269369ebf85b7b2e61c73013db76c5dd475
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 11787aa0b32c0d7493e4528b00304e51f01a655f
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745693"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728905"
 ---
 # <a name="make-a-question-dependent-on-the-answer-of-the-previous-question"></a>Eine Frage stellen, die von der Antwort auf die vorherige Frage abhängt
 
@@ -30,28 +30,28 @@ Bedingte Fragen bieten die Möglichkeit, basierend auf der vorhergehenden Antwor
 
 
 ## <a name="find-the-existing-questionnaire"></a>Durchsuchen des vorhandenen Fragebogens
-1. Wechseln Sie zu "Fragebogen" > "Entwurf" > "Fragebögen".
+1. Gehen Sie zu **Fragebogen** > **Entwerfen** > **Fragebögen**.
 2. Wählen Sie den WorkFH-Fragebogen in der Liste aus.
 
 ## <a name="add-all-questions-and-sub-questions-to-the-questionnaire"></a>Alle Fragen und Unterfragen zum Fragebogen hinzufügen
-1. Klicken Sie auf "Fragen".
-2. Klicken Sie auf "Neu".
-3. Wählen Sie im Feld "Frage" die Fragenummer 00016 aus.
+1. Klicken Sie auf **Fragen**.
+2. Klicken Sie auf **Neu**.
+3. Wählen Sie im Feld **Frage** die Fragenummer 00016 aus.
 4. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 5. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-6. Klicken Sie auf "Speichern".
+6. Klicken Sie auf **Speichern**.
 7. Schließen Sie die Seite.
 
 ## <a name="set-the-questionnaire-sequence-to-conditional-and-make-the-question-dependent-on-the-appropriate-question"></a>Legen Sie die Fragebogensequenz auf "Bedingt" fest und machen Sie die Frage abhängig von der entsprechenden Frage
-1. Klicken Sie auf "Bearbeiten".
-2. Erweitern Sie den Abschnitt 'Einstellungen'.
-3. Wählen Sie im Feld "Reihenfolge Fragen" "Bedingt" aus.
-4. Klicken Sie auf "Bedingte Frage".
+1. Klicken Sie auf **Bearbeiten**.
+2. Erweitern Sie den Abschnitt **Einrichtung**.
+3. Wählen Sie im Feld **Reihenfolge Fragen** „Bedingt“ aus.
+4. Klicken Sie auf **Bedingte** Frage.
 5. Wählen Sie in der Struktur "Fragen\Erläutern Sie, warum Sie die vorherige Frage so beantwortet haben?" aus.
-6. Wählen Sie im Feld "Primäre Frage" die Frage 00009 aus.
+6. Wählen Sie im Feld **Primäre Frage** die Frage 00009 aus.
 7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-8. Geben Sie im Feld "Antwort" die Antwortsequenzkennung der Antwortoption ein, von der die Frage abhängig sein soll. Geben Sie beispielsweise 1 für die erste Antwortoption ein.
-9. Klicken Sie auf Speichern.
+8. Geben Sie im Feld **Antwort** die Antwortsequenzkennung der Antwortoption ein, von der die Frage abhängig sein soll. Geben Sie beispielsweise 1 für die erste Antwortoption ein.
+9. Klicken Sie auf **Speichern**.
 10. Wählen Sie in der Struktur "Fragen\Ich werde angemessen für meine Arbeit bezahlt" aus.
     * Beachten Sie, dass die Fragenstruktur aktualisiert wird, sodass die Abhängigkeit angezeigt wird.  
 

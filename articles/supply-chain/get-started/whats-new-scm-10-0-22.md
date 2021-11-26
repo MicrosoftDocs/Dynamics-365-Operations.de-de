@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a4f9e5a4a318ceaa45b6919e394e1ff335bfb193
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678834"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778156"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.22. (November 2021)
 
@@ -41,7 +41,6 @@ Die folgende Tabelle listet die Funktionsverbesserungen auf, die in dieser Versi
 
 | Modul | Funktion Name in FunktionVerwaltung | Mehr erfahren |
 |---|---|---|
-| Kostenverwaltung | Erstellen Sie zugehörige Belege für Neubewertungen der Standardkostenrundung | <p>Wenn eine Bestandsfinanzbuchung (z. B. eine Kundenauftragsrechnung oder eine Bestandsbuchung) vorgenommen wird, veranlasst diese Funktion das System, einen separaten Beleg für alle zugehörigen Standardkostenrundungs-Neubewertungen zu erstellen und diesen als zugehörigen Beleg an den Finanzbuchungsbeleg anzuhängen.</p><p>Ohne diese Funktion zeichnet das System die Neubewertungen der Standardkostenrundung auf derselben Belegbuchung auf. Dieses Verhalten kann manchmal zu widersprüchlichen Datumsangaben führen, da die Neubewertungen das Sitzungs- oder Systemdatum verwenden, während Finanzbuchungen das Buchungsdatum verwenden.</p> |
 | Verteilte Hybridtopologie | *(Es ist keine Funktionsverwaltung erforderlich.)* | <p>Diese Version erweitert die Ladungsplanungsfunktionen der Lagerverwaltungs-Workload für Cloud- und Edge-Skalierungs-Einheiten.</p><p>Weitere Informationen finden Sie unter [Arbeitsauslastungen in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Verwaltung für technische Änderung | Variantengenerierung für technische Produkte | <p>Mit dieser Funktion können Sie basierend auf Farbe, Größe, Stil oder Konfigurationsabmessungen mehrere Varianten für ein technisches Produkt generieren.</p><p>Weitere Informationen finden Sie unter [Generieren Sie Varianten für Engineering-Produkte](../engineering-change-management/engineering-variants.md).</p> |
 | Lager- und Lagerortverwaltung | Integration der Bestandssichtbarkeit mit Reservierungsversatz | <p>Diese Funktion kann erst aktiviert werden, nachdem die *Integration der Inventarsichtbarkeit* Funktion aktiviert ist. Es bietet Funktionen zum Ausgleichen von Reservierungen, die in der Inventarsichtbarkeit vorgenommen werden.</p><p>Weitere Informationen finden Sie unter [Reservierungen in Inventory Visibility](../inventory/inventory-visibility-reservations.md).</p> |

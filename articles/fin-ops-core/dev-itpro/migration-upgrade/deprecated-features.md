@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76ac50ba2606ffff5a5a90d29ca99c8d67e5f14cce2127f5de6225d1cd8224ef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745175"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753025"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>In früheren Versionen entfernte oder veraltete Funktionen
 
@@ -84,7 +84,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Wir planen, die Methode **setUtcString()** bis zum 1. Oktober 2020 nicht mehr zu unterstützen. Entwickler können stattdessen die Methode **setUtcDateTime()** verwenden. |
 
-### <a name="blacklist-report-it--feature-reference-it-00001"></a>Blacklist-Bericht (IT) – Funktionsreferenz IT-00001
+### <a name="blocklist-report-it--feature-reference-it-00001"></a>Sperrlistenbericht (IT) – Funktionsreferenz IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -216,7 +216,7 @@ Unterstützung für das Erstellen von projektbasierten Aufträgen, bei denen der
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Diese Funktionalität wird immer aktiviert sein, nachdem der Parameter entfernt wurde. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Die Funktionalität, um projektbasierte Aufträge mit mehreren Finanzierungsquellen zu unterstützen, wird immer aktiviert sein.   |
+| **Ersetzt durch eine andere Funktion?**   | Nein Die Funktionalität, um projektbasierte Aufträge mit mehreren Finanzierungsquellen zu unterstützen, wird immer aktiviert sein.   |
 | **Betroffene Produktbereiche**         |Der Parameter **Aufträge für Projekte mit mehreren Finanzierungsquellen zulassen** wird entfernt. Die folgenden Methoden werden geändert, wenn der Parameter entfernt wird: Methode **ctrlSalesOrderTable** in Klasse **ProjStatusType**, Methode **validate** für Feld **ProjId** und Methode **run** im Formular **SalescreateOrder**. Folgende Methoden sind veraltet, wenn der Parameter entfernt wird: **IsSalesOrderAllowedForMultipleFundingSources** in der Tabellendatei **ProjTable**, Methode **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** in der Tabellendatei **ProjTable**, Datenfeld **AllowSalesOrdersForMultipleFundingSources** im Formular **ProjParameters** und Dateien **ProjParameterEntity**, private Methode **IsAssociatedToMultipleFundingSourcesContract** in Tabellendatei **ProjTable**. |
 | **Bereitstellungsoption**              | Alle  |
 | **Status**                         | Veraltung ist für die Versionswelle von April 2020 geplant. |
@@ -262,7 +262,7 @@ Unterstützung für das Erstellen von projektbasierten Aufträgen, bei denen der
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Wenn Sie die Funktion **Primärschlüssel umbenennen** verwenden, um das ItemId eines freigegebenen Produkts zu ändern, werden nur direkte Fremdschlüsselreferenzen aktualisiert. Alle anderen Referenzen zum freigegebenen Produkt, wie von Produktionsaufträgen, behalten die alte ItemId bei. Daher kann es inkonsistente Daten geben, die die Geschäftsprozesse letztlich blockieren. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. |
+| **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung |
 | **Bereitstellungsoption**              | Alle  |
 | **Status**                         | Entfernt ab Finance and Operations 10.0.0 mit Plattform-Update 24.|
@@ -360,7 +360,7 @@ Funktion zum Erstellen von Vorlagen für neue Gewinnsteuerregister. Diese Funkti
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Funktion ist nicht mit dem Finance and Operations-Erweiterbarkeitsmodell kompatibel. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. |
+| **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Steuerl. Buchung |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Ab Finance and Operations 8.1 mit dem Plattform-Update 20 entfernt. |
@@ -371,7 +371,7 @@ Russisches länderspezifisches Modul zur Verwaltung von Personalverwaltungsinfor
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Personalabrechnung ist nicht im globalen strategischen Fokus des Dynamics 365-Portfolios enthalten. Partner und ISVs sind am besten positioniert, um Gehaltsabrechnungsfunktionen bereitzustellen, die den lokalen Vorschriften und Steueraktualisierungen entsprechen.|
-| **Ersetzt durch eine andere Funktion?**   | Nr.|
+| **Ersetzt durch eine andere Funktion?**   | Nein|
 | **Betroffene Produktbereiche**         | Verwaltung für russische Gehaltsabrechnung und Personalverwaltung |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Zielzeitrahmen für die Entfernung der Funktionalität ist eine der künftigen Aktualisierungen von Version 10.0. |
@@ -387,7 +387,7 @@ Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktemp
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Wir entfernen die aktuelle Version des Produktempfehlungs-Service, da wir für diese Funktion einen besseren Algorithmus und neuere Einzelhandels-ausgerichtete Funktionen neu entwerfen.  |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Ab Frühling 2018 planen wir, diese Funktion zurückzubringen, um einen neuen Empfehlungs-Service zu nutzen.   |
+| **Ersetzt durch eine andere Funktion?**   | Nein Ab Frühling 2018 planen wir, diese Funktion zurückzubringen, um einen neuen Empfehlungs-Service zu nutzen.   |
 | **Betroffene Produktbereiche**         | Personalisierte Produktempfehlungen in POS.                                                    |
 | **Bereitstellungsoption**              | Alle                                                                                      |
 | **Status**                         |Entfernt ab 15. Februar 2018. Dies betrifft Kunden mit Dynamics 365 for Operations 1611 und höher.  |
@@ -455,7 +455,7 @@ Diese Steuern sind in der indischen GST klassifiziert worden.
 |              &nbsp;                               |      &nbsp;                                                                   |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Grund für Entfernung oder veralteten Zustand**       | Fehlender Einsatz durch die Kunden.                                                  |
-| **Ersetzt durch eine andere Funktion?**            | Nr.                                                                      |
+| **Ersetzt durch eine andere Funktion?**            | Nein                                                                      |
 | **Betroffene Produktbereiche**                  | Indische Quellensteuer                                                  |
 | **Bereitstellungsoption**                       | Alle Module                                                                    |
 | **Status**                                  | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.   |        
@@ -467,7 +467,7 @@ Benutzer können dies vom Behördenportal herunterladen.
 |             &nbsp;                                |    &nbsp;                                                                     |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Grund für Entfernung oder veralteten Zustand**       | Fehlender Einsatz durch die Kunden.                                                  |
-| **Ersetzt durch eine andere Funktion?**            | Nr.                                                                      |
+| **Ersetzt durch eine andere Funktion?**            | Nein                                                                      |
 | **Betroffene Produktbereiche**                  | Indische Quellensteuer                                                  |
 | **Bereitstellungsoption**                       | Alle Module                                                                   |
 | **Status**                                  | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.     |    
@@ -478,7 +478,7 @@ Benutzer können dies vom Behördenportal herunterladen.
 |              &nbsp;                               |        &nbsp;                                                                 |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Grund für Entfernung oder veralteten Zustand**       | Fehlender Einsatz durch die Kunden.                                                  |
-| **Ersetzt durch eine andere Funktion?**            | Nr.                                                                      |
+| **Ersetzt durch eine andere Funktion?**            | Nein                                                                      |
 | **Betroffene Produktbereiche**                  | Importieren und Exportieren                                                       |
 | **Bereitstellungsoption**                       | Alle Module                                                                    |
 | **Status**                                  | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.  |    
@@ -492,7 +492,7 @@ Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktemp
 |  &nbsp; |  &nbsp;|
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Wir entfernen die aktuelle Version des Produktempfehlungs-Service, da wir für diese Funktion einen besseren Algorithmus und neuere Einzelhandels-ausgerichtete Funktionen neu entwerfen.  |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Ab Frühling 2018 planen wir, diese Funktion zurückzubringen, um einen neuen Empfehlungs-Service zu nutzen.   |
+| **Ersetzt durch eine andere Funktion?**   | Nein Ab Frühling 2018 planen wir, diese Funktion zurückzubringen, um einen neuen Empfehlungs-Service zu nutzen.   |
 | **Betroffene Produktbereiche**         | Personalisierte Produktempfehlungen in POS.                                                    |
 | **Bereitstellungsoption**              | Alle                                                                                      |
 | **Status**                         |Entfernt ab 15. Februar 2018. Dies betrifft Kunden mit Dynamics 365 for Retail 7.2 und höher. |
@@ -531,7 +531,7 @@ Eine Abgleichsregel, die verwendet wurde, um ein Bankdokument beim manuellen Abg
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Begrenzte Verwendung.                                                                         |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Funktionen zur Spaltenfilterung sollten verwendet werden, um nach Dokumente für die Abstimmung zu suchen. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Funktionen zur Spaltenfilterung sollten verwendet werden, um nach Dokumente für die Abstimmung zu suchen. |
 | **Betroffene Produktbereiche**         | Bargeld- und Bankverwaltung                                                               |
 | **Bereitstellungsoption**              | Alle                                                                                    |
 | **Status**                         | Entfernt ab Juli 2017.                                                               |
@@ -578,7 +578,7 @@ Dieses Tool wird verwendet, wenn ein Kontenplan in Spanien größere Änderungen
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Begrenzte Verwendung                                                  |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                             |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                             |
 | **Betroffene Produktbereiche**         | Hauptbuch                                                 |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
 
@@ -622,7 +622,7 @@ EDIVAT ist ein veralteter belgischer Standard für elektronische Meldungen über
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Funktionalität wird nicht mehr verwendet.                           |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                             |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                             |
 | **Betroffene Produktbereiche**         | Hauptbuch                                                 |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
 
@@ -655,7 +655,7 @@ Ein Tool, um die Datenerfassung für die Berechnung und die Steuererklärungen e
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Begrenzte Verwendung                                                                            |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Das Tool wird durch die elektronische Berichterstellungskonfigurationen in künftigen Versionen ersetzt. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Das Tool wird durch die elektronische Berichterstellungskonfigurationen in künftigen Versionen ersetzt. |
 | **Betroffene Produktbereiche**         | Hauptbuch                                                                           |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.                           |
 
@@ -688,7 +688,7 @@ Isabel ist das Framework für Electronic Banking in Europa und kein tatsächlich
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Integration mit Isabel-Kunden ist eingestellt.   |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Die Zahlungsformate, die nicht mehr verwendet werden, werden durch Transferzahlungsformat des Kredits ISO20022 für Belgien ersetzt. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Die Zahlungsformate, die nicht mehr verwendet werden, werden durch Transferzahlungsformat des Kredits ISO20022 für Belgien ersetzt. |
 | **Betroffene Produktbereiche**         | Kreditorenkonten     |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.    |
 
@@ -699,7 +699,7 @@ Diese Funktion wurde für Änderungen im Kontenplan und bei den Buchhaltungsvors
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Begrenzte Verwendung                                                  |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                             |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                             |
 | **Betroffene Produktbereiche**         | Hauptbuch                                                 |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
 
@@ -765,7 +765,7 @@ Leistungsverwaltung enthält Zielverwaltung und Integration mit Leistungsbeurtei
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Leistungsverwaltung wurde neu gestaltet und die Anzahl von Zielseiten wurde verringert, um den Prozess zu vereinfachen.                 |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Ziele sind für Manager über das Manager-Self-Service-Portal sichtbar und können vom Manager angezeigt und geändert werden. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Ziele sind für Manager über das Manager-Self-Service-Portal sichtbar und können vom Manager angezeigt und geändert werden. |
 | **Betroffene Produktbereiche**         | Human Capital Management       |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations Version 1611.    |
 
@@ -787,7 +787,7 @@ RFID (Radiofrequenz-Identifikation) ist eine Technologie zum Sammeln von Daten. 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Geringe Kundennutzung und ein begrenzter Funktionsumfang.   |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                              |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                              |
 | **Betroffene Produktbereiche**         | Lagerverwaltung                            |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations 1611. |
 
@@ -798,7 +798,7 @@ Lettische Gesetzgebung schafft bestimmte Regeln dazu, wie Verkaufsrechnungen num
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Bundeslandrechnungsnummerierung muss nicht mehr verwaltet werden. Der Bericht zu verwendeten Rechnungsnummern wird nicht mehr benötigt. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.       |
+| **Ersetzt durch eine andere Funktion?**   | Nein       |
 | **Betroffene Produktbereiche**         | Debitoren    |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.  |
 
@@ -860,7 +860,7 @@ Personalverwaltung-Lohndaten
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Geringe Verwendung                                                           |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                                  |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                                  |
 | **Betroffene Produktbereiche**         | Personalverwaltung                                                     |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations Version 1611 |
 
@@ -883,7 +883,7 @@ Ein Workflow für das Verwalten der Erstellung der Mitarbeiterziele ist einer vo
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Leistungsverbesserung        |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                             |
+| **Ersetzt durch eine andere Funktion?**   | Nein                             |
 | **Betroffene Produktbereiche**         | Kreditorenkonten               |
 | **Status**                         | Entfernt ab Dynamics AX 7.0. |
 
@@ -916,7 +916,7 @@ Wurde der **Stücklistenversionen**-Konfigurationsschlüssel deaktiviert, so wur
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Verwenden eines Konfigurationsschlüssels, um die Skalierung von Stücklistenversionen in einer Cloudumgebung zu verhindern. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                                                      |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                                                      |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung, Lagerverwaltung                                    |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.                                                          |
 
@@ -927,7 +927,7 @@ Bestimmte Zahlungsmethode für brasilianische Unternehmen
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Unterstützung für die brasilianische Bordero-Zahlungsmethode wurde in der brasilianischen Version eingestellt. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.   |
+| **Ersetzt durch eine andere Funktion?**   | Nein   |
 | **Betroffene Produktbereiche**         | Kreditorenkonten   |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
 
@@ -938,7 +938,7 @@ Bundessteuerauszug für ICMS-Steuer
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Dieser Auszug gilt nicht mehr für einige brasilianische Bundesländer. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Benutzer können das generische elektronische Berichtstool verwenden, um sofern erforderlich den Auszug für bestimmten Situationen zu konfigurieren. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Benutzer können das generische elektronische Berichtstool verwenden, um sofern erforderlich den Auszug für bestimmten Situationen zu konfigurieren. |
 | **Betroffene Produktbereiche**         | Steuerbücher    |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.   |
 
@@ -949,7 +949,7 @@ Bundessteuerauszug für ICMS-Steuer
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Diese Notfallmethode gilt nicht mehr in allen brasilianischen Bundesländern |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                                          |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                                          |
 | **Betroffene Produktbereiche**         | Debitoren                                                         |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.              |
 
@@ -1000,7 +1000,7 @@ Das Compliance Center war eine Enterprise Portal-Website für die Verwaltung der
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Fehlender Einsatz durch die Kunden. Microsoft SharePoint umfasst die gleichen Funktionen, die im Compliance Center verfügbar waren. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.   |
+| **Ersetzt durch eine andere Funktion?**   | Nein   |
 | **Betroffene Produktbereiche**         | Konformität und interne Kontrollen  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.    |
 
@@ -1029,7 +1029,7 @@ Dieses Tool wurde verwendet, um Schlüsseldaten aus Microsoft Dynamics CRM in Dy
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Cue-Gruppen wurden verwendet, um eine oder mehrere Cues im Infoboxbereich anzuzeigen. Der Nutzen war beschränkt. Es gab außerdem Leistungsbedenken, da eine Datensatzändern in einem übergeordneten Formular eine Abfrage pro Cue aus der Cue-Gruppe verursacht hat. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.      |
+| **Ersetzt durch eine andere Funktion?**   | Nein      |
 | **Betroffene Produktbereiche**         | Alle Module    |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.  |
 
@@ -1047,7 +1047,7 @@ Dieses Tool wurde verwendet, um Schlüsseldaten aus Microsoft Dynamics CRM in Dy
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Unterstützung für das dänische Scheckformatlayout ist eingestellt wurden, und der Bericht ist aus der DK-Lokalisierung entfernt worden. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.    |
+| **Ersetzt durch eine andere Funktion?**   | Nein    |
 | **Betroffene Produktbereiche**         | Alle Module    |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.  |
 
@@ -1079,7 +1079,7 @@ Dynamics AX 2012 erlaubte die Speicherung von Anhängen in der Datenbank und in 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Kein Verwendung der Funktionen gefunden. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                     |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                     |
 | **Betroffene Produktbereiche**         | Zeit und Anwesenheit                    |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.         |
 
@@ -1099,7 +1099,7 @@ In Dynamics AX 2012 R3 konnte sich Retail Modern POS direkt mit der Kanal-DB ver
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Direkte Datenbankkonnektivität erforderte ein geringeres Sicherheitsprotokolle und wurde hauptsächlich verwendet, um den höchsten Leistungsstandard zu erreichen. Aufgrund der Leistungs- und Sicherheitsverbesserungen, die bei Finance and Operations aufgetreten sind, verursacht diese Funktionalität jetzt mehr Probleme, als sie löst. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Nur Standard Retail Server Kommunikation wird nun unterstützt.  |
+| **Ersetzt durch eine andere Funktion?**   | Nein Nur Standard Retail Server Kommunikation wird nun unterstützt.  |
 | **Betroffene Produktbereiche**         | Kanal-DB/Retail Modern POS   |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.  |
 
@@ -1137,7 +1137,7 @@ Diese Funktionen stellten die eXtensible Business Reporting Language (XBRL)-Ausg
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Geringe Kundennutzung und ein begrenzter Funktionsumfang.  |
-| **Ersetzt durch eine andere Funktion?**   | Nr.              |
+| **Ersetzt durch eine andere Funktion?**   | Nein              |
 | **Betroffene Produktbereiche**         | Konformität und interne Kontrollen, Kreditorenkonten  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0. |
 
@@ -1193,7 +1193,7 @@ Testtransaktionsgenerierung kann nicht mithilfe einer Charge verwendet werden. S
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Das XML-Format für EU-Umsatzliste für Deutschland wird nicht mehr unterstützt. Nur das Format der Textdatei ELMA5 kann verwendet werden, um den Bericht zur EU-Umsatzliste der deutschen Steuerbehörde zu senden. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.         |
+| **Ersetzt durch eine andere Funktion?**   | Nein         |
 | **Betroffene Produktbereiche**         | MwSt.        |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.   |
 
@@ -1246,7 +1246,7 @@ Diese Funktion aktivierte die Generierung der mexikanischen elektronischen Rechn
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Methode ist nicht mehr verfügbar. Die Generierung elektronischer Rechnungen über die CFD-Methode wurde von den Steuerbehörden als veraltet definiert und durch die Comprobante Fiscal Digital a través de Internet (CFDI)-Methode ersetzt, bei der die Signierung an einen Drittanbieter (PAC) delegiert wird. Der monatliche Bericht ist entfernt wurden. Eine Abfragemöglichkeit ermöglicht Benutzern die Abfrage von historischen Transaktionen. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.    |
+| **Ersetzt durch eine andere Funktion?**   | Nein    |
 | **Betroffene Produktbereiche**         | Debitoren, Projekt   |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
 
@@ -1278,7 +1278,7 @@ Die Bestands- und Lagerorterfassungen unterstützen nicht mehr die Möglichkeit,
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Kein Verwendung der Funktionen gefunden. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                     |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                     |
 | **Betroffene Produktbereiche**         | Lagerverwaltung                   |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.         |
 
@@ -1311,7 +1311,7 @@ Mit dieser Funktion können Sie den Namen einer der drei Standardproduktdimensio
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die aktuelle Version von Dynamics AX unterstützt keine Beschriftungsänderungen zur Laufzeit. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                                                            |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                                                            |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung                                                |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.                                                |
 
@@ -1322,7 +1322,7 @@ In Dynamics AX 2012 R3 konnte der Retail Server mithilfe der HTTP-Kommunikation 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Aufgrund der neuen Sicherheitsanforderungen wird nur noch die gesicherte Kommunikation mit TLS 1.2 (oder höher, wenn verfügbar) unterstützt. Der Self-Service-Installer konfiguriert automatisch den Computer für die Kommunikation. |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Nur Standard HTTPS-Kommunikation wird nun unterstützt. |
+| **Ersetzt durch eine andere Funktion?**   | Nein Nur Standard HTTPS-Kommunikation wird nun unterstützt. |
 | **Betroffene Produktbereiche**         | Retail Server  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0. |
 
@@ -1340,7 +1340,7 @@ In Dynamics AX 2012 R3 konnte der Retail Server mithilfe der HTTP-Kommunikation 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Geringe Kundennutzung und ein begrenzter Funktionsumfang. |
-| **Ersetzt durch eine andere Funktion?**   | Nr.                                           |
+| **Ersetzt durch eine andere Funktion?**   | Nein                                           |
 | **Betroffene Produktbereiche**         | US-Mehrwertsteuer                                 |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.               |
 
@@ -1351,7 +1351,7 @@ Sites Services lassen Sie Websites erstellen, die Ihre Geschäftsprozesse mit de
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Microsoft Azure-Infrastruktur, die von Dynamics AX verwendet wird, hat neue Funktionen, die stattdessen verwendet werden können (beispielsweise Azure-Sites). |
-| **Ersetzt durch eine andere Funktion?**   | Nr.   |
+| **Ersetzt durch eine andere Funktion?**   | Nein   |
 | **Betroffene Produktbereiche**         | Personalverwaltungs-Pesonalbeschaffung, Anfragenverwaltung, Angebotsanforderungen, Kreditorenerfassung, kooperative Arbeitsbereiche für Verkaufschancen und Kampagnen  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.    |
 
@@ -1392,7 +1392,7 @@ Die bereitgestellte Funktionen der Windows 8-Tablet-App für Speseneintrag und G
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Finance and Operations ist mit Tablets kompatibel. Die Tablet-App wird nicht mehr benötigt.    |
-| **Ersetzt durch eine andere Funktion?**   | Nr.          |
+| **Ersetzt durch eine andere Funktion?**   | Nein          |
 | **Betroffene Produktbereiche**         | Spesenverwaltung   |
 | **Status**                         | Entfernt: Diese Funktionalität ist nur für Dynamics AX 2012 R3 verfügbar. |
 

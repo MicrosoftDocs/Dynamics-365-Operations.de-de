@@ -38,9 +38,9 @@ Die folgende Tabelle gibt an, wann Lagerbuchungen vom System unter Verwendung de
 
 | Bedingung                                               | Das System verwendet den vorkalkulierten laufenden Durchschnittseinstandspreis | Das System verwendet den Einstandspreis, der im Artikelmaster definiert ist |
 |---------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------|
-| Sowohl Zähler\* als auch Nenner\*\* sind positiv.  | Ja                                                      | Nr.                                                                |
-| Zähler\* und/oder Nenner\*\* sind negativ. | Nr.                                                       | Ja                                                               |
-| Der Nenner\*\* ist 0 (Null).                        | Nr.                                                       | Ja                                                               |
+| Sowohl Zähler\* als auch Nenner\*\* sind positiv.  | Ja                                                      | Nein                                                                |
+| Zähler\* und/oder Nenner\*\* sind negativ. | Nein                                                       | Ja                                                               |
+| Der Nenner\*\* ist 0 (Null).                        | Nein                                                       | Ja                                                               |
 
 \* Zähler = (physischer Betrag + wertmäßiger Betrag) \*\* Nenner = (physischer Menge + wertmäßige Menge) 
 

@@ -1,8 +1,8 @@
 ---
 title: Fragebögen erstellen
-description: In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben. Der erste Schritt ist das Entwerfen des Fragebogens. Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren.
-author: andreabichsel
-ms.date: 06/20/2017
+description: In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c2a8c156aa75b02b69da3ee70a1ee60ea9d73a8aa67c70babdaaad88d6eb81f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08c8015e8729a4ca33f3fb3c48f654e489f32f3f
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755563"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729050"
 ---
 # <a name="create-questionnaires"></a>Fragebögen erstellen
 
@@ -63,7 +63,7 @@ Bevor Sie Fragebögen, Antworten und Fragen einrichten können, müssen Sie eini
 
 ### <a name="questionnaire-types"></a>Fragebogentypen
 
-Fragebogentypen sind erforderlich und müssen zugewiesen werden, wenn Sie einen Fragebogen erstellen. Fragebogentypen helfen Ihnen dabei, Fragebögen leichter zu verwalten und zu klassifizieren. Verwenden Sie Fragebogentypen, um Fragebögen zu klassifizieren und voneinander zu unterscheiden. Wenn Sie beispielsweise mehrere Fragebögen zur Auswahl haben, können Sie sie nach Typ filtern, um einen bestimmten Fragebogen leichter finden zu können. Beispiele für Fragebogentypen:
+**Fragebogentypen** sind erforderlich und müssen zugewiesen werden, wenn Sie einen Fragebogen erstellen. **Fragebogentypen** helfen Ihnen dabei, Fragebögen leichter zu verwalten und zu klassifizieren. Verwenden Sie Fragebogentypen, um Fragebögen zu klassifizieren und voneinander zu unterscheiden. Wenn Sie beispielsweise mehrere Fragebögen zur Auswahl haben, können Sie sie nach Typ filtern, um einen bestimmten Fragebogen leichter finden zu können. Beispiele für Fragebogentypen:
 
 -   Personalverwaltung – Entwicklung
 -   Kundenumfragen
@@ -71,9 +71,9 @@ Fragebogentypen sind erforderlich und müssen zugewiesen werden, wenn Sie einen 
 
 ### <a name="question-types"></a>Fragetypen
 
-Wenn Sie eine Frage erstellen, sind Fragebogentypen erforderlich und müssen zugewiesen werden. 
+Wenn Sie eine Frage erstellen, sind **Fragebogentypen** erforderlich und müssen zugewiesen werden. 
 
-Verwenden Sie Fragentypen, die Fragen für die Berichterstellung kategorisieren. Fragetypen erleichtern es, nach Fragen zu suchen, da Sie Typen als Filter für die Seite **Fragen** verwenden können. Beispiele für Fragetypen:
+Verwenden Sie **Fragentypen**, die Fragen für die Berichterstellung kategorisieren. **Fragetypen** erleichtern es, nach Fragen zu suchen, da Sie Typen als Filter für die Seite **Fragen** verwenden können. Beispiele für Fragetypen:
 
 -   Personalverwaltung
 -   Geschäftsverwaltung
@@ -105,7 +105,7 @@ Um eine Liste möglicher Antworten für Fragen mit vordefinierten Antworten verf
 
 Antwortgruppen und Antworten sind Komponenten der Informationen, aus denen Fragebögen erstellt werden. Nachdem Sie eine Antwortgruppe erstellt haben, können Sie sie im Feld **Antwortgruppe** auf der Seite **Fragen** einer Frage zuordnen. 
 
-Eine Antwortgruppe kann für mehrere Fragen im gleichen Fragebogen oder in mehreren Fragebögen verwendet werden. 
+Eine **Antwortgruppe** kann für mehrere Fragen im gleichen Fragebogen oder in mehreren Fragebögen verwendet werden. 
 
 > [!NOTE]
 > Wenn Sie Antworttexte in den Antwortgruppen ändern, die bereits in ausgefüllten Fragebögen verwendet wurden, kann es schwierig werden, die Daten zu überprüfen und Fragebogenergebnisse sind möglicherweise nicht mehr gültig. Wenn Sie eine Antwortgruppe ändern müssen, sollten Sie erwägen, eine neue Antwortgruppe zu erstellen, anstatt eine vorhandene zu ändern. Antwortgruppen, die einer Frage oder Antwort zugeordnet sind oder bereits beantwortet wurden, können nicht gelöscht werden.
@@ -171,7 +171,7 @@ In einem Fragebogen können Sie die folgenden Typen von Fragen nicht löschen:
 
 ### <a name="result-groups"></a>Ergebnisgruppen
 
-Ergebnisgruppen sind optional, wenn Sie Fragen einem Fragebogen zuordnen. 
+**Ergebnisgruppen** sind optional, wenn Sie Fragen einem Fragebogen zuordnen. 
 
 Eine Ergebnisgruppe wird verwendet, um Punkte zu berechnen und die Ergebnisse eines Fragebogens zu kategorisieren. Wenn Sie Ergebnisgruppen verwenden, können Sie die folgenden Aufgaben ausführen:
 

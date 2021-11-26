@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647188"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777960"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Produktionsausführungsschnittstelle konfigurieren
 
@@ -39,7 +39,7 @@ Die Produktionsausführungsoberfläche selbst sowie mehrere der optionalen Einst
 
 ### <a name="the-production-floor-execution-interface"></a>Die Produktionsausführungsoberfläche
 
-Dies ist die wichtigste Funktion, die in diesem Thema beschrieben wird. Sie fügt die Produktionsausführungsoberfläche zu Ihrem System hinzu. Um sie zu aktivieren, schalten Sie die folgende Funktion in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
+Dies ist die wichtigste Funktion, die in diesem Thema beschrieben wird. Ab Supply Chain Management Version 10.0.21 ist sie standardmäßig aktiviert. Sie fügt die Produktionsausführungsoberfläche zu Ihrem System hinzu. Um sie zu aktivieren, schalten Sie die folgende Funktion in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein:
 
 - Produktionsbereich-Ausführung
 
@@ -47,19 +47,19 @@ Dies ist die wichtigste Funktion, die in diesem Thema beschrieben wird. Sie füg
 
 Diese Funktionen machen die Funktionalität der Ladungsträger für die Produktionsausführungsoberfläche verfügbar. Wenn Sie sie nutzen möchten, schalten Sie die folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein (in dieser Reihenfolge):
 
-1. Das Kennzeichen für Fertigmeldung wurde zum Einzelvorgangslistengerät hinzugefügt.
+1. Kennzeichen für die Meldung als fertig zum Einzelvorgangslistengerät hinzugefügt (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
 1. Aktivieren Sie die automatische Generierung der Kennzeichennummer, wenn die Berichtserstellung im Einzelvorgangskartengerät abgeschlossen wurde
 
 ### <a name="print-labels"></a>Beschriftungen drucken
 
 Diese Funktionen machen die Funktionalität des Etikettendrucks für die Produktionsausführungsoberfläche verfügbar. Wenn Sie sie nutzen möchten, schalten Sie die folgenden Funktionen in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ein (in dieser Reihenfolge):
 
-1. Das Kennzeichen für Fertigmeldung wurde zum Einzelvorgangslistengerät hinzugefügt.
+1. Kennzeichen für die Meldung als fertig zum Einzelvorgangslistengerät hinzugefügt (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
 1. Beschriftung vom Einzelvorgangs-Kartengerät aus drucken
 
 ### <a name="allow-locking-the-touch-screen"></a>Sperren des Touchscreens erlauben
 
-Diese Funktion fügt der Produktionsausführungsoberfläche eine Schaltfläche hinzu, die es den Arbeitskräften ermöglicht, den Touchscreen zu desinfizieren. Wenn Sie diese Funktion nutzen möchten, aktivieren Sie die folgende Funktion in [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert. Sie fügt der Produktionsausführungsoberfläche eine Schaltfläche hinzu, die es den Arbeitskräften ermöglicht, den Touchscreen zu desinfizieren. Wenn Sie es nutzen möchten, überprüfen Sie, ob die folgende Funktion in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiviert ist:
 
 - Funktion zum Sperren von Jobkartengerät und Jobkartenterminal, damit sie saniert werden können
 

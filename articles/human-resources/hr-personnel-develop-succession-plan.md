@@ -1,8 +1,8 @@
 ---
 title: Nachfolgeplan entwickeln
 description: Wenn Ihre Organisation wächst, müssen Sie mit der Nachfolgeplanung beginnen.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca1d9dda75038d937e2a3dad4582feefa617aac9f7f3f1a75ffd274c69c68ae9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed10813c30b9a49b84a7e8e333fbac3d1e26720a
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768214"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731515"
 ---
 # <a name="develop-a-succession-plan"></a>Nachfolgeplan entwickeln
 
@@ -34,8 +34,8 @@ Wenn Ihre Organisation wächst, müssen Sie mit der Nachfolgeplanung beginnen. W
 6. Wählen Sie **Profil abrufen**.
 7. Wählen Sie **Person**.
 8. Geben Sie im Feld **Person** einen Namen ein oder wählen Sie das Dropdownmenü aus.
-9. Wählen Sie **OK**.
-10. Erweitern Sie das **Zertifikate**-Inforegister, um die Zertifikate anzuzeigen oder zu bearbeiten, einschließlich der Qualifikationszuordnung.
+9. Wählen Sie **OK** aus.
+10. Erweitern Sie das Inforegister **Zertifikate**, um die Zertifikate anzuzeigen oder zu bearbeiten, einschließlich der Qualifikationszuordnung.
 11. Erweitern Sie das Inforegister **Qualifikationen**, um die Qualifikationen anzuzeigen oder zu bearbeiten, die eingefügt werden sollen.
 12. Markieren Sie in der Liste die erste Zeile. Beispiel: Buchhaltung.
 13. Aktivieren Sie das **Optional**-Kontrollkästchen.
@@ -48,8 +48,8 @@ Wenn Ihre Organisation wächst, müssen Sie mit der Nachfolgeplanung beginnen. W
 20. Wählen Sie im Feld **Wichtigkeit** eine Option aus.
 21. Wählen Sie in der Liste die Zeile "4" aus.
 22. Aktivieren Sie das **Optional**-Kontrollkästchen.
-23. Wählen Sie im Feld "Wichtigkeit" eine Option aus.
-24. Erweitern Sie die Schnellregisterkarte **Ausbildung**, um die Ausbildungskompetenzen anzuzeigen oder zu bearbeiten, die in die Qualifikationszuordnung aufgenommen werden sollen.
+23. Wählen Sie im Feld **Wichtigkeit** eine Option aus.
+24. Erweitern Sie das Inforegister **Ausbildung**, um die Ausbildungskompetenzen anzuzeigen oder zu bearbeiten, die in die Qualifikationszuordnung aufgenommen werden sollen.
 25. Wählen Sie **Ausführen**.
 26. Wählen Sie **OK**.
 27. Wählen Sie **Ergebnis** aus.

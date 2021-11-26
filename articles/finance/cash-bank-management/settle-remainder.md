@@ -1,7 +1,7 @@
 ---
 title: Rest ausgleichen
 description: Sie können den Ausgleich über die noch zu bezahlenden Betragsaktivität ausgleichen, indem Sie den Betrag einem Sachkonto zuweisen.
-author: mikefalkner
+author: roschlom
 ms.date: 10/16/2018
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 1eb82c1f5982b30052acb2cb7659f6c07f2a4da54b68f602a2afb4e499fbcc73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 216c5c1d7db72e5f5071f2cd03656df538a64e72
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719787"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754095"
 ---
 # <a name="settle-remainder"></a>Rest ausgleichen
 
@@ -33,7 +33,7 @@ Sie müssen die Restfunktion aktivieren und die Standardeinstellungen einrichten
 2)  Wählen Sie die Registerkarte **Ausgleich** aus und klicken **Aktivieren Sie Rest ausgleichen**
 3)  Wählen Sie unter **Standardursachencode** einen Standardursachencode aus. Die Ursachencodes müssen unter **Debitor > Einrichtung > Debitorentilgungsursachencodes** oder **Kreditor > Einrichtung > Debitorentilgungsursachencodes** bereits eingerichtet worden sein. Der **Standardbank-Restkonto** wird als Standard dem Konto zum Tilgungsursachencode zugewiesen.
 3)  Aktualisieren Sie den Bericht **Standardbank-Restkonto** nach Bedarf.
-4)  Wählen Sie in **Standardjournal** eine Zahlungserfassung aus, die verwendet wird, wenn Sie eine Zahlungserfassung erstellen möchten wenn Sie nur vereinbarende offene Buchungen ausgleichen möchten. Wenn Sie die Bankrestfunktion aktivieren, müssen Sie ein Standardjournal hinzufügen.
+4)  Wählen Sie in **Standardjournal** eine Zahlungserfassung aus, die verwendet wird, wenn Sie eine Zahlungserfassung erstellen möchten, wenn Sie nur offene Buchungen ausgleichen. Wenn Sie die Bankrestfunktion aktivieren, müssen Sie ein Standardjournal hinzufügen.
 
 ## <a name="settle-remainder-from-a-journal"></a>Restschuld einer Erfassung ausgleichen
 Wenn Sie die Funktion **Restschuld begleichen** nicht aktivieren, können Sie keine Buchung in eine Erfassung eingeben noch diese anschließen und Transaktionen ausgleichen, wie Sie es in der Vergangenheit vorgenommen haben. Wenn Sie auf die Schaltfläche **OK** klicken, wechselt der offene Saldo auf der Rechnung und wird um den Bargeldbetrag verringert. Wenn das Bargeld die Rechnung nicht vollständig ausgleicht, bleibt die Rechnung mit dem Restsaldo bis zur Bezahlung offen.

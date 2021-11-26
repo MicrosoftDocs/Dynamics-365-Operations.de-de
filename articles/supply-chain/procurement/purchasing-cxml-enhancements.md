@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f4a7ee091d73e2104571ac9134a9de9bab0a7074
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575463"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777766"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Einkaufen von cXML-Erweiterungen
 
@@ -28,7 +28,7 @@ Die Funktion _Einkaufen von cXML-Erweiterungen_ baut auf der [vorhandenen extern
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>Aktivieren Sie die Funktion „Einkaufen von cXML-Erweiterungen“
 
-Öffnen Sie zum Aktivieren der Funktion die **[Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)**-Seite und suchen Sie nach der Funktion namens *Einkaufen von cXML-Erweiterungen*. Wählen Sie die Funktion aus, und wählen Sie dann **Jetzt Aktivieren** aus, um sie zu aktivieren.
+Öffnen Sie zum Aktivieren der Funktion die **[Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)**-Seite und suchen Sie nach der Funktion namens *Einkaufen von cXML-Erweiterungen*. Wählen Sie die Funktion aus, und wählen Sie dann **Jetzt Aktivieren** aus, um sie zu aktivieren. (Ab Supply Chain Management Version 10.0.21 ist diese Funktion standardmäßig aktiviert.)
 
 Nachdem Sie die Funktion aktiviert haben, sollten Sie die Einstellungen in den folgenden drei Bereichen konfigurieren:
 

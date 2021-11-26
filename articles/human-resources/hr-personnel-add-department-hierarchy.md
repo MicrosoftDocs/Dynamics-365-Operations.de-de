@@ -1,8 +1,8 @@
 ---
 title: Abteilungen erstellen und sie in die Abteilungshierarchie einbeziehen
-description: Eine Abteilung ist eine Organisationseinheit, die eine Kategorie oder einen funktionalen Bereich einer Organisation darstellt. Eine Abteilung ist für einen bestimmten Bereich der Organisation wie zum Beispiel Verkauf, Buchhaltung oder Personalverwaltung zuständig. Sie können Abteilungen verwenden, um zu Funktionsbereiche zu melden. Abteilungen können Gewinn- und Verlustzuständigkeit haben.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Eine Abteilung ist eine Organisationseinheit, die eine Kategorie oder einen funktionalen Bereich einer Organisation darstellt. Eine Abteilung ist für einen bestimmten Bereich der Organisation wie zum Beispiel Verkauf, Buchhaltung oder Personalverwaltung zuständig.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1fa6d2b18a1b92236a153e453560430cc0d4c1c6e2cde0431c1e1cc68128bd0f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2caa4f1e7be4be54766921a9e38c97d22b8200c7
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727016"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731611"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Abteilungen erstellen und sie in die Abteilungshierarchie einbeziehen
 
@@ -32,15 +32,15 @@ Eine Abteilung kann möglicherweise auch eine Gruppe von Kostenstellen umfassen.
 
 | Feld               | Beschreibung                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name                | Geben Sie einen Namens für die Abteilung ein.                                                                                                                                                                                  |
-| Abteilungsnummer   | Ein Standardwert wird möglicherweise automatisch generiert, wenn ein Zahlenreferenzcode im Feld **Organisationszahl**-Referenz auf der Seite **Zahlensequenz** zugewiesen wird.                                                 |
-| Suchbegriff         | Einen Namen oder ein Abkürzung eingeben, die für die Suche nach der Abteilung verwendet werden kann.                                                                                                                                            |
-| Memo                | Geben Sie zusätzliche Informationen hier ein.                                                                                                                                                                            |
-| In Hierarchie        | Ein aktiviertes Kontrollkästchen zeigt an, dass die Abteilung in der Abteilungshierarchie enthalten ist. Informationen darüber, wie eine Abteilung der Abteilungshierarchie hinzugefügt wird, lesen Sie die Informationen weiter unten in diesem Artikel. |
-| DUNS-Nummer         | DUNS steht für Daten-universelles Zahlensystem. Dies ist eine 9-stellige Zahl, die von Dun & Bradstreet ausgegeben wird.                                                                                                     |
-| Vorgesetzter             | Geben Sie die Person ein, die die Abteilung leitet.                                                                                                                                                                    |
-| Adressen           | Fügen Sie Adressinformationen für die Abteilung hinzu. Fügen Sie z. B. die Postanschrift für das Gebäude hinzu, in dem sich die Abteilung befindet.                                                                          |
-| Kontaktinformationen | Fügen Sie Kontaktinformationen für die Abteilung hinzu. Fügen Sie z. B. eine Telefonnummer für den Serviceschalter in der Abteilung hinzu.                                                                                           |
+| **Name**                | Geben Sie einen Namens für die Abteilung ein.                                                                                                                                                                                  |
+| **Abteilungsnummer**   | Ein Standardwert wird möglicherweise automatisch generiert, wenn ein Zahlenreferenzcode im Feld **Organisationszahl**-Referenz auf der Seite **Zahlensequenz** zugewiesen wird.                                                 |
+| **Suchbegriff**         | Einen Namen oder ein Abkürzung eingeben, die für die Suche nach der Abteilung verwendet werden kann.                                                                                                                                            |
+| **Memo**                | Geben Sie zusätzliche Informationen hier ein.                                                                                                                                                                            |
+| **In Hierarchie**        | Ein aktiviertes Kontrollkästchen zeigt an, dass die Abteilung in der Abteilungshierarchie enthalten ist. Informationen darüber, wie eine Abteilung der Abteilungshierarchie hinzugefügt wird, lesen Sie die Informationen weiter unten in diesem Artikel. |
+| **DUNS-Nummer**         | DUNS steht für Daten-universelles Zahlensystem. Dies ist eine 9-stellige Zahl, die von Dun & Bradstreet ausgegeben wird.                                                                                                     |
+| **Vorgesetzter**             | Geben Sie die Person ein, die die Abteilung leitet.                                                                                                                                                                    |
+| **Adressen**           | Fügen Sie Adressinformationen für die Abteilung hinzu. Fügen Sie z. B. die Postanschrift für das Gebäude hinzu, in dem sich die Abteilung befindet.                                                                          |
+| **Kontaktinformationen** | Fügen Sie Kontaktinformationen für die Abteilung hinzu. Fügen Sie z. B. eine Telefonnummer für den Serviceschalter in der Abteilung hinzu.                                                                                           |
 
 Um der Abteilungshierarchie eine Abteilung hinzuzufügen, führen Sie folgende Schritte aus.
 

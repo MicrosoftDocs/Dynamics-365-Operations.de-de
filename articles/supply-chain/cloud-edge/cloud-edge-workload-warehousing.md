@@ -187,34 +187,34 @@ Die folgende Tabelle zeigt, welche Funktionen im Outbound unterstützt werden un
 
 | Bearbeiten                                                      | Hub | Workload für die Lagerausführung auf einer Skalierungseinheit |
 |--------------------------------------------------------------|-----|------------------------------|
-| Quellbeleg-Verarbeitung                                   | Ja | Nr. |
-| Last- und Transportverwaltungs-Verarbeitung                | Ja, aber nur die Ladungsplanungsprozesse. Verarbeitung der Transportverwaltung wird nicht unterstützt  | Nr. |
-| Für Lagerort freigeben                                         | Ja | Nr. |
-| Geplantes Crossdocking                                        | Nr.  | Nr. |
+| Quellbeleg-Verarbeitung                                   | Ja | Nein |
+| Last- und Transportverwaltungs-Verarbeitung                | Ja, aber nur die Ladungsplanungsprozesse. Verarbeitung der Transportverwaltung wird nicht unterstützt  | Nein |
+| Für Lagerort freigeben                                         | Ja | Nein |
+| Geplantes Crossdocking                                        | Nein  | Nein |
 | Lieferungskonsolidierung                                       | Ja, bei Verwendung der Ladungsplanung | Ja |
-| Verarbeitung von Sendungswellen                                     | Nr.  |Ja, außer **Ladungserstellung und -sortierung** |
-| Lieferungen für Welle verwalten                                  | Nr.  | Ja|
-| Lagerort-Arbeitsverarbeitung (inkl. Ladungsträger-Druck)        | Nr.  | Ja, aber nur für die zuvor genannten, unterstützten Funktionen |
-| Clusterkommissionierung                                              | Nr.  | Ja|
-| Manuelle Verpackungsverarbeitung, inkl. Arbeitsverarbeitung „Entnahme aus gepacktem Container“ | Nr. <P>Einige Verarbeitungen können nach einem anfänglichen Kommissioniervorgang durchgeführt werden, der von einer Skalierungseinheit ausgeführt wird, werden jedoch aufgrund folgender blockierter Vorgänge nicht empfohlen.</p>  | Nr. |
-| Container aus Gruppe entfernen                                  | Nr.  | Nr. |
-| Ausgehende Sortierverarbeitung                                  | Nr.  | Nr. |
+| Verarbeitung von Sendungswellen                                     | Nein  |Ja, außer **Ladungserstellung und -sortierung** |
+| Lieferungen für Welle verwalten                                  | Nein  | Ja|
+| Lagerort-Arbeitsverarbeitung (inkl. Ladungsträger-Druck)        | Nein  | Ja, aber nur für die zuvor genannten, unterstützten Funktionen |
+| Clusterkommissionierung                                              | Nein  | Ja|
+| Manuelle Verpackungsverarbeitung, inkl. Arbeitsverarbeitung „Entnahme aus gepacktem Container“ | Nein <P>Einige Verarbeitungen können nach einem anfänglichen Kommissioniervorgang durchgeführt werden, der von einer Skalierungseinheit ausgeführt wird, werden jedoch aufgrund folgender blockierter Vorgänge nicht empfohlen.</p>  | Nein |
+| Container aus Gruppe entfernen                                  | Nein  | Nein |
+| Ausgehende Sortierverarbeitung                                  | Nein  | Nein |
 | Drucken von ladungsbezogenen Dokumenten                           | Ja | Ja|
-| Konnossement- und ASN-Generierung                            | Nr.  | Ja|
-| Versandbestätigung                                             | Nr.  | Ja|
-| Versandbestätigung mit „Bestätigen und übertragen“            | Nr.  | Nr. |
-| Lieferschein- und Rechnungsverarbeitung                        | Ja | Nr. |
-| Kurzkommissionierung (Verkaufs- und Umlagerungsaufträge)                    | Nr.  | Ja, ohne Reservierungen für Quelldokumente zu entfernen|
-| Zu hohe Entnahme (Verkaufs- und Umlagerungsaufträge)                     | Nr.  | Ja|
-| Änderung von Arbeitsplätzen (Verkaufs- und Umlagerungsaufträge)         | Nr.  | Ja|
-| Arbeit abschließen (Verkaufs- und Umlagerungsaufträge)                    | Nr.  | Ja|
+| Konnossement- und ASN-Generierung                            | Nein  | Ja|
+| Versandbestätigung                                             | Nein  | Ja|
+| Versandbestätigung mit „Bestätigen und übertragen“            | Nein  | Nein |
+| Lieferschein- und Rechnungsverarbeitung                        | Ja | Nein |
+| Kurzkommissionierung (Verkaufs- und Umlagerungsaufträge)                    | Nein  | Ja, ohne Reservierungen für Quelldokumente zu entfernen|
+| Zu hohe Entnahme (Verkaufs- und Umlagerungsaufträge)                     | Nein  | Ja|
+| Änderung von Arbeitsplätzen (Verkaufs- und Umlagerungsaufträge)         | Nein  | Ja|
+| Arbeit abschließen (Verkaufs- und Umlagerungsaufträge)                    | Nein  | Ja|
 | Arbeitsbericht drucken                                            | Ja | Ja|
-| Serienetikett                                                   | Nr.  | Ja|
-| Arbeitsaufteilung                                                   | Nr.  | Ja|
-| Arbeitsverarbeitung – Geleitet von „Transportladung“            | Nr.  | Nr. |
-| Entnommene Menge reduzieren                                       | Nr.  | Nr. |
-| Arbeit stornieren                                                 | Nr.  | Nr. |
-| Lieferungsbestätigung umkehren                                | Nr.  | Ja|
+| Serienetikett                                                   | Nein  | Ja|
+| Arbeitsaufteilung                                                   | Nein  | Ja|
+| Arbeitsverarbeitung – Geleitet von „Transportladung“            | Nein  | Nein |
+| Entnommene Menge reduzieren                                       | Nein  | Nein |
+| Arbeit stornieren                                                 | Nein  | Nein |
+| Lieferungsbestätigung umkehren                                | Nein  | Ja|
 
 ### <a name="inbound"></a>Zugang
 
@@ -222,31 +222,31 @@ Die folgende Tabelle zeigt, welche Funktionen im Eingang unterstützt werden und
 
 | Bearbeiten                                                          | Hub | Workload für die Lagerausführung auf einer Skalierungseinheit<BR>*(Mit „Ja“ gekennzeichnete Artikel gelten nur für Lagerortaufträge.)* |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Quelle&nbsp;Dokument&nbsp;Verarbeitung                             | Ja | Nr. |
-| Last- und Transportverwaltungs-Verarbeitung                    | Ja | Nr. |
-| Gesamttransportkosten und Waren in Zustellung                       | Ja | Nr. |
-| Bestätigung eingehender Lieferungen                                    | Ja | Nr. |
-| Freigabe der Einkaufsbestellung an den Lagerort (Lagerbestandsverarbeitung) | Ja | Nr. |
-| Stornierung von Lagerortauftragspositionen<p>Beachten Sie, dass dies nur unterstützt wird, wenn keine Registrierung für die Position erfolgt ist</p> | Ja | Nr. |
+| Quelle&nbsp;Dokument&nbsp;Verarbeitung                             | Ja | Nein |
+| Last- und Transportverwaltungs-Verarbeitung                    | Ja | Nein |
+| Gesamttransportkosten und Waren in Zustellung                       | Ja | Nein |
+| Bestätigung eingehender Lieferungen                                    | Ja | Nein |
+| Freigabe der Einkaufsbestellung an den Lagerort (Lagerbestandsverarbeitung) | Ja | Nein |
+| Stornierung von Lagerortauftragspositionen<p>Beachten Sie, dass dies nur unterstützt wird, wenn keine Registrierung für die Position erfolgt ist</p> | Ja | Nein |
 | Bestellungsartikel – Empfang und Einlagerung                       | <p>Ja,&nbsp;wenn&nbsp;kein Lagerort vorhanden ist&nbsp;keine Lagerbestellung</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | <p>Ja, wenn eine Bestellung nicht Teil einer <i>Ladung</i> ist</p> |
 | Bestellposition – Empfang und Einlagerung                       | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | <p>Ja, wenn eine Bestellung nicht Teil einer <i>Ladung</i> ist</p></p> |
-| Rücklieferungsempfang und -einlagerung                              | Ja | Nr. |
+| Rücklieferungsempfang und -einlagerung                              | Ja | Nein |
 | Empfang und Einlagerung gemischter Ladungsträger                       | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Ja |
-| Artikelempfang aus Ladung                                              | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nr. |
-| Kennzeichenempfang und -einlagerung                             | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nr. |
-| Artikelempfang und -einlagerung für Umlagerungsauftrag                       | Ja | Nr. |
-| Umlagerungsauftragsposition – Empfang und Einlagerung                       | Ja | Nr. |
+| Artikelempfang aus Ladung                                              | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
+| Kennzeichenempfang und -einlagerung                             | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
+| Artikelempfang und -einlagerung für Umlagerungsauftrag                       | Ja | Nein |
+| Umlagerungsauftragsposition – Empfang und Einlagerung                       | Ja | Nein |
 | Arbeit stornieren (eingehend)                                            | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | <p>Ja, aber nur, wenn die Option <b>Bon bei Stornierung von Arbeit abmelden</b> (auf der Seite <b>Parameter der Lagerortverwaltung</b>) deaktiviert ist</p> |
-| Einkaufsbestellung Wareneingangsbearbeitung                        | Ja | Nr. |
+| Einkaufsbestellung Wareneingangsbearbeitung                        | Ja | Nein |
 | Bestelleingang mit Unterlieferung                      | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Ja, aber nur, wenn Sie eine Stornoanforderung vom Hub aus stellen |
 | Bestelleingang mit Überlieferung                       | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Ja  |
-| Eingang mit Erstellung von *Cross-Docking*-Arbeit                 | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nr. |
-| Eingang mit Erstellung von *Qualitätsprüfungsauftrags*-Arbeit                  | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nr. |
-| Eingang mit Erstellung von *Qualitätsartikelmuster*-Arbeit          | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nr. |
-| Eingang mit Erstellung von *Qualität in der Qualitätsprüfung*-Arbeit       | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nr. |
-| Eingang mit Erstellung von Qualitätsprüfungsauftrag                            | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nr. |
-| Arbeitsverarbeitung – Geleitet von *Clustereinlagerung*                 | Ja | Nr. |
-| Arbeitsverarbeitung mit *kurzer Entnahme*                               | Ja | Nr. |
+| Eingang mit Erstellung von *Cross-Docking*-Arbeit                 | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
+| Eingang mit Erstellung von *Qualitätsprüfungsauftrags*-Arbeit                  | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
+| Eingang mit Erstellung von *Qualitätsartikelmuster*-Arbeit          | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
+| Eingang mit Erstellung von *Qualität in der Qualitätsprüfung*-Arbeit       | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
+| Eingang mit Erstellung von Qualitätsprüfungsauftrag                            | <p>Ja, wenn kein Lagerort vorhanden ist</p><p>Nein, wenn eine Lagerort-Bestellung vorhanden ist</p> | Nein |
+| Arbeitsverarbeitung – Geleitet von *Clustereinlagerung*                 | Ja | Nein |
+| Arbeitsverarbeitung mit *kurzer Entnahme*                               | Ja | Nein |
 | Ladungsträgerladung                                           | Ja | Ja |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lagerort-Operationen und Ausnahme-Handling
@@ -261,20 +261,20 @@ Die folgende Tabelle zeigt, welche Funktionen für Lagerort-Operationen und Exce
 | Lagerort ändern                                   | Ja | Ja                          |
 | Bewegung                                           | Ja | Ja                          |
 | Bewegung durch Vorlage                               | Ja | Ja                          |
-| Lagerortumlagerung                                 | Ja | Nr.                           |
-| Umlagerungsauftrag aus der Lagerort-App erstellen           | Ja | Nr.                           |
+| Lagerortumlagerung                                 | Ja | Nein                           |
+| Umlagerungsauftrag aus der Lagerort-App erstellen           | Ja | Nein                           |
 | Abgleich (rein/raus)                                | Ja | Ja, aber nicht für das Regulierungsszenario, bei dem Bestandsreservierungen über die Einstellung **Reservierungen entfernen** auf den Bestandsregulierungsarten entfernt werden müssen</p>                           |
-| Bestandsstatusänderung                            | Ja | Nr.                           |
+| Bestandsstatusänderung                            | Ja | Nein                           |
 | Zykluszählung und Zähldiskrepanzverarbeitung | Ja | Ja                           |
 | Label neu drucken (Ladungsträgerdruck)             | Ja | Ja                          |
-| Ladungsträgererstellung                                | Ja | Nr.                           |
-| Ladungsträgerauflösung                                | Ja | Nr.                           |
-| Für geschachtelte Ladungsträger verpacken                                | Ja | Nr.                           |
-| Einchecken durch Fahrer                                    | Ja | Nr.                           |
-| Auschecken durch Fahrer                                   | Ja | Nr.                           |
+| Ladungsträgererstellung                                | Ja | Nein                           |
+| Ladungsträgerauflösung                                | Ja | Nein                           |
+| Für geschachtelte Ladungsträger verpacken                                | Ja | Nein                           |
+| Einchecken durch Fahrer                                    | Ja | Nein                           |
+| Auschecken durch Fahrer                                   | Ja | Nein                           |
 | Chargendisposition-Code ändern                      | Ja | Ja                          |
 | Offene Arbeitsliste anzeigen                             | Ja | Ja                          |
-| Kennzeichen konsolidieren                         | Ja | Nr.                           |
+| Kennzeichen konsolidieren                         | Ja | Nein                           |
 | Nachschubverarbeitung mit Min/Max und Schwellenwert für Zonenwiederbeschaffung| Ja <p>Es wird empfohlen, nicht dieselben Standorte in die Abfragen aufzunehmen.</p>| Ja                          |
 | Zuteilung von Zeitfenstern-Wiederbeschaffung                  | Ja  | Ja<p>Beachten Sie, dass die Einrichtung an der Skalierungseinheit erfolgen muss.</p>                           |
 | Arbeit sperren und entsperren                             | Ja | Ja                          |
@@ -290,8 +290,8 @@ Die folgende Tabelle fasst zusammen, welche Produktionsszenarien der Lagerortver
 |---------|-----|------------------------------|
 | Fertig melden und Fertigerzeugnisse einlagern | Ja | Ja |
 | Einlagerung von Co- und Nebenprodukten | Ja | Ja |
-| <p>Alle anderen Lagerortverwaltungsprozesse, die mit der Produktion zusammenhängen, einschließlich:</p><li>An Lagerort freigeben</li><li>Verarbeitung von Produktionswellen</li><li>Rohmaterialentnahme</li><li>Kanban-Einlagerung</li><li>Kanban-Entnahme</li><li>Produktionsauftrag starten</li><li>Produktionsausschuss</li><li>Letzte Palette der Produktion</li><li>Materialverbrauch registrieren</li><li>Kanban leeren</li></ul> | Ja | Nr. |
-| Rohmaterialwiederbeschaffung | Nr. | Nr. |
+| <p>Alle anderen Lagerortverwaltungsprozesse, die mit der Produktion zusammenhängen, einschließlich:</p><li>An Lagerort freigeben</li><li>Verarbeitung von Produktionswellen</li><li>Rohmaterialentnahme</li><li>Kanban-Einlagerung</li><li>Kanban-Entnahme</li><li>Produktionsauftrag starten</li><li>Produktionsausschuss</li><li>Letzte Palette der Produktion</li><li>Materialverbrauch registrieren</li><li>Kanban leeren</li></ul> | Ja | Nein |
+| Rohmaterialwiederbeschaffung | Nein | Nein |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Pflege von Skalierungseinheiten für die Lagerortausführung
 
