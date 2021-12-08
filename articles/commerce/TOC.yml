@@ -74,15 +74,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Leitfaden zur Implementierung von Commerce Data Exchange
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: 'Finance and Operations-Apps, betrieben von 21Vianet in China'
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations-Apps in Frankreich
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Support anfordern
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Aktualisierung und N-1-Support
               items:
-                - name: Aktualisierung und N-1-Support für Commerce
+                - name: Aktualisierung und N-1-Support zu Commerce
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Installation, Konfiguration und Übernahme des phasenweisen Rollouts (N-1)'
                   href: dev-itpro/n-1-installation-configuration.md
@@ -1274,9 +1270,11 @@
               href: set-up-rfm-analysis.md
             - name: Microsoft Clarity in Dynamics 365 einrichten
               href: set-up-clarity.md
+            - name: Commerce-Analysen (Vorschauversion)
+              href: commerce-analytics.md
         - name: Globalisierung
           items:
-            - name: Steuerintegrationsübersicht für Commerce-Kanal
+            - name: Überblick über die Steuerintegration beim Commerce-Kanal
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Steuerintegration für Commerce-Kanal einrichten
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
@@ -1412,6 +1410,10 @@
                   href: localizations/rus-fpi-sample.md
                 - name: Kundeninformationsmanagement für Russland
                   href: localizations/rus-customer-information.md
+            - name: Saudi-Arabien
+              items:
+                - name: Im Zusammenhang mit Saudi-Arabien QR-Codes generieren und auf Belege drucken
+                  href: localizations/emea-sau-qr-code.md
             - name: Schweden
               items:
                 - name: Kassenfunktionen
@@ -2530,12 +2532,14 @@
                       href: e-commerce-extensibility/sdk-updates.md
                 - name: Bewährte Methoden und häufig gestellte Fragen
                   items:
-                    - name: Bewährte Methoden für die Dynamics 365 Commerce-Entwicklung
+                    - name: Bewährte Methoden bei der Dynamics 365 Commerce-Entwicklung
                       href: e-commerce-extensibility/best-practices-dev.md
-                    - name: Dynamics 365 Commerce Online SDK – Häufig gestellte Fragen
+                    - name: Häufig gestellte Fragen zum Dynamics 365 Commerce Online SDK
                       href: e-commerce-extensibility/sdk-faq.md
-                    - name: Bewährte Debugging-Methoden für die Dynamics 365 Commerce-Entwicklung
+                    - name: Bewährte Debugging-Methoden bei der Dynamics 365 Commerce-Entwicklung
                       href: e-commerce-extensibility/debugging-best-practices.md
+                    - name: Seiten der E-Commerce-Website auf Speicherlecks testen
+                      href: e-commerce-extensibility/memory-leak-detection.md
             - name: Retail SDK
               items:
                 - name: Zu Commerce SDK migrieren

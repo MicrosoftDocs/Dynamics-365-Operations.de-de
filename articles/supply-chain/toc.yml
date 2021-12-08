@@ -60,12 +60,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finance + Operations (on-premises) kaufen
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Lagerung für lokale Bereitstellungen konfigurieren
+                - name: Lagerung bei lokalen Bereitstellungen konfigurieren
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Finance and Operations-Apps, betrieben von 21Vianet in China'
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations-Apps in Frankreich
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Neuerungen oder Änderungen
               items:
                 - name: Neuerungen oder Änderungen in Finance and Operations-Apps
@@ -2147,7 +2143,7 @@
               items:
                 - name: Projektressourceninformationen einrichten
                   href: procurement/tasks/set-up-project-resource-information.md
-                - name: Projektbudgets übermitteln und genehmigen
+                - name: Workflow zur Projektbudgetierung erstellen und übertragen
                   href: procurement/tasks/submit-approve-project-budget.md
                 - name: Überarbeitungen des Projektbudgets übermitteln und genehmigen
                   href: procurement/tasks/submit-approve-project-budget-revision.md
