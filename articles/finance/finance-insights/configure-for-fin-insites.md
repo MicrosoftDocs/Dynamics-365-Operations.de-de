@@ -2,7 +2,7 @@
 title: Konfiguration für Finance Insights
 description: In diesem Thema werden die Konfigurationsschritte erläutert, mit denen Ihr System die in Finance Insights verfügbaren Funktionen nutzen kann.
 author: ShivamPandey-msft
-ms.date: 1/03/2021
+ms.date: 11/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 5668d3ddff777645b4f1c6608f025d0c5a63208a
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6183e8a7500e9deff0ebf6b5dec8842ad4ca94cb
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752977"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827027"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfiguration für Finance Insights
 
@@ -43,14 +43,34 @@ Gehen Sie folgendermaßen vor, um die Umgebungen bereitzustellen.
 
 2. Wenn Sie Finance Insights in einer Sandbox-Umgebung konfigurieren, müssen Sie möglicherweise Produktionsdaten erst in diese Umgebung kopieren, damit Vorhersagen funktionieren. Das Vorhersagemodell verwendet Daten aus mehreren Jahren, um Vorhersagen zu erstellen. Die Contoso-Demodaten enthalten nicht genügend historische Daten, um das Vorhersagemodell angemessen zu trainieren. 
 
+## <a name="configure-your-azure-ad-tenant"></a>Azure AD-Mandanten-ID konfigurieren
+
+Azure Active Directory (Azure AD) muss so konfiguriert werden, dass es mit Dataverse und den Microsoft Power Platform-Anwendungen verwendet werden kann. Diese Konfiguration erfordert, dass entweder die **Projektbesitzer**-Rolle oder die **Umgebungsmanager**-Rolle dem Benutzer im **Projektsicherheitsrolle**-Feld in LCS zugewiesen werden.
+
+Stellen Sie sicher, dass die folgende Einrichtung abgeschlossen ist:
+
+- Sie haben **Systemadministrator** und **Systemanpasser**-Zugriff im Power Portal Admin Center.
+- Eine Dynamics 365 Finance- oder eine gleichwertige Lizenz wird auf den Benutzer angewendet, der das Finance Insights-Add-In installiert.
+
+Folgende Azure AD-Apps sind in Azure AD registriert.
+
+|  Bewerbung                             | App-Kennung                               |
+|------------------------------------------|--------------------------------------|
+| Microsoft Dynamics ERP-Microservices-CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
+    
 ## <a name="configure-dataverse"></a>Dataverse konfigurieren
 
 Gehen Sie folgendernamßen vor, um Dataverse für Finance Insights zu konfigurieren.
 
 - Öffnen Sie die Seite „Umgebung“ in LCS und überprüfen Sie, ob der Abschnitt **Power Platform-Integration** bereits eingerichtet ist.
 
-    - Wenn es bereits festgelegt ist, sollte der Name der Dataverse-Umgebung, die mit der Finance -Umgebung verknüpft ist, aufgelistet sein.
-    - Wenn sie nicht festgelegt ist, wählen Sie **Setup**. Die Einrichtung der Dataverse-Umgebung kann bis zu einer Stunde dauern. Wenn das Setup erfolgreich abgeschlossen wird, sollte der Name der Dataverse-Umgebung, die mit der Finance-Umgebung verknüpft ist, aufgelistet werden.
+    - Wenn Dataverse bereits eingerichtet ist, sollte der Name der Dataverse-Umgebung, die mit der Finance-Umgebung verknüpft ist, aufgelistet sein.
+    - Wenn Dataverse noch nicht eingerichtet ist, wählen Sie **Setup**. Die Einrichtung der Dataverse-Umgebung kann bis zu einer Stunde dauern. Wenn das Setup erfolgreich abgeschlossen wird, sollte der Name der Dataverse-Umgebung, die mit der Finance-Umgebung verknüpft ist, aufgelistet werden.
+    - Wenn diese Integration mit einer bestehenden Microsoft Power Platform-Umgebung eingerichtet wurde, wenden Sie sich an Ihren Administrator, um sicherzustellen, dass die verknüpfte Umgebung nicht deaktiviert ist.
+
+        Weitere Informationen finden Sie unter [Aktivieren der Power Platform-Integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md). 
+
+        Um auf die Microsoft Power Platform-Admin-Site zuzugreifen, gehen Sie zu <https://admin.powerplatform.microsoft.com/environments>.
 
 ## <a name="configure-the-finance-insights-add-in"></a>Finance Insights Add-in konfigurieren
 

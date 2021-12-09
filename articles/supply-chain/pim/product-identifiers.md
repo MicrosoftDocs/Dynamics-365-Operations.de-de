@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 792245e7821fe2ecb147e2b4756f3178fcdb17d1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1a311b4a304984044a1c3bd3924c129821afbbb9
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569672"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825374"
 ---
 # <a name="product-identifiers"></a>Produktbezeichner
 
@@ -39,7 +39,7 @@ In Dynamics 365 Supply Chain Management der primäre Bezeichner für ein Produkt
 
 In vielen Fällen wird die Produktnummer ursprünglich nicht in Dynamics 365 Supply Chain Management erstellt. Stattdessen ist es mit einem Produkt in einem Produktlebenszyklussystem (PLM) oder einem  Produktdatenverwaltungssystem (PDM) zugeordnet. In diesem Fall können Sie Datenentitäten verwenden, um die Produkte und Produktvarianten zu importieren. Supply Chain Management verwendet dann die Zahlen in allen Arbeitsgängen.
 
-Wenn Sie Supply Chain Management implementieren, sollten Sie Ihrer Strategie für Produktnummern besondere Aufmerksamkeit widmen. Ein Zahlensystem gutes verbessert Logistikflüsse und hilft verhindern Fehler. Eine gute Produktkennung ist maximal 15 Zeichen lang. Idealerweise hat diese weniger als 10 Zeichen und schließt nicht mehr als klassifizierende fünf Zeichen ein. Sie können auch Suchnamen verwenden, um Schnellsuchen zu ermöglichen. Ein Suchname ist ein zusätzlicher Name, der die Klassifizierungen eines Produkts darstellt.
+Wenn Sie Supply Chain Management implementieren, sollten Sie Ihrer Strategie für Produktnummern besondere Aufmerksamkeit widmen. Ein Zahlensystem gutes verbessert Logistikflüsse und hilft verhindern Fehler. Ein guter Produktbezeichner sollte normalerweise 20 Zeichen oder weniger haben, aber wir empfehlen im Allgemeinen weniger als 10 Zeichen und nicht mehr als 5 Klassifikationszeichen zu verwenden. Sie können auch Suchnamen verwenden, um Schnellsuchen zu ermöglichen. Ein Suchname ist ein zusätzlicher Name, der die Klassifizierungen eines Produkts darstellt.
 
 Wenn Sie Microsoft Dataverse verwenden, ist die Produktnummer in Supply Chain Management auch die Produktnummer in Microsoft Dataverse. Produktvarianten werden mit Dataverse als eindeutig identifizierbare Produkte synchronisiert.
 
@@ -77,7 +77,7 @@ Sie können die externen Produktkennungen nach freigegebenem Produkt, freigegebe
 **Freigegebene Produkte** Auf der Seite führen Sie die folgenden Schritte aus.
 
 - Klicken Sie im Aktivitätsbereich auf der Registerkarte **Einkauf** in der Gruppe **Zugehörige Informationen** auf **Externe Artikelbeschreibung**.
-- Für Verkäufer klicken Sie im Aktivitätsbereich auf der Registerkarte **Einkauf** in der Gruppe **Zugehörige Informationen** auf **Externe Artikelbeschreibung**.
+- Für Kreditoren klicken Sie im Aktivitätsbereich auf der Registerkarte **Einkauf** in der Gruppe **Zugehörige Informationen** auf **Externe Artikelbeschreibung**.
 
 Auf der Seite **Externe Artikelbeschreibungen** können Sie die Artikelnummer des Debitors oder Kreditors einem freigegebenen Produkt zuordnen. Diese Zuordnung muss für jede juristische Person ausgeführt werden. Die folgenden Informationen können erfasst werden. Leider sind die Bezeichnungen in der aktuellen Version von Supply Chain Management etwas irreführend. Allerdings können dieser Beschriftungen in einer künftigen Version geändert werden.
 

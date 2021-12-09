@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752616"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827052"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Problembehandlung beim Einrichten von Finance Insights
 
@@ -70,3 +70,26 @@ Die Cashflow-Prognose-Funktion in der Bargeld- und Bankverwaltung und die Cashfl
 Richten Sie zunächst die Cashflow-Vorhersage und die Liquiditätskonten ein, und aktivieren Sie sie. Weitere Informationen unter [Cashflowprognosen](../cash-bank-management/cash-flow-forecasting.md). Wenn diese Einrichtung abgeschlossen ist, die erwarteten Ergebnisse jedoch nicht angezeigt werden, finden Sie weitere Informationen unter [Problembehandlung beim Einrichten der Cashflow-Planung](../cash-bank-management/cash-flow-forecasting-tsg.md).
 
 Bestätigen Sie als Nächstes, dass die Funktion „Cashflow-Planungen“ in Finance Insights (**Bargeld- und Bankverwaltung \> Einrichtung \> Finance Insights \> Cashflow-Planungen**) aktiviert wurde und das Training des KI-Modells abgeschlossen ist. Wenn die Schulung nicht abgeschlossen ist, wählen Sie **Jetzt planen** aus, um den Modelltrainingsprozess zu starten.
+
+## <a name="symptom-why-isnt-the-install-a-new-add-in-button-visible-in-microsoft-dynamics-lifecycle-services"></a>Symptom: Warum ist die Schaltfläche „Neues Add-In installieren“ in Microsoft Dynamics Lifecycle Services nicht sichtbar?
+
+### <a name="resolution"></a>Lösung
+
+Stellen Sie zunächst sicher, dass entweder die **Umgebungsmanager** oder **Projektbesitzer**-Rolle dem Benutzer im **Projektsicherheitsrolle**-Feld in Microsoft Dynamics Lifecycle Services (LCS) zugewiesen werden. Für die Installation der neuen Add-Ins ist eine dieser Projektsicherheitsrollen erforderlich.
+
+Wenn Ihnen die richtige Projektsicherheitsrolle zugewiesen ist, müssen Sie möglicherweise Ihr Browserfenster aktualisieren, um die **Neues Add-In installieren**-Schaltfläche anzuzeigen.
+
+## <a name="symptom-the-finance-insights-add-in-doesnt-seem-to-be-installing-why-is-that"></a>Symptom: Das Finance Insights-Add-In scheint nicht installiert zu werden. Warum ist das so?
+
+### <a name="resolution"></a>Lösung
+
+Die folgenden Schritte sollten abgeschlossen sein.
+
+- Stellen Sie sicher, dass Sie **Systemadministrator** und **Systemanpasser**-Zugriff im Power Portal Admin Center haben.
+- Stellen Sie sicher, dass eine Dynamics 365 Finance- oder eine gleichwertige Lizenz auf den Benutzer angewendet wird, der das Add-In installiert.
+- Stellen Sie sicher, dass folgende Azure AD-App in Azure AD registriert ist: 
+
+  | Bewerbung                  | App-Kennung           |
+  | ---------------------------- | ---------------- |
+  | Microsoft Dynamics ERP-Microservices-CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+  

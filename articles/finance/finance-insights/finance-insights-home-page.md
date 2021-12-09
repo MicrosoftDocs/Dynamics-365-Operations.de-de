@@ -2,7 +2,7 @@
 title: Startseite von Finance Insights
 description: Finance Insights bietet konfigurierbare und erweiterbare Modelle, mit denen Sie den Cashflow Ihres Unternehmens genau und intelligent vorhersagen können und auch, wann Sie Zahlungen für ausstehende Forderungen erhalten, und einen Budgetvorschlag erstellen können, der Ihren Budgetierungsprozess beschleunigen kann. Alle diese Funktionen basieren auf intelligenten Machine Learning-Modellen.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 11/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3c6320043000dc07eea3128a10c16cfd54b13334
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752855"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813746"
 ---
 # <a name="finance-insights-home-page"></a>Startseite von Finance Insights
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights bietet konfigurierbare und erweiterbare Modelle, mit denen Sie den Cashflow Ihres Unternehmens intelligent vorhersagen können und auch, wann Sie Zahlungen für ausstehende Forderungen erhalten, und einen Budgetvorschlag erstellen können, der Ihren Budgetierungsprozess beschleunigen kann. Alle diese Funktionen basieren auf intelligenten Machine Learning-Modellen. Wenn diese neuen Funktionen mit der Automatisierung von Kreditorenzahlungen und Inkasso kombiniert werden, bieten sie ein umfassendes und intelligentes Finanzsystem, das die Entscheidungsfindung vorantreibt und Ihnen hilft, Maßnahmen zu ergreifen, um effektiv auf aktuelle und erwartete geschäftliche Herausforderungen zu reagieren.
+Finance Insights bietet konfigurierbare und erweiterbare Lösungen, mit denen Sie den Cashflow Ihres Unternehmens intelligent vorhersagen können und auch, wann Sie Zahlungen für ausstehende Forderungen erhalten, und einen Budgetvorschlag erstellen können, der Ihren Budgetierungsprozess beschleunigen kann. Diese Funktionen verwenden intelligente Vorlagen für maschinelles Lernen, um Modelle mit den von Ihnen bereitgestellten Daten zu erstellen (einschließlich Daten von Drittanbietern wie Verbraucherberichtsinformationen von einer Behörde). Diese intelligenten Funktionen unterstützen die Entscheidungsfindung und helfen Ihnen, Maßnahmen zu ergreifen, um effektiv auf aktuelle und erwartete geschäftliche Herausforderungen zu reagieren. Sie sind für alle Daten verantwortlich, die mit Finance Insights verwendet oder daraus ausgegeben werden.
 
 > [!NOTE]
 > Die öffentliche Finance Insights-Vorschau ist in den Vereinigten Staaten von Amerika, Kanada, dem Vereinigten Königreich, Europa, dem asiatisch-pazifischen Raum, Japan, Australien und Neuseeland zur Bereitstellung verfügbar. Microsoft fügt schrittweise Unterstützung für weitere Regionen hinzu.

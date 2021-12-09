@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641159"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813722"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Workloads in der Lagerortverwaltung für Cloud- und Edge-Skalierungseinheiten
 
@@ -290,7 +290,8 @@ Die folgende Tabelle fasst zusammen, welche Produktionsszenarien der Lagerortver
 |---------|-----|------------------------------|
 | Fertig melden und Fertigerzeugnisse einlagern | Ja | Ja |
 | Einlagerung von Co- und Nebenprodukten | Ja | Ja |
-| <p>Alle anderen Lagerortverwaltungsprozesse, die mit der Produktion zusammenhängen, einschließlich:</p><li>An Lagerort freigeben</li><li>Verarbeitung von Produktionswellen</li><li>Rohmaterialentnahme</li><li>Kanban-Einlagerung</li><li>Kanban-Entnahme</li><li>Produktionsauftrag starten</li><li>Produktionsausschuss</li><li>Letzte Palette der Produktion</li><li>Materialverbrauch registrieren</li><li>Kanban leeren</li></ul> | Ja | Nein |
+| Produktionsauftrag starten | Ja | Ja |
+| <p>Alle anderen Lagerortverwaltungsprozesse, die mit der Produktion zusammenhängen, einschließlich:</p><li>An Lagerort freigeben</li><li>Verarbeitung von Produktionswellen</li><li>Rohmaterialentnahme</li><li>Kanban-Einlagerung</li><li>Kanban-Entnahme</li><li>Produktionsausschuss</li><li>Letzte Palette der Produktion</li><li>Materialverbrauch registrieren</li><li>Kanban leeren</li></ul> | Ja | Nein |
 | Rohmaterialwiederbeschaffung | Nein | Nein |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Pflege von Skalierungseinheiten für die Lagerortausführung

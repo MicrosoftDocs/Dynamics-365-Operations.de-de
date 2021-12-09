@@ -10,12 +10,12 @@ ms.custom: intro-internal
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 69abd2b6d4026ef1b5b85d52c561bb060cf82123
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 131c002000ee6ebed81a23f45ce17b7a7fff0b95
+ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781463"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "7817360"
 ---
 # <a name="dual-write-overview"></a>Duales Schreiben – Übersicht
 
@@ -68,11 +68,7 @@ Duales Schreiben erstellt eine Zuordnung zwischen Konzepten in Finance and Opera
 + Fähigkeit, die Verfügbarkeit und die Details der Bestände aus dem Lagerbestand nachzuschlagen
 + Projekt-zu-Bargeld-Erfahrung
 + Fähigkeit zur Handhabung mehrerer Adressen und Rollen durch das Parteikonzept
-+ Verwaltung einer einzigen Quelle für Benutzer
-+ Integrierte Kanäle für Retail und Marketing
-+ Sichtbarkeit von Werbeaktionen und Rabatten
-+ Anforderung für Dienstfunktionen
-+ Rationalisierte Dienstvorgänge
+
 
 ## <a name="top-reasons-to-use-dual-write"></a>Die wichtigsten Gründe für die Verwendung von Dual-Write
 

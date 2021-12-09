@@ -13,12 +13,12 @@ ms.search.region: Germany
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5f48fe1a52ea283be69901a8fffad5e67cb5b465cee41ae12c18a15815cb493a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5f63098a7fd2a81ca8b54ea47c2e3fb97255c338
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775868"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860731"
 ---
 # <a name="germany-overview"></a>Deutschland – Übersicht
 
@@ -36,6 +36,9 @@ Dieses Thema enthält Informationen und Verknüpfungen zu den Ressourcen, die f�
 -   [Zusätzliche Anschaffungsabschreibung](emea-deu-additional-acquisition-depreciation.md)
 -   [Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr](tasks/de-00002-depreciation.md)
 -   [Intrastat](emea-deu-intrastat.md)
+
+## <a name="vat-declaration"></a>MwSt.-Erklärung 
+-   [Umsatzsteuererklärung für Deutschland](emea-deu-vat-declaration-germany.md)
 
 ## <a name="electronic-transmission-of-vat-declaration-elster"></a>Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
 - [Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)

@@ -2,7 +2,7 @@
 title: Elektronische Nachrichten einrichten
 description: In diesem Thema erfahren Sie, wie Sie die Funktionalität für elektronische Nachrichten (EN) einrichten.
 author: liza-golub
-ms.date: 07/07/2021
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 2b62efabfae26a6cc004604e687a49bce992d78a30f0d441aa74fa5cde70e063
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9d623c712de34afd1b38dbc6a8738ebf9613d49
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752174"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860557"
 ---
 # <a name="set-up-electronic-messages"></a>Elektronische Nachrichten einrichten
 
@@ -34,6 +34,7 @@ Wenn Sie kein Datenentitätspaket importieren, kann die EN-Funktionalität manue
 - [Zusätzliche Felder](#additional)
 - [Ausführbare Klasseneinstellungen](#executable)
 - [Datensatzauffüllungsaktivitäten](#populate)
+- [Datensätze von mehreren Unternehmen ausfüllen](#multiple-companies-populate)
 - [Webanwendungen](#applications)
 - [Webdiensteinstellungen](#settings)
 - [Verarbeitungsaktivitäten für Nachrichten](#actions)
@@ -139,6 +140,38 @@ Fügen Sie im Inforegister **Datenquelleneinrichtung** eine Position für jede D
 | Firma                | Dieses Feld ist verfügbar, wenn die Funktion **Unternehmensübergreifende Abfragen für Aktivitäten zum Auffüllen von Datensätzen** im Arbeitsbereich **Funktionsverwaltung** aktiviert ist. Verwenden Sie diese Funktion, um unternehmensübergreifende Datenquellen für die Aktivitäten zum Auffüllen von Datensätzen einzurichten. Daten können aus mehreren Unternehmen abgerufen werden. |
 | Benutzerabfrage             | <p>Wenn Sie eine Abfrage einrichten, indem Sie über dem Raster **Abfrage bearbeiten** auswählen, und Sie geben die Kriterien an, die auf die ausgewählte Mastertabelle, aus der Daten entnommen werden, angewendet werden müssen, wird dieses Kontrollkästchen automatisch aktiviert. Andernfalls werden alle Datensätze aus der ausgewählten Mastertabelle ausgefüllt.</p><p>Wenn die Funktion **Unternehmensübergreifende Abfragen für Aktivitäten zum Auffüllen von Datensätzen** im Arbeitsbereich **Funktionsverwaltung** aktiviert ist und Datensätze von mehreren Unternehmen eingeholt werden müssen, fügen Sie eine Zeile für jede zusätzliche juristische Person hinzu, die in die Berichterstellung einbezogen werden muss. Wählen Sie für jede neue Zeile **Abfrage bearbeiten** aus und geben Sie ein zugehöriges Kriterium an, das für die im Feld **Unternehmen** der Zeile angegebene juristische Person spezifisch ist. Wenn Sie fertig sind, enthält das Raster **Datenquelleneinrichtung** Zeilen für alle juristischen Personen, die in die Berichterstellung einbezogen werden müssen.</p> |
 
+## <a name="populate-records-from-multiple-companies"></a><a id="multiple-companies-populate"></a>Datensätze von mehreren Unternehmen ausfüllen
+
+Wenn Ihr Unternehmen von mehreren juristischen Personen in derselben Finanzdatenbank berichten muss, richten Sie die [Aktionen zum Auffüllen von Datensätzen](#populate) für alle juristischen Personen ein, deren Daten in die Berichterstattung einbezogen werden müssen.
+
+Befolgen Sie diese Schritte, um diese Funktionen in Ihrer Finanzumgebung zu aktivieren. 
+
+1. Wechseln Sie zu **Arbeitsbereiche** \> **Verwaltung von Funktionen**.
+2. Suchen und wählen Sie die **Unternehmensübergreifende Abfragen für Aktivitäten zum Auffüllen von Datensätzen**-Funktion in der Liste aus.
+3. Wählen Sie **Jetzt aktivieren**. 
+
+Um [Aktionen zum Auffüllen von Datensätzen](#populate) für mehrere Unternehmen einzurichten, von denen Daten in die Berichterstattung einbezogen werden müssen, gehen Sie wie folgt vor.
+
+1. Gehen Sie zu **Steuer** \> **Einrichten** \> **Elektronische Nachrichten** \> **Datensatzauffüllungsaktivitäten**.
+
+    Wenn die **Unternehmensübergreifende Abfragen für die Aktionen zum Auffüllen von Datensätzen**-Funktion aktiviert ist, enthält das **Einrichtung von Datenquellen**-Raster auf der **Datensatzauffüllungsaktivität**-Seite ein Feld **Unternehmen**. Für bestehende Datensätze, die bei der allgemeinen Einrichtung des [Datensatzauffüllungsaktivität](#populate) erstellt wurden, zeigt dieses Feld die Kennung der aktuellen juristischen Person an.
+
+2. Im Raster **Einrichtung von Datenquellen** fügen Sie für jede untergeordnete juristische Person, die in die Berichterstellung einbezogen werden muss, und legen Sie die folgenden Felder fest.
+
+    | Feldname             | Wert |
+    |------------------------|-------|
+    | Name                   | Geben Sie einen Textwert ein, der Ihnen hilft zu verstehen, woher dieser Datensatz stammt. Geben Sie z. B. **Datenquellenname – Tochtergesellschaft 1** ein. |
+    | Nachrichtenelementtyp      | Wählen Sie den Nachrichtenpositionstyp aus, der für Ihre EM-Verarbeitung erforderlich ist. |
+    | Kontenart           | Legen Sie den Kontotyp fest, der für Ihre EM-Verarbeitung erforderlich ist. Wenn Ihre EM-Verarbeitung keine bestimmten Kontotypen hat, wählen Sie **Alle** aus. |
+    | Mastertabellenname      | Geben Sie den Namen der Mastertabelle an, die für Ihre EM-Verarbeitung erforderlich ist. |
+    | Feld „Dokumentnummer”  | Geben Sie das Feld an, das die Belegnummer in Datensätzen Ihrer EM-Verarbeitung enthält. |
+    | Feld „Dokumentdatum”    | Geben Sie das Feld an, das das Belegdatum in Datensätzen Ihrer EM-Verarbeitung enthält. |
+    | Feld „Dokumentenkonto” | Geben Sie das Feld an, das das Belegkonto in Datensätzen Ihrer EM-Verarbeitung enthält. |
+    | Unternehmen                | Wählen Sie die ID der untergeordneten juristischen Person aus. |
+    | Benutzerabfrage             | Dieses Kontrollkästchen wird automatisch aktiviert, wenn Sie Kriterien definieren, indem Sie **Abfrage bearbeiten** auswählen. |
+
+3. Wählen Sie für jede neue Zeile **Abfrage bearbeiten** aus und geben Sie zugehörige Kriterien an, das für die im Feld **Unternehmen** der Zeile angegebene juristische Person spezifisch ist.
+
 ## <a name="web-applications"></a><a id="applications"></a>Webanwendungen
 
 Verwenden Sie Webanwendungseinstellungen, um eine Webanwendung einzurichten, damit sie Open Authorization (OAuth) 2.0 unterstützt. OAuth ist ein offener Standard, mit dem Benutzer „sicheren delegierten Zugriff” auf die Anwendung in ihrem Auftrag gewähren können, ohne ihre Anmeldeinformationen für den Zugriff zu teilen. Sie können auch den Autorisierungsprozess durchführen, indem Sie einen Autorisierungscode und ein Zugriffstoken abrufen. Sie können Webanwendungseinsteinstellungen über **Steuer** \> **Einrichten** \> **Elektronische Nachrichten** \> **Webanwendungen** einrichten.
@@ -214,6 +247,7 @@ In den folgenden Tabellen werden die Felder auf der Seite **Nachrichtenverarbeit
 | Ausführbare Klasse                          | Wählen Sie eine vorhandene ausführbare Klasseneinstellung aus. Dieses Feld ist nur für Aktivitäten der Typen **Nachrichtenelement-Ausführungsebene** und **Nachrichtenelementausführungsebene** verfügbar. |
 | Datensatzauffüllungsaktivität                   | Wählen Sie eine vorhandene Aktivität zum Auffüllen von Datensätzen aus. Dieses Feld ist nur für Aktivitäten vom Typ **Datensätze auffüllen** verfügbar. |
 | Webdienst                               | Wählen Sie einen vorhandenen Webdienst aus. Dieses Feld ist nur für Aktivitäten vom Typ **Webdienst** verfügbar. |
+| Name der zu versendenden Datei                         | Geben Sie den Namen des Anhangs einer elektronischen Nachricht ein, die bei dieser Aktion gesendet werden muss. Wenn mehrere Anhänge denselben ursprünglichen Dateinamen haben, wird der neueste gesendet. Wird kein Anhang mit dem angegebenen Originaldateinamen gefunden, wird die Anfrage ohne Inhalt gesendet. Dieses Feld ist nur für Aktivitäten vom Typ **Webdienst** verfügbar. |
 | Dateiname                                 | Geben Sie den Namen der Datei an, die das Ergebnis der Aktivität sein wird. Diese Datei kann die Antwort vom Webserver oder vom Bericht sein, der erzeugt wird. Dieses Feld ist nur für Aktivitäten der Typen **Webdienst** und **Elektronische Berichterstellungsexportnachricht** verfügbar. |
 | Dateien an Quelldokumente anhängen          | Aktivieren Sie dieses Kontrollkästchen, um generierte Dateien an Datensätze in einer referenzierten Mastertabelle für EN-Artikel anzuhängen. Dieses Feld ist nur für Aktivitäten der Typen **Elektronischer Berichtexport** und **Webdienst** verfügbar. |
 | Dateien aus dem Ausgabenarchiv den Elementen anfügen | Aktivieren Sie dieses Kontrollkästchen, um separate XML-Dateien aus der Ausgabenarchivdatei zu extrahieren und an die entsprechenden elektronischen Nachrichtenelemente anzuhängen. Dieses Feld ist nur für Aktivitäten vom Typ **Elektronischer Berichterstellungsexport** verfügbar. |

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15b0ad9faf2bcac25dec01a7ab44f804ad2345cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c3947c8a51facfb02012cc8e9a3ffd5887073bd9
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567222"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860612"
 ---
 # <a name="define-coverage-rules-for-items"></a>Dispositionsregeln für Artikel definieren
 
@@ -113,6 +113,7 @@ Erstellen Sie Artikeldispositionsregeln, indem Sie die folgenden Schritte ausfü
 1. Geben Sie im Feld **Bestellzeit** den Wert „5“ ein.
 1. Wählen Sie **Speichern** aus.
 
-
+> [!NOTE]
+> Bei hergestellten Artikeln wird die **Produktionsdurchlaufzeit** verwendet, wenn es keine Route für den Artikel gibt. Wenn dem Artikel eine aktive Route zugeordnet wurde, terminiert die Masterplanung den Auftrag und berechnet seine Termine entsprechend den Routenzeiten und der Kapazität der Ressourcen (sofern zutreffend).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

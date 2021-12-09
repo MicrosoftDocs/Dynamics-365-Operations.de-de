@@ -10,17 +10,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3e0840944b7619f870194f6c16e15672bb888546
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: ae0aebc73fc9b5d31409131d78ad1bff7f3771cd
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678542"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860637"
 ---
 # <a name="invoke-process-automation-flows-to-create-quality-orders"></a>Rufen Sie Prozessautomatisierungsabläufe auf, um Qualitätsaufträge zu erstellen
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 12/1/2021 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 12/1/2021 -->
 
 Unternehmen haben eine zunehmende Nachfrage nach der Automatisierung von Standardgeschäftsprozessen, nach einer bequemeren Interaktion mit den Mitarbeitern und nach der Verwendung verschiedener Datensignale und -Systeme, um Geschäftsprozesse automatisch zu steuern. Mit robotergesteuertr Prozessautomatisierung (RPA) und Microsoft Power Automate können Unternehmen eine No-Code-Erfahrung nutzen, um sich wiederholende Prozesse zu automatisieren und so Effizienz und Genauigkeit zu erzielen.
 

@@ -2,7 +2,7 @@
 title: Erstellen eines Stapelverarbeitungsauftrags
 description: Bei einem Batchauftrag handelt es sich um eine Gruppe von Aufgaben, die zur automatischen Verarbeitung an eine Anwendungsobjektserver-Instanz (AOS) übermittelt werden.
 author: maertenm
-ms.date: 06/21/2019
+ms.date: 11/22/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ac91c907f4c2cfa03b9750cb3995851e319a3827f42442402f7c02824209b3b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76c6c68f7effad0c40282b22ea2a6bf991862cf5
+ms.sourcegitcommit: d7d997ad84623ad952672411c0eb6740972ae0b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733708"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "7864172"
 ---
 # <a name="create-a-batch-job"></a>Erstellen eines Stapelverarbeitungsauftrags
 
@@ -29,20 +29,44 @@ Bei einem Batchauftrag handelt es sich um eine Gruppe von Aufgaben, die zur auto
 
 ## <a name="create-the-batch-job"></a>Den Batchauftrag erstellen
 1. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Anfragen > Batchauftrag**.
-2. Klicken Sie auf **Neu**.
-3. Geben Sie im Feld **Stellenbeschreibung** einen Wert ein.
-4. Geben Sie im Feld **Geplantes Startdatum/-uhrzeit** ein Datum und eine Uhrzeit ein.
-5. Klicken Sie auf **Speichern**.
+2. Wählen Sie **Neu** aus.
+3. Geben Sie im Feld **Stellenbeschreibung** eine Beschreibung für den Batchauftrag ein.
+4. Geben Sie im Feld **Geplantes Startdatum/-uhrzeit** das Datum und die Uhrzeit ein, zu der der Batchauftrag ausgeführt werden soll.
+5. Wählen Sie **Speichern** aus.
 
 ## <a name="create-a-recurrence"></a>Eine Wiederholung erstellen
 1. Klicken Sie im Aktivitätsbereich auf **Batchauftrag**.
-2. Klicken Sie auf **Wiederholung**. Verwenden Sie diese Optionen, um einen Bereich und ein Muster für die Wiederholung einzugeben.  
-3. Klicken Sie auf **OK**.
+2. Wählen Sie **Wiederholung**. Verwenden Sie diese Optionen, um einen Bereich und ein Muster für die Wiederholung einzugeben.  
+3. Wählen Sie **OK** aus.
 
 ## <a name="add-alerts"></a>Warnungen hinzufügen
 1. Klicken Sie im Aktivitätsbereich auf **Batchauftrag**.
-2. Klicken Sie auf **Warnungen**. Geben Sie an, ob Sie möchten, dass Warnmeldungen gesendet werden, wenn der Batchauftrag endet, einen Fehler aufweist oder abgebrochen wird. Geben Sie dann an, ob Sie möchten, dass die Warnungen als Popupmeldungen angezeigt werden.   
-3. Klicken Sie auf **OK**.
+2. Wählen Sie **Benachrichtigungen** aus. Geben Sie an, ob Sie möchten, dass Warnmeldungen gesendet werden, wenn der Batchauftrag endet, einen Fehler aufweist oder abgebrochen wird. Geben Sie dann an, ob Sie möchten, dass die Warnungen als Popupmeldungen angezeigt werden.   
+3. Wählen Sie **OK** aus.
+
+## <a name="add-a-task-to-a-batch-job"></a>Hinzufügen einer Aufgabe zu einem Stapelverarbeitungsauftrag
+1.  Wählen Sie auf der Seite **Batchaufträge** die Option **Aufgaben anzeigen** aus.
+2.  Wählen Sie **Strg+N**, um eine Aufgabe zu erstellen.
+3.  Geben Sie eine Beschreibung des Batchauftrags ein.
+4.  Wählen Sie im Feld **Firmenkonten** die Unternehmensdatenbank aus, in der die Aufgabe ausgeführt werden soll.
+5.  Wählen Sie im Feld **Klassenname** den Prozess aus, den die Aufgabe ausführen soll. 
+6.  Wählen Sie bei Bedarf eine Stapelverarbeitungsgruppe für die Aufgabe aus.
+
+    Client-Aufgaben müssen einer Batchgruppe zugewiesen werden. Sie werden automatisch der Standardbatchgruppe (auch bekannt als leere Batchgruppe) zugewiesen.
+
+7.  Wählen Sie **STRG+S**, um die Aufgabe zu speichern.
+8.  Um die ausgewählte Aufgabe von einer anderen Aufgabe im Stapel abhängig zu machen, wählen Sie das **Hat Bedingungen**-Raster, und führen Sie dann diese Schritte für jede Bedingung aus, die Sie definieren möchten:
+
+    1. Wählen Sie **Strg+N**, um eine Bedingung zu erstellen.
+    2. Wählen Sie die Aufgabenkennung der übergeordneten Aufgabe aus.
+    3. Wählen Sie den Status aus, den die übergeordnete Aufgabe erreichen muss, damit die abhängige Aufgabe ausgeführt werden kann.
+    4. Wählen Sie **STRG+S**, um die Bedingung zu speichern.
+
+    Wurden mehrere Bedingungen definiert und *alle* Bedingungen müssen erfüllt sein, die zum Ausführen der abhängigen Aufgabe nötig sind, wählen Sie den Bedingungstyp **Alle** aus. Soll die abhängige Aufgabe ausgeführt werden, sobald eine *beliebige* Bedingung erfüllt ist, wählen Sie den Bedingungstyp **Beliebig** aus.
+
+9.  Wählen Sie aus, wie Aufgabenfehler behandelt werden sollen. Sollen Fehler bei einer bestimmten Aufgabe ignoriert werden, aktivieren Sie für diese Aufgabe auf der Registerkarte **Allgemein** die Option **Aufgabenfehler ignorieren**. Ist diese Option ausgewählt, führt das Auftreten eines Fehlers bei dieser Aufgabe nicht dazu, dass für den gesamten Auftrag ein Fehler auftritt. Im Feld **Maximale Wiederholungsversuche** können Sie zudem angeben, wie oft ein Auftrag wiederholt werden soll, bevor er als fehlerhaft eingestuft wird. Als bewährte Methode empfehlen wir Ihnen, das **Maximale Wiederholungsversuche**-Feld auf einen Wert größer als **5** festzulegen.
+
+    Weitere Informationen zu Batch-Wiederholungen finden Sie unter [Batch-Wiederholungen aktivieren](../retryable-batch.md).
 
 ## <a name="adjust-batch-job-status"></a>Status des Stapelverarbeitungsauftrags anpassen
 1. Wechseln Sie zu **Systemverwaltung > Anfragen > Batchaufträge**.
@@ -51,7 +75,7 @@ Bei einem Batchauftrag handelt es sich um eine Gruppe von Aufgaben, die zur auto
 4. Wählen Sie den entsprechenden Status aus.
     - **Zurückhalten**: Legen Sie für den Batchauftrag **Zurückhalten** fest, damit er vom Planungsprogramm für Batchaufträge zurückgehalten wird. Entspricht *Stopp*.
     - **Im Wartezustand**: Legen Sie für den Batchauftrag **Im Wartezustand** fest, damit er darauf wartet, vom Planungsprogramm fpr Batchaufträge aufgenommen zu werden. Entspricht *Los*.
-5. Klicken Sie auf **OK**.
+5. Wählen Sie **OK** aus.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
