@@ -12,14 +12,14 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Neuerungen oder Änderungen in Plattformupdates
               items:
-                - name: Neuerungen oder Änderungen auf der Plattformupdates-Startseite
+                - name: Neuerungen oder Änderungen auf der Startseite von Plattformupdates
                   href: get-started/whats-new-home-page.md
-                - name: Plattformupdates für Version 10.0.23
+                - name: "Plattformupdates für Version 10.0.24 (Februar\_2022)"
+                  href: get-started/whats-new-platform-updates-10-0-24.md
+                - name: "Plattformupdates für Version 10.0.23 (Januar\_2022)"
                   href: get-started/whats-new-platform-updates-10-0-23.md
                 - name: "Plattformupdates für Version 10.0.22 (November\_2021)"
                   href: get-started/whats-new-platform-updates-10-0-22.md
-                - name: "Plattformupdates für Version 10.0.21 (Oktober\_2021)"
-                  href: get-started/whats-new-platform-updates-10-0-21.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen auf der Startseite
@@ -232,13 +232,13 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Vorschau von Azure Data Lake
-              href: data-entities/azure-data-lake-overview.md
-            - name: Export in Azure Data Lake konfigurieren
+            - name: Übersicht über den Export in Azure Data Lake
+              href: data-entities/Azure-Data-Lake-GA-version-overview.md
+            - name: Add-In für den Export in Azure Data Lake installieren
               href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations-Apps in Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
-            - name: Entitätsspeicher als Data Lake zur Verfügung stellen
+            - name: Entitätsspeicher als Data Lake anbieten
               href: data-entities/entity-store-data-lake.md
             - name: Daten in Azure Data Lake ändern
               href: data-entities/Azure-data-lake-Change-feeds.md
@@ -406,6 +406,8 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Gleiche AD FS-Instanz in mehreren Umgebungen verwenden
                       href: deployment/onprem-reuseadfs.md
+                    - name: "SQL\_Server-Instanz der Umgebungen von Microsoft Dynamics 365 Finance + Operations (on-premises)"
+                      href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokaler Agent
                   items:
                     - name: "Kompatibilität von AD-FS Microsoft\_365"
@@ -1006,13 +1008,13 @@
                   href: lifecycle-services/translation-service-overview.md
                 - name: Übersetzen von Benutzeroberflächendateien
                   href: lifecycle-services/use-translation-service.md
-                - name: Übersetzen von Dokumentationsdateien
+                - name: Dokumentationsdateien übersetzen
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Translation-Memory-Dateien
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform-Integration
           items:
-            - name: Microsoft Power Platform-Integration in Finance and Operations
+            - name: Übersicht
               href: power-platform/overview.md
             - name: Aktivieren der Power Platform-Integration
               href: power-platform/enable-power-platform-integration.md

@@ -90,9 +90,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Neuerungen oder Änderungen in Commerce
                   items:
-                    - name: Neuerungen oder Änderungen auf der Commerce-Startseite
+                    - name: Neuerungen oder Änderungen auf der Startseite von Commerce
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.23
+                    - name: "Commerce\_10.0.24 (Februar 2022)"
+                      href: get-started/whats-new-commerce-10-0-24.md
+                    - name: "Commerce\_10.0.23 (Januar 2022)"
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (November 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
@@ -540,11 +542,13 @@
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Szenarien für die Rechnungszahlung einrichten
                       href: payinvoice.md
-                    - name: Doppelte Zahlungen vermeiden
+                    - name: Vermeidung doppelter Zahlungen
                       href: duplicate-payment-protection.md
                     - name: Übersicht über Omnichannel-Zahlungen
                       href: omni-channel-payments.md
-                    - name: Omnichannel-Commerce-Auftragszahlungen
+                    - name: Mehrere mögliche Zahlungsmethoden bei Abholung im Geschäft
+                      href: dev-itpro/multiple-payments-pickup.md
+                    - name: Omnichannel-Zahlungen für Commerce-Bestellungen
                       href: dev-itpro/commerce-payments.md
                     - name: Kreditkartenbuchungsdaten archivieren
                       href: dev-itpro/archive-cc-data.md
@@ -810,17 +814,21 @@
                   href: multireturn.md
                 - name: Retouren- und Rückerstattungsrichtlinie für einen Kanal erstellen und aktualisieren
                   href: refund_policy_returns.md
-        - name: Ihre Kunden verwalten
+        - name: Kunden verwalten
           items:
             - name: Kundenmanagement in Shops
               href: customer-mgmt-stores.md
+            - name: Asynchroner Kundenerstellmodus
+              href: async-customer-mode.md
+            - name: Asynchrone Kunden in synchrone Kunden umwandeln
+              href: convert-async-to-sync.md
             - name: Kundenaktionen
               items:
                 - name: Übersicht über Kundenaktionen
                   href: clienteling-overview.md
-            - name: Loyalität
+            - name: Kundentreue
               items:
-                - name: Übersicht über Loyalität
+                - name: Übersicht über Kundentreue
                   href: set-up-customer-loyalty-program.md
                 - name: Treueprogramme definieren
                   href: tasks/define-loyalty-programs.md
@@ -1328,8 +1336,10 @@
                   href: localizations/latam-bra-nfce-cancel-return.md
                 - name: 'Verschobene Registrierung von NFC-e-Dokumenten, die im Offlinenotfallmodus ausgestellt wurden'
                   href: localizations/latam-bra-nfce-contingency-mode.md
-                - name: Brasilianische Steuerdokumente über Einzelhandelsauszüge in der Commerce-Zentralverwaltung veröffentlichen
+                - name: Brasilianische Steuerdokumente per Einzelhandelsauszüge in der Commerce-Zentralverwaltung veröffentlichen
                   href: localizations/latam-bra-retail-statements.md
+                - name: "CF-e-Steuerdokument und Integration in SAT-Funktion i Commerce\_POS für Brasilien"
+                  href: localizations/latam-bra-cf-e-sat.md
                 - name: Dynamics 365 Payment Connector für Adyen in Commerce POS für Brasilien
                   href: localizations/latam-bra-adyen.md
             - name: Osteuropa
@@ -1376,13 +1386,15 @@
                   href: localizations/apac-ind-cash-registers.md
                 - name: Bereitstellungsrichtlinien für Kassen
                   href: localizations/apac-ind-loc-deployment-guidelines.md
-                - name: Unterstützung für Upgrade und N-1 für Indien
+                - name: Unterstützung von Upgrade und N-1 für Indien
                   href: localizations/apac-ind-n-1-for-india.md
-                - name: QR-Codes generieren und auf Belege drucken
+                - name: QR-Codes generieren und auf Belegen für Indien drucken
                   href: localizations/ind-generate-qr-code-print-receipt.md
+                - name: Einbindung der Steuern auf Waren und Dienstleistungen auf E-Commerce-Websites
+                  href: localizations/apac-ind-e-commerce.md
             - name: Italien
               items:
-                - name: Beispiel für die Integration eines Belegdruckers für Italien
+                - name: Beispiel für die Einbindung eines Belegdruckers für Italien
                   href: localizations/emea-ita-fpi-sample.md
                 - name: Kundeninformationsmanagement für Italien
                   href: localizations/emea-ita-customer-information.md
@@ -1614,9 +1626,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/fcommerce/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
-                        - name: Heute
+                        - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
-                    - name: Liste
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
+                    - name: List
                       items:
                         - name: Listenfunktionen
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/commerce/toc.json

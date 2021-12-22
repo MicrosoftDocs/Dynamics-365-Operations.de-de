@@ -4,6 +4,8 @@
     - name: Neuerungen
       items:
         - name: Neuerungen und Änderungen in Human Resources
+          href: hr-whats-new-2021-11-29.md
+        - name: "29.\_November\_2021"
           href: hr-admin-whats-new.md
         - name: 5. Oktober 2021
           href: hr-whats-new-2021-10-04.md
@@ -787,13 +789,15 @@
                       href: hr-benefits-process-enrollment-eligibility.md
                     - name: Lebensereignisse verarbeiten
                       href: hr-benefits-process-life-events.md
-                    - name: Änderungen von Lebensereignissen verarbeiten
+                    - name: Änderungen durch Lebensereignisse verarbeiten
                       href: hr-benefits-process-life-event-changes.md
-                    - name: Lebensereignisberechtigung verarbeiten
+                    - name: Berechtigung aufgrund von Lebensereignissen verarbeiten
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Satzänderungen verarbeiten
                       href: hr-benefits-process-rate-changes.md
-                - name: ACA-Berichterstellung
+                - name: Auswahl von Arbeitnehmerleistungen
+                  href: employee-select-benefits-ess.md
+                - name: ACA-Meldungen
                   href: hr-benefits-management-aca-reports.md
                 - name: Leistungsnachweis
                   href: hr-benefits-statement.md

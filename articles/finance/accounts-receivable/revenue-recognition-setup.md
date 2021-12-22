@@ -2,7 +2,7 @@
 title: Umsatzerkennungseinstellungen
 description: In diesem Thema werden die Einrichtungsoptionen für die Umsatzerkennung und deren Auswirkungen behandelt.
 author: kweekley
-ms.date: 08/24/2018
+ms.date: 11/24/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675177"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867219"
 ---
 # <a name="revenue-recognition-setup"></a>Umsatzerkennungseinstellungen
 [!include [banner](../includes/banner.md)]
@@ -61,7 +61,7 @@ Das erste Szenario tritt ein, nachdem alle vertraglichen Verpflichtungen erfüll
 
 Das zweite Szenario findet statt, wenn eine Erfassung nach der Neuzuordnung erstellt wird. Die Neuzuordnung findet statt, wenn einem zuvor fakturierten Auftrag eine Auftragsposition hinzugefügt oder ein neuer Auftrag erstellt wird, der eine Position umfasst, die Teil des ursprünglichen Vertrags ist. Wenn eine Rechnung vor dem Hinzufügen einer neuen Auftragsposition gebucht wurde, muss ein Korrekturbuchhaltungseintrag für die gebuchte Debitorenrechnung erstellt werden.
 
-Die Erfassung wird auf der Seite **Journale** (**Umsatzerkennung \> Einstellungen \> Journale**) eingerichtet. Der Erfassungstyp muss auf **Umsatzerkennung** festgelegt werden. Mit der Umsatzerkennungserfassung können Sie die Buchungsebene auswählen, in der gebucht werden soll.
+Die Erfassung wird auf der Seite **Journale** (**Umsatzerkennung \> Einstellungen \> Journale**) eingerichtet. Der Erfassungstyp muss auf **Umsatzerkennung** festgelegt werden. 
 
 ## <a name="parameters-for-revenue-recognition"></a>Parameter für die Umsatzerkennung
 

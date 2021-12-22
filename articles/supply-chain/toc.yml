@@ -68,9 +68,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Neuerungen oder Änderungen in Supply Chain Management
                   items:
-                    - name: Neuerungen oder Änderungen auf der Supply Chain Management-Startseite
+                    - name: Neuerungen oder Änderungen auf der Startseite von Supply Chain Management
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.23
+                    - name: "Supply Chain Management\_10.0.24 (Februar 2022)"
+                      href: get-started/whats-new-scm-10-0-24.md
+                    - name: "Supply Chain Management\_10.0.23 (Januar\_2022)"
                       href: get-started/whats-new-scm-10-0-23.md
                     - name: Supply Chain Management 10.0.22 (November 2021)
                       href: get-started/whats-new-scm-10-0-22.md
@@ -274,7 +276,7 @@
                   items:
                     - name: Übersicht über die Steuerberechnung
                       href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Erste Schritte mit der Steuerberechnung
+                    - name: Erste Schritte bei der Steuerberechnung
                       href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Unterstützung der Steuerfunktion bei Umlagerungsaufträgen
                       href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
@@ -284,7 +286,7 @@
                       href: ../finance/localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Mehrere MwSt.-Registrierungsnummern
                       href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Eine Umgebung für die Masterdatensuche einrichten
+                    - name: Umgebung zur Masterdatensuche einrichten
                       href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/supply-chain/toc.json
             - name: Neues zu rechtlichen Bestimmungen
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
@@ -559,7 +561,7 @@
               href: ../finance/general-ledger/CFO-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Kontostrukturen erstellen
               href: ../finance/general-ledger/tasks/create-account-structures.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Budgetierungsüberblick
+            - name: Übersicht über die Budgetierung
               href: ../finance/budgeting/basic-budgeting-overview-configuration.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dimensionen erstellen und Dimensionsmitglieder importieren
               href: ../finance/cost-accounting/cost-dimension.md?toc=/dynamics365/supply-chain/toc.json
@@ -945,9 +947,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/supply-chain/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Heute
+                        - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Liste
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: List
                       items:
                         - name: Listenfunktionen
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/supply-chain/toc.json
@@ -3749,13 +3753,13 @@
                   href: troubleshooting/sales/system-administrator.md
             - name: Transportverwaltung
               items:
-                - name: Das Hauptkonto kann nur aus Abstimmungsgründen als Habenkonto hinzugefügt werden
+                - name: Das Hauptkonto kann nur aus Abstimmungsgründen als Habenkonto hinzugefügt werden.
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerortverwaltung
               items:
-                - name: Warehouse Mobile App
+                - name: Warehouse mobile app
                   items:
-                    - name: Der Vertrauensanker für den Zertifizierungspfad wurde beim Einrichten der App-Verbindung nicht gefunden
+                    - name: Der Vertrauensanker für den Zertifizierungspfad wurde beim Einrichten der App-Verbindung nicht gefunden.
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Der Vertrauensanker für den Zertifizierungspfad wurde beim Aktualisieren und Migrieren nach WMS nicht gefunden.
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
